@@ -1,0 +1,2158 @@
+{
+  "submission": {
+    "id": "6f8598cb-45e5-448f-bbcd-94fdefbb08c4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:33:41.589104Z",
+    "updated_at": "2025-11-30T00:33:41.589104Z"
+  },
+  "content": [
+    {
+      "id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "submission_id": "6f8598cb-45e5-448f-bbcd-94fdefbb08c4",
+      "content_type": "manuscript",
+      "content_text": "# Structural elucidation of a novel mechanism for the bacteriophage-based inhibition of the RNA degradosome\n\n## Authors\n\n- An Van den Bossche<sup>1</sup> \u2020\n- Steven W Hardwick<sup>3</sup>\n- Pieter-Jan Ceyssens<sup>1</sup>\n- Hanne Hendrix<sup>1</sup>\n- Marleen Voet<sup>1</sup>\n- Tom Dendooven<sup>1</sup>\n- Katarzyna J Bandyra<sup>3</sup>\n- Marc De Maeyer<sup>4</sup>\n- Abram Aertsen<sup>5</sup>\n- Jean-Paul Noben<sup>6</sup>\n- Ben F Luisi<sup>3</sup> \u2020\n- Rob Lavigne<sup>1</sup> ([ORCID: 0000-0001-7377-1314](https://orcid.org/0000-0001-7377-1314)) \u2020\n\n### Affiliations\n\n1. Laboratory of Gene Technology KU Leuven Leuven Belgium\n2. Division of Bacterial diseases Scientific Institute of Public Health Brussels Belgium\n3. Department of Biochemistry University of Cambridge Cambridge United Kingdom\n4. Biochemistry, Molecular and Structural Biology Scetion KU Leuven Leuven Belgium\n5. Laboratory of Food Microbiology KU Leuven Leuven Belgium\n6. Biomedical Research Institute University of Hasselt Diepenbeek Belgium\n7. Transnational University Limburg University of Hasselt Diepenbeek Belgium\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn all domains of life, the catalysed degradation of RNA facilitates rapid adaptation to changing environmental conditions, while destruction of foreign RNA is an important mechanism to prevent host infection. We have identified a virus-encoded protein termed gp37/Dip, which directly binds and inhibits the RNA degradation machinery of its bacterial host. Encoded by giant phage \u0444KZ, this protein associates with two RNA binding sites of the RNase E component of the Pseudomonas aeruginosa RNA degradosome, occluding them from substrates and resulting in effective inhibition of RNA degradation and processing. The 2.2 \u00c5 crystal structure reveals that this novel homo-dimeric protein has no identifiable structural homologues. Our biochemical data indicate that acidic patches on the convex outer surface bind RNase E. Through the activity of Dip, \u0444KZ has evolved a unique mechanism to down regulate a key metabolic process of its host to allow accumulation of viral RNA in infected cells.\n\n## Introduction\n\nThe process of RNA turnover following transcription is vital in the regulation and quality control of gene expression. In \u03b3-proteobacteria, several key constituents of the mRNA decay machinery are assembled in the membrane-associated RNA degradosome (A\u00eft-Bara et al., 2015; Marcaida et al., 2006). In the paradigm Escherichia coli RNA degradosome, this complex is built around the hydrolytic endoribonuclease RNase E, which initiates the rate-limiting step in RNA degradation (Del Campo et al., 2015; McDowall et al., 1995). Subsequent degradation is carried out by the 3\u2019-5\u2019 phosphorolytic exoribonuclease PNPase (polynucleotide phosphorylase) assisted by the ATP-dependent helicase RhlB (both of which are components of the degradosome assembly) and is completed by an oligo-ribonuclease which is not associated to the complex (Evguenieva-Hackenberg and Klug, 2011; G\u00f3rna et al., 2012). The protein composition of the RNA degradosome varies among proteobacteria and during various stages of growth (Carabetta et al., 2010; Ikeda et al., 2011).\n\nRNase E, a member of the RNase E/G family, is a tetrameric enzyme and can be broadly divided into two functional halves. The N-terminal half (NTH) comprises the catalytic domain, while the non-conserved C-terminal half (CTH) is natively unstructured and acts as a scaffold to assemble the complex (A\u00eft-Bara et al., 2015; Callaghan et al., 2005). Despite the predicted lack of structure within the scaffold domain, several short segments having structural propensity were identified in the E. coli CTH that mediate the interaction between RNase E and the cell membrane, enolase and PNPase. Moreover, the CTH contains two arginine-rich regions that have been shown to bind RNA: the RNA binding domain (RBD)/Arginine-rich region 1 (AR1) and AR2 (Callaghan et al., 2004). The activity and specificity of the RNA degradosome is under complex regulation and is influenced by several factors including riboregulation by small, non-coding RNAs (sRNA) and proteins RraA and RraB (\u2018Regulators of RNase Activity A and B\u2019) that inhibit the activity of RNase E by binding to the CTH (G\u00f3rna et al., 2010; Ikeda et al., 2011; Zhou et al., 2009).\n\nDuring infection, lytic bacteriophages create a favourable environment for the generation of progeny by influencing the activity and specificity of host proteins (Roucourt and Lavigne, 2009). Three cases have been reported in which the machinery of RNA decay is a target of phage effector proteins. In one, E. coli phage T7 heavily phosphorylates the CTH of RNase E and RhlB, leading to the inhibition of RNA degradation (Marchand et al., 2001). In a second example, the Srd protein encoded by E. coli phage T4 was found to increase the activity of RNase E on host mRNA by binding to the catalytic NTH (Qi et al., 2015). This may account for earlier observations that, during infection by phage T4, the host mRNA was destabilized while the phage mRNA was stabilized (Ueno and Yonesaki, 2004). Finally, an increase in the expression of RNase E was observed during the infection of Prochlorococcus MED4 by cyanophage P-SSP7, due to elevated levels of an RNase E mRNA variant lacking the 5\u2019UTR responsible for the negative feedback regulation of the gene. In parallel, antisense RNAs derived from the phage sequester the P-SSP7 transcriptome to form dsRNA, which is subsequently protected from degradation by RNase E (Sesto et al., 2013; Stazic et al., 2016, 2011).\n\nBeing one of seven known genera of lytic phages infecting Pseudomonas aeruginosa, giant \u2018\u0444KZ-like\u2019 bacteriophages form a remote branch of myoviruses. The \u0444KZ virus type possesses an unusually large 280 kb genome with little evolutionary relation to other known genera. Its genomic G/C content is remarkably low (36.3%) in comparison to its host P. aeruginosa, implying a short history of co-evolution (Mesyanzhinov et al., 2002). Notably, \u0444KZ infection causes more than five-fold increase in total cellular RNA, suggesting that the phage affects P. aeruginosa RNA biogenesis and breakdown (Ceyssens et al., 2014).\n\nIn an effort to understand the \u0444KZ infection process and its impact on RNA metabolism, we identified potential interaction targets of viral proteins in the opportunistic pathogen P. aeruginosa (Ceyssens et al., 2014). By performing a screen based on affinity purification and mass spectrometry, we observed that a previously uncharacterised phage protein specifically binds to two RNA binding sites within the CTH of RNase E, and by doing so efficiently inhibits the RNA binding and degradation activity of the degradosome assembly. We have determined the structure of this protein (termed Dip, \u2018degradosome interacting protein\u2019) by X-ray crystallography and show that it forms an open-clamp like homo-dimeric structure, and binding of Dip to RNA binding regions within RNase E is characterized functionally and structurally. To our knowledge, Dip is the first known viral protein which effectively inhibits the RNA degradation activity of its host via a direct protein:protein interaction.\n\n## Results\n\n### A \u03c6KZ protein co-purifies with the RNA degradosome\n\nTo identify potential phage proteins that interact with the host RNA degradation machinery, a pull down experiment was designed in which a Strep-tag II was fused on the C-terminus of RNase E of P. aeruginosa strain PA01. The modified strain was subsequently infected with a collection of seven different P. aeruginosa-specific phages, and a phage protein was co-precipitated only in cells infected with giant phage \u03c6KZ (Supplementary file 1-Table 1). This Degradosome interacting protein (gp37 \u2013 referred to hereafter as Dip) has a predicted molecular weight of 31.7\u2009kDa and has no sequence similarity with any protein in currently available databases.\n\nA reciprocal in vitro pull down assay was performed in which P. aeruginosa cell lysate was applied to Dip immobilised on a Ni2+ affinity column through a hexa-histidine-tag. Compared to the control reactions in which only Dip or cell lysate was used, several protein bands were clearly enriched (Figure 1A). The most abundant co-purifying band was identified as RNase E by mass spectrometry analysis, and other predicted components of the RNA degradosome (PNPase and DeaD, which were also identified in the original pull down, Supplementary file 1-Table 1) were among the co-purifying proteins.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/16413/elife-16413-fig1-v2.jpg)\n\n**Figure 1.:** (A)\u00a0In vitro pull down of P. aeruginosa cell lysate, using his-tagged Dip as a bait. Eluted samples were loaded on a 12% SDS-PAGE gel. The letters indicate bands submitted for identification by mass spectrometry analysis (\u201c/\u201d represents bands which could not be confidently identified). (B) Fragments of the scaffold domain of RNase E used in the bacterial two-hybrid assay. Blue and black arrows indicate fragments with a positive and no signal, respectively. The numbers indicate the number of the residue of RNase E. (C) Bacterial two-hybrid assay in which the T25 (25) or T18 (18) domain of CyaA is fused to the N-terminal (N) or C-terminal (C) side of a target protein. Non-fused T25 or T18 domains were used as negative control (No insert). The leucine zipper of GCN4 was used as a positive control. Interactions were visualized by a drop test on selective medium (shown below the graphs) and \u03b2-galactosidase activity was measured quantitatively in Miller units. Error bars represent SD and P\u2010values were calculated using Student's t\u2010test (n = 3), *p<0.05.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16413/elife-16413-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** As negative control, 350 nM of only Dip or RNA degradosome was used. Error bars represent standard deviation (n\u00a0=\u00a03). (Note: the amount of RNA degradosome used in this assay is a crude estimate, assuming the overall mass of the degradosome assembly is 1 Mega Dalton).\n\nTo corroborate this interaction in vitro, an ELISA was performed using Dip as bait and the P. aeruginosa RNA degradosome as prey. Titrating a constant amount of Dip with RNA degradosome yielded an increasing signal which saturated at an approximate ratio of 10 Dip protomers for each degradosome protomer (Figure 1\u2014figure supplement 1). Together, these results confirm that the primary binding partner of Dip in the P. aeruginosa host is the RNA degradosome assembly.\n\n### Dip binds to specific regions of RNase E\n\nA bacterial two-hybrid assay was designed to determine which component(s) of the RNA degradosome are targeted by Dip. Initially PNPase, three DEAD-box helicases and RNase E (divided into NTH and CTH) were assessed for their interaction with Dip, and a significant (p<0.05) positive reaction with Dip was only observed for the C-terminal part of RNase E (CTH; residues 608\u20131057) (Figure 1B\u2013C).\n\nA second bacterial two-hybrid assay was designed to more precisely map the interaction site within the C-terminal half of RNase E. The CTH was divided into ten overlapping fragments based on homology to molecular recognition sites within RNase E of E. coli and predictions of protein-protein binding sites by the online tool ANCHOR (Doszt\u00e1nyi et al., 2009) (Figure 1B). Two fragments (delineating the region 583\u2013607 of RNase E) yielded a positive signal on selective medium for one vector combination (Figure 2A, fragments A and E). However, this signal could not be confirmed using Miller assays (Figure 2B). For three other fragments (all-encompassing residues 756\u2013835 of RNase E, Figure 1B fragments C, F and I), a strong signal was produced for all vector combinations and could be positively confirmed in subsequent Miller assays (p<0.05) (Figures 1B\u2013C, fragments C, F and I). Combining these results, a clear interaction site can be defined within residues 756 to 835, while a weak second interaction site may be present within residues 583\u2013607. These binding sites were subsequently verified by electrophoretic mobility shift assays (EMSA). Figure 2A demonstrates that the mobility of Dip is altered upon addition of increasing concentrations of 583\u2013607 (fused to a GST-tag), with all of the Dip being shifted at an approximate 10-fold excess of the RNase E fragment. When using a slightly larger fragment of RNase E (residues 583\u2013636), Dip is shifted completely by only a four-fold excess of the GST-fusion protein. This suggests that efficient Dip binding requires a larger region of RNase E than the first defined segment of residues 583\u2013607. This might also explain why the bacterial two-hybrid assay with residues 583\u2013607 and Dip was inconclusive.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/16413/elife-16413-fig2-v2.jpg)\n\n**Figure 2.:** (A) EMSA of fragments of RNase E corresponding to a first interaction site for Dip, incubated with or without Dip.\u00a0The numbers above the horizontal line indicate the residues of RNase E corresponding to the two tested fragments. The numbers below indicate the relative amount of the fragments and Dip. (B) EMSA using fragments of the RNase E belonging to the second site of interaction for Dip. The numbers indicate the residues of RNase E that encompass the fragments. A shift in migration is indicated with an asterisk.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16413/elife-16413-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** All samples were run on a 10% native acrylamide gel.\n\nBioinformatic analyses of the second Dip binding fragment of RNase E (residues 756\u2013835) suggested that this region may encompass an RNA binding motif at residues 757\u2013772 (BindN; Wang and Brown, 2006) and a possible protein binding site at residues 776\u2013835 (ANCHOR). In Figure 2B, only a clear shift of Dip is visible upon addition of the RNase E fragments harbouring the predicted RNA binding site of residues 757\u2013772 (756\u2013901, 756\u2013835 and 756\u2013775). Dip is efficiently shifted at just a 1:1 ratio to the different fragments, suggesting stronger binding to residues 756\u2013775 than 583\u2013636 of RNase E. To ensure that the binding is not mediated by the presence of RNA, an additional EMSA was performed using 9S rRNA and increasing amounts of Dip. Since no shift of the RNA was observed (Figure 2\u2014figure supplement 1), we conclude that Dip is not an RNA binding protein. Therefore, the interaction between Dip and the 583\u2013636 and 756\u2013775 regions of RNase E of P. aeruginosa is via a direct protein-protein interaction.\n\n### The binding sites of Dip are conserved in E. coli\n\nWhen comparing both Dip interaction sites (583\u2013636 and 756\u2013775) found in P. aeruginosa RNase E to the RNase E of E. coli, these arginine rich regions were found to align well to the known RNA binding sites RBD and AR2, respectively (data not shown). These findings suggest that the binding sites of Dip may be conserved in RNase E of other bacteria. To investigate whether Dip is capable of binding to the RNA degradosome of other species, an in vitro pull down was performed using his-tagged Dip and E. coli cell lysate (Figure 3A). The RNA degradosome components RNase E and PNPase, and the ribosomal protein L13 were identified as the predominant bands identified by mass spectrometry, while two other canonical degradosome proteins, RhlB and enolase, were also identified. An EMSA using purified recombinant proteins corresponding to the CTH of E. coli RNase E equally showed a clear shift of Dip in the presence of the CTH at the 1:1 molar ratio (Figure 3\u2014figure supplement 1). This demonstrates that Dip forms a direct protein-protein association with E. coli RNase E, which is not dependent upon other proteins or RNA.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/16413/elife-16413-fig3-v2.jpg)\n\n**Figure 3.:** In vitro pull down of E. coli cell lysate, using his-tagged Dip as a bait. Eluted samples were loaded on a 12% SDS-PAGE gel. The letters indicate proteins identified by mass spectrometry analysis.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16413/elife-16413-fig3-figsupp1-v2.jpg)\n\n### Dip competes with RNA for binding to RNase E\n\nTo test the hypothesis that Dip targets RNA binding sites within RNase E, an EMSA in the presence of RNA was performed. The 756\u2013901 (GST-tagged) and 756\u2013775 (untagged) fragments of P. aeruginosa RNase E were mixed with a short RNA oligonucleotide (27mer). In the presence of the 756\u2013901 fragment a clear shift of both the protein and the RNA was visible (Figure 4A). The untagged 756\u2013775 fragment was not able to enter the gel in isolation; however, in its presence there is a visible shift of the RNA (Figure 4\u2014figure supplement 1A). When increasing amounts of Dip were subsequently added to these RNA:RNase E complexes, a new protein:protein complex is formed between Dip and the RNase E fragments, while the bound RNA is released and returns to a position at the bottom of the gel (Figure 4A). These observations show that Dip is able to compete with and displace RNA from the RNase E fragments.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/16413/elife-16413-fig4-v2.jpg)\n\n**Figure 4.:** (A) EMSA of RNA (27mer), the 756\u2013901 fragment of RNase E (fused to a GST-tag) and Dip.\u00a0(a) indicates that RNA was incubated with the fragment prior to the addition of Dip. (b) indicates that Dip was incubated with the peptide before adding the RNA. (B) EMSA of 9S RNA, the 583\u2013636 fragment of RNase E (fused to a GST-tag) and Dip. The samples were run on an 8% native acrylamide gel. Concentrations are presented in \u00b5M.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16413/elife-16413-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) EMSA of 27mer RNA, the untagged 756\u2013775 fragment of RNase E and Dip.\u00a0(B). EMSA of RNA (27mer), the 583\u2013636 fragment of RNase E (fused to a gst-tag) and Dip. The samples were run on an 8% native acrylamide gel.\n\nThe same RNA binding assay was performed in the presence of the 583\u2013636 fragment of P. aeruginosa RNase E, but no shift of the protein fragment or the RNA could be visualized when using the 27mer RNA (Figure 4\u2014figure supplement 1B). However when using the larger 9S rRNA (245 nt, precursor of 5S rRNA), a clear shift can be observed (Figure 4B). As with the 756\u2013775 binding site, 9S rRNA can be competitively displaced from the 583\u2013636 fragment by Dip, and the addition of a 4-fold excess of Dip is able to completely remove the bound RNA from the RNase E fragment. These results demonstrate that Dip targets both RNA binding sites in the C-terminal half of the RNA degradosome, and consequently blocks the binding of RNA to the RNase E subunit.\n\n### Dip inhibits in vitro RNA degradation by the RNA degradosome\n\nSince Dip prevents/displaces RNA from binding to the degradosome, we examined in vitro the functional consequences of this interaction. A well characterised and conserved activity of RNase E is the processing of 9S ribosomal RNA to the precursor p5S (Cormack and Mackie, 1992; Hardwick et al., 2011). We tested 9S rRNA of E. coli as a substrate for in vitro activity assays using both the P. aeruginosa and the E. coli RNA degradosome in the presence and absence of Dip. First, Dip itself was tested for RNase activity towards the 9S rRNA fragment. After incubating the RNA fragment with the phage protein for 30\u2009min, no RNA degradation was observed (Figure 5\u2014figure supplement 1A). Next, the RNA degradosomes were incubated with 9S rRNA in the absence of Dip, resulting in efficient RNA processing (Figure 5A). With increasing amounts of Dip, the processing of 9S rRNA is visibly reduced, with almost no cleavage observed in the presence of a 10-fold access of Dip. Therefore, we conclude that Dip inhibits the processing activity of the RNA degradosome of both P. aeruginosa and E. coli. To verify if these observations are specifically due to the binding of Dip to the scaffold domain of RNase E, an in vitro degradation assay was performed using only the catalytic domain of E. coli RNase E (residues 1\u2013525). We noted that RNase E was still capable of processing 9S RNA (albeit less efficiently than the full degradosome), but no inhibition of the degradation activity could be observed in the presence of Dip (Figure 5B), demonstrating that Dip does not directly influence the activity of the catalytic domain.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/16413/elife-16413-fig5-v2.jpg)\n\n**Figure 5.:** (A) The 9S RNA precursor of 5S rRNA of E. coli was incubatedin vitro with RNA degradosome in the absence or presence of Dip.\u00a0(B) E. coli 9S RNA was incubated with the catalytic domain of the E. coli RNA degradosome (1\u2013529) in the absence or presence of Dip. (C) A late \u03c6KZ RNA transcript was incubated with the degradosome in the absence or presence of Dip. All samples were loaded on a 5-8-20% (according to the size) denaturing polyacrylamide gel and visualized with SYBR gold stain.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16413/elife-16413-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) The 9S RNA of E. coli was incubated in the absence or presence of Dip.\u00a0(B) The RNA fragment fdhE of E. coli was incubated with the RNA degradosome of P. aeruginosa and E. coli in the absence or presence of Dip. The samples were loaded on an 8% denaturing polyacrylamide gel.\n\nAdditional RNA substrates were assayed to establish whether the inhibitory effect of Dip varies with differing RNA species. When using RNA originating from the \u03c6KZ genome, Dip showed a similar inhibitory effect on RNA cleavage as seen with bacterial 9S rRNA (Figure 5C). Moreover, the cleavage of the fdhE transcript, which has been shown to be processed primarily via a second, 'direct entry' pathway of RNase E (Clarke et al., 2014), was efficiently inhibited in the presence of Dip (Figure 5\u2014figure supplement 1B). These results indicate that Dip inhibits the activity of the RNA degradosome in vitro without a preference for a specific substrate.\n\n### Dip stabilizes RNA in vivo\n\nSince our in vitro assays point to an inhibitory effect of Dip on the activity of the RNA degradosome, the in vivo role of Dip and its global function during phage infection were further investigated.\n\nRNAseq analysis indicated that the phage protein Dip is transcribed in the early phase of infection, and is highly expressed (Ceyssens et al., 2014). To verify the timing of the corresponding protein translation, and to assess Dip stability during phage infection, we performed a western blot on \u03c6KZ-infected P. aeruginosa samples every 3 min during infection (Figure 6A). Using anti-Dip antibodies, Dip was first detected 9\u2009min after the start of infection, reaching a peak at 24 min. Although a decrease in Dip levels is visible at approximately 30 min post infection, the quantity of Dip proteins subsequently increases, after which its levels appear to plateau. This indicates that Dip is produced during the early phase of infection and subsequently persists during the whole infection cycle.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/16413/elife-16413-fig6-v2.jpg)\n\n**Figure 6.:** (A) Western blot for the in vivo detection of Dip during \u03c6KZ infection using anti-Dip antibodies.\u00a0Pixel number and intensity were quantified and normalized against the positive control (PC) in imageJ. Error bars represent standard deviation (n\u00a0=\u00a03). (B)\u00a0In vivo RNA decay of the household gene OprL. The quantity of OprL transcripts from Rif200-treated P. aeruginosa cells (wild type cells (Non-Induced) or cells expressing Dip) was determined by qRT-PCR and normalized to the total RNA content. The amount of RNA (Et) was compared to the amount of RNA at time point 0 (E0) and plotted in a semi-logarithmic plot as a function of time. Error bars represent standard deviation (n\u00a0=\u00a03). Dotted lines represent a trend line of a data set.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16413/elife-16413-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Dilution series (100-10\u22122-10\u22124-10\u22126) were spotted on solid medium. As a control P. aeruginosa cells with an empty pHERD20T vector were used. (B) A bioscreen following the OD600\u00a0nm in liquid medium. The arrow indicates the time point were cells were sampled in C. Error bars represent SD. (n\u00a0=\u00a03) (C) Microscopic view of the cells at single cell level at OD600\u00a0nm 0.5 with and without the induction of Dip expression.\n\nTo evaluate the effect of Dip on the bacterial cells, dip was cloned into the E. coli \u2013 P. aeruginosa shuttle vector pHERD20T under control of a PBAD promoter, which responds to arabinose in a dose-dependent manner (Qiu et al., 2008). When expressing Dip at low levels in P. aeruginosa (0.1% arabinose), no variation in growth efficiency could be observed (Figure 6\u2014figure supplement 1A\u2013B). In contrast, a change in morphology was detected when Dip was expressed at high levels (1% arabinose), with cells changing from the wild type rod-shape into a \u2018curled\u2019 phenotype (Figure 6\u2014figure supplement 1C).\n\nThe same constructs were used to assess the stability of RNA molecules in the presence of Dip in vivo. The RNA decay of the household gene OprL (peptidoglycan associated lipoprotein precursor) was quantified by qRT-PCR. Although the data show a pronounced variance, they clearly demonstrate that the decay of OprL is slowed in the presence of Dip, with the half-life increasing from \u00b1 6\u2009min to \u00b1 12\u2009min (Figure 6B). This is in agreement with the inhibitory effect of Dip on the RNA degradosome observed in vitro.\n\n### Dip is a homodimer forming an open clamp like structure\n\nTo help understand the mechanism of Dip, the structure of this protein was solved by X-ray crystallography using selenium SAD experimental phasing (Supplementary file 1-Table 2). The 2.2\u2009\u00c5 structure of Dip reveals a clamp like homodimeric structure, with the dimeric architecture presenting a grooved, concave face resembling a partially opened scroll (Figure 7A and Figure 7\u2014figure supplement 1). The dimeric form was confirmed to be the predominant species in solution by analytical ultracentrifugation, while self-interaction was showed during a bacterial two-hybrid analyses (Data not shown). A search through the protein structural database could not identify any significant structural homologues of Dip, indicating that its protomers are composed of an unprecedented \u03b1+\u03b2 fold.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/16413/elife-16413-fig7-v2.jpg)\n\n**Figure 7.:** (A) Two views of the dimeric Dip structure.\u00a0Protomers are coloured in green and blue. (B) Electrostatic surface representation (red = negative, blue = positive) of the Dip dimer. The negatively charged, patch/pocket on the outer surface of the Dip-dimer is indicated with the dashed box. (C) The structural interaction between peptide 756\u2013775 (of RNase E) and Dip. The in-silico docked peptide is shown as a red helix, and the peptide modelled from X-ray crystal data is shown as purple and blue sticks. (D) Experimental structure of the complex, showing a close view of the interacting amino acids of Dip (D137, D138, E214 and E222) and RNase E peptide 756\u2013775. The electron density map is shown for the RNase E peptide only for clarity. (E) EMSA of wild type Dip and the mutant Dip-E214/E222 (substituted to Ala) and the RNase E peptides 583\u2013636 and 725\u2013901. The samples were run on an 8% native acrylamide gel. Concentrations are presented in \u00b5M.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16413/elife-16413-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Amino acid sequence of Dip with secondary structural elements indicated above (\u03b1 = alpha-helix, \u03b2 = beta-strand, \u03b7 = 3\u201310 helix, TT = beta-turn.\u00a0(B) Two views of the structure of dimeric Dip, with one protomer shown as cartoon coloured blue to red rainbow from N to C terminus, and the second protomer shown as grey ribbon. Secondary structure elements as in (A) are labelled.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16413/elife-16413-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Bars represent 10 \u00b5m.\n\n### RNase E binds to the outer surface of Dip\n\nTo further study the interaction between Dip and RNase E, modelling experiments were performed to predict the binding surface for one of the Dip binding peptides of P. aeruginosa RNase E (residues 756\u2013775). Secondary structure prediction of this RNase E peptide in isolation suggested a high propensity towards a helical conformation. Therefore, this helical form of the peptide was used in a docking experiment intended to scan the complete surface of Dip with the DOT docking program (Roberts et al., 2013). The best energetically ranked complexes show binding of the peptide to a negatively charged patch on the outer surface of the Dip-dimer (Figures 7B\u2013C).\n\nTo verify the in-silico docking results Dip was co-crystallized with the 756\u2013775 peptide of P. aeruginosa RNase E. Hexagonal crystals of Dip were obtained containing an apparent ring-like hexamer of Dip formed through crystallographic symmetry. Discontinuous density was observed on the surface of Dip in the DOT docking predicted acidic pocket (Figure 7D). Processing the X-ray diffraction data in the lower symmetry P1 space group visibly improved the density for the RNase E peptide, and we were able to cautiously model eight amino acids of the peptide into this density. The model of Dip bound to the short RNase E recognition peptide (Dip:RNaseE756-775) indicated significant contacts are made between residues Asp 137, Asp138, Glu 214 and Glu 222 of Dip and the RNase E peptide (Figure 7C\u2013D). To confirm the importance of these residues in the interaction between the two proteins, several mutants of Dip were generated where the acidic residues on the surface of Dip were substituted for alanine. A double mutation of Glu 214 and Glu 222 to alanine was sufficient to completely abolish the interaction with both Dip binding sites on RNase E when assessed by an electrophoretic mobility shift assay (Figure 7E). Moreover, the in vivo expression of the Dip-E214A/E222A mutant using the pHERD20T vector restored the wild type phenotype compared to the curly morphology obtained by in vivo Dip expression (Figure 7\u2014figure supplement 2). Interestingly, electron density for an unknown small molecule ligand can be seen in this region in the structure of apo-Dip, which we have modelled as a single arginine amino acid. The E214A-E222A mutant of Dip was subsequently crystallized in the same P21 space group as the wild type Dip protein, and amino acid mutations were confirmed by the absence of electron density for glutamate side chains at positions 214 and 222 in the 2.2 angstrom resolution map. There were no other significant alterations to the local or overall structure of Dip (data not shown). These data show that the acidic patch on the outer surface of Dip is crucial for the interaction with RNase E, and both of the RNA binding segments of RNase E engage Dip via this region.\n\n## Discussion\n\nThe RNA degradosome (Figure 8A) plays a pivotal role in bacterial post-transcriptional gene regulation, ensuring efficient transcript degradation and processing. In P. aeruginosa cells infected with giant phage \u0444KZ, we have identified a viral protein \u2018gp37/Dip\u2019 which binds to the putative RNA degradosome assembly. The binding targets of this degradosome interacting protein could be clearly defined as two RNA-binding sites within the C-terminus of RNase E (residues 583\u2013636 and 756\u2013775). Our in vitro assays indicate that RNAs bound to these two RNA binding sites are displaced by Dip. Thus, the interaction of Dip with these segments inhibits the activity of the RNA degradosome in vitro and in vivo. To our knowledge, this is the first viral protein identified which uses a direct interaction with the RNA degradosome to inhibit its function. Therefore, Dip can be considered as a viral functional equivalent of the bacterial RraA and RraB (\u2018regulators of RNase activity\u2019) proteins of E. coli, which inhibit the activity of RNase E by binding to specific regions of the CTH (G\u00f3rna et al., 2010; Zhou et al., 2009).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/16413/elife-16413-fig8-v2.jpg)\n\n**Figure 8.:** (A) The wild type P. aeruginosa degradsome consisting of the RNase E subunit (blue), the ATP-dependent RNA helicase RhlB (red) and the PNPase (beige). The RNA molecule (dotted line) binds to the RNA-binding sites of the scaffold domain of RNase E (purple) and is cut by the catalytic domain of RNase E. (B) A putative model hypothesizing that one Dip-dimer binds to each RNA-binding site during the infection by phage \u03c6KZ. (C) A second model hypothesizing that one Dip-dimer binds to both RNA-binding sites at the same time, yielding a looping of the scaffold domain of RNase E. (D) A model in which the Dip-dimers form a link between two RNA degradosome protomers.\n\nA remarkable observation is that currently no homologues of Dip could be found, not even among \u03c6KZ-related phages, raising the intriguing question of how and when the phage acquired this factor. The unique structure of this protein resembles a partially opened scroll or a clamp, and it is tempting to imagine that the two protomers of Dip could act as pincers to capture a binding partner at the dimer interface. However, through a combination of structural, biochemical and bioinformatics analyses we can conclude that the binding site for RNase E is actually on the outer surfaces of the Dip dimer, and not within the \u201cclamp\u201d.\n\nSince one dimer of Dip possesses two binding sites on its surface, several possible RNase E binding models can be envisaged. In one scenario, two independent dimers might each bind to a RNA binding site (Figure 8B) or alternatively a single dimer may engage both sites at the same time, although the latter would require the two RNA binding segments to be in close proximity (Figure 8C). Finally, the possibility that a single Dip dimer may bind to two separate RNase E protomers cannot be dismissed, especially considering that RNase E is a tetrameric enzyme, and the four protomers may be in proximity in a single degradosome assembly (Figure 8D).\n\nThe question arises as to why the binding of Dip to the RNA-binding sites in the non-catalytic C-terminal region of RNase E should have a significant effect on the RNA processing and degrading activities of the catalytic N-terminal region of the enzyme. Our preferred explanation for these findings is that the RNA binding sites found in the CTH are particularly important for the recognition of RNA substrates that harbour secondary structure elements. Potentially these substrates require unwinding by an RNA helicase bound close to these regions of RNase E prior to cleavage by the NTH of RNase E. Therefore, the binding of structured RNAs to the RNA binding sites of the scaffold domain of RNase E can be crucial for efficient processing. In this respect phage \u03c6KZ and Dip act in a similar manner to phage T7 which phosphorylates the scaffold domain of RNase E to protect its transcripts from degradation by the host (Marchand et al., 2001).\n\nTaking together our in vitro and in vivo results, it could be expected that the levels of RNA during a \u03c6KZ infection would be high, since both degradation of bacterial and phage RNA by the RNA degradosome are affected. Indeed, RNAseq data show that the total amount of cellular RNA extracted increased over five-fold during infection (Ceyssens et al., 2014). However, it was found that 35\u2009min after the start of infection, 98.5% of the non-rRNA and non-tRNA could be mapped to the phage genome, suggesting a decrease of host RNA. Therefore, we hypothesize that at the start of infection by \u03c6KZ the bacterial RNA might be actively degraded. The mechanism for this is unclear, but could involve inhibition of the host RNA polymerase to impede nascent transcript genesis, and in parallel, the acceleration of host RNA decay by a yet uncharacterized enzyme of \u03c6KZ or a \u03c6KZ encoded activator of the hosts RNA degradation machinery. The production of the degradosome activating protein Srd by phage T4 has recently been reported (Qi et al., 2015), and although a homologue of Srd cannot be identified in the \u03c6KZ genome it is plausible that a functionally equivalent protein may be produced during the early stage of infection. Subsequently, Dip is produced to inhibit the activity of the RNA degradosome and protect the newly synthesized phage RNA. Since Western blot analyses indicate that Dip persists once it is produced, the stability of phage RNA can be maintained during the entire infection cycle. It remains to be determined whether the production of Dip is essential for efficient infection by phage \u03c6KZ.\n\nDip is the third phage protein reported that has independently evolved to influence the activity of the RNA degradosome of its host, the others being gp0.7 of phage T7 which phosphorylates the scaffold domain of RNase E to protect its transcripts from degradation by the host, and Srd of phage T4 which enhances the activity of RNase E (Marchand et al., 2001; Qi et al., 2015). The function of these proteins opens the possibility that the modulation of RNA degradosome activity might be a recurrent strategy of bacteriophages to support efficient phage infection. The inhibition of bacterial host nucleases by phage encoded proteins may be a more common strategy than had previously been appreciated. Recently it has been shown that the CRISPR-Cas system of P. aeruginosa can be inhibited by several phage encoded proteins (Bondy-denomy et al., 2015), two of which act by binding and blocking DNA binding sites on the CRISPR-cas machinery, reminiscent of the mode of action of Dip. Moreover, the observation that Dip also has an inhibitory effect on the RNA degradosome of E. coli, suggests that the RNA binding sites within the CTD of RNase E are more conserved (either at sequence or structure level) than had previously been thought. Therefore, it can be speculated that there may exist functional homologues of Dip in other phages that target host machinery of RNA metabolism. Finally, the identification and biological understanding of the function of Dip opens the possibility of developing of new biotechnological tools to modulate RNA turn over and regulation in bacteria.\n\n## Materials and methods\n\n### Bacterial strains, phages and media\n\nP. aeruginosa PAO1 was used during all manipulations (Stover et al., 2000). A Strep-tag II was fused to the C-terminus of RNase E (PA2976) by homologous recombination creating PAO1 rne::StrepII (Lesic and Rahme, 2008). Three E. coli strains were used: E. coli TOP10 (Life Technologies, Carlsbad, CA) for cloning procedures, E. coli BL21 (DE3) pLysS (Life Technologies) for heterologous expression of proteins and E. coli BTH101 (Euromedex, Souffelweyersheim, FR) for bacterial two-hybrid assays. Bacteria were grown in Lysogeny Broth (LB) (with appropriate antibiotics) at 37\u00b0C, unless stated elsewhere.\n\nSeven P. aeruginosa specific phages were used: phage 14\u20131, \u03c6KZ, LUZ19, LKA1, LUZ24, PEV2 and YuA (Van den Bossche et al., 2014). The phages were stored in phage buffer (10\u2009mM Tris-HCl pH 7.5, 10\u2009mM MgSO4, 150\u2009mM NaCl).\n\n### Affinity purifications and mass spectrometry\n\nThe engineered rne::StrepII strain was used for affinity purifications, after infection by one of the seven phages as described in Van den Bossche et al. (2014). Eluted protein samples were loaded on a SDS-PAGE gel, after which the gel was cut into slices and subjected to a tryptic digest. ESI-MS/MS analyses were performed on a LCQ Classic (ThermoFinnigan, San Jose, CA, US) equipped with a nano-LC column switching system as described in Dumont et al. (2004). The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium (Vizca\u00edno et al., 2014) via the PRIDE partner repository with the dataset identifier PXD003285 and 10.6019/PXD003285.\n\n### Protein expression and purification\n\nThe RNA degradosome of P. aeruginosa was purified as described in Van den Bossche et al. (2014), using a 2\u2009l culture of the PAO1 Rne::StrepII strain at OD600\u00a0nm 0.6. The RNA degradosome of E. coli and fragment of the CTD were expressed and purified as described by Tsai et al. (2012).\n\nDip and Dip-mutants were fused to a His-tag using the pEXP5-TOPO vector (Life Technologies) and transformed into E. coli BL21 (DE3) pLysS cells. The proteins were expressed and purified using a HisTrap HP column followed by size exclusion chromatography using a superdex 200 16/600 column (GE life sciences, Little Chalfont, UK) according the manufacturer\u2019s protocol. Purified proteins were either used directly for crystallization experiments or supplemented with 10% glycerol and stored at \u221280\u00b0C.\n\nFragments of the P. aeruginosa RNA degradosome were N-terminally fused to a GST-tag by cloning them into a pGEX-6P-1 vector using the BamHI and XhoI restriction sites (GE life sciences). The proteins were purified by Glutathione affinity chromatography followed by Heparin affinity chromatography (for RNase E constructs 583\u2013607, 583\u2013636, 756\u2013775, 756\u2013835 and 756\u2013901) and finally size exclusion chromatography using a superdex 75 16/600 column (GE life sciences).\n\n### Crystallography\n\nA seleno-methionine derivative of Dip was produced using a metabolic inhibition method. His-tagged Dip was transformed into E. coli BL21 (DE3) pLysS cells grown in 1\u2009L of M9 medium (42.2\u2009mM Na2HPO4, 22\u2009mM KH2PO4, 18.6\u2009mM NH4Cl, 8.5\u2009mM NaCl, 1\u2009mM MgSO4, 0.4% (w/v) glucose, 0.00005% (w/v) vitamin B, 4.2 mg/ml FeSO4)). At OD600nm 0.3, amino acids were added (final concentrations: 100 mg/l L-lysine, 100 mg/l L-phenylalanine, 100 mg/l L-threonine, 50 mg/l L-isoleucine, 50 mg/l L-leucine, 50 mg/l L-valine, 50 mg/l L-Seleno-methionine). 20\u2009min after this addition, the production of Dip was induced with 1\u2009mM IPTG. After 6\u2009h, cells were harvested and proteins were purified as for wild type Dip. The best diffracting crystals of seleno-methionine Dip were produced in a condition of 100\u2009mM KH2PO4, 100\u2009mM NaH2PO4, 100\u2009mM MES pH 6.0, 800\u2009mM NaCl and 0.2\u2009M sodium thiocyanate.\n\nData collected at beamline I24 of Diamond light source were used to solve the structure of Dip using the single wavelength anomalous diffraction method (SAD), utilizing the anomalous diffraction of the incorporated selenium atoms. An initial model of Dip was built automatically by the Phenix Autosolve pipeline (Adams et al., 2010), and the initial model was completed and improved with iterative cycles of refinement using Refmac5 (Murshudov et al., 1997) and manual model building in Coot (Emsley and Lohkamp, 2010).\n\nCrystals of Dip in complex with the RNase E756-775 were obtained by adding chemically synthesized peptide (Cambridge Research Biochemicals, Billingham UK) directly to Dip at a 1.5:1 molar ratio (peptide:Dip) prior to crystallisation. Hexagonal crystals of the Dip:RNaseE756-775 complex were obtained in a condition of 100\u2009mM KH2PO4, 100\u2009mM NaH2PO4, 100\u2009mM MES pH 6.0, 300\u2009mM NaCl and 0.2\u2009M sodium thiocyanate. Data collected at the beamline I04 of Diamond light source was used to solve the structure of Dip:RNaseE756-775 by molecular replacement, and density for the RNase E peptide was apparent when processing the crystallographic data in the low symmetry P1 space group. Eight amino acids of the peptide were cautiously modelled into this density for each of the six protomers of Dip in the asymmetric unit. The crystal structures of Dip and Dip:RNaseE756-775 are deposited at the protein data bank with accession codes 5FT0 and 5FT1.\n\n### In vitro pull down and mass spectrometry\n\nP. aeruginosa or E. coli cell lysate (collected at OD600\u00a0nm 0.6) was prepared from cells resuspended in 20\u2009ml of \u2018pull down\u2019 buffer (20\u2009mM Tris pH 7.5, 200\u2009mM NaCl, 20\u2009mM imidazole) and cell lysis by three passages through a high-pressure homogenizer (Emulsiflex, Mannheim, DE). 0.5 mg of His-tagged Dip was added to a His-select nickel affinity spin column (Sigma Aldrich, St. Louis, MO, US), followed by 10\u2009ml of the lysate, while an additional 10\u2009ml of lysate was loaded on a blank spin column as a negative control. The spin columns were washed three times with \u2018pull down\u2019 buffer, and proteins were eluted in 50 \u00b5l \u2018pull down\u2019 buffer supplemented with 500\u2009mM imidazole (15\u2009min, 4\u00b0C). The eluted fraction was visualized by SDS-PAGE, and protein bands were identified by in gel mass spectrometry (PNAC facility, University of Cambridge).\n\n### ELISA\n\nELISA was performed in Ni-NTA HisSorb Strips (Qiagen, Hilden, DE) according the manufacturer instructions. A 1:5,000 dilution of monoclonal anti-Strep-tag II antibodies conjugated to HRP (IBA, Goettingen, DE), the 1-Step Slow TMB-ELISA substrate and Stop Solution (Thermo Scientific, Waltham, MA, US) were used for colorometric detection at OD450nm after 30 min of incubation. All reactions were performed in triplicate and wells without Dip, without RNA degradosome or without both proteins were used as a negative control.\n\n### Mobility shift assays\n\nA dilution of Dip was mixed with a dilution of an RNA degradosome fragment and/or an RNA fragment in 20\u2009mM Tris pH 7.5 and 200\u2009mM NaCl, and incubated for 10\u2009min at TR. After the addition of loading dye (0.2% (w/v) bromophenol blue, 300\u2009mM DTT and 50% (w/v) glycerol), the samples were loaded on a 10% native polyacrylamide gel and run in running buffer (25\u2009mM Tris, 250\u2009mM glycine) in an electric field of 150 V. RNA was visualized by staining the gel with SYBR-gold stain, proteins by Coomassie staining.\n\n### Bacterial two-hybrid\n\nBacterial two-hybrid assays were performed using the BACTH System kit (Bacterial adenylate cyclase two-hybrid system kit, Euromedex) (Karimova et al., 1998). Dip was cloned into the high copy number vectors fused to the N-terminal (pUT18) and C-terminal (pUT18C) end of the T18 domain of adenylate cyclase and into the low copy number vectors fused to the N-terminal (pN-25) and C-terminal (pKT25) end of the T25 domain (Claessen et al., 2008). The components/fragments of the RNA degradosome (Figure 2A) were cloned in pUT18C and pN-25. To screen for interactions each combination of phage and bacterial genes/fragments was co-transformed. Dilutions of an overnight culture were spotted on synthetic minimal M63 medium. \u03b2-galactosidase activity was measured quantitatively using a Miller assay (Zhang and Bremer, 1995).\n\n### Western blot\n\nWestern blot was performed as described in Van den Bossche et al. (2014). A 1/5000 dilution of polycolonal anti-Dip antibodies (produced in rabbits by Pharmlabs, KU Leuven, Belgium) were incubated with the membrane during one hour at room temperature, followed by a 1/5000 dilution of Anti-Rabbit IgG (H+L) antibodies conjugated by Horse Radish Peroxidase during one hour at room temperature. Detection was carried out by enhanced chemiluminescence.\n\n### In vitro RNA degradation assay\n\nA mixture of 0.05 \u00b5M RNA degradosome and 0.5 \u00b5M Dip in reaction buffer (25\u2009mM Tris pH 8.0, 10\u2009mM MgCl2, 25\u2009mM NaCl, 25\u2009mM KCl, 1\u00a0mM DTT, 0.5U/ml of RNaseOUT) was incubated for 7\u2009min at 37\u00b0C. Subsequently, the appropriate RNA fragment was added and incubated at 37\u00b0C. At certain time points, 10 \u00b5l aliquots were taken and the reaction was stopped by adding 10 \u00b5l proteinase K buffer (200\u2009mM Tris pH 8.0, 25\u2009mM EDTA, 300\u2009mM NaCl, 2% (w/v) SDS, 0.5 mg/ml Tritirachium album Proteinase K) and incubation at 50\u00b0C for 30\u2009min. 10 \u00b5l RNA loading dye was added and the samples were boiled for 5\u2009min at 95\u00b0C. Samples were loaded on an 8% denaturing 7\u2009M urea 19:1 acrylamide/bisacrylamide gel and run in TBE buffer for 1\u2009hr in an electric field of 200 V. RNA was visualized with SYBR gold stain.\n\n### qRT-PCR\n\nQuantitative real-time PCR assays were carried out on a Rotor-Gene centrifugal real-time cycler (Qiagen) and analysis were performed on 3 \u00b5l of each sample in a total reaction volume of 15 \u00b5l using Absolute QPCR SYBR Green mix (Thermo Scientific) and 300 nM of both primers (Forward: GACGTACACGCGAAAGACCTG, Reverse: CTCGCCCAGAGCCATATTGTA). Thermocycles consisted of an initial 15\u2009min denaturation at 95\u00b0C and 40 amplification cycles with an annealing temperature of 55.5\u00b0C according the manufacturer instructions. Quantification of the template was calculated from standard curves generated from a tenfold dilution series of genomic DNA, using the Rotor-Gene 6000 Series Software 1.7 (Qiagen). The data were normalized to the total RNA content of the samples and plotted in a semi-logaritmic graph. RNA half-lifes were calculated as the ln2/k, presuming first-order kinetics.\n\n### Expression of phage proteins in P. aeruginosa\n\nDip was cloned into the pENTR/SD/D-TOPO vector (Invitrogen,\u00a0Carlsbad, CA) and transferred to a pHERD20T-GW E. coli - P. aeruginosa shuttle vector using the Gateway cloning system (Invitrogen). Dip-E214A/E222A was cloned directly in pHERD20T. After transformation to P. aeruginosa, a dilution of an overnight culture was spotted on minimal medium \u00b1 0% - 0.1% - 1% arabinose and incubated overnight at 37\u00b0C. The growth curves were monitored by a Bioscreen CTM spectrophotometer (Labsystems). Cells were visualised using a Nikon Eclipse Ti Time-Lapse Microscope (Nikon).\n",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "8cbd9e8d-2df1-4b9d-a1e5-001c45f5cfa8",
+      "submission_id": "6f8598cb-45e5-448f-bbcd-94fdefbb08c4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gisela Storz, National Institute of Child Health and Human Development , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.16413.030](https://doi.org/10.7554/eLife.16413.030)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Structural elucidation of a novel mechanism for the bacteriophage-based inhibition of the RNA degradosome\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors and the evaluation has been overseen by James Manley as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Udi Qimron (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, Van den Bossche et al. report the discovery of a giant phage-encoded protein, gp37/Dip that inhibits host cell RNA degradation by associating with the two RNA binding sites of Pseudomonas aeruginosa RNase E. The study, which includes a 2.2\u00c5 structure of Dip, is very complete and reveals yet another interesting mechanism by which bacteriophage proteins can interfere with the host cell.\n\nEssential revisions:\n\n1) While the in vitro data are strong, the study would be more compelling with additional documentation that Dip affects RNA stability in vivo and/or further information about Dip activity throughout the infection cycle. Thus, the authors should carry out RNAseq normalized to the DNA content to show global RNA reduction following Dip expression. Carrying out such assays at several point during the infection cycle by a wt phage versus Dip deletion mutant would be a better than exogenous Dip expression from a plasmid.\n\n2) One other experiment that could put the \"icing on the cake\" is to use the point mutants in Dip that reduce interaction with RNase E, and show that the mutant no longer exerts DIP's core functions. Such a mutation would serve as an additional and possibly informative control, and bring the story \"full circle\". If the authors have such data, if would be terrific to include.\n",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "61d27a3c-327b-4567-a999-6da75121ccdf",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C1",
+      "claim": "A virus-encoded protein termed gp37/Dip directly binds and inhibits the RNA degradation machinery of its bacterial host.",
+      "claim_type": "EXPLICIT",
+      "source": "We have identified a virus-encoded protein termed gp37/Dip, which directly binds and inhibits the RNA degradation machinery of its bacterial host.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding directly, and it is supported by multiple experimental results throughout the manuscript including pull-down assays, EMSA, and in vitro degradation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "f28cc1d4-a111-4d63-aae7-e067859cacad",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C2",
+      "claim": "Dip is encoded by giant phage \u03c6KZ.",
+      "claim_type": "EXPLICIT",
+      "source": "Encoded by giant phage \u0444KZ, this protein associates with two RNA binding sites of the RNase E component of the Pseudomonas aeruginosa RNA degradosome",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states that Dip is encoded by phage \u03c6KZ.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "64758922-6dee-4646-a0b1-bb8db1b22196",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C3",
+      "claim": "Dip associates with two RNA binding sites of the RNase E component of the Pseudomonas aeruginosa RNA degradosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Encoded by giant phage \u0444KZ, this protein associates with two RNA binding sites of the RNase E component of the Pseudomonas aeruginosa RNA degradosome, occluding them from substrates and resulting in effective inhibition of RNA degradation and processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, which is supported by bacterial two-hybrid assays and EMSA experiments showing binding to residues 583-636 and 756-775 of RNase E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "c9aa5755-efc1-4b99-90eb-71e0a6e76b83",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C4",
+      "claim": "Dip occludes RNA binding sites from substrates, resulting in effective inhibition of RNA degradation and processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Encoded by giant phage \u0444KZ, this protein associates with two RNA binding sites of the RNase E component of the Pseudomonas aeruginosa RNA degradosome, occluding them from substrates and resulting in effective inhibition of RNA degradation and processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this mechanism, which is supported by EMSA showing competitive displacement of RNA and in vitro degradation assays showing inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "a30953d4-9142-451f-80db-1ac36cbd6657",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C5",
+      "claim": "The crystal structure of Dip was determined at 2.2 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The 2.2 \u00c5 crystal structure reveals that this novel homo-dimeric protein has no identifiable structural homologues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states the resolution of the crystal structure, which is confirmed in the crystallography methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "1032f290-1d83-450f-8e6e-cfe38640ce13",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C6",
+      "claim": "Dip is a novel homo-dimeric protein with no identifiable structural homologues.",
+      "claim_type": "EXPLICIT",
+      "source": "The 2.2 \u00c5 crystal structure reveals that this novel homo-dimeric protein has no identifiable structural homologues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, which is supported by structural analysis and database searches described in the results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "ac9be09b-3877-4459-8d71-6c6d1209c492",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C7",
+      "claim": "Acidic patches on the convex outer surface of Dip bind RNase E.",
+      "claim_type": "EXPLICIT",
+      "source": "Our biochemical data indicate that acidic patches on the convex outer surface bind RNase E.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding, which is supported by structural analysis, docking experiments, and mutagenesis studies showing that E214A/E222A mutations abolish binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "450ca018-95b3-45c6-ba86-b1eff59c0aa1",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C8",
+      "claim": "Through the activity of Dip, \u03c6KZ has evolved a unique mechanism to down regulate a key metabolic process of its host to allow accumulation of viral RNA in infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Through the activity of Dip, \u0444KZ has evolved a unique mechanism to down regulate a key metabolic process of its host to allow accumulation of viral RNA in infected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this interpretation, which is supported by in vitro and in vivo data showing inhibition of RNA degradation and increased RNA stability.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "ed23d951-aecd-428f-b0d6-d113b4705b2f",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C9",
+      "claim": "In \u03b3-proteobacteria, several key constituents of the mRNA decay machinery are assembled in the membrane-associated RNA degradosome.",
+      "claim_type": "EXPLICIT",
+      "source": "In \u03b3-proteobacteria, several key constituents of the mRNA decay machinery are assembled in the membrane-associated RNA degradosome (A\u00eft-Bara et al., 2015; Marcaida et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "3c99e466-4c4f-4404-81c1-7e7c4afc5e41",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C10",
+      "claim": "In the E. coli RNA degradosome, the complex is built around the hydrolytic endoribonuclease RNase E, which initiates the rate-limiting step in RNA degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the paradigm Escherichia coli RNA degradosome, this complex is built around the hydrolytic endoribonuclease RNase E, which initiates the rate-limiting step in RNA degradation (Del Campo et al., 2015; McDowall et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "82a07a11-cc66-405a-ab36-8fe9faa32dfc",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C11",
+      "claim": "Subsequent degradation is carried out by the 3'-5' phosphorolytic exoribonuclease PNPase assisted by the ATP-dependent helicase RhlB.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent degradation is carried out by the 3'-5' phosphorolytic exoribonuclease PNPase (polynucleotide phosphorylase) assisted by the ATP-dependent helicase RhlB (both of which are components of the degradosome assembly) and is completed by an oligo-ribonuclease which is not associated to the complex (Evguenieva-Hackenberg and Klug, 2011; G\u00f3rna et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "ca19a9ca-3c07-4710-b6b0-ca3446c58529",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C12",
+      "claim": "RNase E is a tetrameric enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "RNase E, a member of the RNase E/G family, is a tetrameric enzyme and can be broadly divided into two functional halves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is presented as established knowledge about RNase E structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "a9e51946-3139-495c-907e-751fd8aeb142",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C13",
+      "claim": "The N-terminal half (NTH) of RNase E comprises the catalytic domain, while the non-conserved C-terminal half (CTH) is natively unstructured and acts as a scaffold to assemble the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal half (NTH) comprises the catalytic domain, while the non-conserved C-terminal half (CTH) is natively unstructured and acts as a scaffold to assemble the complex (A\u00eft-Bara et al., 2015; Callaghan et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "dd823a75-76ab-4f9d-8e3c-b59fe6b56075",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C14",
+      "claim": "The CTH of E. coli RNase E contains two arginine-rich regions that have been shown to bind RNA: the RNA binding domain (RBD)/Arginine-rich region 1 (AR1) and AR2.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the CTH contains two arginine-rich regions that have been shown to bind RNA: the RNA binding domain (RBD)/Arginine-rich region 1 (AR1) and AR2 (Callaghan et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "a3d1f145-d49c-4f70-99b8-fb8ecd04754e",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C15",
+      "claim": "E. coli phage T7 heavily phosphorylates the CTH of RNase E and RhlB, leading to the inhibition of RNA degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "In one, E. coli phage T7 heavily phosphorylates the CTH of RNase E and RhlB, leading to the inhibition of RNA degradation (Marchand et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "a3b7f37a-7056-47f3-b816-76c32a32594a",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C16",
+      "claim": "The Srd protein encoded by E. coli phage T4 increases the activity of RNase E on host mRNA by binding to the catalytic NTH.",
+      "claim_type": "EXPLICIT",
+      "source": "In a second example, the Srd protein encoded by E. coli phage T4 was found to increase the activity of RNase E on host mRNA by binding to the catalytic NTH (Qi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "3eb76b2b-a416-4488-a71f-4628254e5148",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C17",
+      "claim": "Giant '\u0444KZ-like' bacteriophages form a remote branch of myoviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Being one of seven known genera of lytic phages infecting Pseudomonas aeruginosa, giant '\u0444KZ-like' bacteriophages form a remote branch of myoviruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is presented as established knowledge about phage classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "17fcc55b-73dc-46a5-bd70-2c01d7802f8d",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C18",
+      "claim": "The \u0444KZ virus type possesses an unusually large 280 kb genome with little evolutionary relation to other known genera.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u0444KZ virus type possesses an unusually large 280 kb genome with little evolutionary relation to other known genera.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is presented as established knowledge about phage \u03c6KZ.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "f27cf5b3-5707-4f0e-99d8-c2e96c70a364",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C19",
+      "claim": "The genomic G/C content of \u03c6KZ is remarkably low (36.3%) in comparison to its host P. aeruginosa, implying a short history of co-evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Its genomic G/C content is remarkably low (36.3%) in comparison to its host P. aeruginosa, implying a short history of co-evolution (Mesyanzhinov et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation and includes an inference about evolutionary history.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "b0b126df-2908-4b73-b57f-8f57c4ec7a27",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C20",
+      "claim": "\u03c6KZ infection causes more than five-fold increase in total cellular RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, \u0444KZ infection causes more than five-fold increase in total cellular RNA, suggesting that the phage affects P. aeruginosa RNA biogenesis and breakdown (Ceyssens et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "efc15fb0-83c9-4ef1-8675-520760485644",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C21",
+      "claim": "Dip is the first known viral protein which effectively inhibits the RNA degradation activity of its host via a direct protein:protein interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, Dip is the first known viral protein which effectively inhibits the RNA degradation activity of its host via a direct protein:protein interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is presented as a novel finding based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "8697e967-97d0-451a-8152-45c1ddc0070a",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C22",
+      "claim": "A phage protein was co-precipitated only in cells infected with giant phage \u03c6KZ.",
+      "claim_type": "EXPLICIT",
+      "source": "The modified strain was subsequently infected with a collection of seven different P. aeruginosa-specific phages, and a phage protein was co-precipitated only in cells infected with giant phage \u03c6KZ (Supplementary file 1-Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the results of the pull-down experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "3d2ffbe1-74a3-41ef-b835-ac8dff0a9032",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C23",
+      "claim": "Dip (gp37) has a predicted molecular weight of 31.7 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "This Degradosome interacting protein (gp37 \u2013 referred to hereafter as Dip) has a predicted molecular weight of 31.7 kDa and has no sequence similarity with any protein in currently available databases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes a computational prediction about the protein.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "2d3b3dbc-44d2-46ae-9cd3-9277643eba02",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C24",
+      "claim": "Dip has no sequence similarity with any protein in currently available databases.",
+      "claim_type": "EXPLICIT",
+      "source": "This Degradosome interacting protein (gp37 \u2013 referred to hereafter as Dip) has a predicted molecular weight of 31.7 kDa and has no sequence similarity with any protein in currently available databases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the results of database searches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "1fdfe740-5a7b-4f0a-acb1-9f05ac0a0f6a",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C25",
+      "claim": "RNase E was identified as the most abundant co-purifying band in the reciprocal pull down assay.",
+      "claim_type": "EXPLICIT",
+      "source": "The most abundant co-purifying band was identified as RNase E by mass spectrometry analysis, and other predicted components of the RNA degradosome (PNPase and DeaD, which were also identified in the original pull down, Supplementary file 1-Table 1) were among the co-purifying proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results shown in Figure 1A and confirmed by mass spectrometry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "9d091657-0fc4-4bf2-ac81-4ac9c113804b",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C26",
+      "claim": "Titrating a constant amount of Dip with RNA degradosome yielded an increasing signal which saturated at an approximate ratio of 10 Dip protomers for each degradosome protomer.",
+      "claim_type": "EXPLICIT",
+      "source": "Titrating a constant amount of Dip with RNA degradosome yielded an increasing signal which saturated at an approximate ratio of 10 Dip protomers for each degradosome protomer (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results of the ELISA experiment shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "d85a5839-be4a-4326-990d-32ba323cd29e",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C27",
+      "claim": "A significant positive reaction with Dip was only observed for the C-terminal part of RNase E (CTH; residues 608\u20131057) in the bacterial two-hybrid assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially PNPase, three DEAD-box helicases and RNase E (divided into NTH and CTH) were assessed for their interaction with Dip, and a significant (p<0.05) positive reaction with Dip was only observed for the C-terminal part of RNase E (CTH; residues 608\u20131057) (Figure 1B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results of the bacterial two-hybrid assay shown in Figure 1B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "8a45704c-1016-4a70-8525-05e2f4b1bf1f",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C28",
+      "claim": "A clear interaction site can be defined within residues 756 to 835 of RNase E.",
+      "claim_type": "EXPLICIT",
+      "source": "For three other fragments (all-encompassing residues 756\u2013835 of RNase E, Figure 1B fragments C, F and I), a strong signal was produced for all vector combinations and could be positively confirmed in subsequent Miller assays (p<0.05) (Figures 1B\u2013C, fragments C, F and I). Combining these results, a clear interaction site can be defined within residues 756 to 835, while a weak second interaction site may be present within residues 583\u2013607.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results of the bacterial two-hybrid assay shown in Figure 1B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "6d0afeb1-20fe-43a2-9862-1c807aa411fd",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C29",
+      "claim": "A weak second interaction site may be present within residues 583\u2013607 of RNase E.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining these results, a clear interaction site can be defined within residues 756 to 835, while a weak second interaction site may be present within residues 583\u2013607.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on the bacterial two-hybrid results and EMSA data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "3f4fe29a-6c03-4230-81aa-a0a0cf5a4579",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C30",
+      "claim": "The mobility of Dip is altered upon addition of increasing concentrations of RNase E fragment 583\u2013607 (fused to a GST-tag), with all of the Dip being shifted at an approximate 10-fold excess of the RNase E fragment.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2A demonstrates that the mobility of Dip is altered upon addition of increasing concentrations of 583\u2013607 (fused to a GST-tag), with all of the Dip being shifted at an approximate 10-fold excess of the RNase E fragment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results of the EMSA shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "fdee1733-374a-4f6e-a0ca-c2accd04e4a7",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C31",
+      "claim": "When using a slightly larger fragment of RNase E (residues 583\u2013636), Dip is shifted completely by only a four-fold excess of the GST-fusion protein.",
+      "claim_type": "EXPLICIT",
+      "source": "When using a slightly larger fragment of RNase E (residues 583\u2013636), Dip is shifted completely by only a four-fold excess of the GST-fusion protein.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results of the EMSA shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "0c2567a9-128b-4b60-a043-a3fe37089eeb",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C32",
+      "claim": "Efficient Dip binding requires a larger region of RNase E than the first defined segment of residues 583\u2013607.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that efficient Dip binding requires a larger region of RNase E than the first defined segment of residues 583\u2013607.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is an inference based on the EMSA results comparing binding to 583-607 vs 583-636.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "d6fcc7b9-7b03-4a57-b615-41a83d9be59e",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C33",
+      "claim": "Only a clear shift of Dip is visible upon addition of the RNase E fragments harbouring the predicted RNA binding site of residues 757\u2013772 (756\u2013901, 756\u2013835 and 756\u2013775).",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 2B, only a clear shift of Dip is visible upon addition of the RNase E fragments harbouring the predicted RNA binding site of residues 757\u2013772 (756\u2013901, 756\u2013835 and 756\u2013775).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results of the EMSA shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "180c14cc-227f-416d-93f7-df0480212ddb",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C34",
+      "claim": "Dip is efficiently shifted at just a 1:1 ratio to the different RNase E fragments 756-901, 756-835, and 756-775, suggesting stronger binding to residues 756\u2013775 than 583\u2013636 of RNase E.",
+      "claim_type": "EXPLICIT",
+      "source": "Dip is efficiently shifted at just a 1:1 ratio to the different fragments, suggesting stronger binding to residues 756\u2013775 than 583\u2013636 of RNase E.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results of the EMSA shown in Figure 2B and makes an inference about relative binding strength.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "6d64af0a-e77d-4ef0-b36c-e3190450be7c",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C35",
+      "claim": "No shift of 9S rRNA was observed when incubated with Dip, indicating that Dip is not an RNA binding protein.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure that the binding is not mediated by the presence of RNA, an additional EMSA was performed using 9S rRNA and increasing amounts of Dip. Since no shift of the RNA was observed (Figure 2\u2014figure supplement 1), we conclude that Dip is not an RNA binding protein.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results of the EMSA shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "002d3b70-02d0-44aa-bef9-4e69ea4b2896",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C36",
+      "claim": "The interaction between Dip and the 583\u2013636 and 756\u2013775 regions of RNase E of P. aeruginosa is via a direct protein-protein interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the interaction between Dip and the 583\u2013636 and 756\u2013775 regions of RNase E of P. aeruginosa is via a direct protein-protein interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is a conclusion based on the EMSA results showing no RNA binding by Dip.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "4163afc8-63e0-45e2-831a-bcea1e7cdbfe",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C37",
+      "claim": "Both Dip interaction sites (583\u2013636 and 756\u2013775) found in P. aeruginosa RNase E align well to the known RNA binding sites RBD and AR2 in E. coli RNase E, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing both Dip interaction sites (583\u2013636 and 756\u2013775) found in P. aeruginosa RNase E to the RNase E of E. coli, these arginine rich regions were found to align well to the known RNA binding sites RBD and AR2, respectively (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the results of sequence alignment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "ea0eb6a9-fd87-480b-a5f5-ef7723d2e2b5",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C38",
+      "claim": "The RNA degradosome components RNase E and PNPase, and the ribosomal protein L13 were identified as the predominant bands in the E. coli pull-down experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "The RNA degradosome components RNase E and PNPase, and the ribosomal protein L13 were identified as the predominant bands identified by mass spectrometry, while two other canonical degradosome proteins, RhlB and enolase, were also identified.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results shown in Figure 3A and confirmed by mass spectrometry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "64515734-aef5-4a95-9275-84ac31c711af",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C39",
+      "claim": "An EMSA using purified recombinant proteins corresponding to the CTH of E. coli RNase E showed a clear shift of Dip in the presence of the CTH at the 1:1 molar ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "An EMSA using purified recombinant proteins corresponding to the CTH of E. coli RNase E equally showed a clear shift of Dip in the presence of the CTH at the 1:1 molar ratio (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results of the EMSA shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "b7281f29-0a06-4972-92ce-31f4b80ad572",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C40",
+      "claim": "Dip forms a direct protein-protein association with E. coli RNase E, which is not dependent upon other proteins or RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that Dip forms a direct protein-protein association with E. coli RNase E, which is not dependent upon other proteins or RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is a conclusion based on the EMSA results with purified proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "b857d333-e3dc-4c7c-a00f-4dccb6c14bd2",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C41",
+      "claim": "In the presence of the 756\u2013901 fragment of P. aeruginosa RNase E, a clear shift of both the protein and the RNA was visible.",
+      "claim_type": "EXPLICIT",
+      "source": "The 756\u2013901 (GST-tagged) and 756\u2013775 (untagged) fragments of P. aeruginosa RNase E were mixed with a short RNA oligonucleotide (27mer). In the presence of the 756\u2013901 fragment a clear shift of both the protein and the RNA was visible (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results of the EMSA shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "ae902b79-c343-4ce9-ad4c-a79a852229ee",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C42",
+      "claim": "When increasing amounts of Dip were added to RNA:RNase E complexes, a new protein:protein complex is formed between Dip and the RNase E fragments, while the bound RNA is released and returns to a position at the bottom of the gel.",
+      "claim_type": "EXPLICIT",
+      "source": "When increasing amounts of Dip were subsequently added to these RNA:RNase E complexes, a new protein:protein complex is formed between Dip and the RNase E fragments, while the bound RNA is released and returns to a position at the bottom of the gel (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results of the EMSA shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "507af776-fb93-4e2b-89ce-eedf77120f3f",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C43",
+      "claim": "Dip is able to compete with and displace RNA from the RNase E fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations show that Dip is able to compete with and displace RNA from the RNase E fragments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is a conclusion based on the EMSA results shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "ce954575-1dc8-4222-a911-2411b11bc87e",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C44",
+      "claim": "When using the larger 9S rRNA (245 nt, precursor of 5S rRNA) with the 583\u2013636 fragment of P. aeruginosa RNase E, a clear shift can be observed.",
+      "claim_type": "EXPLICIT",
+      "source": "However when using the larger 9S rRNA (245 nt, precursor of 5S rRNA), a clear shift can be observed (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results of the EMSA shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "9af9b69a-6a31-4924-b4d1-9ac4447ae024",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C45",
+      "claim": "9S rRNA can be competitively displaced from the 583\u2013636 fragment by Dip, and the addition of a 4-fold excess of Dip is able to completely remove the bound RNA from the RNase E fragment.",
+      "claim_type": "EXPLICIT",
+      "source": "As with the 756\u2013775 binding site, 9S rRNA can be competitively displaced from the 583\u2013636 fragment by Dip, and the addition of a 4-fold excess of Dip is able to completely remove the bound RNA from the RNase E fragment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results of the EMSA shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "34eaf1e4-86e1-4da7-889b-100ca25f6e23",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C46",
+      "claim": "Dip targets both RNA binding sites in the C-terminal half of the RNA degradosome, and consequently blocks the binding of RNA to the RNase E subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that Dip targets both RNA binding sites in the C-terminal half of the RNA degradosome, and consequently blocks the binding of RNA to the RNase E subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is a conclusion based on the EMSA results showing competitive displacement of RNA from both binding sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "619f057d-f13f-4d77-ad74-06b75b17f600",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C47",
+      "claim": "After incubating 9S rRNA fragment with Dip for 30 min, no RNA degradation was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "First, Dip itself was tested for RNase activity towards the 9S rRNA fragment. After incubating the RNA fragment with the phage protein for 30 min, no RNA degradation was observed (Figure 5\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results of the control experiment shown in Figure 5\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "b3b9643f-6154-4c0e-b954-8dc23536d6fd",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C48",
+      "claim": "With increasing amounts of Dip, the processing of 9S rRNA by RNA degradosomes is visibly reduced, with almost no cleavage observed in the presence of a 10-fold access of Dip.",
+      "claim_type": "EXPLICIT",
+      "source": "With increasing amounts of Dip, the processing of 9S rRNA is visibly reduced, with almost no cleavage observed in the presence of a 10-fold access of Dip.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results of the in vitro degradation assay shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "7a2cc9fc-d694-411f-a845-9650ae0f5adc",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C49",
+      "claim": "Dip inhibits the processing activity of the RNA degradosome of both P. aeruginosa and E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we conclude that Dip inhibits the processing activity of the RNA degradosome of both P. aeruginosa and E. coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is a conclusion based on the in vitro degradation assays shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "272b4df6-cb19-446a-9deb-6a03c1da6eca",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C50",
+      "claim": "RNase E catalytic domain (residues 1\u2013525) was still capable of processing 9S RNA (albeit less efficiently than the full degradosome), but no inhibition of the degradation activity could be observed in the presence of Dip.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that RNase E was still capable of processing 9S RNA (albeit less efficiently than the full degradosome), but no inhibition of the degradation activity could be observed in the presence of Dip (Figure 5B), demonstrating that Dip does not directly influence the activity of the catalytic domain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results of the in vitro degradation assay shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "e0d47dfd-f79c-49a9-8bdb-00531a4cd36f",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C51",
+      "claim": "Dip does not directly influence the activity of the catalytic domain of RNase E.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted that RNase E was still capable of processing 9S RNA (albeit less efficiently than the full degradosome), but no inhibition of the degradation activity could be observed in the presence of Dip (Figure 5B), demonstrating that Dip does not directly influence the activity of the catalytic domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is a conclusion based on the in vitro degradation assay shown in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "283d003e-a049-4e05-a37f-63d2e4699961",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C52",
+      "claim": "When using RNA originating from the \u03c6KZ genome, Dip showed a similar inhibitory effect on RNA cleavage as seen with bacterial 9S rRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "When using RNA originating from the \u03c6KZ genome, Dip showed a similar inhibitory effect on RNA cleavage as seen with bacterial 9S rRNA (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results of the in vitro degradation assay shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "49069c06-06f5-400c-ac7e-19c22a229a3f",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C53",
+      "claim": "The cleavage of the fdhE transcript, which has been shown to be processed primarily via a second, 'direct entry' pathway of RNase E, was efficiently inhibited in the presence of Dip.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the cleavage of the fdhE transcript, which has been shown to be processed primarily via a second, 'direct entry' pathway of RNase E (Clarke et al., 2014), was efficiently inhibited in the presence of Dip (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results of the in vitro degradation assay shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "0b48e6b0-62fe-49f5-863a-a3614fb29418",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C54",
+      "claim": "Dip inhibits the activity of the RNA degradosome in vitro without a preference for a specific substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that Dip inhibits the activity of the RNA degradosome in vitro without a preference for a specific substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is a conclusion based on the in vitro degradation assays with multiple RNA substrates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "921fc107-1216-4d68-b2fb-ca6bed330bec",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C55",
+      "claim": "RNAseq analysis indicated that the phage protein Dip is transcribed in the early phase of infection, and is highly expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "RNAseq analysis indicated that the phage protein Dip is transcribed in the early phase of infection, and is highly expressed (Ceyssens et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "311db376-02d7-42c8-af2d-3f5244f99148",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C56",
+      "claim": "Using anti-Dip antibodies, Dip was first detected 9 min after the start of infection, reaching a peak at 24 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Using anti-Dip antibodies, Dip was first detected 9 min after the start of infection, reaching a peak at 24 min.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results of the western blot shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "22a5d984-6235-4bee-8915-bea1d83885fc",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C57",
+      "claim": "Although a decrease in Dip levels is visible at approximately 30 min post infection, the quantity of Dip proteins subsequently increases, after which its levels appear to plateau.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a decrease in Dip levels is visible at approximately 30 min post infection, the quantity of Dip proteins subsequently increases, after which its levels appear to plateau.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results of the western blot shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "f5f8da21-2bc1-46fc-b412-cbafa6d655d6",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C58",
+      "claim": "Dip is produced during the early phase of infection and subsequently persists during the whole infection cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that Dip is produced during the early phase of infection and subsequently persists during the whole infection cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is a conclusion based on the western blot results shown in Figure 6A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "f237fa56-98e3-414c-8f1a-1fc997a81ece",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C59",
+      "claim": "When expressing Dip at low levels in P. aeruginosa (0.1% arabinose), no variation in growth efficiency could be observed.",
+      "claim_type": "EXPLICIT",
+      "source": "When expressing Dip at low levels in P. aeruginosa (0.1% arabinose), no variation in growth efficiency could be observed (Figure 6\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results shown in Figure 6\u2014figure supplement 1A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "2ecf28d4-4e53-4a9c-a74b-6ca167e8333b",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C60",
+      "claim": "A change in morphology was detected when Dip was expressed at high levels (1% arabinose), with cells changing from the wild type rod-shape into a 'curled' phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a change in morphology was detected when Dip was expressed at high levels (1% arabinose), with cells changing from the wild type rod-shape into a 'curled' phenotype (Figure 6\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results shown in Figure 6\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "9a7f6934-4385-4000-a423-ac35831d2279",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C61",
+      "claim": "The decay of OprL is slowed in the presence of Dip, with the half-life increasing from \u00b1 6 min to \u00b1 12 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the data show a pronounced variance, they clearly demonstrate that the decay of OprL is slowed in the presence of Dip, with the half-life increasing from \u00b1 6 min to \u00b1 12 min (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results of the qRT-PCR experiment shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "4cd5f0ce-3876-45aa-a110-638651b03389",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C62",
+      "claim": "The slowing of OprL decay in the presence of Dip is in agreement with the inhibitory effect of Dip on the RNA degradosome observed in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in agreement with the inhibitory effect of Dip on the RNA degradosome observed in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is an inference connecting the in vivo and in vitro results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "c1152213-d5dc-43cb-98ae-aeb26b83c8dc",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C63",
+      "claim": "The dimeric form of Dip was confirmed to be the predominant species in solution by analytical ultracentrifugation.",
+      "claim_type": "EXPLICIT",
+      "source": "The dimeric form was confirmed to be the predominant species in solution by analytical ultracentrifugation, while self-interaction was showed during a bacterial two-hybrid analyses (Data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the results of analytical ultracentrifugation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "93353497-daa6-4ed5-9ac1-667f0969af18",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C64",
+      "claim": "A search through the protein structural database could not identify any significant structural homologues of Dip, indicating that its protomers are composed of an unprecedented \u03b1+\u03b2 fold.",
+      "claim_type": "EXPLICIT",
+      "source": "A search through the protein structural database could not identify any significant structural homologues of Dip, indicating that its protomers are composed of an unprecedented \u03b1+\u03b2 fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the results of structural database searches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "34fea8fe-fb23-43ae-ae69-d815d44ae956",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C65",
+      "claim": "Secondary structure prediction of the RNase E peptide 756-775 in isolation suggested a high propensity towards a helical conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondary structure prediction of this RNase E peptide in isolation suggested a high propensity towards a helical conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the results of computational secondary structure prediction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "12c7e770-544b-47af-a403-96a862895fd4",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C66",
+      "claim": "The best energetically ranked complexes from docking experiments show binding of the RNase E peptide 756-775 to a negatively charged patch on the outer surface of the Dip-dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "The best energetically ranked complexes show binding of the peptide to a negatively charged patch on the outer surface of the Dip-dimer (Figures 7B\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results of computational docking experiments shown in Figures 7B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "d6c6502a-a4cf-4359-8731-3a0ac4783d3d",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C67",
+      "claim": "Discontinuous density was observed on the surface of Dip in the DOT docking predicted acidic pocket when Dip was co-crystallized with the 756\u2013775 peptide of P. aeruginosa RNase E.",
+      "claim_type": "EXPLICIT",
+      "source": "Discontinuous density was observed on the surface of Dip in the DOT docking predicted acidic pocket (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results of the crystal structure shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "8b99f0f6-9bd7-4546-923d-27e4d317560d",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C68",
+      "claim": "Processing the X-ray diffraction data in the lower symmetry P1 space group visibly improved the density for the RNase E peptide, and eight amino acids of the peptide were cautiously modelled into this density.",
+      "claim_type": "EXPLICIT",
+      "source": "Processing the X-ray diffraction data in the lower symmetry P1 space group visibly improved the density for the RNase E peptide, and we were able to cautiously model eight amino acids of the peptide into this density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the crystallographic analysis and model building process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "9e07c676-0a82-4e9e-b351-c8b2b7b4626c",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C69",
+      "claim": "The model of Dip bound to the short RNase E recognition peptide (Dip:RNaseE756-775) indicated significant contacts are made between residues Asp 137, Asp138, Glu 214 and Glu 222 of Dip and the RNase E peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "The model of Dip bound to the short RNase E recognition peptide (Dip:RNaseE756-775) indicated significant contacts are made between residues Asp 137, Asp138, Glu 214 and Glu 222 of Dip and the RNase E peptide (Figure 7C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results of the crystal structure analysis shown in Figure 7C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "7b890303-e7a0-43d7-9d24-b8d72a910f3c",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C70",
+      "claim": "A double mutation of Glu 214 and Glu 222 to alanine was sufficient to completely abolish the interaction with both Dip binding sites on RNase E when assessed by an electrophoretic mobility shift assay.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm the importance of these residues in the interaction between the two proteins, several mutants of Dip were generated where the acidic residues on the surface of Dip were substituted for alanine. A double mutation of Glu 214 and Glu 222 to alanine was sufficient to completely abolish the interaction with both Dip binding sites on RNase E when assessed by an electrophoretic mobility shift assay (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results of the mutagenesis and EMSA experiments shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "2dc5db74-501b-4cec-b365-8a897a776aa3",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C71",
+      "claim": "The in vivo expression of the Dip-E214A/E222A mutant using the pHERD20T vector restored the wild type phenotype compared to the curly morphology obtained by in vivo Dip expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the in vivo expression of the Dip-E214A/E222A mutant using the pHERD20T vector restored the wild type phenotype compared to the curly morphology obtained by in vivo Dip expression (Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This statement describes the results shown in Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "61a5eefc-0c92-47a7-bd43-1511d91aec62",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C72",
+      "claim": "Electron density for an unknown small molecule ligand can be seen in the acidic patch region in the structure of apo-Dip, which has been modelled as a single arginine amino acid.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, electron density for an unknown small molecule ligand can be seen in this region in the structure of apo-Dip, which we have modelled as a single arginine amino acid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes an observation from the crystal structure of apo-Dip.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "82e36d1b-bb1f-4acf-8a10-4436b80263f7",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C73",
+      "claim": "The acidic patch on the outer surface of Dip is crucial for the interaction with RNase E, and both of the RNA binding segments of RNase E engage Dip via this region.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that the acidic patch on the outer surface of Dip is crucial for the interaction with RNase E, and both of the RNA binding segments of RNase E engage Dip via this region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is a conclusion based on the structural and mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "4ec27ca2-3de0-4138-8840-469ed1bf6e2b",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C74",
+      "claim": "In P. aeruginosa cells infected with giant phage \u0444KZ, a viral protein 'gp37/Dip' binds to the putative RNA degradosome assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "The RNA degradosome (Figure 8A) plays a pivotal role in bacterial post-transcriptional gene regulation, ensuring efficient transcript degradation and processing. In P. aeruginosa cells infected with giant phage \u0444KZ, we have identified a viral protein 'gp37/Dip' which binds to the putative RNA degradosome assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement summarizes the main finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "7d7c4656-75c7-4abe-9986-e2d6f861d149",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C75",
+      "claim": "The binding targets of Dip could be clearly defined as two RNA-binding sites within the C-terminus of RNase E (residues 583\u2013636 and 756\u2013775).",
+      "claim_type": "EXPLICIT",
+      "source": "The binding targets of this degradosome interacting protein could be clearly defined as two RNA-binding sites within the C-terminus of RNase E (residues 583\u2013636 and 756\u2013775).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement summarizes the mapping results from bacterial two-hybrid and EMSA experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "9e650e41-20d5-4477-82b6-14450ad538e3",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C76",
+      "claim": "RNAs bound to the two RNA binding sites of RNase E are displaced by Dip.",
+      "claim_type": "EXPLICIT",
+      "source": "Our in vitro assays indicate that RNAs bound to these two RNA binding sites are displaced by Dip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement summarizes the results of the EMSA experiments showing competitive displacement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "379135cc-f6a4-42da-8544-e54658f72adb",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C77",
+      "claim": "The interaction of Dip with the RNA binding segments inhibits the activity of the RNA degradosome in vitro and in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the interaction of Dip with these segments inhibits the activity of the RNA degradosome in vitro and in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement summarizes the results of the in vitro degradation assays and in vivo RNA decay experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "bafeffcd-2e35-447d-8518-1dbf6b6f3fc1",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C78",
+      "claim": "Dip is the first viral protein identified which uses a direct interaction with the RNA degradosome to inhibit its function.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first viral protein identified which uses a direct interaction with the RNA degradosome to inhibit its function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is presented as a novel finding based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "4475b019-752d-4886-b9c2-85119be0d9d4",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C79",
+      "claim": "Dip can be considered as a viral functional equivalent of the bacterial RraA and RraB proteins of E. coli, which inhibit the activity of RNase E by binding to specific regions of the CTH.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, Dip can be considered as a viral functional equivalent of the bacterial RraA and RraB ('regulators of RNase activity') proteins of E. coli, which inhibit the activity of RNase E by binding to specific regions of the CTH (G\u00f3rna et al., 2010; Zhou et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is an inference comparing Dip to known bacterial regulators, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "93544de0-ad96-45f6-a184-962c88db953e",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C80",
+      "claim": "Currently no homologues of Dip could be found, not even among \u03c6KZ-related phages.",
+      "claim_type": "EXPLICIT",
+      "source": "A remarkable observation is that currently no homologues of Dip could be found, not even among \u03c6KZ-related phages, raising the intriguing question of how and when the phage acquired this factor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the results of database searches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "92a0eea7-7b9a-4429-b3e7-c65a8fa320fd",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C81",
+      "claim": "The unique structure of Dip resembles a partially opened scroll or a clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "The unique structure of this protein resembles a partially opened scroll or a clamp, and it is tempting to imagine that the two protomers of Dip could act as pincers to capture a binding partner at the dimer interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the overall structure of Dip from the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "c45a9884-29b4-45df-8442-121a4e527327",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C82",
+      "claim": "Through a combination of structural, biochemical and bioinformatics analyses, the binding site for RNase E is on the outer surfaces of the Dip dimer, and not within the 'clamp'.",
+      "claim_type": "EXPLICIT",
+      "source": "However, through a combination of structural, biochemical and bioinformatics analyses we can conclude that the binding site for RNase E is actually on the outer surfaces of the Dip dimer, and not within the \"clamp\".",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is a conclusion based on structural, docking, and mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "935c0feb-2c6b-4903-89e0-71ecba837799",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C83",
+      "claim": "One dimer of Dip possesses two binding sites on its surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Since one dimer of Dip possesses two binding sites on its surface, several possible RNase E binding models can be envisaged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on the structural analysis showing two acidic patches on the Dip dimer surface.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "922e2a90-c2ba-45c8-a8b2-d685918ea202",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C84",
+      "claim": "The RNA binding sites found in the CTH of RNase E are particularly important for the recognition of RNA substrates that harbour secondary structure elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Our preferred explanation for these findings is that the RNA binding sites found in the CTH are particularly important for the recognition of RNA substrates that harbour secondary structure elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is a speculative explanation for the observed inhibition mechanism.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "1fc62e2c-5acc-424d-9b2e-7a2cbfea1f66",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C85",
+      "claim": "Structured RNA substrates potentially require unwinding by an RNA helicase bound close to the RNA binding regions of RNase E prior to cleavage by the NTH of RNase E.",
+      "claim_type": "EXPLICIT",
+      "source": "Potentially these substrates require unwinding by an RNA helicase bound close to these regions of RNase E prior to cleavage by the NTH of RNase E.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is a speculative explanation for the mechanism of RNA degradation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "263c5df1-f9b0-4d70-827e-2b849597a491",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C86",
+      "claim": "The binding of structured RNAs to the RNA binding sites of the scaffold domain of RNase E can be crucial for efficient processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the binding of structured RNAs to the RNA binding sites of the scaffold domain of RNase E can be crucial for efficient processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is an inference based on the proposed mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "987bfaf5-11f2-4abf-93fe-5cee86a162ff",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C87",
+      "claim": "Phage \u03c6KZ and Dip act in a similar manner to phage T7 which phosphorylates the scaffold domain of RNase E to protect its transcripts from degradation by the host.",
+      "claim_type": "EXPLICIT",
+      "source": "In this respect phage \u03c6KZ and Dip act in a similar manner to phage T7 which phosphorylates the scaffold domain of RNase E to protect its transcripts from degradation by the host (Marchand et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is an inference comparing the mechanisms of different phages, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "4a6c1669-9e7c-407c-bc94-e6150cf1a9c0",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C88",
+      "claim": "RNAseq data show that the total amount of cellular RNA extracted increased over five-fold during \u03c6KZ infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, RNAseq data show that the total amount of cellular RNA extracted increased over five-fold during infection (Ceyssens et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "492f2b8c-2962-4482-86c4-559b3154edc6",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C89",
+      "claim": "35 min after the start of \u03c6KZ infection, 98.5% of the non-rRNA and non-tRNA could be mapped to the phage genome, suggesting a decrease of host RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it was found that 35 min after the start of infection, 98.5% of the non-rRNA and non-tRNA could be mapped to the phage genome, suggesting a decrease of host RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes RNAseq data and makes an inference about host RNA levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "8936d9e2-c7e4-4d32-ad98-1f6927af7aab",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C90",
+      "claim": "At the start of infection by \u03c6KZ the bacterial RNA might be actively degraded.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we hypothesize that at the start of infection by \u03c6KZ the bacterial RNA might be actively degraded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is a hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "46708c3a-996d-48a5-96e5-f4bb16d8de92",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C91",
+      "claim": "The mechanism for active degradation of bacterial RNA at the start of \u03c6KZ infection is unclear, but could involve inhibition of the host RNA polymerase to impede nascent transcript genesis, and in parallel, the acceleration of host RNA decay by a yet uncharacterized enzyme of \u03c6KZ or a \u03c6KZ encoded activator of the hosts RNA degradation machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanism for this is unclear, but could involve inhibition of the host RNA polymerase to impede nascent transcript genesis, and in parallel, the acceleration of host RNA decay by a yet uncharacterized enzyme of \u03c6KZ or a \u03c6KZ encoded activator of the hosts RNA degradation machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is a speculative explanation for the observed phenomenon.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "eb4c5eb4-dc4e-47e6-b858-c908494cd2e4",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C92",
+      "claim": "Although a homologue of Srd cannot be identified in the \u03c6KZ genome, it is plausible that a functionally equivalent protein may be produced during the early stage of infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The production of the degradosome activating protein Srd by phage T4 has recently been reported (Qi et al., 2015), and although a homologue of Srd cannot be identified in the \u03c6KZ genome it is plausible that a functionally equivalent protein may be produced during the early stage of infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is a speculation based on comparison to another phage system, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "479ea437-5e9b-4769-97b2-07df78578fbd",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C93",
+      "claim": "Dip is produced to inhibit the activity of the RNA degradosome and protect the newly synthesized phage RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, Dip is produced to inhibit the activity of the RNA degradosome and protect the newly synthesized phage RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is an inference about the biological function of Dip based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "16eec380-ad1b-45fc-91c4-3c7d95473eb9",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C94",
+      "claim": "Since Western blot analyses indicate that Dip persists once it is produced, the stability of phage RNA can be maintained during the entire infection cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Western blot analyses indicate that Dip persists once it is produced, the stability of phage RNA can be maintained during the entire infection cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is an inference based on the Western blot data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "4770615c-74cf-4a51-b865-8783cf17a8e5",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C95",
+      "claim": "It remains to be determined whether the production of Dip is essential for efficient infection by phage \u03c6KZ.",
+      "claim_type": "EXPLICIT",
+      "source": "It remains to be determined whether the production of Dip is essential for efficient infection by phage \u03c6KZ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement acknowledges a limitation of the current study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "876f8ec8-7a5d-445a-b230-e281513d2da7",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C96",
+      "claim": "Dip is the third phage protein reported that has independently evolved to influence the activity of the RNA degradosome of its host.",
+      "claim_type": "EXPLICIT",
+      "source": "Dip is the third phage protein reported that has independently evolved to influence the activity of the RNA degradosome of its host, the others being gp0.7 of phage T7 which phosphorylates the scaffold domain of RNase E to protect its transcripts from degradation by the host, and Srd of phage T4 which enhances the activity of RNase E (Marchand et al., 2001; Qi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is a comparison to other known phage proteins, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "4cecff39-ce72-433d-b62f-021d8d56bb20",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C97",
+      "claim": "The function of these proteins opens the possibility that the modulation of RNA degradosome activity might be a recurrent strategy of bacteriophages to support efficient phage infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The function of these proteins opens the possibility that the modulation of RNA degradosome activity might be a recurrent strategy of bacteriophages to support efficient phage infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is a speculation about broader implications of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "258a39cc-6447-4690-a861-aeff5ca569b2",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C98",
+      "claim": "The inhibition of bacterial host nucleases by phage encoded proteins may be a more common strategy than had previously been appreciated.",
+      "claim_type": "EXPLICIT",
+      "source": "The inhibition of bacterial host nucleases by phage encoded proteins may be a more common strategy than had previously been appreciated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is a speculation about the prevalence of this strategy.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "9d33e1ea-ad4a-45ff-99e6-cd511045c9c0",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C99",
+      "claim": "The CRISPR-Cas system of P. aeruginosa can be inhibited by several phage encoded proteins, two of which act by binding and blocking DNA binding sites on the CRISPR-cas machinery, reminiscent of the mode of action of Dip.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently it has been shown that the CRISPR-Cas system of P. aeruginosa can be inhibited by several phage encoded proteins (Bondy-denomy et al., 2015), two of which act by binding and blocking DNA binding sites on the CRISPR-cas machinery, reminiscent of the mode of action of Dip.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation and draws a comparison to Dip.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "25d17662-42b0-41e5-8fb9-7ebd9da057ae",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C100",
+      "claim": "The observation that Dip also has an inhibitory effect on the RNA degradosome of E. coli suggests that the RNA binding sites within the CTD of RNase E are more conserved (either at sequence or structure level) than had previously been thought.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the observation that Dip also has an inhibitory effect on the RNA degradosome of E. coli, suggests that the RNA binding sites within the CTD of RNase E are more conserved (either at sequence or structure level) than had previously been thought.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is an inference based on the cross-species activity of Dip.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "57cd2634-d74e-4533-9a09-70a1bb81c7aa",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C101",
+      "claim": "There may exist functional homologues of Dip in other phages that target host machinery of RNA metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it can be speculated that there may exist functional homologues of Dip in other phages that target host machinery of RNA metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is a speculation about the existence of similar proteins in other phages.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "4e1f3728-2034-46b8-aac4-cbdaee8e7c4e",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C102",
+      "claim": "The identification and biological understanding of the function of Dip opens the possibility of developing new biotechnological tools to modulate RNA turn over and regulation in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the identification and biological understanding of the function of Dip opens the possibility of developing of new biotechnological tools to modulate RNA turn over and regulation in bacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is a speculation about potential applications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "c01c4932-a0c4-4c0c-88ff-36b6b5d7be97",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C103",
+      "claim": "The crystal structures of Dip and Dip:RNaseE756-775 are deposited at the protein data bank with accession codes 5FT0 and 5FT1.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structures of Dip and Dip:RNaseE756-775 are deposited at the protein data bank with accession codes 5FT0 and 5FT1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement provides information about data deposition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "652e6222-3fbf-4de7-8a3c-59af928210cb",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "claim_id": "C104",
+      "claim": "The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the dataset identifier PXD003285.",
+      "claim_type": "EXPLICIT",
+      "source": "The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium (Vizca\u00edno et al., 2014) via the PRIDE partner repository with the dataset identifier PXD003285 and 10.6019/PXD003285.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement provides information about data deposition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "63b9dbeb-2609-4757-99dc-f92b77222f37",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Phage \u03c6KZ encodes a protein Dip (gp37) that directly binds to the P. aeruginosa RNA degradosome and inhibits its RNA degradation activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C22, C25, and C74 collectively establish that Dip is encoded by \u03c6KZ, specifically co-precipitates with the RNA degradosome in infected cells, and inhibits RNA degradation. The pull-down experiments (C22, C25) and functional assays (C4) provide converging evidence for this major finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "c3ddf593-1dcd-43b6-98f9-47547178ff47",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Dip binds to two specific regions within the C-terminal half of RNase E: a strong binding site at residues 756-775 and a weaker binding site at residues 583-636.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C34 and C75 describe bacterial two-hybrid and EMSA experiments that map the Dip binding sites. The data show statistically significant binding (p<0.05) to the CTH, with stronger binding to 756-775 (1:1 ratio) than 583-636 (4-10 fold excess required), providing clear evidence for two distinct binding sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "318dc34b-68a0-4be7-a0a2-6a12a51475e3",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The interaction between Dip and RNase E is a direct protein-protein interaction that does not require RNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C36, and C40 demonstrate through EMSA experiments that Dip does not bind RNA directly and that the Dip-RNase E interaction occurs with purified proteins in the absence of RNA. This establishes the direct nature of the protein-protein interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "2ec6649a-c4f5-4c8d-8cad-78af353dc6f0",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Dip binding sites in P. aeruginosa RNase E are conserved in E. coli RNase E, and Dip can bind and inhibit the E. coli RNA degradosome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40, C49, and C100 show that Dip binding sites align with known RNA binding sites (RBD and AR2) in E. coli RNase E, and demonstrate through pull-down, EMSA, and functional assays that Dip binds and inhibits the E. coli degradosome. This cross-species activity supports conservation of the binding sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "3fa7af66-fd42-4528-ba49-710b4e038505",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Dip competitively displaces RNA from both RNA binding sites on RNase E, blocking RNA substrate access to the degradosome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C46 and C76 describe EMSA experiments showing that Dip can displace both short (27mer) and long (9S rRNA, 245nt) RNA substrates from RNase E fragments containing either binding site. The competitive displacement mechanism is clearly demonstrated by the dose-dependent release of bound RNA upon Dip addition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "9a23ff8d-a30b-4741-9b8c-3d441a86a426",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Dip inhibits RNA degradosome activity in vitro in a dose-dependent manner without substrate specificity, reducing processing of bacterial, phage, and various pathway-specific RNA substrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C54 and C77 demonstrate through in vitro degradation assays that Dip inhibits RNA processing by both P. aeruginosa and E. coli degradosomes. The inhibition is dose-dependent (10-fold excess nearly abolishes activity), works on multiple substrates (9S rRNA, \u03c6KZ RNA, fdhE), and Dip itself has no RNase activity (C47).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "7810641d-5c15-4180-b787-020a302cbb09",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Dip does not directly inhibit the catalytic domain of RNase E, but rather acts through binding to the C-terminal scaffold domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50 and C51 show that the isolated catalytic domain (residues 1-525) of RNase E retains activity but is not inhibited by Dip. This demonstrates that Dip's mechanism of inhibition requires the CTH and does not involve direct interference with the catalytic site.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "fe07c7d6-d035-4f71-af0d-44c74f683732",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Dip is produced early during \u03c6KZ infection (first detected at 9 min, peak at 24 min) and persists throughout the infection cycle to maintain phage RNA stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58, C93, and C94 combine RNAseq data (C55) with Western blot time-course analysis (C56-C57) to establish the temporal expression pattern of Dip. The persistence of Dip throughout infection (C58, C94) supports its proposed role in protecting phage RNA (C93), though the functional necessity remains to be tested (C95).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "d4ba6da7-e598-40ff-b0ed-9c99894c891f",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In vivo expression of Dip in P. aeruginosa increases the half-life of bacterial mRNA (OprL) from ~6 min to ~12 min and causes morphological changes at high expression levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 show that low-level Dip expression (0.1% arabinose) has no growth effect but high-level expression (1% arabinose) causes a 'curled' cell phenotype. The qRT-PCR data (C61) demonstrate RNA stabilization in vivo, though with pronounced variance. The doubling of half-life is consistent with in vitro inhibition data (C62).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "6b625c12-ad03-4825-9270-e134e27f7aa0",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Dip forms a homodimeric structure with a novel \u03b1+\u03b2 fold resembling a partially opened scroll or clamp, with no identifiable structural homologues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C63, C64, and C81 describe the 2.2 \u00c5 crystal structure of Dip. The dimeric state is confirmed by analytical ultracentrifugation (C63), and database searches found no structural homologues (C64). The structure represents a novel fold, which is a significant structural finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "c2c26749-0780-40e1-8922-174e45ee30ff",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Dip binds RNase E through acidic residues (E214 and E222) on the outer convex surface of the dimer, not within the clamp interior, as demonstrated by structural analysis, docking, and mutagenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C65-C71, C73, and C82 combine computational predictions (C65-C66), co-crystallization with RNase E peptide (C67-C69), and functional validation through mutagenesis (C70-C71) to identify the binding interface. The E214A/E222A double mutant abolishes binding to both RNase E sites and restores wild-type cell morphology, providing strong evidence for the binding mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "69388022-fce4-4e4e-aa3d-fe9c3f7f46c2",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Dip has a predicted molecular weight of 31.7 kDa, no sequence similarity to any known proteins, and no homologues even among \u03c6KZ-related phages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C24, and C80 describe database searches showing Dip is a novel protein with no sequence or structural homologues. This is consistent with the novel fold identified in the crystal structure and suggests unique evolutionary origin.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "79b66140-4a99-410a-9456-498da5b24d6f",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Dip is the first viral protein known to inhibit host RNA degradation through direct protein-protein interaction with the degradosome, acting as a viral functional equivalent of bacterial RraA/RraB proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C78, C79, and C96 position Dip in the context of known phage and bacterial regulators of RNase E. The comparison to RraA/RraB (C79) is appropriate as both bind the CTH to inhibit activity. The claim of being 'first' (C21, C78) is qualified by the authors' knowledge and distinguishes Dip from T7 (phosphorylation) and T4 Srd (activation rather than inhibition).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "8d60db9a-078c-4b40-b94e-83a990d8201f",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "ELISA titration shows Dip binding to RNA degradosome saturates at approximately 10 Dip protomers per degradosome protomer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C26 reports a 10:1 stoichiometry from ELISA, but this is inconsistent with other binding data showing 1:1 or 4:1 ratios in EMSA experiments (C31, C34). The ELISA uses a crude estimate of degradosome mass (1 MDa), and the high apparent stoichiometry may reflect technical limitations rather than biological reality. The discrepancy is not adequately explained.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "f8c5eb0e-d6fe-4959-ba8e-0f94049d2b43",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Electron density for an unknown small molecule, modeled as a single arginine, is observed in the acidic patch region of apo-Dip.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C72 describes unexplained density in the binding site that was modeled as arginine. However, the identity of this ligand is uncertain, and no validation or functional significance is provided. This observation may represent a crystallization artifact or contaminating molecule.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "4122dfb9-a154-4edf-b032-114d2634411c",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "One Dip dimer possesses two binding sites on its surface, allowing for multiple possible RNase E binding models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C83 infers that each Dip dimer has two binding sites based on structural symmetry, but this is not directly demonstrated. The mutagenesis (C70) shows E214/E222 are required for binding to both RNase E sites, but whether a single Dip dimer can simultaneously bind both RNase E sites, or whether two dimers are required, remains unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "e0ff470c-c9d2-4291-b92c-04cd4d6a33a9",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The RNA binding sites in the CTH of RNase E are particularly important for recognition of structured RNA substrates that require helicase unwinding prior to cleavage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84-C86 present a mechanistic hypothesis to explain why blocking CTH RNA binding sites inhibits degradosome activity. However, this is speculative (marked as 'preferred explanation' and 'potentially') and not directly tested. No experiments distinguish between structured and unstructured RNA substrates or test the role of helicase recruitment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "75cb99bd-a8b8-4cdd-9009-1a60ccce06f2",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Phage \u03c6KZ and Dip act in a similar manner to phage T7, which phosphorylates RNase E to protect viral transcripts from host degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C87 draws a functional parallel between Dip and T7 gp0.7, both of which modify the CTH to inhibit degradosome activity and protect phage RNA. While the molecular mechanisms differ (protein binding vs. phosphorylation), the functional outcome and biological strategy are similar, making this a valid comparison.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "839dbba4-197f-45cb-95cc-100c270b207d",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "During \u03c6KZ infection, total cellular RNA increases 5-fold, but by 35 min post-infection, 98.5% of non-ribosomal RNA is phage-derived, suggesting initial active degradation of host RNA followed by Dip-mediated protection of phage RNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88-C92 present a model for temporal regulation during infection, but this is largely speculative. The RNAseq data (C88-C89) are from prior work and show the outcome but not the mechanism. The hypothesis of early host RNA degradation (C90-C91) and potential Srd-like activator (C92) are not tested experimentally in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "067e6a09-fa7d-4db4-81a2-3f1cf4666ef4",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Whether Dip production is essential for efficient \u03c6KZ infection remains to be determined.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C95 explicitly acknowledges a limitation of the study - the lack of genetic knockout experiments to test whether Dip is essential for phage fitness. This is an important future direction that would validate the biological significance of the inhibition mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "44c0adf3-26fd-482f-895b-494b2d041499",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Modulation of RNA degradosome activity may be a recurrent phage strategy, and functional homologues of Dip may exist in other phages targeting host RNA metabolism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C97, C98, C99, and C101 are speculative statements about broader implications. While the comparison to CRISPR-Cas inhibitors (C99) provides a conceptual parallel, the existence of Dip homologues in other phages (C101) is speculation not supported by data. These are reasonable hypotheses for future investigation but not demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "3cde68f4-00b7-4a05-9b2c-a051ed927d4b",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Understanding Dip function opens possibilities for developing biotechnological tools to modulate bacterial RNA turnover and regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C102 is a speculative statement about potential applications. While Dip's specific and potent inhibition of the degradosome could theoretically be useful, no biotechnological applications are demonstrated or developed in this study. This is forward-looking speculation rather than a result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "00a265dd-051b-4e5e-baba-5cf50d26eac9",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Background information on the RNA degradosome structure, function, and known phage interactions is accurately presented based on prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C20 summarize established knowledge about the RNA degradosome and phage-host interactions, all supported by appropriate citations. These provide necessary context for the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    },
+    {
+      "id": "1c9b34fc-464d-4271-83c2-9efd40946494",
+      "content_id": "213cc8b3-bdb4-45f2-9dd1-a7ad531d23bd",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Crystal structures and mass spectrometry data have been deposited in public repositories with accession codes 5FT0, 5FT1, and PXD003285.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103 and C104 document data deposition, which is essential for reproducibility and represents good scientific practice. The provision of accession codes allows independent verification of the structural and proteomic findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:33:41.589104Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "61d27a3c-327b-4567-a999-6da75121ccdf",
+      "result_id": "63b9dbeb-2609-4757-99dc-f92b77222f37"
+    },
+    {
+      "claim_id": "f28cc1d4-a111-4d63-aae7-e067859cacad",
+      "result_id": "63b9dbeb-2609-4757-99dc-f92b77222f37"
+    },
+    {
+      "claim_id": "64758922-6dee-4646-a0b1-bb8db1b22196",
+      "result_id": "63b9dbeb-2609-4757-99dc-f92b77222f37"
+    },
+    {
+      "claim_id": "c9aa5755-efc1-4b99-90eb-71e0a6e76b83",
+      "result_id": "63b9dbeb-2609-4757-99dc-f92b77222f37"
+    },
+    {
+      "claim_id": "8697e967-97d0-451a-8152-45c1ddc0070a",
+      "result_id": "63b9dbeb-2609-4757-99dc-f92b77222f37"
+    },
+    {
+      "claim_id": "1fdfe740-5a7b-4f0a-acb1-9f05ac0a0f6a",
+      "result_id": "63b9dbeb-2609-4757-99dc-f92b77222f37"
+    },
+    {
+      "claim_id": "4ec27ca2-3de0-4138-8840-469ed1bf6e2b",
+      "result_id": "63b9dbeb-2609-4757-99dc-f92b77222f37"
+    },
+    {
+      "claim_id": "d85a5839-be4a-4326-990d-32ba323cd29e",
+      "result_id": "c3ddf593-1dcd-43b6-98f9-47547178ff47"
+    },
+    {
+      "claim_id": "8a45704c-1016-4a70-8525-05e2f4b1bf1f",
+      "result_id": "c3ddf593-1dcd-43b6-98f9-47547178ff47"
+    },
+    {
+      "claim_id": "6d0afeb1-20fe-43a2-9862-1c807aa411fd",
+      "result_id": "c3ddf593-1dcd-43b6-98f9-47547178ff47"
+    },
+    {
+      "claim_id": "3f4fe29a-6c03-4230-81aa-a0a0cf5a4579",
+      "result_id": "c3ddf593-1dcd-43b6-98f9-47547178ff47"
+    },
+    {
+      "claim_id": "fdee1733-374a-4f6e-a0ca-c2accd04e4a7",
+      "result_id": "c3ddf593-1dcd-43b6-98f9-47547178ff47"
+    },
+    {
+      "claim_id": "0c2567a9-128b-4b60-a043-a3fe37089eeb",
+      "result_id": "c3ddf593-1dcd-43b6-98f9-47547178ff47"
+    },
+    {
+      "claim_id": "d6fcc7b9-7b03-4a57-b615-41a83d9be59e",
+      "result_id": "c3ddf593-1dcd-43b6-98f9-47547178ff47"
+    },
+    {
+      "claim_id": "180c14cc-227f-416d-93f7-df0480212ddb",
+      "result_id": "c3ddf593-1dcd-43b6-98f9-47547178ff47"
+    },
+    {
+      "claim_id": "7d7c4656-75c7-4abe-9986-e2d6f861d149",
+      "result_id": "c3ddf593-1dcd-43b6-98f9-47547178ff47"
+    },
+    {
+      "claim_id": "6d64af0a-e77d-4ef0-b36c-e3190450be7c",
+      "result_id": "318dc34b-68a0-4be7-a0a2-6a12a51475e3"
+    },
+    {
+      "claim_id": "002d3b70-02d0-44aa-bef9-4e69ea4b2896",
+      "result_id": "318dc34b-68a0-4be7-a0a2-6a12a51475e3"
+    },
+    {
+      "claim_id": "b7281f29-0a06-4972-92ce-31f4b80ad572",
+      "result_id": "318dc34b-68a0-4be7-a0a2-6a12a51475e3"
+    },
+    {
+      "claim_id": "4163afc8-63e0-45e2-831a-bcea1e7cdbfe",
+      "result_id": "2ec6649a-c4f5-4c8d-8cad-78af353dc6f0"
+    },
+    {
+      "claim_id": "ea0eb6a9-fd87-480b-a5f5-ef7723d2e2b5",
+      "result_id": "2ec6649a-c4f5-4c8d-8cad-78af353dc6f0"
+    },
+    {
+      "claim_id": "64515734-aef5-4a95-9275-84ac31c711af",
+      "result_id": "2ec6649a-c4f5-4c8d-8cad-78af353dc6f0"
+    },
+    {
+      "claim_id": "b7281f29-0a06-4972-92ce-31f4b80ad572",
+      "result_id": "2ec6649a-c4f5-4c8d-8cad-78af353dc6f0"
+    },
+    {
+      "claim_id": "7a2cc9fc-d694-411f-a845-9650ae0f5adc",
+      "result_id": "2ec6649a-c4f5-4c8d-8cad-78af353dc6f0"
+    },
+    {
+      "claim_id": "25d17662-42b0-41e5-8fb9-7ebd9da057ae",
+      "result_id": "2ec6649a-c4f5-4c8d-8cad-78af353dc6f0"
+    },
+    {
+      "claim_id": "b857d333-e3dc-4c7c-a00f-4dccb6c14bd2",
+      "result_id": "3fa7af66-fd42-4528-ba49-710b4e038505"
+    },
+    {
+      "claim_id": "ae902b79-c343-4ce9-ad4c-a79a852229ee",
+      "result_id": "3fa7af66-fd42-4528-ba49-710b4e038505"
+    },
+    {
+      "claim_id": "507af776-fb93-4e2b-89ce-eedf77120f3f",
+      "result_id": "3fa7af66-fd42-4528-ba49-710b4e038505"
+    },
+    {
+      "claim_id": "ce954575-1dc8-4222-a911-2411b11bc87e",
+      "result_id": "3fa7af66-fd42-4528-ba49-710b4e038505"
+    },
+    {
+      "claim_id": "9af9b69a-6a31-4924-b4d1-9ac4447ae024",
+      "result_id": "3fa7af66-fd42-4528-ba49-710b4e038505"
+    },
+    {
+      "claim_id": "34eaf1e4-86e1-4da7-889b-100ca25f6e23",
+      "result_id": "3fa7af66-fd42-4528-ba49-710b4e038505"
+    },
+    {
+      "claim_id": "9e650e41-20d5-4477-82b6-14450ad538e3",
+      "result_id": "3fa7af66-fd42-4528-ba49-710b4e038505"
+    },
+    {
+      "claim_id": "619f057d-f13f-4d77-ad74-06b75b17f600",
+      "result_id": "9a23ff8d-a30b-4741-9b8c-3d441a86a426"
+    },
+    {
+      "claim_id": "b3b9643f-6154-4c0e-b954-8dc23536d6fd",
+      "result_id": "9a23ff8d-a30b-4741-9b8c-3d441a86a426"
+    },
+    {
+      "claim_id": "7a2cc9fc-d694-411f-a845-9650ae0f5adc",
+      "result_id": "9a23ff8d-a30b-4741-9b8c-3d441a86a426"
+    },
+    {
+      "claim_id": "283d003e-a049-4e05-a37f-63d2e4699961",
+      "result_id": "9a23ff8d-a30b-4741-9b8c-3d441a86a426"
+    },
+    {
+      "claim_id": "49069c06-06f5-400c-ac7e-19c22a229a3f",
+      "result_id": "9a23ff8d-a30b-4741-9b8c-3d441a86a426"
+    },
+    {
+      "claim_id": "0b48e6b0-62fe-49f5-863a-a3614fb29418",
+      "result_id": "9a23ff8d-a30b-4741-9b8c-3d441a86a426"
+    },
+    {
+      "claim_id": "379135cc-f6a4-42da-8544-e54658f72adb",
+      "result_id": "9a23ff8d-a30b-4741-9b8c-3d441a86a426"
+    },
+    {
+      "claim_id": "272b4df6-cb19-446a-9deb-6a03c1da6eca",
+      "result_id": "7810641d-5c15-4180-b787-020a302cbb09"
+    },
+    {
+      "claim_id": "e0d47dfd-f79c-49a9-8bdb-00531a4cd36f",
+      "result_id": "7810641d-5c15-4180-b787-020a302cbb09"
+    },
+    {
+      "claim_id": "921fc107-1216-4d68-b2fb-ca6bed330bec",
+      "result_id": "fe07c7d6-d035-4f71-af0d-44c74f683732"
+    },
+    {
+      "claim_id": "311db376-02d7-42c8-af2d-3f5244f99148",
+      "result_id": "fe07c7d6-d035-4f71-af0d-44c74f683732"
+    },
+    {
+      "claim_id": "22a5d984-6235-4bee-8915-bea1d83885fc",
+      "result_id": "fe07c7d6-d035-4f71-af0d-44c74f683732"
+    },
+    {
+      "claim_id": "f5f8da21-2bc1-46fc-b412-cbafa6d655d6",
+      "result_id": "fe07c7d6-d035-4f71-af0d-44c74f683732"
+    },
+    {
+      "claim_id": "479ea437-5e9b-4769-97b2-07df78578fbd",
+      "result_id": "fe07c7d6-d035-4f71-af0d-44c74f683732"
+    },
+    {
+      "claim_id": "16eec380-ad1b-45fc-91c4-3c7d95473eb9",
+      "result_id": "fe07c7d6-d035-4f71-af0d-44c74f683732"
+    },
+    {
+      "claim_id": "f237fa56-98e3-414c-8f1a-1fc997a81ece",
+      "result_id": "d4ba6da7-e598-40ff-b0ed-9c99894c891f"
+    },
+    {
+      "claim_id": "2ecf28d4-4e53-4a9c-a74b-6ca167e8333b",
+      "result_id": "d4ba6da7-e598-40ff-b0ed-9c99894c891f"
+    },
+    {
+      "claim_id": "9a7f6934-4385-4000-a423-ac35831d2279",
+      "result_id": "d4ba6da7-e598-40ff-b0ed-9c99894c891f"
+    },
+    {
+      "claim_id": "4cd5f0ce-3876-45aa-a110-638651b03389",
+      "result_id": "d4ba6da7-e598-40ff-b0ed-9c99894c891f"
+    },
+    {
+      "claim_id": "a30953d4-9142-451f-80db-1ac36cbd6657",
+      "result_id": "6b625c12-ad03-4825-9270-e134e27f7aa0"
+    },
+    {
+      "claim_id": "1032f290-1d83-450f-8e6e-cfe38640ce13",
+      "result_id": "6b625c12-ad03-4825-9270-e134e27f7aa0"
+    },
+    {
+      "claim_id": "c1152213-d5dc-43cb-98ae-aeb26b83c8dc",
+      "result_id": "6b625c12-ad03-4825-9270-e134e27f7aa0"
+    },
+    {
+      "claim_id": "93353497-daa6-4ed5-9ac1-667f0969af18",
+      "result_id": "6b625c12-ad03-4825-9270-e134e27f7aa0"
+    },
+    {
+      "claim_id": "92a0eea7-7b9a-4429-b3e7-c65a8fa320fd",
+      "result_id": "6b625c12-ad03-4825-9270-e134e27f7aa0"
+    },
+    {
+      "claim_id": "ac9be09b-3877-4459-8d71-6c6d1209c492",
+      "result_id": "c2c26749-0780-40e1-8922-174e45ee30ff"
+    },
+    {
+      "claim_id": "34fea8fe-fb23-43ae-ae69-d815d44ae956",
+      "result_id": "c2c26749-0780-40e1-8922-174e45ee30ff"
+    },
+    {
+      "claim_id": "12c7e770-544b-47af-a403-96a862895fd4",
+      "result_id": "c2c26749-0780-40e1-8922-174e45ee30ff"
+    },
+    {
+      "claim_id": "d6c6502a-a4cf-4359-8731-3a0ac4783d3d",
+      "result_id": "c2c26749-0780-40e1-8922-174e45ee30ff"
+    },
+    {
+      "claim_id": "8b99f0f6-9bd7-4546-923d-27e4d317560d",
+      "result_id": "c2c26749-0780-40e1-8922-174e45ee30ff"
+    },
+    {
+      "claim_id": "9e07c676-0a82-4e9e-b351-c8b2b7b4626c",
+      "result_id": "c2c26749-0780-40e1-8922-174e45ee30ff"
+    },
+    {
+      "claim_id": "7b890303-e7a0-43d7-9d24-b8d72a910f3c",
+      "result_id": "c2c26749-0780-40e1-8922-174e45ee30ff"
+    },
+    {
+      "claim_id": "2dc5db74-501b-4cec-b365-8a897a776aa3",
+      "result_id": "c2c26749-0780-40e1-8922-174e45ee30ff"
+    },
+    {
+      "claim_id": "82e36d1b-bb1f-4acf-8a10-4436b80263f7",
+      "result_id": "c2c26749-0780-40e1-8922-174e45ee30ff"
+    },
+    {
+      "claim_id": "c45a9884-29b4-45df-8442-121a4e527327",
+      "result_id": "c2c26749-0780-40e1-8922-174e45ee30ff"
+    },
+    {
+      "claim_id": "3d2ffbe1-74a3-41ef-b835-ac8dff0a9032",
+      "result_id": "69388022-fce4-4e4e-aa3d-fe9c3f7f46c2"
+    },
+    {
+      "claim_id": "2d3b3dbc-44d2-46ae-9cd3-9277643eba02",
+      "result_id": "69388022-fce4-4e4e-aa3d-fe9c3f7f46c2"
+    },
+    {
+      "claim_id": "93544de0-ad96-45f6-a184-962c88db953e",
+      "result_id": "69388022-fce4-4e4e-aa3d-fe9c3f7f46c2"
+    },
+    {
+      "claim_id": "efc15fb0-83c9-4ef1-8675-520760485644",
+      "result_id": "79b66140-4a99-410a-9456-498da5b24d6f"
+    },
+    {
+      "claim_id": "bafeffcd-2e35-447d-8518-1dbf6b6f3fc1",
+      "result_id": "79b66140-4a99-410a-9456-498da5b24d6f"
+    },
+    {
+      "claim_id": "4475b019-752d-4886-b9c2-85119be0d9d4",
+      "result_id": "79b66140-4a99-410a-9456-498da5b24d6f"
+    },
+    {
+      "claim_id": "876f8ec8-7a5d-445a-b230-e281513d2da7",
+      "result_id": "79b66140-4a99-410a-9456-498da5b24d6f"
+    },
+    {
+      "claim_id": "9d091657-0fc4-4bf2-ac81-4ac9c113804b",
+      "result_id": "8d60db9a-078c-4b40-b94e-83a990d8201f"
+    },
+    {
+      "claim_id": "61a5eefc-0c92-47a7-bd43-1511d91aec62",
+      "result_id": "f8c5eb0e-d6fe-4959-ba8e-0f94049d2b43"
+    },
+    {
+      "claim_id": "935c0feb-2c6b-4903-89e0-71ecba837799",
+      "result_id": "4122dfb9-a154-4edf-b032-114d2634411c"
+    },
+    {
+      "claim_id": "922e2a90-c2ba-45c8-a8b2-d685918ea202",
+      "result_id": "e0ff470c-c9d2-4291-b92c-04cd4d6a33a9"
+    },
+    {
+      "claim_id": "1fc62e2c-5acc-424d-9b2e-7a2cbfea1f66",
+      "result_id": "e0ff470c-c9d2-4291-b92c-04cd4d6a33a9"
+    },
+    {
+      "claim_id": "263c5df1-f9b0-4d70-827e-2b849597a491",
+      "result_id": "e0ff470c-c9d2-4291-b92c-04cd4d6a33a9"
+    },
+    {
+      "claim_id": "987bfaf5-11f2-4abf-93fe-5cee86a162ff",
+      "result_id": "75cb99bd-a8b8-4cdd-9009-1a60ccce06f2"
+    },
+    {
+      "claim_id": "4a6c1669-9e7c-407c-bc94-e6150cf1a9c0",
+      "result_id": "839dbba4-197f-45cb-95cc-100c270b207d"
+    },
+    {
+      "claim_id": "492f2b8c-2962-4482-86c4-559b3154edc6",
+      "result_id": "839dbba4-197f-45cb-95cc-100c270b207d"
+    },
+    {
+      "claim_id": "8936d9e2-c7e4-4d32-ad98-1f6927af7aab",
+      "result_id": "839dbba4-197f-45cb-95cc-100c270b207d"
+    },
+    {
+      "claim_id": "46708c3a-996d-48a5-96e5-f4bb16d8de92",
+      "result_id": "839dbba4-197f-45cb-95cc-100c270b207d"
+    },
+    {
+      "claim_id": "eb4c5eb4-dc4e-47e6-b858-c908494cd2e4",
+      "result_id": "839dbba4-197f-45cb-95cc-100c270b207d"
+    },
+    {
+      "claim_id": "4770615c-74cf-4a51-b865-8783cf17a8e5",
+      "result_id": "067e6a09-fa7d-4db4-81a2-3f1cf4666ef4"
+    },
+    {
+      "claim_id": "4cecff39-ce72-433d-b62f-021d8d56bb20",
+      "result_id": "44c0adf3-26fd-482f-895b-494b2d041499"
+    },
+    {
+      "claim_id": "258a39cc-6447-4690-a861-aeff5ca569b2",
+      "result_id": "44c0adf3-26fd-482f-895b-494b2d041499"
+    },
+    {
+      "claim_id": "9d33e1ea-ad4a-45ff-99e6-cd511045c9c0",
+      "result_id": "44c0adf3-26fd-482f-895b-494b2d041499"
+    },
+    {
+      "claim_id": "57cd2634-d74e-4533-9a09-70a1bb81c7aa",
+      "result_id": "44c0adf3-26fd-482f-895b-494b2d041499"
+    },
+    {
+      "claim_id": "4e1f3728-2034-46b8-aac4-cbdaee8e7c4e",
+      "result_id": "3cde68f4-00b7-4a05-9b2c-a051ed927d4b"
+    },
+    {
+      "claim_id": "ed23d951-aecd-428f-b0d6-d113b4705b2f",
+      "result_id": "00a265dd-051b-4e5e-baba-5cf50d26eac9"
+    },
+    {
+      "claim_id": "3c99e466-4c4f-4404-81c1-7e7c4afc5e41",
+      "result_id": "00a265dd-051b-4e5e-baba-5cf50d26eac9"
+    },
+    {
+      "claim_id": "82a07a11-cc66-405a-ab36-8fe9faa32dfc",
+      "result_id": "00a265dd-051b-4e5e-baba-5cf50d26eac9"
+    },
+    {
+      "claim_id": "ca19a9ca-3c07-4710-b6b0-ca3446c58529",
+      "result_id": "00a265dd-051b-4e5e-baba-5cf50d26eac9"
+    },
+    {
+      "claim_id": "a9e51946-3139-495c-907e-751fd8aeb142",
+      "result_id": "00a265dd-051b-4e5e-baba-5cf50d26eac9"
+    },
+    {
+      "claim_id": "dd823a75-76ab-4f9d-8e3c-b59fe6b56075",
+      "result_id": "00a265dd-051b-4e5e-baba-5cf50d26eac9"
+    },
+    {
+      "claim_id": "a3d1f145-d49c-4f70-99b8-fb8ecd04754e",
+      "result_id": "00a265dd-051b-4e5e-baba-5cf50d26eac9"
+    },
+    {
+      "claim_id": "a3b7f37a-7056-47f3-b816-76c32a32594a",
+      "result_id": "00a265dd-051b-4e5e-baba-5cf50d26eac9"
+    },
+    {
+      "claim_id": "3eb76b2b-a416-4488-a71f-4628254e5148",
+      "result_id": "00a265dd-051b-4e5e-baba-5cf50d26eac9"
+    },
+    {
+      "claim_id": "17fcc55b-73dc-46a5-bd70-2c01d7802f8d",
+      "result_id": "00a265dd-051b-4e5e-baba-5cf50d26eac9"
+    },
+    {
+      "claim_id": "f27cf5b3-5707-4f0e-99d8-c2e96c70a364",
+      "result_id": "00a265dd-051b-4e5e-baba-5cf50d26eac9"
+    },
+    {
+      "claim_id": "b0b126df-2908-4b73-b57f-8f57c4ec7a27",
+      "result_id": "00a265dd-051b-4e5e-baba-5cf50d26eac9"
+    },
+    {
+      "claim_id": "c01c4932-a0c4-4c0c-88ff-36b6b5d7be97",
+      "result_id": "1c9b34fc-464d-4271-83c2-9efd40946494"
+    },
+    {
+      "claim_id": "652e6222-3fbf-4de7-8a3c-59af928210cb",
+      "result_id": "1c9b34fc-464d-4271-83c2-9efd40946494"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1813 @@
+{
+  "submission": {
+    "id": "436e8909-0bb2-4b2a-aaf1-d5a2f532cd52",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:38:13.352366Z",
+    "updated_at": "2025-11-29T23:38:13.352366Z"
+  },
+  "content": [
+    {
+      "id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "submission_id": "436e8909-0bb2-4b2a-aaf1-d5a2f532cd52",
+      "content_type": "manuscript",
+      "content_text": "# An inhibitory corticostriatal pathway\n\n## Authors\n\n- Crystal Rock<sup>1</sup> ([ORCID: 0000-0002-6986-6166](https://orcid.org/0000-0002-6986-6166))\n- Hector Zurita<sup>1</sup>\n- Charles Wilson<sup>1</sup>\n- Alfonso junior Apicella<sup>1</sup> ([ORCID: 0000-0002-3929-8583](https://orcid.org/0000-0002-3929-8583)) \u2020\n\n### Affiliations\n\n1. Department of Biology, Neurosciences Institute University of Texas at San Antonio San Antonio United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAnatomical and physiological studies have led to the assumption that the dorsal striatum receives exclusively excitatory afferents from the cortex. Here we test the hypothesis that the dorsal striatum receives also GABAergic projections from the cortex. We addressed this fundamental question by taking advantage of optogenetics and directly examining the functional effects of cortical GABAergic inputs to spiny projection neurons (SPNs) of the mouse auditory and motor cortex. We found that the cortex, via corticostriatal somatostatin neurons (CS-SOM), has a direct inhibitory influence on the output of the striatum SPNs. Our results describe a corticostriatal long-range inhibitory circuit (CS-SOM inhibitory projections \u2192 striatal SPNs) underlying the control of spike timing/generation in SPNs and attributes a specific function to a genetically defined type of cortical interneuron in corticostriatal communication.\n\n## Introduction\n\nIt is very well established that cortical neurons regulate the activity of spiny projection neurons (SPNs) in the striatum through long-range glutamatergic/excitatory projections (Landry et al., 1984; Wilson, 1987; 2004; Graybiel et al., 1994; Lovinger and Tyler, 1996; Reiner et al., 2003; Kress et al., 2013), while inhibition is mediated by local feed-forward and feed-back circuits (for review [Tepper et al., 2008]). The feed-forward circuit is characterized by GABAergic striatal interneurons that receive excitatory inputs from the cortex and monosynaptically inhibit SPNs. The feed-back circuit is characterized by SPNs and their interconnections via local axon collaterals (Calabresi et al., 1991; Kawaguchi, 1993; Kita, 1993; 1996; Kawaguchi et al., 1995; Mallet et al., 2005; Planert et al., 2010; Ibanez-Sandoval et al., 2011). Because striatal neuronal activity has been shown to be involved in movement, learning, and goal-directed behavior (Graybiel, 1995; Schultz et al., 2003; Barnes et al., 2005; Kreitzer and Malenka, 2008), it is crucial to understand the cortical connectivity pattern and dynamics that shape the flow of information in the striatum.\n\nAnatomical studies using retrograde tracers and immunohistochemistry have proposed that between 1\u201310% of the GABAergic 'interneurons' in rodents, cats, and monkeys also give rise to long-range corticocortical projections (McDonald and Burkhalter, 1993; Tomioka et al., 2005; Higo et al., 2007; Tomioka and Rockland, 2007; Higo et al., 2009). A growing body of evidence suggests that many of these projections arise from somatostatin-expressing neurons (Tomioka et al., 2005; Higo et al., 2007; Tomioka and Rockland, 2007; Higo et al., 2009; McDonald et al., 2012; Melzer et al., 2012). A previous study has demonstrated the presence of a corticostriatal GABAergic projection (Tomioka et al., 2015), but the cells of origin and physiological function of this GABAergic projection from the cortex to the dorsal striatum were not explored.\n\nTo test the hypothesis that the cortex has a direct inhibitory influence on the output neurons of the striatum, we measured the response of SPNs to optogenetic activation of corticostriatal somatostatin neuron (CS-SOM) axons. Our results describe a previously unknown corticostriatal direct inhibitory circuit (CS-SOM inhibitory projections \u2192 striatal SPNs) underlying the control of spike timing/generation in SPNs and attribute a specific function to a genetically defined type of cortical interneuron in corticostriatal communication. Overall this suggests that the timing and ratio of cortical excitatory and inhibitory inputs to the dorsal striatum, by shaping the activity pattern of SPNs, determines behavioral outcomes.\n\n## Results\n\n### Anatomical and electrophysiological properties of corticostriatal somatostatin neurons\n\nTo visualize long-range GABAergic projections originating in the cortex and terminating in the dorsal striatum, we conditionally expressed GFP in somatostatin-expressing (SOM) interneurons by injecting AAV.GFP.Flex into the right auditory cortex (AC) of SOM-Cre-tdTomato transgenic mice (Figure 1a). GFP was colocalized with SOM/tdTomato-expressing neurons in the AC (Figure 1b left) and GFP-positive axons were visible in coronal sections of the right dorsal striatum in these mice (Figure 1b middle and right).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/15890/elife-15890-fig1-v3.jpg)\n\n**Figure 1.:** (a) Schematic depicting injection site using the SOM-Cre-tdTomato transgenic mouse line to identify CS-SOM neurons and their projections to the dorsal striatum. Bottom, auditory cortex: AAV.GFP.Flex injection site; yellow CS-SOM somata coexpressing GFP and tdTomato. Top, dorsal striatum: green CS-SOM GFP-positive axons; red SOM tdTomato-positive interneurons. (b) Epifluorescence images of SOM GFP-positive neurons. Top, left: GFP-positive SOM neurons in the auditory cortex identified by viral injection of AAV.GFP.Flex in the SOM-Cre-tdTomato transgenic mouse line. Middle, left: tdTomato-expressing SOM neurons in the SOM-Cre-tdTomato transgenic mouse line. Bottom, left: overlay of GFP and tdTomato images. Middle, the dashed box indicates the location GFP-positive axons from CS-SOM neurons in the dorsal striatum and the location of image in the right panel. Right, higher magnification of GFP fluorescence of CS-SOM axons in the dorsal striatum. (c) Schematic depicting injection site using the SOM-Cre transgenic mouse line to identify CS-SOM neurons by anatomical retrograde transfection. Top, striatum: AAV.GFP.Flex injection site. Bottom, auditory cortex: green CS-SOM GFP positive somata. (d)\u00a0Bright-field (top left) and epifluorescence (bottom left) images of striatal SOM interneurons transfected with AAV.GFP.Flex. Middle (left and right), epifluorescence image of laminar distribution of CS-SOM neurons in the auditory cortex identified by anatomical retrograde transfection. Right, high-resolution image of a biocytin-labeled CS-SOM neuron. (e)\u00a0Morphological reconstruction of one CS-SOM neuron (dendrites, blue; axons, gray). (f) Bottom, train of action potentials recorded in a GFP-positive CS-SOM neuron during step current injection (1.0 s, 100\u2009pA pulse). Top, single action potential from GFP-positive CS-SOM neuron (black); compare to an action potential from a fast-spiking interneuron (red). (g) Summary plot of Vrest: resting membrane potential; Ri: input resistance; Tau: membrane time constant; Rheobase, the smallest current step evoking an action potential; AP thr: action potential threshold; AP height: action potential height; AP half-width: action potential half-width; and F/I slope from CS-SOM neurons (n = 13), including group averages (\u00b1 s.e.m.).\n\nNext, to determine the layer of origin for the long-range corticostriatal SOM neurons (from this point forward referred to as CS-SOM neurons), we injected the AAV.GFP.Flex virus into the right dorsal striatum of SOM-Cre transgenic mice (Taniguchi et al., 2011)\u00a0(Figure 1c). Using this virus, CS-SOM neurons were retrogradely labelled with GFP, and their somata were present primarily in layers 5 and 6 of the AC (Figure 1d, middle). This approach allowed us to visually identify and record from layer 5 and 6 CS-SOM neurons using whole-cell patch clamp. Confocal images of biocytin-filled CS-SOM neurons showed that they are similar to SOM interneurons in their morphology and send an axonal projection into the subcortical white matter (Figure 1d, right; Neurolucida-reconstructed CS-SOM neuron Figure 1e). We verified their identity based on the comparison with electrophysiological properties of SOM interneurons (Ma et al., 2006). These properties include a wide action potential and low rheobase (the smallest current step evoking an action potential) (Figure 1f, top; action potentials in CS-SOM neurons, shown in black, are wider than those from fast-spiking interneurons, example in red). The responses to current steps in CS-SOM neurons were typical for SOM interneurons (Figure 1f, bottom; notice the sag from a hyperpolarizing current step). Basic electrophysiological properties for CS-SOM neurons (n = 13) included (Figure 1g): resting membrane potential, \u221272.93 \u00b1 1.16 mV; input resistance, 240 \u00b1 26.98 M\u03a9; membrane time constant, 6.84 \u00b1 0.71 ms; rheobase, 100 \u00b1 15pA; action potential threshold, \u221241.35 \u00b1 1.33 mV; action potential height, 54.18 \u00b1 2.21 mV; action potential width, 0.49 \u00b1 0.05 ms; F-I slope, 0.24 \u00b1 0.03\u2009Hz/pA step.\n\nAlthough, in our experience, AAV1.Flex viral vectors (Atasoy et al., 2008) exhibited both anterograde and retrograde (Rothermel et al., 2013) transfection capabilities, when we injected this virus in the cortex we only observed anterograde labeling of CS-SOM neurons (i.e. no SOM somata transfected in the dorsal striatum; see Figure 1b, right). In contrast, when we injected this virus into the dorsal striatum, we observed transfected SOM somata both in the dorsal striatum (Figure 1d, left) and in the cortex (Figure 1d, middle left and middle right). These data show that this inhibitory projection is unidirectional, arising preferentially from layer 5 and 6 SOM neurons in the cortex which project to the dorsal striatum.\n\n### Do corticostriatal somatostatin neurons inhibit striatal neurons?\n\nTo determine the connectivity pattern of CS-SOM neurons onto neurons in the dorsal striatum, we used an optogenetic approach in which we conditionally expressed channelrhodopsin-2 (ChR2) in SOM neurons by injecting AAV1.ChR2.Flex into the right AC of SOM-Cre transgenic mice (Figure 2a, b; injection site Figure 2c). After 3\u20134 weeks, we recorded from the right dorsal striatum, in which ChR2-positive axons could be observed (Figure 2d, right). These axons have been reported to remain photoexcitable even when severed from their parent somata (Petreanu et al., 2007; Rock and Apicella, 2015). To determine the synaptic properties of CS-SOM projections onto striatal neurons, we photoactivated CS-SOM ChR2-positive axons by flashing blue light (470 nm) for 2\u20135 ms during whole-cell recordings from striatal neurons. IPSCs (Figure 2f, red trace) were isolated by applying a command potential of 0 mV (the calculated reversal potential for glutamatergic excitatory conductance). The IPSCs onset of the photo-evoked response was 2.2 \u00b1 0.11 ms (Figure 2g, left). This latency is consistent with the IPSCs being the result of a monosynaptic inhibitory input from the cortex and not a local striatal feedback inhibitory network recruited by cortical projections. Blocking excitatory neurotransmission by application of glutamate receptor antagonists NBQX and CPP did not abolish the CS-SOM-ChR2-evoked synaptic IPSCs (Figure 2f, magenta trace). In contrast, blocking inhibitory neurotransmission by application of gabazine (Figure 2f, black trace) completely abolished the CS-SOM-ChR2-evoked synaptic IPSCs, confirming they were elicited by direct cortical inhibitory transmission. Basic biophysical properties for CS-SOM-ChR2-evoked synaptic IPSCs (n = 16) included (Figure 2g,h,i): peak, 122 \u00b1 26\u2009pA; charge, 3.85 \u00b1 0.67 pC; rise time, 1.64 \u00b1 0.13 ms; decay time, 28.87 \u00b1 2.76 ms. Biocytin-filled neurons were morphologically identified as SPNs post-hoc by the presence of dendritic spines (Figure 2e, right, white arrows). Eight out of 16 neurons were recovered after patching and were processed for imaging; all eight of these neurons showed a high density of dendritic spines at 40-63X magnification. These data reveal that a large proportion of striatal SPNs receive direct inhibitory input driven by CS-SOM neurons but does not exclude the possibility that other striatal neurons also receive inhibitory input from these projections.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/15890/elife-15890-fig2-v3.jpg)\n\n**Figure 2.:** (a) Schematic depicting injection site using the SOM-Cre transgenic mouse line to transfect CS-SOM projections to the dorsal striatum with ChR2. Bottom, auditory cortex: AAV.ChR2.flex injection site. Top, dorsal striatum: red CS-SOM ChR2-tdTomato-positive axons. (b) Experimental paradigm for photostimulating ChR2-positive CS-SOM projections while recording from SPNs. (c) Bright-field (left) and epifluorescence (right) images of a slice containing the auditory cortex injection site for AAV.ChR2.Flex. (d) Bright-field (left) and epifluorescence (right) images of a slice containing the dorsal striatum showing expression of ChR2-tdTomato following injection of AAV.ChR2.Flex into the auditory cortex. (e) Left, bright-field image of neurons as seen in bright-field microscopy during patch recordings. Middle, high-resolution epifluorescence image of a biocytin-labeled SPN. The dashed box indicates the location of the image in the right panel. Right, high-resolution epifluorescence image of spines from the biocytin-labeled SPN.\u00a0(f) Example of IPSCs recorded at 0 mV from an SPN before (red trace) and after application of ionotropic glutamate receptor antagonists (NBQX 10\u2009\u03bcM, CPP 5\u2009\u03bcM: magenta trace) and GABAA receptor antagonist (gabazine 25\u2009\u03bcM: black trace). (g) Left, plot of onset latencies recorded in SPNs (n = 16) including group averages (\u00b1 s.e.m.). Middle, plot of IPSCs peaks calculated for SPNs, including group averages (\u00b1 s.e.m.). Right, plot of IPSCs charge transfer calculated for individual IPSCs for SPNs, including group averages (\u00b1 s.e.m.). (h) Left, example of IPSCs (black trace) and rising time course (red trace) recorded at 0 mV from an SPN. Right, plot of IPSCs rising time course recorded in SPNs (n = 16) including group averages (\u00b1 s.e.m.). (i) Left, example of IPSCs (black trace) and decay time course (amber trace) recorded at 0 mV from an SPN. Right, plot of IPSCs decay time course recorded in SPNs (n = 16) including group averages (\u00b1 s.e.m.). (j) Left (black trace), response of an SPN in the whole-cell current-clamp configuration to current injection (250\u2009pA, 500 ms; n = 6). Left (blue trace), response of the SPN to current injection with photostimulation of CS-SOM projections (blue bar, 5\u201320 ms). Right (black trace), response of an SPN in the whole-cell current-clamp configuration to current injection (350\u2009pA, 500 ms; n = 6). Left (blue trace), response of the SPN to current injection with photostimulation of CS-SOM projections (blue bar, 5\u201320 ms). (k) Summary of ChR2-mediated delay of action potential generation in SPNs (n = 6) during current injection combined with photostimulation of the ChR2 CS-SOM projections. Delay was relative to the onset of the first action potential measured during the current injection alone.\n\nTo determine how CS-SOM neurons affect the output of striatal neurons, we took advantage of the same viral ChR2 approach described above. We obtained whole-cell recordings from SPNs while injecting a step of current causing the neurons to spike between 2\u20137 action potentials (Figure 2j, black traces). We then photoactivated CS-SOM ChR2-positive axons by flashing blue light (470 nm) for 2\u201310 ms starting 10\u201350 ms before the first action potential. Combining current injection with photoactivation of CS-SOM ChR2-positive axons, we observed a delay of the first action potential (Figure 2j, blue traces), with an average delay of 159.16 \u00b1 66.45 ms (n=6) (Figure 2k). Overall, these results indicate that CS-SOM projections act directly on SPNs and have the ability to affect spike generation and timing in these neurons.\n\n### Cortical inhibition of direct and indirect spiny projection neurons\n\nThe dorsal striatum is characterized by two parallel networks: the direct and indirect pathways (Gerfen et al., 1990; Kawaguchi et al., 1990; Lei et al., 2004; Gerfen and Surmeier, 2011; Calabresi et al., 2014). Direct pathway SPNs (dSPNs) express D1-type dopamine receptors and are suggested to promote behaviors that have previously been rewarded. On the other hand, indirect pathway SPNs (iSPNs) express D2-type dopamine receptors and are suggested to suppress behaviors that have not previously been rewarded (Gong et al., 2003; Ade et al., 2011; Calabresi et al., 2014).\n\nWe examined how activity of CS-SOM neurons regulates activity in the direct and indirect pathways. To address this question we used an optogenetic approach in SOM-Cre-D1/D2 transgenic mice (Figure 3a) in which dSPNs and iSPNs are labeled with td-Tomato and GFP, respectively (Figure 3b left and middle). In these mice, AAV.ChR2.Flex injected in the AC induces ChR2 expression in CS-SOM neurons. Although both D1-type dopamine receptors and our ChR2 virus are tagged with tdTomato, ChR2-tdTomato-positive axons were detectable in the area of our recordings (Figure 3b, left and right panels, white arrows). To determine the relative strength of CS-SOM connections onto the two classes of SPNs, we recorded in coronal brain slices from a dSPN and a neighboring iSPN (~100\u2009\u03bcm) in the dorsal striatum ipsilateral to the injection site. It has been reported (Ade et al., 2011) that in Drd1a-tdTomato and Drd2-EGFP mice, fluorescent labeling is restricted to SPNs (i.e. no fluorescent labeling of the three main classes of interneurons in the striatum: parvalbumin-expressing, somatostatin-expressing, and cholinergic). However, to ensure that the neurons we recorded from were in fact SPNs, we also identified them post-hoc by the presence of dendritic spines (Figure 3c, right, white arrow). Six out of fourteen neurons were recovered after patching and were processed for imaging; all six of these neurons showed a high density of dendritic spines at 40-63X magnification. All recordings were performed in the presence of NBQX and CPP (Figure 3d, red traces); CS-SOM-ChR2-evoked synaptic IPSCs were completely blocked by application of gabazine (Figure 3d, black traces). The peak and charge of the maximal IPSCs were used as measures of the strength of the CS-SOM projections to dSPNs (n = 7) and iSPNs (n = 7). IPSCs peak amplitude (dSPN: 149 \u00b1 30\u2009pA; iSPN: 130 \u00b1 21\u2009pA; p\u00a0=\u00a00.7 rank-sum test) and charge (dSPN: 6.26 \u00b1 1.03 pC; iSPN: 5.24 \u00b1 1.38 pC; p\u00a0=\u00a00.3 rank-sum test) were similar in dSPNs and iSPNs (Figure 3e). There were no differences in IPSCs rise times (Figure 3g; example IPSCs from iSPN Figure 3f), suggesting the CS-SOM synapses had similar somatodendritic distributions on dSPNs and iSPNs. Together, these results indicate that CS-SOM neurons do not preferentially innervate dSPNs vs. iSPNs in the dorsal striatum.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/15890/elife-15890-fig3-v3.jpg)\n\n**Figure 3.:** (a) Experimental paradigm for photostimulating ChR2-positive CS-SOM projections while recording from genetically labeled dSPNs and iSPNs. (b) Left, epifluorescence image of dSPNs expressing D1-tdTomato (white arrows indicate CS-SOM ChR2-tdTomato-positive axons). Middle, epifluorescence image of iSPNs expressing D2-EGFP. Right, overlay of D1-tdTomato (dSPNs) and D2-GFP (iSPNs). Note that the two sub-types of SPNs have a different distribution with no overlap when located in the same region of the dorsal striatum (white arrows indicate CS-SOM ChR2-tdTomato-positive axons). (c) Left, high-resolution epifluorescence image of a biocytin-labeled dSPN. The dashed box indicates the location of the image in right panel. Right, high-resolution epifluorescence image of spines from the biocytin-labeled dSPN. (d) Example of IPSCs recorded at 0 mV from a dSPN (left) and iSPN (right) after application of ionotropic glutamate receptor antagonists (NBQX 10\u2009\u03bcM, CPP 5\u2009\u03bcM: red traces) and GABAA receptor antagonist (gabazine 25\u2009\u03bcM: black traces). (e) Left, plot of IPSCs onset latencies recorded in dSPNs (n = 7; red circles) and iSPNs (n = 7; green circles), including group averages (\u00b1 s.e.m.). Middle, plot of IPSCs peaks calculated for dSPNs (n = 7; red circles) and iSPNs (n = 7; green circles), including group averages (\u00b1 s.e.m.). Right, plot of IPSCs charge calculated for dSPNs (n = 7; red circles) and iSPNs (n = 7; green circles), including group averages (\u00b1 s.e.m.). (f) Example of IPSCs (black trace), rising time course (red trace) and decay time course (amber trace) recorded at 0 mV from a dSPN. (g) Left, plot of IPSCs rising time course calculated for dSPNs (n = 7; red circles) and iSPNs (n = 7; green circles), including group averages (\u00b1 s.e.m.). Right, plot of IPSCs decay time course calculated for dSPNs (n = 7; red circles) and iSPNs (n = 7; green circles), including group averages (\u00b1 s.e.m.).\n\n### A general feature of the GABAergic corticostriatal connectivity pattern\n\nSo far we had only observed this projection from the AC to the dorsal striatum. We next asked whether CS-SOM projections from the cortex to the dorsal striatum are a general feature of the corticostriatal circuit organization, or if they are specific to the AC. To test this, we used a similar optogenetic approach in the motor cortex (MC), a cortical area which is not involved in sensory processing like the AC, but instead is involved in the planning, control and execution of voluntary movements.\n\nWe used the same methods as in the AC to transfect CS-SOM neurons in the MC with AAV.ChR2.Flex (Figure 4a,b; injection site Figure 4c). As before, we observed local transfection in the cortex (Figure 4c) as well as ChR2-tdTomato-positive axons in the dorsal striatum (Figure 4d, white arrows). Neurons in the dorsal striatum where ChR2-tdTomato-positive axons were present were chosen for recordings. We obtained whole-cell recordings from striatal neurons during photoactivation of CS-SOM ChR2-positive axons while recording IPSCs as in the AC (Figure 4f, red trace). Responses in this area of the dorsal striatum were similar to those seen in the region of the dorsal striatum receiving auditory CS-SOM projections. Again, application of NBQX and CPP did not abolish the CS-SOM-ChR2-evoked synaptic IPSCs (Figure 4f, magenta trace), while application of gabazine completely abolished the CS-SOM-ChR2-evoked synaptic IPSCs (Figure 4f, black trace). Basic biophysical properties for CS-SOM-ChR2-evoked synaptic IPSCs (n = 9) included (Figure 4g,h,i): onset, 2.4 \u00b1 0.11 ms; peak, 91 \u00b1 17\u2009pA; charge, 3.58 \u00b1 0.59 pC; rise time, 1.76 \u00b1 0.14 ms; decay time, 32.96 \u00b1 4.98 ms. Neurons were identified as SPNs post-hoc by the presence of dendritic spines (Figure 4e, right, white arrows). Three out of nine neurons were recovered after patching and were processed for imaging; all three of these neurons showed dendritic spines at 40-63X magnification. Overall, these results indicate that in MC, as well as in AC, CS-SOM projections act directly on SPNs.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/15890/elife-15890-fig4-v3.jpg)\n\n**Figure 4.:** (a) Schematic depicting injection site using the SOM-Cre transgenic mouse line to transfect CS-SOM projections to the dorsal striatum with ChR2. Top, motor cortex: AAV.ChR2.flex injection site. Bottom, dorsal striatum: red CS-SOM ChR2-tdTomato-positive axons. (b) Experimental paradigm for photostimulating ChR2-positive CS-SOM projections while recording from SPNs. (c) Bright-field (left) and epifluorescence (right) images of a slice containing the motor cortex injection site for AAV.ChR2.Flex. (d) Bright-field (left) and epifluorescence (right) images of a slice containing the dorsal striatum showing expression of ChR2-tdTomato following injection of AAV.ChR2.Flex into the motor cortex. (e) Left, bright-field image of neurons as seen in bright-field microscopy during patch recordings. Middle, high-resolution epifluorescence image of a biocytin-labeled SPN. The dashed box indicates the location of the image in the right panel. Right, high-resolution epifluorescence image of spines from the biocytin-labeled SPN. (f) Example of IPSCs recorded at 0 mV from an SPN before (red trace) and after application of ionotropic glutamate receptor antagonists (NBQX 10\u2009\u03bcM, CPP 5\u2009\u03bcM: magenta trace) and GABAA receptor antagonist (gabazine 25\u2009\u03bcM: black trace). (g) Left, plot of onset latencies recorded in SPNs (n = 9) including group averages (\u00b1 s.e.m.). Middle, plot of IPSCs peaks calculated for SPNs, including group averages (\u00b1 s.e.m.). Right, plot of IPSCs charge transfer calculated for individual IPSCs for SPNs, including group averages (\u00b1 s.e.m.). (h) Left, example of IPSCs (black trace) and rising time course (red trace) recorded at 0 mV from an SPN. Right, plot of IPSCs rising time course recorded in SPNs (n = 9) including group averages (\u00b1 s.e.m.). (i) Left, example of IPSCs (black trace) and decay time course (amber trace) recorded at 0 mV from an SPN. Right, plot of IPSCs decay time course recorded in SPNs (n = 9) including group averages (\u00b1 s.e.m.).\n\n## Discussion\n\nIn this study we test the hypothesis that the dorsal striatum is influenced by direct GABAergic projections from the cortex. Our results support this hypothesis and additionally conclude that both the motor and the auditory cortices send long-range GABAergic projections to the dorsal striatum, via CS-SOM neurons (Figure 5). Because of its presence in two such disparate cortical areas, this would suggest that the corticostriatal somatostatin projection connectivity pattern is likely a general feature of the corticostriatal network. We demonstrated that a class of corticostriatal long-range inhibitory neurons in the auditory and motor cortex of the mice are somatostatin-expressing neurons. Our results suggest that CS-SOM neurons provide a major GABAergic projection to the dorsal striatum, in agreement with a recent anatomical study in the mouse frontal cortex (Tomioka et al., 2015). However previous results from retrospinal and somatosensory cortex (Jinno and Kosaka, 2004) have provided anatomical evidence for expression of parvalbumin in glutamatergic and GABAergic pathways in mice suggesting that corticostriatal long-range inhibitory neurons are characterized predominantly by parvalbumin-expressing neurons. Moreover, recent results from prefrontal cortex (Lee et al., 2014), show that corticostriatal long-range inhibitory neurons are characterized predominantly by parvalbumin-expressing or vasoactive intestinal peptide (VIP)-expressing but not somatostatin-expressing interneurons. Overall, these suggest that corticostriatal long-range GABAergic projections may be characterized by heterogeneous subtypes of interneurons, and that additional studies are necessary to determine the subtypes and the physiological impact of long-range corticostriatal GABAergic projections on striatal neurons.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/15890/elife-15890-fig5-v3.jpg)\n\n**Figure 5.:** Auditory and motor CS-SOM projections modulate the activity of striatal SPNs by direct inhibition. Green lines: excitatory inputs from intratelencephalic (IT-type) and projecting-type (PT-type) layer 5 pyramidal neurons; red line: inhibitory input from CS-SOM neurons.\n\nThe main finding of the present study is that the cortex can exert a powerful direct inhibition of the dorsal striatum via CS-SOM neurons. Particularly, CS-SOM neurons target SPNs and have the ability to affect their spike timing and generation. In the cortex, interneurons target the somatodendritic compartment of pyramidal neurons (Somogyi et al., 1998). SOM cortical and striatal interneurons in particular target the dendrites of pyramidal neurons and SPNs, respectively; although not specifically tuft dendrites as is characteristic of their hippocampal analogue, OLM cells (Freund and Buzsaki, 1996; Kubota and Kawaguchi, 2000). This connectivity pattern may allow the dendrites to sum incoming activity over a broader window of time (synaptic integration) (Pouille and Scanziani, 2001). We suggest that a similar inhibitory mechanism might be applied to the corticostriatal long-range inhibitory circuit, in which CS-SOM neurons, by targeting the dendrites of SPNs, play a role in the integration of incoming cortical excitatory inputs to the striatum.\n\nThe dorsal striatum is characterized by two parallel networks: the direct and indirect pathways (Gerfen et al., 1990; Kawaguchi et al., 1990; Lei et al., 2004; Gerfen and Surmeier, 2011; Calabresi et al., 2014). Particularly, it is suggested that dSPNs promote behaviors that have previously been rewarded while iSPNs suppress behaviors that have not previously been rewarded (Gong et al., 2003; Ade et al., 2011; Calabresi et al., 2014). It is very well established that long-range glutamatergic/excitatory projections regulate the activity of dSPNs and iSPNs. However, how activity of CS-SOM neurons influences dSPNs and iSPNs has not been established. Our results show that the cortex provides an inhibitory projection to both direct and indirect pathway neurons, influencing the output of both striatal networks involved in action selection and suppression of action. The functional role of inhibition from CS-SOM neurons might be not in separating the activity of direct and indirect striatal pathways, but rather in shaping the output of both. This is reminiscent of the finding by Kress et al. (Kress et al., 2013) that long-range excitatory corticostriatal connections from intratelencephalic and pyramidal tract neurons in motor cortex are made onto both dSPNs and iSPNs in the mouse dorsal striatum.\n\nThe dorsal striatum is a brain structure where functionally distinct cortical regions (e.g. motor, auditory, visual, somatosensory) converge (Wilson et al., 1983; Schneider, 1991; Flaherty and Graybiel, 1993; Chudler et al., 1995; Reig and Silberberg, 2014; Wilson, 2014). Anatomical and physiological data have suggested that once this information reaches the dorsal striatum via the corticostriatal projection, it is either channeled into parallel functional segregated circuits (Alexander et al., 1986; Bordi and LeDoux, 1992; Bordi et al., 1993; Parent and Hazrati, 1995; Middleton and Strick, 2000) or integrated within these circuits (Nauta and Domesick, 1984; Hoffer and Alloway, 2001; Kolomiets et al., 2001; Reig and Silberberg, 2014). The existence of direct inhibitory cortical inputs to the dorsal striatum is likely to have profound consequences for corticostriatal mechanisms by which the AC regulates the output of the striatum and how auditory information is transformed into motor command (Znamenskiy and Zador, 2013). It is very well established that the dorsal striatum is characterized by activity-dependent plasticity (for review, see [Kreitzer and Malenka, 2008]). Particularly, striatal plasticity can alter the transfer of information throughout the striatum and may serve as a neuronal substrate for the transformation of sensory information and motor planning for flexible motor actions and procedural memory. Recently, Xiong et al. (Xiong et al., 2015) found that auditory corticostriatal projections are involved in the learning of an auditory frequency discrimination task. They found that neurons in the dorsal striatum of the rat are selectively potentiated by auditory corticostriatal neurons to promote the learned transformation of sounds into motor actions. Moreover, Chen et al. (Chen et al., 2015) demonstrated that motor learning is characterized by structural rearrangements of presynaptic boutons of cortical SOM interneurons. Further experiments are needed to understand the functional significance of this direct cortical inhibition to the dorsal striatum, but in combination with the two above mentioned studies it invites speculation that CS-SOM neurons might play a role in mechanisms underlying spine dynamics by inducing a specific reorganization of dendritic excitatory synapses on SPNs and have consequences on learning and/or memory retrieval.\n\nOur results establish a previously unknown corticostriatal long-range inhibitory circuit (CS-SOM inhibitory projections \u2192 striatal SPNs) underlying the control of spike timing/generation in striatal spiny neurons and attribute a specific function to a genetically defined type of cortical neuron in corticostriatal communication. We have shown that the dorsal striatum receives not only glutamatergic excitatory inputs from the cortex, but also inhibitory inputs. This may suggest that the timing and ratio of excitation and inhibition, two opposing forces in the mammalian cerebral cortex, can dynamically affect the output of the dorsal striatum, providing a general mechanism for motor control driven by sensory stimuli.\n\n## Materials and methods\n\nAll animal procedures were approved by the Institutional Animal Care and Use Committee at the University of Texas at San Antonio. Procedures followed animal welfare guidelines set by the National Institutes of Health. Mice used in this experiment were housed in a vivarium maintaining a 12\u2009hr light/dark schedule and given ad libidum access to mouse chow and water.\n\n### Transgenic mouse lines\n\nThe following mouse lines were used in this study:\n\nSOM-Cre: Ssttm2.1(cre)Zjh/J [The Jackson Laboratory, stock number 013044]; ROSA-tdTomato reporter: B6.CG.Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J [The Jackson Laboratory, stock number 007914]; Drd1a-tdTomato/Drd2-GFP reporter: The two reporter lines, B6.Cg-Tg(Drd1a-tdTomato)6Calak/J [The Jackson Laboratory, stock number 016204;\u00a0(Ade et al., 2011)] and Tg(Drd2-EGFP)S118Gsat/Mmnc [MMRRC, stock number 000230-UNC] were crossed to generate a reporter for both D1- and D2-expressing neurons. A male mouse positive for both Drd1a-tdTomato/Drd2-EGFP was provided to us by Dr. Carlos Paladini at UTSA.\n\nSOM-Cre female mice were crossed with a ROSA-tdTomato reporter male mouse to generate a SOM-Cre-tdTomato line (somatostatin-containing neurons expressed both Cre and tdTomato). SOM-Cre female mice were crossed with a Drd1a-tdTomato/Drd2-GFP reporter male mouse to generate a SOM-Cre-D1/D2 line (somatostatin-containing neurons expressed Cre; D1 neurons expressed tdTomato; D2 neurons expressed GFP).\n\n### Stereotaxic injections\n\n#### Basic surgical procedures\n\nMice were initially anesthetized with isoflurane (3%; 1\u2009L/min O2 flow) in preparation for the stereotaxic injections detailed in the sections below. The mice were head-fixed on a stereotaxic frame (Model 1900; Kopf Instruments) using non-rupture ear bars. Anesthesia was maintained at 1\u20131.5% isoflurane for the duration of the surgery. A warming pad was used to maintain body temperature during the procedure. Standard aseptic technique was followed for all surgical procedures. Injections were performed using a pressure injector (Nanoject II; Drummond Scientific) mounted on the stereotaxic frame. Injections were delivered through a borosilicate glass injection pipette (Wiretrol II; Drummond Scientific) with a taper length of ~30\u2009mm and a tip diameter of ~50\u2009\u03bcm. Both male and female mice, P28-44 at the time of the injection, were utilized in these experiments.\n\n#### Anterograde labelling of CS-SOM neurons\n\nCS-SOM neurons in the auditory cortex were labelled using AAV1.CAG.Flex.EGFP.WPRE.bGH (AAV.GFP.Flex; Penn Vector Core) stereotaxically injected into the right auditory cortex of SOM-Cre and SOM-Cre-tdTomato mice. The injection pipette was positioned over the right auditory cortex (2.5\u2009mm posterior and 4.25\u20134.35\u2009mm lateral to bregma) and advanced to 0.9\u20131.2\u2009mm below the surface of the brain. The pipette remained in place for 5 min before the injection began. ~50 nl of AAV.GFP.Flex was delivered over a period of 5\u201310 min. The pipette was allowed to remain in place for 5 min before being slowly withdrawn.\n\nWe injected in four locations in the motor cortex to increase the area of transfection. Stereotaxic coordinates for motor cortex injections: 1.0\u2009mm, 1.2\u2009mm anterior and 1.5\u2009mm, 1.7\u2009mm lateral to bregma; 0.9\u2009mm below the surface of the brain.\n\n#### Retrograde labelling of CS-SOM neurons\n\nCS-SOM neurons in the auditory cortex were retrogradely labelled using AAV.GFP.Flex stereotaxically injected into the right auditory dorsal striatum of SOM-Cre mice (3 animals from 2 litters). Injections were performed as above, with the following modifications: Stereotaxic coordinates for the auditory dorsal striatum injection site were 1.45\u2009mm posterior and 3.4\u20133.5\u2009mm lateral to bregma. ~30\u201350 nl of AAV.GFP.Flex was delivered between two depths in the dorsal striatum, 2.9\u2009mm and 2.7\u2009mm below the surface of the brain.\n\n#### Anterograde transfection of CS-SOM neurons with channelrhodopsin\n\nCS-SOM neurons in the auditory cortex were transfected with channelrhodopsin (ChR2) using AAV1.CAGGS.Flex.ChR2-tdTomato.WPRE.SV40 (AAV.ChR2.Flex; Penn Vector Core) stereotaxically injected into the right auditory cortex of SOM-Cre mice (8 animals from 4 litters) and SOM-Cre-D1/D2 mice (4 animals from 1 litter). Injections were performed in the same manner as previous injections in the auditory cortex and using the same auditory cortex stereotaxic coordinates.\n\nMotor cortex injections of AAV.ChR2.Flex followed the same basic procedure with motor cortex coordinates as previously mentioned in SOM-Cre mice (6 animals from 4 litters).\n\n#### In vitro slice preparation and recordings\n\nWe allowed 2\u20134 weeks for expression of ChR2 or GFP. Mice were anesthetized with isoflurane and decapitated. Coronal slices (300\u2009\u03bcm) containing the area of interest (auditory cortex, auditory dorsal striatum, or motor dorsal striatum) were sectioned on a vibratome (VT1200S; Leica) in a chilled cutting solution containing the following (in mM): 100 choline chloride, 25 NaHCO3, 25 D-glucose, 11.6 sodium ascorbate, 7 MgSO4, 3.1 sodium pyruvate, 2.5 KCl, 1.25 NaH2PO4, 0.5 CaCl2. These slices were incubated in oxygenated artificial cerebrospinal fluid (ACSF) in a submerged chamber at 35\u201337\u00b0C for 30\u2009min and then room temperature (21\u201325\u00b0C) until recordings were performed. ACSF contained the following (in mM): 126 NaCl, 26 NaHCO3, 10 D-glucose, 2.5 KCl, 2 CaCl2, 1.25 NaH2PO4, 1 MgCl2; osmolarity was ~290 Osm/L.\n\nWhole-cell recordings were performed in 31\u201333\u00b0C ACSF. Thin-walled borosilicate glass pipettes (Warner Instruments) were pulled on a vertical pipette puller (PC-10; Narishige) and typically were in the range of 3\u20135\u00a0M\u03a9 resistance when filled with a cesium-based intracellular solution, which contained the following (in mM): 110 CsOH, 100 D-gluconic acid, 10 CsCl2, 10 HEPES, 10 phosphocreatine, 1 EGTA, 1 ATP, and 0.3\u20130.5% biocytin. Inhibitory postsynaptic potentials (IPSCs) were recorded in the voltage-clamp configuration with a holding potential of 0 mV (the calculated reversal potential for glutamatergic excitatory conductances). Intrinsic properties were recorded in the current-clamp configuration using a potassium-based intracellular solution at 31\u201333\u00b0C. Potassium-based intracellular solution contained the following (in mM): 120 potassium gluconate, 20 KCl, 10 HEPES, 10 phosphocreatine, 4 ATP, 0.3 GTP, 0.2 EGTA, and 0.3\u20130.5% biocytin).\n\nSignals were sampled at 10 kHz and filtered at 4 kHz. Pharmacological blockers used were: CPP (5\u2009\u03bcM; Tocris Bioscience), NBQX (10\u2009\u03bcM; Abcam), and gabazine (25\u2009\u03bcM; Abcam). Hardware control and data acquisition were performed by Ephus (www.ephus.org) (Suter et al., 2010).\n\n### ChR2 photostimulation\n\nCS-SOM neurons transfected with ChR2 showed ChR2-tdTomato-positive axons in the dorsal striatum related to the cortical area where the virus was injected (auditory or motor). Because of variability both in ChR2 expression levels (number of ChR2 molecules per transfected neuron) and transfection efficiency (number of ChR2-expressing neurons per animal), to minimize the variability from experiment to experiment we performed the electrophysiological recording in the same dorsal striatum slices (identified by specific landmarks as slice 1 and 2) and with the highest density of ChR2 transfected axons. We recorded IPSCs from putative spiny projection neurons (SPNs) in the dorsal striatum during photoactivation of the CS-SOM ChR2-positive axon terminals. A 470nm wavelength blue LED (CoolLED pE excitation system) passed through a GFP filter cube (Endow GFP/EGFP longpass, C-156625; Chroma) and a 60X water-immersion objective was used to photoactivate CS-SOM ChR2-positive axon terminals.\n\n### Delay/silencing of first action potential in striatal neurons\n\nWe recorded from putative SPNs in the dorsal striatum in an area containing ChR2-tdTomato-positive CS-SOM axons. In current-clamp configuration, a step of current was injected to cause the striatal neuron to fire 2\u20137 action potentials. To determine the effect of CS-SOM projections on the output of striatal neurons, we photoactivated CS-SOM ChR2-positive axons by flashing blue light (470 nm) for 2\u201310 ms starting 10\u201350 ms before the first action potential. Combining current injection with photoactivation of CS-SOM projections delayed the current-evoked action potentials in striatal neurons. The action potential delay due to the combined current injection with photoactivation of CS-SOM projections was normalized to the onset of the first action potential measured during the current injection alone.\n\n### Identification of D1- and D2-receptor-expressing striatal neurons\n\nD1- and D2-receptor-expressing neurons in the dorsal striatum were identified by the presence of fluorescent markers in the SOM-Cre-D1/D2 line of mice. Somatic expression of either tdTomato (D1-receptor-expressing neurons) or GFP (D2-receptor-expressing neurons) fluorescence was visualized under a 60X objective.\n\n### Histology\n\nDuring whole-cell recordings, neurons were filled with an internal solution containing 0.3\u20130.5% biocytin. Filled neurons were held for at least 20 min, and then the slices were fixed in a formalin solution (neutral buffered, 10% solution; Sigma-Aldrich) for several days at 4\u00b0C. The slices were washed well in PBS (6 times, 10 min per wash) and placed in a 4% streptavidin (Alexa Fluor 488, 594, or 680 conjugate; Life Technologies,\u00a0Carlsbad,\u00a0CA) solution (498\u2009\u03bcl 0.3% Triton X-100 in PBS, 2\u2009\u03bcl streptavidin per slice). Slices were allowed to incubate in this solution at 4\u00b0C overnight, then washed well in PBS (6 times, 10 min per wash) and mounted with Fluoromount-G (SouthernBiotech) on a glass microscope slide. Confocal images were taken with a Zeiss LSM-710 microscope at varying magnifications (3-63X). The identities of SPNs recorded in the dorsal striatum were confirmed by the presence of spines on their dendritic processes when imaged at 40-63X magnification. Individual high magnification images were stitched together, when necessary, using XuvStitch software (XuvTools). Image adjustment was performed in ImageJ (National Institutes of Health) for brightness/contrast corrections and pseudocoloring.\n\nSome filled neurons were processed for light microscopy. In brief, after overnight incubation in ABC-Elite solution (Vector Laboratories) at 4\u00b0C, slices were pre-incubated in 3\u20323-diaminobenzidine (DAB; Vector Laboratories) for 20 min at 4\u00b0C and visualized by adding H2O2 to the DAB solution. The reaction was stopped when dendritic and axonal processes were visible under light microscopy examination. After washing well in 0.1\u2009M PB (6 times, 10 min per wash), a DAB Enhancing Solution (Vector Laboratories) was applied for 10\u201320 s to intensify the DAB reaction product in the stained section. Slices were washed again in 0.1\u2009M PB, then mounted with Fluoromount-G on a glass microscope slide for light microscopy. Neurons were morphologically reconstructed in three dimensions using Neurolucida (MicroBrightField) and an upright microscope fitted with a 63X/0.85 oil-immersion objective.\n\n### Data analysis\n\nFigure error bars represent SEM. Data analysis was performed offline using custom MATLAB (MathWorks) routines. Group comparisons were made using the Student\u2019s t-test if data were normally distributed and the rank-sum test if not, with significance defined as p<0.05.\n",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "a5e3b874-2c63-4589-bb4e-9b7624d0d96f",
+      "submission_id": "436e8909-0bb2-4b2a-aaf1-d5a2f532cd52",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sacha B Nelson, Brandeis University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.15890.008](https://doi.org/10.7554/eLife.15890.008)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"An inhibitory corticostriatal pathway\" for consideration by eLife. Your article has been favorably evaluated by Gary Westbrook (Senior editor) and three reviewers, one of whom, Sacha Nelson, is a member of our Board of Reviewing Editors.\n\nThe following individuals involved in review of your submission have agreed to reveal their identity: Charles Gerfen, Mitsuko Watabe-Uchida (peer reviewers).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe study by Apicella and colleagues characterizes an important recently identified inhibitory cortico-striatal pathway to striatal spiny projection neurons. The significance of this finding cannot be overstated as for over 30 years the assumption has been that cortical input to the striatum is exclusively excitatory. A few partial descriptions have previously indicated an inhibitory component to this project. Here the authors use modern state of the art optogenetic techniques to characterize the nature and physiological impact of this projection.\n\nEssential revisions:\n\n1) The authors should provide better documentation of the neuroanatomy in Figure 1. The main finding in this paper concerns SOM cortical neuron projections to the striatum. The one low magnification of the labeling in the striatum is inadequate, both a low and high magnification image of the distribution of the fibers in the striatum would be nice. Also, the low level images of the retrograde labeling of SOM neurons in the cortex should be added to with higher magnification images that allow one to get a sense of the numbers and laminar distribution of these neurons. It would also be nice if the authors were able to provide a Neurolucida drawing of an axon from one of the cortical neurons going into the striatum (although it is recognized this might be difficult).\n\n2) The rigorous characterization of SOM neurons projecting from layer 5 and 6 of cortex to striatal D1 and D2 MSNs in this paper will be important for the field. However, because the existence of GABAergic projections from the cortex to the striatum, and the fact that some of them were SOM neurons (and PV neurons), have already been reported anatomically and physiologically, it is very important to show what proportion of these GABAergic projections are from SOM neurons and what proportion of MSNs in the striatum receive these projections.\n\n3) The text (Introduction, Results, and Discussion) should more thoroughly discuss past studies of corticostriatal GABAergic projections. For example, are the present physiological results consistent with previous ones in the ventral striatum or different? \"A class of GABAergic neurons in the PFC sends long-range projections to NAc and elicits acute avoidance behavior\" By Lee et al. in J. Neuroscience 2014 (the most related, including electrophysiology), \"Corticofugal GABAergic projection neurons in the mouse frontal cortex\" by Tomioka et al. in Frontiers in Neuroanatomy 2015 (mapping of cortical GABAergic projection sites and identification as somatostatin neurons), and \"Parvalbumin is expressed in glutamatergic and GABAergic corticostrial pathway in mice.\" by Jinno and Kosaka in J. Comp. Neurol. 2004 (probably original finding about GABA projection from cortex to striatum). Authors cited them briefly and improperly in the second paragraph of the Introduction and in the first paragraph of the Discussion.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your article \"An inhibitory corticostriatal pathway\" for consideration by eLife. Your article has been favorably evaluated by Gary Westbrook (Senior editor) and three reviewers, one of whom, Sacha B Nelson, is a member of our Board of Reviewing Editors.\n\nThe following individuals involved in review of your submission have agreed to reveal their identity: Charles R Gerfen (Reviewer #2); Mitsuko Watabe-Uchida (Reviewer #3).\n\nAlthough the reviewers felt that most of the points raised were addressed, they did not feel that the slightly higher magnification view of the same image added much to Figure 1 and encourage you to provide an additional image (either as part of Figure 1 or as a supplementary figure) that actually shows greater detail as to the distribution of axons and cell bodies. We will not hold up acceptance of the manuscript on this point if you are unable to provide an additional image in a relatively short period, but all three reviewers felt this would be a significant improvement to the manuscript with relatively little additional effort.\n\nAn additional thing that needs to be corrected is the last sentence of the Abstract, \"previously unknown\" should be deleted as this pathway had been described before.\n",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a252e9bc-1c23-44f8-8ed0-7dd23bb1256f",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C1",
+      "claim": "Anatomical and physiological studies have led to the assumption that the dorsal striatum receives exclusively excitatory afferents from the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Anatomical and physiological studies have led to the assumption that the dorsal striatum receives exclusively excitatory afferents from the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references established scientific consensus based on prior anatomical and physiological studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "e44a3b2f-243b-4f80-aee6-c3edb2cfc554",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C2",
+      "claim": "The cortex, via corticostriatal somatostatin neurons (CS-SOM), has a direct inhibitory influence on the output of the striatum SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the cortex, via corticostriatal somatostatin neurons (CS-SOM), has a direct inhibitory influence on the output of the striatum SPNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "0f1d5306-bbe8-45b0-b226-6b46e04b3212",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C3",
+      "claim": "Cortical neurons regulate the activity of spiny projection neurons (SPNs) in the striatum through long-range glutamatergic/excitatory projections.",
+      "claim_type": "EXPLICIT",
+      "source": "It is very well established that cortical neurons regulate the activity of spiny projection neurons (SPNs) in the striatum through long-range glutamatergic/excitatory projections (Landry et al., 1984; Wilson, 1987; 2004; Graybiel et al., 1994; Lovinger and Tyler, 1996; Reiner et al., 2003; Kress et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "432ccaf5-edeb-4b2d-9525-275af66056b0",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C4",
+      "claim": "Inhibition in the striatum is mediated by local feed-forward and feed-back circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "while inhibition is mediated by local feed-forward and feed-back circuits (for review [Tepper et al., 2008]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a review article.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "87f193ab-6709-4c51-9a0a-ad1c165b63ce",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C5",
+      "claim": "The feed-forward circuit is characterized by GABAergic striatal interneurons that receive excitatory inputs from the cortex and monosynaptically inhibit SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "The feed-forward circuit is characterized by GABAergic striatal interneurons that receive excitatory inputs from the cortex and monosynaptically inhibit SPNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes established knowledge about striatal circuit organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "585465d1-d078-45f2-8f7e-7dd35eba5fe8",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C6",
+      "claim": "The feed-back circuit is characterized by SPNs and their interconnections via local axon collaterals.",
+      "claim_type": "EXPLICIT",
+      "source": "The feed-back circuit is characterized by SPNs and their interconnections via local axon collaterals (Calabresi et al., 1991; Kawaguchi, 1993; Kita, 1993; 1996; Kawaguchi et al., 1995; Mallet et al., 2005; Planert et al., 2010; Ibanez-Sandoval et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "e19cc5cb-3f05-4b02-a829-0750e315b391",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C7",
+      "claim": "Striatal neuronal activity has been shown to be involved in movement, learning, and goal-directed behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Because striatal neuronal activity has been shown to be involved in movement, learning, and goal-directed behavior (Graybiel, 1995; Schultz et al., 2003; Barnes et al., 2005; Kreitzer and Malenka, 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "ecfddcda-d4fb-451e-afaf-b9bb35de814c",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C8",
+      "claim": "Between 1\u201310% of the GABAergic 'interneurons' in rodents, cats, and monkeys also give rise to long-range corticocortical projections.",
+      "claim_type": "EXPLICIT",
+      "source": "Anatomical studies using retrograde tracers and immunohistochemistry have proposed that between 1\u201310% of the GABAergic 'interneurons' in rodents, cats, and monkeys also give rise to long-range corticocortical projections (McDonald and Burkhalter, 1993; Tomioka et al., 2005; Higo et al., 2007; Tomioka and Rockland, 2007; Higo et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to anatomical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "7dbc64a5-a9e8-42c8-82cb-cb96739ae44e",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C9",
+      "claim": "Many long-range corticocortical projections arise from somatostatin-expressing neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "A growing body of evidence suggests that many of these projections arise from somatostatin-expressing neurons (Tomioka et al., 2005; Higo et al., 2007; Tomioka and Rockland, 2007; Higo et al., 2009; McDonald et al., 2012; Melzer et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "0c816549-b2a7-42c1-8cf5-3f4945559c28",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C10",
+      "claim": "A previous study has demonstrated the presence of a corticostriatal GABAergic projection.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study has demonstrated the presence of a corticostriatal GABAergic projection (Tomioka et al., 2015), but the cells of origin and physiological function of this GABAergic projection from the cortex to the dorsal striatum were not explored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "f4dcbeb2-841c-4197-b016-22ebe145b217",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C11",
+      "claim": "The cells of origin and physiological function of the GABAergic projection from the cortex to the dorsal striatum were not explored in previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study has demonstrated the presence of a corticostriatal GABAergic projection (Tomioka et al., 2015), but the cells of origin and physiological function of this GABAergic projection from the cortex to the dorsal striatum were not explored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim identifies a gap in prior research that the current study addresses.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "e40754d0-e538-42cb-9c3c-c1a394ec9960",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C12",
+      "claim": "GFP was colocalized with SOM/tdTomato-expressing neurons in the auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP was colocalized with SOM/tdTomato-expressing neurons in the AC (Figure 1b left)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "2d1e20b8-3258-494d-a3f1-dd09a413477f",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C13",
+      "claim": "GFP-positive axons were visible in coronal sections of the right dorsal striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP-positive axons were visible in coronal sections of the right dorsal striatum in these mice (Figure 1b middle and right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "60f26de8-9628-4c2a-996b-a95fc4f9fedf",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C14",
+      "claim": "CS-SOM neurons were present primarily in layers 5 and 6 of the auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "CS-SOM neurons were retrogradely labelled with GFP, and their somata were present primarily in layers 5 and 6 of the AC (Figure 1d, middle).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "d77e1f42-b10e-484c-aa63-b7901d61b8bd",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C15",
+      "claim": "CS-SOM neurons are similar to SOM interneurons in their morphology and send an axonal projection into the subcortical white matter.",
+      "claim_type": "EXPLICIT",
+      "source": "Confocal images of biocytin-filled CS-SOM neurons showed that they are similar to SOM interneurons in their morphology and send an axonal projection into the subcortical white matter (Figure 1d, right; Neurolucida-reconstructed CS-SOM neuron Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 1d and 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "7ab8c996-f94f-45bf-9db3-b780aa13bced",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C16",
+      "claim": "CS-SOM neurons have a wide action potential and low rheobase.",
+      "claim_type": "EXPLICIT",
+      "source": "These properties include a wide action potential and low rheobase (the smallest current step evoking an action potential) (Figure 1f, top; action potentials in CS-SOM neurons, shown in black, are wider than those from fast-spiking interneurons, example in red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "b9a7c587-97a1-4849-9dd9-0d05d4d22a98",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C17",
+      "claim": "The responses to current steps in CS-SOM neurons were typical for SOM interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The responses to current steps in CS-SOM neurons were typical for SOM interneurons (Figure 1f, bottom; notice the sag from a hyperpolarizing current step).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "dbd907cb-01d2-4edb-b5c4-fd766921e2e8",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C18",
+      "claim": "CS-SOM neurons have a resting membrane potential of \u221272.93 \u00b1 1.16 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "Basic electrophysiological properties for CS-SOM neurons (n = 13) included (Figure 1g): resting membrane potential, \u221272.93 \u00b1 1.16 mV",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "9760dc68-020b-44cf-b3f6-3797ec2b0a4e",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C19",
+      "claim": "CS-SOM neurons have an input resistance of 240 \u00b1 26.98 M\u03a9.",
+      "claim_type": "EXPLICIT",
+      "source": "input resistance, 240 \u00b1 26.98 M\u03a9",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "f8094c62-6555-401e-9ed3-aacaf1d43b95",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C20",
+      "claim": "CS-SOM neurons have a membrane time constant of 6.84 \u00b1 0.71 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "membrane time constant, 6.84 \u00b1 0.71 ms",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "80d9f597-ecdc-47e8-8da5-404caa6d52ed",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C21",
+      "claim": "CS-SOM neurons have a rheobase of 100 \u00b1 15pA.",
+      "claim_type": "EXPLICIT",
+      "source": "rheobase, 100 \u00b1 15pA",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "72dbf1b4-60cc-4818-83c5-c074db5874ec",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C22",
+      "claim": "CS-SOM neurons have an action potential threshold of \u221241.35 \u00b1 1.33 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "action potential threshold, \u221241.35 \u00b1 1.33 mV",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "29903a1a-c4ea-45ba-9e19-09549c9a82ca",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C23",
+      "claim": "CS-SOM neurons have an action potential height of 54.18 \u00b1 2.21 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "action potential height, 54.18 \u00b1 2.21 mV",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "df66f6e9-0641-49f8-ba0a-adc133b04692",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C24",
+      "claim": "CS-SOM neurons have an action potential width of 0.49 \u00b1 0.05 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "action potential width, 0.49 \u00b1 0.05 ms",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "d620e147-d6e7-4654-b17b-ec0ebda92ab8",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C25",
+      "claim": "CS-SOM neurons have an F-I slope of 0.24 \u00b1 0.03 Hz/pA step.",
+      "claim_type": "EXPLICIT",
+      "source": "F-I slope, 0.24 \u00b1 0.03 Hz/pA step.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "e2faff4e-f341-479b-a968-ecfb7fd6b959",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C26",
+      "claim": "AAV1.Flex viral vectors exhibited both anterograde and retrograde transfection capabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Although, in our experience, AAV1.Flex viral vectors (Atasoy et al., 2008) exhibited both anterograde and retrograde (Rothermel et al., 2013) transfection capabilities",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the authors' experimental observations and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "d4319033-b279-41da-8787-3859dec93616",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C27",
+      "claim": "When AAV1.Flex virus was injected in the cortex, only anterograde labeling of CS-SOM neurons was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "when we injected this virus in the cortex we only observed anterograde labeling of CS-SOM neurons (i.e. no SOM somata transfected in the dorsal striatum; see Figure 1b, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "cf66fc34-2938-4185-9fc2-5161a592d78e",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C28",
+      "claim": "When AAV1.Flex virus was injected into the dorsal striatum, transfected SOM somata were observed both in the dorsal striatum and in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when we injected this virus into the dorsal striatum, we observed transfected SOM somata both in the dorsal striatum (Figure 1d, left) and in the cortex (Figure 1d, middle left and middle right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "104efaeb-bb34-4b58-b87c-7203cac33169",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C29",
+      "claim": "The inhibitory projection from cortex to striatum is unidirectional, arising preferentially from layer 5 and 6 SOM neurons in the cortex which project to the dorsal striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that this inhibitory projection is unidirectional, arising preferentially from layer 5 and 6 SOM neurons in the cortex which project to the dorsal striatum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data on viral transfection patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "2e3b9571-3416-4625-bee0-fa49123d0f2c",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C30",
+      "claim": "ChR2-positive axons remain photoexcitable even when severed from their parent somata.",
+      "claim_type": "EXPLICIT",
+      "source": "These axons have been reported to remain photoexcitable even when severed from their parent somata (Petreanu et al., 2007; Rock and Apicella, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "d520c2ca-ac00-435b-a836-b5a498af07c3",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C31",
+      "claim": "The IPSCs onset of the photo-evoked response was 2.2 \u00b1 0.11 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The IPSCs onset of the photo-evoked response was 2.2 \u00b1 0.11 ms (Figure 2g, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "6d4fab0b-3f8c-4c96-9efc-f5e20636ba2d",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C32",
+      "claim": "The latency of 2.2 \u00b1 0.11 ms is consistent with the IPSCs being the result of a monosynaptic inhibitory input from the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "This latency is consistent with the IPSCs being the result of a monosynaptic inhibitory input from the cortex and not a local striatal feedback inhibitory network recruited by cortical projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the measured latency data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "bb073921-2182-4530-a8f7-421a14569e29",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C33",
+      "claim": "Blocking excitatory neurotransmission by application of glutamate receptor antagonists NBQX and CPP did not abolish the CS-SOM-ChR2-evoked synaptic IPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Blocking excitatory neurotransmission by application of glutamate receptor antagonists NBQX and CPP did not abolish the CS-SOM-ChR2-evoked synaptic IPSCs (Figure 2f, magenta trace).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "ee1d2e7e-36ac-4765-b2b9-06257039818b",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C34",
+      "claim": "Blocking inhibitory neurotransmission by application of gabazine completely abolished the CS-SOM-ChR2-evoked synaptic IPSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, blocking inhibitory neurotransmission by application of gabazine (Figure 2f, black trace) completely abolished the CS-SOM-ChR2-evoked synaptic IPSCs, confirming they were elicited by direct cortical inhibitory transmission.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "53fe260b-ac60-4423-ba4e-290bb815b8dc",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C35",
+      "claim": "CS-SOM-ChR2-evoked synaptic IPSCs have a peak of 122 \u00b1 26 pA.",
+      "claim_type": "EXPLICIT",
+      "source": "Basic biophysical properties for CS-SOM-ChR2-evoked synaptic IPSCs (n = 16) included (Figure 2g,h,i): peak, 122 \u00b1 26 pA",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "959c57ef-0983-4f59-83b0-2db7fd9e5aac",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C36",
+      "claim": "CS-SOM-ChR2-evoked synaptic IPSCs have a charge of 3.85 \u00b1 0.67 pC.",
+      "claim_type": "EXPLICIT",
+      "source": "charge, 3.85 \u00b1 0.67 pC",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "69716d2c-83c9-4c1e-8f01-f667126be3b7",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C37",
+      "claim": "CS-SOM-ChR2-evoked synaptic IPSCs have a rise time of 1.64 \u00b1 0.13 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "rise time, 1.64 \u00b1 0.13 ms",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "ad621133-5964-4821-8892-e19a58a0c59d",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C38",
+      "claim": "CS-SOM-ChR2-evoked synaptic IPSCs have a decay time of 28.87 \u00b1 2.76 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "decay time, 28.87 \u00b1 2.76 ms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "cb7cb963-efa5-41f0-b9d3-8caf805f52e8",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C39",
+      "claim": "Eight out of 16 neurons were recovered after patching and were processed for imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Eight out of 16 neurons were recovered after patching and were processed for imaging; all eight of these neurons showed a high density of dendritic spines at 40-63X magnification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental procedure and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "9306770a-3ed7-4019-84e1-eb884f8e0ee3",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C40",
+      "claim": "All eight recovered neurons showed a high density of dendritic spines at 40-63X magnification.",
+      "claim_type": "EXPLICIT",
+      "source": "all eight of these neurons showed a high density of dendritic spines at 40-63X magnification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "6c88acce-a99e-4678-b576-46fa48f52f0d",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C41",
+      "claim": "A large proportion of striatal SPNs receive direct inhibitory input driven by CS-SOM neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These data reveal that a large proportion of striatal SPNs receive direct inhibitory input driven by CS-SOM neurons but does not exclude the possibility that other striatal neurons also receive inhibitory input from these projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "53a33331-ec5e-4428-8352-5535802826a8",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C42",
+      "claim": "Combining current injection with photoactivation of CS-SOM ChR2-positive axons resulted in a delay of the first action potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining current injection with photoactivation of CS-SOM ChR2-positive axons, we observed a delay of the first action potential (Figure 2j, blue traces), with an average delay of 159.16 \u00b1 66.45 ms (n=6) (Figure 2k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 2j and 2k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "9667070a-4527-4fce-ada7-5a779ccd4ac9",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C43",
+      "claim": "The average delay of the first action potential was 159.16 \u00b1 66.45 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "with an average delay of 159.16 \u00b1 66.45 ms (n=6) (Figure 2k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2k.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "7e380fa5-a67e-4ade-a5cc-c62b763a613d",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C44",
+      "claim": "CS-SOM projections act directly on SPNs and have the ability to affect spike generation and timing in these neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results indicate that CS-SOM projections act directly on SPNs and have the ability to affect spike generation and timing in these neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "337a5aec-1b37-4337-8323-5c1b7ed09466",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C45",
+      "claim": "Direct pathway SPNs (dSPNs) express D1-type dopamine receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct pathway SPNs (dSPNs) express D1-type dopamine receptors and are suggested to promote behaviors that have previously been rewarded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about striatal pathways.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "ac27f188-ffc0-49bd-9048-4ecc3e6430a8",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C46",
+      "claim": "Direct pathway SPNs are suggested to promote behaviors that have previously been rewarded.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct pathway SPNs (dSPNs) express D1-type dopamine receptors and are suggested to promote behaviors that have previously been rewarded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about striatal pathways.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "cc29193f-bddc-4b55-af18-ccc11a562fba",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C47",
+      "claim": "Indirect pathway SPNs (iSPNs) express D2-type dopamine receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, indirect pathway SPNs (iSPNs) express D2-type dopamine receptors and are suggested to suppress behaviors that have not previously been rewarded (Gong et al., 2003; Ade et al., 2011; Calabresi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "649f67c8-2539-4ca9-abb9-bbf55ced6251",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C48",
+      "claim": "Indirect pathway SPNs are suggested to suppress behaviors that have not previously been rewarded.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, indirect pathway SPNs (iSPNs) express D2-type dopamine receptors and are suggested to suppress behaviors that have not previously been rewarded (Gong et al., 2003; Ade et al., 2011; Calabresi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "97953d67-b21e-4856-9c7e-02bed0f12502",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C49",
+      "claim": "In Drd1a-tdTomato and Drd2-EGFP mice, fluorescent labeling is restricted to SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported (Ade et al., 2011) that in Drd1a-tdTomato and Drd2-EGFP mice, fluorescent labeling is restricted to SPNs (i.e. no fluorescent labeling of the three main classes of interneurons in the striatum: parvalbumin-expressing, somatostatin-expressing, and cholinergic).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "639a6d80-00f5-4bcb-9392-8e4d7a00b40b",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C50",
+      "claim": "Six out of fourteen neurons were recovered after patching and were processed for imaging in the D1/D2 experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Six out of fourteen neurons were recovered after patching and were processed for imaging; all six of these neurons showed a high density of dendritic spines at 40-63X magnification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental procedure and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "2e59f873-6dbc-40dd-abdf-d18af80f99ec",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C51",
+      "claim": "All six recovered neurons in the D1/D2 experiments showed a high density of dendritic spines at 40-63X magnification.",
+      "claim_type": "EXPLICIT",
+      "source": "all six of these neurons showed a high density of dendritic spines at 40-63X magnification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "4d93d9a3-2a2b-4a1e-8901-f5caf29602bd",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C52",
+      "claim": "IPSCs peak amplitude in dSPNs was 149 \u00b1 30 pA.",
+      "claim_type": "EXPLICIT",
+      "source": "IPSCs peak amplitude (dSPN: 149 \u00b1 30 pA; iSPN: 130 \u00b1 21 pA; p = 0.7 rank-sum test)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "49f8e796-8d65-4008-8687-46b17b2c2fde",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C53",
+      "claim": "IPSCs peak amplitude in iSPNs was 130 \u00b1 21 pA.",
+      "claim_type": "EXPLICIT",
+      "source": "IPSCs peak amplitude (dSPN: 149 \u00b1 30 pA; iSPN: 130 \u00b1 21 pA; p = 0.7 rank-sum test)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "877a8063-87e5-4f3d-a228-807b722e01f4",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C54",
+      "claim": "IPSCs peak amplitude was similar in dSPNs and iSPNs (p = 0.7 rank-sum test).",
+      "claim_type": "EXPLICIT",
+      "source": "IPSCs peak amplitude (dSPN: 149 \u00b1 30 pA; iSPN: 130 \u00b1 21 pA; p = 0.7 rank-sum test)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "c455caeb-67ac-453f-a21c-ba6be83281bb",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C55",
+      "claim": "IPSCs charge in dSPNs was 6.26 \u00b1 1.03 pC.",
+      "claim_type": "EXPLICIT",
+      "source": "charge (dSPN: 6.26 \u00b1 1.03 pC; iSPN: 5.24 \u00b1 1.38 pC; p = 0.3 rank-sum test)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "3491b2af-96be-4b32-b144-2a224f3ebb77",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C56",
+      "claim": "IPSCs charge in iSPNs was 5.24 \u00b1 1.38 pC.",
+      "claim_type": "EXPLICIT",
+      "source": "charge (dSPN: 6.26 \u00b1 1.03 pC; iSPN: 5.24 \u00b1 1.38 pC; p = 0.3 rank-sum test)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "b93cae46-c24b-468f-8252-4522528cd183",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C57",
+      "claim": "IPSCs charge was similar in dSPNs and iSPNs (p = 0.3 rank-sum test).",
+      "claim_type": "EXPLICIT",
+      "source": "charge (dSPN: 6.26 \u00b1 1.03 pC; iSPN: 5.24 \u00b1 1.38 pC; p = 0.3 rank-sum test) were similar in dSPNs and iSPNs (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data and statistical analysis shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "63e208df-d3f0-4ebc-9a54-6128fa2de22b",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C58",
+      "claim": "There were no differences in IPSCs rise times between dSPNs and iSPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no differences in IPSCs rise times (Figure 3g; example IPSCs from iSPN Figure 3f), suggesting the CS-SOM synapses had similar somatodendritic distributions on dSPNs and iSPNs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 3f and 3g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "ec355ae6-c7e4-4221-a873-1eba6f18947d",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C59",
+      "claim": "CS-SOM synapses had similar somatodendritic distributions on dSPNs and iSPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting the CS-SOM synapses had similar somatodendritic distributions on dSPNs and iSPNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the rise time data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "5c642d4c-73ab-4879-a84f-bac90f99a465",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C60",
+      "claim": "CS-SOM neurons do not preferentially innervate dSPNs vs. iSPNs in the dorsal striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that CS-SOM neurons do not preferentially innervate dSPNs vs. iSPNs in the dorsal striatum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the experimental data comparing dSPNs and iSPNs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "73d6a8a8-66a7-45cf-8381-340d195e534c",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C61",
+      "claim": "ChR2-tdTomato-positive axons were detectable in the dorsal striatum following motor cortex injections.",
+      "claim_type": "EXPLICIT",
+      "source": "Although both D1-type dopamine receptors and our ChR2 virus are tagged with tdTomato, ChR2-tdTomato-positive axons were detectable in the area of our recordings (Figure 3b, left and right panels, white arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "e55ee171-181b-4959-a8a4-9f2443e7d2f4",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C62",
+      "claim": "CS-SOM-ChR2-evoked synaptic IPSCs from motor cortex have an onset of 2.4 \u00b1 0.11 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Basic biophysical properties for CS-SOM-ChR2-evoked synaptic IPSCs (n = 9) included (Figure 4g,h,i): onset, 2.4 \u00b1 0.11 ms",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "f49404f4-865e-45c1-8109-315b236814e6",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C63",
+      "claim": "CS-SOM-ChR2-evoked synaptic IPSCs from motor cortex have a peak of 91 \u00b1 17 pA.",
+      "claim_type": "EXPLICIT",
+      "source": "peak, 91 \u00b1 17 pA",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "ed6cffdb-b47d-411e-84ae-35f2bb8317c4",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C64",
+      "claim": "CS-SOM-ChR2-evoked synaptic IPSCs from motor cortex have a charge of 3.58 \u00b1 0.59 pC.",
+      "claim_type": "EXPLICIT",
+      "source": "charge, 3.58 \u00b1 0.59 pC",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "ecb32eca-a57c-447f-a956-e1d3c20194cd",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C65",
+      "claim": "CS-SOM-ChR2-evoked synaptic IPSCs from motor cortex have a rise time of 1.76 \u00b1 0.14 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "rise time, 1.76 \u00b1 0.14 ms",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "d86436cc-c9b6-4cb7-b0b5-64234818868f",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C66",
+      "claim": "CS-SOM-ChR2-evoked synaptic IPSCs from motor cortex have a decay time of 32.96 \u00b1 4.98 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "decay time, 32.96 \u00b1 4.98 ms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "66500081-54a4-4fa4-96a2-bf596603eeb0",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C67",
+      "claim": "Three out of nine neurons from motor cortex experiments were recovered after patching and were processed for imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Three out of nine neurons were recovered after patching and were processed for imaging; all three of these neurons showed dendritic spines at 40-63X magnification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental procedure and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "8c7f9e21-c056-4312-818e-6e9baca641a8",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C68",
+      "claim": "All three recovered neurons from motor cortex experiments showed dendritic spines at 40-63X magnification.",
+      "claim_type": "EXPLICIT",
+      "source": "all three of these neurons showed dendritic spines at 40-63X magnification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "48383213-a253-4c9b-92f9-d4f1894825ce",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C69",
+      "claim": "In motor cortex, as well as in auditory cortex, CS-SOM projections act directly on SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results indicate that in MC, as well as in AC, CS-SOM projections act directly on SPNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the experimental data from both cortical areas.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "bf3df574-b44a-4d9c-9ce0-5b37747c12da",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C70",
+      "claim": "Both the motor and the auditory cortices send long-range GABAergic projections to the dorsal striatum, via CS-SOM neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results support this hypothesis and additionally conclude that both the motor and the auditory cortices send long-range GABAergic projections to the dorsal striatum, via CS-SOM neurons (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is a primary conclusion of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "e7a5d2db-0f0a-46fd-81db-5844b84fbb15",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C71",
+      "claim": "The corticostriatal somatostatin projection connectivity pattern is likely a general feature of the corticostriatal network.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of its presence in two such disparate cortical areas, this would suggest that the corticostriatal somatostatin projection connectivity pattern is likely a general feature of the corticostriatal network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the observation of the projection in multiple cortical areas.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "7453f274-d59f-41ba-8059-78d4d4ae7ed1",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C72",
+      "claim": "CS-SOM neurons provide a major GABAergic projection to the dorsal striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that CS-SOM neurons provide a major GABAergic projection to the dorsal striatum, in agreement with a recent anatomical study in the mouse frontal cortex (Tomioka et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the study's data and a citation to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "5d195f1e-cd18-4edc-af5c-8b00031c3c7a",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C73",
+      "claim": "Previous results from retrospinal and somatosensory cortex have provided anatomical evidence for expression of parvalbumin in glutamatergic and GABAergic pathways in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However previous results from retrospinal and somatosensory cortex (Jinno and Kosaka, 2004) have provided anatomical evidence for expression of parvalbumin in glutamatergic and GABAergic pathways in mice suggesting that corticostriatal long-range inhibitory neurons are characterized predominantly by parvalbumin-expressing neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "b7a19bc1-5138-443b-a600-1a6eb58af16f",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C74",
+      "claim": "Recent results from prefrontal cortex show that corticostriatal long-range inhibitory neurons are characterized predominantly by parvalbumin-expressing or vasoactive intestinal peptide (VIP)-expressing but not somatostatin-expressing interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, recent results from prefrontal cortex (Lee et al., 2014), show that corticostriatal long-range inhibitory neurons are characterized predominantly by parvalbumin-expressing or vasoactive intestinal peptide (VIP)-expressing but not somatostatin-expressing interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "3f69850b-856d-4e73-9656-db36154dddec",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C75",
+      "claim": "Corticostriatal long-range GABAergic projections may be characterized by heterogeneous subtypes of interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these suggest that corticostriatal long-range GABAergic projections may be characterized by heterogeneous subtypes of interneurons, and that additional studies are necessary to determine the subtypes and the physiological impact of long-range corticostriatal GABAergic projections on striatal neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference based on the comparison of the current study with prior research.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "ab2b421b-29da-4680-b480-3877e8d88f96",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C76",
+      "claim": "CS-SOM neurons target SPNs and have the ability to affect their spike timing and generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly, CS-SOM neurons target SPNs and have the ability to affect their spike timing and generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "253177c2-67c9-41e2-b794-a547fd0ab5af",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C77",
+      "claim": "In the cortex, interneurons target the somatodendritic compartment of pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cortex, interneurons target the somatodendritic compartment of pyramidal neurons (Somogyi et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "30d87b98-c702-47a3-8cc6-54bf2f8a23e1",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C78",
+      "claim": "SOM cortical and striatal interneurons target the dendrites of pyramidal neurons and SPNs, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "SOM cortical and striatal interneurons in particular target the dendrites of pyramidal neurons and SPNs, respectively; although not specifically tuft dendrites as is characteristic of their hippocampal analogue, OLM cells (Freund and Buzsaki, 1996; Kubota and Kawaguchi, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "fbd54fa8-6969-426f-abc1-2c8b919ca449",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C79",
+      "claim": "CS-SOM neurons, by targeting the dendrites of SPNs, play a role in the integration of incoming cortical excitatory inputs to the striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that a similar inhibitory mechanism might be applied to the corticostriatal long-range inhibitory circuit, in which CS-SOM neurons, by targeting the dendrites of SPNs, play a role in the integration of incoming cortical excitatory inputs to the striatum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a speculation based on the study's findings and prior knowledge.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "f1616acb-f8a2-4ec5-8dc2-19c70995fef7",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C80",
+      "claim": "Long-range glutamatergic/excitatory projections regulate the activity of dSPNs and iSPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "It is very well established that long-range glutamatergic/excitatory projections regulate the activity of dSPNs and iSPNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "b78a7de2-e5f9-4fbe-a79b-99f2b9a72101",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C81",
+      "claim": "The cortex provides an inhibitory projection to both direct and indirect pathway neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that the cortex provides an inhibitory projection to both direct and indirect pathway neurons, influencing the output of both striatal networks involved in action selection and suppression of action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "6e042970-ab73-42ea-bb92-8768c02ffc1e",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C82",
+      "claim": "The functional role of inhibition from CS-SOM neurons might be in shaping the output of both direct and indirect pathways rather than separating their activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The functional role of inhibition from CS-SOM neurons might be not in separating the activity of direct and indirect striatal pathways, but rather in shaping the output of both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a speculation based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "a31c4031-93d1-47b7-b5e8-3891ba060a74",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C83",
+      "claim": "Long-range excitatory corticostriatal connections from intratelencephalic and pyramidal tract neurons in motor cortex are made onto both dSPNs and iSPNs in the mouse dorsal striatum.",
+      "claim_type": "EXPLICIT",
+      "source": "This is reminiscent of the finding by Kress et al. (Kress et al., 2013) that long-range excitatory corticostriatal connections from intratelencephalic and pyramidal tract neurons in motor cortex are made onto both dSPNs and iSPNs in the mouse dorsal striatum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "a5480e70-2a92-47d6-b530-368497afa889",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C84",
+      "claim": "The dorsal striatum is a brain structure where functionally distinct cortical regions converge.",
+      "claim_type": "EXPLICIT",
+      "source": "The dorsal striatum is a brain structure where functionally distinct cortical regions (e.g. motor, auditory, visual, somatosensory) converge (Wilson et al., 1983; Schneider, 1991; Flaherty and Graybiel, 1993; Chudler et al., 1995; Reig and Silberberg, 2014; Wilson, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "4bd7f967-fd91-4d2c-a7d7-5f35f0f00bf3",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C85",
+      "claim": "Information reaching the dorsal striatum via the corticostriatal projection is either channeled into parallel functional segregated circuits or integrated within these circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Anatomical and physiological data have suggested that once this information reaches the dorsal striatum via the corticostriatal projection, it is either channeled into parallel functional segregated circuits (Alexander et al., 1986; Bordi and LeDoux, 1992; Bordi et al., 1993; Parent and Hazrati, 1995; Middleton and Strick, 2000) or integrated within these circuits (Nauta and Domesick, 1984; Hoffer and Alloway, 2001; Kolomiets et al., 2001; Reig and Silberberg, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "a06de11c-59bb-43c1-b66b-81bab1ef97db",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C86",
+      "claim": "The existence of direct inhibitory cortical inputs to the dorsal striatum is likely to have profound consequences for corticostriatal mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of direct inhibitory cortical inputs to the dorsal striatum is likely to have profound consequences for corticostriatal mechanisms by which the AC regulates the output of the striatum and how auditory information is transformed into motor command (Znamenskiy and Zador, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a speculation based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "deceb825-1c5d-4f07-a695-dba81f7e7f4d",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C87",
+      "claim": "The dorsal striatum is characterized by activity-dependent plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "It is very well established that the dorsal striatum is characterized by activity-dependent plasticity (for review, see [Kreitzer and Malenka, 2008]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a review article.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "a563f0dc-3980-4555-95f3-af7ce1266c21",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C88",
+      "claim": "Striatal plasticity can alter the transfer of information throughout the striatum and may serve as a neuronal substrate for the transformation of sensory information and motor planning for flexible motor actions and procedural memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly, striatal plasticity can alter the transfer of information throughout the striatum and may serve as a neuronal substrate for the transformation of sensory information and motor planning for flexible motor actions and procedural memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about striatal plasticity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "288359c6-d7f2-4446-9e1d-cd2f01ed6b90",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C89",
+      "claim": "Neurons in the dorsal striatum of the rat are selectively potentiated by auditory corticostriatal neurons to promote the learned transformation of sounds into motor actions.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, Xiong et al. (Xiong et al., 2015) found that auditory corticostriatal projections are involved in the learning of an auditory frequency discrimination task. They found that neurons in the dorsal striatum of the rat are selectively potentiated by auditory corticostriatal neurons to promote the learned transformation of sounds into motor actions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "01de3516-5f14-464c-a3fd-8ae466d6832f",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C90",
+      "claim": "Motor learning is characterized by structural rearrangements of presynaptic boutons of cortical SOM interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Chen et al. (Chen et al., 2015) demonstrated that motor learning is characterized by structural rearrangements of presynaptic boutons of cortical SOM interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "b83372b3-7067-4dcc-8868-4882ce2b3461",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C91",
+      "claim": "CS-SOM neurons might play a role in mechanisms underlying spine dynamics by inducing a specific reorganization of dendritic excitatory synapses on SPNs.",
+      "claim_type": "EXPLICIT",
+      "source": "Further experiments are needed to understand the functional significance of this direct cortical inhibition to the dorsal striatum, but in combination with the two above mentioned studies it invites speculation that CS-SOM neurons might play a role in mechanisms underlying spine dynamics by inducing a specific reorganization of dendritic excitatory synapses on SPNs and have consequences on learning and/or memory retrieval.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a speculation based on the study's findings and prior research.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "a535ace2-fb5e-45ed-99cd-2d258f613bb9",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C92",
+      "claim": "The dorsal striatum receives not only glutamatergic excitatory inputs from the cortex, but also inhibitory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that the dorsal striatum receives not only glutamatergic excitatory inputs from the cortex, but also inhibitory inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a primary conclusion of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "be277b57-b85b-436a-8902-b7a18d35c458",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "claim_id": "C93",
+      "claim": "The timing and ratio of excitation and inhibition can dynamically affect the output of the dorsal striatum, providing a general mechanism for motor control driven by sensory stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "This may suggest that the timing and ratio of excitation and inhibition, two opposing forces in the mammalian cerebral cortex, can dynamically affect the output of the dorsal striatum, providing a general mechanism for motor control driven by sensory stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a speculation based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b456fe56-205c-4fa3-9fd5-0bfbba96f071",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CS-SOM neurons originate from layers 5 and 6 of the auditory cortex and project unidirectionally to the dorsal striatum. These neurons exhibit electrophysiological properties characteristic of somatostatin interneurons, including wide action potentials, low rheobase, and specific membrane properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C29 provide converging anatomical, morphological, and electrophysiological evidence for CS-SOM neurons. The viral tracing experiments (C12-C13, C27-C28) demonstrate projection patterns, laminar distribution is shown (C14), and comprehensive electrophysiological characterization (C16-C25) confirms SOM interneuron identity. The unidirectional nature (C29) is supported by differential viral labeling patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "4b686578-4f28-46f1-96f9-dcbfb36e7643",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CS-SOM neurons provide monosynaptic GABAergic inhibition to striatal SPNs. Optogenetic activation of CS-SOM axons evokes IPSCs with short latency (~2.2 ms), which are blocked by gabazine but not by glutamate receptor antagonists, and a large proportion of recorded neurons are SPNs based on dendritic spine morphology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C41 provide strong evidence for direct GABAergic transmission. The short latency (C31-C32) supports monosynaptic connectivity, pharmacological dissection (C33-C34) confirms GABAergic transmission independent of glutamatergic signaling, and biophysical characterization (C35-C38) is comprehensive. Post-hoc morphological identification (C39-C40) validates SPN identity, though only 50% recovery rate introduces some uncertainty about the full population.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "7273ed58-12b5-4be1-b4ef-e8a6610d8bb5",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CS-SOM activation delays action potential generation in SPNs by an average of 159.16 \u00b1 66.45 ms during current injection, demonstrating functional control of spike timing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 demonstrate functional consequences of CS-SOM inhibition on SPN output. The experimental design combining current injection with optogenetic activation is appropriate, and the measured delay (C43) shows substantial variability (large SEM) but consistent effect direction. The sample size (n=6) is modest but adequate for this proof-of-principle demonstration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "915a94c2-4175-4308-b22a-7d59d83e11ad",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CS-SOM neurons innervate both direct pathway (dSPN) and indirect pathway (iSPN) SPNs with similar strength and kinetics, showing no preferential targeting of either pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C60 provide statistical evidence for equivalent innervation of both SPN subtypes. The comparison of IPSC amplitude (C52-C54, p=0.7), charge (C55-C57, p=0.3), and rise times (C58) with appropriate non-parametric tests supports the conclusion. The sample size (n=7 each) is adequate, and the inference about synaptic distribution (C59) from rise time data is reasonable though indirect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "63f01093-712f-441c-962e-f564c9c392d4",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Motor cortex CS-SOM neurons also project to dorsal striatum and directly inhibit SPNs with properties similar to auditory cortex projections, suggesting this is a general feature of corticostriatal organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C71 extend the auditory cortex findings to motor cortex. The anatomical (C61), electrophysiological (C62-C66), and morphological (C67-C68) data parallel the auditory cortex results. The generalization to a broader organizational principle (C71) is reasonable given observation in two functionally distinct cortical areas, though testing in additional cortical regions would strengthen this claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "7488dd04-9d8d-4713-8c54-133fe51f7883",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The identity of long-range corticostriatal GABAergic neurons may vary across cortical regions, with evidence for somatostatin neurons in auditory/motor/frontal cortex but parvalbumin or VIP neurons in other regions, suggesting heterogeneous interneuron subtypes contribute to this projection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 appropriately contextualize the current findings within conflicting prior literature. The authors acknowledge that different studies (C73-C74) have identified different interneuron subtypes in corticostriatal projections from different cortical areas, and reasonably conclude heterogeneity exists (C75). This represents good scientific practice in reconciling discrepant findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "6d62b4cf-590c-49c0-a885-7dd1db280d69",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CS-SOM neurons may regulate synaptic integration in SPNs by targeting dendrites and shaping the output of both direct and indirect pathways rather than separating their activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76, C79, C81-C82 propose functional roles but C79 and C82 are explicitly speculative. While C76 is supported by the spike timing data and C81 by the D1/D2 experiments, the mechanistic claims about dendritic integration (C79) lack direct evidence of synaptic location, and the functional interpretation (C82) requires additional behavioral or circuit-level experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "facd786e-7912-44f6-9b69-102e90bc30a8",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The discovery of direct cortical inhibition to striatum may have profound consequences for sensorimotor transformation, learning, and memory through mechanisms involving spine dynamics and the balance of excitation/inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86, C91, and C93 are explicitly speculative (\"likely to have,\" \"might play a role,\" \"may suggest\") and represent hypotheses for future work rather than demonstrated results. While these are reasonable speculations grounded in the data and prior literature (C89-C90), they lack direct experimental support in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "920b37d6-ceb7-4698-b060-8075ee6edce8",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Contrary to the prevailing assumption that dorsal striatum receives exclusively excitatory cortical inputs, this study demonstrates that the cortex also provides direct inhibitory GABAergic inputs via CS-SOM neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, and C92 frame the central finding. C1 accurately represents prior assumptions, and C2/C92 state the main discovery supported by the comprehensive experimental evidence throughout the manuscript. This represents a paradigm-shifting finding that challenges established models of corticostriatal connectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "48859fa4-3955-4cd3-93c7-fd7bb2911f05",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior work established that cortical regulation of striatal SPNs occurs through excitatory projections and local inhibitory circuits, with some evidence for long-range GABAergic projections from somatostatin neurons, though the cells of origin and physiological function were unexplored.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C11 accurately summarize established knowledge and identify the gap addressed by this study. The claims are well-supported by appropriate citations and correctly frame the novelty of the current work (C11). This provides proper context for evaluating the significance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "1f0164b0-16a3-42ee-8d95-a076bac8245f",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Direct and indirect pathway SPNs are distinguished by D1 vs D2 dopamine receptor expression and have opposing functional roles in behavior, with fluorescent reporters in transgenic mice specifically labeling SPNs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49 accurately represent established knowledge about striatal pathways with appropriate citations. Claims C50-C51 describe methodological validation showing recovered neurons have dendritic spines characteristic of SPNs. The reliance on prior characterization of the reporter mice (C49) is appropriate and well-cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "bdd2cd75-dde0-4e66-a224-020324293fcc",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "ChR2-positive axons remain photoexcitable when severed from their parent somata, enabling optogenetic activation of axon terminals in slice preparations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 cites established prior work demonstrating that ChR2-expressing axons can be activated independently of the soma. This is a well-validated technical principle that justifies the experimental approach of activating cortical axons in striatal slices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    },
+    {
+      "id": "2655c1ea-2acc-47b1-9293-cd32be13dee5",
+      "content_id": "66deed6d-2709-4782-8c97-5542a79ec2fd",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Established principles of cortical and striatal organization include dendritic targeting by SOM interneurons, convergence of multiple cortical areas in striatum, activity-dependent plasticity, and roles in sensorimotor learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C90 accurately summarize relevant background knowledge with appropriate citations. These provide important context for interpreting the functional significance of CS-SOM projections and support the discussion of potential mechanisms and implications. The citations appear appropriate and the knowledge claims are consistent with the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:38:13.352366Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e40754d0-e538-42cb-9c3c-c1a394ec9960",
+      "result_id": "b456fe56-205c-4fa3-9fd5-0bfbba96f071"
+    },
+    {
+      "claim_id": "2d1e20b8-3258-494d-a3f1-dd09a413477f",
+      "result_id": "b456fe56-205c-4fa3-9fd5-0bfbba96f071"
+    },
+    {
+      "claim_id": "60f26de8-9628-4c2a-996b-a95fc4f9fedf",
+      "result_id": "b456fe56-205c-4fa3-9fd5-0bfbba96f071"
+    },
+    {
+      "claim_id": "d77e1f42-b10e-484c-aa63-b7901d61b8bd",
+      "result_id": "b456fe56-205c-4fa3-9fd5-0bfbba96f071"
+    },
+    {
+      "claim_id": "7ab8c996-f94f-45bf-9db3-b780aa13bced",
+      "result_id": "b456fe56-205c-4fa3-9fd5-0bfbba96f071"
+    },
+    {
+      "claim_id": "b9a7c587-97a1-4849-9dd9-0d05d4d22a98",
+      "result_id": "b456fe56-205c-4fa3-9fd5-0bfbba96f071"
+    },
+    {
+      "claim_id": "dbd907cb-01d2-4edb-b5c4-fd766921e2e8",
+      "result_id": "b456fe56-205c-4fa3-9fd5-0bfbba96f071"
+    },
+    {
+      "claim_id": "9760dc68-020b-44cf-b3f6-3797ec2b0a4e",
+      "result_id": "b456fe56-205c-4fa3-9fd5-0bfbba96f071"
+    },
+    {
+      "claim_id": "f8094c62-6555-401e-9ed3-aacaf1d43b95",
+      "result_id": "b456fe56-205c-4fa3-9fd5-0bfbba96f071"
+    },
+    {
+      "claim_id": "80d9f597-ecdc-47e8-8da5-404caa6d52ed",
+      "result_id": "b456fe56-205c-4fa3-9fd5-0bfbba96f071"
+    },
+    {
+      "claim_id": "72dbf1b4-60cc-4818-83c5-c074db5874ec",
+      "result_id": "b456fe56-205c-4fa3-9fd5-0bfbba96f071"
+    },
+    {
+      "claim_id": "29903a1a-c4ea-45ba-9e19-09549c9a82ca",
+      "result_id": "b456fe56-205c-4fa3-9fd5-0bfbba96f071"
+    },
+    {
+      "claim_id": "df66f6e9-0641-49f8-ba0a-adc133b04692",
+      "result_id": "b456fe56-205c-4fa3-9fd5-0bfbba96f071"
+    },
+    {
+      "claim_id": "d620e147-d6e7-4654-b17b-ec0ebda92ab8",
+      "result_id": "b456fe56-205c-4fa3-9fd5-0bfbba96f071"
+    },
+    {
+      "claim_id": "e2faff4e-f341-479b-a968-ecfb7fd6b959",
+      "result_id": "b456fe56-205c-4fa3-9fd5-0bfbba96f071"
+    },
+    {
+      "claim_id": "d4319033-b279-41da-8787-3859dec93616",
+      "result_id": "b456fe56-205c-4fa3-9fd5-0bfbba96f071"
+    },
+    {
+      "claim_id": "cf66fc34-2938-4185-9fc2-5161a592d78e",
+      "result_id": "b456fe56-205c-4fa3-9fd5-0bfbba96f071"
+    },
+    {
+      "claim_id": "104efaeb-bb34-4b58-b87c-7203cac33169",
+      "result_id": "b456fe56-205c-4fa3-9fd5-0bfbba96f071"
+    },
+    {
+      "claim_id": "d520c2ca-ac00-435b-a836-b5a498af07c3",
+      "result_id": "4b686578-4f28-46f1-96f9-dcbfb36e7643"
+    },
+    {
+      "claim_id": "6d4fab0b-3f8c-4c96-9efc-f5e20636ba2d",
+      "result_id": "4b686578-4f28-46f1-96f9-dcbfb36e7643"
+    },
+    {
+      "claim_id": "bb073921-2182-4530-a8f7-421a14569e29",
+      "result_id": "4b686578-4f28-46f1-96f9-dcbfb36e7643"
+    },
+    {
+      "claim_id": "ee1d2e7e-36ac-4765-b2b9-06257039818b",
+      "result_id": "4b686578-4f28-46f1-96f9-dcbfb36e7643"
+    },
+    {
+      "claim_id": "53fe260b-ac60-4423-ba4e-290bb815b8dc",
+      "result_id": "4b686578-4f28-46f1-96f9-dcbfb36e7643"
+    },
+    {
+      "claim_id": "959c57ef-0983-4f59-83b0-2db7fd9e5aac",
+      "result_id": "4b686578-4f28-46f1-96f9-dcbfb36e7643"
+    },
+    {
+      "claim_id": "69716d2c-83c9-4c1e-8f01-f667126be3b7",
+      "result_id": "4b686578-4f28-46f1-96f9-dcbfb36e7643"
+    },
+    {
+      "claim_id": "ad621133-5964-4821-8892-e19a58a0c59d",
+      "result_id": "4b686578-4f28-46f1-96f9-dcbfb36e7643"
+    },
+    {
+      "claim_id": "cb7cb963-efa5-41f0-b9d3-8caf805f52e8",
+      "result_id": "4b686578-4f28-46f1-96f9-dcbfb36e7643"
+    },
+    {
+      "claim_id": "9306770a-3ed7-4019-84e1-eb884f8e0ee3",
+      "result_id": "4b686578-4f28-46f1-96f9-dcbfb36e7643"
+    },
+    {
+      "claim_id": "6c88acce-a99e-4678-b576-46fa48f52f0d",
+      "result_id": "4b686578-4f28-46f1-96f9-dcbfb36e7643"
+    },
+    {
+      "claim_id": "53a33331-ec5e-4428-8352-5535802826a8",
+      "result_id": "7273ed58-12b5-4be1-b4ef-e8a6610d8bb5"
+    },
+    {
+      "claim_id": "9667070a-4527-4fce-ada7-5a779ccd4ac9",
+      "result_id": "7273ed58-12b5-4be1-b4ef-e8a6610d8bb5"
+    },
+    {
+      "claim_id": "7e380fa5-a67e-4ade-a5cc-c62b763a613d",
+      "result_id": "7273ed58-12b5-4be1-b4ef-e8a6610d8bb5"
+    },
+    {
+      "claim_id": "4d93d9a3-2a2b-4a1e-8901-f5caf29602bd",
+      "result_id": "915a94c2-4175-4308-b22a-7d59d83e11ad"
+    },
+    {
+      "claim_id": "49f8e796-8d65-4008-8687-46b17b2c2fde",
+      "result_id": "915a94c2-4175-4308-b22a-7d59d83e11ad"
+    },
+    {
+      "claim_id": "877a8063-87e5-4f3d-a228-807b722e01f4",
+      "result_id": "915a94c2-4175-4308-b22a-7d59d83e11ad"
+    },
+    {
+      "claim_id": "c455caeb-67ac-453f-a21c-ba6be83281bb",
+      "result_id": "915a94c2-4175-4308-b22a-7d59d83e11ad"
+    },
+    {
+      "claim_id": "3491b2af-96be-4b32-b144-2a224f3ebb77",
+      "result_id": "915a94c2-4175-4308-b22a-7d59d83e11ad"
+    },
+    {
+      "claim_id": "b93cae46-c24b-468f-8252-4522528cd183",
+      "result_id": "915a94c2-4175-4308-b22a-7d59d83e11ad"
+    },
+    {
+      "claim_id": "63e208df-d3f0-4ebc-9a54-6128fa2de22b",
+      "result_id": "915a94c2-4175-4308-b22a-7d59d83e11ad"
+    },
+    {
+      "claim_id": "ec355ae6-c7e4-4221-a873-1eba6f18947d",
+      "result_id": "915a94c2-4175-4308-b22a-7d59d83e11ad"
+    },
+    {
+      "claim_id": "5c642d4c-73ab-4879-a84f-bac90f99a465",
+      "result_id": "915a94c2-4175-4308-b22a-7d59d83e11ad"
+    },
+    {
+      "claim_id": "73d6a8a8-66a7-45cf-8381-340d195e534c",
+      "result_id": "63f01093-712f-441c-962e-f564c9c392d4"
+    },
+    {
+      "claim_id": "e55ee171-181b-4959-a8a4-9f2443e7d2f4",
+      "result_id": "63f01093-712f-441c-962e-f564c9c392d4"
+    },
+    {
+      "claim_id": "f49404f4-865e-45c1-8109-315b236814e6",
+      "result_id": "63f01093-712f-441c-962e-f564c9c392d4"
+    },
+    {
+      "claim_id": "ed6cffdb-b47d-411e-84ae-35f2bb8317c4",
+      "result_id": "63f01093-712f-441c-962e-f564c9c392d4"
+    },
+    {
+      "claim_id": "ecb32eca-a57c-447f-a956-e1d3c20194cd",
+      "result_id": "63f01093-712f-441c-962e-f564c9c392d4"
+    },
+    {
+      "claim_id": "d86436cc-c9b6-4cb7-b0b5-64234818868f",
+      "result_id": "63f01093-712f-441c-962e-f564c9c392d4"
+    },
+    {
+      "claim_id": "66500081-54a4-4fa4-96a2-bf596603eeb0",
+      "result_id": "63f01093-712f-441c-962e-f564c9c392d4"
+    },
+    {
+      "claim_id": "8c7f9e21-c056-4312-818e-6e9baca641a8",
+      "result_id": "63f01093-712f-441c-962e-f564c9c392d4"
+    },
+    {
+      "claim_id": "48383213-a253-4c9b-92f9-d4f1894825ce",
+      "result_id": "63f01093-712f-441c-962e-f564c9c392d4"
+    },
+    {
+      "claim_id": "bf3df574-b44a-4d9c-9ce0-5b37747c12da",
+      "result_id": "63f01093-712f-441c-962e-f564c9c392d4"
+    },
+    {
+      "claim_id": "e7a5d2db-0f0a-46fd-81db-5844b84fbb15",
+      "result_id": "63f01093-712f-441c-962e-f564c9c392d4"
+    },
+    {
+      "claim_id": "7453f274-d59f-41ba-8059-78d4d4ae7ed1",
+      "result_id": "7488dd04-9d8d-4713-8c54-133fe51f7883"
+    },
+    {
+      "claim_id": "5d195f1e-cd18-4edc-af5c-8b00031c3c7a",
+      "result_id": "7488dd04-9d8d-4713-8c54-133fe51f7883"
+    },
+    {
+      "claim_id": "b7a19bc1-5138-443b-a600-1a6eb58af16f",
+      "result_id": "7488dd04-9d8d-4713-8c54-133fe51f7883"
+    },
+    {
+      "claim_id": "3f69850b-856d-4e73-9656-db36154dddec",
+      "result_id": "7488dd04-9d8d-4713-8c54-133fe51f7883"
+    },
+    {
+      "claim_id": "ab2b421b-29da-4680-b480-3877e8d88f96",
+      "result_id": "6d62b4cf-590c-49c0-a885-7dd1db280d69"
+    },
+    {
+      "claim_id": "fbd54fa8-6969-426f-abc1-2c8b919ca449",
+      "result_id": "6d62b4cf-590c-49c0-a885-7dd1db280d69"
+    },
+    {
+      "claim_id": "b78a7de2-e5f9-4fbe-a79b-99f2b9a72101",
+      "result_id": "6d62b4cf-590c-49c0-a885-7dd1db280d69"
+    },
+    {
+      "claim_id": "6e042970-ab73-42ea-bb92-8768c02ffc1e",
+      "result_id": "6d62b4cf-590c-49c0-a885-7dd1db280d69"
+    },
+    {
+      "claim_id": "a06de11c-59bb-43c1-b66b-81bab1ef97db",
+      "result_id": "facd786e-7912-44f6-9b69-102e90bc30a8"
+    },
+    {
+      "claim_id": "b83372b3-7067-4dcc-8868-4882ce2b3461",
+      "result_id": "facd786e-7912-44f6-9b69-102e90bc30a8"
+    },
+    {
+      "claim_id": "be277b57-b85b-436a-8902-b7a18d35c458",
+      "result_id": "facd786e-7912-44f6-9b69-102e90bc30a8"
+    },
+    {
+      "claim_id": "a252e9bc-1c23-44f8-8ed0-7dd23bb1256f",
+      "result_id": "920b37d6-ceb7-4698-b060-8075ee6edce8"
+    },
+    {
+      "claim_id": "e44a3b2f-243b-4f80-aee6-c3edb2cfc554",
+      "result_id": "920b37d6-ceb7-4698-b060-8075ee6edce8"
+    },
+    {
+      "claim_id": "a535ace2-fb5e-45ed-99cd-2d258f613bb9",
+      "result_id": "920b37d6-ceb7-4698-b060-8075ee6edce8"
+    },
+    {
+      "claim_id": "0f1d5306-bbe8-45b0-b226-6b46e04b3212",
+      "result_id": "48859fa4-3955-4cd3-93c7-fd7bb2911f05"
+    },
+    {
+      "claim_id": "432ccaf5-edeb-4b2d-9525-275af66056b0",
+      "result_id": "48859fa4-3955-4cd3-93c7-fd7bb2911f05"
+    },
+    {
+      "claim_id": "87f193ab-6709-4c51-9a0a-ad1c165b63ce",
+      "result_id": "48859fa4-3955-4cd3-93c7-fd7bb2911f05"
+    },
+    {
+      "claim_id": "585465d1-d078-45f2-8f7e-7dd35eba5fe8",
+      "result_id": "48859fa4-3955-4cd3-93c7-fd7bb2911f05"
+    },
+    {
+      "claim_id": "e19cc5cb-3f05-4b02-a829-0750e315b391",
+      "result_id": "48859fa4-3955-4cd3-93c7-fd7bb2911f05"
+    },
+    {
+      "claim_id": "ecfddcda-d4fb-451e-afaf-b9bb35de814c",
+      "result_id": "48859fa4-3955-4cd3-93c7-fd7bb2911f05"
+    },
+    {
+      "claim_id": "7dbc64a5-a9e8-42c8-82cb-cb96739ae44e",
+      "result_id": "48859fa4-3955-4cd3-93c7-fd7bb2911f05"
+    },
+    {
+      "claim_id": "0c816549-b2a7-42c1-8cf5-3f4945559c28",
+      "result_id": "48859fa4-3955-4cd3-93c7-fd7bb2911f05"
+    },
+    {
+      "claim_id": "f4dcbeb2-841c-4197-b016-22ebe145b217",
+      "result_id": "48859fa4-3955-4cd3-93c7-fd7bb2911f05"
+    },
+    {
+      "claim_id": "337a5aec-1b37-4337-8323-5c1b7ed09466",
+      "result_id": "1f0164b0-16a3-42ee-8d95-a076bac8245f"
+    },
+    {
+      "claim_id": "ac27f188-ffc0-49bd-9048-4ecc3e6430a8",
+      "result_id": "1f0164b0-16a3-42ee-8d95-a076bac8245f"
+    },
+    {
+      "claim_id": "cc29193f-bddc-4b55-af18-ccc11a562fba",
+      "result_id": "1f0164b0-16a3-42ee-8d95-a076bac8245f"
+    },
+    {
+      "claim_id": "649f67c8-2539-4ca9-abb9-bbf55ced6251",
+      "result_id": "1f0164b0-16a3-42ee-8d95-a076bac8245f"
+    },
+    {
+      "claim_id": "97953d67-b21e-4856-9c7e-02bed0f12502",
+      "result_id": "1f0164b0-16a3-42ee-8d95-a076bac8245f"
+    },
+    {
+      "claim_id": "639a6d80-00f5-4bcb-9392-8e4d7a00b40b",
+      "result_id": "1f0164b0-16a3-42ee-8d95-a076bac8245f"
+    },
+    {
+      "claim_id": "2e59f873-6dbc-40dd-abdf-d18af80f99ec",
+      "result_id": "1f0164b0-16a3-42ee-8d95-a076bac8245f"
+    },
+    {
+      "claim_id": "2e3b9571-3416-4625-bee0-fa49123d0f2c",
+      "result_id": "bdd2cd75-dde0-4e66-a224-020324293fcc"
+    },
+    {
+      "claim_id": "253177c2-67c9-41e2-b794-a547fd0ab5af",
+      "result_id": "2655c1ea-2acc-47b1-9293-cd32be13dee5"
+    },
+    {
+      "claim_id": "30d87b98-c702-47a3-8cc6-54bf2f8a23e1",
+      "result_id": "2655c1ea-2acc-47b1-9293-cd32be13dee5"
+    },
+    {
+      "claim_id": "f1616acb-f8a2-4ec5-8dc2-19c70995fef7",
+      "result_id": "2655c1ea-2acc-47b1-9293-cd32be13dee5"
+    },
+    {
+      "claim_id": "a31c4031-93d1-47b7-b5e8-3891ba060a74",
+      "result_id": "2655c1ea-2acc-47b1-9293-cd32be13dee5"
+    },
+    {
+      "claim_id": "a5480e70-2a92-47d6-b530-368497afa889",
+      "result_id": "2655c1ea-2acc-47b1-9293-cd32be13dee5"
+    },
+    {
+      "claim_id": "4bd7f967-fd91-4d2c-a7d7-5f35f0f00bf3",
+      "result_id": "2655c1ea-2acc-47b1-9293-cd32be13dee5"
+    },
+    {
+      "claim_id": "deceb825-1c5d-4f07-a695-dba81f7e7f4d",
+      "result_id": "2655c1ea-2acc-47b1-9293-cd32be13dee5"
+    },
+    {
+      "claim_id": "a563f0dc-3980-4555-95f3-af7ce1266c21",
+      "result_id": "2655c1ea-2acc-47b1-9293-cd32be13dee5"
+    },
+    {
+      "claim_id": "288359c6-d7f2-4446-9e1d-cd2f01ed6b90",
+      "result_id": "2655c1ea-2acc-47b1-9293-cd32be13dee5"
+    },
+    {
+      "claim_id": "01de3516-5f14-464c-a3fd-8ae466d6832f",
+      "result_id": "2655c1ea-2acc-47b1-9293-cd32be13dee5"
+    }
+  ],
+  "comparisons": []
+}

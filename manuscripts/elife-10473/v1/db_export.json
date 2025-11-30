@@ -1,0 +1,1430 @@
+{
+  "submission": {
+    "id": "ec1a58c4-1eb1-4442-9196-77a18513a526",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:45:27.617731Z",
+    "updated_at": "2025-11-29T23:45:27.617731Z"
+  },
+  "content": [
+    {
+      "id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "submission_id": "ec1a58c4-1eb1-4442-9196-77a18513a526",
+      "content_type": "manuscript",
+      "content_text": "# Dynamic NF-\u03baB and E2F interactions control the priority and timing of inflammatory signalling and cell proliferation\n\n## Authors\n\n- John M Ankers<sup>1</sup>\n- Raheela Awais<sup>1</sup>\n- Nicholas A Jones<sup>2</sup>\n- James Boyd<sup>2</sup>\n- Sheila Ryan<sup>1</sup>\n- Antony D Adamson<sup>2</sup>\n- Claire V Harper<sup>2</sup>\n- Lloyd Bridge<sup>2</sup>\n- David G Spiller<sup>2</sup>\n- Dean A Jackson<sup>2</sup> ([ORCID: 0000-0002-1570-5287](https://orcid.org/0000-0002-1570-5287))\n- Pawel Paszek<sup>2</sup>\n- Violaine S\u00e9e<sup>1</sup>\n- Michael RH White<sup>2</sup> ([ORCID: 0000-0002-3617-3232](https://orcid.org/0000-0002-3617-3232)) \u2020\n\n### Affiliations\n\n1. Centre for Cell Imaging Institute of Integrative Biology Liverpool United Kingdom\n2. Systems Microscopy Centre Faculty of Life Sciences Manchester United Kingdom\n3. Department of Mathematics University of Swansea Swansea United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nDynamic cellular systems reprogram gene expression to ensure appropriate cellular fate responses to specific extracellular cues. Here we demonstrate that the dynamics of Nuclear Factor kappa B (NF-\u03baB) signalling and the cell cycle are prioritised differently depending on the timing of an inflammatory signal. Using iterative experimental and computational analyses, we show physical and functional interactions between NF-\u03baB and the E2 Factor 1 (E2F-1) and E2 Factor 4 (E2F-4) cell cycle regulators. These interactions modulate the NF-\u03baB response. In S-phase, the NF-\u03baB response was delayed or repressed, while cell cycle progression was unimpeded. By contrast, activation of NF-\u03baB at the G1/S boundary resulted in a longer cell cycle and more synchronous initial NF-\u03baB responses between cells. These data identify new mechanisms by which the cellular response to stress is differentially controlled at different stages of the cell cycle.\n\n## Introduction\n\nOne of the most important functions in a cell is the accurate interpretation of the information encoded in extracellular signals leading to context-dependent control of cell fate. This is achieved via complex and dynamic signal transduction networks, through which gene expression is re-programmed in response to specific environmental cues (Barab\u00e1si et al., 2011). Many signalling systems are subject to temporal changes, involving dynamic alterations to the states of their constituent genes and proteins, with time scales ranging from seconds (Calcium signalling [Berridge, 1990; Schmidt et al., 2001]), to hours (DNA damage response [Lahav et al., 2004], inflammatory response [Ashall et al., 2009]), to days (circadian clock [Welsh et al., 2004], cell cycle [Sakaue-Sawano et al., 2008]). Although previous studies have indicated interactions between proteins associated with different dynamical systems (Wilkins and Kummerfeld, 2008; Bieler et al., 2014; Feillet et al., 2014), how and when signalling systems are dynamically integrated to determine important cell fate decisions is not well understood.\n\nNuclear Factor kappa B (NF-\u03baB) is an important signalling system, implicated in many diseases including autoimmune diseases and cancer (Grivennikov et al., 2010). Inflammatory cues such as Tumour Necrosis Factor alpha (TNF\u03b1) can trigger the nuclear translocation of the NF-\u03baB RelA subunit and activation of target gene transcription (Hayden and Ghosh, 2008). Nuclear NF-\u03baB activates feedback regulators, including the inhibitory kappa B alpha (I\u03baB\u03b1) and epsilon (I\u03baB\u03b5) inhibitors (Arenzana-Seisdedos et al., 1997; Kearns et al., 2006; Paszek et al., 2010), which bind and transport NF-\u03baB back into the cytoplasm. In response to TNF\u03b1, this system shows nuclear-cytoplasmic (N:C) oscillations in the localization of the NF-\u03baB complex associated with out-of-phase cycles of degradation and re-synthesis of I\u03baB proteins (Nelson et al., 2004; Ashall et al., 2009; Lee et al., 2009; Sung et al., 2009; Tay et al., 2010; Turner et al., 2010; Ruland, 2011; Hughey et al., 2015). Through systems biology and experimental approaches, the frequency of these oscillations has been proposed to be a key parameter that regulates the pattern of downstream gene expression (Ashall et al., 2009; Lee et al., 2014; Williams et al., 2014).\n\nNF-\u03baB signalling has also been suggested to have a role in controlling cell division through a number of different mechanisms (Perkins and Gilmore, 2006). Many NF-\u03baB family members have been characterised as oncoproteins (e.g. c-Rel and Bcl-3 [Hayden and Ghosh, 2008]). Also, a number of cell cycle control proteins have been shown to be NF-\u03baB transcriptional targets, including Cyclin D, (Guttridge et al., 1999; S\u00e9e et al., 2004) and p21, an inhibitor of Cyclin Dependent Kinase (CDK) activity (Hinata et al., 2003).\n\nAlthough interactions between NF-\u03baB and the cell cycle have been reported (Kundu et al., 1997; Phillips et al., 1999; Perkins and Gilmore, 2006); observing the dynamics of such interactions is challenging via traditional biochemical techniques, which often fail to capture the heterogeneity in a cellular population. Analysis of cell-to-cell heterogeneity has revealed novel regulatory mechanisms for diverse cellular processes (Pelkmans, 2012) and it has been suggested that this is a fundamental property of the NF-\u03baB response (Paszek et al., 2010).\n\nThe E2 Factor (E2F) proteins are differentially expressed during the cell cycle to control cell proliferation (Bertoli et al., 2013). They are a family of transcription factors that play a key role in the G1/S cell cycle checkpoint. Previous studies have provided preliminary evidence for physical interaction between NF-\u03baB and E2F proteins (Tanaka et al., 2002; Lim et al., 2007; Garber et al., 2012) In the current study, a combination of single cell imaging and mathematical modelling was applied to investigate reciprocal co-ordination of the NF-\u03baB response and cell proliferation driven by dynamic interactions between RelA and E2F proteins.\n\n## Results\n\n### The NF-\u03baB response depends on the cell cycle phase\n\nWe investigated the effect of cell cycle timing on the NF-\u03baB response in HeLa cervical cancer and SK-N-AS neuroblastoma cells. SK-N-AS cells showed repeated oscillations in response to TNF\u03b1 stimulation that were more damped than those seen in HeLa cells (see Appendix\u00a01\u2014figure 1 for longer time course data [Nelson et al., 2004; Ashall et al., 2009]). In previous studies it was observed that when SK-N-AS cells were treated with a saturating dose of TNF\u03b1 (10\u00a0ng/ml) the initial response of NF-\u03baB (i.e. immediate RelA nuclear translocation) was relatively synchronous between cells (Nelson et al., 2004; Ashall et al., 2009; Turner et al., 2010) (Figure 1A; Appendix\u00a01\u2014figure 1). However, these data showed a variation in timing and amplitude when cells were treated with a lower dose of 30\u00a0pg/ml TNF\u03b1, even though this was functionally close to a saturating dose that gave a strong population-level NF-\u03baB response (Turner et al., 2010) (Figure 1B). In common with treatment of SK-N-AS cells at 30\u00a0pg/ml, HeLa cells showed greater heterogeneity in their initial response at a saturating 10\u00a0ng/ml dose of TNF\u03b1, with some cells showing little or no response and others showing a variable delay (Nelson et al., 2002; 2004) (Figure 1C). This is in agreement with data showing heterogeneity of the initial response in other cell types (Tay et al., 2010; Zambrano et al., 2014). HeLa cells showed no significant translocation in response to 30\u00a0pg/ml TNF\u03b1 (Figure 1D), suggesting that these cell types have differential dynamic NF-\u03baB responses at varying TNF\u03b1 doses.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/10473/elife-10473-fig1-v1.jpg)\n\n**Figure 1.:** (A,B,C and D) The dynamics of RelA-dsRedxp following 10 ng/ml TNF\u03b1 treatment in transiently transfected SK-N-AS (A), or following 30 pg/ml TNF\u03b1 treatment in SK-N-AS, and 10 ng/ml TNF\u03b1 treatment in HeLa cells (C), and at 30 pg/ml for HeLa (D) cells (n=30 cells analysed per condition). (E) The localization of endogenous RelA in different cell cycle phases, observed by immunocytochemistry at 2\u2009hr (G1/S transition), 4\u2009hr (mid S-phase), post-release from double thymidine block and with 15\u2009min TNF\u03b1 treatment. (F and G) The dynamics of RelA-dsRedxp in transiently transfected HeLa cells synchronized by a double thymidine block, following 10 ng/ml TNF\u03b1 treatment at G1/S (F), or passing through S-phase (G) (n=20 cells analysed per condition). (H) Western blot of Ser536phopho-RelA (p-RelA), I\u03baB\u03b1, and cyclophilin-A (cyclo-A) levels in synchronized HeLa cells harvested at 1\u2009hr time intervals over the G1/S transition following 15\u2009min treatment with TNF\u03b1. Also shown are asynchronous, non-stimulated (ASY NST) and asynchronous, stimulated (ASY ST) controls, harvested at t=0.\n\nWe hypothesised that this cell-to-cell heterogeneity in response might be a consequence of cell cycle phase. To test this hypothesis, we investigated the role of cell cycle in both the HeLa and SK-N-AS cells, as these show different dynamic responses to TNF\u03b1 that are typical of the profile of a wide range of cell lines (Tay et al., 2010; Turner et al., 2010; Zambrano et al., 2014; Hughey et al., 2015). Initially, HeLa cells were treated with 10\u00a0ng/ml TNF\u03b1 at various stages of the cell cycle (Figure 1E\u2013H), as they could be easily synchronized at late G1 by a double thymidine block (see Appendix\u00a01\u2014figure 2). When endogenous RelA was examined using immunocytochemistry, HeLa cells treated with 10\u00a0ng/ml TNF\u03b1 in S-phase displayed a reduced nuclear localization, compared to those treated in late G1 (Figure 1E). These results were confirmed using time-lapse imaging of synchronised HeLa cells transiently transfected with RelA-DsRedxp. Cells treated in late G1 showed a strong synchronous translocation of RelA, whereas cells treated in S-phase showed reduced RelA translocation (Figure 1F,G). These cell cycle-dependent differences following TNF\u03b1 treatment of synchronized cell populations were supported by alterations in the extent of I\u03baB\u03b1 degradation and RelA Serine536 phosphorylation at different stages of the cell cycle as measured by western blot (Figure 1H).\n\nTo further investigate the effect of cell cycle on the NF-\u03baB response, unsynchronized populations of HeLa and SK-N-AS cells were followed by time-lapse imaging through successive cell divisions. 30\u2009hr after the start of this time-course, HeLa cells were stimulated with 10\u00a0ng/ml TNF\u03b1. Cells were assigned to different cell cycle phases based upon their mitosis-to-mitosis and mitosis-to-treatment timings (Figure 2A and B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/10473/elife-10473-fig2-v1.jpg)\n\n**Figure 2.:** (A) Selected images from time-lapse imaging of RelA-dsRedxp transiently expressing Hela cells treated with 10\u00a0ng/ml TNF\u03b1. (B) Virtual synchronization of HeLa cells treated with 10\u00a0ng/ml TNF\u03b1. Cells were imaged through two successive divisions (M) allowing correlation of cell cycle timing of TNF\u03b1 treatment (parameter 1) to RelA dynamics (parameters 2, 3 and 4) and cell cycle duration (parameters 1 plus 5). (C) Representative cells of RelA-dsRedxp dynamics following TNF\u03b1 treatment in asynchronous cells, then virtually synchronized into G1 (n=115), G1/S (n=32), S (n=52) and G2 (n=38) phases.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10473/elife-10473-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Time series for FUCCI expression in single representative HeLa and SK-N-AS cells. White arrows mark cells before and after the fluorescence levels were detectable. (B) Analysis of cells in (A), showing the G1/S crossing point in fluorescence levels from reporters of SCF (SKP2) (Orange) and APC (Green) E3 ubiquitin ligase activity. (C) Analysis of the G1/S crossing point and cell cycle duration in populations of HeLa and SK-N-AS cells transfected with FUCCI vectors (n \u2265 30 cells for all conditions).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/10473/elife-10473-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Analysis of dynamics of initial RelA-dsRedxp translocation with respect to cell cycle phase, using virtual synchronization in HeLa cells. Data were analyzed using nonparametric Anova analysis with Dunn correction for multiple comparisons. Red lines indicate mean normalised amplitude of NF-\u03baB nuclear translocation for different cell cycle phases, and the population average (dotted line). (B) Analysis of nuclear RelA occupancy assessed in non-synchronized cells expressing RelA-dsRedxp following treatment with 10\u00a0ng/ml TNF\u03b1. Statistical analysis showed significant difference between cell cycle phases with respect to distribution of amplitude of the response (Anova analysis with Dunn correction for multiple comparisons).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/10473/elife-10473-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Correlation of estimated cell cycle timing with RelA-dsRedxp N:C peak amplitude following 30 pg/ml TNF\u03b1 treatment (n=138). (B) Analysis of dynamics of initial RelA-dsRedxp translocation with respect to cell cycle phase. Statistical analysis showed a difference between G1 and S with respect to distribution of amplitude of the response (Anova analysis with Dunn correction for multiple comparisons).\n\nTo ensure the accuracy of the inferred cell cycle stage in these experiments, the cycle timing of cells at the point of TNF\u03b1 treatment was calibrated through control experiments using Fluorescent Ubiquitin-based Cell Cycle Indicators (FUCCI) in both HeLa and SK-N-AS cells (Figure 2\u2014figure supplement 1A\u2013B). The crossing point of Red and Green FUCCI reporters was determined, and defined as the G1/S checkpoint. The average and distribution of the cell cycle duration in populations of HeLa and SK-N-AS cells was also measured (Figure 2\u2014figure supplement 1C).\n\nThe resulting data suggested that HeLa cells treated with TNF\u03b1 in late G1 (inferred to be G1/S) showed an increase in the translocation amplitude compared to the unsynchronized population average (Figure 2C). By contrast, cells treated in S-phase appeared to show a damped or delayed response (Figure 2C), with markedly reduced amplitude of nuclear NF-\u03baB translocation. In G2 phase the NF-\u03baB response appeared to be restored. Analysis of the complete data set confirmed that there was statistically significant higher nuclear translocation amplitude in HeLa cells at G1/S and significantly reduced amplitude in S-phase, compared to G1 and G2 (Figure 2\u2014figure supplement 2).\n\nA smaller data set from SK-N-AS cells treated with 30 pg/ml TNF\u03b1, showed once again a statistically reduced translocation in S-phase compared to G1-phase. Visually the data are consistent with increased translocation in late G1 and a restored level of translocation in G2- compared to S-phase. However more cells would be required for a statistical analysis of possible differences between these cell cycle phases. (Figure 2\u2014figure supplement 3).\n\n### The effect of NF-\u03baB signalling on cell cycle timing\n\nWe also measured the effect of TNF\u03b1 treatment on HeLa cell cycle duration (Figure 3). It was found that mean cell cycle duration for cells treated with TNF\u03b1 showed a small, but statistically significant increase of 1.9\u2009hr (~10%) compared to untreated cells, with the variability in the total population increasing by ~2-fold (Figure 3). Within this TNF\u03b1-treated population, cells treated in late G1 were more susceptible to cell cycle elongation with a cell cycle duration that was ~1/3 longer than the untreated population average. TNF\u03b1 treatment in S-phase had no statistically significant effect on the timing of mitosis. These data suggest a potential direct or indirect role for the NF-\u03baB system in controlling cell cycle duration through an unknown mechanism at the G1/S phase of the cell cycle.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/10473/elife-10473-fig3-v1.jpg)\n\n**Figure 3.:** Analysis of the timing and variability of mitosis (parameter 1 plus 5 from Figure 2B) following 10 ng/ml TNF\u03b1 treatment of asynchronous untransfected HeLa cells, compared to subsets of those cells stimulated at late G1- or S-phase.\u00a0Mean durations were analysed using nonparametric Anova analysis with Dunn correction for multiple comparisons. Variability in the data was analysed using Levene\u2019s test for equality of variance.\n\n### E2F-1 levels control the dynamics of the NF-\u03baB response\n\nThe mechanism for alteration of NF-\u03baB responses between the late G1- and S-phases of the cell cycle was sought. Previous studies had suggested that E2-Factor-1 (E2F-1) could physically associate with RelA, and/or its major dimer partner p50 (Kundu et al., 1997; Tanaka et al., 2002; Lim et al., 2007). E2F-1 is the key transcriptional regulator of the cell cycle transition between G1- and S-phase (Tsantoulis and Gorgoulis, 2005), where its expression is highest. In the presence of ectopically-expressed EGFP-E2F-1, we observed a reduction in the activity of a NF-\u03baB-regulated luciferase reporter (Figure 4A). Moreover, the ability of NF-\u03baB to induce endogenous mRNA levels of I\u03baB\u03b1 and I\u03baB\u03b5 was impaired in cells co-expressing EGFP-E2F-1 and RelA-DsRedxp, compared to cells expressing RelA-DsRedxp alone (Figure 4B). E2F-1 target gene transcription was also impaired by RelA expression, as indicated by a reduction in the activity of a Cyclin E luciferase reporter (Figure 4C) and in the mRNA level of E2F-1 itself (Figure 4D). These data support the reciprocal and coordinated control of transcription by E2F-1 and NF-\u03baB.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/10473/elife-10473-fig4-v1.jpg)\n\n**Figure 4.:** (A) NF-\u03baB-dependent transcription was assessed by luciferase reporter assay (NF-luc), in SK-N-AS cells (n=3, +/- s.d) expressing EGFP-E2F-1, RelA-dsRedxp or both.\u00a0(B) I\u03baB\u03b1 and I\u03baB\u03b5 mRNA levels in SK-N-AS cells (n=3, +/- s.d) following transient expression of EGFP-E2F-1, RelA-DsRedxp or both. (C) E2F-1-dependent transcription as assessed by luciferase reporter assay (CyclinE-luc), in SK-N-AS cells (n=3, +/- s.d) expressing EGFP-E2F-1, RelA-dsRedxp or both. (D) E2F-1 mRNA levels in SK-N-AS cells (n=3, +/- s.d) transiently transfected with RelA-dsRedxp. (E) Representative SK-N-AS cells transiently expressing EGFP-E2F-1 (green), RelA-dsRedxp (red), both fluorescent fusion proteins at different levels, or EGFP-E2F-1, RelA-dsRedxp and I\u03baB\u03b1-AmCyan (blue).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10473/elife-10473-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Time-lapse confocal microscopy of representative SK-N-AS cells transiently transfected with RelA-dsRedxp and EGFP-E2F-1.\u00a0(B) Trajectories of three representative cells expressing different levels of EGFP-E2F-1. (C) Correlation between RelA-dsRedxp T\u00bd nuclear occupancy (NO) time and EGFP-E2F-1 T\u00bd nuclear degradation time, based on data in (A). (D) Recapitulation of the observed dynamics with an in silico\u00a0model for physical interaction between RelA (NFkB) and E2F-1 (E2F) (E) Correlation between NF-\u03baB nuclear occupancy time and nuclear E2F-1 degradation time, based on data in (D) (n= 30 cells).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/10473/elife-10473-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Representative HeLa cells transiently transfected with combinations of RelA and E2F-1 fluorescent fusion proteins.\u00a0(B) Time-lapse confocal microscopy of representative HeLa cells transiently transfected with RelA-dsRedxp and EGFP-E2F-1. (C) Trajectories of three representative cells expressing different levels of EGFP-E2F-1. (D) Correlation between RelA-dsRedxp T\u00bd nuclear occupancy (NO) time and EGFP-E2F-1 T\u00bd nuclear degradation time, based on data in (C) (n=20).\n\nIn transient transfection experiments, a predominantly cytoplasmic localization of RelA-DsRedxp was observed when expressed alone, whereas in cells co-expressing EGFP-E2F-1, both proteins were predominantly nuclear (Figure 4E). In addition we also found that the steady-state cytoplasmic localisation of RelA was restored in cells transiently expressing I\u03baB\u03b1-AmCyan in addition to EGFP-E2F-1 and RelA-dsRedxp. These data suggest the hypothesis that I\u03baB\u03b1 and E2F-1 may compete for the same binding site on RelA, with I\u03baB\u03b1 perhaps having the higher affinity. Time-series experiments in both SK-N-AS and HeLa cells showed that a decrease in EGFP-E2F-1 expression over time was associated with a re-localization of RelA-DsRedxp from the nucleus to the cytoplasm (for SK-N-AS cells, Figure 4\u2014figure supplement 1A\u2013B; for HeLa cells, Figure 4\u2014figure supplement 2A\u2013C). Quantitative analysis showed a strong correlation between the EGFP-E2F-1 decay half-life and the delay in RelA-DsRedxp translocation back into the cytoplasm (for SK-N-AS cells, Figure 4\u2014figure supplement 1C; for HeLa cells, Figure 4\u2014figure supplement 2D). Initial mathematical modelling of this interacting system (for details of the model see Appendix Section B) was able to recapitulate the main features of the observed correlation between E2F-1 levels and RelA localization in silico (Figure 4\u2014figure supplement 1D\u2013E).\n\n### Physical and functional interaction between RelA and E2F-1\n\nThese data supported a direct interaction between E2F-1 and RelA. Therefore, the physical interactions between E2F-1 and NF-\u03baB proteins in cells were investigated. Co-localization of E2F-1 and RelA had previously been shown through fluorescence imaging experiments (see Figure 5A). A clear physical interaction between fluorescently labelled E2F-1 and RelA in the nucleus of living cells was evident using F\u00f6rster Resonance Energy Transfer (FRET), in conjunction with acceptor photobleaching as a qualitative indicator of intermolecular interaction (Figure 5D), and Fluorescence Cross-Correlation Spectroscopy (FCCS) (Figure 5C).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/10473/elife-10473-fig5-v1.jpg)\n\n**Figure 5.:** (A) Representative cell demonstrating co-localisation of E2F1-EGFP and RelA-dsRedxp upon transient transfection. (B) Co-Immunoprecipitation of E2F-1 with RelA pull down in HeLa cells synchronized in late G1 (HeLa cells used for this experiment due to their greater ease of synchronization). (C) FCCS assay between transiently transfected EGFP-E2F-1 and RelA-dsRedxp (red line) or empty-dsRedxp (blue line) fluorescent fusion proteins in single live SK-N-AS cells (+/- s.e.m based on 10 measurements from 10+ cells per condition). (D) Qualitative FRET assay between transiently transfected ECFP-E2F-1 and RelA-EYFP fluorescent fusion proteins in live SK-N-AS cells. First negative control between IkB-ECFP and EYFP-E2F1, and second negative control between free ECFP and EYFP fluorophores expressed in an SK-N-AS cell (shown are average ECFP and EYFP signals (+/- s.e.m based on 20 cells per condition normalised to pre-bleach intensity. p.b. indicates the time point at which photo-bleaching occurred).\n\nIn order to further support the interaction between the endogenous proteins, we used co-immunoprecipitation (Co-IP) of endogenous E2F-1 and RelA in HeLa cells that had been synchronized in late G1, when E2F-1 levels were at their peak (Figure 5B). These data confirmed a physical interaction between E2F-1 and RelA, in agreement with previous studies (Tanaka et al., 2002; Lim et al., 2007; Garber et al., 2012). We were not able to observe a positive co-IP in asynchronous cells (see Appendix\u00a01\u2014figure 4),\u00a0suggesting that this interaction was only detectable in HeLa cells at G1/S when E2F-1 was at its highest level. Considered together, all of these different measurements support a significant interaction between these proteins. These data suggest the hypothesis that the interaction between RelA and E2F-1 in the nucleus of G1/S cells, which have been subjected to an inflammatory stimulus, may coordinate differential regulation of NF-\u03baB target gene transcription.\n\n### In-silico modelling and prediction of NF-\u03baB interaction with E2F-4\n\nIn order to understand and further investigate the dynamic behaviour of TNF-\u03b1-mediated NF-\u03baB activation in the presence of E2F-1 (at the G1-S transition), an ordinary differential equation-based mathematical model of the NF-\u03baB system (Ashall et al., 2009) was extended to include the interaction with E2F-1 (see Appendix Section B). In this model, E2F-1 was assumed to compete with I\u03baB\u03b1 for binding to free NF-\u03baB, but had no effect on the localization of RelA bound to I\u03baB\u03b1. Simulations (of nuclear NF-\u03baB levels over time from transfection experiments) using this model, supported the hypothesis that E2F-1 might temporally control the duration of RelA nuclear occupancy through a combination of binding to RelA in the nucleus and inhibition of RelA-dependent I\u03baB\u03b1 transcription (as suggested by data shown in Figure 4). E2F-1 degradation could allow NF-\u03baB to re-activate I\u03baB\u03b1, which in turn could restore RelA to a cytoplasmic localization.\n\nWhen the initial mathematical model was used to simulate the effect of E2F-1 on the responsiveness of NF-\u03baB to TNF\u03b1, the in silico simulations predicted that TNF\u03b1 would induce immediate oscillations of free RelA (Figure 6A). In contrast, time-lapse live cell imaging of SK-N-AS cells stimulated with TNF\u03b1, showed that in cells expressing RelA-DsRedxp and EGFP-E2F-1 (which initially had nuclear RelA-DsRedxp), there was a delay before the onset of oscillations (Figure 6B and D). The length of this refractory period was on average ~4-fold longer than the peak1:peak2 timing in cells expressing RelA-DsRedxp alone (Figure 6B and [Ashall et al., 2009]). Altered model structures were investigated in order to resolve this discrepancy between experimental data and model predictions. One of the simplest altered models predicted that an E2F-1 target gene might stabilize I\u03baB\u03b1 (keeping NF-\u03baB in the cytoplasm during S-phase [Figure 6C]). In support of this prediction, TNF\u03b1 treatment of SK-N-AS cell populations transiently expressing EGFP-E2F-1 and RelA-DsRedxp led to reduced levels of phospho-S536-RelA and stabilized levels of I\u03baB\u03b1 (Figure 6E). Simulations of the response to TNF\u03b1 from the revised model were consistent with the observed delay in oscillations in single cells expressing ectopic EGFP-E2F-1 (Figure 6B and D) and also with the inhibition or delay in the response during S-phase, but not during G1 or G2 (Figure 2C). Candidates for the E2F-1-regulated component(s) predicted by the revised model were therefore sought.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/10473/elife-10473-fig6-v1.jpg)\n\n**Figure 6.:** (A) Model simulations of RelA-dsRedxp dynamics when co-expressed with EGFP-E2F-1 in cells treated with TNF\u03b1.\u00a0(B) Dynamics analysed in representative SK-N-AS cells treated with 10\u00a0ng/ml TNF\u03b1 expressing RelA-dsRedxp and EGFP-E2F-1 (C) Model simulation of experimental conditions in B, incorporating interactions between NF-\u03baB complexes and a putative E2F-1-induced target protein, subsequently proposed as E2F-4. (D) Analysis of average timing to second peak of NF-\u03baB translocation following TNF\u03b1 treatment in SK-N-AS cells expressing RelA-dsRedxp alone or with EGFP-E2F-1 (n=20 cells per condition, error bars show s.d.) (E) Assessment of the extent of RelA Ser536 phosphorylation (p-RelA), E2F-4 and I\u03baB\u03b1 stability by western blot compared to cyclophilin A (cyclo A) amounts in SK-N-AS cells either untreated or treated with 10\u00a0ng/ml TNF\u03b1 and expressing combinations of either untagged or fluorescent RelA-dsRedxp and EGFP-E2F-1. (F) Western blot of E2F-1 and E2F-4 in synchronized HeLa cells, where t=0 is late G1-phase.\n\nPrevious studies had shown strong structural homology between E2F-1 and other E2F family members (Tsantoulis and Gorgoulis, 2005). E2F-4 is a transcriptional target of E2F-1 (Xu et al., 2007) and can be cytoplasmic during S-phase (Lindeman et al., 1997). E2F-4 (together with E2F family members) was therefore considered as a prospective candidate. We confirmed that ectopic expression of E2F-1 in cells resulted in increased E2F-4 expression, consistent with E2F-4 being a transcriptional target of E2F-1 in these cells (Figure 6E). The profile of E2F-4 expression was found to be delayed relative to that of E2F-1 in the cell cycle, peaking in S-phase in synchronized HeLa cells (Figure 6F).\n\n### E2F-4 and RelA physically and functionally interact\n\nTo further confirm the role of E2F-4 in the suppression of RelA translocation following TNF\u03b1 treatment during S-phase, the physical and functional interactions between E2F-4 and RelA proteins in cells were investigated. When transiently expressed in either HeLa or SK-N-AS cells, both proteins were located in the cytoplasm (Figure 7A). Following TNF\u03b1 treatment, the timing of RelA-DsRedxp translocation to the nucleus in both cell lines was delayed relative to the level of the fluorescent signal from EGFP-E2F-4 (Figure 7B for dynamic profiles and Figure 7\u2014figure supplement 1 for analysis). The physical interaction of endogenous E2F-4 and RelA proteins was supported by Co-IP from HeLa cells synchronized in S-phase (Figure 7C). No pull-down was observed in cells synchronised in late G1 phase (see Appendix\u00a01\u2014figure 4). This is the cell cycle stage when E2F-1, but not E2F-4 is at its peak expression level. This interaction was confirmed by acceptor photo bleaching FRET and FCCS data obtained from cells transiently expressing ECFP-E2F-4 and RelA-EYFP (for FRET) or RelA-dsRedxp and EGFP-E2F-4 (for FCCS) fluorescent fusion proteins (Figure 7D and E respectively). These data suggested that members of the E2F family have differing, but functionally linked, roles in the regulation of NF-\u03baB dynamics. The observed dynamics could be represented by a mathematical model that recapitulates data (Figure 6C) from live cell imaging of the transient expression of the appropriate fluorescent fusion proteins (Figure 5A and 7A, for details of modelling see Appendix Section B).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/10473/elife-10473-fig7-v1.jpg)\n\n**Figure 7.:** (A) Single cell trajectories from groups of HeLa cells expressing RelA-dsRedxp and different levels of EGFP-E2F-4 showing the dynamics of RelA-dsRedxp after 10\u00a0ng/ml TNF\u03b1 treatment (n=60 cells).\u00a0(B) HeLa cells synchronized in S-phase, co-immunoprecipitated with anti-RelA antibody and probed for E2F-4. Also shown are IgG negative controls and whole cell lysate unsynchronized positive control (ctrl). (C) Representative SK-N-AS cells transiently transfected with RelA-dsRedxp and EGFP-E2F-4. (D) FRET assay in live SK-N-AS cells expressing ECFP-E2F-4 and RelA-EYFP fluorescent fusion proteins (shown are average ECFP and EYFP signals (+/- s.e.m) based on 20 cells per condition normalised to pre-bleach intensity. p.b. indicates the point of photo-bleaching). (E) FCCS assay in cells transiently expressing EGFP-E2F-4 and RelA-dsRedxp (red line) or dsRedxp (blue line) fluorescent proteins in single live SK-N-AS cells (+/- s.e.m based on 10 measurements in each of 10+ cells per condition).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10473/elife-10473-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** The effects of different EGFP-E2F-4 expression levels on the amplitude and timing of the first peak of RelA translocation in HeLa and SK-N-AS cells treated with 10\u00a0ng/ml and 30\u00a0pg/ml TNF\u03b1, respectively.\u00a0These data indicate how ectopically expressed EGFP-E2F-4 can inhibit the translocation of RelA-dsRedxp in response to TNF\u03b1.\n\n### Analysis of the effect of the cell cycle on the NF-\u03baB response at more physiological expression levels of E2F-1\n\nThe majority of experiments described above utilised transient expression of the E2F and RelA fusion proteins driven from a CMV promoter in a plasmid vector. Previous data had suggested that RelA fusion proteins expressed in a knock-in mouse are functional and fusion protein expression does not perturb the system (De Lorenzi et al., 2009). Our transcription analyses (Figure 4) suggested that E2F-1\u2009N- and C-terminal fusion proteins also retained functional activity. However, as E2F proteins are normally expressed at specific stages of the cell cycle, ectopic expression from a strong constitutive promoter could give rise to out-of-context expression at inappropriate stages of the cell cycle (i.e. for E2F-1, stages other than late G1 and early S-phase). Therefore, expression of fusion proteins from these vectors might potentially show interactions that are not physiologically relevant. An additional complication in these experiments was that exogenous expression of E2F-1 (but not E2F-4) fluorescent fusion protein from a CMV promoter caused apoptosis when transfected alone. Interestingly this effect was rescued by co-expression with RelA.\n\nTo further validate the functional link between the E2F and RelA proteins, we sought to achieve more physiologically relevant levels and timing of the fluorescent fusion protein expression. To this end, stable HeLa cell lines were generated, with integrated Bacterial Artificial Chromosomes expressing E2F-1-Venus and RelA-DsRedxp under the control of their natural human gene promotors and associated regulatory elements (see Appendix Section C). HeLa cells were chosen for this study based on their more consistent cell cycle timing (between cells) compared to SK-N-AS cells (as shown in Figure 2\u2014figure supplement 1).\n\nStable cell lines were generated with a human E2F-1-Venus BAC construct, and showed the same pattern of synthesis and degradation of a transiently expressed FUCCI reporter for SCF (SKP-2) activity, indicating normal cell cycle progression (see Figure 8\u2014figure supplement 1).\u00a0All viable clones had relatively low expression of the E2F-1-Venus BAC, further suggesting that E2F-1 over-expression was detrimental to cell survival. Following the generation of these stable clones, a single clone was selected for the integration of a RelA-DsRedxp BAC into this cell line. This generated a dual stable clone of E2F-1-Venus and Rel-A-DsRedxp (termed C1-1). This clonal cell line showed a slight increase (~8%) in mean cell cycle length (with similar cell-to-cell variability) comparable with wild type HeLa (see Appendix\u00a01\u2014figure 7). Similar to wild type cells, TNF\u03b1 treatment in the C1-1 cell line increased the variability in cell cycle timing compared to that of resting cells.\n\nThe slight change in mean cell cycle duration (~20\u2009hr) in the dual BAC stable clonal cell line C1-1 was taken into account for inference of the dynamics of RelA-DsRedxp translocation at different cell cycle phases. The profile of E2F-1-Venus expression was used for assignment of the cell cycle stage at the time of\u00a0stimulation cells based upon the time of peak E2F-1-Venus expression (Figure 8\u2014figure supplement 2). This provided an alternative and faster method of virtual synchronisation to that used in Figure 2, allowing the assignment of G1, S and G2 phases to the data from the simulated BAC stable cells. The level of RelA translocation (Figure 8B)\u00a0was then quantified for cells from each cell cycle phase. In agreement with data from the transiently transfected HeLa and SK-N-AS cells (Figure 2, Figure 2\u2014figure supplements 2 and 3), the cells treated in late G1/S-phase showed higher amplitude RelA nuclear translocations,\u00a0whereas Cells treated in S-phase showed a statistically significant suppression\u00a0in S-phase RelA translocation\u00a0compared to cells in early G1- or G2-phases (Figure 8 and Figure 8\u2014figure supplement 3).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/10473/elife-10473-fig8-v1.jpg)\n\n**Figure 8.:** (A) Selected images from time-lapse experiment of dual BAC transfected HeLa stable clone 1-1 showing translocation of RelA-dsRedXP and E2F-1-Venus expression at different cell cycle phases. Cells were treated with 10\u00a0ng/ml TNF\u03b1. (B) Analysis of the dynamics of initial RelA-dsRedxp translocation in cells ordered at specific cell cycle times with respect to the peak of E2F-1 expression (n = 128). Data were analysed using nonparametric Anova analysis with Dunn correction for multiple comparisons. Red lines indicate mean normalised amplitude of NF-\u03baB nuclear translocation for different cell cycle phases, and the population average (dotted red line). Analysis of nuclear RelA occupancy was assessed in virtually synchronised C 1-1 cells, based on time from cell division and relative to peak E2F-1-Venus expression level. RelA-dsRedxp localization was visualized to allow quantification of translocation, following treatment with 10\u00a0ng/ml TNF\u03b1. The dotted black line shows the spline fitted level of E2F1 at different times and cell cycle stages (see also Figure 8\u2014figure supplement 1 below). Statistical analysis showed a difference between G1 vs S, and G2 vs S with respect to distribution of amplitude of the RelA translocation response. (C) RelA-dsRedxp dynamics following 10\u00a0ng/ml TNF\u03b1 treatment in asynchronous cells (left panel) and cells virtually synchronised into G1, G1/S, S and G2 phases. The data for each cell was normalised to the amplitude (N:C ratio) at t = 0 min.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10473/elife-10473-fig8-figsupp1-v1.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Normalised E2F-1-Venus expression at the time of TNF\u03b1 stimulation of C1-1 cells (data also shown in Figure 8B). E2F-1-Venus expression was normalised to its peak expression. The time axis represents the time of TNF\u03b1 stimulation relative to the peak of E2F-1-Venus for each cell, where time 0 is the peak of E2F-1-Venus expression. Positive times indicate stimulation after the peak of E2F-1-Venus expression and negative values indicate stimulation events before the peak of E2F-1-Venus expression. The black line shows a spline interpolation of the level of E2F-1-Venus expression. Cell cycle phases were estimated based on measured the E2F1 profile and average cell cycle timing.\n\n![Figure 8\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/10473/elife-10473-fig8-figsupp2-v1.jpg)\n\n**Figure 8\u2014figure supplement 2.:** (A) HeLa cells stably expressing an E2F-1-Venus fluorescent fusion protein from a 5KB endogenous E2F-1 promoter (Green), transiently transfected with a FUCCI reporter for SCF (SKP-2) activity (Orange). Showing the profile of E2F-1 over two consecutive cell cycles (one parent and two daughter cells), with a peak in late G1. E2F-1 levels dropped during S-phase consistent with rapid rise in SCF (SKP-2) activity and a loss of FUCCI fluorescence. (B) Representative cell from the E2F-1-Venus and RelA-DsRedxp stably transfected population of Hela cells through one full cell cycle.\n\n![Figure 8\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/10473/elife-10473-fig8-figsupp3-v1.jpg)\n\n**Figure 8\u2014figure supplement 3.:** Grey line shows the E2F-1-Venus expression level plotted agains the right y-axis. The red, green blue and orange lines show the timecourse of RelA-dsRedxp localization in exemplar cells in the G1, G1/S, S and G2 phases respectively plotted against the left y-axis. The black vertical line represents the point at which cells were treated with TNF\u03b1.\n\n![Figure 8\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/10473/elife-10473-fig8-figsupp4-v1.jpg)\n\n**Figure 8\u2014figure supplement 4.:** (A) Western blot of RelA and \u03b1-tubulin levels in dual BAC stable C1-1 and WT HeLa showing exogenous expression of RelA-dsRedxp. (B) Western blot of E2F-1 and cyclophilin A levels in dual BAC stable C1-1 and WT HeLa cells expressing the E2F-1-Venus BAC (C) Total fluorescent molecules per cell for E2F1-Venus at peak expression and RelA-dsRedxp in unstimulated cells (data obtained from Fluorescent Correlation Spectroscopy measurements, and calculated using volume estimates from z-stacked WT HeLa in suspension). (D) FCCS mean correlation curves (+/- s.e.m) between E2F-1-Venus and RelA-dsRedxp (red line, n=46) for TNF\u03b1 treated BAC stable cells. A comparison to transient empty-dsRedxp is shown (blue line, n=15) (E) Kd determination results using a scatter plot and linear regression (Theil-Sen estimator). The slope of the regression gives the Kd value.\n\nExpression of the RelA-DsRedxp and E2F-1-Venus fusion proteins in the stable cell line was quantified through molecular counting of fluorophores via FCS (Figure 8\u2014figure supplement 4). This gave an estimate of 310,000 \u00b1 120,000 molcules of RelA-DsRedxp per cell. This figure was comparable to previous molecular estimates using FCS that had been obtained in stable cell lines generated using lentivirus (Bagnall et al., 2015), and previous estimates of RelA concentration using analytical chemistry (Martone et al., 2003; Zhao et al. 2011). RelA showed an approximate ratio of 3:1 ectopic to endogenous expression based on quantitative analysis of western blot data (see Figure 8\u2014figure supplement 4A). By contrast, FCS analysis suggested that E2F-1-Venus expression was lower (24,000 \u00b1 9100 molecules of E2F-1-Venus per cell). Western blot analysis (Figure 8\u2014figure supplement 4B) suggested that there was an approximate ratio of 10:1 endogenous to ectopic levels). This might suggest selective pressure during cloning, as over-expression of E2F-1 has been reported to compromise cell viability (Crosby and Almasan, 2004). The apparent selective pressure against higher E2F-1 fusion protein expression was also in agreement with our own data that suggested that transient exogenous expression of E2F-1 fusion protein (but not E2F-4) alone caused apoptosis, but that this was rescued by co-expression of RelA. In the same manner observed with low EGFP-E2F1 expression from transient co-expression, the more physiological levels of E2F-1-Venus expression in the stably transfected cells suggested that RelA-DsRedxp remained predominantly cytoplasmic in unstimulated cells.\n\nThe interaction between E2F-1-Venus and RelA-DsRedxp following TNF\u03b1 stimulation was measured by Fluorescence Cross-Correlation Spectroscopy (FCCS). A strong cross-correlation was confirmed in the nucleus (Figure 8\u2014figure supplement 4D) indicating that the interaction uncovered by transient transfection with plasmids was not an artefact of over-expression, but was contextually relevant in relation to the cell cycle and RelA activation. Analysis of the dissociation constant (by FCCS) for the RelA-DsRedxp and E2F-1-Venus binding in the nucleus of TNF\u03b1\u2013stimulated cells suggested a dissociation constant (Kd)\u00a0of 12\u00a0nM (Figure 8E).\n\nThe stable and physiological co-expression of E2F-Venus and RelA-DsRedxp facilitated fluorescently labelled proteins to be observed over the course of a full cell cycle. Cells were virtually synchronized as previously described following stimulation with 10\u00a0ng/ml TNF\u03b1, and translocation of RelA-DsRedxp was plotted against the nuclear expression of E2F-1-Venus (Figure 8\u2014figure supplement 2).\n\nWe also investigated the consequences of knocking down both E2F-1 and E2F-4 using siRNA. Imaging experiments showed E2F-1 knockdown did not prevent cell cycle progression, and did not affect the heterogeneity of population response upon TNF\u03b1 stimulation (data not shown), perhaps indicating compensation by other E2F family members. In addition, our mathematical model predicted that knocking down E2F-1 might not substantially affect the repression of the NF-\u03baB response in S-phase, which was instead predicted to be due to the effect of E2F-4 expression. However, knock-down of E2F-4 was found to be lethal to cells (Crosby and Almasan, 2004) preventing time lapse analysis. A key additional consideration is the overlapping roles of other E2F family members, which makes knock-down of individual E2F proteins unpredictable, due to potentially co-operative and/or redundant functions.\n\n## Discussion\n\nBiological timing plays a key role in the encoding and decoding of biological information. Of particular interest is the role of biological oscillators, which can have very different cycle periods. A key question is how they may interact to robustly control essential biological processes. Here, we propose a reciprocal relationship between two oscillators, NF-\u03baB signalling and the cell cycle.\n\nTNF\u03b1 stimulation in S-phase showed a suppressed and delayed translocation of RelA, with no observable perturbation to cell cycle timing. In contrast, stimulation in late G1 showed strong translocation of RelA (Figure 2) and led to significant lengthening of the cell cycle (Figure 3). These data suggest that cells use the G1/S checkpoint to prioritize between inflammatory signalling and the onset of DNA replication prior to cell division (see schematic diagram in Figure 9). The presence of a mechanism for prioritization between the important processes of cell proliferation and inflammation suggests that an inflammatory response during DNA replication might be detrimental to the cell.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/10473/elife-10473-fig9-v1.jpg)\n\n**Figure 9.:** (A) Predicted mechanisms for NF-\u03baB interaction with E2F proteins over the G1/S transition (B) Model simulations of single cell behaviour.\n\nThe data showing that TNF\u03b1 stimulation alters cell cycle timing in a cell cycle phase-dependent manner is intriguing (Figure 3). However, our data do not identify a specific mechanism by which TNF\u03b1 may regulate cell cycle length. The observation that the effect of TNF\u03b1 stimulation on cell cycle lengthening appears to be specific to G1/S- rather than S-phase suggests that this may occur by delaying transition through the G1/S checkpoint. One hypothesis is that this might occur through NF-\u03baB modulation of E2F family transcriptional activity. At the same time, the system is more complex as NF-\u03baB is known to regulate the expression of other key cell cycle regulating proteins. Important examples include Cyclin D (Guttridge et al., 1999; Hinz et al., 1999, S\u00e9e et al., 2004), and p21waf1/cip1 (Basile et al. 2003). Therefore, there is undoubtedly a more complex set of interactions between NF-\u03baB and the control of cell proliferation and cancer (Perkins and Gilmore, 2006).\n\nAs well as a number of studies that suggest a physical interaction between E2F and NF-\u03baB proteins (Kundu et al., 1997; Chen et al., 2002; Tanaka et al., 2002, Shaw et al., 2008; Palomer et al., 2011), there have been a few previous studies that have suggested that this interaction might have functional importance. Araki et al. described an NF-\u03baB-dependent mechanism for growth arrest mediated by a dual mechanism. They suggested that E2F-1-dependent transcription was inhibited by IKK activation and that E2F-4 was phosphorylated directly by IKK resulting in increased activity of the E2F-4/p130 repressor complex (Araki et al., 2008). Their study did not assume direct interactions between the E2F and Rel proteins and did not take into account protein dynamics. Nevertheless, their conclusions are very complementary to the present study.\n\nAnother study by Tanaka et al. focused on the combined role of E2F-1 and c-MYC in the inhibition of NF-\u03baB activity (Tanaka et al., 2002). This\u00a0study demonstrated interactions between E2F-1 and both RelA and p50. Rather than focusing on cell division, their study showed that inhibition of RelA activity by E2F-1 resulted in increased apoptosis. Since both the NF-\u03baB and E2F families of transcription factors have important roles in the control of apoptosis (Phillips and Vousden, 2001; Kucharczak et al., 2003; Crosby and Almasan, 2004), it is therefore interesting to speculate that the levels of different E2F proteins at different cell cycle stages may regulate cell fate decision making in collaboration with signalling systems such as NF-\u03baB.\n\nOne important conclusion of the current study is the physical interaction of RelA with E2F-1 and E2F-4 proteins. It is however not necessary to assume strong binding and sequestration into different cellular compartments. Instead, control of cross-talk could be a consequence of mutual control of gene expression. We provide some data that suggests that E2F-1 and I\u03baB\u03b1 may compete for binding to RelA (see Figure 4E). We suggest that control may be achieved through repression of the I\u03baB\u03b1 feedback loop (and perhaps other negative feedbacks, such as A20). However, it might be that other genes are differentially activated through the combined action of these transcription factors. In support of this, Garber et al. performed a study in dendritic cells where they studied a panel of transcription factors by ChIP-Seq following LPS stimulation. Their data suggested that E2F-1 and RelA are common transcription factor pairs that were bound together at a large set of functionally important gene promoters (see data in Figure 3B of Garber et al., 2012). It therefore seems likely that these proteins mutually regulate patterns of transcriptional activity, controlling the expression of downstream feedback genes, cell proliferation and apoptosis.\n\nWe describe a mechanism for E2F-1 that suggests competition with I\u03baB\u03b1 for NF-\u03baB binding. This was effectively described by the model (see also Figure 9), and was used to predict the role for an E2F-1 target gene, upregulated in S-phase. Our data support E2F-4 as a candidate for this E2F-1 target gene. It should be noted however, that the E2F family of proteins may all play a role in this complex system. A surprising characteristic of E2F-4 is its predominantly cytoplasmic localisation in some cell types. As a result, we were unable to perform a competition localisation experiment (as for E2F-1, Figure 4E). We cannot therefore comment on whether E2F-4 also competes with I\u03baB\u03b1 for RelA binding. Therefore, the model (both mathematical model and schematic model in Figure 9) encode E2F-4 binding as a ternary complex to RelA and I\u03baB\u03b1 together. We stress that this is only one possible mechanism, but we have used this formulation since it is the simplest model that is consistent with all of our data. As described by Araki et al. (see above) there may be other components involved such as IKK-mediated E2F-4 phosphorylation (Araki et al., 2003).\n\nFunctional and context-dependent coupling between dynamic cellular processes (such as the cell cycle, the circadian clock [Yang et al., 2010; Bieler et al., 2014; El Cheikh et al., 2014], or p53 [Toettcher et al., 2009]) is emerging as a common theme in intracellular signalling (Ankers et al., 2008; White and Spiller, 2009; Spiller et al., 2010). The present study has characterized a dynamic and functional interaction between NF-\u03baB and the cell cycle systems, which each oscillate with different periods. Coupling between cellular processes (e.g. at the G1/S commitment point) can have contrasting effects on cell fate. Such temporal communication between processes represents a way for cells to gate their biological signals and coordinate and prioritize cell fate decisions in response to changes in their environment. In a wider context, understanding how (and when) these dynamic interactions occur could yield important therapeutic targets for fields such as cancer chronotherapy (Choong et al., 2009; L\u00e9vi et al., 2010).\n\n## Materials and methods\n\n### Materials\n\nHuman recombinant TNF\u03b1 was supplied by Calbiochem (UK). Tissue culture medium was supplied by Invitrogen (UK) and Fetal Bovine Serum (FBS) was from Harlan Seralab (UK). All other chemicals were supplied by Sigma (UK) unless stated otherwise.\n\n### Plasmids\n\nAll plasmids were propagated using E. coli DH5\u03b1 and purified using Qiagen Maxiprep kits (Qiagen, UK). NF-\u03baB-Luc (Stratagene, UK) contains five repeats of an NF-\u03baB-sensitive enhancer element upstream of the TATA box, controlling expression of luciferase. Luciferase reporter CyclinE-Luc was obtained from Peggy Farnham (University of Wisconsin-Madison, USA). EGFP-E2F-1 and EGFP-E2F-4 contain the Enhanced Green Fluorescent Protein (EGFP) gene (Invitrogen, UK) fused to the N-terminal ends of the human E2F-1 and E2F-4 gene fragments (kind gifts from Emmanuelle Trinh, BRIC, Denmark). Similarly, ECFP-E2F-1 and ECFP-E2F-4 contain the Enhanced Cyan Fluorescent Protein (ECFP) gene (Invitrogen, UK) RelA-DsRedxp contain the optimised DsRed Express protein (DsRedxp) gene (Clontech, CA) fused to the c-terminal end of human RelA gene (described previously in Nelson et al. (2002). RelA-EYFP contain Enhanced Yellow Fluorescent protein (EYFP) gene (Invitogen, UK) fused to the C-terminal end of human RelA gene.\n\n### Cell culture\n\nSK-N-AS neuroblastoma (cat.no. 94092302) and HeLa cervical carcinoma (Cat. No. 93021013) cell lines were obtained from European Collection of Authenticated Cell Cultures (ECACC). Cells were cultured and frozen down to form a low passage working stock. Subsequent working stocks were used for no more than 10 passages. Working stocks were screened to ensure the absence of mycoplasma every 3 months using LookOut Mycoplasma PCR Detection Kit (Cat. No. D9307 Sigma, UK). For confocal fluorescence microscopy and immuno-cytochemistry, SK-N-AS and HeLa cells were plated on 35\u00a0mm glass-bottom dishes (Iwaki, Japan and Greiner, Germany) at 1x105 cells per dish in 3\u00a0ml medium. HeLa cells were plated at 5x104 cells per dish in 3\u00a0ml medium. 24\u00a0hr post-plating, the cells were transfected with the appropriate plasmid(s) using Fugene 6 (Boehringer Mannheim/Roche, Germany). The optimized ratio of DNA:Fugene 6 used for transfection of HeLa or SK-N-AS cells was 2\u00a0\u00b5g DNA with 4\u00a0\u00b5l Fugene 6 and 0.8\u00a0\u00b5g DNA with 1.2\u00a0\u00b5l Fugene 6 respectively.\n\nFor Co-IP assays, SK-N-AS cells were plated on 100\u00a0mm tissue culture dishes (Corning, USA) at 4.5x106 cells per dish in 10\u00a0ml medium. For western blotting, semi-quantitative and quantitative PCR, HeLa and SK-N-AS cells were plated on 60\u00a0mm tissue culture dishes (Corning, USA) at 5x105 and 1x106 cells respectively per dish in 5\u00a0ml medium.\n\n### G1/S Cell cycle synchronisation via double Thymidine block\n\n24\u00a0hr post-plating, 2\u00a0mM Thymidine was added to the culture medium. Following a 19\u00a0hr incubation, cells were washed and fresh medium added. Following a 9\u00a0hr incubation, 2\u00a0mM Thymidine was again added to the culture medium and the cells incubated for a further 16\u00a0hr. Cells were then washed and fresh media added. Following release from Thymidine block, the G1/S-synchronized cells were either imaged or incubated (at 37\u00b0C, 5% CO2) for the indicated duration prior to cell lysis or fixation.\n\n### Treatment of cells with TNF\u03b1\n\nFor confocal fluorescence microscopy, the cells were treated in-situ between imaging acquisitions after an indicated pre-treatment incubation period (usually 24\u00a0hr post-transfection). For western blotting and q-PCR experiments, the cells were treated with TNF\u03b1 24\u00a0hr post-plating. The cells were imaged either immediately after treatment, or incubated (at 37\u00b0C, 5% CO2) for the indicated duration prior to cell lysis or fixation.\n\n### Fluorescence microscopy\n\nConfocal microscopy was carried out as described (Nelson et al., 2004) using either 20x Fluar 0.8 NA or 63x Planapochromat 1.4 NA objectives. CellTracker (Shen et al., 2006; Du et al., 2010) was used for data extraction. For RelA fusion proteins, mean fluorescence intensities were calculated for each time point for both nucleus and cytoplasm then nuclear:cytoplasmic (N:C) fluorescence intensity ratios were determined. For time lapse microscopy, a modified version of the Autofocus macro (an improved version of the Autotimeseries macro [Rabut and Ellenberg, 2004]) was used.\n\n### Analysis of cell cycle progression\n\nThe cell cycle duration and G1/S timing of SK-N-AS and HeLa cells was analysed using live-cell imaging of successive cell divisions to determine typical cell cycle duration. In addition, the cell cycle dynamics were quantified expressing Fluorescence Ubiquitin-based Cell Cycle Indicators (FUCCI, [Sakaue-Sawano et al., 2008]) (Figure 2\u2014figure supplement 1). The crossing point in fluorescent levels from FUCCI markers of APC and SCF E3 ubiqutin ligase was used as an indication of G1/S transition in the cells (Figure 2\u2014figure supplement 1B). Mitosis to mitosis timings were determined in non-transfected cells, as well as in cells transfected with RelA-dsRedXP and the dual BAC cell line (Appendix\u00a01\u2014figure 7) For the BAC cell line that expressed E2F-1-Venus it was only possible to use the single SCF FUCCI G1 vector (due to fluorescent protein spectral overlap).\n\n### Virtual synchronization\n\nCells were imaged for ~30\u00a0hr prior to TNF\u03b1 treatment in order to capture each cell passing through mitosis. The timing of TNF\u03b1 treatment relative to mitosis for each cell was then calculated. Events following TNF\u03b1 treatment (i.e. the dynamics of RelA-DsRedxp translocation, or cell cycle duration) could then be correlated to inferred cell cycle phase at the point of treatment. Dual BAC cell lines were imaged for an entire cell cycle. Cells were aligned based upon normalised peak amplitude of E2F-1-Venus, and virtually synchronised based upon alignment of peak E2F-1 expression and the relative timing of TNF\u03b1 stimulation. Cell cycle boundaries were inferred through characterization of cell cycle progression through transfection of FUCCI G1 phase marker construct (Figure 2\u2014figure supplement 1).\n\n### Flow cytometric DNA analysis\n\nHeLa cells were cultured in 100\u00a0mm dishes. Following trypsinization, and resuspension in 1\u00a0ml of medium the cells were stained by addition of 250\u00a0\u03bcl of 50\u2009\u03bcg/ml propidium iodide, 0.15% TritonX-100, and 150\u2009\u03bcg/ml RNase A before analysis in an Altra flow cytometer (Beckman Coulter).\n\n### F\u00f6rster resonance energy transfer (FRET) microscopy\n\nFRET was carried out using a Zeiss LSM510 with 'META' spectral detector mounted on an Axiovert 100S microscope with a 63x Planapochromat, 1.4 NA oil-immersion objective (Zeiss). ECFP and EYFP (Karpova et al., 2003) were excited with 458\u00a0nm laser light, emitted fluorescence was collected in 8 images each separated by 10\u00a0nm between 467\u00a0nm and 638\u00a0nm in lambda scanning mode. Separation of ECFP and EYFP fluorescence spectra was carried out using the linear unmixing algorithms of the Zeiss LSM510 software (Zeiss), using reference spectra taken from cells expressing the ECFP or EYFP fusion proteins alone or untransfected cells. The fluorescence spectrum was separated into ECFP, EYFP and background signals. FRET was assayed by acceptor (EYFP) photo-bleaching. Bleaching was accomplished using 50 iterations of 514\u00a0nm laser light with no attenuation from the acousto-optical tuneable filter (AOTF).\n\n### Fluorescence correlation spectroscopy (FCS) and fluorescence cross-correlation spectroscopy (FCCS)\n\nFCS and FCCS was carried using either a Zeiss LSM780 or Zeiss 710 with Confocor 3 mounted on an AxioObserver Z1 microscope with a 63x C-apochromat, 1.2 NA water-immersion objective. Zen 2010B software was used for data collection and analysis. EGFP fluorescence was excited with 488nm laser light and emission collected between 500 and 530\u00a0nm. DsRed-express was excited with 561nm laser light and emission collected between 580 and 630 nm. The protocols as outlined in Kim et al. (Kim et al., 2007) were followed, with 10 x 10\u00a0s runs used for each measurement. FCS was used to quantify the total number of fluorescent molecules per cell as previously described (Bagnall et al., 2015). The confocal volume had previously been estimated at 0.59 \u00b1 11\u00a0fL (mean \u00b1 SD) using Rhodamine 6G of known diffusion rate, and WT HeLa cells in suspension were imaged by confocal microscopy to give volume estimates of 1420 \u00b1 490\u00a0fL and 6110 \u00b1 3580\u00a0fL for nucleus and cytoplasm respectively. (For FCCS controls see Appendix Section E).\n\n### Co-immunoprecipitation\n\nHeLa cells synchronized at G1/S or S-phase were washed with room temperature PBS and lysed with modified RIPA buffer (50\u00a0mMTris-HCl pH 7.4, 150\u00a0mM\u00a0NaCl, 1\u00a0mM EDTA, 1% NP-40) including a 1:100 dilution of Protease Inhibitor cocktail (Sigma, UK), PMSF and phosphatase inhibitor (Phos Stop, Roche). Immunoprecipitation was carried out using Immunoprecipitation kit-Dynabeads Protein G (Invitrogen) with anti-RelA antibody (#3034, Cell Signaling, MA, USA). The samples were analyzed by western blotting using anti-E2F-1(Cell Signaling, #3742) or anti E2F-4 (Santa Cruz, C-20 sc-866) antibodies.\n\n### q-PCR\n\nThe RNeasy Mini Kit (Invitrogen, UK) was used to extract mRNA from the cells following manufacturer\u2019s instructions, using the primers: I\u03baB\u03b1 left TGGTGTCCTTGGGTGCTGAT right GGCAGTCCGGCCATTACA, I\u03baB\u03b5 left GGACCCTGAAACACCGTTGT right CCCCAGTGGCTCAGTTCAGA, E2F-1 left TGCAGAGCAGATGGTTATGG right TATGGTGGCAGAGTCAGTGG, cyclophilin A left GCTTTGGGTCCAGGAATG right GTTGTCCACAGTCAGCAATGGT.\n\n### Luciferase reporter assay\n\nLuciferase reporter assay were carried out as described in White et al. (1990), using a LUMIstar plate reading luminometer (BMG, Germany).\n\n### Immuno-cytochemistry (ICC)\n\nHeLa cells were prepared using combinations of the above techniques, typically involving synchronization and/or TNF\u03b1 stimulation of cells seeded at appropriate density into 35\u00a0mm glass-bottomed dishes. Dishes were subsequently washed three times with PBS and fixed with 1\u00a0ml 4% paraformaldehyde for 15\u00a0min. Dishes were then washed three times with PBS, and \u2018blocked\u2019 to prevent non-specific antibody binding with the addition of 1\u20132\u00a0ml of 1% BSA, 0.1% Triton X-100 (in PBS) from 20\u00a0min up to overnight. The primary antibody (or antibodies for dual-staining), dissolved in Ab Buffer (1% BSA, 0.1% Triton X-100 in PBS), were added to the dishes for 60/90\u00a0min at a 1:2000 dilution. Dishes were then washed (3x1\u00a0ml) with Ab buffer for 10\u00a0min. Secondary Antibody(s) were subsequently added to the dishes (Cy3-anti-mouse, 1:200 dilution (Sigma), FITC Rabbit, 1:200 [AbCam]) for 30/45\u2009min respectively, prior to 3 sequential washes of PBS blocking buffer (described above). Following the addition of fluorescent secondary antibodies, dishes were covered in aluminium foil and left in 2\u00a0ml PBS prior to imaging.\n\n### Western blotting\n\nWhole cell lysates were prepared at the indicated times after stimulation. Membranes were probed using the following antibodies: anti-I\u03baB\u03b1 (#9242, Cell Signaling, MA), anti-RelA (#3034, Cell Signaling, MA), anti-phospho-RelA (Ser 536) (#3031, Cell Signaling, MA), anti-I\u03baB\u03b1 (#9242, Cell Signaling, MA), anti-E2F-1 (#KH-95, Millipore Biotechnology, USA), anti-E2F-4 (sc-866, Santa Cruz), \u03b1-Tubulin Antibody (#2144 Cell Signaling, MA), and anti-cyclophilin A (#07\u2013313, Millipore Biotechnology, USA).\n",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "e284271f-495c-4779-bd7b-0506b3807da2",
+      "submission_id": "ec1a58c4-1eb1-4442-9196-77a18513a526",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Suzanne Gaudet, Dana-Farber Cancer Institute, Harvard University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.10473.037](https://doi.org/10.7554/eLife.10473.037)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Dynamic NF-\u03baB and E2F interactions control the priority and timing of inflammatory signalling and cell proliferation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aviv Regev as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nAnkers et al. examine the impact of the cell cycle on cellular variability during NF-\u03baB response to TNF\u03b1. Using a combination of fluorescent microscopy, biochemical assays, and a computation model, they show cell cycle dependent variability in NF-\u03baB response, which is a result of physical interactions between NF-\u03baB with E2F-1 and E2F-4 proteins.\n\nSpecifically, using transient overexpression of fluorescent fusion proteins combined with cell cycle synchronization, the authors show that the NF-\u03baB response to TNF is attenuated in S-phase, while pathway activation before G1/S transition prolongs the cell cycle. The refractoriness of cells in S-phase led the authors to test an E2F-1 target gene E2F-4 for a role in mediating the S phase-specific inhibitory interaction of RelA with E2F-4. The authors found that interplay between cell cycle and NF-\u03baB response is based on physical interactions of RelA with the transcription factors E2F-1 and -4, as shown by CO-IP, FRET and FCCS. While E2F-1 leads to prolonged nuclear accumulation of RelA by competing with I\u03baB\u03b1 binding and preventing expression of the feedback regulator, E2F-4 binding leads to cytoplasmic localization of RelA. Finally, the authors validate their results using fusion proteins expressed at physiological levels through a BAC expression system.\n\nThe reported findings are highly significant for understanding the interplay between cellular signalling and cell cycle control and are potentially of interest for a broad audience. However, the reviewers have outlined concerns that needed to be addressed to strengthen the stated conclusions of the manuscript.\n\nEssential revisions:\n\n1) The authors' use of transiently transfected RelA, in Figures 1\u20133 weakens the data by two factors: a) RelA abundance is bound to be very variable from cell to cell and b) variable RelA abundance could affect cell cycle timing yet the cell cycle mapping using time since mitosis is based on calibration done in other cells. The data from the BAC stable cell line introduced later in the paper is much stronger. We suggest that the authors either acquire data for a greater cell number with this cell line and replace data in Figures 1\u20133 with the new data, or alternatively, integrate data from the BAC cell lines with that of the transiently transfected cell line in the early figures of the paper so that the first segment of the is strengthened.\n\n2) Overall, in the data presented in this manuscript, the oscillations in nuclear RelA fusion protein amount seem very damped with little or no second peaks. Importantly, this is observed not only for HeLa (which showed more damped oscillations in their original 2004 Science paper) but also for SK-N cells (which showed more robust oscillations in the 2004 paper). Although the study focuses on a shorter time window encompassing mostly the first peak, the apparent lack of robust oscillations will be puzzling to many readers familiar with the authors' previous work and warrants some explanation.\n\n3) Some of the experiments require more upfront controls, validations or stronger explanations:\n\nA) The authors should show by immunoblot that synchronization of HeLa cells with a double thymidine block of DNA synthesis does not significantly change the abundance of tagged RelA.\n\nB) How does overexpression of E2F-1 and E2F-4 impact cell cycle? Does inducing NF-\u03baB with TNF during E2F-1 overexpression have a negative impact on cells that are in S-phase and that normally would not respond during this time?\n\nC) The CO-IPs in 5D and 7B would benefit from showing a RelA pull down in each of the other phases as a comparison to the phase in question.\n\nD) In 5B and 7D, the fluorescence changes for YFP and CFP are unexpectedly symmetrical after photobleaching: Because the inter-molecular FRET ratio to CFP is likely only a few percent, how can the increase in CFP be of the same magnitude as the decrease in YFP? Related, why is efficiency of YFP bleaching so different between these two experiments? A better explanation of the experiment and quantification of the results would really help, as would bringing the controls in Section E of the supplements to the main figures (or a linked supplement), allowing the readers to more easily compare results obtained with photobleached non-interacting probes.\n\n4) The consequence of the E2F-1 \u2013 RelA interaction is unclear. Overexpression of E2F-1 inhibits RelA target gene expression despite inducing its nuclear accumulation (Figure 4). Is this caused by loss of RelA-binding to DNA or is the recruitment of the transcriptional machinery prevented? As mentioned in the Discussion, previous studies reported that both proteins are binding to the same promoters and co-activate genes (e.g. Lim et al., Mol Cell 2007). How does this fit in with the data in this manuscript and the interpretation? The authors hypothesize that loss of feedback (I\u03baB\u03b1) expression causes the stronger NF-\u03baB response at G1-S. While additional experiments may be outside of the scope of the study, overall this interpretation is not intuitive and therefore it is important for the authors to both clarify their interpretation and how it is supported (or not) by the different pieces of evidence.\n\n5) The authors show that binding to E2F-4 keeps RelA in the cytoplasm, however, no data at this time elucidates whether E2F-4 competes for I\u03baB\u03b1 binding or whether a tertiary complex formed. Furthermore, the immunoblot data shown in Figure 6E is not definitive enough to demonstrate that the effect of E2F-4 is through the stabilization of I\u03baB\u03b1, and even so, this interpretation contradicts the final model in Figure 9 which is confusing to readers. While further characterization of these interactions may be outside of the scope of the current study, the model in Figure 9 should be consistent will all the data, and it should be made clear that the role of E2F-4 is speculative. Furthermore, it would be helpful to briefly mention in the main text what terms are included in the refined model for E2F-4: binding to RelA and/or I\u03baB\u03b1? This way the readers would appreciate which interactions are necessary to explain the data without delving into the model descriptions in the Supplementary section.\n\n6) The authors show that NF-\u03baB activation at the G1/S boundary induces elongation of the cell cycle. However, it remains unclear what the molecular mechanisms are, and the effects are subtle. The reviewers therefore suggest that authors put overall the greatest focus of the manuscript on the modulation of NF-\u03baB signalling by E2F proteins.\n\n7) As there is existing literature regarding the interaction of NF-\u03baB, E2Fs and the cell cycle \u2013 in 2002, Tanaka et al. showed reduced NF-\u03baB activation in S-phase compared to G1 and G2, although upon a different stimulus, and could connect this to the state of E2F-1 protein (Tanaka et al. Mol Cell 2002) \u2013 the authors should discuss and cite these results.\n",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "32d3d4f8-a4a2-4b46-96d6-d4dfa8e40d36",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C1",
+      "claim": "SK-N-AS cells showed repeated oscillations in response to TNF\u03b1 stimulation that were more damped than those seen in HeLa cells",
+      "claim_type": "EXPLICIT",
+      "source": "SK-N-AS cells showed repeated oscillations in response to TNF\u03b1 stimulation that were more damped than those seen in HeLa cells (see Appendix 1\u2014figure 1 for longer time course data [Nelson et al., 2004; Ashall et al., 2009]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by references to Appendix 1\u2014figure 1 and citations to previous studies (Nelson et al., 2004; Ashall et al., 2009)",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "4394ff78-ec1c-4e33-9b6c-db2e23976cd3",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C2",
+      "claim": "When SK-N-AS cells were treated with a saturating dose of TNF\u03b1 (10 ng/ml) the initial response of NF-\u03baB was relatively synchronous between cells",
+      "claim_type": "EXPLICIT",
+      "source": "In previous studies it was observed that when SK-N-AS cells were treated with a saturating dose of TNF\u03b1 (10 ng/ml) the initial response of NF-\u03baB (i.e. immediate RelA nuclear translocation) was relatively synchronous between cells (Nelson et al., 2004; Ashall et al., 2009; Turner et al., 2010) (Figure 1A; Appendix 1\u2014figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to previous studies (Nelson et al., 2004; Ashall et al., 2009; Turner et al., 2010) and references to Figure 1A and Appendix 1\u2014figure 1",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "b27a4432-5b5f-4264-8f41-f659554f912a",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C3",
+      "claim": "SK-N-AS cells treated with 30 pg/ml TNF\u03b1 showed variation in timing and amplitude even though this was functionally close to a saturating dose",
+      "claim_type": "EXPLICIT",
+      "source": "However, these data showed a variation in timing and amplitude when cells were treated with a lower dose of 30 pg/ml TNF\u03b1, even though this was functionally close to a saturating dose that gave a strong population-level NF-\u03baB response (Turner et al., 2010) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 1B and citation to Turner et al., 2010",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "2d9509fc-e05c-44eb-a98c-2afe92cd6f75",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C4",
+      "claim": "HeLa cells showed greater heterogeneity in their initial response at a saturating 10 ng/ml dose of TNF\u03b1, with some cells showing little or no response and others showing a variable delay",
+      "claim_type": "EXPLICIT",
+      "source": "In common with treatment of SK-N-AS cells at 30 pg/ml, HeLa cells showed greater heterogeneity in their initial response at a saturating 10 ng/ml dose of TNF\u03b1, with some cells showing little or no response and others showing a variable delay (Nelson et al., 2002; 2004) (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to Nelson et al., 2002; 2004 and reference to Figure 1C",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "7cb1b90f-2bb4-4566-8f9a-70a6d71e7fdf",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C5",
+      "claim": "HeLa cells showed no significant translocation in response to 30 pg/ml TNF\u03b1",
+      "claim_type": "EXPLICIT",
+      "source": "HeLa cells showed no significant translocation in response to 30 pg/ml TNF\u03b1 (Figure 1D), suggesting that these cell types have differential dynamic NF-\u03baB responses at varying TNF\u03b1 doses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by reference to Figure 1D showing experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "a8d7dbf2-0092-4e79-8dac-f40fed077c96",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C6",
+      "claim": "HeLa cells treated with TNF\u03b1 in S-phase displayed a reduced nuclear localization of endogenous RelA, compared to those treated in late G1",
+      "claim_type": "EXPLICIT",
+      "source": "When endogenous RelA was examined using immunocytochemistry, HeLa cells treated with 10 ng/ml TNF\u03b1 in S-phase displayed a reduced nuclear localization, compared to those treated in late G1 (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunocytochemistry data shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "06a4da75-66da-45b4-a977-1c11c4ec1e4e",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C7",
+      "claim": "Synchronized HeLa cells treated with TNF\u03b1 in late G1 showed a strong synchronous translocation of RelA, whereas cells treated in S-phase showed reduced RelA translocation",
+      "claim_type": "EXPLICIT",
+      "source": "These results were confirmed using time-lapse imaging of synchronised HeLa cells transiently transfected with RelA-DsRedxp. Cells treated in late G1 showed a strong synchronous translocation of RelA, whereas cells treated in S-phase showed reduced RelA translocation (Figure 1F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-lapse imaging data shown in Figure 1F,G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "84929035-b980-4db7-8c8a-0388d61671e9",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C8",
+      "claim": "Cell cycle-dependent differences following TNF\u03b1 treatment were supported by alterations in the extent of I\u03baB\u03b1 degradation and RelA Serine536 phosphorylation at different stages of the cell cycle",
+      "claim_type": "EXPLICIT",
+      "source": "These cell cycle-dependent differences following TNF\u03b1 treatment of synchronized cell populations were supported by alterations in the extent of I\u03baB\u03b1 degradation and RelA Serine536 phosphorylation at different stages of the cell cycle as measured by western blot (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data shown in Figure 1H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "bc6bb164-162c-41f2-8b77-f8eed668d693",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C9",
+      "claim": "HeLa cells treated with TNF\u03b1 in late G1 (G1/S) showed an increase in the translocation amplitude compared to the unsynchronized population average",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting data suggested that HeLa cells treated with TNF\u03b1 in late G1 (inferred to be G1/S) showed an increase in the translocation amplitude compared to the unsynchronized population average (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "75e1f63b-52e0-4706-8934-94bcf149f460",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C10",
+      "claim": "HeLa cells treated with TNF\u03b1 in S-phase showed a damped or delayed response with markedly reduced amplitude of nuclear NF-\u03baB translocation",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, cells treated in S-phase appeared to show a damped or delayed response (Figure 2C), with markedly reduced amplitude of nuclear NF-\u03baB translocation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "40ea9553-3dbf-421a-b418-ef1637e72906",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C11",
+      "claim": "In G2 phase the NF-\u03baB response appeared to be restored",
+      "claim_type": "EXPLICIT",
+      "source": "In G2 phase the NF-\u03baB response appeared to be restored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations from the experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "c71da43c-6b35-429c-afe5-04a605cef7e1",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C12",
+      "claim": "There was statistically significant higher nuclear translocation amplitude in HeLa cells at G1/S and significantly reduced amplitude in S-phase, compared to G1 and G2",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the complete data set confirmed that there was statistically significant higher nuclear translocation amplitude in HeLa cells at G1/S and significantly reduced amplitude in S-phase, compared to G1 and G2 (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis shown in Figure 2\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "3eeff591-96b9-43bd-9939-9e4999b20d9a",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C13",
+      "claim": "SK-N-AS cells treated with 30 pg/ml TNF\u03b1 showed a statistically reduced translocation in S-phase compared to G1-phase",
+      "claim_type": "EXPLICIT",
+      "source": "A smaller data set from SK-N-AS cells treated with 30 pg/ml TNF\u03b1, showed once again a statistically reduced translocation in S-phase compared to G1-phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "8308b3f1-6ec3-4e82-8978-fd3b9b52dce6",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C14",
+      "claim": "Mean cell cycle duration for HeLa cells treated with TNF\u03b1 showed a small, but statistically significant increase of 1.9 hr (~10%) compared to untreated cells",
+      "claim_type": "EXPLICIT",
+      "source": "It was found that mean cell cycle duration for cells treated with TNF\u03b1 showed a small, but statistically significant increase of 1.9 hr (~10%) compared to untreated cells, with the variability in the total population increasing by ~2-fold (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "2bf9ad19-89db-486b-9bda-ef6d45905b56",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C15",
+      "claim": "HeLa cells treated with TNF\u03b1 in late G1 had a cell cycle duration that was ~1/3 longer than the untreated population average",
+      "claim_type": "EXPLICIT",
+      "source": "Within this TNF\u03b1-treated population, cells treated in late G1 were more susceptible to cell cycle elongation with a cell cycle duration that was ~1/3 longer than the untreated population average.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "2f0f89cc-8f2e-4326-b459-2906e2e46ee8",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C16",
+      "claim": "TNF\u03b1 treatment in S-phase had no statistically significant effect on the timing of mitosis",
+      "claim_type": "EXPLICIT",
+      "source": "TNF\u03b1 treatment in S-phase had no statistically significant effect on the timing of mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "5a7237c2-8a86-484a-ac3d-d96dcb029e0f",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C17",
+      "claim": "In the presence of ectopically-expressed EGFP-E2F-1, there was a reduction in the activity of a NF-\u03baB-regulated luciferase reporter",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of ectopically-expressed EGFP-E2F-1, we observed a reduction in the activity of a NF-\u03baB-regulated luciferase reporter (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by luciferase reporter assay data shown in Figure 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "cd254c26-090e-4073-b907-cd01a9234225",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C18",
+      "claim": "The ability of NF-\u03baB to induce endogenous mRNA levels of I\u03baB\u03b1 and I\u03baB\u03b5 was impaired in cells co-expressing EGFP-E2F-1 and RelA-DsRedxp, compared to cells expressing RelA-DsRedxp alone",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the ability of NF-\u03baB to induce endogenous mRNA levels of I\u03baB\u03b1 and I\u03baB\u03b5 was impaired in cells co-expressing EGFP-E2F-1 and RelA-DsRedxp, compared to cells expressing RelA-DsRedxp alone (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mRNA level measurements shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "22b7adc4-bec8-4d34-98fd-ef41bc0d7a96",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C19",
+      "claim": "E2F-1 target gene transcription was impaired by RelA expression, as indicated by a reduction in the activity of a Cyclin E luciferase reporter",
+      "claim_type": "EXPLICIT",
+      "source": "E2F-1 target gene transcription was also impaired by RelA expression, as indicated by a reduction in the activity of a Cyclin E luciferase reporter (Figure 4C) and in the mRNA level of E2F-1 itself (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by luciferase reporter assay data shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "8441d1bf-e1c0-467a-a263-22c6ffcbe0d3",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C20",
+      "claim": "RelA expression reduced the mRNA level of E2F-1",
+      "claim_type": "EXPLICIT",
+      "source": "E2F-1 target gene transcription was also impaired by RelA expression, as indicated by a reduction in the activity of a Cyclin E luciferase reporter (Figure 4C) and in the mRNA level of E2F-1 itself (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mRNA level measurements shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "eb29f2e5-b1a5-4504-ad95-0e97e8f7c131",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C21",
+      "claim": "A predominantly cytoplasmic localization of RelA-DsRedxp was observed when expressed alone, whereas in cells co-expressing EGFP-E2F-1, both proteins were predominantly nuclear",
+      "claim_type": "EXPLICIT",
+      "source": "In transient transfection experiments, a predominantly cytoplasmic localization of RelA-DsRedxp was observed when expressed alone, whereas in cells co-expressing EGFP-E2F-1, both proteins were predominantly nuclear (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data shown in Figure 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "74cff63a-529c-4a44-a359-540824cfb552",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C22",
+      "claim": "The steady-state cytoplasmic localisation of RelA was restored in cells transiently expressing I\u03baB\u03b1-AmCyan in addition to EGFP-E2F-1 and RelA-dsRedxp",
+      "claim_type": "EXPLICIT",
+      "source": "In addition we also found that the steady-state cytoplasmic localisation of RelA was restored in cells transiently expressing I\u03baB\u03b1-AmCyan in addition to EGFP-E2F-1 and RelA-dsRedxp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental observations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "1044a83c-6ff3-4ed4-b16d-eb8a8d17c9c5",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C23",
+      "claim": "A decrease in EGFP-E2F-1 expression over time was associated with a re-localization of RelA-DsRedxp from the nucleus to the cytoplasm in both SK-N-AS and HeLa cells",
+      "claim_type": "EXPLICIT",
+      "source": "Time-series experiments in both SK-N-AS and HeLa cells showed that a decrease in EGFP-E2F-1 expression over time was associated with a re-localization of RelA-DsRedxp from the nucleus to the cytoplasm (for SK-N-AS cells, Figure 4\u2014figure supplement 1A\u2013B; for HeLa cells, Figure 4\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-series imaging data shown in Figure 4\u2014figure supplement 1A\u2013B and Figure 4\u2014figure supplement 2A\u2013C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "e2657813-33ec-4a4b-9dc8-8e583b20a08c",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C24",
+      "claim": "There was a strong correlation between the EGFP-E2F-1 decay half-life and the delay in RelA-DsRedxp translocation back into the cytoplasm",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative analysis showed a strong correlation between the EGFP-E2F-1 decay half-life and the delay in RelA-DsRedxp translocation back into the cytoplasm (for SK-N-AS cells, Figure 4\u2014figure supplement 1C; for HeLa cells, Figure 4\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative analysis shown in Figure 4\u2014figure supplement 1C and Figure 4\u2014figure supplement 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "4ec4c2a2-a050-47a6-9a09-86cbf1f5be58",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C25",
+      "claim": "A clear physical interaction between fluorescently labelled E2F-1 and RelA in the nucleus of living cells was evident using F\u00f6rster Resonance Energy Transfer (FRET)",
+      "claim_type": "EXPLICIT",
+      "source": "A clear physical interaction between fluorescently labelled E2F-1 and RelA in the nucleus of living cells was evident using F\u00f6rster Resonance Energy Transfer (FRET), in conjunction with acceptor photobleaching as a qualitative indicator of intermolecular interaction (Figure 5D), and Fluorescence Cross-Correlation Spectroscopy (FCCS) (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FRET data shown in Figure 5D and FCCS data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "ffaaf2d7-7b42-498c-a8ea-f05b14cf436e",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C26",
+      "claim": "Co-immunoprecipitation confirmed a physical interaction between E2F-1 and RelA in HeLa cells synchronized in late G1",
+      "claim_type": "EXPLICIT",
+      "source": "In order to further support the interaction between the endogenous proteins, we used co-immunoprecipitation (Co-IP) of endogenous E2F-1 and RelA in HeLa cells that had been synchronized in late G1, when E2F-1 levels were at their peak (Figure 5B). These data confirmed a physical interaction between E2F-1 and RelA, in agreement with previous studies (Tanaka et al., 2002; Lim et al., 2007; Garber et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Co-IP data shown in Figure 5B and citations to previous studies (Tanaka et al., 2002; Lim et al., 2007; Garber et al., 2012)",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "26290fd7-7550-45d0-b964-138186d235cf",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C27",
+      "claim": "No positive co-IP between E2F-1 and RelA was observed in asynchronous cells",
+      "claim_type": "EXPLICIT",
+      "source": "We were not able to observe a positive co-IP in asynchronous cells (see Appendix 1\u2014figure 4), suggesting that this interaction was only detectable in HeLa cells at G1/S when E2F-1 was at its highest level.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by negative Co-IP results shown in Appendix 1\u2014figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "f1d86c5d-967e-4b35-b630-a2ad0566d4d5",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C28",
+      "claim": "In cells expressing RelA-DsRedxp and EGFP-E2F-1, there was a delay before the onset of oscillations following TNF\u03b1 stimulation",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, time-lapse live cell imaging of SK-N-AS cells stimulated with TNF\u03b1, showed that in cells expressing RelA-DsRedxp and EGFP-E2F-1 (which initially had nuclear RelA-DsRedxp), there was a delay before the onset of oscillations (Figure 6B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by time-lapse imaging data shown in Figure 6B and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "43467273-c5d5-497d-b6b3-8bec99c2a6e5",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C29",
+      "claim": "The length of the refractory period in cells expressing RelA-DsRedxp and EGFP-E2F-1 was on average ~4-fold longer than the peak1:peak2 timing in cells expressing RelA-DsRedxp alone",
+      "claim_type": "EXPLICIT",
+      "source": "The length of this refractory period was on average ~4-fold longer than the peak1:peak2 timing in cells expressing RelA-DsRedxp alone (Figure 6B and [Ashall et al., 2009]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 6B and citation to Ashall et al., 2009",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "5fef7648-c7a4-483c-aee4-6f4b484cada7",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C30",
+      "claim": "TNF\u03b1 treatment of SK-N-AS cell populations transiently expressing EGFP-E2F-1 and RelA-DsRedxp led to reduced levels of phospho-S536-RelA and stabilized levels of I\u03baB\u03b1",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this prediction, TNF\u03b1 treatment of SK-N-AS cell populations transiently expressing EGFP-E2F-1 and RelA-DsRedxp led to reduced levels of phospho-S536-RelA and stabilized levels of I\u03baB\u03b1 (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data shown in Figure 6E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "3bf9d92d-13c7-43e8-9f36-8ae9097ff47d",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C31",
+      "claim": "Ectopic expression of E2F-1 in cells resulted in increased E2F-4 expression, consistent with E2F-4 being a transcriptional target of E2F-1",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that ectopic expression of E2F-1 in cells resulted in increased E2F-4 expression, consistent with E2F-4 being a transcriptional target of E2F-1 in these cells (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data shown in Figure 6E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "3d0876a4-0329-42e8-8c85-a452efe11c1c",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C32",
+      "claim": "The profile of E2F-4 expression was delayed relative to that of E2F-1 in the cell cycle, peaking in S-phase in synchronized HeLa cells",
+      "claim_type": "EXPLICIT",
+      "source": "The profile of E2F-4 expression was found to be delayed relative to that of E2F-1 in the cell cycle, peaking in S-phase in synchronized HeLa cells (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data shown in Figure 6F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "a78e093d-4f94-45e1-b414-ccabc2d8fbf5",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C33",
+      "claim": "When transiently expressed in either HeLa or SK-N-AS cells, both E2F-4 and RelA proteins were located in the cytoplasm",
+      "claim_type": "EXPLICIT",
+      "source": "When transiently expressed in either HeLa or SK-N-AS cells, both proteins were located in the cytoplasm (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by imaging data shown in Figure 7A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "6528d335-69a9-444f-aa12-af880a02e825",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C34",
+      "claim": "Following TNF\u03b1 treatment, the timing of RelA-DsRedxp translocation to the nucleus was delayed relative to the level of the fluorescent signal from EGFP-E2F-4",
+      "claim_type": "EXPLICIT",
+      "source": "Following TNF\u03b1 treatment, the timing of RelA-DsRedxp translocation to the nucleus in both cell lines was delayed relative to the level of the fluorescent signal from EGFP-E2F-4 (Figure 7B for dynamic profiles and Figure 7\u2014figure supplement 1 for analysis).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by dynamic profile data shown in Figure 7B and analysis in Figure 7\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "b4050b35-f937-4d22-81fe-5e3b453c7c83",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C35",
+      "claim": "The physical interaction of endogenous E2F-4 and RelA proteins was supported by Co-IP from HeLa cells synchronized in S-phase",
+      "claim_type": "EXPLICIT",
+      "source": "The physical interaction of endogenous E2F-4 and RelA proteins was supported by Co-IP from HeLa cells synchronized in S-phase (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Co-IP data shown in Figure 7C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "08b9b6f8-8c78-4510-8bdf-e8f5da0d810a",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C36",
+      "claim": "No pull-down of E2F-4 and RelA was observed in cells synchronised in late G1 phase",
+      "claim_type": "EXPLICIT",
+      "source": "No pull-down was observed in cells synchronised in late G1 phase (see Appendix 1\u2014figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by negative Co-IP results shown in Appendix 1\u2014figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "f9859464-416b-429f-aed8-9d7d1cc4a22a",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C37",
+      "claim": "The interaction between E2F-4 and RelA was confirmed by acceptor photo bleaching FRET and FCCS data",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction was confirmed by acceptor photo bleaching FRET and FCCS data obtained from cells transiently expressing ECFP-E2F-4 and RelA-EYFP (for FRET) or RelA-dsRedxp and EGFP-E2F-4 (for FCCS) fluorescent fusion proteins (Figure 7D and E respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FRET data shown in Figure 7D and FCCS data shown in Figure 7E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "f8c4a5b8-b602-45e5-b1d7-bc62918c9be9",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C38",
+      "claim": "Stable HeLa cell lines with integrated Bacterial Artificial Chromosomes expressing E2F-1-Venus and RelA-DsRedxp showed the same pattern of synthesis and degradation of a transiently expressed FUCCI reporter for SCF (SKP-2) activity, indicating normal cell cycle progression",
+      "claim_type": "EXPLICIT",
+      "source": "Stable cell lines were generated with a human E2F-1-Venus BAC construct, and showed the same pattern of synthesis and degradation of a transiently expressed FUCCI reporter for SCF (SKP-2) activity, indicating normal cell cycle progression (see Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FUCCI reporter data shown in Figure 8\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "cda47084-1e5c-41cc-b713-0316690932f9",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C39",
+      "claim": "All viable clones of E2F-1-Venus BAC had relatively low expression of the E2F-1-Venus BAC, suggesting that E2F-1 over-expression was detrimental to cell survival",
+      "claim_type": "EXPLICIT",
+      "source": "All viable clones had relatively low expression of the E2F-1-Venus BAC, further suggesting that E2F-1 over-expression was detrimental to cell survival.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on observations during clonal selection and inference about cell survival",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "e13b5672-780e-464d-80ba-6e2ac1e5c9c6",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C40",
+      "claim": "The dual BAC stable clonal cell line C1-1 showed a slight increase (~8%) in mean cell cycle length comparable with wild type HeLa",
+      "claim_type": "EXPLICIT",
+      "source": "This clonal cell line showed a slight increase (~8%) in mean cell cycle length (with similar cell-to-cell variability) comparable with wild type HeLa (see Appendix 1\u2014figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by cell cycle timing data shown in Appendix 1\u2014figure 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "0604026e-ba06-4e50-9222-7ef6dd5ecb10",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C41",
+      "claim": "TNF\u03b1 treatment in the C1-1 cell line increased the variability in cell cycle timing compared to that of resting cells",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to wild type cells, TNF\u03b1 treatment in the C1-1 cell line increased the variability in cell cycle timing compared to that of resting cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of cell cycle timing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "a93c7fa4-cb8f-44a0-aa6a-fdd7263d6c37",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C42",
+      "claim": "In the dual BAC stable cells, cells treated in late G1/S-phase showed higher amplitude RelA nuclear translocations",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with data from the transiently transfected HeLa and SK-N-AS cells (Figure 2, Figure 2\u2014figure supplements 2 and 3), the cells treated in late G1/S-phase showed higher amplitude RelA nuclear translocations, whereas Cells treated in S-phase showed a statistically significant suppression in S-phase RelA translocation compared to cells in early G1- or G2-phases (Figure 8 and Figure 8\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 8 and Figure 8\u2014figure supplement 3, and comparison to previous data in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "8ce11acc-cb51-4b57-969c-a1ba1f2348b7",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C43",
+      "claim": "Cells treated in S-phase showed a statistically significant suppression in S-phase RelA translocation compared to cells in early G1- or G2-phases in the dual BAC stable cells",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with data from the transiently transfected HeLa and SK-N-AS cells (Figure 2, Figure 2\u2014figure supplements 2 and 3), the cells treated in late G1/S-phase showed higher amplitude RelA nuclear translocations, whereas Cells treated in S-phase showed a statistically significant suppression in S-phase RelA translocation compared to cells in early G1- or G2-phases (Figure 8 and Figure 8\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis shown in Figure 8 and Figure 8\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "b82508b9-70d7-42c2-becd-9ee29ef373fc",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C44",
+      "claim": "FCS analysis estimated 310,000 \u00b1 120,000 molecules of RelA-DsRedxp per cell in the stable cell line",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the RelA-DsRedxp and E2F-1-Venus fusion proteins in the stable cell line was quantified through molecular counting of fluorophores via FCS (Figure 8\u2014figure supplement 4). This gave an estimate of 310,000 \u00b1 120,000 molcules of RelA-DsRedxp per cell.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FCS measurements shown in Figure 8\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "d64ca869-31b0-49ff-ac6b-3812b4dc8573",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C45",
+      "claim": "FCS analysis estimated 24,000 \u00b1 9100 molecules of E2F-1-Venus per cell in the stable cell line",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, FCS analysis suggested that E2F-1-Venus expression was lower (24,000 \u00b1 9100 molecules of E2F-1-Venus per cell).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on FCS measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "85748255-a7f6-48b7-864b-6e6e20297865",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C46",
+      "claim": "RelA showed an approximate ratio of 3:1 ectopic to endogenous expression based on quantitative analysis of western blot data",
+      "claim_type": "EXPLICIT",
+      "source": "RelA showed an approximate ratio of 3:1 ectopic to endogenous expression based on quantitative analysis of western blot data (see Figure 8\u2014figure supplement 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot analysis shown in Figure 8\u2014figure supplement 4A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "6d9adf20-6ba1-4288-9faa-343a49d3fb73",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C47",
+      "claim": "Western blot analysis suggested that there was an approximate ratio of 10:1 endogenous to ectopic E2F-1 levels",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot analysis (Figure 8\u2014figure supplement 4B) suggested that there was an approximate ratio of 10:1 endogenous to ectopic levels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot analysis shown in Figure 8\u2014figure supplement 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "c459b105-955a-42f8-84c8-55060ce40272",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C48",
+      "claim": "A strong cross-correlation between E2F-1-Venus and RelA-DsRedxp was confirmed in the nucleus by FCCS following TNF\u03b1 stimulation",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction between E2F-1-Venus and RelA-DsRedxp following TNF\u03b1 stimulation was measured by Fluorescence Cross-Correlation Spectroscopy (FCCS). A strong cross-correlation was confirmed in the nucleus (Figure 8\u2014figure supplement 4D) indicating that the interaction uncovered by transient transfection with plasmids was not an artefact of over-expression, but was contextually relevant in relation to the cell cycle and RelA activation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FCCS data shown in Figure 8\u2014figure supplement 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "2714b04c-8493-458c-a58a-1d69edff320b",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C49",
+      "claim": "The dissociation constant (Kd) for the RelA-DsRedxp and E2F-1-Venus binding in the nucleus of TNF\u03b1\u2013stimulated cells was 12 nM",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the dissociation constant (by FCCS) for the RelA-DsRedxp and E2F-1-Venus binding in the nucleus of TNF\u03b1\u2013stimulated cells suggested a dissociation constant (Kd) of 12 nM (Figure 8E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FCCS analysis shown in Figure 8E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "36508220-85f6-4fd3-8b24-7926c9677e10",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C50",
+      "claim": "TNF\u03b1 stimulation in S-phase showed a suppressed and delayed translocation of RelA, with no observable perturbation to cell cycle timing",
+      "claim_type": "EXPLICIT",
+      "source": "TNF\u03b1 stimulation in S-phase showed a suppressed and delayed translocation of RelA, with no observable perturbation to cell cycle timing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental observations from multiple figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "aa45027f-d8c8-4e9a-af4a-0661f86b8042",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C51",
+      "claim": "Stimulation in late G1 showed strong translocation of RelA and led to significant lengthening of the cell cycle",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, stimulation in late G1 showed strong translocation of RelA (Figure 2) and led to significant lengthening of the cell cycle (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2 and Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "eaa29a84-d1da-40f4-ab2b-e56fd112fad9",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C52",
+      "claim": "NF-\u03baB is an important signalling system, implicated in many diseases including autoimmune diseases and cancer",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear Factor kappa B (NF-\u03baB) is an important signalling system, implicated in many diseases including autoimmune diseases and cancer (Grivennikov et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Grivennikov et al., 2010",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "98eb1902-13b1-45a8-ad4d-72efe4d4c5c9",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C53",
+      "claim": "Inflammatory cues such as Tumour Necrosis Factor alpha (TNF\u03b1) can trigger the nuclear translocation of the NF-\u03baB RelA subunit and activation of target gene transcription",
+      "claim_type": "EXPLICIT",
+      "source": "Inflammatory cues such as Tumour Necrosis Factor alpha (TNF\u03b1) can trigger the nuclear translocation of the NF-\u03baB RelA subunit and activation of target gene transcription (Hayden and Ghosh, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Hayden and Ghosh, 2008",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "987aa3cb-8acc-486e-b0ad-b388ced79423",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C54",
+      "claim": "Nuclear NF-\u03baB activates feedback regulators, including the inhibitory kappa B alpha (I\u03baB\u03b1) and epsilon (I\u03baB\u03b5) inhibitors",
+      "claim_type": "EXPLICIT",
+      "source": "Nuclear NF-\u03baB activates feedback regulators, including the inhibitory kappa B alpha (I\u03baB\u03b1) and epsilon (I\u03baB\u03b5) inhibitors (Arenzana-Seisdedos et al., 1997; Kearns et al., 2006; Paszek et al., 2010), which bind and transport NF-\u03baB back into the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Arenzana-Seisdedos et al., 1997; Kearns et al., 2006; Paszek et al., 2010",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "d69dadcc-a9b1-4a0f-b66e-b7b9dfc8398e",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C55",
+      "claim": "In response to TNF\u03b1, the NF-\u03baB system shows nuclear-cytoplasmic (N:C) oscillations in the localization of the NF-\u03baB complex associated with out-of-phase cycles of degradation and re-synthesis of I\u03baB proteins",
+      "claim_type": "EXPLICIT",
+      "source": "In response to TNF\u03b1, this system shows nuclear-cytoplasmic (N:C) oscillations in the localization of the NF-\u03baB complex associated with out-of-phase cycles of degradation and re-synthesis of I\u03baB proteins (Nelson et al., 2004; Ashall et al., 2009; Lee et al., 2009; Sung et al., 2009; Tay et al., 2010; Turner et al., 2010; Ruland, 2011; Hughey et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Nelson et al., 2004; Ashall et al., 2009; Lee et al., 2009; Sung et al., 2009; Tay et al., 2010; Turner et al., 2010; Ruland, 2011; Hughey et al., 2015",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "46d60898-f257-438c-9b3c-b36175af7025",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C56",
+      "claim": "The frequency of NF-\u03baB oscillations has been proposed to be a key parameter that regulates the pattern of downstream gene expression",
+      "claim_type": "EXPLICIT",
+      "source": "Through systems biology and experimental approaches, the frequency of these oscillations has been proposed to be a key parameter that regulates the pattern of downstream gene expression (Ashall et al., 2009; Lee et al., 2014; Williams et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ashall et al., 2009; Lee et al., 2014; Williams et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "6a2dab0d-0dc2-4f44-a4e6-c16a88058310",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C57",
+      "claim": "Many NF-\u03baB family members have been characterised as oncoproteins (e.g. c-Rel and Bcl-3)",
+      "claim_type": "EXPLICIT",
+      "source": "Many NF-\u03baB family members have been characterised as oncoproteins (e.g. c-Rel and Bcl-3 [Hayden and Ghosh, 2008]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Hayden and Ghosh, 2008",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "094602c1-ae10-41b1-8e74-f5c386dc3261",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C58",
+      "claim": "A number of cell cycle control proteins have been shown to be NF-\u03baB transcriptional targets, including Cyclin D",
+      "claim_type": "EXPLICIT",
+      "source": "Also, a number of cell cycle control proteins have been shown to be NF-\u03baB transcriptional targets, including Cyclin D, (Guttridge et al., 1999; S\u00e9e et al., 2004) and p21, an inhibitor of Cyclin Dependent Kinase (CDK) activity (Hinata et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Guttridge et al., 1999; S\u00e9e et al., 2004",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "a74fe021-294e-412c-9f8e-d19f8db44115",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C59",
+      "claim": "p21 is an inhibitor of Cyclin Dependent Kinase (CDK) activity and is a NF-\u03baB transcriptional target",
+      "claim_type": "EXPLICIT",
+      "source": "Also, a number of cell cycle control proteins have been shown to be NF-\u03baB transcriptional targets, including Cyclin D, (Guttridge et al., 1999; S\u00e9e et al., 2004) and p21, an inhibitor of Cyclin Dependent Kinase (CDK) activity (Hinata et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Hinata et al., 2003",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "99aeca28-a79d-4ec8-8d9b-59b5caa99ed8",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C60",
+      "claim": "The E2 Factor (E2F) proteins are differentially expressed during the cell cycle to control cell proliferation",
+      "claim_type": "EXPLICIT",
+      "source": "The E2 Factor (E2F) proteins are differentially expressed during the cell cycle to control cell proliferation (Bertoli et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Bertoli et al., 2013",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "c7f2275a-d05e-4039-862f-0fcb299b8ba3",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C61",
+      "claim": "E2F proteins are a family of transcription factors that play a key role in the G1/S cell cycle checkpoint",
+      "claim_type": "EXPLICIT",
+      "source": "They are a family of transcription factors that play a key role in the G1/S cell cycle checkpoint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge about E2F proteins",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "d071e6c0-afe6-43b6-b8ae-9fee7888f44e",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C62",
+      "claim": "Previous studies have provided preliminary evidence for physical interaction between NF-\u03baB and E2F proteins",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have provided preliminary evidence for physical interaction between NF-\u03baB and E2F proteins (Tanaka et al., 2002; Lim et al., 2007; Garber et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Tanaka et al., 2002; Lim et al., 2007; Garber et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "f5b8cd27-e84c-4db7-bc9a-104eb14b6ba7",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C63",
+      "claim": "Cells use the G1/S checkpoint to prioritize between inflammatory signalling and the onset of DNA replication prior to cell division",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that cells use the G1/S checkpoint to prioritize between inflammatory signalling and the onset of DNA replication prior to cell division (see schematic diagram in Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on inference from experimental data and supported by schematic in Figure 9",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "08086c6b-37a6-4d02-a058-3a823c3c3e7c",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C64",
+      "claim": "An inflammatory response during DNA replication might be detrimental to the cell",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of a mechanism for prioritization between the important processes of cell proliferation and inflammation suggests that an inflammatory response during DNA replication might be detrimental to the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the observed prioritization mechanism",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "1e68804c-6293-4213-af04-ae3dc3c80589",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C65",
+      "claim": "Transient exogenous expression of E2F-1 fusion protein (but not E2F-4) alone caused apoptosis, but this was rescued by co-expression of RelA",
+      "claim_type": "EXPLICIT",
+      "source": "An additional complication in these experiments was that exogenous expression of E2F-1 (but not E2F-4) fluorescent fusion protein from a CMV promoter caused apoptosis when transfected alone. Interestingly this effect was rescued by co-expression with RelA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on experimental observations during transfection experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "5247ddc1-ef0a-4bbb-875f-37b980646b68",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C66",
+      "claim": "E2F-1 and I\u03baB\u03b1 may compete for binding to RelA",
+      "claim_type": "EXPLICIT",
+      "source": "We provide some data that suggests that E2F-1 and I\u03baB\u03b1 may compete for binding to RelA (see Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "256c39e3-0fbb-453d-843d-0e6982a9ff62",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C67",
+      "claim": "E2F-1 and RelA are common transcription factor pairs that were bound together at a large set of functionally important gene promoters in dendritic cells following LPS stimulation",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this, Garber et al. performed a study in dendritic cells where they studied a panel of transcription factors by ChIP-Seq following LPS stimulation. Their data suggested that E2F-1 and RelA are common transcription factor pairs that were bound together at a large set of functionally important gene promoters (see data in Figure 3B of Garber et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Garber et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "32568d87-09e6-4de1-8fb2-26ce6f4af598",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "claim_id": "C68",
+      "claim": "Knock-down of E2F-4 was found to be lethal to cells",
+      "claim_type": "EXPLICIT",
+      "source": "However, knock-down of E2F-4 was found to be lethal to cells (Crosby and Almasan, 2004) preventing time lapse analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Crosby and Almasan, 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e64d2496-92e5-4527-9781-b9bfe653d116",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SK-N-AS and HeLa cells show different NF-\u03baB response dynamics to TNF\u03b1 stimulation at different doses, with SK-N-AS cells showing more synchronous responses at high doses and HeLa cells showing greater heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 collectively demonstrate dose- and cell-type-dependent differences in NF-\u03baB dynamics. The claims are supported by multiple figures (Figure 1A-D, Appendix 1-figure 1) and citations to previous studies. The data show consistent patterns across different experimental conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "62a113a6-d6a6-495d-bf45-dd213a53cdba",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "NF-\u03baB response to TNF\u03b1 is cell cycle-dependent, with enhanced translocation in late G1/S phase and suppressed translocation in S-phase across both HeLa and SK-N-AS cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C13 provide converging evidence from multiple experimental approaches (immunocytochemistry, time-lapse imaging, western blot, virtual synchronization, statistical analysis) showing cell cycle-dependent NF-\u03baB responses. The statistical significance is explicitly stated (C12, C13) and supported by multiple figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "1009e979-b1a9-456e-8637-c178d4a6c2d0",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "TNF\u03b1 treatment increases cell cycle duration in a cell cycle phase-dependent manner, with cells treated in late G1 showing ~33% longer cell cycles while S-phase treatment has no significant effect on mitosis timing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16 demonstrate reciprocal effects of NF-\u03baB signaling on cell cycle progression. Statistical significance is explicitly stated (C14, C16), and the data are supported by Figure 3. The findings show phase-specific effects consistent with the overall model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "582441f9-b62f-4fe2-a8ce-6d4a649f1fd9",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "E2F-1 and RelA reciprocally inhibit each other's transcriptional activity, with E2F-1 reducing NF-\u03baB-dependent transcription and RelA reducing E2F-1-dependent transcription.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C20 demonstrate reciprocal transcriptional inhibition using luciferase reporters and mRNA measurements (Figure 4A-D). The data show consistent bidirectional effects, though the mechanism of inhibition is not fully elucidated. The functional interaction is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "80bf9e32-ee35-46c5-9231-ab7943a79821",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "E2F-1 expression causes nuclear localization of RelA, and this effect is reversed by I\u03baB\u03b1 co-expression or E2F-1 degradation over time, with strong correlation between E2F-1 decay and RelA cytoplasmic translocation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 demonstrate E2F-1-dependent control of RelA localization through imaging and quantitative analysis (Figure 4E, Figure 4-figure supplements 1-2). The correlation data (C24) provides strong quantitative support. The I\u03baB\u03b1 rescue experiment (C22) suggests competition for RelA binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "a44869e1-367b-4e73-937b-9addb1a04043",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "E2F-1 and RelA physically interact in the nucleus of living cells, as demonstrated by FRET and FCCS, and this interaction is detectable by Co-IP in synchronized cells at G1/S but not in asynchronous cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 provide multiple lines of evidence for physical interaction using complementary techniques (FRET, FCCS, Co-IP) shown in Figure 5. The cell cycle-specific detection (C27) is consistent with E2F-1 expression patterns. The convergence of multiple biophysical methods strongly supports the interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "1180ef3a-9eb0-4033-8554-deea14783001",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "E2F-1 expression delays NF-\u03baB oscillations following TNF\u03b1 stimulation by ~4-fold, associated with reduced RelA phosphorylation and stabilized I\u03baB\u03b1 levels, and E2F-1 induces E2F-4 expression which peaks in S-phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C32 demonstrate E2F-1's effect on NF-\u03baB dynamics and identify E2F-4 as a downstream target. The data are supported by time-lapse imaging (Figure 6B,D), western blots (Figure 6E,F), and modeling (Figure 6C). The ~4-fold delay is quantified and the E2F-1\u2192E2F-4 regulatory relationship is confirmed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "02d0d816-e0c2-4184-bd70-2266c63d3df1",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "E2F-4 and RelA physically interact in the cytoplasm, with E2F-4 delaying RelA nuclear translocation following TNF\u03b1 treatment. This interaction is detectable by Co-IP in S-phase synchronized cells but not in late G1, and is confirmed by FRET and FCCS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37 demonstrate E2F-4/RelA interaction using multiple complementary techniques (imaging, Co-IP, FRET, FCCS) shown in Figure 7. The cell cycle-specific Co-IP results (C35, C36) are consistent with E2F-4 expression patterns. The convergence of evidence strongly supports the interaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "b3d00f3c-d570-46a7-9dba-82264465ad3a",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Stable BAC cell lines expressing E2F-1-Venus and RelA-DsRedxp at near-physiological levels recapitulate the cell cycle-dependent NF-\u03baB response patterns observed with transient transfection, with enhanced response at G1/S and suppressed response in S-phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 validate the main findings using stable cell lines with more physiological expression levels (Figure 8, Figure 8-figure supplements). The FUCCI reporter data (C38) confirms normal cell cycle progression. The statistical significance of phase-dependent responses (C43) and consistency with transient transfection data strongly support the physiological relevance of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "2f576de0-e460-4f07-9787-05886d087f90",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "FCS quantification in stable BAC cells shows ~310,000 RelA-DsRedxp and ~24,000 E2F-1-Venus molecules per cell, with 3:1 ectopic:endogenous RelA and 1:10 ectopic:endogenous E2F-1 ratios. FCCS confirms nuclear interaction with Kd of 12 nM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C49 provide quantitative characterization of protein expression levels and binding affinity in the stable cell line (Figure 8-figure supplement 4). The FCS measurements provide absolute molecule counts, western blots confirm expression ratios, and FCCS demonstrates interaction with quantified affinity. The low E2F-1 expression is consistent with selective pressure against overexpression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "42388d49-d7df-4b97-b4d0-58b419695571",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Cells prioritize between inflammatory signaling and DNA replication at the G1/S checkpoint, with TNF\u03b1 stimulation in S-phase showing suppressed NF-\u03baB response without cell cycle perturbation, while late G1 stimulation shows strong NF-\u03baB response with cell cycle lengthening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C51, and C63 synthesize the major findings into a model of cell cycle-NF-\u03baB crosstalk. The claims are supported by the collective experimental evidence from multiple figures. However, C63 involves inference about cellular 'prioritization' which, while consistent with the data, represents an interpretive framework rather than direct observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "1bfc7438-6420-4baf-9831-941acad96131",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background on NF-\u03baB and E2F biology: NF-\u03baB is implicated in disease, responds to TNF\u03b1 with oscillatory dynamics, regulates cell cycle proteins, and E2F proteins control cell proliferation with previous evidence for NF-\u03baB/E2F interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C62 provide established background knowledge supported by appropriate citations. These are literature-based claims that set the context for the study rather than novel findings. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "fa2275d3-d79b-48ff-8e4f-7bdd3c581c12",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "An inflammatory response during DNA replication might be detrimental to the cell.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C64 is speculative and based on inference from the observed prioritization mechanism. While the hypothesis is reasonable given the data, no direct evidence of detriment is provided. This represents a plausible interpretation but requires further experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "b764874a-1fab-40ac-84da-5dcf8daa5ac4",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Transient E2F-1 overexpression causes apoptosis that is rescued by RelA co-expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 describes an experimental observation during transfection studies. While the observation is stated clearly, limited detail is provided about the methodology for assessing apoptosis. This finding is consistent with known E2F-1 pro-apoptotic functions and provides context for the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "95a01484-9bed-4ee5-a654-937ef4f69869",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "E2F-1 and I\u03baB\u03b1 may compete for RelA binding, and E2F-1/RelA co-occupy gene promoters in dendritic cells following LPS stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 is supported by data in Figure 4E showing I\u03baB\u03b1 can restore cytoplasmic RelA localization in the presence of E2F-1. Claim C67 cites published ChIP-Seq data (Garber et al., 2012) showing co-occupancy. Together these support a model of competitive binding and functional co-regulation, though the competition mechanism requires further validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    },
+    {
+      "id": "f0c77513-c425-48e7-95f5-2e65380a177e",
+      "content_id": "d2a447cf-58ec-4de9-a708-8e3491292866",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "E2F-4 knockdown is lethal to cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 is supported by citation to Crosby and Almasan, 2004. This explains why loss-of-function experiments for E2F-4 were not performed and is relevant for interpreting the experimental limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:45:27.617731Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "32d3d4f8-a4a2-4b46-96d6-d4dfa8e40d36",
+      "result_id": "e64d2496-92e5-4527-9781-b9bfe653d116"
+    },
+    {
+      "claim_id": "4394ff78-ec1c-4e33-9b6c-db2e23976cd3",
+      "result_id": "e64d2496-92e5-4527-9781-b9bfe653d116"
+    },
+    {
+      "claim_id": "b27a4432-5b5f-4264-8f41-f659554f912a",
+      "result_id": "e64d2496-92e5-4527-9781-b9bfe653d116"
+    },
+    {
+      "claim_id": "2d9509fc-e05c-44eb-a98c-2afe92cd6f75",
+      "result_id": "e64d2496-92e5-4527-9781-b9bfe653d116"
+    },
+    {
+      "claim_id": "7cb1b90f-2bb4-4566-8f9a-70a6d71e7fdf",
+      "result_id": "e64d2496-92e5-4527-9781-b9bfe653d116"
+    },
+    {
+      "claim_id": "a8d7dbf2-0092-4e79-8dac-f40fed077c96",
+      "result_id": "62a113a6-d6a6-495d-bf45-dd213a53cdba"
+    },
+    {
+      "claim_id": "06a4da75-66da-45b4-a977-1c11c4ec1e4e",
+      "result_id": "62a113a6-d6a6-495d-bf45-dd213a53cdba"
+    },
+    {
+      "claim_id": "84929035-b980-4db7-8c8a-0388d61671e9",
+      "result_id": "62a113a6-d6a6-495d-bf45-dd213a53cdba"
+    },
+    {
+      "claim_id": "bc6bb164-162c-41f2-8b77-f8eed668d693",
+      "result_id": "62a113a6-d6a6-495d-bf45-dd213a53cdba"
+    },
+    {
+      "claim_id": "75e1f63b-52e0-4706-8934-94bcf149f460",
+      "result_id": "62a113a6-d6a6-495d-bf45-dd213a53cdba"
+    },
+    {
+      "claim_id": "40ea9553-3dbf-421a-b418-ef1637e72906",
+      "result_id": "62a113a6-d6a6-495d-bf45-dd213a53cdba"
+    },
+    {
+      "claim_id": "c71da43c-6b35-429c-afe5-04a605cef7e1",
+      "result_id": "62a113a6-d6a6-495d-bf45-dd213a53cdba"
+    },
+    {
+      "claim_id": "3eeff591-96b9-43bd-9939-9e4999b20d9a",
+      "result_id": "62a113a6-d6a6-495d-bf45-dd213a53cdba"
+    },
+    {
+      "claim_id": "8308b3f1-6ec3-4e82-8978-fd3b9b52dce6",
+      "result_id": "1009e979-b1a9-456e-8637-c178d4a6c2d0"
+    },
+    {
+      "claim_id": "2bf9ad19-89db-486b-9bda-ef6d45905b56",
+      "result_id": "1009e979-b1a9-456e-8637-c178d4a6c2d0"
+    },
+    {
+      "claim_id": "2f0f89cc-8f2e-4326-b459-2906e2e46ee8",
+      "result_id": "1009e979-b1a9-456e-8637-c178d4a6c2d0"
+    },
+    {
+      "claim_id": "5a7237c2-8a86-484a-ac3d-d96dcb029e0f",
+      "result_id": "582441f9-b62f-4fe2-a8ce-6d4a649f1fd9"
+    },
+    {
+      "claim_id": "cd254c26-090e-4073-b907-cd01a9234225",
+      "result_id": "582441f9-b62f-4fe2-a8ce-6d4a649f1fd9"
+    },
+    {
+      "claim_id": "22b7adc4-bec8-4d34-98fd-ef41bc0d7a96",
+      "result_id": "582441f9-b62f-4fe2-a8ce-6d4a649f1fd9"
+    },
+    {
+      "claim_id": "8441d1bf-e1c0-467a-a263-22c6ffcbe0d3",
+      "result_id": "582441f9-b62f-4fe2-a8ce-6d4a649f1fd9"
+    },
+    {
+      "claim_id": "eb29f2e5-b1a5-4504-ad95-0e97e8f7c131",
+      "result_id": "80bf9e32-ee35-46c5-9231-ab7943a79821"
+    },
+    {
+      "claim_id": "74cff63a-529c-4a44-a359-540824cfb552",
+      "result_id": "80bf9e32-ee35-46c5-9231-ab7943a79821"
+    },
+    {
+      "claim_id": "1044a83c-6ff3-4ed4-b16d-eb8a8d17c9c5",
+      "result_id": "80bf9e32-ee35-46c5-9231-ab7943a79821"
+    },
+    {
+      "claim_id": "e2657813-33ec-4a4b-9dc8-8e583b20a08c",
+      "result_id": "80bf9e32-ee35-46c5-9231-ab7943a79821"
+    },
+    {
+      "claim_id": "4ec4c2a2-a050-47a6-9a09-86cbf1f5be58",
+      "result_id": "a44869e1-367b-4e73-937b-9addb1a04043"
+    },
+    {
+      "claim_id": "ffaaf2d7-7b42-498c-a8ea-f05b14cf436e",
+      "result_id": "a44869e1-367b-4e73-937b-9addb1a04043"
+    },
+    {
+      "claim_id": "26290fd7-7550-45d0-b964-138186d235cf",
+      "result_id": "a44869e1-367b-4e73-937b-9addb1a04043"
+    },
+    {
+      "claim_id": "f1d86c5d-967e-4b35-b630-a2ad0566d4d5",
+      "result_id": "1180ef3a-9eb0-4033-8554-deea14783001"
+    },
+    {
+      "claim_id": "43467273-c5d5-497d-b6b3-8bec99c2a6e5",
+      "result_id": "1180ef3a-9eb0-4033-8554-deea14783001"
+    },
+    {
+      "claim_id": "5fef7648-c7a4-483c-aee4-6f4b484cada7",
+      "result_id": "1180ef3a-9eb0-4033-8554-deea14783001"
+    },
+    {
+      "claim_id": "3bf9d92d-13c7-43e8-9f36-8ae9097ff47d",
+      "result_id": "1180ef3a-9eb0-4033-8554-deea14783001"
+    },
+    {
+      "claim_id": "3d0876a4-0329-42e8-8c85-a452efe11c1c",
+      "result_id": "1180ef3a-9eb0-4033-8554-deea14783001"
+    },
+    {
+      "claim_id": "a78e093d-4f94-45e1-b414-ccabc2d8fbf5",
+      "result_id": "02d0d816-e0c2-4184-bd70-2266c63d3df1"
+    },
+    {
+      "claim_id": "6528d335-69a9-444f-aa12-af880a02e825",
+      "result_id": "02d0d816-e0c2-4184-bd70-2266c63d3df1"
+    },
+    {
+      "claim_id": "b4050b35-f937-4d22-81fe-5e3b453c7c83",
+      "result_id": "02d0d816-e0c2-4184-bd70-2266c63d3df1"
+    },
+    {
+      "claim_id": "08b9b6f8-8c78-4510-8bdf-e8f5da0d810a",
+      "result_id": "02d0d816-e0c2-4184-bd70-2266c63d3df1"
+    },
+    {
+      "claim_id": "f9859464-416b-429f-aed8-9d7d1cc4a22a",
+      "result_id": "02d0d816-e0c2-4184-bd70-2266c63d3df1"
+    },
+    {
+      "claim_id": "f8c4a5b8-b602-45e5-b1d7-bc62918c9be9",
+      "result_id": "b3d00f3c-d570-46a7-9dba-82264465ad3a"
+    },
+    {
+      "claim_id": "cda47084-1e5c-41cc-b713-0316690932f9",
+      "result_id": "b3d00f3c-d570-46a7-9dba-82264465ad3a"
+    },
+    {
+      "claim_id": "e13b5672-780e-464d-80ba-6e2ac1e5c9c6",
+      "result_id": "b3d00f3c-d570-46a7-9dba-82264465ad3a"
+    },
+    {
+      "claim_id": "0604026e-ba06-4e50-9222-7ef6dd5ecb10",
+      "result_id": "b3d00f3c-d570-46a7-9dba-82264465ad3a"
+    },
+    {
+      "claim_id": "a93c7fa4-cb8f-44a0-aa6a-fdd7263d6c37",
+      "result_id": "b3d00f3c-d570-46a7-9dba-82264465ad3a"
+    },
+    {
+      "claim_id": "8ce11acc-cb51-4b57-969c-a1ba1f2348b7",
+      "result_id": "b3d00f3c-d570-46a7-9dba-82264465ad3a"
+    },
+    {
+      "claim_id": "b82508b9-70d7-42c2-becd-9ee29ef373fc",
+      "result_id": "2f576de0-e460-4f07-9787-05886d087f90"
+    },
+    {
+      "claim_id": "d64ca869-31b0-49ff-ac6b-3812b4dc8573",
+      "result_id": "2f576de0-e460-4f07-9787-05886d087f90"
+    },
+    {
+      "claim_id": "85748255-a7f6-48b7-864b-6e6e20297865",
+      "result_id": "2f576de0-e460-4f07-9787-05886d087f90"
+    },
+    {
+      "claim_id": "6d9adf20-6ba1-4288-9faa-343a49d3fb73",
+      "result_id": "2f576de0-e460-4f07-9787-05886d087f90"
+    },
+    {
+      "claim_id": "c459b105-955a-42f8-84c8-55060ce40272",
+      "result_id": "2f576de0-e460-4f07-9787-05886d087f90"
+    },
+    {
+      "claim_id": "2714b04c-8493-458c-a58a-1d69edff320b",
+      "result_id": "2f576de0-e460-4f07-9787-05886d087f90"
+    },
+    {
+      "claim_id": "36508220-85f6-4fd3-8b24-7926c9677e10",
+      "result_id": "42388d49-d7df-4b97-b4d0-58b419695571"
+    },
+    {
+      "claim_id": "aa45027f-d8c8-4e9a-af4a-0661f86b8042",
+      "result_id": "42388d49-d7df-4b97-b4d0-58b419695571"
+    },
+    {
+      "claim_id": "f5b8cd27-e84c-4db7-bc9a-104eb14b6ba7",
+      "result_id": "42388d49-d7df-4b97-b4d0-58b419695571"
+    },
+    {
+      "claim_id": "eaa29a84-d1da-40f4-ab2b-e56fd112fad9",
+      "result_id": "1bfc7438-6420-4baf-9831-941acad96131"
+    },
+    {
+      "claim_id": "98eb1902-13b1-45a8-ad4d-72efe4d4c5c9",
+      "result_id": "1bfc7438-6420-4baf-9831-941acad96131"
+    },
+    {
+      "claim_id": "987aa3cb-8acc-486e-b0ad-b388ced79423",
+      "result_id": "1bfc7438-6420-4baf-9831-941acad96131"
+    },
+    {
+      "claim_id": "d69dadcc-a9b1-4a0f-b66e-b7b9dfc8398e",
+      "result_id": "1bfc7438-6420-4baf-9831-941acad96131"
+    },
+    {
+      "claim_id": "46d60898-f257-438c-9b3c-b36175af7025",
+      "result_id": "1bfc7438-6420-4baf-9831-941acad96131"
+    },
+    {
+      "claim_id": "6a2dab0d-0dc2-4f44-a4e6-c16a88058310",
+      "result_id": "1bfc7438-6420-4baf-9831-941acad96131"
+    },
+    {
+      "claim_id": "094602c1-ae10-41b1-8e74-f5c386dc3261",
+      "result_id": "1bfc7438-6420-4baf-9831-941acad96131"
+    },
+    {
+      "claim_id": "a74fe021-294e-412c-9f8e-d19f8db44115",
+      "result_id": "1bfc7438-6420-4baf-9831-941acad96131"
+    },
+    {
+      "claim_id": "99aeca28-a79d-4ec8-8d9b-59b5caa99ed8",
+      "result_id": "1bfc7438-6420-4baf-9831-941acad96131"
+    },
+    {
+      "claim_id": "c7f2275a-d05e-4039-862f-0fcb299b8ba3",
+      "result_id": "1bfc7438-6420-4baf-9831-941acad96131"
+    },
+    {
+      "claim_id": "d071e6c0-afe6-43b6-b8ae-9fee7888f44e",
+      "result_id": "1bfc7438-6420-4baf-9831-941acad96131"
+    },
+    {
+      "claim_id": "08086c6b-37a6-4d02-a058-3a823c3c3e7c",
+      "result_id": "fa2275d3-d79b-48ff-8e4f-7bdd3c581c12"
+    },
+    {
+      "claim_id": "1e68804c-6293-4213-af04-ae3dc3c80589",
+      "result_id": "b764874a-1fab-40ac-84da-5dcf8daa5ac4"
+    },
+    {
+      "claim_id": "5247ddc1-ef0a-4bbb-875f-37b980646b68",
+      "result_id": "95a01484-9bed-4ee5-a654-937ef4f69869"
+    },
+    {
+      "claim_id": "256c39e3-0fbb-453d-843d-0e6982a9ff62",
+      "result_id": "95a01484-9bed-4ee5-a654-937ef4f69869"
+    },
+    {
+      "claim_id": "32568d87-09e6-4de1-8fb2-26ce6f4af598",
+      "result_id": "f0c77513-c425-48e7-95f5-2e65380a177e"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,417 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "CskAS BMDMs express normal levels of macrophage surface markers F4/80, CD11b, and CD11c, indicating proper differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is directly supported by flow cytometry data in Figure 1 showing normal expression of macrophage markers. This validates the CskAS BMDM model for subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Treatment with 3-IB-PP1 rapidly activates SFKs in CskAS BMDMs through loss of inhibitory-tail phosphorylation and gain of activation-loop phosphorylation, with no effect in WT cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5 are supported by immunoblot data in Figure 2 showing rapid (within seconds) changes in SFK phosphorylation states in CskAS but not WT cells. The specificity control (C5) validates the experimental system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Zymosan depleted of TLR2 agonists induces Erk and Akt phosphorylation through SFK- and Syk-dependent pathways, with Syk becoming SFK-independent after 5 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 are supported by immunoblot data in Figure 3 showing zymosandep-induced signaling and its inhibition by BAY 61-3606 and PP2. The temporal dynamics are supported by citations to prior work on Syk-independent activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "SFK activation by 3-IB-PP1 produces robust membrane-proximal signaling but fails to induce significant Erk phosphorylation, despite stronger proximal signaling than zymosandep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 are supported by immunoblot data in Figure 4A showing strong phosphorylation of SFKs, Syk, and PLC\u03b32 but minimal Erk activation. The comparison to pulse-spin controls (C12) strengthens the conclusion that this is not simply mechanical stimulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Multiple specificity controls demonstrate that 3-IB-PP1 effects are specific to CskAS and not due to off-target inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 are supported by data in Figure 4C and Figure 4\u2014figure supplement 1 showing no effect of 3-IB-PP1 on WT cells treated with zymosandep or M-CSF, and no change in global tyrosine phosphorylation in WT cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "3-IB-PP1 impairs M-CSF-induced Erk and Akt signaling in CskAS cells, suggesting an active signaling blockade rather than quantitative failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 are supported by immunoblot data in Figure 4\u2014figure supplement 2. This observation is important for interpreting the mechanism, though the inference about 'active blockade' (C21) requires additional mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "Actin-remodeling agents do not restore Erk phosphorylation in response to 3-IB-PP1 in macrophages, indicating a fundamentally different signaling blockade than in thymocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 are supported by immunoblot data in Figure 4\u2014figure supplement 3. The comparison to thymocytes is based on inference from differential responses, which is reasonable but could benefit from direct comparative experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "IFN-\u03b3 priming enables 3-IB-PP1 to induce robust downstream signaling through Erk, Akt, JNK, and NFAT, with minimal effect on zymosandep responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 are supported by immunoblot data in Figure 5A-B showing dramatic rescue of downstream signaling in primed cells. The differential effect on 3-IB-PP1 versus zymosandep responses is a key finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "IFN-\u03b3 priming enhances and sustains membrane-proximal signaling in response to 3-IB-PP1, though Syk phosphorylation is kinetically uncoupled from downstream Erk/Akt signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are supported by immunoblot data in Figure 5 and Figure 5\u2014figure supplement 1A showing enhanced phosphorylation of multiple signaling proteins. The kinetic uncoupling observation (C31-C32) is important for understanding the signaling mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "IFN-\u03b3 priming enhances phosphorylation of negative regulatory proteins (Sirp\u03b1, SHIP1, SHP-1) and activates Dok-3, indicating priming does not generally inhibit negative feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by immunoblot data in Figure 6 and co-immunoprecipitation data in Figure 6\u2014figure supplement 1. This counterintuitive finding rules out a simple model of priming suppressing negative regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Lyn is the primary SFK responsible for phosphorylating ITIMs and their associated phosphatases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is supported by citations to established literature (Ravetch and Lanier, 2000; Lowell, 2010). This is background knowledge used to generate the hypothesis about Lyn's role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The ability of 3-IB-PP1 to induce Erk phosphorylation requires at least 6-8 hours of IFN-\u03b3 priming, with robust signaling at 16 hours, suggesting transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 are supported by immunoblot data in Figure 7A showing time-dependent effects. The inference about transcriptional regulation (C40) is reasonable given the time course, though direct transcriptional evidence would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Lyn expression is substantially increased by IFN-\u03b3 priming and correlates with the ability of 3-IB-PP1 to induce Erk signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by immunoblot data in Figure 7A showing parallel increases in Lyn expression and Erk phosphorylation across different priming durations. This correlation is central to the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "GM-CSF priming produces intermediate Lyn upregulation and Erk phosphorylation, with Lyn and Csk being the only proteins upregulated by both IFN-\u03b3 and GM-CSF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 are supported by immunoblot data in Figure 7B-C. The selective upregulation of Lyn and Csk in both conditions strengthens the hypothesis that Lyn is the key factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Lyn deficiency completely abolishes 3-IB-PP1-induced Erk signaling in primed cells but does not affect zymosandep responses, revealing differential SFK requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by immunoblot data in Figure 8A showing complete loss of Erk signaling in Lyn\u2212/\u2212CskAS cells with 3-IB-PP1 but normal responses to zymosandep. This is a critical genetic validation of Lyn's specific role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "In Lyn-deficient cells, Hck and Fgr induce membrane-proximal signaling in response to 3-IB-PP1 but cannot rescue downstream Erk signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by immunoblot data in Figure 8A showing phosphorylation of proximal proteins but no Erk activation in Lyn\u2212/\u2212CskAS cells. This demonstrates Lyn has a unique, non-redundant function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Hck and Fgr expression is unaffected by Lyn deficiency, though Hck is upregulated by IFN-\u03b3 in both WT and Lyn\u2212/\u2212 cells, indicating Lyn-specific function rather than compensatory changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by immunoblot data in Figure 8B and citations to prior work. The normal IFN-\u03b3 response in Lyn\u2212/\u2212 cells (C55) rules out general impairment and supports the conclusion about Lyn-specific function (C56).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "LynA protein is preferentially depleted during 3-IB-PP1 treatment, with 60% loss within 2 minutes compared to ~30% loss of other SFKs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by immunoblot and densitometry data in Figure 9A-B showing selective LynA degradation. The quantification strengthens the observation of preferential depletion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "LynA is ubiquitinated after 3-IB-PP1 treatment, as shown by c-Cbl phosphorylation, increased ubiquitin in LynA immunoprecipitates, and protein laddering, while Hck is not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are supported by immunoblot data in Figure 5B, immunoprecipitation data in Figure 9C, and laddering in Figure 9\u2014figure supplement 2. The multiple lines of evidence for LynA ubiquitination are convincing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "LynA differs from LynB by a 21 amino-acid insert containing predicted ubiquitination (K40) and phosphorylation (Y32) sites, which may regulate LynA degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C66 are supported by sequence alignment in Figure 9\u2014figure supplement 3 and citations. However, C67 is explicitly speculative and lacks experimental validation. Direct mutagenesis experiments would be needed to confirm the role of these sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Lyn's inhibitory tail is dephosphorylated more rapidly than Hck's during 3-IB-PP1 treatment (5% vs 24% remaining after 1 minute).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are supported by immunoblot and densitometry data in Figure 10B showing differential dephosphorylation kinetics. The quantification provides strong evidence for preferential Lyn activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Both Lyn isoforms reach maximum activation-loop phosphorylation within 3-6 seconds, while Hck and Fgr continue accumulating for 1-3 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by densitometry data in Figure 10C showing differential activation kinetics. This temporal analysis reveals distinct activation dynamics among SFKs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Activated LynA is uniquely transient during 3-IB-PP1 treatment, with only 20% remaining after 3 minutes while other SFKs persist at 70-90% of maximum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by densitometry data in Figure 10C and Figure 10\u2014figure supplement 2. The quantification clearly demonstrates LynA's unique instability compared to other SFKs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "In IFN-\u03b3-primed cells, increased basal LynA expression buffers against degradation, maintaining LynA levels threefold higher than unprimed cells during the critical 3-5 minute signaling window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 are supported by immunoblot and densitometry data in Figure 11A-B. The quantitative comparison across time points provides strong evidence for the buffering mechanism. The inference about threshold levels (C80) is reasonable given the correlation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The authors propose a model where LynA degradation creates a signaling checkpoint for weak stimuli, which is bypassed by receptor clustering or overcome by IFN-\u03b3-induced LynA upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 represent the central model synthesizing the experimental findings. While these are inferred conclusions rather than direct observations, they are well-supported by the collective experimental evidence showing differential LynA requirements, degradation kinetics, and priming effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The authors speculate that priming sensitizes macrophages to pathogen ligands but may also increase inappropriate responses to host-derived ligands leading to immunopathology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C113 are explicitly speculative about physiological implications. While the speculation is reasonable given the experimental findings, it lacks direct experimental support and would require in vivo validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Prior work in mast cells and B cells shows differential functions of LynA versus LynB and negative regulation through Dok-3 complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 are supported by citations to established literature. This background knowledge provides context for interpreting the current findings, though the authors acknowledge they do not yet understand the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "The authors note that Lyn ubiquitination occurs rapidly in mast cells and speculate that LynA degradation would render macrophages refractory to restimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C118 is supported by citation to prior work. Claim C119 is speculative about functional consequences that are not directly tested in this study. Restimulation experiments would be needed to validate this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors place their findings in the context of other negative regulatory mechanisms in macrophages and propose the LynA checkpoint as an additional inflammation-sensing system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 are supported by citations to established literature on negative regulation. Claim C122 is a summary conclusion that is well-supported by the experimental findings, though the broader physiological implications remain to be fully validated.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Behavioral performance on the Go/No-Go task showed that subjects withheld responses on 56.6% of No-Go trials, detected 68.0% of errors, and exhibited faster primary RTs for detected errors (457 ms) compared to correct Go trials (511 ms) and undetected errors (543 ms). Primary RT and error detection RT were not correlated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 provide converging behavioral evidence with appropriate statistical tests (t-tests with reported p-values and effect sizes). The pattern of faster RTs for detected errors is consistent with speed-accuracy tradeoff and provides a foundation for subsequent neural analyses. Sample sizes (n=28) and statistical reporting are adequate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The centro-parietal positivity (CPP) exhibited build-to-threshold dynamics for first-order decisions, with build-up rate inversely proportional to RT and stereotyped amplitude at response. After commitment, the CPP continued to evolve selectively on detected error trials, with steeper build-up rates predicting faster error detection and reaching a fixed amplitude before error detection reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 demonstrate the core finding of post-decisional evidence accumulation with multiple converging lines of evidence: RT-binned waveforms (Figures 2a,d,e), ROC analysis showing early classification (C19), and threshold-crossing dynamics. The selective increase only after detected errors (C18) distinguishes this from simple motor preparation. Statistical support is provided through regression analyses and permutation testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C53"
+    ],
+    "result": "Error detection decisions were based on selective accumulation of evidence that the preceding choice was incorrect, indicating that humans can engage qualitatively distinct decision processes in succession using the same neural mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C53 represent key interpretive conclusions supported by the differential CPP dynamics between first-order (bidirectional accumulation for Go/No-Go) and second-order (unidirectional accumulation for error evidence) decisions. The inference is well-grounded in the observed data patterns, though the mechanistic details of how evidence is selectively accumulated remain to be fully specified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Fronto-central theta (FC\u03b8) power showed a sharp increase at the time of detected errors, achieved significant error detection classification 120 ms before error commission, and exhibited opposite relationships with RT for first-order (lower power for faster RTs) versus second-order (higher power for faster error detection) decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 establish FC\u03b8 as a predictor of error detection with appropriate statistical support (ROC analysis in C26, regression analysis in C29 with t27=-7.2, p<1\u00d710\u207b\u2076). The opposite RT relationships for first- and second-order decisions (C27-C28) are well-documented and consistent with prior literature. However, the mechanistic interpretation requires additional support from mediation analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Single-trial analyses revealed that FC\u03b8 power better predicted error detection timing than CPP amplitude, while CPP build-up rate and peak latency were superior predictors compared to FC\u03b8 dynamics. FC\u03b8 predicted error detection ~350 ms earlier than CPP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 provide detailed single-trial regression analyses with appropriate statistical comparisons (e.g., C31: t27=3.3, p=0.003). The dissociation between amplitude effects (FC\u03b8 dominant) and temporal dynamics (CPP dominant) is well-supported. However, the interpretation would benefit from consideration of potential confounds such as signal-to-noise differences between measures and the dynamic measurement windows used for peak latency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C55",
+      "C59"
+    ],
+    "result": "Mediation analysis showed that FC\u03b8 power predicted CPP build-up rate, and CPP build-up rate partially mediated the relationship between FC\u03b8 and error detection timing, indicating that medial frontal signals influence the rate of post-decision evidence accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 and C55 report formal mediation analysis with significant paths (p=0.0007 for FC\u03b8\u2192CPP, p=0.0009 for mediation effect). The partial mediation (C59) appropriately acknowledges that FC\u03b8 may influence error detection through additional pathways. However, the binning approach (12 trials per bin) to improve signal-to-noise may introduce artifacts, and the temporal overlap between FC\u03b8 and CPP measurements could complicate causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "A one-choice drift diffusion model fit the error detection data well, with simulated decision variables closely matching observed CPP dynamics. Model-derived drift ratio correlated with FC\u03b8 power (r=0.51) and CPP build-up rate (r=0.47) and peak latency (r=-0.52) across subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 demonstrate good model fit (\u03c7\u00b2 values in Table 1, 24/28 subjects below critical value) and meaningful correlations between model parameters and neural signals. The correspondence between simulated and observed waveforms (C39, Figure 6d) is compelling despite minimal data-driven constraints. However, the model's parameter identifiability problem (acknowledged in C70-C71) and the use of drift ratio to circumvent this issue should be interpreted cautiously. The between-subjects correlations are appropriately powered but would benefit from cross-validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "FC\u03b8 and CPP signals were observed in a no-report condition where subjects were not instructed to monitor errors, with amplitudes intermediate between detected and undetected errors. Multiple lines of evidence indicate these signals are not attributable to motor preparation or execution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 address a critical alternative explanation. The no-report experiment (n=12) with intermediate signal amplitudes (C44: FC\u03b8 t11=4.2, p=0.002; CPP t11=6.9, p<1\u00d710\u207b\u2074) supports the interpretation that these signals reflect metacognitive processing rather than motor reporting. The additional evidence from topographic stability (C47) and prior dissociation studies (C46) strengthens this conclusion. However, the smaller sample size and lack of trial-by-trial error awareness reports in the no-report condition limit stronger causal claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C48",
+      "C49"
+    ],
+    "result": "The study provides the first definitive neurophysiological demonstration that the same build-to-threshold decision variable signal continues to evolve after commitment, determines error detection timing and accuracy by selectively representing evidence of incorrect choices, and incorporates post-decisional information even without continued sensory input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C48-C49 represent the primary conclusions of the manuscript, supported by the convergence of multiple analyses (CPP dynamics, single-trial regressions, mediation, computational modeling, no-report control). The claim of being 'first definitive demonstration' (C49) is justified given the comprehensive characterization of accumulation-to-bound dynamics in the post-decision period. However, the novelty claim should be tempered by acknowledgment of prior Pe literature and theoretical models proposing post-decisional accumulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C54",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Medial frontal cortex signals, indexed by FC\u03b8, provide input to post-decision accumulation, indicating that metacognitive judgments incorporate internally generated conflict or error likelihood signals beyond feedforward sensory evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C54-C58 establish the contribution of pMFC to metacognition through multiple lines of evidence: predictive power of FC\u03b8 (C54), mediation by CPP build-up rate (C55), correlation with model-based evidence strength (C56), and theoretical grounding in conflict monitoring (C57-C58). However, the specific mechanistic role of pMFC (direct evidence source vs. modulatory influence) remains uncertain, as acknowledged by the partial mediation finding. Causal manipulations would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The post-decisional CPP corresponds to the Error Positivity (Pe) component and exhibits accumulation-to-bound dynamics never previously reported for Pe. Combined with prior work showing pre-decision CPP encompasses P300/P3b activity, this suggests P3b and Pe reflect distinct stages of the same neurophysiological process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 provide important theoretical integration with the ERP literature. The identification of post-decision CPP with Pe (C64) is supported by topographic and temporal correspondence, while the novel characterization of accumulation dynamics (C62) distinguishes this work from prior Pe studies. The unifying framework (C65) is a reasonable inference but remains somewhat speculative without direct experimental manipulation or source localization to confirm the same neural generators underlie both components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Prior theoretical work established that decisions involve evidence accumulation to threshold and that metacognition relies on the decision variable, but existing models cannot account for error detection without feedback. Alternative models propose post-decisional accumulation, but neurophysiological demonstration was lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 accurately characterize the theoretical landscape and identify the gap addressed by this study. The citations are appropriate and the logical progression from standard models (C6-C7) through their limitations (C8) to alternative proposals (C9) and the identified gap (C10) is well-constructed. This provides strong motivation for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Prior literature established that posterior medial frontal cortex (pMFC) is responsive to performance accuracy and predicts post-error adaptation across species and measurement modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 accurately summarize established findings with appropriate citations spanning multiple species and techniques. This provides necessary background for interpreting the FC\u03b8 results but does not constitute a novel finding of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The first-order Go/No-Go task involves competitive accumulation between choice alternatives, while the second-order error detection task is comparable to signal detection with a single boundary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 provide a reasonable theoretical framework for interpreting the qualitative differences in CPP dynamics between first- and second-order decisions. The characterization is supported by prior work (C50-C51) and the observed data patterns. However, this remains an interpretive framework rather than a directly tested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "EEG data were acquired with 64 electrodes at 512 Hz, preprocessed using ICA for artifact removal, converted to current source density, and Go trials with RT<350 ms were excluded due to contamination by visual-evoked potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 describe standard and appropriate EEG methods. The exclusion criterion (C69) is justified by data shown in Figure 2\u2014figure supplement 2. The use of current source density (C68) is well-motivated for reducing volume conduction. These methodological choices are appropriate and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "The one-choice diffusion model has parameter identifiability issues where v, \u03b7, and a can vary 2:1 while maintaining fit quality, but the drift ratio (v/\u03b7) remains invariant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 accurately describe a known limitation of the one-choice model (cited to Ratcliff & Van Dongen, 2011) and the solution employed. This is important methodological context for interpreting the modeling results, particularly the use of drift ratio in between-subjects correlations.",
+    "result_type": "MINOR"
+  }
+]

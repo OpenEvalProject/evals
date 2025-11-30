@@ -1,0 +1,252 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Three distinct types of embryonic preB\u00f6tC pacemaker neurons were identified based on their discharge patterns: plateau-like (n=23), oscillatory (n=45), and mixed (n=16), with statistically different drive potential durations, amplitudes, and resting membrane potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C34 provide comprehensive electrophysiological characterization with quantitative measurements from 84 pacemaker neurons across 69 preparations. Statistical analyses (Mann-Whitney and t-tests with p<0.001-0.002) demonstrate significant differences between groups. The data are supported by Figure 2 showing representative traces and quantitative distributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Both plateau and oscillatory pacemaker neurons exhibit voltage-dependent membrane properties with non-linear I-V curves and frequency modulation by current injection, though they differ significantly in I-V relationships at depolarized potentials (-20 to 0 mV).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 present electrophysiological characterization with appropriate sample sizes (n=6 plateau, n=14 oscillatory) and statistical testing (t-test, p<0.001). The findings are consistent with voltage-dependent pacemaker mechanisms and supported by Figure 3 data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Pharmacological dissection reveals that plateau pacemakers depend predominantly on ICAN (FFA-sensitive), oscillatory pacemakers on INaP (riluzole-sensitive), and mixed pacemakers show differential sensitivity to both blockers corresponding to their burst types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 present systematic pharmacological experiments with appropriate controls and sample sizes (10 plateau, 17 oscillatory, 10 mixed neurons). The differential drug sensitivity clearly distinguishes pacemaker subtypes and is supported by Figure 4. However, the interpretation assumes drug specificity, which could be affected by off-target effects at the concentrations used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The composition of the pacemaker population changes developmentally, with plateau and oscillatory types equally present at E16.5 (approximately 50:50) but oscillatory pacemakers predominating at E18.5 (65.7%), accompanied by a shift from balanced INaP/ICAN dependence to predominantly INaP-dependent mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C55 document developmental changes using both patch-clamp (n=27 at E16.5, n=35 at E18.5) and calcium imaging (n=32 at E16.5, n=27 at E18.5) with statistical validation (chi-square, p<0.001). The convergent evidence from two methodologies strengthens the conclusion, though the imaging data showed only a trend (p=0.1) rather than significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Computational modeling demonstrates that varying the ratio of gCAN to gNaP conductances in a single model neuron can reproduce all three pacemaker phenotypes observed experimentally, suggesting that developmental changes could involve shifts in conductance balance within individual neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 present computational modeling results that qualitatively reproduce experimental observations. The model successfully generates plateau (gCAN=2.5nS), mixed (gCAN=1nS), and oscillatory (gCAN=0nS) patterns as shown in Figure 6. However, C61 is speculative about the developmental mechanism and lacks direct experimental validation of conductance changes within individual neurons over time.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Network rhythmogenesis mechanisms change developmentally: at E16.5, combined blockade of INaP and ICAN completely abolishes rhythm, whereas at E18.5, rhythm persists (though reduced) under the same conditions, indicating a shift from purely pacemaker-driven to combined pacemaker/network-driven mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C69 present pharmacological experiments on network activity with appropriate statistics (n=8 per condition, t-tests and Mann-Whitney tests with p<0.001-0.01). The differential effects at E16.5 vs E18.5 are striking and supported by Figure 7. However, the interpretation is complicated by the fact that both pacemaker and non-pacemaker neurons possess these conductances (C105), making it difficult to isolate pacemaker-specific contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C90"
+    ],
+    "result": "Excitatory synaptic drive strength increases more than 3-fold from E16.5 (15\u00b10.9 nA) to E18.5 (55\u00b10.9 nA), supporting a developmental increase in the role of synaptic connectivity in network rhythmogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 and C90 present voltage-clamp measurements with adequate sample sizes (n=14 at E16.5, n=17 at E18.5) and strong statistical significance (Mann-Whitney, p<0.001). The >3-fold increase in synaptic current amplitude is substantial and supported by Figure 8. This provides direct evidence for increased synaptic connectivity complementing the pharmacological network data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The study concludes that embryonic preB\u00f6tC contains heterogeneous pacemaker neurons whose proportions change developmentally, and that network rhythmogenesis transitions from purely pacemaker-driven at E16.5 to a cooperative pacemaker/synaptic mechanism at E18.5, reconciling 'pacemaker' and 'group-pacemaker' hypotheses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 and C91-C94 synthesize the major findings into an integrated model. The conclusions are well-supported by the convergent evidence from multiple experimental approaches (electrophysiology, imaging, pharmacology, modeling). However, C75 about ensuring effective respiratory command at birth is speculative, and the mechanistic link between pacemaker subtype changes and network mechanism changes remains correlative rather than causally established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The study confirms that embryonic pacemakers include INaP-dependent and ICAN-dependent subtypes (as in postnatal animals), with ICAN generating slower plateau activity and INaP generating faster oscillatory bursts, and that plateau bursting is more prevalent at E16.5 (~50%) but superseded by oscillatory bursting by E18.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 contextualize findings within prior literature and provide mechanistic interpretation. The characterization is well-supported by experimental data, though C81 about burst termination mechanisms being refined is speculative. The comparison to neonatal patterns (C80) appropriately cites prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The developmental trajectory of ICAN-dependent pacemakers shows they are prevalent at E16.5, rare around birth (consistent with <1% at P0-P5 in prior studies), then re-emerge at P8-P10 (7.5%), though the functional significance of this re-emergence remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 appropriately integrate the current findings with prior literature (Pena et al., 2004; Del Negro et al., 2005). The consistency across studies strengthens the developmental trajectory, though C85 correctly identifies that the functional significance of postnatal re-emergence is unknown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "The observation of mixed pacemaker phenotypes expressing both plateau and oscillatory patterns suggests a mechanistic transition occurring within individual neurons, supported by computational modeling showing intermediate conductance ratios produce mixed patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C86 presents a plausible interpretation linking experimental observations (mixed phenotype neurons) with modeling results. However, this remains correlative evidence. Direct demonstration of conductance changes within individual neurons over developmental time would be required to definitively establish this mechanism versus alternative explanations (e.g., population replacement).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Network rhythmogenesis shifts from obligatory pacemaker-driven at E16.5 (complete blockade with INaP+ICAN inhibition) to a mechanism where pacemakers are no longer uniquely essential at E18.5 (rhythm persists under same blockade).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 interpret the pharmacological network data. While the differential drug effects are clear, the interpretation is complicated by C105 (all network neurons possess both conductances). The conclusion that pacemakers become less essential is reasonable but indirect, as the drugs affect the entire network. Alternative interpretations (e.g., compensatory mechanisms, incomplete blockade) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Understanding prenatal respiratory network development could provide insights into clinical aspects of early postnatal respiratory disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C95 is a speculative statement about potential clinical relevance. While plausible, no clinical data or specific disorder mechanisms are presented to support this connection. This represents a reasonable motivation for the work but is not a testable result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The study employed brainstem slice preparations (450 \u00b5m thick) from E16.5 and E18.5 mouse embryos, encompassing the preB\u00f6tC region capable of generating rhythmic activity, with pacemaker neurons identified by persistent rhythmic activity during synaptic blockade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 describe methodological approaches that are standard and well-established for this field. The slice preparation is appropriately characterized with anatomical landmarks and citations to prior work (C98). The operational definition of pacemaker neurons (C100) is appropriate, though C99 makes an assumption about anatomical boundaries that could include some non-preB\u00f6tC neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Riluzole blocks INaP and flufenamic acid blocks ICAN, though both conductances are present in most inspiratory network neurons including both pacemakers and non-pacemakers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 cite established pharmacological properties. C105 acknowledges an important caveat (from Del Negro et al., 2011) that complicates interpretation of network-level drug effects. This is appropriately recognized in the manuscript's interpretation of pharmacological results.",
+    "result_type": "MINOR"
+  }
+]

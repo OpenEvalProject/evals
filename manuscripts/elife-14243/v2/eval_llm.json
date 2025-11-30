@@ -1,0 +1,405 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C23",
+      "C30",
+      "C32",
+      "C36"
+    ],
+    "result": "Blocking PIC assembly by depleting TBP or Rpb1 results in promoter-specific H2A.Z accumulation genome-wide. TBP depletion led to H2A.Z accumulation at 56% of +1 nucleosomes, with corresponding H2A depletion. Similar results were observed with Rpb1 depletion, indicating that the PIC is required for H2A.Z eviction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C21, C30, C32, and C36 are directly supported by qChIP-seq data shown in Figures 1 and Figure 1\u2014figure supplement 8. The quantitative analysis (C32) and control experiments (C31) strengthen the conclusion. The reciprocal changes in H2A.Z and H2A (C21, C30) provide strong evidence for PIC-dependent H2A.Z eviction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C64",
+      "C70",
+      "C147",
+      "C156"
+    ],
+    "result": "INO80 depletion does not cause global H2A.Z accumulation, arguing against INO80 being the main evictor of H2A.Z. Instead, INO80 functions as a nucleosome slider, affecting nucleosome positioning but not H2A.Z eviction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C22, C64, and C147 are supported by qChIP-seq data in Figure 4 showing no significant H2A.Z accumulation upon Ino80 depletion. The nucleosome positioning defects (C65, C68, C69) are consistent with a sliding function. The methodological improvements (C149, C153-C155) address potential confounds from previous studies, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C55",
+      "C108"
+    ],
+    "result": "Robust, constitutive H2A.Z eviction occurs at both active and infrequently transcribed genes. When SWR1 activity is blocked by Swc5 depletion, H2A.Z levels drop to near-baseline across all transcriptional frequency groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C55, and C108 are supported by data in Figures 2C and 3C showing H2A.Z accumulation upon TBP depletion and H2A.Z depletion upon Swc5 depletion across genes with varying transcriptional frequencies. The observation that even infrequently transcribed genes show robust H2A.Z dynamics (C55) is a key finding demonstrating the generality of the phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The occupancy half-life of H2A.Z at +1 nucleosomes is less than 15 minutes, and SWR1 is the sole deposition pathway for H2A.Z at yeast promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by time-course data in Figure 3\u2014figure supplement 2 showing H2A.Z levels drop below 50% after 15 min of Swc5 depletion. Claim C57, that SWR1 is the sole deposition pathway, is inferred from the complete loss of H2A.Z after 60 min, which is a reasonable interpretation but could benefit from additional controls to rule out other potential deposition mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Depleting both TBP and Swc5 results in less dramatic H2A.Z depletion compared to Swc5 depletion alone, supporting the idea that PIC is required for H2A.Z eviction. However, TBP depletion does not completely prevent H2A.Z depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C59 are supported by data in Figures 3D-F showing that the double mutant has slower H2A.Z depletion than the Swc5 single mutant. The incomplete rescue (C59) is acknowledged and potential explanations are provided (C60, C61), though these remain speculative. The result supports the main conclusion while acknowledging complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C94",
+      "C95",
+      "C96",
+      "C98",
+      "C141",
+      "C142"
+    ],
+    "result": "Sites with strong H2A.Z turnover (measured by \u0394(Z/A)) precisely mark transcription start sites and can identify cryptic, alternative, and novel initiation sites. The approach identified 4,576 potential +1 nucleosomes, including 892 novel sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C94-C96, C98, C141-C142 are supported by data in Figure 7 showing that \u0394(Z/A) correctly identifies known TSSs and reveals novel sites. The computational analysis (C95-C96) is systematic, and validation with RNA-seq data (C101, C103, C105) strengthens the findings. Limitations are acknowledged (C143, C145), providing a balanced assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Ribosomal protein (RP) genes, which are highly transcribed and TFIID-enriched, show low steady-state H2A.Z but dramatic H2A.Z accumulation upon TBP depletion. H2A.Z removal at RP genes requires TBP but not Pol II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 are supported by data in Figure 2B and Figure 2\u2014figure supplement 1. The differential response to TBP vs. Rpb1 depletion (C46-C47) is particularly interesting and well-documented. The interpretation that H2A.Z is deposited but rapidly removed at RP genes (C45) is reasonable given the data, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "H2A.Z occupancy at +1 nucleosomes varies with transcriptional frequency, with highly transcribed genes showing lower steady-state H2A.Z. Upon TBP depletion, H2A.Z accumulates across all transcriptional frequency groups, with more dramatic increases at highly transcribed genes. SAGA-enriched genes show less H2A.Z accumulation than TFIID-enriched genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by quantitative analysis in Figure 2C. The differential behavior of SAGA vs. TFIID promoters (C52-C53) is well-documented, though the interpretation (C53) involves some speculation about the underlying mechanisms. The data clearly show transcription-dependent H2A.Z dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C78",
+      "C82"
+    ],
+    "result": "TBP and Rpb1 depletion cause nucleosomes to reposition away from the NDR, with more dramatic shifts toward the 3' end of genes. However, the size of the NDR remains largely unchanged, and +1 nucleosome shifts are minor, indicating that NDR formation can occur in the absence of the PIC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76, C78, and C82 are supported by data in Figure 5A-B. The comparison with previous rpb1-1 data (C73-C74) provides context. The observation that NDR size is unchanged (C78) and +1 shifts are minor (C74, C80) leads to the reasonable inference that PIC is not responsible for NDR formation (C82), though alternative remodelers are not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C93"
+    ],
+    "result": "H2A.Z dynamics are highly localized to +1 nucleosomes of Pol II-transcribed genes. At divergent promoters, H2A.Z accumulation is restricted to +1 positions, not -1 positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 and C93 are supported by data in Figures 2A and 6A, and Figure 6\u2014figure supplement 1. The analysis of divergent vs. tandem promoters (C84) and the specific example of 44 divergent promoters (C85) provide strong evidence for the localization of H2A.Z dynamics to +1 nucleosomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "At Pol I and Pol III promoters, TBP depletion has different effects than at Pol II promoters. At the RDN37 promoter, TBP depletion causes modest H2A.Z depletion. At tRNA genes, TBP depletion causes nucleosome encroachment into NDRs, suggesting the Pol III machinery is important for NDR formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by data in Figures 6B-D. The differential effects at Pol I and Pol III promoters (C86-C88) are clearly shown. The inference that Pol III machinery is important for NDR formation at tRNA genes (C89) is reasonable based on the nucleosome encroachment observed upon TBP depletion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Fragile nucleosomes are completely devoid of H2A.Z, and no H2A.Z accumulation is observed at fragile nucleosome positions when H2A.Z eviction is blocked by TBP depletion, indicating that H2A.Z deposition does not occur at these sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 are supported by data in Figures 6E-F showing the absence of H2A.Z at fragile nucleosomes both before and after TBP depletion. The inference that H2A.Z deposition does not occur at fragile nucleosomes (C92) is well-supported by the lack of H2A.Z accumulation upon blocking eviction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C112",
+      "C113"
+    ],
+    "result": "Sites with strong H2A.Z dynamics are enriched for SWR1, but SWR1 dissociates from promoters after TBP depletion rather than accumulating, arguing against aberrant SWR1 recruitment as the cause of H2A.Z accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39, C112-C113 are supported by ChIP-qPCR data in Figure 1\u2014figure supplement 9C showing decreased Swr1 occupancy upon TBP depletion. This argues against aberrant SWR1 recruitment (C112) and supports the interpretation that pre-existing SWR1 is responsible for H2A.Z accumulation (C113). However, the data are limited to two promoters, which is a weakness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Novel +1 nucleosomes identified by H2A.Z dynamics reveal alternative and internal transcription start sites. Examples include a second start site in GDH2, a masked start site in HSE1, and divergent promoters within the Ty3 retrotransposon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 are supported by data in Figure 7C-D and Figure 7\u2014figure supplement 1C-D. The identification of novel TSSs is validated by RNA-seq data (C101, C103, C105), providing strong evidence. These examples demonstrate the utility of the H2A.Z dynamics approach for TSS identification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The qChIP-seq approach achieves >80% IP efficiency and uses reference regions (no-Z-zones) for normalization. The method reports IP efficiency relative to input at individual nucleosomal sites and is not influenced by global occupancy changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 and C153-C155 describe the qChIP-seq methodology, which is supported by data in Figure 1\u2014figure supplement 3 and Figure 1\u2014figure supplement 4. The high IP efficiency (C27) and the normalization approach (C28) are well-documented. The advantages of the method (C154-C155) are reasonable based on the design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C29",
+      "C31",
+      "C33",
+      "C34"
+    ],
+    "result": "Under permissive conditions, H2A.Z is most prevalent at +1 nucleosomal positions. The TBP-FRB strain exhibits higher endogenous H2A.Z occupancy than the untagged strain, likely reflecting a partial defect of the TBP-FRB allele. Rapamycin treatment alone does not cause significant changes in histone dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C31, C33-C34 are supported by data in Figures 1A-D. The control experiment (C31) is important for ruling out rapamycin effects. The observation of higher baseline H2A.Z in TBP-FRB (C33) and its interpretation (C34) are reasonable, though the partial defect is not directly characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C149"
+    ],
+    "result": "The INO80-FRB anchor-away system is functional, as demonstrated by slow growth in hydroxyurea plus rapamycin and nuclear depletion of Ino80 after 90 min of rapamycin treatment. H2A.Z occupancy was assayed within 2 hours to minimize aneuploidy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 and C149 are supported by data in Figure 4\u2014figure supplement 1A-C. The functional validation (C62) and microscopy confirmation of depletion (C63) are appropriate controls. The rationale for the 2-hour timepoint (C149) addresses a potential confound from previous studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C158",
+      "C159"
+    ],
+    "result": "Upon Ino80 depletion, nucleosomal arrays become 'fuzzier' and nucleosomes shift away from the NDR at 983 genes. The sliding defect is reproducible and consistent with previous studies, though smaller than defects associated with other remodelers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 and C158-C159 are supported by data in Figure 4D and Figure 4\u2014figure supplement 1E. The computational analysis (C67) and comparison with previous work (C69, C159) strengthen the findings. The observation that the defect is small (C159) is acknowledged, leading to speculation about indirect or redundant roles (C160).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "At ribosomal protein genes, nucleosome downshift in gene bodies is exaggerated upon TBP or Rpb1 depletion, but +1 nucleosome shifts are minor. Previous work showed that heat shock repression causes upstream shifts of RP gene +1 nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 are supported by data in Figure 5B and citation to previous work (C81). The comparison with heat shock data (C81) provides context for interpreting the minor +1 shifts (C80), leading to the inference that PIC is not responsible for downstream positioning of +1 nucleosomes at RP genes (C82).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C117",
+      "C123",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "The relative enrichment of H2A.Z at +1 nucleosomes is a steady state maintained by opposing forces from SWR1 (deposition) and the transcription machinery (eviction). H2A.Z eviction is coupled to transcription rather than being an independent upstream process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110, C117, C123, C169-C171 represent the main conclusions of the study, which are well-supported by the collective experimental evidence. The model of opposing forces (C109-C110) is consistent with all major findings. The conclusion that eviction is coupled to transcription (C123) is supported by the TBP and Rpb1 depletion experiments, though the exact mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Input nucleosomal levels at +1 positions were largely unchanged upon TBP or Rpb1 depletion, which differs from previous work showing H3 accumulation. This discrepancy may be due to normalization or differential sensitivity to sub-nucleosomal intermediates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C129 address a discrepancy with previous work (C124). The observation (C125) is supported by the data, but the explanations (C126-C127, C131-C132) are speculative. The argument that qChIP-seq would show even greater H2A.Z accumulation if input increased (C127) is logical but doesn't fully resolve the discrepancy. Additional experiments would be needed to definitively address this issue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Promoter scanning mediated by TFIIH is speculated to be the driving force for H2A.Z eviction. Extended transcription bubbles could generate positive supercoils that destabilize the +1 nucleosome. Repeated futile scanning may explain H2A.Z dynamics at infrequently transcribed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C134-C138 are entirely speculative (C134 explicitly states 'we speculate'). While the model is mechanistically plausible and consistent with previous work on promoter scanning (C135), there is no direct experimental evidence in this study to support it. The speculation is reasonable but would require additional experiments to test.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background on SWR1 complex and H2A.Z dynamics: SWR1 catalyzes sequential replacement of H2A-H2B dimers with H2A.Z-H2B dimers. Substantial H2A remains at promoter-proximal nucleosomes alongside H2A.Z. Rapid H3 turnover implies complete nucleosome disassembly, with reassembly likely forming AA nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C16 are primarily background information supported by citations to previous work (C6-C12, C14, C16) or reasonable inferences based on established knowledge (C13, C15, C16). These claims provide context for the current study and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C146"
+    ],
+    "result": "Previous work on INO80's role in H2A.Z eviction is controversial. Some studies reported H2A.Z redistribution or accumulation in ino80\u0394 or arp5\u0394 mutants, while others showed normal H2A.Z occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 and C146 accurately summarize previous work on INO80, supported by appropriate citations. The controversy in the literature (C18-C20) provides important context for the current study's findings on INO80.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C148",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Potential explanations for discrepancies in previous INO80 studies include aneuploidy in deletion mutants and limitations of ChIP-chip and ChIP-exo methodologies for detecting global occupancy changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C148, C150-C152 offer speculative explanations for discrepancies in the literature. While the concerns about aneuploidy (C148) and normalization methods (C151) are reasonable, these remain speculative without direct evidence. The critique of ChIP-exo (C152) is plausible but not definitively demonstrated.",
+    "result_type": "MINOR"
+  }
+]

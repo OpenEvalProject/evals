@@ -1,0 +1,400 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The manuscript establishes the context that synaptic plasticity is fundamental to learning and memory, and that while the endocannabinoid (eCB) system has been widely characterized for its ability to depress synaptic transmission, recent reports suggest eCBs can also mediate synaptic potentiation. This contrasts with the major neurotransmitter systems (glutamate and GABA) which are known to allow bidirectional synaptic plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C15 provide well-established background knowledge supported by appropriate citations to the literature. These claims accurately represent the scientific consensus about synaptic plasticity, the eCB system's traditional role in synaptic depression, and the emerging evidence for eCB-mediated potentiation. The contrast with glutamate/GABA bidirectionality sets up the study's central question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C24",
+      "C61",
+      "C62",
+      "C110",
+      "C122",
+      "C125"
+    ],
+    "result": "The central finding is that STDP outcome at corticostriatal synapses is controlled by eCB levels and dynamics: prolonged and moderate levels of eCB lead to eCB-tLTD while short and large eCB transients produce eCB-tLTP. The mathematical model proposes that eCB-tLTD requires moderate levels of CB1R activation (reached with pre-post pairings), while eCB-tLTP demands higher levels of CB1R activation (reached only with 5-30 post-pre pairings).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C24, C61-C62, C110, C122, C125 represent the study's main conclusion and are well-supported by converging evidence from STDP experiments (Figures 1, 4-5), 2-AG puff experiments (Figure 6), MAGL inhibition experiments (Figures 7-9), and mathematical modeling (Figures 2-4). The experimental data consistently demonstrate bidirectional eCB plasticity, and the model successfully predicts experimental outcomes across multiple conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "At 1 Hz with 100 pairings, post-pre pairings (-30<\u0394tSTDP<0 ms) induced NMDAR-mediated tLTP (156\u00b115%, p=0.0015, n=19), while pre-post pairings (0<\u0394tSTDP<+30 ms) induced CB1R-mediated tLTD (76\u00b18%, p=0.0051, n=11). The STDP displays anti-Hebbian polarity, which depends on whether GABAA receptor antagonists are applied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 are supported by experimental data in Figure 1 with appropriate statistical tests (p-values and sample sizes reported). The pharmacological dissection with D-AP5 and AM251 clearly demonstrates NMDAR-dependence of tLTP and CB1R-dependence of tLTD. The anti-Hebbian polarity is consistent with previous reports and properly contextualized with citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Lowering the number of pairings to 10 yields CB1R-mediated tLTP for post-pre pairings (163\u00b112%, p<0.0001, n=25) but no significant plasticity for pre-post pairings (97\u00b111%, p=0.3844, n=8). The tLTP induced with 10 post-pre pairings was blocked by AM251 (88\u00b111%, p=0.3073, n=5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by experimental data in Figure 1E with appropriate statistics. The pharmacological blockade with AM251 clearly demonstrates CB1R-dependence. This finding is critical for establishing the existence of eCB-tLTP and distinguishing it from NMDAR-tLTP based on the number of pairings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The locus of eCB-tLTP maintenance is presynaptic, as demonstrated by decreased paired-pulse facilitation (PPFplasticity/baseline=0.872\u00b10.044, p=0.0470, n=14), coefficient of variation analysis (CV-2=3.6\u00b10.6, p=0.0008, n=17), and the observation that AM251 applied after STDP pairings did not prevent tLTP, indicating maintenance downstream of CB1R activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by multiple lines of experimental evidence in Figure 1F-H. The paired-pulse ratio, CV-2 analysis, and post-induction AM251 application all converge on a presynaptic locus of maintenance. These are standard approaches for determining the locus of plasticity expression, and the results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "NMDAR-tLTP induced by 100 post-pre pairings is CaMKII-dependent, as pharmacological inhibition with KN62 (3 \u00b5M) blocked this plasticity (88\u00b111%, p=0.3324, n=6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 is supported by experimental data in Figure 1\u2014figure supplement 1. The pharmacological approach with KN62 is appropriate for testing CaMKII involvement, and the result is consistent with established mechanisms of NMDAR-dependent LTP. However, the sample size is relatively small (n=6).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The mathematical model combines NMDAR-to-CaMKII and mGluR-to-eCB-CB1R signaling pathways. The total synaptic weight is the product of presynaptic (Wpre) and postsynaptic (Wpost) contributions, with Wpost proportional to activated CaMKII. The model exhibits bistable dynamics requiring 50-60 post-pre pairings to reach the threshold for LTP, and predicts no NMDAR-dependent plasticity for pre-post pairings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 describe the mathematical model structure and predictions shown in Figure 2. The model is based on established signaling pathways and successfully reproduces key experimental observations. The bistable CaMKII dynamics are adapted from Graupner and Brunel (2007), providing a solid foundation. The model predictions match experimental data for the number of pairings required for NMDAR-tLTP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The model predicts a biphasic envelope of calcium peak amplitude during repeated pairings: calcium first increases for 10-20 pairings (due to IP3-mediated calcium release from ER) then decreases (as ER calcium depletes). This biphasic pattern is transmitted to eCB production and CB1R activation, with CB1R desensitization amplifying the decay. CB1R activation reaches large values only for short post-pre pairings (\u0394tSTDP around -15 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 describe model predictions shown in Figure 3 with mechanistic explanations. The biphasic calcium dynamics arise naturally from the model's IP3 pathway and ER calcium depletion. This provides a mechanistic explanation for why eCB-tLTP is observed only with specific numbers of pairings. The model predictions are internally consistent and provide testable hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The mathematical model correctly accounts for experimental observations including the plasticity gap at 40-60 post-pre pairings, quantitative agreement for amplitude and sign of plasticity, and dependence on spike timing. In-silico knockouts of NMDAR or CB1R signaling reproduce experimental pharmacology results. The model is claimed to be the first able to account for plasticity outcomes when both \u0394tSTDP and Npairings are varied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 demonstrate strong agreement between model predictions and experimental data shown in Figure 4. The in-silico knockouts successfully reproduce pharmacological experiments with D-AP5/KN62 and AM251. The claim of novelty (C66) regarding simultaneous variation of \u0394tSTDP and Npairings appears reasonable but would benefit from more explicit comparison with existing models. Overall, the model validation is thorough.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Sensitivity analysis shows the model is robust to the choice of sharp vs. smooth thresholds for eCB-dependent plasticity. The most sensitive parameters are those related to reactions known from pharmacological experiments to be crucial for STDP (CaMKII, calcium buffering, TRPV1, NMDAR, DAGLipase, MAGL, FAAH), as well as CB1R desensitization dynamics and glutamate dynamics in the synaptic cleft.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 describe sensitivity analysis results shown in Figure 4\u2014figure supplement 1. The analysis appropriately identifies that the model is robust to threshold shape and that sensitive parameters correspond to experimentally validated components. The sensitivity to glutamate dynamics (C74-C75) is noted as surprising and provides a testable prediction. The sensitivity analysis is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The model predicts that increasing frequency above 1 Hz enlarges the \u0394tSTDP range for eCB-tLTP with post-pre pairings and produces a new tLTP with pre-post pairings at frequencies >2 Hz. Experimental validation at 0.1, 2.5, and 4 Hz confirms these predictions: tLTP is observed at 0.1 Hz (133\u00b114, n=10, p=0.0386), and at 2.5 and 4 Hz, symmetric Hebbian plasticity emerges with tLTP for both post-pre and pre-post pairings, with enlarged \u0394tSTDP ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C85 demonstrate successful model predictions validated by experiments shown in Figure 5. The model correctly predicts qualitative trends with frequency variation despite not incorporating frequency-dependent glutamate dynamics. The experimental data at multiple frequencies (0.1, 1, 2.5, 4 Hz) with appropriate statistics support the emergence of symmetric Hebbian plasticity at higher frequencies. Some quantitative mismatches are noted but do not undermine the main findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "At 2.5 and 4 Hz, pharmacological experiments show that post-pre tLTP requires both CB1R and NMDAR signaling (blocked only by AM251+D-AP5 together, not individually), and pre-post tLTP is primarily NMDAR-dependent (blocked by D-AP5 alone). This suggests that at frequencies above 1 Hz, tLTP becomes both eCB and NMDAR-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by pharmacological data in Figure 5\u2014figure supplement 1A. The experimental design appropriately tests individual and combined antagonists. The conclusion that high-frequency tLTP involves both pathways is well-supported. The model predictions (Figure 5\u2014figure supplement 1B) show reasonable agreement, though requiring 15 rather than 10 pairings at 4 Hz.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Direct 2-AG application experiments validate the model prediction that eCB levels control plasticity polarity: 100 puffs of low (20 \u00b5M) or high (100 \u00b5M) 2-AG induce CB1R-mediated LTD, while 10 puffs of high 2-AG (100 \u00b5M) induce CB1R-mediated LTP (168\u00b129%, p=0.0106, n=5). 10 puffs of low 2-AG produce no significant plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 are supported by 2-AG puff experiments in Figure 6. This is a critical validation of the model's central hypothesis that eCB concentration and duration control plasticity direction. The experimental design directly tests the model prediction by manipulating 2-AG levels independently of electrical stimulation. The pharmacological controls with AM251 confirm CB1R-dependence. The magnitudes of LTP/LTD are similar to those induced by STDP protocols, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Five post-pre pairings is the minimal number to induce significant eCB-tLTP (134\u00b113%, p=0.0190, n=17), as predicted by the model. MAGL inhibition with JZL184 (1.5 \u00b5M) significantly increases the magnitude of eCB-tLTP (182\u00b117%, p=0.0048, n=6; p=0.0294 vs. control), and this amplification is CB1R-mediated (blocked by AM251). MAGL inhibition also increases the occurrence of eCB-tLTP from 60% to 100% of cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 are supported by experiments in Figure 7. The MAGL inhibition experiments provide strong evidence that 2-AG levels control plasticity magnitude, as predicted by the model. The pharmacological controls are appropriate, and the increase in both magnitude and occurrence of eCB-tLTP with JZL184 is compelling. The control showing no effect of JZL184 alone (C100) is important for ruling out non-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "MAGL inhibition can induce eCB-tLTP for activity patterns that normally produce no plasticity: 50 post-pre pairings fail to induce plasticity in control conditions (101\u00b17%, p=0.9030, n=13) but induce CB1R-mediated tLTP under MAGL inhibition with JZL184 (139\u00b115%, p=0.0248, n=9; blocked by AM251).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 are supported by experiments in Figure 8. This demonstrates that manipulating 2-AG degradation can convert a 'no plasticity' outcome into LTP, providing strong support for the model's prediction that eCB levels gate plasticity. The experimental design appropriately targets the 'plasticity gap' at 50 pairings identified in Figure 4A. The pharmacological control with AM251 confirms CB1R-dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "MAGL inhibition can reverse the polarity of plasticity: 100 presynaptic stimulations alone induce CB1R-mediated LTD in control conditions (76\u00b19%, p=0.0337, n=8; blocked by AM251), but under MAGL inhibition with JZL184, the same stimulation triggers CB1R-mediated LTP (143\u00b117%, p=0.0299, n=11; blocked by AM251+JZL184). Thus, manipulating MAGL activity can control magnitude, induce, or reverse eCB plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 are supported by experiments in Figure 9. This is a striking demonstration that 2-AG levels can reverse plasticity polarity, converting LTD to LTP. The experimental design is appropriate, though the model does not predict the LTD observed with 100 presynaptic stimulations in control (C136), which the authors acknowledge as a mismatch. Nevertheless, the reversal to LTP with MAGL inhibition strongly supports the model's hypothesis about eCB level control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "eCB-tLTD requires active calcineurin (CaN) but not PKA, as CaN inhibition with cyclosporin A prevents eCB-tLTD (122\u00b118%, p=0.2560, n=6) while PKA inhibition with KT5720 does not (74\u00b110%, p=0.020, n=5). Conversely, eCB-tLTP requires presynaptic PKA but not CaN, as bath-applied KT5720 prevents eCB-tLTP (98\u00b12%, p=0.3203, n=4) while cyclosporin A does not (154\u00b117%, p=0.0305, n=5). Intracellular PKA inhibition does not affect eCB-tLTP, indicating presynaptic PKA is critical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C119 are supported by pharmacological experiments in Figure 10. The differential requirements for CaN vs. PKA in eCB-tLTD vs. eCB-tLTP provide important mechanistic insights. The use of intracellular PKA inhibitors (i-KT5720, i-PKI 6-22) to localize PKA to the presynaptic compartment is methodologically sound. The proposed mechanism (C119) that intermediate CB1R activation triggers LTD via PKA inhibition+CaN activity, while high CB1R activation triggers LTP via PKA activity+CaN inhibition, is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C123",
+      "C124",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The study demonstrates that STDP efficiently triggers eCB signaling and that eCB signaling controls STDP polarity bidirectionally depending on activity pattern. The findings suggest that manipulation of MAGL activity may bootstrap synaptic plasticity in synapses where the postsynaptic neuron is silent, potentially rescuing pathological situations. The regulation of MAGL activity may be a potent mechanism to control synaptic plasticity and learning/memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C121, C123-C124 are well-supported summaries of the study's findings. However, claims C126-C128 are speculative implications about potential therapeutic applications and in vivo relevance. While the citation to Keimpema et al. (2013) about NGF control of MAGL degradation provides some support, the functional implications for learning and memory in vivo remain to be tested. These are reasonable hypotheses for future work but are not directly demonstrated in the current study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Short puffs of highly concentrated 2-AG yield LTP in the absence of electrical stimulation, with amplitude (~165%) and pharmacology (AM251 sensitivity) identical to tLTP from 10 post-pre pairings. Prolonged 2-AG puffs (\u00d7100) produce LTD instead, which the model attributes to CB1R desensitization. This may explain why prolonged 2-AG applications in previous studies systematically yielded LTD and why eCB-dependent potentiation has been difficult to observe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C133 provide important discussion of the 2-AG puff results and their implications. The observation that short, high-concentration 2-AG puffs produce LTP while prolonged puffs produce LTD (C131) is well-supported by Figure 6 data. The mechanistic explanation via CB1R desensitization (C131) is a reasonable inference from the model. The speculation about why previous studies found only eCB-LTD (C133) is plausible but remains speculative without direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The mathematical model shows good agreement with experimental data, even for conditions not used for fitting (frequency >1 Hz, MAGL inhibition). However, some mismatches exist: the model does not predict LTD from 100 presynaptic stimulations alone (observed experimentally), and quantitative agreement at different frequencies is imperfect. The model lacks frequency-dependent glutamate dynamics, limiting precise quantitative predictions when frequency varies, though qualitative trends are correctly predicted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C143 provide an honest assessment of model strengths and limitations. The acknowledgment of mismatches (C135-C136, C141-C142) and model limitations (C138-C139) is appropriate. The observation that the model still predicts correct qualitative trends despite lacking frequency-dependent mechanisms (C140, C143) demonstrates robustness. The sensitivity to glutamate dynamics (C137) suggests this as an important area for future model refinement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The study places findings in context of previous work on eCB-LTD in hippocampus and nucleus accumbens, noting that eCB-tLTD in dorsolateral striatum also requires CaN activity. The inverse dependence of eCB-tLTP on PKA/CaN compared to eCB-tLTD is discussed, with a proposed mechanism that eCB-STDP is gated by the PKA/CaN activity ratio: high CB1R activation produces high PKA/CaN ratio (eCB-tLTP), while intermediate CB1R activation produces low PKA/CaN ratio (eCB-tLTD).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C157 provide appropriate contextualization with previous literature and propose a mechanistic model for how CB1R activation level controls plasticity direction via PKA/CaN balance. The comparison with hippocampus and nucleus accumbens (C144-C148) is well-supported by citations. The proposed PKA/CaN ratio mechanism (C156-C157) is a reasonable hypothesis based on the experimental data, though it remains speculative and is appropriately presented as such. The mechanism is illustrated in Figure 10\u2014figure supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C158"
+    ],
+    "result": "The study concludes that eCB bidirectional plasticity constitutes a versatile system whose operation may underlie a complex repertoire of learning abilities, depending on activity pattern at corticostriatal circuits and behavioral context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C158 is a reasonable concluding statement that synthesizes the study's findings. While the specific implications for learning abilities and behavioral context are speculative (not directly tested), the conclusion that eCB bidirectional plasticity is a versatile system is well-supported by the comprehensive experimental and modeling evidence presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The experimental methods section describes that all experiments were performed in accordance with animal welfare guidelines, using Sprague-Dawley rats for brain slice electrophysiology, with horizontal slices prepared according to previously published methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C161 describe standard methodological details that are appropriately documented. The reference to ethical compliance (C159) and citation of previous methods (C161) are appropriate. These are routine methodological claims that do not require extensive evaluation.",
+    "result_type": "MINOR"
+  }
+]

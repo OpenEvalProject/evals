@@ -1,0 +1,1608 @@
+{
+  "submission": {
+    "id": "68c11f50-02fb-4ecf-bb78-e5bf5e79e4aa",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:41:27.196287Z",
+    "updated_at": "2025-11-29T23:41:27.196287Z"
+  },
+  "content": [
+    {
+      "id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "submission_id": "68c11f50-02fb-4ecf-bb78-e5bf5e79e4aa",
+      "content_type": "manuscript",
+      "content_text": "# Discovery and validation of sub-threshold genome-wide association study loci using epigenomic signatures\n\n## Authors\n\n- Xinchen Wang<sup>1</sup> ([ORCID: 0000-0002-5198-6581](https://orcid.org/0000-0002-5198-6581))\n- Nathan R Tucker<sup>4</sup>\n- Gizem Rizki<sup>1</sup>\n- Robert Mills<sup>4</sup>\n- Peter HL Krijger<sup>5</sup>\n- Elzo de Wit<sup>5</sup>\n- Vidya Subramanian<sup>1</sup>\n- Eric Bartell<sup>1</sup>\n- Xinh-Xinh Nguyen<sup>4</sup>\n- Jiangchuan Ye<sup>4</sup>\n- Jordan Leyton-Mange<sup>4</sup>\n- Elena V Dolmatova<sup>4</sup>\n- Pim van der Harst<sup>7</sup>\n- Wouter de Laat<sup>5</sup>\n- Patrick T Ellinor<sup>2</sup>\n- Christopher Newton-Cheh<sup>2</sup>\n- David J Milan<sup>4</sup> \u2020\n- Manolis Kellis<sup>2</sup> \u2020\n- Laurie A Boyer<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biology Massachusetts Institute of Technology Cambridge United States\n2. Broad Institute of MIT and Harvard Cambridge United States\n3. Computer Science and Artificial Intelligence Laboratory Massachusetts Institute of Technology Cambridge United States\n4. Cardiovascular Research Center Massachusetts General Hospital Boston United States\n5. Hubrecht Institute-KNAW, University Medical Center Utrecht Utrecht Netherlands\n6. University Medical Center Utrecht Utrecht Netherlands\n7. Department of Cardiology, University Medical Center Groningen University of Groningen Groningen Netherlands\n8. Department of Genetics, University Medical Center Groningen University of Groningen Groningen Netherlands\n9. Center for Human Genetic Research, Massachusetts General Hospital Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nGenetic variants identified by genome-wide association studies explain only a modest proportion of heritability, suggesting that meaningful associations lie 'hidden' below current thresholds. Here, we integrate information from association studies with epigenomic maps to demonstrate that enhancers significantly overlap known loci associated with the cardiac QT interval and QRS duration. We apply functional criteria to identify loci associated with QT interval that do not meet genome-wide significance and are missed by existing studies. We demonstrate that these 'sub-threshold' signals represent novel loci, and that epigenomic maps are effective at discriminating true biological signals from noise. We experimentally validate the molecular, gene-regulatory, cellular and organismal phenotypes of these sub-threshold loci, demonstrating that most sub-threshold loci have regulatory consequences and that genetic perturbation of nearby genes causes cardiac phenotypes in mouse. Our work provides a general approach for improving the detection of novel loci associated with complex human traits.\n\n## Introduction\n\nGenome-wide association studies (GWAS) hold the promise of identifying genetic loci that drive complex disease, however realizing this goal has been challenging due to the modest effect sizes of most common variants that require extremely large cohorts to detect with significance. The recent demonstration that disease-associated single nucleotide polymorphisms (SNPs) reside preferentially in enhancer elements provides a unique opportunity to leverage epigenomic maps of regulatory elements for understanding the function of known GWAS loci and for prioritizing new loci missed in current studies (Ernst et al., 2011; Cowper-Sal\u00b7lari et al., 2012; Maurano et al., 2012; Trynka et al., 2013). Despite increasingly large GWAS cohort sizes, the current catalog of genome-wide significant loci still explains only a modest proportion of the heritability for any given trait, with an excess of low p-value loci still below the genome-wide significance threshold (Arking et al., 2014). These observations suggest that many more signals with 'sub-threshold' significance remain to be identified, however, the recognition of biologically relevant sub-threshold loci is hindered by a higher false positive rate (Hindorff et al., 2009; Maher, 2008; Altshuler et al., 2008). Thus, new computational approaches that integrate genetic data with genome-wide epigenomic profiles are needed to use existing cohorts to discover new loci and genes that influence complex traits and diseases.\n\nHere, we use epigenomic maps of 127 tissues from the Roadmap Epigenomics Project as a guide to systematically identify biologically relevant sub-threshold variants (Roadmap Epigenomics Consortium, 2015). As proof of concept, we focused on two cardiac traits with clinical significance: electrocardiographic QT interval reflecting myocardial repolarization and QRS duration reflecting cardiac conduction. These two traits have a clear tissue of origin and published GWASs have reported over a hundred QT/QRS loci, making these traits ideal for testing variants with sub-threshold significance (Supplementary file 1) (Hindorff et al., 2009; Maher, 2008; Altshuler et al., 2008). In particular, variation within QT interval length plays an important role in human disease, where extreme QT prolongation is associated with sudden cardiac death and can occur as an unintended side effect of many non-cardiac medications (Rabkin et al., 1982; Heist and Ruskin, 2010). We combine genome-wide maps of cardiac enhancer activity with the results from a large study of QT interval duration to identify dozens of novel QT loci with sub-threshold statistical significance. We provide multiple lines of evidence to show that these sub-threshold loci can alter enhancer activity, and we implicate specific genes through which these loci act to influence QT interval length. Importantly, we demonstrate that epigenetic signals can distinguish true biological signals from noise, thus bypassing the higher false positive rate that has previously hindered study of sub-threshold loci. We expect our work will uncover new genes involved in cardiac electrophysiology, aid in the identification of patients at risk for sudden cardiac death, and enable development of new treatments for susceptible individuals. More broadly, our work demonstrates the power of integrating epigenomics with existing GWAS to discover sub-threshold genetic loci and novel genes associated with complex human disease.\n\n## Results\n\n### QT/QRS-associated variants are enriched in cardiac enhancers\n\nWe compiled a list of 112 QT/QRS loci from the NHGRI GWAS database (accessed July 2013, Supplementary file 1) and identified SNPs in strong linkage disequilibrium (r2>0.8) using genotype data from the 1000 Genomes Project (Phase 1, CEU population) (1000 Genomes Project Consortium, 2010). We also collected GWAS loci from a later meta-analysis of QT interval studies, published in June 2014 by Arking et al., which we held out from the aforementioned 112 QT/QRS loci as a validation dataset for subsequent analyses (Arking et al., 2014). Because only 22 of 112 loci (20%) harbor SNPs that overlap exons, we examined whether QT/QRS variants are enriched in predicted enhancer elements across the genome using chromatin maps across 127 tissues generated by the Roadmap Epigenomics Project including adult left ventricle (LV), adult right ventricle (RV), fetal heart (FH) and adult right atrium (RA) (Roadmap Epigenomics Consortium, 2015). QT/QRS variants have greatest overlap with predicted enhancers (as defined by high levels of H3K4me1 and low H3K4me3 using ChromHMM) from the four cardiac tissues compared to the other 123 non-cardiac tissues (red circles, Figure 1b, Supplementary file 1) (Ernst et al., 2011). This enrichment persists over randomly sampled sets of control loci with matched genetic properties such as minor allele frequency, number of SNPs in LD, distance to nearest gene, number of nearby genes, and presence on an Affymetrix 660W genotyping array (Figure 1a, Materials\u00a0and\u00a0methods). Enhancers from the LV showed the strongest enrichment of the four cardiac tissues (z-scores=7.67, empirical p<1x10\u22125, 105 permutations), demonstrating that an unbiased analysis can resolve the causal tissue with high precision, as QT interval and QRS duration are primarily reflective of myocardial repolarization in the ventricles.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/10557/elife-10557-fig1-v1.jpg)\n\n**Figure 1.:** (a) Enrichment of human left ventricle enhancers in 112 QT/QRS loci. The number of loci that contain a SNP overlapping an enhancer are computed for the 112 QT/QRS loci, and compared against 100,000 permutations of randomly sampled control loci matched for LD block size (number of SNPs), MAF, distance to nearest gene, number of nearby genes, and presence on genotyping array. (b) Top, Enrichment of enhancers from 127 human tissues in QT/QRS loci. Bottom, Enrichment of enhancers from non-cardiac tissues for QT/QRS loci is substantially weaker following removal of enhancers active in any of the four cardiac tissues. (c) Top, QT/QRS SNPs are more likely to disrupt motifs corresponding to expressed TFs compared to 100,000 sets of matched control loci. Bottom, Weaker enrichment was observed between repolarization and matched control loci when the sequence of the TF motif was randomly shuffled and re-mapped to the genome (10,000 permutations).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10557/elife-10557-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Comparison of H3K4me1-enhancers defined by a 15-state model of ChromHMM against other ChromHMM states including protein-coding and non-coding genes and their promoters as well as DNase I hypersensitive (DHS) peaks that broadly mark regulatory regions. The left panel shows the enrichment of features in the 112 GWAS loci compared to randomly sampled control loci; the right panel shows the total number of the 112 GWAS loci overlapped by each feature.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/10557/elife-10557-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Comparison of enhancers defined by H3K4me1 against other ChromHMM states in fetal heart, adult right ventricle and adult right atrium. The left panel shows the enrichment of features in the 112 GWAS loci compared to randomly sampled control loci; the right panel shows the total number of the 112 GWAS loci overlapped by each feature.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/10557/elife-10557-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The number of loci that contain a SNP overlapping an enhancer are computed for the 112 QT/QRS loci, and compared against 100,000 permutations of randomly sampled control loci.\n\nFocusing on the left ventricle, we analyzed the enrichment of both coding annotations using GENCODE and non-coding annotations using individual chromatin marks and chromatin states defined by ChromHMM as well as DNase I hypersensitivity (DHS) maps available in heart tissue (Ernst et al., 2011; Harrow et al., 2012; Thurman et al., 2012). We observed that intergenic enhancers are the most strongly enriched annotated genomic region (z-score > 7.5) in QT/QRS loci, followed by gene transcription regions (z-score between 3 and 6) (Figure 1\u2014figure supplements 1 and 2). This enrichment increased significantly (z-score from 7.67 to 9.31 for left ventricle) when restricting the analysis to 'strong' enhancers (i.e.\u00a0H3K4me1 enhancers that are also marked by H3K27ac). Our results indicate that predicted enhancers are highly informative for annotating trait-associated variants compared to other classes of genomic regions.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/10557/elife-10557-fig2-v1.jpg)\n\n**Figure 2.:** Several functional characteristics were compared between enhancers overlapping QT/QRS loci (red) and non-GWAS left ventricle enhancers (blue). Fold change represents fold change between median values for the two groups, and p-values were calculated using the Mann-Whitney U test. See Materials\u00a0and\u00a0methods for comparison methodology between GWAS QT/QRS enhancers and non-GWAS enhancers for each functional or epigenomic feature. For primate conservation, LV enhancers (blue) were size-matched (+/-1\u00a0kb) to GWAS enhancers to control for skewed enrichments driven by larger GWAS enhancer size.\n\nWe next asked whether LV enhancers that overlap QT/QRS loci have features that distinguish them from putative LV enhancers identified by ChromHMM that do not overlap QT/QRS loci (Figure 2). First, we considered the density of H3K27ac marks, as the co-enrichment of H3K4me1 and H3K27ac correlates with strong enhancer activity (Creyghton et al., 2010; Rada-Iglesias et al., 2011). We found that the 65 enhancers overlapping 45 QT/QRS loci have a 3.1-fold higher H3K27ac density compared to non-GWAS LV enhancers (p=1.53x10--4). In fact, incorporating H3K27ac into ChromHMM enhancer predictions resulted in substantially greater enrichment of QT/QRS loci (z-score = 9.31 vs. 7.67 for left ventricle); 44 of the 45 QT/QRS loci overlap an H3K27ac-defined 'strong' enhancer. QT/QRS LV enhancers are also more likely to be marked by either H3K4me1 or H3K27ac in at least one of the other three heart tissues (fetal, right atrium, right ventricle) compared to non-GWAS LV enhancers (p-values between 0.004 and 0.04, Figure 2) and less likely to be active in non-cardiac tissues (p=9x10-3, Figure 2).\n\nLeft ventricular QT/QRS enhancers are significantly more hypomethylated than predicted LV enhancers not overlapping QT/QRS loci (hypomethylation p=1.07x10-6, hypermethylation p=0.60, Figure 2). Similar to H3K27ac, CpG hypomethylation correlates with increased enhancer activity, possibly through modulation of TF binding site accessibility (Hon et al., 2013; Stadler et al., 2011). Consistent with this idea, 22 of the 45 GWAS loci contain an enhancer SNP that alters a predicted motif for a cardiac-expressed TF (empirical p=0.002, 105 permutations) (Figure 1c). Moreover, QT/QRS GWAS enhancers are enriched for DHS and Cap Analysis Gene Expression (CAGE) signals in human fetal heart, both of which are marks of greater enhancer activity (Figure 2) (Thurman et al., 2012; Andersson et al., 2014). Finally, QT/QRS left ventricular enhancers show significant evolutionary conservation across the primate lineage compared to non-GWAS LV enhancers (p=6.82x10-5 compared to 105 size-matched sets of LV enhancers), suggesting that perturbation of these enhancers is under stronger negative selection. Taken together, QT/QRS loci preferentially overlap conserved enhancers that show cardiac-restricted activity, suggesting that common variants associated with these loci play roles in regulating cardiac functions that drive human phenotypes.\n\n### Common features in GWAS cardiac enhancers identify novel sub-threshold loci\n\nCurrent GWAS loci collectively explain only a small fraction of the estimated heritability of a complex trait in part due to strict Bonferroni thresholds for multiple hypothesis testing (p<5x10-8) and the limited statistical power of existing studies to discover variants with modest effect sizes (Maher, 2008; Yang et al., 2011). We hypothesized that knowledge of the genomic properties associated with existing GWAS loci can guide the search for additional genetic signals that cannot be detected without increasing GWAS cohort sizes, and that these loci with weaker 'sub-threshold' p-values (i.e. 0.05>p>5x10-8) might reveal novel genes and biological pathways that contribute to complex disease. To test this idea, we used SNP summary statistics from the Arking et al. (2014) QT interval GWAS study we had earlier held out as a validation dataset (Arking et al., 2014). These summary statistics include the 112 QT/QRS loci identified by prior GWASs (red dots, bottom, Figure 3), as well as loci that reach genome-wide significance in the larger meta-analysis cohort but were not discovered in any previous GWAS (and therefore were not included in the 112 QT/QRS loci used for enrichment analyses above, gold dots, bottom, Figure 3). We observed that active LV enhancers are strongly enriched for loci harboring SNPs with p-values between 1x10-4 and 5x10-8 (Figure 3a, black line). Furthermore, the combination of functional features identified for above-threshold QT/QRS enhancers (Figure 2) substantially improves sub-threshold locus enrichment across a wide range of p-value thresholds (Figure 3a, colored lines, Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/10557/elife-10557-fig3-v1.jpg)\n\n**Figure 3.:** (a) Top, Enhancer characteristics learned on above-threshold QT/QRS loci from Figure 2 are predictive for additional sub-threshold loci (colored lines). Each point on a curve represents the fold difference in proportion of SNPs with p-value below the cutoff in the enhancer set versus the whole genome. Bottom, Manhattan plot of p-values for all SNPs from Arking et al. (2014) QT interval GWAS. 112 QT/QRS loci and all SNPs within 1\u00a0Mb are highlighted in red. Genome-wide significant loci newly discovered by Arking et al. and not in the 112 QT/QRS loci are highlighted in yellow. (b) Top, Enrichment signals for sub-threshold SNPs in left ventricle enhancers persists following removal of the 112 GWAS loci and nearby SNPs (+/- 1\u00a0Mb). Bottom, Manhattan plot of p-values for all SNPs from Arking et al. (2014) QT interval GWAS following removal of 112 QT/QRS loci and all SNPs within 1\u00a0Mb. Genome-wide significant loci newly discovered by Arking et al. and not in the 112 QT/QRS loci are highlighted in yellow.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10557/elife-10557-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Top: Enrichment of DHS reads in GWAS enhancers. Middle: Example comparison of sub-threshold locus enrichment in active LV enhancers vs. active LV enhancers with high DHS read density. Bottom: Y-axis of graphs corresponds to fold enrichment of sub-threshold loci in enhancers taken at three p-value cutoffs (10-4, 10-5 and 10-6). X-axis represents enrichments plotted for different subsets of enhancers chosen by varying DHS read density cutoffs.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/10557/elife-10557-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The foreground consisted of only SNPs within +/- 1\u00a0Mb of the 112 QT/QRS loci, and was compared against a background of all SNPs in the genome. Enrichment analyses were performed as described for Figure 2.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/10557/elife-10557-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Enrichment was calculated by comparing the number of loci that overlap an enhancer against 100,000 sets of randomly sampled control loci matched for genetic properties (LD block size, MAF, distance to nearest gene, number of nearest genes and presence on genotyping array).\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/10557/elife-10557-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Top, Enhancer characteristics learned for QT/QRS loci (e.g. H3K27ac, CpG hypomethylation) are also effective for enrichment of LDL cholesterol-associated sub-threshold loci in human adult liver enhancers. Bottom, Enrichment of Alzheimer\u2019s disease-associated sub-threshold SNPs in enhancers from peripheral blood monocytes. Tissue type was chosen using results by Gjoneska et al. (2015) computing enrichment of genome-wide significant Alzheimer\u2019s disease loci across enhancers from Roadmap Epigenomics tissues (Gjoneska et al., 2015).\n\nWhether the enrichment of SNPs in the sub-threshold significance range represents linkage disequilibrium with existing above-threshold GWAS SNPs or novel biologically relevant loci remains an unresolved question (Maurano et al., 2012). In fact, an enrichment analysis using only SNPs nearby above-threshold GWAS loci produced a strong enrichment signature in the sub-threshold significance range (Figure 3\u2014figure supplement 2). To distinguish between the two possibilities, we took a conservative approach and removed all SNPs within 1Mb of the initial 112 QT/QRS loci. Remarkably, the enrichment for LV enhancers persists and increases in the sub-threshold range (i.e. p=1x10-4 to 5x10-8, Figure 3b), likely due to removal of nominally significant SNPs that are in LD with above-threshold QT/QRS loci and do not represent true association signals. The enrichment for active LV enhancers in sub-threshold loci is not driven by biases in MAF, LD block size, distance to nearest gene, number of nearby genes, or presence on a SNP genotyping array (Figure 3\u2014figure supplement 3). In total, we identified 2075 SNPs with p<1x10-4 that are independent of the 112 published QT/QRS loci, of which 208 SNPs overlap LV enhancers (Supplementary file 2).\n\n### Epigenomic prioritization identifies sub-threshold loci with molecular functions\n\nBecause the enrichment of sub-threshold SNPs in cardiac enhancers suggests that epigenetic prioritization can be used as a starting point for more in-depth investigations of sub-threshold signals from GWAS, we sought to directly test the molecular hypothesis that these sub-threshold loci impact the transcriptional regulation of cardiac genes (Figure 4a). We grouped all 2075 sub-threshold SNPs using linkage disequilibrium data (minimum r2=0.2) to identify 287 independent sub-threshold loci in the genome (Materials\u00a0and\u00a0methods). We prioritized loci where a sub-threshold SNP overlapped an active LV enhancer and either (i) also overlapped a fetal heart DNase I hypersensitivity peak or (ii) was an expression quantitative trait locus (eQTL) for a nearby gene. In total, we cloned allele-specific enhancer fragments from 22 cardiac enhancers that overlap SNPs from 18 independent sub-threshold loci, and performed quantitative luciferase assays in human iPSC-derived cardiomyocytes to determine whether the sub-threshold SNP genotypes influence enhancer activity (Materials\u00a0and\u00a0methods). We observed that 13 of 18 sub-threshold loci (72.2%) contain an enhancer that drives luciferase activity in an allele-specific manner (Figure 4b,d, Figure 4\u2014figure supplement 1). Moreover, we estimate that between 51.1%-89.8% (95% Bayesian confidence interval) of prioritized sub-threshold loci show allele-specific activity on transcription, suggesting that the majority of sub-threshold loci identified by epigenomic prioritization do in fact have an impact on transcriptional enhancer activity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/10557/elife-10557-fig4-v1.jpg)\n\n**Figure 4.:** (a) Model detailing how sub-threshold SNPs overlapping enhancers can affect QT interval. Green text: methods used to test mechanistic step in model. (b) Summary of luciferase enhancer reporter experiments. Left, luciferase enhancer reporter construct. Right, number of loci tested in panel d that exhibits significant allelic activity (p<0.05 between two haplotypes). (c), Left, schematic of a 3-D enhancer-promoter chromatin interaction detectable by 4C-seq. Right, number of loci tested in panel d where an enhancer-promoter interaction is observed in human iPS-derived cardiomyocytes by 4C-seq. (d) Experimental evidence that sub-threshold SNPs alter enhancer activity and that sub-threshold enhancers interact with gene promoters. Fold below GWS column represents degree to which sub-threshold locus is below genome-wide significance (5x10-8); Luciferase reporter column colored green if significant allelic difference in activity (p<0.05, Figure 4\u2014figure supplement 1); Enhancer-promoter interactions column colored green if there is a detectable enhancer-promoter interaction by 4C-seq (Figure 4\u2014figure supplement 3).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10557/elife-10557-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** For each sub-threshold locus, enhancers carrying one of two haplotypes were cloned upstream of a minimal promoter and firefly luciferase reporter gene. Blue: enhancer carrying reference allele; red: enhancer carrying alternate allele. Error bars represent standard error of the mean.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/10557/elife-10557-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a) Four of five sub-threshold loci outside enhancers do not drive significant allele-specific enhancer activity (p>0.05). The 1 kilobase window surrounding the sub-threshold SNP was cloned into luciferase enhancer reporter construct. Blue: enhancer carrying reference allele; red: enhancer carrying alternate allele. Error bars represent standard error of the mean. (b) Allele frequency of rs9504919 in human populations. Most human individuals are homozygous for the less active C allele of rs9504919, suggesting that a potential enhancer at rs9504919 could be missed in epigenome profiling studies.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/10557/elife-10557-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Height of blue bars represents interaction strength with 4C viewpoint. Red curves indicate enhancer-promoter interactions called within an annotated GENCODE promoter (up to 2.5\u00a0kb upstream of TSS) at a threshold of 5.0.\n\nWe also performed chromosome conformation capture combined with high-throughput sequencing (4C-seq) to experimentally test whether predicted enhancers in sub-threshold loci can form contacts with promoters, and to identify potential target genes of sub-threshold enhancers. We used 4C-seq to test ten predicted enhancers from eight sub-threshold loci in human iPSC-derived cardiomyocytes (van de Werken et al., 2012). Eight enhancers in six loci formed enhancer-promoter interactions in the proximal 500\u00a0kb region (Figure 4c, Figure\u00a04\u00a0\u2014 figure supplement 3). These analyses provides evidence that the novel QT loci enhancers have regulatory activity and that the sub-threshold SNPs identified in our analyses can alter the activity of cardiac enhancers.\n\n### Epigenomic prioritization discriminates biologically relevant sub-threshold loci\n\nWe next tested whether epigenomic prioritization can distinguish biologically relevant sub-threshold loci by comparing properties of sub-threshold loci that do or do not overlap cardiac enhancers. From the 287 independent sub-threshold loci in the genome, we selected two subsets to compare: 60 loci that contain sub-threshold SNPs directly overlapping predicted active LV enhancers, and as a negative control, 129 sub-threshold loci that do not\u00a0contain any SNPs (r2>0.2) overlapping a cardiac enhancer.\n\n#### Evidence from genome-wide association studies\n\nWe reasoned that if sub-threshold loci that overlap active cardiac enhancers represent true biological signals, they should have stronger GWAS association signals than the negative control set. We present multiple lines of evidence supporting this hypothesis below (Figure 5a):\n\nThese analyses demonstrate that genome-wide maps of predicted enhancers can facilitate the detection of true sub-threshold loci.\n\n#### Evidence from organismal phenotypes\n\nOur identification of a high-confidence set of sub-threshold loci based on epigenomic signals provides a unique opportunity to discover new genes that contribute to cardiac electrophysiological traits. As enhancers can regulate genes up to 1Mb away, it is difficult to identify targets using a simple nearest gene approach (Fullwood et al., 2009). To circumvent this limitation, we developed a computational enhancer-gene linking method that prioritizes gene targets based on correlated activity patterns between enhancer-gene pairs across 59 human tissues (Materials\u00a0and\u00a0methods). Using this approach, we identified 106 candidate genes predicted to be regulated by the 60 enhancer-overlapping sub-threshold loci (Supplementary file 2). Notably, 11 of the 15 observed 4C-seq interactions were predicted by our computational approach, compared to 3 of 15 by the commonly applied approach of assigning the enhancer target to the nearest gene.\n\nWe used the output of the enhancer-gene linking method to test whether these candidate genes have roles in QT interval. To this end, we studied mouse phenotypes for directed knockouts and genetic perturbations of the 106 predicted gene targets of sub-threshold enhancers. We identified 49 of the 106 genes where mouse mutant models were available with documented phenotypes (Bello et al., 2015). Genetic perturbation in 11 of the 49 genes resulted in altered cardiac conduction or cardiac contractility: both processes that are also influenced by genes nearby above-threshold QT interval loci and genes implicated in the Mendelian Long QT syndrome. This represents a 4.11-fold enrichment compared to genes linked to all active LV enhancers (181 of 3311, p=6.84x105, black bar, Figure 5b). In contrast, phenotypes arising from genetic perturbation of LV-expressed genes nearby the 129 negative control sub-threshold loci outside enhancers are 7.30-fold less likely to result in altered cardiac conduction or contractility compared to our 60 prioritized sub-threshold loci (p=1.92x10-3, perturbation of 2 of 65 genes nearby the negative control subset have relevant cardiac phenotypes, light\u00a0grey bar, Figure 5b).\n\nThe study of biologically relevant sub-threshold loci has been hampered by a high false positive rate that makes the detailed investigation of any sub-threshold locus experimentally more difficult and less attractive than above-threshold loci. The data presented here provide multiple independent lines of evidence that epigenomic signatures can be used to prioritize sub-threshold GWAS loci with a significantly greater likelihood of being biologically relevant.\n\n### Sub-threshold locus at rs1743292/rs1772203 functionally disrupts enhancer activity\n\nOnly a very small number of above-threshold GWAS loci, including SORT1 for LDL cholesterol, the FTO/IRX3 locus for obesity, and the SCN5A/SCN10A locus for QRS duration, have been investigated in detail (Musunuru et al., 2010; van den Boogaard et al., 2012; van den Boogaard et al., 2014; Arnolds et al., 2012; Smemo et al., 2014). These studies all identified SNPs within non-coding regulatory elements that disrupt expression of a nearby gene that plays a critical role in controlling a human phenotype. In contrast, no sub-threshold locus has been experimentally studied or validated to date. We selected one locus on chromosome 6 where our results from Figures 4 and 5 suggest that sub-threshold SNPs disrupt enhancer activity and therefore expression of a gene involved in cardiac electrophysiology. We set out to investigate whether this locus can serve as an example for future investigations of other sub-threshold loci.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/10557/elife-10557-fig5-v1.jpg)\n\n**Figure 5.:** (a) Left, Sub-threshold loci overlapping enhancers have significantly stronger association signals than loci outside enhancers in the QT interval GWAS. Middle, Loci overlapping enhancers have significantly more likely to be newly genome-wide significant in the held-out QT interval GWAS, than loci outside enhancers. Right, Sub-threshold loci overlapping enhancers are significantly more likely to be nominally significant (p<0.05) in QRS GWAS than sub-threshold loci not overlapping enhancers. (b) Genetic perturbation of genes with predicted links to 60 enhancer-overlapping sub-threshold loci are significantly more likely to result cardiac conduction or contractility phenotypes than genes linked to all LV enhancers and genes nearby non-enhancer overlapping sub-threshold loci.\n\nThe sub-threshold locus on chromosome 6 contains 8 SNPs with reported p-values less than 1x10-4 and another 2 SNPs in LD that do not have calculated p-values. We focused on the 3 SNPs in this locus that overlap active LV enhancers: rs1743292 (p=6.48x10-5) and rs112332323 (p-value not available) that both overlap a 3.6\u00a0kb predicted enhancer, and rs1772203 (p=5.87x10-5) that overlaps a 2.8\u00a0kb predicted enhancer (Figure 6a,b). We cloned fragments corresponding to both enhancers upstream of a minimal promoter driving the luciferase gene, and compared luciferase activity between constructs carrying either the major or minor haplotypes at each site (rs1743292 enhancer: Figure 6c, rs1772203 enhancer: Figure 6e, SNPs differing between cloned constructs listed at bottom of Figure 6b). We observed that the activity of both enhancers is dependent on the sub-threshold haplotype: at the rs1743292 enhancer, the major haplotype has 45% greater activity (p=2.99x10-12), while the minor haplotype is 28% more active in the rs1772203 enhancer (p=1.79x10-5).\n\nIn the fetal human heart, rs1743292 overlaps a strong DNase I hypersensitivity peak marking a local region of open chromatin signifying potential transcription factor binding (DHS track, Figure 6b) (Neph et al., 2012). Thus, to provide evidence that the rs1743292 locus alters enhancer activity in humans, we re-aligned the DHS sequencing reads from heterozygous human individuals in an allele-specific manner to assess the difference in the number of reads that map to either allele (Maurano et al., 2012). In fetal heart tissue from one individual sequenced to high depth, rs1743292 shows a significant allelic imbalance for DHS reads with 97 reads mapping to the major C allele and 300 reads mapping to the minor T allele (left, Figure 6d, p=3.1x10-25, binomial test). This trend is consistent in all five additional human individuals heterozygous at rs1743292 sequenced at lower depth (right, Figure 6d), suggesting that rs1743292 can affect enhancer activity potentially through altering chromatin accessibility or transcription factor binding. Moreover, using motif analysis, we observed that rs1743292 alters a predicted binding site for the cardiac-expressed nuclear factor NF-I family (Figure 6f), which contains a family member (NF-1a) that itself has been associated by GWAS with cardiac electrophysiology (Ritchie et al., 2013).\n\nWe used 4C-seq to identify genes that could be regulated by the rs1743292 or rs1772203 enhancers. We observed that both enhancers form interactions with promoters of the upstream popeye-domain containing (POPDC) family members BVES/POPDC1 and POPDC3, and with predicted enhancers situated within introns of the downstream PREP gene (Figure 6a,g). This suggests that both enhancers may contribute to regulating the gene expression of BVES and POPDC3, of note because the POPDC protein family of transmembrane proteins has recently reported roles in cardiac pacemaking (Froese et al., 2012; Kirchmaier et al., 2012).\n\nWe sought to investigate the roles of the three candidate target genes (BVES, POPDC3, PREP) of the rs1743292/rs1772203 locus in regulating myocardial repolarization. Consistent with the genetic association between this locus and QT interval length, we found that mice homozygous for loss-of-function copies of BVES exhibit cardiac conduction and pacemaker defects (Figure 6h) (Bello et al., 2015; Froese et al., 2012). In contrast, POPDC3 and PREP mouse loss-of-function models have no reported cardiac abnormalities, and instead show altered body fat, suggesting that this genetic locus alters QT interval length through the BVES gene (Bello et al., 2015).\n\nStrengthening our evidence implicating BVES in QT interval, we observed that across 59 human tissues, BVES is most highly expressed in human left ventricle, whereas POPDC3 has much lower expression in cardiac tissue than skeletal muscle, and PREP is constitutively expressed across a wide range of tissues (Figure 6\u2014figure supplement 1). We also used antisense morpholino oligonucleotides to knockdown transcripts from the BVES, POPDC3 and PREP orthologs in zebrafish, observing that bves knockdown leads to a reproducible shortening of the zebrafish ventricular action potential duration (APD), the cellular correlate of the QT interval, (p=0.002 and 0.09 for two independent morpholino sequences), whereas there is no reproducible difference in ventricular APD following loss of popdc3 or prep transcripts (Figure 6\u2014figure supplement 2). Collectively, these data from multiple organisms provide evidence that SNPs within the rs1743292/rs1772203 locus alter QT interval duration through disruption of BVES expression.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/10557/elife-10557-fig6-v1.jpg)\n\n**Figure 6.:** (a) Overview of rs1743292/rs1772203 sub-threshold locus. Gold rectangles represent predicted active LV enhancers, blue and green lines represent enhancer promoter interactions from the rs1743292 and rs1772203 enhancers, respectively (see panel g). (b) Detailed view of cardiac enhancers overlapping rs1743292 (left) and rs1772203 (right). (c) rs1743292 haplotypes differing at 6 SNPs (listed at bottom of panel b) affect activity of cardiac enhancer in human iPSC-derived cardiomyocytes, n=24 per haplotype. Error bars represent standard error of the mean. (d), Left, rs1743292 alters level of DNase I hypersensitivity in a heterozygous human fetal heart sample. Right, Allelic imbalance of DHS reads at rs1743292 observed for 5 of 5 human individuals. (e) rs1772203 allele affects activity of cardiac enhancer in human iPSC-derived cardiomyocytes, n=16 per allele. Error bars represent standard error of the mean. (f) rs1743292 SNP overlaps a predicted nuclear factor I (NF-I) motif. (g) 4C-seq analysis of the rs1743292 (blue) and rs1772203 (green) enhancers identifies enhancer-promoter interactions with nearby BVES, BVES-AS1 and POPDC3 genes, and additional enhancer-enhancer interactions within introns in PREP. (h) Genetic perturbation of Bves, but not Popdc3 or Prep leads to cardiac electrophysiological defects in mouse models.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10557/elife-10557-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Red bars correspond to chambers of the adult human heart (LV = left ventricle, RV = right ventricle, RA = right atrium), orange corresponds to skeletal muscle (SM = skeletal psoas muscle). Sample labels (E##) correspond to labels assigned by the Roadmap Epigenomics Consortium anrd available on the Roadmap Epigenomics website <http://egg2.wustl.edu/roadmap/web_portal/meta.html> (Roadmap Epigenomics Consortium, 2015).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/10557/elife-10557-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Effect of gene knockdown using two independent morpholino sequences (red, blue) on ventricular action potential duration compared against control scrambled morpholino (black). Top: Sample optical voltage mapping traces from one matched morpholino and control knockdown pair. Bottom: Differences in APD80 between control and antisense morpholino oligonucleotide-mediated knockdown zebrafish. * corresponds to p<0.05 from unpaired two-tailed Student\u2019s t-test, n=19 for control scrambled morpholinos, n=20 for each morpholino targeting BVES, POPDC3, or PREP transcripts, error bars represent standard error of the mean.\n\nThese results provide evidence that cardiac enhancers can be used to identify novel sub-threshold loci and genes associated with cardiac traits. As demonstrated with the luciferase enhancer reporter assays, and specifically the rs1743292/rs1772203 locus, sub-threshold loci harbor SNPs that affect enhancer activity and regulate genes involved in QT interval. In the current QT interval GWAS, rs1743292 had an effective sample size of 68,900 individuals with 12.76% power to detect the locus at genome-wide significance. To detect rs1743292 at genome-wide significance with 80% power would require a GWAS cohort of 146,700 individuals. Thus, our study demonstrates that genome-wide enhancer maps are a powerful tool for identifying sub-threshold loci with bona fide roles in human cardiovascular physiology that would have remained otherwise unrecognized from existing GWAS cohorts.\n\n## Discussion\n\nA major limitation in the human genetics field is the inability to ascribe function to the vast majority of non-coding SNPs associated with complex human traits. Using enhancer annotations from hundreds of cell types and tissues, we find ~50% of QT/QRS GWAS loci overlap enhancers, and that these enhancers share common characteristics, including H3K27ac marks, CpG hypomethylation, and greater evolutionary conservation. The high density of common variation we observed in non-coding enhancers may be due to weaker evolutionary selection against the subtle phenotypes that arise from disruption of transcriptional regulatory units compared to the more severe disruption of protein-coding sequences commonly observed in rare Mendelian diseases.\n\nStudies of genetic heritability have indicated that many additional loci lie below the genome-wide significance threshold (Yang et al., 2011). Our study contributes fundamental insights to overcoming the difficult problem of discovering the biologically relevant sub-threshold genetic signals that are orders of magnitude weaker than discovered by traditional GWAS. Three prior studies have observed the general enrichment of either sub-threshold SNPs or SNPs that explain a disproportionately high amount of heritability in cell type-specific regulatory elements (Maurano et al., 2012; Finucane et al., 2015; Gusev et al., 2014). However, our study is unique in demonstrating the advantage of combining different epigenomic features to produce greater enrichments of sub-threshold loci. Critically, no previous study to our knowledge has implicated any specific sub-threshold locus in any complex human trait, whereas we establish that 13 of the 18 sub-threshold loci tested in this study are capable of altering enhancer activity. We also leverage GWAS summary statistics and genetic perturbations in mouse to demonstrate that epigenetic marks can discriminate true positive sub-threshold signals from noise, a key problem that, until now, has prevented the study of these loci. Finally, we perform an in-depth molecular dissection of the rs1743292/rs1772203 sub-threshold locus and implicate the popeye-domain containing family of transmembrane proteins in regulating myocardial repolarization. The study of above-threshold GWAS loci is generating more biological insights on new causal genes contributing to human disease, however there remains a wealth of untapped signals in the sub-threshold region. The work presented\u00a0here represents a first step towards deciphering this signal and opens the door for the discovery of greater numbers of disease loci, genes, and pathways.\n\nOur study focused on QT interval and QRS duration due to their clear tissue of origin and a wealth of existing GWAS data, however we believe our approach could generalize to any well-powered GWAS on any trait. To this end, we chose two recently published, well-powered GWASs that relate to human diseases affecting large segments of the population: LDL cholesterol levels and Alzheimer\u2019s disease. For both traits, we observed the enrichment of SNPs well into the sub-threshold significance range, that the enrichment signature persists following removal of all above-threshold loci, and that functional features that improve enrichment of QT-associated sub-threshold loci are also effective when applied to sub-threshold loci associated with LDL cholesterol and Alzheimer\u2019s disease (Figure 3\u2014figure supplement 4). These results suggest that epigenomics can be applied more broadly to identify new loci with sub-threshold statistical significance from GWAS of many complex human diseases. One important future extension of this work would be to build a formal machine learning classifier that can be first trained on above-threshold GWAS loci before being applied to quantitatively rank sub-threshold loci by predicted biological relevance.\n\nFinally, investigating the differences between above-threshold and sub-threshold loci to elucidate the factors that drive loci to different degrees of association with a trait will be an important area of future investigation. Many reported genome-wide significant loci have been discovered by GWAS despite low power, likely due to the existence of many other variants of similar effect that go undetected, termed the 'winner\u2019s curse', and thus this difference could be driven in part by random chance. However, we also hypothesize that sub-threshold loci with weaker effect sizes may act in different pathways from loci with stronger effect sizes, and that sub-threshold variants could have weaker effects on gene expression.\n\nIn summary, our results provide a critical roadmap for the systematic analysis and re-analysis of genome-wide association studies to prioritize novel biologically relevant loci with weak association signals. As demonstrated with the rs1743292/rs1772203 locus, these loci would otherwise require substantially greater cohort sizes to reach statistical significance. Thus, we expect that this approach can be exploited to broadly improve the understanding of the biological pathways that contribute to complex human traits and disease.\n\n## Materials\u00a0and\u00a0methods\n\n### Identifying GWAS loci associated with cardiac traits\n\nWe compiled a list of all SNPs associated with electrocardiographic QT interval (reflecting myocardial repolarization) or QRS duration (reflecting cardiac conduction) from the NHGRI GWAS catalog of published GWAS (accessed on July 09, 2013), and removed loci identified from studies with small sample sizes (<5000 individuals). As the GWAS catalog reports SNPs with p<1x10-6, we performed a sensitivity analysis using only loci with p<5x10-8 to demonstrate that two different cut-offs does not meaningfully affect enrichment results for left ventricle (Figure 1\u2014figure supplement 3). We used genotype data from the 1000 Genomes project to identify all SNPs in LD (r2>0.8, CEU population) with the lead SNPs. For cases where two lead SNPs were in LD with each other (i.e. different studies reported different SNPs from the same haplotype block), we merged the resulting loci. To avoid over-counting, if the sets of LD SNPs from two independent lead SNPs overlapped, we randomly assigned each of the shared LD SNPs to only one of the two lead SNPs.\n\n### RNA-seq data and enhancer annotations\n\n#### Epigenome roadmap datasets.\n\nProcessed RNA-seq data for 59 human tissues and enhancer annotations (for 127 H3K4me1-defined and 88 'strong' H3K4me1/H3K27ac-defined enhancer sets) were downloaded from the Roadmap Epigenomics Project (Roadmap Epigenomics Consortium, 2015). Initial analyses across all 127 tissues were performed on cardiac enhancers defined by ChromHMM by the Roadmap Epigenomics Project using five chromatin modifications including H3K4me1 but not H3K27ac (15-state model). 'Strong' cardiac enhancers, available for a subset of 88 tissues, were defined by ChromHMM by the Roadmap Epigenomics Project using six chromatin modifications including both H3K4me1 and H3K27ac (18-state model).\n\n#### Human differentiated cardiomyocyte RNA-seq dataset.\n\nhESCs were differentiated to cardiomyocytes as previously described (Elliott et al., 2011) and were obtained from David Elliott at Monash University. RNA was extracted using TRIzol reagent according to the manufacturer's instructions. 10 \u00b5g RNA was used for library construction according to Illumina RNA-seq library kit with minor modifications. Briefly, mRNA was isolated using Dynabeads mRNA Purification Kit (Invitrogen, Catalog #61006) followed by fragmentation and ethanol precipitation. First and second strand synthesis were performed followed by end repair, A-tailing, paired end adaptor ligation and size selection on a Beckman Coulter SPRI TE nucleic acid extractor. 200-400 bp dsDNA was enriched by 15 cycles of PCR with Phusion High-Fidelity DNA Polymerase (NEB, Catalog #M0530) followed by gel purification of 250 bp fragments from the amplified material. Amplified libraries were sequenced on an Illumina GAIIx sequencer. Reads were mapped against the hg19 version of the human genome using RSEM v. 1.2.3 and bowtie v. 0.12.7 using flags \"rsem-calculate-expression --phred64-quals -p 4 --output-genome-bam --calc-ci --paired-end --bowtie-chunkmbs 1024, without in-silico polyA addition to the transcripts.\n\n### Enrichment of genomic features in QT/QRS loci\n\nWe used genomic features annotated by combinations of histone modifications (e.g. enhancers and promoters using ChromHMM by the Roadmap Epigenomics Project) or by GENCODE (e.g. protein-coding exons). Previous studies have compared the number of GWAS SNPs overlapping a feature against the number expected for a randomly chosen region of similar size (Maurano et al., 2012; Hnisz et al., 2013). However, this approach does not control for biases associated with the location of GWAS SNPs. We controlled for these biases by following the Variant Set Enrichment approach where we generate a background distribution for genomic feature enrichment in loci around sets of 112 randomly sampled control lead SNPs (Cowper-Sal\u00b7lari et al., 2012). We chose control lead SNPs from a genome-wide genotyping array (Affymetrix 660W) matched for size of the LD block (+/- 5 SNPs), minor allele frequency of the lead SNP (+/- 0.1), distance to the nearest gene (+/- 25\u00a0kb if outside gene), and number of nearby genes within a +/- 500\u00a0kb interval (+/- 3 genes). We also considered differences in local GC content (+/-25\u00a0nt) but did not observe a strong difference between GWAS and control lead SNPs (p=0.06). To calculate enrichment of genomic regions in GWAS loci, we compared the number of GWAS loci that overlapped an enhancer to 100,000 sets of equally sized randomly sampled control lead SNPs. The 112 GWAS SNPs compiled from the NHGRI GWAS catalog includes 57 loci with p-values between 1x10-6 and 5x10-8 that have a higher false positive rate. In a sensitivity analysis, we examined the subset of 55 loci that met the more stringent 5x10-8 statistical threshold and found that sets of cardiac enhancers (specifically fetal heart and adult left ventricle) were also most highly enriched in these loci compared to the 123 non-cardiac tissues (Figure 1\u2014figure supplement 3).\n\n### Comparing differences between QT/QRS-associated LV enhancers and all LV enhancers\n\n#### H3K27ac, DNase I Hypersensitivity and CAGE-seq read enrichment\n\nTo score the presence of epigenomic marks in enhancers, we averaged the wig signal tracks over every enhancer with the UCSC bigWigAverageOverBed tool. Fold difference in signals between QT/QRS enhancers and all LV enhancers were calculated by comparing the median signal values of the two groups. P-values were calculated using the Mann-Whitney U test. Activity in other cardiac and non-cardiac tissues: Overlap with enhancers in other tissues was calculated using the intersectBed function in the BEDTools suite (Quinlan and Hall, 2010). CpG hypomethylation and hypermethylation: Whole-genome bisulfite sequencing data for 37 human tissues, including the left ventricle, was obtained from the Roadmap Epigenomics Project (Roadmap Epigenomics Consortium, 2015). We identified LV-specific hypo and hypermethylated CpGs as those that differed in percent methylation with the mean of 34 non-cardiac tissues by both (i) 2 standard deviations and (ii) at least a difference in absolute percent methylation of 15 percent. Evolutionary Conservation: We calculated evolutionary conservation of enhancers using the methodology outlined by Nord et al. (2013)(Nord et al., 2013). Briefly, we first identified the 100\u00a0bp region of each enhancer with greatest average evolutionary conservation across primates (primate subset of 46-way phyloP conservation track obtained from UCSC). To quantify differences in evolutionary conservation of GWAS enhancers against all LV enhancers, we randomly selected 1000 size-matched sets of LV enhancers (size within +/-1\u00a0kb of corresponding QT/QRS enhancer), as the 100\u00a0bp segment of greatest conservation in longer enhancers is statistically more likely to have greater conservation than a shorter segment.\n\n### Comparing differences in TF motif disruption\n\nWe obtained TF motif instances in the human genome (hg19) for 651 human motifs from the ENCODE project\u00a0(ENCODE Project Consortium, 2012), and filtered these to only consider 287 motifs that correspond to TFs expressed in the left ventricle (>1 RPKM by RNA-seq). We quantified the number of QT/QRS loci containing a SNP that disrupted an enhancer motif corresponding to an expressed TF in the left ventricle, and compared this against randomly sampled sets of control loci matched for MAF, LD block size, distance to the nearest gene and presence on the Affymetrix 660\u00a0W genotyping array.\n\n### Enrichment of QT SNPs below genome-wide significance in enhancers\n\n#### Enrichment analysis\n\nWe used a sliding -log(p-value) threshold from 0 to 10 with steps of 0.1. At each cut-off, we computed the proportion of SNPs in enhancers with p-values more significant than the cut-off (foreground) against the proportion of SNPs in the whole genome. Grouping SNPs in LD. For each pair of SNPs, if the two SNPs are in LD (r2>0.2, CEU population from 1000 Genomes project) we remove the SNP with the weaker p-value.\n\n### Enrichment of LDL cholesterol and Alzheimer\u2019s disease-associated sub-threshold loci in enhancers\n\nSummary GWAS data for LDL cholesterol was obtained from Willer et al. (2013), and summary GWAS data for Alzheimer\u2019s disease (AD) was obtained from Lambert et al. (2013)(Lambert et al., 2013). Enrichment analyses were performed as described above for QT interval. For enrichment of Alzheimer\u2019s disease-associated SNPs, the region encompassing the HLA locus was excluded (chr6:24,182,924\u201334,537,546 in hg19), as this region contained approximately 25% of all low p-value SNPs (p<1x10-5) in the genome therefore and could skew enrichment results.\n\nThe liver tissue was chosen for LDL cholesterol enrichment based on biological relevance. Tissue choice for AD SNPs was made using genome-wide enrichment analyses performed by Gjoneska et al. (2015). For this analysis, we chose the second-most enriched tissue from Gjoneska et al. (peripheral blood monocytes, with most significant p-value) instead of the most enriched tissue (peripheral blood mononuclear cells, PBMCs, with second-most significant p-value) because the enrichment of AD SNPs in PBMC enhancers was substantially weaker than peripheral blood monocytes following removal of SNPs within the HLA locus. For AD GWAS, removal of SNPs within +/- 1\u00a0Mb of above-threshold loci was performed using 13 above-threshold loci with p<5x10-8 (Stage 1 analysis) listed in Table 2 of Lambert et al. For LDL cholesterol analyses, we first attempted to remove all SNPs within +/- 1\u00a0Mb of above-threshold loci reported in Supplementary files 2 & 3 of Willer et al., however many SNPs with p<5x10-8 remained. Therefore, we performed LD pruning (r2>0.2 from CEU population) on summary-level p-value data from Willer et al. to define above-threshold loci and then removed 68 unique genomic intervals from the analysis. Enhancer functional characteristics applied to the enhancer sets were chosen based on the availability of additional data for the chosen tissue. DNase I hypersensitivity data not available for human liver, and genome-wide CpG methylation data was not available for peripheral blood monocytes.\n\n### Comparison of QT sub-threshold loci in QRS GWAS data\n\nTo assess whether QT sub-threshold loci overlapping enhancers are more likely to represent true biological signals, we queried the p-values of these loci in a related GWAS of QRS duration. In total, the QT GWAS we used to identify the sub-threshold loci consisted of 76,061 individuals, while the QRS GWAS queried consisted of 60,255 individuals. We compared the total sizes of each cohort used in the two studies and calculated that a minimum total of 46,452 individuals must be different between the two studies. Specifically, there are at least 31,129 individuals present in QT GWAS that are not present in the QRS GWAS, and at least 15,323 individuals present in the QRS GWAS that are not present in the QT GWAS.\n\nWe used summary-level p-value data from the QRS GWAS testing four clinically applied QRS traits: Sokolow-Lyon, Cornell, 12-lead-voltage duration products, and QRS duration.\n\nFor each SNP, the assigned p-value represented the minimum p-value across these four traits. For each sub-threshold locus, we identified all SNPs in strong LD (r2>0.8, CEU population from 1000 Genomes project), and assigned the p-value as the minimum of all p-values for LD SNPs in the QRS GWAS data.\n\n### Identifying candidate genes near sub-threshold loci using activity correlation across human tissues\n\nFrom the Roadmap Epigenomics Project, we were able to obtain matching 'strong' enhancer annotations and RNA-seq data for 59 of the 127 tissues, including LV. For each LV enhancer, we considered all genes with expression \u22651 RPKM in LV and in vitro\u00a0differentiated human cardiomyocytes and distance within +/-500\u00a0kb as potential targets. We then split the RNA-seq data for the 59 tissues into two groups, depending on whether the enhancer is present or absent in each tissue, and applied a one-sided Mann-Whitney U test to ask whether each potential target gene showed significantly greater expression in tissues where the enhancer was active. Genes differentially expressed between tissues with active and inactive enhancers (p<0.05) were considered computationally-determined potential target genes. For determining targets of sub-threshold enhancers, we first filtered our set of sub-threshold enhancers to remove those unlikely to be associated with QT interval. To do this, we excluded sub-threshold SNPs if the -log(p-value) was lower than 80% of the -log(p-value) of the most statistically significant SNP in LD (r2>0.2), as these are unlikely to be causal.\n\n### Cardiac phenotypes for genes with mutations in mouse\n\nFor sub-threshold loci overlapping enhancers, and the set of all active LV enhancers, we identified nearby genes using the enhancer-gene linking method described above. This methodology was not applicable to the 129 sub-threshold loci that do not overlap enhancers, and therefore we identified the two nearest genes within 1\u00a0Mb using GREAT v2.0.2 and selected only genes with expression in adult human left ventricle data (>1 RPKM). Mouse orthologs of human genes were identified using the Ensembl Genes 79 database through BioMart, and all queries of the MGI mouse phenotypes database were made between April 26, 2015 and May 6, 2015. We used three search terms relevant to QT interval: 'ventricle muscle contractility', 'cardiac contractility' and 'conduction' (excluding non-cardiac conduction terms).\n\n### Quantifying allelic imbalance at SNPs\n\nWe used DNase I hypersensitivity and digital genomic footprinting data from the ENCODE and Roadmap Epigenomics Projects because samples were sequenced to a greater depth than the chromatin modification ChIP-seq data, and there were data available from more individuals\u00a0Roadmap Epigenomics Consortium, 2015.\u00a0To quantify allelic imbalance, we mapped DHS/DGF reads to a version of the human genome (hg19) downloaded from the UCSC genome browser with all SNPs (dbSNP141) masked by ambiguous nucleotides (N\u2019s) using Bowtie2 (v2.2.0, flags: -N 1, --sensitive, --end-to-end, --no-unal). As genotypes were not available, we considered a sample heterozygous at a particular SNP if reads from the hg19-defined reference and alternate alleles each mapped to 3 or more unique positions. Using this methodology, we observed the median difference in reads mapping to the reference versus alternate alleles to be 0. In total, reads mapped to the reference allele more often than alternate at 6537 of 13,3826 heterozygous SNPs, and vice versa at 5884 of 13,826 heterozygous SNPs, with equal numbers of reads mapping to both alleles at the remaining 1405 SNPs. To quantify statistical significance of allelic imbalance at SNPs, we followed Maurano et al. (2012) and considered only SNPs with more than 21 reads. We performed a binomial test under the null hypothesis where reads map to both alleles at equal frequency, followed by Benjamini-Hochberg multiple testing correction across all heterozygous enhancer-overlapping SNPs.\n\n### 4C-Seq Methods\n\nHuman iPSC-derived cardiomyocytes (iCMs) (Cellular Dynamics, Catalog #CMC-100-010-001) were thawed according to manufacturer\u2019s instructions and diluted to a final plating density of 0.2x106 cells per mL with plating medium (Cellular Dynamics, Catalog#CMM-100-110-001). After 7 days in culture, iCMs were homogenized using a douncer, cross-linked and further processed as 4C template using DpnII as the first restriction enzyme and Csp6I as the second enzyme following the procedure outlined in van de Werken et al. (2012). The median spacing between GATC fragments (recognized by DpnII) in the hg19 human genome is 264 nt. Sequencing of the 4C-Seq library was performed on an Illumina HiSeq 2000, and sequencing reads were aligned to a reduced genome consisting of sequences that flank DpnII restriction sites. Primer sequences used for sequencing the 4C-seq library are listed in Supplementary file 3. The human genome (hg19) was used as reference genome for mapping 4C sequence captures. Non-unique sequences that flank a restriction site were removed from the analysis.\n\nTo map 4C-seq reads to the genome, we first binned reads according to the reading primers used in each lane. We allow a single mismatch in the reading primer that overlaps the primary restriction cut site (DpnII). The binned sequences were mapped to an in silico library of potential fragment ends generated based on the restriction enzymes used for the 4C template preparation. We did not allow any mismatch in the fragment-end, and for analysis we focused on the unique fragends only (excluding repetitive fragment ends). As biases from sequencing yield or restriction cutting may be introduced by 4C-seq, we computed 4C-seq coverage in a genomic region by averaging mapped reads in running windows of 21 4C-seq fragment-ends. For peak-calling in a single 4C experiment, we perform explicit background modeling of the up- and downstream genomic regions independently. We assume that in a completely unstructured chromatin fiber the contact probability monotonically decreases as a function of the distance to the viewpoint. We model this by performing monotonic regression of the 4C signal as a function of the distance to the viewpoint. For this we use the R package isotone, which implements the monotonic regression\u00a0(Mair et al., 2009). We then compare the observed 4C signal to the predicted value from the background model and call the extremes that reach a significance threshold as peaks. For a given threshold q and a distribution F of residuals from the background model, every observation greater than Q3(F)+q*IQR(F), where Q3 is the third quartile of F and IRF(F) the inter-quartile range, is considered significant.\n\n### Generating enhancer reporter constructs\n\nSub-threshold loci were considered candidates for testing by the luciferase reporter assay if the sub-threshold SNP overlapping the active LV enhancer either (i) overlaps a fetal heart DNase I hypersensitivity site, or (ii) is an eQTL in the left ventricle (i.e. the SNP genotype is associated with differential expression of a nearby gene). We generated allele-specific enhancer constructs using two strategies outlined below: (i) PCR from genotyped heterozygous individuals, or (ii) direct synthesis of enhancer fragments. (i) Enhancer cloning from heterozygous individuals: We designed primer sequences to clone the entire predicted enhancer sequence defined by ChromHMM, and appended a 5\u2019CACC sequence to forward primers to permit directional TOPO cloning. We designed primer sequences to clone fragments of up to 3\u00a0kb. For enhancers annotated as larger than 3\u00a0kb, we either selected a 3\u00a0kb fragment centered at the region of greatest histone modification density (H3K4me1, H3K27ac), or generated multiple fragments spanning the enhancer. Primer sequences and samples for human genomic DNA (Coriell Cell Repositories) are listed in Supplementary file 3. We PCR amplified enhancers from human genomic DNA using Q5 High-Fidelity DNA Polymerase (NEB, Catalog #M0491S) and purified fragments corresponding to the correct length using a QIAquick Gel Extraction Kit (Qiagen, Catalog #28706). (ii) Direct synthesis of enhancer fragments: Enhancer fragments up to 1\u00a0kb in size were chosen so that the fragment covers both the sub-threshold SNP as well as peak within the DNase I hypersensitivity signal, and a 5\u2019CACC sequence was appended to permit directional TOPO cloning. Fragments were synthesized using the gBlocks Gene Fragments service from Integrated DNA Technologies (sequences are listed in Supplementary file 3). Enhancer fragments from both methods were cloned into Gateway-compatible entry vectors using a pENTR/D-TOPO Cloning Kit (Life Technologies, Catalog # K2400) and transformed into TOP10 E. coli bacteria following manufacturers guidelines. We used Sanger sequencing to verify that purified entry vectors carried enhancers with the correct insertion orientation and no mutations beyond the expected polymorphisms. Entry vectors were then Gateway-cloned using LR Clonase II Plus (Life Technologies, Catalog # 12538-120) into a Gateway-converted pGL4.23 destination vector (Promega, Catalog # E8411) for luciferase assays in human cell lines (Fisher et al., 2006). We used Sanger sequencing to confirm a second time the correct enhancer orientation and sequence inside the destination vectors.\n\n### Human cardiomyocyte luciferase assays\n\nHuman iCMs (Cellular Dynamics, Catalog #: CMC-100-010-001) were thawed according to manufacturer\u2019s instructions and diluted to a final plating density of 0.2x106 cells per mL with plating medium (Cellular Dynamics, Catalog#: CMM-100-110-001). 96-well tissue culture treated plates were coated with 0.1\u00a0mL of 0.1%(w/v) gelatin per well and incubated at 37\u00b0C for at least two hours. The gelatin solution was aspirated off and wells rinsed with 100\u00a0uL of PBS, aspirated, and let sit in the tissue culture hood. Using a multichannel pipette, 100\u00a0uL of cells were seeded per well to obtain a target density of 20x103 iCMs. The plates were kept on a flat bench at room temperature for 10-15 minutes to allow for cells to settle down uniformly, followed by incubation at a tissue culture incubator set at 37\u00b0C and 7% CO2.\u00a048 hours post-seeding, the iCM plating medium was replaced with 100\u00a0uL of Maintenance Medium (Cellular Dynamics, Catalog #:CMM-100-120-001). The Maintenance Medium was replaced every other day.\n\n3-4 days post-plating, iCMs began beating spontaneously and 7 days post-plating, they formed electrically connected syncytial layers that beat simultaneously. At this stage, the cells were transfected with the appropriate Luciferase reporter constructs and controls for downstream analyses. Media was replaced an hour before transfections. For each well, 95\u00a0ng of enhancer firefly Luciferase reporter (cloned into pGL4.23, Promega) and 5\u00a0ng of Renilla Luciferase transfection control vector (pGL4.73, Promega) was mixed with 10\u00a0ul of Opti-MEM (Life Technologies, Catalog #:51985-034). 0.2\u00a0uL of Viafect transfection reagent was added to the DNA/Opti-MEM mixture. After mixing, the transfection cocktail was incubated at room temperature for 5 min and 10\u00a0ul dispensed into the well with iCMs and plates transferred to 37\u00b0C. Media was changed 24\u2009hr after transfection. 8 independent wells of iCMs were transfected per construct to account for variability in plating and transfection efficiencies. A mammalian expression vector, pEF-GFP (Addgene, Plasmid 11154), was used to visually monitor transfection efficiency. At least 65\u201370% of the population of iCMs expressed GFP 24\u2009hr hours post-transfection.\n\nLuciferase activity was measured 24\u2009hrhr after transfections using the Dual-Luciferase Reporter Assay System (Promega, Catalog#:E1980). After aspirating media, cells were rinsed with PBS once, and lysed with 20\u00a0uL of 1X Passive lysis buffer in the Luciferase assay kit. 15 min minutes after gentle shaking on an orbital shaker and complete lysis, the plate was stored at -80\u00b0C until further processing. Samples were prepared and luminescence measured according to Manufacturer\u2019s Assay protocol for 96-well plates using the Varioskan Flash Multimode Reader (Thermo Scientific).\n\n#### Data analysis\n\nFor all transfection wells, luminescence values of a blank non-transfection control were subtracted from all measured activity values. Firefly luciferase activity was then normalized to Renilla luciferase activity to control for transfection efficiency in each well. As luciferase reporter assay reagents decrease in activity during regular storage, the reference and alternate alleles of each reporter construct were spotted on the same 96-well plates to control for plate-to-plate variability in reagent activity. For each enhancer, we merged readings from multiple days by normalizing the activity of reporters to the reference allele. Each reporter construct was transfected into wells of at least two separate 96-well plates and readings for all wells were merged. Wells where Renilla luciferase activity (transfection control) was substantially lower (>90%) than neighboring wells were excluded from analyses. Statistical significance was determined by unpaired Student\u2019s t-test assuming equal variance. Minimum sample size of n=8 per enhancer construct was chosen to achieve 95% power for effect size (Cohen\u2019s d) of 2 (0.2 difference in activity between haplotypes with standard deviation of 0.1 normalized luciferase activity units) at p=0.05.\n\n### Zebrafish antisense morpholino oligonucleotide-mediated knockdown and optical voltage mapping\n\nZebrafish (TuAB strain) were cared for according to standard techniques. All animal experiments were approved by the Partners Subcommittee on Research Animal Care (SRAC) and were conducted in compliance with the regulations published in the US National Institute of Health Guide for the Care and Use of Laboratory Animals. At the single cell stage, fertilized oocytes were injected with standardized concentrations and volumes of antisense morpholino oligonucleotides (5\u2019CAATAGATGGCGCTGTGTACCTGTC3\u2019 and 5\u2019AGAGCAGCCTGAAAGACAATAAAGA3\u2019 for bves, 5\u2019GGTTAATCCACTCACCTGCCTGAAA3\u2019 and 5\u2019CCGTCACTCGTATCCTGTTTTAGTG3\u2019 for popdc3, 5'3' and 'AGAAGTGTTTGCTCAGGTCACCTGT3' for prep, 5\u2019GTTCAATTGTTTCTCACCTGCCAGA3\u2019 and 5\u2019CTAATCCTGTGAAAGCAGAAGATCC3\u2019 for popdc2) dissolved in Danieau\u2019s solution (58\u2009mM NaCl, 0.7mM KCl, 0.4\u2009mM MgSO4, 0.6\u2009mM Ca(NO3)2, 5.0\u2009mM HEPES pH 7.6). Controls were injected with an equivalent dose of non-targeting morpholino of equal length but differing nucleotide composition (5\u2019ATCCTCTTGAGGCGAACAAAGAGTC3\u2019). RNA was harvested at 72\u2009hr using TRIzol (Life Technologies) according to the manufacturer\u2019s instructions, cDNA synthesized by iScript reverse transcriptase (Bio-Rad Laboratories, Hercules, CA, Catalog\u00a0#1708840) and semi-quantitative PCR was used to assess relative percentage of gene knockdown. All studies of morpholino efficacy are a result of samples obtained from three independent injections. For evaluation of ventricular action potential duration, embryo hearts were microdissected at 72\u2009hr hours of development and stained with di-8-ANEPPS (Invitrogen,\u00a0Catalog\u00a0#). Cardiac contraction was arrested with 15\u00a0uM blebbistatin (Sigma-Aldrich). Hearts were then field paced at 2Hz and imaged at 1000 frames per second. Analysis of action potential durations was performed using an in-house developed MatLab program. The action potential duration at 80% repolarization was utilized for all analyses. A minimum n of 9 embryos was required for all ventricular action potential studies, based on power calculations for effect size (Cohen\u2019s d) of 1.5 at p=0.05. No animals were excluded from analyses unless ventricular depolarization could not be induced at 120 paces per minute. No randomization of samples or blinding of investigators was utilized during these protocols. Statistical comparisons were performed using one-way ANOVA with Fisher\u2019s Least Significant Difference testing with all comparisons being to clutchmate controls. All distributions were normal, and variances between control and experimental groups were not statistically significant.\n",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "0ff899ad-59d0-450e-bc5d-02ce6a236df6",
+      "submission_id": "68c11f50-02fb-4ecf-bb78-e5bf5e79e4aa",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Gilean McVean, Oxford University , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.10557.030](https://doi.org/10.7554/eLife.10557.030)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Discovery and validation of sub-threshold GWAS loci using epigenomic signatures\" for consideration by eLife. Your article has been favorably evaluated by Stylianos Antonarakis (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper presents a series of analyses that demonstrate clear evidence for enrichment of functionally-relevant genetic variants among sub genome-wide significant (GWS) loci from studies of heart parameters, and the value of using epigenetic signatures to further identify subsets that are likely to be real. The paper identifies one locus in particular and presents experimental data to support a hypothesis for a particular variant-gene interaction. Zebra-fish knock downs are also used to further support the involvement of a particular class of genes in QT interval / QRS duration. The authors suggest that the set of approaches they use have wide applicability. In the last couple of years several authors have demonstrated the value of epigenetic signatures as a way of homing in on signals in GWAS \u2013 or decomposing heritability. However, this is the first paper that we are aware of to follow up such work with experimental validation of sub-GWS signals.\n\nThere is a very large amount of work presented here and on the whole it is well-designed, logical and plausible. However, all three reviewers felt that there were substantial gaps in each of the pieces of work presented, which would have to be addressed in a revision. The key things that need to be revised are:\n\n1) There has to be a quantitative attempt to estimate the FDR associated with the strategy of epigenetic prioritisation. It is very important for experimental researchers to know that a locus is 'real' before follow-up work starts \u2013 this is precisely why the GWS significance threshold is so stringent. An augmented set of experimental data along the lines presented here would enable this to be estimated.\n\n2) In the luciferase and 4C experiments, only loci from the likely set are considered. In order to address the FDR issue, the same would have to be done for loci drawn from the no epigenetic signal set of loci with the same p value distribution. Such experiments would directly address the FDR issue.\n\n3) In the analysis of matched, control SNPs, gene density needs to be accounted for.\n\n4) All analyses should be carried out excluding GWS loci. In a paper about sub-GWS loci, including these is problematic.\n\n5) In the fine-mapping example, we need to understand the prioritisation of rs1743292 better. There are other SNPs in LD with this in regulatory regions. Why were these not considered? We need to see a fine-mapping analysis of the signal with imputation (which is valid even though the region is not GWS) prior to focusing on the particular SNP.\n\n6) In the morpholino experiments, there is apparently a lot of noise \u2013 such that the differences between those loci classed as positive and negative look relatively small. Additional replicates are needed to be convincing here.\n\n7) There has to be a more up-to-date discussion of the relevant literature around biological signal lying in sub-GWS loci.\n\nWe appreciate that a lot is being asked for here and you may feel that such extensive revision is not feasible. One possibility is to remove some elements of the paper \u2013 e.g. the morpholino work \u2013 and focus on presenting a more complete story around the FDR part.\n",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b794c0f3-dec3-4eb4-81ff-76daa9f2410b",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C1",
+      "claim": "112 QT/QRS loci were compiled from the NHGRI GWAS database accessed July 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "We compiled a list of 112 QT/QRS loci from the NHGRI GWAS database (accessed July 2013, Supplementary file 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of loci and the source database with access date.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "c5a0859d-f6a2-4a78-abe0-058240eaa709",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C2",
+      "claim": "Only 22 of 112 QT/QRS loci (20%) harbor SNPs that overlap exons.",
+      "claim_type": "EXPLICIT",
+      "source": "Because only 22 of 112 loci (20%) harbor SNPs that overlap exons, we examined whether QT/QRS variants are enriched in predicted enhancer elements across the genome",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numerical data about the proportion of loci overlapping exons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "4a02e7a8-f86e-4d69-87f3-e96e6449f052",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C3",
+      "claim": "QT/QRS variants have greatest overlap with predicted enhancers from the four cardiac tissues compared to the other 123 non-cardiac tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "QT/QRS variants have greatest overlap with predicted enhancers (as defined by high levels of H3K4me1 and low H3K4me3 using ChromHMM) from the four cardiac tissues compared to the other 123 non-cardiac tissues (red circles, Figure 1b, Supplementary file 1) (Ernst et al., 2011)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states this finding and references Figure 1b showing the enrichment data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "00365c11-d747-4add-87a2-5a878dae42eb",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C4",
+      "claim": "Enhancers from the left ventricle showed the strongest enrichment of the four cardiac tissues with z-scores=7.67 and empirical p<1x10\u22125.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhancers from the LV showed the strongest enrichment of the four cardiac tissues (z-scores=7.67, empirical p<1x10\u22125, 105 permutations)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific statistical measures of enrichment for left ventricle enhancers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "8465dfd0-a38d-41f7-a1e7-1b70f810925c",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C5",
+      "claim": "An unbiased analysis can resolve the causal tissue with high precision, as QT interval and QRS duration are primarily reflective of myocardial repolarization in the ventricles.",
+      "claim_type": "EXPLICIT",
+      "source": "demonstrating that an unbiased analysis can resolve the causal tissue with high precision, as QT interval and QRS duration are primarily reflective of myocardial repolarization in the ventricles",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws an inference from the enrichment data about the ability to identify causal tissue.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "4f674b51-845a-4aca-bd22-849b7b86e7a2",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C6",
+      "claim": "Intergenic enhancers are the most strongly enriched annotated genomic region (z-score > 7.5) in QT/QRS loci.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that intergenic enhancers are the most strongly enriched annotated genomic region (z-score > 7.5) in QT/QRS loci, followed by gene transcription regions (z-score between 3 and 6) (Figure 1\u2014figure supplements 1 and 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific z-score values and references supplementary figures showing the enrichment data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "b1b005a7-79ec-4ea8-9128-5de79c598b7f",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C7",
+      "claim": "The enrichment increased significantly (z-score from 7.67 to 9.31 for left ventricle) when restricting the analysis to 'strong' enhancers marked by both H3K4me1 and H3K27ac.",
+      "claim_type": "EXPLICIT",
+      "source": "This enrichment increased significantly (z-score from 7.67 to 9.31 for left ventricle) when restricting the analysis to 'strong' enhancers (i.e. H3K4me1 enhancers that are also marked by H3K27ac)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific z-score values comparing different enhancer definitions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "110a1b43-f2e4-48c6-a75b-d105395548eb",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C8",
+      "claim": "The 65 enhancers overlapping 45 QT/QRS loci have a 3.1-fold higher H3K27ac density compared to non-GWAS LV enhancers (p=1.53x10\u22124).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the 65 enhancers overlapping 45 QT/QRS loci have a 3.1-fold higher H3K27ac density compared to non-GWAS LV enhancers (p=1.53x10--4)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific fold-change and p-value data comparing H3K27ac density.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "5f699d23-1cbe-4b53-9eea-08aab2fcd272",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C9",
+      "claim": "44 of the 45 QT/QRS loci overlap an H3K27ac-defined 'strong' enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, incorporating H3K27ac into ChromHMM enhancer predictions resulted in substantially greater enrichment of QT/QRS loci (z-score = 9.31 vs. 7.67 for left ventricle); 44 of the 45 QT/QRS loci overlap an H3K27ac-defined 'strong' enhancer",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numerical data about the overlap of loci with strong enhancers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "f262f6a6-909f-4d87-80aa-826c22c12f56",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C10",
+      "claim": "Left ventricular QT/QRS enhancers are significantly more hypomethylated than predicted LV enhancers not overlapping QT/QRS loci (hypomethylation p=1.07x10-6).",
+      "claim_type": "EXPLICIT",
+      "source": "Left ventricular QT/QRS enhancers are significantly more hypomethylated than predicted LV enhancers not overlapping QT/QRS loci (hypomethylation p=1.07x10-6, hypermethylation p=0.60, Figure 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific p-values for methylation differences and references Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "e69a6eab-6fed-415b-a3af-8b4d65c65828",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C11",
+      "claim": "22 of the 45 GWAS loci contain an enhancer SNP that alters a predicted motif for a cardiac-expressed TF (empirical p=0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, 22 of the 45 GWAS loci contain an enhancer SNP that alters a predicted motif for a cardiac-expressed TF (empirical p=0.002, 105 permutations) (Figure 1c)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific numerical data and p-value for TF motif disruption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "1a3cea2d-de96-4954-b2a8-ec15e6b396ed",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C12",
+      "claim": "QT/QRS left ventricular enhancers show significant evolutionary conservation across the primate lineage compared to non-GWAS LV enhancers (p=6.82x10-5).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, QT/QRS left ventricular enhancers show significant evolutionary conservation across the primate lineage compared to non-GWAS LV enhancers (p=6.82x10-5 compared to 105 size-matched sets of LV enhancers)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific p-value for evolutionary conservation comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "e1eebcba-9603-4070-9d83-334794854d09",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C13",
+      "claim": "Current GWAS loci collectively explain only a small fraction of the estimated heritability of a complex trait due to strict Bonferroni thresholds for multiple hypothesis testing (p<5x10-8).",
+      "claim_type": "EXPLICIT",
+      "source": "Current GWAS loci collectively explain only a small fraction of the estimated heritability of a complex trait in part due to strict Bonferroni thresholds for multiple hypothesis testing (p<5x10-8) and the limited statistical power of existing studies to discover variants with modest effect sizes (Maher, 2008; Yang et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature to support this claim about GWAS limitations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "8cb70817-ca16-4adb-a968-cd5fd3bf4586",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C14",
+      "claim": "Active LV enhancers are strongly enriched for loci harboring SNPs with p-values between 1x10-4 and 5x10-8.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that active LV enhancers are strongly enriched for loci harboring SNPs with p-values between 1x10-4 and 5x10-8 (Figure 3a, black line)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes enrichment data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "08e76c74-87da-4751-9a8c-030a47d39f76",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C15",
+      "claim": "The combination of functional features identified for above-threshold QT/QRS enhancers substantially improves sub-threshold locus enrichment across a wide range of p-value thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the combination of functional features identified for above-threshold QT/QRS enhancers (Figure 2) substantially improves sub-threshold locus enrichment across a wide range of p-value thresholds (Figure 3a, colored lines, Figure 3\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes improvement in enrichment shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "439bcb28-5a3d-4329-a851-d76e4ed9d8ae",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C16",
+      "claim": "The enrichment for LV enhancers persists and increases in the sub-threshold range after removing all SNPs within 1Mb of the initial 112 QT/QRS loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the enrichment for LV enhancers persists and increases in the sub-threshold range (i.e. p=1x10-4 to 5x10-8, Figure 3b), likely due to removal of nominally significant SNPs that are in LD with above-threshold QT/QRS loci and do not represent true association signals",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes enrichment data after removing nearby SNPs, shown in Figure 3b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "06957024-5ed4-452c-a4d0-cacd6c85bc36",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C17",
+      "claim": "2075 SNPs with p<1x10-4 are independent of the 112 published QT/QRS loci, of which 208 SNPs overlap LV enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we identified 2075 SNPs with p<1x10-4 that are independent of the 112 published QT/QRS loci, of which 208 SNPs overlap LV enhancers (Supplementary file 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numerical data about sub-threshold SNPs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "112bdf4f-97fa-4c3b-9192-db680bc532fe",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C18",
+      "claim": "13 of 18 sub-threshold loci (72.2%) contain an enhancer that drives luciferase activity in an allele-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that 13 of 18 sub-threshold loci (72.2%) contain an enhancer that drives luciferase activity in an allele-specific manner (Figure 4b,d, Figure 4\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific experimental results from luciferase assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "a85e5537-94be-42f4-a1c5-42aeb9c7846a",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C19",
+      "claim": "Between 51.1%-89.8% (95% Bayesian confidence interval) of prioritized sub-threshold loci show allele-specific activity on transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we estimate that between 51.1%-89.8% (95% Bayesian confidence interval) of prioritized sub-threshold loci show allele-specific activity on transcription",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a statistical estimate with confidence interval.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "546f3b93-8480-4f01-8752-9749445fdc67",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C20",
+      "claim": "Eight enhancers in six sub-threshold loci formed enhancer-promoter interactions in the proximal 500 kb region by 4C-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "Eight enhancers in six loci formed enhancer-promoter interactions in the proximal 500 kb region (Figure 4c, Figure 4 \u2014 figure supplement 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific experimental results from 4C-seq experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "f4000919-05d0-49dd-a915-22b1eb53fcd3",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C21",
+      "claim": "Sub-threshold loci overlapping enhancers have significantly stronger association signals than loci outside enhancers in the QT interval GWAS.",
+      "claim_type": "EXPLICIT",
+      "source": "Left, Sub-threshold loci overlapping enhancers have significantly stronger association signals than loci outside enhancers in the QT interval GWAS",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes comparison data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "dbb5bf9c-6012-4d59-822f-97fd03d61c3b",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C22",
+      "claim": "106 candidate genes were identified as predicted to be regulated by the 60 enhancer-overlapping sub-threshold loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this approach, we identified 106 candidate genes predicted to be regulated by the 60 enhancer-overlapping sub-threshold loci (Supplementary file 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numerical data about predicted gene targets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "fbcfbd06-dc1c-4900-aab2-9bc37000c417",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C23",
+      "claim": "11 of 15 observed 4C-seq interactions were predicted by the computational enhancer-gene linking approach, compared to 3 of 15 by the nearest gene approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, 11 of the 15 observed 4C-seq interactions were predicted by our computational approach, compared to 3 of 15 by the commonly applied approach of assigning the enhancer target to the nearest gene",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numerical comparison of prediction methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "f3ca1ce8-e175-4c97-b559-2ce3cacf6115",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C24",
+      "claim": "Genetic perturbation in 11 of 49 genes resulted in altered cardiac conduction or cardiac contractility, representing a 4.11-fold enrichment compared to genes linked to all active LV enhancers (p=6.84x10\u22125).",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic perturbation in 11 of the 49 genes resulted in altered cardiac conduction or cardiac contractility: both processes that are also influenced by genes nearby above-threshold QT interval loci and genes implicated in the Mendelian Long QT syndrome. This represents a 4.11-fold enrichment compared to genes linked to all active LV enhancers (181 of 3311, p=6.84x105, black bar, Figure 5b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific numerical data and statistical analysis of mouse phenotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "31514d26-79be-4d58-b712-da8402fb48d2",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C25",
+      "claim": "The major haplotype at the rs1743292 enhancer has 45% greater activity than the minor haplotype (p=2.99x10-12).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the activity of both enhancers is dependent on the sub-threshold haplotype: at the rs1743292 enhancer, the major haplotype has 45% greater activity (p=2.99x10-12)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific experimental results from luciferase assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "e2682594-6ef7-42a4-8be3-3d18195a6a06",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C26",
+      "claim": "The minor haplotype at the rs1772203 enhancer is 28% more active than the major haplotype (p=1.79x10-5).",
+      "claim_type": "EXPLICIT",
+      "source": "while the minor haplotype is 28% more active in the rs1772203 enhancer (p=1.79x10-5)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific experimental results from luciferase assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "3c9efb28-3c25-4f8c-903f-496e9308e495",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C27",
+      "claim": "rs1743292 shows a significant allelic imbalance for DHS reads with 97 reads mapping to the major C allele and 300 reads mapping to the minor T allele (p=3.1x10-25).",
+      "claim_type": "EXPLICIT",
+      "source": "In fetal heart tissue from one individual sequenced to high depth, rs1743292 shows a significant allelic imbalance for DHS reads with 97 reads mapping to the major C allele and 300 reads mapping to the minor T allele (left, Figure 6d, p=3.1x10-25, binomial test)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific experimental results from DHS sequencing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "ba804151-fee0-46a8-8785-ec9c16bcfc2d",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C28",
+      "claim": "Both the rs1743292 and rs1772203 enhancers form interactions with promoters of BVES/POPDC1 and POPDC3, and with predicted enhancers within introns of the PREP gene.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that both enhancers form interactions with promoters of the upstream popeye-domain containing (POPDC) family members BVES/POPDC1 and POPDC3, and with predicted enhancers situated within introns of the downstream PREP gene (Figure 6a,g)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific experimental results from 4C-seq experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "281f9f36-dd82-44de-ba26-8d9a7ac0c9aa",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C29",
+      "claim": "Mice homozygous for loss-of-function copies of BVES exhibit cardiac conduction and pacemaker defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the genetic association between this locus and QT interval length, we found that mice homozygous for loss-of-function copies of BVES exhibit cardiac conduction and pacemaker defects (Figure 6h) (Bello et al., 2015; Froese et al., 2012)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript cites published literature about mouse phenotypes.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "25b03f2d-b41a-438f-9f58-34871484c9a9",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C30",
+      "claim": "POPDC3 and PREP mouse loss-of-function models have no reported cardiac abnormalities.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, POPDC3 and PREP mouse loss-of-function models have no reported cardiac abnormalities, and instead show altered body fat, suggesting that this genetic locus alters QT interval length through the BVES gene (Bello et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature about mouse phenotypes.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "1699a55c-bca8-4e1d-bcbd-f43cbcb8d87b",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C31",
+      "claim": "BVES is most highly expressed in human left ventricle across 59 human tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Strengthening our evidence implicating BVES in QT interval, we observed that across 59 human tissues, BVES is most highly expressed in human left ventricle, whereas POPDC3 has much lower expression in cardiac tissue than skeletal muscle, and PREP is constitutively expressed across a wide range of tissues (Figure 6\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides expression data across tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "fc18ead4-09e1-471b-9268-586517a9b84f",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C32",
+      "claim": "bves knockdown in zebrafish leads to a reproducible shortening of the zebrafish ventricular action potential duration (p=0.002 and 0.09 for two independent morpholino sequences).",
+      "claim_type": "EXPLICIT",
+      "source": "We also used antisense morpholino oligonucleotides to knockdown transcripts from the BVES, POPDC3 and PREP orthologs in zebrafish, observing that bves knockdown leads to a reproducible shortening of the zebrafish ventricular action potential duration (APD), the cellular correlate of the QT interval, (p=0.002 and 0.09 for two independent morpholino sequences)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific experimental results from zebrafish experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "21e66a01-3eae-4350-a0e2-e6634e1f114e",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C33",
+      "claim": "There is no reproducible difference in ventricular APD following loss of popdc3 or prep transcripts in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas there is no reproducible difference in ventricular APD following loss of popdc3 or prep transcripts (Figure 6\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific experimental results from zebrafish experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "2b7a0164-6ec6-44b0-b2b0-d2f625a058fe",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C34",
+      "claim": "rs1743292 had an effective sample size of 68,900 individuals with 12.76% power to detect the locus at genome-wide significance.",
+      "claim_type": "EXPLICIT",
+      "source": "In the current QT interval GWAS, rs1743292 had an effective sample size of 68,900 individuals with 12.76% power to detect the locus at genome-wide significance",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific power calculation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "8686f517-4b71-4a07-9ad6-4e8cad3d8ea9",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C35",
+      "claim": "To detect rs1743292 at genome-wide significance with 80% power would require a GWAS cohort of 146,700 individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "To detect rs1743292 at genome-wide significance with 80% power would require a GWAS cohort of 146,700 individuals",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific power calculation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "c9490639-a711-4111-b26c-a1a723540074",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C36",
+      "claim": "~50% of QT/QRS GWAS loci overlap enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Using enhancer annotations from hundreds of cell types and tissues, we find ~50% of QT/QRS GWAS loci overlap enhancers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a summary statistic about enhancer overlap.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "0929dacc-a524-4d11-9114-6b9e351cfb33",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C37",
+      "claim": "QT/QRS enhancers share common characteristics, including H3K27ac marks, CpG hypomethylation, and greater evolutionary conservation.",
+      "claim_type": "EXPLICIT",
+      "source": "and that these enhancers share common characteristics, including H3K27ac marks, CpG hypomethylation, and greater evolutionary conservation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the characteristics identified in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "9451f7d8-483d-4f0d-a4d5-39ce549b69b1",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C38",
+      "claim": "rs1743292 alters a predicted binding site for the cardiac-expressed nuclear factor NF-I family.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, using motif analysis, we observed that rs1743292 alters a predicted binding site for the cardiac-expressed nuclear factor NF-I family (Figure 6f), which contains a family member (NF-1a) that itself has been associated by GWAS with cardiac electrophysiology (Ritchie et al., 2013)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides motif analysis results and cites GWAS association.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "7f6a9887-dfe2-4618-8899-d993486ce1b1",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C39",
+      "claim": "The enrichment of sub-threshold SNPs in cardiac enhancers persists following removal of SNPs within +/- 1 Mb of above-threshold loci for LDL cholesterol and Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "For both traits, we observed the enrichment of SNPs well into the sub-threshold significance range, that the enrichment signature persists following removal of all above-threshold loci, and that functional features that improve enrichment of QT-associated sub-threshold loci are also effective when applied to sub-threshold loci associated with LDL cholesterol and Alzheimer's disease (Figure 3\u2014figure supplement 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes enrichment data for other traits shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "4b4f9dd6-762c-4b2f-a736-cb4d99980bbf",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C40",
+      "claim": "Epigenomic maps are effective at discriminating true biological signals from noise in sub-threshold GWAS loci.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that these 'sub-threshold' signals represent novel loci, and that epigenomic maps are effective at discriminating true biological signals from noise",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a key finding in the abstract.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "c4831945-3c27-46b2-853d-8fbdce258189",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C41",
+      "claim": "Most sub-threshold loci have regulatory consequences based on experimental validation.",
+      "claim_type": "EXPLICIT",
+      "source": "We experimentally validate the molecular, gene-regulatory, cellular and organismal phenotypes of these sub-threshold loci, demonstrating that most sub-threshold loci have regulatory consequences",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a key finding in the abstract based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "7957ec48-10d5-40cf-b515-f5469f3f4868",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C42",
+      "claim": "Genetic perturbation of genes near sub-threshold loci causes cardiac phenotypes in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "and that genetic perturbation of nearby genes causes cardiac phenotypes in mouse",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a key finding in the abstract based on mouse phenotype data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "2cc04efb-9f68-48bd-90df-e9422856f831",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C43",
+      "claim": "Disease-associated SNPs reside preferentially in enhancer elements.",
+      "claim_type": "EXPLICIT",
+      "source": "The recent demonstration that disease-associated single nucleotide polymorphisms (SNPs) reside preferentially in enhancer elements provides a unique opportunity to leverage epigenomic maps of regulatory elements for understanding the function of known GWAS loci and for prioritizing new loci missed in current studies (Ernst et al., 2011; Cowper-Sal\u00b7lari et al., 2012; Maurano et al., 2012; Trynka et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple published studies supporting this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "8b7c887c-3b6e-4975-aee7-95515aa4e8d6",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C44",
+      "claim": "The current catalog of genome-wide significant loci explains only a modest proportion of the heritability for any given trait.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite increasingly large GWAS cohort sizes, the current catalog of genome-wide significant loci still explains only a modest proportion of the heritability for any given trait, with an excess of low p-value loci still below the genome-wide significance threshold (Arking et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature supporting this claim about missing heritability.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "17414497-210d-48c7-999a-66b8cf8d9fa4",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C45",
+      "claim": "Many more signals with 'sub-threshold' significance remain to be identified.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that many more signals with 'sub-threshold' significance remain to be identified, however, the recognition of biologically relevant sub-threshold loci is hindered by a higher false positive rate (Hindorff et al., 2009; Maher, 2008; Altshuler et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature supporting this claim about sub-threshold signals.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "005688a6-2539-4bf7-95bb-ce94ac01656f",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C46",
+      "claim": "Variation within QT interval length plays an important role in human disease, where extreme QT prolongation is associated with sudden cardiac death.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, variation within QT interval length plays an important role in human disease, where extreme QT prolongation is associated with sudden cardiac death and can occur as an unintended side effect of many non-cardiac medications (Rabkin et al., 1982; Heist and Ruskin, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature supporting this clinical claim.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "1328665a-2883-41f1-ab66-7e1b8ec76662",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C47",
+      "claim": "The high density of common variation in non-coding enhancers may be due to weaker evolutionary selection against subtle phenotypes from disruption of transcriptional regulatory units compared to protein-coding sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "The high density of common variation we observed in non-coding enhancers may be due to weaker evolutionary selection against the subtle phenotypes that arise from disruption of transcriptional regulatory units compared to the more severe disruption of protein-coding sequences commonly observed in rare Mendelian diseases",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a speculative explanation for the observed pattern.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "cd565c46-040d-485e-b065-53f476c9c2d3",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C48",
+      "claim": "Studies of genetic heritability have indicated that many additional loci lie below the genome-wide significance threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of genetic heritability have indicated that many additional loci lie below the genome-wide significance threshold (Yang et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature supporting this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "4192888f-d1be-42c8-b1f8-65a25674eaec",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C49",
+      "claim": "No previous study has implicated any specific sub-threshold locus in any complex human trait.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our study is unique in demonstrating the advantage of combining different epigenomic features to produce greater enrichments of sub-threshold loci. Critically, no previous study to our knowledge has implicated any specific sub-threshold locus in any complex human trait, whereas we establish that 13 of the 18 sub-threshold loci tested in this study are capable of altering enhancer activity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript claims novelty based on knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "3421695a-d956-4853-b891-b441cb8bdee0",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C50",
+      "claim": "Epigenetic marks can discriminate true positive sub-threshold signals from noise.",
+      "claim_type": "EXPLICIT",
+      "source": "We also leverage GWAS summary statistics and genetic perturbations in mouse to demonstrate that epigenetic marks can discriminate true positive sub-threshold signals from noise, a key problem that, until now, has prevented the study of these loci",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a key finding based on multiple lines of evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "99fb5102-d336-4a4b-8004-018e995e8776",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C51",
+      "claim": "The work represents a first step towards deciphering sub-threshold signals and opens the door for the discovery of greater numbers of disease loci, genes, and pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The work presented here represents a first step towards deciphering this signal and opens the door for the discovery of greater numbers of disease loci, genes, and pathways",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a forward-looking statement about the implications of the work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "a463e1f4-d12b-46c9-a050-ac7a286d70f5",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C52",
+      "claim": "The approach can be applied more broadly to identify new loci with sub-threshold statistical significance from GWAS of many complex human diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that epigenomics can be applied more broadly to identify new loci with sub-threshold statistical significance from GWAS of many complex human diseases",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript draws a general conclusion from the specific examples tested.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "a563c1fc-317c-4ba7-a3ce-8417f3e26d85",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C53",
+      "claim": "Sub-threshold loci with weaker effect sizes may act in different pathways from loci with stronger effect sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we also hypothesize that sub-threshold loci with weaker effect sizes may act in different pathways from loci with stronger effect sizes, and that sub-threshold variants could have weaker effects on gene expression",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a speculative hypothesis about sub-threshold loci.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "1bc380d0-7312-4190-9c33-d395ef28f468",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C54",
+      "claim": "The approach provides a critical roadmap for the systematic analysis and re-analysis of genome-wide association studies to prioritize novel biologically relevant loci with weak association signals.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our results provide a critical roadmap for the systematic analysis and re-analysis of genome-wide association studies to prioritize novel biologically relevant loci with weak association signals",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a summary statement about the broader implications.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "ce8a0b2e-b253-4214-9502-de847ae3e179",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C55",
+      "claim": "This approach can be exploited to broadly improve the understanding of the biological pathways that contribute to complex human traits and disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we expect that this approach can be exploited to broadly improve the understanding of the biological pathways that contribute to complex human traits and disease",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a forward-looking statement about the implications of the work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "71ee4fda-76d6-44b1-ae4d-8d192ac2ac28",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C56",
+      "claim": "Phenotypes arising from genetic perturbation of LV-expressed genes nearby the 129 negative control sub-threshold loci outside enhancers are 7.30-fold less likely to result in altered cardiac conduction or contractility compared to the 60 prioritized sub-threshold loci (p=1.92x10-3).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, phenotypes arising from genetic perturbation of LV-expressed genes nearby the 129 negative control sub-threshold loci outside enhancers are 7.30-fold less likely to result in altered cardiac conduction or contractility compared to our 60 prioritized sub-threshold loci (p=1.92x10-3, perturbation of 2 of 65 genes nearby the negative control subset have relevant cardiac phenotypes, light grey bar, Figure 5b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific statistical comparison of mouse phenotypes between groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "65196196-a0c4-4f3d-ab74-e9d82f9fe7bc",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C57",
+      "claim": "Epigenomic signatures can be used to prioritize sub-threshold GWAS loci with a significantly greater likelihood of being biologically relevant.",
+      "claim_type": "EXPLICIT",
+      "source": "The data presented here provide multiple independent lines of evidence that epigenomic signatures can be used to prioritize sub-threshold GWAS loci with a significantly greater likelihood of being biologically relevant",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a summary statement based on multiple lines of evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "05b8ca8e-a687-4080-bf75-994715c8a711",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C58",
+      "claim": "SNPs within the rs1743292/rs1772203 locus alter QT interval duration through disruption of BVES expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these data from multiple organisms provide evidence that SNPs within the rs1743292/rs1772203 locus alter QT interval duration through disruption of BVES expression",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a summary conclusion based on multiple experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "15264883-a2e5-4f81-b480-269faba74d80",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C59",
+      "claim": "Genome-wide enhancer maps are a powerful tool for identifying sub-threshold loci with bona fide roles in human cardiovascular physiology that would have remained otherwise unrecognized from existing GWAS cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our study demonstrates that genome-wide enhancer maps are a powerful tool for identifying sub-threshold loci with bona fide roles in human cardiovascular physiology that would have remained otherwise unrecognized from existing GWAS cohorts",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a summary conclusion based on the rs1743292 example.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "7ebab54c-8307-4734-bbbb-1019169e874d",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C60",
+      "claim": "At least 46,452 individuals must be different between the QT GWAS (76,061 individuals) and QRS GWAS (60,255 individuals) used in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, the QT GWAS we used to identify the sub-threshold loci consisted of 76,061 individuals, while the QRS GWAS queried consisted of 60,255 individuals. We compared the total sizes of each cohort used in the two studies and calculated that a minimum total of 46,452 individuals must be different between the two studies",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific calculations about cohort overlap.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "b2856489-3b45-47b5-a595-d2ffa621ecdf",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C61",
+      "claim": "Sub-threshold loci overlapping enhancers are significantly more likely to be nominally significant (p<0.05) in QRS GWAS than sub-threshold loci not overlapping enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Right, Sub-threshold loci overlapping enhancers are significantly more likely to be nominally significant (p<0.05) in QRS GWAS than sub-threshold loci not overlapping enhancers",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes comparison data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "7a596cf1-0ea1-402c-8011-de53674c2e31",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C62",
+      "claim": "Loci overlapping enhancers are significantly more likely to be newly genome-wide significant in the held-out QT interval GWAS than loci outside enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Middle, Loci overlapping enhancers have significantly more likely to be newly genome-wide significant in the held-out QT interval GWAS, than loci outside enhancers",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes comparison data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "cdc05777-df8c-476c-8198-d7fd03e71cb0",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C63",
+      "claim": "287 independent sub-threshold loci in the genome were identified by grouping all 2075 sub-threshold SNPs using linkage disequilibrium data (minimum r2=0.2).",
+      "claim_type": "EXPLICIT",
+      "source": "We grouped all 2075 sub-threshold SNPs using linkage disequilibrium data (minimum r2=0.2) to identify 287 independent sub-threshold loci in the genome (Materials and methods)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific methodological details and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "5b7caddd-9e21-4465-bc33-965531305a79",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C64",
+      "claim": "22 cardiac enhancers that overlap SNPs from 18 independent sub-threshold loci were cloned for quantitative luciferase assays.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we cloned allele-specific enhancer fragments from 22 cardiac enhancers that overlap SNPs from 18 independent sub-threshold loci, and performed quantitative luciferase assays in human iPSC-derived cardiomyocytes to determine whether the sub-threshold SNP genotypes influence enhancer activity (Materials and methods)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific experimental details.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "e6dd4546-07a3-482f-a283-f27f5471183f",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C65",
+      "claim": "Ten predicted enhancers from eight sub-threshold loci were tested by 4C-seq in human iPSC-derived cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "We used 4C-seq to test ten predicted enhancers from eight sub-threshold loci in human iPSC-derived cardiomyocytes (van de Werken et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific experimental details.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "e3a64ebf-c847-415a-92c0-52e762a8f170",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C66",
+      "claim": "60 sub-threshold loci contain sub-threshold SNPs directly overlapping predicted active LV enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "From the 287 independent sub-threshold loci in the genome, we selected two subsets to compare: 60 loci that contain sub-threshold SNPs directly overlapping predicted active LV enhancers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numerical data about the subset of loci analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "4507ed33-2b84-4ee0-95e8-99ce79613760",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C67",
+      "claim": "129 sub-threshold loci do not contain any SNPs (r2>0.2) overlapping a cardiac enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "and as a negative control, 129 sub-threshold loci that do not contain any SNPs (r2>0.2) overlapping a cardiac enhancer",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numerical data about the negative control subset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "022fd9ec-3ece-4286-9f47-d23aa7004e09",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C68",
+      "claim": "49 of the 106 predicted gene targets of sub-threshold enhancers had mouse mutant models available with documented phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 49 of the 106 genes where mouse mutant models were available with documented phenotypes (Bello et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numerical data about available mouse models.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "0b9b9898-acef-47c7-9ea4-0cfd7e4d579b",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C69",
+      "claim": "The rs1743292 locus contains 8 SNPs with reported p-values less than 1x10-4 and another 2 SNPs in LD that do not have calculated p-values.",
+      "claim_type": "EXPLICIT",
+      "source": "The sub-threshold locus on chromosome 6 contains 8 SNPs with reported p-values less than 1x10-4 and another 2 SNPs in LD that do not have calculated p-values",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific details about the SNPs in the locus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "a24916e2-8ef4-4a39-8362-5eed3ae715f5",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C70",
+      "claim": "Three SNPs in the rs1743292 locus overlap active LV enhancers: rs1743292 (p=6.48x10-5), rs112332323 (p-value not available), and rs1772203 (p=5.87x10-5).",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on the 3 SNPs in this locus that overlap active LV enhancers: rs1743292 (p=6.48x10-5) and rs112332323 (p-value not available) that both overlap a 3.6 kb predicted enhancer, and rs1772203 (p=5.87x10-5) that overlaps a 2.8 kb predicted enhancer (Figure 6a,b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific details about the SNPs and their p-values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "ce769c2d-14a3-4a82-b3ad-51f331cdfacc",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C71",
+      "claim": "The allelic imbalance trend at rs1743292 is consistent in all five additional human individuals heterozygous at rs1743292 sequenced at lower depth.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend is consistent in all five additional human individuals heterozygous at rs1743292 sequenced at lower depth (right, Figure 6d)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript describes consistency of allelic imbalance across multiple individuals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "40392304-debd-40e7-9653-56ec15b2afbb",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C72",
+      "claim": "rs1743292 can affect enhancer activity potentially through altering chromatin accessibility or transcription factor binding.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that rs1743292 can affect enhancer activity potentially through altering chromatin accessibility or transcription factor binding",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a mechanistic interpretation of the allelic imbalance data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "760ea6d3-2d4b-481b-bf62-f02a6dc0b121",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C73",
+      "claim": "The POPDC protein family of transmembrane proteins has recently reported roles in cardiac pacemaking.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that both enhancers may contribute to regulating the gene expression of BVES and POPDC3, of note because the POPDC protein family of transmembrane proteins has recently reported roles in cardiac pacemaking (Froese et al., 2012; Kirchmaier et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites published literature about POPDC protein function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "01b2b373-f64c-46a8-812a-e9188c34baf5",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C74",
+      "claim": "POPDC3 has much lower expression in cardiac tissue than skeletal muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas POPDC3 has much lower expression in cardiac tissue than skeletal muscle",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides expression data comparison across tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "25edddef-e5dd-44fe-ab29-36571f7c36a8",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C75",
+      "claim": "PREP is constitutively expressed across a wide range of tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "and PREP is constitutively expressed across a wide range of tissues (Figure 6\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides expression data across tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "0478639d-4298-4fb8-9e75-5ee21122d6ea",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "claim_id": "C76",
+      "claim": "The genetic locus alters QT interval length through the BVES gene.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that this genetic locus alters QT interval length through the BVES gene (Bello et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a conclusion based on multiple lines of evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "26030501-b3fa-40da-87f6-097eff7c0a64",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "QT/QRS GWAS loci are significantly enriched in cardiac enhancers, particularly left ventricular enhancers marked by H3K4me1 and H3K27ac. The enrichment is tissue-specific, with left ventricle showing the strongest signal (z-score=7.67, p<1\u00d710\u207b\u2075), increasing to z-score=9.31 when restricting to 'strong' enhancers with both H3K4me1 and H3K27ac marks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 provide converging evidence from multiple statistical analyses with appropriate controls (matched for MAF, LD, distance to genes). The enrichment analysis uses 100,000 permutations of matched control loci, providing robust statistical support. The tissue-specificity matches biological expectations for QT/QRS traits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "f2e0c085-19af-4b52-bb26-5283d52529b6",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "QT/QRS enhancers have distinct functional characteristics compared to non-GWAS left ventricular enhancers, including 3.1-fold higher H3K27ac density (p=1.53\u00d710\u207b\u2074), significant CpG hypomethylation (p=1.07\u00d710\u207b\u2076), enrichment for TF motif disruption (p=0.002), and greater evolutionary conservation (p=6.82\u00d710\u207b\u2075).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12 provide multiple independent functional characteristics with statistical significance. The use of Mann-Whitney U tests and size-matched controls for conservation analysis is appropriate. The convergence of multiple epigenomic features strengthens the conclusion that these enhancers are functionally distinct.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "99520522-0128-4d15-aefe-d43120fd5f36",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Sub-threshold SNPs (p-values between 1\u00d710\u207b\u2074 and 5\u00d710\u207b\u2078) are enriched in active left ventricular enhancers, and this enrichment persists after removing SNPs within 1Mb of known GWAS loci. The combination of functional features (H3K27ac, DHS, CpG hypomethylation) substantially improves sub-threshold locus enrichment. A total of 2,075 independent sub-threshold SNPs were identified, with 208 overlapping LV enhancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 demonstrate that sub-threshold enrichment is not simply due to LD with known loci. The removal of \u00b11Mb regions around known loci is a critical control that strengthens the interpretation. The enrichment increase after removal (C16) suggests the approach successfully identifies novel signals distinct from known loci.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "d664cbf3-e4f5-45da-afe2-3f2c0edec086",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Experimental validation using luciferase reporter assays demonstrates that 13 of 18 tested sub-threshold loci (72.2%) contain enhancers that drive allele-specific transcriptional activity in human iPSC-derived cardiomyocytes. Statistical estimation suggests 51.1%-89.8% (95% Bayesian confidence interval) of prioritized sub-threshold loci have regulatory consequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 provide direct experimental evidence for regulatory function. The 72.2% validation rate is high and supports the epigenomic prioritization approach. However, the Bayesian confidence interval calculation method is not described in detail, which limits full assessment of C19. The experimental design with n\u22658 replicates per construct is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "0c86ec5f-e1f0-4d14-a38c-23a0a1780f5d",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "4C-seq experiments in human iPSC-derived cardiomyocytes demonstrate that 8 of 10 tested enhancers from sub-threshold loci form chromatin interactions with gene promoters within 500kb, providing evidence for enhancer-promoter connectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20 and C65 provide experimental evidence for physical enhancer-promoter interactions. The 80% success rate (8/10) is high and supports functional relevance. The 4C-seq methodology is appropriate for identifying long-range interactions, though the manuscript does not provide details on statistical thresholds for calling interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "22319759-cb17-4c23-86e4-c451d686add9",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Sub-threshold loci overlapping enhancers show significantly stronger association signals in QT GWAS, are more likely to reach genome-wide significance in held-out QT GWAS, and show greater nominal significance (p<0.05) in independent QRS GWAS compared to sub-threshold loci outside enhancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C61-C62 provide multiple independent lines of evidence from GWAS data supporting that enhancer-overlapping loci represent true biological signals. The use of independent QRS GWAS with at least 46,452 non-overlapping individuals (C60) provides validation in an independent trait and cohort, strengthening the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "b2388225-287d-4471-b033-308c57620956",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A computational enhancer-gene linking method based on correlated activity across 59 tissues identified 106 candidate genes regulated by 60 sub-threshold enhancers. This method successfully predicted 11 of 15 (73%) experimentally observed 4C-seq interactions, compared to only 3 of 15 (20%) for the nearest gene approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 demonstrate that the computational linking method substantially outperforms the nearest gene approach. The 73% vs 20% prediction accuracy provides strong validation. However, the manuscript lacks detailed description of the computational method, making it difficult to fully assess potential biases or limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "9b02ba5c-0369-4865-ad5f-ffec500112d3",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Genetic perturbation of genes linked to sub-threshold enhancers shows 4.11-fold enrichment for cardiac conduction/contractility phenotypes compared to all LV enhancer-linked genes (11/49 genes, p=6.84\u00d710\u207b\u2075), and 7.30-fold enrichment compared to genes near non-enhancer sub-threshold loci (p=1.92\u00d710\u207b\u00b3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C56, and C42 provide strong evidence from mouse phenotype data. The use of both positive (all LV enhancers) and negative (non-enhancer sub-threshold loci) controls strengthens the interpretation. The enrichment is statistically significant and biologically meaningful, though the analysis relies on existing mouse knockout data rather than new experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "c753a89e-615a-44b1-b03f-cc8feea8f09b",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The rs1743292/rs1772203 sub-threshold locus contains two enhancers that show significant allele-specific activity: the major haplotype at rs1743292 has 45% greater activity (p=2.99\u00d710\u207b\u00b9\u00b2), while the minor haplotype at rs1772203 is 28% more active (p=1.79\u00d710\u207b\u2075).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 provide strong experimental evidence with highly significant p-values. The bidirectional effects (major allele more active at one enhancer, minor allele more active at the other) are interesting and suggest complex regulatory architecture. The experimental design appears sound with appropriate replication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "83975a74-f4af-4dba-a52a-47de3aa18a07",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "DNase I hypersensitivity sequencing shows significant allelic imbalance at rs1743292 in human fetal heart tissue (97 reads to major C allele vs 300 reads to minor T allele, p=3.1\u00d710\u207b\u00b2\u2075), with consistent trends across 5 additional heterozygous individuals, suggesting the SNP affects chromatin accessibility or transcription factor binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27 and C71 provide strong evidence for allelic effects on chromatin accessibility in human tissue. The highly significant p-value and consistency across multiple individuals strengthen the conclusion. However, C72 is speculative about mechanism (chromatin accessibility vs TF binding) and should be tested experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "c3d6426c-56d5-43f4-86fa-4d6ff18c46fb",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Both rs1743292 and rs1772203 enhancers form chromatin interactions with BVES/POPDC1 and POPDC3 promoters and with predicted enhancers in PREP introns. The rs1743292 SNP alters a predicted NF-I family transcription factor binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28 and C38 provide experimental (4C-seq) and computational (motif analysis) evidence for target genes and mechanism. The 4C-seq data directly demonstrates physical interactions. The motif disruption is predicted rather than experimentally validated, and the functional relevance of NF-I binding is supported only by citation of a GWAS association.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "d16c5f51-900a-48e0-80d0-96de884cbf4b",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Multiple lines of evidence implicate BVES as the causal gene at the rs1743292/rs1772203 locus: (1) BVES knockout mice show cardiac conduction defects, (2) BVES is most highly expressed in human left ventricle, (3) bves knockdown in zebrafish shortens ventricular action potential duration (p=0.002), while (4) POPDC3 and PREP knockouts/knockdowns show no cardiac phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 and C73-C76 provide converging evidence from multiple model organisms and expression data. The mouse phenotype data comes from published literature (appropriate citations provided). The zebrafish experiments provide new functional validation, though one of two morpholinos shows marginal significance (p=0.09). The expression pattern strongly supports BVES over POPDC3 or PREP.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "c0e5d88a-fec2-4d16-b64a-0fbf09bca40c",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Power calculations demonstrate that the rs1743292 locus had only 12.76% power for detection at genome-wide significance in the current GWAS (68,900 individuals), and would require 146,700 individuals for 80% power, demonstrating that genome-wide enhancer maps can identify biologically relevant loci that would remain undetected in existing GWAS cohorts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 provide specific power calculations that contextualize the value of the epigenomic approach. The calculations appear sound and demonstrate that this locus would require substantially larger cohorts for traditional discovery. This effectively illustrates the utility of the approach for identifying true biological signals below genome-wide significance thresholds.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "9c6c0666-33fe-4dab-82fd-68c80787d536",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The epigenomic prioritization approach generalizes to other complex traits: enrichment of sub-threshold SNPs in tissue-specific enhancers persists after removing known loci for both LDL cholesterol (liver enhancers) and Alzheimer's disease (peripheral blood monocyte enhancers), suggesting broad applicability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39 and C52 demonstrate generalizability beyond cardiac traits. The analysis appropriately excludes the HLA locus for Alzheimer's disease. However, the tissue choices are based on prior knowledge (liver for LDL) or prior enrichment analysis (monocytes for AD), which may introduce some circularity. No experimental validation is provided for these traits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "724d94d3-997b-4c45-8ada-7c9708606a7b",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Epigenomic maps effectively discriminate true biological signals from noise in sub-threshold GWAS loci, as demonstrated by multiple independent lines of evidence including luciferase assays, 4C-seq interactions, GWAS replication, and mouse phenotypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40, C41, C50, and C57 represent summary conclusions supported by the convergence of multiple experimental and computational results. The manuscript provides substantial evidence across multiple validation approaches. The claim is well-supported by the data presented, though the false positive rate among prioritized loci remains incompletely characterized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "308b60e7-a0ee-424a-88b3-b62aaa65bf12",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background claims about GWAS limitations and the importance of QT interval are supported by appropriate citations to published literature, establishing the scientific context and motivation for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 and C48 provide appropriate background context with citations to relevant literature. These are well-established concepts in the field and the citations appear appropriate. These claims establish the scientific rationale for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "ccff427d-5f8e-4ae7-956c-a28140758dd0",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The manuscript presents several speculative interpretations and forward-looking statements about evolutionary selection, pathway differences between sub-threshold and above-threshold loci, and the broader implications of the approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C47, C53, C51, C54, and C55 are explicitly speculative or represent forward-looking statements about future applications. These are reasonable hypotheses and perspectives but are not directly tested in the manuscript. They represent appropriate discussion points but should not be evaluated as supported findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "98c4a0ba-e61c-47d2-8c25-67774dc82628",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The authors claim that no previous study has implicated any specific sub-threshold locus in any complex human trait, establishing the novelty of their experimental validation approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C49 asserts novelty based on knowledge of the literature. While the authors state 'to our knowledge,' it is difficult to definitively verify negative claims about the entire literature. The claim appears reasonable given the field's focus on genome-wide significant loci, but comprehensive verification would require exhaustive literature review.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    },
+    {
+      "id": "03c8daa7-8719-4a73-a8f0-283c2c0ddcc5",
+      "content_id": "ff00c6dd-6b33-40eb-b437-acc5c5be58ef",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Methodological details about sub-threshold locus identification: 287 independent sub-threshold loci were identified by LD-based grouping (r\u00b2>0.2), with 60 loci overlapping enhancers selected for detailed analysis and 129 non-enhancer loci serving as negative controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63, C66, and C67 describe methodological choices that are clearly stated and appropriate. The LD threshold (r\u00b2>0.2) is reasonable for defining independent loci. The selection of enhancer-overlapping and non-overlapping loci for comparison provides appropriate positive and negative control sets.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:41:27.196287Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b794c0f3-dec3-4eb4-81ff-76daa9f2410b",
+      "result_id": "26030501-b3fa-40da-87f6-097eff7c0a64"
+    },
+    {
+      "claim_id": "c5a0859d-f6a2-4a78-abe0-058240eaa709",
+      "result_id": "26030501-b3fa-40da-87f6-097eff7c0a64"
+    },
+    {
+      "claim_id": "4a02e7a8-f86e-4d69-87f3-e96e6449f052",
+      "result_id": "26030501-b3fa-40da-87f6-097eff7c0a64"
+    },
+    {
+      "claim_id": "00365c11-d747-4add-87a2-5a878dae42eb",
+      "result_id": "26030501-b3fa-40da-87f6-097eff7c0a64"
+    },
+    {
+      "claim_id": "8465dfd0-a38d-41f7-a1e7-1b70f810925c",
+      "result_id": "26030501-b3fa-40da-87f6-097eff7c0a64"
+    },
+    {
+      "claim_id": "4f674b51-845a-4aca-bd22-849b7b86e7a2",
+      "result_id": "26030501-b3fa-40da-87f6-097eff7c0a64"
+    },
+    {
+      "claim_id": "b1b005a7-79ec-4ea8-9128-5de79c598b7f",
+      "result_id": "26030501-b3fa-40da-87f6-097eff7c0a64"
+    },
+    {
+      "claim_id": "110a1b43-f2e4-48c6-a75b-d105395548eb",
+      "result_id": "f2e0c085-19af-4b52-bb26-5283d52529b6"
+    },
+    {
+      "claim_id": "5f699d23-1cbe-4b53-9eea-08aab2fcd272",
+      "result_id": "f2e0c085-19af-4b52-bb26-5283d52529b6"
+    },
+    {
+      "claim_id": "f262f6a6-909f-4d87-80aa-826c22c12f56",
+      "result_id": "f2e0c085-19af-4b52-bb26-5283d52529b6"
+    },
+    {
+      "claim_id": "e69a6eab-6fed-415b-a3af-8b4d65c65828",
+      "result_id": "f2e0c085-19af-4b52-bb26-5283d52529b6"
+    },
+    {
+      "claim_id": "1a3cea2d-de96-4954-b2a8-ec15e6b396ed",
+      "result_id": "f2e0c085-19af-4b52-bb26-5283d52529b6"
+    },
+    {
+      "claim_id": "c9490639-a711-4111-b26c-a1a723540074",
+      "result_id": "f2e0c085-19af-4b52-bb26-5283d52529b6"
+    },
+    {
+      "claim_id": "0929dacc-a524-4d11-9114-6b9e351cfb33",
+      "result_id": "f2e0c085-19af-4b52-bb26-5283d52529b6"
+    },
+    {
+      "claim_id": "e1eebcba-9603-4070-9d83-334794854d09",
+      "result_id": "99520522-0128-4d15-aefe-d43120fd5f36"
+    },
+    {
+      "claim_id": "8cb70817-ca16-4adb-a968-cd5fd3bf4586",
+      "result_id": "99520522-0128-4d15-aefe-d43120fd5f36"
+    },
+    {
+      "claim_id": "08e76c74-87da-4751-9a8c-030a47d39f76",
+      "result_id": "99520522-0128-4d15-aefe-d43120fd5f36"
+    },
+    {
+      "claim_id": "439bcb28-5a3d-4329-a851-d76e4ed9d8ae",
+      "result_id": "99520522-0128-4d15-aefe-d43120fd5f36"
+    },
+    {
+      "claim_id": "06957024-5ed4-452c-a4d0-cacd6c85bc36",
+      "result_id": "99520522-0128-4d15-aefe-d43120fd5f36"
+    },
+    {
+      "claim_id": "112bdf4f-97fa-4c3b-9192-db680bc532fe",
+      "result_id": "d664cbf3-e4f5-45da-afe2-3f2c0edec086"
+    },
+    {
+      "claim_id": "a85e5537-94be-42f4-a1c5-42aeb9c7846a",
+      "result_id": "d664cbf3-e4f5-45da-afe2-3f2c0edec086"
+    },
+    {
+      "claim_id": "5b7caddd-9e21-4465-bc33-965531305a79",
+      "result_id": "d664cbf3-e4f5-45da-afe2-3f2c0edec086"
+    },
+    {
+      "claim_id": "546f3b93-8480-4f01-8752-9749445fdc67",
+      "result_id": "0c86ec5f-e1f0-4d14-a38c-23a0a1780f5d"
+    },
+    {
+      "claim_id": "e6dd4546-07a3-482f-a283-f27f5471183f",
+      "result_id": "0c86ec5f-e1f0-4d14-a38c-23a0a1780f5d"
+    },
+    {
+      "claim_id": "f4000919-05d0-49dd-a915-22b1eb53fcd3",
+      "result_id": "22319759-cb17-4c23-86e4-c451d686add9"
+    },
+    {
+      "claim_id": "b2856489-3b45-47b5-a595-d2ffa621ecdf",
+      "result_id": "22319759-cb17-4c23-86e4-c451d686add9"
+    },
+    {
+      "claim_id": "7a596cf1-0ea1-402c-8011-de53674c2e31",
+      "result_id": "22319759-cb17-4c23-86e4-c451d686add9"
+    },
+    {
+      "claim_id": "7ebab54c-8307-4734-bbbb-1019169e874d",
+      "result_id": "22319759-cb17-4c23-86e4-c451d686add9"
+    },
+    {
+      "claim_id": "dbb5bf9c-6012-4d59-822f-97fd03d61c3b",
+      "result_id": "b2388225-287d-4471-b033-308c57620956"
+    },
+    {
+      "claim_id": "fbcfbd06-dc1c-4900-aab2-9bc37000c417",
+      "result_id": "b2388225-287d-4471-b033-308c57620956"
+    },
+    {
+      "claim_id": "022fd9ec-3ece-4286-9f47-d23aa7004e09",
+      "result_id": "b2388225-287d-4471-b033-308c57620956"
+    },
+    {
+      "claim_id": "f3ca1ce8-e175-4c97-b559-2ce3cacf6115",
+      "result_id": "9b02ba5c-0369-4865-ad5f-ffec500112d3"
+    },
+    {
+      "claim_id": "71ee4fda-76d6-44b1-ae4d-8d192ac2ac28",
+      "result_id": "9b02ba5c-0369-4865-ad5f-ffec500112d3"
+    },
+    {
+      "claim_id": "7957ec48-10d5-40cf-b515-f5469f3f4868",
+      "result_id": "9b02ba5c-0369-4865-ad5f-ffec500112d3"
+    },
+    {
+      "claim_id": "31514d26-79be-4d58-b712-da8402fb48d2",
+      "result_id": "c753a89e-615a-44b1-b03f-cc8feea8f09b"
+    },
+    {
+      "claim_id": "e2682594-6ef7-42a4-8be3-3d18195a6a06",
+      "result_id": "c753a89e-615a-44b1-b03f-cc8feea8f09b"
+    },
+    {
+      "claim_id": "a24916e2-8ef4-4a39-8362-5eed3ae715f5",
+      "result_id": "c753a89e-615a-44b1-b03f-cc8feea8f09b"
+    },
+    {
+      "claim_id": "0b9b9898-acef-47c7-9ea4-0cfd7e4d579b",
+      "result_id": "c753a89e-615a-44b1-b03f-cc8feea8f09b"
+    },
+    {
+      "claim_id": "3c9efb28-3c25-4f8c-903f-496e9308e495",
+      "result_id": "83975a74-f4af-4dba-a52a-47de3aa18a07"
+    },
+    {
+      "claim_id": "ce769c2d-14a3-4a82-b3ad-51f331cdfacc",
+      "result_id": "83975a74-f4af-4dba-a52a-47de3aa18a07"
+    },
+    {
+      "claim_id": "40392304-debd-40e7-9653-56ec15b2afbb",
+      "result_id": "83975a74-f4af-4dba-a52a-47de3aa18a07"
+    },
+    {
+      "claim_id": "ba804151-fee0-46a8-8785-ec9c16bcfc2d",
+      "result_id": "c3d6426c-56d5-43f4-86fa-4d6ff18c46fb"
+    },
+    {
+      "claim_id": "9451f7d8-483d-4f0d-a4d5-39ce549b69b1",
+      "result_id": "c3d6426c-56d5-43f4-86fa-4d6ff18c46fb"
+    },
+    {
+      "claim_id": "281f9f36-dd82-44de-ba26-8d9a7ac0c9aa",
+      "result_id": "d16c5f51-900a-48e0-80d0-96de884cbf4b"
+    },
+    {
+      "claim_id": "25b03f2d-b41a-438f-9f58-34871484c9a9",
+      "result_id": "d16c5f51-900a-48e0-80d0-96de884cbf4b"
+    },
+    {
+      "claim_id": "1699a55c-bca8-4e1d-bcbd-f43cbcb8d87b",
+      "result_id": "d16c5f51-900a-48e0-80d0-96de884cbf4b"
+    },
+    {
+      "claim_id": "fc18ead4-09e1-471b-9268-586517a9b84f",
+      "result_id": "d16c5f51-900a-48e0-80d0-96de884cbf4b"
+    },
+    {
+      "claim_id": "21e66a01-3eae-4350-a0e2-e6634e1f114e",
+      "result_id": "d16c5f51-900a-48e0-80d0-96de884cbf4b"
+    },
+    {
+      "claim_id": "760ea6d3-2d4b-481b-bf62-f02a6dc0b121",
+      "result_id": "d16c5f51-900a-48e0-80d0-96de884cbf4b"
+    },
+    {
+      "claim_id": "01b2b373-f64c-46a8-812a-e9188c34baf5",
+      "result_id": "d16c5f51-900a-48e0-80d0-96de884cbf4b"
+    },
+    {
+      "claim_id": "25edddef-e5dd-44fe-ab29-36571f7c36a8",
+      "result_id": "d16c5f51-900a-48e0-80d0-96de884cbf4b"
+    },
+    {
+      "claim_id": "0478639d-4298-4fb8-9e75-5ee21122d6ea",
+      "result_id": "d16c5f51-900a-48e0-80d0-96de884cbf4b"
+    },
+    {
+      "claim_id": "05b8ca8e-a687-4080-bf75-994715c8a711",
+      "result_id": "d16c5f51-900a-48e0-80d0-96de884cbf4b"
+    },
+    {
+      "claim_id": "2b7a0164-6ec6-44b0-b2b0-d2f625a058fe",
+      "result_id": "c0e5d88a-fec2-4d16-b64a-0fbf09bca40c"
+    },
+    {
+      "claim_id": "8686f517-4b71-4a07-9ad6-4e8cad3d8ea9",
+      "result_id": "c0e5d88a-fec2-4d16-b64a-0fbf09bca40c"
+    },
+    {
+      "claim_id": "15264883-a2e5-4f81-b480-269faba74d80",
+      "result_id": "c0e5d88a-fec2-4d16-b64a-0fbf09bca40c"
+    },
+    {
+      "claim_id": "7f6a9887-dfe2-4618-8899-d993486ce1b1",
+      "result_id": "9c6c0666-33fe-4dab-82fd-68c80787d536"
+    },
+    {
+      "claim_id": "a463e1f4-d12b-46c9-a050-ac7a286d70f5",
+      "result_id": "9c6c0666-33fe-4dab-82fd-68c80787d536"
+    },
+    {
+      "claim_id": "4b4f9dd6-762c-4b2f-a736-cb4d99980bbf",
+      "result_id": "724d94d3-997b-4c45-8ada-7c9708606a7b"
+    },
+    {
+      "claim_id": "c4831945-3c27-46b2-853d-8fbdce258189",
+      "result_id": "724d94d3-997b-4c45-8ada-7c9708606a7b"
+    },
+    {
+      "claim_id": "3421695a-d956-4853-b891-b441cb8bdee0",
+      "result_id": "724d94d3-997b-4c45-8ada-7c9708606a7b"
+    },
+    {
+      "claim_id": "65196196-a0c4-4f3d-ab74-e9d82f9fe7bc",
+      "result_id": "724d94d3-997b-4c45-8ada-7c9708606a7b"
+    },
+    {
+      "claim_id": "2cc04efb-9f68-48bd-90df-e9422856f831",
+      "result_id": "308b60e7-a0ee-424a-88b3-b62aaa65bf12"
+    },
+    {
+      "claim_id": "8b7c887c-3b6e-4975-aee7-95515aa4e8d6",
+      "result_id": "308b60e7-a0ee-424a-88b3-b62aaa65bf12"
+    },
+    {
+      "claim_id": "17414497-210d-48c7-999a-66b8cf8d9fa4",
+      "result_id": "308b60e7-a0ee-424a-88b3-b62aaa65bf12"
+    },
+    {
+      "claim_id": "005688a6-2539-4bf7-95bb-ce94ac01656f",
+      "result_id": "308b60e7-a0ee-424a-88b3-b62aaa65bf12"
+    },
+    {
+      "claim_id": "cd565c46-040d-485e-b065-53f476c9c2d3",
+      "result_id": "308b60e7-a0ee-424a-88b3-b62aaa65bf12"
+    },
+    {
+      "claim_id": "1328665a-2883-41f1-ab66-7e1b8ec76662",
+      "result_id": "ccff427d-5f8e-4ae7-956c-a28140758dd0"
+    },
+    {
+      "claim_id": "a563c1fc-317c-4ba7-a3ce-8417f3e26d85",
+      "result_id": "ccff427d-5f8e-4ae7-956c-a28140758dd0"
+    },
+    {
+      "claim_id": "99fb5102-d336-4a4b-8004-018e995e8776",
+      "result_id": "ccff427d-5f8e-4ae7-956c-a28140758dd0"
+    },
+    {
+      "claim_id": "1bc380d0-7312-4190-9c33-d395ef28f468",
+      "result_id": "ccff427d-5f8e-4ae7-956c-a28140758dd0"
+    },
+    {
+      "claim_id": "ce8a0b2e-b253-4214-9502-de847ae3e179",
+      "result_id": "ccff427d-5f8e-4ae7-956c-a28140758dd0"
+    },
+    {
+      "claim_id": "4192888f-d1be-42c8-b1f8-65a25674eaec",
+      "result_id": "98c4a0ba-e61c-47d2-8c25-67774dc82628"
+    },
+    {
+      "claim_id": "cdc05777-df8c-476c-8198-d7fd03e71cb0",
+      "result_id": "03c8daa7-8719-4a73-a8f0-283c2c0ddcc5"
+    },
+    {
+      "claim_id": "e3a64ebf-c847-415a-92c0-52e762a8f170",
+      "result_id": "03c8daa7-8719-4a73-a8f0-283c2c0ddcc5"
+    },
+    {
+      "claim_id": "4507ed33-2b84-4ee0-95e8-99ce79613760",
+      "result_id": "03c8daa7-8719-4a73-a8f0-283c2c0ddcc5"
+    }
+  ],
+  "comparisons": []
+}

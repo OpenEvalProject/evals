@@ -1,0 +1,2242 @@
+{
+  "submission": {
+    "id": "efef8605-e8d1-4773-8b56-1b5518cf21ee",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:25:43.056202Z",
+    "updated_at": "2025-11-29T21:25:43.056202Z"
+  },
+  "content": [
+    {
+      "id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "submission_id": "efef8605-e8d1-4773-8b56-1b5518cf21ee",
+      "content_type": "manuscript",
+      "content_text": "# Super-resolution kinetochore tracking reveals the mechanisms of human sister kinetochore directional switching\n\n## Authors\n\n- Nigel J Burroughs<sup>1</sup> \u2020\n- Edward F Harry<sup>2</sup> ([ORCID: 0000-0003-1914-6432](https://orcid.org/0000-0003-1914-6432))\n- Andrew D McAinsh<sup>3</sup> ([ORCID: 0000-0001-6808-0711](https://orcid.org/0000-0001-6808-0711)) \u2020\n\n### Affiliations\n\n1. Warwick Systems Biology Centre, Warwick Mathematics Institute University of Warwick Coventry United Kingdom\n2. Warwick Molecular Organisation and Assembly in Cells University of Warwick Coventry United Kingdom\n3. Centre for Mechanochemical Cell Biology, Division of Biomedical Cell Biology, Warwick Medical School University of Warwick Coventry United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe congression of chromosomes to the spindle equator involves the directed motility of bi-orientated sister kinetochores. Sister kinetochores bind bundles of dynamic microtubules and are physically connected through centromeric chromatin. A crucial question is to understand how sister kinetochores are coordinated to generate motility and directional switches. Here, we combine super-resolution tracking of kinetochores with automated switching-point detection to analyse sister switching dynamics over thousands of events. We discover that switching is initiated by both the leading (microtubules depolymerising) or trailing (microtubules polymerising) kinetochore. Surprisingly, trail-driven switching generates an overstretch of the chromatin that relaxes over the following half-period. This rules out the involvement of a tension sensor, the central premise of the long-standing tension-model. Instead, our data support a model in which clocks set the intrinsic-switching time of the two kinetochore-attached microtubule fibres, with the centromeric spring tension operating as a feedback to slow or accelerate the clocks.\n\n## Introduction\n\nThe accurate segregation of chromosomes during anaphase requires that all sister kinetochores bi-orientate, an attachment state in which sisters form stable attachments to the plus-ends of microtubules that originate at opposite spindle poles. Bi-orientation begins immediately after nuclear envelope breakdown during prometaphase\u00a0when scattered chromosomes engage the nascent mitotic spindle, and concludes with the formation of the metaphase plate \u2013 a state where all sister kinetochores are bi-orientated and aligned on the equator of a bipolar spindle\u00a0(McIntosh et al., 2012). To achieve this bi-orientation, sister kinetochores must be able to undergo directed movements to the equator (this is termed congression) and then maintain their position prior to anaphase onset \u2013 a feature of this latter phase is oscillations of the chromosomes along the spindle axis. Directed motility is possible because one sister\u00a0adopts a poleward (P) moving state (the lead sister) while the other is\u00a0in an away-from-the-pole (AP) moving state (the trailing sister). These two movement states reflect the balance of microtubule polymerisation/depolymerisation within the kinetochore-fibre (K-fibre), which is typically 20\u201325 microtubules in human cells (Compton, 2000; Rieder, 2005;\u00a0Wendell et al., 1993). While such\u00a0K-fibres are rarely coherent, there is a small polymerisation bias between sister kinetochores (Armond et al., 2015; VandenBeldt et al., 2006) and they can be thought of as being in either a net polymerising or depolymerising state. The adaptive switching between these AP and P states then defines the directionality\u00a0of chromosome motion and can give rise to the quasi-periodic oscillations that are observed in the majority of vertebrate cells (Skibbens et al., 1993). An outstanding question is to understand the mechanisms by which the two sister kinetochores are able to communicate in order to coordinate their P/AP states and thereby generate chromosome movements.\n\nInitial investigations into the control of chromosome movement utilised time-lapse imaging in newt lung cells using video-enhanced differential interference contrast microscopy (Skibbens et al., 1993). Kinetochores were shown to undergo periods of relatively constant velocity separated by abrupt changes in direction \u2013 a behaviour termed \u2018directional instability\u2019. Subsequent experiments demonstrated that weakening the centromeric chromatin which links the sisters (with a laser) uncoupled the normally coordinated motility of sister kinetochores (Skibbens et al., 1995).\u00a0These experiments led to a model (also see\u00a0Rieder and Salmon, 1994) in which tension in the centromeric chromatin\u00a0triggers a lead sister switch (P-to-AP) at a certain threshold, the loss of tension then triggering a directional switch in the second sister (AP-to-P). More recent kinetochore-tracking experiments in PtK1 cells are consistent with this model and show that switching initiates at maximum inter-kinetochore stretch\u00a0(Wan et al., 2012), schematic shown in Figure 1.\u00a0The polar ejection force, which increases with proximity to the pole,\u00a0pushes the chromosomes towards the metaphase plate.\u00a0When chromosomes stray far from the equator, this anti-poleward force increases the load on the leading (P) kinetochore and promotes switching \u2013 an idea supported by experiments in newt and human cells\u00a0(Ke et al., 2009; Stumpff et al., 2012).\u00a0The standard\u00a0tension\u00a0model thus predicts a fixed sequence of sister kinetochore-switching\u00a0events during a directional reversal \u2013 lead switch first, followed by trail. However, the timeframe for these events is short (several seconds), requiring\u00a0a sampling rate that avoids temporal aliasing. Existing kinetochore-tracking assays have a frame\u00a0rate in the 7.5\u201315\u2009s range (Dumont et al., 2012; Jaqaman et al., 2010;\u00a0Wan et al., 2012), meaning that detailed analysis of the switching mechanism has not been possible to date.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/09500/elife-09500-fig1-v2.jpg)\n\n**Figure 1.:** Schematic outlining the prevailing model for how sister kinetochores coordinate directional switches. As the leading, poleward-moving, kinetochore (P; black) moves to the right, the centromeric chromatin (blue) \u2013\u00a0which functions as a compliant linkage between sisters \u2013 becomes progressively more stretched (steps i,\u00a0ii). Stretching occurs because the trailing, away-from-the-pole, kinetochore (AP; red) is moving more slowly than the lead. Once sisters are at maximum stretch, the tension in the chromatin is thought to trigger the lead sister kinetochore to switch into an AP state. This results in a rapid loss of tension as both sisters are then in an AP state and moving towards each other (step iii). This relaxation is thought to trigger switching of the initially trailing sister into a P-moving state (step iv). Adapted from Wan et al., 2012.\n\n## Results and discussion\n\nWe developed a\u00a0high-resolution kinetochore-tracking procedure and used a switching point detection algorithm to examine the fine detail of paired sister kinetochore trajectory data.\u00a0Our previous kinetochore-tracking assay (Jaqaman et al., 2010) with a 7.5-s sampling time lacks the time resolution to resolve the relative sister switching order. To improve resolution, we used spinning disk confocal microscopy to capture 3D image stacks every 2\u2009s over 150 time steps in HeLa-K cells expressing a marker for the kinetochores (either eGFP-CENP-A or eGFP-CENP-A eGFP-Centrin1; Figure 2B; Video 1, Video 2). Phototoxicity was minimal, as >90% of cells successfully underwent anaphase. Sister kinetochores were tracked as previously described (Jaqaman et al., 2010), except that\u00a0we implemented 3D Gaussian mixture model fitting for determining sub-pixel spot locations (Thomann et al., 2002 see Figure 2A, C; Videos 3\u20135)\u00a0\u2013\u00a0important here because our faster time sampling results in a smaller inter-frame spot displacement requiring higher localisation accuracy. This sub-pixel (super-resolution) tracking gives high theoretical positional accuracy (x,y = \u00b1 2.8\u00a0nm; z = \u00b1 5.7\u00a0nm; see \u2018Materials and methods\u2019) and\u00a0reveals kinetochore dynamics in exquisite detail (Figure 2D). Consistent with previous work (Jaqaman et al., 2010; Vladimirou et al., 2013), sister kinetochores had a mean inter-kinetochore distance of ~910\u00a0nm and underwent quasi-periodic oscillations normal to the metaphase plate with a half-period of 35\u2009s (Figure 2\u2014figure supplement\u00a01A,B). Finally, we constructed a Bayesian switching point inference algorithm that estimates from an observed sister pair trajectory the switching times\u00a0for each sister (most probable frame) and the directional switching events by assignment of a direction of movement to each sister\u00a0(see \u2018Materials and methods\u2019). Here, we focus on coherent runs (periods when the sisters are\u00a0moving in the same direction) and the switching events that end runs. We tested this algorithm on simulated data where the true switch time is known giving accuracies of 94% (see \u2018Materials and methods\u2019; Figure 3A and Figure 3\u2014figure supplement 1). This switching point algorithm determined whether the leading or trailing sister\u00a0switches first in a directional reversal of the sister pair and by how many frames.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/09500/elife-09500-fig2-v2.jpg)\n\n**Figure 2.:** (A) Imaging and analysis flow chart summarising the steps of image sequence acquisition, image processing and statistical trajectory analysis. MMF- mixture model fitting,\u00a0MCMC- Markov chain Monte Carlo algorithm. (B) 3D view of kinetochores (eGFP-CENP-A \u2013 spot location marked by white spheres) relative to the metaphase plate (yellow spheres). (C) 2D images (single Z plane) of a sister kinetochore pair over six frames. Green tails represent kinetochore trajectories over the previous six frames (12\u00a0s). Yellow line indicates the metaphase plate intersection with the image plane. Sub-pixel kinetochore positions marked with white crosses. Scale bar = 1\u00a0\u00b5m. (D) Full sister pair trajectory showing the (normal) distance from the metaphase plate of the two sisters (black and red), and the sister axis twist angle relative to the metaphase plate normal (blue). Frames indicated in green correspond to the image slices shown in (C). (E) 2D images (single Z plane) of the sister kinetochore pair in (C/D) at the minimum and maximum twist. Sister axis shown in blue, metaphase plate and its normal in yellow. Scale bar = 1\u00a0\u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09500/elife-09500-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Autocorrelation of sister centre displacements (\u2206x) over four frames (8\u00a0s) normal to the metaphase plate. Purple arrow indicates the half-period of oscillations. (B) Histogram of sister\u2013sister separations. Data from 55 cells, 1529 trajectories, eGFP-CENP-A cell line.\n\n![Video 1.](https://cdn.elifesciences.org/articles/09500/elife-09500-media1.mp4.jpg)\n\n**Video 1.:** HeLa-K eGFP\u2013CENP-A, eGFP\u2013 Centrin1.\u00a0Z-projection through 12\u00a0\u03bcm. (Deconvolved) Movie of a metaphase cell (captured at 2\u00a0s per frame). Movie rendered used MATLAB and ImageJ. Please also refer to Figure 2.\n\n![Video 2.](https://cdn.elifesciences.org/articles/09500/elife-09500-media2.mp4.jpg)\n\n**Video 2.:** eGFP\u2013CENP-A, eGFP\u2013Centrin1.\u00a0(Deconvolved) Movie of a metaphase cell rendered in 3D. Movie rendered used MATLAB and IMARIS. Please also refer to Figure 2.\n\n![Video 3.](https://cdn.elifesciences.org/articles/09500/elife-09500-media3.mp4.jpg)\n\n**Video 3.:** eGFP\u2013CENP-A, eGFP\u2013Centrin1. (Deconvolved) Movie of a metaphase cell rendered in 3D overlaid with spot locations (silver spheres) as determined by the kinetochore-tracking assay. Movie rendered used MATLAB and IMARIS. Please also refer to Figure 2.\n\n![Video 4.](https://cdn.elifesciences.org/articles/09500/elife-09500-media4.mp4.jpg)\n\n**Video 4.:** eGFP\u2013CENP-A, eGFP\u2013Centrin1. (Deconvolved) Movie of a metaphase cell rendered in 3D overlaid with spot locations (green spheres) and frame-to-frame displacements (green tracks) as determined by the kinetochore-tracking assay. Movie rendered used MATLAB and IMARIS. Please also refer to Figure 2.\n\n![Video 5.](https://cdn.elifesciences.org/articles/09500/elife-09500-media5.mp4.jpg)\n\n**Video 5.:** eGFP\u2013CENP-A, eGFP\u2013Centrin1. (Deconvolved) Movie of a metaphase cell rendered in 3D overlaid with: aligned kinetochore locations (silver spheres); metaphase plate fit (small yellow spheres); spindle poles (blue spheres); spindle pole frame-to-frame displacements (blue tracks); spindle axis and spindle mid-plane (small blue spheres) as determined by the kinetochore-tracking assay. Movie rendered used MATLAB and IMARIS. Please also refer to Figure 2.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/09500/elife-09500-fig3-v2.jpg)\n\n**Figure 3.:** (A) Event detection on a synthetic data set with idealised oscillation of two sisters (for parameters, see \u2018Materials and methods\u2019). True switchings are shown as orange squares with true coherent state shown at the\u00a0top of the figure. Green shows depolymerising/polymerising sister state (-/+), and red shows polymerising/depolymerising sister state (+/-), sister 1/sister 2, respectively. Detected switching events shown as vertical dashed lines: coherent run initiation/end shown in cyan/purple, respectively. The sister that initiates a directional switch is indicated: lead (L) initiated directional switch (LIDS), trail (T) initiated directional switch (TIDS) and joint (J) directional switch (JDS). Horizontal grey line indicates position of spindle equator. Enlargements of LIDS and TIDS events. (B) Trajectory positions within the metaphase plate viewed along the spindle axis (y,z). Colour indicates the number of events detected in the trajectory that end a coherent run, n=1529 trajectories from 55 cells. (C,\u00a0D) Example trajectories from live cells showing detection of switching, colours as in (A) except inferred coherent state is shown at the\u00a0top and joint switching events shown as vertical solid black lines.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09500/elife-09500-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** A simulation of the autoregressive statistical model underlying the switch point detection algorithm with corresponding event detection using the switch point algorithm. True switchings are shown as orange squares with coherent state shown at the top of the figure (green sisters state -/+, red +/-). Detected switching events are shown as vertical dashed lines: coherent run initiation/end shown in purple and cyan, respectively. The sister detected to initiate the directional switch is indicated: lead (L) initiated directional switch (LIDS), trail (T) initiated directional switching (TIDS) and joint (J) directional switching (JDS). All directional switching events are correct assignments. For simulation parameters, see \u2018Materials and methods\u2019.\n\nNext, we identified switch events in the trajectories of 1529 sister pairs across 55 eGFP-CENP-A cells and\u00a0calculated the frequency that lead or trailing sisters switch first (n=9022 events ending a coherent run).\u00a0We note that these trajectories were distributed throughout the metaphase plate (Figure 3B).\u00a0We defined a directional switching event as a lead initiated directional switch (LIDS) if the lead sister switched at least one frame before the trailing sister and a trail initiated directional switch (TIDS) similarly. The remaining events correspond to sisters switching\u00a0within the same frame and are denoted joint directional switches (JDS,\u00a0e.g. see Figure\u00a03C,D). These criteria illustrate that there is a strong lead bias with the fraction of LIDS and TIDS being 54.3% and 34.8%, respectively, the remaining fraction (10.9%) of events being joint. These data demonstrate that trailing sister switching is suppressed in human cells, leaving a lead-to-trail bias of 1.56:1.\n\nCurrent directional switching models propose that switching of the lead kinetochore is initiated when the inter-sister distance (centromere\u00a0spring) reaches a maximum stretch (tension)\u00a0(Rieder and Salmon, 1994; Skibbens et al., 1995; Skibbens et al., 1993; Wan et al., 2012). Moreover, no mechanism\u00a0has been proposed to explain trail first switching; trailing sister initiated switching has also been reported for PtK1 cells at a 15% frequency\u00a0(Dumont et al., 2012). However, as we show here, the existence of trail first switching has ramifications for both the sister-sister coupling and the possible switching control mechanisms. By aligning profiles of the inter-sister distance \u2013 which reflects tension in the centromeric chromatin, 40\u2009s before and 40\u2009s after the first sister switching event\u00a0(Figure 4A), we demonstrate clearly that LIDS and TIDS both have strong pre-event and post-event inter-sister distance\u00a0signatures (Figure 4A; compare red [TIDS] and black [LIDS] traces). These stereotypical dynamic-tension signatures at LIDS/TIDS\u00a0events (discussed below) demonstrate that our assignment of a LIDS or TIDS (Figure 3) are robust and meaningful.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/09500/elife-09500-fig4-v2.jpg)\n\n**Figure 4.:** (A) Time profiles across the first switching event of a directional switch according to type (lead initiated directional switch [LIDS], trail initiated directional switch [TIDS]). Events from trajectories where the lead (LIDS, n=4900; red) or trail (TIDS, n=3143; black) kinetochore switched first were aligned at their modal switching time (time origin, vertical dashed purple line). Solid lines indicate mean values over time, dashed lines \u00b1 1 SEM, smaller than the line thickness where not visible. (B) Time profiles across the first sister switch according to type (LIDS, TIDS) separated by prior event (prior LIDS, subsequent LIDS, TIDS n=1536 [dark blue], 936 [pale blue] respectively, prior TIDS and subsequent LIDS, TIDS n=986 [grey], 628 [orange), respectively]). In (A, B), the percentage stretch relative to the relaxed spring length (determined under nocodazole treatment) is shown on the right axis. Vertical dashed grey lines show 4 s before and 4 s after switch event. (C) Inter-sister distance over a standardised average coherent run after a LIDS event categorising runs that exhibit a subsequent LIDS (dark blue) or TIDS (light blue). (D) Inter-sister distance after a TIDS categorising runs that exhibit a subsequent LIDS (grey) or TIDS (orange). In (C, D), run length is limited to be 6\u201320 frames inclusive (12\u201340\u00a0s) and rescaled to a standard length of 1 (proportion of run). Sample sizes as (B). Dashed lines indicate \u00b1 1 SEM. Vertical green and purple dashed lines indicate the start and end of the coherent run.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09500/elife-09500-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Distributions for the length of coherent runs ending in a lead initiated directional switch (LIDS) (black), trail initiated directional switch (TIDS) (red) event (n=3396 and 2139, respectively). Mann\u2013Whitney test for identical medians, p=0.025. Distribution medians shown as dashed lines (LIDS 27.2 s, TIDS 26.6 s).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/09500/elife-09500-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A\u2013C) Distribution of the inter-sister distance at specified times: (A) 4 s prior to event, (B) at switching event and (C) 4 s after the switching event (times are marked in Figure 4A). Events separated into lead initiated directional switch (LIDS) (black, n=4900) and trail initiated directional switch (TIDS) (red, n=3143). Separation of medians (shown as dashed lines) is 36, 2 and\u2013107 nm, respectively (LIDS \u2013 TIDS inter-sister distance), corresponding to 23, 1.5 and 70% of the distribution SD. (D\u2013F). Distribution of the inter-sister distance at specified times: (D) 4 s prior to event, (E) at event and (F) 4 s after event conditioned on previous event type (times marked in Figure 4B). Note median time order changes as time\u00a0series in\u00a0Figure 4B. Coherent runs are restricted to 12\u201340 s, sample sizes as (B). Kruskal\u2013Wallis test on homogeneity is p=2.9 \u00d7 10\u201319, 0.0057, 1.4 \u00d7 10\u2013113 for 4 s prior to event, at event and 4 s after event, respectively.\n\nFor a LIDS, the inter-sister distance increases corresponding to an average increase of spring stretch from 14% to 20% over the 20\u2009s prior to the first sister switch, stabilises 4\u2009s prior to that switch event and then decreases rapidly during the 6\u2009s following the first sister switch to a minimum average stretch of 5% (Figure\u00a04A; black trace).\u00a0Here, we used a baseline rest length of 788\u00a0nm determined from nocodazole-treated cells (see \u2018Materials and methods\u2019). The LIDS event leaves the two K-fibres in a polymerising state, which decreases the inter-sister distance; this is in line with the standard model where the inter-sister distance will then undergo extension over the following coherent run\u00a0(Figure 1).\u00a0The relaxation of the spring immediately prior to the first sister switch appears to be the result of the lead sister slowing down (data not shown). This would be in\u00a0line with experiments in Ptk1 cells in which the velocity slows at maximal inter-sister stretch\u00a0(Wan et al., 2012). Finally, the switching of the second (trailing) sister correlates with the reduction in spring extension to near zero\u00a0(Figure\u00a04A), possibly suggesting that switching is the result of a loss of tension in accord with the standard tension\u00a0model (Rieder et al., 1994).\n\nHowever, the profile for a TIDS\u00a0is distinct: the inter-sister distance is much lower prior to the first sister switch (Figure\u00a04A; red trace). The maximum stretch (25%) is only reached 4\u2009s after the switch has occurred. This indicates that the TIDS itself is necessary to build up tension in the centromeric chromatin while the maximum inter-sister stretch is higher than that seen during LIDS (average 200\u00a0nm spring extension).\u00a0The LIDS and TIDS signatures are also present if we condition on the previous event type (Figure 4B), showing that although the previous event type does affect the inter-sister distance prior to the next event, the qualitative form is similar close to the switching event. The high overstretch of the centromeric chromatin\u00a0during a TIDS raises a fundamental challenge to the standard tension model of kinetochore oscillations which states that the spring tension rises during a run of the sister pair\u00a0(to the left or right) triggering a leading sister\u00a0switch and relaxes during a directional switching event which triggers switching of the second sister (Figure 1). As illustrated above, this describes\u00a0a repeated LIDS choreography. However, following a\u00a0TIDS event, the\u00a0centromeric\u00a0spring tension escalates during the directional switch and starts to relax\u00a04\u2009s after the directional switch (Figure\u00a04A), suggesting that the tension remains high over the following run.\n\nTo dissect this further, we examined the inter-sister distance over averaged coherent\u00a0runs, (n=6339) by aligning the start and the end of the intervening run (rescaling time of each run to a standard length of 1) (Figure\u00a04C,D). For runs with a preceding switch that was either a LIDS or a TIDS, the inter-sister distance\u00a0rose (Figure 4C) or relaxed\u00a0(Figure 4D) over the following run, respectively.\u00a0At the end of the run, the spring profile had the LIDS or\u00a0TIDS signature depending on the next event type (Figure\u00a04C,D).\u00a0Crucially, for runs starting after a TIDS the subsequent directional switch still has a LIDS bias (1.53\u00a0compared to a bias of 1.64\u00a0for a preceding\u00a0LIDS), while the (median) time of the coherent run is identical to that following a LIDS\u00a0(27.1 \u00b1 0.21\u2009s for TIDS, 26.7 \u00b1 0.29\u2009s for LIDS, p=5.5%). However, TIDS take a shorter amount of time to complete (second sister switches) than LIDS, median times 4.05 \u00b1 0.15\u2009s versus 4.31 \u00b1 0.13\u2009s, respectively (p=1.3 x 10\u20134). In essence, kinetochore oscillations are robust to sister switching order and the dynamics of the kinetochores\u00a0is nearly identical after a TIDS and LIDS, except that the inter-sister distance decreases instead of increases, respectively (Figure\u00a04C,D). Our observations suggest that the classic choreography (Figure 1) represents half of the dynamic with the inter-sister distance relaxing under a LIDS then increasing over the subsequent coherent run \u2013 depolymerising K-fibres pulling kinetochores with greater force than polymerising fibres push. However, under a TIDS the inter-sister distance is overstretched and relaxes during the subsequent coherent run \u2013 the\u00a0centromeric spring force increasing the velocity of the trailing sister so that it exceeds that of the lead sister. This TIDS choreography implies that directional switching cannot be triggered by a threshold on the spring tension as overstretching and subsequent relaxation of the spring tension prior to a directional switch are a natural part of metaphase kinetochore oscillations.\n\nKinetochores move in 3D with the kinetochore sister axis being compliant to twist away from the metaphase plate normal (Figure 2D,E). The twist and inter-sister distance are in fact inversely correlated (r=\u20130.13, significant at p<10\u2013200), with twist showing inverted profiles over switching events relative to that for the inter-sister distance (Figure 5). Specifically, the twist of the sisters falls prior to a LIDS and increases after the switch event, while a TIDS demonstrates the opposite (Figure 5A). The average twist increase seen at a LIDS relaxes over the following coherent run (Figure 5C), similar to the relaxation in the spring extension seen after a TIDS.\u00a0This can be explained mechanistically since a high inter-sister stretch, indicative of a high inter-sister tension, aligns the sisters, reducing the twist, while a low stretch, with low tension, allows the twist angle to increase under thermal and mechanical fluctuations.\u00a0Thus, a negative correlation between twist and inter-sister distance is predicted if there is mechanical compliance in the attachment of the kinetochore to the K-fibres and the centromeric spring.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/09500/elife-09500-fig5-v2.jpg)\n\n**Figure 5.:** (A) Time profiles across the first switching event of a directional switch according to type (lead initiated directional switch [LIDS], trail initiated directional switch [TIDS]). Events from trajectories where the lead (LIDS, n=4900; red) or trail (TIDS, n=3143; black) kinetochore switched first were aligned at their modal switching time (time origin, vertical dotted purple line). Solid lines indicate mean values over time, dashed lines \u00b1 1 SEM, smaller than the line thickness where not visible. (B) Time profiles across the first sister switch according to type (LIDS, TIDS) separated by prior event (prior LIDS, subsequent LIDS, TIDS, n=1536 and 936, respectively, prior TIDS and subsequent LIDS, TIDS n=986 and 628, respectively). (C) Twist after a LIDS event categorising runs that exhibit a subsequent LIDS (dark blue) or TIDS (light blue). (D) Twist after a TIDS categorising runs that exhibit a subsequent LIDS (grey) or TIDS (orange). In (C, D), run length is limited to be 6\u201320 frames inclusive (12\u201340\u00a0s) and rescaled to a standard length of 1 (proportion of run). Sample sizes as (B). Dashed lines indicate \u00b1 1 SEM. Vertical green and purple dashed lines indicate the start and end of the run.\n\nExamination of the inter-sister distance profiles between consecutive events reveals a key pattern; on average, a TIDS is associated with a lower\u00a0inter-sister distance than a LIDS\u00a04\u2009s prior to the event\u00a0regardless of\u00a0a preceding\u00a0LIDS or TIDS (Figure 4B), a LIDS event having a mean separation above 920\u00a0nm\u00a0(dark blue and grey traces), a TIDS event being below 920\u00a0nm (orange and light blue traces).\u00a0Coupled with the fact that the run is invariant to the nature of the preceding switching event, particularly with regard to timing (the coherent run time to the next directional switch is identical, p=5.5%), this suggests that switching of the lead and trail sisters\u00a0are governed by clocks. This could be a mechanical timing mechanism associated with the attached K-fibre, and thus force sensitive. In this way,\u00a0the trailing sister is kept in a polymerising state by the pulling force from the stretched centromeric chromatin (see model in Figure 6). This may reflect the ability of the kinetochore to inhibit catastrophe when under tension \u2013 as shown by biophysical experiments using purified budding yeast kinetochores\u00a0(Akiyoshi et al., 2010). If that tension falls too low (or fails to build up), a TIDS occurs (as microtubules in the K-fibre undergo catastrophe; Figure 6). The same stabilisation mechanism can be invoked to explain switching resolution \u2013 during a LIDS the second sister (previously trailing), switches under the loss of the tension in the centromeric chromatin.\u00a0When tension remains high enough to stabilise the trailing\u00a0sister, then the lead sister switches because of its clock. The escalating force during a TIDS (after the trailing sister switches)\u00a0could accelerate the lead sister clock triggering switching of the second sister. Again, this reflects the increase in the rescue rate of in vitro microtubules attached to kinetochores as shown in Akiyoshi et al., 2010, while it emphasises that the two sisters are not symmetrical and the time since their last switch event determines which sister switches.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/09500/elife-09500-fig6-v2.jpg)\n\n**Figure 6.:** (A) Schematic outline of regulatory mechanisms that control sister kinetochore directional switching. Our data are consistent with the presence of a clock on both the leading (black) and trailing (red) sister kinetochores that sets the time at which a directional switch will occur. We propose that the molecular mechanism for the clock is the rescue/catastrophe frequency of the microtubules (green) within the K-fibre. We note that the kinetics of microtubule dynamic instability in vitro cannot alone explain the timing of events (oscillation period); hence, regulation of the dynamics from the kinetochore/K-fibre structure is key. The clock on the trailing sister kinetochore is force-sensitive, such that tension from stretching the centromeric chromatin results in a slow\u00a0down, thereby reducing the probability that the K-fibre will drive a trail initiated directional switch (TIDS). (B) This mechanism can explain the observed relationship between tension dynamics (in centromeric chromatin) and sequences of lead and/or trail initiated directional switches. Following a LIDS (upper half), the spring extension is low and then stretches over the following run. If tension increases quickly enough, then the trailing K-fibre is stabilised (the clock slows down) and the lead kinetochore switches as the clock runs down. If tension does not build up sufficiently, then the trailing K-fibre will not be stabilised and it\u00a0will therefore switch because of its clock. Following a TIDS,\u00a0(lower half), the spring extension is high. The run thus starts with high tension which stabilises the trailing K-fibre. Spring tension relaxes over the run, and if it drops sufficiently, trailing K-fibre stabilisation is lost and the trailing sister switches (TIDS). If tension remains sufficiently high, then the clock on the leading kinetochore initiates the switching event (LIDS). Thus, lead sister initiated switches can occur with falling tension ruling out the standard model (see Figure 1). (C) This model can also account for why the second sister switches: following a LIDS, both sisters are in an AP state, reducing the spring tension to a near-zero tension state.\u00a0This rapidly destabilises the previously trailing sister leading to a switch (AP to P). We suspect that the new lead sister does not switch in this situation because its clock has been re-set (i.e. the K-fibre is new). When a TIDS occurs, we propose that the very high tension generated during the directional switch accelerates the clock on the sister attached to the older K-fibre (previously the lead sister) causing the second sister to switch.\n\nAlthough we have detected clear signatures in the switching choreographies (Figure 4), these reflect regulatory and mechanical processes of a highly stochastic system. This stochasticity is evident on many scales. First, kinetochores are known to display a range of stochasticity in their trajectories, from near deterministic oscillations to the near random (Jaqaman et al., 2010; Magidson et al., 2011). Second, the switching times are stochastic; the duration of a coherent run has a large variability with a coefficient of variation (standard deviation [SD]/mean) of 0.45, similar for both runs terminated by an LIDS (mean time and SD 29.6 \u00b1 12.7\u2009s) or a TIDS (29.2 \u00b1 13.6\u2009s, Figure 4\u2014figure supplement 1). Thus, although we have invoked a clock mechanism as a switching time regulator, it is inherently stochastic. This stochasticity could stem from both the number and depolymerisation/polymerisation state of individual microtubules that make up the K-fibre. The fraction of microtubules that are in a polymerising state within a K-fibre is highly variable among kinetochores (Armond et al., 2015), indicating that growing and shrinking K-fibres are unlikely to be composed of fully coherent microtubules. Third, the signatures in Figure 4 are a mean behaviour, while variability in the inter-sister stretch throughout the dynamics is in fact large. This can be seen at the population level of trajectories, where the inter-sister distance distributions for LIDS and TIDS only show marginal separation before the switching event (\u20134\u2009s), are hardly separated at the event, while separation increases after the event (+4\u2009s) (Figure 4\u2014figure supplement 2A\u2013C). The inter-sister distance distribution over a switching event is in fact far from bimodal; a mixture of two Gaussian distributions requires the respective means to be separated by at least 2 SDs to be bimodal, the largest we observe is 70% at 4\u2009s post event (Figure 4\u2014figure supplement 2A\u2013C). The separation of these distributions does not improve even on further categorising by the prior event (i.e. prior LIDS or TIDS; Figure 4\u2014figure supplement 2D\u2013F). Therefore, we have to conclude that the signatures shown in Figure 4 are not a universal behaviour but only detectable on averaging; that is, the actual switching process is highly stochastic. It may be that analysis of the most deterministic trajectories will reduce this stochasticity in the switching dynamics and signatures. However, directional switching may be a composite process that integrates over multiple signals, that is, tension may not be the only determinant; the stochasticity in our signatures would then be due to measuring only one of these determinants. It remains unknown to what extent the stochasticity in switching time and switching type explains the observed diversity in kinetochore trajectory dynamics, or whether other sources of variability exist.\n\nThis paper\u00a0demonstrates how dynamic and mechanistic insight can be extracted from high-resolution tracking data. Although the leading sister typically initiates directional switching, the reverse switching order is also frequently observed (Figure\u00a03D), with directional switching biases, timings\u00a0and subsequent oscillations remaining robust to such events. By classifying switching order events, we were able to demonstrate clear stereotypical behaviour associated with these events, with both prior (potentially causal) and post-event signatures in the inter-sister distance dynamics. This confirms that event classification is physical and not due\u00a0to noisy fluctuations in switching times coming from localisation measurement noise.\n\nOur data support a new model of kinetochore oscillations comprising mechanical clocks on both the lead and trailing sister, which likely reflect the time- and force-dependent rescue and catastrophe of the K-fibre microtubules. Our analysis suggests that the degree of\u00a0stretch of the inter-sister centromeric\u00a0chromatin is a major determinant in orchestrating this switching; first, a mechanism based on stabilisation of the trailing sister polymerisation state through\u00a0the centromere tension, effectively slowing the trailing sister clock, and second, a clock on the lead sister that is accelerated under high tension (Figure 6). Our data indicate that the standard tension\u00a0model of sister kinetochore switching (Figure 1) is only able to explain part of the dynamics, while it is incompatible with the\u00a0overstretch and subsequent relaxation of the inter-sister distance following a TIDS. Thus, kinetochores\u00a0utilise multiple sensory and fail-safe mechanisms that ensure high-fidelity chromosome organisation within the spindle, despite high levels of stochasticity.\n\n## Materials and methods\n\n### Cell culture and drug treatments\n\nHeLa-K cells stably expressing eGFP-CENP-A (Jaqaman et al., 2010) or eGFP-CENP-A/eGFP-Centrin\u00a01\u00a0were grown in Dulbecco\u2019s modified Eagle\u2019s medium (Fisher,\u00a0UK) containing 10% foetal calf serum (Fisher), 100 \u00b5g ml-1 penicillin and 100 \u00b5g ml-1\u00a0streptomycin maintained in 5% CO2\u00a0at 37\u00b0C in a humidified incubator. eGFP-CENP-A cells were maintained in 0.1 \u00b5g ml-1\u00a0puromycin\u00a0(Fisher). eGFP-CENP-A/eGFP-Centrin\u00a01 cells were maintained in 0.1 \u00b5g ml-1\u00a0puromycin and 500 \u00b5g ml-1\u00a0Geneticin (Fisher). To measure the inter-sister distance rest length,\u00a0cells were treated with 2 \u00b5g ml-1\u00a0nocodazole (Fisher) for between 16 and 24\u2009hr to depolymerise microtubules. We determined both the mean rest length and the population standard deviation.\n\n### Live cell imaging\n\nCells were seeded in gridded 35-mm glass bottom dishes (MatTek, Boston, MA) and the media changed to Leibovitz L-15 supplemented with 10% foetal calf serum prior to imaging. Cells were imaged using a 100\u00d7 1.4 NA oil objective on a confocal spinning-disk microscope (VOX Ultraview; PerkinElmer, Waltham , MA) with a Hamamatsu ORCA-R2 camera, controlled by Volocity 6.0 (PerkinElmer) running on a Windows 7 64-bit (Microsoft, Redmond, WA) PC (IBM, Armonk, NY). Mitotic cells were first identified using bright-field illumination to minimise phototoxicity. Image stacks (25 z-sections, 0.5 \u00b5m apart) were collected every 2 s for 5 min (150 time points per video). Camera pixels were binned 2 \u00d7 2, giving an effective pixel size of 138 nm in the lateral direction with a 16-bit per pixel imaging depth. Exposure conditions were set 50 ms per z-slice using a 488-nm laser set to 15% power.\n\n### Image pre-processing\n\nImage pre-processing was performed on an OSX 10.6 Power-Mac (Apple). Time\u00a0series were exported from their native Volocity format to. OME.TIFFs (The Open Microscopy Environment) using Volocity 6.0 and were then deconvolved with Huygens 4.1 (SVI) using a point spread function (PSF) measured from micro-bead images (using the Huygens 4.1 PSF distiller). Deconvolved images were exported from Huygens to a\u00a0.r3d format (Applied Precision,\u00a0Issaquah,\u00a0WA ) and then read into MATLAB (R2012b, MathWorks, Natick,\u00a0MA) using the loci-tools java library (The Open Microscopy Environment). Images were then stored in a native MATLAB format.\n\n### Kinetochore tracking\n\nSister kinetochores were detected, aligned, tracked and paired as in the original tracking assay (Jaqaman et al., 2010), except that\u00a0we implemented 3D Gaussian mixture model fitting for determining sub-pixel spot locations (Thomann et al., 2002). In essence, fluorescence from a kinetochore is modelled as a Gaussian, the fluorescence image then being modelled as a mixture of Gaussians of variable height (intensity). The protocol was tested on both eGFP-CENP-A/eGFP-centrin1 and eGFP-CENP-A cell lines, and gave significantly improved position accuracy compared to the previous centroid-based spot fitting (Jaqaman et al., 2010), important here because of the faster time sampling which results in a smaller inter-frame spot displacement. The theoretical accuracy of localisation of a spot\u2019s centre\u00a0(x,y = \u00b1 2.8\u00a0nm; z = \u00b1 5.7\u00a0nm) was calculated using the total number of photons in the spot, the average background intensity nearby, the full-width half-maximum of the intensity profile in a given coordinate, and the voxel size (138 \u00d7 138 \u00d7 500\u00a0nm)\u00a0(Thompson et al., 2002).\u00a0Tracking parameters were identical to Jaqaman et al. (2010), except that\u00a0the upper limit of the search radius for aligned kinetochores was changed to 0.8. Gap filling as\u00a0Jaqaman et al. (2010) was implemented within the Gaussian\u00a0MMF tracking.\u00a0We also filter out cells entering anaphase, removed paired tracks with less than 112 consecutive time points (75% complete) and a small number of tracking errors; this generated a large database of 3D paired trajectory data. Sister kinetochore movements were calculated relative to a plane fitted through the distribution of sister kinetochore positions. MATLAB software (KiT)\u00a0is deposited on GitHub and also available on request to ADM.\n\n### Statistical algorithm to extract switching times\n\nWe developed a\u00a0computational algorithm that fits a linear autoregressive statistical model to kinetochore frame-to-frame displacements\u00a0that incorporates switching of the driving (constant) term.\u00a0Specifically displacements are given by\n\n$$\n\\DeltaX^{1}=c_{0}+c(\\sigma^{1})-aX^{1}+bX^{2}+N(0,s^{2}),\\DeltaX^{2}=-c_{0}-c(\\sigma^{2})-aX^{2}+bX^{1}+N(0,s^{2}),\n$$\n\nwhere X1, X2 are the positions of the sister kinetochores relative to the metaphase plate, the K-MTs lying to the right of X1, left of X2 for sisters 1 and 2, respectively; thus, typically\u00a0X1> X2. The first term (c0+c(\u03c3k)), k=1,2 are the driving terms with a component that switches between two possible values, positive, c+ corresponding to polymerisation of the K-fibre, or negative, c- corresponding to depolymerisation. The direction sequence \u03c3k\u00a0(+,- valued for polymerisation, depolymerisation respectively, with k=1,2 identifying the sister) determines which value is used. Driving terms are of opposite sign between sisters 1 and 2 because the K-fibres lie in opposite directions. If (de)polymerisation is turned off, the sisters relax towards the metaphase plate with an inter-sister separation of 2c0/(b+a) which must be positive, thereby constraining the sign of these parameters.\u00a0The third/fourth terms are relaxation terms allowing kinetochore positions to adjust to the driving term, that is, the relaxation of the inter-sister distance and distance from the metaphase plate.\u00a0Finally, Gaussian noise is added to model trajectory\u00a0stochasticity; this will comprise measurement noise, thermal noise and non-thermal ATP-dependent fluctuations (Weber et al., 2012). In this model, sisters switch independently (states\u00a0encoded in \u03c3k)\u00a0from polymerisation (+) to depolymerisation (-)\u00a0states (states of their associated K-fibres),\u00a0and vice versa; the waiting time is exponentially distributed, that is, there is no memory, location or history dependence assumed. The average waiting time to a switch event is dependent on the direction of the other sister; let p be the matrix of switching rates between the 4 sister states ++, +-, -+, -- parametrised by a switching rate out of coherence, p(+-\u2192 ++ or -\u00a0-)= p(-+\u2192 ++ or -\u00a0-) and out of incoherence, p(++ \u2192 +- or -+)= p(-\u00a0-\u2192 +- or -+), the sister who switches being chosen at random. There is, therefore, no switching bias intrinsic in the algorithm; biases in the experimental data can thus be detected. This model can produce stochastic saw-tooth oscillations under certain parameter regimes (b,c0>0 and a>b are necessary) (Figure 3\u2014figure supplement\u00a01), qualitatively similar to those observed for sister kinetochores. Crucially if the rate of switching out of incoherence is higher than switching out of coherence (coherence of sister movement [same direction] is thus restored quickly), the model produces pseudo-periodic saw-tooth oscillations qualitatively similar to those observed. This model is thus appropriate for detecting switching times as it has the correct type of behaviour.\n\nA Markov chain Monte Carlo (MCMC) algorithm was used to compute the posterior distribution of the parameters and the unknown (hidden) sister states (\u03c3k) from each trajectory, that is, sample from the posterior\u00a0probability density \u03c0(a,b,c0,c+/-,s2,p \u03c3tk|\u00a0Xtk). The MCMC algorithm is based on standard Gibbs and Metropolis\u2013Hastings proposals, and recovered the true values on simulated data (not shown). We used a prior on the relaxed inter-sister separation of 2c0/(b+a) inferred from a nocodazole experiment (fully depolymerised microtubules) while all other priors are uninformative. Convergence was assessed using multiple runs; a proportion of runs failed to converge despite extending the run time (19%). These trajectories were excluded from the analysis and by visual assessment were typically highly stochastic, suggesting the oscillatory signal was weak and thus lack of convergence was not unlikely. This left a database of 1529 processed paired sister tracks in the eGFP-CENP-A cell line. Each trajectory had sufficient information to fit all the parameters using uninformative priors.\n\nSwitch points were determined by identifying coherent runs (classified as a sequence of points where the inferred direction was unchanged for at least five frames). Switch points into and out of a coherent run were matched to determine directional switching events (both sisters switch direction across a directional switch, resulting in a directional switch of the sister pair).\n\nThe algorithm was tested for correct determination of switching times on simulated data. Five hundred trajectories were simulated with parameters that gave qualitatively realistic oscillations (c+=30\u00a0nm, c-=100\u00a0nm,\u00a0b=0.04, a=0.056, c0=667 nm, s2=1/1000, switching probability per frame 39% [when incoherent], 6.3% [coherent]), a\u00a0typical trajectory is shown in Figure 3\u2014figure supplement 1. The simulation in Figure 3A used these same parameters except when incoherent the sister who switched last cannot switch, that is, switches out of coherence always result in a directional switch of the two sisters. Directional switching points were determined with the MCMC algorithm as above and correct LIDS/TIDS calls identified. Accuracy was determined on\u00a0these 500 trajectory simulations, giving an accuracy of 94%. The inferred lead bias was\u00a01:1, consistent with the original simulation parameters.\n",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "3e2c8caf-6810-4485-bfd6-4347f97d23a4",
+      "submission_id": "efef8605-e8d1-4773-8b56-1b5518cf21ee",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anthony A Hyman, Max Planck Institute of Molecular Cell Biology and Genetics , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.09500.018](https://doi.org/10.7554/eLife.09500.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Super-resolution kinetochore tracking reveals the mechanisms of human sister kinetochore directional switching\" for peer review at eLife. Your submission has been favorably evaluated by Vivek Malhotra (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nAll three reviewers had the same comment, which was the issue of stochasticity vs. the average behavior. But they disagreed as to how important this was.\n\nCurrently, you rely largely on a discussion of the average behavior (Figures 4 and 5). Also Guassian noise is added to the position of kinetochores. In the previous submission this was Brownian motion of the kinetochore. In this version, it was unspecified. In living systems, there are considerably greater \"random\" fluctuations than just Brownian. A good citation for this can be found in Weber et al., (2012) Nonthermal ATP-dependent fluctuations contribute to the in vivo motion of chromosomal loci. The non-thermal fluctuations come from the motors, chaperones, ATP machines etc. that are constantly jiggling everything in the cell. Thus the kinetochore is most likely being jostled with a magnitude much greater than Brownian, but with random trajectory. Just examining the trajectory is insufficient to distinguish whether the motion is truly random (Brownian) or these non-thermal energy-dependent events that appear to be randomly orientated.\n\nAfter discussion between the three reviewers, we have decided that we would like to publish the manuscript, but would like you to be much more explicit and extensively address the issue of average behaviour versus stochasticity. In particular, a discussion of how much individual traces might depart from this average behavior is absent and could be added. At the very least the spread of data should be indicated (see point 2 below). I think that a discussion of this issue would really add to the results here, right now the model put forward at the end in Figure 6 is one of a clock that runs and determines the switching dynamics, leaving the reader with the impression that this is a rather deterministic process. In reality switching is governed by stochastic events, the 'clock' probably is the characteristic timescale of some biochemical reaction and the variance will be as large as the characteristic timescale. Thus, the variance in the behavior of individual switching events will be large, (probably) consistent with the data here. In other words you need to clearly highlight the stochastic nature of the entire process (after all, the switching order is highly stochastic).\n\nOther comments:\n\n1) By examining the shape of TIDS or LIDS curves, respectively in Figure 4A and 4B, it is clear that the original TIDS traces (before averaging) must have had a very large spread. It would be interesting if you commented on the standard deviation of the curves. In particular, it would be interesting if the standard deviation after a switching event is very small after a TIDS or LIDS switching event. This would further support your claim that the behavior after a switch is very similar. Moreover, an examination of the spread in the data may indicate variables that could be of importance. For instance, is the spread Gaussian or does it show a bi-modal distribution. If the behavior after a TIDS or a LIDS is different, you may expect the distribution of curves to be bi-modal with a peak centered at each type of behavior.\n\n2) The shape of the curve is remarkably similar between a TIDS and LIDS event (Figure 4A), just slightly smaller and inverted. Also, the twist shows a similar difference (Figure 5A). Is type of behavior anticipated by the model proposed by you?\n\n3) In your proposed model the speed of relaxation or stretch depends on whether the previous event was a TIDS or LIDS (alternatively, if there is high or low spring tension). Did you analyze whether relaxation times of individual runs correlated with either previous event type or spring tension?\n\n4) You propose that the clock timing in your model is set by the rescue/catastrophe frequency of microtubules. Are there previous studies or do you have evidence to expect that such an underlying mechanism would lead to a switching frequency of 36 seconds?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Super-resolution kinetochore tracking reveals the mechanisms of human sister kinetochore directional switching\" for further consideration at eLife. Your revised article has been favorably evaluated by Vivek Malhotra (Senior editor) and a Reviewing editor. The manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nAs you know from the reviewers\u2019 comments, the issue about stochastic behaviour versus average behaviour was a crucial issue. We still feel that needs better clarification. We think this important, because given the unanimous feeling of all reviewers, I don't think your paper will get the attention it deserves unless it is cleared up.\n\nFigure 4\u2013figure supplement 1 needs additional clarification. What is not immediately clear is what times A, B, and C refer to. In the legend, where you appear to refer to Figure 3 (and not Figure 4) you say that A is at start of event, B is 4s prior and C is at event. How does this relate to the times shown in Figure 4A or Figure 4B? What would be needed here is a supplemental figure that indicates the distributions for Figure 4A and 4B. Please generate one that shows the distributions for the intersister distances at three times, at the switch point and +/- ~5 seconds, to get a feeling how much these distributions of which the means are shown in 4A and B overlap.\n\nIn addition, the corresponding paragraph of discussion (Results and Discussion, ninth paragraph) is a bit weak and all over the place. Please go through this and try and be more precise in your arguments.\n",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ae4c0e37-5d84-4360-8c4a-7e508140b26f",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C1",
+      "claim": "The congression of chromosomes to the spindle equator involves the directed motility of bi-orientated sister kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "The congression of chromosomes to the spindle equator involves the directed motility of bi-orientated sister kinetochores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement from the abstract that represents established knowledge about chromosome congression.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "fd020517-713f-42e4-b034-e42c785953fd",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C2",
+      "claim": "Sister kinetochores bind bundles of dynamic microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Sister kinetochores bind bundles of dynamic microtubules and are physically connected through centromeric chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about kinetochore structure and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "d1fe1d58-1058-4c4f-8838-a1b7e417028a",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C3",
+      "claim": "Sister kinetochores are physically connected through centromeric chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Sister kinetochores bind bundles of dynamic microtubules and are physically connected through centromeric chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about kinetochore structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "991a5940-646c-4157-9305-9f044de4c036",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C4",
+      "claim": "Switching is initiated by both the leading (microtubules depolymerising) or trailing (microtubules polymerising) kinetochore.",
+      "claim_type": "EXPLICIT",
+      "source": "We discover that switching is initiated by both the leading (microtubules depolymerising) or trailing (microtubules polymerising) kinetochore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study based on analysis of thousands of switching events.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "105df662-f7f0-40db-a383-1519ee044046",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C5",
+      "claim": "Trail-driven switching generates an overstretch of the chromatin that relaxes over the following half-period.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, trail-driven switching generates an overstretch of the chromatin that relaxes over the following half-period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the study based on analysis of inter-sister distance dynamics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "7a4a1101-1561-46ad-8fd1-6eb8b865acf3",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C6",
+      "claim": "The overstretch observation rules out the involvement of a tension sensor, the central premise of the long-standing tension-model.",
+      "claim_type": "EXPLICIT",
+      "source": "This rules out the involvement of a tension sensor, the central premise of the long-standing tension-model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed overstretch data that contradicts the tension model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "26e97c4d-96e1-4207-acd3-90def17b6cdc",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C7",
+      "claim": "Clocks set the intrinsic-switching time of the two kinetochore-attached microtubule fibres.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, our data support a model in which clocks set the intrinsic-switching time of the two kinetochore-attached microtubule fibres, with the centromeric spring tension operating as a feedback to slow or accelerate the clocks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the data showing invariant run times regardless of preceding event type.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "60453a5f-7a87-4df9-86c5-dc41765741dd",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C8",
+      "claim": "The centromeric spring tension operates as a feedback to slow or accelerate the clocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, our data support a model in which clocks set the intrinsic-switching time of the two kinetochore-attached microtubule fibres, with the centromeric spring tension operating as a feedback to slow or accelerate the clocks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the observed relationship between tension and switching dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "de51a9db-ff05-4a7d-a38e-7655426f0387",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C9",
+      "claim": "Bi-orientation begins immediately after nuclear envelope breakdown during prometaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Bi-orientation begins immediately after nuclear envelope breakdown during prometaphase when scattered chromosomes engage the nascent mitotic spindle, and concludes with the formation of the metaphase plate \u2013 a state where all sister kinetochores are bi-orientated and aligned on the equator of a bipolar spindle (McIntosh et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation to McIntosh et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "e68a1c17-0510-4124-9535-b50cde1f5b37",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C10",
+      "claim": "Bi-orientation concludes with the formation of the metaphase plate where all sister kinetochores are bi-orientated and aligned on the equator of a bipolar spindle.",
+      "claim_type": "EXPLICIT",
+      "source": "Bi-orientation begins immediately after nuclear envelope breakdown during prometaphase when scattered chromosomes engage the nascent mitotic spindle, and concludes with the formation of the metaphase plate \u2013 a state where all sister kinetochores are bi-orientated and aligned on the equator of a bipolar spindle (McIntosh et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation to McIntosh et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "cf74ef19-9df1-403b-82b2-c185ae8eaad0",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C11",
+      "claim": "The kinetochore-fibre (K-fibre) is typically 20\u201325 microtubules in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These two movement states reflect the balance of microtubule polymerisation/depolymerisation within the kinetochore-fibre (K-fibre), which is typically 20\u201325 microtubules in human cells (Compton, 2000; Rieder, 2005; Wendell et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Compton, 2000; Rieder, 2005; Wendell et al., 1993.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "02f2b303-3f6e-4590-a192-f15c711dd1bb",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C12",
+      "claim": "K-fibres are rarely coherent.",
+      "claim_type": "EXPLICIT",
+      "source": "While such K-fibres are rarely coherent, there is a small polymerisation bias between sister kinetochores (Armond et al., 2015; VandenBeldt et al., 2006) and they can be thought of as being in either a net polymerising or depolymerising state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Armond et al., 2015; VandenBeldt et al., 2006.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "e1b0baee-8d1d-4137-a199-86bf4d98f79e",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C13",
+      "claim": "There is a small polymerisation bias between sister kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "While such K-fibres are rarely coherent, there is a small polymerisation bias between sister kinetochores (Armond et al., 2015; VandenBeldt et al., 2006) and they can be thought of as being in either a net polymerising or depolymerising state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Armond et al., 2015; VandenBeldt et al., 2006.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "965e5fdb-b46f-45ff-a353-dd370554d1b2",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C14",
+      "claim": "Kinetochores undergo periods of relatively constant velocity separated by abrupt changes in direction, termed 'directional instability'.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetochores were shown to undergo periods of relatively constant velocity separated by abrupt changes in direction \u2013 a behaviour termed 'directional instability'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies in newt lung cells using video-enhanced differential interference contrast microscopy.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "abb89661-d156-4f3a-8118-3975dc2acca1",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C15",
+      "claim": "Weakening the centromeric chromatin with a laser uncoupled the normally coordinated motility of sister kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent experiments demonstrated that weakening the centromeric chromatin which links the sisters (with a laser) uncoupled the normally coordinated motility of sister kinetochores (Skibbens et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation to Skibbens et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "dcc58c0d-8406-41d6-9d55-12501cd00807",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C16",
+      "claim": "In the tension model, tension in the centromeric chromatin triggers a lead sister switch (P-to-AP) at a certain threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments led to a model (also see Rieder and Salmon, 1994) in which tension in the centromeric chromatin triggers a lead sister switch (P-to-AP) at a certain threshold, the loss of tension then triggering a directional switch in the second sister (AP-to-P).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the standard tension model supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "217160e6-fce3-4cf0-b28c-8fa975c7d295",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C17",
+      "claim": "In the tension model, the loss of tension triggers a directional switch in the second sister (AP-to-P).",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments led to a model (also see Rieder and Salmon, 1994) in which tension in the centromeric chromatin triggers a lead sister switch (P-to-AP) at a certain threshold, the loss of tension then triggering a directional switch in the second sister (AP-to-P).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the standard tension model supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "a62c9642-3ee3-4eb7-aafe-77e186f2dac1",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C18",
+      "claim": "Recent kinetochore-tracking experiments in PtK1 cells show that switching initiates at maximum inter-kinetochore stretch.",
+      "claim_type": "EXPLICIT",
+      "source": "More recent kinetochore-tracking experiments in PtK1 cells are consistent with this model and show that switching initiates at maximum inter-kinetochore stretch (Wan et al., 2012), schematic shown in Figure 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge supported by a citation to Wan et al., 2012 and reference to Figure 1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "0d28bb64-aaa6-4ba2-9fdd-39fbb7b8cf9d",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C19",
+      "claim": "The polar ejection force increases with proximity to the pole and pushes chromosomes towards the metaphase plate.",
+      "claim_type": "EXPLICIT",
+      "source": "The polar ejection force, which increases with proximity to the pole, pushes the chromosomes towards the metaphase plate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the polar ejection force.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "60358adf-14a5-4c5b-8fd5-65cd2ad352bf",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C20",
+      "claim": "When chromosomes stray far from the equator, the anti-poleward force increases the load on the leading (P) kinetochore and promotes switching.",
+      "claim_type": "EXPLICIT",
+      "source": "When chromosomes stray far from the equator, this anti-poleward force increases the load on the leading (P) kinetochore and promotes switching \u2013 an idea supported by experiments in newt and human cells (Ke et al., 2009; Stumpff et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experiments in Ke et al., 2009; Stumpff et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "fcf35a48-3245-4336-a267-c3c70cca08c3",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C21",
+      "claim": "The standard tension model predicts a fixed sequence of sister kinetochore-switching events during a directional reversal \u2013 lead switch first, followed by trail.",
+      "claim_type": "EXPLICIT",
+      "source": "The standard tension model thus predicts a fixed sequence of sister kinetochore-switching events during a directional reversal \u2013 lead switch first, followed by trail.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about what the standard tension model predicts.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "919c0056-6288-494f-bd4d-68903396a773",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C22",
+      "claim": "Existing kinetochore-tracking assays have a frame rate in the 7.5\u201315 s range.",
+      "claim_type": "EXPLICIT",
+      "source": "Existing kinetochore-tracking assays have a frame rate in the 7.5\u201315 s range (Dumont et al., 2012; Jaqaman et al., 2010; Wan et al., 2012), meaning that detailed analysis of the switching mechanism has not been possible to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Dumont et al., 2012; Jaqaman et al., 2010; Wan et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "b0798287-c921-4ba6-9a2b-1374357c88eb",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C23",
+      "claim": "The frame rate of existing kinetochore-tracking assays means that detailed analysis of the switching mechanism has not been possible to date.",
+      "claim_type": "EXPLICIT",
+      "source": "Existing kinetochore-tracking assays have a frame rate in the 7.5\u201315 s range (Dumont et al., 2012; Jaqaman et al., 2010; Wan et al., 2012), meaning that detailed analysis of the switching mechanism has not been possible to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the temporal resolution limitations of existing assays.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "d3902e0c-3dec-451f-980c-8e7ffd2eff09",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C24",
+      "claim": "The study used spinning disk confocal microscopy to capture 3D image stacks every 2 s over 150 time steps.",
+      "claim_type": "EXPLICIT",
+      "source": "To improve resolution, we used spinning disk confocal microscopy to capture 3D image stacks every 2 s over 150 time steps in HeLa-K cells expressing a marker for the kinetochores (either eGFP-CENP-A or eGFP-CENP-A eGFP-Centrin1; Figure 2B; Video 1, Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "286b13f1-674a-4c03-808d-19ea7b1c5625",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C25",
+      "claim": "Phototoxicity was minimal, as >90% of cells successfully underwent anaphase.",
+      "claim_type": "EXPLICIT",
+      "source": "Phototoxicity was minimal, as >90% of cells successfully underwent anaphase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a data-based observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "9b2280f3-4086-4dc9-b62a-bbb788015ee1",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C26",
+      "claim": "The study implemented 3D Gaussian mixture model fitting for determining sub-pixel spot locations.",
+      "claim_type": "EXPLICIT",
+      "source": "Sister kinetochores were tracked as previously described (Jaqaman et al., 2010), except that we implemented 3D Gaussian mixture model fitting for determining sub-pixel spot locations (Thomann et al., 2002 see Figure 2A, C; Videos 3\u20135) \u2013 important here because our faster time sampling results in a smaller inter-frame spot displacement requiring higher localisation accuracy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the methodology used in the study, with citation to Thomann et al., 2002.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "111e5153-04d0-41bc-853c-3d67c7dea292",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C27",
+      "claim": "The sub-pixel tracking gives high theoretical positional accuracy (x,y = \u00b1 2.8 nm; z = \u00b1 5.7 nm).",
+      "claim_type": "EXPLICIT",
+      "source": "This sub-pixel (super-resolution) tracking gives high theoretical positional accuracy (x,y = \u00b1 2.8 nm; z = \u00b1 5.7 nm; see 'Materials and methods') and reveals kinetochore dynamics in exquisite detail (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculated theoretical accuracy based on the methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "27c1c5cc-e409-481d-b6e7-3d441c4f883c",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C28",
+      "claim": "Sister kinetochores had a mean inter-kinetochore distance of ~910 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous work (Jaqaman et al., 2010; Vladimirou et al., 2013), sister kinetochores had a mean inter-kinetochore distance of ~910 nm and underwent quasi-periodic oscillations normal to the metaphase plate with a half-period of 35 s (Figure 2\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a data-based observation from the study, consistent with previous work cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "939b1730-e59d-4f15-8d92-bdd256112029",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C29",
+      "claim": "Sister kinetochores underwent quasi-periodic oscillations normal to the metaphase plate with a half-period of 35 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous work (Jaqaman et al., 2010; Vladimirou et al., 2013), sister kinetochores had a mean inter-kinetochore distance of ~910 nm and underwent quasi-periodic oscillations normal to the metaphase plate with a half-period of 35 s (Figure 2\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a data-based observation from the study, consistent with previous work cited.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "906562d6-21ae-4187-a5ab-6541eb8603d2",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C30",
+      "claim": "The Bayesian switching point inference algorithm has an accuracy of 94% on simulated data.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested this algorithm on simulated data where the true switch time is known giving accuracies of 94% (see 'Materials and methods'; Figure 3A and Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a data-based validation of the algorithm on simulated data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "94e088a5-1ada-4d38-8053-22c458894669",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C31",
+      "claim": "The study identified switch events in the trajectories of 1529 sister pairs across 55 eGFP-CENP-A cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we identified switch events in the trajectories of 1529 sister pairs across 55 eGFP-CENP-A cells and calculated the frequency that lead or trailing sisters switch first (n=9022 events ending a coherent run).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset analyzed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "73b16528-537d-4279-8809-bd66be1ed58a",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C32",
+      "claim": "The study analyzed 9022 events ending a coherent run.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we identified switch events in the trajectories of 1529 sister pairs across 55 eGFP-CENP-A cells and calculated the frequency that lead or trailing sisters switch first (n=9022 events ending a coherent run).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset analyzed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "8f327785-fad8-4900-89c5-68cb044562ac",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C33",
+      "claim": "The fraction of LIDS and TIDS are 54.3% and 34.8%, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "These criteria illustrate that there is a strong lead bias with the fraction of LIDS and TIDS being 54.3% and 34.8%, respectively, the remaining fraction (10.9%) of events being joint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "a535614a-3cbc-4766-8f17-e64ef8466475",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C34",
+      "claim": "10.9% of events are joint directional switches (JDS).",
+      "claim_type": "EXPLICIT",
+      "source": "These criteria illustrate that there is a strong lead bias with the fraction of LIDS and TIDS being 54.3% and 34.8%, respectively, the remaining fraction (10.9%) of events being joint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "8ecb7ee4-1be0-4f31-b626-652832abbe2a",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C35",
+      "claim": "There is a strong lead bias with a lead-to-trail bias of 1.56:1.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that trailing sister switching is suppressed in human cells, leaving a lead-to-trail bias of 1.56:1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "d1244ca5-dd4f-4edc-be59-5530b23121dc",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C36",
+      "claim": "Trailing sister switching is suppressed in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that trailing sister switching is suppressed in human cells, leaving a lead-to-trail bias of 1.56:1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed lead-to-trail bias.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "295b6de4-5c8b-4b61-8405-ae11605e8dd5",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C37",
+      "claim": "Current directional switching models propose that switching of the lead kinetochore is initiated when the inter-sister distance reaches a maximum stretch.",
+      "claim_type": "EXPLICIT",
+      "source": "Current directional switching models propose that switching of the lead kinetochore is initiated when the inter-sister distance (centromere spring) reaches a maximum stretch (tension) (Rieder and Salmon, 1994; Skibbens et al., 1995; Skibbens et al., 1993; Wan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the current model supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "0d0306a1-943b-4d58-bd45-90f3ad89fe3f",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C38",
+      "claim": "No mechanism has been proposed to explain trail first switching.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, no mechanism has been proposed to explain trail first switching; trailing sister initiated switching has also been reported for PtK1 cells at a 15% frequency (Dumont et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "c1ad73f6-645c-4c90-bef6-4df64ab2940e",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C39",
+      "claim": "Trailing sister initiated switching has been reported for PtK1 cells at a 15% frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, no mechanism has been proposed to explain trail first switching; trailing sister initiated switching has also been reported for PtK1 cells at a 15% frequency (Dumont et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation to Dumont et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "c8d402ce-8eca-4458-9bdb-bb2ae363ab09",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C40",
+      "claim": "LIDS and TIDS both have strong pre-event and post-event inter-sister distance signatures.",
+      "claim_type": "EXPLICIT",
+      "source": "By aligning profiles of the inter-sister distance \u2013 which reflects tension in the centromeric chromatin, 40 s before and 40 s after the first sister switching event (Figure 4A), we demonstrate clearly that LIDS and TIDS both have strong pre-event and post-event inter-sister distance signatures (Figure 4A; compare red [TIDS] and black [LIDS] traces).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "7565652f-06cc-496b-b137-c59e7229a087",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C41",
+      "claim": "For a LIDS, the inter-sister distance increases corresponding to an average increase of spring stretch from 14% to 20% over the 20 s prior to the first sister switch.",
+      "claim_type": "EXPLICIT",
+      "source": "For a LIDS, the inter-sister distance increases corresponding to an average increase of spring stretch from 14% to 20% over the 20 s prior to the first sister switch, stabilises 4 s prior to that switch event and then decreases rapidly during the 6 s following the first sister switch to a minimum average stretch of 5% (Figure 4A; black trace).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "22c8f131-e1d7-4ecc-a827-148d3b93f73b",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C42",
+      "claim": "For a LIDS, the inter-sister distance stabilises 4 s prior to the switch event.",
+      "claim_type": "EXPLICIT",
+      "source": "For a LIDS, the inter-sister distance increases corresponding to an average increase of spring stretch from 14% to 20% over the 20 s prior to the first sister switch, stabilises 4 s prior to that switch event and then decreases rapidly during the 6 s following the first sister switch to a minimum average stretch of 5% (Figure 4A; black trace).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "bd1e872b-8efc-499c-899b-c8c16a8dff46",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C43",
+      "claim": "For a LIDS, the inter-sister distance decreases rapidly during the 6 s following the first sister switch to a minimum average stretch of 5%.",
+      "claim_type": "EXPLICIT",
+      "source": "For a LIDS, the inter-sister distance increases corresponding to an average increase of spring stretch from 14% to 20% over the 20 s prior to the first sister switch, stabilises 4 s prior to that switch event and then decreases rapidly during the 6 s following the first sister switch to a minimum average stretch of 5% (Figure 4A; black trace).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "3cd29e38-7a8e-4e84-924e-942d3c1928aa",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C44",
+      "claim": "A baseline rest length of 788 nm was determined from nocodazole-treated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used a baseline rest length of 788 nm determined from nocodazole-treated cells (see 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental determination of the baseline rest length.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "a109888d-cce3-4068-8db5-e5134ae55e26",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C45",
+      "claim": "The LIDS event leaves the two K-fibres in a polymerising state, which decreases the inter-sister distance.",
+      "claim_type": "EXPLICIT",
+      "source": "The LIDS event leaves the two K-fibres in a polymerising state, which decreases the inter-sister distance; this is in line with the standard model where the inter-sister distance will then undergo extension over the following coherent run (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the observed dynamics and the standard model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "29821b4c-3512-40bd-98c6-7711ae79473d",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C46",
+      "claim": "The relaxation of the spring immediately prior to the first sister switch appears to be the result of the lead sister slowing down.",
+      "claim_type": "EXPLICIT",
+      "source": "The relaxation of the spring immediately prior to the first sister switch appears to be the result of the lead sister slowing down (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "3a9e2f42-d908-4a4c-aaf2-12a3d3fc0833",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C47",
+      "claim": "The velocity slows at maximal inter-sister stretch in Ptk1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This would be in line with experiments in Ptk1 cells in which the velocity slows at maximal inter-sister stretch (Wan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation to Wan et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "71fe1ce5-ee24-4ba1-8225-9b5e22416eea",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C48",
+      "claim": "The switching of the second (trailing) sister correlates with the reduction in spring extension to near zero.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the switching of the second (trailing) sister correlates with the reduction in spring extension to near zero (Figure 4A), possibly suggesting that switching is the result of a loss of tension in accord with the standard tension model (Rieder et al., 1994).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a data-based observation with speculation about the mechanism.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "12a4fed7-e1ea-4c1c-80f2-37c315a50106",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C49",
+      "claim": "For a TIDS, the inter-sister distance is much lower prior to the first sister switch.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the profile for a TIDS is distinct: the inter-sister distance is much lower prior to the first sister switch (Figure 4A; red trace).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "095af358-167c-42ef-b9f2-e2c809f75e2f",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C50",
+      "claim": "For a TIDS, the maximum stretch (25%) is only reached 4 s after the switch has occurred.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum stretch (25%) is only reached 4 s after the switch has occurred.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "add19efb-9eb0-4caf-ac1e-6c0c42013b87",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C51",
+      "claim": "The TIDS itself is necessary to build up tension in the centromeric chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the TIDS itself is necessary to build up tension in the centromeric chromatin while the maximum inter-sister stretch is higher than that seen during LIDS (average 200 nm spring extension).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed dynamics of TIDS.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "c51bad5f-864b-4fc3-9c8c-55cbefb15f29",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C52",
+      "claim": "The maximum inter-sister stretch during TIDS is higher than that seen during LIDS (average 200 nm spring extension).",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the TIDS itself is necessary to build up tension in the centromeric chromatin while the maximum inter-sister stretch is higher than that seen during LIDS (average 200 nm spring extension).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "073cdde3-07e4-49cd-b609-4c8918acc321",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C53",
+      "claim": "Following a TIDS event, the centromeric spring tension escalates during the directional switch and starts to relax 4 s after the directional switch.",
+      "claim_type": "EXPLICIT",
+      "source": "However, following a TIDS event, the centromeric spring tension escalates during the directional switch and starts to relax 4 s after the directional switch (Figure 4A), suggesting that the tension remains high over the following run.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "c8bffd8f-76cd-47b2-bd98-0534f70c9c54",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C54",
+      "claim": "For runs with a preceding LIDS, the inter-sister distance rose over the following run.",
+      "claim_type": "EXPLICIT",
+      "source": "For runs with a preceding switch that was either a LIDS or a TIDS, the inter-sister distance rose (Figure 4C) or relaxed (Figure 4D) over the following run, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "7e1e8f05-c754-46bf-9831-449670e1a023",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C55",
+      "claim": "For runs with a preceding TIDS, the inter-sister distance relaxed over the following run.",
+      "claim_type": "EXPLICIT",
+      "source": "For runs with a preceding switch that was either a LIDS or a TIDS, the inter-sister distance rose (Figure 4C) or relaxed (Figure 4D) over the following run, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "ea83781e-5851-4838-bb67-fdf759734c32",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C56",
+      "claim": "For runs starting after a TIDS, the subsequent directional switch still has a LIDS bias (1.53 compared to a bias of 1.64 for a preceding LIDS).",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, for runs starting after a TIDS the subsequent directional switch still has a LIDS bias (1.53 compared to a bias of 1.64 for a preceding LIDS), while the (median) time of the coherent run is identical to that following a LIDS (27.1 \u00b1 0.21 s for TIDS, 26.7 \u00b1 0.29 s for LIDS, p=5.5%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "a6431eff-0b9c-4cc7-bf12-d8cfe0015885",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C57",
+      "claim": "The median time of the coherent run is identical following a TIDS or LIDS (27.1 \u00b1 0.21 s for TIDS, 26.7 \u00b1 0.29 s for LIDS, p=5.5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, for runs starting after a TIDS the subsequent directional switch still has a LIDS bias (1.53 compared to a bias of 1.64 for a preceding LIDS), while the (median) time of the coherent run is identical to that following a LIDS (27.1 \u00b1 0.21 s for TIDS, 26.7 \u00b1 0.29 s for LIDS, p=5.5%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "8ce457ee-4db9-4237-b36a-eeb4dbf0ecee",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C58",
+      "claim": "TIDS take a shorter amount of time to complete (second sister switches) than LIDS, median times 4.05 \u00b1 0.15 s versus 4.31 \u00b1 0.13 s, respectively (p=1.3 x 10\u20134).",
+      "claim_type": "EXPLICIT",
+      "source": "However, TIDS take a shorter amount of time to complete (second sister switches) than LIDS, median times 4.05 \u00b1 0.15 s versus 4.31 \u00b1 0.13 s, respectively (p=1.3 x 10\u20134).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "2bb30dba-1ff4-426e-ba50-9b5b14f69572",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C59",
+      "claim": "Kinetochore oscillations are robust to sister switching order.",
+      "claim_type": "EXPLICIT",
+      "source": "In essence, kinetochore oscillations are robust to sister switching order and the dynamics of the kinetochores is nearly identical after a TIDS and LIDS, except that the inter-sister distance decreases instead of increases, respectively (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the data analysis shown in Figure 4C,D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "30f73c98-2f8b-426a-b751-265b8f441560",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C60",
+      "claim": "The dynamics of the kinetochores is nearly identical after a TIDS and LIDS, except that the inter-sister distance decreases instead of increases, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In essence, kinetochore oscillations are robust to sister switching order and the dynamics of the kinetochores is nearly identical after a TIDS and LIDS, except that the inter-sister distance decreases instead of increases, respectively (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis shown in Figure 4C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "2513555e-2e5c-4b95-83b9-ad4409bf9bfa",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C61",
+      "claim": "Under a LIDS, the inter-sister distance relaxes then increases over the subsequent coherent run.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations suggest that the classic choreography (Figure 1) represents half of the dynamic with the inter-sister distance relaxing under a LIDS then increasing over the subsequent coherent run \u2013 depolymerising K-fibres pulling kinetochores with greater force than polymerising fibres push.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "d467ee6d-5b07-48de-88f0-2630506d6afd",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C62",
+      "claim": "Depolymerising K-fibres pull kinetochores with greater force than polymerising fibres push.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations suggest that the classic choreography (Figure 1) represents half of the dynamic with the inter-sister distance relaxing under a LIDS then increasing over the subsequent coherent run \u2013 depolymerising K-fibres pulling kinetochores with greater force than polymerising fibres push.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the observed dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "e00a7bc7-a4d5-473e-8219-6f664464d945",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C63",
+      "claim": "Under a TIDS, the inter-sister distance is overstretched and relaxes during the subsequent coherent run.",
+      "claim_type": "EXPLICIT",
+      "source": "However, under a TIDS the inter-sister distance is overstretched and relaxes during the subsequent coherent run \u2013 the centromeric spring force increasing the velocity of the trailing sister so that it exceeds that of the lead sister.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "83fcab0f-3893-4deb-a8e1-6e887db0f88f",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C64",
+      "claim": "Under a TIDS, the centromeric spring force increases the velocity of the trailing sister so that it exceeds that of the lead sister.",
+      "claim_type": "EXPLICIT",
+      "source": "However, under a TIDS the inter-sister distance is overstretched and relaxes during the subsequent coherent run \u2013 the centromeric spring force increasing the velocity of the trailing sister so that it exceeds that of the lead sister.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "fcbb2372-200c-495d-8465-908876c4aee2",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C65",
+      "claim": "Directional switching cannot be triggered by a threshold on the spring tension.",
+      "claim_type": "EXPLICIT",
+      "source": "This TIDS choreography implies that directional switching cannot be triggered by a threshold on the spring tension as overstretching and subsequent relaxation of the spring tension prior to a directional switch are a natural part of metaphase kinetochore oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed TIDS dynamics that contradicts the tension threshold model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "825508bc-b615-46b7-aff1-019545301fe3",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C66",
+      "claim": "Overstretching and subsequent relaxation of the spring tension prior to a directional switch are a natural part of metaphase kinetochore oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "This TIDS choreography implies that directional switching cannot be triggered by a threshold on the spring tension as overstretching and subsequent relaxation of the spring tension prior to a directional switch are a natural part of metaphase kinetochore oscillations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "1a57a694-0d8b-48c3-9be0-85ba8c317ce4",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C67",
+      "claim": "Kinetochores move in 3D with the kinetochore sister axis being compliant to twist away from the metaphase plate normal.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetochores move in 3D with the kinetochore sister axis being compliant to twist away from the metaphase plate normal (Figure 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a data-based observation shown in Figure 2D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "f4dfc440-225d-4fc7-bdd0-138d8c2394a6",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C68",
+      "claim": "The twist and inter-sister distance are inversely correlated (r=\u20130.13, significant at p<10\u2013200).",
+      "claim_type": "EXPLICIT",
+      "source": "The twist and inter-sister distance are in fact inversely correlated (r=\u20130.13, significant at p<10\u2013200), with twist showing inverted profiles over switching events relative to that for the inter-sister distance (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "e33677b5-00ee-4e8e-b53d-8032f6e198f3",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C69",
+      "claim": "Twist shows inverted profiles over switching events relative to that for the inter-sister distance.",
+      "claim_type": "EXPLICIT",
+      "source": "The twist and inter-sister distance are in fact inversely correlated (r=\u20130.13, significant at p<10\u2013200), with twist showing inverted profiles over switching events relative to that for the inter-sister distance (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "ab15f441-d841-47c6-ab4f-8fdb0b197436",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C70",
+      "claim": "For a LIDS, the twist of the sisters falls prior to the switch and increases after the switch event.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the twist of the sisters falls prior to a LIDS and increases after the switch event, while a TIDS demonstrates the opposite (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "dbfe6f21-255c-4d8f-b26a-88268d99f703",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C71",
+      "claim": "For a TIDS, the twist of the sisters increases prior to the switch and decreases after the switch event.",
+      "claim_type": "IMPLICIT",
+      "source": "Specifically, the twist of the sisters falls prior to a LIDS and increases after the switch event, while a TIDS demonstrates the opposite (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the statement that TIDS demonstrates the opposite of LIDS.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "63c7c2ca-0751-4f12-83d4-45a569e37844",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C72",
+      "claim": "The average twist increase seen at a LIDS relaxes over the following coherent run.",
+      "claim_type": "EXPLICIT",
+      "source": "The average twist increase seen at a LIDS relaxes over the following coherent run (Figure 5C), similar to the relaxation in the spring extension seen after a TIDS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "05284954-3812-425c-a5fd-b89c8a54c4b8",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C73",
+      "claim": "A high inter-sister stretch, indicative of a high inter-sister tension, aligns the sisters, reducing the twist.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be explained mechanistically since a high inter-sister stretch, indicative of a high inter-sister tension, aligns the sisters, reducing the twist, while a low stretch, with low tension, allows the twist angle to increase under thermal and mechanical fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation inferred from the observed correlation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "bb8ef0b8-685f-4e80-a91b-7a902dda6cbb",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C74",
+      "claim": "A low stretch, with low tension, allows the twist angle to increase under thermal and mechanical fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be explained mechanistically since a high inter-sister stretch, indicative of a high inter-sister tension, aligns the sisters, reducing the twist, while a low stretch, with low tension, allows the twist angle to increase under thermal and mechanical fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation inferred from the observed correlation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "8500a870-3067-4fd1-9ab9-2b99dcffa1d9",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C75",
+      "claim": "A negative correlation between twist and inter-sister distance is predicted if there is mechanical compliance in the attachment of the kinetochore to the K-fibres and the centromeric spring.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a negative correlation between twist and inter-sister distance is predicted if there is mechanical compliance in the attachment of the kinetochore to the K-fibres and the centromeric spring.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the mechanistic explanation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "dc0f85c3-ae75-4c75-bbc2-c580b14439bc",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C76",
+      "claim": "On average, a TIDS is associated with a lower inter-sister distance than a LIDS 4 s prior to the event regardless of a preceding LIDS or TIDS.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of the inter-sister distance profiles between consecutive events reveals a key pattern; on average, a TIDS is associated with a lower inter-sister distance than a LIDS 4 s prior to the event regardless of a preceding LIDS or TIDS (Figure 4B), a LIDS event having a mean separation above 920 nm (dark blue and grey traces), a TIDS event being below 920 nm (orange and light blue traces).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "6f46c156-0944-4d4d-9aeb-1b2f6fb0486c",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C77",
+      "claim": "A LIDS event has a mean separation above 920 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of the inter-sister distance profiles between consecutive events reveals a key pattern; on average, a TIDS is associated with a lower inter-sister distance than a LIDS 4 s prior to the event regardless of a preceding LIDS or TIDS (Figure 4B), a LIDS event having a mean separation above 920 nm (dark blue and grey traces), a TIDS event being below 920 nm (orange and light blue traces).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "df675ffe-aa65-44b8-8ebb-4f79050e6678",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C78",
+      "claim": "A TIDS event has a mean separation below 920 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of the inter-sister distance profiles between consecutive events reveals a key pattern; on average, a TIDS is associated with a lower inter-sister distance than a LIDS 4 s prior to the event regardless of a preceding LIDS or TIDS (Figure 4B), a LIDS event having a mean separation above 920 nm (dark blue and grey traces), a TIDS event being below 920 nm (orange and light blue traces).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "cc2b21f7-8315-45ab-8489-885cfc95ebff",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C79",
+      "claim": "The run is invariant to the nature of the preceding switching event, particularly with regard to timing.",
+      "claim_type": "EXPLICIT",
+      "source": "Coupled with the fact that the run is invariant to the nature of the preceding switching event, particularly with regard to timing (the coherent run time to the next directional switch is identical, p=5.5%), this suggests that switching of the lead and trail sisters are governed by clocks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "2b488f6c-f5d1-4be3-a511-e6af644ef913",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C80",
+      "claim": "Switching of the lead and trail sisters are governed by clocks.",
+      "claim_type": "EXPLICIT",
+      "source": "Coupled with the fact that the run is invariant to the nature of the preceding switching event, particularly with regard to timing (the coherent run time to the next directional switch is identical, p=5.5%), this suggests that switching of the lead and trail sisters are governed by clocks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed invariance of run timing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "fe5e8aa4-de5d-43b7-908d-2a5180898ef9",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C81",
+      "claim": "The clock could be a mechanical timing mechanism associated with the attached K-fibre, and thus force sensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be a mechanical timing mechanism associated with the attached K-fibre, and thus force sensitive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the nature of the clock mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "91e08a37-e7a7-49c9-a3c9-9805e6aaf408",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C82",
+      "claim": "The trailing sister is kept in a polymerising state by the pulling force from the stretched centromeric chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, the trailing sister is kept in a polymerising state by the pulling force from the stretched centromeric chromatin (see model in Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed mechanism based on the data and shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "6ffb54bb-a855-4e3f-9b50-2e46251cd7e2",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C83",
+      "claim": "The kinetochore can inhibit catastrophe when under tension, as shown by biophysical experiments using purified budding yeast kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "This may reflect the ability of the kinetochore to inhibit catastrophe when under tension \u2013 as shown by biophysical experiments using purified budding yeast kinetochores (Akiyoshi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation to Akiyoshi et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "3fff1619-45e7-43ac-8e21-ed343d58fc81",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C84",
+      "claim": "If tension falls too low (or fails to build up), a TIDS occurs (as microtubules in the K-fibre undergo catastrophe).",
+      "claim_type": "EXPLICIT",
+      "source": "If that tension falls too low (or fails to build up), a TIDS occurs (as microtubules in the K-fibre undergo catastrophe; Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed mechanism based on the data and shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "a0cdbcc4-b8a9-4795-8ac4-13ed2a7b90d9",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C85",
+      "claim": "During a LIDS, the second sister (previously trailing) switches under the loss of the tension in the centromeric chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "The same stabilisation mechanism can be invoked to explain switching resolution \u2013 during a LIDS the second sister (previously trailing), switches under the loss of the tension in the centromeric chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "34d5bfca-a7d0-4e5e-9cc0-d598edafa390",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C86",
+      "claim": "When tension remains high enough to stabilise the trailing sister, then the lead sister switches because of its clock.",
+      "claim_type": "EXPLICIT",
+      "source": "When tension remains high enough to stabilise the trailing sister, then the lead sister switches because of its clock.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "db9a80e0-335b-4bbb-9bce-edf40258a5a4",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C87",
+      "claim": "The escalating force during a TIDS (after the trailing sister switches) could accelerate the lead sister clock triggering switching of the second sister.",
+      "claim_type": "EXPLICIT",
+      "source": "The escalating force during a TIDS (after the trailing sister switches) could accelerate the lead sister clock triggering switching of the second sister.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "11fa1edf-4854-4832-9504-0653a37e4d46",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C88",
+      "claim": "The rescue rate of in vitro microtubules attached to kinetochores increases under tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, this reflects the increase in the rescue rate of in vitro microtubules attached to kinetochores as shown in Akiyoshi et al., 2010, while it emphasises that the two sisters are not symmetrical and the time since their last switch event determines which sister switches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation to Akiyoshi et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "20862569-9adf-48b5-a7a8-c63a1f903f81",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C89",
+      "claim": "The two sisters are not symmetrical and the time since their last switch event determines which sister switches.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, this reflects the increase in the rescue rate of in vitro microtubules attached to kinetochores as shown in Akiyoshi et al., 2010, while it emphasises that the two sisters are not symmetrical and the time since their last switch event determines which sister switches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "fee581dc-72f2-44a9-989b-22fb6be5de75",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C90",
+      "claim": "Kinetochores display a range of stochasticity in their trajectories, from near deterministic oscillations to the near random.",
+      "claim_type": "EXPLICIT",
+      "source": "First, kinetochores are known to display a range of stochasticity in their trajectories, from near deterministic oscillations to the near random (Jaqaman et al., 2010; Magidson et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations to Jaqaman et al., 2010; Magidson et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "e661ae43-30d1-4b8b-b66f-f7b10693ad3e",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C91",
+      "claim": "The duration of a coherent run has a large variability with a coefficient of variation of 0.45.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the switching times are stochastic; the duration of a coherent run has a large variability with a coefficient of variation (standard deviation [SD]/mean) of 0.45, similar for both runs terminated by an LIDS (mean time and SD 29.6 \u00b1 12.7 s) or a TIDS (29.2 \u00b1 13.6 s, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "079f04e6-47c8-423b-802e-87e69c97f267",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C92",
+      "claim": "Runs terminated by an LIDS have a mean time and SD of 29.6 \u00b1 12.7 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the switching times are stochastic; the duration of a coherent run has a large variability with a coefficient of variation (standard deviation [SD]/mean) of 0.45, similar for both runs terminated by an LIDS (mean time and SD 29.6 \u00b1 12.7 s) or a TIDS (29.2 \u00b1 13.6 s, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "85dfe966-4336-4313-87db-f25d0177d271",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C93",
+      "claim": "Runs terminated by a TIDS have a mean time and SD of 29.2 \u00b1 13.6 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the switching times are stochastic; the duration of a coherent run has a large variability with a coefficient of variation (standard deviation [SD]/mean) of 0.45, similar for both runs terminated by an LIDS (mean time and SD 29.6 \u00b1 12.7 s) or a TIDS (29.2 \u00b1 13.6 s, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "e9f523c5-3758-42fe-b46b-de0edc33a5c2",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C94",
+      "claim": "The clock mechanism is inherently stochastic.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although we have invoked a clock mechanism as a switching time regulator, it is inherently stochastic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed variability in switching times.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "ea15cbe9-1d47-4aa7-bfae-6509cef11bfc",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C95",
+      "claim": "The stochasticity could stem from both the number and depolymerisation/polymerisation state of individual microtubules that make up the K-fibre.",
+      "claim_type": "EXPLICIT",
+      "source": "This stochasticity could stem from both the number and depolymerisation/polymerisation state of individual microtubules that make up the K-fibre.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the source of stochasticity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "65602d39-583e-465b-a4bd-eff38a960c7a",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C96",
+      "claim": "The fraction of microtubules that are in a polymerising state within a K-fibre is highly variable among kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of microtubules that are in a polymerising state within a K-fibre is highly variable among kinetochores (Armond et al., 2015), indicating that growing and shrinking K-fibres are unlikely to be composed of fully coherent microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by a citation to Armond et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "d4212f99-7bf8-4afc-97e0-2b07436eb9f2",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C97",
+      "claim": "Growing and shrinking K-fibres are unlikely to be composed of fully coherent microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of microtubules that are in a polymerising state within a K-fibre is highly variable among kinetochores (Armond et al., 2015), indicating that growing and shrinking K-fibres are unlikely to be composed of fully coherent microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed variability in microtubule states.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "ba14598f-6576-4af1-a0f3-36784687e8ce",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C98",
+      "claim": "The signatures in Figure 4 are a mean behaviour, while variability in the inter-sister stretch throughout the dynamics is large.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the signatures in Figure 4 are a mean behaviour, while variability in the inter-sister stretch throughout the dynamics is in fact large.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation about the data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "937318f4-c58e-49f5-ae0b-4d7dc37864bd",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C99",
+      "claim": "The inter-sister distance distributions for LIDS and TIDS only show marginal separation before the switching event (\u20134 s).",
+      "claim_type": "EXPLICIT",
+      "source": "This can be seen at the population level of trajectories, where the inter-sister distance distributions for LIDS and TIDS only show marginal separation before the switching event (\u20134 s), are hardly separated at the event, while separation increases after the event (+4 s) (Figure 4\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis shown in Figure 4\u2014figure supplement 2A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "546fd32a-4dc6-44ee-b222-f94963d9db54",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C100",
+      "claim": "The inter-sister distance distributions for LIDS and TIDS are hardly separated at the event.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be seen at the population level of trajectories, where the inter-sister distance distributions for LIDS and TIDS only show marginal separation before the switching event (\u20134 s), are hardly separated at the event, while separation increases after the event (+4 s) (Figure 4\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis shown in Figure 4\u2014figure supplement 2A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "7f0799cf-0810-4f7e-90ba-09a6bf24d715",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C101",
+      "claim": "The separation of inter-sister distance distributions for LIDS and TIDS increases after the event (+4 s).",
+      "claim_type": "EXPLICIT",
+      "source": "This can be seen at the population level of trajectories, where the inter-sister distance distributions for LIDS and TIDS only show marginal separation before the switching event (\u20134 s), are hardly separated at the event, while separation increases after the event (+4 s) (Figure 4\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis shown in Figure 4\u2014figure supplement 2A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "1962a551-6ee2-4380-b303-73f0a42bd456",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C102",
+      "claim": "The inter-sister distance distribution over a switching event is far from bimodal.",
+      "claim_type": "EXPLICIT",
+      "source": "The inter-sister distance distribution over a switching event is in fact far from bimodal; a mixture of two Gaussian distributions requires the respective means to be separated by at least 2 SDs to be bimodal, the largest we observe is 70% at 4 s post event (Figure 4\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis shown in Figure 4\u2014figure supplement 2A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "85c6182c-1c01-46e6-8692-b84505024677",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C103",
+      "claim": "The signatures shown in Figure 4 are not a universal behaviour but only detectable on averaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we have to conclude that the signatures shown in Figure 4 are not a universal behaviour but only detectable on averaging; that is, the actual switching process is highly stochastic.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the observed variability in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "08dfafb0-b533-46d8-8905-a0efe60c305a",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C104",
+      "claim": "The actual switching process is highly stochastic.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we have to conclude that the signatures shown in Figure 4 are not a universal behaviour but only detectable on averaging; that is, the actual switching process is highly stochastic.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the observed variability in the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "92c185bd-84c7-4003-8598-a9cb12affd74",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C105",
+      "claim": "Directional switching may be a composite process that integrates over multiple signals.",
+      "claim_type": "EXPLICIT",
+      "source": "It may be that analysis of the most deterministic trajectories will reduce this stochasticity in the switching dynamics and signatures. However, directional switching may be a composite process that integrates over multiple signals, that is, tension may not be the only determinant; the stochasticity in our signatures would then be due to measuring only one of these determinants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the nature of directional switching.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "4f4c97b2-df1b-4352-b75a-65e85711daec",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C106",
+      "claim": "Tension may not be the only determinant of directional switching.",
+      "claim_type": "EXPLICIT",
+      "source": "It may be that analysis of the most deterministic trajectories will reduce this stochasticity in the switching dynamics and signatures. However, directional switching may be a composite process that integrates over multiple signals, that is, tension may not be the only determinant; the stochasticity in our signatures would then be due to measuring only one of these determinants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the determinants of directional switching.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "a909eae9-f5af-4314-a7e3-f6ddfe0d79c2",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C107",
+      "claim": "It remains unknown to what extent the stochasticity in switching time and switching type explains the observed diversity in kinetochore trajectory dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "It remains unknown to what extent the stochasticity in switching time and switching type explains the observed diversity in kinetochore trajectory dynamics, or whether other sources of variability exist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "c5d71d5f-905f-49bb-9347-48c27e11819e",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C108",
+      "claim": "The leading sister typically initiates directional switching.",
+      "claim_type": "EXPLICIT",
+      "source": "This paper demonstrates how dynamic and mechanistic insight can be extracted from high-resolution tracking data. Although the leading sister typically initiates directional switching, the reverse switching order is also frequently observed (Figure 3D), with directional switching biases, timings and subsequent oscillations remaining robust to such events.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "e8d45105-de1d-4c52-addf-4144e436ecd8",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C109",
+      "claim": "The reverse switching order (trail first) is also frequently observed.",
+      "claim_type": "EXPLICIT",
+      "source": "This paper demonstrates how dynamic and mechanistic insight can be extracted from high-resolution tracking data. Although the leading sister typically initiates directional switching, the reverse switching order is also frequently observed (Figure 3D), with directional switching biases, timings and subsequent oscillations remaining robust to such events.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "968b1bc6-6f1d-4e31-9bfc-02c8cf78f367",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C110",
+      "claim": "Directional switching biases, timings and subsequent oscillations remain robust to switching order.",
+      "claim_type": "EXPLICIT",
+      "source": "This paper demonstrates how dynamic and mechanistic insight can be extracted from high-resolution tracking data. Although the leading sister typically initiates directional switching, the reverse switching order is also frequently observed (Figure 3D), with directional switching biases, timings and subsequent oscillations remaining robust to such events.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "e580fcf4-05af-451d-9fd3-0b0cc64088ab",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C111",
+      "claim": "Event classification is physical and not due to noisy fluctuations in switching times coming from localisation measurement noise.",
+      "claim_type": "EXPLICIT",
+      "source": "By classifying switching order events, we were able to demonstrate clear stereotypical behaviour associated with these events, with both prior (potentially causal) and post-event signatures in the inter-sister distance dynamics. This confirms that event classification is physical and not due to noisy fluctuations in switching times coming from localisation measurement noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed stereotypical signatures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "3a051af0-feca-4542-ad9a-2a6da507c6b2",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C112",
+      "claim": "The data support a new model of kinetochore oscillations comprising mechanical clocks on both the lead and trailing sister.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data support a new model of kinetochore oscillations comprising mechanical clocks on both the lead and trailing sister, which likely reflect the time- and force-dependent rescue and catastrophe of the K-fibre microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "1528f4c5-e854-42e2-a1ef-b883d2aaad94",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C113",
+      "claim": "The mechanical clocks likely reflect the time- and force-dependent rescue and catastrophe of the K-fibre microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data support a new model of kinetochore oscillations comprising mechanical clocks on both the lead and trailing sister, which likely reflect the time- and force-dependent rescue and catastrophe of the K-fibre microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the molecular mechanism of the clocks.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "e0f33128-d487-48f5-91e4-66878db4c1e6",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C114",
+      "claim": "The degree of stretch of the inter-sister centromeric chromatin is a major determinant in orchestrating switching.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis suggests that the degree of stretch of the inter-sister centromeric chromatin is a major determinant in orchestrating this switching; first, a mechanism based on stabilisation of the trailing sister polymerisation state through the centromere tension, effectively slowing the trailing sister clock, and second, a clock on the lead sister that is accelerated under high tension (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the data analysis shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "1e936815-99af-4674-916f-a8a14066b1c9",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C115",
+      "claim": "Centromere tension stabilises the trailing sister polymerisation state, effectively slowing the trailing sister clock.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis suggests that the degree of stretch of the inter-sister centromeric chromatin is a major determinant in orchestrating this switching; first, a mechanism based on stabilisation of the trailing sister polymerisation state through the centromere tension, effectively slowing the trailing sister clock, and second, a clock on the lead sister that is accelerated under high tension (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed mechanism based on the data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "b8f0fd2f-4384-47b7-91f8-a7934c3da18c",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C116",
+      "claim": "The clock on the lead sister is accelerated under high tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis suggests that the degree of stretch of the inter-sister centromeric chromatin is a major determinant in orchestrating this switching; first, a mechanism based on stabilisation of the trailing sister polymerisation state through the centromere tension, effectively slowing the trailing sister clock, and second, a clock on the lead sister that is accelerated under high tension (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed mechanism based on the data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "8522bd46-99b9-410e-aa2f-336e1c2a8464",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C117",
+      "claim": "The standard tension model of sister kinetochore switching is only able to explain part of the dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that the standard tension model of sister kinetochore switching (Figure 1) is only able to explain part of the dynamics, while it is incompatible with the overstretch and subsequent relaxation of the inter-sister distance following a TIDS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the data that contradicts the standard model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "15a9b685-452d-4d6e-bcc1-3462def252ce",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C118",
+      "claim": "The standard tension model is incompatible with the overstretch and subsequent relaxation of the inter-sister distance following a TIDS.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that the standard tension model of sister kinetochore switching (Figure 1) is only able to explain part of the dynamics, while it is incompatible with the overstretch and subsequent relaxation of the inter-sister distance following a TIDS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference from the data that contradicts the standard model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "9241fddb-e6ec-41d2-9ae8-deb0574d4a35",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C119",
+      "claim": "Kinetochores utilise multiple sensory and fail-safe mechanisms that ensure high-fidelity chromosome organisation within the spindle, despite high levels of stochasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, kinetochores utilise multiple sensory and fail-safe mechanisms that ensure high-fidelity chromosome organisation within the spindle, despite high levels of stochasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the observed robustness of kinetochore dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "6ebb9836-aaab-409b-a5dd-dfbb94965992",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C120",
+      "claim": "HeLa-K cells stably expressing eGFP-CENP-A were used in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "HeLa-K cells stably expressing eGFP-CENP-A (Jaqaman et al., 2010) or eGFP-CENP-A/eGFP-Centrin 1 were grown in Dulbecco's modified Eagle's medium (Fisher, UK) containing 10% foetal calf serum (Fisher), 100 \u00b5g ml-1 penicillin and 100 \u00b5g ml-1 streptomycin maintained in 5% CO2 at 37\u00b0C in a humidified incubator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the cell lines and culture conditions used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "720661c1-8005-4425-80df-2aaea5ce41de",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C121",
+      "claim": "Cells were treated with 2 \u00b5g ml-1 nocodazole for between 16 and 24 hr to depolymerise microtubules to measure the inter-sister distance rest length.",
+      "claim_type": "EXPLICIT",
+      "source": "To measure the inter-sister distance rest length, cells were treated with 2 \u00b5g ml-1 nocodazole (Fisher) for between 16 and 24 hr to depolymerise microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "fb608b82-bc55-4cb2-9482-ea96bcc4cef0",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C122",
+      "claim": "Image stacks (25 z-sections, 0.5 \u00b5m apart) were collected every 2 s for 5 min (150 time points per video).",
+      "claim_type": "EXPLICIT",
+      "source": "Image stacks (25 z-sections, 0.5 \u00b5m apart) were collected every 2 s for 5 min (150 time points per video).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging parameters used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "c7ff5dce-dc6d-445e-9297-d576f6586968",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C123",
+      "claim": "Camera pixels were binned 2 \u00d7 2, giving an effective pixel size of 138 nm in the lateral direction with a 16-bit per pixel imaging depth.",
+      "claim_type": "EXPLICIT",
+      "source": "Camera pixels were binned 2 \u00d7 2, giving an effective pixel size of 138 nm in the lateral direction with a 16-bit per pixel imaging depth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging parameters used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "dd9d9058-93bf-41fc-a9d1-9e4f29f7c680",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "claim_id": "C124",
+      "claim": "Exposure conditions were set 50 ms per z-slice using a 488-nm laser set to 15% power.",
+      "claim_type": "EXPLICIT",
+      "source": "Exposure conditions were set 50 ms per z-slice using a 488-nm laser set to 15% power.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging parameters used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d3a6d7ea-e787-4dd4-ad3f-a220eabff82f",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study developed a high-resolution kinetochore tracking method using spinning disk confocal microscopy with 2-second temporal resolution and 3D Gaussian mixture model fitting, achieving theoretical positional accuracy of \u00b12.8 nm (x,y) and \u00b15.7 nm (z). The method was validated with >90% cell viability and reproduced known kinetochore dynamics (mean inter-kinetochore distance ~910 nm, oscillation half-period 35 s). A Bayesian switching point detection algorithm achieved 94% accuracy on simulated data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C30 describe a well-validated methodological advance with appropriate controls (phototoxicity assessment, consistency with prior work, algorithm validation on simulated data). The theoretical accuracy calculations and algorithm performance metrics provide quantitative support for the technical claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "c1d567a2-9709-4e58-8fa3-d508df990971",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Analysis of 9,022 switching events from 1,529 sister pairs across 55 cells revealed that directional switching is initiated by both leading (54.3% LIDS) and trailing (34.8% TIDS) kinetochores, with 10.9% joint switches. This demonstrates a lead-to-trail bias of 1.56:1 and that trailing sister switching, while suppressed, occurs frequently in human cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C31-C36, C108-C109 present a major finding based on large-scale quantitative analysis. The dataset size (>9,000 events) and clear quantitative metrics provide strong statistical support. The observation of frequent TIDS contradicts predictions of the standard tension model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "3e29b0da-1fd4-470c-a63f-4ac84849e102",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "LIDS and TIDS exhibit distinct inter-sister distance signatures. For LIDS, inter-sister distance increases from 14% to 20% stretch over 20 s before switching, stabilizes 4 s prior, then decreases to 5% stretch after switching. For TIDS, inter-sister distance is lower before switching, with maximum stretch (25%) reached only 4 s after the switch, indicating TIDS builds tension during the switch itself.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43, C45, C49-C53 describe stereotypical dynamic signatures supported by aligned trajectory data (Figure 4A). The temporal profiles are quantitatively characterized with specific stretch percentages and timing. The distinct TIDS signature is a key observation that challenges existing models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "75f66ab2-f3c3-43d3-95b1-495b962158e3",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Trail-driven switching (TIDS) generates chromatin overstretch that relaxes over the following half-period, with centromeric spring force increasing trailing sister velocity. This observation rules out tension threshold-based switching mechanisms, as the standard tension model is incompatible with overstretch and subsequent relaxation following TIDS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C63-C66, C117-C118 present a critical finding that contradicts the long-standing tension model. The overstretch observation during TIDS (C5, C63) is well-supported by the data in Figure 4A. The logical inference that this rules out tension threshold mechanisms (C6, C65, C117-C118) follows directly from the incompatibility of overstretch with threshold-based models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "7265af50-ffce-46aa-834e-4f24d28f4259",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Kinetochore oscillations are robust to switching order. Following LIDS, inter-sister distance rises during the subsequent run; following TIDS, it relaxes. Despite these differences, the median coherent run time is identical (27.1\u00b10.21 s for TIDS vs 26.7\u00b10.29 s for LIDS, p=5.5%), and LIDS bias is maintained (1.53 after TIDS vs 1.64 after LIDS). Kinetochore dynamics are nearly identical after TIDS and LIDS except for inter-sister distance direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57, C59-C60, C79, C110 demonstrate robustness through quantitative comparison of run times and switching biases. The statistical test (p=5.5%) supports the claim of identical timing. This invariance is a key observation supporting the clock model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "56c0709a-83ed-47e4-a743-e0a48ccd8496",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The data support a clock-based model where intrinsic switching times of kinetochore-attached microtubule fibers are set by mechanical clocks on both lead and trailing sisters, with centromeric spring tension operating as feedback to slow (trailing sister) or accelerate (lead sister) the clocks. The degree of centromeric chromatin stretch is a major determinant orchestrating switching.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C80, C112, C114-C116 propose a new mechanistic model supported by the invariance of run times (C79, C57) and the distinct tension dynamics of LIDS vs TIDS. The clock model is consistent with all major observations and provides a unified explanation for both switching types. However, the molecular basis of the clocks remains speculative (C113).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "d8e878fc-5afa-4223-90dd-d8de3c941f81",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Twist angle and inter-sister distance are inversely correlated (r=-0.13, p<10^-200). For LIDS, twist falls before and increases after switching; for TIDS, the opposite occurs. This correlation is explained mechanistically by high tension aligning sisters (reducing twist) and low tension allowing twist to increase under fluctuations, indicating mechanical compliance in kinetochore-K-fiber attachments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C75 present a secondary finding with strong statistical support (p<10^-200) and clear temporal signatures (Figure 5). The mechanistic explanation (C73-C75) is reasonable and consistent with known mechanical properties. This provides additional evidence for the role of tension in kinetochore dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "6aef3601-7ce9-4af7-be9b-f6312e42909d",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A key pattern emerges: TIDS is associated with lower inter-sister distance than LIDS 4 s prior to the event regardless of preceding event type. LIDS events have mean separation above 920 nm, while TIDS events are below 920 nm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 identify a predictive signature distinguishing LIDS from TIDS based on prior inter-sister distance (Figure 4B). This observation supports the clock model by showing that switching type depends on tension state rather than a universal threshold.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "5472c5d0-447e-4935-8115-3939ac80dba7",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "TIDS complete faster than LIDS (median 4.05\u00b10.15 s vs 4.31\u00b10.13 s, p=1.3\u00d710^-4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 reports a statistically significant difference in switching completion time with appropriate statistical testing. This supports the proposed mechanism where high tension during TIDS accelerates the lead sister clock.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "13a359b2-45f4-4f0b-af21-b29cc9f78600",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The proposed mechanism involves tension-dependent stabilization: the trailing sister is kept polymerizing by centromeric chromatin tension (consistent with kinetochore catastrophe inhibition under tension). If tension falls too low, TIDS occurs. During LIDS, the second sister switches under loss of tension. When tension remains high, the lead sister switches due to its clock, with escalating force during TIDS potentially accelerating the lead sister clock.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C87 propose detailed mechanistic explanations supported by the observed dynamics and prior work (C83, C88). However, these are largely inferences from the data rather than direct demonstrations. The connection to yeast kinetochore biophysics (C83) provides some support, but direct evidence for these specific mechanisms in human cells is lacking. The speculation in C87 is acknowledged as such.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "176f235a-cce3-4c58-a175-3167c74c583d",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The switching process is highly stochastic. Coherent run duration has large variability (coefficient of variation 0.45), similar for LIDS (29.6\u00b112.7 s) and TIDS (29.2\u00b113.6 s). Inter-sister distance distributions for LIDS and TIDS show only marginal separation before switching and are far from bimodal. The signatures in Figure 4 are mean behaviors detectable only on averaging, not universal behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C104 characterize the stochastic nature of the system with appropriate statistical measures (coefficient of variation, distribution analysis). The observation that signatures emerge only on averaging (C103-C104) is well-supported by the distribution data (Figure 4 supplement 2). This stochasticity is consistent with the underlying microtubule dynamics (C96-C97).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "9322011c-9ffb-4f2a-9c67-55271c74c4ab",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Event classification (LIDS vs TIDS) is physical and not due to noisy fluctuations from localization measurement noise, as demonstrated by clear stereotypical behavior with both prior and post-event signatures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C111 is supported by the distinct and reproducible signatures observed for LIDS and TIDS (C40-C43, C49-C53). The consistency of these signatures across thousands of events argues against classification being an artifact of measurement noise.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "de3fa7f1-b26f-4667-8f49-7452ed96a2e2",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "A baseline rest length of 788 nm was determined from nocodazole-treated cells (16-24 hr treatment to depolymerize microtubules).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44 and C121 describe a standard experimental approach for determining rest length. The method is appropriate and the value is used consistently throughout the analysis for calculating stretch percentages.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "68cc4d6e-b835-4979-bed3-1b4c3de5a0a4",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Directional switching may be a composite process integrating multiple signals beyond tension. It remains unknown to what extent stochasticity in switching time and type explains trajectory diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C107 appropriately acknowledge limitations and uncertainties in the current understanding. These are reasonable speculations given the observed stochasticity and are presented as open questions rather than conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "4227d5ab-fb60-436a-9727-f5b3cba536ef",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The mechanical clocks likely reflect time- and force-dependent rescue and catastrophe of K-fiber microtubules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C113 proposes a molecular mechanism for the clocks but is explicitly speculative. While consistent with known microtubule dynamics and supported by yeast studies (C83, C88), direct evidence for this mechanism in human cells is not provided. This represents a reasonable hypothesis requiring future validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    },
+    {
+      "id": "a2423438-2726-4f6e-ac56-4d268f688d65",
+      "content_id": "fad5228c-bc89-4350-9ef0-b6284f5fd263",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Kinetochores utilize multiple sensory and fail-safe mechanisms ensuring high-fidelity chromosome organization despite high stochasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C119 is a reasonable inference from the observed robustness of kinetochore oscillations (C59, C110) despite high stochasticity (C91-C104). The data demonstrate that the system maintains consistent timing and bias despite variable tension dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:25:43.056202Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d3902e0c-3dec-451f-980c-8e7ffd2eff09",
+      "result_id": "d3a6d7ea-e787-4dd4-ad3f-a220eabff82f"
+    },
+    {
+      "claim_id": "286b13f1-674a-4c03-808d-19ea7b1c5625",
+      "result_id": "d3a6d7ea-e787-4dd4-ad3f-a220eabff82f"
+    },
+    {
+      "claim_id": "9b2280f3-4086-4dc9-b62a-bbb788015ee1",
+      "result_id": "d3a6d7ea-e787-4dd4-ad3f-a220eabff82f"
+    },
+    {
+      "claim_id": "111e5153-04d0-41bc-853c-3d67c7dea292",
+      "result_id": "d3a6d7ea-e787-4dd4-ad3f-a220eabff82f"
+    },
+    {
+      "claim_id": "27c1c5cc-e409-481d-b6e7-3d441c4f883c",
+      "result_id": "d3a6d7ea-e787-4dd4-ad3f-a220eabff82f"
+    },
+    {
+      "claim_id": "939b1730-e59d-4f15-8d92-bdd256112029",
+      "result_id": "d3a6d7ea-e787-4dd4-ad3f-a220eabff82f"
+    },
+    {
+      "claim_id": "906562d6-21ae-4187-a5ab-6541eb8603d2",
+      "result_id": "d3a6d7ea-e787-4dd4-ad3f-a220eabff82f"
+    },
+    {
+      "claim_id": "991a5940-646c-4157-9305-9f044de4c036",
+      "result_id": "c1d567a2-9709-4e58-8fa3-d508df990971"
+    },
+    {
+      "claim_id": "94e088a5-1ada-4d38-8053-22c458894669",
+      "result_id": "c1d567a2-9709-4e58-8fa3-d508df990971"
+    },
+    {
+      "claim_id": "73b16528-537d-4279-8809-bd66be1ed58a",
+      "result_id": "c1d567a2-9709-4e58-8fa3-d508df990971"
+    },
+    {
+      "claim_id": "8f327785-fad8-4900-89c5-68cb044562ac",
+      "result_id": "c1d567a2-9709-4e58-8fa3-d508df990971"
+    },
+    {
+      "claim_id": "a535614a-3cbc-4766-8f17-e64ef8466475",
+      "result_id": "c1d567a2-9709-4e58-8fa3-d508df990971"
+    },
+    {
+      "claim_id": "8ecb7ee4-1be0-4f31-b626-652832abbe2a",
+      "result_id": "c1d567a2-9709-4e58-8fa3-d508df990971"
+    },
+    {
+      "claim_id": "d1244ca5-dd4f-4edc-be59-5530b23121dc",
+      "result_id": "c1d567a2-9709-4e58-8fa3-d508df990971"
+    },
+    {
+      "claim_id": "c5d71d5f-905f-49bb-9347-48c27e11819e",
+      "result_id": "c1d567a2-9709-4e58-8fa3-d508df990971"
+    },
+    {
+      "claim_id": "e8d45105-de1d-4c52-addf-4144e436ecd8",
+      "result_id": "c1d567a2-9709-4e58-8fa3-d508df990971"
+    },
+    {
+      "claim_id": "c8d402ce-8eca-4458-9bdb-bb2ae363ab09",
+      "result_id": "3e29b0da-1fd4-470c-a63f-4ac84849e102"
+    },
+    {
+      "claim_id": "7565652f-06cc-496b-b137-c59e7229a087",
+      "result_id": "3e29b0da-1fd4-470c-a63f-4ac84849e102"
+    },
+    {
+      "claim_id": "22c8f131-e1d7-4ecc-a827-148d3b93f73b",
+      "result_id": "3e29b0da-1fd4-470c-a63f-4ac84849e102"
+    },
+    {
+      "claim_id": "bd1e872b-8efc-499c-899b-c8c16a8dff46",
+      "result_id": "3e29b0da-1fd4-470c-a63f-4ac84849e102"
+    },
+    {
+      "claim_id": "a109888d-cce3-4068-8db5-e5134ae55e26",
+      "result_id": "3e29b0da-1fd4-470c-a63f-4ac84849e102"
+    },
+    {
+      "claim_id": "12a4fed7-e1ea-4c1c-80f2-37c315a50106",
+      "result_id": "3e29b0da-1fd4-470c-a63f-4ac84849e102"
+    },
+    {
+      "claim_id": "095af358-167c-42ef-b9f2-e2c809f75e2f",
+      "result_id": "3e29b0da-1fd4-470c-a63f-4ac84849e102"
+    },
+    {
+      "claim_id": "add19efb-9eb0-4caf-ac1e-6c0c42013b87",
+      "result_id": "3e29b0da-1fd4-470c-a63f-4ac84849e102"
+    },
+    {
+      "claim_id": "c51bad5f-864b-4fc3-9c8c-55cbefb15f29",
+      "result_id": "3e29b0da-1fd4-470c-a63f-4ac84849e102"
+    },
+    {
+      "claim_id": "073cdde3-07e4-49cd-b609-4c8918acc321",
+      "result_id": "3e29b0da-1fd4-470c-a63f-4ac84849e102"
+    },
+    {
+      "claim_id": "105df662-f7f0-40db-a383-1519ee044046",
+      "result_id": "75f66ab2-f3c3-43d3-95b1-495b962158e3"
+    },
+    {
+      "claim_id": "7a4a1101-1561-46ad-8fd1-6eb8b865acf3",
+      "result_id": "75f66ab2-f3c3-43d3-95b1-495b962158e3"
+    },
+    {
+      "claim_id": "e00a7bc7-a4d5-473e-8219-6f664464d945",
+      "result_id": "75f66ab2-f3c3-43d3-95b1-495b962158e3"
+    },
+    {
+      "claim_id": "83fcab0f-3893-4deb-a8e1-6e887db0f88f",
+      "result_id": "75f66ab2-f3c3-43d3-95b1-495b962158e3"
+    },
+    {
+      "claim_id": "fcbb2372-200c-495d-8465-908876c4aee2",
+      "result_id": "75f66ab2-f3c3-43d3-95b1-495b962158e3"
+    },
+    {
+      "claim_id": "825508bc-b615-46b7-aff1-019545301fe3",
+      "result_id": "75f66ab2-f3c3-43d3-95b1-495b962158e3"
+    },
+    {
+      "claim_id": "8522bd46-99b9-410e-aa2f-336e1c2a8464",
+      "result_id": "75f66ab2-f3c3-43d3-95b1-495b962158e3"
+    },
+    {
+      "claim_id": "15a9b685-452d-4d6e-bcc1-3462def252ce",
+      "result_id": "75f66ab2-f3c3-43d3-95b1-495b962158e3"
+    },
+    {
+      "claim_id": "c8bffd8f-76cd-47b2-bd98-0534f70c9c54",
+      "result_id": "7265af50-ffce-46aa-834e-4f24d28f4259"
+    },
+    {
+      "claim_id": "7e1e8f05-c754-46bf-9831-449670e1a023",
+      "result_id": "7265af50-ffce-46aa-834e-4f24d28f4259"
+    },
+    {
+      "claim_id": "ea83781e-5851-4838-bb67-fdf759734c32",
+      "result_id": "7265af50-ffce-46aa-834e-4f24d28f4259"
+    },
+    {
+      "claim_id": "a6431eff-0b9c-4cc7-bf12-d8cfe0015885",
+      "result_id": "7265af50-ffce-46aa-834e-4f24d28f4259"
+    },
+    {
+      "claim_id": "2bb30dba-1ff4-426e-ba50-9b5b14f69572",
+      "result_id": "7265af50-ffce-46aa-834e-4f24d28f4259"
+    },
+    {
+      "claim_id": "30f73c98-2f8b-426a-b751-265b8f441560",
+      "result_id": "7265af50-ffce-46aa-834e-4f24d28f4259"
+    },
+    {
+      "claim_id": "cc2b21f7-8315-45ab-8489-885cfc95ebff",
+      "result_id": "7265af50-ffce-46aa-834e-4f24d28f4259"
+    },
+    {
+      "claim_id": "968b1bc6-6f1d-4e31-9bfc-02c8cf78f367",
+      "result_id": "7265af50-ffce-46aa-834e-4f24d28f4259"
+    },
+    {
+      "claim_id": "26e97c4d-96e1-4207-acd3-90def17b6cdc",
+      "result_id": "56c0709a-83ed-47e4-a743-e0a48ccd8496"
+    },
+    {
+      "claim_id": "60453a5f-7a87-4df9-86c5-dc41765741dd",
+      "result_id": "56c0709a-83ed-47e4-a743-e0a48ccd8496"
+    },
+    {
+      "claim_id": "2b488f6c-f5d1-4be3-a511-e6af644ef913",
+      "result_id": "56c0709a-83ed-47e4-a743-e0a48ccd8496"
+    },
+    {
+      "claim_id": "3a051af0-feca-4542-ad9a-2a6da507c6b2",
+      "result_id": "56c0709a-83ed-47e4-a743-e0a48ccd8496"
+    },
+    {
+      "claim_id": "e0f33128-d487-48f5-91e4-66878db4c1e6",
+      "result_id": "56c0709a-83ed-47e4-a743-e0a48ccd8496"
+    },
+    {
+      "claim_id": "1e936815-99af-4674-916f-a8a14066b1c9",
+      "result_id": "56c0709a-83ed-47e4-a743-e0a48ccd8496"
+    },
+    {
+      "claim_id": "b8f0fd2f-4384-47b7-91f8-a7934c3da18c",
+      "result_id": "56c0709a-83ed-47e4-a743-e0a48ccd8496"
+    },
+    {
+      "claim_id": "f4dfc440-225d-4fc7-bdd0-138d8c2394a6",
+      "result_id": "d8e878fc-5afa-4223-90dd-d8de3c941f81"
+    },
+    {
+      "claim_id": "e33677b5-00ee-4e8e-b53d-8032f6e198f3",
+      "result_id": "d8e878fc-5afa-4223-90dd-d8de3c941f81"
+    },
+    {
+      "claim_id": "ab15f441-d841-47c6-ab4f-8fdb0b197436",
+      "result_id": "d8e878fc-5afa-4223-90dd-d8de3c941f81"
+    },
+    {
+      "claim_id": "dbfe6f21-255c-4d8f-b26a-88268d99f703",
+      "result_id": "d8e878fc-5afa-4223-90dd-d8de3c941f81"
+    },
+    {
+      "claim_id": "63c7c2ca-0751-4f12-83d4-45a569e37844",
+      "result_id": "d8e878fc-5afa-4223-90dd-d8de3c941f81"
+    },
+    {
+      "claim_id": "05284954-3812-425c-a5fd-b89c8a54c4b8",
+      "result_id": "d8e878fc-5afa-4223-90dd-d8de3c941f81"
+    },
+    {
+      "claim_id": "bb8ef0b8-685f-4e80-a91b-7a902dda6cbb",
+      "result_id": "d8e878fc-5afa-4223-90dd-d8de3c941f81"
+    },
+    {
+      "claim_id": "8500a870-3067-4fd1-9ab9-2b99dcffa1d9",
+      "result_id": "d8e878fc-5afa-4223-90dd-d8de3c941f81"
+    },
+    {
+      "claim_id": "dc0f85c3-ae75-4c75-bbc2-c580b14439bc",
+      "result_id": "6aef3601-7ce9-4af7-be9b-f6312e42909d"
+    },
+    {
+      "claim_id": "6f46c156-0944-4d4d-9aeb-1b2f6fb0486c",
+      "result_id": "6aef3601-7ce9-4af7-be9b-f6312e42909d"
+    },
+    {
+      "claim_id": "df675ffe-aa65-44b8-8ebb-4f79050e6678",
+      "result_id": "6aef3601-7ce9-4af7-be9b-f6312e42909d"
+    },
+    {
+      "claim_id": "8ce457ee-4db9-4237-b36a-eeb4dbf0ecee",
+      "result_id": "5472c5d0-447e-4935-8115-3939ac80dba7"
+    },
+    {
+      "claim_id": "91e08a37-e7a7-49c9-a3c9-9805e6aaf408",
+      "result_id": "13a359b2-45f4-4f0b-af21-b29cc9f78600"
+    },
+    {
+      "claim_id": "6ffb54bb-a855-4e3f-9b50-2e46251cd7e2",
+      "result_id": "13a359b2-45f4-4f0b-af21-b29cc9f78600"
+    },
+    {
+      "claim_id": "3fff1619-45e7-43ac-8e21-ed343d58fc81",
+      "result_id": "13a359b2-45f4-4f0b-af21-b29cc9f78600"
+    },
+    {
+      "claim_id": "a0cdbcc4-b8a9-4795-8ac4-13ed2a7b90d9",
+      "result_id": "13a359b2-45f4-4f0b-af21-b29cc9f78600"
+    },
+    {
+      "claim_id": "34d5bfca-a7d0-4e5e-9cc0-d598edafa390",
+      "result_id": "13a359b2-45f4-4f0b-af21-b29cc9f78600"
+    },
+    {
+      "claim_id": "db9a80e0-335b-4bbb-9bce-edf40258a5a4",
+      "result_id": "13a359b2-45f4-4f0b-af21-b29cc9f78600"
+    },
+    {
+      "claim_id": "e661ae43-30d1-4b8b-b66f-f7b10693ad3e",
+      "result_id": "176f235a-cce3-4c58-a175-3167c74c583d"
+    },
+    {
+      "claim_id": "079f04e6-47c8-423b-802e-87e69c97f267",
+      "result_id": "176f235a-cce3-4c58-a175-3167c74c583d"
+    },
+    {
+      "claim_id": "85dfe966-4336-4313-87db-f25d0177d271",
+      "result_id": "176f235a-cce3-4c58-a175-3167c74c583d"
+    },
+    {
+      "claim_id": "e9f523c5-3758-42fe-b46b-de0edc33a5c2",
+      "result_id": "176f235a-cce3-4c58-a175-3167c74c583d"
+    },
+    {
+      "claim_id": "ea15cbe9-1d47-4aa7-bfae-6509cef11bfc",
+      "result_id": "176f235a-cce3-4c58-a175-3167c74c583d"
+    },
+    {
+      "claim_id": "65602d39-583e-465b-a4bd-eff38a960c7a",
+      "result_id": "176f235a-cce3-4c58-a175-3167c74c583d"
+    },
+    {
+      "claim_id": "d4212f99-7bf8-4afc-97e0-2b07436eb9f2",
+      "result_id": "176f235a-cce3-4c58-a175-3167c74c583d"
+    },
+    {
+      "claim_id": "ba14598f-6576-4af1-a0f3-36784687e8ce",
+      "result_id": "176f235a-cce3-4c58-a175-3167c74c583d"
+    },
+    {
+      "claim_id": "937318f4-c58e-49f5-ae0b-4d7dc37864bd",
+      "result_id": "176f235a-cce3-4c58-a175-3167c74c583d"
+    },
+    {
+      "claim_id": "546fd32a-4dc6-44ee-b222-f94963d9db54",
+      "result_id": "176f235a-cce3-4c58-a175-3167c74c583d"
+    },
+    {
+      "claim_id": "7f0799cf-0810-4f7e-90ba-09a6bf24d715",
+      "result_id": "176f235a-cce3-4c58-a175-3167c74c583d"
+    },
+    {
+      "claim_id": "1962a551-6ee2-4380-b303-73f0a42bd456",
+      "result_id": "176f235a-cce3-4c58-a175-3167c74c583d"
+    },
+    {
+      "claim_id": "85c6182c-1c01-46e6-8692-b84505024677",
+      "result_id": "176f235a-cce3-4c58-a175-3167c74c583d"
+    },
+    {
+      "claim_id": "08dfafb0-b533-46d8-8905-a0efe60c305a",
+      "result_id": "176f235a-cce3-4c58-a175-3167c74c583d"
+    },
+    {
+      "claim_id": "e580fcf4-05af-451d-9fd3-0b0cc64088ab",
+      "result_id": "9322011c-9ffb-4f2a-9c67-55271c74c4ab"
+    },
+    {
+      "claim_id": "3cd29e38-7a8e-4e84-924e-942d3c1928aa",
+      "result_id": "de3fa7f1-b26f-4667-8f49-7452ed96a2e2"
+    },
+    {
+      "claim_id": "720661c1-8005-4425-80df-2aaea5ce41de",
+      "result_id": "de3fa7f1-b26f-4667-8f49-7452ed96a2e2"
+    },
+    {
+      "claim_id": "92c185bd-84c7-4003-8598-a9cb12affd74",
+      "result_id": "68cc4d6e-b835-4979-bed3-1b4c3de5a0a4"
+    },
+    {
+      "claim_id": "4f4c97b2-df1b-4352-b75a-65e85711daec",
+      "result_id": "68cc4d6e-b835-4979-bed3-1b4c3de5a0a4"
+    },
+    {
+      "claim_id": "a909eae9-f5af-4314-a7e3-f6ddfe0d79c2",
+      "result_id": "68cc4d6e-b835-4979-bed3-1b4c3de5a0a4"
+    },
+    {
+      "claim_id": "1528f4c5-e854-42e2-a1ef-b883d2aaad94",
+      "result_id": "4227d5ab-fb60-436a-9727-f5b3cba536ef"
+    },
+    {
+      "claim_id": "9241fddb-e6ec-41d2-9ae8-deb0574d4a35",
+      "result_id": "a2423438-2726-4f6e-ac56-4d268f688d65"
+    }
+  ],
+  "comparisons": []
+}

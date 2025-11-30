@@ -1,0 +1,363 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The study generated high-quality ChIP-seq datasets using FLAG-tagged Tat in Jurkat CD4+ T cells expressing physiologic levels of Tat. Tat binding is heavily enriched at promoters (24%, p-value 3.4\u00d710^-324) and 5'-UTR (1.2%, p-value 5.3\u00d710^-193) relative to genomic proportions, with additional binding at introns (36.4%) and intergenic domains (35%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 describe the experimental system and genome-wide distribution of Tat binding. The use of FLAG-tagged Tat with GFP control (C31, C33), physiologic expression levels (C32), validation with mutants (C34), and statistical analysis of genomic distribution (C35, C36) provide strong converging evidence for the quality and specificity of the ChIP-seq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Integration of ChIP-seq and RNA-seq identified 456 direct Tat target genes (244 TSG and 212 TDG). Inactivating mutations that abolish Tat recruitment also impair gene expression changes, and RNA-level changes are reflected at the protein level (e.g., CD69).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 establish direct Tat targets through integration of binding and expression data. The use of mutants showing correlated loss of binding and expression (C38), protein-level validation (C40), and statistical thresholds (C37) provide strong evidence that these are bona fide direct targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Tat is equally recruited to promoters (39%) and intragenic domains (39%) at TSG, whereas the majority of occupied domains at TDG are at promoters (61%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 describe differential genomic distribution patterns between TSG and TDG based on ChIP-seq data analysis. The percentages are clearly stated and based on computational analysis of the binding data, providing quantitative support for distinct regulatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Selected TSG and TDG are also modulated during HIV infection of Jurkat T cells and primary TCM cells, supporting that cellular reprogramming by Tat is functional in the context of infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 validate the ectopic Tat expression model by showing similar gene expression changes during actual HIV infection in both cell lines and primary cells. The qRT-PCR data from infected cells (C43, C44) demonstrate that the findings are not artifacts of the experimental system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Gene ontology and network analysis reveal that TSG are enriched in immune system activation, T-cell receptor pathway, and cell cycle, while TDG are enriched in negative regulation of cell aging, myeloid cell differentiation, and DNA/RNA biogenesis processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 describe functional annotation analysis of direct targets. The gene ontology and network analyses (C45-C48) are standard bioinformatic approaches applied to the identified gene sets, providing biological context for the molecular findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Specific TSG like CD69 play central roles in T-cell stimulation and differentiation, while ATM is important for HIV replication as ATM inhibition suppresses both wild-type and drug-resistant HIV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 provide specific examples of functionally important TSG. These are supported by citations to published literature (C49, C51) and established knowledge about HIV biology (C50), contextualizing the identified targets within known viral biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C55",
+      "C56"
+    ],
+    "result": "Class I TSG experience large increases in H3K4me3 density (2-10 fold) at promoter-proximal regions in the presence of Tat, with a positive correlation (R\u00b2=0.764) between H3K4me3 and transcript levels. Class II TSG show much lower correlation (R\u00b2=0.177).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 establish distinct chromatin signatures for two classes of TSG based on H3K4me3 ChIP-seq data. The fold-change measurements (C52), identification of novel TSS (C53), and correlation analyses (C55, C56) provide quantitative evidence for different regulatory mechanisms at initiation vs. elongation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Both class I and class II TSG show evidence of transcription elongation based on increases in H3K79me3 (~6.2-fold) and H3K36me3 (~5.3-fold) in gene bodies, with class II TSG showing increased H3K79me3 (100%) and H3K36me3 (~82%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 demonstrate elongation signatures using ChIP-seq of elongation-associated histone marks. The fold-change measurements (C58, C59) and percentages (C60) are based on genome-wide ChIP-seq data, providing strong evidence for Tat's role in promoting elongation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Tat interacts with chromatin-modifying enzymes Dot1L and SetD2, recruits them to target genes like CD69, and knockdown of these enzymes abolishes Tat-mediated transcription activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 establish a mechanistic link between Tat and chromatin modification. The affinity purification data (C61), ChIP-qPCR showing recruitment (C62), and functional validation by RNAi (C63) provide converging evidence for the role of these enzymes in Tat function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Tat promotes Pol II recruitment at both Tat binding sites and promoter-proximal regions of class I TSG but not class II TSG. At class II TSG, Tat induces Pol II elongation by recruiting P-TEFb and increases Pol II density throughout gene bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 distinguish Pol II recruitment patterns between gene classes using ChIP-seq and ChIP-qPCR. The differential effects on promoter vs. gene body Pol II (C64-C67) are consistent with the chromatin signature data and support distinct mechanisms of activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Promoters bound by Tat show high H3K4me3/low H3K27Ac, while intragenic sites show the enhancer signature (high H3K27Ac/low H3K4me3). At class I TSG, Tat increases H3K27Ac at intragenic sites by ~2-10 fold, correlating with p300 recruitment and showing sharp correlation (R\u00b2=0.853) with gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 identify intragenic Tat binding sites as enhancers based on chromatin signatures. The histone modification patterns (C68-C70), p300 recruitment (C71), and strong correlation with expression (C72) provide multiple lines of evidence for enhancer function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "At class I TSG like PPM1H, Tat promotes strong association between intragenic sites and promoters through gene looping, which occurs even in the absence of eRNA synthesis. At class II TSG, Tat does not modulate gene looping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 demonstrate Tat-mediated chromatin looping using 3C assays. The requirement for functional Tat (C73), independence from eRNA synthesis shown by flavopiridol treatment (C74), and lack of effect at class II genes (C75) provide mechanistic insights into enhancer-promoter communication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Using a modified traveling ratio (mTR) algorithm, class II TSG show decreased mTR in the presence of Tat. Class I TSG show profound increases in both paused and traveling Pol II, while class II TSG show higher evidence of elongation (increased traveling Pol II).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 apply a custom algorithm to distinguish paused from elongating Pol II. The development and application of mTR to account for intragenic pausing (C76-C78) provides quantitative support for differential regulation at initiation vs. elongation, though the algorithm itself is a methodological innovation that requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Class I TDG experience sharp decreases in H3K4me3 (~4.2-fold) and Pol II, with Tat blocking PIC assembly at promoters. Class II TDG show Tat blocking Pol II elongation by dismissing P-TEFb without affecting PIC assembly, with reduced H3K79me3 and H3K36me3 in gene bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 establish mechanisms of repression using chromatin and Pol II ChIP data. The differential effects on initiation (C79-C80) vs. elongation (C81) factors, supported by changes in elongation marks (C82-C83), demonstrate that Tat can repress genes through distinct mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Tat blocks Pol II recruitment at both Tat binding sites and promoter-proximal regions of class I TDG but not class II TDG. Metagene analysis shows Tat reduces Pol II density at promoters of class I TDG and throughout gene bodies of class II TDG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 demonstrate Pol II distribution changes underlying repression using ChIP-seq. The differential effects on promoter vs. gene body Pol II (C84-C87) parallel the activation mechanisms and support the model of distinct repression mechanisms at initiation vs. elongation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Only ~20% of TSG and TDG contain TAR-like motifs within 10 Kb of Tat sites, and only ~1% contain TAR-like motifs within 0.1 Kb. There is no significant presence of TAR-like motifs at or near Tat peaks, suggesting Tat recruitment does not rely on TAR mimics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 rule out TAR-like RNA structures as the primary recruitment mechanism through computational analysis. The low percentages at different distance thresholds (C88-C89) and statistical analysis (C90) provide strong negative evidence against the TAR-mimic hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "MEME analysis reveals enrichment of ETS1 and RUNX1 motifs at Tat peaks in both TSG and TDG, with different motif variants. 73% of TSG and 80% of TDG contain ETS1 ChIP-seq peaks within 100 bp of Tat peaks. Overall, 52% of Tat peaks (3203/6117) harbor ETS1 binding within 100 bp (p-value 1\u00d710^-8536).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 identify ETS1 as a key recruitment factor through motif analysis and ChIP-seq overlap. The high percentages of co-occupancy (C94-C96), highly significant p-value (C96), and motif differences between TSG/TDG (C97) provide strong computational evidence for ETS1-mediated recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Cellular fractionation shows Tat is present in both nucleoplasm and chromatin-bound fractions. The interaction between Tat and chromatin is primarily dictated by protein-protein interactions, with only a minor RNA-dependent fraction. RNase treatment does not affect Tat binding to target gene promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 demonstrate protein-protein interactions as the primary recruitment mechanism through biochemical fractionation and RNase treatment. The salt extraction data (C98-C99) and ChIP-qPCR with RNase (C100) provide converging biochemical evidence supporting protein-mediated rather than RNA-mediated recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Tat, but not the C22A mutant or GFP, interacts with endogenous ETS1. Tat and ETS1 co-occupy the CD69 promoter but not gene body, and Tat binding does not alter ETS1 occupancy levels. Tat also binds some genes lacking ETS1 motifs like CD1E.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 demonstrate physical interaction and co-occupancy of Tat with ETS1. The affinity purification data (C102), ChIP-qPCR showing co-occupancy (C103-C104), and identification of ETS1-independent targets (C105) provide direct evidence for ETS1-mediated recruitment while acknowledging alternative mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "ETS1 knockdown diminishes ETS1 density (~6-fold) at the CD69 promoter with concomitant loss of Tat signal (~6-fold), but does not alter Tat recruitment to the CD1E promoter. ETS1 knockdown interferes with Tat-mediated gene stimulation for both class I and II TSG. Tat is recruited to chromatin through interaction with ETS1 to reprogram cellular transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 provide functional validation of ETS1-mediated recruitment through RNAi experiments. The correlated loss of ETS1 and Tat binding (C106), specificity to ETS1-dependent genes (C107), functional effects on expression (C108), and integration of multiple lines of evidence (C109) strongly support the recruitment mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background knowledge establishing that HIV Tat facilitates viral transcription through TAR binding, controls multiple transcription stages, and appears to modulate cellular gene expression, though comprehensive mechanisms remain poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C22 provide established background knowledge supported by citations. These claims set the context for the study by describing known Tat functions (C1, C8-C14), gaps in knowledge (C2, C22), and prior evidence of cellular effects (C15-C21), all appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The study's major conclusions: Tat uses master transcriptional regulators at promoters and enhancers to activate and repress genes with common functional annotations, precisely controlling Pol II recruitment and pause release. This represents viral optimization through a multitasking protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C24-C30 represent the study's main conclusions, which are well-supported by the extensive ChIP-seq, RNA-seq, and functional data presented throughout. The integration of binding data, expression changes, chromatin signatures, and mechanistic studies (covered in other result groups) provides strong support for these overarching conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "The study used a technically improved ChIP-seq approach compared to previous studies to analyze genome-wide Tat distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 describes the methodological approach. The comparison with previous studies (particularly Marban et al.) showing superior data quality, use of FLAG-tagged protein, and appropriate controls support this claim of technical improvement.",
+    "result_type": "MINOR"
+  }
+]

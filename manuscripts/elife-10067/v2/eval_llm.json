@@ -1,0 +1,365 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "ER stress induced by thapsigargin treatment in MIN6 cells and pancreatic islets leads to increased ROS, decreased GSH/GSSG ratios, transcriptional upregulation of CTH and Slc7a11, increased glutamate/cystine flux, and elevated H2S levels during the chronic phase of stress response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C8 are supported by experimental data shown in multiple figures (Figure 1B-E and supplements). The measurements of ROS, GSH/GSSG ratios, gene expression, transporter activity, and H2S levels are directly demonstrated with appropriate controls and time courses. The findings are consistent across MIN6 cells, mouse islets, and human islets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "H2S increases GAPDH catalytic activity by sulfhydration of Cys150, reversing the inhibitory effects of oxidative modifications (H2O2 treatment or glutathionylation). This increase in activity is independent of GAPDH protein levels and is directly linked to H2S production via CTH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C20 are well-supported by multiple lines of evidence including in vivo activity assays in MIN6 cells (Figure 1F), in vitro experiments with recombinant GAPDH (Figures 1G-H), mass spectrometry confirmation of Cys150 modification (Figure 1\u2014figure supplement 5), and inhibitor studies with PAG (Figure 1I). The data demonstrate both the protective effect of H2S and the specificity of Cys150 modification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "ATF4 is a master regulator of protein sulfhydration during ER stress in pancreatic \u03b2 cells, controlling expression of CTH, Slc7a11, and Ero1\u03b1. ATF4 knockdown inhibits H2S synthesis and CTH induction during stress, while ATF4 overexpression increases CTH, Ero1\u03b1, H2S synthesis, GAPDH activity, GSH levels, and glutamate/cystine exchanger activity even in the absence of stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C35 are supported by comprehensive gain-of-function and loss-of-function experiments shown in Figure 2B-G. The knockdown and overexpression studies demonstrate ATF4's regulatory role, with consistent effects on multiple downstream targets. The data include appropriate controls and multiple readouts (protein levels, enzyme activities, metabolite levels).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The BTA (Biotin Thiol Assay) method enables quantitative assessment of protein sulfhydration and is superior to existing methods like BST. Using BTA, approximately 1000 sulfhydrated cysteine-containing peptides were identified in Tg-treated MIN6 cells, and 820 peptides on over 500 proteins were quantified in ATF4-overexpressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 are supported by extensive method validation (Figure 2\u2014figure supplements 2-8) and quantitative proteomics data (Figure 2\u2014figure supplement 9, Figure 3). The method's specificity is demonstrated through concentration-dependent labeling, DTT sensitivity, and validation with known targets. However, the claim of superiority over BST (C37) is somewhat overstated as direct comparative data are limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Modified BTA with tryptic digestion identified over 1000 novel sulfhydrated cysteines in Tg-treated MIN6 cells corresponding to about 820 proteins. GAPDH Cys150 was highly enriched compared to Cys245, confirming it as the primary H2S-modified site. PHGDH was identified as a novel sulfhydration target, and CTH knockdown decreased sulfhydration of both GAPDH and PHGDH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 are supported by proteomics data (Figure 2\u2014figure supplement 9) and validation experiments (Figures 2\u2014figure supplements 10-11). The enrichment of Cys150 over Cys245 in GAPDH is consistent with prior mutagenesis studies. The CTH knockdown experiment provides important validation that identified proteins are bona fide sulfhydration targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Quantitative sulfhydrome analysis using isotope labeling identified 834 cysteine-containing peptides in ATF4-expressing MIN6 cells, with 771 showing pair-labeling (average H/L ratio 2.6) and 348 (45%) displaying high ratios (H/L>2). Bioinformatics analysis revealed that 28% of peptides localized to known functional domains, 4.2% to active sites (significantly higher than the 0.2% in Uniprot), and 2.4% to nucleotide binding domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C85 are supported by comprehensive proteomics data (Figure 3B-C, source data) and bioinformatics analysis. The quantitative approach using isotope labeling is well-designed. The enrichment of active site cysteines (4.2% vs 0.2% in Uniprot) is a significant finding, though the comparison assumes the Uniprot annotation is complete. The functional domain analysis provides important context for understanding sulfhydration's biological significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Structure and sequence analysis revealed that sulfhydration is favored by specific structural features: an arginine residue at the +1 position (enriched in peptides with H/L>2) and positioning at N-terminal alpha-helices with high surface accessibility. These features stabilize sulfhydrated cysteine thiolates through arginine interactions and alpha-helix dipoles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C93-C96 are supported by motif analysis (Figure 3\u2014figure supplement 4) and structural analysis. The lack of a consensus motif for all peptides (C93) but enrichment of arginine at +1 for high H/L ratio peptides (C94) is an important distinction. The structural analysis showing N-terminal alpha-helix positioning and high accessibility (C95) is consistent with prior literature on reactive cysteines (C96).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Pathway analysis revealed that H2S-mediated sulfhydration is enriched in proteins involved in energy metabolism, particularly glycolysis and mitochondrial oxidative metabolism. ATF4-overexpressing MIN6 cells showed higher glycolytic rates and increased activity of the rate-limiting glycolytic enzyme PKM2 in a CTH-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C97-C99 are supported by pathway analysis (Figure 3E, Figure 3\u2014figure supplement 5) and functional validation (Figure 4\u2014figure supplements 1-2). The enrichment in metabolic pathways is clearly demonstrated. The Seahorse data (C98) and PKM2 activity assays (C99) provide functional validation of the pathway analysis predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Metabolic flux analysis using 13C-glucose labeling showed that Tg treatment significantly increased glycolytic flux (3PG, lactate, alanine) while decreasing TCA cycle flux. Despite increased glycolytic flux, lactate levels decreased, suggesting high pyruvate consumption for OAA generation. PAG treatment reversed these effects, preventing the glycolytic increase and restoring TCA cycle flux. PKM2 activity increased with Tg treatment, and this increase was inhibited by PAG without affecting protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C68 are strongly supported by comprehensive metabolic flux data (Figure 4A-C, Supplementary file 1) and enzyme activity assays (Figure 4\u2014figure supplement 3). The use of stable isotope labeling provides direct measurement of metabolic flux. The PAG experiments establish causality by linking the metabolic changes to H2S production. The apparent paradox of decreased lactate despite increased glycolytic flux (C60-C61) is appropriately interpreted as increased pyruvate consumption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "H2S promotes aerobic glycolysis with decreased mitochondrial oxidative phosphorylation during ER stress in \u03b2 cells. Pyruvate carboxylase was found to be sulfhydrated. The authors propose this metabolic shift is an adaptive mechanism for \u03b2 cell survival during chronic ER stress, analogous to the Warburg effect, providing ATP and nutrients while limiting mitochondrial ROS and apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46-C47 are supported by the metabolic flux data. However, claims C53-C55 are largely speculative interpretations based on analogy to the Warburg effect. While the metabolic shift is clearly demonstrated, the proposed adaptive benefits (maintaining ER ATP, limiting mitochondrial ROS/apoptosis) are not directly tested. The analogy to cancer metabolism is interesting but requires additional experiments to validate the proposed mechanisms and demonstrate actual survival benefits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Database queries revealed that 11% of sulfhydrated peptides (RedoxDB) and 36% (GPS-SNO) corresponded to cysteines known to be modified by nitrosylation or glutathionylation, indicating that protein sulfhydration can potentially regulate a broad range of biological processes beyond enzyme catalysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by database query results (Figure 3B, Figure 3\u2014figure supplement 2). The overlap with known redox-modified cysteines suggests these sites are generally reactive to oxidative modifications. The conclusion that sulfhydration can regulate diverse processes (C90) is reasonable given the functional domain analysis, though the extent of functional regulation remains to be experimentally validated for most targets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Sulfhydrated peptides do not correlate with protein abundance in the proteome, supporting that lower concentrations of NM-biotin labeling reveal cysteine reactivity rather than protein abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by comparison of sulfhydrome and proteome data (Figure 3\u2014figure supplements 6-7, source data 2). This is an important validation that the BTA method is detecting reactive cysteines rather than simply abundant proteins. The lack of correlation strengthens the interpretation that the method is capturing functionally relevant modifications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Different cysteines on the same protein exhibited remarkably different H/L ratios, indicating differential reactivity with H2S. For example, PHGDH Cys281 had an H/L ratio of 5.8 while Cys254 had a ratio of 17.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 are supported by the quantitative data (Figure 3\u2014figure supplement 3). This finding is important as it demonstrates site-specific sulfhydration rather than non-specific modification. The differential reactivity suggests that local protein environment influences sulfhydration susceptibility, consistent with the structural motif analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "MIN6 pancreatic \u03b2 cells are very susceptible to ER stress based on prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is supported by citations to previous work (Guan et al., 2014; Krokowski et al., 2013). This is background information establishing the rationale for using MIN6 cells as a model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Slc7a11 mediates cystine/glutamate exchange, and imported cystine is reduced to cysteine for GSH and H2S synthesis. Both increased substrate uptake and increased CTH levels contribute to elevated H2S during ER stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 are established biochemical knowledge. Claim C11 is a reasonable inference from the coordinated upregulation of Slc7a11 and CTH (C7-C8), though the relative contributions of substrate availability versus enzyme levels are not quantitatively determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C14",
+      "C38",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Prior work established that GAPDH Cys150 is catalytically inactive when oxidatively modified (nitrosylation, glutathionylation) but sulfhydration restores/increases activity. GAPDH was previously identified as a sulfhydration target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C38, C110-C112 are supported by citations to previous work (Mustafa et al., 2009; Paul and Snyder, 2012). This provides important context for the current study's focus on GAPDH as a model sulfhydration target.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C103",
+      "C113",
+      "C122"
+    ],
+    "result": "The authors hypothesize that H2S-mediated protein sulfhydration during ER stress is part of the integrated stress response (ISR) and may reprogram cellular metabolism, with H2S serving as a biological switch for protein function in response to redox homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C103, C113, C122 represent the central hypothesis of the study. While these are speculative at the outset (C122 is the initial hypothesis), the subsequent experimental data (ATF4 regulation, sulfhydrome analysis, metabolic flux studies) provide substantial support for this model. The hypothesis is well-supported by the totality of the evidence, though some mechanistic details remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Abnormal H2S metabolism occurs in various diseases through deregulation of H2S-generating enzymes. In the current study, ER stress induced elevated CTH but not CBS levels. Deregulated cysteine oxidative modification by H2S may contribute to disease development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C56 is supported by citation (Wallace and Wang, 2015). Claim C57 is supported by the experimental data showing selective CTH induction. However, claim C58 is speculative and not directly tested. While the study demonstrates metabolic reprogramming via sulfhydration, the connection to disease pathogenesis requires additional investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The metabolic switch from mitochondrial oxidative phosphorylation to glycolysis is a signature of hypoxic conditions and the Warburg effect in cancer cells, providing advantages for cell survival through rapid ATP production and increased biosynthesis of anabolic molecules and reducing power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are statements of established knowledge about hypoxia and cancer metabolism, supported by citation (Vander Heiden et al., 2009). This provides context for interpreting the metabolic changes observed in ER-stressed \u03b2 cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Background on cysteine modifications, sulfhydration mechanism, ER stress, ATF4 function, and CTH as an H2S-producing enzyme regulated by ATF4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C121 are statements of established knowledge supported by appropriate citations. These provide essential background for understanding the study's rationale and context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Sulfhydration of nucleotide binding domains suggests potential for regulation of gene expression by H2S-modified proteins. NF-\u03baB RelA transcription factor was previously shown to be sulfhydrated in its DNA-binding domain, increasing DNA-binding activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C86 is speculative based on the finding that 2.4% of sulfhydrated peptides are in nucleotide binding domains (C85). Claim C87 is supported by citation (Sen et al., 2012) and provides an example of transcriptional regulation by sulfhydration, though this protein was not found in the current dataset. The potential for gene expression regulation is plausible but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Summary statements from the abstract about the importance of sulfhydration, the wide range of biological functions affected, and the main findings in pancreatic \u03b2 cells during ER stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 are summary statements supported by the totality of the experimental evidence presented in the manuscript. These accurately reflect the study's major findings.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors developed a computational model of chromosome compaction using polymer simulations with specific parameters: monomers representing 600 bp (3 nucleosomes), persistence length of ~3 kb, chains of 50,000 monomers (30 Mb), 1000 condensins per chromosome with 30 kb spacing, processivity of 830 kb yielding ~100 kb average loop length, and soft-core potentials to simulate topoisomerase II activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15, C75-C78, C80-C81 describe the model parameters and computational implementation. These are clearly stated methodological choices supported by citations to prior work and experimental measurements. The parameters are internally consistent and appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C70",
+      "C72",
+      "C73"
+    ],
+    "result": "Loop extrusion by condensins and topoisomerase II-mediated strand passing convert globular interphase chromosomes into elongated prophase-like structures with 'noodle' morphology, linear genomic order, cylindrical shape with condensin cores, and geometric parameters (linear compaction ~5 kb/nm, radius ~300 nm) matching experimental observations of mid-prophase chromosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20, C70, C72-C73 demonstrate that simulations reproduce key morphological features of prophase chromosomes. The results are supported by simulation data (Figures 2, 2-supplement 1, Videos 2) and quantitative agreement with multiple experimental measurements cited from the literature. The cylindrical bottle-brush structure with condensin cores emerges naturally from the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C51",
+      "C52",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Chromosome compaction proceeds through two kinetic stages: a rapid 'loop formation stage' where condensins extrude loops until collision, followed by a slower 'maturation stage' where loops are reinforced by multiple condensins through exchange dynamics, with loops stabilized by condensin stacking persisting longer than individual condensin residence times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26, C51-C52, C67-C69 describe the biphasic compaction kinetics observed in simulations (Figure 2AB). The two-stage process is well-documented in the simulation data and consistent with experimental observations of prophase chromosome morphology changes. The mechanism of loop stabilization through condensin stacking is supported by prior modeling work (Goloborodko et al., 2015; Alipour and Marko, 2012).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Loop extrusion combined with topoisomerase II activity leads to spatial segregation and topological disentanglement of initially intertwined sister chromatids, with this process being highly reproducible across simulation replicates and robust to variations in chromatin fiber parameters and condensin size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 demonstrate sister chromatid segregation and disentanglement. The results are supported by simulation data showing increased inter-chromatid distance and reduced winding number (Figure 3A-C, Videos 3-5), with reproducibility demonstrated across 16 replicas and robustness shown through parameter variation studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C60"
+    ],
+    "result": "Condensin abundance significantly affects chromosome geometry in a non-monotonic manner: depletion causes systematic three-fold increase in diameter, while both five-fold increase and four-fold decrease in condensin abundance lead to approximately two-fold reduction in linear compaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33, C60 describe the effects of varying condensin abundance on chromosome morphology. The non-monotonic relationship is supported by simulation data (Figure 2-supplement 1, Video 6) and consistent with experimental literature. The mechanistic explanations for the non-monotonic behavior (excessive scaffold vs. gaps between loops) are reasonable interpretations of the simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Topoisomerase II is essential for rapid chromosome segregation and disentanglement, with reduction of topo II activity (increased crossing barrier) preventing disentanglement and segregation while having little effect on individual chromatid diameter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 demonstrate the role of topoisomerase II in the model. The results are supported by simulations with varied crossing barriers (Figure 3-supplement 1, Video 7) and consistent with prior theoretical work (Sikorav and Jannink, 1994) and experimental observations. The differential effect on segregation vs. compaction is clearly shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "When cohesins remain uncleaved on sister chromatids, compaction occurs but chromatids fail to segregate, consistent with experimental observations of cohesin removal interference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 test the role of cohesin in the model. The simulation results (Video 8) showing compaction without segregation when cohesins remain are consistent with experimental observations (Kueng et al., 2006; Gandhi et al., 2006), validating this aspect of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Loop extrusion creates a bottle-brush chromosome organization where excluded volume interactions and conformational entropy cause loops to repel each other, extend radially, stretch and stiffen the core maintaining linear order, and drive sister chromatid segregation by minimizing overlap of brush coronas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 provide the physical mechanism explaining simulation results. The bottle-brush model is well-established in polymer physics (cited literature), and the simulation data (Figure 4, Video 5) directly demonstrate that turning off excluded volume interactions abolishes both bottle-brush morphology and segregation, confirming the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Using experimentally measured condensin exchange rates (~200 s for condensin I in metaphase) and simulation parameters (100 kb loops, 30 kb condensin spacing), the model predicts maximal compaction should take ~5 exchange times or ~17 minutes, roughly agreeing with prophase duration in human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C53 makes a quantitative prediction about timing. However, the calculation assumes condensin II in prophase exchanges at the fast rate of condensin I in metaphase, which is explicitly stated as an assumption. The authors cite that condensin II metaphase exchange time is ~hours (Gerlich et al., 2006), creating uncertainty about whether the assumed rate is appropriate. The agreement with prophase duration may be fortuitous given this assumption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Gradual compaction through loop maturation may explain why chromosomes of cells arrested in metaphase continue shrinking for many hours after arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C54 is explicitly speculative ('may explain'). While the gradual compaction observed in simulations is well-supported, the connection to metaphase-arrested cells is a hypothesis rather than a tested prediction. The authors note condensin II metaphase exchange time is ~hours, making this plausible but unverified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C38",
+      "C47",
+      "C48",
+      "C61"
+    ],
+    "result": "Loop extrusion is sufficient to compact, segregate, and disentangle chromosomes from an open interphase state to a compacted, elongated prophase state, generating major features of chromosome reorganization observed during prophase including ~25-fold length reduction and cylindrical brush-like chromatid formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C38, C47-C48, C61 represent the main conclusions of the study. These summary claims are well-supported by the comprehensive simulation results demonstrating compaction (Figures 2), segregation and disentanglement (Figure 3), mechanistic understanding (Figure 4), and robustness across parameter variations. The claims appropriately synthesize the detailed findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C58",
+      "C59"
+    ],
+    "result": "Loop extrusion exclusively forms intra-chromosomal bridges without requiring specific interaction sites, making it robust to mutations and chromosome rearrangements and explaining how foreign chromatin segments can be reliably compacted by host mitotic machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C58-C59 describe key properties of the loop extrusion mechanism. The intra-chromosomal specificity is inherent to the model design (Figure 1A) and contrasts with random crosslinking models. The robustness to sequence and the explanation for cross-species chromatin compaction (supported by citations to Dietzel and Belmont, 2001; Hirano and Mitchison, 1991) are logical consequences of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The model has limitations: it does not fully capture later stages of mitosis, only describes condensin II action in prophase, and does not account for additional axial compaction mechanisms used in metaphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 explicitly state model limitations. These are appropriately acknowledged by the authors and represent honest assessment of the model's scope. The limitations are reasonable given the focus on prophase chromosome organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Loop extrusion may be a universal mechanism of genome folding, with cohesins sparsely bound during interphase extruding 50-70% of DNA into dynamic loops to form TADs, while condensins are more densely bound and processive in metaphase forming stable loop arrays, mediating functional interactions during interphase and compaction during mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C65 propose a broad hypothesis extending beyond the current work. While C62 is supported by citation to prior work (Fudenberg et al., 2015), claims C63-C65 are explicitly speculative ('we suggest'). The hypothesis is plausible and integrates multiple studies, but represents proposed future work rather than demonstrated results. The specific quantitative predictions (50-70% DNA in loops, density and processivity differences) lack direct supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The model does not rely on a connected scaffold, and DNA cleavage would result in disintegration of the entire structure, as observed experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 describes a key property of the model distinguishing it from scaffold-based models. The prediction that DNA cleavage causes disintegration is a logical consequence of the model design and is supported by experimental observations (Poirier and Marko, 2002).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Background knowledge establishes that eukaryotic chromosome compaction involves: elongated structures maintaining linear order, preferential intra-chromatid crosslinking, coincident compaction and segregation, topological disentanglement, essential roles for topoisomerase II and condensin, arrays of consecutive loops, and loop extrusion dynamics with sparse and dense regimes where loops are stabilized by multiple stacked condensins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C11 summarize established knowledge from the literature that motivates the study. These are appropriately cited background claims supported by multiple experimental and theoretical studies. They provide the foundation for the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C50",
+      "C71",
+      "C74"
+    ],
+    "result": "Loop extrusion mechanisms have been observed or proposed in other systems: SMC proteins in bacteria form intra-arm bridges leading to lengthwise compaction, condensin cores appear in mitotic chromosomes, and bottle-brush organization has been suggested for yeast centromeres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C71, C74 cite related findings from other systems that support the generality of loop extrusion mechanisms. These are appropriately cited observations from the literature (bacterial SMC proteins, condensin staining experiments, yeast centromere organization) that provide broader context for the model.",
+    "result_type": "MINOR"
+  }
+]

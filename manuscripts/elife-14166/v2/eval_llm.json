@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C34"
+    ],
+    "result": "At 50 \u00b5M ATP, U1 snRNP exhibits long-lived binding events (>11 min) consistent with formation of stalled B complex spliceosomes, whereas at 2 mM ATP, U1 binding is more transient and decreases over time as spliceosomes undergo activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 provide direct observational data showing distinct U1 binding behaviors at the two ATP concentrations, with quantitative dwell time analysis (C26) fitting a three-component model. The interpretation that long-lived U1 binding represents stalled B complexes (C27) is reasonable given prior biochemical studies, though the connection is inferential. The overall conclusion (C34) is well-supported by the combined U1 and NTC data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "At 50 \u00b5M ATP, NTC shows predominantly transient interactions with pre-mRNA molecules, with the long dwell time component representing only 6% of binding events compared to 46% at 2 mM ATP, indicating that NTC cannot stably bind B complex spliceosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 provide quantitative data from dwell time analysis showing dramatically reduced stable NTC binding at 50 \u00b5M ATP. The two-exponential fit (C31) with amplitude differences (C32) provides strong evidence. The conclusion that NTC cannot stably bind B complex (C33) is well-supported, though the small amount of transient binding (C30) suggests some weak interaction is possible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "U4 snRNP exhibits ATP-dependent binding dynamics: at 50 \u00b5M ATP, U4 shows both transient and long-lived (>13 min) binding consistent with stalled B complex formation, while at 2 mM ATP, U4 binding is predominantly transient with short lifetime components (~0.2 and ~2 min), consistent with rapid activation and U4 dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 provide direct observational and quantitative data from dwell time analysis. The tri-exponential fit at 50 \u00b5M ATP versus bi-exponential at 2 mM ATP (C39-C40) is well-documented. The interpretation that long-lived U4 binding represents stalled B complexes (C41) is reasonable but somewhat speculative. The inference about rapid activation at 2 mM ATP (C42) is logical given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Three-color CoSMoS experiments demonstrate that U4 and U5 predominantly arrive simultaneously on pre-mRNA molecules, confirming tri-snRNP binding, with higher coincidence at 50 \u00b5M ATP (79-85%) compared to 2 mM ATP (46-63%), likely reflecting differences in tri-snRNP abundance due to disruption during activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 provide direct quantitative observations from three-color experiments with appropriate controls (C45). The interpretation of simultaneous arrival as tri-snRNP binding is well-justified. The explanation for differences between ATP concentrations (C47) is reasonable, though it involves inference about extract composition. The cited prior work (C48) supports the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Following tri-snRNP binding, two major pathways are observed: at 2 mM ATP, 62% of events show U4 loss followed by U5 loss (consistent with activation and splicing), while 36% show simultaneous U4/U5 loss (consistent with tri-snRNP discard); at 50 \u00b5M ATP, 76% show simultaneous U4/U5 loss and only 9% show U4-first loss, confirming that activation is blocked at low ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C59 provide detailed pathway analysis with quantitative data. The interpretation of U4-first loss as activation (C50, C53) is well-supported by established knowledge. The interpretation of simultaneous loss as tri-snRNP discard (C54) is reasonable. The dramatic shift in pathway flux at 50 \u00b5M ATP (C55-C56) strongly supports the conclusion that activation is blocked. The control for photobleaching (C59) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Analysis of tri-snRNP discard kinetics reveals that at 2 mM ATP, most non-productive tri-snRNPs are rapidly discarded (4 s component), while at 50 \u00b5M ATP this rapid pathway is absent; wash experiments demonstrate that ~68% of stable U4/U5 complexes assembled at 50 \u00b5M ATP are discarded upon addition of 2 mM ATP, indicating ATP-dependent discard mediated by a stably-associated ATPase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 provide quantitative kinetic analysis showing distinct dwell time distributions. The wash experiments (C63-C65) provide strong evidence for ATP-dependent discard. The interpretation that loss of both U4 and U5 represents discard rather than activation (C66) is logical given that U5 should be retained in Bact. The inference about a stably-associated ATPase (C67) is reasonable given the wash design. The quantitative estimate (C68) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "For tri-snRNP binding events that lead to activation, U4 dwell times fit a convolution of two exponentials, suggesting at least two sequential partially rate-limiting steps precede U4 dissociation; U5 dwell times after U4 release fit two exponentials, consistent with multiple U5-containing species; no correlation exists between U4 loss rate and subsequent U5 dwell time, indicating no persistent kinetic heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 provide quantitative kinetic analysis with appropriate statistical modeling. The convolution fit (C72) is a standard approach for sequential reactions and is well-justified. The interpretation of multiple rate-limiting steps is reasonable given the complexity of activation (C73). The bi-exponential fit for U5 (C74) and lack of correlation (C75-C76) are directly observed. The conclusion about no persistent heterogeneity is well-supported by the correlation analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Multiple sequential tri-snRNP binding events are frequently observed on the same pre-mRNA molecule (~22% show multiple events), with binding events nearly always sequential rather than simultaneous, indicating that not every tri-snRNP recruitment leads to activation and that transcripts can recruit tri-snRNP multiple times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 provide direct observational data on multiple binding events. The comparison with bulk splicing efficiency (C78) strengthens the interpretation that some spliced pre-mRNAs bind tri-snRNP multiple times (C79). The observation of sequential rather than simultaneous binding (C80) is important for ruling out artifacts. The conclusion (C81) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Approximately 10% of pre-mRNAs show multiple rounds of U4 release followed by U5 release, indicating that activation does not always commit the pre-mRNA to splicing; U4 re-binding after release is exceedingly rare (5.7% of cases, likely mostly background), indicating that activation is largely irreversible with <2% likelihood of U4 rebinding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 provide direct evidence that activation doesn't guarantee splicing, consistent with known discard pathways. Claims C84-C87 provide quantitative data on U4 rebinding with appropriate controls (C85). The conclusion that activation is largely irreversible (C87) is well-supported, though the <2% estimate may be slightly optimistic given the control data. The overall result is convincing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C91",
+      "C92"
+    ],
+    "result": "Initial tri-snRNP binding to pre-mRNA shows kinetics consistent with multiple partially rate-limiting steps (convolution fit), while tri-snRNP rebinding after discard or activation shows simpler kinetics (single exponential), suggesting that rebinding involves fewer steps, possibly because it occurs on partially assembled complexes, potentially contributing to splicing efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89 and C91 provide kinetic analysis comparing initial binding versus rebinding. The convolution fit for initial binding versus single exponential for rebinding is well-documented. The interpretation that rebinding involves fewer steps (C91) is reasonable. The speculation about contribution to splicing efficiency (C92) is logical but remains somewhat speculative without direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C6",
+      "C108"
+    ],
+    "result": "Three-color CoSMoS experiments tracking U4 and NTC reveal that in 79% of events, NTC arrives soon (~30 s) after U4 loss, with a minor pathway (19%) showing NTC arrival before U4 loss, establishing that the major pathway for NTC recruitment is after U4 release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 provide direct quantitative observations from three-color experiments. The conclusion about the major pathway (C95, C6, C108) is well-supported by the 79% frequency. The identification of a minor pathway (C94) is important for completeness. The timing data (~30 s) provides valuable mechanistic insight. This is a key result addressing a longstanding question in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C119",
+      "C7"
+    ],
+    "result": "At physiological ATP (2 mM), tri-snRNP release is much faster than at 50 \u00b5M ATP, yet splicing occurs because U4 release is rapid and irreversible, allowing it to compete with tri-snRNP discard; approximately one-third of tri-snRNP binding events end in discard without activation, demonstrating that ATP stimulates both U4 release and tri-snRNP discard.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 provide a comprehensive analysis of the competition between activation and discard pathways. The observation that tri-snRNP release is faster at high ATP (C99) is somewhat counterintuitive but well-documented. The explanation involving rapid irreversible U4 release (C100) is logical. The quantitative estimate of one-third discard (C101) is based on pathway flux analysis. The overall conclusion (C119, C7) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "U4 release during activation is effectively irreversible (>98% of events show no U4 rebinding), likely due to rapid U4 recycling and/or rapid U6 conformational changes; activation does not always commit to splicing, and when discard occurs after U4 release, the spliceosome cannot reverse to B complex but must release U5/U6 and recruit a new tri-snRNP, with tri-snRNP rebinding compensating for discard and contributing to overall splicing efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 provide strong evidence for irreversibility with mechanistic explanation. Claims C104-C106 present a model for post-activation discard that is well-supported by the multiple activation events observed. The conclusion about tri-snRNP rebinding compensating for discard (C107) is logical and supported by the faster rebinding kinetics. This is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "At 50 \u00b5M ATP, NTC shows transient interactions and cannot stably bind B complex, consistent with structural data showing NTC binding sites include the U6 ISL and catalytic core that form after U4 release; a minor pathway (19%) shows NTC arrival before U4 loss, possibly representing complexes with disrupted U4/U6 base pairing but delayed U4 release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109 and C115-C116 provide direct evidence that NTC cannot stably bind B complex. The structural explanation (C110-C111) is well-supported by cited work and provides a mechanistic rationale. The interpretation of the minor pathway (C112-C114) is speculative but reasonable given recent findings about tri-snRNP assembly. The consistency with human spliceosome data (C118) strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The rapid tri-snRNP discard pathway is consistent with ATP-dependent proofreading by Prp28 during U1/U6 exchange at the 5' splice site, with successful exchange leading to activation and unsuccessful exchange leading to rapid tri-snRNP release; this pathway may prevent accumulation of non-functional assemblies and promote efficient splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C121 connect the observed discard pathway to known mechanisms (Brr2 for U4 release, Prp28 for proofreading), which is reasonable but involves inference beyond the direct data. The proposed mechanism (C122) is speculative. The connection to prior observations (C123) is plausible. The functional interpretation (C124) is logical but remains speculative without direct evidence that the pathway actually improves splicing efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C125"
+    ],
+    "result": "All spliceosomal snRNPs and NTC are amenable to CoSMoS assays, as demonstrated by successful labeling and observation of U4 release components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C125 is supported by the successful experiments in this manuscript combined with prior work. This is an important methodological advance that enables comprehensive single-molecule studies of splicing.",
+    "result_type": "MINOR"
+  }
+]

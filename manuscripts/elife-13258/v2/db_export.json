@@ -1,0 +1,1825 @@
+{
+  "submission": {
+    "id": "26b367a0-5cb4-468e-adf9-9d34b7a9a141",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:42:08.611349Z",
+    "updated_at": "2025-11-29T23:42:08.611349Z"
+  },
+  "content": [
+    {
+      "id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "submission_id": "26b367a0-5cb4-468e-adf9-9d34b7a9a141",
+      "content_type": "manuscript",
+      "content_text": "# Dynamic curvature regulation accounts for the symmetric and asymmetric beats of Chlamydomonas flagella\n\n## Authors\n\n- Pablo Sartori<sup>1</sup>\n- Veikko F Geyer<sup>2</sup>\n- Andre Scholich<sup>1</sup>\n- Frank J\u00fclicher<sup>1</sup> ([ORCID: 0000-0003-4731-9185](https://orcid.org/0000-0003-4731-9185))\n- Jonathon Howard<sup>2</sup> ([ORCID: 0000-0003-0086-1196](https://orcid.org/0000-0003-0086-1196)) \u2020\n\n### Affiliations\n\n1. Max Planck Institute for the Physics of Complex Systems Dresden Germany\n2. Department of Molecular Biophysics and Biochemistry Yale University New Haven United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCilia and flagella are model systems for studying how mechanical forces control morphology. The periodic bending motion of cilia and flagella is thought to arise from mechanical feedback: dynein motors generate sliding forces that bend the flagellum, and bending leads to deformations and stresses, which feed back and regulate the motors. Three alternative feedback mechanisms have been proposed: regulation by the sliding forces, regulation by the curvature of the flagellum, and regulation by the normal forces that deform the cross-section of the flagellum. In this work, we combined theoretical and experimental approaches to show that the curvature control mechanism is the one that accords best with the bending waveforms of Chlamydomonas flagella. We make the surprising prediction that the motors respond to the time derivative of curvature, rather than curvature itself, hinting at an adaptation mechanism controlling the flagellar beat.\n\n## Introduction\n\nCilia and flagella are long, thin organelles whose oscillatory bending waves propel cells through fluids and drive fluid flows across the surfaces of cells. The internal motile structure, the axoneme, contains nine doublet microtubules, a central pair of single microtubules, motor proteins of the axonemal dynein family and a large number of additional structural and regulatory proteins (Pazour et al., 2005). The axonemal dyneins power the beat by generating sliding forces between adjacent doublets\u00a0(Summers and Gibbons, 1971; Brokaw, 1989). The sliding is then converted to bending (Satir, 1965) by constraints at the base of the axoneme (e.g. the basal body) and/or along the length of the axoneme (e.g. nexin links) (Brokaw, 2009).\n\nWhile the mechanism by which the sliding of a doublet is converted to bending is well established, it is not known how the activities of the dyneins are coordinated in space and time to produce the periodic beating pattern of the axoneme. For example, bending the axoneme in one direction requires higher dynein activity on one side of the axoneme than on the other; if the activities are equal then the forces will cancel and there will be no bending. Therefore, to alternatively bend in one direction and then the other requires dynein activity to alternate between the two sides (Satir and Matsuoka, 1989). The switching of dynein activity is rapid, taking place twice per beat cycle and at rates above 100 times per second for Chlamydomonas. The coordination required for such rapidly alternating bending is thought to result from mechanical feedback: the axonemal dyneins generate forces that bend and deform the axoneme; and the deformations, in turn, regulate the dyneins. Because of the geometry of the axoneme, deformation leads to stresses and strains that have components in various directions (e.g. axial and radial). However, which component (or components) regulates the dyneins is not known.\n\nThree different, but not mutually exclusive, molecular mechanisms for dynein coordination have been suggested in the literature (Figure 1D). (i) In the sliding control-mechanism, the dyneins behave as 'slip bonds': they detach when subject to forces acting parallel to the long axis of the microtubule doublets and that oppose sliding (Brokaw, 1975; J\u00fclicher and Prost, 1997; Camalet and J\u00fclicher, 2000; Riedel-Kruse et al., 2007). The build-up of sliding forces on one side of the axoneme therefore induces detachment of the dyneins on the other side (and vice versa): the two sides are antagonistic. The resolution of this reciprocal inhibition or 'tug of war' is a catastrophic detachment of dyneins on one side of the axoneme, leading to an imbalance of sliding forces and therefore to axonemal bending. (ii) In the curvature-control mechanism, the detachment of dynein is regulated by doublet curvature (Morita and Shingyoji, 2004; Brokaw, 1972; Brokaw, 2009). This leads to a similar reciprocal inhibition because the sign of the curvature is opposite on opposite sides of the axoneme. (iii) In the normal-force control mechanism, also called the geometric clutch, the detachment of dynein is regulated by transverse forces that act to separate adjacent doublets when they are curved (Lindemann, 1994b). Which, if any, of these mechanisms regulates the beating of the axoneme is not known.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/13258/elife-13258-fig1-v2.jpg)\n\n**Figure 1.:** (A) Cross-section of an axoneme, as seen from the basal end looking towards the distal tip. The numbering of the doublets follows the convenstion for Chlamydomonas (Hoops and Witman, 1983). The green dyneins bend the axoneme such that the center of curvature is to the right. (B) The projection of the cross section onto two filaments to form the two-dimensional model. The green and blue motors bend the filament pair in opposite directions. (C) Two-dimensional model of the axoneme, as seen in the bending plane, $\ud835\udc31\ud835\udc32$. The two filaments are constrained to have spacing $a$. The point at arc-length $s$ has position vector $\ud835\udc2b$ (relative to the origin), tangent vector $\ud835\udc2d$, normal vector $\ud835\udc27$, and tangent angle $\u03c8$ with respect to the horizontal axis of the lab-frame $\ud835\udc31\ud835\udc32$. Dyneins on the upper filament (green) have microtubule-binding domains (MTBs, denoted by filled circles) that walk along the lower filament towards the base and produce a (tensile) force density $+f$ on the lower filament. This force slides the lower filament towards the distal end. The dyneins on the opposite filament (blue) create sliding (and bending) forces in the opposite direction. The local sliding displacement is given by $\u0394$, and the sliding at the base is $\u0394_{b}$. The sign convention is defined in Figure 10 and Appendix 4. The springs between the filaments oppose filament separation by the normal force, $f_{\u27c2}$. The spring and dashpot at the base consitute the basal compliance, with stiffness $k_{b}$ and friction coefficient $\u03be_{b}$. (D) Schematic of dynein regulation mechanisms. In curvature control the dynein MTB detaches due to an increase in curvature. In sliding control detachment is enhanced by a tangential loading force, and in normal force control the normal force, which tends to separate the filaments, enhances detachment. Signs indicate doublet polarity.\n\nIn this work, we developed a two-dimensional mathematical model of the axoneme that can incorporate any or all of these different feedback mechanisms. The model extends earlier models (Camalet and J\u00fclicher, 2000; Riedel-Kruse et al., 2007) by including static curvature, which gives rise to asymmetric beats such as those of Chlamydomonas and of ciliated epithelial cells. This model is similar to a recent model (Bayly and Wilson, 2014). We then tested the different feedback mechanisms by comparing the predictions of the associated models with high spatial and temporal resolution measurements of the bending waveforms of isolated, reactivated Chlamydomonas axonemes (Hyams and Borisy, 1975; Bessen et al., 1980). We found that the curvature-control mechanism accorded with experiments using both wild type cells, which have an asymmetric beat, and with experiments using the mbo2 mutant, which has a nearly symmetric beat. By contrast, the sliding mechanism gave poor fits to both the wild type and mbo2 data, and the normal-force mechanism gave unsatisfactory fits to the mbo2 data.\n\n### Theoretical model\n\n#### Two-dimensional model of the axoneme\n\nIn the two dimensional model, we project the cross-section of the three-dimensional axoneme onto a pair of filaments (Figure 1A,B). The projection retains the key idea that motors on opposite sides of the axoneme generate bends in opposite directions (Satir and Matsuoka, 1989). The dyneins that give rise to the principle bend\u00a0(this corresponds to bends that lie on the outside of the curved path along which an axoneme swims [Gibbons and Gibbons, 1972];\u00a0Figure 1A,B green), which in Chlamyodomonas has the same sign as the static curvature, are combined to generate sliding in one direction. The dyneins that give rise to the reverse bend (Figure 1A,B blue), are combined to generate sliding in the opposite direction.\n\nThe two filaments have the same polarity (all motors move towards the base) and have combined bending rigidity $\u03ba$. They are assumed to be inextensible and held together by elastic elements that maintain the filaments at a constant distance ($a$) from each other. Although there is some evidence that doublet separation is not constant (Lindemann and Mitchell, 2007), our assumption simplifies the theory while still allowing us to calculate the normal force in the elastic elements that keeps the separation constant\u00a0(Mukundan et al., 2014). In our normal-force mechanism the motors are regulated by the force rather than by the separation of the doublets, as in Lindemann (1994a). However, if the normal force is small, the separation is proportional to the force and the two models are equivalent.\n\nThe filaments are immersed in an aqueous fluid and experience drag forces arising from the fluid viscosity. The hydrodynamic forces are proportional to the velocity, with friction coefficients $\u03be_{n}$ and $\u03be_{t}$ (per unit length) for motion normal to and tangential to the axis of the filament. The values of the mechanical parameters are estimated in Appendix 5.\n\nThe position of each point on the filament pair is specified at each time by the vector $\ud835\udc2b\u2062(s)$, a function of the arc-length $s$, along the centerline between the filaments. Calculating the tangent vector as $t(s)=r\u02d9(s)$, where dots denote arc-length derivatives, allows us to define the tangent angle, $\u03c8\u2062(s)$, with respect to the horizontal axis of the laboratory frame. The tangent angle characterizes the shape of the filament. For a given filament shape, the pair of filaments will have a local sliding displacement, $\u0394\u2062(s)$. We assume that the filaments are incompressible, though they can support tension along their centerline. For incompressible filaments, sliding is linearly related to the tangent angle via\n\n$$\n\u0394(s)=\u0394_{b}+a[\u03c8(s)-\u03c8(0)]\u2003,\n$$\n\nwhere $\u0394_{b}=\u0394\u2062(0)$ is the basal sliding (Figure 1C). The sign convention is defined in Figure 10 and Appendix 4.\n\nTo compare the observed periodic beats to those predicted by the model, we write the tangent angle as a sum of Fourier modes\n\n$$\n\u03c8(s,t)=\\sumn=\u2212\u221e\u221e\u03c8_{n}(s)exp(in\\omegat)\u2003,\n$$\n\nwhere $\\omega$ is the angular frequency of the beat ($\\omega/2\u2062\\pi$ is the beat frequency in cycles per second), $t$ is time, i is the imaginary unit,\u00a0and $\u03c8_{n}$ are the modes (indexed by $n$). The modes are complex-valued functions of arc-length that represent the amplitude and phase of the beat waveforms.\u00a0They satisfy $\u03c8_{-n}=\u03c8_{n}^{*}$ to keep the angle real (* represents the complex conjugate). For each value of $n>1$, there is an associated equation of motion. We refer to $n=0$ as the static mode, which corresponds to the time-averaged shape. We refer to $n=1$ as the fundamental mode, which corresponds to the dynamic shape at the beat frequency. The static and fundamental modes are the only ones considered in this work. In this case, we can write $\u03c8\u2062(s,t)=\u03c8_{0}\u2062(s)+\u2223\u03c8_{1}\u2062(s)\u2223\u2062s\u2062i\u2062n\u2062[\\omega\u2062t+\u03d5\u2062(s)]$ where $\u2223\u03c8_{1}\u2062(s)\u2223$ is the amplitude of the fundamental mode and $\u03d5\u2062(s)$ is the phase ($a\u2062r\u2062g\u2062\u03c8$). We use the complex formulation because it simplifies the theory, whose goal is to make predictions for $\u2223\u03c8_{1}\u2062(s)\u2223$ and $\u03d5\u2062(s)$ to compare to the experimental data (e.g. Figure 3ii\u2013iii). The same modal decomposition can be done for all other parameters that depend on time including the sliding displacement, $\u0394\u2062(s)$, the basal sliding, $\u0394_{b}$, the sliding force between the filaments, $f$, and the tension, $\\tau$, in the centerline of the filaments.\n\n### Force balance in the axoneme\n\nThe shape of the axoneme depends on the balance between the mechanical forces (from the motors and the elastic elements) and the hydrodynamic forces. The mechanical force is the derivative (with respect to the position vector r) of the work functional $U$ (Appendix 1, Equation 11), which depends on the bending rigidity of the doublets, the stiffness of the cross linkers, motor forces and the shape of the filament. This force is balanced by the hydrodynamic force from the fluid, which is proportional to the velocity ($\\partial_{t}\u2061\ud835\udc2b$) of the axoneme at each point: $\u2212\u03a0^\u22c5\u2202_{t}r=\\deltaU/\\deltar$, where $\u03a0^$ is the friction matrix (Lauga and Powers, 2009). For a slender body at low Reynolds number the friction matrix is $\u03a0^=\u03be_{n}nn+\u03be_{t}tt$, where $\ud835\udc27\u2062(s)$ a unit vector normal to the tangent vector $\ud835\udc2d\u2062(s)$ (Figure 1C). Force balance yields non-linear equations of motion (Equations 14\u201316 in Appendix 1, also see Sartori, 2015). We then derive the static solution, corresponding to mode $n=0$, and the periodic solution at the beat frequency, corresponding to mode $n=1$.\n\n### Static mode\n\nIf the motor forces do not change with time, then the axoneme will not move and the hydrodynamic forces are zero, causing the tension in the axoneme to be zero. The static mode of the filament pair can be calculated from the static force-balance equation\n\n$$\n\u03ba\u03c8\u02d9_{0}(s)=aF_{0}(s),F(s)=\u2212\\int_{s}^{L}f(s^{\u2032})ds^{\u2032},\n$$\n\nwhere $\u03c8\u02d9_{0}(s)$, the arc-length derivative of the tangle angle, is the curvature of the static mode and $F_{0}\u2062(s)$ is the static mode of the integrated motor force (Appendix 1, Equation 19). The static mode is the time-averaged shape which, in Chlamydomonas axonemes, has approximately constant curvature all along the length, and as a result $\u03c8\u02d9_{0}(s)\u2248C_{0}$\u00a0(Geyer et al., 2016; Eshel and Brokaw, 1987) (see Results). In our theoretical analysis, we therefore ignore deviations from constant curvature. Such deviations are not expected to significantly affect the conclusions of this work because we found that the static curvature had little effect on the dynamics (the wild type and mbo2 axonemes have similar beats, see Results). According to the static force-balance equation, bending an axoneme into a shape with constant curvature requires the integrated motor force to be independent of arc-length, which in turn requires the motor forces be concentrated near the distal end (Mukundan et al., 2014). We therefore approximate the static component of the motor force density by\n\n$$\nf_{0}=-\\delta(s-L)\u03baC_{0}/a\u2003,\n$$\n\nwhere $\\delta$ is the Dirac delta function, and the minus sign ensures that a positive dynein force produces a negative curvature in accord with our sign convention (Appendix 4).\n\n### Dynamic mode\n\nTo obtain the equation of motion at the beat frequency (i.e the $n=1$ dynamic mode), we substitute the modal expansions of the tangent angle (Equation 2), the motor force and the tension into the non-linear dynamic equations and keep only the terms at the fundamental frequency ($n=1$):\n\n$$\ni\\omega\u03be_{n}\u03c8_{1}=\u2212\u03ba\u03c8\u20dc_{1}+af\u00a8_{1}+[1+\u03be_{n}/\u03be_{t}]C_{0}\\tau\u02d9_{1}+(\u03be_{n}/\u03be_{t})C_{0}^{2}(\u03ba\u03c8\u00a8_{1}\u2212af_{1})(\u03be_{n}/\u03be_{t})\\tau\u00a8_{1}\u2212C_{0}^{2}\\tau_{1}=\u2212[1+(\u03be_{n}/\u03be_{t})]C_{0}(\u03ba\u03c8\u20db_{1}\u2212af\u02d9_{1})\n$$\n\n(Appendix 1, Equations 14\u201316, Appendix 2, Equation 21). Associated with these equations are boundary conditions specifying the tangent angle (and its spatial derivatives) and the tension at the basal and distal ends (Appendix 2, Equation 20). The boundary conditions for a freely swimming axoneme correspond to no external forces or torques acting at the ends.\n\nEquation 5 generalizes previous models of symmetrically beating axonemes (Machin, 1958; Riedel-Kruse et al., 2007; Camalet and J\u00fclicher, 2000, in which the static curvature ($C_{0}$) and the axial tension ($\\tau_{1}$) are zero. For $C_{0}\\neq0$ new terms appear, and the system of equations is of order six rather than four in the symmetric case. The magnitude of the new terms can be estimated by considering the plane-wave approximation, in which $\u03c8_{1}(s)=exp(\u22122\\piis/\\lambda)$, with $\\lambda\u2248L$ the wavelength. The plane wave is sinusoidal, $\u03c8(s,t)=sin(\\omegat\u22122\\pis/\\lambda)$. Though the plane wave is only an approximation to the shape and does not satisfy the boundary conditions (e.g. the curvature at the distal end of an axoneme is always zero), it is nevertheless useful for calculating approximate values of parameters. For example, the fourth term on the right hand side of the upper equation is of order $(\u03be_{n}/\u03be_{t})\u2062C_{0}^{2}\u2062\u03ba\u2062(2\u2062\\pi/\\lambda)^{2}$ and is in phase with the first term, which is of order $\u03ba\u2062(2\u2062\\pi/\\lambda)^{4}$. For Chlamydomonas axonemes $\\lambda\u223cL$ and $C_{0}\u223c\\pi/L$, and since $\u03be_{n}/\u03be_{t}\u22482$ (Appendix 5) the ratio of these terms is $\u223c0.5$. A similar reasoning shows that the third term is in anti-phase, and its contribution is of order $\u223c1$. This shows that the new terms, which enter through the asymmetry, can not be neglected a priori. Thus, for the large observed asymmetry of the Chlamydomonas axoneme, we expect that there is coupling between the $n=0$ and $n=1$ modes, significantly modifying the dynamics of the beating axoneme. As we will see, the static curvature $C_{0}$ has little effect in the curvature-control model but has a large effect in the normal-force model.\n\nEquation 5 shows how an oscillatory active sliding force, $f\u2062(s,t)=f_{1}\u2062(s)\u2062e^{i\u2062\\omega\u2062t}+f_{1}^{*}\u2062(s)\u2062e^{-i\u2062\\omega\u2062t}$, can produce dynamic bending of the axoneme (with appropriate parameter and boundary conditions). To see this, note that the upper equation can be rearranged to provide an expression for $\\tau_{1}$ in terms of $\u03c8_{1}$ and $f_{1}$ (and their derivatives). This expression can then be substituted into the lower equation, to provide a relationship between $\u03c8_{1}$ and $f_{1}$, so that if $f_{1}$ is known, $\u03c8_{1}$ can be calculated. A trivial example is when $f_{1}=0$, in which case the only solutions are $\u03c8_{1}=0$ and $\\tau_{1}=0$. If $f_{1}$ is non zero, the equation may have non-trivial solutions, corresponding to bending oscillations.\n\n### Three mechanisms of motor control\n\nWe now build the three molecular mechanisms of motor control into the two-dimensional model of the axoneme. Equation 5 shows that an oscillating sliding force can produce a dynamic beating pattern. However, we do not expect the motor proteins themselves to be the oscillators, because oscillations have never been observed in single-molecule recordings (but see Shingyoji et al., 1998). Rather, we expect that the sliding forces generated by the dyneins are regulated directly or indirectly by the shape of the axoneme. Such regulation constitutes mechanical feedback. If we have an expression for how the motor force depends on the tangent angle (and its derivatives), this can be substituted into the equation of motion, which can then be solved (using the boundary conditions) to predict bending waveforms.\n\nThe most general linear expression for the dependence of the motor force on sliding, curvature and normal force is\n\n$$\nf_{n}(s)=\u03c7(n\\omega)\u0394_{n}(s)+\\beta(n\\omega)\u03c8._{n}(s)+\\gamma(n\\omega)f_{\u22a5,n}(s)\u2003,\n$$\n\nwhere $n\\geq0$ is the mode index. $\u03c7\u2062(\\omega)$, $\\beta\u2062(\\omega)$ and $\\gamma\u2062(\\omega)$ are complex, frequency-dependent coefficients describing how the motor force responds to sliding, curvature and normal forces, respectively. The coefficients depend on the molecular properties of the dyneins such as their density along the doublets, their force-velocity curves, and the sensitivity of their unbinding on load force, on curvature or on normal force; they also depend on the elastic and viscous resistance to sliding between the doublets (Camalet and J\u00fclicher, 2000; Riedel-Kruse et al., 2007). If the density of motors and the mechanical properties are independent of arc-length, then the coefficients will also be independent of the arc-length. Though light and electron microscopy studies have shown that there are longitudinal variations in dynein isoforms and dynein density (Yagi et al., 2009; Bui et al., 2012), we ignore these variations in the present work. Such variation could be included in more elaborate models (e.g. Riedel-Kruse et al., 2007). The coefficients are complex because in general the force could depend on the instantaneous value of the parameter (the real part) and or on the rate of change of the parameter (the imaginary part). To see this, suppose that the force depends on the sliding displacement ($\u0394$) and the sliding velocity ($\\partial_{t}\u2061\u0394$). Then $f\u2062(s,t)=k\u2062\u0394\u2062(s,t)+\u03be\u2062\\partial_{t}\u2061\u0394\u2062(s,t)$, and in the Fourier representation $f_{1}\u2062(s)=(k+i\u2062\\omega\u2062\u03be)\u2062\u0394_{1}\u2062(s)$, so $\u03c7=k+i\u2062\\omega\u2062\u03be$. Finally, the coefficients will in general depend on frequency through delays caused by the finite detachment times. The response coefficients are the generalization to active motors of the linear response coefficient of a passive system. For example, the basal force of the axoneme, $F_{b}=F\u2062(0)$, is described by $F_{b}=k_{b}\u2062\u0394_{b}+\u03be_{b}\u2062\\partial_{t}\u2061\u0394_{b}$, where kb is the basal stiffness and\u00a0\u03beb is the basal damping coefficient. Thus, the fundamental mode of the basal force is given by $F_{b,1}=\u03c7_{b}\u2062(\\omega)\u2062\u0394_{b,1}$ with\u00a0basal\u00a0impedance $\u03c7_{b}\u2062(\\omega)=k_{b}+i\u2062\\omega\u2062\u03be_{b}$.\n\nIn our model, the response coefficients are small at zero frequency. This is because the observed, nearly constant static curvature implies that the static component of the force ($f_{0}$) is approximately zero all along the length except near the distal end of the axoneme (see Equation 4).\n\nThe motor force equation (Equation 6) together with the equation of motion (Equation 5), define a dynamical system, which can become unstable and produce spontaneous oscillations (J\u00fclicher and Prost, 1997; Camalet et al., 1999). At the critical point, these oscillations are periodic and we only retain the fundamental mode ($n=1$). These critical-point oscillations constitute the predicted beat waveforms of our two-dimensional model (see last paragraph of Appendix 1).\n\n### Normal-force control\n\nWe conclude the theory section with a discussion of the normal force. Unlike the sliding control and curvature control mechanisms in which the motor force depends linearly on the tangent angle (and its derivatives), the feedback in the normal-force model is non-linear. This is because the normal force is the product of the integrated sliding force and the curvature, $f_{\u22a5}=F\u03c8\u02d9$ (Appendix 1, Equation 16), both of which depend on arc-length. However, under the assumption that the static curvature is constant, $\u03c8_{0}.=C_{0}$, the normal force can be linearized, simplifying the solution of the dynamical equations. Expanding $F$ and $\u03c8\u02d9$ into their static and fundamental Fourier modes, and using the static force balance $a\u2062F_{0}=\u03ba\u2062C_{0}$, we obtain the following expression for the fundamental mode of the normal force:\n\n$$\nf_{\u22a5,1}=C_{0}(F_{1}+\u03ba\u03c8\u02d9_{1}/a),\n$$\n\nwhere $F_{1}$ is the fundamental mode of the integrated sliding force (Appendix 1, Equation 19). Thus, the force is linear in the curvature and the\u00a0integrated motor force. Equation 7 vanishes for symmetric beats in which the static curvature is zero ($C_{0}=0)$. The important implication is that for symmetric beats, there is no reciprocal inhibition across the axoneme, unlike sliding and curvature control. This is related to the property that static bends produce normal forces that always tends to separate filaments, independent of the sign of the bend\u00a0(Mukundan et al., 2014). Thus the static curvature, $C_{0}\\neq0$, of the Chlamydomonas beat opens a way for regulation by normal forces, something impossible in symmetrically beating cilia, of which sperm is an approximate example (Riedel-Kruse et al., 2007).\n\n## Results\n\n### Quantification of the beat of wild type and mbo2 cilia\n\nTo test the different mechanisms of beat regulation, we measured the flagellar beating waveforms in wild type and mbo2 axonemes with high temporal and spatial precision (Materials and methods and Figure 2i-ii). We tracked trajectories of 20 points along the arc-length of the axoneme as a function of time over up to 200 beat cycles (Figure 2iii). Copies of the movies and the extracted tangent angles are available (see Sartori et al., 2016).\u00a0The uncertainty of the position in \ud835\udc31\ud835\udc32 space was \u22485\u00a0nm and the uncertainty in the tangent angle was \u224820\u00a0mrad (Figure 2iv-v). The latter corresponds to a sliding displacement between adjacent doublet microtubules of only 1.3\u00a0nm.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/13258/elife-13258-fig2-v2.jpg)\n\n**Figure 2.:** Panel A corresponds to Chlamydomonas wild type axonenes, panel B to mbo2 mutant axonemes. (A) (i) Inverted phase-contrast image of a wild type axoneme. The orange curve represents the tracked centerline. The points depict the basal end (red), the distal end (green) and the center position (black) of the axoneme. The yellow line depicts the trajectory of the basal end, which is the leading end during swimming (Geyer, 2012). (ii) Same image as in Ai, magnified around the center region. The tangent angle $\u03c8\u2062(s,t)$ is defined with respect to the lab frame. (iii) Tangent angle at three different arc-length positions (depicted in Ai) as a function of time. The linearly increasing tangent angle corresponds to a counter-clockwise rotation of the axoneme during swimming. Mean uncertainty measured over 1000 adjacent frames of the position $\\delta\u2062\ud835\udc2b\u22c5\ud835\udc32$ (iv) (the $\\delta\u2062\ud835\udc2b\u22c5\ud835\udc31$ error gives a similar result) and the tangent angle $\\delta\u2062\u03c8$ in (v). (B) is analogous to (A), but for mbo2 mutant axonemes.\n\nBecause the beat of Chlamydomonas is periodic in time, it is convenient to decompose the tangent angle \u03c8\u2062(s,t) into Fourier modes \u03c8n (Equation 2). Before doing so, we note that wild type Chlamydomonas axonemes swim counterclockwise in circles at a slow angular rotation speed \u03c9rot\u224830\u00a0rad/s (Figure 2Ai,iii). While the effect of this rotation is small for a single beat it becomes large for a long time series. Before performing the Fourier decomposition we therefore subtracted \u03c9rot\u2062t from the tangent angle \u03c8\u2062(s,t)\u00a0(for simplicity we use the same notation for \u03c8\u2062(s,t) and \u03c8\u2062(s,t)-\u03c9rot\u2062t). The power spectrum of the tangent angle (averaged over the flagellar length) shows clear peaks at harmonics of its fundamental frequency (Figure 3Ai). Because the peak at the fundamental frequency (n=1) accounts for 90% of the total power, we neglected the higher harmonics (n\u00a0=\u00a02,3,4,\u00a0...) for reconstructing the flagellar shape. We found that using just the n=0 and n=1 modes gave excellent reconstitutions of both the wild type and mbo2 beats (Figure 3C\u2013D). Thus, the static and fundamental modes provide a good description of the beats.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/13258/elife-13258-fig3-v2.jpg)\n\n**Figure 3.:** Panel A shows the Fourier decomposition of the waveform of wild type axonemes, panel B the decomposition of the mbo2 axoneme waveform. (A) (i) Power spectrum of the tangent angle averaged over arc-length. The fundamental mode ($n=1$) and three higher harmonics ($n=2,3,4$) are labeled. (ii) Angular representation of the static ($n=0$) mode as a function of arc-length. The approximately constant slope indicates that the static curvature is close to constant $\u03c8._{0}=C_{0}$. (iii) The amplitude and phase (argument) of the fundamental mode are shown in iii and iv, respectively. The approximately linear decrease in phase indicates steady wave propagation. The data of a representative axoneme is highlighted in the panels ii\u2013iv, with error bars indicating the standard error of the mean calculated by hexadecimation. (B) Equivalent plots to (A) for mbo2 axonemes. (C) Beat shapes of one representative beat cycle of the wild type axoneme highlighted in panel A (left panel, data) and shapes reconstructed from the superposition of the static and fundamental modes, neglecting all higher harmonics. The progression of shapes through the beat cycle is represented by the rainbow color code (see inset). (D) Same as (C) for an mbo2 mutant axoneme.\n\nThe amplitude of the static mode ($n=0$) and the amplitude and phase of the fundamental mode ($n=1$) are shown in (Figure 3ii\u2013iv). The main difference between the wild type and mutant axonemes comes from the static mode, $\u03c8_{0}$ (Figure 3ii; Eshel and Brokaw, 1987; Geyer et al., 2016). For wild type axonemes, $\u03c8_{0}$ decreased approximately linearly over arc-length. This corresponds to an approximately constant static curvature \u22480.25\u00a0rad/\u03bcm, and indicates that the time-averaged shape is close to a semi-circular arc of radius \u22484\u00a0\u03bcm. The static curvature of wild type axonemes leads to the highly asymmetric waveform. In contrast, mbo2 mutant axonemes have a small static mode, with a curvature \u22480.025\u00a0rad/\u03bcm, corresponding to an approximately symmetric waveform.\n\nIn comparison to the large differences in the static mode between wild type and mutant axonemes, the fundamental modes, $\u03c8_{1}$, are similar. The amplitude of $\u03c8_{1}$ is roughly constant and has a characteristic dip in the middle (Figure 3iii). The argument of $\u03c8_{1}$, which determines the phase of the wave, decreases at a roughly constant rate in both cases (Figure 3iv), indicating that the beat is a traveling wave. Because the total phase shift is about $-2\u2062\\pi$, the wavelength of the beat is approximately equal to the length of the axoneme. Thus, both wild type and mutant axonemes have approximately sinusoidal dynamic beats whose amplitudes dip in the middle of the axoneme and whose wavelengths are approximately equal to their lengths.\n\n### Motor regulation in the axoneme: experiment versus theory\n\nTo gain insight into how molecular motors in the axoneme are controlled, we compared experimental beating patterns to those calculated from theory. In the sliding-control model the motor force depends only on sliding through the sliding coefficient $\u03c7=\u03c7^{\u2032}+i\u2062\u03c7^{\u2032\u2032}$. The single and double primes denote real and imaginary parts. $\u03c7^{\u2032}$ and $i\u2062\u03c7^{\u2032\u2032}$ describe the dependence of force on the sliding displacement and the sliding velocity. They are the elastic and damping components of the sliding response, respectively. Because the response must be active for oscillations to occur, we have $\u03c7^{\u2032},\u03c7^{\u2032\u2032}\\leq0$\u00a0(Machin, 1958). In the sliding-control model, the motor force is independent of curvature and normal forces so the curvature coefficient ($\\beta$) and the normal force coefficient ($\\gamma$) were set to zero. In the curvature-control model, the curvature coefficient is non-zero ($\\beta\\neq0$). In addition, we allow the possibility that the motors have a passive response to sliding (corresponding to elastic resistance to shear between adjacent doublets at the beat frequency), so that $\u03c7^{\u2032}>0$. The motors are not regulated by normal force ($\\gamma=0$). In the normal-force model, $\\gamma\\neq0$. We again allow for the possibility that the motors have a passive response to sliding ($\u03c7^{\u2032}>0$). The motors are not regulated by curvature ($\\beta=0)$). Note that for\u00a0backward traveling waves the signs of $\\beta^{\u2032},\\beta^{\u2032\u2032}$ and $\\gamma^{\u2032},\\gamma^{\u2032\u2032}$ change, but those of $\u03c7^{\u2032},\u03c7^{\u2032\u2032}$ do not.\n\nWe tested the three motor models by adjusting the appropriate response coefficients, together with the basal stiffness (kb) and the basal damping coefficient (\u03beb), to obtain the closest fit of their predictions to the dynamic mode. The fitting procedure is described in Appendix 3 using the mechanical parameters described in Appendix 5. The result of a typical fit for wild type axonemes is shown in Figure 4A. The real and imaginary parts of the fundamental mode \u03c81\u2062(s) \u2013 corresponding to the cosine and sine components of the waveforms \u2013 agree well with the data in the cases of curvature control and normal-force control, but not for sliding control. In the latter case, the real and imaginary parts of the predicted mode are in anti-phase (Figure 4A, left panel), corresponding to a standing wave and contradicting the observed propagating wave. The xy representation of the beating pattern predicted by the curvature-control model agrees well with the experimental beating pattern reconstructed from the static and fundamental modes (Figure 4C). The good agreement reinforces the conclusion from Figure 4A that the curvature control model accords with the experimental data for wild type axonemes. Similar good agreement for wild type axonemes was found with the normal-force model. Table 1 summarizes average parameters resulting from the fits to data from 9 wild type axonemes.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/13258/elife-13258-fig4-v2.jpg)\n\n**Figure 4.:** (A) Comparison of the theoretical (lines) and experimental (dots) beating patterns of a typical wild type axoneme. The real and imaginary part of the first mode of the tangent angle $\u03c8_{1}\u2062(s)$ is plotted for beats resulting from sliding control, curvature control, and normal force control. (B) Analogous to (A) for mbo2. Note that here also curvature control and normal force control provide good agreement, but not sliding control. (C) and (D) Theoretical and experimental shape reconstruction in position space for the wild type and mbo2 beats under curvature control.\n\n**Table 1.**\n Parameters for beat generation in wild type axonemes.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>Sliding control</th>\n      <th>Curvature control</th>\n      <th>Normal-force control</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Coefficient of determination</td>\n      <td>R2(%)</td>\n      <td>49 \u00b1 4</td>\n      <td>95 \u00b1 1</td>\n      <td>95 \u00b1 1</td>\n    </tr>\n    <tr>\n      <td>Sliding coefficient</td>\n      <td>\u03c7\u2032,\u03c7\u2032\u2032(nN\u22c5\u03bcm\u22122)</td>\n      <td>-12.2 \u00b1 3.0,-1.1 \u00b1 0.1</td>\n      <td>19.8 \u00b1 3.3,0</td>\n      <td>13.2 \u00b1 3.6,0</td>\n    </tr>\n    <tr>\n      <td>Curvature coefficient</td>\n      <td>\u03b2\u2032,\u03b2\u2032\u2032(nN)</td>\n      <td>0</td>\n      <td>0,\u22126.5\u00b10.4</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Normal-force coefficient</td>\n      <td>\u03b3\u2032,\u03b3\u2032\u2032</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0.12 \u00b1 0.05,2.0 \u00b1 0.2</td>\n    </tr>\n    <tr>\n      <td>Basal impedance</td>\n      <td>\u03c7b\u2032,\u03c7b\u2032\u2032(nN\u22c5\u03bcm\u22121)</td>\n      <td>42.4 \u00b1 0.7,2800 \u00b1 6900</td>\n      <td>42.2 \u00b1 12,2.2 \u00b1 0.7</td>\n      <td>80 \u00b1 115,13000 \u00b1 34000</td>\n    </tr>\n    <tr>\n      <td>Basal sliding (0th mode)</td>\n      <td>\u0394b,0\u2062(nm)</td>\n      <td>-41 \u00b1 41</td>\n      <td>-36 \u00b1 12</td>\n      <td>-144 \u00b1 196</td>\n    </tr>\n    <tr>\n      <td>Basal sliding (1st mode)</td>\n      <td>|\u0394b,1|\u2062(nm)</td>\n      <td>23 \u00b1 19</td>\n      <td>22 \u00b1 5</td>\n      <td>12 \u00b1 11</td>\n    </tr>\n  </tbody>\n</table>\n\n_The values reported are mean and standard deviation calculated from 9 axonemes. The average static curvature is C0=\u22120.232\u00b10.009\u00a0\u03bcm\u22121, the length L=11.7 \u00b1 0.4,\u03bc\u2062m, and the frequency \u03c9=427 \u00b1 19 rad/s (68\u2009Hz). Note that, for curvature controlled beats, using the value of \u03b2 and an estimate curvature of 0.1\u2062rad/\u03bc\u2062m results in a sliding force of \u2248700\u2062pN/\u03bc\u2062m. Since the motor density of an active half of the axoneme is \u2248500\u2062\u03bc\u2062m-1 the individual motor force is \u00a0\u00a01pN. For the case of normal force control, the sliding force generated by the motors is of the order of the normal force that they experience, since |\u03b3|\u22482._\n\nWe compared the theory to the dynamic modes measured from the mbo2 mutant, where the static curvature is reduced by at least one order of magnitude compared to wild type beats (Figure 3). The results were similar to those of wild type (Figure 4B): sliding control could not produce bend propagation, while curvature and normal force control were in good agreement with the experimental data. The parameters obtained from the fit of mbo2 beats are given in Table 2. We also fit the model to the wild type waveforms in which the static curvature had been subtracted. A good fit to the curvature control model was obtained, but not to the sliding control model. Thus, the fundamental mode was well fit by the curvature and normal-force models but not sliding control.\n\n**Table 2.**\n Parameters for beat generation in mbo2 mutant axonemes.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>Sliding control</th>\n      <th>Curvature control</th>\n      <th>Normal-force control</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Coefficient of determination</td>\n      <td>R2(%)</td>\n      <td>72 \u00b1 5</td>\n      <td>95 \u00b1 1</td>\n      <td>96 \u00b1 1</td>\n    </tr>\n    <tr>\n      <td>Sliding coefficient</td>\n      <td>\u03c7\u2032,\u03c7\u2032\u2032\u2062(nN\u22c5\u03bc\u2062m-2)</td>\n      <td>-15.0 \u00b1 1.0,-0.4 \u00b1 0.1</td>\n      <td>17.4 \u00b1 2.5,0</td>\n      <td>10.5 \u00b1 4.3,0</td>\n    </tr>\n    <tr>\n      <td>Curvature coefficient</td>\n      <td>\u03b2\u2032,\u03b2\u2032\u2032\u2062(pN)</td>\n      <td>0</td>\n      <td>0,\u22120.66\u00b10.4</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Normal-force coefficient</td>\n      <td>\u03b3\u2032,\u03b3\u2032\u2032</td>\n      <td>0</td>\n      <td>0</td>\n      <td>1.52 \u00b1 1.52,32 \u00b1 25</td>\n    </tr>\n    <tr>\n      <td>Basal impedance</td>\n      <td>\u03c7b\u2032,\u03c7b\u2032\u2032\u2062(nN\u22c5\u03bc\u2062m-1)</td>\n      <td>30.6 \u00b1 14.1,1.6 \u00b1 0.7</td>\n      <td>2.1 \u00b1 2,2.3 \u00b1 1.7</td>\n      <td>2.3 \u00b1 0.3,13.6 \u00b1 6.0</td>\n    </tr>\n    <tr>\n      <td>Basal sliding (0th mode)</td>\n      <td>\u0394b,0\u2062(nm)</td>\n      <td>-6 \u00b1 6</td>\n      <td>-73 \u00b1 44</td>\n      <td>-64 \u00b1 40</td>\n    </tr>\n    <tr>\n      <td>Basal sliding (1st mode)</td>\n      <td>|\u0394b,1|\u2062(nm)</td>\n      <td>51 \u00b1 10</td>\n      <td>60 \u00b1 11</td>\n      <td>77 \u00b1 28</td>\n    </tr>\n  </tbody>\n</table>\n\n_Values are averages and standard deviations for 9 axonemes. The static curvature was C0=\u22120.0276\u00b10.005\u00a0\u03bcm\u22121, the length L=9.2\u00b10.3\u00a0\u03bcm, and the frequency \u03c9=176 \u00b1 44 rad/s, (28\u2009Hz). Note that the values of \u03b3 in normal force control are very spread out and compared to the wild type fits. In fact, in one case we obtained \u03b3\u224880, indicating that motors must amplify the normal force they sense by almost two orders of magnitude. The values for curvature control are very similar to those of wild type fits.._\n\n### Regulation of the beat by sliding\n\nThe sliding-control model provides a poor fit to the observed beating patterns. This can be understood using three different, but related, arguments. First, in the plane-wave approximation, $\u03c8_{1}=exp\u2061(-2\u2062\\pi\u2062i\u2062s/\\lambda),$ the wavelength satisfies\n\n$$\ni\\omega\u03be_{n}/\u03ba=-(2\\pi/\\lambda)^{4}-(2\\pi/\\lambda)^{2}a^{2}\u03c7/\u03ba\u2003.\n$$\n\nBecause the equation is unchanged when $\\lambda\u2192-\\lambda$, there are solutions for propagation from base to tip ($\\lambda>0$) and for propagation from tip to base ($\\lambda<0$). These two waves superimpose to form a standing wave, inconsistent with the observed traveling wave.\n\nThe second argument is that in the limit of very short axonemes ($L\u21920$), sliding control predicts that there will only be standing waves, irrespective of whether the boundary conditions are symmetric or not (Camalet and J\u00fclicher, 2000). Chlamydomonas axonemes are short in the sense that are much shorter than the critical length:\n\n$$\n\u2003\u2062\u2113=2\u2062\\pi\u2062(\\frac{\u03ba}{\u03be_{n}\u2062\\omega})^{1/4},\n$$\n\nwhich is $26\u2062\\mu\u2062m$ using the Chlamydomonas parameters (Appendix 5). Based on this limit we only expect standing waves.\n\nThe third argument, is a generalization of the second. Though short, Chlamydomonas axonemes have a non-zero length. We therefore computed the bend propagation speed according to $v=\\int_{0}^{L}|\u03c8_{1}|^{2}\u2062\\partial_{s}\u2061arg\u2061\u03c8_{1}\u2062d\u2062s$. Using the amplitude and phase of the experimental data for Chlamydomonas, $|\u03c8_{1}|\u223c0.68$ (Figure 2Aiii and (Geyer et al., 2016) and arg\u2004$\u03c8_{1}=-2\u2062\\pi\u2062s/L$ (Figure 2Aiv), the bend propagation speed is $\u2248$ 3. By contrast, the bend propagation speed predicted by the sliding control model is only 0.005\u2009$\u226a$3. Thus, the sliding-control model predicts a bend propagation speed much lower than observed.\n\nThat the low bend propagation speed is due to the short length of the Chlamydomonas axoneme can be appreciated by plotting the predicted speed (normalized by the measured speed of Chlamydomons) against length L (normalized by the critical length). Figure 5A shows that at short lengths, such as for Chlamydomonas, the wave propagation speed is very slow, whereas for lengths above the critical length, such as for sperm, the propagation speed is high.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/13258/elife-13258-fig5-v2.jpg)\n\n**Figure 5.:** (A) Wave speed versus relative length of the first two unstable waveforms of a freely swimming axoneme regulated by sliding. For short lengths, in the range of Chlamydomonas, the modes lose directionality and become standing waves. Long axonemes have directional waves that can travel either forward, as in waveform 1,or backwards, as in waveform 2. (B) Two examples of waveform 1 for long (top) and short (bottom) axonemes. Note that the short axonemes have standing waves. See (Sartori, 2015) for more details. (C) Beating patterns of waveform 2 for a long (top) and short (bottom) axonemes. In B and C arrows denote direction of wave propagation.\n\nThus, there are several arguments for why sliding control does not work for the short flagella of Chlamydomonas.\n\n### Regulation of the beat by normal forces\n\nThe normal-force model provides a good fit to the beating patterns of wild type and mbo2 axonemes. However, there are two related arguments against the normal-force model. First, despite the similarities in the dynamics of the beats of wild type and mbo2 axonemes (Figure 3iii\u2013iv), the normal force model requires very different values for the response coefficient, \u03b3, for wild type and mbo2 axonemes (Tables 1 and 2). Second, the normal-force model applied to mbo2 requires large differences in \u03b3 from axoneme to axoneme, despite the similarity in the dynamics among the axonemes (Figure 3Biii\u2013iv). To understand why this is the case, we plotted \u03b3 as a function of the inverse of the curvature. The two are strongly correlated: |\u03b3|\u221d|C0|-1(Figure 6A). This correlation follows from Equation 7, which predicts that the dynamic component of the normal force is linearly proportional to the static curvature C0. In other words, the normal-force model requires there be static curvature; if the static curvature were exactly equal to zero then the model would break down. However, the static curvature in mbo2 axonemes is so small, as few as 3 degrees over the length of the axoneme, that it is likely to be residual and of no significance. It is therefore puzzling why the key control parameter would depend so strongly on a residual property. By contrast, the curvature-control coefficient, \u03b2, is similar for wild type and mbo2 axonemes and is independent of the static curvature (Figure 6B). Thus, we conclude that normal force is not a plausible parameter for controlling the ciliary beat.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/13258/elife-13258-fig6-v2.jpg)\n\n**Figure 6.:** (A) Because the normal force $f_{\u27c2,1}$ is proportional to the static curvature $C_{0}$, the normal force response coefficient $\\gamma$ is inversely proportional to the curvature. Red symbols are mbo2 and green symbols are wild type. (B) The curvature control response coefficient $\\beta^{\u2032\u2032}$ is independent of the static curvature, and remains constant even for a fifty-fold change in static curvature.\n\n### Regulation of the beat by curvature\n\nThe curvature control model provides a good fit to the experimental data for both wild type and mbo2 axonemes (Figure 4A and B, middle panel). Initially, we fitted the data using non-zero values for both the sliding control parameters ($\u03c7^{\u2032}$, $\u03c7^{\u2032\u2032}$) and for both the curvature control parameters ($\\beta^{\u2032}$, $\\beta^{\u2032\u2032}$). We found that the best fit values of $\u03c7^{\u2032\u2032}$ and $\\beta^{\u2032}$ were not significantly different from zero. Furthermore, the quality of the fits were as good when we set both to zero. We therefore took $\u03c7^{\u2032\u2032}$ = $\\beta^{\u2032}=0$ (Tables 1 and 2). We present an argument in the Discussion for why these two parameters are expected to be zero. Thus, the curvature control model is specified by just two free parameters, the sliding elasticity between doublet microtubules at the beat frequency\u00a0$(\u03c7^{\u2032})$ and the rate of change of axonemal curvature ($\\beta^{\u2032\u2032}$)\u00a0(note that the parameters, $\u03c7_{b}^{\u2032}$ and $\u03c7_{b}^{\u2032\u2032}$, which characterize the stiffness and viscosity at the base respectively, are determined once $\u03c7^{\u2032}$ and $\\beta^{\u2032\u2032}$ are specified in order to satisfy the boundary conditions [final paragraph of Appendix 2]).\n\nThe average values of $\u03c7^{\u2032}$ and $\\beta^{\u2032\u2032}$ varied little between wild type and mbo2 mutant axonemes (compare the third column of Table 1 with that of Table 2, see also Figure 6B). This accords with the observation that there is little difference in the dynamical properties of the beat between wild type and mbo2 axonemes. Furthermore, the standard deviations of $\u03c7^{\u2032}$ and $\\beta^{\u2032\u2032}$ are small, indicating that there is little variation from axoneme to axoneme. Thus, the tight distribution of values of the parameters in the model reflects the similarity in the observed shapes in different axonemes. In other words, $\u03c7^{\u2032}$ and $\\beta^{\u2032\u2032}$ are well constrained by the experimental data.\n\nTo understand what aspects of the experimental data specify these two parameters, we performed a sensitivity analysis on \u03c7\u2032 and \u03b2\u2032\u2032. In Figure 7A we show a density map of the mean square distance R2 between the theoretical waveforms and a reference experimental beating pattern as a function of \u03c7\u2032 and \u03b2\u2032\u2032. The red ellipse delimits a region of good fit in which R2>0.90. This region closely coincides with the region where \u03c7b\u2032 and \u03c7b\u2032\u2032 are both positive, which is delimited by the central pair of black lines. This is important because negative values of the basal parameters imply an active process at the base, which would result in a whip-like motion of the axoneme, as noted by Machin (Machin, 1958). From the shapes of beating spermatozoa, Machin argued against such an active base.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/13258/elife-13258-fig7-v2.jpg)\n\n**Figure 7.:** (A) Heat map of the mean-square distance $R^{2}$ between the theoretical and a reference experimental beat as a function of the sliding response coefficient $\u03c7^{\u2032}$ and the curvature response coefficient $\\beta^{\u2032\u2032}$. The ellipsoid delimits the region with $R^{2}=0.90$. Each pair of nearby black lines delimits a region with a passive base. Moving along the long axis (green circles) affects the amplitude dip in the midpoint of the axonemem, left panel in (B). Moving along the short axis towards the region of active base results in waveforms with a large amplitude at the base (blue and red circles), central and right panels in B. The axis in A is normalized by the reference fit, such that $(\u03c7^{\u2032}=1,\\beta^{\u2032\u2032}=1)$ corresponds to the highest value of $R^{2}$.\n\nWe systematically varied $\u03c7^{\u2032}$ and $\\beta^{\u2032\u2032}$ parallel and perpendicular to the long axis of the ellipse. Moving perpendicular into the region of active base indeed results in whip-like beats, with a larger amplitude at the base (Figure 7B, blue circles). This argues against a basal, whip-like driving of the motion of Chlamydomonas axonemes. Moving parallel affects the amplitude of the beat, with the middle-dip becoming more or less prominent (Figure 7B, green circles). Thus, the arc-length dependence of the amplitude of the fundamental mode constrains the value of the response coefficients and the sign of the basal response.\n\nTo better understand the cell-to-cell variability we plotted data from all the axonemes in the (\u03c7\u2032,\u03b2\u2032\u2032) space (Figure 8A). Points scatter mainly along the long axis of the ellipse, where there is a large region of small shape variation. We consistently saw a shift perpendicular to the long axis between the wild type and mbo2 axonemes. This variation correlates with the difference in normalized lengths between wild type and mutant axonemes (Figure 8B), suggesting a possible dependence of the response coefficients on length and/or frequency.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/13258/elife-13258-fig8-v2.jpg)\n\n**Figure 8.:** (A) Circles represent values obtained from fits for each of the axonemes, green corresponds to wild type and red to mbo2. In the background we have the same heat map as in Figure 7. Note that mbo2 points lie away from wild type circles in the direction of the short axis of the ellipse. All values are normalized by those of the reference fit used also to normalize the heat map axis. (B) The distance of the circles to the long axis of all fits shows a clear correlation with normalized axonemal length. Note also that mbo2 axonemes are systematically shorter than wild type axonemes. (C) The basal compliance ($\u03c7_{b}$) also correlates with the normalized length, resulting in a high value for wild type axonemes, which are longer. The values are normalized by the value for a reference axoneme.\n\nA striking difference between the wild type and mbo2 axonemes is that the curve-fitting indicates that the basal stiffness in the mutant is about 20-fold smaller than in the wild type (Table\u20091 and 2). This softening at the base is associated with a larger basal sliding in the mutant. Whether this difference causes the difference in beat frequency (the mutant beats more slowly) or whether it is a consequence of the shorter lengths of the mutant axonemes (Figure 8C) will require additional study.\n\n## Discussion\n\nIn this work we imaged isolated axonemes of Chlamydomonas with high spatial and temporal resolution. We decomposed the beating patterns into Fourier modes and compared the fundamental mode, which is the dominant dynamic mode, with theoretical predictions of three motor control mechanisms built into a two-dimensional model of the axoneme (Figure 1). The sliding control model provided a poor fit to the experimental data. We argued that the reason for this is that sliding control cannot produce wave propagation for axonemes as short as those of Chlamydomonas (Figure 5). While the normal-force model (also termed the geometric clutch model) provided good fits to the experimental data, it relies on the presence of static curvature (Bayly and Wilson, 2015), which varies greatly between the mbo2 and wild type axonemes. As a result of this large difference in static curvature, the control parameters in this model had to be varied over a wide range to fit the data from the different axonemes (Figure 6). Because the waveforms of mbo2 and wild type axonemes have similar dynamic characteristics, such variation in the control parameter seems implausible and we therefore argue against regulation by normal forces in the two-dimensional model. Finally, the curvature-control model provided a good fit to the experimental data with similar parameters for mbo2 and wild type axonemes. Thus, we conclude that only the curvature-control model is fully consistent with our experimental data.\n\nA potential caveat of these conclusions is that the model used here is two-dimensional. Importantly, in order to simplify the geometry, the model only contains one pair of filaments. While this captures the essential features of the sliding control and curvature control models, it oversimplifies the normal-force model, because in the three-dimensional axoneme there are radial and transverse forces acting on the doublets as the axoneme bends. Yet the two-dimensional model does not distinguish between them. To bridge this gap, in other work (Sartori et al., 2015) we developed a full three-dimensional model of the axoneme to calculate the radial and transverse stresses. The three-dimensional model shows that even when there is a static curvature (without twist), normal (transverse) forces are not antagonistic across the centerline and therefore cannot serve as a control parameter for motors.\n\n### Relation with past work\n\nEarlier results showed that sliding control can account for the beating patterns of sperm (Camalet and J\u00fclicher, 2000; Riedel-Kruse et al., 2007; Brokaw, 1975). This is consistent with the present results because the bull sperm axoneme is approximately five times longer than the Chlamydomonas axoneme and we have shown that sliding control can lead to bend propagation in long axonemes (Figure 5 and see Brokaw, 2005). Thus, it is possible that different control mechanisms operate in different cilia and flagella, with sliding control being used in longer axonemes and curvature control being used in shorter ones. However we do note that curvature control models can account for the bull sperm data (Riedel-Kruse et al., 2007), as well as data from other sperm (Brokaw, 2002; Brokaw, 1985; Bayly and Wilson, 2015), so there is no strong morphological evidence favoring either sliding or curvature control in sperm. The normal-force model produces beating patterns that resemble those of sperm (Lindemann, 1994b; Bayly and Wilson, 2015; Bayly and Wilson, 2014). However, these models rely on there being an asymmetry which is small and variable in sperm, arguing against normal-force control. Thus, the curvature control model, unlike the other two models, robustly describes symmetric and asymmetric beats in short and long axonemes, and could serve as a 'universal' regulator of flagellar mechanics.\n\n### Dynamic curvature control as a mechanism for motor regulation\n\nAn unexpected feature of our curvature control model is that the motor force depends only on the time derivative of the curvature. This follows from the fact that the curvature response function $\\beta$ has no real part (Table\u20091 and 2, see Theoretical Model section). Such a model is fundamentally different from the current views of curvature control, in which motors are thought to respond to instantaneous curvature (Brokaw, 1972; Brokaw, 2002; Brokaw, 2009) and not to its time derivative.\n\nWhile motors can respond to time derivatives of sliding displacement through their force-velocity relation, it is hard to understand how a similar mechanism could apply to curvature. One possibility is that there is a curvature adaptation system analogous to that of sensory systems, like the signaling pathway of bacterial chemotaxis (Macnab and Koshland, 1972; Yi et al., 2000; Shimizu et al., 2010). In an adaptation mechanism, curvature (or motor activity) would be 'remembered', and the average curvature (or motor activity) over past times would in turn down-regulate the activity of the motors on a long time-scale. Such regulation could occur, for example, via phosphorylation sites in the dynein regulatory complex or the radial spokes (Witman, 2009; Smith and Yang, 2004; Porter and Sale, 2000). Just as methylation of the chemoreceptors of bacteria modifies their ligand affinity, phosphorylation of regulatory elements within the axoneme could modify the motor sensitivity to curvature over times long compared to the period of the beat.\n\nThe molecular mechanisms underlying curvature sensing are unknown. A difficulty with dyneins directly sensing microtubule curvature is that the strain in a curved microtubule (radius of curvature 4\u00a0\u03bcm) is very small (\u22481%), corresponding to a sub-angstrom strain in a tubulin dimer. Such a small strain would be difficult for an individual dynein microtubule-binding domain to detect, though this difficulty could be circumvented if dynein binding were cooperative, as found for microtubule curvature-sensing by doublecortin (Bechstedt et al., 2014). On the other hand, indirect curvature-sensing mechanisms that rely on the central pair pathway (Witman, 2009) are difficult to reconcile with mutants missing the central pair and radial spokes (Yagi and Kamiya, 2000; Frey et al., 1997). Thus, our findings highlight the question of how curvature might be sensed in the axoneme.\n\n### Independence of static and dynamic waveform components\n\nOur dynamic curvature control model adds to the view that dynamic and static components of the beat are regulated independently. The problem with models in which dynein activity is regulated by the instantaneous value of the curvature is that both the static and dynamic components of the beat would contribute to regulation and hence the dynamic component of the waveform would be highly dependent on the static component (Sartori, 2015). Yet the dynamic beats of wild type and mbo2 are similar, as also noted in (Eshel and Brokaw, 1987). Our dynamic curvature control model provides a solution to this problem because static curvature is 'adapted' away. We now bring together several lines of evidence supporting the notion that the static and dynamic modes are separable in their origin and in their affect on the beat.\n\nIf the dynamic and static modes are indeed independently controlled, the dynamic motor response is robust to changes in the asymmetry. This has important biological implications: power generation (the beat) and steering (the asymmetry) can be independently controlled so that the swimming direction can be adjusted without having to alter the motor properties. We note, however, that the molecular origin of asymmetry is not known nor is the mechanism by which the mbo2 mutation leads to symmetric beats (see Geyer et al., 2016 for a discussion of possible mechanisms).\n\n### Phase of motor activity during the beat\n\nOur work predicts how the timing of motor activity drives the bending of the axoneme during the beat. The simplest way to understand the spatio-temporal relationship between motor force, $f$, and axoneme curvature, $\u03c8\u02d9$, is to use the plane-wave approximation $\u03c8\u2062(s,t)=s\u2062i\u2062n\u2062(\\omega\u2062t-2\u2062\\pi\u2062s/\\lambda)$, where $\\omega$ is the frequency in radians per second and $\\lambda$ is the wavelength in microns. Differentiation with respect to time $t$, leads to a phase advance by $\\pi/2$ (90 degrees or a quarter of a cycle). This can be appreciated by noting that the cosine function (the derivative of sine) reaches its maximum before the sine function\u00a0(in the complex representation, $e\u2062x\u2062p\u2062[i\u2062(\\omega\u2062t-2\u2062\\pi\u2062s/\\lambda)]$, differentiation with respect to time leads to multiplication by $i$, which is equivalent to a phase lead of $\\pi/2$, since $i=e\u2062x\u2062p\u2062(i\u2062\\pi/2)$). For a traveling wave moving from base to tip (i.e. moving in the direction of increasing arc-length, $s$), the wavelength is positive and differentiation with respect to arc-length leads to a phase delay by $\\pi/2$. This can be appreciated by noting that $\u2212cos(s)$, the derivative of $s\u2062i\u2062n\u2062(-s)$, reaches its maximum after the original function. Thus, time derivatives lead and spatial derivatives lag.\n\nUsing these differentiation rules, we can represent the phase relations between the axonemal parameters on a phase plot (Figure 9A). For the reference phase, we use the sliding displacement, \u0394, or the tangent angle \u03c8, which are proportional to each other in the plane-wave approximation (\u0394=a\u2062\u03c8): we define them (arbitrarily) to zero degrees (compass bearing east, E). The sliding velocity \u2202t\u2061\u0394 has a phase lead of \u03c0/2 (i.e. compass bearing N on the phase plot). The curvature, the derivative of tangent angle with respect to arc-length, \u2202s\u2061\u03c8=\u03c8\u02d9, has a phase delay of \u03c0/2 (i.e. S on the phase plot). The key parameter is motor force, which, in the curvature-control model, is f1=\u03c7\u2032\u03941+i\u03b2\u2032\u2032\u00a0\u2202s\u03c81\u2248[a\u03c7\u2032+\u03b2\u2032\u2032(2\u03c0/\u03bb)]\u03c81. Using the parameters for wild type axonemes in Table 1, the sliding stiffness \u03c7\u2032=+20\u2062n\u2062N/\u03bc\u2062m2 and the dynamic curvature coefficient \u03b2\u2032\u2032=-6.5\u2062n\u2062N, together with a=0.066\u2062\u03bc\u2062m and \u03bb=L=11.7\u2062\u03bc\u2062m, we find that the absolute magnitude of the first term in the square bracket is smaller than the second term, which is negative. Thus, in the plane-wave approximation, the sign of the force is opposite that of the tangent angle and so the motor force is out of phase with the tangent angle and sliding (compass bearing W).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/13258/elife-13258-fig9-v2.jpg)\n\n**Figure 9.:** (A) Polar representation of the phases of sliding $\u0394$, curvature $\u03c8\u02d9$, normal force $f_{\u27c2}$ and the sliding force $f$ for a beating axoneme regulated by curvature. For a plane wave, $\u03c8\u2062(s,t)=sin\u2061(\\omega\u2062t-2\u2062\\pi\u2062s/\\lambda)$, a time derivative rotates the phase counter-clockwise through $\\pi/2$ radians, while a spatial derivative rotates the phase clockwise by $\\pi/2$ radians. Deviations from the compass points (E, S, W, N) are due to deviations of the axonemal beat from a plane wave. Machin\u2019s prediction for an optimum flagellum is shown as the red dashed line. (B) Time evolution of the quantities in A.(C) Illustration of the local sliding force for a shape of a symmetrically beating axoneme (e.g. mbo2). The regions of motor activity on the upper and lower filament are highlighted in blue and green respectively. (D) Asymmetrically beating wild type axoneme with two shapes highlighted during the breast and recovery strokes. The arrows represent direction of motion of the axoneme, and the colored patches represent the local sliding force on the respective filaments (see panel C and Figure 1).\n\nAn exact calculation shows that the phases predicted by the curvature control model are similar to those of the plane-wave approximation. Thus, the tangent angle (Figure 9A, gray arrow) lags slightly behind the sliding displacement (Figure 9A, black arrow, E) due to the delay associated with the basal compliances. Furthermore, the curvature (Figure 9A, blue arrow) lags the plane-wave curvature (S) due to the basal compliance and because the wavelength has a small imaginary component. Likewise, the motor force (Figure 9A, red arrow) lags slightly behind the plane-wave force (W). Thus, the exact theory shows that curvature leads the motor force by approximately one quarter of a cycle and is nearly out of phase with the sliding displacement. The time series for the various parameters are plotted in Figure 9B.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/13258/elife-13258-fig10-v2.jpg)\n\n**Figure 10.:** See text for details\n\nFrom these phase relations, we can use the curvature-control model to predict the activity of the motors in relation to the curvature of the axoneme. These predictions can then be compared to structural studies, such as cryo-electon microscopy. Because the motor force lags the curvature (Figure 9B), the motor force is in phase with the spatial derivative of the curvature. Thus, the motor force is positive in the region marked green in Figure 9D and negative in the blue region. In other words, the motors whose bases are statically attached to the upper filament are actively interacting with the lower filament with their microtubule-binding domains to drive the bend that will develop at this place as the wave travels towards the distal tip. The motors with opposite polarity (i.e. on the opposite side of the axoneme) will be active proximal to the bend. Such a relative phase of the motor activity with respect to curvature is a consequence of the dynamic curvature mechanism: the force that generates the curvature (Figure 9C, green) is activated by the rate of change in curvature with a sign ($\\beta^{\u2032\u2032}\u00a0<\u00a00$) consistent with our sign convention. Note that if these predictions are to be compared to experiments, then the static curvature needs to be subtracted.\n\n### Efficiency and energetics\n\nOur finding that the motor force is nearly out of phase with the sliding displacement (and tangent angle) shows that the Chlamydomonas flagellum does not operate close to optimal efficiency. The maximally efficient phase was defined as the phase of the motors that maximized the swimming speed while minimizing the elastic and viscous dissipation (i.e. minimizing energy consumption) (Machin, 1958). Machin showed that for a plane wave, the optimum occurs when the phase of the motors is at 225 degrees (compass bearing SW), considerably different from our predicted motor phase, which is <180 degrees. Thus, unlike sperm, which Machin calculated to be close to the optimum, the short cilia of Chlamydomonas deviate considerably from optimum efficiency.\n\nThe reason that Chlamydomonas deviates from optimum efficiency is that the elastic dissipation dominates over the viscous dissipation. Elastic dissipation arises from the straightening of the bent axoneme and the loss of the associated bending energy\u00a0(for an asymmetric beat like that of Chlamydomonas, in which the static and dynamic modes have approximately equal amplitudes, the elastic loss is almost twice as great as that for a symmetric beat). Indeed, in the plane wave approximation, the ratio of the viscous to elastic dissipation is $(\\pi/2)(L/\u2113)^{4}\u226a1$. This inequality, which was noted recently (Chen et al., 2015), holds for Chlamydomonas because Chlamydomonas axonemes are shorter than the critical length\u00a0($\u2113$). By contrast, the inequality is $\u226b1$ for the much longer mammalian sperm axonemes (and $\u22481$ for sea-urchin sperm). Note that the dependence of the critical length (Equation 9) on the mechanical parameters - drag coefficient and bending rigidity - is very weak due to the 1/4 power dependence. As a result, even if the bending rigidity were five times smaller than our estimate (Pelle et al., 2009), our argument would still be valid. Thus, the short length of Chlamydomonas axonemes has important implications for the energetics of the flagellar beat.\n\nThe reasoning behind the relatively small viscous dissipation also allows us to understand why the curvature mechanism is sensitive to the rate of change of curvature\u00a0rather than the instantaneous value. Equation 5 for a symmetric plane wave ($C_{0}=0$) regulated by curvature (using $f_{1}=\u03c7a\u03c8$$+\\beta\u03c8\u02d9$$=\u03c7a\u03c8+i\\beta\u03c82\\pi/\\lambda$) gives\n\n$$\n\u03be_{n}\\omega+a^{2}\u03c7^{\u2032\u2032}(2\\pi/\\lambda)^{2}\u2212a\\beta^{\u2032}(2\\pi/\\lambda)^{3}=0\u03ba(2\\pi/\\lambda)^{4}+a^{2}\u03c7^{\u2032}(2\\pi/\\lambda)^{2}+a\\beta^{\u2032\u2032}(2\\pi/\\lambda)^{3}=0\n$$\n\nThe upper line of Equation 10 shows that $\\beta^{\u2032}$ produces an active motor force to counter the viscous dissipation due to the fluid and the inter-filament sliding. If the fluid damping coefficient is small, then we can have solutions with $\u03c7^{\u2032\u2032}=\\beta^{\u2032}\u22480$. Furthermore, if the sliding response coefficient is small ($\u03c7^{\u2032},\u03c7^{\u2032\u2032}$ small) then $\u2223\\beta^{\u2032}/\\beta^{\u2032\u2032}\u2223\u2248(\\lambda/l)^{4}\u226a1$, showing that the dynamic curvature response dominates over the instantaneous response. Thus, the dynamic curvature dependence is a consequence of the viscous forces being small compared to the elastic forces.\n\n### Summary and outlook\n\nWe finish the discussion by noting that the short length of Chlamydomonas flagella, relative to the critical length $\u2113=2\\pi(\u03ba/\u03be_{n}\\omega)^{1/4}$ is key to understanding not just the energetics, but also the mechanism of motor control. Indeed, it was the shortness of the axonemes that implied that the sliding control model only generated a standing wave and so could not recapitulate the observed traveling wave. Furthermore, it was the shortness that gave rise to the imaginary curvature control coefficient, leading to the dynamic curvature-control mechanism. In addition, the shortness implies that the viscous dissipation is small compared to the elastic dissipation. These conclusions are robust because the power of 1/4 in the expression for the critical length makes it quite insensitive to the parameter values. The long length of sperm leads to quantitatively different properties (e.g the viscous and elastic energies are of similar magnitude, leading to efficient motion, as argued by Machin). Whether the long axonemes use the same dynamic curvature-control mechanism as short axonemes will require further study.\n\n## Materials and methods\n\n### Preparation and reactivation of axonemes\n\nAxonemes from Chlamydomonas reinhardtii wild type cells (CC-125 wild type mt+ 137c, R.P. Levine via N.W. Gillham, 1968) and mutant cells that move backwards only (CC-2377 mbo2 mt-, David Luck, Rockefeller University, May 1989) were purified and reactivated. The procedures described in the following are detailed in Alper et al. (2013).\n\nChemicals were purchased from Sigma Aldrich, MO if not stated otherwise. In brief, cells were grown in TAP+P medium under conditions of illumination (2x75 W, fluorescent bulb) and air bubbling at 24\u00b0C over the course of 2 days, to a final density of 106\u00a0cells/ml. Flagella were isolated using dibucaine, then purified on a 25% sucrose cushion and demembranated in HMDEK (30\u2009mM HEPES-KOH, 5\u00a0mM MgSO$_{4}$, 1\u00a0mM DTT, 1\u00a0mM EGTA, 50\u00a0mM potassium acetate, pH 7.4) augmented with 1% (v/v) Igpal and 0.2\u00a0mM Pefabloc SC. The membrane-free axonemes were resuspended in HMDEK plus 1% (w/v) polyethylene glycol (molecular weight 20\u2009kDa), 30% sucrose, 0.2\u00a0mM Pefabloc and stored at \u221280\u00b0C. Prior to reactivation, axonemes were thawed at room temperature, then kept on ice. Thawed axonemes were used for up to 2\u2009hr.\n\nReactivation was performed in flow chambers of depth 100\u00a0\u03bcm, built from easy-cleaned glass and double-sided sticky tape. Thawed axonemes were diluted in HMDEKP reactivation buffer containing 1\u00a0mM\u00a0ATP and an ATP-regeneration system (5 units/ml creatine kinase, 6\u2009mM creatine phosphate) used to maintain the ATP concentration. The axoneme dilution was infused into a glass chamber, which was blocked using casein\u00a0solution (from bovine milk, 2 mg/mL) for 10 min and then sealed with vacuum grease. Prior to imaging, the sample was equilibrated on the microscope for 5 min and data was collected for a maximum time of 20 min.\n\n### Imaging of axonemes\n\nThe reactivated axonemes were imaged by either phase constrast microscopy (wild type axonemes) or darkfield microscopy (mbo2 axonemes). Phase contrast microscopy was set up on an inverted Zeiss Axiovert S100-TV microscope using a Zeiss 63\u00d7 Plan-Apochromat NA 1.4 Phase3 oil lens in combination with a 1.6\u00d7 tube lens and a Zeiss oil condenser (NA 1.4). Data were acquired using a EoSens 3CL CMOS highspeed camera. The effective pixel size was 139\u2009nm/pixel. Darkfield microscopy was set up on an inverted Zeiss Axiovert 200 microscope using a Zeiss 63\u00d7\u00a0Plan achromat NA iris 0.7\u20131.4 oil lens in combination with an 1.25\u00d7\u00a0tube lens and a Zeiss oil darkfield condenser (NA 1.4). Data were acquired using a pco dmaxS highspeed camera. In both cases, the illumination was performed using a Sola light engine with a 455 LP filter. Movies of up to 3000 frames were recorded at a frame rate of 1000 fps. The sample temperature was kept constant at 24\u00b0C using an objective heater (Chromaphor).\n\n### High precision tracking of isolated axonemes\n\nTo track the axoneme in each movie frame with nm precision, the Matlab-based software tool FIESTA was used (Ruhnow et al., 2011). Prior to tracking, movies were background subtracted to remove static inhomogeneities arising from uneven illumination and dirt particles. The background image contained the mean intensity in each pixel calculated over the entire movie. This procedure increased the signal-to-noise ratio by a factor of 3 (Alper et al., 2013). Phase-contrast images were inverted; darkfield images were tracked directly.\n\nThe tracking algorithm FIESTA uses manual thresholding to determine the filament skeleton, which is then divided into square segments. During tracking, the filament position in each segment is determined independently. For tracking, a segment size of 733 nm (approximately 5x5 pixels) was used, corresponding to the following program settings: a full width at half maximum of 750\u00a0nm, and a \u201creduced box size for tracking especially curved filaments\u201d of 30%. Along the arc-length of each filament, 20 equally spaced segments were fitted using two-dimensional Gaussian functions. Two examples of spline-fitted shapes are presented in Figure 2Ai and Bi superimposed on the image. The mean localization uncertainty of the center position of each of these segments was about 5\u00a0nm (Figure 2Aiv and Biv). For localization of the ends, the program uses a different fitting function, resulting in an increased uncertainty.\n",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "86d3708a-cc16-4eab-9e98-e19aed10f844",
+      "submission_id": "26b367a0-5cb4-468e-adf9-9d34b7a9a141",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Raymond E Goldstein, University of Cambridge , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.13258.018](https://doi.org/10.7554/eLife.13258.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Dynamic curvature regulation accounts for the symmetric and asymmetric beats of Chlamydomonas flagella\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Raymond E. Goldstein as the Reviewing Editor and Aviv Regev as the Senior Editor. One of the reviewers has agreed to reveal his identity: Michael J. Shelley.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThrough a combination of experiment and theory this paper analyzes the beating waveforms of Chlamydomonas flagella as a means of distinguishing between different microscopic models. Using isolated reactivated axonemes of both wildtype and mutant Chlamydomonas the authors find strong evidence that regulation by curvature if favoured over that by sliding or normal forces. In addition, the analysis supports the regulation by the time-varying curvature rather than its static value.\n\nEssential revisions:\n\n1) The reviewers were in agreement that the paper, while important and insightful, is difficult to follow in its present form. For instance, it is not always very well organized, especially since the fully nonlinear model is never fully specified, and one has to bounce around the text to try and piece together what is being done.\n\n2) Accessibility. The mathematics behind the continuum model is not easily accessible to a general biological readership. Although the authors have done some work to make it more easily understandable, we feel that more needs to be done. One of the main things is to extend the level of explicit derivation within the Appendix, and then in the main paper reference to specific equations, rather than generically to \"the Appendix\". Also, it would be beneficial to expand on points like: i) why does (4) show that an oscillatory f1 produces dynamic bending? ii) in the subsection second paragraph of the subsection \u201cThree mechanisms of motor control\u201d, why are sliding and curvature controls \"linear\" (in what?) and normal force control \"non-linear\"? iii) in the subsection \u201cDynamic curvature control as a mechanism for motor regulation\u201d, why does the dependence on time-derivative of the curvature follow from \u03b2(\u03c9) having no real part? iv) in the Appendix, make more explicit the interpretation of the boundary conditions.\n\n3) With respect to that model itself, it would be nice to see a better explanation of how two coupled elastica moving under the constraints of equal spacing and (equal and opposite) sliding interactions, must yield the form of center-line dynamics given in (11). Also, has there been any fuller 1st principles modeling, say from microscopics, of the form that sliding interactions must take, especially under active forcing from motor-proteins ala Figure 1?\n\n4) Please clarify that the nonlinear simulations were performed using models for sliding regulation \u2013 at least by sliding or curvature feedback \u2013 using constant coefficient functions? If not, what were they (that is, what were their frequency dependencies). Was there an s-dependence in those coefficient functions?\n\n5) Having made the arguments against sliding and normal force mechanisms and for curvature control, what would be the prediction of this model for changes in beat frequency and shape for increases in solvent viscosity? (ala Figure 4 in Fauci's Annual Reviews of Fluid Mechanics article).\n\n6) The wild type time-averaged shape is claimed to have constant curvature, equivalent to the black curve in Figure 3A(ii) being a line. We are not convinced that this is the case. At the very least there is an initial bend, then again a change in slope at ~5\u03bcm. We would like to see a plot of the first and second derivatives of \u03c80(s), showing directly the local curvature and the local force component f0(s). Looking at the curve, it seems that there will be components to f0(s) localised around the base and at s~5\u03bcm. How would these affect the conclusions on the n=0 behaviour of the motor response coefficients?\n\n7) The authors claim that the force leading to the constant curvature is localised at the tip. However, there are no molecular motors at the flagellar tip. Can the authors comment on this discrepancy?\n\n8) One of the main conclusions of the paper is the suggestion that the static and dynamic components of the curvature are regulated independently. The authors comment on the origin of the dynamic regulation. Could they also comment on the origin of the static curvature? Based on what is known of the mbo2 mutation, is it possible to speculate on how might this affect the static curvature?\n\n9) The authors state that the 2D model oversimplifies the effect of normal force, and have developed a 3D model within a working paper (Sartori et al., 2015) which from its title suggest that normal forces can account for motor regulation. Why, then, was the 2D model used here instead of the 3D one? Wouldn't the conclusions presented here be negated, instead of confirmed, by the full 3D model?\n\n10) In the variational principle outlined in the Appendix the contribution to the energy functional from the work done by the motors is written as f\u0394 and the variation is done assuming only that f is a function of arclength but not itself functionally dependent on the angle \u03c8. But later when specific forms of f are considered they do depend on the tangent angle \u03c8. This appears to be an inconsistency and we request clarification.\n",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "32982040-cd7c-4ae0-8a4b-b2582cecb7ae",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C1",
+      "claim": "Cilia and flagella are model systems for studying how mechanical forces control morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Cilia and flagella are model systems for studying how mechanical forces control morphology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the research context presented in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "6193d8b5-939f-4bd2-839b-3d65396e8930",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C2",
+      "claim": "The periodic bending motion of cilia and flagella is thought to arise from mechanical feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "The periodic bending motion of cilia and flagella is thought to arise from mechanical feedback: dynein motors generate sliding forces that bend the flagellum, and bending leads to deformations and stresses, which feed back and regulate the motors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established scientific understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "beefe494-d1df-4465-a0b7-ba0f5696c35c",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C3",
+      "claim": "Dynein motors generate sliding forces that bend the flagellum.",
+      "claim_type": "EXPLICIT",
+      "source": "The periodic bending motion of cilia and flagella is thought to arise from mechanical feedback: dynein motors generate sliding forces that bend the flagellum, and bending leads to deformations and stresses, which feed back and regulate the motors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic description of flagellar motion based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "1961b78b-f232-4113-838f-63a94eac761e",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C4",
+      "claim": "Bending of flagella leads to deformations and stresses, which feed back and regulate the motors.",
+      "claim_type": "EXPLICIT",
+      "source": "The periodic bending motion of cilia and flagella is thought to arise from mechanical feedback: dynein motors generate sliding forces that bend the flagellum, and bending leads to deformations and stresses, which feed back and regulate the motors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the feedback mechanism in flagellar motion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "1dfd67a0-a573-408c-8858-1113bc27ba3f",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C5",
+      "claim": "Three alternative feedback mechanisms have been proposed for flagellar beat regulation: regulation by sliding forces, regulation by curvature, and regulation by normal forces.",
+      "claim_type": "EXPLICIT",
+      "source": "Three alternative feedback mechanisms have been proposed: regulation by the sliding forces, regulation by the curvature of the flagellum, and regulation by the normal forces that deform the cross-section of the flagellum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement summarizes existing theoretical proposals in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "b2645bdd-d509-4ff5-9a98-af24c93ad759",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C6",
+      "claim": "The curvature control mechanism accords best with the bending waveforms of Chlamydomonas flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we combined theoretical and experimental approaches to show that the curvature control mechanism is the one that accords best with the bending waveforms of Chlamydomonas flagella.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by experimental data and theoretical modeling presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "53aedfff-d514-47ff-a1fe-ac63c721ab1b",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C7",
+      "claim": "Motors respond to the time derivative of curvature, rather than curvature itself.",
+      "claim_type": "EXPLICIT",
+      "source": "We make the surprising prediction that the motors respond to the time derivative of curvature, rather than curvature itself, hinting at an adaptation mechanism controlling the flagellar beat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prediction is derived from the theoretical model and fitting to experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "9536b0ce-2ab5-4970-ab76-0ef89d635674",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C8",
+      "claim": "An adaptation mechanism may control the flagellar beat.",
+      "claim_type": "EXPLICIT",
+      "source": "We make the surprising prediction that the motors respond to the time derivative of curvature, rather than curvature itself, hinting at an adaptation mechanism controlling the flagellar beat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the finding about time derivative response.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "2a566b9b-5dcd-4cd4-8804-e21ac26dee6a",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C9",
+      "claim": "The axoneme contains nine doublet microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "The internal motile structure, the axoneme, contains nine doublet microtubules, a central pair of single microtubules, motor proteins of the axonemal dynein family and a large number of additional structural and regulatory proteins (Pazour et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established structural fact about axonemes, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "3fd4e509-ea5a-4a84-835b-28e1147be37f",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C10",
+      "claim": "The axoneme contains a central pair of single microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "The internal motile structure, the axoneme, contains nine doublet microtubules, a central pair of single microtubules, motor proteins of the axonemal dynein family and a large number of additional structural and regulatory proteins (Pazour et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established structural fact about axonemes, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "2af2c802-6e50-4dc2-b615-a1c3cf2946a3",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C11",
+      "claim": "Axonemal dyneins power the beat by generating sliding forces between adjacent doublets.",
+      "claim_type": "EXPLICIT",
+      "source": "The axonemal dyneins power the beat by generating sliding forces between adjacent doublets (Summers and Gibbons, 1971; Brokaw, 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental mechanism of flagellar motion, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "eef125bf-38de-4f16-9adf-ad0a891f59cb",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C12",
+      "claim": "Sliding is converted to bending by constraints at the base of the axoneme and/or along the length of the axoneme.",
+      "claim_type": "EXPLICIT",
+      "source": "The sliding is then converted to bending (Satir, 1965) by constraints at the base of the axoneme (e.g. the basal body) and/or along the length of the axoneme (e.g. nexin links) (Brokaw, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mechanical conversion process, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "ccc297cd-5764-4933-bf7e-ddc2f88bd202",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C13",
+      "claim": "It is not known how the activities of the dyneins are coordinated in space and time to produce the periodic beating pattern of the axoneme.",
+      "claim_type": "EXPLICIT",
+      "source": "While the mechanism by which the sliding of a doublet is converted to bending is well established, it is not known how the activities of the dyneins are coordinated in space and time to produce the periodic beating pattern of the axoneme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in current knowledge that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "33f7fdad-6067-410d-82e6-fc2dcfcdd606",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C14",
+      "claim": "Bending the axoneme in one direction requires higher dynein activity on one side of the axoneme than on the other.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, bending the axoneme in one direction requires higher dynein activity on one side of the axoneme than on the other; if the activities are equal then the forces will cancel and there will be no bending.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the mechanical structure of the axoneme.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "814300f4-f222-40a2-9d85-5a938d0a2821",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C15",
+      "claim": "The switching of dynein activity is rapid, taking place twice per beat cycle and at rates above 100 times per second for Chlamydomonas.",
+      "claim_type": "EXPLICIT",
+      "source": "The switching of dynein activity is rapid, taking place twice per beat cycle and at rates above 100 times per second for Chlamydomonas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation about the dynamics of Chlamydomonas flagella.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "20da2980-f9c3-4113-842e-13fd6c7c018c",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C16",
+      "claim": "The coordination required for rapidly alternating bending is thought to result from mechanical feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "The coordination required for such rapidly alternating bending is thought to result from mechanical feedback: the axonemal dyneins generate forces that bend and deform the axoneme; and the deformations, in turn, regulate the dyneins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical framework for understanding dynein coordination.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "e2839127-95d0-4d83-bddd-1edd032a0e42",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C17",
+      "claim": "In the sliding control mechanism, dyneins behave as 'slip bonds' and detach when subject to forces acting parallel to the long axis of the microtubule doublets that oppose sliding.",
+      "claim_type": "EXPLICIT",
+      "source": "(i) In the sliding control-mechanism, the dyneins behave as 'slip bonds': they detach when subject to forces acting parallel to the long axis of the microtubule doublets and that oppose sliding (Brokaw, 1975; J\u00fclicher and Prost, 1997; Camalet and J\u00fclicher, 2000; Riedel-Kruse et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes one of the proposed regulatory mechanisms, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "3192ebb3-9c4e-4a18-a969-113e912cbf84",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C18",
+      "claim": "In the curvature-control mechanism, the detachment of dynein is regulated by doublet curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "(ii) In the curvature-control mechanism, the detachment of dynein is regulated by doublet curvature (Morita and Shingyoji, 2004; Brokaw, 1972; Brokaw, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes another proposed regulatory mechanism, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "9a24c055-710b-44f8-806e-c57dadb03459",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C19",
+      "claim": "In the normal-force control mechanism (geometric clutch), the detachment of dynein is regulated by transverse forces that act to separate adjacent doublets when they are curved.",
+      "claim_type": "EXPLICIT",
+      "source": "(iii) In the normal-force control mechanism, also called the geometric clutch, the detachment of dynein is regulated by transverse forces that act to separate adjacent doublets when they are curved (Lindemann, 1994b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the third proposed regulatory mechanism, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "bc1b9f5e-d3ef-4576-85ec-76215dc12b82",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C20",
+      "claim": "The two-dimensional model projects the cross-section of the three-dimensional axoneme onto a pair of filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "In the two dimensional model, we project the cross-section of the three-dimensional axoneme onto a pair of filaments (Figure 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the theoretical modeling approach used in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "2c73db59-e8d9-4c1b-89b1-5ef6d932d791",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C21",
+      "claim": "The two filaments in the model have the same polarity with all motors moving towards the base.",
+      "claim_type": "EXPLICIT",
+      "source": "The two filaments have the same polarity (all motors move towards the base) and have combined bending rigidity \u03ba.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specification of the theoretical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "c2e6b370-af79-4ba7-987d-7bf3d5cb2675",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C25",
+      "claim": "Bending an axoneme into a shape with constant curvature requires the integrated motor force to be independent of arc-length.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the static force-balance equation, bending an axoneme into a shape with constant curvature requires the integrated motor force to be independent of arc-length, which in turn requires the motor forces be concentrated near the distal end (Mukundan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical inference from the force-balance equation, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "03e9315e-d6c8-4a8e-a44c-a868114a61ef",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C26",
+      "claim": "The fundamental mode accounts for 90% of the total power in the tangent angle power spectrum.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the peak at the fundamental frequency (n=1) accounts for 90% of the total power, we neglected the higher harmonics (n = 2,3,4, ...) for reconstructing the flagellar shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the Fourier analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "88b3d00a-b128-4a31-b4f8-909bf72d223c",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C27",
+      "claim": "Using just the n=0 and n=1 modes gave excellent reconstitutions of both the wild type and mbo2 beats.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that using just the n=0 and n=1 modes gave excellent reconstitutions of both the wild type and mbo2 beats (Figure 3C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the data analysis, shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "6722936d-6315-4c88-8156-7d9c404c3b26",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C28",
+      "claim": "The static and fundamental modes provide a good description of the beats.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the static and fundamental modes provide a good description of the beats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "71629eda-ee18-469c-be8b-8a1e350c062a",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C31",
+      "claim": "The time-averaged shape of wild type axonemes is close to a semi-circular arc of radius \u22484 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "This corresponds to an approximately constant static curvature \u22480.25 rad/\u03bcm, and indicates that the time-averaged shape is close to a semi-circular arc of radius \u22484 \u03bcm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the measured static curvature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "ed419d26-1f90-4dba-a0b1-766a89568d0c",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C32",
+      "claim": "mbo2 mutant axonemes have a small static mode, with a curvature \u22480.025 rad/\u03bcm, corresponding to an approximately symmetric waveform.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, mbo2 mutant axonemes have a small static mode, with a curvature \u22480.025 rad/\u03bcm, corresponding to an approximately symmetric waveform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "6c4241c9-5c18-49ae-87a0-c0060a806bf1",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C37",
+      "claim": "Both wild type and mutant axonemes have approximately sinusoidal dynamic beats whose amplitudes dip in the middle of the axoneme and whose wavelengths are approximately equal to their lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both wild type and mutant axonemes have approximately sinusoidal dynamic beats whose amplitudes dip in the middle of the axoneme and whose wavelengths are approximately equal to their lengths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "ebbea892-1fb9-41fc-8582-9a790350826a",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C38",
+      "claim": "The curvature-control model provided a good fit to the experimental data for both wild type and mbo2 axonemes.",
+      "claim_type": "EXPLICIT",
+      "source": "The curvature control model provides a good fit to the experimental data for both wild type and mbo2 axonemes (Figure 4A and B, middle panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from fitting the theoretical model to experimental data, shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "af5814f4-acc4-4198-b29b-6d41f7c63e80",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C39",
+      "claim": "The sliding-control model provided a poor fit to the observed beating patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "The sliding-control model provides a poor fit to the observed beating patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from fitting the theoretical model to experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "b1eaac68-5985-43bd-9c34-24057d1dc417",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C40",
+      "claim": "In the sliding-control model, the real and imaginary parts of the predicted mode are in anti-phase, corresponding to a standing wave and contradicting the observed propagating wave.",
+      "claim_type": "EXPLICIT",
+      "source": "In the latter case, the real and imaginary parts of the predicted mode are in anti-phase (Figure 4A, left panel), corresponding to a standing wave and contradicting the observed propagating wave.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the theoretical model fitting, shown in the referenced figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "ce98de72-f92a-4600-9d11-8c48f1c56706",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C41",
+      "claim": "The normal-force model provided good fits to the experimental data for wild type axonemes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar good agreement for wild type axonemes was found with the normal-force model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from fitting the theoretical model to experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "69f4b041-bec2-49ef-b36e-4411a3074120",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C42",
+      "claim": "Sliding control cannot produce wave propagation for axonemes as short as those of Chlamydomonas.",
+      "claim_type": "EXPLICIT",
+      "source": "We argued that the reason for this is that sliding control cannot produce wave propagation for axonemes as short as those of Chlamydomonas (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical argument supported by model predictions shown in the referenced figure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "79ab9e2e-d6ff-4c9a-b85b-8c63d75edc60",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C43",
+      "claim": "The normal-force model relies on the presence of static curvature.",
+      "claim_type": "EXPLICIT",
+      "source": "While the normal-force model (also termed the geometric clutch model) provided good fits to the experimental data, it relies on the presence of static curvature (Bayly and Wilson, 2015), which varies greatly between the mbo2 and wild type axonemes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the requirements of the normal-force model, supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "6ffdac50-cc47-4dc2-a034-0be9cc498536",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C44",
+      "claim": "The control parameters in the normal-force model had to be varied over a wide range to fit the data from different axonemes.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result of this large difference in static curvature, the control parameters in this model had to be varied over a wide range to fit the data from the different axonemes (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from fitting the normal-force model to experimental data, shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "424a05f5-7778-43c4-aac7-04c73ca1466d",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C45",
+      "claim": "The curvature-control model provided a good fit to the experimental data with similar parameters for mbo2 and wild type axonemes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the curvature-control model provided a good fit to the experimental data with similar parameters for mbo2 and wild type axonemes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from fitting the curvature-control model to experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "bb49d675-033b-4501-8960-23717d30c35b",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C46",
+      "claim": "Only the curvature-control model is fully consistent with the experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that only the curvature-control model is fully consistent with our experimental data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, based on comparing model predictions to experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "df3b0b1e-0903-43d5-a307-a1f12bae178c",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C47",
+      "claim": "The two-dimensional model oversimplifies the normal-force model because it does not distinguish between radial and transverse forces.",
+      "claim_type": "EXPLICIT",
+      "source": "While this captures the essential features of the sliding control and curvature control models, it oversimplifies the normal-force model, because in the three-dimensional axoneme there are radial and transverse forces acting on the doublets as the axoneme bends. Yet the two-dimensional model does not distinguish between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the two-dimensional model acknowledged by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "813cace2-2991-484a-9ec1-15cc0a295a13",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C48",
+      "claim": "A three-dimensional model shows that even when there is a static curvature (without twist), normal (transverse) forces are not antagonistic across the centerline and therefore cannot serve as a control parameter for motors.",
+      "claim_type": "EXPLICIT",
+      "source": "The three-dimensional model shows that even when there is a static curvature (without twist), normal (transverse) forces are not antagonistic across the centerline and therefore cannot serve as a control parameter for motors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from a three-dimensional model developed in other work by the authors.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "5ec1a630-71b7-44d6-9e1f-179dc637dd33",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C49",
+      "claim": "Sliding control can account for the beating patterns of sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier results showed that sliding control can account for the beating patterns of sperm (Camalet and J\u00fclicher, 2000; Riedel-Kruse et al., 2007; Brokaw, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of previous research findings, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "3660136b-110b-4f3d-8909-684e10664756",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C50",
+      "claim": "The bull sperm axoneme is approximately five times longer than the Chlamydomonas axoneme.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the present results because the bull sperm axoneme is approximately five times longer than the Chlamydomonas axoneme and we have shown that sliding control can lead to bend propagation in long axonemes (Figure 5 and see Brokaw, 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative observation about axoneme lengths.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "a56b9d04-de18-44e5-96b8-459abd4aaa8d",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C51",
+      "claim": "Sliding control can lead to bend propagation in long axonemes.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the present results because the bull sperm axoneme is approximately five times longer than the Chlamydomonas axoneme and we have shown that sliding control can lead to bend propagation in long axonemes (Figure 5 and see Brokaw, 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the theoretical model, shown in the referenced figure and supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "3684235f-a28d-4297-a16b-88565c1bd4d0",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C52",
+      "claim": "Different control mechanisms may operate in different cilia and flagella, with sliding control being used in longer axonemes and curvature control being used in shorter ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is possible that different control mechanisms operate in different cilia and flagella, with sliding control being used in longer axonemes and curvature control being used in shorter ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "da4b37b7-9f53-4817-9fd4-86ae846ca36c",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C53",
+      "claim": "Curvature control models can account for bull sperm data.",
+      "claim_type": "EXPLICIT",
+      "source": "However we do note that curvature control models can account for the bull sperm data (Riedel-Kruse et al., 2007), as well as data from other sperm (Brokaw, 2002; Brokaw, 1985; Bayly and Wilson, 2015), so there is no strong morphological evidence favoring either sliding or curvature control in sperm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of previous research findings, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "d35c559b-9312-4373-a543-002ca184afc9",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C54",
+      "claim": "The curvature control model robustly describes symmetric and asymmetric beats in short and long axonemes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the curvature control model, unlike the other two models, robustly describes symmetric and asymmetric beats in short and long axonemes, and could serve as a 'universal' regulator of flagellar mechanics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the comparison of different models.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "75402257-29c5-48c7-a431-5fd4e58c217c",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C55",
+      "claim": "The motor force depends only on the time derivative of the curvature in the curvature control model.",
+      "claim_type": "EXPLICIT",
+      "source": "An unexpected feature of our curvature control model is that the motor force depends only on the time derivative of the curvature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from fitting the model to experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "0d1f8d31-9da4-4feb-ae16-e6912a7bf750",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C57",
+      "claim": "Current views of curvature control assume motors respond to instantaneous curvature rather than its time derivative.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a model is fundamentally different from the current views of curvature control, in which motors are thought to respond to instantaneous curvature (Brokaw, 1972; Brokaw, 2002; Brokaw, 2009) and not to its time derivative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with previous theoretical models, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "c3d9447f-120e-4725-9127-4165ec43c1e4",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C58",
+      "claim": "There may be a curvature adaptation system analogous to that of sensory systems, like the signaling pathway of bacterial chemotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "One possibility is that there is a curvature adaptation system analogous to that of sensory systems, like the signaling pathway of bacterial chemotaxis (Macnab and Koshland, 1972; Yi et al., 2000; Shimizu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis to explain the time derivative response, supported by citations to analogous systems.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "a63473ee-95da-4807-a0ca-cd9acab5fef4",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C59",
+      "claim": "The molecular mechanisms underlying curvature sensing are unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular mechanisms underlying curvature sensing are unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "46094ca2-1fdc-4d86-af70-a5493b4b99b5",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C60",
+      "claim": "The strain in a curved microtubule (radius of curvature 4 \u03bcm) is very small (\u22481%), corresponding to a sub-angstrom strain in a tubulin dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "A difficulty with dyneins directly sensing microtubule curvature is that the strain in a curved microtubule (radius of curvature 4 \u03bcm) is very small (\u22481%), corresponding to a sub-angstrom strain in a tubulin dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the measured curvature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "793f7481-7c50-4dd2-af0b-5a09b6c2a3bf",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C61",
+      "claim": "The dynamic and static components of the beat are regulated independently.",
+      "claim_type": "EXPLICIT",
+      "source": "Our dynamic curvature control model adds to the view that dynamic and static components of the beat are regulated independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the model results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "2f93c890-63fd-447b-a057-183da2c24d8b",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C62",
+      "claim": "The dynamic beats of wild type and mbo2 are similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet the dynamic beats of wild type and mbo2 are similar, as also noted in (Eshel and Brokaw, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "fe9320cb-ce53-4ca7-9dbb-c76c0b67f8e7",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C63",
+      "claim": "Static curvature is 'adapted' away in the dynamic curvature control model.",
+      "claim_type": "EXPLICIT",
+      "source": "Our dynamic curvature control model provides a solution to this problem because static curvature is 'adapted' away.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of how the model accounts for the independence of static and dynamic modes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "6e583cb3-e9a5-42ff-af37-64611fb91fd8",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C64",
+      "claim": "Power generation (the beat) and steering (the asymmetry) can be independently controlled so that the swimming direction can be adjusted without having to alter the motor properties.",
+      "claim_type": "EXPLICIT",
+      "source": "This has important biological implications: power generation (the beat) and steering (the asymmetry) can be independently controlled so that the swimming direction can be adjusted without having to alter the motor properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a biological interpretation of the model results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "f52bde71-d455-4008-aa7a-d2bd47734c34",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C65",
+      "claim": "The molecular origin of asymmetry is not known.",
+      "claim_type": "EXPLICIT",
+      "source": "We note, however, that the molecular origin of asymmetry is not known nor is the mechanism by which the mbo2 mutation leads to symmetric beats (see Geyer et al., 2016 for a discussion of possible mechanisms).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in current knowledge, with reference to further discussion.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "b8bf98fc-109d-48ee-8199-4971b05cd474",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C66",
+      "claim": "The mechanism by which the mbo2 mutation leads to symmetric beats is not known.",
+      "claim_type": "EXPLICIT",
+      "source": "We note, however, that the molecular origin of asymmetry is not known nor is the mechanism by which the mbo2 mutation leads to symmetric beats (see Geyer et al., 2016 for a discussion of possible mechanisms).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in current knowledge, with reference to further discussion.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "36e6d210-1649-41a9-9565-0fa688e271c9",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C67",
+      "claim": "For a traveling wave moving from base to tip, the motor force is nearly out of phase with the sliding displacement and tangent angle.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the exact theory shows that curvature leads the motor force by approximately one quarter of a cycle and is nearly out of phase with the sliding displacement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the theoretical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "16fb5c2f-b74a-4c07-9ec7-ef147f802f27",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C68",
+      "claim": "The Chlamydomonas flagellum does not operate close to optimal efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that the motor force is nearly out of phase with the sliding displacement (and tangent angle) shows that the Chlamydomonas flagellum does not operate close to optimal efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing the predicted motor phase to the optimal phase defined by Machin.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "696a57b8-89ab-41cb-a8e2-44c77144041a",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C69",
+      "claim": "The maximally efficient phase for motors is at 225 degrees (compass bearing SW).",
+      "claim_type": "EXPLICIT",
+      "source": "Machin showed that for a plane wave, the optimum occurs when the phase of the motors is at 225 degrees (compass bearing SW), considerably different from our predicted motor phase, which is <180 degrees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from Machin's theoretical work on optimal efficiency.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "e28e3252-4b05-45aa-8f28-6902ae608a5c",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C70",
+      "claim": "Unlike sperm, which Machin calculated to be close to the optimum, the short cilia of Chlamydomonas deviate considerably from optimum efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, unlike sperm, which Machin calculated to be close to the optimum, the short cilia of Chlamydomonas deviate considerably from optimum efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between Chlamydomonas and sperm based on theoretical calculations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "f59b6f9c-f249-46b7-b9e1-9293a1a5601f",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C71",
+      "claim": "The reason that Chlamydomonas deviates from optimum efficiency is that the elastic dissipation dominates over the viscous dissipation.",
+      "claim_type": "EXPLICIT",
+      "source": "The reason that Chlamydomonas deviates from optimum efficiency is that the elastic dissipation dominates over the viscous dissipation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation based on the theoretical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "c88a4765-56bb-4993-8152-0855fe61c258",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C72",
+      "claim": "For an asymmetric beat like that of Chlamydomonas, in which the static and dynamic modes have approximately equal amplitudes, the elastic loss is almost twice as great as that for a symmetric beat.",
+      "claim_type": "EXPLICIT",
+      "source": "Elastic dissipation arises from the straightening of the bent axoneme and the loss of the associated bending energy (for an asymmetric beat like that of Chlamydomonas, in which the static and dynamic modes have approximately equal amplitudes, the elastic loss is almost twice as great as that for a symmetric beat).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the theoretical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "5543dee0-4d24-4e10-b88f-084100be988a",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C76",
+      "claim": "The short length of Chlamydomonas axonemes has important implications for the energetics of the flagellar beat.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the short length of Chlamydomonas axonemes has important implications for the energetics of the flagellar beat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the energetic analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "ae7c77bd-a15a-44b7-b530-b7fac85d23a4",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C77",
+      "claim": "The relatively small viscous dissipation allows us to understand why the curvature mechanism is sensitive to the rate of change of curvature rather than the instantaneous value.",
+      "claim_type": "EXPLICIT",
+      "source": "The reasoning behind the relatively small viscous dissipation also allows us to understand why the curvature mechanism is sensitive to the rate of change of curvature rather than the instantaneous value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation based on the theoretical model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "aa540cd8-cb39-4cd8-8fa4-f2839c72ef49",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C80",
+      "claim": "The dynamic curvature dependence is a consequence of the viscous forces being small compared to the elastic forces.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the dynamic curvature dependence is a consequence of the viscous forces being small compared to the elastic forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "69306aa2-ce41-44d5-a2b1-55d7169f9ccb",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C82",
+      "claim": "The shortness of the axonemes implied that the sliding control model only generated a standing wave and so could not recapitulate the observed traveling wave.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it was the shortness of the axonemes that implied that the sliding control model only generated a standing wave and so could not recapitulate the observed traveling wave.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "ba553995-09cb-4b6a-94ce-6964f54c5b75",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C83",
+      "claim": "The shortness of the axonemes gave rise to the imaginary curvature control coefficient, leading to the dynamic curvature-control mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it was the shortness that gave rise to the imaginary curvature control coefficient, leading to the dynamic curvature-control mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "0b3f7d46-5c25-4c91-ba8b-13d822e9c23f",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C84",
+      "claim": "The shortness of the axonemes implies that the viscous dissipation is small compared to the elastic dissipation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the shortness implies that the viscous dissipation is small compared to the elastic dissipation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "9b17b7a4-6204-441a-92dc-7439dcbc1348",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C85",
+      "claim": "These conclusions are robust because the power of 1/4 in the expression for the critical length makes it quite insensitive to the parameter values.",
+      "claim_type": "EXPLICIT",
+      "source": "These conclusions are robust because the power of 1/4 in the expression for the critical length makes it quite insensitive to the parameter values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an argument for the robustness of the conclusions based on the mathematical form of the critical length.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "b9dda69c-65dc-475c-b255-5b7d6b42b759",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C86",
+      "claim": "The long length of sperm leads to quantitatively different properties (e.g the viscous and elastic energies are of similar magnitude, leading to efficient motion, as argued by Machin).",
+      "claim_type": "EXPLICIT",
+      "source": "The long length of sperm leads to quantitatively different properties (e.g the viscous and elastic energies are of similar magnitude, leading to efficient motion, as argued by Machin).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with sperm based on the theoretical model and Machin's work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "9643c803-7c7c-41ad-9a1d-15f3aea72e51",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C87",
+      "claim": "Whether the long axonemes use the same dynamic curvature-control mechanism as short axonemes will require further study.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether the long axonemes use the same dynamic curvature-control mechanism as short axonemes will require further study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a question for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "e5101552-8bf9-4d89-a4f0-9bc1bf193cfd",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C88",
+      "claim": "Axonemes from Chlamydomonas reinhardtii wild type cells (CC-125 wild type mt+ 137c) were purified and reactivated.",
+      "claim_type": "EXPLICIT",
+      "source": "Axonemes from Chlamydomonas reinhardtii wild type cells (CC-125 wild type mt+ 137c, R.P. Levine via N.W. Gillham, 1968) and mutant cells that move backwards only (CC-2377 mbo2 mt-, David Luck, Rockefeller University, May 1989) were purified and reactivated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "39bfd305-52b5-4681-8b45-b3bd797fd317",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C89",
+      "claim": "Mutant cells that move backwards only (CC-2377 mbo2 mt-) were purified and reactivated.",
+      "claim_type": "EXPLICIT",
+      "source": "Axonemes from Chlamydomonas reinhardtii wild type cells (CC-125 wild type mt+ 137c, R.P. Levine via N.W. Gillham, 1968) and mutant cells that move backwards only (CC-2377 mbo2 mt-, David Luck, Rockefeller University, May 1989) were purified and reactivated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "f37824bb-ece4-43b1-8e9f-8e020b6ee909",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C90",
+      "claim": "Trajectories of 20 points along the arc-length of the axoneme were tracked as a function of time over up to 200 beat cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "We tracked trajectories of 20 points along the arc-length of the axoneme as a function of time over up to 200 beat cycles (Figure 2iii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental data collection method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "8850526b-8a31-474f-a35d-641e15b306a9",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C91",
+      "claim": "The uncertainty of the position in xy space was \u22485 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The uncertainty of the position in \ud835\udc31\ud835\udc32 space was \u22485 nm and the uncertainty in the tangent angle was \u224820 mrad (Figure 2iv-v).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measure of experimental precision, shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "7efdf226-9365-450a-9041-c3006b776b71",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C92",
+      "claim": "The uncertainty in the tangent angle was \u224820 mrad.",
+      "claim_type": "EXPLICIT",
+      "source": "The uncertainty of the position in \ud835\udc31\ud835\udc32 space was \u22485 nm and the uncertainty in the tangent angle was \u224820 mrad (Figure 2iv-v).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measure of experimental precision, shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "17aa4354-8809-4df1-9928-3c4778145d30",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C93",
+      "claim": "The uncertainty in tangent angle of \u224820 mrad corresponds to a sliding displacement between adjacent doublet microtubules of only 1.3 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter corresponds to a sliding displacement between adjacent doublet microtubules of only 1.3 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the measured uncertainty in tangent angle.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "3518433b-9f95-4b8f-b4ca-21be588f03f9",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C94",
+      "claim": "Wild type Chlamydomonas axonemes swim counterclockwise in circles at a slow angular rotation speed \u03c9rot\u224830 rad/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Before doing so, we note that wild type Chlamydomonas axonemes swim counterclockwise in circles at a slow angular rotation speed \u03c9rot\u224830 rad/s (Figure 2Ai,iii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data, shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "55c75d8a-3d68-4f6e-a32d-f1625bd555c7",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C95",
+      "claim": "The mean localization uncertainty of the center position of each segment was about 5 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean localization uncertainty of the center position of each of these segments was about 5 nm (Figure 2Aiv and Biv).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measure of experimental precision, shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "87db8cc1-010b-4f49-af55-4b2eaa3d86e4",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C96",
+      "claim": "The average static curvature for wild type axonemes is C\u2080=-0.232\u00b10.009 \u03bcm\u207b\u00b9.",
+      "claim_type": "EXPLICIT",
+      "source": "The average static curvature is C0=\u22120.232\u00b10.009 \u03bcm\u22121, the length L=11.7 \u00b1 0.4,\u03bc\u2062m, and the frequency \u03c9=427 \u00b1 19 rad/s (68 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data analysis, reported in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "68ed917a-c6c2-434e-8d81-903ab9aacc85",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C97",
+      "claim": "The average length of wild type axonemes is L=11.7 \u00b1 0.4 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "The average static curvature is C0=\u22120.232\u00b10.009 \u03bcm\u22121, the length L=11.7 \u00b1 0.4,\u03bc\u2062m, and the frequency \u03c9=427 \u00b1 19 rad/s (68 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data analysis, reported in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "4ea2de77-5544-4e07-b8d7-318c0a198561",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C98",
+      "claim": "The average frequency of wild type axonemes is \u03c9=427 \u00b1 19 rad/s (68 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "The average static curvature is C0=\u22120.232\u00b10.009 \u03bcm\u22121, the length L=11.7 \u00b1 0.4,\u03bc\u2062m, and the frequency \u03c9=427 \u00b1 19 rad/s (68 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data analysis, reported in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "fa850788-bbf0-4183-a965-e46c464183f2",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C99",
+      "claim": "The static curvature of mbo2 mutant axonemes was C\u2080=-0.0276\u00b10.005 \u03bcm\u207b\u00b9.",
+      "claim_type": "EXPLICIT",
+      "source": "The static curvature was C0=\u22120.0276\u00b10.005 \u03bcm\u22121, the length L=9.2\u00b10.3 \u03bcm, and the frequency \u03c9=176 \u00b1 44 rad/s, (28 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data analysis, reported in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "036ac97f-11eb-4bfb-8c8d-8aa48ea1204d",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C100",
+      "claim": "The average length of mbo2 mutant axonemes is L=9.2\u00b10.3 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "The static curvature was C0=\u22120.0276\u00b10.005 \u03bcm\u22121, the length L=9.2\u00b10.3 \u03bcm, and the frequency \u03c9=176 \u00b1 44 rad/s, (28 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data analysis, reported in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "ba09a885-5639-417d-a8bb-066d49ddabfb",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C101",
+      "claim": "The average frequency of mbo2 mutant axonemes is \u03c9=176 \u00b1 44 rad/s (28 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "The static curvature was C0=\u22120.0276\u00b10.005 \u03bcm\u22121, the length L=9.2\u00b10.3 \u03bcm, and the frequency \u03c9=176 \u00b1 44 rad/s, (28 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experimental data analysis, reported in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "aba38f05-32fe-4bec-838b-c29dfe1fd66b",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C102",
+      "claim": "The basal stiffness in the mbo2 mutant is about 20-fold smaller than in the wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "A striking difference between the wild type and mbo2 axonemes is that the curve-fitting indicates that the basal stiffness in the mutant is about 20-fold smaller than in the wild type (Table 1 and 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from comparing the fitted parameters in Tables 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "04963146-52fe-4640-9945-8053a1378e66",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C103",
+      "claim": "The softening at the base in mbo2 is associated with a larger basal sliding in the mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "This softening at the base is associated with a larger basal sliding in the mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the fitted parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "4355ac2d-1c99-4d92-92fd-0c1d2ef2461a",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C105",
+      "claim": "The coefficient of determination R\u00b2 for sliding control in wild type axonemes is 49 \u00b1 4%.",
+      "claim_type": "EXPLICIT",
+      "source": "Coefficient of determination R2(%) 49 \u00b1 4",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measure of model fit quality, reported in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "a642693e-cefe-4376-a89b-a024166b3696",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "claim_id": "C108",
+      "claim": "The coefficient of determination R\u00b2 for sliding control in mbo2 mutant axonemes is 72 \u00b1 5%.",
+      "claim_type": "EXPLICIT",
+      "source": "Coefficient of determination R2(%) 72 \u00b1 5",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measure of model fit quality, reported in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "426f1f07-b499-4397-b7dd-73d49ce2c5d8",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological context that cilia and flagella exhibit periodic bending driven by dynein motors through mechanical feedback, with three proposed regulatory mechanisms (sliding control, curvature control, and normal-force control), though the specific mechanism coordinating dynein activity remains unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5, C13, and C16 collectively establish well-supported background knowledge from the field, appropriately cited and representing the current understanding of flagellar mechanics. These contextual claims accurately frame the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "234724db-dd78-4364-b3ec-98fb8bec4b03",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors developed high-precision tracking methods for Chlamydomonas axonemes, achieving positional uncertainty of ~5 nm and tangent angle uncertainty of ~20 mrad (corresponding to 1.3 nm sliding displacement), tracking 20 points along the axoneme over up to 200 beat cycles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C95 describe the experimental methodology with specific quantitative precision measurements. The reported uncertainties are remarkably small and the methods are described in sufficient detail in the Materials and Methods section, making this a well-supported methodological result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "9e6ad269-ba7e-461c-97d3-e5a2dce495a2",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Fourier analysis reveals that the fundamental mode (n=1) accounts for 90% of total power, and using only static (n=0) and fundamental modes provides excellent reconstruction of both wild type and mbo2 beats. Wild type axonemes have static curvature C\u2080=-0.232\u00b10.009 \u03bcm\u207b\u00b9, length 11.7\u00b10.4 \u03bcm, and frequency 427\u00b119 rad/s, while mbo2 mutants have much smaller static curvature C\u2080=-0.0276\u00b10.005 \u03bcm\u207b\u00b9, length 9.2\u00b10.3 \u03bcm, and frequency 176\u00b144 rad/s.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 and C96-C101 present quantitative experimental results with error bars from Fourier decomposition analysis. The data are clearly presented in Figure 3 and Tables 1-2, showing systematic differences between wild type and mbo2 mutants, particularly in static curvature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "81ce4fa3-aa78-45b1-8b63-0b4fac863fde",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Wild type axonemes exhibit highly asymmetric beats with time-averaged shape approximating a semi-circular arc (radius ~4 \u03bcm), while mbo2 mutants show nearly symmetric beats with ~10-fold smaller static curvature. Despite this large difference in asymmetry, both have similar dynamic beat characteristics with sinusoidal waveforms, amplitude dips at mid-length, and wavelengths approximately equal to their lengths.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31, C32, C37, and C62 describe key experimental observations comparing wild type and mbo2 phenotypes. The similarity in dynamic properties despite different static curvatures is well-documented in Figure 3 and is central to discriminating between regulatory mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "cc868de3-23c0-44f7-a552-e2aaa1b92a32",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Model fitting to experimental data shows that curvature-control provides excellent fits (R\u00b2=95\u00b11% for wild type, 95\u00b11% for mbo2), normal-force control also provides good fits (R\u00b2=95\u00b11% for wild type, 96\u00b11% for mbo2), but sliding-control provides poor fits (R\u00b2=49\u00b14% for wild type, 72\u00b15% for mbo2). The sliding-control model predicts standing waves rather than the observed traveling waves.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41, C105, and C108 present quantitative model comparison results shown in Figure 4 and Tables 1-2. The R\u00b2 values clearly distinguish model performance, with sliding control showing substantially worse fits. The standing wave vs. traveling wave distinction is visually evident in Figure 4A.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "cc584d0d-1844-4189-8276-035430b3a592",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Sliding control cannot produce wave propagation in axonemes as short as Chlamydomonas because they are much shorter than the critical length \u2113=2\u03c0(\u03ba/\u03be\u2099\u03c9)^(1/4)\u224826 \u03bcm. However, sliding control can lead to bend propagation in long axonemes such as bull sperm, which is approximately five times longer than Chlamydomonas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42, C51, and C82 present a theoretical argument supported by Figure 5 showing that wave propagation speed depends on axoneme length relative to critical length. The argument is mathematically sound and explains why sliding control fails for Chlamydomonas but may work for sperm.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "2044d20b-d0e4-40a2-85c2-c4b51ed3dde0",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The normal-force model requires control parameters to vary over a wide range to fit wild type versus mbo2 data due to their different static curvatures, while the curvature-control model provides good fits with similar parameters for both. The authors conclude that only curvature-control is fully consistent with experimental data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 present the key comparative result shown in Figure 6. The inverse relationship between \u03b3 and C\u2080 for normal-force control (Figure 6A) versus the constancy of \u03b2 for curvature control (Figure 6B) provides strong evidence. However, the conclusion relies on the 2D model approximation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "6a4c5c66-ce6f-4e57-b63b-c8085b379d4a",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The two-dimensional model oversimplifies the normal-force mechanism because it does not distinguish between radial and transverse forces. A three-dimensional model shows that normal forces are not antagonistic across the centerline even with static curvature, and therefore cannot serve as a control parameter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C47-C48 acknowledge a limitation of the 2D model and cite unpublished 3D modeling work (Sartori et al., 2015). While the authors present this as supporting evidence against normal-force control, the 3D analysis is not included in this manuscript and cannot be fully evaluated here.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "c5b30fea-da64-4e0f-bfe8-82c31e048696",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The curvature-control model reveals that motor force depends only on the time derivative of curvature (\u03b2\u2033\u22600, \u03b2\u2032=0) rather than instantaneous curvature, which is fundamentally different from current views where motors are thought to respond to instantaneous curvature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55, C57, and C7 present a surprising finding from model fitting (Tables 1-2) showing \u03b2\u2032\u22480 while \u03b2\u2033 is significant. This is a robust result from the fitting procedure, though the biological mechanism underlying this derivative response remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "4b718aec-cd97-4bcb-9ea2-a0b0a41c625b",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The molecular mechanisms underlying curvature sensing are unknown. One possibility is a curvature adaptation system analogous to bacterial chemotaxis. Direct dynein sensing of microtubule curvature is challenging because the strain in a curved microtubule (radius 4 \u03bcm) is very small (~1%), corresponding to sub-angstrom strain in a tubulin dimer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58-C60 discuss potential mechanisms for curvature sensing. C58 is speculative (citing analogous systems), C59 acknowledges a knowledge gap, and C60 presents a calculation highlighting the difficulty of direct sensing. These are reasonable considerations but lack direct experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "a1226299-5692-4eae-98c8-2aabbe04ef6a",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The dynamic curvature control model suggests that static and dynamic beat components are regulated independently because static curvature is 'adapted away'. This allows power generation (beat) and steering (asymmetry) to be independently controlled, enabling swimming direction adjustment without altering motor properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61, C63, and C64 present interpretations of the model results. The independence of static and dynamic modes is supported by the similar dynamic behavior of wild type and mbo2 despite different static curvatures (C62). The biological implications are reasonable inferences from the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "c97f760f-f1a1-4d7f-8fc4-a2063fa94e6f",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The curvature-control model predicts that motor force is nearly out of phase with sliding displacement and tangent angle, indicating that Chlamydomonas flagella do not operate at optimal efficiency (unlike sperm). The deviation from Machin's optimal phase of 225\u00b0 occurs because elastic dissipation dominates over viscous dissipation in short axonemes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C72 present theoretical predictions about motor phase and efficiency. The phase relationships are derived from the model (Figure 9), and the efficiency argument is based on comparing elastic vs. viscous dissipation. The reasoning is mathematically sound and explains differences between Chlamydomonas and sperm.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "6e3d305c-e7f0-454b-a367-a35a8d8ed70f",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The short length of Chlamydomonas axonemes (relative to critical length) has important implications: it causes viscous dissipation to be small compared to elastic dissipation, explains why curvature control is sensitive to rate of change rather than instantaneous value, and gives rise to the imaginary curvature control coefficient. These conclusions are robust due to the 1/4 power dependence in the critical length expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77, C80, C83-C85 present interconnected theoretical conclusions about the consequences of short axoneme length. The arguments are mathematically consistent and explain multiple features of the system. The robustness argument based on the 1/4 power is valid.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "fee1a341-ba3e-406a-b396-f4bb337dd8bd",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Different control mechanisms may operate in different cilia and flagella based on length: sliding control can account for long sperm axonemes (~5\u00d7 longer than Chlamydomonas), while curvature control works for short Chlamydomonas axonemes. However, curvature control can also account for sperm data, suggesting it could serve as a 'universal' regulator. Whether long axonemes use the same dynamic curvature-control mechanism requires further study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C54, C86-C87 discuss the generalizability of findings to other systems. The length-dependence argument is well-supported by Figure 5 and prior literature. The suggestion that curvature control might be universal is reasonable but requires additional testing (C87).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "ddd955da-1769-4f5a-84b8-5b5d8b2e78cd",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The basal stiffness in mbo2 mutants is about 20-fold smaller than in wild type, and this softening is associated with larger basal sliding in the mutant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C103 report a striking quantitative difference between wild type and mbo2 from model fitting (Tables 1-2, Figure 8C). The result is clearly stated though its biological significance and whether it's cause or consequence of other differences remains unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "f7061693-39af-414b-ae47-7319decce847",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The manuscript reviews established structural and mechanistic knowledge about axonemes, including the 9+2 microtubule structure, dynein-powered sliding, conversion of sliding to bending, and the three proposed regulatory mechanisms (sliding control, curvature control, and normal-force control).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12, C14-C15, C17-C19 present well-established background knowledge appropriately cited from the literature. These provide necessary context for understanding the research question and are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "99b9fca4-a230-4f36-b32d-c87c576233bd",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors developed a two-dimensional theoretical model that projects the 3D axoneme cross-section onto a pair of filaments with the same polarity, combined bending rigidity, and constant separation. The model predicts that constant curvature requires motor forces concentrated near the distal end.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21, C25 describe the theoretical model construction. The approach is clearly explained with appropriate simplifying assumptions. The prediction about force localization (C25) follows from the static force-balance equation and is supported by citation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "8bd6365a-230e-4a89-b304-a3b753b7e5bb",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The molecular origin of asymmetry and the mechanism by which the mbo2 mutation leads to symmetric beats are not known.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 acknowledge knowledge gaps relevant to interpreting the results. These are honest statements about limitations in current understanding, with reference to further discussion in another paper (Geyer et al., 2016).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    },
+    {
+      "id": "f0bbe4d0-cd27-4426-be1d-0da5a64b3b54",
+      "content_id": "c7b1d878-d55a-472b-9971-8dd80c192c10",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "An adaptation mechanism may control the flagellar beat.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C8 is a speculative interpretation of the time derivative finding (C7). While the speculation is reasonable and draws analogies to known biological systems (C58), it lacks direct experimental evidence and is presented as a hypothesis for future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:42:08.611349Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "32982040-cd7c-4ae0-8a4b-b2582cecb7ae",
+      "result_id": "426f1f07-b499-4397-b7dd-73d49ce2c5d8"
+    },
+    {
+      "claim_id": "6193d8b5-939f-4bd2-839b-3d65396e8930",
+      "result_id": "426f1f07-b499-4397-b7dd-73d49ce2c5d8"
+    },
+    {
+      "claim_id": "beefe494-d1df-4465-a0b7-ba0f5696c35c",
+      "result_id": "426f1f07-b499-4397-b7dd-73d49ce2c5d8"
+    },
+    {
+      "claim_id": "1961b78b-f232-4113-838f-63a94eac761e",
+      "result_id": "426f1f07-b499-4397-b7dd-73d49ce2c5d8"
+    },
+    {
+      "claim_id": "1dfd67a0-a573-408c-8858-1113bc27ba3f",
+      "result_id": "426f1f07-b499-4397-b7dd-73d49ce2c5d8"
+    },
+    {
+      "claim_id": "ccc297cd-5764-4933-bf7e-ddc2f88bd202",
+      "result_id": "426f1f07-b499-4397-b7dd-73d49ce2c5d8"
+    },
+    {
+      "claim_id": "20da2980-f9c3-4113-842e-13fd6c7c018c",
+      "result_id": "426f1f07-b499-4397-b7dd-73d49ce2c5d8"
+    },
+    {
+      "claim_id": "e5101552-8bf9-4d89-a4f0-9bc1bf193cfd",
+      "result_id": "234724db-dd78-4364-b3ec-98fb8bec4b03"
+    },
+    {
+      "claim_id": "39bfd305-52b5-4681-8b45-b3bd797fd317",
+      "result_id": "234724db-dd78-4364-b3ec-98fb8bec4b03"
+    },
+    {
+      "claim_id": "f37824bb-ece4-43b1-8e9f-8e020b6ee909",
+      "result_id": "234724db-dd78-4364-b3ec-98fb8bec4b03"
+    },
+    {
+      "claim_id": "8850526b-8a31-474f-a35d-641e15b306a9",
+      "result_id": "234724db-dd78-4364-b3ec-98fb8bec4b03"
+    },
+    {
+      "claim_id": "7efdf226-9365-450a-9041-c3006b776b71",
+      "result_id": "234724db-dd78-4364-b3ec-98fb8bec4b03"
+    },
+    {
+      "claim_id": "17aa4354-8809-4df1-9928-3c4778145d30",
+      "result_id": "234724db-dd78-4364-b3ec-98fb8bec4b03"
+    },
+    {
+      "claim_id": "3518433b-9f95-4b8f-b4ca-21be588f03f9",
+      "result_id": "234724db-dd78-4364-b3ec-98fb8bec4b03"
+    },
+    {
+      "claim_id": "55c75d8a-3d68-4f6e-a32d-f1625bd555c7",
+      "result_id": "234724db-dd78-4364-b3ec-98fb8bec4b03"
+    },
+    {
+      "claim_id": "03e9315e-d6c8-4a8e-a44c-a868114a61ef",
+      "result_id": "9e6ad269-ba7e-461c-97d3-e5a2dce495a2"
+    },
+    {
+      "claim_id": "88b3d00a-b128-4a31-b4f8-909bf72d223c",
+      "result_id": "9e6ad269-ba7e-461c-97d3-e5a2dce495a2"
+    },
+    {
+      "claim_id": "6722936d-6315-4c88-8156-7d9c404c3b26",
+      "result_id": "9e6ad269-ba7e-461c-97d3-e5a2dce495a2"
+    },
+    {
+      "claim_id": "87db8cc1-010b-4f49-af55-4b2eaa3d86e4",
+      "result_id": "9e6ad269-ba7e-461c-97d3-e5a2dce495a2"
+    },
+    {
+      "claim_id": "68ed917a-c6c2-434e-8d81-903ab9aacc85",
+      "result_id": "9e6ad269-ba7e-461c-97d3-e5a2dce495a2"
+    },
+    {
+      "claim_id": "4ea2de77-5544-4e07-b8d7-318c0a198561",
+      "result_id": "9e6ad269-ba7e-461c-97d3-e5a2dce495a2"
+    },
+    {
+      "claim_id": "fa850788-bbf0-4183-a965-e46c464183f2",
+      "result_id": "9e6ad269-ba7e-461c-97d3-e5a2dce495a2"
+    },
+    {
+      "claim_id": "036ac97f-11eb-4bfb-8c8d-8aa48ea1204d",
+      "result_id": "9e6ad269-ba7e-461c-97d3-e5a2dce495a2"
+    },
+    {
+      "claim_id": "ba09a885-5639-417d-a8bb-066d49ddabfb",
+      "result_id": "9e6ad269-ba7e-461c-97d3-e5a2dce495a2"
+    },
+    {
+      "claim_id": "71629eda-ee18-469c-be8b-8a1e350c062a",
+      "result_id": "81ce4fa3-aa78-45b1-8b63-0b4fac863fde"
+    },
+    {
+      "claim_id": "ed419d26-1f90-4dba-a0b1-766a89568d0c",
+      "result_id": "81ce4fa3-aa78-45b1-8b63-0b4fac863fde"
+    },
+    {
+      "claim_id": "6c4241c9-5c18-49ae-87a0-c0060a806bf1",
+      "result_id": "81ce4fa3-aa78-45b1-8b63-0b4fac863fde"
+    },
+    {
+      "claim_id": "2f93c890-63fd-447b-a057-183da2c24d8b",
+      "result_id": "81ce4fa3-aa78-45b1-8b63-0b4fac863fde"
+    },
+    {
+      "claim_id": "ebbea892-1fb9-41fc-8582-9a790350826a",
+      "result_id": "cc868de3-23c0-44f7-a552-e2aaa1b92a32"
+    },
+    {
+      "claim_id": "af5814f4-acc4-4198-b29b-6d41f7c63e80",
+      "result_id": "cc868de3-23c0-44f7-a552-e2aaa1b92a32"
+    },
+    {
+      "claim_id": "b1eaac68-5985-43bd-9c34-24057d1dc417",
+      "result_id": "cc868de3-23c0-44f7-a552-e2aaa1b92a32"
+    },
+    {
+      "claim_id": "ce98de72-f92a-4600-9d11-8c48f1c56706",
+      "result_id": "cc868de3-23c0-44f7-a552-e2aaa1b92a32"
+    },
+    {
+      "claim_id": "4355ac2d-1c99-4d92-92fd-0c1d2ef2461a",
+      "result_id": "cc868de3-23c0-44f7-a552-e2aaa1b92a32"
+    },
+    {
+      "claim_id": "a642693e-cefe-4376-a89b-a024166b3696",
+      "result_id": "cc868de3-23c0-44f7-a552-e2aaa1b92a32"
+    },
+    {
+      "claim_id": "69f4b041-bec2-49ef-b36e-4411a3074120",
+      "result_id": "cc584d0d-1844-4189-8276-035430b3a592"
+    },
+    {
+      "claim_id": "a56b9d04-de18-44e5-96b8-459abd4aaa8d",
+      "result_id": "cc584d0d-1844-4189-8276-035430b3a592"
+    },
+    {
+      "claim_id": "69306aa2-ce41-44d5-a2b1-55d7169f9ccb",
+      "result_id": "cc584d0d-1844-4189-8276-035430b3a592"
+    },
+    {
+      "claim_id": "79ab9e2e-d6ff-4c9a-b85b-8c63d75edc60",
+      "result_id": "2044d20b-d0e4-40a2-85c2-c4b51ed3dde0"
+    },
+    {
+      "claim_id": "6ffdac50-cc47-4dc2-a034-0be9cc498536",
+      "result_id": "2044d20b-d0e4-40a2-85c2-c4b51ed3dde0"
+    },
+    {
+      "claim_id": "424a05f5-7778-43c4-aac7-04c73ca1466d",
+      "result_id": "2044d20b-d0e4-40a2-85c2-c4b51ed3dde0"
+    },
+    {
+      "claim_id": "bb49d675-033b-4501-8960-23717d30c35b",
+      "result_id": "2044d20b-d0e4-40a2-85c2-c4b51ed3dde0"
+    },
+    {
+      "claim_id": "df3b0b1e-0903-43d5-a307-a1f12bae178c",
+      "result_id": "6a4c5c66-ce6f-4e57-b63b-c8085b379d4a"
+    },
+    {
+      "claim_id": "813cace2-2991-484a-9ec1-15cc0a295a13",
+      "result_id": "6a4c5c66-ce6f-4e57-b63b-c8085b379d4a"
+    },
+    {
+      "claim_id": "75402257-29c5-48c7-a431-5fd4e58c217c",
+      "result_id": "c5b30fea-da64-4e0f-bfe8-82c31e048696"
+    },
+    {
+      "claim_id": "0d1f8d31-9da4-4feb-ae16-e6912a7bf750",
+      "result_id": "c5b30fea-da64-4e0f-bfe8-82c31e048696"
+    },
+    {
+      "claim_id": "53aedfff-d514-47ff-a1fe-ac63c721ab1b",
+      "result_id": "c5b30fea-da64-4e0f-bfe8-82c31e048696"
+    },
+    {
+      "claim_id": "c3d9447f-120e-4725-9127-4165ec43c1e4",
+      "result_id": "4b718aec-cd97-4bcb-9ea2-a0b0a41c625b"
+    },
+    {
+      "claim_id": "a63473ee-95da-4807-a0ca-cd9acab5fef4",
+      "result_id": "4b718aec-cd97-4bcb-9ea2-a0b0a41c625b"
+    },
+    {
+      "claim_id": "46094ca2-1fdc-4d86-af70-a5493b4b99b5",
+      "result_id": "4b718aec-cd97-4bcb-9ea2-a0b0a41c625b"
+    },
+    {
+      "claim_id": "793f7481-7c50-4dd2-af0b-5a09b6c2a3bf",
+      "result_id": "a1226299-5692-4eae-98c8-2aabbe04ef6a"
+    },
+    {
+      "claim_id": "fe9320cb-ce53-4ca7-9dbb-c76c0b67f8e7",
+      "result_id": "a1226299-5692-4eae-98c8-2aabbe04ef6a"
+    },
+    {
+      "claim_id": "6e583cb3-e9a5-42ff-af37-64611fb91fd8",
+      "result_id": "a1226299-5692-4eae-98c8-2aabbe04ef6a"
+    },
+    {
+      "claim_id": "36e6d210-1649-41a9-9565-0fa688e271c9",
+      "result_id": "c97f760f-f1a1-4d7f-8fc4-a2063fa94e6f"
+    },
+    {
+      "claim_id": "16fb5c2f-b74a-4c07-9ec7-ef147f802f27",
+      "result_id": "c97f760f-f1a1-4d7f-8fc4-a2063fa94e6f"
+    },
+    {
+      "claim_id": "696a57b8-89ab-41cb-a8e2-44c77144041a",
+      "result_id": "c97f760f-f1a1-4d7f-8fc4-a2063fa94e6f"
+    },
+    {
+      "claim_id": "e28e3252-4b05-45aa-8f28-6902ae608a5c",
+      "result_id": "c97f760f-f1a1-4d7f-8fc4-a2063fa94e6f"
+    },
+    {
+      "claim_id": "f59b6f9c-f249-46b7-b9e1-9293a1a5601f",
+      "result_id": "c97f760f-f1a1-4d7f-8fc4-a2063fa94e6f"
+    },
+    {
+      "claim_id": "c88a4765-56bb-4993-8152-0855fe61c258",
+      "result_id": "c97f760f-f1a1-4d7f-8fc4-a2063fa94e6f"
+    },
+    {
+      "claim_id": "5543dee0-4d24-4e10-b88f-084100be988a",
+      "result_id": "6e3d305c-e7f0-454b-a367-a35a8d8ed70f"
+    },
+    {
+      "claim_id": "ae7c77bd-a15a-44b7-b530-b7fac85d23a4",
+      "result_id": "6e3d305c-e7f0-454b-a367-a35a8d8ed70f"
+    },
+    {
+      "claim_id": "aa540cd8-cb39-4cd8-8fa4-f2839c72ef49",
+      "result_id": "6e3d305c-e7f0-454b-a367-a35a8d8ed70f"
+    },
+    {
+      "claim_id": "ba553995-09cb-4b6a-94ce-6964f54c5b75",
+      "result_id": "6e3d305c-e7f0-454b-a367-a35a8d8ed70f"
+    },
+    {
+      "claim_id": "0b3f7d46-5c25-4c91-ba8b-13d822e9c23f",
+      "result_id": "6e3d305c-e7f0-454b-a367-a35a8d8ed70f"
+    },
+    {
+      "claim_id": "9b17b7a4-6204-441a-92dc-7439dcbc1348",
+      "result_id": "6e3d305c-e7f0-454b-a367-a35a8d8ed70f"
+    },
+    {
+      "claim_id": "5ec1a630-71b7-44d6-9e1f-179dc637dd33",
+      "result_id": "fee1a341-ba3e-406a-b396-f4bb337dd8bd"
+    },
+    {
+      "claim_id": "3660136b-110b-4f3d-8909-684e10664756",
+      "result_id": "fee1a341-ba3e-406a-b396-f4bb337dd8bd"
+    },
+    {
+      "claim_id": "3684235f-a28d-4297-a16b-88565c1bd4d0",
+      "result_id": "fee1a341-ba3e-406a-b396-f4bb337dd8bd"
+    },
+    {
+      "claim_id": "da4b37b7-9f53-4817-9fd4-86ae846ca36c",
+      "result_id": "fee1a341-ba3e-406a-b396-f4bb337dd8bd"
+    },
+    {
+      "claim_id": "d35c559b-9312-4373-a543-002ca184afc9",
+      "result_id": "fee1a341-ba3e-406a-b396-f4bb337dd8bd"
+    },
+    {
+      "claim_id": "b9dda69c-65dc-475c-b255-5b7d6b42b759",
+      "result_id": "fee1a341-ba3e-406a-b396-f4bb337dd8bd"
+    },
+    {
+      "claim_id": "9643c803-7c7c-41ad-9a1d-15f3aea72e51",
+      "result_id": "fee1a341-ba3e-406a-b396-f4bb337dd8bd"
+    },
+    {
+      "claim_id": "aba38f05-32fe-4bec-838b-c29dfe1fd66b",
+      "result_id": "ddd955da-1769-4f5a-84b8-5b5d8b2e78cd"
+    },
+    {
+      "claim_id": "04963146-52fe-4640-9945-8053a1378e66",
+      "result_id": "ddd955da-1769-4f5a-84b8-5b5d8b2e78cd"
+    },
+    {
+      "claim_id": "2a566b9b-5dcd-4cd4-8804-e21ac26dee6a",
+      "result_id": "f7061693-39af-414b-ae47-7319decce847"
+    },
+    {
+      "claim_id": "3fd4e509-ea5a-4a84-835b-28e1147be37f",
+      "result_id": "f7061693-39af-414b-ae47-7319decce847"
+    },
+    {
+      "claim_id": "2af2c802-6e50-4dc2-b615-a1c3cf2946a3",
+      "result_id": "f7061693-39af-414b-ae47-7319decce847"
+    },
+    {
+      "claim_id": "eef125bf-38de-4f16-9adf-ad0a891f59cb",
+      "result_id": "f7061693-39af-414b-ae47-7319decce847"
+    },
+    {
+      "claim_id": "33f7fdad-6067-410d-82e6-fc2dcfcdd606",
+      "result_id": "f7061693-39af-414b-ae47-7319decce847"
+    },
+    {
+      "claim_id": "814300f4-f222-40a2-9d85-5a938d0a2821",
+      "result_id": "f7061693-39af-414b-ae47-7319decce847"
+    },
+    {
+      "claim_id": "e2839127-95d0-4d83-bddd-1edd032a0e42",
+      "result_id": "f7061693-39af-414b-ae47-7319decce847"
+    },
+    {
+      "claim_id": "3192ebb3-9c4e-4a18-a969-113e912cbf84",
+      "result_id": "f7061693-39af-414b-ae47-7319decce847"
+    },
+    {
+      "claim_id": "9a24c055-710b-44f8-806e-c57dadb03459",
+      "result_id": "f7061693-39af-414b-ae47-7319decce847"
+    },
+    {
+      "claim_id": "bc1b9f5e-d3ef-4576-85ec-76215dc12b82",
+      "result_id": "99b9fca4-a230-4f36-b32d-c87c576233bd"
+    },
+    {
+      "claim_id": "2c73db59-e8d9-4c1b-89b1-5ef6d932d791",
+      "result_id": "99b9fca4-a230-4f36-b32d-c87c576233bd"
+    },
+    {
+      "claim_id": "c2e6b370-af79-4ba7-987d-7bf3d5cb2675",
+      "result_id": "99b9fca4-a230-4f36-b32d-c87c576233bd"
+    },
+    {
+      "claim_id": "f52bde71-d455-4008-aa7a-d2bd47734c34",
+      "result_id": "8bd6365a-230e-4a89-b304-a3b753b7e5bb"
+    },
+    {
+      "claim_id": "b8bf98fc-109d-48ee-8199-4971b05cd474",
+      "result_id": "8bd6365a-230e-4a89-b304-a3b753b7e5bb"
+    },
+    {
+      "claim_id": "9536b0ce-2ab5-4970-ab76-0ef89d635674",
+      "result_id": "f0bbe4d0-cd27-4426-be1d-0da5a64b3b54"
+    }
+  ],
+  "comparisons": []
+}

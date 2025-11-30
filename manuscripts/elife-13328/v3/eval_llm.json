@@ -1,0 +1,352 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors developed riboHMM, a probabilistic model that identifies translated coding sequences by leveraging both total RPF abundance and codon periodicity structure. The model represents transcripts as sequences of base triplets, uses a hidden Markov model with nine latent states to distinguish translated from untranslated regions, and accounts for expression differences using RNA-seq normalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C38-C54 collectively describe the riboHMM method and its key features. The model design is clearly specified with mathematical formulations in the Materials and Methods, and Figure 1 illustrates the model structure. The approach addresses known limitations of prior methods (C33-C35) by jointly modeling abundance and periodicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C64",
+      "C69",
+      "C70",
+      "C81"
+    ],
+    "result": "Using simulations with permuted footprint counts, the authors estimated riboHMM's Type 1 error rate at 4.5% for identifying translated sequences in null transcripts, 0.31% for incorrectly identifying reading frames in transcripts with translation signal, and 38% false discovery proportion for identifying precise translation initiation sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57, C64, C69-C70, C81 describe a systematic simulation-based validation approach. The simulation design (permuting footprint counts) is appropriate for estimating false positive rates. The reported error rates are specific and quantitative, though the high error rate for start site identification (C70) is acknowledged as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C79",
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C134",
+      "C136"
+    ],
+    "result": "Applying riboHMM to human lymphoblastoid cell lines identified 7,273 novel coding sequences including 2,442 upstream ORFs, 2,550 in annotated non-coding transcripts, 1,019 in de novo assembled transcripts, and 448 in pseudogenes. The method accurately recovered the annotated reading frame in 96% of 7,801 GENCODE annotated coding genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C58-C68, C79-C85, C134, C136 report the main quantitative findings with specific numbers and FDR estimates. The high accuracy on annotated genes (96% frame recovery, C65, C134) provides validation. Figure 2 summarizes the workflow and numbers. The analysis is robust to sequencing depth (C73).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C125"
+    ],
+    "result": "Harringtonine-treated ribosome footprints showed significant enrichment at inferred initiation sites of novel mCDS (p=9.5\u00d710\u207b\u2077\u2079) and uaCDS, with enrichment observed at both AUG (p=5.2\u00d710\u207b\u2077\u2079) and non-AUG (p=9.4\u00d710\u207b\u00b2\u2075) start codons, validating that ribosomes initiate translation at many predicted sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C92-C98, C125 describe independent experimental validation using harringtonine treatment. The mechanism is well-established (C92-C93), the experiment was performed (C94), and highly significant enrichment was observed with appropriate statistical testing (C95-C96). Figure 4 and Figure 6B show the enrichment patterns. The reduced enrichment compared to annotated CDS is reasonably explained (C97).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C137"
+    ],
+    "result": "Novel mCDS exhibit significant selective constraint with nonsynonymous SNPs showing excess rare variants compared to synonymous SNPs (p=1.08\u00d710\u207b\u2074), and 232 novel mCDS show significant long-term purifying selection (dN/dS<1 after Bonferroni correction), suggesting many are functional peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C99-C108, C137 present population genetic and phylogenetic evidence for functionality. The analysis uses appropriate methods (allele frequency spectra, dN/dS ratios) with significant p-values. Figure 5 shows the data. The comparison with pseudogenes lacking high-confidence CDS (C104) provides a negative control supporting that riboHMM identifies functional sequences (C105-C106). The authors appropriately note the 232 sequences are a conservative lower bound (C108).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Mass spectrometry identified peptides for 161 novel mCDS at 10% FDR, substantially fewer than the 603 expected from a predictive model calibrated on annotated proteins. The low validation rate (14% estimated in abstract) is unlikely due to low translation but may reflect higher protein turnover or secretion of novel proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C109-C119 report mass spectrometry validation with a discrepancy between observed (161) and expected (603) hits. While the predictive model accounts for expression and protein properties (C112-C114), the large discrepancy raises questions. The explanations offered (C118-C119) are speculative. The 70% of hits with \u22652 peptides (C110) and independent identification across LCLs (C111) support the 161 hits are real, but the overall low rate limits confidence in the full set of predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Novel mCDS have substantially higher usage of non-canonical start codons (particularly CUG) compared to annotated CDS which almost exclusively use AUG, are significantly shorter (median 23 vs 339 amino acids, p<2.2\u00d710\u207b\u00b9\u2076), and have comparable amino acid composition with slight enrichment for certain residues (p<1.1\u00d710\u207b\u00b9\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91, C143-C149 characterize properties of novel mCDS. The higher non-AUG usage is supported by Figure 3B and consistent with prior studies (C88). The length difference is highly significant (C90). The authors acknowledge the hierarchical model should produce unbiased start codon estimates (C89) and show robustness to learning set choice (C149), though potential bias is noted (C148). The characterization is well-supported despite acknowledged limitations in start site precision.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C124",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C155",
+      "C157"
+    ],
+    "result": "2,442 upstream alternate coding sequences (uaCDS) were identified with 917 pairs (40% at 10% FDR) showing significant negative correlation with their corresponding mCDS translation levels across individuals, suggesting a regulatory role for uaCDS in controlling main CDS translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C124, C130-C131, C155, C157 describe the identification and regulatory function of uaCDS. The negative correlation is statistically significant (C130) and shown in Figure 7A. The finding is consistent with prior work on upstream ORF regulation (C157). Harringtonine validation (C125) and evolutionary constraint (C127) support the uaCDS are real. The low mass spec validation (C126) and lack of concordance with constraint (C128-C129) are reasonably explained by detection limits for short proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C132",
+      "C133"
+    ],
+    "result": "365 cis orfQTLs (genetic variants associated with ORF usage) were identified across 41 pairs of mCDS and uaCDS at 10% FDR, distinguishing ORF usage as an additional layer of post-transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C133 report genetic variants affecting differential usage of mCDS vs uaCDS. The QTL mapping is appropriate and Figure 7B-C shows an example. The finding extends the regulatory role of uaCDS by identifying genetic control of ORF choice. The sample size (72 individuals for ribosome profiling, C58) provides reasonable power for cis-QTL detection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Among 814 mCDS identified in GENCODE protein-coding transcripts with distinct reading frames from annotations, most are likely novel alternate translated sequences based on low frame error rates (0.31%), including 386 dual-coding sequences and 156 non-overlapping sequences, though disagreements in start sites are likely false discoveries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 characterize novel mCDS in annotated transcripts. The inference that most are real (C74) is supported by the very low frame error rate from simulations (C69). The categorization into dual-coding and non-overlapping (C75-C76) is clear. The POLR2M example with mass spec validation (C77) provides strong support for at least some cases. The acknowledgment that start site disagreements are likely false (C78) is appropriately conservative given the 38% FDR for start sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "riboHMM's restriction to one CDS per transcript is a limitation that was addressed using a greedy approach, identifying thousands of transcripts with multiple CDSs and highlighting the existence of alternative CDS usage across tissues, though the method cannot resolve overlapping sequences from multiple isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C142 acknowledge model limitations and workarounds. The one-CDS restriction (C138) is clearly stated, the greedy approach is described (C139), and the biological implications are discussed (C140). The inability to distinguish isoforms (C141) is an honest limitation. The suggestion for future work (C142) is reasonable. This is appropriately self-critical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Incorporating harringtonine-treated data into the model did not significantly change codon usage at inferred initiation sites (K-S test p=0.88) or the set of inferred coding sequences, likely because untreated footprint data already show clear enrichment at initiation sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C154 describe an attempted model improvement that did not provide benefit. The negative result is appropriately reported with statistical testing (C151). The explanation that untreated data already capture initiation signals (C153) is reasonable. The conclusion that harringtonine data are useful for validation but not for calibrating confidence (C154) is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C135",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "riboHMM provides an alternative framework for genome annotation that is relatively unbiased compared to methods relying on sequence databases or cross-species annotations, with potential applications in poorly annotated species, cell-type-specific translation studies, and linking CDS usage to disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135, C158-C162 discuss advantages and applications of riboHMM. The advantages over existing methods (C135, C159) are reasonable given the method's reliance on functional data rather than homology. The potential applications (C160-C162) are speculative but plausible extensions. These represent appropriate discussion of the method's utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The introduction establishes that current GENCODE annotations are conservative and miss several CDS classes, that much of the genome is transcribed but translation is incompletely characterized, that existing methods (mass spectrometry, phylogenetic approaches, prior ribosome profiling studies) have significant limitations, and that alternative translation initiation and regulatory mechanisms exist but are challenging to assess genome-wide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C37, C120-C123 provide background and motivation. These are well-supported by citations to prior work and accurately characterize the state of the field and limitations of existing approaches. This contextualizes why riboHMM is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C40",
+      "C73"
+    ],
+    "result": "Ribosome footprint data show two distinct features distinguishing CDS from UTRs when aggregated across transcripts: higher abundance and clear three-base periodicity in CDS versus lack of periodicity in UTRs. The analysis is robust to sequencing depth with 60% of annotated CDS recovered even at 100-fold reduced depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C73 describe key observations motivating the model design. Figure 1A clearly shows these patterns. The robustness to sequencing depth (C73) is demonstrated in Figure 1\u2014figure supplement 4. These observations are fundamental to the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Among transcripts where riboHMM correctly identified the reading frame, concordance between inferred and annotated translation initiation sites does not correlate with CDS length (p=0.12), and when incorrect, the inferred site is equally likely upstream or downstream of the annotated site (p=0.41).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 characterize the pattern of start site errors. Both statistical tests are non-significant, suggesting errors are not systematically biased by length or direction. This supports the claim that errors are unbiased (C89), though the overall high error rate (38%, C70) remains a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C113",
+      "C114"
+    ],
+    "result": "Mass spectrometry has known limitations for detecting low-abundance proteins, is biased toward larger and more highly expressed proteins, and the trypsin cleavage protocol constrains which peptide sequences can be observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C113-C114 state known properties of mass spectrometry. These are general knowledge in the field and help explain the low validation rate. The predictive model (C112) attempts to account for these biases.",
+    "result_type": "MINOR"
+  }
+]

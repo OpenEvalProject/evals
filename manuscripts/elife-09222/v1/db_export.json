@@ -1,0 +1,1728 @@
+{
+  "submission": {
+    "id": "62be6b4b-67ca-4bf8-94d9-cb4d86ef4c34",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:28:08.247983Z",
+    "updated_at": "2025-11-30T00:28:08.247983Z"
+  },
+  "content": [
+    {
+      "id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "submission_id": "62be6b4b-67ca-4bf8-94d9-cb4d86ef4c34",
+      "content_type": "manuscript",
+      "content_text": "# Clusters of synaptic inputs on dendrites of layer 5 pyramidal cells in mouse visual cortex\n\n## Authors\n\n- Onur G\u00f6k\u00e7e<sup>1</sup> ([ORCID: 0000-0002-3913-3893](https://orcid.org/0000-0002-3913-3893))\n- Tobias Bonhoeffer<sup>1</sup> ([ORCID: 0000-0001-7897-6634](https://orcid.org/0000-0001-7897-6634)) \u2020\n- Volker Scheuss<sup>1</sup> ([ORCID: 0000-0002-0659-3228](https://orcid.org/0000-0002-0659-3228)) \u2020\n\n### Affiliations\n\n1. Department Synapses - Circuits - Plasticity Max Planck Institute of Neurobiology Martinsried Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe spatial organization of synaptic inputs on the dendritic tree of cortical neurons plays a major role for dendritic integration and neural computations, yet, remarkably little is known about it. We mapped the spatial organization of glutamatergic synapses between layer 5 pyramidal cells by combining optogenetics and 2-photon calcium imaging in mouse neocortical slices. To mathematically characterize the organization of inputs we developed an approach based on combinatorial analysis of the likelihoods of specific synapse arrangements. We found that the synapses of intralaminar inputs form clusters on the basal dendrites of layer 5 pyramidal cells. These clusters contain 4 to 14 synapses within \u226430 \u00b5m of dendrite. According to the spatiotemporal characteristics of synaptic summation, these numbers suggest that there will be non-linear dendritic integration of synaptic inputs during synchronous activation.\n\n## Introduction\n\nComputations on the level of single neurons critically depend on the location and spatial relationship between active synapses (e.g. Branco and H\u00e4usser, 2011; Losonczy and Magee, 2006; Polsky et al., 2004). Thus knowing the connectivity of neurons with single synapse resolution is essential to understand how synaptic integration at the cellular level contributes to neural circuit function. One type of spatial organization is of particular interest. These are clusters of synaptic inputs, which can give rise to superlinear summation during synchronous activity (e.g. DeBello et al., 2014; Larkum and Nevian, 2008; Mel, 1993). Clustering has been reported for synchronously active synapses during spontaneous activity (Kleindienst et al., 2011; Takahashi et al., 2012), for synapses undergoing plasticity (Makino and Malinow, 2011; McBride et al., 2008) as well as for synapses from anatomically defined populations of presynaptic neurons (Druckmann et al., 2014; Rah et al., 2013). However, the cluster parameters relevant for dendritic computations are not rigorously and quantitatively assessed. Furthermore, in different cortical areas the patterns of synapses activated by sensory stimulation suggest that inputs onto central neurons may not be clustered (Chen et al., 2011; Jia et al., 2010; Varga et al., 2011). Here we address two issues: First, we explore the spatial arrangement of synapses of an anatomically defined intracortical connection, i.e. the intralaminar connection between layer 5 pyramidal neurons. Secondly, we analyze the spatial organization of synapses with a novel method for identifying individual synapse clusters. This allows characterizing cluster parameters, such as dendritic length and number of inputs, in order to put them into the perspective of the rules of dendritic integration and the arithmetic of synaptic summation (e.g. Branco and H\u00e4usser, 2011; Losonczy and Magee, 2006; Polsky et al., 2004).\n\n## Results\n\nFor mapping the synapses between layer 5 (L5) pyramidal cells in mouse\u00a0primary visual cortex (V1) we combined optogenetics and 2-photon calcium imaging (Little and Carter, 2012; MacAskill et al., 2012), which we refer to as Channelrhodopsin (ChR2)-assisted synapse identity mapping (CASIM). The principle of CASIM is depicted in Figure 1A: NMDA receptor mediated Ca2+ signals identify those dendritic spines on a postsynaptic neuron, which receive input from photostimulated presynaptic neurons expressing ChR2. CASIM has the advantage over other methods for mapping synapses by light or electron microscopy (e.g. Druckmann et al., 2014; Rah et al., 2013) that it identifies synapses in functional rather than only in structural or molecular terms. For presynaptic expression of ChR2, we used transgenic mice expressing ChR2-YFP under control of the THY1 promoter in L5 pyramidal cells (line 18; Wang et al., 2007; Figure 1B). Expression levels and stimulus sensitivity were different from cell to cell. High photostimulus intensities evoked electrical responses in all probed L5 pyramidal cells. Because in more sensitive cells the number of generated action potentials dropped with higher stimulus intensities, we applied an intermediate stimulus intensity for synapse mapping, which evoked action potentials in 58% of L5 pyramidal cells (Figure 1\u2014figure supplement 1,2). For synapse mapping we selected layer 5 pyramidal cells with no detectable ChR2-YFP fluorescence, indicating that the levels of ChR2 expression are so low that the selected stimulus intensity is insufficient to cause significant depolarization. For recording calcium signals in spines of postsynaptic L5 pyramidal cells, we patched and filled cells with Alexa 594 (30 \u00b5M) and Fluo-5F (1\u2009mM) in acute slices. In order to isolate NMDA receptor mediated calcium signals and prevent spreading of unspecific excitation, patched cells were depolarized to 10 mV above the NMDAR reversal potential in voltage clamp in extracellular solution containing NBQX (10 \u00b5M), picrotoxin (50 \u00b5M) and D-serine (10 \u00b5M). Synapses between pairs of L5 pyramidal cells are reported to be located to a large extend on the proximal basal dendrite of the postsynaptic cell (Markram et al., 1997; Sjostr\u00f6m and H\u00e4usser, 2006). Therefore we focused on the basal dendrites of L5 pyramidal cells to map their inputs from other L5 pyramidal cells. Basal dendritic branches were systematically scanned with overlapping rectangular tiles of 2-photon calcium imaging to probe all spines for photostimulus-evoked calcium signals. Figure 1C shows a sequence of calcium imaging frames zoomed in on two spines, where the left spine shows a clear synaptic calcium signal. Due to the stochastic nature of neurotransmitter release, it is not expected that each AP leads to transmitter release. Thus we classified spines as receiving L5 input if they displayed at least once a higher (\u22653\u00d7standard deviation) and earlier peak calcium signal evoked by photostimulation than observed in the parent dendrite (Figure 1D - 1G). In Figure 1E L5 input positive (L5+) spines are marked by white arrowheads on a dendritic stretch. In total, out of 2168 analyzed spines, 199 were L5 input positive (9.2%, n\u00a0=\u00a020 cells). The average peak calcium signal amplitude in successful trials (\u0394G/R = 0.48 \u00b1 0.01) was significantly higher than the calcium signal in the parent dendrite (\u0394G/R=0.18 \u00b1 0.005, p<0.001, n\u00a0=\u00a0199 spines; Figure 1G). There was no significant difference in the morphological properties of L5+ spines and L5 input negative (L5-) spines (length: L5+, 1.23 \u00b1 0.06\u2009\u03bcm, n\u00a0=\u00a076; L5-, 1.11 \u00b1 0.02\u2009\u03bcm, n\u00a0=\u00a0419; p=0.04; normalized volume: L5+, 1.00 \u00b1 0.08, n\u00a0=\u00a077; L5-, 1.00 \u00b1 0.03, n\u00a0=\u00a0437; p=0.97; Figure 1\u2014figure supplement 3A,B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/09222/elife-09222-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic diagram illustrating the principle of CASIM. Synapses between presynaptic L5 neurons expressing ChR2 (green) and a postsynaptic L5 neuron filled with calcium indicator (red) are identified by calcium signals in dendritic spines (L5+ spines) evoked by photostimulation of ChR2. (B) Acute slice of primary visual cortex from a Thy1-ChR2 mouse. A L5 pyramidal cell (arrowhead) was patched and filled with Fluo-5F. (C) Example of a spine calcium signal evoked by ChR2 activation: Left, image of two spines and their parent dendrite (from white box in panel E) in the red channel (Alexa 594) for structural imaging. Right, sequence of frames from calcium\u00a0imaging in one trial showing calcium signal in the left spine. (D) Ca2+ signal corresponding to panel C (\u0394G/R; G, Fluo-5F; R, Alexa 594; red, spine; black, dendrite at spine base). (E) Analyzed dendritic stretch from cell in B. L5+ spines are marked by white arrowheads. Blue arrow head marks an example L5- spine. Dashed boxes indicate the size of imaging tiles. Inset, corresponding dendrogram; scale bar, 10 \u00b5m. (F) Ca2+ signals from all trials recorded in a selection of L5+ spines (S1 to S3), one L5- spine (S4) and at their respective dendritic bases (D1-D4) in E. (G) Peak \u0394G/R of L5+ spines (S) and dendrites (D) in cell in B (blank bars; n\u00a0=\u00a013 spines) and in all cells (filled bars; n\u00a0=\u00a0199 spines).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09222/elife-09222-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The photostimulus protocol was optimized to maximize the probability of synaptic transmission. 3 pulses at 30 Hz were applied to deliver the photostimulus in the duration of one frame (100 ms) while the PMTs for imaging were protected with a shutter. Calibration curves were acquired at 2 (left) and 5 ms (right) pulse width on L5 pyramidal neurons selected blindly (n\u00a0=\u00a012). Number of APs was measured in cell-attached mode. The mean overall calibration curves (blue) did not show a uniform increase with photostimulation power, but a declining AP yield at high powers. To analyze whether this may be explained by potential adverse effects of strong photostimulation on strongly driven neurons, we analyzed the calibration curves with respect to two populations of neurons: Strongly excitable neurons (with more than one AP on average at 1, 2 and 4 mW power; black; dashed, individual cells; solid, mean curve; n\u00a0=\u00a04 cells at 2 ms pulse width, n\u00a0=\u00a05 cells at 5 ms pulse width) showed saturation above 4 mW power with 2 ms pulse width and reduced activity at high illumination intensity at 5 ms pulse width. Weakly excitable neurons (gray; dashed, individual cells; solid, mean curve; n\u00a0=\u00a08 cells at 2 ms pulse width, n\u00a0=\u00a07 cells at 5 ms pulse width) were not affected adversely by illumination. Therefore for mapping, we chose 2 ms pulses at 4 mW as stimulus, which activates but does not overexcite weakly and strongly excitable neurons, respectively. Error bars correspond to standard deviation.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/09222/elife-09222-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** AP generation in neurons outside of L5 was measured by cell attached recordings obtained during a wide-field light stimulus in L5 (green circle). Left panel: marks (+) indicate the vertical location of the cells which were recorded in slices from Thy1-ChR2 mice. Color codes for the neurons with no evoked APs (blue) and evoked APs (red). Right panel: example traces. In total 45 cells were recorded, of those only 3 cells in L6 exhibited light evoked activity (6.7%).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/09222/elife-09222-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A,B) Cumulative fraction of spine volume (A) and normalized spine length (B) of L5+ (red) and L5- spines (black). Spine volume and length were measured only from spines extending laterally in image stacks, since spines aligned along z could not reliably be separated from the dendrite. For spine volume, the summed intensity of pixels enclosed by the respective ROI was calculated for each z-plane after background subtraction. The highest sum represented the volume of the spine. Measured volumes were normalized to the mean spine volume within dendritic segments between branching points. Spine lengths were measured on maximum z-projections as the distance between the tip of the spine head and where it attached on the dendrite. (C) Number of L5+ spines versus total number of spines probed per cell (open circles; correlation, dotted line, slope = 0.12, R = 0.93) and per segment (filled circles; correlation, continuous line, slope = 0.12, R = 0.89). (D) Distribution of L5+ spine distances from the soma (red) in the experiments and from a simulation with 1000 randomly reshuffled distributions of the same number of inputs over all recorded spine positions (blue, individual simulations; dark blue, mean). For comparison also the distribution of distances of all spines from the soma is shown (black).\n\nThe number of L5+ spines scaled with the total number of probed spines (Figure 1\u2014figure supplement 3C) but displayed a high degree of heterogeneity between cells (4% to 29%) and individual dendritic segments (3% to 50%) as has been previously reported for Schaffer collateral synapses (Druckmann et al., 2014). The classical analysis of the distribution of pairwise nearest neighbor distances applied to L5+ spines (e.g. Druckmann et al., 2014; Rah et al., 2013; Takahashi et al., 2012) revealed significantly shorter recorded distances than expected from a random distribution (Figure 2A), suggesting that L5 inputs are clustered.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/09222/elife-09222-fig2-v1.jpg)\n\n**Figure 2.:** (A) Distribution of nearest neighbor distances between L5+ spines from experiments (red) and from 1000 times random reshuffling the recorded number of inputs over all present spines within each individual dendritic segment (blue, dark blue mean trace). Median values of recorded and reshuffled data are significantly different (data, median\u00a0=\u00a03.10 \u03bcm; simulations, median\u00a0=\u00a05.02 \u00b1 0.43 \u03bcm; p<0.0001).The plot of the difference between inter-input distances from experiments and simulations (purple) shows that the deviation is most pronounced for small inter-input distances below 10 \u00b5m with a peak deviation around 5 \u00b5m, suggesting a clustered arrangement of L5+ spines. (B) Combinatorial cluster analysis: Illustration of the principle of calculating the specific ensemble likelihood (combinatorial cluster analysis step 2). Top, example of a dendritic segment with N\u00a0=\u00a030 spines in total and n\u00a0=\u00a05 L5+ spines (red). m\u00a0=\u00a04 L5+ spines are part of an input ensemble of size M\u00a0=\u00a06 spines (gray box) by fulfilling the maximal nearest neighbor distance criterion of \u25b3crit = 2 (blue bar; cluster analysis step 1). The ensemble is flanked by 'gaps' of L5- spines (gray brackets). As illustrated below, the likelihood for observing an ensemble of M\u00a0=\u00a06 spines with m\u00a0=\u00a04 L5+ spines is determined by three factors: The number or ways the L5+ spines can be distributed inside the ensemble, the number of ways the remaining L5+ spines can be distributed outside of the ensemble and the number of ways an ensemble of the given size can be placed on the dendritic segment. Bottom left, all $(M\u22122m\u22122)=6$ possible arrangements of m\u00a0=\u00a04 L5+ spines in an ensemble of M\u00a0=\u00a06 spines, note that the ensemble edges (red arrowheads) have to be occupied always to delimit the ensemble. Bottom middle, four examples of the $(N\u2212M\u22122gn\u2212m)=22$ possible assignments of the remaining n-m = 1 L5+ spine to the spines outside of ensemble and gaps. Bottom right, four examples of the $N\u2212M+1=25\u00a0$\u00a0possibilities to place the ensemble of size M\u00a0=\u00a06 spines into the dendritic segment with N\u00a0=\u00a030 spines in total. Note that at positions close to the beginning and end of the segment, the leading or trailing gap, respectively, are not fully realized. (C) Dendrograms of 10 out of 20 mapped pyramidal cells summarizing 7 observed input clusters (L5+ spines, red; L5- spines, black; dendrograms of all other recorded cells with input clusters in Figure 2\u2014figure supplement 1). Gray boxes mark input ensembles (cluster analysis step 1), red numbers are the specific ensemble likelihood values (cluster analysis step 2), red asterisks mark ensembles identified as clusters (specific ensemble likelihood \u22640.01, inputs \u22653; cluster analysis step 3), black numbers are overall cluster likelihood values for each cluster (cluster analysis step 4). Note that spines, which are located very close to each other, are not resolved at this scale and their marks appear to overlap; dashed lines indicate unmapped stretches). (D) Specific ensemble likelihood scores of all ensembles (thin line) and those with at least three inputs (thick line). Dashed line, cluster likelihood threshold. (E) Number of L5+ spines in individual clusters (red) and all ensembles (black). (F) Length of clusters (red) and all ensembles (black).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09222/elife-09222-fig2-figsupp1-v1.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/09222/elife-09222-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Combinatorial cluster analysis step 4: Example of all ensemble types possible with a total of n\u00a0=\u00a05 inputs (L5+ spines) and a gap/nearest neighbor distance criterion of \u25b3crit = 2 to be considered for calculating the overall cluster likelihood. (B) Translation of ensemble definition from uniform to non-uniform inter spine distances: Example of a dendritic segment with irregularly spaced spines. 5 spines receive the specific input (red, L5+), 4 of which are part of an ensemble (gray square) by complying with the nearest neighbor distance criterion \u25b3crit (indicated by the blue bar). The length of the leading and trailing edge, which flank the ensemble, corresponds to the nearest neighbor distance criterion. No spine located within these gaps receives the specific input.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/09222/elife-09222-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Cumulative fraction of input density (A), input packing ratio, i.e. ratio of L5+ spines over total number of spines in cluster or ensemble (B), and location as distance from soma (C) or distance from proximal branching point (D) of detected clusters (red) and all ensembles (black).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/09222/elife-09222-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) For dendritic segments, which contain a synapse cluster, the overall cluster likelihood OCL is plotted against the segment number sorted by increasing OCL value. For sets of segments with OCL values below an upper bound, this graph is the same as plotting the upper bound OCLmax(c) as function of the number c of segments with OCL values below this upper bound. (B) P value P(c,OCLmax) (Equation 4) for the binomial test of the null hypothesis that the number of observed segments with an input cluster arises from a random input distribution plotted against the recorded number of segments c containing a synapse cluster. The broken line indicates the significance level of p=0.001.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/09222/elife-09222-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (A) Diagrams illustrating three cases to be considered for calculating the axon density at a specific dendritic site at depth D in a slice of thickness T arising from neurons at different radial distances r from this site: Case 1, shell volume completely contained in slice (top panel, see Equation 6); case 2, top cap of shell missing from slice (middle panel, see Equation 7.); case 3, top and bottom caps of shell missing from slice (bottom panel, see equ. 8). (B) Radial axon density A(r) of L5 pyramidal cell axons in mouse visual cortex based on the sholl analysis by Blackman et al., 2014 (Figure 2C, 2nd panel from left) calculated according to Equation 5. (C) Remaining fraction of axonal density within a slice of thickness T as a function of the depth D in the slice calculated according to Equation 9.\n\nIn order to place the clustered arrangement of synapses into the framework of the known rules of dendritic integration and arithmetic of synaptic summation (e.g. Branco and H\u00e4usser, 2011; Losonczy and Magee, 2006; Polsky et al., 2004), it is necessary to identify individual clusters so as to characterize for example their size and the number of inputs they receive. This means to go beyond the classical pairwise analysis of nearest neighbor distances. To this end, we developed a new approach for the identification of individual synapse clusters based on combinatorial analysis of the likelihood of specific synapse arrangements (Material and methods; Figure 2B).\n\nWe identified 12 clusters of L5+ spines on the basal dendrites of 20 cells (Figure 2C and Figure 2\u2014figure supplement 1). These clusters extend over roughly 15\u2009\u03bcm with, on average, approximately 8 spines (dendritic length, 12.52 \u00b1 2.40\u2009\u03bcm; 7.17 \u00b1 0.94 L5+ spines; density, 0.84 \u00b1 0.19 L5+ spines/\u03bcm; ratio of L5+ over all spines within the cluster, 0.48 \u00b1 0.04; Figure 2E,F and Figure 2\u2014figure supplement 2A; n = 12 clusters). Almost 50% of all L5+ spines were part of a cluster (86 out of 199). There is a possibility, that due to the slicing procedure some inputs may be missed. We estimate that the size of spine clusters could be underestimated by a factor between 1.4 and 2 (see Material and methods; Figure 2\u2014figure supplement 3). This result shows that in the cortex cluster of synapses of an anatomically defined intracortical connection exist, which have the required size and spacing to be relevant for non-linear dendritic computations (\u22654 synapses within 30 \u00b5m of dendrite; see e.g. Branco and H\u00e4usser, 2011; Losonczy and Magee, 2006; Polsky et al., 2004). Furthermore, the scale of these clusters is in line with local learning rules (Engert and Bonhoeffer, 1999; Harvey and Svoboda, 2007), which might play a role in cluster formation and furthermore in synapse interactions within the cluster during synaptic plasticity.\n\n## Discussion\n\nOur results address a pressing question in the field of neural signal processing: How are the synapses of neocortical connections spatially organized on the dendrites of cortical neurons and how do the spatial patterns relate to the known rules of dendritic integration and the rules of spatiotemporal synaptic summation (e.g. Branco and H\u00e4usser, 2011; Losonczy and Magee, 2006; Polsky et al., 2004)?\n\nTo address this question we mapped the intralaminar synapses between L5 pyramidal neurons in visual cortex by combining optogenetics and 2-photon calcium imaging (CASIM; Little and Carter, 2012; MacAskill et al., 2012). Our results show clustering of these synapses on the basal dendrites of L5 pyramidal neurons. For quantitative analysis of the spatial organization we developed a new method for the identification of individual synapse clusters and characterization of cluster parameters.\n\nOur results are in contrast to previous studies mapping sensory inputs in different neocortical areas, which reported no obvious spatial structure in input patterns and suggested that local non-linear dendritic integration may not be important for sensory processing in the cortex (Chen et al., 2011; Jia et al., 2010; Varga et al., 2011). However, more recent studies provided evidence for non-linear computations during cortical processing (Lavzin et al., 2012; Smith et al., 2013; Xu et al., 2012). A potential explanation for this apparent contradiction (DeBello et al., 2014) is that in the experiments described here, we stimulate a well-defined set of neurons, while inputs which are defined by the same sensory stimulus (Chen et al., 2011; Jia et al., 2010; Varga et al., 2011) are in all likelihood arising from a mix of genetically/anatomically defined types of neurons. Input clustering has been shown for axodendritic contacts in the barn owl auditory system (McBride et al., 2008), and more recently, in mice, for thalamocortical (Rah et al., 2013) and hippocampal CA3-CA1 synapses (Druckmann et al., 2014). In all of these cases however there is no quantification of cluster parameters, which is crucial if one wants to relate the findings to any kind of biophysical model of dendritic computation. In this way our data and analysis go considerably beyond these reports by identifying individual clusters and quantifying cluster parameters, such as for example the number of inputs per cluster.\n\nOur novel method for spatial cluster analysis by combinatorial statistics is not limited to the synaptic connections described here. It can be applied to characterize any distribution or pattern of synapses on the postsynaptic dendrite as obtained for example by large scale electron microscopy, GFP reconstitution across synaptic partners, array tomography or mapping of synaptic activity (e.g Bock et al., 2011; Chen et al., 2011; Druckmann et al., 2014; Kleindienst et al., 2011; Rah et al., 2013; Takahashi et al., 2012), as well as any other data regarding the spatial organization of structures along a one dimensional axis like for example the distribution of presynaptic boutons along an axon (e.g. Schuemann et al., 2013).\n\nOur results show that the clusters of intracortical connections between L5 pyramidal neurons contain 4 to 14 synapses within 30 \u00b5m of basal dendrite. According to the known rules of dendritic integration and the spatiotemporal arithmetic of synaptic summation (Branco and H\u00e4usser, 2011; Losonczy and Magee, 2006; Polsky et al., 2004) such clusters would result in superlinear dendritic integration during synchronous synaptic activity. Superlinear integration can also occur without tight clustering (Branco et al., 2010; Losonczy and Magee, 2006), but the specifics of the spatial input organization are expected to define how different temporal activity patterns determine the firing pattern of the postsynaptic cell. Our results are well explained by local learning rules, which may not only be involved in cluster formation but also support interactions among synapses in a cluster during synaptic plasticity events (Engert and Bonhoeffer, 1999; Harvey and Svoboda, 2007). They are also in line with observations of spatially clustered spontaneous activity of synapses during development\u00a0(Kleindienst et al., 2011; Takahashi et al., 2012) and clustered spine formation and synaptic potentiation during learning and experience-dependent plasticity (Fu et al., 2012; Makino and Malinow, 2011). A further potential role of input clusters may be to overcome the stochasticity of neurotransmitter release and help to increase the reliability of synaptic transmission (Bagnall et al., 2011).\n\nTypically connections between L5 pyramidal cells consist of 4 to 8 synapses, which are distributed over different branches of the postsynaptic dendrite (Deuchars et al., 1994; Markram et al., 1997). This suggests that the synapses within L5 input clusters most likely arise from a set of presynaptic neurons rather than a single one. Nevertheless, synchronous activation of L5 inputs within a cluster is expected to occur during L5 network oscillations (e.g. Buffalo et al., 2011; Sun and Dan, 2009). In anesthetized rats, L5 pyramidal cells in visual cortex receive synchronously oscillating excitatory inputs (Sun and Dan, 2009), which are thought to arise from rhythmically firing L5 pyramidal cells (Flint and Connors, 1996; Silva et al., 1991) within the network of L5 pyramidal cells (Markram, 1997). Similar oscillations in L5 have been observed in awake animals (e.g. Buffalo et al., 2011).\n\nIn conclusion, our results, to our knowledge, provide the first characterization of synapse clusters arising from an anatomically and genetically defined input on the dendritic tree of cortical pyramidal cells. Only such quantitative analysis of the spatial organization of inputs together with the rules of dendritic integration and synaptic summation will allow working out the logical operations of neural computations at the cellular level, which are critical for understanding information processing in neural circuits.\n\n## Materials and methods\n\nAll experiments were conducted in compliance with the institutional guidelines of the Max Planck Society and the local government (Regierung von Oberbayern).\n\n### Brain slice preparation\n\n300 \u00b5m thick acute coronal slices of primary visual cortex were prepared from THY1-ChR2 (line\u00a018) mice (Wang et al., 2007) between postnatal day 40 and 55 in choline-based ACSF (in mM, 110 choline chloride, 2.5 KCl, 25 NaHCO3, 1.25 NaH2PO4, 0.5 CaCl2, 7 MgCl2, 25 D-glucose, 11.6 Na-L-ascorbate, 3.1 Na-pyruvate, aerated with 95% O2/5% CO2) at 0\u00b0C (Scheuss et al., 2006) after perfusing the animal with the same solution. Slices of the separated hemispheres were incubated at 35\u00b0C for one hour and then stored at room temperature in normal ACSF (in mM, 127 NaCl, 2.5 KCl, 25 NaHCO3, 1.25 NaH2PO4, 2 CaCl2, 1 MgCl2, 25 D-glucose, aerated with 95% O2/5% CO2) (Scheuss et al., 2006) until the recordings.\n\n### Photostimulus calibration and specificity testing\n\nCell activity was measured by cell attached recordings using patch pipettes filled with (in mM) 10 KCl, 140\u2009K-gluconate, 10 HEPES, 2 MgCl2, 2 CaCl2, 0.05 Alexa 594, pH 7.25. The seal resistance was 20\u201340 M\u03a9. For obtaining ChR2 dose-response curves, light-evoked activity at blindly selected L5 pyramidal neurons was measured at increasing illumination power (1, 2, 4, 6, 9 mW at objective back aperture; see section Imaging Experiments) and pulse widths (2 and 5 ms) in the same ACSF solution used for mapping experiments, but additionally containing 10\u2009\u03bcM CPP. To verify the specificity of photostimulation of L5 neurons, the activity of neurons in other cortical layers was measured in response to the same light stimulation at L5 and in the same ACSF solution as used for mapping experiments.\n\n### Mapping experiments\n\nExperiments were performed at room temperature in normal ACSF containing in addition (in \u00b5M) 10 NBQX, 50 picrotoxin and 10 D-serine, on a custom built two-photon laser-scanning microscope controlled with Labview (National Instruments, Austin, TX, USA) based custom imaging software. L5 pyramidal cells with undetectable or low levels of ChR2-YFP expression in primary visual cortex were visually identified (2-photon imaging at 920 nm excitation) and patched in whole-cell voltage clamp mode (access resistance 10\u201330 M\u03a9; internal solution, in mM, 125 Cs-methanesulfonate, 10 HEPES, 10 Na2phosphocreatine, 4 MgCl2, 4 Na2-ATP, 0.4 Na-GTP, 3 Na-L-ascorbate, 5 QX-314, 10 TEA-Cl, 1 Fluo-5F, 0.03 Alexa 594, pH 7.3). Cells were filled for \u226510 min at resting potential and then depolarized to 10 mV above the NMDAR reversal potential to remove the Mg2+ block from NMDARs (Oertner et al., 2002). Since in adulthood the occurrence of \u2018silent\u2019 synapses is effectively negligible (Rumpel et al., 1998) NMDA receptor mediated calcium signals are expected to identify functional synapses containing both AMPA and NMDA receptors. The photostimulus (470 nm LED; Rapp OptoElectronic GmbH, Wedel, Germany) consisted of 3 pulses of 2 ms at 30\u2009Hz (4 mW at the objective back-aperture) and was applied via the fluorescence excitation path of the microscope to the full field of view. It evoked on average 1.57 \u00b1 0.54 (n\u00a0=\u00a012) action potentials selectively in 58% of the ChR2 expressing L5 neurons (Figure 1\u2014figure supplements 1,2). Dendritic branches were systematically scanned with overlapping rectangular tiles (5\u00d719.8 \u03bcm2) at 810 nm excitation. Rotation of the tiles was adjusted to fit spines and parent dendritic segment optimally in the field of view. For calcium imaging, 50 frames (pixel size 100 x 100 nm2) of single z-planes were acquired at 10\u2009Hz in green (Fluo-5F) and red (Alexa 594) channel in the following sequence: First frame with laser shutter closed for measuring electrical offsets, 5 frames baseline before photostimulation, 2 frames with PMTs protected by a shutter during photostimulation, and 42 frames after the photostimulation. At every dendritic tile location, calcium imaging was repeated at least 3 times per z-plane (interstimulus interval, \u226510\u2009s) at multiple z-planes to cover every spine, and an image stack was taken at higher resolution (voxel size, 50 \u00d7 50 \u00d7 1000 nm3).\n\n### Input detection and structural analysis\n\nData were analyzed with custom software in Matlab (Mathworks, Natick, MA, USA; Source code 1). Spine heads and their bases on the parent dendrite were marked with rectangular ROIs, and the dendritic segments were traced in reconstructions based on averaged red channel frames from calcium imaging or the maximum z-projections of the image stacks at each tile position stitched together based on cross-correlations. Spine calcium signals (\u25b3G/R) were calculated as change in fluorescence of the calcium indicator Fluo-5F (\u0394G) normalized to the mean intensity of the structural marker Alexa 594 (R) averaged over the brightest 70% of ROI pixels in the red channel. Dendrite calcium signals at the spine bases were calculated identically but without any pixel selection. \u0394G/R signals were smoothed (3-point moving average) and the peak amplitude in the 2nd\u00a0to\u00a04th time point after the stimulus as well as the standard deviations in the baseline interval and during the last five time points were determined. A spine was classified as receiving L5 input (L5 positive, L5+) if its peak \u0394G/R exceeded in one trial the dendritic peak \u0394G/R plus three times the higher value of the two standard deviations. We never observed large dendritic \u0394G/R signals at input clusters, which could lead to false negative spine categorization according to this classification, because spine/dendrite coupling is usually low (Sabatini et al., 2002) and simultaneous activation of many spines within a cluster was very rare. The results of the classification algorithm for spine calcium signals were verified manually. Acquisitions with high noise in the calcium signal due to low fluorescence intensity, e.g. from small or out of focus spines, and without an evident difference between the spine and the dendrite calcium signal were classified as false-positives. Acquisitions with noticeable difference in spine and dendrite calcium signal, but classified by the algorithm as no response either due to a fast decaying spine calcium signal, or because spine and the dendrite calcium signal were of similar magnitude although the spine signal peak occurred earlier, were labeled as false-negatives. Acquisitions where a subjective decision was not possible were classified as ambiguous and treated as no response. In the individual traces (n\u00a0=\u00a015293 acquisitions), the total discrepancy between manual verification and the classification by the algorithm was 2.37%, which translated into a total discrepancy of 6.46% with respect to the input classification (0.55% false negatives, 4.2% false positives, 1.71% ambiguous; n\u00a0=\u00a02168 spines). CASIM might miss synapses with very low release probability but otherwise the false negative rate is mostly determined by the fraction of presynaptic neurons not expressing ChR2 as with other approaches relying on the expression of markers of any kind (e.g. Druckmann et al., 2014; Rah et al., 2013). However, since undersampling the presynaptic population is expected to be random, this would not introduce artifacts of non-random structure in the mapped synapse distribution. Positions of spines on the dendrite were extracted from 3D reconstructions of dendrite traces in time-lapse acquisitions. The location of a spine was defined to be the point on the dendrite trace with the shortest orthogonal distance to the center of the spine head.\n\n### Cluster analysis\n\nThe combinatorial cluster analysis substantially extends the classical pairwise analysis of nearest neighbor distances (e.g. Druckmann et al., 2014; Rah et al., 2013) as it allows to identify and characterize individual clusters. The advantage of the combinatorial approach over the estimation of likelihoods using e.g. random reshuffling (e.g. (Takahashi et al., 2012; Yadav et al., 2012) is that it provides exact values for the small likelihoods involved, for which reliable estimates would require prohibitively large numbers of rounds of reshuffling. The combinatorial cluster analysis proceeds in five steps:\n\n#### Step 1: Identification of input ensembles\n\nTo identify aggregations of inputs, which represent potential clusters, we first defined input ensembles using as criterion the distance between nearest neighbor L5+ spines to be \u2264\u25b3crit = 10 \u00b5m (e.g. Takahashi et al., 2012) (Figure 2B, blue bar). We found 45 input ensembles in 20 cells (total analyzed dendritic length 2718\u2009\u03bcm; Figure 2C and Figure 2\u2014figure supplement 1, gray boxes).\n\n#### Step 2: Calculation of the specific ensemble likelihood\n\nThe specific ensemble likelihood of an ensemble is the likelihood that such ensemble of inputs occurs anywhere on the dendritic segment when the inputs are randomly assigned to the spines. It is calculated by determining the number of all possible ways of realizing such an ensemble divided by the total number of possibilities for assigning the inputs to the spines. As illustrated in Figure 2B for uniform inter-spine distances, the number of ways to realize a particular ensemble depends on (i) the number of ways the particular number of inputs can be assigned to the number of spines within the ensemble (Figure 2B, bottom, left); (ii) the number of ways the remaining inputs can be assigned to the spines outside the ensemble and its flanking gaps (Figure 2B, bottom, middle); and (iii) the number of possible positions of such ensemble on the dendritic segment (Figure 2B, bottom, right). Accounting for the gaps is necessary, because inputs to spines within the gaps would otherwise be part of the ensemble, which would then have a correspondingly larger size.\n\nIn the case of non-uniform distances an ensemble type is defined as the subset of ensembles of length \u2264lM, which contain \u2265m spines, of which \u2265m receive the specific input (Figure 2\u2014figure supplement 4B). The number of possible input arrangements for an ensemble type is obtained by moving along the segment spine by spine and calculating the number of possible input assignments for the number of spines inside and outside of the ensemble and gaps if the ensemble definition is satisfied, which depends on the local spine density (Figure 2\u2014figure supplement 1B). The likelihood that m spines with the specific input (e.g. here L5 inputs) form an ensemble of size lM on a dendritic segment with N spines in total and n of these spines receiving the specific input in total is:\n\n$$\np_{N,n}(l_{M},m,l_{g})=(\\sumi=1N(M_{i}^{l_{M}}(m)\u22122m\u22122)(N\u2212M_{i}^{l_{M}}(m)\u2212g_{i}^{l_{g}}\u2212h_{i}^{l_{g}}n\u2212m))\\frac{1}{(Nn)}\n$$\n\nwhere the number of spines in an ensemble of length lM starting with the spine at position di is\n\n$$\nM_{i}^{l_{M}}(m)={number\u00a0of\u00a0spines\u00a0in\u00a0[d_{i},d_{i}+l_{M}]\u00a0if\u00a0number\u00a0of\u00a0spines\u00a0in\u00a0[d_{i},d_{i}+l_{M}]\u00a0\\geq\u00a0m0\u00a0otherwise\n$$\n\nand the numbers g and h of spines in the leading and trailing gaps of length lg, respectively, are\n\n$$\ng_{i}^{l_{g}}=number\u00a0of\u00a0spines\u00a0in\u00a0[d_{i}\u2212l_{g},d_{i}]\n$$\n\n\n\n$$\nh_{i}^{l_{g}}=number\u00a0of\u00a0spines\u00a0in\u00a0[d_{i}+l_{M},d_{i}+l_{M}+l_{g}]\n$$\n\nThe first term in the sum of Equation 1 accounts for the number of ways to assign m-2 inputs to an ensemble of $M_{i}^{l_{M}}(m)$-2 spines at position i. 2 is subtracted because inputs to the first and last spine are fixed to exclude empty ensemble edges (Figure 2B, bottom left; Figure 2\u2014figure supplement 4B). The second term in the sum accounts for the number of ways for assigning the remaining n-m inputs to the spines outside of the ensemble and leading and trailing gap (Figure 2B, bottom middle). The sum runs over all spine positions on the dendritic segment (Figure 2B, bottom right). The denominator normalizes by the total number of possibilities for assigning n inputs to N spines. The gap length corresponds to the nearest neighbor distance criterion lg =\u25b3crit since an ensemble is delimited by those inputs, of which the preceding or following inputs are further away than the nearest neighbor distance criterion (Figure 2B, top; Figure 2\u2014figure supplement 4B).\n\nThe specific ensemble likelihood (SEL) to observe a particular ensemble type is then the sum of Equation 1 over all inputs available, which fit into the ensemble of size lM according to the ensemble definition above:\n\n$$\nSEL_{N,n}(l_{M},m,l_{g})=\\sumi\u00a0=\u00a0mmin(n,M)p_{N,n}(l_{M},i,l_{g})\n$$\n\nThe specific ensemble likelihoods for the observed ensembles of L5+ spines are provided in the dendrograms in Figure 2C and Figure 2\u2014figure supplement 1 (red numbers next to gray boxes).\n\n#### Step 3: Classification of ensembles as clusters\n\nThe specific ensemble likelihood (Equation 2) is then used to classify ensembles as clusters based on an empirical upper likelihood threshold of 1% (compare Bendels et al., 2010). The rationale behind this is that local aggregations of inputs are considered as clusters only if the probability that they would occur by chance is low. Defining ensembles of at least three inputs with a likelihood \u22641% as cluster, we classified 12 out of 45 ensembles as clusters (mean specific ensemble likelihood=0.003 \u00b1 0.0008; Figure 2C and Figure 2\u2014figure supplement 1, red asterisks). Ensembles, which fulfill the specific cluster likelihood threshold, but which encompass the whole dendritic segment (dN - d1\u00a0\u2265 lM\u00a0\u2265 dN - d1 - 2 lg and m = n) are not considered to qualify as a cluster.\n\nThis step is sufficient to identify clusters for their characterization. The following steps serve further confirmation of the presence of clusters and the appropriateness of the choice of the specific ensemble likelihood threshold.\n\n#### Step 4: Calculation of the overall cluster likelihood for input clusters\n\nThe fourth step is concerned with the likelihood to observe any type of cluster on a dendritic segment for comparing the numbers of expected and observed segments, which contain a cluster. This overall cluster likelihood (OCL) is determined by considering all possible ensemble types (see example in Figure 2\u2014figure supplement 4A), calculating their specific ensemble likelihoods (SEL, Equation 2), and adding up those, which are equal or below the specific ensemble likelihood (Step 3) of the cluster for which the overall cluster likelihood is calculated:\n\n$$\nOCL_{N,n}(l_{M}^{\u2217},m^{\u2217},l_{g})=\\suml_{M}\u00a0\u00a0\\summ=2min(n,M)SEL_{N,n}(l_{M},m,l_{g})\u22c5\\delta_{N,n}(l_{M},m,l_{g})\n$$\n\nWith\n\n$$\n\\delta_{N,n}(M,m,g)={1\u00a0if\u00a0SEL_{N,n}(l_{M},m,l_{g})\u00a0\\leq\u00a0SEL_{N,n}(l_{M}^{\u2217},m^{\u2217},l_{g})<\u00a0SEL_{N,n}(l_{M},m\u22121,l_{g})0\u00a0otherwise\n$$\n\nwhere the outer sum is over all possible lM with the restriction that any set of spines, which satisfies the ensemble definitions for more than one lM is only counted once. The overall cluster likelihood for the observed clusters of L5+ spines are provided in the dendrograms in Figure 2C and Figure 2\u2014figure supplement 1 (black numbers below gray boxes with red asterisks).\n\n#### Step 5: Comparison of the observed and expected numbers of dendritic segments containing an input cluster\n\nIn the final step, the overall cluster likelihood is used to calculate the probability of finding a cluster in 12 out of 40 analyzed segments. Since the overall cluster likelihood (OCL) is different in different segments, we sorted its values in ascending order (Figure 2\u2014figure supplement 5A). The probability to obtain at least c segments containing a cluster with an of OCL \u2264 OCLmax(c) in the data set of S segments (in the present case 40) is calculated by binomial statistics from the maximal overall cluster likelihood OCLmax(c) as upper bound on OCL:\n\n$$\nP(c,OCL_{max})=\\sumx=cS(Sx)OCL_{max}^{x}(1\u2212OCL_{max})^{S\u2212x}\n$$\n\nFor this analysis only dendritic segments with a length of \u226520 \u00b5m were included. This probability is equivalent to the P value of the binomial test for the null hypothesis that the number of observed segments with an input cluster arises from a random input distribution (Yadav et al., 2012). We find that the probability to observe c segments containing a cluster in the data set of 40 segments in total declines and remains below the significance threshold of 0.001 until the second last of the sorted segments (Figure 2\u2014figure supplement 5B). The last segment with a cluster has a comparatively high OCL value (Figure 2\u2014figure supplement 5A), which drives the probability to observe the given number of segments with a cluster above the significance threshold. However, the number of 11 segments with a cluster with a P value below 0.001 supports the hypothesis that L5+ spines are indeed arranged in clusters not by chance. This step serves further as confirmation for the appropriate choice of the cluster criterion in step 3.\n\n### Estimation of missed L5 inputs due to slicing\n\nTo estimate the fraction of missed L5 inputs resulting from the slicing procedure we calculated the radial axon density A(r) (Figure 2\u2014figure supplement 3B) of L5 pyramidal cell axons in mouse visual cortex based on the Sholl analysis by Blackman et al., 2014 (their Figure 2C, 2nd panel from left) as\n\n$$\nA(r)=\\frac{number\u00a0of\u00a0crossings\u00a0at\u00a0r}{4\\pir^{2}\\deltar}\n$$\n\nThe average axon density arising from presynaptic L5 neurons at a distance r from a dendritic location is given by the radial axon density of L5 pyramidal cells at the distance of r from the soma. For calculating the remaining fraction of presynaptic neurons contributing to the axon density at a dendritic location at a depth of D in a slice of thickness T, three cases have to be distinguished (Figure 2\u2014figure supplement 3A). The neuron density is assumed to be uniform and therefore needs not to be explicitly considered in the following equations:\n\nCase 1: Spherical shell around dendritic location in slice is complete, 0 < r < D (Figure 2\u2014figure supplement 3A, top panel)\n\nThe volume of a spherical shell of radius r and thickness \u03b4r is\n\n$$\nV(r)=4\\pir^{2}\\deltar\n$$\n\nCase 2: Spherical shell around dendritic location in slice with one cap missing, D < r < T-D (Figure 2\u2014figure supplement 3A, middle panel)\n\nThe volume of a spherical shell of radius r and thickness \u03b4r with one cap of height h = r-D subtracted is\n\n$$\nV(r)=(4\\pir^{2}\u22122\\pirh)\\deltar=2\\pir(r+D)\\deltar\n$$\n\nCase 3: Spherical shell around dendritic location in slice with two caps missing, T-D < r < rmax (Figure 2\u2014figure supplement 3A, bottom panel)\n\nThe maximal radius rmax denotes here the maximal radial extent of the average axonal density. The volume of a spherical shell of radius r and thickness \u03b4r with top cap of height h1 = r-D and bottom cap of height h2 = r-(T-D) subtracted is\n\n$$\nV(r)=(4\\pir^{2}\u22122\\pirh_{1}\u22122\\pirh_{2})\\deltar=2\\pirT\\deltar\n$$\n\nCombining these equations yields the remaining fraction of axonal density within a slice of thickness T as a function of the depth D in the slice as\n\n$$\nF(D)=\\frac{\\int_{0}^{D}4\\pir^{2}A(r)dr\u00a0+\u00a0\\int_{D}^{T\u2212D}2\\pir(r+D)A(r)dr+\u00a0\\int_{T\u2212D}^{r_{max}}2\\pirTA(r)dr}{\\int_{0}^{r_{max}}4\\pir^{2}A(r)dr}\n$$\n\nFrom this we estimate that the fraction of the remaining L5 pyramidal cell axon density that can be activated in a slice is between 50% and 70% depending on the depth in the slice (Figure 2\u2014figure supplement 3C). This suggests that between 30% and 50% of L5 inputs are missed due to the slicing process.\n\n### Statistics\n\nSpine and dendrite calcium signal peaks were compared to each other by Wilcoxon rank sum test. Z-tests were applied when comparing the median inter-input distance from the experiments to Monte Carlo simulations. In plots asterisks indicate p-values as *,\u00a0p<0.05; **,\u00a0p<0.01; and ***,\u00a0p<0.001.\n\nThe values given in the text are mean \u00b1 SEM (standard error of the mean), if not indicated otherwise.\n",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "9347bf16-8d35-4bec-a13d-0ae2238338aa",
+      "submission_id": "62be6b4b-67ca-4bf8-94d9-cb4d86ef4c34",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael H\u00e4usser, University College London , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.09222.015](https://doi.org/10.7554/eLife.09222.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Clusters of synaptic inputs on dendrites of layer 5 pyramidal cells in visual cortex\" for peer review at eLife. Your submission has been favorably evaluated by Eve Marder (Senior editor), a Reviewing Editor, and two reviewers.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis study maps excitatory inputs onto dendrites of layer 5 pyramidal cells in visual cortex with optogenetic tools to study whether or not activated spines can form stable input clusters over time. This is an important and interesting topic, since synaptic input clustering has a large effect on the mode of input integration and plasticity in cortical pyramidal cells. Indeed, a number of papers have been published on this issue recently pro and contra (e.g. Kleindienst et al., Neuron, 2011; Takahashi et al., Science, 2012; Chen et al., 2011, Nature). Specifically, the authors investigated how spines in close proximity respond when a large population of ChR2+ layer 5 axons are activated simultaneously by developing a novel, optogenetics-based method. They conclude that L5-L5 synapses tend to cluster on the same dendritic branch (within a dendritic stretch of 20 um) in clusters containing 4 to 8 activated spines. The manuscript thus makes a valuable contribution to an ongoing debate in the field. However, several issues need to be addressed.\n\nEssential revisions:\n\n1) The authors identified 7 L5-L5 clusters (out of 30 ensembles) on dendrites arising from 13 cells (Figure 2C). While statistically significant, these are rather small numbers and, thus, are insufficient to adequately quantify the real statistics of L5 clusters (i.e., are there really 4-8 activated spines on such a cluster?). As the authors argue \u2013 justifiably \u2013 that the main advantage of their method is to identify functional connections, the manuscript would be strengthened by improving the statistics, with more convincing quantification of the cluster size.\n\n2) The authors leave open the most important question: how do these simultaneously active spines contribute to the activation of the branch segment? Are they more effective in evoking supralinear responses opposed to randomly activated spines? Indeed, the authors suggest (based on other studies) that, in L5-L5 clusters, there would be non-linear dendritic integration of synaptic inputs during synchronous activation. But they do activate L5 synchronously with optogenetics, so they should observe this nonlinearity (e.g. local NMDA spikes \u2013 in the experiment suggested below \u2013 and/or large Ca signals in both the corresponding dendritic spines and dendritic shaft, belonging to the cluster \u2013 as opposed to cases where L5 synapses are not clustered). The authors seem to be in an ideal position to examine whether their morphological clusters are indeed operating in the supra-linear regime. This could be examined as follows: after identifying a cluster, one could hyperpolarize the soma of the post-synaptic neuron (to avoid axonal spiking) and compare the local dendritic/spine calcium signals in a cluster vs. non-cluster cases.\n\n3) The authors tried to pharmacologically exclude AMPA type receptors from their analysis. However, these receptors may also contribute to the activation of dendritic branches even though the calcium transients cannot be detected. The point here is that throughout the experiments the authors blocked AMPA receptors under the assumption that all synapses contain both NMDARs and AMPARs, so the underlying population they sample from would not change. To our knowledge, this assumption has not been directly tested for synapses between L5 PCs (i.e. lack of silent \u2013 NMDA only synapses), and the citation the authors provide on this issue deals with silent synapses between L2/3 PCs or from L2/3 to L5 synapses.\n\n4) What% of excitatory inputs onto L5PCs is missing due to the slicing process and how much this affects the authors' estimate of the size of the active spine clusters?\n\n5) In their Discussion, the authors should address the question of synchrony. Namely, how likely is it that the L5 population is activated synchronously for visual (rather than optogenetic) input? (In this context it is worth mentioning that individual L5-L5 synapses consists of 4-5 connections that are typically formed on different dendritic branches. These 4-5 connections will be activated simultaneously but, obviously, they are not part of a cluster).\n",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ce00a616-6f08-42d9-aaae-36668fef26db",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C1",
+      "claim": "The spatial organization of synaptic inputs on the dendritic tree of cortical neurons plays a major role for dendritic integration and neural computations.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial organization of synaptic inputs on the dendritic tree of cortical neurons plays a major role for dendritic integration and neural computations, yet, remarkably little is known about it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the importance of spatial organization, drawing from established scientific understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "1dbebe82-7d08-4c13-9350-666549426f37",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C2",
+      "claim": "Remarkably little is known about the spatial organization of synaptic inputs on the dendritic tree of cortical neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The spatial organization of synaptic inputs on the dendritic tree of cortical neurons plays a major role for dendritic integration and neural computations, yet, remarkably little is known about it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion about the state of knowledge in the field at the time of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "41d0a634-fafa-4d46-8161-47b77739bf78",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C3",
+      "claim": "The synapses of intralaminar inputs form clusters on the basal dendrites of layer 5 pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the synapses of intralaminar inputs form clusters on the basal dendrites of layer 5 pyramidal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data presented in the manuscript, supported by the CASIM mapping and cluster analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "3f697a1a-e5bf-4509-b442-bedb5e340388",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C4",
+      "claim": "The clusters of intralaminar inputs contain 4 to 14 synapses within \u226430 \u00b5m of dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "These clusters contain 4 to 14 synapses within \u226430 \u00b5m of dendrite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative characterization of the clusters based on experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "5f56ae28-ee5f-4aeb-98d9-b8cefc08fec6",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C5",
+      "claim": "The cluster parameters suggest that there will be non-linear dendritic integration of synaptic inputs during synchronous activation.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the spatiotemporal characteristics of synaptic summation, these numbers suggest that there will be non-linear dendritic integration of synaptic inputs during synchronous activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the measured cluster parameters and established knowledge about dendritic integration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "a91415c4-907f-46e1-a482-76e26b0eeea1",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C6",
+      "claim": "Computations on the level of single neurons critically depend on the location and spatial relationship between active synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Computations on the level of single neurons critically depend on the location and spatial relationship between active synapses (e.g. Branco and H\u00e4usser, 2011; Losonczy and Magee, 2006; Polsky et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "d4ac3977-839a-4bf9-b90a-80fdfdbfea4f",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C7",
+      "claim": "Knowing the connectivity of neurons with single synapse resolution is essential to understand how synaptic integration at the cellular level contributes to neural circuit function.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus knowing the connectivity of neurons with single synapse resolution is essential to understand how synaptic integration at the cellular level contributes to neural circuit function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the previous statement about the importance of spatial relationships.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "d01608f0-a556-4896-a00a-c3b73c4b08e1",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C8",
+      "claim": "Clusters of synaptic inputs can give rise to superlinear summation during synchronous activity.",
+      "claim_type": "EXPLICIT",
+      "source": "These are clusters of synaptic inputs, which can give rise to superlinear summation during synchronous activity (e.g. DeBello et al., 2014; Larkum and Nevian, 2008; Mel, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "77e25f2e-5a70-4b5f-87b1-0640533a906c",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C9",
+      "claim": "Clustering has been reported for synchronously active synapses during spontaneous activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Clustering has been reported for synchronously active synapses during spontaneous activity (Kleindienst et al., 2011; Takahashi et al., 2012), for synapses undergoing plasticity (Makino and Malinow, 2011; McBride et al., 2008) as well as for synapses from anatomically defined populations of presynaptic neurons (Druckmann et al., 2014; Rah et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "06399291-6ee8-42a9-a139-e7fc031df816",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C10",
+      "claim": "Clustering has been reported for synapses undergoing plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Clustering has been reported for synchronously active synapses during spontaneous activity (Kleindienst et al., 2011; Takahashi et al., 2012), for synapses undergoing plasticity (Makino and Malinow, 2011; McBride et al., 2008) as well as for synapses from anatomically defined populations of presynaptic neurons (Druckmann et al., 2014; Rah et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "9d4aabfe-435a-4582-a18b-a205f6b33947",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C11",
+      "claim": "Clustering has been reported for synapses from anatomically defined populations of presynaptic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Clustering has been reported for synchronously active synapses during spontaneous activity (Kleindienst et al., 2011; Takahashi et al., 2012), for synapses undergoing plasticity (Makino and Malinow, 2011; McBride et al., 2008) as well as for synapses from anatomically defined populations of presynaptic neurons (Druckmann et al., 2014; Rah et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "3284fa80-5bd8-4d6a-8752-3f2f4b6dccf9",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C12",
+      "claim": "The cluster parameters relevant for dendritic computations are not rigorously and quantitatively assessed in previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the cluster parameters relevant for dendritic computations are not rigorously and quantitatively assessed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion about the limitations of previous research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "ca6f89b8-58e3-45df-955b-5f41594970ba",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C13",
+      "claim": "In different cortical areas the patterns of synapses activated by sensory stimulation suggest that inputs onto central neurons may not be clustered.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in different cortical areas the patterns of synapses activated by sensory stimulation suggest that inputs onto central neurons may not be clustered (Chen et al., 2011; Jia et al., 2010; Varga et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "59a36a4e-0de3-4ace-97f1-12231978647f",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C14",
+      "claim": "Transgenic mice expressing ChR2-YFP under control of the THY1 promoter (line 18) express ChR2-YFP in L5 pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For presynaptic expression of ChR2, we used transgenic mice expressing ChR2-YFP under control of the THY1 promoter in L5 pyramidal cells (line 18; Wang et al., 2007; Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement supported by citation and reference to a figure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "6340d5ae-2518-4270-9c7d-f315c3e8ec2d",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C15",
+      "claim": "High photostimulus intensities evoked electrical responses in all probed L5 pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "High photostimulus intensities evoked electrical responses in all probed L5 pyramidal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "74196bac-d4ec-4609-84d2-645751711a3d",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C16",
+      "claim": "An intermediate stimulus intensity evoked action potentials in 58% of L5 pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Because in more sensitive cells the number of generated action potentials dropped with higher stimulus intensities, we applied an intermediate stimulus intensity for synapse mapping, which evoked action potentials in 58% of L5 pyramidal cells (Figure 1\u2014figure supplement 1,2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the experiments, supported by reference to supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "6c961965-4c7c-4f83-b61e-a465b3d71239",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C17",
+      "claim": "Synapses between pairs of L5 pyramidal cells are reported to be located to a large extent on the proximal basal dendrite of the postsynaptic cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Synapses between pairs of L5 pyramidal cells are reported to be located to a large extend on the proximal basal dendrite of the postsynaptic cell (Markram et al., 1997; Sjostr\u00f6m and H\u00e4usser, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "3bf347f5-66cf-4d62-98ed-c533dd5fcb09",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C18",
+      "claim": "Out of 2168 analyzed spines, 199 were L5 input positive (9.2%, n = 20 cells).",
+      "claim_type": "EXPLICIT",
+      "source": "In total, out of 2168 analyzed spines, 199 were L5 input positive (9.2%, n = 20 cells).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "674c8780-9eb2-4ffd-a22a-5cd77dbeff4e",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C19",
+      "claim": "The average peak calcium signal amplitude in successful trials (\u0394G/R = 0.48 \u00b1 0.01) was significantly higher than the calcium signal in the parent dendrite (\u0394G/R=0.18 \u00b1 0.005, p<0.001, n = 199 spines).",
+      "claim_type": "EXPLICIT",
+      "source": "The average peak calcium signal amplitude in successful trials (\u0394G/R = 0.48 \u00b1 0.01) was significantly higher than the calcium signal in the parent dendrite (\u0394G/R=0.18 \u00b1 0.005, p<0.001, n = 199 spines; Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the experiments with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "0a754c5d-9120-48cc-8537-6965b4c6e0eb",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C20",
+      "claim": "There was no significant difference in the morphological properties of L5+ spines and L5- spines.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant difference in the morphological properties of L5+ spines and L5 input negative (L5-) spines (length: L5+, 1.23 \u00b1 0.06 \u03bcm, n = 76; L5-, 1.11 \u00b1 0.02 \u03bcm, n = 419; p=0.04; normalized volume: L5+, 1.00 \u00b1 0.08, n = 77; L5-, 1.00 \u00b1 0.03, n = 437; p=0.97; Figure 1\u2014figure supplement 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the experiments with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "00901905-be53-47e9-b84f-16ad5b0a70c8",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C21",
+      "claim": "The number of L5+ spines scaled with the total number of probed spines.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of L5+ spines scaled with the total number of probed spines (Figure 1\u2014figure supplement 3C) but displayed a high degree of heterogeneity between cells (4% to 29%) and individual dendritic segments (3% to 50%) as has been previously reported for Schaffer collateral synapses (Druckmann et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experiments, supported by reference to a figure and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "8b22ceb9-ddc4-43b4-a0d2-3ec3316cabad",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C22",
+      "claim": "The number of L5+ spines displayed a high degree of heterogeneity between cells (4% to 29%) and individual dendritic segments (3% to 50%).",
+      "claim_type": "EXPLICIT",
+      "source": "The number of L5+ spines scaled with the total number of probed spines (Figure 1\u2014figure supplement 3C) but displayed a high degree of heterogeneity between cells (4% to 29%) and individual dendritic segments (3% to 50%) as has been previously reported for Schaffer collateral synapses (Druckmann et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "907f56bd-1eb2-46bc-a588-bba001ffeb17",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C23",
+      "claim": "High degree of heterogeneity in the number of inputs has been previously reported for Schaffer collateral synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of L5+ spines scaled with the total number of probed spines (Figure 1\u2014figure supplement 3C) but displayed a high degree of heterogeneity between cells (4% to 29%) and individual dendritic segments (3% to 50%) as has been previously reported for Schaffer collateral synapses (Druckmann et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "63819d2f-8fe6-46c3-b127-f8260fd9c536",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C24",
+      "claim": "The classical analysis of the distribution of pairwise nearest neighbor distances applied to L5+ spines revealed significantly shorter recorded distances than expected from a random distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The classical analysis of the distribution of pairwise nearest neighbor distances applied to L5+ spines (e.g. Druckmann et al., 2014; Rah et al., 2013; Takahashi et al., 2012) revealed significantly shorter recorded distances than expected from a random distribution (Figure 2A), suggesting that L5 inputs are clustered.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from data analysis, supported by reference to a figure and citations to methods used in previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "ab1189df-97ba-4c30-b4f8-4c2bceee3eed",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C25",
+      "claim": "The significantly shorter nearest neighbor distances suggest that L5 inputs are clustered.",
+      "claim_type": "EXPLICIT",
+      "source": "The classical analysis of the distribution of pairwise nearest neighbor distances applied to L5+ spines (e.g. Druckmann et al., 2014; Rah et al., 2013; Takahashi et al., 2012) revealed significantly shorter recorded distances than expected from a random distribution (Figure 2A), suggesting that L5 inputs are clustered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "878aed14-e869-49c3-a692-dd682b82599b",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C26",
+      "claim": "12 clusters of L5+ spines were identified on the basal dendrites of 20 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 12 clusters of L5+ spines on the basal dendrites of 20 cells (Figure 2C and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the cluster analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "7b73a2c0-dcfe-4f66-b94f-e5e40b7d28f3",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C27",
+      "claim": "The clusters extend over roughly 15 \u03bcm with, on average, approximately 8 spines.",
+      "claim_type": "EXPLICIT",
+      "source": "These clusters extend over roughly 15 \u03bcm with, on average, approximately 8 spines (dendritic length, 12.52 \u00b1 2.40 \u03bcm; 7.17 \u00b1 0.94 L5+ spines; density, 0.84 \u00b1 0.19 L5+ spines/\u03bcm; ratio of L5+ over all spines within the cluster, 0.48 \u00b1 0.04; Figure 2E,F and Figure 2\u2014figure supplement 2A; n = 12 clusters).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative characterization of the clusters from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "6ec68bab-65c8-4e1d-8889-d0df048a42d7",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C28",
+      "claim": "Almost 50% of all L5+ spines were part of a cluster (86 out of 199).",
+      "claim_type": "EXPLICIT",
+      "source": "Almost 50% of all L5+ spines were part of a cluster (86 out of 199).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the cluster analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "193f6100-4f2e-486d-a232-8598f4195814",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C29",
+      "claim": "Due to the slicing procedure, the size of spine clusters could be underestimated by a factor between 1.4 and 2.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a possibility, that due to the slicing procedure some inputs may be missed. We estimate that the size of spine clusters could be underestimated by a factor between 1.4 and 2 (see Material and methods; Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an estimation based on calculations described in the methods section.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "59976443-8515-401e-9c20-0561a2d02c37",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C30",
+      "claim": "In the cortex, clusters of synapses of an anatomically defined intracortical connection exist, which have the required size and spacing to be relevant for non-linear dendritic computations (\u22654 synapses within 30 \u00b5m of dendrite).",
+      "claim_type": "EXPLICIT",
+      "source": "This result shows that in the cortex cluster of synapses of an anatomically defined intracortical connection exist, which have the required size and spacing to be relevant for non-linear dendritic computations (\u22654 synapses within 30 \u00b5m of dendrite; see e.g. Branco and H\u00e4usser, 2011; Losonczy and Magee, 2006; Polsky et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results and comparison with established knowledge from cited literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "31899967-2cab-48da-987b-de90af02ddb2",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C31",
+      "claim": "The scale of these clusters is in line with local learning rules.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the scale of these clusters is in line with local learning rules (Engert and Bonhoeffer, 1999; Harvey and Svoboda, 2007), which might play a role in cluster formation and furthermore in synapse interactions within the cluster during synaptic plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the measured cluster parameters and cited literature on learning rules.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "fc3e86d1-d232-491c-a7a1-890d9b02cbb8",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C32",
+      "claim": "Local learning rules might play a role in cluster formation and synapse interactions within the cluster during synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the scale of these clusters is in line with local learning rules (Engert and Bonhoeffer, 1999; Harvey and Svoboda, 2007), which might play a role in cluster formation and furthermore in synapse interactions within the cluster during synaptic plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential mechanisms.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "b6103bdb-c44e-4947-b6cd-63d2db2ede90",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C33",
+      "claim": "Previous studies mapping sensory inputs in different neocortical areas reported no obvious spatial structure in input patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are in contrast to previous studies mapping sensory inputs in different neocortical areas, which reported no obvious spatial structure in input patterns and suggested that local non-linear dendritic integration may not be important for sensory processing in the cortex (Chen et al., 2011; Jia et al., 2010; Varga et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "9f6ea05f-6579-482f-b621-4bb1b2330a2e",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C34",
+      "claim": "Previous studies suggested that local non-linear dendritic integration may not be important for sensory processing in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are in contrast to previous studies mapping sensory inputs in different neocortical areas, which reported no obvious spatial structure in input patterns and suggested that local non-linear dendritic integration may not be important for sensory processing in the cortex (Chen et al., 2011; Jia et al., 2010; Varga et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "698c717c-9f44-4161-88bf-8fc326a1cb74",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C35",
+      "claim": "More recent studies provided evidence for non-linear computations during cortical processing.",
+      "claim_type": "EXPLICIT",
+      "source": "However, more recent studies provided evidence for non-linear computations during cortical processing (Lavzin et al., 2012; Smith et al., 2013; Xu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "09cbd700-3552-4171-9848-6bc27d328b1b",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C36",
+      "claim": "A potential explanation for the apparent contradiction is that in the experiments described here, a well-defined set of neurons is stimulated, while inputs defined by the same sensory stimulus are in all likelihood arising from a mix of genetically/anatomically defined types of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "A potential explanation for this apparent contradiction (DeBello et al., 2014) is that in the experiments described here, we stimulate a well-defined set of neurons, while inputs which are defined by the same sensory stimulus (Chen et al., 2011; Jia et al., 2010; Varga et al., 2011) are in all likelihood arising from a mix of genetically/anatomically defined types of neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for differences between studies, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "cf724f62-d2ef-419a-affc-85e3ea448deb",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C37",
+      "claim": "Input clustering has been shown for axodendritic contacts in the barn owl auditory system.",
+      "claim_type": "EXPLICIT",
+      "source": "Input clustering has been shown for axodendritic contacts in the barn owl auditory system (McBride et al., 2008), and more recently, in mice, for thalamocortical (Rah et al., 2013) and hippocampal CA3-CA1 synapses (Druckmann et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "db4d42bf-2c4b-4a22-8519-1b12b0784eb3",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C38",
+      "claim": "Input clustering has been shown for thalamocortical synapses in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Input clustering has been shown for axodendritic contacts in the barn owl auditory system (McBride et al., 2008), and more recently, in mice, for thalamocortical (Rah et al., 2013) and hippocampal CA3-CA1 synapses (Druckmann et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "26cd513e-7bfe-43ef-a3c3-32788b56c968",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C39",
+      "claim": "Input clustering has been shown for hippocampal CA3-CA1 synapses in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Input clustering has been shown for axodendritic contacts in the barn owl auditory system (McBride et al., 2008), and more recently, in mice, for thalamocortical (Rah et al., 2013) and hippocampal CA3-CA1 synapses (Druckmann et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "ef788890-8753-47d5-93ec-de7f874a0999",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C40",
+      "claim": "In previous cases of reported clustering, there is no quantification of cluster parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "In all of these cases however there is no quantification of cluster parameters, which is crucial if one wants to relate the findings to any kind of biophysical model of dendritic computation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assertion about the limitations of previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "1d44dc6d-adf2-4c7a-b75a-cb2cdf838c30",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C41",
+      "claim": "Quantification of cluster parameters is crucial if one wants to relate the findings to any kind of biophysical model of dendritic computation.",
+      "claim_type": "EXPLICIT",
+      "source": "In all of these cases however there is no quantification of cluster parameters, which is crucial if one wants to relate the findings to any kind of biophysical model of dendritic computation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical statement about the importance of quantification for modeling.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "adbec860-4e78-4f07-9568-11b6ae01b2e3",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C42",
+      "claim": "The data and analysis go considerably beyond previous reports by identifying individual clusters and quantifying cluster parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way our data and analysis go considerably beyond these reports by identifying individual clusters and quantifying cluster parameters, such as for example the number of inputs per cluster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the novelty and contribution of the current study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "01439207-86ca-42b4-b3f9-35a0623f2416",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C43",
+      "claim": "The novel method for spatial cluster analysis by combinatorial statistics can be applied to characterize any distribution or pattern of synapses on the postsynaptic dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "Our novel method for spatial cluster analysis by combinatorial statistics is not limited to the synaptic connections described here. It can be applied to characterize any distribution or pattern of synapses on the postsynaptic dendrite as obtained for example by large scale electron microscopy, GFP reconstitution across synaptic partners, array tomography or mapping of synaptic activity (e.g Bock et al., 2011; Chen et al., 2011; Druckmann et al., 2014; Kleindienst et al., 2011; Rah et al., 2013; Takahashi et al., 2012), as well as any other data regarding the spatial organization of structures along a one dimensional axis like for example the distribution of presynaptic boutons along an axon (e.g. Schuemann et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the generalizability of the method, supported by citations to various techniques.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "8447e6ab-0c3f-49de-9fdd-074679a03341",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C44",
+      "claim": "The clusters of intracortical connections between L5 pyramidal neurons contain 4 to 14 synapses within 30 \u00b5m of basal dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that the clusters of intracortical connections between L5 pyramidal neurons contain 4 to 14 synapses within 30 \u00b5m of basal dendrite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the quantitative results from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "21e6eac8-fb69-417d-bd1a-8be4fc05fc1d",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C45",
+      "claim": "According to the known rules of dendritic integration and the spatiotemporal arithmetic of synaptic summation, such clusters would result in superlinear dendritic integration during synchronous synaptic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the known rules of dendritic integration and the spatiotemporal arithmetic of synaptic summation (Branco and H\u00e4usser, 2011; Losonczy and Magee, 2006; Polsky et al., 2004) such clusters would result in superlinear dendritic integration during synchronous synaptic activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the measured cluster parameters and established knowledge from cited literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "998a2d3c-ae47-432c-9f8d-87792926f963",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C46",
+      "claim": "Superlinear integration can also occur without tight clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "Superlinear integration can also occur without tight clustering (Branco et al., 2010; Losonczy and Magee, 2006), but the specifics of the spatial input organization are expected to define how different temporal activity patterns determine the firing pattern of the postsynaptic cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "fb5823c9-d330-4695-a0f5-695491301ef4",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C47",
+      "claim": "The specifics of the spatial input organization are expected to define how different temporal activity patterns determine the firing pattern of the postsynaptic cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Superlinear integration can also occur without tight clustering (Branco et al., 2010; Losonczy and Magee, 2006), but the specifics of the spatial input organization are expected to define how different temporal activity patterns determine the firing pattern of the postsynaptic cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on established knowledge about dendritic integration.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "6399ea8f-ccae-4181-9a65-3966067bafce",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C48",
+      "claim": "The results are well explained by local learning rules.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are well explained by local learning rules, which may not only be involved in cluster formation but also support interactions among synapses in a cluster during synaptic plasticity events (Engert and Bonhoeffer, 1999; Harvey and Svoboda, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the results in the context of cited literature on learning rules.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "2dedabff-f29c-4c56-9c2a-fe5bc3044e92",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C49",
+      "claim": "The results are in line with observations of spatially clustered spontaneous activity of synapses during development.",
+      "claim_type": "EXPLICIT",
+      "source": "They are also in line with observations of spatially clustered spontaneous activity of synapses during development (Kleindienst et al., 2011; Takahashi et al., 2012) and clustered spine formation and synaptic potentiation during learning and experience-dependent plasticity (Fu et al., 2012; Makino and Malinow, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "a14050f5-cde7-488b-9462-dd648be4d979",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C50",
+      "claim": "The results are in line with observations of clustered spine formation and synaptic potentiation during learning and experience-dependent plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "They are also in line with observations of spatially clustered spontaneous activity of synapses during development (Kleindienst et al., 2011; Takahashi et al., 2012) and clustered spine formation and synaptic potentiation during learning and experience-dependent plasticity (Fu et al., 2012; Makino and Malinow, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "8c3701c6-5aaa-4e07-a12c-0738d795860e",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C51",
+      "claim": "A further potential role of input clusters may be to overcome the stochasticity of neurotransmitter release and help to increase the reliability of synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "A further potential role of input clusters may be to overcome the stochasticity of neurotransmitter release and help to increase the reliability of synaptic transmission (Bagnall et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential functional roles, supported by citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "86e97351-7162-4a09-8b42-04eacdb8d07d",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C52",
+      "claim": "Typically connections between L5 pyramidal cells consist of 4 to 8 synapses, which are distributed over different branches of the postsynaptic dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically connections between L5 pyramidal cells consist of 4 to 8 synapses, which are distributed over different branches of the postsynaptic dendrite (Deuchars et al., 1994; Markram et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "290e4eda-a93d-4cb8-952e-d2cdd3877d89",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C53",
+      "claim": "The synapses within L5 input clusters most likely arise from a set of presynaptic neurons rather than a single one.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the synapses within L5 input clusters most likely arise from a set of presynaptic neurons rather than a single one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the typical number of synapses per connection and the number of synapses in clusters.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "27cf67c4-f2a6-4094-b3cb-1af819ce08aa",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C54",
+      "claim": "Synchronous activation of L5 inputs within a cluster is expected to occur during L5 network oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, synchronous activation of L5 inputs within a cluster is expected to occur during L5 network oscillations (e.g. Buffalo et al., 2011; Sun and Dan, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on cited literature about network oscillations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "07593e6d-b088-427a-be43-256af68473f2",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C55",
+      "claim": "In anesthetized rats, L5 pyramidal cells in visual cortex receive synchronously oscillating excitatory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "In anesthetized rats, L5 pyramidal cells in visual cortex receive synchronously oscillating excitatory inputs (Sun and Dan, 2009), which are thought to arise from rhythmically firing L5 pyramidal cells (Flint and Connors, 1996; Silva et al., 1991) within the network of L5 pyramidal cells (Markram, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "7b1fe5ca-fc2d-46fc-bc31-b2caf55c5a63",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C56",
+      "claim": "Synchronously oscillating excitatory inputs are thought to arise from rhythmically firing L5 pyramidal cells within the network of L5 pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In anesthetized rats, L5 pyramidal cells in visual cortex receive synchronously oscillating excitatory inputs (Sun and Dan, 2009), which are thought to arise from rhythmically firing L5 pyramidal cells (Flint and Connors, 1996; Silva et al., 1991) within the network of L5 pyramidal cells (Markram, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "dae9bef7-6ad2-4044-9d31-aadbb40398e4",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C57",
+      "claim": "Similar oscillations in L5 have been observed in awake animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar oscillations in L5 have been observed in awake animals (e.g. Buffalo et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "06d151c4-b6ed-44eb-a4db-f5e503af3716",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C58",
+      "claim": "The results provide the first characterization of synapse clusters arising from an anatomically and genetically defined input on the dendritic tree of cortical pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our results, to our knowledge, provide the first characterization of synapse clusters arising from an anatomically and genetically defined input on the dendritic tree of cortical pyramidal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the novelty and contribution of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "d848d31a-1026-4d26-a1fa-89a2cc40244a",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C59",
+      "claim": "Quantitative analysis of the spatial organization of inputs together with the rules of dendritic integration and synaptic summation will allow working out the logical operations of neural computations at the cellular level.",
+      "claim_type": "EXPLICIT",
+      "source": "Only such quantitative analysis of the spatial organization of inputs together with the rules of dendritic integration and synaptic summation will allow working out the logical operations of neural computations at the cellular level, which are critical for understanding information processing in neural circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the importance of quantitative analysis for understanding neural computation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "23a2abf1-75cb-41aa-b9af-dd3ab03690fd",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C60",
+      "claim": "The logical operations of neural computations at the cellular level are critical for understanding information processing in neural circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Only such quantitative analysis of the spatial organization of inputs together with the rules of dendritic integration and synaptic summation will allow working out the logical operations of neural computations at the cellular level, which are critical for understanding information processing in neural circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the importance of cellular-level computations for circuit function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "e6fc39db-6425-4bf4-bbdc-9eacd66c1c1c",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C61",
+      "claim": "CASIM has the advantage over other methods for mapping synapses that it identifies synapses in functional rather than only in structural or molecular terms.",
+      "claim_type": "EXPLICIT",
+      "source": "CASIM has the advantage over other methods for mapping synapses by light or electron microscopy (e.g. Druckmann et al., 2014; Rah et al., 2013) that it identifies synapses in functional rather than only in structural or molecular terms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the advantages of the CASIM method compared to other approaches.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "d0ee6a04-6a92-4abd-9b32-7ce17d646131",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C62",
+      "claim": "Expression levels and stimulus sensitivity of ChR2 were different from cell to cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression levels and stimulus sensitivity were different from cell to cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "9893ce87-c4df-4c6c-a5e4-d9b31d0b675a",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C63",
+      "claim": "In more sensitive cells the number of generated action potentials dropped with higher stimulus intensities.",
+      "claim_type": "EXPLICIT",
+      "source": "Because in more sensitive cells the number of generated action potentials dropped with higher stimulus intensities, we applied an intermediate stimulus intensity for synapse mapping, which evoked action potentials in 58% of L5 pyramidal cells (Figure 1\u2014figure supplement 1,2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experiments that informed the choice of stimulus intensity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "478c86cf-6e34-4d72-8b1f-6cc66d38c04f",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C64",
+      "claim": "Layer 5 pyramidal cells with no detectable ChR2-YFP fluorescence were selected for synapse mapping.",
+      "claim_type": "EXPLICIT",
+      "source": "For synapse mapping we selected layer 5 pyramidal cells with no detectable ChR2-YFP fluorescence, indicating that the levels of ChR2 expression are so low that the selected stimulus intensity is insufficient to cause significant depolarization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about cell selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "eceaf128-2fe0-4e25-9fcc-97370f218fd9",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C65",
+      "claim": "Due to the stochastic nature of neurotransmitter release, it is not expected that each AP leads to transmitter release.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the stochastic nature of neurotransmitter release, it is not expected that each AP leads to transmitter release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge about synaptic transmission.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "2e5cad76-dbd1-41d9-a405-d558fa6db173",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C66",
+      "claim": "Spines were classified as receiving L5 input if they displayed at least once a higher (\u22653\u00d7standard deviation) and earlier peak calcium signal evoked by photostimulation than observed in the parent dendrite.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus we classified spines as receiving L5 input if they displayed at least once a higher (\u22653\u00d7standard deviation) and earlier peak calcium signal evoked by photostimulation than observed in the parent dendrite (Figure 1D - 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological statement about the classification criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "04d1d42f-a815-4035-87d0-4b6e6e03f851",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C67",
+      "claim": "In adulthood the occurrence of 'silent' synapses is effectively negligible.",
+      "claim_type": "EXPLICIT",
+      "source": "Since in adulthood the occurrence of 'silent' synapses is effectively negligible (Rumpel et al., 1998) NMDA receptor mediated calcium signals are expected to identify functional synapses containing both AMPA and NMDA receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "cf1150e6-782b-42d1-a719-1011c2d62b3b",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C68",
+      "claim": "NMDA receptor mediated calcium signals are expected to identify functional synapses containing both AMPA and NMDA receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Since in adulthood the occurrence of 'silent' synapses is effectively negligible (Rumpel et al., 1998) NMDA receptor mediated calcium signals are expected to identify functional synapses containing both AMPA and NMDA receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited literature about silent synapses.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "30352574-843a-461f-9112-5cf10a745a2b",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C69",
+      "claim": "The photostimulus evoked on average 1.57 \u00b1 0.54 (n = 12) action potentials selectively in 58% of the ChR2 expressing L5 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The photostimulus (470 nm LED; Rapp OptoElectronic GmbH, Wedel, Germany) consisted of 3 pulses of 2 ms at 30 Hz (4 mW at the objective back-aperture) and was applied via the fluorescence excitation path of the microscope to the full field of view. It evoked on average 1.57 \u00b1 0.54 (n = 12) action potentials selectively in 58% of the ChR2 expressing L5 neurons (Figure 1\u2014figure supplements 1,2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "e4959d5b-b70f-4634-827e-f3645d03c570",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C70",
+      "claim": "The median nearest neighbor distance between L5+ spines from experiments (median = 3.10 \u03bcm) is significantly different from reshuffled data (median = 5.02 \u00b1 0.43 \u03bcm; p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Median values of recorded and reshuffled data are significantly different (data, median = 3.10 \u03bcm; simulations, median = 5.02 \u00b1 0.43 \u03bcm; p<0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from statistical analysis comparing experimental data to simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "8fca9a06-d123-44ef-b140-be12e6a045f5",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C71",
+      "claim": "The deviation between experimental and simulated inter-input distances is most pronounced for small inter-input distances below 10 \u00b5m with a peak deviation around 5 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "The plot of the difference between inter-input distances from experiments and simulations (purple) shows that the deviation is most pronounced for small inter-input distances below 10 \u00b5m with a peak deviation around 5 \u00b5m, suggesting a clustered arrangement of L5+ spines.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the data analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "c612d86d-8c70-449d-8c15-5db9097c88dc",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C72",
+      "claim": "45 input ensembles were found in 20 cells (total analyzed dendritic length 2718 \u03bcm).",
+      "claim_type": "EXPLICIT",
+      "source": "We found 45 input ensembles in 20 cells (total analyzed dendritic length 2718 \u03bcm; Figure 2C and Figure 2\u2014figure supplement 1, gray boxes).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the cluster analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "fb20bd4f-8a18-4987-b5a5-e13472bc4c59",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C73",
+      "claim": "The mean specific ensemble likelihood of the 12 identified clusters is 0.003 \u00b1 0.0008.",
+      "claim_type": "EXPLICIT",
+      "source": "Defining ensembles of at least three inputs with a likelihood \u22641% as cluster, we classified 12 out of 45 ensembles as clusters (mean specific ensemble likelihood=0.003 \u00b1 0.0008; Figure 2C and Figure 2\u2014figure supplement 1, red asterisks).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the cluster analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "e309b048-863b-41b2-ade7-bd1f1f09b6e0",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C74",
+      "claim": "The probability to observe 11 segments with a cluster has a P value below 0.001.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the probability to observe c segments containing a cluster in the data set of 40 segments in total declines and remains below the significance threshold of 0.001 until the second last of the sorted segments (Figure 2\u2014figure supplement 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "1e2708c9-ea71-4ba5-8159-33159a517df4",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C75",
+      "claim": "The number of 11 segments with a cluster with a P value below 0.001 supports the hypothesis that L5+ spines are indeed arranged in clusters not by chance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the number of 11 segments with a cluster with a P value below 0.001 supports the hypothesis that L5+ spines are indeed arranged in clusters not by chance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the statistical analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "7af97566-0ffe-4dcb-a7a5-cd9c3567aecf",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C76",
+      "claim": "The fraction of remaining L5 pyramidal cell axon density that can be activated in a slice is between 50% and 70% depending on the depth in the slice.",
+      "claim_type": "EXPLICIT",
+      "source": "From this we estimate that the fraction of the remaining L5 pyramidal cell axon density that can be activated in a slice is between 50% and 70% depending on the depth in the slice (Figure 2\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an estimation based on calculations described in the methods.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "5b166af1-67ae-409c-9d06-6f3c5a2c1759",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C77",
+      "claim": "Between 30% and 50% of L5 inputs are missed due to the slicing process.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that between 30% and 50% of L5 inputs are missed due to the slicing process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the calculation of remaining axon density.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "fec64a16-a9e6-4e66-9292-34395faed4fe",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C78",
+      "claim": "The total discrepancy between manual verification and the classification by the algorithm was 2.37% in individual traces.",
+      "claim_type": "EXPLICIT",
+      "source": "In the individual traces (n = 15293 acquisitions), the total discrepancy between manual verification and the classification by the algorithm was 2.37%, which translated into a total discrepancy of 6.46% with respect to the input classification (0.55% false negatives, 4.2% false positives, 1.71% ambiguous; n = 2168 spines).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative assessment of the accuracy of the classification algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "f2b19eec-b711-4a52-9a94-7efbccde5343",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C79",
+      "claim": "The total discrepancy with respect to the input classification was 6.46% (0.55% false negatives, 4.2% false positives, 1.71% ambiguous; n = 2168 spines).",
+      "claim_type": "EXPLICIT",
+      "source": "In the individual traces (n = 15293 acquisitions), the total discrepancy between manual verification and the classification by the algorithm was 2.37%, which translated into a total discrepancy of 6.46% with respect to the input classification (0.55% false negatives, 4.2% false positives, 1.71% ambiguous; n = 2168 spines).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative assessment of the accuracy of the classification algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "66ce90fb-3b29-4f91-bc76-8130e87cf593",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C80",
+      "claim": "CASIM might miss synapses with very low release probability.",
+      "claim_type": "EXPLICIT",
+      "source": "CASIM might miss synapses with very low release probability but otherwise the false negative rate is mostly determined by the fraction of presynaptic neurons not expressing ChR2 as with other approaches relying on the expression of markers of any kind (e.g. Druckmann et al., 2014; Rah et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a potential limitation of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "5e383c05-7459-4dbd-b5a4-9eb9cd816bc7",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C81",
+      "claim": "The false negative rate is mostly determined by the fraction of presynaptic neurons not expressing ChR2.",
+      "claim_type": "EXPLICIT",
+      "source": "CASIM might miss synapses with very low release probability but otherwise the false negative rate is mostly determined by the fraction of presynaptic neurons not expressing ChR2 as with other approaches relying on the expression of markers of any kind (e.g. Druckmann et al., 2014; Rah et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the main source of false negatives, with comparison to other methods.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "341dccd9-1f4c-4186-8cdd-81a6a553d89b",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C82",
+      "claim": "Undersampling the presynaptic population is expected to be random and would not introduce artifacts of non-random structure in the mapped synapse distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since undersampling the presynaptic population is expected to be random, this would not introduce artifacts of non-random structure in the mapped synapse distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the effect of undersampling on the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "48a89a09-221f-4cd7-a2ec-9430f6ae4753",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C83",
+      "claim": "Only 3 cells in L6 out of 45 cells recorded outside of L5 exhibited light evoked activity (6.7%).",
+      "claim_type": "EXPLICIT",
+      "source": "In total 45 cells were recorded, of those only 3 cells in L6 exhibited light evoked activity (6.7%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the specificity testing experiments shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "e79578f5-929f-402b-bcf3-e802182a937f",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C84",
+      "claim": "The combinatorial cluster analysis substantially extends the classical pairwise analysis of nearest neighbor distances as it allows to identify and characterize individual clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "The combinatorial cluster analysis substantially extends the classical pairwise analysis of nearest neighbor distances (e.g. Druckmann et al., 2014; Rah et al., 2013) as it allows to identify and characterize individual clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the advantages of the new method compared to classical approaches.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "be14fddf-0df5-4efe-bc25-ca8e66b604c1",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C85",
+      "claim": "The advantage of the combinatorial approach over the estimation of likelihoods using random reshuffling is that it provides exact values for the small likelihoods involved.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantage of the combinatorial approach over the estimation of likelihoods using e.g. random reshuffling (e.g. (Takahashi et al., 2012; Yadav et al., 2012) is that it provides exact values for the small likelihoods involved, for which reliable estimates would require prohibitively large numbers of rounds of reshuffling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the advantages of the combinatorial method compared to simulation-based approaches.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "b2e025bc-4893-4591-8e5a-f5626f317af2",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "claim_id": "C86",
+      "claim": "Reliable estimates of small likelihoods using random reshuffling would require prohibitively large numbers of rounds of reshuffling.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantage of the combinatorial approach over the estimation of likelihoods using e.g. random reshuffling (e.g. (Takahashi et al., 2012; Yadav et al., 2012) is that it provides exact values for the small likelihoods involved, for which reliable estimates would require prohibitively large numbers of rounds of reshuffling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the practical limitations of simulation-based approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "60b146ec-868b-4dc7-a0b6-04445fdc637f",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed and optimized a ChR2-based optogenetic stimulation protocol for mapping L5 pyramidal cell synapses. Using Thy1-ChR2 transgenic mice (line 18), they calibrated photostimulation parameters to evoke action potentials in 58% of L5 pyramidal cells while avoiding overstimulation. The specificity was confirmed by showing that only 6.7% of cells outside L5 exhibited light-evoked activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16, C62-C64, C69, and C83 collectively establish the methodological foundation for CASIM. The calibration data (C15, C16, C62, C63, C69) demonstrate systematic optimization of stimulation parameters, and specificity testing (C83) confirms selective L5 activation. The approach is well-documented with quantitative measurements and appropriate controls.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "fad5a424-bb03-4109-a0e8-ef580dd47010",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors identified L5+ spines using calcium imaging with specific classification criteria. Out of 2168 spines analyzed across 20 cells, 199 (9.2%) were classified as L5+. L5+ spines showed significantly higher calcium signals than parent dendrites (p<0.001) but no morphological differences from L5- spines. The classification algorithm showed 6.46% total discrepancy with manual verification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C22, C65-C68, C78-C79 provide comprehensive validation of the spine identification method. The statistical significance of calcium signals (C19), morphological analysis (C20), and algorithm validation (C78-C79) support the reliability of L5+ spine identification. The reasoning about silent synapses (C67-C68) is appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "2beae4d3-dd21-449f-b67c-dc086c074dfc",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Classical nearest neighbor distance analysis revealed that L5+ spines are significantly closer together than expected by random distribution. The median nearest neighbor distance in experimental data (3.10 \u03bcm) was significantly shorter than in reshuffled simulations (5.02 \u00b1 0.43 \u03bcm; p<0.0001), with peak deviation around 5 \u03bcm for distances below 10 \u03bcm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25, C70-C71 demonstrate non-random spatial organization using established statistical methods. The comparison to random reshuffling provides appropriate null hypothesis testing, and the quantitative results with p-values support the conclusion of clustering. This analysis serves as preliminary evidence before the more sophisticated combinatorial approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "2101c650-e966-4050-ae39-9575155c973f",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Using a novel combinatorial cluster analysis method, the authors identified 12 clusters of L5+ spines on basal dendrites of 20 cells. These clusters extend over approximately 15 \u03bcm (12.52 \u00b1 2.40 \u03bcm) and contain on average 8 spines (7.17 \u00b1 0.94 L5+ spines). Almost 50% of all L5+ spines (86 out of 199) were part of clusters. Statistical validation showed that 11 segments with clusters had P < 0.001, supporting non-random clustering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28, C72-C75, C84-C86 establish the main experimental finding using a rigorous novel method. The combinatorial approach provides exact likelihood calculations (C85-C86) and identifies individual clusters with quantitative parameters. The statistical validation (C74-C75) confirms significance. The method substantially extends classical approaches (C84) by enabling cluster characterization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "368ba88b-a969-440d-ac31-90988a100a06",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors demonstrate that intralaminar L5 pyramidal cell synapses form clusters on basal dendrites containing 4 to 14 synapses within \u226430 \u03bcm of dendrite. These clusters have the required size and spacing to be relevant for non-linear dendritic computations based on established biophysical criteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C30, C44 represent the core finding of the study. The quantitative characterization (C4, C44) is directly supported by the experimental data (C26-C28). The conclusion about relevance for dendritic computation (C30) appropriately references established literature on the spatial requirements for non-linear integration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "9c96ec81-dbce-47e4-b43c-e05bcfbf551c",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Based on the measured cluster parameters and established rules of dendritic integration, the authors infer that these clusters would result in superlinear dendritic integration during synchronous synaptic activity. However, they acknowledge that superlinear integration can occur without tight clustering, and the specific spatial organization determines how temporal activity patterns affect postsynaptic firing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C45-C47 make appropriate inferences from the data by connecting measured cluster parameters to established biophysical principles. The inference is well-supported by citations to relevant literature (Branco & H\u00e4usser, 2011; Losonczy & Magee, 2006; Polsky et al., 2004). The authors appropriately acknowledge alternative scenarios (C46) while maintaining their main conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "812f9ced-5a44-47a1-a270-3d8707a27025",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors estimate that 30-50% of L5 inputs may be missed due to the slicing procedure, suggesting cluster size could be underestimated by a factor of 1.4 to 2. This is based on calculations of remaining axon density at different depths in the slice (50-70% of total).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C76-C77 provide important methodological caveats. The estimation is based on detailed geometric calculations described in the methods and shown in supplementary figures. While this represents a limitation, the authors appropriately quantify the potential underestimation, which strengthens rather than undermines their conclusions about cluster existence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "43082a68-e219-4e64-8a86-cc7a66c43966",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose that the scale of observed clusters is consistent with local learning rules, which might play a role in cluster formation and synapse interactions during synaptic plasticity. This interpretation connects the spatial organization to potential mechanisms of plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C31-C32, C48 make speculative connections to learning mechanisms. While the spatial scale is indeed consistent with local learning rules (appropriately cited), the causal role of these rules in cluster formation (C32) remains speculative without direct experimental evidence. The claims are appropriately hedged with 'might' and 'may,' but represent hypotheses rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "78390f66-f7e0-4c4b-abac-ac850a26046e",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors contrast their findings with previous studies that found no spatial structure in sensory-evoked inputs and suggested non-linear integration may not be important for cortical sensory processing. They propose that the difference may arise because they stimulate a genetically defined population while sensory stimuli activate mixed neuron types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 appropriately contextualize the findings within existing literature. The contrast with prior work (C33-C34) is accurately cited, as is more recent evidence for non-linear computations (C35). The proposed explanation (C36) is reasonable and appropriately speculative, acknowledging it as a 'potential explanation' rather than proven fact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "33c1bf29-1271-4d1c-aff5-6fc3ab735574",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors position their work as the first quantitative characterization of synapse clusters from an anatomically and genetically defined input on cortical pyramidal cell dendrites. They argue that previous reports of clustering lacked quantification of cluster parameters, which is crucial for relating findings to biophysical models of dendritic computation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42, C58 establish the novelty and significance of the work. The assertion that previous studies lacked quantitative cluster characterization (C40) is supported by the cited literature. The claim about being the 'first characterization' (C58) is appropriately hedged with 'to our knowledge.' The importance of quantification for modeling (C41-C42) is a valid logical argument.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "eef5a23c-0171-40ef-8c3f-5aa296e62926",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors claim their combinatorial cluster analysis method is generalizable to other synapse mapping techniques and can characterize any distribution of structures along a one-dimensional axis. They also assert that CASIM has advantages over structural methods by identifying synapses functionally rather than structurally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43, C61 make reasonable assertions about method generalizability and advantages. The combinatorial approach is indeed applicable to any spatial distribution data (C43), as it relies on general statistical principles. The functional vs. structural distinction (C61) is valid, though both approaches have complementary strengths and limitations not fully discussed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "67b7b066-39a4-4d3b-82e6-23c8015c20c8",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors infer that clusters likely arise from multiple presynaptic neurons rather than single neurons, based on typical connection sizes (4-8 synapses per connection). They propose that synchronous activation would occur during L5 network oscillations, citing evidence from anesthetized and awake animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C57 make reasonable inferences about cluster origins and functional activation. The inference about multiple presynaptic neurons (C53) logically follows from comparing typical connection sizes (C52) to cluster sizes. The connection to network oscillations (C54-C57) is appropriately supported by citations, though direct evidence for synchronous activation of clustered inputs is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "d221b505-cfa5-40be-bdcd-d3d40216f0cb",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors acknowledge that CASIM might miss synapses with very low release probability, but argue that the false negative rate is mainly determined by incomplete ChR2 expression. They reason that random undersampling would not introduce artifacts of non-random structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C82 provide appropriate discussion of method limitations. The reasoning about false negatives (C81) is sound and appropriately compared to other marker-based methods. The argument that random undersampling preserves spatial structure (C82) is logically valid, though the assumption of randomness could be tested more rigorously.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "17dbc44a-90c7-42ca-a22a-194f8fbec360",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors establish the scientific context by stating that spatial organization of synaptic inputs is important for dendritic integration but remarkably understudied. They review prior evidence for clustering in various contexts while noting that cluster parameters relevant for computation have not been rigorously quantified.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C6-C13 provide appropriate background and motivation. The importance of spatial organization (C1, C6-C7) is well-established in cited literature. The assertion about limited knowledge (C2, C12) is reasonable given the state of the field. The review of prior clustering reports (C8-C11, C13) accurately represents cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "235db55c-aede-4ea5-a631-76101ebc0bfd",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors suggest their results are consistent with observations of clustered spontaneous activity during development and clustered plasticity during learning. They also propose that clusters may help overcome stochastic neurotransmitter release to increase transmission reliability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 make appropriate connections to related phenomena in the literature. The consistency with developmental and plasticity observations (C49-C50) is supported by appropriate citations. The speculation about overcoming release stochasticity (C51) is reasonable and cited, though it remains a hypothesis without direct experimental support in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    },
+    {
+      "id": "875c5360-303c-4d7b-9f83-ad8adb3448fa",
+      "content_id": "226e693c-a6d0-4a09-b9c7-6f590258a526",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors conclude that quantitative analysis of spatial input organization, combined with rules of dendritic integration and synaptic summation, is necessary to understand logical operations of neural computations at the cellular level, which are critical for understanding circuit information processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 provide appropriate broader context for the significance of the work. The argument that quantitative spatial analysis is necessary for understanding cellular computation (C59) is logically sound and supported by the demonstrated importance of cluster parameters. The connection to circuit function (C60) represents established understanding in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:28:08.247983Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "59a36a4e-0de3-4ace-97f1-12231978647f",
+      "result_id": "60b146ec-868b-4dc7-a0b6-04445fdc637f"
+    },
+    {
+      "claim_id": "6340d5ae-2518-4270-9c7d-f315c3e8ec2d",
+      "result_id": "60b146ec-868b-4dc7-a0b6-04445fdc637f"
+    },
+    {
+      "claim_id": "74196bac-d4ec-4609-84d2-645751711a3d",
+      "result_id": "60b146ec-868b-4dc7-a0b6-04445fdc637f"
+    },
+    {
+      "claim_id": "d0ee6a04-6a92-4abd-9b32-7ce17d646131",
+      "result_id": "60b146ec-868b-4dc7-a0b6-04445fdc637f"
+    },
+    {
+      "claim_id": "9893ce87-c4df-4c6c-a5e4-d9b31d0b675a",
+      "result_id": "60b146ec-868b-4dc7-a0b6-04445fdc637f"
+    },
+    {
+      "claim_id": "478c86cf-6e34-4d72-8b1f-6cc66d38c04f",
+      "result_id": "60b146ec-868b-4dc7-a0b6-04445fdc637f"
+    },
+    {
+      "claim_id": "30352574-843a-461f-9112-5cf10a745a2b",
+      "result_id": "60b146ec-868b-4dc7-a0b6-04445fdc637f"
+    },
+    {
+      "claim_id": "48a89a09-221f-4cd7-a2ec-9430f6ae4753",
+      "result_id": "60b146ec-868b-4dc7-a0b6-04445fdc637f"
+    },
+    {
+      "claim_id": "3bf347f5-66cf-4d62-98ed-c533dd5fcb09",
+      "result_id": "fad5a424-bb03-4109-a0e8-ef580dd47010"
+    },
+    {
+      "claim_id": "674c8780-9eb2-4ffd-a22a-5cd77dbeff4e",
+      "result_id": "fad5a424-bb03-4109-a0e8-ef580dd47010"
+    },
+    {
+      "claim_id": "0a754c5d-9120-48cc-8537-6965b4c6e0eb",
+      "result_id": "fad5a424-bb03-4109-a0e8-ef580dd47010"
+    },
+    {
+      "claim_id": "00901905-be53-47e9-b84f-16ad5b0a70c8",
+      "result_id": "fad5a424-bb03-4109-a0e8-ef580dd47010"
+    },
+    {
+      "claim_id": "8b22ceb9-ddc4-43b4-a0d2-3ec3316cabad",
+      "result_id": "fad5a424-bb03-4109-a0e8-ef580dd47010"
+    },
+    {
+      "claim_id": "eceaf128-2fe0-4e25-9fcc-97370f218fd9",
+      "result_id": "fad5a424-bb03-4109-a0e8-ef580dd47010"
+    },
+    {
+      "claim_id": "2e5cad76-dbd1-41d9-a405-d558fa6db173",
+      "result_id": "fad5a424-bb03-4109-a0e8-ef580dd47010"
+    },
+    {
+      "claim_id": "04d1d42f-a815-4035-87d0-4b6e6e03f851",
+      "result_id": "fad5a424-bb03-4109-a0e8-ef580dd47010"
+    },
+    {
+      "claim_id": "cf1150e6-782b-42d1-a719-1011c2d62b3b",
+      "result_id": "fad5a424-bb03-4109-a0e8-ef580dd47010"
+    },
+    {
+      "claim_id": "fec64a16-a9e6-4e66-9292-34395faed4fe",
+      "result_id": "fad5a424-bb03-4109-a0e8-ef580dd47010"
+    },
+    {
+      "claim_id": "f2b19eec-b711-4a52-9a94-7efbccde5343",
+      "result_id": "fad5a424-bb03-4109-a0e8-ef580dd47010"
+    },
+    {
+      "claim_id": "63819d2f-8fe6-46c3-b127-f8260fd9c536",
+      "result_id": "2beae4d3-dd21-449f-b67c-dc086c074dfc"
+    },
+    {
+      "claim_id": "ab1189df-97ba-4c30-b4f8-4c2bceee3eed",
+      "result_id": "2beae4d3-dd21-449f-b67c-dc086c074dfc"
+    },
+    {
+      "claim_id": "e4959d5b-b70f-4634-827e-f3645d03c570",
+      "result_id": "2beae4d3-dd21-449f-b67c-dc086c074dfc"
+    },
+    {
+      "claim_id": "8fca9a06-d123-44ef-b140-be12e6a045f5",
+      "result_id": "2beae4d3-dd21-449f-b67c-dc086c074dfc"
+    },
+    {
+      "claim_id": "878aed14-e869-49c3-a692-dd682b82599b",
+      "result_id": "2101c650-e966-4050-ae39-9575155c973f"
+    },
+    {
+      "claim_id": "7b73a2c0-dcfe-4f66-b94f-e5e40b7d28f3",
+      "result_id": "2101c650-e966-4050-ae39-9575155c973f"
+    },
+    {
+      "claim_id": "6ec68bab-65c8-4e1d-8889-d0df048a42d7",
+      "result_id": "2101c650-e966-4050-ae39-9575155c973f"
+    },
+    {
+      "claim_id": "c612d86d-8c70-449d-8c15-5db9097c88dc",
+      "result_id": "2101c650-e966-4050-ae39-9575155c973f"
+    },
+    {
+      "claim_id": "fb20bd4f-8a18-4987-b5a5-e13472bc4c59",
+      "result_id": "2101c650-e966-4050-ae39-9575155c973f"
+    },
+    {
+      "claim_id": "e309b048-863b-41b2-ade7-bd1f1f09b6e0",
+      "result_id": "2101c650-e966-4050-ae39-9575155c973f"
+    },
+    {
+      "claim_id": "1e2708c9-ea71-4ba5-8159-33159a517df4",
+      "result_id": "2101c650-e966-4050-ae39-9575155c973f"
+    },
+    {
+      "claim_id": "e79578f5-929f-402b-bcf3-e802182a937f",
+      "result_id": "2101c650-e966-4050-ae39-9575155c973f"
+    },
+    {
+      "claim_id": "be14fddf-0df5-4efe-bc25-ca8e66b604c1",
+      "result_id": "2101c650-e966-4050-ae39-9575155c973f"
+    },
+    {
+      "claim_id": "b2e025bc-4893-4591-8e5a-f5626f317af2",
+      "result_id": "2101c650-e966-4050-ae39-9575155c973f"
+    },
+    {
+      "claim_id": "41d0a634-fafa-4d46-8161-47b77739bf78",
+      "result_id": "368ba88b-a969-440d-ac31-90988a100a06"
+    },
+    {
+      "claim_id": "3f697a1a-e5bf-4509-b442-bedb5e340388",
+      "result_id": "368ba88b-a969-440d-ac31-90988a100a06"
+    },
+    {
+      "claim_id": "59976443-8515-401e-9c20-0561a2d02c37",
+      "result_id": "368ba88b-a969-440d-ac31-90988a100a06"
+    },
+    {
+      "claim_id": "8447e6ab-0c3f-49de-9fdd-074679a03341",
+      "result_id": "368ba88b-a969-440d-ac31-90988a100a06"
+    },
+    {
+      "claim_id": "5f56ae28-ee5f-4aeb-98d9-b8cefc08fec6",
+      "result_id": "9c96ec81-dbce-47e4-b43c-e05bcfbf551c"
+    },
+    {
+      "claim_id": "21e6eac8-fb69-417d-bd1a-8be4fc05fc1d",
+      "result_id": "9c96ec81-dbce-47e4-b43c-e05bcfbf551c"
+    },
+    {
+      "claim_id": "998a2d3c-ae47-432c-9f8d-87792926f963",
+      "result_id": "9c96ec81-dbce-47e4-b43c-e05bcfbf551c"
+    },
+    {
+      "claim_id": "fb5823c9-d330-4695-a0f5-695491301ef4",
+      "result_id": "9c96ec81-dbce-47e4-b43c-e05bcfbf551c"
+    },
+    {
+      "claim_id": "193f6100-4f2e-486d-a232-8598f4195814",
+      "result_id": "812f9ced-5a44-47a1-a270-3d8707a27025"
+    },
+    {
+      "claim_id": "7af97566-0ffe-4dcb-a7a5-cd9c3567aecf",
+      "result_id": "812f9ced-5a44-47a1-a270-3d8707a27025"
+    },
+    {
+      "claim_id": "5b166af1-67ae-409c-9d06-6f3c5a2c1759",
+      "result_id": "812f9ced-5a44-47a1-a270-3d8707a27025"
+    },
+    {
+      "claim_id": "31899967-2cab-48da-987b-de90af02ddb2",
+      "result_id": "43082a68-e219-4e64-8a86-cc7a66c43966"
+    },
+    {
+      "claim_id": "fc3e86d1-d232-491c-a7a1-890d9b02cbb8",
+      "result_id": "43082a68-e219-4e64-8a86-cc7a66c43966"
+    },
+    {
+      "claim_id": "6399ea8f-ccae-4181-9a65-3966067bafce",
+      "result_id": "43082a68-e219-4e64-8a86-cc7a66c43966"
+    },
+    {
+      "claim_id": "b6103bdb-c44e-4947-b6cd-63d2db2ede90",
+      "result_id": "78390f66-f7e0-4c4b-abac-ac850a26046e"
+    },
+    {
+      "claim_id": "9f6ea05f-6579-482f-b621-4bb1b2330a2e",
+      "result_id": "78390f66-f7e0-4c4b-abac-ac850a26046e"
+    },
+    {
+      "claim_id": "698c717c-9f44-4161-88bf-8fc326a1cb74",
+      "result_id": "78390f66-f7e0-4c4b-abac-ac850a26046e"
+    },
+    {
+      "claim_id": "09cbd700-3552-4171-9848-6bc27d328b1b",
+      "result_id": "78390f66-f7e0-4c4b-abac-ac850a26046e"
+    },
+    {
+      "claim_id": "cf724f62-d2ef-419a-affc-85e3ea448deb",
+      "result_id": "33c1bf29-1271-4d1c-aff5-6fc3ab735574"
+    },
+    {
+      "claim_id": "db4d42bf-2c4b-4a22-8519-1b12b0784eb3",
+      "result_id": "33c1bf29-1271-4d1c-aff5-6fc3ab735574"
+    },
+    {
+      "claim_id": "26cd513e-7bfe-43ef-a3c3-32788b56c968",
+      "result_id": "33c1bf29-1271-4d1c-aff5-6fc3ab735574"
+    },
+    {
+      "claim_id": "ef788890-8753-47d5-93ec-de7f874a0999",
+      "result_id": "33c1bf29-1271-4d1c-aff5-6fc3ab735574"
+    },
+    {
+      "claim_id": "1d44dc6d-adf2-4c7a-b75a-cb2cdf838c30",
+      "result_id": "33c1bf29-1271-4d1c-aff5-6fc3ab735574"
+    },
+    {
+      "claim_id": "adbec860-4e78-4f07-9568-11b6ae01b2e3",
+      "result_id": "33c1bf29-1271-4d1c-aff5-6fc3ab735574"
+    },
+    {
+      "claim_id": "06d151c4-b6ed-44eb-a4db-f5e503af3716",
+      "result_id": "33c1bf29-1271-4d1c-aff5-6fc3ab735574"
+    },
+    {
+      "claim_id": "01439207-86ca-42b4-b3f9-35a0623f2416",
+      "result_id": "eef5a23c-0171-40ef-8c3f-5aa296e62926"
+    },
+    {
+      "claim_id": "e6fc39db-6425-4bf4-bbdc-9eacd66c1c1c",
+      "result_id": "eef5a23c-0171-40ef-8c3f-5aa296e62926"
+    },
+    {
+      "claim_id": "86e97351-7162-4a09-8b42-04eacdb8d07d",
+      "result_id": "67b7b066-39a4-4d3b-82e6-23c8015c20c8"
+    },
+    {
+      "claim_id": "290e4eda-a93d-4cb8-952e-d2cdd3877d89",
+      "result_id": "67b7b066-39a4-4d3b-82e6-23c8015c20c8"
+    },
+    {
+      "claim_id": "27cf67c4-f2a6-4094-b3cb-1af819ce08aa",
+      "result_id": "67b7b066-39a4-4d3b-82e6-23c8015c20c8"
+    },
+    {
+      "claim_id": "07593e6d-b088-427a-be43-256af68473f2",
+      "result_id": "67b7b066-39a4-4d3b-82e6-23c8015c20c8"
+    },
+    {
+      "claim_id": "7b1fe5ca-fc2d-46fc-bc31-b2caf55c5a63",
+      "result_id": "67b7b066-39a4-4d3b-82e6-23c8015c20c8"
+    },
+    {
+      "claim_id": "dae9bef7-6ad2-4044-9d31-aadbb40398e4",
+      "result_id": "67b7b066-39a4-4d3b-82e6-23c8015c20c8"
+    },
+    {
+      "claim_id": "66ce90fb-3b29-4f91-bc76-8130e87cf593",
+      "result_id": "d221b505-cfa5-40be-bdcd-d3d40216f0cb"
+    },
+    {
+      "claim_id": "5e383c05-7459-4dbd-b5a4-9eb9cd816bc7",
+      "result_id": "d221b505-cfa5-40be-bdcd-d3d40216f0cb"
+    },
+    {
+      "claim_id": "341dccd9-1f4c-4186-8cdd-81a6a553d89b",
+      "result_id": "d221b505-cfa5-40be-bdcd-d3d40216f0cb"
+    },
+    {
+      "claim_id": "ce00a616-6f08-42d9-aaae-36668fef26db",
+      "result_id": "17dbc44a-90c7-42ca-a22a-194f8fbec360"
+    },
+    {
+      "claim_id": "1dbebe82-7d08-4c13-9350-666549426f37",
+      "result_id": "17dbc44a-90c7-42ca-a22a-194f8fbec360"
+    },
+    {
+      "claim_id": "a91415c4-907f-46e1-a482-76e26b0eeea1",
+      "result_id": "17dbc44a-90c7-42ca-a22a-194f8fbec360"
+    },
+    {
+      "claim_id": "d4ac3977-839a-4bf9-b90a-80fdfdbfea4f",
+      "result_id": "17dbc44a-90c7-42ca-a22a-194f8fbec360"
+    },
+    {
+      "claim_id": "d01608f0-a556-4896-a00a-c3b73c4b08e1",
+      "result_id": "17dbc44a-90c7-42ca-a22a-194f8fbec360"
+    },
+    {
+      "claim_id": "77e25f2e-5a70-4b5f-87b1-0640533a906c",
+      "result_id": "17dbc44a-90c7-42ca-a22a-194f8fbec360"
+    },
+    {
+      "claim_id": "06399291-6ee8-42a9-a139-e7fc031df816",
+      "result_id": "17dbc44a-90c7-42ca-a22a-194f8fbec360"
+    },
+    {
+      "claim_id": "9d4aabfe-435a-4582-a18b-a205f6b33947",
+      "result_id": "17dbc44a-90c7-42ca-a22a-194f8fbec360"
+    },
+    {
+      "claim_id": "3284fa80-5bd8-4d6a-8752-3f2f4b6dccf9",
+      "result_id": "17dbc44a-90c7-42ca-a22a-194f8fbec360"
+    },
+    {
+      "claim_id": "ca6f89b8-58e3-45df-955b-5f41594970ba",
+      "result_id": "17dbc44a-90c7-42ca-a22a-194f8fbec360"
+    },
+    {
+      "claim_id": "2dedabff-f29c-4c56-9c2a-fe5bc3044e92",
+      "result_id": "235db55c-aede-4ea5-a631-76101ebc0bfd"
+    },
+    {
+      "claim_id": "a14050f5-cde7-488b-9462-dd648be4d979",
+      "result_id": "235db55c-aede-4ea5-a631-76101ebc0bfd"
+    },
+    {
+      "claim_id": "8c3701c6-5aaa-4e07-a12c-0738d795860e",
+      "result_id": "235db55c-aede-4ea5-a631-76101ebc0bfd"
+    },
+    {
+      "claim_id": "d848d31a-1026-4d26-a1fa-89a2cc40244a",
+      "result_id": "875c5360-303c-4d7b-9f83-ad8adb3448fa"
+    },
+    {
+      "claim_id": "23a2abf1-75cb-41aa-b9af-dd3ab03690fd",
+      "result_id": "875c5360-303c-4d7b-9f83-ad8adb3448fa"
+    }
+  ],
+  "comparisons": []
+}

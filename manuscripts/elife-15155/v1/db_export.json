@@ -1,0 +1,1920 @@
+{
+  "submission": {
+    "id": "405b2ee2-8c60-4cd5-a29d-fdba80ac991f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:23:57.817544Z",
+    "updated_at": "2025-11-30T00:23:57.817544Z"
+  },
+  "content": [
+    {
+      "id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "submission_id": "405b2ee2-8c60-4cd5-a29d-fdba80ac991f",
+      "content_type": "manuscript",
+      "content_text": "# MutS\u03b1 maintains the mismatch repair capability by inhibiting PCNA unloading\n\n## Authors\n\n- Yoshitaka Kawasoe<sup>1</sup> ([ORCID: 0000-0003-0925-2004](https://orcid.org/0000-0003-0925-2004))\n- Toshiki Tsurimoto<sup>2</sup> ([ORCID: 0000-0001-7597-2216](https://orcid.org/0000-0001-7597-2216))\n- Takuro Nakagawa<sup>1</sup> ([ORCID: 0000-0003-3455-8224](https://orcid.org/0000-0003-3455-8224))\n- Hisao Masukata<sup>1</sup>\n- Tatsuro S Takahashi<sup>1</sup> ([ORCID: 0000-0002-1947-7680](https://orcid.org/0000-0002-1947-7680)) \u2020\n\n### Affiliations\n\n1. Graduate School of Science Osaka University Toyonaka Japan\n2. Department of Biology, Faculty of Sciences Kyushu University Fukuoka Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nEukaryotic mismatch repair (MMR) utilizes single-strand breaks as signals to target the strand to be repaired. DNA-bound PCNA is also presumed to direct MMR. The MMR capability must be limited to a post-replicative temporal window during which the signals are available. However, both identity of the signal(s) involved in the retention of this temporal window and the mechanism that maintains the MMR capability after DNA synthesis remain unclear. Using Xenopus egg extracts, we discovered a mechanism that ensures long-term retention of the MMR capability. We show that DNA-bound PCNA induces strand-specific MMR in the absence of strand discontinuities. Strikingly, MutS\u03b1 inhibited PCNA unloading through its PCNA-interacting motif, thereby extending significantly the temporal window permissive to strand-specific MMR. Our data identify DNA-bound PCNA as the signal that enables strand discrimination after the disappearance of strand discontinuities, and uncover a novel role of MutS\u03b1 in the retention of the post-replicative MMR capability.\n\n## Introduction\n\nThe evolutionarily conserved mismatch repair (MMR) system corrects replication errors post-replicatively to prevent their being fixed as mutations in the next round of complementary DNA synthesis (Iyer et al., 2006; Jiricny, 2013; Kunkel and Erie, 2015). Since erroneously inserted nucleotides are present on newly synthesized DNA strands, identification of the newly synthesized strand is a critical step in MMR. By rectifying replication errors, MMR increases the replication fidelity by ~2 orders of magnitude in yeast (Lujan et al., 2014). In humans, genetic or epigenetic inactivation of MMR genes elevates the risk of tumorigenesis in both hereditary and sporadic manners (Jiricny, 2013).\n\nIn Escherichia coli, MMR distinguishes the parental and daughter strands mainly by using adenine methylation on GATC sites (Lahue et al., 1989; Iyer et al., 2006). Mismatches are recognized by the mismatch sensor MutS homodimer. MutS and the MutL homodimer then activate the latent nicking-endonuclease MutH, which cleaves the unmethylated strand at the hemi-methylated GATC sequences. MMR is possible from the time of hemi-methylated GATC generation by DNA synthesis until full methylation of the GATC sites. Maintaining this temporal window is critical for efficient MMR, because over-expression of the Dam methylase, by which full-methylation of the GATC sites is accelerated, significantly elevates the mutation frequency (Herman and Modrich, 1981; Marinus et al., 1984). The E. coli MMR system can also correct replication errors through a methylation-independent mechanism, where strand discontinuities can substitute for GATC methylation both in vivo and in vitro\u00a0(Laengle-Rouault et al., 1986; Lahue et al., 1987; 1989).\n\nEukaryotic MMR is directed by strand discontinuities such as nicks or gaps in vitro\u00a0(Holmes et al., 1990; Thomas et al., 1991). Two MutS heterodimers, MutS\u03b1 (Msh2-Msh6) and MutS\u03b2 (Msh2-Msh3) recognize replication errors; MutS\u03b1 has a biased preference for base-base mismatches and small insertion/deletion loops (IDLs), while MutS\u03b2 preferentially recognizes large IDLs (Iyer et al., 2006; Jiricny, 2013; Kunkel and Erie, 2015). After mismatch binding, MutS\u03b1/\u03b2 are converted into closed \u2018clamp-like\u2019 forms, by which they can translocate along DNA. They then recruit the latent nicking-endonuclease MutL\u03b1 (Mlh1-Pms2 in vertebrates and Mlh1-Pms1 in yeast) to initiate the removal of the error-carrying DNA strand. Two other eukaryotic MutL homologs, MutL\u03b2 (Mlh1-Pms1 in vertebrates and Mlh1-Mlh2 in yeast) and MutL\u03b3 (Mlh1-Mlh3) are suggested to play minor roles in somatic MMR (Jiricny, 2013; Campbell et al., 2014). Successful reconstitutions of eukaryotic MMR have shown that MutS\u03b1, or MutS\u03b2, and MutL\u03b1, the Proliferating Cell Nuclear Antigen (PCNA) sliding clamp, the clamp loader Replication Factor C (RFC), the Exo1 exonuclease, and the DNA synthesis components promote MMR when a strand discontinuity is present (Genschel and Modrich, 2003; Dzantiev et al., 2004; Constantin et al., 2005; Zhang et al., 2005). A strand discontinuity, which can occur on either 5\u2019- or 3\u2019-side of the mismatch, activates MutL\u03b1 through a MutS\u03b1- and PCNA-dependent mechanism to induce successive rounds of nicking on the error-carrying strand (Kadyrov et al., 2006; 2007; Pluciennik et al., 2010). Single-strand DNA termini such as 5\u2019-ends of the Okazaki fragments serve as entry points for Exo1 and strand discrimination signals in vivo\u00a0as well (Pavlov et al., 2003; Nick McElhinny et al., 2010; Liberti et al., 2013; Lujan et al., 2014; Liu et al., 2015). Recent studies have revealed that ribonucleotides embedded by replicative DNA polymerases serve as strand signals for MMR in vitro and contribute to a sub-fraction of leading strand MMR in vivo, after converted into single-strand gaps through RNaseH2-dependent ribonucleotide excision repair (Ghodgaonkar et al., 2013; Lujan et al., 2013).\n\nPCNA has also been presumed to be the strand discrimination marker in eukaryotes (Umar et al., 1996; Chen et al., 1999; Pavlov et al., 2003; Dzantiev et al., 2004; Kadyrov et al., 2006; Pluciennik et al., 2010; Hombauer et al., 2011b; Pe\u00f1a-Diaz and Jiricny, 2012; Georgescu et al., 2015; Kunkel and Erie, 2015). PCNA is a ring-shaped homo-trimer that supports various DNA transactions including DNA replication and repair (Georgescu et al., 2015). PCNA is loaded onto DNA from the template-primer junction by RFC, and likely unloaded by an RFC-like complex containing Elg1 after the completion of DNA synthesis (Kubota et al., 2013; 2015). Since its DNA binding is asymmetric with respect to polarities of the parental and daughter strands, DNA-bound PCNA can hold information for the newly synthesized strand (Bowman et al., 2004; Georgescu et al., 2015). PCNA plays an essential role in an early MMR step that precedes degradation of the error-carrying strand (Umar et al., 1996). PCNA loaded from a strand discontinuity induces strand-specific, mismatch- and MutS\u03b1-dependent activation of the\u00a0MutL\u03b1 endonuclease (Kadyrov et al., 2006; 2007; Pluciennik et al., 2010). When PCNA is loaded onto closed circular DNA without defined orientation, it induces unbiased nicking on both DNA strands (Pluciennik et al., 2010; 2013). These findings have led to a proposal that orientation of DNA-bound PCNA is a critical determinant for the nicking specificity of MutL\u03b1.\n\nIn addition to its proposed role in strand discrimination, PCNA is also involved in multiple steps of MMR. Numbers of PCNA mutants in yeast exhibit mutator phenotypes that are epistatic to MMR mutations (Johnson et al., 1996; Umar et al., 1996; Chen et al., 1999; Amin et al., 2001; Lau et al., 2002; Goellner et al., 2014). It interacts with MutS\u03b1/\u03b2 through their PCNA-interacting peptide (PIP) motifs, which reside at the N-termini of Msh6 and Msh3 (Clark et al., 2000; Flores-Rozas et al., 2000; Kleczkowska et al., 2001). In both cases, the PIP motifs and the mispair binding domains are connected through long linkers, which are predicted to be disordered in yeast (Shell et al., 2007). Mutants of the PIP motifs in Msh6 and Msh3 show substantial but not complete reduction of the MMR activity, indicating that the PIP motif plays an important, yet assistive, non-essential role in MMR (Clark et al., 2000; Flores-Rozas et al., 2000). The PIP motif has been proposed to tether MutS\u03b1 to the replication fork to assist its mismatch recognition (Kleczkowska et al., 2001; Hombauer et al., 2011a; Haye and Gammie, 2015). A recent study has shown that this motif in MutS\u03b1 is important for a late MMR step(s) involving degradation of the error-carrying strand, especially by the Exo1-independent mechanism (Goellner et al., 2014). These findings suggest that PCNA coordinates multiple reactions in MMR, yet the exact role of PCNA in MMR is still not clearly defined.\n\nAn important remaining question in eukaryotic MMR is how (and how long) the strand discrimination signals are retained after DNA synthesis. It has been shown in yeast that MutS\u03b1 must be present during S-phase to suppress mutations (Hombauer et al., 2011b). Therefore, the generation and retention of the strand signals for MMR should be intimately coupled with DNA replication. Since PCNA transiently remains on DNA after the completion of DNA synthesis, DNA-bound PCNA could mediate the coupling of MMR with DNA replication. However, because experimental evidence that DNA-bound PCNA induces strand-specific MMR in the absence of strand discontinuities is currently lacking, it is still uncertain whether PCNA by itself can mediate the coupling of MMR with DNA replication. In addition, how functional interaction between the MMR system and DNA-bound PCNA, which should be unloaded from DNA shortly after the completion of DNA synthesis, is ensured remains highly unclear.\n\nHere, we demonstrate that MutS\u03b1 and PCNA play a critical role in maintenance of the MMR capability after DNA synthesis. We show that nucleoplasmic extract (NPE) of Xenopus eggs efficiently induces gap-directed, strand-specific MMR, whose capability remains even after sealing of the gap. We further show that DNA-bound PCNA induces strand-specific MMR in the absence of strand discontinuities. Strikingly, we found that MutS\u03b1 attenuates unloading of PCNA and retains the MMR capability largely through its PIP motif. Our data thus identify PCNA as the eukaryotic strand discrimination molecule that retains the MMR capability after DNA synthesis, and delineate a critical role of MutS\u03b1 in maintenance of the temporal window for eukaryotic MMR.\n\n## Results\n\n### Nucleoplasmic extract of Xenopus eggs efficiently promotes both gap-directed MMR and gap-filling DNA synthesis\n\nThe nucleoplasmic extract (NPE), a highly concentrated nuclear protein extract of Xenopus eggs, has been used as a powerful in vitro model system for DNA repair reactions coupled with DNA synthesis (Walter et al., 1998; R\u00e4schle et al., 2008; Olivera Harris et al., 2015). We exploited its extremely high capacity for DNA synthesis to study MMR. A plasmid carrying an A:C mismatch, which is a preferred MMR substrate in crude Xenopus egg extracts (Varlet et al., 1990), and a 15-nucleotide (nt) single-strand gap was constructed (Figure 1A). This plasmid was synthesized in vitro by second strand DNA synthesis after annealing of a primer carrying a 'C'-mismatch on single-stranded phagemid DNA corresponding to the 'A'-strand. Since NPE contains a high concentration of Geminin, a specific inhibitor for assembly of pre-replicative complexes, no DNA replication initiates when DNA is incubated directly in NPE, while DNA synthesis from existing 3\u2019-termini is active (Walter et al., 1998). NPE corrected the A:C mismatch by selectively editing the base on the gap-carrying strand (Figure 1B\u2013E, see 'mock'), more efficiently than conventional crude Xenopus egg extracts (Figure 1\u2014figure supplement 1). As seen previously (Olivera Harris et al., 2015), a gap could be placed on either 5\u2019 or 3\u2019 of the mismatch, and repair DNA synthesis occurred preferentially within a fragment containing the shorter path between the gap and the mismatch (Figure 1\u2014figure supplement 2), indicating that NPE supports bidirectional MMR. Depletion of the Msh2-containing (MutS\u03b1/\u03b2) (Figure 1B\u2013C and Figure 1\u2014figure supplement 3) or Mlh1-containing complexes (MutL\u03b1/\u03b2/\u03b3) (Figure 1D\u2013E and Figure 1\u2014figure supplement 3) abolished the repair reaction. Unlike other systems, a nick did not efficiently induce MMR (Figure 1\u2014figure supplement 4). These results demonstrate that NPE efficiently recapitulates gap-directed, bi-directional MMR that is dependent on both MutS\u03b1/\u03b2 and MutL\u03b1/\u03b2/\u03b3. Some background repair observed in the absence of a gap could be due to either spontaneous base damages, which elicit base excision repair that in turn direct MMR (Repmann et al., 2015), or strand breaks that have occurred during handling of the substrate.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig1-v1.jpg)\n\n**Figure 1.:** (A) DNA substrates used in this study. The 3011-base pair plasmid DNA carries an A:C mispair (pMM1AC), or an A:T base-pair (pMM1AT) at position 1. Sequences surrounding an A:C mispair are designed so that the A:T or G:C repair product forms an XhoI or BamHI cleavage site, respectively. Two BbvCI nicking restriction enzyme sites were used to introduce a 15-nt single-strand gap. A PacI site was placed within the gap. If needed, a biotin-dT modification was introduced at position 1670. (B) NPE was depleted using pre-immune antibodies (lane 1) or a mixture of Msh2 and Msh6 antibodies (lane 2). Immunoblots of the NPE samples (0.05 \u03bcl each) are shown. Orc2 served as a loading control. (C) Covalently closed (lanes 1\u20133 and 10\u201312), A-strand-gap (3\u2019 to the mismatch)-carrying (lanes 4\u20136 and 13\u201315) or C-strand-gap (5\u2019 to the mismatch)-carrying pMM1AC (lanes 7\u20139 and 16\u201318) were incubated in NPE described in (B), and sampled at the indicated times. DNA was purified and digested with XmnI and either BamHI (upper, A to G repair) or XhoI (lower, C to T repair). %repair was calculated based on the percentage of XhoI or BamHI sensitive DNA molecules. (D) NPE was depleted using pre-immune antibodies (lane 1) or Mlh1 antibodies (lane 2). Immunoblots of the NPE samples (0.05 \u03bcl each) are shown. (E) The MMR reaction in NPE described in (D). DNA was digested with XmnI and either BamHI (upper, A to G repair) or XhoI (lower, C to T repair). (F) Percentages of DNA synthesis at the gap, estimated by PacI sensitivity (%Gap-filling synthesis), A to G repair (%A\u2192G repair), C to T repair (%C\u2192T repair) and closed circular molecules (%closed; Figure 1\u2014figure supplement 5), calculated from two independent experiments including the one described in Figure 1\u2014figure supplement 6, were plotted onto a graph. To calculate the %Gap-filling synthesis, DNA was digested with XmnI and PacI. The mean values were connected by lines. Error bars: \u00b1 1 standard deviation (SD).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Homoduplex pMM1AT carrying no strand break (lanes 1\u20133 and 13\u201315) or A-strand gap (lanes 4\u20136 and 16\u201318), or mismatch-containing pMM1AC carrying no strand break (lanes 7\u20139 and 19\u201321), or A-strand gap (lanes 10\u201312 and 22\u201324) was incubated in High speed supernatants (HSS; lanes 1\u201312) or NPE (lanes 13\u201324), and sampled at the indicated times. %repair was calculated as described in Figure 1C. Gap-directed A to G MMR was more efficient in NPE (67%) than in HSS (34%), indicating that NPE has higher MMR activity than HSS.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Covalently closed (lanes 1\u20133), A-strand-gap-carrying (lanes 4\u20136) or C-strand-gap-carrying pMM1AC (lanes 7\u20139) was incubated in NPE, and sampled at the indicated times.\u00a0DNA was purified and digested with XmnI and either BamHI (upper, A to G repair) or XhoI (middle, C to T repair). To analyze the incorporation of radioactivity, DNA was digested with DrdI (bottom). \u03b1-[32P]-dCTP was preferentially incorporated into the 1\u00a0kb fragment corresponding to the shorter path between the gap and the mismatch in both 5\u2019-gap- and 3\u2019-gap-directed MMR.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** 0.1 \u03bcl of NPE and the indicated amounts of recombinant proteins were separated using 4\u201315% SDS-PAGE and transferred onto PVDF membranes.Each membrane strip was probed with either the indicated antiserum or pre-immune serum (PI) from the same rabbit. The same exposure sets with PI and antisera are presented. Either xMsh2 (Mr = 1.04 \u00d7 105) or xMsh6 (Mr = 1.49 \u00d7 105) was detected as nearly a single band in NPE. Two major bands were detected with Mlh1 antibodies, and we concluded that the more quickly migrating band is xMlh1, because its mobility on SDS-PAGE was closer to the expected molecular weight of Mlh1 (Mr = 8.41 \u00d7 104), it migrated slightly faster than recombinant xMlh1 tagged with 6\u00d7His-epitope through a 12 amino acid linker, and this band was specifically immunoprecipitated by xMlh1 antibodies (see Figure 1D). (*) indicates cross-reacting band.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Mismatch-containing pMM1AC carrying no strand break (lanes 1\u20133), A-strand nick carrying pMM2AC (lanes 4\u20136), or A-strand gap carrying pMM1AC (lanes 7\u20139) was incubated in NPE, and sampled at the indicated times. %repair was calculated as described in Figure 1C.\u00a0Gap-directed A to G MMR (62%) was more efficient than nick-directed A to G MMR (22%).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) Calculation of the relative coefficient of SYBR Gold fluorescence for closed-form DNA over open-form DNA.\u00a0A reaction mixture containing in vitro synthesized pMM0AT (a pMM1 derivative that carries no BbvCI nicking site) was split into two aliquots and incubated in the absence (lane 1) or presence (lane 2) of the nicking endonuclease Nb.BtsI, and separated by ethidium bromide containing agarose gel electrophoresis. The gel was stained with SYBR Gold nucleic acid stain and scanned with Typhoon FLA9000 using SYBR Gold specific setting (a 473 nm excitation laser and a 510 nm Long pass filter). A representative result is shown. The relative fluorescence coefficient for closed-form DNA over open-form DNA (c), which reflects difference in the saturating amount of SYBR Gold stain between open and closed form DNA, was calculated by the following formula.\n\n$$\nc=\\frac{open(+enzyme)\u2212open(\u2212enzyme)}{closed\u00a0(\u2212enzyme)}.\n$$\n\nThe calculated c value was 1.15 (standard deviation = 0.06, n = 10). Percentage of closed circular molecules (%closed) was calculated by the following formula.\n\n$$\n\u00a0%closed=\\frac{c\u00a0\\times\u00a0closed\u00a0circular\u00a0molecules}{open\u00a0circular\u00a0molecules+(c\u00a0\\times\u00a0closed\u00a0circular\u00a0molecules)}\u00a0\\times\u00a0100.\n$$\n\n(B) Kinetics of the gap-filling reaction in NPE on a homoduplex DNA. Gap-carrying homoduplex pMM1AT was incubated in NPE and sampled at the indicated times. %closed was calculated as described in (A). (*) indicates linearized fragments produced by the nicking endonuclease.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig1-figsupp6-v1.jpg)\n\n**Figure 1\u2014figure supplement 6.:** A-strand-gap-carrying\u00a0pMM1AC was incubated in NPE and sampled at the indicated times. %closed,% Gap-filling synthesis and %repair were calculated as described in Figure 1\u2014figure supplement 5, Figure 1F, and C, respectively.\n\nOn a substrate that has no mismatch, a single-strand gap was sealed within 2\u2009min in NPE, resulting in quick accumulation of closed circular plasmids (Figure 1\u2014figure supplement 5). To understand the temporal relationship between gap filling and gap-directed MMR, we compared the kinetics of DNA synthesis at the gap site and repair of the mismatch simultaneously on the same substrate. As shown in Figure 1F, DNA synthesis at the gap site (estimated by digestion with PacI placed within the gap) was mostly completed within 30 s. However, this DNA synthesis did not covalently close the mismatch-carrying plasmid, suggesting that new strand breaks are introduced on the DNA (Figure 1F and Figure 1\u2014figure supplement 6). The A to G MMR gradually progressed until ~30\u2009min, and shortly after the mismatch correction, closed circular molecules were accumulated. These observations suggest that, in this gap-directed MMR model, efficient DNA synthesis at the gap site precedes mismatch correction involving degradation of the error-carrying strand. As suggested previously (Varlet et al., 1996), the 3\u2019-terminus is likely used as a signal for MMR, rather than the initiation point of extensive strand removal.\n\n### A gap-derived strand memory directs MMR even after gap filling\n\nIf the 3\u2019-terminus generates a signal for strand discrimination, does the signal remain after the sealing of the gap, or is the 3\u2019-terminus essential to initiate MMR? To answer this question, we set up a stepwise incubation assay that separates gap filling and mismatch recognition. We first incubated the MMR substrates in a MutS\u03b1/\u03b2-depleted (MutS-depleted) NPE, in which the gap should be filled and ligated without mismatch recognition, and then supplied MutS\u03b1/\u03b2 by addition of fresh NPE (Figure 2A). In the MutS-depleted NPE, more than 80% of gap-carrying plasmids were converted into the closed-circular form within 1.5\u2009min (Figure 2B, lane 9). However, ~40% of A to G MMR was still observed upon addition of fresh NPE at 2\u2009min, at a time when at most, only ~14% strand discontinuities remained (Figure 2B, lane 10 and Figure 2C, lane 14). From 0.5 to 2\u2009min, the MMR efficiency consistently exceeded the amounts of remaining strand discontinuities. These data suggest that the strand information derived from a gap is 'memorized' on DNA to induce subsequent MMR.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic diagram of the stepwise incubation assay. pMM1AC carrying a 15-nt gap was incubated in a MutS-depleted NPE to fill the gap without recognizing the mismatch. Subsequently, fresh NPE was added to an aliquot of the reaction to initiate MMR by supplying MutS\u03b1/\u03b2. After 60 min incubation, DNA was purified and the direction and the efficiency of repair were examined. (B) Kinetics of the gap-filling reaction in MutS-depleted NPE. Covalently closed (lanes 1\u20135) or A-strand-gap-carrying pMM1AC (lanes 6\u201310) was incubated in MutS-depleted NPE and sampled at the indicated times. (*) indicates linear DNA produced by contaminating endonuclease activity in Nt.BbvCI. These linear molecules were excluded from the calculation of %closed. (C) Strand-specific MMR reaction after supplying MutS\u03b1/\u03b2. Aliquots were sampled at the indicated times, mixed with fresh NPE, and incubated for an additional 60 min. No repair was observed when the second NPE was omitted (lanes 2 and 9).\n\n### Directional loading of PCNA bypasses requirement of a gap for strand-specific MMR in NPE\n\nThe gap-filling reaction in Xenopus egg extracts was PCNA-dependent (Figure 3\u2014figure supplement 1). Therefore, at least one PCNA trimer must be involved in every gap filling, and it could retain the strand information after gap filling. If PCNA stores strand information for MMR, PCNA loaded on DNA in a specific orientation should direct MMR in NPE even in the absence of strand discontinuities. To test this idea, we established an in vitro PCNA-loading reaction using purified human RFC (hRFC) and PCNA (hPCNA), which can substitute for Xenopus PCNA (xPCNA) in the MMR reaction (Figure 3\u2014figure supplement 2). A mismatch plasmid carrying an A-strand nick was bound to Sepharose beads through a site-specific biotin modification (see Figure 1A). hPCNA was loaded onto the immobilized plasmids in a nick-dependent, and therefore orientation-specific manner. The nick left on the DNA was sealed with the T4 DNA ligase. The hPCNA-DNA complex was then washed with 1\u2009M KCl to remove hRFC, T4 ligase, and loosely associated hPCNA (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic diagram of the assay. Singly biotinylated pMM2AC (a pMM1 derivative carrying only one BbvCI site) carrying a nick was bound to Sepharose beads and incubated with recombinant hPCNA and hRFC. The nick was then ligated, and the complex was washed with a buffer containing 1 M KCl. The hPCNA-DNA complex was incubated in NPE to test whether MMR occurs. (B) In vitro PCNA-loading reaction. Untreated DNA (top), linearized DNA (middle, by XmnI), and quantitative immunoblottings for hPCNA and hRfc2 (bottom) of samples from the in vitro PCNA-loading assay using covalently closed, and A-strand-nick-carrying pMM2AC are presented. (*) indicates linear DNA, which was excluded from the calculation of %closed. (C) The hPCNA-DNA complexes described in (B) were split into two portions to test whether PCNA encircles DNA (C) and whether MMR occurs upon incubation in NPE (D). The one portion was treated with either control buffer, or buffer containing XmnI whose cleavage site is located 1382\u00a0bp away from the PCNA entry point. DNA from the reaction (top), linearized DNA (middle, by XmnI), and a hPCNA immunoblot (bottom) are shown. Since nick-carrying molecules were accumulated during incubation, the level of closed-circular molecules was lower than the original substrates shown in (B). (D) The other potion of the hPCNA-DNA complexes described in (B) was incubated in NPE. The MMR efficiencies were calculated as described in Figure 1C.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Characterization of xPCNA sera. 0.1 \u03bcl of NPE and 10 ng of recombinant xPCNA were separated using 4\u201315% SDS-PAGE and transferred onto PVDF membranes.\u00a0Each membrane strip was probed with either the xPCNA or pre-immune serum (PI) from the same rabbit. The same exposure sets of PI and xPCNA antibodies are shown. xPCNA (Mr = 2.88 \u00d7 104 as a monomer) was detected as nearly a single band in NPE. (*) indicates cross-reacting band. (B) The efficiency of PCNA depletion from HSS. HSS was depleted with pre-immune (lanes 1\u20134) or xPCNA antibodies (lanes 5\u20139), and supplemented with either control buffer (lanes 4 and 8) or 0.5 \u03bcM recombinant xPCNA (lane 9). HSS (0.5 \u03bcl) from each depletion rounds was separated by SDS-PAGE and probed with the indicated antibodies. Orc2 served as a loading control. (C) The gap-filling reaction in PCNA-depleted HSS. Gap-carrying homoduplex pMM1AT plasmids were incubated in PCNA-depleted HSS described in (B) and sampled at the indicated times. The efficiency of the gap-filling reaction was analyzed using ethidium bromide containing agarose gel electrophoresis. Depletion of PCNA inhibited appearance of closed-form plasmids even after 60 min (lane 12), indicating that PCNA is essential for either DNA synthesis at the gap site, flap-processing, or ligation at the gap in HSS. (*) indicates linearized fragments produced by the nicking endonuclease. (D) The gap-filling reaction in p21-peptide supplemented NPE. Because PCNA-depletion from NPE was not possible due to its high concentration, p21 peptides (Mattock et al. 2001) were used to inhibit PCNA function in NPE. Gap-carrying homoduplex pMM1AT plasmids were incubated in NPE supplemented with either control buffer (lanes 2\u20134), 1 mg/ml wildtype (lanes 5\u20137), PIP mutant (lanes 8\u201310) or jumbled p21 peptide (lanes 11\u201313), and sampled at the indicated times. The efficiency of gap filling was analyzed using ethidium bromide containing agarose gel electrophoresis. The wildtype but not the PIP mutant nor jumbled p21 peptide inhibited appearance of closed-form plasmids, suggesting that PCNA is required for either DNA synthesis at the gap site, flap-processing, or ligation at the gap in NPE. (*) indicates linearized fragments produced by the nicking endonuclease. (E) The depletion efficiency of PCNA from HSS. HSS was depleted using pre-immune (lane 1) or xPCNA antibodies (lane 2). Immunoblots of the HSS samples (0.5 \u03bcl each) are shown. Orc2 served as a loading control. (*) indicates cross-reacting band. (F) Comparison of nick ligation and gap filling in PCNA-depleted HSS. Nick-carrying homoduplex pMM2AT (lanes 1\u201311) or gap-carrying homoduplex pMM1AT (lanes 12\u201322) was incubated in either mock-treated or PCNA-depleted HSS described in (E), and sampled at the indicated times. The efficiencies of accumulation of closed-circular molecules were analyzed using ethidium bromide containing agarose gel electrophoresis. Although gap filling was completely inhibited by PCNA-depletion, nick ligation was only partially inhibited, indicating that PCNA is only partially required for nick ligation in HSS.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) 300 ng of recombinant hRfc1-5 purified from baculovirus-infected High Five insect cells was separated using SDS-PAGE and stained with Coomassie brilliant blue R-250.\u00a0(B) 1 \u03bcg each of recombinant xPCNA and hPCNA purified from E. coli was separated using SDS-PAGE and stained with Coomassie brilliant blue R-250. (C) The depletion efficiency of PCNA from HSS. HSS was depleted using pre-immune (lane 1) or xPCNA antibodies (lane 2). The HSS samples were separated using SDS-PAGE and probed with the indicated antibodies. Orc2 served as a loading control. (D) hPCNA can replace xPCNA in the MMR reaction in HSS. A-strand-gap-carrying pMM1AC plasmids were incubated in HSS described in (C) supplemented with either control buffer (lanes 1\u20136), 0.5 \u03bcM of xPCNA (lanes 7\u20139) or hPCNA (lanes 10\u201312) and sampled at the indicated times. %repair was calculated as described in Figure 1C. hPCNA, as well as xPCNA, restored the A to G MMR in xPCNA-depleted HSS, indicating that hPCNA can functionally replace xPCNA in MMR. Note that the overall MMR efficiency was weakened because of the rather harsh xPCNA depletion condition (4 round depletion).\n\nUsing fluorescent-based quantitative western blotting, we estimated that 4\u201310 hPCNA trimers reproducibly loaded on the DNA in a nick- and ATP-dependent manner (Figure 3B; see also Figure 4). Ligation of the nick was ~80% efficient. The DNA-bound hPCNA topologically encircled DNA with free-sliding ability, because linearization of DNA resulted in dissociation of essentially all hPCNA (Figure 3C). As PCNA was loaded from the A-strand nick in this case, A to G MMR was predicted. When the hPCNA-DNA complex was transferred into NPE, ~75% of the A bases were specifically repaired into G bases (Figure 3D). Such a high repair efficiency could not be explained by the remaining nicks, which could contribute to at most 20% of MMR.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig4-v1.jpg)\n\n**Figure 4.:** (A) In vitro PCNA-loading reaction with pMM2AC carrying no nick, an A-strand nick or a C-strand nick.\u00a0Untreated DNA (top), linearized DNA (middle, by XmnI), and quantitative immunoblots (bottom) are presented. (B) The hPCNA-DNA complexes described in (A) were incubated in NPE. (C) The hPCNA-DNA complexes (Figure 4\u2014figure supplement 2) were incubated in mock-treated, MutS-depleted or MutL-depleted NPE described in Figure 4\u2014figure supplement 2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Singly biotinylated pMM2AC, either covalently closed (lanes 1\u20134 and 9\u201312) or A-strand nick carrying (lanes 5\u20138 and 13\u201316), was bound to Sepharose beads and incubated with either hPCNA (lanes 2, 6, 10 and 14), hRFC (lanes 3, 7, 11 and 15), or both (lanes 4, 8, 12, and 16). Untreated DNA (top), linearized DNA (middle, by XmnI), and quantitative immunoblottings of hPCNA and hRfc2 (bottom) are shown. (B) The hPCNA-DNA complexes described in (A) were incubated in NPE. %repair was calculated as described in Figure 1C. Strand-specific A to G MMR was induced only when both hPCNA and hRFC were present in the loading reaction (lanes 22\u201324). (C) The efficiencies of MMR were calculated from three independent experiments including the one shown in (B) and plotted onto a graph. Error bars: \u00b1 1 SD.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A, B) Depletion of the MutS\u03b1/\u03b2 (A) or the MutL\u03b1/\u03b2/\u03b3 complexes (B) from NPE. NPE was depleted using pre-immune antibodies (lane 1), a mixture of Msh2 and Msh6 (A; lane 2), or Mlh1 antibodies (B; lane 2). The NPE samples were separated using SDS-PAGE and probed with the indicated antibodies. Orc2 served as a loading control. (C) In vitro PCNA-loading reaction. Untreated DNA (top), linearized DNA (middle; by XmnI), and quantitative immunoblottings of hPCNA and hRfc2 (bottom) from in vitro PCNA-loading assays used in Figure 4C are shown.\n\nIf PCNA directs strand-specific MMR, PCNA loaded onto DNA in the opposite orientation should invert the strand to be repaired. Critically, the hPCNA-DNA complex prepared with A-nick DNA directed ~60% of A to G MMR, and the complex prepared with C-nick DNA directed ~70% of C to T MMR in NPE (Figure 4A and B). When either PCNA or RFC was omitted from the reaction, most of the strand-specific repair was inhibited (Figure 4\u2014figure supplement 1). The PCNA-directed MMR reaction was dependent on both MutS\u03b1/\u03b2 and MutL\u03b1/\u03b2/\u03b3 (Figure 4C and Figure 4\u2014figure supplement 2). These results indicate that directional loading of hPCNA is sufficient to induce strand-specific MMR in the absence of strand discontinuities in NPE.\n\n### The MutS complexes inhibit Rfc3-dependent PCNA unloading\n\nThe above results suggest that DNA synthesis at the gap site leaves PCNA on DNA as the strand memory, which can be subsequently used for MMR. Consistent with this idea, a significant portion of nick ligation was independent of PCNA, explaining why a nick did not induce MMR as efficiently as a gap in NPE (Figure 3\u2014figure supplement 1). In the absence of MutS\u03b1/\u03b2, the strand information was gradually lost after the disappearance of strand discontinuities (Figure 2), suggesting that PCNA is unloaded from DNA within this time window. To examine PCNA dissociation in NPE, we loaded hPCNA on DNA, incubated it in NPE, and quantified the remaining hPCNA using an hPCNA specific monoclonal antibody that does not cross-react with xPCNA (Figure 5\u2014figure supplement 1). This method distinguishes retention of hPCNA from sticking of xPCNA. In the mock-treated NPE, hPCNA was quickly dissociated from a homoduplex DNA within a few minutes, while dissociation was attenuated in the NPE depleted of xRfc3, indicating that PCNA is removed from DNA mostly through an active unloading process requiring the Rfc3-containing complex(es) (Figure 5). Due to the\u00a0unavailability of appropriate\u00a0antibodies, the specific Rfc3-containing complex responsible for PCNA unloading could not be identified.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig5-v1.jpg)\n\n**Figure 5.:** (A) Depletion efficiency of xRfc3 from NPE.\u00a0The depletion efficiency was estimated to be >98%. (B) hPCNA loaded onto immobilized pMM2AT (carrying no mismatch) was incubated in NPE described in (A). The efficiency of nick ligation in the PCNA loading reaction was estimated to be ~89%.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The hPCNA monoclonal antibody used in this study does not detect xPCNA. 10 ng each of recombinant xPCNA and hPCNA were separated using 4\u201315% SDS-PAGE. Recombinant proteins were visualized using silver nitrate or transferred onto PVDF membranes. The membrane strip was probed with hPCNA antibody. hPCNA monoclonal antibodies do not detect recombinant xPCNA even when the membrane was exposed for longer periods (lanes 3\u20136).\n\nAmount of DNA-bound PCNA should correlate with the MMR capability. In addition, since DNA-bound MutS\u03b1/\u03b2 can interact with PCNA (Flores-Rozas et al., 2000; Bowers et al., 2001; Lau and Kolodner, 2003; Iyer et al., 2008), MutS\u03b1/\u03b2 might affect dynamics of PCNA retention. We therefore examined hPCNA retention and the MMR capability in the presence or absence of MutS\u03b1/\u03b2 (Figure 6A). In the MutS-depleted NPE, hPCNA was again quickly unloaded from mismatch-carrying DNA (Figure 6B and Figure 6\u2014figure supplement 1). Concurrent with PCNA unloading, the PCNA-directed MMR capability rapidly dropped, leaving only ~10% of repairable molecules at 5\u2009min (Figure 6C, lane 5). In contrast, in the MutL-depleted NPE (containing endogenous MutS\u03b1/\u03b2 but deficient for MMR), even at 30\u2009min, more than one hPCNA trimer on an average still remained on DNA, and ~20% of mismatches were still repairable (Figure 6C, lane 14). The difference in PCNA retention and the kinetics of repair was not due to remaining nicks on the DNA, because neither MutS- nor MutL-depletion significantly affected the level of nick-carrying molecules (Figure 6\u2014figure supplement 2, see also Figure 7). These results suggest that mismatch-bound MutS complexes interfere with unloading of PCNA to retain strand information for MMR.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig6-v1.jpg)\n\n**Figure 6.:** (A) Schematic diagram of the stepwise incubation assay.\u00a0After the in vitro PCNA-loading reaction, hPCNA-DNA complexes were incubated in either MutS- or MutL-depleted NPE. The samples were split into two portions, fresh NPE was added to one portion to measure MMR, and DNA-bound proteins were recovered from the other portion to quantify hPCNA. (B) hPCNA loaded onto immobilized pMM2AC carrying an A-strand nick was incubated in NPE depleted of either MutS\u03b1/\u03b2 or MutL\u03b1/\u03b2/\u03b3. The efficiency of nick ligation in the PCNA loading reaction was estimated to be ~72%. The amounts of DNA-bound hPCNA are shown. See Figure 6\u2014figure supplement 1 for the depletion efficiencies (MutS: >98%, MutL: >98%). (C) Kinetics of the PCNA-directed MMR capability in the presence or absence of MutS\u03b1/\u03b2. Aliquots were sampled from the reaction described in (B) and mixed with fresh NPE.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** NPE was depleted using a mixture of Msh2 and Msh6 antibodies (lane 1) or Mlh1 antibodies (lane 2). The NPE samples and a dilution series of NPE were separated using SDS-PAGE and probed with the indicated antibodies for the depletion efficiencies, which we estimated that >98% for both Msh2 and Mlh1. Orc2 served as a loading control.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) NPE was depleted using a mixture of Msh2 and Msh6 antibodies (lane 1) or Mlh1 antibodies (lane 2). The NPE samples and a dilution series of NPE were separated using SDS-PAGE and probed with the indicated antibodies for the depletion efficiencies, which we estimated >98% for both Msh2 and Mlh1. Orc2 served as a loading control. (*) indicates cross-reacting band. (B) After the in vitro PCNA-loading reaction, the hPCNA-DNA complex (lane 2) was incubated in either MutS- or MutL-depleted NPE described in (A). Untreated DNA (top), DNA-bound PCNA and Msh2 (middle), and linearized DNA (bottom, by XmnI) are shown. Depletion of either MutS or MutL complex did not significantly affect the level of closed-circular molecules.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig7-v1.jpg)\n\n**Figure 7.:** (A) The gap-filling reaction of A-strand-gap-carrying pMM1AC in NPE described in Figure 7\u2014figure supplement 1. (B) The efficiencies of the gap-filling reaction were calculated from three independent experiments including the one described in (A) and plotted on a graph. The lines represent one-phase decay fitting of the data. See Table 1 for the fitting parameters. (C) Strand-specific MMR reaction after supplying fresh NPE. (D) The efficiencies of MMR were calculated and presented as described in (B).\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** NPE was depleted using a mixture of Msh2, Msh6, and Mlh1 antibodies (lane 1), a mixture of Msh2 and Msh6 antibodies (lane 2) or Mlh1 antibodies (lane 3). The depletion efficiencies were estimated to be >99% for both Msh2 and Mlh1.\n\n### The MutS complexes retain strand memory derived from a gap\n\nTo test whether MutS\u03b1/\u03b2 also maintain the MMR capability derived from a gap, we repeated the stepwise incubation experiments presented in Figure 2, but used MutL-depleted NPE as the first NPE this time. At least 80% of the gaps were filled in all conditions at 2\u2009min (Figure 7A and B, and Figure 7\u2014figure supplement 1). In either MutS-depleted or MutS/MutL-depleted NPE, more than 40% of mismatches were still repairable upon addition of fresh NPE at 2\u2009min, confirming the ~2\u2009min strand memory seen in Figure 2 (Figure 7C and D). Strikingly, in the MutL-depleted NPE, >60% of mismatches were repairable at 10\u2009min, and ~35% were still repairable even at 30\u2009min. Using one-phase exponential decay fitting, which could explain most data with reasonable quality (R2 > 0.8), we estimated the half-life of the strand memory in the absence of MutS\u03b1/\u03b2 to be approximately 2\u2009min, and to be approximately 40\u2009min in the presence of MutS\u03b1/\u03b2 (Table 1). These results strongly suggest that the MutS\u03b1/\u03b2-dependent mechanism maintains the strand information by inhibiting unloading of PCNA that is loaded during DNA synthesis at the gap site.\n\n**Table 1.**\n Fitting parameters for the gap-derived strand memory experiment.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\"></th>\n      <th colspan=\"3\">%gap [95% Confidence Interval]</th>\n      <th rowspan=\"2\"></th>\n      <th colspan=\"3\">%A\u2192G repair [95% Confidence Interval]</th>\n    </tr>\n    <tr>\n      <th>t1/2 (min)</th>\n      <th>%gap at 0 min</th>\n      <th>R2</th>\n      <th>t1/2 (min)</th>\n      <th>%repair at 0 min</th>\n      <th>R2</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\u0394MutS/MutL</td>\n      <td>0.60 [0.51\u22120.73]</td>\n      <td>100 [96.7\u2212103.3]</td>\n      <td>0.99</td>\n      <td></td>\n      <td>1.87 [1.52\u22122.45]</td>\n      <td>74.8 [68.6\u221280.7]</td>\n      <td>0.97</td>\n    </tr>\n    <tr>\n      <td>\u0394MutS</td>\n      <td>0.68 [0.58\u22120.81]</td>\n      <td>100 [96.4\u2212103.5]</td>\n      <td>0.99</td>\n      <td></td>\n      <td>2.00 [1.76\u22122.31]</td>\n      <td>82.8 [79.0\u221286.6]</td>\n      <td>0.99</td>\n    </tr>\n    <tr>\n      <td>\u0394MutL</td>\n      <td>0.75 [0.66\u22120.88]</td>\n      <td>100 [96.5\u2212103.5]</td>\n      <td>0.99</td>\n      <td></td>\n      <td>39.6 [12.3\u2212 +\u221e]</td>\n      <td>72.8 [63.6\u221281.9]</td>\n      <td>0.80</td>\n    </tr>\n  </tbody>\n</table>\n\n_Parameters for the one-phase exponential decay fitting of the data described in Figure 7B and D are presented. %gap: percentage of remaining gaps (100 - %closed), t1/2: half-life, R2: coefficient of determination. n = 3. Curve fitting was carried out using the GraphPad Prism 6 software (GraphPad Software, CA, USA)_\n\n### The PIP motif in MutS\u03b1 is required for efficient retention of strand information and PCNA\n\nTo address whether the PIP motif located at the N-terminus of Msh6 is required for retention of DNA-loaded PCNA and strand information, we purified recombinant xMutS\u03b1 harboring alanine substitutions in the PIP motif (xMutS\u03b1PIP; Figure 8A and B). In good agreement with previous reports (Kleczkowska et al., 2001; Iyer et al., 2008; Bowen et al., 2013), when no stepwise incubation was involved, the gap-directed MMR on the 3.0 kb substrate was largely restored by xMutS\u03b1PIP in MutS-depleted NPE (Figure 8\u2014figure supplement 1), indicating that in this experimental setup the PIP function is not important for MMR. Mismatch binding of xMutS\u03b1PIP was not significantly compromised (Figure 8\u2014figure supplement 1). However, xMutS\u03b1PIP was almost inert for PCNA retention. We repeated the PCNA-unloading assay using MutS/MutL-depleted NPE supplemented with xMutS\u03b1WT or xMutS\u03b1PIP (Figure 8C). Although xMutS\u03b1WT attenuated PCNA unloading, xMutS\u03b1PIP did not exhibit detectable retention of PCNA on mismatched DNA, compared to the buffer control (Figure 8D). In the gap-derived strand memory assay, xMutS\u03b1WT restored\u00a0retention of strand memory in the MutS/MutL-depleted NPE without affecting the gap-filling reaction (t1/2 = 25.5\u2009min; Figure 9, Figure 9\u2014figure supplement 1, and Table 2). In contrast, only modest restoration of the retention of strand information was seen with xMutS\u03b1PIP (t1/2 = 12.5\u2009min). These results indicate that the PIP motif is required for inhibition of PCNA unloading and largely responsible for strand memory retention, yet a PIP-independent mechanism also contributes to the retention of strand information derived from a gap.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig8-v1.jpg)\n\n**Figure 8.:** (A) The primary structure of Msh6 and the mutation sites in the PIP motif are presented. (B) 1 \u03bcg each of purified xMutS\u03b1 complexes were separated by SDS-PAGE and stained with Coomassie brilliant blue R-250. (C) NPE was depleted of both MutS and MutL (lanes 1\u20134), MutS (lane 5), or MutL (lane 6) and supplemented with either control buffer, 630 nM of xMutS\u03b1WT, xMutS\u03b1PIP, or xMutS\u03b1\u0394N. Immunoblots of each NPE are shown. (D) hPCNA loaded onto immobilized pMM2AC carrying an A-strand nick was incubated in NPE described in (C). The efficiency of nick ligation in the PCNA loading reaction was estimated to be ~75%.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig8-figsupp1-v1.jpg)\n\n**Figure 8\u2014figure supplement 1.:** (A-C) Effect of the MutS\u03b1 mutant complexes on gap-directed MMR in NPE. (A) NPE was depleted with pre-immune antibodies (lane 1) or a mixture of Msh2 and Msh6 antibodies (lanes 2\u20135), and supplemented with either control buffer (lanes 1 and 2), 630 nM of xMutS\u03b1WT (lane 3), xMutS\u03b1PIP (lane 4) or xMutS\u03b1\u0394N (lane 5). The NPE samples were separated by SDS-PAGE and probed with the indicated antibodies. Orc2 served as a loading control. (B) The MMR assay in NPE. A-strand-gap-carrying pMM1AC were incubated in NPE described in (A) and sampled at the indicated times. %repair was calculated as described in Figure 1C. The xMutS\u03b1PIP and xMutS\u03b1\u0394N complexes nearly fully restored MMR in the MutS depleted NPE (lanes 11\u201316). (C) The efficiencies of MMR were calculated from three independent experiments including the one presented in (B) and plotted onto a graph. Error bars: \u00b1 1 SD. (D) Dissociation constants of the MutS\u03b1 mutants on mismatch-carrying DNA. The xMutS\u03b1WT, xMutS\u03b1PIP and xMutS\u03b1\u0394N complexes were flowed over a sensor chip coated with mismatch-carrying oligo DNA. The kinetics of association and dissociation of xMutS\u03b1 were monitored by surface plasmon resonance using BIACORE 3000 (GE Healthcare, Little Chalfont, UK). The KD of the xMutS\u03b1WT, xMutS\u03b1PIP and xMutS\u03b1\u0394N for the mismatched DNA were 2.2 nM, 4.4 nM and 3.6 nM, respectively (n = 2).\n\nIn yeast, the N-terminal region (NTR) of Msh6 not only carries a canonical PIP motif but also contains some cryptic PCNA binding sites (Shell et al., 2007). To examine whether the NTR of Msh6 is responsible for the weak retention of strand memory, we purified xMutS\u03b1 lacking the entire NTR of Msh6 (\u03941\u2013323; xMutS\u03b1\u0394N). As with xMutS\u03b1PIP, xMutS\u03b1\u0394N did not show significant defects in gap-directed MMR and in mismatch binding (Figure 8\u2014figure supplement 1), and was essentially deficient in PCNA retention (Figure 8C and D). Interestingly, the xMutS\u03b1\u0394N complex partially restored the strand memory reaction, with an estimated half-life of 12.3\u2009min, although it did not affect the kinetics of the sealing of the gap in the first NPE (Figure 9 and Table 2). We concluded that the retention of strand memory is mediated largely by the PIP motif in MutS\u03b1, and there is a partial strand memory retention that is independent of the NTR of Msh6.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig9-v1.jpg)\n\n**Figure 9.:** (A) Kinetics of the gap-filling reaction in MutS/MutL-depleted NPE containing 630 nM of xMutS\u03b1WT, xMutS\u03b1PIP, or xMutS\u03b1\u0394N. (B) The efficiencies of the gap-filling reaction were calculated from three independent experiments including the one shown in (A) and plotted onto a graph. Lines: one-phase decay fitting. See Table 2 for the fitting parameters. (C) Kinetics of MMR after supplying fresh NPE to the reaction described in (A). Addition of neither MutS-depleted nor MutL-depleted NPE alone, but both restored MMR in MutS/MutL-depleted NPE (lanes 2\u20134), showing both MutS\u03b1/\u03b2 and MutL\u03b1/\u03b2/\u03b3 were functionally depleted. (D) The efficiencies of MMR were calculated and presented as described in (B).\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig9-figsupp1-v1.jpg)\n\n**Figure 9\u2014figure supplement 1.:** NPE was depleted using a mixture of Msh2, Msh6, and Mlh1 antibodies (lanes 1\u20134), a mixture of Msh2 and Msh6 antibodies (lane 5) or Mlh1 antibodies (lane 6) and supplemented with either control buffer, 630 nM of xMutS\u03b1WT, xMutS\u03b1PIP, or xMutS\u03b1\u0394N. The depletion efficiencies were estimated to be >98% for both Msh2 and Mlh1.\n\n**Table 2.**\n Fitting parameters for the gap-derived strand memory experiment with MutS\u03b1 mutants\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\"></th>\n      <th colspan=\"3\">%gap\u00a0[95% Confidence Interval]</th>\n      <th colspan=\"3\">%A\u2192G repair [95% Confidence Interval]</th>\n    </tr>\n    <tr>\n      <th>t1/2 (min)</th>\n      <th>%gap at 0 min</th>\n      <th>R2</th>\n      <th>t1/2 (min)</th>\n      <th>%repair at 0 min</th>\n      <th>R2</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>+buffer</td>\n      <td>1.44 [0.51\u22120.73]</td>\n      <td>100 [95.2\u2212104.7]</td>\n      <td>0.99</td>\n      <td>2.94 [2.32\u22123.98]</td>\n      <td>75.7 [69.2\u221282.2]</td>\n      <td>0.97</td>\n    </tr>\n    <tr>\n      <td>+xMutS\u03b1WT</td>\n      <td>1.35 [0.58\u22120.81]</td>\n      <td>100 [95.1\u2212104.9]</td>\n      <td>0.99</td>\n      <td>25.5 [17.6\u221246.1]</td>\n      <td>84.8 [80.5\u221289.2]</td>\n      <td>0.98</td>\n    </tr>\n    <tr>\n      <td>+xMutS\u03b1PIP</td>\n      <td>1.48 [1.18\u22122.00]</td>\n      <td>100 [95.4\u2212104.6]</td>\n      <td>0.99</td>\n      <td>12.5 [10.9\u221214.7]</td>\n      <td>81.9 [78.5\u221285.4]</td>\n      <td>0.99</td>\n    </tr>\n    <tr>\n      <td>+xMutS\u03b1\u0394N</td>\n      <td>1.43 [1.14\u22121.93]</td>\n      <td>100 [95.6\u2212104.4]</td>\n      <td>0.99</td>\n      <td>12.3 [11.3\u221213.6]</td>\n      <td>81.9 [79.8\u221284.0]</td>\n      <td>1.00</td>\n    </tr>\n  </tbody>\n</table>\n\n_Parameters for the one-phase exponential decay fitting of the data described in Figure 9B and D are presented. %gap: percentage of remaining gaps (100 - %closed), t1/2: half-life, R2: coefficient of determination. n = 3._\n\n## Discussion\n\nIdentification of the newly synthesized DNA strand is vital to post-replicative mismatch repair. Since DNA replication generates identical copies of parental DNA, the strand discrimination reaction in MMR necessarily requires direct or indirect interplay with the replication complex (Wagner and Meselson, 1976). Because of the asymmetric nature of its binding to DNA, its critical roles in an early step of MMR and in the activation of MutL\u03b1, PCNA is presumed to be the mediator of the interplay between the replication complex and MMR (Umar et al., 1996; Chen et al., 1999; Pavlov et al., 2003; Dzantiev et al., 2004; Kadyrov et al., 2006; Pluciennik et al., 2010; Hombauer et al., 2011b; Pe\u00f1a-Diaz and Jiricny, 2012; Georgescu et al., 2015; Kunkel and Erie, 2015). In this study, we provided experimental evidence that DNA-loaded PCNA indeed directs strand-specific MMR in the absence of strand discontinuities. We further discovered that MutS\u03b1 inhibits PCNA unloading using its PIP motif on the N-terminus of Msh6, and that this reaction significantly extends the temporal window during which MMR is possible. Our results thus uncovered a novel mechanism in which interplay between PCNA and MutS\u03b1 maintains the post-replicative temporal window for MMR.\n\nNPE has been extensively used as a physiological model system that recapitulates various DNA repair reactions coupled with DNA synthesis (R\u00e4schle et al., 2008; Olivera Harris et al., 2015). As seen in other systems, we observed efficient bidirectional MMR in NPE (frequently >80% efficient). Curiously, we noticed some difference between NPE and other systems. Both in reconstitution systems and in human cell extracts, 5\u2019-nick directed MMR can occur in the absence of MutL\u03b1, whereas 3\u2019-nick directed MMR depends on MutL\u03b1 (Drummond et al., 1996; Genschel and Modrich, 2003; Dzantiev et al., 2004; Constantin et al., 2005; Bowen et al., 2013). In contrast, not only 3\u2019-gap directed but also 5\u2019-gap directed MMR was dependent on MutL complexes in NPE (Figure 1B\u2013E). Although this could possibly reflect difference in the 5\u2019 to 3\u2019 strand excision mechanism between species, we assume that the difference largely come from highly efficient DNA synthesis and ligation in NPE; quick sealing of a gap would necessitate MutL\u03b1-dependent incision for MMR even when a gap was placed on the 5\u2019-side of the mismatch. Interestingly, DNA synthesis at the 3\u2019-gap clearly precedes MMR (Figure 1F), indicating that strand degradation does not progressively occur from the 3\u2019-terminus of the gap. PCNA molecules loaded at the 3\u2019 terminus, perhaps more than one trimer, could be used by both MMR and DNA polymerases without significantly interfering with each other (see below). Consistently, a nick is suggested to function as a strand signal rather than an entry point for exonucleases in crude extracts of Xenopus eggs (Varlet et al., 1996).\n\nOur stepwise incubation experiments demonstrated that MMR is possible even after the complete sealing of the gap (Figure 2). Three lines of evidence indicate that the molecule responsible for memorizing strand information is PCNA. First, directional loading of PCNA efficiently bypassed the need for strand discontinuities in strand-specific MMR (Figure 3 and 4). Second, the amount of DNA-bound PCNA correlated with the MMR capability (Figure 6). Third, MutS\u03b1 maintained the MMR capability derived from a gap largely through the PIP motif (Figure 9). The fact that PCNA was essential for the gap-filling reaction in NPE also supports this conclusion, because at least one PCNA trimer must be involved in DNA synthesis at the gap. It is unlikely that RFC determines the strand specificity of MMR in our experiments, because amounts of RFC remained on DNA were insufficient to explain the efficiency of MMR. Based on the above evidence, we suggest that PCNA would function as the strand discrimination signal for MMR after the disappearance of local strand discontinuities during DNA replication. A series of seminal studies from the Modrich lab has led to the model in which DNA-bound PCNA activates the MutL\u03b1 nicking endonuclease to initiate strand specific MMR (Kadyrov et al., 2006; 2007; Pluciennik et al., 2010; 2013). Our data are consistent with this prevailing model, since 1) DNA-bound PCNA induced strand-specific MMR in NPE, and 2) PCNA-directed MMR in NPE was completely dependent on the MutL complexes. As gap-directed MMR in NPE was bidirectional and preferentially degrades the DNA strand through the shortest path from the gap to the mismatch, we assume that the PCNA-directed MMR would function in the same manner. If so, the strand excision complex presumably built upon a specific face of PCNA would catalyze strand degradation in either direction depending on the relative orientation toward a mismatch. How this can be achieved is an important next question, and the system established here will be a useful tool to investigate this mechanism. However, since our plasmid substrates carry multiple PCNA molecules with free sliding ability, we currently do not exclude a possibility that PCNA-directed MMR catalyzes only a specific direction of strand excision, and PCNA molecules localized on a specific side toward a mismatch are preferentially used for MMR.\n\nUnexpectedly, the 'strand memory' experiments revealed that MutS\u03b1/\u03b2 significantly extend the duration of strand memory. Our data clearly indicate that this retention involves inhibition of PCNA unloading. A recent study showed that DNA polymerase \u03b4 captures DNA-bound PCNA which is otherwise quickly unloaded by the clamp-unloading activity of RFC (Hedglin et al., 2013). It would be possible that MutS\u03b1 inhibits PCNA unloading in a similar manner; binding of the PIP motif onto PCNA may physically prevent the engagement of PCNA with RFC. Since in vivo\u00a0PCNA unloading during S-phase largely depends on the Elg1-containing RFC-like complex (Elg1-RLC) both in humans and in yeast (Kubota et al., 2013; Lee et al., 2013; Shiomi and Nishitani, 2013; Kubota et al., 2015), the PIP-motif in MutS\u03b1 may also limit the access of Elg1-RLC to DNA-bound PCNA. Detailed understanding of the molecular mechanism of this inhibition of PCNA unloading must await reconstitution of this reaction in vitro.\n\nInterestingly, the PIP motif and the mispair-binding domain are connected by a long (~300 a.a.) linker that is predicted to be disordered in yeast (Shell et al., 2007). Although a significant portion of this linker in human MutS\u03b1 seems to adopt a globular conformation (Iyer et al., 2008), MutS\u03b1 might be able to retain PCNA that is located far from MutS\u03b1 using this long 'PIP-arm', possibly even over nucleosomes. In this scenario, strand removal would initiate when MutL\u03b1 reaches to PCNA that is retained by the PIP-arm of MutS\u03b1. This could be accomplished either by sliding of MutS\u03b1-MutL\u03b1 complexes along the DNA contour, or through loading of multiple MutL\u03b1 molecules on DNA (Hombauer et al., 2011a; Qiu et al., 2015). Interaction between PCNA that is retained by MutS\u03b1 and MutL\u03b1 may invoke a specific strand degradation pathway, because a recent study in yeast has suggested that recruitment or retention of PCNA by MutS\u03b1 around mismatches activates a specific strand removal pathway that is independent of Exo1 (Goellner et al., 2014). As seen for MutS\u03b1, we predict that MutS\u03b2 may inhibit PCNA unloading as well, since the NTR of yeast Msh6 and Msh3 are inter-exchangeable without significant deleterious effects (Shell et al., 2007). However, because NTRs of MutS\u03b1 and MutS\u03b2 likely\u00a0possess different characteristics such as the PWWP domain found only in vertebrate Msh6 (Clark et al., 2007; Laguri et al., 2008;\u00a0Iyer et al., 2010; Li et al., 2013), this point will need rigorous investigation.\n\nTo our surprise, xMutS\u03b1PIP and xMutS\u03b1\u0394N retained partial strand memory. A possibility would be that, although our PCNA unloading experiment failed to detect attenuation of PCNA unloading with these mutants (Figure 8D), they might have the ability to maintain DNA-bound PCNA that is below our detection limit. Considering the fact that we quantified PCNA after several washing steps, our quantification almost certainly underestimated the number of PCNA molecules on DNA. Alternatively, PCNA and/or a gap could induce structural alteration of MutS\u03b1 (and possibly other chromatin binding factors), to maintain the strand information. How MutS\u03b1 retains strand memory independently of the NTR will be an interesting question for future studies.\n\nFrom the data presented in this work, we propose a model wherein two different modes of strand memory contribute to MMR (Figure 10). After the completion of local DNA synthesis, e.g. after ligation of Okazaki fragments, PCNA remains on DNA for a certain period until unloaded by an Rfc3-containing complex(es) (t1/2 = ~2\u2009min in NPE; Figure 10, [2]). The MMR system utilizes such PCNA as strand memory. However, if PCNA is not available closely adjacent to mismatches, MutS\u03b1 (and possibly MutS\u03b2 also) retains available PCNA with its long 'PIP-arm', to maintain strand memory for subsequent MMR (Figure 10, [3]). This mode of memory survives for >30\u2009min in NPE, and perhaps even longer in cells. In addition to the PIP-dependent tethering of MutS\u03b1/\u03b2 to the replication fork (Kleczkowska et al., 2001; Hombauer et al., 2011a; Haye and Gammie, 2015), we suggest that the PIP motif would contribute to the replication fidelity through this mode of strand memory. Yeast studies have shown that the PIP motif has an assistive but not essential role in MMR (Clark et al., 2000; Flores-Rozas et al., 2000). The PIP-deficient MutS\u03b1 complexes were proficient in repairing a mismatch in our in vitro\u00a0MMR system (Figure 8\u2014figure supplement 1), and similar observations were already reported both in human cell extracts and in\u00a0a yeast in vitro reconstitution system (Kleczkowska et al., 2001; Iyer et al., 2008; Bowen et al., 2013). Therefore, a simple MMR reaction involving a mismatch and a closely-placed strand-discrimination signal, either PCNA or a strand discontinuity, would not require retention of PCNA by MutS\u03b1. However, when a stepwise incubation, which mimics transient arrest of the MMR reaction, was involved, the PIP motif became important for MMR (Figure 9). We speculate that inhibition of PCNA unloading is needed for MMR only under specific situations, e.g. when a strand-discrimination signal is buried within chromatin. In such difficult-to-repair situations, successful MMR may rely on the maintenance of the strand signals by MutS\u03b1. Since the leading strand seems to have less PCNA than the lagging strand (Yu et al., 2014), such situations could happen more frequently in the leading strand, in which MMR is less efficient than in the lagging strand (Pavlov et al., 2003;\u00a0Lujan et al., 2014). An interesting possibility worth testing in the future would be that MutS\u03b1 may take over PCNA from other factors such as DNA polymerases. Hijacking PCNA from polymerases may not be overly deleterious to DNA synthesis, because new PCNA loading at the 3\u2019-terminus would quickly restore the PCNA-polymerase complex. Similar hijacking might occur on other PCNA interactors such as CAF-1 and FEN-1, both of which are reported to show complex interplay with MutS\u03b1 (Kadyrova et al., 2011; Sch\u00f6pf et al., 2012; Kadyrova et al., 2015; Liu et al., 2015). On the leading strand that has less PCNA, such competition could be important for effective MMR.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/15155/elife-15155-fig10-v1.jpg)\n\n**Figure 10.:** Three mechanisms, including two 'strand-memory' mechanisms, may ensure eukaryotic MMR. (1) During ongoing DNA synthesis, strand discontinuities or polymerase-associated PCNA are directly used for strand discrimination. (2) After sealing of local strand discontinuities, PCNA that remains on DNA provides strand information until they are unloaded (t1/2 = ~2 min in NPE; 'short-term' strand memory). (3) MutS\u03b1 inhibits PCNA unloading to maintain the strand discrimination capability, largely through the PIP-motif on the NTR of Msh6 (t1/2 = >30 min in NPE; 'long-term' strand memory). Black and blue lines represent the template and the\u00a0newly synthesized DNA strands, respectively.\n\nMuch of our understanding of MMR has come from bacterial studies including E. coli, whose MMR utilizes adenine methylation as the strand discrimination signal. Although E. coli MMR seems to function with strand discontinuities occurring at the replication fork, GATC methylation plays a critical role in maintaining the temporal window permissive to MMR. Strand discontinuities are clearly strand discrimination signals in eukaryotic MMR in vitro\u00a0(Holmes et al., 1990; Thomas et al., 1991). There is also concrete evidence that single-strand DNA termini such as 5\u2019-ends of the Okazaki fragments or strand breaks generated by ribonucleotide excision repair contribute to MMR in vivo(Pavlov et al., 2003; Nick McElhinny et al., 2010; Ghodgaonkar et al., 2013; Liberti et al., 2013; Lujan et al., 2013; 2014; Liu et al., 2015). We suggest that, in addition to such DNA termini, two modes of strand memory, somewhat resembling short-term and long-term memories in neuroscience, would operate as functional parallels of GATC methylation in E. coli. Analogous reactions could operate in bacteria and archaea lacking the methyl-dependent MMR (Pillon et al., 2015), and it would be interesting to study dynamics of the replication clamp in such organisms. Further investigation of the regulation of PCNA dynamics by MMR both in NPE and in vivo will lead to a more detailed understanding of complex interplay between the MMR system and the replication complex.\n\n## Materials and methods\n\n### Preparation of the MMR substrates\n\nIn vitro\u00a0synthesis of mismatch-carrying plasmids was performed essentially as described previously (Higashi et al., 2012). A 5\u2019-phosphorylated oligonucleotide (5\u2019-CAGTAACATGGATCXCGAGATGCAGTACGGTCACC-3\u2019; for homo-duplex, X=T, and for A:C mismatch, X=C) was annealed to single-stranded\u00a0DNA prepared by using the M13KO7 phage. To introduce a site-specific biotin modification, an additional oligonucleotide carrying a site-specific biotin-dT modification (5\u2019-CGCCTTGATCGT[Biotin-dT]GGGAACCGGAGCTGAATGAAGC-3\u2019) was also added. Second-strand DNA synthesis was performed by using T7 DNA polymerase (New England Biolabs, MA, USA) and T4 DNA ligase (Nippongene, Tokyo, Japan). The mismatch-carrying DNA was treated with XhoI (Takara Bio, Kusatsu, Japan) to digest DNA whose mismatch base was edited by T7 DNA polymerase. The covalently closed products were purified with the Cesium Chloride density gradient ultracentrifugation. A site-specific gap was introduced as follows. In vitro synthesized pMM1 was doubly nicked with Nt.BbvCI (for A-strand gap) or Nb.BbvCI (for C-strand gap) at 37\u00b0C for 1\u2009hr, purified, and incubated at 70\u00b0C for 20\u2009min to dissociate the 15-nt fragment flanked by two BbvCI sites from parental DNA. The DNA was then immediately loaded on a Microspin S-400HR Column (GE Healthcare, Little Chalfont, UK) to remove the 15-nt fragment. A site-specific nick was introduced by treating in vitro\u00a0synthesized pMM2 with Nt.BbvCI (for A-strand nick) or Nb.BbvCI (for C-strand nick) at 37\u00b0C for 1\u2009hr. Singly biotinylated plasmid DNA was bound to Sepharose beads as described previously (Higashi et al., 2012). All restriction enzymes were purchased from New England Biolabs\u00a0unless otherwise indicated.\n\n### In vitro PCNA-loading assay\n\nImmobilized DNA (100 ng bound to 1\u2009\u03bcl of Streptavidin-biotin-Sepharose beads) was incubated in 2 vol of mHBS (10\u2009mM Hepes-NaOH pH 7.5, 0.05% Tween-20, 10\u2009mM MgCl2, 200\u2009\u03bcM EDTA, 150\u2009mM NaCl), containing 50\u2009mM phosphocreatine, 25\u2009\u03bcg/ml creatine phosphokinase, 2\u2009mM ATP, 400\u2009\u03bcM DTT, 145 ng/\u03bcl hPCNA, and 2.2 ng/\u03bcl hRFC at 32\u00b0C for 10\u2009min. All reagents were purchased from Sigma Aldrich (MO, USA) unless\u00a0otherwise indicated. The hPCNA-DNA complexes were then washed thrice with mHBS. 1 vol of the DNA beads was then incubated in 4 vol of ligation buffer (66\u2009mM Tris-HCl pH 7.4, 6.6\u2009mM MgCl2, 10\u2009mM DTT, 1\u2009mM ATP) containing 25 units/\u03bcl T4 DNA Ligase at 16\u00b0C for 90\u2009min. This was followed by washing thrice with mHBS, once with Egg lysis buffer (ELB; 10\u2009mM Hepes-KOH pH 7.7, 2.5\u2009mM MgCl2, 50\u2009mM KCl) containing 1\u2009M KCl, and then once with ELB. To linearize DNA after PCNA loading, the hPCNA-DNA complexes were treated with either control buffer or buffer containing XmnI and washed thrice with mHBS. To recover DNA from NPE, the hPCNA-DNA complexes were washed once with ELB containing 0.2% Triton X-100 and once with ELB.\n\n### MMR and gap-filling assays in NPE\n\nNPE was supplemented with 2\u2009mM adenosine-triphosphate (ATP), 20\u2009mM phosphocreatine, and 5\u2009\u03bcg/ml creatine phosphokinase, pre-incubated at 22\u00b0C for 5\u2009min, followed by addition of DNA substrates (20 ng/\u03bcl). A typical MMR reaction consists of 17.4\u2009\u03bcl of NPE, 0.2\u2009\u03bcl of 200\u2009mM ATP, 0.4\u2009\u03bcl of 1\u00a0M phosphocreatine, 0.02\u2009\u03bcl of 5 mg/ml creatine phosphokinase, and 2\u2009\u03bcl of DNA substrate (200 ng/\u03bcl in 10\u2009mM Tris-HCl pH 7.4, 1\u2009mM EDTA). To monitor DNA synthesis, reaction mixtures were supplemented with 2 \u03bcCi of \u03b1-[32P]-dCTP (PerkinElmer Japan, Tokyo, Japan) before addition of the MMR substrates. For the stepwise incubation experiments, an equal volume of fresh NPE was added to the reaction mixture. The samples were incubated at 22\u00b0C, and aliquots of samples (1.5 ~ 3\u2009\u03bcl for most experiments) were stopped by addition of 100\u2009\u03bcl of 1% SDS in 20\u2009mM EDTA. DNA was purified by treatment with 50\u2009\u03bcg/ml Proteinase K, extracted with Phenol/Chloroform, precipitated with ethanol, and dissolved in 10\u2009mM Tris-HCl pH 7.4, 1\u2009mM EDTA containing 10\u2009\u03bcg/ml RNase at 2.5 ng/\u03bcl. To analyze the MMR efficiency (%repair), DNA synthesis (%Gap-filling synthesis) and the incorporation of radioactivity during MMR, 12 ng each of DNA was digested with following restriction enzymes: XmnI, BamHI-HF, XhoI, PacI or DrdI. After agarose gel electrophoresis, DNA was stained with SYBR Gold nucleic acid stain (Life technologies, CA, USA), and scanned with Typhoon FLA9000 (GE Healthcare). Signal intensities were quantified using ImageQuant TL software (GE Healthcare). To analyze the gap-filling efficiency (%closed), ethidium bromide containing agarose gel electrophoresis was performed to separate covalently closed DNA from gap/nick-carrying open-form DNA. The gel was stained with SYBR Gold nucleic acid stain, and then scanned by Typhoon FLA9000 using SYBR Gold specific setting (473 nm excitation laser and 510 nm Long pass filter). Calculation of %closed DNA is described in Figure 1\u2014figure supplement 5. To moniter DNA synthesis, DNA was separated by agarose gel, stained with SYBR Gold, photographed, vacuum-dried on filter paper, contacted on a phosphor imaging plate (Fujifilm, Tokyo, Japan), and the 32P signals were scanned by Typhoon FLA9000. All agarose gel electrophoresis was performed with 0.8% agarose gel and 0.5\u00d7 Tris-borate-EDTA buffer.\n\n### Quantification of DNA-bound hPCNA and hRFC\n\nDNA samples were linearized by XmnI and separated using agarose gel electrophoresis, and quantified using known amounts of linear DNA as standards. Proteins recovered with the DNA-beads were separated by SDS-PAGE alongside with recombinant protein standards and probed with either hPCNA or hRfc2 antibodies. The number of hPCNA and hRFC on each plasmid (bound PCNA [RFC] / plasmid) were calculated by dividing the protein amounts from quantitative immunoblotting by bead-bound plasmid amounts calculated from linearized DNA. If 10 ng (5.2 \u00d7 10\u201315\u2009mol) DNA is loaded, 1 ng hPCNA (Mr = 8.61 \u00d7 104 as a trimer, 1.2 \u00d7 10\u201314\u2009mol) and hRFC (Mr = 2.87 \u00d7 105 as a complex, 3.5 \u00d7 10\u201315\u2009mol) correspond to binding of approximately 2.3 and 0.7 molecules per plasmid, respectively.\n\n### Xenopus egg extracts\n\nPreparation of HSS and NPE was carried out as described previously (Walter et al., 1998; Lebofsky et al., 2009). In all experiments, plasmid DNA was incubated at 20 ng/\u03bcl concentration.\n\n### Cloning and plasmids\n\nThe human Proliferating Cell Nuclear Antigen (PCNA) gene was amplified from pT7-PCNA (Fukuda et al., 1995) by PCR using primers 5\u2019-GGAACATATGTTCGAGGCGCGCCTGGTCC-3\u2019 and\u00a05\u2019-GGAAGGATCCCTAAGATCCTTCTTCATCCTCG-3\u2019, digested with NdeI and BamHI, and cloned into pET21a (Merck Millipore, MA, USA), resulting in pET21a-hPCNA. The Xenopus laevis pcna gene was amplified from a Xenopus egg cDNA library (a kind gift from Vladimir Joukov) by PCR using primers 5\u2019-GGAACATATGTTTGAGGCTCGCTTGGTGC-3\u2019 and\u00a05\u2019-GGAAGGATCCTTAAGAAGCTTCTTCATCTTCAATCTTGG-3\u2019, digested with NdeI and BamHI, and cloned into pET21a, resulting in pET21a-xPCNA. The Xenopus laevis msh2 gene was amplified from the Xenopus egg cDNA library by two-step PCR using primers 5\u2019-AAAGCAGGCTCCACCATGGCTGTGCAGCCCAAAGAGAAGTTG-3\u2019 and 5\u2019-ACAAGAAAGCTGGGTCTCCTGCAGGCAATCCCGTTTTGGTTCTGG-3\u2019, and then primers 5\u2019-GGGGACAAGTTTGTACAAAAAAGCAGGCTCCAC-3\u2019 and 5\u2019-GGGGACCACTTTGTACAAGAAAGCTGGGTC-3\u2019, and cloned into pDONR201 (Life technologies) using the Gateway BP reaction, resulting in pDONR-xMSH2. Cloning of Xenopus laevis msh6 gene was performed as follows. A BLAST search using the human Msh6 protein sequence identified a Xenopus laevis EST clone, TC357542. Based on this sequence, the full-length msh6 cDNA was amplified from Xenopus egg cDNA by two-step PCR using primers 5\u2019-AAAGCAGGCTCCACTCATATGTCTAAGCAAAAAACCCTCTTCAGCTTCTTCACC-3\u2019 and 5\u2019-ACAAGAAAGCTGGGTTGGTACCTTGGAGCAACTTCAGCCGCTTGTGG-3\u2019, and then primers 5\u2019-GGGGACAAGTTTGTACAAAAAAGCAGGCTCCAC-3\u2019 and 5\u2019-GGGGACCACTTTGTACAAGAAAGCTGGGTC-3\u2019, and cloned into pDONR201 using the Gateway BP reaction, resulting in pDONR-xMSH6. A FLAG tag was added to the C-terminus of xMsh6 by two-step PCR using primers 5\u2019-AAACATATGTCTAAGCAAAAAACCCTCTTCAGC-3\u2019 and 5\u2019-GTCGTCCTTGTAGTCGGTACCGCCTTGGAGCAACTTCAGCCGC-3\u2019, and then primers 5\u2019-AAACATATGTCTAAGCAAAAAACCCTCTTCAGC-3\u2019 and 5\u2019-GGAACCTGCAGGTTACTTGTCATCGTCGTCCTTGTAGTCGG-3\u2019, digested with NdeI and Sse8387I, and cloned into pDE1a, a derivative of the pDONR201 vector, resulting in pDE1a-xMSH6-FLAG. The xMsh6 PCNA-interacting peptide (PIP) motif mutant (xMsh6PIP) was constructed by two-step PCR using pDE1a-xMSH6-FLAG as the template and primers 5\u2019-AAAACCCTCTTCAGCGCGGCGACCAAGTCTCCCCCTGTTTCC-3\u2019 and 5\u2019-CCGTCCCCTCCTTGACTGTACTG-3\u2019, and then primers 5\u2019-AAACATATGTCTAAGGCGAAAACCCTCTTCAGC-3\u2019 and 5\u2019-CCGTCCCCTCCTTGACTGTACTG-3\u2019, digested with NdeI and XhoI, and cloned into pDE1a-xMSH6-FLAG, resulting in pDE1a-xMSH6PIP-FLAG. The xMsh6\u2009N-terminal deletion mutant (xMsh6\u0394N) was constructed by PCR using pDE1a-xMSH6-FLAG as the template and primers 5\u2019-GGAACATATGTCTGCCCCTGAGTCATTTGAATCACAGGC-3\u2019 and 5\u2019-CCATGCGCCGACTTGTCTTGGC-3\u2019, digested with NdeI and XmnI, and cloned into pDE1a-xMSH6-FLAG, resulting in pDE1a-xMSH6\u0394N-FLAG. The Xenopus laevis mlh1 gene was amplified from Xenopus egg cDNA by PCR using primers 5\u2019-AAAGCAGGCTCCACCATGGCGGGAGTTATTCGGCGGCTGG-3\u2019 and 5\u2019-ACAAGAAAGCTGGGTCTCCTGCAGGGCACCTTTCAAACACTTTATATAAGTCGGG-3\u2019, then primers 5\u2019-GGGGACAAGTTTGTACAAAAAAGCAGGCTCCAC-3\u2019 and 5\u2019-GGGGACCACTTTGTACAAGAAAGCTGGGTC-3\u2019, and cloned into pDONR201 using the Gateway BP reaction, resulting in pDONR-xMLH1. All sequences were confirmed after each PCR step.\n\nBaculoviruses for expression of xMsh2, xMsh6WT-FLAG, xMsh6PIP-FLAG and xMsh6\u0394N-FLAG were constructed by transferring xMSH2, xMSH6-FLAG, xMSH6PIP-FLAG and xMSH6\u0394N-FLAG genes into BaculoDirect C-term Linear DNA (Life technologies) using the Gateway LR reaction.\n\nConstruction of pMM0, pMM1 and pMM2 was performed as follows: A synthetic linker prepared by annealing of 5\u2019-phosphorylated oligonucleotides 5\u2019-GAATTCAAGCTTAGTCTGTTCCATGTCATGCAAGATATCTTCAGTC-3\u2019,\u00a05\u2019-ACTGGGTGACCGTACTGCATCTCGAGATCCATGTTACTGCGTCAGT-3\u2019,\u00a05\u2019-CGCTAACAGTCACGAACTGCTGCAGGAATTCGTAC-3\u2019,\n\n5\u2019-GAATTCCTGCAGCAGTTCGTGACTGTTAGCGACTGACGCAGTAACA-3\u2019, 5\u2019-TGGATCTCGAGATGCAGTACGGTCACCCAGTGACTGAAGATATCTT-3\u2019, and 5\u2019-GCATGACATGGAACAGACTAAGCTTGAATTCAGCT-3\u2019, was inserted between the KpnI and SacI sites in pBluescriptII KS(-) (Stratagene, CA, USA), resulting in pMM0. A synthetic linker carrying two BbvCI sites prepared by the annealing of 5\u2019-phosphorylated oligonucleotides 5\u2019-GCTCCTCAGCTTAATTAACCTCAGC-3\u2019 and\u00a05\u2019-AGCGCTGAGGTTAATTAAGCTGAGG-3\u2019 was inserted into the BspQI site in pMM0, resulting in pMM1. A synthetic linker carrying one BbvCI site prepared by annealing of 5\u2019-phosphorylated oligonucleotides 5\u2019-GCTCCTCAGCATATGCCTCGC-3\u2019 and\u00a05\u2019-AGCGCGAGGCATATGCTGAGG-3\u2019 was inserted into the BspQI site in pMM0, resulting in pMM2.\n\n### Protein expression and purification\n\nPurification of hPCNA was carried out essentially as described previously (Fukuda et al., 1995), with minor modifications. Protein expression was induced in the Escherichia coli BL21(DE3) strain transformed with pET21a-hPCNA by addition of 0.1\u2009mM Isopropyl \u03b2-D-1-thiogalactopyranoside (IPTG) to media for 20\u2009hr at 20\u00b0C. hPCNA was purified using DEAE Sepharose Fast Flow, HiTrap Q-HP, Hi Load 16/60 Superdex 200 prep grade, and then MonoQ 5/50 GL (GE Healthcare) in this order. Recombinant xPCNA was expressed and purified using essentially the same method as hPCNA. Purification of the hRfc1-5 complex has been described previously (Ohta et al., 2002; Shiomi et al., 2004).\n\nPurification of xMutS\u03b1 was performed as follows: Recombinant proteins were expressed by co-infecting Sf9 insect cells with xMsh2 and xMsh6WT-FLAG, xMsh6PIP-FLAG or xMsh6\u0394N-FLAG baculoviruses at 28\u00b0C in Sf-900 II SFM medium (Life Technologies) supplemented with 2% (v/v) fetal bovine serum (FBS). Cells were harvested, washed with Phosphate Buffered Saline (PBS) and frozen in liquid nitrogen. Cells were suspended in buffer S (25\u2009mM Tris-HCl pH 7.4, 250\u2009mM NaCl, 5\u2009mM 2-mercaptoethanol, 1\u2009mM EDTA, 2\u2009mM phenylmethylsulfonyl fluoride [PMSF], 1\u2009mM benzamidine and 1x cOmplete, EDTA-free [Roche life science, Penzberg, Germany]), and the lysates were centrifuged at 81,800 \u00d7g (30,000 rpm) for 30\u2009min in a Beckman 50.2Ti rotor (Beckman Coulter, CA, USA). Cleared lysates were passed through a DEAE Sepharose Fast Flow column, and then a FLAG-M2 agarose column (Sigma Aldrich). The xMsh2-xMsh6-FLAG complexes were eluted from the FLAG-M2 resin using 50\u2009\u03bcg/ml FLAG-peptide (Sigma Aldrich) in buffer S. The peak fractions were pooled and three-fold diluted with buffer A (25\u2009mM Tris-HCl pH 7.4, 5% glycerol, 5\u2009mM 2-mercaptoethanol, 1\u2009mM EDTA and 0.1x cOmplete, EDTA-free), loaded on a MonoQ 5/50 GL column, and bound proteins were eluted with a 0\u20131\u2009M NaCl linear gradient in buffer A. Peak fractions were loaded on a Hi Load 16/60 Superdex 200 prep grade column and eluted with buffer A containing 0.1\u2009M NaCl. Fractions whose molecular weight correspond to ~2.5 \u00d7 105 (xMsh2: Mr = 1.04 \u00d7 105, xMsh6-FLAG: Mr = 1.50 \u00d7 105) were pooled, concentrated using Amicon Ultra (Merck Millipore), and frozen with liquid nitrogen as small aliquots.\n\n### Immunological methods\n\nRabbit xMsh2 antiserum was raised against N-terminally His-tagged and C-terminally Strep-II-tagged full-length Xenopus Msh2 expressed in E. coli. Rabbit xMsh6 antiserum was raised against peptide NH2-CNGSPEGLALHKRLKLLQ-COOH, corresponding to residues 1324\u20131340 of Xenopus Msh6. Rabbit xMlh1 antiserum was raised against N-terminally His-tagged, full-length Xenopus Mlh1 expressed in E. coli. Rabbit xPCNA antiserum was raised against full-length Xenopus PCNA expressed in E. coli. Rabbit xRfc3 antiserum was raised against peptide NH2-CKKFMEDGLEAMMF-COOH, corresponding to residues 344\u2013356 of Xenopus Rfc3. All antibodies except for xMlh1 and xPCNA were affinity purified using corresponding antigens. Rabbit xOrc2 antiserum was a kind gift from Johannes Walter (Vashee et al., 2003). hPCNA antibodies (MBL International Corporation, Nagoya, Japan, #MH-12-3) and hRfc2 antibodies (Abcam, Cambridge, UK, #ab3615) are commercially available. For immunoblotting, xMsh2, xMsh6, xMlh1, xOrc2, xPCNA and xRfc3 antibodies were used at 1:10,000 dilutions, hPCNA antibodies were used at a 1:2000 dilution, and hRfc2 antibodies was used at a 1:4000 dilution. HRP-conjugated Goat Rabbit IgG (H+L) antibodies (Jackson ImmunoResearch, PA, USA, #111-035-003), Goat Mouse IgG (H+L) antibodies (#115-035-146) or Donkey Goat IgG (H+L) antibodies (#705-035-003) were used at a 1:10,000 dilution as the secondary antibody for all immunoblottings except for quantitative immunoblottings for hPCNA, for\u00a0which the same antibodies conjugated with Alexa Fluor 647\u00a0was used. To evaluate the depletion efficiency, 0.125\u2009\u03bcl of NPE was loaded on SDS-PAGE, unless otherwise indicated.\n\nFor xMsh2/xMsh6 double depletion from NPE, 2\u2009\u03bcg of Msh2 IgG, 0.5\u2009\u03bcg of Msh6 IgG, and 2.9\u2009\u03bcl of Msh6 serum were bound to 1\u2009\u03bcl of the recombinant protein A-Sepharose ('PAS', GE Healthcare). For xMlh1 depletion, 3 vol of xMlh1 serum was bound to 1 vol of PAS. For xMsh2/xMsh6 and xMlh1 triple depletion, 2\u2009\u03bcl of PAS bound 4\u2009\u03bcg of Msh2 IgG, 1\u2009\u03bcg of Msh6 IgG, and 5.8\u2009\u03bcl of Msh6 serum was combined with 1\u2009\u03bcl of PAS bound 3\u2009\u03bcl of xMlh1 serum. For xRfc3 depletion from NPE, 5\u2009\u03bcg of xRfc3 IgG was bound to 1\u2009\u03bcl of PAS. To deplete NPE except for the depletion of xMsh2/xMsh6 and xMlh1 triple depletion, 0.2 vol of antibody-coupled PAS beads were incubated in 1 vol of extracts at 4\u00b0C for 1\u2009hr, and the procedure was repeated once in all depletion experiments except for the depletion of xMsh2/xMsh6 or xRfc3 from NPE, for which the procedure was repeated twice. For xMsh2/xMsh6 and xMlh1 triple depletion from NPE, 0.3 vol of antibody-coupled PAS beads were incubated in 1 vol of extracts at 4\u00b0C for 1\u2009hr, and the procedure was repeated twice. For xPCNA depletion from HSS, 3 vol of xPCNA serum was bound to 1 vol of PAS. A total of 0.2 vol of antibody-coupled PAS beads was incubated in 1 vol of HSS at 4\u00b0C for 1\u2009hr, and the procedure was repeated thrice. In most cases, we depleted 40 ~ 60\u2009\u03bcl of extracts for an experiment.\n\n### Surface plasmon resonance\n\nAffinity of the xMutS\u03b1 complexes to DNA was analyzed using BIACORE 3000 (GE Healthcare) (Lee and Alani, 2006; Shell et al., 2007). A 42\u00a0bp biotin-conjugated oligo DNA 5\u2019-GGGTGACCGTACTGCATCTCGAGATCCATGTTACTGCGTCAG-3\u2019-[Biotin] was coupled to a Sensor Chip SA (GE Healthcare) until the SPR signal reached to ~100 response units. The sequence around the mismatch on pMM1AC was used to design the DNA substrate. A complementary oligonucleotide carrying a mismatch base 5\u2019-CTGACGCAGTAACATGGATCCCGAGATGCAGTACGGTCACCC-3\u2019 was then flowed in on the Sensor tip to obtain double stranded DNA substrates carrying an A:C mismatch. Various concentrations of xMutS\u03b1WT, xMutS\u03b1PIP and xMutS\u03b1\u0394N complexes were flowed over the sensor chip for 3\u2009min at 20\u2009\u03bcl/min in running buffer (20\u2009mM Hepes-NaOH pH 7.5, 100\u2009mM NaCl, 1\u2009mM DTT and 0.005% Tween-20) to analyze the association step, followed by running buffer containing no protein to monitor the dissociation step for 3\u2009min. The signal from an empty flow cell was used for reference subtraction for all experiments. The chip surface was regenerated with 3\u2009M NaCl for 1\u2009min. Dissociation constants (KD) were calculated using the BIAevaluation software v4.1.\n\n### Accession numbers\n\nThe GenBank accession numbers for sequences of Xenopus msh2, msh6 and mlh1 mRNA reported in this paper are LC075519, LC075520, and LC075521, respectively.\n",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "feeea3bc-2bd4-4ed7-a245-080ed8fa3713",
+      "submission_id": "405b2ee2-8c60-4cd5-a29d-fdba80ac991f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Johannes Walter, Harvard Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.15155.031](https://doi.org/10.7554/eLife.15155.031)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"MutS\u03b1 maintains the mismatch repair capability by inhibiting PCNA unloading\" for consideration by eLife. Your article has been favorably evaluated by John Kuriyan (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe manuscript describes a series of experiments that analyze the strand-directed mismatch repair reaction in Xenopus egg extracts. This is an interesting and important work that advances our understanding of eukaryotic mismatch repair. However, the following important technical and conceptual issues need to be satisfactorily addressed before the paper can be considered for publication.\n\nMajor issues:\n\n1) PIP-deficient MutS protein is proficient in MMR. Based on the authors' assumption, MutS\u03b1 without the PIP box-containing N-termini should be defective in capturing strand discrimination signal from PCNA. Unfortunately, the mutant MutS\u03b1 is as active as WT MutS\u03b1 in repair of heteroduplexes bound by PCNA.\n\n2) PCNA polarity and nick-mismatch orientation. Previous studies using a circular heteroduplex have established that regardless of nick orientation (i.e., 5' or 3') to the mismatch, MMR always occurs along the shorter distance between these two sites. If MutS protein interacts with PCNA through the front face of PCNA, MutS\u03b1 and other MMR proteins recruited by MutS\u03b1 to A-gap and C-gap substrates should be lined up in different polarities/orientations, which would suggest that repair in one substrate occurs along the shorter spin and the other in longer spin. These assumptions are not consistent with what is known.\n\n3) Interaction between PCNA and MutS\u03b1. Although MutS protein has been shown to be able to slide along the DNA, increasing evidence (both in vivo and in vitro) suggests that MutS protein does not travel once it binds to a mismatch. The authors suggest that the stand signal carried by PCNA is transmitted to MutS\u03b1 when the latter interacts with PCNA through its PIP box. Given that the mismatch is ~300 bp away from the gap site, where PCNA is located, it is impossible for MutS protein to reach PCNA. How could this interaction occur?\n\n4) The authors showed that the presence of PCNA in closed circular heteroduplex is essential for strand-specific repair, and that the DNA bound PCNA could be unloaded within ~5 min. What is the mechanism by which PCNA is released from a closed circular DNA molecule?\n\nOther specific issues:\n\n1) The deletion of the PIP motif of MSH6, which the authors have identified as a major determinant involved in the inhibition of PCNA unloading by MutSalpha, decreased the in vivo mismatch repair activity of yeast MutSalpha in MSH3-deficient cells by ~5-20% (Table 1 in Clark et al. (2000) JBC, 275, 36498). Thus, it appears that the inhibition of PCNA unloading by MutSalpha is not essential for MMR. Some discussion of this fact would be helpful.\n\n2) In the Abstract, the authors state that \"Our data identify PCNA as the signal that enables strand discrimination after the completion of DNA synthesis\u2026\". I think they should write something like \"Our data identify loaded PCNA as the signal that enables strand discrimination after the strand discontinuity is removed\u2026\".\n\n3) The description of the MMR and gap-filling assays and immunological methods in Materials and methods and figure legends is too vague and lacks many critical experimental details including the final volumes and ionic strength of the reaction mixtures and the amounts of the extracts present in the reaction mixtures. The lack of this information complicates understanding the results. Please provide the relevant information.\n\n4) It is not clear why the authors do not see the nick-directed MMR in the NPE. In fact, the data shown in panel B of Figure 4\u2014figure supplement 1 suggest that MMR is directed, though not very efficiently, to the covalently closed strand. This is somewhat confusing. Did the authors study whether the rates of ligation of the nicked and gapped DNA substrates differ from each other? Some experimental data would be helpful to explain the failure to see the nick-directed MMR.\n\n5) Figure 3C: it appears that the fractions of the nicked form in the ligated DNA samples analyzed in lanes 1-4 of C panel are significantly higher than those in panel B (lanes 5-8). It appears that at least 35% of DNA in lane 4 of panel C is nicked. Please provide the percentages of the closed form present in the samples analyzed in the panel C lanes. Also indicate the percentage of the closed form for each of the substrates used in the reactions in D.\n\n6) Inspection of the repair data in panel B of Figure 4\u2014figure supplement 1 suggests that in several cases the band intensities do not correspond well to the indicated repair values. Please provide the averages and S.D. for the experiments in this panel.\n\nIn some control reactions (panel B of Figure 4\u2014figure supplement 1) the level of C-to-T repair on the continuous strand is about 25% and about 50% higher than that on the nicked strand. How do the authors explain this result? Is this the strand that was synthesized in vitro?\n\n7) MMR reactions observed in the NPE display poor strand discrimination. It is evident that the discontinuous strand is repaired only 5-10 times better than the continuous strand. Such weak strand discrimination would cause many mutations in vivo, but in vivo data indicate that the strand discrimination is very efficient. Please discuss potential reasons of the limited strand discrimination in the analyzed reactions.\n\n8) Did the authors verify in Figure 6B and C that MutS depletion did not somehow affect the rate of closed circular plasmid accumulation?\n\n9) In Figure 1D, it would be helpful to indicate which samples were digested with XhoI, which with BamHI. Also, the difference between panels 1D and E is not apparent.\n\n10) There is a major discrepancy in the kinetics of% closed plasmid accumulation between Figure 1\u2014figure supplement 4 (slow) and Figure 1\u2014figure supplement 3 (fast) (and Figure 2B, also fast). Which is correct? It seems that the slow kinetics of closed circular formation (black graph in 1F) is therefore not representative.\n\n11) \"Unlike homoduplex plasmids, the gap-filling DNA synthesis did not covalently close the mismatch-carrying plasmid, suggesting that new strand breaks are introduced on the DNA.\" This sentence is unclear. Do the authors mean that the mismatch plasmid was not fully converted to supercoiled, based on the ~20% fraction of gapped/nicked molecules remaining in Figure 1\u2014figure supplement 3B? Overall, this paragraph is difficult to follow.\n\n12) \"Although it has not been clear whether the MMR system can correct replication errors after the completion of local DNA synthesis except the ribonucleotide-directed mechanism, since PCNA remains on DNA after the completion of DNA synthesis until unloaded by the PCNA unloader complex, DNA-bound PCNA could mediate the coupling of MMR with DNA replication by generating a post-replicative temporal window permissive to MMR.\" This sentence is too long and poorly constructed.\n\n13) \"In the absence of MutS\u03b1/\u03b2, the strand information was retained for 1-2 min after disappearance of strand discontinuities (Figure 2)\" This is an odd description of the data in Figure 2. It would be better to say: \"In the absence of MutS\u03b1/\u03b2, the strand information was gradually lost after the disappearance of strand discontinuities\u2026\".\n",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6cb85e7e-afa2-4dbc-a7c4-56741ae25b46",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C1",
+      "claim": "Eukaryotic mismatch repair (MMR) utilizes single-strand breaks as signals to target the strand to be repaired.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotic mismatch repair (MMR) utilizes single-strand breaks as signals to target the strand to be repaired.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge about eukaryotic MMR.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "7e4090b8-c46c-4da4-96e0-9ebe9bc32a55",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C2",
+      "claim": "DNA-bound PCNA is presumed to direct MMR.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA-bound PCNA is also presumed to direct MMR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a presumption in the field, supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "4916e02a-be41-4041-850e-5411ae469e70",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C3",
+      "claim": "DNA-bound PCNA induces strand-specific MMR in the absence of strand discontinuities.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that DNA-bound PCNA induces strand-specific MMR in the absence of strand discontinuities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "8c9d24ff-a387-4701-bbfb-ae015a4d9443",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C4",
+      "claim": "MutS\u03b1 inhibited PCNA unloading through its PCNA-interacting motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, MutS\u03b1 inhibited PCNA unloading through its PCNA-interacting motif, thereby extending significantly the temporal window permissive to strand-specific MMR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in Figures 6, 8, and 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "80c5b6b8-4119-4740-873e-9d7110c90aee",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C5",
+      "claim": "MutS\u03b1 extends the temporal window permissive to strand-specific MMR.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, MutS\u03b1 inhibited PCNA unloading through its PCNA-interacting motif, thereby extending significantly the temporal window permissive to strand-specific MMR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data showing extended half-life of strand memory in the presence of MutS\u03b1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "400a0b90-5cf8-42fa-a4bf-0f0be2b25fbc",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C6",
+      "claim": "MMR increases replication fidelity by ~2 orders of magnitude in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "By rectifying replication errors, MMR increases the replication fidelity by ~2 orders of magnitude in yeast (Lujan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Lujan et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "6e992a5c-05b1-4ac5-928d-171979c83ad5",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C7",
+      "claim": "Genetic or epigenetic inactivation of MMR genes elevates the risk of tumorigenesis in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, genetic or epigenetic inactivation of MMR genes elevates the risk of tumorigenesis in both hereditary and sporadic manners (Jiricny, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Jiricny, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "708bafea-0874-44a2-a583-d1b3977704ee",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C8",
+      "claim": "In E. coli, MMR distinguishes parental and daughter strands mainly by using adenine methylation on GATC sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In Escherichia coli, MMR distinguishes the parental and daughter strands mainly by using adenine methylation on GATC sites (Lahue et al., 1989; Iyer et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lahue et al., 1989 and Iyer et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "805910d6-fdb6-47dd-b4fc-58e98114db49",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C9",
+      "claim": "Over-expression of Dam methylase significantly elevates mutation frequency in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Maintaining this temporal window is critical for efficient MMR, because over-expression of the Dam methylase, by which full-methylation of the GATC sites is accelerated, significantly elevates the mutation frequency (Herman and Modrich, 1981; Marinus et al., 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Herman and Modrich, 1981 and Marinus et al., 1984.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "0c1e695f-f8bb-4166-857e-c744b70c04bb",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C10",
+      "claim": "E. coli MMR can correct replication errors through a methylation-independent mechanism using strand discontinuities.",
+      "claim_type": "EXPLICIT",
+      "source": "The E. coli MMR system can also correct replication errors through a methylation-independent mechanism, where strand discontinuities can substitute for GATC methylation both in vivo and in vitro (Laengle-Rouault et al., 1986; Lahue et al., 1987; 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Laengle-Rouault et al., 1986 and Lahue et al., 1987; 1989.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "64ae7983-4557-4a14-b635-dea687e5c59b",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C11",
+      "claim": "Eukaryotic MMR is directed by strand discontinuities such as nicks or gaps in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Eukaryotic MMR is directed by strand discontinuities such as nicks or gaps in vitro (Holmes et al., 1990; Thomas et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Holmes et al., 1990 and Thomas et al., 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "7c4c62a7-ed9c-497d-b09a-176ef073b1b9",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C12",
+      "claim": "MutS\u03b1 has a biased preference for base-base mismatches and small insertion/deletion loops.",
+      "claim_type": "EXPLICIT",
+      "source": "MutS\u03b1 has a biased preference for base-base mismatches and small insertion/deletion loops (IDLs), while MutS\u03b2 preferentially recognizes large IDLs (Iyer et al., 2006; Jiricny, 2013; Kunkel and Erie, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Iyer et al., 2006; Jiricny, 2013; and Kunkel and Erie, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "e41777c9-612f-428b-aa08-25c3e6901586",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C13",
+      "claim": "MutS\u03b2 preferentially recognizes large insertion/deletion loops.",
+      "claim_type": "EXPLICIT",
+      "source": "MutS\u03b1 has a biased preference for base-base mismatches and small insertion/deletion loops (IDLs), while MutS\u03b2 preferentially recognizes large IDLs (Iyer et al., 2006; Jiricny, 2013; Kunkel and Erie, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Iyer et al., 2006; Jiricny, 2013; and Kunkel and Erie, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "5ab0a840-1c0c-4850-adb8-d08fe6092033",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C14",
+      "claim": "Single-strand DNA termini such as 5'-ends of Okazaki fragments serve as entry points for Exo1 and strand discrimination signals in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-strand DNA termini such as 5'-ends of the Okazaki fragments serve as entry points for Exo1 and strand discrimination signals in vivo as well (Pavlov et al., 2003; Nick McElhinny et al., 2010; Liberti et al., 2013; Lujan et al., 2014; Liu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Pavlov et al., 2003; Nick McElhinny et al., 2010; Liberti et al., 2013; Lujan et al., 2014; and Liu et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "ed34a843-fea2-4fcd-bc66-f7d8a11c7b2d",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C15",
+      "claim": "Ribonucleotides embedded by replicative DNA polymerases serve as strand signals for MMR in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have revealed that ribonucleotides embedded by replicative DNA polymerases serve as strand signals for MMR in vitro and contribute to a sub-fraction of leading strand MMR in vivo, after converted into single-strand gaps through RNaseH2-dependent ribonucleotide excision repair (Ghodgaonkar et al., 2013; Lujan et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ghodgaonkar et al., 2013 and Lujan et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "34f470b1-0f74-420e-a896-ec53f4171c12",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C16",
+      "claim": "PCNA is loaded onto DNA from the template-primer junction by RFC.",
+      "claim_type": "EXPLICIT",
+      "source": "PCNA is loaded onto DNA from the template-primer junction by RFC, and likely unloaded by an RFC-like complex containing Elg1 after the completion of DNA synthesis (Kubota et al., 2013; 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kubota et al., 2013 and 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "e52978c2-082d-4bc1-ab72-0c21538c9be3",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C17",
+      "claim": "PCNA is likely unloaded by an RFC-like complex containing Elg1 after the completion of DNA synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "PCNA is loaded onto DNA from the template-primer junction by RFC, and likely unloaded by an RFC-like complex containing Elg1 after the completion of DNA synthesis (Kubota et al., 2013; 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kubota et al., 2013 and 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "2fba8e48-c19d-4769-b024-ec7dfe229749",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C18",
+      "claim": "PCNA's DNA binding is asymmetric with respect to polarities of the parental and daughter strands.",
+      "claim_type": "EXPLICIT",
+      "source": "Since its DNA binding is asymmetric with respect to polarities of the parental and daughter strands, DNA-bound PCNA can hold information for the newly synthesized strand (Bowman et al., 2004; Georgescu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bowman et al., 2004 and Georgescu et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "d57060c9-727c-4052-a8fa-276850a725e5",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C19",
+      "claim": "PCNA plays an essential role in an early MMR step that precedes degradation of the error-carrying strand.",
+      "claim_type": "EXPLICIT",
+      "source": "PCNA plays an essential role in an early MMR step that precedes degradation of the error-carrying strand (Umar et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Umar et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "2cb93f91-82fb-47d7-ae3a-a90de651855b",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C20",
+      "claim": "PCNA loaded from a strand discontinuity induces strand-specific, mismatch- and MutS\u03b1-dependent activation of the MutL\u03b1 endonuclease.",
+      "claim_type": "EXPLICIT",
+      "source": "PCNA loaded from a strand discontinuity induces strand-specific, mismatch- and MutS\u03b1-dependent activation of the MutL\u03b1 endonuclease (Kadyrov et al., 2006; 2007; Pluciennik et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kadyrov et al., 2006; 2007; and Pluciennik et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "0251d14b-7c4a-4d11-a547-cb55e6254e25",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C21",
+      "claim": "When PCNA is loaded onto closed circular DNA without defined orientation, it induces unbiased nicking on both DNA strands.",
+      "claim_type": "EXPLICIT",
+      "source": "When PCNA is loaded onto closed circular DNA without defined orientation, it induces unbiased nicking on both DNA strands (Pluciennik et al., 2010; 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Pluciennik et al., 2010 and 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "1ec5fe88-e471-444b-90f8-47c746472748",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C22",
+      "claim": "Numbers of PCNA mutants in yeast exhibit mutator phenotypes that are epistatic to MMR mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Numbers of PCNA mutants in yeast exhibit mutator phenotypes that are epistatic to MMR mutations (Johnson et al., 1996; Umar et al., 1996; Chen et al., 1999; Amin et al., 2001; Lau et al., 2002; Goellner et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Johnson et al., 1996; Umar et al., 1996; Chen et al., 1999; Amin et al., 2001; Lau et al., 2002; and Goellner et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "5aca4dfe-8790-4b5a-8222-78f314ca698c",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C23",
+      "claim": "PCNA interacts with MutS\u03b1/\u03b2 through their PCNA-interacting peptide (PIP) motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "It interacts with MutS\u03b1/\u03b2 through their PCNA-interacting peptide (PIP) motifs, which reside at the N-termini of Msh6 and Msh3 (Clark et al., 2000; Flores-Rozas et al., 2000; Kleczkowska et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Clark et al., 2000; Flores-Rozas et al., 2000; and Kleczkowska et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "de4dd6e4-bff8-4eec-9260-f2daab6a181a",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C24",
+      "claim": "The PIP motifs in Msh6 and Msh3 are connected to the mispair binding domains through long linkers predicted to be disordered in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, the PIP motifs and the mispair binding domains are connected through long linkers, which are predicted to be disordered in yeast (Shell et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Shell et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "e9eb3870-ff26-436d-aa89-50ebe33c1ace",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C25",
+      "claim": "Mutants of the PIP motifs in Msh6 and Msh3 show substantial but not complete reduction of MMR activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutants of the PIP motifs in Msh6 and Msh3 show substantial but not complete reduction of the MMR activity, indicating that the PIP motif plays an important, yet assistive, non-essential role in MMR (Clark et al., 2000; Flores-Rozas et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Clark et al., 2000 and Flores-Rozas et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "efc049e7-dff4-4086-9700-d05fee85157a",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C26",
+      "claim": "The PIP motif has been proposed to tether MutS\u03b1 to the replication fork to assist its mismatch recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "The PIP motif has been proposed to tether MutS\u03b1 to the replication fork to assist its mismatch recognition (Kleczkowska et al., 2001; Hombauer et al., 2011a; Haye and Gammie, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kleczkowska et al., 2001; Hombauer et al., 2011a; and Haye and Gammie, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "e2973546-6fa0-4cdd-b50c-68c8fe9bd132",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C27",
+      "claim": "The PIP motif in MutS\u03b1 is important for a late MMR step involving degradation of the error-carrying strand, especially by the Exo1-independent mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study has shown that this motif in MutS\u03b1 is important for a late MMR step(s) involving degradation of the error-carrying strand, especially by the Exo1-independent mechanism (Goellner et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Goellner et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "0367add8-bb48-4bd0-88eb-625b311da598",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C28",
+      "claim": "In yeast, MutS\u03b1 must be present during S-phase to suppress mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown in yeast that MutS\u03b1 must be present during S-phase to suppress mutations (Hombauer et al., 2011b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hombauer et al., 2011b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "e7d2ad97-a7f0-43c3-8fd8-2b4d45001b5d",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C29",
+      "claim": "NPE efficiently promotes gap-directed, strand-specific MMR.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that NPE efficiently recapitulates gap-directed, bi-directional MMR that is dependent on both MutS\u03b1/\u03b2 and MutL\u03b1/\u03b2/\u03b3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "4c2e9a15-7208-46a2-8120-6a803b3c3b4d",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C30",
+      "claim": "Gap-directed MMR in NPE is dependent on both MutS\u03b1/\u03b2 and MutL\u03b1/\u03b2/\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that NPE efficiently recapitulates gap-directed, bi-directional MMR that is dependent on both MutS\u03b1/\u03b2 and MutL\u03b1/\u03b2/\u03b3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B-E showing abolishment of repair upon depletion of these complexes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "8ceb9cf1-77ce-4164-9318-db269bb92951",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C31",
+      "claim": "NPE supports bidirectional MMR.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen previously (Olivera Harris et al., 2015), a gap could be placed on either 5' or 3' of the mismatch, and repair DNA synthesis occurred preferentially within a fragment containing the shorter path between the gap and the mismatch (Figure 1\u2014figure supplement 2), indicating that NPE supports bidirectional MMR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "873b3703-cf21-4c7e-9e06-d3c019e9626d",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C32",
+      "claim": "A nick did not efficiently induce MMR in NPE.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike other systems, a nick did not efficiently induce MMR (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "c589e240-7293-4768-8913-693819e441af",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C33",
+      "claim": "Gap-directed A to G MMR was more efficient in NPE (67%) than in HSS (34%).",
+      "claim_type": "EXPLICIT",
+      "source": "Gap-directed A to G MMR was more efficient in NPE (67%) than in HSS (34%), indicating that NPE has higher MMR activity than HSS.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "f5054368-2014-4b5a-9f89-228813d2be5f",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C34",
+      "claim": "DNA synthesis at the gap site was mostly completed within 30 s in NPE.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1F, DNA synthesis at the gap site (estimated by digestion with PacI placed within the gap) was mostly completed within 30 s.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "fc8bf020-b836-4c64-9d59-8415be8424f4",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C35",
+      "claim": "A to G MMR gradually progressed until ~30 min in NPE.",
+      "claim_type": "EXPLICIT",
+      "source": "The A to G MMR gradually progressed until ~30 min, and shortly after the mismatch correction, closed circular molecules were accumulated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "a957715e-6cab-4d32-8a55-205652e5763f",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C36",
+      "claim": "Efficient DNA synthesis at the gap site precedes mismatch correction involving degradation of the error-carrying strand in NPE.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that, in this gap-directed MMR model, efficient DNA synthesis at the gap site precedes mismatch correction involving degradation of the error-carrying strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the kinetic data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "b923c5f6-587c-437d-93d4-e21c77c3ab47",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C37",
+      "claim": "The strand information derived from a gap is 'memorized' on DNA to induce subsequent MMR.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that the strand information derived from a gap is 'memorized' on DNA to induce subsequent MMR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from experimental data shown in Figure 2 where MMR efficiency exceeded the amount of remaining strand discontinuities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "cdf8c836-c064-432d-a03d-c3af4689bead",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C38",
+      "claim": "More than 80% of gap-carrying plasmids were converted into the closed-circular form within 1.5 min in MutS-depleted NPE.",
+      "claim_type": "EXPLICIT",
+      "source": "In the MutS-depleted NPE, more than 80% of gap-carrying plasmids were converted into the closed-circular form within 1.5 min (Figure 2B, lane 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "423baf9b-8e18-47ea-b1ec-9d430757fb3c",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C39",
+      "claim": "~40% of A to G MMR was still observed upon addition of fresh NPE at 2 min, when at most only ~14% strand discontinuities remained.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ~40% of A to G MMR was still observed upon addition of fresh NPE at 2 min, at a time when at most, only ~14% strand discontinuities remained (Figure 2B, lane 10 and Figure 2C, lane 14).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "6acdd7ae-7e16-4586-a5b2-46e86a376f75",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C40",
+      "claim": "The gap-filling reaction in Xenopus egg extracts was PCNA-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "The gap-filling reaction in Xenopus egg extracts was PCNA-dependent (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "d1f0b02b-161e-4ce0-b9f4-568cb3acd9c6",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C41",
+      "claim": "4-10 hPCNA trimers reproducibly loaded on DNA in a nick- and ATP-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Using fluorescent-based quantitative western blotting, we estimated that 4\u201310 hPCNA trimers reproducibly loaded on the DNA in a nick- and ATP-dependent manner (Figure 3B; see also Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B and Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "f70b4231-3145-42fe-a2f7-7fe9f1c63e36",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C42",
+      "claim": "Ligation of the nick was ~80% efficient in the in vitro PCNA-loading reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Ligation of the nick was ~80% efficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section describing the in vitro PCNA-loading assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "821a2bcf-1377-4699-a616-bdf06ae9c441",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C43",
+      "claim": "DNA-bound hPCNA topologically encircled DNA with free-sliding ability.",
+      "claim_type": "EXPLICIT",
+      "source": "The DNA-bound hPCNA topologically encircled DNA with free-sliding ability, because linearization of DNA resulted in dissociation of essentially all hPCNA (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "4602a04d-e804-4c38-bb35-c5a3ee9ddeaf",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C44",
+      "claim": "~75% of the A bases were specifically repaired into G bases when the hPCNA-DNA complex was transferred into NPE.",
+      "claim_type": "EXPLICIT",
+      "source": "When the hPCNA-DNA complex was transferred into NPE, ~75% of the A bases were specifically repaired into G bases (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "0eea4fd9-c92f-46e6-aed5-ad4dcea25c46",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C45",
+      "claim": "The hPCNA-DNA complex prepared with A-nick DNA directed ~60% of A to G MMR.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, the hPCNA-DNA complex prepared with A-nick DNA directed ~60% of A to G MMR, and the complex prepared with C-nick DNA directed ~70% of C to T MMR in NPE (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "dfd40a0a-f94e-4aeb-9cdc-7413ef7b518d",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C46",
+      "claim": "The hPCNA-DNA complex prepared with C-nick DNA directed ~70% of C to T MMR.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, the hPCNA-DNA complex prepared with A-nick DNA directed ~60% of A to G MMR, and the complex prepared with C-nick DNA directed ~70% of C to T MMR in NPE (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "1fbc4fab-2a7c-419b-813b-7e08161de471",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C47",
+      "claim": "When either PCNA or RFC was omitted from the reaction, most of the strand-specific repair was inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "When either PCNA or RFC was omitted from the reaction, most of the strand-specific repair was inhibited (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "8e3af69f-59df-4713-b10a-7180033029b5",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C48",
+      "claim": "The PCNA-directed MMR reaction was dependent on both MutS\u03b1/\u03b2 and MutL\u03b1/\u03b2/\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "The PCNA-directed MMR reaction was dependent on both MutS\u03b1/\u03b2 and MutL\u03b1/\u03b2/\u03b3 (Figure 4C and Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "d07f00cf-717d-4902-a80a-fdabb1f9a726",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C49",
+      "claim": "Directional loading of hPCNA is sufficient to induce strand-specific MMR in the absence of strand discontinuities in NPE.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that directional loading of hPCNA is sufficient to induce strand-specific MMR in the absence of strand discontinuities in NPE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the experimental data showing strand-specific MMR with directionally loaded PCNA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "ddbabf4a-a04d-478b-9cb5-381d51a47d68",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C50",
+      "claim": "A significant portion of nick ligation was independent of PCNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, a significant portion of nick ligation was independent of PCNA, explaining why a nick did not induce MMR as efficiently as a gap in NPE (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "78a4899e-dfcc-48c3-856e-99af506cc4bc",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C51",
+      "claim": "PCNA is removed from DNA mostly through an active unloading process requiring the Rfc3-containing complex(es).",
+      "claim_type": "EXPLICIT",
+      "source": "In the mock-treated NPE, hPCNA was quickly dissociated from a homoduplex DNA within a few minutes, while dissociation was attenuated in the NPE depleted of xRfc3, indicating that PCNA is removed from DNA mostly through an active unloading process requiring the Rfc3-containing complex(es) (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "8ae886a4-dca9-46bd-8814-c69461835b96",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C52",
+      "claim": "In the MutS-depleted NPE, hPCNA was quickly unloaded from mismatch-carrying DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In the MutS-depleted NPE, hPCNA was again quickly unloaded from mismatch-carrying DNA (Figure 6B and Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "57f24dc8-8ced-468a-9143-b8f8ab4c350c",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C53",
+      "claim": "Concurrent with PCNA unloading in MutS-depleted NPE, the PCNA-directed MMR capability rapidly dropped, leaving only ~10% of repairable molecules at 5 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Concurrent with PCNA unloading, the PCNA-directed MMR capability rapidly dropped, leaving only ~10% of repairable molecules at 5 min (Figure 6C, lane 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "4b68bd71-1f79-4ffd-b8fc-e6395b1904aa",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C54",
+      "claim": "In the MutL-depleted NPE, even at 30 min, more than one hPCNA trimer on an average still remained on DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the MutL-depleted NPE (containing endogenous MutS\u03b1/\u03b2 but deficient for MMR), even at 30 min, more than one hPCNA trimer on an average still remained on DNA, and ~20% of mismatches were still repairable (Figure 6C, lane 14).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "5af5b4a1-d80c-497d-98cf-7c80e1526fb5",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C55",
+      "claim": "In the MutL-depleted NPE, ~20% of mismatches were still repairable at 30 min.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in the MutL-depleted NPE (containing endogenous MutS\u03b1/\u03b2 but deficient for MMR), even at 30 min, more than one hPCNA trimer on an average still remained on DNA, and ~20% of mismatches were still repairable (Figure 6C, lane 14).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "ceabddbc-7b56-4cbe-a72c-68823256b0ca",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C56",
+      "claim": "Mismatch-bound MutS complexes interfere with unloading of PCNA to retain strand information for MMR.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that mismatch-bound MutS complexes interfere with unloading of PCNA to retain strand information for MMR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing differential PCNA retention in the presence and absence of MutS.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "586b128d-7492-435f-a341-6ac56831e33e",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C57",
+      "claim": "In either MutS-depleted or MutS/MutL-depleted NPE, more than 40% of mismatches were still repairable upon addition of fresh NPE at 2 min.",
+      "claim_type": "EXPLICIT",
+      "source": "In either MutS-depleted or MutS/MutL-depleted NPE, more than 40% of mismatches were still repairable upon addition of fresh NPE at 2 min, confirming the ~2 min strand memory seen in Figure 2 (Figure 7C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "9c48b5e5-4b86-45af-9b4d-787eda4d1ca9",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C58",
+      "claim": "In the MutL-depleted NPE, >60% of mismatches were repairable at 10 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in the MutL-depleted NPE, >60% of mismatches were repairable at 10 min, and ~35% were still repairable even at 30 min.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "62446b11-ed54-46a0-b3fa-1c51985e426e",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C59",
+      "claim": "In the MutL-depleted NPE, ~35% of mismatches were still repairable even at 30 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, in the MutL-depleted NPE, >60% of mismatches were repairable at 10 min, and ~35% were still repairable even at 30 min.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 7C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "88785789-0458-4b7e-9d16-1c1a86e97df6",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C60",
+      "claim": "The half-life of the strand memory in the absence of MutS\u03b1/\u03b2 is approximately 2 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Using one-phase exponential decay fitting, which could explain most data with reasonable quality (R2 > 0.8), we estimated the half-life of the strand memory in the absence of MutS\u03b1/\u03b2 to be approximately 2 min, and to be approximately 40 min in the presence of MutS\u03b1/\u03b2 (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and curve fitting shown in Figure 7 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "a6e4e20b-5c31-4c3b-9e20-da5512d29cf0",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C61",
+      "claim": "The half-life of the strand memory in the presence of MutS\u03b1/\u03b2 is approximately 40 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Using one-phase exponential decay fitting, which could explain most data with reasonable quality (R2 > 0.8), we estimated the half-life of the strand memory in the absence of MutS\u03b1/\u03b2 to be approximately 2 min, and to be approximately 40 min in the presence of MutS\u03b1/\u03b2 (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data and curve fitting shown in Figure 7 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "dd874f3f-6c60-4c4c-b37a-fdcecc6f0772",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C62",
+      "claim": "The MutS\u03b1/\u03b2-dependent mechanism maintains the strand information by inhibiting unloading of PCNA that is loaded during DNA synthesis at the gap site.",
+      "claim_type": "EXPLICIT",
+      "source": "These results strongly suggest that the MutS\u03b1/\u03b2-dependent mechanism maintains the strand information by inhibiting unloading of PCNA that is loaded during DNA synthesis at the gap site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing extended strand memory in the presence of MutS\u03b1/\u03b2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "0df77436-c53b-4f48-aaf4-d3f00723485a",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C63",
+      "claim": "xMutS\u03b1PIP was largely restored for gap-directed MMR in MutS-depleted NPE.",
+      "claim_type": "EXPLICIT",
+      "source": "In good agreement with previous reports (Kleczkowska et al., 2001; Iyer et al., 2008; Bowen et al., 2013), when no stepwise incubation was involved, the gap-directed MMR on the 3.0 kb substrate was largely restored by xMutS\u03b1PIP in MutS-depleted NPE (Figure 8\u2014figure supplement 1), indicating that in this experimental setup the PIP function is not important for MMR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "8e9de519-ddd3-4a5d-a903-830533f3a720",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C64",
+      "claim": "Mismatch binding of xMutS\u03b1PIP was not significantly compromised.",
+      "claim_type": "EXPLICIT",
+      "source": "Mismatch binding of xMutS\u03b1PIP was not significantly compromised (Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "0ae94a80-4c89-4d29-9cca-0b5ec0be149c",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C65",
+      "claim": "xMutS\u03b1PIP was almost inert for PCNA retention.",
+      "claim_type": "EXPLICIT",
+      "source": "However, xMutS\u03b1PIP was almost inert for PCNA retention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "f51c1760-fa45-40d5-8b81-4227ff9d144f",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C66",
+      "claim": "xMutS\u03b1WT attenuated PCNA unloading.",
+      "claim_type": "EXPLICIT",
+      "source": "Although xMutS\u03b1WT attenuated PCNA unloading, xMutS\u03b1PIP did not exhibit detectable retention of PCNA on mismatched DNA, compared to the buffer control (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "82d20250-28a9-4346-8e1a-2800b76ae9d5",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C67",
+      "claim": "xMutS\u03b1PIP did not exhibit detectable retention of PCNA on mismatched DNA, compared to the buffer control.",
+      "claim_type": "EXPLICIT",
+      "source": "Although xMutS\u03b1WT attenuated PCNA unloading, xMutS\u03b1PIP did not exhibit detectable retention of PCNA on mismatched DNA, compared to the buffer control (Figure 8D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "c4e09712-f960-4b82-af35-1c1f13b62ea8",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C68",
+      "claim": "xMutS\u03b1WT restored retention of strand memory in the MutS/MutL-depleted NPE with a half-life of 25.5 min.",
+      "claim_type": "EXPLICIT",
+      "source": "In the gap-derived strand memory assay, xMutS\u03b1WT restored retention of strand memory in the MutS/MutL-depleted NPE without affecting the gap-filling reaction (t1/2 = 25.5 min; Figure 9, Figure 9\u2014figure supplement 1, and Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 9 and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "abca7e6f-8aec-4055-9569-ef36a104a31f",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C69",
+      "claim": "xMutS\u03b1PIP showed only modest restoration of the retention of strand information with a half-life of 12.5 min.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, only modest restoration of the retention of strand information was seen with xMutS\u03b1PIP (t1/2 = 12.5 min).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 9 and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "68ed43c4-1e17-4408-85e6-1e4e95e34af1",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C70",
+      "claim": "The PIP motif is required for inhibition of PCNA unloading and largely responsible for strand memory retention.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the PIP motif is required for inhibition of PCNA unloading and largely responsible for strand memory retention, yet a PIP-independent mechanism also contributes to the retention of strand information derived from a gap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data comparing xMutS\u03b1WT and xMutS\u03b1PIP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "1b9864f5-4069-4854-a782-a44acff5afdf",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C71",
+      "claim": "A PIP-independent mechanism also contributes to the retention of strand information derived from a gap.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the PIP motif is required for inhibition of PCNA unloading and largely responsible for strand memory retention, yet a PIP-independent mechanism also contributes to the retention of strand information derived from a gap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing partial strand memory retention by xMutS\u03b1PIP and xMutS\u03b1\u0394N.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "db112a92-fb9c-4bda-9dac-aee113033a70",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C72",
+      "claim": "xMutS\u03b1\u0394N was essentially deficient in PCNA retention.",
+      "claim_type": "EXPLICIT",
+      "source": "As with xMutS\u03b1PIP, xMutS\u03b1\u0394N did not show significant defects in gap-directed MMR and in mismatch binding (Figure 8\u2014figure supplement 1), and was essentially deficient in PCNA retention (Figure 8C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "429cfec8-3ec3-4535-b334-0e42ca3f89f2",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C73",
+      "claim": "The xMutS\u03b1\u0394N complex partially restored the strand memory reaction, with an estimated half-life of 12.3 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the xMutS\u03b1\u0394N complex partially restored the strand memory reaction, with an estimated half-life of 12.3 min, although it did not affect the kinetics of the sealing of the gap in the first NPE (Figure 9 and Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 9 and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "38ae6f10-435b-460a-809d-f32099339926",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C74",
+      "claim": "The retention of strand memory is mediated largely by the PIP motif in MutS\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "We concluded that the retention of strand memory is mediated largely by the PIP motif in MutS\u03b1, and there is a partial strand memory retention that is independent of the NTR of Msh6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the experimental data comparing different MutS\u03b1 mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "2b3729cf-6670-4227-867b-a0465b87aec8",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C75",
+      "claim": "There is a partial strand memory retention that is independent of the NTR of Msh6.",
+      "claim_type": "EXPLICIT",
+      "source": "We concluded that the retention of strand memory is mediated largely by the PIP motif in MutS\u03b1, and there is a partial strand memory retention that is independent of the NTR of Msh6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the experimental data showing partial strand memory retention by xMutS\u03b1\u0394N.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "54253ee0-1e49-4b21-9485-d5f05827ca2e",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C76",
+      "claim": "PCNA transiently remains on DNA after the completion of DNA synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Since PCNA transiently remains on DNA after the completion of DNA synthesis, DNA-bound PCNA could mediate the coupling of MMR with DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "019a6606-6bcc-4f5a-920c-ad3db3580df8",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C77",
+      "claim": "In vivo PCNA unloading during S-phase largely depends on the Elg1-containing RFC-like complex both in humans and in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Since in vivo PCNA unloading during S-phase largely depends on the Elg1-containing RFC-like complex (Elg1-RLC) both in humans and in yeast (Kubota et al., 2013; Lee et al., 2013; Shiomi and Nishitani, 2013; Kubota et al., 2015), the PIP-motif in MutS\u03b1 may also limit the access of Elg1-RLC to DNA-bound PCNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kubota et al., 2013; Lee et al., 2013; Shiomi and Nishitani, 2013; and Kubota et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "18a0ebcf-d39d-4ccb-ae4e-20246eb8be76",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C78",
+      "claim": "The PIP-motif in MutS\u03b1 may limit the access of Elg1-RLC to DNA-bound PCNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Since in vivo PCNA unloading during S-phase largely depends on the Elg1-containing RFC-like complex (Elg1-RLC) both in humans and in yeast (Kubota et al., 2013; Lee et al., 2013; Shiomi and Nishitani, 2013; Kubota et al., 2015), the PIP-motif in MutS\u03b1 may also limit the access of Elg1-RLC to DNA-bound PCNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the known role of Elg1-RLC in PCNA unloading.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "2e0bb8f7-c2c1-4665-9610-0669eab8fabd",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C79",
+      "claim": "The NTR of yeast Msh6 and Msh3 are inter-exchangeable without significant deleterious effects.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen for MutS\u03b1, we predict that MutS\u03b2 may inhibit PCNA unloading as well, since the NTR of yeast Msh6 and Msh3 are inter-exchangeable without significant deleterious effects (Shell et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Shell et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "97f0c638-8530-4041-850c-7346c154f02a",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C80",
+      "claim": "MutS\u03b2 may inhibit PCNA unloading.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen for MutS\u03b1, we predict that MutS\u03b2 may inhibit PCNA unloading as well, since the NTR of yeast Msh6 and Msh3 are inter-exchangeable without significant deleterious effects (Shell et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is predicted based on the similarity between MutS\u03b1 and MutS\u03b2.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "ab71c38a-7f11-4c24-9865-24533b7d55d5",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C81",
+      "claim": "The PIP-deficient MutS\u03b1 complexes were proficient in repairing a mismatch in the in vitro MMR system.",
+      "claim_type": "EXPLICIT",
+      "source": "The PIP-deficient MutS\u03b1 complexes were proficient in repairing a mismatch in our in vitro MMR system (Figure 8\u2014figure supplement 1), and similar observations were already reported both in human cell extracts and in a yeast in vitro reconstitution system (Kleczkowska et al., 2001; Iyer et al., 2008; Bowen et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 8\u2014figure supplement 1 and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "3d51ffcf-df61-4849-a069-4c734e2f2bed",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C82",
+      "claim": "A simple MMR reaction involving a mismatch and a closely-placed strand-discrimination signal would not require retention of PCNA by MutS\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, a simple MMR reaction involving a mismatch and a closely-placed strand-discrimination signal, either PCNA or a strand discontinuity, would not require retention of PCNA by MutS\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that PIP-deficient MutS\u03b1 can repair mismatches in simple MMR reactions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "1dedab66-473e-4559-b5c2-39dcf266148a",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C83",
+      "claim": "When a stepwise incubation was involved, the PIP motif became important for MMR.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when a stepwise incubation, which mimics transient arrest of the MMR reaction, was involved, the PIP motif became important for MMR (Figure 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "eab06f46-0a2f-43fe-9308-54f7e52d0532",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C84",
+      "claim": "Inhibition of PCNA unloading is needed for MMR only under specific situations, e.g. when a strand-discrimination signal is buried within chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that inhibition of PCNA unloading is needed for MMR only under specific situations, e.g. when a strand-discrimination signal is buried within chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the experimental observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "0a29e8f9-0ca2-4c8a-8b1a-e270744211d2",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C85",
+      "claim": "The leading strand seems to have less PCNA than the lagging strand.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the leading strand seems to have less PCNA than the lagging strand (Yu et al., 2014), such situations could happen more frequently in the leading strand, in which MMR is less efficient than in the lagging strand (Pavlov et al., 2003; Lujan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Yu et al., 2014; Pavlov et al., 2003; and Lujan et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "74803cd9-5b03-4b47-8dea-5651474d0c1c",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C86",
+      "claim": "MMR is less efficient in the leading strand than in the lagging strand.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the leading strand seems to have less PCNA than the lagging strand (Yu et al., 2014), such situations could happen more frequently in the leading strand, in which MMR is less efficient than in the lagging strand (Pavlov et al., 2003; Lujan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Pavlov et al., 2003 and Lujan et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "1804f1b5-ca2f-4b09-80ee-c9d5e77b1b1c",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C87",
+      "claim": "MutS\u03b1 may take over PCNA from other factors such as DNA polymerases.",
+      "claim_type": "EXPLICIT",
+      "source": "An interesting possibility worth testing in the future would be that MutS\u03b1 may take over PCNA from other factors such as DNA polymerases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proposed as a speculative possibility for future investigation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "6cdd6c3d-be0e-4f67-adbb-9788f872a234",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C88",
+      "claim": "Two modes of strand memory, somewhat resembling short-term and long-term memories in neuroscience, would operate as functional parallels of GATC methylation in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that, in addition to such DNA termini, two modes of strand memory, somewhat resembling short-term and long-term memories in neuroscience, would operate as functional parallels of GATC methylation in E. coli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is proposed as a model based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "40bb07d7-a99e-4627-af23-b60a1a558975",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C89",
+      "claim": "NPE has been extensively used as a physiological model system that recapitulates various DNA repair reactions coupled with DNA synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "NPE has been extensively used as a physiological model system that recapitulates various DNA repair reactions coupled with DNA synthesis (R\u00e4schle et al., 2008; Olivera Harris et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to R\u00e4schle et al., 2008 and Olivera Harris et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "a4ffa5b8-f6fa-4002-88fa-ef45e5156f7f",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C90",
+      "claim": "Both 5'-nick directed and 3'-nick directed MMR was dependent on MutL complexes in NPE.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, not only 3'-gap directed but also 5'-gap directed MMR was dependent on MutL complexes in NPE (Figure 1B\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "df3710b2-fe4a-4ee8-ba36-243f94bc2dd9",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C91",
+      "claim": "DNA synthesis at the 3'-gap clearly precedes MMR in NPE.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, DNA synthesis at the 3'-gap clearly precedes MMR (Figure 1F), indicating that strand degradation does not progressively occur from the 3'-terminus of the gap.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "cfc067ca-b8c6-4934-a81f-acbef987ac7f",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C92",
+      "claim": "Strand degradation does not progressively occur from the 3'-terminus of the gap in NPE.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, DNA synthesis at the 3'-gap clearly precedes MMR (Figure 1F), indicating that strand degradation does not progressively occur from the 3'-terminus of the gap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the kinetic data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "0dd616d5-9786-4160-9fe0-db51bc82e548",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C93",
+      "claim": "A nick is suggested to function as a strand signal rather than an entry point for exonucleases in crude extracts of Xenopus eggs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, a nick is suggested to function as a strand signal rather than an entry point for exonucleases in crude extracts of Xenopus eggs (Varlet et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Varlet et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "05299e39-8ad0-4cc4-8eea-28820451cd67",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C94",
+      "claim": "The PCNA-directed MMR would function in a bidirectional manner.",
+      "claim_type": "EXPLICIT",
+      "source": "As gap-directed MMR in NPE was bidirectional and preferentially degrades the DNA strand through the shortest path from the gap to the mismatch, we assume that the PCNA-directed MMR would function in the same manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is assumed based on the similarity to gap-directed MMR.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "2a048ed0-8093-4907-a09f-fbc6631d8f82",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C95",
+      "claim": "The strand excision complex presumably built upon a specific face of PCNA would catalyze strand degradation in either direction depending on the relative orientation toward a mismatch.",
+      "claim_type": "EXPLICIT",
+      "source": "If so, the strand excision complex presumably built upon a specific face of PCNA would catalyze strand degradation in either direction depending on the relative orientation toward a mismatch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the bidirectional nature of MMR.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "7750687c-5121-4c61-9d5c-198964052180",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C96",
+      "claim": "DNA polymerase \u03b4 captures DNA-bound PCNA which is otherwise quickly unloaded by the clamp-unloading activity of RFC.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study showed that DNA polymerase \u03b4 captures DNA-bound PCNA which is otherwise quickly unloaded by the clamp-unloading activity of RFC (Hedglin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hedglin et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "2aec1288-17e2-476e-96ca-dec60f74bc87",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C97",
+      "claim": "Binding of the PIP motif onto PCNA may physically prevent the engagement of PCNA with RFC.",
+      "claim_type": "EXPLICIT",
+      "source": "It would be possible that MutS\u03b1 inhibits PCNA unloading in a similar manner; binding of the PIP motif onto PCNA may physically prevent the engagement of PCNA with RFC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated as a possible mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "da1678e1-bb04-4664-8752-10f1f51ddd3f",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C98",
+      "claim": "MutS\u03b1 might be able to retain PCNA that is located far from MutS\u03b1 using its long 'PIP-arm', possibly even over nucleosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Although a significant portion of this linker in human MutS\u03b1 seems to adopt a globular conformation (Iyer et al., 2008), MutS\u03b1 might be able to retain PCNA that is located far from MutS\u03b1 using this long 'PIP-arm', possibly even over nucleosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the structure of MutS\u03b1.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "27d24906-a455-4748-ad23-08059fef75f7",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C99",
+      "claim": "Strand removal would initiate when MutL\u03b1 reaches to PCNA that is retained by the PIP-arm of MutS\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "In this scenario, strand removal would initiate when MutL\u03b1 reaches to PCNA that is retained by the PIP-arm of MutS\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated as part of a proposed mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "4609fdd5-63fd-47bc-8e9c-07399d464c00",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C100",
+      "claim": "Recruitment or retention of PCNA by MutS\u03b1 around mismatches activates a specific strand removal pathway that is independent of Exo1 in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Interaction between PCNA that is retained by MutS\u03b1 and MutL\u03b1 may invoke a specific strand degradation pathway, because a recent study in yeast has suggested that recruitment or retention of PCNA by MutS\u03b1 around mismatches activates a specific strand removal pathway that is independent of Exo1 (Goellner et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Goellner et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "e7a6e66d-b79c-4744-8a70-b1b0822ca021",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C101",
+      "claim": "MutS\u03b2 may inhibit PCNA unloading.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen for MutS\u03b1, we predict that MutS\u03b2 may inhibit PCNA unloading as well, since the NTR of yeast Msh6 and Msh3 are inter-exchangeable without significant deleterious effects (Shell et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is predicted based on the similarity to MutS\u03b1.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "e7380c4b-0f6d-4738-95af-7d45bc8061ee",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "claim_id": "C102",
+      "claim": "The GenBank accession numbers for sequences of Xenopus msh2, msh6 and mlh1 mRNA are LC075519, LC075520, and LC075521, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The GenBank accession numbers for sequences of Xenopus msh2, msh6 and mlh1 mRNA reported in this paper are LC075519, LC075520, and LC075521, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9821ff64-b01c-4ba3-8114-c825c9340b1a",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "NPE efficiently recapitulates gap-directed, bidirectional MMR that is dependent on MutS\u03b1/\u03b2 and MutL\u03b1/\u03b2/\u03b3. DNA synthesis at the gap site precedes mismatch correction, with gap filling completed within 30 seconds while MMR progresses over ~30 minutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C36 and C90-C92 are well-supported by experimental data in Figure 1, showing efficient MMR in NPE with appropriate controls (depletion of MutS and MutL complexes abolishes repair). The kinetic data clearly demonstrates temporal separation between gap filling and mismatch correction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "e706468c-2789-4eb7-88ec-ebcc285b68b7",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Strand information derived from a gap is 'memorized' on DNA to induce subsequent MMR even after gap sealing. In MutS-depleted NPE, ~40% MMR was observed at 2 min when only ~14% strand discontinuities remained, demonstrating strand memory exceeds physical gap presence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 and C57 are supported by the stepwise incubation experiments in Figure 2 and Figure 7, showing MMR efficiency exceeding remaining strand discontinuities. The experimental design appropriately separates gap filling from mismatch recognition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "8b7781c4-3278-4d0f-8cd1-1d204b7e8378",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "DNA-bound PCNA induces strand-specific MMR in the absence of strand discontinuities. Directional loading of 4-10 hPCNA trimers onto DNA via in vitro PCNA-loading reaction directed ~60-75% strand-specific MMR in NPE, dependent on MutS\u03b1/\u03b2 and MutL\u03b1/\u03b2/\u03b3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C40-C49 are strongly supported by Figures 3 and 4, demonstrating that directionally loaded PCNA can direct strand-specific MMR without strand discontinuities. Controls show requirement for both PCNA and RFC, and dependence on MutS and MutL complexes. The orientation-specific repair (A-nick vs C-nick) provides compelling evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "36c9c7fa-3dc1-4014-8868-4fde3b0b3a26",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "PCNA is removed from DNA through an active Rfc3-dependent unloading process. In MutS-depleted NPE, hPCNA was quickly unloaded and MMR capability dropped to ~10% at 5 min, while in MutL-depleted NPE (containing MutS\u03b1/\u03b2), >1 PCNA trimer remained at 30 min with ~20% mismatches still repairable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C56 are supported by Figures 5 and 6, showing differential PCNA retention in presence vs absence of MutS complexes. The correlation between PCNA retention and MMR capability is well-demonstrated. However, the specific Rfc3-containing complex responsible could not be identified due to antibody limitations (acknowledged by authors).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "5f7a96d4-6255-4a23-97ff-a2c41f77cc5f",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MutS\u03b1/\u03b2 extends the temporal window for strand-specific MMR by inhibiting PCNA unloading. The half-life of strand memory is ~2 min without MutS\u03b1/\u03b2 but ~40 min with MutS\u03b1/\u03b2 present, with >60% mismatches repairable at 10 min and ~35% at 30 min in MutL-depleted NPE.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C58-C62 are supported by Figure 7 and Table 1, showing dramatic extension of strand memory half-life from ~2 min to ~40 min in presence of MutS\u03b1/\u03b2. The exponential decay fitting is appropriate (R\u00b2 > 0.8) and the experimental design properly controls for gap filling kinetics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "2c174dba-8521-47dc-913b-5892cebc1e68",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The PIP motif in MutS\u03b1 is required for inhibition of PCNA unloading and largely responsible for strand memory retention. xMutS\u03b1WT restored strand memory with t1/2=25.5 min, while xMutS\u03b1PIP showed only modest restoration (t1/2=12.5 min). xMutS\u03b1\u0394N also partially restored strand memory (t1/2=12.3 min), indicating a PIP-independent mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C75 are supported by Figures 8 and 9 and Table 2. The mutant analysis appropriately demonstrates PIP motif requirement while revealing PIP-independent contribution. Controls show mutants retain mismatch binding and gap-directed MMR activity. Surface plasmon resonance data (Figure 8 supplement) confirms mismatch binding is not compromised.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Background knowledge claims about MMR mechanisms, PCNA function, and prior literature findings establish the context for the current study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C6-C28, C76-C77, C79, C85-C86, C89, C93, C96, and C100 are appropriately cited background knowledge from established literature. These provide necessary context but are not novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "e3d9fd87-020c-4582-9df6-6dc473a13043",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PIP-deficient MutS\u03b1 complexes are proficient in simple gap-directed MMR reactions but the PIP motif becomes important when stepwise incubation (mimicking transient arrest) is involved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50 and C81-C83 are supported by Figure 8 supplement 1 and Figure 9, showing context-dependent importance of PIP motif. This reconciles apparent discrepancy with prior literature and explains when PIP function is critical.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "a2b99817-f024-4550-b119-f641d019c063",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Speculative mechanistic proposals about how MutS\u03b1 inhibits PCNA unloading, potential roles of MutS\u03b2, and the two-mode strand memory model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78, C80, C84, C87-C88, C94-C95, C97-C99, and C101 are explicitly speculative proposals for future investigation. While reasonable hypotheses based on the data, they lack direct experimental support in this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    },
+    {
+      "id": "2c66c6f3-6332-4fbf-a8d0-cd4aa51ac1bb",
+      "content_id": "47d06011-d10b-457c-a13d-3df3abc1c943",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "GenBank accession numbers for Xenopus msh2, msh6, and mlh1 mRNA sequences are provided.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C102 is a straightforward data deposition statement that is verifiable through GenBank.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:57.817544Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e7d2ad97-a7f0-43c3-8fd8-2b4d45001b5d",
+      "result_id": "9821ff64-b01c-4ba3-8114-c825c9340b1a"
+    },
+    {
+      "claim_id": "4c2e9a15-7208-46a2-8120-6a803b3c3b4d",
+      "result_id": "9821ff64-b01c-4ba3-8114-c825c9340b1a"
+    },
+    {
+      "claim_id": "8ceb9cf1-77ce-4164-9318-db269bb92951",
+      "result_id": "9821ff64-b01c-4ba3-8114-c825c9340b1a"
+    },
+    {
+      "claim_id": "873b3703-cf21-4c7e-9e06-d3c019e9626d",
+      "result_id": "9821ff64-b01c-4ba3-8114-c825c9340b1a"
+    },
+    {
+      "claim_id": "c589e240-7293-4768-8913-693819e441af",
+      "result_id": "9821ff64-b01c-4ba3-8114-c825c9340b1a"
+    },
+    {
+      "claim_id": "f5054368-2014-4b5a-9f89-228813d2be5f",
+      "result_id": "9821ff64-b01c-4ba3-8114-c825c9340b1a"
+    },
+    {
+      "claim_id": "fc8bf020-b836-4c64-9d59-8415be8424f4",
+      "result_id": "9821ff64-b01c-4ba3-8114-c825c9340b1a"
+    },
+    {
+      "claim_id": "a957715e-6cab-4d32-8a55-205652e5763f",
+      "result_id": "9821ff64-b01c-4ba3-8114-c825c9340b1a"
+    },
+    {
+      "claim_id": "a4ffa5b8-f6fa-4002-88fa-ef45e5156f7f",
+      "result_id": "9821ff64-b01c-4ba3-8114-c825c9340b1a"
+    },
+    {
+      "claim_id": "df3710b2-fe4a-4ee8-ba36-243f94bc2dd9",
+      "result_id": "9821ff64-b01c-4ba3-8114-c825c9340b1a"
+    },
+    {
+      "claim_id": "cfc067ca-b8c6-4934-a81f-acbef987ac7f",
+      "result_id": "9821ff64-b01c-4ba3-8114-c825c9340b1a"
+    },
+    {
+      "claim_id": "b923c5f6-587c-437d-93d4-e21c77c3ab47",
+      "result_id": "e706468c-2789-4eb7-88ec-ebcc285b68b7"
+    },
+    {
+      "claim_id": "cdf8c836-c064-432d-a03d-c3af4689bead",
+      "result_id": "e706468c-2789-4eb7-88ec-ebcc285b68b7"
+    },
+    {
+      "claim_id": "423baf9b-8e18-47ea-b1ec-9d430757fb3c",
+      "result_id": "e706468c-2789-4eb7-88ec-ebcc285b68b7"
+    },
+    {
+      "claim_id": "586b128d-7492-435f-a341-6ac56831e33e",
+      "result_id": "e706468c-2789-4eb7-88ec-ebcc285b68b7"
+    },
+    {
+      "claim_id": "4916e02a-be41-4041-850e-5411ae469e70",
+      "result_id": "8b7781c4-3278-4d0f-8cd1-1d204b7e8378"
+    },
+    {
+      "claim_id": "6acdd7ae-7e16-4586-a5b2-46e86a376f75",
+      "result_id": "8b7781c4-3278-4d0f-8cd1-1d204b7e8378"
+    },
+    {
+      "claim_id": "d1f0b02b-161e-4ce0-b9f4-568cb3acd9c6",
+      "result_id": "8b7781c4-3278-4d0f-8cd1-1d204b7e8378"
+    },
+    {
+      "claim_id": "f70b4231-3145-42fe-a2f7-7fe9f1c63e36",
+      "result_id": "8b7781c4-3278-4d0f-8cd1-1d204b7e8378"
+    },
+    {
+      "claim_id": "821a2bcf-1377-4699-a616-bdf06ae9c441",
+      "result_id": "8b7781c4-3278-4d0f-8cd1-1d204b7e8378"
+    },
+    {
+      "claim_id": "4602a04d-e804-4c38-bb35-c5a3ee9ddeaf",
+      "result_id": "8b7781c4-3278-4d0f-8cd1-1d204b7e8378"
+    },
+    {
+      "claim_id": "0eea4fd9-c92f-46e6-aed5-ad4dcea25c46",
+      "result_id": "8b7781c4-3278-4d0f-8cd1-1d204b7e8378"
+    },
+    {
+      "claim_id": "dfd40a0a-f94e-4aeb-9cdc-7413ef7b518d",
+      "result_id": "8b7781c4-3278-4d0f-8cd1-1d204b7e8378"
+    },
+    {
+      "claim_id": "1fbc4fab-2a7c-419b-813b-7e08161de471",
+      "result_id": "8b7781c4-3278-4d0f-8cd1-1d204b7e8378"
+    },
+    {
+      "claim_id": "8e3af69f-59df-4713-b10a-7180033029b5",
+      "result_id": "8b7781c4-3278-4d0f-8cd1-1d204b7e8378"
+    },
+    {
+      "claim_id": "d07f00cf-717d-4902-a80a-fdabb1f9a726",
+      "result_id": "8b7781c4-3278-4d0f-8cd1-1d204b7e8378"
+    },
+    {
+      "claim_id": "78a4899e-dfcc-48c3-856e-99af506cc4bc",
+      "result_id": "36c9c7fa-3dc1-4014-8868-4fde3b0b3a26"
+    },
+    {
+      "claim_id": "8ae886a4-dca9-46bd-8814-c69461835b96",
+      "result_id": "36c9c7fa-3dc1-4014-8868-4fde3b0b3a26"
+    },
+    {
+      "claim_id": "57f24dc8-8ced-468a-9143-b8f8ab4c350c",
+      "result_id": "36c9c7fa-3dc1-4014-8868-4fde3b0b3a26"
+    },
+    {
+      "claim_id": "4b68bd71-1f79-4ffd-b8fc-e6395b1904aa",
+      "result_id": "36c9c7fa-3dc1-4014-8868-4fde3b0b3a26"
+    },
+    {
+      "claim_id": "5af5b4a1-d80c-497d-98cf-7c80e1526fb5",
+      "result_id": "36c9c7fa-3dc1-4014-8868-4fde3b0b3a26"
+    },
+    {
+      "claim_id": "ceabddbc-7b56-4cbe-a72c-68823256b0ca",
+      "result_id": "36c9c7fa-3dc1-4014-8868-4fde3b0b3a26"
+    },
+    {
+      "claim_id": "8c9d24ff-a387-4701-bbfb-ae015a4d9443",
+      "result_id": "5f7a96d4-6255-4a23-97ff-a2c41f77cc5f"
+    },
+    {
+      "claim_id": "80c5b6b8-4119-4740-873e-9d7110c90aee",
+      "result_id": "5f7a96d4-6255-4a23-97ff-a2c41f77cc5f"
+    },
+    {
+      "claim_id": "88785789-0458-4b7e-9d16-1c1a86e97df6",
+      "result_id": "5f7a96d4-6255-4a23-97ff-a2c41f77cc5f"
+    },
+    {
+      "claim_id": "a6e4e20b-5c31-4c3b-9e20-da5512d29cf0",
+      "result_id": "5f7a96d4-6255-4a23-97ff-a2c41f77cc5f"
+    },
+    {
+      "claim_id": "dd874f3f-6c60-4c4c-b37a-fdcecc6f0772",
+      "result_id": "5f7a96d4-6255-4a23-97ff-a2c41f77cc5f"
+    },
+    {
+      "claim_id": "9c48b5e5-4b86-45af-9b4d-787eda4d1ca9",
+      "result_id": "5f7a96d4-6255-4a23-97ff-a2c41f77cc5f"
+    },
+    {
+      "claim_id": "62446b11-ed54-46a0-b3fa-1c51985e426e",
+      "result_id": "5f7a96d4-6255-4a23-97ff-a2c41f77cc5f"
+    },
+    {
+      "claim_id": "0df77436-c53b-4f48-aaf4-d3f00723485a",
+      "result_id": "2c174dba-8521-47dc-913b-5892cebc1e68"
+    },
+    {
+      "claim_id": "8e9de519-ddd3-4a5d-a903-830533f3a720",
+      "result_id": "2c174dba-8521-47dc-913b-5892cebc1e68"
+    },
+    {
+      "claim_id": "0ae94a80-4c89-4d29-9cca-0b5ec0be149c",
+      "result_id": "2c174dba-8521-47dc-913b-5892cebc1e68"
+    },
+    {
+      "claim_id": "f51c1760-fa45-40d5-8b81-4227ff9d144f",
+      "result_id": "2c174dba-8521-47dc-913b-5892cebc1e68"
+    },
+    {
+      "claim_id": "82d20250-28a9-4346-8e1a-2800b76ae9d5",
+      "result_id": "2c174dba-8521-47dc-913b-5892cebc1e68"
+    },
+    {
+      "claim_id": "c4e09712-f960-4b82-af35-1c1f13b62ea8",
+      "result_id": "2c174dba-8521-47dc-913b-5892cebc1e68"
+    },
+    {
+      "claim_id": "abca7e6f-8aec-4055-9569-ef36a104a31f",
+      "result_id": "2c174dba-8521-47dc-913b-5892cebc1e68"
+    },
+    {
+      "claim_id": "68ed43c4-1e17-4408-85e6-1e4e95e34af1",
+      "result_id": "2c174dba-8521-47dc-913b-5892cebc1e68"
+    },
+    {
+      "claim_id": "db112a92-fb9c-4bda-9dac-aee113033a70",
+      "result_id": "2c174dba-8521-47dc-913b-5892cebc1e68"
+    },
+    {
+      "claim_id": "429cfec8-3ec3-4535-b334-0e42ca3f89f2",
+      "result_id": "2c174dba-8521-47dc-913b-5892cebc1e68"
+    },
+    {
+      "claim_id": "38ae6f10-435b-460a-809d-f32099339926",
+      "result_id": "2c174dba-8521-47dc-913b-5892cebc1e68"
+    },
+    {
+      "claim_id": "2b3729cf-6670-4227-867b-a0465b87aec8",
+      "result_id": "2c174dba-8521-47dc-913b-5892cebc1e68"
+    },
+    {
+      "claim_id": "6cb85e7e-afa2-4dbc-a7c4-56741ae25b46",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "7e4090b8-c46c-4da4-96e0-9ebe9bc32a55",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "400a0b90-5cf8-42fa-a4bf-0f0be2b25fbc",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "6e992a5c-05b1-4ac5-928d-171979c83ad5",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "708bafea-0874-44a2-a583-d1b3977704ee",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "805910d6-fdb6-47dd-b4fc-58e98114db49",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "0c1e695f-f8bb-4166-857e-c744b70c04bb",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "64ae7983-4557-4a14-b635-dea687e5c59b",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "7c4c62a7-ed9c-497d-b09a-176ef073b1b9",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "e41777c9-612f-428b-aa08-25c3e6901586",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "5ab0a840-1c0c-4850-adb8-d08fe6092033",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "ed34a843-fea2-4fcd-bc66-f7d8a11c7b2d",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "34f470b1-0f74-420e-a896-ec53f4171c12",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "e52978c2-082d-4bc1-ab72-0c21538c9be3",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "2fba8e48-c19d-4769-b024-ec7dfe229749",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "d57060c9-727c-4052-a8fa-276850a725e5",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "2cb93f91-82fb-47d7-ae3a-a90de651855b",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "0251d14b-7c4a-4d11-a547-cb55e6254e25",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "1ec5fe88-e471-444b-90f8-47c746472748",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "5aca4dfe-8790-4b5a-8222-78f314ca698c",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "de4dd6e4-bff8-4eec-9260-f2daab6a181a",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "e9eb3870-ff26-436d-aa89-50ebe33c1ace",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "efc049e7-dff4-4086-9700-d05fee85157a",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "e2973546-6fa0-4cdd-b50c-68c8fe9bd132",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "0367add8-bb48-4bd0-88eb-625b311da598",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "54253ee0-1e49-4b21-9485-d5f05827ca2e",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "019a6606-6bcc-4f5a-920c-ad3db3580df8",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "2e0bb8f7-c2c1-4665-9610-0669eab8fabd",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "0a29e8f9-0ca2-4c8a-8b1a-e270744211d2",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "74803cd9-5b03-4b47-8dea-5651474d0c1c",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "40bb07d7-a99e-4627-af23-b60a1a558975",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "0dd616d5-9786-4160-9fe0-db51bc82e548",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "7750687c-5121-4c61-9d5c-198964052180",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "4609fdd5-63fd-47bc-8e9c-07399d464c00",
+      "result_id": "ba450b3e-6b1b-4b5d-afea-8cbd064a5756"
+    },
+    {
+      "claim_id": "ddbabf4a-a04d-478b-9cb5-381d51a47d68",
+      "result_id": "e3d9fd87-020c-4582-9df6-6dc473a13043"
+    },
+    {
+      "claim_id": "ab71c38a-7f11-4c24-9865-24533b7d55d5",
+      "result_id": "e3d9fd87-020c-4582-9df6-6dc473a13043"
+    },
+    {
+      "claim_id": "3d51ffcf-df61-4849-a069-4c734e2f2bed",
+      "result_id": "e3d9fd87-020c-4582-9df6-6dc473a13043"
+    },
+    {
+      "claim_id": "1dedab66-473e-4559-b5c2-39dcf266148a",
+      "result_id": "e3d9fd87-020c-4582-9df6-6dc473a13043"
+    },
+    {
+      "claim_id": "18a0ebcf-d39d-4ccb-ae4e-20246eb8be76",
+      "result_id": "a2b99817-f024-4550-b119-f641d019c063"
+    },
+    {
+      "claim_id": "97f0c638-8530-4041-850c-7346c154f02a",
+      "result_id": "a2b99817-f024-4550-b119-f641d019c063"
+    },
+    {
+      "claim_id": "eab06f46-0a2f-43fe-9308-54f7e52d0532",
+      "result_id": "a2b99817-f024-4550-b119-f641d019c063"
+    },
+    {
+      "claim_id": "1804f1b5-ca2f-4b09-80ee-c9d5e77b1b1c",
+      "result_id": "a2b99817-f024-4550-b119-f641d019c063"
+    },
+    {
+      "claim_id": "6cdd6c3d-be0e-4f67-adbb-9788f872a234",
+      "result_id": "a2b99817-f024-4550-b119-f641d019c063"
+    },
+    {
+      "claim_id": "05299e39-8ad0-4cc4-8eea-28820451cd67",
+      "result_id": "a2b99817-f024-4550-b119-f641d019c063"
+    },
+    {
+      "claim_id": "2a048ed0-8093-4907-a09f-fbc6631d8f82",
+      "result_id": "a2b99817-f024-4550-b119-f641d019c063"
+    },
+    {
+      "claim_id": "2aec1288-17e2-476e-96ca-dec60f74bc87",
+      "result_id": "a2b99817-f024-4550-b119-f641d019c063"
+    },
+    {
+      "claim_id": "da1678e1-bb04-4664-8752-10f1f51ddd3f",
+      "result_id": "a2b99817-f024-4550-b119-f641d019c063"
+    },
+    {
+      "claim_id": "27d24906-a455-4748-ad23-08059fef75f7",
+      "result_id": "a2b99817-f024-4550-b119-f641d019c063"
+    },
+    {
+      "claim_id": "e7a6e66d-b79c-4744-8a70-b1b0822ca021",
+      "result_id": "a2b99817-f024-4550-b119-f641d019c063"
+    },
+    {
+      "claim_id": "e7380c4b-0f6d-4738-95af-7d45bc8061ee",
+      "result_id": "2c66c6f3-6332-4fbf-a8d0-cd4aa51ac1bb"
+    }
+  ],
+  "comparisons": []
+}

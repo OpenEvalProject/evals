@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C104",
+      "C105"
+    ],
+    "result": "The crystal structure of the HIV-1 CTD-SP1 fragment reveals a goblet-shaped hexamer with the CTD forming the cup and a 6-helix bundle forming the stem, connected by a type II \u03b2-turn. The structure was determined at 3.27 \u00c5 resolution (R/Rfree = 0.246/0.278) and represents a flattened version of the immature Gag lattice that fits well to cryoEM data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C23-C27, C29-C31, C36-C39 are directly supported by crystallographic data (Table 1, Figures 1-3) showing the hexameric structure with \u03b2-turn and 6-helix bundle. The structure determination is well-documented (C24, C104, C105) with appropriate validation. The fit to cryoEM data (C25) provides independent validation. Despite weak diffraction data due to small crystal size (C104), high-quality maps were obtained through NCS averaging and modern density modification (C105).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C58",
+      "C61",
+      "C62",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C82",
+      "C86"
+    ],
+    "result": "The \u03b2-turn (residues 352-355, GVGGP motif) is critical for immature virus assembly, acting as a structural clasp that organizes multiple hexamer-stabilizing elements. Mutagenesis shows that virtually all mutations in the \u03b2-turn and CA-SP1 switch region disrupt assembly in an 'all-or-none' manner, indicating the \u03b2-turn is required for nucleation of immature particles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural data (C50-C52, C74-C75) clearly shows the \u03b2-turn buried in a pocket formed by multiple structural elements from adjacent subunits. The comprehensive mutagenesis data (C54, C61, Table 2, Figure 5) demonstrates that \u03b2-turn mutations severely disrupt assembly, with the most severe defects mapping to this region (C77). The 'all-or-none' behavior (C55-C56) and differential assembly in DNA vs. tartrate conditions (C57-C58) support the inference that the \u03b2-turn is critical for nucleation (C62, C82, C86). The 'clasp' function (C76) is speculative but well-supported by structural analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C64",
+      "C65"
+    ],
+    "result": "The 6-helix bundle regulates proteolysis during maturation by sequestering the scissile bond (Leu363-Ala364) inside the helical barrel. The same sidechains that mediate bundle packing occupy protease sub-pockets when bound to PR, indicating the bundle must unfold for proteolysis. This explains why the CA-SP1 junction has the slowest processing rate during maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The crystal structure clearly shows the scissile bond sequestered within the 6-helix bundle (C44, Figure 3D), with sidechains mediating coiled-coil interactions (C39, C46). Comparison with the PR-bound structure (C45) demonstrates that the same residues must adopt an extended \u03b2-strand configuration for cleavage. The inference that unfolding is required for PR access (C47) is well-supported. The correlation with slow processing rates (C41, C48-C49) is supported by cited kinetic data, though the rate-limiting step inference (C48) could benefit from direct experimental validation. The structural conservation boundary (C42-C43) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "HIV-1 maturation inhibitors like bevirimat suppress unfolding of the CA-SP1 junction, thereby delaying protease access to the scissile bond. Resistance mutations destabilize the junction to enhance proteolysis, while stabilizing mutations (e.g., T371I) inhibit proteolysis even without inhibitor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The mechanism proposed for maturation inhibitor action (C4, C68) is a reasonable inference from the structural data showing scissile bond sequestration, but lacks direct experimental validation in this study. The resistance mutation analysis (C69-C71) relies on cited literature rather than new data. The T371I stabilization mechanism (C72) is speculative. The crosslinking data for bevirimat (C73) is cited but does not definitively establish binding location. While the model is plausible and consistent with existing data, it requires experimental validation through binding studies, unfolding kinetics, or resistance profiling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "CA-SP1 switch mutants that fail to form immature VLPs in tartrate conditions instead assemble into mature-like particles, with particle identity established at nucleation. Nucleic acid (DNA) can partially rescue assembly defects by promoting folding of the CA-SP1 junction through clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutagenesis data (C57, Table 2, Figure 5E-H) clearly shows that most CA-SP1 mutants form mature-like particles in tartrate but can form immature VLPs with DNA. The observation that individual particles are either immature or mature, not mixed (C59), supports the nucleation model. The inference that DNA promotes junction folding through clustering (C60) is reasonable given the concentration-dependent helical propensity of SP1 (C20) and the differential mutant behavior in DNA vs. tartrate conditions. However, direct evidence for DNA-induced folding would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Comparison of immature CTD-SP1 and mature CTD structures reveals conformational changes including a kink in the dimerization helix and disorder of C-terminal residues in the mature form, indicating the C-terminal tail unfolds upon maturation and has no role in mature capsid assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural comparison (C33, Figure 2A-B) clearly shows the presence/absence of a helix kink, consistent with previous observations (cited). The disorder of downstream residues in mature CTD (C34) is well-documented in cited structures. The inference that the C-terminal tail unfolds and is not involved in mature assembly (C35) is reasonable based on the structural data, though it could be strengthened by functional studies of C-terminal deletions in mature capsid assembly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C106"
+    ],
+    "result": "The CTD-SP1 fragment contains minimal information required to assemble the immature lattice, and the \u0394MA-CA-SP1-NC VLPs used for mutagenesis are nearly identical to authentic immature virions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C106 are supported by citations to previous validation studies. The 2D crystallography data (C23, Figure 1\u2014figure supplement 1) confirms that purified CTD-SP1 assembles into hexagonal lattices with the expected unit cell spacing, providing experimental validation in this study. These are well-established findings that provide appropriate context for the structural and mutagenesis studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "Generation of Gag curvature does not necessarily require the conformational variations observed in mature capsid subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inference (C28) is supported by the observation that flattening the lattice in crystals results in minimal structural changes (average RMSD ~1.9 \u00c5). The comparison between flat crystal lattice and curved cryoEM structure shows the changes are dispersed across subunits rather than localized. This is a reasonable conclusion, though it's worth noting that the immature lattice may have different curvature requirements than the mature capsid.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Assembly defects show a gradient with most severe mutations in the \u03b2-turn and decreasing severity toward the C-terminus. SP1 is not strictly required for Gag self-association (deletion mutants form membrane patches), but the \u03b2-turn is required very early in assembly, likely during nucleation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The graded severity of assembly defects (C77) is evident in the mutagenesis data (Table 2). The comparison with previous cellular studies (C78-C80) is well-supported by citations showing that SP1 deletion mutants form membrane patches while \u03b2-turn mutants remain cytosolic. The inference that SP1 is not strictly required for self-association but the \u03b2-turn is required for nucleation (C81-C82) is logical based on these observations, though direct nucleation assays would provide stronger evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "In unassembled Gag, the \u03b2-turn fluctuates between folded and unfolded states, with the entire CA-SP1 junction folding only upon assembly. Folding of the CA-SP1 switch, particularly the \u03b2-turn, is a critical step in nucleation of the immature lattice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The speculation about \u03b2-turn dynamics in unassembled Gag (C85) is based on previous NMR data (C83-C84) showing disorder with weak helical propensity, but lacks direct experimental evidence in this study. The proposal that folding occurs upon assembly (C86) is inferred from mutagenesis showing that intact \u03b2-turn cannot rescue defective junction helix and vice versa, but this could also reflect interdependent stability rather than coupled folding. Direct biophysical studies (e.g., NMR, hydrogen-deuterium exchange) would be needed to validate the folding mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "RNA-mediated Gag clustering promotes folding of the CA-SP1 junction and 6-helix bundle, leading to hexamer formation as the nucleation unit. The CA-SP1 junction allosterically communicates NC/RNA binding status to upstream assembly domains, with junction folding 'reeling in' the NC domain and genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The model for RNA-mediated assembly nucleation (C87-C94) is largely speculative, though based on reasonable inferences from the structural data and cited literature. The proposal that RNA clustering promotes junction folding (C90) is supported by the concentration-dependent helical propensity of SP1 (C20) and the DNA rescue of mutant assembly (C60), but lacks direct evidence. The hexamer as nucleation unit (C91) is intuitive but not experimentally demonstrated. The 'reeling in' mechanism (C92-C93) and allosteric communication model (C94) are plausible but speculative. These hypotheses would benefit from experimental validation through assembly kinetics, RNA binding studies, or structural studies of Gag-RNA complexes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Comparative analysis suggests retroviruses without spacers (e.g., MPMV) retain the \u03b2-turn 'clasp' assembly determinant but lack the 6-helix bundle for protease regulation, while RSV has a longer, more stable junction helix that may serve both functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The comparative analysis provides interesting evolutionary context, but the conclusions are largely speculative. The MPMV sequence analysis (C96, Figure 4\u2014figure supplement 1) shows similarity in the 'clasp' region, and the absence of a 6-helix bundle is supported by cited cryoEM data (C97). However, the functional interpretation (C95) is speculative. The RSV comparison (C98-C100) is based on cited structural data showing a longer helix, but the proposal that it serves dual functions is inference rather than demonstrated fact. These comparative analyses would benefit from functional studies in the respective viral systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "A concurrent cryoEM study by Schur et al. independently confirms that the CA-SP1 boundary forms a 6-helix bundle important for Gag assembly and proteolytic maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The note about the concurrent publication (C101-C102) provides important context showing independent validation of the key findings. This strengthens confidence in the major conclusions about the 6-helix bundle structure and function. The convergence of crystallographic and cryoEM approaches on the same structural model is significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C40",
+      "C41",
+      "C103"
+    ],
+    "result": "Background claims establishing prior knowledge about HIV-1 assembly, maturation, structural switches, and the CA-SP1 junction, including its predicted helical structure, role in assembly and maturation, and binding site for maturation inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C5-C21, C40-C41, C103) provide essential background context and are appropriately supported by citations to established literature. They accurately represent prior knowledge in the field and set up the rationale for the current structural study. The P373T substitution note (C103) is a minor methodological detail appropriately documented.",
+    "result_type": "MINOR"
+  }
+]

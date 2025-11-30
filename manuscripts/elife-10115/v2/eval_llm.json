@@ -1,0 +1,365 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "GWL overexpression promotes cell transformation in immortalized mammary gland cells (MCF10A), NIH3T3 cells, and immortalized human fibroblasts. The transforming effects include increased proliferation, reduced contact inhibition, and anchorage-independent growth. In primary human fibroblasts, hyperactive GWL (K72M) induces senescence, but in immortalized fibroblasts (with hTERT and SV40 T antigen), GWL promotes transformation comparable to V12-Ras.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C48 provide converging evidence from multiple cell types (MCF10A, NIH3T3, primary and immortalized fibroblasts) showing that GWL overexpression induces transformation phenotypes. The data include proliferation assays, contact inhibition assays, soft agar growth, FACS analysis, and \u03b2-galactosidase staining. The kinase-dead mutant (G44S) acts as a dominant negative, supporting specificity. The requirement for immortalization in primary cells is consistent with known oncogene biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "GWL expression levels correlate with invasive behavior in breast cancer cell lines. D3H2LN cells (highly metastatic) have higher GWL levels and greater proliferation, migration, and invasion than MDA-MB-231 cells. GWL overexpression in MDA-MB-231 increases these properties to D3H2LN levels, while GWL knockdown in D3H2LN reduces them to MDA-MB-231 levels. Similar results were obtained in SW480/SW620 colon cancer cell pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 demonstrate a dose-dependent relationship between GWL levels and oncogenic properties using gain-of-function and loss-of-function approaches in matched cell line pairs. The rescue experiment (C54) with shRNA-resistant WT but not kinase-dead GWL confirms specificity. In vitro kinase assays (C56) validate that increased GWL expression correlates with increased kinase activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C113"
+    ],
+    "result": "GWL levels modulate tumor growth in vivo. Tumors from MDA-MB-231 cells overexpressing GWL grew significantly faster (3-fold increase) than controls, while tumors from D3H2LN cells with GWL knockdown grew significantly slower (2-fold decrease) than controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 and C113 provide in vivo validation using xenograft experiments with both gain-of-function and loss-of-function approaches. The bidirectional effects (increased growth with overexpression, decreased growth with knockdown) strengthen the conclusion. However, the manuscript does not specify the number of animals used (n=4 mentioned), which is relatively small for xenograft studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "GWL overexpression increases AKT phosphorylation at S473 but not T308, and decreases GSK3 phosphorylation at inhibitory sites S9/S21. This effect is observed across multiple cell lines (MDA-MB-231, SW480, SW620, D3H2LN, NIH3T3, HeLa, MCF10A, and primary human fibroblasts) and requires GWL kinase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 are supported by phospho-kinase arrays and Western blots across multiple cell types. The specificity is demonstrated by the requirement for kinase activity (no effect with kinase-dead mutant) and the bidirectional effects (increased with overexpression, decreased with knockdown). The selective effect on S473 but not T308 phosphorylation is consistently observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "AKT inhibition reverses the oncogenic phenotype induced by GWL overexpression. Treatment with 1 \u03bcM AKT inhibitor VIII (or MK2206) reduces proliferation, invasion, migration, and soft agar growth in GWL-overexpressing cells to control levels, while having minimal effect on control cells. MEK inhibition has no effect, indicating specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C74 demonstrate that AKT inhibition is sufficient to reverse GWL-induced transformation using two different AKT inhibitors across multiple cell lines and assays. The dose-response analysis (C68) establishes appropriate inhibitor concentrations. The lack of effect with MEK inhibition (C72) supports specificity. This provides strong evidence that GWL's oncogenic effects are mediated through AKT.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "GWL does not directly phosphorylate AKT or act through increased mTORC2 activity. In vitro phosphorylation assays show no direct phosphorylation of AKT by GWL. Rictor knockdown reduces AKT S473 phosphorylation and proliferation in control cells but has no effect in GWL-overexpressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 use complementary approaches (in vitro kinase assays and Rictor knockdown) to rule out two potential mechanisms. The Rictor knockdown experiment is particularly informative, showing that GWL-overexpressing cells are resistant to mTORC2 inhibition, indicating an alternative pathway. However, the manuscript does not show the efficiency of Rictor knockdown in GWL-overexpressing cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "AKT activation by GWL is independent of the ARPP19/ENSA-PP2AB55 pathway. Overexpression of WT ARPP19 increases proliferation (dependent on S62 phosphorylation), but neither ARPP19 nor ENSA overexpression affects AKT S473 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 demonstrate that the known GWL substrates ARPP19 and ENSA do not mediate AKT activation. The use of phosphorylation-deficient mutants (S62A ARPP19, S67A ENSA) provides specificity controls. This is a critical finding showing that GWL has functions beyond the canonical ARPP19/ENSA-PP2AB55 pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Overexpression of PP2A regulatory subunits B55 and B56 reduces proliferation in both control and GWL-overexpressing cells but does not decrease AKT S473 phosphorylation, indicating that PP2AB55 and PP2AB56 inhibition is not involved in GWL-induced AKT phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 provide additional evidence that PP2AB55/B56 are not the relevant phosphatases for AKT S473 dephosphorylation in this context. The observation that B55/B56 overexpression affects proliferation but not AKT phosphorylation suggests these phosphatases have other relevant substrates. This further supports the conclusion that GWL acts through a novel pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "GWL overexpression promotes proteasome-dependent degradation of PHLPP through the SCF-\u03b2TrCP pathway. PHLPP levels are dramatically reduced in GWL-overexpressing cells and increased in GWL knockdown cells. Cycloheximide chase experiments show accelerated PHLPP degradation with GWL overexpression. A PHLPP mutant lacking GSK3 phosphorylation sites (S/T4A) is resistant to GWL-induced degradation. GWL does not directly phosphorylate PHLPP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C95 provide comprehensive evidence for the mechanism of PHLPP degradation using Western blots, cycloheximide chase experiments, proteasome inhibitor treatment, and phosphorylation-deficient mutants. The data are consistent with the known GSK3-SCF-\u03b2TrCP pathway for PHLPP degradation. The in vitro phosphorylation assay (C95) rules out direct phosphorylation by GWL.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C118",
+      "C119"
+    ],
+    "result": "GWL-induced PHLPP degradation is mediated by GSK3 activation. GSK3 inhibitor treatment increases PHLPP levels in GWL-overexpressing cells in a dose-dependent manner but has no effect in control cells. This is consistent with decreased phosphorylation of GSK3 inhibitory sites (S9/S21) in GWL-overexpressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 and C118-C119 link GSK3 activation to PHLPP degradation using GSK3 inhibitor experiments. The dose-dependent effect specifically in GWL-overexpressing cells is compelling. However, the mechanism by which GWL activates GSK3 (through dephosphorylation of inhibitory sites) remains unclear and is acknowledged as speculative by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C117"
+    ],
+    "result": "PHLPP overexpression reverses the oncogenic phenotype induced by GWL overexpression. Transient PHLPP overexpression in GWL-overexpressing cells reduces proliferation, invasion, and soft agar growth to control levels, eliminating differences between control and GWL-overexpressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 and C117 provide rescue experiments demonstrating that PHLPP is the critical target. The complete reversal of the GWL phenotype by PHLPP overexpression is strong evidence for the proposed pathway. However, the transient nature of PHLPP overexpression (with declining levels over time as shown in Figure 7B) is a limitation, though the effects are still observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C138"
+    ],
+    "result": "GWL is overexpressed in human cancers. GWL levels are 3-10 fold higher in 19 of 20 transformed cell lines compared to non-transformed cells. In colorectal cancer patients, GWL is overexpressed in 9 of 13 matched tumor samples by Western blot and in 56% of 76 patients by tissue microarray (25.6% median increase). GWL overexpression is observed at all tumor stages (I/II, III, IV).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C108 and C138 provide extensive evidence for GWL overexpression in cancer using cell lines, patient samples, and tissue microarrays. The observation that GWL is overexpressed at all stages (C105) suggests early involvement in transformation rather than progression. The quantitative analysis of the TMA is rigorous. However, the Western blot analysis of patient samples shows overexpression in only 9 of 13 cases (69%), which is less than the 56% from the TMA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C126"
+    ],
+    "result": "The authors propose that GWL phosphorylates an unknown protein(s) to promote GSK3 activation through dephosphorylation of inhibitory sites, leading to PHLPP degradation and AKT hyperactivation. The molecular mechanism by which GWL activates GSK3 remains to be elucidated. One hypothesis is that GWL activates a phosphatase responsible for GSK3 dephosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C123 and C126 are explicitly speculative (marked as SPECULATION in evidence_type). While the data support that GWL leads to GSK3 activation and PHLPP degradation, the direct mechanism linking GWL to GSK3 dephosphorylation is not demonstrated. The authors acknowledge this gap and propose it as future work. The hypothesis about phosphatase activation is reasonable but untested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C120",
+      "C134",
+      "C137",
+      "C139",
+      "C140"
+    ],
+    "result": "The authors conclude that GWL is a novel human oncoprotein with transforming and invasive properties that acts through a pathway independent of ARPP19/ENSA-PP2AB55. GWL represents a potential tumor marker and therapeutic target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109, C120, C134, C137, and C139 summarize the major findings and are well-supported by the experimental data. The novelty of the pathway and the oncogenic properties are clearly demonstrated. However, C140 (GWL as a tumor marker and therapeutic target) is speculative about future applications rather than a demonstrated result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C43",
+      "C44",
+      "C86",
+      "C92",
+      "C124"
+    ],
+    "result": "The manuscript provides extensive background on GWL, PP2A, and their roles in mitosis and cancer, citing previous literature. This includes the GWL-ARPP19/ENSA-PP2AB55 pathway in mitosis, PP2A as a tumor suppressor, and the regulation of oncogenic pathways by PP2A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C11-C31, C43-C44, C86, C92, and C124 are background claims supported by citations to previous research. These establish the context for the current work and are appropriately referenced. No evaluation of the accuracy of these prior claims is needed as they are established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The authors review existing data on GWL mutations and expression in cancer from public databases. GWL mutations are found in various cancers but most are non-coding or in regions that don't affect activity. Copy number amplifications occur in breast and ovarian cancer. Increased gene expression is reported in several cancers, but previous protein expression databases showed no differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C133 summarize publicly available genomic and expression data from databases (ICGC, cBioPortal, GENT, Human Protein Atlas). These are appropriately cited and provide context for why protein-level analysis in patient samples (as done in this study) was needed. The observation that previous protein databases showed no differences (C133) highlights the novelty of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C135",
+      "C136"
+    ],
+    "result": "The authors summarize key findings about GWL's oncogenic properties, including induction of senescence in primary cells, transformation of immortalized cells, and promotion of invasion. They infer that GWL facilitates invasion but does not directly participate in metastasis formation based on its overexpression at all tumor stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 and C135 summarize experimental findings from the manuscript. C136 is an inference about GWL's role in invasion versus metastasis based on the observation that GWL is overexpressed at early stages. This inference is reasonable but not directly tested (e.g., no metastasis assays in vivo).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The abstract claims summarize the main findings: GWL overexpression promotes cell transformation and invasion through AKT hyperphosphorylation, which is independent of endosulfines and mediated by GSK3-dependent PHLPP degradation. GWL is overexpressed in colorectal tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C10 are abstract-level summaries of the main results, which are supported by the detailed experimental data in the manuscript. These claims accurately reflect the findings and conclusions of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The authors conclude that GWL-induced proliferation, migration, and invasion are mediated by AKT S473 phosphorylation, which occurs through PHLPP degradation rather than direct phosphorylation or increased mTORC2 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C116 are summary conclusions supported by multiple lines of evidence including AKT inhibitor experiments, Rictor knockdown, in vitro phosphorylation assays, and PHLPP degradation studies. These conclusions are well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C125"
+    ],
+    "result": "GWL-overexpressing cells display hyperactivated AKT but dephosphorylated GSK3 at inhibitory sites S9/S21, which is counterintuitive given that AKT normally phosphorylates these sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C125 describes an apparent paradox observed in the data (supported by Figures 3B and 6E). This observation is important because it suggests that GWL's effect on GSK3 overrides the normal AKT-mediated inhibition of GSK3, pointing to a novel regulatory mechanism. The authors acknowledge this as counterintuitive and propose hypotheses to explain it.",
+    "result_type": "MAJOR"
+  }
+]

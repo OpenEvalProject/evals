@@ -1,0 +1,394 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C20",
+      "C21",
+      "C22",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Canonical Wnt signaling is required in ISCs to promote germ cell differentiation. Knockdown of Wnt pathway components (arm, dsh, fz/fz2) or overexpression of negative regulators (axn, sgg) causes germ cell differentiation defects, and constitutively active Arm rescues dsh knockdown phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C27 provide converging evidence through multiple independent RNAi lines, genetic epistasis experiments, and rescue with constitutively active Arm. The use of multiple independent RNAi lines (C17, C18) controls for off-target effects, and the rescue experiment (C25) demonstrates specificity. The phenotypes are consistent across different manipulations of the pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Wnt signaling is required specifically in adult ISCs to promote germ cell differentiation, as demonstrated by temperature-shift experiments using the gal80ts system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 demonstrate temporal specificity using the gal80ts system. The controls at 25\u00b0C show normal phenotypes while temperature shift to 29\u00b0C causes defects, indicating adult-specific requirements. This addresses the potential confound that developmental defects could cause the observed phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Wnt signaling is required to maintain ISCs. Loss of Wnt signaling causes severe ISC loss (from ~30-35 ISCs to <5 ISCs), while hyperactive Wnt signaling increases ISC numbers (from 32 to 130 ISCs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 provide quantitative data on ISC numbers using the PZ1444 reporter. The bidirectional effects (loss-of-function reduces ISCs, gain-of-function increases ISCs) strengthen the conclusion. However, the authors acknowledge they cannot completely rule out developmental effects (claim not explicitly stated but implied in discussion).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Wnt signaling maintains ISCs by promoting proliferation (measured by BrdU incorporation) and survival (measured by TUNEL labeling). Defective Wnt signaling decreases proliferation and increases apoptosis, while hyperactive signaling has opposite effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 use standard assays (BrdU for proliferation, TUNEL for apoptosis) to demonstrate bidirectional effects. The data show statistical significance and are consistent with the ISC number phenotypes. The shorter culture time mentioned suggests awareness of potential confounds from severe ISC loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Wnt signaling in ISCs regulates germ cell differentiation partly by preventing BMP signaling spread to the differentiation zone. Loss of Wnt signaling causes ectopic pMad and Dad-lacZ expression in CBs, and heterozygous dpp mutations partially suppress the differentiation defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 demonstrate BMP signaling changes using two independent markers (pMad and Dad-lacZ) and genetic interaction with dpp mutations. The partial suppression by dpp heterozygous mutations supports a causal role for BMP signaling. However, the allele-specific effects (dpphr56 rescues dshKD1 but not dshKD2) suggest complexity that is not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Wnt signaling is required to maintain long ISC cellular processes that wrap around differentiated germ cells. Loss of Wnt signaling causes failure of ISC processes to extend into accumulated CBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 demonstrate ISC cellular process defects using CD8GFP visualization. However, as the authors acknowledge in C145, it is difficult to distinguish cause and effect between germ cell differentiation defects and ISC process loss, as properly differentiated germ cells are required to maintain ISC processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C132"
+    ],
+    "result": "Wnt signaling does not maintain Piwi expression in ISCs. Piwi protein levels are unchanged or elevated in Wnt signaling-defective ISCs, and piwi mRNA levels are upregulated rather than downregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 and C132 directly contradict a previous study (C63, C130) using both protein quantification and RNA-seq data. The data are clear and quantitative, examining multiple independent knockdown lines. This represents an important correction to the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C79",
+      "C80"
+    ],
+    "result": "Wnt signaling controls cellular redox state in ISCs by regulating expression of Gst genes (GstD2, GstD4, GstD10, GstE3). Loss of Wnt signaling causes downregulation of Gst genes and elevated ROS levels (measured by DHE fluorescence), which can be rescued by overexpression of GST2 or CAT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C80 establish a novel link between Wnt signaling and redox regulation through RNA-seq data showing Gst gene downregulation, DHE fluorescence showing elevated ROS, and rescue experiments with antioxidant enzymes. The convergence of transcriptional, biochemical, and genetic evidence strongly supports this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Elevated ROS is responsible for both the germ cell differentiation defect and ISC loss caused by defective Wnt signaling. Overexpression of ROS-reducing enzymes (GST2, CAT, SOD1) dramatically rescues both phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 demonstrate that ROS elevation is causally responsible for the phenotypes through rescue experiments with three independent antioxidant enzymes. The partial rescue of ISC numbers (C83) suggests ROS is not the only mechanism, which the authors appropriately acknowledge. The lack of effect on GSC numbers (C81) provides an important specificity control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "GstD2 and Cat work together in ISCs to maintain ISCs and promote germ cell differentiation. GstD2 knockdown causes a moderate differentiation defect that is enhanced by Cat knockdown, and the double knockdown causes more severe ISC loss than either single knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C99 demonstrate genetic interaction between GstD2 and Cat through double knockdown experiments. The use of two independent GstD2 RNAi lines with qRT-PCR validation (C88) controls for specificity. The synergistic effects in double knockdowns support the conclusion that these genes work together. The rescue by Gst2 and Cat overexpression (C90) confirms specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Wnt2 and Wnt4 function redundantly as autocrine signals in ISCs to promote germ cell differentiation. Single knockdowns cause minimal defects, but double knockdown causes severe defects similar to arm or dsh knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 demonstrate genetic redundancy through RNA-seq showing high expression of Wnt2 and Wnt4, and functional redundancy through single vs. double knockdown experiments using multiple independent RNAi lines. The similarity of double knockdown phenotypes to downstream pathway component knockdowns supports the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C153"
+    ],
+    "result": "Wnt signaling does not regulate mRNA expression levels of BMP pathway components (dpp, gbb, dally, tkv) in ISCs, as shown by RNA-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C153 use RNA-seq to show that BMP pathway component expression is unchanged in Wnt signaling-defective ISCs. This contradicts a recent study (C151) proposing that Wnt maintains tkv expression. The RNA-seq data are direct and quantitative, though the authors acknowledge that post-transcriptional regulation remains possible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "ROS elevation in ISCs is sufficient to cause ISC loss and germ cell differentiation defects. Overexpression of ROS-reducing enzymes rescues Wnt signaling-defective phenotypes, and knockdown of GstD2 and Cat causes similar phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 establish sufficiency through both rescue experiments (C137) and loss-of-function experiments (C139). The bidirectional evidence (rescue and phenocopy) strongly supports the causal role of ROS. However, the rescue is not complete (C83), indicating additional mechanisms exist.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background information on the Drosophila ovary system: GSCs are maintained by cap cells through BMP signaling and E-cadherin, and GSC progeny undergo stereotyped divisions to form cysts. This represents established knowledge about the system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 provide background information supported by citations to established literature. These are well-accepted facts about the Drosophila ovary system and serve as context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C19",
+      "C23",
+      "C28",
+      "C29",
+      "C35"
+    ],
+    "result": "Technical background on Wnt signaling pathway components, genetic tools (c587-gal4, gal80ts), and markers (PZ1444) used in the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C23, C28, C29, C35 describe established tools and pathway components supported by citations. These provide necessary methodological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C34",
+      "C50",
+      "C51",
+      "C59"
+    ],
+    "result": "Previous work has shown that ISC loss causes germ cell differentiation defects through increased BMP signaling, and that long ISC cellular processes are required for differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C50, C51, C59 cite the authors' previous work establishing the importance of ISCs for germ cell differentiation. These provide context for interpreting the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C75",
+      "C78",
+      "C92"
+    ],
+    "result": "Background on the biochemical functions of GST proteins, CAT, and their roles in ROS detoxification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C75, C78, C92 describe established biochemical knowledge about antioxidant enzymes, supported by citations where applicable. This provides necessary context for the redox regulation mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C24",
+      "C43",
+      "C44"
+    ],
+    "result": "Constitutively active Arm expression causes egg chamber budding defects but not germ cell differentiation defects, and extra ISCs do not disrupt germ cell differentiation, suggesting ISCs provide a permissive environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C43, C44 provide important controls showing that hyperactive Wnt signaling or excess ISCs do not disrupt differentiation. This supports the model that ISCs provide a permissive rather than instructive environment. However, the inference about permissive environment (C44) is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C63",
+      "C68",
+      "C102",
+      "C129",
+      "C130"
+    ],
+    "result": "Discussion of previous work proposing relationships between Wnt signaling, Piwi, and germ cell differentiation, including a recent study that the current work contradicts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C68, C102, C129, C130 cite and discuss previous literature. C68 is speculative about potential interactions between Wnt and Piwi. These provide important context for understanding how the current work relates to and corrects previous findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "GstD2 is the most abundantly expressed and most severely downregulated Gst gene in Wnt signaling-defective ISCs, based on RNA-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 are supported by RNA-seq data (Figure 6A). This provides rationale for focusing on GstD2 in subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C142",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Discussion of previous work on Wnt signaling in stem cells, ROS in differentiation, and various mechanisms by which ISCs promote germ cell differentiation and prevent BMP signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C151 provide extensive discussion of previous literature on ISC function and BMP regulation. These are well-supported by citations and provide important context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C8",
+      "C9",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C134",
+      "C135",
+      "C136",
+      "C141",
+      "C143",
+      "C152"
+    ],
+    "result": "Summary statements and conclusions synthesizing the main findings of the study regarding Wnt signaling, redox regulation, ISC maintenance, and germ cell differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent summary statements and conclusions drawn from the experimental data. They are supported by the collective evidence from the experiments described in other claim groups. These provide important synthesis of the findings but are derivative of the primary experimental results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,408 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "SAM activation requires both light signaling and energy metabolites. Dark-grown cop1 mutants fail to produce organs unless supplemented with sucrose, while light-grown wild-type seedlings with compromised photosynthesis (norflurazon treatment) remain dormant unless sucrose is added. Neither light perception nor energy availability alone is sufficient for SAM activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 provide converging evidence from complementary genetic and pharmacological experiments. The cop1 mutant experiments (C48-C49) demonstrate light signaling alone is insufficient, while norflurazon experiments (C50-C51) show energy alone is insufficient. The conclusion (C52-C53) is well-supported by the experimental data and appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "WUS expression is environmentally regulated and triggers stem cell activation, while CLV3 expression is maintained independently of growth conditions. The pWUS:3xVENUS-NLS reporter faithfully recapitulates endogenous WUS behavior as confirmed by in situ hybridization and WUS-GFP protein analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 demonstrate robust validation of the WUS reporter through multiple independent methods (fluorescent reporter, in situ hybridization, WUS-GFP fusion protein). The conclusion that CLV3 is partially independent of WUS (C59) and that WUS activation triggers dormancy release (C60) is well-supported by the differential environmental responses observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C67",
+      "C68"
+    ],
+    "result": "WUS expression is induced independently by light or sucrose, with additive effects when both signals are present. Development of the SAM requires both signals, whereas WUS expression can be induced by each signal individually.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 provide quantitative fluorescence data showing WUS reporter is undetectable in darkness, induced by light from 3 days post-germination, and also induced by sucrose alone with additive effects. The distinction between WUS expression (induced by single signals) and SAM development (requiring both signals) in C67-C68 is clearly supported by the experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Blue and red light at low intensities induce WUS expression through phyB and cry1/cry2 photoreceptors. Far-red light shows weak WUS induction through phyA, with complex regulatory behavior requiring sucrose supplementation for full activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 demonstrate clear photoreceptor-specific effects using appropriate mutant backgrounds and wavelength-specific illumination. The far-red light experiments (C73-C77) reveal more complex phyA-dependent regulation, though the mechanistic understanding remains incomplete. The data support the conclusions but acknowledge uncertainty about phyA's regulatory role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Light signaling alone is sufficient for WUS expression independent of photosynthesis. Photosynthesis inhibitors (norflurazon, lincomycin) and CO2 reduction do not affect light-induced WUS expression at low light intensities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 provide multiple independent lines of evidence using different photosynthesis inhibitors and CO2 depletion. The consistent results across different experimental approaches strongly support the conclusion that light signaling, rather than photosynthetic metabolites, is sufficient for WUS activation under low light conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "COP1 represses WUS expression under all conditions tested. Loss of COP1 function leads to WUS activation in darkness, but HY5 is not required for WUS activation, suggesting involvement of other COP1-targeted transcriptional regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 demonstrate robust COP1-dependent repression using multiple alleles and both reporter and qRT-PCR approaches. The negative result with hy5 mutants (C88) is appropriately interpreted as suggesting alternative downstream factors (C89), though this remains speculative. The core finding about COP1's role is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Light is perceived by cells outside the SAM (cotyledons/hypocotyl) and transmitted to the meristem via a mobile signal. The SAM itself lacks competence to perceive and translate light signals into stem cell activation. Tissue-specific expression of constitutively active phyB demonstrates that vascular and mesophyll tissues can perceive light and activate WUS, but SAM-specific expression cannot.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C99 provide compelling evidence through tissue-specific expression of constitutively active phyB Y276H. The systematic testing of different promoters (ubiquitous, vascular, mesophyll, epidermal, SAM-specific) clearly demonstrates that light perception occurs outside the SAM. The conclusion about mobile signaling (C94, C97) is well-supported, though the identity of the signal remains unknown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Light and metabolic signals synergistically activate cytokinin signaling at the SAM. CK signaling output (TCS reporter) depends on energy metabolite availability and is enhanced by light, while PIN1 localization is strictly light-dependent. Light signaling and photosynthesis together have stronger effects on CK output than nutrients alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C112 demonstrate clear differential regulation of CK signaling and auxin transport. The TCS reporter experiments with norflurazon and CO2 depletion (C105-C109) provide strong evidence for metabolic dependence of CK signaling. The strict light-dependence of PIN1 localization (C101, C112) contrasts with the synergistic regulation of CK signaling, supporting the conclusion of pathway specificity (C104).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Cytokinin is necessary but not sufficient for environmental stem cell activation. CK treatment induces leaf development in darkness only when sucrose is present. CK can partially replace light perception for WUS expression, supporting its role as a mobile transducer of light signals, but downstream CK signaling requires energy metabolites for full activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C122 provide clear evidence for CK's role as an intermediate signal. The hormone treatment experiments (C113-C115, C117-C119) demonstrate CK can induce WUS expression but requires energy for full developmental response. The interpretation of CK as a mobile light signal transducer (C120-C121) is well-supported by the data, though the conclusion acknowledges CK is not the sole signal (C116, C122).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "CKX5 and CKX6 cytokinin oxidases repress SAM activation in darkness by degrading CK. Loss of both CKX5 and CKX6 leads to WUS expression in darkness and dramatically enhanced responses to light and sucrose, uncoupling stem cell activation from photomorphogenesis. CK acts as an interregional transmitter of light signals specifically for WUS expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C140 provide strong genetic evidence for CKX-mediated regulation. The single mutant analysis (C129-C131) and double mutant phenotypes (C132-C134) demonstrate clear additive/synergistic effects. The striking observation that ckx5/ckx6 mutants show WUS expression comparable to cop1 but remain etiolated (C136-C138) provides compelling evidence for uncoupling stem cell activation from photomorphogenesis and supports CK's specific role in WUS regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Sugars act as energy sources rather than signaling molecules for stem cell activation. Metabolizable sugars (glucose, sucrose) induce WUS expression, while non-metabolizable sugars (mannitol, palatinose) do not, indicating the SAM senses and responds to metabolic status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C145 provide clear evidence through systematic testing of different sugars with varying metabolizability. The differential responses to metabolizable versus non-metabolizable sugars strongly support the conclusion that sugars function as energy sources rather than signaling molecules in this context. The experimental design appropriately controls for structural similarity (palatinose vs. sucrose).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "TOR kinase is required for both metabolic and light-dependent WUS activation. The TOR inhibitor AZD-8055 blocks glucose-induced and light-induced WUS expression in a dose-dependent manner, even under norflurazon treatment and in cop1 mutants, suggesting TOR plays a specific role in light signaling independent of energy production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C155 provide robust pharmacological evidence for TOR's role using the specific inhibitor AZD-8055. The dose-response relationship (C149-C151), effectiveness under photosynthesis inhibition (C154), and activity in cop1 mutants (C155) strongly support TOR's involvement in both metabolic and light signaling pathways. However, the reliance on a single pharmacological inhibitor without genetic validation is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Light and glucose activate TOR kinase as measured by S6K phosphorylation. Light treatment is more efficient than glucose supplementation in activating TOR. cop1 mutants show constitutively high S6K phosphorylation, indicating COP1 represses the TOR pathway in darkness. TOR plays a central role in both metabolic and light-dependent stem cell activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C161 provide direct biochemical evidence for TOR activation using phospho-specific antibodies against the direct TOR target S6K. The quantitative comparison between light and glucose treatments (C157) and the constitutive activation in cop1 mutants (C158-C160) strongly support the conclusions. Multiple cop1 alleles were tested (C159), strengthening the findings. This complements the pharmacological data and provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "Light signaling and cop1 mutation cause metabolic reprogramming distinct from glucose treatment. PCA analysis identifies light signaling (PC1) and energy availability (PC2) as major components. Glucose treatment has mild metabolic effects, while cop1 and light-treated seedlings show similar profiles with reduced fructose/sucrose and altered cell wall monosaccharides. The energy sensing machinery is exquisitely sensitive to small glucose changes. Amino acid profiles in cop1 show inverse correlation with amiR-tor lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C176 provide comprehensive metabolomic analysis supporting the integration of light and metabolic signaling. The PCA analysis (C162) clearly separates the conditions. The observation that glucose treatment causes only mild metabolic changes (C163-C164) yet activates TOR and WUS (C165) is important. The similarity between cop1 and light-treated samples (C166-C168) supports light-dependent metabolic reprogramming. The amino acid correlations with TOR activity (C173-C176) provide additional mechanistic insight, though the short-term treatments show expected limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12"
+    ],
+    "result": "Plant stem cells remain quiescent until postembryonic development, contrasting with most animals. During skotomorphogenesis, stem cells at shoot and root tips remain dormant, and growth depends on cell elongation rather than division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11, and C12 state established knowledge about plant development that provides context for the study. These are well-documented phenomena in plant biology and appropriately frame the research question. However, these are background claims rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Light is the sole energy source for plants and influences core developmental decisions. Plants undergo skotomorphogenesis (dark adaptation) or photomorphogenesis (light-triggered development) after germination. Light perception through photoreceptors (CRYPTOCHROMES, PHYTOCHROMES) overrides skotomorphogenesis through COP1 and PIF pathways, leading to massive transcriptional reprogramming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C24 present well-established background knowledge about plant photomorphogenesis with appropriate citations. These claims accurately summarize the current understanding of light signaling pathways and provide necessary context for the study. However, these are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Plants monitor metabolic state through signaling systems including the evolutionarily conserved TOR kinase complex. TOR integrates nutrient, energy, and stress signals and regulates growth, proliferation, ribosome biogenesis, protein synthesis, and autophagy. The plant TOR complex resembles mammalian mTORC1. Known direct targets include S6K1, TAP46, and E2Fa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C38 accurately summarize established knowledge about TOR signaling in plants with appropriate citations. These provide essential background for understanding the novel findings about TOR's role in light-dependent stem cell activation. The acknowledgment of knowledge gaps (C37) appropriately frames the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Several photomorphogenic responses can be triggered by light alone (cop1, pifq mutants), but root growth requires sucrose supplementation. Photosynthetic assimilates promote root growth via TOR kinase. SAM stem cell control depends on WUS expression in the organizing center and CLV3 expression in stem cells, which act via the CLV/CORYNE receptor system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 present established knowledge with appropriate citations that directly motivates the current study. The distinction between light-responsive and metabolism-dependent processes in different tissues (C39-C42) and the description of SAM regulatory mechanisms (C43-C45) provide essential context for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Light and sucrose have similar effects on CLV3 expression regulation. The induction is less pronounced than for WUS and mainly involves enlargement of the CLV3 domain rather than increased signal intensity in individual cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 describe quantitative analysis of CLV3 reporter behavior. The distinction between domain expansion versus intensity increase is supported by the supplementary figure data. This provides important context for understanding the differential regulation of WUS versus CLV3, though it is a supporting observation rather than a central finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Stem cell fate (CLV3 expression) can exist without WUS in a physiologically relevant setting, suggesting WUS is not the primary stimulating input for CLV3 expression. This challenges the canonical model of WUS-dependent stem cell specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C179 present an important conceptual finding about the independence of CLV3 expression from WUS. The observation that CLV3 is maintained in dormant meristems lacking WUS expression (C54, C59) supports this conclusion. However, C179 is somewhat speculative as it infers a negative (WUS is not primary) rather than identifying the actual primary regulator. This is a significant conceptual advance but requires further mechanistic investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C180",
+      "C181"
+    ],
+    "result": "Coupling light and energy sensing via TOR could help plants prepare for the developmental transition from skotomorphogenesis to photomorphogenesis. Light-dependent TOR activation could allow etiolated seedlings to build photosynthetic apparatus, initiate ribosome biogenesis, and prime stem cells via WUS expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C180-C181 present speculative interpretations about the functional significance of TOR's dual role in light and metabolic signaling. While the speculation is reasonable given the data, these claims are explicitly stated as possibilities ('could help', 'could allow') in the Discussion section. The model is plausible but lacks direct experimental support for the proposed preparatory functions.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,357 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Nkx2-5 and Tbx5 co-occupy genomic regions with RNAPII and RNAPII-S5P, particularly at TSSs and downstream regions of highly expressed genes, while Gata4 occupies different genomic regions. No physical interaction between Nkx2-5 and Tbx5 was detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 are supported by ChIP-seq data (Figure 1A, 1C) and co-immunoprecipitation experiments (Figure 1B). The clustering analysis clearly distinguishes Gata4 from Nkx2-5/Tbx5, and the metagene profiles show enrichment at TSSs and downstream regions of highly expressed genes. The lack of physical interaction between Nkx2-5 and Tbx5 is demonstrated by co-IP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Nkx2-5 knockdown and knockout increase expression of long 3' UTRs in cardiac genes Tnnt2 and Atp2a2, with genes showing increased long 3' UTRs enriched for heart development GO terms specifically in Nkx2-5 depletion but not in Tbx5 or Gata4 depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 are supported by RNA-seq data from both knockdown eCMs (Figure 1D) and Nkx2-5 knockout hearts (Figure 1E), along with GO analysis (Figure 2\u2014figure supplement 4). The specificity of heart development enrichment to Nkx2-5 versus other transcription factors strengthens the conclusion that Nkx2-5 plays essential roles in regulating APA of heart development genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Nkx2-5-dependent chromatin looping connects TSSs with downstream regions of Tnnt2 and Atp2a2 genes, and loss of this looping correlates with increased long 3' UTR expression. This looping is specific to certain genes and not observed for Tnni1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 are supported by 3C assay data (Figure 2A) showing Nkx2-5-dependent looping, ChIP-qPCR confirming Nkx2-5 binding (Figure 2B), and the correlation between loss of looping and increased long 3' UTR expression. The negative control with Tnni1 strengthens the specificity of the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Nkx2-5 knockdown increases RNAPII-S2P occupancy at downstream regions of Tnnt2 and Atp2a2, leading to increased long 3' UTR expression without substantially increasing coding region mRNA expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by ChIP-qPCR data showing increased RNAPII-S2P binding (Figures 2C, D) and qRT-PCR data showing selective increase in long 3' UTR expression (Figures 2E, F). The specificity for 3' UTR regions versus coding regions supports a role in transcription termination rather than general transcriptional activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Nkx2-5 physically associates with the transcription termination factor Xrn2 but not with RNA helicases. This association is mediated by the N- and C-termini of Nkx2-5 and the C-terminus of Xrn2, is resistant to EtBr and RNase A treatment, suggesting DNA/RNA-independent interaction, and may allow Nkx2-5 to recruit Xrn2 to target genomic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C21 are supported by co-immunoprecipitation experiments (Figure 3A-D) and domain mapping studies (Figure 3B, C). The resistance to EtBr and RNase A treatment provides strong evidence for DNA/RNA-independent interaction. However, C21 is somewhat speculative as it infers recruitment function based on the interaction data and HD's DNA-binding capability without direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Xrn2 knockdown increases expression of long 3' UTRs of Tnnt2 and Atp2a2 without altering coding sequence transcription, and Xrn2 expression is not affected by knockdown of cardiac transcription factors, suggesting Nkx2-5 and Xrn2 function together to regulate APA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 are supported by qRT-PCR data (Figures 4B, C, D) and chromatin-fractioned RNA-seq (Figure 4\u2014figure supplement 1). The similar phenotype between Nkx2-5 and Xrn2 knockdown, combined with the lack of effect on Xrn2 expression by transcription factor knockdown, supports the conclusion that they function together.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Nkx2-5 knockdown reduces Xrn2 binding at TSSs and downstream regions but not at 3' UTR regions, indicating Nkx2-5 plays a role in recruiting Xrn2 to these specific genomic locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by ChIP-qPCR data (Figure 4E, Figure 4\u2014figure supplement 2). The regional specificity of the effect (TSSs/downstream but not 3' UTR) strengthens the conclusion about Nkx2-5's role in Xrn2 recruitment to specific genomic regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Knockdown of Nkx2-5 and Xrn2 increases expression of extended poly(A)-tailed mRNAs of Tnnt2 and Atp2a2, and protein levels of these genes are slightly decreased, consistent with long 3' UTRs reducing translation efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by Northern blot data (Figures 4F, G) and Western blot data (Figure 4H). The correlation between increased long 3' UTR mRNA and decreased protein levels is consistent with the cited literature (C42) on long 3' UTRs reducing translation efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Xrn2 knockdown increases long 3' UTR expression specifically for genes affected by Nkx2-5 knockdown but not Tbx5 or Gata4 knockdown, and strongly increases mRNA expression at transcription termination sites, suggesting Xrn2 is involved in Nkx2-5-dependent APA regulation and mRNA end processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are supported by RNA-seq analysis (Figure 4I, Figure 4\u2014figure supplement 4). The specificity of overlap between Xrn2 and Nkx2-5 effects, but not with Tbx5 or Gata4, provides strong evidence for their coordinated function in APA regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Combined knockdown of Nkx2-5 and Xrn2 significantly increases heart looping abnormalities compared to single knockdowns, without affecting Left-Right signaling pathway genes, suggesting coordinated functions of Nkx2-5 and Xrn2 are essential for heart formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by embryo injection experiments (Figure 5D), qRT-PCR (Figure 5E), and in situ hybridization (Figure 5F). The synergistic effect of double knockdown and the lack of effect on Left-Right signaling genes suggest the heart looping defects are due to APA dysregulation rather than patterning defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Genetic analysis reveals that Nkx2-5+/-Xrn2+/- double heterozygotes exhibit ventricular septal defects not seen in single heterozygotes, while atrial septal defects are observed in both Xrn2+/- and double heterozygotes, indicating genetic interaction between Nkx2-5 and Xrn2 and a role for Xrn2 in atrial septum formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 are supported by CRISPR/Cas9 deletion data (Figure 6\u2014figure supplement 1) and histological analysis (Figure 6). The genetic interaction is demonstrated by the appearance of VSD only in double heterozygotes (3/7), which is a classic genetic interaction pattern. The ASD phenotype in Xrn2+/- mice suggests an additional role for Xrn2 in atrial septum formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Nkx2-5 occupies both TSSs and downstream regions of genes, connecting these regions, and its deficiency affects Xrn2 binding, increases RNAPII occupancy, and increases long 3' UTR expression from heart development genes. Combined with genetic interaction data, this indicates Nkx2-5 regulates both transcription initiation and poly(A) site usage, suggesting tissue-specific transcription factors are involved in APA regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C71 represent the main conclusions of the manuscript and are supported by the comprehensive data including ChIP-seq, RNA-seq, 3C, co-IP, knockdown, and genetic studies. The integration of multiple lines of evidence strongly supports the novel role of Nkx2-5 in APA regulation. However, C71 is somewhat speculative as it generalizes from Nkx2-5 to all tissue-specific transcription factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "E12.5 embryonic hearts are primarily composed of cardiomyocytes (>90%) that do not express Thy1, and defects in ventricular and atrial septa are most frequently found in CHDs and form during this stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 are supported by citations to established literature (Ieda et al., 2009; Feng et al., 2002; Henderson and Copp, 1998). These claims provide important context for the experimental system used in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Gata4 knockdown does not produce a significant difference in APA of Tnnt2 and Atp2a2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by qRT-PCR data (Figure 2F). This negative result helps establish the specificity of Nkx2-5's role in APA regulation of these genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Background information on cardiac transcription factors, CHD, histone modifications, and the current state of knowledge regarding transcription factor roles in heart development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C88 provide background context and are supported by citations to established literature. These claims establish the rationale for the study but do not represent new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Background information on alternative polyadenylation (APA), 3' UTR length regulation, and the current state of knowledge regarding mechanisms that regulate 3' UTR length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C97 provide background context on APA and are supported by citations to established literature. These claims establish the biological significance of APA regulation but do not represent new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "Tissue-specific transcription factors play an important role in tissue-specific 3' UTR length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C98 is a generalization from the specific findings about Nkx2-5 to all tissue-specific transcription factors. While the data support this hypothesis for Nkx2-5, extending this to all tissue-specific transcription factors requires additional evidence from other systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Background information on heart looping phenotypes in Nkx2-5 mutants and the role of promoter-downstream looping in gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C104 provide background context supported by citations to established literature. C104 represents an inference from the current study's data combined with prior knowledge about promoter-downstream looping.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Background information on Xrn2's known functions in transcription termination and RNAPII elongation regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 provide background context on Xrn2 function and are supported by citations to established literature (Kim et al., 2004; West et al., 2004; Brannan et al., 2012).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "Nkx2-5 is involved in regulating Xrn2 binding to TSSs and downstream regions, and promoter-downstream looping supports Xrn2 function at these regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 are supported by ChIP-qPCR data (Figure 4E) and 3C data (Figure 2A). The correlation between Nkx2-5-dependent looping and Xrn2 binding supports the conclusion, though the mechanistic link is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C111",
+      "C112"
+    ],
+    "result": "Xrn2 is believed to eliminate 3' cleavage products after mRNA cleavage, but knockdown data suggest Xrn2 is also critical for regulating APA and promotes usage of proximal poly(A) sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 is supported by citations to established literature. Claim C112 is inferred from the increased long 3' UTR expression upon Xrn2 knockdown (Figures 4B, C, F, G), which is consistent with Xrn2 promoting proximal poly(A) site usage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "APA dysregulation in Nkx2-5- and Xrn2-depleted hearts might cause heart development abnormalities by decreasing heart-related protein levels, and this could be one mechanism causing CHD in patients with mutated Nkx2-5, though it remains unclear whether long 3' UTRs per se are related to cardiac abnormality pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C115 are speculative. While the data show decreased protein levels (C43) and heart defects (C50, C56), the causal link between APA dysregulation and heart defects is not directly demonstrated. The authors appropriately acknowledge this uncertainty in C115.",
+    "result_type": "MAJOR"
+  }
+]

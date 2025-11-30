@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The mushroom body (MB) in Drosophila has a compartmentalized architecture where ~2000 Kenyon cells (KCs) form parallel axons that are tiled by 15 distinct compartments defined by overlapping arbors of MB output neurons (MBONs) and dopaminergic neurons (DANs). Each compartment contains one of three KC classes and is differentially involved in forming memories with different valence and stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C24 describe established anatomical and functional organization of the MB based on extensive prior work (Aso et al., 2014a, 2014b; Tanaka et al., 2008) and represent well-accepted knowledge in the field. The compartmental organization and differential involvement in memory formation are supported by multiple citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Activation of PPL1-\u03b31pedc DANs paired with odor produces robust aversive memory that is fully retained after 10 minutes but largely decays by 24 hours. The same DANs can write new memories or reduce existing conditioned responses: unpaired odor presentation modestly reduces memory, unpaired DAN activation almost completely abolishes memory, and reversed contingency training reduces the first memory while forming a new association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 are well-supported by experimental data shown in Figures 1C-E and 1D, with appropriate controls (C104). The bidirectional modulation of memory by the same DAN type depending on context is a key finding demonstrated through multiple experimental manipulations with consistent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The timing relationship between odor presentation and PPL1-\u03b31pedc activation determines memory valence: DAN stimulation within 30 seconds following odor onset produces aversive memory, while DAN stimulation 20-60 seconds before odor presentation induces appetitive memory. This timing dependency reflects the predictive relationship between conditioned and unconditioned stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 are supported by inter-stimulus interval (ISI) data in Figure 1F showing the temporal window for memory formation and valence switching. The interpretation is consistent with classical conditioning principles (C37, C40, C41 supported by citations), though the mechanistic explanation (C42) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Pairing PPL1-\u03b31pedc activation with odor depresses the MBON's spiking response to the trained odor, and since this MBON is attractive when activated, the depression produces aversive behavior. The data suggest this single DAN can bi-directionally alter KC-MBON synapse strength depending on odor-driven KC activity timing, though this model requires further physiological testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43-C44 are supported by citations to prior work, and C45 represents a reasonable inference. However, C46 explicitly states the bidirectional plasticity model 'awaits additional physiological measurements,' making this result uncertain until direct synaptic measurements confirm the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Six split-GAL4 drivers expressing CsChrimson in different DAN types were selected for systematic comparison, with three drivers combining two cell types to achieve robust memory. The drivers showed comparable memory with naturalistic stimuli (shock/sugar), and longer training (60s vs 10s) significantly improved memory for MB043C, MB213B, and MB315C+MB109B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 are supported by experimental data in Figure 2 and supplements. The methodological choices (combining drivers for robust memory, C48) are justified by supplementary data. Control experiments (C49, Figure 2\u2014supplement 3) validate that differences are not due to genetic background, strengthening the comparative analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Different DAN types show uncorrelated abilities to induce immediate, 1-day, and 4-day memories. After spaced training, MB099C and MB630B induced both 1-day and 4-day memory, while MB320C showed robust immediate memory but failed to produce 4-day memory despite extensive training. MB630B showed barely detectable immediate memory but formed 4-day memory after multiple trainings. Memory stability is an intrinsic property of the MB compartment rather than a consequence of training protocol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C66 are strongly supported by experimental data in Figure 2C showing dissociation between immediate and long-term memory formation across different DAN types. The lack of correlation (C63) and compartment-specific stability (C66) represent key findings demonstrating that different compartments have fundamentally different memory properties. Statistical comparisons are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Making memory formation dependent on repetitive training may allow animals to ignore spurious events. The \u03b32\u03b1'1 compartments play roles in sleep regulation and long-term memory, and co-activation with other DANs synergistically prolongs retention, possibly by promoting sleep-dependent consolidation. The data are consistent with a model where memory formation and consolidation occur independently and in parallel in individual compartments, with naturalistic stimuli recruiting multiple compartments whose combined outputs determine behavioral memory retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59, C62, C67-C68 are explicitly speculative interpretations. While C60-C61 are supported by citations, the mechanistic link to sleep-dependent consolidation (C62) and the parallel memory model (C67-C69) are theoretical frameworks that require additional experimental validation. The model is consistent with the data but not definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Memories in different compartments show different spontaneous decay dynamics over 24 hours and differ in susceptibility to reduction by unpaired odor presentation or unpaired DAN activation. Four of five DAN types tested showed significant memory reduction after unpaired DAN activation. These effects may be mechanistically linked since odor alone can activate DANs. Memories formed by spaced training with MB099C or MB630B become resistant to DAN activation, and different compartments weigh the reliability of CS-US correlation differently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 are supported by experimental data in Figures 3A-D and supplement 1. The differential susceptibility to memory reduction across compartments is well-documented. The mechanistic link (C73) is a reasonable hypothesis supported by citations. The functional interpretation (C74, C76) is logical given the data, though somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The \u03b11 compartment differs from others by being resistant to memory reduction by DAN activation and showing the least ability to replace old associations with new ones. This compartment has an unusual recurrent circuit structure (MBON-\u03b11 to PAM-\u03b11) and plays a key role in long-term appetitive memory of nutritious foods. Flies retained associations between two odors and PAM-\u03b11 activation (memory capacity \u22652), while only the most recent association was remembered with PPL1-\u03b31pedc (capacity=1). Two distinct memory updating strategies exist: writing new memories while diminishing old ones, or writing new memories while retaining old ones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C85 are supported by experimental data in Figures 3D-F. The unique properties of the \u03b11 compartment (resistance to erasure, higher capacity) are clearly demonstrated. The anatomical basis (C78-C79) is supported by citations. The control for generalization (C84) strengthens the capacity finding. The identification of two distinct updating strategies (C85) is a well-supported conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Memory formation in each compartment is largely parallel and independent with compartment-specific updating rules. Simultaneous activation of DANs to \u03b11 and \u03b31pedc with odor produced strongly aversive immediate memory that became appetitive after 1 day, consistent with simultaneous formation of aversive memory in \u03b31pedc (fast decay) and appetitive memory in \u03b11 (slow decay). The strongly aversive immediate response (rather than intermediate) suggests non-linear integration, possibly mediated by the known feedforward connection from \u03b31pedc to \u03b11.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 are supported by experimental data in Figure 4A. The temporal shift in valence (C88) is clearly demonstrated and the interpretation (C89) is the most parsimonious explanation given the known decay rates. The non-linear integration (C90) is a reasonable inference from the data, and the circuit mechanism (C91) is a plausible hypothesis based on prior anatomical work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C122",
+      "C123"
+    ],
+    "result": "Wild-type flies efficiently switch odor preference when experiencing conflicting sequential associations: appetitive memory formed by sugar-odor pairing (tested after 1 day) is reversed to aversive memory when the same odor is subsequently paired with electric shock (tested immediately).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92, C122-C123 are supported by experimental data in Figure 4B demonstrating behavioral flexibility with naturalistic stimuli. This complements the optogenetic experiments and shows the phenomenon occurs with ecologically relevant reinforcers. The experimental design appropriately tests sequential conflicting experiences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C8",
+      "C26"
+    ],
+    "result": "Different MB compartments use distinct rules for writing and updating odor memories, showing extensive differences in training requirements, decay dynamics, storage capacity, and flexibility to learn new associations. A common odor representation carried by sparse KC activity to multiple compartments can be modified differently in each compartment, implementing different learning rules in seemingly parallel memory systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 and C3-C8, C26 represent the main conclusions of the study, supported by the comprehensive experimental data across all figures. The systematic comparison of multiple DAN types across multiple memory parameters provides strong evidence for compartment-specific learning rules. This is a well-supported major finding that advances understanding of distributed memory systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The mechanisms generating distinct learning rules are unknown but could arise from: (1) differences in dopamine release properties of different DAN types, (2) local differences in biochemical responses to dopamine signaling (e.g., differential deployment of four dopamine receptors expressed by KCs), or (3) circuit properties including connections between extrinsic neurons (DANs and MBONs) and layered networks within the MB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C98 are explicitly speculative hypotheses about mechanisms. While C97-C98 are supported by citations to anatomical and functional studies, these remain untested possibilities. The authors appropriately acknowledge uncertainty ('We do not know the mechanisms'). These represent important directions for future work but are not demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "In mammalian brains, associative memories are also stored as distributed parallel changes with partially overlapping functions, and different dopaminergic neuron populations develop value representations with distinct learning rules. Many underlying strategies and mechanisms may be shared between flies and other species. This work provides a foundation for understanding molecular and circuit mechanisms of distributed memory component formation and integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are supported by citations to mammalian literature, establishing comparative context. Claim C101 is speculative but reasonable given the cited parallels. Claim C102 appropriately frames the significance of the work. These claims provide important context but are not primary experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "For appetitive memory, the optimal timing window for dopamine signaling is shifted slightly later relative to odor presentation compared to aversive memory, possibly reflecting adaptation to food-to-nutrition conversion time. Individual MB compartments can be modeled as distinct memory units with independently set baseline acquisition rates and memory stabilities. For aversive memory, stability and acquisition rate appear negatively correlated, but stable appetitive memory can be induced by brief training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 are supported by ISI curve data (Figure 2\u2014supplement 4) and memory retention data. The theoretical model (C106) is explicitly presented as an approximation based on current and prior data. The negative correlation for aversive memory (C107) and exception for appetitive memory (C108) are supported by Figures 2 and 3B. The mechanistic speculation in C105 is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Combining drivers MB315C+MB109B induced significantly higher appetitive memory than either alone. For 4-day aversive memory after spaced training, drivers expressing in combinations of \u03b32, \u03b1'1, \u03b1'2, and \u03b12 compartments (MB099C, MB060B, MB065B) were effective, while drivers expressing in subsets (MB058B, MB296B) failed. Single-cell-type drivers (MB296B, MB063B) showed significant but weaker memory than combination drivers. All lines showed similar memory with naturalistic stimuli, indicating optogenetic differences are not due to genetic background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C115 are supported by data in Figure 2 supplements 1-3. These methodological findings validate the experimental approach and demonstrate that: (1) some compartments require combined activation for robust memory, (2) specific compartment combinations are necessary for long-term memory, and (3) genetic background does not confound the results. These are important controls and observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Memory induced by spaced training with MB099C or MB630B and tested after 1 day does not show significant reduction after DAN activation, unlike immediate memory. When flies expressing CsChrimson in both PPL1-\u03b31pedc and PAM-\u03b11 were trained with simultaneous activation, the odor was strongly aversive immediately but became appetitive after 1 day.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 are supported by experimental data in Figure 3\u2014supplement 1 and Figure 4A. These findings demonstrate that consolidated memories become resistant to erasure (C119) and that conflicting memories can coexist with different decay rates (C120-C121), supporting the parallel memory storage model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C103",
+      "C104"
+    ],
+    "result": "Naturalistic punitive or rewarding stimuli activate complex patterns of DANs. Reduction in complexity through cell-type-specific optogenetic activation is essential to understand roles of individual compartments. Dopamine signaling to KCs has been implicated in both learning and forgetting. Control genotypes showed no significant memory with the training protocols used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C103 are supported by multiple citations establishing prior knowledge. Claim C28 represents the experimental rationale. Claim C104 provides essential negative controls validating that memory formation requires both driver and effector. These are important methodological and contextual points.",
+    "result_type": "MINOR"
+  }
+]

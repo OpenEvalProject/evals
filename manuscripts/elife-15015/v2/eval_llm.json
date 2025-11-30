@@ -1,0 +1,340 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Current methods for resolving synaptic connectivity require serial section electron microscopy, but complete circuit reconstruction is prohibitively slow and challenging, especially when comparing multiple samples. Alternative methods like calcium indicator-based reconstruction exist but are technically demanding and infeasible in many tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C9-C14 establish the motivation for the study by describing the current state of the field and limitations of existing methods. These claims are supported by appropriate citations (C10, C11, C12, C13) and represent established knowledge in the field. The claims logically set up the need for the ARTEMIS method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The authors developed genetically encoded peroxidase constructs (erHRP, APX, APEX2) that can be delivered via viral vectors to label specific neurons. These constructs generate active peroxidase in transfected cells and render both cultured cells and retinal ganglion cells photon-dense through DAB polymerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C25 describe the development and initial validation of peroxidase constructs. The claims are supported by experimental data in Figure 1a-d and appropriate citations for prior work (C18, C20). The constructs were tested in both HEK293 cells and mouse retinal ganglion cells, demonstrating functionality in both systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Standard EM staining protocols failed to produce detectable electron-dense staining from DAB-labeled cells, but the addition of a reduction step with sodium hydrosulfite dramatically enhanced DAB-polymer staining. The authors hypothesized that radicals produced during the peroxidase reaction oxidize functional groups in the polymer, and reduction restores reactivity to osmium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C35-C39, C57-C60 describe a critical methodological breakthrough. The hypothesis (C57-C58) is reasonable and the experimental test (C59) clearly demonstrates the effect in Figure 1f-g and Figure 1\u2014figure supplement 1. The comparison between standard and reduced protocols is well-documented across multiple figures. This is a key innovation of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The reduction protocol preserves ultrastructure quality while enabling visualization of peroxidase-labeled neurons in EM. APEX2 and erHRP show different subcellular localization patterns (cytoplasmic vs. ER-localized), and the signal strength allows identification of small dendritic profiles and long-range axonal projections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34, C42-C47, C61-C63, C65-C67 demonstrate that the method works in tissue and preserves ultrastructure. The data in Figure 1h-o and supplementary figures clearly show preserved synaptic structures and labeled neurons. The different localization patterns of APEX2 and erHRP (C61-C63) are well-documented and could enable orthogonal labeling (C64).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C68",
+      "C69"
+    ],
+    "result": "The reduction step specifically increases the electron density of membranes, shifting the membrane pixel intensity distribution by 24 values and improving contrast-to-noise by 62%. Blind observers selected reduced tissue ~3 times more frequently than unreduced tissue for synaptic quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52, C68-C69 provide quantitative evidence that the reduction protocol improves ultrastructure visualization beyond just enhancing DAB staining. The intensity histogram analysis (Figure 1\u2014figure supplement 4c-d) supports the specific effect on membranes (C49-C50), and the blind observer assessment (C52) provides unbiased validation. The 62% improvement in contrast-to-noise (C51) is calculated from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "The reduction step enhances DAB-polymer staining in erythrocytes, which contain endogenous heme that catalyzes the DAB reaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 demonstrate that the reduction effect is not specific to recombinant peroxidases but applies to any DAB polymer. The data in Figure 1\u2014figure supplement 1g-j clearly show enhanced staining of erythrocytes after reduction. This supports the proposed mechanism and suggests broader applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Peroxidase expression does not affect synapse formation, with similar synapse densities in expressing and control tissue (0.32 vs 0.34 synapses/\u03bcm\u00b2). Presynaptic and postsynaptic partners of labeled cells can be identified, though erHRP has limitations for identifying postsynaptic partners due to limited ER extension into axonal terminals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 address important controls for the method. The synapse density comparison (C71) provides quantitative evidence that peroxidase expression doesn't disrupt synapse formation. The ability to identify synaptic partners (C72-C74) is demonstrated in Figure 1\u2014figure supplement 5. The limitation of erHRP for postsynaptic identification (C75) is an honest assessment of the method's constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The ARTEMIS method works in Drosophila melanogaster, with APEX-GFP expression in direction-selective tangential cells producing electron-dense staining visible in the fly's optic lobes. Ultrastructural detail was reasonable and allowed identification of synaptic contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 demonstrate the generalizability of the method to invertebrate systems. The data in Figure 2 clearly show both fluorescent and DAB labeling of the expected cell types (C78), electron-dense precipitate in EM (C79), and identifiable synaptic contacts (C81). The authors acknowledge the protocol was optimized for mammalian tissue but still achieved reasonable results (C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Peroxidase-stained neurites can be identified at overview resolution (20-30 nm/pixel). Imaging every 10th section at 30 nm resolution was sufficient for mapping J-RGC dendrites in 22 hours, compared to ~2500 hours for high-resolution imaging. Manual reconstruction took 2 worker-hours. The approach was validated in two cell types (J-RGCs and SACs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 demonstrate the speed advantage of the sparse reconstruction approach. The quantitative comparisons (C83-C85) are based on actual imaging times and provide concrete evidence for the efficiency gains. The data in Figure 3a-f support these claims. The limitation that 20 nm resolution doesn't allow optimal visualization of synaptic contacts (C88) is an important caveat.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The ATUM sectioning method allows re-imaging of sections at higher resolution using Wafer-Mapper software. Targeted high-resolution imaging of a ~5\u00d710\u2075 \u03bcm\u00b3 subvolume selected from a ~2\u00d710\u2077 \u03bcm\u00b3 overview volume took 250 hours, representing a 40-fold reduction in imaging time compared to complete high-resolution imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 describe the multi-scale imaging strategy. The quantitative time savings (C92-C93) are based on actual measurements and represent a major advantage of the method. The claim that this expedites reconstruction by constraining efforts to regions of interest (C94) is logical and supported by citation. The data in Figure 3i demonstrate the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Manual reconstruction of the SAC plexus revealed multiple SAC-SAC interactions, dendritic fasciculation, and dendritic branching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 describe biological observations made using the method. The data in Figure 3j-k support these observations. These are relatively straightforward morphological descriptions that demonstrate the method can reveal biologically relevant features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "An unsupervised segmentation algorithm was developed that achieves 91.8% recall for 2D segmentation, with missed segments being small and rarely necessary for connectivity. The algorithm is two orders of magnitude faster than convolutional neural network approaches and requires only a small fixed set of tunable parameters rather than thousands of parameters requiring training for each tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C107 describe the computational innovation. The recall statistic (C100) is quantified from ground truth comparisons (Figure 4b-c). The speed comparison (C103) is supported by citations. The algorithm's performance (C102) is demonstrated in Figure 4d-e. The key insight that high contrast enables this unsupervised approach (C106) is well-supported. The claim of generalizability (C107) is reasonable but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Although detailed synaptic properties may be obscured by the electron-dense stain, the methods are well-suited for rapid reconstruction of targeted neuron morphology and connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 provide an honest assessment of the method's strengths and limitations. The limitation (C108) is acknowledged throughout the paper, and the suitability for morphology and connectivity reconstruction (C109) is demonstrated by the results. This is a fair summary of the method's appropriate applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The ARTEMIS pipeline uses viral vectors to deliver peroxidase derivatives to genetically identified neurons, enhances electron-density while retaining ultrastructure quality, enables targeted high-resolution reimaging and unsupervised segmentation, and reduces imaging and reconstruction times by two orders of magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8 summarize the overall ARTEMIS method and its advantages. These claims are supported by the detailed results throughout the paper. The two orders of magnitude improvement (C8) is justified by the combination of sparse reconstruction (~100-fold from imaging every 10th section), targeted reimaging (40-fold), and fast segmentation (100-fold), though the exact calculation is not explicitly shown. The claims accurately represent the integrated approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "APEX2-expressing neurons receive synaptic contacts in the inner plexiform layer and make synaptic contacts in the superior colliculus. erHRP-expressing neurons receive synaptic contacts in the inner plexiform layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 demonstrate that synaptic contacts can be identified in labeled tissue. The data in Figure 1\u2014figure supplement 5 clearly show presynaptic and postsynaptic structures. These are straightforward demonstrations that the method preserves synaptic ultrastructure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "The Materials and Methods section describes the generation and sources of mouse lines and fly lines, construction of peroxidase variants, AAV production and delivery, tissue preparation including the reduction protocol, serial sectioning with ATUM, EM imaging, image alignment and segmentation, and the automatic segmentation algorithm. Data has been deposited to Dryad.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C164 provide detailed methodological information. These are primarily descriptive claims about procedures and reagents used. The methods are described in sufficient detail for reproduction, with appropriate citations for established techniques. The data deposition (C164) supports reproducibility. These claims are well-documented but represent standard methodological reporting.",
+    "result_type": "MINOR"
+  }
+]

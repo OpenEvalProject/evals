@@ -1,0 +1,226 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "C. elegans possesses a vitamin B12-independent propionate breakdown shunt that is transcriptionally activated under B12 deficiency or genetic conditions mimicking propionic/methylmalonic acidemia. This shunt is chemically similar to but genetically distinct from the C. albicans pathway and recapitulates key metabolic phenotypes of human disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C24-C27 are strongly supported by converging genetic, transcriptional, and metabolomic evidence presented throughout the manuscript. The synthetic lethality experiments (C51-C52), RNAi screens (C53-C54), metabolite quantification (C87-C95), and carbon tracing (C94-C95) provide robust, multi-modal validation of the pathway's existence and function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C51",
+      "C52"
+    ],
+    "result": "Deletion of pcca-1 creates a C. elegans model of propionic acidemia with propionate sensitivity (LD50 ~45 mM vs ~80 mM in wild type) that cannot be rescued by B12. In contrast, acdh-1 deletion causes propionate sensitivity (LD50 ~50 mM) and embryonic lethality on low-B12 diets, both fully rescued by B12 supplementation. The two genes exhibit synthetic lethality, indicating parallel pathway function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C52 are well-supported by dose-response curves (Figure 2A-B), lethality assays (Figure 2C), and genetic crosses (Figure 2D). The differential B12 rescue between pcca-1 and acdh-1 mutants provides strong evidence for parallel pathways. Sample sizes appear adequate with biological triplicates, though statistical tests could be more explicitly described for the synthetic lethality analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C56",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "A synthetic genetic screen identified three propionate shunt genes: acdh-1 (acyl-CoA dehydrogenase), ech-6 (enoyl-CoA hydratase), and hach-1 (hydroxyacyl-CoA hydrolase, ortholog of C. albicans Ehd3). These genes function sequentially in the pathway, as demonstrated by phenocopying, B12-dependent rescue patterns, and genetic buffering experiments showing acdh-1 loss suppresses ech-6/hach-1 knockdown toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C65 are supported by the RNAi screen (Figure 3A-B), dose-response assays (Figure 3C), and genetic epistasis experiments (Figure 3D). The genetic buffering logic is sound: loss of acdh-1 prevents production of toxic acrylyl-CoA, thereby suppressing downstream gene knockdown phenotypes. The orthology to C. albicans Ehd3 strengthens the pathway assignment, though direct biochemical validation of enzyme activities is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Computational network analysis (WISP) predicted hphd-1 (Y38F1A.6, ortholog of human ADHFE1) and alh-8 (ortholog of human ALDH6A1) as propionate shunt members. Deletion mutants of both genes phenocopy other shunt mutants with propionate sensitivity and partial lethality on low-B12 diets, rescued by B12 in a pcca-1-dependent manner. The double mutant \u0394hphd-1;\u0394pcca-1 shows conditional synthetic interaction but not complete lethality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C80 are supported by network predictions (Figure 4A), mutant generation (Figure 4B), phenotypic assays (Figure 4C-E), and genetic interaction studies. The incomplete penetrance of the hphd-1;pcca-1 double mutant (C79-C80) is appropriately acknowledged as potentially due to incomplete null alleles or pathway redundancy. The CRISPR-generated alh-8 allele is well-documented (Figure 4B), though the hphd-1(ok3580) allele removes only part of the C-terminus, limiting conclusions about complete loss-of-function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "All five propionate shunt genes (acdh-1, ech-6, hach-1, hphd-1, alh-8) are transcriptionally repressed by vitamin B12 and activated by propionate. The acdh-1 promoter responds to propionate accumulation through transcriptional mechanisms, and this response is not suppressed by B12 when the canonical pathway is blocked. Loss of hphd-1 increases acdh-1 promoter activity, confirming its role in propionate metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C138 are supported by qRT-PCR data (Figure 5A) and promoter-GFP reporter assays (Figure 5B-C). The transcriptional regulation is demonstrated across multiple conditions with appropriate controls. The inference that propionate (rather than B12 directly) is the regulatory signal (C138) is logical given that B12 fails to repress the promoter when the canonical pathway is blocked, though direct propionate sensing has not been mechanistically demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "3-hydroxypropionate (3-HP), a unique metazoan metabolite and diagnostic marker for propionic/methylmalonic acidemia, was detected in C. elegans but not in E. coli diet. 3-HP levels increase >4-fold in \u0394pcca-1 mutants (mirroring human patients) and >200-fold in \u0394hphd-1 mutants. Carbon tracing with 13C-propionate confirmed C. elegans converts propionate to 3-HP, supporting HPHD-1 as the enzyme catalyzing 3-HP to MSA conversion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C95 are strongly supported by LC-SRM mass spectrometry (Figure 6B-D) and 13C-tracing experiments (Figure 6E). The >200-fold accumulation of 3-HP in hphd-1 mutants provides compelling evidence for HPHD-1's enzymatic role. The detection of 13C-3-HP after 2 hours of 13C-propionate feeding directly demonstrates flux through the pathway. Controls showing 3-HP absence in E. coli (despite propionyl-CoA presence) rule out dietary contamination. This represents the first identification of a metazoan gene for EC 1.1.1.59 (3-HP dehydrogenase).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C98",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Human orthologs of C. elegans shunt genes (ACADSB, ECHS1, HIBCH, ADHFE1, ALDH6A1) are significantly co-expressed in mouse and human transcriptomic databases. Patient mutations in ECHS1, HIBCH, and ALDH6A1 result in elevated propionate shunt intermediates (acrylyl-CoA, 3-HP) alongside expected BCAA breakdown intermediates. In HepG2 cells, ADHFE1, HIBCH, ECHS1, and ALDH6A1 are upregulated by propionate treatment, suggesting conserved transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C105 are supported by SEEK database co-expression analysis (Figure 7B) and qRT-PCR in HepG2 cells (Figure 7C). The co-expression analysis uses appropriate statistical controls (10,000 random permutations) and shows significant enrichment. The HepG2 propionate response data (Figure 7C) demonstrate conservation of transcriptional regulation, though only 4 biological replicates were performed. The patient metabolomics data (C100) from cited literature strengthens the translational relevance, though the authors appropriately note these enzymes have established roles in BCAA metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C78",
+      "C119",
+      "C123"
+    ],
+    "result": "Activation of the propionate shunt is required for C. elegans survival on vitamin B12-deficient diets. Loss of both pathways (\u0394pcca-1;\u0394acdh-1 double mutants or \u0394acdh-1 on very low-B12 diet) is lethal. This metabolic flexibility may provide selective advantage in wild environments where only 20-30% of bacterial species synthesize B12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C123 are supported by lethality assays (Figure 2C-D, Figure 4D) and synthetic lethality data. The ecological reasoning (C28-C29, C122) is well-founded based on bacterial B12 synthesis prevalence. However, the evolutionary advantage claim (C123) remains speculative as it lacks direct fitness measurements in natural environments or competition experiments. The data demonstrate necessity for survival under specific laboratory conditions but do not directly measure selective advantage in wild populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C10",
+      "C106",
+      "C118"
+    ],
+    "result": "This study represents the first example of transcriptional vitamin-directed metabolic network rewiring where a catabolic route is dictated by vitamin availability, and the first example of metabolic network flexibility to mitigate toxic accumulation of an endogenous metabolite.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C10, C106, C118 regarding novelty are supported by the experimental data and the absence of prior reports of vitamin-directed metabolic rewiring for detoxification. The authors appropriately distinguish this from vitamins A and D (which function as hormones, C107-C110) and from other examples of metabolic rewiring (C7-C9). However, the novelty claims rely on negative evidence (absence of prior reports) and the authors' interpretation of the literature, which could be incomplete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C153",
+      "C160",
+      "C161"
+    ],
+    "result": "hphd-1 is the first metazoan gene associated with 3-hydroxypropionate dehydrogenase activity (EC 1.1.1.59). Based on one-to-one orthology and the >200-fold 3-HP accumulation in hphd-1 mutants, human ADHFE1 is a strong candidate for propionate oxidation downstream of 3-HP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153, C160-C161 are supported by the metabolomics data (Figure 6B-D) showing dramatic 3-HP accumulation in hphd-1 mutants and orthology analysis. The inference about ADHFE1 function is logical but remains a prediction requiring biochemical validation. The authors appropriately note that no ADHFE1 patient mutations have been identified (C159), limiting direct validation in humans. ADHFE1's known activity on the structural analog GHB (C69, C154) supports the hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "On vitamin B12-replete diets (e.g., Comamonas aquatica), propionate shunt expression is greatly reduced, indicating the canonical B12-dependent pathway is preferred. This preference may reflect greater efficiency due to fewer enzymes, lack of toxic intermediates, and favorable redox potential compared to the propionyl-CoA to acrylyl-CoA conversion in the shunt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 are supported by gene expression data showing reduced shunt expression on B12-replete diets. The mechanistic explanations (C126-C127) are reasonable inferences based on pathway biochemistry and cited redox potential data (Sato et al., 1999), but remain speculative without direct measurements of pathway flux, ATP yield, or enzyme efficiency comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Multiple lines of evidence suggest humans utilize a propionate shunt: (1) 3-HP is a diagnostic marker for propionic/methylmalonic acidemia and is detected in healthy individuals; (2) 3-HP is not predicted in other metazoan pathways; (3) patient mutations in human shunt gene orthologs cause acrylyl-CoA accumulation. However, the shunt is insufficient to prevent disease in patients with impaired canonical pathway, indicating it cannot maintain propionate below toxic thresholds in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C152 are supported by cited patient metabolomics data and the authors' database analyses. The logic is sound: detection of 3-HP in patients and healthy individuals, combined with its absence from other known pathways, suggests shunt activity. However, the clinical severity of propionic/methylmalonic acidemia (C151-C152) demonstrates the shunt's insufficiency in humans, appropriately tempering translational claims. The evidence is indirect and relies heavily on metabolite detection rather than direct pathway flux measurements.",
+    "result_type": "MINOR"
+  }
+]

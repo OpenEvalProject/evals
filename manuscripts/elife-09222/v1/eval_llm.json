@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C62",
+      "C63",
+      "C64",
+      "C69",
+      "C83"
+    ],
+    "result": "The authors developed and optimized a ChR2-based optogenetic stimulation protocol for mapping L5 pyramidal cell synapses. Using Thy1-ChR2 transgenic mice (line 18), they calibrated photostimulation parameters to evoke action potentials in 58% of L5 pyramidal cells while avoiding overstimulation. The specificity was confirmed by showing that only 6.7% of cells outside L5 exhibited light-evoked activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16, C62-C64, C69, and C83 collectively establish the methodological foundation for CASIM. The calibration data (C15, C16, C62, C63, C69) demonstrate systematic optimization of stimulation parameters, and specificity testing (C83) confirms selective L5 activation. The approach is well-documented with quantitative measurements and appropriate controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C78",
+      "C79"
+    ],
+    "result": "The authors identified L5+ spines using calcium imaging with specific classification criteria. Out of 2168 spines analyzed across 20 cells, 199 (9.2%) were classified as L5+. L5+ spines showed significantly higher calcium signals than parent dendrites (p<0.001) but no morphological differences from L5- spines. The classification algorithm showed 6.46% total discrepancy with manual verification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22, C65-C68, C78-C79 provide comprehensive validation of the spine identification method. The statistical significance of calcium signals (C19), morphological analysis (C20), and algorithm validation (C78-C79) support the reliability of L5+ spine identification. The reasoning about silent synapses (C67-C68) is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C70",
+      "C71"
+    ],
+    "result": "Classical nearest neighbor distance analysis revealed that L5+ spines are significantly closer together than expected by random distribution. The median nearest neighbor distance in experimental data (3.10 \u03bcm) was significantly shorter than in reshuffled simulations (5.02 \u00b1 0.43 \u03bcm; p<0.0001), with peak deviation around 5 \u03bcm for distances below 10 \u03bcm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25, C70-C71 demonstrate non-random spatial organization using established statistical methods. The comparison to random reshuffling provides appropriate null hypothesis testing, and the quantitative results with p-values support the conclusion of clustering. This analysis serves as preliminary evidence before the more sophisticated combinatorial approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Using a novel combinatorial cluster analysis method, the authors identified 12 clusters of L5+ spines on basal dendrites of 20 cells. These clusters extend over approximately 15 \u03bcm (12.52 \u00b1 2.40 \u03bcm) and contain on average 8 spines (7.17 \u00b1 0.94 L5+ spines). Almost 50% of all L5+ spines (86 out of 199) were part of clusters. Statistical validation showed that 11 segments with clusters had P < 0.001, supporting non-random clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28, C72-C75, C84-C86 establish the main experimental finding using a rigorous novel method. The combinatorial approach provides exact likelihood calculations (C85-C86) and identifies individual clusters with quantitative parameters. The statistical validation (C74-C75) confirms significance. The method substantially extends classical approaches (C84) by enabling cluster characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C30",
+      "C44"
+    ],
+    "result": "The authors demonstrate that intralaminar L5 pyramidal cell synapses form clusters on basal dendrites containing 4 to 14 synapses within \u226430 \u03bcm of dendrite. These clusters have the required size and spacing to be relevant for non-linear dendritic computations based on established biophysical criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C30, C44 represent the core finding of the study. The quantitative characterization (C4, C44) is directly supported by the experimental data (C26-C28). The conclusion about relevance for dendritic computation (C30) appropriately references established literature on the spatial requirements for non-linear integration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Based on the measured cluster parameters and established rules of dendritic integration, the authors infer that these clusters would result in superlinear dendritic integration during synchronous synaptic activity. However, they acknowledge that superlinear integration can occur without tight clustering, and the specific spatial organization determines how temporal activity patterns affect postsynaptic firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C45-C47 make appropriate inferences from the data by connecting measured cluster parameters to established biophysical principles. The inference is well-supported by citations to relevant literature (Branco & H\u00e4usser, 2011; Losonczy & Magee, 2006; Polsky et al., 2004). The authors appropriately acknowledge alternative scenarios (C46) while maintaining their main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors estimate that 30-50% of L5 inputs may be missed due to the slicing procedure, suggesting cluster size could be underestimated by a factor of 1.4 to 2. This is based on calculations of remaining axon density at different depths in the slice (50-70% of total).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C76-C77 provide important methodological caveats. The estimation is based on detailed geometric calculations described in the methods and shown in supplementary figures. While this represents a limitation, the authors appropriately quantify the potential underestimation, which strengthens rather than undermines their conclusions about cluster existence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C48"
+    ],
+    "result": "The authors propose that the scale of observed clusters is consistent with local learning rules, which might play a role in cluster formation and synapse interactions during synaptic plasticity. This interpretation connects the spatial organization to potential mechanisms of plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C31-C32, C48 make speculative connections to learning mechanisms. While the spatial scale is indeed consistent with local learning rules (appropriately cited), the causal role of these rules in cluster formation (C32) remains speculative without direct experimental evidence. The claims are appropriately hedged with 'might' and 'may,' but represent hypotheses rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The authors contrast their findings with previous studies that found no spatial structure in sensory-evoked inputs and suggested non-linear integration may not be important for cortical sensory processing. They propose that the difference may arise because they stimulate a genetically defined population while sensory stimuli activate mixed neuron types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 appropriately contextualize the findings within existing literature. The contrast with prior work (C33-C34) is accurately cited, as is more recent evidence for non-linear computations (C35). The proposed explanation (C36) is reasonable and appropriately speculative, acknowledging it as a 'potential explanation' rather than proven fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C58"
+    ],
+    "result": "The authors position their work as the first quantitative characterization of synapse clusters from an anatomically and genetically defined input on cortical pyramidal cell dendrites. They argue that previous reports of clustering lacked quantification of cluster parameters, which is crucial for relating findings to biophysical models of dendritic computation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42, C58 establish the novelty and significance of the work. The assertion that previous studies lacked quantitative cluster characterization (C40) is supported by the cited literature. The claim about being the 'first characterization' (C58) is appropriately hedged with 'to our knowledge.' The importance of quantification for modeling (C41-C42) is a valid logical argument.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C61"
+    ],
+    "result": "The authors claim their combinatorial cluster analysis method is generalizable to other synapse mapping techniques and can characterize any distribution of structures along a one-dimensional axis. They also assert that CASIM has advantages over structural methods by identifying synapses functionally rather than structurally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C61 make reasonable assertions about method generalizability and advantages. The combinatorial approach is indeed applicable to any spatial distribution data (C43), as it relies on general statistical principles. The functional vs. structural distinction (C61) is valid, though both approaches have complementary strengths and limitations not fully discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors infer that clusters likely arise from multiple presynaptic neurons rather than single neurons, based on typical connection sizes (4-8 synapses per connection). They propose that synchronous activation would occur during L5 network oscillations, citing evidence from anesthetized and awake animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 make reasonable inferences about cluster origins and functional activation. The inference about multiple presynaptic neurons (C53) logically follows from comparing typical connection sizes (C52) to cluster sizes. The connection to network oscillations (C54-C57) is appropriately supported by citations, though direct evidence for synchronous activation of clustered inputs is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors acknowledge that CASIM might miss synapses with very low release probability, but argue that the false negative rate is mainly determined by incomplete ChR2 expression. They reason that random undersampling would not introduce artifacts of non-random structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 provide appropriate discussion of method limitations. The reasoning about false negatives (C81) is sound and appropriately compared to other marker-based methods. The argument that random undersampling preserves spatial structure (C82) is logically valid, though the assumption of randomness could be tested more rigorously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The authors establish the scientific context by stating that spatial organization of synaptic inputs is important for dendritic integration but remarkably understudied. They review prior evidence for clustering in various contexts while noting that cluster parameters relevant for computation have not been rigorously quantified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C13 provide appropriate background and motivation. The importance of spatial organization (C1, C6-C7) is well-established in cited literature. The assertion about limited knowledge (C2, C12) is reasonable given the state of the field. The review of prior clustering reports (C8-C11, C13) accurately represents cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The authors suggest their results are consistent with observations of clustered spontaneous activity during development and clustered plasticity during learning. They also propose that clusters may help overcome stochastic neurotransmitter release to increase transmission reliability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 make appropriate connections to related phenomena in the literature. The consistency with developmental and plasticity observations (C49-C50) is supported by appropriate citations. The speculation about overcoming release stochasticity (C51) is reasonable and cited, though it remains a hypothesis without direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The authors conclude that quantitative analysis of spatial input organization, combined with rules of dendritic integration and synaptic summation, is necessary to understand logical operations of neural computations at the cellular level, which are critical for understanding circuit information processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 provide appropriate broader context for the significance of the work. The argument that quantitative spatial analysis is necessary for understanding cellular computation (C59) is logically sound and supported by the demonstrated importance of cluster parameters. The connection to circuit function (C60) represents established understanding in the field.",
+    "result_type": "MINOR"
+  }
+]

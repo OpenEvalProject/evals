@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C88"
+    ],
+    "result": "HIV-1 RNA contains multiple m6A modifications at 3-4 sites per genome, enriched in the 5' and 3' UTRs and within coding genes (gag, rev, tat, env, nef), representing approximately 0.1% of total adenosines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 and C88 are supported by converging evidence from m6A-seq in multiple cell types (Jurkat T-cells, primary CD4+ T-cells, HEK293T cells) and LC-MS/MS quantification. The mapping data consistently show m6A peaks in similar genomic regions, and the quantitative measurement matches the predicted number of sites based on adenosine content.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C89"
+    ],
+    "result": "YTHDF1-3 proteins bind to HIV-1 genomic RNA during infection, with binding sites including the TAR element in the 5' UTR, env, rev, and 3' UTR regions, some of which overlap with identified m6A-containing regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 and C89 are supported by CLIP-seq data showing specific YTHDF1-3 binding peaks on HIV-1 RNA. The partial overlap between CLIP-seq peaks and m6A-seq peaks provides additional validation of m6A-dependent binding, though the use of different cell types (HeLa/CD4 for CLIP vs. Jurkat/primary CD4+ for m6A-seq) may explain incomplete overlap.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C82"
+    ],
+    "result": "YTHDF1-3 proteins act as negative regulators of HIV-1 infection: overexpression inhibits infection by ~10-fold and reduces Gag protein synthesis, while knockdown increases infection 2-14 fold in cell lines and primary CD4+ T-cells, without affecting cell proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C42 and C82 are supported by consistent gain-of-function and loss-of-function experiments across multiple cell types (HeLa, Jurkat, primary CD4+ T-cells). The bidirectional effects (overexpression inhibits, knockdown enhances) provide strong evidence for a regulatory role. Statistical significance is reported (p<0.05 to p<0.0005), and controls for cell proliferation address potential confounding effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C83",
+      "C84",
+      "C90"
+    ],
+    "result": "YTHDF1-3 proteins inhibit HIV-1 infection primarily by blocking viral reverse transcription: overexpression reduces late RT products by 4-10 fold and 2-LTR circles by >10-fold, while knockdown increases late RT products by 2-3 fold in HeLa cells and 2.7-fold for YTHDF1 in Jurkat cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47, C83-C84, and C90 are supported by qPCR measurements of late RT products and 2-LTR circles showing consistent directional effects across overexpression and knockdown experiments. The mechanistic link between YTHDF binding and RT inhibition is well-supported, though the differential effects among YTHDF1-3 in Jurkat cells (C46-C47) suggest some functional specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "YTHDF1-3 proteins negatively regulate HIV-1 gag mRNA levels: overexpression reduces gag mRNA 4-fold in HeLa cells, while knockdown increases it 8-12 fold in HeLa cells, with differential effects in Jurkat cells (YTHDF3 knockdown increases gag mRNA 2-fold, but YTHDF1/2 have no significant effect).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by qRT-PCR data, though the effects are less consistent across cell types than the RT inhibition results. The authors acknowledge this variability and attribute it to differences in knockdown efficiency (C95), which is a reasonable explanation but introduces some uncertainty about the relative contributions of each YTHDF protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C91",
+      "C92"
+    ],
+    "result": "YTHDF1-3 proteins associate with HIV-1 gRNA and promote its degradation: immunoprecipitation shows strong association with gRNA, and time-course analysis reveals that YTHDF overexpression reduces gag RNA levels to 13-25% at 24 hpi compared to 80% in control cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56, C91-C92 are supported by immunoprecipitation and qRT-PCR kinetics data. The temporal analysis showing enhanced degradation in YTHDF-expressing cells provides mechanistic insight. However, the interpretation that YTHDF proteins directly degrade HIV-1 RNA (C56) is somewhat inferential, as the data show association and reduced RNA levels but do not directly demonstrate enzymatic degradation activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C85"
+    ],
+    "result": "m6A writers (METTL3/METTL14) are required for efficient HIV-1 protein synthesis: knockdown reduces Gag expression by 60-70% and p24 release by 30-50%, suggesting m6A modification facilitates viral protein translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 and C85 are supported by siRNA knockdown experiments with immunoblotting and ELISA measurements. The consistent reduction in both intracellular Gag and released p24 supports the conclusion. However, the interpretation that m6A 'facilitates translation' (C60) is inferential rather than directly demonstrated, as the experiments measure protein levels but not translation rates directly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C66",
+      "C86"
+    ],
+    "result": "m6A eraser FTO negatively regulates HIV-1 protein synthesis: knockdown increases Gag synthesis by 2.5-6.5 fold and p24 release by 2-3 fold, indicating that m6A modification enhances HIV-1 protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63, C66, and C86 are supported by siRNA knockdown experiments showing opposite effects to writer knockdown. The bidirectional regulation by writers and erasers provides strong evidence for m6A-dependent control of HIV-1 protein expression. The magnitude of effects is substantial and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors propose a dual-role model for m6A in HIV-1 infection: YTHDF1-3 binding to m6A-modified HIV-1 RNA inhibits reverse transcription and gene expression, while m6A modification itself promotes viral protein translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 represent the integrated model supported by the collective experimental evidence. The model reconciles the apparently contradictory observations that m6A modification enhances protein synthesis (writer/eraser experiments) while YTHDF binding inhibits infection (reader experiments). This is well-supported by the data, though the precise molecular mechanisms remain to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "HIV-1 infection causes minimal changes to global m6A distribution in host cellular RNAs, with slight increases in RRACH motif frequency (0.2-0.8%) and decreases in GGACU motif frequency (0.2-0.4%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by m6A-seq analysis comparing infected and uninfected cells. The changes are small (<1%) and the biological significance is uncertain, as acknowledged by the authors. The data quality appears adequate for detecting these subtle differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "The authors' results agree with Lichinchi et al. (2016) showing that silencing m6A writers or AlkBH5 decreases or increases HIV-1 p24 expression in infected MT4 cells, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is supported by citation and consistency with the authors' own findings in Figure 6. This provides external validation of the writer/eraser effects on HIV-1 protein expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C80",
+      "C87"
+    ],
+    "result": "Background claims about m6A biology, YTHDF protein functions, and prior HIV-1 m6A studies establish the scientific context for the current work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C22, C70-C76, C80, and C87 are background knowledge supported by appropriate citations to the literature. These establish the foundation for the study but do not represent new findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C94",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors offer several speculative interpretations and acknowledge limitations: m6A may serve immune evasion functions, YTHDF proteins may have evolved as host defense, effects could be indirect, functional redundancy may exist, and methodological differences may explain discrepancies with other studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C79, C81, C94, C96-C101 are explicitly speculative or acknowledge uncertainties. These represent reasonable hypotheses and limitations but are not directly tested in the current study. The authors appropriately qualify these statements as possibilities rather than conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "The authors suggest that different knockdown efficiencies in HeLa versus Jurkat cells might explain the differential effects of YTHDF1-3 silencing on gag mRNA expression between these cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C95 is a speculative explanation for observed differences, supported by reference to knockdown efficiency data in Figures 2D and 3A. While plausible, this explanation is not directly tested through experiments designed to equalize knockdown efficiency across cell types.",
+    "result_type": "MINOR"
+  }
+]

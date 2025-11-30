@@ -1,0 +1,433 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "The authors generated a high-quality Atlantic herring genome assembly of 808 Mb with scaffold N50 of 1.84 Mb, containing 23,336 predicted coding genes, 44% GC content, and 31% repetitive elements. The assembly showed high completeness with 84% of core genes complete and only 2.5% missing, and contained 14,107 orthologous gene families with 573 herring-specific families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C9 and C146-C154 collectively describe the genome assembly quality metrics and annotation results. The assembly size, N50, gene count, GC content, repeat content, CEGMA completeness scores, and orthology analysis are all directly measured from the data generated in this study. These technical metrics are internally consistent and supported by standard genome assembly quality assessment methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Synthetic long reads dramatically improved indel discovery (>30 bp) compared to short reads, and the authors identified 150 endogenous retroviruses (ERVs) constituting ~0.14% of the genome, including 8 epsilon-like ERVs, with none containing complete open reading frames in all gag, pol, and env genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 and C155-C159 describe the utility of synthetic long reads and ERV characterization. The improvement in indel detection is directly measured by comparing detection methods (Supplementary file 1F), and ERV identification is based on phylogenetic analysis using RetroTector. The finding that no ERVs have complete ORFs in all three genes is a straightforward observation from sequence analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The authors performed whole genome pooled sequencing of 20 herring populations (47-100 fish per pool at ~30x coverage) plus 16 individually sequenced fish (~10x coverage), identifying 8.83 million SNPs including Pacific herring and 6.04 million SNPs among Atlantic and Baltic herring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 describe the experimental design and SNP discovery. These are straightforward descriptions of the sequencing strategy and variant calling results. The sample sizes, coverage depths, and SNP counts are directly measured from the data and represent standard population genomics approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Average nucleotide diversity in herring was estimated at 0.32% (one heterozygous site per 309 bp) with no significant difference between Atlantic and Baltic herring, and linkage disequilibrium decayed very rapidly with r\u00b2 falling to 0.1 at 100 bp distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 describe population genetic parameters calculated from the sequencing data. Nucleotide diversity was estimated from heterozygous sites in the reference individual and validated across 16 individually sequenced fish. The rapid LD decay is measured using VCFtools. These are standard population genetic metrics with appropriate statistical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The allele frequency distribution deviated significantly from neutral expectations (p<2\u00d710\u207b\u00b9\u2076) due to excess rare alleles, supported by negative Tajima's D (mean=-0.57\u00b10.01). Demographic analysis using diCal confirmed a 5-10 fold expansion in effective population size to current Ne~10\u2076, with the population minimum occurring 1-2 million years ago after the onset of the Quaternary ice age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 describe demographic history inferred from genetic data. The Kolmogorov-Smirnov test provides strong statistical support (p<2\u00d710\u207b\u00b9\u2076) for deviation from neutrality. Tajima's D and diCal analyses are appropriate methods for demographic inference. However, the timing estimate (1-2 MYA) depends on assumed mutation rates (1.25\u00d710\u207b\u2078) borrowed from other studies, which introduces some uncertainty not fully addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Phylogenetic analysis revealed large genetic distance between Pacific and Atlantic herring (split ~2.2 MYA based on mtDNA), tiny divergence among Atlantic/Baltic populations consistent with post-glacial expansion from a common ancestor, and intermediate positioning of autumn-spawning Baltic populations (B\u00c4H, BF) indicating genetic distinctiveness from spring/summer spawners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 describe phylogenetic relationships based on neighbor-joining trees. The large Pacific-Atlantic divergence and small Atlantic-Baltic divergence are clearly visible in the data (Figure 1C). The 2.2 MYA split estimate relies on mtDNA cytochrome B divergence with molecular clock calibration from Burridge et al. 2008. The intermediate position of autumn spawners is an observation, though the interpretation of genetic distinctiveness is strengthened by later analyses (C56-C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Atlantic and Baltic herring, classified as subspecies by Linnaeus (1761), are adapted to strikingly different salinity environments ranging from 2-3\u2030 in Gulf of Bothnia to 12\u2030 in Southern Baltic Sea, versus 20-35\u2030 in Kattegat, Skagerrak, North Sea and Atlantic Ocean.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 establish the environmental context and historical taxonomy. The Linnaeus classification is a historical fact (C34), and the salinity measurements (C36-C37) are environmental data from sampling locations (Table 2). The claim of adaptation (C35) is supported by the subsequent genetic analyses showing differentiation correlated with salinity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Comparing Atlantic and Baltic herring, 46,045 SNPs showed significant allele frequency differences (p<1\u00d710\u207b\u00b9\u2070), representing at least 472 independent loci. Genetic adaptation typically occurs as large haplotype blocks (often multiple genes), and phylogenetic trees based on differentiated SNPs show population positions matching salinity variation perfectly. Bayenv 2.0 identified 3,335 SNPs from 122 independent regions with highly significant association to salinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 describe the genetic architecture of salinity adaptation. The \u03c7\u00b2 test identifies 46,045 significant SNPs, and the conservative clustering approach (using Comb-P software, gaps, and p<1\u00d710\u207b\u00b2\u2070 threshold) yields 472 independent loci. The haplotype block pattern is clearly illustrated (Figure 3A lower panel). Bayenv 2.0 analysis with stringent thresholds (log\u2081\u2080(BF)\u22654, |r|\u22650.8) identifies loci consistently correlated with salinity. The methods are appropriate and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Genes in salinity-associated regions include 21 previously linked to human hypertension and 36 showing differential expression in sticklebacks under different salinity conditions. Key candidate genes include PRLR (osmoregulation in fish), HCE (hatching enzyme with massive copy number amplification negatively correlated with salinity and no coding changes), and SLC12A3 (osmotic balance regulation, associated with hypertension, differentially expressed in stickleback kidney).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C54 identify specific candidate genes for salinity adaptation. The overlap with human hypertension genes (C44) and stickleback expression studies (C45) provides cross-species validation. PRLR's role in fish osmoregulation (C46) is well-established in the literature. The HCE copy number amplification (C47) is directly measured and shows strong negative correlation with salinity (Figure 3D). The absence of coding changes (C50) is verified by sequence analysis. SLC12A3's role (C52-C54) is supported by literature and comparative data. These functional connections strengthen the case for adaptive significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Comparing autumn and spring spawning herring, 10,195 SNPs (p<1\u00d710\u207b\u00b9\u2070) and 69 copy number variant regions (p<0.001) showed significant differences, representing at least 125 independent loci. This demonstrates for the first time that autumn and spring spawners are genetically distinct, indicating genetic factors affect spawning time. General linear mixed model analysis identified 17 regions passing p<10\u207b\u00b9\u2070 threshold showing most consistent association with spawning time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 establish the genetic basis of spawning time variation. The prior uncertainty (C55) is appropriately cited. The identification of 10,195 significant SNPs and 69 CNV regions uses the same rigorous statistical approach as the salinity analysis. The claim that this is the 'first' demonstration (C59) of genetic distinctiveness is justified given the prior uncertainty about genetic vs. plastic control. The GLMER analysis (C62) appropriately accounts for population structure and uses stringent Bonferroni correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Summer-spawning herring showed intermediate allele frequencies at spawning-associated loci. FIT statistics analysis of 1,500 SNPs showed summer spawners (B\u00c4S) did not deviate markedly from FIT=0 (less than spring spawners from same locality), strongly suggesting they represent a distinct population rather than admixture. Spawning time may be fine-tuned by allele dosage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 address whether summer spawners are a distinct population or admixed. The intermediate allele frequencies (C63) could suggest admixture, but the FIT analysis (C64) provides strong evidence against this interpretation - if summer spawners were 50:50 admixture of spring and autumn spawners, expected FIT would be 0.46, but observed is -0.10. This analysis is rigorous and the conclusion (C65) is well-supported. However, C66 is speculative and appropriately marked as such.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Scaffold 1420 showed evidence of a selective sweep in spring spawners (reduced heterozygosity per site) but not autumn spawners, though overall nucleotide diversity was similar (spring: 0.24%\u00b10.004%; autumn: 0.27%\u00b10.003%). Spring spawners had more variable sites but lower average heterozygosity per site. This pattern, supported by strong negative Tajima's D values, suggests a past selective sweep followed by population expansion allowing new mutation accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 describe signatures of selection at scaffold 1420. The heterozygosity pattern (C67) and nucleotide diversity measurements (C68-C69) are directly calculated from the data. The interpretation (C70) is speculative but reasonable and appropriately qualified. The negative Tajima's D values (C71) provide independent support for this interpretation. The pattern is consistent with known population genetic theory, though alternative explanations are not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The strongest association signal (p<1\u00d710\u207b\u00b9\u00b2\u2070) for spawning time is located within and upstream of TSHR (thyroid-stimulating hormone receptor), which has a central role in photoperiodic reproduction in birds and mammals. Other associated genes include calmodulin (GnRH signaling), SOX11 (GnRH expression control), and ESR2a (estrogen receptor beta). Evidence from mice and sticklebacks supports ESR2's role in photoperiodic/circadian regulation of reproduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C80 identify candidate genes for spawning time control. The TSHR association (C73) has extremely strong statistical support (p<1\u00d710\u207b\u00b9\u00b2\u2070). The functional roles of TSHR (C74), calmodulin (C75), SOX11 (C76), and ESR2a (C77) in reproductive biology are well-established in the cited literature. The stickleback aromatase inhibitor experiment (C78) and mouse circadian regulation of ESR2 (C79) provide cross-species functional validation. The inference that ESR2 is more important than ESR1 (C80) is reasonable but based on indirect evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Both salinity and spawning time adaptations show haplotype blocks (10-200 kb) with strong differentiation despite rapid LD decay at neutral sites. Mate pair library analysis detected few convincing inversion candidates, and none coincided with regions under selection, indicating inversions are not an important explanation for haplotype blocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 address the mechanism maintaining haplotype blocks. The presence of large haplotype blocks (C81) is clearly demonstrated in Figures 3C and 4C. The inversion analysis (C82-C83) using 3.3 kb mate pair libraries is an appropriate method, though the negative result should be interpreted cautiously - the insert size may be insufficient to detect all inversions, and the analysis is limited to four individuals. The conclusion is reasonable but could benefit from additional validation methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Nucleotide diversity was significantly higher in differentiated regions than random regions for both Atlantic vs. Baltic and spring vs. autumn contrasts (within and between populations). This pattern is consistent with haplotype evolution model (multiple causal variants maintained by selection) rather than hitchhiking model (which predicts reduced diversity), and implies presence of multiple alleles with different combinations of causal variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C89 test alternative models for haplotype block evolution. The theoretical predictions (C84-C85) are correctly stated. The empirical test (C86-C87) comparing 30 most differentiated regions to 30 control regions shows significantly higher diversity in differentiated regions (Figure 5), which is inconsistent with recent hitchhiking. The conclusion (C88) favoring the haplotype evolution model is well-supported. However, the analysis could be strengthened by considering intermediate scenarios or testing additional predictions of each model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Non-synonymous substitutions showed the most striking enrichment in both contrasts, with steady increase above dAF=0.15 reaching two-fold enrichment at dAF>0.50. This enrichment reflects natural selection on protein sequence (synonymous SNPs lack similar enrichment). The 74 non-synonymous changes with dAF>0.50 in Atlantic vs. Baltic occur in only 29 genes; 21 changes in 9 genes for spring vs. autumn. Comparative analysis confirmed 58/62 orthologous positions are annotated as coding in other teleosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 describe enrichment of non-synonymous changes. The enrichment analysis (C90-C91) is clearly shown in Figure 6 and Supplementary file 3E. The comparison with synonymous SNPs (C92) provides strong evidence that enrichment reflects selection on protein sequence rather than linkage. The clustering of multiple changes in few genes (C93-C94) is striking and supports the haplotype evolution model. The comparative validation (C95) addresses potential annotation errors. The analysis is rigorous and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "UTR SNPs showed more consistent enrichment than synonymous changes, indicating UTR changes contributed to adaptation (likely via mRNA stability/translation regulation). Both 5'UTR and 3'UTR SNPs are overrepresented at high dAF, particularly 5'UTR. Regulatory changes are evident from enrichment of SNPs within 5 kb of coding sequences, especially within 1 kb upstream (promoter region). Better annotation of non-coding functional sequences might reveal higher enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 describe enrichment of regulatory variants. The UTR enrichment (C96, C98) is demonstrated in the data, and the comparison with synonymous SNPs (C96) suggests this is not solely due to linkage with coding changes. The functional interpretation (C97) regarding mRNA stability and translation is reasonable given known UTR functions. The enrichment near coding sequences (C99-C100) is clearly shown, with strongest signal in promoter regions. The caveat about annotation limitations (C101) is appropriately speculative and acknowledges uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Intergenic and intronic SNPs were generally underrepresented at high dAF (intergenic: M=-0.64, p=5.1\u00d710\u207b\u00b2\u2075 for Atlantic-Baltic; intronic: M=-0.55, p=6.7\u00d710\u207b\u2077 for spawning). Of 469 identified nonsense mutations, examination of 8 with dAF>0.20 found 7 likely annotation errors and 1 not statistically significant, indicating gene inactivation is not a common mechanism for ecological adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 address the role of gene inactivation. The underrepresentation of intergenic and intronic SNPs (C102-C104) is statistically significant and shown in Figure 6. The analysis of nonsense mutations (C105-C106) appropriately acknowledges that many predictions may be false due to annotation errors, and the manual examination of high dAF candidates found no convincing cases. The conclusion that gene inactivation is not common is well-supported and consistent with findings in domestic animals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Hundreds of independent loci underlying ecological adaptation were revealed by comparing spring and autumn spawners as well as populations adapted to marine and brackish waters. Both coding and non-coding changes contribute to ecological adaptation, and haplotype blocks spanning up to hundreds of kb show strong genetic differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 summarize the main findings. The identification of hundreds of loci (472 for salinity, 125 for spawning time) is supported by the rigorous clustering analysis. The contribution of both coding and non-coding changes (C108) is demonstrated by the enrichment analyses (C90-C100). The presence of large haplotype blocks (C109) is clearly shown in multiple figures. These are well-supported summary statements of the major results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Unlike human GWAS where most loci show tiny effects, this study revealed genomic regions with strong genetic differentiation in herring while the rest of the genome shows very low differentiation. The phenotypic effects may be small with differentiation accumulated over many generations, and there is room for natural selection to operate in species with large reproductive output like herring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C113 discuss the genetic architecture of adaptation. The contrast with human GWAS (C110-C111) is valid - herring shows strong differentiation at specific loci rather than weak signals across many loci. However, the speculation about small effect sizes (C112) is not directly tested and somewhat contradicts the strong differentiation observed. The point about selection opportunity in high-fecundity species (C113) is reasonable but also not directly demonstrated. These claims are more interpretive than the core results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The data are consistent with haplotype blocks evolving by accumulation of multiple consecutive mutations affecting one or more genes, similar to domestic animals and Darwin's finches. Under this scenario, shifts between allelic states rarely occur through single mutations since fitness depends on combined effects. Selection for suppressed recombination is expected to maintain favorable haplotype blocks. Higher nucleotide diversity in differentiated regions strongly supports selection-maintained haplotypes rather than hitchhiking, as does the common occurrence of multiple non-synonymous changes in genes showing strong differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 present the haplotype evolution model and supporting evidence. The model (C114-C116) is clearly articulated and draws appropriate parallels to other systems. The nucleotide diversity evidence (C117) strongly supports this model over hitchhiking (Figure 5). The multiple non-synonymous changes (C118) provide additional support. The comparison with Drosophila (C119) is appropriate. However, the model is not definitively proven - alternative explanations like balancing selection or structured ancestral variation are not fully excluded. The evidence is strong but not conclusive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "There was highly significant excess of non-synonymous changes and SNPs in UTRs and within 5 kb of coding sequences among differentiated loci, indicating both coding and non-coding changes contribute to adaptation. Regulatory changes are likely in the majority among causal variants (>10\u00d7 more non-coding than coding changes at highest dAF), though relative importance cannot be judged due to strong LD and lack of effect size data. Even SNPs with 10-15% allele frequency differences contribute to adaptation. Gene inactivation has not contributed to adaptive evolution, consistent with domestic animal studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C126 synthesize the findings on types of adaptive changes. The enrichment of multiple SNP categories (C121) is well-demonstrated. The conclusion that both coding and non-coding changes contribute (C122) is solid. The inference that regulatory changes are likely more numerous (C123) is reasonable given the counts, though the caveat about inability to judge relative importance (C124) is appropriate and honest. The observation about modest frequency differences (C125) is supported by the enrichment analysis. The conclusion about gene inactivation (C126) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "More than 100 independent loci show strong genetic differentiation between spring and autumn spawners. Several of the most strongly associated regions overlap genes with roles in photoperiodic regulation of reproduction in birds and mammals (TSHR, calmodulin, SOX11). Photoperiodic regulation in fish is poorly studied, but a recent study showed the saccus vasculosus is a day length sensor affecting TSHR expression in Masu salmon. Strong selection signatures at TSHR in chicken and sheep may reflect selection against seasonal reproduction in domestic animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C134 discuss the biological significance of spawning time loci. The importance of reproductive timing (C127-C128) is well-established. The identification of >100 loci (C129) is supported by the data. The caveat that not all control reproduction (C130) is appropriate. The overlap with photoperiodic genes (C131) is compelling, though the functional connection in fish is less direct than in birds/mammals. The Masu salmon study (C133) provides relevant fish-specific evidence. The speculation about domestic animals (C134) is reasonable but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The data are consistent with a metapopulation structure where subpopulations are not reproductively isolated. Gene flow combined with large effective population sizes explains low genetic differentiation at selectively neutral loci, yet natural selection is sufficiently strong to cause genetic differentiation at many loci underlying adaptation despite gene flow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C138 interpret the population structure. The long-standing debate (C135) is appropriately cited. The metapopulation interpretation (C136) is consistent with the low neutral differentiation and high Ne. The explanation for low neutral differentiation (C137) is standard population genetics. The key insight (C138) that selection can maintain differentiation despite gene flow is well-supported by the data showing strong differentiation at adaptive loci but not genome-wide. This is a coherent and well-supported interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The study demonstrates how genomic technologies can cost-effectively advance characterization of population structure and genetic diversity, with important implications for sustainable fishery management. It provides comprehensive genetic markers for stock assessments, including the first molecular tools to distinguish autumn and spring spawners. The finding that spring and autumn spawners are distinct populations implies they should be protected separately, which is currently not the case in the Baltic Sea. The study also has implications for aquaculture regarding seasonal reproduction and salinity adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C145 discuss broader implications. The overfishing context (C139) is well-documented in the literature. The demonstration of genomic approaches (C140) is valid. The provision of genetic markers (C141-C142) directly follows from the results. The management recommendation (C143) is a reasonable inference from the genetic distinctiveness, though implementation is a policy decision beyond the scope of the study. The current management practice (C144) is cited from ICES 2014. The aquaculture implications (C145) are speculative but reasonable.",
+    "result_type": "MINOR"
+  }
+]

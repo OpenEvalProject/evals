@@ -1,0 +1,2492 @@
+{
+  "submission": {
+    "id": "0433cd18-a1af-4787-9488-b2af4285d11f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:25:27.605764Z",
+    "updated_at": "2025-11-30T00:25:27.605764Z"
+  },
+  "content": [
+    {
+      "id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "submission_id": "0433cd18-a1af-4787-9488-b2af4285d11f",
+      "content_type": "manuscript",
+      "content_text": "# Wiz binds active promoters and CTCF-binding sites and is required for normal behaviour in the mouse\n\n## Authors\n\n- Luke Isbel<sup>1</sup> ([ORCID: 0000-0002-5270-4347](https://orcid.org/0000-0002-5270-4347))\n- Lexie Prokopuk<sup>1</sup>\n- Haoyu Wu<sup>2</sup>\n- Lucia Daxinger<sup>1</sup>\n- Harald Oey<sup>1</sup>\n- Alex Spurling<sup>1</sup> ([ORCID: 0000-0002-4368-6191](https://orcid.org/0000-0002-4368-6191))\n- Adam J Lawther<sup>3</sup>\n- Matthew W Hale<sup>3</sup>\n- Emma Whitelaw<sup>1</sup> ([ORCID: 0000-0002-2320-2903](https://orcid.org/0000-0002-2320-2903)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Genetics La Trobe Institute for Molecular Science Melbourne Australia\n2. Department of Human Genetics Leiden University Medical Centre Leiden The Netherlands\n3. Department of Psychology and Counselling La Trobe University Melbourne Australia\n4. School of Psychology and Public Health La Trobe University Melbourne Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe previously identified Wiz in a mouse screen for epigenetic modifiers. Due to its known association with G9a/GLP, Wiz is generally considered a transcriptional repressor. Here, we provide evidence that it may also function as a transcriptional activator. Wiz levels are high in the brain, but its function and direct targets are unknown. ChIP-seq was performed in adult cerebellum and Wiz peaks were found at promoters and transcription factor CTCF binding sites. RNA-seq in Wiz mutant mice identified genes differentially regulated in adult cerebellum and embryonic brain. In embryonic brain most decreased in expression and included clustered protocadherin genes. These also decreased in adult cerebellum and showed strong Wiz ChIP-seq enrichment. Because a precise pattern of protocadherin gene expression is required for neuronal development, behavioural tests were carried out on mutant mice, revealing an anxiety-like phenotype. This is the first evidence of a role for Wiz in neural function.\n\n## Introduction\n\nAn ENU mutagenesis screen for modifiers of epigenetic reprogramming was carried out in the mouse and the lines produced are termed MommeDs, Modifiers of murine metastable epialleles, Dominant (Daxinger et al., 2013). The screen used a multicopy GFP transgene, under the control of erythroid promoter/enhancer sequences, as a reporter. As this reporter undergoes stochastic silencing among otherwise identical erythroid cells, it is reminiscent of the position effect variegation (PEV) screens used to identify genes with roles in regulating gene expression (Henikoff, 1990; Fodor et al., 2010). Male mice with the reporter were treated with N-ethyl-N-nitrosourea (ENU) and offspring were screened for changes in the percentage of erythrocytes expressing GFP; this was a screen for dominant effects. The mutation underlying the MommeD30 strain was found to be a single base pair deletion in the gene Widely interspaced zinc finger motifs, Wiz. The deletion, of an adenine, causes a frame-shift that introduces a premature stop codon. WizMommeD30/MommeD30\u00a0embryos die around mid-gestation and heterozygosity for the mutant allele results in approximately half the normal levels of the protein, confirming that WizMommeD30 is a null allele (Daxinger et al., 2013). This is the only mouse strain with a mutant form of this gene to be reported.\n\nLittle is known about the role of Wiz in any tissue. The protein is predicted to have 11 C2H2 type zinc finger domains that are unusually widely spaced. Some of them can bind DNA and some of them can mediate protein-protein interactions with the G9a/GLP (G9a-like) histone methyltransferase complex (Ueda et al., 2006; Bian et al., 2015). The G9a/GLP heterodimer catalyses the methylation of H3K9me1 and H3K9me2 (Jenuwein et al., 1998; Tachibana et al., 2001, 2002, 2005), which is associated with transcriptional repression (Barski et al., 2007) and is located on chromatin in broad regions, termed LOCKs (large organized chromatin K9-modifications) (Wen et al., 2009). Work carried out in cell lines has shown that Wiz can stabilize the G9a/GLP complex, mediate its localisation to DNA and is required for maintaining normal global levels of H3K9me2, suggesting a role in transcriptional repression (Bian et al., 2015; Simon et al., 2015; Ueda et al., 2006).\n\nIt has also been shown that G9a can act as a transcriptional activator, independent of its histone methytransferase activity (Chaturvedi et al., 2009; Lee et al., 2006; Oh et al., 2014; Purcell et al., 2011; Yuan et al., 2007) and it has recently been suggested that WIZ has a role in the activation function of G9a (Simon et al., 2015). WizMommeD30 was identified in the screen because mice heterozygous for the mutant allele showed decreased expression of the GFP transgene. Here, we show at an independent locus known to be sensitive to the dosage of epigenetic modifiers, the Agouti viable yellow (Avy) allele, that haploinsufficiency for Wiz also results in decreased expression.\n\nWiz is expressed highly in the brain, both in the embryo and in the adult (Matsumoto et al., 1998). As reduced levels of G9a/GLP are known to result in the neurological disease Kleefstra syndrome (Kleefstra et al., 2006; Willemsen et al., 2011), it is possible that reduced levels of Wiz might have neurological consequences. Kleefstra syndrome individuals display a complex range of neurological symptoms, including anxiety (Willemsen et al., 2011). We decided to study the role of Wiz in the brains of WizMommeD30 mice. We carried out ChIP-seq and RNA-seq in adult cerebellum, a tissue in which Wiz is expressed at high levels (Matsumoto et al., 1998). Our results show that Wiz binds tens of thousands of transcriptional regulatory regions across the genome, some of which decrease in expression in WizMommeD30/+ tissue. ChIP-seq, with an anti-Wiz antibody, has been reported in a human kidney cell line (Bian et al., 2015) and there is little overlap with our findings. Our molecular studies prompted us to assess behaviour in heterozygous mutant mice and we found that WizMommeD30/+ mice display an anxiety-like phenotype.\n\n## Results\n\n### Wiz haploinsufficiency increases the probability of silencing the metastable epiallele, Agouti viable yellow\n\nHaploinsufficiency for Wiz resulted in an increase in the probability of silencing at the GFP transgene reporter, suggesting a role in transcriptional activation at this locus (Daxinger et al., 2013). To test the effect of haploinsufficiency for Wiz at an independent reporter known to be sensitive to the\u00a0dosage of epigenetic modifiers, we used mice carrying the Avy allele. This strain has been maintained on the C57BL/6J background in a heterozygous state (Avy/a). The coat colour of the mouse can be used as a reporter of transcriptional activity at the Avy locus (Duhl et al., 1994). An active locus results in a yellow coat, a silent locus results in a dark brown coat (called pseudoagouti) and a mottled coat arises when some clusters of cells express the locus and some clusters do not. Male WizMommeD30/+ mice (maintained on an FVB/NJ background) were crossed to female Avy/a (pseudoagouti) mice and the coat colours of the offspring were scored at weaning (three weeks). FVB/NJ mice carry a wildtype Agouti locus, A/A, so ~50% of offspring from these crosses will be Avy/A and differ only at the WizMommeD30 allele, i.e. WizMommeD30/+; Avy/A or Wiz+/+; Avy/A. Offspring were genotyped for the Avy and WizMommeD30 alleles. Mice that did not inherit the Avy allele we excluded from the\u00a0analysis. The reciprocal cross was also carried out, i.e. female WizMommeD30/+ mice were crossed to male Avy/a\u00a0(pseudoagouti) mice. The pedigrees and outcomes for both crosses are shown in Figure 1A and B.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/15082/elife-15082-fig1-v2.jpg)\n\n**Figure 1.:** Pedigree charts (left) are shown for generating F1 mice heterozygous for the Avy\u00a0allele and either wildtype or heterozygous for WizMommeD30. WizMommeD30/+ mice were crossed to pseudoagouti Avy/a mice, numbers of F1 mice in each cohort are indicated. The proportions of coat colours for F1 mice are shown (right) from a cross with either a WizMommeD30/+ sire (A) or dam (B). Chi-squared tests were carried out to determine significance, *p-value<0.05, **p-value<0.005.\n\nWizMommeD30/+ offspring from both crosses displayed a shift towards silencing (i.e. more pseudoagouti mice), compared to Wiz+/+ littermates. The shift was statistically significant in both cases; the shift from WizMommeD30/+ sire cross had a p-value of 0.0002, and from the WizMommeD30/+ dam cross had a p-value of 0.0458 (Figure 1A and B). The effect of haploinsufficiency at the Avy locus is similar to the effect at the GFP transgene reporter, i.e. reduced levels of Wiz were associated with increased silencing.\n\n### Wiz peaks occur at regulatory regions, many of which bind CTCF\n\nTo test the specificity of an anti-Wiz antibody (NBP180586, Novus Biologicals, Littleton, USA) in mouse tissue, Western blotting was carried out using total protein lysates from Wiz+/+ and WizMommeD30/MommeD30 E12.5 embryonic heads, prior to the death of the WizMommeD30/MommeD30 fetuses (Figure 2\u2014figure supplement 1). The bands detected in the wildtype sample (at around 100\u2009kDa) were absent in the sample from the homozygous mutant, consistent with an antibody that is specific for Wiz. A larger ~160\u2009KDa isoform has previously been reported in adult cerebellum (Matsumoto et al., 1998), and consistent with that report, a band of this size is detected with our antibody in protein extracted from this tissue (Figure 2\u2014figure supplement 1). In addition, we used an unbiased tandem affinity purification approach and compared mass spectroscopy data with previously published datasets analysing Wiz binding partners. Co-immunoprecipitation (Co-IP) with the anti-Wiz antibody and an anti-IgG control antibody was carried out on pooled E13.5 brain tissue (n = 1 pooled sample from 5 individuals) and adult cerebellum (n = 2 biological replicates). Four members of the Wiz-Zfp644-EHMT1-EHMT2 complex (Ueda et al., 2006; Bian et al., 2015) were in the top five proteins in the dataset, ranked by peptide count in embryonic brain (Figure 2\u2014source data 1).\n\nThe cerebellums of four adult male Wiz+/+ mice were pooled for ChIP-seq; two cerebellums per sample and two biological replicates. The\u00a0cerebellum was chosen for two reasons; it is a relatively simple tissue in the brain with respect to cell types and it is an ENCODE tissue, enabling comparisons to be made with ChIP-seq data obtained for other chromatin proteins. Library preparation and sequencing were carried out by Active Motif (Carlsbad, USA). Over 30 million reads were generated for each of the two Wiz ChIP-seq datasets and the chromatin Input sample dataset. At least 24 million reads could be aligned to the mouse mm10 genome in all cases, after filtering out PCR duplicates.\n\nApproximately 40,000 peaks were identified at which the two Wiz-ChIP-seq datasets were significantly enriched compared to the Input control with a p-value of \u22641\u00a0\u00d7\u00a010\u221220 (Supplementary file 1). A representative Wiz peak and ChIP-qPCR validation at the same locus is shown in Figure 2A and B, respectively. To determine where Wiz was bound with respect to genic regions of transcriptionally active and inactive genes, an analysis of overlap with gene promoters and gene bodies was carried out. The\u00a0peaks were roughly equally distributed across promoters (defined as 2 kb up and downstream of the TSS), intragenic and intergenic regions, despite the fact that promoters comprise only a small fraction of the total mouse genome (Figure 2C). Consistent with this, the deep sequencing read density across the body of all Ensembl genes (normalized for gene length; see Materials\u00a0and\u00a0methods), as well as 2 kb upstream of the TSS (transcription start site) and downstream of the TTS (transcriptional termination site), showed strong enrichment at the TSS (Figure 2D and E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/15082/elife-15082-fig2-v2.jpg)\n\n**Figure 2.:** (A) ChIP-seq was performed for Wiz in the\u00a0adult male cerebellum, a screenshot is shown of a random Wiz-enriched site (* indicated) with the two ChIP-seq replicates and input, from the ~40,000 significantly enriched peaks. Encode data for CTCF and H3K4me3 is also included. (B) Enrichment for Wiz in two cerebellum samples (Cb1 and Cb2) is shown by ChIP-qPCR, with primers located in regions not enriched for Wiz in ChIP-seq data and primers flanking the * indicated ChIP-seq peak from (A). Enrichment is represented as binding events detected per 1000 cells and are generated by running samples in parallel with known amounts of genomic DNA. Error bars indicate S.D. from 3 technical replicates. (C) The percentage is shown of Wiz peaks that overlap with the\u00a0promoter (up to 2 kb from a TSS) and genic sequence of genes that were classified as active or silenced, according to RNA-seq data mapped to Ensembl genes annotations. (D) Wiz ChIP-seq (and Input) occupancy over all Ensembl gene bodies is shown as deep sequencing read density along the transcription unit, including 2 kb up and downstream of the transcriptional start and stop site. Genes were separated into either active or silenced transcriptional states, as in C.\n\n![Figure 2\u2014figure supplement\u00a01.](https://cdn.elifesciences.org/articles/15082/elife-15082-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement\u00a01.:** (A) Western blotting for Wiz using an NBP180586 anti-Wiz antibody is shown for total protein lysates from E12.5 Wiz+/+ and WizMommeD30/MommeD30 embryo head. Three bands at ~100\u00a0kD represent Wiz isoforms, consistent with UCSC gene splice variants, in Wiz+/+ sample and are absent in WizMommeD30/ MommeD30 sample. Western blotting with an anti-\u03b3-Tubulin antibody is shown as a loading control. (B) Anti-Wiz antibody staining in adult cerebellum, showing the short (~100\u2013120 KDa) isoforms present in embryo head protein extract, as well as a long (~160 KDa) isoform previously reported to be expressed (Matsumoto et al., 1998).\n\nThe MEME-ChIP program was used to identify motifs that are common at Wiz-binding locations and several were identified with high statistical significance, i.e. p-values from 1.1\u00a0\u00d7\u00a010\u22126902 to 2.9\u00a0\u00d7\u00a010\u2212439 (Figure 3A). One of these, Wiz motif 1, had a significance (MEME-ChIP E-value) E-Value of 2.3\u00a0\u00d7\u00a010\u22126903, an order of magnitude higher than other motifs and aligned almost perfectly with the CTCF-DNA binding motif (Figure 3B). This motif was present in approximately 70% of all Wiz binding peaks across the genome.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/15082/elife-15082-fig3-v2.jpg)\n\n**Figure 3.:** (A) The six most enriched motifs in Wiz ChIP-seq peaks (n = 39,781) and their distribution inside peaks are shown. (B) The most significant of these matches the CTCF-binding site consensus sequence (JASPAR CORE database - MA0139.1). (C) Read density for Wiz and the Encode CTCF and H3K4me3 ChIP-seq datasets were calculated across a 4 kb region centred on the ~40,000 Wiz ChIP-seq peaks. Input sequencing from the Wiz ChIP-seq experiment is also shown. Loci are clustered by the\u00a0similarity of read density and datasets were normalized to the smallest sized library. (D) Venn diagram showing the overlap for Wiz, CTCF and H3K4me3 ChIP-seq peaks. An overlap was defined as at least one base of sequence occupied by a significantly enriched peak (p\u22641\u00a0\u00d7\u00a010\u221220) from two datasets.\n\n![Figure 3\u2014figure supplement\u00a01.](https://cdn.elifesciences.org/articles/15082/elife-15082-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement\u00a01.:** (B) Shown is a UCSC genome browser screenshot of the SENP5 gene focussing on the consensus binding site (CATTCCATTCCATT motif) reported in Bian et al. (2015). The consensus binding site is indicated. Strong enrichment is seen for the Wiz ChIP-seq data, shown as a continuous read-depth score, at the CATTCCATTCCATT motif, though this occurs over a HSATII satellite element (shown in the repeat masker track) and is likely to be a mapping artefact.\n\nAn ENCODE ChIP-seq dataset for CTCF binding in mouse adult cerebellum is publically available. To determine if CTCF peaks overlapped with Wiz peaks, Wiz ChIP-seq read density was compared to ENCODE ChIP-seq data for CTCF in the\u00a0adult cerebellum at Wiz peaks (Figure 3C). Strong overlap was seen. The ENCODE dataset for H3K4me3, a histone modification associated with active transcription, was also mapped to the genome (mm10 build) and ChIP-seq peaks for CTCF, H3K4me3 and Wiz were compared (Figure 3C), as described in Materials\u00a0and\u00a0methods. Over half of Wiz ChIP-seq peaks overlapped the promoter mark H3K4me3 and approximately a third of all Wiz ChIP-seq peaks overlapped CTCF ChIP-seq peaks (Figure 3D). Virtually all locations with both CTCF and H3K4me3 peaks also showed a Wiz peak (1356/1359). Interestingly, almost all CTCF peaks overlapped with Wiz peaks.\n\nA ChIP-seq dataset was recently published using an anti-Wiz antibody and HEK293T cells (Bian et al., 2015); the authors conclude that Wiz localizes to gene promoters and (using EMSA analysis) can bind to the DNA sequence CATTCCATTCCATT. Shown in their report are representative screen shots of Wiz-ChIP-seq enrichment at the promoter region of seven genes (defined in their study as 5\u00a0kb up or downstream of the TSS) where there was a \u201cconsensus DNA-binding motif confirmed at the locus\u201d. We examined the DNA sequence surrounding each of these seven genes, in all cases the location of the consensus sequence was at least 5\u00a0Kb from either the promoter where the\u00a0binding was demonstrated or the coordinates of the nearest reported ChIP-seq peak (n = 11,853). Instead, the sequence was located downstream in the body of each gene. After remapping this publically available Wiz ChIP-seq dataset (GSE62616), only one of the seven genes was found to have enrichment at the consensus sequence (i.e. reads mapping directly at the CATTCCATTCCATT motif), in the SENP5 gene. In this case, reads mapped to a sequence located in a repetitive HSATII satellite element and is likely to be a mapping artefact (Figure 3\u2014figure supplement 1). Enrichment was also seen at other copies of the HSATII element across the genome that had the CATTCCATTCCATT sequence (data not shown). We were unable to reproduce the enrichment shown in the report at any of the seven gene promoters (data not shown).\n\n### Genome-wide expression changes in embryonic brains and adult cerebellum of WizMommeD30/+ mice\n\nOur results have shown that haploinsufficiency for Wiz alters expression at the GFP transgene reporter and the Avy locus. We were keen to see if haploinsufficiency for Wiz resulted in changes in the expression of other genes and chose to investigate this in the brain. Firstly, we used the whole brains of E13.5 embryos in an attempt to identify early events and secondly, we used adult cerebellum, to compare expression changes to Wiz ChIP-seq data.\n\nInitially, RNA-seq was performed using E13.5 brains from male WizMommeD30/+ and Wiz+/+ embryos (n = 3 biological replicates for each genotype). Reads were aligned to the mouse genome (mm10 build) and differential expression of Ensembl genes between genotypes was calculated using the R package DESeq (Anders and Huber, 2010)\u00a0(Figure 4A; Supplementary file 2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/15082/elife-15082-fig4-v2.jpg)\n\n**Figure 4.:** (A) Volcano plots show the log2 fold-change (x-axis) in the average expression of genes in WizMommeD30/+\u00a0E13.5 brains compared to Wiz+/+ E13.5 brains. Shown is data for males (left, n = 3 per genotype) and females (right, n = 2 per genotype). Significance is shown on a \u2013log10 scale, those genes indicated in red are significantly differentially regulated with an adjusted p-value<0.05. (B) The overlap in differentially expressed genes is shown for the male and female embryonic brains, the majority of transcripts differentially expressed represent a common set between the sexes, listed in alphabetical order in (C), and all of these decrease in expression.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15082/elife-15082-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The locations of down regulated genes differentially expressed in E13.5 brains of WizMommeD30/+ mice (combined from male and female datasets) are shown on mouse chromosomes. The Wiz gene is not shown.\n\nRNA-seq was also carried out using brains from female E13.5 WizMommeD30/+ and Wiz+/+ embryos, and differential expression of genes was calculated as described above (n = 2 biological replicates for each genotype, Figure 4A; Supplementary file 3).\n\nGenes with a fold-change in average expression of less than 0.7 or greater than 1.3 (shown in figures on log2 scale) and an adjusted p-value of \u22640.05, were considered significantly differentially expressed. A total of 36 were found to change in males and 44 changed in females. The majority of significantly differentially expressed genes, in both cases, decreased in expression in the mutants (31/36 in males and 43/44 in females). As expected, Wiz itself was in this group.\n\nOf the combined set of 80 gene expression changes in males and females, 28 genes were common between the sexes and all of these decreased in WizMommeD30/+ samples compared to wildtype samples (Figure 4B and C). Genes that were significantly differentially expressed in one sex but not in the other generally trended towards statistical significance in the latter and none of these had a fold-change direction that was different between sexes, i.e. genes statistically down regulated in males trended down in females and vice versa.\n\nAmong the significantly differentially expressed genes, a relatively high proportion were from two gene clusters, the protocadherin \u03b2 (Pcdhb) gene cluster on Chromosome 18 and a second cluster consisting of 2610005L07Rik, 6820431F20Rik, AC152164.1, Gm10557, Gm21092, Gm21769, Gm21811, Gm26804 and Gm6483 on Chromosome 8 (Figure 4\u2014figure supplement 1). The latter cluster is poorly annotated due to a nearby repeated region that has made mapping difficult (Boyle and Ward, 1992). Under the annotations listed in the UCSC genome browser (Karolchik et al., 2003), most are annotated as cadherin11 pseudogenes; all have introns, and some are predicted to be coding. While it is very likely that Wiz haploinsufficiency affects multiple members of the cadherin-11 pseudogene cluster, it is possible that some expression changes are mapping artefacts. A more complete genome assembly is needed before this can be resolved by RNA-seq or single locus testing (i.e. real time quantitative PCR).\n\nTo see if the other significantly differentially expressed genes in E13.5 brain were related to location, we examined their locations on each chromosome (Figure 4\u2014figure supplement 1). No other gene clusters were apparent, though it was noticed that several genes were located near telomeres and four of the significantly differentially expressed genes, Samd11, psid-ps1, psid-ps2 and Csf2ra, are the last gene on the chromosome. While it is possible that the locations of these genes and the cadherin-11 pseudogene cluster are incorrect in the current genome build (mm10 build), they are likely to remain adjacent to heterochromatic repeats.\n\nCerebellums were also dissected from adult males (n = 3 per genotype) and RNA-seq was carried out on each. A total of 82 genes were significantly differentially expressed; 29 genes decreased and 53 increased in expression in WizMommeD30/+ samples compared to Wiz+/+ samples (Figure 5A; Supplementary file 4). Of these, some genes (n = 13) overlapped with those detected in the E13.5 brain data, including some from the protocadherin \u03b2 cluster, some from the cadherin 11-like cluster, Wiz, Csf2ra and Rps4l (Figure 5B). These all decreased in expression in WizMommeD30/+ cerebellum compared to the\u00a0Wiz+/+ cerebellum, as they had done in the embryonic brain.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/15082/elife-15082-fig5-v2.jpg)\n\n**Figure 5.:** (A) The log2 fold-change (x-axis) in the average expression of genes is shown for WizMommeD30/+\u00a0and Wiz+/+ cerebellum. Three male biological replicates were used per genotype. Significance is shown on a \u2013log10 scale, those genes indicated in red are significantly differentially regulated. (B) A list of significantly differentially regulated genes in WizMommeD30/+ cerebellum that were also deregulated in E13.5 WizMommeD30/+ brains.\n\nIn general, the down regulation of protocadherin \u03b2 genes was more pronounced in the embryonic brain than in the adult cerebellum, where significance was seen for only a minority of the genes in the clusters (Supplementary file 4).\n\nChIP-seq data were investigated at the protocadherin \u03b2 cluster (Figure 6A). A genome browser screenshot of the Wiz binding is shown for the protocadherin \u03b2 cluster and its 5\u2019 enhancer (HS5-1bL). Wiz enrichment was detected at all protocadherin \u03b2 promoters except Pcdhb1, which is the only protocadherin \u03b2 gene that lacks a canonical protocadherin promoter sequence (Guo et al., 2015; Wu et al., 2001). The\u00a0greatest enrichment was detected at the HS5-1bL enhancer. This enrichment at the enhancer is an order of magnitude higher than that seen at the individual promoters, and this might reflect the fact that while single members of the cluster are expressed in individual neurons, the HS5-1bL enhancer is likely to be active in all cell types (Yokota et al., 2011). In all cases tested, enrichment of Wiz was validated using ChIP-qPCR at protocadherin \u03b2 promoters and the HS5-1bL element (Figure 6B). Conversely, primers located in a gene desert and the Pcdhb1 promoter, which did not show an expression change in any of the tissues tested, were not enriched for Wiz.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/15082/elife-15082-fig6-v2.jpg)\n\n**Figure 6.:** (A) Genome browser screenshots of the protocadherin \u03b2 locus and the HS5-1bL enhancer (*indicated) located ~400\u00a0Kb downstream. Shown are Wiz ChIP-seq data generated in the\u00a0adult cerebellum as the read depth along the locus. Wiz binds promoters of the Pcdhb locus (left) and is enriched more at the downstream HS5-1bL enhancer (right), the relative binding of Wiz is indicated by the altered scale bar. The location of the Pcdhb genes, are indicated. (B) ChIP-qPCR was performed using the anti-Wiz antibody for two negative Wiz-enrichment sites, with primers located in a gene desert and at Pcdhb1, which was not enriched in ChIP-seq, and six positive Wiz-enrichment sites, including the promoters of four Pcdhb genes, the promoter of a Pcdhg gene and the downstream HS5-1bL enhancer. Enrichment is represented as binding events detected per 1000 cells and are generated by running samples in parallel with known amounts of genomic DNA. Error bars are the SEM from 3 biological replicates. (C) Shown is Wiz ChIP-seq read density in adult cerebellum as a heatplot for the 29 genes that decreased and (D) the 53 genes that increased, in expression in the cerebellum of WizMommeD30/+ mice. Also shown is CTCF ChIP-seq read density. ChIP-seq density was calculated for the 1\u00a0Kb surrounding the TSS of each gene and genes are ranked from the\u00a0lowest to the\u00a0highest fold change in each case. Datasets were normalized to the size of smallest library.\n\nWiz and CTCF ChIP-seq read density were calculated at the transcriptional start sites of the ~82 significantly differentially regulated genes in the\u00a0cerebellum. The\u00a0genes were first separated by whether they decreased or increased in expression in WizMommeD30/+ cerebellum compared to Wiz+/+ cerebellum. The\u00a0genes that decreased in expression showed high enrichment for Wiz and some enrichment for CTCF at the TSS (Figure 6C), while genes that increased in expression showed little enrichment for Wiz and no enrichment for CTCF (Figure 6D), suggesting that those showing increased expression were secondary effects (see Discussion).\n\n### WizMommeD30/+ mice have altered behaviour\n\nTo characterize the behavioural phenotype of WizMommeD30/+ mice, singly housed males were monitored over a period of 12 days using telemetry devices that record body temperature and locomotor activity. An initial cohort of Wiz+/+\u00a0and WizMommeD30/+ age-matched mice (n = 5 per genotype) was tested and a second cohort (n = 5 Wiz+/+, 6 WizMommeD30/+) was tested two months later to validate the\u00a0results from the first. The\u00a0data from both cohorts showed similar effects and were combined for presentation. Mice normally display a circadian pattern of activity dependent on the light/dark cycle and so data is shown across the 24-hr period after averaging results at each time point across the 12 days. No shift was seen in the circadian pattern, but decreased activity was seen in the first two hours and the fifth hour after lights off in WizMommeD30/+ mice compared with the Wiz+/+ mice (Figure 7A; time x genotype interaction, F(23, 391) = 3.923, p<0.001, \u03b5 = 0.350).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/15082/elife-15082-fig7-v2.jpg)\n\n**Figure 7.:** (A) Line graph illustrating the average 24\u2009hr activity profile from Wiz+/+ and WizMommeD30/+\u00a0mice, collapsed from 12 days of testing. The pattern of activity is broadly similar between the genotypes, though WizMommeD30/+\u00a0mice show decreased activity in the first two hours and the fifth hour of the active phase of the light/dark cycle. Grey box indicates the dark phase of the light/dark cycle. (B) Bar graph showing decreased open arm entries among WizMommeD30/+\u00a0mice compared with Wiz+/+ mice, after 5 min intervals on the EPM test. (C) Heat map of locomotor activity on the EPM from a representative Wiz+/+ mouse (top) and a representative WizMommeD30/+ mouse (bottom). Broken lines indicate the location of the closed arms of the EPM. (D) Percentage of time Wiz+/+ (n\u00a0= 21) and WizMommeD30/+ (n\u00a0=\u00a022) mice spent in the light portion of a light-dark test. (E) The number of vertical counts (rearing) Wiz+/+ and WizMommeD30/+ mice showed in the light-dark test. Error bars represent \u00b1 SEM, *p-value <0.05, **p-value 0.005, ***p-value <0.0005.\n\n![Figure 7\u2014figure supplement\u00a01.](https://cdn.elifesciences.org/articles/15082/elife-15082-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement\u00a01.:** Telemetry data from across 3 days were collapsed into hourly intervals and the average temperature of Wiz+/+ (black data points) and WizMommeD30/+ (red data points) mice is shown. Lights on is indicated by light background and lights off is indicated by grey background. Numbers of mice for each cohort are indicated. Error bars are the SEM.\n\nTemperature profiles were also collected for each of the mice by collapsing three days of monitoring into hourly intervals and taking the average from each 24-hr time point. No difference was seen in WizMommeD30/+ mice compared to Wiz+/+ mice at any of the time points (Figure 7\u2014figure supplement\u00a01).\n\nThe elevated plus maze (EPM) is a test of anxiety-like behaviour in mice (Walf and Frye, 2007). The same mice used for telemetry monitoring were subjected to an EPM test following the 12-day monitoring period. WizMommeD30/+ showed an approximately 25% reduction in the frequency of entry into the open arms of the EPM apparatus compared with the Wiz+/+\u00a0mice (Figure 7B and C; t(17) = 2.90, p=0.010). Importantly, mice were assayed during 'lights on' periods (around 2pm - 4pm) when activity was not different between the strains (Figure 7A).\n\nTo validate the EPM data, two independent cohorts of mice (WizMommeD30/+, n\u00a0= 22; Wiz+/+, n\u00a0=\u00a021) were subjected to a light-dark box test of anxiety-like behaviour. WizMommeD30/+ mice showed reduced time spent in the light and reduced rearing activity (Figure 7D and E). These findings are consistent with an anxiety-like phenotype in WizMommeD30/+ mice.\n\n## Discussion\n\n### Wiz is involved in transcriptional activation and binds many promoters in neural tissue\n\nWe previously described a Wiz mutation in the MommeD30 strain (Daxinger et al., 2013). This was the only exonic mutation within the linked interval and in agreement with this being the causative MommeD30 mutation, RNA-seq data presented here show no other genes within the linked interval were miss-expressed in mutants.\n\nWhile a role for Wiz in transcriptional repression is well recognized (Mulligan et al., 2008), the notion that it may be involved in transcriptional activation is less well documented. This study supports the latter idea in a number of ways. Firstly, we show that haploinsufficiency for Wiz results in reduced expression at the Avy allele and previous work from our laboratory has shown that half the normal levels of Wiz is associated with reduced expression of a multicopy GFP transgene (Daxinger et al., 2013). By focussing on neural tissue, we have gone on to show that haploinsufficiency for Wiz results in decreased expression of a number of genes, mainly within gene clusters or adjacent to telomeric repeats in both embryonic brain and adult cerebellum. While any instance of decreased expression could, theoretically, be an indirect effect, our ChIP-seq data suggests otherwise. At most of the sites at which decreased expression is observed, Wiz peaks were detected. Furthermore, analysis of the set of genes with altered expression in adult cerebellum, showed that Wiz was detected at the promoters of those with decreased expression but not at those with increased expression. This suggests that those sites at which reducing the levels of Wiz causes increased expression, i.e. Wiz is acting as a repressor, are indirect effects.\n\n### Wiz might bind directly to DNA\n\nWhile Wiz has no recognisable catalytic domains, it does have C2H2-type zinc fingers and these have an unusual widely-spaced configuration (Matsumoto et al., 1998). Most proteins that contain multiple zinc fingers have them in a cluster, with short 'linker' sequences (usually less than 10 amino acids) separating the fingers (Schuh et al., 1986). Most Wiz zinc fingers are at least 50 amino acids apart. The significance of the large linker configuration remains unclear (Cl\u00e9ard and Spierer, 2001). Other zinc finger-containing proteins with this configuration include Zfp292, Rlf and the Drosophila protein Su(Var)3\u20137 and all of these have been shown to bind DNA in vitro using electromobility shift assays (Cl\u00e9ard and Spierer, 2001; Harten et al., 2015; Lipkin et al., 1993). Rlf, like Wiz, was identified as an E(Var) in the MommeD screen (Daxinger et al., 2013). Little has been reported about the function of Zfp292.\n\nConsistent with previous studies using different Wiz antibodies (Matsumoto et al., 1998; Ueda et al., 2006; Ma et al., 2015; Simon et al., 2015) we identified multiple isoforms of Wiz present in the mouse, three at ~100\u2009kDa and one larger ~160\u2009kDa. The requirement of these different isoforms is unknown and requires careful, isoform-specific study of Wiz. It is also possible that the three ~100\u2009kDa isoforms represent covalent modifications to the Wiz protein. For example, it is known that G9A can methylate non-histone targets, including Wiz (Rathert et al., 2008).\n\n### Wiz binding overlaps with CTCF binding in the cerebellum\n\nOur ChIP-seq studies suggest that in adult cerebellum, Wiz binds at promoters and at sites which CTCF, a recognized transcriptional activator, is also known to bind. Because this study has been carried out in a tissue made up of more than one cell type, peak overlap does not necessarily imply that the two proteins bind together. It could be explained by CTCF binding to these locations in one cell type and Wiz binding in another cell type. Competitive binding with CTCF and the closely related BORIS has been demonstrated (Pugacheva et al., 2015). To our knowledge, Wiz has not been pulled down with antibodies to CTCF (Xiao et al., 2011; Yusufzai et al., 2004), though a protein-protein interaction is possible in neural cell types where Wiz is expressed highly and co-immunoprecipitation of binding partners remains to be tested.\n\nCTCF has multiple roles in organizing the genome; it is enriched at topologically associated domain boundaries and can mediate interactions between an\u00a0enhancer and promoter elements (Bell et al., 1999; Ong and Corces, 2014). Broad regions marked by H3K9me2 often contain small \u2018euchromatic islands\u2019 that are devoid of H3K9me2, are DNase1 hypersensitive and have CTCF binding (Wen et al., 2012). A recent study in a number of human cell lines found that reducing WIZ levels resulted in less G9a at CTCF-binding sites across the genome (by carrying out ChIP-seq for G9a) (Simon et al., 2015). Further work is needed to show mechanistically how CTCF, Wiz and G9a establish chromatin at these euchromatic islands.\n\nChIP-seq for WIZ in a human kidney cell line has recently been published (Bian et al., 2015) and no overlap with CTCF-binding sites was reported. An in-house antibody (not commercially available) was used. Approximately 11,000 WIZ-enriched regions were detected and the consensus binding site that emerged, CATTCCATTCCATT, is quite different from the one reported here. This sequence was found in only 4.5% of their peaks, whereas the Wiz consensus reported here (Wiz motif 1) was found in 70% of the peaks identified in our study. Remapping of their Wiz ChIP-seq dataset was carried out, and failed to produce the peaks reported except at a repetitive HSATII satellite element, suggesting a mapping artefact. The differences might also be linked to the different cell types used. Resolution of this discrepancy will require the publication of Wiz ChIP-seq datasets with additional anti-Wiz antibodies and in different tissues.\n\n### Wiz regulates protocadherin gene expression\n\nProtocadherin genes are expressed mainly in neurons (Kohmura et al., 1998; Wu and Maniatis, 1999) and here we report the involvement of Wiz at protocadherin \u03b2 genes. CTCF has been shown by others to bind to the promoters and enhancer of this locus, mediating the looping required for the transcription of single protocadherin \u03b2 genes in single neural cells (Guo et al., 2015). Given that almost all sites in the cerebellum that were bound by CTCF were also bound by Wiz, it is possible that Wiz has a function in chromatin looping between enhancers and promoters. Determining the importance of Wiz in looping will require chromosome conformation capture (3C) analysis in Wiz null cells. Early embryonic lethality precluded testing this in the tissue used in this study.\n\nThe protocadherin cluster exists as a large tandem array. At this locus, heterochromatinisation facilitates single isoform expression in single cells i.e. the silencing of the majority of protocadherin genes in any single cell is associated with heterochromatin formation (Kawaguchi et al., 2008; Toyoda et al., 2014); the expressed loci must remain active despite being embedded in heterochromatin and it is possible that Wiz has a role in this scenario. In keeping with this hypothesis, the RNA-seq data presented here suggest that other loci sensitive to Wiz haploinsufficiency include genes located adjacent to telomeres, well known heterochromatic regions.\n\n### Wiz is required for normal behaviour in the adult mouse\n\nThe importance of epigenetic modifications in neural function is emerging; many enzymes that modify histones and DNA have been found to be critical for development and function of the brain. Prior to this study, no link between Wiz and behaviour had been shown in either mice or humans. Here we report that WizMommeD30/+ mice showed a more anxious phenotype than wildtype littermates in a number of assays of anxiety. It is possible that heterozygosity for rare WIZ mutations in humans could influence neurological disorders that have a complex genetic aetiology.\n\nIt remains to be seen if the gene expression changes and behavioural phenotype in WizMommeD30/+ mice correlates with altered neuroanatomy. Mice with reduced expression of protocadherin \u03b2 genes, due to knockout of CTCF (Hirayama et al., 2012) or the downstream enhancer (Yokota et al., 2011), have disorganized formation of the barrel cortex, a region of the brain important for processing information for the tactile somatosensory pathway (Petersen, 2007). It remains to be determined if this phenotype in the barrel cortex is recapitulated in WizMommeD30/+ mice.\n\n## Materials\u00a0and\u00a0methods\n\n### Mouse strains\n\nWizMommeD30 mice were produced in an ENU mutagenesis screen, as previously described (Daxinger et al., 2013). The ENU screen was carried out using a Line3 strain that is on an FVB/NJ inbred background, as described previously (Blewitt et al., 2005). Line3 are homozygous for a multicopy GFP transgene with human \u03b1-globin promoter and HS-40 elements and the WizMommeD30 mutation was maintained by crossing heterozygous mice to Line3. The Avy allele arose from a C3H/HeJ colony, was backcrossed to C57BL/6J for at least 20 generations and was maintained on that background in the heterozygous state (Avy/a). Genotyping was carried out as previously described for the WizMommeD30 (Daxinger et al., 2013) and Avy alleles (Rakyan et al., 2003), primers are listed in Supplementary file 5. All animal work was conducted in accordance with the Australian code for the care and use of animals for scientific purposes, this study was approved by the Animal Ethics Committee of La Trobe University, project numbers 12\u201374, 12\u201375, 15\u201301.\n\n### ChIP-seq and ChIP-qPCR for Wiz in cerebellum\n\nCerebellum tissue from 8-weekold wildtype mice were snap-frozen and sent to Active Motif (Carlsbad, USA) for ChIP, library preparation, sequencing and initial data QC. Two cerebellums were pooled per biological replicate. The rabbit polyclonal anti-Wiz (NBP180586, Novus Biologicals, Littleton, USA) was used for ChIP on two biological replicates and an input chromatin sample was made by pooling equal amounts from the two biological replicates. Sequencing was carried out for 75mer read lengths on the NextSeq 500 platform (Illumina, San Diego, USA). At least 30 million reads were generated per library. Read alignment to the mouse mm10 genome build was carried out using the Bowtie2 program with default settings (version 2.2.2) (Langmead and Salzberg, 2012) and peak calling was carried out using the MACS2 program with the settings '--down-sample --call-summits' (version 2.1.0) (Zhang et al., 2008). Peaks were considered significant if they had a p-value of \u22641\u00a0\u00d7\u00a010\u221220.\n\nHeat plots and read sequencing density figures were generated using the seqMiner program (version 1.3.3) (Ye et al., 2011) using default settings. Heat plots were generated by subsampling all datasets to approximately 16 million reads and clustering was carried out using the seqMiner program using default settings. When calculating deep sequencing read density over gene bodies, genes of different lengths were scaled to an equal number and the read density was calculated for each of these by the seqMiner program. Genes were classified as active (n = 13,279 genes) or silent (n = 25,152 genes) based on an averaged raw read count of less than 50 from RNA-seq carried out in adult cerebellum tissue (see below), active genes accounted for approximately ~99% of read alignments in the dataset.\n\nTo analyse the overlap of Wiz ChIP-seq peaks and ENCODE dataset (Shen et al., 2012) peaks, the latter were first downloaded from the UCSC genome browser (Karolchik et al., 2003), datasets were 3\u2032 trimmed so that all datasets contained reads of equal length and mapping and peak calling was carried out as described above. ChIP-seq datasets for CTCF and the histone mark H3K4me3 were analysed and in each case this consisted of two biological replicates and an input dataset. Overlap between two peaks was defined as the coordinates of two peaks directly overlapping at one or more bases in the genome. Motif discovery was performed with significant Wiz peaks (region summit \u00b1 500\u00a0bp) using the MEME-ChIP (version 4.10.0) (Machanick and Bailey, 2011) and MEME suite programs MEME, DREAME, CentriMo and Tomtom with default settings. The publically available Wiz ChIP-seq datasets were downloaded from the GEO website (www.ncbi.nlm.nih.gov/geo/) and mapped to the human genome (hg19 build) as described above.\n\nChIP-qPCR was performed with the Anti-Wiz antibody (NBP180586) on three biological replicates by Active Motif and loci were amplified using primers designed by Active Motif at regions of ChIP-seq enrichment indicated in the Figures. Enrichment was calculated by running qPCR reactions alongside known amounts of DNA to generate a standard curve. These are represented as binding events detected per 1000 cells.\n\n### Data availability\n\nThe data sets supporting the results of this article are available in the NCBI Gene Expression Omnibus under the accession code GSE76909.\n\n### Timed matings\n\nEmbryos were produced by heterozygous intercrosses (WizMommeD30/+ \u00d7 WizMommeD30/+) and detection of a post coital plug was defined as E0.5 dpc. Dams were euthanized by cervical dislocation and embryos dissected into 1X PBS, tissues were either snap frozen with dry ice for later RNA extraction or lysed overnight for DNA extraction as previously described (Morgan et al., 1999). The sex of embryos was determined by PCR using primer sets annealing either at X or Y chromosomal loci, listed in Supplementary file 5.\n\n### RNA-seq\n\nRNA was purified from 8-weekold male cerebellum or embryonic brain (E13.5) using Triazol reagent (Life Technologies, Carlsbad, USA), as per manufacture instruction. RNA sequencing was carried out by the Australia Genome Research Facility (AGRF, Parkville, AUS) and at least 20 million 100\u00a0bp single end reads were generated on an Illumina HiSeq platform for each sample, from libraries generated using the Illumina TruSeq RNA Sample Preparation kit (Illumina, San Diego, CA, USA). An initial QC analysis was performed by AGRF. Sequencing reads were mapped to the mouse mm10 genome build using the program Tophat (version 2.0.11) (Trapnell et al., 2009), read counts for gene exons were extracted using the program htseq-count (version 0.6.1) (Anders et al., 2015) and differential gene expression was assessed using the R-package DEseq (Anders and Huber, 2010), as described previously (Isbel et al., 2015). Genes were considered significantly differentially regulated if they had a fold-change (WizMommeD30/+/Wiz+/+) of less than 0.7 or greater than 1.3 (shown in figures on a log2 scale) and an adjusted p-value of \u22640.05.\n\n### Western blotting for Wiz in embryonic and adult tissues\n\nProtein lysates from embryos were prepared by homogenising tissue in ten volumes of urea lysis buffer, as described previously (Daxinger et al., 2013). These were quantified using a BCA assay (Thermo Scientific, VIC, Australia), separated on polyacrylamide gels (Bio-Rad, Gladesville, NSW, Australia) and immunoblotted with antibodies directed against Wiz (NBP180586, Novus Biologicals, Littleton, USA) and against \u03b3-Tubulin (T5192, Sigma Aldrich, Castle Hill, AUS). Clarity Western ECL substrate was used for visualisation (Bio-Rad, Gladesville, NSW, Australia).\n\n### Affinity purification and mass spectroscopy\n\nNuclear extracts were prepared from either pooled embryonic brains (E13.5) or adult cerebellum using the Nuclear Complex Co-IP Kit (54001, Active Motif, Carlsbad, CA, USA) as described previously (Harten et al., 2015; Isbel et al., 2015). For each sample, 500 \u00b5g of nuclear lysate was incubated with 2 \u00b5g of anti-Wiz antibody (NBP180586, Novus Biologicals, Littleton, USA) or anti-IgG antibody (sc-2345, Santa Cruz Biotechnology, Dallas, TX, USA) overnight at 4 degrees Celsius. Immunoprecipitations were carried out using bead-conjugated Protein G (Dynabeads 10003D, Invitrogen, Mount Waverley, VIC, Australia) as per the Nuclear Complex Co-IP Kit manufacturer\u2019s instructions. Eluted proteins were analysed via mass spectrometry at the La Trobe University Mass Spectrometry Facility, and the\u00a0data were analysed as described previously (Harten et al., 2015).\n\n### Telemetry monitoring of mice\n\nAge matched male mice, 8\u201312 weeks old, were individually housed in standard polypropylene cages (14\u00a0\u00d7\u00a030\u00a0\u00d7\u00a013 cm) with shredded paper as bedding enrichment, ambient temperature was 30 \u00b1 1\u00b0C, with a 12\u2009hr light/dark cycle and lights-on at 07:00\u2009hr. Mice received standard rodent chow and water ad libitum. After one week of acclimatisation mice were put under general anaesthesia and surgically implanted with a biotelemetry device (Mini-mitter, Bend, USA) into their peritoneal cavities. After one week of recovery, the biotelemetry devices were used to monitor body temperature and locomotor activity. A platform receiver sampled the device\u2019s temperature (\u00b1 0.1\u00b0C) and location at one minute intervals continuously and this was decoded by a software package VitalView (Starr Life Sciences Corp, Oakmont, USA). Following a 12 day period of uninterrupted monitoring, mice were exposed to an elevated plus-maze (EPM) test of anxiety-like behaviour (see below). Immediately following the EPM test, the mice were returned to their home cage for approximately 120\u2009min, then anesthetized using a lethal dose of pentobarbital sodium (Lethabarb, Virbac Pty. Ltd., Milperra, Australia). The telemetry data (activity and body temperature) were collapsed across the 12 days of testing to derive the activity for each hour in the 24\u2009hr cycle. These data were then analysed using a repeated measures analysis of variance (ANOVA) with time as the within subjects factor and genotype and cohort as between subjects factors. A Greenhouse\u2013Geisser correction epsilon (\u03b5) was used to correct for potential violation of the sphericity assumption for the within-subject measure. Where significant main or interaction effects were found, post hoc Fisher\u2019s LSD tests were used to reveal pairwise differences between groups. As there was no main effect for cohort (F(1,17) = 1.313, p=0.268) the data from the two cohorts were combined.\n\n### Elevated plus-maze testing\n\nFollowing the 12day monitoring period, mice were exposed to the EPM test. Each mouse was placed on the EPM for a duration of 5\u2009min and behaviour was recorded using a digital video camera fixed above and overlooking the apparatus. Position and movement data was analysed using the Ethovision XT behaviour tracking software. The number of entries in the open arms, a common measure of rodent anxiety-like behaviour was analysed using an independent samples t-test.\n\n### Light-dark behaviour testing\n\nLight-dark behaviour testing was carried out on mice aged 2\u20136 months (n = 43) using methodology that was previously described (Balemans et al., 2010). Each animal was housed separately for at least 3 weeks prior to testing. Testing was carried out for a duration of 10 min and was analysed using an independent samples t-test.\n",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "49a9d107-5188-487c-b010-dd26d4e35b7e",
+      "submission_id": "0433cd18-a1af-4787-9488-b2af4285d11f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anne C Ferguson-Smith, University of Cambridge , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.15082.023](https://doi.org/10.7554/eLife.15082.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Wiz binds promoters containing CTCF-binding sites and is required for normal behaviour in the mouse\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Jessica Tyler as the Senior Editor. One of the three reviewers has agreed to reveal his identity: Michael Stallcup (reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has abridged their comments and drafted this decision to help you prepare a revised submission.\n\n1) The antibody specificity has been questioned.\n\ni) The Western blot (Figure 2\u2014figure supplement 1) and the new Cerebellum Western showing the high mw band are convincing. Therefore, the new Cerebellum Western should be included in Figure 2\u2014figure supplement 1.\n\nii) A point not being addressed is the ChIP quality/specificity of the antibody. Robust controls are required to demonstrate that the ChIP signals in this manuscript are Wiz dependent: Although Wiz null mice are lethal, 14d embryos have been published (Daxinger et al., 2013) and these embryos have been used for western in this manuscript. Therefore, the WizMD30/MD30 genotype can be and has to be tested by ChIP and qPCR at validating sites (i.e. about 10 positive and negative sites) and compared to wildtype. As a positive control, both genotypes have to be tested for H3 ChIP or similar at these sites. Data may be presented as Figure 2\u2014source data 1. Alternatively, in case of technical limitations to \"ChIPping\" homozygous embryos, Wiz ChIPseq with chromatin of a cell line +/- siRNA against Wiz has to be done to document that ChIP signals are indeed dependent on Wiz. Other suggestions to test this include trying another Wiz antibody by Chip-qPCR or performing some reporter assays (e.g. luciferase assays to test promoter activity with and without Wiz overexpression). Regardless, some test for antibody validation should be performed.\n\n2) Isbel et al. convincingly argue that the relevant chromosomal region shows a single mutation in the Wiz gene as identified by exome sequencing. Nevertheless, this neglects mutations outside of exons, which potentially may influence the expression of the 48 genes in this chromosomal region (Daxinger et al., 2013) and/or of non-coding RNA. The authors should discuss this potential combined effect of Wiz and of unknown genes.\n\n3) The manuscript may be strengthened if less emphasis is put on the possible transcriptional activator function of Wiz. The transcriptional effects measured in E13.5 are a convolution of direct and indirect effects. Furthermore, only a handful of genes harboring Wiz binding in their promoter are affected, raising unanswered questions about the underlying mechanisms. With the present data it is difficult to conclude about a direct role of Wiz in transcriptional activation, especially in the absence of any biochemical/mechanistic exploration of the phenomenon. This should be commented on.\n\n4) It is relevant to consider whether the occupancy of either protein at their shared binding regions depends on the occupancy of the other protein. How many of the differentially expressed genes are bound by Wiz and CTCF in their promoters, respectively? For the down-regulated genes, how many actually have Wiz/CTCF binding at their TSS? How many do not? Figures 6C and D are rather misleading. It may be more informative to plot the density per gene in a heat map as the one in Figure 3C (sorted either by RNA-seq fold change or CTCF/Wiz ChIP-seq signal), or at least include a Venn diagram showing the overlap of the number of down regulated genes and Wiz and CTCF binding at the corresponding TSS.\n\n5) The title and Abstract are a bit misleading. In their current state they seem to suggest that Wiz specifically binds promoters containing CTCF sites, which is not the case as Wiz binds most CTCF sites as well as most promoters. I suggest rephrasing to reflect the data more appropriately (e.g. \"Wiz binds active promoters and CTCF binding sites\u2026\". Same throughout the text).\n",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "95d2db9a-a611-43a4-b511-8de665cc2b23",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C1",
+      "claim": "Wiz was identified in a mouse screen for epigenetic modifiers.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously identified Wiz in a mouse screen for epigenetic modifiers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is a direct assertion about the discovery of Wiz.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "7d518a04-7ddd-4e53-ab8a-d09557363627",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C2",
+      "claim": "Wiz is generally considered a transcriptional repressor due to its association with G9a/GLP.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to its known association with G9a/GLP, Wiz is generally considered a transcriptional repressor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established scientific consensus about Wiz function based on its protein interactions.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "32477641-2ff4-4fc4-9c76-0aa253eada46",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C3",
+      "claim": "Wiz may also function as a transcriptional activator.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we provide evidence that it may also function as a transcriptional activator.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary claim of the manuscript supported by multiple lines of evidence presented in the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "c74832f7-8f1d-49aa-befb-d95e9137d32d",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C4",
+      "claim": "Wiz levels are high in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Wiz levels are high in the brain, but its function and direct targets are unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is supported by citation to previous work (Matsumoto et al., 1998) in the introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "95d7ab03-f95b-4ef8-ad9c-984c66607b7e",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C5",
+      "claim": "Wiz peaks were found at promoters in adult cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP-seq was performed in adult cerebellum and Wiz peaks were found at promoters and transcription factor CTCF binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by ChIP-seq experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "800cc7e6-4e20-47c4-a0e9-f2573fe86f6d",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C6",
+      "claim": "Wiz peaks were found at CTCF binding sites in adult cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP-seq was performed in adult cerebellum and Wiz peaks were found at promoters and transcription factor CTCF binding sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by ChIP-seq experimental data and comparison with ENCODE CTCF data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "37c9060d-9600-4a33-b5bd-a25967ef03cc",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C7",
+      "claim": "Genes were differentially regulated in adult cerebellum of Wiz mutant mice.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-seq in Wiz mutant mice identified genes differentially regulated in adult cerebellum and embryonic brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data presented in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "9aecf6da-bc0d-40e8-83a8-771c0100ce52",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C8",
+      "claim": "Genes were differentially regulated in embryonic brain of Wiz mutant mice.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-seq in Wiz mutant mice identified genes differentially regulated in adult cerebellum and embryonic brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data presented in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "2b88d3ea-ce1b-47fc-bc7c-a0d4df5edc69",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C9",
+      "claim": "Most genes differentially expressed in embryonic brain decreased in expression in Wiz mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In embryonic brain most decreased in expression and included clustered protocadherin genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data showing 31/36 genes decreased in males and 43/44 decreased in females.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "cbf8183b-bbbc-43d4-a3e1-37b56c8666e8",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C10",
+      "claim": "Clustered protocadherin genes decreased in expression in embryonic brain of Wiz mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In embryonic brain most decreased in expression and included clustered protocadherin genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data identifying multiple protocadherin \u03b2 genes as differentially expressed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "d2924e6e-77f8-425e-8395-62128a15147e",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C11",
+      "claim": "Clustered protocadherin genes decreased in expression in adult cerebellum of Wiz mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "These also decreased in adult cerebellum and showed strong Wiz ChIP-seq enrichment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data in adult cerebellum showing decreased expression of protocadherin genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "00fa74ff-8ae3-458f-9bff-90214bb53b13",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C12",
+      "claim": "Protocadherin genes showed strong Wiz ChIP-seq enrichment.",
+      "claim_type": "EXPLICIT",
+      "source": "These also decreased in adult cerebellum and showed strong Wiz ChIP-seq enrichment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data showing Wiz binding at protocadherin promoters and enhancers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "9d55e977-db3e-4ddc-b5ce-4b98c1244914",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C13",
+      "claim": "A precise pattern of protocadherin gene expression is required for neuronal development.",
+      "claim_type": "EXPLICIT",
+      "source": "Because a precise pattern of protocadherin gene expression is required for neuronal development, behavioural tests were carried out on mutant mice, revealing an anxiety-like phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge that motivated the behavioral experiments.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "ae674d96-4ce9-4bc7-bb2b-2b4bd147769e",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C14",
+      "claim": "Wiz mutant mice display an anxiety-like phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Because a precise pattern of protocadherin gene expression is required for neuronal development, behavioural tests were carried out on mutant mice, revealing an anxiety-like phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data from elevated plus maze and light-dark box tests.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "d2f8def3-e93a-472c-8781-99164b86ca1f",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C15",
+      "claim": "This is the first evidence of a role for Wiz in neural function.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the first evidence of a role for Wiz in neural function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the findings, based on the absence of prior reports.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "11281593-461b-4ed9-8d23-db26450a986c",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C16",
+      "claim": "The MommeD30 mutation in Wiz is a single base pair deletion of an adenine.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutation underlying the MommeD30 strain was found to be a single base pair deletion in the gene Widely interspaced zinc finger motifs, Wiz. The deletion, of an adenine, causes a frame-shift that introduces a premature stop codon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequencing data from the original identification of the mutation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "87a64756-78f1-47fe-a93c-235b3ac1d33f",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C17",
+      "claim": "The MommeD30 mutation causes a frame-shift that introduces a premature stop codon.",
+      "claim_type": "EXPLICIT",
+      "source": "The deletion, of an adenine, causes a frame-shift that introduces a premature stop codon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct consequence of the single base pair deletion identified by sequencing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "f615bef0-691e-4fcc-b7d5-5bd96258dbe5",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C18",
+      "claim": "WizMommeD30/MommeD30 embryos die around mid-gestation.",
+      "claim_type": "EXPLICIT",
+      "source": "WizMommeD30/MommeD30 embryos die around mid-gestation and heterozygosity for the mutant allele results in approximately half the normal levels of the protein, confirming that WizMommeD30 is a null allele (Daxinger et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from breeding experiments reported in the cited reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "a30a64f7-759b-4c1a-88d8-68ad917702f0",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C19",
+      "claim": "Heterozygosity for the WizMommeD30 allele results in approximately half the normal levels of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "WizMommeD30/MommeD30 embryos die around mid-gestation and heterozygosity for the mutant allele results in approximately half the normal levels of the protein, confirming that WizMommeD30 is a null allele (Daxinger et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by protein quantification data from the cited reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "1d8174ee-113f-4c51-8561-8de9175175e7",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C20",
+      "claim": "WizMommeD30 is a null allele.",
+      "claim_type": "EXPLICIT",
+      "source": "WizMommeD30/MommeD30 embryos die around mid-gestation and heterozygosity for the mutant allele results in approximately half the normal levels of the protein, confirming that WizMommeD30 is a null allele (Daxinger et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the premature stop codon, embryonic lethality in homozygotes, and reduced protein levels in heterozygotes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "3c3b80d4-7e1d-46be-a320-53e8f6541b16",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C21",
+      "claim": "The WizMommeD30 mouse strain is the only mouse strain with a mutant form of Wiz to be reported.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the only mouse strain with a mutant form of this gene to be reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the literature at the time of publication.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "e48c3c93-151e-46c7-ae1a-c360700e6abc",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C22",
+      "claim": "Wiz protein is predicted to have 11 C2H2 type zinc finger domains that are unusually widely spaced.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein is predicted to have 11 C2H2 type zinc finger domains that are unusually widely spaced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on protein sequence analysis and structural predictions.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "fe69120e-a21d-45aa-8f1d-8b2272b9a96f",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C23",
+      "claim": "Some of Wiz's zinc finger domains can bind DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of them can bind DNA and some of them can mediate protein-protein interactions with the G9a/GLP (G9a-like) histone methyltransferase complex (Ueda et al., 2006; Bian et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "fc83c074-f78a-45f7-87df-d37d0128a66e",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C24",
+      "claim": "Some of Wiz's zinc finger domains can mediate protein-protein interactions with the G9a/GLP histone methyltransferase complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of them can bind DNA and some of them can mediate protein-protein interactions with the G9a/GLP (G9a-like) histone methyltransferase complex (Ueda et al., 2006; Bian et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "aa6f5f6a-89ad-4adb-a013-81b62e72795d",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C25",
+      "claim": "The G9a/GLP heterodimer catalyses the methylation of H3K9me1 and H3K9me2.",
+      "claim_type": "EXPLICIT",
+      "source": "The G9a/GLP heterodimer catalyses the methylation of H3K9me1 and H3K9me2 (Jenuwein et al., 1998; Tachibana et al., 2001, 2002, 2005), which is associated with transcriptional repression (Barski et al., 2007) and is located on chromatin in broad regions, termed LOCKs (large organized chromatin K9-modifications) (Wen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from multiple cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "b2bec1a2-59bf-4c0c-a39c-5206ce5d1b52",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C26",
+      "claim": "H3K9me2 is associated with transcriptional repression.",
+      "claim_type": "EXPLICIT",
+      "source": "The G9a/GLP heterodimer catalyses the methylation of H3K9me1 and H3K9me2 (Jenuwein et al., 1998; Tachibana et al., 2001, 2002, 2005), which is associated with transcriptional repression (Barski et al., 2007) and is located on chromatin in broad regions, termed LOCKs (large organized chromatin K9-modifications) (Wen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "bfb3710f-184c-443f-89e6-01986d42cc55",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C27",
+      "claim": "H3K9me2 is located on chromatin in broad regions termed LOCKs (large organized chromatin K9-modifications).",
+      "claim_type": "EXPLICIT",
+      "source": "The G9a/GLP heterodimer catalyses the methylation of H3K9me1 and H3K9me2 (Jenuwein et al., 1998; Tachibana et al., 2001, 2002, 2005), which is associated with transcriptional repression (Barski et al., 2007) and is located on chromatin in broad regions, termed LOCKs (large organized chromatin K9-modifications) (Wen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "51b281c2-d7c7-4e4c-8621-6119f4401294",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C28",
+      "claim": "Wiz can stabilize the G9a/GLP complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Work carried out in cell lines has shown that Wiz can stabilize the G9a/GLP complex, mediate its localisation to DNA and is required for maintaining normal global levels of H3K9me2, suggesting a role in transcriptional repression (Bian et al., 2015; Simon et al., 2015; Ueda et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from cited cell line studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "cff9565c-7e6b-4709-aa69-3179369981f4",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C29",
+      "claim": "Wiz can mediate G9a/GLP localisation to DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Work carried out in cell lines has shown that Wiz can stabilize the G9a/GLP complex, mediate its localisation to DNA and is required for maintaining normal global levels of H3K9me2, suggesting a role in transcriptional repression (Bian et al., 2015; Simon et al., 2015; Ueda et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from cited cell line studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "b7cb5c47-e942-41ae-9f1d-2f65b15de5e8",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C30",
+      "claim": "Wiz is required for maintaining normal global levels of H3K9me2.",
+      "claim_type": "EXPLICIT",
+      "source": "Work carried out in cell lines has shown that Wiz can stabilize the G9a/GLP complex, mediate its localisation to DNA and is required for maintaining normal global levels of H3K9me2, suggesting a role in transcriptional repression (Bian et al., 2015; Simon et al., 2015; Ueda et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from cited cell line studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "27e3cf1c-2ec7-4599-8170-40b9a4736ae8",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C31",
+      "claim": "G9a can act as a transcriptional activator, independent of its histone methyltransferase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been shown that G9a can act as a transcriptional activator, independent of its histone methytransferase activity (Chaturvedi et al., 2009; Lee et al., 2006; Oh et al., 2014; Purcell et al., 2011; Yuan et al., 2007) and it has recently been suggested that WIZ has a role in the activation function of G9a (Simon et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established by multiple cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "888acadc-fd83-48f0-82c6-9ebba4a98b4d",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C32",
+      "claim": "WIZ has a role in the activation function of G9a.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been shown that G9a can act as a transcriptional activator, independent of its histone methytransferase activity (Chaturvedi et al., 2009; Lee et al., 2006; Oh et al., 2014; Purcell et al., 2011; Yuan et al., 2007) and it has recently been suggested that WIZ has a role in the activation function of G9a (Simon et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is suggested by the cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "03d3ec4d-8604-4f3f-bf68-f8721dd7f9d7",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C33",
+      "claim": "Mice heterozygous for the WizMommeD30 allele showed decreased expression of the GFP transgene.",
+      "claim_type": "EXPLICIT",
+      "source": "WizMommeD30 was identified in the screen because mice heterozygous for the mutant allele showed decreased expression of the GFP transgene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the observation that led to identification of the mutation in the screen.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "369c5f46-17a7-48b6-aa2a-cb8abdc37331",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C34",
+      "claim": "Haploinsufficiency for Wiz results in decreased expression at the Agouti viable yellow (Avy) allele.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show at an independent locus known to be sensitive to the dosage of epigenetic modifiers, the Agouti viable yellow (Avy) allele, that haploinsufficiency for Wiz also results in decreased expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by coat color analysis data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "5853bedb-e806-4a18-b806-699bd43c7f56",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C35",
+      "claim": "Wiz is expressed highly in the brain, both in the embryo and in the adult.",
+      "claim_type": "EXPLICIT",
+      "source": "Wiz is expressed highly in the brain, both in the embryo and in the adult (Matsumoto et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established by the cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "45324bcc-6ec7-4590-9cf9-681c9283e2cc",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C36",
+      "claim": "Reduced levels of G9a/GLP result in the neurological disease Kleefstra syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "As reduced levels of G9a/GLP are known to result in the neurological disease Kleefstra syndrome (Kleefstra et al., 2006; Willemsen et al., 2011), it is possible that reduced levels of Wiz might have neurological consequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "2ebf9ca3-232e-434a-a754-425f7804368b",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C37",
+      "claim": "Kleefstra syndrome individuals display anxiety.",
+      "claim_type": "EXPLICIT",
+      "source": "Kleefstra syndrome individuals display a complex range of neurological symptoms, including anxiety (Willemsen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established from the cited clinical reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "c71484fb-4f97-4ca8-9943-e1c4c6f7288f",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C38",
+      "claim": "Wiz binds tens of thousands of transcriptional regulatory regions across the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that Wiz binds tens of thousands of transcriptional regulatory regions across the genome, some of which decrease in expression in WizMommeD30/+ tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data showing approximately 40,000 peaks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "71b52185-024b-44be-99ed-b8f6dee50701",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C39",
+      "claim": "Some Wiz-bound regions decrease in expression in WizMommeD30/+ tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that Wiz binds tens of thousands of transcriptional regulatory regions across the genome, some of which decrease in expression in WizMommeD30/+ tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by integration of ChIP-seq and RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "6a717a12-4d08-423e-9ccd-ee1196c861a0",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C40",
+      "claim": "ChIP-seq with an anti-Wiz antibody has been reported in a human kidney cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP-seq, with an anti-Wiz antibody, has been reported in a human kidney cell line (Bian et al., 2015) and there is little overlap with our findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "d2fcfc3f-3fe9-4b95-aedc-31c8b1377c59",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C41",
+      "claim": "There is little overlap between Wiz ChIP-seq findings in human kidney cells and mouse cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP-seq, with an anti-Wiz antibody, has been reported in a human kidney cell line (Bian et al., 2015) and there is little overlap with our findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of the published dataset with the current study's data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "76701bf0-0ae2-4a79-9841-ba4d2a6ab097",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C42",
+      "claim": "WizMommeD30/+ mice display an anxiety-like phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Our molecular studies prompted us to assess behaviour in heterozygous mutant mice and we found that WizMommeD30/+ mice display an anxiety-like phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral testing data from elevated plus maze and light-dark box tests.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "996d9995-666d-47ee-bce3-5a2975aac821",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C43",
+      "claim": "WizMommeD30/+ offspring displayed a shift towards silencing at the Avy locus compared to Wiz+/+ littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "WizMommeD30/+ offspring from both crosses displayed a shift towards silencing (i.e. more pseudoagouti mice), compared to Wiz+/+ littermates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by coat color scoring data presented in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "a9629ed0-9aa2-4d51-a0be-1113ca332de0",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C44",
+      "claim": "The shift towards silencing at Avy in offspring from WizMommeD30/+ sire cross had a p-value of 0.0002.",
+      "claim_type": "EXPLICIT",
+      "source": "The shift was statistically significant in both cases; the shift from WizMommeD30/+ sire cross had a p-value of 0.0002, and from the WizMommeD30/+ dam cross had a p-value of 0.0458 (Figure 1A and B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of statistical analysis of the coat color data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "864dcea9-60b3-426c-9a14-3ec3ec786640",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C45",
+      "claim": "The shift towards silencing at Avy in offspring from WizMommeD30/+ dam cross had a p-value of 0.0458.",
+      "claim_type": "EXPLICIT",
+      "source": "The shift was statistically significant in both cases; the shift from WizMommeD30/+ sire cross had a p-value of 0.0002, and from the WizMommeD30/+ dam cross had a p-value of 0.0458 (Figure 1A and B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of statistical analysis of the coat color data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "878a4081-ef70-4710-958b-eb4007e2dbe6",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C46",
+      "claim": "The effect of haploinsufficiency at the Avy locus is similar to the effect at the GFP transgene reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of haploinsufficiency at the Avy locus is similar to the effect at the GFP transgene reporter, i.e. reduced levels of Wiz were associated with increased silencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparing results from two different reporter systems.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "de90c7ab-f0c6-456f-93cd-ac4fca482b4d",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C47",
+      "claim": "The anti-Wiz antibody (NBP180586) is specific for Wiz in mouse tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "The bands detected in the wildtype sample (at around 100 kDa) were absent in the sample from the homozygous mutant, consistent with an antibody that is specific for Wiz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Western blot data comparing wildtype and WizMommeD30/MommeD30 samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "544da56a-d648-4270-a2cd-c7fc3a8242f8",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C48",
+      "claim": "A larger ~160 KDa Wiz isoform has been reported in adult cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "A larger ~160 KDa isoform has previously been reported in adult cerebellum (Matsumoto et al., 1998), and consistent with that report, a band of this size is detected with our antibody in protein extracted from this tissue (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established by the cited reference and confirmed by Western blot data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "d2fc3cea-577a-4e5d-830d-2b269dc132b3",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C49",
+      "claim": "Four members of the Wiz-Zfp644-EHMT1-EHMT2 complex were in the top five proteins in the Co-IP dataset from embryonic brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Four members of the Wiz-Zfp644-EHMT1-EHMT2 complex (Ueda et al., 2006; Bian et al., 2015) were in the top five proteins in the dataset, ranked by peptide count in embryonic brain (Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry data from co-immunoprecipitation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "3dbb57f6-3050-4664-9da8-1ec4f267b88e",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C50",
+      "claim": "Approximately 40,000 peaks were identified at which Wiz ChIP-seq datasets were significantly enriched compared to Input control with a p-value of \u22641 \u00d7 10\u221220.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 40,000 peaks were identified at which the two Wiz-ChIP-seq datasets were significantly enriched compared to the Input control with a p-value of \u22641 \u00d7 10\u221220 (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of ChIP-seq peak calling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "f0c6372c-d643-4a3d-bc9b-a4aa00dac42b",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C51",
+      "claim": "Wiz peaks are roughly equally distributed across promoters, intragenic and intergenic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The peaks were roughly equally distributed across promoters (defined as 2 kb up and downstream of the TSS), intragenic and intergenic regions, despite the fact that promoters comprise only a small fraction of the total mouse genome (Figure 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of ChIP-seq peak locations relative to gene annotations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "b298ddfe-3296-486d-8141-49a3d0876614",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C52",
+      "claim": "Wiz ChIP-seq shows strong enrichment at the TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, the deep sequencing read density across the body of all Ensembl genes (normalized for gene length; see Materials and methods), as well as 2 kb upstream of the TSS (transcription start site) and downstream of the TTS (transcriptional termination site), showed strong enrichment at the TSS (Figure 2D and E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by read density analysis shown in Figure 2D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "5031bb06-68ab-40e4-91de-4c0e0b7e595d",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C53",
+      "claim": "One Wiz motif (Wiz motif 1) had a MEME-ChIP E-value of 2.3 \u00d7 10\u22126903.",
+      "claim_type": "EXPLICIT",
+      "source": "One of these, Wiz motif 1, had a significance (MEME-ChIP E-value) E-Value of 2.3 \u00d7 10\u22126903, an order of magnitude higher than other motifs and aligned almost perfectly with the CTCF-DNA binding motif (Figure 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of motif discovery analysis using MEME-ChIP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "1ab99b7c-542e-4db6-88d1-1f1f10704bff",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C54",
+      "claim": "Wiz motif 1 aligned almost perfectly with the CTCF-DNA binding motif.",
+      "claim_type": "EXPLICIT",
+      "source": "One of these, Wiz motif 1, had a significance (MEME-ChIP E-value) E-Value of 2.3 \u00d7 10\u22126903, an order of magnitude higher than other motifs and aligned almost perfectly with the CTCF-DNA binding motif (Figure 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by motif alignment analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "39cf36f2-2d25-4051-98f9-14d9230a5402",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C55",
+      "claim": "Wiz motif 1 was present in approximately 70% of all Wiz binding peaks across the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "This motif was present in approximately 70% of all Wiz binding peaks across the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of motif occurrence analysis in ChIP-seq peaks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "922e8467-dde0-4538-8785-b03c9ab45fd0",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C56",
+      "claim": "Over half of Wiz ChIP-seq peaks overlapped the promoter mark H3K4me3.",
+      "claim_type": "EXPLICIT",
+      "source": "Over half of Wiz ChIP-seq peaks overlapped the promoter mark H3K4me3 and approximately a third of all Wiz ChIP-seq peaks overlapped CTCF ChIP-seq peaks (Figure 3D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by overlap analysis of ChIP-seq peaks shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "9da615c3-d9fe-4e8f-a894-9204830edafe",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C57",
+      "claim": "Approximately a third of all Wiz ChIP-seq peaks overlapped CTCF ChIP-seq peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Over half of Wiz ChIP-seq peaks overlapped the promoter mark H3K4me3 and approximately a third of all Wiz ChIP-seq peaks overlapped CTCF ChIP-seq peaks (Figure 3D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by overlap analysis of ChIP-seq peaks shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "7d43d184-f5d1-4127-ab65-4b23ac0e2bdf",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C58",
+      "claim": "Virtually all locations with both CTCF and H3K4me3 peaks also showed a Wiz peak (1356/1359).",
+      "claim_type": "EXPLICIT",
+      "source": "Virtually all locations with both CTCF and H3K4me3 peaks also showed a Wiz peak (1356/1359).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by overlap analysis of ChIP-seq peaks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "7ffcacba-1658-4419-92d3-0ff73cdb67c9",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C59",
+      "claim": "Almost all CTCF peaks overlapped with Wiz peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, almost all CTCF peaks overlapped with Wiz peaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by overlap analysis of ChIP-seq peaks shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "71086f44-c208-4a74-8a7c-34c157c1d5bb",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C60",
+      "claim": "A total of 36 genes were found to change significantly in expression in male E13.5 brains.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 36 were found to change in males and 44 changed in females.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of RNA-seq differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "dc5a55dc-1c2b-4ecb-9d57-bf1cc39c6dd5",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C61",
+      "claim": "A total of 44 genes were found to change significantly in expression in female E13.5 brains.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 36 were found to change in males and 44 changed in females.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of RNA-seq differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "2f17f8a4-c381-41db-a556-ebff27a4a41c",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C62",
+      "claim": "The majority of significantly differentially expressed genes decreased in expression in the mutants in male E13.5 brains (31/36).",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of significantly differentially expressed genes, in both cases, decreased in expression in the mutants (31/36 in males and 43/44 in females).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of RNA-seq differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "bcee23c6-376c-4c4f-982f-860429634e38",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C63",
+      "claim": "The majority of significantly differentially expressed genes decreased in expression in the mutants in female E13.5 brains (43/44).",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of significantly differentially expressed genes, in both cases, decreased in expression in the mutants (31/36 in males and 43/44 in females).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of RNA-seq differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "3f0d2e47-d339-4020-a6fd-4221c494f75f",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C64",
+      "claim": "28 genes were common between male and female E13.5 brains in terms of differential expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the combined set of 80 gene expression changes in males and females, 28 genes were common between the sexes and all of these decreased in WizMommeD30/+ samples compared to wildtype samples (Figure 4B and C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of comparing differential expression results between sexes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "8ae9eca7-8220-4661-af35-f2bb71482219",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C65",
+      "claim": "All 28 genes common between male and female E13.5 brains decreased in WizMommeD30/+ samples compared to wildtype samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the combined set of 80 gene expression changes in males and females, 28 genes were common between the sexes and all of these decreased in WizMommeD30/+ samples compared to wildtype samples (Figure 4B and C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of RNA-seq differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "fb1ef674-d712-449d-a7ba-658b74e4c0cc",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C66",
+      "claim": "A relatively high proportion of significantly differentially expressed genes were from the protocadherin \u03b2 (Pcdhb) gene cluster on Chromosome 18.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the significantly differentially expressed genes, a relatively high proportion were from two gene clusters, the protocadherin \u03b2 (Pcdhb) gene cluster on Chromosome 18 and a second cluster consisting of 2610005L07Rik, 6820431F20Rik, AC152164.1, Gm10557, Gm21092, Gm21769, Gm21811, Gm26804 and Gm6483 on Chromosome 8 (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the genomic locations of differentially expressed genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "8cdbbac2-4df4-45ae-93e7-8f7a478809b3",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C67",
+      "claim": "A relatively high proportion of significantly differentially expressed genes were from a gene cluster on Chromosome 8 consisting of 2610005L07Rik, 6820431F20Rik, AC152164.1, Gm10557, Gm21092, Gm21769, Gm21811, Gm26804 and Gm6483.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the significantly differentially expressed genes, a relatively high proportion were from two gene clusters, the protocadherin \u03b2 (Pcdhb) gene cluster on Chromosome 18 and a second cluster consisting of 2610005L07Rik, 6820431F20Rik, AC152164.1, Gm10557, Gm21092, Gm21769, Gm21811, Gm26804 and Gm6483 on Chromosome 8 (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the genomic locations of differentially expressed genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "14696808-2f95-43aa-90d2-a52de3e8c03a",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C68",
+      "claim": "The Chromosome 8 gene cluster is poorly annotated due to a nearby repeated region that has made mapping difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter cluster is poorly annotated due to a nearby repeated region that has made mapping difficult (Boyle and Ward, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation in genome annotation, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "ce003cdc-eeff-454c-8e53-26d124346220",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C69",
+      "claim": "Most genes in the Chromosome 8 cluster are annotated as cadherin11 pseudogenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Under the annotations listed in the UCSC genome browser (Karolchik et al., 2003), most are annotated as cadherin11 pseudogenes; all have introns, and some are predicted to be coding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on genome browser annotations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "f0265acb-e04a-4c5a-8164-761d4a966764",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C70",
+      "claim": "Several significantly differentially expressed genes in E13.5 brain were located near telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "No other gene clusters were apparent, though it was noticed that several genes were located near telomeres and four of the significantly differentially expressed genes, Samd11, psid-ps1, psid-ps2 and Csf2ra, are the last gene on the chromosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of genomic locations of differentially expressed genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "2e18effb-445a-4ed3-8ab1-c70a9d50fde7",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C71",
+      "claim": "Four significantly differentially expressed genes (Samd11, psid-ps1, psid-ps2 and Csf2ra) are the last gene on their respective chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "No other gene clusters were apparent, though it was noticed that several genes were located near telomeres and four of the significantly differentially expressed genes, Samd11, psid-ps1, psid-ps2 and Csf2ra, are the last gene on the chromosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of genomic locations of differentially expressed genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "1bc9b936-bb4c-423f-bf54-693052fdd1f5",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C72",
+      "claim": "A total of 82 genes were significantly differentially expressed in adult male cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 82 genes were significantly differentially expressed; 29 genes decreased and 53 increased in expression in WizMommeD30/+ samples compared to Wiz+/+ samples (Figure 5A; Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of RNA-seq differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "491d30f8-d312-4603-abbd-43f4c86590e0",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C73",
+      "claim": "29 genes decreased in expression in WizMommeD30/+ adult cerebellum compared to Wiz+/+ samples.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 82 genes were significantly differentially expressed; 29 genes decreased and 53 increased in expression in WizMommeD30/+ samples compared to Wiz+/+ samples (Figure 5A; Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of RNA-seq differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "74c45248-9d6b-438f-bcec-2308cc99605f",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C74",
+      "claim": "53 genes increased in expression in WizMommeD30/+ adult cerebellum compared to Wiz+/+ samples.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 82 genes were significantly differentially expressed; 29 genes decreased and 53 increased in expression in WizMommeD30/+ samples compared to Wiz+/+ samples (Figure 5A; Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of RNA-seq differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "62554d16-9ad6-4c48-b54b-27a74b87e9c4",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C75",
+      "claim": "13 genes overlapped between those differentially expressed in adult cerebellum and E13.5 brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, some genes (n = 13) overlapped with those detected in the E13.5 brain data, including some from the protocadherin \u03b2 cluster, some from the cadherin 11-like cluster, Wiz, Csf2ra and Rps4l (Figure 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of differential expression results between tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "a88bdc7e-285b-4311-a5c2-d9352ad4325d",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C76",
+      "claim": "All 13 genes that overlapped between adult cerebellum and E13.5 brain decreased in expression in WizMommeD30/+ samples.",
+      "claim_type": "EXPLICIT",
+      "source": "These all decreased in expression in WizMommeD30/+ cerebellum compared to the Wiz+/+ cerebellum, as they had done in the embryonic brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of RNA-seq differential expression analysis in both tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "86d2b2d5-e415-4036-9786-dd6f62004499",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C77",
+      "claim": "Down regulation of protocadherin \u03b2 genes was more pronounced in the embryonic brain than in the adult cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the down regulation of protocadherin \u03b2 genes was more pronounced in the embryonic brain than in the adult cerebellum, where significance was seen for only a minority of the genes in the clusters (Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of RNA-seq results between tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "3c434c98-df06-4f6a-897c-d7fa76e9d1c0",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C78",
+      "claim": "Wiz enrichment was detected at all protocadherin \u03b2 promoters except Pcdhb1.",
+      "claim_type": "EXPLICIT",
+      "source": "Wiz enrichment was detected at all protocadherin \u03b2 promoters except Pcdhb1, which is the only protocadherin \u03b2 gene that lacks a canonical protocadherin promoter sequence (Guo et al., 2015; Wu et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "c80a63a8-8d2e-49f6-822e-515ac3251c80",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C79",
+      "claim": "Pcdhb1 is the only protocadherin \u03b2 gene that lacks a canonical protocadherin promoter sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "Wiz enrichment was detected at all protocadherin \u03b2 promoters except Pcdhb1, which is the only protocadherin \u03b2 gene that lacks a canonical protocadherin promoter sequence (Guo et al., 2015; Wu et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "f2adea14-56c9-4017-9dc5-53482823795b",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C80",
+      "claim": "The greatest Wiz enrichment at the protocadherin \u03b2 locus was detected at the HS5-1bL enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "The greatest enrichment was detected at the HS5-1bL enhancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "1f2c5891-d10a-4811-b63d-db7d56eced9f",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C81",
+      "claim": "Wiz enrichment at the HS5-1bL enhancer is an order of magnitude higher than that seen at the individual protocadherin promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "This enrichment at the enhancer is an order of magnitude higher than that seen at the individual promoters, and this might reflect the fact that while single members of the cluster are expressed in individual neurons, the HS5-1bL enhancer is likely to be active in all cell types (Yokota et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "05a24dce-e3c1-4a04-8f3a-f7fedc4ccb18",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C82",
+      "claim": "Single members of the protocadherin cluster are expressed in individual neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This enrichment at the enhancer is an order of magnitude higher than that seen at the individual promoters, and this might reflect the fact that while single members of the cluster are expressed in individual neurons, the HS5-1bL enhancer is likely to be active in all cell types (Yokota et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "975391da-cce9-48b3-98e6-9efdc8659648",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C83",
+      "claim": "The HS5-1bL enhancer is likely to be active in all cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "This enrichment at the enhancer is an order of magnitude higher than that seen at the individual promoters, and this might reflect the fact that while single members of the cluster are expressed in individual neurons, the HS5-1bL enhancer is likely to be active in all cell types (Yokota et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cited reference and the ChIP-seq data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "5fea2b7c-f090-41cc-9b35-ab135d9ddd27",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C84",
+      "claim": "Genes that decreased in expression in WizMommeD30/+ cerebellum showed high enrichment for Wiz at the TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "The genes that decreased in expression showed high enrichment for Wiz and some enrichment for CTCF at the TSS (Figure 6C), while genes that increased in expression showed little enrichment for Wiz and no enrichment for CTCF (Figure 6D), suggesting that those showing increased expression were secondary effects (see Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq read density analysis shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "3bd1aa38-d011-4929-b0cb-fffe0dbd2e73",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C85",
+      "claim": "Genes that decreased in expression in WizMommeD30/+ cerebellum showed some enrichment for CTCF at the TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "The genes that decreased in expression showed high enrichment for Wiz and some enrichment for CTCF at the TSS (Figure 6C), while genes that increased in expression showed little enrichment for Wiz and no enrichment for CTCF (Figure 6D), suggesting that those showing increased expression were secondary effects (see Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq read density analysis shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "aaced67c-b8c4-4a5d-aa1d-68adf8b1a2c4",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C86",
+      "claim": "Genes that increased in expression in WizMommeD30/+ cerebellum showed little enrichment for Wiz at the TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "The genes that decreased in expression showed high enrichment for Wiz and some enrichment for CTCF at the TSS (Figure 6C), while genes that increased in expression showed little enrichment for Wiz and no enrichment for CTCF (Figure 6D), suggesting that those showing increased expression were secondary effects (see Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq read density analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "1467960a-f5d0-4cff-97c9-beaa89353171",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C87",
+      "claim": "Genes that increased in expression in WizMommeD30/+ cerebellum showed no enrichment for CTCF at the TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "The genes that decreased in expression showed high enrichment for Wiz and some enrichment for CTCF at the TSS (Figure 6C), while genes that increased in expression showed little enrichment for Wiz and no enrichment for CTCF (Figure 6D), suggesting that those showing increased expression were secondary effects (see Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ChIP-seq read density analysis shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "9d8a1858-0ad0-4479-9291-4a52e03407b3",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C88",
+      "claim": "Genes showing increased expression in WizMommeD30/+ cerebellum are likely secondary effects.",
+      "claim_type": "EXPLICIT",
+      "source": "The genes that decreased in expression showed high enrichment for Wiz and some enrichment for CTCF at the TSS (Figure 6C), while genes that increased in expression showed little enrichment for Wiz and no enrichment for CTCF (Figure 6D), suggesting that those showing increased expression were secondary effects (see Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of Wiz binding at genes with increased expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "525df84c-b0f1-42cf-8c3b-1d5d329cdcfd",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C89",
+      "claim": "WizMommeD30/+ mice showed decreased activity in the first two hours after lights off compared with Wiz+/+ mice.",
+      "claim_type": "EXPLICIT",
+      "source": "No shift was seen in the circadian pattern, but decreased activity was seen in the first two hours and the fifth hour after lights off in WizMommeD30/+ mice compared with the Wiz+/+ mice (Figure 7A; time x genotype interaction, F(23, 391) = 3.923, p<0.001, \u03b5 = 0.350).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by telemetry monitoring data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "45b1d0ca-3153-4552-b067-acd7283fe09b",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C90",
+      "claim": "WizMommeD30/+ mice showed decreased activity in the fifth hour after lights off compared with Wiz+/+ mice.",
+      "claim_type": "EXPLICIT",
+      "source": "No shift was seen in the circadian pattern, but decreased activity was seen in the first two hours and the fifth hour after lights off in WizMommeD30/+ mice compared with the Wiz+/+ mice (Figure 7A; time x genotype interaction, F(23, 391) = 3.923, p<0.001, \u03b5 = 0.350).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by telemetry monitoring data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "75130205-dc87-45ff-8233-ec3aadecefcf",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C91",
+      "claim": "No difference in temperature profiles was seen in WizMommeD30/+ mice compared to Wiz+/+ mice at any time points.",
+      "claim_type": "EXPLICIT",
+      "source": "No difference was seen in WizMommeD30/+ mice compared to Wiz+/+ mice at any of the time points (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by telemetry temperature monitoring data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "961cff93-dd3a-4677-aa70-d8b699d1b09d",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C92",
+      "claim": "WizMommeD30/+ mice showed an approximately 25% reduction in the frequency of entry into the open arms of the EPM apparatus compared with Wiz+/+ mice.",
+      "claim_type": "EXPLICIT",
+      "source": "WizMommeD30/+ showed an approximately 25% reduction in the frequency of entry into the open arms of the EPM apparatus compared with the Wiz+/+ mice (Figure 7B and C; t(17) = 2.90, p=0.010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by elevated plus maze behavioral testing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "94ac8abb-2702-479d-839d-e8b42d37576b",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C93",
+      "claim": "WizMommeD30/+ mice showed reduced time spent in the light in the light-dark box test.",
+      "claim_type": "EXPLICIT",
+      "source": "WizMommeD30/+ mice showed reduced time spent in the light and reduced rearing activity (Figure 7D and E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by light-dark box behavioral testing data shown in Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "c9c3aef5-c35e-46da-8a59-f3f4f26a13e1",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C94",
+      "claim": "WizMommeD30/+ mice showed reduced rearing activity in the light-dark box test.",
+      "claim_type": "EXPLICIT",
+      "source": "WizMommeD30/+ mice showed reduced time spent in the light and reduced rearing activity (Figure 7D and E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by light-dark box behavioral testing data shown in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "66be3284-e89d-47c0-a483-23fee4d840a9",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C95",
+      "claim": "The findings from the light-dark box test are consistent with an anxiety-like phenotype in WizMommeD30/+ mice.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are consistent with an anxiety-like phenotype in WizMommeD30/+ mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the behavioral data in the context of established anxiety assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "f9c742f1-a782-4c89-8c34-3e7a8021d8fb",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C96",
+      "claim": "The WizMommeD30 mutation was the only exonic mutation within the linked interval.",
+      "claim_type": "EXPLICIT",
+      "source": "This was the only exonic mutation within the linked interval and in agreement with this being the causative MommeD30 mutation, RNA-seq data presented here show no other genes within the linked interval were miss-expressed in mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequencing of the linked interval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "ac71a8b6-a9c6-4e25-8a89-7c32cd489d09",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C97",
+      "claim": "No other genes within the linked interval were miss-expressed in WizMommeD30 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "This was the only exonic mutation within the linked interval and in agreement with this being the causative MommeD30 mutation, RNA-seq data presented here show no other genes within the linked interval were miss-expressed in mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNA-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "d203cae5-b6a4-4668-ad31-a2790045c5aa",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C98",
+      "claim": "Wiz has no recognisable catalytic domains.",
+      "claim_type": "EXPLICIT",
+      "source": "While Wiz has no recognisable catalytic domains, it does have C2H2-type zinc fingers and these have an unusual widely-spaced configuration (Matsumoto et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on protein sequence analysis.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "aa12cee3-5bdf-4c75-af97-f00d8c1db5be",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C99",
+      "claim": "Most proteins that contain multiple zinc fingers have them in a cluster with short linker sequences (usually less than 10 amino acids).",
+      "claim_type": "EXPLICIT",
+      "source": "Most proteins that contain multiple zinc fingers have them in a cluster, with short 'linker' sequences (usually less than 10 amino acids) separating the fingers (Schuh et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "9d4b117b-48c3-4767-9dbd-39a7493245cb",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C100",
+      "claim": "Most Wiz zinc fingers are at least 50 amino acids apart.",
+      "claim_type": "EXPLICIT",
+      "source": "Most Wiz zinc fingers are at least 50 amino acids apart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on protein sequence analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "46254e75-a694-4a16-8887-624570efa237",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C101",
+      "claim": "Other zinc finger-containing proteins with widely-spaced configuration include Zfp292, Rlf and the Drosophila protein Su(Var)3\u20137.",
+      "claim_type": "EXPLICIT",
+      "source": "Other zinc finger-containing proteins with this configuration include Zfp292, Rlf and the Drosophila protein Su(Var)3\u20137 and all of these have been shown to bind DNA in vitro using electromobility shift assays (Cl\u00e9ard and Spierer, 2001; Harten et al., 2015; Lipkin et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "dba10566-f4a0-4cfa-a2fe-149ef959ad5e",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C102",
+      "claim": "Zfp292, Rlf and Su(Var)3\u20137 have all been shown to bind DNA in vitro using electromobility shift assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Other zinc finger-containing proteins with this configuration include Zfp292, Rlf and the Drosophila protein Su(Var)3\u20137 and all of these have been shown to bind DNA in vitro using electromobility shift assays (Cl\u00e9ard and Spierer, 2001; Harten et al., 2015; Lipkin et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established by the cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "79356183-9af5-4240-babf-8cfeacc3f795",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C103",
+      "claim": "Rlf was identified as an E(Var) in the MommeD screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Rlf, like Wiz, was identified as an E(Var) in the MommeD screen (Daxinger et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact from the cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "9275cd66-2f4c-448b-8ff8-d6bd2b7c30a1",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C104",
+      "claim": "Multiple isoforms of Wiz are present in the mouse, three at ~100 kDa and one larger ~160 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies using different Wiz antibodies (Matsumoto et al., 1998; Ueda et al., 2006; Ma et al., 2015; Simon et al., 2015) we identified multiple isoforms of Wiz present in the mouse, three at ~100 kDa and one larger ~160 kDa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Western blot data and is consistent with cited references.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "e0983a2c-4c12-45f8-aac9-e825a0f2a98a",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C105",
+      "claim": "G9A can methylate non-histone targets, including Wiz.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it is known that G9A can methylate non-histone targets, including Wiz (Rathert et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "d27da416-903d-45bc-ad16-91046a6af7d0",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C106",
+      "claim": "CTCF is a recognized transcriptional activator.",
+      "claim_type": "EXPLICIT",
+      "source": "Our ChIP-seq studies suggest that in adult cerebellum, Wiz binds at promoters and at sites which CTCF, a recognized transcriptional activator, is also known to bind.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CTCF function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "e887248d-670f-45a3-9b51-4e66e3ece17a",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C107",
+      "claim": "Competitive binding with CTCF and the closely related BORIS has been demonstrated.",
+      "claim_type": "EXPLICIT",
+      "source": "Competitive binding with CTCF and the closely related BORIS has been demonstrated (Pugacheva et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established by the cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "e0f42c41-6081-4540-9acf-56f5ce14a148",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C108",
+      "claim": "Wiz has not been pulled down with antibodies to CTCF.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, Wiz has not been pulled down with antibodies to CTCF (Xiao et al., 2011; Yusufzai et al., 2004), though a protein-protein interaction is possible in neural cell types where Wiz is expressed highly and co-immunoprecipitation of binding partners remains to be tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on review of the cited literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "93b5f427-b476-41cd-b42d-baba45d092a0",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C109",
+      "claim": "CTCF is enriched at topologically associated domain boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "CTCF has multiple roles in organizing the genome; it is enriched at topologically associated domain boundaries and can mediate interactions between an enhancer and promoter elements (Bell et al., 1999; Ong and Corces, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "d911e1e1-2e63-4c67-b068-ff74915adf88",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C110",
+      "claim": "CTCF can mediate interactions between an enhancer and promoter elements.",
+      "claim_type": "EXPLICIT",
+      "source": "CTCF has multiple roles in organizing the genome; it is enriched at topologically associated domain boundaries and can mediate interactions between an enhancer and promoter elements (Bell et al., 1999; Ong and Corces, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "368ba43f-1deb-4627-9203-c86cd6efd312",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C111",
+      "claim": "Broad regions marked by H3K9me2 often contain small 'euchromatic islands' that are devoid of H3K9me2, are DNase1 hypersensitive and have CTCF binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Broad regions marked by H3K9me2 often contain small 'euchromatic islands' that are devoid of H3K9me2, are DNase1 hypersensitive and have CTCF binding (Wen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "878cc2b5-6e78-482c-a12c-f25eaca5e717",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C112",
+      "claim": "Reducing WIZ levels resulted in less G9a at CTCF-binding sites across the genome in human cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study in a number of human cell lines found that reducing WIZ levels resulted in less G9a at CTCF-binding sites across the genome (by carrying out ChIP-seq for G9a) (Simon et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established by the cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "092d09f4-6266-4a2e-af81-9a986a11c9df",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C113",
+      "claim": "Protocadherin genes are expressed mainly in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Protocadherin genes are expressed mainly in neurons (Kohmura et al., 1998; Wu and Maniatis, 1999) and here we report the involvement of Wiz at protocadherin \u03b2 genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "42e85cb2-b34c-49b9-a424-63ea29483001",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C114",
+      "claim": "CTCF binds to the promoters and enhancer of the protocadherin \u03b2 locus, mediating the looping required for the transcription of single protocadherin \u03b2 genes in single neural cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CTCF has been shown by others to bind to the promoters and enhancer of this locus, mediating the looping required for the transcription of single protocadherin \u03b2 genes in single neural cells (Guo et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established by the cited reference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "32eb9215-16ae-4465-a746-22a78dedacb1",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C115",
+      "claim": "At the protocadherin locus, heterochromatinisation facilitates single isoform expression in single cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At this locus, heterochromatinisation facilitates single isoform expression in single cells i.e. the silencing of the majority of protocadherin genes in any single cell is associated with heterochromatin formation (Kawaguchi et al., 2008; Toyoda et al., 2014); the expressed loci must remain active despite being embedded in heterochromatin and it is possible that Wiz has a role in this scenario.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "d3621d85-c6cd-4ba1-9ae0-35d6ded6b2e1",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C116",
+      "claim": "The silencing of the majority of protocadherin genes in any single cell is associated with heterochromatin formation.",
+      "claim_type": "EXPLICIT",
+      "source": "At this locus, heterochromatinisation facilitates single isoform expression in single cells i.e. the silencing of the majority of protocadherin genes in any single cell is associated with heterochromatin formation (Kawaguchi et al., 2008; Toyoda et al., 2014); the expressed loci must remain active despite being embedded in heterochromatin and it is possible that Wiz has a role in this scenario.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from cited references.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "c41da486-ca51-4627-b19a-88df9697b81f",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C117",
+      "claim": "Wiz may have a role in keeping expressed protocadherin loci active despite being embedded in heterochromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "At this locus, heterochromatinisation facilitates single isoform expression in single cells i.e. the silencing of the majority of protocadherin genes in any single cell is associated with heterochromatin formation (Kawaguchi et al., 2008; Toyoda et al., 2014); the expressed loci must remain active despite being embedded in heterochromatin and it is possible that Wiz has a role in this scenario.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the ChIP-seq and RNA-seq data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "e8009ae4-1281-4397-9769-da667a6468b5",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C118",
+      "claim": "Many enzymes that modify histones and DNA have been found to be critical for development and function of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of epigenetic modifications in neural function is emerging; many enzymes that modify histones and DNA have been found to be critical for development and function of the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general knowledge about the field of neuroepigenetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "77f1bafa-2799-4d31-bdc8-86f1f34c180d",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C119",
+      "claim": "Prior to this study, no link between Wiz and behaviour had been shown in either mice or humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior to this study, no link between Wiz and behaviour had been shown in either mice or humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the state of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "05432848-cd09-4e07-8bc9-6bd250fb885f",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C120",
+      "claim": "Heterozygosity for rare WIZ mutations in humans could influence neurological disorders that have a complex genetic aetiology.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that heterozygosity for rare WIZ mutations in humans could influence neurological disorders that have a complex genetic aetiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the mouse behavioral findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "28004845-5c80-4195-a3eb-57942d310a74",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C121",
+      "claim": "Mice with reduced expression of protocadherin \u03b2 genes due to knockout of CTCF have disorganized formation of the barrel cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice with reduced expression of protocadherin \u03b2 genes, due to knockout of CTCF (Hirayama et al., 2012) or the downstream enhancer (Yokota et al., 2011), have disorganized formation of the barrel cortex, a region of the brain important for processing information for the tactile somatosensory pathway (Petersen, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established by the cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "9d4d749e-0c70-4566-8c57-63c316e3234e",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C122",
+      "claim": "Mice with reduced expression of protocadherin \u03b2 genes due to knockout of the downstream enhancer have disorganized formation of the barrel cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice with reduced expression of protocadherin \u03b2 genes, due to knockout of CTCF (Hirayama et al., 2012) or the downstream enhancer (Yokota et al., 2011), have disorganized formation of the barrel cortex, a region of the brain important for processing information for the tactile somatosensory pathway (Petersen, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established by the cited references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "5dfc5d84-c5ca-4966-ae30-2f7c9452b6ab",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C123",
+      "claim": "The barrel cortex is a region of the brain important for processing information for the tactile somatosensory pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice with reduced expression of protocadherin \u03b2 genes, due to knockout of CTCF (Hirayama et al., 2012) or the downstream enhancer (Yokota et al., 2011), have disorganized formation of the barrel cortex, a region of the brain important for processing information for the tactile somatosensory pathway (Petersen, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from the cited reference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "5c8b2ed8-4f79-4fff-9035-fb922f989eb0",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C124",
+      "claim": "Over 30 million reads were generated for each of the two Wiz ChIP-seq datasets and the chromatin Input sample dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 30 million reads were generated for each of the two Wiz ChIP-seq datasets and the chromatin Input sample dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sequencing depth achieved.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "a92287d1-a143-4e2b-bfdc-cf74789bf0e0",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C125",
+      "claim": "At least 24 million reads could be aligned to the mouse mm10 genome in all ChIP-seq cases, after filtering out PCR duplicates.",
+      "claim_type": "EXPLICIT",
+      "source": "At least 24 million reads could be aligned to the mouse mm10 genome in all cases, after filtering out PCR duplicates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the alignment results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "c66e9d14-90b8-4837-b61e-6b0de518fe1d",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C126",
+      "claim": "Wiz ChIP-qPCR validated enrichment at a representative Wiz peak.",
+      "claim_type": "IMPLICIT",
+      "source": "A representative Wiz peak and ChIP-qPCR validation at the same locus is shown in Figure 2A and B, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2B which displays ChIP-qPCR enrichment at the peak location.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "2b611e7b-d2de-4c97-a027-10ec4cbf797d",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C127",
+      "claim": "WizMommeD30/+ offspring from crosses with WizMommeD30/+ sire showed a statistically significant shift towards silencing at Avy (p=0.0002).",
+      "claim_type": "IMPLICIT",
+      "source": "The shift was statistically significant in both cases; the shift from WizMommeD30/+ sire cross had a p-value of 0.0002, and from the WizMommeD30/+ dam cross had a p-value of 0.0458 (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1A with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "ee760be1-d921-4252-b0a3-967b4134c46f",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "claim_id": "C128",
+      "claim": "WizMommeD30/+ offspring from crosses with WizMommeD30/+ dam showed a statistically significant shift towards silencing at Avy (p=0.0458).",
+      "claim_type": "IMPLICIT",
+      "source": "The shift was statistically significant in both cases; the shift from WizMommeD30/+ sire cross had a p-value of 0.0002, and from the WizMommeD30/+ dam cross had a p-value of 0.0458 (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1B with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "34702b1a-19af-437e-8ae2-782aee01a21e",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The WizMommeD30 mutation is a single base pair deletion causing a frameshift and premature stop codon, resulting in a null allele with embryonic lethality in homozygotes and reduced protein levels in heterozygotes. This was the only exonic mutation in the linked interval and no other genes in this interval were misexpressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 and C96-C97 provide converging genetic, molecular, and expression evidence that WizMommeD30 is a null allele. The sequencing data (C16-C17), embryonic lethality (C18), protein quantification (C19), and RNA-seq validation (C97) collectively support this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "a13a7d8f-097c-4460-9c8f-b7522d92bbef",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Haploinsufficiency for Wiz results in decreased expression at both the GFP transgene and the Avy allele, with statistically significant shifts toward silencing observed in crosses with both WizMommeD30/+ sires (p=0.0002) and dams (p=0.0458).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C46 and C127-C128 demonstrate consistent effects of Wiz haploinsufficiency on two independent reporter systems with appropriate statistical support. The coat color data (Figure 1) provides clear phenotypic evidence with significant p-values for both parental crosses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "15b6fc37-ff08-4b5c-b32e-94ece41dd6b8",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The anti-Wiz antibody (NBP180586) is specific for Wiz in mouse tissue, detecting multiple isoforms including three at ~100 kDa and one at ~160 kDa in cerebellum. Co-immunoprecipitation confirmed association with known Wiz-interacting proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 and C104 provide multiple lines of validation for the antibody specificity through Western blot comparison of wildtype vs. null mutant (C47), detection of expected isoforms (C48, C104), and mass spectrometry confirmation of known binding partners (C49).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "f9e72a33-a6df-4f2d-9a61-44492ccf81c3",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Wiz ChIP-seq in adult cerebellum identified approximately 40,000 significant peaks (p\u22641\u00d710^-20) that are roughly equally distributed across promoters, intragenic, and intergenic regions, with strong enrichment at transcription start sites (TSS).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C38, C50-C52, and C124-C126 describe the ChIP-seq experimental design, sequencing depth, peak calling results, and genomic distribution. The data show adequate sequencing depth (>30M reads), appropriate alignment rates (>24M), and validation by ChIP-qPCR (C126).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "a86a56b0-ce8b-453e-aa1a-dcdd9e7e8b85",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Wiz peaks extensively overlap with CTCF binding sites in cerebellum. The most significant Wiz motif (E-value 2.3\u00d710^-6903) aligns almost perfectly with the CTCF-DNA binding motif and is present in ~70% of Wiz peaks. Approximately one-third of Wiz peaks overlap CTCF peaks, and virtually all CTCF peaks overlap with Wiz peaks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C53-C59 provide strong computational and comparative evidence for Wiz-CTCF co-localization. The motif analysis (C53-C55), overlap analysis with ENCODE data (C56-C59), and the near-complete overlap of CTCF with Wiz peaks (C59) are well-supported by the data in Figures 3C-D.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "8d9c768b-abe8-41ec-a95d-557018f232c6",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "There is little overlap between Wiz ChIP-seq findings in human kidney cells (Bian et al., 2015) and the current study's findings in mouse cerebellum.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C40-C41 reference a comparison with published data, but the manuscript provides limited detail on the methodology used for this comparison and the extent of overlap. The authors note tissue and species differences but do not provide quantitative overlap metrics or discuss whether this reflects technical, biological, or analytical differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "25a4f459-6c6d-4218-bb3b-64017dfeeb90",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "RNA-seq identified 36 genes differentially expressed in male E13.5 brains and 44 in female E13.5 brains of WizMommeD30/+ mice, with the majority (31/36 in males, 43/44 in females) decreasing in expression. Twenty-eight genes were commonly downregulated between sexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8 and C60-C65 describe RNA-seq results with appropriate sample sizes (n=3 for males, n=2 for females) and clear statistical thresholds (fold-change <0.7 or >1.3, adjusted p\u22640.05). The consistency of downregulation across sexes (C64-C65) strengthens the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "2b91df88-4d7d-4f9f-bb2f-de359ff39da3",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Differentially expressed genes in E13.5 brain include clustered protocadherin \u03b2 genes on Chromosome 18 and a poorly annotated cadherin-11-like gene cluster on Chromosome 8. Several genes were also located near telomeres.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10 and C66-C71 identify specific gene clusters affected by Wiz haploinsufficiency. The authors appropriately acknowledge annotation limitations for the Chromosome 8 cluster (C68-C69) and note the telomeric location of some genes (C70-C71), which is relevant given Wiz's potential role in heterochromatin.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "31b00ade-dd55-49ed-b9a5-8f78aa421e5f",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In adult cerebellum, 82 genes were differentially expressed in WizMommeD30/+ mice (29 decreased, 53 increased). Thirteen genes overlapped with those differentially expressed in E13.5 brain, all showing decreased expression. Protocadherin \u03b2 downregulation was more pronounced in embryonic brain than adult cerebellum.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C77 describe adult cerebellum RNA-seq with adequate replication (n=3 per genotype). The overlap analysis (C75-C76) and tissue-specific differences in protocadherin regulation (C77) are well-documented and provide developmental context for Wiz function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "8cae43a1-1824-4a6d-a79a-60ab2b7d61ea",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Protocadherin \u03b2 genes showed strong Wiz ChIP-seq enrichment at promoters (except Pcdhb1, which lacks a canonical promoter) and at the HS5-1bL enhancer, where enrichment was an order of magnitude higher than at individual promoters. These genes decreased in expression in both embryonic brain and adult cerebellum of Wiz mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12 and C78-C83 integrate ChIP-seq and RNA-seq data to demonstrate direct Wiz binding at protocadherin genes with corresponding expression changes. The exception of Pcdhb1 (C78-C79) is explained by its unique promoter structure, and the strong enhancer enrichment (C80-C81) is validated by ChIP-qPCR (Figure 6B).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "517cea08-443b-415e-b714-2815d8e829df",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Genes that decreased in expression in WizMommeD30/+ cerebellum showed high Wiz enrichment and some CTCF enrichment at the TSS, while genes that increased in expression showed little Wiz or CTCF enrichment, suggesting the latter are secondary effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C88 provide a mechanistic interpretation linking ChIP-seq binding data to expression changes. The differential enrichment patterns (Figures 6C-D) support the conclusion that downregulated genes are direct Wiz targets while upregulated genes are indirect effects (C88).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "f6f1b57e-42a1-43fc-a8ed-95f90fa00277",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "WizMommeD30/+ mice display an anxiety-like phenotype characterized by decreased activity during specific hours of the dark phase, reduced open arm entries in the elevated plus maze (~25% reduction, p=0.010), and reduced time in light and rearing activity in the light-dark box test. No differences in temperature profiles were observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C42, and C89-C95 describe behavioral phenotyping using multiple validated anxiety assays with appropriate sample sizes (n=10-22 per genotype) and statistical analyses. The consistency across multiple behavioral tests (telemetry, EPM, light-dark box) and the specificity of effects (activity but not temperature) strengthen the conclusion of an anxiety-like phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "7a439c96-4487-4633-b6fe-e9951818725c",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Wiz may function as a transcriptional activator, in addition to its known repressor function. This is supported by evidence that G9a can act as a transcriptional activator independent of its methyltransferase activity, and WIZ has been suggested to have a role in G9a's activation function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C31-C32 present the novel hypothesis that Wiz functions as a transcriptional activator. This is supported by multiple lines of evidence in the manuscript: decreased expression at reporter loci with Wiz haploinsufficiency (C33-C46), predominant downregulation of genes in RNA-seq (C62-C63), and Wiz binding at genes that decrease in expression (C84). The prior literature on G9a activation function (C31-C32) provides mechanistic context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "447bbe5e-541f-4f26-aef3-0f0cde399d70",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Protocadherin genes require precise expression patterns for neuronal development, and their dysregulation is associated with neurological phenotypes. CTCF mediates enhancer-promoter looping at the protocadherin \u03b2 locus, and heterochromatinization facilitates single isoform expression. Wiz may have a role in maintaining active loci within heterochromatin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C36-C37, and C113-C123 provide established biological context from the literature that motivates the study and interprets the findings. The connection between protocadherin expression, neuronal development, and behavior (C13, C121-C123) is well-established, and the speculation about Wiz's role in heterochromatin (C117) is appropriately tentative and based on the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "c10b572f-f629-4728-8d4b-32ac78734157",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "This is the first evidence of a role for Wiz in neural function. Prior to this study, no link between Wiz and behavior had been shown in mice or humans. Heterozygosity for rare WIZ mutations in humans could potentially influence neurological disorders with complex genetic etiology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C119-C120 assert the novelty of the findings and speculate on clinical relevance. The novelty claim (C15, C119) appears supported by the literature review, and the speculation about human disease (C120) is appropriately cautious and based on the mouse behavioral phenotype and the precedent of Kleefstra syndrome.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "bf181dfb-aaaf-46f0-bbcb-e4ee35d5bf5c",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Wiz was identified in a mouse ENU mutagenesis screen for epigenetic modifiers and is generally considered a transcriptional repressor due to its association with G9a/GLP. Wiz is highly expressed in the brain (embryonic and adult), and the WizMommeD30 strain is the only reported mouse strain with a mutant form of Wiz.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C4, C21, and C35 provide background information that is well-supported by citations to prior work. These establish the context for the current study and are appropriately referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "b6f4ba54-ef14-4d6c-ba46-532b4bb52fa7",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Wiz has no recognizable catalytic domains but contains 11 C2H2-type zinc finger domains with an unusual widely-spaced configuration (\u226550 amino acids apart, compared to the typical <10 amino acids). Some zinc fingers bind DNA and others mediate protein-protein interactions with G9a/GLP. Similar widely-spaced zinc finger proteins (Zfp292, Rlf, Su(Var)3-7) have been shown to bind DNA in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 and C98-C103 describe Wiz protein structure and function based on sequence analysis and cited literature. The structural features are well-established (C22, C98-C100), and the functional properties (C23-C24) are supported by cited experimental work. The comparison to other widely-spaced zinc finger proteins (C101-C103) provides useful context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "91e76343-c781-438c-8c02-98326be5e372",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The G9a/GLP complex catalyzes H3K9me1/me2 methylation associated with transcriptional repression and located in broad chromatin regions (LOCKs). Wiz stabilizes the G9a/GLP complex, mediates its DNA localization, and is required for normal H3K9me2 levels. CTCF is a transcriptional activator enriched at topologically associated domain boundaries and can mediate enhancer-promoter interactions. Reducing WIZ levels decreases G9a at CTCF-binding sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C30 and C105-C112 provide established mechanistic background from the literature about G9a/GLP, Wiz, and CTCF function. These are appropriately cited and provide essential context for interpreting the ChIP-seq and RNA-seq results. The lack of reported Wiz-CTCF co-immunoprecipitation (C108) is noted as a gap in knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    },
+    {
+      "id": "dec6145d-a91c-43e2-84ef-28d264acccfe",
+      "content_id": "b3b46e25-4147-4357-a881-e821cb0354bb",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Many enzymes that modify histones and DNA have been found to be critical for development and function of the brain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C118 provides general background on the importance of epigenetic modifications in neural function. This is well-established knowledge that contextualizes the study's focus on Wiz in the brain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:27.605764Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "11281593-461b-4ed9-8d23-db26450a986c",
+      "result_id": "34702b1a-19af-437e-8ae2-782aee01a21e"
+    },
+    {
+      "claim_id": "87a64756-78f1-47fe-a93c-235b3ac1d33f",
+      "result_id": "34702b1a-19af-437e-8ae2-782aee01a21e"
+    },
+    {
+      "claim_id": "f615bef0-691e-4fcc-b7d5-5bd96258dbe5",
+      "result_id": "34702b1a-19af-437e-8ae2-782aee01a21e"
+    },
+    {
+      "claim_id": "a30a64f7-759b-4c1a-88d8-68ad917702f0",
+      "result_id": "34702b1a-19af-437e-8ae2-782aee01a21e"
+    },
+    {
+      "claim_id": "1d8174ee-113f-4c51-8561-8de9175175e7",
+      "result_id": "34702b1a-19af-437e-8ae2-782aee01a21e"
+    },
+    {
+      "claim_id": "3c3b80d4-7e1d-46be-a320-53e8f6541b16",
+      "result_id": "34702b1a-19af-437e-8ae2-782aee01a21e"
+    },
+    {
+      "claim_id": "f9c742f1-a782-4c89-8c34-3e7a8021d8fb",
+      "result_id": "34702b1a-19af-437e-8ae2-782aee01a21e"
+    },
+    {
+      "claim_id": "ac71a8b6-a9c6-4e25-8a89-7c32cd489d09",
+      "result_id": "34702b1a-19af-437e-8ae2-782aee01a21e"
+    },
+    {
+      "claim_id": "03d3ec4d-8604-4f3f-bf68-f8721dd7f9d7",
+      "result_id": "a13a7d8f-097c-4460-9c8f-b7522d92bbef"
+    },
+    {
+      "claim_id": "369c5f46-17a7-48b6-aa2a-cb8abdc37331",
+      "result_id": "a13a7d8f-097c-4460-9c8f-b7522d92bbef"
+    },
+    {
+      "claim_id": "996d9995-666d-47ee-bce3-5a2975aac821",
+      "result_id": "a13a7d8f-097c-4460-9c8f-b7522d92bbef"
+    },
+    {
+      "claim_id": "a9629ed0-9aa2-4d51-a0be-1113ca332de0",
+      "result_id": "a13a7d8f-097c-4460-9c8f-b7522d92bbef"
+    },
+    {
+      "claim_id": "864dcea9-60b3-426c-9a14-3ec3ec786640",
+      "result_id": "a13a7d8f-097c-4460-9c8f-b7522d92bbef"
+    },
+    {
+      "claim_id": "878a4081-ef70-4710-958b-eb4007e2dbe6",
+      "result_id": "a13a7d8f-097c-4460-9c8f-b7522d92bbef"
+    },
+    {
+      "claim_id": "2b611e7b-d2de-4c97-a027-10ec4cbf797d",
+      "result_id": "a13a7d8f-097c-4460-9c8f-b7522d92bbef"
+    },
+    {
+      "claim_id": "ee760be1-d921-4252-b0a3-967b4134c46f",
+      "result_id": "a13a7d8f-097c-4460-9c8f-b7522d92bbef"
+    },
+    {
+      "claim_id": "de90c7ab-f0c6-456f-93cd-ac4fca482b4d",
+      "result_id": "15b6fc37-ff08-4b5c-b32e-94ece41dd6b8"
+    },
+    {
+      "claim_id": "544da56a-d648-4270-a2cd-c7fc3a8242f8",
+      "result_id": "15b6fc37-ff08-4b5c-b32e-94ece41dd6b8"
+    },
+    {
+      "claim_id": "d2fc3cea-577a-4e5d-830d-2b269dc132b3",
+      "result_id": "15b6fc37-ff08-4b5c-b32e-94ece41dd6b8"
+    },
+    {
+      "claim_id": "9275cd66-2f4c-448b-8ff8-d6bd2b7c30a1",
+      "result_id": "15b6fc37-ff08-4b5c-b32e-94ece41dd6b8"
+    },
+    {
+      "claim_id": "95d7ab03-f95b-4ef8-ad9c-984c66607b7e",
+      "result_id": "f9e72a33-a6df-4f2d-9a61-44492ccf81c3"
+    },
+    {
+      "claim_id": "c71484fb-4f97-4ca8-9943-e1c4c6f7288f",
+      "result_id": "f9e72a33-a6df-4f2d-9a61-44492ccf81c3"
+    },
+    {
+      "claim_id": "3dbb57f6-3050-4664-9da8-1ec4f267b88e",
+      "result_id": "f9e72a33-a6df-4f2d-9a61-44492ccf81c3"
+    },
+    {
+      "claim_id": "f0c6372c-d643-4a3d-bc9b-a4aa00dac42b",
+      "result_id": "f9e72a33-a6df-4f2d-9a61-44492ccf81c3"
+    },
+    {
+      "claim_id": "b298ddfe-3296-486d-8141-49a3d0876614",
+      "result_id": "f9e72a33-a6df-4f2d-9a61-44492ccf81c3"
+    },
+    {
+      "claim_id": "5c8b2ed8-4f79-4fff-9035-fb922f989eb0",
+      "result_id": "f9e72a33-a6df-4f2d-9a61-44492ccf81c3"
+    },
+    {
+      "claim_id": "a92287d1-a143-4e2b-bfdc-cf74789bf0e0",
+      "result_id": "f9e72a33-a6df-4f2d-9a61-44492ccf81c3"
+    },
+    {
+      "claim_id": "c66e9d14-90b8-4837-b61e-6b0de518fe1d",
+      "result_id": "f9e72a33-a6df-4f2d-9a61-44492ccf81c3"
+    },
+    {
+      "claim_id": "800cc7e6-4e20-47c4-a0e9-f2573fe86f6d",
+      "result_id": "a86a56b0-ce8b-453e-aa1a-dcdd9e7e8b85"
+    },
+    {
+      "claim_id": "5031bb06-68ab-40e4-91de-4c0e0b7e595d",
+      "result_id": "a86a56b0-ce8b-453e-aa1a-dcdd9e7e8b85"
+    },
+    {
+      "claim_id": "1ab99b7c-542e-4db6-88d1-1f1f10704bff",
+      "result_id": "a86a56b0-ce8b-453e-aa1a-dcdd9e7e8b85"
+    },
+    {
+      "claim_id": "39cf36f2-2d25-4051-98f9-14d9230a5402",
+      "result_id": "a86a56b0-ce8b-453e-aa1a-dcdd9e7e8b85"
+    },
+    {
+      "claim_id": "922e8467-dde0-4538-8785-b03c9ab45fd0",
+      "result_id": "a86a56b0-ce8b-453e-aa1a-dcdd9e7e8b85"
+    },
+    {
+      "claim_id": "9da615c3-d9fe-4e8f-a894-9204830edafe",
+      "result_id": "a86a56b0-ce8b-453e-aa1a-dcdd9e7e8b85"
+    },
+    {
+      "claim_id": "7d43d184-f5d1-4127-ab65-4b23ac0e2bdf",
+      "result_id": "a86a56b0-ce8b-453e-aa1a-dcdd9e7e8b85"
+    },
+    {
+      "claim_id": "7ffcacba-1658-4419-92d3-0ff73cdb67c9",
+      "result_id": "a86a56b0-ce8b-453e-aa1a-dcdd9e7e8b85"
+    },
+    {
+      "claim_id": "6a717a12-4d08-423e-9ccd-ee1196c861a0",
+      "result_id": "8d9c768b-abe8-41ec-a95d-557018f232c6"
+    },
+    {
+      "claim_id": "d2fcfc3f-3fe9-4b95-aedc-31c8b1377c59",
+      "result_id": "8d9c768b-abe8-41ec-a95d-557018f232c6"
+    },
+    {
+      "claim_id": "37c9060d-9600-4a33-b5bd-a25967ef03cc",
+      "result_id": "25a4f459-6c6d-4218-bb3b-64017dfeeb90"
+    },
+    {
+      "claim_id": "9aecf6da-bc0d-40e8-83a8-771c0100ce52",
+      "result_id": "25a4f459-6c6d-4218-bb3b-64017dfeeb90"
+    },
+    {
+      "claim_id": "71086f44-c208-4a74-8a7c-34c157c1d5bb",
+      "result_id": "25a4f459-6c6d-4218-bb3b-64017dfeeb90"
+    },
+    {
+      "claim_id": "dc5a55dc-1c2b-4ecb-9d57-bf1cc39c6dd5",
+      "result_id": "25a4f459-6c6d-4218-bb3b-64017dfeeb90"
+    },
+    {
+      "claim_id": "2f17f8a4-c381-41db-a556-ebff27a4a41c",
+      "result_id": "25a4f459-6c6d-4218-bb3b-64017dfeeb90"
+    },
+    {
+      "claim_id": "bcee23c6-376c-4c4f-982f-860429634e38",
+      "result_id": "25a4f459-6c6d-4218-bb3b-64017dfeeb90"
+    },
+    {
+      "claim_id": "3f0d2e47-d339-4020-a6fd-4221c494f75f",
+      "result_id": "25a4f459-6c6d-4218-bb3b-64017dfeeb90"
+    },
+    {
+      "claim_id": "8ae9eca7-8220-4661-af35-f2bb71482219",
+      "result_id": "25a4f459-6c6d-4218-bb3b-64017dfeeb90"
+    },
+    {
+      "claim_id": "2b88d3ea-ce1b-47fc-bc7c-a0d4df5edc69",
+      "result_id": "2b91df88-4d7d-4f9f-bb2f-de359ff39da3"
+    },
+    {
+      "claim_id": "cbf8183b-bbbc-43d4-a3e1-37b56c8666e8",
+      "result_id": "2b91df88-4d7d-4f9f-bb2f-de359ff39da3"
+    },
+    {
+      "claim_id": "fb1ef674-d712-449d-a7ba-658b74e4c0cc",
+      "result_id": "2b91df88-4d7d-4f9f-bb2f-de359ff39da3"
+    },
+    {
+      "claim_id": "8cdbbac2-4df4-45ae-93e7-8f7a478809b3",
+      "result_id": "2b91df88-4d7d-4f9f-bb2f-de359ff39da3"
+    },
+    {
+      "claim_id": "14696808-2f95-43aa-90d2-a52de3e8c03a",
+      "result_id": "2b91df88-4d7d-4f9f-bb2f-de359ff39da3"
+    },
+    {
+      "claim_id": "ce003cdc-eeff-454c-8e53-26d124346220",
+      "result_id": "2b91df88-4d7d-4f9f-bb2f-de359ff39da3"
+    },
+    {
+      "claim_id": "f0265acb-e04a-4c5a-8164-761d4a966764",
+      "result_id": "2b91df88-4d7d-4f9f-bb2f-de359ff39da3"
+    },
+    {
+      "claim_id": "2e18effb-445a-4ed3-8ab1-c70a9d50fde7",
+      "result_id": "2b91df88-4d7d-4f9f-bb2f-de359ff39da3"
+    },
+    {
+      "claim_id": "1bc9b936-bb4c-423f-bf54-693052fdd1f5",
+      "result_id": "31b00ade-dd55-49ed-b9a5-8f78aa421e5f"
+    },
+    {
+      "claim_id": "491d30f8-d312-4603-abbd-43f4c86590e0",
+      "result_id": "31b00ade-dd55-49ed-b9a5-8f78aa421e5f"
+    },
+    {
+      "claim_id": "74c45248-9d6b-438f-bcec-2308cc99605f",
+      "result_id": "31b00ade-dd55-49ed-b9a5-8f78aa421e5f"
+    },
+    {
+      "claim_id": "62554d16-9ad6-4c48-b54b-27a74b87e9c4",
+      "result_id": "31b00ade-dd55-49ed-b9a5-8f78aa421e5f"
+    },
+    {
+      "claim_id": "a88bdc7e-285b-4311-a5c2-d9352ad4325d",
+      "result_id": "31b00ade-dd55-49ed-b9a5-8f78aa421e5f"
+    },
+    {
+      "claim_id": "86d2b2d5-e415-4036-9786-dd6f62004499",
+      "result_id": "31b00ade-dd55-49ed-b9a5-8f78aa421e5f"
+    },
+    {
+      "claim_id": "d2924e6e-77f8-425e-8395-62128a15147e",
+      "result_id": "8cae43a1-1824-4a6d-a79a-60ab2b7d61ea"
+    },
+    {
+      "claim_id": "00fa74ff-8ae3-458f-9bff-90214bb53b13",
+      "result_id": "8cae43a1-1824-4a6d-a79a-60ab2b7d61ea"
+    },
+    {
+      "claim_id": "3c434c98-df06-4f6a-897c-d7fa76e9d1c0",
+      "result_id": "8cae43a1-1824-4a6d-a79a-60ab2b7d61ea"
+    },
+    {
+      "claim_id": "c80a63a8-8d2e-49f6-822e-515ac3251c80",
+      "result_id": "8cae43a1-1824-4a6d-a79a-60ab2b7d61ea"
+    },
+    {
+      "claim_id": "f2adea14-56c9-4017-9dc5-53482823795b",
+      "result_id": "8cae43a1-1824-4a6d-a79a-60ab2b7d61ea"
+    },
+    {
+      "claim_id": "1f2c5891-d10a-4811-b63d-db7d56eced9f",
+      "result_id": "8cae43a1-1824-4a6d-a79a-60ab2b7d61ea"
+    },
+    {
+      "claim_id": "05a24dce-e3c1-4a04-8f3a-f7fedc4ccb18",
+      "result_id": "8cae43a1-1824-4a6d-a79a-60ab2b7d61ea"
+    },
+    {
+      "claim_id": "975391da-cce9-48b3-98e6-9efdc8659648",
+      "result_id": "8cae43a1-1824-4a6d-a79a-60ab2b7d61ea"
+    },
+    {
+      "claim_id": "5fea2b7c-f090-41cc-9b35-ab135d9ddd27",
+      "result_id": "517cea08-443b-415e-b714-2815d8e829df"
+    },
+    {
+      "claim_id": "3bd1aa38-d011-4929-b0cb-fffe0dbd2e73",
+      "result_id": "517cea08-443b-415e-b714-2815d8e829df"
+    },
+    {
+      "claim_id": "aaced67c-b8c4-4a5d-aa1d-68adf8b1a2c4",
+      "result_id": "517cea08-443b-415e-b714-2815d8e829df"
+    },
+    {
+      "claim_id": "1467960a-f5d0-4cff-97c9-beaa89353171",
+      "result_id": "517cea08-443b-415e-b714-2815d8e829df"
+    },
+    {
+      "claim_id": "9d8a1858-0ad0-4479-9291-4a52e03407b3",
+      "result_id": "517cea08-443b-415e-b714-2815d8e829df"
+    },
+    {
+      "claim_id": "ae674d96-4ce9-4bc7-bb2b-2b4bd147769e",
+      "result_id": "f6f1b57e-42a1-43fc-a8ed-95f90fa00277"
+    },
+    {
+      "claim_id": "76701bf0-0ae2-4a79-9841-ba4d2a6ab097",
+      "result_id": "f6f1b57e-42a1-43fc-a8ed-95f90fa00277"
+    },
+    {
+      "claim_id": "525df84c-b0f1-42cf-8c3b-1d5d329cdcfd",
+      "result_id": "f6f1b57e-42a1-43fc-a8ed-95f90fa00277"
+    },
+    {
+      "claim_id": "45b1d0ca-3153-4552-b067-acd7283fe09b",
+      "result_id": "f6f1b57e-42a1-43fc-a8ed-95f90fa00277"
+    },
+    {
+      "claim_id": "75130205-dc87-45ff-8233-ec3aadecefcf",
+      "result_id": "f6f1b57e-42a1-43fc-a8ed-95f90fa00277"
+    },
+    {
+      "claim_id": "961cff93-dd3a-4677-aa70-d8b699d1b09d",
+      "result_id": "f6f1b57e-42a1-43fc-a8ed-95f90fa00277"
+    },
+    {
+      "claim_id": "94ac8abb-2702-479d-839d-e8b42d37576b",
+      "result_id": "f6f1b57e-42a1-43fc-a8ed-95f90fa00277"
+    },
+    {
+      "claim_id": "c9c3aef5-c35e-46da-8a59-f3f4f26a13e1",
+      "result_id": "f6f1b57e-42a1-43fc-a8ed-95f90fa00277"
+    },
+    {
+      "claim_id": "66be3284-e89d-47c0-a483-23fee4d840a9",
+      "result_id": "f6f1b57e-42a1-43fc-a8ed-95f90fa00277"
+    },
+    {
+      "claim_id": "32477641-2ff4-4fc4-9c76-0aa253eada46",
+      "result_id": "7a439c96-4487-4633-b6fe-e9951818725c"
+    },
+    {
+      "claim_id": "27e3cf1c-2ec7-4599-8170-40b9a4736ae8",
+      "result_id": "7a439c96-4487-4633-b6fe-e9951818725c"
+    },
+    {
+      "claim_id": "888acadc-fd83-48f0-82c6-9ebba4a98b4d",
+      "result_id": "7a439c96-4487-4633-b6fe-e9951818725c"
+    },
+    {
+      "claim_id": "9d55e977-db3e-4ddc-b5ce-4b98c1244914",
+      "result_id": "447bbe5e-541f-4f26-aef3-0f0cde399d70"
+    },
+    {
+      "claim_id": "45324bcc-6ec7-4590-9cf9-681c9283e2cc",
+      "result_id": "447bbe5e-541f-4f26-aef3-0f0cde399d70"
+    },
+    {
+      "claim_id": "2ebf9ca3-232e-434a-a754-425f7804368b",
+      "result_id": "447bbe5e-541f-4f26-aef3-0f0cde399d70"
+    },
+    {
+      "claim_id": "092d09f4-6266-4a2e-af81-9a986a11c9df",
+      "result_id": "447bbe5e-541f-4f26-aef3-0f0cde399d70"
+    },
+    {
+      "claim_id": "42e85cb2-b34c-49b9-a424-63ea29483001",
+      "result_id": "447bbe5e-541f-4f26-aef3-0f0cde399d70"
+    },
+    {
+      "claim_id": "32eb9215-16ae-4465-a746-22a78dedacb1",
+      "result_id": "447bbe5e-541f-4f26-aef3-0f0cde399d70"
+    },
+    {
+      "claim_id": "d3621d85-c6cd-4ba1-9ae0-35d6ded6b2e1",
+      "result_id": "447bbe5e-541f-4f26-aef3-0f0cde399d70"
+    },
+    {
+      "claim_id": "c41da486-ca51-4627-b19a-88df9697b81f",
+      "result_id": "447bbe5e-541f-4f26-aef3-0f0cde399d70"
+    },
+    {
+      "claim_id": "28004845-5c80-4195-a3eb-57942d310a74",
+      "result_id": "447bbe5e-541f-4f26-aef3-0f0cde399d70"
+    },
+    {
+      "claim_id": "9d4d749e-0c70-4566-8c57-63c316e3234e",
+      "result_id": "447bbe5e-541f-4f26-aef3-0f0cde399d70"
+    },
+    {
+      "claim_id": "5dfc5d84-c5ca-4966-ae30-2f7c9452b6ab",
+      "result_id": "447bbe5e-541f-4f26-aef3-0f0cde399d70"
+    },
+    {
+      "claim_id": "d2f8def3-e93a-472c-8781-99164b86ca1f",
+      "result_id": "c10b572f-f629-4728-8d4b-32ac78734157"
+    },
+    {
+      "claim_id": "77f1bafa-2799-4d31-bdc8-86f1f34c180d",
+      "result_id": "c10b572f-f629-4728-8d4b-32ac78734157"
+    },
+    {
+      "claim_id": "05432848-cd09-4e07-8bc9-6bd250fb885f",
+      "result_id": "c10b572f-f629-4728-8d4b-32ac78734157"
+    },
+    {
+      "claim_id": "95d2db9a-a611-43a4-b511-8de665cc2b23",
+      "result_id": "bf181dfb-aaaf-46f0-bbcb-e4ee35d5bf5c"
+    },
+    {
+      "claim_id": "7d518a04-7ddd-4e53-ab8a-d09557363627",
+      "result_id": "bf181dfb-aaaf-46f0-bbcb-e4ee35d5bf5c"
+    },
+    {
+      "claim_id": "c74832f7-8f1d-49aa-befb-d95e9137d32d",
+      "result_id": "bf181dfb-aaaf-46f0-bbcb-e4ee35d5bf5c"
+    },
+    {
+      "claim_id": "3c3b80d4-7e1d-46be-a320-53e8f6541b16",
+      "result_id": "bf181dfb-aaaf-46f0-bbcb-e4ee35d5bf5c"
+    },
+    {
+      "claim_id": "5853bedb-e806-4a18-b806-699bd43c7f56",
+      "result_id": "bf181dfb-aaaf-46f0-bbcb-e4ee35d5bf5c"
+    },
+    {
+      "claim_id": "e48c3c93-151e-46c7-ae1a-c360700e6abc",
+      "result_id": "b6f4ba54-ef14-4d6c-ba46-532b4bb52fa7"
+    },
+    {
+      "claim_id": "fe69120e-a21d-45aa-8f1d-8b2272b9a96f",
+      "result_id": "b6f4ba54-ef14-4d6c-ba46-532b4bb52fa7"
+    },
+    {
+      "claim_id": "fc83c074-f78a-45f7-87df-d37d0128a66e",
+      "result_id": "b6f4ba54-ef14-4d6c-ba46-532b4bb52fa7"
+    },
+    {
+      "claim_id": "d203cae5-b6a4-4668-ad31-a2790045c5aa",
+      "result_id": "b6f4ba54-ef14-4d6c-ba46-532b4bb52fa7"
+    },
+    {
+      "claim_id": "aa12cee3-5bdf-4c75-af97-f00d8c1db5be",
+      "result_id": "b6f4ba54-ef14-4d6c-ba46-532b4bb52fa7"
+    },
+    {
+      "claim_id": "9d4b117b-48c3-4767-9dbd-39a7493245cb",
+      "result_id": "b6f4ba54-ef14-4d6c-ba46-532b4bb52fa7"
+    },
+    {
+      "claim_id": "46254e75-a694-4a16-8887-624570efa237",
+      "result_id": "b6f4ba54-ef14-4d6c-ba46-532b4bb52fa7"
+    },
+    {
+      "claim_id": "dba10566-f4a0-4cfa-a2fe-149ef959ad5e",
+      "result_id": "b6f4ba54-ef14-4d6c-ba46-532b4bb52fa7"
+    },
+    {
+      "claim_id": "79356183-9af5-4240-babf-8cfeacc3f795",
+      "result_id": "b6f4ba54-ef14-4d6c-ba46-532b4bb52fa7"
+    },
+    {
+      "claim_id": "aa6f5f6a-89ad-4adb-a013-81b62e72795d",
+      "result_id": "91e76343-c781-438c-8c02-98326be5e372"
+    },
+    {
+      "claim_id": "b2bec1a2-59bf-4c0c-a39c-5206ce5d1b52",
+      "result_id": "91e76343-c781-438c-8c02-98326be5e372"
+    },
+    {
+      "claim_id": "bfb3710f-184c-443f-89e6-01986d42cc55",
+      "result_id": "91e76343-c781-438c-8c02-98326be5e372"
+    },
+    {
+      "claim_id": "51b281c2-d7c7-4e4c-8621-6119f4401294",
+      "result_id": "91e76343-c781-438c-8c02-98326be5e372"
+    },
+    {
+      "claim_id": "cff9565c-7e6b-4709-aa69-3179369981f4",
+      "result_id": "91e76343-c781-438c-8c02-98326be5e372"
+    },
+    {
+      "claim_id": "b7cb5c47-e942-41ae-9f1d-2f65b15de5e8",
+      "result_id": "91e76343-c781-438c-8c02-98326be5e372"
+    },
+    {
+      "claim_id": "e0983a2c-4c12-45f8-aac9-e825a0f2a98a",
+      "result_id": "91e76343-c781-438c-8c02-98326be5e372"
+    },
+    {
+      "claim_id": "d27da416-903d-45bc-ad16-91046a6af7d0",
+      "result_id": "91e76343-c781-438c-8c02-98326be5e372"
+    },
+    {
+      "claim_id": "e887248d-670f-45a3-9b51-4e66e3ece17a",
+      "result_id": "91e76343-c781-438c-8c02-98326be5e372"
+    },
+    {
+      "claim_id": "e0f42c41-6081-4540-9acf-56f5ce14a148",
+      "result_id": "91e76343-c781-438c-8c02-98326be5e372"
+    },
+    {
+      "claim_id": "93b5f427-b476-41cd-b42d-baba45d092a0",
+      "result_id": "91e76343-c781-438c-8c02-98326be5e372"
+    },
+    {
+      "claim_id": "d911e1e1-2e63-4c67-b068-ff74915adf88",
+      "result_id": "91e76343-c781-438c-8c02-98326be5e372"
+    },
+    {
+      "claim_id": "368ba43f-1deb-4627-9203-c86cd6efd312",
+      "result_id": "91e76343-c781-438c-8c02-98326be5e372"
+    },
+    {
+      "claim_id": "878cc2b5-6e78-482c-a12c-f25eaca5e717",
+      "result_id": "91e76343-c781-438c-8c02-98326be5e372"
+    },
+    {
+      "claim_id": "e8009ae4-1281-4397-9769-da667a6468b5",
+      "result_id": "dec6145d-a91c-43e2-84ef-28d264acccfe"
+    }
+  ],
+  "comparisons": []
+}

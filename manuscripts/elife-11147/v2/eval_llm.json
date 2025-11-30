@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C23",
+      "C24",
+      "C26",
+      "C27"
+    ],
+    "result": "The siGOLD method enables identification of multiple peptidergic neurons in connectomes by immunogold labeling sparse sections with neuropeptide antibodies, followed by reconstruction from the entire aligned series. The method was demonstrated using 11 neuropeptide antibodies on a full-body larval ssTEM dataset of Platynereis, achieving both high ultrastructural detail and specific immunogold signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6, C23-C24, and C26-C27 collectively establish the core siGOLD methodology and its successful implementation. The experimental data in Figures 2-3 demonstrate specific labeling, the full-body dataset application (Figure 6) shows scalability, and the combination of ultrastructural preservation with immunolabeling is evidenced throughout. The method's key principle\u2014that neuropeptides' broad axonal distribution allows sparse section labeling\u2014is validated by consistent labeling across separated sections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Immunogold labeling with 11 neuropeptide antibodies showed strong, localized, and reproducible labeling in small subsets of neurites in the VNC. The same neurites were consistently labeled across consecutive sections and in grid pairs separated by ~50 sections. Gold particles were associated with dense core vesicles (DCVs), indicating labeling of mature neuropeptides within these vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C52 are strongly supported by the quantitative data in Figure 3 and high-resolution images in Figure 2. The specificity is demonstrated by the small number of labeled neurites (~1600 total profiles with only a few labeled per antibody), reproducibility across sections, bilateral symmetry of labeling patterns, and association of gold with DCVs. The quantification in Figure 3\u2014source data 1 provides comprehensive evidence for these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "DCVs were non-uniformly distributed in neurites, with some sections completely lacking DCVs. Gold labeling was only detected on sections that contained DCVs in the respective neurite.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by the DCV counts in Figure 3\u2014figure supplement 1 and the correlation analysis in Figure 3\u2014source data 1. The data demonstrate that gold labeling presence correlates with DCV presence, explaining why some sections of the same neurite lack labeling. This validates the method's dependence on DCV distribution and confirms that labeling reflects neuropeptide localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "siGOLD detected coexpression of FVa and PDF neuropeptides in a subset of neurites, and extensive overlap in labeling was observed for FMRFa, luqin, and RYa antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by the labeling data in Figure 3D showing coexpression patterns. The overlapping labeling of FMRFa, LUQ, and RYa antibodies is consistent with potential cross-reactivity to R[Y|F]amide peptides, as discussed in the morpholino validation experiments (C60-C61). This demonstrates siGOLD's capability to detect neuropeptide coexpression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Morpholino-mediated knockdown experiments validated antibody specificity for 8 out of 10 tested antibodies (FVa, FMRFa, ATO, FVRIa, PDF, RGWa, PENK, LEUC). The FMRFa antibody likely recognizes other RFa peptides in the head, and RYa and LUQ antibodies may cross-react with other R[Y|F]amide peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are supported by the morpholino knockdown data in Figure 4\u2014figure supplement 1. The reduction in IF signal for 8/10 antibodies validates their specificity. The partial specificity of FMRFa (head staining persists) and lack of knockdown effect for RYa and LUQ are acknowledged and explained by potential cross-reactivity, which is consistent with the overlapping labeling patterns observed in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The spatial arrangement of peptidergic axons in the VNC reconstructed by siGOLD was similar to that reconstructed by whole-mount immunofluorescence and image registration. The spatial relationships of neurites labeled with RGWa, PDF, and LEUC antibodies relative to FVa neurites were very similar between IF and siGOLD, and coexpression of FVa and PDF was detected by both methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are strongly supported by the comparison in Figure 5, which shows consistent spatial arrangements between siGOLD (Figure 5G-H) and IF (Figure 5A-F). The double-IF experiments (Figure 5I-J) provide direct validation of spatial relationships. Claim C66 about stereotypic anatomy is supported by citations. This cross-validation between independent methods strongly supports siGOLD specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C28"
+    ],
+    "result": "siGOLD was successfully applied to a whole-body EM series of 5056 sections from a 72 hpf Platynereis larva. Using 11 antibodies to label 154 sections (3% of total), 83 peptidergic neurons (67 with soma) were identified and traced. Sections were successfully labeled up to 3 years after sectioning, demonstrating long-term antigen stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 and C28 are supported by the data in Figure 6 and the detailed layer information in Figure 6\u2014source data 1. The successful identification of 83 neurons using only 3% of sections demonstrates the scalability and efficiency of siGOLD. The 3-year stability of antigens (C69) is a significant technical finding that enhances the method's practicality for large-scale projects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C29"
+    ],
+    "result": "Comparable cellular morphologies and positions were found for multiple neurons (six FVa, several PDF, two RGWa, four MIP) between siGOLD and IF. This anatomical correspondence supports the specificity of siGOLD and demonstrates that the method can unambiguously tag fully reconstructed neurons in serial EM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 and C29 are supported by the detailed reconstructions in Figures 8 and 9, which show morphological and positional correspondence between siGOLD-labeled neurons and IF-labeled neurons. The gold particle counts across multiple sections (shown in the figures) provide quantitative validation. This cross-method validation is critical evidence for siGOLD's accuracy and reliability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C7"
+    ],
+    "result": "The nuchal organs are paired putative chemosensory organs with sensory neurons projecting into an olfactory pit covered by cuticle and associated with motile cilia. Several sensory neurons of the nuchal organs (SNnuch) were strongly labeled by the PDF antibody, with 15 of 35 identified SNnuch cells showing PDF labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 and C7 are supported by the anatomical data in Figure 10A-C (SEM and TEM images) and the siGOLD labeling data in Table 2. The identification of PDF expression in nuchal organ neurons is a novel finding enabled by siGOLD. The anatomical descriptions are consistent with prior work (citations in C31, C74-C75) and the current EM observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C30"
+    ],
+    "result": "The nuchal organ sensory neurons connect most strongly to two pairs of INarc interneurons (receiving up to 22 synapses), which have unique biramous morphology and contralateral projections. These INarc neurons were previously shown to connect photoreceptors to motorneurons, representing a potential functional path linking nuchal organs to locomotion. Additional postsynaptic targets include two RGWa-expressing interneurons and 87 neurons receiving single synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 and C30 are supported by the connectivity analysis in Figure 10D-G and Figure 10\u2014figure supplement 2. The strong connectivity to INarc neurons (up to 22 synapses) versus weak connectivity to other neurons (87 with single synapses) supports the inference that INarc cells are functionally relevant targets (C83). The identification of RGWa-expressing postsynaptic interneurons (C81) demonstrates siGOLD's utility for circuit analysis. The connection to prior work on INarc neurons (C79) is properly cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C111"
+    ],
+    "result": "SNnuch presynaptic sites contained only DCVs (mean diameter 63 nm, S.D. = 8.4, n=100), distinguishable from classical neurotransmitter synapses by larger vesicle size and electron-dense cores. No classical neurotransmitters were detected in the nuchal organ region by in situ hybridization. These observations suggest SNnuch neurons signal via PDF-containing vesicles at peptidergic synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inference is well-supported by converging evidence, though it remains indirect without direct immunogold labeling of the synapses themselves. The authors appropriately acknowledge this limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The bilateral projection of nuchal organ sensory neurons is similar to Drosophila olfactory receptor neurons, which achieve lateralization through asymmetric neurotransmitter release. The nuchal organ circuit may use a similar computational strategy, likely different from visual information processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C91 involve comparative analysis and speculation about computational strategies. While C89 (similarity in projection patterns) is supported by the observed bilateral projections in Figure 10H-I, and C90 is properly cited, C91 is explicitly speculative (\"may use\"). The comparison is reasonable but lacks direct experimental evidence for the proposed computational mechanism in Platynereis. This represents hypothesis generation rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "An immunoEM procedure was established to label ultrathin sections with neuronal cell-type specific antibodies. The procedure used conventional serial TEM protocols (high-pressure freezing, osmium/uranyl acetate fixation, Epon embedding) but eliminated the etching step, which was observed to destroy ultrastructural integrity. ImmunoEM on sparse sections can identify neuron profiles containing the antigen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 describe the methodological development and are supported by the Materials and methods section and the successful results throughout the paper. The elimination of the etching step (C36-C37) is a protocol modification based on empirical observation. The core principle (C33) is validated by the entire dataset showing successful neuron identification from sparse labeling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C97",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "siGOLD relies on continuous series of sections allowing neurite tracing and is ideally used with markers that broadly label neuronal morphology. Neuropeptides are suitable because they are distributed along entire axons due to active circulation, show neuron-type specific expression, and have extreme stability (C-terminal amidation confers stability and high immunogenicity). Neuropeptide immunoreactivity remained stable for years after sectioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95, C97, and C20-C22 describe the rationale and requirements for siGOLD. These are supported by: (1) the successful tracing demonstrated throughout the paper (C93), (2) the properties of neuropeptides cited from prior work (C20-C22, C95), and (3) the empirical demonstration of long-term stability (C97, also C69). The logic connecting neuropeptide properties to method suitability is sound and validated by results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "siGOLD is compatible with conventional TEM using nickel grids, sectioning methods that collect ribbons on glass slides, and the ATUM method. However, siGOLD is not compatible with sectioning procedures that destroy sections, such as FIB-SEM or serial block-face methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 describe the technical compatibility of siGOLD with different EM methods. C100 is demonstrated by the methods used in this study. C101 is a reasonable inference supported by citations, as these methods preserve physical sections. C102 is a logical inference based on the requirement for physical sections that can be immunolabeled, and is supported by citations to the incompatible methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "siGOLD differs from array tomography and CLEM in several ways: it labels sparse sections with one marker each rather than every section with multiple markers, aims to tag and trace multiple neurons rather than profile individual synapses, uses direct immunoEM without image registration, provides full EM resolution, and allows use of arbitrarily many antibodies across a large series despite the inability to relabel sections after contrasting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C110 provide a comparative analysis of siGOLD versus other methods. These claims are supported by: (1) accurate descriptions of array tomography and CLEM based on citations and general knowledge (C103, C106), (2) demonstrated features of siGOLD throughout the paper (C104, C107, C108), (3) known limitations of EM (C109), and (4) logical inference about scalability (C110). The comparison is fair and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "siGOLD could potentially be adapted to other antibody markers (neurotransmitters, transporters, enzymes) and other organisms. In many organisms, neuropeptides are amidated and antibodies are available or could be generated. Some neuropeptide antibodies have been shown to work with immunoEM in other species (e.g., PDF in Drosophila). Cross-species antibodies could enable siGOLD in organisms without transgenic tools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98, C114, C118, and C119 are explicitly speculative (\"could in principle,\" \"could be adapted,\" \"is a promising approach\"). While C99, C115, C116, and C117 are supported by citations to prior work, the extension to other markers and organisms remains untested. The speculation is reasonable and well-grounded in the demonstrated principles and cited literature, but represents future possibilities rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C92",
+      "C112",
+      "C113"
+    ],
+    "result": "siGOLD enables direct overlaying of chemical neuromodulatory maps onto synaptic connectomic maps. The molecular information obtained provides an entry point for genetic investigation of circuits. In the Platynereis dataset, 83 peptidergic neurons out of ~2000 total were identified, and together with identified neuropeptide receptors, this opens possibilities for cellular-level analysis of peptidergic neurotransmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C92, C112, and C113 describe the utility and implications of siGOLD. C8 is demonstrated throughout the paper by the integration of molecular identity with connectivity data. C113 is a factual statement about the dataset. C92 and C112 are reasonable inferences about future research enabled by siGOLD, supported by the demonstrated capabilities and citation to neuropeptide receptor work. These represent valid conclusions about the method's utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Electron microscopy-based connectomics aims to map synaptic connections but current approaches are limited in assigning molecular identities to neurons. Comprehensive understanding of nervous system function requires knowledge of both connectivity and molecular expression. Wiring diagrams are incomplete without molecular information, particularly about neuromodulators that shape circuit output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C9, C10, and C11 establish the background and motivation for the study. These are supported by general knowledge in the field (C1, C9) and citations to established literature (C11). The assessment of current limitations (C2, C10) is accurate and provides appropriate context for the siGOLD method. These claims represent well-established knowledge and logical reasoning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Existing methods for assigning molecular identities in EM include genetically encoded tags (miniSOG, APEX, smGFPs) and array tomography with sequential immunofluorescence. However, transgenic approaches are limited to one or a few markers, and array tomography compromises membrane contrast. Epoxy resins like Epon are favored for large-scale projects but compromise immunogenicity of many targets, except short amidated neuropeptides which show good immunopreservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C19 provide a comprehensive review of prior methods and their limitations, all supported by appropriate citations. These claims accurately represent the state of the field and identify the specific gap (need for multiplex molecular identification in Epon-embedded samples) that siGOLD addresses. The exception for neuropeptides (C19) is the key insight that enables the siGOLD approach.",
+    "result_type": "MINOR"
+  }
+]

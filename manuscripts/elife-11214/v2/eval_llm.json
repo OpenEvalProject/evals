@@ -1,0 +1,372 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C50",
+      "C51",
+      "C55",
+      "C56",
+      "C70",
+      "C74",
+      "C134"
+    ],
+    "result": "The authors developed novel algorithms to address specific challenges in dense tissue reconstruction, including a Bayesian foreground/background discrimination (BFBD) de-noising algorithm, a Bayesian algorithm for stitching damaged tissue sections, active mesh tuning for accurate segmentation, and a probabilistic algorithm for nuclei splitting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 demonstrate the BFBD algorithm outperforms standard methods with quantitative comparisons (Figure 1\u2014figure supplement 4-5). Claims C55-C57 describe the Bayesian stitching algorithm with validation showing close match to manual detection. Claims C70, C74-C75 describe novel segmentation approaches with >90% accuracy on validation data. The algorithms address identified technical challenges (C24-C25, C49, C54, C72) with appropriate validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C133",
+      "C135"
+    ],
+    "result": "The implementation provides a flexible, scalable workflow implemented as freely available stand-alone software that overcomes critical bottlenecks in tissue reconstruction including automation, accuracy, and throughput.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C133 describe specific capabilities (flexibility, scalability, high-throughput compatibility, computational efficiency). C26 and C135 confirm the software is freely available. The claims about overcoming bottlenecks are supported by the demonstrated performance metrics throughout the paper (e.g., C75, C86-C87, C99-C103), though actual throughput benchmarks are not quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C27",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The authors established a comprehensive workflow for multi-resolution confocal imaging of mouse liver tissue, including tissue preparation protocols, multi-resolution imaging strategy (1 \u03bcm and 0.3 \u03bcm per voxel), and specific staining protocols for key tissue structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C48 provide detailed methodological descriptions of the imaging workflow with specific technical parameters. C41-C42 describe trans-cardial perfusion fixation as essential for tissue preservation. C39-C40 specify the multi-resolution approach with exact voxel dimensions. The workflow is demonstrated to work effectively in the subsequent reconstruction results (C64, Figure 2E, Video 1).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The authors developed methods for reconstructing multi-scale tissue images from serial sections, including 3D mosaicking using normalized cross-correlation, vessel-based section alignment, and hierarchical registration of high-resolution images within low-resolution models, achieving reconstruction of ~1300 \u00d7 1300 \u00d7 600 \u03bcm tissue volumes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 describe the mosaicking approach with methodological justification. C58-C61 detail the section alignment strategy using vessel segmentation. C62-C63 describe the hierarchical registration approach. C64 provides specific dimensions of the reconstructed volume with figure/video references. The methods are appropriate for the stated goals and demonstrated to work in practice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C145"
+    ],
+    "result": "The authors developed an improved segmentation approach for tubular networks combining local maximum entropy thresholding with active mesh tuning that aligns mesh vertices to maximum intensity gradients, improving accuracy over standard morphological operations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 identify the problem with initial LME segmentation and standard morphological operations. C70 describes the active mesh tuning solution with citation and figure reference. C145 states the improvement in accuracy. The approach is validated through benchmark testing (C99, C101) showing high F-scores and accurate radius measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C142",
+      "C143"
+    ],
+    "result": "The authors developed a probabilistic algorithm for splitting merged nuclei that achieved >90% accuracy on both synthetic and real 3D images, with performance comparable to recently published voxel-based methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 describe the algorithm and report >90% accuracy with figure reference showing validation results. C76 compares performance to published methods with citations. C142-C143 provide additional accuracy information and identify over-segmentation as the main error source. The validation includes both synthetic and real data, providing strong evidence for the claimed performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C154"
+    ],
+    "result": "The authors developed automated cell classification algorithms based on nuclear morphological features using LDA and BNC classifiers, achieving ~100% accuracy for hepatocyte recognition and 92.6-95.4% overall accuracy for all cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 describe the classification approach. C85 details the training set (2301 nuclei, 74 parameters). C86-C88 report specific accuracy values with comparison to previous work. C154 confirms comparable performance between methods. The accuracy claims are supported by confusion matrices (Figure 3\u2014figure supplement 3A,B) and leave-one-out cross-validation, though independent test set validation is not explicitly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Cell type quantification revealed hepatocytes as the largest population (44.6% \u00b1 2.7%), followed by sinusoidal endothelial cells (29.8% \u00b1 2.5%), with unexpected findings that stellate cells (11.2% \u00b1 1.0%) were more abundant than Kupffer cells (8.7% \u00b1 0.7%), contrary to previous 2D estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 report specific cell population percentages with error estimates (mean \u00b1 SEM). C90 explicitly notes the finding contradicts previous literature with citation. The measurements are derived from the validated classification algorithms (C86-C88) applied to reconstructed tissue. The discrepancy with previous work is acknowledged and could reflect differences between 2D and 3D analysis methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors developed a cell segmentation method using active mesh expansion from nuclei with correction for bi-nucleated cells, achieving ~2% error rate for hepatocyte segmentation based on manual validation of 2559 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 describe the segmentation approach and solution to over-segmentation of bi-nucleated cells. C95 reports validation results with comparison to state-of-the-art methods. The ~2% error rate is based on manual checking of a substantial number of cells (2559), providing reasonable validation, though the criteria for determining errors are not fully specified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C28",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors created a benchmark dataset of realistic synthetic 3D liver tissue images (0.3 \u03bcm \u00d7 0.3 \u03bcm \u00d7 0.3 \u03bcm per voxel) with ground truth models and validated their pipeline achieving F-scores of 0.90 \u00b1 0.04 (sinusoids), 0.73 \u00b1 0.06 (BC), 0.91 \u00b1 0.03 (nuclei), and 0.92 \u00b1 0.03 (cells), with radius measurements within ~10% of ground truth and ~5% error in cell volume estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 describe benchmark creation and availability. C99-C103 report comprehensive validation metrics with error estimates across different signal-to-noise ratios. The benchmark includes realistic artifacts (uneven staining, PSF effects, Poisson noise) as described in methods. The validation is thorough and quantitative, though the F-score for BC network (0.73) is notably lower than other structures, suggesting this remains a challenging target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C106",
+      "C107",
+      "C108",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Application to liver tissue from three adult mice revealed sinusoid radius of 4.0 \u00b1 1.1 \u03bcm (consistent with EM measurements), branching angles of 111.6\u00b0 \u00b1 12.37\u00b0 for sinusoids and 110.36\u00b0 \u00b1 9.85\u00b0 for BC networks (differing substantially from previous reports of 32\u00b0), and network parameters that appear more accurate than recent publications based on internal consistency checks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104, C106-C108 report specific measurements with error estimates and comparisons to literature. C149-C151 note discrepancies with previous work and provide internal consistency validation (Table 2 showing Vc/Vs ratio near 1.0 for their data vs. 2.55 for Hammad et al.). The measurements are derived from validated reconstruction methods. The large discrepancy in branching angles (112\u00b0 vs. 32\u00b0) is substantial and the authors appropriately discuss possible explanations (C152-C153), though definitive resolution would require additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Analysis revealed multi-modal hepatocyte volume distributions with both mono- and bi-nucleated populations showing two sub-populations each, and surprisingly, some mono-nucleated hepatocytes having volumes comparable to bi-nucleated hepatocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 describe volume distribution findings with specific mean volumes and percentages for each population (Figure 4A-C). C110 notes consistency with previous work on isolated hepatocytes. C112 explicitly identifies the surprising finding. The distributions are well-characterized statistically with mixture model fitting. The finding challenges assumptions about cell size and nucleation, though the biological interpretation requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "DAPI integral intensity analysis revealed three peaks corresponding to 2n, 4n, and 8n DNA content, with bi-nucleated hepatocytes showing matched DNA content between nuclei (<1% with mismatched content), suggesting hepatocyte volume depends on polyploidy rather than nuclei number. Seven hepatocyte populations were identified (2n, 4n, 8n, 16n mono-nuclear and 2\u00d72n, 2\u00d74n, 2\u00d78n bi-nuclear), with four major populations representing ~97% of cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C119 describe DNA content analysis with specific findings. C114 interprets peaks in context of literature with appropriate caveats about aneuploidy. C115-C116 report the matched DNA content in bi-nucleated cells with quantitative data (Figure 4\u2014figure supplement 2C,D). C117 draws conclusion supported by citation. C118-C119 report classification results. The analysis is systematic and quantitative, though the DAPI intensity normalization across samples (described in methods) introduces some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C137",
+      "C159"
+    ],
+    "result": "The platform uncovered an unexpected zonation pattern of hepatocytes with different size, nuclei and DNA content within the liver lobule, with 2n mono-nucleated and 2\u00d72n bi-nucleated hepatocytes enriched in CV and PV regions, 4n mono-nucleated showing homogeneous distribution, and 2\u00d74n bi-nucleated enriched in the middle region\u2014the first report of zonated polyploidy and poly-nuclearity following a specific pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C126 describe specific spatial distribution patterns with figure reference (Figure 5). C127 claims novelty of the finding. C6, C137, C159 summarize the discovery. The spatial analysis is quantitative and systematic across the CV-PV axis. The finding is novel and addresses controversial literature (C120-C121). However, the biological mechanism and functional significance remain speculative (C160-C161), and validation in additional animals beyond the three analyzed would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The pipeline proved effective for analyzing lung and kidney tissues without parameter fine-tuning, with measurements consistent with previous literature (lung alveolar cells ~19% volume, kidney proximal tubule cells larger than distal), demonstrating generality and robustness across tissues with different architectures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C131 report application to lung and kidney with specific measurements consistent with literature (citations provided). C132 concludes about versatility. The demonstration on two additional tissues with different architectures without parameter adjustment supports the generality claim. However, the analysis of lung and kidney is less comprehensive than liver (fewer quantitative results presented), and the claim of \"robustness\" would be strengthened by more extensive validation on these tissues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Analysis revealed that nuclear texture parameters (e.g., moments of lacunarity) were more informative for cell type discrimination than traditionally considered parameters like nuclear size and roundness, and that active mesh-based cell shape estimation enabled discrimination of volume distribution peaks that failed with Voronoi tessellation approximation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C157 report unexpected findings about feature importance and method comparison. C155 contrasts findings with traditional assumptions and cites previous work. C157 compares to alternative method with citation. The findings are derived from the validated classification analysis (C86-C88) and demonstrate the value of the computational approach. However, C157 notes Voronoi comparison data are \"not shown,\" limiting full evaluation of that claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The spatial distribution of hepatocytes by ploidy correlates with metabolic zonation, suggesting a possible role of polyploidy in regulating hepatocyte functions, with identified populations potentially corresponding to recently reported stem cell-like populations near CV and PV, inspiring future mechanistic studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C160-C161 propose correlation and functional hypothesis. C163-C164 connect findings to recent literature on stem cells with citations, though C164 uses tentative language (\"could correspond\"). C165 discusses future research directions. While the spatial correlation is well-documented (C122-C126), the functional interpretation and connection to stem cell populations are speculative. The correlations are interesting and hypothesis-generating, but causality and mechanism are not established. This represents interpretation and future directions rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C15",
+      "C17",
+      "C138",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Accurate 3D digital reconstruction of tissue structure across multiple scales is a prerequisite for systems biology analysis and development of quantitative functional models, requiring geometrical models that represent cells and subcellular components, which can serve as tools for extracting structural information and uncovering fundamental rules of tissue organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C10 establish the foundational requirements with citations to previous work. C15, C17, C138 identify the unmet need and challenges. C166-C168 discuss the value of geometrical models. These claims represent well-established knowledge in the field (supported by multiple citations) and provide appropriate context for the work. The claims are conceptual/motivational rather than novel findings, but accurately represent the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C16",
+      "C19",
+      "C20",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Substantial limitations exist in tissue reconstruction including marker availability (4-5 simultaneous fluorescent markers), inhomogeneous staining in dense tissues (limited to ~100 \u03bcm thickness), artifacts from sectioning (bending, damage), and inability of existing software to handle these problems, requiring development of new algorithms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 identify general limitations with citations. C16, C19-C20, C22-C25 describe specific technical challenges. These represent accurate characterization of known problems in the field, supported by citations and the authors' own observations. The claims provide appropriate justification for the need for new methods. C25's claim that existing software \"is unable to deal with such problems\" is somewhat strong but is supported by the demonstrated need for novel algorithms (C54-C55).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C158"
+    ],
+    "result": "Liver tissue consists of lobules containing BC and sinusoidal networks between PV and CV, with known features including metabolic zonation, hepatocyte heterogeneity in nucleation and ploidy, and presence of stellate and Kupffer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36, C158 describe established anatomical and biological features of liver tissue, all supported by citations to previous work. These represent accurate background knowledge that provides context for the study. The claims are well-established facts rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C169"
+    ],
+    "result": "Measurement of specific tissue parameters (BC and sinusoid diameters, network cardinality, cell volume and shape) can potentially serve as diagnostic markers of early tissue dysfunction/repair, providing new tools for clinical research and drug development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C169 proposes potential clinical applications. This is speculative and represents future possibilities rather than demonstrated results. No clinical validation or disease model data are presented. While the measurements are accurate and could potentially be useful clinically, this application remains hypothetical and would require substantial additional work to validate.",
+    "result_type": "MINOR"
+  }
+]

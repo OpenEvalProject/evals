@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The canonical cotranslational model of membrane protein topogenesis, which posits that topology is established during translation by sequential TMD integration, is inconsistent with experimental observations of EmrE. Specifically, mutations to C-terminal loops affect the final topology, suggesting long-range effects on previously-translated TMDs that contradict the cotranslational model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C10-C12 establish the canonical model and its challenge by dual-topology proteins. Claims C17-C19 provide the key experimental observation that C-terminal mutations affect topology, which is logically inconsistent with the cotranslational model. These claims are well-supported by citations to prior experimental work (Sepp\u00e4l\u00e4 et al., 2010; Rapp et al., 2006, 2007).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C22",
+      "C23",
+      "C24",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C108"
+    ],
+    "result": "The authors propose a novel mechanism of 'kinetic annealing of the end-of-translation ensemble' in which EmrE proteins exhibit incomplete TMD integration at the end of translation, followed by post-translational loop-flipping events that determine the final topology. The fully integrated topology is determined by the position of the slowest-flipping loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C22-C24 present the core findings from simulations. Claims C63-C66 and C68 describe the two-step mechanism in detail. Claim C108 summarizes the key finding. The mechanism is well-supported by extensive simulation data (Figures 3-7) showing misintegration, loop-flipping kinetics, and correlation between EOT ensemble and final topology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The coarse-grained computational model used in this study represents EmrE with appropriate structural features (4 TMDs, 5 loops) and captures key physicochemical properties including hydrophobicity differences, charge distributions, and translocon interactions. The model parameters are justified by prior work and robustness tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C42 describe the model construction, parameterization, and validation. The model design is justified by citations to prior work (Zhang and Miller, 2012a; Staple et al., 2008) and structural data. Robustness tests (C40-C42) demonstrate that results are insensitive to modeling choices for negative charges, TMD1 hydrophobicity, and loop length.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The simulations correctly predict the dominant topology for 15 of 16 EmrE mutants studied experimentally, with a Pearson correlation coefficient of r = 0.92 between simulated and experimental topology distributions. This agreement validates that the coarse-grained model captures essential features of topogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 present quantitative comparisons with experimental data from Sepp\u00e4l\u00e4 et al. (2010). The high correlation (r = 0.92) and correct prediction of dominant topology for 15/16 mutants (Figure 2) provide strong validation. Claim C53 draws the appropriate inference that the model captures essential molecular features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C62"
+    ],
+    "result": "The cotranslationally-biased (CB) mutant exhibits rapid, near-complete TMD integration during translation (>90% within 3s), consistent with the cotranslational model. In contrast, EmrE and its mutants show slow post-translational integration (hundreds of seconds) due to incomplete TMD integration at the end of translation, with TMD1 and TMD4 integrating least efficiently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 present simulation results from Figure 3A-B showing distinct integration kinetics for CB vs EmrE mutants. Claim C62 identifies specific TMDs with low integration efficiency, consistent with their hydrophobicity and flanking charges. The data clearly demonstrate the difference between cotranslational (CB) and post-translational (EmrE) integration mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C69",
+      "C70"
+    ],
+    "result": "Charge mutations to soluble loops significantly shift the distribution of loop positions in the end-of-translation (EOT) ensemble. Adding positive charges to a loop increases its cytoplasmic localization due to electrostatic interactions with the translocon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C69 describe the effect of charge mutations on loop positions, supported by simulation data in Figure 5 and citations to prior work (Goder et al., 2004; Zhang and Miller, 2012a). Claim C70 concludes that translocon/ribosome/membrane interactions significantly affect the EOT ensemble. The results are consistent with known electrostatic effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Loop-flipping frequency decreases with increasing loop charge, with highly-charged loops flipping orders of magnitude more slowly than uncharged loops. Terminal loops (L1, L5) flip more slowly than intermediate loops (L2-L4). Loop-flipping is not strongly concerted, but is influenced by neighboring TMD orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C81 present detailed analysis of loop-flipping kinetics from simulations (Figure 6). The physical basis (C71) is sound. Quantitative results (C73-C80) show clear trends with charge and position. The finding that misintegrated neighboring TMDs increase flipping frequency (C77-C78) provides mechanistic insight. Data support all claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "There is strong correlation (R\u00b2 = 0.85) between the position of the slowest-flipping loop in the EOT ensemble and its position in the fully integrated topology. This indicates that the final topology is essentially determined at the end of translation, despite post-translational annealing taking hundreds of seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 present the key correlation analysis from Figure 7A. The high R\u00b2 value demonstrates strong predictive power of the EOT ensemble for final topology. This is a central result supporting the proposed mechanism. The statistical analysis is appropriate and the conclusion (C84) is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The predicted distribution of protein topologies is robust with respect to possible protein degradation on timescales of 5-100 seconds. The topology distribution remains nearly constant across this range, preserving the correlation between EOT ensemble and final topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 establish relevant degradation timescales from literature (2-30 min). Claims C88-C89 present robustness analysis from Figure 7B showing that topology distributions are stable across degradation times. This addresses a potential concern about the biological relevance of the slow integration kinetics observed in simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The proposed mechanism explains key experimental observations including the topogenic effect of C-terminal mutations, partial topological rearrangements observed experimentally, and deviations from the positive-inside rule (e.g., K3 mutant).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 connect the proposed mechanism to experimental observations. C90 explains C-terminal effects (Sepp\u00e4l\u00e4 et al., 2010), C91 agrees with recent rearrangement data (Woodall et al., 2015), and C92 explains positive-inside rule violations using simulation results for K3. The mechanism provides a unified explanation for diverse experimental findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The mechanism predicts that mutations to translocon charges will significantly affect EmrE topology by altering the EOT ensemble, while changes in translation rate will have minimal effect. Specifically, removing translocon charges is predicted to reverse the dominant topology for two EmrE mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 and C105-C107 present experimentally testable predictions from Figure 8. The prediction that translation rate has minimal effect (C94-C95) is supported by simulation data. The prediction that translocon charge mutations will reverse topology for specific mutants (C96-C97) is a strong, specific prediction. These are appropriate predictions from the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The coarse-grained model lacks membrane asymmetry features that would favor one topology under thermodynamic equilibrium. Topology prediction arises from kinetic control via the EOT ensemble and available kinetic pathways, not thermodynamic equilibration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 clarify that the mechanism is kinetic rather than thermodynamic. C99-C100 describe model features, C101 explains how topology is predicted, and C102 distinguishes from thermodynamic models. This is an important conceptual point that is well-explained and consistent with the simulation design and results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "While direct comparison of simulation and experimental timescales is limited by model accuracy and neglect of chaperone proteins, the topological predictions are robust because they depend on which loop flips slowest rather than absolute timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 acknowledge model limitations while arguing for robustness of conclusions. This is a fair assessment - the relative ordering of loop-flipping rates is likely more reliable than absolute rates. The argument is supported by the robustness analysis in Figure 7B showing topology distributions are stable over time.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The simulation protocol models translation by adding beads at 125 ms intervals (24 residues/s), maintains ribosome-translocon binding throughout, and assumes topology becomes irreversible upon full integration. A total of 4000 trajectories were performed across 16 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 describe the simulation protocol. The translation rate (C44) is based on experimental measurements (Bilgin et al., 1992). The assumption of irreversibility (C46) is justified by citations to dimerization (C47) and degradation (C48) processes. The computational effort (C49) is substantial and appropriate for statistical analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The authors speculate that other integral membrane proteins may exhibit a combination of cotranslational and post-translational integration behaviors, and that chaperone proteins like YidC or Sec62 may facilitate the annealing of misintegrated configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C111 present speculation about generality to other IMPs and connection to chaperone function. While supported by citations to diverse systems (C110) and chaperone studies (C111), these remain speculative hypotheses requiring experimental validation. The speculation is reasonable but not directly tested in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The dominant cotranslational integration pathway for EmrE TMDs is 'channel-sliding', consistent with prior CG and atomistic simulations. The 'interface-sliding' pathway is rare, and pathway dominance may depend on IMP sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 analyze integration pathways from Figure 3\u2014figure supplement 1. The dominance of channel-sliding (C112) is clearly shown in the data and consistent with prior simulations (C113-C114). The speculation about sequence-dependence (C116) is reasonable. This provides mechanistic detail about the integration process.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "The authors suggest that the post-translational annealing mechanism may have generality beyond EmrE based on examples of post-translational topological changes in diverse multispanning IMP systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C25 suggests generality based on citations to other systems showing post-translational changes. While the citations support that such changes occur in other proteins, whether they follow the same kinetic annealing mechanism proposed here is not established. This is a reasonable speculation but requires further investigation.",
+    "result_type": "MINOR"
+  }
+]

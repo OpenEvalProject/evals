@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Freely swimming larval zebrafish exhibit structured spontaneous turning behavior characterized by alternating sequences of repeated turns in the same direction (streaks), with fish chaining together turns biased in the same direction for approximately 6 seconds on average. This behavior significantly deviates from a random walk model, with 45% of bouts occurring in streaks of 5 or longer and 14% in streaks of 10 or longer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C16 collectively provide strong statistical evidence for structured turning behavior in freely swimming fish. The data include quantitative measurements of bout frequency (C9), turn sequences (C10), statistical comparisons to random models (C11, C12), and detailed streak length distributions (C13-C15). The statistical tests show significant differences from random walk models (C11, C12, C16), with appropriate sample sizes (N=19 fish) and p-values reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C91"
+    ],
+    "result": "Fictively behaving zebrafish (paralyzed fish with motor nerve recordings) exhibit behavioral sequences similar to freely swimming fish, with comparable chains of unilateral turns and temporal structure. While fictive swim frequency is slightly slower (1.4-2.4 fold difference), the large overlap in inter-bout interval distributions indicates that fictive behavior is sufficiently similar to freely swimming fish to allow analysis of concurrent neural signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 and C91 demonstrate that the fictive preparation preserves the essential behavioral structure needed for neural analysis. The comparison includes quantitative metrics (C18), distributional overlap (C19), and explicit validation that behavioral properties persist (C17, C20). The authors acknowledge differences but provide statistical evidence that these are modest enough not to compromise the validity of neural recordings (C91). The validation is further supported by Figure 1\u2014figure supplement 2 showing technical verification of turn decoding accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Whole-brain light-sheet imaging at ~2 Hz identified the anterior rhombencephalic turning region (ARTR) as a bilaterally symmetric neural population (60\u00b17 medial neurons and 33\u00b12 lateral neurons per hemisphere) in the anterior hindbrain whose activity is tightly coupled to spontaneous turning behavior. ARTR dynamics are highly antiphasic, with ipsilateral activation during turns followed by slow decay over 5-10 seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C21-C29 provide comprehensive characterization of the ARTR through whole-brain imaging. The technical specifications are clearly stated (C21), anatomical consistency is validated across fish using registration algorithms (C22), and the functional properties are quantified (C24-C29). Cell counts are provided with error estimates (C26-C27), and temporal dynamics are characterized (C28-C29). The stereotypy across fish (Figure 2E) and the tight coupling to behavior provide strong support for the ARTR as a functionally relevant population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Brain-wide functional mapping revealed that the most prominent directionally tuned neurons are located in the hindbrain, particularly in the ARTR (rhombomeres 2-3), with additional tuning in rhombomeres 4-6, inferior olive, and reticulospinal system. The ARTR exhibits stronger directional tuning, greater predictive power for future turns, and slower temporal dynamics compared to Rh4-6, suggesting the ARTR is more involved in slow behavioral dynamics while Rh4-6 is more involved in direct motor output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 provide systematic comparison of functional properties across brain regions. The anatomical localization is well-documented (C30-C33), and quantitative comparisons between ARTR and Rh4-6 are provided with statistical support (C34-C36, Figure 3\u2014figure supplement 3). The inference about functional roles (C37) is appropriately qualified as speculative but is based on the observed differences in temporal dynamics. The weaker signals in other regions (C33) are also documented, providing comprehensive brain-wide context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The inferior olive (IO) shows strong directional tuning but projects only to the contralateral cerebellum. While directional tuning with flipped laterality is observed in the cerebellum, this signal is only weakly tuned to behavior, suggesting the IO-Cb circuit may be less directly related to turn patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 provide a logical analysis of the IO-Cb circuit's potential role. The anatomical projection pattern (C38) is based on established literature with appropriate citations. The functional observations (C39-C40) are supported by imaging data (Figure 3D). The inference about reduced relevance to turn patterns (C41) is appropriately qualified and follows logically from the weak tuning observed. This represents a negative result that helps focus attention on the ARTR.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Unilateral laser ablation of the ARTR causes fish to turn more frequently toward the intact side (18\u00b14% shift, p=0.031 for both left and right ablations, N=6-7 fish), while sham ablations show no effect (p=0.438, N=5). Turn magnitude remains unchanged after ablation, suggesting the ARTR regulates the choice of turning direction rather than mediating turn kinematics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 provide strong causal evidence for ARTR function through ablation experiments. The experimental design includes appropriate controls (sham ablations, C45), adequate sample sizes, and significant p-values (C43-C44). The observation that turn magnitude is unchanged (C47) while turn bias is affected provides important mechanistic insight. The inference about ARTR function (C48) is well-supported by the dissociation between direction choice and turn kinematics. However, only ~32% of medial ARTR neurons were ablated, which could be noted as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C4",
+      "C5"
+    ],
+    "result": "ARTR ablation reduces the temporal correlations in turn direction, making turn sequences more similar to biased random walks (coin flips) than in intact fish. The normalized root-mean-square error between observed and random model streak distributions significantly decreases after ablation (p=0.027, N=13 fish), indicating the ARTR is part of a circuit implementing temporally correlated turning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51, C4-C5 demonstrate that ARTR ablation affects the temporal structure of behavior, not just overall bias. The statistical approach comparing streak distributions to matched random models is appropriate and well-described. The significant reduction in NRMSE (C50) provides quantitative evidence for reduced temporal correlations. The inference that ARTR is part of a circuit generating temporal correlations (C51, C5) is well-supported by this data combined with the ablation effects on turn bias. This is a key result linking the ARTR to the structured behavior described in Result 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C3"
+    ],
+    "result": "Optogenetic stimulation of ARTR cells increases ipsilateral turns by 29\u00b19% (p=0.002-0.004, N=7 fish), independent of whether medial or lateral clusters are stimulated. This effect is corroborated by electrical stimulation experiments, demonstrating functional connectivity to downstream motor circuitry. Unlike ablation, stimulation of medial clusters increases turn magnitude (p=0.010-0.036), suggesting either ARTR can bias turn magnitude or there is spillover to downstream circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C59 and C3 provide complementary causal evidence through gain-of-function experiments. The optogenetic stimulation shows consistent effects across different ARTR clusters (C55) with appropriate statistical support (C53-C54). The corroboration with electrical stimulation (C56, Figure 4\u2014figure supplement 1B-D) strengthens the conclusion. The difference between ablation and stimulation effects on turn magnitude (C58-C59) is acknowledged, with appropriate speculation about potential explanations. The overall conclusion about ARTR biasing swim direction (C3) is well-supported by both loss- and gain-of-function experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C6"
+    ],
+    "result": "The medial ARTR clusters are glutamatergic while lateral clusters are primarily GABAergic. Anatomical tracing reveals that lateral GABAergic clusters project contralaterally toward both ARTR clusters, while medial glutamatergic clusters do not cross the midline. This anatomy is suggestive of a mutually inhibitory circuit motif that could mediate the antiphasic activation necessary for patterning directional motor output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C65 and C6 provide anatomical evidence for circuit organization. The neurotransmitter identity is established through double transgenic imaging (C60-C61, Figure 5A) and confirmed with immunohistochemistry (Figure 5\u2014figure supplement 1C). The projection patterns are documented through PA-GFP tracing (C62-C63, Figure 5B). However, the authors appropriately acknowledge that tracing cannot prove synaptic connectivity (C64), and the inference about mutual inhibition (C64-C65, C6) is appropriately qualified as \"suggestive.\" The anatomical data are consistent with the functional observations of antiphasic activity but do not definitively prove the circuit mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C7"
+    ],
+    "result": "Medial ARTR projections descend into the medial longitudinal fasciculus (MLF) and are visible adjacent to reticulospinal neurons RoV3 and RoM3, with some neurites terminating in the inferior olive. This provides suggestive evidence for ARTR projections to premotor neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 and C7 document potential output pathways from the ARTR. The anatomical tracing clearly shows projections near reticulospinal neurons (C67, Figure 5D), and the citation about RoV3 directional tuning (C68) provides functional context. However, as with the mutual inhibition claim, the authors appropriately qualify this as \"suggestive evidence\" (C7) since proximity does not prove functional connectivity. Additional experiments (e.g., electrophysiology, electron microscopy) would be needed to confirm synaptic connections. The claim is well-supported as anatomical observation but appropriately cautious about functional implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Both ARTR and ventral spinal projection neurons (vSPNs) are directionally tuned, but the ARTR exhibits slower dynamics in fluorescence signals compared to vSPNs, suggesting different roles in the motor control hierarchy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 provide comparative analysis of temporal dynamics between ARTR and premotor neurons. The directional tuning of both populations is documented (C69, Figure 5\u2014figure supplement 2A), and the difference in temporal dynamics is quantified (C70, Figure 5\u2014figure supplement 2B-E). The authors appropriately note that calcium imaging may not fully reflect spiking dynamics and suggest future voltage imaging or electrophysiology. This comparison helps position the ARTR in the motor control hierarchy relative to more direct motor output neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C102"
+    ],
+    "result": "The ARTR is activated during both spontaneous turning and the optomotor response (visually-driven behavior), suggesting this brain area subserves multiple behaviors. The ARTR responds to whole-field motion, and turns in the direction of motion persist after visual stimuli disappear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 and C102 demonstrate that ARTR function is not limited to spontaneous behavior. The activation during optomotor response is documented (C71, Figure 5\u2014figure supplement 3), and the persistence of turning bias after stimulus offset (C102) suggests the ARTR may integrate sensory information into its dynamics. The inference that ARTR subserves multiple behaviors (C72) is appropriately qualified and supported by the data. This finding is important for understanding the broader functional role of the ARTR but is somewhat tangential to the main focus on spontaneous behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C8",
+      "C107"
+    ],
+    "result": "Computational modeling using a two-state Markov model shows that correlated turning strategies cover restricted areas more efficiently than random turning and reduce diffusion into faraway regions. This suggests the observed turn sequences may underlie efficient exploration of local environments when external cues are scarce, presenting advantages for both preventing rapid spatial diffusion into unknown territories and enabling efficient coverage of local areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79, C8, and C107 provide computational support for the ethological significance of the observed behavior. The Markov model successfully reproduces the behavioral statistics (C76, Figure 6\u2014figure supplement 1B-C), and simulations demonstrate advantages in local exploration efficiency (C77-C78, Figure 6C-F). The statistical analysis includes appropriate power calculations and multiple comparisons (Figure 6\u2014figure supplement 1E-H). However, the claims about ethological function (C74, C79, C8, C107) are appropriately qualified as speculative. The modeling demonstrates that the behavior *could* serve these functions but does not prove that this is the actual evolutionary or developmental reason for the behavior. The simulations make assumptions about resource distribution and detection radius that may not reflect natural conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors propose a mechanistic hypothesis for how the ARTR generates temporal correlations in turn direction: ARTR activity biases turn direction through subthreshold excitation of reticulospinal neurons; when a turn occurs in the biased direction, motor copy feedback re-activates the ipsilateral ARTR while suppressing the contralateral ARTR through inhibition; ARTR activity then decays slowly, continuing to bias turns in the same direction until spontaneous activity or decay allows switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C85 present a detailed mechanistic model, but this is explicitly stated as a hypothesis rather than demonstrated fact. While the model is consistent with the observed data (slow ARTR decay, antiphasic activity, GABAergic contralateral projections, glutamatergic projections to premotor areas), key elements remain unproven: (1) subthreshold vs. suprathreshold excitation of reticulospinal neurons is not demonstrated, (2) motor copy feedback is inferred but not directly shown, (3) the source of state switching (C85) is speculative. The authors appropriately acknowledge that synaptic connections need to be established and ARTR dynamics need to be characterized with electrophysiology. This represents a well-reasoned hypothesis that integrates the data but requires substantial additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Comprehensive whole-brain imaging was crucial for discovering the ARTR circuit, as the near-complete coverage ensures that neurons with relevant response properties are likely to be identified without a priori hypotheses. The identified ARTR cells are likely the primary neurons consistently involved in generating directional behavior, though the ARTR may be part of a larger circuit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 discuss the methodological advantages and limitations of the approach. The value of whole-brain imaging for unbiased discovery is well-argued (C86-C87), with appropriate citations to technical papers. The claim that ARTR cells are \"likely to be the primary set\" (C88) is supported by their stereotypy across fish and strong functional properties, though the authors appropriately acknowledge the possibility of additional circuit components (C89). This represents a balanced assessment of what can and cannot be concluded from the imaging approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Differences between freely swimming and fictive (tethered) behaviors are usually present but often small enough to allow study of related neural activity. In this study, the essential properties of turning behavior persist in fictive conditions despite a 1.4-2.4 fold difference in swim frequency, allowing analysis of underlying neural signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 address an important methodological consideration. The general principle (C90) is supported by citations to relevant literature on tethered preparations. The specific validation for this study (C91) is supported by the behavioral comparisons in Figure 1 and Figure 1\u2014figure supplement 4. The authors acknowledge the differences but provide evidence that they are modest enough not to compromise the validity of the neural recordings. This represents appropriate validation of the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The mesencephalic locomotor region (MLR) identified in other vertebrates has not yet been found in larval zebrafish, though the nucleus of the medial longitudinal fasciculus (nMLF) regulates swimming and is routinely correlated with spontaneous swimming. The ARTR does not initiate the command for motion but exerts a bias on swim bout direction, occupying a position complementary to canonical motor control centers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 position the findings in the context of known motor control systems. The statements about MLR in other species (C92) and nMLF in zebrafish (C93-C94) are appropriately cited. The observation that nMLF correlates with swimming (C95) is supported by the imaging data (Figure 3E, Figure 3\u2014figure supplement 2). The speculation about additional mesencephalic cells being part of the zebrafish MLR (C96) is appropriately qualified. The interpretation that ARTR biases direction rather than initiating motion (C97-C98) is well-supported by the lack of change in swim frequency during ARTR stimulation (Figure 4\u2014figure supplement 1A). This provides important context for understanding ARTR function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The ARTR may be involved in multiple functions beyond spontaneous turning, potentially integrating with sensory systems in feature-poor environments while being overridden by stronger sensory cues. The ARTR may coordinate multiple motor patterns including eye movements and phototaxis. The circuit is likely supported by other neurons and regions, and its function may be to guide animals through environments where external cues are lacking. Future work could investigate whether the turning strategy adapts to environmental or internal state changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C112 present extensive speculation about broader ARTR functions and future directions. While some observations support multifunctional roles (C71-C72, C102-C105), most of these claims are explicitly speculative (C100-C101, C106, C108-C110, C112). The preliminary observations about eye movements (C104-C105) and connections to phototaxis (C103) are interesting but not fully developed. The acknowledgment that the circuit likely involves additional components (C111) is appropriate. These represent reasonable hypotheses for future investigation but are not well-supported by the current data. The extensive speculation, while interesting, goes beyond what the data can support and should be clearly distinguished from the demonstrated findings.",
+    "result_type": "MINOR"
+  }
+]

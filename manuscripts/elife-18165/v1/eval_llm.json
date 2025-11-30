@@ -1,0 +1,461 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C35",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Live imaging of kan1kan2 mutant leaves reveals that outgrowths arise by formation of PIN1 convergence sites within a proximodistal polarity field. Young kan1kan2 leaf primordia show PIN1 polarities oriented towards the leaf tip, similar to WT. As development proceeds, kan1kan2 leaves maintain PIN1 expression and form centres of polarity convergence at the tips of emerging outgrowths, whereas WT leaves lose PIN1 expression. Cell tracking shows that cells at convergence centres were already at sites of polarity convergence prior to outgrowth emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34, C44-C50 are directly supported by time-lapse imaging data presented in Figures 1 and 2. The observations of proximodistal polarity fields, convergence site formation, and cell lineage tracking provide strong experimental evidence. The comparison between WT and kan1kan2 mutants is well-documented with appropriate controls and replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "DR5::GFP reporter imaging shows that locally elevated intracellular auxin activity precedes outgrowth emergence in kan1kan2 leaves. At early stages, DR5::GFP signal is detected at the leaf tip. Approximately one day before outgrowth emergence, locally elevated DR5::GFP signal appears in groups of epidermal cells in the proximal lamina where outgrowths form, and this signal persists throughout emerging outgrowths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by time-lapse imaging data in Figure 3 and are consistent with previous reports (cited). The temporal relationship between auxin accumulation and outgrowth emergence is clearly demonstrated through sequential imaging with appropriate sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "CUC2 is required for normal kan1kan2 outgrowth development and PIN1 convergence formation. kan1kan2 mutants consistently produce ectopic outgrowths (97% of leaves, mean 12.4 per leaf), while kan1kan2cuc2 mutants rarely develop outgrowths (8% of leaves, mean 1.3 per leaf). Time-lapse imaging shows that kan1kan2cuc2 mutants fail to form centres of PIN1 convergence, though occasional convergence sites can form in upper leaves, suggesting the requirement can be circumvented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C66 are supported by phenotypic analysis (Figure 4) and time-lapse imaging (Figure 5) with adequate sample sizes (n=160 for kan1kan2, n=50 for kan1kan2cuc2). The quantitative data on outgrowth frequency and the imaging data on PIN1 convergence provide strong evidence for CUC2's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "CUC2 is ectopically expressed in the abaxial lamina of kan1kan2 leaves during outgrowth development. At early stages, CUC2::RFPer is expressed throughout the proximal half of the lamina. Before outgrowth emergence, expression is lost from the leaf base and early convergence centres, resulting in groups of CUC2-expressing cells at the distal side of each convergence site. PIN1 polarities are oriented away from regions of high CUC2 expression. In WT, CUC2 expression is restricted to the leaf base and serration regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C76 are supported by time-lapse imaging data in Figure 6 showing CUC2::RFPer and PIN1::PIN1:GFP expression patterns. The spatial and temporal relationships between CUC2 expression and PIN1 polarity are well-documented across multiple developmental stages with appropriate replication (n=5 leaves tracked).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Computational modeling reveals that PIN1 polarity models can be classified into two types based on their spontaneous behavior. All three models (up-the-gradient, flux-based, indirect coupling) can generate polarity in a single polarizable cell. However, in arrays of cells without pre-established asymmetries, the up-the-gradient model generates convergent polarities, while flux-based and indirect coupling models generate tandem (swirled) polarity patterns. The models differ in their mechanisms: up-the-gradient requires feedback through auxin transport, while flux-based and indirect coupling can polarize even with fixed external auxin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C90 are supported by computational simulations presented in Figure 7. The model behaviors are clearly demonstrated and the classification into convergent vs. tandem alignment models is logically derived from simulation results. However, the biological relevance depends on parameter choices and model assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The convergent alignment model can generate a proximodistal polarity field and subsequent convergence sites through specific assumptions. The model requires maintenance of an increasing auxin gradient from leaf base to tip, achieved through net auxin removal at the base (e.g., elevated degradation). As tissue size increases, the auxin gradient becomes shallow, leading to spontaneous formation of convergence sites in the proximal lamina. The failure of WT leaves to form convergence centres could be explained by polarity fixation, possibly involving CUC2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C99 are supported by computational modeling in Figure 8. The simulations demonstrate the model's behavior under specified conditions. However, C98-C99 are speculative explanations for WT behavior and lack direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Tandem alignment models (flux-based and indirect coupling) can generate proximodistal polarity fields with specific assumptions about auxin sources and sinks. Both models require net auxin production proximally and elevated removal distally. However, elevated degradation alone at the distal end leads to low intracellular auxin, inconsistent with observations. This inconsistency is resolved by combining elevated auxin import with elevated removal at the leaf tip, allowing distal cells to accumulate auxin. Both tandem models make similar predictions that differ from the convergent alignment model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C113 are supported by computational modeling in Figure 9. The simulations clearly demonstrate the requirements and behaviors of tandem alignment models. The comparison with experimental observations (C102) and the identification of model requirements (C104-C110) are logically derived.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Tandem alignment models require additional assumptions to generate PIN1 convergence sites. One mechanism involves a broad region of auxin biosynthesis in the proximal lamina, which creates a shallow peak in intracellular auxin. If auxin above a threshold induces elevated import and removal, convergence sites form. The combination of elevated import and removal prevents the transient dip in auxin concentration that would occur with removal alone. This mechanism predicts elevated auxin import and removal at convergence sites and elevated auxin production at the leaf base.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C127 are supported by computational modeling in Figure 10. The simulations demonstrate how tandem alignment models can generate convergence sites with appropriate assumptions. The comparison with the Stoma et al. 2008 model (C123) and the identification of specific predictions (C124-C127) are well-reasoned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "LAX1 auxin importer expression is elevated at the tips of kan1kan2 outgrowths and is required for their development. LAX1::GUS is expressed at leaf tips and serration tips in WT, and ectopically in groups of cells at outgrowth tips in kan1kan2 leaves. This expression precedes outgrowth emergence and is located in the epidermis. Loss of all four AUX/LAX genes reduces outgrowth number from 12.4 to 1.6 per leaf. Individual loss of AUX1/LAX1 or additional loss of LAX2 progressively reduces outgrowth formation, supporting a functional role for auxin import.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C139 are supported by expression data (Figure 11A-C) and mutant analysis (Figure 11G) with adequate sample sizes. The temporal relationship between LAX1 expression and outgrowth emergence is demonstrated. The genetic analysis shows clear dose-dependent effects, though potential genetic background effects are acknowledged (C138).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The convergent alignment model does not require elevated auxin import at convergence sites in its most parsimonious form, as sites with elevated auxin reinforce themselves through transport. However, the model is compatible with elevated auxin import if it is assumed that high intracellular auxin induces import and removal. This induction can occur after convergence formation, though it makes the model less parsimonious.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C143 are supported by computational modeling in Figure 11H. The simulations demonstrate that the convergent alignment model can accommodate elevated auxin import, though this is not required. The assessment of parsimony is a logical inference from model structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "CUC2 is required for locally elevated auxin import at kan1kan2 outgrowth tips. In kan1kan2cuc2 mutants, LAX1::GUS expression is lost from the lamina and AUX1::AUX1:YFP is expressed uniformly throughout the abaxial lamina, suggesting CUC2 represses AUX1 in regions surrounding outgrowths. In kan1kan2 leaves, AUX1::AUX1:YFP and CUC2::RFP are expressed in mutually exclusive domains, with AUX1 excluded from the CUC2-expressing outgrowth axil.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C150 are supported by expression data in Figure 12 with adequate sample sizes (n=10-15 seedlings). The mutually exclusive expression patterns and the loss of LAX1 expression in kan1kan2cuc2 mutants provide strong evidence for CUC2's role in regulating auxin importer expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Epidermal PIN1 convergence centres in kan1kan2 leaves are coupled with sub-epidermal PIN1 strands. PIN1 in these strands is polarized away from the epidermis towards underlying tissue, suggesting they provide a route for auxin removal from the epidermis. This observation provides a mechanism for auxin removal required by tandem alignment models and is compatible with but not required by the convergent alignment model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C154 are supported by immunolocalization data in Figure 13 with appropriate replication (n=4 leaves with convergences, n=3 leaves with emerging outgrowths). The observation of inwardly polarized PIN1 in sub-epidermal strands is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "YUC1::GUS expression is detected in outer cell layers at the base of WT leaf primordia, with strongest expression on the adaxial side. This expression is detected in very young primordia and persists during development. The epidermal expression at the leaf base matches predictions of tandem alignment models. However, when auxin production at the leaf base is added to the convergent alignment model along with auxin import/removal at the tip, it can disrupt proximodistal polarity formation, generating a divergent field instead.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C162 are supported by expression data in Figure 14A-C with adequate replication (n=9-10 plants). The computational modeling in Figure 14D demonstrates the effect on the convergent alignment model. However, C162 is speculative about whether YUC1 expression actually influences polarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "kan1kan2 mutants have broader YUC1::GUS distribution in the proximal half of young leaf primordia compared to WT, extending further on the abaxial side where convergence centres form. Before outgrowth emergence, YUC1::GUS is expressed in a band across the abaxial leaf surface. As outgrowths emerge, this band is present at their distal base (axil) but absent from tips. The pattern is similar to CUC2::RFP expression. CUC2 is required for ectopic YUC1::GUS expression in kan1kan2 leaves. Loss of YUC1 and YUC4 in kan1kan2 mutants eliminates outgrowths and LAX1::GUS expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C171 are supported by expression data in Figure 15 with adequate replication (n=15-20 leaves). The genetic analysis (C167, C171) demonstrates functional requirements. The comparison with tandem alignment model predictions (C165) is well-reasoned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "Computational modeling shows that introducing a band of elevated auxin biosynthesis (mimicking YUC1 expression) has different effects on tandem vs. convergent alignment models. In tandem models, the band generates divergent polarities, but adding a cell with elevated import/removal on the proximal side generates a convergence at that location, consistent with observations. In the convergent alignment model, polarities orient towards the band, even with elevated import/removal proximally (unless import is very high), inconsistent with observations that polarities orient towards LAX1/AUX1-expressing regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C178 are supported by computational modeling in Figure 16. The simulations clearly demonstrate differential behavior of the models in response to YUC1-like expression patterns. The comparison with experimental observations (C174, C177) provides a basis for model discrimination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "The presence of YUC expression in regions of polarity divergence could be reconciled with the convergent alignment model if YUC expression appears as a consequence of low auxin following polarity reorientation rather than causing reorientation. This is consistent with evidence that YUC1, YUC2, YUC4, and YUC6 expression is down-regulated by auxin. Given such negative feedback, local auxin biosynthesis by YUCs might not raise auxin concentrations sufficiently to affect PIN1 polarities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C179-C181 are speculative explanations (C179, C181) for reconciling observations with the convergent alignment model. While C180 is supported by citation to Suzuki et al. 2015, the speculation that YUC expression doesn't influence polarity (C181) lacks direct experimental validation and contradicts the functional requirement shown in C167.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "YUC4::GFP expression dynamics in kan1kan2 leaves show that approximately one day before outgrowth emergence (when PIN1 convergence centres form), YUC4 is expressed in the epidermis distal to where outgrowths emerge. As outgrowths emerge, epidermal YUC4 expression is maintained in the axil (where YUC1 is also expressed), and a second region of expression appears in epidermal and sub-epidermal tissue at the outgrowth tip. The epidermal expression distal to convergences is similar to YUC1 and more consistent with tandem than convergent alignment models. YUC4::GFP expression within the abaxial lamina is lost in kan1kan2cuc2 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C194 are supported by time-lapse imaging in Figure 17 (n=5 leaves tracked) and expression data in kan1kan2cuc2 background. The temporal dynamics of YUC4 expression relative to convergence formation are well-documented. The comparison with model predictions (C193) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209"
+    ],
+    "result": "A common developmental module underlies shoot outgrowth formation (kan1kan2 outgrowths, leaf primordia, and serrations). Key features include: (1) epidermal PIN1 convergence centres that become outgrowth tips, (2) elevated intracellular auxin at convergence centres, (3) elevated YUCCA expression in axillary boundaries with divergent PIN1 polarity, (4) elevated LAX1 expression at convergence centres, (5) sub-epidermal PIN1 strands with inward polarity, and (6) CUC gene promotion of outgrowth formation with expression distal to outgrowths. This module operates iteratively in leaf and leaf outgrowth formation. Loss of PIN1 convergences and outgrowths in kan1kan2cuc2 mutants correlates with loss of ectopic auxin biosynthesis and import.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C10, C195-C209 synthesize results from multiple experiments (Figures 2-6, 11-17) and prior work (citations). The evidence for each feature of the module is well-documented. The correlation between loss of convergences and loss of auxin biosynthesis/import in kan1kan2cuc2 mutants (C209) supports the module concept. The extension to outgrowths emerging from the leaf plane (C208) is novel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C2",
+      "C8",
+      "C37",
+      "C38",
+      "C39",
+      "C43",
+      "C210",
+      "C211",
+      "C212",
+      "C213",
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220",
+      "C221",
+      "C222",
+      "C223",
+      "C224",
+      "C225",
+      "C226",
+      "C227",
+      "C228",
+      "C229",
+      "C230",
+      "C231",
+      "C232"
+    ],
+    "result": "Comparison of convergent vs. tandem alignment models reveals different levels of parsimony for explaining the complete dataset. Convergent alignment models (e.g., up-the-gradient) most parsimoniously explain PIN1 polarity, intracellular auxin, and outgrowth spacing, as these arise spontaneously. However, they do not predict elevated auxin biosynthesis in divergence regions or elevated auxin import at convergence centres. Tandem alignment models (flux-based, indirect coupling) are less parsimonious for PIN1/auxin patterns alone but naturally predict elevated auxin import at convergence centres and elevated biosynthesis at divergence regions. When auxin import and biosynthesis data are considered, tandem alignment models may provide a more parsimonious explanation overall.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C8, C37-C39, C43, C210-C232 represent a comprehensive comparison of model predictions with experimental data. The assessment of parsimony is well-reasoned, considering multiple lines of evidence (PIN1 polarity, auxin distribution, LAX1 expression, YUC expression, genetic requirements). The conclusion favoring tandem alignment models (C8, C43, C232) is supported by the weight of evidence, though alternative explanations for convergent models are acknowledged (C213-C214).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C233",
+      "C234",
+      "C235",
+      "C236",
+      "C237"
+    ],
+    "result": "CUC gene activity can be incorporated into both convergent and tandem alignment models, but with different roles. The data suggest that in WT leaves, CUC2 expression is excluded from the abaxial lamina by abaxial identity determinants (KAN1/KAN2). In the convergent alignment model, CUC2 may enable PIN1 polarity reorientation rather than fixation. In tandem alignment models, ectopic CUC2 expression could drive auxin synthesis (YUCCA) and induction of elevated auxin import/removal sites, thus promoting convergence formation. CUC2 expression distal to outgrowths could maintain these regions as sites of high auxin synthesis and polarity divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C233-C237 are supported by the expression and mutant data (Figures 4-6, 12, 15, 17). The inference about CUC2's role in excluding expression from abaxial lamina (C234) is reasonable given the kan1kan2 phenotype. The proposed mechanisms for CUC2 function in each model type (C235-C237) are logical inferences from the data, though direct mechanistic validation is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C238",
+      "C239",
+      "C240",
+      "C241",
+      "C242",
+      "C243",
+      "C244",
+      "C245"
+    ],
+    "result": "Plant and animal models of tissue cell polarity differ in fundamental ways. All three plant models analyzed can generate cell polarity without a polarizing environment (pre-established asymmetries or polarizable neighbors), contrasting with most animal planar cell polarity models. Plant models achieve this through two mechanisms: (1) feedback between polarity and auxin distribution/flux (up-the-gradient, flux-based), which contrasts with animal models where polarity doesn't affect ligand distribution, or (2) intracellular processes independent of auxin distribution (indirect coupling). Whether indirect coupling can generate sub-epidermal PIN1 strands remains to be determined, though flux-based models with superlinear feedback can account for such strands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C238-C245 represent a comparative analysis of plant vs. animal polarity models, supported by the computational modeling (Figure 7) and citations to animal polarity literature. The classification scheme (Figure 18) is well-reasoned. However, C244 acknowledges a limitation of the indirect coupling model that requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C246",
+      "C247",
+      "C248",
+      "C249",
+      "C250",
+      "C251"
+    ],
+    "result": "The analysis illustrates the value of comparing multiple models rather than focusing on one in isolation. Each model can be modified to fit experimental observations, showing that data fitting alone is not conclusive. However, models differ in their a priori predictions and parsimony. Some models make similar predictions despite different molecular mechanisms (e.g., flux-based vs. indirect coupling for tandem alignment; concentration-based vs. stress-based for convergent alignment). Discriminating between these requires additional types of experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C246-C251 represent methodological insights from the comparative modeling approach. These are well-supported by the comprehensive model comparison throughout the manuscript. The recognition that similar predictions can arise from different mechanisms (C249-C250) and that further experiments are needed (C251) demonstrates appropriate scientific reasoning.",
+    "result_type": "MINOR"
+  }
+]

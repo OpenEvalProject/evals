@@ -1,0 +1,2225 @@
+{
+  "submission": {
+    "id": "799fc655-731c-428f-a158-8b1005354981",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:01:39.598787Z",
+    "updated_at": "2025-11-29T23:01:39.598787Z"
+  },
+  "content": [
+    {
+      "id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "submission_id": "799fc655-731c-428f-a158-8b1005354981",
+      "content_type": "manuscript",
+      "content_text": "# Further support for aneuploidy tolerance in wild yeast and effects of dosage compensation on gene copy-number evolution\n\n## Authors\n\n- Audrey P Gasch<sup>1</sup> ([ORCID: 0000-0002-8182-257X](https://orcid.org/0000-0002-8182-257X)) \u2020\n- James Hose<sup>1</sup>\n- Michael A Newton<sup>2</sup>\n- Maria Sardi<sup>1</sup>\n- Mun Yong<sup>1</sup>\n- Zhishi Wang<sup>3</sup>\n\n### Affiliations\n\n1. Laboratory of Genetics University of Wisconsin-Madison Madison United States\n2. Genome Center of Wisconsin University of Wisconsin-Madison Madison United States\n3. Department of Statistics University of Wisconsin-Madison Madison United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn our prior work by Hose et al., we performed a genome-sequencing survey and reported that aneuploidy was frequently observed in wild strains of S. cerevisiae. We also profiled transcriptome abundance in naturally aneuploid isolates compared to isogenic euploid controls and found that 10\u201330% of amplified genes, depending on the strain and affected chromosome, show lower-than-expected expression compared to gene copy number. In Hose et al., we argued that this gene group is enriched for genes subject to one or more modes of dosage compensation, where mRNA abundance is decreased in response to higher dosage of that gene. A recent manuscript by Torres et al. refutes our prior work. Here, we provide a response to Torres et al., along with additional analysis and controls to support our original conclusions. We maintain that aneuploidy is well tolerated in the wild strains of S. cerevisiae that we studied and that the group of genes enriched for those subject to dosage compensation show unique evolutionary signatures.\n\n## Introduction\n\nIn our previous work (Hose et al., 2015), we reported from a genome-sequencing survey that aneuploidy was frequently observed in wild strains of S. cerevisiae, and that 10\u201330% of amplified genes, depending on the strain and affected chromosome, show lower-than-expected expression in naturally aneuploid isolates compared to isogenic euploid controls. We argued that this group is enriched for genes whose expression is regulated by one or more modes of gene-dosage compensation, which we validated at several genes. Importantly, the group of genes we identified shows non-random associations, including enrichment for specific functional groups, enrichment for genes that are toxic when over-expressed in the lab strain, and a higher rate of gene copy-number variation (CNV) despite higher constraint on expression variation in wild isolates of yeast. A main point of our paper was that dosage compensation at select genes has an important evolutionary effect, by buffering expression against CNV in wild strains.\n\nTorres et al. take issue with the conclusions in our manuscript, arguing that a) wild strains of yeast are not tolerant of aneuploidy and our results emerge as an artifact of culturing wild strains in the lab, and b) errors in our statistical analysis explain the reduced expression of amplified genes and instead there are no genes subject to dosage-responsive control. We disagree with these assertions and provide additional computational analysis that support our original claims.\n\n## Results\u00a0and\u00a0discussion\n\n### Aneuploidy is relatively common and well tolerated in natural isolates of S. cerevisiae\n\nTorres et al. argue that the wild strains analyzed in our study are not tolerant of aneuploidy, since the chromosome-wide average of the relative Illumina read depth measured for each amplified gene is not precisely 1.0, 1.5, or 2.0-fold higher than the euploid control (see Torres et al. Methods). They take this to reflect heterogeneous populations in which cells in the culture have lost the aneuploidy. However, this is not valid for several reasons. Due to technical biases in Illumina sequencing, it is highly unlikely that the mean value of relative gene copy number across whole chromosomes is a precise integer. Indeed, the plots shown by Torres et al. indicate the expected spread in relative read depth across the amplified chromosomes \u2013 similar to the spread in read counts of the euploid chromosomes \u2013 with mean values very close to the relative DNA abundance we reported. Furthermore, some genes on the chromosomes are not amplified (particularly those near the telomeres [Hose et al., 2015]), which can also slightly reduce the mean value away from a precise integer.\n\nRegardless of the precise mean copy number values, there can be no doubt from the figures presented by Torres et al. that for the strains we analyzed in our original paper, the vast majority of cells in each culture were aneuploid. We point out that several of the chromosomes and strains highlighted by Torres et al. (Figure 1D-F and Figure 2F-H) were not presented in our manuscript or used in any of our analyses (see Hose et al. Figure 1A for strains and chromosomes used in our study). It is true that some chromosome amplifications, namely in sake strains, are variable (appearing or disappearing) across replicates, and thus these chromosomes (Torres et al. Figure 1F and 2F) were not considered as part of this work. The karyotype of these sake strains may indeed be somewhat \u2018unstable\u2019 at the culture level; however, the random appearance of extra chromosomes across replicates again suggests a low fitness cost to aneuploidy and an observable rate of mitotic errors (Zhu et al., 2014). Nonetheless, the vast majority of aneuploidies we reported are relatively stable and maintained at high frequencies over many generations and in the absence of any selection.\n\nInstead, our data show that the wild strains we studied are tolerant of aneuploidy, and that it is the laboratory W303 strain that is highly aberrant. 1) By conservative estimation, 30% of the strains we sequenced are aneuploid \u2013 these strains were identified in an unbiased sequencing survey in which aneuploidy was not generated or selected for. 2) The aneuploid strains we studied show little growth reduction compared to isogenic euploid strains, both for naturally aneuploid isolates and strains for which we artificially generated aneuploidy (Hose et al., 2015). (In cases where we cited the specific growth rate, we always verified that aneuploidy remained at the end of the experiment by relative qPCR.) Thus, aneuploidy tolerance is not due to unusual adaptation in the lab. In contrast, the tetrasomic W303_Chr12-4n strain \u2013 carrying a chromosome reported to be one of the least toxic in this background (Sheltzer et al., 2012) \u2013 has a 70% reduction in growth rate compared to its isogenic control (Hose et al. Figure 5B). 3) While extra chromosomes can be lost stochastically, it generally took >200 generations of growth to detect significant chromosome loss in the wild-strain cultures we analyzed. W303_Chr12-4n cultures reproducibly lose the extra chromosome in one culture passaging (~20 generations). The extreme fitness defect incurred by the aneuploid W303 strain explains the rapid emergence of cells that lose the extra chromosome, since the euploid W303 grows nearly twice as fast and rapidly takes over the culture. 4) Aneuploid W303 cells show aberrant gene expression and strong activation of the environmental stress response (ESR, [Gasch et al., 2000]), regardless of the chromosome amplified (Sheltzer et al., 2012; Torres et al., 2007). But as we published, naturally aneuploid strains simply do not activate the ESR (Hose et al. Figure 2A), indicating that they are not experiencing significant stress compared to their euploid controls.\n\nTaken together, these results strongly support our conclusion that aneuploidy is relatively well tolerated in wild isolates of S. cerevisiae, at least for the strains and chromosomes we studied, but not in W303 as previously published (Sheltzer et al., 2012; Torres et al., 2007; 2010). It is certainly possible that some wild strains will not tolerate aneuploidy, and likely that some chromosome amplifications are more problematic than others, regardless of strain background. The prevalence of aneuploidy in our original study is consistent with other reports of aneuploidy in wild isolates (Tan et al., 2013; Strope et al., 2015; Sirr et al., 2015; Muller and McCusker, 2009) and certainly industrial strains (Bakalinsky and Snow, 1990; Bond et al., 2004; Hadfield et al., 1995). Aneuploidy commonly emerges in response to selective pressure (Mulla et al., 2014); interestingly, a recent study by Filteau et al. showed that aneuploidy was relatively frequent in a wild strain, but not a laboratory strain, subjected to the same selection conditions (Filteau et al., 2015). W303 harbors six auxotrophies, several of which affect but do not entirely explain the intolerance of Chr12 amplification (unpublished). Thus, while many nice studies have been done with the W303 laboratory strain, we caution against using it (or any single strain) as the sole representative of S. cerevisiae (Gasch et al., 2016).\n\n### A substantial fraction of amplified genes show lower-than-expected expression\n\nTo examine expression effects in naturally aneuploid strains, we measured mRNA and DNA abundance in aneuploid isolates compared to closely related or isogenic euploid controls. We did three sets of analyses in Hose et al. We first surveyed expression in six naturally aneuploid strains compared to paired euploid relatives, in biological duplicate. Pooling data across the strains identified 838 out of 2,204 amplified genes (38% over all genes considered in the six strains) whose relative mRNA abundance was reproducibly lower than the relative DNA abundance measured in the strain pairs (Hose et al. Figure 4A). The reduced expression could be because of a response to the aneuploidy, a response to the increased gene copy number, or due to heritable polymorphisms that reduce expression \u2013 we emphasize the presentation in Hose et al. that these genes should not be taken as dosage compensated from this analysis alone.\n\nTo distinguish the above possibilities, we performed two analyses on isogenic strain pairs, in which the only difference between strains was chromosome copy number. First, we measured mRNA abundance (in biological duplicate) for three aneuploid strains and their isogenic euploids and compared relative mRNA abundance to relative DNA abundance measured in those strain pairs (outlined in more detail below). This identified 163 of 882 genes (or 18% of the total set of genes assessed across these three strains) with lower-than-expected expression in aneuploid cells (Hose et al. Figure 4B and Supplementary File 3). Second, we generated isogenic strain panels for two other naturally aneuploid strains, in which diploid cells carried two, three, or four copies of the amplified chromosome. Using a mixture-of-linear regressions (MLR) model, we defined genes whose relative mRNA abundance did not increase proportionately to relative DNA abundance measured in the aneuploid versus isogenic euploid strains. The MLR analysis identified 172 genes in this class out of 773 genes (or 22% of the genes assessed in these two strain panels, Hose et al., Table 1, Class 3a). We then combined the gene groups from the two analyses of isogenic strain sets for downstream analysis. Because the paired strain analysis was less stringent (in part because only duplicates were analyzed), we required that genes be identified in both Figure 4B (isogenic strain pairs) and Figure 4A (non-isogenic strain pairs). This left 73 genes whose expression was lower-than-expected in four biological measurements from isogenic strain pairs plus the 172 genes identified by the more sensitive MLR analysis from the isogenic strain panels, for a combined total of 245 genes out of 1655 (15%) total genes assessed in the two analyses of isogenic strains. In Hose et al., we cited that 10\u201330% of genes, depending on strain and chromosome, met our criteria. There was an error in the abstract of the published article that we request to be changed, where '>30%' should have read 'up to 30%' of genes may be subjected to dosage compensation. We regret the error, but point out that the correct values are cited clearly throughout the manuscript.\n\n**Table 1.**\n The center (mean) of log2 distributions for mRNA or DNA ratios measured across all unamplified genes in isogenic aneuploid-euploid strain comparisons are shown. mRNA data from each strain was normalized by either \u2018spike-in\u2019 of Sz. pombe cells to the S. cerevisiae cell collections or by reads-per-kb per million mapped reads (RPKM) of S. cerevisiae genes only. Normalized data were then compared across strain pairs to provide a log2 ratio of relative mRNA or DNA abundance for each gene.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Mean log2 mRNA ratios (spike-in)</th>\n      <th>Mean log2 mRNA ratios (RPKM)</th>\n      <th>Mean log2 DNA ratios (RPKM)</th>\n      <th>1 SD used for threshold</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>T73_Chr8-4n vs -2n rep1</td>\n      <td>0.08</td>\n      <td>\u22120.019</td>\n      <td>\u22120.072</td>\n      <td>0.197</td>\n    </tr>\n    <tr>\n      <td>T73_Chr8-4n vs -2n rep2</td>\n      <td>0.102</td>\n      <td>\u22120.020</td>\n      <td>n.a.</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>YJM428_Chr16-4n vs -2n rep1</td>\n      <td>\u22120.401</td>\n      <td>\u22120.037</td>\n      <td>\u22120.121</td>\n      <td>0.168</td>\n    </tr>\n    <tr>\n      <td>YJM428_Chr16-4n vs -2n rep2</td>\n      <td>\u22120.457</td>\n      <td>0.004</td>\n      <td>n.a.</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>YPS163_Chr8-2n vs -1n rep1</td>\n      <td>n.a.*</td>\n      <td>-0.146</td>\n      <td>0.045</td>\n      <td>0.242</td>\n    </tr>\n    <tr>\n      <td>YPS163_Chr8-2n vs -1n rep2</td>\n      <td>n.a.*</td>\n      <td>\u22120.135</td>\n      <td>n.a.</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NCYC110_Chr8-3n vs -2n rep5</td>\n      <td>0.014</td>\n      <td>\u22120.005</td>\n      <td>n.a.</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NCYC110_Chr8-4n vs -2n rep5</td>\n      <td>0.273</td>\n      <td>0.186</td>\n      <td>n.a.</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NCYC110_Chr8-4n vs -2n rep1</td>\n      <td>n.a.</td>\n      <td>0.058</td>\n      <td>\u22120.076</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NCYC110_Chr8-4n vs -2n rep2</td>\n      <td>n.a.</td>\n      <td>0.011</td>\n      <td>\u22120.108</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>NCYC110_Chr8-4n vs -2n rep3</td>\n      <td>n.a.</td>\n      <td>0.078</td>\n      <td>n.a.</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>YPS1009_Chr12-4n vs -2n rep1</td>\n      <td>n.a.</td>\n      <td>0.014</td>\n      <td>0.003</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>YPS1009_Chr12-4n vs -2n rep2</td>\n      <td>n.a.</td>\n      <td>-0.094</td>\n      <td>\u22120.229</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>YPS1009_Chr12-4n vs -2n rep3</td>\n      <td>n.a.</td>\n      <td>\u22120.184</td>\n      <td>n.a.</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n_*We attempted spike-in normalization for haploid YPS163-disomic (\u20182n\u2019) and -monosomic (\u20181n\u2019) strains but were unable to accurately count cells due to differences in flocculation across aneuploid-euploid strains. As described in Hose et al. (2015), RPKM normalization produced data that agreed as well or better across replicates compared to spike-in normalization and in the case of YJM428_Chr16-4n agreed better with qPCR measurements of Chr16 abundance in the culture (not shown). Note data from NCYC110 replicate (rep) 5 were not used in the analysis but were generated during the Hose et al. manuscript revision stage for normalization controls. The SD of DNA ratios on the affected chromosome that were subtracted from gene-level measurements of relative DNA abundance (i.e. to generate the gene-specific thresholds, see text) are shown for reference where relevant._\n\nTorres et al. disagree with our analysis methods, stating that i) the data were misnormalized, ii) the thresholds used were not valid, iii) the mixture of linear regressions (MLR) model was inappropriate, and iv) we did not correct for false discovery. They further propose that expression differences in aneuploid strains fit a normal distribution across the transcriptome, which they take as a null model for no dosage compensation. Below, we briefly address each of these points in turn.\n\nFirst, as published in our original manuscript, several normalization methods were compared to ensure accuracy, including RPKM, RPKM excluding the amplified chromosomes, and the most accurate method of normalizing based on the number of collected cells. The latter is done by doping a fixed number of Schizosaccharomyces pombe cells relative to carefully counted S. cerevisiae cells in the collection, such that the S. cerevisiae sequencing reads can be scaled according to the known distribution of Sz. pombe reads across the samples (see Hose et al. for specifics). This is the most appropriate method of normalization, since it makes no assumptions about the data; however, it is particularly challenging for wild yeast that are often flocculent and difficult to count. Nonetheless, for several of the strains we analyzed the data normalized by Sz. pombe \u2018spike-in\u2019 agreed as well with the same data normalized by RPKM as did biological replicates normalized by RPKM (Table 1). (The exception was YJM428_Chr16 for which the spike-in normalization was clearly off based on comparing calculated Chr16 relative abundance to qPCR-measured Chr16 relative abundance from the same culture pairs, not shown). Data values were otherwise similar for different normalization methods, indicating that RPKM is a valid approach (Hose et al., 2015). Importantly, for our final analysis the DNA and RNA samples were normalized with the identical RPKM procedure \u2013 this produced global data centers (i.e.\u00a0mean log2 values across all measurements) that were very similar for both mRNA and DNA measurements, indicating that the data were normalized in a comparable manner. Thus, there is no evidence that misnormalization of the data dramatically skewed our results.\n\nSecond, the description of our analysis methods presented by Torres et al. does not recapitulate what was done in our manuscript. For isogenic strain pairs shown in Hose et al. Figure 4B, we generated biological duplicate RNA-seq replicates and single DNA-seq samples, where DNA and one RNA sample were taken from the same culture, for both the aneuploid and euploid strains. For each replicate, we measured the relative mRNA abundance for each gene in the aneuploid versus euploid strain, as well as the relative DNA abundance for that gene in the aneuploid versus euploid strain. We then defined a gene-specific threshold to identify genes with lower-than-expected mRNA abundance: we took the relative DNA abundance measured for a given gene, minus one SD of the chromosome-wide mean of relative DNA abundances (Table 1). We then identified genes whose relative mRNA abundance in the aneuploid versus euploid strain was lower than the gene-specific cutoff in both biological mRNA replicates. Comparing measured mRNA ratios to measured DNA ratios (as opposed to theoretical DNA ratios) is critical to capture systematic and stochastic variation in the measurements. Our thresholding method allowed us to account for gene-specific biases in sequencing counts while incorporating measurement noise (and minimizing sequencing costs). Importantly, to meet our criteria for downstream analysis, a gene must have also met these criteria in the comparable analysis of non-isogenic strain pairs (Hose et al. Figure 4A). Thus, each gene had to be expressed below the threshold in four biological replicates. We note that it would be inappropriate to analyze the mean gene-level values from small numbers of replicates, which was not done in our analyses. In attempt to estimate the false discovery rate (FDR), we performed random permutations on the data (see Methods). We estimate the FDR for this analysis to be below 15%.\n\nTorres et al. argue that our approach for selecting thresholds is not valid, citing the high standard deviation (SD) for mRNA abundance levels (RPKM) across the transcriptome (Torres et al. Figure 8B). However, we did not use abundance values, but rather relative abundance across isogenic strains, and thus the SD of RPKM values across all transcripts is not relevant to our analysis. What is relevant is the SD of replicate mRNA abundance ratios compared to the SD of the relative DNA values used to define the threshold applied to replicates. The average SD of the replicate mRNA ratios for each gene ranged from 0.12\u20130.3, for amplified genes and for unamplified genes. This was the same range as the SDs of the relative DNA abundance ratios (0.17\u20130.24) used to define the gene-specific thresholds (Table 1), which were applied to four biological measurements of relative mRNA abundance. Torres et al. attempt to estimate the false discovery rate of our method on permuted data; while their methods are not entirely clear, they identify hundreds more genes on randomized data than we did on real data, and the SD values cited in their Table 2 are not close to our values, suggesting critical differences in methods.\n\nIn a second analysis, we generated two sets of isogenic strain panels in which diploid cells carried two, three, or four copies of a chromosome. Triplicate mRNA and duplicate DNA measurements were generated for each strain in each panel, and the data were fit using a sensitive mixture of linear regressions (MLR) model, which did not use the same cutoff approach to call genes. In fitting the MLR model, we did not average the replicates to reduce data to three points in a scatterplot per gene \u2013 such an approach could be adversely affected by outliers. Instead, we used all replicate measurements on all genes simultaneously, contrary to the assertion in Torres et al. The model takes into account variation in the replicate mRNA measurements (see Hose et al. for details). For simplicity, we classified genes based on their maximum posterior probability, and no cutoff on the magnitude of the expression effect was used \u2013 indeed, we showed in the paper that many genes have only partially reduced expression (Hose et al. Figure 4 and 6). Though it was not a focus of the original report, the MLR mixture model allows for a conditional FDR assessment, following the approach in Newton et al. (2004). The 142 genes called Class 3A in the YPS1009 panel correspond to 17% FDR; the 30 genes called Class 3A in the NCYC110 panel correspond to 5% FDR by this method.\n\nAn independent check on MLR computations comes by using ordinary linear regression on the same input data, and using the regression to test the null hypothesis (per gene) of no deviation from proportional expression (i.e. the null is intercept=0 and slope=1). Under normal theory, the likelihood ratio test statistic has a chi-squared distribution on 2 degrees of freedom. An estimate of the proportion of null genes comes by processing the collection of chi-square p-values through Storey's q-value calculator (Storey, 2003). For both strain panels, these null proportion estimates are remarkably close to the Class 1 proportion estimates from MLR (in the YPS1009 panel: 14% by q-value and 15% by MLR; in the NCYC110 panel: 7% by q-value and 8% by MLR, both among the set of genes showing linear relationships on the log scale mRNA versus DNA). The likelihood ratio approach does not offer a direct classification of non-null genes, in contrast to the favored MLR approach used in Hose et al., but does provide a check on inferences about the breath of putative-dosage compensation effects. In summary, the two methods we used to identify genes expressed lower-than-expected in isogenic aneuploid versus euploid strains identified 245 genes for downstream analysis. This amounts to 10 to 30% of genes depending on the strain and affected chromosome, or 15% of all genes assessed, at an FDR between 5\u00a0and\u00a017%.\n\nTorres et al. perform their own analysis to identify potentially dosage compensated genes, focusing on global averages, correlations, and distributions across the chromosomes. They argue that the distribution of expression effects across each aneuploid strain versus its isogenic euploid fits a normal distribution, in which there is a similar number of genes with higher expression on the affected chromosome as genes with lower expression. The authors cite that this is the null expectation in the absence of any genes subject to dosage compensation. While such a global approach would capture chromosome-wide dosage compensation as seen in sex chromosomes, we argue that this approach will miss many individual genes potentially subject to dosage control.\n\nAs published in Hose et al., there are genes on and off the amplified chromosome that have higher expression in the aneuploid strains. The MLR analysis reported nearly the same number of amplified genes with higher expression as with reduced expression (Hose et al. Table 1). We regret the magenta coloring to highlight amplified genes in Figure 4, which was added during the revisions to make a separate point and thus the genes were not selected with the same criteria as genes with lower expression. Nonetheless, as we describe in Hose et al., the two tails of the distribution are enriched for different functional groups: whereas amplified genes with lower-than-expected expression are enriched for particular functional groups (see below) and for genes that are toxic when over-expressed in the lab strain, the set of amplified genes with higher-than-expected expression is enriched for genes encoding membrane and cell-surface proteins. As we cited, the higher-than-expected expression of amplified genes (and of\u00a0genes on unamplified chromosomes) is likely an indirect response to the known influence that ploidy has on cell size/shape and flocculence (Wu et al., 2010). Therefore, we do not believe that the distribution across all genes can be used to select individual genes subject to dosage compensation, nor did we focus on global averages or correlations. Instead, we identified individual genes that have the lower-than-expected expression phenotype and analyzed the pooled set to explore enriched features, as described below.\n\n### Unique features of selected genes suggest the group is enriched for dosage-compensated genes\n\nA major point of our original manuscript that was not addressed by Torres et al. is that the genes we identified through the above analyses are strikingly enriched for unique patterns. The set of genes with lower-than-expected expression in aneuploid strains is strongly enriched for certain functional groups, including genes known to feedback on their own expression (see more below), genes that are toxic when over-expressed, and genes that are under higher expression constraint but display elevated copy number variation (CNV) in wild populations (Hose et al., 2015). Such non-random associations are unlikely to occur if the gene selection was truly random and driven by noisy data. We ruled out the possibility that these genes reflect a common, indirect response to aneuploidy. However, it is true that a subset of the genes we identified could be responding transcriptionally to the particular chromosome amplified, rather than the gene\u2019s copy number per se. We attempted to minimize these effects in our original downstream analysis by pooling amplified genes from five aneuploid strains and across three amplified chromosomes. Here, we provide an additional series of controls to show that the trends seen for the gene group we identified cannot be explained as indirect transcriptional responses to aneuploidy.\n\nAs presented by Torres et al., chromosome-specific responses to aneuploidy should affect groups of functionally related genes, whether or not the genes are amplified. In an\u00a0attempt to remove amplified genes that may be a\u00a0part of such indirect responses, we first identified unamplified genes in each aneuploid strain with significantly reduced expression compared to its isogenic euploid (FDR 0.01) and identified enriched functional groups (see Methods). We then removed from consideration all amplified genes in that strain belonging to any of those strain-specific functional groups. (Note: we consider cytosolic and mitochondrial translation factors as separate groups). This analysis removed ~30% of the genes classified as potentially dosage compensated in the original analysis; the majority of these were linked to mitochondrial function and is consistent with the common mitochondrial response we reported (even though, interestingly, the removed genes were not affected in multiple aneuploid strains). We note that our procedure may remove genes that are legitimately dosage compensated, especially those that show only\u00a0partial compensation,\u00a0which could cause indirect effects on unamplified genes in the same functional category (e.g. partial compensation of a transcriptional repressor).\n\nThe revised set of amplified genes with lower-than-expected expression remains enriched for functional groups that cannot be explained by common or chromosome-specific responses, including cytosolic RPs (p=6e-7), other proteins involved in ribosome biogenesis (p=5e-4), and an overlapping gene set linked to translation (p=3e-6). RPs are known to feedback on their own expression (Warner et al., 1985; Vilardell and Warner, 1997; Dabeva and Warner, 1987; Dean et al., 1981; Tsay et al., 1988), and we validated the trend at two genes (Hose et al., 2015). The revised group is also weakly enriched for sequence-specific DNA binding proteins (p=0.006), including several transcription factors that bind their own promoters and/or regulate their own expression (including, Hap1, Stb5, Bdf1, and Rsc30 [Venters et al., 2011; Deckert et al., 1995; Hon et al., 2005; Denby et al., 2012]). Importantly, these enrichments remained significant when genes from each chromosome were held out (p<0.007, except for one case where DNA binding protein\u00a0enrichment p=0.04), showing that the result is not skewed by one particular aneuploidy. As cited in Hose et al., these categories are not enriched among unamplified genes whose expression is affected by the common aneuploidy response (Hose et al., 2015). Thus, our analysis is clearly enriching for genes subject to dosage compensation.\n\nAll of the evolutionary signatures we reported in the original manuscript remain statistically significant on this reduced gene group (Figure 1). The revised gene set enriched for dosage-compensated genes displays significantly higher levels of CNV in S. cerevisiae populations, compared to all genes and compared to amplified genes with proportionately elevated expression (Figure 1A). They also have significantly higher CNV buffering scores (Figure 1B, see Methods and (Hose et al., 2015)), indicating a higher level of CNV despite increased expression constraint. If these trends are driven by genes subject to repression or indirect effects of aneuploidy, we would expect to see the same patterns for unamplified genes that show reduced expression compared to euploid controls. But this is not the case: unamplified genes with reduced expression (identified either by edgeR or by the identical methods used to call dosage-compensated genes) show no increase in CNV propensity or buffering scores compared to the control group. The trends for the affected amplified genes remain if we define genes using a more stringent threshold to call affected genes, if we remove from the analysis all genes belonging to any of the enriched functional groups, or if we separately hold out each amplified chromosome from the analysis (see Methods). A final prediction is that genes with larger effect sizes in terms of the level of compensation should have more striking evolutionary patterns, and this is indeed the case (Figure 1). Therefore, the results we report cannot be explained as a secondary transcriptional response to the amplified chromosome \u2013 we believe that the group is legitimately enriched for genes subject to dosage control and that dosage compensation has an important effect on genome evolution.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/14409/elife-14409-fig1-v2.jpg)\n\n**Figure 1.:** Gene sets and the numbers contained within them are indicated by the key.\u00a0The revised list of amplifed genes with lower-than-expected expression were partitioned into thirds, based on genes with the greatest (top third) or smallest (bottom third) reduction in expresison compared to expectation. (A) The fraction of genes in each group for which at least three of 103 strains showed gene amplification. (B) The distribution of Buffering Scores for genes with CNV. Here, Buffering Score represents the number of 103 strains with a gene duplication divided by expression constraint (Vg/Vm, see Hose et al. for details). Higher values indicate a higher propensity for CNV despite expression constraint. The orange line indicates the median value for amplified genes with proportionate expression as a reference point. Asterisks indicate statistical significance (p<0.035) compared to the amplified genes with proportionate expression. In some cases, the trends were consistent but not significant (likely owing to small sample sets).\n\nOur original intention in Hose et al. was not to claim that dosage compensation is \u2018widespread\u2019 in S. cerevisiae, but rather that it exists at a significant number of genes and has an important role in evolution. We certainly agree with Torres et al. that dosage compensation does not function at most amplified genes, as seen for sex chromosomes in other organisms. Our goal was not to define individual genes subject to dosage compensation, but rather to investigate the group \u2013 we caution that no single gene from our lists should be taken as dosage compensated without orthogonal evidence. In the end, the revised gene set we identified here at the highest confidence encompasses 157 (13%) genes out of 1,243 interrogated across all the isogenic strain sets. It is true that some of the genes we identified, particularly those with only subtly reduced expression patterns, are false positive calls from our analysis. However, the number of genes we identified is inline with the 14% of dosage compensated genes reported by Springer and colleagues\u00a0(Springer et al., 2010) (using GFP reporters for 730 genes interrogated) and is consistent with (but on the lower end) our original report of 10\u201330%. Future work will undoubtedly clarify the precise number and identity of genes subject to dosage compensation, as well as the genetic basis for phenotypic differences in aneuploidy tolerance in laboratory versus wild strains.\n\n## Methods\n\nIn the process of this work, we verified our original analyses to define gene groups. We estimated the FDR of our thresholding method as follows: 1) We calculated the log2 ratio of mRNA in aneuploid versus euploid cells, minus the corresponding log2 ratio of relative DNA abundance for that gene minus 1SD of the chromosome-wide mean of relative DNA values. A negative value indicates that the relative mRNA expression was below the relative DNA copy number minus 1SD. 2) These difference values were randomly permuted with regard to the gene labels, within each of two replicates in both the isogenic and non-isogenic strain pairs. 3) We calculated the number of genes for which all four of the randomized data values were negative, over 10,000 iterations. The FDR (average number of genes identified from 10,000 iterations on random data divided by the number of genes identified in real data) was calculated to be below 15.0%.\u00a0We note that some fraction of true positives will meet the threshold in randomized trials.\n\nWe also generated a revised list of putatively dosage compensated genes as follows: Unamplified genes with significant expression differences in each strain were identified using edgeR (Robinson et al., 2010) comparing RPKM values in aneuploid versus isogenic diploid strains. Biological duplicate RNA-seq data were analyzed for T73_Chr8-4n versus T73_Chr8-2n, YJM428_Chr16-4n versus YJM428_Chr16-2n, and YPS163_Chr8-disomic versus YPS163_Chr8-monosomic; biological triplicates were analyzed for YPS1009_Chr12-4n versus YPS1009_Chr12-2n and for NCYC110_Chr8-4n versus NCYC110_Chr8-2n (see Hose et al. for all other details). Unamplified genes with an FDR <0.01 (Robinson et al., 2010) and a negative mean log2(fold-change) in aneuploid versus euploid expression were taken as 'lower expressed'. Functional enrichment was done on the set of lower-expressed unamplified genes for each strain separately, using the program FunSpec (Robinson et al., 2002) and taking p<0.0004 as significant. Amplified genes from that strain belonging to any of the strain-specific enriched functional categories (excluding those based on cellular localization) were removed from the original list of putatively dosage compensated genes. Note that we considered cytosolic and mitochondrial RPs and translation factors as separate groups. One of the strains (YJM428_Chr16-4n) had a substantial secondary response at unamplified genes, amounting to two thirds of the 1,456 lower-than-expressed unamplified genes pooled across the isogenic strain pairs \u2013 the effected genes from YJM428_Chr16-4n were admittedly enriched for translation factors and rRNA biogenesis genes, causing the removal of amplified Chr16 genes in those categories from the list of affected genes. Nonetheless, the functional categories described in the text remained significant for the remaining 157 genes with reduced expression in aneuploid strains. For analysis in Figure 1, the genes were ranked and partitioned into thirds based on the magnitude of expression reduction (\u2018effect size\u2019, where \u2018top third\u2019 represents amplified genes with the strongest reduction in expression), taken as the average relative mRNA ratio for the isogenic aneuploid and euploid strains compared to the relative DNA ratio between those strains.\n\nAs a separate approach to call putatively dosage compensated genes, we used the same methods described for Figure 4B of Hose et al., except that we selected genes whose relative mRNA values were less than the relative DNA ratio measured for that gene minus 3 SD of the chromosome-wide mean in that strain. A gene had to be below that gene-specific threshold in all (two or three where relevant) biological replicates of isogenic strain pairs. This identified 56 genes across the five strains. We applied an identical method to identify non-amplified genes with reduced expression; for this, we used the same SD as applied for amplified genes (although this was generally very similar to the SD for all genes on unamplified chromosomes). This identified a total of 454 unamplified genes with lower expression (\u20183SD\u2019 in Figure 1A).\n\nWe plotted the fraction of genes for which at least three of 103 strains previously analyzed had evidence of gene amplification (see Hose et al. for details). Trends were similar when plotting the fraction of genes in which at least two strains displayed CNV. For simplicity, the buffering score plotted in Figure 1 represents the number of 103 strains with CNV divided by the expression constraint score Vg/Vm (see Hose et al. for details). We performed a variety of other controls, ensuring that trends were the same when each chromosome was held out separately, when genes belonging to any functional group were held out, and using different cutoffs for CNV. The trends were consistent in all cases (although not always statistically significant owing to small datasets in some cases).\n",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "6391485b-8cab-42a0-aa7b-b9c7cc446bb8",
+      "submission_id": "799fc655-731c-428f-a158-8b1005354981",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Duncan T Odom, University of Cambridge , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.14409.009](https://doi.org/10.7554/eLife.14409.009)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Further support for aneuploidy tolerance in wild yeast and effects of dosage compensation on gene copy-number evolution\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Duncan Odom as the Reviewing Editor and Randy Schekman as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and Dr Odom, the Reviewing Editor, has drafted this decision to help you prepare a revised submission. Despite the criticisms below, all reviewers in this eLife discussion board unanimously shared a commitment to allowing you a fair and open response in print to the scientific challenge offered by Torres et al.\n\nBecause your submission is an author-response to Torres et al., a manuscript that is currently in press at eLife challenging your prior work, I have appended the complete reviews from three independent reviewers, as well as one notable (anonymized) comment from our discussion. Note that lightly edited versions of these reviews will be available for the community to see. There were a number of criticisms of your lines of reasoning and the clarity of your presentation, as well as suggested experiments by Reviewer 1.\n\nFor re-submission of this Short Report, the only required changes are:\n\na) To revise the clarity and argument structure, both of which were considered at times weak by all the reviewers\n\nb) Slowly cross-check all your numbers, as well as your references to numbers in your original work, and explain any discrepancies clearly.\n\nc) Rewrite the Abstract to clarify, per Reviewer 3.\n\nd) Revise your Discussion to admit possible weaknesses in your analyses. Do please consider including some or all of the following points: that the number of replicates used may be too low to reliably use means, that some of the strains may well be unstable, and all things considered, the number of genes that are dosage-compensated could be quite small \u2013 and are likely to be smaller than claimed in the original Hose paper.\n\nDr Odom, the Reviewing Editor, suggests that careful (and extensive) experimentation that begins from the types of experiments suggested by Reviewer 1 could serve as the nucleus of a more comprehensive story for a later submission that is entirely independent of the current dosage compensation discussion.\n\nReviewer #1:\n\n\u201cFurther support for aneuploidy tolerance in wild yeast and effects of dosage compensation on gene copy-number evolution\u201d is a rebuttal of a previous manuscript of Torres, Springer and Amon, which was itself a rebuttal of a paper published by Gasch, Hose et al. in 2015. It is a sad reality that the two groups were not able to find a common ground for a professional discussion that would result in a collaborative manuscript addressing the key issues. The reviewers and editors have to help to ensure that the rebuttal remains factual and professional, supported by clear arguments and genuine attempts to find a solution.\n\nThe rebuttal focuses on two main points. First, they argue that, oppositely to the claim of Amon and Torres, aneuploidy is indeed more tolerated in wild budding yeast strains. This claim is irrelevant, as Amon and Torres did not question the claim that wild yeast strains are more tolerant to aneuploidy (they questioned that this tolerance is due to the ability to compensate the gene dosage). In the second part, they argue that their analysis of dosage compensation of mRNA levels of amplified genes is correct and that a significant proportion of genes is compensated in wild yeast strains. This part is confusing and flawed. Several points need to be addressed:\n\n1) Subheading \u201cA substantial fraction of amplified genes show lower-than-expected expression\u201d: It is questionable that the normalization strategies used for mRNA and genomics NGS data should be identical. RPKM is used exclusively for mRNA normalization, as far as we know. It is not clear how \"careful cell counting and doping with Schicosaccharomyces pombe cells at the time of collection\" should have helped to improve the normalization. This requires further explanation. Finally, log2 difference of paired RNA-DNA sample at -0.04 feels dangerously low \u2013 this similarity can rarely be found even between technical replicates. Using this precise number as a comparison between two very different sequencing experiments seems to be in stark discrepancy to the argument in paragraph one, subheading \u201cAneuploidy is relatively common and well tolerated in natural isolates of S. cerevisiae\u201d, where the authors state that due to technical biases in Illumina sequencing the mean value isn\u00b4t a precise measurement and can\u00b4t be used to conclude on a unbalanced karyotype.\n\n2) Paragraph four, subheading \u201cA substantial fraction of amplified genes show lower-than-expected expression\u201d: Definition of the cut off is the critical point. Why the cut off for mRNA levels should be based on DNA abundance is beyond our understanding \u2013 the variance of DNA abundance and variance of RNA abundance are usually very different. The rationale is not explained.\n\n3) The next part of the paragraph brings a flurry of numbers that is difficult to follow. They first state that they identified 163 of 882 genes tested to be dosage compensated \u2013 and not 838, as stated by Torres. But in the Hose et al. manuscript, there is indeed the number 838, and the number 163 or 882 is nowhere to be found. They also claim that their subsequent analysis defined stringent criteria for dosage compensation to be met by 88 genes out of 738. They cite Figure 4A in Hose et al., but again, this number is not there. This means dosage compensation in 12% of amplified genes, but at 15% FDR. None of these numbers was mentioned in the previous manuscript.\n\n4) Paragraph five, subheading \u201cA substantial fraction of amplified genes show lower-than-expected expression\u201d: Why the SD across all transcripts is not relevant is beyond our understanding. Both SDs across replicates and SD across all transcripts within one sample are relevant, each of them provides different information.\n\n5) Paragraph six, subheading \u201cA substantial fraction of amplified genes show lower-than-expected expression\u201d: The criticism of MLR by Torres and Amon was based on the fact that only 3 samples were used for the analysis, which is not sufficient; here it is claimed that 12 samples were used \u2013 however, this number includes the biological replicates of 3 samples only, which is indeed not sufficient. All the additional analysis does not help the fact that the model is based on 3 samples.\n\n6) They agree with Torres and Amon that the distribution of the gene expression of amplified genes is normal (not skewed), yet argue that the downregulated genes represent dosage compensation, whereas the upregulated genes are a part of the general response to aneuploidy \u2013 it is very unclear why each of these two outliers' groups should be interpreted differently. Their argumentation in the chapter \"Unique features of selected genes....\" is a prime example of scientific tautology: genes are dosage compensated because it is disadvantageous for the cells to overexpress them. Accordingly, for these genes a propensity to CNV is observed. They do not observe propensity to CNV for genes from these categories when they are present in normal copy numbers \u2013 but this is most likely because they are not overexpressed and therefore there is no need to select against them! They also never say what gene categories are downregulated among unamplified genes (likely the same categories as on the amplified chromosomes).\n\n7) There are also genes that are up-regulated \u2013 the identified categories broadly agree with the previous gene categories identified to be upregulated in response to aneuploidy (they cite the work from Fink lab, which relates to tetraploidy, but see more relevant Amon, Torres, and Storchova lab results). Remarkably, the dosage compensated genes closely match the categories identified previously to be downregulated in response to aneuploidy \u2013 ribosome biogenesis, translation, transcription \u2013 in several different species (see Amon, Torres, Storchova, Foijer laboratories). This option should be considered.\n\n8) In paragraph five, subheading \u201cUnique features of selected genes suggest the group is enriched for dosage compensated genes\u201d, they cite a paper by Springer et al. (Mol Sys Biol 2010) in support of the presented work. But Springer's manuscript is focusing entirely on dosage compensation on protein level, whereas Hose considers mRNA; of individual proteins only, measured one-by-one by FACS, whereas Hose et al. considers whole chromosomes only, and Springer analyzes loss of copies, whereas Hose analysis gain of gene copies.\n\nIn conclusion, the arguments do not seem strong enough to justify their analysis approach. Secondly, even if we would agree with the analysis, they found that the mRNA of 12 \u2013 13% of genes might be dosage compensated at a FDR of almost 15% \u2013 a result that in fact says that there is no general dosage compensation.\n\nReviewer #2:\n\nThis short paper by Gasch, Hose and colleagues is a reply to a paper by Torres and colleagues, which is in turn a reply to a first paper by Hose, Gasch et al. in which they report that several wild yeast strains show high levels of aneuploidy and that the expression of some genes does not reflect their copy number changes, suggesting that these wild yeasts have some mechanisms of gene dosage compensation that reduces the expression effect of copy number variation (which may explain why such high levels of aneuploidy are tolerated).\n\nThe paper by Torres and coworkers notes two key issues in the work by Gash et al:\n\n1) The copy number variation is based on changes in read depth of illumina genome sequencing. However, the read depth does not always change in integer numbers, which may indicate that only part of the population shows the CNV and that the populations are heterogeneous.\n\n2) The statistical methods used by Hose, Gasch et al. are not correct \u2013 most notably, Torres and coworkers argue that Gasch et al. do not account for multiple testing and do not use appropriate error calculations, since the expression levels were calculated with very noisy mRNA abundance levels (RPKM).\n\nGasch, Hose et al. now argue that:\n\n1) The non-integer changes in read depth are due to sequencing bias\n\n2) The error calculations were OK since everything was based on (less noisy) relative abundance levels.\n\nMajor comments:\n\n1) As I already indicated in my review of Amon et al., I am also puzzled by the non-integer changes in sequencing depth. I do think that this suggests that the strains could indeed be unstable. However, I also noted that we need to be sure that sequencing biases are not involved. I suggested a few relatively easy experiments to verify whether the populations are homogeneous and whether they show the expected aneuploidies. It seems easy enough to measure the copy number of a few key regions in a few key strains using qPCR, and to do this on a few different (small) colonies of the same culture. This would close the discussion.\n\n2) I follow the arguments about the error calculations. Although I am not an expert in this area, I think that, Gasch, Hose and coworkers indeed used correct calculations, but their sample size (number of replicates) are very low. Again, a few extra experiments using qPCR would help to close the discussion.\n\n3) The number of genes that may show dosage compensation (245) seems quite low, especially since many of these might be false (false discover rate\u2026). Even if some GO enrichment is found in this set, it is not clear to me that the number is high enough to call this \"widespread\". My best guess is that strains become aneuploid and the relatively quickly acquire mutations that normalize the expression of a few key genes for which changes in expression are not tolerated. Whether this is special for wild yeasts and should be called \"dosage compensation\" is a difficult question (obviously, the dosage is compensated, but using the name also suggests a general, dedicated mechanism, and this may very well be lacking\u2026)\n\nReviewer #3:\n\nThis manuscript by Gasch et al. is a rebuttal to the Torres et al. criticism of Hose et al. Both Hose et al. and Torres et al. were published in eLife. I will preface by saying that I firmly believe Gasch should have the opportunity to present a response (this manuscript).\n\nAt the heart of this dispute is to two points: namely (1) is aneuploidy relatively common in wild strains and well tolerated there? and (2) to what extent (fraction) do genes show a lower-than-expected expression?\n\nHere Gasch provides a strong rebuttal of the Torres concerns regarding whether aneuploidy is common and tolerated in wild strains. In my opinion the Torres arguments on this point were weak and Gasch clearly articulates the relevant counter argument.\n\nOn the second point, namely to what extent do genes show a lower than expected expression, Gasch clearly outlines the details of the methods used in Hose and why the criticisms of Torres were off the mark at times. Gasch also correctly points out the Torres methods for estimating FDR were poorly described. Gasch provides additional details on the methods of Hose and additional, more stringent analysis that reaches many of the same conclusions of Hose.\n\nOne notable (anonymized and lightly edited) comment from the reviewers\u2019 discussion:\n\nOn the second issue, the extent of dosage compensation, I think that there is a fundamental disconnect between the groups in how to assess dosage compensation. Gasch (in Hose and Gasch) seek to take a gene specific view that accounts for gene-to-gene variability. This is noble and philosophically sound, but fraught with problems they don't address \u2013 namely that they have way too small a sample size to really do this (as also noted by both other reviewers). The Amon approach is to take a more distribution-based approach \u2013 which is, in principle, better in low sample sizes \u2013 but as Gasch correctly points out (and was a major criticism of the Torres manuscript) \u2013 the Torres methods are so poorly described as to be impossible to assess. Even if you think the Gasch method has merit, in the end they do back peddle on the number of dosage compensated genes (in Gasch compared to Hose) leading one to suspect we are talking about something that is either a small class or even non-existent.\n",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e18593c7-97df-4db2-93af-17eccd47423b",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C1",
+      "claim": "In Hose et al., a genome-sequencing survey was performed and aneuploidy was frequently observed in wild strains of S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "In our prior work by Hose et al., we performed a genome-sequencing survey and reported that aneuploidy was frequently observed in wild strains of S. cerevisiae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior published work (Hose et al.) which is referenced throughout the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "4822c28c-a1b6-4594-a299-4fa434aecd2f",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C2",
+      "claim": "10\u201330% of amplified genes, depending on the strain and affected chromosome, show lower-than-expected expression compared to gene copy number in naturally aneuploid isolates compared to isogenic euploid controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We also profiled transcriptome abundance in naturally aneuploid isolates compared to isogenic euploid controls and found that 10\u201330% of amplified genes, depending on the strain and affected chromosome, show lower-than-expected expression compared to gene copy number.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the prior Hose et al. study, which measured mRNA and DNA abundance in aneuploid versus euploid strains.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "7dd8d880-487e-4435-9959-a81824b8327f",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C3",
+      "claim": "The gene group showing lower-than-expected expression is enriched for genes subject to one or more modes of dosage compensation.",
+      "claim_type": "EXPLICIT",
+      "source": "In Hose et al., we argued that this gene group is enriched for genes subject to one or more modes of dosage compensation, where mRNA abundance is decreased in response to higher dosage of that gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis of expression data and validation experiments described in the cited work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "3324f0d1-5336-42aa-b538-e70b80f3e094",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C4",
+      "claim": "Torres et al. refutes the prior work by Hose et al.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent manuscript by Torres et al. refutes our prior work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to the Torres et al. manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "d6ca2489-4543-4d72-946a-84053c087b81",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C5",
+      "claim": "Aneuploidy is well tolerated in the wild strains of S. cerevisiae that were studied.",
+      "claim_type": "EXPLICIT",
+      "source": "We maintain that aneuploidy is well tolerated in the wild strains of S. cerevisiae that we studied and that the group of genes enriched for those subject to dosage compensation show unique evolutionary signatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple lines of evidence including growth rate measurements, chromosome stability data, and lack of stress response activation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "8d06aac2-5bc8-4a94-b69f-442aeec75e13",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C6",
+      "claim": "The group of genes enriched for those subject to dosage compensation show unique evolutionary signatures.",
+      "claim_type": "EXPLICIT",
+      "source": "We maintain that aneuploidy is well tolerated in the wild strains of S. cerevisiae that we studied and that the group of genes enriched for those subject to dosage compensation show unique evolutionary signatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by analysis of copy number variation and expression constraint data across wild yeast populations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "79bfbf92-5d28-4c7f-bdc5-e7c991fdc0f4",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C7",
+      "claim": "The group of genes with lower-than-expected expression shows enrichment for specific functional groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the group of genes we identified shows non-random associations, including enrichment for specific functional groups, enrichment for genes that are toxic when over-expressed in the lab strain, and a higher rate of gene copy-number variation (CNV) despite higher constraint on expression variation in wild isolates of yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by functional enrichment analysis and comparison to published data on gene toxicity.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "60f98182-cbc7-44be-a865-8b05502227a6",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C8",
+      "claim": "The group of genes with lower-than-expected expression shows enrichment for genes that are toxic when over-expressed in the lab strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the group of genes we identified shows non-random associations, including enrichment for specific functional groups, enrichment for genes that are toxic when over-expressed in the lab strain, and a higher rate of gene copy-number variation (CNV) despite higher constraint on expression variation in wild isolates of yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison to published datasets on gene overexpression toxicity.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "e6bc3fc0-b91b-4e57-9fad-8eb29a431640",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C9",
+      "claim": "The group of genes with lower-than-expected expression shows a higher rate of gene copy-number variation (CNV) despite higher constraint on expression variation in wild isolates of yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the group of genes we identified shows non-random associations, including enrichment for specific functional groups, enrichment for genes that are toxic when over-expressed in the lab strain, and a higher rate of gene copy-number variation (CNV) despite higher constraint on expression variation in wild isolates of yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by analysis of CNV data from 103 wild yeast strains and expression constraint measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "ad4ff519-b2db-42db-8090-be7c78c1622f",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C10",
+      "claim": "Dosage compensation at select genes has an important evolutionary effect by buffering expression against CNV in wild strains.",
+      "claim_type": "EXPLICIT",
+      "source": "A main point of our paper was that dosage compensation at select genes has an important evolutionary effect, by buffering expression against CNV in wild strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the observed correlation between dosage compensation and CNV patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "b1e6055d-6a25-4fc8-b22a-dc5c20769f61",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C11",
+      "claim": "Torres et al. argue that wild strains of yeast are not tolerant of aneuploidy and the results emerge as an artifact of culturing wild strains in the lab.",
+      "claim_type": "EXPLICIT",
+      "source": "Torres et al. take issue with the conclusions in our manuscript, arguing that a) wild strains of yeast are not tolerant of aneuploidy and our results emerge as an artifact of culturing wild strains in the lab, and b) errors in our statistical analysis explain the reduced expression of amplified genes and instead there are no genes subject to dosage-responsive control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to the Torres et al. manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "f1cf2223-346e-41dd-b668-252bf7d4e8fb",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C12",
+      "claim": "Torres et al. argue that errors in statistical analysis explain the reduced expression of amplified genes and there are no genes subject to dosage-responsive control.",
+      "claim_type": "EXPLICIT",
+      "source": "Torres et al. take issue with the conclusions in our manuscript, arguing that a) wild strains of yeast are not tolerant of aneuploidy and our results emerge as an artifact of culturing wild strains in the lab, and b) errors in our statistical analysis explain the reduced expression of amplified genes and instead there are no genes subject to dosage-responsive control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to the Torres et al. manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "e49721d8-d549-4e56-8066-a9b4814aebf0",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C13",
+      "claim": "Due to technical biases in Illumina sequencing, it is highly unlikely that the mean value of relative gene copy number across whole chromosomes is a precise integer.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to technical biases in Illumina sequencing, it is highly unlikely that the mean value of relative gene copy number across whole chromosomes is a precise integer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about technical limitations of Illumina sequencing technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "aefe6f98-5e6a-461b-b78b-0d6b1fa07369",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C14",
+      "claim": "Some genes on the chromosomes are not amplified, particularly those near the telomeres, which can slightly reduce the mean value away from a precise integer.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, some genes on the chromosomes are not amplified (particularly those near the telomeres [Hose et al., 2015]), which can also slightly reduce the mean value away from a precise integer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the cited Hose et al. 2015 study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "2e1a72ff-c1d7-4185-ade1-ea50fbc7d0cc",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C15",
+      "claim": "For the strains analyzed in the original paper, the vast majority of cells in each culture were aneuploid.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the precise mean copy number values, there can be no doubt from the figures presented by Torres et al. that for the strains we analyzed in our original paper, the vast majority of cells in each culture were aneuploid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the data presented in Torres et al. figures.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "e276fdc6-4cdc-46ab-bc01-2ab3a3b96200",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C16",
+      "claim": "Several of the chromosomes and strains highlighted by Torres et al. were not presented in the original manuscript or used in any of the analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "We point out that several of the chromosomes and strains highlighted by Torres et al. (Figure 1D-F and Figure 2F-H) were not presented in our manuscript or used in any of our analyses (see Hose et al. Figure 1A for strains and chromosomes used in our study).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison to the original Hose et al. manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "22bf3d1e-1365-44e8-a886-46fa7c918710",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C17",
+      "claim": "Some chromosome amplifications, namely in sake strains, are variable (appearing or disappearing) across replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "It is true that some chromosome amplifications, namely in sake strains, are variable (appearing or disappearing) across replicates, and thus these chromosomes (Torres et al. Figure 1F and 2F) were not considered as part of this work.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data showing variability in chromosome amplifications across replicates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "10bdd204-f5a4-4f3e-8bfe-157fb0fc038a",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C18",
+      "claim": "The karyotype of sake strains may be somewhat 'unstable' at the culture level.",
+      "claim_type": "EXPLICIT",
+      "source": "The karyotype of these sake strains may indeed be somewhat 'unstable' at the culture level; however, the random appearance of extra chromosomes across replicates again suggests a low fitness cost to aneuploidy and an observable rate of mitotic errors (Zhu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from observed variability in chromosome amplifications and is supported by citation to Zhu et al. 2014.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "cbcae977-64e9-4bfa-ab41-19c39e3f586f",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C19",
+      "claim": "The random appearance of extra chromosomes across replicates suggests a low fitness cost to aneuploidy and an observable rate of mitotic errors.",
+      "claim_type": "EXPLICIT",
+      "source": "The karyotype of these sake strains may indeed be somewhat 'unstable' at the culture level; however, the random appearance of extra chromosomes across replicates again suggests a low fitness cost to aneuploidy and an observable rate of mitotic errors (Zhu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from observed data and is supported by citation to Zhu et al. 2014.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "9eccffcc-86d2-4f36-aff3-3e060f549734",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C20",
+      "claim": "The vast majority of aneuploidies reported are relatively stable and maintained at high frequencies over many generations and in the absence of any selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, the vast majority of aneuploidies we reported are relatively stable and maintained at high frequencies over many generations and in the absence of any selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data showing chromosome stability over multiple generations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "75187ec7-ef70-43a7-98d2-19059cc4e388",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C21",
+      "claim": "30% of the strains sequenced are aneuploid by conservative estimation.",
+      "claim_type": "EXPLICIT",
+      "source": "1) By conservative estimation, 30% of the strains we sequenced are aneuploid \u2013 these strains were identified in an unbiased sequencing survey in which aneuploidy was not generated or selected for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the genome sequencing survey.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "72b393d5-19b2-48f4-97d5-dc786b3d0bad",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C22",
+      "claim": "The aneuploid strains were identified in an unbiased sequencing survey in which aneuploidy was not generated or selected for.",
+      "claim_type": "EXPLICIT",
+      "source": "1) By conservative estimation, 30% of the strains we sequenced are aneuploid \u2013 these strains were identified in an unbiased sequencing survey in which aneuploidy was not generated or selected for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the methodology used in the sequencing survey.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "f1c4c140-7a2d-4de1-af11-794ce21043e1",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C23",
+      "claim": "The aneuploid strains studied show little growth reduction compared to isogenic euploid strains, both for naturally aneuploid isolates and strains for which aneuploidy was artificially generated.",
+      "claim_type": "EXPLICIT",
+      "source": "2) The aneuploid strains we studied show little growth reduction compared to isogenic euploid strains, both for naturally aneuploid isolates and strains for which we artificially generated aneuploidy (Hose et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by growth rate measurements from the cited Hose et al. 2015 study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "df48bb47-efdd-4653-9c46-12ece6d88911",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C24",
+      "claim": "Aneuploidy tolerance is not due to unusual adaptation in the lab.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, aneuploidy tolerance is not due to unusual adaptation in the lab.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the observation that both naturally aneuploid and artificially generated aneuploid strains show similar tolerance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "ef2274e2-5dd8-4475-8dc2-e90904d15bae",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C25",
+      "claim": "The tetrasomic W303_Chr12-4n strain has a 70% reduction in growth rate compared to its isogenic control.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the tetrasomic W303_Chr12-4n strain \u2013 carrying a chromosome reported to be one of the least toxic in this background (Sheltzer et al., 2012) \u2013 has a 70% reduction in growth rate compared to its isogenic control (Hose et al. Figure 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by growth rate data from Hose et al. Figure 5B and citation to Sheltzer et al. 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "647fdcef-bcf2-4616-bd5b-ca0063428a7f",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C26",
+      "claim": "Chr12 is reported to be one of the least toxic chromosomes in the W303 background.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the tetrasomic W303_Chr12-4n strain \u2013 carrying a chromosome reported to be one of the least toxic in this background (Sheltzer et al., 2012) \u2013 has a 70% reduction in growth rate compared to its isogenic control (Hose et al. Figure 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Sheltzer et al. 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "c27f231f-a5c4-4fae-9902-5464bc4fca92",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C27",
+      "claim": "It generally took >200 generations of growth to detect significant chromosome loss in the wild-strain cultures analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "3) While extra chromosomes can be lost stochastically, it generally took >200 generations of growth to detect significant chromosome loss in the wild-strain cultures we analyzed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data measuring chromosome stability over multiple generations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "814c08b3-4124-407e-b3be-0ea6a3520325",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C28",
+      "claim": "W303_Chr12-4n cultures reproducibly lose the extra chromosome in one culture passaging (~20 generations).",
+      "claim_type": "EXPLICIT",
+      "source": "W303_Chr12-4n cultures reproducibly lose the extra chromosome in one culture passaging (~20 generations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data measuring chromosome stability in W303 cultures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "990bbc1f-8bcf-4b31-a34a-83c3cf6427a2",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C29",
+      "claim": "The extreme fitness defect incurred by the aneuploid W303 strain explains the rapid emergence of cells that lose the extra chromosome, since the euploid W303 grows nearly twice as fast and rapidly takes over the culture.",
+      "claim_type": "EXPLICIT",
+      "source": "The extreme fitness defect incurred by the aneuploid W303 strain explains the rapid emergence of cells that lose the extra chromosome, since the euploid W303 grows nearly twice as fast and rapidly takes over the culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from growth rate data and chromosome loss observations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "1799f2b6-425f-4f3d-bd72-31dd7286a6fa",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C30",
+      "claim": "Aneuploid W303 cells show aberrant gene expression and strong activation of the environmental stress response (ESR), regardless of the chromosome amplified.",
+      "claim_type": "EXPLICIT",
+      "source": "4) Aneuploid W303 cells show aberrant gene expression and strong activation of the environmental stress response (ESR, [Gasch et al., 2000]), regardless of the chromosome amplified (Sheltzer et al., 2012; Torres et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Sheltzer et al. 2012 and Torres et al. 2007, and references the ESR defined in Gasch et al. 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "63902e25-f4ec-45f0-bc69-d6665110131b",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C31",
+      "claim": "Naturally aneuploid strains do not activate the ESR.",
+      "claim_type": "EXPLICIT",
+      "source": "But as we published, naturally aneuploid strains simply do not activate the ESR (Hose et al. Figure 2A), indicating that they are not experiencing significant stress compared to their euploid controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from Hose et al. Figure 2A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "51b6dadf-7c36-490c-8e69-cfcb71788ee7",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C32",
+      "claim": "Naturally aneuploid strains are not experiencing significant stress compared to their euploid controls.",
+      "claim_type": "EXPLICIT",
+      "source": "But as we published, naturally aneuploid strains simply do not activate the ESR (Hose et al. Figure 2A), indicating that they are not experiencing significant stress compared to their euploid controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the lack of ESR activation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "d7fcfe98-bbcf-4cf4-bffd-0b2031708fd2",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C33",
+      "claim": "Aneuploidy is relatively well tolerated in wild isolates of S. cerevisiae, at least for the strains and chromosomes studied, but not in W303.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results strongly support our conclusion that aneuploidy is relatively well tolerated in wild isolates of S. cerevisiae, at least for the strains and chromosomes we studied, but not in W303 as previously published (Sheltzer et al., 2012; Torres et al., 2007; 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple lines of evidence and citations to prior work on W303.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "9c82e07a-d6cb-4d40-94fb-60e4266dc1a3",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C34",
+      "claim": "The prevalence of aneuploidy in the original study is consistent with other reports of aneuploidy in wild isolates.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevalence of aneuploidy in our original study is consistent with other reports of aneuploidy in wild isolates (Tan et al., 2013; Strope et al., 2015; Sirr et al., 2015; Muller and McCusker, 2009) and certainly industrial strains (Bakalinsky and Snow, 1990; Bond et al., 2004; Hadfield et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies reporting aneuploidy in wild and industrial yeast strains.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "74b0caf6-d907-4b8d-a8ed-eb287738f2d3",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C35",
+      "claim": "Aneuploidy commonly emerges in response to selective pressure.",
+      "claim_type": "EXPLICIT",
+      "source": "Aneuploidy commonly emerges in response to selective pressure (Mulla et al., 2014); interestingly, a recent study by Filteau et al. showed that aneuploidy was relatively frequent in a wild strain, but not a laboratory strain, subjected to the same selection conditions (Filteau et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Mulla et al. 2014 and Filteau et al. 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "9251f7ad-2c8a-4292-9c23-629946ca02fc",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C36",
+      "claim": "A recent study by Filteau et al. showed that aneuploidy was relatively frequent in a wild strain, but not a laboratory strain, subjected to the same selection conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Aneuploidy commonly emerges in response to selective pressure (Mulla et al., 2014); interestingly, a recent study by Filteau et al. showed that aneuploidy was relatively frequent in a wild strain, but not a laboratory strain, subjected to the same selection conditions (Filteau et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Filteau et al. 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "9fd77ada-0045-4353-bf75-2cd06c02c1cb",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C37",
+      "claim": "W303 harbors six auxotrophies, several of which affect but do not entirely explain the intolerance of Chr12 amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "W303 harbors six auxotrophies, several of which affect but do not entirely explain the intolerance of Chr12 amplification (unpublished).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on unpublished data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "f66d748b-c0c9-47a4-9a91-813f31c7e512",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C38",
+      "claim": "It would be inappropriate to use W303 (or any single strain) as the sole representative of S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while many nice studies have been done with the W303 laboratory strain, we caution against using it (or any single strain) as the sole representative of S. cerevisiae (Gasch et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the observed differences between W303 and wild strains, and is supported by citation to Gasch et al. 2016.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "f391d857-72cb-4a55-af75-7b90d7bbf5b2",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C39",
+      "claim": "In the first survey analysis, 838 out of 2,204 amplified genes (38% over all genes considered in the six strains) had relative mRNA abundance reproducibly lower than the relative DNA abundance measured in the strain pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Pooling data across the strains identified 838 out of 2,204 amplified genes (38% over all genes considered in the six strains) whose relative mRNA abundance was reproducibly lower than the relative DNA abundance measured in the strain pairs (Hose et al. Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from Hose et al. Figure 4A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "9905b08b-91da-4eaa-bbe1-3be7a13245ff",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C40",
+      "claim": "The reduced expression could be because of a response to the aneuploidy, a response to the increased gene copy number, or due to heritable polymorphisms that reduce expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced expression could be because of a response to the aneuploidy, a response to the increased gene copy number, or due to heritable polymorphisms that reduce expression \u2013 we emphasize the presentation in Hose et al. that these genes should not be taken as dosage compensated from this analysis alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents speculation about possible mechanisms for reduced expression.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "2bfd288f-b4c8-4ebf-81c7-5ad8cd2bc364",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C41",
+      "claim": "In the isogenic strain pairs analysis, 163 of 882 genes (or 18% of the total set of genes assessed across these three strains) had lower-than-expected expression in aneuploid cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This identified 163 of 882 genes (or 18% of the total set of genes assessed across these three strains) with lower-than-expected expression in aneuploid cells (Hose et al. Figure 4B and Supplementary File 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from Hose et al. Figure 4B and Supplementary File 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "685fd733-47f2-4dbc-bd89-e0173756d7a1",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C42",
+      "claim": "The MLR analysis identified 172 genes out of 773 genes (or 22% of the genes assessed in these two strain panels) whose relative mRNA abundance did not increase proportionately to relative DNA abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "The MLR analysis identified 172 genes in this class out of 773 genes (or 22% of the genes assessed in these two strain panels, Hose et al., Table 1, Class 3a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the MLR analysis reported in Hose et al. Table 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "db1ee45a-a349-4199-8cde-af5bc4f07740",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C43",
+      "claim": "The combined analysis identified 245 genes out of 1655 (15%) total genes assessed in the two analyses of isogenic strains.",
+      "claim_type": "EXPLICIT",
+      "source": "This left 73 genes whose expression was lower-than-expected in four biological measurements from isogenic strain pairs plus the 172 genes identified by the more sensitive MLR analysis from the isogenic strain panels, for a combined total of 245 genes out of 1655 (15%) total genes assessed in the two analyses of isogenic strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data combining results from two different analyses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "aba757ee-cae8-494b-b60c-a202813dd0ba",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C44",
+      "claim": "There was an error in the abstract of the published article where '>30%' should have read 'up to 30%' of genes may be subjected to dosage compensation.",
+      "claim_type": "EXPLICIT",
+      "source": "There was an error in the abstract of the published article that we request to be changed, where '>30%' should have read 'up to 30%' of genes may be subjected to dosage compensation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an explicit correction of an error in the original publication.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "ae6beb71-643d-4025-a295-7adc83561e68",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C45",
+      "claim": "Several normalization methods were compared to ensure accuracy, including RPKM, RPKM excluding the amplified chromosomes, and normalization based on the number of collected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "First, as published in our original manuscript, several normalization methods were compared to ensure accuracy, including RPKM, RPKM excluding the amplified chromosomes, and the most accurate method of normalizing based on the number of collected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the methodology used in the original study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "6f712043-8dba-4a74-b116-1b16c542ef26",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C46",
+      "claim": "Normalizing based on the number of collected cells is done by doping a fixed number of Schizosaccharomyces pombe cells relative to carefully counted S. cerevisiae cells in the collection.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter is done by doping a fixed number of Schizosaccharomyces pombe cells relative to carefully counted S. cerevisiae cells in the collection, such that the S. cerevisiae sequencing reads can be scaled according to the known distribution of Sz. pombe reads across the samples (see Hose et al. for specifics).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the methodology for spike-in normalization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "77df56ae-f39d-48cd-83a9-19c035d26431",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C47",
+      "claim": "Spike-in normalization is the most appropriate method of normalization, since it makes no assumptions about the data.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the most appropriate method of normalization, since it makes no assumptions about the data; however, it is particularly challenging for wild yeast that are often flocculent and difficult to count.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on reasoning about the advantages of spike-in normalization.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "c6d4f7c3-5c45-4a07-b04c-606add64fd17",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C48",
+      "claim": "For several of the strains analyzed, the data normalized by Sz. pombe 'spike-in' agreed as well with the same data normalized by RPKM as did biological replicates normalized by RPKM.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, for several of the strains we analyzed the data normalized by Sz. pombe 'spike-in' agreed as well with the same data normalized by RPKM as did biological replicates normalized by RPKM (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "a8c507f1-7ef7-4927-9dc2-47b127f797cc",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C49",
+      "claim": "For YJM428_Chr16, the spike-in normalization was clearly off based on comparing calculated Chr16 relative abundance to qPCR-measured Chr16 relative abundance from the same culture pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "(The exception was YJM428_Chr16 for which the spike-in normalization was clearly off based on comparing calculated Chr16 relative abundance to qPCR-measured Chr16 relative abundance from the same culture pairs, not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of sequencing-based and qPCR-based measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "577fe474-10ac-4865-82fb-dc992fa06403",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C50",
+      "claim": "RPKM is a valid approach for normalization.",
+      "claim_type": "EXPLICIT",
+      "source": "Data values were otherwise similar for different normalization methods, indicating that RPKM is a valid approach (Hose et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison of different normalization methods and is supported by citation to Hose et al. 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "030edf95-7020-4a25-9986-f076eb1de9c6",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C51",
+      "claim": "For the final analysis, the DNA and RNA samples were normalized with the identical RPKM procedure, which produced global data centers that were very similar for both mRNA and DNA measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, for our final analysis the DNA and RNA samples were normalized with the identical RPKM procedure \u2013 this produced global data centers (i.e. mean log2 values across all measurements) that were very similar for both mRNA and DNA measurements, indicating that the data were normalized in a comparable manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the normalization methodology and its validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "c8dc2b60-eb5d-4ad8-82b6-725086929d59",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C52",
+      "claim": "There is no evidence that misnormalization of the data dramatically skewed the results.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, there is no evidence that misnormalization of the data dramatically skewed our results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the comparison of normalization methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "70cdd973-0f22-4065-8159-4104fe537135",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C53",
+      "claim": "Biological duplicate RNA-seq replicates and single DNA-seq samples were generated for isogenic strain pairs, where DNA and one RNA sample were taken from the same culture, for both the aneuploid and euploid strains.",
+      "claim_type": "EXPLICIT",
+      "source": "For isogenic strain pairs shown in Hose et al. Figure 4B, we generated biological duplicate RNA-seq replicates and single DNA-seq samples, where DNA and one RNA sample were taken from the same culture, for both the aneuploid and euploid strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "2651d88d-7caa-4ea9-ae12-3e41bd21b89f",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C54",
+      "claim": "A gene-specific threshold was defined to identify genes with lower-than-expected mRNA abundance by taking the relative DNA abundance measured for a given gene, minus one SD of the chromosome-wide mean of relative DNA abundances.",
+      "claim_type": "EXPLICIT",
+      "source": "We then defined a gene-specific threshold to identify genes with lower-than-expected mRNA abundance: we took the relative DNA abundance measured for a given gene, minus one SD of the chromosome-wide mean of relative DNA abundances (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the methodology for defining thresholds, with reference to Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "d123b3d9-a182-4132-b5bc-3b85854518d8",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C55",
+      "claim": "Genes were identified whose relative mRNA abundance in the aneuploid versus euploid strain was lower than the gene-specific cutoff in both biological mRNA replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "We then identified genes whose relative mRNA abundance in the aneuploid versus euploid strain was lower than the gene-specific cutoff in both biological mRNA replicates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the criteria for identifying genes with lower-than-expected expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "1770d218-294c-4593-b56c-1d95112219b3",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C56",
+      "claim": "Comparing measured mRNA ratios to measured DNA ratios (as opposed to theoretical DNA ratios) is critical to capture systematic and stochastic variation in the measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing measured mRNA ratios to measured DNA ratios (as opposed to theoretical DNA ratios) is critical to capture systematic and stochastic variation in the measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on reasoning about the importance of using measured rather than theoretical values.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "046b93aa-3926-4667-9753-f9ea0166e8d1",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C57",
+      "claim": "The thresholding method allowed accounting for gene-specific biases in sequencing counts while incorporating measurement noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Our thresholding method allowed us to account for gene-specific biases in sequencing counts while incorporating measurement noise (and minimizing sequencing costs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the rationale for the thresholding method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "7b1ac1da-366e-42c5-9691-8b931d93c1ee",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C58",
+      "claim": "To meet the criteria for downstream analysis, a gene must have also met the criteria in the comparable analysis of non-isogenic strain pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, to meet our criteria for downstream analysis, a gene must have also met these criteria in the comparable analysis of non-isogenic strain pairs (Hose et al. Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the criteria for including genes in downstream analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "28b478f0-7fe9-484f-b99f-df579d9e357e",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C59",
+      "claim": "Each gene had to be expressed below the threshold in four biological replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, each gene had to be expressed below the threshold in four biological replicates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the stringency of the gene selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "6600e487-ed84-4f52-b9cc-f10cb9d0f464",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C60",
+      "claim": "The estimated FDR for the thresholding analysis is below 15%.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate the FDR for this analysis to be below 15%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on permutation analysis described in the Methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "f71a92a8-0e2b-4344-b670-37a7f897433c",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C61",
+      "claim": "The average SD of the replicate mRNA ratios for each gene ranged from 0.12\u20130.3, for amplified genes and for unamplified genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The average SD of the replicate mRNA ratios for each gene ranged from 0.12\u20130.3, for amplified genes and for unamplified genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of the replicate data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "9a5fbcec-747d-4ca3-8ef1-df5bb23d9091",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C62",
+      "claim": "The SDs of the replicate mRNA ratios were in the same range as the SDs of the relative DNA abundance ratios (0.17\u20130.24) used to define the gene-specific thresholds.",
+      "claim_type": "EXPLICIT",
+      "source": "This was the same range as the SDs of the relative DNA abundance ratios (0.17\u20130.24) used to define the gene-specific thresholds (Table 1), which were applied to four biological measurements of relative mRNA abundance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "f20eb74a-74b9-4f2c-af81-29a9e0a1c9c6",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C63",
+      "claim": "In the MLR model, all replicate measurements on all genes were used simultaneously, not averaged to reduce data to three points in a scatterplot per gene.",
+      "claim_type": "EXPLICIT",
+      "source": "In fitting the MLR model, we did not average the replicates to reduce data to three points in a scatterplot per gene \u2013 such an approach could be adversely affected by outliers. Instead, we used all replicate measurements on all genes simultaneously, contrary to the assertion in Torres et al.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the methodology used in the MLR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "b196378a-d6ce-42b4-ad60-e3238cefe555",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C64",
+      "claim": "The MLR model takes into account variation in the replicate mRNA measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "The model takes into account variation in the replicate mRNA measurements (see Hose et al. for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes a feature of the MLR model, with reference to Hose et al. for details.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "83b8a843-46be-4072-a745-d7af69ff355b",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C65",
+      "claim": "Genes were classified based on their maximum posterior probability in the MLR analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "For simplicity, we classified genes based on their maximum posterior probability, and no cutoff on the magnitude of the expression effect was used \u2013 indeed, we showed in the paper that many genes have only partially reduced expression (Hose et al. Figure 4 and 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the classification method used in the MLR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "a7925622-1787-4f14-b878-a6749e5fc4f6",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C66",
+      "claim": "Many genes have only partially reduced expression.",
+      "claim_type": "EXPLICIT",
+      "source": "For simplicity, we classified genes based on their maximum posterior probability, and no cutoff on the magnitude of the expression effect was used \u2013 indeed, we showed in the paper that many genes have only partially reduced expression (Hose et al. Figure 4 and 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from Hose et al. Figures 4 and 6.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "cf4f774a-8921-4291-8efd-be2e1f6fdb78",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C67",
+      "claim": "The 142 genes called Class 3A in the YPS1009 panel correspond to 17% FDR.",
+      "claim_type": "EXPLICIT",
+      "source": "The 142 genes called Class 3A in the YPS1009 panel correspond to 17% FDR; the 30 genes called Class 3A in the NCYC110 panel correspond to 5% FDR by this method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on FDR calculation using the method from Newton et al. 2004.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "37bbdb20-f097-4885-9942-c741b2e4c958",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C68",
+      "claim": "The 30 genes called Class 3A in the NCYC110 panel correspond to 5% FDR.",
+      "claim_type": "EXPLICIT",
+      "source": "The 142 genes called Class 3A in the YPS1009 panel correspond to 17% FDR; the 30 genes called Class 3A in the NCYC110 panel correspond to 5% FDR by this method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on FDR calculation using the method from Newton et al. 2004.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "2e7e521b-cd35-4aa9-90dc-e2de099197ad",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C69",
+      "claim": "For both strain panels, null proportion estimates from q-value calculator are remarkably close to the Class 1 proportion estimates from MLR.",
+      "claim_type": "EXPLICIT",
+      "source": "For both strain panels, these null proportion estimates are remarkably close to the Class 1 proportion estimates from MLR (in the YPS1009 panel: 14% by q-value and 15% by MLR; in the NCYC110 panel: 7% by q-value and 8% by MLR, both among the set of genes showing linear relationships on the log scale mRNA versus DNA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of two independent statistical methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "2d40d13b-5518-40b2-af4c-7e096e2b6583",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C70",
+      "claim": "In the YPS1009 panel, 14% null proportion was estimated by q-value and 15% by MLR.",
+      "claim_type": "EXPLICIT",
+      "source": "For both strain panels, these null proportion estimates are remarkably close to the Class 1 proportion estimates from MLR (in the YPS1009 panel: 14% by q-value and 15% by MLR; in the NCYC110 panel: 7% by q-value and 8% by MLR, both among the set of genes showing linear relationships on the log scale mRNA versus DNA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis using two methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "c404590c-f238-4fba-aa6f-dc1f473f7a8c",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C71",
+      "claim": "In the NCYC110 panel, 7% null proportion was estimated by q-value and 8% by MLR.",
+      "claim_type": "EXPLICIT",
+      "source": "For both strain panels, these null proportion estimates are remarkably close to the Class 1 proportion estimates from MLR (in the YPS1009 panel: 14% by q-value and 15% by MLR; in the NCYC110 panel: 7% by q-value and 8% by MLR, both among the set of genes showing linear relationships on the log scale mRNA versus DNA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis using two methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "d7cca483-6d96-4c08-8547-d8fc63f29ffc",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C72",
+      "claim": "The two methods used to identify genes expressed lower-than-expected in isogenic aneuploid versus euploid strains identified 245 genes for downstream analysis at an FDR between 5 and 17%.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the two methods we used to identify genes expressed lower-than-expected in isogenic aneuploid versus euploid strains identified 245 genes for downstream analysis. This amounts to 10 to 30% of genes depending on the strain and affected chromosome, or 15% of all genes assessed, at an FDR between 5 and 17%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes the results from two different analytical methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "e872ce1f-74d6-4b6a-8681-da7ff51983e5",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C73",
+      "claim": "There are genes on and off the amplified chromosome that have higher expression in the aneuploid strains.",
+      "claim_type": "EXPLICIT",
+      "source": "As published in Hose et al., there are genes on and off the amplified chromosome that have higher expression in the aneuploid strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from Hose et al.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "8e4f525e-ce97-4015-989a-6dca55bd4d2a",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C74",
+      "claim": "The MLR analysis reported nearly the same number of amplified genes with higher expression as with reduced expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The MLR analysis reported nearly the same number of amplified genes with higher expression as with reduced expression (Hose et al. Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from Hose et al. Table 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "f71b98f9-1ae9-4833-baf4-e3cbeb0dde05",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C75",
+      "claim": "Amplified genes with lower-than-expected expression are enriched for particular functional groups and for genes that are toxic when over-expressed in the lab strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, as we describe in Hose et al., the two tails of the distribution are enriched for different functional groups: whereas amplified genes with lower-than-expected expression are enriched for particular functional groups (see below) and for genes that are toxic when over-expressed in the lab strain, the set of amplified genes with higher-than-expected expression is enriched for genes encoding membrane and cell-surface proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by functional enrichment analysis from Hose et al.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "8f5f90da-37bc-4556-9655-2fcf95ba73fb",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C76",
+      "claim": "The set of amplified genes with higher-than-expected expression is enriched for genes encoding membrane and cell-surface proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, as we describe in Hose et al., the two tails of the distribution are enriched for different functional groups: whereas amplified genes with lower-than-expected expression are enriched for particular functional groups (see below) and for genes that are toxic when over-expressed in the lab strain, the set of amplified genes with higher-than-expected expression is enriched for genes encoding membrane and cell-surface proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by functional enrichment analysis from Hose et al.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "075675e0-4030-4f97-a887-eb1f798381c7",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C77",
+      "claim": "The higher-than-expected expression of amplified genes (and of genes on unamplified chromosomes) is likely an indirect response to the known influence that ploidy has on cell size/shape and flocculence.",
+      "claim_type": "EXPLICIT",
+      "source": "As we cited, the higher-than-expected expression of amplified genes (and of genes on unamplified chromosomes) is likely an indirect response to the known influence that ploidy has on cell size/shape and flocculence (Wu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference and is supported by citation to Wu et al. 2010.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "d58f2288-297f-4931-8e1d-4d8fd8ae7663",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C78",
+      "claim": "The set of genes with lower-than-expected expression in aneuploid strains is strongly enriched for certain functional groups, including genes known to feedback on their own expression, genes that are toxic when over-expressed, and genes that are under higher expression constraint but display elevated copy number variation (CNV) in wild populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The set of genes with lower-than-expected expression in aneuploid strains is strongly enriched for certain functional groups, including genes known to feedback on their own expression (see more below), genes that are toxic when over-expressed, and genes that are under higher expression constraint but display elevated copy number variation (CNV) in wild populations (Hose et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by functional enrichment analysis and evolutionary analysis from Hose et al. 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "98c412d6-9c1f-4e22-874f-772341cb5844",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C79",
+      "claim": "Such non-random associations are unlikely to occur if the gene selection was truly random and driven by noisy data.",
+      "claim_type": "EXPLICIT",
+      "source": "Such non-random associations are unlikely to occur if the gene selection was truly random and driven by noisy data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on statistical reasoning about the probability of observing enrichments by chance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "351c3c14-f8ed-4539-a39c-f3a893d0ebec",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C80",
+      "claim": "The genes identified do not reflect a common, indirect response to aneuploidy.",
+      "claim_type": "EXPLICIT",
+      "source": "We ruled out the possibility that these genes reflect a common, indirect response to aneuploidy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on analysis ruling out common responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "09fe67f8-a356-49c0-8bc5-fd29da4623f9",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C81",
+      "claim": "A subset of the genes identified could be responding transcriptionally to the particular chromosome amplified, rather than the gene's copy number per se.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is true that a subset of the genes we identified could be responding transcriptionally to the particular chromosome amplified, rather than the gene's copy number per se.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents acknowledgment of a potential confounding factor.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "e950a7da-32c9-4f70-8e45-5284705488c3",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C82",
+      "claim": "Attempts were made to minimize indirect transcriptional response effects in the original downstream analysis by pooling amplified genes from five aneuploid strains and across three amplified chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We attempted to minimize these effects in our original downstream analysis by pooling amplified genes from five aneuploid strains and across three amplified chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the strategy used to minimize confounding effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "82419d48-8f38-4244-bfe3-699608b026ba",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C83",
+      "claim": "Chromosome-specific responses to aneuploidy should affect groups of functionally related genes, whether or not the genes are amplified.",
+      "claim_type": "EXPLICIT",
+      "source": "As presented by Torres et al., chromosome-specific responses to aneuploidy should affect groups of functionally related genes, whether or not the genes are amplified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on reasoning about the expected pattern of indirect transcriptional responses.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "5e66c7e6-f212-4e5b-954d-82dbf99e9e78",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C84",
+      "claim": "Approximately 30% of the genes classified as potentially dosage compensated in the original analysis were removed after filtering for strain-specific functional group responses.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis removed ~30% of the genes classified as potentially dosage compensated in the original analysis; the majority of these were linked to mitochondrial function and is consistent with the common mitochondrial response we reported (even though, interestingly, the removed genes were not affected in multiple aneuploid strains).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the filtering analysis described in the Methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "5e97edb0-4830-48c2-a67d-5795216d7c3d",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C85",
+      "claim": "The majority of genes removed by filtering were linked to mitochondrial function and is consistent with the common mitochondrial response reported.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis removed ~30% of the genes classified as potentially dosage compensated in the original analysis; the majority of these were linked to mitochondrial function and is consistent with the common mitochondrial response we reported (even though, interestingly, the removed genes were not affected in multiple aneuploid strains).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by functional analysis of the removed genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "35781783-5b5c-4b1b-81b9-2ff68e96cf9e",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C86",
+      "claim": "The filtering procedure may remove genes that are legitimately dosage compensated, especially those that show only partial compensation.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that our procedure may remove genes that are legitimately dosage compensated, especially those that show only partial compensation, which could cause indirect effects on unamplified genes in the same functional category (e.g. partial compensation of a transcriptional repressor).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents acknowledgment of a limitation of the filtering approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "fc8caefd-4a15-4d73-8408-1f139b81e19e",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C87",
+      "claim": "The revised set of amplified genes with lower-than-expected expression remains enriched for cytosolic RPs (p=6e-7).",
+      "claim_type": "EXPLICIT",
+      "source": "The revised set of amplified genes with lower-than-expected expression remains enriched for functional groups that cannot be explained by common or chromosome-specific responses, including cytosolic RPs (p=6e-7), other proteins involved in ribosome biogenesis (p=5e-4), and an overlapping gene set linked to translation (p=3e-6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by functional enrichment analysis with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "fb9921e3-2c48-4c5e-a157-701c5c5fe068",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C88",
+      "claim": "The revised set of amplified genes with lower-than-expected expression remains enriched for other proteins involved in ribosome biogenesis (p=5e-4).",
+      "claim_type": "EXPLICIT",
+      "source": "The revised set of amplified genes with lower-than-expected expression remains enriched for functional groups that cannot be explained by common or chromosome-specific responses, including cytosolic RPs (p=6e-7), other proteins involved in ribosome biogenesis (p=5e-4), and an overlapping gene set linked to translation (p=3e-6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by functional enrichment analysis with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "3bc6e562-bc2c-408e-b4b4-c5736af2658d",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C89",
+      "claim": "The revised set of amplified genes with lower-than-expected expression remains enriched for an overlapping gene set linked to translation (p=3e-6).",
+      "claim_type": "EXPLICIT",
+      "source": "The revised set of amplified genes with lower-than-expected expression remains enriched for functional groups that cannot be explained by common or chromosome-specific responses, including cytosolic RPs (p=6e-7), other proteins involved in ribosome biogenesis (p=5e-4), and an overlapping gene set linked to translation (p=3e-6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by functional enrichment analysis with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "31bdd48f-f206-4713-9aa5-aba359ffa916",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C90",
+      "claim": "RPs are known to feedback on their own expression.",
+      "claim_type": "EXPLICIT",
+      "source": "RPs are known to feedback on their own expression (Warner et al., 1985; Vilardell and Warner, 1997; Dabeva and Warner, 1987; Dean et al., 1981; Tsay et al., 1988), and we validated the trend at two genes (Hose et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior work and validation experiments.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "d52e6298-7b67-4e15-ba0d-0560b33a171a",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C91",
+      "claim": "The trend of RP feedback on expression was validated at two genes.",
+      "claim_type": "EXPLICIT",
+      "source": "RPs are known to feedback on their own expression (Warner et al., 1985; Vilardell and Warner, 1997; Dabeva and Warner, 1987; Dean et al., 1981; Tsay et al., 1988), and we validated the trend at two genes (Hose et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by validation experiments from Hose et al. 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "d00ea8b3-8b36-4499-90ed-d7f041c24b24",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C92",
+      "claim": "The revised group is weakly enriched for sequence-specific DNA binding proteins (p=0.006).",
+      "claim_type": "EXPLICIT",
+      "source": "The revised group is also weakly enriched for sequence-specific DNA binding proteins (p=0.006), including several transcription factors that bind their own promoters and/or regulate their own expression (including, Hap1, Stb5, Bdf1, and Rsc30 [Venters et al., 2011; Deckert et al., 1995; Hon et al., 2005; Denby et al., 2012]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by functional enrichment analysis with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "85f50bbb-920e-411b-851b-b78ff751b5d0",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C93",
+      "claim": "The revised group includes several transcription factors that bind their own promoters and/or regulate their own expression, including Hap1, Stb5, Bdf1, and Rsc30.",
+      "claim_type": "EXPLICIT",
+      "source": "The revised group is also weakly enriched for sequence-specific DNA binding proteins (p=0.006), including several transcription factors that bind their own promoters and/or regulate their own expression (including, Hap1, Stb5, Bdf1, and Rsc30 [Venters et al., 2011; Deckert et al., 1995; Hon et al., 2005; Denby et al., 2012]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies characterizing these transcription factors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "7cf35d96-4158-4f3b-9f2e-d996fb1dd8b5",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C94",
+      "claim": "The functional enrichments remained significant when genes from each chromosome were held out (p<0.007, except for one case where DNA binding protein enrichment p=0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these enrichments remained significant when genes from each chromosome were held out (p<0.007, except for one case where DNA binding protein enrichment p=0.04), showing that the result is not skewed by one particular aneuploidy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by leave-one-out analysis showing robustness of the enrichments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "4fbe6879-d961-446d-8680-ea7120a6b55b",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C95",
+      "claim": "The functional categories enriched in amplified genes with lower-than-expected expression are not enriched among unamplified genes whose expression is affected by the common aneuploidy response.",
+      "claim_type": "EXPLICIT",
+      "source": "As cited in Hose et al., these categories are not enriched among unamplified genes whose expression is affected by the common aneuploidy response (Hose et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison analysis from Hose et al. 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "710fa66d-4851-49ce-a38f-16f0f872a425",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C96",
+      "claim": "The analysis is enriching for genes subject to dosage compensation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our analysis is clearly enriching for genes subject to dosage compensation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the functional enrichments and evolutionary signatures observed.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "7ab161ab-c62e-4a64-a15d-c6d62bfdc3ce",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C97",
+      "claim": "All of the evolutionary signatures reported in the original manuscript remain statistically significant on the reduced gene group.",
+      "claim_type": "EXPLICIT",
+      "source": "All of the evolutionary signatures we reported in the original manuscript remain statistically significant on this reduced gene group (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "abaa154e-73d7-4d8a-88d8-356bc5a015e8",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C98",
+      "claim": "The revised gene set enriched for dosage-compensated genes displays significantly higher levels of CNV in S. cerevisiae populations, compared to all genes and compared to amplified genes with proportionately elevated expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The revised gene set enriched for dosage-compensated genes displays significantly higher levels of CNV in S. cerevisiae populations, compared to all genes and compared to amplified genes with proportionately elevated expression (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "35e363a7-ea78-486c-b7fa-48dede5b4185",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C99",
+      "claim": "The revised gene set has significantly higher CNV buffering scores, indicating a higher level of CNV despite increased expression constraint.",
+      "claim_type": "EXPLICIT",
+      "source": "They also have significantly higher CNV buffering scores (Figure 1B, see Methods and (Hose et al., 2015)), indicating a higher level of CNV despite increased expression constraint.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "6269bba0-33a3-4512-8794-4d3d64e12edc",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C100",
+      "claim": "Unamplified genes with reduced expression show no increase in CNV propensity or buffering scores compared to the control group.",
+      "claim_type": "EXPLICIT",
+      "source": "But this is not the case: unamplified genes with reduced expression (identified either by edgeR or by the identical methods used to call dosage-compensated genes) show no increase in CNV propensity or buffering scores compared to the control group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by analysis of unamplified genes as a control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "dcf73698-3ccf-47d3-87dc-102dfc36c82a",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C101",
+      "claim": "The trends for the affected amplified genes remain if a more stringent threshold is used to call affected genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The trends for the affected amplified genes remain if we define genes using a more stringent threshold to call affected genes, if we remove from the analysis all genes belonging to any of the enriched functional groups, or if we separately hold out each amplified chromosome from the analysis (see Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by sensitivity analysis using different thresholds and filtering approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "5d1b7ae4-4b41-4205-be5e-c4386f492c1e",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C102",
+      "claim": "The trends for the affected amplified genes remain if all genes belonging to any of the enriched functional groups are removed from the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The trends for the affected amplified genes remain if we define genes using a more stringent threshold to call affected genes, if we remove from the analysis all genes belonging to any of the enriched functional groups, or if we separately hold out each amplified chromosome from the analysis (see Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by sensitivity analysis removing functional groups.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "da8f2b45-eec3-4265-bb96-dcd76dae263f",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C103",
+      "claim": "The trends for the affected amplified genes remain if each amplified chromosome is separately held out from the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The trends for the affected amplified genes remain if we define genes using a more stringent threshold to call affected genes, if we remove from the analysis all genes belonging to any of the enriched functional groups, or if we separately hold out each amplified chromosome from the analysis (see Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by leave-one-out analysis by chromosome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "a97b8368-c12d-4845-9a0a-9f08ff377d85",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C104",
+      "claim": "Genes with larger effect sizes in terms of the level of compensation have more striking evolutionary patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "A final prediction is that genes with larger effect sizes in terms of the level of compensation should have more striking evolutionary patterns, and this is indeed the case (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis shown in Figure 1 comparing genes partitioned by effect size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "739ee9e7-4ded-44e6-88ca-3448ac156c8f",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C105",
+      "claim": "The results cannot be explained as a secondary transcriptional response to the amplified chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the results we report cannot be explained as a secondary transcriptional response to the amplified chromosome \u2013 we believe that the group is legitimately enriched for genes subject to dosage control and that dosage compensation has an important effect on genome evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the multiple lines of evidence presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "3bf4bb72-41cf-4894-b44f-b75064740170",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C106",
+      "claim": "The group is legitimately enriched for genes subject to dosage control.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the results we report cannot be explained as a secondary transcriptional response to the amplified chromosome \u2013 we believe that the group is legitimately enriched for genes subject to dosage control and that dosage compensation has an important effect on genome evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the multiple lines of evidence presented.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "13ff6b55-c0cb-4e9b-9377-35b24c89c4f0",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C107",
+      "claim": "Dosage compensation has an important effect on genome evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the results we report cannot be explained as a secondary transcriptional response to the amplified chromosome \u2013 we believe that the group is legitimately enriched for genes subject to dosage control and that dosage compensation has an important effect on genome evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the observed evolutionary signatures.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "aec6544c-0de2-4011-9101-95ede08efce0",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C108",
+      "claim": "The original intention was not to claim that dosage compensation is 'widespread' in S. cerevisiae, but rather that it exists at a significant number of genes and has an important role in evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Our original intention in Hose et al. was not to claim that dosage compensation is 'widespread' in S. cerevisiae, but rather that it exists at a significant number of genes and has an important role in evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim clarifies the intent of the original study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "874d5ce5-3252-449f-a08c-dc8f9cd913c7",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C109",
+      "claim": "Dosage compensation does not function at most amplified genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We certainly agree with Torres et al. that dosage compensation does not function at most amplified genes, as seen for sex chromosomes in other organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents agreement with Torres et al. and is based on the data showing only a subset of genes are affected.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "49c7a92d-6c75-49d6-af74-7417d4d4f278",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C110",
+      "claim": "The goal was not to define individual genes subject to dosage compensation, but rather to investigate the group.",
+      "claim_type": "EXPLICIT",
+      "source": "Our goal was not to define individual genes subject to dosage compensation, but rather to investigate the group \u2013 we caution that no single gene from our lists should be taken as dosage compensated without orthogonal evidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim clarifies the approach and limitations of the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "ce273878-472a-494d-8222-157aeff361af",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C111",
+      "claim": "No single gene from the lists should be taken as dosage compensated without orthogonal evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Our goal was not to define individual genes subject to dosage compensation, but rather to investigate the group \u2013 we caution that no single gene from our lists should be taken as dosage compensated without orthogonal evidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents a caution about interpreting individual gene calls.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "48a509f1-bfcb-4846-8131-db20804f6e58",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C112",
+      "claim": "The revised gene set identified at the highest confidence encompasses 157 (13%) genes out of 1,243 interrogated across all the isogenic strain sets.",
+      "claim_type": "EXPLICIT",
+      "source": "In the end, the revised gene set we identified here at the highest confidence encompasses 157 (13%) genes out of 1,243 interrogated across all the isogenic strain sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the revised analysis described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "b5917970-de86-4817-98b4-9c0db9403037",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C113",
+      "claim": "Some of the genes identified, particularly those with only subtly reduced expression patterns, are false positive calls from the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "It is true that some of the genes we identified, particularly those with only subtly reduced expression patterns, are false positive calls from our analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents acknowledgment of limitations in the analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "d02c9509-2126-4ca4-be24-e5f55fb24fe6",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C114",
+      "claim": "The number of genes identified is inline with the 14% of dosage compensated genes reported by Springer and colleagues using GFP reporters for 730 genes interrogated.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the number of genes we identified is inline with the 14% of dosage compensated genes reported by Springer and colleagues (Springer et al., 2010) (using GFP reporters for 730 genes interrogated) and is consistent with (but on the lower end) our original report of 10\u201330%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison to an independent study by Springer et al. 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "1deb09ee-b290-4728-9f82-8a46e9186fec",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C115",
+      "claim": "The number of genes identified is consistent with (but on the lower end) the original report of 10\u201330%.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the number of genes we identified is inline with the 14% of dosage compensated genes reported by Springer and colleagues (Springer et al., 2010) (using GFP reporters for 730 genes interrogated) and is consistent with (but on the lower end) our original report of 10\u201330%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on comparison to the original estimates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "95bf5cfc-4ab5-40c1-8d77-2c3af23e7b78",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C116",
+      "claim": "Future work will clarify the precise number and identity of genes subject to dosage compensation.",
+      "claim_type": "EXPLICIT",
+      "source": "Future work will undoubtedly clarify the precise number and identity of genes subject to dosage compensation, as well as the genetic basis for phenotypic differences in aneuploidy tolerance in laboratory versus wild strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents speculation about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "5357b425-25d2-42b3-84ea-e572c01c22ed",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "claim_id": "C117",
+      "claim": "Future work will clarify the genetic basis for phenotypic differences in aneuploidy tolerance in laboratory versus wild strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Future work will undoubtedly clarify the precise number and identity of genes subject to dosage compensation, as well as the genetic basis for phenotypic differences in aneuploidy tolerance in laboratory versus wild strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents speculation about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "42fdafe8-76dd-45ec-af09-450f9fb83f12",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors defend their prior work (Hose et al.) showing that aneuploidy is frequently observed in wild S. cerevisiae strains, with 10-30% of amplified genes showing lower-than-expected expression, and that this gene group is enriched for dosage compensation mechanisms and displays unique evolutionary signatures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This result summarizes the context and main claims from prior work being defended. While the authors cite their published work, this manuscript is a rebuttal rather than presenting new primary data. The validity depends on the original Hose et al. study and the response to Torres et al.'s criticisms, which are addressed in subsequent results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "f9eac35d-98af-4823-8ef2-3f9294b03000",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors argue that technical limitations of Illumina sequencing and incomplete amplification near telomeres explain why mean chromosome copy numbers are not precise integers, and that the vast majority of cells in analyzed cultures were aneuploid despite Torres et al.'s criticisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14 correctly identify known technical limitations of sequencing technology. C15 is a reasonable inference from Torres et al.'s own data. C17-C20 acknowledge variability in some strains while documenting stability in most cases. The reasoning is sound and addresses Torres et al.'s specific criticisms appropriately.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "12b9a47b-4745-4d73-843d-5c216d6cbf8c",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Wild yeast strains tolerate aneuploidy well (30% prevalence, minimal growth defects, stable chromosomes >200 generations, no stress response activation), while the laboratory W303 strain shows severe aneuploidy intolerance (70% growth reduction, rapid chromosome loss in ~20 generations, strong stress response activation).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result is well-supported by multiple converging lines of evidence from the original Hose et al. study: prevalence data (C21), growth measurements (C23, C25), chromosome stability data (C27-C28), and stress response profiling (C30-C32). The contrast between wild and lab strains is documented with specific quantitative measurements and appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "b5022de2-700f-4b73-824d-5e372f64eeb3",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The prevalence of aneuploidy in wild yeast is consistent with multiple independent studies, and the W303 laboratory strain should not be used as the sole representative of S. cerevisiae due to its atypical characteristics including six auxotrophies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 are well-supported by multiple independent citations to other studies reporting aneuploidy in wild and industrial strains. C37 acknowledges unpublished data as a limitation. C38 is a reasonable inference given the documented differences between W303 and wild strains.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "f3511ffe-82eb-4d3b-aa0c-f0a6894b4c4a",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Three complementary analyses identified genes with lower-than-expected expression in aneuploid strains: a survey analysis (838/2204 genes, 38%), an isogenic strain pairs analysis (163/882 genes, 18%), and an MLR analysis (172/773 genes, 22%), yielding a combined set of 245 genes (15% of 1655 assessed genes).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The three analytical approaches are clearly described with specific numbers and percentages. C44 acknowledges an error in the original abstract. The combination of multiple independent methods strengthening confidence in the gene set is appropriate, though the FDR estimates and potential confounders are addressed in later results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "32fb4c2e-136c-4fe0-9352-a1f80518423d",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Multiple normalization methods were compared (RPKM, RPKM excluding amplified chromosomes, spike-in normalization), showing that RPKM is valid and that identical normalization procedures for DNA and RNA produced comparable data centers, with no evidence of systematic misnormalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison of normalization methods is well-documented in Table 1 (C48, C62). The spike-in approach is methodologically sound (C46-C47), and the authors appropriately acknowledge when it failed (C49). The similar global data centers for DNA and RNA (C51) provide evidence against systematic bias.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "46ecd55e-9d25-40cb-9a3e-578731c31215",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The thresholding method for identifying genes with lower-than-expected expression used gene-specific cutoffs based on measured DNA ratios minus 1 SD, required genes to meet criteria in both biological replicates and in non-isogenic strain pairs (4 biological replicates total), with an estimated FDR below 15%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methodology is clearly described with appropriate statistical reasoning (C54-C57). The requirement for consistency across 4 biological replicates (C58-C59) is stringent. The SD values for mRNA ratios (0.12-0.3) and DNA ratios (0.17-0.24) are in similar ranges (C61-C62), supporting the validity of the threshold approach. FDR estimation by permutation (C60) is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "18671225-f353-4281-82e4-0e2460706fce",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The MLR analysis used all replicate measurements simultaneously (not averaged), classified genes by maximum posterior probability, and identified genes with FDRs of 5-17%. Independent validation using q-value methods yielded remarkably similar null proportion estimates (14% vs 15% for YPS1009; 7% vs 8% for NCYC110).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The MLR methodology is appropriate (C63-C64), and the classification approach is clearly described (C65). The FDR estimates (C67-C68) are reasonable. The independent validation using q-value methods (C69-C71) provides strong support for the MLR results, with remarkably close agreement between two different statistical approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "f656191e-2057-4f56-84c6-caa63a7db743",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Both amplified and unamplified genes show expression changes in aneuploid strains, with similar numbers of genes showing higher versus lower expression. However, the two groups are enriched for different functional categories: genes with lower expression are enriched for toxic-when-overexpressed genes, while genes with higher expression are enriched for membrane/cell-surface proteins, likely reflecting indirect ploidy effects on cell morphology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The observation of bidirectional expression changes (C73-C74) is well-documented. The differential functional enrichments (C75-C76) are supported by data. The interpretation that higher expression reflects indirect ploidy effects on cell morphology (C77) is reasonable and supported by citation to Wu et al. 2010.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "0d3bdc20-2b0e-4915-b06a-8750f732c7b6",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Genes with lower-than-expected expression show non-random enrichments for specific functional groups (genes with feedback regulation, toxic when overexpressed, high CNV with expression constraint). After filtering to remove potential indirect chromosome-specific responses (~30% of genes, mostly mitochondrial), the enrichments remain significant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The non-random functional enrichments (C78) are statistically significant and unlikely to occur by chance (C79). The authors appropriately acknowledge potential confounding by indirect responses (C81) and implement filtering to address this (C84-C85). The persistence of enrichments after filtering (addressed in subsequent claims) supports the validity of the gene set.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "28117464-c7d7-43d8-9090-e345a74bd61e",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "After filtering for indirect responses, the revised gene set remains significantly enriched for cytosolic ribosomal proteins (p=6e-7), ribosome biogenesis proteins (p=5e-4), translation-related genes (p=3e-6), and DNA binding proteins (p=0.006). These enrichments are robust to leave-one-chromosome-out analysis and are not found in unamplified genes affected by common aneuploidy responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The functional enrichments are highly statistically significant (C87-C89, C92) with appropriate p-values. The biological relevance is supported by known feedback mechanisms for ribosomal proteins (C90-C91) and transcription factors (C93). The leave-one-out analysis (C94) demonstrates robustness. The negative control using unamplified genes (C95) strengthens the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "857f4000-0251-4206-955f-732ff2daaef8",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The revised gene set shows statistically significant evolutionary signatures: higher CNV levels, higher CNV buffering scores (indicating CNV despite expression constraint), with stronger patterns for genes with larger compensation effect sizes. These signatures are robust to multiple sensitivity analyses and are not observed in unamplified genes with reduced expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The evolutionary signatures (C97-C99) are supported by data in Figure 1. The negative control using unamplified genes (C100) is critical and shows the signatures are specific to the identified gene set. Multiple sensitivity analyses (C101-C103) demonstrate robustness. The dose-response relationship between effect size and evolutionary signatures (C104) provides additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "e9179782-384c-44a4-bbeb-515a750633fe",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The identified gene set is legitimately enriched for dosage-compensated genes and cannot be explained by secondary transcriptional responses to chromosome amplification. Dosage compensation has important effects on genome evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This conclusion (C105-C107) is well-supported by the convergence of multiple lines of evidence: functional enrichments, evolutionary signatures, negative controls with unamplified genes, robustness to filtering and sensitivity analyses, and dose-response relationships. The inference is logical given the presented data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "9acd007e-da19-4678-98b2-f9a66e8574bc",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The revised analysis identifies 157 genes (13% of 1243 interrogated) as dosage-compensated at high confidence. This is consistent with independent estimates (14% by Springer et al. 2010) and the lower end of the original 10-30% range. Individual gene calls may include false positives and require orthogonal validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The revised estimate (C112) is clearly stated. The acknowledgment of false positives (C113) and need for orthogonal validation (C111) is appropriate scientific caution. The consistency with independent estimates (C114) and the original range (C115) supports the validity of the approach. The clarification of goals (C108, C110) appropriately frames the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    },
+    {
+      "id": "6c7e1796-e3e8-4e20-8f8a-983546bea5eb",
+      "content_id": "119a94b1-9a8d-49a6-bcfa-109c6be4f926",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Future work is needed to clarify the precise number and identity of dosage-compensated genes and the genetic basis for aneuploidy tolerance differences between laboratory and wild strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are reasonable statements about future research directions (C116-C117) that acknowledge limitations of the current work and identify important open questions. This is appropriate for a scientific manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:01:39.598787Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e18593c7-97df-4db2-93af-17eccd47423b",
+      "result_id": "42fdafe8-76dd-45ec-af09-450f9fb83f12"
+    },
+    {
+      "claim_id": "4822c28c-a1b6-4594-a299-4fa434aecd2f",
+      "result_id": "42fdafe8-76dd-45ec-af09-450f9fb83f12"
+    },
+    {
+      "claim_id": "7dd8d880-487e-4435-9959-a81824b8327f",
+      "result_id": "42fdafe8-76dd-45ec-af09-450f9fb83f12"
+    },
+    {
+      "claim_id": "3324f0d1-5336-42aa-b538-e70b80f3e094",
+      "result_id": "42fdafe8-76dd-45ec-af09-450f9fb83f12"
+    },
+    {
+      "claim_id": "d6ca2489-4543-4d72-946a-84053c087b81",
+      "result_id": "42fdafe8-76dd-45ec-af09-450f9fb83f12"
+    },
+    {
+      "claim_id": "8d06aac2-5bc8-4a94-b69f-442aeec75e13",
+      "result_id": "42fdafe8-76dd-45ec-af09-450f9fb83f12"
+    },
+    {
+      "claim_id": "e49721d8-d549-4e56-8066-a9b4814aebf0",
+      "result_id": "f9eac35d-98af-4823-8ef2-3f9294b03000"
+    },
+    {
+      "claim_id": "aefe6f98-5e6a-461b-b78b-0d6b1fa07369",
+      "result_id": "f9eac35d-98af-4823-8ef2-3f9294b03000"
+    },
+    {
+      "claim_id": "2e1a72ff-c1d7-4185-ade1-ea50fbc7d0cc",
+      "result_id": "f9eac35d-98af-4823-8ef2-3f9294b03000"
+    },
+    {
+      "claim_id": "e276fdc6-4cdc-46ab-bc01-2ab3a3b96200",
+      "result_id": "f9eac35d-98af-4823-8ef2-3f9294b03000"
+    },
+    {
+      "claim_id": "22bf3d1e-1365-44e8-a886-46fa7c918710",
+      "result_id": "f9eac35d-98af-4823-8ef2-3f9294b03000"
+    },
+    {
+      "claim_id": "10bdd204-f5a4-4f3e-8bfe-157fb0fc038a",
+      "result_id": "f9eac35d-98af-4823-8ef2-3f9294b03000"
+    },
+    {
+      "claim_id": "cbcae977-64e9-4bfa-ab41-19c39e3f586f",
+      "result_id": "f9eac35d-98af-4823-8ef2-3f9294b03000"
+    },
+    {
+      "claim_id": "9eccffcc-86d2-4f36-aff3-3e060f549734",
+      "result_id": "f9eac35d-98af-4823-8ef2-3f9294b03000"
+    },
+    {
+      "claim_id": "75187ec7-ef70-43a7-98d2-19059cc4e388",
+      "result_id": "12b9a47b-4745-4d73-843d-5c216d6cbf8c"
+    },
+    {
+      "claim_id": "72b393d5-19b2-48f4-97d5-dc786b3d0bad",
+      "result_id": "12b9a47b-4745-4d73-843d-5c216d6cbf8c"
+    },
+    {
+      "claim_id": "f1c4c140-7a2d-4de1-af11-794ce21043e1",
+      "result_id": "12b9a47b-4745-4d73-843d-5c216d6cbf8c"
+    },
+    {
+      "claim_id": "df48bb47-efdd-4653-9c46-12ece6d88911",
+      "result_id": "12b9a47b-4745-4d73-843d-5c216d6cbf8c"
+    },
+    {
+      "claim_id": "ef2274e2-5dd8-4475-8dc2-e90904d15bae",
+      "result_id": "12b9a47b-4745-4d73-843d-5c216d6cbf8c"
+    },
+    {
+      "claim_id": "647fdcef-bcf2-4616-bd5b-ca0063428a7f",
+      "result_id": "12b9a47b-4745-4d73-843d-5c216d6cbf8c"
+    },
+    {
+      "claim_id": "c27f231f-a5c4-4fae-9902-5464bc4fca92",
+      "result_id": "12b9a47b-4745-4d73-843d-5c216d6cbf8c"
+    },
+    {
+      "claim_id": "814c08b3-4124-407e-b3be-0ea6a3520325",
+      "result_id": "12b9a47b-4745-4d73-843d-5c216d6cbf8c"
+    },
+    {
+      "claim_id": "990bbc1f-8bcf-4b31-a34a-83c3cf6427a2",
+      "result_id": "12b9a47b-4745-4d73-843d-5c216d6cbf8c"
+    },
+    {
+      "claim_id": "1799f2b6-425f-4f3d-bd72-31dd7286a6fa",
+      "result_id": "12b9a47b-4745-4d73-843d-5c216d6cbf8c"
+    },
+    {
+      "claim_id": "63902e25-f4ec-45f0-bc69-d6665110131b",
+      "result_id": "12b9a47b-4745-4d73-843d-5c216d6cbf8c"
+    },
+    {
+      "claim_id": "51b6dadf-7c36-490c-8e69-cfcb71788ee7",
+      "result_id": "12b9a47b-4745-4d73-843d-5c216d6cbf8c"
+    },
+    {
+      "claim_id": "d7fcfe98-bbcf-4cf4-bffd-0b2031708fd2",
+      "result_id": "12b9a47b-4745-4d73-843d-5c216d6cbf8c"
+    },
+    {
+      "claim_id": "9c82e07a-d6cb-4d40-94fb-60e4266dc1a3",
+      "result_id": "b5022de2-700f-4b73-824d-5e372f64eeb3"
+    },
+    {
+      "claim_id": "74b0caf6-d907-4b8d-a8ed-eb287738f2d3",
+      "result_id": "b5022de2-700f-4b73-824d-5e372f64eeb3"
+    },
+    {
+      "claim_id": "9251f7ad-2c8a-4292-9c23-629946ca02fc",
+      "result_id": "b5022de2-700f-4b73-824d-5e372f64eeb3"
+    },
+    {
+      "claim_id": "9fd77ada-0045-4353-bf75-2cd06c02c1cb",
+      "result_id": "b5022de2-700f-4b73-824d-5e372f64eeb3"
+    },
+    {
+      "claim_id": "f66d748b-c0c9-47a4-9a91-813f31c7e512",
+      "result_id": "b5022de2-700f-4b73-824d-5e372f64eeb3"
+    },
+    {
+      "claim_id": "f391d857-72cb-4a55-af75-7b90d7bbf5b2",
+      "result_id": "f3511ffe-82eb-4d3b-aa0c-f0a6894b4c4a"
+    },
+    {
+      "claim_id": "9905b08b-91da-4eaa-bbe1-3be7a13245ff",
+      "result_id": "f3511ffe-82eb-4d3b-aa0c-f0a6894b4c4a"
+    },
+    {
+      "claim_id": "2bfd288f-b4c8-4ebf-81c7-5ad8cd2bc364",
+      "result_id": "f3511ffe-82eb-4d3b-aa0c-f0a6894b4c4a"
+    },
+    {
+      "claim_id": "685fd733-47f2-4dbc-bd89-e0173756d7a1",
+      "result_id": "f3511ffe-82eb-4d3b-aa0c-f0a6894b4c4a"
+    },
+    {
+      "claim_id": "db1ee45a-a349-4199-8cde-af5bc4f07740",
+      "result_id": "f3511ffe-82eb-4d3b-aa0c-f0a6894b4c4a"
+    },
+    {
+      "claim_id": "aba757ee-cae8-494b-b60c-a202813dd0ba",
+      "result_id": "f3511ffe-82eb-4d3b-aa0c-f0a6894b4c4a"
+    },
+    {
+      "claim_id": "ae6beb71-643d-4025-a295-7adc83561e68",
+      "result_id": "32fb4c2e-136c-4fe0-9352-a1f80518423d"
+    },
+    {
+      "claim_id": "6f712043-8dba-4a74-b116-1b16c542ef26",
+      "result_id": "32fb4c2e-136c-4fe0-9352-a1f80518423d"
+    },
+    {
+      "claim_id": "77df56ae-f39d-48cd-83a9-19c035d26431",
+      "result_id": "32fb4c2e-136c-4fe0-9352-a1f80518423d"
+    },
+    {
+      "claim_id": "c6d4f7c3-5c45-4a07-b04c-606add64fd17",
+      "result_id": "32fb4c2e-136c-4fe0-9352-a1f80518423d"
+    },
+    {
+      "claim_id": "a8c507f1-7ef7-4927-9dc2-47b127f797cc",
+      "result_id": "32fb4c2e-136c-4fe0-9352-a1f80518423d"
+    },
+    {
+      "claim_id": "577fe474-10ac-4865-82fb-dc992fa06403",
+      "result_id": "32fb4c2e-136c-4fe0-9352-a1f80518423d"
+    },
+    {
+      "claim_id": "030edf95-7020-4a25-9986-f076eb1de9c6",
+      "result_id": "32fb4c2e-136c-4fe0-9352-a1f80518423d"
+    },
+    {
+      "claim_id": "c8dc2b60-eb5d-4ad8-82b6-725086929d59",
+      "result_id": "32fb4c2e-136c-4fe0-9352-a1f80518423d"
+    },
+    {
+      "claim_id": "70cdd973-0f22-4065-8159-4104fe537135",
+      "result_id": "46ecd55e-9d25-40cb-9a3e-578731c31215"
+    },
+    {
+      "claim_id": "2651d88d-7caa-4ea9-ae12-3e41bd21b89f",
+      "result_id": "46ecd55e-9d25-40cb-9a3e-578731c31215"
+    },
+    {
+      "claim_id": "d123b3d9-a182-4132-b5bc-3b85854518d8",
+      "result_id": "46ecd55e-9d25-40cb-9a3e-578731c31215"
+    },
+    {
+      "claim_id": "1770d218-294c-4593-b56c-1d95112219b3",
+      "result_id": "46ecd55e-9d25-40cb-9a3e-578731c31215"
+    },
+    {
+      "claim_id": "046b93aa-3926-4667-9753-f9ea0166e8d1",
+      "result_id": "46ecd55e-9d25-40cb-9a3e-578731c31215"
+    },
+    {
+      "claim_id": "7b1ac1da-366e-42c5-9691-8b931d93c1ee",
+      "result_id": "46ecd55e-9d25-40cb-9a3e-578731c31215"
+    },
+    {
+      "claim_id": "28b478f0-7fe9-484f-b99f-df579d9e357e",
+      "result_id": "46ecd55e-9d25-40cb-9a3e-578731c31215"
+    },
+    {
+      "claim_id": "6600e487-ed84-4f52-b9cc-f10cb9d0f464",
+      "result_id": "46ecd55e-9d25-40cb-9a3e-578731c31215"
+    },
+    {
+      "claim_id": "f71a92a8-0e2b-4344-b670-37a7f897433c",
+      "result_id": "46ecd55e-9d25-40cb-9a3e-578731c31215"
+    },
+    {
+      "claim_id": "9a5fbcec-747d-4ca3-8ef1-df5bb23d9091",
+      "result_id": "46ecd55e-9d25-40cb-9a3e-578731c31215"
+    },
+    {
+      "claim_id": "f20eb74a-74b9-4f2c-af81-29a9e0a1c9c6",
+      "result_id": "18671225-f353-4281-82e4-0e2460706fce"
+    },
+    {
+      "claim_id": "b196378a-d6ce-42b4-ad60-e3238cefe555",
+      "result_id": "18671225-f353-4281-82e4-0e2460706fce"
+    },
+    {
+      "claim_id": "83b8a843-46be-4072-a745-d7af69ff355b",
+      "result_id": "18671225-f353-4281-82e4-0e2460706fce"
+    },
+    {
+      "claim_id": "a7925622-1787-4f14-b878-a6749e5fc4f6",
+      "result_id": "18671225-f353-4281-82e4-0e2460706fce"
+    },
+    {
+      "claim_id": "cf4f774a-8921-4291-8efd-be2e1f6fdb78",
+      "result_id": "18671225-f353-4281-82e4-0e2460706fce"
+    },
+    {
+      "claim_id": "37bbdb20-f097-4885-9942-c741b2e4c958",
+      "result_id": "18671225-f353-4281-82e4-0e2460706fce"
+    },
+    {
+      "claim_id": "2e7e521b-cd35-4aa9-90dc-e2de099197ad",
+      "result_id": "18671225-f353-4281-82e4-0e2460706fce"
+    },
+    {
+      "claim_id": "2d40d13b-5518-40b2-af4c-7e096e2b6583",
+      "result_id": "18671225-f353-4281-82e4-0e2460706fce"
+    },
+    {
+      "claim_id": "c404590c-f238-4fba-aa6f-dc1f473f7a8c",
+      "result_id": "18671225-f353-4281-82e4-0e2460706fce"
+    },
+    {
+      "claim_id": "d7cca483-6d96-4c08-8547-d8fc63f29ffc",
+      "result_id": "18671225-f353-4281-82e4-0e2460706fce"
+    },
+    {
+      "claim_id": "e872ce1f-74d6-4b6a-8681-da7ff51983e5",
+      "result_id": "f656191e-2057-4f56-84c6-caa63a7db743"
+    },
+    {
+      "claim_id": "8e4f525e-ce97-4015-989a-6dca55bd4d2a",
+      "result_id": "f656191e-2057-4f56-84c6-caa63a7db743"
+    },
+    {
+      "claim_id": "f71b98f9-1ae9-4833-baf4-e3cbeb0dde05",
+      "result_id": "f656191e-2057-4f56-84c6-caa63a7db743"
+    },
+    {
+      "claim_id": "8f5f90da-37bc-4556-9655-2fcf95ba73fb",
+      "result_id": "f656191e-2057-4f56-84c6-caa63a7db743"
+    },
+    {
+      "claim_id": "075675e0-4030-4f97-a887-eb1f798381c7",
+      "result_id": "f656191e-2057-4f56-84c6-caa63a7db743"
+    },
+    {
+      "claim_id": "d58f2288-297f-4931-8e1d-4d8fd8ae7663",
+      "result_id": "0d3bdc20-2b0e-4915-b06a-8750f732c7b6"
+    },
+    {
+      "claim_id": "98c412d6-9c1f-4e22-874f-772341cb5844",
+      "result_id": "0d3bdc20-2b0e-4915-b06a-8750f732c7b6"
+    },
+    {
+      "claim_id": "351c3c14-f8ed-4539-a39c-f3a893d0ebec",
+      "result_id": "0d3bdc20-2b0e-4915-b06a-8750f732c7b6"
+    },
+    {
+      "claim_id": "09fe67f8-a356-49c0-8bc5-fd29da4623f9",
+      "result_id": "0d3bdc20-2b0e-4915-b06a-8750f732c7b6"
+    },
+    {
+      "claim_id": "e950a7da-32c9-4f70-8e45-5284705488c3",
+      "result_id": "0d3bdc20-2b0e-4915-b06a-8750f732c7b6"
+    },
+    {
+      "claim_id": "82419d48-8f38-4244-bfe3-699608b026ba",
+      "result_id": "0d3bdc20-2b0e-4915-b06a-8750f732c7b6"
+    },
+    {
+      "claim_id": "5e66c7e6-f212-4e5b-954d-82dbf99e9e78",
+      "result_id": "0d3bdc20-2b0e-4915-b06a-8750f732c7b6"
+    },
+    {
+      "claim_id": "5e97edb0-4830-48c2-a67d-5795216d7c3d",
+      "result_id": "0d3bdc20-2b0e-4915-b06a-8750f732c7b6"
+    },
+    {
+      "claim_id": "35781783-5b5c-4b1b-81b9-2ff68e96cf9e",
+      "result_id": "0d3bdc20-2b0e-4915-b06a-8750f732c7b6"
+    },
+    {
+      "claim_id": "fc8caefd-4a15-4d73-8408-1f139b81e19e",
+      "result_id": "28117464-c7d7-43d8-9090-e345a74bd61e"
+    },
+    {
+      "claim_id": "fb9921e3-2c48-4c5e-a157-701c5c5fe068",
+      "result_id": "28117464-c7d7-43d8-9090-e345a74bd61e"
+    },
+    {
+      "claim_id": "3bc6e562-bc2c-408e-b4b4-c5736af2658d",
+      "result_id": "28117464-c7d7-43d8-9090-e345a74bd61e"
+    },
+    {
+      "claim_id": "31bdd48f-f206-4713-9aa5-aba359ffa916",
+      "result_id": "28117464-c7d7-43d8-9090-e345a74bd61e"
+    },
+    {
+      "claim_id": "d52e6298-7b67-4e15-ba0d-0560b33a171a",
+      "result_id": "28117464-c7d7-43d8-9090-e345a74bd61e"
+    },
+    {
+      "claim_id": "d00ea8b3-8b36-4499-90ed-d7f041c24b24",
+      "result_id": "28117464-c7d7-43d8-9090-e345a74bd61e"
+    },
+    {
+      "claim_id": "85f50bbb-920e-411b-851b-b78ff751b5d0",
+      "result_id": "28117464-c7d7-43d8-9090-e345a74bd61e"
+    },
+    {
+      "claim_id": "7cf35d96-4158-4f3b-9f2e-d996fb1dd8b5",
+      "result_id": "28117464-c7d7-43d8-9090-e345a74bd61e"
+    },
+    {
+      "claim_id": "4fbe6879-d961-446d-8680-ea7120a6b55b",
+      "result_id": "28117464-c7d7-43d8-9090-e345a74bd61e"
+    },
+    {
+      "claim_id": "710fa66d-4851-49ce-a38f-16f0f872a425",
+      "result_id": "28117464-c7d7-43d8-9090-e345a74bd61e"
+    },
+    {
+      "claim_id": "7ab161ab-c62e-4a64-a15d-c6d62bfdc3ce",
+      "result_id": "857f4000-0251-4206-955f-732ff2daaef8"
+    },
+    {
+      "claim_id": "abaa154e-73d7-4d8a-88d8-356bc5a015e8",
+      "result_id": "857f4000-0251-4206-955f-732ff2daaef8"
+    },
+    {
+      "claim_id": "35e363a7-ea78-486c-b7fa-48dede5b4185",
+      "result_id": "857f4000-0251-4206-955f-732ff2daaef8"
+    },
+    {
+      "claim_id": "6269bba0-33a3-4512-8794-4d3d64e12edc",
+      "result_id": "857f4000-0251-4206-955f-732ff2daaef8"
+    },
+    {
+      "claim_id": "dcf73698-3ccf-47d3-87dc-102dfc36c82a",
+      "result_id": "857f4000-0251-4206-955f-732ff2daaef8"
+    },
+    {
+      "claim_id": "5d1b7ae4-4b41-4205-be5e-c4386f492c1e",
+      "result_id": "857f4000-0251-4206-955f-732ff2daaef8"
+    },
+    {
+      "claim_id": "da8f2b45-eec3-4265-bb96-dcd76dae263f",
+      "result_id": "857f4000-0251-4206-955f-732ff2daaef8"
+    },
+    {
+      "claim_id": "a97b8368-c12d-4845-9a0a-9f08ff377d85",
+      "result_id": "857f4000-0251-4206-955f-732ff2daaef8"
+    },
+    {
+      "claim_id": "739ee9e7-4ded-44e6-88ca-3448ac156c8f",
+      "result_id": "e9179782-384c-44a4-bbeb-515a750633fe"
+    },
+    {
+      "claim_id": "3bf4bb72-41cf-4894-b44f-b75064740170",
+      "result_id": "e9179782-384c-44a4-bbeb-515a750633fe"
+    },
+    {
+      "claim_id": "13ff6b55-c0cb-4e9b-9377-35b24c89c4f0",
+      "result_id": "e9179782-384c-44a4-bbeb-515a750633fe"
+    },
+    {
+      "claim_id": "aec6544c-0de2-4011-9101-95ede08efce0",
+      "result_id": "9acd007e-da19-4678-98b2-f9a66e8574bc"
+    },
+    {
+      "claim_id": "874d5ce5-3252-449f-a08c-dc8f9cd913c7",
+      "result_id": "9acd007e-da19-4678-98b2-f9a66e8574bc"
+    },
+    {
+      "claim_id": "49c7a92d-6c75-49d6-af74-7417d4d4f278",
+      "result_id": "9acd007e-da19-4678-98b2-f9a66e8574bc"
+    },
+    {
+      "claim_id": "ce273878-472a-494d-8222-157aeff361af",
+      "result_id": "9acd007e-da19-4678-98b2-f9a66e8574bc"
+    },
+    {
+      "claim_id": "48a509f1-bfcb-4846-8131-db20804f6e58",
+      "result_id": "9acd007e-da19-4678-98b2-f9a66e8574bc"
+    },
+    {
+      "claim_id": "b5917970-de86-4817-98b4-9c0db9403037",
+      "result_id": "9acd007e-da19-4678-98b2-f9a66e8574bc"
+    },
+    {
+      "claim_id": "d02c9509-2126-4ca4-be24-e5f55fb24fe6",
+      "result_id": "9acd007e-da19-4678-98b2-f9a66e8574bc"
+    },
+    {
+      "claim_id": "1deb09ee-b290-4728-9f82-8a46e9186fec",
+      "result_id": "9acd007e-da19-4678-98b2-f9a66e8574bc"
+    },
+    {
+      "claim_id": "95bf5cfc-4ab5-40c1-8d77-2c3af23e7b78",
+      "result_id": "6c7e1796-e3e8-4e20-8f8a-983546bea5eb"
+    },
+    {
+      "claim_id": "5357b425-25d2-42b3-84ea-e572c01c22ed",
+      "result_id": "6c7e1796-e3e8-4e20-8f8a-983546bea5eb"
+    }
+  ],
+  "comparisons": []
+}

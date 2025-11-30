@@ -1,0 +1,215 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Single-cell RNA-sequencing of 115 muscle cells from 10 AP regions identified 44 regionally expressed genes (mRGs), including multiple Wnt and FGFRL genes. The approach involved FACS isolation, qRT-PCR screening for muscle markers, PCA-based cell identification, and ISH validation, with 26 genes being newly identified as regionally expressed in muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27-C35 collectively describe a well-executed experimental workflow with appropriate quality controls (C28, C29, C31, C32), validation by ISH (C33, C34), and spatial coherence demonstrated by hierarchical clustering (C35). The methodology is clearly described with sufficient detail for reproducibility, and the identification of 44 mRGs is supported by multiple lines of evidence including sequencing data, statistical analysis, and ISH validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The 44 identified mRGs are predominantly Wnt-signaling components, Hox transcription factors, and FGFRL proteins. All six planarian FGFRL genes were identified as AP mRGs, with extensive co-expression of multiple mRGs observed in single muscle cells across the AP axis, including co-expression of FGFRL and Wnt-pathway genes in overlapping expression domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C44 are well-supported by the data shown in Figures 1E, 2B, and 2C. The compositional analysis (C36) is directly shown in Figure 1E, the identification of all six FGFRL genes (C38, C39) is demonstrated in the phylogenetic analysis and expression data, and co-expression patterns (C40-C44) are validated by both single-cell sequencing heatmaps and FISH experiments showing spatial overlap.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "\u03b2-catenin-1 RNAi causes ectopic head formation during tissue turnover, accompanied by temporal changes in FGFRL expression domains. Early timepoints show subtle posterior expansions of ndl-5 and ndl-2, followed by ectopic ndl-5 expression preceding ndl-2, and finally ectopic ndl-3 expression in fully formed ectopic heads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 describe a temporal progression of gene expression changes that correlate with anatomical changes. C45 is supported by prior literature citations, while C46-C48 are demonstrated in Figure 2\u2014figure supplement 3 showing the sequential expression changes. C49 appropriately infers coordination between anatomical and molecular changes based on the temporal data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "RNAi of single or combinations of Hox genes and a subset of FGFRL genes (ndl-1, ndl-2, ndl-4, ndl-5) did not produce robust abnormal phenotypes, and expression of other FGFRL family members was not affected by these RNAi conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 report negative results from the RNAi screen, which are important for understanding gene function. These are supported by Supplementary file 1G (C51, C52) and Figure 2\u2014figure supplement 4 (C53). The lack of phenotype could indicate functional redundancy, insufficient knockdown, or lack of role in the processes examined, but the data are clearly presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "ndl-3 and wntP-2 inhibition causes ectopic mouth and pharynx formation in the trunk region. The phenotype emerges during both tissue turnover and regeneration, with double RNAi showing synergistic effects. Ectopic pharynges are functional, displaying independent food-searching behavior, and always integrate into the intestine through esophagi despite variable positioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C62, C66-C69 describe a striking trunk patterning phenotype with strong experimental support. The phenotype is demonstrated in multiple figures (Figure 3A-D, Figure 3\u2014figure supplement 1), synergy is statistically validated (C60, Fisher's exact test), functionality is shown in Video 1 (C68, C69), and tissue organization plasticity is documented (C67). The convergent evidence from multiple experimental approaches strongly supports these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "ndl-3 and wntP-2 RNAi causes selective changes in trunk mRG expression domains without affecting head or tail patterns. The ndl-3 domain expands posteriorly in wntP-2 RNAi, while wntP-2 expression is reduced in ndl-3 RNAi, indicating that these genes are required for maintaining normal trunk tissue pattern but not head or tail patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 describe region-specific effects on the mRG expression map, supported by FISH data in Figure 4 and Figure 4\u2014figure supplement 1. The selective nature of the changes (anterior-most and posterior domains unchanged, trunk domains affected) is clearly demonstrated with quantification. The inference that effects are local to the trunk (C76, C77) is well-supported by the spatial specificity of the observed changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "fz5/8-4, ndk, and wntA control head patterning in planarians. RNAi of these genes causes ectopic eye formation and posterior brain expansion in both uninjured and regenerating animals, with double RNAi showing synergistic effects. Multiple neuron classes from different head regions expand posteriorly, suggesting expansion of the entire head-restricted nervous system. Multiple FGFRL genes synergize with ndk to control head pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C89 describe a head patterning circuit with strong experimental support. The phenotypes are demonstrated in Figure 5 with statistical validation of synergy (C85, Fisher's exact test p<0.0001). The expansion of multiple neuron classes (C88) is shown in Figure 5B,C and Figure 5\u2014figure supplement 1E,F, and the inference of whole nervous system expansion (C89) is reasonable given the diversity of affected neuron types. The synergy of multiple FGFRL genes (C86, C87) is demonstrated in Figure 5\u2014figure supplement 1D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Non-neural head cell types (mag-1+ adhesive gland cells) show normal distribution after 8 RNAi feedings but become disorganized by 12 feedings in fz5/8-4; ndk and wntA; ndk RNAi animals, indicating eventual effects on non-neural head cells without visible posteriorization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 describe temporal effects on non-neural head cells, supported by Figure 6\u2014figure supplement 1A (C90) and Figure 6A, Figure 6\u2014figure supplement 1D (C91). The inference that non-neural cells are affected but not posteriorized (C92) is reasonable based on the disorganization without obvious posterior expansion. This temporal analysis strengthens understanding of the phenotype progression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "In fz5/8-4; ndk and wntA; ndk RNAi animals, anterior-most and posterior mRG domains remain unchanged, while head-region mRGs (ndl-2, ndl-5, ndk, wnt2) expand posteriorly and the pre-pharyngeal ndl-3 domain shifts posteriorly. These genes are required to restrict anterior tissues and mRG expression domains to the head region while leaving anterior tip, trunk, and tail domains unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 describe selective regional effects on the mRG expression map in head patterning mutants, supported by FISH data in Figure 6 and Figure 6\u2014figure supplement 1. The spatial specificity (unchanged anterior-most and posterior domains, expanded head domains, shifted pre-pharyngeal domain) is clearly demonstrated with quantification. The inference about gene function (C97) is well-supported by the pattern of selective changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Two distinct FGFRL-Wnt circuits control planarian head and trunk patterning. Different FGFRL and Wnt genes are used in the two locations, but both involve juxtaposed anterior FGFRL and posterior Wnt expression domains. Inhibition of either component causes posterior expansion and sequential duplications of region-specific structures, with local shifts in mRG expression domains. The authors propose that FGFRL proteins confine regions where specific tissues can form, while Wnt genes restrict tissues at the anterior end of their expression domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C103-C109, C113-C115 synthesize the major findings into a coherent model. The existence of two circuits is supported by the parallel phenotypes (trunk: C55-C69; head: C78-C89), the juxtaposed expression patterns are demonstrated in Figure 2 and Figure 7C (C105), and the local shifts in expression domains are shown in Figures 4 and 6 (C107). The proposed model (C114, C115) is reasonable given the data, though marked as containing speculation in the evidence type, appropriately reflecting its interpretive nature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C37",
+      "C50",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C110",
+      "C111",
+      "C112",
+      "C116"
+    ],
+    "result": "The authors propose that FGFRL-Wnt circuits operate within a body-wide coordinate system to control adult axial positioning in planarians. The axial expression map in muscle is reminiscent of embryonic developmental patterns in other species. Regional single-cell sequencing overcame limitations of traditional approaches for identifying positional information genes. The findings may have broader implications for understanding adult positional information systems in other animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11, C37, C50, C98-C102, C110-C112, C116 contain a mix of well-supported conclusions and speculative interpretations. The existence of the circuits and their roles in patterning are well-supported (C11, C37), and the methodological innovation is clear (C99, C100). However, several claims involve speculation about broader implications (C101, C116) or mechanisms (C110, C111) that require additional experimental validation. The comparison to embryonic patterns (C50) is reasonable but interpretive.",
+    "result_type": "MAJOR"
+  }
+]

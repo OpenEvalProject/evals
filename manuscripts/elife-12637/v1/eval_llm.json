@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C38",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "MPP2 physically interacts with SK2-containing channels. This interaction was demonstrated through co-immunopurification from mouse brain (C9, C38), co-immunoprecipitation in HEK293 cells (C10, C42), and GST pull-down experiments showing that the SH3-HOOK-GK domain of MPP2 specifically binds the N-terminal domain of SK2-L (C44, C45). The interaction is specific to MPP2, as PSD-95 did not co-precipitate with SK2 (C42), and SAP97 did not interact with SK2 but did interact with GluA1 (C43).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent biochemical approaches (co-immunopurification, co-immunoprecipitation, GST pull-down) consistently demonstrate direct physical interaction between MPP2 and SK2. The specificity is well-controlled with negative controls (PSD-95, SAP97) and the interaction domain is mapped to the SH3-HOOK-GK region of MPP2 and the N-terminal domain of SK2-L.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "MPP2 is localized to the post-synaptic density of dendritic spines in CA1 pyramidal neurons. Immunohistochemistry showed MPP2 expression throughout the hippocampus with predominant expression in CA1 dendritic arbors (C46). Electron microscopy revealed that 84% of MPP2 immunoparticles were in spines versus 16% in dendrites (C48), with most localized to the plasma membrane. Post-embedding techniques confirmed MPP2 labeling at the post-synaptic density (C49), with no pre-synaptic localization (C50).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The subcellular localization is rigorously demonstrated using complementary techniques (light microscopy, pre-embedding and post-embedding electron microscopy) with quantitative analysis. The data clearly establish MPP2 as a post-synaptic protein enriched in dendritic spines and specifically at the PSD, consistent with its proposed role as a synaptic scaffold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C60"
+    ],
+    "result": "Knockdown of MPP2 expression abolishes the synaptic SK2-containing channel contribution to EPSPs. In control neurons, apamin increased EPSPs to 144.4\u00b14.3% of baseline (C51), but in MPP2 shRNA-transfected neurons, apamin had no significant effect (94.6\u00b13.3%; C52). Electron microscopy confirmed 81% reduction of MPP2 immunoparticles in spines and 78% reduction in dendrites of transfected neurons (C53, C54). The effect was rescued by co-expression of shRNA-immune MPP2, restoring apamin sensitivity to 148.2\u00b14.2% (C55).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The loss-of-function experiment is well-controlled with verification of knockdown by EM, functional assessment by electrophysiology, and rescue experiment demonstrating specificity. The complete loss of apamin sensitivity in MPP2 knockdown neurons provides strong evidence that MPP2 is required for synaptic SK2 channel function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C61"
+    ],
+    "result": "MPP2 knockdown selectively affects synaptic SK2-containing channels without altering dendritic SK2 channels activated by somatic depolarization. Voltage-clamp experiments showed that apamin-sensitive tail currents evoked by somatic depolarization were not significantly different between control (41.9\u00b18.3 pA) and MPP2 knockdown neurons (53.7\u00b110.5 pA; P=0.44) (C56).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result demonstrates spatial specificity of MPP2's role, distinguishing between synaptic and extrasynaptic SK2 channel populations. The voltage-clamp approach appropriately tests dendritic SK2 channels, and the lack of effect on somatic activation strengthens the conclusion that MPP2 specifically regulates synaptic localization rather than overall SK2 expression or function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C58",
+      "C59",
+      "C62"
+    ],
+    "result": "MPP2 knockdown reduces long-term potentiation (LTP). Theta burst pairing induced LTP of 407.9\u00b146.3% in control neurons (C58), but only 243.0\u00b114.8% in MPP2 knockdown neurons (C59; p<0.001), representing approximately 30% reduction in LTP expression (C62).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The LTP experiments demonstrate a functional consequence of MPP2 knockdown on synaptic plasticity. The magnitude of reduction (~30%) is slightly greater than the previously reported SK2 endocytosis contribution (~17%), which the authors acknowledge may reflect effects on other MPP2 interaction partners. The result is statistically significant and consistent with the role of synaptic SK2 channels in LTP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C69",
+      "C70"
+    ],
+    "result": "MPP2 is required for proper synaptic localization and function of SK2-containing channels. The combined evidence from interaction studies, localization data, knockdown experiments, and rescue experiments supports that MPP2 serves as a synaptic scaffold that stabilizes SK2-containing channels in the PSD (C70), and that knockdown of MPP2 phenocopies the effect of SK2-L deletion on synaptic responses (C69).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the main conclusion of the manuscript and is well-supported by the convergence of multiple lines of evidence: physical interaction, co-localization at the PSD, loss of synaptic SK2 function upon MPP2 knockdown, specificity for synaptic versus dendritic channels, and rescue of function. The phenocopy of SK2-L deletion strengthens the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C40",
+      "C41",
+      "C71",
+      "C72"
+    ],
+    "result": "MPP2 is a member of the p55 Stardust subfamily of MAGUK proteins with characteristic modular domain structure. MPP2 is a 552 amino acid protein (C40) containing two L27 domains, a single PDZ domain, and SH3-HOOK-GK domains (C41, C72).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural characterization is based on sequence analysis and is consistent with established knowledge of MAGUK protein families. The domain structure is well-documented and provides context for understanding MPP2's protein-protein interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C73",
+      "C74"
+    ],
+    "result": "Proteomic analysis identified additional MPP2-interacting proteins including DLG1 (SAP97) and Lin-homologs 7A and 7C. Previous biochemical studies showed MPP2 is enriched in PSD fractions and may interact with multiple synaptic proteins including PSD-95, SAP97, GKAP, CASK, GRIP, neuroligin, and CaMKII, with the SH3-HOOK-GK domain mediating these interactions (C73, C74).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proteomic identification of SAP97 and Lin7 proteins as MPP2 interactors is supported by mass spectrometry data. The citation to previous work on MPP2's broader interaction network provides context, though these interactions are not directly tested in this manuscript. The data suggest MPP2 may be part of a larger synaptic protein complex.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Prior work established that SK2-L and SK2-S are two isoforms that co-assemble into heteromeric channels, with SK2-L containing an extended N-terminal domain (207 additional amino acids) that is required for synaptic localization. In SK2-L knockout mice, SK2-S channels are expressed in dendrites and spine membranes but excluded from the PSD, resulting in loss of apamin sensitivity of EPSPs and enhanced hippocampus-dependent learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize prior published work that provides essential context for the current study. The citations are appropriate and the prior findings motivated the search for an MPP2-SK2-L interaction. This background is well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background on SK2 channel function at CA1 synapses: SK2-containing channels are expressed in the post-synaptic membrane of CA1 pyramidal neurons, positioned close to NMDA receptors, activated by synaptically evoked NMDAR-dependent Ca2+ influx, and modulate EPSPs and synaptic plasticity through their outward K+ conductance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established background knowledge from prior literature that is appropriately cited. While not novel findings of this manuscript, they provide necessary context and are supported by the cited references and by data in this manuscript (e.g., apamin effects on EPSPs).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background on activity-dependent regulation of SK2 channels: SK2 channels undergo PKA-dependent trafficking during LTP, with their Ca2+ sensitivity regulated by co-assembled CK2 and protein phosphatase 2A engaged by cholinergic signaling. SK2 channel endocytosis acts together with AMPAR exocytosis to mediate LTP expression, followed by homeostatic re-establishment of synaptic SK balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize prior published work on SK2 channel regulation and plasticity, appropriately cited. This background contextualizes the LTP findings in the current manuscript and explains why MPP2 knockdown affects LTP.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Background on other repolarizing conductances in spines: Kv4.2-containing channels, Ca2+-activated Cl- channels, and other conductances contribute to limiting EPSP amplitude, with the sum of repolarizing conductances potentially reducing the AMPA-NMDA component by more than 50%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide broader context about synaptic integration and are supported by appropriate citations. The quantitative estimate (>50% reduction) is presented as an inference from combined effects, which is reasonable but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background on MAGUK scaffold proteins: MAGUKs bind synaptic receptors, channels, and signaling molecules to anchor them in the post-synaptic membrane. PSD-95 binds NMDARs, SAP97 binds AMPARs, and Shank and Homer may organize the MAGUK lattice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize established knowledge about MAGUK protein function with appropriate citations. This background motivates the investigation of MPP2 as a potential scaffold for SK2 channels and is well-supported by the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "SK2 and SK3 can form heteromeric channels in brain, SK3 is expressed in CA1 pyramidal neurons, and the single SK3 N-terminal isoform is similar to SK2-L with potential MPP2 interaction sites. The proteomic analysis identified SK3 as co-purifying with MPP2 (C38).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While SK2/SK3 heteromer formation and SK3 expression are supported by citations, the speculation about SK3-MPP2 interaction based on sequence homology (C77) is not directly tested. The co-purification of SK3 with MPP2 (C38) provides suggestive evidence but requires further validation. This represents an interesting hypothesis for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Discussion of potential protein lattice organization: The authors propose that MPP2, through interactions with Lin7 proteins and SAP97/DLG1, may be part of a dynamic protein lattice encompassing SK2 channels, AMPARs, NMDARs, and regulatory proteins. This is supported by prior work showing MPP7-Lin7-DLG1 interactions in epithelial cells, SAP97 binding to GluA1, coordinated trafficking of SK2 and AMPA receptors during LTP, and MPP2 co-purification with AMPA receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is largely speculative integration of the current findings with prior literature. While the individual cited findings are supported, the proposed model of a dynamic protein lattice is a hypothesis that requires further experimental validation. The authors appropriately present this as a possibility rather than a demonstrated fact. The model is plausible but represents future work rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "The component of LTP attributed to SK2 endocytosis in untransfected CA1 pyramidal neurons is approximately 17%, based on prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim accurately cites prior published work (Lin et al., 2008) and is used for comparison with the current finding that MPP2 knockdown reduces LTP by ~30%. The comparison is appropriate and helps interpret the current results.",
+    "result_type": "MINOR"
+  }
+]

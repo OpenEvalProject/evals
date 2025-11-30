@@ -1,0 +1,372 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C80"
+    ],
+    "result": "The study identified 195 T. gondii-derived peptide ligands from HLA-A*02:01 complexes purified from infected THP-1 cells. Of 284 total T. gondii-matching peptides, 89 were identical or had Ile/Leu ambiguity with human sequences, leaving 195 definitively T. gondii-derived ligands. These ligands originated from 95 different proteins, with 31% identical to human sequences, 13% showing similarity, and 56% having no similarity to host proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C16-C20 are well-supported by mass spectrometry data with appropriate validation (C80). The identification pipeline used appropriate FDR thresholds (1% for human, 2% for T. gondii per C79) and all T. gondii sequences were confirmed with synthetic peptides. The sequence similarity analysis using BLAST provides clear categorization of ligand origins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "A productive T. gondii infection was established in THP-1 cells, with infection rates increasing from 12.1% on day 1 to 71.5% on day 7 post-infection, accompanied by increasing free parasite counts. This yielded 12 mg of HLA-A*02:01 for comprehensive ligand analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15 are supported by flow cytometry data (Figure 1) showing progressive infection and parasite replication. The methodological details (C73-C77) are clearly documented, including cell line authentication, HLA typing, and mycoplasma testing, providing confidence in the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C90",
+      "C91"
+    ],
+    "result": "The 195 T. gondii ligands originated from 95 different proteins, with 55.8% of source proteins providing a single peptide and multiply-sampled proteins providing 44.2% of ligands. Dense granule (GRA) proteins provided only 30 ligands (15%), representing a minority source. Peptide enrichment from particular proteins was not due to protein length (Kruskal-Wallis test, p=0.247).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24, C90-C91 are well-supported by data analysis shown in Figure 3. The statistical test (C23) appropriately addresses whether protein length explains ligand enrichment. The finding that GRA proteins are a minority source (15%) challenges prior assumptions and is clearly supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C56",
+      "C57",
+      "C92"
+    ],
+    "result": "Gene Ontology enrichment analysis revealed significant enrichment of ligands from proteins localized to the apical region (p=1.50\u00d710\u207b\u2078), parasitophorous vacuole (p=2.79\u00d710\u207b\u2076), and unexpectedly, the parasite cytoplasm (p=9.31\u00d710\u207b\u2074), with 21 of 95 proteins annotated as cytoplasmic. This demonstrates that T. gondii does not sequester cytoplasmic proteins from host MHC I processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 are supported by appropriate GO enrichment analysis with significant p-values. The inference (C92) that cytoplasmic proteins are not sequestered is reasonable given the enrichment data, though the mechanism remains unexplained. The finding challenges existing models of T. gondii antigen presentation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "T. gondii ligands showed significant C-terminal bias compared to uninfected host ligands, with reduced N-terminal peptides (bins 0-0.2, p=2.36\u00d710\u207b\u2074; 0.2-0.4, p=2.23\u00d710\u207b\u2074) and enrichment at C-termini (bins 0.6-0.8, p=1.46\u00d710\u207b\u00b2; 0.8-1.0, p=5.26\u00d710\u207b\u2077). Host ligands from infected cells also shifted toward C-termini (bin 0.2-0.4 reduced, p=0.007; bin 0.8-1.0 increased, p=0.0095).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31, C95-C97 are supported by statistical analysis of normalized ligand positions (Figure 4) using appropriate comparison of proportions tests. The finding that infection alters both parasite and host ligand positioning is novel and statistically robust, though the biological mechanism is not explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C4",
+      "C98"
+    ],
+    "result": "T. gondii ligands were significantly longer than host ligands (average 14.6 vs 11.4 amino acids from infected cells, t-test p<0.001). Host ligands from infected cells were also significantly longer than uninfected controls (11.4 vs 9.8 amino acids, t-test p<0.001), demonstrating that infection increases ligand length for both parasite and host-derived peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33, C4, C98 are well-supported by length distribution analysis (Figure 5) with appropriate statistical testing. The use of t-tests is appropriate for comparing mean lengths. The finding that infection increases both T. gondii and host ligand length is unexpected and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C5",
+      "C81",
+      "C82"
+    ],
+    "result": "NetMHCpan 2.8 predicted 117/195 ligands (60%) as binders (\u226410% rank), leaving 78 non-binders. However, 52/78 predicted non-binders contained nested N-terminal binding cores (8-11 amino acids) with high affinity (\u22642% rank), significantly more than scrambled sequences (13/78, p=1.2\u00d710\u207b\u00b9\u2070). Most binding cores (36/52) were at the N-terminus with C-terminal extensions averaging 8.7 amino acids (range 1-30).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39, C5 are supported by computational predictions and appropriate statistical comparisons with scrambled controls. The use of different rank score thresholds (10% for binders, 2% for nested cores per C81-C82) is reasonable. The finding that extended peptides have N-terminal binding cores is novel and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C103",
+      "C104"
+    ],
+    "result": "C-terminally extended peptides increased significantly after infection: from 2.3% baseline in uninfected cells to 7.2% in host ligands from infected cells (p<0.0001, ~3-fold increase) and 18.5% in T. gondii ligands (~8-fold increase compared to baseline).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42, C103-C104 are supported by analysis shown in Figure 6 with appropriate statistical testing. The fold-change calculations are accurate (7.2/2.3\u22483; 18.5/2.3\u22488). This demonstrates that infection dramatically increases the frequency of extended peptides for both host and parasite ligands.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C119"
+    ],
+    "result": "Competitive binding assays of 12 selected extended ligands showed that 8/12 binding cores bound with high affinity (<500 nM), 3/12 with moderate affinity (<1000 nM), and 1/12 had no affinity. Notably, two full-length extended ligands (YLSPIASPLLDGKSLR and FVLELEPEWTVK) bound with high affinity despite being predicted as non-binders, confirming that N-termini of extended peptides have strong MHC I affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44, C119 are supported by in vitro binding assay data (Figure 7A). The finding that full-length extended peptides can bind with high affinity despite non-canonical C-termini validates the computational predictions and demonstrates that these peptides are genuine MHC I ligands.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C112"
+    ],
+    "result": "Mutation analysis demonstrated that the binding core's F-pocket residue is critical for extended peptide binding. For FVLELEPEWTVK, all mutants had significantly worse affinity than wild-type (t-test p<0.05). For YLSPIASPLLDGKSLR, all mutants except L10E had lower affinity (t-test p<0.05), suggesting either P9 or P10 leucine can serve as the F-pocket anchor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C112 are supported by systematic mutation analysis (Figure 7B-C) with appropriate statistical testing. The experiments were run in triplicate/duplicate. The L10E exception is reasonably explained by the presence of leucine at both P9 and P10, though this explanation (C120-C121) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C114",
+      "C115"
+    ],
+    "result": "Thermal denaturation assays showed extended ligands had melting temperatures (Tm) consistent with canonical ligands (YLSPIASPLLDGKSLR Tm=66\u00b0C, FVLELEPEWTVK Tm=63\u00b0C). However, binding cores were 10-12\u00b0C more thermostable than their extended counterparts (\u0394Tm=10\u00b0C and 12\u00b0C respectively), suggesting the high thermostability of binding cores compensates for C-terminal extensions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48, C114-C115 are supported by differential scanning fluorimetry data (Figure 8). The finding that extended peptides have canonical Tm values despite their length is surprising and well-documented. The interpretation (C114) that binding core thermostability compensates for extensions is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C83",
+      "C105",
+      "C116"
+    ],
+    "result": "Crystal structures of HLA-A*02:01 complexed with FVLELEPEWTVK (1.5 \u00c5) and FVLELEPEWTV (1.87 \u00c5) were solved with excellent refinement statistics (Rwork/Rfree 0.164/0.222 and 0.195/0.219). Both peptides bound in a zig-zag fashion to accommodate 11 amino acids. The extended ligand's C-terminal Lys12 protruded from the binding pocket, with well-defined electron density over the entire peptide length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51, C83, C105, C116 are supported by high-quality crystallographic data (PDB IDs 5D9S and 5DDH). The resolution and refinement statistics are excellent, and electron density maps (Figure 9C-D) confirm the structural interpretations. The structures provide definitive evidence for the extended peptide binding mode.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C63",
+      "C107",
+      "C110"
+    ],
+    "result": "Structural analysis revealed a novel 'swinging gate' mechanism where Tyr84 rotates ~90\u00b0 upward and outward, Thr80 adopts a different rotamer, and the \u03b11-\u03b12 helix distance increases subtly at the F' pocket. These coordinated changes open the F' pocket, allowing C-terminal extensions to protrude linearly from the groove\u2014a previously unreported mechanism distinct from prior models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54, C63, C107, C110 are strongly supported by detailed structural analysis (Figure 9F-G). The 'swinging gate' mechanism is well-characterized and represents a genuine structural discovery. Comparison with prior structures (C108-C109, C64) demonstrates this is distinct from previously reported mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C84",
+      "C111"
+    ],
+    "result": "The structural data demonstrate that the MHC I binding pocket is less rigid than previously realized, with unrealized structural flexibility making MHC I receptive to parasite-derived ligands with C-terminal extensions. The binding cores of extended peptides interact with MHC I using the same register as canonical binders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C84, C111 represent well-supported conclusions from the structural data. The inference that MHC I is more flexible than previously thought is justified by the novel Tyr84 displacement. The finding that binding cores use canonical register (C111) is directly observed in the structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C128"
+    ],
+    "result": "The increased frequency of extended peptides suggests T. gondii ligands emerge from a distinct antigen processing pathway. While conventional MHC I presentation involves proteasomal degradation, TAP transport, and ER trimming, and T. gondii proteins can be retrotranslocated via ERAD, the extended ligands do not fit this model. The authors speculate that infected cells may exhibit a distinct cross-presentation mechanism where ligands move directly from the parasitophorous vacuole to the ER, bypassing cytosolic carboxypeptidases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C71 present reasonable inferences based on the data, but C128 is explicitly speculative. The mechanism by which extended peptides are generated and loaded onto MHC I remains unexplained. While the speculation about direct PV-to-ER transport is plausible, it lacks direct experimental support. This represents an important gap requiring future investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C93",
+      "C94"
+    ],
+    "result": "While dense granule proteins are well-characterized MHC I ligand sources and were confirmed here, many ligands originated from non-secreted proteins including cytoplasmic proteins. Among 22 hypothetical proteins identified, 10/22 contained predicted secretion signals, and prior proteomic data existed for all but one, substantiating their expression in infected hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58, C93-C94 are supported by the data and appropriate citations. The finding that non-secreted proteins contribute ligands (C56) is unexpected (C57) and challenges existing models. The analysis of hypothetical proteins provides valuable information about T. gondii gene expression during infection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C65",
+      "C124",
+      "C125"
+    ],
+    "result": "Prior work suggested C-terminal ligands are immunodominant due to proteolytic insufficiency in infected cells. Published data confirm extended peptides are presented by membrane-bound HLA-A*02:01. Gene ontology analysis showed no bias in cellular location of C-terminal ligand source proteins, suggesting protein location does not explain the C-terminal processing bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62, C65, C124-C125 appropriately cite and interpret prior literature. The GO analysis (C124) provides evidence against a location-based explanation for C-terminal bias, though the actual mechanism remains unknown (C122). The integration of prior work with current findings is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C64",
+      "C108",
+      "C109",
+      "C117"
+    ],
+    "result": "The structural configuration observed here is distinct from prior reports. In the previously reported calreticulin/HLA-A*02:01 structure, Tyr84 rotated only modestly, Thr80 did not change rotamers, and only small amino acids (glycine) could extend from the F' pocket due to steric clashes. A slight Lys146 movement accommodated the small glycine extension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C108-C109, C117 appropriately compare the current structures with prior work (Collins et al., 1994). The comparison demonstrates that the current mechanism is genuinely novel and can accommodate larger amino acids at the C-terminus, unlike the prior model limited to glycine.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C72",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C118",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The manuscript identifies several unresolved questions and future directions: the mechanism by which T. gondii mediates altered antigen processing, whether similar changes occur with other intracellular pathogens (Plasmodium, Mycobacterium), how infection remodels host cell biology to deliver extended ligands, and the immunological impact of unconventional ligand presentation. The considerable number of extended ligands observed in vitro merits future in vivo confirmation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C85-C89, C118, C120-C123 appropriately identify limitations and future directions. These are reasonable acknowledgments of what remains unknown. The speculation about mechanisms (C72, C128) and explanations for specific results (C120-C121) are clearly presented as hypotheses requiring testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The manuscript establishes the biological context: CD8+ T-cells mediate immunity to T. gondii through recognition of MHC I-presented peptides, with most identified ligands derived from secreted proteins (surface, dense granule, rhoptry). MHC I can present peptides >11 amino acids that elicit T-cell responses, with long ligands typically anchored at P2 and P\u03a9 with central bulging, though a 10mer with P10 extension has been reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C12 appropriately establish the scientific context through citations to prior literature. These background claims are well-supported by the cited references and provide necessary context for understanding the significance of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Methodological details: Peptide ligands were dissociated by heating to 75\u00b0C for 15 min. Mass spectrometry searches used 1% FDR for H. sapiens and 2% FDR for T. gondii.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 describe standard methodological procedures that are appropriate for the experiments. The use of different FDR thresholds is reasonable given the different database sizes and search complexities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C126",
+      "C127"
+    ],
+    "result": "Analysis of extension positions showed no significant increase in N-terminal extensions (1/52) or extensions on both sides (15/52) compared to scrambled sequences. However, 10/15 peptides with predicted central cores had alternate N-terminal cores with slightly weaker affinity. Several long T. gondii ligands follow the P2/P\u03a9-anchor model, but C-terminal extension appears to be a major mechanism for T. gondii peptides, significantly more frequent than in host-derived peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102, C126-C127 are supported by computational analysis with appropriate scrambled controls. The finding that C-terminal extension is the predominant mode for T. gondii ligands (C127) is well-supported by the frequency data (18.5% vs 2.3-7.2% for host).",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "PexRD54 binds ATG8CL with high affinity (KD = 383 nM) via its C-terminal AIM2 motif (positions 378-381). This binding was demonstrated through in planta coimmunoprecipitation, in vitro isothermal titration calorimetry, and peptide binding assays, with AIM2 being both necessary and sufficient for the interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent experimental approaches (C18-C20, C22-C24, C69-C71) converge to demonstrate specific, high-affinity binding between PexRD54 and ATG8CL mediated by the C-terminal AIM2 motif. The in planta, in vitro, and peptide-based assays provide complementary evidence with consistent KD values (220-383 nM), and mutagenesis experiments (C22, C23) confirm the necessity of AIM2 for binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C32",
+      "C34",
+      "C72",
+      "C73"
+    ],
+    "result": "PexRD54 exhibits ~10-fold higher binding affinity for ATG8CL (KD = 383 nM) compared to ATG8IL (KD = 4100 nM), demonstrating specificity among ATG8 family members. This differential binding was confirmed both in planta and in vitro, and a control RXLR effector (AVRblb2) did not bind either ATG8 variant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential binding affinity is well-supported by both coimmunoprecipitation (C27, C32) and ITC data (C72), with consistent ~10-fold differences observed across methods. The negative control with AVRblb2 (C73) strengthens the conclusion that the interaction is specific to PexRD54. The colocalization data (C32, C34) showing only 15-20% overlap with ATG8IL is consistent with the weaker binding affinity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "PexRD54 localizes to ATG8CL-marked autophagosomes in plant cells, and this localization requires the C-terminal AIM2 motif. Multiple independent approaches including confocal microscopy, transmission electron microscopy with immunogold labeling, 3-MA treatment, and dominant-negative ATG8CL mutants confirm autophagosome localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The autophagosome localization is supported by multiple orthogonal approaches (C28-C31, C74-C78). The colocalization with GFP:ATG8CL (C30), sensitivity to autophagy inhibitor 3-MA (C74), and depletion by dominant-negative ATG8CL\u0394 (C76) but not ATG8IL\u0394 (C77) provide strong converging evidence. The TEM immunogold data (C29) confirms localization to electron-dense structures distinct from peroxisomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C34"
+    ],
+    "result": "PexRD54 stimulates the formation of ATG8CL-marked autophagosomes, causing a ~5-fold increase in autophagosome number compared to controls. This effect is specific to ATG8CL, as PexRD54 did not alter ATG8IL autophagosome numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ~5-fold increase in ATG8CL autophagosomes (C33) is well-documented by confocal microscopy with appropriate controls (PexRD54AIM2 and empty vector). The specificity for ATG8CL is demonstrated by the lack of effect on ATG8IL autophagosomes (C34), consistent with the differential binding affinities. Statistical significance is reported (p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C80",
+      "C81"
+    ],
+    "result": "PexRD54 stimulates autophagy rather than blocking autophagic flux. Treatment with concanamycin-A or E64d increased ATG8CL-labeled puncta and protein levels in PexRD54-expressing samples, and PexRD54 specifically increased ATG8CL but not ATG8IL or control GFP protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The autophagic flux experiments using two independent inhibitors (concanamycin-A in C35, C80 and E64d in C38, C81) both show increased autophagosome accumulation in PexRD54-expressing cells, ruling out a blockage of flux. The western blot data (C37, C40) demonstrate specificity for ATG8CL over ATG8IL and control GFP, with appropriate time course analysis (2 and 3 dpi).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "GFP:ATG8CL protein levels increase during P. infestans infection relative to mock infection, while control GFP levels do not change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The western blot data (C41) shows increased ATG8CL levels during infection with appropriate mock control, suggesting physiological relevance of the PexRD54-ATG8CL interaction during pathogen infection. However, this is a single observation and the magnitude of increase is not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C82",
+      "C83"
+    ],
+    "result": "Joka2, a selective autophagy cargo receptor in Solanaceous plants, binds ATG8CL via its AIM motif (819-WDPI-822) with specificity for ATG8CL over ATG8IL. Mutation of the AIM (WDPI to ADPA) abolishes ATG8CL binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Joka2-ATG8CL interaction is well-supported by coimmunoprecipitation data (C43, C82, C83) with appropriate AIM mutant controls. The specificity for ATG8CL over ATG8IL (C44, C83) parallels the PexRD54 binding pattern. The claim builds on prior literature (C42) and is validated in the potato system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Joka2 activates ATG8CL-mediated selective autophagy, markedly increasing the number of GFP:ATG8CL autophagosomes and enhancing ATG8CL protein levels in an AIM-dependent manner. Joka2:RFP partially colocalizes with GFP:ATG8CL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The activation of autophagy by Joka2 is supported by both microscopy (C45, C84, C85) and western blot data (C46, C86), with appropriate AIM mutant and empty vector controls. The partial colocalization (C84) is consistent with Joka2 functioning as a cargo receptor. The data parallel the PexRD54 effects, establishing a baseline for competition experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C87",
+      "C88"
+    ],
+    "result": "PexRD54 antagonizes Joka2 for ATG8CL binding, depleting Joka2 from ATG8CL complexes in a dose-dependent manner. PexRD54 variants carrying Joka2 AIM sequences (PexRD54J2AIM1 and PexRD54J2AIM2) show reduced ATG8CL binding and are less effective at depleting Joka2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The competition between PexRD54 and Joka2 for ATG8CL binding is demonstrated through multiple coimmunoprecipitation experiments (C48, C49, C87, C88) including dose-response (C49) and domain-swap experiments (C50, C51, C88). The reduced effectiveness of PexRD54 variants with Joka2 AIM sequences provides strong evidence that the competition depends on the specific AIM sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C90"
+    ],
+    "result": "Joka2-mediated selective autophagy contributes to defense against P. infestans. Overexpression of Joka2, but not Joka2AIM, significantly restricts disease lesion size, while virus-induced gene silencing of Joka2 increases disease lesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The role of Joka2 in pathogen defense is supported by complementary gain-of-function (C53) and loss-of-function (C54, C90) experiments. The requirement for the AIM motif (C53) links the defense function to ATG8CL binding. Statistical significance is reported (p<0.001) with multiple biological replicates, and RT-PCR confirms silencing (C90).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C56",
+      "C57"
+    ],
+    "result": "PexRD54 counteracts the enhanced resistance conferred by Joka2 in an AIM-dependent manner. PexRD54 reverses the Joka2-mediated restriction of P. infestans growth, while PexRD54AIM2 fails to reverse this effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The infection assays (C56) demonstrate that PexRD54 can reverse the Joka2-mediated resistance, with appropriate AIM mutant control showing this requires ATG8CL binding. This result integrates the biochemical competition data (C48-C52) with functional pathogen defense outcomes. Statistical significance is reported (p<0.001) with multiple biological replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C21",
+      "C91",
+      "C92"
+    ],
+    "result": "PexRD54 contains two predicted ATG8 Interacting Motifs (AIMs) matching the W/F/Y-x-x-L/I/V consensus sequence, with AIM1 and AIM2 identified by manual search and confirmed using iLIR software (AIM1 score: 12, AIM2 score: 23).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of AIMs is supported by both manual sequence analysis and computational prediction (C91, C92). The higher iLIR score for AIM2 (23 vs 12) is consistent with the experimental finding that AIM2 is the functional motif (C22). This is a straightforward bioinformatic prediction validated by experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C26",
+      "C93",
+      "C94"
+    ],
+    "result": "ATG8 occurs as a family of nine proteins in potato (S. tuberosum), seven in tomato (S. lycopersicum), and eight in N. benthamiana. ATG8CL variants in N. benthamiana and potato have identical amino acid sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ATG8 family characterization (C26, C93) is supported by BLASTP searches and phylogenetic analysis described in the methods. The sequence identity between N. benthamiana and potato ATG8CL (C94) justifies the use of N. benthamiana as a model system. This is standard bioinformatic analysis with appropriate methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C63"
+    ],
+    "result": "A plant pathogen effector has evolved an ATG8 interacting motif to bind autophagy protein ATG8CL with high affinity and stimulate autophagosome formation, demonstrating that pathogens can activate autophagy for their own benefit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary claim (C61, C63) is well-supported by the collective experimental evidence showing PexRD54 binds ATG8CL (C2, C20), localizes to autophagosomes (C31), stimulates autophagosome formation (C33), and promotes disease (C56). This represents a novel mechanism distinct from autophagy inhibition by other pathogen effectors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "The effector competes with host cargo receptor Joka2, depleting it from ATG8CL autophagosomes to promote disease susceptibility, thereby coopting the host cell's endomembrane compartment for pathogen growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative claim (C64, C65) is supported by the competition experiments (C48-C52) and the functional infection assays (C56). The model that PexRD54 promotes disease by interfering with Joka2-mediated defense autophagy is well-supported by the data, though the precise cargo targeted by Joka2 remains unknown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C66"
+    ],
+    "result": "PexRD54 may activate selective autophagy to eliminate defense-related compounds or promote nutrient recycling, and Joka2 may contribute to immunity by inducing autophagic removal of molecules that negatively affect host defenses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These mechanistic interpretations (C62, C66) are explicitly speculative as noted in the evidence type. While the data show PexRD54 stimulates autophagy and Joka2 enhances defense, the specific cargo and precise mechanisms remain unknown. These are reasonable hypotheses but lack direct experimental support in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Variation between plant ATG8 proteins may contribute to the selective nature of autophagy, as both Joka2 and PexRD54 show higher affinity for ATG8CL compared to ATG8IL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This inference (C67) is supported by the consistent observation that both PexRD54 (C27, C72) and Joka2 (C44, C83) preferentially bind ATG8CL over ATG8IL with ~10-fold differences in affinity. This suggests functional specialization among ATG8 family members, though the broader implications for selective autophagy require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C16",
+      "C17",
+      "C68"
+    ],
+    "result": "PexRD54 is a canonical RXLR effector with five WY folds from the Irish potato famine pathogen Phytophthora infestans, which delivers RXLR-type effector proteins inside plant cells to enable parasitism and poses a serious threat to food security.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C1, C16, C17, C68) are well-established in the literature and supported by appropriate citations. The characterization of PexRD54 as a canonical RXLR effector with five WY folds is consistent with prior structural studies (Win et al., 2012).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C58",
+      "C59",
+      "C60",
+      "C79",
+      "C107",
+      "C108"
+    ],
+    "result": "Background on autophagy: Autophagy is a conserved catabolic pathway involving ATG proteins that can act selectively via cargo receptors carrying AIMs. In plants, autophagy plays roles in stress tolerance and pathogen defense. Pathogens can deploy effectors to manipulate autophagy, as exemplified by Legionella RavZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C6-C15, C58-C60, C79, C107, C108) are well-established in the literature and supported by appropriate citations to review articles and primary research. They provide necessary context for the study but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Methodological details: The study used standard molecular biology, microscopy, and biochemical techniques including PCR amplification, Agrobacterium-mediated transient expression in N. benthamiana, confocal microscopy with specific laser settings, recombinant protein expression in E. coli, and isothermal titration calorimetry at 15\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims (C95-C106) describe standard, well-established techniques that are appropriately detailed in the Materials and Methods section. The methods are suitable for the experiments performed and are described with sufficient detail for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

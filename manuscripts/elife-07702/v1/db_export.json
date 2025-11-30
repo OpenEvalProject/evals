@@ -1,0 +1,1818 @@
+{
+  "submission": {
+    "id": "5960cf35-5d56-4c55-925b-4e229eafbcd6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:46:36.148776Z",
+    "updated_at": "2025-11-29T21:46:36.148776Z"
+  },
+  "content": [
+    {
+      "id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "submission_id": "5960cf35-5d56-4c55-925b-4e229eafbcd6",
+      "content_type": "manuscript",
+      "content_text": "# The human ARF tumor suppressor senses blastema activity and suppresses epimorphic tissue regeneration\n\n## Authors\n\n- Robert G Hesse<sup>1</sup>\n- Gayle K Kouklis<sup>1</sup>\n- Nadav Ahituv<sup>2</sup>\n- Jason H Pomerantz<sup>3</sup> \u2020\n\n### Affiliations\n\n1. Department of Surgery, Division of Plastic Surgery, Program in Craniofacial Biology University of California, San Francisco San Francisco United States\n2. Department of Bioengineering and Therapeutic Sciences and Institute for Human Genetics University of California, San Francisco San Francisco United States\n3. Departments of Surgery and Orofacial Sciences, Division of Plastic Surgery, Program in Craniofacial Biology, Eli and Edythe Broad Center of Regeneration Medicine and Stem Cell Research University of California, San Francisco San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe control of proliferation and differentiation by tumor suppressor genes suggests that evolution of divergent tumor suppressor repertoires could influence species\u2019 regenerative capacity. To directly test that premise, we humanized the zebrafish p53 pathway by introducing regulatory and coding sequences of the human tumor suppressor ARF into the zebrafish genome. ARF was dormant during development, in uninjured adult fins, and during wound healing, but was highly expressed in the blastema during epimorphic fin regeneration after amputation. Regenerative, but not developmental signals resulted in binding of zebrafish E2f to the human ARF promoter and activated conserved ARF-dependent Tp53 functions. The context-dependent activation of ARF did not affect growth and development but inhibited regeneration, an unexpected distinct tumor suppressor response to regenerative versus developmental environments. The antagonistic pleiotropic characteristics of ARF as both tumor and regeneration suppressor imply that inducing epimorphic regeneration clinically would require modulation of ARF \u2013p53 axis activation.\n\n## Introduction\n\nUrodele amphibians and teleost fish are unique among vertebrates in that they possess the ability to regenerate injured complex structures such as limbs, fins, jaws, and heart by epimorphic regeneration (Morgan, 1901; Brockes and Kumar, 2008; Poss, 2010). For example, zebrafish fin regeneration proceeds through steps that include wound healing, blastema formation, and regenerative outgrowth to faithfully restore preinjury structures and size of the fin (Poss et al., 2003). In such highly regenerative species, the blastema consists of a heterogeneous pool of highly proliferative mesenchymal cells that gives rise to the large amount of new tissue in the regenerate (Knopf et al., 2011; Tu and Johnson, 2011). In contrast, absence of a proliferative blastema is a prominent feature of most mammalian solid tissue injury responses (Muneoka et al., 2008; Straube and Tanaka, 2006). An open question in biology is how cellular mechanisms controlling proliferation affect the blastema and whether they have evolved to contribute to divergent regenerative capacities among vertebrate species.\n\nTumor suppressor genes control the proliferative and differentiated state of cells, and many are also developmental regulators critical for normal formation of tissues (Jacks et al., 1992; Berman et al., 2008). The complex and precisely controlled proliferation and differentiation that occurs during epimorphic regeneration likely requires similar machinery, and as a group, tumor suppressors are probably necessary for well-orchestrated regeneration to occur (Pomerantz and Blau, 2013). For example, in eukaryotes the retinoblastoma gene Rb1 regulates the G1/S transition by sequestering E2f transcription factors, and it controls cellular differentiation by associating with chromatin modifiers to regulate activity of tissue-specific transcription factors. Therefore, the role of Rb1 in tumor suppression is likely less important from an evolutionary standpoint than its ancient broad functions in regulating cellular differentiation and tissue formation. In contrast, the mammalian gene Cdkn2a is an essential tumor suppressor in mice and humans, but it is dispensable for mammalian development and tissue formation (Serrano et al., 1996). In mammals, Cdkn2a encodes two structurally unrelated proteins translated via alternate reading frames, p16Ink4a and Arf, each of which is a tumor suppressor (Chin et al., 1998; Sherr, 2006). While p16Ink4a is a cyclin-dependent kinase inhibitor (CKI) that functions upstream of Rb1, Arf exerts its tumor suppressor function by responding to inappropriate Rb pathway signaling above a presumed threshold (Lowe and Sherr, 2003). When induced, it stabilizes and activates Tp53 by binding and sequestering Mdm2, an E3 ubiquitin ligase and negative regulator of Tp53 (Pomerantz et al., 1998; Weber et al., 1999). Depending on the context, stabilized Tp53 either promotes cell cycle arrest or apoptosis. In addition to canonical Tp53-dependent functions, Arf has other important functions including controlling ribosome biogenesis and responding to oxidative stress (Sherr, 2006; Weber et al., 2000; Damalas et al., 2011; Menendez et al., 2003). The resulting general function of Arf is to maintain the postmitotic state, and we have previously shown that suppression of Arf in the context of compromise of the Rb pathway results in dedifferentiation and proliferation of mammalian muscle cells in culture (Pajcini et al., 2010). Unlike in development or in regeneration of epithelial and hematopoietic tissues, reversal of the postmitotic state and dedifferentiation also occur in lower vertebrate epimorphic regeneration scenarios that involve a blastema. Regulation of Tp53 has recently been shown to be important during epimorphic regeneration, where it is downregulated during blastema formation (Yun et al., 2013). Although cell cycle reentry of postmitotic cells and dedifferentiation are characteristics of malignant transformation which tumor suppressor mechanisms oppose, why these two processes are permitted to occur in the context of intact tumor suppressor mechanisms during epimorphic regeneration is unknown.\n\nHow evolution of the central cellular growth and tumor suppressor pathways impacts regenerative capacity is poorly understood. The advent of somatic stem cells in metazoans is thought to have enabled the formation of new types of cancer, thus requiring advanced tumor suppressor mechanisms (Belyi et al., 2010; Pearson and Sanchez Alvarado, 2008). Among metazoan species, including vertebrates, selective pressures such as different physiologies and environmental exposures undoubtedly continue to apply pressure to generate species-specific tumor suppressor repertoires. For some tumor suppressor genes such as Tp53, multiple family members have evolved to carry out certain differentiation functions separately from tumor suppression. For others, such as Arf, a single member has evolved and exists in a limited number of species. Whether such differences in turn relate to distinct regenerative capacities remains unknown.\n\nAlthough tumor suppressors are generally highly conserved in eukaryotes, Arf is unusual in that it is poorly conserved in non-mammalian lineages (Figure 1A). The Cdkn2a/b locus of teleost fish, including zebrafish (Danio rerio) and fugu (Takifugu rubripes) (Gilley and Fried, 2001), exists as a single protein-producing unit that only encodes for a CKI. During evolution, Cdkn2a and Cdkn2b developed into two separate but related genes encoding for biochemically related CKIs. Arf is not a CKI and is not closely related to either Cdkn2a or Cdkn2b. Arf is thought to be the product of a genetic duplication caused by either an insertion or transposition into the Cdkn2a/b locus (Gil and Peters, 2006). Of the highly regenerative species for which genomes have been completely sequenced, none possess an ortholog of Arf (Figure 1A) (Flicek et al., 2014; Karolchik et al., 2014). The earliest documented ortholog of Arf exists in the chicken genome (Kim et al., 2003). This restricted representation coupled with ARF functions of responding to a high threshold of proliferative signaling and inhibiting dedifferentiation (Pajcini et al., 2010; Sherr, 2006) is compatible with a hypothesis that the presence of Arf could impact regenerative capacity.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07702/elife-07702-fig1-v1.jpg)\n\n**Figure 1.:** ARF, not normally present in highly regenerative vertebrates, is specifically activated in blastemas of ARF transgenic zebrafish.(A) Comparison of amino acid sequences of proteins produced by the Cdkn2a/b loci of zebrafish (Danio rerio), amphibians including the axolotl (Ambystoma mexicanum) and western clawed frog (Xenopus tropicalis), chickens (Gallus gallus), and mammals including the mouse (Mus musculus) and human (Homo sapiens). While Cdkn2a and Cdkn2b are conserved and encode Ink4 orthologs, Arf evolved recently and orthologs do not exist in highly regenerative vertebrates including teleost fish and urodele amphibians. (B) Schematic of transgene expressing cytoplasmic Green fluorescent protein\u00a0(GFP) under the control of the human ARF promoter (top). The promoter consists of human regulatory sequences 736 bp upstream of the transcriptional start site (TSS) of ARF. Immunostaining (wide-field images) for GFP at 24 hpf, 48 hpf, and 72 hpf in wild type\u00a0(WT) and ARF:GFP embryos (bottom). Scale bars: 200 \u03bcm. GFP expression is visible in the hearts of transgenic fish due to presence of a separate transgene used for selection (cmlc2:GFP). (C) Whole-mount in situ hybridization for GFP at 24 hpf, 48 hpf, and 72 hpf in WT and ARF:GFP embryos. Scale bars: 100 \u03bcm. Alkaline phosphatase staining is detected in the hearts of transgenic fish (arrow heads) because of the selection transgene as in (B). (D) Confocal images of coronal vibratome sections immunostained for GFP, Msxb, and Proliferating cell nuclear antigen\u00a0(PCNA) at 2 dpa in WT and ARF:GFP fins. Scale bars: 50 \u03bcm. GFP expression is induced in the proliferative blastema of the regenerate, but it is not expressed in the surrounding epithelium. White dashed lines represent amputation planes. (E) GFP intensity (green line) in the regenerates of ARF:GFP transgenic fish relative to WT fish after amputation. The black line represents the percentage of EdU + cells in the regenerates of WT fish after amputation (N=3; secondary axis). Figure supplement 1 shows in vitro ARF promoter assays. Figure supplement 2 shows additional images for panels B, D, and E. Figure supplement 3 shows wound healing in WT and ARF:GFP fins. Results are shown as mean \u00b1 standard deviation.\u00a0hpa: Hours post\u00a0amputation.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07702/elife-07702-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** In vitro analysis of ARF promoter constructs in zebrafish and human cells.Representative luciferase reporter data of three replicates: relative luminescence generated by ARF promoter-firefly luciferase reporter constructs transfected into zebrafish (ZKS, ZF4) and human (HeLa) cells. Two ARF promoter-reporter constructs were tested; one contained sequences up to 3.4 kb upstream of the TSS of ARF (3.4 kb), while the other contained sequences up to 736 bp upstream of the TSS of ARF (736 bp). Relative luminescence was measured by normalizing firefly luciferase values to those detected from a Renilla luciferase construct used as a transfection efficiency control. The relative luminescence values were then normalized to those of the negative control construct, pcDNA. Any values above 2 (black dashed line) are significant (N = 3; pcDNA = 1; p<0.05). Results are shown as mean \u00b1 standard deviation.\u00a0ZKS: Zebrafish kidney stromal.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07702/elife-07702-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** GFP reporter activity in WT or ARF:GFP zebrafish at multiple developmental and regenerative time points.(A) Immunostaining (sagittal confocal images) for GFP at 24 hpf, 48 hpf, and 72 hpf in WT and ARF:GFP embryos. Scale bars: 200 \u03bcm. GFP expression is restricted to the hearts of transgenic fish due to presence of a separate transgene used for selection (cmlc2:GFP). (B) Confocal images from Figure 1 of coronal vibratome sections immunostained for GFP, Msxb, and PCNA at 2 dpa in WT and ARF:GFP fins. Scale bars: 50 \u03bcm. Included to the right of the figure are insets showing Msxb +, PCNA +, GFP- blastema cells in WT fins and cytoplasmic GFP expression in Msxb +, PCNA + blastema cells in ARF:GFP fins (white dashed boxes). DAPI is excluded from the inset images to improve clarity of costaining. Scale bars: 10 \u03bcm. (C) Wide-field epifluorescent images of WT and ARF:GFP fins at multiple time points during fin regeneration. GFP intensity of individual ARF:GFP images was evaluated relative to that of WT images at the same time points, and the resulting values were plotted in Figure 1E. There is a small amount of detectable autofluorescence below the amputation plane in the regenerating wild-type and transgenic fins. Scale bars: 100 \u03bcm. Dashed lines represent amputation planes.\u00a0GFP: Green fluorescent protein; hpa: Hours postamputation; PCNA: Proliferating cell nuclear antigen; WT: Wild type.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/07702/elife-07702-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** ARF is not activated during wound healing in the absence of a blastema.(A) At day 0, dorsal fin lobes were wounded (interray laceration, 0 dpi), while ventral fin lobes were amputated (0 dpa). At day 1, GFP expression was assayed in the healing (dorsal) and regenerating (ventral) fins. Scale bars: 0.5 mm. (B) Representative images (sagittal confocal images) of cytoplasmic GFP expression in WT and ARF:GFP fins that were either amputated (1 dpa) or wounded (1 dpi). GFP is only detected in ARF:GFP fins that have been amputated (N = 5). Scale bars: 50 \u03bcm. Arrows point to the interray wound. Dashed lines represent amputation planes.GFP: Green fluorescent protein; WT: Wild type.\n\nIn this study, we used transgenesis to examine the activity of human ARF in the context of zebrafish fin regeneration. We showed that ARF activated zebrafish Tp53 functions to restrict cellular proliferation and induced apoptosis, which caused a marked suppression of fin regeneration after injury. Remarkably, the human ARF regulatory sequences are dormant throughout zebrafish development but induce ARF expression specifically during regeneration after injury. These findings provide experimental evidence that species-specific tumor suppressors can impact tissue regeneration potential.\n\n## Results\n\n### Survey of ARF orthologs in genomes\u00a0of\u00a0highly and poorly regenerative vertebrates\n\nUsing the Ensembl Genome Browser (Flicek et al., 2014), the University of California, Santa Cruz (UCSC) Genome Browser (Karolchik et al., 2014), and Sal-Site (Smith et al., 2005), we analyzed the Ink4b-Arf-Ink4a locus in the genomes of six different vertebrate species including highly regenerative (teleost fish and urodele amphibians) and poorly\u00a0regenerative (avians and mammals) vertebrates (Monaghan and Maden, 2013). Our analysis confirms prior reports (Kim et al., 2003) that an ARF ancestor exists in chickens. We found that in contrast to Ink4 orthologs, which are pervasive throughout vertebrate genomes, ARF orthologs are not present in the genomes of highly\u00a0regenerative vertebrates (Figure 1A). The results of this analysis, while not directly demonstrating an association of ARF with regeneration, support the hypothesis and prompted our investigation.\n\n### Context-specific activation of ARF by regenerative signals in the zebrafish blastema\n\nTo investigate how the ARF gene responds to environmental cues, we generated reporter fish in which green fluorescent protein (GFP) is expressed under the control of the human ARF promoter (Tg (ARF:GFP) or ARF:GFP) (Figure 1B, top). In mammals, ARF expression is regulated by a promoter that contains several putative E2F binding sites, and ARF expression can be regulated by free E2F levels above a threshold (Gil and Peters, 2006). The ARF promoter has previously been empirically defined (del Arroyo et al., 2007) and no other regulatory sequences or enhancers have been described to date. We first confirmed that the human ARF promoter can function in zebrafish cells in vitro in transfection experiments using previously described firefly luciferase reporter constructs (del Arroyo et al., 2007). Experiments were performed with ZF4 and zebrafish kidney stromal (ZKS) (Stachura et al., 2009) cells with HeLa cells used as a positive control since they express high levels of endogenous ARF (Figure 1\u2014figure supplement 1). These assays confirmed that the 736 base pair (bp) promoter is active in HeLa cells and in zebrafish lines. Therefore, we chose the 736\u00a0bp genomic fragment encompassing the human ARF promoter to generate ARF transgenics that mimic regulation of the human ARF gene. Tol2-mediated transgenesis (Kwan et al., 2007) was used to generate ARF:GFP fish, and transgenic fish were detected using cardiac GFP expression driven by a separate cmlc2:GFP cassette on the transgene.\n\nWe monitored expression of GFP driven by the human ARF promoter during normal development and in adult fish after injury and during regeneration. To determine if ARF:GFP is active during organogenesis in the zebrafish embryo, we assayed GFP expression at three developmental time points, 24, 48, and 72 hr postfertilization (hpf). We were unable to detect ARF:GFP expression in the embryo head, body, or tail by wide field epi or confocal immunofluorescence indicating that the ARF promoter is silent at these developmental stages (Figure 1B, Figure 1\u2014figure supplement 2A). GFP expression in the heart driven by the cmlc2 promoter serves as an internal control. To confirm that our analysis was not significantly compromised by limits of detection, we also performed in situ hybridization for GFP transcripts (Figure 1C). The in situ hybridization results confirmed the immunofluorescence analysis and indicate that ARF is silent or minimally expressed during development, including the developing tail fin region.\n\nTo investigate ARF activation during regeneration, ARF:GFP regenerates were assessed at the time of amputation and then at time points during which wound healing, blastema formation, and outgrowth of regenerating fins occurs (Poss et al., 2003). ARF:GFP transgenic fish regenerated their fins normally. In stark contrast to development, ARF:GFP was induced and highly expressed in the blastema of regenerating adult fins. GFP was specifically detected in ARF:GFP fins after amputation, and GFP colocalized with Msxb and proliferating cell nuclear antigen (PCNA) expressing cells (Figure 1D, Figure 1\u2014figure supplement 2B). GFP was not detected in the surrounding epithelium. This observation indicates that the ARF promoter is active in at least a subset of Msxb + blastema cells. GFP signal in the regenerate was first detected at 12 hr postamputation (hpa), peaked at 48 hpa, and then declined to undetectable levels within 6 days (Figure 1E, Figure 1\u2014figure supplement 2C). To correlate GFP expression with proliferation in ARF:GFP fins, we assessed EdU incorporation in regenerates at the above time points. There is a low level of proliferation in uninjured fins (0 hpa), but proliferation quickly increases to maximal levels within 48 hpa and then decreases (Figure 1E). GFP expression mirrored proliferative changes, suggesting that ARF detects and responds to high proliferative signaling in the regenerate.\n\nTo further examine the specificity of ARF regulation, we examined the response to the creation of an epithelial laceration wound. In this interray wound model, healing occurs without regeneration or blastema formation (Gauron et al., 2013). An epithelial wound was created in the dorsal fin lobe (Figure 1\u2014figure supplement 3A) and the ventral fin lobe of the same fish was amputated. GFP expression was evaluated 1 day postinjury (dpi) (Figure 1\u2014figure supplement 3B). As expected, GFP was detected in the forming ventral blastema. However, GFP was undetectable in the healing wound. These distinct ARF responses to development and to the two different forms of injury indicate that ARF specifically senses and responds to signals particular to the regeneration environment that differ significantly from those present during wound healing or in the highly proliferative environment of developmental organogenesis.\n\n### Zebrafish E2f1 binds the human ARF promoter specifically in the context of Rb hyperphosphorylation during regeneration\n\nIn mammalian cells, ARF detects and responds to aberrant inhibition of the Rb pathway (Sharpless, 2005; Sherr, 2006). To investigate the specific factors that activate ARF during zebrafish fin regeneration, but not during development, we assessed Rb pathway inhibition by Western blot analysis of E2f1, Rb1, and hyperphosophorylated-Rb1 (p-Rb1) in developing embryos (72 hpf), in adult uninjured fin tissue (uninj.) and at 2 days postamputation (dpa). Whereas p-Rb1 levels were relatively low in uninjured adult fins, a modest increase was detected in 72 hpf embryos. However, 2 dpa regenerates contained a dramatic increase in p-Rb1 levels despite stable levels of total Rb1 and total E2f1 (Figure 2A). This reflects a high level of pro-proliferation signaling resulting in inactivation of Rb1 by phosphorylation, as occurs commonly in tumors. To further investigate where in the regenerating fin the changes in p-Rb1 phosphorylation occurred, immunostaining of regenerating and uninjured fins was performed. Similar to Western blot analysis, immunostaining revealed a dramatic increase in p-Rb1 staining during regeneration (Figure 2B). A small amount of p-Rb1 staining was observed in uninjured fins, which is most likely the result of homeostatic proliferation (Wills et al., 2008). Co-immunostaining for GFP, and Msxb confirmed that p-Rb1 hyperphosphorylation and GFP were co-expressed in cells specifically localized within the blastema.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07702/elife-07702-fig2-v1.jpg)\n\n**Figure 2.:** Rb1 hyperphosphorylation and E2f1 binding of the human ARF promoter in the blastema during regeneration.(A) Representative Western blot of three experimental replicates of Rb pathway components, E2f1, Rb1, and hyperphosphorylated Rb1 (p-Rb1), before injury (uninj.), at 2 dpa, and during embryogenesis at 72 hpf (left). Quantification of p-Rb1 and Rb1 levels normalized to \u03b2-Actin and relative to uninjured tissue. Results are from three independent biological replicate experiments and are shown as mean ratios \u00b1 standard deviation. *p<0.05; ***p<0.001 (right). (B) Confocal images of coronal vibratome sections immunostained for Green fluorescent protein\u00a0(GFP), Msxb, and p-Rb1 in uninjured and regenerating (2 dpa) ARF:GFP fins. Scale bars: 50 \u03bcm. Very little p-Rb1 staining is seen in the uninjured fin, but high levels of p-Rb1 staining can be seen in Msxb + cells in the blastema at 2 dpa. The white dashed line represents the amputation plane. (C) Representative ChIP qPCR data of three experimental replicates with a pool of 30 fins per experiment. Tissue was collected from ARF:GFP transgenic fish before injury (uninj.), at 2 dpa (regenerate only), and at 72 hpf. Fold enrichment of E2f1 binding was normalized to rabbit IgG. The zebrafish thymidine kinase 1 (tk1) promoter was used as a positive control for E2f1 binding. Sequences 2 kbp upstream of tk1 were used as a negative control (tk1-). Values above twofold (black dashed line) are significant (p<0.05). Figure supplement 1 shows promoter sequences for the ARF, tk1, and tk1- promoters annotated for canonical E2f binding sites.\u00a0hpa: Hours postamputation.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07702/elife-07702-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Promoter sequences evaluated for E2f1 enrichment using an E2f1 antibody to perform a ChIP assay.Both ARF and tk1 promoters contain E2f binding sites (bold; del Arroyo et al., 2007, Tfsitescan), but the tk1- promoter does not.\n\nThe hyperphosphorylation of Rb1 in the blastema suggested that resulting elevated levels of free E2f could be sensed by ARF resulting in transcriptional activation. Moreover, since E2F can directly activate ARF in mammals (Gil and Peters, 2006), we evaluated interaction of fish E2f1 with the mammalian ARF promoter by chromatin immunoprecipitation (ChIP) experiments using an anti-E2f1 antibody in developing ARF:GFP embryos and uninjured and 2 dpa ARF:GFP fins. We analyzed the precipitated DNA fragments by quantitative polymerase chain reaction (qPCR) for three specific genomic regions, the ARF promoter, the tk1 promoter (a known target gene of E2f1; Wells et al., 2002), and a region 2 kilobases (kb) upstream of the tk1 promoter (tk1-) as a negative control (Figure 2\u2014figure supplement 1). We found that in contrast to the state before amputation, ARF is bound by E2f1 specifically during regeneration as is tk1 but not tk1- (Figure 2C). The ChIP assay showed that binding of the ARF promoter by E2f1 was enriched over sixfold relative to non-amputated controls and the tk1- control. The ARF promoter was even more highly enriched than the tk1+  control. Despite the modestly increased p-Rb1 levels in 72 hpf embryos, which correlated with enrichment of E2f1 at the tk1 promoter, no increase in E2f1 binding of the ARF promoter was observed. This finding suggests that the ARF promoter responds strongly and specifically to suprathreshold free E2f1 levels present during regeneration as opposed to other physiological contexts. This result implies that proliferative signaling during fin regeneration has similarities to that during mammalian tumor formation which elicit the ARF tumor suppressor response.\n\n### Human ARF suppresses zebrafish fin regeneration\n\nSince ARF is a human protein with no orthologs in zebrafish, we confirmed the expected subcellular localization of ARF and stabilization of Tp53 in zebrafish cells in vitro using the zebrafish cell lines, ZF4 and ZKS (Stachura et al., 2009). Cells were transfected with an ARF expression construct (human ARF cDNA subcloned into pcDNA3) to determine the subcellular localization of the protein as well as to confirm its interactions with orthologs of its mammalian partner, Mdm2 (Sherr, 2006; Sharpless, 2005). Confocal imaging showed that human ARF localized to the nucleolus and co-localized with Mdm2 in zebrafish cells (Figure 3\u2014figure supplement 1A). Tp53 levels were examined in fish cells transfected with ARF expression or control constructs. Elevated Tp53 levels were readily observed in approximately 40% of ARF transfected cells (Figure 3\u2014figure supplement 1A,B). The recapitulation of typical localization and Tp53 upregulation suggested conservation of human ARF functions in zebrafish cells and supported investigation of ARF transgenic fish. To investigate the phenotypic effects of ARF on regeneration in vivo, we first utilized the heat shock protein 70 inducible promoter to drive expression of ARF (Tg (hsp70l:ARF) or hs:ARF) (Figure 3). hs:ARF fish were subjected to multiple heat shock regimens to determine ARF expression and stability. Immunostaining showed that when induced with an hour long, 37\u00b0C heat shock, ARF is robustly expressed in the fin 3 hr later (Figure 3). Western blot confirmed induction of ARF protein expression and also showed a rapid decrease almost to baseline at 6 hr (Figure 3), in accordance with the known 6 hr half-life of the human protein (Sherr, 2006).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07702/elife-07702-fig3-v1.jpg)\n\n**Figure 3.:** Expression of the mammalian tumor suppressor ARF in zebrafish driven by heat shock promoter.\u00a0  In vivo analysis of transgenic zebrafish expressing human ARF under the control of an inducible heat shock promoter, Tg (hsp70l:ARF) (hs:ARF). Schematic of the hs:ARF transgene (top left). The ARF cassette included in the transgene is a cDNA that consists of human exons 1b,\u00a02,\u00a0and 3 of CDKN2A. Representative Western blot of 3 replicates of ARF before (0 hr) and 3 and 6 hr post heat shock induction of ARF expression (top middle). Portion of fin shown for analysis of expression  in vivo (top right; dashed box). Scale bar: 1 mm. Immunostaining (sagittal confocal images) for ARF in adult hs:ARF zebrafish fins at 0,\u00a03,\u00a0and 8 hr after a single, hour long, 37\u00b0C heat shock (bottom). Scale bars: 50 \u03bcm. ARF expression is maximal at 3 hr post heat shock, and it is undetectable by 8 hr post heat shock. Figure supplement 1 shows  in vitro assays.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07702/elife-07702-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Analysis of ARF expression in zebrafish cells.(A) Immunofluorescence for Mdm2 and ARF (top) and Tp53 (bottom) in zebrafish cells (ZKS) transfected with pcDNA-ARF. ARF and Mdm2 co-localize in the nucleolus (arrow) when ARF is expressed; in cells without ARF, Mdm2 has a diffuse nuclear staining pattern (arrow head; top). Tp53 upregulation depends on ARF expression (bottom). Scale bars: 10 \u03bcm. (B) Quantification of Tp53 upregulation in zebrafish cells (ZKS) transfected with pcDNA-ARF (N = 100, p<0.01). Results are shown as mean \u00b1 standard deviation.\n\nWe then examined the effects of inducible, transient ARF expression on fin regeneration. Using a regimen of one heat shock 3 hr prior to amputation and then subsequently every 6 hrs up to 6 dpa (Figure 4A, top), fin regeneration in hs:ARF transgenic fish was compared with non-transgenic wild type (WT) clutchmates. hs:ARF and WT fish tolerated heat shock well without overt illness or mortality. ARF expression caused significant inhibition of fin regeneration as evidenced by reduced regenerate length and area; WT regenerates measured 1.2 \u00b1 0.13 mm in length and 5.4 \u00b1 1.3 mm2 in area compared with hs:ARF regenerates, which measured 0.84 \u00b1 0.13 mm in length and 3.0 \u00b1 0.76 mm2 in area, a reduction of approximately 30% (p<0.001) and 45% (p<0.001), respectively (Figure 4B). Inducible ARF expression was confirmed in hs:ARF, but not WT fins exposed to heat shock during regeneration (4 dpa) (Figure 4\u2014figure supplement 1A). After the heat shock regimen ended, fin regeneration resumed to reach full length by 14 dpa (Figure 4\u2014figure supplement 1B). Both hs:ARF transgenic fish maintained at 28\u201330\u00b0C and WT fish exposed to heat shock regenerated their fins normally. When previously heat-shocked hs:ARF fins were reamputated and allowed to regenerate in the absence of heat shock (Figure 4A, bottom), the fins regenerated equally as well as WT fins (Figure 4C). This indicates that ARF inhibits fin regeneration in a reversible manner and that its continued expression is required for regeneration suppression.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/07702/elife-07702-fig4-v1.jpg)\n\n**Figure 4.:** ARF suppresses fin regeneration.(A) Schematic of heat shock regimen. An initial hour long, 37\u00b0C heat shock is delivered 3 hr prior to amputation (0 dpa) and then every 6 hrs thereafter for 6 days. Regenerates are then assessed (top) or fins are reamputated (0 dpa) and allowed to regenerate in the absence of heat shock for 6 days (bottom). (B) Quantification of regenerate length and area at 6 dpa in WT and hs:ARF fins exposed to the heat shock regimen (left; N = 40 fins representing multiple different transgene insertions, p<0.001). Representative images of fin regeneration at 6 dpa in WT and hs:ARF fins exposed to the heat shock regimen (right). (C) Quantification of regenerate length and area at 6 dpa in reamputated hs:ARF fins not exposed to heat shock (left; N = 40 fins, p>0.05). Representative image of fin regeneration at 6 dpa in a reamputated hs:ARF fin not exposed to heat shock (right). The dashed lines represent amputation planes. Scale bars: 1 mm. Results are shown as mean \u00b1 standard deviation. Figure supplement 1 shows ARF and Tp53 immunostaining at 4 dpa, and tp53 and cdkn1a expression changes with ARF expression. It also shows regeneration at 14 dpa after heat shock was discontinued at 6 dpa.\u00a0hs: Heat shock; WT: Wild type.\u00a0n.s.:\u00a0not\u00a0significant.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07702/elife-07702-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** ARF expression during regeneration promotes Tp53, tp53, and cdkn1a upregulation\u00a0and\u00a0regeneration\u00a0inhibition\u00a0is\u00a0reversible.(A) Representative (sagittal confocal) images of WT and hs:ARF fins at 4 dpa. Scale bars: 50 \u03bcm. Dashed lines represent amputation planes. ARF localizes to the nucleus (inset). Scale bars: 10 \u03bcm. (B) Quantification of fin regenerate length and area in WT and hs:ARF at 14 dpa after heat shock was discontinued at 6 dpa (left; N = 10 fins, p>0.05). Representative images of WT and hs:ARF fins at 14 dpa after heat shock was discontinued at 6 dpa (right). (C) Representative images of ARF and Tp53 in WT and hs:ARF fins at 4 dpa (left). Scale bar: 10 \u03bcm. Tp53 expression is only detected in cells with ARF expression. Quantifications of relative tp53 (middle) and cdkn1a (right) transcript expression in uninjured (uninj.) WT and hs:ARF fin and regenerates at 4 dpa (N = 3 replicates). Expression was normalized to \u03b2-Actin transcripts and relative to uninjured fins within each condition. Significant increases in tp53 (N=5 fins, p<0.05) and cdkn1a (N =5 fins, p<0.01) were observed with ARF expression. Results are shown as mean \u00b1 standard deviation.hs: Heat shock; WT: Wild type.\u00a0n.s.:\u00a0not\u00a0significant.\n\n### ARF suppresses fin regeneration in a p53-dependent manner by inducing apoptosis and causing cell-cycle arrest\n\nTo assess whether ARF functions through the p53 pathway to inhibit fin regeneration in vivo, we examined Tp53 protein and transcript levels as well as induction of the p53 target gene cdkn1a (p21) in response to ARF expression at 4 dpa (Figure 4\u2014figure supplement 1C). The induction and stabilization of p53 and induction of cdkn1a transcripts by ARF showed that ARF impacts p53 functions in vivo in fish regenerates. To assess the Tp53-dependence of ARF, we first crossed hs:ARF fish with tp53M214K mutant fish to generate hs:ARF fish that are homozygous for the tp53M214K allele (hs:ARF; tp53M214K/M214K). The tp53M214K mutation abrogates Tp53 transactivation functions (Berghmans et al., 2005). Using the same amputation and heat shock regimen, we analyzed fin regeneration and found no difference in regenerate length or area despite ARF expression in tp53 mutant fish (Figure 5A). We also tested Tp53-dependence of ARF regeneration suppression by treating zebrafish with either pifithrin-\u03b1 (PFT\u03b1Sigma, St. Louis, MO), an inhibitor of Tp53 transactivation (Komarov et al., 1999), or nutlin3a, a molecule that disrupts the Mdm2\u2013Tp53 interaction, thereby stabilizing Tp53 levels (Yun et al., 2013; Vassilev et al., 2004). Treatment of hs:ARF and WT fish with 5 \u03bcM PFT\u03b1 and heat shock increased hs:ARF regenerate length from 0.44 \u00b1 0.04 mm to 0.66 \u00b1 0.08 mm, an increase of 50% (p<0.01), and area from 1.8 \u00b1 0.7 mm2 to 3.2 \u00b1 0.5 mm2, an increase of approximately 75% (p<0.05), compared with carrier-treated controls. Fin regeneration of WT fish was not affected by PFT\u03b1 treatments (Figure 5B). Treatment of WT fish with 5 \u03bcM nutlin3a reduced fin regenerate length from approximately 0.65 \u00b1 0.1 mm to 0.45 \u00b1 0.1 mm, a decrease of 30% (p<0.01), and area from 4.7 \u00b1 1.2 mm2 to 2.8 \u00b1 0.7 mm2, a reduction of 40% (p<0.05) (Figure 5C, left), phenocopying the fin regeneration inhibition phenotype of induced hs:ARF fish (Figure 5C, right). Together, these experiments show that ARF functions through Tp53-dependent mechanisms to inhibit fin regeneration, and also demonstrate the importance of active suppression of Tp53 by Mdm2.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/07702/elife-07702-fig5-v1.jpg)\n\n**Figure 5.:** Human ARF functions through the Tp53 pathway in fish to suppress regeneration.(A) Quantification of regenerate length and area at 6 dpa in tp53M214K/M214K, hs:ARF, and hs:ARF; tp53M214K/M214K fins exposed to the heat shock regimen as in Figure 4 (left; N = 30 fins). Representative images of fin regeneration at 6 dpa in tp53M214K/M214K, hs:ARF, and hs:ARF; tp53M214K/M214K fins exposed to heat shock (right). Scale bars: 1 mm. Immunostaining (sagittal confocal images) for ARF in tp53M214K/M214K and hs:ARF; tp53M214K/M214K fins 3 hr after a single heat shock (right inset). Scale bars: 10 \u03bcm. Fin regeneration proceeds equally well in tp53M214K/M214K and hs:ARF; tp53M214K/M214K fins exposed to heat shock, but fin regeneration inhibition is observed in hs:ARF fins exposed to heat shock. (B) Quantification of regenerate length and area at 4 dpa in wild type\u00a0(WT) and hs:ARF fins exposed to heat shock and 5 \u03bcM pifithrin-\u03b1(PFT\u03b1) or 0.1% Dimethyl sulfoxide\u00a0(DMSO)\u00a0(vehicle) (left; N = 8 fins, p<0.01). Representative images of fin regeneration at 4 dpa in WT and hs:ARF fins exposed to heat shock and 5 \u03bcM PFT\u03b1 or 0.1% DMSO (right). Scale bars: 0.5 mm. Inhibition of Tp53 activity with PFT\u03b1 rescues regeneration suppression by ARF. (C) Quantification of regenerate length and area at 4 dpa in WT fins exposed to 5 \u03bcM nutlin3a or Ethanol\u00a0(EtOH) (vehicle) (left; N = 8 fins, p<0.01). Representative images of fin regeneration at 4 dpa in WT fins exposed to 5 \u03bcM nutlin3a or EtOH (right). Scale bars: 0.5 mm. Inhibition of Mdm2 with nutlin3a phenocopies ARF expression by suppressing fin regeneration. The dashed lines represent amputation planes. Results are shown as mean \u00b1 standard deviation.\u00a0\u00a0n.s.:\u00a0not\u00a0significant.\n\nIn order to understand the cellular effects of ARF that lead to inhibition of fin regeneration, we examined apoptosis and proliferation in blastema cells during regeneration with and without ARF expression. To estimate cell proliferation differences between WT and hs:ARF fins, EdU pulse-chase experiments were performed at 2, 4, and 6 dpa. EdU incorporation was significantly higher in WT fin regenerates compared with hs:ARF regenerates at all time points examined with the greatest difference occurring at 2 dpa (171%, p<0.001) (Figure 6A). Apoptotic cells in hs:ARF and WT regenerates were analyzed using terminal deoxynucleotidyl transferase dUTP nick end labeling (TUNEL) staining. When the percent of TUNEL + cells in WT and hs:ARF regenerates was compared, the incidence of apoptosis increased with ARF expression at all time points examined with the greatest difference occurring at 2 dpa (210%, p<0.01) (Figure 6B). To assess whether ARF directly affects proliferating blastema cells, we also measured EdU incorporation with different heat shock regimens starting at 4 dpa. The results showed that either a single heat shock or 24 hr of heat shocks at 4 dpa significantly reduced the number of cycling cells in the regenerate, demonstrating a direct effect of ARF on the regenerating cell population (Figure 6C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/07702/elife-07702-fig6-v1.jpg)\n\n**Figure 6.:** ARF suppresses fin regeneration by inducing apoptosis and cell-cycle arrest.(A) Quantification of EdU staining at 2, 4, and 6 dpa in wild type\u00a0(WT) and hs:ARF fins exposed to heat shock (left). At 2 dpa, 6.0% \u00b1 1.1% of cells in WT regenerates were EdU + compared with approximately 2.2% \u00b1 0.8% in Heat shock\u00a0(hs):ARF regenerates. At 4 dpa, approximately 7.4% \u00b1 0.6% of cells in WT regenerates were EdU + compared with 4.2% \u00b1 0.6% in hs:ARF regenerates. At 6 dpa, approximately 6.4% \u00b1 0.9% of cells in WT regenerates were EdU + compared with 2.7% \u00b1 0.3% in hs:ARF regenerates. Significantly fewer cycling cells are detected with ARF expression (N = 10 fins, p<0.001). Representative (left \u2013 sagittal confocal, right \u2013 longitudinal) images of EdU staining at 2 dpa in WT and hs:ARF fins exposed to heat shock (right). Scale bars: left \u2013 50 \u03bcm, right \u2013 25 \u03bcm. Dashed lines represent amputation planes. (B) Quantification of Terminal deoxynucleotidyl transferase dUTP nick end labeling\u00a0(TUNEL) staining at 2, 4, and 6 dpa in WT and hs:ARF fins exposed to heat shock (left). At 2 dpa, 2.2% \u00b1 1.2% of cells in WT regenerates were TUNEL + , while 6.7% \u00b1 3.7% of cells in hs:ARF regenerates were TUNEL + . At 4 dpa, only 2.7% \u00b1 1.2% of cells in WT regenerates were TUNEL + compared with 4.8% \u00b1 0.8% in hs:ARF regenerates. At 6 dpa, 2.4% \u00b1 0.6% of cells in WT regenerates were TUNEL +, while 3.1% \u00b1 0.5% of cell in hs:ARF regenerates were TUNEL +. Significantly more apoptosis is detected with ARF expression (N = 10 fins, p<0.001). Representative images (left \u2013 sagittal, right \u2013 longitudinal) of TUNEL staining at 2 dpa in WT and hs:ARF fins exposed to heat shock (right). Image quantification was performed on regenerates only. Dashed lines represent amputation planes. Scale bars: left \u2013 50 \u03bcm, right \u2013 25 \u03bcm. (C) Quantification of EdU staining in WT and hs:ARF fins 3 hr after a single heat shock or 24 hr of heat shock delivered at 4 dpa. After a single heat shock, 3.3% \u00b1 1.5% of cells in WT regenerates were EdU + compared with 1.9% \u00b1 0.6% in hs:ARF regenerates. After 24 hr of heat shock, 3.0% \u00b1 0.7% of cells in WT regenerates were EdU + compared with 1.2% \u00b1 0.4% in hs:ARF regenerates. Significantly fewer cycling cells are detected with ARF expression after blastema formation (N = 10 fins, p<0.001). Results are shown as mean \u00b1 standard deviation.\n\n### ARF does not affect development but suppresses fin regeneration in response to regeneration signals\n\nSince the ARF promoter is activated specifically in the fin during regeneration, we tested how transgenic fish expressing ARF under control of the endogenous ARF promoter would develop and regenerate. To do so, we generated zebrafish lines from independent transgenic insertions that utilize the human ARF promoter to drive ARF expression (Tg (ARF:ARF) or ARF:ARF) (Figure 7A, left). ARF expression during development would be expected to adversely affect ARF:ARF fish. We observed, however, that ARF:ARF transgenic fish are viable, develop normally, and have no overt size or morphological differences when compared with age- and sex-matched WT counterparts (Figure 7A, right). Furthermore, examination of ARF:ARF embryos confirmed our findings in ARF:GFP transgenics. In agreement with the predictions of ARF:GFP experiments, there was no effect of the ARF:ARF transgene on survival during early embryogenesis compared with WT fish (Figure 7\u2014figure supplement 1A). We also did not detect ARF expression in embryos, as expected given our findings with ARF:GFP fish (Figure 7\u2014figure supplement 1A). To assess whether ARF, if expressed, would interfere with organogenesis or development, we evaluated the effects of induced ARF expression using hs:ARF fish. Upon heat shock, hs:ARF, but not WT clutches, exhibited drastically reduced survival that was associated with high levels of ARF expression throughout the embryo (Figure 7\u2014figure supplement 1B). This finding indicates that ARF expression is very poorly tolerated by developing embryos and clearly implies that in ARF:ARF fish, ARF is not activated significantly during development to affect normal developmental growth and organogenesis.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/07702/elife-07702-fig7-v1.jpg)\n\n**Figure 7.:** ARF senses regenerative signals and suppresses fin regeneration.(A) Schematic of transgene expressing human ARF under the control of the human ARF promoter (left). Representative images of age- and sex-matched ARF:ARF and WT zebrafish (right; 5 months postfertilization, male). Scale bar: 1 cm. ARF:ARF fish are viable, grow to adulthood and are of normal size and patterning. (B) Immunostaining (longitudinal confocal images) for ARF in ARF:ARF transgenic fish before injury (uninjured ) and at 2 dpa. Scale bars: 50 \u03bcm. ARF is specifically expressed upon injury. The dashed line represents the amputation plane. (C) Representative images of fin regeneration at 6 dpa in WT and ARF:ARF fins (top). Scale bars: 1 mm. The dashed lines represent amputation planes. Quantification of regenerate length and area at 6 dpa in WT and ARF:ARF fins (bottom; N= 10 fins, p<0.001). The first set of bars in each graph represents the results from one transgenic line (Line 1), while the second set of bars represents the results from a second, independent transgenic line (Line 2). ARF causes marked inhibition of fin regeneration. Results are shown as mean \u00b1 standard deviation. Figure supplement 1 shows the embryonic viability of ARF transgenic lines. Figure supplement 2 shows the failure of ARF:ARF fins to completely regenerate after 15 days and even 30 days. Figure supplement 3 shows ARF immunostaining at 6 dpa, Tp53, tp53, and cdkn1a expression changes with ARF expression in WT and ARF:ARF fins at 4 dpa, fin regeneration rescue in ARF:ARF fins treated with PFT\u03b1, and EdU incorporation studies performed in WT and ARF:ARF fins.\u00a0TSS: Transcriptional state site; uninj.: Uninjured; WT: Wild type.\u00a0n.s.:\u00a0not\u00a0significant.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07702/elife-07702-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** The ARF:ARF transgene does not interfere with development, whereas forced ARF expression causes embryonic lethality.(A) Quantification of embryonic mortality at 48 hpf and 72 hpf in wild type\u00a0(WT) and ARF:ARF embryos (left; N = 90, p>0.05). Representative sagittal confocal images of ARF expression at 24 hpf in WT and ARF:ARF (right). (B) Quantification of embryonic mortality at 48 hpf and 72 hpf in WT and hs:ARF embryos exposed to heat shock (left; N = 90, p<0.001). Representative sagittal confocal images of ARF expression at 27 hpf in WT and hs:ARF embryos 3 hr after a single heat shock (right). Scale bars: 200 \u03bcm. Results are shown as mean \u00b1 standard deviation .\u00a0n.s.:\u00a0not\u00a0significant.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07702/elife-07702-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** ARF:ARF fins do not completely regenerate even after 30 days.Representative images of fin regeneration at 15 dpa and 30 dpa in wild type\u00a0(WT) and ARF:ARF fins. Scale bars: 1 mm.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/07702/elife-07702-fig7-figsupp3-v1.jpg)\n\n**Figure 7\u2014figure supplement 3.:** ARF:ARF expression and p53-dependent functions during regeneration.(A) Representative images of wild type\u00a0(WT) (left) and ARF:ARF (right) fins at 6 dpa. Scale bars: 1 mm. Representative images of ARF expression at 6 dpa in WT (left) and ARF:ARF (right) fins. Scale bars: 10 \u03bcm. Dashed lines represent amputation planes. (B) Representative images of ARF and Tp53 in WT and ARF:ARF fins at 4 dpa (left). Scale bar: 10 \u03bcm. Tp53 expression is only detected in cells that express ARF. Quantification of relative tp53 (middle) and cdkn1a (right) transcript expression in uninjured (uninj.) WT and ARF:ARF fin and regenerates at 4 dpa (N = 3 replicates). Expression was normalized to \u03b2-Actin transcripts and relative to fins within each condition. Significant increases in tp53 (N = 5 fins, p<0.05) and cdkn1a (N = 5 fins, p<0.01) were observed with ARF expression. (C) Quantification of regenerate length and area at 6 dpa in ARF:ARF fins treated with 0.1% Dimethyl sulfoxide\u00a0(DMSO) or 5 \u03bcM Pifithrin-\u03b1\u00a0(PFT\u03b1) (left; N = 8 fins/condition, p<0.01). Representative images of fin regeneration at 6 dpa in ARF:ARF fins treated with 0.1% DMSO or 5 \u03bcM PFT\u03b1 (right). Scale bars: 1 mm. Dashed lines represent amputation planes. Treatment with PFT\u03b1 rescues fin regeneration in ARF:ARF transgenic zebrafish. (D) Quantification of EdU staining at 2, 4, and 6 dpa in WT and ARF:ARF fins (left). At 2 dpa, 5.0% \u00b1 0.6% of cells in WT regenerates were EdU + compared with approximately 1.4% \u00b1 0.4% in hs:ARF regenerates. At 4 dpa, approximately 7.0% \u00b1 0.7% of cells in WT regenerates were EdU + compared with 1.3% \u00b1 0.3% in hs:ARF regenerates. At 6 dpa, approximately 7.0% \u00b1 1.1% of cells in WT regenerates were EdU + compared with 1.8% \u00b1 0.6% in hs:ARF regenerates. Significantly fewer cycling cells are detected with ARF expression (N = 10 fins, p<0.001). Representative (left \u2013 sagittal confocal, right \u2013 longitudinal) images of EdU staining at 2 dpa in WT and ARF:ARF fins (right). Scale bars: left \u2013 50 \u03bcm, right \u2013 25 \u03bcm. Dashed lines represent amputation planes. Results are shown as mean \u00b1 standard deviation.\u00a0n.s.:\u00a0not\u00a0significant.\n\nWe then performed fin regeneration experiments with ARF:ARF transgenic fish and WT fish. When ARF:ARF fins were injured, ARF was detected in the regenerate (Figure 7B), and the pattern of expression was similar to GFP expression in ARF:GFP regenerates at the same time point (Figure 1). When fin regeneration was compared between ARF:ARF transgenic fish and WT fish, ARF:ARF regenerates measured 0.55 \u00b1 0.17 mm in length and 1.8 \u00b1 1.3 mm2 in area, while WT regenerates measured 1.2 \u00b1 0.06 mm in length and 6.0 \u00b1 1.4 mm2 in area. To rule out position effects of the transgene insertion, a second independent transgenic ARF:ARF line was also assessed. Regenerates of this second ARF:ARF line measured 0.6 \u00b1 0.2 mm in length and 2.3 \u00b1 0.96 mm2 in area, while WT regenerates measured 1.1 \u00b1 0.13 mm in length and 5.1 \u00b1 0.67 mm2 in area. In all, ARF:ARF regenerates were 55% (p<0.001) and 44% (p<0.001) shorter and 70% (p<0.001) and 55% (p<0.001) smaller in area than WT regenerates, and anatomical fin defects persisted 1 month after amputation (Figure 7C, Figure 7\u2014figure supplement 2). ARF expression persisted in ARF:ARF fins but not WT fins at 6 dpa (Figure 7\u2014figure supplement 3A), a time point at which GFP in no longer observed in regenerated ARF:GFP fins, suggesting ongoing regeneration attempts in ARF:ARF fins.\n\nWe confirmed that fin regeneration inhibition in ARF:ARF fish was p53 dependent as in hs:ARF fish. Tp53, tp53, and cdkn1a expression increased with ARF expression in ARF:ARF fins at 4 dpa (Figure 7\u2014figure supplement 3B). As in hs:ARF fish, treatment of ARF:ARF fins with 5 \u03bcM PFT\u03b1 rescued fin regeneration (Figure 7\u2014figure supplement 3C). Finally, we quantified the cell cycle arrest that is a consequence of ARF expression comparing WT and ARF:ARF fins with EdU pulse-chase labeling at 2, 4, and 6 dpa. Similar to hs:ARF fins, ARF:ARF fin regenerates had significantly fewer proliferating cells than WT fin regenerates at all time point assessed with the largest difference observed at 4 dpa (81%, p<0.001) (Figure 7\u2014figure supplement 3D).\n\nThese results confirm that ARF activation is specific to regenerating tissue and show that the magnitude of activation is sufficient to inhibit regeneration. Thus, the presence of a functional human ARF gene in fish results in a diminished regenerative capacity, including absence of epimorphic regeneration, without significantly affecting other major physiological or developmental characteristics.\n\n## Discussion\n\nIn this study, we have experimentally tested the hypothesis that tumor suppressor evolution may impact regenerative capacity. We found that the core mammalian tumor suppressor ARF senses regeneration signals and specifically responds to negatively alter the proliferative balance in the zebrafish blastema, greatly perturbing regeneration. Our findings provide the first in vivo experimental evidence that evolution of tumor suppressors can negatively impact solid tissue regeneration potential.\n\nAlthough the core tumor suppressors as a whole support regenerative processes, the properties of ARF identified in this study are at odds with epimorphic regeneration. This new example of antagonistic pleiotropy adds to previously recognized trade-off characteristics of tumor suppressor genes affecting mammalian stem cell function (Pardal et al., 2005; Greaves, 2007; Pomerantz and Blau, 2013; Rodier et al., 2007) and shows that ARF antagonistic properties also manifest in the context of the blastema. The evidence that ARF is a critical tumor suppressor in mammals (Sherr, 2006, Sharpless, 2005), but opposes regeneration functions (Sharpless and DePinho, 2007), suggests that the selective pressure that has driven the evolution of ARF has primarily enhanced tumor suppression either at the expense of or in the absence of regeneration pressures. Although our experiments and those of others (Gemberling et al., 2013; Poss et al., 2003) show that the regenerative capacity of zebrafish is vulnerable to single gene alterations, whether altering function of a single gene in mammals would induce the emergence of robust epimorphic regenerative capacity is a much more complex issue. Indeed, the multifactorial genetic differences of highly and less regenerative vertebrates make it unlikely that manipulation of a single gene could enable regeneration. It is notable, however, that Cdkn1a (p21) knockout mice do possess a somewhat enhanced ability to regenerate solid structures (Heber-Katz et al., 2013; Clark et al., 1998) such as pinnae, which lack the complex tissue structure of a digit, but nonetheless, demonstrate that alteration of cellular growth control mechanisms can impact regeneration. Moreover, the importance of active repression of ARF to maintain stem cell function (Molofsky et al., 2005), and of ARF reduction to facilitate dedifferentiation (Pajcini et al., 2010) have been documented.\n\nAmong the core tumor suppressor genes that are frequently inactivated in mammalian tumors, ARF is unique in that it does not have orthologs represented in most vertebrates including highly regenerative species. By contrast, Tp53, Pten, and Ink4a have distant orthologs, present in invertebrates and vertebrates alike. The transgenesis approach we used to study ARF in fin regeneration made it possible for us to study ARF with its human regulatory components but without increasing CDKN2A CKI gene dosage, which could have been a complicating factor in a transgenic harboring the entire CDKN2A (INK4A/ARF) locus. This study extends our previous observations (Pajcini et al., 2010) that ARF prevents dedifferentiation in muscle cells in culture and provides new evidence that ARF functions in vivo to oppose tissue regeneration. Future experiments will determine whether ARF prevents dedifferentiation in vivo, such as the dedifferentiation of osteoblasts in regenerating fins, or whether it acts on proliferating blastema cells after they have dedifferentiated. Combined, our findings suggest that zebrafish cells are more promiscuous in terms of tolerance to high levels of mitogenic activity, thus permitting the cellular processes required for epimorphic regeneration. It follows that regenerating cells in organisms that have an ARF gene would need to prevent ARF activation or would be inherently more restricted in these activities.\n\nWe found that ARF recapitulates its core mammalian mechanistic functions in zebrafish cells and tissues. As in mammals, when ARF is overexpressed in zebrafish cells, it associates with Mdm2, stabilizes Tp53, and induces cell cycle arrest or apoptosis. This functional conservation over an evolutionary distance demonstrates that cross-species genetic variations can be experimentally examined in the study of regeneration. When ARF expression is driven by its endogenous human promoter in zebrafish cells, activation of the p53 axis occurs specifically in the blastema-regeneration scenario. Remarkably, the inhibitory effect on regeneration by ARF:ARF was stronger than with the heat shock promoter, probably reflecting ongoing surveillance of regenerative signals by the ARF promoter in contrast to fluctuating ARF levels obtained with intermittent heat shock induction of a short half-life protein. In the developing or adult uninjured state, E2f1 is sequestered and inhibited by Rb1, and ARF is inactive. However, during blastema formation and regeneration, Rb1 hyperphosphorylation is associated with sufficient free E2f1 to activate ARF, which inhibits fin regeneration via a Tp53-dependent mechanism (Figure 8). Our findings and model are in agreement with the recent proposal that in salamanders the absence of ARF permits downregulation of Tp53 during blastema formation (Yun et al., 2013). The responsiveness of ARF to the Rb pathway proliferative signaling characteristic of zebrafish fin regeneration implies that similar mitogenic signaling occurring in a mammalian context would be detected as aberrant, activate ARF\u2013MDM2\u2013TP53 tumor suppressor mechanisms, and oppose regeneration. Our findings are compatible with previous mouse studies showing that ARF is a potent tumor suppressor that is dispensable for normal development (Serrano et al., 1996; Kamijo et al., 1997). Moreover, prior observations that ARF is not developmentally expressed in the majority of tissues in the mouse (Gromley et al., 2009; Zindy et al., 2003) support the fidelity of the promoter used in this study. Although the majority of tumor suppressors probably function in regeneration as they do in normal development, the findings of the present study indicate that ARF represents an unusual departure from that paradigm in that the properties that cause it to respond specifically to tumorigenesis also cause it to distinguish regeneration contexts from developmental ones.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/07702/elife-07702-fig8-v1.jpg)\n\n**Figure 8.:** Model of ARF function in the context of Rb pathway activity during zebrafish development and fin regeneration.ARF is not active during development during which a moderate level of mitogenic signaling causes modest phosphorylation of Rb1 (top); however, during regeneration, high mitogenic signaling induces Rb1 hyperphosphorylation and abundant free E2f1, which activates ARF and leads to inhibition of regeneration (bottom). The dashed lines represent the amputation plane.\n\nWe show here how examination of zebrafish that are humanized with respect to candidate regeneration modifiers is informative for understanding disparate regenerative capacities. Such an approach should prove useful for examining other candidate genes and pathways of interest. Our findings with respect to ARF strongly suggest that it is a barrier to mammalian epimorphic regeneration because it interprets the regeneration context as similar to tumorigenesis. It follows conceptually that approaches to induce epimorphic regeneration clinically would need to disrupt ARF\u2013MDM2\u2013TP53 axis activation.\n\n## Materials and methods\n\n### Zebrafish\n\nZebrafish maintenance at 28\u201330\u00b0C and all experiments were approved by the Institutional Animal Care and Use Committee of the University of California, San Francisco. Three- to six-month-old WT or transgenic AB zebrafish were used for all experiments. The Tg (hsp70l:ARF), Tg (ARF:ARF), and Tg (ARF:GFP) constructs were created by either subcloning the cDNA of human ARF (exons 1\u03b2, 2, and 3 of CDKN2A) or a cytoplasmic EGFP cassette downstream of either the promoter sequences of zebrafish hsp70l (Halloran et al., 2000) or the human CDKN2A promoter (Robertson and Jones, 1998), respectively. The ARF promoter was subcloned from pKR19 (Robertson and Jones, 1998) using SalI to excise an approximately 1\u00a0kb region of the human promoter, which encompassed 736 bp 5\u2032 of the transcriptional state site of ARF. Sequence information can be found in del Arroyo et al. (2007). Tol2-mediated transgenesis was used to generate transgenic animals (Kwan et al., 2007). Transgenic animals were detected based on their GFP-positive hearts, due to the transgenes containing a cmlc2:GFP cassette. All transgenic strains were analyzed as hemizygotes. For drug treatment experiments, zebrafish were treated with 5 \u03bcM \u03b1PTF\u03b1 in dimethyl sulfoxide (DMSO) (5\u00a0mM stock) or 5 \u03bcM (-)-Nutlin-3 (Cayman, Ann Arbor, MI) in ethanol (EtOH) (5\u00a0mM stock). Water was exchanged daily. For EdU pulse-chase experiments, 5 \u03bcL of 5 mg/mL of EdU (Life Technologies, Carlsbad, CA) in saline was injected intraperitoneally into anesthetized fish 30 min before tissue harvest.\n\n### Immunostaining\n\nZebrafish fin immunostaining was performed on whole-mounted fins as previously described (Sousa et al., 2011). For coronal views, whole-mount stained fins were embedded in 5% agarose, and 200 \u03bcm sections were cut with a vibratome. Imaging was performed with a confocal microscope. Zebrafish embryo immunostaining was performed on whole-mounted, 1-phenyl 2-thiourea (PTU; Sigma)-treated embryos as previously described (Macdonald, 1999). Zebrafish cell immunostaining: 4% paraformaldehyde (PFA) 10 min, phosphate-buffered saline (PBS) 5 min 3\u00d7, 0.3% PBTx 15 min, PBS 5 min 3\u00d7, serum-free protein block (Dako, Carpinteria, CA) 1 hr, primary antibodies in antibody diluent (Dako) overnight 4\u00b0C, PBS 5 min 3\u00d7, secondary antibodies in antibody diluent 1 hr, PBS 5 min 3\u00d7, mounted with Vectashield mounting medium with DAPI (Vector Laboratories, Burlingame, CA). EdU incorporation was detected using the Click-iT EdU Imaging Kit per the manufacturer\u2019s instructions (Life Technologies). TUNEL detection was performed using the In Situ Cell Death Detection Kit (Roche, Basel, Switzerland) per the manufacturer\u2019s instructions. Images were quantified in ImageJ. The percent of EdU + or TUNEL + cells was quantified by first counting the number of positive cells in the regenerate and then dividing that count by the number of nuclei in the field counted.\n\n### In situ hybridization\n\nZebrafish embryo mRNA in situ hybridization was performed on whole-mounted, PTU-treated embryos as previously described (Chitramuthu and Bennett, 2013). The antisense GFP probe was labeled with digoxigenin-11-UTP (Roche) and generated using the following primers: 5\u2032-AAGGGCGAGGAGCTGTTCAC-3\u2032 and 5\u2032-GAACTCCAGCAGGACCATGT-3\u2032 (MacDonald et al., 2010).\n\n### Western blot\n\nAn amount of 50\u201360 \u03bcg of total protein isolated from adult zebrafish fin tissue was loaded per lane, electrophoresed, and transferred to polyvinyl difluoride (PVDF) membranes. Protein was visualized using ECL Prime (GE Healthcare Bio-Sciences, Pittsburgh, PA) and an ImageQuant LAS 4000 (GE Healthcare Bio-Sciences). Band quantification was performed using ImageQuantTL software. For each condition, Rb1 and p-Rb1 bands were normalized to \u03b2-Actin, and the ratio of p-Rb1:Rb1 was calculated and made relative to uninjured tissue (Table 1).\n\n**Table 1.**\n Primary antibodies.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Host species</th>\n      <th>Antigen</th>\n      <th>Company</th>\n      <th>Cat. No.</th>\n      <th>Dilution</th>\n      <th>Application</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Mouse</td>\n      <td>Tp53</td>\n      <td>Abcam</td>\n      <td>ab77813</td>\n      <td>1:50</td>\n      <td>IHC</td>\n    </tr>\n    <tr>\n      <td>Rabbit</td>\n      <td>Mdm2</td>\n      <td>Santa Cruz</td>\n      <td>C-18</td>\n      <td>1:50</td>\n      <td>IHC</td>\n    </tr>\n    <tr>\n      <td>Rabbit</td>\n      <td>GFP</td>\n      <td>Torrey Pines</td>\n      <td>TP401</td>\n      <td>1:3000</td>\n      <td>IHC</td>\n    </tr>\n    <tr>\n      <td>Chicken</td>\n      <td>GFP</td>\n      <td>Abcam</td>\n      <td>ab13970</td>\n      <td>1:3000</td>\n      <td>IHC</td>\n    </tr>\n    <tr>\n      <td>Mouse</td>\n      <td>Msxb</td>\n      <td>DSHC</td>\n      <td>4G1-c</td>\n      <td>1:50</td>\n      <td>IHC</td>\n    </tr>\n    <tr>\n      <td>Rabbit</td>\n      <td>PCNA</td>\n      <td>Abcam</td>\n      <td>ab2426</td>\n      <td>1:500</td>\n      <td>IHC</td>\n    </tr>\n    <tr>\n      <td>Mouse</td>\n      <td>p14ARF</td>\n      <td>Cell Signaling</td>\n      <td>2407</td>\n      <td>1:100/1:500</td>\n      <td>IHC/WB</td>\n    </tr>\n    <tr>\n      <td>Rabbit</td>\n      <td>Rb1</td>\n      <td>AnaSpec</td>\n      <td>55432</td>\n      <td>1:500</td>\n      <td>WB</td>\n    </tr>\n    <tr>\n      <td>Rabbit</td>\n      <td>p-Rb1 (S780)</td>\n      <td>Abcam</td>\n      <td>ab47763</td>\n      <td>1:500</td>\n      <td>WB</td>\n    </tr>\n    <tr>\n      <td>Rabbit</td>\n      <td>Beta-actin</td>\n      <td>Millipore</td>\n      <td>EP1123Y</td>\n      <td>1:1000</td>\n      <td>WB</td>\n    </tr>\n    <tr>\n      <td>Rabbit</td>\n      <td>E2f1</td>\n      <td>Abcam</td>\n      <td>ab14769</td>\n      <td>1:1000</td>\n      <td>WB</td>\n    </tr>\n  </tbody>\n</table>\n\n_IHC: Immunohistochemistry; PCNA: Proliferating cell nuclear antigen; WB: Western blot._\n\n### Fin regeneration and wounding\n\nCaudal fin amputations were performed with a razor blade on fish anesthetized with 0.016% tricaine in aquarium water; consistently only the distal halves of fins were amputated. Heat shocks were delivered by housing fish in a water bath set to 37\u00b0C with bidiurnal water exchanges. The water bath achieved 37\u00b0C within 15 min, maintained that temperature for 1 hr, and then passively cooled to fish room temperature (26\u201328\u00b0C). An automatic digital timer (Intermatic, Spring Grove, IL) was used to turn on and off the water bath. For heat shock experiments, an initial heat shock was delivered and then fins were amputated 3 hr later. Heat shocks were subsequently delivered every 6 hrs for the duration of the experiment. Quantification of fin regenerate length, area, and GFP intensity was performed in ImageJ. Fin regenerate length was calculated by averaging the length of the longest dorsal and ventral fin ray from the amputation plane. Caudal fin wounding experiments were performed as previously described (Gauron et al., 2013).\n\n### ChIP\n\nChIP of zebrafish fin tissue was performed as previously described (Wehner et al., 2014) with a Bioruptor UCD-200 (Diagenode, Denville, NJ) at high power for six 5-min cycles of 30 s ON, 30 s OFF; water was changed after each cycle; 5 \u03bcg of rabbit anti-E2f1 antibody or rabbit IgG (Vector Laboratories) was used.\n\nPromoter annotation was performed by first identifying the sequences amplified by each primer set (Table 2) using the Ensembl Genome Browser and then inputting those sequences into Tfsitescan (http://www.ifti.org/). E2f binding sites were identified and highlighted in bold (Figure 2\u2014figure supplement 1).\n\n**Table 2.**\n Chromatin immunoprecipitation primers.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene</th>\n      <th>Ensembl ID</th>\n      <th>Target site</th>\n      <th>Forward primer</th>\n      <th>Reverse primer</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>CDKN2A</td>\n      <td>ENSG00000147889</td>\n      <td>TSS</td>\n      <td>5\u2032-GCTGAGGGTGGGAAGATG-3\u2032</td>\n      <td>5\u2032-CCTTAACTGCAGACTGGGA-3\u2032</td>\n    </tr>\n    <tr>\n      <td>tk1</td>\n      <td>ENSDARG00000086561</td>\n      <td>TSS</td>\n      <td>5\u2032-AGTCACTGTGCCGGTTTATT-3\u2032</td>\n      <td>5\u2032-GTCGTCTGCTTGTTGTCTTTATTT-3\u2032</td>\n    </tr>\n    <tr>\n      <td>tk1-</td>\n      <td>ENSDARG00000086561</td>\n      <td>2\u00a0kbp 5\u2032 of TSS</td>\n      <td>5\u2032-CAGGCTTACGGAGACAGCAA-3\u2032</td>\n      <td>5\u2032-AGTGTTTGCTGCTGGATCAC-3\u2032</td>\n    </tr>\n  </tbody>\n</table>\n\n_TSS: Transcriptional state site._\n\n### Gene quantification\n\nqPCR assays were performed on 100 ng of cDNA using 1 \u03bcL of each primer (10 pmol/\u03bcL) and iTaq Universal SYBR Green Supermix (Bio-Rad,\u00a0Hercules,\u00a0CA, United States)\u00a0 in a 12 \u03bcL total reaction volume (Table 3). The PCR was performed for 40 cycles with annealing temperatures of 58\u201360\u00b0C and elongation times of 1 min. Total RNA was isolated using the RNeasy Mini Kit (Qiagen,\u00a0Netherlands) per the manufacturer\u2019s instructions. cDNA was prepared from total RNA using random hexamer primers and the SuperScript III First Stand Synthesis System for reverse transcription-PCR (Life Technologies) per the manufacturer\u2019s instructions. Primers used to quantify tp53 and cdkn1a expression levels have been previously described (Danilova et al., 2014).\n\n**Table 3.**\n Quantitative polymerase chain reactionprimers.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Gene</th>\n      <th>RefSeq ID</th>\n      <th>Forward primer</th>\n      <th>Reverse primer</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>CDKN2A</td>\n      <td>NM_058195.3</td>\n      <td>5\u2032-ATGGTGCGCAGGTTCTTGGTGA-3\u2032</td>\n      <td>5\u2032-CACCACCAGCGTGTCCAGGAAG-3\u2032</td>\n    </tr>\n    <tr>\n      <td>actb2</td>\n      <td>NM_181601.4</td>\n      <td>5\u2032-CGAGCAGGAGATGGGAACC-3\u2032</td>\n      <td>5\u2032-CAACGGAAACGCTCATTGC-3\u2032</td>\n    </tr>\n    <tr>\n      <td>tp53</td>\n      <td>NM_131327.2</td>\n      <td>5\u2032-CTGAAGTGGTCCGCAGATG-3\u2032</td>\n      <td>5\u2032-CGTTTGGTCCCAGTGGTGG-3\u2032</td>\n    </tr>\n    <tr>\n      <td>cdkn1a</td>\n      <td>NM_001128420.1</td>\n      <td>5\u2032-AGCTGCATTCGTCTCGTAGC-3\u2032</td>\n      <td>5\u2032-TGAGAACTTACTGGCAGCTTCA-3\u2032</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture\n\nZebrafish cells were cultured at 32\u00b0C, 5% CO2 in Dulbecco\u2019s Modified Eagle Medium: Nutrient Mixture F-12 (DMEM:F-12) medium (ATCC, Manassas, VA) with 10% fetal bovine serum (FBS), 1% penicillin/streptomycin (Pen/Strep) (ZF4), or 50% L-15, 35% DMEM, 15% Ham\u2019s F-12 medium with 1.8 mM NaHCO3, 15 mM HEPES, 1% Pen/Strep, 10% FBS, 1% l-glutamine, 0.2% gentamicinsulfate (ZKS). HeLa cells were grown at 37\u00b0C, 5% CO2 in DMEM with 10% FBS, 1% Pen/Strep. The pcDNA-ARF construct was created by subcloning the cDNA of human ARF (exons 1\u03b2, 2, and 3 of CDKN2A) into the multiple cloning site of pcDNA3.1(+). Cells were transfected with either pcDNA-ARF or an empty vector (pcDNA). Transient transfections were performed using the FuGENE 6 transfection reagent (Promega, Madison, WI) according to the manufacturer\u2019s instructions. Cells were analyzed 2 days posttransfection. Luciferase assays were performed with pGL3-ARF-736\u00a0bp and pGL3-ARF-3.4\u00a0kb as previously described (del Arroyo et al., 2007) without activator DNA.\n\n### Statistical analysis\n\nData are presented as mean \u00b1 standard deviation. Statistical analyses were performed by using SPSS Statistics Desktop, version 22.0 (IBM, Armonk, NY). Statistical differences were analyzed by using a Student\u2019s t-test. A p<0.05 was set as the threshold for statistical significance.\n",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "00982af8-89fd-460a-9aad-6dc5b3e788bd",
+      "submission_id": "5960cf35-5d56-4c55-925b-4e229eafbcd6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marianne E Bronner, California Institute of Technology , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.07702.023](https://doi.org/10.7554/eLife.07702.023)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"The human ARF tumor suppressor senses blastema activity and suppresses epimorphic tissue regeneration\" for peer review at eLife. Your submission has been favorably evaluated by Fiona Watt (Senior Editor), a Reviewing Editor, and three reviewers.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe following individuals responsible for the peer review of your submission have agreed to reveal their identity: Marianne Bronner (Reviewing Editor) and Gage Crump (peer reviewer).\n\nIn this manuscript, Hesse and colleagues tested human ARF promoter activity and protein function during fin regeneration. They showed that a 735 bp ARF promoter fragment drives transgene expression during fin regeneration, but not noticeably during development. Their analysis suggests that E2F1, which might be de-repressed by hyperphosphorylated-Rb1, binds ARF promoter. Next, they examined ARF protein function during fin regeneration, using a heat-shock-inducible ARF overexpression transgenic line. ARF introduction slowed fin regeneration, an effect that is partially suppressed by p53 loss-of-function mutation or inhibition of p53 activity. Furthermore, they find that ectopic expression of ARF driven by the human ARF promoter fragment inhibits fin regeneration. Overall, they provide evidence that a tumor suppressor gene ARF that is not present in zebrafish can impact regeneration, and that the Rb-E2F-ARF-p53 axis is functionally conserved among vertebrate species.\n\nThe result that the human ARF promoter is selectively activated during tail fin regeneration, but not during development or in wounding is interesting, and will likely be a useful tool for the regeneration community. The paper is well written and the experiments provide further evidence for a hypothesis that tumor suppression counteracts regeneration in mammals. However, some of their data are not as compelling as they should be. Additional basic characterizations, a better description of methods, and improved images are needed to support their interesting hypothesis. Specific criticisms are summarized below:\n\n1) The finding that misexpression of ARF blocks tail fin regeneration by interacting with the same set of players used in tumor suppression (E2f1, Rb, p53) is a nice result (especially showing that driving ARF from the blastema-induced ARF promoter blocks regeneration). However, one wonders whether driving high-level expression of a tumor suppressor in general would have this same effect, since the usual function of these proteins is to block cell proliferation and induce cell death (as shown here for the regenerating fin). Given that loss of ARF was previously shown to enhance dedifferentiation in mice, and that reduction of p53 (a target of ARF) is required for limb regeneration in axolotls, the ARF gain-of-function results here are not that surprising.\n\n2) In general, the experiments are well performed and accurately interpreted (with adequate numbers and statistics). It is curious that Arf-/- mice have not been examined for enhanced digit tip, heart, or other regeneration, though doing so is clearly beyond the scope of this article. I thought the authors dealt well with the issue of loss of Arf most likely not being sufficient to significantly increase regenerative potential in mammals, though this needs to be formally tested in the future. What could be discussed and/or examined is whether ARF is expressed during mouse development. Given the inactivity of the human ARF promoter in zebrafish development, the prediction is that ARF is not developmentally expressed and is only induced by tumors in mammals.\n\n3) In Figure 1B, why is a confocal section of the zebrafish used to characterize the GFP expression-standard would be a wide-field microscope image? In the current figure it is not even possible to really see the supposed fluorescence in the heart. Figure 1D. The authors report ARF:EGFP expression in the blastema. But, Figure 1C and D images are low quality and not well-annotated. There is a non uniform background that obscures the clarity and the image is not sharp Furthermore, imaging on a widefield microscope with DIC should help. The insets are fuzzy and out of focus. The lines in Figure 1D are confusing with wavy lines between the points-presumably this is not an extrapolation between the points. Why are there no error bars or background values for the GFP signal from WT fish? Also, the authors should indicate amputation planes in these images and show higher mag images to determine whether the GFP signal overlaps with MSXB and PCNA. Also, the authors should show whole mount images of uninjured and injured fins.\n\n4) With regard the subsection \u201cZebrafish E2f1 binds the human ARF promoter specifically in the context of Rb hyperphosphorylation during regeneration\u201d and Figure 2A, Rb1 and E2f1 expression patterns have not been reported during fin regeneration in zebrafish. The authors performed Western blot to identify Rb1 and E2f1 expression, but this assay cannot define where these proteins are expressed during fin regeneration. Rb1 and E2f1 should be assessed by in situ hybridization or immunohistochemistry to test if Rb1, E2f1, and ARF:EGFP are expressed in the same cell types during fin regeneration. How many replicates, and how do we assess significance?\n\n5) In Figures 4\u20136, how do the authors measure the lengths of regenerating fin portions? It is not well described in the Methods. The zebrafish is in total about 3-4 cm long, so I doubt the accuracy of the authors' graphs indicating that the regenerating portions are 1 cm long.\n\n6) A heat-shock every 6 hours in the authors' hs:ARF line seems intense (Figure 4), but the effects on regeneration appear very minor. The authors should assess longitudinal sections of the regenerating tissue by ARF in situ hybridization and/or immunofluorescence to confirm that the HS is inducing ARF in the regenerating tissue.\n\n7) The authors report (in Figures 5 and 6) that p53 inhibition or loss-of-function of p53 can suppress impaired regeneration caused by ARF overexpression. To demonstrate that ARF overexpression stabilizes p53 level, they should examine whether p53 protein level is increased by western blot.\n\n8) The authors describe (Figure 6A) that p53 mutations suppress an impaired fin regeneration phenotype caused by ARF overexpression. Better controls are hs:ARF and tp53 mutant. They should examine hs:ARF, tp53, and hs:ARF, tp53 together.\n\n9) Expression of ARF in ARF:ARF during fin regeneration (Figure 6B). It does not appear that ARF localizes to the nucleus in these tissue sections. There are no pink, DAPI-positive nuclei. The authors should look at longitudinal sections at a couple of timepoints and need to indicate amputation planes.\n\n10) In paragraph two of the subsection \u201cARF does not affect development but suppresses fin regeneration in response to regeneration signals\u201d and Figure 6C, the authors mention that ARF:ARF fins \"never regenerated completely\". They should follow the regeneration at later stages (e.g. 14 dpa and 30 dpa) to see if regeneration is restored. If not, they should examine ARF:ARF expression after 6 dpa \u2013 it is stated earlier that ARF:GFP expression was turned off after 6 dpa.\n\n11) With somewhat minor phenotypes and particularly the use of the short human promoter fragment, there is some concern about how compelling and consistent the effects are. It would be optimal to show consistent effects in a second stable line, particularly for ARF:ARF.\n\n12) In Figure 6C, does p53 mutation or inhibition of p53 activity (PFTa) suppress the impaired regeneration phenotypes of ARF:ARF? It would be nice to examine p53 protein levels and transcript levels of p53 target genes in the ARF:ARF strain during fin regeneration.\n\n13) It would be of interest for the authors to comment on why the ARF under its own promoter has a stronger negative effect on fin regeneration than the heatshock inducible version.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"The human ARF tumor suppressor senses blastema activity and suppresses epimorphic tissue regeneration\" for further consideration at eLife. Your revised article has been favorably evaluated by Fiona Watt (Senior Editor), a Reviewing Editor, and three reviewers. The manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below. In particular, we ask you to improve the quality of the figures.\n\n1) It is difficult to tell from the images in Figure 6A what is being assessed. The standard is a longitudinal section with an indication of the amputation plane. Here, it looks like there are large regions without DAPI staining in these images and compartments of the tissues are not discernable or labeled. They do not appear to be assigning proliferation events to epidermis or blastema, but rather the 'regenerate'. Based on images like these, how can one be confident about quantification of proliferation or the defect they report? The authors should provide better quality data if they are to make conclusions. Same with Figure 7\u2013figure supplement 3.\n\n2) Histology quality in Figure 7B is poor. There appear to be areas of DAPI signals missing and it is hard to discern the structures. Showing the bright-field images of the fins for all sections might help, although normally it is not necessary. The authors need to provide publication-quality data here.\n\n3) In Figure 7\u2013figure supplement 3A, the authors show a few nuclei at high magnification but it is unclear what is being assessed \u2013 are these in the wound epidermis or blastema? Why is it necessary to focus on just a few cells, and where are these located in the fins with respect to the amputation plane?\n",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "356bd1c2-5892-480f-ad05-921fa5a7589f",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C1",
+      "claim": "Urodele amphibians and teleost fish possess the ability to regenerate injured complex structures such as limbs, fins, jaws, and heart by epimorphic regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Urodele amphibians and teleost fish are unique among vertebrates in that they possess the ability to regenerate injured complex structures such as limbs, fins, jaws, and heart by epimorphic regeneration (Morgan, 1901; Brockes and Kumar, 2008; Poss, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior work (Morgan, 1901; Brockes and Kumar, 2008; Poss, 2010)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "8c075e97-9d2d-4e29-a873-5ca43738faa9",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C2",
+      "claim": "Zebrafish fin regeneration proceeds through steps that include wound healing, blastema formation, and regenerative outgrowth to faithfully restore preinjury structures and size of the fin.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, zebrafish fin regeneration proceeds through steps that include wound healing, blastema formation, and regenerative outgrowth to faithfully restore preinjury structures and size of the fin (Poss et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Poss et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "ca2cdeb6-4e47-42d3-8e69-7968320bdcc2",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C3",
+      "claim": "In highly regenerative species, the blastema consists of a heterogeneous pool of highly proliferative mesenchymal cells that gives rise to the large amount of new tissue in the regenerate.",
+      "claim_type": "EXPLICIT",
+      "source": "In such highly regenerative species, the blastema consists of a heterogeneous pool of highly proliferative mesenchymal cells that gives rise to the large amount of new tissue in the regenerate (Knopf et al., 2011; Tu and Johnson, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Knopf et al., 2011 and Tu and Johnson, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "84a644c6-7161-4727-93f7-888581007740",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C4",
+      "claim": "Absence of a proliferative blastema is a prominent feature of most mammalian solid tissue injury responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, absence of a proliferative blastema is a prominent feature of most mammalian solid tissue injury responses (Muneoka et al., 2008; Straube and Tanaka, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Muneoka et al., 2008 and Straube and Tanaka, 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "a95ec2b5-5ff9-4d53-ac10-953c6c8b2eb9",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C5",
+      "claim": "Tumor suppressor genes control the proliferative and differentiated state of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumor suppressor genes control the proliferative and differentiated state of cells, and many are also developmental regulators critical for normal formation of tissues (Jacks et al., 1992; Berman et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jacks et al., 1992 and Berman et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "9d2a3309-6463-42cc-b23a-ad29c73aa531",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C6",
+      "claim": "Many tumor suppressor genes are developmental regulators critical for normal formation of tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumor suppressor genes control the proliferative and differentiated state of cells, and many are also developmental regulators critical for normal formation of tissues (Jacks et al., 1992; Berman et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jacks et al., 1992 and Berman et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "ca500a89-d9eb-4e80-bec3-583b91d9e24f",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C7",
+      "claim": "The retinoblastoma gene Rb1 regulates the G1/S transition by sequestering E2f transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in eukaryotes the retinoblastoma gene Rb1 regulates the G1/S transition by sequestering E2f transcription factors, and it controls cellular differentiation by associating with chromatin modifiers to regulate activity of tissue-specific transcription factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge about Rb1 function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "60b618e8-84fb-4ff3-9b1b-1bf87ca486f3",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C8",
+      "claim": "Rb1 controls cellular differentiation by associating with chromatin modifiers to regulate activity of tissue-specific transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in eukaryotes the retinoblastoma gene Rb1 regulates the G1/S transition by sequestering E2f transcription factors, and it controls cellular differentiation by associating with chromatin modifiers to regulate activity of tissue-specific transcription factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established scientific knowledge about Rb1 function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "dfe422c8-67a4-42bc-8efd-2dbf0580e5a6",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C9",
+      "claim": "The mammalian gene Cdkn2a is an essential tumor suppressor in mice and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the mammalian gene Cdkn2a is an essential tumor suppressor in mice and humans, but it is dispensable for mammalian development and tissue formation (Serrano et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Serrano et al., 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "d5990ee6-49ba-42d4-8afe-e663a518917c",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C10",
+      "claim": "Cdkn2a is dispensable for mammalian development and tissue formation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the mammalian gene Cdkn2a is an essential tumor suppressor in mice and humans, but it is dispensable for mammalian development and tissue formation (Serrano et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Serrano et al., 1996",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "b17f3437-02ec-46b7-a07b-639555bc19f5",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C11",
+      "claim": "In mammals, Cdkn2a encodes two structurally unrelated proteins translated via alternate reading frames, p16Ink4a and Arf.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, Cdkn2a encodes two structurally unrelated proteins translated via alternate reading frames, p16Ink4a and Arf, each of which is a tumor suppressor (Chin et al., 1998; Sherr, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chin et al., 1998 and Sherr, 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "9052f944-e079-44a1-912d-c384dbaf188a",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C12",
+      "claim": "Both p16Ink4a and Arf are tumor suppressors.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, Cdkn2a encodes two structurally unrelated proteins translated via alternate reading frames, p16Ink4a and Arf, each of which is a tumor suppressor (Chin et al., 1998; Sherr, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chin et al., 1998 and Sherr, 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "79dd8512-7fab-4010-adf8-33beda08e24c",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C13",
+      "claim": "p16Ink4a is a cyclin-dependent kinase inhibitor that functions upstream of Rb1.",
+      "claim_type": "EXPLICIT",
+      "source": "While p16Ink4a is a cyclin-dependent kinase inhibitor (CKI) that functions upstream of Rb1, Arf exerts its tumor suppressor function by responding to inappropriate Rb pathway signaling above a presumed threshold (Lowe and Sherr, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lowe and Sherr, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "3dfccc27-6c11-4b24-b096-9e626c0571ff",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C14",
+      "claim": "Arf exerts its tumor suppressor function by responding to inappropriate Rb pathway signaling above a presumed threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "While p16Ink4a is a cyclin-dependent kinase inhibitor (CKI) that functions upstream of Rb1, Arf exerts its tumor suppressor function by responding to inappropriate Rb pathway signaling above a presumed threshold (Lowe and Sherr, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Lowe and Sherr, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "08dd336a-4f9a-4f1e-9ebb-3df4ee83eade",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C15",
+      "claim": "When induced, Arf stabilizes and activates Tp53 by binding and sequestering Mdm2.",
+      "claim_type": "EXPLICIT",
+      "source": "When induced, it stabilizes and activates Tp53 by binding and sequestering Mdm2, an E3 ubiquitin ligase and negative regulator of Tp53 (Pomerantz et al., 1998; Weber et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Pomerantz et al., 1998 and Weber et al., 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "299b0e40-f74a-49c9-998c-5bf99e170bb7",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C16",
+      "claim": "Mdm2 is an E3 ubiquitin ligase and negative regulator of Tp53.",
+      "claim_type": "EXPLICIT",
+      "source": "When induced, it stabilizes and activates Tp53 by binding and sequestering Mdm2, an E3 ubiquitin ligase and negative regulator of Tp53 (Pomerantz et al., 1998; Weber et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Pomerantz et al., 1998 and Weber et al., 1999",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "d67736d5-95ac-4437-9852-a5a694fc828c",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C17",
+      "claim": "Stabilized Tp53 either promotes cell cycle arrest or apoptosis depending on the context.",
+      "claim_type": "EXPLICIT",
+      "source": "Depending on the context, stabilized Tp53 either promotes cell cycle arrest or apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Draws from established knowledge about Tp53 function",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "dcaefac7-efd6-4970-89a7-e4e695adef4a",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C18",
+      "claim": "Arf has functions including controlling ribosome biogenesis and responding to oxidative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to canonical Tp53-dependent functions, Arf has other important functions including controlling ribosome biogenesis and responding to oxidative stress (Sherr, 2006; Weber et al., 2000; Damalas et al., 2011; Menendez et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sherr, 2006; Weber et al., 2000; Damalas et al., 2011; Menendez et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "5ecf1e53-3c61-4c3f-9408-c1d82d2ae188",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C19",
+      "claim": "The general function of Arf is to maintain the postmitotic state.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting general function of Arf is to maintain the postmitotic state, and we have previously shown that suppression of Arf in the context of compromise of the Rb pathway results in dedifferentiation and proliferation of mammalian muscle cells in culture (Pajcini et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pajcini et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "607c24cc-9011-4ceb-ba56-c70cdfda3935",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C20",
+      "claim": "Suppression of Arf in the context of compromise of the Rb pathway results in dedifferentiation and proliferation of mammalian muscle cells in culture.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting general function of Arf is to maintain the postmitotic state, and we have previously shown that suppression of Arf in the context of compromise of the Rb pathway results in dedifferentiation and proliferation of mammalian muscle cells in culture (Pajcini et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pajcini et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "6c28be80-99ae-42cb-9655-a0ce1955a288",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C21",
+      "claim": "Regulation of Tp53 has been shown to be important during epimorphic regeneration, where it is downregulated during blastema formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Regulation of Tp53 has recently been shown to be important during epimorphic regeneration, where it is downregulated during blastema formation (Yun et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yun et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "a1a5d9da-3d8b-4f0d-b293-dccb26b7291f",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C22",
+      "claim": "The advent of somatic stem cells in metazoans is thought to have enabled the formation of new types of cancer, thus requiring advanced tumor suppressor mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "The advent of somatic stem cells in metazoans is thought to have enabled the formation of new types of cancer, thus requiring advanced tumor suppressor mechanisms (Belyi et al., 2010; Pearson and Sanchez Alvarado, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Belyi et al., 2010 and Pearson and Sanchez Alvarado, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "6b6fd1b8-36b4-4449-8303-4e9fbbf0238e",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C23",
+      "claim": "Arf is poorly conserved in non-mammalian lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Although tumor suppressors are generally highly conserved in eukaryotes, Arf is unusual in that it is poorly conserved in non-mammalian lineages (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by reference to Figure 1A showing phylogenetic comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "7e01a60a-7981-46ae-805b-bde149ec6ed1",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C24",
+      "claim": "The Cdkn2a/b locus of teleost fish, including zebrafish and fugu, exists as a single protein-producing unit that only encodes for a CKI.",
+      "claim_type": "EXPLICIT",
+      "source": "The Cdkn2a/b locus of teleost fish, including zebrafish (Danio rerio) and fugu (Takifugu rubripes) (Gilley and Fried, 2001), exists as a single protein-producing unit that only encodes for a CKI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gilley and Fried, 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "7e21aa87-762c-411e-8a21-23f5ddc41a39",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C25",
+      "claim": "Arf is thought to be the product of a genetic duplication caused by either an insertion or transposition into the Cdkn2a/b locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Arf is thought to be the product of a genetic duplication caused by either an insertion or transposition into the Cdkn2a/b locus (Gil and Peters, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Gil and Peters, 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "35db34ad-2b29-4648-ab09-1878b77071b0",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C26",
+      "claim": "None of the highly regenerative species for which genomes have been completely sequenced possess an ortholog of Arf.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the highly regenerative species for which genomes have been completely sequenced, none possess an ortholog of Arf (Figure 1A) (Flicek et al., 2014; Karolchik et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Flicek et al., 2014 and Karolchik et al., 2014, and by data shown in Figure 1A",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "113c5c13-4a42-4faf-90c4-31df6ad80a2d",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C27",
+      "claim": "The earliest documented ortholog of Arf exists in the chicken genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The earliest documented ortholog of Arf exists in the chicken genome (Kim et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kim et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "ae3b3afd-5222-4fff-a66a-69961aa6d965",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C28",
+      "claim": "The human ARF promoter (736 bp) is active in HeLa cells and in zebrafish cell lines (ZF4 and ZKS).",
+      "claim_type": "EXPLICIT",
+      "source": "These assays confirmed that the 736 base pair (bp) promoter is active in HeLa cells and in zebrafish lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by luciferase reporter assays shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "790e1a4c-e8c0-46e4-9583-b5b4d23d5bb4",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C29",
+      "claim": "ARF:GFP expression was not detected in zebrafish embryos at 24, 48, and 72 hpf by immunofluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "We were unable to detect ARF:GFP expression in the embryo head, body, or tail by wide field epi or confocal immunofluorescence indicating that the ARF promoter is silent at these developmental stages (Figure 1B, Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 1B and Figure 1\u2014figure supplement 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "10855e48-cd88-4d77-baae-c238fdf6d6cc",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C30",
+      "claim": "In situ hybridization confirmed that ARF is silent or minimally expressed during development, including the developing tail fin region.",
+      "claim_type": "EXPLICIT",
+      "source": "The in situ hybridization results confirmed the immunofluorescence analysis and indicate that ARF is silent or minimally expressed during development, including the developing tail fin region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by in situ hybridization data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "25523191-f4ae-4cf8-9874-8f7675ebae8b",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C31",
+      "claim": "ARF:GFP was induced and highly expressed in the blastema of regenerating adult fins.",
+      "claim_type": "EXPLICIT",
+      "source": "In stark contrast to development, ARF:GFP was induced and highly expressed in the blastema of regenerating adult fins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "c2a65ca1-eb7f-42bf-955d-283bfc416eae",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C32",
+      "claim": "GFP colocalized with Msxb and PCNA expressing cells in ARF:GFP fins after amputation.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP was specifically detected in ARF:GFP fins after amputation, and GFP colocalized with Msxb and proliferating cell nuclear antigen (PCNA) expressing cells (Figure 1D, Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 1D and Figure 1\u2014figure supplement 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "cb14e86a-1a3f-4c2f-a14d-6ea32814241b",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C33",
+      "claim": "GFP was not detected in the surrounding epithelium of regenerating fins.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP was not detected in the surrounding epithelium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "ded51da7-4a06-4f61-9b55-85071339cb93",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C34",
+      "claim": "The ARF promoter is active in at least a subset of Msxb + blastema cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation indicates that the ARF promoter is active in at least a subset of Msxb + blastema cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from colocalization data shown in Figure 1D",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "34889987-b2ec-4273-8642-57da35af27ef",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C35",
+      "claim": "GFP signal in the regenerate was first detected at 12 hpa, peaked at 48 hpa, and then declined to undetectable levels within 6 days.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP signal in the regenerate was first detected at 12 hr postamputation (hpa), peaked at 48 hpa, and then declined to undetectable levels within 6 days (Figure 1E, Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification data shown in Figure 1E and images in Figure 1\u2014figure supplement 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "2a343dc4-4f48-43ad-a0f4-c314f8d78c43",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C36",
+      "claim": "GFP expression mirrored proliferative changes during fin regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "GFP expression mirrored proliferative changes, suggesting that ARF detects and responds to high proliferative signaling in the regenerate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by correlation between GFP expression and EdU incorporation shown in Figure 1E",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "26656e7b-cb25-4629-b541-94211c54f3f7",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C37",
+      "claim": "GFP was undetectable in healing epithelial wounds without blastema formation.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, GFP was detected in the forming ventral blastema. However, GFP was undetectable in the healing wound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data shown in Figure 1\u2014figure supplement 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "636c763c-4f9e-4c19-8813-4a7b4f2366b2",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C38",
+      "claim": "ARF specifically senses and responds to signals particular to the regeneration environment that differ from those present during wound healing or developmental organogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "These distinct ARF responses to development and to the two different forms of injury indicate that ARF specifically senses and responds to signals particular to the regeneration environment that differ significantly from those present during wound healing or in the highly proliferative environment of developmental organogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from differential ARF activation patterns shown in Figures 1B, 1D, and Figure 1\u2014figure supplement 3",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "e6b33c56-ecb8-4d5f-a8c7-00205db0cd44",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C39",
+      "claim": "p-Rb1 levels were relatively low in uninjured adult fins.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas p-Rb1 levels were relatively low in uninjured adult fins, a modest increase was detected in 72 hpf embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Western blot data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "e96c2bf6-b3d2-467d-9879-e8960d05711c",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C40",
+      "claim": "A modest increase in p-Rb1 was detected in 72 hpf embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas p-Rb1 levels were relatively low in uninjured adult fins, a modest increase was detected in 72 hpf embryos.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by Western blot data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "4aca5d97-4c3f-4dd4-9c8a-e8bf76521142",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C41",
+      "claim": "2 dpa regenerates contained a dramatic increase in p-Rb1 levels despite stable levels of total Rb1 and total E2f1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 2 dpa regenerates contained a dramatic increase in p-Rb1 levels despite stable levels of total Rb1 and total E2f1 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "c7f2c318-02a6-4aaf-ba3b-0f16ac97494f",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C42",
+      "claim": "Immunostaining revealed a dramatic increase in p-Rb1 staining during regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to Western blot analysis, immunostaining revealed a dramatic increase in p-Rb1 staining during regeneration (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "b62f0e8b-08dc-47f4-9040-dff6e5174dc1",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C43",
+      "claim": "p-Rb1 hyperphosphorylation and GFP were co-expressed in cells specifically localized within the blastema.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-immunostaining for GFP, and Msxb confirmed that p-Rb1 hyperphosphorylation and GFP were co-expressed in cells specifically localized within the blastema.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunostaining data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "e6c39671-fbe7-40bf-ba24-68c48c2e15a3",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C44",
+      "claim": "ARF is bound by E2f1 specifically during regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in contrast to the state before amputation, ARF is bound by E2f1 specifically during regeneration as is tk1 but not tk1- (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-qPCR data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "644a1216-daa1-4145-8007-b4e7910a0995",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C45",
+      "claim": "Binding of the ARF promoter by E2f1 was enriched over sixfold relative to non-amputated controls and the tk1- control.",
+      "claim_type": "EXPLICIT",
+      "source": "The ChIP assay showed that binding of the ARF promoter by E2f1 was enriched over sixfold relative to non-amputated controls and the tk1- control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-qPCR data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "816ccb04-b119-4367-86bb-c54f77562481",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C46",
+      "claim": "Despite modestly increased p-Rb1 levels in 72 hpf embryos, no increase in E2f1 binding of the ARF promoter was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the modestly increased p-Rb1 levels in 72 hpf embryos, which correlated with enrichment of E2f1 at the tk1 promoter, no increase in E2f1 binding of the ARF promoter was observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-qPCR data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "0c7e1aff-a181-4dce-a6ac-05d91571323f",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C47",
+      "claim": "The ARF promoter responds strongly and specifically to suprathreshold free E2f1 levels present during regeneration as opposed to other physiological contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding suggests that the ARF promoter responds strongly and specifically to suprathreshold free E2f1 levels present during regeneration as opposed to other physiological contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from differential E2f1 binding patterns shown in Figure 2C",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "db670554-8e95-4704-9944-2f932c2013ee",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C48",
+      "claim": "Human ARF localized to the nucleolus and co-localized with Mdm2 in zebrafish cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Confocal imaging showed that human ARF localized to the nucleolus and co-localized with Mdm2 in zebrafish cells (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence data shown in Figure 3\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "55bd1a44-5903-44f8-9165-30c9f8b8c97e",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C49",
+      "claim": "Elevated Tp53 levels were observed in approximately 40% of ARF transfected zebrafish cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Elevated Tp53 levels were readily observed in approximately 40% of ARF transfected cells (Figure 3\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunofluorescence and quantification data shown in Figure 3\u2014figure supplement 1A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "3ae326fc-820f-4e1e-815d-f280806e3ab4",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C50",
+      "claim": "When induced with an hour long, 37\u00b0C heat shock, ARF is robustly expressed in the fin 3 hr later.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunostaining showed that when induced with an hour long, 37\u00b0C heat shock, ARF is robustly expressed in the fin 3 hr later (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "27f3bbfd-57d5-4136-8fbc-122937746dda",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C51",
+      "claim": "ARF protein shows a rapid decrease almost to baseline at 6 hr after heat shock induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blot confirmed induction of ARF protein expression and also showed a rapid decrease almost to baseline at 6 hr (Figure 3), in accordance with the known 6 hr half-life of the human protein (Sherr, 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Western blot data shown in Figure 3 and citation to Sherr, 2006",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "55430e60-96bc-47ba-ba4c-9689ecdcc212",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C52",
+      "claim": "ARF expression caused significant inhibition of fin regeneration as evidenced by reduced regenerate length and area.",
+      "claim_type": "EXPLICIT",
+      "source": "ARF expression caused significant inhibition of fin regeneration as evidenced by reduced regenerate length and area; WT regenerates measured 1.2 \u00b1 0.13 mm in length and 5.4 \u00b1 1.3 mm2 in area compared with hs:ARF regenerates, which measured 0.84 \u00b1 0.13 mm in length and 3.0 \u00b1 0.76 mm2 in area, a reduction of approximately 30% (p<0.001) and 45% (p<0.001), respectively (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification and images shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "851828da-0198-4685-987c-94a90205484b",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C53",
+      "claim": "After the heat shock regimen ended, fin regeneration resumed to reach full length by 14 dpa.",
+      "claim_type": "EXPLICIT",
+      "source": "After the heat shock regimen ended, fin regeneration resumed to reach full length by 14 dpa (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "4c32944f-e54a-4581-8fe7-16d821eb7d07",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C54",
+      "claim": "When previously heat-shocked hs:ARF fins were reamputated and allowed to regenerate in the absence of heat shock, the fins regenerated equally as well as WT fins.",
+      "claim_type": "EXPLICIT",
+      "source": "When previously heat-shocked hs:ARF fins were reamputated and allowed to regenerate in the absence of heat shock (Figure 4A, bottom), the fins regenerated equally as well as WT fins (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "b36c0932-5041-4458-a8d0-529ea9c2bbd7",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C55",
+      "claim": "ARF inhibits fin regeneration in a reversible manner and its continued expression is required for regeneration suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that ARF inhibits fin regeneration in a reversible manner and that its continued expression is required for regeneration suppression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from data shown in Figure 4C",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "9ed36983-2e7e-4665-b1b1-34e8d92c769b",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C56",
+      "claim": "ARF expression during regeneration promotes Tp53 protein upregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The induction and stabilization of p53 and induction of cdkn1a transcripts by ARF showed that ARF impacts p53 functions in vivo in fish regenerates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunostaining and qPCR data shown in Figure 4\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "3e708988-3dc5-49a7-9ab7-d7bbe29ed63c",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C57",
+      "claim": "ARF expression during regeneration promotes tp53 transcript upregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant increases in tp53 (N=5 fins, p<0.05) and cdkn1a (N =5 fins, p<0.01) were observed with ARF expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qPCR data shown in Figure 4\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "f3058753-da35-4ebe-b7ef-a072ab674683",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C58",
+      "claim": "ARF expression during regeneration promotes cdkn1a transcript upregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant increases in tp53 (N=5 fins, p<0.05) and cdkn1a (N =5 fins, p<0.01) were observed with ARF expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qPCR data shown in Figure 4\u2014figure supplement 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "6202b1b7-3165-46c3-ac83-f93c0083001f",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C59",
+      "claim": "There was no difference in regenerate length or area in hs:ARF; tp53M214K/M214K fish despite ARF expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the same amputation and heat shock regimen, we analyzed fin regeneration and found no difference in regenerate length or area despite ARF expression in tp53 mutant fish (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "927bf386-436d-4e1c-bc26-8eb98dd415ff",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C60",
+      "claim": "Treatment of hs:ARF fish with 5 \u03bcM PFT\u03b1 increased regenerate length by 50% and area by approximately 75% compared with carrier-treated controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of hs:ARF and WT fish with 5 \u03bcM PFT\u03b1 and heat shock increased hs:ARF regenerate length from 0.44 \u00b1 0.04 mm to 0.66 \u00b1 0.08 mm, an increase of 50% (p<0.01), and area from 1.8 \u00b1 0.7 mm2 to 3.2 \u00b1 0.5 mm2, an increase of approximately 75% (p<0.05), compared with carrier-treated controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "8fd86d3c-24f8-4863-bbd1-84a877d5cee5",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C61",
+      "claim": "Fin regeneration of WT fish was not affected by PFT\u03b1 treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "Fin regeneration of WT fish was not affected by PFT\u03b1 treatments (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "51585b30-233c-4fd0-949c-4b6de6321a13",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C62",
+      "claim": "Treatment of WT fish with 5 \u03bcM nutlin3a reduced fin regenerate length by 30% and area by 40%.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment of WT fish with 5 \u03bcM nutlin3a reduced fin regenerate length from approximately 0.65 \u00b1 0.1 mm to 0.45 \u00b1 0.1 mm, a decrease of 30% (p<0.01), and area from 4.7 \u00b1 1.2 mm2 to 2.8 \u00b1 0.7 mm2, a reduction of 40% (p<0.05) (Figure 5C, left), phenocopying the fin regeneration inhibition phenotype of induced hs:ARF fish (Figure 5C, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "531d9f49-2393-4c82-85bb-dfe1f1394bb3",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C63",
+      "claim": "ARF functions through Tp53-dependent mechanisms to inhibit fin regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these experiments show that ARF functions through Tp53-dependent mechanisms to inhibit fin regeneration, and also demonstrate the importance of active suppression of Tp53 by Mdm2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from genetic and pharmacological experiments shown in Figure 5",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "9c6f13be-acd9-4d52-87e4-40cbacab44eb",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C64",
+      "claim": "EdU incorporation was significantly higher in WT fin regenerates compared with hs:ARF regenerates at 2, 4, and 6 dpa with the greatest difference occurring at 2 dpa (171%).",
+      "claim_type": "EXPLICIT",
+      "source": "EdU incorporation was significantly higher in WT fin regenerates compared with hs:ARF regenerates at all time points examined with the greatest difference occurring at 2 dpa (171%, p<0.001) (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by EdU incorporation data shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "4c7de834-ea73-4c19-a52b-44694de511fd",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C65",
+      "claim": "The incidence of apoptosis increased with ARF expression at all time points examined with the greatest difference occurring at 2 dpa (210%).",
+      "claim_type": "EXPLICIT",
+      "source": "When the percent of TUNEL + cells in WT and hs:ARF regenerates was compared, the incidence of apoptosis increased with ARF expression at all time points examined with the greatest difference occurring at 2 dpa (210%, p<0.01) (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by TUNEL staining data shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "fc156a06-f08e-4807-9f5c-53368bfbae49",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C66",
+      "claim": "Either a single heat shock or 24 hr of heat shocks at 4 dpa significantly reduced the number of cycling cells in the regenerate.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that either a single heat shock or 24 hr of heat shocks at 4 dpa significantly reduced the number of cycling cells in the regenerate, demonstrating a direct effect of ARF on the regenerating cell population (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by EdU incorporation data shown in Figure 6C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "cb4a1f4a-9fc9-4317-8e57-0f4592a68723",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C67",
+      "claim": "ARF:ARF transgenic fish are viable, develop normally, and have no overt size or morphological differences when compared with age- and sex-matched WT counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed, however, that ARF:ARF transgenic fish are viable, develop normally, and have no overt size or morphological differences when compared with age- and sex-matched WT counterparts (Figure 7A, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by images shown in Figure 7A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "61ec8598-3b7c-4201-bf13-8a936ac333cc",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C68",
+      "claim": "There was no effect of the ARF:ARF transgene on survival during early embryogenesis compared with WT fish.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the predictions of ARF:GFP experiments, there was no effect of the ARF:ARF transgene on survival during early embryogenesis compared with WT fish (Figure 7\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by survival data shown in Figure 7\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "f03220d9-f2e4-474c-a06d-a58d75e5ebf1",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C69",
+      "claim": "ARF was not detected in ARF:ARF embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "We also did not detect ARF expression in embryos, as expected given our findings with ARF:GFP fish (Figure 7\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data shown in Figure 7\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "f5ec8559-77ff-41ad-816a-5e030b1c3545",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C70",
+      "claim": "Upon heat shock, hs:ARF embryos exhibited drastically reduced survival that was associated with high levels of ARF expression throughout the embryo.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon heat shock, hs:ARF, but not WT clutches, exhibited drastically reduced survival that was associated with high levels of ARF expression throughout the embryo (Figure 7\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by survival and immunostaining data shown in Figure 7\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "724b2692-6511-4aa4-b00b-8e41da5eac0c",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C71",
+      "claim": "ARF expression is very poorly tolerated by developing embryos.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding indicates that ARF expression is very poorly tolerated by developing embryos and clearly implies that in ARF:ARF fish, ARF is not activated significantly during development to affect normal developmental growth and organogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from survival data shown in Figure 7\u2014figure supplement 1B",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "b28a8ba0-329d-4ca6-a897-ca9d3a5a0cd7",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C72",
+      "claim": "When ARF:ARF fins were injured, ARF was detected in the regenerate.",
+      "claim_type": "EXPLICIT",
+      "source": "When ARF:ARF fins were injured, ARF was detected in the regenerate (Figure 7B), and the pattern of expression was similar to GFP expression in ARF:GFP regenerates at the same time point (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data shown in Figure 7B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "3905c6c9-7d7f-4555-9879-d8762f47a059",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C73",
+      "claim": "ARF:ARF regenerates were 55% and 44% shorter and 70% and 55% smaller in area than WT regenerates in two independent transgenic lines.",
+      "claim_type": "EXPLICIT",
+      "source": "In all, ARF:ARF regenerates were 55% (p<0.001) and 44% (p<0.001) shorter and 70% (p<0.001) and 55% (p<0.001) smaller in area than WT regenerates, and anatomical fin defects persisted 1 month after amputation (Figure 7C, Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantification and images shown in Figure 7C and Figure 7\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "3f0dc755-de91-40ae-b039-4e4f6ee6d23c",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C74",
+      "claim": "ARF expression persisted in ARF:ARF fins but not WT fins at 6 dpa.",
+      "claim_type": "EXPLICIT",
+      "source": "ARF expression persisted in ARF:ARF fins but not WT fins at 6 dpa (Figure 7\u2014figure supplement 3A), a time point at which GFP in no longer observed in regenerated ARF:GFP fins, suggesting ongoing regeneration attempts in ARF:ARF fins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining data shown in Figure 7\u2014figure supplement 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "acc22605-d9c4-4c3b-a1a7-5485380aed99",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C75",
+      "claim": "Tp53, tp53, and cdkn1a expression increased with ARF expression in ARF:ARF fins at 4 dpa.",
+      "claim_type": "EXPLICIT",
+      "source": "Tp53, tp53, and cdkn1a expression increased with ARF expression in ARF:ARF fins at 4 dpa (Figure 7\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunostaining and qPCR data shown in Figure 7\u2014figure supplement 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "8fede42a-6532-43ee-9be8-a1680b47a4ca",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C76",
+      "claim": "Treatment of ARF:ARF fins with 5 \u03bcM PFT\u03b1 rescued fin regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "As in hs:ARF fish, treatment of ARF:ARF fins with 5 \u03bcM PFT\u03b1 rescued fin regeneration (Figure 7\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 7\u2014figure supplement 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "395038db-2e6f-4dc9-b471-2a19c235145a",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C77",
+      "claim": "ARF:ARF fin regenerates had significantly fewer proliferating cells than WT fin regenerates at 2, 4, and 6 dpa with the largest difference observed at 4 dpa (81%).",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to hs:ARF fins, ARF:ARF fin regenerates had significantly fewer proliferating cells than WT fin regenerates at all time point assessed with the largest difference observed at 4 dpa (81%, p<0.001) (Figure 7\u2014figure supplement 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by EdU incorporation data shown in Figure 7\u2014figure supplement 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "2a2aab90-c51e-4426-9f95-96596a1756f4",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C78",
+      "claim": "ARF activation is specific to regenerating tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm that ARF activation is specific to regenerating tissue and show that the magnitude of activation is sufficient to inhibit regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from data shown in Figures 7B and 7C",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "094812b6-7b11-41d9-a0ef-2afca41ee3b5",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C79",
+      "claim": "The presence of a functional human ARF gene in fish results in a diminished regenerative capacity, including absence of epimorphic regeneration, without significantly affecting other major physiological or developmental characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the presence of a functional human ARF gene in fish results in a diminished regenerative capacity, including absence of epimorphic regeneration, without significantly affecting other major physiological or developmental characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from data shown throughout Figure 7",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "4735cda1-fed4-445d-b013-1a589de773d1",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C80",
+      "claim": "The core mammalian tumor suppressor ARF senses regeneration signals and specifically responds to negatively alter the proliferative balance in the zebrafish blastema, greatly perturbing regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the core mammalian tumor suppressor ARF senses regeneration signals and specifically responds to negatively alter the proliferative balance in the zebrafish blastema, greatly perturbing regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from multiple experiments shown in Figures 1-7",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "a12a34e4-2aca-4e9a-a49c-c53dc15e90cd",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C81",
+      "claim": "This study provides the first in vivo experimental evidence that evolution of tumor suppressors can negatively impact solid tissue regeneration potential.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings provide the first in vivo experimental evidence that evolution of tumor suppressors can negatively impact solid tissue regeneration potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary claim based on all experimental findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "a0b61744-7ad1-42d7-b4d8-30a1de147924",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C82",
+      "claim": "ARF is a critical tumor suppressor in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "The evidence that ARF is a critical tumor suppressor in mammals (Sherr, 2006, Sharpless, 2005), but opposes regeneration functions (Sharpless and DePinho, 2007), suggests that the selective pressure that has driven the evolution of ARF has primarily enhanced tumor suppression either at the expense of or in the absence of regeneration pressures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sherr, 2006 and Sharpless, 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "a2e7ed75-6209-4d4d-8306-20112e516125",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C83",
+      "claim": "ARF opposes regeneration functions.",
+      "claim_type": "EXPLICIT",
+      "source": "The evidence that ARF is a critical tumor suppressor in mammals (Sherr, 2006, Sharpless, 2005), but opposes regeneration functions (Sharpless and DePinho, 2007), suggests that the selective pressure that has driven the evolution of ARF has primarily enhanced tumor suppression either at the expense of or in the absence of regeneration pressures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sharpless and DePinho, 2007 and experimental data from this study",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "1a801c6f-d9e4-484d-8d0c-ed5416e765da",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C84",
+      "claim": "Cdkn1a (p21) knockout mice possess a somewhat enhanced ability to regenerate solid structures such as pinnae.",
+      "claim_type": "EXPLICIT",
+      "source": "It is notable, however, that Cdkn1a (p21) knockout mice do possess a somewhat enhanced ability to regenerate solid structures (Heber-Katz et al., 2013; Clark et al., 1998) such as pinnae, which lack the complex tissue structure of a digit, but nonetheless, demonstrate that alteration of cellular growth control mechanisms can impact regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Heber-Katz et al., 2013 and Clark et al., 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "43ed7a28-9815-4c2e-80aa-eaa803af7da5",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C85",
+      "claim": "Active repression of ARF is important to maintain stem cell function.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the importance of active repression of ARF to maintain stem cell function (Molofsky et al., 2005), and of ARF reduction to facilitate dedifferentiation (Pajcini et al., 2010) have been documented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Molofsky et al., 2005 and Pajcini et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "65c7ad43-7986-4a7d-a646-73797feb9a2e",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C86",
+      "claim": "ARF reduction facilitates dedifferentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the importance of active repression of ARF to maintain stem cell function (Molofsky et al., 2005), and of ARF reduction to facilitate dedifferentiation (Pajcini et al., 2010) have been documented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Pajcini et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "85aa3747-175a-4d82-9108-b99f1e62749f",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C87",
+      "claim": "ARF is not developmentally expressed in the majority of tissues in the mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, prior observations that ARF is not developmentally expressed in the majority of tissues in the mouse (Gromley et al., 2009; Zindy et al., 2003) support the fidelity of the promoter used in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gromley et al., 2009 and Zindy et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "69fcd9cb-fb3a-42de-b156-1f001552e7fd",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C88",
+      "claim": "ARF represents an unusual departure from the paradigm that tumor suppressors function in regeneration as they do in normal development.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the majority of tumor suppressors probably function in regeneration as they do in normal development, the findings of the present study indicate that ARF represents an unusual departure from that paradigm in that the properties that cause it to respond specifically to tumorigenesis also cause it to distinguish regeneration contexts from developmental ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental findings showing differential ARF activation in development versus regeneration",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "ab827a84-86b3-4232-a186-d2b459f96628",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C89",
+      "claim": "ARF is a barrier to mammalian epimorphic regeneration because it interprets the regeneration context as similar to tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings with respect to ARF strongly suggest that it is a barrier to mammalian epimorphic regeneration because it interprets the regeneration context as similar to tumorigenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference based on experimental findings",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "0667c816-158b-485e-b6d4-195e28768aaf",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "claim_id": "C90",
+      "claim": "Approaches to induce epimorphic regeneration clinically would need to disrupt ARF\u2013MDM2\u2013TP53 axis activation.",
+      "claim_type": "EXPLICIT",
+      "source": "It follows conceptually that approaches to induce epimorphic regeneration clinically would need to disrupt ARF\u2013MDM2\u2013TP53 axis activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference based on experimental findings",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "17d73b98-c6c4-4a68-91e9-80e4781f4a03",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ARF orthologs are absent in highly regenerative vertebrates (teleost fish and urodele amphibians) but present in poorly regenerative vertebrates (birds and mammals), with the earliest documented ARF ortholog appearing in chickens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C27 are well-supported by phylogenetic analysis (Figure 1A) and citations to genome databases and prior literature. The comparative genomic analysis provides clear evidence for the restricted evolutionary distribution of ARF, establishing the foundation for the study's hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "8882873e-b5c5-4fee-bf93-d391002a7d9e",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The human ARF promoter is silent during zebrafish embryonic development but becomes specifically activated in the blastema during fin regeneration, not during wound healing without blastema formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C38 are strongly supported by multiple complementary approaches including luciferase assays (Figure 1\u2014supplement 1), immunofluorescence (Figures 1B, 1D), in situ hybridization (Figure 1C), and temporal expression analysis (Figure 1E). The differential activation pattern is convincingly demonstrated across developmental, regenerative, and wound healing contexts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "8fb5fa43-ad22-4a14-84ba-ee7d462d0ce1",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Rb1 hyperphosphorylation (p-Rb1) is dramatically increased specifically during fin regeneration (2 dpa) compared to uninjured fins or developing embryos, and co-localizes with ARF:GFP expression in blastema cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 are supported by Western blot quantification (Figure 2A) and immunostaining (Figure 2B) showing dramatic increases in p-Rb1 during regeneration. The co-localization data provides spatial confirmation. However, the Western blot shows only representative data from 3 replicates without individual data points or statistical tests for the comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "bc9b3fc1-7c2a-4a95-a097-b2257048656f",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "E2f1 binds the human ARF promoter specifically during regeneration (>6-fold enrichment at 2 dpa) but not during development, despite modest Rb1 phosphorylation in embryos, suggesting the ARF promoter responds to suprathreshold E2f1 levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 are supported by ChIP-qPCR data (Figure 2C) showing differential E2f1 binding. The positive control (tk1) validates the approach. However, the ChIP data represents only 3 experimental replicates with pooled samples (30 fins each), and no statistical tests are provided for the fold-enrichment values despite the claim of significance (>2-fold).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "a7f8dbbf-3424-4099-ae4b-4f97076bf438",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Human ARF localizes to the nucleolus, co-localizes with Mdm2, and elevates Tp53 levels in approximately 40% of transfected zebrafish cells in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 are supported by in vitro cell culture experiments (Figure 3\u2014supplement 1) demonstrating conserved ARF function in zebrafish cells. The quantification shows ~40% of cells with Tp53 upregulation (N=100, p<0.01), providing statistical support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "c524634b-45ae-402e-b4c5-2cc5beedaf9b",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Heat shock-induced ARF expression peaks at 3 hours and decreases to near baseline by 6 hours post-induction, consistent with the known 6-hour half-life of human ARF protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C51 are supported by immunostaining and Western blot data (Figure 3) showing temporal ARF expression dynamics. The 6-hour half-life is supported by citation to prior work (Sherr, 2006), validating the experimental system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "a0865a75-f89d-4d32-b5c4-dc7c0e9b96f2",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Inducible ARF expression significantly inhibits fin regeneration (30% reduction in length, 45% in area at 6 dpa) in a reversible manner, with regeneration resuming after heat shock cessation and reamputated fins regenerating normally without heat shock.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 are well-supported by quantitative measurements and images (Figures 4B, 4C, Figure 4\u2014supplement 1B) with appropriate statistical analysis (N=40 fins, p<0.001). The reversibility experiments provide strong evidence that continued ARF expression is required for regeneration suppression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "9b8871b4-6bd9-4219-aa66-32a88ebe515c",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "ARF expression during regeneration upregulates Tp53 protein, tp53 transcripts (p<0.05), and cdkn1a transcripts (p<0.01) at 4 dpa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 are supported by immunostaining and qPCR data (Figure 4\u2014supplement 1C) with appropriate statistical analysis (N=5 fins for transcript analysis, N=3 replicates). The data demonstrate ARF activates the p53 pathway in vivo during regeneration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "102897c6-f3f8-4b12-a0ef-a254b020eae9",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ARF-mediated regeneration inhibition is Tp53-dependent, as demonstrated by loss of inhibition in tp53M214K/M214K mutants, rescue with the Tp53 inhibitor PFT\u03b1 (50% length increase, 75% area increase), and phenocopying with the Mdm2 inhibitor nutlin3a (30% length reduction, 40% area reduction).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63 are strongly supported by genetic (Figure 5A) and pharmacological (Figures 5B, 5C) experiments with appropriate controls and statistical analysis (N=8-30 fins, p<0.01-0.05). The convergent evidence from multiple approaches convincingly demonstrates Tp53-dependence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "a46cf8ef-3314-4346-ba9a-37b36d04d9c8",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "ARF expression reduces proliferation (171% difference at 2 dpa, p<0.001) and increases apoptosis (210% difference at 2 dpa, p<0.01) in regenerating fins, with direct effects on blastema cells demonstrated by acute heat shock experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C66 are supported by EdU incorporation (Figure 6A) and TUNEL staining (Figure 6B) with appropriate quantification (N=10 fins, p<0.001). The acute heat shock experiments (Figure 6C) provide evidence for direct effects on regenerating cells, though the mechanism (cell cycle arrest vs. apoptosis vs. both) could be more clearly delineated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "23b6c49e-adc7-4057-8afb-3911e698949b",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "ARF:ARF transgenic fish expressing ARF under its endogenous promoter are viable, develop normally without detectable ARF expression, while forced ARF expression via heat shock in hs:ARF embryos causes drastically reduced survival, indicating ARF is not significantly activated during development and is poorly tolerated when expressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C71 are supported by survival analysis (Figure 7\u2014supplement 1A,B) and immunostaining data showing no ARF expression in ARF:ARF embryos but high expression and lethality in heat-shocked hs:ARF embryos. This provides strong evidence that the ARF promoter is inactive during development and validates the specificity of the transgenic system.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "13b40ba1-6fc8-4cc7-b5a2-13d03b69ba7a",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "ARF:ARF transgenic fish with constitutive ARF promoter activity show ARF expression specifically in regenerating fins and severe regeneration defects (44-55% reduction in length, 55-70% reduction in area) that persist for at least 30 days, with reduced proliferation (81% difference at 4 dpa), increased Tp53/tp53/cdkn1a expression, and rescue by PFT\u03b1 treatment, demonstrating that endogenous ARF activation is sufficient to suppress regeneration without affecting development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C79 are strongly supported by data from two independent transgenic lines (Figure 7C, Figure 7\u2014supplements 2-3) with comprehensive characterization including morphology, molecular markers, proliferation, and pharmacological rescue. The persistent defects at 30 dpa and replication in independent lines provide robust evidence. This is the key result demonstrating physiological relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "90e6ddfb-d142-431e-8aa4-e8153a0b6164",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The mammalian tumor suppressor ARF senses regeneration signals and negatively impacts zebrafish fin regeneration, providing the first in vivo experimental evidence that tumor suppressor evolution can negatively impact tissue regeneration potential.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C81 represent the main conclusions synthesizing all experimental findings. The evidence from multiple transgenic lines, temporal expression analysis, mechanistic studies, and rescue experiments collectively support these summary claims. However, the claim of 'first in vivo experimental evidence' (C81) should be qualified as this specifically addresses ARF and cross-species tumor suppressor function, not all tumor suppressors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "40cc2482-6319-4a40-be24-c05abb3df751",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "ARF represents an unusual departure from the paradigm that tumor suppressors function similarly in regeneration and development, likely serving as a barrier to mammalian epimorphic regeneration by interpreting regeneration signals as similar to tumorigenesis, suggesting clinical regeneration approaches would need to modulate the ARF-MDM2-TP53 axis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C88-C90 are interpretive and speculative conclusions extending beyond the experimental data. While C88 is reasonably supported by the differential activation patterns observed, C89 and C90 are explicitly speculative (marked as SPECULATION in evidence_type). The extrapolation from zebrafish to mammalian regeneration and clinical implications requires additional evidence and represents a hypothesis rather than a demonstrated result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "d1266ebf-9b98-4a3e-9c20-c7ca9abfd6e9",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims establishing that urodele amphibians and teleost fish possess epimorphic regeneration capacity involving blastema formation, while mammals lack proliferative blastemas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 are well-established background knowledge supported by appropriate citations to prior literature. These provide necessary context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "1c3d3c78-8601-4326-8a02-6432c9ab6f5a",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background claims describing tumor suppressor gene functions, the Rb1-E2f pathway, Cdkn2a/ARF biology, ARF-Mdm2-Tp53 signaling, and evolutionary considerations regarding tumor suppressors and regeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C22 represent established background knowledge supported by appropriate citations. These provide essential context for understanding ARF function and the study's rationale but are not novel experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    },
+    {
+      "id": "ceacf90b-3470-491c-adcd-62bea4231983",
+      "content_id": "56a088e0-ded8-4873-aa2d-28f10375b792",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Discussion claims synthesizing prior literature on ARF as a tumor suppressor that opposes regeneration, the effects of p21 knockout on mouse regeneration, ARF's role in stem cell function and dedifferentiation, and ARF's lack of developmental expression in mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C87 are supported by appropriate citations to prior literature and help contextualize the current findings. These represent synthesis of existing knowledge rather than novel experimental results from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:46:36.148776Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6b6fd1b8-36b4-4449-8303-4e9fbbf0238e",
+      "result_id": "17d73b98-c6c4-4a68-91e9-80e4781f4a03"
+    },
+    {
+      "claim_id": "7e01a60a-7981-46ae-805b-bde149ec6ed1",
+      "result_id": "17d73b98-c6c4-4a68-91e9-80e4781f4a03"
+    },
+    {
+      "claim_id": "7e21aa87-762c-411e-8a21-23f5ddc41a39",
+      "result_id": "17d73b98-c6c4-4a68-91e9-80e4781f4a03"
+    },
+    {
+      "claim_id": "35db34ad-2b29-4648-ab09-1878b77071b0",
+      "result_id": "17d73b98-c6c4-4a68-91e9-80e4781f4a03"
+    },
+    {
+      "claim_id": "113c5c13-4a42-4faf-90c4-31df6ad80a2d",
+      "result_id": "17d73b98-c6c4-4a68-91e9-80e4781f4a03"
+    },
+    {
+      "claim_id": "ae3b3afd-5222-4fff-a66a-69961aa6d965",
+      "result_id": "8882873e-b5c5-4fee-bf93-d391002a7d9e"
+    },
+    {
+      "claim_id": "790e1a4c-e8c0-46e4-9583-b5b4d23d5bb4",
+      "result_id": "8882873e-b5c5-4fee-bf93-d391002a7d9e"
+    },
+    {
+      "claim_id": "10855e48-cd88-4d77-baae-c238fdf6d6cc",
+      "result_id": "8882873e-b5c5-4fee-bf93-d391002a7d9e"
+    },
+    {
+      "claim_id": "25523191-f4ae-4cf8-9874-8f7675ebae8b",
+      "result_id": "8882873e-b5c5-4fee-bf93-d391002a7d9e"
+    },
+    {
+      "claim_id": "c2a65ca1-eb7f-42bf-955d-283bfc416eae",
+      "result_id": "8882873e-b5c5-4fee-bf93-d391002a7d9e"
+    },
+    {
+      "claim_id": "cb14e86a-1a3f-4c2f-a14d-6ea32814241b",
+      "result_id": "8882873e-b5c5-4fee-bf93-d391002a7d9e"
+    },
+    {
+      "claim_id": "ded51da7-4a06-4f61-9b55-85071339cb93",
+      "result_id": "8882873e-b5c5-4fee-bf93-d391002a7d9e"
+    },
+    {
+      "claim_id": "34889987-b2ec-4273-8642-57da35af27ef",
+      "result_id": "8882873e-b5c5-4fee-bf93-d391002a7d9e"
+    },
+    {
+      "claim_id": "2a343dc4-4f48-43ad-a0f4-c314f8d78c43",
+      "result_id": "8882873e-b5c5-4fee-bf93-d391002a7d9e"
+    },
+    {
+      "claim_id": "26656e7b-cb25-4629-b541-94211c54f3f7",
+      "result_id": "8882873e-b5c5-4fee-bf93-d391002a7d9e"
+    },
+    {
+      "claim_id": "636c763c-4f9e-4c19-8813-4a7b4f2366b2",
+      "result_id": "8882873e-b5c5-4fee-bf93-d391002a7d9e"
+    },
+    {
+      "claim_id": "e6b33c56-ecb8-4d5f-a8c7-00205db0cd44",
+      "result_id": "8fb5fa43-ad22-4a14-84ba-ee7d462d0ce1"
+    },
+    {
+      "claim_id": "e96c2bf6-b3d2-467d-9879-e8960d05711c",
+      "result_id": "8fb5fa43-ad22-4a14-84ba-ee7d462d0ce1"
+    },
+    {
+      "claim_id": "4aca5d97-4c3f-4dd4-9c8a-e8bf76521142",
+      "result_id": "8fb5fa43-ad22-4a14-84ba-ee7d462d0ce1"
+    },
+    {
+      "claim_id": "c7f2c318-02a6-4aaf-ba3b-0f16ac97494f",
+      "result_id": "8fb5fa43-ad22-4a14-84ba-ee7d462d0ce1"
+    },
+    {
+      "claim_id": "b62f0e8b-08dc-47f4-9040-dff6e5174dc1",
+      "result_id": "8fb5fa43-ad22-4a14-84ba-ee7d462d0ce1"
+    },
+    {
+      "claim_id": "e6c39671-fbe7-40bf-ba24-68c48c2e15a3",
+      "result_id": "bc9b3fc1-7c2a-4a95-a097-b2257048656f"
+    },
+    {
+      "claim_id": "644a1216-daa1-4145-8007-b4e7910a0995",
+      "result_id": "bc9b3fc1-7c2a-4a95-a097-b2257048656f"
+    },
+    {
+      "claim_id": "816ccb04-b119-4367-86bb-c54f77562481",
+      "result_id": "bc9b3fc1-7c2a-4a95-a097-b2257048656f"
+    },
+    {
+      "claim_id": "0c7e1aff-a181-4dce-a6ac-05d91571323f",
+      "result_id": "bc9b3fc1-7c2a-4a95-a097-b2257048656f"
+    },
+    {
+      "claim_id": "db670554-8e95-4704-9944-2f932c2013ee",
+      "result_id": "a7f8dbbf-3424-4099-ae4b-4f97076bf438"
+    },
+    {
+      "claim_id": "55bd1a44-5903-44f8-9165-30c9f8b8c97e",
+      "result_id": "a7f8dbbf-3424-4099-ae4b-4f97076bf438"
+    },
+    {
+      "claim_id": "3ae326fc-820f-4e1e-815d-f280806e3ab4",
+      "result_id": "c524634b-45ae-402e-b4c5-2cc5beedaf9b"
+    },
+    {
+      "claim_id": "27f3bbfd-57d5-4136-8fbc-122937746dda",
+      "result_id": "c524634b-45ae-402e-b4c5-2cc5beedaf9b"
+    },
+    {
+      "claim_id": "55430e60-96bc-47ba-ba4c-9689ecdcc212",
+      "result_id": "a0865a75-f89d-4d32-b5c4-dc7c0e9b96f2"
+    },
+    {
+      "claim_id": "851828da-0198-4685-987c-94a90205484b",
+      "result_id": "a0865a75-f89d-4d32-b5c4-dc7c0e9b96f2"
+    },
+    {
+      "claim_id": "4c32944f-e54a-4581-8fe7-16d821eb7d07",
+      "result_id": "a0865a75-f89d-4d32-b5c4-dc7c0e9b96f2"
+    },
+    {
+      "claim_id": "b36c0932-5041-4458-a8d0-529ea9c2bbd7",
+      "result_id": "a0865a75-f89d-4d32-b5c4-dc7c0e9b96f2"
+    },
+    {
+      "claim_id": "9ed36983-2e7e-4665-b1b1-34e8d92c769b",
+      "result_id": "9b8871b4-6bd9-4219-aa66-32a88ebe515c"
+    },
+    {
+      "claim_id": "3e708988-3dc5-49a7-9ab7-d7bbe29ed63c",
+      "result_id": "9b8871b4-6bd9-4219-aa66-32a88ebe515c"
+    },
+    {
+      "claim_id": "f3058753-da35-4ebe-b7ef-a072ab674683",
+      "result_id": "9b8871b4-6bd9-4219-aa66-32a88ebe515c"
+    },
+    {
+      "claim_id": "6202b1b7-3165-46c3-ac83-f93c0083001f",
+      "result_id": "102897c6-f3f8-4b12-a0ef-a254b020eae9"
+    },
+    {
+      "claim_id": "927bf386-436d-4e1c-bc26-8eb98dd415ff",
+      "result_id": "102897c6-f3f8-4b12-a0ef-a254b020eae9"
+    },
+    {
+      "claim_id": "8fd86d3c-24f8-4863-bbd1-84a877d5cee5",
+      "result_id": "102897c6-f3f8-4b12-a0ef-a254b020eae9"
+    },
+    {
+      "claim_id": "51585b30-233c-4fd0-949c-4b6de6321a13",
+      "result_id": "102897c6-f3f8-4b12-a0ef-a254b020eae9"
+    },
+    {
+      "claim_id": "531d9f49-2393-4c82-85bb-dfe1f1394bb3",
+      "result_id": "102897c6-f3f8-4b12-a0ef-a254b020eae9"
+    },
+    {
+      "claim_id": "9c6f13be-acd9-4d52-87e4-40cbacab44eb",
+      "result_id": "a46cf8ef-3314-4346-ba9a-37b36d04d9c8"
+    },
+    {
+      "claim_id": "4c7de834-ea73-4c19-a52b-44694de511fd",
+      "result_id": "a46cf8ef-3314-4346-ba9a-37b36d04d9c8"
+    },
+    {
+      "claim_id": "fc156a06-f08e-4807-9f5c-53368bfbae49",
+      "result_id": "a46cf8ef-3314-4346-ba9a-37b36d04d9c8"
+    },
+    {
+      "claim_id": "cb4a1f4a-9fc9-4317-8e57-0f4592a68723",
+      "result_id": "23b6c49e-adc7-4057-8afb-3911e698949b"
+    },
+    {
+      "claim_id": "61ec8598-3b7c-4201-bf13-8a936ac333cc",
+      "result_id": "23b6c49e-adc7-4057-8afb-3911e698949b"
+    },
+    {
+      "claim_id": "f03220d9-f2e4-474c-a06d-a58d75e5ebf1",
+      "result_id": "23b6c49e-adc7-4057-8afb-3911e698949b"
+    },
+    {
+      "claim_id": "f5ec8559-77ff-41ad-816a-5e030b1c3545",
+      "result_id": "23b6c49e-adc7-4057-8afb-3911e698949b"
+    },
+    {
+      "claim_id": "724b2692-6511-4aa4-b00b-8e41da5eac0c",
+      "result_id": "23b6c49e-adc7-4057-8afb-3911e698949b"
+    },
+    {
+      "claim_id": "b28a8ba0-329d-4ca6-a897-ca9d3a5a0cd7",
+      "result_id": "13b40ba1-6fc8-4cc7-b5a2-13d03b69ba7a"
+    },
+    {
+      "claim_id": "3905c6c9-7d7f-4555-9879-d8762f47a059",
+      "result_id": "13b40ba1-6fc8-4cc7-b5a2-13d03b69ba7a"
+    },
+    {
+      "claim_id": "3f0dc755-de91-40ae-b039-4e4f6ee6d23c",
+      "result_id": "13b40ba1-6fc8-4cc7-b5a2-13d03b69ba7a"
+    },
+    {
+      "claim_id": "acc22605-d9c4-4c3b-a1a7-5485380aed99",
+      "result_id": "13b40ba1-6fc8-4cc7-b5a2-13d03b69ba7a"
+    },
+    {
+      "claim_id": "8fede42a-6532-43ee-9be8-a1680b47a4ca",
+      "result_id": "13b40ba1-6fc8-4cc7-b5a2-13d03b69ba7a"
+    },
+    {
+      "claim_id": "395038db-2e6f-4dc9-b471-2a19c235145a",
+      "result_id": "13b40ba1-6fc8-4cc7-b5a2-13d03b69ba7a"
+    },
+    {
+      "claim_id": "2a2aab90-c51e-4426-9f95-96596a1756f4",
+      "result_id": "13b40ba1-6fc8-4cc7-b5a2-13d03b69ba7a"
+    },
+    {
+      "claim_id": "094812b6-7b11-41d9-a0ef-2afca41ee3b5",
+      "result_id": "13b40ba1-6fc8-4cc7-b5a2-13d03b69ba7a"
+    },
+    {
+      "claim_id": "4735cda1-fed4-445d-b013-1a589de773d1",
+      "result_id": "90e6ddfb-d142-431e-8aa4-e8153a0b6164"
+    },
+    {
+      "claim_id": "a12a34e4-2aca-4e9a-a49c-c53dc15e90cd",
+      "result_id": "90e6ddfb-d142-431e-8aa4-e8153a0b6164"
+    },
+    {
+      "claim_id": "69fcd9cb-fb3a-42de-b156-1f001552e7fd",
+      "result_id": "40cc2482-6319-4a40-be24-c05abb3df751"
+    },
+    {
+      "claim_id": "ab827a84-86b3-4232-a186-d2b459f96628",
+      "result_id": "40cc2482-6319-4a40-be24-c05abb3df751"
+    },
+    {
+      "claim_id": "0667c816-158b-485e-b6d4-195e28768aaf",
+      "result_id": "40cc2482-6319-4a40-be24-c05abb3df751"
+    },
+    {
+      "claim_id": "356bd1c2-5892-480f-ad05-921fa5a7589f",
+      "result_id": "d1266ebf-9b98-4a3e-9c20-c7ca9abfd6e9"
+    },
+    {
+      "claim_id": "8c075e97-9d2d-4e29-a873-5ca43738faa9",
+      "result_id": "d1266ebf-9b98-4a3e-9c20-c7ca9abfd6e9"
+    },
+    {
+      "claim_id": "ca2cdeb6-4e47-42d3-8e69-7968320bdcc2",
+      "result_id": "d1266ebf-9b98-4a3e-9c20-c7ca9abfd6e9"
+    },
+    {
+      "claim_id": "84a644c6-7161-4727-93f7-888581007740",
+      "result_id": "d1266ebf-9b98-4a3e-9c20-c7ca9abfd6e9"
+    },
+    {
+      "claim_id": "a95ec2b5-5ff9-4d53-ac10-953c6c8b2eb9",
+      "result_id": "1c3d3c78-8601-4326-8a02-6432c9ab6f5a"
+    },
+    {
+      "claim_id": "9d2a3309-6463-42cc-b23a-ad29c73aa531",
+      "result_id": "1c3d3c78-8601-4326-8a02-6432c9ab6f5a"
+    },
+    {
+      "claim_id": "ca500a89-d9eb-4e80-bec3-583b91d9e24f",
+      "result_id": "1c3d3c78-8601-4326-8a02-6432c9ab6f5a"
+    },
+    {
+      "claim_id": "60b618e8-84fb-4ff3-9b1b-1bf87ca486f3",
+      "result_id": "1c3d3c78-8601-4326-8a02-6432c9ab6f5a"
+    },
+    {
+      "claim_id": "dfe422c8-67a4-42bc-8efd-2dbf0580e5a6",
+      "result_id": "1c3d3c78-8601-4326-8a02-6432c9ab6f5a"
+    },
+    {
+      "claim_id": "d5990ee6-49ba-42d4-8afe-e663a518917c",
+      "result_id": "1c3d3c78-8601-4326-8a02-6432c9ab6f5a"
+    },
+    {
+      "claim_id": "b17f3437-02ec-46b7-a07b-639555bc19f5",
+      "result_id": "1c3d3c78-8601-4326-8a02-6432c9ab6f5a"
+    },
+    {
+      "claim_id": "9052f944-e079-44a1-912d-c384dbaf188a",
+      "result_id": "1c3d3c78-8601-4326-8a02-6432c9ab6f5a"
+    },
+    {
+      "claim_id": "79dd8512-7fab-4010-adf8-33beda08e24c",
+      "result_id": "1c3d3c78-8601-4326-8a02-6432c9ab6f5a"
+    },
+    {
+      "claim_id": "3dfccc27-6c11-4b24-b096-9e626c0571ff",
+      "result_id": "1c3d3c78-8601-4326-8a02-6432c9ab6f5a"
+    },
+    {
+      "claim_id": "08dd336a-4f9a-4f1e-9ebb-3df4ee83eade",
+      "result_id": "1c3d3c78-8601-4326-8a02-6432c9ab6f5a"
+    },
+    {
+      "claim_id": "299b0e40-f74a-49c9-998c-5bf99e170bb7",
+      "result_id": "1c3d3c78-8601-4326-8a02-6432c9ab6f5a"
+    },
+    {
+      "claim_id": "d67736d5-95ac-4437-9852-a5a694fc828c",
+      "result_id": "1c3d3c78-8601-4326-8a02-6432c9ab6f5a"
+    },
+    {
+      "claim_id": "dcaefac7-efd6-4970-89a7-e4e695adef4a",
+      "result_id": "1c3d3c78-8601-4326-8a02-6432c9ab6f5a"
+    },
+    {
+      "claim_id": "5ecf1e53-3c61-4c3f-9408-c1d82d2ae188",
+      "result_id": "1c3d3c78-8601-4326-8a02-6432c9ab6f5a"
+    },
+    {
+      "claim_id": "607c24cc-9011-4ceb-ba56-c70cdfda3935",
+      "result_id": "1c3d3c78-8601-4326-8a02-6432c9ab6f5a"
+    },
+    {
+      "claim_id": "6c28be80-99ae-42cb-9655-a0ce1955a288",
+      "result_id": "1c3d3c78-8601-4326-8a02-6432c9ab6f5a"
+    },
+    {
+      "claim_id": "a1a5d9da-3d8b-4f0d-b293-dccb26b7291f",
+      "result_id": "1c3d3c78-8601-4326-8a02-6432c9ab6f5a"
+    },
+    {
+      "claim_id": "a0b61744-7ad1-42d7-b4d8-30a1de147924",
+      "result_id": "ceacf90b-3470-491c-adcd-62bea4231983"
+    },
+    {
+      "claim_id": "a2e7ed75-6209-4d4d-8306-20112e516125",
+      "result_id": "ceacf90b-3470-491c-adcd-62bea4231983"
+    },
+    {
+      "claim_id": "1a801c6f-d9e4-484d-8d0c-ed5416e765da",
+      "result_id": "ceacf90b-3470-491c-adcd-62bea4231983"
+    },
+    {
+      "claim_id": "43ed7a28-9815-4c2e-80aa-eaa803af7da5",
+      "result_id": "ceacf90b-3470-491c-adcd-62bea4231983"
+    },
+    {
+      "claim_id": "65c7ad43-7986-4a7d-a646-73797feb9a2e",
+      "result_id": "ceacf90b-3470-491c-adcd-62bea4231983"
+    },
+    {
+      "claim_id": "85aa3747-175a-4d82-9108-b99f1e62749f",
+      "result_id": "ceacf90b-3470-491c-adcd-62bea4231983"
+    }
+  ],
+  "comparisons": []
+}

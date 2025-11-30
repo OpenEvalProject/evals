@@ -1,0 +1,251 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The corn snake HoxD cluster is structurally similar to other vertebrates but larger and contains more transposable elements. The cluster is 1.5-fold larger than the mouse cluster (C1), lacks Hoxd12 (C2), contains more than twice as many repeats (C3) with different types of transposable elements including LINEs and DNA transposons rather than predominantly SINEs as in mouse (C4). A high-quality 1.3 Mb sequence was obtained from 13 overlapping BACs (C65), all genes share the same transcriptional orientation (C66), and the conservation pattern is similar to chicken (C68).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C65-C68 provide converging evidence from sequencing, structural analysis, and repeat content analysis. The data are internally consistent and supported by appropriate comparative genomic methods including BAC sequencing, assembly, and repeat annotation. The increased size being attributed to higher repeat content (C67) is a reasonable inference supported by the repeat analysis data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C69"
+    ],
+    "result": "Spatial collinearity and chromatin dynamics at the snake HoxD cluster are conserved with other vertebrates. H3K9me3 marks are absent from the cluster (C5), H3K27me3 marks cover the entire cluster in non-expressing brain tissue (C6) but only the 5' posterior genes in posterior trunk tissue (C7), correlating with gene expression patterns (C8). This demonstrates that both spatial collinearity and associated chromatin dynamics are implemented in snakes as in other vertebrates (C9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 are well-supported by ChIP-seq data for H3K9me3 and H3K27me3 combined with whole-mount in situ hybridization. The correlation between chromatin marks and gene expression is clearly demonstrated. The conclusion (C9) that collinearity mechanisms are conserved is appropriately supported by the experimental evidence, though C69 is cited background knowledge rather than a new finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C27",
+      "C49"
+    ],
+    "result": "In most vertebrates except snakes, mesodermal enhancers controlling Hoxd gene expression are located outside the cluster. BAC transgenic mice carrying human, mouse, chicken, or zebrafish HoxD clusters showed Hoxd4 expression restricted to dorsal tissues (C10, C11, C12), with the human BAC showing expression only in neural tube (C11). This suggests that enhancers for robust mesodermal expression are located outside the cluster in most vertebrates (C13, C49).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 are supported by consistent BAC transgenic expression data across multiple species. The inference (C13, C49) that mesodermal enhancers are located outside the cluster is reasonable given the restricted expression patterns observed. However, the authors acknowledge discrepancies with previous reports using shorter transgenes, suggesting the result may be influenced by transgene context or copy number.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The telomeric gene desert contains most enhancers necessary for Hoxd gene expression in ventral mesoderm. Deletion of the centromeric TAD (C14) had no effect on Hoxd4 expression, while deletion of the telomeric TAD (C15) reduced ventral mesodermal expression. Multiple Hoxd genes (Hoxd3, Hoxd4, Hoxd8) lost ventral mesodermal expression in the absence of the telomeric desert (C17).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 are supported by systematic deletion analysis in mouse. The use of multiple deletion alleles and analysis of multiple genes strengthens the conclusion (C16). The experimental design appropriately tests the hypothesis by comparing deletions of opposite TADs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C84"
+    ],
+    "result": "In snakes, mesodermal enhancers are located within the HoxD cluster rather than in flanking gene deserts. The snake BAC transgenic line showed Hoxd4 expression in both neural tube and mesodermal derivatives (C18), suggesting enhancers within the cluster are sufficient for ventral mesodermal expression (C19). H3K27ac ChIP-seq showed fewer acetylated conserved sequences in the snake telomeric desert (22%) compared to mouse (40%) (C20), supporting the conclusion that snake mesodermal enhancers are positioned within the cluster (C21, C84).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 are well-supported by converging evidence from BAC transgenics and ChIP-seq. The snake BAC showing broader expression than other vertebrate BACs is a clear and reproducible result. The H3K27ac data provide independent support for reduced enhancer activity in the snake gene desert. The conclusion represents a major regulatory reorganization in snakes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C55",
+      "C85"
+    ],
+    "result": "The bimodal TAD regulatory structure is conserved at the snake HoxD locus despite limb loss. 4C-seq analysis showed that snake Hoxd genes display position-dependent interaction tropisms similar to mouse (C22, C23), with 5' genes interacting with the centromeric TAD and 3' genes with the telomeric TAD. However, differences exist in the internal organization, with snake Hoxd9 and Hoxd11 showing reduced interactions with telomeric sub-TAD 'b' (C24). The general bimodal structure is conserved (C55, C85).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are supported by 4C-seq data from snake embryos. The bimodal interaction pattern is clearly demonstrated, and the differences in sub-TAD interactions are appropriately noted. The conclusion (C55, C85) that the general structure is conserved while allowing for species-specific differences is well-supported and represents an important finding given the absence of limbs in snakes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C51",
+      "C52"
+    ],
+    "result": "The snake HoxD cluster lacks sequences that prevent Hox gene expression in lateral mesoderm. Unlike mouse where Hoxd3 and Hoxd4 are not expressed in external genitalia (C26), these genes are expressed in snake hemipenes (C25). The snake BAC expressed Hoxd4-Hoxd11 in developing limbs and genital buds of transgenic mice (C28), and RT-qPCR showed similar expression levels in snake trunk and genitals unlike the differential expression in mouse (C29). This suggests loss of negative regulatory control in snakes (C30, C52).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 are supported by in situ hybridization, BAC transgenic data, and RT-qPCR. The snake BAC being the only transgenic configuration showing strong limb and genital expression (C51) is a striking and well-documented result. The inference about loss of negative control (C30, C52) is reasonable given the data, though the exact mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Snake Hoxd gene regulation during genital development differs from mouse. While mouse Hoxd13 and Hoxd11 showed increased interactions with the centromeric desert in genital tissue (C31), snake genes showed no such increase (C32). Conserved GT1 and GT2 enhancer sequences in snake (C33) did not increase interactions with Hoxd13 during genital development (C34), though the Prox sequence showed some gain of interactions (C35).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 are supported by 4C-seq data from genital tissues. The contrast between mouse and snake interaction patterns is clearly demonstrated. The identification of conserved sequences that behave differently in snake provides mechanistic insight into regulatory divergence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C58",
+      "C59",
+      "C60",
+      "C87"
+    ],
+    "result": "Enhancer sequences have evolved different tissue specificities in snakes compared to other vertebrates. Mouse limb and genital enhancers are conserved in snakes (C36), but show altered specificities in transgenic assays. The snake Prox lost limb activity while retaining genital activity (C40), suggesting it consists of separable modules (C58). The snake Island I gained genital activity while losing limb activity (C42), with chicken showing limb-only activity (C43) and lizard showing intermediate specificity (C44), suggesting the change occurred in the squamate lineage before limb loss (C59, C60, C87).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C44 are well-supported by systematic transgenic enhancer assays across multiple species. The evolutionary trajectory inferred from chicken, lizard, and snake comparisons (C59, C60) is logical and supported by the data. The conclusion that enhancer specificity has evolved represents a major mechanistic finding. The use of mouse transgenics to test snake enhancers is appropriate though the authors acknowledge potential caveats regarding embryonic origin differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C83",
+      "C88"
+    ],
+    "result": "Vertebrate morphological evolution involved regulatory changes at Hox loci constrained within a conserved framework. While the general bimodal regulatory strategy is conserved, profound differences exist between mouse and snake HoxD regulation (C62, C83, C88). Vertebrates with extreme morphological variations rely on the same general regulatory architecture (C63), with evolutionary changes constrained within this framework (C64).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 represent appropriate synthesis of the experimental findings. The conclusion balances the conservation of general principles with species-specific differences. This interpretation is well-supported by the totality of the data showing both conserved bimodal structure and reorganized enhancer locations and specificities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Background knowledge about Hox gene regulation and snake biology. These claims establish the context for the study, including the importance of Hox genes in development (C45, C90, C91), the bimodal TAD structure at the mouse HoxD locus (C70-C76), snake morphology and Hox gene complement (C77-C82), and general principles of evolutionary developmental biology (C89-C96).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C96 represent established knowledge supported by appropriate citations. These provide necessary context but are not novel findings of this study. The citations appear appropriate and the background accurately represents current understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Speculation about evolutionary mechanisms. The claim that long-range mesodermal enhancers may have been progressively complemented by local enhancers in snakes (C50) is presented as speculation about possible evolutionary scenarios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C50 is explicitly speculative ('it is possible that') and represents a hypothesis rather than a demonstrated result. While consistent with the data, the evolutionary trajectory and mechanisms remain to be tested. This represents appropriate scientific speculation but should not be considered a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Background on chromatin compaction and transposable elements in Hox clusters. Hox clusters of jawed vertebrates show high chromatin compaction (C53), but squamate clusters have accumulated transposable elements (C54).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by appropriate citations and provide context for the repeat analysis performed in this study. These represent established knowledge rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C61"
+    ],
+    "result": "Background on limb and genital enhancer overlap and squamate genital development. Previous work showed overlap between limb and genital regulatory mechanisms (C56), with a Tbx4 enhancer losing limb specificity in snakes (C57). Squamate external genitalia were proposed to have the same embryonic origin as limbs (C61).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 and C61 represent relevant prior work that contextualizes the current findings. The citations are appropriate and the background accurately represents previous studies.",
+    "result_type": "MINOR"
+  }
+]

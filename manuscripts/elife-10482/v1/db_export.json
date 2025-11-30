@@ -1,0 +1,1300 @@
+{
+  "submission": {
+    "id": "309f36bd-1ccb-4d63-9526-073563b6b907",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:48:06.103922Z",
+    "updated_at": "2025-11-29T21:48:06.103922Z"
+  },
+  "content": [
+    {
+      "id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "submission_id": "309f36bd-1ccb-4d63-9526-073563b6b907",
+      "content_type": "manuscript",
+      "content_text": "# Single-molecule fluorimetry and gating currents inspire an improved optical voltage indicator\n\n## Authors\n\n- Jeremy S Treger<sup>1</sup>\n- Michael F Priest<sup>2</sup>\n- Francisco Bezanilla<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biochemistry and Molecular Biology University of Chicago Chicago United States\n2. Committee on Neurobiology University of Chicago Chicago United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nVoltage-sensing domains (VSDs) underlie the movement of voltage-gated ion channels, as well as the voltage-sensitive fluorescent responses observed from a common class of genetically encoded voltage indicators (GEVIs). Despite the widespread use and potential utility of these GEVIs, the biophysical underpinnings of the relationship between VSD movement and fluorophore response remain unclear. We investigated the recently developed GEVI ArcLight, and its close variant Arclight', at both the single-molecule and macroscopic levels to better understand their characteristics and mechanisms of activity. These studies revealed a number of previously unobserved features of ArcLight's behavior, including millisecond-scale fluorescence fluctuations in single molecules as well as a previously unreported delay prior to macroscopic fluorescence onset. Finally, these mechanistic insights allowed us to improve the optical response of ArcLight to fast or repetitive pulses with the development of ArcLightning, a novel GEVI with improved kinetics.\n\n## Introduction\n\nAccurately measuring membrane potential is crucial for understanding the activity of excitable cells. Traditionally, these measurements have been performed using various configurations of electrodes, but these can present numerous challenges such as mechanical disruption of cells and tissues and an inability to measure from many sites simultaneously with high spatial resolution (Salzberg, 1989). It has been found that the fluorescence of many membrane-bound organic dyes changes as a function of membrane potential (Tasaki et al., 1968; Cohen et al., 1974; Loew et al., 1979; Davila et al., 1973). Accordingly, this fluorescence can serve as an optical reporter of transmembrane voltage and render electrodes unnecessary. While this solves many problems associated with the use of electrodes, these potentiometric dyes stain cell membranes indiscriminately, leading to the labeling of glia and other tissue as well as neurons (Jin et al., 2010).\n\nFortunately, recent advances in optogenetics have provided an alternative to these techniques through the use of genetically encoded fluorescent voltage indicators (GEVIs) (Baker et al., 2008; Jin et al., 2010). These fluorescent proteins are expressed under the control of a desired genetic promoter and thus can be targeted to a chosen cell type. Once translated, the GEVIs are trafficked to the cell membrane where they sense changes in membrane potential and transduce this into a change in their fluorescence, thereby providing an optical readout of cellular electrical excitability. Many different designs have been employed to engineer GEVIs (Siegel and Isacoff, 1997; Sakai et al., 2001; Dimitrov et al., 2007; Kralj et al., 2011; Akemann et al., 2012). To date, most of these consist of a protein voltage-sensing domain (VSD) from a voltage-sensitive ion channel or phosphatase fused to one or more green fluorescent protein (GFP) derivatives. However, it remains largely unclear how movement of a VSD couples into changing fluorescence in an attached GFP, limiting the extent to which rational design can aid in the development and optimization of these GEVIs.\n\nTo help address this knowledge gap, we have conducted an extensive biophysical investigation of a voltage-sensitive phosphatase-based GEVI, ArcLight (Jin et al., 2012). We chose this molecule because it is one of the most promising GEVIs developed thus far with demonstrated utility in intact brain tissue (Cao et al., 2013). ArcLight is comprised of the VSD from the Ciona intestinalis voltage-sensor containing phosphatase (Ci-VSP) (Murata et al., 2005) fused to a variant of GFP. This voltage-sensing domain is highly similar to the VSD of voltage-gated ion channels; all contain a bundle of four transmembrane helices, with the fourth segment (S4) containing positively charged amino acids that behave as the primary sensors of voltage changes. The fluorescence of Arclight changes by more than 30% in response to a 100 mV change in membrane potential (Jin et al., 2012), an extremely large voltage-sensitive change compared to most other fluorescent proteins with S4-voltage sensors.\n\nIn this work, we first demonstrate that ArcLight fluorescence responds to motion of the attached voltage sensor and then investigate the characteristics of the fluorescence of ArcLight', a close homolog of ArcLight, at the single-molecule level. Although single GEVI molecules appeared to function normally, these traces unexpectedly displayed a significant degree of noise at millisecond timescales. Further investigations into this noise revealed that ArcLight' fluorophores possess intrinsic noise due to internal dynamics of the GFP moiety even in the absence of the voltage sensor, and that this noise appears to be a general feature of many GFP constructs including eGFP. Reducing or eliminating this fluctuation noise of the fluorophore could be a novel path towards improving this class of GEVIs. Finally, we investigated the behavior of ArcLight fluorescence at the macroscopic level and used this investigation to develop a novel voltage indicator with improved characteristics. ArcLight demonstrates distinct advantages over many other genetically-encoded voltage indicators, including large signal size relative to background, relatively low spectral bandwidth requirements compared to many FRET-based sensors (Mishina et al., 2014; Akemann et al., 2012;\u00a02013; Tsutsui et al., 2013), high quantum yield compared to archaerhodopsin based sensors (Flytzanis et al., 2014; Gong et al., 2013; Hochbaum et al., 2014; Kralj et al., 2012), and a demonstrated success in multiple biological preparations (Jin et al., 2010; 2012; Cao et al., 2013; Leyton-Mange et al., 2014). However, ArcLight\u2019s ability to respond to rapid changes in membrane potential is limited by its slow kinetics (Jin et al., 2012). To date, improvements in the kinetics of ArcLight have relied on switching residues from the Ciona intestinalis voltage-sensing domain (Ci-VSD) to residues from analogous voltage-sensitive phosphatases found in other species, especially Gallus gallus and Danio rerio (Piao et al., 2015; Han et al., 2013). Our mechanistic investigations into the link between ArcLight voltage sensor movement and fluorescence revealed an avenue of improvement for ArcLight as a voltage indicator. Using the cut-open oocyte voltage-clamp technique, we found that ArcLight fluorescence likely monitors a protein transition subsequent to gating charge movement, but that accelerating gating kinetics using a previously-reported mutation (Lacroix and Bezanilla, 2012) can nonetheless significantly speed up the fluorescence response. We termed this fast ArcLight derivative 'ArcLightning'. As expected from the accelerated kinetics of its Ci-VSD, ArcLightning expression in mammalian cells resulted in rapid and large voltage-sensitive fluorescence changes. This work shows that mutations discovered during biophysical studies of voltage sensor behavior can be used to rationally design improved GEVIs.\n\n## Results\n\n### ArcLight fluorescence changes are caused by voltage sensor movements\n\nOur first goal was to validate that ArcLight fluorescence changes are driven by voltage sensor conformational changes, rather than by a different mechanism. While a direct response to membrane potential is unlikely as the fluorophore does not reside in the membrane electric field, it is conceivable that, for instance, the fluorophore is responding to localized pH changes near the membrane due to voltage-driven proton fluxes across the membrane. Using the cut-open oocyte voltage-clamp technique (Stefani and Bezanilla, 1998) we were able to simultaneously measure the gating current of ArcLight (Figure 1A) and its fluorescence (Figure 1B) from the same oocyte (Cha and Bezanilla, 1998). We then utilized the well-described mutations of the R217 residue of the Ci-VSP voltage sensor (Dimitrov et al., 2007; Villalba-Galea et al., 2013) to shift the voltage-dependence of the voltage sensor and observe the effects on the fluorescence. In ArcLight, this residue is mutated to a glutamine (R217Q), which places the midpoint of voltage sensor response at approximately -20 mV. Returning this residue to arginine (R217R) shifts the midpoint of gating charge movement to positive potentials while replacing the glutamine with glutamate (R217E) shifts the response to even more negative potentials (Figure 1C). Crucially, the fluorescence response mirrored these changes, indicating that ArcLight fluorescence signals are caused by voltage sensor movement rather than by direct influence of membrane potential or by voltage-driven ion concentration changes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/10482/elife-10482-fig1-v1.jpg)\n\n**Figure 1.:** (A)\u00a0\u00a0Family of gating currents from an oocyte injected with ArcLight R217Q. The holding potential is -80 mV, and the pulses range from -160 mV (darkest red) to +140 mV (darkest blue) in 20 mV increments. (B) Fluorescence traces simultaneously acquired with gating currents in A. Colors indicate identical membrane potentials as in A. (C) Normalized gating-charge-versus-voltage (Q-V) curves (triangles; cyan \u2013 R217R, grey \u2013 R217Q, purple \u2013 R217E) and fluorescence-versus-voltage (F-V) curves (circles; blue \u2013 R217R, black \u2013 R217Q, red \u2013 R217E) for ArcLight. For clarity of comparison, the fluorescence is plotted as the change in fluorescence over the background fluorescence, multiplied by -1 (i.e., -\u0394F/F0). Each Q-V curve was normalized by fitting a Boltzmann function to the data and scaling the limiting values of the function to 0 and 1. These scaling factors were then used to normalize each respective F-V curve. Error bars represent 95% confidence intervals of the mean. N = 5 for R217R, 7 for R217Q, and 6 for R217E.\n\n### Single ArcLight' molecules display millisecond-scale fluorescence fluctuations\n\nOur next goal was to determine whether single GEVI\u00a0molecules showed any unexpected behaviors that were being masked by ensemble averages. To do this, we visualized voltage-dependent fluorescence from single GEVI\u00a0molecules using total internal reflection fluorescence microscopy (TIRFM). This technique presented an electrophysiological challenge, as TIRFM can only be performed on an oocyte once the vitelline membrane has been removed. The bare plasma membrane of the oocyte seals to the glass coverslip producing high access resistance to the bath electrodes and, consequently, a poor voltage clamp. Using an electrochromic voltage-sensitive small molecule dye (di-8-ANEPPS), we measured the speed of the voltage clamp on the underside of a peeled oocyte placed directly on a glass coverslip (Figure 2\u2014figure supplement 1). As expected, the clamp was very slow due to the high access resistance. To remedy this situation, we coated glass coverslips with a polymer cushion. This cushion created a larger, conductive aqueous space between the oocyte and the glass that was thin enough to allow successful TIRFM. This was found to dramatically improve voltage clamp speed (Figure 2\u2014figure supplement 1). This advance allowed us to successfully voltage clamp the molecules observable in TIRFM.\n\nHaving overcome this challenge, we turned our attention to observing single molecules of ArcLight' (see Methods section for details). Briefly, ArcLight' is a previously published variant of ArcLight (Jin et al., 2012) with two mutations in the GFP domain that seemed to improve its performance as a single-molecule fluorophore. Oocytes expressing low concentrations of ArcLight' had their vitelline membranes removed mechanically and were placed on polymer-coated coverslips and imaged with TIRFM. At the site of cRNA injection ArcLight' density appeared high and single molecules could typically not be resolved. However, imaging from fields further from the site of injection showed distinct, punctate sources of light consistent with small clusters and single molecules of ArcLight\u2019 (Figure 2A). As expected, many of these points showed clear changes in fluorescence in response to applied voltage changes, suggesting that they came from functional GEVI molecules (Figure 2B). To confirm that these single-molecules were behaving normally, traces from many different fluorescent spots were summed together (Figure 2C); these summed traces recapitulated the macroscopic response of ArcLight' to changes in membrane potential indicating that their function was uncompromised.\n\nAlthough the single-molecules appeared to be operating normally, they consistently displayed an interesting phenomenon: a large degree of noise that did not appear to be shot noise. Whereas shot noise has no correlation from data point to data point, the single-molecule traces fluctuated between relatively distinct fluorescence levels, sometimes remaining at a single level for many milliseconds (Figure 2B,C). To our knowledge, there have been no prior reports of GEVIs displaying fluctuations on these millisecond timescales. Accordingly, we initially hypothesized that these fluctuations were reflective of voltage sensor conformational state changes. To test this, we bacterially expressed isolated ArcLight' GFP domains without attached voltage sensors and observed them as single molecules. To our surprise, these isolated GFP domains displayed roughly similar fluctuations to those observed in the full ArcLight molecules (Figure 3A), indicating that these fluctuations originate in the fluorophore itself. To confirm that this fluctuation noise was distinct from shot noise, we computed the autocorrelation functions for fluorescence traces from both an isolated ArcLight' GFP domain and from a region of background fluorescence from the same image (Figure 3B,C). As expected, the background fluorescence displayed no significant autocorrelation, suggesting that the noise in this trace is primarily due to shot noise or other white noise processes. By contrast, the ArcLight' fluorescence showed significant correlation over tens of milliseconds. Finally, we performed a similar experiment on wild-type eGFP and also observed significant fluctuation noise (Figure 3D). This result, consistent with the GFP photophysics literature, strongly suggests that this is not a pathology unique to the ArcLight' fluorophore, but rather is one that likely affects many current GEVIs (see Discussion). This observation may lead to a novel avenue for improvement of GEVI signals based on the attenuation or elimination of this noise.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/10482/elife-10482-fig2-v1.jpg)\n\n**Figure 2.:** (A) An image of the surface of an oocyte expressing ArcLight' in single-molecule concentrations. Square image field is 50 \u03bcm \u00d7 50 \u03bcm. Height in the z-axis corresponds to fluorescence intensity. This image is an average of 800 frames. Background correction has been performed using morphological filtering. (B) Three example traces are shown of single-molecule ArcLight' fluorescence in response to a three second depolarizing pulse from -90 mV to +60 mV. Traces were filtered at 40 Hz and had a linear baseline subtraction applied. (C) The upper of the two traces shows an example trace of single-molecule ArcLight' fluorescence from -120 mV to +120 mV for 600 ms (red dashed lines mark the beginning and end of the depolarizing pulse). The lower of the two traces is the average of 67 traces. This summation demonstrates that the single-molecule data here recapitulates the macroscopic voltage-sensitive fluorescence response of Arclight. Both traces were filtered at 100 Hz. A linear baseline subtraction was applied to the summed trace. ADU is analog-to-digital units, the output unit of the EMCCD camera.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10482/elife-10482-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The speed of the voltage clamp on the bottom side of an oocyte is observed by monitoring the fluorescence of di-8-ANEPPS in the oocyte membrane. When a peeled oocyte is placed directly on a clean glass coverslip, it seals against the glass and creates a slow voltage clamp (red trace). However, coating the coverslip with a water-soluble polymer (polyethylenimine) decreases access resistance under the oocyte and thus improves clamp speed in this region (blue trace).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/10482/elife-10482-fig3-v1.jpg)\n\n**Figure 3.:** (A) Fluorescence from a single isolated GFP domain from ArcLight' with no attached voltage sensor. The fluorescence displays fluctuations between different levels and does not appear to be Poisson-distributed. The trace was filtered at 100 Hz. (B) Background fluorescence from a region of an image with no GFP molecule displays no significant autocorrelation at any non-zero lag. This suggests that most noise in this regime is due to white processes such as shot noise. (C) The fluorescence from a single isolated GFP domain of ArcLight' displays significant autocorrelation. This suggests that the fluorescence moves between distinct levels corresponding to different conformational, chemical, or electronic states of the GFP domain. Blue bars in B and C represent approximate 95% confidence intervals for a Gaussian-distributed white noise process. No filtering was applied to the data used for the autocorrelations. (D) Single molecules of wild-type eGFP also display fluctuation noise that appears qualitatively similar to that of ArcLight' GFP domains, suggesting that this noise may be present in many GFP derivatives. The trace was filtered at 100 Hz. ADU is analog-to-digital units, the output unit of the EMCCD camera.\n\n### ArcLight fluorescence changes are slower than gating currents and possess a lag\n\nHaving investigated the characteristics of single ArcLight fluorophores, we turned our attention towards understanding the macroscopic response of this molecule. As discussed previously, altering the set point of the voltage-dependence of the Ci-VSP voltage-sensing domain by mutating the R217 residue to either a Q or an E correspondingly alters the set point of the ArcLight fluorescence change (Figure 1C). Indeed, the change in ArcLight fluorescence at steady state was not statistically significantly different from the degree of change in Ci-VSD conformation as measured by gating charge movement. We also tested whether ArcLight fluorescence kinetics are the same as the kinetics of the gating charge movement (see Methods for details). In both 'on' responses where the membrane was held at a negative potential and then pulsed to depolarized potentials (Figure 4A) and 'off' responses where the membrane was held at a positive potential and then pulsed to hyperpolarized potential (Figure 4B), we observed that ArcLight fluorescence kinetics are considerably slower than those of voltage sensor movement (Figure 4C,D). The fastest component of fluorescence during the 'on' response was approximately twice as slow as the gating current kinetics, and the 'off' fluorescence kinetics are more than ten times slower than voltage sensor gating. Indeed, neither component of fluorescence response appears to correlate well with any component of gating charge movement (Figure 4\u2014figure supplement 1). Overlaying simultaneously acquired gating charge and fluorescence traces, along with an estimated measure of membrane potential, makes the slowed response of ArcLight fluorescence especially apparent (Figure 4\u2014figure supplement 1). These observations raised the question of how gating charge movement is kinetically linked to ArcLight fluorescence. Interestingly, there is a distinct delay between the induction of a voltage change and the initiation of the resulting fluorescence change from ArcLight (Figure 4\u2014figure supplement 2, Figure 4E,F). This delay shows a marked voltage-dependence and is present in both on and off fluorescence transitions. Both the delays and fluorescence kinetics show pronounced voltage dependencies, with \u03c4-V curves which are slowest at intermediate potentials and which speed up towards limiting values at extreme potentials. This pattern is reminiscent of gating current \u03c4-V curves, and suggests that voltage sensor movement is partially responsible for determining ArcLight fluorescence kinetics. In fact, the delays of the fluorescence response align quite well with the gating current kinetics (Figure 4E). In addition to wild-type ArcLight, we also investigated the kinetics of fluorescence response in relation to gating current kinetics for the R217R and R217E constructs (Figure 4\u2014figure supplement 3). These two mutants generally behaved similarly to the R217Q construct with fluorescence lags of a comparable speed to VSD movement and a considerably slower fluorescence response.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/10482/elife-10482-fig4-v1.jpg)\n\n**Figure 4.:** ArcLight fluorescence partially follows the kinetics of voltage sensor movement.(A) ArcLight fluorescence response to an 'on' pulse protocol with a holding potential of -120 mV with 200 ms pulses ranging from +120 mV to -140 mV by 20 mV intervals. (B) As in A, but in response to an 'off' pulse protocol pulsing from a holding potential of +40 mV to 200 ms pulses ranging from -160 mV to +40 mV by 20 mV intervals. (C) ArcLight on gating kinetics (blue) are faster than and do not correlate strongly with ArcLight fluorescence kinetics (green). Kinetics were obtained from gating currents and fluorescence changes recorded simultaneously from the same oocyte. (D) ArcLight off gating kinetics (blue) are much faster than and do not correlate with ArcLight fluorescence kinetics (green). (E) Upon depolarization, ArcLight fluorescence change shows a distinct lag (see Figure 4\u2014figure supplement 1). This lag is voltage-dependent, becoming shorter with more extreme changes in membrane potential. ArcLight gating current kinetics from the on pulse (blue) correlate quite well with the ArcLight fluorescence lag (red). (F) ArcLight gating current kinetics from the off pulse (blue) correlate with ArcLight fluorescence lag (red) better than they do with ArcLight fluorescence kinetics (shown in D, green). N = 4 for on pulse protocol data, 5 for off pulse protocol data.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10482/elife-10482-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Both gating charge movement kinetics (blue, obtained by integrating gating currents) and fluorescence changes (green) of ArcLight are well-fit by a double-exponential function (circles \u2013 faster time constant; squares \u2013 slower time constant). All fluorescence kinetics are slower than all gating charge kinetics. (B)The slow kinetics of the ArcLight fluorescence response are emphasized by overlaying traces for estimated membrane potential (black), integrated gating charge (blue), and fluorescence (green). The upper group of three traces is for a pulse to +40 mV, while the lower group of three traces is for a pulse to -40 mV. The holding potential is -120 mV for both sets of traces. Estimated membrane potential was calculated by integrating an uncompensated capacitive transient acquired during pulse protocols identical to those used to record the respective gating charge and fluorescence traces. Gating charges were normalized by the maximum charge reached during the +40 mV acquisition. Estimated membrane potential and fluorescence traces were each normalized to their respective integrated gating charge traces.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/10482/elife-10482-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Following the onset of the voltage change (vertical red line), a measurable lag occurs prior to the onset of ArcLight fluorescence change. Traces are shown from a holding potential of -80 mV and range from +140 mV (darkest blue) to -160 mV (darkest red). (B)Exponential fits to the fluorescence response provide a quantitative measure of this delay, taken at the point where the fit crosses the abscissa. For example, at +120 mV (fluorescence trace in blue) the exponential fit (solid pink line) crosses the abscissa shortly after 5 ms (the intersection is marked by a dashed vertical pink line). This is about 2 ms after voltage onset, marked by a vertical red line as in A. Similarly, at 0 mV (fluorescence trace in green, darkened from the trace in A for improved visual clarity) the exponential fit (solid dark green line) crosses the abscissa (intersection marked by a dashed vertical dark green line) at about 9 ms, or 6 ms after voltage onset.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/10482/elife-10482-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Gating current weighted time constants (blue), fluorescence lags (red), and the fast time constants of the fluorescence response (green) were calculated for ArcLight R217R as described above for wild-type ArcLight. The holding potential was -80 mV. This construct follows the same general pattern as the R217Q ArcLight: the fluorescence lags are of similar speed to voltage sensor movement but the fluorescence response itself is considerably slower. (B) As in A, but for ArcLight R217E. The holding potential was -80 mV. This construct also displays a pattern similar to wild-type ArcLight.\n\n### Accelerating ArcLight gating accelerates fluorescence responses, up to a limiting speed\n\nTo investigate these behaviors further, we tested whether altering the kinetics of Ci-VSD movement altered the kinetics of either the slow ArcLight fluorescence change or the lag before fluorescence change. By mutating the residue I126 in the S1 segment of the voltage-sensing domain of Ci-VSP to a phenylalanine, gating current activation kinetics were previously shown to be accelerated roughly forty-fold while deactivation currents were accelerated roughly eighty-fold (Lacroix and Bezanilla, 2012). We hypothesized that making the same mutation in ArcLight might speed up fluorescence responses in addition to gating currents. As the I126F mutation also shifted the Ci-VSP Q-V to more hyperpolarized potentials, the Q at position 217 in ArcLight was mutated back to R to keep the voltage-dependence at roughly physiological levels (Figure 5A). Since Ci-VSP R217R gating currents are about four-fold slower than R217Q gating currents (Villalba-Galea et al., 2013), we would expect that ArcLight I126F Q217R would display gating current kinetics about 10 times faster in response to depolarizing pulses and 20 times faster in response to hyperpolarizing pulses than wild-type ArcLight. In practice, we observe a roughly six to twelve-fold increase in speed (Figure 5B,C Figure 5\u2014figure supplement 1). Accordingly, if ArcLight fluorescence kinetics track directly with the kinetics of its voltage sensing domain, the fluorescence changes of ArcLight I126F should be about 8 times faster than wild-type ArcLight during both depolarizations and hyperpolarizations. However, while I126F did accelerate the kinetics of ArcLight fluorescence, it did so in an interesting manner (Figure 5D,E). Specifically, while wild-type ArcLight fluorescence kinetics show a pronounced dependence on voltage, I126F kinetics are quite flat over most of the physiological voltage range. Furthermore, as the wild-type kinetics speed up towards extreme membrane potentials, they typically seem to approach the near-constant value of I126F. Interestingly, the lags before fluorescence movement seem to show a very similar pattern (Figure 5F,G). An additional feature is the remarkable acceleration of I126F fluorescence kinetics upon hyperpolarization compared to those from ArcLight (Figure 5E). These observations provide some insight into the biophysical basis of ArcLight fluorescence sensing (see Discussion). Due to its improved kinetic response versus wild-type ArcLight, we have termed the I126F Q217R mutant 'ArcLightning'.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/10482/elife-10482-fig5-v1.jpg)\n\n**Figure 5.:** (A) The voltage-dependence of fluorescence change of ArcLight I126F Q217R occurs over a physiological voltage range, as taken from an on protocol identical to that in Figure 4. (B) The gating current kinetics of ArcLight I126F Q217R (squares) obtained from the on pulse protocol are faster than those measured from ArcLight (circles). (C) The gating current kinetics of ArcLight I126F Q217R (squares) obtained from an off pulse protocol identical to that in Figure 4 are faster than those measured from ArcLight (circles). (D) The fluorescence kinetics of ArcLight I126F Q217R (squares) in response to a depolarizing pulse are generally faster than those measured from ArcLight (circles). A notable exception is at more positive potentials, e.g. +80 mV, where the kinetics of the two constructs are essentially equal. (E) The fluorescence kinetics of ArcLight I126F Q217R (squares) obtained in response to a hyperpolarizing pulse are much faster than those measured from ArcLight (circles). (F) The fluorescence lag of ArcLight I126F Q217R (squares) during on pulses is briefer than the lag seen in ArcLight\u2019s fluorescence (circles). (G) As in F, but the fluorescence lag upon an off pulse. On and off protocols were as in Figure 4, and n = 5 for all ArcLight I216F Q217R data.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10482/elife-10482-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Ratio of ArcLight gating current kinetics to I126F Q217R gating current kinetics across all voltages in response to an 'on' protocol. (B) As in A, but in response to an 'off' protocol. The on and off protocols were identical to those described in Figure 4. Briefly, depolarizations used a holding potential of -120 mV, with 200 ms pulses from -140 mV to +120 mV; hyperpolarizations used a holding potential of +40 mV, with 200 ms pulses from +40 mV to -140 mV. N = 4 for ArcLight activation kinetics and 5 for all other kinetics.\n\n### ArcLightning is a novel GEVI with improved kinetic response\n\nGiven its faster response relative to ArcLight, we suspected that ArcLightning might be useful as an improved GEVI. When expressed in HEK cells and measured at 19\u00b0C, ArcLightning showed signals which were substantially faster than those of ArcLight, particularly when returning to hyperpolarized potentials (Figure 6A). The acceleration of kinetics observed from ArcLight to ArcLightning in oocytes is recapitulated in mammalian cells (Figure 6\u2014figure supplement 1). The fast component of ArcLightning fluorescence is faster than the fast component of ArcLight fluorescence at physiological membrane potentials, and the kinetics of the two constructs converge to similar values at extreme potentials where the ArcLight gating is faster. Furthermore, over much of the physiological voltage range, the fractional amplitude of the fast component is larger in ArcLightning than in ArcLight. The increased speed of return from a depolarizing pulse is particularly noticeable in the case of repetitive stimuli (Figure 6B). In this case, ArcLightning is able to return to baseline fluorescence in between consecutive voltage steps, providing an accurate readout of the size of each step. ArcLightning also retains its improved kinetics at 35\u00b0C. In response to trains of short pulses with durations emulating action potentials at 67 Hz, ArcLightning is still able to recover to baseline in between pulses (Figure 6C). ArcLight, by contrast, does not recover in time and thus shows an apparent increase in magnitude of each successive voltage pulse, despite them all being of equivalent magnitude. Although the larger net signal size of ArcLight may remain advantageous in some situations, the faster kinetics of ArcLightning should help in the resolution and analysis of many fast phenomena.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/10482/elife-10482-fig6-v1.jpg)\n\n**Figure 6.:** ArcLightning displays improved fluorescence response to repetitive pulses in mammalian cells.(A) ArcLightning (pink) expressed in HEK cells displays moderately faster kinetics in response to depolarization and much faster kinetics in response to hyperpolarization than ArcLight (blue) at 19\u00b0C. Notice that ArcLightning develops a slower component only at potentials exceeding +50 mV. (B) In response to a train of 100 ms pulses, separated by 100 ms of holding at -80 mV, ArcLightning (pink) displays an improved ability to measure discrete events compared to ArcLight (blue). All traces in A and B had no baseline subtraction or filtering. (C) At 35\u00b0C, both ArcLight (blue) and ArcLightning (pink) follow 5 ms, 100 mV pulses separated by 10 ms at the resting potential to mimic action potentials at approximately 67 Hz. ArcLightning provides the additional advantage of abolishing the sloping baseline of fluorescence that ArcLight produces in response to repetitive pulses as a result of its slow off kinetics. Both traces had a single-exponential baseline subtracted and were low-pass filtered at 300 Hz.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10482/elife-10482-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) The on kinetics of ArcLightning (pink squares) are faster than those of ArcLight (blue circles) at physiological voltages. As seen in oocytes, kinetics became similar at highly depolarized potentials, suggesting an underlying rate-limiting step of fluorescence change that is not highly voltage-dependent. (B) The fractional amplitude of the fast time constant in response to depolarization is higher in ArcLightning (pink squares) than in ArcLight (blue circles). Thus, in addition to being faster, the first component of ArcLightning comprised a greater percentage of its total fluorescent response. (C) As in A, but for kinetics in response to hyperpolarizations to baseline following the on pulse. (D) As in B, but for fractional amplitude of the fast time constant of responses to hyperpolarizing pulses. Kinetics of ArcLightning responding to hyperpolarization were similar to or faster than those of ArcLight, and the fractional amplitude of the fast time constant was larger for ArcLightning than for ArcLight. To obtain these kinetics, an 100 ms on pulse was made from a holding potential of -80 mV, ranging from +100 mV to -120 mV in increments of 20 mV. Activation kinetics were measured from the on pulse; deactivation kinetics were measured from the off as the potential returned to -80 mV. N = 5 for all data.\n\n## Discussion\n\nHere we report three advances in our understanding of GEVIs in general and ArcLight in particular. First, we show that the ArcLight' GFP domain possesses considerable intrinsic fluctuation noise on the millisecond timescale, and that this noise is also present in wild-type eGFP. Second, we demonstrate that for ArcLight, the transitions of the voltage-sensing domain align with the transitions of the fluorescence signal, although the fluorescence changes are significantly slower than the voltage sensor changes. Finally, we used a point mutation discovered during biophysical investigations of Ci-VSP to design ArcLightning, a novel version of ArcLight with accelerated movements of the voltage-sensing domain and improved fluorescence response times.\n\nOur single-molecule analysis of ArcLight' revealed a previously unrecognized behavior of the GEVI: an inherent noise, or fluctuation in the fluorescence signal. This noise appears to not be Poisson-distributed, and thus is not likely simply attributable to shot noise from a single fluorophore. Furthermore, we observed similar fluctuations in single molecules of eGFP. There have been prior reports of fluorescence fluctuations in various GFP derivatives\u00a0which generally fall into two categories: millisecond\u00a0and\u00a0microsecond-scale fluctuations detected with fluorescence correlation spectroscopy (Hess et al., 2004;\u00a0Haupts et al., 1998; Bosisio et al., 2008), and much slower blinking detected in imaging studies of gel-immobilized fluorophores that displayed on- and off- dwell times that are typically hundreds of milliseconds and seconds, respectively (Dickson et al., 1997; Peterman et al., 1999; Garcia-Parajo et al., 2000); the\u00a0latter of these modes of fluctuation appears to be quite different from what we observe. We have\u00a0also, however, found one prior report of fluctuation in an immobilized GFP mutant on comparable timescales to what we observe (Moerner et al., 1999), further emphasizing that this noise may be a general feature of GFP derivatives. Crucially, however, this noise has to our knowledge never been verified or acknowledged in a GEVI. This is important as this noise adversely impacts the use of GEVIs in two ways. First, while the fluctuations themselves are not visible in macroscopic recordings due to the large number of fluorophore signals being averaged together, they very likely sum together in some manner to raise the noise level of macroscopic recordings. Second, molecules in the dark state do not contribute useful 'signal' photons to help overcome 'noise' photons delivered by autofluorescence and other sources. Both of these effects likely serve to decrease the signal-to-noise ratio observed for a given set of excitation parameters as compared to a non-fluctuating GEVI, thus limiting the size of phenomena that can be resolved. Accordingly, the reduction or elimination of this noise would likely be a significant benefit to GEVIs, thus providing a new direction for future GEVI optimization. In addition, prior work has shown that pulsed excitation light can significantly increase the amount of signal derived from fluorophores that visit dark states (Mej\u00eda-Alvarez et al., 2003; Donnert et al., 2007). By showing that the ArcLight' fluorophore makes frequent fluctuations, this work motivates investigations into whether an appropriately-modulated excitation can improve the signal from this and other GEVIs.\n\nDespite its popularity as a GEVI, the mechanism by which ArcLight transduces the motion of the VSD into a change in the fluorescence of the attached eGFP remains largely unknown (Han et al., 2013; Han et al., 2014). However, the data presented here provides some insight into this process. The gating current kinetics of ArcLight look qualitatively similar to those from Ci-VSP R217Q (Figure 1A) with roughly equal kinetics and V1/2 (11 ms versus 8 ms, -7 mV versus -16 mV) (Figure 4C, Figure 1C) (Villalba-Galea et al., 2013). This suggests that the attachment of the fluorescent protein is producing at most a small change\u00a0in load on the voltage sensor movement, as compared to the natural load of the linker and the phosphatase in Ci-VSP R217Q. However, in ArcLight the fluorescence changes are substantially slower than the simultaneously measured gating currents (Figure 4C), and contain a measurable lag prior to onset (Figure 4E, Figure 4\u2014figure supplement 1). This initially suggested a three-state minimal model of fluorescence with two state transitions: the first carrying gating charge movement and the second corresponding to fluorescence change (Figure 7\u2014figure supplement 1). The lag would be accounted for by the time required for a significant population to reach the second state, while a smaller rate constant on the second transition than the first transition would cause the fluorescence response to be slower than gating charge movement.\n\nTo test this three-state model, we accelerated the gating charge movement of ArcLight with the I126F mutation. If the three-state model (Figure 7\u2014figure supplement 1) was accurate, we would expect the lag preceding fluorescence change to decrease roughly in proportion to the quickening in gating current kinetics while maintaining a similar \u03c4-V dependence. Instead, we observed that both the lag and the fluorescence kinetics become only weakly dependent on voltage. Furthermore, the value they take is approximately the same value that wild-type ArcLight reaches at extreme potentials when its voltage sensor is moving maximally fast. In particular, the lag preceding fluorescence does not speed up by nearly the same factor that the gating current speeds up. These observations are more consistent with a four-state minimal model (Figure 7). Here, as in the previous model, the first transition carries the gating charge and possesses voltage-dependent kinetics. The second transition accounts for the lag and possesses kinetics which do not strongly depend on voltage. Finally, the third transition is responsible for the change in fluorescence and also has nearly voltage-independent kinetics. Thus, in wild-type ArcLight, the first transition contributes significantly to the overall observed time constants, causing the observed lags and fluorescence kinetics to behave as if they were voltage-dependent. In ArcLightning, however, the first transition is so fast that it does not contribute significantly and the next two transitions essentially become rate-limiting. This results in the observed values, which do not depend strongly on voltage.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/10482/elife-10482-fig7-v1.jpg)\n\n**Figure 7.:** The first transition carries the gating charge movement while the third transition carries the fluorescence change and the second transition carries no observable changes. The kinetics of the first transition depend strongly on voltage, while the kinetics of the second two are only weak functions of voltage. Thus, if $k_{1}\u226bk_{2},k_{3}$, the second two transitions will become rate-limiting, and both the lag and fluorescence kinetics will appear nearly voltage-independent, as observed when gating is accelerated with the I126F mutation or in wild type ArcLight when gating becomes fast due to pulsing to extreme potentials. This model explains why wild-type ArcLight fluorescence kinetics and lags approach the same values as the I126F mutant at extreme potentials.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10482/elife-10482-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** A minimal three-state model of ArcLight kinetics.The first transition carries the gating charge movement while the second transition carries the fluorescence change. If $k_{1}>k_{2}$, the fluorescence would be slower than the gating currents, as observed. The lag would be caused by the delay in having a sufficient population reach state $S_{1}$ such that they can begin making the second transition and undergoing fluorescence change. This model was eventually unable to account for all observed phenomena, prompting the creation of a four-state model (see Figure 7).\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/10482/elife-10482-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** ArcLight fluorescence may be influenced by the relaxed state.(A) The Q-V curve obtained from a protocol of hyperpolarizing pulses from a +40 mV holding potential (red squares) is shifted to more negative potentials compared to a Q-V curve obtained from depolarizing pulses from a -120 mV holding potential (blue squares), as predicted if relaxation is occurring. The fluorescence response of ArcLight follows Q-V curves from holding potentials of both -120 mV (cyan circles) and +40 mV (pink circles). Data was normalized as described in the Methods. (B) The fluorescence response to variable depolarizing pulses following holding at -120 mV (cyan) is faster than the response to variable hyperpolarizing pulses following a 200 ms pulse to +40 mV (black). Applying a holding potential of +40 mV slows the subsequent fluorescence response upon hyperpolarization still further (pink), consistent with fluorescence responses slowing from an entrance to the relaxed state. On and off protocols are identical to those described for Figure 4, except for the +40 mV pulse protocol, which used a -80 mV holding potential for the remainder of the five second cycle period. N = 4 for holding at -120 mV, 5 for holding at +40 mV, and 6 for pulsing to +40 mV.\n\nTaken together, these data suggest that ArcLight fluorescence changes are slower than gating currents primarily due to an intrinsic delay in the fluorophore or linker, rather than the fluorescence accurately reporting on late VSD movements such as relaxation (Villalba-Galea et al., 2008). There are two pieces of evidence in favor of this intrinsic delay. First, ArcLight still shows fluorescence responses at extreme hyperpolarized potentials where the VSD is unlikely to enter the relaxed state. Second, speeding up VSD movement does not make the fluorescence response arbitrarily fast. Rather, there seem to be voltage-independent intrinsic delays in fluorescence response which become rate-limiting once VSD movement is fast enough (Figure 5). Thus, at least some component of the ArcLight response is likely due to VSD activation coupled with intrinsic fluorophore delay.\n\nWhile ArcLight fluorescence does not seem to be a direct readout of VSD relaxation, the relaxed state may nonetheless play a role in the very slow response of fluorescence to hyperpolarizing pulses following a prolonged depolarization (Figure 4D). This is suggested by two observations: first, ArcLight\u2019s fluorescence follows the leftward Q-V shift in gating current that is a hallmark of the relaxed state in Ci-VSP (Villalba-Galea et al., 2008) (Figure 7\u2014figure supplement 2). Second, ArcLight\u2019s deceleration of off kinetics increases as the duration of the depolarizing pulse increases (Figure 7\u2014figure supplement 2), as occurs in the relaxation process of voltage-gated potassium channels (Lacroix et al., 2011). Thus, exit of the VSD from the relaxed state may be linked to the extremely slow fluorescence kinetics. Finally, VSD relaxation explains the comparatively flat kinetics observed in ArcLight gating currents during positive holding potentials. Since these holding potentials dramatically left-shift the V1/2 of the ArcLight Q-V to values well outside experimentally-accessible values (Figure 7\u2014figure supplement 2), the corresponding observed \u03c4-V curve (Figure 4F) represents only a single tail of the true \u03c4-V, and thus appears to be relatively constant.\n\nArcLightning is unique when compared to many previously developed fluorescent probes. Its speed is not as rapid as ElectricPk (Barnett et al., 2012), but it has a much larger voltage-sensitive fluorescence response. As opposed to ArcLightning, both ArcLight and the more recent voltage indicator ASAP1 have significant slow components in their off response (Jin et al., 2012; St-Pierre et al., 2014). Accordingly, further study of the interactions between VSD movement and fluorescence response, including the contribution of the relaxed state, of voltage-sensitive phosphatase derived GEVIs should prove useful (Villalba-Galea et al., 2009). Improved understanding of this mechanism may lead to additional probes that accomplish what ArcLightning accomplishes: rapid kinetic responses in response to hyperpolarization that prevent the drifting baselines observed in response to repetitive pulses in similar probes (Piao et al., 2015) and a roughly linear voltage-sensitivity across the physiological voltage range that could allow for the visualization of both subthreshold and action potential activity. FRET-based voltage indicators, including VSFP, Mermaid, and Butterfly indicators have recently achieved many or all of these characteristics (Kn\u00f6pfel et al., 2015). Many of these probes have slightly larger fluorescence changes than ArcLightning and comparable kinetics, and the recently developed chimeric VSFP Butterflies appear particularly promising (Mishina et al., 2014). However, ArcLightning and other monochromatic GEVIs have the distinct advantage of freeing other spectral channels for use in measuring other parameters, such as cell morphology or changes in calcium concentration. Additionally, as ArcLighting requires the recording of only one fluorophore\u2019s emission, it is more compatible with simpler optical setups. In addition to the ability demonstrated here to accelerate the voltage-sensitive response of ArcLight, the previously reported I126F mutation (Lacroix and Bezanilla 2012) may also be applicable to other GEVIs such as ASAP1 (St-Pierre et al., 2014) and the Butterfly indicators (Akemann et al., 2015). Finally, the single-molecule and macroscopic fluorimetric techniques presented here will improve our future capabilities to mechanistically understand VSP-derived GEVIs and to engineer new and improved generations of these probes.\n\n## Materials and methods\n\n### Molecular biology\n\nArcLight for Xenopus laevis expression was created in the lab by fusing Venus to Ci-VSP in the SP64T plasmid vector at the appropriate location and mutating to the super ecliptic pHluorin A227D to generate ArcLight or ArcLight' (Jin et al., 2012). ArcLight' was identical to ArcLight but with two point mutations (L64F and T65S) which return the fluorophore to the wild-type GFP scaffold rather than the eGFP scaffold; thus, ArcLight' contains the ecliptic pHluroin A227D fluorophore rather than the super ecliptic pHluorin A227D fluorophore. The two constructs were shown to have nearly identical voltage-dependence (Jin et al., 2012), and in our hands ArcLight' appeared to perform better in single-molecule experiments. ArcLight' GFP domains and eGFP were expressed in E. Coli in the pQE-32 plasmid vector using previously-described methods (Negro et al., 1997). ArcLight for mammalian expression was a gift from Vincent Pieribone (Addgene plasmid #36856) (Jin et al., 2012). Mutations I126F and Q217R were generated in these constructs using site-directed mutagenesis by polymerase chain reaction and subsequently verified by sequencing. For oocyte expression, DNA was prepared using the NucleoSpin Plasmid kit (Macherey-Nagel, Bethlehem, PA) and linearized with NotI (New England Biolabs, Ipswich, MA). Linearized cDNA was transcribed to RNA with the mMESSAGE mMACHINE Sp6 kit (Life Technologies, Carlsbad, CA). Oocytes were injected with either 0.25 to 1 ng of RNA (single-molecule recordings) or 50 ng of RNA (macroscopic recordings) and incubated at 16\u00b0C in solution containing (in mM) 96 NaCl, 2 KCl, 1.8 CaCl2, 1 MgCl2, 10 HEPES, at pH 7.4 with 10 mg/L of gentamicin. Recordings were made 1-\u20134 days following injection. For mammalian cell expression, DNA was prepared using the NucleoBond Xtra Midi Plus kit (Macherey-Nagel). DNA was then transfected into HEK293 cells that had been previously plated on glass coverslips at low density, using Lipofectamine LTX reagent (Thermo Fisher Scientific, Waltham, MA). HEK cells were incubated at 37\u00b0C with 5% CO2 in DMEM medium with HEPES and no phenol red (Thermo Fisher Scientific) for three to four days prior to recording.\n\n### Single-molecule fluorescence\n\nGlass slides were prepared ahead of time by incubation in piranha solution (70% H2SO4 at 18M / 30% H2O2 at 30% w/w, both from Sigma-Aldrich, St. Louis, MO) followed by copious rinsing with water and storage under water in a 50 mL tube until use. When ready to use, a slide was removed and dried under a stream of nitrogen, and a chamber cut from cured Sylgard 184 (Dow Corning, Midland, MI) was placed on the dry slide. A solution of 200 mM polyethylenimine (Mw \u2248 750,000, Sigma-Aldrich) in SOS (96 mM NaCl, 2 mM KCl, 1 mM MgCl2, 1.8 mM CaCl2, 20 mM HEPES) was placed into the chamber and left for 30 minutes, followed by extensive rinsing with fresh SOS. This recording chamber was filled with SOS for recording. To allow TIRF microscopy, oocytes were placed in a high osmolality \u2018shrinking\u2019 solution prior to recording and the vitelline membranes were mechanically removed (Sonnleitner et al., 2002). Oocytes were then placed into the recording chamber and mounted on the microscope.\n\nArcLight fluorescence from single molecules was recorded by an Evolve 128 EMCCD camera (Photometrics, Tucson, Arizona) attached to a home-built TIRF setup based on an Olympus IX71 inverted microscope (Center Valley, Pennsylvania) with a 60X/1.45 NA microscope objective (Olympus). Excitation was provided by a 473 nm DPSS laser (Shanghai Dream Lasers Technology Co., Ltd., Shanghai, China). Typical excitation intensities were around 150 W/cm2. Fluorescence was observed through a T495lpxt dichroic and ET500lp emission filter (Chroma Technology Corp., Bellows Falls, VT). Voltage clamp was performed in a two-electrode configuration with a Warner Instruments OC-725A amplifier (Hamden, Connecticut). Both the electrophysiological and optical equipment were controlled using in-house software. For single-molecule recordings, the recording chambers were cooled to approximately 14\u00b0C by cooling the microscope objective lens assembly with recirculating chilled water.\n\nThe bacterially-expressed ArcLight' GFP domain and eGFP were incubated on PEGylated glass slides possessing a low density of Cu-NTA chelates (Cu_01, MicroSurfaces, Inc., Englewood, NJ) as described previously (Holtz et al., 2007). Since the proteins contained poly-histidine tags, they efficiently bound the copper chelate while a subsequent rinse with fresh buffer removed excess proteins. As this point, the slides were imaged using TIRFM with the same optical configuration as described above.\n\n### Macroscopic recordings\n\nSimultaneous recordings of ArcLight gating currents and fluorescence responses were performed using the cut-open oocyte voltage-clamp technique (Stefani and Bezanilla, 1998) in combination with a photodiode to measure temporal changes in fluorescence emission (Cha and Bezanilla, 1998). Gpatch, an in-house program, controlled an SB6711 digital signal processor-based board (Innovative Integration, Simi Valley, CA) with an A4D4 conversion board (Innovative Integration, Simi Valley, CA). Oocytes were held under voltage-clamp with a Dagan CA-\u20131B amplifier (Minneapolis, MN) and filtered at 2\u20135 kHz depending on the sampling rate. ArcLight emission fluorescence was collected through an Olympus LUMPlan FL N 40X/0.8 NA water-immersion objective by a PIN-020A photodiode (UDT Technologies, Torrance, CA), amplified by a patch clamp amplifier L/M-EPC-7 by LIST Medical Electronic (Darmstadt, West Germany) with a filter of 10 kHz, and then integrated over each sampling period using a home-built integrator circuit. ArcLight was excited via a ThorLabs LED controller triggering a 470 nm LED (ThorLabs, Newton, New Jersey) that was passed through a filter cube housing a 480/40 excitation filter, a 505 long-pass dichroic, and a 535/50 emission filter (Chroma, Bellows Falls, VT). All recordings were performed at around 19\u00b0C, with an external solution containing (in mM) 120 N-methyl-D-glucamine/methanesulfonic acid (NMG/MES), 10 HEPES, and 2 Ca(OH)2 and an internal solution containing (in mM) 120 NMG-MES, 10 HEPES, and 2 EGTA. Both solutions were set to pH 7.5. Current microelectrodes pulled on a Flaming/Brown micropipette puller (Sutter Instruments, Novato, CA, model P-87) were filled with 3 M KCl and had a resistance of ~0.2\u20130.9 M.\n\n### GEVI characterization\n\nHEK cells were patch-clamped using an Axon Instruments Axopatch 200A amplifier (Molecular Devices, Sunnyvale, CA). Signals were filtered (Frequency Devices, Ottawa, Illinois, model 950L8L) and digitized with an SBC-6711-A4D4 data acquisition board (Innovative Integration). Patch pipettes with resistances of roughly 5 M\u03a9 were pulled on a CO2 laser micropipette puller (Sutter Instruments, model P-2000). The bath temperature was raised and maintained using a home-built system with an Omega CNPt series temperature controller (Stamford, CT).\n\n### Data analysis\n\nData analysis was performed in MATLAB (The MathWorks, Inc., Natick, MA), as well as in-house software. Weighted time constants (\u03c4w) of gating current were taken using double exponential fits to the decay phase of the gating current. Kinetics of fluorescence traces were first taken from double exponential fits to the trace; when fit with two exponentials, fluorescence traces obtained from off pulses in oocytes only had one meaningful time constant, and thus were refit with one exponential. For clarity of comparison, all kinetics were reported as \u03c41, which denotes the faster and larger amplitude component of the fluorescence traces. Q-V curves were calculated by normalizing the integral of the gating current following a sloped baseline subtraction to remove leak current. When holding at +40 mV the Q-V and F-V curves did not approach saturation in the hyperpolarized direction. Therefore, we first normalized the Q-V by the total gating charge moved in the same oocyte during a depolarizing pulse from a holding potential of -120 mV as these traces saturate on both ends and total gating charge is conserved (Villalba-Galea et al., 2008). The normalization factor found in the Q-V was used to normalize the F-V when holding at +40 mV.\n",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "696f5af2-1887-4bf4-bf5b-5beb708ac85c",
+      "submission_id": "309f36bd-1ccb-4d63-9526-073563b6b907",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard Aldrich, The University of Texas at Austin , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.10482.018](https://doi.org/10.7554/eLife.10482.018)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"Single-molecule fluorimetry and gating currents inspire an improved optical voltage indicator\" for peer review at eLife. Your submission has been favorably evaluated by Gary Westbrook (Senior Editor) and three reviewers, one of whom, Richard Aldrich, is a member of our Board of Reviewing Editors. The other two reviewers, Brian Salzberg and Kenton Swartz, also agreed to share their identities.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nThis is an excellent manuscript that studies the properties of the genetically encoded voltage indicator (GEVI) ArcLight, together with those of ArcLightning, a novel GEVI introduced by the authors in this paper. The authors use the ArcLight GEVI to track voltage-sensing domains (VSDs) at the single molecule level, a not inconsiderable achievement. They also characterize, very carefully, the kinetics of ArcLight's fluorescence changes, and identify a previously unrecognized (or, at least, unreported) delay. As a result of their studies, they develop ArcLightning, a GEVI with superior kinetics, and they posit a four-state minimal model for fluorescence changes of GEVIs. This manuscript provides both a novel, and potentially extremely useful new GEVI, as well as important insights into the behavior of genetically expresses voltage-indicators. It also shows, as the authors note, that mutations found during biophysical studies of voltage sensor behavior can inform the rational design of new and improved GEVIs. Also included is an exciting, however preliminary, description of single-molecule fluorescence signals form single voltage sensors.\n\nWe are enthusiastic about the work on the properties and modification of ArcLight, and believe that necessary revisions should be easily accomplished. However, we feel that the single-molecule work, while potentially quite exciting, is much too preliminary for inclusion, and should be removed. We would be quite enthusiastic about receiving an additional paper describing a thorough and rigorous characterization of the single voltage sensor signals.\n\nEssential revisions:\n\n1) Remove the single-molecule studies from the paper.\n\n2) The authors demonstrate a close correlation between Q and F changes for the wt S4 construct, as well as the R217Q and R217E constructs, which is great to see, but then don't carefully analyze (or at least present) the multiexponential kinetics of either measure and look to see which match and which don't. It would be nice to show integrated Q traces, analyze those, and compare them with what is seen for F. With the two other mutants, it would be interesting to see how these change. The lag in F is also interesting, and it would be nice to show measure V traces as well as integrated Q traces so the reader can see how both V and Q change relative to F.\n\n3) Please provide a comparison of the advantages and disadvantages of ArcLightning with other versions of optical voltage sensors (e.g. Mermaid, ElectricPk, VSFP).\n",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0486f150-4403-4019-a2fe-b3b258ddb427",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C1",
+      "claim": "ArcLight is comprised of the VSD from the Ciona intestinalis voltage-sensor containing phosphatase (Ci-VSP) fused to a variant of GFP.",
+      "claim_type": "EXPLICIT",
+      "source": "ArcLight is comprised of the VSD from the Ciona intestinalis voltage-sensor containing phosphatase (Ci-VSP) (Murata et al., 2005) fused to a variant of GFP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text with a citation to Murata et al., 2005 for Ci-VSP.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "c9a7bd90-d105-401c-9095-077f427ee4e3",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C2",
+      "claim": "The fluorescence of ArcLight changes by more than 30% in response to a 100 mV change in membrane potential.",
+      "claim_type": "EXPLICIT",
+      "source": "The fluorescence of Arclight changes by more than 30% in response to a 100 mV change in membrane potential (Jin et al., 2012), an extremely large voltage-sensitive change compared to most other fluorescent proteins with S4-voltage sensors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated with a citation to Jin et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "b9b245ac-c848-446a-af1b-8d18c5a5db8f",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C3",
+      "claim": "ArcLight fluorescence changes are caused by voltage sensor conformational changes rather than by direct response to membrane potential or voltage-driven ion concentration changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, the fluorescence response mirrored these changes, indicating that ArcLight fluorescence signals are caused by voltage sensor movement rather than by direct influence of membrane potential or by voltage-driven ion concentration changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from experiments showing that mutations shifting voltage sensor movement correspondingly shift fluorescence response.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "ddce8c94-b714-4b62-bb1a-b97e061cc035",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C4",
+      "claim": "Mutating the R217 residue in ArcLight shifts the voltage-dependence of both the voltage sensor and the fluorescence response.",
+      "claim_type": "EXPLICIT",
+      "source": "In ArcLight, this residue is mutated to a glutamine (R217Q), which places the midpoint of voltage sensor response at approximately -20 mV. Returning this residue to arginine (R217R) shifts the midpoint of gating charge movement to positive potentials while replacing the glutamine with glutamate (R217E) shifts the response to even more negative potentials (Figure 1C). Crucially, the fluorescence response mirrored these changes",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally with data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "4017288a-8afe-4879-b5a4-abf6ddc99b7a",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C5",
+      "claim": "Single ArcLight' molecules display millisecond-scale fluorescence fluctuations that are not simply shot noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the single-molecules appeared to be operating normally, they consistently displayed an interesting phenomenon: a large degree of noise that did not appear to be shot noise. Whereas shot noise has no correlation from data point to data point, the single-molecule traces fluctuated between relatively distinct fluorescence levels, sometimes remaining at a single level for many milliseconds (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed directly in single-molecule experiments and shown in Figure 2B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "b0ee4613-595c-47f2-890c-dc582b0fc15b",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C6",
+      "claim": "The millisecond-scale fluorescence fluctuations originate in the fluorophore itself, not the voltage sensor.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, we bacterially expressed isolated ArcLight' GFP domains without attached voltage sensors and observed them as single molecules. To our surprise, these isolated GFP domains displayed roughly similar fluctuations to those observed in the full ArcLight molecules (Figure 3A), indicating that these fluctuations originate in the fluorophore itself.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by observing similar fluctuations in isolated GFP domains without voltage sensors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "73af85a9-ed70-40a5-a451-b876a73b92ef",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C7",
+      "claim": "Wild-type eGFP displays significant fluctuation noise similar to ArcLight' GFP domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we performed a similar experiment on wild-type eGFP and also observed significant fluctuation noise (Figure 3D). This result, consistent with the GFP photophysics literature, strongly suggests that this is not a pathology unique to the ArcLight' fluorophore, but rather is one that likely affects many current GEVIs",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed experimentally in wild-type eGFP and shown in Figure 3D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "b64ebf5d-ec4e-4ab2-b4f8-199a21bb0c51",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C8",
+      "claim": "The fluorescence from a single isolated GFP domain of ArcLight' displays significant autocorrelation over tens of milliseconds.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the ArcLight' fluorescence showed significant correlation over tens of milliseconds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through autocorrelation analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "0f156091-efe3-4555-af0a-846b52831e46",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C9",
+      "claim": "Background fluorescence displays no significant autocorrelation, suggesting the noise is primarily due to shot noise or other white noise processes.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the background fluorescence displayed no significant autocorrelation, suggesting that the noise in this trace is primarily due to shot noise or other white noise processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through autocorrelation analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "e3a903d5-57e5-45f0-ab23-00410056cbef",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C10",
+      "claim": "ArcLight fluorescence kinetics are considerably slower than voltage sensor gating kinetics during both 'on' and 'off' responses.",
+      "claim_type": "EXPLICIT",
+      "source": "In both 'on' responses where the membrane was held at a negative potential and then pulsed to depolarized potentials (Figure 4A) and 'off' responses where the membrane was held at a positive potential and then pulsed to hyperpolarized potential (Figure 4B), we observed that ArcLight fluorescence kinetics are considerably slower than those of voltage sensor movement (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing gating current and fluorescence kinetics shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "d53c99b8-e79f-4ff6-b7de-c19af39fa7b2",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C11",
+      "claim": "The fastest component of ArcLight fluorescence during the 'on' response is approximately twice as slow as the gating current kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "The fastest component of fluorescence during the 'on' response was approximately twice as slow as the gating current kinetics",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined from kinetic analysis of simultaneously recorded gating currents and fluorescence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "8b2bd4aa-c5e8-49f2-a8b4-4c47f40bd31e",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C12",
+      "claim": "ArcLight 'off' fluorescence kinetics are more than ten times slower than voltage sensor gating.",
+      "claim_type": "EXPLICIT",
+      "source": "and the 'off' fluorescence kinetics are more than ten times slower than voltage sensor gating.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined from kinetic analysis of simultaneously recorded gating currents and fluorescence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "6b0ad16f-eb7c-4730-a9d4-7de3638f9066",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C13",
+      "claim": "There is a distinct delay between the induction of a voltage change and the initiation of the resulting fluorescence change from ArcLight.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, there is a distinct delay between the induction of a voltage change and the initiation of the resulting fluorescence change from ArcLight (Figure 4\u2014figure supplement 2, Figure 4E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the experimental data shown in Figure 4\u2014figure supplement 2 and Figure 4E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "a8639efb-43b6-4842-9cd1-58a736706ee6",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C14",
+      "claim": "The delay before ArcLight fluorescence change shows a marked voltage-dependence and is present in both on and off fluorescence transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "This delay shows a marked voltage-dependence and is present in both on and off fluorescence transitions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the experimental data shown in Figure 4E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "d7f59e39-32a8-46fd-93d8-e53e07eee501",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C15",
+      "claim": "The delays of the ArcLight fluorescence response align quite well with the gating current kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the delays of the fluorescence response align quite well with the gating current kinetics (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by comparing the two measurements in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "fbc543df-57c1-4bbe-a23d-eafb7657acbf",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C16",
+      "claim": "The I126F mutation in Ci-VSP accelerates gating current activation kinetics roughly forty-fold and deactivation currents roughly eighty-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "By mutating the residue I126 in the S1 segment of the voltage-sensing domain of Ci-VSP to a phenylalanine, gating current activation kinetics were previously shown to be accelerated roughly forty-fold while deactivation currents were accelerated roughly eighty-fold (Lacroix and Bezanilla, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior work by Lacroix and Bezanilla, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "e5ab2104-1336-410d-a9e0-6aa271e27ef3",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C17",
+      "claim": "ArcLight I126F Q217R displays gating current kinetics about 6 to 12 times faster than wild-type ArcLight.",
+      "claim_type": "EXPLICIT",
+      "source": "In practice, we observe a roughly six to twelve-fold increase in speed (Figure 5B,C Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimentally and shown in Figure 5B,C and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "7e5718ba-625c-432d-a5dc-230c3150c9f2",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C18",
+      "claim": "While wild-type ArcLight fluorescence kinetics show a pronounced dependence on voltage, I126F kinetics are quite flat over most of the physiological voltage range.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, while wild-type ArcLight fluorescence kinetics show a pronounced dependence on voltage, I126F kinetics are quite flat over most of the physiological voltage range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the experimental data shown in Figure 5D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "a0492b67-d111-46d0-aa1e-1999562588b6",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C19",
+      "claim": "As wild-type ArcLight kinetics speed up towards extreme membrane potentials, they typically approach the near-constant value of I126F.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, as the wild-type kinetics speed up towards extreme membrane potentials, they typically seem to approach the near-constant value of I126F.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the experimental data shown in Figure 5D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "3056cdb9-0f58-4e80-b721-b71e0b7a7d4d",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C20",
+      "claim": "ArcLightning (I126F Q217R mutant) shows substantially faster fluorescence signals than ArcLight when expressed in HEK cells at 19\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "When expressed in HEK cells and measured at 19\u00b0C, ArcLightning showed signals which were substantially faster than those of ArcLight, particularly when returning to hyperpolarized potentials (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally in HEK cells and shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "a510d939-c11b-48d6-9d10-7cb1acafb88d",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C21",
+      "claim": "ArcLightning is able to return to baseline fluorescence in between consecutive voltage steps during repetitive stimuli, providing an accurate readout of the size of each step.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, ArcLightning is able to return to baseline fluorescence in between consecutive voltage steps, providing an accurate readout of the size of each step.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally with repetitive pulse protocols shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "fb78c9ad-7a14-415c-a6b7-f00287559d62",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C22",
+      "claim": "ArcLightning retains its improved kinetics at 35\u00b0C and can recover to baseline in between pulses at 67 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "ArcLightning also retains its improved kinetics at 35\u00b0C. In response to trains of short pulses with durations emulating action potentials at 67 Hz, ArcLightning is still able to recover to baseline in between pulses (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally at 35\u00b0C and shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "f80c3e5a-f87f-4d48-a3e7-45e734570882",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C23",
+      "claim": "ArcLight does not recover in time between 67 Hz pulses and shows an apparent increase in magnitude of each successive voltage pulse, despite them all being of equivalent magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "ArcLight, by contrast, does not recover in time and thus shows an apparent increase in magnitude of each successive voltage pulse, despite them all being of equivalent magnitude.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated experimentally and shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "eddd3ce9-bc6e-4f1b-a49d-de7cfc457e4a",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C24",
+      "claim": "Voltage-sensing domains underlie the movement of voltage-gated ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Voltage-sensing domains (VSDs) underlie the movement of voltage-gated ion channels, as well as the voltage-sensitive fluorescent responses observed from a common class of genetically encoded voltage indicators (GEVIs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "fe65c2d0-9e82-4c9d-aa06-8262ae43c329",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C25",
+      "claim": "Voltage-sensing domains underlie the voltage-sensitive fluorescent responses observed from a common class of genetically encoded voltage indicators (GEVIs).",
+      "claim_type": "EXPLICIT",
+      "source": "Voltage-sensing domains (VSDs) underlie the movement of voltage-gated ion channels, as well as the voltage-sensitive fluorescent responses observed from a common class of genetically encoded voltage indicators (GEVIs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "227b3fe1-af42-4331-964a-199c1fc84841",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C26",
+      "claim": "The fluorescence of many membrane-bound organic dyes changes as a function of membrane potential.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been found that the fluorescence of many membrane-bound organic dyes changes as a function of membrane potential (Tasaki et al., 1968; Cohen et al., 1974; Loew et al., 1979; Davila et al., 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from multiple prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "d621157f-ee36-4253-8ce8-166535f50fb7",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C27",
+      "claim": "Potentiometric dyes stain cell membranes indiscriminately, leading to the labeling of glia and other tissue as well as neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "While this solves many problems associated with the use of electrodes, these potentiometric dyes stain cell membranes indiscriminately, leading to the labeling of glia and other tissue as well as neurons (Jin et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Jin et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "99f19aea-5491-4532-a5cd-f64a84fbfd9e",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C28",
+      "claim": "GEVIs can be targeted to a chosen cell type through expression under the control of a desired genetic promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "These fluorescent proteins are expressed under the control of a desired genetic promoter and thus can be targeted to a chosen cell type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known advantage of GEVIs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "f4aae8d9-ad4c-46ee-81f9-3301072ee438",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C29",
+      "claim": "Most GEVIs consist of a protein voltage-sensing domain (VSD) from a voltage-sensitive ion channel or phosphatase fused to one or more green fluorescent protein (GFP) derivatives.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, most of these consist of a protein voltage-sensing domain (VSD) from a voltage-sensitive ion channel or phosphatase fused to one or more green fluorescent protein (GFP) derivatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a description of current GEVI designs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "a2aaae4b-5514-4384-a65d-db5429f59909",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C30",
+      "claim": "ArcLight has demonstrated utility in intact brain tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose this molecule because it is one of the most promising GEVIs developed thus far with demonstrated utility in intact brain tissue (Cao et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Cao et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "57ef045c-497a-4818-9ebf-ac357db91070",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C31",
+      "claim": "All voltage-sensing domains contain a bundle of four transmembrane helices, with the fourth segment (S4) containing positively charged amino acids that behave as the primary sensors of voltage changes.",
+      "claim_type": "EXPLICIT",
+      "source": "This voltage-sensing domain is highly similar to the VSD of voltage-gated ion channels; all contain a bundle of four transmembrane helices, with the fourth segment (S4) containing positively charged amino acids that behave as the primary sensors of voltage changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about voltage-sensing domains.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "9aaa1104-0549-4aa7-a829-6f7f22d2acf1",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C32",
+      "claim": "Coating glass coverslips with a polymer cushion dramatically improves voltage clamp speed for oocytes in TIRFM experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "To remedy this situation, we coated glass coverslips with a polymer cushion. This cushion created a larger, conductive aqueous space between the oocyte and the glass that was thin enough to allow successful TIRFM. This was found to dramatically improve voltage clamp speed (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated experimentally and shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "9293b0cc-572a-4090-bbac-ea57473f9207",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C33",
+      "claim": "ArcLight' is a variant of ArcLight with two mutations in the GFP domain (L64F and T65S) that return the fluorophore to the wild-type GFP scaffold.",
+      "claim_type": "EXPLICIT",
+      "source": "ArcLight' was identical to ArcLight but with two point mutations (L64F and T65S) which return the fluorophore to the wild-type GFP scaffold rather than the eGFP scaffold",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "5e1cfba0-5f16-44f3-8161-a2dee0286e29",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C34",
+      "claim": "Summed traces from many single ArcLight' molecules recapitulate the macroscopic response of ArcLight' to changes in membrane potential.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that these single-molecules were behaving normally, traces from many different fluorescent spots were summed together (Figure 2C); these summed traces recapitulated the macroscopic response of ArcLight' to changes in membrane potential indicating that their function was uncompromised.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by summing single-molecule traces shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "3cda0dbf-6147-4248-bad2-5fc1bd788c95",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C35",
+      "claim": "A four-state minimal model better explains ArcLight kinetics than a three-state model.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this three-state model, we accelerated the gating charge movement of ArcLight with the I126F mutation. If the three-state model (Figure 7\u2014figure supplement 1) was accurate, we would expect the lag preceding fluorescence change to decrease roughly in proportion to the quickening in gating current kinetics while maintaining a similar \u03c4-V dependence. Instead, we observed that both the lag and the fluorescence kinetics become only weakly dependent on voltage. Furthermore, the value they take is approximately the same value that wild-type ArcLight reaches at extreme potentials when its voltage sensor is moving maximally fast. In particular, the lag preceding fluorescence does not speed up by nearly the same factor that the gating current speeds up. These observations are more consistent with a four-state minimal model (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from experimental observations that contradict predictions of the three-state model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "160ff7e8-c6b0-4128-9ab9-d55892b94de6",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C36",
+      "claim": "In the four-state model of ArcLight, the first transition carries the gating charge and possesses voltage-dependent kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, as in the previous model, the first transition carries the gating charge and possesses voltage-dependent kinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the proposed four-state model based on experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "74f292a5-ea8d-4eba-8cd9-986a59beb14f",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C37",
+      "claim": "In the four-state model of ArcLight, the second transition accounts for the lag and possesses kinetics which do not strongly depend on voltage.",
+      "claim_type": "EXPLICIT",
+      "source": "The second transition accounts for the lag and possesses kinetics which do not strongly depend on voltage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the proposed four-state model based on experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "0757bd81-e45f-48fc-96cc-42377f56959b",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C38",
+      "claim": "In the four-state model of ArcLight, the third transition is responsible for the change in fluorescence and has nearly voltage-independent kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the third transition is responsible for the change in fluorescence and also has nearly voltage-independent kinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the proposed four-state model based on experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "9771157c-a7fb-43db-b9b8-8e7fa163b1b3",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C39",
+      "claim": "ArcLight fluorescence changes are slower than gating currents primarily due to an intrinsic delay in the fluorophore or linker, rather than the fluorescence accurately reporting on late VSD movements such as relaxation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data suggest that ArcLight fluorescence changes are slower than gating currents primarily due to an intrinsic delay in the fluorophore or linker, rather than the fluorescence accurately reporting on late VSD movements such as relaxation (Villalba-Galea et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from multiple experimental observations including responses at extreme potentials and effects of speeding up VSD movement.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "371576a1-b33f-4957-847b-b2a94eefabc9",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C40",
+      "claim": "ArcLight still shows fluorescence responses at extreme hyperpolarized potentials where the VSD is unlikely to enter the relaxed state.",
+      "claim_type": "EXPLICIT",
+      "source": "First, ArcLight still shows fluorescence responses at extreme hyperpolarized potentials where the VSD is unlikely to enter the relaxed state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the experimental data and used to support the conclusion about intrinsic delay.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "1a4d77bc-c1b8-4b9d-af41-946f740f889a",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C41",
+      "claim": "Speeding up VSD movement does not make the ArcLight fluorescence response arbitrarily fast, suggesting voltage-independent intrinsic delays become rate-limiting.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, speeding up VSD movement does not make the fluorescence response arbitrarily fast. Rather, there seem to be voltage-independent intrinsic delays in fluorescence response which become rate-limiting once VSD movement is fast enough (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in experiments with the I126F mutation shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "a74e693b-84af-4407-8f32-9c2ea566a85d",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C42",
+      "claim": "ArcLight's fluorescence follows the leftward Q-V shift in gating current that is a hallmark of the relaxed state in Ci-VSP.",
+      "claim_type": "EXPLICIT",
+      "source": "This is suggested by two observations: first, ArcLight's fluorescence follows the leftward Q-V shift in gating current that is a hallmark of the relaxed state in Ci-VSP (Villalba-Galea et al., 2008) (Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed experimentally and shown in Figure 7\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "cc865ed9-a514-479a-b36b-59232b22abce",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C43",
+      "claim": "ArcLight's deceleration of off kinetics increases as the duration of the depolarizing pulse increases.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, ArcLight's deceleration of off kinetics increases as the duration of the depolarizing pulse increases (Figure 7\u2014figure supplement 2), as occurs in the relaxation process of voltage-gated potassium channels (Lacroix et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed experimentally and shown in Figure 7\u2014figure supplement 2, with comparison to prior work on potassium channels.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "02f67c9a-9a0e-4353-9f68-13573f2c70c5",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C44",
+      "claim": "ArcLightning has a roughly linear voltage-sensitivity across the physiological voltage range that could allow for the visualization of both subthreshold and action potential activity.",
+      "claim_type": "EXPLICIT",
+      "source": "and a roughly linear voltage-sensitivity across the physiological voltage range that could allow for the visualization of both subthreshold and action potential activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of ArcLightning based on experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "0794b9d6-9ff2-4edd-aa62-bf17ee82f75b",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C45",
+      "claim": "The I126F mutation may be applicable to other GEVIs such as ASAP1 and the Butterfly indicators.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the ability demonstrated here to accelerate the voltage-sensitive response of ArcLight, the previously reported I126F mutation (Lacroix and Bezanilla 2012) may also be applicable to other GEVIs such as ASAP1 (St-Pierre et al., 2014) and the Butterfly indicators (Akemann et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the success with ArcLight.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "8897dfa1-c3a4-4815-a0e1-abfe0d266736",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C46",
+      "claim": "ArcLight demonstrates distinct advantages over many other genetically-encoded voltage indicators, including large signal size relative to background.",
+      "claim_type": "EXPLICIT",
+      "source": "ArcLight demonstrates distinct advantages over many other genetically-encoded voltage indicators, including large signal size relative to background, relatively low spectral bandwidth requirements compared to many FRET-based sensors (Mishina et al., 2014; Akemann et al., 2012; 2013; Tsutsui et al., 2013), high quantum yield compared to archaerhodopsin based sensors (Flytzanis et al., 2014; Gong et al., 2013; Hochbaum et al., 2014; Kralj et al., 2012), and a demonstrated success in multiple biological preparations (Jin et al., 2010; 2012; Cao et al., 2013; Leyton-Mange et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to multiple prior studies comparing different GEVI types.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "2cc4edb2-85f8-4f78-b94c-682b26d52927",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C47",
+      "claim": "ArcLight's ability to respond to rapid changes in membrane potential is limited by its slow kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ArcLight's ability to respond to rapid changes in membrane potential is limited by its slow kinetics (Jin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Jin et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "4b93b08c-d1fb-4b78-b3c5-aa33d13ffc61",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C48",
+      "claim": "Previous improvements in the kinetics of ArcLight have relied on switching residues from the Ciona intestinalis voltage-sensing domain to residues from analogous voltage-sensitive phosphatases found in other species.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, improvements in the kinetics of ArcLight have relied on switching residues from the Ciona intestinalis voltage-sensing domain (Ci-VSD) to residues from analogous voltage-sensitive phosphatases found in other species, especially Gallus gallus and Danio rerio (Piao et al., 2015; Han et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior work by Piao et al., 2015 and Han et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "5790d5f2-edc7-4d0a-a4f5-682f35276de9",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C49",
+      "claim": "The gating current kinetics of ArcLight are roughly equal to those from Ci-VSP R217Q.",
+      "claim_type": "EXPLICIT",
+      "source": "The gating current kinetics of ArcLight look qualitatively similar to those from Ci-VSP R217Q (Figure 1A) with roughly equal kinetics and V1/2 (11 ms versus 8 ms, -7 mV versus -16 mV) (Figure 4C, Figure 1C) (Villalba-Galea et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is determined by comparing experimental data to prior work by Villalba-Galea et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "7d021993-1fd6-405d-8b63-e04a8e64d6d9",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C50",
+      "claim": "The attachment of the fluorescent protein produces at most a small change in load on the voltage sensor movement in ArcLight compared to the natural load in Ci-VSP R217Q.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the attachment of the fluorescent protein is producing at most a small change in load on the voltage sensor movement, as compared to the natural load of the linker and the phosphatase in Ci-VSP R217Q.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similarity in gating current kinetics between ArcLight and Ci-VSP R217Q.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "ec87f35d-46bb-4883-9b8f-3dd73b7671b8",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C51",
+      "claim": "Ci-VSP R217R gating currents are about four-fold slower than R217Q gating currents.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Ci-VSP R217R gating currents are about four-fold slower than R217Q gating currents (Villalba-Galea et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Villalba-Galea et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "5ee1f32c-ecfc-4290-9978-f28b062d3a86",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C52",
+      "claim": "The fast component of ArcLightning fluorescence is faster than the fast component of ArcLight fluorescence at physiological membrane potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "The fast component of ArcLightning fluorescence is faster than the fast component of ArcLight fluorescence at physiological membrane potentials, and the kinetics of the two constructs converge to similar values at extreme potentials where the ArcLight gating is faster.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in experiments in mammalian cells shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "519b502b-97d1-4ae4-bbaa-a8d7718e6172",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C53",
+      "claim": "The fractional amplitude of the fast component is larger in ArcLightning than in ArcLight over much of the physiological voltage range.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, over much of the physiological voltage range, the fractional amplitude of the fast component is larger in ArcLightning than in ArcLight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in experiments in mammalian cells shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "b01322cf-c190-4d73-b3af-78c0eed18ded",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C54",
+      "claim": "ArcLightning and other monochromatic GEVIs have the distinct advantage of freeing other spectral channels for use in measuring other parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ArcLightning and other monochromatic GEVIs have the distinct advantage of freeing other spectral channels for use in measuring other parameters, such as cell morphology or changes in calcium concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage based on the spectral properties of monochromatic indicators.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "d9948e9c-c5c9-4cfd-9569-d5c0d079eb79",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C55",
+      "claim": "ArcLightning is more compatible with simpler optical setups because it requires the recording of only one fluorophore's emission.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, as ArcLighting requires the recording of only one fluorophore's emission, it is more compatible with simpler optical setups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage based on the optical requirements.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "c4da746c-a72b-470c-b6dd-b13a135e92de",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C56",
+      "claim": "There have been prior reports of fluorescence fluctuations in various GFP derivatives on millisecond and microsecond timescales detected with fluorescence correlation spectroscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "There have been prior reports of fluorescence fluctuations in various GFP derivatives which generally fall into two categories: millisecond and microsecond-scale fluctuations detected with fluorescence correlation spectroscopy (Hess et al., 2004; Haupts et al., 1998; Bosisio et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "eaf68975-02e9-424c-bb45-8363a06bfdd0",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C57",
+      "claim": "Prior work has reported much slower blinking in gel-immobilized GFP fluorophores with on- and off-dwell times that are typically hundreds of milliseconds and seconds, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "and much slower blinking detected in imaging studies of gel-immobilized fluorophores that displayed on- and off- dwell times that are typically hundreds of milliseconds and seconds, respectively (Dickson et al., 1997; Peterman et al., 1999; Garcia-Parajo et al., 2000)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "18e747b8-f8f5-4995-89dc-94c88d2d7758",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C58",
+      "claim": "One prior report documented fluctuation in an immobilized GFP mutant on comparable timescales to what is observed in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "We have also, however, found one prior report of fluctuation in an immobilized GFP mutant on comparable timescales to what we observe (Moerner et al., 1999)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Moerner et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "0332bb30-196f-455e-b7d8-041fde20aef3",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C59",
+      "claim": "The fluctuation noise in GFP derivatives adversely impacts the use of GEVIs by raising the noise level of macroscopic recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "First, while the fluctuations themselves are not visible in macroscopic recordings due to the large number of fluorophore signals being averaged together, they very likely sum together in some manner to raise the noise level of macroscopic recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of fluctuations at the single-molecule level.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "edd9a788-2bf1-460d-b005-a59d52624375",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C60",
+      "claim": "Molecules in the dark state do not contribute useful 'signal' photons to help overcome 'noise' photons delivered by autofluorescence and other sources.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, molecules in the dark state do not contribute useful 'signal' photons to help overcome 'noise' photons delivered by autofluorescence and other sources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consequence of the fluctuation behavior.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "ac366ad9-d99d-4dc8-a5e7-95ff50bffeec",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C61",
+      "claim": "Prior work has shown that pulsed excitation light can significantly increase the amount of signal derived from fluorophores that visit dark states.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, prior work has shown that pulsed excitation light can significantly increase the amount of signal derived from fluorophores that visit dark states (Mej\u00eda-Alvarez et al., 2003; Donnert et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "bbef5267-572c-4b4e-bcf8-2c30b939141e",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "claim_id": "C62",
+      "claim": "The mechanism by which ArcLight transduces the motion of the VSD into a change in the fluorescence of the attached eGFP remains largely unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite its popularity as a GEVI, the mechanism by which ArcLight transduces the motion of the VSD into a change in the fluorescence of the attached eGFP remains largely unknown (Han et al., 2013; Han et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b129a9bb-158b-4081-9a07-44ed23c5f1f6",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ArcLight fluorescence changes are caused by voltage sensor conformational changes, as demonstrated by mutations at residue R217 that shift both voltage sensor gating and fluorescence response in parallel.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C4 provide strong experimental evidence that fluorescence tracks voltage sensor movement. The R217 mutations (R217R, R217Q, R217E) shift both gating charge Q-V curves and fluorescence F-V curves correspondingly (Figure 1C), ruling out alternative mechanisms like direct membrane potential effects or ion concentration changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "2263129e-97d8-4988-9d09-91424e901f8b",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Single ArcLight' molecules display millisecond-scale fluorescence fluctuations that originate in the GFP fluorophore itself rather than voltage sensor dynamics, and this phenomenon is also present in wild-type eGFP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C9 and C34 provide converging evidence through single-molecule TIRFM experiments. The fluctuations show autocorrelation over tens of milliseconds (C8), are absent in background noise (C9), persist in isolated GFP domains without voltage sensors (C6), and occur in wild-type eGFP (C7). Summed single-molecule traces recapitulate macroscopic behavior (C34), confirming molecules are functional.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "41806459-3e82-44b5-91cb-c13b63937fdf",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ArcLight fluorescence kinetics are substantially slower than voltage sensor gating kinetics, with the fastest 'on' component approximately twice as slow and 'off' kinetics more than ten times slower, and there is a distinct voltage-dependent delay before fluorescence onset that aligns with gating current kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C15 are well-supported by simultaneous gating current and fluorescence measurements shown in Figure 4. The kinetic differences are quantified (C11, C12), the delay is documented (C13, C14), and the alignment between delay and gating kinetics is demonstrated (C15, Figure 4E). These observations are internally consistent and supported by multiple voltage protocols.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "28842b02-007f-4a44-9ea2-1ee7d939cae8",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The I126F mutation accelerates ArcLight gating currents 6-12 fold, but fluorescence kinetics become voltage-independent and approach a limiting speed, supporting a four-state kinetic model where voltage-dependent gating is followed by two voltage-independent transitions accounting for the lag and fluorescence change.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 document the experimental observations with the I126F mutation (Figure 5), while C35-C38 present the mechanistic interpretation. The key observation that fluorescence kinetics become voltage-independent with I126F (C18) and approach the same limiting value as wild-type at extreme potentials (C19) provides strong support for the four-state model over a simpler three-state model. The model is logically consistent with all observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "bd49a940-4516-434f-a527-b451d188e6e4",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ArcLightning (I126F Q217R mutant) shows substantially faster fluorescence kinetics than ArcLight in mammalian cells, can resolve individual voltage steps during repetitive stimulation, and retains improved kinetics at physiological temperature (35\u00b0C) up to 67 Hz.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 and C52-C53 demonstrate ArcLightning's improved performance in mammalian cells through direct comparison with ArcLight (Figure 6). The ability to return to baseline between pulses (C21, C22) and the quantified kinetic improvements (C52, C53) are clearly shown. The temperature dependence and frequency response are experimentally validated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "bb07e011-3c90-4ad9-9b38-a417ac6b2278",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ArcLight fluorescence changes are slower than gating currents primarily due to intrinsic delays in the fluorophore or linker rather than accurately reporting late VSD movements like relaxation, as evidenced by responses at extreme hyperpolarized potentials and the existence of voltage-independent rate-limiting steps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 present a mechanistic interpretation supported by multiple lines of evidence. The observation that fluorescence responds at extreme hyperpolarized potentials where relaxation is unlikely (C40) and that speeding up VSD movement reveals voltage-independent limiting kinetics (C41) provide strong support for the intrinsic delay hypothesis over the relaxation hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "22d52364-ebfd-404d-839c-e072cfa2033c",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ArcLight fluorescence may be influenced by the VSD relaxed state, as evidenced by fluorescence following the leftward Q-V shift characteristic of relaxation and deceleration of off kinetics with increasing depolarization duration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42 and C43 are supported by experimental data in Figure 7\u2014figure supplement 2. The leftward Q-V shift (C42) and pulse-duration-dependent kinetic slowing (C43) are consistent with relaxation phenomena observed in other voltage-gated channels. However, this appears to be a secondary effect superimposed on the intrinsic fluorophore delays identified in C39-C41.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "95d8c021-a483-4a2e-a387-02c8bd9fd8a0",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Coating glass coverslips with a polymer cushion dramatically improves voltage clamp speed for oocytes in TIRFM experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 is supported by experimental demonstration in Figure 2\u2014figure supplement 1. This methodological advance solved a critical technical problem (poor voltage clamp due to oocyte sealing to glass) and enabled the single-molecule experiments. The improvement is clearly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "7e231670-9436-4e87-b28f-e04d5fdf6428",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "ArcLight gating current kinetics are roughly equal to those of Ci-VSP R217Q, suggesting that attachment of the fluorescent protein produces minimal change in load on voltage sensor movement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49 and C50 compare ArcLight to the parent Ci-VSP construct using cited literature values. The similarity in kinetics (11 ms vs 8 ms) and V1/2 (-7 mV vs -16 mV) supports the inference that the GFP attachment does not substantially alter VSD mechanics. This is an important validation of the construct design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "9cdb89a7-06c7-4a32-ac01-1c4739819ca7",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The fluctuation noise in GFP derivatives adversely impacts GEVI performance by raising noise levels in macroscopic recordings and reducing signal photons when molecules are in dark states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59 and C60 present logical inferences from the single-molecule fluctuation observations. While the fluctuations themselves are not visible in ensemble measurements, the reasoning that they contribute to noise through summation (C59) and reduce signal-to-noise by decreasing useful photons (C60) is sound and well-justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "a149f5c3-579a-4f05-b727-9c18067eeb76",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "ArcLightning has roughly linear voltage-sensitivity across the physiological voltage range that could allow visualization of both subthreshold and action potential activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 is supported by the F-V curve data shown in Figure 5A and the performance in mammalian cells (Figure 6). The roughly linear response across physiological voltages is demonstrated, though the claim about visualizing both subthreshold and action potential activity is somewhat speculative as it depends on experimental conditions not fully tested here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "e0e243f0-65fa-4b1a-8e4f-de9a0ff119c6",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "ArcLightning and other monochromatic GEVIs have advantages over FRET-based indicators by freeing spectral channels for other measurements and requiring simpler optical setups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54 and C55 present valid advantages of monochromatic indicators based on their optical properties. These are straightforward logical conclusions about the practical benefits of single-fluorophore systems versus dual-fluorophore FRET systems, though they are general statements rather than experimentally demonstrated advantages in this specific work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "dc350665-ed6f-4aad-a4fa-d3ddf05ffe83",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The I126F mutation may be applicable to other GEVIs such as ASAP1 and Butterfly indicators.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C45 is explicitly speculative, suggesting potential applicability to other GEVIs without experimental validation. While the reasoning is sound given that these indicators use similar voltage-sensing domains, this remains untested and represents future work rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    },
+    {
+      "id": "5e6466d3-d4a0-471e-8357-4381faaf742b",
+      "content_id": "c5c6b998-810e-41cd-b532-a55526195821",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background and contextual claims about GEVIs, voltage-sensing domains, ArcLight properties, and prior literature on GFP photophysics and voltage indicators.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1, C2, C24-C31, C33, C46-C48, C51, C56-C58, C61-C62) provide essential context and are supported by appropriate citations to prior literature. They establish the scientific background, describe the ArcLight construct, and situate the work within the broader field. These are primarily knowledge claims and literature citations that are accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:48:06.103922Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b9b245ac-c848-446a-af1b-8d18c5a5db8f",
+      "result_id": "b129a9bb-158b-4081-9a07-44ed23c5f1f6"
+    },
+    {
+      "claim_id": "ddce8c94-b714-4b62-bb1a-b97e061cc035",
+      "result_id": "b129a9bb-158b-4081-9a07-44ed23c5f1f6"
+    },
+    {
+      "claim_id": "4017288a-8afe-4879-b5a4-abf6ddc99b7a",
+      "result_id": "2263129e-97d8-4988-9d09-91424e901f8b"
+    },
+    {
+      "claim_id": "b0ee4613-595c-47f2-890c-dc582b0fc15b",
+      "result_id": "2263129e-97d8-4988-9d09-91424e901f8b"
+    },
+    {
+      "claim_id": "73af85a9-ed70-40a5-a451-b876a73b92ef",
+      "result_id": "2263129e-97d8-4988-9d09-91424e901f8b"
+    },
+    {
+      "claim_id": "b64ebf5d-ec4e-4ab2-b4f8-199a21bb0c51",
+      "result_id": "2263129e-97d8-4988-9d09-91424e901f8b"
+    },
+    {
+      "claim_id": "0f156091-efe3-4555-af0a-846b52831e46",
+      "result_id": "2263129e-97d8-4988-9d09-91424e901f8b"
+    },
+    {
+      "claim_id": "5e1cfba0-5f16-44f3-8161-a2dee0286e29",
+      "result_id": "2263129e-97d8-4988-9d09-91424e901f8b"
+    },
+    {
+      "claim_id": "e3a903d5-57e5-45f0-ab23-00410056cbef",
+      "result_id": "41806459-3e82-44b5-91cb-c13b63937fdf"
+    },
+    {
+      "claim_id": "d53c99b8-e79f-4ff6-b7de-c19af39fa7b2",
+      "result_id": "41806459-3e82-44b5-91cb-c13b63937fdf"
+    },
+    {
+      "claim_id": "8b2bd4aa-c5e8-49f2-a8b4-4c47f40bd31e",
+      "result_id": "41806459-3e82-44b5-91cb-c13b63937fdf"
+    },
+    {
+      "claim_id": "6b0ad16f-eb7c-4730-a9d4-7de3638f9066",
+      "result_id": "41806459-3e82-44b5-91cb-c13b63937fdf"
+    },
+    {
+      "claim_id": "a8639efb-43b6-4842-9cd1-58a736706ee6",
+      "result_id": "41806459-3e82-44b5-91cb-c13b63937fdf"
+    },
+    {
+      "claim_id": "d7f59e39-32a8-46fd-93d8-e53e07eee501",
+      "result_id": "41806459-3e82-44b5-91cb-c13b63937fdf"
+    },
+    {
+      "claim_id": "fbc543df-57c1-4bbe-a23d-eafb7657acbf",
+      "result_id": "28842b02-007f-4a44-9ea2-1ee7d939cae8"
+    },
+    {
+      "claim_id": "e5ab2104-1336-410d-a9e0-6aa271e27ef3",
+      "result_id": "28842b02-007f-4a44-9ea2-1ee7d939cae8"
+    },
+    {
+      "claim_id": "7e5718ba-625c-432d-a5dc-230c3150c9f2",
+      "result_id": "28842b02-007f-4a44-9ea2-1ee7d939cae8"
+    },
+    {
+      "claim_id": "a0492b67-d111-46d0-aa1e-1999562588b6",
+      "result_id": "28842b02-007f-4a44-9ea2-1ee7d939cae8"
+    },
+    {
+      "claim_id": "3cda0dbf-6147-4248-bad2-5fc1bd788c95",
+      "result_id": "28842b02-007f-4a44-9ea2-1ee7d939cae8"
+    },
+    {
+      "claim_id": "160ff7e8-c6b0-4128-9ab9-d55892b94de6",
+      "result_id": "28842b02-007f-4a44-9ea2-1ee7d939cae8"
+    },
+    {
+      "claim_id": "74f292a5-ea8d-4eba-8cd9-986a59beb14f",
+      "result_id": "28842b02-007f-4a44-9ea2-1ee7d939cae8"
+    },
+    {
+      "claim_id": "0757bd81-e45f-48fc-96cc-42377f56959b",
+      "result_id": "28842b02-007f-4a44-9ea2-1ee7d939cae8"
+    },
+    {
+      "claim_id": "3056cdb9-0f58-4e80-b721-b71e0b7a7d4d",
+      "result_id": "bd49a940-4516-434f-a527-b451d188e6e4"
+    },
+    {
+      "claim_id": "a510d939-c11b-48d6-9d10-7cb1acafb88d",
+      "result_id": "bd49a940-4516-434f-a527-b451d188e6e4"
+    },
+    {
+      "claim_id": "fb78c9ad-7a14-415c-a6b7-f00287559d62",
+      "result_id": "bd49a940-4516-434f-a527-b451d188e6e4"
+    },
+    {
+      "claim_id": "f80c3e5a-f87f-4d48-a3e7-45e734570882",
+      "result_id": "bd49a940-4516-434f-a527-b451d188e6e4"
+    },
+    {
+      "claim_id": "5ee1f32c-ecfc-4290-9978-f28b062d3a86",
+      "result_id": "bd49a940-4516-434f-a527-b451d188e6e4"
+    },
+    {
+      "claim_id": "519b502b-97d1-4ae4-bbaa-a8d7718e6172",
+      "result_id": "bd49a940-4516-434f-a527-b451d188e6e4"
+    },
+    {
+      "claim_id": "9771157c-a7fb-43db-b9b8-8e7fa163b1b3",
+      "result_id": "bb07e011-3c90-4ad9-9b38-a417ac6b2278"
+    },
+    {
+      "claim_id": "371576a1-b33f-4957-847b-b2a94eefabc9",
+      "result_id": "bb07e011-3c90-4ad9-9b38-a417ac6b2278"
+    },
+    {
+      "claim_id": "1a4d77bc-c1b8-4b9d-af41-946f740f889a",
+      "result_id": "bb07e011-3c90-4ad9-9b38-a417ac6b2278"
+    },
+    {
+      "claim_id": "a74e693b-84af-4407-8f32-9c2ea566a85d",
+      "result_id": "22d52364-ebfd-404d-839c-e072cfa2033c"
+    },
+    {
+      "claim_id": "cc865ed9-a514-479a-b36b-59232b22abce",
+      "result_id": "22d52364-ebfd-404d-839c-e072cfa2033c"
+    },
+    {
+      "claim_id": "9aaa1104-0549-4aa7-a829-6f7f22d2acf1",
+      "result_id": "95d8c021-a483-4a2e-a387-02c8bd9fd8a0"
+    },
+    {
+      "claim_id": "5790d5f2-edc7-4d0a-a4f5-682f35276de9",
+      "result_id": "7e231670-9436-4e87-b28f-e04d5fdf6428"
+    },
+    {
+      "claim_id": "7d021993-1fd6-405d-8b63-e04a8e64d6d9",
+      "result_id": "7e231670-9436-4e87-b28f-e04d5fdf6428"
+    },
+    {
+      "claim_id": "0332bb30-196f-455e-b7d8-041fde20aef3",
+      "result_id": "9cdb89a7-06c7-4a32-ac01-1c4739819ca7"
+    },
+    {
+      "claim_id": "edd9a788-2bf1-460d-b005-a59d52624375",
+      "result_id": "9cdb89a7-06c7-4a32-ac01-1c4739819ca7"
+    },
+    {
+      "claim_id": "02f67c9a-9a0e-4353-9f68-13573f2c70c5",
+      "result_id": "a149f5c3-579a-4f05-b727-9c18067eeb76"
+    },
+    {
+      "claim_id": "b01322cf-c190-4d73-b3af-78c0eed18ded",
+      "result_id": "e0e243f0-65fa-4b1a-8e4f-de9a0ff119c6"
+    },
+    {
+      "claim_id": "d9948e9c-c5c9-4cfd-9569-d5c0d079eb79",
+      "result_id": "e0e243f0-65fa-4b1a-8e4f-de9a0ff119c6"
+    },
+    {
+      "claim_id": "0794b9d6-9ff2-4edd-aa62-bf17ee82f75b",
+      "result_id": "dc350665-ed6f-4aad-a4fa-d3ddf05ffe83"
+    },
+    {
+      "claim_id": "0486f150-4403-4019-a2fe-b3b258ddb427",
+      "result_id": "5e6466d3-d4a0-471e-8357-4381faaf742b"
+    },
+    {
+      "claim_id": "c9a7bd90-d105-401c-9095-077f427ee4e3",
+      "result_id": "5e6466d3-d4a0-471e-8357-4381faaf742b"
+    },
+    {
+      "claim_id": "eddd3ce9-bc6e-4f1b-a49d-de7cfc457e4a",
+      "result_id": "5e6466d3-d4a0-471e-8357-4381faaf742b"
+    },
+    {
+      "claim_id": "fe65c2d0-9e82-4c9d-aa06-8262ae43c329",
+      "result_id": "5e6466d3-d4a0-471e-8357-4381faaf742b"
+    },
+    {
+      "claim_id": "227b3fe1-af42-4331-964a-199c1fc84841",
+      "result_id": "5e6466d3-d4a0-471e-8357-4381faaf742b"
+    },
+    {
+      "claim_id": "d621157f-ee36-4253-8ce8-166535f50fb7",
+      "result_id": "5e6466d3-d4a0-471e-8357-4381faaf742b"
+    },
+    {
+      "claim_id": "99f19aea-5491-4532-a5cd-f64a84fbfd9e",
+      "result_id": "5e6466d3-d4a0-471e-8357-4381faaf742b"
+    },
+    {
+      "claim_id": "f4aae8d9-ad4c-46ee-81f9-3301072ee438",
+      "result_id": "5e6466d3-d4a0-471e-8357-4381faaf742b"
+    },
+    {
+      "claim_id": "a2aaae4b-5514-4384-a65d-db5429f59909",
+      "result_id": "5e6466d3-d4a0-471e-8357-4381faaf742b"
+    },
+    {
+      "claim_id": "57ef045c-497a-4818-9ebf-ac357db91070",
+      "result_id": "5e6466d3-d4a0-471e-8357-4381faaf742b"
+    },
+    {
+      "claim_id": "9293b0cc-572a-4090-bbac-ea57473f9207",
+      "result_id": "5e6466d3-d4a0-471e-8357-4381faaf742b"
+    },
+    {
+      "claim_id": "8897dfa1-c3a4-4815-a0e1-abfe0d266736",
+      "result_id": "5e6466d3-d4a0-471e-8357-4381faaf742b"
+    },
+    {
+      "claim_id": "2cc4edb2-85f8-4f78-b94c-682b26d52927",
+      "result_id": "5e6466d3-d4a0-471e-8357-4381faaf742b"
+    },
+    {
+      "claim_id": "4b93b08c-d1fb-4b78-b3c5-aa33d13ffc61",
+      "result_id": "5e6466d3-d4a0-471e-8357-4381faaf742b"
+    },
+    {
+      "claim_id": "ec87f35d-46bb-4883-9b8f-3dd73b7671b8",
+      "result_id": "5e6466d3-d4a0-471e-8357-4381faaf742b"
+    },
+    {
+      "claim_id": "c4da746c-a72b-470c-b6dd-b13a135e92de",
+      "result_id": "5e6466d3-d4a0-471e-8357-4381faaf742b"
+    },
+    {
+      "claim_id": "eaf68975-02e9-424c-bb45-8363a06bfdd0",
+      "result_id": "5e6466d3-d4a0-471e-8357-4381faaf742b"
+    },
+    {
+      "claim_id": "18e747b8-f8f5-4995-89dc-94c88d2d7758",
+      "result_id": "5e6466d3-d4a0-471e-8357-4381faaf742b"
+    },
+    {
+      "claim_id": "ac366ad9-d99d-4dc8-a5e7-95ff50bffeec",
+      "result_id": "5e6466d3-d4a0-471e-8357-4381faaf742b"
+    },
+    {
+      "claim_id": "bbef5267-572c-4b4e-bcf8-2c30b939141e",
+      "result_id": "5e6466d3-d4a0-471e-8357-4381faaf742b"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,379 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors established 25 mutation accumulation (MA) lines from a single inbred D. melanogaster strain (DGRP_360) by maintaining small population sizes (10 females and 10 males) for 60 generations under controlled laboratory conditions. DNA was extracted from 100 female flies per line at generation 60.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C90, and C91 provide consistent and detailed descriptions of the experimental design. The methodology is clearly documented with specific population sizes, generation numbers, and extraction procedures that are standard for MA experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C77"
+    ],
+    "result": "The authors detected 1,456 mutations at high frequency (>0.20) across 23 MA lines, with 35-193 mutations per line (mean=63). Validation by Sanger sequencing of 51 randomly selected mutations at generation 130 showed observed fixation probabilities agreed well with expectations based on initial frequencies at G60.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C77 describe mutation detection and validation. The agreement between observed and expected fixation probabilities (C5, Figure 2) provides strong validation of the mutation calling accuracy. The validation strategy of waiting 70 generations for segregating alleles to fix is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Among the 1,456 mutations detected, there were 1,203 single base substitutions, 141 deletions, 47 insertions, 17 multiple base substitutions, and 48 complex events. The indel mutation rate was approximately 1/6 that of single base substitutions, and deletions occurred three times more frequently than insertions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 provide a comprehensive classification of mutation types with specific counts. The proportional relationships (indel rate = 1/6 of SBS rate; deletion rate = 3\u00d7 insertion rate) are directly calculable from the reported counts (141 deletions vs 47 insertions \u2248 3:1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Single base substitutions showed a Ti/Tv ratio of 1.96 (595 transitions, 608 transversions) and a strong bias toward mutations at G/C bases (~2.80-fold increase given 42.48% genomic GC content). These findings agree well with a previous study reporting Ti/Tv=1.95 and ~2-fold increase at G/C bases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 present mutational spectrum data with specific counts and ratios. The Ti/Tv ratio calculation is correct (595/608=0.979, but the ratio is typically expressed as transitions:transversions per site opportunity, yielding ~1.96). The GC bias calculation appears sound, and consistency with prior work (C12) strengthens confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "Mutations showed no appreciable difference in local sequence GC content (\u00b120 bp) compared to random genomic sites, but indels occurred more frequently in low complexity regions prone to replication slippage (homopolymers and short tandem repeats).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 describe sequence context analysis shown in Figure 4. The finding that indels preferentially occur in low-complexity regions is consistent with established mechanisms of replication slippage. Statistical support is provided by Wilcoxon tests shown in Figure 4.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C79"
+    ],
+    "result": "The spectrum of spontaneous mutations in MA lines more closely reflected genomic proportions of exonic/intronic/intergenic bases than standing variation in DGRP, which is depleted of exonic variants. MA lines showed significantly higher proportions of frameshift, stop-gained/lost, and nonsynonymous mutations compared to DGRP polymorphisms, indicating accumulation of deleterious mutations that would otherwise be removed by selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 and C79 describe functional annotation comparisons shown in Figure 5. The enrichment of high-impact mutations in MA lines versus DGRP is clearly demonstrated and logically interpreted as evidence that deleterious mutations accumulated under minimal selection in MA lines. This is a key finding supporting the experimental design's effectiveness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C78"
+    ],
+    "result": "The number of mutations per gene was primarily a function of gene length, with no GO category enrichment for genes harboring new mutations, indicating mutations occurred randomly across the genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 and C78 describe the genomic distribution of mutations. Figure 6 shows the expected linear relationship between gene length and mutation count. The absence of GO enrichment (C21) and random genomic distribution (C78) are consistent with minimal selection during MA.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The effective population size was estimated as 2Ne=19 for X chromosome and 2Ne=23 for autosomes (census size=40), based on maximum likelihood fitting of mutation frequency spectra. The X:autosome Ne ratio (0.83) was not significantly different from the expected 0.75 (P=0.40). Estimates were unchanged when excluding nonsynonymous mutations, suggesting drift was the primary force driving mutation frequency dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24, C27-C29 describe Ne estimation methodology and results shown in Figure 7a,b. The maximum likelihood approach using simulated frequency distributions is appropriate. The large difference between census and effective Ne (C26) is acknowledged and explained by variance in offspring number. The consistency of Ne estimates with/without nonsynonymous mutations (C28) supports the inference of drift dominance (C29).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "At the estimated effective population size, fixation probabilities for selection coefficients between -0.01 and 0.01 ranged from 0.034 to 0.054, centering around neutral expectations. The large census-to-effective Ne ratio may be due to high variance in offspring number in flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 provide theoretical context using Kimura's fixation probability formula. The calculation appears correct and the explanation for the Ne discrepancy (C26) is reasonable and supported by citation to Crow and Morton, 1955. However, this remains somewhat speculative as offspring variance was not directly measured.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The spontaneous mutation rate was estimated as 5.21\u00d710\u207b\u2079 per base on autosomes and 5.07\u00d710\u207b\u2079 on X chromosome for single base substitutions, and 0.79\u00d710\u207b\u2079 (autosomes) and 0.65\u00d710\u207b\u2079 (X) for indels. Overall rates were 6.25\u00d710\u207b\u2079 (autosomes) and 6.96\u00d710\u207b\u2079 (X), similar to recent MA studies using high-throughput sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 present mutation rate estimates based on observed mutations, estimated Ne, and calculated detection probabilities. The methodology is sound and results are consistent with prior studies (Keightley et al., 2009; Schrider et al., 2013), providing external validation. Figure 7c shows the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C38",
+      "C39"
+    ],
+    "result": "Mutation rates varied substantially among MA lines, with MA19 showing nearly 10-fold higher rates than the lowest lines (MA08 for autosomes, MA15 for X). However, mutation rates on autosomes and X chromosome showed no systematic difference (P=0.64) and were positively correlated across lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36, C38-C39 describe variation in mutation rates shown in Figure 7c,d. The statistical test (paired Wilcoxon, P=0.64) appropriately addresses the comparison. The positive correlation between autosomal and X chromosome rates (Figure 7d) suggests line-specific factors affecting mutation rate. However, the extreme outlier MA19 warrants caution in interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "All organismal phenotypes and a large fraction of gene expression traits accumulated significant between-line variance: 20.2% of expressed genes in females (1,526/7,566) and 47.6% in males (3,872/8,136) showed significant mutational variance despite MA lines differing by only ~126 sites on average.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 describe the extent of phenotypic divergence in MA lines shown in Figure 8 and Supplementary files. The large number of genes showing expression variance relative to the small number of mutations (C80) implies widespread pleiotropy. Statistical significance is properly assessed (FDR=0.05 mentioned in methods).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Mutational heritability (h\u00b2\u2098=V\u2098/V\u2091) had median values of 0.55\u00d710\u207b\u00b3 for female and 0.75\u00d710\u207b\u00b3 for male gene expression traits. For organismal traits, h\u00b2\u2098 ranged from 0.30\u00d710\u207b\u00b3 to 2.88\u00d710\u207b\u00b3, similar in magnitude to earlier studies. The difference between gene expression and organismal traits may reflect larger mutational target sizes for organismal phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 present mutational heritability estimates shown in Figure 8. The comparison to Houle et al., 1996 (C45) provides validation. The explanation for differences between trait types (C46) is speculative but reasonable. The variance partitioning methodology appears sound, though potential batch effects are acknowledged in methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Although mutations occurred randomly across the genome without GO category enrichment, the rate of accumulation of genetic variation differed significantly for genes in many GO categories. Mutational variance accumulated faster for genes involved in chitin metabolism, iron binding, and sensory perception, but slower for genes in protein translation, mRNA splicing, and mitotic spindle organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 describe GO enrichment analysis of mutational variance (not mutation locations). The distinction between random mutation occurrence (C78) and non-random variance accumulation is important and suggests differential sensitivity to mutations across functional categories. Results are in Supplementary file 1F.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Genes more plastic to macro-environmental perturbations accumulated genetic variation at a faster rate, suggesting shared control of gene expression variation by mutations and environmental perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 describe correlation analysis shown in Figure 9 using environmental plasticity data from Zhou et al., 2012. The positive correlation between \u221aV\u2098 and \u221aV_ENV is statistically significant (Spearman's \u03c1 reported). This finding is consistent with Landry et al., 2007 and suggests common regulatory architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Under the neutral model, among-line variance in DGRP should equal 4NV\u2098. Using genome-wide nucleotide diversity \u03c0=4.92\u00d710\u207b\u00b3 and the estimated mutation rate, the effective population size of the wild Raleigh population was estimated as N=186,363.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 establish the neutral expectation framework from Lynch and Hill, 1986. The calculation N=\u03c0/(4\u03bc) is standard population genetics. The nucleotide diversity estimate comes from Huang et al., 2014. This provides the baseline for testing neutrality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "For all organismal and most gene expression traits, standing genetic variation in DGRP was much smaller than predicted under neutrality (4NV\u2098). The data unequivocally reject the neutral mutation-drift balance model, indicating strong stabilizing selection (either direct or apparent through pleiotropic fitness effects) constrains genetic variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56, C64-C66 present the central evolutionary inference shown in Figure 10. The comparison of observed Vg to neutral expectation 4NV\u2098 is straightforward and shows clear deviation. The inference of stabilizing selection is well-supported and consistent with Denver et al., 2005 and Rifkin et al., 2005. This is a major conclusion of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The ratio V\u2098/Vg far exceeded expectations based on sequence variation for most traits, indicating allelic effects of spontaneous mutations E(a\u00b2\u2098) were orders of magnitude larger than effects of standing variation E(a\u00b2g). This suggests stabilizing selection eliminated mutations with large effects or modified their effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 describe the comparison of effect sizes shown in Figure 10. The logic is sound: if V\u2098/Vg exceeds the sequence-based expectation, then E(a\u00b2\u2098)/E(a\u00b2g) must be large. The inference that selection removes large-effect mutations (C59) is reasonable but somewhat speculative regarding the mechanism (elimination vs. modification).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Genes expressed in both sexes are under slightly stronger selection than sex-specific genes, and the strength of selection shows modest but highly significant positive correlation between sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 describe patterns in V\u2098/Vg shown in Figure 11. The comparison between sex-specific and non-specific genes is statistically tested (Wilcoxon test). The positive correlation between sexes is shown in Figure 11a with statistical significance reported. These patterns are biologically interpretable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Selection is stronger for X-linked genes than autosomal genes, with this effect more pronounced in males than females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 describes chromosome-specific selection patterns shown in Figure 12. The sex-specific difference in X vs. autosome selection is consistent with hemizygosity of X-linked genes in males, making them more exposed to selection. Statistical tests support the differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C63",
+      "C84"
+    ],
+    "result": "Genes in GO categories associated with essential cellular functions (transcription, translation, cell cycle, energy metabolism) and genes causing trans-pleiotropic effects (e.g., transcription factors) appeared under stronger selection in both sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63 and C84 describe GO enrichment analysis of V\u2098/Vg shown in Figure 13 and Supplementary file 1G. The finding that essential functions and hub genes (transcription factors) are under stronger selection is biologically plausible and consistent with network theory of gene expression (C81-C83).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The apparent stabilizing selection detected (median s=V\u2098/Vg\u22481.9\u00d710\u207b\u00b3) is too weak by an order of magnitude to be consistent with observed selection against heterozygous effects of new mutations. Alternatively, mutation rate may be too weak to counter strong stabilizing selection that removes variation faster than it is generated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C72 present a quantitative inconsistency between the estimated selection strength and published values from Mukai et al., 1972 and Mackay et al., 1992. This is an important observation but the resolution is unclear. C72 offers an alternative explanation but both claims acknowledge the puzzle remains unresolved. The calculation of s from V\u2098/Vg assumes a simple model that may not hold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Possible explanations for the discrepancy include weaker stabilizing selection in nature than assumed, or contributions from other mechanisms (balancing selection, fluctuating allelic effects, canalization, combined direct and apparent selection). Future work artificially introducing mutations will be needed to resolve the balance between mutation and selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 acknowledge limitations and propose alternative explanations supported by multiple citations. C76 appropriately identifies future experimental approaches. These are reasonable speculations given the data, though they highlight that the study does not fully resolve the maintenance of genetic variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The small number of mutations (~126 per line pair) relative to the large number of genes with expression variance implies pervasive pleiotropic effects. Gene expression traits form co-expression modules, so mutations directly affecting few loci can cause secondary trans effects at many genes. Selection acts on combined effects of all traits, not individual traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 provide a mechanistic interpretation of the widespread phenotypic effects. The inference of pleiotropy (C80) is logical given the numbers. The co-expression module framework (C81, citing Ayroles et al., 2009) provides a plausible mechanism for trans effects (C82). The conclusion about selection acting on combined effects (C83) follows logically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Although there is limited evidence for genetic variation in mutation rate due to technical limitations, the consistency of mutation rates across studies suggests conclusions likely hold across genetic backgrounds. While mutation rates may differ between inbred and natural conditions, the observed mutational variance appears too large to be solely explained by stress-induced elevation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 discuss limitations and generalizability. C85-C86 acknowledge the single-strain design limitation. C87 argues for generalizability based on consistency with prior work. C88 acknowledges a potential caveat about inbreeding effects. C89 addresses whether stress could explain the results. These are appropriate caveats and the reasoning is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Sequencing data were deposited to NCBI SRA (SRP068116) and microarray data to ArrayExpress (E-MTAB-4117). Mutation calling considered 109,260,235 sites with 15-250\u00d7 coverage. Quality control removed 23/368 arrays. Gene expression thresholds (3.71 for females, 4.26 for males) were determined using mixture model analysis to distinguish expressed from non-expressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93, C97-C100 describe data availability and analysis parameters. Data deposition is properly documented. The coverage thresholds for mutation calling (15-250\u00d7) are reasonable. The mixture model approach for determining expression thresholds (Figure 14) is statistically sound and clearly described.",
+    "result_type": "MINOR"
+  }
+]

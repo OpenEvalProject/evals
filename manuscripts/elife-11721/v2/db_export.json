@@ -1,0 +1,1637 @@
+{
+  "submission": {
+    "id": "6483a373-2729-4e69-aeb1-a0e9c10b0ab9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:08:10.588172Z",
+    "updated_at": "2025-11-29T22:08:10.588172Z"
+  },
+  "content": [
+    {
+      "id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "submission_id": "6483a373-2729-4e69-aeb1-a0e9c10b0ab9",
+      "content_type": "manuscript",
+      "content_text": "# The innate immune sensor IFI16 recognizes foreign DNA in the nucleus by scanning along the duplex\n\n## Authors\n\n- Sarah A Stratmann<sup>1</sup>\n- Seamus R Morrone<sup>2</sup>\n- Antoine M van Oijen<sup>1</sup> \u2020\n- Jungsan Sohn<sup>2</sup> \u2020\n\n### Affiliations\n\n1. University of Groningen Groningen Netherlands\n2. Johns Hopkins University School of Medicine Baltimore United States\n3. University of Wollongong Wollongong Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe ability to recognize foreign double-stranded (ds)DNA of pathogenic origin in the intracellular environment is an essential defense mechanism of the human innate immune system. However, the molecular mechanisms underlying distinction between foreign DNA and host genomic material inside the nucleus are not understood. By combining biochemical assays and single-molecule techniques, we show that the nuclear innate immune sensor IFI16 one-dimensionally tracks long stretches of exposed foreign dsDNA to assemble into supramolecular signaling platforms. We also demonstrate that nucleosomes represent barriers that prevent IFI16 from targeting host DNA by directly interfering with these one-dimensional movements. This unique scanning-assisted assembly mechanism allows IFI16 to distinguish friend from foe and assemble into oligomers efficiently and selectively on foreign DNA.\n\n## Introduction\n\nThe host innate immune system detects infection by directly recognizing molecular signatures associated with pathogens (Janeway and Medzhitov, 2002; Medzhitov and Janeway, 2000). Remarkably, such signatures include universal building blocks of all life, such as DNA and RNA (Janeway and Medzhitov, 2002; Orzalli and Knipe, 2014; Paludan and Bowie, 2013). In the cytoplasm, the immune system relies on the absence of endogenous DNA, and thus marks all detected DNA as 'foreign' (nonself) (Orzalli and Knipe, 2014; Paludan and Bowie, 2013). However, DNA viruses often evade the cytosolic detection machineries, as their genomes are not exposed until reaching the nucleus (Orzalli and Knipe, 2014; Paludan and Bowie, 2013). The host counters this infection strategy in the nucleus by directly assembling supramolecular signaling platforms that trigger inflammatory responses on invading foreign DNA, but not on its own genomic material (Johnson et al., 2013; Li et al., 2012; Kerur et al., 2011). Although key players that target foreign dsDNA in the host nucleus have been identified (Orzalli and Knipe, 2014; Paludan and Bowie, 2013), the molecular mechanisms by which these sensors distinguish self from nonself dsDNA remain unknown.\n\nThe interferon-inducible protein 16 (IFI16) is a key innate immune sensor that detects foreign dsDNA and uses it as a scaffold to assemble supramolecular signaling platforms in both the host nucleus and cytoplasm (Unterholzner et al., 2010; Johnson et al., 2013; Li et al., 2012; Kerur et al., 2011; Orzalli et al., 2012) (Figure 1A). IFI16 plays a central role in defense against a number of pathogens (e.g herpes simplex virus-1) (Unterholzner et al., 2010; Johnson et al., 2013; Li et al., 2012; Kerur et al., 2011; Orzalli et al., 2012). On the other hand, persistent IFI16 signaling is associated with autoimmunity (e.g. Sj\u00f6gren\u2019s syndrome) (Mondini et al., 2007; Choubey et al., 2010; Mondini et al., 2010; Gugliesi et al., 2013; Smith and Jefferies, 2014). The molecular mechanisms by which IFI16 selectively targets foreign dsDNA remain unknown. To establish a functional signaling platform, IFI16 must overcome two challenges. First, individual IFI16 molecules must be able to locate one another on large pathogen genomes with sizes ranging from 105 to 106 base pairs (bps). Second and more importantly, this assembly mechanism can only take place on foreign dsDNA and must be inhibited on host dsDNA (Figure 1A). Here, we report the observation of a unifying molecular mechanism that explains how IFI16 resolves these central issues in initiating its foreign-dsDNA sensing pathways.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/11721/elife-11721-fig1-v2.jpg)\n\n**Figure 1.:** (A) Top: IFI16 is composed of three functional domains flanked by unstructured linkers, namely one pyrin domain (PYD) and two dsDNA-binding Hin domains (HinA and HinB; Hin: hematopoietic interferon-inducible nuclear antigen). Bottom: IFI16 detects foreign dsDNA from invading pathogens in both the\u00a0host nucleus and cytoplasm. (B) Top: a cartoon scheme for FRET experiments. The two differentially colored ovals represent fluorescently (Dylight-550 and Dylight-650) labeled IFI16. Bottom: The time-dependent changes in the emission ratio between FRET donor and acceptor labeled IFI16 (50 nM) were monitored at 33 \u00b5g/ml of each dsDNA (e.g. sixfold higher than the dissociation constant for 39-bp dsDNA [Morrone et al., 2014]). Lines are fits to a first-order exponential equation (see Figure 1\u2014figure supplement 1 for 25 nM protein). All shown representative experiments were performed at least three times. (C) A plot of observed assembly rates (kassms) vs. dsDNA-sizes (see also\u00a0Figure 1\u2014figure supplement 1). (D) 1D-diffusion assisted assembly mechanism can explain the observed assembly profile of IFI16. 1. At the same mass-concentrations, the number of individual dsDNA fragments present in each assay is inversely proportional to the length of dsDNA. 2. Individual IFI16 molecules initially bind dsDNA at random positions and diffuse one-dimensionally while searching for other respective protomers; the number of IFI16 residing on the same dsDNA fragment should be proportional to the length of dsDNA (e.g. there are four times more individual 150-bp fragments than 600-bp fragments) 3. IFI16 fails to assemble into an oligomer on dsDNA shorter than 60 bp (indicated by a red arrow pointing left). The saturating rates can be explained if the final FRET signals arise from formation of distinct optimal oligomers.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11721/elife-11721-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Shown is a representative of three experiments, and the calculated rates are listed in Supplementary file 1A.\n\n![Video\u00a01.](https://cdn.elifesciences.org/articles/11721/elife-11721-media1.mp4.jpg)\n\n**Video\u00a01.:** The movie is played at 5x acceleration. This video is related to Figure 2.\n\n## Results\u00a0and\u00a0discussion\n\nTo identify the mechanisms underlying assembly of IFI16 signaling platforms on DNA, we monitored the oligomerization kinetics of FRET donor and acceptor labeled IFI16 on naked dsDNA (FRET: fluorescence resonance energy transfer; Figure 1B and Figure 1\u2014figure supplement 1). Previous work demonstrated the existence of such oligomers and reported on their equilibrium binding properties but did not provide insights into the assembly mechanisms (Morrone et al., 2014). Using various dsDNA fragment sizes present in excess, we observe that the assembly rate increased non-linearly and by 50-fold from 60 to 200 bps dsDNA, above which it stayed constant (up to 600 bps; Figure 1B,C). With a dsDNA-binding footprint of ~15 bp for one IFI16 (Morrone et al., 2014), our results indicate that about 4 copies are required to initiate assembly, and about 10 IFI16 molecules are required for optimal oligomeric assembly (Figure 1C). Further, the assembly rate constants scaled linearly with the IFI16 concentration for all measured DNA lengths (Figure 1\u2014figure supplement 1 and Supplementary file 1A), indicating that a purely cooperative assembly mechanism is unlikely. In line with this observation, previous work reported relatively small contributions of cooperativity in oligomerization with Hill constants near 2 for DNA substrates up to 2000 bp (Morrone et al., 2014).\n\nOur ensemble-averaged, solution-phase observations of the faster assembly on longer dsDNA suggest a model in which IFI16 scans along dsDNA to increase the probability of encountering other IFI16 molecules (Figure 1D). To directly test such a mechanism, we used single-molecule fluorescence imaging to track the movements of individual Cy5-labeled IFI16 molecules on stretched, double-sided attached \u03bb-phage dsDNA (\u03bbdsDNA; 48.5 kbps) (Figure 2A and Video 1). Figure 2B shows that individual IFI16 molecules one-dimensionally (1D) diffuse on \u03bbdsDNA while bound for several seconds. The diffusion coefficient of IFI16 increased with ionic strength, indicating that IFI16 does not maintain a continuous electrostatic interaction with the dsDNA backbone, but instead moves along the \u03bbdsDNA scaffold by executing microscopically small steps (Blainey et al., 2006) (Figure 2B and Figure 2\u2014figure supplement 1). An IFI16 construct lacking the oligomerizing pyrin domain\u00a0(PYD) (IFI16HinAB; see also Figure 1A) showed similar diffusional properties, suggesting that the dsDNA-binding HIN200 domains are responsible for 1D diffusion. Upon applying higher concentrations of IFI16 with a constant supply of proteins into our flow cell, we observed a gradual formation of distinct, immobile clusters along \u03bbdsDNA (Figure 2C, Figure 2\u2014figure supplement 2, and Video 2). Over time, we also observed an increase in the number of molecules per cluster and a concomitant decrease in the diffusion coefficient (Figures 2C,D). We analyzed the impact of flow on the diffusion coefficient and diffusion bias and found it to be not significant for cluster formation (Figure 2\u2014figure supplement 4). Single-molecule intensity analysis revealed that the lower limit of the number of IFI16 molecules found in immobile clusters is equivalent to eight protomers (Figure 2D and Figure 2\u2014figure supplement 3), which also corroborate the optimal complex (ten protomers) suggested from Figure 1C. Furthermore, individual IFI16 molecules either formed new clusters or joined other clusters in a stochastic manner, and the immobile clusters formed faster with higher IFI16 concentrations (Figure 2E). The rate of addition of IFI16 molecules to clusters is independent on the size of the existing cluster, confirming the absence of strong cooperativity in assembly (Figure 2C; bottom panel).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/11721/elife-11721-fig2-v2.jpg)\n\n**Figure 2.:** (A) Illustration of the TIRF setup. \u03bbdsDNA is anchored to the pegylated coverslip surface by either one or two biotinylated oligonucleotide linkers. Single-biotinylated \u03bbdsDNA is constantly stretched by flow during measurements and used for the clustering and nucleosome experiments, whereas double-biotinylated \u03bbdsDNA is stably attached whilst being stretched and used without flow for single-molecule diffusion coefficient analysis. (B)\u00a0Double-biotinylated \u03bbdsDNA is anchored to the surface and Cy5-labeled IFI16 molecules (800 pM) are visualized in near TIRF while bound to DNA. Top: Mean-square displacement (msd) trajectories are fitted within their linear regime to calculate the 1D-diffusion coefficient. Bottom: A sample kymograph of a single molecule stably bound for tens of second to DNA and exerting Brownian motion. (C)\u00a0Elevated IFI16 concentrations result in clustering along \u03bbdsDNA. Top: A sample kymograph of multiple IFI16 molecules (3 nM) diffusing along \u03bbdsDNA. IFI16 molecules display a net motion along the flow direction. Bottom: Time-resolved clustering is accompanied by a decrease in diffusion coefficients and increase in the number of molecules per cluster. (D) The diffusion coefficient inversely correlates with the number of IFI16 per cluster, resulting in immobile, stable oligomers. (E) Cluster formation is IFI16-concentration dependent.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11721/elife-11721-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (i) IFI16: The median of D increases from 0.017 to 0.18 \u03bcm2s-1 with increasing ionic strength from 0.07 to 0.31 M concomitant with decreasing binding times to DNA. (ii) HinAB: The median increases from 0.010 to 0.027 \u03bcm2s-1 with increasing ionic strength from 0.07 to 0.017 M.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11721/elife-11721-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (Right) Intensities per particle are shown for 1 nM (single molecules) and 5 nM (clusters of IFI16). The mean particle intensity for single molecules serves as basis for calculating the number of IFI16 molecules within clusters (Figure 2\u2014figure supplement 3).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/11721/elife-11721-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The mean cluster size amounts to 8 IFI16 molecules within a cluster. Clusters are almost immobile, represented by a significant reduction in the diffusion coefficient D compared to that of single molecules of IFI16.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/11721/elife-11721-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Constant flow (20 \u00b5l/min) is applied for the clustering experiments with elevated IFI16 concentrations, corresponding to a drag force of 1-2 fN on the DNA substrate and bound IFI16 molecules.\u00a0The median measured diffusion coefficient D for single molecules increases from 0.026 \u00b5m2s-1 (no flow) to 0.031 \u00b5m2s-1 (with flow). (B) As described in the supplementary material, we calculated the drag velocity v on single molecules, with which we can define the effect of flow on D. Exemplarily shown here is a single diffusion trace, uncorrected and corrected for v. (C) Monte-Carlo simulation of IFI16 dimerization on \u03bbDNA that is occupied by varying amounts of 1D-diffusing IFI16s. The presence of a drag velocity v does not significantly alter the median search time.\n\n![Video 2.](https://cdn.elifesciences.org/articles/11721/elife-11721-media2.mp4.jpg)\n\n**Video 2.:** This video is related to Figure 2.\n\nThe 1D diffusion of IFI16 on dsDNA explains why the assembly rates increase with the DNA length in the bulk experiments (Figure 1C). With the longer dsDNA acting as an antenna, it allows binding of more IFI16 while 1D diffusion facilitates dynamic association (Figure 1D). The saturation of the assembly rate (Figure 1C) can be explained by the square dependence of the diffusional search time on length: at a sufficiently long dsDNA length, the dissociation rate of an individual IFI16 will be faster than the time needed to scan along the entire length of the DNA. In addition, longer DNA substrates work no longer as antennae, but as traps, since individual IFI16 molecules are farther apart and thus less likely to encounter one another (Hu et al., 2006; Turkin et al., 2015; 2016). Overall, the results of our bulk and single-molecule experiments are consistent with the dsDNA-size dependent binding in\u00a0vitro(Morrone et al., 2014), which also correlates with the IFI16-induced inflammatory responses in\u00a0vivo(Unterholzner et al., 2010). Thus, we propose that the 1D-diffusion mediated assembly plays a key role in regulating the overall IFI16-mediated immune responses.\n\nIt has long been speculated that chromatinization acts as the key feature that allows IFI16 to distinguish host from foreign DNA in the nucleus (Kerur et al., 2011; Unterholzner and Bowie, 2011; Li et al., 2012; Orzalli et al., 2012; 2013; Johnson et at., 2014); IFI16 oligomerizes on exposed invading foreign-dsDNA before it becomes hetero-chromatinized. Previous in\u00a0vivo work demonstrated that transfected chromatinized SV40 DNA is able to evade IFI16 oligomerization and downstream responses (Orzalli et al., 2013). Nevertheless, the molecular mechanism by which IFI16 could use chromatinization to distinguish self from nonself has yet to be identified. To directly address this issue, we first used a competition-binding assay to investigate how IFI16 interacts with dsDNA fragments containing two nucleosomes with varying spacer sizes (6, 30, 50, and 70 bps; Figure 3A and Figure 3\u2014figure supplement 1). Here, di-nucleosomes with 6-, 30-, and 50-bp spacer failed to compete against IFI16-bound FAM-labeled 70-bp dsDNA, (Figure 3B). On the other hand, the di-nucleosome with 70-bp spacer competed similarly as 70-bp naked dsDNA, but significantly more weakly than naked 300-bp dsDNA (Figure 3B). In FRET assembly assays, di-nucleosomes with spacers shorter than 70-bp failed to support assembly (Figure 3C), consistent with our FRET kinetics assays using naked dsDNA (Figure 1B). The 70-bp spacer di-nucleosome supported oligomerization of IFI16; however, the assembly kinetics was again similar to that of naked 70-bp dsDNA, but not that of naked 300-bp dsDNA (Figure 3C). Taken together, these results show that efficient IFI16 cluster formation requires a minimal length of 50-70 base pairs of exposed dsDNA. Considering that the size of dsDNA linker between two nucleosomes is about 20 to 30 bps in mammals (McGhee et al., 1983), these results directly support the hypothesis that chromatinization is a key deterrent for preventing the assembly of IFI16 signaling platforms on self-dsDNA.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/11721/elife-11721-fig3-v2.jpg)\n\n**Figure 3.:** (A) A cartoon of di-nucleosome constructs with varying dsDNA-spacers. (B) Competition binding assays using IFI16 bound FAM-labeled 70-bp dsDNA against various di-nucleosomes and naked dsDNA. The lines are fits to: 1/(1+([DNAcompetitor]/IC50)^Hill constant), where IC50 indicates the concentration of competitor at 50% efficiency. The mass-concentration of each competitor was calculated using dsDNA, but not histones. (C) The time-dependent changes in the emission ratio between the FRET donor and acceptor labeled IFI16 (50 nM) were monitored at 33 \u00b5g/ml of each nucleosome or naked dsDNA. The lines are fits to a first-order exponential equation.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11721/elife-11721-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Purified dinucleosomes for the bulk FRET assays.\n\nTo test whether the inhibitory effect of chromatin directly arises by interfering with the 1D diffusion of IFI16, we visualized the movement of individual IFI16 molecules on DNA with nucleosomes. We introduced randomly localized nucleosomes in \u03bbdsDNA using recombinant human histone octamers and tagged nucleosome positions with fluorescent antibodies against the N-terminal tail of histone H4 (Figure 4\u2014figure supplement 1). The application of hydrodynamic flow resulted in the single IFI16 molecules being pushed to one direction and clustering at nucleosomal sites on \u03bbdsDNA, unable to overcome the octamers by diffusion (Figure 4A, Figure 4\u2014figure supplement 2, and Video 3). Without the antibody, the motion of IFI16 was still confined, whereas for bare \u03bbdsDNA, IFI16 moved with a high processivity along the entire strand (Figures 4B,C, and Figure 4\u2014figure supplement 3). These observations are consistent with the bulk experiments (Figure 3), and confirm that nucleosomes directly restrict the 1D diffusion of IFI16 and consequently limit the assembly of IFI16 signaling platforms on dsDNA.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/11721/elife-11721-fig4-v2.jpg)\n\n**Figure 4.:** (A) Kymographs of Cy5-labeled IFI16 (magenta) binding to \u03bbdsDNA with varying numbers of nucleosomes tagged with anti-H4-Atto488 (blue). The number of nucleosomes per \u03bbdsDNA were estimated by quantifying IFI16 clustering sites for the lowest nucleosome/\u03bbdsDNA ratio (Figure 4\u2014figure supplement 3C), yielding ~2 nucleosomes/ \u03bbdsDNA. At low nucleosome concentrations (~2 to 6 nucleosomes/DNA), IFI16 binds to \u03bbdsDNA and diffuses with the flow direction, until encountering a nucleosome. At higher concentrations (~20 nucleosomes per \u03bbdsDNA), individual IFI16 show only very short diffusive movements upon binding. (B) On naked \u03bbdsDNA, IFI16 travels with the flow to the free tip (top), whereas it oligomerizes along the path on nucleosome-loaded \u03bbdsDNA (bottom). (C) The overall travel distance of single IFI16 on nucleosome-loaded \u03bbdsDNA is reduced compared to bare \u03bbdsDNA (nucleosomal \u03bbdsDNA: N\u00a0=\u00a0167, bare \u03bbdsDNA: N\u00a0=\u00a0141).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11721/elife-11721-fig4-figsupp1-v2.jpg)\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11721/elife-11721-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** 601-nucleosomes do not provide sufficient exposed dsDNA for IFI16 binding, whereas on \u03bbdsDNA IFI16 molecules travel until encountering nucleosome obstacles.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/11721/elife-11721-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Example kymographs of IFI16-Cy5 on bare \u03bbdsDNA with long processivities to the free DNA tip and on nucleosomal \u03bbdsDNA with reduced run lengths.\u00a0(B)\u00a0Analysis of the number of IFI16 aggregation sites along DNA templates (including the free DNA tip) points to 1\u20133 nucleosomes per \u03bbdsDNA for the chosen reconstitution ratio DNA:histones, as it was used for run length measurements (Figure 4B,C).\n\n![Video 3.](https://cdn.elifesciences.org/articles/11721/elife-11721-media3.mp4.jpg)\n\n**Video 3.:** Nucleosomes are tagged with fluorescent anti-H4 (Atto488, blue). Most nucleosomes co-localize with IFI16, indicating that they are efficiently blocking 1D-diffusion by IFI16. This video is related to Figure 4.\n\nThe molecular mechanism by which innate immune sensors distinguish self from foreign dsDNA in the host nucleus has been a major unresolved question in innate immunology (Kerur et al., 2011; Unterholzner and Bowie, 2011; Li et al., 2012; 2013; Orzalli et al., 2012; 2013; Johnson et al., 2014). The oligomerization of IFI16 on under-chromatinized foreign DNA plays a key role not only in initiating inflammatory and antiviral responses, (Monroe et al., 2014; Orzalli et al., 2012; Kerur et al., 2011), but also in regulating the hetero-chromatinization and silencing of viral dsDNA (Johnson et al., 2014; Orzalli et al., 2013). By using time-resolved bulk and single-molecule fluorescence assays, we demonstrate here that IFI16 ID scans along exposed dsDNA to assemble into distinct clusters and that chromatinization is sufficient to inhibit IFI16 from targeting host dsDNA for assembly. In\u00a0vivo, this 1D scanning mechanism allows a limited number of IFI16 molecules to allocate each other on large genomes of invading pathogens. In combination with 3D sampling of binding sites on a collapsed DNA molecule, this process optimizes the oligomerization and downstream signaling time. While the clustering on dsDNA presents a tempting explanation for the role of IFI16 in viral gene silencing, future in\u00a0vivo experiments await to test this. IFI16 belongs to the family of AIM2-like receptors, which include other nuclear and cytosolic foreign dsDNA-sensors. It will be interesting to determine whether and how these other related sensors use exposed dsDNA as a 1D 'digital ruler' to regulate their signaling platform assembly. This family of sensors is implicated in a number of autoimmune disorders (Mondini et al., 2007; 2010; Choubey et al., 2010; Gugliesi et al., 2013; Smith and Jefferies, 2014); how regulation of assembly is disrupted may provide insights into these afflictions.\n\n## Materials and methods\n\n### Protein expression and purification\n\nHuman full-length IFI16 and IFI16HinAB were cloned and expressed using E. coli T7 express cells (NEB) as a C-terminally His6-tagged protein as described in Morrone et al. (Morrone et al., 2014).\n\n### DNA ligand preparation\n\ndsDNA shorter than 90-bp were obtained from Integrated DNA Technologies (IDT) as described in Morrone et al. (Morrone et al., 2014). The complementary strands were dissolved and mixed in 1:1 molar ratio, melted at 95\u00b0C for 10\u00a0min, and the temperature was lowered to 25\u00b0C at a rate of 1\u00b0C/min. Ligands of greater length were obtained by polymerase-chain reaction (PCR) using the Maltose Binding Protein fusion tag cloning sequence as template and primers of appropriate sequence for a final length as indicated in the paper. Plasmids containing the Widom-601/603 sequence with indicated linker lengths were a kind gift of Dr. Gregory Bowman. The nucleosomal DNA was obtained by PCR from these constructs with appropriate primers. All substrates were gel-purified.\n\n### Fluorescent labeling\n\nDyLight-550, DyLight-650, or Cy5 fluorophore was incorporated to IFI16 using maleimide chemistry (purchased from Thermo Scientific and Invitrogen) and was performed as described in Morrone, et al. (Morrone et al., 2014). The label to protein ratio was ~ 1:1. Fluorescein-labeled dsDNA72 was obtained from IDT.\n\n### Octamer refolding and nucleosome reconstitution\n\nLyophylized Xenopus laevis histones H1A, H2A, H3, and H4 were a kind gift of Dr. Cynthia Wolberger. Octamer refolding and nucleosome reconstitution was performed as described in Luger et al. (Luger et al., 1999), at a 2:1 molar ratio of octamer:DNA. An agarose gel of reconstituted nucleosomes is shown in Figure 3\u2014figure supplement 1.\n\n### Bulk biochemical assays\n\nAll absorption, fluorescence anisotropy, and fluorescence excitation/emission experiments were performed in a Tecan Infinite M1000. All experiments were performed at least three times and the fits to data were generated by Kaleidagraph software (synergy).\n\n### Competition binding assays\n\nAll reactions were performed in 40\u00a0mM HEPES pH 7.4, 160\u00a0mM KCl, 5% glycerol, 1\u00a0mM EDTA, 0.1% triton-X-100, 5\u00a0mM DTT (Reaction Buffer). Here,\u00a0300\u00a0nM IFI16 and 4.5nM fluorescein-labeled dsVACV72 were incubated together at room temperature for 20\u00a0min. Increasing concentrations of competing DNA were added to the reaction to a final concentration of 100\u00a0nM IFI16 and 1.5\u00a0nM dsVACV72, and the changes in fluorescence anisotropy were recorded as indicated in Morrone et al. (Morrone et al., 2014).\n\n### FRET time dependence assays\n\nAll reactions were performed in reaction buffer. 66 \u00b5g/ml of each dsDNA or di-nucleosomes was placed in the plate wells, and the reaction was initiated by adding an equivalent volume of IFI16-550 and IFI16-650 (1:1 molar ratio) to the indicated final concentration. The dead time between addition of IFI16 and the first measurement was 15-20\u00a0s. The final dsDNA molar-concentrations are at least sixfold higher than their determined binding constants by fluorescence anisotropy assays described in Morrone, et al.\u00a0(Morrone et al., 2014), and the FRET ratio for each time point was calculated by dividing the acceptor emission (678 nm) by the donor emission (574 nm) (Morrone et al., 2014).\n\n### Fluorescence microscopy assays\n\nMicroscope coverslips (Corning) were plasma-cleaned and activated with 100 mM KOH, silanized with 3-Aminopropyl-triethoxysilane in acetone and functionalized with PEG-NHS and biotin-PEG-NHS (Laysan-Bio) in sodium bicarbonate with a 1:3 mass ratio (Tanner and van Oijen, 2010). Streptavidin (Sigma Aldrich) was used for anchoring the biotinylated DNA substrates to the coverslip surface. Flow channels were constructed with custom-made PDMS chips to obtain dimensions of 10 mm length, 100 \u00b5m height, and 1 mm width, and connected to a syringe pump to allow constant flow during the measurements.\n\nSingle-molecule assays were performed in 40 mM HEPES (pH 7.4), 160 mM KCl, 1 mM EDTA, 2 mM DTT, 10% glycerol, 0.1% Triton-X100, 250 \u00b5g/ml BSA, 1 mM Trolox, 40 mM glucose, 250 nM glucose oxidase, 60 nM catalase, unless otherwise stated. All assays were performed at room temperature. We applied 100 nM YoPro-1 iodide (Life Technologies) at the end of the measurements to visualize the DNA substrates.\n\nReactions were illuminated with a 488-nm and 641-nm laser (Coherent), and images were acquired with an EMCCD camera (Hamamatsu). We used MetaVue imaging software (Molecular Devices) for data acquisition and ImageJ and R for analysis.\n\n### \u03bb-DNA templates for microscopy\n\nLambda-DNA (New England Biolabs) was biotinylated at one or both ends by ligation of the respective complementary biotinylated oligos according to Tanner et al. (Tanner and van Oijen, 2010) (oligo sequences are given in Supplementary file 1B; purchased from IDT). Single-biotinylated DNA templates were stretched by constant flow (20 \u00b5l/min) throughout the experiments (IFI16 clustering and nucleosome assays). Double-biotinylated DNA templates were applied to the flow cell at high flow velocity (100 \u00b5l/min). This allowed binding of the DNA to two biotin moieties, while the DNA was stretched. Free DNA was washed out, IFI16 applied to the flow cell, and flow was then stopped for acquisition of the single molecule diffusion traces.\n\nTo reconstitute nucleosomes, recombinant histone H2A/H2B dimers and H3/H4 tetramers (New England Biolabs) were assembled on biotin-\u03bb-DNA and biotin-601 sequence (Epicypher) by salt-gradient dialysis (2 M to 0.3 mM NaCl in 5 steps, each step with an incubation time of at least 2 hr) in 10 mM Tris/HCl, pH 7.4, 0.1 mM EDTA, 0.5 mM DTT. We tested nucleosome reconstitution by an EMSA assay on digested \u03bb-DNA (Figure 4\u2014figure supplement 1). For this, we generated DNA fragments by digestion with EcoRI (NEB), purified them (Qiagen DNA spin columns) and reconstituted nucleosomes in the concentration ratios that we also used for full-length \u03bb-DNA.\n\n### Single molecule co-localization of IFI16 with nucleosomes tagged with antibodies\n\nAntibodies against human histone H4 and H2B were chosen to target the N- terminal histone tails (Santa Cruz, sc-8657 and sc-8650), and labeled with Atto488-NHS (Life technologies) in PBS at pH 7.0. Labeled antibodies were negatively tested against bare DNA and Ifi16 clusters in the microscopy assay, and showed high specificity for nucleosomal DNA preparations only.\n\n\u03bb-DNA templates, loaded with nucleosomes and tagged with anti-H4, were constantly stretched in the flow channel. Ifi16 co-localized strongly with the nucleosome signal (Video 3, Figure 3\u2014figure supplement 1). In contrast, biotinylated 601-sequence prepared with nucleosomes and tagged with anti-H4-Atto488, hardly showed co-localization with Ifi16, indicating, that there is not sufficient exposed dsDNA available for binding (Figure 4\u2014figure supplement 2).\n\n### Drift correction\n\nFor the clustering experiments, we applied a flow of 0.02 ml/min to our flow cell design of 0.1 mm height and 1 mm width, giving a volumetric flux of 0.33 cm/s. We expect the DNA molecules to be on average 0.2 \u00b5m away from the surface (Tafvizi et al., 2008), giving a velocity at this distance y of (Tafvizi et al., 2011):\n\n$$\nv_{y}=\\frac{3}{2}v_{avg}\\frac{hy-y^{2}}{\\frac{h^{2}}{4}}=40\u00a0\\mum/s,\u00a0\u00a0\u00a0with\u00a0\u00a0\u00a0v_{avg}=\\frac{2}{3}v_{max}\n$$\n\nThe Stokes drag force that acts on the DNA and bound IFI16 molecules is then described by\u00a0$F=6\\pi\u03b7rv1+\\frac{9r}{16y}=1.5fN,$\n\nwith viscosity \u03b7, radius r and distance y.\n\nWe can define this force within the diffusion coefficient D by using the drift velocity v, calculated from single-molecule trajectories (Leith et al., 2012):\n\n$$\nwith\u00a0v=\\frac{\\sum_{j}^{all\u00a0traj.}x_{j,final-}x_{j,\u00a0initial}}{\\sum_{j}^{all\u00a0traj.}t_{j,final-}x_{j,\u00a0initial}}\u22480.127\u00a0\\mum/s.\n$$\n\nIn order to evaluate the effect of flow on the clustering mechanism, we implemented a 1D-random walk Monte-Carlo simulation (Figure 2\u2014figure supplement 4). Here, we calculated the expected search time for two IFI16 molecules (with D=0.026 \u00b5m2/s) to allocate each other on a \u03bb-DNA molecule congested with a varying amount of other diffusing IFI16 molecules (10, 50, 100 molecules). As all particles are equal, we segmented the DNA according to the total number of molecules bound and calculated the effective distance between two particles by using the absolute distance modulo the segment length in order to take the periodic boundaries into account.\n\nWe allowed a maximum distance of 10 nm to consider two particles having met and dimerized. To simulate flow similar to our experimental conditions, to each random step the term vdt was added (The Python code is found in Source code 1).\n",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "425eeab4-5c08-40f5-b2c9-781e84420766",
+      "submission_id": "6483a373-2729-4e69-aeb1-a0e9c10b0ab9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David M Knipe, Harvard Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.11721.021](https://doi.org/10.7554/eLife.11721.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"The innate immune sensor IFI16 recognizes foreign DNA in the nucleus by scanning along the duplex\" for consideration by eLife. Your article has been evaluated by John Kuriyan (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript reports on single molecule tracking studies of the IFI16 DNA sensor on DNA molecules without or without loaded nucleosomes. The work shows that IFI16 can diffuse along the naked DNA and form oligomers. Movement along the DNA is impeded by nucleosomes if spaced closely enough and oligomer formation is reduced. The authors conclude that IFI16 scanning is required for oligomer formation. This is a very timely and potentially important piece of work.\n\nEssential revisions:\n\nThe reviewers felt there were a few areas that needed strengthening:\n\n1) The connection of scanning to IFI16 function is probably beyond the scope this manuscript, but the text needs to more clearly state that IFI16 scanning on DNA could contribute to both innate signaling and epigenetic silencing initiated by IFI16 binding to DNA.\n\n2) The reviewers all felt that the conclusion that scanning was required for oligomer formation needed further documentation or was too strong. One reviewer felt that additional biophysical studies were needed to relate scanning to oligomer formation, while the other two had questions about the specific interpretation of the results. For example, the question of how the binding stoichiometry of IFI16 relates to the two HIN DNA-binding domains was considered and what is the role of each of the HIN domains? How were the data interpreted to allow the conclusion that scanning is required for oligomer formation as opposed to a parallel process to cooperative binding? How was the lower limit of the number of IFI16 molecules per immobile cluster determined? Much of this involves revising the manuscript for a more general audience but may require some additional experiments.\n\n3) There are some minor issues on referencing as addressed below that should be addressed.\n\nThere are a number of details that are embedded in the individual reviews so we are including those so the authors can understand the issues more fully. The areas that need to be addressed are summarized above.\n\nReviewer #1: This manuscript reports on single molecule tracking studies of the IFI16 protein on dsDNA. Consistent with previous studies from the Sohn lab, IFI16 binding to DNA requires large DNA fragments involving oligomers of IFI16. To examine the mechanism of assembly of the oligomers, they tracked single molecules of IFI16 on stretched DNA. They observed that IFI16 tracks along stretches of DNA and they interpret this as required for assembly of the oligomers. Addition of nucleosomes to the DNA at sufficiently high density prevented IFI16 from moving and oligomerizing.\n\nThe scanning of IFI16 along DNA to assemble oligomers to initiate signaling for either innate responses or epigenetic silencing is an important observation. The definition of a mechanism by which IFI16 distinguishes between foreign and self DNA is an important result as well, so this is potentially an important piece of work for the field. I have one reservation. It is not clear from the presentation how the results demonstrate that scanning is required for the assembly of the oligomers versus just happening in parallel to cooperative binding. The text needs to better define the reasoning and interpretation of the results to allow this conclusion. This may be in part due to a lack of background of this reviewer, but manuscripts for eLife should be written for the general reader.\n\nFor example, in the fourth paragraph of the main text it is not clear how the lower limit of the number of IFI16 found in immobile clusters was determined to be 8.\n\nI have a few minor citation issues as well:\n\n1) Main text, second paragraph. Johnson et al., 2013 is really derivative of the other earlier references, which should include Orzalli et al., 2012.\n\n2) Main text, second paragraph. IFI16 is associated with autoimmunity, but it not known how it \"promotes\" it.\n\n3) Main text, sixth paragraph. This states that the chromatin inhibition hypothesis has not been tested directly. Orzalli et al., 2013 did compare gene expression of SV40 DNA in chromatin versus free DNA.\n\nReviewer #2: In this manuscript, Stratmann et al. used a combination of bulk biochemistry and single molecule analysis to investigate the filament assembly process of IFI16 on dsDNA, and the mechanism by which IFI16 measures the dsDNA length as a basis for self vs. non-self-discrimination. Through FRET kinetics analysis, the authors showed that IFI16 binds to dsDNA in a length dependent manner (which was also reported in their earlier paper, Morrone et al., PNAS 2014), and drew the conclusion that 10 protomers are necessary to form the stable filament nucleus. They then used TIRF microscopy to show that IFI16 can diffuse on DNA under flow and proposed that this facilitates filament assembly and DNA length measurement. The authors also used the nucleosome coated DNA to show that IFI16 can only diffuse within the nucleosome-free region of DNA, and proposed that the nucleosome structure limits its filament assembly on self DNA.\n\nThe proposed model of DNA sensing by 1D diffusion is interesting and novel. However, I have a number of concerns. In particular, the authors failed to show the importance of diffusion in filament assembly, which is the main conclusion of this manuscript.\n\nThe length sensitivity observed between ~50 bp-200 bp in Figure 1B,C does not necessarily need to involve 1D diffusion. This is particularly true since the kinetic data in Figure 1B can be reasonably fit without invoking diffusion (and just by using first-order exponential equation). In order to show the importance of diffusion, the authors should show that 3D diffusion alone cannot explain the observed assembly rate, and there should be at least two parameters (1D diffusion and 3D diffusion rates) affecting the assembly rate.\n\nAnother reason that makes me doubt about the importance of diffusion is the range of DNA length that IFI16 appears to sense. The authors observed the assembly rate increases with the DNA length but plateaus around ~200 bp. Since the authors clearly showed that IFI16 can diffuse far beyond 200 bp (>2-3 kb), this observation cannot explain the observed saturation at ~200 bp. On the other hand, this can be simply explained by the requirement of ~10 protomers to form a stable filament, as suggested by the authors. Note that there are proteins that form filaments in a nucleic acid length-dependent manner but without 1D diffusion. If diffusion is important for filament assembly, there should be a length dependence beyond 200 bp, especially at low protein concentration where the 3D diffusion-mediated filament assembly is significantly compromised. Again, without kinetic modeling that clearly shows the inconsistency with 3D diffusion and requirement for 1D diffusion, it is hard to arrive at the same conclusion as the authors.\n\nAnother concern is that the 1D diffusion was shown only under flow. I understand that this is required to visualize diffusion (as you need to stretch the DNA), but this makes diffusion mostly uni-directional, and could likely affect the scanning processivity and the contribution of diffusion to filament assembly efficiency. More importantly, long DNA (perhaps those of viral DNA) collapses in the absence of flow, in which case 3D diffusion (or hopping), in comparison to 1D diffusion, could be more important for the filament assembly.\n\nIn summary, while the authors showed 1D diffusion under flow and length sensitivity in bulk biochemistry, I don't think their data suggest that 1D diffusion is required for the length sensitivity and filament assembly.\n\nReviewer #3: This is a timely and important study that addresses a fundamental question in immune response: How does a nuclear DNA sensor recognize pathogenic dsDNA from host dsDNA within the same subcellular compartment (i.e., nucleus), a recognition critical for the initiation of immune signals? The study focuses on the nuclear DNA sensor IFI16, the interferon inducible protein 16. The authors used fluorescence assays to investigate the binding of IFI16 to foreign dsDNA, first measuring the number of IFI16 molecules necessary for assembly. Using single-molecule fluorescence imaging, the authors go on to monitor the diffusion of IFI16 along lambda-phage dsDNA. Lastly, as chromatinization was previously proposed as a critical contributor to the ability of IFI16 to distinguish between host and foreign dsDNA, the authors perform competition-binding assays and time-resolved fluorescent assays to gain further insight into the impact of chromatinization on pathogenic DNA sensing. Overall, this study elegantly incorporates fluorescence imaging assays to address current questions relevant to the initiation of intrinsic and innate immune responses. This study can have a broad impact on understanding mechanisms of host defense against nuclear-replicating DNA viruses.\n\n1) Based on the FRET results shown in Figure 1, the authors propose that four molecules of IFI16 are required for the initiation of the assembly, while ten molecules are required for oligomerization. This calculation relies on the important previous finding from this lab that the footprint of one IFI16 is ~15 bp (Morrone et al. 2014). The authors should clarify if this requires the binding of both HIN domains and if so, how they ensured in this new experiment that both HIN domains of IFI16 are simultaneously bound to the dsDNA. Can there be a circumstance in which a HIN-A domain of one IFI16 molecule and the HIN-B of another molecule bind to dsDNA? Would this interfere with the calculation of the necessary footprint?\n\n2) The authors propose that IFI16 scans along dsDNA (Figures 1 and 2). However, the mechanism of scanning is still not well defined. IFI16 has two HIN domains that can bind dsDNA with different efficiency. Is the scanning along the DNA substrate accomplished in a similar manner as a two-headed molecular motor? Are both HIN domains required for scanning? Should one of the HIN domains release its binding for the scanning to occur? Some of these questions are difficult to address and may be outside the scope of the current paper. However, one question that could be addressed and that would provide important mechanistic insight is how do the HIN-A and HIN-B domains behave individually? The authors could test this by performing the same studies with individual HIN-A or HIN-B domains. If the diffusion and dissociation behaviors of the individual domains change relative to the HIN-A/HIN-B construct, this may suggest that both domains are required for scanning.\n\n3) The authors show beautifully the movement of IFI16 along the lambda-phage dsDNA and propose that this diffusion is critical for IFI16-mediated immune responses. However, it is not clear if this movement is a property specifically required for triggering immune response rather than a property involved in the transcriptional regulatory functions of IFI16. Are the immobile clusters sufficient for triggering immune response? The authors could add to their Discussion to address these possibilities.\n",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "000b0339-90f0-4f41-852d-9a560509abe9",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C1",
+      "claim": "The ability to recognize foreign double-stranded (ds)DNA of pathogenic origin in the intracellular environment is an essential defense mechanism of the human innate immune system.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to recognize foreign double-stranded (ds)DNA of pathogenic origin in the intracellular environment is an essential defense mechanism of the human innate immune system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about the innate immune system's function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "0d847807-97db-4d9f-9071-9bd07f9174da",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C2",
+      "claim": "The molecular mechanisms underlying distinction between foreign DNA and host genomic material inside the nucleus are not understood.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the molecular mechanisms underlying distinction between foreign DNA and host genomic material inside the nucleus are not understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in scientific understanding at the time of writing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "485dee8d-eb60-48bf-9d30-8c87d9a3716a",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C3",
+      "claim": "The nuclear innate immune sensor IFI16 one-dimensionally tracks long stretches of exposed foreign dsDNA to assemble into supramolecular signaling platforms.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining biochemical assays and single-molecule techniques, we show that the nuclear innate immune sensor IFI16 one-dimensionally tracks long stretches of exposed foreign dsDNA to assemble into supramolecular signaling platforms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from biochemical assays and single-molecule techniques described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "c86b2378-8d69-4cdf-978a-6d1dbc557997",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C4",
+      "claim": "Nucleosomes represent barriers that prevent IFI16 from targeting host DNA by directly interfering with one-dimensional movements.",
+      "claim_type": "EXPLICIT",
+      "source": "We also demonstrate that nucleosomes represent barriers that prevent IFI16 from targeting host DNA by directly interfering with these one-dimensional movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental demonstrations described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "88c3043c-838a-4b35-b1d0-daa961740641",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C5",
+      "claim": "The scanning-assisted assembly mechanism allows IFI16 to distinguish friend from foe and assemble into oligomers efficiently and selectively on foreign DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This unique scanning-assisted assembly mechanism allows IFI16 to distinguish friend from foe and assemble into oligomers efficiently and selectively on foreign DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "f7af7a4a-cbf0-4e6a-bbdf-9c01a13381ed",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C6",
+      "claim": "The host innate immune system detects infection by directly recognizing molecular signatures associated with pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "The host innate immune system detects infection by directly recognizing molecular signatures associated with pathogens (Janeway and Medzhitov, 2002; Medzhitov and Janeway, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "a65897a6-5587-44bf-9289-af84ab592bcf",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C7",
+      "claim": "DNA and RNA are molecular signatures that the innate immune system uses to detect pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, such signatures include universal building blocks of all life, such as DNA and RNA (Janeway and Medzhitov, 2002; Orzalli and Knipe, 2014; Paludan and Bowie, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "f905fe12-61fc-4971-b8dd-f4a9beb6b831",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C8",
+      "claim": "In the cytoplasm, the immune system relies on the absence of endogenous DNA and marks all detected DNA as 'foreign' (nonself).",
+      "claim_type": "EXPLICIT",
+      "source": "In the cytoplasm, the immune system relies on the absence of endogenous DNA, and thus marks all detected DNA as 'foreign' (nonself) (Orzalli and Knipe, 2014; Paludan and Bowie, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "f5542efb-06bd-4c2f-b403-671c5bb58652",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C9",
+      "claim": "DNA viruses often evade the cytosolic detection machineries, as their genomes are not exposed until reaching the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "However, DNA viruses often evade the cytosolic detection machineries, as their genomes are not exposed until reaching the nucleus (Orzalli and Knipe, 2014; Paludan and Bowie, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "b2babf18-59f9-4b9d-b313-519eb5d6da3d",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C10",
+      "claim": "The host counters viral infection strategy in the nucleus by directly assembling supramolecular signaling platforms on invading foreign DNA, but not on its own genomic material.",
+      "claim_type": "EXPLICIT",
+      "source": "The host counters this infection strategy in the nucleus by directly assembling supramolecular signaling platforms that trigger inflammatory responses on invading foreign DNA, but not on its own genomic material (Johnson et al., 2013; Li et al., 2012; Kerur et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "53554297-c8f5-4837-8fe2-85a6f420ebdd",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C11",
+      "claim": "Key players that target foreign dsDNA in the host nucleus have been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Although key players that target foreign dsDNA in the host nucleus have been identified (Orzalli and Knipe, 2014; Paludan and Bowie, 2013), the molecular mechanisms by which these sensors distinguish self from nonself dsDNA remain unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "378f9fe2-af0c-4671-9373-27b87ab92d58",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C12",
+      "claim": "IFI16 is a key innate immune sensor that detects foreign dsDNA and uses it as a scaffold to assemble supramolecular signaling platforms in both the host nucleus and cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "The interferon-inducible protein 16 (IFI16) is a key innate immune sensor that detects foreign dsDNA and uses it as a scaffold to assemble supramolecular signaling platforms in both the host nucleus and cytoplasm (Unterholzner et al., 2010; Johnson et al., 2013; Li et al., 2012; Kerur et al., 2011; Orzalli et al., 2012) (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citations to previous scientific literature and reference to Figure 1A.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "2181b512-a204-447d-9c8e-668e8867f393",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C13",
+      "claim": "IFI16 plays a central role in defense against herpes simplex virus-1.",
+      "claim_type": "EXPLICIT",
+      "source": "IFI16 plays a central role in defense against a number of pathogens (e.g herpes simplex virus-1) (Unterholzner et al., 2010; Johnson et al., 2013; Li et al., 2012; Kerur et al., 2011; Orzalli et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "0ee34504-9bcb-409b-a3a8-3e5d7a04ff57",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C14",
+      "claim": "Persistent IFI16 signaling is associated with autoimmunity, including Sj\u00f6gren's syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, persistent IFI16 signaling is associated with autoimmunity (e.g. Sj\u00f6gren's syndrome) (Mondini et al., 2007; Choubey et al., 2010; Mondini et al., 2010; Gugliesi et al., 2013; Smith and Jefferies, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous scientific literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "2a75ac93-c9a6-48a3-bef8-e1f15639733a",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C15",
+      "claim": "The molecular mechanisms by which IFI16 selectively targets foreign dsDNA remain unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular mechanisms by which IFI16 selectively targets foreign dsDNA remain unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in scientific understanding at the time of writing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "cd4a94fd-c2a7-4828-942d-a3f2151d12ca",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C16",
+      "claim": "IFI16 must overcome the challenge of locating other IFI16 molecules on large pathogen genomes with sizes ranging from 10^5 to 10^6 base pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "First, individual IFI16 molecules must be able to locate one another on large pathogen genomes with sizes ranging from 105 to 106 base pairs (bps).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the challenges IFI16 faces based on the size of pathogen genomes.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "66353007-4ac9-422c-9edb-32c34e1d02d7",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C17",
+      "claim": "IFI16 assembly must take place on foreign dsDNA and must be inhibited on host dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Second and more importantly, this assembly mechanism can only take place on foreign dsDNA and must be inhibited on host dsDNA (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a logical requirement for IFI16 function to distinguish self from non-self DNA.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "3139d3bc-da67-4595-8fbd-f527f3f3a7b4",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C18",
+      "claim": "IFI16 is composed of three functional domains flanked by unstructured linkers: one pyrin domain (PYD) and two dsDNA-binding Hin domains (HinA and HinB).",
+      "claim_type": "EXPLICIT",
+      "source": "IFI16 is composed of three functional domains flanked by unstructured linkers, namely one pyrin domain (PYD) and two dsDNA-binding Hin domains (HinA and HinB; Hin: hematopoietic interferon-inducible nuclear antigen).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the protein structure shown in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "0ebe10e4-e4e7-46cb-a2b9-690f3a481c92",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C19",
+      "claim": "The assembly rate of IFI16 increased non-linearly and by 50-fold from 60 to 200 bps dsDNA, above which it stayed constant (up to 600 bps).",
+      "claim_type": "EXPLICIT",
+      "source": "Using various dsDNA fragment sizes present in excess, we observe that the assembly rate increased non-linearly and by 50-fold from 60 to 200 bps dsDNA, above which it stayed constant (up to 600 bps; Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B and 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "09f09181-0e5c-4b3d-879f-e196845e1e34",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C20",
+      "claim": "IFI16 has a dsDNA-binding footprint of approximately 15 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "With a dsDNA-binding footprint of ~15 bp for one IFI16 (Morrone et al., 2014), our results indicate that about 4 copies are required to initiate assembly, and about 10 IFI16 molecules are required for optimal oligomeric assembly (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "ba65f8af-c9a7-420b-9f67-c639dbfa8a29",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C21",
+      "claim": "About 4 copies of IFI16 are required to initiate assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "With a dsDNA-binding footprint of ~15 bp for one IFI16 (Morrone et al., 2014), our results indicate that about 4 copies are required to initiate assembly, and about 10 IFI16 molecules are required for optimal oligomeric assembly (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from experimental data shown in Figure 1C combined with the known binding footprint.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "6f505fe1-338c-4ad1-a9be-4412061129ac",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C22",
+      "claim": "About 10 IFI16 molecules are required for optimal oligomeric assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "With a dsDNA-binding footprint of ~15 bp for one IFI16 (Morrone et al., 2014), our results indicate that about 4 copies are required to initiate assembly, and about 10 IFI16 molecules are required for optimal oligomeric assembly (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from experimental data shown in Figure 1C combined with the known binding footprint.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "e6a3c068-df0b-4fd5-8b0e-6c0040751bfc",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C23",
+      "claim": "The assembly rate constants scaled linearly with the IFI16 concentration for all measured DNA lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the assembly rate constants scaled linearly with the IFI16 concentration for all measured DNA lengths (Figure 1\u2014figure supplement 1 and Supplementary file 1A), indicating that a purely cooperative assembly mechanism is unlikely.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1 and Supplementary file 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "a606fdd4-ea75-4da1-8455-cc14dc1846c2",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C24",
+      "claim": "A purely cooperative assembly mechanism for IFI16 is unlikely.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the assembly rate constants scaled linearly with the IFI16 concentration for all measured DNA lengths (Figure 1\u2014figure supplement 1 and Supplementary file 1A), indicating that a purely cooperative assembly mechanism is unlikely.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the linear scaling of assembly rate constants with IFI16 concentration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "cc19b445-0f63-4a1a-bb1f-435a79635aaf",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C25",
+      "claim": "Previous work reported relatively small contributions of cooperativity in IFI16 oligomerization with Hill constants near 2 for DNA substrates up to 2000 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this observation, previous work reported relatively small contributions of cooperativity in oligomerization with Hill constants near 2 for DNA substrates up to 2000 bp (Morrone et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "24d7cc75-652e-4b1b-9429-5d6903ad1bf8",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C26",
+      "claim": "The faster assembly of IFI16 on longer dsDNA suggests a model in which IFI16 scans along dsDNA to increase the probability of encountering other IFI16 molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Our ensemble-averaged, solution-phase observations of the faster assembly on longer dsDNA suggest a model in which IFI16 scans along dsDNA to increase the probability of encountering other IFI16 molecules (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model inferred from the experimental observations of assembly kinetics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "0d99b316-413a-4fba-9dfb-f0446bae2480",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C27",
+      "claim": "Individual IFI16 molecules one-dimensionally diffuse on \u03bbdsDNA while bound for several seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2B shows that individual IFI16 molecules one-dimensionally (1D) diffuse on \u03bbdsDNA while bound for several seconds.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-molecule fluorescence imaging data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "965b85a0-0439-4163-8c2c-16be5466bfc2",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C28",
+      "claim": "The diffusion coefficient of IFI16 increased with ionic strength.",
+      "claim_type": "EXPLICIT",
+      "source": "The diffusion coefficient of IFI16 increased with ionic strength, indicating that IFI16 does not maintain a continuous electrostatic interaction with the dsDNA backbone, but instead moves along the \u03bbdsDNA scaffold by executing microscopically small steps (Blainey et al., 2006) (Figure 2B and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "f68b4cf3-951a-4610-b503-5b3ce415421c",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C29",
+      "claim": "IFI16 does not maintain a continuous electrostatic interaction with the dsDNA backbone, but instead moves along the \u03bbdsDNA scaffold by executing microscopically small steps.",
+      "claim_type": "EXPLICIT",
+      "source": "The diffusion coefficient of IFI16 increased with ionic strength, indicating that IFI16 does not maintain a continuous electrostatic interaction with the dsDNA backbone, but instead moves along the \u03bbdsDNA scaffold by executing microscopically small steps (Blainey et al., 2006) (Figure 2B and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the observation that the diffusion coefficient increases with ionic strength, supported by citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "32e37318-a8df-4e1f-bf4a-1be8cb4b35e1",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C30",
+      "claim": "An IFI16 construct lacking the oligomerizing pyrin domain (IFI16HinAB) showed similar diffusional properties to full-length IFI16.",
+      "claim_type": "EXPLICIT",
+      "source": "An IFI16 construct lacking the oligomerizing pyrin domain (PYD) (IFI16HinAB; see also Figure 1A) showed similar diffusional properties, suggesting that the dsDNA-binding HIN200 domains are responsible for 1D diffusion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data comparing full-length IFI16 and IFI16HinAB.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "9e4a18e6-06f5-484c-9ee0-e511eed1cd15",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C31",
+      "claim": "The dsDNA-binding HIN200 domains are responsible for 1D diffusion of IFI16.",
+      "claim_type": "EXPLICIT",
+      "source": "An IFI16 construct lacking the oligomerizing pyrin domain (PYD) (IFI16HinAB; see also Figure 1A) showed similar diffusional properties, suggesting that the dsDNA-binding HIN200 domains are responsible for 1D diffusion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the observation that IFI16HinAB (lacking PYD) shows similar diffusion to full-length IFI16.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "c365468f-5185-4865-89a9-9a886c193b8c",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C32",
+      "claim": "At higher concentrations of IFI16, distinct, immobile clusters form along \u03bbdsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon applying higher concentrations of IFI16 with a constant supply of proteins into our flow cell, we observed a gradual formation of distinct, immobile clusters along \u03bbdsDNA (Figure 2C, Figure 2\u2014figure supplement 2, and Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-molecule imaging data shown in Figure 2C, Figure 2\u2014figure supplement 2, and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "4871bfbc-85e6-45f1-8941-1515dbf4468e",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C33",
+      "claim": "Over time, there is an increase in the number of molecules per IFI16 cluster and a concomitant decrease in the diffusion coefficient.",
+      "claim_type": "EXPLICIT",
+      "source": "Over time, we also observed an increase in the number of molecules per cluster and a concomitant decrease in the diffusion coefficient (Figures 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 2C and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "a2278921-8dae-495a-a152-b59b3b0fe5cf",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C34",
+      "claim": "The lower limit of the number of IFI16 molecules found in immobile clusters is equivalent to eight protomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-molecule intensity analysis revealed that the lower limit of the number of IFI16 molecules found in immobile clusters is equivalent to eight protomers (Figure 2D and Figure 2\u2014figure supplement 3), which also corroborate the optimal complex (ten protomers) suggested from Figure 1C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-molecule intensity analysis shown in Figure 2D and Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "367e13e0-018f-4d1d-bfe3-dc1763697398",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C35",
+      "claim": "Individual IFI16 molecules either form new clusters or join other clusters in a stochastic manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, individual IFI16 molecules either formed new clusters or joined other clusters in a stochastic manner, and the immobile clusters formed faster with higher IFI16 concentrations (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental observations shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "1d85eda8-49f0-422a-a91c-5e991edbd8ee",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C36",
+      "claim": "Immobile IFI16 clusters form faster with higher IFI16 concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, individual IFI16 molecules either formed new clusters or joined other clusters in a stochastic manner, and the immobile clusters formed faster with higher IFI16 concentrations (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "0dcf2dab-c433-4e4c-9f46-4fedefceabcb",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C37",
+      "claim": "The rate of addition of IFI16 molecules to clusters is independent of the size of the existing cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of addition of IFI16 molecules to clusters is independent on the size of the existing cluster, confirming the absence of strong cooperativity in assembly (Figure 2C; bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2C bottom panel.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "50d75143-6f48-4b8f-8a38-503e5b021d16",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C38",
+      "claim": "The independence of addition rate on cluster size confirms the absence of strong cooperativity in IFI16 assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of addition of IFI16 molecules to clusters is independent on the size of the existing cluster, confirming the absence of strong cooperativity in assembly (Figure 2C; bottom panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the observation that addition rate is independent of cluster size.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "f452ed3a-a9eb-4914-8452-e7af9e36f937",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C39",
+      "claim": "The 1D diffusion of IFI16 on dsDNA explains why the assembly rates increase with the DNA length in the bulk experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The 1D diffusion of IFI16 on dsDNA explains why the assembly rates increase with the DNA length in the bulk experiments (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference connecting the single-molecule observations of 1D diffusion to the bulk kinetics data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "0be1e167-13e1-4cdf-b1a9-ab4d746336c9",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C40",
+      "claim": "Longer dsDNA acts as an antenna, allowing binding of more IFI16 while 1D diffusion facilitates dynamic association.",
+      "claim_type": "EXPLICIT",
+      "source": "With the longer dsDNA acting as an antenna, it allows binding of more IFI16 while 1D diffusion facilitates dynamic association (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a mechanistic explanation inferred from the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "be4b6487-e279-4449-bf0a-972944623ada",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C41",
+      "claim": "The saturation of the assembly rate can be explained by the square dependence of the diffusional search time on length.",
+      "claim_type": "EXPLICIT",
+      "source": "The saturation of the assembly rate (Figure 1C) can be explained by the square dependence of the diffusional search time on length: at a sufficiently long dsDNA length, the dissociation rate of an individual IFI16 will be faster than the time needed to scan along the entire length of the DNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical explanation for the observed saturation in assembly rate based on diffusion principles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "eb3f09b2-dd05-4545-a482-6b50c5d1254f",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C42",
+      "claim": "At sufficiently long dsDNA length, the dissociation rate of an individual IFI16 will be faster than the time needed to scan along the entire length of the DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The saturation of the assembly rate (Figure 1C) can be explained by the square dependence of the diffusional search time on length: at a sufficiently long dsDNA length, the dissociation rate of an individual IFI16 will be faster than the time needed to scan along the entire length of the DNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical explanation for the observed saturation in assembly rate.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "442f43f4-c0e2-4c93-a291-a6796c6fd33b",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C43",
+      "claim": "Longer DNA substrates work as traps rather than antennae, since individual IFI16 molecules are farther apart and thus less likely to encounter one another.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, longer DNA substrates work no longer as antennae, but as traps, since individual IFI16 molecules are farther apart and thus less likely to encounter one another (Hu et al., 2006; Turkin et al., 2015; 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citations to previous work on DNA-protein interactions.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "0056916e-7368-40ab-be22-3a877c5c7a53",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C44",
+      "claim": "The results of bulk and single-molecule experiments are consistent with the dsDNA-size dependent binding in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the results of our bulk and single-molecule experiments are consistent with the dsDNA-size dependent binding in vitro(Morrone et al., 2014), which also correlates with the IFI16-induced inflammatory responses in vivo(Unterholzner et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim connects the current experimental results to previous in vitro and in vivo studies through citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "5d23ed37-175d-4bec-a78e-cd24a8bd4afd",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C45",
+      "claim": "dsDNA-size dependent binding correlates with IFI16-induced inflammatory responses in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the results of our bulk and single-molecule experiments are consistent with the dsDNA-size dependent binding in vitro(Morrone et al., 2014), which also correlates with the IFI16-induced inflammatory responses in vivo(Unterholzner et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous in vivo work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "aeb6f3e2-76df-45a3-bb41-372d4cc2d373",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C46",
+      "claim": "1D-diffusion mediated assembly plays a key role in regulating the overall IFI16-mediated immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we propose that the 1D-diffusion mediated assembly plays a key role in regulating the overall IFI16-mediated immune responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on the experimental findings and their correlation with in vivo responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "49e1003b-fdb5-4f3b-bb48-211a188b526d",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C47",
+      "claim": "It has long been speculated that chromatinization acts as the key feature that allows IFI16 to distinguish host from foreign DNA in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "It has long been speculated that chromatinization acts as the key feature that allows IFI16 to distinguish host from foreign DNA in the nucleus (Kerur et al., 2011; Unterholzner and Bowie, 2011; Li et al., 2012; Orzalli et al., 2012; 2013; Johnson et at., 2014); IFI16 oligomerizes on exposed invading foreign-dsDNA before it becomes hetero-chromatinized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous speculative work in the field.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "63639261-0011-4e40-96ae-7ed7e1cec772",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C48",
+      "claim": "IFI16 oligomerizes on exposed invading foreign-dsDNA before it becomes hetero-chromatinized.",
+      "claim_type": "EXPLICIT",
+      "source": "It has long been speculated that chromatinization acts as the key feature that allows IFI16 to distinguish host from foreign DNA in the nucleus (Kerur et al., 2011; Unterholzner and Bowie, 2011; Li et al., 2012; Orzalli et al., 2012; 2013; Johnson et at., 2014); IFI16 oligomerizes on exposed invading foreign-dsDNA before it becomes hetero-chromatinized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "955edd8e-c7cf-498c-9f14-8689571f8657",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C49",
+      "claim": "Previous in vivo work demonstrated that transfected chromatinized SV40 DNA is able to evade IFI16 oligomerization and downstream responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous in vivo work demonstrated that transfected chromatinized SV40 DNA is able to evade IFI16 oligomerization and downstream responses (Orzalli et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous in vivo work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "f5e0713b-48f5-4c82-8554-4641b52b2cf0",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C50",
+      "claim": "The molecular mechanism by which IFI16 could use chromatinization to distinguish self from nonself has yet to be identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the molecular mechanism by which IFI16 could use chromatinization to distinguish self from nonself has yet to be identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a gap in scientific understanding at the time of writing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "599e2d32-8315-4e1e-9268-b16fb2e25667",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C51",
+      "claim": "Di-nucleosomes with 6-, 30-, and 50-bp spacer failed to compete against IFI16-bound FAM-labeled 70-bp dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, di-nucleosomes with 6-, 30-, and 50-bp spacer failed to compete against IFI16-bound FAM-labeled 70-bp dsDNA, (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by competition-binding assay data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "e3b04114-a1f0-4a00-b896-944523cca1ab",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C52",
+      "claim": "The di-nucleosome with 70-bp spacer competed similarly as 70-bp naked dsDNA, but significantly more weakly than naked 300-bp dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the di-nucleosome with 70-bp spacer competed similarly as 70-bp naked dsDNA, but significantly more weakly than naked 300-bp dsDNA (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by competition-binding assay data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "1623dc9a-09fd-4950-afd1-0f562f0d8f04",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C53",
+      "claim": "Di-nucleosomes with spacers shorter than 70-bp failed to support IFI16 assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "In FRET assembly assays, di-nucleosomes with spacers shorter than 70-bp failed to support assembly (Figure 3C), consistent with our FRET kinetics assays using naked dsDNA (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FRET assembly assay data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "4822c41b-a168-4167-997f-ab262509adef",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C54",
+      "claim": "The 70-bp spacer di-nucleosome supported oligomerization of IFI16.",
+      "claim_type": "EXPLICIT",
+      "source": "The 70-bp spacer di-nucleosome supported oligomerization of IFI16; however, the assembly kinetics was again similar to that of naked 70-bp dsDNA, but not that of naked 300-bp dsDNA (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FRET assembly assay data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "bc011bc1-592f-4fa0-8b76-3a5f25efbaa6",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C55",
+      "claim": "The assembly kinetics of IFI16 on 70-bp spacer di-nucleosome was similar to that of naked 70-bp dsDNA, but not that of naked 300-bp dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The 70-bp spacer di-nucleosome supported oligomerization of IFI16; however, the assembly kinetics was again similar to that of naked 70-bp dsDNA, but not that of naked 300-bp dsDNA (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by FRET assembly assay data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "47db2a10-f0c8-46a0-bece-b948ae508a85",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C56",
+      "claim": "Efficient IFI16 cluster formation requires a minimal length of 50-70 base pairs of exposed dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results show that efficient IFI16 cluster formation requires a minimal length of 50-70 base pairs of exposed dsDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the di-nucleosome competition and FRET assembly experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "1898ce9c-5ff7-4eb1-bb34-4b314ae5256b",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C57",
+      "claim": "The size of dsDNA linker between two nucleosomes is about 20 to 30 bps in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that the size of dsDNA linker between two nucleosomes is about 20 to 30 bps in mammals (McGhee et al., 1983), these results directly support the hypothesis that chromatinization is a key deterrent for preventing the assembly of IFI16 signaling platforms on self-dsDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work on nucleosome structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "69fc163b-4eae-466e-bfd1-d781745bdae4",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C58",
+      "claim": "Chromatinization is a key deterrent for preventing the assembly of IFI16 signaling platforms on self-dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that the size of dsDNA linker between two nucleosomes is about 20 to 30 bps in mammals (McGhee et al., 1983), these results directly support the hypothesis that chromatinization is a key deterrent for preventing the assembly of IFI16 signaling platforms on self-dsDNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental results combined with knowledge of nucleosome linker length.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "6a619efe-df7e-4ba7-980e-dc10606e6446",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C59",
+      "claim": "Single IFI16 molecules are pushed by hydrodynamic flow to one direction and cluster at nucleosomal sites on \u03bbdsDNA, unable to overcome the octamers by diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "The application of hydrodynamic flow resulted in the single IFI16 molecules being pushed to one direction and clustering at nucleosomal sites on \u03bbdsDNA, unable to overcome the octamers by diffusion (Figure 4A, Figure 4\u2014figure supplement 2, and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-molecule imaging data shown in Figure 4A, Figure 4\u2014figure supplement 2, and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "890326c6-d51c-44f8-a377-4f1dd54cb3e5",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C60",
+      "claim": "Without the antibody, the motion of IFI16 was still confined on nucleosome-loaded DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Without the antibody, the motion of IFI16 was still confined, whereas for bare \u03bbdsDNA, IFI16 moved with a high processivity along the entire strand (Figures 4B,C, and Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 4B, 4C, and Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "12766e0d-3741-486b-8990-03df9d283c99",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C61",
+      "claim": "On bare \u03bbdsDNA, IFI16 moved with a high processivity along the entire strand.",
+      "claim_type": "EXPLICIT",
+      "source": "Without the antibody, the motion of IFI16 was still confined, whereas for bare \u03bbdsDNA, IFI16 moved with a high processivity along the entire strand (Figures 4B,C, and Figure 4\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 4B, 4C, and Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "6383a1f8-21a5-4d04-8501-1999ef8da368",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C62",
+      "claim": "Nucleosomes directly restrict the 1D diffusion of IFI16 and consequently limit the assembly of IFI16 signaling platforms on dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are consistent with the bulk experiments (Figure 3), and confirm that nucleosomes directly restrict the 1D diffusion of IFI16 and consequently limit the assembly of IFI16 signaling platforms on dsDNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the single-molecule observations of IFI16 behavior on nucleosomal DNA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "cd420e9e-941b-48fb-9119-7c05b2af51d8",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C63",
+      "claim": "The molecular mechanism by which innate immune sensors distinguish self from foreign dsDNA in the host nucleus has been a major unresolved question in innate immunology.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular mechanism by which innate immune sensors distinguish self from foreign dsDNA in the host nucleus has been a major unresolved question in innate immunology (Kerur et al., 2011; Unterholzner and Bowie, 2011; Li et al., 2012; 2013; Orzalli et al., 2012; 2013; Johnson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement identifies a major question in the field, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "12a749a1-1860-4179-ad0b-537a687111ad",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C64",
+      "claim": "The oligomerization of IFI16 on under-chromatinized foreign DNA plays a key role in initiating inflammatory and antiviral responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The oligomerization of IFI16 on under-chromatinized foreign DNA plays a key role not only in initiating inflammatory and antiviral responses, (Monroe et al., 2014; Orzalli et al., 2012; Kerur et al., 2011), but also in regulating the hetero-chromatinization and silencing of viral dsDNA (Johnson et al., 2014; Orzalli et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "fe2d1023-03ca-4d6f-83b8-c406a2e838e6",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C65",
+      "claim": "The oligomerization of IFI16 on under-chromatinized foreign DNA plays a key role in regulating the hetero-chromatinization and silencing of viral dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The oligomerization of IFI16 on under-chromatinized foreign DNA plays a key role not only in initiating inflammatory and antiviral responses, (Monroe et al., 2014; Orzalli et al., 2012; Kerur et al., 2011), but also in regulating the hetero-chromatinization and silencing of viral dsDNA (Johnson et al., 2014; Orzalli et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "b4dc94b0-f7ee-492d-a740-edc164887e97",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C66",
+      "claim": "IFI16 1D scans along exposed dsDNA to assemble into distinct clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "By using time-resolved bulk and single-molecule fluorescence assays, we demonstrate here that IFI16 ID scans along exposed dsDNA to assemble into distinct clusters and that chromatinization is sufficient to inhibit IFI16 from targeting host dsDNA for assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data from bulk and single-molecule assays presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "0fb92d31-8b5b-45ef-8105-ad66621671a9",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C67",
+      "claim": "Chromatinization is sufficient to inhibit IFI16 from targeting host dsDNA for assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "By using time-resolved bulk and single-molecule fluorescence assays, we demonstrate here that IFI16 ID scans along exposed dsDNA to assemble into distinct clusters and that chromatinization is sufficient to inhibit IFI16 from targeting host dsDNA for assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data from bulk and single-molecule assays presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "26b2cc44-285f-4210-967a-8a866814acd7",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C68",
+      "claim": "In vivo, the 1D scanning mechanism allows a limited number of IFI16 molecules to allocate each other on large genomes of invading pathogens.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, this 1D scanning mechanism allows a limited number of IFI16 molecules to allocate each other on large genomes of invading pathogens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the in vivo function based on the in vitro experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "a34da1fd-0adf-4e7e-8de4-b7cada1882ed",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C69",
+      "claim": "1D scanning combined with 3D sampling of binding sites on a collapsed DNA molecule optimizes the oligomerization and downstream signaling time.",
+      "claim_type": "EXPLICIT",
+      "source": "In combination with 3D sampling of binding sites on a collapsed DNA molecule, this process optimizes the oligomerization and downstream signaling time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about how 1D and 3D search mechanisms work together.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "d2e002a1-9438-48a5-95c6-f8fd196e57f0",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C70",
+      "claim": "IFI16 belongs to the family of AIM2-like receptors, which include other nuclear and cytosolic foreign dsDNA-sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "IFI16 belongs to the family of AIM2-like receptors, which include other nuclear and cytosolic foreign dsDNA-sensors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about protein families.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "aeee0dd3-0a4b-4447-9e3e-db7d70043a05",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C71",
+      "claim": "This family of sensors is implicated in a number of autoimmune disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "This family of sensors is implicated in a number of autoimmune disorders (Mondini et al., 2007; 2010; Choubey et al., 2010; Gugliesi et al., 2013; Smith and Jefferies, 2014); how regulation of assembly is disrupted may provide insights into these afflictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work on autoimmune disorders.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "bd3d14b5-418a-449c-a97a-d3315aa72cef",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C72",
+      "claim": "Understanding how regulation of IFI16 assembly is disrupted may provide insights into autoimmune disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "This family of sensors is implicated in a number of autoimmune disorders (Mondini et al., 2007; 2010; Choubey et al., 2010; Gugliesi et al., 2013; Smith and Jefferies, 2014); how regulation of assembly is disrupted may provide insights into these afflictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future insights.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "b2518941-d613-4390-a851-2b16c4ecda77",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C73",
+      "claim": "Human full-length IFI16 and IFI16HinAB were cloned and expressed using E. coli T7 express cells as a C-terminally His6-tagged protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Human full-length IFI16 and IFI16HinAB were cloned and expressed using E. coli T7 express cells (NEB) as a C-terminally His6-tagged protein as described in Morrone et al. (Morrone et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "cdeae436-d036-4b02-a348-e07867af4a6f",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C74",
+      "claim": "The label to protein ratio for fluorescent labeling was approximately 1:1.",
+      "claim_type": "EXPLICIT",
+      "source": "DyLight-550, DyLight-650, or Cy5 fluorophore was incorporated to IFI16 using maleimide chemistry (purchased from Thermo Scientific and Invitrogen) and was performed as described in Morrone, et al. (Morrone et al., 2014). The label to protein ratio was ~ 1:1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail from the experimental procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "5f3d6c30-5196-4864-9903-874f10e59651",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C75",
+      "claim": "Octamer refolding and nucleosome reconstitution was performed at a 2:1 molar ratio of octamer:DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Octamer refolding and nucleosome reconstitution was performed as described in Luger et al. (Luger et al., 1999), at a 2:1 molar ratio of octamer:DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "418869e8-842d-40e9-9b30-f4bf98500c33",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C76",
+      "claim": "All absorption, fluorescence anisotropy, and fluorescence excitation/emission experiments were performed at least three times.",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were performed at least three times and the fits to data were generated by Kaleidagraph software (synergy).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about experimental replication.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "379366b5-6122-4dbf-9d53-5c60b24d4dd5",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C77",
+      "claim": "The dead time between addition of IFI16 and the first measurement in FRET time dependence assays was 15-20 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The dead time between addition of IFI16 and the first measurement was 15-20 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "dc6b55b4-37c1-46c2-a280-d1d33446ed11",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C78",
+      "claim": "The final dsDNA molar-concentrations in FRET assays are at least sixfold higher than their determined binding constants.",
+      "claim_type": "EXPLICIT",
+      "source": "The final dsDNA molar-concentrations are at least sixfold higher than their determined binding constants by fluorescence anisotropy assays described in Morrone, et al. (Morrone et al., 2014), and the FRET ratio for each time point was calculated by dividing the acceptor emission (678 nm) by the donor emission (574 nm) (Morrone et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail supported by citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "93442bff-6592-4edd-95fa-fafa6b6f2a28",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C79",
+      "claim": "The flow applied in clustering experiments corresponds to a drag force of 1-2 fN on the DNA substrate and bound IFI16 molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Constant flow (20 \u00b5l/min) is applied for the clustering experiments with elevated IFI16 concentrations, corresponding to a drag force of 1-2 fN on the DNA substrate and bound IFI16 molecules.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a calculated value based on the experimental flow conditions, shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "2a71dc1c-1e5e-4066-b9b6-f15acd781e7a",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C80",
+      "claim": "The median measured diffusion coefficient D for single IFI16 molecules increases from 0.026 \u00b5m\u00b2s\u207b\u00b9 (no flow) to 0.031 \u00b5m\u00b2s\u207b\u00b9 (with flow).",
+      "claim_type": "EXPLICIT",
+      "source": "The median measured diffusion coefficient D for single molecules increases from 0.026 \u00b5m2s-1 (no flow) to 0.031 \u00b5m2s-1 (with flow).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "8349f197-9930-475b-83de-252681f55cf2",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "claim_id": "C81",
+      "claim": "The presence of a drag velocity does not significantly alter the median search time for IFI16 dimerization on \u03bbDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Monte-Carlo simulation of IFI16 dimerization on \u03bbDNA that is occupied by varying amounts of 1D-diffusing IFI16s. The presence of a drag velocity v does not significantly alter the median search time.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Monte-Carlo simulation results shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a7d93e1c-9f23-45e5-8825-cf814e7659e5",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "IFI16 assembly kinetics on naked dsDNA depends on DNA length, with assembly rates increasing 50-fold from 60 to 200 bp and saturating above 200 bp. Approximately 4 IFI16 molecules are required to initiate assembly and ~10 for optimal assembly. Assembly rate constants scale linearly with IFI16 concentration, indicating a non-cooperative mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C26 present converging evidence from FRET-based bulk kinetics experiments (Figure 1B,C) showing DNA length-dependent assembly. The linear scaling with protein concentration (C23, Figure 1\u2014figure supplement 1) and consistency with prior Hill constant measurements (C25) support the conclusion that assembly is not strongly cooperative (C24). The inferred stoichiometry (C21, C22) is calculated from the known 15 bp footprint (C20) and is consistent with subsequent single-molecule data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "f5b38770-f0be-46d8-a601-2379b518fb59",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Individual IFI16 molecules undergo one-dimensional diffusion along dsDNA with residence times of several seconds. The diffusion coefficient increases with ionic strength, indicating a hopping mechanism rather than continuous sliding. The HIN200 domains are responsible for 1D diffusion, as the IFI16HinAB construct lacking the pyrin domain shows similar diffusional properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 are supported by single-molecule fluorescence imaging data (Figure 2B, Figure 2\u2014figure supplement 1). The ionic strength dependence (C28) provides mechanistic insight into the diffusion mode (C29), supported by appropriate citation. The domain mapping experiment (C30) logically supports the conclusion about HIN200 domain function (C31). The data quality and interpretation appear sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "cfacbe67-0a14-437a-8417-25e9ae554fd9",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "At higher IFI16 concentrations, distinct immobile clusters form along \u03bbdsDNA through stochastic assembly. Cluster formation is concentration-dependent and involves a minimum of ~8 IFI16 molecules. The rate of IFI16 addition to clusters is independent of cluster size, confirming non-cooperative assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C38 are supported by single-molecule imaging and intensity analysis (Figure 2C-E, supplementary figures). The stoichiometry determination (C34) uses single-molecule intensity calibration (Figure 2\u2014figure supplement 3), which is appropriate. The observation that addition rate is independent of cluster size (C37) directly supports the non-cooperativity conclusion (C38), consistent with bulk data. The concentration dependence (C36) is clearly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "0d522c2d-1848-4f89-8cfd-14857fffc381",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "1D diffusion of IFI16 explains the DNA length-dependent assembly kinetics observed in bulk experiments. Longer DNA acts as an antenna to recruit more IFI16, but assembly rate saturates at very long lengths due to the square dependence of diffusional search time, causing dissociation to outpace full-length scanning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43 provide a mechanistic model connecting single-molecule observations to bulk kinetics. The antenna model (C40) and saturation explanation (C41-C43) are reasonable inferences from diffusion theory and are supported by appropriate citations. However, the model is somewhat qualitative\u2014quantitative modeling or simulation would strengthen these claims. The logic is sound but relies on theoretical reasoning rather than direct experimental validation of the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "fdb1b89f-8d78-453b-8c52-a5a3cd92627c",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Di-nucleosomes with spacers shorter than 70 bp fail to support IFI16 assembly, while 70-bp spacer di-nucleosomes support assembly with kinetics similar to naked 70-bp DNA. Efficient IFI16 cluster formation requires a minimal length of 50-70 bp of exposed dsDNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C56 are supported by competition binding assays (Figure 3B) and FRET assembly kinetics (Figure 3C). The experiments systematically vary spacer length and show clear transitions in binding and assembly behavior. The conclusion about minimal exposed DNA length (C56) is a reasonable inference from the data. The consistency between competition and assembly assays strengthens the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "85256160-bf7f-471a-84bb-2fc3ffb28443",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Since mammalian nucleosome linker DNA is typically 20-30 bp, and IFI16 requires 50-70 bp of exposed DNA for efficient assembly, chromatinization acts as a key deterrent preventing IFI16 signaling platform assembly on self-DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 connect experimental findings (C51-C56) with established knowledge about nucleosome spacing (C57, supported by McGhee et al. 1983 citation). The logic is sound: if IFI16 requires 50-70 bp exposed DNA and host chromatin has only 20-30 bp linkers, then chromatinization would prevent assembly. This is a key mechanistic insight, though it remains an in vitro demonstration that would benefit from in vivo validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "85165855-5a28-4f43-b81d-c7b403f0fdd9",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Single-molecule imaging shows that nucleosomes directly restrict 1D diffusion of IFI16, acting as physical barriers. On nucleosome-loaded DNA, IFI16 molecules cluster at nucleosomal sites and cannot overcome octamers by diffusion, while on bare DNA, IFI16 moves processively along the entire strand.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 are supported by single-molecule imaging experiments (Figure 4A-C, supplementary figures, Video 3). The use of fluorescently labeled anti-histone antibodies to mark nucleosome positions is appropriate. The contrast between bare and nucleosomal DNA (C60-C61) is clear. The conclusion that nucleosomes restrict diffusion (C62) is well-supported and consistent with bulk experiments (Figure 3). This provides direct mechanistic evidence for the self/non-self discrimination model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "657de6d7-a7e9-4cc0-99c2-cefb40f63359",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "IFI16 uses a scanning-assisted assembly mechanism, one-dimensionally tracking exposed foreign dsDNA to assemble into signaling platforms. Nucleosomes prevent IFI16 from targeting host DNA by interfering with 1D movements, allowing IFI16 to distinguish self from non-self DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C66-C67 represent the main conclusions of the manuscript, integrating findings from bulk kinetics, single-molecule diffusion, and nucleosome experiments. The scanning mechanism (C3, C66) is directly demonstrated by single-molecule imaging. The nucleosome barrier function (C4, C67) is supported by both bulk and single-molecule experiments. The self/non-self discrimination model (C5) is a logical synthesis of all results. The evidence is strong, though in vivo validation would further strengthen these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "0da782f4-b37c-4133-a5ba-c56b95e3e069",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The experimental results are consistent with previous in vitro DNA-size dependent binding and correlate with in vivo IFI16-induced inflammatory responses. 1D-diffusion mediated assembly is proposed to play a key role in regulating IFI16-mediated immune responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 connect the current findings to prior work through appropriate citations (Morrone et al. 2014, Unterholzner et al. 2010). The consistency with previous in vitro and in vivo observations (C44-C45) strengthens the biological relevance of the findings. However, C46 is a proposal rather than a demonstration\u2014the in vivo role of 1D diffusion remains to be directly tested. The claim is reasonable but represents an extrapolation from in vitro data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "fe6b4624-9ea4-4c38-833b-5288ebe48bb8",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In vivo, the 1D scanning mechanism allows IFI16 molecules to locate each other on large pathogen genomes. Combined with 3D sampling on collapsed DNA, this optimizes oligomerization and signaling time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C69 are inferences about in vivo function based on in vitro observations. While the logic is reasonable\u20141D diffusion would facilitate search on large genomes\u2014these claims lack direct experimental support. The manuscript provides no in vivo data demonstrating 1D scanning or the proposed combination of 1D and 3D search mechanisms. The role of DNA compaction/collapse in vivo is speculative. These are plausible hypotheses requiring future validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "b8e63852-9037-48c9-ae31-2834a16d5331",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Flow conditions in clustering experiments correspond to a drag force of 1-2 fN on DNA and bound IFI16. The median diffusion coefficient increases slightly from 0.026 to 0.031 \u03bcm\u00b2s\u207b\u00b9 with flow. Monte-Carlo simulations show that drag velocity does not significantly alter median search time for IFI16 dimerization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C81 address potential concerns about experimental artifacts from flow. The drag force calculation (C79) appears reasonable based on the stated flow rate and geometry. The measured effect on diffusion coefficient (C80) is small. The Monte-Carlo simulation (C81, Figure 2\u2014figure supplement 4) supports the conclusion that flow does not significantly affect the clustering mechanism. This is important methodological validation, though more details on simulation parameters would be helpful.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "fb1c6229-a9e2-49c8-b344-d7ee44d4fa2c",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background and context: The innate immune system recognizes foreign DNA, but the molecular mechanisms for distinguishing self from non-self DNA in the nucleus are unknown. IFI16 is a key nuclear sensor that assembles signaling platforms on foreign DNA and must overcome challenges of locating other IFI16 molecules on large genomes while avoiding host chromatin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C18 establish background knowledge and identify the research gap. These are well-supported by appropriate citations to prior literature. Claims C1, C6-C14 cite established knowledge. Claims C2, C15, C50, C63 identify knowledge gaps that motivate the study. Claims C16-C17 articulate the biological challenges IFI16 must overcome. Claim C18 describes protein structure. These contextual claims are appropriately documented and set up the research questions addressed by the experimental work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "a4291fa7-704b-4487-ab49-14775e79cf8f",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior speculation and evidence: It has been speculated that chromatinization allows IFI16 to distinguish host from foreign DNA, with IFI16 oligomerizing on exposed foreign DNA before hetero-chromatinization. Previous in vivo work showed chromatinized SV40 DNA evades IFI16, but the molecular mechanism was unknown. IFI16 oligomerization plays roles in inflammatory responses and viral DNA silencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C50, C63-C65 summarize prior speculation and findings that motivate the current study. These are appropriately supported by citations (Kerur et al. 2011, Orzalli et al. 2013, Johnson et al. 2014, etc.). The claims accurately represent the state of knowledge and identify the mechanistic gap (C50, C63) that the current work addresses. This provides important context for interpreting the significance of the experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "f358945a-688a-496d-8334-39d9ee22c461",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "IFI16 belongs to the AIM2-like receptor family implicated in autoimmune disorders. Understanding how assembly regulation is disrupted may provide insights into these diseases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 discuss broader implications. C70 states established knowledge about protein family. C71 is supported by citations linking this family to autoimmune disorders. C72 is speculative about future insights but is appropriately framed as a possibility rather than a conclusion. These claims provide context for the medical relevance of understanding IFI16 assembly mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    },
+    {
+      "id": "f3eeb166-d400-410c-859a-e9c98945b138",
+      "content_id": "65f72b13-6f66-48d6-aa25-92c0abe8cad8",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Methodological details: Proteins were expressed in E. coli and fluorescently labeled at ~1:1 ratio. Nucleosomes were reconstituted at 2:1 octamer:DNA ratio. Experiments were performed at least three times. FRET assays had 15-20 s dead time and used DNA concentrations at least 6-fold above Kd.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C78 describe methodological details that are important for reproducibility. These are straightforward factual statements about experimental procedures, supported by citations to established protocols (C73, C75, C78). The labeling stoichiometry (C74), replication (C76), and assay conditions (C77-C78) are clearly stated. These details are appropriate and sufficient for the methods section, though some additional information (e.g., protein purity, labeling site) would be helpful.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:08:10.588172Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0ebe10e4-e4e7-46cb-a2b9-690f3a481c92",
+      "result_id": "a7d93e1c-9f23-45e5-8825-cf814e7659e5"
+    },
+    {
+      "claim_id": "09f09181-0e5c-4b3d-879f-e196845e1e34",
+      "result_id": "a7d93e1c-9f23-45e5-8825-cf814e7659e5"
+    },
+    {
+      "claim_id": "ba65f8af-c9a7-420b-9f67-c639dbfa8a29",
+      "result_id": "a7d93e1c-9f23-45e5-8825-cf814e7659e5"
+    },
+    {
+      "claim_id": "6f505fe1-338c-4ad1-a9be-4412061129ac",
+      "result_id": "a7d93e1c-9f23-45e5-8825-cf814e7659e5"
+    },
+    {
+      "claim_id": "e6a3c068-df0b-4fd5-8b0e-6c0040751bfc",
+      "result_id": "a7d93e1c-9f23-45e5-8825-cf814e7659e5"
+    },
+    {
+      "claim_id": "a606fdd4-ea75-4da1-8455-cc14dc1846c2",
+      "result_id": "a7d93e1c-9f23-45e5-8825-cf814e7659e5"
+    },
+    {
+      "claim_id": "cc19b445-0f63-4a1a-bb1f-435a79635aaf",
+      "result_id": "a7d93e1c-9f23-45e5-8825-cf814e7659e5"
+    },
+    {
+      "claim_id": "24d7cc75-652e-4b1b-9429-5d6903ad1bf8",
+      "result_id": "a7d93e1c-9f23-45e5-8825-cf814e7659e5"
+    },
+    {
+      "claim_id": "0d99b316-413a-4fba-9dfb-f0446bae2480",
+      "result_id": "f5b38770-f0be-46d8-a601-2379b518fb59"
+    },
+    {
+      "claim_id": "965b85a0-0439-4163-8c2c-16be5466bfc2",
+      "result_id": "f5b38770-f0be-46d8-a601-2379b518fb59"
+    },
+    {
+      "claim_id": "f68b4cf3-951a-4610-b503-5b3ce415421c",
+      "result_id": "f5b38770-f0be-46d8-a601-2379b518fb59"
+    },
+    {
+      "claim_id": "32e37318-a8df-4e1f-bf4a-1be8cb4b35e1",
+      "result_id": "f5b38770-f0be-46d8-a601-2379b518fb59"
+    },
+    {
+      "claim_id": "9e4a18e6-06f5-484c-9ee0-e511eed1cd15",
+      "result_id": "f5b38770-f0be-46d8-a601-2379b518fb59"
+    },
+    {
+      "claim_id": "c365468f-5185-4865-89a9-9a886c193b8c",
+      "result_id": "cfacbe67-0a14-437a-8417-25e9ae554fd9"
+    },
+    {
+      "claim_id": "4871bfbc-85e6-45f1-8941-1515dbf4468e",
+      "result_id": "cfacbe67-0a14-437a-8417-25e9ae554fd9"
+    },
+    {
+      "claim_id": "a2278921-8dae-495a-a152-b59b3b0fe5cf",
+      "result_id": "cfacbe67-0a14-437a-8417-25e9ae554fd9"
+    },
+    {
+      "claim_id": "367e13e0-018f-4d1d-bfe3-dc1763697398",
+      "result_id": "cfacbe67-0a14-437a-8417-25e9ae554fd9"
+    },
+    {
+      "claim_id": "1d85eda8-49f0-422a-a91c-5e991edbd8ee",
+      "result_id": "cfacbe67-0a14-437a-8417-25e9ae554fd9"
+    },
+    {
+      "claim_id": "0dcf2dab-c433-4e4c-9f46-4fedefceabcb",
+      "result_id": "cfacbe67-0a14-437a-8417-25e9ae554fd9"
+    },
+    {
+      "claim_id": "50d75143-6f48-4b8f-8a38-503e5b021d16",
+      "result_id": "cfacbe67-0a14-437a-8417-25e9ae554fd9"
+    },
+    {
+      "claim_id": "f452ed3a-a9eb-4914-8452-e7af9e36f937",
+      "result_id": "0d522c2d-1848-4f89-8cfd-14857fffc381"
+    },
+    {
+      "claim_id": "0be1e167-13e1-4cdf-b1a9-ab4d746336c9",
+      "result_id": "0d522c2d-1848-4f89-8cfd-14857fffc381"
+    },
+    {
+      "claim_id": "be4b6487-e279-4449-bf0a-972944623ada",
+      "result_id": "0d522c2d-1848-4f89-8cfd-14857fffc381"
+    },
+    {
+      "claim_id": "eb3f09b2-dd05-4545-a482-6b50c5d1254f",
+      "result_id": "0d522c2d-1848-4f89-8cfd-14857fffc381"
+    },
+    {
+      "claim_id": "442f43f4-c0e2-4c93-a291-a6796c6fd33b",
+      "result_id": "0d522c2d-1848-4f89-8cfd-14857fffc381"
+    },
+    {
+      "claim_id": "599e2d32-8315-4e1e-9268-b16fb2e25667",
+      "result_id": "fdb1b89f-8d78-453b-8c52-a5a3cd92627c"
+    },
+    {
+      "claim_id": "e3b04114-a1f0-4a00-b896-944523cca1ab",
+      "result_id": "fdb1b89f-8d78-453b-8c52-a5a3cd92627c"
+    },
+    {
+      "claim_id": "1623dc9a-09fd-4950-afd1-0f562f0d8f04",
+      "result_id": "fdb1b89f-8d78-453b-8c52-a5a3cd92627c"
+    },
+    {
+      "claim_id": "4822c41b-a168-4167-997f-ab262509adef",
+      "result_id": "fdb1b89f-8d78-453b-8c52-a5a3cd92627c"
+    },
+    {
+      "claim_id": "bc011bc1-592f-4fa0-8b76-3a5f25efbaa6",
+      "result_id": "fdb1b89f-8d78-453b-8c52-a5a3cd92627c"
+    },
+    {
+      "claim_id": "47db2a10-f0c8-46a0-bece-b948ae508a85",
+      "result_id": "fdb1b89f-8d78-453b-8c52-a5a3cd92627c"
+    },
+    {
+      "claim_id": "1898ce9c-5ff7-4eb1-bb34-4b314ae5256b",
+      "result_id": "85256160-bf7f-471a-84bb-2fc3ffb28443"
+    },
+    {
+      "claim_id": "69fc163b-4eae-466e-bfd1-d781745bdae4",
+      "result_id": "85256160-bf7f-471a-84bb-2fc3ffb28443"
+    },
+    {
+      "claim_id": "6a619efe-df7e-4ba7-980e-dc10606e6446",
+      "result_id": "85165855-5a28-4f43-b81d-c7b403f0fdd9"
+    },
+    {
+      "claim_id": "890326c6-d51c-44f8-a377-4f1dd54cb3e5",
+      "result_id": "85165855-5a28-4f43-b81d-c7b403f0fdd9"
+    },
+    {
+      "claim_id": "12766e0d-3741-486b-8990-03df9d283c99",
+      "result_id": "85165855-5a28-4f43-b81d-c7b403f0fdd9"
+    },
+    {
+      "claim_id": "6383a1f8-21a5-4d04-8501-1999ef8da368",
+      "result_id": "85165855-5a28-4f43-b81d-c7b403f0fdd9"
+    },
+    {
+      "claim_id": "485dee8d-eb60-48bf-9d30-8c87d9a3716a",
+      "result_id": "657de6d7-a7e9-4cc0-99c2-cefb40f63359"
+    },
+    {
+      "claim_id": "c86b2378-8d69-4cdf-978a-6d1dbc557997",
+      "result_id": "657de6d7-a7e9-4cc0-99c2-cefb40f63359"
+    },
+    {
+      "claim_id": "88c3043c-838a-4b35-b1d0-daa961740641",
+      "result_id": "657de6d7-a7e9-4cc0-99c2-cefb40f63359"
+    },
+    {
+      "claim_id": "b4dc94b0-f7ee-492d-a740-edc164887e97",
+      "result_id": "657de6d7-a7e9-4cc0-99c2-cefb40f63359"
+    },
+    {
+      "claim_id": "0fb92d31-8b5b-45ef-8105-ad66621671a9",
+      "result_id": "657de6d7-a7e9-4cc0-99c2-cefb40f63359"
+    },
+    {
+      "claim_id": "0056916e-7368-40ab-be22-3a877c5c7a53",
+      "result_id": "0da782f4-b37c-4133-a5ba-c56b95e3e069"
+    },
+    {
+      "claim_id": "5d23ed37-175d-4bec-a78e-cd24a8bd4afd",
+      "result_id": "0da782f4-b37c-4133-a5ba-c56b95e3e069"
+    },
+    {
+      "claim_id": "aeb6f3e2-76df-45a3-bb41-372d4cc2d373",
+      "result_id": "0da782f4-b37c-4133-a5ba-c56b95e3e069"
+    },
+    {
+      "claim_id": "26b2cc44-285f-4210-967a-8a866814acd7",
+      "result_id": "fe6b4624-9ea4-4c38-833b-5288ebe48bb8"
+    },
+    {
+      "claim_id": "a34da1fd-0adf-4e7e-8de4-b7cada1882ed",
+      "result_id": "fe6b4624-9ea4-4c38-833b-5288ebe48bb8"
+    },
+    {
+      "claim_id": "93442bff-6592-4edd-95fa-fafa6b6f2a28",
+      "result_id": "b8e63852-9037-48c9-ae31-2834a16d5331"
+    },
+    {
+      "claim_id": "2a71dc1c-1e5e-4066-b9b6-f15acd781e7a",
+      "result_id": "b8e63852-9037-48c9-ae31-2834a16d5331"
+    },
+    {
+      "claim_id": "8349f197-9930-475b-83de-252681f55cf2",
+      "result_id": "b8e63852-9037-48c9-ae31-2834a16d5331"
+    },
+    {
+      "claim_id": "000b0339-90f0-4f41-852d-9a560509abe9",
+      "result_id": "fb1c6229-a9e2-49c8-b344-d7ee44d4fa2c"
+    },
+    {
+      "claim_id": "0d847807-97db-4d9f-9071-9bd07f9174da",
+      "result_id": "fb1c6229-a9e2-49c8-b344-d7ee44d4fa2c"
+    },
+    {
+      "claim_id": "f7af7a4a-cbf0-4e6a-bbdf-9c01a13381ed",
+      "result_id": "fb1c6229-a9e2-49c8-b344-d7ee44d4fa2c"
+    },
+    {
+      "claim_id": "a65897a6-5587-44bf-9289-af84ab592bcf",
+      "result_id": "fb1c6229-a9e2-49c8-b344-d7ee44d4fa2c"
+    },
+    {
+      "claim_id": "f905fe12-61fc-4971-b8dd-f4a9beb6b831",
+      "result_id": "fb1c6229-a9e2-49c8-b344-d7ee44d4fa2c"
+    },
+    {
+      "claim_id": "f5542efb-06bd-4c2f-b403-671c5bb58652",
+      "result_id": "fb1c6229-a9e2-49c8-b344-d7ee44d4fa2c"
+    },
+    {
+      "claim_id": "b2babf18-59f9-4b9d-b313-519eb5d6da3d",
+      "result_id": "fb1c6229-a9e2-49c8-b344-d7ee44d4fa2c"
+    },
+    {
+      "claim_id": "53554297-c8f5-4837-8fe2-85a6f420ebdd",
+      "result_id": "fb1c6229-a9e2-49c8-b344-d7ee44d4fa2c"
+    },
+    {
+      "claim_id": "378f9fe2-af0c-4671-9373-27b87ab92d58",
+      "result_id": "fb1c6229-a9e2-49c8-b344-d7ee44d4fa2c"
+    },
+    {
+      "claim_id": "2181b512-a204-447d-9c8e-668e8867f393",
+      "result_id": "fb1c6229-a9e2-49c8-b344-d7ee44d4fa2c"
+    },
+    {
+      "claim_id": "0ee34504-9bcb-409b-a3a8-3e5d7a04ff57",
+      "result_id": "fb1c6229-a9e2-49c8-b344-d7ee44d4fa2c"
+    },
+    {
+      "claim_id": "2a75ac93-c9a6-48a3-bef8-e1f15639733a",
+      "result_id": "fb1c6229-a9e2-49c8-b344-d7ee44d4fa2c"
+    },
+    {
+      "claim_id": "cd4a94fd-c2a7-4828-942d-a3f2151d12ca",
+      "result_id": "fb1c6229-a9e2-49c8-b344-d7ee44d4fa2c"
+    },
+    {
+      "claim_id": "66353007-4ac9-422c-9edb-32c34e1d02d7",
+      "result_id": "fb1c6229-a9e2-49c8-b344-d7ee44d4fa2c"
+    },
+    {
+      "claim_id": "3139d3bc-da67-4595-8fbd-f527f3f3a7b4",
+      "result_id": "fb1c6229-a9e2-49c8-b344-d7ee44d4fa2c"
+    },
+    {
+      "claim_id": "49e1003b-fdb5-4f3b-bb48-211a188b526d",
+      "result_id": "a4291fa7-704b-4487-ab49-14775e79cf8f"
+    },
+    {
+      "claim_id": "63639261-0011-4e40-96ae-7ed7e1cec772",
+      "result_id": "a4291fa7-704b-4487-ab49-14775e79cf8f"
+    },
+    {
+      "claim_id": "955edd8e-c7cf-498c-9f14-8689571f8657",
+      "result_id": "a4291fa7-704b-4487-ab49-14775e79cf8f"
+    },
+    {
+      "claim_id": "f5e0713b-48f5-4c82-8554-4641b52b2cf0",
+      "result_id": "a4291fa7-704b-4487-ab49-14775e79cf8f"
+    },
+    {
+      "claim_id": "cd420e9e-941b-48fb-9119-7c05b2af51d8",
+      "result_id": "a4291fa7-704b-4487-ab49-14775e79cf8f"
+    },
+    {
+      "claim_id": "12a749a1-1860-4179-ad0b-537a687111ad",
+      "result_id": "a4291fa7-704b-4487-ab49-14775e79cf8f"
+    },
+    {
+      "claim_id": "fe2d1023-03ca-4d6f-83b8-c406a2e838e6",
+      "result_id": "a4291fa7-704b-4487-ab49-14775e79cf8f"
+    },
+    {
+      "claim_id": "d2e002a1-9438-48a5-95c6-f8fd196e57f0",
+      "result_id": "f358945a-688a-496d-8334-39d9ee22c461"
+    },
+    {
+      "claim_id": "aeee0dd3-0a4b-4447-9e3e-db7d70043a05",
+      "result_id": "f358945a-688a-496d-8334-39d9ee22c461"
+    },
+    {
+      "claim_id": "bd3d14b5-418a-449c-a97a-d3315aa72cef",
+      "result_id": "f358945a-688a-496d-8334-39d9ee22c461"
+    },
+    {
+      "claim_id": "b2518941-d613-4390-a851-2b16c4ecda77",
+      "result_id": "f3eeb166-d400-410c-859a-e9c98945b138"
+    },
+    {
+      "claim_id": "cdeae436-d036-4b02-a348-e07867af4a6f",
+      "result_id": "f3eeb166-d400-410c-859a-e9c98945b138"
+    },
+    {
+      "claim_id": "5f3d6c30-5196-4864-9903-874f10e59651",
+      "result_id": "f3eeb166-d400-410c-859a-e9c98945b138"
+    },
+    {
+      "claim_id": "418869e8-842d-40e9-9b30-f4bf98500c33",
+      "result_id": "f3eeb166-d400-410c-859a-e9c98945b138"
+    },
+    {
+      "claim_id": "379366b5-6122-4dbf-9d53-5c60b24d4dd5",
+      "result_id": "f3eeb166-d400-410c-859a-e9c98945b138"
+    },
+    {
+      "claim_id": "dc6b55b4-37c1-46c2-a280-d1d33446ed11",
+      "result_id": "f3eeb166-d400-410c-859a-e9c98945b138"
+    }
+  ],
+  "comparisons": []
+}

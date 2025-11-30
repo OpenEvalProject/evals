@@ -1,0 +1,212 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C16"
+    ],
+    "result": "The MARTINI model of DPPC bilayers exhibits a first-order phase transition between ordered and disordered phases. The ordered phase has regular tail packing, larger hydrophobic thickness, and smaller area per lipid compared to the disordered phase. Interface stability and capillary scaling analysis confirm this is a first-order transition with interfacial stiffness \u03b3=11.5\u00b10.46 pN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 establish the phase behavior through simulation data and visual evidence (Figure 1A). C16 provides rigorous validation through capillary wave analysis (Figure 1C) showing quantitative agreement with first-order transition theory. The interfacial stiffness measurement is well-supported by Fourier spectrum analysis of interface fluctuations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Orderphobic proteins with hydrophobic thickness matching the disordered phase nucleate a stable order-disorder interface when embedded in ordered bilayers. The spatial extent of disorder increases with protein size, and interface fluctuations are consistent with capillary wave theory for free interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C20, and C21 are supported by simulation data showing disorder formation around proteins (Figures 2C, 2D). C22 provides quantitative validation through Fourier analysis (Figure 3B) demonstrating that protein-induced interface fluctuations match those of free interfaces at coexistence, confirming the interface is a genuine manifestation of the phase transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Two orderphobic proteins assemble by reducing net interfacial energy when their surrounding disordered regions merge. The assembly occurs on microsecond timescales after interface coalescence, driven by interfacial tension pulling proteins together while lipids are displaced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C25-C28 are supported by simulation trajectories (Figure 4, Video 2) showing the assembly process. The interfacial energy argument (C25-C26) is theoretically sound based on capillarity theory. The microsecond timescale (C27) is directly observed, and the mechanistic interpretation (C28) is reasonable given the observed dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The orderphobic effect provides a generic, powerful force for transmembrane protein assembly and mobility, analogous to the hydrophobic effect. This force is mediated by proximity to phase transition and protein properties, with strength and range significantly exceeding membrane elastic forces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C1 is the central claim supported by all simulation data. C4's analogy to hydrophobic effect is conceptually valid given the shared interface-mediated mechanism. C5 is supported by systematic variation studies (Figure 5). C6's comparison shows ~30 kBT binding energy over 10-30 nm range versus ~5 kBT over 1 nm for elastic forces, though the elastic force calculation relies on cited estimates rather than direct comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The strength and range of the orderphobic effect depend on proximity to the membrane phase transition, with maximal effect for proteins matching the disordered phase thickness. The spatial extent of disorder increases near phase coexistence and decreases as hydrophobic thickness approaches the ordered phase value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are well-supported by systematic parameter studies shown in Figure 5A (temperature dependence) and Figure 5B (hydrophobic mismatch dependence). The data clearly demonstrate the predicted trends, with order parameter profiles quantifying the extent of disorder under different conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "The orderphobic effect produces excess protein mobility by melting order in surrounding layers and facilitating neighboring protein motions, explaining facile protein reorganization in gel-phase membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C37 is supported by dynamics observed in Figure 4 and Video 2 showing enhanced mobility in disordered regions. C38 provides a reasonable interpretation connecting simulation observations to known biological phenomena, though direct experimental validation of this specific mechanism in gel phases is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "The typical range of the orderphobic force is approximately 10 to 30 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C31 is supported by measurements of interface dimensions from simulations (Figures 2, 3). The range estimate is based on the radius of disordered regions (\u211b\u2080) plus interface width, which is reasonable given the observed order parameter profiles showing disorder extending several nanometers from proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "The orderphobic effect applies to liquid-ordered/liquid-disordered phase transitions in biological membranes and is more broadly applicable than the Casimir effect, which requires critical conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C39 correctly applies thermodynamic principles: finite line tension between coexisting phases implies first-order transition. C40's comparison to Casimir effect is valid\u2014first-order transitions occur over broader parameter ranges than critical points. Both claims are supported by cited theoretical work and established phase transition theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The strength and range of orderphobic effects can be modulated by varying membrane composition (e.g., cholesterol concentration) and depend on the presence of additional proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C42 are explicitly stated as speculation and anticipation rather than demonstrated results. While the reasoning is sound based on how composition affects phase behavior, no simulation data or experimental evidence is provided to validate these specific predictions. These represent testable hypotheses for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C49"
+    ],
+    "result": "An orderphilic effect exists as the dual of the orderphobic effect, where proteins favoring ordered phases nucleate ordered regions in disordered membranes, corresponding to the lipid raft scenario.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C47 is a logical extension of the orderphobic mechanism to the opposite case, supported by simulation data in the Appendix showing proteins with positive mismatch inducing order. C49 appropriately connects this to the established lipid raft concept, providing a concrete interfacial definition for rafts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The orderphobic effect may be relevant to lung-surfactant monolayers, which undergo cyclic phase transitions and could govern protein diffusion and assembly in ordered phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C52-C53 correctly cite established knowledge about lung surfactant composition and phase behavior. However, C51 and C54 are explicitly speculative. While the application to monolayers is plausible given the similar physics, no simulation data or experimental evidence is provided to validate this specific biological application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The orderphobic effect may play important roles in membrane fusion, budding, and cell signaling by promoting membrane fluctuations. SNARE proteins have hydrophobic thickness 25% smaller than ordered membrane states, consistent with an orderphobic mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C55-C57 are explicitly stated as speculation without direct evidence. C58 provides an intriguing correlation between SNARE protein dimensions and the orderphobic mechanism, but correlation does not establish causation. While the hypothesis is plausible and well-reasoned, experimental validation or more detailed simulations of fusion processes would be needed to support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "The fluid mosaic model and lipid raft hypothesis have guided understanding of protein organization in membranes, but recent evidence shows significant liquid-ordered regions with phase coexistence in biological membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 accurately summarize established literature through appropriate citations. C7 correctly attributes historical models, and C8 cites recent experimental studies demonstrating liquid-ordered phases and coexistence. These provide appropriate context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C15"
+    ],
+    "result": "A prior estimate of interfacial stiffness (3\u00b12 pN) was obtained from simulations of ordered phase coarsening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C15 accurately describes the methodology of prior work (Marrink et al., 2005) and provides context for the current study's improved estimate of 11.5\u00b10.46 pN. The claim is properly attributed and cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Simulations used the MARTINI coarse-grained force field with GROMACS, with antifreeze particles added to prevent solvent freezing. Model proteins were constructed using lipid tail beads (C1) for hydrophobic cores and head group beads (Q0) for hydrophilic caps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 describe the computational methodology with appropriate citations. The protein construction is clearly specified, allowing reproducibility. The antifreeze particle addition is a standard technique for MARTINI simulations at low temperatures. All methodological details are adequately documented.",
+    "result_type": "MINOR"
+  }
+]

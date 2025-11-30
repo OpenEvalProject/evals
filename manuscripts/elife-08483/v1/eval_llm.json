@@ -1,0 +1,195 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C24",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "During S-phase FRAP experiments, Sas-4-mCherry recovers at a different spatial location (~0.17-0.21 \u03bcm offset) compared to GFP-Cnn and Spd-2-GFP, while Cnn and Spd-2 co-localize closely (~0.053 \u03bcm offset). This spatial offset suggests differential recruitment sites for Sas-4 versus PCM proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20 provide quantitative measurements of spatial offsets between recovering fluorescent signals after photobleaching, with appropriate controls using fluorescent beads to correct for channel misalignment. The data consistently show that Sas-4 recovers at a distinct location from Cnn/Spd-2, which recover together. The measurements are well-documented in Figure 1 with statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "During M-phase FRAP experiments, GFP-Cnn and Spd-2-GFP recover immediately after photobleaching, while Sas-4-mCherry only recovers robustly after centrosomes separate at the end of mitosis when centriole duplication begins. This demonstrates that Sas-4 is recruited only to growing daughter centrioles and that Cnn/Spd-2 recruitment during M-phase is independent of Sas-4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 are well-supported by temporal FRAP data shown in Figure 2 and Videos 3-4. The differential recovery timing between Sas-4 (delayed until S-phase) versus Cnn/Spd-2 (immediate during M-phase) provides strong evidence that these proteins are recruited through independent mechanisms. The conclusion logically follows from the experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Using 3D-SIM FRAP with Asl-mCherry as a mother centriole marker, the authors demonstrate that recovering Sas-4-GFP localizes exclusively outside the Asl toroid (at the daughter centriole position), while control unbleached centrosomes show Sas-4-GFP at both mother and daughter positions. Quantitative analysis confirms the post-bleach Sas-4-GFP position matches the daughter centriole location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C37 are strongly supported by high-resolution 3D-SIM imaging data in Figure 3A-E. The use of Asl as a mother centriole-specific marker provides clear spatial reference, and quantitative position analysis (Figure 3E) with statistical testing (p<0.0001) confirms that recovering Sas-4 localizes to daughter centrioles. The control data showing both foci in unbleached centrosomes validates the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Two-color 3D-SIM FRAP experiments with Spd-2-GFP and Sas-4-mCherry show that recovering Sas-4 localizes adjacent to (not within) the recovering Spd-2 signal, which forms around mother centrioles. Combined with evidence that Asl turns over at mother centrioles, this demonstrates that Sas-4, Asl, and Spd-2 are recruited to distinct locations: Sas-4 to daughter centrioles, Asl and Spd-2 to mother centrioles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 integrate 3D-SIM FRAP data (Figure 3F-G) with prior knowledge about Asl turnover (C38, cited from Novak et al., 2014) and Spd-2 behavior (C41, cited from Conduit et al., 2014b). The spatial relationship between recovering Sas-4 and Spd-2 signals is clearly demonstrated, and the logical inference that these proteins are recruited independently is well-justified by the combined evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Immunoprecipitation experiments using functional Sas-4-GFP show that while Sas-4-GFP is efficiently depleted from extracts and enriched in bound samples, the putative S-CAP complex components (Cnn, \u03b3-tubulin, Asl, PLP) are not co-depleted. Only small amounts of Cnn and \u03b3-tubulin are detected in bound samples, indicating S-CAP complexes are absent or present at very low levels in embryo extracts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C54 are supported by western blot data in Figure 4 with appropriate positive (Sas-4-GFP) and negative (wild-type) controls. The lack of co-depletion of S-CAP components with Sas-4-GFP, despite efficient Sas-4-GFP immunoprecipitation, provides strong biochemical evidence against abundant S-CAP complexes. The small amounts of Cnn/\u03b3-tubulin detected could represent weak/transient interactions or non-specific binding, appropriately acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The authors conclude that PCM recruitment in fly embryos does not require cytosolic S-CAP complexes, as Cnn, Spd-2, and Asl are not recruited as part of complexes with Sas-4. This conclusion is supported by evidence from multiple organisms (flies, worms, human cells) showing that centrioles lacking cytosolic Sas-4 can still recruit PCM during mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C55-C62 represent the main conclusion, which is well-supported by the combined FRAP, 3D-SIM, and immunoprecipitation data from the current study (C8, C9, C55), along with extensive citations to prior work in Drosophila (C56), C. elegans (C57, C59-C61), and human cells (C58) showing similar findings. The cross-species evidence strengthens the generalizability of the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors propose that Sas-4 has an indirect role in mitotic PCM assembly through a hierarchical pathway: centriolar Sas-4 recruits Asl to mother centrioles, which in turn recruits Spd-2 and Cnn. This distinguishes the role of centriolar Sas-4 from cytoplasmic S-CAP complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by citations to previous studies establishing the Sas-4\u2192Asl\u2192Spd-2/Cnn recruitment hierarchy. While this is not directly tested in the current manuscript, it provides important context for interpreting the negative S-CAP results and is appropriately presented as prior knowledge rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The manuscript describes established knowledge about centrosome structure and function: centrosomes comprise mother and daughter centrioles surrounded by PCM, mother centrioles organize PCM and template daughter centriole formation, and in Drosophila syncytial embryos, cells cycle rapidly through S- and M-phases with continuous PCM organization and centriole duplication during S-phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C11-C13, and C70-C72 represent well-established background knowledge about centrosome biology, appropriately cited or presented as general knowledge. These provide necessary context for interpreting the experimental results but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C10"
+    ],
+    "result": "The manuscript reviews prior work showing that PCM-organizing proteins were reported to be recruited as part of cytosolic S-CAP complexes containing Sas-4, and that the authors previously showed Cnn and Spd-2 are recruited around mother centrioles in an Asl-dependent manner before spreading outward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 and C10 accurately represent prior published work through appropriate citations. These claims establish the context and motivation for the current study, which challenges the S-CAP model. The citations appear accurate based on the references provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "During S-phase, excess Sas-4 is recruited to centrioles, with a large fraction becoming irreversibly incorporated into daughter centrioles while the remainder is shed during mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 are supported by citation to Novak et al., 2014. This prior knowledge about Sas-4 dynamics provides important context for interpreting the FRAP results showing preferential Sas-4 recruitment to daughter centrioles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "3D-Structured Illumination Microscopy (3D-SIM) has approximately twice the spatial resolution of standard confocal microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 represents established knowledge about the capabilities of 3D-SIM technology. This is accurate and provides justification for using this technique to resolve mother-daughter centriole pairs.",
+    "result_type": "MINOR"
+  }
+]

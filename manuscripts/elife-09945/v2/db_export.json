@@ -1,0 +1,960 @@
+{
+  "submission": {
+    "id": "d389049c-4d68-49fb-b15c-6fe446d140c3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:00:02.642306Z",
+    "updated_at": "2025-11-29T22:00:02.642306Z"
+  },
+  "content": [
+    {
+      "id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "submission_id": "d389049c-4d68-49fb-b15c-6fe446d140c3",
+      "content_type": "manuscript",
+      "content_text": "# RNA polymerase errors cause splicing defects and can be regulated by differential expression of RNA polymerase subunits\n\n## Authors\n\n- Lucas B Carey<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Experimental and Health Sciences Universitat Pompeu Fabra Barcelona Spain\n\n\u2020 Corresponding author\n\n## Abstract\n\nErrors during transcription may play an important role in determining cellular phenotypes: the RNA polymerase error rate is >4 orders of magnitude higher than that of DNA polymerase and errors are amplified >1000-fold due to translation. However, current methods to measure RNA polymerase fidelity are low-throughout, technically challenging, and organism specific. Here I show that changes in RNA polymerase fidelity can be measured using standard RNA sequencing protocols. I find that RNA polymerase is error-prone, and these errors can result in splicing defects. Furthermore, I find that differential expression of RNA polymerase subunits causes changes in RNA polymerase fidelity, and that coding sequences may have evolved to minimize the effect of these errors. These results suggest that errors caused by RNA polymerase may be a major source of stochastic variability at the level of single cells.\n\n## Materials and methods\n\n### Counting RNA polymerase errors in already aligned ENCODE data\n\nMuch existing RNA-seq data is available as bam files aligned to the human genome. In order to bypass alignment, which\u00a0is\u00a0the most computationally expensive step of the pipeline, I developed a method capable of using RNA-seq reads aligned with spliced aligners. First, in order to avoid increased mismatch rates at splice junctions due to alignment problems with both spliced and unspliced reads, I used SAMtools (Li et al., 2009) and awk to remove all alignments that do\u00a0not align along the full length of the genome (e.g., for 76\u00a0bp reads, only reads with a CIGAR flag of 76\u00a0M). The remaining reads weretrimmed (bamUtil, trimBam) to convert the first and last 10\u00a0bp of each read to Ns and set the quality strings to \u2018!\u2019. I then used samtools mpileup (-q30 \u2013C50 \u2013Q30) and custom perl code to count the number of reads and number of errors at each position in genome. Positions with too many errors (e.g., more than one read of the same nonreference base) were not counted.\n\n### Measurement of error rates at splice junctions\n\nI used the University of California Santa Cruz (UCSC) table browser (Karolchik, 2004) to download two bed files: hg19 EnsemblGenes introns with -10\u00a0bp flanking from each side, and another file with the introns and +10\u00a0bp flanking on either side. I then used bedtools (Quinlan and Hall, 2010) (bedtools flank -b 20 -l 0 and bedtools flank -l 20 -b 0) to generate bed files with intervals that contain the splicing donor and acceptor sites, respectively. In addition, I used bedtools getfasta on the +10\u00a0bp flanking bed file to keep only introns flanked by GT and AG donor and acceptor sites. The final result is a pair of bam files with intervals centered on the splicing donor or acceptor sites. I used this new bed file to count error rates around each splice junction. The error rate at each position (e.g., -10, -9, -8, etc. from the G at the 5\u2019 donor site) is the sum of all errors at that position, divided by the sum of all reads. Positions are relative to the splicing feature, not to the genome, as error rates at any single genomic position are dominated by sampling bias. Per mono-, di-, and trinucleotide background error rates were-calculated using the same scripts, but without limiting mpileup to the splice junctions.\n\n### Strain construction and RNA sequencing for RPB9 and DST1 strains\n\nThe parental strain DBY12394 (Mcisaac et al., 2013) (GAL2 + s288c repaired HAP1, ura3\u2206, leu2\u22060::ACT1pr-Z3EV-NatMX) was transformed with a polymerase chain reaction (PCR) product (KanMX-Z3EVpr) to generate a genomically integrated inducible RPB9 (LCY143) or DST1 (LCY142). To induce various levels of expression, strains were re-grown in YPD + 0-,\u00a03-,\u00a06-,\u00a012-, or 25-nM \u03b2-estradiol (Sigma,\u00a0St.\u00a0Louis,\u00a0MO,\u00a0USA, E4389) for more than 12 hr to a final OD600 of 0.1 \u2013 0.4. Cellular RNA was extracted using the Epicenter MasterPure RNA Purification Kit, and Illumina sequencing libraries were prepared using the Truseq Stranded mRNA kit, and sequenced on an HiSeq2000 with at least 20,000,000 50\u00a0bp sequencing reads per sample.\n\nI used bwa (Li and Durbin, 2009) (-n 2, to permit no more than two mismatches in a read) to align the yeast RNA-seq reads to the reference genome, and trimBam from bamUtil to mask the first and last 10\u00a0bp of each read. I used samtools mpileup (Li et al., 2009) (-q 30 -d 100000 -C50 \u2013Q39) to count the number of reads and mismatches at each position in the genome, discarding low confidence mapping, reads that map to multiple positions, and low quality reads. Duplicate reads can be removed from the fastq file if the coverage is low enough so that all reads\u00a0that\u00a0map\u00a0to\u00a0identical\u00a0\u00a0genome\u00a0coordinates\u00a0are expected be\u00a0PCR\u00a0duplicates\u00a0from\u00a0the same RNA fragment. This is the case for low coverage paired-end reads with a variable insert size, but not for very high coverage datasets or single-ended reads.\n\n### Pre-existing RNA-seq datasets\n\nFor the intron retention analysis in human cells, data are from NCBI SRA PRJNA253670. Data for the elc4 and spt4 analysis are from PRJNA167772 and PRJNA148851, respectively. For RPB9 correlation, undefined data (SRA PRJNA30709) are all from the Gingeras lab at CSHL.\n",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "517060a7-5ccb-4d08-b508-1a32fa33c3ae",
+      "submission_id": "d389049c-4d68-49fb-b15c-6fe446d140c3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Patrick Cramer, Max Planck Institute for Biophysical Chemistry , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.09945.017](https://doi.org/10.7554/eLife.09945.017)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"RNA polymerase errors cause splicing defects and can be regulated by differential expression of RNA polymerase subunits\" for peer review at eLife. Your submission has been evaluated by James Manley (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nIn this manuscript, Carey describes a computational method called MORPhEUS that allows measuring RNA polymerase error rates using published RNA-seq data. By counting the number of matches and mismatches to the reference genome after technical errors are minimized, MORPhEUS enables the author to estimate the error rate at each position of the genome. Using chromatin-associated RNA from RNA-seq data in K562 cells, the author calculates error rates at splice site junctions and demonstrates that these are higher at 5` splice sites, suggesting that this could affect intron retention. Using ENCODE RNA-seq data, the author further investigates if the expression level of the Pol II subunit Rpb9, known to be required in Pol II fidelity, affects RNA polymerase error rates in different cell lines. Furthermore, the author measures RNA-seq error rates using two yeast strains in which it is possible to modulate the expression of Rpb9 or Dst1, finding that cells with low expression of Rpb9 or Dst1 possess higher error rates, consistent with known biochemical and genetic data. The idea is intriguing and the explanations for observations in terms of Pol II error rates make sense. The proposed method MORPhEUS is appropriate to perform comparative analysis of RNApol induced transcription errors between two or more samples or to identify RNApol errors leading to intron retention. Other than currently available methods this approach is able to identify errors transcriptome-wide and does not \"require specialised organism-specific genetic constructs\", therefore it seems to be highly useful. The method presented here is interesting and it is a valuable tool for estimating RNA Pol II error rates from RNA-seq data, although several points need to be addressed before publication can be considered.\n\nEssential revisions:\n\n1) Possible alternative explanations for the observations\n\nA main issue with this manuscript is that alternative explanations could also make sense. The author has to show that his explanations are the only or at least most plausible ones. Figure 2b is central to the proposed method. It shows an elevated rate of errors at the uracil in the 5' splice site of the canonical GU-AG introns selected by the author. The explanation given is that Pol II errors in the U lead to intron retention. Why then is the error rate of the guanine not similarly elevated? One would then also expect to see elevated error rates for the conserved AG motif of the 3' splice site and in the well conserved branch point motif. The analysis of these motifs should confirm the interpretation by the author. Because this data is not shown, does that mean no elevated signal has been observed? How can this be explained in the light of the author's interpretation of Pol II errors at splicing motifs leading to retained introns? Since the only position with elevated error rate seems to be the U at the 5' SS, an alternative explanation (probably not the only possible one) could be that some factor strongly binds to the uracil in such a way that the reverse transcription in the RNA-seq protocol causes the uracil to be misread. Note that U->C mutations are also observed in PAR-CLIP and are known to originate during reverse transcription of the RNA.\n\n2) Choice of null model\n\nFigure 2b shows relative error rates on the y-axis. The error rates observed around 5' splice sites are normalized by the error rates seen for the same dinucleotides, GT, at other places in the transcriptome. The 4-fold elevated error rate therefore depends on the null model. It would be important to compute the relative error rate at the uracil with more refined trimer null models to see if the 4-fold increase holds up. Two versions, one with the mutated nucleotide at the first position and another model with the mutated nucleotide at the last of the three trimer positions, should be used. The latter version could model sequence-dependent effects during reverse transcription. For each trimer in the transcriptome one can compute the error rate at the first and third nucleotide. Then, the total mutations for each position around the 5' splice site (and the 3' splice site and branch point) are divided by expected numbers of mutations, which is simply the sum of error rates for each of the trimer contexts for the position.\n\n3) Effects of Rpb9\n\nThe author demonstrates that expression of Rpb9 negatively correlates with error rates in human cell lines, suggesting that the differential expression of Rpb9 affects RNA polymerase fidelity in vivo. The level of mRNA expression does not necessarily correlate with protein level and, more importantly, the author should normalize the expression of Rpb9 with another subunit of Pol II (e.g. Rpb3) in each cell line used for the analysis (Figure 2c). An alternative explanation for Figure 2c and Figure 3b would be that changing Rpb9 and TFIIS concentration from its finely regulated value impairs elongation, which in turn can influence splicing rates and splicing efficiency. (See e.g., Lacadie et al., In vivo commitment to yeast cotranscriptional splicing is sensitive to transcription elongation mutants, Genes Dev. 2006.) Can such alternative explanations be excluded? Further, in Figure 3b the author shows that intron retention is higher under conditions of low Rpb9/Dst1 induction. Is the low induction of Rpb9 or Dst1 affecting the same introns? Does the author find a higher error rate in GT 5\u00b4 donor site in the mRNAs that show intron retention?\n\n4) Possible bias resulting from conservation\n\nTo measure the error rates at splicing junctions, the author counts errors at each position relative to 5\u00b4 donor sites, using reads spanning intron-exon junctions centered on GT donor sites. As a result, the errors at the T nucleotide are more enriched compared to other positions. It is not clear if the analysis is performed measuring the average GT error rate comparing all the reads at intron-exon junctions or single mRNAs (Figure 2a, 2b). If the analysis is made using all genes, since GT at intron-exon is a conserved sequence and the flanking regions are not, this could lead to a bias. This must be clarified.\n\n5) Suggestions for additional controls\n\nA positive control would be to analyse RNA-seq data of an organism with a mutated polymerase known to have an elevated mutation rate and to show that this mutation rate leads to higher relative error rates at conserved splicing motifs. A negative control would be to analyse RNA-seq data of a mutant organism with a known transcription elongation defect and to show that the elongation defect does not affect the putative Pol II error rate in a similar way as Rbp9 and TFIIs overexpression. If possible we encourage the author to conduct these controls.\n\n6) Repetitive reads\n\nIn paragraph four the alignment quality filter procedure is explained. However it is not mentioned how repetitive reads (or potentially repetitive reads in e.g. unknown duplications of genes) are handled and might affect the result. This must be clarified.\n\n7) Possible bias from coverage\n\nNot counting identical mismatches occurring twice or more at the same position (paragraph four) is problematic, because:\n\n\u2013 This needs to be adjusted by depth-of-coverage at each position. Positions with high coverage are much more likely to have the same 'real' RNApol error twice, than positions with low coverage. (This seems to be so obvious that we might have overlooked the explanation of the normalization procedure)\n\n\u2013 RNA polymerase errors seem to be biased to e.g. C->T (see Figure 3c), making it quite a bit more likely to see exactly the same RNApol error twice at a position for C->T/G->A.\n\nIn general the uncertainty of RNApol error estimates at low coverage positions (i.e. lowly expressed genes) should be much worse than for high coverage (highly expressed genes). Is this addressed in the algorithm? (Maybe this problem has been discussed but missed by reviewers.) If not it needs some clarification, how different depth-of-coverage and mutation bias is considered when estimating the errors or removing mismatches of the same type.\n",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c44ad8d0-9e2b-4a9b-862a-d701622734b0",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C1",
+      "claim": "The RNA polymerase error rate is more than 4 orders of magnitude higher than that of DNA polymerase.",
+      "claim_type": "EXPLICIT",
+      "source": "the RNA polymerase error rate is >4 orders of magnitude higher than that of DNA polymerase",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract without specific experimental data or citation in this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "ca2b72b1-11f5-4e28-a9f5-02ee2a04195b",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C2",
+      "claim": "Transcription errors are amplified more than 1000-fold due to translation.",
+      "claim_type": "EXPLICIT",
+      "source": "errors are amplified >1000-fold due to translation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract without specific experimental data or citation in this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "0e863d1d-6ba2-4899-9105-08078921aac5",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C3",
+      "claim": "Current methods to measure RNA polymerase fidelity are low-throughput.",
+      "claim_type": "EXPLICIT",
+      "source": "current methods to measure RNA polymerase fidelity are low-throughout, technically challenging, and organism specific",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge without specific citation or data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "01dfa8cf-02bd-45b0-8fe9-f72b2e82fe27",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C4",
+      "claim": "Current methods to measure RNA polymerase fidelity are technically challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "current methods to measure RNA polymerase fidelity are low-throughout, technically challenging, and organism specific",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge without specific citation or data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "8a2c0e41-3d96-4792-9320-f5ab515e90ef",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C5",
+      "claim": "Current methods to measure RNA polymerase fidelity are organism specific.",
+      "claim_type": "EXPLICIT",
+      "source": "current methods to measure RNA polymerase fidelity are low-throughout, technically challenging, and organism specific",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge without specific citation or data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "537193c9-1922-4fc3-80e3-5d9113c48f07",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C6",
+      "claim": "Changes in RNA polymerase fidelity can be measured using standard RNA sequencing protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "Here I show that changes in RNA polymerase fidelity can be measured using standard RNA sequencing protocols.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by the methods and experimental approach described in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "910ef1a3-1f66-4b00-8e0f-b848395545ac",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C7",
+      "claim": "RNA polymerase is error-prone.",
+      "claim_type": "EXPLICIT",
+      "source": "I find that RNA polymerase is error-prone",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the study, supported by the experimental measurements described in the methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "1aff353f-87d6-4e31-a30c-3196f2725fdb",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C8",
+      "claim": "RNA polymerase errors can result in splicing defects.",
+      "claim_type": "EXPLICIT",
+      "source": "I find that RNA polymerase is error-prone, and these errors can result in splicing defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the study, supported by the measurement of error rates at splice junctions described in the methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "3d11b6ce-e8b7-478b-a9b0-d7f39eb1b7fa",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C9",
+      "claim": "Differential expression of RNA polymerase subunits causes changes in RNA polymerase fidelity.",
+      "claim_type": "EXPLICIT",
+      "source": "I find that differential expression of RNA polymerase subunits causes changes in RNA polymerase fidelity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the study, supported by the experimental manipulation of RPB9 and DST1 expression levels described in the methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "35f78088-6987-44f1-a787-0156287c58e4",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C10",
+      "claim": "Coding sequences may have evolved to minimize the effect of RNA polymerase errors.",
+      "claim_type": "EXPLICIT",
+      "source": "I find that differential expression of RNA polymerase subunits causes changes in RNA polymerase fidelity, and that coding sequences may have evolved to minimize the effect of these errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding with speculative language ('may have'), suggesting inference from the data rather than direct experimental demonstration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "ed257b74-b908-4476-8130-a081e66ec4e1",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C11",
+      "claim": "Errors caused by RNA polymerase may be a major source of stochastic variability at the level of single cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that errors caused by RNA polymerase may be a major source of stochastic variability at the level of single cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculative conclusion ('suggest', 'may be') inferred from the findings of the study.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "dca12b63-192a-458b-be64-7563b3258b1f",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C12",
+      "claim": "Alignment is the most computationally expensive step of the RNA-seq analysis pipeline.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to bypass alignment, which is the most computationally expensive step of the pipeline",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the methods section without specific citation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "16a4e68d-eabe-4f99-839b-ad76c48f7902",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C13",
+      "claim": "Increased mismatch rates occur at splice junctions due to alignment problems with both spliced and unspliced reads.",
+      "claim_type": "EXPLICIT",
+      "source": "in order to avoid increased mismatch rates at splice junctions due to alignment problems with both spliced and unspliced reads",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge that motivated the methodological approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "99a0c0cb-1778-4330-83f1-8d585ea4792d",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C14",
+      "claim": "SAMtools can be used to remove alignments that do not align along the full length of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "I used SAMtools (Li et al., 2009) and awk to remove all alignments that do not align along the full length of the genome",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement supported by citation to the SAMtools publication.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "4b35a4b7-aa74-4f5d-82b6-42e10b7c3500",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C15",
+      "claim": "For 76 bp reads, only reads with a CIGAR flag of 76 M represent full-length alignments.",
+      "claim_type": "EXPLICIT",
+      "source": "for 76 bp reads, only reads with a CIGAR flag of 76 M",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as technical knowledge about sequence alignment formats.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "2d34ca69-0838-4577-9c50-7cdf6577b15d",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C16",
+      "claim": "The first and last 10 bp of each read were trimmed and converted to Ns with quality strings set to '!'.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining reads weretrimmed (bamUtil, trimBam) to convert the first and last 10 bp of each read to Ns and set the quality strings to '!'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the data processing steps performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "2e390788-b3cc-4449-8284-151739b2e7d0",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C17",
+      "claim": "Positions with more than one read of the same nonreference base were not counted in the error analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Positions with too many errors (e.g., more than one read of the same nonreference base) were not counted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the filtering criteria used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "11a5a668-6975-4dda-bc28-d186ab70e9bd",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C18",
+      "claim": "The UCSC table browser can be used to download bed files for genomic features.",
+      "claim_type": "EXPLICIT",
+      "source": "I used the University of California Santa Cruz (UCSC) table browser (Karolchik, 2004) to download two bed files",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement supported by citation to the UCSC table browser publication.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "d2dfb4ae-8e72-46c6-97bd-52f45382b2a4",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C19",
+      "claim": "Bedtools can be used to generate bed files with intervals containing splicing donor and acceptor sites.",
+      "claim_type": "EXPLICIT",
+      "source": "I then used bedtools (Quinlan and Hall, 2010) (bedtools flank -b 20 -l 0 and bedtools flank -l 20 -b 0) to generate bed files with intervals that contain the splicing donor and acceptor sites, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement supported by citation to the bedtools publication.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "d570d65d-74b8-4aec-b761-a1146cf46c43",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C20",
+      "claim": "Only introns flanked by GT and AG donor and acceptor sites were kept in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "I used bedtools getfasta on the +10 bp flanking bed file to keep only introns flanked by GT and AG donor and acceptor sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the filtering criteria used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "1c5e57f2-ab7b-4f5b-b8b8-2350daae34cf",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C21",
+      "claim": "The error rate at each position is calculated as the sum of all errors at that position divided by the sum of all reads.",
+      "claim_type": "EXPLICIT",
+      "source": "The error rate at each position (e.g., -10, -9, -8, etc. from the G at the 5' donor site) is the sum of all errors at that position, divided by the sum of all reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the calculation performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "48b37a8b-1790-4738-b467-672ca44166e3",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C22",
+      "claim": "Positions are relative to the splicing feature, not to the genome, because error rates at any single genomic position are dominated by sampling bias.",
+      "claim_type": "EXPLICIT",
+      "source": "Positions are relative to the splicing feature, not to the genome, as error rates at any single genomic position are dominated by sampling bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement with reasoning based on knowledge of sampling bias.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "04454690-0ef6-4ac5-b349-18c8eac308ac",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C23",
+      "claim": "The parental strain DBY12394 has the genotype GAL2 + s288c repaired HAP1, ura3\u2206, leu2\u22060::ACT1pr-Z3EV-NatMX.",
+      "claim_type": "EXPLICIT",
+      "source": "The parental strain DBY12394 (Mcisaac et al., 2013) (GAL2 + s288c repaired HAP1, ura3\u2206, leu2\u22060::ACT1pr-Z3EV-NatMX)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement supported by citation to the source of the strain.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "705ca083-fca7-4ea3-9380-2393d137a1fd",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C24",
+      "claim": "The parental strain DBY12394 was transformed with a PCR product (KanMX-Z3EVpr) to generate a genomically integrated inducible RPB9 (LCY143).",
+      "claim_type": "EXPLICIT",
+      "source": "The parental strain DBY12394 (Mcisaac et al., 2013) (GAL2 + s288c repaired HAP1, ura3\u2206, leu2\u22060::ACT1pr-Z3EV-NatMX) was transformed with a polymerase chain reaction (PCR) product (KanMX-Z3EVpr) to generate a genomically integrated inducible RPB9 (LCY143)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the strain construction performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "753c9d07-2a47-40a3-937c-f031bc983257",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C25",
+      "claim": "The parental strain DBY12394 was transformed with a PCR product (KanMX-Z3EVpr) to generate a genomically integrated inducible DST1 (LCY142).",
+      "claim_type": "EXPLICIT",
+      "source": "The parental strain DBY12394 (Mcisaac et al., 2013) (GAL2 + s288c repaired HAP1, ura3\u2206, leu2\u22060::ACT1pr-Z3EV-NatMX) was transformed with a polymerase chain reaction (PCR) product (KanMX-Z3EVpr) to generate a genomically integrated inducible RPB9 (LCY143) or DST1 (LCY142).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the strain construction performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "307130c8-dd43-4f9d-b4ba-d34aec880f60",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C26",
+      "claim": "Strains were induced with 0-, 3-, 6-, 12-, or 25-nM \u03b2-estradiol to achieve various levels of expression.",
+      "claim_type": "EXPLICIT",
+      "source": "To induce various levels of expression, strains were re-grown in YPD + 0-, 3-, 6-, 12-, or 25-nM \u03b2-estradiol (Sigma, St. Louis, MO, USA, E4389) for more than 12 hr to a final OD600 of 0.1 \u2013 0.4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the experimental conditions used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "8cb80683-c739-4013-a7c4-cca444b500ee",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C27",
+      "claim": "Strains were grown for more than 12 hr to a final OD600 of 0.1 \u2013 0.4.",
+      "claim_type": "EXPLICIT",
+      "source": "To induce various levels of expression, strains were re-grown in YPD + 0-, 3-, 6-, 12-, or 25-nM \u03b2-estradiol (Sigma, St. Louis, MO, USA, E4389) for more than 12 hr to a final OD600 of 0.1 \u2013 0.4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the experimental conditions used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "2356805d-fa29-4376-a709-08dd930aaa19",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C28",
+      "claim": "Cellular RNA was extracted using the Epicenter MasterPure RNA Purification Kit.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular RNA was extracted using the Epicenter MasterPure RNA Purification Kit",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the RNA extraction method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "512d4242-d551-4f8a-b165-efe8ba01cefa",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C29",
+      "claim": "Illumina sequencing libraries were prepared using the Truseq Stranded mRNA kit.",
+      "claim_type": "EXPLICIT",
+      "source": "Illumina sequencing libraries were prepared using the Truseq Stranded mRNA kit",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the library preparation method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "86ed5808-2b46-42c1-9603-6eb0d2cdf154",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C30",
+      "claim": "Samples were sequenced on an HiSeq2000 with at least 20,000,000 50 bp sequencing reads per sample.",
+      "claim_type": "EXPLICIT",
+      "source": "sequenced on an HiSeq2000 with at least 20,000,000 50 bp sequencing reads per sample",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the sequencing parameters used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "8d4545b6-c78f-4ea0-8d57-12ed7a39662a",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C31",
+      "claim": "BWA was used with the parameter -n 2 to permit no more than two mismatches in a read.",
+      "claim_type": "EXPLICIT",
+      "source": "I used bwa (Li and Durbin, 2009) (-n 2, to permit no more than two mismatches in a read) to align the yeast RNA-seq reads to the reference genome",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement supported by citation to the BWA publication.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "4e679d39-2b19-4fe0-8d31-12cc2bed7fe6",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C32",
+      "claim": "TrimBam from bamUtil was used to mask the first and last 10 bp of each read.",
+      "claim_type": "EXPLICIT",
+      "source": "trimBam from bamUtil to mask the first and last 10 bp of each read",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the data processing performed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "59dd26cf-5b6f-43b1-b543-70b66e444718",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C33",
+      "claim": "Samtools mpileup was used with parameters -q 30 -d 100000 -C50 \u2013Q39 to count reads and mismatches.",
+      "claim_type": "EXPLICIT",
+      "source": "I used samtools mpileup (Li et al., 2009) (-q 30 -d 100000 -C50 \u2013Q39) to count the number of reads and mismatches at each position in the genome",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement supported by citation to the samtools publication.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "4e4a7481-caf1-4f1d-9444-22972dd477a7",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C34",
+      "claim": "Low confidence mapping reads were discarded from the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "discarding low confidence mapping, reads that map to multiple positions, and low quality reads",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the filtering criteria used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "470411a5-0749-449b-b54d-46fd64ab38ef",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C35",
+      "claim": "Reads that map to multiple positions were discarded from the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "discarding low confidence mapping, reads that map to multiple positions, and low quality reads",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the filtering criteria used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "198ba5dc-9dd3-4a84-8772-9230c32c0cf5",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C36",
+      "claim": "Low quality reads were discarded from the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "discarding low confidence mapping, reads that map to multiple positions, and low quality reads",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement describing the filtering criteria used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "56a6d925-6f1f-4a06-9564-86ec6e2afd2b",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C37",
+      "claim": "Duplicate reads can be removed from the fastq file if the coverage is low enough so that all reads that map to identical genome coordinates are expected to be PCR duplicates from the same RNA fragment.",
+      "claim_type": "EXPLICIT",
+      "source": "Duplicate reads can be removed from the fastq file if the coverage is low enough so that all reads that map to identical  genome coordinates are expected be PCR duplicates from the same RNA fragment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement based on reasoning about when duplicate removal is appropriate.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "9cc4dde0-c59e-44e9-9de4-e06dca146928",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C38",
+      "claim": "Duplicate removal is appropriate for low coverage paired-end reads with a variable insert size.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the case for low coverage paired-end reads with a variable insert size, but not for very high coverage datasets or single-ended reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement based on reasoning about when duplicate removal is appropriate.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "f1c63dd6-8168-453f-a327-75c803c588f5",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C39",
+      "claim": "Duplicate removal is not appropriate for very high coverage datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the case for low coverage paired-end reads with a variable insert size, but not for very high coverage datasets or single-ended reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement based on reasoning about when duplicate removal is appropriate.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "80689f04-c6a0-411c-9df9-d4cb211c7f27",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C40",
+      "claim": "Duplicate removal is not appropriate for single-ended reads.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the case for low coverage paired-end reads with a variable insert size, but not for very high coverage datasets or single-ended reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement based on reasoning about when duplicate removal is appropriate.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "86e72c8b-e93b-4147-b70d-6d3eac4ed405",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C41",
+      "claim": "Data for the intron retention analysis in human cells are from NCBI SRA PRJNA253670.",
+      "claim_type": "EXPLICIT",
+      "source": "For the intron retention analysis in human cells, data are from NCBI SRA PRJNA253670.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement identifying the source of pre-existing data used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "edd38a92-1c84-4f59-a8f5-c4aadd8fed69",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C42",
+      "claim": "Data for the elc4 analysis are from PRJNA167772.",
+      "claim_type": "EXPLICIT",
+      "source": "Data for the elc4 and spt4 analysis are from PRJNA167772 and PRJNA148851, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement identifying the source of pre-existing data used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "f8de9c3b-9db9-4fcd-883b-40c6691d5a54",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C43",
+      "claim": "Data for the spt4 analysis are from PRJNA148851.",
+      "claim_type": "EXPLICIT",
+      "source": "Data for the elc4 and spt4 analysis are from PRJNA167772 and PRJNA148851, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement identifying the source of pre-existing data used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "81601242-3cd8-4402-9861-dff3f53aa20b",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C44",
+      "claim": "Data for RPB9 correlation are from SRA PRJNA30709 and are all from the Gingeras lab at CSHL.",
+      "claim_type": "EXPLICIT",
+      "source": "For RPB9 correlation, undefined data (SRA PRJNA30709) are all from the Gingeras lab at CSHL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement identifying the source of pre-existing data used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "1808eae8-49ac-471a-8d26-c4a0e1e53a2c",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C45",
+      "claim": "A method was developed that is capable of using RNA-seq reads aligned with spliced aligners.",
+      "claim_type": "EXPLICIT",
+      "source": "I developed a method capable of using RNA-seq reads aligned with spliced aligners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a methodological development in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "42e4bc58-e598-4af4-bd7c-e4b8ea6a17bf",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "claim_id": "C46",
+      "claim": "Error rates at any single genomic position are dominated by sampling bias.",
+      "claim_type": "EXPLICIT",
+      "source": "as error rates at any single genomic position are dominated by sampling bias",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge that motivated the methodological approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "637e6cea-4344-42f9-a4ec-8a049088d2ed",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a method to measure RNA polymerase fidelity using standard RNA-seq protocols. The method involves filtering full-length alignments, trimming read ends, counting mismatches at specific positions, and calculating error rates relative to genomic features rather than absolute genomic positions to avoid sampling bias.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the methodological pipeline is described (C14-C22, C31-C36, C45), no validation data, benchmarking against known error rates, or comparison to existing methods is provided in the manuscript text. The claim that this method can measure changes in RNA polymerase fidelity (C6) lacks supporting experimental results showing the method's accuracy, sensitivity, or specificity. Critical validation experiments are needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "021360fe-d24a-4b92-8407-4ffe91a776db",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "RNA polymerase is error-prone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This claim (C7) is stated as a finding but no quantitative error rate data, statistical analysis, or comparison to background sequencing error rates is provided in the manuscript text. Without seeing the actual measurements and controls distinguishing true transcription errors from sequencing/technical artifacts, this result cannot be evaluated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "443a649e-db48-4a41-8bd5-5802fda9de0a",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "RNA polymerase errors can result in splicing defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The claim (C8) that transcription errors cause splicing defects is stated as a finding, and methods describe measuring error rates at splice junctions (C18-C22), but no data demonstrating elevated error rates at splice sites, functional consequences, or mechanistic evidence is provided in the manuscript text. The causal relationship between errors and splicing defects requires experimental demonstration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "3d41a247-eadc-4063-ad5b-5d32925c0c9e",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Differential expression of RNA polymerase subunits (RPB9 and DST1) causes changes in RNA polymerase fidelity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The experimental design for manipulating RPB9 and DST1 expression levels is described (C23-C30), but no data showing the resulting error rates, dose-response relationships, or statistical significance is provided in the manuscript text. The causal claim (C9) requires quantitative evidence that varying subunit expression actually changes measured error rates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "41544181-855d-4f90-8215-0ecf3aa159a3",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Coding sequences may have evolved to minimize the effect of RNA polymerase errors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This evolutionary claim (C10) is explicitly speculative ('may have') and no comparative genomic analysis, codon usage bias analysis, or evidence of selection pressure is provided in the manuscript text. This represents an inference that would require substantial additional computational and evolutionary analysis to support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "789e1c8f-7567-4316-9201-d8088a7238de",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Errors caused by RNA polymerase may be a major source of stochastic variability at the level of single cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "This claim (C11) is explicitly speculative ('suggest', 'may be') and no single-cell data, measurements of cell-to-cell variability, or quantitative modeling is provided. The manuscript describes bulk RNA-seq experiments, making this extrapolation to single-cell stochasticity unsupported by the presented methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "1b3ff5de-73b8-4801-986d-75a028258220",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Duplicate read removal is appropriate for low coverage paired-end reads with variable insert size, but not for high coverage datasets or single-ended reads.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C37-C40) represent sound methodological reasoning about when PCR duplicates can be distinguished from independent biological molecules based on sequencing coverage and read configuration. The logic is internally consistent and reflects established best practices in RNA-seq analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "73e13d48-468f-407a-900b-78682862e40f",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study analyzed pre-existing RNA-seq datasets from multiple sources including human cells (PRJNA253670), yeast mutants (PRJNA167772, PRJNA148851), and RPB9 correlation data (PRJNA30709).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C41-C44) clearly document the sources of pre-existing data used in the analysis. The accession numbers and sources are explicitly stated, providing transparency about data provenance, though no results from these analyses are presented in the manuscript text.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "578e95e5-3b91-472f-ad42-e1833c963055",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "RNA polymerase has an error rate more than 4 orders of magnitude higher than DNA polymerase, and transcription errors are amplified more than 1000-fold by translation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims (C1, C2) are presented as established knowledge without citations in this manuscript. While these may reflect accepted values in the field, the lack of specific citations makes it impossible to verify the accuracy of these quantitative claims or assess whether they represent consensus values.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    },
+    {
+      "id": "b4d5e90c-7af4-4997-b74d-65d154835d97",
+      "content_id": "54ca5998-86b2-41a9-a63c-e5b279860bf7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Current methods to measure RNA polymerase fidelity are low-throughput, technically challenging, and organism specific.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These characterizations of existing methods (C3-C5) are stated without citations or specific examples. While this may motivate the development of new methods, the claims about limitations of existing approaches cannot be evaluated without references to specific methods and their documented limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:00:02.642306Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "537193c9-1922-4fc3-80e3-5d9113c48f07",
+      "result_id": "637e6cea-4344-42f9-a4ec-8a049088d2ed"
+    },
+    {
+      "claim_id": "99a0c0cb-1778-4330-83f1-8d585ea4792d",
+      "result_id": "637e6cea-4344-42f9-a4ec-8a049088d2ed"
+    },
+    {
+      "claim_id": "4b35a4b7-aa74-4f5d-82b6-42e10b7c3500",
+      "result_id": "637e6cea-4344-42f9-a4ec-8a049088d2ed"
+    },
+    {
+      "claim_id": "2d34ca69-0838-4577-9c50-7cdf6577b15d",
+      "result_id": "637e6cea-4344-42f9-a4ec-8a049088d2ed"
+    },
+    {
+      "claim_id": "2e390788-b3cc-4449-8284-151739b2e7d0",
+      "result_id": "637e6cea-4344-42f9-a4ec-8a049088d2ed"
+    },
+    {
+      "claim_id": "11a5a668-6975-4dda-bc28-d186ab70e9bd",
+      "result_id": "637e6cea-4344-42f9-a4ec-8a049088d2ed"
+    },
+    {
+      "claim_id": "d2dfb4ae-8e72-46c6-97bd-52f45382b2a4",
+      "result_id": "637e6cea-4344-42f9-a4ec-8a049088d2ed"
+    },
+    {
+      "claim_id": "d570d65d-74b8-4aec-b761-a1146cf46c43",
+      "result_id": "637e6cea-4344-42f9-a4ec-8a049088d2ed"
+    },
+    {
+      "claim_id": "1c5e57f2-ab7b-4f5b-b8b8-2350daae34cf",
+      "result_id": "637e6cea-4344-42f9-a4ec-8a049088d2ed"
+    },
+    {
+      "claim_id": "48b37a8b-1790-4738-b467-672ca44166e3",
+      "result_id": "637e6cea-4344-42f9-a4ec-8a049088d2ed"
+    },
+    {
+      "claim_id": "8d4545b6-c78f-4ea0-8d57-12ed7a39662a",
+      "result_id": "637e6cea-4344-42f9-a4ec-8a049088d2ed"
+    },
+    {
+      "claim_id": "4e679d39-2b19-4fe0-8d31-12cc2bed7fe6",
+      "result_id": "637e6cea-4344-42f9-a4ec-8a049088d2ed"
+    },
+    {
+      "claim_id": "59dd26cf-5b6f-43b1-b543-70b66e444718",
+      "result_id": "637e6cea-4344-42f9-a4ec-8a049088d2ed"
+    },
+    {
+      "claim_id": "4e4a7481-caf1-4f1d-9444-22972dd477a7",
+      "result_id": "637e6cea-4344-42f9-a4ec-8a049088d2ed"
+    },
+    {
+      "claim_id": "470411a5-0749-449b-b54d-46fd64ab38ef",
+      "result_id": "637e6cea-4344-42f9-a4ec-8a049088d2ed"
+    },
+    {
+      "claim_id": "198ba5dc-9dd3-4a84-8772-9230c32c0cf5",
+      "result_id": "637e6cea-4344-42f9-a4ec-8a049088d2ed"
+    },
+    {
+      "claim_id": "1808eae8-49ac-471a-8d26-c4a0e1e53a2c",
+      "result_id": "637e6cea-4344-42f9-a4ec-8a049088d2ed"
+    },
+    {
+      "claim_id": "910ef1a3-1f66-4b00-8e0f-b848395545ac",
+      "result_id": "021360fe-d24a-4b92-8407-4ffe91a776db"
+    },
+    {
+      "claim_id": "1aff353f-87d6-4e31-a30c-3196f2725fdb",
+      "result_id": "443a649e-db48-4a41-8bd5-5802fda9de0a"
+    },
+    {
+      "claim_id": "3d11b6ce-e8b7-478b-a9b0-d7f39eb1b7fa",
+      "result_id": "3d41a247-eadc-4063-ad5b-5d32925c0c9e"
+    },
+    {
+      "claim_id": "04454690-0ef6-4ac5-b349-18c8eac308ac",
+      "result_id": "3d41a247-eadc-4063-ad5b-5d32925c0c9e"
+    },
+    {
+      "claim_id": "705ca083-fca7-4ea3-9380-2393d137a1fd",
+      "result_id": "3d41a247-eadc-4063-ad5b-5d32925c0c9e"
+    },
+    {
+      "claim_id": "753c9d07-2a47-40a3-937c-f031bc983257",
+      "result_id": "3d41a247-eadc-4063-ad5b-5d32925c0c9e"
+    },
+    {
+      "claim_id": "307130c8-dd43-4f9d-b4ba-d34aec880f60",
+      "result_id": "3d41a247-eadc-4063-ad5b-5d32925c0c9e"
+    },
+    {
+      "claim_id": "8cb80683-c739-4013-a7c4-cca444b500ee",
+      "result_id": "3d41a247-eadc-4063-ad5b-5d32925c0c9e"
+    },
+    {
+      "claim_id": "2356805d-fa29-4376-a709-08dd930aaa19",
+      "result_id": "3d41a247-eadc-4063-ad5b-5d32925c0c9e"
+    },
+    {
+      "claim_id": "512d4242-d551-4f8a-b165-efe8ba01cefa",
+      "result_id": "3d41a247-eadc-4063-ad5b-5d32925c0c9e"
+    },
+    {
+      "claim_id": "86ed5808-2b46-42c1-9603-6eb0d2cdf154",
+      "result_id": "3d41a247-eadc-4063-ad5b-5d32925c0c9e"
+    },
+    {
+      "claim_id": "35f78088-6987-44f1-a787-0156287c58e4",
+      "result_id": "41544181-855d-4f90-8215-0ecf3aa159a3"
+    },
+    {
+      "claim_id": "ed257b74-b908-4476-8130-a081e66ec4e1",
+      "result_id": "789e1c8f-7567-4316-9201-d8088a7238de"
+    },
+    {
+      "claim_id": "56a6d925-6f1f-4a06-9564-86ec6e2afd2b",
+      "result_id": "1b3ff5de-73b8-4801-986d-75a028258220"
+    },
+    {
+      "claim_id": "9cc4dde0-c59e-44e9-9de4-e06dca146928",
+      "result_id": "1b3ff5de-73b8-4801-986d-75a028258220"
+    },
+    {
+      "claim_id": "f1c63dd6-8168-453f-a327-75c803c588f5",
+      "result_id": "1b3ff5de-73b8-4801-986d-75a028258220"
+    },
+    {
+      "claim_id": "80689f04-c6a0-411c-9df9-d4cb211c7f27",
+      "result_id": "1b3ff5de-73b8-4801-986d-75a028258220"
+    },
+    {
+      "claim_id": "86e72c8b-e93b-4147-b70d-6d3eac4ed405",
+      "result_id": "73e13d48-468f-407a-900b-78682862e40f"
+    },
+    {
+      "claim_id": "edd38a92-1c84-4f59-a8f5-c4aadd8fed69",
+      "result_id": "73e13d48-468f-407a-900b-78682862e40f"
+    },
+    {
+      "claim_id": "f8de9c3b-9db9-4fcd-883b-40c6691d5a54",
+      "result_id": "73e13d48-468f-407a-900b-78682862e40f"
+    },
+    {
+      "claim_id": "81601242-3cd8-4402-9861-dff3f53aa20b",
+      "result_id": "73e13d48-468f-407a-900b-78682862e40f"
+    },
+    {
+      "claim_id": "c44ad8d0-9e2b-4a9b-862a-d701622734b0",
+      "result_id": "578e95e5-3b91-472f-ad42-e1833c963055"
+    },
+    {
+      "claim_id": "ca2b72b1-11f5-4e28-a9f5-02ee2a04195b",
+      "result_id": "578e95e5-3b91-472f-ad42-e1833c963055"
+    },
+    {
+      "claim_id": "0e863d1d-6ba2-4899-9105-08078921aac5",
+      "result_id": "b4d5e90c-7af4-4997-b74d-65d154835d97"
+    },
+    {
+      "claim_id": "01dfa8cf-02bd-45b0-8fe9-f72b2e82fe27",
+      "result_id": "b4d5e90c-7af4-4997-b74d-65d154835d97"
+    },
+    {
+      "claim_id": "8a2c0e41-3d96-4792-9320-f5ab515e90ef",
+      "result_id": "b4d5e90c-7af4-4997-b74d-65d154835d97"
+    }
+  ],
+  "comparisons": []
+}

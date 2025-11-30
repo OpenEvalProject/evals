@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C74"
+    ],
+    "result": "SpoIIIE selectively tracks the 5'\u21923' DNA strand during translocation by making essential electrostatic contacts with phosphates on that strand. This was demonstrated using single-stranded MeP DNA constructs where neutralizing the 5'\u21923' strand severely impaired traversal (6/28 molecules, requiring 5-50s), while neutralizing the 3'\u21925' strand allowed fast traversal (23/24 molecules).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The strand-tracking result is well-supported by direct experimental evidence from single-stranded MeP constructs (C34-C38) showing dramatic differences in traversal probability and speed depending on which strand is neutralized. The data clearly demonstrate selective interaction with the 5'\u21923' strand, with appropriate statistical significance and consistent observations across multiple molecules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "SpoIIIE has a step size of 2 bp per ATP hydrolyzed, as determined using stepping-stone DNA constructs. The motor traversed 1-bp neutral probes with near-100% probability but failed to cross 2-bp, 3-bp, or 4-bp probes (~25% success rate), consistent with a 2-bp step size model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 2-bp step size is well-supported by the stepping-stone experiments (C42-C43) which show a sharp transition in traversal probability between 1-bp and 2-bp probes. This is further validated by agreement with previous FtsK studies (C44) showing 1.6-2.1 bp per ATP. The experimental design appropriately tests the prediction of different mechanistic models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "SpoIIIE can operate processively with non-consecutive inactive subunits but requires two consecutive active subunits for translocation. ATP analog experiments showed that pausing occurs when n=2 consecutive subunits are bound to ATP\u03b3S, with pause durations following single-exponential kinetics (~35 ms lifetime) independent of analog concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The subunit coordination mechanism is well-supported by comprehensive ATP\u03b3S experiments (C53-C61) including pause density analysis, kinetic modeling, and comparison to competitive inhibition. The corrected pause density data best fit the n=2 model, and this conclusion is corroborated by independent FtsK studies (C62). The single-exponential pause distribution and concentration-independent lifetime provide strong mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "SpoIIIE requires electrostatic contacts with DNA phosphates every 5 bp or less for processive translocation. The motor traversed 2-4 bp dsMeP inserts with near-100% probability but showed sharp reduction to ~50% for 5 bp inserts, accompanied by dramatic increases in traversal time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The periodicity of motor-DNA contacts is well-supported by systematic variation of dsMeP insert length (C23-C26) showing a clear threshold at 5 bp. The sharp transition in both traversal probability and time (C24-C25) provides strong evidence for the 5 bp contact periodicity. However, the inference about contact periodicity (C28) could be more precisely stated as \"at least one contact every 5 bp\" rather than \"every 5 bp or less.\"",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Strand-tracking by SpoIIIE is inconsistent with stochastic subunit coordination and instead requires sequential ATP hydrolysis around the hexameric ring. A stochastic mechanism would result in frequent slipping under tension, contrary to observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanistic inference (C39-C41) is logically sound given the strand-tracking observation. The reasoning correctly identifies that stochastic firing would misalign subunits with the tracked strand and cause slipping under constant tension, which was not observed. This represents valid logical deduction from the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C91"
+    ],
+    "result": "The two-subunit escort model predicts SpoIIIE introduces one supercoil per ~80 bp of DNA translocated, which agrees with magnetic tweezers measurements showing one turn per 100\u00b110 bp. During sporulation, this would introduce negative supercoils in the forespore and positive supercoils in the mother cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The supercoiling prediction (C86) is a logical consequence of the proposed 2-bp step size and hexameric geometry, and shows good quantitative agreement with independent experimental measurements (C87). The prediction for in vivo supercoiling (C91) follows logically from the model. The ~20% discrepancy between prediction (80 bp) and measurement (100 bp) is reasonable given experimental uncertainties and model simplifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Nucleotides stabilize SpoIIIE-DNA interactions, with rupture forces increasing from ~3 pN (apo) to ~15 pN (ADP) to ~25 pN (ATP\u03b3S). This suggests only nucleotide-bound subunits form stable electrostatic contacts with DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The nucleotide-dependent stabilization is directly measured (C45, C47-C48) and shows a clear trend of increasing interaction strength with nucleotide binding. The inference that nucleotide-bound subunits form stable contacts (C50) is reasonable given the data, though the mechanism could involve conformational changes rather than direct stabilization of electrostatic interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Single SpoIIIE motors translocate DNA at ~4 kbp/s under saturating ATP (3 mM) and low force (5 pN), consistent with previous in vivo and in vitro measurements. Control experiments confirmed single-motor attachment through protein titration and single-step slipping events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The translocation rate measurement (C14) is directly observed and agrees with literature values (C15). The single-motor controls (C16-C18) are appropriate, using both dilution and analysis of slipping events. The single-step slipping provides good evidence for single-motor attachment, though additional controls (e.g., photobleaching) could strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "SpoIIIE can rarely traverse long neutral DNA segments (1/32 for 30 bp, ~8% for 10 bp) through repeated crossing attempts, suggesting kinetic competition between forward translocation and backward slipping. Non-electrostatic interactions (e.g., steric) may enable eventual traversal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The rare traversal events are observed (C29-C30), and the kinetic competition model (C31) is reasonable and supported by analogy to \u03c629 (C33). However, the hypothesis about steric interactions (C32) is speculative and lacks direct experimental support. The low frequency of events makes mechanistic interpretation uncertain, and alternative explanations (e.g., DNA breathing, transient charge interactions) are not excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "SpoIIIE shows higher traversal probability for 30-bp inserts with only 5'\u21923' strand neutralized (6/28) compared to both strands neutralized (1/32), suggesting possible weak secondary interactions with the 3'\u21925' strand during translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The differential traversal probability is observed (C63), but the sample sizes are small and the difference, while suggestive, may not be statistically significant. The speculation about weak 3'\u21925' strand interactions (C64) is one possible explanation but lacks direct experimental support. Alternative explanations such as DNA structural differences or experimental variability are not ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C71"
+    ],
+    "result": "The two-subunit escort model requires strict sequential subunit firing (A\u2192B\u2192C\u2192D\u2192E\u2192F) without out-of-order or repeated firing. This model is consistent with stepping-stone data but inconsistent with E1/Rho-like mechanisms that would fail to traverse 1-bp probes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The requirement for sequential firing (C68) is a logical necessity for the model to explain the stepping-stone data. The exclusion of E1/Rho-like mechanisms (C71) is well-reasoned based on the 1-bp probe traversal data. However, the claim that subunits \"cannot\" fire out of order is stronger than what the data strictly require\u2014the data show this doesn't happen frequently enough to affect the observed behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "ATP\u03b3S-induced pause density and duration are independent of external force (5-40 pN). The measured Ki for ATP\u03b3S is 124\u00b120 \u03bcM and Km for ATP is 505\u00b150 \u03bcM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The force-independence of pausing (C98-C99) is directly measured and supports the interpretation that pausing is governed by nucleotide exchange rather than mechanical processes. The Ki and Km values (C100-C101) are experimentally determined and used appropriately in the modeling. These are solid supporting measurements for the main mechanistic conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "MeP DNA modifications are not expected to cause significant structural distortions because symmetric neutralization doesn't distort DNA structure, and the experimental buffer contained 10 mM Mg\u00b2\u207a which mitigates distortion effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims about MeP DNA structure are well-supported by citations to Strauss and Maher (C65-C67). The symmetric neutralization in dsMeP constructs and presence of Mg\u00b2\u207a provide reasonable assurance that structural artifacts are minimized. This is an important control consideration for interpreting the MeP experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C89",
+      "C90",
+      "C92"
+    ],
+    "result": "Electrostatic interactions between SpoIIIE and DNA serve dual purposes: providing grip for protein stripping and enabling DNA supercoiling during translocation. The 9\u00b0 rotation mismatch between motor steps (60\u00b0) and DNA helical advance (69\u00b0 per 2 bp) drives supercoiling, which may be a general feature of strand-tracking ring motors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional roles of electrostatic interactions (C82-C83) are reasonable inferences supported by the motor's properties. The geometric calculation of rotation mismatch (C84-C85) is mathematically sound. The generalization to other motors (C89) is appropriately cautious speculation supported by \u03c629 data. The proposal about fine-tuning for forespore DNA state (C92) is speculative but plausible given the in vivo measurements (C90).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "SpoIIIE operates as a single-molecule bottleneck during sporulation with only two motors responsible for chromosome translocation. The flexible coordination mechanism allowing bypass of inactive subunits may have evolved to safeguard against subunit failure in such critical single-point-of-failure motors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The low copy number and bottleneck nature of SpoIIIE are supported by citations (C94-C95). The evolutionary speculation (C96-C97) is reasonable given the experimental findings about subunit bypass capability, though it remains speculative. This represents appropriate biological contextualization of the mechanistic findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background information on SpoIIIE structure and function: SpoIIIE is a homo-hexameric dsDNA translocase that completes chromosome segregation during B. subtilis sporulation. It contains transmembrane, linker, and motor domains (\u03b1, \u03b2, \u03b3 subdomains), forms hexameric rings with DNA threaded through the central pore, and exhibits high translocation velocity (~5 kbp/s) and force generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established background facts about SpoIIIE supported by multiple literature citations (C5, C7-C13) and general knowledge (C1, C6). They provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C19",
+      "C51",
+      "C52",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C88",
+      "C93"
+    ],
+    "result": "Literature context and comparisons: MeP DNA preserves B-form structure; ATP\u03b3S binds competitively to ATP sites; E1/Rho helicases use different mechanisms; previous studies showed SpoIIIE supercoiling and FtsK can bypass inactive subunits; domain \u03b3 mediates sequence recognition through interactions with both DNA strands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide important literature context and are appropriately supported by citations. They establish the basis for experimental design choices and help interpret the current findings in light of previous work. While not novel results, they are accurately represented.",
+    "result_type": "MINOR"
+  }
+]

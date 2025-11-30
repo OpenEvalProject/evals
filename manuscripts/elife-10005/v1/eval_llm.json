@@ -1,0 +1,199 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Ancient DNA studies face constant contamination risks, and positive authentication evidence is essential even when preventive measures are implemented. Despite the development of special sample preparation procedures to reduce contamination, it remains difficult to estimate their effectiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8, C9, and C10 establish well-accepted principles in ancient DNA research supported by appropriate citations. These represent established knowledge about contamination challenges and authentication requirements in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C11"
+    ],
+    "result": "DNA from flora and fauna that do not fossilize may be preserved in sediments, allowing characterization of past biodiversity, and next-generation sequencing enables authentication of ancient DNA through generation of large numbers of full-length sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, and C11 describe established knowledge about sedimentary DNA preservation and sequencing capabilities, supported by appropriate citations. These provide necessary background context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C30",
+      "C31"
+    ],
+    "result": "Ancient DNA exhibits characteristic C-to-T substitution patterns at the 5' and 3' ends of molecules due to cytosine deamination, with the highest frequency at the first base decreasing exponentially toward the center. This pattern is ubiquitous in ancient DNA but absent in modern samples, making it a standard authentication criterion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 and C30-C31 describe well-established ancient DNA damage patterns supported by multiple citations and Figure 1A. This represents foundational knowledge for the authentication method developed in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Smith et al. reported wheat presence in the UK 8000 years ago based on sedimentary ancient DNA from Bouldnor Cliff, assigning 152 reads to wheat from ~72 million total reads. Despite state-of-the-art preventive measures and rigorous phylogenetic curation, they failed to authenticate the ancient origin of these sequences using standard approaches due to the small number of reads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C17-C29 accurately summarize the Smith et al. study and its limitations. The characterization of their methodology and failure to authenticate is factually supported by citation to the original work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C66",
+      "C67",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The authors developed a computational method that fits an exponential function to C-to-T substitution frequencies at the 5' end and calculates goodness-of-fit p-values using a one-sided t-test. True ancient DNA libraries show significant goodness-of-fit p-values indicating exponential decay, while modern DNA libraries show non-significant p-values with neither decay nor growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 and C32-C34 describe the methodological approach with appropriate mathematical detail. The validation shown in Figures 1A and 1B demonstrates the method distinguishes ancient from modern DNA. The statistical approach appears sound for the stated purpose.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "When comparing 152 sedaDNA wheat sequences to 10,000 subsamples of 150 sequences from historic S. tuberosum (1846), the sedaDNA goodness-of-fit p-value falls in the upper 3% with least good fit, rejecting the hypothesis of ancient origin. However, comparison to modern wheat library shows good match (p=0.83), failing to reject modern origin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 present the core statistical comparison with appropriate methodology and clear results shown in Figure 2A. The resampling approach with 10,000 iterations provides robust statistical power. The contrasting results between ancient and modern comparisons strongly support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Testing against 13 animal and plant samples aged 85-170 years showed positive correlation between library goodness-of-fit p-values and empirical p-values for sedaDNA wheat sequences. Using significance level 0.05, ancient origin was rejected for 7 of 13 libraries, demonstrating that the purportedly 8000-year-old wheat sequences show less pronounced deamination than many samples under 200 years old.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 describe systematic testing across multiple ancient DNA libraries with results shown in Figure 2B. The finding that relatively young samples (85-170 years) show stronger ancient DNA signatures than the purportedly 8000-year-old wheat is compelling evidence against authenticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Comparison to a 7000-year-old human sample from la Bra\u00f1a (with ~50% endogenous DNA and ~15% C-to-T substitution rate) rejected the hypothesis that sedaDNA reads are equally ancient (p=0.0014). Almost all 10,000 subsamples from la Bra\u00f1a showed very low goodness-of-fit p-values despite using only 150 reads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 present a conservative test using a temporally comparable ancient sample with exceptional preservation. The highly significant result (p=0.0014) and consistency across subsamples (Figure 2\u2014figure supplement 2) provide strong evidence. This is particularly compelling as la Bra\u00f1a is closer in age to the claimed wheat sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Statistical power assessment showed that true ancient DNA libraries were never incorrectly rejected, while modern libraries could be correctly identified as non-ancient only with sufficient sequences (>300 reads, with median empirical p-value always <0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 describe validation of the method's statistical power shown in Figures 3A and 3B. The demonstration that the method has no false positives for ancient DNA and requires >300 reads for reliable detection of modern DNA establishes appropriate sensitivity and specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Analysis of all wheat-mapped reads (without phylogenetic curation) showed empirical p-values declining with increasing read numbers across all sediment layers, resembling modern DNA patterns. Ancient origin was rejected for tests with >400 reads (layers 1-2, 4) or >800 reads (layer 3), and the 152 phylogenetically curated sequences were not a biased subsample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 extend the analysis beyond the curated sequences shown in Figure 3C. The finding that uncurated reads show the same pattern as curated ones (C57) strengthens the conclusion by demonstrating the phylogenetic curation did not introduce bias. The layer-specific thresholds are appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The putative wheat DNA reads from Smith et al. are most likely not of ancient origin, as this conclusion holds even when comparing to century-old samples with lower deamination signatures. Therefore, the scenario of wheat transport to Bouldnor Cliff 8000 years ago is unwarranted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C58-C60 represent the main conclusions supported by the comprehensive statistical analyses in claims C35-C57. Multiple independent tests consistently reject ancient origin across different comparison datasets and analytical approaches. The conclusion is appropriately strong given the convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "The authentication approach can be used even with very small numbers of sequences and may prove useful for testing authenticity in ancient DNA studies whose conclusions rely heavily on ancient origin of analyzed sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C61 makes forward-looking statements about the method's utility. While the method successfully analyzed 150-152 sequences in this study, broader validation across diverse sample types, preservation conditions, and taxonomic groups would strengthen claims about general applicability. The power analysis (C50-C52) suggests >300 reads may be needed for reliable modern DNA detection.",
+    "result_type": "MINOR"
+  }
+]

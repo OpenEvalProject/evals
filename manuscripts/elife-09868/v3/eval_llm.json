@@ -1,0 +1,243 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript establishes that stimulus-specific adaptation (SSA) is a widespread phenomenon in the primary auditory cortex, where neurons selectively reduce responses to frequently occurring (standard) tones while maintaining strong responses to rare (deviant) tones. This adaptation is thought to enhance detection of unexpected sounds and increase efficiency of sensory coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C10-C13 are well-supported by established literature (multiple citations) and the authors' own data (Figure 1D showing 138/147 neurons with significant SSA). The theoretical framework is grounded in prior work and the experimental observations confirm the prevalence of SSA in A1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Thalamocortical inputs exhibit SSA, but the SSA index in the granular layer CSD (reflecting thalamic inputs) is significantly lower than both non-thalamo-recipient layers and mean spiking activity, suggesting additional intra-cortical mechanisms amplify SSA beyond thalamic adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 are supported by CSD analysis (Figure 1F,G) with appropriate statistical tests (p1 = 6e-4 and p1 = 0.029). The interpretation that cortical circuits amplify SSA is a reasonable inference from the data showing stronger SSA in spiking activity than in thalamic inputs. The CSD methodology is well-established (C25, multiple citations).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C62"
+    ],
+    "result": "Optogenetic suppression using Arch expressed in PV-Cre or SOM-Cre mice effectively and selectively suppresses PV or SOM interneurons, as demonstrated by in vitro hyperpolarization and in vivo increases in putative excitatory neuron activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are well-supported by immunohistochemistry (92-95% specificity, 73-86% efficiency), in vitro electrophysiology showing hyperpolarization (Figure 2D, supplements), and in vivo recordings showing increased activity in putative excitatory neurons (102/115 for PV, 61/104 for SOM). The methodology is appropriate and controls are adequate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Both PV and SOM interneurons contribute to SSA in putative excitatory neurons, as optogenetic suppression of either interneuron type significantly reduces the SSA index across the neuronal population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by statistical analysis showing significant SSA reduction (PV: \u0394 = -41%, p1 = 1e-12; SOM: \u0394 = -25%, p1 = 2e-6) and appropriate controls (C34) showing no effect of light without Arch expression. The conclusion that both interneuron types contribute to SSA (C35) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C36",
+      "C37",
+      "C52"
+    ],
+    "result": "PV interneurons amplify SSA by providing non-specific, constant inhibition that equally increases responses to both standard and deviant tones when suppressed, with the relative effect being stronger on the weaker standard tone responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by detailed statistical analysis (Figure 4A-C) showing equal increases in firing rate for standard (\u0394 = 102%) and deviant (\u0394 = 56%) tones with no significant difference between them (p2 > 0.05, t(159) = -0.1). The interpretation (C52) that constant inhibition amplifies SSA is consistent with the data and modeling results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C38",
+      "C39"
+    ],
+    "result": "SOM interneurons selectively reduce excitatory responses to frequent tones, as suppression of SOMs increases responses to standard tones (\u0394 = 29%) and spontaneous activity (\u0394 = 46%) but not to deviant tones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are well-supported by statistical analysis (Figure 4D-F) showing selective effects: significant increases for spontaneous (p2 = 2e-9) and standard (p2 = 2e-8) but not deviant (p2 > 0.05) tones. The differential effect is statistically significant (spontaneous vs deviant: \u0394 = 390%, p2 = 0.004).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "The effects of PV and SOM suppression on SSA show distinct laminar patterns: PV effects are strongest in the granular layer and present in all layers, while SOM effects are significant in granular and infra-granular but not supra-granular layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by laminar analysis (Figure 4\u2014figure supplement 3) with appropriate statistics. The PV effect being stronger in granular layer is consistent with known PV distributions (citations provided). However, the lack of SOM effect in supra-granular layers could reflect sampling bias as acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Both PV and SOM interneurons themselves exhibit SSA with similar SSA indices, but show differential adaptation patterns: PVs do not significantly adapt to equal probability tones while SOMs show progressive adaptation from equal to standard tones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by optogenetic identification and recording (Figure 6) with appropriate statistics (PV: \u0394 = -32%, p2 = 0.023; SOM: \u0394 = -41%, p2 = 0.002). The differential adaptation patterns (C44) are statistically significant. The inference that SOMs adapt faster (C45) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C86"
+    ],
+    "result": "A mutually coupled excitatory-inhibitory network model based on Wilson-Cowan dynamics successfully replicates the differential effects of PV and SOM suppression on SSA, demonstrating that adapting inhibitory interneurons can amplify adaptation in excitatory neurons through differential post-synaptic integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by modeling results (Figure 7) that qualitatively reproduce experimental observations. The model demonstrates a plausible mechanism for the differential effects. However, the model parameters were chosen to match experimental data (C86), which limits its predictive power. The model provides mechanistic insight but does not constitute independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C53",
+      "C54"
+    ],
+    "result": "The model suggests that SSA adjusts neuronal responses to a more sensitive range and that constant PV inhibition amplifies thalamocortical depression while SOM effects involve shifts in non-linear transfer functions, possibly due to synaptic facilitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49, C53-C54 are mechanistic interpretations based on modeling results. While the model is consistent with the data, these specific mechanistic explanations (C49 being speculative, C54 involving 'possibly' synaptic facilitation) require additional experimental validation. The claims are plausible but not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The findings expand the 'adaptation in narrowly tuned units' model and suggest that SSA may facilitate deviant sound detection, though the behavioral relevance of cortical SSA modulation remains untested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51 and C56-C58 appropriately contextualize the findings within existing theory (citations provided) and acknowledge limitations. The authors correctly note that the link between SSA and behavior has not been directly demonstrated (C56-C57), making these claims appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The study addresses a gap in understanding how different cortical interneuron types (PVs and SOMs) contribute to dynamic auditory processing, building on established knowledge of interneuron diversity and hypothesized specialized functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23 establish the theoretical motivation and are well-supported by multiple citations to prior work. The identification of the knowledge gap (C19) is appropriate and the anatomical/physiological properties of PVs and SOMs (C20-C23) are established facts from cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C24",
+      "C60",
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C85"
+    ],
+    "result": "The experimental methods including animal preparation, viral delivery, electrophysiology, acoustic stimulation, optogenetic manipulation, unit identification, and data analysis are described in detail with appropriate citations and controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C85 describe methodological details that are generally well-documented with appropriate citations. The methods appear rigorous with stringent unit isolation criteria (C70), appropriate controls (C34, C79), and validated techniques (C25, C84-C85). Some potential limitations are acknowledged (C67, C72).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C59"
+    ],
+    "result": "The findings are consistent with prior work showing synaptic depression at thalamocortical and inhibitory synapses, and the optogenetic approach overcomes limitations of lesion or pharmacological studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C59 appropriately contextualize the methodology and findings within prior work through citations. The advantages of optogenetics over alternative approaches are well-established in the cited literature.",
+    "result_type": "MINOR"
+  }
+]

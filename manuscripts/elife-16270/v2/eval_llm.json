@@ -1,0 +1,440 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "PLK4 inactivation leads to centrosome depletion, prolonged mitosis (~100 min vs ~30 min), growth arrest, and G1 arrest with elevated nuclear p53 and p21 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 establish the centrosome loss phenotype with converging evidence from multiple assays (immunofluorescence, live-cell imaging, growth curves). The data in Figures 1A-D consistently demonstrate the expected phenotypes, and the PLK4 role is supported by prior literature (C1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "p53 removal alleviates G1 arrest and p21 accumulation but does not rescue mitotic delay in acentrosomal cells, allowing continued proliferation despite mitotic stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 demonstrate genetic epistasis with clear data in Figures 1E-G showing that p53 acts downstream of mitotic stress to control arrest but not mitotic duration. The separation of mitotic delay from arrest is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "A genome-wide CRISPR screen identified 27 candidate genes, with the top 5 hits being p53, p21, 53BP1, USP28, and TRIM37, where 53BP1, USP28, and TRIM37 are novel factors not previously linked to centrosome loss-induced G1 arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 describe the screen methodology and results with appropriate statistical criteria (multiple sgRNAs enriched across independent screens). Figure 2B and Table 1 provide comprehensive data. The novelty claim (C12) is reasonable given the literature context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "53BP1 is a known DDR component and p53-binding protein, while USP28 is a deubiquitinase that interacts with 53BP1 but has minimal role in DSB repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 accurately summarize prior literature with appropriate citations. These establish the known functions of the identified genes and set up the apparent contradiction that motivates the mechanistic studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "Major DDR components (ATM, MDC1, RNF8, BRCA1) were not enriched in the screen despite being detectable in baseline reads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 provide important negative controls showing specificity of the screen. The detection in baseline but not enrichment argues against technical issues and supports that canonical DDR is not required for this arrest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Knockout of 53BP1, USP28, or p21 allows continued proliferation without centrosomes. These cells show normal mitotic duration with centrosomes but experience ~90 min mitotic delay without centrosomes, yet fail to arrest, indicating these genes mediate arrest but not mitotic progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 validate the screen with clonal knockout lines and establish functional roles. Data in Figures 2C-D clearly separate mitotic delay from arrest. The inference that these genes don't regulate mitotic progression (C22) is well-supported by normal mitotic timing in centrosomal cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "53BP1 and USP28 function upstream of p53: p53 accumulates in arrested wild-type and p21-/- cells but not in 53BP1-/- or USP28-/- cells during acentrosomal division, while p21 acts downstream of p53.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 establish the epistatic relationships through immunofluorescence and western blot data (Figures 1C, 2E-F). The pathway ordering is clearly demonstrated by differential p53 accumulation patterns across genotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "p53 elevation during arrest is post-transcriptional, as p53 mRNA levels do not increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by qRT-PCR data in Figure 2G showing no change in p53 mRNA despite protein elevation, indicating post-transcriptional regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "53BP1-/- and USP28-/- cells are the first vertebrate cell lines allowing stable centrosome loss without abolishing the p53 network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is a reasonable novelty claim given that p53-/- cells completely eliminate p53 signaling, while these new lines maintain p53 function in other contexts. This is a significant technical advance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "53BP1 and USP28 are broadly required for G1 arrest induced by different mitotic stresses (Eg5 inhibitor, MG132), not just centrosome loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 extend the findings beyond centrosome loss using two mechanistically distinct perturbations. BrdU incorporation data in Figure 2H clearly show that 53BP1-/- and USP28-/- cells bypass arrest induced by both drugs, demonstrating generality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "The authors hypothesize that 53BP1 mediates G1 arrest independently of its DDR role, based on prior reports suggesting DDR is not involved in acentrosomal arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C41 present a hypothesis motivated by apparent contradiction with prior literature. While the hypothesis is reasonable, C41 is explicitly speculative and requires experimental validation provided in subsequent claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The tandem BRCT domain of 53BP1, which is not required for DDR but interacts with p53 and USP28, is essential for centrosome loss-induced G1 arrest. The 53BP1\u0394BRCT mutant fails to rescue arrest despite maintaining DDR function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 provide strong domain-mapping evidence. The 53BP1\u0394BRCT mutant localizes to DNA damage sites (C46, Figure 3\u2014supplement 3) but cannot rescue arrest (C45, Figures 3B-C), cleanly separating DDR from arrest functions. The BRCT domain's known interactions (C43) provide mechanistic rationale.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The 53BP1TESE phosphomimetic mutant, which lacks DDR function due to inability to localize to DSB sites, can still rescue G1 arrest, demonstrating DDR function is not required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 use a complementary approach with the phosphomimetic mutant. Delocalization from damage sites (C49, Figure 3\u2014supplement 3) confirms loss of DDR function, while rescue of arrest (C50, Figures 3B-C) demonstrates DDR independence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "The 53BP1TASA phosphonull mutant, which maintains DDR activity, also efficiently rescues arrest, confirming 53BP1 can mediate arrest regardless of DDR status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 complete the domain analysis by showing both DDR-active and DDR-inactive forms rescue arrest. This bidirectional evidence (TESE and TASA mutants) strongly supports DDR-independent function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The catalytic activity of USP28 is essential for G1 arrest, as the catalytically inactive USP28CI mutant fails to rescue arrest in USP28-/- cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 demonstrate requirement for USP28 enzymatic activity through rescue experiments with catalytic mutant (Figures 4B-C). This establishes that deubiquitinase function, not just scaffolding, is required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "USP28 directly deubiquitinates p53 in vitro and overexpression of wild-type but not catalytically inactive USP28 causes ectopic p53 accumulation and arrest without increasing p53 mRNA, indicating USP28 stabilizes p53 post-translationally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 provide mechanistic insight through in vitro biochemistry (C57, Figure 4D) and overexpression studies (C58-C59, Figures 4E-F). The combination of direct deubiquitination and protein-level effects without mRNA changes strongly supports the stabilization mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "53BP1 functions upstream of USP28 to stabilize p53: USP28 overexpression stabilizes p53 in 53BP1-/- cells, but 53BP1 overexpression has no effect in USP28-/- cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 establish epistasis through overexpression experiments in knockout backgrounds (Figures 4G-I). The asymmetric rescue pattern clearly places 53BP1 upstream of USP28, consistent with known protein interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "53BP1 localizes to kinetochores during early mitosis when SAC is active and delocalizes at anaphase when SAC is off, resembling SAC component localization patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 describe 53BP1 kinetochore dynamics in normal mitosis with clear immunofluorescence data (Figure 5A). The correlation with BubR1 signals and citation to prior work (C68) support the SAC-like pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "During mitotic stress, 53BP1 is often absent from kinetochores despite SAC activation (bright BubR1/Mad2), suggesting 53BP1 is not a typical SAC component.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 identify a key difference from SAC: 53BP1 can be absent while SAC markers remain (Figure 5A, Figure 5\u2014supplement 1). This observation is critical for establishing independence from SAC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "53BP1 gradually dissociates from kinetochores starting ~30 min after mitotic entry during stress, while SAC components remain, indicating 53BP1 localization is time-sensitive rather than SAC-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 provide time-course data (Figure 5B) showing differential kinetics of 53BP1 vs. BubR1/Mad2. The temporal dissociation of 53BP1 while SAC remains active strongly supports time-dependent rather than SAC-dependent regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "SAC reactivation after metaphase arrest relocalizes BubR1 and Mad2 but not 53BP1 to kinetochores, demonstrating irreversible 53BP1 dissociation that could potentially mark mitotic stress duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 use SAC reactivation experiments (Figure 5C) to demonstrate irreversibility, clearly distinguishing 53BP1 from SAC. Claim C77 is speculative about function but reasonable given the time-dependent, irreversible behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "After stressed mitosis, p53 forms nuclear foci co-localizing with 53BP1 and USP28 in ~30% of cells, suggesting these proteins interact following mitotic stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 show co-localization in nuclear foci (Figure 5D) consistent with known protein interactions. The observation in stressed but not unstressed conditions supports stress-induced complex formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "SAC-dependent mitotic delay occurs normally in p53-/-, 53BP1-/-, USP28-/-, and p21-/- cells, and MG132 triggers G1 arrest without activating SAC, demonstrating independence of the two pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 provide multiple lines of evidence for pathway independence: normal SAC in knockout cells and MG132-induced arrest without SAC activation (weak BubR1/absent Mad2). The data across multiple figures support bidirectional independence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "MPS1 inactivation disables SAC causing rapid mitosis and G1 arrest. Short MG132 treatment (0.5 hr) rescues this arrest by allowing spindle assembly, but prolonged treatment (\u22652 hr) causes arrest regardless of MPS1 activity. 53BP1 knockout rescues the prolonged MG132-induced arrest, demonstrating that prolonged mitotic stress activates G1 arrest without SAC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 use elegant genetic experiments with MPS1as cells (Figure 5E-F) to definitively separate SAC from 53BP1/USP28 pathway. The dose-response with MG132 duration and rescue by 53BP1 knockout provide strong evidence for SAC-independent arrest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "53BP1/USP28 and SAC are parallel mitotic programs: SAC protects accuracy at the expense of speed, while 53BP1/USP28 selects against stressed/delayed mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 synthesize the findings into a coherent model. The parallel nature is well-supported by the independence experiments (C80-C89), and the functional descriptions accurately reflect the data showing SAC delays mitosis while 53BP1/USP28 triggers arrest after delay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "A separate program involving 53BP1 and USP28 monitors mitotic progression independent of SAC, triggering p53/p21-dependent arrest that selects against cells with disturbed mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 summarize the main findings. The independence from SAC is well-established (C80-C89), the epistatic pathway is clear (C26-C65), and the selective function is supported by the broad response to different stresses (C34-C39).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "53BP1's involvement in G1 arrest is independent of its DNA repair role but requires its binding partners p53 and USP28, revealing 53BP1 as more than a DNA damage-responding molecule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 synthesize the domain-mapping and epistasis results. The DDR independence is strongly supported by mutant analyses (C42-C53), and the requirement for p53/USP28 interactions is demonstrated by BRCT domain requirement and epistasis experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "53BP1 kinetochore association is time-sensitive, potentially providing a mechanism to measure or respond to mitotic stress duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is well-supported by the time-course and irreversibility data (C72-C76). Claim C99 is speculative about mechanism but reasonable given the time-dependent, irreversible dissociation that correlates with arrest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors discuss that G1 arrest can occur without significant mitotic delay, suggesting either a common underlying damage from both centrosome loss and mitotic delay, or two distinct errors both mediated by 53BP1/USP28.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C100 accurately cites prior work. Claims C101-C102 present alternative speculative models to explain the relationship between centrosome loss and mitotic delay. These are reasonable hypotheses but lack direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The authors discuss potential explanations for why cells are penalized for prolonged mitosis: mitosis may be prone to non-specific damage (preemptive strike model), or slow mitosis may indicate unfit cells that should be removed (fitness test model).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C108 present thoughtful speculation about the biological rationale for the pathway. Claim C104 is supported by the data showing ~90 min delay triggers arrest. Claims C105-C108 are reasonable hypotheses supported by citations but lack direct experimental evidence in this study.",
+    "result_type": "MINOR"
+  }
+]

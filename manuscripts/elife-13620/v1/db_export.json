@@ -1,0 +1,921 @@
+{
+  "submission": {
+    "id": "6ebbb318-db44-467c-99cc-09f49fa2f5ee",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:10:37.214038Z",
+    "updated_at": "2025-11-30T00:10:37.214038Z"
+  },
+  "content": [
+    {
+      "id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "submission_id": "6ebbb318-db44-467c-99cc-09f49fa2f5ee",
+      "content_type": "manuscript",
+      "content_text": "# Registered report: Systematic identification of genomic markers of drug sensitivity in cancer cells\n\n## Authors\n\n- John P Vanden Heuvel<sup>1</sup>\n- Jessica Bullenkamp<sup>3</sup>\n\n### Affiliations\n\n1. Indigo Biosciences, State College United States\n2. Veterinary and Biomedical Sciences Penn State University University Park, PA United States\n3. King's College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe Reproducibility Project: Cancer Biology seeks to address growing concerns about the reproducibility in scientific research by conducting replications of selected experiments from a number of high-profile papers in the field of cancer biology. The papers, which were published between 2010 and 2012, were selected on the basis of citations and Altmetric scores (Errington et al., 2014). This Registered Report describes the proposed replication plan of key experiments from \u201cSystematic identification of genomic markers of drug sensitivity in cancer cells\u201d by Garnett and colleagues, published in Nature in 2012 (Garnett et al., 2012). The experiments to be replicated are those reported in Figures 4C, 4E, 4F, and Supplemental Figures 16 and 20. Garnett and colleagues performed a high throughput screen assessing the effect of 130 drugs on 639 cancer-derived cell lines in order to identify novel interactions for possible therapeutic approaches. They then tested this approach by exploring in more detail a novel interaction they identified in which Ewing\u2019s sarcoma cell lines showed an increased sensitivity to PARP inhibitors (Figure 4C). Mesenchymal progenitor cells (MPCs) transformed with the signature EWS-FLI1 translocation, the hallmark of Ewing\u2019s sarcoma family tumors, exhibited increased sensitivity to the PARP inhibitor olaparib as compared to MPCs transformed with a different translocation (Figure 4E). Knockdown mediated by siRNA of EWS-FLI1 abrogated this sensitivity to olaparib (Figure 4F). The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange, and the results of the replications will be published by eLife.\n\n## Introduction\n\nIn their 2012 Nature paper, Garnett and colleagues implemented a large-scale high throughput in vitro screen designed to assess interactions between drugs and cancer-derived human cell lines (Garnett et al., 2012). This study leveraged a collection of over 600 cell lines screened across 130 drugs, with the aim to uncover new interactions between known cancers and known drugs in order to identify new potential therapeutic avenues using extant drugs. They captured a large number of known gene-drug interactions of clinically active drugs and identified several novel gene\u2013drug associations. The ability to accurately capture a large number of known clinically relevant drug response biomarkers as well as preferential cancer type sensitivities known to occur in the clinic, such as decreased sensitivity to BRAF inhibitors in BRAF mutant colorectal cancers relative\u00a0to melanomas, demonstrated the effectiveness of this large-scale pharmacogenomic approach. A similar approach of interrogating a large panel of human cancer cell lines of diverse lineages to predict drug sensitivity was conducted and reported by Barretina and colleagues at the same time (Barretina et al., 2012).\n\nGarnett and colleagues identified an unexpected highly significant association between the EWS-FLI1 translocation and sensitivity to the PARP inhibitor olaparib (Garnett et al., 2012). The EWS-FLI1 translocation is a defining cytogenetic characteristic of Ewing\u2019s sarcoma family tumors (ESFTs). ESFTs are highly malignant tumors that occur in the bone and soft tissue, usually in children. The translocation event combines part of the EWS protein to a member of the ETS transcription factor family; in 90% of cases, this is FLI1. This creates a novel transcription factor, EWS-FLI1, whose oncogenic actions and mechanisms are still being fully explored. The translocation event is thought to be the initiating event for the development of ESFTs (Erkizan et al., 2010; Lessnick and Ladanyi, 2012).\n\nPARP1 has diverse functions in chromatin modification, mitosis and cell death, but it is most well studied in the context of DNA repair and transcriptional regulation (Sonnenblick et al., 2014). PARP1 is a key component of single stranded break (SSB) repair; however, loss of PARP1 activity can be compensated for through DNA repair via homologous recombination (HR). This makes PARP1 an interesting therapeutic target in the context of malignancies with deficient HR, such as BRCA1 and BRCA2 mutant breast and ovarian cancers. In these cancers, loss of PARP activity results in synthetic lethality; with both SSB and HR impaired, the accumulation of DNA damage eventually kills the tumor cells (Jiang et al., 2015; Lord et al., 2015; Sonnenblick et al., 2014). PARP inhibitors (PARPi), such as olaparib, are now at the forefront of treatment for breast and ovarian cancers, as well as other malignancies (Feng et al., 2015).\n\nIn Figure 4C, a predicted interaction between Ewing\u2019s sarcoma cells and the PARP inhibitor olaparib was tested. PARP inhibitors target BRCA-deficient cells that rely on alternative DNA damage repair pathways involving PARP. A panel of cell lines representing Ewing\u2019s sarcoma, a BRCA-deficient line, as well as other osteosarcomas and cancers of soft tissue and epithelium were treated with a range of concentrations of olaparib. The concentration of olaparib required to reduce colony formation by 90% or more was much less for Ewing\u2019s sarcoma cells (on par with the concentration required for the BRCA-deficient cell line) than for the non-Ewing\u2019s sarcoma cell lines. This experiment will be replicated in Protocol 1.\n\nIn Figure 4E, the hypothesis that mouse mesenchymal progenitor cells (MPCs) that had been transformed with the EWS-FLI1 translocation would confer sensitivity to olaparib was tested. The sensitivity of these cells to olaparib were compared to MPCs transformed with a related translocation (FUS-CHOP) as well as to SK-N-MC cells, which have the EWS-FLI1 translocation endogenously. Treatment with olaparib did not inhibit the\u00a0viability of the FUS-CHOP transformed MPCs, but did inhibit the\u00a0viability of the SK-N-MC cells. Olaparib also inhibited the\u00a0viability of the EWS-FLI1 transformed MEFs compared to the FUS-CHOP translocation. This experiment will be replicated in Protocol 2.\n\nIn Figure 4F, the effects of EWS-FLI1 depletion on a cell line carrying the translocation endogenously was tested. A673 cells were transfected with siRNAs targeting EWS-FLI1, which resulted in a partial rescue of sensitivity to olaparib compared to control siRNA transfected cells. This experiment will be replicated in Protocol 3.\n\nA paper published at the same time as Garnett and colleagues\u2019 work also confirmed that Ewing\u2019s sarcoma cell lines were sensitive to treatment with PARP inhibitors (Brenner et al., 2012). In a previous paper, Brenner and colleagues reported that in prostate cancer PARP was a cofactor for wild-type ETS transcription factors, which makes up one half of the defining translocation-based fusion transcription factor of Ewing\u2019s sarcoma, and that PARPi treatment of ETS positive prostate cancers disrupted their growth (Brenner et al., 2011; Legrand et al., 2013). Based on this finding, they examined the role of PARP1 and PARPi in Ewing\u2019s sarcoma. Using immunoprecipitation, they detected a direct interaction between the EWS-FLI1 fusion transcription factor and PARP1 (Brenner et al., 2012). Further, they reported that transforming a cell line (in this case, PC3 cells) with the EWS-FLI1 translocation conferred sensitivity to treatment with olaparib, and that siRNA mediated knockdown of EWS-FLI1 inhibited transwell migration of ESFT derived cell lines, but not osteosarcoma cell lines (Brenner et al., 2012). Multiple groups have also reported the unique sensitivity of EWS-FLI1 carrying Ewing\u2019s sarcoma derived cell lines to olaparib (Lee et al., 2013; Norris et al., 2014; Ord\u00f3\u00f1ez et al., 2015). Additional work then demonstrated that, similar to breast and ovarian cancers harboring BRCA1/2 mutations, Ewing\u2019s sarcomas may also have defects in DNA repair mechanisms, rendering them sensitive to PARP inhibition (Stewart et al., 2014). This has led to the start of clinical trials treating Ewing\u2019s sarcoma patients with combination therapies targeting multiple DNA damage pathways and PARP inhibition. Results from a small scale nonrandomized phase II human trial failed to show clinical efficacy in patients with metastatic and/or recurrent Ewing sarcoma treated with only olaparib (Choy et al., 2014), but other trials are underway to explore the efficacy of PARP inhibition in combination with chemotherapy.\n\n## Materials and methods\n\nUnless otherwise noted, all protocol information and\u00a0references\u00a0were derived from the original paper or information obtained directly from the authors.\n\n### Protocol 1: Colony formation assay of Ewing\u2019s sarcoma cell lines with olaparib\n\nThis experiment assesses the sensitivity of Ewing\u2019s sarcoma cell lines to the PARP inhibitor olaparib. A colony formation assay will be performed with Ewing\u2019s sarcoma, osteosarcoma, and BRCA2-deficient and BRCA-proficient cells treated with a range of olaparib concentrations to determine the effective concentration (number of colonies reduced by at least 90%). This protocol replicates the experiment reported in Figure 4C and Supplemental Figure 16.\n\n#### Sampling\n\n#### Materials and reagents\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent</th>\n      <th>Type</th>\n      <th>Manufacturer</th>\n      <th>Catalog #</th>\n      <th>Comments</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Olaparib</td>\n      <td>Inhibitor</td>\n      <td>Selleck Chemicals</td>\n      <td>S1060</td>\n      <td>Source shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>DMSO</td>\n      <td>Chemical</td>\n      <td>Sigma Aldrich</td>\n      <td>472301</td>\n      <td>Source shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>Phosphate buffered saline (PBS)</td>\n      <td>Buffer</td>\n      <td>Gibco-Life Technologies</td>\n      <td>10010-023</td>\n      <td>Source shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>Giemsa stain</td>\n      <td>Chemical</td>\n      <td>Sigma Aldrich</td>\n      <td>G5637</td>\n      <td>Source shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>Methanol</td>\n      <td>Chemical</td>\n      <td>Fisher Scientific</td>\n      <td>BP1105-4</td>\n      <td>Source shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>DoTc2-4510 cells</td>\n      <td>Cell line</td>\n      <td>ATCC</td>\n      <td>CRL-7920</td>\n      <td>Original source not specified.</td>\n    </tr>\n    <tr>\n      <td>MES-SA cells</td>\n      <td>Cell line</td>\n      <td>ATCC</td>\n      <td>CRL-1976</td>\n      <td>Original source not specified</td>\n    </tr>\n    <tr>\n      <td>U-2-OS cells</td>\n      <td>Cell line</td>\n      <td>ATCC</td>\n      <td>HTB-96</td>\n      <td>Original source not specified.</td>\n    </tr>\n    <tr>\n      <td>SAOS-2 cells</td>\n      <td>Cell line</td>\n      <td>ATCC</td>\n      <td>HTB-85</td>\n      <td>Original source not specified.</td>\n    </tr>\n    <tr>\n      <td>SJSA-1 cells</td>\n      <td>Cell line</td>\n      <td>ATCC</td>\n      <td>CRL-2098</td>\n      <td>Original source not specified.</td>\n    </tr>\n    <tr>\n      <td>HOS cells</td>\n      <td>Cell line</td>\n      <td>ATCC</td>\n      <td>CRL-1543</td>\n      <td>Original source not specified.</td>\n    </tr>\n    <tr>\n      <td>MG-63 cells</td>\n      <td>Cell line</td>\n      <td>ATCC</td>\n      <td>CRL-1427</td>\n      <td>Original source not specified.</td>\n    </tr>\n    <tr>\n      <td>143B cells</td>\n      <td>Cell line</td>\n      <td>ATCC</td>\n      <td>CRL-8303</td>\n      <td rowspan=\"2\">Replaces osteosarcoma cells used originally; see Known Differences.</td>\n    </tr>\n    <tr>\n      <td>G-292 cells, clone A141B1</td>\n      <td>Cell line</td>\n      <td>ATCC</td>\n      <td>CRL-1423</td>\n    </tr>\n    <tr>\n      <td>A673 cells</td>\n      <td>Cell line</td>\n      <td>ATCC</td>\n      <td>CRL-1598</td>\n      <td rowspan=\"5\">Replaces the ES cells used originally; see Known Differences</td>\n    </tr>\n    <tr>\n      <td>SK-N-MC cells</td>\n      <td>Cell line</td>\n      <td>ATCC</td>\n      <td>HTB-10</td>\n    </tr>\n    <tr>\n      <td>TC-71 cells2</td>\n      <td>Cell line</td>\n      <td>Children\u2019s Oncology Group Cell Culture and Xenograft Repository</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>CHLA-10 cells1</td>\n      <td>Cell line</td>\n      <td>Children\u2019s Oncology Group Cell Culture and Xenograft Repository</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>CHLA-9 cells3</td>\n      <td>Cell line</td>\n      <td>Children\u2019s Oncology Group Cell Culture and Xenograft Repository</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Iscove\u2019s modified\u00a0DMEM (IMDM)</td>\n      <td>Cell culture</td>\n      <td>Life Technologies</td>\n      <td>12440-053</td>\n      <td>Not originally included.</td>\n    </tr>\n    <tr>\n      <td>L-glutamine</td>\n      <td>Cell culture</td>\n      <td>Life Technologies</td>\n      <td>25030-081</td>\n      <td>Not originally included.</td>\n    </tr>\n    <tr>\n      <td>Insulin-Transferrin-Selenium (ITS)</td>\n      <td>Growth factor</td>\n      <td>Lonza</td>\n      <td>17-838Z</td>\n      <td>Not originally included.</td>\n    </tr>\n    <tr>\n      <td>McCoy\u2019s 5A\u00a0Medium Modified</td>\n      <td>Cell culture</td>\n      <td>ATCC</td>\n      <td>30-2007</td>\n      <td>Not originally included.</td>\n    </tr>\n    <tr>\n      <td>Fetal bovine serum (FBS)</td>\n      <td>Cell culture</td>\n      <td>Valley Biomedical</td>\n      <td>BS3032</td>\n      <td>Original source not specified.</td>\n    </tr>\n    <tr>\n      <td>RPMI 1640 medium</td>\n      <td>Cell culture</td>\n      <td>ATCC</td>\n      <td>30-2001</td>\n      <td>Original source not specified.</td>\n    </tr>\n    <tr>\n      <td>Eagle\u2019s Minimum Essential Media (EMEM)</td>\n      <td>Cell culture</td>\n      <td>ATCC</td>\n      <td>30-2003</td>\n      <td>Originally not specified.</td>\n    </tr>\n    <tr>\n      <td>5-bromo-2\u2019-deoxyuridine</td>\n      <td>Nucleoside</td>\n      <td>Sigma</td>\n      <td>B5002</td>\n      <td>Not originally included.</td>\n    </tr>\n    <tr>\n      <td>MEM Eagle with Earle\u2019s BSS</td>\n      <td>Cell culture</td>\n      <td>Lonza</td>\n      <td>12-125F</td>\n      <td>Not originally included.</td>\n    </tr>\n    <tr>\n      <td>DMEM \u2013 High Glucose</td>\n      <td>Cell culture</td>\n      <td>GE-Healthcare</td>\n      <td>E15-883</td>\n      <td>Shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>DMEM/F12</td>\n      <td>Cell culture</td>\n      <td>Life Technologies</td>\n      <td>11320-033</td>\n      <td>Original source not specified.</td>\n    </tr>\n  </tbody>\n</table>\n\n_1 See http://www.cogcell.org/dl/EFT_Lines_DataSheets/CHLA-10_Cell_Line_Data_Sheet_COGcell_org.pdf2 See http://www.cogcell.org/dl/EFT_Lines_DataSheets/TC- 71_Cell_Line_Data_Sheet_COGcell_org.pdf3 See http://www.cogcell.org/dl/EFT_Lines_DataSheets/CHLA- 9_Cell_Line_Data_Sheet_COGcell_org.pdf_\n\n#### Procedure\n\nNotes:\n\n#### Deliverables\n\n#### Confirmatory analysis plan\n\n#### Known differences from the original study\n\n#### Provisions for quality control\n\nThe cell lines used in this experiment will undergo STR profiling to confirm identity and will be sent for mycoplasma testing to ensure there is no contamination. The DMSO concentration, although not originally reported, will be kept at a low percentage to avoid toxicity. All data obtained from the experiment will be made publicly available, either in the published manuscript or as an open access dataset available on the OSF (https://osf.io/nbryi/).\n\n### Protocol 2: Olaparib sensitivity in cells transformed with the EWS-FLI1 rearrangement\n\nThis experiment assesses if sensitivity to PARP inhibitors is due to the presence of the EWS-FLI1 rearrangement. Mouse mesenchymal progenitor cells (MPCs) transformed with EWS-FLI1, or the related liposarcoma-associated translocation FUS-CHOP, will be analyzed for cellular viability after olaparib treatment. This protocol replicates the experiment reported in Figure 4E.\n\n#### Sampling\n\n#### Materials and reagents\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent</th>\n      <th>Type</th>\n      <th>Manufacturer</th>\n      <th>Catalog #</th>\n      <th>Comments</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>EWS-FLI1 transformed mouse mesenchymal progenitor cells (MPCs)</td>\n      <td>Cell line</td>\n      <td>Authors</td>\n      <td>N/A</td>\n      <td>Provided by the Stamenkovic lab</td>\n    </tr>\n    <tr>\n      <td>FUS-CHOP transformed mouse mesenchymal progenitor cells (MPCs)</td>\n      <td>Cell line</td>\n      <td>Authors</td>\n      <td>N/A</td>\n      <td>Provided by the Stamenkovic lab</td>\n    </tr>\n    <tr>\n      <td>SK-N-MC cells</td>\n      <td>Cell line</td>\n      <td>ATCC</td>\n      <td>HTB-10</td>\n      <td>Source shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>Olaparib</td>\n      <td>Inhibitor</td>\n      <td>Selleck Chemicals</td>\n      <td>S1060</td>\n      <td>Source shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>DMSO</td>\n      <td>Chemical</td>\n      <td>Sigma</td>\n      <td>D8418</td>\n      <td>Source shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>4% formaldehyde</td>\n      <td>Chemical</td>\n      <td>USB</td>\n      <td>19943</td>\n      <td>Source shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>Syto60 fluorescent nucleic acid stain</td>\n      <td>Chemical</td>\n      <td>Invitrogen</td>\n      <td>S11342</td>\n      <td>Catalog # shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>FBS</td>\n      <td>Cell culture</td>\n      <td>Valley Biomedical</td>\n      <td>BS3032</td>\n      <td>Original source not specified.</td>\n    </tr>\n    <tr>\n      <td>RPMI 1640 medium</td>\n      <td>Cell culture</td>\n      <td>ATCC</td>\n      <td>30-2001</td>\n      <td>Original source not specified.</td>\n    </tr>\n    <tr>\n      <td>Fluorescent plate reader</td>\n      <td>Equipment</td>\n      <td>LiCor</td>\n      <td></td>\n      <td>Source shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>DMEM, low glucose, GlutaMAX supplement, pyruvate</td>\n      <td>Cell culture</td>\n      <td>Gibco</td>\n      <td>21885-025</td>\n      <td>Shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>MCDB 201 medium,\u00a0with trace elements, L-glutamine and 30\u2009mM HEPES; powder</td>\n      <td>Cell culture</td>\n      <td>Sigma</td>\n      <td>M6770</td>\n      <td>Shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>Ascorbic acid-2-phosphate</td>\n      <td>Cell culture</td>\n      <td>Sigma</td>\n      <td>A8960</td>\n      <td>Shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>Dexamethasone</td>\n      <td>Chemical</td>\n      <td>Sigma</td>\n      <td>D8893</td>\n      <td>Shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>Linoleic acid-BSA</td>\n      <td>Chemical</td>\n      <td>Sigma</td>\n      <td>L9530</td>\n      <td>Shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>Insulin, transferrin, sodium selenite supplement</td>\n      <td>Growth factor</td>\n      <td>Roche (Sigma)</td>\n      <td>1074547</td>\n      <td>Shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>Dialyzed FCS</td>\n      <td>Cell culture</td>\n      <td>Sigma</td>\n      <td>F0392</td>\n      <td>Shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>EGF; human</td>\n      <td>Growth factor</td>\n      <td>Sigma</td>\n      <td>E9644</td>\n      <td>Shared during communication\u00a0with authors.</td>\n    </tr>\n    <tr>\n      <td>PDGF-BB, rat</td>\n      <td>Growth factor</td>\n      <td>R&amp;D Systems</td>\n      <td>520-BB-050</td>\n      <td>Shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>Penicillin-Streptomycin; 100X</td>\n      <td>Cell culture</td>\n      <td>Sigma</td>\n      <td>P4333</td>\n      <td>Original source not specified.</td>\n    </tr>\n    <tr>\n      <td>Leukemia inhibitory factor (LIF); human; 10 \u00b5g/ml</td>\n      <td>Growth factor</td>\n      <td>Sigma</td>\n      <td>L5283</td>\n      <td>Shared during communication with authors. Replaces LIF generated from CHO LIF720D cells.</td>\n    </tr>\n    <tr>\n      <td>Fibronectin; 0.1% in PBS</td>\n      <td>Chemical</td>\n      <td>Sigma</td>\n      <td>F1141</td>\n      <td>Shared during communication with authors.</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Procedure\n\n#### Deliverables\n\n#### Confirmatory analysis plan\n\n#### Known differences from the original study\n\n#### Provisions for quality control\n\nThe cell lines used in this experiment will undergo STR profiling to confirm identity and will be sent for mycoplasma testing to ensure there is no contamination. The DMSO concentration, although not originally reported, will be kept at a low percentage to avoid toxicity. The seeding density of each cell line will be empirically determined prior to conducting the replicates so cells will be still be in the growth phase at the end of the assay. Measurements will be taken at 24, 48, and 72\u2009hr after seeding from cells not treated with drug to test for proliferation of cells during the assay. All data obtained from the experiment will be made publicly available, either in the published manuscript or as an open access dataset available on the OSF (https://osf.io/nbryi/).\n\n### Protocol 3: Olaparib sensitivity after depletion of EWS-FLI1 from A673 cells\n\nThis experiment assesses the\u00a0sensitivity of PARP inhibitors to the presence of the EWS-FLI1 rearrangement. EWS-FLI1 specific siRNA will be used to deplete the fusion mRNA from A673 cells, which harbor the translocation endogenously, and cell viability after olaparib treatment will be assessed. This protocol replicates the experiment reported in Figure 4F and Supplemental Figure 20.\n\n#### Sampling\n\n#### Materials and reagents\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent</th>\n      <th>Type</th>\n      <th>Manufacturer</th>\n      <th>Catalog #</th>\n      <th>Comments</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>A673 cells</td>\n      <td>Cell line</td>\n      <td>ATCC</td>\n      <td>CRL-1598</td>\n      <td>Source shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>Olaparib</td>\n      <td>Inhibitor</td>\n      <td>Selleck Chemicals</td>\n      <td>S1060</td>\n      <td>Source shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>DMSO</td>\n      <td>Chemical</td>\n      <td>Sigma</td>\n      <td>D2650</td>\n      <td>Source shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>siEF1</td>\n      <td>Nucleic acid</td>\n      <td>Qiagen</td>\n      <td>Custom order</td>\n      <td>5'-GGCAGCAGAACCCUUCUUACG-3\u2019</td>\n    </tr>\n    <tr>\n      <td>siCT control siRNA</td>\n      <td>Nucleic acid</td>\n      <td>Qiagen</td>\n      <td>SI03650318</td>\n      <td>Catalog number shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>Cell Titer 96 Aqueous One Solution Cell Proliferation Assay</td>\n      <td>Reporter assay</td>\n      <td>Promega</td>\n      <td>G3582</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>DMEM - High Glucose</td>\n      <td>Cell culture</td>\n      <td>GE-Healthcare</td>\n      <td>E15-883</td>\n      <td>Shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>FBS</td>\n      <td>Cell culture</td>\n      <td>Valley Biomedical</td>\n      <td>BS3032</td>\n      <td>Original source not specified.</td>\n    </tr>\n    <tr>\n      <td>O-MEM</td>\n      <td>Cell culture</td>\n      <td>Gibco</td>\n      <td>31985-062</td>\n      <td>Shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>96 well tissue culture test plates</td>\n      <td>Labware</td>\n      <td>TPP</td>\n      <td>92096</td>\n      <td>Source shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>Lipofectamine RNAiMAX</td>\n      <td>Cell culture</td>\n      <td>Life Technologies</td>\n      <td>13778-150</td>\n      <td>Shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>High-capacity cDNA reverse transcription kit</td>\n      <td>Kit</td>\n      <td>Applied Biosystems</td>\n      <td>4368814</td>\n      <td>Shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>NucleoSpin RNA II kit</td>\n      <td>Kit</td>\n      <td>Machery-Nagel</td>\n      <td>740955.50</td>\n      <td>Shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>Power SYBR Green PCR mastermix</td>\n      <td>Kit</td>\n      <td>Applied Biosystems</td>\n      <td>4367659</td>\n      <td>Shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>qPCR machine</td>\n      <td>Equipment</td>\n      <td>ABI/PRISM</td>\n      <td>7500</td>\n      <td>Shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>EWS-FLI1 primers</td>\n      <td>Nucleic acid</td>\n      <td rowspan=\"2\" colspan=\"2\">Synthesis left to the discretion of the replicating lab and recorded later</td>\n      <td>Sequence shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>RPLP0 primers</td>\n      <td>Nucleic acid</td>\n      <td>Sequence shared during communication with authors.</td>\n    </tr>\n    <tr>\n      <td>GloMax Multi+ Detection System (spectrophotometer)</td>\n      <td>Equipment</td>\n      <td>Promega</td>\n      <td>9311-011</td>\n      <td>Shared during communication with authors. Replaces BMG FLUOstar OPTIMA microplate reader.</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Procedure\n\nNotes:\n\n#### Deliverables\n\n#### Confirmatory analysis plan\n\n#### Known differences from the original study\n\n#### Provisions for quality control\n\nThe cell line used in this experiment will undergo STR profiling to confirm identity and will be sent for mycoplasma testing to ensure there is no contamination. The sample purity (A260/280 ratio) of the isolated RNA from each sample will be reported. All data obtained from the experiment will be made publicly available, either in the published manuscript or as an open access dataset available on the OSF (https://osf.io/nbryi/).\n\n### Power calculations\n\nFor additional details on power calculations, please see analysis scripts and associated files on the Open Science Framework: https://osf.io/j9bnk/\n\n### Protocol 1\n\nSummary of original data estimated from graph reported in Figure 4C\n\n<table>\n  <thead>\n    <tr>\n      <th>Cell type</th>\n      <th>Cell\u00a0line</th>\n      <th>Effective\u00a0concentration (\u00b5M)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"5\">Ewing\u2019s sarcoma</td>\n      <td>ES1</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>ES6</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>ES7</td>\n      <td>0.32</td>\n    </tr>\n    <tr>\n      <td>ES8</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>MHH-ES-1</td>\n      <td>0.32</td>\n    </tr>\n    <tr>\n      <td rowspan=\"8\">Osteosarcoma</td>\n      <td>CAL-72</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>HOS</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>HuO-3N1</td>\n      <td>3.2</td>\n    </tr>\n    <tr>\n      <td>MG-63</td>\n      <td>3.2</td>\n    </tr>\n    <tr>\n      <td>NY</td>\n      <td>3.2</td>\n    </tr>\n    <tr>\n      <td>SAOS-2</td>\n      <td>3.2</td>\n    </tr>\n    <tr>\n      <td>SJSA-1</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>U-2-OS</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td>BRCA2-deficient</td>\n      <td>DoTc2-4510</td>\n      <td>0.32</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Test family\n\n#### Power calculations\n\n<table>\n  <thead>\n    <tr>\n      <th>Group 1</th>\n      <th>Group 2</th>\n      <th>Effect size (Cliff\u2019s delta)</th>\n      <th>A priori power</th>\n      <th>Group 1 sample size</th>\n      <th>Group 2 sample size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Ewing\u2019s sarcoma</td>\n      <td>Osteosarcoma</td>\n      <td>0.92500</td>\n      <td>81.8%</td>\n      <td>5</td>\n      <td>7</td>\n    </tr>\n  </tbody>\n</table>\n\n### Protocol 2\n\nSummary of original data reported in Figure 4E (shared by authors)\n\n<table>\n  <thead>\n    <tr>\n      <th>Cell line</th>\n      <th>Concentration of\u00a0olaparib (\u00b5M)</th>\n      <th>Mean</th>\n      <th>SD</th>\n      <th>N</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"7\">EWS-FLI1 transformed MPCs</td>\n      <td>0</td>\n      <td>1</td>\n      <td>0.06</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.39</td>\n      <td>0.59</td>\n      <td>0.05</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.78</td>\n      <td>0.53</td>\n      <td>0.09</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>1.56</td>\n      <td>0.44</td>\n      <td>0.05</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>3.13</td>\n      <td>0.34</td>\n      <td>0.05</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>6.25</td>\n      <td>0.24</td>\n      <td>0.04</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>12.5</td>\n      <td>0.22</td>\n      <td>0.04</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td rowspan=\"7\">FUS-CHOP transformed MPCs</td>\n      <td>0</td>\n      <td>1</td>\n      <td>0.09</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.39</td>\n      <td>1.06</td>\n      <td>0.01</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.78</td>\n      <td>1.03</td>\n      <td>0.06</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>1.56</td>\n      <td>1.11</td>\n      <td>0.08</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>3.13</td>\n      <td>0.98</td>\n      <td>0.09</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>6.25</td>\n      <td>0.59</td>\n      <td>0.07</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>12.5</td>\n      <td>0.45</td>\n      <td>0.04</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td rowspan=\"7\">SK-N-MC</td>\n      <td>0</td>\n      <td>1</td>\n      <td>0.04</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.39</td>\n      <td>0.66</td>\n      <td>0.04</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.78</td>\n      <td>0.66</td>\n      <td>0.09</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>1.56</td>\n      <td>0.50</td>\n      <td>0.01</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>3.13</td>\n      <td>0.40</td>\n      <td>0.04</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>6.25</td>\n      <td>0.30</td>\n      <td>0.05</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>12.5</td>\n      <td>0.25</td>\n      <td>0.03</td>\n      <td>3</td>\n    </tr>\n  </tbody>\n</table>\n\nIC50 values of olaparib, determined by spline interpolation.\n\nCalculations performed with R software,\u00a0version 3.2.2 (R Development Core Team, 2015).\n\n<table>\n  <thead>\n    <tr>\n      <th>Cell line</th>\n      <th>Mean</th>\n      <th>SD</th>\n      <th>N</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>EWS-FLI1 transformed MPCs</td>\n      <td>1.0502</td>\n      <td>0.5363</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>FUS-CHOP transformed MPCs</td>\n      <td>7.7963</td>\n      <td>1.3024</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>SK-N-MC</td>\n      <td>1.5449</td>\n      <td>0.0505</td>\n      <td>3</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Test family\n\nPower Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).\n\n<table>\n  <thead>\n    <tr>\n      <th>Group 1</th>\n      <th>Group 2</th>\n      <th>Effect size d</th>\n      <th>A priori power</th>\n      <th>Group 1 sample size</th>\n      <th>Group 2 sample size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>EWS-FLI1 transformed MPCs</td>\n      <td>FUS-CHOP transformed MPCs</td>\n      <td>6.77343</td>\n      <td>83.8%1</td>\n      <td>21</td>\n      <td>21</td>\n    </tr>\n    <tr>\n      <td>SK-N-MC</td>\n      <td>FUS-CHOP transformed MPCs</td>\n      <td>6.78283</td>\n      <td>83.8%1</td>\n      <td>21</td>\n      <td>21</td>\n    </tr>\n  </tbody>\n</table>\n\n_1 3 samples per group will be used as a minimum making the power 99.9%._\n\n#### Test family\n\nPower Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).\n\nANOVA F test statistic and partial \u03b72\u00a0performed with R software, version 3.2.2 (R Development Core Team, 2015).\n\n<table>\n  <thead>\n    <tr>\n      <th>Groups</th>\n      <th>F test statistic</th>\n      <th>Partial \u03b72</th>\n      <th>Effect size f</th>\n      <th>A priori power</th>\n      <th>Total sample size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>EWS-FLI1 transformed MPCs, FUS-CHOP transformed MPCs, and SK-N-MC</td>\n      <td>F(2,6) = 64.06</td>\n      <td>0.95526</td>\n      <td>4.62097</td>\n      <td>99.9%</td>\n      <td>61\u00a0(3 groups)</td>\n    </tr>\n  </tbody>\n</table>\n\n_1 9 total samples (3 per group) will be used as a minimum._\n\n#### Test family\n\nPower Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).\n\n<table>\n  <thead>\n    <tr>\n      <th>Group 1</th>\n      <th>Group 2</th>\n      <th>Effect size d</th>\n      <th>A priori power</th>\n      <th>Group 1 sample size</th>\n      <th>Group 2 sample size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>EWS-FLI1 transformed MPCs</td>\n      <td>FUS-CHOP transformed MPCs</td>\n      <td>6.77343</td>\n      <td>89.9%1</td>\n      <td>21</td>\n      <td>21</td>\n    </tr>\n    <tr>\n      <td>SK-N-MC</td>\n      <td>FUS-CHOP transformed MPCs</td>\n      <td>6.78283</td>\n      <td>89.9%1</td>\n      <td>21</td>\n      <td>21</td>\n    </tr>\n  </tbody>\n</table>\n\n_1 3 samples per group will be used as a minimum making the power 99.9%._\n\n### Protocol 3\n\n#### Viability assay\n\nSummary of original data reported in Figure 4F (shared by authors)\n\n<table>\n  <thead>\n    <tr>\n      <th>siRNA</th>\n      <th>Concentration of olaparib (\u00b5M) or volume of DMSO (\u00b5l)</th>\n      <th>Mean</th>\n      <th>SD</th>\n      <th>N</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"10\">siControl (DMSO treatment)</td>\n      <td>0 \u00b5l</td>\n      <td>97.3360</td>\n      <td>0.95391</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>2x10-4 \u00b5l</td>\n      <td>102.203</td>\n      <td>3.70013</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>5x10-4 \u00b5l</td>\n      <td>100.088</td>\n      <td>0.90226</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.001 \u00b5l</td>\n      <td>94.8628</td>\n      <td>1.30022</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.004 \u00b5l</td>\n      <td>100.095</td>\n      <td>3.84743</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.012 \u00b5l</td>\n      <td>107.634</td>\n      <td>1.05370</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.037 \u00b5l</td>\n      <td>110.378</td>\n      <td>4.41561</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.111 \u00b5l</td>\n      <td>111.467</td>\n      <td>0.68191</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.333 \u00b5l</td>\n      <td>104.501</td>\n      <td>1.98400</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>1.000 \u00b5l</td>\n      <td>107.905</td>\n      <td>1.61184</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td rowspan=\"10\">siControl (olaparib treatment)</td>\n      <td>0 \u00b5M</td>\n      <td>102.664</td>\n      <td>2.82201</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.0152 \u00b5M</td>\n      <td>95.9921</td>\n      <td>1.18048</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.046 \u00b5M</td>\n      <td>83.1889</td>\n      <td>2.80989</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.1371 \u00b5M</td>\n      <td>81.8370</td>\n      <td>2.93976</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.411 \u00b5M</td>\n      <td>72.4056</td>\n      <td>3.10030</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>1.234 \u00b5M</td>\n      <td>54.9026</td>\n      <td>2.74523</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>3.70 \u00b5M</td>\n      <td>16.0636</td>\n      <td>3.50915</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>11.11 \u00b5M</td>\n      <td>1.28032</td>\n      <td>0.61000</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>33.33 \u00b5M</td>\n      <td>-1.45527</td>\n      <td>1.64101</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>100 \u00b5M</td>\n      <td>2.28231</td>\n      <td>2.39427</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td rowspan=\"10\">siEF1 (DMSO treatment)</td>\n      <td>0 \u00b5l</td>\n      <td>99.0971</td>\n      <td>1.13436</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>2x10-4 \u00b5l</td>\n      <td>99.6397</td>\n      <td>1.21598</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>5x10-4 \u00b5l</td>\n      <td>95.3622</td>\n      <td>0.45115</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.001 \u00b5l</td>\n      <td>90.4599</td>\n      <td>4.31934</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.004 \u00b5l</td>\n      <td>94.3179</td>\n      <td>0.86896</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.012 \u00b5l</td>\n      <td>95.1752</td>\n      <td>2.35064</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.037 \u00b5l</td>\n      <td>96.3837</td>\n      <td>1.39419</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.111 \u00b5l</td>\n      <td>96.7576</td>\n      <td>1.13467</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.333 \u00b5l</td>\n      <td>95.4762</td>\n      <td>1.38497</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>1.000 \u00b5l</td>\n      <td>97.2365</td>\n      <td>1.24839</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td rowspan=\"10\">siEF1 (olaparib treatment)</td>\n      <td>0 \u00b5M</td>\n      <td>100.903</td>\n      <td>3.87004</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.0152 \u00b5M</td>\n      <td>97.9023</td>\n      <td>4.77067</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.046 \u00b5M</td>\n      <td>95.4853</td>\n      <td>5.47687</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.1371 \u00b5M</td>\n      <td>93.9713</td>\n      <td>2.33965</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>0.411 \u00b5M</td>\n      <td>89.4430</td>\n      <td>4.97093</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>1.234 \u00b5M</td>\n      <td>76.6332</td>\n      <td>2.436545</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>3.70 \u00b5M</td>\n      <td>45.0396</td>\n      <td>1.67473</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>11.11 \u00b5M</td>\n      <td>18.7815</td>\n      <td>1.78436</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>33.33 \u00b5M</td>\n      <td>11.7541</td>\n      <td>3.75220</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>100 \u00b5M</td>\n      <td>11.7997</td>\n      <td>2.22773</td>\n      <td>3</td>\n    </tr>\n  </tbody>\n</table>\n\nIC50 values of olaparib, determined by four-parameter log-logistic function.\n\nCalculations performed with R software,\u00a0version 3.2.2 (R Development Core Team, 2015).\n\n<table>\n  <thead>\n    <tr>\n      <th>Cell line</th>\n      <th>Mean</th>\n      <th>SD</th>\n      <th>N</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>siControl</td>\n      <td>1.35191</td>\n      <td>0.0684</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>siEF1</td>\n      <td>2.74561</td>\n      <td>0.1715</td>\n      <td>3</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Test family\n\nPower Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).\n\n<table>\n  <thead>\n    <tr>\n      <th>Group 1</th>\n      <th>Group 2</th>\n      <th>Effect size d</th>\n      <th>A priori power</th>\n      <th>Group 1 sample size</th>\n      <th>Group 2 sample size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>siControl</td>\n      <td>siEF1</td>\n      <td>10.67494</td>\n      <td>98.7%1</td>\n      <td>21</td>\n      <td>21</td>\n    </tr>\n  </tbody>\n</table>\n\n_1 3 samples per group will be used as a minimum making the power 99.9%._\n\n#### Test family\n\nPower Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).\n\n<table>\n  <thead>\n    <tr>\n      <th>Group 1</th>\n      <th>Group 2</th>\n      <th>Effect size d</th>\n      <th>A priori power</th>\n      <th>Group 1 sample size</th>\n      <th>Group 2 sample size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>siControl</td>\n      <td>siEF1</td>\n      <td>10.67494</td>\n      <td>99.6%1</td>\n      <td>21</td>\n      <td>21</td>\n    </tr>\n  </tbody>\n</table>\n\n_1 3 samples per group will be used as a minimum making the power 99.9%._\n\n#### qRT-PCR\n\nSummary of original data estimated from graph reported in Supplemental Figure 20.\n\n<table>\n  <thead>\n    <tr>\n      <th>Treatment</th>\n      <th>siRNA</th>\n      <th>Mean</th>\n      <th>SD</th>\n      <th>N</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">DMSO</td>\n      <td>siControl</td>\n      <td>100</td>\n      <td>22.9</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>siEF1</td>\n      <td>4.75</td>\n      <td>0.838</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">1.3 \u00b5M olaparib</td>\n      <td>siControl</td>\n      <td>90.5</td>\n      <td>14.5</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>siEF1</td>\n      <td>7.26</td>\n      <td>0.838</td>\n      <td>3</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Test family\n\nPower Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).\n\n<table>\n  <thead>\n    <tr>\n      <th>Group 1</th>\n      <th>Group 2</th>\n      <th>Effect size d</th>\n      <th>A priori power</th>\n      <th>Group 1 sample size</th>\n      <th>Group 2 sample size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>siControl cells treated with DMSO</td>\n      <td>siEF1 cells treated with DMSO</td>\n      <td>5.87713</td>\n      <td>98.3%</td>\n      <td>3</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>siControl cells treated with olaparib</td>\n      <td>siEF1 cells treated with olaparib</td>\n      <td>8.09108</td>\n      <td>99.9%</td>\n      <td>3</td>\n      <td>3</td>\n    </tr>\n  </tbody>\n</table>\n\n#### Test family\n\nPower Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).\n\nANOVA F test statistic and partial \u03b72performed with R software, version 3.2.2 (R Development Core Team, 2015).\n\n<table>\n  <thead>\n    <tr>\n      <th>Groups</th>\n      <th>F test statistic</th>\n      <th>Partial \u03b72</th>\n      <th>Effect size f</th>\n      <th>A priori power</th>\n      <th>Total sample size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>A673 cells transfected with siControl or siEF1 and treated with DMSO or olaparib</td>\n      <td>F(1,8) = 129.85 (main effect: siRNA)</td>\n      <td>0.94196</td>\n      <td>4.02877</td>\n      <td>99.2%1</td>\n      <td>61 (4 groups)</td>\n    </tr>\n  </tbody>\n</table>\n\n_1 12 samples (3 per group) will be used based on the planned comparisons making the power 99.9%._\n\n#### Test family\n\nPower Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).\n\n<table>\n  <thead>\n    <tr>\n      <th>Group 1</th>\n      <th>Group 2</th>\n      <th>Effect size d</th>\n      <th>A priori power</th>\n      <th>Group 1 sample size</th>\n      <th>Group 2 sample size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>siControl cells treated with DMSO</td>\n      <td>siEF1 cells treated with DMSO</td>\n      <td>5.87713</td>\n      <td>99.1%</td>\n      <td>3</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>siControl cells treated with olaparib</td>\n      <td>siEF1 cells treated with olaparib</td>\n      <td>8.09108</td>\n      <td>80.6%1</td>\n      <td>21</td>\n      <td>21</td>\n    </tr>\n  </tbody>\n</table>\n\n_1 3 samples per group will be used based on the other comparions making the power 99.9%._\n",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "24435fdf-70e8-451e-bd02-e38824164dbc",
+      "submission_id": "6ebbb318-db44-467c-99cc-09f49fa2f5ee",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Joaqu\u00edn M Espinosa, University of Colorado School of Medicine , United States\n\n## Review text\n\nDOI: [10.7554/eLife.13620.003](https://doi.org/10.7554/eLife.13620.003)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Registered report: Systematic identification of genomic markers of drug sensitivity in cancer cells\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Charles Sawyers as the Senior Editor. The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis Registered report aims at assessing the reproducibility of the results of a large-scale pharmacogenomic study published in Nature in 2012. The study leverages a collection of over 600 cell lines screened across 138 drugs.\n\nOne of the major hurdles in assessing the reproducibility of this study is its scale. In the registered report the authors propose to reproduce a single finding that was presented in one of the main figures of the original report. While this finding is indeed an important part of the original study it does not embody a large part of the original conclusions: The original paper demonstrated that a drug screen performed across a large collection of cell lines was able to capture accurately a large number of known clinically relevant drug response biomarkers as well as preferential cancer type sensitivities known to occur in the clinic (for example that BRAF mutant colorectal cancers are less responsive to BRAF inhibitor than melanomas). It also showed that genomic modeling of the drug response could yield biological insights into drug mechanism of action (Elastic Net analysis outputs). This was distinct from previous smaller scale efforts (and also valuable for other uses) that had been reported prior to the original report (NCI60 results, for example). The reviewers encourage this Reproducibility Report after addressing the following concerns:\n\nEssential revisions:\n\n1) The Introduction of the registered report should better reflect this challenge and the breadth of the results presented in the original report.\n\nFor example: \"To confirm their high throughput approach Garnett and colleagues explored one novel interaction\u2026\". This is similarly an over simplification. Several results \"Confirmed\" the high throughput approach capability of capturing clinically and biologically relevant drug responses: Chiefly a large number of known gene-drug interactions for clinically active drugs.\n\nEnd of Introduction: It should be further clarified that the clinical results reported for Olaparib in Ewing's sarcoma correspond to single agent olaparib only. Combinations with olaparib are currently explored but no results have been made public.\n\nTechnical aspects:\n\n2) Protocol 1; Procedure; 1: Authors should employ duplicate plates.\n\n3) Protocol 1; Procedure; 4a: The assay (fix and stain) should be stopped when the control (untreated plates) contain at least 100 colonies (ideally over 200).\n\n4) Protocol 1; Known differences from the original study: It is not clear why the authors have chosen not to include all the controls that were presented in the original study. Positive and negative control in a consistent disease background (breast) of BRCA1/2 deficient and proficient cell lines are important to show that the assay is correctly capturing differential sensitivity to PARP inhibitors across genotypes.\n\n5) Protocol 2, first paragraph: As PARP inhibitor sensitivity relies on replication/proliferation of the cells mechanistically it will be important to show that all cell lines are in good health and proliferative in no drug condition. This is particularly important for MPCs that can be more challenging than average cell lines to maintain in culture. The protocol should include a test for appropriate proliferation.\n\n6) Protocol 2; Procedure; 1: Related to the point above: All assays should include a measurement of proliferation to show that drug treatment occurred while cells were replicating since PARP inhibitor sensitivity depends on replication. Furthermore, differential replication across lines can yield over or underestimate of sensitivity.\n\n7) Protocol 2; Procedure; 6: What level of knock down would be deemed sufficient to declare that the gene expression was affected but no biological effect observed?\n\n8) It is unfortunate that some of the cell lines originally used in Garnett et al. were not available in this Reproducibility Project. However, it will be very useful to the scientific community that this Reproducibility Project and the related reagents and cell lines will be made available for other researchers to reproduce this work.\n\n9) Regarding the statistical analyses, the authors should be aware that repeating the experiment twice or three times on the same cell lines will not give completely independent results which may impact on the results. However, it seems that the power calculations (at least for protocol 1) are conducted using only one run of the experiment. Secondly the power calculation assumes that the observed results will be as strong as those seen in Garnett et al. Even for a real finding, this may be optimistic due to the large number of tests carried out by Garnett and the \"winner's curse\", i.e. the fact that the most striking findings in a multiple testing context tend to be upwardly biased.\n",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2de9e6fc-4440-43e5-be56-2661c3c9fdb6",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C1",
+      "claim": "The Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by conducting replications of selected experiments from high-profile papers in cancer biology.",
+      "claim_type": "EXPLICIT",
+      "source": "The Reproducibility Project: Cancer Biology seeks to address growing concerns about the reproducibility in scientific research by conducting replications of selected experiments from a number of high-profile papers in the field of cancer biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as the purpose of the project.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "8d763277-a808-448f-90e9-83f0ec12fe42",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C2",
+      "claim": "Papers for replication were published between 2010 and 2012 and were selected based on citations and Altmetric scores.",
+      "claim_type": "EXPLICIT",
+      "source": "The papers, which were published between 2010 and 2012, were selected on the basis of citations and Altmetric scores (Errington et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly with citation to Errington et al., 2014 as the source of the selection criteria.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "07daeec4-6f55-4706-82df-3c6b5d587ca3",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C3",
+      "claim": "Garnett and colleagues performed a high throughput screen assessing the effect of 130 drugs on 639 cancer-derived cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Garnett and colleagues performed a high throughput screen assessing the effect of 130 drugs on 639 cancer-derived cell lines in order to identify novel interactions for possible therapeutic approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design from the original Garnett et al., 2012 paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "2a1bf716-cae2-4fe3-ace1-ab463ca38d84",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C4",
+      "claim": "Ewing's sarcoma cell lines showed increased sensitivity to PARP inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "They then tested this approach by exploring in more detail a novel interaction they identified in which Ewing's sarcoma cell lines showed an increased sensitivity to PARP inhibitors (Figure 4C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the original study, referencing Figure 4C.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "82430372-ffd6-48c9-a591-08d80e0be631",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C5",
+      "claim": "Mesenchymal progenitor cells transformed with the EWS-FLI1 translocation exhibited increased sensitivity to olaparib compared to MPCs transformed with a different translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mesenchymal progenitor cells (MPCs) transformed with the signature EWS-FLI1 translocation, the hallmark of Ewing's sarcoma family tumors, exhibited increased sensitivity to the PARP inhibitor olaparib as compared to MPCs transformed with a different translocation (Figure 4E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific experimental result from the original study, referencing Figure 4E.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "3a107027-a03b-429d-bbce-caa55389b495",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C6",
+      "claim": "siRNA-mediated knockdown of EWS-FLI1 abrogated sensitivity to olaparib.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown mediated by siRNA of EWS-FLI1 abrogated this sensitivity to olaparib (Figure 4F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental result from the original study, referencing Figure 4F.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "1f34fc63-c8c0-414a-84df-8bdf0fea4fda",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C7",
+      "claim": "The EWS-FLI1 translocation is a defining cytogenetic characteristic of Ewing's sarcoma family tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "The EWS-FLI1 translocation is a defining cytogenetic characteristic of Ewing's sarcoma family tumors (ESFTs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about Ewing's sarcoma.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "48a50b6e-fac8-4806-9cfe-468ac4af9156",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C8",
+      "claim": "Ewing's sarcoma family tumors are highly malignant tumors that occur in bone and soft tissue, usually in children.",
+      "claim_type": "EXPLICIT",
+      "source": "ESFTs are highly malignant tumors that occur in the bone and soft tissue, usually in children.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about ESFTs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "32e8c4ca-9e5c-4089-af53-84a392b8469a",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C9",
+      "claim": "In 90% of Ewing's sarcoma cases, the translocation combines part of the EWS protein to FLI1.",
+      "claim_type": "EXPLICIT",
+      "source": "The translocation event combines part of the EWS protein to a member of the ETS transcription factor family; in 90% of cases, this is FLI1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the molecular characteristics of ESFTs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "5f82e786-8fa7-4084-9017-280a74569bbb",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C10",
+      "claim": "The EWS-FLI1 translocation creates a novel transcription factor whose oncogenic actions and mechanisms are still being fully explored.",
+      "claim_type": "EXPLICIT",
+      "source": "This creates a novel transcription factor, EWS-FLI1, whose oncogenic actions and mechanisms are still being fully explored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as current understanding about EWS-FLI1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "b6691fc6-79b5-4938-99e1-08e6f59eb580",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C11",
+      "claim": "The translocation event is thought to be the initiating event for the development of Ewing's sarcoma family tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "The translocation event is thought to be the initiating event for the development of ESFTs (Erkizan et al., 2010; Lessnick and Ladanyi, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to support the claim about the role of the translocation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "298f77b7-bb13-4bc3-96b6-432d8400fb40",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C12",
+      "claim": "PARP1 has diverse functions in chromatin modification, mitosis and cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "PARP1 has diverse functions in chromatin modification, mitosis and cell death, but it is most well studied in the context of DNA repair and transcriptional regulation (Sonnenblick et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Sonnenblick et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "200e9427-724d-4991-a327-b409ca29fa51",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C13",
+      "claim": "PARP1 is most well studied in the context of DNA repair and transcriptional regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "PARP1 has diverse functions in chromatin modification, mitosis and cell death, but it is most well studied in the context of DNA repair and transcriptional regulation (Sonnenblick et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Sonnenblick et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "da56fccb-4a92-4779-9c28-4fd2c7516fb2",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C14",
+      "claim": "PARP1 is a key component of single stranded break repair.",
+      "claim_type": "EXPLICIT",
+      "source": "PARP1 is a key component of single stranded break (SSB) repair; however, loss of PARP1 activity can be compensated for through DNA repair via homologous recombination (HR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about PARP1 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "2ba56211-c90f-4900-9767-e50992134c24",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C15",
+      "claim": "Loss of PARP1 activity can be compensated for through DNA repair via homologous recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "PARP1 is a key component of single stranded break (SSB) repair; however, loss of PARP1 activity can be compensated for through DNA repair via homologous recombination (HR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about DNA repair mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "a5f141c4-3c80-4df3-9bca-5203ecb1dc86",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C16",
+      "claim": "PARP1 is an interesting therapeutic target in malignancies with deficient homologous recombination, such as BRCA1 and BRCA2 mutant breast and ovarian cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "This makes PARP1 an interesting therapeutic target in the context of malignancies with deficient HR, such as BRCA1 and BRCA2 mutant breast and ovarian cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical inference from the DNA repair mechanisms described.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "9a22b524-b0d0-48da-ba3e-930819ea6693",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C17",
+      "claim": "In BRCA1 and BRCA2 mutant cancers, loss of PARP activity results in synthetic lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "In these cancers, loss of PARP activity results in synthetic lethality; with both SSB and HR impaired, the accumulation of DNA damage eventually kills the tumor cells (Jiang et al., 2015; Lord et al., 2015; Sonnenblick et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to support the mechanism of synthetic lethality.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "763e77b1-ec20-4b52-92e4-2c104506dcd0",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C18",
+      "claim": "With both single stranded break repair and homologous recombination impaired, the accumulation of DNA damage eventually kills tumor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In these cancers, loss of PARP activity results in synthetic lethality; with both SSB and HR impaired, the accumulation of DNA damage eventually kills the tumor cells (Jiang et al., 2015; Lord et al., 2015; Sonnenblick et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations explaining the mechanism of cell death.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "0f8ebe66-cb75-4593-9e8c-bbb65f857042",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C19",
+      "claim": "PARP inhibitors are at the forefront of treatment for breast and ovarian cancers, as well as other malignancies.",
+      "claim_type": "EXPLICIT",
+      "source": "PARP inhibitors (PARPi), such as olaparib, are now at the forefront of treatment for breast and ovarian cancers, as well as other malignancies (Feng et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Feng et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "6193b497-56ea-4560-9ed2-1fa8f398e721",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C20",
+      "claim": "The concentration of olaparib required to reduce colony formation by 90% or more was much less for Ewing's sarcoma cells than for non-Ewing's sarcoma cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "The concentration of olaparib required to reduce colony formation by 90% or more was much less for Ewing's sarcoma cells (on par with the concentration required for the BRCA-deficient cell line) than for the non-Ewing's sarcoma cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a result from Figure 4C of the original study.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "7e069652-bc88-41df-a9c7-f350689690b7",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C21",
+      "claim": "The concentration of olaparib required to reduce colony formation by 90% or more in Ewing's sarcoma cells was on par with the concentration required for BRCA-deficient cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "The concentration of olaparib required to reduce colony formation by 90% or more was much less for Ewing's sarcoma cells (on par with the concentration required for the BRCA-deficient cell line) than for the non-Ewing's sarcoma cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a result from Figure 4C of the original study.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "a5da8f8d-753a-4d7b-aa6d-df85fc84125f",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C22",
+      "claim": "Treatment with olaparib did not inhibit the viability of FUS-CHOP transformed MPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with olaparib did not inhibit the viability of the FUS-CHOP transformed MPCs, but did inhibit the viability of the SK-N-MC cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a result from Figure 4E of the original study.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "0ac7e38f-c292-4399-b639-638c7c457d8e",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C23",
+      "claim": "Treatment with olaparib inhibited the viability of SK-N-MC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment with olaparib did not inhibit the viability of the FUS-CHOP transformed MPCs, but did inhibit the viability of the SK-N-MC cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a result from Figure 4E of the original study.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "44504dc2-8180-40fa-b7e3-06a2faf2eb83",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C24",
+      "claim": "Olaparib inhibited the viability of EWS-FLI1 transformed MEFs compared to the FUS-CHOP translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Olaparib also inhibited the viability of the EWS-FLI1 transformed MEFs compared to the FUS-CHOP translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a result from Figure 4E of the original study.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "5be835cf-ee11-452d-a8d9-6a1629459308",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C25",
+      "claim": "A673 cells transfected with siRNAs targeting EWS-FLI1 showed partial rescue of sensitivity to olaparib compared to control siRNA transfected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A673 cells were transfected with siRNAs targeting EWS-FLI1, which resulted in a partial rescue of sensitivity to olaparib compared to control siRNA transfected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a result from Figure 4F of the original study.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "78ec03a3-8990-47e4-8e15-63a9df259cf6",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C26",
+      "claim": "A paper published at the same time as Garnett and colleagues' work confirmed that Ewing's sarcoma cell lines were sensitive to treatment with PARP inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "A paper published at the same time as Garnett and colleagues' work also confirmed that Ewing's sarcoma cell lines were sensitive to treatment with PARP inhibitors (Brenner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Brenner et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "56125c6d-6c06-4588-a2d3-0a23e7057044",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C27",
+      "claim": "Brenner and colleagues reported that in prostate cancer PARP was a cofactor for wild-type ETS transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous paper, Brenner and colleagues reported that in prostate cancer PARP was a cofactor for wild-type ETS transcription factors, which makes up one half of the defining translocation-based fusion transcription factor of Ewing's sarcoma, and that PARPi treatment of ETS positive prostate cancers disrupted their growth (Brenner et al., 2011; Legrand et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to Brenner et al., 2011 and Legrand et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "762b7e09-d8cf-40b4-9ae7-4a1190163121",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C28",
+      "claim": "PARP inhibitor treatment of ETS positive prostate cancers disrupted their growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous paper, Brenner and colleagues reported that in prostate cancer PARP was a cofactor for wild-type ETS transcription factors, which makes up one half of the defining translocation-based fusion transcription factor of Ewing's sarcoma, and that PARPi treatment of ETS positive prostate cancers disrupted their growth (Brenner et al., 2011; Legrand et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to Brenner et al., 2011 and Legrand et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "c5289999-0a64-49e6-9972-625b9ee77843",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C29",
+      "claim": "Brenner and colleagues detected a direct interaction between the EWS-FLI1 fusion transcription factor and PARP1 using immunoprecipitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using immunoprecipitation, they detected a direct interaction between the EWS-FLI1 fusion transcription factor and PARP1 (Brenner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Brenner et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "c0716ac8-15f4-427e-ad9e-474c55e4236f",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C30",
+      "claim": "Transforming PC3 cells with the EWS-FLI1 translocation conferred sensitivity to treatment with olaparib.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, they reported that transforming a cell line (in this case, PC3 cells) with the EWS-FLI1 translocation conferred sensitivity to treatment with olaparib, and that siRNA mediated knockdown of EWS-FLI1 inhibited transwell migration of ESFT derived cell lines, but not osteosarcoma cell lines (Brenner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Brenner et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "1cfa4e66-9aaf-45b1-8237-47c351111447",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C31",
+      "claim": "siRNA mediated knockdown of EWS-FLI1 inhibited transwell migration of ESFT derived cell lines, but not osteosarcoma cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, they reported that transforming a cell line (in this case, PC3 cells) with the EWS-FLI1 translocation conferred sensitivity to treatment with olaparib, and that siRNA mediated knockdown of EWS-FLI1 inhibited transwell migration of ESFT derived cell lines, but not osteosarcoma cell lines (Brenner et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Brenner et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "993e892d-2fb5-4024-9767-b22bd43fcc2b",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C32",
+      "claim": "Multiple groups have reported the unique sensitivity of EWS-FLI1 carrying Ewing's sarcoma derived cell lines to olaparib.",
+      "claim_type": "EXPLICIT",
+      "source": "Multiple groups have also reported the unique sensitivity of EWS-FLI1 carrying Ewing's sarcoma derived cell lines to olaparib (Lee et al., 2013; Norris et al., 2014; Ord\u00f3\u00f1ez et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to Lee et al., 2013; Norris et al., 2014; Ord\u00f3\u00f1ez et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "98d57eab-27fd-4534-8902-19619b5e4a11",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C33",
+      "claim": "Ewing's sarcomas may have defects in DNA repair mechanisms, rendering them sensitive to PARP inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional work then demonstrated that, similar to breast and ovarian cancers harboring BRCA1/2 mutations, Ewing's sarcomas may also have defects in DNA repair mechanisms, rendering them sensitive to PARP inhibition (Stewart et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Stewart et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "e279ffa9-bf43-44a9-a0ed-909d831a6de7",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C34",
+      "claim": "Clinical trials have started treating Ewing's sarcoma patients with combination therapies targeting multiple DNA damage pathways and PARP inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "This has led to the start of clinical trials treating Ewing's sarcoma patients with combination therapies targeting multiple DNA damage pathways and PARP inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consequence of the research findings.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "a2684a5b-dccf-4607-8409-4aaee5b9a038",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C35",
+      "claim": "A small scale nonrandomized phase II human trial failed to show clinical efficacy in patients with metastatic and/or recurrent Ewing sarcoma treated with only olaparib.",
+      "claim_type": "EXPLICIT",
+      "source": "Results from a small scale nonrandomized phase II human trial failed to show clinical efficacy in patients with metastatic and/or recurrent Ewing sarcoma treated with only olaparib (Choy et al., 2014), but other trials are underway to explore the efficacy of PARP inhibition in combination with chemotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Choy et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "2414e0fe-34e3-439e-ba10-4bcf2ceda324",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C36",
+      "claim": "Other trials are underway to explore the efficacy of PARP inhibition in combination with chemotherapy for Ewing's sarcoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Results from a small scale nonrandomized phase II human trial failed to show clinical efficacy in patients with metastatic and/or recurrent Ewing sarcoma treated with only olaparib (Choy et al., 2014), but other trials are underway to explore the efficacy of PARP inhibition in combination with chemotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as current research activity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "7bb1309f-fded-429a-9726-98cb32c16993",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C37",
+      "claim": "Garnett and colleagues' study leveraged a collection of over 600 cell lines screened across 130 drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "This study leveraged a collection of over 600 cell lines screened across 130 drugs, with the aim to uncover new interactions between known cancers and known drugs in order to identify new potential therapeutic avenues using extant drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scale of the original study by Garnett et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "2b851b69-a805-4c4c-ad39-5dd6bd32bba3",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C38",
+      "claim": "Garnett and colleagues captured a large number of known gene-drug interactions of clinically active drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "They captured a large number of known gene-drug interactions of clinically active drugs and identified several novel gene\u2013drug associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a result from the original Garnett et al., 2012 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "fde96612-dd9e-493b-80d1-f873c68529ae",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C39",
+      "claim": "Garnett and colleagues identified several novel gene-drug associations.",
+      "claim_type": "EXPLICIT",
+      "source": "They captured a large number of known gene-drug interactions of clinically active drugs and identified several novel gene\u2013drug associations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a result from the original Garnett et al., 2012 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "ae1892b1-1771-4986-833d-b7ffec52cd2b",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C40",
+      "claim": "The study demonstrated the effectiveness of a large-scale pharmacogenomic approach by accurately capturing known clinically relevant drug response biomarkers.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to accurately capture a large number of known clinically relevant drug response biomarkers as well as preferential cancer type sensitivities known to occur in the clinic, such as decreased sensitivity to BRAF inhibitors in BRAF mutant colorectal cancers relative to melanomas, demonstrated the effectiveness of this large-scale pharmacogenomic approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the results of the original study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "195e6a84-1b07-4bc7-a32b-2dde6bc8c79f",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C41",
+      "claim": "BRAF mutant colorectal cancers show decreased sensitivity to BRAF inhibitors relative to melanomas in the clinic.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to accurately capture a large number of known clinically relevant drug response biomarkers as well as preferential cancer type sensitivities known to occur in the clinic, such as decreased sensitivity to BRAF inhibitors in BRAF mutant colorectal cancers relative to melanomas, demonstrated the effectiveness of this large-scale pharmacogenomic approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an example of known clinical sensitivity patterns.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "c487bcba-230d-4110-98bd-c2ace9eb6094",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C42",
+      "claim": "Barretina and colleagues conducted a similar approach of interrogating a large panel of human cancer cell lines to predict drug sensitivity at the same time as Garnett and colleagues.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar approach of interrogating a large panel of human cancer cell lines of diverse lineages to predict drug sensitivity was conducted and reported by Barretina and colleagues at the same time (Barretina et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to Barretina et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "fa8fe512-008c-4fae-94d8-71c2ee00e6f7",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "claim_id": "C43",
+      "claim": "Garnett and colleagues identified an unexpected highly significant association between the EWS-FLI1 translocation and sensitivity to olaparib.",
+      "claim_type": "EXPLICIT",
+      "source": "Garnett and colleagues identified an unexpected highly significant association between the EWS-FLI1 translocation and sensitivity to the PARP inhibitor olaparib (Garnett et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citation to the original Garnett et al., 2012 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a84d464c-13ef-4426-b31a-27f7754fec2a",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "This manuscript describes a Registered Report for the Reproducibility Project: Cancer Biology, which aims to replicate selected experiments from high-profile cancer biology papers published between 2010-2012, selected based on citations and Altmetric scores.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 accurately describe the purpose and scope of the Reproducibility Project with appropriate citation (Errington et al., 2014). This is a straightforward description of the project's methodology and is well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "0b944bd1-25f2-420b-8084-841491cf047f",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Garnett and colleagues performed a large-scale high-throughput screen of 130 drugs across over 600 cancer cell lines, successfully capturing known gene-drug interactions and identifying novel associations, demonstrating the effectiveness of pharmacogenomic approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C37-C42 describe the original Garnett et al. 2012 study's design and outcomes with appropriate citations. The description of the study's validation through capturing known biomarkers (like BRAF inhibitor sensitivity patterns, C40-C41) and comparison to concurrent work (Barretina et al., C42) is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "5f23c5cd-53a5-4eea-aa9d-d150a8ec9c40",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Garnett and colleagues identified that Ewing's sarcoma cell lines showed increased sensitivity to the PARP inhibitor olaparib, with effective concentrations comparable to BRCA-deficient cell lines and much lower than non-Ewing's sarcoma cell lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C20, C21, and C43 describe a key finding from the original study (Figure 4C) showing differential olaparib sensitivity. The comparison to BRCA-deficient cells provides important context for the magnitude of the effect. This is appropriately cited and represents a major finding from the original work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "5fedbc6e-8fa2-44b4-973a-4b00b627d03d",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mesenchymal progenitor cells transformed with EWS-FLI1 showed increased sensitivity to olaparib compared to cells transformed with the FUS-CHOP translocation, while SK-N-MC cells (which endogenously harbor EWS-FLI1) also showed sensitivity to olaparib.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C22-C24 describe experiments from Figure 4E demonstrating that the EWS-FLI1 translocation confers olaparib sensitivity. The use of FUS-CHOP as a control translocation and SK-N-MC cells as a positive control strengthens the specificity of the finding. This is well-cited and represents a key mechanistic result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "c49c0ff9-0f15-49a4-9003-3d80d2b197e3",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "siRNA-mediated knockdown of EWS-FLI1 in A673 cells resulted in partial rescue of sensitivity to olaparib compared to control siRNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C25 describe the loss-of-function experiment from Figure 4F showing that depleting EWS-FLI1 reduces olaparib sensitivity. This provides critical evidence for causality linking EWS-FLI1 to olaparib sensitivity. The result is appropriately cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "7385778b-3fc2-48c9-a233-43c8e29044a5",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The EWS-FLI1 translocation is the defining cytogenetic characteristic and initiating event of Ewing's sarcoma family tumors, occurring in 90% of cases, creating a novel fusion transcription factor whose oncogenic mechanisms are still being explored.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C11 provide established background knowledge about Ewing's sarcoma with appropriate citations (Erkizan et al., 2010; Lessnick and Ladanyi, 2012). This contextual information is accurate and well-supported by the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "04ecb970-beed-4a9c-a8df-5d5f4d07748e",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "PARP1 has diverse cellular functions but is best studied in DNA repair and transcriptional regulation, playing a key role in single-strand break repair that can be compensated by homologous recombination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 describe established knowledge about PARP1 function with appropriate citation (Sonnenblick et al., 2014). This background information accurately represents the current understanding of PARP1 biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "325c5487-303b-48a7-84c4-3ce4e3e50454",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PARP1 is a therapeutic target in HR-deficient malignancies like BRCA1/2-mutant cancers, where PARP inhibition causes synthetic lethality through accumulation of DNA damage, leading to PARP inhibitors being at the forefront of treatment for breast and ovarian cancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 describe the established rationale for PARP inhibitor therapy with appropriate citations (Jiang et al., 2015; Lord et al., 2015; Sonnenblick et al., 2014; Feng et al., 2015). This represents well-established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "33c0e370-bda0-4cb4-b241-2753d582f151",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Multiple independent studies confirmed Ewing's sarcoma sensitivity to PARP inhibitors, with Brenner and colleagues demonstrating direct PARP1-EWS-FLI1 interaction, showing that EWS-FLI1 transformation confers olaparib sensitivity and that EWS-FLI1 knockdown affects cell migration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C32 describe corroborating evidence from multiple independent groups (Brenner et al., 2011, 2012; Lee et al., 2013; Norris et al., 2014; Ord\u00f3\u00f1ez et al., 2015) with appropriate citations. The convergence of evidence from multiple laboratories strengthens confidence in the original finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    },
+    {
+      "id": "b40ac07f-57d0-4f15-8a51-ca9a8836e888",
+      "content_id": "41bd4162-2539-40a9-b765-3fed20ebc932",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Ewing's sarcomas may have DNA repair defects rendering them sensitive to PARP inhibition, leading to clinical trials of combination therapies, though a phase II trial of olaparib monotherapy failed to show efficacy in metastatic/recurrent Ewing sarcoma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 describe the translational implications with appropriate citations (Stewart et al., 2014; Choy et al., 2014). The inclusion of both the mechanistic rationale and the negative clinical trial result (C35) provides important context about the complexity of translating preclinical findings to clinical efficacy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:10:37.214038Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2de9e6fc-4440-43e5-be56-2661c3c9fdb6",
+      "result_id": "a84d464c-13ef-4426-b31a-27f7754fec2a"
+    },
+    {
+      "claim_id": "8d763277-a808-448f-90e9-83f0ec12fe42",
+      "result_id": "a84d464c-13ef-4426-b31a-27f7754fec2a"
+    },
+    {
+      "claim_id": "07daeec4-6f55-4706-82df-3c6b5d587ca3",
+      "result_id": "0b944bd1-25f2-420b-8084-841491cf047f"
+    },
+    {
+      "claim_id": "7bb1309f-fded-429a-9726-98cb32c16993",
+      "result_id": "0b944bd1-25f2-420b-8084-841491cf047f"
+    },
+    {
+      "claim_id": "2b851b69-a805-4c4c-ad39-5dd6bd32bba3",
+      "result_id": "0b944bd1-25f2-420b-8084-841491cf047f"
+    },
+    {
+      "claim_id": "fde96612-dd9e-493b-80d1-f873c68529ae",
+      "result_id": "0b944bd1-25f2-420b-8084-841491cf047f"
+    },
+    {
+      "claim_id": "ae1892b1-1771-4986-833d-b7ffec52cd2b",
+      "result_id": "0b944bd1-25f2-420b-8084-841491cf047f"
+    },
+    {
+      "claim_id": "195e6a84-1b07-4bc7-a32b-2dde6bc8c79f",
+      "result_id": "0b944bd1-25f2-420b-8084-841491cf047f"
+    },
+    {
+      "claim_id": "c487bcba-230d-4110-98bd-c2ace9eb6094",
+      "result_id": "0b944bd1-25f2-420b-8084-841491cf047f"
+    },
+    {
+      "claim_id": "2a1bf716-cae2-4fe3-ace1-ab463ca38d84",
+      "result_id": "5f23c5cd-53a5-4eea-aa9d-d150a8ec9c40"
+    },
+    {
+      "claim_id": "6193b497-56ea-4560-9ed2-1fa8f398e721",
+      "result_id": "5f23c5cd-53a5-4eea-aa9d-d150a8ec9c40"
+    },
+    {
+      "claim_id": "7e069652-bc88-41df-a9c7-f350689690b7",
+      "result_id": "5f23c5cd-53a5-4eea-aa9d-d150a8ec9c40"
+    },
+    {
+      "claim_id": "fa8fe512-008c-4fae-94d8-71c2ee00e6f7",
+      "result_id": "5f23c5cd-53a5-4eea-aa9d-d150a8ec9c40"
+    },
+    {
+      "claim_id": "82430372-ffd6-48c9-a591-08d80e0be631",
+      "result_id": "5fedbc6e-8fa2-44b4-973a-4b00b627d03d"
+    },
+    {
+      "claim_id": "a5da8f8d-753a-4d7b-aa6d-df85fc84125f",
+      "result_id": "5fedbc6e-8fa2-44b4-973a-4b00b627d03d"
+    },
+    {
+      "claim_id": "0ac7e38f-c292-4399-b639-638c7c457d8e",
+      "result_id": "5fedbc6e-8fa2-44b4-973a-4b00b627d03d"
+    },
+    {
+      "claim_id": "44504dc2-8180-40fa-b7e3-06a2faf2eb83",
+      "result_id": "5fedbc6e-8fa2-44b4-973a-4b00b627d03d"
+    },
+    {
+      "claim_id": "3a107027-a03b-429d-bbce-caa55389b495",
+      "result_id": "c49c0ff9-0f15-49a4-9003-3d80d2b197e3"
+    },
+    {
+      "claim_id": "5be835cf-ee11-452d-a8d9-6a1629459308",
+      "result_id": "c49c0ff9-0f15-49a4-9003-3d80d2b197e3"
+    },
+    {
+      "claim_id": "1f34fc63-c8c0-414a-84df-8bdf0fea4fda",
+      "result_id": "7385778b-3fc2-48c9-a233-43c8e29044a5"
+    },
+    {
+      "claim_id": "48a50b6e-fac8-4806-9cfe-468ac4af9156",
+      "result_id": "7385778b-3fc2-48c9-a233-43c8e29044a5"
+    },
+    {
+      "claim_id": "32e8c4ca-9e5c-4089-af53-84a392b8469a",
+      "result_id": "7385778b-3fc2-48c9-a233-43c8e29044a5"
+    },
+    {
+      "claim_id": "5f82e786-8fa7-4084-9017-280a74569bbb",
+      "result_id": "7385778b-3fc2-48c9-a233-43c8e29044a5"
+    },
+    {
+      "claim_id": "b6691fc6-79b5-4938-99e1-08e6f59eb580",
+      "result_id": "7385778b-3fc2-48c9-a233-43c8e29044a5"
+    },
+    {
+      "claim_id": "298f77b7-bb13-4bc3-96b6-432d8400fb40",
+      "result_id": "04ecb970-beed-4a9c-a8df-5d5f4d07748e"
+    },
+    {
+      "claim_id": "200e9427-724d-4991-a327-b409ca29fa51",
+      "result_id": "04ecb970-beed-4a9c-a8df-5d5f4d07748e"
+    },
+    {
+      "claim_id": "da56fccb-4a92-4779-9c28-4fd2c7516fb2",
+      "result_id": "04ecb970-beed-4a9c-a8df-5d5f4d07748e"
+    },
+    {
+      "claim_id": "2ba56211-c90f-4900-9767-e50992134c24",
+      "result_id": "04ecb970-beed-4a9c-a8df-5d5f4d07748e"
+    },
+    {
+      "claim_id": "a5f141c4-3c80-4df3-9bca-5203ecb1dc86",
+      "result_id": "325c5487-303b-48a7-84c4-3ce4e3e50454"
+    },
+    {
+      "claim_id": "9a22b524-b0d0-48da-ba3e-930819ea6693",
+      "result_id": "325c5487-303b-48a7-84c4-3ce4e3e50454"
+    },
+    {
+      "claim_id": "763e77b1-ec20-4b52-92e4-2c104506dcd0",
+      "result_id": "325c5487-303b-48a7-84c4-3ce4e3e50454"
+    },
+    {
+      "claim_id": "0f8ebe66-cb75-4593-9e8c-bbb65f857042",
+      "result_id": "325c5487-303b-48a7-84c4-3ce4e3e50454"
+    },
+    {
+      "claim_id": "78ec03a3-8990-47e4-8e15-63a9df259cf6",
+      "result_id": "33c0e370-bda0-4cb4-b241-2753d582f151"
+    },
+    {
+      "claim_id": "56125c6d-6c06-4588-a2d3-0a23e7057044",
+      "result_id": "33c0e370-bda0-4cb4-b241-2753d582f151"
+    },
+    {
+      "claim_id": "762b7e09-d8cf-40b4-9ae7-4a1190163121",
+      "result_id": "33c0e370-bda0-4cb4-b241-2753d582f151"
+    },
+    {
+      "claim_id": "c5289999-0a64-49e6-9972-625b9ee77843",
+      "result_id": "33c0e370-bda0-4cb4-b241-2753d582f151"
+    },
+    {
+      "claim_id": "c0716ac8-15f4-427e-ad9e-474c55e4236f",
+      "result_id": "33c0e370-bda0-4cb4-b241-2753d582f151"
+    },
+    {
+      "claim_id": "1cfa4e66-9aaf-45b1-8237-47c351111447",
+      "result_id": "33c0e370-bda0-4cb4-b241-2753d582f151"
+    },
+    {
+      "claim_id": "993e892d-2fb5-4024-9767-b22bd43fcc2b",
+      "result_id": "33c0e370-bda0-4cb4-b241-2753d582f151"
+    },
+    {
+      "claim_id": "98d57eab-27fd-4534-8902-19619b5e4a11",
+      "result_id": "b40ac07f-57d0-4f15-8a51-ca9a8836e888"
+    },
+    {
+      "claim_id": "e279ffa9-bf43-44a9-a0ed-909d831a6de7",
+      "result_id": "b40ac07f-57d0-4f15-8a51-ca9a8836e888"
+    },
+    {
+      "claim_id": "a2684a5b-dccf-4607-8409-4aaee5b9a038",
+      "result_id": "b40ac07f-57d0-4f15-8a51-ca9a8836e888"
+    },
+    {
+      "claim_id": "2414e0fe-34e3-439e-ba10-4bcf2ceda324",
+      "result_id": "b40ac07f-57d0-4f15-8a51-ca9a8836e888"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C22",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Somatosensory feedback is rapidly transmitted to multiple cortical regions (A5, A2, S1, M1, PMd) within 17-25 ms of mechanical perturbation, with S1 responding first and PMd last.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C21-C22, C30-C34 collectively demonstrate rapid transmission of perturbation-related activity across cortical areas using two independent analysis methods (3SD threshold and running t-test). The data show consistent onset times (17-25 ms) and bootstrap analysis confirms S1 responds first (95% of iterations) and PMd last (92%). The convergence of multiple analytical approaches strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C81"
+    ],
+    "result": "The magnitude of perturbation-related responses varies significantly across cortical regions, with S1 showing the largest response that diminishes spatially across the cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 and C81 are supported by ANOVA (p<0.0001) and post-hoc tests showing S1 responses significantly exceed all other areas (p<0.001), with M1 also larger than A5 and PMd. The spatial gradient interpretation is reasonable given the data, though the mechanism remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C72",
+      "C98",
+      "C99"
+    ],
+    "result": "During task engagement (Posture vs Movie task), parietal area A5 immediately modulates its perturbation response at ~23-25 ms, while other cortical areas show delayed modulation at 38-70 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C37-C51 demonstrate task-dependent modulation with A5 showing the earliest differential signal (23 ms by 3SD method, 25 ms by running t-test), preceding other areas by 15-47 ms. Bootstrap analysis confirms A5 ranks first 89% of the time. Statistical support includes mixed ANOVA (p<0.0001 for task effect) and multiple post-hoc comparisons. The temporal precedence of A5 is robustly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C73",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "During target selection (IN vs OUT task), M1 is the first cortical region to show differential activity at ~66 ms, followed by PMd at ~98 ms, with parietal regions showing no early changes until ~150 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C54-C70 demonstrate M1 differential activity precedes muscle changes (~85 ms) and other cortical areas. Statistical support includes mixed ANOVA showing significant target\u00d7area interaction (p=0.005) and M1 as the only area with significant differential activity in the 50-100 ms window (p=0.0001). Bootstrap analysis confirms M1 ranks first 86% of the time. The temporal sequence M1\u2192PMd\u2192parietal areas is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "M1 neural activity shows weak but significant correlation with kinematic corrections (median r=-0.11, p=0.002), while other cortical areas show no significant correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 report correlation analysis between neural activity and motor corrections. The low correlation in M1 (r=-0.11) is acknowledged by the authors as expected given similar low correlations in muscle activity studies. The lack of significance in other areas may reflect smaller sample sizes. The statistical approach is appropriate, though the functional significance of such weak correlations is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C110",
+      "C112",
+      "C113",
+      "C115"
+    ],
+    "result": "Broad parietofrontal circuits provide the neural substrate for goal-directed corrections, with cortical changes preceding muscle responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C110, C112-C113, and C115 represent the main interpretive conclusions. The inference that cortical circuits are the source of task-dependent motor output is supported by the temporal precedence of cortical changes before muscle changes. The claim about distributed processing across multiple areas is supported by the differential spatiotemporal patterns observed across tasks. However, C115 is explicitly a prediction about future generalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C53"
+    ],
+    "result": "Hand and joint motions were similar across Posture and Movie tasks for the first 100 ms, but corrective movements and muscle responses were greatly diminished in the Movie task, with muscle differentiation occurring at ~45 ms (Posture/Movie) and ~85 ms (IN/OUT).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 and C53 describe behavioral and EMG control data. C36 cites prior work (Omrani et al., 2014) for the Movie task muscle data. C53 reports muscle differentiation at ~85 ms for IN/OUT task, which is slower than the ~70 ms reported in Pruszynski et al., 2014, with the authors attributing this to lack of background load priming. The kinematic similarity in early epochs provides important control for interpreting neural differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C89"
+    ],
+    "result": "The gradient in timing and magnitude of perturbation-related activity may be generated by intra-cortical communication or subcortical pathways, with both muscle spindle and cutaneous afferents likely contributing to the observed responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C86 and C89 are explicitly speculative (using 'may be' and 'likely' language) about mechanisms underlying the observed spatiotemporal patterns. While the speculation is reasonable and supported by citations to relevant literature, the current study does not directly test these mechanisms. The claims about afferent contributions are inferences based on established knowledge rather than direct experimental evidence from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "A5 may play a role in linking state estimation to the control policy for online control, as its activity changes with task engagement but not target selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102 and C105-C109 interpret A5's role within the OFC framework. The inference that A5 links state estimation to control policy (C109) is speculative but reasonably supported by the pattern that A5 modulates with engagement (C107) but not target selection (C108). The interpretation is consistent with cited TMS studies in humans (C103) showing functional relevance of posterior parietal cortex for corrective responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "PMd showed baseline activity differences between IN and OUT targets before perturbation onset and may play some role in using sensory feedback for action selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 report baseline activity differences in PMd (supported by data) and offer a speculative interpretation (C94 uses 'may play some role'). The baseline differences suggest preparatory activity related to target selection, though the perturbation-related changes in PMd occurred at or after muscle changes, limiting conclusions about its causal role in the rapid feedback response.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Parietal regions (A5, A2, S1) showed no change in perturbation-related activity until ~150 ms during target selection, suggesting they are not involved in this aspect of control, though area 3a warrants further examination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 are supported by the data showing late differential signals in parietal areas during target selection. The inference that these regions are not involved in early target selection (C96) is reasonable given the timing. C97 appropriately notes the limitation that area 3a, with direct projections to motoneurons, was not thoroughly examined and represents an important gap.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C100",
+      "C101",
+      "C103",
+      "C104",
+      "C114"
+    ],
+    "result": "The study is motivated by the OFC framework and addresses a gap in understanding the neural basis of task-dependent feedback processing across frontoparietal circuits, which has been largely unexplored despite extensive prior work on motor planning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C20 and C74-C79 establish the theoretical framework and literature context. These are appropriately supported by citations and represent accurate characterizations of the field. C79's claim of being the 'first examination' of relative timing across these areas in NHPs appears justified based on the cited literature. The historical context (C74-C78) accurately describes the evolution of thinking about feedback circuits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The study recorded from 611 neurons across five cortical areas in three monkeys using standard methods, with appropriate ethical approval and quality control procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C130 describe methods and are straightforward factual statements about experimental procedures. The methods appear standard and appropriate. C126 notes that recording locations were verified post-mortem in only one of three monkeys, which is a limitation but is transparently reported. The quality control procedures for EMG (C127-C128) are clearly described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Neurons in S1 with cutaneous receptive fields and neurons in M1 with muscle receptive fields are both broadly tuned to movement direction during reaching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by citations to published studies (Cohen et al., 1994; Prud'homme et al., 1994; Scott and Kalaska, 1997) and provide context for interpreting the broad tuning of perturbation responses observed in the current study. These are accurate representations of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "Concurrent processing of information across different cortical areas could cumulatively shape the observed motor output in each task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 proposes a distributed processing model supported by citations (Ledberg et al., 2007; Cisek and Kalaska, 2010; Siegel et al., 2015). While speculative regarding the specific mechanisms, this interpretation is consistent with the observed spatiotemporal patterns and represents a reasonable theoretical framework for understanding how distributed activity generates behavior.",
+    "result_type": "MINOR"
+  }
+]

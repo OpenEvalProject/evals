@@ -1,0 +1,1937 @@
+{
+  "submission": {
+    "id": "7b2f9d1b-c7ad-4df8-9095-a1ed48f58a4f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:43:03.826175Z",
+    "updated_at": "2025-11-29T23:43:03.826175Z"
+  },
+  "content": [
+    {
+      "id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "submission_id": "7b2f9d1b-c7ad-4df8-9095-a1ed48f58a4f",
+      "content_type": "manuscript",
+      "content_text": "# Many-molecule encapsulation by an icosahedral shell\n\n## Authors\n\n- Jason D Perlmutter<sup>1</sup>\n- Farzaneh Mohajerani<sup>1</sup>\n- Michael F Hagan<sup>1</sup> ([ORCID: 0000-0002-9211-2434](https://orcid.org/0000-0002-9211-2434)) \u2020\n\n### Affiliations\n\n1. Martin Fisher School of Physics Brandeis University Waltham United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe computationally study how an icosahedral shell assembles around hundreds of molecules. Such a process occurs during the formation of the carboxysome, a bacterial microcompartment that assembles around many copies of the enzymes ribulose 1,5-bisphosphate carboxylase/ oxygenase and carbonic anhydrase to facilitate carbon fixation in cyanobacteria. Our simulations identify two classes of assembly pathways leading to encapsulation of many-molecule cargoes. In one, shell assembly proceeds concomitantly with cargo condensation. In the other, the cargo first forms a dense globule; then, shell proteins assemble around and bud from the condensed cargo complex. Although the model is simplified, the simulations predict intermediates and closure mechanisms not accessible in experiments, and show how assembly can be tuned between these two pathways by modulating protein interactions. In addition to elucidating assembly pathways and critical control parameters for microcompartment assembly, our results may guide the reengineering of viruses as nanoreactors that self-assemble around their reactants.\n\n## Introduction\n\nEncapsulation is a hallmark of biology. A cell must co-localize high concentrations of enzymes and reactants to perform the reactions that sustain life, and it must safely store genetic material to ensure long-term viability. While lipid-based organelles primarily fulfill these functions in eukaryotes, self-assembling protein shells take the lead in simpler organisms. For example, viruses surround their genomes with a protein capsid, while bacteria use large icosahedral shells known as bacterial microcompartments (BMCs) to sequester the enzymes and reactions responsible for particular metabolic pathways (Kerfeld et al., 2010; Axen et al., 2014; Shively et al., 1998; Bobik et al., 1999; Erbilgin et al., 2014; Petit et al., 2013; Price and Badger, 1991; Shively et al., 1973; Shively et al., 1973; Kerfeld and Erbilgin, 2015). Within diverse bacteria, BMC functions have been linked to bacterial growth, carbon fixation, symbiosis, or pathogenesis (Kerfeld and Erbilgin, 2015). Other protein-based compartments are found in bacteria and archea (e.g. encapsulins (Sutter et al., 2008) and gas vesicles (Pfeifer, 2012; Sutter et al., 2008)) and even eukaryotes (e.g. vault particles (Kickhoefer et al., 1998)), while some viruses may assemble around lipidic globules (Lindenbach and Rice, 2013; Faustino et al., 2014). Thus, understanding the factors that control microcompartment assembly and encapsulation is a central question in modern cell biology. From the perspectives of synthetic biology and nanoscience, there is great interest in reengineering BMCs or viruses as nanoreactors that spontaneously encapsulate enzymes and reagents in vitro (e.g. Luque et al., 2014; Douglas and Young, 1998; Rurup et al., 2014; Patterson et al., 2014; Patterson et al., 2012; Zhu et al., 2014; Rhee et al., 2011; Rurup et al., 2014; W\u00f6rsd\u00f6rfer et al., 2012; Comas-Garcia et al., 2014), or as customizable organelles that assemble around a programmable set of core enzymes in vivo, introducing capabilities such as carbon fixation or biofuel production into bacteria or other organisms (e.g. Kerfeld and Erbilgin, 2015; Bonacci et al., 2012; Parsons et al., 2010; Choudhary et al., 2012; Lassila et al., 2014). However, the principles controlling such co-assembly processes have yet to be established, and it is not clear how to design systems to maximize encapsulation.\n\nIn this article we take a step toward this goal, by developing theoretical and computational models that describe the dynamical encapsulation of hundreds of cargo molecules by self-assembling icosahedral shells. Although our models are general, we are motivated by recent experiments on a type of BMC known as the carboxysome (Kerfeld et al., 2010; Schmid et al., 2006; Iancu et al., 2007; Tanaka et al., 2008). Carboxysomes are large (40\u2013400 nm), roughly icosahedral shells that encapsulate a dense complex of the enzyme ribulose-1,5-bisphosphate carboxylase/oxygenase (RuBisCO) and other proteins to facilitate the Calvin-Bensen-Bassham cycle in autotrophic bacteria (Price and Badger, 1991; Shively et al., 1973; Shively et al., 1973; Iancu et al., 2007; 2010; Kerfeld et al., 2010; Tanaka et al., 2008). Recently, striking microscopy experiments visualized $\\beta-$carboxysome shells assembling on and budding from procarboxysomes (the condensed complex of RuBisCO and other proteins found in the interior of carboxysomes) (Cameron et al., 2013; Chen et al., 2013). Genomic analysis suggests that many BMCs with diverse functions assemble via similar pathways (Cameron et al., 2013; Kerfeld and Erbilgin, 2015). However, the mechanisms of budding and pinch-off to close the shell remain incompletely understood because of the small size and transient nature of assembly intermediates. Moreover, experiments suggest that $\\alpha-$carboxysomes (another form of carboxysome) assemble by a different mechanism, in which shell assembly encapsulates an initially diffuse pool of RuBisCO (Iancu et al., 2010; Cai et al., 2015). The factors determining which of these assembly pathways occurs are unknown.\n\nBMC assembly is driven by a complex interplay of interactions among the proteins forming the external shell and the interior cargo. It is difficult, with experiments alone, to parse these interactions for those mechanisms and factors that critically influence assembly pathways, especially due to the lack of an in vitro assembly system. Models which can correlate individual factors to their effect on assembly are therefore an important complement to experiments.\n\nPrevious experimental and theoretical studies of encapsulation by icosahedral shells, e.g. the assembly of viral capsids around their nucleic acid genomes (e.g. Hu and Shklovskii, 2007; Kivenson and Hagan, 2010; Elrad and Hagan, 2010; Perlmutter et al., 2013; 2014; Mahalik and Muthukumar, 2012; Zhang et al., 2013; Zhang and Linse, 2013; Hagan, 2008; Devkota et al., 2009; Dixit et al., 2006; Borodavka et al., 2012; Dykeman et al., 2013; 2014; Zlotnick et al., 2013; Johnson et al., 2004; Patel et al., 2015; Cadena-Nava et al., 2012; Comas-Garcia et al., 2012; 2014; Garmann et al., 2014a; 2014b; Malyutin and Dragnea, 2013), have demonstrated that the structure of the cargo can strongly influence assembly pathways and products. However, BMCs assemble around a cargo which is topologically different from a nucleic acid \u2014 a fluid complex comprising many, noncovalently linked molecules. We demonstrate here that changing the cargo topology leads to new assembly pathways and different critical control parameters.\n\nWe present phase diagrams and analysis of dynamical simulation trajectories showing how the thermodynamics, assembly pathways, and emergent structures depend on the interactions among shell proteins and cargo molecules. Within distinct parameter ranges, we observe two classes of assembly pathways, which resemble those suggested for respectively $\\alpha-$ or $\\beta-$carboxysomes. We find that tunability of cargo loading is a key functional difference between the two classes of pathways. Shells assembled around a diffuse cargo can be varied from empty (containing almost no cargo) to completely full, whereas assembly around a condensed, procarboxysome-like complex invariably produces full shells. While we find that the encapsulated cargo becomes ordered due to confinement, complete crystalline order in the globule before encapsulation inhibits budding. We discuss these results in the context of recent observations on carboxysome assembly, and their implications for engineering BMCs, viruses or drug delivery vehicles that assemble around a fluid cargo (e.g. Refs. [Kerfeld and Erbilgin, 2015; Parsons et al., 2010; Choudhary et al., 2012; Lassila et al., 2014; Luque et al., 2014; Douglas and Young, 1998; Rurup et al., 2014; Patterson et al., 2014; Patterson et al., 2012; Zhu et al., 2014; Rhee et al., 2011; Rurup et al., 2014; W\u00f6rsd\u00f6rfer et al., 2012]).\n\n## Results\n\nOur model system is motivated by icosahedral viral capsids and BMCs (Tanaka et al., 2008; Kerfeld et al., 2010). Since icosahedral symmetry can accommodate at most 60 identical subunits, formation of large icosahedral structures requires subunits to assemble into different local environments. The subunits can be grouped into pentamers and hexamers, with 12 pentamers at the icosahedron vertices and the remaining subunits in hexamers. Viruses typically assemble from small oligomers of the capsid protein, which we refer to as the basic assembly unit (Hagan, 2014). Recent AFM experiments demonstrated that hexamers are the basic assembly unit during the assembly of BMC shell facets (Sutter et al., 2016), and the carboxysome major shell proteins crystallize as pentamers and hexamers (Tanaka et al., 2008). Motivated by these observations, our model considers two basic assembly units, one a pentamer and the other a hexamer, with interactions designed so that the lowest energy structure corresponds to a truncated icosahedron with 12 pentamers and 20 hexamers (Figure 1). While BMCs generally have more hexamers, our model is intended to explore the general principles of assembly around a fluid cargo rather than model a specific system. Further details of the model and a thermodynamic analysis are given in section 3 and the appendices.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/14078/elife-14078-fig1-v3.jpg)\n\n**Figure 1.:** (A) Each shell subunit contains \u2018Attractors\u2019 (green circles) on the perimeter, a \u2018Top\u2019 (tan circle, \u2018T\u2019) in the center above the plane, and a \u2018Bottom\u2019 (purple circle, \u2018B\u2019 below the plane). (B) Interactions between complementary Attractors drive subunit dimerization, with the Top-Top repulsions (tan arrow) tuned to favor the subunit-subunit angle in a complete shell. Complementary pairs of attractors are indicated by green arrows in (A) for the pentamer-hexamer interface and in (B) for the hexamer-hexamer interface. (C) Bottom psuedoatoms bind cargo molecules (terra cotta circles, \u2018C\u2019), while excluder atoms (blue and brown pseudoatoms in (D)) placed in the plane of the pentagon experience excluded volume interactions with the cargo. (D) The positions of excluder atoms in the lowest energy shell geometry, a truncated icosahedron with 12 pentamers (blue) and 20 hexamers (brown).\n\nTo understand how assembly around multiple cargo molecules depends on the relative strengths of interactions between components, we performed dynamical simulations as a function of the parameters controlling shell subunit-subunit ($\\epsilon_{SS}$), shell subunit-cargo ($\\epsilon_{SC}$), and cargo-cargo ($\\epsilon_{CC}$) interaction strengths. All energy values are given in units of the thermal energy, $k_{B}\u2062T$. We focus on parameters for which shell subunit-subunit interactions are too weak to drive assembly in the absence of cargo ($\\epsilon_{SS}\\leq4.5$). Except where mentioned otherwise, the cargo diameter is set equal to the circumradius of a shell subunit.\n\nFor the simulated density of cargo particles, the phase behavior (in the absence of shells) corresponds to a vapor at \u03b5CC=1.3, liquid-vapor phase coexistence for \u03b5CC\u2208[1.6,2.0]\u00a0(the phase coexistence boundary is slightly below \u03b5CC=1.6), and a solid phase at \u03b5CC=3.0. We find that tuning \u03b5CC through phase coexistence dramatically alters the typical assembly process. Strong cargo interactions (\u03b5CC\u22651.6) drive formation of a globule followed by assembly and budding of a shell, such as observed for \u03b2-carboxysomes (Figure 2A, Simulation Video 1), while under weak interactions (\u03b5CC<1.6) shell assembly usually proceeds in concert with cargo encapsulation (Figure 2B, Simulation Video 2), as suggested for assembly of \u03b1-carboxysomes. We now elaborate on these classes of assembly pathways, and how the resulting assembly products depend on parameter values.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/14078/elife-14078-fig2-v3.jpg)\n\n**Figure 2.:** (A) Multi-step assembly involving an amorphous globule of cargo and shell subunits. (B) Single-step assembly, in which shell assembly drives local cargo condensation. and (C) when shell-cargo interactions are too weak to condense the cargo. The values of the cargo-cargo ($\\epsilon_{CC}$), shell subunit-cargo ($\\epsilon_{SC}$), and subunit-subunit ($\\epsilon_{SS}$) interaction strengths are listed above each panel (all energies are in units of the thermal energy $k_{B}\u2062T$), and the time (in units of $10^{6}$ timesteps) is noted below each image. The color scheme here and throughout the manuscript is: Red=Cargo, Blue=Pentagon Excluder, Brown=Hexagon Excluder. Attractor and Bottom pseudoatoms are omitted to aid visibility. Videos of assembly trajectories are included below.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14078/elife-14078-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Globule-mediated assembly under stronger shell-cargo interactions, leading to the simultaneous formation of multiple globules. Parameters are indicated in the figure, and the initial conditions are random (no pre-equilibration). (B) Assembly around a pre-equilibrated cargo globule (see text and Figure 3\u2014figure supplement 1 for an explanation of this alternative initial condition).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14078/elife-14078-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Motivated by the octomer structure of RuBisCO, we constructed model cargo particles, each containing eight pseudoatoms positioned at the corners of a cube, with center-to-center spacing of $0.5\u2062d_{u}$. Each pseudoatom interacts with other particles in the system as described for cargo particles in appendix 1. Parameters are (A) $\\epsilon_{CC}=0.2$, $\\epsilon_{SS}=4.0$, $\\epsilon_{SC}=1.5$, and (B) $\\epsilon_{CC}=0.16$, $\\epsilon_{SS}=4.0$, $\\epsilon_{SC}=2.0$, (the magnitude of the shell-cargo and cargo-cargo interaction strengths is reduced because multiple cargo pseudoatoms participate in each interaction). To keep the cargo volume fraction equal to those in other simulations in this manuscript, we set the number of octomer cargo particles to 132 (each has a volume of $2.412\u2062d_{u}^{2}$). Other parameters are as described in the Model section.\n\n![Video 1.](https://cdn.elifesciences.org/articles/14078/elife-14078-media1.mp4.jpg)\n\n**Video 1.:** Parameters are $\\epsilon_{CC}=1.6$,\u00a0$\\epsilon_{SC}=7$, and\u00a0$\\epsilon_{SS}=2.5$.\n\n![Video 2.](https://cdn.elifesciences.org/articles/14078/elife-14078-media2.mp4.jpg)\n\n**Video 2.:** Parameters are $\\epsilon_{CC}=1.3$,\u00a0$\\epsilon_{SC}=9$, and\u00a0$\\epsilon_{SS}=3.5$.\n\n### Assembly and budding from a cargo globule\n\nWe begin by discussing assembly behavior when the cargo-cargo interactions are strong enough to drive equilibrium phase coexistence (\u03b5CC\u22651.6). Near the phase boundary (\u03b5CC=1.6) a system of pure cargo particles is metastable on the timescales we simulate. However, for \u03b5SC>4, adding shell subunits drives nucleation of a cargo globule with shell subunits adsorbed on the surface. The subsequent fate of the globule depends on parameter values; typical simulation end-states are shown as a function of parameter values in Figure 3. For moderate interaction strengths (2.5\u2264\u03b5SS\u22643.5) the globule grows to a large size, typically containing at least twice the cargo molecules that can be packaged within a complete shell. Adsorbed shell subunits then reversibly associate to form ordered clusters. Once a cluster acquires enough inter-subunit interactions to be a stable nucleus, it grows by coagulation of additional subunits or other adsorbed clusters. For the parameter set corresponding to Figure 2A, nucleation is fast in comparison to cluster growth, and thus two nuclei grow simultaneously. The last three images show the system immediately preceding and following detachment of the lower shell. Missing only one of its 32 subunits, the shell is connected to the remainder of the droplet only by a narrow neck of cargo. Insertion of the final subunit breaks the neck and completes shell detachment. The complete shell contains 120\u2013130 cargo particles, which is slighty above random close packing (\u2248120 particles) but below fcc density (\u2248150 particles, see appendix 1.2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/14078/elife-14078-fig3-v3.jpg)\n\n**Figure 3.:** (A) The most frequently observed assembly outcome is overlaid on a color map of the theoretical free energy density difference $\u0394\u2062f_{assem}$ (Equation (3)) between assembled shells and the unassembled globule. Results are plotted against the shell-cargo adsorption strength $\\epsilon_{SC}$ and the shell-shell interaction strength $\\epsilon_{SS}$ for indicated values of the cargo-cargo interaction strength $\\epsilon_{CC}$. (B) Representative snapshots of the predominant assembly outcomes shown in (A).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14078/elife-14078-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The distribution of assembly outcomes in Figure 3A is shown as a function of $\\epsilon_{SC}$ for indicated values of $\\epsilon_{CC}$ and $\\epsilon_{SS}$.Ten simulations were performed at each set of parameter values. Representative snapshots corresponding to each outcome are shown in Figure 3B. Simulations were performed for $3\\times10^{8}$ timesteps.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14078/elife-14078-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The most frequently observed assembly outcome is overlaid on a color map of the theoretical free energy density difference $\u0394\u2062f_{assem}$ (Equation (3)) between assembled shells and the unassembled globule. Results are plotted against the shell-cargo adsorption strength $\\epsilon_{SC}$ and the shell-shell interaction strength $\\epsilon_{SS}$ for indicated values of the cargo-cargo interaction strength $\\epsilon_{CC}$. Outcomes are defined as in Figure 3B of the main text. The outcome of each simulation for this figure is listed in Figure 3\u2014figure supplement 2\u2014source data 1.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/14078/elife-14078-fig3-figsupp3-v3.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) The mean number of cargo molecules encapsulated by shells assembled in dynamics simulations for $\\epsilon_{CC}=1.6$. The results are averaged over all complete shells (for any $\\epsilon_{SS}$) assembled at each value of $\\epsilon_{SC}$, the error bars indicate 95% confidence intervals. (B) The equilibrium number of cargo particles packaged in shells as a function of the shell-cargo and cargo-cargo interaction strengths. The equilibrium cargo loading was calculated by performing simulations initialized with a pre-assembled shell, for which the excluders on one subunit were made permeable to cargo particles. We then performed two simulations at each parameter set, each of length $5\\times10^{5}$ timesteps.\n\nIncreasing the shell-shell interaction strength drives faster shell assembly and closure, thus limiting the size of the globule before budding. For the largest interaction strength we simulated (\u03b5SS=4.5) the globule typically does not exceed the size of a single shell, and multiple globules nucleate within the simulation box (Figure 2\u2014figure supplement 1). This observation could place an upper bound on shell-shell interaction strengths, since multiple nucleation events were rare in the carboxysome assembly experiments (Cameron et al., 2013) (however, we discuss potential complicating factors within the cellular environment below). To quantify the relationship between assembly mechanism and parameter values, we calculate an assembly order parameter, defined as the maximum number of unassembled subunits adsorbed onto a globule during an assembly trajectory. The order parameter is shown as a function of the interaction strengths in Figure 4. For \u03b5CC\u22651.6 and \u03b5SS\u22643 we observe large values of the order parameter (e.g. >32, the red and yellow regions in Figure 4), which indicate formation of a large amorphous globule consisent with the procarboxysome precursor to carboxysome shell assembly (Cameron et al., 2013).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/14078/elife-14078-fig4-v3.jpg)\n\n**Figure 4.:** The assembly order parameter, defined as the maximum number of unassembled shell subunits adsorbed on a globule at any point during a trajectory, is shown as a function of $\\epsilon_{SC}$ and $\\epsilon_{SS}$ for indicated values of the cargo-cargo interaction $\\epsilon_{CC}$. Large numbers of adsorbed unassembled subunits ($>32$) indicate the two step assembly mechanism (Figure 2A), whereas smaller values correspond to simultaneous assembly and cargo condensation (Figure 2B).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14078/elife-14078-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Assembly order parameter values for $\\epsilon_{CC}=1.8$ and $\\epsilon_{CC}=2.0$.\n\n#### Other assembly products\n\nOutside of the optimal parameter ranges, we observe several classes of alternative outcomes. Overly weak shell-shell interactions fail to drive assembly. For $\\epsilon_{CC}=1.6$ and $\\epsilon_{SC}\\leq4$ the cargo vapor phase is metastable, and the system remains \u2018Unnucleated\u2019 (with no cargo globule) on simulated timescales (we discuss alternative initial conditions below). Stronger cargo-cargo or shell-cargo interactions result in unassembled \u2018Globules\u2019, where a cargo globule forms but the shell subunits on its surface fail to nucleate. As $\\epsilon_{SS}$ increases, we observe assembly on the globule, leading either to complete shells or two classes of incomplete assembly. In the first incomplete case, \u2018Attached\u2019, one or more shells almost reaches completion, but fails to detach from the droplet within simulated timescales. \u2018Attached\u2019 configurations occur for low $\\epsilon_{SC}$, when the subunit-cargo interaction does not provide a strong enough driving force for the last subunit(s) to penetrate the cargo and close the shell. Overly strong interactions drive the other class of incomplete assembly: \u2018Over-nucleated/Malformed\u2019, in which an excess of partially assembled shells deplete the system of free subunits before any shells are completed. In this regime it is also common to observe malformed structures, in which defects become trapped within growing shells.\n\nAs the cargo-cargo interaction increases ($\\epsilon_{CC}\\geq1.8$), multiple effects narrow the parameter range that leads to complete assembly and detachment. Firstly, cargo globules nucleate rapidly at multiple locations within the simulation box, increasing the likelihood of the \u2018Over-nucleated\u2019 outcome. Secondly, the threshold value of $\\epsilon_{SC}$ required for cargo penetration increases, resulting in \u2018Attached\u2019 shells over a wider parameter range. We also observe a configuration we refer to as \u2018Stalled\u2019, in which shell assembly fails to penetrate the globule surface (and thus does not even proceed to the attached stage). The latter is especially prevalent for $\\epsilon_{CC}=3.0$, when the cargo crystallizes even in the absence of shell encapsulation. For both \u2018Attached\u2019 and \u2018Stalled\u2019 configurations, regardless of the initial number of nucleation events, we typically observe coarsening into a large globule.\n\n### Simultaneous shell assembly and cargo condensation\n\nFor \u03b5CC=1.3 the cargo forms an equilibrium vapor phase in the absence of shell subunits. However, above threshold values of \u03b5SS and \u03b5SC, the diffuse cargo molecules drive nucleation of shell assembly. The subsequent assembly pathway depends sensitively on the shell-cargo interaction strength. For low \u03b5SC (Figure 2C), assembly captures only a few cargo molecules, leading to complete, but nearly empty shells. For larger \u03b5SC (Figure 2B, and Simulation Video 2), the shell-cargo interactions drive local condensation of cargo molecules. Shell assembly and cargo complexation then proceed in concert, resembling the mechanism proposed for assembly of \u03b1-carboxysomes (Iancu et al., 2010). Thus, tuning the shell-cargo interaction dramatically affects cargo loading, with a sharp transition from empty to filled shells around \u03b5SC=2. This transition closely tracks the equilibrium filling fraction (Figure 5C), measured by simulating a complete shell made permeable to cargo molecules. This effect is comparable to the condensation of water vapor below its dew point inside of hydrophilic cavities. In contrast, assembly around a globule only generates full shells.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/14078/elife-14078-fig5-v3.jpg)\n\n**Figure 5.:** Results of assembly around a cargo with weak interactions ($\\epsilon_{CC}=1.3\u2062k_{B}\u2062T$).(A) The most frequently observed assembly outcome as a function of $\\epsilon_{SS}$ and $\\epsilon_{SC}$. The distribution of outcomes for $\\epsilon_{SS}=4$ is shown in Figure 3\u2014figure supplement 2, and a data file containing the outcome for each trial at each parameter set is included (Figure 3\u2014source data 1). (B) Representative snapshots for the outcomes shown in (A). The complete shell outcomes are shown with the excluders rendered opaque (left) and transparent (right) to enable visualizing the encapsulated cargo. (C) The number of cargo molecules encapsulated by shells assembled in dynamics simulations (red symbols) is compared to the results of equilibrium simulations (black line). The dynamics results are averaged over all complete shells (for any $\\epsilon_{SS}$) assembled at each value of $\\epsilon_{SC}$, the error bars indicate 95% confidence intervals. Most simulations were performed for $3\\times10^{8}$ timesteps; simulations with $\\epsilon_{SS}=4.5$, $\\epsilon_{SC}\\leq4$, and $\\epsilon_{CC}=1.3$ exhibited partially assembled shells at $3\\times10^{8}$ timesteps, and were continued up to $7.2\\times10^{9}$ timesteps.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14078/elife-14078-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) The color map shows the fraction of subunits in assembled shells ($f_{c}$) obtained from numerically solving Equation (1\u20132), using the parameter values described in appendix 2, as a function of $\\epsilon_{SC}$ and $\\epsilon_{SS}$ for assembly around gas phase cargo $\\epsilon_{CC}=1.3$ (left) and assembly and budding from a pre-equilibrated globule $\\epsilon_{CC}=1.6$ (right). The white circles overlaid on the plots quantify the fraction of dynamical simulations that led to at least one well-formed capsid (defined as shells containing 12 pentamers and 20 hexamers, each interacting with respectively 5 or 6 neighbors). The size of each white circle is proportional to the yield obtained from dynamical simulations at that parameter set, with the largest circle corresponding to 100%. (B) The color map shows the simulation result for the fraction of subunits in of any type of assemblage (defined as any assemblage comprising 10 or more subunits) as a function of $\\epsilon_{SC}$ and $\\epsilon_{SS}$ for $\\epsilon_{CC}=1.3$ (left) and $\\epsilon_{CC}=1.6$ (right). We see that the theoretical prediction of the onset of assembly roughly corresponds to the boundary between assembly and no assembly in the simulations, except that the simulation boundary is seen at slightly higher parameter values in all cases, and for $\\epsilon_{CC}=1.3$ the simulation boundary slopes upward with $\\epsilon_{SC}$ more sharply than the theoretical prediction. Both of these differences can be attributed to prohibitive nucleation barriers which arise for parameter values near the threshold equilibrium values. As discussed in the main text, decreasing $\\epsilon_{SC}$ reduces the ability for a partially assembled shells to condense cargo molecules, leading to longer nucleation timescales and hence a wider range of $\\epsilon_{SS}$ between the equilibrium threshold for assembly and the threshold for observing nucleation within our simulation timescale.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14078/elife-14078-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) The fraction of trajectories resulting in assembly of a complete shell is shown as a function of $\\epsilon_{SC}$ for indicated cargo diameters ($\\sigma_{C}$) and $\\epsilon_{CC}=1.3$. Each data point corresponds to 10 independent simulations. (B) The maximum number of cargo particles encapsulated into a complete shell for each diameter in the simulations shown in (A). (C) Cutaway view of assembled shells corresponding to each data point in (B). Further information. For most results shown in this article, we set the size of the cargo to be commensurate with the size of the shell subunits. This is qualitatively consistent with BMCs; e.g., for carboxysomes the diameter of a RuBisCO holoenzyme is about twice the circum-diameter of a hexamer or pentamer. To investigate how sensitive cargo encapsulation is to the ratio of cargo and shell subunits sizes, we performed additional simulations with cargo diameters in the range $\\sigma_{C}\\in[0.6,2]$, where $\\sigma_{C}$ is the cargo diameter in Equation (A5). In these simulations we maintained a constant cargo volume fraction and box size, so the number of simulated cargo particles varies inversely with the cargo volume. As shown in (A), assembly can accommodate such variations in the cargo diameter, but the yields and robustness to variations in $\\epsilon_{SC}$ diminish as $\\sigma_{C}$ varies from 1. This may suggest that commensurate shell subunits and cargo sizes are optimal for encapsulation; however, further exploration is required to determine whether varying other parameters such as the cargo volume fraction or the length scale of the subunit-cargo interaction would change this result.\n\nAssembly of full shells (by either pathway, Figure 2A or Figure 2B) is typically about two orders of magnitude faster than assembly of empty shells (Figure 2C). This disparity demonstrates the key role that the cargo plays in promoting shell association, during all stages of assembly. Cargo molecules initially promote shell nucleation by stabilizing interactions among small, sub-nucleated clusters. Then, the presence of a condensed globule provides a large cross-section for adsorption of additional subunits, significantly enhancing the flux of subunits to the partial capsid, thus increasing its growth rate. The condensed cargo particularly facilitates insertion of the last few subunits, which are significantly hindered by steric interactions, as noted previously for simulations of empty virus capsids (Nguyen et al., 2007).\n\nFigure 5A shows how the products of assembly around cargo with weak interactions depends on parameters. While moderate parameter values lead to complete assembly, overly weak $\\epsilon_{SC}$ and $\\epsilon_{SS}$ (lower left region of Figure 5A) prevent shell nucleation, leading to the \u2018Unnucleated\u2019 outcome. In the limit of large $\\epsilon_{SC}$ but weak $\\epsilon_{SS}$ the shell-cargo interaction stabilizes small disordered globules ($\u223c50$ cargo particles, lower right region of\u00a0Figure 5A), while under strong subunit and weak cargo interactions ($\\epsilon_{SS}=4.5$, $\\epsilon_{SC}<5$) shells nucleate but cannot condense the cargo, leading to the complete but slow assembly just discussed. As for assembly around a globule, overly strong interactions lead to overnucleation and malformed shells. However, the predominant mode of malformation is now shell collapse. Because the cargo is below its dew point, the locally condensed globule leads to a negative pressure on the shell subunits, which can flatten the shell and thus prevent closure of a symmetric shell.\n\n### Thermodynamic model\n\nThe simple free energy model (Equations (1\u20132)) reproduces the threshold parameter values required for shell assembly with no adjustable parameters (color map in Figure 3). Since it is an equilibrium model and only considers the free energy difference between complete and unassembled configurations, it cannot distinguish between parameter values that lead to complete assembly or kinetic traps at the long but finite simulation times. However, the thermodynamic calculation does suggest that the simulations resulting in \u2018Attached\u2019 shells would eventually reach completion on a longer timescale. We do not show $\u0394\u2062f_{assem}$ in Figure 5A because the globule is always less favorable than assembled shells for $\\epsilon_{CC}=1.3$, but the yield of well-formed shells in our simulations roughly follows the prediction of the equilibrium theory (Figure 5\u2014figure supplement 1).\n\n### Effects of varying other parameters or initial conditions\n\nTo investigate whether the results described above depend on assumptions within our model, we performed several sets of additional simulations. Firstly, we performed simulations in which the ratio between cargo diameter in shell subunit size was varied. As shown in Figure 5\u2014figure supplement 2, assembly is most robust for our default cargo diameter (for which the model was parameterized), but productive assembly occurs for cargo diameters varied over a factor of four. Secondly, we performed assembly simulations with anisotropic cargo molecules with a shape motivated by the octomer structure of the RuBisCO holoenzyme (Figure 2\u2014figure supplement 2).\n\nThirdly, we performed a set of simulations in which we pre-equilibrated the cargo globule before introducing shell subunits into the system (Figure 3\u2014figure supplement 2, Simulation Video 3). Investigating this alternative initial condition was motivated by the fact that RuBisCO is present in the cell before induction of the carboxysome gene in the experiments of Ref. (Cameron et al., 2013), and by the observation that multiple carboxysomes bud sequentially in time from a single procarboxysome. For \u03b5CC=1.6 the results are very similar to those obtained without pre-equilibrating the cargo. However, for \u03b5CC>1.6, successful assembly and detachment is limited to more narrow ranges of shell-shell and shell-cargo interaction strengths than in Figure 3, due to an increased prevalence of \u2018Attached\u2019 and \u2018Stalled\u2019 configurations. The latter are particularly common for \u03b5CC=3, when the cargo forms a hexagonally close packed crystal which strongly resists deformation by shell protein assembly.\n\n![Video 3.](https://cdn.elifesciences.org/articles/14078/elife-14078-media3.mp4.jpg)\n\n**Video 3.:** Parameters are $\\epsilon_{CC}=1.6$, $\\epsilon_{SC}=6$, and $\\epsilon_{SS}=3.5$.\n\nTaken together, the results from both assembly protocols (Figure 3 and Figure 3\u2014figure supplement 2) suggest that moderate effective cargo-cargo interactions are most consistent with the observations of shell assembly and budding in Refs. (Cameron et al., 2013; Chen et al., 2013). Such interactions are strong enough to drive cargo globule formation, but malleable enough to allow shell assembly to deform and eventually sever intra-globule interactions.\n\n### Organization of encapsulated cargo\n\nStudies of assembled carboxysomes report varying degrees of order for the encapsulated cargo, ranging from none to paracrystalline order (Iancu et al., 2007; 2010; Kaneko et al., 2006; Schmid et al., 2006). We therefore studied the relationship between cargo order and interaction parameters using equilibrium simulations (see Figure 6 and Figure 6\u2014figure supplement 1). Below \u03b5CC<3\u2062kB\u2062T, we do not observe true fcc order of the encapsulated cargo. However, for all parameters leading to significant filling, even those well below the cargo liquid-vapor transition, the cargo becomes organized in concentric layers (Figure 6). We observe similar cargo organizations within shells which have budded from cargo globules in dynamical simulations. These results demonstrate that ordering of the cargo does not require crystallinity of the initial globule. Moreover, the magnitude of ordering increases with cargo loading, but, for fixed loading, is essentially independent of the cargo-shell interaction strength \u03b5SC. We observe ordering within filled shells due to confinement, even if even if \u03b5SC is set to 0 (Figure 6\u2014figure supplement 1), as previously noted by Iancu et al. (Iancu et al., 2007).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/14078/elife-14078-fig6-v3.jpg)\n\n**Figure 6.:** The spherically averaged density of cargo molecules inside a shell is shown as a function of radius for (A) $\\epsilon_{CC}=1.6$ and (B) $\\epsilon_{CC}=1.3$ for indicated values of the cargo-shell adhesion strength $\\epsilon_{SC}$, measured in equilibrium simulations. The density of the encapsulated cargo ranges from below random close packing to near hexagonal close packing density as $\\epsilon_{CC}$ and $\\epsilon_{SC}$ are increased (see Figure 3\u2014figure supplement 3). A snapshot of cargo inside the shell is shown in Figure 5\u2014figure supplement 2. The raw data for this figure is provided in Figure 6\u2014source data 1.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14078/elife-14078-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The spherically averaged density distribution is shown as a function of distance from the shell center, for simulations in which a preset number $n$ of cargo molecules are trapped within a complete shell, with the cargo-shell attraction turned off ($\\epsilon_{SC}=0$). The value of $n$ corresponding to each curve is given in the legend, and the value of the subunit-shell energy $\\epsilon_{SC}$ is shown above each plot. These simulations were each run for $5\\times10^{5}$ timesteps. The simulations shown in Figure 6 were also run with a complete shell; however, one excluder was rendered permeable to cargo molecules allowing the number of encapsulated cargo molecules to equilibrate. Those simulations were also each run for $5\\times10^{5}$ timesteps. Raw data for this figure is provided in Figure 6\u2014figure supplement 1\u2014source data 1.\n\n**Table 1.**\n Description of the assembly outcomes presented in Figures 3,5.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Symbol</th>\n      <th>Name</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\u25aa</td>\n      <td>Complete shell (full)</td>\n      <td>Complete shell, full of cargo molecules</td>\n    </tr>\n    <tr>\n      <td>\u25c6</td>\n      <td>Complete shell (empty)r</td>\n      <td>Complete shell, almost empty of cargo molecules</td>\n    </tr>\n    <tr>\n      <td>\u26ab</td>\n      <td>Attached</td>\n      <td>Nearly complete shells attached to a globule by a neck of cargo</td>\n    </tr>\n    <tr>\n      <td>\u2733</td>\n      <td>Over-nucleated/Malformed</td>\n      <td>Multiple globules, with incomplete or malformed shells on their surfaces</td>\n    </tr>\n    <tr>\n      <td>\u00d7</td>\n      <td>Stalled</td>\n      <td>Large globule with multiple incomplete or malformed shells on its surface</td>\n    </tr>\n    <tr>\n      <td>\u25a1</td>\n      <td>Globule</td>\n      <td>Cargo globule with unassembled shell subunits on its surface</td>\n    </tr>\n    <tr>\n      <td>\u2299</td>\n      <td>Unnucleated</td>\n      <td>Diffuse subunits and cargo molecules</td>\n    </tr>\n  </tbody>\n</table>\n\n## Discussion\n\nWe have described an equilibrium theory and a dynamical computational model for the assembly of shells around a fluid cargo. Our simulations show that assembly can proceed by two classes of pathways: (i) a multi-step process in which the cargo forms a dense globule, followed by adsorption, assembly, and budding of shell proteins, or (ii) single-step assembly, with simultaneous aggregation of cargo molecules and shell assembly. This result demonstrates that the minimal interactions included in our model are sufficient to drive both classes of assembly pathways, suggesting that they are a generic feature of assembly around a fluid cargo. Moreover, while we cannot rule out the existence of active mechanisms in biological examples such as carboxysomes, our model demonstrates that the same interactions which drive assembly of shells can also drive budding from and closure around an amorphous globule of cargo.\n\nOur results suggest bounds on the relative strengths of interactions that drive BMC assembly in cells. The decisive control parameter determining the assembly pathway is the cohesive energy between cargo molecules, which could arise through direct cargo-cargo interactions or be mediated by auxiliary proteins (Cameron et al., 2013). Relatively weak cargo interactions lead to single-step assembly pathways, while stronger interactions favor formation of the cargo-shell globule. However, the strength of cargo-shell and shell-shell interactions also play a role. Strong shell-shell interactions cause assembly to proceed rapidly during globule formation, limiting the size of the globule. Moreover, if a large globule is already present (e.g. due to time-dependent protein concentrations within a cell), strong interactions tend to drive malformed assemblies. We find that an important functional difference between the two classes of assembly pathways is control over the amount of packaged cargo. While the multi-step assembly pathways always generate a shell filled with cargo molecules, shells assembling around a diffuse cargo can be tuned from nearly empty to completely full by controlling the strength of cargo-shell interactions.\n\nThese results have implications for reengineering BMCs to encapsulate new core enzymes. Recent works demonstrated that protein cargos can be targeted to BMCs via encapsulation peptides that mediate cargo-shell interactions. However, packaged amounts were much lower than for native core enzymes (Parsons et al., 2010; Choudhary et al., 2012; Lassila et al., 2014). Our simulations show that both cargo-shell and cargo-cargo interactions (direct or mediated) must be controlled to assemble full shells.\n\nWe also find that a general equilibrium theory describes the ranges of parameter values for which assembly occurs. However, the dynamical simulations demonstrate that, at finite timescales, there is a rich variety of assembly morphologies. Formation of ordered, full shells requires a delicate balance of cargo-cargo, cargo-shell, and shell-shell interactions, all of which must be on the order $5-10\u2062k_{B}\u2062T$. This constraint is consistent with previous studies on viruses and other assembly systems, which found that formation of ordered states requires multiple, cooperative weak interactions between subunits (Hagan, 2014; Whitelam and Jack, 2015). Outside of optimal parameter regimes, the simulations predict alternative outcomes, ranging from no assembly to various alternative trapped intermediates, with the morphology depending on which interaction is strongest. We find that assembly is least robust to parameter variations when the cargo crystallizes before shell assembly. The assembling shell is unable to deform or penetrate the cargo complex, leading to defect-riddled, non-budded complexes. Within the limits of our simplified model, this observation suggests that procarboxysome complexes are at least partially fluid prior to successful shell assembly. Moreover, we find that observations of ordered cargo within assembled shells may be explained by packing constraints.\n\nAn important limitation of the present study is that the model interactions are specific to the shell geometry shown in Figure 1 (containing 20 hexamers) because alternating edges on hexagonal subunits have attractive interactions only with pentagonal subunits. In reality BMCs contain many more hexamers (formed from multiple protein sequences) and thus must include a greater range of hexamer-hexamer interactions. Extension of the model to allow for this possibility would allow consideration of two important questions: (1) The mechanism controlling insertion of the 12 pentagons required for a closed shell topology. (2) The relationship between assembly pathway and BMC size polydispersity. In particular, experiments suggest that $\\beta$-carboxysomes are more polydisperse than $\\alpha$-carboxysomes (Price and Badger, 1991; Shively et al., 1973; Shively et al., 1973; Iancu et al., 2007; 2010; Kerfeld et al., 2010; Tanaka et al., 2008). We speculate that in the case of assembly around vapor-phase cargo, the size of the assembling shell will be primarily dictated by the preferred shell protein curvature and thus relatively uniform. However, during assembly around a condensed globule, the shell protein interactions could be strained to accommodate a globule which is larger or smaller than the preferred curvature, causing the shell size to depend on a complex balance of intermolecular interaction strengths and variables such as the local RuBisCO concentration.\n\nOur model is minimal, intended to elucidate general principles of assembly around a fluid cargo, and thus may apply to diverse systems including prokaryotic microcompartments, viruses, and engineered delivery vehicles. The predicted trends for how assembly mechanisms and morphologies vary with control parameters can be experimentally tested by microscopy experiments. Such testing will be most straightforward in vitro (e.g. Luque et al., 2014; Douglas and Young, 1998; Rurup et al., 2014; Patterson et al., 2014; Patterson et al., 2012; Zhu et al., 2014; Rhee et al., 2011; Rurup et al., 2014; W\u00f6rsd\u00f6rfer et al., 2012), where subunit-subunit interactions can be tuned by varying solution conditions and the stoichiometries of shell and cargo species can be readily varied. While there is currently no BMC assembly system starting from purified components, our findings can be tested in vivo by mutations which alter known protein binding interfaces, or by altering expression levels of RuBisCO or carboxysome proteins.\n\nWe anticipate that our model can serve as a qualitative guide for understanding how such multicomponent complexes assemble in natural systems, or to reengineer them for new applications. More broadly, our results demonstrate that the properties of encapsulated cargo, such as its topology, geometry and interaction strengths, strongly influence assembly pathways and morphologies.\n\n## Materials\u00a0and\u00a0methods\n\n### Computational model\n\n#### Shell subunits\n\nWe have adapted a model for virus assembly (Perlmutter et al., 2013; 2014; Perlmutter and Hagan, 2015a; Wales, 2005; Fejer et al., 2009; Johnston et al., 2010; Ruiz-Herrero and Hagan, 2015) to describe assembly of an icosahedral shell around a fluid cargo. Each subunit contains \u2018Attractors\u2019 on its perimeter that mediate subunit-subunit attractions (as in Ruiz-Herrero and Hagan, 2015). Attractor interactions are specific \u2013 complementary pairs of Attractors (see Figure 1A,B and appendix 1) have short-range interactions (modeled by a Morse potential), whereas non-complementary pairs have no interactions. A repulsive interaction between pairs of \u2018Top\u2019 (type \u2018T\u2019) pseudoatoms favors the correct subunit-subunit angle. The \u2018Bottom\u2019 (type \u2018B\u2019) pseudoatoms mediate short-ranged subunit-cargo attractions (e.g. due to interactions with shell \u2018encapsulation peptides\u2019 (Kinney et al., 2012; Cameron et al., 2013; Fan et al., 2010)), represented by a Morse potential. We also add a layer of \u2018Excluders\u2019 in the plane of the \u2018Top\u2019 pseudoatoms, which represent subunit-cargo excluded volume interactions. The strengths of subunit-subunit and subunit-cargo attractions are parameterized by potential well depths $\\epsilon_{SS}$ and $\\epsilon_{SC}$ respectively (appendix 1).\n\n#### Cargo\n\nAs a minimal representation of globular proteins, the cargo is modeled as spherical particles which interact via an attractive Lennard-Jones (LJ) potential, with well-depth $\\epsilon_{CC}$. The attractions implicitly model hydrophobic and screened electrostatics interactions between cargo molecules, as well as effective cargo-cargo interactions mediated by auxiliary proteins (e.g. the carboxysome protein CcmM (Cameron et al., 2013)).\n\n#### Simulations\n\nWe simulated assembly dynamics using the Langevin dynamics algorithm in HOOMD (a software package that uses GPUs to perform highly efficient dynamics simulations [Anderson et al., 2008]) and periodic boundary conditions to represent a bulk system. The subunits are modeled as rigid bodies (Nguyen et al., 2011). The simulations were performed using a set of fundamental units (URL. http://codeblue.umich.edu/hoomd-blue/doc/page_units.html), with $1\u2062d_{u}$ defined as the circumradius of the pentagonal subunit (the cargo diameter is also set to 1 $d_{u}$). Unless specified otherwise, each simulation contained enough subunits to form four complete shells (48 pentamers and 80 hexamers) and 611 cargo particles (a shell typically encapsulates 120\u2013130 cargo particles) in a cubic box with side length $40\u2062d_{u}$. The simulation time step was $0.001$ in dimensionless time units, and dynamics was performed for $3\\times10^{8}$ timesteps unless mentioned otherwise.\n\nWe performed two sets of simulations, using different initial conditions. In the first, simulations were initialized by introducing cargo particles and shell subunits simultaneously with random positions and orientations (except avoiding high-energy overlaps). The second set of initial conditions was motivated by the possibility that the cargo globule could form before shell subunits reach sufficient concentrations within the cell to undergo assembly. To model this situation, we pre-equilibrated the cargo by performing a long simulation with only cargo particles present. Shell subunits were then introduced with random positions and orientations (excluding high-energy overlaps). For $\\epsilon_{CC}\\geq1.6$, the assembly simulations thus began with a cargo globule already present. For $\\epsilon_{CC}<1.6$ the two protocols are equivalent, since no globule forms during cargo equilibration.\n\n#### Sample sizes\n\nTo cover the largest range of parameter space possible given the computational expense associated with each simulation, we performed 5 independent simulations at most parameter sets. To assess statistical error and to estimate the distribution of different assembly outcomes, we performed 10 independent trials for one value of $\\epsilon_{SS}$ at each value of $\\epsilon_{SC}$ and $\\epsilon_{CC}$. We also performed additional simulations at parameter sets for which 5 trials did not result in a majority outcome, or when necessary to obtain better statistics on the number of encapsidated cargo particles. Based on these results, performing additional simulations at other parameter values would not qualitatively change our results. (It would increase the statistical accuracy of estimated boundaries between different outcomes; however, these boundaries correspond to crossovers rather than sharp transitions.)\n\n### Thermodynamics of assembly around a fluid cargo\n\nTo complement the finite-time simulations, we have developed a general thermodynamic description of assembly around a fluid cargo. We consider shells composed of species $\\alpha=1,2,\u2026\u2062M$, with $n_{\\alpha}^{shell}$ subunits of species $\\alpha$ in a complete shell, which encapsulates $n_{0}$ cargo molecules (the index 0 refers to cargo molecules henceforth). Assembly occurs from a dilute solution of cargo molecules with density $\u03c1_{0}$, shell subunits with density $\u03c1_{\\alpha}$ for each species, and the density of assembled, full shells as $\u03c1_{shell}$. These are in equilibrium with a globule containing $n_{0}^{glob}$ cargo molecules and $n_{\\alpha}^{glob}$ subunits for each species $\\alpha$. We assume that, due to the asymmetric nature of the shell-cargo interaction, the shell subunits reside at the exterior of the globule (as we observe in our simulations). The globule containing unassembled shell subunits thus resembles a spherical microemulsion droplet (Safran, 1994). Minimizing the total free energy (see appendix 2) gives:\n\n$$\nv_{0}\u03c1_{shell}=exp\u2061[\u2212(G_{shell}\u2212\\sum\\alphan_{\\alpha}^{shell}\\mu_{\\alpha})/k_{B}T]\n$$\n\nwhere $G_{shell}$ is the interaction free energy of the assembled shell and $\\mu_{\\alpha}$ are the chemical potentials of free cargo molecules and shell subunits, given by $\\mu_{\\alpha}=k_{B}\u2062T\u2062ln\u2061(\u03c1_{\\alpha}\u2062v_{0})$, with $v_{0}$ a standard state volume and the globule composition given by\n\n$$\n\\frac{\u2202G_{glob}({n_{\\alpha}^{glob}})}{\u2202n_{\\alpha}^{glob}}=\\mu_{\\alpha}for\u00a0\\alpha=0\u2026M,\n$$\n\nwith $G_{glob}(n_{s}^{glob},\u00a0n_{0}^{glob})$ as the globule free energy.\n\n(1) \u2013 (2) are the general equilibrium description for a system of assembling shells with a disordered-phase intermediate; application to a specific system requires specifying the forms of $G_{shell}$ and $G_{glob}$. In appendix 2 we specify these equations for our computational model, allowing us to compare the equilibrium calculation with simulation results, using no free parameters.\n\nTo compare the relative stabilities of the globule and assembled shells, we also calculate the free energy difference\n\n$$\n\u0394f_{assem}=f_{tot}({n_{\\alpha}^{glob}=0})-f_{tot}(\u03c1_{shell}=0),\n$$\n\nwhere the first term on the right-hand side is the minimized free energy for a system containing shells and free subunits but no globule, while the second term corresponds to the minimized free energy for a system containing subunits and the globule, but no assembly.\n",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "1efb5181-142f-41d7-9b1b-83566277d9fe",
+      "submission_id": "7b2f9d1b-c7ad-4df8-9095-a1ed48f58a4f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nir Ben-Tal, Tel Aviv University , Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.14078.028](https://doi.org/10.7554/eLife.14078.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Many-molecule encapsulation by an icosahedral shell\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Naama Barkai as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe following individuals involved in review of your submission have agreed to reveal their identity: Charles Knobler and Avinoam Ben-Shau (peer reviewers).\n\nThe manuscript describes novel simulations of encapsulation of hundreds of cargo molecules in icosahedral shells. This is relevant for the formation of the carboxysome microcompartment in bacteria. The work is very impressive from a theoretical standpoint and the tendency is to accept the paper for publication in eLife. However, following the main comment of Reviewer 1, re-enforced by Reviewer 3, there was debate about the suitability of the work for the biological audience of eLife. The overall feeling is that it is, but we suggest that the relevance to biology will be further emphasized. In producing the final draft of the manuscript the authors should also address the following issues:\n\n1) Resolve the confusion about the assembly outcome (see comment of Reviewer 1).\n\n2) Refer to Reviewer 1's point regarding the monodispersity differences between \u03b1- and \u03b2-carboxysomes.\n\n3) Examine the effect of changing the diameter of the cargo on the results (Reviewers 1 and 2).\n\n4) Explain why the cargo is allowed to equilibrate prior the addition of the shell, in contrast with the biological scenario (Reviewer 1).\n\n5) Consider changing the names of the energy terms (Reviewer 1).\n\n6) Explain why a Morse potential is used for the shell-shell and shell-cargo interactions while a Lennard-Jones potential is used for cargo-cargo interactions (Reviewer 1).\n\n7) Consider adding the effect of non-isotropic interactions among the cargo molecules (Reviewer 1).\n\n8) Cite the Sutter et al. article.\n\n9) Address the point about making the model geometry more permissive (Reviewer 1).\n\n10) Address the issue about Figure 4 (Reviewer 1).\n\n11) Consider adding the analogy to the wetting behavior of binary, immiscible, liquid droplets but not at the expense of making the paper less clear to biologists (Reviewer 3).\n\nReviewer #1:\n\nBacterial microcompartments (BMCs) are capsid-like structures that function as organelles in bacteria. They are composed of both shell proteins and specific cargo proteins that self-assemble into the ~100 nm structures found in bacterial cells. Recent experimental evidence suggests that different BMCs may assemble through different mechanisms. Here, Perlmutter provide a compelling theoretical evidence of such mechanisms. The authors demonstrate that this minimal set of interactions is sufficient to drive efficient encapsulation, and they explore the phase diagrams with respect to these parameters. Two distinct paths to well-formed full shells are identified which are consistent with current hypotheses for \u03b1- and \u03b2-carboxysome assembly, respectively. The balance of energetics they identify could provide a useful conceptual framework for future work on in vitro reconstitution of existing BMCs and the engineering of synthetic ones. The manuscript is well written, and the work appears to be competently executed and analyzed.\n\nMy main concern is about the suitability of this paper for eLife and its readership. With its emphasis on statistical mechanical methods and interpretations it seems like this would be a better fit in something like the Biophysical Journal or J. Phys. Chem. B. Moreover, the work is likely to benefit from the exposure in one of these specific journals, as opposed to the more biological readership of eLife.\n\nI have another general concern about the categorization of assembly outcomes, which I found confusing. For instance in Figure 3B 'unnucleated' is shown as a mass of cargo and shell pieces whereas in Figure 5B 'unnucleated' is a collection of separated pieces. It is also not clear to me what exactly 'vapor assembly' means because the section \"Vapor Assembly\" describes the pathway through which \u03b1-carboxysomes are thought to assemble. Are those complete shells filled through this way counted as 'complete' or 'vapor assembly' and what determines the cutoff, the amount of cargo? There also seems to be inconsistent use of symbols where X indicates 'Stalled' in Figure 3 but 'Malformed' in Figure 5. The Results needs a clear and organized description of each of the states as well as consistent usage of images and symbols. A table might be a good idea.\n\nFinally, I wonder if the authors have considered the monodispersity differences between \u03b1- and \u03b2-carboxysomes. If I recall correctly, \u03b2-carboxysomes tend to be more heterogeneous between related species and even within the same cell, suggesting some fundamental difference. Does the current model provide any insight into this?\n\nReviewer #2:\n\nMike Hagan and his collaborators have carried out what to my mind are the best computer studies of viral assembly by using minimal models that capture the essential physics of the assembly process. Here they carry out a computational; study that addresses a related problem, the assembly of carboxysomes. The model and computational methods they employ are similar to those they have utilized in previous studies but with an additional degree of complexity. In all of their previous work, I believe, they have used models for the protein shell that is appropriate to a T =1 capsid, which can be made up of rigid capsomers of a single type, either triangles or pentamers. Here they employ a model that is appropriate to a T = 3 shell that is made up of rigid pentamers and hexamers. While the interactions between subunits and between subunits and cargo are modeled in a similar fashion in all of these simulations, the introduction of two different subunits considerably complicates the computations. To my untutored understanding of the nuts and bolts of computer modeling, this seems to me to be a tour de force.\n\nThe work breaks new ground as well in considering the effects of the phase behavior of the cargo on the assembly path. While the results are very interesting, there are no surprises. The way in which the assembly pathway depends on the strengths of the interactions is what one would have been expected after being informed by the previous computational studies and in vitro assembly studies of viral assembly. They are by no means trivial, however and especially useful because there are no in vitro studies of carboxysome assembly. I think that this is an excellent paper.\n\nReviewer #3:\n\nIn this paper Perlmutter et al. present an interesting computational study of a self-assembly process whereby many small (spherical) cargo particles are encapsulated by icosahedral shells composed of 12 pentagons and 20 hexagons, analogous to the T=3 protein shells of viral capsids. Using Brownian dynamics simulations the authors analyze the assembly (\"phase\") behavior of a mixture enabling the formation of up to four complete carboxysome-like particles (CLP). The simulations are accompanied by an equilibrium thermodynamic theoretical analysis. Three interaction parameters dictate the assembly behavior of the system \u03f5(LJ), \u03f5(sub), \u03f5(Ads) representing the (magnitudes) of the interaction energies between neighboring cargo units, capsid subunits, and subunit-cargo pairs, respectively. As expected, large \u03f5(LJ) leads to solidification of the cargo particles, preventing CLP formation. Similarly large \u03f5sub (not simulated) would lead to the formation of empty capsids. The interesting regime is when all energies are comparable, not too small and not too large (compared to kT), in which case two scenarios are possible: (i) co-assembly of the cargo and shell and (ii) aggregation of the cargo particles, followed by \"carving\" their aggregates to form a complete CLPs (provided subunit interactions are strong enough) \u2013 as illustrated in the relevant cases in Figures 2,3, and convincingly summarized in the Discussion.\n\nReading the Introduction and the Discussion I conclude that the simulations and their analysis are of considerable biological relevance and interest. However, not being a biologist myself, I cannot judge to what extent. On the other hand, as far as the simulations are concerned, my impression is that they are highly non-trivial and of high quality, of the same high standards as the simulations of viral assembly that Hagan et al. have pioneered. The complementing thermodynamic analysis adds a significant theoretical aspect to this work.\n\nReading the manuscript it also reminded me the (indeed, incomplete) analogy to the wetting behavior of binary, immiscible, liquid droplets. For such droplets of A and B molecules, depending on the interaction strengths \u03f5(AA), \u03f5(BB), \u03f5(AB) complete segregation takes place when (\u03f5(AA)+ \u03f5(BB))/2>\u03f5(AB), and \u03f5(AA)> \u03f5(AB), \u03f5(BB)> \u03f5(AB), and envelopment of A by B takes place when (\u03f5(AA)+ \u03f5(BB))/2>\u03f5(AB) > \u03f5(BB), etc. The analogy is incomplete because of the special symmetry of the subunit-subunit and the anisotropic subunit-cargo interactions, but some similarity exists and may worth being pointed out. There are few other points which could help the reader (and may already be present in the manuscript but I missed).For instance: we are told that there are 611 cargo particles of a given diameter and we know the inner volume of the capsids. It would be of interest to know what is the maximal number of close-packed spheres can be accommodated within the capsid's volume, and what is the actual density observed. One of the figures shows layering of the cargo particles \u2013 at what density relative to the maximal density in the capsid (or in fcc solid) this happens? Other numbers of interest \u2013 again, perhaps mentioned \u2013 are the critical density and interaction energy of the cargo spheres. Maybe a list of all the \"limiting values\" of this kind should be mentioned at the beginning of the Results section.\n\nI wonder whether all 78 references are really needed. My guess is that the list can be more economical.\n\nBut \u2013 to summarize. I find this paper interesting, original and of high scientific quality and recommend its publication in eLife.\n",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8d59121c-dbe9-4827-851e-908ea8733a0b",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C1",
+      "claim": "The carboxysome is a bacterial microcompartment that assembles around many copies of the enzymes ribulose 1,5-bisphosphate carboxylase/oxygenase and carbonic anhydrase to facilitate carbon fixation in cyanobacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a process occurs during the formation of the carboxysome, a bacterial microcompartment that assembles around many copies of the enzymes ribulose 1,5-bisphosphate carboxylase/ oxygenase and carbonic anhydrase to facilitate carbon fixation in cyanobacteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about carboxysomes cited in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "e5315716-8b32-4f21-afe2-1e9f04119cbb",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C2",
+      "claim": "Two classes of assembly pathways lead to encapsulation of many-molecule cargoes: one where shell assembly proceeds concomitantly with cargo condensation, and another where cargo first forms a dense globule followed by shell protein assembly and budding.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations identify two classes of assembly pathways leading to encapsulation of many-molecule cargoes. In one, shell assembly proceeds concomitantly with cargo condensation. In the other, the cargo first forms a dense globule; then, shell proteins assemble around and bud from the condensed cargo complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the computational simulations described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "de80d748-32cf-4c64-9bc7-f3557abf62be",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C3",
+      "claim": "Assembly can be tuned between the two pathways by modulating protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "the simulations predict intermediates and closure mechanisms not accessible in experiments, and show how assembly can be tuned between these two pathways by modulating protein interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the computational simulations varying interaction parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "a86052cd-d0f1-44b7-a19a-db1c485ea9dc",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C4",
+      "claim": "Viruses surround their genomes with a protein capsid.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, viruses surround their genomes with a protein capsid, while bacteria use large icosahedral shells known as bacterial microcompartments (BMCs) to sequester the enzymes and reactions responsible for particular metabolic pathways (Kerfeld et al., 2010; Axen et al., 2014; Shively et al., 1998; Bobik et al., 1999; Erbilgin et al., 2014; Petit et al., 2013; Price and Badger, 1991; Shively et al., 1973; Shively et al., 1973; Kerfeld and Erbilgin, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "72415454-5ed8-473a-b80b-ffbea62ff15f",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C5",
+      "claim": "Bacteria use large icosahedral shells known as bacterial microcompartments (BMCs) to sequester the enzymes and reactions responsible for particular metabolic pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, viruses surround their genomes with a protein capsid, while bacteria use large icosahedral shells known as bacterial microcompartments (BMCs) to sequester the enzymes and reactions responsible for particular metabolic pathways (Kerfeld et al., 2010; Axen et al., 2014; Shively et al., 1998; Bobik et al., 1999; Erbilgin et al., 2014; Petit et al., 2013; Price and Badger, 1991; Shively et al., 1973; Shively et al., 1973; Kerfeld and Erbilgin, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "0ed46230-4a03-423f-b75d-0b57b3969e8c",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C6",
+      "claim": "Within diverse bacteria, BMC functions have been linked to bacterial growth, carbon fixation, symbiosis, or pathogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Within diverse bacteria, BMC functions have been linked to bacterial growth, carbon fixation, symbiosis, or pathogenesis (Kerfeld and Erbilgin, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "b80f80ae-e7bb-4403-923a-84b09d60bb50",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C7",
+      "claim": "Carboxysomes are large (40\u2013400 nm), roughly icosahedral shells that encapsulate a dense complex of the enzyme ribulose-1,5-bisphosphate carboxylase/oxygenase (RuBisCO) and other proteins to facilitate the Calvin-Bensen-Bassham cycle in autotrophic bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Carboxysomes are large (40\u2013400 nm), roughly icosahedral shells that encapsulate a dense complex of the enzyme ribulose-1,5-bisphosphate carboxylase/oxygenase (RuBisCO) and other proteins to facilitate the Calvin-Bensen-Bassham cycle in autotrophic bacteria (Price and Badger, 1991; Shively et al., 1973; Shively et al., 1973; Iancu et al., 2007; 2010; Kerfeld et al., 2010; Tanaka et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "c994cac5-303a-49a0-b208-d5b7b191a886",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C9",
+      "claim": "Genomic analysis suggests that many BMCs with diverse functions assemble via similar pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomic analysis suggests that many BMCs with diverse functions assemble via similar pathways (Cameron et al., 2013; Kerfeld and Erbilgin, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "1adc7b6d-f805-422a-a6ff-271f3028bead",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C11",
+      "claim": "The factors determining which assembly pathway occurs are unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "The factors determining which of these assembly pathways occurs are unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "a3ab5d4a-2fc4-4596-8ec6-9ad00304641e",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C12",
+      "claim": "The structure of the cargo can strongly influence assembly pathways and products in viral capsid assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous experimental and theoretical studies of encapsulation by icosahedral shells, e.g. the assembly of viral capsids around their nucleic acid genomes (e.g. Hu and Shklovskii, 2007; Kivenson and Hagan, 2010; Elrad and Hagan, 2010; Perlmutter et al., 2013; 2014; Mahalik and Muthukumar, 2012; Zhang et al., 2013; Zhang and Linse, 2013; Hagan, 2008; Devkota et al., 2009; Dixit et al., 2006; Borodavka et al., 2012; Dykeman et al., 2013; 2014; Zlotnick et al., 2013; Johnson et al., 2004; Patel et al., 2015; Cadena-Nava et al., 2012; Comas-Garcia et al., 2012; 2014; Garmann et al., 2014a; 2014b; Malyutin and Dragnea, 2013), have demonstrated that the structure of the cargo can strongly influence assembly pathways and products.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by extensive citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "3fac77f4-48db-4910-b674-47d133ef61b9",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C13",
+      "claim": "Changing the cargo topology from a nucleic acid to a fluid complex comprising many, noncovalently linked molecules leads to new assembly pathways and different critical control parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "However, BMCs assemble around a cargo which is topologically different from a nucleic acid \u2014 a fluid complex comprising many, noncovalently linked molecules. We demonstrate here that changing the cargo topology leads to new assembly pathways and different critical control parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the computational simulations in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "81e48e63-a1e5-4c88-aec1-7f159e4138a1",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C15",
+      "claim": "Tunability of cargo loading is a key functional difference between the two classes of pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that tunability of cargo loading is a key functional difference between the two classes of pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "64af6e09-f132-4a34-8706-1f030fc45153",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C16",
+      "claim": "Shells assembled around a diffuse cargo can be varied from empty (containing almost no cargo) to completely full.",
+      "claim_type": "EXPLICIT",
+      "source": "Shells assembled around a diffuse cargo can be varied from empty (containing almost no cargo) to completely full, whereas assembly around a condensed, procarboxysome-like complex invariably produces full shells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "7d06b436-5e01-410c-8a27-8401f78b16d3",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C17",
+      "claim": "Assembly around a condensed, procarboxysome-like complex invariably produces full shells.",
+      "claim_type": "EXPLICIT",
+      "source": "Shells assembled around a diffuse cargo can be varied from empty (containing almost no cargo) to completely full, whereas assembly around a condensed, procarboxysome-like complex invariably produces full shells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "1985dd81-405e-44c0-8843-689a6f73d418",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C18",
+      "claim": "The encapsulated cargo becomes ordered due to confinement.",
+      "claim_type": "EXPLICIT",
+      "source": "While we find that the encapsulated cargo becomes ordered due to confinement, complete crystalline order in the globule before encapsulation inhibits budding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "43763820-af15-4b41-92f1-c4aaf595d312",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C19",
+      "claim": "Complete crystalline order in the globule before encapsulation inhibits budding.",
+      "claim_type": "EXPLICIT",
+      "source": "While we find that the encapsulated cargo becomes ordered due to confinement, complete crystalline order in the globule before encapsulation inhibits budding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "59e4a75c-0c67-4827-b9bb-40d56e70fa88",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C20",
+      "claim": "Icosahedral symmetry can accommodate at most 60 identical subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Since icosahedral symmetry can accommodate at most 60 identical subunits, formation of large icosahedral structures requires subunits to assemble into different local environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about icosahedral geometry.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "0a41bfa2-2965-46b1-88bc-d02e952bc859",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C21",
+      "claim": "Formation of large icosahedral structures requires subunits to assemble into different local environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Since icosahedral symmetry can accommodate at most 60 identical subunits, formation of large icosahedral structures requires subunits to assemble into different local environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the constraint of icosahedral symmetry.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "8d88f7c7-cbb0-4247-92be-9c9b161e12e0",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C22",
+      "claim": "The subunits in icosahedral structures can be grouped into pentamers and hexamers, with 12 pentamers at the icosahedron vertices and the remaining subunits in hexamers.",
+      "claim_type": "EXPLICIT",
+      "source": "The subunits can be grouped into pentamers and hexamers, with 12 pentamers at the icosahedron vertices and the remaining subunits in hexamers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about icosahedral structures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "ad3e0de1-7fc5-4a97-ad0d-0986309b6ac7",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C23",
+      "claim": "Recent AFM experiments demonstrated that hexamers are the basic assembly unit during the assembly of BMC shell facets.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent AFM experiments demonstrated that hexamers are the basic assembly unit during the assembly of BMC shell facets (Sutter et al., 2016), and the carboxysome major shell proteins crystallize as pentamers and hexamers (Tanaka et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "7200878d-23a8-4fe3-bab7-98ed705b5eec",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C24",
+      "claim": "The carboxysome major shell proteins crystallize as pentamers and hexamers.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent AFM experiments demonstrated that hexamers are the basic assembly unit during the assembly of BMC shell facets (Sutter et al., 2016), and the carboxysome major shell proteins crystallize as pentamers and hexamers (Tanaka et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "d8f079a8-fc15-4843-bd50-3790378f40a0",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C25",
+      "claim": "The model considers two basic assembly units, one a pentamer and the other a hexamer, with interactions designed so that the lowest energy structure corresponds to a truncated icosahedron with 12 pentamers and 20 hexamers.",
+      "claim_type": "EXPLICIT",
+      "source": "Motivated by these observations, our model considers two basic assembly units, one a pentamer and the other a hexamer, with interactions designed so that the lowest energy structure corresponds to a truncated icosahedron with 12 pentamers and 20 hexamers (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the computational model design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "63b09d13-b3ef-417e-8474-4fab5921740f",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C26",
+      "claim": "For the simulated density of cargo particles, the phase behavior corresponds to a vapor at \u03b5CC=1.3.",
+      "claim_type": "EXPLICIT",
+      "source": "For the simulated density of cargo particles, the phase behavior (in the absence of shells) corresponds to a vapor at \u03b5CC=1.3, liquid-vapor phase coexistence for \u03b5CC\u2208[1.6,2.0] (the phase coexistence boundary is slightly below \u03b5CC=1.6), and a solid phase at \u03b5CC=3.0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined from the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "a42c5d59-12d4-4a96-bd2b-761f00582eb5",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C27",
+      "claim": "For the simulated density of cargo particles, the phase behavior corresponds to liquid-vapor phase coexistence for \u03b5CC\u2208[1.6,2.0].",
+      "claim_type": "EXPLICIT",
+      "source": "For the simulated density of cargo particles, the phase behavior (in the absence of shells) corresponds to a vapor at \u03b5CC=1.3, liquid-vapor phase coexistence for \u03b5CC\u2208[1.6,2.0] (the phase coexistence boundary is slightly below \u03b5CC=1.6), and a solid phase at \u03b5CC=3.0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined from the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "746072ff-5b37-4e8a-9f5b-45e83ab18ad7",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C28",
+      "claim": "For the simulated density of cargo particles, the phase behavior corresponds to a solid phase at \u03b5CC=3.0.",
+      "claim_type": "EXPLICIT",
+      "source": "For the simulated density of cargo particles, the phase behavior (in the absence of shells) corresponds to a vapor at \u03b5CC=1.3, liquid-vapor phase coexistence for \u03b5CC\u2208[1.6,2.0] (the phase coexistence boundary is slightly below \u03b5CC=1.6), and a solid phase at \u03b5CC=3.0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined from the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "25b3b500-0352-49dc-9211-5a9066aad701",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C29",
+      "claim": "Tuning \u03b5CC through phase coexistence dramatically alters the typical assembly process.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that tuning \u03b5CC through phase coexistence dramatically alters the typical assembly process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "d0ddbcb2-c384-4215-b725-3e7d7bc75e81",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C30",
+      "claim": "Strong cargo interactions (\u03b5CC\u22651.6) drive formation of a globule followed by assembly and budding of a shell, such as observed for \u03b2-carboxysomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong cargo interactions (\u03b5CC\u22651.6) drive formation of a globule followed by assembly and budding of a shell, such as observed for \u03b2-carboxysomes (Figure 2A, Simulation Video 1), while under weak interactions (\u03b5CC<1.6) shell assembly usually proceeds in concert with cargo encapsulation (Figure 2B, Simulation Video 2), as suggested for assembly of \u03b1-carboxysomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through the simulation results shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "8e3afe84-86cf-4f13-8264-378fe777ed9c",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C31",
+      "claim": "Under weak cargo interactions (\u03b5CC<1.6) shell assembly usually proceeds in concert with cargo encapsulation, as suggested for assembly of \u03b1-carboxysomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong cargo interactions (\u03b5CC\u22651.6) drive formation of a globule followed by assembly and budding of a shell, such as observed for \u03b2-carboxysomes (Figure 2A, Simulation Video 1), while under weak interactions (\u03b5CC<1.6) shell assembly usually proceeds in concert with cargo encapsulation (Figure 2B, Simulation Video 2), as suggested for assembly of \u03b1-carboxysomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through the simulation results shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "076bbd2a-9a6d-442a-b1ba-06993057ce5b",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C32",
+      "claim": "Near the phase boundary (\u03b5CC=1.6) a system of pure cargo particles is metastable on the timescales simulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Near the phase boundary (\u03b5CC=1.6) a system of pure cargo particles is metastable on the timescales we simulate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "29bbadb6-bc6f-4ce5-aab5-2ef0bf9bb322",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C33",
+      "claim": "For \u03b5SC>4, adding shell subunits drives nucleation of a cargo globule with shell subunits adsorbed on the surface.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for \u03b5SC>4, adding shell subunits drives nucleation of a cargo globule with shell subunits adsorbed on the surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "7a132e39-178f-4242-bc92-11ea7045b638",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C34",
+      "claim": "For moderate interaction strengths (2.5\u2264\u03b5SS\u22643.5) the globule grows to a large size, typically containing at least twice the cargo molecules that can be packaged within a complete shell.",
+      "claim_type": "EXPLICIT",
+      "source": "For moderate interaction strengths (2.5\u2264\u03b5SS\u22643.5) the globule grows to a large size, typically containing at least twice the cargo molecules that can be packaged within a complete shell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "76c750fb-7aca-4eca-b962-403df43603ac",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C35",
+      "claim": "The complete shell contains 120\u2013130 cargo particles, which is slightly above random close packing (\u2248120 particles) but below fcc density (\u2248150 particles).",
+      "claim_type": "EXPLICIT",
+      "source": "The complete shell contains 120\u2013130 cargo particles, which is slighty above random close packing (\u2248120 particles) but below fcc density (\u2248150 particles, see appendix 1.2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "7fd178b8-154d-45ff-8550-8b453f342d34",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C36",
+      "claim": "Increasing the shell-shell interaction strength drives faster shell assembly and closure, thus limiting the size of the globule before budding.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the shell-shell interaction strength drives faster shell assembly and closure, thus limiting the size of the globule before budding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "0ef250b3-f57f-4899-b232-dd98048659a5",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C37",
+      "claim": "For the largest interaction strength simulated (\u03b5SS=4.5) the globule typically does not exceed the size of a single shell, and multiple globules nucleate within the simulation box.",
+      "claim_type": "EXPLICIT",
+      "source": "For the largest interaction strength we simulated (\u03b5SS=4.5) the globule typically does not exceed the size of a single shell, and multiple globules nucleate within the simulation box (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the simulation results shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "de7e2b84-c589-47ce-9268-0fc533a7ede0",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C38",
+      "claim": "Multiple nucleation events were rare in the carboxysome assembly experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation could place an upper bound on shell-shell interaction strengths, since multiple nucleation events were rare in the carboxysome assembly experiments (Cameron et al., 2013) (however, we discuss potential complicating factors within the cellular environment below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "c6d8a00a-42c8-4af9-98bd-c364fbc147d2",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C39",
+      "claim": "For \u03b5CC\u22651.6 and \u03b5SS\u22643, large values of the assembly order parameter (e.g. >32) are observed, which indicate formation of a large amorphous globule consistent with the procarboxysome precursor to carboxysome shell assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "For \u03b5CC\u22651.6 and \u03b5SS\u22643 we observe large values of the order parameter (e.g. >32, the red and yellow regions in Figure 4), which indicate formation of a large amorphous globule consisent with the procarboxysome precursor to carboxysome shell assembly (Cameron et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the simulation results shown in Figure 4 and compared to experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "17da17d0-1a6b-4444-bf71-26fc8221c25b",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C42",
+      "claim": "For \u03b5CC=1.3 the cargo forms an equilibrium vapor phase in the absence of shell subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "For \u03b5CC=1.3 the cargo forms an equilibrium vapor phase in the absence of shell subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined from the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "acdd4285-2545-4e88-9ddb-69757c3c33b9",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C43",
+      "claim": "Above threshold values of \u03b5SS and \u03b5SC, the diffuse cargo molecules drive nucleation of shell assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "However, above threshold values of \u03b5SS and \u03b5SC, the diffuse cargo molecules drive nucleation of shell assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "e77a48ea-e871-4e64-bbcd-e861d03d1f45",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C44",
+      "claim": "For low \u03b5SC, assembly captures only a few cargo molecules, leading to complete, but nearly empty shells.",
+      "claim_type": "EXPLICIT",
+      "source": "For low \u03b5SC (Figure 2C), assembly captures only a few cargo molecules, leading to complete, but nearly empty shells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the simulation results shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "d6609922-fe93-4122-8bf0-5d4b3755c82d",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C45",
+      "claim": "For larger \u03b5SC, the shell-cargo interactions drive local condensation of cargo molecules, and shell assembly and cargo complexation proceed in concert.",
+      "claim_type": "EXPLICIT",
+      "source": "For larger \u03b5SC (Figure 2B, and Simulation Video 2), the shell-cargo interactions drive local condensation of cargo molecules. Shell assembly and cargo complexation then proceed in concert, resembling the mechanism proposed for assembly of \u03b1-carboxysomes (Iancu et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the simulation results shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "1062bb93-8d28-4b49-bc8f-4eaef9abe6a2",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C46",
+      "claim": "Tuning the shell-cargo interaction dramatically affects cargo loading, with a sharp transition from empty to filled shells around \u03b5SC=2.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, tuning the shell-cargo interaction dramatically affects cargo loading, with a sharp transition from empty to filled shells around \u03b5SC=2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "a0b4db87-03b4-45b6-8bca-fae00d1612a1",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C47",
+      "claim": "The transition from empty to filled shells closely tracks the equilibrium filling fraction.",
+      "claim_type": "EXPLICIT",
+      "source": "This transition closely tracks the equilibrium filling fraction (Figure 5C), measured by simulating a complete shell made permeable to cargo molecules.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing dynamics and equilibrium simulations shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "400b5bd8-d8a0-4345-b177-0e10d16c9fa5",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C48",
+      "claim": "Assembly of full shells (by either pathway) is typically about two orders of magnitude faster than assembly of empty shells.",
+      "claim_type": "EXPLICIT",
+      "source": "Assembly of full shells (by either pathway, Figure 2A or Figure 2B) is typically about two orders of magnitude faster than assembly of empty shells (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by comparing simulation timescales in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "66aebcd1-7118-4284-8025-8576e1ac86b5",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C49",
+      "claim": "Cargo molecules initially promote shell nucleation by stabilizing interactions among small, sub-nucleated clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Cargo molecules initially promote shell nucleation by stabilizing interactions among small, sub-nucleated clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results showing faster assembly with cargo.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "5131d85a-57f9-4d25-afe8-82f2a59c8e1e",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C50",
+      "claim": "The presence of a condensed globule provides a large cross-section for adsorption of additional subunits, significantly enhancing the flux of subunits to the partial capsid, thus increasing its growth rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, the presence of a condensed globule provides a large cross-section for adsorption of additional subunits, significantly enhancing the flux of subunits to the partial capsid, thus increasing its growth rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results showing faster assembly with cargo.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "dcecebc6-05f9-40bf-bcb2-0db9172dec93",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C51",
+      "claim": "The condensed cargo particularly facilitates insertion of the last few subunits, which are significantly hindered by steric interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The condensed cargo particularly facilitates insertion of the last few subunits, which are significantly hindered by steric interactions, as noted previously for simulations of empty virus capsids (Nguyen et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results and supported by citation to prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "fd48a509-c294-4691-8eae-bf6e2a7ce428",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C52",
+      "claim": "The simple free energy model reproduces the threshold parameter values required for shell assembly with no adjustable parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "The simple free energy model (Equations (1\u20132)) reproduces the threshold parameter values required for shell assembly with no adjustable parameters (color map in Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing the theoretical model to simulation results in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "ea049b00-ab10-4ee5-9b09-39e013a0676f",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C53",
+      "claim": "The thermodynamic calculation suggests that the simulations resulting in 'Attached' shells would eventually reach completion on a longer timescale.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the thermodynamic calculation does suggest that the simulations resulting in 'Attached' shells would eventually reach completion on a longer timescale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the thermodynamic model predictions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "703af261-0ad7-4525-b48c-cf96d5a5bd84",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C54",
+      "claim": "Assembly is most robust for the default cargo diameter (for which the model was parameterized), but productive assembly occurs for cargo diameters varied over a factor of four.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5\u2014figure supplement 2, assembly is most robust for our default cargo diameter (for which the model was parameterized), but productive assembly occurs for cargo diameters varied over a factor of four.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through additional simulations shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "ce303db2-f153-4e26-bdd3-2fb767828a23",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C55",
+      "claim": "For \u03b5CC=1.6 the results with pre-equilibrated cargo are very similar to those obtained without pre-equilibrating the cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "For \u03b5CC=1.6 the results are very similar to those obtained without pre-equilibrating the cargo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed by comparing simulation results with different initial conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "6d33a582-8488-4ba8-9381-7add8dae4dca",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C56",
+      "claim": "For \u03b5CC>1.6, successful assembly and detachment is limited to more narrow ranges of shell-shell and shell-cargo interaction strengths than in Figure 3, due to an increased prevalence of 'Attached' and 'Stalled' configurations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for \u03b5CC>1.6, successful assembly and detachment is limited to more narrow ranges of shell-shell and shell-cargo interaction strengths than in Figure 3, due to an increased prevalence of 'Attached' and 'Stalled' configurations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed by comparing simulation results with pre-equilibrated cargo to Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "6376ca2e-ac35-4c48-967e-a553bab8f65e",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C57",
+      "claim": "'Attached' and 'Stalled' configurations are particularly common for \u03b5CC=3, when the cargo forms a hexagonally close packed crystal which strongly resists deformation by shell protein assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter are particularly common for \u03b5CC=3, when the cargo forms a hexagonally close packed crystal which strongly resists deformation by shell protein assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "0539488f-5ba6-4959-9d2c-b1ba7d856858",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C58",
+      "claim": "Moderate effective cargo-cargo interactions are most consistent with the observations of shell assembly and budding in carboxysome experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the results from both assembly protocols (Figure 3 and Figure 3\u2014figure supplement 2) suggest that moderate effective cargo-cargo interactions are most consistent with the observations of shell assembly and budding in Refs. (Cameron et al., 2013; Chen et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred by comparing simulation results to experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "54ef23eb-5af3-4cf9-a6f1-5a97486f4118",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C59",
+      "claim": "Moderate cargo-cargo interactions are strong enough to drive cargo globule formation, but malleable enough to allow shell assembly to deform and eventually sever intra-globule interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Such interactions are strong enough to drive cargo globule formation, but malleable enough to allow shell assembly to deform and eventually sever intra-globule interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "c4d44f71-0c06-456c-a2ac-8e7554e9f85d",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C60",
+      "claim": "Studies of assembled carboxysomes report varying degrees of order for the encapsulated cargo, ranging from none to paracrystalline order.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of assembled carboxysomes report varying degrees of order for the encapsulated cargo, ranging from none to paracrystalline order (Iancu et al., 2007; 2010; Kaneko et al., 2006; Schmid et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "3fdd728f-2d99-48ab-9b6d-c1a62f8580e3",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C61",
+      "claim": "Below \u03b5CC<3 kBT, true fcc order of the encapsulated cargo is not observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Below \u03b5CC<3\u2062kB\u2062T, we do not observe true fcc order of the encapsulated cargo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the equilibrium simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "152e3b82-2807-4d5c-8018-f4cd69efe560",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C62",
+      "claim": "For all parameters leading to significant filling, even those well below the cargo liquid-vapor transition, the cargo becomes organized in concentric layers.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for all parameters leading to significant filling, even those well below the cargo liquid-vapor transition, the cargo becomes organized in concentric layers (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the equilibrium simulations shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "8a20e3d9-baa9-4270-a99d-9bb4643f5daa",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C63",
+      "claim": "Similar cargo organizations are observed within shells which have budded from cargo globules in dynamical simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe similar cargo organizations within shells which have budded from cargo globules in dynamical simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the dynamical simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "dc63f79e-48da-48ae-98c2-3f5000f52497",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C64",
+      "claim": "Ordering of the cargo does not require crystallinity of the initial globule.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that ordering of the cargo does not require crystallinity of the initial globule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results showing ordering even without initial crystallinity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "5d038ecf-8984-4d5f-8925-981046c53c7b",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C65",
+      "claim": "The magnitude of ordering increases with cargo loading, but, for fixed loading, is essentially independent of the cargo-shell interaction strength \u03b5SC.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the magnitude of ordering increases with cargo loading, but, for fixed loading, is essentially independent of the cargo-shell interaction strength \u03b5SC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the equilibrium simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "08162707-b177-4059-8ead-a63b38b6c330",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C66",
+      "claim": "Ordering is observed within filled shells due to confinement, even if \u03b5SC is set to 0.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe ordering within filled shells due to confinement, even if even if \u03b5SC is set to 0 (Figure 6\u2014figure supplement 1), as previously noted by Iancu et al. (Iancu et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the equilibrium simulations shown in Figure 6\u2014figure supplement 1 and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "927ab916-519f-4de9-960e-6f18e21681c3",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C67",
+      "claim": "The simulations show that assembly can proceed by two classes of pathways: (i) a multi-step process in which the cargo forms a dense globule, followed by adsorption, assembly, and budding of shell proteins, or (ii) single-step assembly, with simultaneous aggregation of cargo molecules and shell assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations show that assembly can proceed by two classes of pathways: (i) a multi-step process in which the cargo forms a dense globule, followed by adsorption, assembly, and budding of shell proteins, or (ii) single-step assembly, with simultaneous aggregation of cargo molecules and shell assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "c88727bb-2b4a-4c9f-a4b7-83dff4f42fa0",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C68",
+      "claim": "The minimal interactions included in the model are sufficient to drive both classes of assembly pathways, suggesting that they are a generic feature of assembly around a fluid cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "This result demonstrates that the minimal interactions included in our model are sufficient to drive both classes of assembly pathways, suggesting that they are a generic feature of assembly around a fluid cargo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "a58bfff4-4721-4ecf-8b86-73aaf406519d",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C69",
+      "claim": "The model demonstrates that the same interactions which drive assembly of shells can also drive budding from and closure around an amorphous globule of cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, while we cannot rule out the existence of active mechanisms in biological examples such as carboxysomes, our model demonstrates that the same interactions which drive assembly of shells can also drive budding from and closure around an amorphous globule of cargo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "68ce86f5-1cb1-43a7-b602-a94160bb1ab8",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C70",
+      "claim": "The decisive control parameter determining the assembly pathway is the cohesive energy between cargo molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The decisive control parameter determining the assembly pathway is the cohesive energy between cargo molecules, which could arise through direct cargo-cargo interactions or be mediated by auxiliary proteins (Cameron et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results showing different pathways for different cargo-cargo interaction strengths.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "1887dba8-7fb1-4454-a9b5-d96429ec2806",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C71",
+      "claim": "Relatively weak cargo interactions lead to single-step assembly pathways, while stronger interactions favor formation of the cargo-shell globule.",
+      "claim_type": "EXPLICIT",
+      "source": "Relatively weak cargo interactions lead to single-step assembly pathways, while stronger interactions favor formation of the cargo-shell globule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "2f1c66fa-8bef-43f2-a5e5-d5d744ac3b82",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C72",
+      "claim": "Strong shell-shell interactions cause assembly to proceed rapidly during globule formation, limiting the size of the globule.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong shell-shell interactions cause assembly to proceed rapidly during globule formation, limiting the size of the globule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "5326e576-26e1-49bf-be66-77a54f21882f",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C73",
+      "claim": "If a large globule is already present, strong interactions tend to drive malformed assemblies.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, if a large globule is already present (e.g. due to time-dependent protein concentrations within a cell), strong interactions tend to drive malformed assemblies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "608f2e28-a180-4c42-b1e5-50c8a3b7c91b",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C74",
+      "claim": "An important functional difference between the two classes of assembly pathways is control over the amount of packaged cargo.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that an important functional difference between the two classes of assembly pathways is control over the amount of packaged cargo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "32b291e6-3098-4afd-bacf-56df2eb71109",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C75",
+      "claim": "The multi-step assembly pathways always generate a shell filled with cargo molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "While the multi-step assembly pathways always generate a shell filled with cargo molecules, shells assembling around a diffuse cargo can be tuned from nearly empty to completely full by controlling the strength of cargo-shell interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "9d6ecd11-4170-4d02-8dde-af97789f55dc",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C76",
+      "claim": "Shells assembling around a diffuse cargo can be tuned from nearly empty to completely full by controlling the strength of cargo-shell interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "While the multi-step assembly pathways always generate a shell filled with cargo molecules, shells assembling around a diffuse cargo can be tuned from nearly empty to completely full by controlling the strength of cargo-shell interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "6ce06321-0a39-4435-89b4-150cc3c11f8c",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C77",
+      "claim": "Recent works demonstrated that protein cargos can be targeted to BMCs via encapsulation peptides that mediate cargo-shell interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent works demonstrated that protein cargos can be targeted to BMCs via encapsulation peptides that mediate cargo-shell interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge from recent work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "99ca47f9-e00b-48c0-ac85-15e5c00d156e",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C78",
+      "claim": "Packaged amounts of engineered cargo were much lower than for native core enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, packaged amounts were much lower than for native core enzymes (Parsons et al., 2010; Choudhary et al., 2012; Lassila et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "17976e2e-4dd8-43e1-a2c7-a04b0b3a3db8",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C79",
+      "claim": "Both cargo-shell and cargo-cargo interactions (direct or mediated) must be controlled to assemble full shells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulations show that both cargo-shell and cargo-cargo interactions (direct or mediated) must be controlled to assemble full shells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "4aa410ad-f56d-4153-b2ea-a700cef9b7de",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C80",
+      "claim": "A general equilibrium theory describes the ranges of parameter values for which assembly occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "We also find that a general equilibrium theory describes the ranges of parameter values for which assembly occurs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by comparing the theoretical model to simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "a5f8ce91-8203-4a7c-9c8c-d38aeb270e06",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C81",
+      "claim": "At finite timescales, there is a rich variety of assembly morphologies.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the dynamical simulations demonstrate that, at finite timescales, there is a rich variety of assembly morphologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "03e1ed56-f717-412c-a3c7-d3e434c21dc0",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C83",
+      "claim": "This constraint is consistent with previous studies on viruses and other assembly systems, which found that formation of ordered states requires multiple, cooperative weak interactions between subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "This constraint is consistent with previous studies on viruses and other assembly systems, which found that formation of ordered states requires multiple, cooperative weak interactions between subunits (Hagan, 2014; Whitelam and Jack, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "6feae30b-5431-46fa-a45a-2d3c1459717b",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C84",
+      "claim": "Assembly is least robust to parameter variations when the cargo crystallizes before shell assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that assembly is least robust to parameter variations when the cargo crystallizes before shell assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "92f73e6d-cb40-4dbb-81f4-63a28488eaf7",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C85",
+      "claim": "The assembling shell is unable to deform or penetrate the cargo complex when the cargo crystallizes, leading to defect-riddled, non-budded complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The assembling shell is unable to deform or penetrate the cargo complex, leading to defect-riddled, non-budded complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "45a3f922-7400-4e59-b300-f392544c1af1",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C86",
+      "claim": "Within the limits of the simplified model, procarboxysome complexes are at least partially fluid prior to successful shell assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the limits of our simplified model, this observation suggests that procarboxysome complexes are at least partially fluid prior to successful shell assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results showing that crystalline cargo inhibits assembly.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "ee8e7092-2793-4bb9-947c-d6126aeaf64d",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C87",
+      "claim": "Observations of ordered cargo within assembled shells may be explained by packing constraints.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we find that observations of ordered cargo within assembled shells may be explained by packing constraints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the simulation results showing ordering due to confinement.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "9926aaf2-758b-4de2-b70c-91bb05863bef",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C88",
+      "claim": "BMCs contain many more hexamers (formed from multiple protein sequences) than the model and thus must include a greater range of hexamer-hexamer interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In reality BMCs contain many more hexamers (formed from multiple protein sequences) and thus must include a greater range of hexamer-hexamer interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the model based on knowledge of BMC structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "042503b3-81b7-4983-8246-d353c8c6967a",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C90",
+      "claim": "In the case of assembly around vapor-phase cargo, the size of the assembling shell will be primarily dictated by the preferred shell protein curvature and thus relatively uniform.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that in the case of assembly around vapor-phase cargo, the size of the assembling shell will be primarily dictated by the preferred shell protein curvature and thus relatively uniform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the simulation results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "6e50e8e3-17e2-4f4b-bb0c-dad557e55208",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C91",
+      "claim": "During assembly around a condensed globule, the shell protein interactions could be strained to accommodate a globule which is larger or smaller than the preferred curvature, causing the shell size to depend on a complex balance of intermolecular interaction strengths and variables such as the local RuBisCO concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "However, during assembly around a condensed globule, the shell protein interactions could be strained to accommodate a globule which is larger or smaller than the preferred curvature, causing the shell size to depend on a complex balance of intermolecular interaction strengths and variables such as the local RuBisCO concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the simulation results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "6bd9ad8a-bb88-46bf-a317-3947f0d3168f",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C92",
+      "claim": "The model is minimal, intended to elucidate general principles of assembly around a fluid cargo, and thus may apply to diverse systems including prokaryotic microcompartments, viruses, and engineered delivery vehicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model is minimal, intended to elucidate general principles of assembly around a fluid cargo, and thus may apply to diverse systems including prokaryotic microcompartments, viruses, and engineered delivery vehicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the scope and applicability of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "6403e116-7e55-42bb-9d02-17b12c6b6198",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C93",
+      "claim": "The predicted trends for how assembly mechanisms and morphologies vary with control parameters can be experimentally tested by microscopy experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted trends for how assembly mechanisms and morphologies vary with control parameters can be experimentally tested by microscopy experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future experimental work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "c2b4e6a9-6e13-474f-bf9c-e1cfd03a4625",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C94",
+      "claim": "Testing will be most straightforward in vitro, where subunit-subunit interactions can be tuned by varying solution conditions and the stoichiometries of shell and cargo species can be readily varied.",
+      "claim_type": "EXPLICIT",
+      "source": "Such testing will be most straightforward in vitro (e.g. Luque et al., 2014; Douglas and Young, 1998; Rurup et al., 2014; Patterson et al., 2014; Patterson et al., 2012; Zhu et al., 2014; Rhee et al., 2011; Rurup et al., 2014; W\u00f6rsd\u00f6rfer et al., 2012), where subunit-subunit interactions can be tuned by varying solution conditions and the stoichiometries of shell and cargo species can be readily varied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future experimental work with citations to relevant in vitro systems.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "fc834374-98d0-48c9-8214-22e86426ab97",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C95",
+      "claim": "The findings can be tested in vivo by mutations which alter known protein binding interfaces, or by altering expression levels of RuBisCO or carboxysome proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "While there is currently no BMC assembly system starting from purified components, our findings can be tested in vivo by mutations which alter known protein binding interfaces, or by altering expression levels of RuBisCO or carboxysome proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future experimental work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "e5e8765a-dc01-4514-b4cf-2dafce045a18",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C96",
+      "claim": "The model can serve as a qualitative guide for understanding how multicomponent complexes assemble in natural systems, or to reengineer them for new applications.",
+      "claim_type": "EXPLICIT",
+      "source": "We anticipate that our model can serve as a qualitative guide for understanding how such multicomponent complexes assemble in natural systems, or to reengineer them for new applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the anticipated utility of the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "8e5e2821-892c-4b8d-a480-6d1a5f109a29",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C97",
+      "claim": "The properties of encapsulated cargo, such as its topology, geometry and interaction strengths, strongly influence assembly pathways and morphologies.",
+      "claim_type": "EXPLICIT",
+      "source": "More broadly, our results demonstrate that the properties of encapsulated cargo, such as its topology, geometry and interaction strengths, strongly influence assembly pathways and morphologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion drawn from the simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "2e2fe6d8-2bb9-476c-9a70-ab77fe45f2c7",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C98",
+      "claim": "Each shell subunit contains 'Attractors' on its perimeter that mediate subunit-subunit attractions.",
+      "claim_type": "EXPLICIT",
+      "source": "Each subunit contains 'Attractors' on its perimeter that mediate subunit-subunit attractions (as in Ruiz-Herrero and Hagan, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational model design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "744fa480-1793-4fe6-b9ad-0190401f45bb",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C99",
+      "claim": "Attractor interactions are specific \u2013 complementary pairs of Attractors have short-range interactions (modeled by a Morse potential), whereas non-complementary pairs have no interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Attractor interactions are specific \u2013 complementary pairs of Attractors (see Figure 1A,B and appendix 1) have short-range interactions (modeled by a Morse potential), whereas non-complementary pairs have no interactions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the computational model design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "379affd5-a901-44df-9ade-ff53cd14fbe1",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C100",
+      "claim": "A repulsive interaction between pairs of 'Top' (type 'T') pseudoatoms favors the correct subunit-subunit angle.",
+      "claim_type": "EXPLICIT",
+      "source": "A repulsive interaction between pairs of 'Top' (type 'T') pseudoatoms favors the correct subunit-subunit angle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational model design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "f4e598e6-f503-4630-82b1-ea372821cbdf",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C101",
+      "claim": "The 'Bottom' (type 'B') pseudoatoms mediate short-ranged subunit-cargo attractions (e.g. due to interactions with shell 'encapsulation peptides'), represented by a Morse potential.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'Bottom' (type 'B') pseudoatoms mediate short-ranged subunit-cargo attractions (e.g. due to interactions with shell 'encapsulation peptides' (Kinney et al., 2012; Cameron et al., 2013; Fan et al., 2010)), represented by a Morse potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational model design with citations to relevant biological mechanisms.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "88bdeddc-9dbf-4130-9837-d08ec8d59cc4",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C102",
+      "claim": "A layer of 'Excluders' in the plane of the 'Top' pseudoatoms represents subunit-cargo excluded volume interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We also add a layer of 'Excluders' in the plane of the 'Top' pseudoatoms, which represent subunit-cargo excluded volume interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational model design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "f2e39dd2-6387-4904-ab8b-487b2f98b919",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C104",
+      "claim": "The attractions in the cargo model implicitly model hydrophobic and screened electrostatics interactions between cargo molecules, as well as effective cargo-cargo interactions mediated by auxiliary proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The attractions implicitly model hydrophobic and screened electrostatics interactions between cargo molecules, as well as effective cargo-cargo interactions mediated by auxiliary proteins (e.g. the carboxysome protein CcmM (Cameron et al., 2013)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes what the model parameters represent with citation to relevant biological mechanisms.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "c65d8f9d-e8f1-4225-a87c-77a04c645266",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "claim_id": "C105",
+      "claim": "Assembly dynamics were simulated using the Langevin dynamics algorithm in HOOMD.",
+      "claim_type": "EXPLICIT",
+      "source": "We simulated assembly dynamics using the Langevin dynamics algorithm in HOOMD (a software package that uses GPUs to perform highly efficient dynamics simulations [Anderson et al., 2008]) and periodic boundary conditions to represent a bulk system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the simulation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "48c4e248-286b-43e2-b5c5-a26e6b9d611c",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background knowledge on bacterial microcompartments (BMCs), carboxysomes, and icosahedral structures. These claims establish the biological context and structural constraints (icosahedral symmetry, pentamers/hexamers) that motivate the computational model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C4-C7, C20-C24 are well-supported by citations to prior literature and represent established knowledge in the field. These background claims provide appropriate context for the computational study and are not contested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "cdf45ee3-ac97-4894-ab1a-77791c232d5a",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Computational simulations identify two distinct classes of assembly pathways for encapsulation of many-molecule cargoes: (1) multi-step assembly where cargo forms a globule followed by shell assembly and budding (resembling \u03b2-carboxysomes), and (2) single-step assembly with simultaneous shell assembly and cargo condensation (resembling \u03b1-carboxysomes). The decisive control parameter is cargo-cargo interaction strength (\u03b5CC), with weak interactions (\u03b5CC<1.6) favoring single-step assembly and strong interactions (\u03b5CC\u22651.6) favoring globule-mediated assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C13, C29-C31, C67-C68, C70-C71 are well-supported by extensive simulation data shown in Figures 2-4. The simulations systematically vary interaction parameters and demonstrate clear transitions between assembly pathways. The identification of cargo-cargo interaction strength as the decisive parameter is convincingly demonstrated through phase diagrams and trajectory analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "b3d74749-e2db-4a96-82a7-49d3fcf652ab",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A key functional difference between the two assembly pathways is tunability of cargo loading. Single-step assembly around diffuse cargo can produce shells ranging from nearly empty to completely full by varying shell-cargo interaction strength, whereas multi-step assembly around condensed globules invariably produces full shells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17, C74-C76 are supported by simulation data in Figures 2 and 5C showing the relationship between shell-cargo interaction strength and cargo loading. The sharp transition from empty to filled shells around \u03b5SC=2 for diffuse cargo assembly is clearly demonstrated, while globule-mediated assembly consistently produces full shells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "568c2208-281a-4d2f-98bf-72b8948f8c87",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "For cargo-cargo interactions at or above the liquid-vapor phase boundary (\u03b5CC\u22651.6), shell subunits drive nucleation of cargo globules that grow to contain at least twice the cargo molecules that fit in a complete shell. The globule size and assembly dynamics depend on shell-shell interaction strength (\u03b5SS), with stronger interactions driving faster assembly and limiting globule size. Complete shells contain 120-130 cargo particles, between random close packing and fcc density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28, C32-C37, C39 are supported by simulation data characterizing the phase behavior of cargo and the assembly dynamics around globules. The assembly order parameter analysis in Figure 4 quantifies the globule-mediated pathway, and the cargo packing density is explicitly calculated and compared to theoretical limits.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "4ed43297-942f-4393-a5fc-ff361e957131",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "For cargo below the vapor-liquid transition (\u03b5CC=1.3), diffuse cargo molecules can drive shell nucleation above threshold values of \u03b5SS and \u03b5SC. Low shell-cargo interactions produce nearly empty shells, while larger interactions drive local cargo condensation with assembly and cargo complexation proceeding in concert. The transition from empty to filled shells around \u03b5SC=2 closely tracks the equilibrium filling fraction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 are supported by simulation data in Figures 2B-C and 5. The comparison between dynamical assembly and equilibrium simulations (Figure 5C) demonstrates that the cargo loading transition tracks thermodynamic predictions, strengthening the interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "c5bcb351-e514-408a-88dd-5f289630adbb",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Assembly of full shells (by either pathway) is approximately two orders of magnitude faster than assembly of empty shells. Cargo molecules promote shell nucleation by stabilizing small clusters, provide a large cross-section for subunit adsorption enhancing growth rate, and facilitate insertion of the last few subunits which are sterically hindered.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 are supported by comparing assembly timescales in Figure 2 and by mechanistic interpretation of the simulation trajectories. The two orders of magnitude difference in assembly time is clearly observable. However, claims C49-C51 involve mechanistic inferences that, while reasonable, are not directly measured but inferred from the simulation behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "0360603f-60ec-407f-8e13-7e09f84915f3",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A simple equilibrium free energy model (Equations 1-2) reproduces threshold parameter values for shell assembly with no adjustable parameters. The thermodynamic model predicts that 'Attached' shell configurations observed in finite-time simulations would eventually reach completion on longer timescales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52, C53, C80 are supported by comparison of the theoretical model to simulation results in Figure 3 and Figure 5\u2014figure supplement 1. The model successfully predicts assembly boundaries without fitting parameters, demonstrating its validity. Claim C53 is a reasonable inference from thermodynamic principles, though it cannot be directly verified within simulation timescales.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "7023fdb7-3c80-4597-bc15-f5c944e3cdb6",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Encapsulated cargo becomes ordered due to confinement, but complete crystalline order in the globule before encapsulation inhibits budding. Assembly is least robust when cargo crystallizes before shell assembly (\u03b5CC=3.0), as the assembling shell cannot deform or penetrate the crystalline cargo complex, leading to defect-riddled, non-budded complexes. This suggests procarboxysome complexes are at least partially fluid prior to successful shell assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19, C57, C84-C86 are supported by simulation data comparing assembly outcomes for different cargo-cargo interaction strengths, particularly the increased prevalence of 'Attached' and 'Stalled' configurations at \u03b5CC=3.0 (Figure 3\u2014figure supplement 2). Claim C86 is appropriately qualified as being within the limits of the simplified model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "1fac010c-4c67-4134-ba41-1b60c590be8f",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Cargo organization within assembled shells ranges from concentric layering to paracrystalline order depending on parameters. Below \u03b5CC<3 kBT, true fcc order is not observed, but cargo organizes in concentric layers for all parameters leading to significant filling, even below the liquid-vapor transition. Ordering magnitude increases with cargo loading but is independent of shell-cargo interaction strength for fixed loading. Ordering occurs due to confinement even with \u03b5SC=0, suggesting packing constraints explain observed cargo order in assembled carboxysomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C66, C87 are supported by equilibrium simulation data in Figure 6 and Figure 6\u2014figure supplement 1. The spherically averaged density distributions clearly show concentric layering. The independence from \u03b5SC and occurrence even with \u03b5SC=0 demonstrates that confinement, not specific interactions, drives ordering. Claim C60 appropriately cites experimental observations for context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "07972604-e146-4ada-aa34-652b04f5cade",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Assembly is most robust for the default cargo diameter but occurs for cargo diameters varied over a factor of four. Pre-equilibrating cargo globules produces similar results for \u03b5CC=1.6 but narrows the parameter range for successful assembly at higher \u03b5CC due to increased 'Attached' and 'Stalled' configurations. Moderate cargo-cargo interactions are most consistent with experimental observations of carboxysome assembly, being strong enough to drive globule formation but malleable enough to allow shell deformation and budding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56, C58-C59 are supported by additional simulations varying cargo diameter (Figure 5\u2014figure supplement 2) and initial conditions (Figure 3\u2014figure supplement 2). The comparison to experimental observations (C58) is appropriately qualified as a suggestion based on simulation results. The interpretation of moderate interactions (C59) is a reasonable inference from the simulation data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "4b724271-20a0-458b-9cee-95403593a128",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Strong shell-shell interactions cause rapid assembly during globule formation, limiting globule size. If a large globule is already present, strong interactions drive malformed assemblies. At finite timescales, there is a rich variety of assembly morphologies beyond the equilibrium predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73, C81 are supported by simulation data showing the relationship between \u03b5SS and assembly outcomes (Figures 3-4). The observation of multiple morphologies and kinetic traps demonstrates the importance of dynamics beyond equilibrium thermodynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "cf318926-928b-431d-b46a-0c1ad57b4820",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Multiple nucleation events were rare in carboxysome assembly experiments, potentially placing an upper bound on shell-shell interaction strengths. Recent work showed protein cargos can be targeted to BMCs via encapsulation peptides, but packaged amounts were much lower than for native enzymes. Simulations show both cargo-shell and cargo-cargo interactions must be controlled to assemble full shells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C77-C78 are supported by citations to experimental literature. Claim C79 is a reasonable inference from the simulation results showing the importance of both interaction types. The connection between simulation predictions and experimental observations is appropriately made.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "0e3c7f83-6e9b-4632-af38-34238789c4e3",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Genomic analysis suggests many BMCs with diverse functions assemble via similar pathways, but the factors determining which assembly pathway occurs are unknown. Previous studies on viral capsid assembly demonstrated that cargo structure strongly influences assembly pathways and products.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C11-C12 are supported by citations to prior literature and establish the knowledge gap that motivates the current study. These claims appropriately frame the research question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "b90ab331-bd95-426a-906a-0b117bbe3202",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The computational model represents shell subunits as pentamers and hexamers with specific attractor interactions (Morse potentials), designed so the lowest energy structure is a truncated icosahedron with 12 pentamers and 20 hexamers. Subunits contain 'Top' pseudoatoms for angular control, 'Bottom' pseudoatoms for cargo attraction, and 'Excluders' for excluded volume. Cargo is modeled as spherical particles with Lennard-Jones attractions representing hydrophobic, electrostatic, and protein-mediated interactions. Dynamics were simulated using Langevin dynamics in HOOMD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C98-C102, C104-C105 describe the computational model design and are supported by the Methods section and Figure 1. The model design is clearly specified with appropriate citations to prior work and biological mechanisms. The choice of parameters and potentials is justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "533ae4c6-a39c-4691-b0d1-e2ab68fd4978",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The constraint that ordered assembly requires interaction strengths of 5-10 kBT is consistent with previous studies on viruses and other assembly systems showing that formation of ordered states requires multiple, cooperative weak interactions. Real BMCs contain many more hexamers from multiple protein sequences than the model, requiring a greater range of hexamer-hexamer interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 is supported by citations to prior literature and represents appropriate contextualization of the results. Claim C88 is an acknowledged limitation of the model based on knowledge of BMC structure. Both claims are appropriately qualified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "a49df76c-1acb-431d-90c0-13559319361b",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The model demonstrates that the same interactions driving shell assembly can also drive budding and closure around an amorphous cargo globule. The minimal model may apply to diverse systems including BMCs, viruses, and engineered delivery vehicles. Predicted trends can be experimentally tested by microscopy, most straightforwardly in vitro where interactions can be tuned, or in vivo by mutations or altered expression levels. The model can serve as a qualitative guide for understanding or reengineering multicomponent complexes. Cargo properties (topology, geometry, interaction strengths) strongly influence assembly pathways and morphologies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69, C92, C97 are supported by the simulation results demonstrating assembly mechanisms. Claims C93-C96 are appropriately framed as suggestions for future work and anticipated applications. The claims are reasonably qualified and do not overstate the model's capabilities or generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    },
+    {
+      "id": "5d67506b-08c7-4fd7-b141-a1e2ec8b9390",
+      "content_id": "49219392-d96d-493d-91fb-5d5fbfdac96d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors speculate that for assembly around vapor-phase cargo, shell size will be primarily dictated by preferred shell protein curvature and thus relatively uniform. During assembly around a condensed globule, shell protein interactions could be strained to accommodate globules of different sizes, causing shell size to depend on a complex balance of interaction strengths and local cargo concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90-C91 are explicitly labeled as speculation by the authors. While these are reasonable hypotheses based on the simulation results, they are not directly tested or demonstrated. The speculation is appropriately qualified but represents predictions requiring future validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:03.826175Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8d59121c-dbe9-4827-851e-908ea8733a0b",
+      "result_id": "48c4e248-286b-43e2-b5c5-a26e6b9d611c"
+    },
+    {
+      "claim_id": "a86052cd-d0f1-44b7-a19a-db1c485ea9dc",
+      "result_id": "48c4e248-286b-43e2-b5c5-a26e6b9d611c"
+    },
+    {
+      "claim_id": "72415454-5ed8-473a-b80b-ffbea62ff15f",
+      "result_id": "48c4e248-286b-43e2-b5c5-a26e6b9d611c"
+    },
+    {
+      "claim_id": "0ed46230-4a03-423f-b75d-0b57b3969e8c",
+      "result_id": "48c4e248-286b-43e2-b5c5-a26e6b9d611c"
+    },
+    {
+      "claim_id": "b80f80ae-e7bb-4403-923a-84b09d60bb50",
+      "result_id": "48c4e248-286b-43e2-b5c5-a26e6b9d611c"
+    },
+    {
+      "claim_id": "59e4a75c-0c67-4827-b9bb-40d56e70fa88",
+      "result_id": "48c4e248-286b-43e2-b5c5-a26e6b9d611c"
+    },
+    {
+      "claim_id": "0a41bfa2-2965-46b1-88bc-d02e952bc859",
+      "result_id": "48c4e248-286b-43e2-b5c5-a26e6b9d611c"
+    },
+    {
+      "claim_id": "8d88f7c7-cbb0-4247-92be-9c9b161e12e0",
+      "result_id": "48c4e248-286b-43e2-b5c5-a26e6b9d611c"
+    },
+    {
+      "claim_id": "ad3e0de1-7fc5-4a97-ad0d-0986309b6ac7",
+      "result_id": "48c4e248-286b-43e2-b5c5-a26e6b9d611c"
+    },
+    {
+      "claim_id": "7200878d-23a8-4fe3-bab7-98ed705b5eec",
+      "result_id": "48c4e248-286b-43e2-b5c5-a26e6b9d611c"
+    },
+    {
+      "claim_id": "e5315716-8b32-4f21-afe2-1e9f04119cbb",
+      "result_id": "cdf45ee3-ac97-4894-ab1a-77791c232d5a"
+    },
+    {
+      "claim_id": "de80d748-32cf-4c64-9bc7-f3557abf62be",
+      "result_id": "cdf45ee3-ac97-4894-ab1a-77791c232d5a"
+    },
+    {
+      "claim_id": "3fac77f4-48db-4910-b674-47d133ef61b9",
+      "result_id": "cdf45ee3-ac97-4894-ab1a-77791c232d5a"
+    },
+    {
+      "claim_id": "25b3b500-0352-49dc-9211-5a9066aad701",
+      "result_id": "cdf45ee3-ac97-4894-ab1a-77791c232d5a"
+    },
+    {
+      "claim_id": "d0ddbcb2-c384-4215-b725-3e7d7bc75e81",
+      "result_id": "cdf45ee3-ac97-4894-ab1a-77791c232d5a"
+    },
+    {
+      "claim_id": "8e3afe84-86cf-4f13-8264-378fe777ed9c",
+      "result_id": "cdf45ee3-ac97-4894-ab1a-77791c232d5a"
+    },
+    {
+      "claim_id": "927ab916-519f-4de9-960e-6f18e21681c3",
+      "result_id": "cdf45ee3-ac97-4894-ab1a-77791c232d5a"
+    },
+    {
+      "claim_id": "c88727bb-2b4a-4c9f-a4b7-83dff4f42fa0",
+      "result_id": "cdf45ee3-ac97-4894-ab1a-77791c232d5a"
+    },
+    {
+      "claim_id": "68ce86f5-1cb1-43a7-b602-a94160bb1ab8",
+      "result_id": "cdf45ee3-ac97-4894-ab1a-77791c232d5a"
+    },
+    {
+      "claim_id": "1887dba8-7fb1-4454-a9b5-d96429ec2806",
+      "result_id": "cdf45ee3-ac97-4894-ab1a-77791c232d5a"
+    },
+    {
+      "claim_id": "81e48e63-a1e5-4c88-aec1-7f159e4138a1",
+      "result_id": "b3d74749-e2db-4a96-82a7-49d3fcf652ab"
+    },
+    {
+      "claim_id": "64af6e09-f132-4a34-8706-1f030fc45153",
+      "result_id": "b3d74749-e2db-4a96-82a7-49d3fcf652ab"
+    },
+    {
+      "claim_id": "7d06b436-5e01-410c-8a27-8401f78b16d3",
+      "result_id": "b3d74749-e2db-4a96-82a7-49d3fcf652ab"
+    },
+    {
+      "claim_id": "608f2e28-a180-4c42-b1e5-50c8a3b7c91b",
+      "result_id": "b3d74749-e2db-4a96-82a7-49d3fcf652ab"
+    },
+    {
+      "claim_id": "32b291e6-3098-4afd-bacf-56df2eb71109",
+      "result_id": "b3d74749-e2db-4a96-82a7-49d3fcf652ab"
+    },
+    {
+      "claim_id": "9d6ecd11-4170-4d02-8dde-af97789f55dc",
+      "result_id": "b3d74749-e2db-4a96-82a7-49d3fcf652ab"
+    },
+    {
+      "claim_id": "63b09d13-b3ef-417e-8474-4fab5921740f",
+      "result_id": "568c2208-281a-4d2f-98bf-72b8948f8c87"
+    },
+    {
+      "claim_id": "a42c5d59-12d4-4a96-bd2b-761f00582eb5",
+      "result_id": "568c2208-281a-4d2f-98bf-72b8948f8c87"
+    },
+    {
+      "claim_id": "746072ff-5b37-4e8a-9f5b-45e83ab18ad7",
+      "result_id": "568c2208-281a-4d2f-98bf-72b8948f8c87"
+    },
+    {
+      "claim_id": "076bbd2a-9a6d-442a-b1ba-06993057ce5b",
+      "result_id": "568c2208-281a-4d2f-98bf-72b8948f8c87"
+    },
+    {
+      "claim_id": "29bbadb6-bc6f-4ce5-aab5-2ef0bf9bb322",
+      "result_id": "568c2208-281a-4d2f-98bf-72b8948f8c87"
+    },
+    {
+      "claim_id": "7a132e39-178f-4242-bc92-11ea7045b638",
+      "result_id": "568c2208-281a-4d2f-98bf-72b8948f8c87"
+    },
+    {
+      "claim_id": "76c750fb-7aca-4eca-b962-403df43603ac",
+      "result_id": "568c2208-281a-4d2f-98bf-72b8948f8c87"
+    },
+    {
+      "claim_id": "7fd178b8-154d-45ff-8550-8b453f342d34",
+      "result_id": "568c2208-281a-4d2f-98bf-72b8948f8c87"
+    },
+    {
+      "claim_id": "0ef250b3-f57f-4899-b232-dd98048659a5",
+      "result_id": "568c2208-281a-4d2f-98bf-72b8948f8c87"
+    },
+    {
+      "claim_id": "c6d8a00a-42c8-4af9-98bd-c364fbc147d2",
+      "result_id": "568c2208-281a-4d2f-98bf-72b8948f8c87"
+    },
+    {
+      "claim_id": "17da17d0-1a6b-4444-bf71-26fc8221c25b",
+      "result_id": "4ed43297-942f-4393-a5fc-ff361e957131"
+    },
+    {
+      "claim_id": "acdd4285-2545-4e88-9ddb-69757c3c33b9",
+      "result_id": "4ed43297-942f-4393-a5fc-ff361e957131"
+    },
+    {
+      "claim_id": "e77a48ea-e871-4e64-bbcd-e861d03d1f45",
+      "result_id": "4ed43297-942f-4393-a5fc-ff361e957131"
+    },
+    {
+      "claim_id": "d6609922-fe93-4122-8bf0-5d4b3755c82d",
+      "result_id": "4ed43297-942f-4393-a5fc-ff361e957131"
+    },
+    {
+      "claim_id": "1062bb93-8d28-4b49-bc8f-4eaef9abe6a2",
+      "result_id": "4ed43297-942f-4393-a5fc-ff361e957131"
+    },
+    {
+      "claim_id": "a0b4db87-03b4-45b6-8bca-fae00d1612a1",
+      "result_id": "4ed43297-942f-4393-a5fc-ff361e957131"
+    },
+    {
+      "claim_id": "400b5bd8-d8a0-4345-b177-0e10d16c9fa5",
+      "result_id": "c5bcb351-e514-408a-88dd-5f289630adbb"
+    },
+    {
+      "claim_id": "66aebcd1-7118-4284-8025-8576e1ac86b5",
+      "result_id": "c5bcb351-e514-408a-88dd-5f289630adbb"
+    },
+    {
+      "claim_id": "5131d85a-57f9-4d25-afe8-82f2a59c8e1e",
+      "result_id": "c5bcb351-e514-408a-88dd-5f289630adbb"
+    },
+    {
+      "claim_id": "dcecebc6-05f9-40bf-bcb2-0db9172dec93",
+      "result_id": "c5bcb351-e514-408a-88dd-5f289630adbb"
+    },
+    {
+      "claim_id": "fd48a509-c294-4691-8eae-bf6e2a7ce428",
+      "result_id": "0360603f-60ec-407f-8e13-7e09f84915f3"
+    },
+    {
+      "claim_id": "ea049b00-ab10-4ee5-9b09-39e013a0676f",
+      "result_id": "0360603f-60ec-407f-8e13-7e09f84915f3"
+    },
+    {
+      "claim_id": "4aa410ad-f56d-4153-b2ea-a700cef9b7de",
+      "result_id": "0360603f-60ec-407f-8e13-7e09f84915f3"
+    },
+    {
+      "claim_id": "1985dd81-405e-44c0-8843-689a6f73d418",
+      "result_id": "7023fdb7-3c80-4597-bc15-f5c944e3cdb6"
+    },
+    {
+      "claim_id": "43763820-af15-4b41-92f1-c4aaf595d312",
+      "result_id": "7023fdb7-3c80-4597-bc15-f5c944e3cdb6"
+    },
+    {
+      "claim_id": "6376ca2e-ac35-4c48-967e-a553bab8f65e",
+      "result_id": "7023fdb7-3c80-4597-bc15-f5c944e3cdb6"
+    },
+    {
+      "claim_id": "6feae30b-5431-46fa-a45a-2d3c1459717b",
+      "result_id": "7023fdb7-3c80-4597-bc15-f5c944e3cdb6"
+    },
+    {
+      "claim_id": "92f73e6d-cb40-4dbb-81f4-63a28488eaf7",
+      "result_id": "7023fdb7-3c80-4597-bc15-f5c944e3cdb6"
+    },
+    {
+      "claim_id": "45a3f922-7400-4e59-b300-f392544c1af1",
+      "result_id": "7023fdb7-3c80-4597-bc15-f5c944e3cdb6"
+    },
+    {
+      "claim_id": "c4d44f71-0c06-456c-a2ac-8e7554e9f85d",
+      "result_id": "1fac010c-4c67-4134-ba41-1b60c590be8f"
+    },
+    {
+      "claim_id": "3fdd728f-2d99-48ab-9b6d-c1a62f8580e3",
+      "result_id": "1fac010c-4c67-4134-ba41-1b60c590be8f"
+    },
+    {
+      "claim_id": "152e3b82-2807-4d5c-8018-f4cd69efe560",
+      "result_id": "1fac010c-4c67-4134-ba41-1b60c590be8f"
+    },
+    {
+      "claim_id": "8a20e3d9-baa9-4270-a99d-9bb4643f5daa",
+      "result_id": "1fac010c-4c67-4134-ba41-1b60c590be8f"
+    },
+    {
+      "claim_id": "dc63f79e-48da-48ae-98c2-3f5000f52497",
+      "result_id": "1fac010c-4c67-4134-ba41-1b60c590be8f"
+    },
+    {
+      "claim_id": "5d038ecf-8984-4d5f-8925-981046c53c7b",
+      "result_id": "1fac010c-4c67-4134-ba41-1b60c590be8f"
+    },
+    {
+      "claim_id": "08162707-b177-4059-8ead-a63b38b6c330",
+      "result_id": "1fac010c-4c67-4134-ba41-1b60c590be8f"
+    },
+    {
+      "claim_id": "ee8e7092-2793-4bb9-947c-d6126aeaf64d",
+      "result_id": "1fac010c-4c67-4134-ba41-1b60c590be8f"
+    },
+    {
+      "claim_id": "703af261-0ad7-4525-b48c-cf96d5a5bd84",
+      "result_id": "07972604-e146-4ada-aa34-652b04f5cade"
+    },
+    {
+      "claim_id": "ce303db2-f153-4e26-bdd3-2fb767828a23",
+      "result_id": "07972604-e146-4ada-aa34-652b04f5cade"
+    },
+    {
+      "claim_id": "6d33a582-8488-4ba8-9381-7add8dae4dca",
+      "result_id": "07972604-e146-4ada-aa34-652b04f5cade"
+    },
+    {
+      "claim_id": "0539488f-5ba6-4959-9d2c-b1ba7d856858",
+      "result_id": "07972604-e146-4ada-aa34-652b04f5cade"
+    },
+    {
+      "claim_id": "54ef23eb-5af3-4cf9-a6f1-5a97486f4118",
+      "result_id": "07972604-e146-4ada-aa34-652b04f5cade"
+    },
+    {
+      "claim_id": "2f1c66fa-8bef-43f2-a5e5-d5d744ac3b82",
+      "result_id": "4b724271-20a0-458b-9cee-95403593a128"
+    },
+    {
+      "claim_id": "5326e576-26e1-49bf-be66-77a54f21882f",
+      "result_id": "4b724271-20a0-458b-9cee-95403593a128"
+    },
+    {
+      "claim_id": "a5f8ce91-8203-4a7c-9c8c-d38aeb270e06",
+      "result_id": "4b724271-20a0-458b-9cee-95403593a128"
+    },
+    {
+      "claim_id": "de7e2b84-c589-47ce-9268-0fc533a7ede0",
+      "result_id": "cf318926-928b-431d-b46a-0c1ad57b4820"
+    },
+    {
+      "claim_id": "6ce06321-0a39-4435-89b4-150cc3c11f8c",
+      "result_id": "cf318926-928b-431d-b46a-0c1ad57b4820"
+    },
+    {
+      "claim_id": "99ca47f9-e00b-48c0-ac85-15e5c00d156e",
+      "result_id": "cf318926-928b-431d-b46a-0c1ad57b4820"
+    },
+    {
+      "claim_id": "17976e2e-4dd8-43e1-a2c7-a04b0b3a3db8",
+      "result_id": "cf318926-928b-431d-b46a-0c1ad57b4820"
+    },
+    {
+      "claim_id": "c994cac5-303a-49a0-b208-d5b7b191a886",
+      "result_id": "0e3c7f83-6e9b-4632-af38-34238789c4e3"
+    },
+    {
+      "claim_id": "1adc7b6d-f805-422a-a6ff-271f3028bead",
+      "result_id": "0e3c7f83-6e9b-4632-af38-34238789c4e3"
+    },
+    {
+      "claim_id": "a3ab5d4a-2fc4-4596-8ec6-9ad00304641e",
+      "result_id": "0e3c7f83-6e9b-4632-af38-34238789c4e3"
+    },
+    {
+      "claim_id": "d8f079a8-fc15-4843-bd50-3790378f40a0",
+      "result_id": "b90ab331-bd95-426a-906a-0b117bbe3202"
+    },
+    {
+      "claim_id": "2e2fe6d8-2bb9-476c-9a70-ab77fe45f2c7",
+      "result_id": "b90ab331-bd95-426a-906a-0b117bbe3202"
+    },
+    {
+      "claim_id": "744fa480-1793-4fe6-b9ad-0190401f45bb",
+      "result_id": "b90ab331-bd95-426a-906a-0b117bbe3202"
+    },
+    {
+      "claim_id": "379affd5-a901-44df-9ade-ff53cd14fbe1",
+      "result_id": "b90ab331-bd95-426a-906a-0b117bbe3202"
+    },
+    {
+      "claim_id": "f4e598e6-f503-4630-82b1-ea372821cbdf",
+      "result_id": "b90ab331-bd95-426a-906a-0b117bbe3202"
+    },
+    {
+      "claim_id": "88bdeddc-9dbf-4130-9837-d08ec8d59cc4",
+      "result_id": "b90ab331-bd95-426a-906a-0b117bbe3202"
+    },
+    {
+      "claim_id": "f2e39dd2-6387-4904-ab8b-487b2f98b919",
+      "result_id": "b90ab331-bd95-426a-906a-0b117bbe3202"
+    },
+    {
+      "claim_id": "c65d8f9d-e8f1-4225-a87c-77a04c645266",
+      "result_id": "b90ab331-bd95-426a-906a-0b117bbe3202"
+    },
+    {
+      "claim_id": "03e1ed56-f717-412c-a3c7-d3e434c21dc0",
+      "result_id": "533ae4c6-a39c-4691-b0d1-e2ab68fd4978"
+    },
+    {
+      "claim_id": "9926aaf2-758b-4de2-b70c-91bb05863bef",
+      "result_id": "533ae4c6-a39c-4691-b0d1-e2ab68fd4978"
+    },
+    {
+      "claim_id": "a58bfff4-4721-4ecf-8b86-73aaf406519d",
+      "result_id": "a49df76c-1acb-431d-90c0-13559319361b"
+    },
+    {
+      "claim_id": "6bd9ad8a-bb88-46bf-a317-3947f0d3168f",
+      "result_id": "a49df76c-1acb-431d-90c0-13559319361b"
+    },
+    {
+      "claim_id": "6403e116-7e55-42bb-9d02-17b12c6b6198",
+      "result_id": "a49df76c-1acb-431d-90c0-13559319361b"
+    },
+    {
+      "claim_id": "c2b4e6a9-6e13-474f-bf9c-e1cfd03a4625",
+      "result_id": "a49df76c-1acb-431d-90c0-13559319361b"
+    },
+    {
+      "claim_id": "fc834374-98d0-48c9-8214-22e86426ab97",
+      "result_id": "a49df76c-1acb-431d-90c0-13559319361b"
+    },
+    {
+      "claim_id": "e5e8765a-dc01-4514-b4cf-2dafce045a18",
+      "result_id": "a49df76c-1acb-431d-90c0-13559319361b"
+    },
+    {
+      "claim_id": "8e5e2821-892c-4b8d-a480-6d1a5f109a29",
+      "result_id": "a49df76c-1acb-431d-90c0-13559319361b"
+    },
+    {
+      "claim_id": "042503b3-81b7-4983-8246-d353c8c6967a",
+      "result_id": "5d67506b-08c7-4fd7-b141-a1e2ec8b9390"
+    },
+    {
+      "claim_id": "6e50e8e3-17e2-4f4b-bb0c-dad557e55208",
+      "result_id": "5d67506b-08c7-4fd7-b141-a1e2ec8b9390"
+    }
+  ],
+  "comparisons": []
+}

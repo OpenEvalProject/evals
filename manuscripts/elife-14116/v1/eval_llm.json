@@ -1,0 +1,333 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "C. elegans locomotion can be decomposed into two distinct motor modes using eigenworm analysis: an undulation mode (EW1-2) corresponding to regular forward/backward crawling, and a turning mode (EW3-24) corresponding to directional changes. These modes are linearly additive and account for >85% of postural variance, with their relative contributions changing upon O2 stimulation despite the underlying eigenworms remaining nearly identical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The eigenworm decomposition is rigorously demonstrated with PCA analysis (C32-C33), showing that the same eigenworm basis describes both LDT and ARS behaviors with only the relative weights changing (C34-C36). The linear additivity of the two modes is convincingly shown through reconstruction (C41-C42), and the phase-locking relationship is quantified via cross-correlation (C40). The mathematical approach is sound and well-validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "An immediate drop from 21% to 10% O2 evokes a behavioral shift from long-distance traveling (LDT) to area-restricted search (ARS), characterized by reduced locomotion speed, increased track curvature, up-regulation of reversals and omega turns (2-4-fold), and adoption of complex variable postures. This response depends on BAG O2 sensory neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral changes are well-documented with quantitative data (C23-C25, C31) and appropriate controls showing BAG-dependence (C28). The characterization as a shift from LDT to ARS is supported by comparison with previous literature (C27). Sample sizes are adequate (n=36 assays) and the temporal dynamics are clearly shown. The only minor limitation is that BAG-ablated animals also lack ASG neurons, which could be a confound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Turning amplitude, undulation amplitude, and undulation frequency exhibit lawful reciprocal relationships: turning amplitude inversely correlates with undulation amplitude and frequency, while undulation frequency positively correlates with locomotion speed. These relationships are preserved across both spontaneous and stimulus-evoked behaviors, indicating a fundamental tradeoff between efficient locomotion and flexible turning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative relationships are thoroughly characterized with appropriate binning and statistical analysis (C44-C49). The preservation of these relationships across different behavioral contexts (C50) strengthens the conclusion that this represents a fundamental constraint. The correlation between undulation frequency and speed is consistent with prior work (C47), providing external validation. The graded nature of these relationships is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Animals can gradually adjust undulation and turning mode amplitudes in response to both abrupt O2 downshifts and gradual O2 ramps, demonstrating continuous control rather than discrete behavioral switching. During gradual O2 changes, turning amplitude distributions shift gradually without bimodality, indicating that LDT and ARS lie on a behavioral continuum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gradual control is convincingly demonstrated through both step and ramp stimuli (C54, C56). The absence of bimodality in turning amplitude distributions (C57) and the 2D density plots (C58) provide strong evidence against discrete behavioral states. The biphasic response of total body amplitude (C55) contrasts with the monophasic responses of the decomposed modes, validating the utility of the eigenworm approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C75",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The AVK/FLP-1 and DVA/NLP-12 neuropeptide systems antagonistically control undulation and turning modes. AVK/FLP-1 suppresses both undulation and turning amplitude, while DVA/NLP-12 promotes undulation amplitude. Cell-specific rescue experiments confirm AVK and DVA as the relevant release sites, and double mutants show that these systems are required for stimulus-evoked postural control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic dissection is thorough with appropriate mutants, cell ablations, and cell-specific rescues (C65-C67, C75). The antagonistic relationship is demonstrated by the intermediate phenotype of double mutants (C68). The eigenworm decomposition reveals differential effects on the two motor modes (C69-C70), supporting the claim of differential neural control (C80). The strongest defects in stimulus-evoked responses occur in AVK- and double mutants (C72-C73), confirming functional relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "flp-1;nlp-12 double mutants show compromised modulation of undulation and turning amplitudes during gradual O2 ramps, a phenotype that can be rescued by cell-specific expression of the neuropeptides in AVK and DVA, demonstrating that these systems are required for fine behavioral control in gradually changing environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ramp paradigm provides a sensitive test of graded behavioral control (C76), and the successful rescue (C77) confirms the specificity of the genetic manipulation. This result is particularly important because the double mutants have near-normal baseline behavior, isolating the deficit to stimulus-evoked control. The experimental design appropriately tests the hypothesis that the neuropeptides are part of a control system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "AVK neuronal activity positively correlates with locomotion speed during both forward and reverse movement and negatively correlates with turning amplitude. AVK activity decreases upon O2 downshift in freely moving but not immobilized animals, suggesting AVK functions in the context of motor feedback to promote speed and suppress turning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The calcium imaging data are well-controlled with mCherry ratiometric correction and GFP controls (C81-C82). The correlations with behavior are quantified and consistent across pre- and post-stimulus periods (C83-C86). The bidirectional speed encoding (C84) is a novel finding. The lack of response in immobilized animals (C82) supports the motor feedback hypothesis (C90), though this remains somewhat speculative. The consistency with AVK- behavioral phenotypes (C88) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "DVA neuronal activity increases upon O2 downshift and correlates with multiple behavioral features including reversals, pausing, and transient increases in undulation amplitude with reciprocal decreases in turning amplitude. The O2-evoked DVA response is abolished when restricting analysis to forward locomotion only, indicating DVA activity primarily reflects behavioral state changes rather than direct sensory encoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The calcium imaging is properly controlled (C91) and the multiple behavioral correlates are systematically characterized (C92-C93, C96). The peak-triggered average analysis (C96) is an appropriate method for detecting transient relationships. The lack of global correlation with forward locomotion parameters (C95) combined with the loss of O2-evoked response when excluding reversals/pauses (C94) supports the interpretation that DVA encodes behavioral state transitions. The failure to detect a signal with total body amplitude (C97) validates the eigenworm approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Wild-type C. elegans perform O2 chemotaxis toward ~16% O2 using multiple navigational strategies: weathervaning (curving bias strongest at 90\u00b0 bearing), biased random walk (modulation of reversal rates), and bearing-dependent modulation of speed and turning amplitude, with all strategies showing graded responses as a function of heading direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The chemotaxis behavior is thoroughly characterized with appropriate controls (C101) and multiple complementary metrics (C102-C105). The weathervaning analysis properly accounts for bearing angle (C102), and the gradual modulation of multiple parameters (C103-C105) demonstrates the sophistication of the navigational strategy. The sample size (n=53 assays) is adequate. The preferred O2 concentration differs from previous studies, but this is explained by different experimental conditions (1 hr vs longer starvation, no hypoxia).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "flp-1;nlp-12 double mutants show specific defects in O2 chemotaxis: compromised weathervaning and impaired bearing-dependent modulation of speed and turning, while retaining the ability to modulate reversal rates. This demonstrates that the AVK/FLP-1 and DVA/NLP-12 systems are specifically required for weathervaning and ARS-like behavior modulation but not for the biased random walk strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The chemotaxis defects are well-characterized with appropriate quantification (C109-C110, C113, C115). The selective preservation of reversal rate modulation (C114) while other strategies are impaired (C113, C115) demonstrates specificity. The similar defects in single mutants (C111) support the involvement of both neuropeptide systems. The focus on double mutants is justified because single mutants show confounding baseline distribution differences (C112). The conclusion that fine-tuned control is essential for navigation (C116) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The combination of elementary motor patterns (undulation and turning modes) enables flexible adjustment of locomotion strategy along a continuum from LDT to ARS. Neuromodulatory peptidergic circuits gradually adjust these motor parameters while enforcing reciprocal relationships, allowing animals to balance the tradeoff between efficient displacement and flexible exploration according to instantaneous needs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion is well-supported by the combined evidence from behavioral decomposition (C2, C42), gradual control (C3, C60-C61), neural mechanisms (C4, C79, C124), and functional validation through chemotaxis (C5, C118). The concept of a tradeoff between stereotypy and flexibility (C1, C126) is demonstrated through the reciprocal relationships between motor parameters (C46, C51-C52). The claim that behaviors lie on a continuum (C123) is supported by the absence of bimodality (C57) and gradual modulation (C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background context establishing that animals use distinct foraging strategies (ARS vs LDT), that C. elegans exhibits similar behavioral strategies in response to food removal, that multiple chemotaxis strategies exist, and that C. elegans responds to O2 gradients in its natural habitat. The navigational strategies during O2 chemotaxis were previously uncharacterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the conceptual framework and prior knowledge (C6-C7, C10-C15) with appropriate citations. The characterization of C. elegans natural habitat (C16-C18) and O2 sensing (C19-C21) is well-supported by literature. The identification of a knowledge gap (C22) appropriately motivates the study. All claims are either properly cited or represent established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C43"
+    ],
+    "result": "C. elegans locomotion occurs via undulatory crawling movements, with body posture tightly coupled to muscle activity and serving as a reliable proxy for motor patterns. Biomechanical principles indicate that both bending amplitude and frequency contribute to locomotion speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological foundations are well-established in the literature with appropriate citations (C8-C9, C43). The relationship between posture and muscle activity (C9) justifies the use of posture analysis as a readout of motor control. The biomechanical principles (C43) provide theoretical support for the observed relationships between undulation parameters and speed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Prior literature reported that flp-1 mutants exhibit elevated body curvature and locomotion speed, while NLP-12 neuropeptides are exclusively released from DVA and interfering with DVA/NLP-12 leads to decreased body curvature and locomotion speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize prior literature with appropriate citations (C62-C64). The authors successfully replicate these findings in their experimental paradigm (C65), validating the prior work and establishing the foundation for their mechanistic investigations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "The DVA/NLP-12 and AVK/FLP-1 systems both control locomotion speed in addition to their effects on body posture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is supported by speed measurements across genotypes shown in Figure 5\u2014figure supplement 2 (C74). The speed phenotypes are consistent with the activity correlations observed in calcium imaging (C83, C87) and provide additional functional validation of the neural systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "The postures exhibited by mutant and manipulated strains largely reflect postures that wild-type animals exhibit, though with different frequencies, as shown by 2D density distributions of undulation vs turning amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is demonstrated by the 2D density analysis showing that >90% of mutant postures fall within the 99% boundary of wild-type posture space (C71, Figure 5\u2014figure supplement 1). This important control indicates that the genetic manipulations shift the probability distribution of naturally occurring postures rather than creating entirely novel postures, supporting the interpretation that the neuropeptide systems modulate rather than generate motor patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "flp-1 single mutants and AVK-ablated animals show a stronger tendency to accumulate in the center of the assay arena during control experiments, potentially confounding interpretation of chemotaxis results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This observation (C112) is appropriately noted and leads to the justified decision to focus detailed chemotaxis analysis on double mutants and nlp-12 single mutants. This demonstrates good experimental practice in recognizing and addressing potential confounds. The authors speculate this may relate to crowding behavior, though this remains untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Fine-tuned control of undulation and turning motions is essential for normal spatial gradient navigation, though the biased random walk strategy can partially compensate for deficits. In bacteria, biased random walk is the only reported chemotaxis mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The requirement for fine-tuned control is demonstrated by the chemotaxis defects in mutants (C109-C110, C113, C115), while the partial compensation by biased random walk is evidenced by retained reversal modulation (C114) and residual chemotaxis ability (C110). The comparison to bacteria (C120) appropriately contextualizes the findings, highlighting the additional complexity of C. elegans navigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "Analogous control schemes may govern locomotion in higher animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly stated as speculation (C127) without supporting evidence from other organisms. While the general principle of coordinating elementary motor patterns is plausible and the authors appropriately frame this as speculation, no data are provided to support this claim. This represents a reasonable hypothesis for future work but cannot be evaluated as supported or unsupported based on the current study.",
+    "result_type": "MINOR"
+  }
+]

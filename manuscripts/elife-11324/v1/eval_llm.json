@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "miR-128 is expressed in neural progenitor cells (NPCs) within the developing murine cortex, specifically in the ventricular/subventricular zone (VZ/SVZ) at E14.5, and co-localizes with the NPC marker NESTIN both in tissue sections and in isolated NPCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide converging evidence from multiple complementary techniques (in situ hybridization, qPCR, fluorescence ISH with immunostaining) demonstrating miR-128 expression in NPCs. The spatial and cellular localization data are consistent across different experimental approaches, and appropriate controls (scrambled probes) were included.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "The miR-128 overexpression and knockdown constructs function efficiently in NPCs, with miR-128 overexpression resulting in 15-fold upregulation and miR-Zip-128 producing efficient knockdown of endogenous miR-128.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C7 demonstrate successful manipulation of miR-128 levels using qPCR quantification. These are essential validation experiments for the gain- and loss-of-function studies that follow. The magnitude of changes is substantial and appropriate controls are included.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "miR-128 regulates NPC proliferation in vitro without affecting apoptosis: overexpression reduces BrdU incorporation by 56%, while knockdown increases it by 50%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 demonstrate bidirectional effects on proliferation using BrdU incorporation assays, with appropriate controls showing no effect on apoptosis (TUNEL and cleaved caspase-3). The reciprocal effects of gain- and loss-of-function strengthen the conclusion. Statistical significance is reported (p<0.001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "miR-128 promotes neuronal differentiation of NPCs in vitro: overexpression increases neuronal markers (TUJ1) by ~100% and decreases glial markers (GFAP), while knockdown has opposite effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 demonstrate that miR-128 promotes neuronal fate specification using multiple differentiation markers. The bidirectional effects and use of both neuronal and glial markers provide strong evidence. The inference about neuronal commitment (C13) is reasonable given the data, though somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "miR-128 regulates NPC proliferation and differentiation in vivo by modulating the balance between apical and basal progenitors: overexpression decreases horizontal divisions (10% vs control), reduces apical progenitor markers (PAX6, SOX2, EdU incorporation), increases basal progenitor markers (TBR2, 60% increase), promotes cell cycle exit (~40% increase), and enhances neurogenesis (25% increase in NEUN+ neurons at E17.5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C21 provide comprehensive in vivo evidence using multiple complementary markers and assays. The data show consistent effects across different progenitor populations and developmental stages. The mitotic spindle orientation analysis, progenitor marker quantification, and neurogenesis assessment all support the proposed mechanism. Statistical significance is reported throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Bioinformatics analysis and qPCR screening identified PCM1 as a candidate target of miR-128: two prediction algorithms identified 77 overlapping targets, of which 53 had known biological functions; qPCR revealed 11 genes consistently downregulated upon miR-128 overexpression, and only 4 genes (Pcm1, Nfia, Foxo4, Fbxl20) showed reciprocal upregulation upon miR-128 inhibition, with Pcm1 showing the greatest change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 describe a systematic target identification approach using established bioinformatics tools and experimental validation. The filtering strategy is reasonable, and the reciprocal regulation requirement strengthens confidence in the candidates. However, the rationale for focusing on PCM1 over the other three candidates is not fully explained in these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "miR-128 directly targets the 3'-UTR of Pcm1: luciferase reporter assays show 58% suppression with wild-type Pcm1 3'-UTR, and mutation of the seed sequences abolishes this suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 provide strong evidence for direct targeting using the gold-standard luciferase reporter assay. The seed sequence mutation experiment demonstrates specificity. The magnitude of suppression (58%) is substantial and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "miR-128 regulates endogenous PCM1 expression in NPCs: overexpression reduces PCM1 mRNA and protein levels, while knockdown increases both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 demonstrate regulation of endogenous PCM1 at both mRNA and protein levels using qPCR and Western blot. The bidirectional effects strengthen the conclusion. These experiments bridge the luciferase reporter data to physiological regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "miR-128 and PCM1 show inverse expression patterns both spatially (across VZ/SVZ, IZ, and CP) and temporally (from E12.5 through P0) during cortical development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 provide correlative evidence supporting a regulatory relationship between miR-128 and PCM1 in vivo. The use of laser capture microdissection for spatial analysis is appropriate. However, this is correlative data and does not prove causation, though it is consistent with the mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "PCM1 knockdown phenocopies miR-128 overexpression in NPCs: shRNA-mediated PCM1 knockdown (70% reduction) decreases proliferation (35% reduction in BrdU incorporation) and increases neuronal differentiation (60% increase in TUJ1+ cells) without affecting apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 demonstrate that PCM1 knockdown produces similar effects to miR-128 overexpression, supporting the hypothesis that PCM1 is a functionally relevant target. The phenocopy is strong evidence for the proposed mechanism. Appropriate controls for apoptosis are included.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "PCM1 overexpression has opposite effects to PCM1 knockdown: it increases NPC proliferation (70% increase in BrdU+ cells), decreases neurogenesis (35-45% decrease by TUJ1/MAP2), increases horizontal divisions (20%), increases EdU incorporation (40%), increases apical progenitors (PAX6, 60%), decreases basal progenitors (TBR2, 40%), and reduces neuronal differentiation (NEUN, 25%), without affecting apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C48 provide comprehensive evidence that PCM1 overexpression produces opposite effects to knockdown, both in vitro and in vivo. The bidirectional effects across multiple assays strongly support PCM1's role in regulating NPC proliferation and differentiation. The consistency across different markers and experimental systems is notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "PCM1 overexpression rescues the effects of miR-128 overexpression in vitro: co-expression of PCM1 (without 3'-UTR) with miR-128 restores proliferation (103% vs 62%) and reverses the increase in neuronal differentiation (150% vs 225% for TUJ1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 provide critical rescue experiments demonstrating that PCM1 is a functionally relevant downstream target of miR-128. The use of PCM1 without its 3'-UTR is appropriate to avoid miR-128 targeting. The rescue is substantial and statistically significant, providing strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "PCM1 overexpression rescues the effects of miR-128 overexpression in vivo: co-expression reverses miR-128's effects on proliferation (EdU incorporation), apical progenitors (PAX6), basal progenitors (TBR2), and neuronal differentiation (NEUN).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 extend the in vitro rescue experiments to the in vivo context, demonstrating that the miR-128-PCM1 regulatory axis functions in the developing cortex. The rescue across multiple markers and cell types provides strong evidence for the proposed mechanism. This is a critical validation of the in vitro findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "miR-128 regulates NPC proliferation and differentiation in the murine embryonic cortex by directly targeting PCM1 expression through interaction with its 3'-UTR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is a summary statement that integrates the findings from multiple experimental approaches: target identification, direct targeting validation, phenocopy experiments, and rescue experiments. The collective evidence from C22-C54 strongly supports this mechanistic conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The manuscript provides extensive background on neurogenesis, miRNA function, miR-128 biology, and cortical development, citing relevant prior literature to contextualize the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C83 represent background information and citations to prior work. These claims are appropriately referenced and provide context for the study. However, the accuracy of these citations and the interpretation of prior work cannot be fully evaluated without examining the original sources. The claims appear consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Nine novel missense mutations in the Pcm1 gene have been identified in ASD patients by the authors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C69 refers to unpublished observations by the authors. Without access to the data, methods, patient cohort details, or validation experiments, it is impossible to evaluate the validity of this claim. This represents preliminary data that requires peer review and publication before it can be properly assessed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "miR-128 acts at two stages of NPC development: first by regulating symmetric/asymmetric division of apical progenitors to promote basal progenitor production, and second by enhancing cell cycle exit of basal progenitors to promote neurogenesis; conversely, miR-128 downregulation retains NPCs in a proliferative state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 represent integrative interpretations of the experimental data from C14-C21. The two-stage model is well-supported by the data showing effects on both apical progenitor division orientation and basal progenitor cell cycle exit. However, this is a model based on correlative observations at different developmental stages rather than direct lineage tracing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Aberrant miR-128 expression may account for abnormal cortical development underlying the pathophysiology of certain neuropsychiatric disorders, including autism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C84 is a speculative statement about clinical implications. While the experimental data demonstrate that miR-128 regulates cortical development, the connection to neuropsychiatric disorders is based on: (1) prior reports of miR-128 dysregulation in ASD brains (C62), (2) unpublished mutations in PCM1 in ASD patients (C69), and (3) the current findings. The causal link to human disease pathophysiology remains to be established and would require additional clinical and functional studies.",
+    "result_type": "MINOR"
+  }
+]

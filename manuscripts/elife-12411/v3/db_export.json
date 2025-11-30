@@ -1,0 +1,1983 @@
+{
+  "submission": {
+    "id": "56095e9c-40fc-4d81-8337-b3d76983869c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:28:24.265317Z",
+    "updated_at": "2025-11-29T22:28:24.265317Z"
+  },
+  "content": [
+    {
+      "id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "submission_id": "56095e9c-40fc-4d81-8337-b3d76983869c",
+      "content_type": "manuscript",
+      "content_text": "# The Sec7 N-terminal regulatory domains facilitate membrane-proximal activation of the Arf1 GTPase\n\n## Authors\n\n- Brian C Richardson<sup>1</sup> ([ORCID: 0000-0002-5434-1500](https://orcid.org/0000-0002-5434-1500))\n- Steve L Halaby<sup>1</sup>\n- Margaret A Gustafson<sup>1</sup>\n- J Christopher Fromme<sup>1</sup> ([ORCID: 0000-0002-8837-0473](https://orcid.org/0000-0002-8837-0473)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Biology and Genetics Cornell University Ithaca United States\n2. Weill Institute for Cell and Molecular Biology Cornell University Ithaca United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe Golgi complex is the central sorting compartment of eukaryotic cells. Arf guanine nucleotide exchange factors (Arf-GEFs) regulate virtually all traffic through the Golgi by activating Arf GTPase trafficking pathways. The Golgi Arf-GEFs contain multiple autoregulatory domains, but the precise mechanisms underlying their function remain largely undefined. We report a crystal structure revealing that the N-terminal DCB and HUS regulatory domains of the Arf-GEF Sec7 form a single structural unit. We demonstrate that the established role of the N-terminal region in dimerization is not conserved; instead, a C-terminal autoinhibitory domain is responsible for dimerization of Sec7. We find that the DCB/HUS domain amplifies the ability of Sec7 to activate Arf1 on the membrane surface by facilitating membrane insertion of the Arf1 amphipathic helix. This enhancing function of the Sec7 N-terminal domains is consistent with the high rate of Arf1-dependent trafficking to the plasma membrane necessary for maximal cell growth.\n\n## Introduction\n\nIn eukaryotes, trafficking of membranes and membrane proteins from their site of synthesis at the endoplasmic reticulum through the secretory pathway proceeds via the Golgi apparatus. This trafficking, mediated by membrane vesicles and tubules, must achieve the specificity to ensure that proteins are targeted to the correct destinations and with the correct post-translational modifications while retaining the throughput required to provide the bulk of the lipid content of the plasma membrane\u2019s growth over the course of cell division. Much of this process is controlled at the trans-Golgi network (TGN), where the final processed forms of proteins are recognized by cargo adaptors and packaged into vesicles for transport to endosomes, lysosomes, and the plasma membrane (Guo et al., 2014).\n\nIn both humans and model organisms, Arf GTPases act as the central coordination point for vesicle formation at the TGN, directly regulating a cascade of cargo adaptors (Donaldson and Jackson, 2011). Arf activation is regulated in turn by guanine nucleotide exchange factors (GEFs) that exchange bound GDP for GTP (Casanova, 2007). The accompanying conformational change in the Arf GTPase rearranges \u2018switch\u2019 regions for recognition by effectors and exposes a myristoylated amphipathic N-terminal helix that inserts into the membrane (Antonny et al., 1997; Goldberg, 1998). Arf-GEFs thereby stand upstream of Arf GTPases as the initiator of the cascade of events leading to vesiculation of TGN cisternae.\n\nAt the TGN, the Arf1-5 GTPases are activated by the BIG1/2 proteins in humans (Mansour et al., 1999; Yamaji et al., 2000) and the Arf1/2 GTPases are activated by Sec7 in the model organism Saccharomyces cerevisiae (Achstetter et al., 1988; Peyroche et al., 1996). These TGN-localized Arf-GEFs are universally conserved in eukaryotes, and their importance is underscored by neurological disorders associated with mutations in the BIG2/ARFGEF2 gene (Banne et al., 2013; Sheen et al., 2004).\n\nThe TGN-localized Arf-GEFs comprise roughly 1800 functional residues including a central catalytic domain of ~200 residues mediating nucleotide exchange (Chardin et al., 1996; Morinaga et al., 1996; Peyroche et al., 1996). This catalytic domain, commonly called the Sec7 domain, will be referred to here as the GEF domain for clarity. Conserved domains C-terminal to the GEF domain, termed HDS1-4 (homology downstream of Sec7) (Mouratou et al., 2005), act to integrate the signals from several small GTPases, including Arf1 itself, to switch Sec7 from a strongly autoinhibited to a strongly autoactivated form (McDonold and Fromme, 2014; Richardson et al., 2012; Richardson and Fromme, 2012). The N-terminal DCB (dimerization and cyclophilin binding) and HUS (homology upstream of Sec7) domains, though conserved in all Golgi Arf-GEFs and essential for Golgi function (Ramaen et al., 2007), remain more of an enigma. Numerous functions have been proposed, including cyclophilin binding, regulated dimerization, Arl1 and Arf1 GTPase binding, and enhancement of GEF activity, but studies are frequently contradictory and fail to assemble into a unified understanding of function (Christis and Munro, 2012; Grebe et al., 2000; Lowery et al., 2013; Mouratou et al., 2005; Ramaen et al., 2007; Richardson et al., 2012).\n\nHere, we present the crystal structure of the regulatory DCB and HUS domains from Thielavia terrestris Sec7 and demonstrate that they form a single continuous structural domain. We find that dimerization of this N-terminal domain is not conserved and that Sec7 dimerization is primarily mediated by the C-terminal HDS4 domain. We describe a new function of the DCB/HUS regulatory domain: this domain enhances the activation of Arf1 in a manner dependent on both lipids and the N-terminal membrane insertion element of Arf1, implying a role in chaperoning the insertion of Arf1 into the Golgi membrane.\n\n## Results\n\n### The DCB and HUS regions form a unified structural domain\n\nTo gain structural insights into the function of the DCB and HUS domains, we purified and attempted to crystallize constructs from ten species, including S. cerevisiae and the thermophiles Chaetomium thermophilum, Myceliophthora thermophila, and T. terrestris (Amlacher et al., 2011; Berka et al., 2011). Following correction of the annotated intron (Supplementary file 1), a construct comprising residues 1\u2013458 of T. terrestris produced crystals diffracting to 2.6 \u00c5. Using experimental phase determination by single-wavelength anomalous diffraction of selenomethionine-substituted protein, the structure of the DCB and HUS domains was determined with four copies in the asymmetric unit. The best resolved chains in the model lack only unresolved loops and the final ~35 conserved residues of the HUS domain absent from the crystallized construct (Figure 1A and Figure 1\u2014figure supplement 1, Table 1). Extensive crystal contacts between chains A and B stabilize them sufficiently to produce excellent electron density; the N-terminal portions of chains C and D, with fewer crystal contacts, were less well resolved and had only enough visible density to be modeled as copies of chains A and B (Figure 1\u2014figure supplements 1 and 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/12411/elife-12411-fig1-v3.jpg)\n\n**Figure 1.:** (A) Chains A (green) and D (white) are shown; chain A is colored light to dark N to C, and helices are numbered N to C. The entire asymmetric unit is shown in supplement 1. Electron density is shown in supplement 2. The DCB/HUS interface is shown in supplement 3.\u00a0(B) The charge potential surface of chain A alone, as calculated by APBS (Baker et al., 2001; Dolinsky et al., 2007), is colored on a red-white-blue gradient from -10 kT/e to +10 kT/e.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12411/elife-12411-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The entire asymmetric unit is shown on the left, with each chain colored light to dark N to C. A=green, B=red, C=blue, D=gray. The asymmetric unit is shown in B-factor putty form on the right (thicker chain indicates larger relative atomic B-factors).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12411/elife-12411-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Weighted composite omit maps of helix 4 including residues D297, K301, and F305 are shown. Chain A, above, was used for structural analysis; chain D, below, was modeled on the basis of chain A.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/12411/elife-12411-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Packing of helices 7 and 8 (DCB) and 10 and 11 (HUS) is shown, including participating side chains. Conserved residues are colored in green.\n\nThe DCB and HUS domains together form a single continuous armadillo repeat joined by a conserved ~1400 \u00c52 hydrophobic interface, comprising helices 7 and 8 from the DCB domain and helices 10 and 11 from the HUS domain. (Figure 1A and Figure 1\u2014figure supplement 3). We therefore regard the N-terminal regulatory region of Sec7 as a single DCB/HUS structural domain. In most species, a poorly conserved ~100 amino acid linker connects the conserved DCB and HUS domains. In the T. terrestris DCB/HUS domain structure, residues 245\u2013271 of this interdomain region (between helices 8 and 10, including helix 9) are resolved in their packing against the armadillo repeat, and the remaining 46 and 21 residue stretches are unresolved in the structure. Interestingly, the mutation E209K in human BIG2 associated with neuronal disease (Sheen et al., 2004) maps to this unresolved region. A striking conserved positively charged patch is seen at the interface of helices 7 and 10 (Figure 1B).\n\n**Table 1.**\n Data collection and refinement statistics\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>T. terrestris Sec7 DCB/HUS domain (residues 1-458)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Wavelength (\u00c5)</td>\n      <td>0.987</td>\n    </tr>\n    <tr>\n      <td>Resolution range (\u00c5)</td>\n      <td>50 - 2.6 (2.64\u20132.6)</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P 21 21 21</td>\n    </tr>\n    <tr>\n      <td>Unit cell</td>\n      <td>a=62.472\u00c5 b=132.024\u00c5 c=247.664\u00c5 \u03b1=\u03b2=\u03b3=90\u00b0</td>\n    </tr>\n    <tr>\n      <td>Total reflections</td>\n      <td>569136</td>\n    </tr>\n    <tr>\n      <td>Unique reflections</td>\n      <td>59606</td>\n    </tr>\n    <tr>\n      <td>Multiplicity</td>\n      <td>9.5 (4.7)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>98.77 (88.46)</td>\n    </tr>\n    <tr>\n      <td>Mean I/sigma(I)</td>\n      <td>8.46 (1.48)</td>\n    </tr>\n    <tr>\n      <td>Wilson B-factor</td>\n      <td>65.26</td>\n    </tr>\n    <tr>\n      <td>R-work</td>\n      <td>0.2119 (0.3113)</td>\n    </tr>\n    <tr>\n      <td>R-free</td>\n      <td>0.2568 (0.3665)</td>\n    </tr>\n    <tr>\n      <td>Number of atoms</td>\n      <td>10944</td>\n    </tr>\n    <tr>\n      <td>Macromolecules</td>\n      <td>10887</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>57</td>\n    </tr>\n    <tr>\n      <td>Protein residues</td>\n      <td>1383</td>\n    </tr>\n    <tr>\n      <td>RMS(bonds)</td>\n      <td>0.009</td>\n    </tr>\n    <tr>\n      <td>RMS(angles)</td>\n      <td>1.23</td>\n    </tr>\n    <tr>\n      <td>Ramachandran favored (%)</td>\n      <td>98</td>\n    </tr>\n    <tr>\n      <td>Ramachandran outliers (%)</td>\n      <td>0.075</td>\n    </tr>\n    <tr>\n      <td>Clashscore</td>\n      <td>7.63</td>\n    </tr>\n    <tr>\n      <td>Average B-factor</td>\n      <td>89.7</td>\n    </tr>\n    <tr>\n      <td>Macromolecules</td>\n      <td>89.8</td>\n    </tr>\n    <tr>\n      <td>Solvent</td>\n      <td>60.3</td>\n    </tr>\n  </tbody>\n</table>\n\n### Sec7 dimerizes via the HDS4 domain\n\nThe crystallized construct forms a dimer in the crystal via its C-terminal helices 14 and 15, with helix 15 of each copy aligned antiparallel to each other. Dimerization is known to occur in N-terminal constructs of Sec7 and its homologs (Grebe et al., 2000; Ramaen et al., 2007; Richardson et al., 2012), and small-angle X-ray scattering (SAXS) analysis confirmed that the observed dimerization mode occurred in solution as well as in the crystal (Figure 2A). However, the fact that the construct dimerizes via the end of a DCB/HUS domain construct that was truncated raised concern, as truncation of helical domains has been shown in the past to result in artificial dimer interfaces (Richardson et al., 2009). Therefore, we purified a longer T. terrestris Sec7 construct comprising the entire DCB/HUS domain (residues 1\u2013492), for analysis by SAXS. While slight divergence is seen, the intact T. terrestris DCB/HUS domain SAXS data closely fits that predicted from a monomer (Figure 2B). This strongly suggests that the observed dimerization interface is an artifact resulting from truncation of the C-terminal helix of the HUS domain, although it is possible that this dimerization mode represents a regulated conformation of the N-terminus.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/12411/elife-12411-fig2-v3.jpg)\n\n**Figure 2.:** (A) CORAL (Petoukhov et al., 2012) was used to fit the T. terrestris Sec7 DCB/HUS domain structure (residues 1\u2013458) to SAXS data collected on the same construct, accounting for the presence of unresolved loops modelled as dotted lines. For comparison, a similar calculation using only a single chain is shown with a significantly worse fit.\u00a0(B) A single monomer from (A), fixing the previously modeled loops in place and adding additional residues at the C-terminus, was fit to SAXS data collected on T. terrestris Sec7(1\u2013492); as the added region is expected to comprise an alpha helix in addition to a connecting loop, BUNCH was used in place of CORAL for modeling. A similar fit of the dimeric form is shown for comparison.\u00a0(C) The solution molecular weights of the indicated S. cerevisiae and T. terrestris constructs were determined by MALS. Comparison to the predicted monomeric mass based on primary sequence yields the stoichiometry. SAXS results from S. cerevisiae Sec7\u0394C are shown in supplement 1. Results from corresponding S. cerevisiae Gea2 constructs are shown in supplement 2. Original MALS traces of all S. cerevisiae and T. terrestris constructs are shown in supplement 3.\u00a0(D) Schematic model of S. cerevisiae cis and trans interactions of truncated constructs. Red represents a hypothesized interface between HDS1 and DCB/HUS, the latter half of which can self-stabilize by dimerization in the absence of HDS1. Orange represents the HDS4 dimerization interface. T. terrestris is hypothesized to possess a divergent DCB/HUS interaction interface with less need of stabilization by dimerization.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12411/elife-12411-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** BUNCH (Petoukhov and Svergun, 2005) and CRYSOL (Svergun et al., 1995) were used to model T. terrestris Sec7 DCB/HUS domain (residues 1\u2013458), S. cerevisiae Gea2 GEF domain (residues 570\u2013714), and appropriate linker residues to SAXS data collected on S. cerevisiae Sec7\u2206C (residues 203\u20131017) with P2 symmetry. While too many degrees of freedom exist to interpret the resulting model as an accurate structural assembly, the placement of the GEF domain at a distance from the DCB/HUS domain in order to fit the data suggests a flexible linkage.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12411/elife-12411-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Solution molecular weights of the indicated S. cerevisiae Gea2 constructs were determined by MALS.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/12411/elife-12411-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Normalized gel filtration peak profiles of all Sec7 constructs are shown with MALS molecular weight measurements superimposed. The right-hand molecular weight axis for each panel is scaled to each construct\u2019s calculated mass, with monomeric, dimeric, and trimeric masses indicated. Due to the wide variation in construct size, a single gel filtration column was not used for every construct, leading to the variation in elution profiles seen.\n\nThese observations, together with a report that a portion of the HDS4 domain mediates dimerization (Mari\u00f1o-Ram\u00edrez and Hu, 2002), prompted us to perform an in-depth characterization of the multimerization behavior of different Sec7 constructs from both T. terrestris and S. cerevisiae. Many constructs failed to yield reliable SAXS data, so we turned to multi-angle light-scattering (MALS) to identify the oligomeric state of a series of truncation constructs. We found that full-length T. terrestris Sec7 and the corresponding S. cerevisiae Sec7f (residues 203\u20132009) construct were both dimeric (Figure 2C). Strikingly, removal of the C-terminal HDS4 domain resulted in a monomer for constructs from both species, whereas a construct corresponding to a predicted coiled-coil from the HDS4 domain (Mari\u00f1o-Ram\u00edrez and Hu, 2002) was itself dimeric. This indicates that the HDS4 domain mediates dimerization of the intact Sec7 proteins from both T. terrestris and S. cerevisiae.\n\nTo examine the role of the HDS4 domain in cells, we attempted to introduce a GFP-Sec7\u0394HDS4 construct into cells lacking the essential SEC7 gene. Virtually all such cells were unable to grow, similar to the previously described lethality arising from removal of the HDS2-4 domains (Figure 3A) (Richardson et al., 2012). To examine whether this effect was due to mis-localization of the construct, we imaged an otherwise wild-type strain harboring the GFP-Sec7\u0394HDS4 construct. Although we detected a low level of cytoplasmic mislocalization, GFP-Sec7\u0394HDS4 was largely localized correctly to the TGN, as observed by its colocalization with endogenous Sec7-RFP (Figure 3B). In contrast, localization of the shorter GFP-Sec7\u0394C+HDS1 construct was more severely compromised, as seen previously (Richardson et al., 2012). Therefore, the HDS4 domain is critically important for Sec7 function in cells but does not appear to play a major role in its localization.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/12411/elife-12411-fig3-v3.jpg)\n\n**Figure 3.:** (A) Centromeric plasmids encoding GFP-Sec7 constructs expressed from the SEC7 promoter were introduced into a SEC7 plasmid shuffling strain (CFY409). Growth on 5-FOA measures the ability of the construct to complement the sec7\u2206 mutation.\u00a0(B) The same plasmids were imaged in an otherwise wild-type strain expressing endogenously tagged Sec7-RFPMars (\u2018Sec7-RFP\u2019) (CFY578).\n\nFurther C-terminal truncation of S. cerevisiae Sec7 resulted in a surprising series of observations. Whereas a construct lacking the HDS4 domain is monomeric, a construct lacking the HDS2-4 domains was an equilibrium mixture of monomeric and dimeric species (Figure 2C). Removal of additional domains, generating constructs lacking the HDS1-4 domains with or without the GEF domain, resulted in stable dimers. However, the corresponding constructs of T. terrestris Sec7 were monomeric (Figure 2C).\n\nThe simplest model accounting for dimerization of the isolated S. cerevisiae N-terminus, dimerization via the HDS4 domain, and loss of dimerization when the HDS1 domain is present, invokes an interaction between the HDS1 and DCB/HUS domains (Figure 2D). When present, the HDS1 domain likely masks a site by which the DCB/HUS domain dimerizes in its absence, but Sec7 retains its dimerization via the HDS4 domain. Whether this masked dimerization is an artifact or serves a regulatory purpose remains unknown, but the presence of an exposed interaction domain in truncated constructs provides an attractive explanation for the complicated oligomerization results seen in prior work (Grebe et al., 2000; Ramaen et al., 2007), as well as for the seemingly absolute requirement of the DCB/HUS domain for soluble expression of most constructs containing HDS domains. Unfortunately, this latter phenomenon also precludes more thorough biochemical testing of this hypothesis, leaving this model partially speculative. It is also evident from the behavior of the T. terrestris constructs that dimerization of the DCB/HUS domain is not a conserved behavior. We note that this analysis does not exclude the possibility of membrane- or temperature-dependent effects on dimerization or possible influences on Sec7 dimerization by other proteins.\n\nWhile reliable SAXS data could not be obtained from T. terrestris constructs including the GEF domain, modeling our N-terminal structure and a previously solved GEF domain structure (Renault et al., 2002) to SAXS data collected on S. cerevisiae Sec7(203\u20131017) (Sec7\u0394C) suggests that the GEF domain is flexibly connected to the DCB/HUS domain rather than continuing the armadillo repeat (Figure 2\u2014figure supplement 1). As such, it appears unlikely that the intact DCB/HUS construct (1\u2013492) is prone to the same artifactual dimerization issues at its C-terminus as is the truncated Sec7(1\u2013458) construct.\n\nGiven our finding that the HDS4 domain appears to be the primary mediator of Sec7 dimerization, we decided to investigate the multimerization state of the distantly related early-Golgi Arf-GEF Gea2 from S. cerevisiae, which has evolved without an HDS4 domain. MALS analysis revealed that Gea2 full-length and C-terminal truncation constructs are dimeric (Figure 2\u2014figure supplement 2). This suggests that dimerization in some form is critical to the regulation of all the Golgi Arf-GEFs, and that in the absence of an HDS4 domain, N-terminal dimerization may have evolved to acquire additional importance.\n\n### Sec7 DCB/HUS domain activity is lipid-dependent\n\nWe previously observed that the DCB/HUS domain confers a significant enhancement of activity on the GEF domain, in the physiologically relevant context of a myristoylated Arf1 substrate in the presence of liposome membranes (Richardson et al., 2012). We sought to investigate the mechanism for this enhancement on the basis of the DCB/HUS crystal structure. We used an established in vitro GEF activity assay taking advantage of the innate change in tryptophan fluorescence of Arf1 as it transitions from binding GDP to binding GTP (Bigay and Antonny, 2005; Kahn and Gilman, 1986) to track reaction kinetics without the need for artificial substrates (Figure 4A). Extending our previous results, we were surprised to observe that when we removed membranes from the reaction and truncated the N-terminal membrane insertion helix of Arf1 to preserve its ability to exchange nucleotide (\u0394N17Arf1), the DCB/HUS domain of S. cerevisiae Sec7 no longer stimulated GEF activity. Indeed, the Sec7\u0394C construct was slightly less active than the GEF domain alone, possibly due to a reduced rate of diffusion (Figure 4A,B). Therefore, the DCB/HUS domain stimulates GEF domain activation of Arf1 on membranes.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/12411/elife-12411-fig4-v3.jpg)\n\n**Figure 4.:** (A) Triplicate nucleotide exchange curves of S. cerevisiae Sec7\u0394C (green traces) or isolated GEF domain constructs (yellow traces) acting on myristoylated Arf1 substrate in the presence of liposomes are shown against a mock exchange reaction (black trace) (left). The curves were fit to a single exponential and normalized to Sec7 concentration to extract the exchange reaction rates (right). Error bars denote 95% confidence intervals, n=3. Purity of all constructs is demonstrated in supplement 1. These measurements of exchange by tryptophan fluorescence are compared to complementary measurements of Arf1 membrane binding in supplement 2.\u00a0(B) Exchange reaction rates of S. cerevisiae Sec7 constructs acting on the \u0394N17Arf1 substrate in the absence of lipids. GEF activity of T. terrestris constructs is shown in supplement 3. GEF activity following Arl1 preincubation is shown in supplement 6, with corresponding physical interaction analysis in supplements 4 and 5.\u00a0(C) Parallel reactions of S. cerevisiae Sec7 constructs acting on myristoylated Arf1 and \u0394N17Arf1 in the presence of liposomes and micelles.\u00a0(D) Nucleotide exchange by S. cerevisiae Sec7 constructs on non-myristoylated L8K-Arf1 in the presence and absence of liposomes.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12411/elife-12411-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** 2 \u03bcM myristoylated Arf1-GDP was incubated with liposomes, excess GMPPNP, and. 67 \u03bcM Sec7\u0394C or GEF domain for the indicated amount of time and put on ice to stop the reaction. Lipid-bound protein (i.e. activated Arf1) was assayed by liposome flotation as described previously (Richardson et al., 2012). (A) Input fractions and float/lipid-bound fractions were analyzed by SDS-PAGE and colloidal Coomassie; float fraction load amounts were normalized to the recovered lipid fraction on the basis of fluorescence of DiR dye included in the liposomes. Note that band staining intensity correlates with molecular weight, and the GEF domain construct is ~\u00bc the mass of the Sec7\u0394C construct. (B) Quantified band densities (circles and dashed lines) are overlaid on the reaction kinetics measured by fluorescence in Figure 4A (solid lines).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12411/elife-12411-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** T. terrestris Sec7\u0394C and isolated GEF constructs were assayed for rate of nucleotide exchange of myristoylated Arf1 in the presence of liposomes (left) and \u0394N17Arf1 in the absence of liposomes (right).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/12411/elife-12411-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Stable interaction of Arf1 and Arl1 with S. cerevisiae Sec7\u0394C was assayed by pulldown of Sec7 with a great excess of GST-GTPase bound to GDP (denoted D) or GMPPNP (denoted T*). Following SDS-PAGE, protein was visualized by Coomassie staining. There was no apparent nucleotide-dependent interaction observed between Sec7\u0394C and Arf1-GTP or Arl1-GTP in this experiment.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/12411/elife-12411-fig4-figsupp4-v3.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Stable interaction of membrane-bound Arf1 and Arl1 with S. cerevisiae Sec7\u0394C (as a potential effector) was assayed in the context of membranes by liposome pelleting as described previously (Paczkowski et al., 2012) following EDTA-mediated loading with the indicated nucleotide. The fraction recovered is calculated relative to a baseline of liposome-free pelleting. There was no apparent interaction observed between Sec7\u0394C and membrane-bound Arf1-GTP or Arl1-GTP in this experiment.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/12411/elife-12411-fig4-figsupp5-v3.jpg)\n\n**Figure 4\u2014figure supplement 5.:** S. cerevisiae Sec7\u0394C was assayed for rate of nucleotide exchange of Arf1 in the presence of liposomes and Arl1-GMPPNP as described previously (McDonold and Fromme, 2014).\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/12411/elife-12411-fig4-figsupp6-v3.jpg)\n\n**Figure 4\u2014figure supplement 6.:** 2.5 \u03bcg of each construct used for biochemical assays were separated by SDS-PAGE and stained by Coomassie to assess purity.\n\nTo determine whether the membrane-localized activation of Arf1 monitored by tryptophan fluorescence corresponded to the concomitant membrane association of activated Arf1 with membranes, we performed liposome flotation following a GEF-mediated exchange timecourse to measure the stable membrane association of activated Arf1 (Figure 4\u2014figure supplement 1). The kinetics of Arf1 membrane insertion as measured in this assay directly correlated with the kinetics of Arf1 activation as measured by tryptophan fluorescence and further confirmed the role of the DCB/HUS domain in stimulating Arf1 activation at the membrane surface.\n\nSimilar results were also observed using equivalent T. terrestris constructs on the basis of tryptophan fluorescence (Figure 4\u2014figure supplement 2). As the stimulatory effect is observed in both dimeric (S. cerevisiae) and monomeric (T. terrestris) constructs, we infer that DCB/HUS domain stimulation of GEF activity occurs independently of dimerization. Two potential mechanisms of action thereby present themselves: either the DCB/HUS domain binds to the membrane surface to recruit the GEF domain to its site of action, or the DCB/HUS domain assists in membrane-insertion of the N-terminal amphipathic helix of Arf1.\n\nTo distinguish between these two possibilities, we changed the lipids in the reaction mixture from physiologically relevant TGN-like liposome membranes to non-physiological DMPC/cholate micelles known to support nucleotide exchange of myristoylated Arf1 (Kahn and Gilman, 1986). In the presence of these micelles, the activity of both constructs on myristoylated Arf1 was higher, indicating an increase in the intrinsic rate of nucleotide exchange, yet the Sec7\u0394C construct was again more active than the isolated GEF domain (Figure 4C). As this effect is not seen on \u0394N17Arf1 in the presence of micelles, which displays a uniformly reduced rate of exchange, it cannot be attributed merely to the lipids themselves. In a separate experiment we introduced the L8K mutation into the membrane insertion helix of Arf1, which reduces its hydrophobicity and enables Arf1 activation in the absence of membranes (Luo et al., 2007; Yoon et al., 2004). We observed that the DCB/HUS domain did not stimulate activity of the GEF domain towards L8K-Arf1 in either the absence or presence of membranes (Figure 4D). Taken together, these results suggest that GEF stimulation by the DCB/HUS domain involves insertion of the Arf1 amphipathic helix into a hydrophobic and presumably lipidic environment, yet this effect is indifferent to the precise nature of the lipids.\n\nOur interpretation of these observations is that the DCB/HUS domain assists in overcoming a kinetic activation barrier associated with insertion of the myristoylated Arf1\u2009N-terminal helix into membranes. An alternative possibility, that the DCB/HUS domain has indiscriminate affinity for lipid surfaces and therefore increases the rate of membrane-localized encounters between the GEF domain and its substrate, is addressed further below.\n\n### The surfaces of helices 4 and 6 mediate DCB/HUS activity\n\nTo pair these observations to the structure of the DCB/HUS domain, we performed a targeted functional screen by generating an extensive panel of mutants in S. cerevisiae, selecting conserved residues found at the surface of the T. terrestris DCB/HUS domain structure (Figure 5A). We investigated whether alanine or aspartate substitutions in these conserved surface residues resulted in cellular viability phenotypes at elevated temperature in a sensitized strain in which the levels of Arf1/2 have been knocked down by 90% through disruption of the ARF1 gene (Stearns et al., 1990) (Figure 5B). The established sec7-1 temperature sensitive mutation (S402L in S. cerevisiae) (McDonold and Fromme, 2014; Novick et al., 1980) maps to a conserved serine at residue 156 in the \u03b17\u20138 loop (Figure 6\u2014figure supplement 1). The leucine substitution arising from the sec7-1 mutation likely perturbs the local structure of this region critical to forming the DCB/HUS interface.\u00a0Several other mutants displayed temperature-sensitive growth phenotypes; the most significant growth defects were caused by mutations in residues located on a conserved surface of helices 4, 6, and 8, on the opposite side of the protein from the conserved positively charged patch (Figure 5A,B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/12411/elife-12411-fig5-v3.jpg)\n\n**Figure 5.:** (A) Locations of all S. cerevisiae mutants tested are shown as space-filling spheres mapped on the T. terrestris structure, with backbone colored by conservation. Positions of mutations resulting in stronger temperature sensitive growth phenotypes are colored red (e.g., S. cerevisiae Q365/R368), positions with weaker phenotypes are colored orange (e.g., S. cerevisiae D297/K301/F305), and positions with no growth phenotype are colored blue; the position corresponding to the sec7-1 mutation (S402L) is colored magenta.\u00a0(B) Using a plasmid-shuffling assay, CEN plasmids bearing GFP-tagged Sec7 or Sec7f with the indicated mutations expressed via their endogenous promoter were tested for their ability to rescue a genomic sec7 deletion in a sensitized arf1\u0394/ARF2 strain (CFY863). Growth of serial 10-fold dilutions after 3 days at 37\u00b0C is shown, comparing the shuffled strains on 5-FOA to their parents growing in parallel on synthetic complete media (SC). Changes in the number or size of colonies indicates a growth defect.\n\nTo explore whether any of these mutations affected localization of Sec7 to the TGN, we imaged mutant GFP-Sec7 plasmids in the sensitized arf1\u0394 strain. All of the new mutants that we examined expressed well and exhibited largely punctate localization (Figure 6A). Although some of the mutants were partially mislocalized to the cytoplasm, none were as severe as either the sec7-1 mutant or previously identified mutants in the HDS1 domain (Richardson et al., 2012). For example, although the D297A/K301D/F305D mutant exhibited significant cytoplasmic mislocalization, it was also strongly localized to punctate structures (Figure 6A). In contrast, the sec7-1 mutant only occasionally exhibits robust punctate localization. Therefore, the growth defects displayed by the new DCB/HUS domain mutants do not appear to be attributable to loss of proper localization.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/12411/elife-12411-fig6-v3.jpg)\n\n**Figure 6.:** (A) sec7\u0394/arf1\u0394 strains bearing the indicated GFP-Sec7 alleles on a centromeric plasmid expressed from the SEC7 promoter were imaged at permissive and restrictive temperatures.\u00a0(B) Surface residue conservation is shown on the basis of a 361-sequence MUSCLE alignment comprising all BLAST hits of the T. terrestris Sec7 N-terminus following removal of incomplete sequences and sequences with more than 95% pairwise identity. Green represents conservation. Residues mutated for biochemical assays are shown in colors matching the resultant bars. A closer view of the residue mutated in sec7-1 is shown in supplement 1.\u00a0(C) Mutants purifiable as S. cerevisiae Sec7\u0394C constructs were assayed for rate of nucleotide exchange of myristoylated Arf1 in the presence of liposomes. Activity of the same mutants toward \u0394N17Arf1 in the absence of liposomes is shown in supplement 2.\u00a0(D) The two HUS-box mutants purifiable as S. cerevisiae Sec7\u0394C constructs were assayed for rate of nucleotide exchange of myristoylated Arf1 in the presence of liposomes. Viability and in vivo stability are assessed in supplements 3 and 4.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12411/elife-12411-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The temperature sensitive allele sec7-1 represents an S402L mutation, corresponding to T. terrestris Sec7 residue S156. This serine stabilizes a loop near the interface between the DCB and HUS regions.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12411/elife-12411-fig6-figsupp2-v3.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Purifiable mutants in the S. cerevisiae Sec7\u0394C construct were assayed for rate of nucleotide exchange of \u0394N17Arf1 in the absence of membranes.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/12411/elife-12411-fig6-figsupp3-v3.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Missense mutations in the HUS box were tested for viability at room temperature by plasmid shuffle, spotted in half-log dilutions left to right.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/12411/elife-12411-fig6-figsupp4-v3.jpg)\n\n**Figure 6\u2014figure supplement 4.:** Expression of the indicated GFP-Sec7f alleles was assayed by anti-GFP immunoblot.\n\nTo test whether any of the mutations affecting growth also affected GEF activity, we prepared mutant Sec7\u0394C proteins for in vitro\u00a0analysis. The use of the Sec7\u0394C truncation enabled us to directly monitor the role of the DCB/HUS domain without confounding affects from the C-terminal HDS1-4 domains. While several mutants could not be purified, including sec7-1, a sufficient number representing both conserved regions were purified to allow us to test the involvement of each region in the DCB/HUS stimulatory activity (Figure 6B,C). We found that mutations on the surfaces of helices 4 and 6 (S. cerevisiae residues 297\u2013305 and 364\u2013368) reduced both cell viability and membrane-dependent GEF activity of Sec7\u0394C, whereas mutations in the positively charged patch (i.e., S. cerevisiae residues Arg505 and Lys513) had little effect in vitro despite modestly affecting growth. None of the tested mutations reduced GEF activity in the absence of membranes (Figure 6\u2014figure supplement 2), indicating the mutations that reduce membrane-proximal GEF activity do not simply cause misfolding of these contructs. Therefore, the surfaces of helices 4 and 6 are important for both GEF activity and cell viability.\n\nA notable absence from both the structure presented here and the available structures of the GEF domain is the highly conserved \u2018HUS-box\u2019 located between helix 15 and the helix 16 truncated from our crystallized construct (Mouratou et al., 2005). A previous study reported that the HUS-box was required for a yeast 2-hybrid interaction between the DCB and HUS domains (Ramaen et al., 2007), but our structural data do not support such a role. To assess whether the HUS-box plays a role in GEF stimulation by the DCB/HUS domain, we generated single alanine mutants in the HUS-box (Figure 6D\u2014figure supplements 3 and 4). One mutation, N653A, was both inviable in the sensitized strain and compatible with purification. The N653A Sec7\u0394C construct showed no difference in GEF activity compared to the wild-type allele in the presence of membranes, indicating that the HUS-box plays no role in the observed exchange rate enhancement by the DCB/HUS domain.\n\nAnother potential role of the DCB/HUS domain which would not have been uncovered in our in vitro\u00a0assay is its interaction with Arl1 (Christis and Munro, 2012). Despite extensive effort, we could not detect any stable interaction between S. cerevisiae Sec7\u0394C and Arl1 in the presence or absence of membranes, nor did preincubation of Sec7\u0394C with membrane-bound Arl1 show any effect on catalytic rate (Figure 4\u2014figure supplements 3\u20135). As we previously reported an interaction between Arl1 and longer Sec7 constructs (McDonold and Fromme, 2014), this interaction appears to depend on one or more of the HDS domains in addition to the DCB/HUS domain in S. cerevisiae Sec7.\n\n### The DCB/HUS domain facilitates lipid insertion of the Arf1 amphipathic helix\n\nFinally, to distinguish between different models for lipid-dependent DCB/HUS function, we assayed the ability of the isolated DCB/HUS domain to compete with the Sec7\u0394C construct in the GEF activity assay. Addition of a 16-fold excess of DCB/HUS to an exchange reaction inhibited activity to near the levels of the isolated GEF domain, indicative of a function other than direct stimulation of the GEF domain (Figure 7A).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/12411/elife-12411-fig7-v3.jpg)\n\n**Figure 7.:** (A) S. cerevisiae Sec7\u0394C and isolated GEF constructs were assayed for rate of nucleotide exchange of myristoylated Arf1 in the presence of liposomes, with 16-fold excess DCB/HUS construct or sixfold additional liposomes added as indicated.\u00a0(B) Wild-type S. cerevisiae Sec7\u0394C was assayed for nucleotide exchange of myristoylated Arf1 in the presence of liposomes and a 12-fold excess of DCB/HUS constructs bearing the indicated mutations. The range of activity of interest is bounded by the WT and mock rates and is left unshaded.\u00a0(C) A speculative model of DCB/HUS domain and GEF domain cooperation in Arf1 activation.\n\nIntroduction of mutations into the competing DCB/HUS construct partially alleviated competition correspondent to their inhibitory effects when assayed in the Sec7\u0394C construct, confirming the identification of the site responsible for activity (Figure 7B). We considered the possibility that the excess competing DCB/HUS domain was simply saturating the membrane surface and therefore interfering with membrane-proximal Arf activation. Therefore, we tested whether addition of excess liposome membranes could relieve the competitive inhibition. Addition of a sixfold excess of membranes failed to relieve even partially the inhibitory effect of excess competing DCB/HUS domain (Figure 7A). This indicates that inhibition of Sec7\u0394C GEF activity by excess DCB/HUS domain does not occur through competition for binding to the membrane surface. Therefore, excess DCB/HUS domain likely competes with Sec7\u0394C for binding to the substrate Arf1.\n\nTaken together, our results are consistent with a direct, and likely transient, interaction of the DCB/HUS domain with the Arf1 substrate and imply that the GEF domain and DCB/HUS domain each make distinct contacts with Arf1 during the exchange reaction. Analysis of SAXS data collected on S. cerevisiae Sec7\u0394C suggests flexible linkage between the DCB/HUS and GEF domains (Figure 2\u2014figure supplement 1), supporting the possibility of simultaneous DCB/HUS and GEF domain binding to Arf1.\n\n## Discussion\n\nIn this study, we determined that the regulatory DCB and HUS domains of Sec7 form an unexpected single structural unit that plays a direct role in Arf1 activation at the membrane surface. Previous studies described roles of the DCB/HUS domain in regulation via oligomerization and Arl1 binding (Christis and Munro, 2012; Ramaen et al., 2007). The strength of the DCB/HUS Arl1 interaction appears to differ among Sec7 orthologs from different species; although Arl1 is clearly important for BIG1/2 localization in fly and human cells (Christis and Munro, 2012), it is dispensable for Sec7 localization in S. cerevisiae (McDonold and Fromme, 2014; Setty et al., 2004) and is not required for Sec7 function in all fly tissues (Torres et al., 2014). This suggests eukaryotic cells have evolved multiple ways to regulate Arf activation at the TGN using the same Arf-GEF.\n\nWe have now described an additional and likely conserved function of the DCB/HUS domain: residues of helices 4 and 6 stimulate Arf1 nucleotide exchange activity dependent on the presence of lipids and the GEF domain. Based on the data we present here, a revised model for DCB/HUS function must account for the requirement of an intact Arf1 membrane insertion helix, for the requirement of lipids, and for a presumably transient interaction with Arf1. One speculative model consistent with all observations is presented in Figure 7C. A consequence of Arf1 acting to protect its own hydrophobic membrane insertion moiety tightly coupled with nucleotide state is that the nucleotide exchange transition state may briefly expose the Arf1\u2009N-terminal myristoylated amphipathic helix to aqueous solution before its insertion into the membrane. Exchange of nucleotide by the Sec7 GEF domain may position the flexibly linked DCB/HUS domain appropriately for stabilization of this transition state, either via direct transient binding to the amphipathic helix or via positioning Arf1 optimally relative to the adjacent membrane surface.\n\nThe Golgi Arf-GEFs regulate the central membrane trafficking pathway involved in growth of eukaryotic cells by delivering the bulk of lipids to the plasma membrane (Drubin and Nelson, 1996). We have previously observed a maximum in vitro\u00a0Sec7-mediated Arf1 exchange rate of 2 \u00d7 106 M-1s-1, requiring intact Sec7f and activating small GTPases (McDonold and Fromme, 2014). Using existing estimates of membrane flux and cellular and vesicular protein concentrations (Chong et al., 2015; Dodonova et al., 2015; Layton et al., 2011; Presley et al., 2002), we estimate the rate of Arf1 nucleotide exchange required to support maximal cell growth to be approximately 6 \u00d7 104 M-1s-1 (Supplementary file 3). Sec7 must additionally process enough Arf1 to counterbalance endolysosomal trafficking, as well as \u2018overhead\u2019 for non-productive exchanges not leading to vesiculation. While these latter rates are much more difficult to estimate, it is entirely plausible that the four- to eightfold increase in activity provided by the DCB/HUS domain would prove essential to achieving the Arf1 activation throughput required to support maximal cell growth.\n\nWhile multimerization via the DCB and HUS domains has been observed in several species and has been proposed to regulate Sec7 activity (Grebe et al., 2000; Ramaen et al., 2007), the ability of the DCB/HUS domain to function as a monomer in the T. terrestris Sec7\u0394C construct suggests that dimerization is not essential for DCB/HUS domain function. Sec7 is autoinhibited by both its HDS1 and HDS4 domains, and appears to adopt open and closed conformations (McDonold and Fromme, 2014; Richardson et al., 2012). Interactions between the DCB/HUS and HDS domains may provide a mechanism for autoinhibition by occlusion of the GEF domain in a closed conformation. The absence of the HDS domains in a truncated construct would expose an unstable interaction region in the DCB/HUS domain that becomes stabilized by dimerization. Dimerization of the intact DCB/HUS domain may be an artifact of truncation, but perhaps also corresponds to a bona fide regulatory conformation of the full-length protein induced through interactions with known regulators (McDonold and Fromme, 2014). Our observations that the HDS4 domain mediates both dimerization and autoinhibition imply that Sec7 dimerization is indeed a means of regulation. In the absence of separation of function mutants, it is currently not possible to determine whether dimerization or autoinhibition is the more important function of the HDS4 domain, or whether these two functions are intimately coupled and therefore inseparable. Interestingly, a recent study reported that dimerization of human GBF1, which lacks an HDS4 domain, is not required for its function in cultured cells (Bhatt et al., 2015).\n\nWe have demonstrated that the DCB/HUS domain of Sec7 stimulates GEF activity by facilitating Arf1 amphipathic helix insertion into a lipid environment during nucleotide exchange. Further studies are now needed to elucidate the role of the HUS-box and how the DCB/HUS domain functions in concert with the HDS domains, as well as the basis for the apparent differences in regulation between the early-Golgi and late-Golgi Arf-GEFs.\n\n## Materials and methods\n\n### Purification of constructs\n\nSec7 and Arf1 constructs were purified as previously described (Richardson et al., 2012; Richardson and Fromme, 2015), with no adjustments to the S. cerevisiae construct protocols required for T. terrestris. Briefly, all S. cerevisiae and T. terrestris Sec7 constructs were expressed with an N-terminal His6 tag in 2\u201312 L cultures of E. coli in Terrific Broth, grown overnight at 18\u00b0C. Following lysis, proteins were purified via Ni.NTA resin (Qiagen) in batch, followed by MonoQ ion exchange and Superdex 200 gel filtration (GE Healthcare), with a final buffer composition of 20 mM HEPES pH 7.5, 150 mM NaCl, and 2 mM DTT.\n\n\u0394N17Arf1 constructs were purified as per Sec7, with additional 2 mM MgCl2 added to all buffers. Full-length Arf1 was coexpressed with NMT1 to myristoylate, then following lysis was purified via batch incubation with DEAE-sephacel, batch incubation with ToyoPearl phenyl resin, and Superdex 200 gel filtration. Arf1 L8K purification followed an almost identical protocol, but without NMT1 coexpression. Myristoylated Arf1 was assumed to be fully GDP-bound; Arf1 L8K and \u0394N17Arf1 were treated with EDTA in the presence of excess GDP to convert them to their GDP-bound form prior to activity assays.\n\n### Crystallization and structure determination\n\nSelenomethionine substituted T. terrestris His6-Sec7(1\u2013458) at 16 mg/ml was crystallized via the hanging drop method, mixing 1:1 with 6% Jeffamine ED-2001, 150 mM MES pH 6, 3% DMSO, and 10 mM DTT at 4\u00b0C. Crystals were cryoprotected in a three-stage shift to synthetic well solution plus 30% DMSO. The native construct was crystallized and cryoprotected similarly, using a well solution of 5% Jeffamine ED-2001, 150 mM MES pH 6, and 6% DMSO.\n\nDiffraction data were collected locally at CHESS beamline A1 on an ADSC Quantum-210 CCD detector and processed using HKL-2000 (Otwinowski and Minor, 1997); to improve completeness of collected reflections, datasets from two crystals from the same drop were merged to obtain the final native dataset. Experimental phases were obtained via single-wavelength anomalous diffraction using PHENIX (Adams et al., 2010), permitting the auto-building of the alpha-helical structure by PHENIX, followed by serial manual building in Coot (Emsley et al., 2010) and re-refinement including TLS modeling (Painter and Merritt, 2006). The anomalous signal permitted assignment of residues 245\u2013271 of the interdomain loop, containing two asymmetrically positioned methionines. All protein models were visualized using PyMol (Schr\u00f6dinger).\n\n### Small-angle X-ray scattering (SAXS)\n\nSmall-angle X-ray scattering data were collected at CHESS beamline F2 at room temperature on samples purified to homogeneity as described. Multiple serial exposures of each construct at 4 mg/ml and 3\u20134 successive twofold dilutions were collected against exactly matched blanks and processed using BioXTAS RAW (Nielsen et al., 2012) to confirm absence of radiation- or concentration-dependent aggregation. Theoretical models based on crystal structures were calculated and fit to the experimental data using BUNCH and CORAL (Petoukhov et al., 2012; Petoukhov and Svergun, 2005)\n\n### Multi-angle light scattering (MALS)\n\nProteins purified to homogeneity were exchanged into fresh buffer by serial concentration and redilution to a final concentration of 5 mg/ml, and run through a Wyatt WTC-050S5 gel filtration column coupled to DAWN HELEOS-II light scattering and Optilab T-rEX refractive index detectors (Wyatt Technology) at room temperature. Data were analyzed via ASTRA 6 software to obtain the molecular weight of the sample, and compared to that predicted from the sequence to determine oligomeric state.\n\n### Arf1 nucleotide exchange kinetics\n\nArf1 nucleotide bound state was measured in real-time as described previously (Richardson et al., 2012), with the exception that [Sec7] was increased to equimolar with [Arf1] to permit accurate measurement of the slow GEF construct reaction rate and avoid potentially confounding results from unstable mutant constructs. To a final reaction volume of 150 \u03bcl, HKM buffer (20 mM HEPES pH 7.5, 150 mM KOAc, 2 mM MgCl2), 200 \u03bcM lipids (lipsomes or micelles), 670 nM Sec7 construct, 670 nM Arf1 construct, and 200 \u03bcM GMPPNP were sequentially added while monitoring fluorescence, waiting 1\u20133 min between steps for the fluorescence to stabilize. After addition of GMPPNP, the fluorescence was monitored for an additional 40 min and fit to a single exponential curve to determine the rate of exchange. In the absence of Sec7, fluorescence traces were observed to remain stable, indicating that the observed changes in fluorescence were solely due to the activity of Sec7, and were not a lipid-mediated effect. The calculated rate of exchange was then normalized to the native fluorescence of the input Sec7 construct to obtain kreact. Note that the per-molecule exchange rates calculated from these reactions are lower than reported previously, in part due to the higher concentrations of GEF constructs used here and variations in behavior between liposome batches. Triplicates of each condition were collected for statistics; error bars represent 95% confidence as determined by t test or ANOVA with Tukey\u2019s or Dunnett\u2019s test in postprocessing, as appropriate.\n\n### Yeast plasmid shuffle\n\nSec7 alleles to be assayed were cloned with an N-terminal GFP tag into pRS415 (LEU2 marked), and transformed into yeast containing genomic sec7 and arf1 disruptions and a URA3 plasmid harboring wild-type SEC7 (CFY863). Following overnight growth in \u2013Leu synthetic media, serial half-log dilutions were spotted on 5-FOA and synthetic complete or dropout media and grown for three days at 37\u00b0C.\n\n### Microscopy\n\nCells were grown in synthetic dropout media and imaged in log phase (OD600 ~ 0.5). For the temperature shift experiment, cells were grown shaking in a 37\u00b0C water bath for 30 min before imaging. Live cells were imaged on a DeltaVision RT wide-field deconvolution microscope (Applied Precision). Images were deconvolved using SoftWoRx 3.5.0 software (Applied Precision). Images were further processed in ImageJ, adjusting only min/max light levels for clarity, and using equivalent processing for all images within an experiment.\n\n### Liposome pelleting and flotation experiments\n\nMembrane binding assayed by liposome pelleting and flotation experiments was performed as described (Richardson et al., 2012; Paczkowski et al., 2012; Richardson and Fromme, 2015). Additional details are provided in the corresponding figure legends.\n\n### Accession number\n\nThe PDB accession number for the T. terrestris Sec7 DCB-HUS domain is 5HAS.\n",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "ad9625d4-dc56-40a3-afb7-fafa7dbb8717",
+      "submission_id": "56095e9c-40fc-4d81-8337-b3d76983869c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Chris G Burd, Yale University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.12411.032](https://doi.org/10.7554/eLife.12411.032)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"The Sec7 N-terminal regulatory domains facilitate membrane-proximal activation of the Arf1 GTPase\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors. The evaluation has been overseen by the Reviewing Editor and Randy Schekman as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nA structure of the T. terrestris DCB/HUS domain of Sec7 is described and the role of these domains in GEF activity toward Arf1 has been investigated. The structure work is well done and is clearly presented. in vitro GEF activity assays show that nucleotide exchange on Arf1 by the Sec7 GEF domain is potentiated by the adjacent DCB/HUS domain in the presence of liposomes, and that this requires the N-terminal helix of Arf1. The authors conclude that the DCB/HUS domain facilitates lipid insertion of the Arf1 amphipathic helix.\n\nEssential revisions:\n\nThe reviewers agreed that the major conclusion of the paper, that the DCB/HUS domain facilitates lipid insertion of the Arf1 amphipathic helix, is not adequately supported by the data. While they consider the authors' interpretation of their data to be reasonable, it is not directly supported with experimental data; all that is shown is Trp fluorescence measurements as a proxy for nucleotide exchange. This is necessary to address, particularly since early work on Arf1 (see below) raises an alternative interpretation than the authors' whereby the DCB/HUS domain increase the specific activity of the GEF domain without directly promoting membrane binding by the N-terminal helix. Related, the reviewers are also concerned that the Trp fluorescence assay used to infer nucleotide exchange may be misleading when assayed in the presence of lipids due to the potential that these agents influence the local environment of the Trp residue that reports the occupancy state of the nucleotide binding site. In order to be further considered by eLife, the paper will need to provide direct evidence supporting the model that the DCB-HUS domain acts directly on the N-terminal helix of Arf to promote its insertion into the membrane. With regard to the effects of lipids on Arf Trp fluorescence, the reviewers noted that this latter concern might be adequately addressed by a more thorough description of the assay methods, including the strategy used to account for changes in fluorescence not due to nucleotide binding (i.e., in the text).\n\nBackground: DPMC micelles stimulate the intrinsic rate of hydrolysis on Arf1 (Khan and Gilman 1986). This underscores a concern with the authors' models. Does the DCB-HUS domain promote Arf1 membrane insertion or, alternatively, does DCB-HUS increase the specific activity of the GEF domain when presented when the N-domain of Arf1 is \u2013 through whatever mechanism \u2013 already pried away from its pocket in Arf1:GDP. Indeed, that specific conformational change (characterized by NMR) has been suggested to be a prerequisite for GTP binding:\n\n\"The [yeast Myr-Arf1:GDP] structure clearly places the myristoyl chain in a hydrophobic groove between a C-terminal helix and a loop connecting b strands 3 and 4. The positioning suggests a clash with this loop would occur as it exists in the GTP-bound form, a fact that may require membrane association to accommodate an expelled myristoyl chain before GDP exchange can occur.\" (Liu, Khan, Prestegard PMID: 19141284). A possibility consistent with the authors' membrane-first model is that the DCB-HUS domain might actually allow Arf1-GDP to stably associate with the membrane (in the absence or presence of the GEF domain). That might be a pretty straightforward floatation or pelleting experiment.\n",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "953c7ee4-51bb-4bab-bd9b-8de5ed205210",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C1",
+      "claim": "The Golgi complex is the central sorting compartment of eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The Golgi complex is the central sorting compartment of eukaryotic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about the Golgi complex's role in eukaryotic cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "870d1fe4-2234-4de5-ab97-5ce749f2a332",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C2",
+      "claim": "Arf guanine nucleotide exchange factors (Arf-GEFs) regulate virtually all traffic through the Golgi by activating Arf GTPase trafficking pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Arf guanine nucleotide exchange factors (Arf-GEFs) regulate virtually all traffic through the Golgi by activating Arf GTPase trafficking pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about Arf-GEF function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "f62e4fc4-672b-4631-8140-c306d2c3e5e4",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C3",
+      "claim": "The Golgi Arf-GEFs contain multiple autoregulatory domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The Golgi Arf-GEFs contain multiple autoregulatory domains, but the precise mechanisms underlying their function remain largely undefined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about Arf-GEF structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "a66bd965-97a1-4572-8ebc-d5f8c22b421e",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C4",
+      "claim": "The N-terminal DCB and HUS regulatory domains of the Arf-GEF Sec7 form a single structural unit.",
+      "claim_type": "EXPLICIT",
+      "source": "We report a crystal structure revealing that the N-terminal DCB and HUS regulatory domains of the Arf-GEF Sec7 form a single structural unit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the crystal structure data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "79715268-4cca-47e4-b54d-b1ac5d44d08e",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C5",
+      "claim": "The established role of the N-terminal region in dimerization is not conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that the established role of the N-terminal region in dimerization is not conserved; instead, a C-terminal autoinhibitory domain is responsible for dimerization of Sec7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by MALS and SAXS data showing that dimerization behavior differs between species and constructs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "0d1d77e7-eeff-40c3-a3bd-428fcc83a072",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C6",
+      "claim": "A C-terminal autoinhibitory domain is responsible for dimerization of Sec7.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that the established role of the N-terminal region in dimerization is not conserved; instead, a C-terminal autoinhibitory domain is responsible for dimerization of Sec7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by MALS data showing that the HDS4 domain mediates dimerization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "6a8db581-bb43-4c7b-a030-734575719516",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C7",
+      "claim": "The DCB/HUS domain amplifies the ability of Sec7 to activate Arf1 on the membrane surface by facilitating membrane insertion of the Arf1 amphipathic helix.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the DCB/HUS domain amplifies the ability of Sec7 to activate Arf1 on the membrane surface by facilitating membrane insertion of the Arf1 amphipathic helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by nucleotide exchange assays showing lipid-dependent and amphipathic helix-dependent enhancement of GEF activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "350df5d4-530f-4e0e-9834-fbb59b044a52",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C8",
+      "claim": "The enhancing function of the Sec7 N-terminal domains is consistent with the high rate of Arf1-dependent trafficking to the plasma membrane necessary for maximal cell growth.",
+      "claim_type": "EXPLICIT",
+      "source": "This enhancing function of the Sec7 N-terminal domains is consistent with the high rate of Arf1-dependent trafficking to the plasma membrane necessary for maximal cell growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observed enhancement of GEF activity and known requirements for cell growth.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "76fb4718-a2c7-45cb-ac6c-c27f286603d6",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C9",
+      "claim": "Trafficking of membranes and membrane proteins from their site of synthesis at the endoplasmic reticulum through the secretory pathway proceeds via the Golgi apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotes, trafficking of membranes and membrane proteins from their site of synthesis at the endoplasmic reticulum through the secretory pathway proceeds via the Golgi apparatus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about the secretory pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "020b22d1-0c74-4706-bed1-dc3f88ebaf76",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C10",
+      "claim": "Much of the trafficking process is controlled at the trans-Golgi network (TGN), where the final processed forms of proteins are recognized by cargo adaptors and packaged into vesicles for transport to endosomes, lysosomes, and the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Much of this process is controlled at the trans-Golgi network (TGN), where the final processed forms of proteins are recognized by cargo adaptors and packaged into vesicles for transport to endosomes, lysosomes, and the plasma membrane (Guo et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "981d5040-f18f-464a-a5cf-f887a9cce8a8",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C11",
+      "claim": "Arf GTPases act as the central coordination point for vesicle formation at the TGN, directly regulating a cascade of cargo adaptors.",
+      "claim_type": "EXPLICIT",
+      "source": "In both humans and model organisms, Arf GTPases act as the central coordination point for vesicle formation at the TGN, directly regulating a cascade of cargo adaptors (Donaldson and Jackson, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "bd8b405f-994b-43ec-8259-45a10f1ba250",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C12",
+      "claim": "Arf activation is regulated by guanine nucleotide exchange factors (GEFs) that exchange bound GDP for GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Arf activation is regulated in turn by guanine nucleotide exchange factors (GEFs) that exchange bound GDP for GTP (Casanova, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "7436236d-0249-4de3-9398-ea5b139e28db",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C13",
+      "claim": "The conformational change in the Arf GTPase accompanying nucleotide exchange rearranges 'switch' regions for recognition by effectors and exposes a myristoylated amphipathic N-terminal helix that inserts into the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "The accompanying conformational change in the Arf GTPase rearranges 'switch' regions for recognition by effectors and exposes a myristoylated amphipathic N-terminal helix that inserts into the membrane (Antonny et al., 1997; Goldberg, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "86c45cf7-9398-4efe-b43d-a6ac150ef8f8",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C14",
+      "claim": "Arf-GEFs stand upstream of Arf GTPases as the initiator of the cascade of events leading to vesiculation of TGN cisternae.",
+      "claim_type": "EXPLICIT",
+      "source": "Arf-GEFs thereby stand upstream of Arf GTPases as the initiator of the cascade of events leading to vesiculation of TGN cisternae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the established role of Arf-GEFs in activating Arf GTPases.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "52b531fb-2e8d-46f7-a831-b01be94abfd2",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C15",
+      "claim": "At the TGN, the Arf1-5 GTPases are activated by the BIG1/2 proteins in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "At the TGN, the Arf1-5 GTPases are activated by the BIG1/2 proteins in humans (Mansour et al., 1999; Yamaji et al., 2000) and the Arf1/2 GTPases are activated by Sec7 in the model organism Saccharomyces cerevisiae (Achstetter et al., 1988; Peyroche et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "ee358178-7a10-465a-bb06-996a18d426dd",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C16",
+      "claim": "The Arf1/2 GTPases are activated by Sec7 in the model organism Saccharomyces cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "At the TGN, the Arf1-5 GTPases are activated by the BIG1/2 proteins in humans (Mansour et al., 1999; Yamaji et al., 2000) and the Arf1/2 GTPases are activated by Sec7 in the model organism Saccharomyces cerevisiae (Achstetter et al., 1988; Peyroche et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "2983dc9d-6528-4965-8948-e6e7537e8861",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C17",
+      "claim": "TGN-localized Arf-GEFs are universally conserved in eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "These TGN-localized Arf-GEFs are universally conserved in eukaryotes, and their importance is underscored by neurological disorders associated with mutations in the BIG2/ARFGEF2 gene (Banne et al., 2013; Sheen et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "2be64020-6e1a-4a0d-ac89-0e18ac891de9",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C18",
+      "claim": "The importance of TGN-localized Arf-GEFs is underscored by neurological disorders associated with mutations in the BIG2/ARFGEF2 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "These TGN-localized Arf-GEFs are universally conserved in eukaryotes, and their importance is underscored by neurological disorders associated with mutations in the BIG2/ARFGEF2 gene (Banne et al., 2013; Sheen et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "7080786a-e84c-4006-bf7e-df2013fc7a41",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C19",
+      "claim": "The TGN-localized Arf-GEFs comprise roughly 1800 functional residues including a central catalytic domain of ~200 residues mediating nucleotide exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "The TGN-localized Arf-GEFs comprise roughly 1800 functional residues including a central catalytic domain of ~200 residues mediating nucleotide exchange (Chardin et al., 1996; Morinaga et al., 1996; Peyroche et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "be3980a8-5404-4617-951c-7d15ca046c66",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C20",
+      "claim": "Conserved domains C-terminal to the GEF domain, termed HDS1-4, act to integrate the signals from several small GTPases to switch Sec7 from a strongly autoinhibited to a strongly autoactivated form.",
+      "claim_type": "EXPLICIT",
+      "source": "Conserved domains C-terminal to the GEF domain, termed HDS1-4 (homology downstream of Sec7) (Mouratou et al., 2005), act to integrate the signals from several small GTPases, including Arf1 itself, to switch Sec7 from a strongly autoinhibited to a strongly autoactivated form (McDonold and Fromme, 2014; Richardson et al., 2012; Richardson and Fromme, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "58bde32f-20f6-4f9b-a6b0-586e1da5f1ae",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C21",
+      "claim": "The N-terminal DCB and HUS domains are conserved in all Golgi Arf-GEFs and essential for Golgi function.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal DCB (dimerization and cyclophilin binding) and HUS (homology upstream of Sec7) domains, though conserved in all Golgi Arf-GEFs and essential for Golgi function (Ramaen et al., 2007), remain more of an enigma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "d6e857e8-3444-4da8-9137-bcfbb769d72d",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C22",
+      "claim": "Numerous functions have been proposed for the DCB and HUS domains, including cyclophilin binding, regulated dimerization, Arl1 and Arf1 GTPase binding, and enhancement of GEF activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous functions have been proposed, including cyclophilin binding, regulated dimerization, Arl1 and Arf1 GTPase binding, and enhancement of GEF activity, but studies are frequently contradictory and fail to assemble into a unified understanding of function (Christis and Munro, 2012; Grebe et al., 2000; Lowery et al., 2013; Mouratou et al., 2005; Ramaen et al., 2007; Richardson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "ae3c6472-3fe0-4d3e-9874-57dfb60745a7",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C23",
+      "claim": "Studies on DCB and HUS domain function are frequently contradictory and fail to assemble into a unified understanding of function.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous functions have been proposed, including cyclophilin binding, regulated dimerization, Arl1 and Arf1 GTPase binding, and enhancement of GEF activity, but studies are frequently contradictory and fail to assemble into a unified understanding of function (Christis and Munro, 2012; Grebe et al., 2000; Lowery et al., 2013; Mouratou et al., 2005; Ramaen et al., 2007; Richardson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "b151c79f-86eb-4de5-9f4f-f0d20b1e4a03",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C24",
+      "claim": "Dimerization of the N-terminal domain of Sec7 is not conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that dimerization of this N-terminal domain is not conserved and that Sec7 dimerization is primarily mediated by the C-terminal HDS4 domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by MALS and SAXS data showing different dimerization behavior in different species.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "a261deff-b03f-4303-9485-fae271728891",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C25",
+      "claim": "Sec7 dimerization is primarily mediated by the C-terminal HDS4 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that dimerization of this N-terminal domain is not conserved and that Sec7 dimerization is primarily mediated by the C-terminal HDS4 domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by MALS data showing that removal of HDS4 results in monomeric constructs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "7516797b-8997-4472-8a8e-65c159ae8900",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C26",
+      "claim": "The DCB/HUS domain enhances the activation of Arf1 in a manner dependent on both lipids and the N-terminal membrane insertion element of Arf1.",
+      "claim_type": "EXPLICIT",
+      "source": "We describe a new function of the DCB/HUS regulatory domain: this domain enhances the activation of Arf1 in a manner dependent on both lipids and the N-terminal membrane insertion element of Arf1, implying a role in chaperoning the insertion of Arf1 into the Golgi membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by nucleotide exchange assays showing lipid-dependent and amphipathic helix-dependent enhancement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "1b7c5aa4-78d3-4dd3-aff9-c7e69a699602",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C27",
+      "claim": "The DCB/HUS domain plays a role in chaperoning the insertion of Arf1 into the Golgi membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "We describe a new function of the DCB/HUS regulatory domain: this domain enhances the activation of Arf1 in a manner dependent on both lipids and the N-terminal membrane insertion element of Arf1, implying a role in chaperoning the insertion of Arf1 into the Golgi membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observed lipid-dependent and amphipathic helix-dependent enhancement of GEF activity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "cd4d757f-33f0-4f47-94a9-ff5c8d89f61f",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C28",
+      "claim": "A construct comprising residues 1\u2013458 of T. terrestris Sec7 produced crystals diffracting to 2.6 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "Following correction of the annotated intron (Supplementary file 1), a construct comprising residues 1\u2013458 of T. terrestris produced crystals diffracting to 2.6 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by crystallographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "80cfc174-7ee6-43ec-b2f3-bc0e1a09aa62",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C29",
+      "claim": "The structure of the DCB and HUS domains was determined with four copies in the asymmetric unit using experimental phase determination by single-wavelength anomalous diffraction of selenomethionine-substituted protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Using experimental phase determination by single-wavelength anomalous diffraction of selenomethionine-substituted protein, the structure of the DCB and HUS domains was determined with four copies in the asymmetric unit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by crystallographic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "58469fdd-838f-4aef-9ab2-99a595cdc559",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C30",
+      "claim": "The DCB and HUS domains together form a single continuous armadillo repeat joined by a conserved ~1400 \u00c52 hydrophobic interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The DCB and HUS domains together form a single continuous armadillo repeat joined by a conserved ~1400 \u00c52 hydrophobic interface, comprising helices 7 and 8 from the DCB domain and helices 10 and 11 from the HUS domain. (Figure 1A and Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the crystal structure data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "f4b736d4-0db7-467d-9a6a-b529e48e7df8",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C31",
+      "claim": "A striking conserved positively charged patch is seen at the interface of helices 7 and 10.",
+      "claim_type": "EXPLICIT",
+      "source": "A striking conserved positively charged patch is seen at the interface of helices 7 and 10 (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the crystal structure data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "12452a7a-9cab-4d39-bb77-e0f2481db1bc",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C32",
+      "claim": "The crystallized construct forms a dimer in the crystal via its C-terminal helices 14 and 15, with helix 15 of each copy aligned antiparallel to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystallized construct forms a dimer in the crystal via its C-terminal helices 14 and 15, with helix 15 of each copy aligned antiparallel to each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "53ef77f6-d782-42d9-89f0-2640fa820bb1",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C33",
+      "claim": "Small-angle X-ray scattering (SAXS) analysis confirmed that the observed dimerization mode occurred in solution as well as in the crystal.",
+      "claim_type": "EXPLICIT",
+      "source": "Dimerization is known to occur in N-terminal constructs of Sec7 and its homologs (Grebe et al., 2000; Ramaen et al., 2007; Richardson et al., 2012), and small-angle X-ray scattering (SAXS) analysis confirmed that the observed dimerization mode occurred in solution as well as in the crystal (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SAXS data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "90d3b31d-6e56-401e-a360-faeb6262f881",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C34",
+      "claim": "The intact T. terrestris DCB/HUS domain (residues 1\u2013492) SAXS data closely fits that predicted from a monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "While slight divergence is seen, the intact T. terrestris DCB/HUS domain SAXS data closely fits that predicted from a monomer (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SAXS data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "556a0be4-ab47-4656-89aa-b7c151ce1af3",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C35",
+      "claim": "The observed dimerization interface of the truncated construct is likely an artifact resulting from truncation of the C-terminal helix of the HUS domain.",
+      "claim_type": "EXPLICIT",
+      "source": "This strongly suggests that the observed dimerization interface is an artifact resulting from truncation of the C-terminal helix of the HUS domain, although it is possible that this dimerization mode represents a regulated conformation of the N-terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from SAXS data showing that the intact construct is monomeric.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "a0015e93-a67a-438c-b7af-510ec77c1857",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C36",
+      "claim": "Full-length T. terrestris Sec7 and the corresponding S. cerevisiae Sec7f construct were both dimeric.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that full-length T. terrestris Sec7 and the corresponding S. cerevisiae Sec7f (residues 203\u20132009) construct were both dimeric (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MALS data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "ee7690c2-8c78-4953-9f1f-0a095d28ab1e",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C37",
+      "claim": "Removal of the C-terminal HDS4 domain resulted in a monomer for constructs from both T. terrestris and S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, removal of the C-terminal HDS4 domain resulted in a monomer for constructs from both species, whereas a construct corresponding to a predicted coiled-coil from the HDS4 domain (Mari\u00f1o-Ram\u00edrez and Hu, 2002) was itself dimeric.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by MALS data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "9dd6f8bc-5efb-4873-88f5-ce63b667cfb2",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C38",
+      "claim": "A construct corresponding to a predicted coiled-coil from the HDS4 domain was itself dimeric.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, removal of the C-terminal HDS4 domain resulted in a monomer for constructs from both species, whereas a construct corresponding to a predicted coiled-coil from the HDS4 domain (Mari\u00f1o-Ram\u00edrez and Hu, 2002) was itself dimeric.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by MALS data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "3c00077c-014e-4028-a532-8054b04859bb",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C39",
+      "claim": "The HDS4 domain mediates dimerization of the intact Sec7 proteins from both T. terrestris and S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the HDS4 domain mediates dimerization of the intact Sec7 proteins from both T. terrestris and S. cerevisiae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from MALS data showing that removal of HDS4 results in monomers.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "f65c43db-18e9-4d0a-96fc-d97ccea523b2",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C40",
+      "claim": "Virtually all cells lacking the essential SEC7 gene and harboring a GFP-Sec7\u0394HDS4 construct were unable to grow.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine the role of the HDS4 domain in cells, we attempted to introduce a GFP-Sec7\u0394HDS4 construct into cells lacking the essential SEC7 gene. Virtually all such cells were unable to grow, similar to the previously described lethality arising from removal of the HDS2-4 domains (Figure 3A) (Richardson et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by plasmid shuffle data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "ace0f6e1-3ee3-43d2-86a5-5ab48653ffb8",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C41",
+      "claim": "GFP-Sec7\u0394HDS4 was largely localized correctly to the TGN, as observed by its colocalization with endogenous Sec7-RFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we detected a low level of cytoplasmic mislocalization, GFP-Sec7\u0394HDS4 was largely localized correctly to the TGN, as observed by its colocalization with endogenous Sec7-RFP (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microscopy data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "296a6626-050f-4a1f-8129-393fc3cacce9",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C42",
+      "claim": "Localization of the shorter GFP-Sec7\u0394C+HDS1 construct was more severely compromised.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, localization of the shorter GFP-Sec7\u0394C+HDS1 construct was more severely compromised, as seen previously (Richardson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by microscopy data and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "545b576a-4279-42a0-8359-a322c79973e9",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C43",
+      "claim": "The HDS4 domain is critically important for Sec7 function in cells but does not appear to play a major role in its localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the HDS4 domain is critically important for Sec7 function in cells but does not appear to play a major role in its localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observation that GFP-Sec7\u0394HDS4 is largely localized correctly but cells cannot grow.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "b7cfac6f-94ae-45a6-bf02-7d36a0d06977",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C44",
+      "claim": "A construct lacking the HDS4 domain is monomeric.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas a construct lacking the HDS4 domain is monomeric, a construct lacking the HDS2-4 domains was an equilibrium mixture of monomeric and dimeric species (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MALS data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "fd8bf7bc-441c-46d9-87db-6f1559eb3156",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C45",
+      "claim": "A construct lacking the HDS2-4 domains was an equilibrium mixture of monomeric and dimeric species.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas a construct lacking the HDS4 domain is monomeric, a construct lacking the HDS2-4 domains was an equilibrium mixture of monomeric and dimeric species (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MALS data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "9a1ae7d5-f867-41d7-8ae8-5c7d87a428ca",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C46",
+      "claim": "Constructs lacking the HDS1-4 domains with or without the GEF domain resulted in stable dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Removal of additional domains, generating constructs lacking the HDS1-4 domains with or without the GEF domain, resulted in stable dimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by MALS data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "86fd979c-78ee-4411-bb7a-3611003a1f73",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C47",
+      "claim": "The corresponding constructs of T. terrestris Sec7 lacking the HDS1-4 domains were monomeric.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the corresponding constructs of T. terrestris Sec7 were monomeric (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MALS data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "bcce98e1-ddf4-4d0e-a436-e8e569204ee5",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C48",
+      "claim": "The simplest model accounting for dimerization of the isolated S. cerevisiae N-terminus invokes an interaction between the HDS1 and DCB/HUS domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The simplest model accounting for dimerization of the isolated S. cerevisiae N-terminus, dimerization via the HDS4 domain, and loss of dimerization when the HDS1 domain is present, invokes an interaction between the HDS1 and DCB/HUS domains (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on inference from the observed dimerization patterns of different constructs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "2879e6f3-00c1-49ed-857c-805ee42b70eb",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C49",
+      "claim": "When present, the HDS1 domain likely masks a site by which the DCB/HUS domain dimerizes in its absence.",
+      "claim_type": "EXPLICIT",
+      "source": "When present, the HDS1 domain likely masks a site by which the DCB/HUS domain dimerizes in its absence, but Sec7 retains its dimerization via the HDS4 domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observed dimerization patterns of different constructs.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "2539fcf8-4afd-47ad-a2e4-2ede56c5ffeb",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C50",
+      "claim": "Dimerization of the DCB/HUS domain is not a conserved behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also evident from the behavior of the T. terrestris constructs that dimerization of the DCB/HUS domain is not a conserved behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observation that T. terrestris constructs are monomeric while S. cerevisiae constructs are dimeric.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "9be88093-b42e-4956-910e-57eac148bcc3",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C51",
+      "claim": "Modeling to SAXS data collected on S. cerevisiae Sec7(203\u20131017) suggests that the GEF domain is flexibly connected to the DCB/HUS domain rather than continuing the armadillo repeat.",
+      "claim_type": "EXPLICIT",
+      "source": "While reliable SAXS data could not be obtained from T. terrestris constructs including the GEF domain, modeling our N-terminal structure and a previously solved GEF domain structure (Renault et al., 2002) to SAXS data collected on S. cerevisiae Sec7(203\u20131017) (Sec7\u0394C) suggests that the GEF domain is flexibly connected to the DCB/HUS domain rather than continuing the armadillo repeat (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SAXS data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "afd5caa4-c009-4992-a956-0c77d88ca0da",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C52",
+      "claim": "Gea2 full-length and C-terminal truncation constructs are dimeric.",
+      "claim_type": "EXPLICIT",
+      "source": "MALS analysis revealed that Gea2 full-length and C-terminal truncation constructs are dimeric (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by MALS data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "a2b71271-bfb1-4d29-bb1f-0a9abff18852",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C53",
+      "claim": "Dimerization in some form is critical to the regulation of all the Golgi Arf-GEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that dimerization in some form is critical to the regulation of all the Golgi Arf-GEFs, and that in the absence of an HDS4 domain, N-terminal dimerization may have evolved to acquire additional importance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observation that Gea2, which lacks an HDS4 domain, is dimeric.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "7dd9fd7c-d4bc-4dbd-9121-412526aba347",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C54",
+      "claim": "In the absence of an HDS4 domain, N-terminal dimerization may have evolved to acquire additional importance.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that dimerization in some form is critical to the regulation of all the Golgi Arf-GEFs, and that in the absence of an HDS4 domain, N-terminal dimerization may have evolved to acquire additional importance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about the evolutionary significance of dimerization.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "ea686e0e-b7dc-41ce-996e-d88a38feeb2a",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C55",
+      "claim": "When membranes were removed from the reaction and the N-terminal membrane insertion helix of Arf1 was truncated, the DCB/HUS domain of S. cerevisiae Sec7 no longer stimulated GEF activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Extending our previous results, we were surprised to observe that when we removed membranes from the reaction and truncated the N-terminal membrane insertion helix of Arf1 to preserve its ability to exchange nucleotide (\u0394N17Arf1), the DCB/HUS domain of S. cerevisiae Sec7 no longer stimulated GEF activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by nucleotide exchange assay data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "c0dcca82-ca4a-4754-93c5-8518d8a69d6d",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C56",
+      "claim": "The Sec7\u0394C construct was slightly less active than the GEF domain alone on \u0394N17Arf1 in the absence of membranes, possibly due to a reduced rate of diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the Sec7\u0394C construct was slightly less active than the GEF domain alone, possibly due to a reduced rate of diffusion (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by nucleotide exchange assay data shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "d32125e4-1cc8-43c7-b7eb-78bea2fefd7e",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C57",
+      "claim": "The DCB/HUS domain stimulates GEF domain activation of Arf1 on membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the DCB/HUS domain stimulates GEF domain activation of Arf1 on membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observation that the DCB/HUS domain enhances activity on membranes but not in their absence.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "758e03aa-889d-4623-a55f-1a4b6b4afcf0",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C58",
+      "claim": "Similar results were observed using equivalent T. terrestris constructs on the basis of tryptophan fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were also observed using equivalent T. terrestris constructs on the basis of tryptophan fluorescence (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by nucleotide exchange assay data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "fdac4f2f-2528-432f-8e49-b09c5bceb2e4",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C59",
+      "claim": "DCB/HUS domain stimulation of GEF activity occurs independently of dimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "As the stimulatory effect is observed in both dimeric (S. cerevisiae) and monomeric (T. terrestris) constructs, we infer that DCB/HUS domain stimulation of GEF activity occurs independently of dimerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observation that both dimeric and monomeric constructs show stimulation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "e1d79f0d-0a48-45d6-820d-578d504f09ca",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C60",
+      "claim": "In the presence of DMPC/cholate micelles, the activity of both Sec7\u0394C and GEF domain constructs on myristoylated Arf1 was higher, indicating an increase in the intrinsic rate of nucleotide exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of these micelles, the activity of both constructs on myristoylated Arf1 was higher, indicating an increase in the intrinsic rate of nucleotide exchange, yet the Sec7\u0394C construct was again more active than the isolated GEF domain (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by nucleotide exchange assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "59c0a187-28ee-4d4c-a341-851af654c189",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C61",
+      "claim": "The Sec7\u0394C construct was more active than the isolated GEF domain in the presence of DMPC/cholate micelles.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of these micelles, the activity of both constructs on myristoylated Arf1 was higher, indicating an increase in the intrinsic rate of nucleotide exchange, yet the Sec7\u0394C construct was again more active than the isolated GEF domain (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by nucleotide exchange assay data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "4e66d303-e110-4194-ba3f-e67e843fe971",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C62",
+      "claim": "The DCB/HUS domain did not stimulate activity of the GEF domain towards L8K-Arf1 in either the absence or presence of membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the DCB/HUS domain did not stimulate activity of the GEF domain towards L8K-Arf1 in either the absence or presence of membranes (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by nucleotide exchange assay data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "055a6ad3-fc99-4cc8-ab65-d97f626a8751",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C63",
+      "claim": "GEF stimulation by the DCB/HUS domain involves insertion of the Arf1 amphipathic helix into a hydrophobic and presumably lipidic environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that GEF stimulation by the DCB/HUS domain involves insertion of the Arf1 amphipathic helix into a hydrophobic and presumably lipidic environment, yet this effect is indifferent to the precise nature of the lipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observation that the DCB/HUS domain enhances activity with myristoylated Arf1 but not with L8K-Arf1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "53964bdf-c757-41c0-aa67-86d561f1ddda",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C64",
+      "claim": "The DCB/HUS domain assists in overcoming a kinetic activation barrier associated with insertion of the myristoylated Arf1 N-terminal helix into membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our interpretation of these observations is that the DCB/HUS domain assists in overcoming a kinetic activation barrier associated with insertion of the myristoylated Arf1 N-terminal helix into membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observed lipid-dependent and amphipathic helix-dependent enhancement of GEF activity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "a7c03fd5-4a72-4f03-be90-9020b81549f6",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C65",
+      "claim": "Several mutants displayed temperature-sensitive growth phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Several other mutants displayed temperature-sensitive growth phenotypes; the most significant growth defects were caused by mutations in residues located on a conserved surface of helices 4, 6, and 8, on the opposite side of the protein from the conserved positively charged patch (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by plasmid shuffle data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "ee8a7d09-bed6-4b15-895a-2177fc855e58",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C66",
+      "claim": "The most significant growth defects were caused by mutations in residues located on a conserved surface of helices 4, 6, and 8.",
+      "claim_type": "EXPLICIT",
+      "source": "Several other mutants displayed temperature-sensitive growth phenotypes; the most significant growth defects were caused by mutations in residues located on a conserved surface of helices 4, 6, and 8, on the opposite side of the protein from the conserved positively charged patch (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by plasmid shuffle data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "101b9ee6-92f4-4f5e-a9a3-670925f2a0f0",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C67",
+      "claim": "All of the new mutants that were examined expressed well and exhibited largely punctate localization.",
+      "claim_type": "EXPLICIT",
+      "source": "To explore whether any of these mutations affected localization of Sec7 to the TGN, we imaged mutant GFP-Sec7 plasmids in the sensitized arf1\u0394 strain. All of the new mutants that we examined expressed well and exhibited largely punctate localization (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by microscopy data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "d3424c08-d942-47cf-aef1-6263c8131d9d",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C68",
+      "claim": "The growth defects displayed by the new DCB/HUS domain mutants do not appear to be attributable to loss of proper localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the growth defects displayed by the new DCB/HUS domain mutants do not appear to be attributable to loss of proper localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observation that mutants are largely localized correctly but still show growth defects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "946385e3-36aa-4f1e-89f4-926a3a45a0b0",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C69",
+      "claim": "Mutations on the surfaces of helices 4 and 6 reduced both cell viability and membrane-dependent GEF activity of Sec7\u0394C.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mutations on the surfaces of helices 4 and 6 (S. cerevisiae residues 297\u2013305 and 364\u2013368) reduced both cell viability and membrane-dependent GEF activity of Sec7\u0394C, whereas mutations in the positively charged patch (i.e., S. cerevisiae residues Arg505 and Lys513) had little effect in vitro despite modestly affecting growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by nucleotide exchange assay data shown in Figure 6C and plasmid shuffle data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "cd5c16f0-321c-42ca-a007-120c6847940c",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C70",
+      "claim": "Mutations in the positively charged patch had little effect in vitro despite modestly affecting growth.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mutations on the surfaces of helices 4 and 6 (S. cerevisiae residues 297\u2013305 and 364\u2013368) reduced both cell viability and membrane-dependent GEF activity of Sec7\u0394C, whereas mutations in the positively charged patch (i.e., S. cerevisiae residues Arg505 and Lys513) had little effect in vitro despite modestly affecting growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by nucleotide exchange assay data shown in Figure 6C and plasmid shuffle data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "5701b77d-a714-45a5-848d-a0d2f1fb436e",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C71",
+      "claim": "None of the tested mutations reduced GEF activity in the absence of membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the tested mutations reduced GEF activity in the absence of membranes (Figure 6\u2014figure supplement 2), indicating the mutations that reduce membrane-proximal GEF activity do not simply cause misfolding of these contructs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by nucleotide exchange assay data shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "80e6cc1b-2905-494e-8f0d-9eed4b571c11",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C72",
+      "claim": "The mutations that reduce membrane-proximal GEF activity do not simply cause misfolding of these constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "None of the tested mutations reduced GEF activity in the absence of membranes (Figure 6\u2014figure supplement 2), indicating the mutations that reduce membrane-proximal GEF activity do not simply cause misfolding of these contructs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observation that mutations do not reduce activity in the absence of membranes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "81dc1bb9-bd5f-46ec-9651-c43b3c070770",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C73",
+      "claim": "The surfaces of helices 4 and 6 are important for both GEF activity and cell viability.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the surfaces of helices 4 and 6 are important for both GEF activity and cell viability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observation that mutations in these regions reduce both GEF activity and cell viability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "f44378ad-aac4-43d5-b3f1-b16a624e1523",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C74",
+      "claim": "The N653A Sec7\u0394C construct showed no difference in GEF activity compared to the wild-type allele in the presence of membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "One mutation, N653A, was both inviable in the sensitized strain and compatible with purification. The N653A Sec7\u0394C construct showed no difference in GEF activity compared to the wild-type allele in the presence of membranes, indicating that the HUS-box plays no role in the observed exchange rate enhancement by the DCB/HUS domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by nucleotide exchange assay data shown in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "22c32981-6c6c-403f-9a73-d2c9858fd7e1",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C75",
+      "claim": "The HUS-box plays no role in the observed exchange rate enhancement by the DCB/HUS domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The N653A Sec7\u0394C construct showed no difference in GEF activity compared to the wild-type allele in the presence of membranes, indicating that the HUS-box plays no role in the observed exchange rate enhancement by the DCB/HUS domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observation that the N653A mutation does not affect GEF activity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "f272232f-f890-429c-9d02-b18094b56300",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C76",
+      "claim": "No stable interaction between S. cerevisiae Sec7\u0394C and Arl1 could be detected in the presence or absence of membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite extensive effort, we could not detect any stable interaction between S. cerevisiae Sec7\u0394C and Arl1 in the presence or absence of membranes, nor did preincubation of Sec7\u0394C with membrane-bound Arl1 show any effect on catalytic rate (Figure 4\u2014figure supplements 3\u20135).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pulldown and liposome pelleting data shown in Figure 4\u2014figure supplements 3\u20135.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "79176726-5c6a-4937-83cd-fd797d990621",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C77",
+      "claim": "Preincubation of Sec7\u0394C with membrane-bound Arl1 showed no effect on catalytic rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite extensive effort, we could not detect any stable interaction between S. cerevisiae Sec7\u0394C and Arl1 in the presence or absence of membranes, nor did preincubation of Sec7\u0394C with membrane-bound Arl1 show any effect on catalytic rate (Figure 4\u2014figure supplements 3\u20135).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by nucleotide exchange assay data shown in Figure 4\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "a15b3094-758d-4200-86a6-1bead4e541a5",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C78",
+      "claim": "The interaction between Arl1 and Sec7 appears to depend on one or more of the HDS domains in addition to the DCB/HUS domain in S. cerevisiae Sec7.",
+      "claim_type": "EXPLICIT",
+      "source": "As we previously reported an interaction between Arl1 and longer Sec7 constructs (McDonold and Fromme, 2014), this interaction appears to depend on one or more of the HDS domains in addition to the DCB/HUS domain in S. cerevisiae Sec7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observation that Sec7\u0394C does not interact with Arl1 but longer constructs do.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "be593d56-ca43-4e4d-a4dc-723efd2d9e2e",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C79",
+      "claim": "Addition of a 16-fold excess of DCB/HUS to an exchange reaction inhibited activity to near the levels of the isolated GEF domain.",
+      "claim_type": "EXPLICIT",
+      "source": "To distinguish between different models for lipid-dependent DCB/HUS function, we assayed the ability of the isolated DCB/HUS domain to compete with the Sec7\u0394C construct in the GEF activity assay. Addition of a 16-fold excess of DCB/HUS to an exchange reaction inhibited activity to near the levels of the isolated GEF domain, indicative of a function other than direct stimulation of the GEF domain (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by nucleotide exchange assay data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "5a535a36-516b-433b-ab9f-c85251249b7e",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C80",
+      "claim": "Introduction of mutations into the competing DCB/HUS construct partially alleviated competition correspondent to their inhibitory effects when assayed in the Sec7\u0394C construct.",
+      "claim_type": "EXPLICIT",
+      "source": "Introduction of mutations into the competing DCB/HUS construct partially alleviated competition correspondent to their inhibitory effects when assayed in the Sec7\u0394C construct, confirming the identification of the site responsible for activity (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by nucleotide exchange assay data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "30876134-07be-47ae-a76d-9686b4ffd07c",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C81",
+      "claim": "Addition of a sixfold excess of membranes failed to relieve the inhibitory effect of excess competing DCB/HUS domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of a sixfold excess of membranes failed to relieve even partially the inhibitory effect of excess competing DCB/HUS domain (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by nucleotide exchange assay data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "4df75861-4865-4a57-92d7-30098579f8be",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C82",
+      "claim": "Inhibition of Sec7\u0394C GEF activity by excess DCB/HUS domain does not occur through competition for binding to the membrane surface.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that inhibition of Sec7\u0394C GEF activity by excess DCB/HUS domain does not occur through competition for binding to the membrane surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observation that excess membranes do not relieve inhibition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "bb1767d3-87e3-46f5-aa5f-08a012d1a16f",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C83",
+      "claim": "Excess DCB/HUS domain likely competes with Sec7\u0394C for binding to the substrate Arf1.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, excess DCB/HUS domain likely competes with Sec7\u0394C for binding to the substrate Arf1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observation that excess DCB/HUS domain inhibits activity and this is not relieved by excess membranes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "40980058-ff47-4fde-b95a-f6550f424b77",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C84",
+      "claim": "The results are consistent with a direct, and likely transient, interaction of the DCB/HUS domain with the Arf1 substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results are consistent with a direct, and likely transient, interaction of the DCB/HUS domain with the Arf1 substrate and imply that the GEF domain and DCB/HUS domain each make distinct contacts with Arf1 during the exchange reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the competition experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "5abded80-cf0d-48d8-8b2c-87f33525cedd",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C85",
+      "claim": "The GEF domain and DCB/HUS domain each make distinct contacts with Arf1 during the exchange reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results are consistent with a direct, and likely transient, interaction of the DCB/HUS domain with the Arf1 substrate and imply that the GEF domain and DCB/HUS domain each make distinct contacts with Arf1 during the exchange reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the competition experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "5a8f6190-b168-4139-8384-7cab124ea507",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C86",
+      "claim": "Analysis of SAXS data collected on S. cerevisiae Sec7\u0394C suggests flexible linkage between the DCB/HUS and GEF domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of SAXS data collected on S. cerevisiae Sec7\u0394C suggests flexible linkage between the DCB/HUS and GEF domains (Figure 2\u2014figure supplement 1), supporting the possibility of simultaneous DCB/HUS and GEF domain binding to Arf1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by SAXS data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "1fe0bbbf-dba2-45e5-9e6e-8f5eef4c9f70",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C87",
+      "claim": "The regulatory DCB and HUS domains of Sec7 form a single structural unit that plays a direct role in Arf1 activation at the membrane surface.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we determined that the regulatory DCB and HUS domains of Sec7 form an unexpected single structural unit that plays a direct role in Arf1 activation at the membrane surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the crystal structure and nucleotide exchange assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "3770be39-d296-4eed-b82a-f4b7c6aa78aa",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C88",
+      "claim": "The strength of the DCB/HUS Arl1 interaction appears to differ among Sec7 orthologs from different species.",
+      "claim_type": "EXPLICIT",
+      "source": "The strength of the DCB/HUS Arl1 interaction appears to differ among Sec7 orthologs from different species; although Arl1 is clearly important for BIG1/2 localization in fly and human cells (Christis and Munro, 2012), it is dispensable for Sec7 localization in S. cerevisiae (McDonold and Fromme, 2014; Setty et al., 2004) and is not required for Sec7 function in all fly tissues (Torres et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "2c4d6aa5-1f22-49c8-a4cd-8fba66c967b7",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C89",
+      "claim": "Arl1 is clearly important for BIG1/2 localization in fly and human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The strength of the DCB/HUS Arl1 interaction appears to differ among Sec7 orthologs from different species; although Arl1 is clearly important for BIG1/2 localization in fly and human cells (Christis and Munro, 2012), it is dispensable for Sec7 localization in S. cerevisiae (McDonold and Fromme, 2014; Setty et al., 2004) and is not required for Sec7 function in all fly tissues (Torres et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "44742dbd-a295-4af6-84f4-88d485c7acae",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C90",
+      "claim": "Arl1 is dispensable for Sec7 localization in S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "The strength of the DCB/HUS Arl1 interaction appears to differ among Sec7 orthologs from different species; although Arl1 is clearly important for BIG1/2 localization in fly and human cells (Christis and Munro, 2012), it is dispensable for Sec7 localization in S. cerevisiae (McDonold and Fromme, 2014; Setty et al., 2004) and is not required for Sec7 function in all fly tissues (Torres et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "e24c9875-196f-4104-91cd-9debe669e813",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C91",
+      "claim": "Arl1 is not required for Sec7 function in all fly tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "The strength of the DCB/HUS Arl1 interaction appears to differ among Sec7 orthologs from different species; although Arl1 is clearly important for BIG1/2 localization in fly and human cells (Christis and Munro, 2012), it is dispensable for Sec7 localization in S. cerevisiae (McDonold and Fromme, 2014; Setty et al., 2004) and is not required for Sec7 function in all fly tissues (Torres et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "6b228a85-671b-43a3-8332-d457f9f7221b",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C92",
+      "claim": "Eukaryotic cells have evolved multiple ways to regulate Arf activation at the TGN using the same Arf-GEF.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests eukaryotic cells have evolved multiple ways to regulate Arf activation at the TGN using the same Arf-GEF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observation that Arl1 interaction differs among species.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "8eddb9c9-f4f8-4eb9-8b4f-6038c821855d",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C93",
+      "claim": "Residues of helices 4 and 6 stimulate Arf1 nucleotide exchange activity dependent on the presence of lipids and the GEF domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We have now described an additional and likely conserved function of the DCB/HUS domain: residues of helices 4 and 6 stimulate Arf1 nucleotide exchange activity dependent on the presence of lipids and the GEF domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by nucleotide exchange assay data and mutagenesis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "9a0063d5-79b2-4c89-8234-e6a930e78062",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C94",
+      "claim": "The nucleotide exchange transition state may briefly expose the Arf1 N-terminal myristoylated amphipathic helix to aqueous solution before its insertion into the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "A consequence of Arf1 acting to protect its own hydrophobic membrane insertion moiety tightly coupled with nucleotide state is that the nucleotide exchange transition state may briefly expose the Arf1 N-terminal myristoylated amphipathic helix to aqueous solution before its insertion into the membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about the mechanism of Arf1 activation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "358657d9-bf34-41db-b8c3-2de1f6bd463c",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C95",
+      "claim": "Exchange of nucleotide by the Sec7 GEF domain may position the flexibly linked DCB/HUS domain appropriately for stabilization of the transition state.",
+      "claim_type": "EXPLICIT",
+      "source": "Exchange of nucleotide by the Sec7 GEF domain may position the flexibly linked DCB/HUS domain appropriately for stabilization of this transition state, either via direct transient binding to the amphipathic helix or via positioning Arf1 optimally relative to the adjacent membrane surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about the mechanism of DCB/HUS domain function.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "f6717606-5650-4123-96ef-f21cd85a748d",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C96",
+      "claim": "The maximum in vitro Sec7-mediated Arf1 exchange rate is 2 \u00d7 10^6 M^-1s^-1, requiring intact Sec7f and activating small GTPases.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously observed a maximum in vitro Sec7-mediated Arf1 exchange rate of 2 \u00d7 106 M-1s-1, requiring intact Sec7f and activating small GTPases (McDonold and Fromme, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "c595e96a-0075-4314-b502-453f1c5187a8",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C97",
+      "claim": "The rate of Arf1 nucleotide exchange required to support maximal cell growth is approximately 6 \u00d7 10^4 M^-1s^-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Using existing estimates of membrane flux and cellular and vesicular protein concentrations (Chong et al., 2015; Dodonova et al., 2015; Layton et al., 2011; Presley et al., 2002), we estimate the rate of Arf1 nucleotide exchange required to support maximal cell growth to be approximately 6 \u00d7 104 M-1s-1 (Supplementary file 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from existing estimates of membrane flux and protein concentrations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "ad04b847-18c0-4ed5-a55c-452864a2aa26",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C98",
+      "claim": "It is plausible that the four- to eightfold increase in activity provided by the DCB/HUS domain would prove essential to achieving the Arf1 activation throughput required to support maximal cell growth.",
+      "claim_type": "EXPLICIT",
+      "source": "While these latter rates are much more difficult to estimate, it is entirely plausible that the four- to eightfold increase in activity provided by the DCB/HUS domain would prove essential to achieving the Arf1 activation throughput required to support maximal cell growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about the physiological significance of the DCB/HUS domain enhancement.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "f32b09b2-e63d-4bc3-a42b-570ea36b7fa8",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C99",
+      "claim": "The ability of the DCB/HUS domain to function as a monomer in the T. terrestris Sec7\u0394C construct suggests that dimerization is not essential for DCB/HUS domain function.",
+      "claim_type": "EXPLICIT",
+      "source": "While multimerization via the DCB and HUS domains has been observed in several species and has been proposed to regulate Sec7 activity (Grebe et al., 2000; Ramaen et al., 2007), the ability of the DCB/HUS domain to function as a monomer in the T. terrestris Sec7\u0394C construct suggests that dimerization is not essential for DCB/HUS domain function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observation that the monomeric T. terrestris construct is functional.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "243ec3d5-b997-421d-bcc7-71b3579091b3",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C100",
+      "claim": "Sec7 is autoinhibited by both its HDS1 and HDS4 domains, and appears to adopt open and closed conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Sec7 is autoinhibited by both its HDS1 and HDS4 domains, and appears to adopt open and closed conformations (McDonold and Fromme, 2014; Richardson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "2c5aa8bf-a873-4995-beea-375b7fd7944b",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C101",
+      "claim": "Interactions between the DCB/HUS and HDS domains may provide a mechanism for autoinhibition by occlusion of the GEF domain in a closed conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interactions between the DCB/HUS and HDS domains may provide a mechanism for autoinhibition by occlusion of the GEF domain in a closed conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about the mechanism of autoinhibition.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "d1833b2c-7a32-43c2-93a8-4844904eeda4",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C102",
+      "claim": "The absence of the HDS domains in a truncated construct would expose an unstable interaction region in the DCB/HUS domain that becomes stabilized by dimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of the HDS domains in a truncated construct would expose an unstable interaction region in the DCB/HUS domain that becomes stabilized by dimerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about the mechanism of dimerization in truncated constructs.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "900e2808-5244-484f-a260-8f8747737bdc",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C103",
+      "claim": "Dimerization of the intact DCB/HUS domain may be an artifact of truncation, but perhaps also corresponds to a bona fide regulatory conformation of the full-length protein induced through interactions with known regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "Dimerization of the intact DCB/HUS domain may be an artifact of truncation, but perhaps also corresponds to a bona fide regulatory conformation of the full-length protein induced through interactions with known regulators (McDonold and Fromme, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on speculation about the significance of dimerization.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "64499855-ab66-4ffc-ae7f-45b52a95a032",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C104",
+      "claim": "The observations that the HDS4 domain mediates both dimerization and autoinhibition imply that Sec7 dimerization is a means of regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations that the HDS4 domain mediates both dimerization and autoinhibition imply that Sec7 dimerization is indeed a means of regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the observation that HDS4 mediates both dimerization and autoinhibition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "48221e83-74f0-4714-a0fa-072dc0eca4eb",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C105",
+      "claim": "A recent study reported that dimerization of human GBF1, which lacks an HDS4 domain, is not required for its function in cultured cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a recent study reported that dimerization of human GBF1, which lacks an HDS4 domain, is not required for its function in cultured cells (Bhatt et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "04fbf7c8-a390-4ab6-bdab-ed09f72eab4e",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C106",
+      "claim": "The DCB/HUS domain of Sec7 stimulates GEF activity by facilitating Arf1 amphipathic helix insertion into a lipid environment during nucleotide exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "We have demonstrated that the DCB/HUS domain of Sec7 stimulates GEF activity by facilitating Arf1 amphipathic helix insertion into a lipid environment during nucleotide exchange.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by nucleotide exchange assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "42edfd08-5e52-4ea7-9b90-74319d4c40b8",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C107",
+      "claim": "The mutation E209K in human BIG2 associated with neuronal disease maps to the unresolved interdomain region.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the mutation E209K in human BIG2 associated with neuronal disease (Sheen et al., 2004) maps to this unresolved region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work and mapping to the structure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "797ea7ee-c474-4801-a2c8-a504bbf0f1bc",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C108",
+      "claim": "The sec7-1 temperature sensitive mutation (S402L in S. cerevisiae) maps to a conserved serine at residue 156 in the \u03b17\u20138 loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The established sec7-1 temperature sensitive mutation (S402L in S. cerevisiae) (McDonold and Fromme, 2014; Novick et al., 1980) maps to a conserved serine at residue 156 in the \u03b17\u20138 loop (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by citation to prior work and mapping to the structure shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "75254189-35cb-47d6-9d47-a3e971e92548",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "claim_id": "C109",
+      "claim": "The leucine substitution arising from the sec7-1 mutation likely perturbs the local structure of this region critical to forming the DCB/HUS interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The leucine substitution arising from the sec7-1 mutation likely perturbs the local structure of this region critical to forming the DCB/HUS interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the location of the mutation in the structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8876adea-980e-4e16-86f8-9f8e10797b6d",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The DCB and HUS domains of Sec7 form a single continuous structural unit. Crystal structure determination at 2.6 \u00c5 resolution revealed that these domains form a continuous armadillo repeat joined by a conserved ~1400 \u00c5\u00b2 hydrophobic interface, with a conserved positively charged patch at the interface of helices 7 and 10.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C28-C31 are well-supported by crystallographic data (Table 1, Figure 1). The structure was determined using experimental phasing with selenomethionine-substituted protein, providing high-quality structural evidence. The resolution (2.6 \u00c5) is adequate for the conclusions drawn about domain organization and interface characteristics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "9ac9b86e-4672-4523-b223-6914e20af402",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The HDS4 domain, not the N-terminal DCB/HUS domain, mediates dimerization of full-length Sec7. MALS analysis showed that full-length Sec7 from both T. terrestris and S. cerevisiae are dimeric, but removal of HDS4 results in monomers. The HDS4 domain is critically important for Sec7 function in cells but does not play a major role in localization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C24-C25, C36-C39, and C43 are strongly supported by MALS data (Figure 2C) showing clear differences in oligomeric state upon HDS4 removal, and by plasmid shuffle and microscopy experiments (Figure 3) demonstrating functional importance without major localization defects. The data are internally consistent across multiple constructs and species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "25235259-b0b3-4ac8-a773-5f4a189e5215",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The dimerization observed in the crystal structure of the truncated DCB/HUS construct (residues 1-458) is likely an artifact of truncation. SAXS analysis showed that the intact DCB/HUS domain (residues 1-492) is monomeric in solution, while the truncated construct forms dimers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 are supported by SAXS data (Figure 2A-B) showing different oligomeric states for truncated versus intact constructs. However, the authors acknowledge uncertainty about whether this dimerization mode might represent a regulated conformation. The conclusion is reasonable but appropriately qualified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "e55f06e0-3c30-44c9-a501-4e0d7f5b0771",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The DCB/HUS domain enhances Sec7 GEF activity toward Arf1 in a lipid-dependent and amphipathic helix-dependent manner. The enhancement requires both membranes and the N-terminal membrane insertion helix of Arf1, suggesting the DCB/HUS domain facilitates membrane insertion of the Arf1 amphipathic helix during nucleotide exchange.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C26, C55, C57, C60-C64, C93, and C106 are well-supported by systematic nucleotide exchange assays (Figure 4) using different lipid conditions and Arf1 variants. The data show consistent 4-8 fold enhancement with myristoylated Arf1 on membranes but not with \u0394N17Arf1 or L8K-Arf1, supporting the proposed mechanism. The liposome flotation data (Figure 4\u2014figure supplement 1) corroborates the fluorescence measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "354c1d61-3c69-4380-b9bd-f866258b877a",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mutations on the surfaces of helices 4 and 6 of the DCB/HUS domain reduce both cell viability and membrane-dependent GEF activity. These mutations do not reduce GEF activity in the absence of membranes, indicating they specifically affect membrane-proximal function rather than causing protein misfolding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66, C69, C71-C73 are supported by both in vivo plasmid shuffle assays (Figure 5B) and in vitro nucleotide exchange assays (Figure 6C, Figure 6\u2014figure supplement 2). The control showing no effect in the absence of membranes (C71) is critical for ruling out misfolding artifacts. The data consistently identify helices 4 and 6 as functionally important.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "b60131cf-ba58-4e58-9e5f-61d4d1d8558d",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "DCB/HUS domain mutants that show growth defects are largely localized correctly to the TGN, indicating that the growth defects are not due to mislocalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 are supported by microscopy data (Figure 6A) showing punctate localization for mutants. While some cytoplasmic mislocalization is noted, the authors appropriately conclude that localization defects do not fully explain the growth phenotypes. This interpretation is reasonable given the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "021492b1-7048-4c27-a3eb-7f3703bb1861",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The HUS-box does not play a role in the DCB/HUS domain enhancement of GEF activity. The N653A mutation in the HUS-box is lethal in cells but shows no difference in GEF activity compared to wild-type in the presence of membranes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 are supported by nucleotide exchange assay data (Figure 6D) and viability assays (Figure 6\u2014figure supplement 3). The data clearly show that the HUS-box mutation affects viability but not the specific GEF enhancement function studied here, suggesting the HUS-box has a different functional role.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "070c03ab-aae4-4cbb-ab98-6f8e8bbf4e14",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Excess isolated DCB/HUS domain competes with Sec7\u0394C for binding to Arf1 substrate rather than competing for membrane binding. Addition of 16-fold excess DCB/HUS inhibits Sec7\u0394C activity, and this inhibition is not relieved by excess membranes, suggesting direct interaction with Arf1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C85 are supported by competition assays (Figure 7A-B) showing dose-dependent inhibition that is not relieved by excess lipids. The mutant DCB/HUS constructs show reduced competition corresponding to their functional defects, strengthening the interpretation. However, the conclusion of 'direct interaction' (C84-C85) is inferential and the authors appropriately qualify it as 'likely transient.'",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "a3a53967-03a2-4cec-b6fb-e538a105af73",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The DCB/HUS domain of S. cerevisiae Sec7\u0394C does not show stable interaction with Arl1, and preincubation with membrane-bound Arl1 does not affect catalytic rate. The Arl1 interaction appears to require HDS domains in addition to the DCB/HUS domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 are supported by pulldown, liposome pelleting, and nucleotide exchange assays (Figure 4\u2014figure supplements 3-5). The negative results are appropriately controlled and the inference that HDS domains are required (C78) is reasonable given prior positive results with longer constructs. However, this is a negative result and should be interpreted cautiously.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "fe79baaf-743a-40c9-bbfe-1715442adacb",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "S. cerevisiae Sec7 constructs lacking HDS domains show complex dimerization behavior that differs from T. terrestris constructs. The simplest model invokes an interaction between HDS1 and DCB/HUS domains that masks a DCB/HUS dimerization interface, though this dimerization is not conserved in T. terrestris.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C44-C50 are based on MALS data (Figure 2C) showing different oligomeric states for various truncation constructs. While the data are clear, the mechanistic model (C48-C49) is speculative and the authors acknowledge this ('partially speculative'). The species-specific differences (C50) complicate interpretation. Additional experiments would be needed to definitively test the proposed HDS1-DCB/HUS interaction model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "8aaa455c-271d-49ed-bb14-71a2f8c11206",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The GEF domain is flexibly connected to the DCB/HUS domain rather than continuing the armadillo repeat, as suggested by SAXS modeling of S. cerevisiae Sec7\u0394C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C51 and C86 are based on SAXS modeling (Figure 2\u2014figure supplement 1). However, the authors note that 'too many degrees of freedom exist to interpret the resulting model as an accurate structural assembly.' The conclusion of flexible linkage is reasonable but should be considered tentative given the limitations acknowledged by the authors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "ad3ee7d2-9254-46fc-a158-b41ddbdc02d9",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Gea2, which lacks an HDS4 domain, is dimeric in full-length and C-terminal truncation constructs, suggesting that dimerization is critical for all Golgi Arf-GEFs and that N-terminal dimerization may have evolved additional importance in the absence of HDS4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C52 is supported by MALS data (Figure 2\u2014figure supplement 2). However, claims C53-C54 about the evolutionary significance and general importance of dimerization are speculative inferences from limited data on one additional protein. More extensive comparative analysis would be needed to support these broader evolutionary claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "bd0d7560-896c-41ed-913b-bbd998fa3678",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "DCB/HUS domain stimulation of GEF activity occurs independently of dimerization, as the effect is observed in both dimeric (S. cerevisiae) and monomeric (T. terrestris) constructs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 is supported by nucleotide exchange data from both S. cerevisiae (dimeric) and T. terrestris (monomeric) constructs (Figure 4, Figure 4\u2014figure supplement 2) showing similar enhancement effects. This cross-species comparison provides strong evidence for dimerization-independent function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "831a160b-8d9e-472a-8430-3af5b50ec4ca",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The estimated rate of Arf1 nucleotide exchange required to support maximal cell growth is approximately 6 \u00d7 10\u2074 M\u207b\u00b9s\u207b\u00b9, and the 4-8 fold increase provided by the DCB/HUS domain could be essential for achieving this throughput.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C97 is based on calculations using literature estimates of membrane flux and protein concentrations (Supplementary file 3), but these calculations involve multiple assumptions and uncertainties. Claim C98 is explicitly speculative ('entirely plausible'). While the physiological context is valuable, the quantitative estimates should be treated as rough approximations rather than precise measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "d3928759-4a5a-4a32-992f-b98266016269",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The strength of the DCB/HUS-Arl1 interaction differs among Sec7 orthologs from different species, with Arl1 being important for BIG1/2 localization in fly and human cells but dispensable for Sec7 localization in S. cerevisiae, suggesting multiple evolutionary solutions for regulating Arf activation at the TGN.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C92 are supported by citations to prior work showing species-specific differences in Arl1 dependence. The inference about multiple regulatory mechanisms (C92) is reasonable given the documented species differences, though it remains somewhat speculative without direct mechanistic evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    },
+    {
+      "id": "64ff8387-0c8b-4aec-8509-0416bb2698a9",
+      "content_id": "168f127b-7662-492d-ac42-fd8ace1ad802",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Speculative mechanistic models for DCB/HUS function and regulation, including transient exposure of the Arf1 amphipathic helix during nucleotide exchange, positioning by the flexibly linked DCB/HUS domain, and autoinhibition through DCB/HUS-HDS interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C94-C95, C101-C103 are explicitly speculative models proposed by the authors to explain their observations. While these models are consistent with the data presented, they lack direct experimental support and represent hypotheses for future testing rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:28:24.265317Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a66bd965-97a1-4572-8ebc-d5f8c22b421e",
+      "result_id": "8876adea-980e-4e16-86f8-9f8e10797b6d"
+    },
+    {
+      "claim_id": "cd4d757f-33f0-4f47-94a9-ff5c8d89f61f",
+      "result_id": "8876adea-980e-4e16-86f8-9f8e10797b6d"
+    },
+    {
+      "claim_id": "80cfc174-7ee6-43ec-b2f3-bc0e1a09aa62",
+      "result_id": "8876adea-980e-4e16-86f8-9f8e10797b6d"
+    },
+    {
+      "claim_id": "58469fdd-838f-4aef-9ab2-99a595cdc559",
+      "result_id": "8876adea-980e-4e16-86f8-9f8e10797b6d"
+    },
+    {
+      "claim_id": "f4b736d4-0db7-467d-9a6a-b529e48e7df8",
+      "result_id": "8876adea-980e-4e16-86f8-9f8e10797b6d"
+    },
+    {
+      "claim_id": "79715268-4cca-47e4-b54d-b1ac5d44d08e",
+      "result_id": "9ac9b86e-4672-4523-b223-6914e20af402"
+    },
+    {
+      "claim_id": "0d1d77e7-eeff-40c3-a3bd-428fcc83a072",
+      "result_id": "9ac9b86e-4672-4523-b223-6914e20af402"
+    },
+    {
+      "claim_id": "b151c79f-86eb-4de5-9f4f-f0d20b1e4a03",
+      "result_id": "9ac9b86e-4672-4523-b223-6914e20af402"
+    },
+    {
+      "claim_id": "a261deff-b03f-4303-9485-fae271728891",
+      "result_id": "9ac9b86e-4672-4523-b223-6914e20af402"
+    },
+    {
+      "claim_id": "a0015e93-a67a-438c-b7af-510ec77c1857",
+      "result_id": "9ac9b86e-4672-4523-b223-6914e20af402"
+    },
+    {
+      "claim_id": "ee7690c2-8c78-4953-9f1f-0a095d28ab1e",
+      "result_id": "9ac9b86e-4672-4523-b223-6914e20af402"
+    },
+    {
+      "claim_id": "9dd6f8bc-5efb-4873-88f5-ce63b667cfb2",
+      "result_id": "9ac9b86e-4672-4523-b223-6914e20af402"
+    },
+    {
+      "claim_id": "3c00077c-014e-4028-a532-8054b04859bb",
+      "result_id": "9ac9b86e-4672-4523-b223-6914e20af402"
+    },
+    {
+      "claim_id": "545b576a-4279-42a0-8359-a322c79973e9",
+      "result_id": "9ac9b86e-4672-4523-b223-6914e20af402"
+    },
+    {
+      "claim_id": "53ef77f6-d782-42d9-89f0-2640fa820bb1",
+      "result_id": "25235259-b0b3-4ac8-a773-5f4a189e5215"
+    },
+    {
+      "claim_id": "90d3b31d-6e56-401e-a360-faeb6262f881",
+      "result_id": "25235259-b0b3-4ac8-a773-5f4a189e5215"
+    },
+    {
+      "claim_id": "556a0be4-ab47-4656-89aa-b7c151ce1af3",
+      "result_id": "25235259-b0b3-4ac8-a773-5f4a189e5215"
+    },
+    {
+      "claim_id": "6a8db581-bb43-4c7b-a030-734575719516",
+      "result_id": "e55f06e0-3c30-44c9-a501-4e0d7f5b0771"
+    },
+    {
+      "claim_id": "7516797b-8997-4472-8a8e-65c159ae8900",
+      "result_id": "e55f06e0-3c30-44c9-a501-4e0d7f5b0771"
+    },
+    {
+      "claim_id": "ea686e0e-b7dc-41ce-996e-d88a38feeb2a",
+      "result_id": "e55f06e0-3c30-44c9-a501-4e0d7f5b0771"
+    },
+    {
+      "claim_id": "d32125e4-1cc8-43c7-b7eb-78bea2fefd7e",
+      "result_id": "e55f06e0-3c30-44c9-a501-4e0d7f5b0771"
+    },
+    {
+      "claim_id": "e1d79f0d-0a48-45d6-820d-578d504f09ca",
+      "result_id": "e55f06e0-3c30-44c9-a501-4e0d7f5b0771"
+    },
+    {
+      "claim_id": "59c0a187-28ee-4d4c-a341-851af654c189",
+      "result_id": "e55f06e0-3c30-44c9-a501-4e0d7f5b0771"
+    },
+    {
+      "claim_id": "4e66d303-e110-4194-ba3f-e67e843fe971",
+      "result_id": "e55f06e0-3c30-44c9-a501-4e0d7f5b0771"
+    },
+    {
+      "claim_id": "055a6ad3-fc99-4cc8-ab65-d97f626a8751",
+      "result_id": "e55f06e0-3c30-44c9-a501-4e0d7f5b0771"
+    },
+    {
+      "claim_id": "53964bdf-c757-41c0-aa67-86d561f1ddda",
+      "result_id": "e55f06e0-3c30-44c9-a501-4e0d7f5b0771"
+    },
+    {
+      "claim_id": "8eddb9c9-f4f8-4eb9-8b4f-6038c821855d",
+      "result_id": "e55f06e0-3c30-44c9-a501-4e0d7f5b0771"
+    },
+    {
+      "claim_id": "04fbf7c8-a390-4ab6-bdab-ed09f72eab4e",
+      "result_id": "e55f06e0-3c30-44c9-a501-4e0d7f5b0771"
+    },
+    {
+      "claim_id": "a7c03fd5-4a72-4f03-be90-9020b81549f6",
+      "result_id": "354c1d61-3c69-4380-b9bd-f866258b877a"
+    },
+    {
+      "claim_id": "ee8a7d09-bed6-4b15-895a-2177fc855e58",
+      "result_id": "354c1d61-3c69-4380-b9bd-f866258b877a"
+    },
+    {
+      "claim_id": "946385e3-36aa-4f1e-89f4-926a3a45a0b0",
+      "result_id": "354c1d61-3c69-4380-b9bd-f866258b877a"
+    },
+    {
+      "claim_id": "5701b77d-a714-45a5-848d-a0d2f1fb436e",
+      "result_id": "354c1d61-3c69-4380-b9bd-f866258b877a"
+    },
+    {
+      "claim_id": "80e6cc1b-2905-494e-8f0d-9eed4b571c11",
+      "result_id": "354c1d61-3c69-4380-b9bd-f866258b877a"
+    },
+    {
+      "claim_id": "81dc1bb9-bd5f-46ec-9651-c43b3c070770",
+      "result_id": "354c1d61-3c69-4380-b9bd-f866258b877a"
+    },
+    {
+      "claim_id": "101b9ee6-92f4-4f5e-a9a3-670925f2a0f0",
+      "result_id": "b60131cf-ba58-4e58-9e5f-61d4d1d8558d"
+    },
+    {
+      "claim_id": "d3424c08-d942-47cf-aef1-6263c8131d9d",
+      "result_id": "b60131cf-ba58-4e58-9e5f-61d4d1d8558d"
+    },
+    {
+      "claim_id": "f44378ad-aac4-43d5-b3f1-b16a624e1523",
+      "result_id": "021492b1-7048-4c27-a3eb-7f3703bb1861"
+    },
+    {
+      "claim_id": "22c32981-6c6c-403f-9a73-d2c9858fd7e1",
+      "result_id": "021492b1-7048-4c27-a3eb-7f3703bb1861"
+    },
+    {
+      "claim_id": "be593d56-ca43-4e4d-a4dc-723efd2d9e2e",
+      "result_id": "070c03ab-aae4-4cbb-ab98-6f8e8bbf4e14"
+    },
+    {
+      "claim_id": "5a535a36-516b-433b-ab9f-c85251249b7e",
+      "result_id": "070c03ab-aae4-4cbb-ab98-6f8e8bbf4e14"
+    },
+    {
+      "claim_id": "30876134-07be-47ae-a76d-9686b4ffd07c",
+      "result_id": "070c03ab-aae4-4cbb-ab98-6f8e8bbf4e14"
+    },
+    {
+      "claim_id": "4df75861-4865-4a57-92d7-30098579f8be",
+      "result_id": "070c03ab-aae4-4cbb-ab98-6f8e8bbf4e14"
+    },
+    {
+      "claim_id": "bb1767d3-87e3-46f5-aa5f-08a012d1a16f",
+      "result_id": "070c03ab-aae4-4cbb-ab98-6f8e8bbf4e14"
+    },
+    {
+      "claim_id": "40980058-ff47-4fde-b95a-f6550f424b77",
+      "result_id": "070c03ab-aae4-4cbb-ab98-6f8e8bbf4e14"
+    },
+    {
+      "claim_id": "5abded80-cf0d-48d8-8b2c-87f33525cedd",
+      "result_id": "070c03ab-aae4-4cbb-ab98-6f8e8bbf4e14"
+    },
+    {
+      "claim_id": "f272232f-f890-429c-9d02-b18094b56300",
+      "result_id": "a3a53967-03a2-4cec-b6fb-e538a105af73"
+    },
+    {
+      "claim_id": "79176726-5c6a-4937-83cd-fd797d990621",
+      "result_id": "a3a53967-03a2-4cec-b6fb-e538a105af73"
+    },
+    {
+      "claim_id": "a15b3094-758d-4200-86a6-1bead4e541a5",
+      "result_id": "a3a53967-03a2-4cec-b6fb-e538a105af73"
+    },
+    {
+      "claim_id": "b7cfac6f-94ae-45a6-bf02-7d36a0d06977",
+      "result_id": "fe79baaf-743a-40c9-bbfe-1715442adacb"
+    },
+    {
+      "claim_id": "fd8bf7bc-441c-46d9-87db-6f1559eb3156",
+      "result_id": "fe79baaf-743a-40c9-bbfe-1715442adacb"
+    },
+    {
+      "claim_id": "9a1ae7d5-f867-41d7-8ae8-5c7d87a428ca",
+      "result_id": "fe79baaf-743a-40c9-bbfe-1715442adacb"
+    },
+    {
+      "claim_id": "86fd979c-78ee-4411-bb7a-3611003a1f73",
+      "result_id": "fe79baaf-743a-40c9-bbfe-1715442adacb"
+    },
+    {
+      "claim_id": "bcce98e1-ddf4-4d0e-a436-e8e569204ee5",
+      "result_id": "fe79baaf-743a-40c9-bbfe-1715442adacb"
+    },
+    {
+      "claim_id": "2879e6f3-00c1-49ed-857c-805ee42b70eb",
+      "result_id": "fe79baaf-743a-40c9-bbfe-1715442adacb"
+    },
+    {
+      "claim_id": "2539fcf8-4afd-47ad-a2e4-2ede56c5ffeb",
+      "result_id": "fe79baaf-743a-40c9-bbfe-1715442adacb"
+    },
+    {
+      "claim_id": "9be88093-b42e-4956-910e-57eac148bcc3",
+      "result_id": "8aaa455c-271d-49ed-bb14-71a2f8c11206"
+    },
+    {
+      "claim_id": "5a8f6190-b168-4139-8384-7cab124ea507",
+      "result_id": "8aaa455c-271d-49ed-bb14-71a2f8c11206"
+    },
+    {
+      "claim_id": "afd5caa4-c009-4992-a956-0c77d88ca0da",
+      "result_id": "ad3ee7d2-9254-46fc-a158-b41ddbdc02d9"
+    },
+    {
+      "claim_id": "a2b71271-bfb1-4d29-bb1f-0a9abff18852",
+      "result_id": "ad3ee7d2-9254-46fc-a158-b41ddbdc02d9"
+    },
+    {
+      "claim_id": "7dd9fd7c-d4bc-4dbd-9121-412526aba347",
+      "result_id": "ad3ee7d2-9254-46fc-a158-b41ddbdc02d9"
+    },
+    {
+      "claim_id": "fdac4f2f-2528-432f-8e49-b09c5bceb2e4",
+      "result_id": "bd0d7560-896c-41ed-913b-bbd998fa3678"
+    },
+    {
+      "claim_id": "c595e96a-0075-4314-b502-453f1c5187a8",
+      "result_id": "831a160b-8d9e-472a-8430-3af5b50ec4ca"
+    },
+    {
+      "claim_id": "ad04b847-18c0-4ed5-a55c-452864a2aa26",
+      "result_id": "831a160b-8d9e-472a-8430-3af5b50ec4ca"
+    },
+    {
+      "claim_id": "3770be39-d296-4eed-b82a-f4b7c6aa78aa",
+      "result_id": "d3928759-4a5a-4a32-992f-b98266016269"
+    },
+    {
+      "claim_id": "2c4d6aa5-1f22-49c8-a4cd-8fba66c967b7",
+      "result_id": "d3928759-4a5a-4a32-992f-b98266016269"
+    },
+    {
+      "claim_id": "44742dbd-a295-4af6-84f4-88d485c7acae",
+      "result_id": "d3928759-4a5a-4a32-992f-b98266016269"
+    },
+    {
+      "claim_id": "e24c9875-196f-4104-91cd-9debe669e813",
+      "result_id": "d3928759-4a5a-4a32-992f-b98266016269"
+    },
+    {
+      "claim_id": "6b228a85-671b-43a3-8332-d457f9f7221b",
+      "result_id": "d3928759-4a5a-4a32-992f-b98266016269"
+    },
+    {
+      "claim_id": "9a0063d5-79b2-4c89-8234-e6a930e78062",
+      "result_id": "64ff8387-0c8b-4aec-8509-0416bb2698a9"
+    },
+    {
+      "claim_id": "358657d9-bf34-41db-b8c3-2de1f6bd463c",
+      "result_id": "64ff8387-0c8b-4aec-8509-0416bb2698a9"
+    },
+    {
+      "claim_id": "2c5aa8bf-a873-4995-beea-375b7fd7944b",
+      "result_id": "64ff8387-0c8b-4aec-8509-0416bb2698a9"
+    },
+    {
+      "claim_id": "d1833b2c-7a32-43c2-93a8-4844904eeda4",
+      "result_id": "64ff8387-0c8b-4aec-8509-0416bb2698a9"
+    },
+    {
+      "claim_id": "900e2808-5244-484f-a260-8f8747737bdc",
+      "result_id": "64ff8387-0c8b-4aec-8509-0416bb2698a9"
+    }
+  ],
+  "comparisons": []
+}

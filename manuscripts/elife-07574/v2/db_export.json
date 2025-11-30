@@ -1,0 +1,1572 @@
+{
+  "submission": {
+    "id": "395d26e5-62a7-490e-82cc-bd6510661d11",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:15:58.858524Z",
+    "updated_at": "2025-11-29T21:15:58.858524Z"
+  },
+  "content": [
+    {
+      "id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "submission_id": "395d26e5-62a7-490e-82cc-bd6510661d11",
+      "content_type": "manuscript",
+      "content_text": "# Mapping the conformational landscape of a dynamic enzyme by multitemperature and XFEL crystallography\n\n## Authors\n\n- Daniel A Keedy<sup>1</sup> ([ORCID: 0000-0002-9184-7586](https://orcid.org/0000-0002-9184-7586))\n- Lillian R Kenner<sup>1</sup>\n- Matthew Warkentin<sup>2</sup>\n- Rahel A Woldeyes<sup>1</sup> ([ORCID: 0000-0003-0737-8383](https://orcid.org/0000-0003-0737-8383))\n- Jesse B Hopkins<sup>2</sup>\n- Michael C Thompson<sup>1</sup>\n- Aaron S Brewster<sup>3</sup>\n- Andrew H Van Benschoten<sup>1</sup>\n- Elizabeth L Baxter<sup>4</sup>\n- Monarin Uervirojnangkoorn<sup>5</sup>\n- Scott E McPhillips<sup>4</sup>\n- Jinhu Song<sup>4</sup>\n- Roberto Alonso-Mori<sup>7</sup>\n- James M Holton<sup>3</sup>\n- William I Weis<sup>5</sup> ([ORCID: 0000-0002-5583-6150](https://orcid.org/0000-0002-5583-6150))\n- Axel T Brunger<sup>5</sup> ([ORCID: 0000-0001-5121-2036](https://orcid.org/0000-0001-5121-2036))\n- S Michael Soltis<sup>4</sup> ([ORCID: 0000-0003-4678-2995](https://orcid.org/0000-0003-4678-2995))\n- Henrik Lemke<sup>7</sup>\n- Ana Gonzalez<sup>4</sup>\n- Nicholas K Sauter<sup>3</sup>\n- Aina E Cohen<sup>4</sup>\n- Henry van den Bedem<sup>4</sup> ([ORCID: 0000-0003-2358-841X](https://orcid.org/0000-0003-2358-841X)) \u2020\n- Robert E Thorne<sup>2</sup> \u2020\n- James S Fraser<sup>1</sup> ([ORCID: 0000-0002-5080-2859](https://orcid.org/0000-0002-5080-2859)) \u2020\n\n### Affiliations\n\n1. Department of Bioengineering and Therapeutic Sciences University of California, San Francisco San Francisco United States\n2. Department of Physics Cornell University Ithaca United States\n3. Physical Biosciences Division Lawrence Berkeley National Laboratory Berkeley United States\n4. Stanford Synchrotron Radiation Lightsource SLAC National Accelerator Laboratory Menlo Park United States\n5. Department of Molecular and Cellular Physiology Stanford University Stanford United States\n6. Howard Hughes Medical Institute, Stanford University Stanford United States\n7. Linac Coherent Light Source SLAC National Accelerator Laboratory Menlo Park United States\n8. Department of Biochemistry and Biophysics University of California, San Francisco San Francisco United States\n9. Department of Structural Biology Stanford University Stanford United States\n10. Department of Photon Science SLAC National Accelerator Laboratory Menlo Park United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDetermining the interconverting conformations of dynamic proteins in atomic detail is a major challenge for structural biology. Conformational heterogeneity in the active site of the dynamic enzyme cyclophilin A (CypA) has been previously linked to its catalytic function, but the extent to which the different conformations of these residues are correlated is unclear. Here we compare the conformational ensembles of CypA by multitemperature synchrotron crystallography and fixed-target X-ray free-electron laser (XFEL) crystallography. The diffraction-before-destruction nature of XFEL experiments provides a radiation-damage-free view of the functionally important alternative conformations of CypA, confirming earlier synchrotron-based results. We monitored the temperature dependences of these alternative conformations with eight synchrotron datasets spanning 100-310 K. Multiconformer models show that many alternative conformations in CypA are populated only at 240 K and above, yet others remain populated or become populated at 180 K and below. These results point to a complex evolution of conformational heterogeneity between 180-\u2013240 K that involves both thermal deactivation and solvent-driven arrest of protein motions in the crystal. The lack of a single shared conformational response to temperature within the dynamic active-site network provides evidence for a conformation shuffling model, in which exchange between rotamer states of a large aromatic ring in the middle of the network shifts the conformational ensemble for the other residues in the network. Together, our multitemperature analyses and XFEL data motivate a new generation of temperature- and time-resolved experiments to structurally characterize the dynamic underpinnings of protein function.\n\n## Introduction\n\nCurrent structural biology methods provide only incomplete pictures of how proteins interconvert between distinct conformations\u00a0(Motlagh et al., 2014; van den Bedem and Fraser, 2015).\u00a0Although X-ray crystallography reveals atomic coordinates with relatively high accuracy and precision, the resulting electron density maps\u00a0contain contributions from multiple alternative conformations reflecting the ensemble average\u00a0of\u00a0106\u20131015\u00a0copies of the protein in one crystal\u00a0(Rejto and Freer, 1996; Smith et al., 1986; Woldeyes et al., 2014).\u00a0At high resolution, it is often possible to detect and discretely model these alternative conformations\u00a0(Burnley et al., 2012; Davis et al., 2006; Lang et al., 2010; van den Bedem et al., 2009). Structural characterization of alternative conformations by X-ray crystallography can complement NMR (Baldwin and Kay, 2009; Fenwick et al., 2014) and computational simulations (Dror et al., 2012; Ollikainen et al., 2013) in defining the structural basis of protein dynamics and ultimately in linking dynamics to function (Henzler-Wildman and Kern, 2007).\n\nHowever, more than 95% of crystal structures are determined at cryogenic temperatures\u00a0(\u223c100 K) to reduce radiation damage by minimizing diffusion of reactive intermediates and chemical-damage-induced structural relaxations\u00a0(Garman, 2010; Holton, 2009; Warkentin et al., 2013). Unfortunately, cryocooling can modify main\u00a0chain and side\u00a0chain conformational distributions throughout the protein, including at active sites and distal regions important for allosteric function\u00a0(Fraser et al., 2011; Halle, 2004; Keedy, et al., 2014).\u00a0Recent studies have instead used\u00a0room\u00a0temperature data collection\u00a0to reveal a multitude of previously \u2018hidden\u2019 alternative conformations that are not evident at cryogenic temperatures, many of which have important ramifications for determining molecular mechanisms\u00a0(Deis et al., 2014; Fraser et al., 2009; Fukuda and Inoue, 2015; van den Bedem et al., 2013).\n\nBetween these temperature extremes, protein conformational heterogeneity changes in\u00a0complex ways. Previous studies using a wide variety of biophysical probes including NMR, X-ray crystallography, and neutron scattering have revealed a change in the character of conformational heterogeneity and/or protein dynamics\u00a0around 180\u2013220 K\u00a0(Doster, 2010; Frauenfelder et al., 2009; Lewandowski et al., 2015; Ringe and Petsko, 2003) however, the molecular origins of this \u2018glass\u2019 or \u2018dynamical\u2019\u00a0transition remain incompletely understood. Classic work has examined the temperature dependence of protein conformational heterogeneity\u00a0across individual X-ray structures determined at temperatures from \u223c80 to 320 K (Frauenfelder et al., 1979, 1987; Tilton et al., 1992). These studies used atomic B-factors as a proxy for conformational heterogeneity and identified a global\u00a0inflection point around 180\u2013220 K. This inflection point\u00a0was interpreted in terms of a transition driven by\u00a0dynamical arrest of the coupled hydration layer-protein system\u00a0(Doster et al., 1989; Frauenfelder et al., 1979, 1987; Tilton et al., 1992). By contrast, solution NMR studies of picosecond\u2013nanosecond (ps\u2013ns) timescale methyl side\u00a0chain\u00a0order parameters\u00a0showed heterogeneous changes\u00a0in motional amplitudes\u00a0at temperatures between 288 and 346 K. Thermal deactivation of these motions was suggested to predict a transition\u00a0near 200\u00a0K without invoking solvent arrest\u00a0(Lee and Wand, 2001). Recent solid-state NMR (ssNMR)\u00a0experiments\u00a0suggest that protein motions are coupled to solvent,\u00a0and that three transitions at \u223c195, 220, and 250 K mark the onset of distinct classes of motions as temperature increases\u00a0(Lewandowski et al., 2015). Unfortunately, these studies used either\u00a0globally averaged data (as with\u00a0ssNMR or neutron scattering) or imprecise atomic-level models of conformational heterogeneity (as with\u00a0B-factors in X-ray crystallography or NMR order parameters), thus preventing an all-atom understanding of the complex temperature response of protein crystals.\n\nNew crystallographic and computational techniques now enable a more detailed investigation of the temperature dependence of protein conformational heterogeneity at the atomic level. First, the program Ringer (Lang et al., 2014, 2010)\u00a0evaluates low-level electron density traditionally considered noise to uncover statistically significant \u2018hidden\u2019 alternative conformations, which may become populated or depopulated as a function of temperature. Second, multiconformer models with explicit alternative conformations of both backbone and side\u00a0chain atoms, as created by manual building or methods such as the program qFit\u00a0(Keedy et al., 2015, van den Bedem et al., 2009), can account for non-harmonic motions across separate energy wells (encoded by discrete alternative conformations with distinct occupancies and coordinates)\u00a0and harmonic motions within energy wells (encoded by B-factors). Third, crystallographic order parameters (S2) weigh\u00a0these harmonic and non-harmonic\u00a0contributions\u00a0in a single metric that quantifies the disorder of each residue in a multiconformer model, allowing direct comparison\u00a0with NMR-determined order parameters\u00a0(Fenwick et al., 2014).\u00a0Finally, methodological advances based on the physics of ice formation have enabled variable-temperature crystallographic data collection at temperatures between 300 and 100 K with modest or no use of potentially conformation-perturbing cryoprotectants\u00a0(Warkentin et al., 2012; Warkentin and Thorne, 2009).\u00a0Together, these methods overcome many of the limitations of previous X-ray-based approaches and will contribute to an integrated view of how protein conformational heterogeneity and dynamics evolve with temperature.\n\nThe human proline\u00a0isomerase\u00a0cyclophilin A (CypA) is an excellent model system for deploying these tools to study the structural basis of functional conformational dynamics and, in particular, to use temperature to understand the extent of correlated motions during an enzyme\u2019s catalytic cycle. Previous NMR relaxation data for CypA\u00a0(Eisenmesser et al., 2005, 2002)\u00a0indicated a single common exchange process,\u00a0both in the apo state and during catalysis, for a network of dynamic residues extending from the core to the active site.\u00a0Room temperature crystallography later suggested the precise alternative conformations that collectively interconvert during catalysis (Fraser et al., 2009).\u00a0However, subsequent NMR relaxation experiments of mutants designed to perturb the dynamics suggested that multiple exchange processes occur within this network (Schlegel et al., 2009).\u00a0Here, we analyze\u00a0multitemperature synchrotron experiments to examine the temperature-dependent conformational heterogeneity of\u00a0CypA.\u00a0Additionally, we report X-ray-free electron laser (XFEL) data, which are\u00a0free of conventional radiation damage\u00a0(Kern et al., 2014; Spence et al., 2012), to\u00a0validate previous connections between alternative conformations determined by synchrotron crystallography and NMR experiments performed in solution (Eisenmesser et al., 2005; Fraser et al., 2009).\u00a0Our analysis shows that the temperature dependence of alternative protein conformations is heterogeneous and that the character of this heterogeneity bridges previous models for protein dynamical transitions. Our results also suggest new ways to use variable temperature with both synchrotron and XFEL crystallography to probe the dynamic underpinnings of protein function.\n\n## Results\n\n### Multitemperature X-ray datasets reveal modulated conformational ensembles of CypA\n\nTo probe the conformational landscape of CypA, we collected eight high-resolution (1.34 \u20131.58 \u00c5) synchrotron crystallographic datasets across a wide range of temperatures from 100 to 310 K (Table 1) with no added cryoprotectants. For each dataset, we initially refined single-conformer models. Although the single-conformer models are very similar to each other, the accompanying electron density maps reveal differences throughout the protein. In the active-site network, the mFo-DFc difference electron density maps are relatively featureless below 200 K, suggesting that a single conformation is a valid fit below this temperature. By contrast, positive and negative mFo-DFc peaks become gradually more prevalent as temperature increases above 200 K, suggesting that multiple conformations are increasingly required to explain the data as temperature increases (Figure 2\u2014figure supplement 1).\n\n**Table 1.**\n Crystallographic statistics for multitemperature synchrotron datasets collected on a single crystal per dataset. Statistics for the highest resolution shell are shown in parentheses.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>100 K</th>\n      <th>150 K</th>\n      <th>180 K</th>\n      <th>240 K</th>\n      <th>260 K</th>\n      <th>280 K</th>\n      <th>300 K</th>\n      <th>310 K</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>PDB ID</td>\n      <td>4YUG</td>\n      <td>4YUH</td>\n      <td>4YUI</td>\n      <td>4YUJ</td>\n      <td>4YUK</td>\n      <td>4YUL</td>\n      <td>4YUM</td>\n      <td>4YUN</td>\n    </tr>\n    <tr>\n      <td>Wavelength\u00a0(\u212b)</td>\n      <td>0.9767</td>\n      <td>0.9767</td>\n      <td>0.9767</td>\n      <td>0.9767</td>\n      <td>0.9767</td>\n      <td>0.9767</td>\n      <td>0.9767</td>\n      <td>0.9767</td>\n    </tr>\n    <tr>\n      <td>Resolution range\u00a0(\u212b)</td>\n      <td>33.58\u20131.48 (1.53\u20131.48)</td>\n      <td>16.95\u20131.34 (1.39\u20131.34)</td>\n      <td>16.12\u20131.38 (1.43\u20131.38)</td>\n      <td>34.05\u20131.42 (1.47\u20131.42)</td>\n      <td>33.98\u20131.48 (1.53\u20131.48)</td>\n      <td>25.23\u20131.42 (1.47\u20131.42)</td>\n      <td>22.67\u20131.5 (1.55\u20131.50)</td>\n      <td>22.66\u20131.58 (1.64\u20131.58)</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P212121</td>\n      <td>P212121</td>\n      <td>P212121</td>\n      <td>P212121</td>\n      <td>P212121</td>\n      <td>P212121</td>\n      <td>P212121</td>\n      <td>P212121</td>\n    </tr>\n    <tr>\n      <td>Unit cell (a, b, c)</td>\n      <td>42.24, 51.91, 88.06</td>\n      <td>42.45, 51.82, 88.01</td>\n      <td>42.42, 51.96, 88.21</td>\n      <td>43.04, 53.22, 88.63</td>\n      <td>43.09, 52.79, 88.81</td>\n      <td>43.00, 52.61, 89.12</td>\n      <td>43.01, 52.61, 89.32</td>\n      <td>42.85, 52.58, 89.41</td>\n    </tr>\n    <tr>\n      <td>Total reflections</td>\n      <td>160,129 (15,842)</td>\n      <td>160,780 (7,437)</td>\n      <td>154,202 (11,295)</td>\n      <td>152,578 (13,600)</td>\n      <td>134,699 (13,381)</td>\n      <td>168,932 (15,019)</td>\n      <td>144,734 (14,433)</td>\n      <td>125,225 (12,326)</td>\n    </tr>\n    <tr>\n      <td>Unique reflections</td>\n      <td>32,657 (3,240)</td>\n      <td>42,288 (3,471)</td>\n      <td>39,548 (3,820)</td>\n      <td>38,881 (3,710)</td>\n      <td>34,411 (3,391)</td>\n      <td>38,763 (3,794)</td>\n      <td>32,999 (3,254)</td>\n      <td>28,291 (2,760)</td>\n    </tr>\n    <tr>\n      <td>Multiplicity</td>\n      <td>4.9 (4.9)</td>\n      <td>3.8 (2.1)</td>\n      <td>3.9 (3.0)</td>\n      <td>3.9 (3.7)</td>\n      <td>3.9 (3.9)</td>\n      <td>4.4 (4.0)</td>\n      <td>4.4 (4.4)</td>\n      <td>4.4 (4.5)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>99 (100)</td>\n      <td>95 (80)</td>\n      <td>97 (95)</td>\n      <td>99 (96)</td>\n      <td>100 (100)</td>\n      <td>100 (100)</td>\n      <td>99 (100)</td>\n      <td>100 (100)</td>\n    </tr>\n    <tr>\n      <td>Mean I/sigma (I)</td>\n      <td>14.07 (1.57)</td>\n      <td>25.95 (3.24)</td>\n      <td>16.47 (1.64)</td>\n      <td>12.86 (1.66)</td>\n      <td>10.09 (1.46)</td>\n      <td>15.51 (1.52)</td>\n      <td>16.90 (1.63)</td>\n      <td>13.26 (1.45)</td>\n    </tr>\n    <tr>\n      <td>Wilson B-factor\u00a0(\u212b2)</td>\n      <td>16.07</td>\n      <td>13.12</td>\n      <td>16.95</td>\n      <td>15.55</td>\n      <td>16.06</td>\n      <td>17.62</td>\n      <td>19.75</td>\n      <td>21.44</td>\n    </tr>\n    <tr>\n      <td>R-merge (%)</td>\n      <td>6.8 (99.4)</td>\n      <td>3.0 (29.4)</td>\n      <td>4.2 (71.8)</td>\n      <td>6.2 (99.2)</td>\n      <td>8.1 (104.3)</td>\n      <td>4.9 (100.0)</td>\n      <td>4.7 (101.7)</td>\n      <td>6.7 (127.3)</td>\n    </tr>\n    <tr>\n      <td>R-measurement (%)</td>\n      <td>7.6 (111.0)</td>\n      <td>3.4 (36.9)</td>\n      <td>4.8 (85.6)</td>\n      <td>7.2 (116.8)</td>\n      <td>9.4 (120.8)</td>\n      <td>5.6 (115.3)</td>\n      <td>5.4 (115.9)</td>\n      <td>7.6 (144.5)</td>\n    </tr>\n    <tr>\n      <td>CC1/2</td>\n      <td>1.00 (0.62)</td>\n      <td>1.00 (0.90)</td>\n      <td>1.00 (0.60)</td>\n      <td>1.00 (0.50)</td>\n      <td>1.00 (0.52)</td>\n      <td>1.00 (0.52)</td>\n      <td>1.00 (0.59)</td>\n      <td>1.00 (0.56)</td>\n    </tr>\n    <tr>\n      <td>CC*</td>\n      <td>1.00 (0.88)</td>\n      <td>1.00 (0.97)</td>\n      <td>1.00 (0.87)</td>\n      <td>1.00 (0.82)</td>\n      <td>1.00 (0.83)</td>\n      <td>1.00 (0.83)</td>\n      <td>1.00 (0.86)</td>\n      <td>1.00 (0.85)</td>\n    </tr>\n    <tr>\n      <td>Refinement resolution range\u00a0(\u212b)</td>\n      <td>33.085\u20131.48 (1.558\u20131.48)</td>\n      <td>19.117\u20131.34 (1.394\u20131.34)</td>\n      <td>16.995\u20131.38 (1.435\u20131.38)</td>\n      <td>34.055\u20131.42 (1.477\u20131.42)</td>\n      <td>33.98\u20131.48 (1.547\u20131.48)</td>\n      <td>25.23\u20131.42 (1.477\u20131.42)</td>\n      <td>22.67\u20131.5 (1.579\u20131.5)</td>\n      <td>25.2221.58 (1.679 \u20131.58)</td>\n    </tr>\n    <tr>\n      <td>Reflections used in refinement</td>\n      <td>32,627 (4,654)</td>\n      <td>42,278 (3,932)</td>\n      <td>39,545 (4,265)</td>\n      <td>38,879 (4,161)</td>\n      <td>34,411 (4,237)</td>\n      <td>38,762 (4,256)</td>\n      <td>32,999 (4,643)</td>\n      <td>28,287 (4,632)</td>\n    </tr>\n    <tr>\n      <td>Reflections used for R-free</td>\n      <td>1,028 (147)</td>\n      <td>1,325 (125)</td>\n      <td>1,238 (133)</td>\n      <td>1,218 (130)</td>\n      <td>1,080 (133)</td>\n      <td>1,217 (133)</td>\n      <td>1,036 (145)</td>\n      <td>889 (146)</td>\n    </tr>\n    <tr>\n      <td>R-work (%)</td>\n      <td>13.3 (20.4)</td>\n      <td>12.4 (16.4)</td>\n      <td>13.3 (25.4)</td>\n      <td>12.6 (26.3)</td>\n      <td>13.1 (26.0)</td>\n      <td>11.1 (22.6)</td>\n      <td>10.8 (20.0)</td>\n      <td>11.7 (21.8)</td>\n    </tr>\n    <tr>\n      <td>R-free (%)</td>\n      <td>18.3 (26.8)</td>\n      <td>15.6 (21.3)</td>\n      <td>17.5 (33.0)</td>\n      <td>15.6 (30.4)</td>\n      <td>16.8 (31.2)</td>\n      <td>14.3 (25.5)</td>\n      <td>14.4 (24.8)</td>\n      <td>15.0 (28.8)</td>\n    </tr>\n    <tr>\n      <td>Number of non-hydrogen atoms</td>\n      <td>2,279</td>\n      <td>2,433</td>\n      <td>1,969</td>\n      <td>1,993</td>\n      <td>2,035</td>\n      <td>2,120</td>\n      <td>2,096</td>\n      <td>2,172</td>\n    </tr>\n    <tr>\n      <td>Macromolecule atoms</td>\n      <td>1,933</td>\n      <td>2,132</td>\n      <td>1,745</td>\n      <td>1,750</td>\n      <td>1,837</td>\n      <td>1,924</td>\n      <td>1,952</td>\n      <td>2,061</td>\n    </tr>\n    <tr>\n      <td>Protein residues</td>\n      <td>165</td>\n      <td>164</td>\n      <td>164</td>\n      <td>163</td>\n      <td>163</td>\n      <td>163</td>\n      <td>163</td>\n      <td>163</td>\n    </tr>\n    <tr>\n      <td>RMS (bonds)\u00a0(\u212b)</td>\n      <td>0.009</td>\n      <td>0.008</td>\n      <td>0.008</td>\n      <td>0.009</td>\n      <td>0.009</td>\n      <td>0.008</td>\n      <td>0.009</td>\n      <td>0.009</td>\n    </tr>\n    <tr>\n      <td>RMS (angles)\u00a0(\u00b0)</td>\n      <td>1.16</td>\n      <td>1.20</td>\n      <td>1.23</td>\n      <td>1.20</td>\n      <td>1.16</td>\n      <td>1.16</td>\n      <td>1.14</td>\n      <td>1.14</td>\n    </tr>\n    <tr>\n      <td>Ramachandran favored (%)</td>\n      <td>97</td>\n      <td>94</td>\n      <td>97</td>\n      <td>96</td>\n      <td>97</td>\n      <td>96</td>\n      <td>97</td>\n      <td>96</td>\n    </tr>\n    <tr>\n      <td>Ramachandran allowed (%)</td>\n      <td>3.3</td>\n      <td>5.7</td>\n      <td>2.7</td>\n      <td>4.1</td>\n      <td>3</td>\n      <td>4.2</td>\n      <td>3.3</td>\n      <td>3.9</td>\n    </tr>\n    <tr>\n      <td>Ramachandran outliers (%)</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Rotamer outliers (%)</td>\n      <td>2.4</td>\n      <td>1.3</td>\n      <td>0.53</td>\n      <td>1.1</td>\n      <td>1.5</td>\n      <td>1.9</td>\n      <td>1.4</td>\n      <td>0.88</td>\n    </tr>\n    <tr>\n      <td>Clashscore</td>\n      <td>0.57</td>\n      <td>1.08</td>\n      <td>0.00</td>\n      <td>1.24</td>\n      <td>0.27</td>\n      <td>0.78</td>\n      <td>0.52</td>\n      <td>0.00</td>\n    </tr>\n    <tr>\n      <td>Average B-factor\u00a0(\u212b2)</td>\n      <td>21.74</td>\n      <td>17.25</td>\n      <td>21.85</td>\n      <td>20.14</td>\n      <td>20.00</td>\n      <td>21.48</td>\n      <td>24.09</td>\n      <td>25.77</td>\n    </tr>\n    <tr>\n      <td>Macromolecule average B-factor\u00a0(\u212b2)</td>\n      <td>18.48</td>\n      <td>14.67</td>\n      <td>19.99</td>\n      <td>17.95</td>\n      <td>18.17</td>\n      <td>19.61</td>\n      <td>22.82</td>\n      <td>24.94</td>\n    </tr>\n    <tr>\n      <td>Solvent average B-factor\u00a0(\u212b2)</td>\n      <td>39.99</td>\n      <td>35.54</td>\n      <td>36.34</td>\n      <td>35.89</td>\n      <td>37.01</td>\n      <td>39.89</td>\n      <td>41.23</td>\n      <td>41.30</td>\n    </tr>\n  </tbody>\n</table>\n\n_PDB: Protein Data Bank. CC: correlation coefficient._\n\nWe monitored the shift from single-conformation to multiple conformations both visually (Figure 1A,B) and using the automated electron density scanning program Ringer\u00a0(Figure 1C,D). Briefly, Ringer identifies alternative conformations at low levels of electron density by evaluating the density value for the \u03b3 atom at each possible position about the \u03c71 dihedral angle, given a fixed main\u00a0chain conformation\u00a0(Lang et al., 2014, 2010). We focused on two residues, Ser99 and Leu98, which are key markers of the conformational exchange by NMR (Eisenmesser et al., 2002, 2005) and were implicated in our previous room-temperature X-ray and mutagenesis experiments (Fraser et al., 2009).\u00a0For both Ser99 (Figure 1A) and Leu98 (Figure 1B), a dominant peak is evident at all temperatures. The reduced height of this peak as temperature increases is accompanied by the increase in a secondary peak corresponding to the electron density of the minor conformation.\u00a0To quantify this trend, we computed correlation coefficients between the electron density versus dihedral angle curves for each residue (Figure 1C,D). Pairs of curves for similar temperatures have higher correlations than those for different temperatures. In particular, pairs of curves for temperatures that span the low-temperature (100\u2013180 K) and high-temperature (240\u2013310 K) regimes are more poorly correlated than are curves from the same temperature regime. The dynamical\u00a0transitions\u00a0observed in previous studies (Doster, 2010; Lee and Wand, 2001; Lewandowski et al., 2015; Ringe and Petsko, 2003; Schiro et al., 2015)\u00a0generally occur between these two temperature regimes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07574/elife-07574-fig1-v2.jpg)\n\n**Figure 1.:** Ringer curves of 2mFo-DFc electron density versus \u03c71 dihedral angle for (A) Ser99 and (B) Leu98 show large peaks for modeled major conformations and smaller peaks for additional minor conformations (dashed vertical lines). These secondary peaks become more evident as temperature increases (color gradient from blue to purple to red). A backrub motion was used for Ser99. For (C) Ser99 and (D) Leu98, a Pearson correlation coefficient was calculated between each pair of Ringer curves from the corresponding panel in (A) or (B).\u00a0Circles in diagonal elements are colored as in (A) or (B); circles in off-diagonal elements are all gray but scaled by pairwise correlation coefficient (see legend). Pairs of curves from similar temperatures are generally more correlated to each other (larger circles) than are pairs of curves from more different temperatures (smaller circles).\n\n![Figure 1\u2014Figure supplement 1.](https://cdn.elifesciences.org/articles/07574/elife-07574-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014Figure supplement 1.:** Plots of Rd versus frame-number difference for each dataset in the multitemperature trajectory reveal only minimal radiation damage. The datasets around 180\u2013 260 K exhibit higher Rd in later frames,\u00a0which may reflect either a time-dependent cryocooling artifact or a radiation damage at these intermediate temperatures. Although the rate of X-ray damage varies strongly with temperature, the data collection strategy was adjusted to yield a comparable amount of damage per frame. Therefore, there is no correlation between data collection temperature and the overall extent of radiation damage; the highest temperature datasets are equally undamaged as the lowest temperature datasets. By contrast, we observe a strong correlation between data collection temperature and conformational heterogeneity.\n\nTo ground this conformational redistribution in all-atom detail, we built a multiconformer model with qFit\u00a0(Keedy et al., 2015; van den Bedem et al., 2009)\u00a0for each multitemperature dataset. We then finalized the model by manually editing alternative conformations and refining to convergence, resulting in\u00a0models that were improved relative to the single-conformer models (Table 2, Video 1).\n\n**Table 2.**\n Improvements in validation statistics from finalizing raw qFit models. Statistics calculated with phenix.molprobity.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>RT synchrotron</th>\n      <th>XFEL</th>\n      <th>100 K</th>\n      <th>150 K</th>\n      <th>180 K</th>\n      <th>240 K</th>\n      <th>260 K</th>\n      <th>280 K</th>\n      <th>300 K</th>\n      <th>310 K</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Rfree (%)</td>\n      <td>Raw qFit</td>\n      <td>16.7</td>\n      <td>25.2</td>\n      <td>19.0</td>\n      <td>16.9</td>\n      <td>18.5</td>\n      <td>17.5</td>\n      <td>17.9</td>\n      <td>15.7</td>\n      <td>16.3</td>\n      <td>16.1</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Final</td>\n      <td>14.6</td>\n      <td>24.9</td>\n      <td>18.3</td>\n      <td>15.6</td>\n      <td>17.5</td>\n      <td>15.6</td>\n      <td>16.8</td>\n      <td>14.3</td>\n      <td>14.4</td>\n      <td>15.0</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>\u0394</td>\n      <td>\u20132.1</td>\n      <td>\u20130.3</td>\n      <td>\u20130.7</td>\n      <td>\u20131.3</td>\n      <td>\u20131.0</td>\n      <td>\u20131.9</td>\n      <td>\u20131.1</td>\n      <td>\u20131.4</td>\n      <td>\u20131.9</td>\n      <td>\u20131.1</td>\n    </tr>\n    <tr>\n      <td>MolProbity score</td>\n      <td>Raw qFit</td>\n      <td>1.47</td>\n      <td>1.80</td>\n      <td>1.79</td>\n      <td>1.31</td>\n      <td>1.21</td>\n      <td>1.18</td>\n      <td>1.45</td>\n      <td>1.28</td>\n      <td>0.95</td>\n      <td>1.19</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Final</td>\n      <td>1.08</td>\n      <td>1.39</td>\n      <td>1.19</td>\n      <td>1.29</td>\n      <td>0.63</td>\n      <td>1.14</td>\n      <td>0.91</td>\n      <td>1.25</td>\n      <td>0.99</td>\n      <td>0.76</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>\u0394</td>\n      <td>\u20130.39</td>\n      <td>\u20130.41</td>\n      <td>\u20130.80</td>\n      <td>\u20130.02</td>\n      <td>\u20130.58</td>\n      <td>\u20130.04</td>\n      <td>\u20130.54</td>\n      <td>\u20130.03</td>\n      <td>0.04</td>\n      <td>\u20130.43</td>\n    </tr>\n  </tbody>\n</table>\n\n_RT: Room temperature; XFEL: X-ray-free electron laser._\n\n![Video\u00a01.](https://cdn.elifesciences.org/articles/07574/elife-07574-media1.mp4.jpg)\n\n**Video\u00a01.:** For each pair of adjacent temperatures (e.g. 100 and 150 K), the temperature regime between them was bisected and an average 2mFo-DFc electron density map was calculated in reciprocal space using CCP4 utilities, until temperature points were spaced by <1 K. A new multiconformer model is shown when the animation reaches the corresponding temperature.\n\nAt 180 K and below, the active-site network is best modeled as a single state, with electron density corresponding to ordered water molecules clearly evident adjacent to Phe113 (Figure 2, top row).\u00a0At 240 K and above, by contrast, multiple conformations provide a better explanation of the data.\u00a0Interestingly, some partial-occupancy water molecules are still present and likely co-occur with the major conformations (Figure 2, middle and bottom rows).\u00a0Met61 appears to populate additional conformations above 180 K, although it is difficult to precisely define changes in its conformational ensemble as temperature increases.\u00a0This residue bridges Phe113 and the catalytic residue Arg55 via steric contacts between alternative conformations in both directions, emphasizing the importance of modeling multiple conformations in all-atom detail for understanding inter-residue coupling.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07574/elife-07574-fig2-v2.jpg)\n\n**Figure 2.:** Residues extending from the core to the active site of cyclophilin A (CypA) adopt a single conformer at low temperatures, but gradually transition to increasing occupancy of secondary conformations as temperature increases. These conformations are well supported by 2mFo-DFc electron density contoured at 0.6\u2009\u03c3 (cyan mesh) and 3.0\u2009\u03c3 (dark blue mesh). This is corroborated by the room-temperature X-ray free-electron laser (XFEL) model (gray), which is free from conventional radiation damage and features the same secondary conformations. Water molecules (red spheres) are more fully ordered at low temperatures, but become only partially occupied at higher temperatures because they are mutually exclusive with the secondary Phe113 conformation.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07574/elife-07574-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The CypA dynamic network is shown after molecular replacement and refinement (including automated water placement) in PHENIX, before any manual rebuilding. The major state is well supported by 2mFo-DFc electron density contoured at 0.6\u03c3 (cyan mesh) and 3.0\u03c3 (dark blue mesh) for all datasets, but mFo-DFc difference electron density becomes more negative for the major state (\u22123.0\u03c3, red mesh) and more positive for the unmodeled minor state ( 3.0\u03c3, green mesh) as temperature increases across the synchrotron datasets (blue to red), especially at and above 240 K. Full-occupancy water molecules (red spheres) are automatically placed by PHENIX near the Phe113 minor state in lower\u00a0temperature, but not in higher temperature synchrotron models because they are mutually exclusive with the secondary Phe113 conformation.\n\n### XFEL data confirm conformational heterogeneity in synchrotron data is not due to radiation damage\n\nQuantifying radiation damage versus exposure dose (Figure 1\u2014figure supplement 1) and limiting exposure dose per dataset ensured that the conformational heterogeneity observed in multitemperature synchrotron datasets was not dominated by radiation damage. However, XFELs can generate\u00a0data that are entirely free from conventional radiation damage\u00a0by diffraction-before-destruction data collection (Kern et al., 2014; Spence et al., 2012).\u00a0To compare the distribution of alternative conformations between synchrotron and XFEL data, we collected two ambient-temperature datasets: a 1.75 \u00c5 resolution radiation-damage-free dataset using serial femtosecond rotation crystallography (Table 3)\u00a0(Hirata et al., 2014; Schlichting, 2015; Suga et al., 2015) and an additional 1.2 \u00c5 resolution synchrotron dataset (Table 4).\u00a0For the XFEL experiment, we collected 1,239 individual diffraction\u00a0images, translating to unique unexposed regions of 71 crystals between each shot (Video 2), and processed them using cctbx.xfel\u00a0(Hattne et al., 2014) with post-refinement in PRIME (Uervirojnangkoorn et al., 2015).\u00a0Automated molecular replacement yielded interpretable electron density maps that allowed us to refine a single-conformer structural model with reasonable quality statistics.\u00a0Electron density sampling analysis using Ringer and multiconformer refinement using qFit were performed as for the multitemperature synchrotron data.\n\n**Table 3.**\n Crystallographic statistics for room-temperature XFEL dataset collected across 71 crystals. Statistics for the highest resolution shell are shown in parentheses.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>XFEL</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>PDB ID</td>\n      <td>4YUP</td>\n    </tr>\n    <tr>\n      <td>Resolution range\u00a0(\u212b)</td>\n      <td>43.98 \u20131.75 (1.81 \u20131.75)</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P212121</td>\n    </tr>\n    <tr>\n      <td>Unit cell (a, b, c)</td>\n      <td>42.42, 51.82, 87.96</td>\n    </tr>\n    <tr>\n      <td>Unique reflections</td>\n      <td>19,942 (1894)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>99 (96)</td>\n    </tr>\n    <tr>\n      <td>Wilson B-factor\u00a0(\u212b2)</td>\n      <td>21.12</td>\n    </tr>\n    <tr>\n      <td>Refinement resolution range\u00a0(\u212b)</td>\n      <td>43.98 \u20131.75 (1.93 \u20131.75)</td>\n    </tr>\n    <tr>\n      <td>Reflections used in refinement</td>\n      <td>19,936 (4,811)</td>\n    </tr>\n    <tr>\n      <td>Reflections used for R-free</td>\n      <td>625 (151)</td>\n    </tr>\n    <tr>\n      <td>R-work (%)</td>\n      <td>20.0 (34.3)</td>\n    </tr>\n    <tr>\n      <td>R-free (%)</td>\n      <td>24.9 (36.1)</td>\n    </tr>\n    <tr>\n      <td>Number of non-hydrogen atoms</td>\n      <td>1,762</td>\n    </tr>\n    <tr>\n      <td>Macromolecular atoms</td>\n      <td>1,559</td>\n    </tr>\n    <tr>\n      <td>Protein residues</td>\n      <td>164</td>\n    </tr>\n    <tr>\n      <td>RMS\u00a0(bonds)\u00a0(\u212b)</td>\n      <td>0.017</td>\n    </tr>\n    <tr>\n      <td>RMS\u00a0(angles)\u00a0(\u00b0)</td>\n      <td>1.44</td>\n    </tr>\n    <tr>\n      <td>Ramachandran favored (%)</td>\n      <td>96</td>\n    </tr>\n    <tr>\n      <td>Ramachandran allowed (%)</td>\n      <td>3.6</td>\n    </tr>\n    <tr>\n      <td>Ramachandran outliers (%)</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Rotamer outliers (%)</td>\n      <td>1.8</td>\n    </tr>\n    <tr>\n      <td>Clashscore</td>\n      <td>1.92</td>\n    </tr>\n    <tr>\n      <td>Average B-factor\u00a0(\u212b2)</td>\n      <td>29.03</td>\n    </tr>\n    <tr>\n      <td>Macromolecule average B-factor (\u212b2)</td>\n      <td>26.52</td>\n    </tr>\n    <tr>\n      <td>Solvent average B-factor (\u212b2)</td>\n      <td>48.25</td>\n    </tr>\n    <tr>\n      <td>Number of TLS groups</td>\n      <td>3</td>\n    </tr>\n  </tbody>\n</table>\n\n_PDB: Protein Data Bank; TLS: translation libration screw; XFEL: X-ray-free electron laser._\n\n**Table 4.**\n Crystallographic statistics for room-temperature synchrotron dataset collected on a single crystal. Statistics for the highest resolution shell are shown in parentheses.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>1.2 \u00c5 Synchrotron</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>PDB ID</td>\n      <td>4YUO</td>\n    </tr>\n    <tr>\n      <td>Wavelength\u00a0(\u212b)</td>\n      <td>0.9795</td>\n    </tr>\n    <tr>\n      <td>Resolution range\u00a0(\u212b)</td>\n      <td>44.60 \u20131.20 (1.24 \u20131.20)</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P212121</td>\n    </tr>\n    <tr>\n      <td>Unit cell (a, b, c)</td>\n      <td>42.9, 52.43, 89.11</td>\n    </tr>\n    <tr>\n      <td>Total reflections</td>\n      <td>307,722 (18,999)</td>\n    </tr>\n    <tr>\n      <td>Unique reflections</td>\n      <td>58,118 (5,122)</td>\n    </tr>\n    <tr>\n      <td>Multiplicity</td>\n      <td>5.3 (3.7)</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>91 (82)</td>\n    </tr>\n    <tr>\n      <td>Mean I/sigma (I)</td>\n      <td>10.99 (5.93)</td>\n    </tr>\n    <tr>\n      <td>Wilson B-factor\u00a0(\u212b2)</td>\n      <td>15.22</td>\n    </tr>\n    <tr>\n      <td>R-merge (%)</td>\n      <td>11.2 (20.4)</td>\n    </tr>\n    <tr>\n      <td>R-measurement (%)</td>\n      <td>12.2 (23.4)</td>\n    </tr>\n    <tr>\n      <td>CC1/2</td>\n      <td>0.99 (0.96)</td>\n    </tr>\n    <tr>\n      <td>CC*</td>\n      <td>1.00 (0.99)</td>\n    </tr>\n    <tr>\n      <td>Refinement resolution range\u00a0(\u212b)</td>\n      <td>45.19 \u20131.20 (1.23 \u20131.20)</td>\n    </tr>\n    <tr>\n      <td>Reflections used in refinement</td>\n      <td>58,108 (3,657)</td>\n    </tr>\n    <tr>\n      <td>Reflections used for R-free</td>\n      <td>2,000 (126)</td>\n    </tr>\n    <tr>\n      <td>R-work (%)</td>\n      <td>12.7 (31.3)</td>\n    </tr>\n    <tr>\n      <td>R-free (%)</td>\n      <td>14.6 (33.5)</td>\n    </tr>\n    <tr>\n      <td>Number of non-hydrogen atoms</td>\n      <td>2327</td>\n    </tr>\n    <tr>\n      <td>Macromolecular atoms</td>\n      <td>2143</td>\n    </tr>\n    <tr>\n      <td>Protein residues</td>\n      <td>163</td>\n    </tr>\n    <tr>\n      <td>RMS\u00a0(bonds)\u00a0(\u212b)</td>\n      <td>0.009</td>\n    </tr>\n    <tr>\n      <td>RMS\u00a0(angles)\u00a0(\u00b0)</td>\n      <td>1.16</td>\n    </tr>\n    <tr>\n      <td>Ramachandran favored (%)</td>\n      <td>96</td>\n    </tr>\n    <tr>\n      <td>Ramachandran allowed (%)</td>\n      <td>4.1</td>\n    </tr>\n    <tr>\n      <td>Ramachandran outliers (%)</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>Rotamer outliers (%)</td>\n      <td>0.84</td>\n    </tr>\n    <tr>\n      <td>Clashscore</td>\n      <td>0.98</td>\n    </tr>\n    <tr>\n      <td>Average B-factor\u00a0(\u212b2)</td>\n      <td>19.62</td>\n    </tr>\n    <tr>\n      <td>Macromolecule average B-factor (\u212b2)</td>\n      <td>18.40</td>\n    </tr>\n    <tr>\n      <td>Solvent average B-factor (\u212b2)</td>\n      <td>33.86</td>\n    </tr>\n  </tbody>\n</table>\n\n_PDB: Protein Data Bank._\n\n![Video 2.](https://cdn.elifesciences.org/articles/07574/elife-07574-media2.mp4.jpg)\n\n**Video 2.:** Screen capture image of the Blu-Ice GUI showing a video display of a CypA crystal. After each shot, a new damage line appears and the crystal is translated.\n\nIn agreement with our previous room-temperature studies (Fraser et al., 2009), the XFEL and synchrotron mFo-DFc difference maps reveal evidence for the rate-limiting alternative conformations extending from the active site into the core of the protein (Figure 3A,B).\u00a0For example, the backrub-coupled (Davis et al., 2006)\u00a0rotamer jump of Phe113 is apparent from a large positive mFo-DFc peak in both maps. Alternative conformations for core residue Ser99 are also evident from mFo-DFc peaks (Figure 3A,B) and Ringer electron density sampling curves (Figure 3E).\u00a0We did not conclusively observe a secondary peak in the electron density sampling curve\u00a0corresponding to a discrete alternative conformation of Leu98 (Figure 3F), but that is likely due to the lower resolution of the XFEL dataset.\u00a0Multiconformer models for both datasets (Figure 3C,D) again feature alternative conformations across the active-site network and are strongly supported by 2mFo-DFc electron density. These results provide an important positive control on the observation of conformational heterogeneity in our synchrotron studies by establishing that electron density corresponding to the alternative conformations of CypA\u00a0is\u00a0not an artifact of radiation damage. The ability of\u00a0XFEL crystallography to reveal native and functionally important alternative conformations at high resolution\u00a0may be especially useful for other systems that are presently intractable for room- or variable-temperature synchrotron crystallography due to the small size of available crystals.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07574/elife-07574-fig3-v2.jpg)\n\n**Figure 3.:** (A) Electron density maps for room-temperature synchrotron (red) and (B) X-ray-free electron laser (XFEL) (silver) single-conformer models reveal conformational heterogeneity extending from the protein core (Leu98 and Ser99)\u00a0to the active site (Arg55) of CypA. The primary conformation is well supported by 2mFo-DFc electron density contoured at 0.6\u00a0\u03c3 (cyan mesh) and 3.0\u00a0\u03c3 (dark blue mesh). mFo-DFc difference electron density contoured at 3.0\u00a0\u03c3 (green mesh) and \u2212 3.0\u00a0\u03c3 (red mesh) suggests\u00a0unmodeled\u00a0alternative conformations. (C, D) Finalized multiconformer models explicitly model these alternative conformations, which are well-supported by 2mFo-DFc\u00a0electron density. (E, F) Ringer electron density sampling for the single-conformer models shows peaks representing alternative conformations for (E) Ser99 and (F) Leu98. The primary conformations of both residues are obvious as peaks for both models, but the minor conformations (dashed vertical line; as modeled in 3k0n) are also evident, with 2mFo-DFc values well above the 0.3\u03c3 (darker gray horizontal line) threshold, except for the Leu98 in the XFEL model (due to the lower resolution). A backrub motion of \u221210\u00b0 positions the backbone properly for Ringer to best detect the minor conformation for Ser99, but not for Leu98.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07574/elife-07574-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** A plot of \u2018decay R-factor\u2019 (Rd) as a function of frame-number difference (as in Figure 1\u2014figure supplement 2) has a slope of zero, indicating the absence of radiation damage. Rd is calculated using pairwise observations of unique reflections (hkl) with centroids on frames i and j, and the frame-number difference is given by i-j. The calculations were performed using a 2.0 \u212b resolution cutoff.\n\n### Some regions feature conformational heterogeneity only at low temperatures\n\nAlthough more conformational heterogeneity is expected with our higher\u00a0temperature synchrotron datasets, and is evident in the active site of CypA, cooling can also\u00a0stabilize new conformations\u00a0(Halle, 2004). For example, the loop containing residues 79\u201383 (Figure 4, Video 3) exhibits conformational heterogeneity only at cryogenic temperatures. This region is well fit by a single conformation at 240 K and above, but a secondary loop conformation is necessary to explain the electron density at 100, 150, and 180 K.\u00a0Additionally, the loop is clearly single-state in the highest resolution (1.2 \u00c5) dataset (Figure 4\u2014figure supplement 1), demonstrating that the slightly lower resolution of the elevated-temperature datasets does not obscure a secondary conformation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/07574/elife-07574-fig4-v2.jpg)\n\n**Figure 4.:** The surface loop containing residues 79\u201383 adopts alternative conformations at low temperatures (top row) but not at high temperatures (bottom two rows). The secondary loop conformation is separated from the body of the protein by an ordered water molecule (red sphere); the van der Waals interactions between the loop and the water may reflect an enthalpic stabilization that is more dominant at low temperatures. The electron density peak to the right of the water corresponds to the backbone carbonyl oxygen of Glu81. 2mFo-DFc electron density contoured at 0.6\u03c3 (cyan mesh) and 2.0\u03c3 (dark blue mesh). XFEL: X-ray-free electron laser.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07574/elife-07574-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The surface loop containing residues 79\u201383 does not adopt alternative conformations in the 1.2 A\u030a synchrotron dataset. 2mFo-DFc electron density contoured at 0.6\u03c3 (cyan mesh) and 2.0\u03c3 (dark blue mesh).\n\n![Video 3.](https://cdn.elifesciences.org/articles/07574/elife-07574-media3.mp4.jpg)\n\nIn the primary conformation, the 79\u201383 loop is not involved in any main\u00a0chain\u2013main\u00a0chain hydrogen bonds to the rest of CypA, suggesting that the barrier to forming the secondary conformation does not involve breakage of cooperative secondary-structure-like interactions. The observation\u00a0of a secondary state for residues 79\u201383 at 100\u2013180 K, but not at 240\u2013310 K, suggests that it is\u00a0enthalpically stabilized\u00a0at lower temperatures\u00a0(Halle, 2004; Keedy et al., 2014).\u00a0Consistent with this mechanism, the secondary conformation of the 79\u201383 loop is accompanied by an ordered, partial-occupancy water molecule (Figure 4, top row).\u00a0This water molecule, which is clearly distinct from the carbonyl oxygen of the primary conformation of Glu81,\u00a0wedges between the loop and the rest of the protein.\u00a0The surprising appearance of specific solvent-linked protein conformational heterogeneity exclusively below 240 K emphasizes the complex and heterogeneous changes in protein\u2013solvent energetics that can occur at cryogenic temperatures.\n\n### Quantifying temperature-dependent changes in conformational heterogeneity\n\nDespite counter\u00a0examples such as the 79\u201383 loop, most\u00a0residues in CypA, especially in the active site, exhibit increases in discrete conformational heterogeneity above 180 K.\u00a0To quantify these changes in regions implicated by NMR relaxation experiments, we measured the 2mFo-DFc electron density in the volumes occupied by the alternative conformations of Ser99 and Phe113. By contrast, B-factors, which can model the harmonic motions near any single conformation, are poor proxies for the non-harmonic change between discretely separated conformations. To quantify the change in minor state occupancy as a function of temperature, we summed the electron density in the volume that is occupied exclusively by the minor conformation and avoided any voxels that overlap with the van der Waals radii of atoms of the major conformation (Figure 5A). The resulting curves of minor-state electron density versus temperature have a shallow slope at 180 K and below,\u00a0but a much steeper slope at 240 K and above (Figure 5B,C).\u00a0Additionally, the electron density for the XFEL data is consistent with the data collection temperature (273 K) and the overall trends.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/07574/elife-07574-fig5-v2.jpg)\n\n**Figure 5.:** (A) 2mFo-DFc electron density was summed over the volume occupied by the minor conformation but not the major conformation (blue grid points) for Ser99 and Phe113. (B,C) Minor-state 2mFo-DFc electron density increases with temperature. Electron density sums were normalized for each residue. Multitemperature points from synchrotron data are shown in colors corresponding to temperature. The X-ray-free electron laser point\u00a0is shown as a gray triangle. Best-fit lines are shown for 180 K and below (blue) versus 240 K and above (red).\n\nHowever, most residues that populate alternative conformations do not have such easily characterized and separable regions of electron density. To quantify how conformational heterogeneity throughout CypA varies as a function of temperature, we used B-factor-dependent crystallographic order parameters (S2) (Fenwick et al., 2014). These order parameters include both\u00a0harmonic contributions, which reflect conformational heterogeneity near one conformation (encoded by B-factors),\u00a0and\u00a0non-harmonic contributions, which reflect conformational heterogeneity between multiple discretely separated conformations (encoded by occupancies and displacements in coordinates). Importantly, these order parameters account for both conformational heterogeneity within energy wells, whether it is modeled by B-factors or by subtly different alternative conformations, as well as discretely separated alternative conformations that occupy distinct rotamers. Similar to the 2mFo-DFc electron density integration results for Phe113, we observed a large change in \u03c71 bond order parameters at 240 K and above (Figure 6A).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/07574/elife-07574-fig6-v2.jpg)\n\n**Figure 6.:** (A) The complement of B-factor-influenced side\u00a0chain order parameter for the bond most closely associated with the \u03c71 dihedral angle for Phe113. Lines reflect least-squares fits to synchrotron models at 180 K and below (blue) versus 240 K and above (red). Multitemperature synchrotron points in colors; X-ray-free electron laser (XFEL) point (not included in fits) as gray triangle.\u00a0(B) Distribution of the intersection temperature between the <200 and >200 K\u00a0lines fitted with kernel density function. The peak is near 250 K, although there is a tail toward lower temperatures. Intersection temperatures were <170 K for four residues and >330 K for five residues. (C)\u00a0Predicted and observed values for the complement of side\u00a0chain order parameter, averaged over all residues in CypA. The predicted values were obtained by extrapolating each residue\u2019s fit line for 240 K and above (red curve) or for the full 100\u2013300 K (purple curve), flooring the result to 0, then averaging across all residues in CypA. Observed values, similarly floored and averaged, are shown as points.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07574/elife-07574-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** The complement of B-factor-influenced side\u00a0chain order parameter for the bond most closely associated with the \u03c71 dihedral angle for all residues in CypA. Lines reflect least-squares fits to synchrotron models for 180 K and below (blue) versus 240 K and above (red).\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07574/elife-07574-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Several residues with high 1 \u2013 S2 values (Val2, Glu15, Gly80, Glu81, Lys82, Pro105, Ala117, Glu120, Lys125, Met142, Ser147, and Lys151) are shown for the central molecule (blue-to-red sticks and\u00a0backbone) and also in symmetry mates (green sticks, gray backbone). Many of these residues appear to interact with each other via lattice contacts.\u00a0Frustration in these interactions may lead to persistent disorder.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/07574/elife-07574-fig6-figsupp3-v2.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Each panel is as in Figure 6 , but the order parameter now models the final heavy-atom to heavy-atom bond for each side\u00a0chain (see \u2018Methods\u2019).\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/07574/elife-07574-fig6-figsupp4-v2.jpg)\n\n**Figure 6\u2014figure supplement 4.:** The small multiple plots are as in Figure 6\u2014figure supplement 1 , but the order parameter now models the final heavy-atom to\u00a0heavy-atom\u00a0bond for each side\u00a0chain (see \u2018Methods\u2019).\n\n![Figure 6\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/07574/elife-07574-fig6-figsupp5-v2.jpg)\n\n**Figure 6\u2014figure supplement 5.:** Fit lines for temperature points at 240 K and above were used to extrapolate to the maximal-order temperature, at which 1 \u2212 S2 = 0. (A) Order parameter modeling the bond most closely associated with the \u03c71 dihedral angle. (B) Order parameter modeling the final heavy-atom to heavy-atom bond for each side\u00a0chain.\n\n![Figure 6\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/07574/elife-07574-fig6-figsupp6-v2.jpg)\n\n**Figure 6\u2014figure supplement 6.:** (A\u2013 D) Contributions to \u03c71 order parameter versus temperature for four representative residues in CypA. Ser99 and Phe113 are in the active-site network, Glu81 is surface-exposed and adopts alternative conformations at all temperatures (Figure 4), and Phe8 is buried in the protein core and is single-rotamer at all temperatures. Similar conformations within the same rotameric well were grouped together for this analysis. (A) Occupancy of minor alternative conformations. (B) Intra-residue heavy-atom-average B-factor. (C) Complement of the S2ang component of the \u03c71 order parameter, which uses occupancy-weighted angles between bond vectors across alternative conformations. (D) Complement of the S2ortho component of the \u03c71 order parameter, which uses occupancy-weighted B-factors. Placement of XFEL points and coloring as in Figure 6A .\n\n![Figure 6\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/07574/elife-07574-fig6-figsupp7-v2.jpg)\n\n**Figure 6\u2014figure supplement 7.:** Points indicate observed values for the complement of side\u00a0chain order parameters, floored at 0 and then averaged over all residues in CypA, as in Figure 6 . The blue and red lines represent fits to the \u2264180 K and \u2265240 K floored and averaged points, respectively. The fits to these globally averaged data suggest a transition at \u223c250 K, even though the underlying heterogeneity of the individual residue responses does not indicate there is a transition near this temperature.\n\n### Mapping the transitions in CypA conformational heterogeneity\n\nNext, we applied the order parameter\u00a0analysis to all side\u00a0chain\u00a0\u03c71 angles in CypA. Although conformational heterogeneity generally increases with temperature throughout the enzyme, we observed a diverse set of conformational responses (Figure 6\u2014figure supplement 1).\u00a0The trends for the majority of residues suggested a transition somewhere between our data points at 180 and 240 K, below which the change in conformational heterogeneity\u00a0with temperature is reduced. To quantify this trend, we performed separate fits for the low-temperature (\u2264180 K) and high-temperature (\u2265240 K) data points for all residues.\u00a0The slopes of conformational heterogeneity (1 \u2013 S2) versus temperature\u00a0were significantly different (p=1\u00a0\u00d7\u00a010\u201362, paired T-test) on either side of this transition range:\u00a0the average slope for the low-temperature fit lines (2.5\u00a0\u00d7\u00a010\u20134 K\u20131) was an order of magnitude smaller than for the high-temperature fit lines (2.6\u00a0\u00d7\u00a010\u20133 K\u20131). This is consistent with the idea that heterogeneity is much less dependent on temperature below the 180\u2013240 K \u2018transition\u2019 range.\n\nHowever, some residues behaved differently from the rest of the protein. Val2\u00a0retains its\u00a0conformational\u00a0heterogeneity at all temperatures, which is expected based on its weakly constrained position at the N\u00a0terminus. Many of the remaining outlier residues (Glu15, Glu81, Pro105, Ala117, Glu120, Lys125, Met142, Ser147, Lys151) appear to be involved in a spatially contiguous set of crystal contacts across symmetry mates in the context of the crystal lattice (Figure 6\u2014figure supplement 2). This cluster includes Glu81, which adopts alternative backbone conformations only at low temperatures (Figure 4). The variability of these residues can likely be explained by distinct sets of conformations across crystal contacts that are differentially, but somewhat stochastically, favored during the cooling process\u00a0(Alcorn and Juers, 2010).\n\nOur data suggest that CypA does not undergo a single global transition from having strongly temperature-dependent changes in side\u00a0chain\u00a0conformational heterogeneity to relatively temperature-independent\u00a0behavior.\u00a0An \u2018intersection\u2019\u00a0or \u2018transition\u2019\u00a0temperature for each bond angle can be estimated from\u00a0the intersection of the low-temperature and high-temperature fit lines\u00a0of 1 \u2013 S2 versus temperature.\u00a0The distribution of these intersection temperatures is broad and asymmetrical, with an elongated tail from the peak near 250 K toward 200 K (Figure 6B).\u00a0Furthermore, the distribution of intersection temperatures is more complex for order parameters reporting on the terminal heavy-atom bond of the side\u00a0chain than for \u03c71 (Figure 6\u2014figure supplement 3,4). This increase likely occurs because side\u00a0chain end orientations are subject to more degrees of freedom and therefore temperature changes may redistribute them in a greater variety of ways.\n\n### Distinguishing between models of protein heterogeneity as a function of temperature\n\nOur data provide insight into models\u00a0for the origin of the temperature dependence of protein conformational heterogeneity and into proposed dynamical transitions. In one model, deactivation of different internal protein motions\u00a0at high temperatures (near 300 K) is sufficient to predict a dynamical transition near 200\u00a0K\u00a0(Lee and Wand, 2001). In a second model,\u00a0solvent-coupled arrest of protein motions produces a transition in a similar temperature range\u00a0(Ringe and Petsko, 2003).\u00a0To distinguish between\u00a0these two models, we analyzed the average side\u00a0chain disorder across all residues in CypA, focusing on the bond most closely associated with the \u03c71 dihedral angle, at each of the eight temperatures we studied (Figure 6C).\u00a0These averaged disorder values drop as temperature is decreased from 310 K, then flatten out somewhere between 240 and 180 K, with some scatter due to the variability in the cryocooling process (data points in Figure 6C and Figure 6\u2014figure supplement 7).\n\nNext, we used two different linear fits to extrapolate 1 \u2013 S2\u00a0across all temperatures for each residue, floored the result at maximum order (1 \u2013 S2 =\u00a00), and then averaged across all residues to obtain predictions for the residue-averaged disorder versus temperature. In the first fit, the linear function was fit to data for each residue at all temperatures. Consistent with the necessity of using separate fit lines for the low-temperature and high-temperature data (Figure 5 and Figure 6\u2014figure supplement 1),\u00a0the resulting prediction gives a poor account of the averaged experimental data and does not indicate a transition (purple line in Figure 6C). In the second fit, only the high-temperature (240 K and above) data for each residue were fit. The resulting prediction is more consistent with the averaged high-temperature experimental data and does indicate a transition (red line in Figure 6C). The flattening of this predicted curve at low temperatures occurs as more individual residues\u00a0achieve maximal predicted order (S2\u21921)\u00a0(Figure 6\u2014figure supplement 5). This latter prediction, which is extrapolated from high-temperature crystallographic data,\u00a0is reminiscent of\u00a0predictions based on NMR relaxation experiments conducted at 288\u2013346 K\u00a0(Lee and Wand, 2001). Our observations are consistent with the idea that thermal depopulation of protein alternative conformations is sufficient to predict the existence of an average inflection without invoking a transition of the solvent. However, the low temperature of the predicted inflection (\u223c100 K), as well as the large separation in low-temperature disorder between our experimental data (data points in Figure 6C) and predictions from high temperature (red line in Figure 6C), suggest that thermal depopulation of protein alternative conformations cannot by itself account for the observed \u223c200 K transition.\u00a0This large separation also indicates that data collected at high temperatures (>260 K) cannot be reliably extrapolated to predict conformational heterogeneity at low temperatures. It also follows that data from low temperatures (\u2264180 K) cannot be simply extrapolated to predict the features of the energy landscape that may be important above \u223c200 K.\n\nMany effects may contribute to the discrepancy between\u00a0the observed data and the behavior projected from the high-temperature fits.\u00a0To gain additional insight into this discrepancy, we decomposed the order parameters into their B-factor versus discrete-conformers components and examined their temperature dependences (Figure 6\u2014figure supplement 6). Roughly 67% of residues (e.g. Phe8) remain within one rotamer well across all temperatures. Approximately 13% of residues (e.g. Ser99 and Phe113) populate clearly separable multiple rotameric states at high temperatures, and then show complete depopulation of minority states on cooling so that only a single rotameric state remains at 180 K and below. However, 6% of residues (e.g. Thr5) continue to populate multiple rotameric states at or below 180 K. An additional 6% of residues (e.g. Lys91) populate new rotameric states only at or below 180 K. These results help explain the excess residual disorder in our experimental structures below 240 K compared to projections based on high-temperature fits. Although slopes of crystallographic B-factors with temperature remain nearly flat below 240 K (Figure 6\u2014figure supplement 6B), we expect that true harmonic thermal disorder does subtly decrease from 180 to 100 K;\u00a0these thermal effects could be more detectable if even higher\u00a0resolution data were collected at even lower temperatures, perhaps by using liquid helium as a cryogen to cool to \u223c15 K or below (Chinte et al., 2007).\n\n### Imperfect coupling between active- site residues in CypA\n\nWhile the results above show a variety of thermal and non-thermal conformational responses, it remains unclear whether these responses involve coupled conformational shifts of multiple residues.\u00a0In particular, the network of alternative side\u00a0chain conformations spreading from the core of the protein (Ser99) into the active site (Arg55) across multiple \u03b2-strands exhibits qualitatively similar behavior of increasing occupancy above 240 K. In previous work (Fraser et al., 2009), the collective presence of these alternative conformations at room temperature, but not at cryogenic temperatures, and the close contacts between these residues had suggested a concordance with the\u00a0single exchange process fit by NMR relaxation dispersion for this dynamic active-site network.\u00a0However, using our new multitemperature data, this network appears subdivided based on the apparent intersection or transition temperatures of the constituent residues, with Ser99 and Phe113 behaving most similarly to each other (Figure 7, Video 4).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/07574/elife-07574-fig7-v2.jpg)\n\n**Figure 7.:** Intersection temperatures from (A) \u03c71 order parameters as in Figure 6B or (B)\u00a0side\u00a0chain terminus order parameters as in Figure 6\u2014figure supplement 3 B\u00a0are mapped to the 1.2 \u00c5\u00a0room-temperature synchrotron model. Each residue is marked with a sphere colored based on its apparent transition temperature, from low (blue) to high (red). The active-site network is subdivided: Ser99 and Phe113 (left of boxed region) both transition at a low temperature\u00a0regardless of\u00a0order parameter bond vector, but\u00a0Met61 and Arg55 transition at higher, different temperatures.\n\n![Video\u00a04.](https://cdn.elifesciences.org/articles/07574/elife-07574-media4.mp4.jpg)\n\n## Discussion\n\nHere, we have mapped the conformational landscape of the dynamic enzyme CypA by analyzing multiconformer models from multitemperature crystallography. Unlike previous temperature-dependent analyses of X-ray crystallography, here we consider both harmonic disorder (B-factors) and non-harmonic displacements (alternative conformations and occupancies), characterized using crystallographic bond order parameters. We have four primary findings:\n\nOur results provide new insight into the relationship between energy landscapes, the glass transition, and protein function. Glasses and other disordered systems have complex energy landscapes, in part due to the large number of microenvironments and the extensive frustration that disorder generates in the intermolecular interactions. Proteins at biological temperatures are \u2018glassy\u2019 in this sense\u2014they have complex energy landscapes, due to their large size, heterogeneous amino acid composition, and many degrees of conformational freedom (Frauenfelder et al., 1991). The extensive heterogeneity in the temperature response of individual residues in CypA that we observe here provides additional direct evidence for this underlying energetic heterogeneity.\n\nIn addition to the inherent \u2018glassiness\u2019 of proteins at biological temperatures, dynamical transitions, some of which have been called \u2018glass transitions\u2019, have been reported at lower temperatures, including 180, 200, 220, 240, and 250 K, based on M\u00f6ssbauer spectroscopy, X-ray crystallography, liquid and solid-state NMR, neutron scattering, and other techniques\u00a0(Lewandowski et al., 2015; Schiro et al., 2015). These transitions typically manifest as a change in slope of some measurement in the vicinity of the suggested transition temperature.\u00a0However, many of these measurements are sensitive to motions only within some timescale window (often ps-ns), monitor only a subset of amino acid types, and/or spatially average over all residues in the protein. By contrast, multitemperature crystallography with multiconformer models has many advantages by providing a time-independent and fully site-resolved measurement of ensemble-averaged atomic displacements, including both harmonic and discrete conformational heterogeneity, within the crystal.\n\nThis combined methodology lets us examine dynamical and glass transitions in protein crystals from a new perspective. Glass transitions are by definition non-equilibrium phenomena that arise when the kinetics of relaxation toward equilibrium slow so dramatically that equilibrium cannot be reached on experimental timescales. One signature of a true glass transition in proteins would be if occupancies of minority alternative conformations were arrested at non-zero values below some temperature. Indeed, here we see no appreciable temperature evolution of individual conformer occupancies or B-factors at 180 K and below, and the average disorder at these temperatures is far in excess of what is predicted from high-temperature extrapolations. These observations are consistent with the falling out of equilibrium expected in a glass transition, but not with a transition driven by the thermal freeze-out of alternative side\u00a0chain conformations (Lee and Wand, 2001). Moreover, the persistence of multiple rotameric states at low temperatures is consistent with solvent arrest that impedes further changes in side\u00a0chain disorder. Although the details of protein\u2013solvent interactions may differ in crystals versus in solution, local variability at different protein\u2013solvent interface microenvironments in the crystal (Teeter et al., 2001) likely contributes to the heterogeneity of temperature responses that we observe.\u00a0The critical importance of site resolution is evident in the results of Figure 6. Averaging over side\u00a0chain\u00a0disorder in all residues yields an apparent transition near 250 K (Figure 6 and\u00a0Figure 6\u2014figure supplement 7). Perhaps coincidentally, this same temperature has been associated with a transition for protein side\u00a0chains\u00a0in site-averaged solid-state NMR measurements\u00a0(Lewandowski et al., 2015). However, the \u2018transition\u2019 in our residue-averaged result obscures the highly heterogeneous temperature dependence of the individual side\u00a0chains.\u00a0We find no evidence of tight cooperativity or of a collective global response near 250 K that would be expected in the case of a \u2018true\u2019 dynamical transition. Instead, our data are consistent with local, non-cooperative freeze-out of conformational states defined by the energy landscape over a broad temperature range.\n\nThe heterogeneous response of side\u00a0chain order parameters to temperature is driven largely by the changes to the populations of alternative conformations, which \u2018flat-line\u2019 at different temperatures across CypA. This diversity of \u2018flat-lining\u2019 temperatures is present even within the dynamic active-site network, even though the constituent residues have similar occupancies for their major and minor states at high temperatures (Figure 7). This result contrasts with previous NMR and X-ray experiments that hypothesized correlated motions of this network as rate-limiting for the catalytic cycle (Eisenmesser et al., 2005; Fraser et al., 2009) (Figure 8A).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/07574/elife-07574-fig8-v2.jpg)\n\n**Figure 8.:** (A) The previous simple model in which Ser99, Phe113, and Arg55 (Met61 omitted for clarity) interconvert from one macrostate (blue) to the other (red)\u00a0completely collectively. NMR data suggest this process occurs on a millisecond timescale. (B) A more nuanced model in which network microstates are populated differently depending on the network macrostate, defined by the Phe113 rotameric state. In the left macrostate, Ser99 rotamer changes are disfavored because of steric overlaps with Phe113, but Arg55 rotamer changes are accommodated; the reverse is true (perhaps to a lesser extent) in the right macrostate. Within each microstate, rapid thermal motions occur (bottom right), and may alleviate some minor steric overlaps. Timescales are estimates consistent with NMR observables for CypA and other systems. ms: millisecond; ns: nanosecond; ps: picosecond.\n\nTo bridge these views, we propose that the active-site network adopts two substates, which are primarily distinguished by Phe113 rotamer\u00a0interconversion. Each of these substates adopts a differently weighted ensemble of conformations for other residues (Figure 8B). In this model, Met61 and Arg55 can switch rotamers more easily than Ser99 when Phe113 is in its \u03c71\u00a0gauche (p) rotamer pointed toward Ser99, whereas Ser99\u00a0can switch rotamers more easily than\u00a0Met61 and Arg55\u00a0when Phe113 is in its \u03c71 gauche (m) rotamer pointed toward Met61. Additionally, thermal \u2018breathing\u2019 motions within rotameric wells may relieve minor steric overlaps within some of these macro- and microstates (Figure 8B , bottom right). This model is consistent with Phe113 having the lowest \u2018flat-lining\u2019 temperature of the network (Figure 7), and makes sense sterically because of the large size of the aromatic ring. These hypothesized motions are consistent with the timescales and temperature dependencies of motion assigned by solid-state NMR studies of crystalline protein GB1 (Lewandowski et al., 2015). Furthermore, the model helps explain the difficulty of fitting NMR relaxation data for perturbed versions of the active-site network as a single collective exchange process (Schlegel et al., 2009). The aromatic ring of Phe113 could play a dominant role in determining the chemical shift changes of the surrounding residues. Each of these residues could also populate multiple rotamers in the excited state measured by NMR. Our hierarchical perspective evokes the \u2018population shuffling\u2019 model of (Smith et al., 2015), in which a protein macrostate (in CypA, defined by the Phe113 rotamer) also determines the different relative populations of rotamers for a subset of\u00a0other residues (in CypA, the other residues in the active-site network). In this model, the interconversion between macrostates, and not the collective motion of all residues between distinct rotamers, is correlated with the rate-limiting step of the CypA catalytic cycle.\n\nDiversity in the temperature dependences of alternative conformations as we see here is inevitable given the limitations of the amino acid alphabet, yet its spatial pattern within a protein may provide insight into selective pressures. Evolutionary optimization must ensure that functionally important alternative conformations are robustly populated and interconvert appreciably at physiological conditions. However, the energy landscapes of individual residues are coupled to varying extents, such that some subsets of residues must be collectively optimized to preserve some, but not perfect, collectivity in functional motions. For proteins with large sequence alignments, evolutionary covariation has been used to predict \u2018sectors\u2019 of functionally cooperative residues, which are often dispersed in primary sequence but strikingly contiguous in tertiary structure\u00a0(Halabi et al., 2009). By contrast, temperature-dependent crystallography has the potential to unveil couplings in atomic detail by identifying sets of residues whose conformational ensembles respond concertedly to temperature change. Based on our results with CypA, we expect this coupling to be weak, but measurable. Serial femtosecond XFEL crystallography combined with ultra-fast temperature jumps could enable a temporal view of these coupled conformational changes. Novel static and time-resolved multitemperature crystallographic approaches will provide powerful tools for resolving concerted motions to explore how proteins function and evolve.\n\n## Materials\u00a0and\u00a0methods\n\n### Protein expression, purification, and crystallization\n\nWild-type\u00a0CypA was produced and crystallized as previously reported (Fraser et al., 2009).\u00a0Briefly, crystals were grown by mixing equal volumes of well solution (100 mM (4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid)\u00a0HEPES pH 7.5, 23% PEG 3350, 5 mM Tris (2-carboxymethyl) phosphine\u00a0[TCEP]) and protein (60 mg mL \u20131 in 20 mM HEPES pH 7.5, 100 mM\u00a0NaCl, 0.5\u00a0mM TCEP) in the hanging-drop format.\n\n### Crystallographic data collection\n\nFor the multitemperature synchrotron datasets at 100, 150, 180, 240, 260, 280, 300, and 310 K, we collected data at the Cornell High Energy Synchrotron Source (CHESS) at beamline A1 with a 100 \u00b5m collimator\u00a0using a wavelength of 0.9767 \u00c5. Crystals were looped by hand, stripped of excess mother liquor\u00a0(100 mM HEPES pH 7.5, 23% PEG 3350, 5 mM TCEP) using NVH oil (Warkentin and Thorne, 2009), and placed directly into the nitrogen-gas cryostream pre-set to the desired temperature at the beamline.\u00a0Water inside protein crystals is nanoconfined so that ice nucleation is dramatically suppressed, but water outside crystallizes readily and rapidly.\u00a0Careful removal of all excess solvent from the crystal surface is essential to obtaining ice-free diffraction between 260 K and 180 K without using large cryoprotectant\u00a0concentrations.\n\nFor the XFEL experiment, we collected multiple diffraction images per crystal using a 10-\u00b5m X-ray beam with each irradiation point separated by at least 25\u201340 \u00b5m to avoid collateral radiation damage. A total of 1,239 still diffraction images were collected from 71 CypA crystals over the course of two experiments using a goniometer setup and a Rayonix MX325HE detector at LCLS-XPP (Cohen et al., 2014) (Video 2). All data were collected at ambient temperature (approximately 273 K). To prevent dehydration, crystals were coated with paratone oil immediately after looping and mounted on the goniometer at the XPP endstation of LCLS using the SAM sample exchange robot (Cohen et al., 2002).\n\nFor the new 1.2 \u00c5 room-temperature synchrotron dataset, paratone oil was applied to cover a 2 \u03bcL hanging drop containing a single large crystal of CypA. The crystal was harvested through the paratone and excess mother liquor was removed using a fine paper wick.\u00a0Attenuated data were collected at SSRL beamline 11-1 at 273 K controlled by the cryojet on the PILATUS 6M PAD detector.\n\n### Crystallographic data processing\n\nThe synchrotron datasets were indexed, integrated, and scaled using XDS and XSCALE, and intensities were subsequently converted to structure factor amplitudes using XDSCONV. All datasets were from single crystals. Data reduction statistics for the highest resolution room-temperature dataset and the\u00a0multitemperature datasets can be found in Tables 1,4 respectively.\n\nThe XFEL data were processed using cctbx.xfel\u00a0 (Hattne et al., 2014). Of the 1,239 images collected, 772 were indexed and their intensities were integrated. Post-refinement, as implemented by PRIME\u00a0 (post-refinement and merging, version date: November 11, 20:22:51 2014)\u00a0(Uervirojnangkoorn et al., 2015), was used to correct the intensity measurements and merge the data. We optimized over the uc_tolerance, n-postref_cycle, sigma_min, partiality_min, and gamma_e values to obtain the final structure factor amplitudes. Data reduction statistics for the XFEL data are provided in Table 3 .\n\nTo promote consistency between models derived from different datasets, Rfree flags were generated using PHENIX for the highest resolution \u2018reference\u2019 (1.2 \u00c5, 273 K) dataset first and were subsequently copied to all other multitemperature and XFEL datasets for the automated molecular replacement and refinement pipeline.\n\n### Model building\n\nFor each dataset, we calculated initial phases by performing molecular replacement with phenix.auto_mr\u00a0using PDB ID 2cpl as a search model.\u00a0We next refined XYZs and ADPs of the initial model with phenix.refine for 4 macrocycles with XYZ and ADP weight optimization turned on; identified translation libration screw (TLS) groups with phenix.find_tls_groups; and refined optimized XYZs, ADPs, and TLS parameters for six more macrocycles.\u00a0These single-conformer models and associated electron density maps were used as input for two subsequent steps.\n\nFirst, the single-conformer models were analyzed with Ringer (Lang et al., 2010) via mmtbx.ringer\u00a0using default settings.\u00a0A coupled side\u00a0chain\u2013backbone \u2018backrub\u2019 motion (Davis et al., 2006) of \u221210\u00b0 for Ser99 (see Figure 5A) was necessary to match the C\u03b1 and C\u03b2 positions of the minor conformation as modeled in PDB ID 3k0n; using this modified backbone indeed yielded maximal minor-conformation Ringer peaks for our multitemperature datasets.\u00a0No backrub motion was necessary for Leu98 due to the different type of backbone displacement (Fraser et al., 2009).\u00a0Correlation coefficients between pairs of Ringer electron density versus dihedral angle curves were calculated using the cor function in R\u00a0(Team, 2014).\n\nSecond, the single-conformer models were used as input to qFit\u00a0(Keedy et al., 2015; van den Bedem et al., 2009).\u00a0Subsequent to the automated model building, we manually deleted ill-fitting waters and edited\u00a0alternative protein side\u00a0chain conformations based on fit to the electron density in Coot\u00a0 (Emsley et al., 2010) and refinement with phenix.refine.\u00a0For example, at 240 K, qFit automatically modeled Phe113 as single-state, but significant mFo-DFc peaks remained, so we decided on a two-state model.\u00a0Met61 was particularly difficult to model accurately across temperatures due to convolved issues of \u03c73 non-rotamericity for Met in general (Butterfoss et al., 2005), the relatively high electron count for sulfur, and likely temperature-modulated Met-specific radiation damage.\u00a0For these reasons, visual inspection of the maps and manual building is currently essential for alternative backbone conformations with moderate displacements, as observed in residues 79\u201383 (Figure 4).\u00a0We are currently developing new methods to automatically detect and model such backbone excursions in multiscale\u00a0multiconformer models.\u00a0These efforts improved Rfree and MolProbity scores across datasets (Table 2).\u00a0Because of the lower resolution, the XFEL model was refined with three TLS groups and with optimization of X-ray versus geometry and ADP weights.\n\n### Model and electron density analysis\n\nFor minor-state electron density sums, 2mFo-DFc (Fc filled) map values were summed across a grid of points defined by superimposing each model onto PDB ID 3k0n using all C\u03b1 atoms, summing the 2mFo-DFc value at each point with 0.25 \u00c5 of a target minor-state heavy atom (O\u03b3 for Ser99; C\u03b41, C\u03b51, C\u03b52, or C\u03b6 for Phe113), and normalizing to unity across datasets for each residue being analyzed.\u00a0This procedure allowed a strictly common reference set of map evaluation points.\u00a0Results were very similar when using unfilled maps (data not shown).\n\nWe calculated B-factor-influenced order parameters (S2) as previously reported (Fenwick et al., 2014) except that we monitored one of two different types of bond vector.\u00a0For the \u03c71 order parameter, we used C\u03b2-X\u03b2 (where X = C or O) for most amino acids, C\u03b1-C\u03b2 for Ala, and C\u03b1-H\u03b1 for Gly.\u00a0For the side\u00a0chain-end order parameter, we used the heavy-atom to heavy-atom bond vector for each amino acid that was closest to the side\u00a0chain terminus, with ties broken by the number in the atom name (e.g. C\u03b3-C\u03b41 instead of C\u03b3-C\u03b42 for Leu). All negative order parameters (caused by high B-factors) were floored to 0. \u03c71 order parameters were floored for 7 residues, and side\u00a0chain-end order parameters were floored for 23 residues. Per-residue \u2018apparent dynamic transition temperatures\u2019 were then calculated as the intersection between the <200 K and >200 K fit lines in order parameter versus temperature plots and floored to 0 K if necessary.\u00a0The kernel density curve was fit with the density function in R\u00a0(Team, 2014).\n\nFor extrapolation of fit lines in Figure 6 , we used a fit to all data points or to just the high-temperature data points (\u2265240 K) for each residue, and extrapolated to the temperature at which order would be maximized (1 \u2013 S2 = 0).\u00a0To predict global behavior, at each temperature we averaged across all residues\u00a0the predicted 1 \u2013 S2 values from the fit, making sure to floor non-physical predicted values of 1 \u2013 S2\u00a0< 0 to 0, as in (Lee and Wand, 2001).\n",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "ec1f75ce-dcad-4c4c-9eb5-d10eebecde70",
+      "submission_id": "395d26e5-62a7-490e-82cc-bd6510661d11",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephen C Harrison, Harvard Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.07574.054](https://doi.org/10.7554/eLife.07574.054)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for sending your work entitled \"Mapping the Conformational Landscape of a Dynamic Enzyme by Multitemperature and XFEL Crystallography\" for consideration at eLife. Your article has been favorably evaluated by Michael Marletta (Senior Editor) and two reviewers, Stephen C Harrison and A Joshua Wand. The former is a member of our Board of Reviewing Editors.\n\nThis manuscript, a major technical achievement, gives an initial glimpse from a new perspective on several long-standing issues and controversies in protein biophysics. There are two significant observations \u2013 that local (mostly side chain) conformations are heterogeneous and in many cases show strong temperature dependence and that the temperature dependence is also heterogeneous.\n\nEssential revisions:\n\nA vast amount of work has gone into this report, and the reviewers agreed that it is a tour de force of experimental and computational effort. In its current form however, the manuscript makes it difficult to tease out where it leads. There seem to be two problems, both of which stem from efforts to fit the work into a framework that does not do it justice. Firstly, the authors interpret the results in terms of a transition at 200o even when the data seem to show that there is no such sharp distinction. More importantly, the authors fail to draw obvious conclusions from the heterogeneity of the apparent temperature dependence and try to force it into an old model that seems to be disproven. Secondly, the inclusion of the XFEL experiments is unjustified.\n\nProblem 1:\n\nThere are no data between 180\u00b0 and 240\u00b0, the largest jump in the temperature range. This jump exaggerates the apparent break in the curves in Figure 5B-C, and the relatively small (and imprecisely determined) occupancies of minor states at 180\u00b0 below makes including those points in the \"pseudo Van't Hoff\" plots awkward. But within the large error bars that would obtain, many of the plots could probably include the lower temperature data and remain essentially linear (certainly true for my own hand replotting of Figure 5C as lnK vs. 1/T). In any case, it would seem that the heterogeneous response does not support the slaving model of Fraunfelder et al., since the natural thermal dependence of motion at individual sites will, as shown by Lee and Wand, give an average response typical of the scattering studies of old that started the dynamical transition and slaving models.\n\nProblem 2:\n\nThe XFEL data are in many ways \"scooped\" by the 1.2 \u00c5 synchrotron data. In several figures, the XFEL points are lonely dots that simply fall on the expected curve. The one justification for inclusion of the XFEL data is the assertion that the dataset is damage free. But Figure 1\u2013figure supplement 1 asserts that damage is minimal across data collection temperatures. There is some increase in R as exposure progresses, and the data were collected to avoid damage differences at different temperatures. Nonetheless, over the whole range of temperatures, the resolution is always better than that of the XFEL data, and had the synchrotron data been cut off at 1.75 \u00c5 spacing, it is possible that there would have been no evidence for any damage at any temperature.\n\nBoth these problems can most likely be addressed with some thorough reorganization and considerable rewriting of the manuscript, along the lines outlined below.\n\n1) The Introduction should be about the real point of the paper (and the reason that it would be interesting to eLife readers): the internal dynamics of a protein. It should be addressed to someone interested in protein structure, but who is not acquainted with the earlier Frauenfelder and Petkso work, who has not read Lee and Wand (but needs to know about it), and who would like to understand whether the authors agree or disagree with the interpretations given by Kern to her studies of CypA dynamics. In its current form, the Introduction provides an unclear description of the inadequacies of current methods and the promise of XFEL data collection, and the paper then leaves a careful reader believing that the paper has in no way demonstrated that promise and if anything shown that current synchrotrons do better. Only around the fourth paragraph does the Introduction use the possibility of temperature jump (not used for any of the experiments here) as a reason to segue into what are (for the uninitiated) obscure references to Frauenfelder, Lee and Wand, and Eisenmesser et al.\n\n2) In the presentation of Results, the same forced effort to justify the XFEL experiment shows through. For example, in the third paragraph, the failure of the XFEL data alone clearly to show the Leu98 alternative conformation gives rise to the argument \"oh well, in the future, with less hardy crystals, we'll need it\". We suggest at the end of this set of points how to include the XFEL data more modestly.\n\n3) The Results are written for an \"insider\". What is \"Ringer analysis\", for example? If \"Ringer\" is the name of a program, it should be in all uppercase (like HKL2000, RELION, CHARMM, etc.). Surely there is a two or three word phrase that can summarize sampling the density for evidence of variation of torsion around chi1. Likewise, sentences like \"our multiconformer models separate harmonic from non-harmonic contributions to flexibility\" will be clear to MD savvy folks, but not to a sufficient fraction of the eLife readership to justify the journal as a good venue for a paper written this way.\n\n4) As already mentioned, the interpretation of a sharp divide above and below 200\u00b0 K seems forced. Sure, above 200\u00b0 multiple conformations provide a better explanation than does a single one, but if two conformations are evident at 240, and the occupancy of the minor is not evident at 180\u00b0, that does not convince at least one reviewer that there is anything special about 200\u00b0 or that there is something going on that is different from a smooth decrease in the minor state occupancy that simply falls below the detection threshold somewhere between 240\u00b0 and 180\u00b0, but not in any way that suggests an abrupt transition (at least for the whole protein). This is the key point, both for presentation and analysis of the data and for the conclusions.\n\n5) The paragraph about CypA in HIV is not particularly relevant, and the throw-away remark about an \"arms race\" should be rethought. Some evolutionary relationship between loop states and Gag binding might hold, but there are no lineage data cited even to hint at such a possibility.\n\n6) A diagram is needed to explain what is meant by \"tiered energy landscapes\" \u2013 or at least what Frauenfelder meant by it. It is important to note that the tiers of Fraunfelder are related in timescale yet the heterogeneity of rotamer distributions seen here have been shown by many NMR studies to be on the same sub-nanosecond timescale.\n\n7) To what extent are these data more or less consistent with the notions put forth by Lee and Wand, by Tilton et al, by Kern and coworkers, and ideally also with the (not mentioned) \"sectors\" analyzed by Ranganathan?\n\n8) The reviewers are comfortable with inclusion of the XFEL data, but simply as another dataset. Some modest remark is of course justified, about how valuable the new postrefinement methods are for a good dataset, but Figure 8 should be removed.\n\nMinor points:\n\nFigure 6 fails to get across that the conformational heterogeneity and its temperature dependence are in direct opposition to the global \"glass transition\" popularized by the physics community. It is implied but not made explicit that this heterogeneous temperature dependence predicts the 200 K inflection using data obtained 100 degrees above it. In other words it is a direct consequence of the thermal behavior of internal motion of proteins in solution and has nothing really to do with a global concerted glass transition driven by the freezing of solvent.\n\nThe authors talk a lot about \"dynamics\", but this is not what they observe. Rather they observe presumably (near) equilibrium distributions. What is missing is a strong acknowledgement of timescale. For CypA, they somewhat casually link distributions to slower time scales (i.e. us-ms) rather than the ps-ns motions that actually govern side chain rotamer interconversion. The work of Fraser and Wright (Fenwick et al. 2014) addresses this point somewhat, but that work is only summarized in the present manuscript. Further to this point, the \"hierarchical\" model (beyond the tautological) is not necessarily consistent, since it requires higher \"tiers\" of motion to occur on increasingly slower timescales, which is something that this work cannot really address (although the NMR studies say it is not consistent, since the various classes of side chain motion observed occur on the same timescale).\n\nThe idea of frustration is overworked. In ubiquitin, one of only two proteins where an extensive temperature dependence of NMR-detected fast motion has been done, it has been shown by pressure perturbation that the coupling (effectively the source of frustration) between side chains is very limited.\n",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "52047e3e-e0fe-4b94-9782-1c664dbeb078",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C1",
+      "claim": "More than 95% of crystal structures are determined at cryogenic temperatures (\u223c100 K) to reduce radiation damage.",
+      "claim_type": "EXPLICIT",
+      "source": "However, more than 95% of crystal structures are determined at cryogenic temperatures (\u223c100 K) to reduce radiation damage by minimizing diffusion of reactive intermediates and chemical-damage-induced structural relaxations (Garman, 2010; Holton, 2009; Warkentin et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Garman, 2010; Holton, 2009; Warkentin et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "ad32c928-db7c-4b1c-a436-ecb81b9c1e81",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C2",
+      "claim": "Cryocooling can modify main chain and side chain conformational distributions throughout the protein, including at active sites and distal regions important for allosteric function.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, cryocooling can modify main chain and side chain conformational distributions throughout the protein, including at active sites and distal regions important for allosteric function (Fraser et al., 2011; Halle, 2004; Keedy, et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fraser et al., 2011; Halle, 2004; Keedy, et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "36e1c5af-07c5-44b2-ad95-07b77580a305",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C3",
+      "claim": "Room temperature data collection reveals a multitude of previously 'hidden' alternative conformations that are not evident at cryogenic temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have instead used room temperature data collection to reveal a multitude of previously 'hidden' alternative conformations that are not evident at cryogenic temperatures, many of which have important ramifications for determining molecular mechanisms (Deis et al., 2014; Fraser et al., 2009; Fukuda and Inoue, 2015; van den Bedem et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Deis et al., 2014; Fraser et al., 2009; Fukuda and Inoue, 2015; van den Bedem et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "94cb2c62-17e1-469a-99ed-b464baa4c2b0",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C4",
+      "claim": "A change in the character of conformational heterogeneity and/or protein dynamics occurs around 180\u2013220 K.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies using a wide variety of biophysical probes including NMR, X-ray crystallography, and neutron scattering have revealed a change in the character of conformational heterogeneity and/or protein dynamics around 180\u2013220 K (Doster, 2010; Frauenfelder et al., 2009; Lewandowski et al., 2015; Ringe and Petsko, 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Doster, 2010; Frauenfelder et al., 2009; Lewandowski et al., 2015; Ringe and Petsko, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "7a84a538-c0ee-416a-958d-bb8e9b4f70c9",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C5",
+      "claim": "Eight high-resolution (1.34\u20131.58 \u00c5) synchrotron crystallographic datasets of CypA were collected across temperatures from 100 to 310 K.",
+      "claim_type": "EXPLICIT",
+      "source": "To probe the conformational landscape of CypA, we collected eight high-resolution (1.34 \u20131.58 \u00c5) synchrotron crystallographic datasets across a wide range of temperatures from 100 to 310 K (Table 1) with no added cryoprotectants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript with reference to Table 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "130c3307-766c-48ed-8df3-037987a9b596",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C6",
+      "claim": "The multitemperature synchrotron datasets of CypA were collected with no added cryoprotectants.",
+      "claim_type": "EXPLICIT",
+      "source": "To probe the conformational landscape of CypA, we collected eight high-resolution (1.34 \u20131.58 \u00c5) synchrotron crystallographic datasets across a wide range of temperatures from 100 to 310 K (Table 1) with no added cryoprotectants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "8551f057-8631-4d33-a08d-932aed0c5d1e",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C7",
+      "claim": "For Ser99 and Leu98, mFo-DFc difference electron density maps are relatively featureless below 200 K, suggesting that a single conformation is valid below this temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "In the active-site network, the mFo-DFc difference electron density maps are relatively featureless below 200 K, suggesting that a single conformation is a valid fit below this temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of electron density maps from the multitemperature datasets",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "d05a5051-4d14-48bc-92df-05f3e00e5717",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C8",
+      "claim": "Positive and negative mFo-DFc peaks become gradually more prevalent as temperature increases above 200 K, suggesting that multiple conformations are increasingly required to explain the data.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, positive and negative mFo-DFc peaks become gradually more prevalent as temperature increases above 200 K, suggesting that multiple conformations are increasingly required to explain the data as temperature increases (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on analysis of electron density maps shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "1bcba924-3cd4-4ca0-b2e6-5b42c5b15fc9",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C9",
+      "claim": "At 180 K and below, the active-site network of CypA is best modeled as a single state.",
+      "claim_type": "EXPLICIT",
+      "source": "At 180 K and below, the active-site network is best modeled as a single state, with electron density corresponding to ordered water molecules clearly evident adjacent to Phe113 (Figure 2, top row).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on multiconformer models and electron density analysis shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "4705cb55-766e-4c60-878d-7a6459ba18f6",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C10",
+      "claim": "At 240 K and above, multiple conformations in the active-site network of CypA provide a better explanation of the data.",
+      "claim_type": "EXPLICIT",
+      "source": "At 240 K and above, by contrast, multiple conformations provide a better explanation of the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on multiconformer models and electron density analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "86396fbc-c1bf-4eba-8070-a6ebd789643e",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C11",
+      "claim": "Met61 appears to populate additional conformations above 180 K.",
+      "claim_type": "EXPLICIT",
+      "source": "Met61 appears to populate additional conformations above 180 K, although it is difficult to precisely define changes in its conformational ensemble as temperature increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of multiconformer models across temperatures",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "fdfe999f-7285-4814-a9c2-4ec8f0ce01b0",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C12",
+      "claim": "A 1.75 \u00c5 resolution radiation-damage-free XFEL dataset of CypA was collected at ambient temperature using serial femtosecond rotation crystallography.",
+      "claim_type": "EXPLICIT",
+      "source": "To compare the distribution of alternative conformations between synchrotron and XFEL data, we collected two ambient-temperature datasets: a 1.75 \u00c5 resolution radiation-damage-free dataset using serial femtosecond rotation crystallography (Table 3) (Hirata et al., 2014; Schlichting, 2015; Suga et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated with reference to Table 3 and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "51c31dde-735c-4bca-851c-9694fff80916",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C13",
+      "claim": "For the XFEL experiment, 1,239 individual diffraction images were collected from 71 crystals.",
+      "claim_type": "EXPLICIT",
+      "source": "For the XFEL experiment, we collected 1,239 individual diffraction images, translating to unique unexposed regions of 71 crystals between each shot (Video 2), and processed them using cctbx.xfel (Hattne et al., 2014) with post-refinement in PRIME (Uervirojnangkoorn et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the manuscript with citations to processing methods",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "5348001d-bc14-44b9-bdba-6357ba246d60",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C14",
+      "claim": "The XFEL and synchrotron mFo-DFc difference maps reveal evidence for rate-limiting alternative conformations extending from the active site into the core of CypA.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our previous room-temperature studies (Fraser et al., 2009), the XFEL and synchrotron mFo-DFc difference maps reveal evidence for the rate-limiting alternative conformations extending from the active site into the core of the protein (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on comparison of XFEL and synchrotron electron density maps shown in Figure 3A,B, with citation to previous work",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "388789a1-af5b-4858-97d9-070b52c545e3",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C15",
+      "claim": "The backrub-coupled rotamer jump of Phe113 is apparent from a large positive mFo-DFc peak in both XFEL and synchrotron maps.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the backrub-coupled (Davis et al., 2006) rotamer jump of Phe113 is apparent from a large positive mFo-DFc peak in both maps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of electron density maps with citation to Davis et al., 2006",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "ab864f50-6a05-4f6e-bea0-97d768c8cd46",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C16",
+      "claim": "Alternative conformations for core residue Ser99 are evident from mFo-DFc peaks and Ringer electron density sampling curves.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternative conformations for core residue Ser99 are also evident from mFo-DFc peaks (Figure 3A,B) and Ringer electron density sampling curves (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on analysis of electron density maps and Ringer curves shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "fba9d93f-9f86-4697-aca9-21d2d25c393e",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C17",
+      "claim": "XFEL crystallography provides a radiation-damage-free view of the functionally important alternative conformations of CypA.",
+      "claim_type": "EXPLICIT",
+      "source": "The diffraction-before-destruction nature of XFEL experiments provides a radiation-damage-free view of the functionally important alternative conformations of CypA, confirming earlier synchrotron-based results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of XFEL and synchrotron data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "11d2a867-59be-4e8b-b397-31648a48dc85",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C18",
+      "claim": "The loop containing residues 79\u201383 exhibits conformational heterogeneity only at cryogenic temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the loop containing residues 79\u201383 (Figure 4, Video 3) exhibits conformational heterogeneity only at cryogenic temperatures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on analysis of multiconformer models shown in Figure 4 and Video 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "c6d0df06-c136-4368-90b8-ed1ba17050e7",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C19",
+      "claim": "The loop containing residues 79\u201383 is well fit by a single conformation at 240 K and above.",
+      "claim_type": "EXPLICIT",
+      "source": "This region is well fit by a single conformation at 240 K and above, but a secondary loop conformation is necessary to explain the electron density at 100, 150, and 180 K.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of multiconformer models across temperatures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "4a45cad3-1da6-42cf-88b0-9ac0131be0f1",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C20",
+      "claim": "The loop containing residues 79\u201383 requires a secondary conformation to explain the electron density at 100, 150, and 180 K.",
+      "claim_type": "EXPLICIT",
+      "source": "This region is well fit by a single conformation at 240 K and above, but a secondary loop conformation is necessary to explain the electron density at 100, 150, and 180 K.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of multiconformer models across temperatures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "36b56172-090a-40d4-a86e-62b36543c822",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C21",
+      "claim": "The loop containing residues 79\u201383 is clearly single-state in the highest resolution (1.2 \u00c5) dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the loop is clearly single-state in the highest resolution (1.2 \u00c5) dataset (Figure 4\u2014figure supplement 1), demonstrating that the slightly lower resolution of the elevated-temperature datasets does not obscure a secondary conformation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on analysis of the 1.2 \u00c5 dataset shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "2bf4a577-a952-4be7-ab12-dd61c2b97a89",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C22",
+      "claim": "The secondary conformation of the 79\u201383 loop is accompanied by an ordered, partial-occupancy water molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this mechanism, the secondary conformation of the 79\u201383 loop is accompanied by an ordered, partial-occupancy water molecule (Figure 4, top row).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on analysis of multiconformer models shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "5ddacebb-a1e9-4672-bd50-c13423b699a9",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C23",
+      "claim": "The observation of a secondary state for residues 79\u201383 at 100\u2013180 K, but not at 240\u2013310 K, suggests that it is enthalpically stabilized at lower temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation of a secondary state for residues 79\u201383 at 100\u2013180 K, but not at 240\u2013310 K, suggests that it is enthalpically stabilized at lower temperatures (Halle, 2004; Keedy et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of temperature-dependent conformational changes with citations to Halle, 2004; Keedy et al., 2014",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "ed72c69c-4855-46ac-a6fa-2711c5a037b3",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C24",
+      "claim": "Curves of minor-state electron density versus temperature for Ser99 and Phe113 have a shallow slope at 180 K and below, but a much steeper slope at 240 K and above.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting curves of minor-state electron density versus temperature have a shallow slope at 180 K and below, but a much steeper slope at 240 K and above (Figure 5B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on quantitative analysis of electron density shown in Figure 5B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "126f5c7b-da65-4159-a1f1-a4ef679d915a",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C25",
+      "claim": "The electron density for the XFEL data is consistent with the data collection temperature (273 K) and the overall trends.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the electron density for the XFEL data is consistent with the data collection temperature (273 K) and the overall trends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of XFEL data with multitemperature synchrotron data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "012a1506-039c-4e0b-bcc3-32993d0dd8c1",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C26",
+      "claim": "A large change in \u03c71 bond order parameters for Phe113 occurs at 240 K and above.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the 2mFo-DFc electron density integration results for Phe113, we observed a large change in \u03c71 bond order parameters at 240 K and above (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on analysis of crystallographic order parameters shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "f812ab54-9fbc-4e05-ada8-c708f901f01b",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C27",
+      "claim": "The average slope of conformational heterogeneity (1 \u2013 S2) versus temperature for the low-temperature fit lines (\u2264180 K) is 2.5 \u00d7 10\u20134 K\u20131.",
+      "claim_type": "EXPLICIT",
+      "source": "The slopes of conformational heterogeneity (1 \u2013 S2) versus temperature were significantly different (p=1 \u00d7 10\u201362, paired T-test) on either side of this transition range: the average slope for the low-temperature fit lines (2.5 \u00d7 10\u20134 K\u20131) was an order of magnitude smaller than for the high-temperature fit lines (2.6 \u00d7 10\u20133 K\u20131).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on statistical analysis of order parameters across all residues",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "000bbfb1-e702-468e-9e6e-aefe8d39c426",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C28",
+      "claim": "The average slope of conformational heterogeneity (1 \u2013 S2) versus temperature for the high-temperature fit lines (\u2265240 K) is 2.6 \u00d7 10\u20133 K\u20131.",
+      "claim_type": "EXPLICIT",
+      "source": "The slopes of conformational heterogeneity (1 \u2013 S2) versus temperature were significantly different (p=1 \u00d7 10\u201362, paired T-test) on either side of this transition range: the average slope for the low-temperature fit lines (2.5 \u00d7 10\u20134 K\u20131) was an order of magnitude smaller than for the high-temperature fit lines (2.6 \u00d7 10\u20133 K\u20131).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on statistical analysis of order parameters across all residues",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "9dde91f7-bd77-449a-a8e0-9b2ce3966d62",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C29",
+      "claim": "The slopes of conformational heterogeneity versus temperature are significantly different (p=1 \u00d7 10\u201362) on either side of the 180-240 K transition range.",
+      "claim_type": "EXPLICIT",
+      "source": "The slopes of conformational heterogeneity (1 \u2013 S2) versus temperature were significantly different (p=1 \u00d7 10\u201362, paired T-test) on either side of this transition range: the average slope for the low-temperature fit lines (2.5 \u00d7 10\u20134 K\u20131) was an order of magnitude smaller than for the high-temperature fit lines (2.6 \u00d7 10\u20133 K\u20131).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on paired T-test statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "8216ccce-f0ed-4fe8-9bb0-8a99cc117af5",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C30",
+      "claim": "The distribution of intersection temperatures for CypA residues is broad and asymmetrical, with an elongated tail from the peak near 250 K toward 200 K.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of these intersection temperatures is broad and asymmetrical, with an elongated tail from the peak near 250 K toward 200 K (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on analysis of intersection temperatures shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "5473cb76-a0ae-4a4b-972a-2e9c72c8dcb5",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C31",
+      "claim": "CypA does not undergo a single global transition from having strongly temperature-dependent changes in side chain conformational heterogeneity to relatively temperature-independent behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data suggest that CypA does not undergo a single global transition from having strongly temperature-dependent changes in side chain conformational heterogeneity to relatively temperature-independent behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of the distribution of intersection temperatures across all residues",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "6e3993cb-b225-4043-84b5-440188daf69c",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C32",
+      "claim": "Thermal depopulation of protein alternative conformations is sufficient to predict the existence of an average inflection without invoking a transition of the solvent.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations are consistent with the idea that thermal depopulation of protein alternative conformations is sufficient to predict the existence of an average inflection without invoking a transition of the solvent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of experimental data with predictions from high-temperature fits",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "c095b2fe-d1f0-42ab-818f-e2089c9703d1",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C33",
+      "claim": "The low temperature of the predicted inflection (\u223c100 K) and the large separation in low-temperature disorder between experimental data and predictions from high temperature suggest that thermal depopulation of protein alternative conformations cannot by itself account for the observed \u223c200 K transition.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the low temperature of the predicted inflection (\u223c100 K), as well as the large separation in low-temperature disorder between our experimental data (data points in Figure 6C) and predictions from high temperature (red line in Figure 6C), suggest that thermal depopulation of protein alternative conformations cannot by itself account for the observed \u223c200 K transition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on comparison of experimental data with predictions shown in Figure 6C",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "42cca60c-c4ff-42db-96d4-0454f8f4d9a5",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C34",
+      "claim": "Data collected at high temperatures (>260 K) cannot be reliably extrapolated to predict conformational heterogeneity at low temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "This large separation also indicates that data collected at high temperatures (>260 K) cannot be reliably extrapolated to predict conformational heterogeneity at low temperatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of experimental data with predictions from high-temperature fits",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "86ec919b-44de-4b72-9c66-a4d0c84f41b0",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C35",
+      "claim": "Data from low temperatures (\u2264180 K) cannot be simply extrapolated to predict the features of the energy landscape that may be important above \u223c200 K.",
+      "claim_type": "EXPLICIT",
+      "source": "It also follows that data from low temperatures (\u2264180 K) cannot be simply extrapolated to predict the features of the energy landscape that may be important above \u223c200 K.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of temperature-dependent conformational heterogeneity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "7ee933d2-1a43-49aa-a982-01096362cd65",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C36",
+      "claim": "Roughly 67% of residues in CypA remain within one rotamer well across all temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Roughly 67% of residues (e.g. Phe8) remain within one rotamer well across all temperatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on decomposition of order parameters into B-factor versus discrete-conformers components",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "a41bb302-105b-47b5-b086-a98e66702641",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C37",
+      "claim": "Approximately 13% of residues in CypA populate clearly separable multiple rotameric states at high temperatures, and then show complete depopulation of minority states on cooling so that only a single rotameric state remains at 180 K and below.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 13% of residues (e.g. Ser99 and Phe113) populate clearly separable multiple rotameric states at high temperatures, and then show complete depopulation of minority states on cooling so that only a single rotameric state remains at 180 K and below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on decomposition of order parameters into B-factor versus discrete-conformers components",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "8a66daa6-3657-4cfd-8fcb-aa0f9e48e4de",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C38",
+      "claim": "6% of residues in CypA continue to populate multiple rotameric states at or below 180 K.",
+      "claim_type": "EXPLICIT",
+      "source": "However, 6% of residues (e.g. Thr5) continue to populate multiple rotameric states at or below 180 K.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on decomposition of order parameters into B-factor versus discrete-conformers components",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "7280da3e-4264-4d33-9635-569557744aee",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C39",
+      "claim": "An additional 6% of residues in CypA populate new rotameric states only at or below 180 K.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional 6% of residues (e.g. Lys91) populate new rotameric states only at or below 180 K.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on decomposition of order parameters into B-factor versus discrete-conformers components",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "cedcef28-94fc-4abc-a03e-4b07d6af1554",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C40",
+      "claim": "The active-site network of CypA appears subdivided based on the apparent intersection or transition temperatures of the constituent residues, with Ser99 and Phe113 behaving most similarly to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "However, using our new multitemperature data, this network appears subdivided based on the apparent intersection or transition temperatures of the constituent residues, with Ser99 and Phe113 behaving most similarly to each other (Figure 7, Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on analysis of intersection temperatures mapped to the structure shown in Figure 7",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "5cf92199-1b83-4e2e-9b85-7930af9bc5f9",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C41",
+      "claim": "The extensive heterogeneity in the temperature response of individual residues in CypA provides direct evidence for underlying energetic heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "The extensive heterogeneity in the temperature response of individual residues in CypA that we observe here provides additional direct evidence for this underlying energetic heterogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of temperature-dependent conformational heterogeneity across all residues",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "061532e3-1e0b-4d58-94f4-2caf88015884",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C42",
+      "claim": "No appreciable temperature evolution of individual conformer occupancies or B-factors occurs at 180 K and below in CypA.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, here we see no appreciable temperature evolution of individual conformer occupancies or B-factors at 180 K and below, and the average disorder at these temperatures is far in excess of what is predicted from high-temperature extrapolations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of multiconformer models across temperatures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "b590b7d3-a5a7-4ccc-8f9d-de6f061f0372",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C43",
+      "claim": "The average disorder at 180 K and below in CypA is far in excess of what is predicted from high-temperature extrapolations.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, here we see no appreciable temperature evolution of individual conformer occupancies or B-factors at 180 K and below, and the average disorder at these temperatures is far in excess of what is predicted from high-temperature extrapolations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on comparison of experimental data with predictions from high-temperature fits",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "70060b0c-cf3f-4c5e-b0a4-04c64076bc15",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C44",
+      "claim": "The persistence of multiple rotameric states at low temperatures in CypA is consistent with solvent arrest that impedes further changes in side chain disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the persistence of multiple rotameric states at low temperatures is consistent with solvent arrest that impedes further changes in side chain disorder.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of temperature-dependent conformational heterogeneity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "3f3be35a-5e1a-4ee5-b430-3f4758a01812",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C45",
+      "claim": "Averaging over side chain disorder in all residues of CypA yields an apparent transition near 250 K.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaging over side chain disorder in all residues yields an apparent transition near 250 K (Figure 6 and Figure 6\u2014figure supplement 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on analysis of residue-averaged order parameters shown in Figure 6 and Figure 6\u2014figure supplement 7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "f131e439-a98c-422a-abca-ac5eb0750266",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C46",
+      "claim": "There is no evidence of tight cooperativity or of a collective global response near 250 K in CypA that would be expected in the case of a 'true' dynamical transition.",
+      "claim_type": "EXPLICIT",
+      "source": "We find no evidence of tight cooperativity or of a collective global response near 250 K that would be expected in the case of a 'true' dynamical transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of the heterogeneous temperature dependence of individual side chains",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "0f4876a7-7096-485d-8887-f21604b67d66",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C47",
+      "claim": "The data are consistent with local, non-cooperative freeze-out of conformational states defined by the energy landscape over a broad temperature range.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, our data are consistent with local, non-cooperative freeze-out of conformational states defined by the energy landscape over a broad temperature range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of the heterogeneous temperature dependence of individual side chains",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "71e04214-c1bb-42e8-902c-eec34f02b3f0",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C48",
+      "claim": "The heterogeneous response of side chain order parameters to temperature in CypA is driven largely by the changes to the populations of alternative conformations, which 'flat-line' at different temperatures across CypA.",
+      "claim_type": "EXPLICIT",
+      "source": "The heterogeneous response of side chain order parameters to temperature is driven largely by the changes to the populations of alternative conformations, which 'flat-line' at different temperatures across CypA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on analysis of order parameters and alternative conformations across temperatures",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "f43b2187-df95-4bc3-a48c-b576d330b447",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C49",
+      "claim": "The active-site network of CypA adopts two substates, which are primarily distinguished by Phe113 rotamer interconversion.",
+      "claim_type": "EXPLICIT",
+      "source": "To bridge these views, we propose that the active-site network adopts two substates, which are primarily distinguished by Phe113 rotamer interconversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed model based on analysis of temperature-dependent conformational heterogeneity",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "e30a2ee3-e469-499f-8cde-bbf49e2cc5d2",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C50",
+      "claim": "Each of the two substates of the CypA active-site network adopts a differently weighted ensemble of conformations for other residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of these substates adopts a differently weighted ensemble of conformations for other residues (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Proposed model illustrated in Figure 8B",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "2bee5e5f-f9b3-4a0b-8b18-05a7f21ab8db",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C51",
+      "claim": "Met61 and Arg55 can switch rotamers more easily than Ser99 when Phe113 is in its \u03c71 gauche (p) rotamer pointed toward Ser99.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, Met61 and Arg55 can switch rotamers more easily than Ser99 when Phe113 is in its \u03c71 gauche (p) rotamer pointed toward Ser99, whereas Ser99 can switch rotamers more easily than Met61 and Arg55 when Phe113 is in its \u03c71 gauche (m) rotamer pointed toward Met61.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed model based on analysis of temperature-dependent conformational heterogeneity",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "37d0ac39-7db2-4000-b455-ba00ed07c9bf",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C52",
+      "claim": "Ser99 can switch rotamers more easily than Met61 and Arg55 when Phe113 is in its \u03c71 gauche (m) rotamer pointed toward Met61.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, Met61 and Arg55 can switch rotamers more easily than Ser99 when Phe113 is in its \u03c71 gauche (p) rotamer pointed toward Ser99, whereas Ser99 can switch rotamers more easily than Met61 and Arg55 when Phe113 is in its \u03c71 gauche (m) rotamer pointed toward Met61.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed model based on analysis of temperature-dependent conformational heterogeneity",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "708d51a4-ce8d-4e86-8776-efb6dd5bb73b",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C53",
+      "claim": "Phe113 has the lowest 'flat-lining' temperature of the active-site network.",
+      "claim_type": "EXPLICIT",
+      "source": "This model is consistent with Phe113 having the lowest 'flat-lining' temperature of the network (Figure 7), and makes sense sterically because of the large size of the aromatic ring.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on analysis of intersection temperatures shown in Figure 7",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "5ddb17d8-f016-44b1-bf34-c9d6be933a23",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C54",
+      "claim": "The proposed model for CypA active-site network dynamics is consistent with the timescales and temperature dependencies of motion assigned by solid-state NMR studies of crystalline protein GB1.",
+      "claim_type": "EXPLICIT",
+      "source": "These hypothesized motions are consistent with the timescales and temperature dependencies of motion assigned by solid-state NMR studies of crystalline protein GB1 (Lewandowski et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with cited NMR study",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "4803e846-b721-4064-ab68-03290bb21e64",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C55",
+      "claim": "The proposed model helps explain the difficulty of fitting NMR relaxation data for perturbed versions of the active-site network as a single collective exchange process.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the model helps explain the difficulty of fitting NMR relaxation data for perturbed versions of the active-site network as a single collective exchange process (Schlegel et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with cited NMR study",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "ccb1609c-772c-412a-a719-0e112f5f790f",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C56",
+      "claim": "The aromatic ring of Phe113 could play a dominant role in determining the chemical shift changes of the surrounding residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The aromatic ring of Phe113 could play a dominant role in determining the chemical shift changes of the surrounding residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed explanation based on the model",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "e4b5449e-a04c-4335-80f8-68cd6236e493",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C57",
+      "claim": "Wild-type CypA was produced and crystallized as previously reported by Fraser et al., 2009.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type CypA was produced and crystallized as previously reported (Fraser et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to previous work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "c03eb3db-e767-4801-873f-a18769c5f9e6",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C58",
+      "claim": "CypA crystals were grown by mixing equal volumes of well solution (100 mM HEPES pH 7.5, 23% PEG 3350, 5 mM TCEP) and protein (60 mg mL\u20131 in 20 mM HEPES pH 7.5, 100 mM NaCl, 0.5 mM TCEP) in the hanging-drop format.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, crystals were grown by mixing equal volumes of well solution (100 mM (4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid) HEPES pH 7.5, 23% PEG 3350, 5 mM Tris (2-carboxymethyl) phosphine [TCEP]) and protein (60 mg mL \u20131 in 20 mM HEPES pH 7.5, 100 mM NaCl, 0.5 mM TCEP) in the hanging-drop format.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated experimental method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "65c782fd-b547-4dff-acce-e69fe8adb7fa",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C59",
+      "claim": "Multitemperature synchrotron data were collected at CHESS beamline A1 with a 100 \u00b5m collimator using a wavelength of 0.9767 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "For the multitemperature synchrotron datasets at 100, 150, 180, 240, 260, 280, 300, and 310 K, we collected data at the Cornell High Energy Synchrotron Source (CHESS) at beamline A1 with a 100 \u00b5m collimator using a wavelength of 0.9767 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated experimental method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "f80d705e-4fef-4fbf-9d68-26bd87aa5551",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C60",
+      "claim": "Crystals for multitemperature synchrotron data collection were stripped of excess mother liquor using NVH oil.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystals were looped by hand, stripped of excess mother liquor (100 mM HEPES pH 7.5, 23% PEG 3350, 5 mM TCEP) using NVH oil (Warkentin and Thorne, 2009), and placed directly into the nitrogen-gas cryostream pre-set to the desired temperature at the beamline.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated experimental method with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "739eb63d-55a1-4dbb-b86a-536eb466d704",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C61",
+      "claim": "Water inside protein crystals is nanoconfined so that ice nucleation is dramatically suppressed, but water outside crystallizes readily and rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "Water inside protein crystals is nanoconfined so that ice nucleation is dramatically suppressed, but water outside crystallizes readily and rapidly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of established knowledge about protein crystal behavior",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "f445e04a-f04c-42d1-9eee-59fb7576bb93",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C62",
+      "claim": "Careful removal of all excess solvent from the crystal surface is essential to obtaining ice-free diffraction between 260 K and 180 K without using large cryoprotectant concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "Careful removal of all excess solvent from the crystal surface is essential to obtaining ice-free diffraction between 260 K and 180 K without using large cryoprotectant concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on experimental experience",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "cd8a9fbc-871c-4a16-be66-3c80cd6b12a2",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C63",
+      "claim": "For the XFEL experiment, multiple diffraction images per crystal were collected using a 10-\u00b5m X-ray beam with each irradiation point separated by at least 25\u201340 \u00b5m to avoid collateral radiation damage.",
+      "claim_type": "EXPLICIT",
+      "source": "For the XFEL experiment, we collected multiple diffraction images per crystal using a 10-\u00b5m X-ray beam with each irradiation point separated by at least 25\u201340 \u00b5m to avoid collateral radiation damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated experimental method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "957bb352-49c1-435a-a8e5-ced2049d7876",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C64",
+      "claim": "A total of 1,239 still diffraction images were collected from 71 CypA crystals over the course of two experiments using a goniometer setup and a Rayonix MX325HE detector at LCLS-XPP.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 1,239 still diffraction images were collected from 71 CypA crystals over the course of two experiments using a goniometer setup and a Rayonix MX325HE detector at LCLS-XPP (Cohen et al., 2014) (Video 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated experimental method with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "52f82234-7d11-4d19-8206-b9ccc8c78995",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C65",
+      "claim": "All XFEL data were collected at ambient temperature (approximately 273 K).",
+      "claim_type": "EXPLICIT",
+      "source": "All data were collected at ambient temperature (approximately 273 K).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated experimental condition",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "20e0a2e8-c4f0-44e4-8e52-1cb48cd1d30f",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C66",
+      "claim": "To prevent dehydration, crystals for XFEL data collection were coated with paratone oil immediately after looping.",
+      "claim_type": "EXPLICIT",
+      "source": "To prevent dehydration, crystals were coated with paratone oil immediately after looping and mounted on the goniometer at the XPP endstation of LCLS using the SAM sample exchange robot (Cohen et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated experimental method with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "0e4dd5fb-6b82-4e3b-a28c-35d512b6bdc8",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C67",
+      "claim": "The synchrotron datasets were indexed, integrated, and scaled using XDS and XSCALE.",
+      "claim_type": "EXPLICIT",
+      "source": "The synchrotron datasets were indexed, integrated, and scaled using XDS and XSCALE, and intensities were subsequently converted to structure factor amplitudes using XDSCONV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated data processing method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "2fd67597-b499-4415-bfde-d82a87e709c0",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C68",
+      "claim": "All multitemperature synchrotron datasets were from single crystals.",
+      "claim_type": "EXPLICIT",
+      "source": "All datasets were from single crystals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated experimental detail",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "373147ea-b051-4dfa-9b1a-fd5c0dfd891e",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C69",
+      "claim": "The XFEL data were processed using cctbx.xfel.",
+      "claim_type": "EXPLICIT",
+      "source": "The XFEL data were processed using cctbx.xfel  (Hattne et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated data processing method with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "7ac77453-c864-44d3-9cfd-fccb6458cd7a",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C70",
+      "claim": "Of the 1,239 XFEL images collected, 772 were indexed and their intensities were integrated.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 1,239 images collected, 772 were indexed and their intensities were integrated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated data processing result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "d1cd4aa1-aa1b-4b5f-92d1-c2d2c3532a00",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C71",
+      "claim": "Post-refinement for XFEL data was performed using PRIME.",
+      "claim_type": "EXPLICIT",
+      "source": "Post-refinement, as implemented by PRIME  (post-refinement and merging, version date: November 11, 20:22:51 2014) (Uervirojnangkoorn et al., 2015), was used to correct the intensity measurements and merge the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated data processing method with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "3530fdf3-5c75-491b-b14e-9b763a13770c",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C72",
+      "claim": "Initial phases for each dataset were calculated by performing molecular replacement with phenix.auto_mr using PDB ID 2cpl as a search model.",
+      "claim_type": "EXPLICIT",
+      "source": "For each dataset, we calculated initial phases by performing molecular replacement with phenix.auto_mr using PDB ID 2cpl as a search model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated model building method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "e05f1d9f-a9a4-459f-a634-5fc274bc6bf6",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C73",
+      "claim": "A coupled side chain\u2013backbone 'backrub' motion of \u221210\u00b0 for Ser99 was necessary to match the C\u03b1 and C\u03b2 positions of the minor conformation as modeled in PDB ID 3k0n.",
+      "claim_type": "EXPLICIT",
+      "source": "A coupled side chain\u2013backbone 'backrub' motion (Davis et al., 2006) of \u221210\u00b0 for Ser99 (see Figure 5A) was necessary to match the C\u03b1 and C\u03b2 positions of the minor conformation as modeled in PDB ID 3k0n; using this modified backbone indeed yielded maximal minor-conformation Ringer peaks for our multitemperature datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated analysis method with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "b37f3834-6397-4e7d-91ef-77a84de523a6",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C74",
+      "claim": "No backrub motion was necessary for Leu98 due to the different type of backbone displacement.",
+      "claim_type": "EXPLICIT",
+      "source": "No backrub motion was necessary for Leu98 due to the different type of backbone displacement (Fraser et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated analysis result with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "25555658-115b-4b97-a391-a07f9cbaddaf",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C75",
+      "claim": "B-factor-influenced order parameters (S2) were calculated as previously reported by Fenwick et al., 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "We calculated B-factor-influenced order parameters (S2) as previously reported (Fenwick et al., 2014) except that we monitored one of two different types of bond vector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated analysis method with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "a4bdc911-55a8-4706-870e-08c73c71f996",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C76",
+      "claim": "All negative order parameters (caused by high B-factors) were floored to 0.",
+      "claim_type": "EXPLICIT",
+      "source": "All negative order parameters (caused by high B-factors) were floored to 0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated data processing step",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "4ad7b003-a2a4-43ba-8187-44d2d3b2f3f0",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C77",
+      "claim": "\u03c71 order parameters were floored for 7 residues in CypA.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03c71 order parameters were floored for 7 residues, and side chain-end order parameters were floored for 23 residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated data processing result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "56ffadf2-f335-4883-98c0-5fd31d0f4377",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "claim_id": "C78",
+      "claim": "Side chain-end order parameters were floored for 23 residues in CypA.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03c71 order parameters were floored for 7 residues, and side chain-end order parameters were floored for 23 residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated data processing result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "17d3bf81-b595-47f1-8ed3-4b5ef4f0f60e",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Eight high-resolution synchrotron datasets of CypA were collected across temperatures from 100 to 310 K without cryoprotectants. Analysis of electron density maps shows that the active-site network is best modeled as a single state at 180 K and below, but multiple conformations are increasingly required above 200 K, with Met61 populating additional conformations above 180 K.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C11 provide consistent experimental evidence from multitemperature crystallography. The data collection is well-documented (C5, C6), and the electron density analysis (C7-C10) systematically demonstrates temperature-dependent conformational changes. The visual evidence in figures and the methodological rigor support these observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "18cf9d41-799d-43e4-9217-19533e097a36",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "XFEL crystallography at 1.75 \u00c5 resolution provides radiation-damage-free confirmation of functionally important alternative conformations in CypA. The XFEL data reveal the same alternative conformations extending from the active site to the protein core as observed in synchrotron data, including the backrub-coupled rotamer jump of Phe113 and alternative conformations of Ser99.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C17 establish that XFEL data confirm synchrotron observations without radiation damage artifacts. The experimental details are well-documented (C12, C13), and the comparison between XFEL and synchrotron electron density maps (C14-C16) provides strong validation. This is a critical control experiment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "d2acb0f5-bab2-4e9e-9834-28b5663081c1",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The loop containing residues 79-83 exhibits conformational heterogeneity exclusively at cryogenic temperatures (100-180 K), requiring a secondary conformation to explain electron density at these temperatures but not at 240 K and above. This secondary conformation is accompanied by an ordered partial-occupancy water molecule and is suggested to be enthalpically stabilized at lower temperatures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C23 describe an unexpected finding of cryogenic-specific conformational heterogeneity. The evidence from multiple temperature datasets (C18-C20), high-resolution validation (C21), and structural analysis (C22) is compelling. The mechanistic interpretation (C23) is reasonable given the presence of the water molecule, though it remains somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "5e703d79-ebbf-4750-87e7-4a75d9dd30a3",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Quantitative analysis of minor-state electron density and \u03c71 bond order parameters for Ser99 and Phe113 shows shallow slopes at 180 K and below but much steeper slopes at 240 K and above. The XFEL data at 273 K are consistent with these trends.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 provide quantitative support for the temperature-dependent conformational changes. The electron density integration method is clearly described, and the XFEL data provide independent validation at an intermediate temperature. The analysis is rigorous and well-supported by Figure 5.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "cffc0e93-4969-4c52-bebd-1418fcf33957",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Statistical analysis of conformational heterogeneity (1-S\u00b2) versus temperature across all CypA residues reveals significantly different slopes below and above the 180-240 K transition range (p=1\u00d710\u207b\u2076\u00b2). The distribution of intersection temperatures is broad and asymmetrical with a peak near 250 K, indicating that CypA does not undergo a single global transition but rather exhibits heterogeneous temperature responses across different residues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 present a comprehensive statistical analysis with highly significant results. The paired T-test (C29) provides strong statistical support, and the distribution analysis (C30) reveals important heterogeneity. The conclusion (C31) is well-justified by the data, though the interpretation challenges previous models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "946315db-215a-4458-8189-4c5ae346fe82",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Comparison of experimental data with predictions from high-temperature fits suggests that thermal depopulation of protein alternative conformations can predict an average inflection point, but the low predicted inflection temperature (~100 K) and large separation from experimental low-temperature data indicate that thermal depopulation alone cannot account for the observed ~200 K transition. Data from high temperatures (>260 K) cannot be reliably extrapolated to low temperatures, and vice versa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 present a nuanced analysis distinguishing between thermal depopulation and solvent-driven effects. The comparison with predictions (Figure 6C) provides clear visual evidence. The conclusions are appropriately cautious and acknowledge the limitations of simple extrapolation models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "92ac0c47-ee0c-4fe2-a7fe-f63b896d04b7",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Decomposition of order parameters reveals that approximately 67% of CypA residues remain within one rotamer well across all temperatures, 13% show complete depopulation of minority states below 180 K, 6% continue to populate multiple rotameric states at or below 180 K, and an additional 6% populate new rotameric states only at or below 180 K.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C39 provide a detailed breakdown of residue behavior based on order parameter decomposition. The percentages sum to 92%, leaving 8% unaccounted for, but this is likely within expected variation. The analysis reveals important heterogeneity in temperature responses and is well-supported by Figure 6\u2014figure supplement 6.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "230f666c-1ab8-4c3b-84ee-398ce0eb8111",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The active-site network of CypA appears subdivided based on intersection temperatures of constituent residues, with Ser99 and Phe113 behaving most similarly. The extensive heterogeneity in temperature responses provides evidence for underlying energetic heterogeneity. Below 180 K, there is no appreciable temperature evolution of conformer occupancies or B-factors, and the average disorder exceeds predictions from high-temperature extrapolations, consistent with solvent arrest impeding further changes in side chain disorder.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 integrate multiple lines of evidence to support a model of heterogeneous, non-cooperative behavior. The mapping of intersection temperatures (Figure 7) provides clear visual support. The interpretation regarding solvent arrest (C44) is reasonable given the persistence of multiple rotameric states at low temperatures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "e0d4cd29-c84a-44cf-bb6b-70ab5e316823",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Averaging over all residues yields an apparent transition near 250 K, but there is no evidence of tight cooperativity or collective global response expected for a true dynamical transition. Instead, the data are consistent with local, non-cooperative freeze-out of conformational states over a broad temperature range, driven largely by changes in populations of alternative conformations that 'flat-line' at different temperatures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 present a key interpretive conclusion that challenges the concept of a single dynamical transition. The evidence from residue-averaged data (C45) and the lack of cooperativity (C46) are well-supported. The alternative model (C47, C48) is consistent with the heterogeneous temperature responses observed throughout the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "c5b6b015-b1e2-44cc-ad85-5e9a1ce2e32b",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A hierarchical model is proposed in which the CypA active-site network adopts two substates distinguished primarily by Phe113 rotamer interconversion, with each substate adopting differently weighted ensembles of conformations for other residues. In this model, Met61 and Arg55 can switch rotamers more easily when Phe113 points toward Ser99, while Ser99 switches more easily when Phe113 points toward Met61. This is consistent with Phe113 having the lowest flat-lining temperature of the network.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C49-C53 present a mechanistic model that is speculative (C49-C52 are labeled as INFERENCE/SPECULATION). While the model is consistent with the observation that Phe113 has the lowest flat-lining temperature (C53, supported by Figure 7), the specific predictions about rotamer switching preferences (C51, C52) lack direct experimental validation. The model is plausible but requires further testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "4721db18-17a5-424a-8a17-9cc631e405c9",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The proposed hierarchical model for CypA active-site dynamics is consistent with timescales and temperature dependencies from solid-state NMR studies of protein GB1, helps explain difficulties in fitting NMR relaxation data for perturbed versions of the network as a single collective exchange process, and suggests that the Phe113 aromatic ring could play a dominant role in determining chemical shift changes of surrounding residues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C56 attempt to reconcile the proposed model with previous NMR studies. While the comparisons are reasonable (C54, C55), they rely on indirect evidence from other systems and cited work. The suggestion about Phe113's role in chemical shifts (C56) is speculative. These claims provide plausible connections but lack direct experimental validation in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "d64a7dec-6fe2-4990-b5c3-ba75aad7b7e4",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work establishes that >95% of crystal structures are determined at cryogenic temperatures to reduce radiation damage, but cryocooling can modify conformational distributions. Room temperature crystallography reveals hidden alternative conformations, and previous studies have identified changes in conformational heterogeneity/dynamics around 180-220 K.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 accurately summarize established knowledge from the literature with appropriate citations. These provide essential context for the current study and are well-supported by the cited references.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "d41911aa-63c7-4828-85c5-a3755fa13698",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "CypA was produced and crystallized using established methods. Multitemperature synchrotron data were collected at CHESS beamline A1 using specific protocols including NVH oil treatment to remove excess mother liquor. XFEL data were collected at LCLS-XPP from 71 crystals (1,239 images) at ambient temperature with paratone oil coating to prevent dehydration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C66 provide detailed methodological information that is clearly stated and appropriately referenced. The methods are sufficiently detailed for reproducibility, and the rationale for key steps (e.g., removal of excess solvent, C61-C62) is explained. These are standard methodological claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    },
+    {
+      "id": "af3a225e-5f72-4353-b5f6-815216b630e5",
+      "content_id": "e5f93510-14c2-43c6-9370-432b30393ec0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Data processing methods are described including use of XDS/XSCALE for synchrotron data and cctbx.xfel/PRIME for XFEL data. Model building used molecular replacement with phenix.auto_mr, and analysis included Ringer electron density sampling and calculation of B-factor-influenced order parameters. Specific details are provided for handling of Ser99 backrub motion and flooring of negative order parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C78 provide comprehensive methodological details for data processing and analysis. The methods are clearly described with appropriate software citations. The specific handling of edge cases (e.g., flooring negative order parameters, C76-C78) demonstrates methodological rigor. These are standard methodological claims that support reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:15:58.858524Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7a84a538-c0ee-416a-958d-bb8e9b4f70c9",
+      "result_id": "17d3bf81-b595-47f1-8ed3-4b5ef4f0f60e"
+    },
+    {
+      "claim_id": "130c3307-766c-48ed-8df3-037987a9b596",
+      "result_id": "17d3bf81-b595-47f1-8ed3-4b5ef4f0f60e"
+    },
+    {
+      "claim_id": "8551f057-8631-4d33-a08d-932aed0c5d1e",
+      "result_id": "17d3bf81-b595-47f1-8ed3-4b5ef4f0f60e"
+    },
+    {
+      "claim_id": "d05a5051-4d14-48bc-92df-05f3e00e5717",
+      "result_id": "17d3bf81-b595-47f1-8ed3-4b5ef4f0f60e"
+    },
+    {
+      "claim_id": "1bcba924-3cd4-4ca0-b2e6-5b42c5b15fc9",
+      "result_id": "17d3bf81-b595-47f1-8ed3-4b5ef4f0f60e"
+    },
+    {
+      "claim_id": "4705cb55-766e-4c60-878d-7a6459ba18f6",
+      "result_id": "17d3bf81-b595-47f1-8ed3-4b5ef4f0f60e"
+    },
+    {
+      "claim_id": "86396fbc-c1bf-4eba-8070-a6ebd789643e",
+      "result_id": "17d3bf81-b595-47f1-8ed3-4b5ef4f0f60e"
+    },
+    {
+      "claim_id": "fdfe999f-7285-4814-a9c2-4ec8f0ce01b0",
+      "result_id": "18cf9d41-799d-43e4-9217-19533e097a36"
+    },
+    {
+      "claim_id": "51c31dde-735c-4bca-851c-9694fff80916",
+      "result_id": "18cf9d41-799d-43e4-9217-19533e097a36"
+    },
+    {
+      "claim_id": "5348001d-bc14-44b9-bdba-6357ba246d60",
+      "result_id": "18cf9d41-799d-43e4-9217-19533e097a36"
+    },
+    {
+      "claim_id": "388789a1-af5b-4858-97d9-070b52c545e3",
+      "result_id": "18cf9d41-799d-43e4-9217-19533e097a36"
+    },
+    {
+      "claim_id": "ab864f50-6a05-4f6e-bea0-97d768c8cd46",
+      "result_id": "18cf9d41-799d-43e4-9217-19533e097a36"
+    },
+    {
+      "claim_id": "fba9d93f-9f86-4697-aca9-21d2d25c393e",
+      "result_id": "18cf9d41-799d-43e4-9217-19533e097a36"
+    },
+    {
+      "claim_id": "11d2a867-59be-4e8b-b397-31648a48dc85",
+      "result_id": "d2acb0f5-bab2-4e9e-9834-28b5663081c1"
+    },
+    {
+      "claim_id": "c6d0df06-c136-4368-90b8-ed1ba17050e7",
+      "result_id": "d2acb0f5-bab2-4e9e-9834-28b5663081c1"
+    },
+    {
+      "claim_id": "4a45cad3-1da6-42cf-88b0-9ac0131be0f1",
+      "result_id": "d2acb0f5-bab2-4e9e-9834-28b5663081c1"
+    },
+    {
+      "claim_id": "36b56172-090a-40d4-a86e-62b36543c822",
+      "result_id": "d2acb0f5-bab2-4e9e-9834-28b5663081c1"
+    },
+    {
+      "claim_id": "2bf4a577-a952-4be7-ab12-dd61c2b97a89",
+      "result_id": "d2acb0f5-bab2-4e9e-9834-28b5663081c1"
+    },
+    {
+      "claim_id": "5ddacebb-a1e9-4672-bd50-c13423b699a9",
+      "result_id": "d2acb0f5-bab2-4e9e-9834-28b5663081c1"
+    },
+    {
+      "claim_id": "ed72c69c-4855-46ac-a6fa-2711c5a037b3",
+      "result_id": "5e703d79-ebbf-4750-87e7-4a75d9dd30a3"
+    },
+    {
+      "claim_id": "126f5c7b-da65-4159-a1f1-a4ef679d915a",
+      "result_id": "5e703d79-ebbf-4750-87e7-4a75d9dd30a3"
+    },
+    {
+      "claim_id": "012a1506-039c-4e0b-bcc3-32993d0dd8c1",
+      "result_id": "5e703d79-ebbf-4750-87e7-4a75d9dd30a3"
+    },
+    {
+      "claim_id": "f812ab54-9fbc-4e05-ada8-c708f901f01b",
+      "result_id": "cffc0e93-4969-4c52-bebd-1418fcf33957"
+    },
+    {
+      "claim_id": "000bbfb1-e702-468e-9e6e-aefe8d39c426",
+      "result_id": "cffc0e93-4969-4c52-bebd-1418fcf33957"
+    },
+    {
+      "claim_id": "9dde91f7-bd77-449a-a8e0-9b2ce3966d62",
+      "result_id": "cffc0e93-4969-4c52-bebd-1418fcf33957"
+    },
+    {
+      "claim_id": "8216ccce-f0ed-4fe8-9bb0-8a99cc117af5",
+      "result_id": "cffc0e93-4969-4c52-bebd-1418fcf33957"
+    },
+    {
+      "claim_id": "5473cb76-a0ae-4a4b-972a-2e9c72c8dcb5",
+      "result_id": "cffc0e93-4969-4c52-bebd-1418fcf33957"
+    },
+    {
+      "claim_id": "6e3993cb-b225-4043-84b5-440188daf69c",
+      "result_id": "946315db-215a-4458-8189-4c5ae346fe82"
+    },
+    {
+      "claim_id": "c095b2fe-d1f0-42ab-818f-e2089c9703d1",
+      "result_id": "946315db-215a-4458-8189-4c5ae346fe82"
+    },
+    {
+      "claim_id": "42cca60c-c4ff-42db-96d4-0454f8f4d9a5",
+      "result_id": "946315db-215a-4458-8189-4c5ae346fe82"
+    },
+    {
+      "claim_id": "86ec919b-44de-4b72-9c66-a4d0c84f41b0",
+      "result_id": "946315db-215a-4458-8189-4c5ae346fe82"
+    },
+    {
+      "claim_id": "7ee933d2-1a43-49aa-a982-01096362cd65",
+      "result_id": "92ac0c47-ee0c-4fe2-a7fe-f63b896d04b7"
+    },
+    {
+      "claim_id": "a41bb302-105b-47b5-b086-a98e66702641",
+      "result_id": "92ac0c47-ee0c-4fe2-a7fe-f63b896d04b7"
+    },
+    {
+      "claim_id": "8a66daa6-3657-4cfd-8fcb-aa0f9e48e4de",
+      "result_id": "92ac0c47-ee0c-4fe2-a7fe-f63b896d04b7"
+    },
+    {
+      "claim_id": "7280da3e-4264-4d33-9635-569557744aee",
+      "result_id": "92ac0c47-ee0c-4fe2-a7fe-f63b896d04b7"
+    },
+    {
+      "claim_id": "cedcef28-94fc-4abc-a03e-4b07d6af1554",
+      "result_id": "230f666c-1ab8-4c3b-84ee-398ce0eb8111"
+    },
+    {
+      "claim_id": "5cf92199-1b83-4e2e-9b85-7930af9bc5f9",
+      "result_id": "230f666c-1ab8-4c3b-84ee-398ce0eb8111"
+    },
+    {
+      "claim_id": "061532e3-1e0b-4d58-94f4-2caf88015884",
+      "result_id": "230f666c-1ab8-4c3b-84ee-398ce0eb8111"
+    },
+    {
+      "claim_id": "b590b7d3-a5a7-4ccc-8f9d-de6f061f0372",
+      "result_id": "230f666c-1ab8-4c3b-84ee-398ce0eb8111"
+    },
+    {
+      "claim_id": "70060b0c-cf3f-4c5e-b0a4-04c64076bc15",
+      "result_id": "230f666c-1ab8-4c3b-84ee-398ce0eb8111"
+    },
+    {
+      "claim_id": "3f3be35a-5e1a-4ee5-b430-3f4758a01812",
+      "result_id": "e0d4cd29-c84a-44cf-bb6b-70ab5e316823"
+    },
+    {
+      "claim_id": "f131e439-a98c-422a-abca-ac5eb0750266",
+      "result_id": "e0d4cd29-c84a-44cf-bb6b-70ab5e316823"
+    },
+    {
+      "claim_id": "0f4876a7-7096-485d-8887-f21604b67d66",
+      "result_id": "e0d4cd29-c84a-44cf-bb6b-70ab5e316823"
+    },
+    {
+      "claim_id": "71e04214-c1bb-42e8-902c-eec34f02b3f0",
+      "result_id": "e0d4cd29-c84a-44cf-bb6b-70ab5e316823"
+    },
+    {
+      "claim_id": "f43b2187-df95-4bc3-a48c-b576d330b447",
+      "result_id": "c5b6b015-b1e2-44cc-ad85-5e9a1ce2e32b"
+    },
+    {
+      "claim_id": "e30a2ee3-e469-499f-8cde-bbf49e2cc5d2",
+      "result_id": "c5b6b015-b1e2-44cc-ad85-5e9a1ce2e32b"
+    },
+    {
+      "claim_id": "2bee5e5f-f9b3-4a0b-8b18-05a7f21ab8db",
+      "result_id": "c5b6b015-b1e2-44cc-ad85-5e9a1ce2e32b"
+    },
+    {
+      "claim_id": "37d0ac39-7db2-4000-b455-ba00ed07c9bf",
+      "result_id": "c5b6b015-b1e2-44cc-ad85-5e9a1ce2e32b"
+    },
+    {
+      "claim_id": "708d51a4-ce8d-4e86-8776-efb6dd5bb73b",
+      "result_id": "c5b6b015-b1e2-44cc-ad85-5e9a1ce2e32b"
+    },
+    {
+      "claim_id": "5ddb17d8-f016-44b1-bf34-c9d6be933a23",
+      "result_id": "4721db18-17a5-424a-8a17-9cc631e405c9"
+    },
+    {
+      "claim_id": "4803e846-b721-4064-ab68-03290bb21e64",
+      "result_id": "4721db18-17a5-424a-8a17-9cc631e405c9"
+    },
+    {
+      "claim_id": "ccb1609c-772c-412a-a719-0e112f5f790f",
+      "result_id": "4721db18-17a5-424a-8a17-9cc631e405c9"
+    },
+    {
+      "claim_id": "52047e3e-e0fe-4b94-9782-1c664dbeb078",
+      "result_id": "d64a7dec-6fe2-4990-b5c3-ba75aad7b7e4"
+    },
+    {
+      "claim_id": "ad32c928-db7c-4b1c-a436-ecb81b9c1e81",
+      "result_id": "d64a7dec-6fe2-4990-b5c3-ba75aad7b7e4"
+    },
+    {
+      "claim_id": "36e1c5af-07c5-44b2-ad95-07b77580a305",
+      "result_id": "d64a7dec-6fe2-4990-b5c3-ba75aad7b7e4"
+    },
+    {
+      "claim_id": "94cb2c62-17e1-469a-99ed-b464baa4c2b0",
+      "result_id": "d64a7dec-6fe2-4990-b5c3-ba75aad7b7e4"
+    },
+    {
+      "claim_id": "e4b5449e-a04c-4335-80f8-68cd6236e493",
+      "result_id": "d41911aa-63c7-4828-85c5-a3755fa13698"
+    },
+    {
+      "claim_id": "c03eb3db-e767-4801-873f-a18769c5f9e6",
+      "result_id": "d41911aa-63c7-4828-85c5-a3755fa13698"
+    },
+    {
+      "claim_id": "65c782fd-b547-4dff-acce-e69fe8adb7fa",
+      "result_id": "d41911aa-63c7-4828-85c5-a3755fa13698"
+    },
+    {
+      "claim_id": "f80d705e-4fef-4fbf-9d68-26bd87aa5551",
+      "result_id": "d41911aa-63c7-4828-85c5-a3755fa13698"
+    },
+    {
+      "claim_id": "739eb63d-55a1-4dbb-b86a-536eb466d704",
+      "result_id": "d41911aa-63c7-4828-85c5-a3755fa13698"
+    },
+    {
+      "claim_id": "f445e04a-f04c-42d1-9eee-59fb7576bb93",
+      "result_id": "d41911aa-63c7-4828-85c5-a3755fa13698"
+    },
+    {
+      "claim_id": "cd8a9fbc-871c-4a16-be66-3c80cd6b12a2",
+      "result_id": "d41911aa-63c7-4828-85c5-a3755fa13698"
+    },
+    {
+      "claim_id": "957bb352-49c1-435a-a8e5-ced2049d7876",
+      "result_id": "d41911aa-63c7-4828-85c5-a3755fa13698"
+    },
+    {
+      "claim_id": "52f82234-7d11-4d19-8206-b9ccc8c78995",
+      "result_id": "d41911aa-63c7-4828-85c5-a3755fa13698"
+    },
+    {
+      "claim_id": "20e0a2e8-c4f0-44e4-8e52-1cb48cd1d30f",
+      "result_id": "d41911aa-63c7-4828-85c5-a3755fa13698"
+    },
+    {
+      "claim_id": "0e4dd5fb-6b82-4e3b-a28c-35d512b6bdc8",
+      "result_id": "af3a225e-5f72-4353-b5f6-815216b630e5"
+    },
+    {
+      "claim_id": "2fd67597-b499-4415-bfde-d82a87e709c0",
+      "result_id": "af3a225e-5f72-4353-b5f6-815216b630e5"
+    },
+    {
+      "claim_id": "373147ea-b051-4dfa-9b1a-fd5c0dfd891e",
+      "result_id": "af3a225e-5f72-4353-b5f6-815216b630e5"
+    },
+    {
+      "claim_id": "7ac77453-c864-44d3-9cfd-fccb6458cd7a",
+      "result_id": "af3a225e-5f72-4353-b5f6-815216b630e5"
+    },
+    {
+      "claim_id": "d1cd4aa1-aa1b-4b5f-92d1-c2d2c3532a00",
+      "result_id": "af3a225e-5f72-4353-b5f6-815216b630e5"
+    },
+    {
+      "claim_id": "3530fdf3-5c75-491b-b14e-9b763a13770c",
+      "result_id": "af3a225e-5f72-4353-b5f6-815216b630e5"
+    },
+    {
+      "claim_id": "e05f1d9f-a9a4-459f-a634-5fc274bc6bf6",
+      "result_id": "af3a225e-5f72-4353-b5f6-815216b630e5"
+    },
+    {
+      "claim_id": "b37f3834-6397-4e7d-91ef-77a84de523a6",
+      "result_id": "af3a225e-5f72-4353-b5f6-815216b630e5"
+    },
+    {
+      "claim_id": "25555658-115b-4b97-a391-a07f9cbaddaf",
+      "result_id": "af3a225e-5f72-4353-b5f6-815216b630e5"
+    },
+    {
+      "claim_id": "a4bdc911-55a8-4706-870e-08c73c71f996",
+      "result_id": "af3a225e-5f72-4353-b5f6-815216b630e5"
+    },
+    {
+      "claim_id": "4ad7b003-a2a4-43ba-8187-44d2d3b2f3f0",
+      "result_id": "af3a225e-5f72-4353-b5f6-815216b630e5"
+    },
+    {
+      "claim_id": "56ffadf2-f335-4883-98c0-5fd31d0f4377",
+      "result_id": "af3a225e-5f72-4353-b5f6-815216b630e5"
+    }
+  ],
+  "comparisons": []
+}

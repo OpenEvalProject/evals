@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Experiment 1 demonstrates that perceptual grouping of wedge-shaped 2D image regions is a serial process where attention spreads fastest in homogeneous areas and slows near edges. The growth-cone model best explains the reaction time patterns (86% variance in Exp 1A, 72% in Exp 1B), significantly outperforming alternative models including uniform connectedness, pixel-by-pixel, filling-in, and Euclidean models. The estimated grouping speed is 22 ms per growth cone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental data from Experiment 1 (both 1A and 1B) provide strong, converging evidence for serial perceptual grouping with scale-dependent speed. The statistical analyses (ANOVA, regression, bootstrap tests) are appropriate and show significant effects. The control experiment (C43) rules out masking as an alternative explanation. The growth-cone model's superior fit is demonstrated through rigorous model comparison with multiple baselines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Experiment 2 extends the serial grouping findings to more complex stimuli. For scrambled cartoons and cartoon outlines, the growth-cone model explains 58% and 41% of RT variance respectively, significantly outperforming alternative models. The estimated speed (24 ms/growth cone) is consistent with Experiment 1. However, the model performs poorly for detailed cartoons with interior contours and color pictures, indicating that interior features and textures influence grouping speed beyond what the outline-based model captures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The results for scrambled cartoons and cartoon outlines strongly support the growth-cone model with appropriate statistical validation (bootstrap tests, p<0.01). The authors appropriately acknowledge the model's limitations for more complex stimuli (C67, C68) and provide a reasonable interpretation. The consistency of speed estimates across experiments strengthens the findings. The limitation is clearly stated rather than hidden, which is scientifically appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Experiment 3 directly measures the spread of object-based attention using an Egly cueing paradigm. The object-based advantage (faster RTs for invalid same-object vs. different-object trials) peaks earlier for broad bars (344 ms) than narrow bars (463 ms), with a time difference of 119 ms. This yields an estimated attention spreading speed of 31 ms per growth cone, consistent with Experiments 1 and 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Experiment 3 provides direct evidence linking perceptual grouping to object-based attention spread with appropriate statistical analyses (t-tests, Gaussian fitting, bootstrap confidence intervals). The convergence of speed estimates across all three experiments (22, 24, and 31 ms/growth cone) strengthens the overall conclusion. The experimental design appropriately controls for distance effects by matching cue-target distances across conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C80",
+      "C27",
+      "C12"
+    ],
+    "result": "The experimental findings refute the uniform connectedness hypothesis of Palmer and Rock (1994), which predicted instantaneous grouping of uniformly connected regions. Instead, the data demonstrate that perceptual grouping of 2D image regions relies on a serial, incremental process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental evidence clearly contradicts the uniform connectedness prediction that RT should be constant across cue locations within a homogeneous region. The systematic RT variations as a function of cue position (C38, C46, C47) and the superior fit of the growth-cone model over constant-RT models provide strong evidence against this prior theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C98"
+    ],
+    "result": "The measured propagation speed of 8-16 cm/s (calculated from 2-4 mm cortical distance per 25 ms) is consistent with neurophysiological measurements of horizontal propagation of neuronal activity in visual cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The calculation linking behavioral measurements to cortical propagation speed is based on well-established neuroanatomical data (C115, C98) and yields values consistent with prior neurophysiological studies (C116). This provides a plausible neural mechanism for the behavioral findings, though it remains an inference rather than direct neural measurement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors propose that the visual cortical hierarchy can implement scale-dependent spread of object-based attention by leveraging different receptive field sizes in distinct cortical areas. Near boundaries and in narrow regions, small RFs in lower areas support high-resolution processing; in larger homogeneous regions, larger RFs in higher areas enable faster propagation. This mechanism is compatible with RF size increases with eccentricity and is supported by neuroimaging studies showing stronger engagement of lower visual areas for finer spatial scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a theoretical proposal (speculation/inference) rather than a directly tested hypothesis. While it is consistent with known properties of visual cortex organization (C95, C97, C98) and provides a plausible neural implementation, it lacks direct experimental validation in this study. The proposal is reasonable and well-grounded in neuroscience, but would require neurophysiological experiments to confirm. The authors appropriately present this as a discussion point rather than a proven mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The authors discuss limitations of the current growth-cone model implementation (based only on outlines) and propose that future models incorporating object recognition through hierarchical convolutional networks and semantic segmentation could better account for grouping with interior features, colors, and textures. They suggest that semantic segmentation networks with horizontal connections could explain serial RT patterns in natural images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is primarily speculative discussion about future model development rather than tested results. While the limitations of the current model are clearly demonstrated (C67, C68, C101), the proposed solutions (C104-C111) are not empirically validated in this study. The discussion appropriately cites relevant computational neuroscience and machine learning work, but these remain proposals for future research rather than supported findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "The authors conclude that perceptual grouping of 2D image regions requires tens to hundreds of milliseconds for naturalistic pictures, during which subjects spread object-based attention within image regions. They speculate that the typical fixation duration of 200-300 ms may be optimized to allow time for both object recognition and image parsing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conclusion that grouping takes tens to hundreds of milliseconds (C117) is well-supported by the experimental data across all three experiments. The interpretation that this time is needed for spreading object-based attention (C118) is supported by Experiment 3. However, the speculation about fixation duration optimization (C120) is clearly marked as speculation and is not directly tested, which is appropriate scientific practice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The manuscript provides background on visual perception, noting that the visual system creates structured representations by grouping features into objects, but the mechanisms underlying perceptual organization are only partially understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are accurate statements of established knowledge in visual neuroscience and perception, appropriately setting up the motivation for the study. They represent consensus views in the field rather than novel claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The introduction reviews prior literature on perceptual grouping, distinguishing between rapid, pre-attentive object recognition (which can be fast and feedforward) and slower, serial grouping processes (as in curve tracing). The authors note that curve tracing exhibits size invariance and has been modeled as a growth-cone process, providing precedent for their current work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an accurate review of prior literature with appropriate citations. The distinction between fast feedforward recognition and slower serial grouping processes is well-established in the field. The discussion of curve tracing and size invariance appropriately contextualizes the current study within existing research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors describe five computational models for perceptual grouping: uniform connectedness (instantaneous grouping), pixel-by-pixel (constant speed spreading), growth-cone (scale-dependent spreading), filling-in (inward from boundaries), and Euclidean (distance-based). These models make distinct predictions about RT patterns that can be tested experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model descriptions are clear and appropriately grounded in prior literature. The models are well-defined with explicit mathematical formulations provided in the Methods section. The models represent reasonable alternative hypotheses spanning the space of plausible mechanisms, making them appropriate for comparative evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors review the Egly cueing paradigm and the concept of object-based attention, noting that the RT difference between invalid same-object and different-object trials is an established measure of object-based attention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This accurately describes established methodology in the attention literature with appropriate citations. The Egly paradigm is a well-validated approach for measuring object-based attention, making it appropriate for Experiment 3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "The authors pose the question of whether object recognition affects perceptual grouping by providing larger chunks to be grouped at once, citing prior work suggesting this possibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an appropriate research question based on prior literature (C55). While the current study addresses this question partially through Experiment 2 (showing that the model works less well for recognizable objects), it is not fully resolved and is appropriately discussed as requiring future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "The authors speculate that serial grouping may only be necessary for specific tasks, such as grasping, where determining whether surfaces belong to the same object is critical, but may be unnecessary for object recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is clearly marked as speculation about the functional role of serial grouping in everyday behavior. While plausible, it is not directly tested in the current study and represents a hypothesis for future investigation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The authors describe the technical basis of their quantitative super-resolution imaging approach using Dendra2, a photo-convertible fluorescent protein. The method detects immobile molecules within a 60 ms temporal window and uses raw detection counts as a metric to avoid counting errors from blinking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 establish the methodological foundation with appropriate citations (C1, C2, C5) and clear descriptions of technical limitations (C3-C6). The principle that detection frequency correlates with protein concentration (C7) is well-established in super-resolution microscopy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Pol II forms transient clusters in live MEF cells with characteristic temporal signatures distinct from stable structures. Time traces show rapid assembly and disassembly, validated by pair-correlation analysis, Monte Carlo simulations, and comparison with stable H2B-Dendra2 controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C20 provide converging evidence for transient Pol II clustering through multiple validation approaches: pair-correlation PALM (C10), Monte Carlo simulations (C15), and stable control comparisons (C17-C18). The temporal signatures are clearly distinguished from stable clusters in fixed cells and H2B controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Pol II clusters in live MEF cells have an average lifetime of 8.3 \u00b1 0.2 seconds under normal growth conditions, independent of excitation laser power, comparable to previous observations in human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 provide quantitative measurements with appropriate statistical analysis (N=214 clusters from 6 cells, C22). The laser power independence (C23) validates that the measured lifetime reflects biological dynamics rather than photobleaching artifacts. Comparison to prior work (C25) provides external validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The MS2/MCP system enables visualization of \u03b2-actin mRNA in live cells. Up to four \u03b2-actin gene loci are observed in tetraploid MEF cells, and Dendra2-Pol II expression does not affect \u03b2-actin gene levels or transcription dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33 describe the MS2/MCP reporter system with appropriate citations (C26, C27, C29) and validate that the Dendra2-Pol II fusion does not perturb the system (C32, C33). The observation of four loci (C30) is consistent with the known tetraploid nature of the cells (C31).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Pol II clusters co-localize with actively transcribed \u03b2-actin genes in living cells with localization accuracies of 31 nm (Dendra2) and 18 nm (JF646). The co-localized clusters are short-lived (~6.3 s), indicating that transient Pol II clusters occur on active gene loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 demonstrate co-localization with appropriate spatial resolution (C35) and temporal dynamics (C37) consistent with the global observations. The conclusion that transient clusters occur on active genes (C38) is well-supported by the dual-color imaging data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Fixed cell analysis reveals two populations of Pol II at \u03b2-actin gene loci: small accumulations (2-22 molecules) representing elongating polymerases, and large clusters (~80 molecules) distinct from elongating polymerases. The short-lived clusters observed in live cells are transient agglomerations of ~80 polymerases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C49 use fixed cells to overcome live-cell detection limitations (C40-C41) and employ two computational approaches (hidden-Markov and simulation) that converge on similar estimates for elongating polymerases (C44, C46). The large cluster estimate (~80 molecules, C47) is supported by the bimodal distribution (C43) and correlation analysis (C48). The conclusion that clusters are distinct from elongating polymerases (C49) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Pol II cluster lifetime increases during the interval 10-15 minutes after serum stimulation, coinciding with the known transcriptional response of the \u03b2-actin gene. Technical limitations prevent continuous single-cell tracking, necessitating population averaging across cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 establish the experimental approach with appropriate citations for the known \u03b2-actin response (C50, C53) and acknowledge technical limitations (C52). The observation of increased cluster lifetime (C51) is supported by data in Figure 4 and supplements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Upon serum stimulation, Pol II cluster lifetime increases 3-4 fold (from ~6.9 s to 24 \u00b1 3 s at 12.5 min), while cluster size and frequency remain constant. mRNA output peaks at 18 \u00b1 3 transcripts at 15 min. A direct linear correlation exists between Pol II cluster lifetime and subsequent mRNA output, with a 2.5 min delay consistent with transcription kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C63 provide comprehensive quantitative analysis showing that only cluster lifetime (not size or frequency) is modulated (C57-C59). The correlation between cluster lifetime and mRNA output (C62) is supported by appropriate temporal analysis accounting for the expected delay (C60-C61). The data are consistent with previous studies (C56) and based on sufficient sample sizes (89 cells with co-localization).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "A stochastic input-output model using Pol II cluster lifetime as input recapitulates the experimental observations, yielding a Pol II elongation rate of ~3.1 kbp/min and a lag time of 2 min, both in good agreement with experimental data and literature values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 demonstrate that a relatively simple model can account for the observations. The fitted elongation rate (C64) agrees well with multiple published values, and the model lag time (C65) closely matches the experimental observation (2 min vs 2.5 min). This provides theoretical support for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Drug treatments (flavopiridol and DRB) that block promoter escape stabilize Pol II clusters and suppress \u03b2-actin mRNA synthesis. Upon DRB removal, a second burst of transcription occurs at a time dependent on when the drug is washed, demonstrating that Pol II cluster dynamics can predictably control gene expression output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C80 provide experimental manipulation validating the causal relationship between cluster dynamics and transcription. The drug effects are well-characterized (C68) and supported by data (C69, C71, C72). The observation that clusters exist without mRNA synthesis (C72-C73) validates that clusters are distinct from elongating polymerases. The inducible second burst (C76-C78) demonstrates predictable control of gene expression through cluster manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The study establishes a transcription regulation mechanism where transient Pol II clusters (~80 molecules) occur during initiation with a basal lifetime of ~8 s, producing ~4 nascent transcripts. Upon stimulation, only cluster lifetime increases, leading to proportional increases in Pol II loading at a rate of one Pol II every 2.5 s, approaching maximum packing density (~130 bp spacing).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 synthesize the main findings into a coherent mechanistic model. The quantitative parameters (C83, C86, C87) are derived from the experimental data and modeling, with the packing density calculation (C87) supported by appropriate citations for maximum density limits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The molecular mechanisms controlling Pol II clustering are currently unknown, though factors involved in pre-initiation complex assembly and post-translational modifications may be involved. Understanding these mechanisms could enable predictable control of gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C90 acknowledge limitations in mechanistic understanding (C88) and offer speculations (C89, C90). While the speculation is reasonable given the drug treatment results, these remain hypotheses requiring future experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The findings support a general mechanism where spatiotemporal clustering of enzymatic factors increases local densities to achieve maximum efficiency. Similar clustering has been observed for other transcription factors (Sox2, CDK9), and DNA topology may play a role in cluster-dependent regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C97 extrapolate the findings to broader principles. While the citations support clustering of other factors (C93, C94, C96), the generalization (C92) and mechanistic speculation about DNA topology (C97) remain hypotheses requiring additional experimental support beyond the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The results suggest possible mechanistic relationships between Pol II cluster dynamics and promoter-proximal pausing, which has been observed in many genes including rapidly responding developmental genes. The role of distal enhancers in regulating cluster dynamics remains an open question.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C102 connect the findings to broader transcriptional regulation phenomena with appropriate citations (C98, C99, C101). However, the mechanistic relationships (C100) and enhancer involvement (C102) are speculative and require future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The dual-color live-cell super-resolution approach is broadly applicable to study molecular processes in vivo. Current limitations include the lack of long-lived fluorescent tags spanning the timescale difference between protein clustering (seconds) and genome response (minutes), necessitating cell synchronization approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C110 accurately describe the methodological contributions and limitations. The generality of the approach (C103-C105) is well-justified, and the technical limitations (C107-C109) are honestly acknowledged. The statement about future improvements (C110) is reasonable speculation based on identified limitations.",
+    "result_type": "MINOR"
+  }
+]

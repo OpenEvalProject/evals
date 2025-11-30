@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "The microfluidic device enables rapid and complete solution exchange (~200 ms) without affecting microtubule growth, as demonstrated by control experiments showing persistent growth during repeated exchanges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C23 are well-supported by experimental data shown in Figure 1\u2014figure supplement 1B-D. The temporal resolution of solution exchange is quantified with appropriate precision, and controls demonstrate that the exchange process itself does not induce catastrophes or affect growth dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Tubulin washout induces catastrophe after a delay of several seconds (mean 7.3 s), with microtubule ends tracked at ~30 nm precision showing variable growth speeds (mean 28 nm/s) and broad, non-exponential delay time distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by experimental data from 101 microtubules tracked at high spatial and temporal resolution (Figure 1). The measurements are consistent with prior dilution experiments (Walker et al., 1991), and the tracking precision is validated through simulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Mechanical stress from microtubule bending does not contribute to the observed variations in momentary microtubule stability, as demonstrated by the lack of correlation between delay time and microtubule orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C29 are supported by data in Figure 1\u2014figure supplement 2A showing no correlation between orientation and delay time. This control is important for ruling out mechanical artifacts, though the inference in C29 could be strengthened with additional mechanical perturbation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C33"
+    ],
+    "result": "Microtubule stability increases with growth speed when measured immediately before washout (\u03c1 = 0.69, p<10\u207b\u00b9\u2075), and this correlation weakens when growth speed is measured at earlier times, indicating that momentary stability fluctuates with growth speed variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C31, and C33 are strongly supported by data in Figures 2A-C showing robust statistical correlations that decay with time. This is a key finding that resolves prior contradictions in the literature and demonstrates the dynamic nature of microtubule stability. The statistical analysis is appropriate and the temporal dependence is well-characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "After tubulin washout, microtubules shrink slowly at 26 nm/s before catastrophe (compared to 480 nm/s after), with mean shrinkage length of 220 nm (~25 tubulins per protofilament) that correlates with growth speed (\u03c1 = 0.51, p<10\u207b\u2077).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are well-supported by data in Figure 2D-E and Figure 2\u2014figure supplement 1. The observation of slow shrinkage before catastrophe is novel and contrasts with prior lower-resolution studies. The measured shrinkage lengths provide direct evidence against short cap models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "The observed mean shrinkage length of 220 nm before catastrophe directly excludes models based on short stabilizing caps (1-2 tubulin layers, 8-16 nm).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is a well-justified inference from the measured shrinkage length data (C37). The shrinkage length is more than an order of magnitude larger than short cap predictions, providing strong evidence against these models. This is a major conclusion of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "The observed shrinkage length before catastrophe (220 nm) is in the same range as previously reported EB binding region 'comet lengths' in cells and in vitro, supporting a link between the EB binding region and microtubule stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by comparison with multiple cited studies (Seetapun et al., 2012; Bechstedt et al., 2014; Bieling et al., 2007; Dixit et al., 2009; Maurer et al., 2012). The consistency across different experimental systems strengthens the proposed link between EB binding and stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Binding of 200 nM Mal3-GFP reduces the mean delay time approximately twofold to 3.5 s (despite mildly increased growth speed to 33 nm/s), demonstrating that Mal3-GFP binding reduces momentary microtubule stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C41 are supported by data from 139 microtubules (Figure 3B). The inference in C41 is well-justified given the reduced delay time despite faster growth. This finding is consistent with prior steady-state observations of EB-induced catastrophe stimulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Mal3-GFP intensities at microtubule ends vary considerably at washout, reflecting variations in EB binding site numbers (not just binding/unbinding noise), and higher intensities correlate with faster growth speeds (\u03c1 = 0.74, p<10\u207b\u00b9\u2075), indicating that faster-growing microtubules have longer EB site caps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are well-supported by data in Figures 4A-B and Figure 4\u2014figure supplement 1. The control experiment with GTP\u03b3S microtubules (Figure 4\u2014figure supplement 1) validates that intensity variations reflect cap size differences rather than measurement noise. The strong correlation between intensity and growth speed is robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Microtubules with initially smaller EB site caps display shorter delay times (\u03c1 = 0.78, p<10\u207b\u00b3\u2070), and at catastrophe the EB cap size is reduced to 29% of initial size, suggesting catastrophe occurs when a critical threshold of EB sites is reached.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are strongly supported by data in Figure 4C-D showing very strong correlations. The consistent reduction to ~29% at catastrophe across different initial cap sizes (C48) provides compelling evidence for a threshold mechanism (C49). This is a central finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The mean Mal3-GFP intensity decays roughly mono-exponentially at 0.33 s\u207b\u00b9 until catastrophe, which can be quantitatively explained by slow shrinkage (40 nm/s) and continued maturation (km = 0.16 s\u207b\u00b9), with predicted decay rate (0.35 s\u207b\u00b9) in good agreement with measured value, demonstrating that the temporal and spatial response to growth cessation can be quantitatively explained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are well-supported by kinetic modeling that accurately predicts the observed decay rate (Figure 5A-D). The quantitative agreement between predicted and measured delay times and shrinkage lengths validates the kinetic framework. The model parameters are independently measured, strengthening the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Analysis of 210 microtubules across different tubulin concentrations shows delay times increase with growth speed but with weaker dependence at higher speeds, which can be quantitatively explained by an 'end density' threshold model (fcrit = 0.20, ~3 sites per tubulin layer) but not by a 'total number' threshold model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by extensive data (210 microtubules) and model fitting (Figure 6A-B). The end density model provides good fits while the total number model does not, allowing discrimination between mechanisms. The speed-sorting approach appropriately accounts for growth fluctuations. This is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Addition of Mal3-GFP destabilizes the cap by increasing the critical threshold from 14% to 28% of initial end density (~2 to ~4 cap sites per tubulin layer).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by model fitting to data with and without Mal3-GFP (Figure 6C, Supplementary file 1B). The quantitative comparison reveals the specific mechanism by which Mal3-GFP destabilizes microtubules through increasing the threshold for catastrophe.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Global fits to the complete dataset (delay times and Mal3-GFP intensities) are good for end region lengths of 8-80 nm, putting an upper limit on the size of the critical cap region over which minimal density must be maintained for stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C60 are supported by systematic model fitting across different L values (Figure 6D, Figure 6\u2014figure supplement 2). The L-model provides a refined understanding of which part of the cap is critical for stability. The upper limit of ~80 nm (10 tubulin layers) is well-constrained by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The protective cap is the EB binding region, with faster-growing microtubules having longer EB caps and greater stability after washout, providing the first direct experimental demonstration that microtubule stability increases with growth speed due to longer protective caps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 represent the central conclusion of the study, supported by the convergence of multiple lines of evidence: correlations between growth speed, EB cap size, and delay time; quantitative kinetic modeling; and exclusion of alternative models. This resolves a long-standing debate in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "The protective cap is hundreds of nanometers long, consistent with the 'random GTP hydrolysis' model and with observations of steady-state lifetime increases with growth speed and shrinking episodes during growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by the measured shrinkage lengths (~220 nm) and consistency with multiple cited observations. The conclusion favors long cap models over short cap models and is well-justified by the experimental data and literature context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Momentary microtubule stability fluctuates as growth speed varies, with EB caps storing a 'memory of stability' over several seconds (likely due to EB binding site lifetimes), which excludes memoryless models of microtubule dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by the temporal decay of correlations shown in Figures 2C, 4F, and Figure 4\u2014figure supplement 2. The observation of memory is novel and has important implications for understanding microtubule dynamics. The exclusion of memoryless models is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The entire EB binding site region serves as the stabilizing cap, with stability decreasing gradually with binding site density in space. Large parts of the cap can be lost before stability is lost (71% removed at catastrophe), and the total cap is much larger than required for stability, allowing it to withstand growth fluctuations including short depolymerization episodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 are supported by the experimental observations of cap size at washout and catastrophe, and by the modeling results. These conclusions integrate multiple findings and provide a comprehensive picture of cap structure-function relationships. The consistency with prior observations of shrinking episodes during growth (Schek et al., 2007) strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Only the highest density region of the cap (its part closest to the microtubule end) determines stability, with 15-30% of cap sites needed in an end region of up to ~10 tubulin layers for stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73 and C74 are supported by the superior fit of the end density threshold model compared to the total number model, and by the L-model analysis constraining the critical region size. This mechanistic insight reconciles aspects of both long and short cap models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "EBs destabilize microtubules through three mechanisms: (i) acceleration of conformational end maturation, (ii) acceleration of tubulin dissociation from the microtubule end, and (iii) direct structural destabilization of the cap (increasing the end density threshold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by citations to prior work (C75), comparison of shrinkage speeds with and without Mal3-GFP (C76), and model fitting showing increased threshold with Mal3-GFP (C77). The three mechanisms are well-distinguished and provide comprehensive mechanistic insight into EB function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "EBs can be used to monitor the momentary stability of individual microtubules, which will be useful for investigating microtubule stability in reconstituted systems and living cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is a well-justified conclusion based on the demonstration that the EB binding region is the protective cap (C61). This has important implications for future research, though the claim itself is prospective rather than directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Background context establishing that microtubules are dynamic filaments whose switching between growth and shrinkage states is essential for cellular function, therapeutically targeted, but mechanistically unclear, particularly regarding the proposed stabilizing GTP cap whose size and relationship to stability remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide established background knowledge and identify the knowledge gap addressed by the study. These are appropriately cited and accurately represent the state of the field. They establish the motivation for the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Prior models and observations regarding cap size are contradictory: long cap models (hundreds of nm) predict cap size increases with growth speed due to random GTP hydrolysis, while short cap models (8-16 nm) predict constant size due to coupled hydrolysis. EB proteins bind to growing ends and may bind to the GTP cap, with EB binding region size decreasing before catastrophe. Growth fluctuations challenge short cap models, while dilution experiments showing growth-speed-independent delay times challenge long cap models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C21 accurately summarize prior work and the contradictions in the field that motivate the current study. The citations are appropriate and the characterization of the debate is fair. This establishes the context for the experimental approach.",
+    "result_type": "MINOR"
+  }
+]

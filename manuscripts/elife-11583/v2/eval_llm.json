@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C89",
+      "C92"
+    ],
+    "result": "During development, mitochondria enter RGC dendrites to near-mature levels before most synapses form, localize preferentially to synapses from the earliest timepoint (P9), and gradually accumulate at branch points (>15-fold enrichment at maturity). The synaptic localization is apparent early, while branch point enrichment emerges gradually during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49, C89, and C92 are supported by quantitative data in Figure 2D-G showing mitochondrial density, synapse density, nearest-neighbor distance analysis, and branch point enrichment across developmental timepoints. The Monte Carlo simulations (C45) provide statistical validation of non-random synaptic localization. The temporal dynamics are clearly demonstrated with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C104",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Mitochondrial motility in RGC dendrites undergoes a dramatic developmental decline from ~30% motile at P9 to ~15% at P15 to 0% at P21. This decline is cargo-specific (peroxisomes remain motile at P21) and compartment-specific (axonal mitochondria remain motile). Movement parameters of motile mitochondria do not change between P9 and P15.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C50-C56, C104, C110-C112 are strongly supported by time-lapse imaging data in Figure 3A-G showing quantified motile fractions, movement parameters, and peroxisome controls. The cargo-specificity is demonstrated by peroxisome imaging (Figure 3C-D), and compartment-specificity is supported by citation and unpublished data. Sample sizes are adequate (7-12 RGCs per timepoint).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C72"
+    ],
+    "result": "Spontaneous retinal waves during development generate global Ca2+ transients in RGC dendrites with frequency and correlation matching MEA recordings, but these physiologically occurring Ca2+ transients do not alter mitochondrial motility (neither instantaneous motile fraction nor speed changes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 and C72 are supported by simultaneous two-photon imaging of Ca2+ (GCaMP6s) and mitochondria (mtDsRed) shown in Figure 4B-E, H. MEA validation (Figure 4A, C-D) confirms physiological relevance. Statistical analysis shows no significant change in motility parameters (p>0.1, n=66 mitochondria). The lack of effect is clearly demonstrated with appropriate temporal resolution (0.9 fps).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C73"
+    ],
+    "result": "Artificial elevation of external K+ (30 mM) tonically increases dendritic Ca2+ and decreases mitochondrial motility, similar to cultured neurons. However, blocking physiological retinal waves with Dh\u03b2E does not affect motility, suggesting tonic K+-induced Ca2+ elevations engage different mechanisms than physiological transients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by data in Figure 4F-G, I-J showing paired comparisons before and after treatments. The high K+ effect is statistically significant while Dh\u03b2E shows no effect. Claim C73 is appropriately qualified as speculative inference. The contrast between artificial and physiological stimuli is clearly demonstrated, though the mechanistic explanation remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Miro1 protein is expressed in the retina from at least P6 onwards, reaching mature levels by P15. Overexpression of wild-type Miro1 or Ca2+-binding-deficient mutant (Miro1KK) does not alter mitochondrial motility in RGC dendrites, suggesting Miro1 expression/function does not account for the lack of activity-dependent regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 are supported by Western blot data (Figure 4\u2014figure supplement 1A-B) and motility measurements after biolistic Miro1 delivery (Figure 4\u2014figure supplement 1C-D). The Western blot shows clear developmental expression pattern. The overexpression experiments provide appropriate controls (n=4-9 RGCs), though sample sizes are modest for the Miro1KK condition (n=4).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "A subset of RGCs (21 of 59 cells) exhibited local dendritic Ca2+ transients at similar frequency to global signals. Like global signals, local Ca2+ transients do not appear to alter mitochondrial motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by data in Figure 4\u2014figure supplement 2 showing frequency measurements and speed analysis before/after local Ca2+ events. The frequency comparison is statistically sound (p>0.4, n=7 local, n=32 global cells). However, the motility analysis is limited (n=7 mitochondria) and the claim appropriately uses cautious language ('do not appear').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "At P21, mitochondria rarely change position even across 30-minute intervals in darkness, whereas ~50% are displaced at P9. Light stimulation does not alter mitochondrial stability at P21, indicating sensory-evoked activity does not regulate dendritic mitochondrial motility in the mature retina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by long-interval imaging data in Figure 5D-E showing displacement percentages across conditions. MEA recordings (Figure 5A-C) validate that the light stimulus robustly increases RGC firing rates. Sample sizes are adequate (n=5 RGCs per condition). The conclusion is appropriately qualified as inference but well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78"
+    ],
+    "result": "Application of mitochondrial toxins (Antimycin A and Oligomycin) to P9 and P21 retinas resulted in no significant changes in mitochondrial motility in developing or mature RGC dendrites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 is supported by data in Figure 5\u2014figure supplement 1 showing both fast (0.9 fps) and long-interval (15 min) imaging. Statistical analysis shows no significant changes (p>0.2 for P9, p>0.4 for P21). Sample sizes are modest (n=4-5 RGCs) but adequate for the negative result with appropriate statistical testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C118",
+      "C119"
+    ],
+    "result": "In Crx-/- mice (retinal degeneration model with pathological hyperactivity), dendritic mitochondria remain motile at P21 at levels intermediate between P9 and P15 wild-type. Movement patterns are indistinguishable from wild-type except for slightly longer pauses. This extended motility matches the extended synaptogenesis in this model, suggesting the two processes are linked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84, C118-C119 are supported by MEA recordings confirming elevated activity (Figure 6A-C) and motility measurements (Figure 6D-H). The motility data show statistically significant differences between WT and Crx-/- at P21 (n=6-7 RGCs). Movement parameter analysis (n=30 mitochondria Crx-/-, n=97 pooled WT) is adequately powered. The link to synaptogenesis (C119) is appropriately presented as inference supported by prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background claims establishing that mitochondria move in neuronal dendrites, provide ATP and participate in Ca2+ signaling, are synthesized in the soma, and are transported along microtubule tracks to meet distributed energy demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C12 represent established knowledge in the field supported by appropriate citations (Davis and Clayton 1996; Ehlers 2013; Lin and Sheng 2015). These are standard background claims that provide context for the study and are well-accepted in the neuroscience literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C15",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C30"
+    ],
+    "result": "The prevailing view of dendritic mitochondria as highly motile with activity-dependent regulation is based on cultured neurons with artificial stimuli. Whether this holds in intact circuits, how motility changes during development, and whether mitochondria localize to branch points remained unknown prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C14-C15, C23-C28, C30 accurately characterize gaps in prior knowledge and are supported by appropriate literature review and citations. These claims establish the rationale and novelty of the current study. The characterization of prior work is fair and accurate based on the citations provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background claims about energy consumption at synapses, Ca2+ influx sites, mitochondrial localization to synapses, their role in synapse formation/plasticity, ER/Golgi structures at branch points, and mitochondrial requirements for dendritic branching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 represent established knowledge supported by multiple appropriate citations (Attwell and Laughlin 2001; Augustine et al. 2003; Chang et al. 2006; Cui-Wang et al. 2012; Fukumitsu et al. 2015; and others). These provide important biological context for interpreting the localization results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Prior work showed that increases in intracellular Ca2+ uncouple mitochondria from motor proteins via the Ca2+-dependent adaptor protein Miro1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 accurately represents prior findings supported by citations to MacAskill et al. 2009 and Wang and Schwarz 2009. This is a key piece of background that motivates the Miro1 experiments in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Background on retinal circuit organization and development: photoreceptors signal to bipolar cells which provide excitatory input to RGC dendrites; BC-RGC synapses form around P7 and mature by P21; dendrite development leads synaptogenesis with arborization set by P15; spontaneous retinal waves occur during development and stop at eye opening (~P14-15) when sensory-evoked activity begins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C39 provide essential background on the retinal system supported by appropriate citations (Euler et al. 2014; Fisher 1979; Johnson et al. 2003; Morgan et al. 2008; Kim et al. 2010; Ackman et al. 2012; Demas et al. 2003; and others). This information is well-established and accurately presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Validation claims for the retinal explant preparation: BC-RGC synaptogenesis matches in vivo rates; spontaneous waves in explants resemble in vivo patterns; light responses in explants resemble in vivo recordings; PSD95-CFP localizes specifically to BC synapses on RGC dendrites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by citations to the authors' prior work and other studies (Kerschensteiner et al. 2009; Morgan et al. 2011; Ackman et al. 2012; Farrow et al. 2013; Jakobs et al. 2008). These validation claims are important for establishing the physiological relevance of the ex vivo preparation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Background on the Crx-/- mouse model: spontaneous oscillatory hyperactivity is common in retinal degenerations; in Crx-/- mice (Leber congenital amaurosis model), retinal waves are preserved but from P15 onwards RGCs exhibit rhythmic hyperactivity from enhanced BC input; this elevated activity prolongs and enhances BC-RGC synaptogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by appropriate citations including the authors' prior work (Soto et al. 2012) and other studies (Borowska et al. 2011; Margolis et al. 2008; Stasheff 2008). This background is essential for interpreting the Crx-/- results and is accurately presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Background on mitochondrial dynamics in disease: mutations affecting mitochondrial fission-fusion and transport cause neurodegenerative diseases; RGCs degenerate in ADOA (most common hereditary optic neuropathy) caused by OPA1 mutations affecting mitochondrial fusion; in Opa1+/- mice, mitochondria shorten and accumulate proximally, and with age synapses and branches decline, highlighting importance of fusion for dendritic/synaptic integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88, C106-C108 are supported by appropriate citations (Chan 2006; Olichon et al. 2006; Yu-Wai-Man et al. 2011; Williams et al. 2010, 2012). This background provides important disease context and is accurately presented based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C93",
+      "C94",
+      "C95",
+      "C97",
+      "C98",
+      "C100",
+      "C103",
+      "C105",
+      "C109"
+    ],
+    "result": "Discussion claims comparing results to prior literature: similar observations in Purkinje cells; local mitochondria required for dendritic branches; mitochondria likely provide energy for ER/Golgi at branch points; similar synaptic localization in cultured neurons; mitochondrial transport follows motile/stationary state diagram; modest decline in cultured neurons vs. drastic shift in intact retina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91, C93-C95, C97-C98, C100, C103, C105, C109 appropriately contextualize the findings relative to prior work with appropriate citations (Fukumitsu et al. 2015; Ishihara et al. 2009; Chang et al. 2006; Li et al. 2004; Obashi and Okabe 2013; Chang and Reynolds 2006; and others). Speculative claims (C93, C105) are appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C4",
+      "C7",
+      "C96",
+      "C99",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Summary and synthesis claims: mitochondria stabilize at synapses and branch points as dendrites mature; they reach stable positions during a critical developmental period; mitochondria localize to excitatory synapses but likely don't limit synaptogenesis rate; they form stable associations with synapses and branch points; the prevailing view of high motility applies to developing but not mature dendrites; neither spontaneous nor sensory-evoked activity regulates motility, contrasting with cultured neuron studies; differences between physiological and artificial stimuli may explain discrepant results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C7, C96, C99, C113-C117 represent appropriate synthesis of the experimental findings. These are well-supported by the data presented in Figures 2-5. Speculative elements (C99, C117) are appropriately qualified. The contrast with prior literature is fairly presented and the proposed explanation is reasonable though speculative.",
+    "result_type": "MAJOR"
+  }
+]

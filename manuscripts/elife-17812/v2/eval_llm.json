@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Photoswitchable fluorescent proteins (psFPs) exhibit characteristic photoswitching behavior under FDS-SV illumination conditions that can be quantitatively modeled. Under the low-power 488 nm excitation used in FDS-SV (~10^5-fold weaker than typical photoswitching conditions), psFPs slowly switch between fluorescent and dark states on the timescale of hours, commensurate with sedimentation. Different psFPs exhibit distinct switching kinetics (e.g., rsEGFP switches off with a depletion rate of 5.08\u00d710^-4/sec, while Padron switches on), and this process can be precisely modeled as a single exponential with radially non-uniform exposure accounted for.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C38 collectively establish the photoswitching behavior of psFPs in FDS-SV with strong experimental support. The modeling (C34-C35) achieves excellent fits to experimental data (Figure 2), quantitative measurements with confidence intervals are provided (C36-C37), and the behavior is distinguished from non-photoswitchable fluorophores (C38). The physical basis for the slowed kinetics is clearly explained (C32-C33).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The temporal photoswitching signatures of different psFPs can be computationally decomposed to enable monochromatic multi-component (MCMC) detection in sedimentation velocity experiments. This approach allows simultaneous determination of separate sedimentation coefficient distributions for each fluorophore component in a mixture, enabling identification of binding partners and complex stoichiometry. In a proof-of-principle experiment with rsEGFP2 and FITC-BSA, the MCMC decomposition achieved relative errors of only 0.21% in distinguishing the two components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C42 demonstrate the core MCMC methodology with strong experimental validation. The proof-of-principle mixture (Figure 3a-c) shows excellent fits and consistency with control experiments (C41), with quantitative error estimates provided (C42). The visual distinguishability of temporal signatures (C40) and successful computational decomposition (C39) are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "In a three-protein mixture containing rsEGFP2, Padron, and anti-GFP antibody, MCMC analysis correctly identified rsEGFP2 as the antibody binding partner by detecting a 7 S complex peak in the rsEGFP2 distribution with no free 2.5 S monomer peak. The relative errors in component concentration assignment were 2.6% at 2.5 S and 1.1% at 7 S.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 demonstrate successful application of MCMC to identify binding partners in a complex mixture. The sedimentation coefficient distributions (Figure 3f) clearly show the expected complex formation, with quantitative error estimates provided (C45). This validates the practical utility of the temporal signature approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Antibody binding to rsEGFP2 alters its photoswitching properties, with the bound state showing higher residual fluorescence after long illumination (\u03b1 = 0.2070) compared to free rsEGFP2 (\u03b1 = 0.0274). Benchtop fluorimeter measurements confirmed marked alterations in off rates and on/off contrast ratios for both rsEGFP and rsEGFP2 upon antibody binding, while emission spectra changed little. These effects suggest possible conformational changes induced by antibody binding that impact the equilibrium of photophysical states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 report an unexpected observation about binding-induced changes in photoswitching with strong experimental support from both FDS-SV (C46, Figure 3d) and independent fluorimeter measurements (C49, Figure 4a). The quantitative measurements with confidence intervals (C46) and spectral data (C50, Figure 4b) are provided. The mechanistic interpretation (C51) is appropriately presented as speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Multiple psFPs (rsEGFP, rsEGFP2, Padron, Dronpa) are suitable for FDS-SV with well-defined photophysical characteristics. Newer FDS instruments with adjustable 50 mW lasers offer flexibility in modulating photoswitching kinetics. A computational design tool (Equation 6) was implemented to guide optimal psFP selection based on expected sedimentation coefficients, with theoretical analysis showing optimal switching rates of 1-5\u00d710^-4/sec for a 2.8 S species under standard conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 describe the practical implementation considerations for MCMC with appropriate experimental and theoretical support. The suitability of multiple psFPs is demonstrated throughout the manuscript, the design tool implementation is described (C55), and theoretical predictions are shown (C56, Figure 5).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "To address signal loss from psFPs switching off during sedimentation, a 'blinking' approach was developed using periodic 405 nm illumination to reset fluorescence. A modified Optima XL-A with 405 nm LED illumination and sector-shaped mask achieved >98% signal recovery for rsEGFP2 in 2 min pulses. Blinking SV data could be fitted within noise of data acquisition and fully implemented in MCMC decomposition. However, for switching rates below 3\u00d710^-4/sec, blinking can be detrimental to discrimination because fluorophores never significantly populate the dark state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 describe the blinking methodology with strong experimental validation. The instrument modification is clearly described (C60-C61), quantitative performance metrics are provided (C62), excellent fits are demonstrated (C63, Figure 6b), and theoretical limitations are identified (C64, Figure 5). The approach addresses a practical limitation of the basic MCMC method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "For slowly switching psFPs, a FRAP-like SV approach was developed by creating a spatially localized fluorescence trough through initial stationary exposure (estimated ~100-fold stronger than scanning). This approach requires no instrument modification and provides enriched data: additional diffusion information, two extra sedimentation boundaries for improved precision, and direct concentration reporting from trough depth. Excellent fits were achieved, with rsEGFP2-GluA3 yielding s-value of 4.59 S consistent with other methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 describe the FRAP-like SV methodology with strong experimental support. The approach is clearly described (C65), the modeling framework is explained (C67), theoretical advantages are outlined (C68), and experimental validation with excellent fits is shown (C69, Figure 2f). The consistency check (C70) validates the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Control experiments established homo-dimerization affinities for GluA2 and GluA3 ATDs. DL488-GluA2 showed Kd,22 of 24 nM [9-59; 95%CI], consistent with prior measurements of 20.5 nM, while no homo-dimerization was detected for rsEGFP2-GluA3 up to 30 nM, consistent with prior Kd,33 of 5.6 \u03bcM. The DL488-GluA2 Kd,22 was 11-fold higher than the 1.8 nM previously reported for FAM-labeled GluA2, confirming that FAM labeling artificially strengthened homo-dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 report control experiments with appropriate confidence intervals and consistency checks against prior work. The measurements (Figure 8) validate the labeling strategy and establish baseline parameters needed for the hetero-dimerization analysis. The comparison with FAM-labeled protein (C80) addresses a known artifact from prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "MCMC analysis of GluA2/GluA3 ATD hetero-dimerization revealed high-affinity complex formation. At 30 nM, both components co-sediment at ~5.9 S consistent with saturated 1:1 hetero-dimer (frictional ratio 1.42). With decreasing concentration, peaks shift to lower s-values characteristic of rapid equilibrium. Below 1 nM, free GluA2 monomer becomes resolved. Global isotherm fitting yielded heterodimer Kd,23 of 0.32 nM [0.20-0.46, 95% CI] with limiting s-value of 6.09 S.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 report the primary biological application with comprehensive experimental support. The concentration-dependent behavior is clearly demonstrated (Figures 9-10), the data quality allows resolution of multiple species (C84), and rigorous isotherm analysis with confidence intervals is provided (C85-C86). The MCMC approach enables simultaneous monitoring of both components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "An independent experiment using the FRAP-like SV configuration yielded heterodimer Kd,23 of 0.68 nM [0.36-1.24, 95% CI], consistent with the value from standard MCMC analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 provides independent validation of the hetero-dimerization affinity using an alternative MCMC configuration (Figure 12). The overlapping confidence intervals with the standard MCMC result (C85) support the reliability of both approaches, though the FRAP-like method shows somewhat larger uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The MCMC approach reveals that GluA2/GluA3 heterodimer formation is much more efficient than previously reported. The heterodimer Kd,23 of 0.32 nM is 85-fold smaller than the GluA2 homodimer Kd,22 of 27.1 nM and four orders of magnitude smaller than the GluA3 homodimer Kd,33, consistent with obligate GluA2/GluA3 heterodimer formation in neurons. This contrasts with prior work suggesting inefficient heteromer formation (Kd,22 = 1.8 nM vs Kd,23 = 1.3 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 present the key biological conclusion with strong quantitative support from the MCMC measurements (C85, C87). The comparison with prior work (C100) is appropriately cited, and the new measurements (C101-C102) provide a substantially revised picture of the assembly process. The consistency with biological observations (C103) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C104",
+      "C105",
+      "C107"
+    ],
+    "result": "MCMC FDS-SV enables studies of heterogeneous multi-protein complexes at orders of magnitude lower concentrations and higher affinities than previously possible. The method simultaneously monitors size-distributions of individual components and their complexes, distinguishing it from methods like SPR or ITC. This offers a powerful new approach for studying multi-component complexes in solution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C104, C105, C107 summarize the overall capabilities and advantages of MCMC FDS-SV, supported by the comprehensive experimental demonstrations throughout the manuscript. The sub-nanomolar affinity measurements (C85, C87), multi-component discrimination (Figures 3, 9-10), and size-distribution information validate these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "FDS-SV extends analytical ultracentrifugation sensitivity to nanomolar and picomolar concentrations, enabling high-affinity binding studies and analysis of scarce proteins. However, the single excitation wavelength (488 or 561 nm) due to technical constraints prevents spectral discrimination of multiple components, significantly limiting multi-protein complex studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13-C20 establish the context and motivation for the work, describing both capabilities and limitations of FDS-SV. These are well-supported by citations to prior work and represent established knowledge about the technique. The limitation (C19-C20) provides clear motivation for the MCMC approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Multi-protein complex formation is critical in cellular processes, with examples including T-cell activation micro-clusters and post-synaptic density. Many interactions are multivalent, allowing structurally polymorphic complexes to co-exist. Sedimentation velocity (SV) is a powerful technique for studying such complexes, maintaining association/dissociation equilibrium during sedimentation and enabling multi-signal analysis to reveal binding stoichiometries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C12 provide biological and methodological background, well-supported by citations to prior literature. These establish the importance of the problem and the capabilities of SV as a technique. The claims represent established knowledge and appropriate contextualization of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Glutamate receptor GluA2 and GluA3 amino-terminal domains engage in competitive homo- and hetero-dimerization that controls receptor assembly into tetramers with different gating properties. Prior FDS-SV studies determined dimerization affinities but could only monitor one component and used FAM labeling that artificially strengthened GluA2 homo-dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29, C71-C75 establish the biological context and limitations of prior work, appropriately supported by citations. The identification of the FAM labeling artifact (C75) provides important justification for the current study and validates the need for the MCMC approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C94"
+    ],
+    "result": "The switchability and localized optical manipulation of psFPs may expand analytical ultracentrifugation capabilities in various ways, including novel assays for subunit exchange rates, applications to sedimentation equilibrium, and potential utility in other techniques. FDS-SV has particular potential for polydisperse mixtures that elude traditional structural characterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C92, C94 are speculative about future applications and potential extensions of the method. While the speculation is reasonable based on the demonstrated capabilities, these represent proposed rather than demonstrated results. The claims appropriately use tentative language ('may', 'can be envisioned', 'would be expected').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The size-dependent migration in FDS-SV provides unique resolution advantages for macromolecular complexes. The binding sensitivity of psFPs may relate to structural flexibility mechanisms similar to those observed in Dronpa and GFP sensors, potentially offering an additional information source if photophysical state equilibria are altered by binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93, C95-C99 mix established advantages of the technique (C93) with speculative mechanistic interpretations (C98-C99) based on analogies to prior work on related proteins (C95-C97). While the speculation is reasonable, the proposed mechanism for binding sensitivity remains unvalidated. The claims appropriately distinguish inference from demonstration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "From large-scale proteomic experiments, on average more than four components are in cellular protein complexes, necessitating methods to elucidate their stoichiometries, architectures, and driving forces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 is supported by citations to large-scale proteomic studies and provides motivation for developing multi-component analysis methods. This represents established knowledge from prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The experimental methods describe FDS specifications (488 nm, 10 mW laser; 505-565 nm detection) and protein preparation procedures including cloning, expression in HEK293T cells, and purification by metal affinity and ion exchange chromatography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 describe standard methodological details that are clearly stated and appropriate for the experiments performed. These provide necessary information for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

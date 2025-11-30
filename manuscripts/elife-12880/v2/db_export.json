@@ -1,0 +1,1586 @@
+{
+  "submission": {
+    "id": "dd0fdb90-84d9-4c75-988a-6b0d1c858203",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:18:46.562760Z",
+    "updated_at": "2025-11-29T23:18:46.562760Z"
+  },
+  "content": [
+    {
+      "id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "submission_id": "dd0fdb90-84d9-4c75-988a-6b0d1c858203",
+      "content_type": "manuscript",
+      "content_text": "# Cotranslational microRNA mediated messenger RNA destabilization\n\n## Authors\n\n- Trinh To Tat<sup>1</sup>\n- Patricia A Maroney<sup>1</sup>\n- Sangpen Chamnongpol<sup>2</sup>\n- Jeff Coller<sup>1</sup>\n- Timothy W Nilsen<sup>1</sup> ([ORCID: 0000-0002-7276-3571](https://orcid.org/0000-0002-7276-3571)) \u2020\n\n### Affiliations\n\n1. Center for RNA Molecular Biology Case Western Reserve University Cleveland United States\n2. Affymetrix, Inc. Cleveland United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMicroRNAs are small (22 nucleotide) regulatory molecules that play important roles in a wide variety of biological processes. These RNAs, which bind to targeted mRNAs via limited base pairing interactions, act to reduce protein production from those mRNAs. Considerable evidence indicates that miRNAs destabilize targeted mRNAs by recruiting enzymes that function in normal mRNA decay and mRNA degradation is widely thought to occur when mRNAs are in a ribosome free state. Nevertheless, when examined, miRNA targeted mRNAs are invariably found to be polysome associated; observations that appear to be at face value incompatible with a simple decay model. Here, we provide evidence that turnover of miRNA-targeted mRNAs occurs while they are being translated. Cotranslational mRNA degradation is initiated by decapping and proceeds 5\u2019 to 3\u2019 behind the last translating ribosome. These results provide an explanation for a long standing mystery in the miRNA field.\n\n## Introduction\n\nmicroRNAs, a large family of regulatory molecules discovered over twenty years ago, have been shown to exert pervasive effects on a wide array of biological processes (reviewed in Ameres and Zamore, 2013; Ebert and Sharp, 2012). It has become clear that a majority of mRNAs are targeted by miRNAs via limited base pairing interactions between the miRNAs and miRNA responsive elements (MREs) (Bartel, 2009). Although there are exceptions, most MREs are located in 3\u2019 UTRs (Bartel, 2009). The current consensus view of miRNA-mediated gene regulation is that it involves post-transcriptional down regulation of protein production from targeted mRNAs. Repression by miRNAs is largely attributable to mRNA destabilization and several lines of evidence indicate that this destabilization involves recruitment of factors which participate in normal mRNA decay pathways (Bagga et al., 2005; Guo et al., 2010; Eichhorn et al., 2014; Behm-Ansmant et al., 2006a; 2006b; Eulalio et al., 2008b; Jonas and Izaurralde, 2015). These factors include deadenylases and decapping enzymes (e.g. Braun et al., 2011; Chekulaeva et al., 2011; Rehwinkel et al., 2005).\n\nAlthough much has been learned regarding the biological functions of mRNAs and their mechanism(s) of action, there is one aspect that has largely eluded explanation; i.e. the interplay between the translation machinery and miRNA-mediated repression. In very early studies, the first miRNA targeted mRNAs were found to be fully associated with polysomes (Olsen and Ambros, 1999; Seggerson et al., 2002; Wightman et al., 1993). These observations have been reproduced numerous times over the years; whenever the subcellular localization of mRNA targets has been examined, those mRNAs are found to be exclusively on polysomes and unambiguous evidence has indicated that these polysomes are engaged in active translation (Gu et al., 2009; Nottrott et al., 2006; Petersen et al., 2006). Complementing these studies are several studies indicating that a substantive fraction of miRNAs themselves is also associated with actively translating ribosomes (Maroney et al., 2006; Nelson et al., 2004; Kim et al., 2004). Other observations, including the fact that MREs are less effective when present in open reading frames and the presence of a so-called ribosome shadow (absence of MREs in the 3\u2019 UTR just downstream of stop codons) are consistent with an interaction between miRNA-effector complexes and translating ribosomes (Bartel, 2009). In sum, this body of evidence has led to the development of the hypothesis, which still persists in the literature, that miRNAs regulate translation in some way during the elongation phase but this hypothesis has been recalcitrant to mechanistic proof.\n\nIt is difficult to reconcile the large body of evidence that shows that miRNA targeted mRNAs are associated with translating ribosomes with the equally compelling body of evidence that indicates that most miRNA-mediated downregulation occurs through mRNA destabilization. The conundrum is that the prevalent view of mRNA decay holds that decay occurs when mRNAs are in a ribosome free state, perhaps in subcellular aggregates known as P bodies, sites of concentrated RNA degradative activities (reviewed in Valencia-Sanchez et al., 2006). Here, we provide a solution to this longstanding puzzle by demonstrating that miRNA-mediated mRNA decay occurs cotranslationlly. Decay is initiated by mRNA decapping while targeted mRNAs are polysome bound and proceeds 5\u2019 to 3\u2019 following the last translating ribosome. These observations provide a unifying explanation for a large amount of what has been thought to be disparate experimental data.\n\n## Results\n\nWe are not aware of any study in which both miRNA targeted mRNA stability and subcellular localization (i.e. polysome association) were analyzed. To address this gap and to avoid potential pitfalls associated with transient transfection approaches, we elected to study stable cell lines expressing miRNA targeted mRNAs and relied on endogenous miRNAs to repress them. Because miRNA targeted mRNAs are particularly well characterized in Drosophila (Stark et al., 2003), we chose to analyze Drosophila mRNAs encoding the proapoptotic proteins, reaper and hid. The reaper mRNA contains one microRNA recognition element (MRE) for the Drosophila miR-2 family of miRNA (miRs 2a, 2b, 2c, 6, 11, 13a, 13b, 308) in its 3\u2019UTR (Figure 1A, Figure 1\u2014figure supplement 1) (Jovanovic and Hengartner, 2006). The hid mRNA contains five MREs for the miRNA, bantam, in its 3\u2019 UTR (Figure 1A, Figure 1\u2014figure supplement 1) (Brennecke et al., 2003). To avoid the issue that overexpression of either the reaper or hid proteins would promote apopotosis, the entire 3\u2019 UTRs of both mRNAs were appended to the firefly luciferase coding sequence and 5\u2019 UTR (Figure 1\u2014figure supplement 1). Two versions of each 3\u2019 UTR, one containing wild type MREs and one containing mutant MREs were used in the construction of four stable Drosophila S2 cell lines. Cell lines were judged to be stable when no loss of cells was observed in the presence of the drugs used for their selection and when luciferase levels remained constant over several cell doublings. Reaper constructs were under control of the inducible metallothionine promoter (Bunch et al., 1988) while the hid constructs were under control of the constitutive actin promoter (Angelichio et al., 1991).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/12880/elife-12880-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic of reporter mRNAs analyzed; WT denotes mRNAs with wild type MREs and MT denotes mRNAs where the MREs were inactivated by mutation. FL is the firefly luciferase coding region and V5 is the V5 epitope tag. (B) Stability of reaper reporter mRNAs containing wild type (WT) or mutant (MT) MREs. Cells were treated with actinomycin D for the indicated times; total RNA was prepared and analyzed by Northern blotting using a probe to the firefly luciferase open reading frame. Rp49 denotes the mRNA encoding ribosomal protein L32, a highly stable mRNA, which served as an internal loading control. (C) Stability of hid reporter mRNAs containing wild type (WT) or mutant (MT) MREs. All procedures were exactly as in (B).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12880/elife-12880-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Reaper 3\u2019 UTR. The wild type MRE is shown in red while the mutant MRE is shown in blue. (B) Hid 3\u2019 UTR. Wild type MREs for bantam are shown in red while mutant MREs are shown in blue.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12880/elife-12880-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** For miRNA mimics, ds RNAs were ordered from Integrated DNA Technologies (IDT) according to their protocol for design of miRNAs. The mir2 mimic was synthesized to contain a seed sequence complementary to the altered nucleotides in the mutated reporter reaper reporter UTR. For the Bantam mimic, the seed was complementary to the new target sequence shown in supplemental Figure 1\u2014figure supplement 1 present in all of the altered Bantam sites. The control dsRNA was a negative control recommended by IDT. For optimization of transfection conditions a double stranded siRNA of the same design was used to target the Firefly luciferase coding sequence. Titrations of dsRNA, plasmid and transfection reagent (Mirius Transit-X2) were performed to optimize expression and knockdown conditions as assayed by Luciferase readings in cells cotransfected with Firefly siRNA. For half life measurement, S2 cells were co-transfected with reporter and dsRNA in 10 cm plates at a starting density of 2X106/ml. 24\u2009hr after transfection, cells were removed from plates, distributed on 6 well plates and 0.1 mM CuSO4 was added for an additional 16\u2009hr at which point 5 \u00b5g/ml Actinomycin D was added, media was removed at the indicated times and cells were lysed with Trizol. Because of the low abundance of transfected reporter RNAs, the analysis of RNA half life was done by semi-quantitative reverse transcription PCR (Maroney et al., 2006). cDNA was synthesized from 0.5 \u00b5g total RNA using random primers and Superscript II. PCR reactions were first titrated for linearity using a series of cDNA dilutions and cycle numbers. Linear PCR reactions (25 cycles for Reaper and Hid reporters, 20 cycles for Rp49) were carried out in the presence of \u03b132P dCTP and analyzed on non-denaturing 6% polyacrylamide gels.\n\nBecause experimental evidence indicates that mRNA destabilization is at least one component of miRNA-mediated repression in Drosophila (reviewed in Huntzinger and Izaurralde, 2011; Izaurralde, 2015; Eulalio et al., 2008a), we measured the stability of each of the four mRNAs. We first determined the half life of reaper reporter mRNAs. After transcriptional shut off, the reaper reporter mRNA with the wild type MRE decayed with a half life of approximately 8 min (Figure 1B). The half life of the reaper reporter mRNA containing the mutant MRE was approximately 31 min, about four fold longer than the mRNA with the wild type MRE (Figure 1B).\n\nTo confirm that this effect on mRNA stability was miRNA-mediated we designed a double stranded miRNA mimic. When loaded into an Ago protein the targeting strand contained bases complementary to the nucleotides changed in the mutant reaper MRE. While a control mimic had no effect on the half life of the reaper reporter containing the mutant MRE the mimic complementary to the mutant MRE markedly reduced the half life of the reporter to a level comparable to that of the reaper reporter containing the wild type MRE (Figure 1\u2014figure supplement 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/12880/elife-12880-fig2-v2.jpg)\n\n**Figure 2.:** (A) Representative UV absorbance (254 nm) traces of polysome gradients on which either cytoplasmic extracts from emetine (E) treated or harringtonine (H) treated cells were fractionated. (B) Northern blots and quantitation of signal from fractions of polysome gradients as in (A); Blots from cells expressing reaper and hid reporter mRNAs containing wild type MREs are on the left. Sedimentation profiles, as assessed by splinted ligation, and signal quantitation of endogenous mir-13b and bantam miRNAs are shown on the right. (C) Northern blot and quantitation of signal from fractions of polysome gradients in which extract of cells treated with emetine (E) or harringtonine (H) were sedimented. The probes were to either endogenous reaper or to polyA binding protein (PABP) mRNAs.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12880/elife-12880-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) (B) and (C) are exactly as described for (A) (B) and (C) in Figure 2 except that reporters containing mutant MREs were analyzed.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12880/elife-12880-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Norther blot as shown in Figure 2 (A) was exposed for a longer time. Note fragments smaller than full length.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/12880/elife-12880-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** We did an accounting experiment analogous to that shown in Maroney et al., 2006. Equal numbers of cell from wt or mutant reporter cell lines were processed as described in methods to prepare cytoplasmic (cyto) extract or to lyse with Trizol (total). RNA was then prepared from half of each sample. The remaining half of cytoplasmic extract was centrifuged through the same sucrose gradients used for polysome analysis. Fractions were pooled (gradient) and pellets (pellet) resuspended and RNA was prepared from both. After EtOH precipitation all samples were resuspended in the same volume. Equal aliquots of each were used in Northern blots and probed for both reporter and control (Rp49) mRNAs.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/12880/elife-12880-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Direct comparison of sedimentation reporter mRNAs containing wild type WT or mutant MT MREs. These are the same blots and quantitations as those shown in a different context in Figure 2 and Figure 2\u2014figure supplement 1. (B) Same as in (A) but hid reporter mRNAs were analyzed here.\n\nTo determine if the four fold effect on mRNA stability this was the maximal miRNA-mediated effect possible, expression of the reaper reporter mRNA was induced either ten-fold or one hundred fold with different concentrations of copper and half lives were again determined. Importantly the reaper reporter mRNA containing the wild type MRE had the same half life at all levels of expression; a result which indicated that miR-2 family miRNAs were well in excess of the targeted mRNA and that the reaper MRE was likely to be fully occupied at steady state (data not shown). Therefore a four fold enhancement of decay was the maximum effect that could be exerted by microRNAs on this mRNA target.\n\nParallel analysis of the hid constructs revealed a similar microRNA-mediated effect on mRNA stability (Figure 1C). The hid reporter mRNA with five wild type MREs had a half life of approximately 7.5 min whereas the mRNA with the mutant MREs had a half life longer than forty minutes (Figure 1C). A Bantam mimic analogous to the miR2 mimic described above caused marked destabilization of the reporter containing mutant Bantam sites, confirming that the observed effect on mRNA stability was miRNA-mediated (Figure 1\u2014figure supplement 2). We concluded from those experiments that for these two targeted mRNAs, endogenous miRNAs caused substantive destabilization.\n\nWe then assessed the subcellular localization of all four mRNAs using sedimentation velocity sucrose gradients and Northern blotting (Figure 2). Remarkably, fractionation of cytoplasmic extracts in this manner revealed that all detectable mRNAs for all four of the constructs cosedimented with polysomes, an observation that suggested that the mRNAs were associated with translating ribosomes (Figure 2B and Figure 2\u2014figure supplement 1). To ensure that polysome associated mRNA accounted for most or all mRNAs present in the cell, we performed an \u201caccounting\u201d experiment analogous to that we previously reported for miRNAs (Maroney et al., 2006) We found that the vast majority of reporter mRNAs was indeed associated with polysomes and that there was negligible mRNA loss during extract preparation or gradient fractionation (Figure 2\u2014figure supplement 2) compare lanes total and gradient. To determine if polysome associated mRNAs were actually being translated, cells were treated with either emetine, an irreversible inhibitor of translation elongation (Akinboye and Bakare, 2011), or Harringtonine, an inhibitor of protein synthesis that binds to the A site of initiating ribosomes only and thereby prevents formation of the first peptide bond (Fresno et al., 1977). Because Harringtonine inhibits formation of only the first peptide bond; ribosomes that are already elongating continue to translocate through the open reading frame and eventually terminate and disassociate from the mRNA. As elongating ribosomes clear the mRNA, polysomes become smaller and the mRNA shifts to lighter fractions of the gradient; newly initiating messages accumulate in the monosome region (80S). Extracts prepared from Harringtonine treated cells were sedimented on sucrose gradients and fractions were analyzed by Northern blotting. These analyses revealed that all four mRNAs shifted to lighter fractions; a result which indicated that all four mRNAs were associated with actively translating ribosomes (Figure 2B and Figure 2\u2014figure supplement 1). Consistent with other earlier observations (Maroney et al., 2006; Nelson et al., 2004) (Kim et al., 2004), both endogenous bantam and a representative member of the miR-2 family (miR-13b) showed similar sedimentation behavior as these targeted mRNAs; i.e. a substantive amount of each miRNA sedimented with polysomes and shifted to lighter fractions upon Harringtonine treatment (Figure 2B). Endogenous mRNAs encoding the ribosomal protein L32 (RP49) and polyA binding protein (PABP) were, as expected, also present on translating ribosomes (Figure 2C). At this point in our analysis it was clear that endogenous miRNAs were causing marked destabilization of targeted mRNAs, yet all detectable mRNAs were associated with actively translating ribosomes.\n\nHow was microRNA-mediated enhanced mRNA decay compatible with active translation of the targeted mRNAs? We considered two possible scenarios. In the first, translational initiation was somehow blocked on targeted mRNAs. After elongating ribosomes cleared the mRNA, the ribosome free mRNA was degraded so quickly that it could not be detected. The second scenario was that decay was occurring while the mRNAs were being translated; i.e. in a ribosome bound state. A clue to distinguish between these possibilities came from examination of long exposures of the Northern blot across polysome gradients shown in Figure 2. We observed a family of hybridizing species that were smaller than full length (Figure 2\u2014figure supplement 3). We speculated that these species might have resulted from partial degradation of the mRNA. If this was the case, we predicted that such fragments would become enriched relative to full length mRNA if new synthesis of mRNA was prevented. Accordingly, we stopped ongoing transcription with Actinomycin D and incubated cells for approximately one mRNA half life in order to allow for partial decay of pre-existing mRNA; translation was then arrested with emetine (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/12880/elife-12880-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic representation of probes used for detection of reaper reporter mRNA. (B) Representative UV absorbance trace (254 nm) of a polysome gradient fractionating cytoplasmic extract prepared from cells treated with actinomycin D for ten minutes. Actinomycin treatment for this time had no effect on overall protein synthesis as assessed by polysome profiling (Figure 3\u2014figure supplement 1). (C) Northern blot analyses of fractions from polysome gradients in which cytoplasmic extracts from cells expressing reaper reporter mRNAs containing either a wild type (WT) or mutant (MT) MRE were sedimented. Northern blots were probed with a fragment that hybridized to the 3\u2019 region of the firefly reporter open reading frame, see (A). (C) The same as in (D) except that the blots were probed with a fragment that hybridized to the 5\u2019 region of the firefly luciferase open reading frame, see (A).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12880/elife-12880-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) UV absorbance (254 nm) trace of a polysome gradient using cytoplasmic extract from untreated cells. (B) same as (A) except that extract was prepared from cells treated with actinomycin D for 10 min.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12880/elife-12880-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) UV absorbance (254 nm) trace of polysome gradient fractionating cytoplasmic extract prepared from cells expressing the hid reporter construct containing wild type MREs. (B) Northern blots across polysome gradients of fractionated cytoplasmic extracts prepared from cells expressing hid reporter mRNAs containing wild type (WT) or mutant (MT) MREs. FL denotes full length mRNA. The asterisk denotes a band that comigrates with 18S RNA and represents some trapping of hid reporter mRNA fragments. Probe was 3\u2019 probe in Figure 3A.\n\nCells expressing the reaper reporter mRNA containing the wild type MRE were treated this way and extracts were fractionated on sucrose gradients (Figure 3\u2014figure supplement 1). Upon analysis by Northern blotting, we observed a striking accumulation of truncated mRNA fragments (Figure 3C). These fragments were detected with a probe which hybridized to the 3\u2019 region of the open reading frame but were not observed when a probe which hybridized to the 5\u2019 region of the reading frame was used (Figure 3D). Comparable fragments were greatly underrepresented when the same analysis was performed on the reaper reporter mRNA containing the mutated MRE (Figure 3C). We concluded from this that the fragments represented mRNA decay intermediates degraded from the 5\u2019 end of the mRNA. Because the decay intermediates were ribosome associated, as indicated by their sedimentation behavior, these data show that enhanced microRNA-mediated mRNA decay occurs cotranslationally.\n\nParallel analysis was carried out on the hid constructs (Figure 3\u2014figure supplement 2). Because the hid 3\u2019 UTR was so long (3kb) relative to the coding region the results were less clear cut than with the reaper constructs. Nevertheless, ribosome associated decay fragments derived from mRNAs containing wild type MREs accumulated in great excess to those derived from the mRNA containing mutant MREs.\n\nHaving shown that miRNA-mediated mRNA destabilization was cotranslational, we wished to determine the pathway by which this mRNA decay occurred. Because decay intermediates were truncated from the 5\u2019 end it seemed likely that they were derived from decapped mRNAs. To determine if decapping was required for decay, the decapping factors DCP1 and 2 were knocked down by RNAi. The reaper reporter mRNA containing the wild type MRE was markedly stabilized in cells wherein decapping was compromised, a result that indicated that removal of the cap was an important step in initiating targeted mRNA degradation (Figure 5A).\n\nSeveral lines of evidence indicate that decapping is contingent upon prior deadenylation of the mRNA (Braun et al., 2012; Eulalio et al., 2009; Giraldez et al., 2006). It has been shown in Drosophila that miRNAs bound to Ago1 recruit GW182; a protein that in turn recruits the CCR4-Not deadenylase complex (e.g. Braun et al., 2011; Chekulaeva et al., 2011). This complex deadenylates mRNA and in some way, perhaps by direct recruitment, facilitates mRNA decapping by Dcp1 and 2 (Behm-Ansmant et al., 2006a; 2006b; Rehwinkel et al., 2005). To determine if the cotranslational decay we observed followed this pathway, we examined the adenylation status of miRNA-targeted mRNAs. Using a polyA tail length assay (Rio et al., 2011) and Figure 4A, we observed what appeared to be \u201cbands\u201d for both reaper reporter and hid reporter tails. Since these \u201cbands\u201d migrated at the size expected for deadenylated mRNAs this result suggested that deadenylated species accumulated in polysome associated mRNAs (Figure 4B). To confirm this interpretation the \u201cband\u201d from the reaper reporter was excised and sequenced. The results confirmed this interpretation (Figure 4C). In contrast, control non-microRNA targeted mRNA displayed normal polyA tails. The presence of deadenylated mRNAs in polysome fractions strongly suggested that accelerated decapping was a consequence of accelerated deadenylation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/12880/elife-12880-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic depiction of the polyA tail length assay to measure the length of a polyA tail. (B) PolyA tail lengths for the indicated mRNAs. Tail lengths were determined for each mRNA in total RNA and pooled polysome gradient fractions as indicated. This assay does not have the sensitivity to detect the endogenous hid 3\u2019 end. (C) The deadenylated species of reaper reporter and endogenous reaper were cloned and sequenced. AATAAA: polyA signal. Genomic DNA sequences are shown in black while the reverse primer is shown in purple.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/12880/elife-12880-fig5-v2.jpg)\n\n**Figure 5.:** (A) Stabilization of reaper reporter mRNAs upon knock down of Drosophila Dcp1 and Dcp2. Northern blot analysis of total RNA prepared at the indicated time after addition of actinomycin D and probed with a fragment that hybridized to the 3\u2019 region of the firefly luciferase open reading frame. (B) Schematic depiction of the ligation strategy to identify decapped 5\u2019 phosphorylated mRNA fragments. (C) Ligation assay for the indicated mRNAs either untreated or treated with tobacco acid pyrophosphatase (TAP). Ligation specific (LS) (decapped RNA) or gene specific (GS) PCR fragments; see (B), Heterogeneity results from digestion by XRN1 following decapping. The single asterisk denotes the position of the product when ligation is at the 5\u2019 terminus of the mRNA. The double asterisk denotes ligation products near the AUG initiation codon. (D) Ligations assays on RNA samples from cytoplasmic extract and gradient fractions, or total RNA with or without knock down of decapping enzymes. Labelling is as in (C). (E) Sequencing analysis of the products when ligation is to the 5\u2019 terminus of the mRNA and near the ATG initiation codon. Ligation-specific forward primer is shown in purple.\n\nFollowing decapping, mRNA degradation is catalyzed by the 5\u2019-3\u2019 exonuclease XRN1; XRN1 leaves 5\u2019 phosphorylated termini. To determine if the cotranslational decay we observed depended upon an enzyme that leaves 5\u2019 phosphorylated termini, we used a ligation strategy designed to detect RNAs which terminated in a 5\u2019 phosphate (Figure 5B). Unlike most splinted ligation assays which require precise juxtaposition of 5\u2019 and 3\u2019 ends and use DNA ligase as the sealing enzyme, we used a bridge oligonucleotide that brought a \u201creporter\u201d oligonucleotide with a free 3\u2019 hydroxyl into proximity of mRNA fragments with 5\u2019phosphate termini and used RNA ligase 1 as the sealing enzyme (Figure 5B).\n\nTo validate this assay we sought to identify substrates that would provide both positive and negative controls. We reasoned that a fully capped mRNA could provide the negative control. We chose to analyze the mRNA encoding ribosomal protein L32, RP49 (Figure 5C). Because the RP49 mRNA has a very long half life (see Figure 1), we anticipated that it would be essentially all capped at steady state. Consistent with this, only trace amounts of ligation products diagnostic of decapped RP49 mRNA were present in total RNA. However, after treatment with tobacco acid pyrophosphatase (TAP), an enzyme that removes the cap, a robust signal for decapped RP49 was obtained (Figure 5C). We then used the ligation assay to analyze the reaper reporter mRNA. In this case we set up the assay to detect any 5\u2019 phosphorylated mRNA fragments containing a 5\u2019 terminal phosphate present in the region of the reaper reporter mRNA ranging from its transcription start site to just downstream of the AUG initiation codon. Here, we observed strong signals in the absence of TAP a result indicating that decapped mRNAs were present at steady state. Only the band corresponding to the mRNA start site was enhanced by TAP treatment (Figure 5C). Importantly, detection of these fragments was ligase dependent and just a trace of fragments were detected in RNA prepared from cells in which DCP 1 and 2 were knocked down (Figure 5D). When the assay was used to detect decay fragments across a polysome gradient we observed signal throughout the polysome region of the gradient (Figure 5C and see Discussion). Cloning of bands denoted by asterisks showed that their 5\u2019 ends mapped at or near the transcription start site and near the translation initiation codon (Figure 5E). These results demonstrated that the decay fragments we observed had resulted from decapping of the reporter mRNA while it was polysome bound.\n\nWe conclude that cotranslational miRNA mediated mRNA destabilization employs the canonical mRNA decay machinery. This destabilization is accelerated relative to non-targeted mRNAs almost surely due to Ago1 recruitment of GW182 which in turn recruits the deadenylase machinery. Following deadenylation, mRNAs are decapped thereby yielding substrates for XRN1 (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/12880/elife-12880-fig6-v2.jpg)\n\n**Figure 6.:** Schematic summary of the model which emerged from the data; for details see the text.\n\n## Discussion\n\nWe have provided evidence that miRNAs promote enhanced mRNA decay while the mRNA targets are engaged with actively translating ribosomes. While we have analyzed\u00a0only two miRNA targets, we think it likely that these observations will be broadly relevant. In cases where the subcellular localization of miRNA targets have been studied, they have invariably been found to be polysome associated (Olsen and Ambros, 1999; Gu et al., 2009; Seggerson et al., 2002; Wightman et al., 1993; Nottrott et al., 2006; Petersen et al., 2006). Moreover, miRNAs themselves have been shown to be polysome associated (Maroney et al., 2006; Nelson et al., 2004; Kim et al., 2004). Our observations are also consistent with a large body of transcriptome wide analyses obtained from studies primarily in mammalial systems that have shown that mRNA destabilization is the primary if not sole effect of miRNA-mediated down regulation of protein production from targeted mRNAs (Guo et al., 2010; Eichhorn et al, 2014). They are also consistent with studies in Drosophila S2 cells that have shown that miRNA effector complexes as well as general decay enzymes including deadenylases and decapping factors are ribosome associated (Antic et al., 2015). While cotranslational miRNA-mediated mRNA decay rationalizes a very large body of published results, there are some observations that are difficult to reconcile with this unifying model of miRNA-mediated action. For example one study in a C. elegans cell free system showed that miRNA-targeted mRNAs were deadenylated and translationally repressed but not degraded (Wu et al., 2010). Another example, also from C. elegans, used ribosome profiling in vivo to show that miRNA mediated regulation in some cases correlated with mRNA abundance but in other cases did not (Stadler et al., 2012). Finally, there are also examples of Drosophila miRNA targeted mRNAs which appear to be regulated at the level of translation and not stability (e.g. Huntzinger and Izaurralde, 2011 and Behm-Ansmant et al., 2006a; 2006b). These examples might indicate that some specific mRNPs are subject to distinct regulatory pathways. Future studies may elucidate mRNP specific factors that mediate these effects.\n\nCotranslational mRNA decay was shown several years ago for a selected group of mRNAs in budding yeast (Hu et al., 2009). More recently, studies have shown that such decay is the dominant if not sole pathway for normal mRNA decay in yeast (Pelechano et al., 2015). Our findings extend these observations to higher eukaryotes and suggest that cotranslational decay may be a widespread phenomenon.\n\nOur results do not speak specifically to how mRNA decay is triggered. In that regard there has been a longstanding debate in the field as to whether inhibition of translation initiation is a prerequisite for miRNA-mediated enhanced decay (Bazzini et al., 2012; Djuranovic et al., 2012; Eichhorn et al., 2014; Subtelny et al., 2014). Indeed over the years a large variety of different inhibition scenarios have been proposed including mRNA sequestration from the translation apparatus and inactivation of an array of initiation factors (e.g. Valencia-Sanchez et al., 2006; Mathonnet et al., 2007; Chendrimada et al., 2007; Kiriakidou et al., 2007; Wang et al., 2008; Fukaya et al., 2014), the latest being eIF4AI and II (Fukao et al., 2014; Meijer et al., 2013). Unfortunately none of these mechanisms including eIF4AI and II (see Galicia-V\u00e1zquez et al., 2015) has received sustained experimental support and it is currently unclear how or if initiation of translation is truly impaired in a microRNA-mediated fashion.\n\nIndependent of miRNA-mediated mRNA decapping, mRNAs decap in general (Coller and Parker, 2004). For general mRNA decapping, translational initiation is also believed to be in competition with the DCP2/1 holoenzyme. Importantly, despite this well accepted notion that initiation and decapping compete, it remains to be established how, when, or even if dissolution of the translational initiation complex occurs prior to DCP2/1-mediated cleavage. Thus the events triggering decapping are still murky but may include recruitment of the RNA helicase DDX6 (Chen et al., 2014; Mathys et al., 2014; Rouya et al., 2014). Importantly, however, since eIF-4F requires a cap to stimulate translation, decapping itself clearly and dramatically limits any further ribosome association and thus can itself be thought of as a potent and irreversible inhibitor of translation initiation.\n\nThe first report of inhibition of initiation of translation came from polysome analysis where it was shown that an miRNA targeted mRNA migrated on lighter polysomes than a control mRNA (Pillai et al., 2005). Notably, however, all of the targeted mRNA was associated with ribosomes; there was no mRNA sedimenting in the RNP region of the gradient (Pillai et al., 2005). These results were interpreted to mean that miRNAs repressed translation initiation. We too observe that targeted mRNAs migrate on lighter polysomes than untargeted mRNAs (Figure 2\u2014figure supplement 4). However, we suggest an alternative explanation for this phenomenon. It seems possible that the act of decapping itself could account for the altered sedimentation of targeted mRNAs. If decapping is a prerequisite for but not rate limiting for mRNA decay, decapped but not degraded mRNAs could persist. Because already engaged ribosomes would continue to elongate and eventually terminate, decapped but intact mRNAs would shift to lighter polysomes as elongating ribosomes clear the mRNA. We note that this notion is not entirely speculative. We have observed decapped mRNAs with 5\u2019 termini that map both near the start site of the mRNA and near the translational initiation codon. Importantly, these RNAs, which would appear to be full length, are detected throughout polysomes of different sizes both large and small (Figure 5D). These observations indicate that 5\u2019 to 3\u2019 exonucleolytic decay is not obligatorily coupled to decapping because if such coupling existed we would not observe full length decapped mRNA. It seems possible the concentration of degradation fragments near the initiation AUG could result from the buildup of ribosomes near the beginning of the open reading frame as observed in ribosome profiling studies (e.g. Ingolia et al., 2011). Collectively, these observations suggest that decapping while a prerequisite for mRNA decay is not likely to be rate limiting for decay itself; exonucleolytic digestion by XRN1 is likely to be rate limiting.\n\nIn sum, we have provided an explanation for a longstanding mystery in the miRNA field and have suggested a plausible model for miRNA action that is consistent with a large body of experimental results obtained in numerous laboratories.\n\n## Materials and methods\n\n### Oligonucleotides and construct design\n\nAll oligonucleotides used in this work were purchased from Integrated DNA Technologies (IDT) and their sequences are shown in Supplementary file 1.\n\nPCR products containing full-length 3\u2019 UTRs of reaper and hid transcripts were amplified from S2 genomic DNA using overlapping PCR. Oligonucleotide site directed mutagenesis (Kunkel et al., 1987) was used to generate the mutant 3\u2019 UTR versions containing mutated MREs; one MRE within the reaper 3\u2019 UTR and 5 MREs within the hid 3\u2019 UTR. Wild type and mutant 3\u2019 UTR sequences were cloned downstream of the firefly luciferase (FL) coding sequence into the pMT-V5-HisB vector (Invitrogen,\u00a0Carlsbad,\u00a0CA) or pAc5.1-V5-HisB vector (Invitrogen).\n\n### Cell culture and construction of stable cell lines\n\nDrosophila S2 cells (ATCC CRL-1963 were obtained from Invitrogen cat no. 10831) were grown in serum-free media Express Five SFM (Gibco) supplemented with 18\u00a0mM L-Glutamine and Pen/Strep at 24\u00b0C without CO2. Cell density was maintained between 2x106 cells/mL and 8x106 cells/mL.\n\nStable (S2) cell lines were generated by co-transfection of the experimental constructs (wild-type or mutated MREs) together with a plasmid carrying a hygromycin resistance gene pCoHygro (Invitrogen). 6\u2009mL cells (2\u00d7106 /mL) were seeded per T25 flask the day before transfection. Cells were transfected using Effectene Transfection Reagent (Qiagen) with 0.5 \u00b5g reporter plasmids and 0.5 \u00b5g antibiotic resistance plasmids, in DNA-condensation buffer (buffer EC), Enhancer Solution, and Effectene. Medium was changed the next day and the cells were incubated for another 24\u2009hr. After that, hygromycin B (200 \u00b5g/ml) (Life Technologies) was added and the cells were incubated in that media for an additional 5 days. In parallel, mock transfected cells were similarly treated and used as controls to monitor cell death. When control cells were no longer alive, the transfected cells were transferred over time into medium containing lower concentrations of hygromycin B (down to 100 \u00b5g/ml), until luciferase levels remained constant.\n\n### Drug treatment\n\nStable cell lines were seeded without hygromycin B at 2x106 cells/mL in T75 flasks. The next day, cells were treated with either 0.1 mg/mL emetine (Sigma-Aldrich) for 10 min, or 2 \u00b5g/mL harringtonine (Abcam) for 5 min. Actinomycin D (ActD) (Sigma-Aldrich), a transcriptional inhibitor, was used at 5 \u00b5g/mL to measure mRNA half-lives at indicated time points. For half-life determination, 4x106 cells/mL were treated with 5 \u00b5g/mL ActD, and 3.5\u2009mL cells added to 60\u2009mm dishes for each time point. At the indicated times, duplicate 1.5\u2009mL samples were removed, quickly pelleted in a microfuge at 1500 xg and resuspended in Tri Reagent (MRC). RNA was extracted, quantitated, and equal amounts were electrophoresed in agarose gels for Northern Blots. In addition to reporters, blots were probed for Rp49 as a loading control. In order to maximize truncated decay fragments, cells were treated with ActD at 5 \u00b5g/mL for 1\u2009min (hid) and 10 min (reaper), followed by emetine for 10 min. After drug treatments, cytoplasmic extracts were prepared for further experiments.\n\n### Cell extracts, polysome analysis, and RNA extraction\n\nCytoplasmic extracts were prepared from a T75 flask containing 20\u2009mL of cells at a density of 8x106 cells/mL. Ten minutes before harvesting, cells were treated with 0.1 mg/mL emetine to irreversibly block protein synthesis during extract preparation. For extracts, cells were swelled in three volumes of hypotonic buffer without detergent (buffer A: 10\u00a0mM KCl, 1.5\u2009mM MgCl2, 20\u2009mM Tris pH 7.5), and lysed with 0.2% Triton X100. Extract was spun at 30000\u2009g for 5\u2009min and aliquots (10A260 units) of the supernatant were centrifuged through 15%\u201340% (w/w) sucrose gradients in buffer A at 40000 r.p.m., for 90 min in a Beckman SW41 rotor. After centrifugation, gradients were fractionated from the top by displacement through a flow cell, and A254 was monitored with a recording spectrophotometer.\n\nDetailed protocols for RNA extraction are as described (Rio et al., 2011). Total RNA was isolated from cell pellets directly homogenized in Tri Reagent (MRC). A 1:5 volume chloroform was added to each sample, followed by vigorous mixing and centrifugation. The aqueous phase was precipitated using isopropanol. After resuspension in buffer containing 1\u2009mM EDTA, 20\u2009mM Tris pH 7.5, and 0.5% SDS (SDS extraction buffer), RNA was reextracted using phenol:chloroform:isoamyl alcohol (25:24:1 v/v/v) and ethanol precipitated. RNA pellets were resuspended in nuclease-free water and concentrations determined using a NanoDrop 2000 (Thermo Scientific).\n\nTo prepare RNA from sucrose gradients, fractions were diluted two fold with SDS extraction buffer and digested with 100 \u00b5g/mL proteinase K for 10 min at 37\u00b0C, followed by extraction with phenol:chloroform:isoamyl alcohol (25:24:1 v/v/v) and precipitation with ethanol and GlycoBlue (Ambion) as carrier.\n\n### Northern blotting\n\nSamples were denatured at 65\u00b0C for 8 min in buffer containing MOPS, formamide, and formaldehyde, and electrophoresed on 1% (reaper) or 0.8% (hid) agarose with MOPS buffer as described (Rio et al., 2011).\n\nRNA was transferred from the gel to a nylon membrane (GeneScreen Plus, PerkinElmer) using capillary transfer in transfer buffer (10X SSC) overnight. Transfer membranes were rinsed briefly in 2X SSC and UV crosslinked using a Stratalinker (254\u2009mm; 1200 mJ), followed by baking at 80\u00b0C for 1\u2009hr. Membranes were pre-hybridized with a mix containing 15% formamide, 10 mg/mL BSA, 0.5\u2009M sodium phosphate buffer pH 7.0, 1\u2009mM EDTA, 7% SDS with rocking at 42\u00b0C (Rio et al., 2011). After 2\u20134\u2009hr, buffer was replaced and probes were added. After overnight hybridization, the membranes were washed in 0.5 X SSC and 0.1% SDS, dried, and visualized by phosphorimaging (Typhoon 9400, GE Healthcare). Images were quantitated using ImageQuant TL 8.1 (GE Healthcare). The details of this protocol are as described (Rio et al., 2011).\n\n### Linear PCR to synthesize the 32P-labeled single-stranded DNA probes\n\n200 nt PCR fragments specific for genes of interest were amplified, gel purified, and quantitated for use as templates. The labeled single-stranded DNA was generated in linear PCR reactions containing \u03b132P-dCTP (PerkinElmer) and a strand-specific oligonucleotide primer designed to synthesize a single stranded probe complementary to the RNA target (Rio et al., 2011). After PCR, unreacted \u03b132P-dCTP was removed with Micro Bio-Spin 6 Chromatography Columns (Biorad).\n\n### RNA interference by double stranded RNAs (dsRNAs)\n\nExpression of the decapping enzymes DCP1 and DCP2 was knocked down using RNA interference (RNAi) following a previously described protocol (Celotto et al., 2005). The coding region of the target of interest was amplified and cloned into pBluescript, flanked by the T3 and T7 promoter sequences. In vitro high-yield synthesis of RNA using T3 and T7 RNA polymerases were carried out to generate single-stranded RNAs (ssRNAs) in both the sense and anti-sense directions. DNaseI (Roche) was added to digest the DNA templates and the ssRNAs were ethanol precipitated. The sense and anti-sense ssRNAs were heated at 95\u00b0C for 1\u2009min and annealed in 50\u2009mM NaCl, 20\u2009mM Tris pH 7.5 at 65\u00b0C for 10 min followed by slow cooling to room temperature. The dsRNAs were evaluated by electrophoresis on 1% agarose gels and staining with ethidium bromide.\n\n1\u2009mL S2 cells were seeded at 1\u00d7106 cells/mL in each well of a 6-well plate. 20 \u00b5g of both dsRNAs were added to each well followed by a 30-minute incubation. Fresh medium was added and cells were incubated further at 24\u00b0C. Cells were boosted after 3 days of incubation by the addition of fresh dsRNAs (40 \u00b5g), followed by an additional 24\u2009hr of incubation.\n\n### Poly(A) tail length assay\n\nThe Poly(A) tail length assay uses the method described by Affymetrix/USB with minor revisions (Rio et al., 2011). ~40 guanosine (G) nucleotides were added to the 3\u2019 end of mRNAs by yeast poly(A) polymerase (Affymetrix/USB). Reactions (12.5 \u00b5L) contained 0.5 \u00b5g of RNA, 20\u2009mM Tris pH 7.0, 0.6\u2009mM MnCl2, 0.02\u2009mM EDTA, 1\u2009mM ITP, 1\u2009mM GTP, 2\u2009mM MgCl2, 6 U poly(A) polymerase (Affymetrix) and incubated at 37\u00b0C for 40 min. Samples were diluted with 50 \u00b5L of 10\u2009mM Tris, 1\u2009mM EDTA, 0.5% SDS, pH 7.5. Nucleotides were removed using Micro Bio-Spin 6 Chromatography Columns (Biorad), and RNAs were precipitated with sodium acetate (0.3\u2009M, pH 5.2) in ethanol.\n\nTailed RNAs were resuspended in water and reverse transcribed using a reverse primer C10T2 designed to anneal within the poly(GI) tail extension. The RNA and primer were heated at 65\u00b0C for 5 min, chilled, and then incubated at 42\u00b0C with 50\u2009mM Tris-HCl pH 8.3, 75\u2009mM KCl, 3\u2009mM MgCl2, 10\u2009mM dithiothreitol (DTT), 0.5\u2009mM dNTPs, and SuperscriptII (200 U) (Life Technologies). cDNA was amplified using FastTaq polymerase (Roche) in PCR reaction buffer containing additional 0.8\u2009mM MgCl2, 0.2\u2009mM of each dNTP, and primers (0.2 \u00b5M each of AnchorC10T2 and a gene-specific forward primer located 100\u2013500 nt 5\u2019 to the poly(A) signal). The PCR program was set at 94\u00b0C for 6\u2009min, 34 cycles of (94\u00b0C for 30 s, 60\u00b0C for 30 s, 72\u00b0C for 45 s), and then 72\u00b0C for 5\u2009min.\n\n### Splinted ligation to detect miRNAs and mRNA phosphorylated 5\u2019 termini ends\n\nMicroRNA detection was as described (Rio et al., 2011; Maroney et al., 2007). The common 5\u2019 ligation oligo was 5\u2019 end labeled with \u03b332P-ATP (PerkinElmer), and 3 pmole were mixed with 1 pmole of bridge oligo and 1 \u00b5g total RNA, denatured at 95\u00b0C for 1\u2009min and annealed for 2 min at 65\u00b0C and 10 min at 37\u00b0C. After addition of ligation buffer (final concentration 60\u2009mM Tris pH 7.5, 10\u2009mM MgCl2, 1\u2009mM DTT, 1\u2009mM ATP, 5% (w/v) PEG 6000) and T4 DNA ligase, samples were incubated at room temperature for 1\u2009hr and then digested with 1 u shrimp alkaline phosphatase (Affymetrix) for 20 min at 37\u00b0C. Samples were run on 6% denaturing polyacrylamide gels, dried, and visualized with a phosphoimager (Typhoon 9400, GE Healthcare).\n\n5\u2019 mRNA termini ligations used an RNA ligation oligo and are illustrated schematically in Figure 5. Complementarity to the bridge ended 10 nucleotides from the 3\u2019 end of the RNA ligation oligo and started 3 nucleotides 3\u2019 to the AUG in the mRNA. Samples in Figure 5C were either incubated with or without tobacco acid pyrophosphatase (Promega discontinued product) for an hour at 37\u00b0C to remove the m7G cap and leave 5\u2019 phosphate termini.\n\nAnnealing conditions were 95\u00b0C for 1\u2009min, 65\u00b0C for 2 min, and 45\u00b0C for 10 min. Ligation buffer and 10 units RNA ligase 1 (NEB) were added and reactions were incubated at 37\u00b0C for 1\u2009hr. After that, samples were diluted with 50\u2009mM Tris pH 7.5, 10\u2009mM MgCl2 and digested with DNaseI (Roche) for 15 min at 37\u00b0C and precipitated with ethanol.\n\nTo detect ligated products, cDNAs with gene specific primers were made starting 192 nt 3\u2019 to the AUG. cDNAs were amplified with PCR primers shown schematically in Figure 5 in reactions containing 5 \u00b5Ci \u03b1-32P dCTP (PerkinElmer).\n\nPCR products were electrophoresed on 6% native polyacrylamide gels, dried and visualized with a phosphoimager (Typhoon 9400, GE Healthcare).\n",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "06701bf0-458a-4c9a-aaa5-610d775fba9d",
+      "submission_id": "dd0fdb90-84d9-4c75-988a-6b0d1c858203",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Douglas L Black, University of California, Los Angeles , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.12880.018](https://doi.org/10.7554/eLife.12880.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Cotranslational microRNA mediated messenger RNA destabilization\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Erik Sontheimer and Douglas Black, who is a member of our board of Reviewing editors. The evaluation has been overseen by James Manley as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nTat et al. examine the mechanisms of genetic repression by miRNA's, presenting evidence supporting the model that miRNA binding to mRNAs represses expression during active translation on polysomes by inducing mRNA deadenylation and decapping. Reporter genes are constructed containing the reaper and hid 3' UTR's attached to firefly luciferase. These are stably expressed in Drosophila S2 cells that contain the endogenous miRNA's miR-2 and Bantam, which target reaper and hid respectively. The authors show that mutating the miR-2 and Bantam miRNA responsive elements (MREs) in these reporters leads to a substantial stabilization of the reporter transcripts. They find that virtually all of the reporter mRNA and a large fraction of the miRNAs are associated with polysomes. The wild type but not the MRE-mutant mRNAs give rise degradation products that are also associated with polysomes and which are missing sequences from their 5' ends. The authors show that the reaper and hid reporters, as well as the endogenous reaper transcript, but not other endogenous transcripts, produce polysomal deadenylated products. Finally, they show using a 5' ligation assay that the reaper and hid reporter transcripts on polysomes are partially decapped and exo-nucleolytically trimmed from their 5' ends. These data support a model where miRNAs lead to mRNA decay during translation, without a prior step of removing the targets from the pool of actively translating mRNAs.\n\nThe paper is clearly written and the presented experiments are well executed. A great deal of disparate data has been published on the mechanisms by which miRNAs repress expression of their target mRNAs, with some conclusions seeming to be incompatible. It was agreed by all the reviewers that this work could help clarify important questions in the field. However, the reviewers pointed to several major experiments that were needed to solidify the findings. Questions were also raised regarding how broadly the results could be interpreted.\n\nEssential revisions:\n\n1) The experiments rely on endogenous miRNAs that are thought, but not shown to be present in the S2 cells. The only data linking particular miRNAs to the effects observed are mutations in the miRNA binding sites. These mutations could alter a variety of 3' UTR mediated regulatory processes. The authors need to demonstrate that miR-2 and Bantam mediate all the decay processes observed by blocking their action with antagomirs.\n\n2) The arguments in the paper depend on all the mRNA being on polysomes and thus being the major contributor to the mRNA half-life measured on total RNA. The authors should confirm this by measuring how much mRNA is lost prior to the polysome gradient and how much is pelleted in these gradients. Is there a pool of mRNA sequestered in high molecular weight structures (such as P-bodies) that is not seen on the polysomes but nevertheless contributes to decay rate measurements?\n\n3) The differential decay of the wild type and mutant RNAs is observed in different stable cell lines for each reporter. This could arise from variation in these cell lines affecting mRNA stability. The authors should assess the stability of reporter and endogenous transcripts in multiple clones of each reporter to control for this. Alternatively, both mutant and wild-type reporters could be measured in the same cell line.\n\n4) The paper is written from the point of view that there will be one pathway of translational repression and decay induced by miRNAs. The authors should discuss the possibility that different mRNAs could show different pathways, or the different mechanisms could be balanced differently in different systems. Such a discussion would include several references already given, but also papers by Wu et al. 2010 (PMID:21095586) and Stadler et al. 2012 (PMID:22855835), showing that in some cases mRNA abundance can be stable while protein expression is reduced by a miRNA. In support of cotranslational deadenylation and decapping, they might also reference Antic et al. 2015 (PMID:25918245).\n",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1787554c-fd3e-4f6f-b7b5-bb483c146f43",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C1",
+      "claim": "MicroRNAs are 22 nucleotide regulatory molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "MicroRNAs are small (22 nucleotide) regulatory molecules that play important roles in a wide variety of biological processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a defining characteristic of microRNAs.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "1e46118e-35e8-4bbe-b190-19a459ca38db",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C2",
+      "claim": "MicroRNAs play important roles in a wide variety of biological processes.",
+      "claim_type": "EXPLICIT",
+      "source": "MicroRNAs are small (22 nucleotide) regulatory molecules that play important roles in a wide variety of biological processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement supported by established scientific consensus in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "77d0f667-c967-49cb-9420-0d8883872521",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C3",
+      "claim": "MicroRNAs bind to targeted mRNAs via limited base pairing interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "These RNAs, which bind to targeted mRNAs via limited base pairing interactions, act to reduce protein production from those mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established mechanism of miRNA action described in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "684706c8-dd75-4be9-bf99-89cd54dd9a24",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C4",
+      "claim": "MicroRNAs act to reduce protein production from targeted mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "These RNAs, which bind to targeted mRNAs via limited base pairing interactions, act to reduce protein production from those mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental function of miRNAs supported by extensive literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "f1e107ee-d74f-42db-89b0-5c05a4be9391",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C5",
+      "claim": "MicroRNAs destabilize targeted mRNAs by recruiting enzymes that function in normal mRNA decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Considerable evidence indicates that miRNAs destabilize targeted mRNAs by recruiting enzymes that function in normal mRNA decay and mRNA degradation is widely thought to occur when mRNAs are in a ribosome free state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by considerable evidence as stated in the abstract.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "e56f2bc2-c4c1-421a-afa6-de02efd46ffc",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C6",
+      "claim": "mRNA degradation is widely thought to occur when mRNAs are in a ribosome free state.",
+      "claim_type": "EXPLICIT",
+      "source": "Considerable evidence indicates that miRNAs destabilize targeted mRNAs by recruiting enzymes that function in normal mRNA decay and mRNA degradation is widely thought to occur when mRNAs are in a ribosome free state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents the prevailing view in the field prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "9b6fe0ab-ef6a-4d48-aea1-356247be7ce0",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C7",
+      "claim": "miRNA targeted mRNAs are invariably found to be polysome associated when examined.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, when examined, miRNA targeted mRNAs are invariably found to be polysome associated; observations that appear to be at face value incompatible with a simple decay model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation consistently reported in the literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "f4f11dbc-8938-4c75-b3e5-1aa735a6dfb4",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C8",
+      "claim": "Turnover of miRNA-targeted mRNAs occurs while they are being translated.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we provide evidence that turnover of miRNA-targeted mRNAs occurs while they are being translated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "1517f335-81bf-4b4f-a34f-deaf4880dbe3",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C9",
+      "claim": "Cotranslational mRNA degradation is initiated by decapping.",
+      "claim_type": "EXPLICIT",
+      "source": "Cotranslational mRNA degradation is initiated by decapping and proceeds 5' to 3' behind the last translating ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing decapped mRNA fragments and stabilization upon DCP1/2 knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "373ceca9-4147-4cf8-aa6c-3975e37f91f3",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C10",
+      "claim": "Cotranslational mRNA degradation proceeds 5' to 3' behind the last translating ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Cotranslational mRNA degradation is initiated by decapping and proceeds 5' to 3' behind the last translating ribosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the observation of 3' truncated fragments detected with 3' probes but not 5' probes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "8e0a62bd-4b07-4237-ac6e-f12a577621a7",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C11",
+      "claim": "A majority of mRNAs are targeted by miRNAs via limited base pairing interactions between the miRNAs and miRNA responsive elements (MREs).",
+      "claim_type": "EXPLICIT",
+      "source": "It has become clear that a majority of mRNAs are targeted by miRNAs via limited base pairing interactions between the miRNAs and miRNA responsive elements (MREs) (Bartel, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bartel, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "ae8ca77c-d1b5-49df-9ebf-a0c5e12d070e",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C12",
+      "claim": "Most MREs are located in 3' UTRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there are exceptions, most MREs are located in 3' UTRs (Bartel, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bartel, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "55a3817b-5c10-43b0-93b9-be272bed6364",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C13",
+      "claim": "The current consensus view of miRNA-mediated gene regulation is that it involves post-transcriptional down regulation of protein production from targeted mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The current consensus view of miRNA-mediated gene regulation is that it involves post-transcriptional down regulation of protein production from targeted mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents the established view in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "8b9ab5dd-2a7e-4f7b-b07f-1759b635e7a5",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C14",
+      "claim": "Repression by miRNAs is largely attributable to mRNA destabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "Repression by miRNAs is largely attributable to mRNA destabilization and several lines of evidence indicate that this destabilization involves recruitment of factors which participate in normal mRNA decay pathways (Bagga et al., 2005; Guo et al., 2010; Eichhorn et al., 2014; Behm-Ansmant et al., 2006a; 2006b; Eulalio et al., 2008b; Jonas and Izaurralde, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "b22b1270-7513-49ae-bf5a-7c0d8f4fd015",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C15",
+      "claim": "miRNA-mediated mRNA destabilization involves recruitment of factors which participate in normal mRNA decay pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Repression by miRNAs is largely attributable to mRNA destabilization and several lines of evidence indicate that this destabilization involves recruitment of factors which participate in normal mRNA decay pathways (Bagga et al., 2005; Guo et al., 2010; Eichhorn et al., 2014; Behm-Ansmant et al., 2006a; 2006b; Eulalio et al., 2008b; Jonas and Izaurralde, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "f87568ba-fae2-4cb5-b84f-12f24fa39612",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C16",
+      "claim": "Factors involved in miRNA-mediated mRNA decay include deadenylases and decapping enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "These factors include deadenylases and decapping enzymes (e.g. Braun et al., 2011; Chekulaeva et al., 2011; Rehwinkel et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "448393c1-6219-45d7-bee5-1293b7360506",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C17",
+      "claim": "The first miRNA targeted mRNAs were found to be fully associated with polysomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In very early studies, the first miRNA targeted mRNAs were found to be fully associated with polysomes (Olsen and Ambros, 1999; Seggerson et al., 2002; Wightman et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to early studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "b82fb374-4a5f-47f6-baa8-0018a26f4432",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C18",
+      "claim": "Whenever the subcellular localization of mRNA targets has been examined, those mRNAs are found to be exclusively on polysomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations have been reproduced numerous times over the years; whenever the subcellular localization of mRNA targets has been examined, those mRNAs are found to be exclusively on polysomes and unambiguous evidence has indicated that these polysomes are engaged in active translation (Gu et al., 2009; Nottrott et al., 2006; Petersen et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "f644045e-0595-4d06-966b-38f36438bfda",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C19",
+      "claim": "Polysomes containing miRNA-targeted mRNAs are engaged in active translation.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations have been reproduced numerous times over the years; whenever the subcellular localization of mRNA targets has been examined, those mRNAs are found to be exclusively on polysomes and unambiguous evidence has indicated that these polysomes are engaged in active translation (Gu et al., 2009; Nottrott et al., 2006; Petersen et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies providing unambiguous evidence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "7f8b4988-7197-4bc7-8de5-59b885835e48",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C20",
+      "claim": "A substantive fraction of miRNAs themselves is associated with actively translating ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Complementing these studies are several studies indicating that a substantive fraction of miRNAs themselves is also associated with actively translating ribosomes (Maroney et al., 2006; Nelson et al., 2004; Kim et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "b9b8cdb5-39f6-4d49-87eb-670f4d4a5d88",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C21",
+      "claim": "MREs are less effective when present in open reading frames.",
+      "claim_type": "EXPLICIT",
+      "source": "Other observations, including the fact that MREs are less effective when present in open reading frames and the presence of a so-called ribosome shadow (absence of MREs in the 3' UTR just downstream of stop codons) are consistent with an interaction between miRNA-effector complexes and translating ribosomes (Bartel, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bartel, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "37b76b88-ed76-4fcc-8305-16888076f8f6",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C22",
+      "claim": "There is a ribosome shadow, defined as the absence of MREs in the 3' UTR just downstream of stop codons.",
+      "claim_type": "EXPLICIT",
+      "source": "Other observations, including the fact that MREs are less effective when present in open reading frames and the presence of a so-called ribosome shadow (absence of MREs in the 3' UTR just downstream of stop codons) are consistent with an interaction between miRNA-effector complexes and translating ribosomes (Bartel, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bartel, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "9d1ee3c1-e7ce-4b1f-811e-a1fef152b60a",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C23",
+      "claim": "The prevalent view of mRNA decay holds that decay occurs when mRNAs are in a ribosome free state.",
+      "claim_type": "EXPLICIT",
+      "source": "The conundrum is that the prevalent view of mRNA decay holds that decay occurs when mRNAs are in a ribosome free state, perhaps in subcellular aggregates known as P bodies, sites of concentrated RNA degradative activities (reviewed in Valencia-Sanchez et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the prevailing view in the field as cited in Valencia-Sanchez et al., 2006.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "d3e43c42-a9d0-44e0-b732-174ed097ca70",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C24",
+      "claim": "P bodies are subcellular aggregates that are sites of concentrated RNA degradative activities.",
+      "claim_type": "EXPLICIT",
+      "source": "The conundrum is that the prevalent view of mRNA decay holds that decay occurs when mRNAs are in a ribosome free state, perhaps in subcellular aggregates known as P bodies, sites of concentrated RNA degradative activities (reviewed in Valencia-Sanchez et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Valencia-Sanchez et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "50d70e8a-9e8e-4df1-9092-844a566576ba",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C25",
+      "claim": "The reaper mRNA contains one microRNA recognition element (MRE) for the Drosophila miR-2 family of miRNA in its 3'UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "The reaper mRNA contains one microRNA recognition element (MRE) for the Drosophila miR-2 family of miRNA (miRs 2a, 2b, 2c, 6, 11, 13a, 13b, 308) in its 3'UTR (Figure 1A, Figure 1\u2014figure supplement 1) (Jovanovic and Hengartner, 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Jovanovic and Hengartner, 2006 and shown in Figure 1A and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "eb1dfb75-ef55-40ef-b2a0-f373edf3832a",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C26",
+      "claim": "The hid mRNA contains five MREs for the miRNA, bantam, in its 3' UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "The hid mRNA contains five MREs for the miRNA, bantam, in its 3' UTR (Figure 1A, Figure 1\u2014figure supplement 1) (Brennecke et al., 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Brennecke et al., 2003 and shown in Figure 1A and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "ec644604-8a59-4d36-886a-480685a92c14",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C27",
+      "claim": "The reaper reporter mRNA with the wild type MRE decayed with a half life of approximately 8 min.",
+      "claim_type": "EXPLICIT",
+      "source": "After transcriptional shut off, the reaper reporter mRNA with the wild type MRE decayed with a half life of approximately 8 min (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "9cb9f06e-2a20-4d06-a809-f23540ee541e",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C28",
+      "claim": "The half life of the reaper reporter mRNA containing the mutant MRE was approximately 31 min.",
+      "claim_type": "EXPLICIT",
+      "source": "The half life of the reaper reporter mRNA containing the mutant MRE was approximately 31 min, about four fold longer than the mRNA with the wild type MRE (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "1343b4e9-a6ed-444a-b8ef-1ccbc5fa915f",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C29",
+      "claim": "The reaper reporter mRNA containing the mutant MRE has a half life about four fold longer than the mRNA with the wild type MRE.",
+      "claim_type": "EXPLICIT",
+      "source": "The half life of the reaper reporter mRNA containing the mutant MRE was approximately 31 min, about four fold longer than the mRNA with the wild type MRE (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "92b877dd-c7ed-4c7a-97a9-2acaf970a502",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C30",
+      "claim": "A mimic complementary to the mutant reaper MRE markedly reduced the half life of the reporter to a level comparable to that of the reaper reporter containing the wild type MRE.",
+      "claim_type": "EXPLICIT",
+      "source": "While a control mimic had no effect on the half life of the reaper reporter containing the mutant MRE the mimic complementary to the mutant MRE markedly reduced the half life of the reporter to a level comparable to that of the reaper reporter containing the wild type MRE (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "140ff31c-05b5-4da3-956d-2e1ee9d4ad99",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C31",
+      "claim": "The hid reporter mRNA with five wild type MREs had a half life of approximately 7.5 min.",
+      "claim_type": "EXPLICIT",
+      "source": "The hid reporter mRNA with five wild type MREs had a half life of approximately 7.5 min whereas the mRNA with the mutant MREs had a half life longer than forty minutes (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "99433e70-1e46-4e43-97a8-7e067e7f8e36",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C32",
+      "claim": "The hid reporter mRNA with the mutant MREs had a half life longer than forty minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "The hid reporter mRNA with five wild type MREs had a half life of approximately 7.5 min whereas the mRNA with the mutant MREs had a half life longer than forty minutes (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "90beace5-889c-4c64-aeec-3ae6de47ec20",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C33",
+      "claim": "A Bantam mimic caused marked destabilization of the reporter containing mutant Bantam sites.",
+      "claim_type": "EXPLICIT",
+      "source": "A Bantam mimic analogous to the miR2 mimic described above caused marked destabilization of the reporter containing mutant Bantam sites, confirming that the observed effect on mRNA stability was miRNA-mediated (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "b8f3dd19-a48a-4611-a9be-64e1a52a8dc5",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C34",
+      "claim": "All detectable mRNAs for all four of the constructs cosedimented with polysomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, fractionation of cytoplasmic extracts in this manner revealed that all detectable mRNAs for all four of the constructs cosedimented with polysomes, an observation that suggested that the mRNAs were associated with translating ribosomes (Figure 2B and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 2B and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "f38a58b2-ccaf-405e-bd84-a18a6b417356",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C35",
+      "claim": "The vast majority of reporter mRNAs was associated with polysomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the vast majority of reporter mRNAs was indeed associated with polysomes and that there was negligible mRNA loss during extract preparation or gradient fractionation (Figure 2\u2014figure supplement 2) compare lanes total and gradient.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "590b25c5-5442-465c-9d33-a8f6575e284e",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C36",
+      "claim": "All four reporter mRNAs shifted to lighter fractions upon Harringtonine treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses revealed that all four mRNAs shifted to lighter fractions; a result which indicated that all four mRNAs were associated with actively translating ribosomes (Figure 2B and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 2B and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "34bbca83-b95b-4759-8977-4beec3f84e9e",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C37",
+      "claim": "All four reporter mRNAs were associated with actively translating ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses revealed that all four mRNAs shifted to lighter fractions; a result which indicated that all four mRNAs were associated with actively translating ribosomes (Figure 2B and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the Harringtonine experiment data shown in Figure 2B and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "b02f859a-e944-44aa-8a29-fbbbe902c43e",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C38",
+      "claim": "Both endogenous bantam and miR-13b sedimented with polysomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with other earlier observations (Maroney et al., 2006; Nelson et al., 2004) (Kim et al., 2004), both endogenous bantam and a representative member of the miR-2 family (miR-13b) showed similar sedimentation behavior as these targeted mRNAs; i.e. a substantive amount of each miRNA sedimented with polysomes and shifted to lighter fractions upon Harringtonine treatment (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "d02f1186-7b1f-464f-b42b-dc3059793e85",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C39",
+      "claim": "Endogenous bantam and miR-13b shifted to lighter fractions upon Harringtonine treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with other earlier observations (Maroney et al., 2006; Nelson et al., 2004) (Kim et al., 2004), both endogenous bantam and a representative member of the miR-2 family (miR-13b) showed similar sedimentation behavior as these targeted mRNAs; i.e. a substantive amount of each miRNA sedimented with polysomes and shifted to lighter fractions upon Harringtonine treatment (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "4e0ecfee-4072-4d86-9479-979e4486d8a2",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C40",
+      "claim": "Endogenous mRNAs encoding the ribosomal protein L32 (RP49) and polyA binding protein (PABP) were present on translating ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Endogenous mRNAs encoding the ribosomal protein L32 (RP49) and polyA binding protein (PABP) were, as expected, also present on translating ribosomes (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "0b1d321d-11ff-4511-9454-47480a65dcac",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C41",
+      "claim": "Truncated mRNA fragments were detected with a probe which hybridized to the 3' region of the open reading frame.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon analysis by Northern blotting, we observed a striking accumulation of truncated mRNA fragments (Figure 3C). These fragments were detected with a probe which hybridized to the 3' region of the open reading frame but were not observed when a probe which hybridized to the 5' region of the reading frame was used (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "99ef5d6e-f523-48ba-bbef-c5f9e872b511",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C42",
+      "claim": "Truncated mRNA fragments were not observed when a probe which hybridized to the 5' region of the reading frame was used.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon analysis by Northern blotting, we observed a striking accumulation of truncated mRNA fragments (Figure 3C). These fragments were detected with a probe which hybridized to the 3' region of the open reading frame but were not observed when a probe which hybridized to the 5' region of the reading frame was used (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 3C and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "0b413e2b-d251-46af-affd-fdc0dd095a35",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C43",
+      "claim": "The fragments represented mRNA decay intermediates degraded from the 5' end of the mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We concluded from this that the fragments represented mRNA decay intermediates degraded from the 5' end of the mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that fragments are detected with 3' probes but not 5' probes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "efe26356-f4d5-4fd7-b943-0c1b603d6118",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C44",
+      "claim": "The decay intermediates were ribosome associated.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the decay intermediates were ribosome associated, as indicated by their sedimentation behavior, these data show that enhanced microRNA-mediated mRNA decay occurs cotranslationally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the sedimentation behavior of the fragments in polysome gradients.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "c60ff30c-6733-41da-85cd-25bc78901042",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C45",
+      "claim": "Enhanced microRNA-mediated mRNA decay occurs cotranslationally.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the decay intermediates were ribosome associated, as indicated by their sedimentation behavior, these data show that enhanced microRNA-mediated mRNA decay occurs cotranslationally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the experimental data on ribosome-associated decay intermediates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "f46b9eb3-f519-43bc-b4b5-de00b4438cb9",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C46",
+      "claim": "The reaper reporter mRNA containing the wild type MRE was markedly stabilized in cells wherein decapping was compromised.",
+      "claim_type": "EXPLICIT",
+      "source": "The reaper reporter mRNA containing the wild type MRE was markedly stabilized in cells wherein decapping was compromised, a result that indicated that removal of the cap was an important step in initiating targeted mRNA degradation (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 5A from DCP1/2 knockdown experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "268d5fca-46ad-427e-acfc-c748028f1dd5",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C47",
+      "claim": "Removal of the cap is an important step in initiating targeted mRNA degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "The reaper reporter mRNA containing the wild type MRE was markedly stabilized in cells wherein decapping was compromised, a result that indicated that removal of the cap was an important step in initiating targeted mRNA degradation (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the stabilization of mRNA upon DCP1/2 knockdown shown in Figure 5A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "74378def-b46f-49ee-b9e8-baac9c563a9d",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C48",
+      "claim": "Decapping is contingent upon prior deadenylation of the mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Several lines of evidence indicate that decapping is contingent upon prior deadenylation of the mRNA (Braun et al., 2012; Eulalio et al., 2009; Giraldez et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "955350b4-adf4-4181-89d3-b6c300507a3a",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C49",
+      "claim": "In Drosophila, miRNAs bound to Ago1 recruit GW182.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown in Drosophila that miRNAs bound to Ago1 recruit GW182; a protein that in turn recruits the CCR4-Not deadenylase complex (e.g. Braun et al., 2011; Chekulaeva et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Braun et al., 2011 and Chekulaeva et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "ec10cfd6-8444-4c96-b792-062b09dff9a3",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C50",
+      "claim": "GW182 recruits the CCR4-Not deadenylase complex.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown in Drosophila that miRNAs bound to Ago1 recruit GW182; a protein that in turn recruits the CCR4-Not deadenylase complex (e.g. Braun et al., 2011; Chekulaeva et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Braun et al., 2011 and Chekulaeva et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "7c25d646-d0dd-418f-b945-2e7ae1681aed",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C51",
+      "claim": "The CCR4-Not complex deadenylates mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This complex deadenylates mRNA and in some way, perhaps by direct recruitment, facilitates mRNA decapping by Dcp1 and 2 (Behm-Ansmant et al., 2006a; 2006b; Rehwinkel et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Behm-Ansmant et al., 2006a; 2006b and Rehwinkel et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "f994c0e2-f610-48ef-84c4-4845558e264f",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C52",
+      "claim": "Deadenylated species accumulated in polysome associated mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a polyA tail length assay (Rio et al., 2011) and Figure 4A, we observed what appeared to be \"bands\" for both reaper reporter and hid reporter tails. Since these \"bands\" migrated at the size expected for deadenylated mRNAs this result suggested that deadenylated species accumulated in polysome associated mRNAs (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 4B using a polyA tail length assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "b73f6705-c5d4-4050-a0db-d8328ed27b3b",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C53",
+      "claim": "The presence of deadenylated mRNAs in polysome fractions strongly suggested that accelerated decapping was a consequence of accelerated deadenylation.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of deadenylated mRNAs in polysome fractions strongly suggested that accelerated decapping was a consequence of accelerated deadenylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of deadenylated mRNAs in polysomes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "bd7fb519-f926-4923-8ab9-c521cd7bdee9",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C54",
+      "claim": "Following decapping, mRNA degradation is catalyzed by the 5'-3' exonuclease XRN1.",
+      "claim_type": "EXPLICIT",
+      "source": "Following decapping, mRNA degradation is catalyzed by the 5'-3' exonuclease XRN1; XRN1 leaves 5' phosphorylated termini.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the mRNA decay pathway.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "9d8e42cc-3314-484d-9dc6-43a587fc1c90",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C55",
+      "claim": "XRN1 leaves 5' phosphorylated termini.",
+      "claim_type": "EXPLICIT",
+      "source": "Following decapping, mRNA degradation is catalyzed by the 5'-3' exonuclease XRN1; XRN1 leaves 5' phosphorylated termini.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about XRN1 activity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "b02ecf2b-5d7c-4dc6-b1d6-cde3eceab268",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C56",
+      "claim": "Strong signals for decapped reaper reporter mRNA were observed in the absence of TAP.",
+      "claim_type": "EXPLICIT",
+      "source": "We then used the ligation assay to analyze the reaper reporter mRNA. In this case we set up the assay to detect any 5' phosphorylated mRNA fragments containing a 5' terminal phosphate present in the region of the reaper reporter mRNA ranging from its transcription start site to just downstream of the AUG initiation codon. Here, we observed strong signals in the absence of TAP a result indicating that decapped mRNAs were present at steady state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the ligation assay shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "41e902b9-27d3-4b9c-b45b-f1757ecc215b",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C57",
+      "claim": "Decapped mRNAs were present at steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we observed strong signals in the absence of TAP a result indicating that decapped mRNAs were present at steady state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the ligation assay results showing 5' phosphorylated termini without TAP treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "03b5cbe2-ce4b-4188-b206-57ae5a6bbfb4",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C58",
+      "claim": "Detection of decapped fragments was ligase dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, detection of these fragments was ligase dependent and just a trace of fragments were detected in RNA prepared from cells in which DCP 1 and 2 were knocked down (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "3f474d76-209c-4722-ae9b-cc04d049e2e2",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C59",
+      "claim": "Just a trace of decapped fragments were detected in RNA prepared from cells in which DCP 1 and 2 were knocked down.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, detection of these fragments was ligase dependent and just a trace of fragments were detected in RNA prepared from cells in which DCP 1 and 2 were knocked down (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "2e5c1fa1-d061-415e-9b24-4c06b57b9ba0",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C60",
+      "claim": "Signal for decapped mRNA was observed throughout the polysome region of the gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "When the assay was used to detect decay fragments across a polysome gradient we observed signal throughout the polysome region of the gradient (Figure 5C and see Discussion).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "d467737a-6f47-4116-a8b4-2607c13145ab",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C61",
+      "claim": "The 5' ends of cloned decapped fragments mapped at or near the transcription start site and near the translation initiation codon.",
+      "claim_type": "EXPLICIT",
+      "source": "Cloning of bands denoted by asterisks showed that their 5' ends mapped at or near the transcription start site and near the translation initiation codon (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data from sequencing shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "cf0e1aea-d265-4117-bb35-5b87db2dcd37",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C62",
+      "claim": "The decay fragments observed had resulted from decapping of the reporter mRNA while it was polysome bound.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrated that the decay fragments we observed had resulted from decapping of the reporter mRNA while it was polysome bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the combined data showing decapped fragments in polysome fractions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "fa73918f-7b20-446c-a6d1-3455163a03aa",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C63",
+      "claim": "Cotranslational miRNA mediated mRNA destabilization employs the canonical mRNA decay machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that cotranslational miRNA mediated mRNA destabilization employs the canonical mRNA decay machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the data showing involvement of deadenylases, decapping enzymes, and XRN1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "74031a57-85ef-473a-a3a7-89ece2eefab2",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C64",
+      "claim": "miRNA-mediated mRNA destabilization is accelerated relative to non-targeted mRNAs almost surely due to Ago1 recruitment of GW182 which in turn recruits the deadenylase machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "This destabilization is accelerated relative to non-targeted mRNAs almost surely due to Ago1 recruitment of GW182 which in turn recruits the deadenylase machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the known mechanism of miRNA action and the observed accelerated decay.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "32795399-bf53-44d4-be61-ef458e8e1b53",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C65",
+      "claim": "Cotranslational mRNA decay was shown several years ago for a selected group of mRNAs in budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Cotranslational mRNA decay was shown several years ago for a selected group of mRNAs in budding yeast (Hu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hu et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "94b5d618-aa87-4735-99ec-1fb7949fc827",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C66",
+      "claim": "Cotranslational decay is the dominant if not sole pathway for normal mRNA decay in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, studies have shown that such decay is the dominant if not sole pathway for normal mRNA decay in yeast (Pelechano et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pelechano et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "c2e2c25c-6546-47d2-9ec5-cc8ed1c943f2",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C67",
+      "claim": "Cotranslational decay may be a widespread phenomenon.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings extend these observations to higher eukaryotes and suggest that cotranslational decay may be a widespread phenomenon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the findings in this study and previous yeast studies.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "fc7f948b-3f19-4905-9c44-25057c807280",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C68",
+      "claim": "Decapping itself can be thought of as a potent and irreversible inhibitor of translation initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, however, since eIF-4F requires a cap to stimulate translation, decapping itself clearly and dramatically limits any further ribosome association and thus can itself be thought of as a potent and irreversible inhibitor of translation initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the known requirement of eIF-4F for the cap structure.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "dd477531-5bae-4f7a-ba1c-151c57f32354",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C69",
+      "claim": "Decapping is a prerequisite for but not rate limiting for mRNA decay.",
+      "claim_type": "EXPLICIT",
+      "source": "If decapping is a prerequisite for but not rate limiting for mRNA decay, decapped but not degraded mRNAs could persist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the observation of full-length decapped mRNAs.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "9579ba79-cbc6-49e9-a59f-bf61485d15db",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C70",
+      "claim": "Decapped mRNAs with 5' termini that map both near the start site of the mRNA and near the translational initiation codon were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We have observed decapped mRNAs with 5' termini that map both near the start site of the mRNA and near the translational initiation codon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from the ligation and sequencing experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "11367201-eb24-4083-9363-6256c09f33b0",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C71",
+      "claim": "Full length decapped mRNAs are detected throughout polysomes of different sizes both large and small.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these RNAs, which would appear to be full length, are detected throughout polysomes of different sizes both large and small (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "3933a72b-6e1e-49f0-a404-87bb866b56f0",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C72",
+      "claim": "5' to 3' exonucleolytic decay is not obligatorily coupled to decapping.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations indicate that 5' to 3' exonucleolytic decay is not obligatorily coupled to decapping because if such coupling existed we would not observe full length decapped mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation of full-length decapped mRNAs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "ee23c453-4cfe-48f4-b898-c45c3efca520",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C73",
+      "claim": "Exonucleolytic digestion by XRN1 is likely to be rate limiting for mRNA decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these observations suggest that decapping while a prerequisite for mRNA decay is not likely to be rate limiting for decay itself; exonucleolytic digestion by XRN1 is likely to be rate limiting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the observation that decapped mRNAs persist.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "d9489c81-2948-4dea-83b5-2e79b2992bb0",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C74",
+      "claim": "Emetine is an irreversible inhibitor of translation elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if polysome associated mRNAs were actually being translated, cells were treated with either emetine, an irreversible inhibitor of translation elongation (Akinboye and Bakare, 2011), or Harringtonine, an inhibitor of protein synthesis that binds to the A site of initiating ribosomes only and thereby prevents formation of the first peptide bond (Fresno et al., 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Akinboye and Bakare, 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "0dccb595-8881-4a97-9008-0d8aa4baed23",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C75",
+      "claim": "Harringtonine is an inhibitor of protein synthesis that binds to the A site of initiating ribosomes only and thereby prevents formation of the first peptide bond.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if polysome associated mRNAs were actually being translated, cells were treated with either emetine, an irreversible inhibitor of translation elongation (Akinboye and Bakare, 2011), or Harringtonine, an inhibitor of protein synthesis that binds to the A site of initiating ribosomes only and thereby prevents formation of the first peptide bond (Fresno et al., 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fresno et al., 1977.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "1760782a-7958-4553-b59f-57c70de15e0f",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C76",
+      "claim": "Drosophila S2 cells were obtained from Invitrogen cat no. 10831.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila S2 cells (ATCC CRL-1963 were obtained from Invitrogen cat no. 10831) were grown in serum-free media Express Five SFM (Gibco) supplemented with 18 mM L-Glutamine and Pen/Strep at 24\u00b0C without CO2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the source of cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "08190803-03a5-42c8-a6be-b1a0bccf86cc",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C77",
+      "claim": "miRNA targeted mRNAs migrate on lighter polysomes than untargeted mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "We too observe that targeted mRNAs migrate on lighter polysomes than untargeted mRNAs (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is experimental data shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "5e1026aa-085d-48a0-af14-834897a32462",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "claim_id": "C78",
+      "claim": "The act of decapping itself could account for the altered sedimentation of targeted mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we suggest an alternative explanation for this phenomenon. It seems possible that the act of decapping itself could account for the altered sedimentation of targeted mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed alternative explanation based on the authors' data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "52a15dec-4797-489f-9000-50adc7172c66",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Endogenous miRNAs cause substantial destabilization of reporter mRNAs containing wild-type MREs. The reaper reporter with wild-type MRE had a half-life of ~8 min vs. ~31 min for the mutant (4-fold difference), and the hid reporter with wild-type MREs had a half-life of ~7.5 min vs. >40 min for mutant MREs. Mimics complementary to mutant MREs restored destabilization, confirming miRNA-mediated effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C33 provide converging evidence from multiple reporter constructs (reaper and hid) showing miRNA-dependent mRNA destabilization. The use of wild-type vs. mutant MREs and rescue with complementary mimics provides strong controls demonstrating specificity. Half-life measurements are quantitative and reproducible across different constructs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "09a41a6a-1c5a-43b0-8072-ddd1d3b7c8c8",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "All four reporter mRNAs (reaper and hid, wild-type and mutant MREs) are associated with actively translating polysomes. Harringtonine treatment caused all mRNAs to shift to lighter fractions, indicating active translation. Endogenous miRNAs (bantam, miR-13b) and control mRNAs (RP49, PABP) also sedimented with polysomes and shifted upon Harringtonine treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C40 demonstrate polysome association using sucrose gradient fractionation and Harringtonine run-off experiments. The Harringtonine control is appropriate for distinguishing actively translating ribosomes from stalled complexes. The accounting experiment (C35) addresses potential artifacts from sample preparation. The observation applies to both targeted and non-targeted mRNAs, as well as to the miRNAs themselves.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "33dad42e-3f02-4acd-a215-c3cd7b15df6e",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "miRNA-mediated mRNA decay occurs cotranslationally. Truncated mRNA fragments accumulate in polysome fractions after transcriptional shutoff. These fragments are detected with 3' probes but not 5' probes, indicating 5' to 3' degradation. The fragments are ribosome-associated based on sedimentation behavior, demonstrating that decay occurs while mRNAs are being translated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 provide the key evidence for cotranslational decay through detection of 5'-truncated, polysome-associated decay intermediates. The differential detection with 3' vs. 5' probes (C41-C42) is critical for establishing directionality. The enrichment of fragments after actinomycin D treatment and their polysome association (C44) directly support the cotranslational decay model. This is the central finding of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "806c0a5b-990b-4306-9d19-e6a64bc5d9e2",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Cotranslational decay is initiated by decapping following deadenylation. Knockdown of DCP1/2 markedly stabilized the reaper reporter mRNA with wild-type MRE, indicating decapping is required for decay. The pathway involves miRNA-Ago1 recruitment of GW182, which recruits the CCR4-Not deadenylase complex, followed by decapping by Dcp1/2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 establish the mechanistic pathway. The DCP1/2 knockdown experiment (C46-C47) provides direct functional evidence for decapping requirement. Claims C48-C51 are well-supported by citations to prior work establishing the deadenylation-decapping pathway in Drosophila. The integration of new data (C46-C47) with established mechanisms (C48-C51) is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "3cd6d0ea-01b4-4b22-9e76-8a829a3d0b68",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Deadenylated mRNA species accumulate in polysome-associated fractions. PolyA tail length assays revealed bands migrating at sizes expected for deadenylated mRNAs in polysome fractions, suggesting that accelerated decapping is a consequence of accelerated deadenylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 provide evidence for deadenylation preceding decapping in the cotranslational context. The polyA tail assay (C52) shows accumulation of deadenylated species in polysomes, and sequencing confirmed the interpretation. The inference that decapping follows deadenylation (C53) is reasonable given the established pathway and the detection of deadenylated intermediates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "593ed5c7-33df-410a-a2b7-d4ad471b46c2",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Following decapping, 5' to 3' degradation is catalyzed by XRN1, which leaves 5' phosphorylated termini. A ligation assay detected decapped reaper reporter mRNA fragments with 5' phosphates at steady state throughout polysome fractions. Detection was ligase-dependent and nearly absent in DCP1/2 knockdown cells. Cloned fragments mapped near the transcription start site and translation initiation codon, demonstrating polysome-bound decapping.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C62 provide strong evidence for XRN1-mediated degradation following decapping. The ligation assay is well-controlled with appropriate positive (TAP-treated RP49) and negative controls. The ligase-dependence (C58) and loss of signal upon DCP1/2 knockdown (C59) validate specificity. The detection throughout polysomes (C60) and mapping of 5' ends (C61) directly support cotranslational decapping and degradation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "974fb261-e773-422a-a607-45358a313972",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Cotranslational miRNA-mediated mRNA destabilization employs the canonical mRNA decay machinery (deadenylases, decapping enzymes, XRN1). The destabilization is accelerated relative to non-targeted mRNAs due to Ago1 recruitment of GW182, which recruits the deadenylase machinery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 synthesize the mechanistic findings. The conclusion that canonical decay machinery is employed (C63) is well-supported by the experimental data on deadenylation, decapping, and XRN1-mediated degradation. The proposed acceleration mechanism via Ago1-GW182 (C64) is appropriately attributed to prior work and consistent with the observed enhanced decay rates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "adcef7d6-9ab8-4b1b-b9b3-771e14ecbcca",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Full-length decapped mRNAs with 5' termini mapping near the transcription start site and initiation codon are detected throughout polysomes of different sizes. This indicates that 5' to 3' exonucleolytic decay is not obligatorily coupled to decapping, and suggests that XRN1-mediated exonucleolytic digestion, rather than decapping itself, is rate-limiting for mRNA decay.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73 provide important mechanistic insights into the temporal relationship between decapping and degradation. The detection of full-length decapped mRNAs (C70-C71) is direct experimental evidence that decapping and degradation are not tightly coupled (C72). The inference that XRN1 activity is rate-limiting (C73) is reasonable speculation based on the persistence of decapped intermediates, though it remains to be directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "994f002c-8a14-44d9-a5a5-f60878e0894a",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "miRNA-targeted mRNAs migrate on lighter polysomes than untargeted mRNAs. The authors propose that decapping itself could account for this altered sedimentation, as decapped mRNAs would shift to lighter polysomes as elongating ribosomes clear the mRNA without new initiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 address a previously reported observation and offer a mechanistic explanation consistent with the cotranslational decay model. The observation (C77) is confirmed experimentally. The proposed explanation (C78) is speculative but logical given the detection of full-length decapped mRNAs and the known requirement of the cap for translation initiation. This provides an alternative to the translation repression model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "228096a1-8f13-4f8f-9982-f8a363185ad1",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cotranslational mRNA decay was previously shown for selected mRNAs in budding yeast and is now the dominant pathway for normal mRNA decay in yeast. The current findings extend these observations to higher eukaryotes (Drosophila) and suggest cotranslational decay may be a widespread phenomenon.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 appropriately contextualize the findings within prior work on yeast. The citations to Hu et al., 2009 (C65) and Pelechano et al., 2015 (C66) are accurate. The suggestion that cotranslational decay may be widespread (C67) is reasonable speculation based on the convergence of findings across evolutionarily distant organisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "2c647293-f12e-4405-aa03-9eb6b9f09b20",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Decapping itself can be thought of as a potent and irreversible inhibitor of translation initiation, since eIF-4F requires a cap to stimulate translation and decapping dramatically limits further ribosome association.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 is a logical inference based on established knowledge of cap-dependent translation initiation. The reasoning is sound: if the cap is required for eIF-4F binding and translation initiation, then removal of the cap would prevent new initiation. This provides a mechanistic link between decapping and the observed polysome profiles.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "31ffb5ab-a37e-4c47-91e2-5450319638d6",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims establishing the known properties of miRNAs, their mechanism of action, and the apparent paradox that miRNA-targeted mRNAs are found on polysomes despite evidence for mRNA destabilization occurring in ribosome-free states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C24 represent well-established background knowledge appropriately cited from the literature. These claims set up the central question addressed by the manuscript: how can miRNA-mediated decay occur when targeted mRNAs are polysome-associated? The citations are appropriate and the characterization of the field's understanding is accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "d9c0b55a-256f-46f3-84e4-f05fddefff62",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methodological details: Emetine is an irreversible inhibitor of translation elongation; Harringtonine inhibits formation of the first peptide bond by binding to the A site of initiating ribosomes; Drosophila S2 cells were obtained from Invitrogen.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76 are methodological details appropriately cited and documented. The characterization of drug mechanisms is accurate and properly referenced. These are standard reagents and methods used appropriately in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "00da5dfc-d79f-4ae1-912b-a8cba1240744",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Summary claims stating the main findings: turnover of miRNA-targeted mRNAs occurs during translation, initiated by decapping and proceeding 5' to 3' behind the last translating ribosome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 are high-level summary statements of the main findings, which are supported by the detailed experimental evidence in claims C25-C62. These represent the central conclusions of the manuscript and are well-supported by the collective data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    },
+    {
+      "id": "14a5aa2f-8624-4ded-a21a-885bbd23c45f",
+      "content_id": "ac279b15-2fbd-4809-a542-eba8069ff40e",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Speculation that decapping is a prerequisite for but not rate-limiting for mRNA decay, based on the observation that decapped but not degraded mRNAs persist.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C69 is explicitly speculative ('If decapping is a prerequisite for but not rate limiting...') and is based on the observation of full-length decapped mRNAs. While the observation is solid (C70-C71), the interpretation that decapping is not rate-limiting requires additional kinetic experiments to definitively establish. The speculation is reasonable but not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:46.562760Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "50d70e8a-9e8e-4df1-9092-844a566576ba",
+      "result_id": "52a15dec-4797-489f-9000-50adc7172c66"
+    },
+    {
+      "claim_id": "eb1dfb75-ef55-40ef-b2a0-f373edf3832a",
+      "result_id": "52a15dec-4797-489f-9000-50adc7172c66"
+    },
+    {
+      "claim_id": "ec644604-8a59-4d36-886a-480685a92c14",
+      "result_id": "52a15dec-4797-489f-9000-50adc7172c66"
+    },
+    {
+      "claim_id": "9cb9f06e-2a20-4d06-a809-f23540ee541e",
+      "result_id": "52a15dec-4797-489f-9000-50adc7172c66"
+    },
+    {
+      "claim_id": "1343b4e9-a6ed-444a-b8ef-1ccbc5fa915f",
+      "result_id": "52a15dec-4797-489f-9000-50adc7172c66"
+    },
+    {
+      "claim_id": "92b877dd-c7ed-4c7a-97a9-2acaf970a502",
+      "result_id": "52a15dec-4797-489f-9000-50adc7172c66"
+    },
+    {
+      "claim_id": "140ff31c-05b5-4da3-956d-2e1ee9d4ad99",
+      "result_id": "52a15dec-4797-489f-9000-50adc7172c66"
+    },
+    {
+      "claim_id": "99433e70-1e46-4e43-97a8-7e067e7f8e36",
+      "result_id": "52a15dec-4797-489f-9000-50adc7172c66"
+    },
+    {
+      "claim_id": "90beace5-889c-4c64-aeec-3ae6de47ec20",
+      "result_id": "52a15dec-4797-489f-9000-50adc7172c66"
+    },
+    {
+      "claim_id": "b8f3dd19-a48a-4611-a9be-64e1a52a8dc5",
+      "result_id": "09a41a6a-1c5a-43b0-8072-ddd1d3b7c8c8"
+    },
+    {
+      "claim_id": "f38a58b2-ccaf-405e-bd84-a18a6b417356",
+      "result_id": "09a41a6a-1c5a-43b0-8072-ddd1d3b7c8c8"
+    },
+    {
+      "claim_id": "590b25c5-5442-465c-9d33-a8f6575e284e",
+      "result_id": "09a41a6a-1c5a-43b0-8072-ddd1d3b7c8c8"
+    },
+    {
+      "claim_id": "34bbca83-b95b-4759-8977-4beec3f84e9e",
+      "result_id": "09a41a6a-1c5a-43b0-8072-ddd1d3b7c8c8"
+    },
+    {
+      "claim_id": "b02f859a-e944-44aa-8a29-fbbbe902c43e",
+      "result_id": "09a41a6a-1c5a-43b0-8072-ddd1d3b7c8c8"
+    },
+    {
+      "claim_id": "d02f1186-7b1f-464f-b42b-dc3059793e85",
+      "result_id": "09a41a6a-1c5a-43b0-8072-ddd1d3b7c8c8"
+    },
+    {
+      "claim_id": "4e0ecfee-4072-4d86-9479-979e4486d8a2",
+      "result_id": "09a41a6a-1c5a-43b0-8072-ddd1d3b7c8c8"
+    },
+    {
+      "claim_id": "0b1d321d-11ff-4511-9454-47480a65dcac",
+      "result_id": "33dad42e-3f02-4acd-a215-c3cd7b15df6e"
+    },
+    {
+      "claim_id": "99ef5d6e-f523-48ba-bbef-c5f9e872b511",
+      "result_id": "33dad42e-3f02-4acd-a215-c3cd7b15df6e"
+    },
+    {
+      "claim_id": "0b413e2b-d251-46af-affd-fdc0dd095a35",
+      "result_id": "33dad42e-3f02-4acd-a215-c3cd7b15df6e"
+    },
+    {
+      "claim_id": "efe26356-f4d5-4fd7-b943-0c1b603d6118",
+      "result_id": "33dad42e-3f02-4acd-a215-c3cd7b15df6e"
+    },
+    {
+      "claim_id": "c60ff30c-6733-41da-85cd-25bc78901042",
+      "result_id": "33dad42e-3f02-4acd-a215-c3cd7b15df6e"
+    },
+    {
+      "claim_id": "f46b9eb3-f519-43bc-b4b5-de00b4438cb9",
+      "result_id": "806c0a5b-990b-4306-9d19-e6a64bc5d9e2"
+    },
+    {
+      "claim_id": "268d5fca-46ad-427e-acfc-c748028f1dd5",
+      "result_id": "806c0a5b-990b-4306-9d19-e6a64bc5d9e2"
+    },
+    {
+      "claim_id": "74378def-b46f-49ee-b9e8-baac9c563a9d",
+      "result_id": "806c0a5b-990b-4306-9d19-e6a64bc5d9e2"
+    },
+    {
+      "claim_id": "955350b4-adf4-4181-89d3-b6c300507a3a",
+      "result_id": "806c0a5b-990b-4306-9d19-e6a64bc5d9e2"
+    },
+    {
+      "claim_id": "ec10cfd6-8444-4c96-b792-062b09dff9a3",
+      "result_id": "806c0a5b-990b-4306-9d19-e6a64bc5d9e2"
+    },
+    {
+      "claim_id": "7c25d646-d0dd-418f-b945-2e7ae1681aed",
+      "result_id": "806c0a5b-990b-4306-9d19-e6a64bc5d9e2"
+    },
+    {
+      "claim_id": "f994c0e2-f610-48ef-84c4-4845558e264f",
+      "result_id": "3cd6d0ea-01b4-4b22-9e76-8a829a3d0b68"
+    },
+    {
+      "claim_id": "b73f6705-c5d4-4050-a0db-d8328ed27b3b",
+      "result_id": "3cd6d0ea-01b4-4b22-9e76-8a829a3d0b68"
+    },
+    {
+      "claim_id": "bd7fb519-f926-4923-8ab9-c521cd7bdee9",
+      "result_id": "593ed5c7-33df-410a-a2b7-d4ad471b46c2"
+    },
+    {
+      "claim_id": "9d8e42cc-3314-484d-9dc6-43a587fc1c90",
+      "result_id": "593ed5c7-33df-410a-a2b7-d4ad471b46c2"
+    },
+    {
+      "claim_id": "b02ecf2b-5d7c-4dc6-b1d6-cde3eceab268",
+      "result_id": "593ed5c7-33df-410a-a2b7-d4ad471b46c2"
+    },
+    {
+      "claim_id": "41e902b9-27d3-4b9c-b45b-f1757ecc215b",
+      "result_id": "593ed5c7-33df-410a-a2b7-d4ad471b46c2"
+    },
+    {
+      "claim_id": "03b5cbe2-ce4b-4188-b206-57ae5a6bbfb4",
+      "result_id": "593ed5c7-33df-410a-a2b7-d4ad471b46c2"
+    },
+    {
+      "claim_id": "3f474d76-209c-4722-ae9b-cc04d049e2e2",
+      "result_id": "593ed5c7-33df-410a-a2b7-d4ad471b46c2"
+    },
+    {
+      "claim_id": "2e5c1fa1-d061-415e-9b24-4c06b57b9ba0",
+      "result_id": "593ed5c7-33df-410a-a2b7-d4ad471b46c2"
+    },
+    {
+      "claim_id": "d467737a-6f47-4116-a8b4-2607c13145ab",
+      "result_id": "593ed5c7-33df-410a-a2b7-d4ad471b46c2"
+    },
+    {
+      "claim_id": "cf0e1aea-d265-4117-bb35-5b87db2dcd37",
+      "result_id": "593ed5c7-33df-410a-a2b7-d4ad471b46c2"
+    },
+    {
+      "claim_id": "fa73918f-7b20-446c-a6d1-3455163a03aa",
+      "result_id": "974fb261-e773-422a-a607-45358a313972"
+    },
+    {
+      "claim_id": "74031a57-85ef-473a-a3a7-89ece2eefab2",
+      "result_id": "974fb261-e773-422a-a607-45358a313972"
+    },
+    {
+      "claim_id": "9579ba79-cbc6-49e9-a59f-bf61485d15db",
+      "result_id": "adcef7d6-9ab8-4b1b-b9b3-771e14ecbcca"
+    },
+    {
+      "claim_id": "11367201-eb24-4083-9363-6256c09f33b0",
+      "result_id": "adcef7d6-9ab8-4b1b-b9b3-771e14ecbcca"
+    },
+    {
+      "claim_id": "3933a72b-6e1e-49f0-a404-87bb866b56f0",
+      "result_id": "adcef7d6-9ab8-4b1b-b9b3-771e14ecbcca"
+    },
+    {
+      "claim_id": "ee23c453-4cfe-48f4-b898-c45c3efca520",
+      "result_id": "adcef7d6-9ab8-4b1b-b9b3-771e14ecbcca"
+    },
+    {
+      "claim_id": "08190803-03a5-42c8-a6be-b1a0bccf86cc",
+      "result_id": "994f002c-8a14-44d9-a5a5-f60878e0894a"
+    },
+    {
+      "claim_id": "5e1026aa-085d-48a0-af14-834897a32462",
+      "result_id": "994f002c-8a14-44d9-a5a5-f60878e0894a"
+    },
+    {
+      "claim_id": "32795399-bf53-44d4-be61-ef458e8e1b53",
+      "result_id": "228096a1-8f13-4f8f-9982-f8a363185ad1"
+    },
+    {
+      "claim_id": "94b5d618-aa87-4735-99ec-1fb7949fc827",
+      "result_id": "228096a1-8f13-4f8f-9982-f8a363185ad1"
+    },
+    {
+      "claim_id": "c2e2c25c-6546-47d2-9ec5-cc8ed1c943f2",
+      "result_id": "228096a1-8f13-4f8f-9982-f8a363185ad1"
+    },
+    {
+      "claim_id": "fc7f948b-3f19-4905-9c44-25057c807280",
+      "result_id": "2c647293-f12e-4405-aa03-9eb6b9f09b20"
+    },
+    {
+      "claim_id": "1787554c-fd3e-4f6f-b7b5-bb483c146f43",
+      "result_id": "31ffb5ab-a37e-4c47-91e2-5450319638d6"
+    },
+    {
+      "claim_id": "1e46118e-35e8-4bbe-b190-19a459ca38db",
+      "result_id": "31ffb5ab-a37e-4c47-91e2-5450319638d6"
+    },
+    {
+      "claim_id": "77d0f667-c967-49cb-9420-0d8883872521",
+      "result_id": "31ffb5ab-a37e-4c47-91e2-5450319638d6"
+    },
+    {
+      "claim_id": "684706c8-dd75-4be9-bf99-89cd54dd9a24",
+      "result_id": "31ffb5ab-a37e-4c47-91e2-5450319638d6"
+    },
+    {
+      "claim_id": "f1e107ee-d74f-42db-89b0-5c05a4be9391",
+      "result_id": "31ffb5ab-a37e-4c47-91e2-5450319638d6"
+    },
+    {
+      "claim_id": "e56f2bc2-c4c1-421a-afa6-de02efd46ffc",
+      "result_id": "31ffb5ab-a37e-4c47-91e2-5450319638d6"
+    },
+    {
+      "claim_id": "9b6fe0ab-ef6a-4d48-aea1-356247be7ce0",
+      "result_id": "31ffb5ab-a37e-4c47-91e2-5450319638d6"
+    },
+    {
+      "claim_id": "8e0a62bd-4b07-4237-ac6e-f12a577621a7",
+      "result_id": "31ffb5ab-a37e-4c47-91e2-5450319638d6"
+    },
+    {
+      "claim_id": "ae8ca77c-d1b5-49df-9ebf-a0c5e12d070e",
+      "result_id": "31ffb5ab-a37e-4c47-91e2-5450319638d6"
+    },
+    {
+      "claim_id": "55a3817b-5c10-43b0-93b9-be272bed6364",
+      "result_id": "31ffb5ab-a37e-4c47-91e2-5450319638d6"
+    },
+    {
+      "claim_id": "8b9ab5dd-2a7e-4f7b-b07f-1759b635e7a5",
+      "result_id": "31ffb5ab-a37e-4c47-91e2-5450319638d6"
+    },
+    {
+      "claim_id": "b22b1270-7513-49ae-bf5a-7c0d8f4fd015",
+      "result_id": "31ffb5ab-a37e-4c47-91e2-5450319638d6"
+    },
+    {
+      "claim_id": "f87568ba-fae2-4cb5-b84f-12f24fa39612",
+      "result_id": "31ffb5ab-a37e-4c47-91e2-5450319638d6"
+    },
+    {
+      "claim_id": "448393c1-6219-45d7-bee5-1293b7360506",
+      "result_id": "31ffb5ab-a37e-4c47-91e2-5450319638d6"
+    },
+    {
+      "claim_id": "b82fb374-4a5f-47f6-baa8-0018a26f4432",
+      "result_id": "31ffb5ab-a37e-4c47-91e2-5450319638d6"
+    },
+    {
+      "claim_id": "f644045e-0595-4d06-966b-38f36438bfda",
+      "result_id": "31ffb5ab-a37e-4c47-91e2-5450319638d6"
+    },
+    {
+      "claim_id": "7f8b4988-7197-4bc7-8de5-59b885835e48",
+      "result_id": "31ffb5ab-a37e-4c47-91e2-5450319638d6"
+    },
+    {
+      "claim_id": "b9b8cdb5-39f6-4d49-87eb-670f4d4a5d88",
+      "result_id": "31ffb5ab-a37e-4c47-91e2-5450319638d6"
+    },
+    {
+      "claim_id": "37b76b88-ed76-4fcc-8305-16888076f8f6",
+      "result_id": "31ffb5ab-a37e-4c47-91e2-5450319638d6"
+    },
+    {
+      "claim_id": "9d1ee3c1-e7ce-4b1f-811e-a1fef152b60a",
+      "result_id": "31ffb5ab-a37e-4c47-91e2-5450319638d6"
+    },
+    {
+      "claim_id": "d3e43c42-a9d0-44e0-b732-174ed097ca70",
+      "result_id": "31ffb5ab-a37e-4c47-91e2-5450319638d6"
+    },
+    {
+      "claim_id": "d9489c81-2948-4dea-83b5-2e79b2992bb0",
+      "result_id": "d9c0b55a-256f-46f3-84e4-f05fddefff62"
+    },
+    {
+      "claim_id": "0dccb595-8881-4a97-9008-0d8aa4baed23",
+      "result_id": "d9c0b55a-256f-46f3-84e4-f05fddefff62"
+    },
+    {
+      "claim_id": "1760782a-7958-4553-b59f-57c70de15e0f",
+      "result_id": "d9c0b55a-256f-46f3-84e4-f05fddefff62"
+    },
+    {
+      "claim_id": "f4f11dbc-8938-4c75-b3e5-1aa735a6dfb4",
+      "result_id": "00da5dfc-d79f-4ae1-912b-a8cba1240744"
+    },
+    {
+      "claim_id": "1517f335-81bf-4b4f-a34f-deaf4880dbe3",
+      "result_id": "00da5dfc-d79f-4ae1-912b-a8cba1240744"
+    },
+    {
+      "claim_id": "373ceca9-4147-4cf8-aa6c-3975e37f91f3",
+      "result_id": "00da5dfc-d79f-4ae1-912b-a8cba1240744"
+    },
+    {
+      "claim_id": "dd477531-5bae-4f7a-ba1c-151c57f32354",
+      "result_id": "14a5aa2f-8624-4ded-a21a-885bbd23c45f"
+    }
+  ],
+  "comparisons": []
+}

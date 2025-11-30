@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C82",
+      "C84",
+      "C107"
+    ],
+    "result": "EBNA2 binds to multiple upstream and downstream MYC enhancers (including super-enhancers at -556, -428, and -186/168 kb) and induces directional chromatin reorganization, increasing upstream enhancer-promoter interactions while decreasing downstream interactions. This reorganization involves CTCF-mediated looping that excludes specific regions from the enhancer hub.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C31 are well-supported by converging evidence from ChIP-seq (C20-C22), 4C-seq (C25-C26, C28), 3C validation (C27, C29, C31), and Capture Hi-C (C82). The CTCF looping mechanism (C30-C31, C84) is supported by both interaction data and ChIP-seq for CTCF/cohesin components. The use of the conditional ER-EBNA2 system provides appropriate controls, and the directional nature of reorganization is clearly demonstrated through subtraction analysis (Figure 1F). Replication in multiple cell lines (GM12878, Mutu III, ER-EB 2.5) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C88",
+      "C97",
+      "C103",
+      "C104",
+      "C108",
+      "C109"
+    ],
+    "result": "EBNA2 recruits the BRG1 chromatin remodeling ATPase to MYC enhancers, increasing H3K27ac levels and BRG1 binding at key upstream enhancers (-556 SE and -186/168 kb). BRG1 is required for maintaining upstream enhancer-promoter interactions in EBV-infected cells, as demonstrated by siRNA knockdown experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 are supported by ChIP-QPCR data showing EBNA2-dependent increases in H3K27ac (7-fold at promoter, 16-fold at -556 SE) and BRG1 binding, followed by functional validation via siRNA knockdown demonstrating loss of enhancer-promoter interactions. The mechanistic link to EBNA2's known interaction with BRG1 (C39, citing Wu et al., 1996) provides biological plausibility. However, the model claims (C103-C104) about cell-type specificity of BRG1 dependence are somewhat speculative, extrapolating from comparison with AML data. The negative result for +1.8 Mb interactions (C89) is appropriately noted but weakens the comprehensiveness of the BRG1 requirement claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C85",
+      "C86",
+      "C87",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "EBV infection of primary na\u00efve B cells reconfigures MYC chromatin architecture in a manner distinct from physiological B-cell activation by CD40L/IL-4. EBV infection increases upstream enhancer interactions (consistent with EBNA2 effects in cell lines), while CD40L/IL-4 stimulation increases downstream interactions, particularly in the +235 to +432 kb region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by 4C-seq data from primary B cells at 48 hr post-infection/stimulation, showing opposite directional effects of EBV vs. CD40L/IL-4 on enhancer-promoter interactions. The timing (48 hr) was validated by RT-QPCR showing maximal MYC induction (C32). The specificity of EBV-induced changes is convincingly demonstrated by direct comparison (Figure 3G). However, the study examines only a single time point, and the biological significance of the distinct interaction patterns for cell fate decisions could be explored further. The baseline interactions in resting cells (C94) provide important context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C93",
+      "C98",
+      "C110"
+    ],
+    "result": "EBNA3A and EBNA3C (but not EBNA3B) bind to long-range enhancers at the BCL2L11 locus, including three upstream sites within ACOXL and three downstream sites. In uninfected cells, these enhancers form an active hub interacting with the BCL2L11 promoter. EBV infection with wild-type or EBNA3B-KO virus disrupts all enhancer-promoter interactions, while EBNA3A-KO or EBNA3C-KO viruses preserve these interactions, demonstrating cooperative repression by EBNA3A and EBNA3C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C49 are well-supported by ChIP-seq identifying EBNA3 binding sites (C41-C43), database predictions of super-enhancer function (C44-C45), ChIP-QPCR confirming EBNA3A/3C-specific binding (C46, C93), and 3C analysis in the BL31 knockout virus series (C47-C49). The genetic dissection using knockout viruses provides strong evidence for the cooperative requirement of EBNA3A and EBNA3C. The correlation between BCL2L11 expression status and enhancer-promoter interaction patterns is consistent across all cell lines tested. Control regions showing no interactions (C90, Figure 5\u2014figure supplement 2) strengthen specificity claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C70",
+      "C71",
+      "C99",
+      "C100",
+      "C111"
+    ],
+    "result": "EBNA3A/3C-mediated BCL2L11 repression involves recruitment of the H3K27 methyltransferase EZH2 to both the BCL2L11 promoter and long-range enhancers, with broad H3K27me3 domains encompassing ACOXL and BCL2L11. Inhibition of EZH1/2 with UNC1999 reverses enhancer inactivation, restoring enhancer-promoter interactions, upregulating BCL2L11 expression (3.6-5.4-fold), and inducing apoptosis in EBV-infected cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are supported by ChIP-QPCR showing EZH2 binding (C50-C51), H3K27me3 ChIP-seq data (C70-C71), RT-QPCR showing BCL2L11 upregulation with UNC1999 treatment (C52), Caspase 3/7 assays demonstrating apoptosis (C53), and 3C showing restored enhancer-promoter interactions (C54). The dose-response with UNC1999 (5-10 \u00b5M) and time-course (8-18 hr) are appropriate. The differential response between EBV-infected (3.6-5.4-fold increase) and uninfected cells (1.8-2.7-fold increase) (C91-C92) demonstrates EBV-specific repression. However, the mechanism of EZH2 recruitment by EBNA3A/3C remains unclear, as noted in the discussion (C105), limiting mechanistic understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C83",
+      "C101"
+    ],
+    "result": "EBV manipulates MYC enhancer function through directional remodeling of enhancer-promoter interactions over 3 Mb, creating an enhancer interaction landscape distinct from leukemia cells where downstream enhancers (+1.8/1.9 Mb) dominate MYC control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are summary statements supported by the collective data from Results 1-3. The comparison with leukemia cells (C56, C83) is supported by citations to published Capture Hi-C data from CD34+ cells and AML cells (Herranz et al., 2014; Shi et al., 2013) and direct visualization in Figure 1G-H. The cell-type specificity of enhancer usage is a well-established concept, and the data clearly show that EBV-infected B cells preferentially use upstream enhancers while CD34+ and leukemic cells use downstream enhancers. This represents a valid comparative analysis strengthening the biological significance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C74",
+      "C75",
+      "C80",
+      "C81",
+      "C102",
+      "C106"
+    ],
+    "result": "EBV-positive endemic Burkitt's lymphoma (eBL) MYC-IG translocation breakpoints map to the vicinity of the EBNA2-activated -186/168 kb enhancer region, distinct from sporadic BL breakpoints near the promoter. The authors propose that EBNA2-driven activation and chromatin remodeling of upstream MYC enhancers may increase susceptibility to AID-mediated translocation events in this region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C59 accurately cite published breakpoint mapping data showing eBL breakpoints cluster upstream of MYC (7 cell lines + 1 biopsy at -215 to -46 kb), near the -186/168 enhancer. The contrast with sporadic BL breakpoints (C75) is well-established. However, the mechanistic proposal (C102, C106) that EBNA2-mediated enhancer activation increases translocation susceptibility is speculative. While the correlation between EBNA2 binding, enhancer activation, and breakpoint location is suggestive, and the role of AID in generating MYC translocations is established (C80-C81), direct evidence linking EBNA2-induced chromatin changes to increased breakpoint frequency is lacking. This would require functional studies showing that EBNA2 activation increases translocation frequency in the -186/168 region, which are not presented. The proposal is biologically plausible but remains a hypothesis requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C66",
+      "C67",
+      "C64"
+    ],
+    "result": "EBNA3C represses ACOXL expression, as demonstrated by increased ACOXL mRNA upon EBNA3C inactivation in a conditional system. ACOXL contains CLL risk loci and is downregulated in prostate cancer, suggesting potential tumor suppressor functions. A distinct murine BCL2L11 enhancer within ACOXL is disrupted in B lymphoblastic leukemia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by RT-PCR data from the EBNA3C-HT conditional system showing ACOXL upregulation upon EBNA3C withdrawal (Figure 5\u2014figure supplement 1). Claims C66-C67 are supported by appropriate citations to GWAS and expression studies. Claim C64 cites a relevant murine study (Wang et al., 2015) showing enhancer disruption in leukemia. However, these observations are somewhat tangential to the main BCL2L11 story and represent exploratory findings. The functional significance of ACOXL repression by EBNA3C and its role in lymphomagenesis remain unclear. The data suggest ACOXL may be a secondary target of the EBNA3C repression machinery, but this is not fully developed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C72",
+      "C73",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Background knowledge claims establishing the context for EBV-associated lymphomas, BL characteristics, EBV latent gene expression, EBNA protein functions, and the importance of MYC and BCL2L11 in lymphomagenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C19 and C60-C63, C72-C73, C76-C79 represent established knowledge supported by appropriate citations to the literature. These provide essential context for interpreting the experimental findings. The citations appear accurate and relevant, covering EBV biology, BL genetics, EBNA protein functions, and the roles of MYC and BCL2L11 in cancer. These are not novel findings but rather necessary background establishing the biological significance of the experimental work. The claim about PRC recruitment timing (C79) is particularly important for interpreting the BCL2L11 repression mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C105"
+    ],
+    "result": "Mechanistic interpretations about BRG1 function in AML cells and the temporal sequence of PRC recruitment in EBNA3-mediated repression, based on published studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 accurately cites published work (Shi et al., 2013) showing BRG1 requirement for +1.8 Mb enhancer function in AML. Claim C105 is a speculative interpretation based on published time-course studies (Harth-Hertle et al., 2013; Kalchschmidt et al., 2016b) suggesting PRC recruitment is secondary to loss of active chromatin marks. These claims provide important mechanistic context for interpreting the current findings but do not represent new experimental results from this study. The speculation in C105 is appropriately qualified and acknowledges uncertainty about the mechanism of PRC recruitment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "Summary claim that EBV drives lymphomagenesis by hijacking long-range enhancer hubs and specific cellular co-factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 is a high-level summary statement that accurately captures the main findings of the manuscript. It is supported by the collective evidence showing EBNA2-mediated MYC enhancer activation via BRG1 recruitment (Results 1-2) and EBNA3A/3C-mediated BCL2L11 enhancer inactivation via EZH2 recruitment (Results 4-5). The term 'hijacking' appropriately conveys that EBV co-opts normal cellular regulatory mechanisms. This represents a valid synthesis of the experimental findings into a coherent model of EBV-driven lymphomagenesis.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,243 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C9",
+      "C10",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The authors developed a method to engineer ligand-binding domains (LBDs) to be conditionally stable through mutagenesis. DIG0-GFP and PRO0-GFP fusions initially showed little ligand-dependent response, but after error-prone PCR mutagenesis and FACS sorting, variants with >5-fold activation were isolated. Mutations were found at dimer interfaces for DIG0 and throughout PRO0, with some mutations being additive and others contributing to sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20 provide converging experimental evidence from mutagenesis, FACS sorting, and structural analysis showing that conditionally destabilizing mutations can be introduced into LBDs to create ligand-dependent biosensors. The data in Figures 1b-d and supplementary figures support the isolation of functional variants and characterization of mutation locations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "TF-biosensors (transcription factor fusions) were engineered by combining LBDs with DNA-binding domains and transcriptional activation domains. Optimization through promoter/TAD selection and identification of Gal4 interface mutations (L77F, R60S) yielded biosensors with up to 60-fold activation, 10-fold improvement over LBD-biosensors alone. These showed rapid activation kinetics (5-fold in 1 hr, full activation ~14 hr) and reversibility (half-max ~5 hr after ligand withdrawal).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 are well-supported by dose-response, time-course, and optimization data shown in Figure 2 and supplements. The systematic optimization and kinetic characterization provide strong evidence for the improved performance of TF-biosensors over simple LBD-fluorescent protein fusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The biosensor system is modular and tunable. Different DNA-binding domains (LexA vs Gal4), transcriptional activation domains (VP16 vs B42), reporters (yEGFP vs HIS3), degrons (Mat\u03b12), and host strain modifications (PDR5 deletion) can be combined to optimize biosensor performance for different applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 demonstrate modularity through systematic component swapping experiments shown in Figure 3. Each modification is tested experimentally with appropriate controls, showing that the biosensor architecture is flexible and can be tuned for specific applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C5"
+    ],
+    "result": "The progesterone biosensor GL77F-PRO1-V was used to improve biotransformation of pregnenolone to progesterone in yeast. The biosensor showed high selectivity for progesterone over pregnenolone and was used to detect progesterone production from 3\u03b2-HSD expression. Through directed evolution using the biosensor-coupled selection, two 3\u03b2-HSD mutants (N139D and F67Y) were isolated that produced 2-fold more progesterone than wild-type enzyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 and C5 are supported by specificity data (Figure 4a-b), detection experiments (Figure 4d), and GC/MS validation (Figure 4f). The biosensor successfully enabled a metabolic engineering application with quantitative improvement in product titer, though the 2-fold improvement is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C58",
+      "C59"
+    ],
+    "result": "Biosensors developed in yeast were directly portable to mammalian K562 cells without codon optimization. Mammalian cells showed greater sensitivity to digoxin (up to 100 nM) than progesterone (1 mM), with the most sensitive progesterone biosensor (GL77F-PRO1-V) showing >100-fold activation. Dynamic range was greater in mammalian cells than yeast, possibly due to differences in cell size, doubling time, or protein degradation machinery. Activation kinetics showed 4-fold increase within 4 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39, C58-C59 are supported by dose-response and time-course data in mammalian cells (Figure 5a-d). The portability is demonstrated experimentally, though the mechanistic explanation for improved dynamic range (C38, C59) remains speculative. The lack of codon optimization yet retention of function is notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C6",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Biosensor-Cas9 fusions were created to enable small molecule-controlled genome editing in mammalian cells. DIG3-Cas9 and PRO1-Cas9 fusions showed tight control with ~18-fold increase in GFP-positive cells upon digoxigenin addition compared to mock control. This approach could reduce off-target editing and provide safer control for gene therapy applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 and C62 are supported by the CRISPR editing data in Figure 5e showing ligand-dependent activation. However, the claim about reducing off-target editing (C63) is speculative and not directly tested. The 18-fold induction demonstrates proof-of-concept but lacks comprehensive characterization of editing specificity or off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C64"
+    ],
+    "result": "Biosensors were functional in transgenic Arabidopsis plants. The G-DIG1-V biosensor with Mat\u03b12 degron and VP16 TAD showed 30-50-fold induction of luciferase after 42 hr in digoxin-treated plants. Both digoxin and digoxigenin activated the biosensor, with dose-dependent responses observed across multiple independent T1 lines. Ligand-dependent activation was observed in all examined cells, tissues, and organs, with specificity paralleling that in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 and C64 are supported by luciferase imaging data in Figure 6 and supplements. Multiple independent lines show consistent responses, dose-dependence is demonstrated, and specificity is confirmed. This represents successful transfer of the biosensor technology to a multicellular plant system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The mechanism of conditional stability involves allosteric coupling between ligand binding and dimer formation. Mutations at dimer interfaces of both DIG0 LBD and Gal4 confer conditional stability, with computational modeling showing that homodimeric fusion formation is geometrically possible. The DIG0 scaffold derives from the nuclear transport factor 2 family with large dimer interfaces (~1200 \u00c5\u00b2) and binding sites (~600 \u00c5\u00b2). Interface mutations from DIG0/Gal4 transfer to progesterone biosensors, suggesting a general mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 integrate structural observations, computational modeling (C49, C70-C71), and cross-reactivity data (C23, C55) to propose a mechanistic model. The model is well-supported by the pattern of mutations and their transferability, though direct biophysical measurements of dimer stability or allosteric coupling are not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C12",
+      "C13"
+    ],
+    "result": "Biosensors for digoxin and progesterone were developed from computationally-designed binding proteins. DIG0 binds digoxin/digoxigenin with picomolar affinity, while PRO0 (containing three rational mutations) binds progesterone with nanomolar affinity. These biosensors activate transcription with dynamic ranges up to ~100-fold across yeast, mammalian, and plant cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C12-C13 are supported by the overall experimental results across all three organisms. The binding affinities are cited from prior work (Tinberg et al., 2013), and the dynamic ranges are demonstrated experimentally throughout the manuscript, with the highest values observed in mammalian cells (C37).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "The generality of the biosensor approach arises from the universality of transcriptional activation and protein degradation machinery across eukaryotes, combined with the modularity and tunability of the constituent parts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by the successful demonstration of biosensor function across yeast, mammalian cells, and plants with minimal modifications. The mechanistic explanation invoking conserved eukaryotic machinery is reasonable given the experimental results, though it remains somewhat inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C11",
+      "C15",
+      "C56",
+      "C57"
+    ],
+    "result": "Current biosensor methods have limitations including coupling to single output signals, limited repertoires of binding domains, and requirements for high selectivity against intermediates in metabolic engineering applications. Natural LBDs can be engineered to be conditionally stable through mutagenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C11, C15, C56-C57 describe the state of the field and are supported by appropriate citations to prior work. These claims provide context for the current study and are generally accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The experimental methods included error-prone PCR with mutation rates of 0-7 mutations/kb, three rounds of FACS sorting (collecting top 5% in presence of ligand, lowest 3% in absence, then top 5% again), and computational modeling using Rosetta Remodel showing that homodimeric Gal4-DIG fusion formation is geometrically possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 describe methodological details that are clearly stated in the Materials and Methods section. The mutation rates are quantified by sequencing, FACS parameters are specified, and computational modeling methods are cited appropriately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Progesterone became toxic at concentrations \u2265100 \u03bcM causing substantial cell death. \u03b2-estradiol and hydrocortisone were not soluble in yeast growth media above 25 \u03bcM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 report experimental observations about compound toxicity and solubility that are stated in figure legends. These are important technical limitations for the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The K562 cell line was obtained from ATCC but was not authenticated and not tested for mycoplasma contamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 transparently report the source and quality control status of the cell line used. The lack of authentication and mycoplasma testing is a methodological limitation that could affect reproducibility, though it does not necessarily invalidate the results shown.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Biosensors for small molecules can be used in applications ranging from metabolic engineering to orthogonal control of transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is a general statement about biosensor applications that is supported by the specific applications demonstrated in this manuscript (metabolic engineering in C5, C35; CRISPR control in C6, C41) as well as being general knowledge in the field.",
+    "result_type": "MINOR"
+  }
+]

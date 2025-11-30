@@ -1,0 +1,2067 @@
+{
+  "submission": {
+    "id": "cc078f84-9587-4d18-baa1-bd89d273e785",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:32:55.561454Z",
+    "updated_at": "2025-11-29T21:32:55.561454Z"
+  },
+  "content": [
+    {
+      "id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "submission_id": "cc078f84-9587-4d18-baa1-bd89d273e785",
+      "content_type": "manuscript",
+      "content_text": "# Attenuation of AMPK signaling by ROQUIN promotes T follicular helper cell formation\n\n## Authors\n\n- Roybel R Ramiscal<sup>1</sup> \u2020\n- Ian A Parish<sup>1</sup>\n- Robert S Lee-Young<sup>2</sup>\n- Jeffrey J Babon<sup>3</sup>\n- Julianna Blagih<sup>4</sup>\n- Alvin Pratama<sup>1</sup>\n- Jaime Martin<sup>1</sup>\n- Naomi Hawley<sup>1</sup>\n- Jean Y Cappello<sup>1</sup>\n- Pablo F Nieto<sup>1</sup>\n- Julia I Ellyard<sup>1</sup>\n- Nadia J Kershaw<sup>3</sup>\n- Rebecca A Sweet<sup>1</sup>\n- Christopher C Goodnow<sup>1</sup>\n- Russell G Jones<sup>4</sup>\n- Mark A Febbraio<sup>2</sup>\n- Carola G Vinuesa<sup>1</sup>\n- Vicki Athanasopoulos<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Immunology and Infectious Disease, John Curtin School of Medical Research Australian National University Canberra Australia\n2. Cellular and Molecular Metabolism Laboratory Baker IDI Heart and Diabetes Institute Melbourne Australia\n3. Division of Structural Biology Walter and Eliza Hall Institute of Medical Research Melbourne Australia\n4. Department of Physiology, Goodman Cancer Research Centre McGill University Montreal Canada\n5. Immunology Division Garvan Institute of Medical Research Sydney Australia\n6. Diabetes and Metabolism Division Garvan Institute of Medical Research Sydney Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nT follicular helper cells (Tfh) are critical for the longevity and quality of antibody-mediated protection against infection. Yet few signaling pathways have been identified to be unique solely to Tfh development. ROQUIN is a post-transcriptional repressor of T cells, acting through its ROQ domain to destabilize mRNA targets important for Th1, Th17, and Tfh biology. Here, we report that ROQUIN has a paradoxical function on Tfh differentiation mediated by its RING domain: mice with a T cell-specific deletion of the ROQUIN RING domain have unchanged Th1, Th2, Th17, and Tregs during a T-dependent response but show a profoundly defective antigen-specific Tfh compartment. ROQUIN RING signaling directly antagonized the catalytic \u03b11 subunit of adenosine monophosphate-activated protein kinase (AMPK), a central stress-responsive regulator of cellular metabolism and mTOR signaling, which is known to facilitate T-dependent humoral immunity. We therefore unexpectedly uncover a ROQUIN\u2013AMPK metabolic signaling nexus essential for selectively promoting Tfh responses.\n\n## Introduction\n\nHigh-affinity and long-lasting humoral immunity against infection requires controlled cross-talk between limiting CD4+CXCR5highPD1highBCL6high T follicular helper (Tfh) cells and immunoglobulin-maturing germinal center (GC) B cells in secondary lymphoid tissues (King et al., 2008; Victora and Nussenzweig, 2012; Nutt and Tarlinton, 2011; Ramiscal and Vinuesa, 2013). As the GC largely consists of clonally diverse B cells, Tfh cells especially in narrow numbers are best at maintaining a selective pressure for B cell competition, favoring the survival of greater affinity antigen-responsive GC B cell clones (Pratama and Vinuesa, 2014; Victora and Mesin, 2014). Deregulation of Tfh cells can lead to faulty GC selection that may also seed the production of autoantibodies (Weinstein et al., 2012; Vinuesa et al., 2005; Kim et al., 2015; Linterman et al., 2009) and GC-derived malignancies such as follicular lymphoma (Rawal et al., 2013; Klein and Dalla-Favera, 2008). To date, the signals that exclusively govern Tfh cell differentiation over other T cell effector subsets remains poorly characterized.\n\nROQUIN (also called ROQUIN1; encoded by Rc3h1) acts to post-transcriptionally repress Tfh cells by binding effector T cell transcripts via its winged-helix ROQ domain (Schuetz et al., 2014; Tan et al., 2014; Schlundt et al., 2014) and recruiting proteins of the RNA decapping and deadenylation machinery (Athanasopoulos et al., 2010; Glasmacher et al., 2010; Leppek et al., 2013; Pratama et al., 2013; Yu et al., 2007; Vogel et al., 2013) as well as the endoribonuclease REGNASE-1 (Jeltsch et al., 2014). Some of its RNA targets include the Tfh-polarising Icos (Glasmacher et al., 2010) and Il6 mRNA (Jeltsch et al., 2014) as well as Ox40 (Vogel et al., 2013) and Tnf (Pratama et al., 2013) transcripts. In sanroque mice, an Rc3h1\u00a0missense point mutation, encoding for a Met199 to Arg substitution translates into a minor conformational shift in the RNA-binding ROQ domain (Srivastava et al., 2015) of ROQUIN and a loss of function in post-transcriptional repression. This leads to excessive Tfh growth and systemic autoimmunity (Linterman et al., 2009; Vinuesa et al., 2005). Complete ablation of ROQUIN results in unexplained perinatal lethality in C57BL/6 mice and selective deletion of ROQUIN in T cells does not lead to Tfh cell accumulation nor autoimmunity (Bertossi et al., 2011). The latter is at least in part explained by the existence of the closely related family member ROQUIN2 (encoded by Rc3h2), which has overlapping functions with ROQUIN (Pratama et al., 2013; Vogel et al., 2013). The ROQUINM199R mutant protein has been proposed to act as a \u2018niche-filling\u2019 variant that has lost its RNA-regulating activity (Pratama et al., 2013) but can still localize to mRNA-regulating cytoplasmic granules to prevent the compensatory activity of ROQUIN2.\n\nROQUIN contains a conserved amino terminal RING finger with two conforming zinc-chelating sites (Srivastava et al., 2015), despite an atypical aspartate as its eighth zinc ligand synonymous to RBX1 (Kamura et al., 1999). This suggests ROQUIN may function as an E3 ubiquitin ligase (Deshaies and Joazeiro, 2009) but, to date, no such enzymatic activity of the ROQUIN RING domain has been demonstrated in mammals. In vivo attempts to delineate the cellular pathways regulated by ROQUIN are made challenging due to the existence of multiple protein domains in the protein (Figure 1\u2014figure supplement 1a). The Caenorhabditis elegans ROQUIN ortholog, RLE-1, acts through its RING domain to ubiquitinate DAF-16, a pro-longevity forkhead box O (FOXO) transcription factor homolog (Li et al., 2007). We did not find any evidence for molecular binding between ROQUIN and the fruitfly or mammalian FOXO orthologs (Drosophila melanogaster FOXO and Mus musculus FOXO1 or FOXO3a; data not shown) and therefore set out to understand the role of ROQUIN RING signaling in CD4+ T cell development and function by generating mice that selectively lack the ROQUIN RING zinc finger.\n\nWe previously demonstrated that ROQUIN RING-deleted T cells in mice 6 days after sheep red blood cell (SRBC) immunization can form normal early Tfh cell responses but fail to promote optimal GC B cell reactions (Pratama et al., 2013). Here, in mice that have developed robust Tfh-dependent GC responses toward SRBC or infected with lymphocytic choriomeningitis virus (LCMV), we identify a novel and unexpected role of the ROQUIN RING domain in selectively promoting mature antigen-specific Tfh cell responses while leaving unaffected the development of other CD4+ effector T cell lineages. ROQUIN directly binds to and limits adenosine monophosphate-activated protein kinase (AMPK), a tumor suppressor and central regulator of T cell glucose uptake and glycolysis (MacIver et al., 2011). Our data indicate that loss of AMPK repression by deletion of the ROQUIN RING domain promotes stress granule persistence. This in turn cripples mTOR activity, otherwise known to play a critical role in driving CD4+ effector T cell expansion (Delgoffe et al., 2009; 2011) and T-dependent antibody responses (Keating et al., 2013; Zhang et al., 2011; Gigoux et al., 2014; De Bruyne et al., 2015).\n\n## Results\n\n### The ROQUIN RING domain selectively controls Tfh cell formation\n\nTo examine the function of the ROQUIN RING domain in vivo, we generated two strains of C57BL/6 mice carrying either a germline deletion (designated ringless; \u2018rin\u2019 allele) or a T cell conditional deletion (Tringless; \u2018Trin\u2019 allele) of exon 2 in the Rc3h1 gene, which encodes the translation START codon and RING finger domain of the ROQUIN protein (Figure 1\u2014figure supplement 1b, c and Pratama et al., 2013). In these mice, skipping of exon 2 resulted in splicing of exon 1 to exon 3 yielding an alternative in-frame Kozak translation initiation site at Met133 (Figure 1\u2014figure supplement 1d, e). This predicted ROQUIN133-1130 protein product specifically lacks the RING domain (Figure 1\u2014figure supplement 1f). Mice homozygous for the rin allele were perinatally lethal (Figure 1\u2014figure supplement 1g\u2013i), precluding T cell studies in intact animals. In contrast, Tringless mice were viable and showed no severe variations in thymic development and output of CD4 single positive T cells (Figure 1\u2014figure supplement 2a\u2013e). There were also no major changes in Th1 cell differentiation in Tringless mice infected with LCMV (Figure 1a), which predominantly yields LY6Chigh Th1 and LY6Clow Tfh virus-specific effector cells (Hale et al., 2013; Marshall et al., 2011). In Tringless animals immunized with SRBCs, the formation of Th1, Th2, Th17, and regulatory T cells also remained largely unperturbed (Figure 1\u2014figure supplement 2f, g). This was mirrored in vitro with Tringless CD4+ naive T cells activated under Th1, Th2, Th17, or induced Treg (iTreg) polarizing conditions (Figure 1\u2014figure supplement 2h) displaying maximal expression of intracellular TBET, GATA3, ROR\u03b3T, and FOXP3 comparable to floxed wild-type T cell cultures (Figure 1\u2014figure supplement 2i). Surprisingly in Tringless mice, there was an overall defective Tfh cell primary response to LCMV infection (Figure 1b\u2013d) and to SBRC immunization (Figure 1\u2014figure supplement 3a). ROQUIN RING-deficient T cells were also inefficient in supporting GC formation (Figure 1e, f and Figure 1\u2014figure supplement 3b), which was associated with reduced IL-21 production (Figure 2a), a Tfh signature cytokine vital in supporting GC reactions (Liu and King, 2013).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/08698/elife-08698-fig1-v2.jpg)\n\n**Figure 1.:** (a-f) Flow cytometric examination of mice d10 post-LCMV infection. (a) Proportion of LY6C+ total Th1 cells from CD4+CD44high T cells. (b) Identification of total Tfh cells pre-gated on CD4+CD44\u2009high T cells. (c) Proportion of PD1highCXCR5high Tfh cells from CD4+CD44high T cells. (d) PD1highCXCR5highCD44\u2009high Tfh cell numbers from spleen. (e) Proportion and (f) cell count of GL7\u2009highFAShigh GC B cells in spleen. Data are pooled from three independent experiments (n = 2\u20133). Statistics were calculated by Student\u2019s t-test, n.s., not significant; *p<0.05; **p<0.005. Dot symbols, individual mice; columns, median.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08698/elife-08698-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Secondary structure of mammalian ROQUIN protein. (b) Generation of ringless or Tringless mice with a deletion of Rc3h1 exon 2 when crossed to Rosa:Cre or Lck:Cre transgenic strains, respectively. White boxes, non-coding exons; black boxes, protein encoding exons; NeoR, Neomycin resistance cassette. (c,d) Deletion of Rc3h1 exon 2 detected in CD4+ T cells by Polymerase chain reaction (PCR; c) and sequencing (d) from cDNA. (e) Alignment of the mammalian Kozak sequence and alternative translational start site at Met133 in Rc3h1ringless. Solid lines, identical; dotted lines, similar. (f) ROQUIN protein map lacking the 14.5 kDa RING finger with translational rescue at Met133. (g,h) Wild-type (left) ringless (right) embryos harvested at E14 (g) and E19 (h) from timed matings between ringless heterozygotes. (i) Embryonic genotyping and litter count from ringless heterozygous intercrosses (n = 100 per time point). Statistics were calculated by Chi-square test, d.f. = 2 (j) Periodic acid-Schiff staining of the thoracic diaphragm from preterm animals taken at E19. Wild-type (left) and ringless (right) are shown. Data are representative of two independent experiments.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08698/elife-08698-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a-e) Flow cytometric assessment of thymocyte development showing proportion of single positive (SP) CD4 and SP CD8 thymocytes (a), total number of SP CD4 thymocytes (b), proportion and count of FOXP3+CD25+ thymic regulatory T cells (tTreg) from SP CD4 thymocytes (c), surface expression TCR\u03b2 on SP CD4 thymocytes (d), and cell number of peripheral CD4+ T cell output in the spleen (e). (f,g) d8 post-sheep red blood cell (SRBC) immunization of mice showing the proportion of IFN\u03b3+ Th1, IL4+ Th2, and IL-17+ Th17 cells (f), and the proportion of FOXP3+CD25+ Tregs (g) from splenic total CD4+ T cells. Data are representative of four independent experiments. (h-i) In vitro CD4+ T cell differentiation assay on naive T cells cultured under Th1, Th2, Th17, or iTreg-polarizing conditions and analyzed d3 by flow cytometry (h) to measure expression of Th cell transcription factors in CD25+CD69+ activated T cells and on FOXP3+ activated T cells for iTreg cultures (i). Statistics were calculated by Student\u2019s t-test, n.s., not significant; Dot symbols, individual mice; columns, median.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/08698/elife-08698-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a-c) Flow cytometric analysis of d8 post-sheep red blood cell (SRBC) immunized mice showing the frequency of PD1highCXCR5high Tfh cells from total CD4+ T cells (a), GL7highFAShigh germinal center (GC) B cells from total B220+ B cells in the spleen (b) compared to phosphate-buffered saline (PBS) injected control animals. Data are representative of four independent experiments. Statistics were calculated by Student\u2019s t-test, *p <0.05; Dot symbols, individual mice; columns, median.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/08698/elife-08698-fig2-v2.jpg)\n\n**Figure 2.:** (a) Flow cytometric analysis of mice 8d after sheep red blood cell (SRBC) immunization showing the proportion of IL-21+CD44high effectors from total CD4+ T cells in the spleen. Data are representative of two independent experiments. (b-i) Flow cytometric examination of mice d10 post-lymphocytic choriomeningitis virus (LCMV) infection. (b) Proportion of IFN\u03b3+ Th1 cells gated from total CD4+ T cells after GP61-80 peptide stimulation ex vivo. (c) Proportion of LY6C+ Th1 cells from virus-specific CD4+GP66-77+ T cells. (d) Identification of virus-specific Tfh cells pre-gated on CD4+GP66-77+ T cells. (e) Proportion of PD1highCXCR5high Tfh cells from virus-specific CD4+GP66-77+ T cells. (f) Virus-specific CD4+PD1highCXCR5highGP66-77+ Tfh cell numbers in spleen. (g) Representative histograms of BCL6 expression in virus-specific CD4+GP66-77+ T cells. Values included show median MFI for each genotype. (h) Proportion of FOXP3+ Tfr cells within the total CD4+CD44highPD1highCXCR5high Tfh gate. (i) Proportion of FOXP3+ Tfr cells within the virus-specific CD4+GP66-77+PD1highCXCR5high Tfh gate. Data are pooled from three independent experiments (n = 2\u20133). Statistics were calculated by Student\u2019s t-test, n.s., not significant; *p<0.05; **p<0.005; Dot symbols, individual mice; columns, median.\n\nBy stimulating splenocytes ex vivo with GP61-80 peptide to identify virus-responsive IFN\u03b3-producing Th1 cells (Figure 2b) and by examining splenic LYC6high Th1 cells amongst GP66-77+ tetramer stained T cells (Figure 2c), we verified that ROQUIN RING loss did not disrupt protective Th1 responses but caused a severe abrogation of virus-specific Tfh cells during LCMV infection (Figure 2d\u2013f). Virus-specific T cells also showed significantly reduced expression of BCL6 (Figure 2g), an indispensible nuclear factor for Tfh cell terminal differentiation (Liu et al., 2013). Furthermore, we found an increased frequency of FOXP3+ T follicular regulatory (Tfr) cells within the total Tfh pool (Figure 2h) despite\u00a0these Tfr cells not expressing a GP66-77 virus-specific T cell antigen receptor (TCR; Figure 2i). Nonetheless, as Tfr cells are negative regulators of GC reactions (Ramiscal and Vinuesa, 2013), their abundance may indicate augmented suppression of Tfh cells and long-term B cell responses.\n\n### ROQUIN undergoes RING-dependent autoubiquitination and directly limits AMPK activity\n\nWe next sought to determine the molecular basis for the ROQUIN RING domain as a determinant in protective Tfh cell responses. Several lines of evidence implicated an involvement of ROQUIN in the negative regulation of AMPK signaling: Rc3h1ringless fetuses displayed skeletal muscle atrophy of the thoracic diaphragm (Figure 1\u2014figure supplement 1j), which is a characteristic phenotype of mice with overactive AMPK (Sanchez et al., 2012) and pointed to perinatal respiratory failure as the cause of the lethality. Also, AMPK over-expression in nematode worms has been shown to extend lifespan (Mair et al., 2011), an observation consistent with the phenotype of worms lacking the ROQUIN ortholog RLE-1 (Li et al., 2007). Since the AMPK\u03b11 catalytic subunit is expressed in T cells and responds to TCR activation (Tamas et al., 2006), we tested the possibility of ROQUIN directly binding to this subunit of AMPK (encoded by Prkaa1). Upon ectopic expression in HEK293T cells, ROQUIN colocalized with AMPK\u03b11 diffusely or in fine cytoplasmic speckles in resting cells and within larger cytoplasmic granules upon induction of oxidative stress (Figure 3a). We also observed colocalization of endogenous AMPK\u03b11 within ROQUIN+ cytoplasmic granules in arsenite-treated primary C57BL/6 mouse embryonic fibroblasts (MEFs) (Figure 3b) with the use of an AMPK\u03b11-specific antibody displaying no cross-reactivity toward the AMPK\u03b12 subunit when ectopically expressed in HEK293T cells (Figure 3\u2014figure supplement 1a). Unlike the AMPK\u03b11 subunit, ectopically expressed AMPK \u03b2 and \u03b3 regulatory subunits did not associate with ROQUIN+ cytoplasmic granules, although AMPK\u03b32 and AMPK\u03b33 exhibited generally diffuse cytoplasmic distribution (Figure 3\u2014figure supplement 1b). We next determined if ROQUIN and AMPK\u03b11 interacted by conducting in situ proximity ligation assays (PLAs) on primary C57BL/6 MEFs. Compared to control PLAs accounting for false interactions between endogenous AMPK\u03b11 and non-expressed green fluorescent protein (GFP) detected by optimized anti-GFP immunostaining (Figure 3\u2014figure supplement 1c), we found that endogenously expressed ROQUIN and AMPK\u03b11 proteins localized with very close molecular proximity in both resting and arsenite-stressed cells (Figure 3c, d) at a frequency 15-fold higher or more than weak PLA interactions previously observed between ROQUIN and AGO2 (Srivastava et al., 2015). Moreover, we were able to coimmunoprecipitate ROQUIN and AMPK\u03b11 when over-expressed in HEK293T cells (Figure 3\u2014figure supplement 1d) or expressed endogenously in the mouse T lymphoblast line EL4 cells (Figure 3e). Together with the PLAs, this indicated that ROQUIN bound specifically with the \u03b11 subunit of AMPK and that under physiological conditions, the two proteins could form a stable complex.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/08698/elife-08698-fig3-v2.jpg)\n\n**Figure 3.:** (a) Colocalization of V5-ROQUIN and AMPK\u03b11-GFP ectopically expressed in resting (top) and 1 mM arsenite (AS)-treated (bottom) HEK293T cells. Representative of three independent experiments. (b) Colocalization of endogenous ROQUIN and AMPK\u03b11 in primary (mouse embryonic fibroblasts) MEFs post-arsenite (AS) treatment. Representative of three independent experiments. (c) Proximity ligation assays (PLAs) performed on primary C57BL/6 MEFs showing interactions between endogenously expressed ROQUIN and AMPK\u03b11 in resting cells (ROQUIN:AMPK\u03b11) and in cells stressed with 1 mM arsenite (+AS, ROQUIN:AMPK\u03b11). Negative control PLAs (GFP:AMPK\u03b11) detecting non-expressed GFP and endogenous AMPK\u03b11 background are also displayed. Blue, DAPI stained nuclei; Red, ligation events, Scale bar, 20 \u03bcm. Representative of three independent experiments. (d) Quantitative analysis of PLAs showing mean ligation events per cell (nucleus) for each field of view on a confocal microscope. Individual dots represent a single field of view; bar per column represents the sample mean. Statistics were calculated by one-way ANOVA with Bonferroni\u2019s multiple comparisons test after log transformation of ratio values, n.s., not significant; ***p<0.0005. (e) Reciprocal coimmunoprecipitation of ROQUIN and AMPK\u03b11 endogenously expressed in EL4 cells. IB, immunoblot; IP, immunoprecipitated.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08698/elife-08698-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Detection of AMPK\u03b11 by immunostaining primary MEFs (as shown in main Figure 3b) was achieved using an \u03b11 isoform-specific immunofluorescence-grade antibody exhibiting no cross-reactivity with AMPK\u03b12-GFP expressed in HEK293T cells. (b) Protein localization of V5-ROQUIN and carboxy terminal GFP fusion constructs of AMPK regulatory subunits ectopically expressed in HEK293T cells and analyzed by immunofluorescence microscopy. Data are representative of two independent experiments. (c) Detection of negative control PLAs (GFP:AMPK\u03b11; as shown in main Figure 3c) was achieved using anti-GFP antibody titrated by immunostaining transfected HEK293T cells expressing AMPK\u03b11-GFP fusion protein. Blue, DAPI-stained nuclei; Red, anti-GFP stain; Green, anti-AMPK\u03b11 stain; Scale bar, 50 \u03bcm. (d) Reciprocal coimmunoprecipitation of V5-ROQUIN and AMPK\u03b11-GFP over-expressed in HEK293T cells. Data are representative of four independent experiments. IB, immunoblot; IP, immunoprecipitated.\n\nTo determine the functional consequence of a ROQUIN\u2013AMPK\u03b11 interaction, we measured AMPK activity in Tringless and wild-type T cells. In contrast to wild-type cells, phosphorylation of the AMPK target, acetyl CoA carboxylase (ACC) in ROQUIN RING-deficient CD4+ T cells was increased, demonstrating constitutively active AMPK activity in vitro (Figure 4a) and in vivo (Figure 4b). Thus, ROQUIN acts through its RING domain to directly negatively regulate AMPK\u03b11 activity in T cells.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/08698/elife-08698-fig4-v2.jpg)\n\n**Figure 4.:** (a) In vitro kinase assay of AMPK\u03b1 in isolated CD4+ T cells during an anti-CD3 and -CD28 activation time-course. Data are pooled from two independent experiments and normalized to unstimulated wild-type (n = 5). Black columns, floxed wild-type; white columns, Tringless. Statistics were calculated by Student\u2019s t-test, *p<0.05. \u2020p <0.05 for wild-type at 10 min vs. wild-type at 0 and 5 min. columns, mean; error bars, s.e.m. (b) Phospho-blot of endogenous ACC Ser79 in resting CD4+ T cells. Representative of three independent experiments. IB, Immunoblot. (c) Ubiquitin immunobDot of endogenous ROQUIN immunoprecipated from EL4 cells (d) Immunoblot of V5-tagged ROQUIN1-1130 and ROQUIN133-1130 in transfected HEK293T cells (left), endogenous ROQUIN in ringless primary MEFs (center), immunoprecipitated ROQUIN in Tringless thymocytes (right). (e) In vitro autoubiquitination assay for ROQUIN wild-type peptide (residues 1\u2013484) and RING finger deleted peptide (residues 145\u2013484). Five consecutive lanes show the extent of ROQUIN autoubiquitination of the same in vitro reaction at 0, 1, 2, 4, and 16 h. (f) Cellular ubiquitination assay for full length V5-ROQUIN and RING-deleted V5-ROQUIN133-1130 ectopically expressed in HEK293T cells with HA-Ub. Data are representative of three independent experiments. IB, immunoblot; IP, immunoprecipitated.\n\nGiven the important role of RING domains in driving protein substrate ubiquitination (Deshaies and Joazeiro, 2009), we next tested if the regulation of AMPK activity by ROQUIN was a result of RING-mediated AMPK ubiquitination. Absence of the ROQUIN RING domain did not alter AMPK ubiquitination (data not shown). However, monoubiquitination of endogenous ROQUIN in EL4 cells was detected (Figure 4c). To determine if ROQUIN monoubiquitination was dependent on the 14.7\u2009kDa RING finger deleted in ROQUIN RING deficient mice (Figure 4d), we tested if ROQUIN could undergo automonoubiquitination in vitro and in a cell-based ubiquitin assay. By Coomassie staining PAGE-separated peptides of in vitro ubiquitination reactions, we detected a single protein band having higher molecular weight relative to ROQUIN peptide that formed in the presence of wild-type ROQUIN1-484 and ubiquitin (Figure 4e). This slowly migrating band, consistent with monoubiquitin attachment, formed at severely delayed times in the absence of the RING zinc finger. A complete absence of this higher molecular weight ROQUIN peptide modification was observed with in vitro reactions lacking ubiquitin protein. We also performed ubiquitination assays in transfected HEK293T cells and detected ubiquitin-conjugated ROQUIN by immunoprecipitation when full-length ROQUIN was over-expressed but not with expression of the ROQUIN133-1130 variant recapitulating the specific RING deletion borne by Tringless T cells (Figure 4f). Together, our data show that the ROQUIN RING domain can facilitate automonoubiquitination independent of residues carboxy terminal to Asp484.\n\nWe next investigated the mechanism by which ROQUIN RING activity limits AMPK signaling. Analogous to RAPTOR inactivation within stress granules (Thedieck et al., 2013; Wippich et al., 2013), we hypothesized that ROQUIN localization and its ability to bind AMPK within stress granules was key to AMPK repression. We have previously shown that ROQUIN133-1130 lacking the RING domain did not coalesce with eIF3+ stress granules (Pratama et al., 2013). To exclude the possibility that this mislocalization of RING-deficient ROQUIN was a product of over-active AMPK feedback, we investigated if AMPK hyperactivity prevented ROQUIN localizing to stress granules. Full length ROQUIN still colocalized with eIF3+ stress granules in the presence of the AMPK agonist, AICAR (Figure 5a), which alone was ineffective at inducing stress granule formation (data not shown). This indicates that ROQUIN133-1130 mislocalization is a direct consequence of an intrinsic lack of the RING domain. To confirm that stress granule exclusion was not a secondary effect of a structurally unstable ROQUIN1-132 deletion but rather a consequence of the loss of RING-mediated E3 ligase activity, a loss-of-function mutation of the first zinc-coordinating cysteine of the RING domain (Cys14Ala; Figure 5b) that typically abolishes E3 ligase activity of related RING-containing enzymes (Fang et al., 2001; 2000) was introduced into HEK293T cells. Although ROQUINC14A ectopic expression could facilitate de novo stress granule induction in the absence of arsenite treatment comparable to cells transfected with wild-type ROQUIN (Athanasopoulos et al., 2010), we found that in response to arsenite exposure, ROQUINC14A localization to eIF3+ stress granules was significantly impaired (Figure 5c). A deleted RING domain did not abrogate ROQUIN133-1130-AMPK\u03b11 colocalization; the two proteins were detected in small aggregates most likely outside of stress granules (Figure 5d). This was consistent with RING deficient ROQUIN133-1130 protein still capable of directly binding AMPK\u03b11 (Figure 5e). Together these findings indicate that ROQUIN RING signaling does not play a role in AMPK recruitment to ROQUIN but rather directs negative regulation of AMPK\u03b11 through sequestration into stress granules following ROQUIN\u2013AMPK\u03b11 complex formation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/08698/elife-08698-fig5-v2.jpg)\n\n**Figure 5.:** (a) Colocalization of over-expressed full length V5-tagged ROQUIN or ROQUIN133-1130 with endogenous eIF3 in HEK293T cells stressed with 1 mM arsenite (AS) for 1 hr with or without 2 mM AICAR. Scale bar, 50 \u03bcm. (b) Crystal structure of ROQUIN peptide showing amino terminal residues 6 to 75 incorporating the RING domain. Black, zinc cation; green, zinc-coordinating residue, red, zinc-coordinating Cys14 targeted for mutagenesis; yellow, zinc-chelating interaction. Data are based on structural coordinates we had previously determined (Srivastava et al., 2015) and deposited in the Protein Data Bank, accession code 4TXA. (c) Colocalization of over-expressed full length GFP-tagged ROQUIN or ROQUINC14A mutant with endogenous eIF3 in HEK293T cells stressed with 1 mM arsenite for 1 hr. (d) Colocalization of ROQUIN133-1130 with AMPK\u03b11 when over-expressed in HEK293T cells immediately after 1 mM arsenite exposure for 1 hr. (e) Reciprocal coimmunoprecipitation of full length ROQUIN or ROQUIN133-1130 and AMPK\u03b11 over-expressed in HEK293T cells. IB, immunoblot; IP, immunoprecipitated.\n\n### ROQUIN RING loss results in stress granule longevity and dampened mTOR\n\nOne possible downstream effector of ROQUIN\u2013AMPK in Tfh cells is the mechanistic Target of Rapamycin (mTOR), a nutrient sensing kinase and modulator of cellular metabolism. AMPK activity directly suppresses mTORC1 signaling (Gwinn et al., 2008; Inoki et al., 2003), and deletion of AMPK\u03b11 increases mTORC1 signaling in T cells (MacIver et al., 2011). Although the role of mTOR in promoting effector CD4+ and CD8+ T cell responses is well documented (Araki et al., 2011; Chi, 2012), mTOR signaling in Tfh cell formation, and therefore antibody responses, is incompletely understood. In this respect, we assessed mTOR function in Tringless CD4+ T cells in response to TCR and CD28 stimulation. In CD4+ T cells, we found a reduction in phosphorylated ribosomal S6 in the absence of ROQUIN RING, indicating diminished mTORC1 function (Figure 6a). This effect was mild in naive CD44low T cells but accentuated in CD44\u2009high cells. Reflecting a role for ROQUIN RING activity during early development, abated mTOR activity was also observed in ROQUIN RING deleted primary MEFs by enhanced phosphorylation of RAPTOR Ser792 (Figure 6b), a target residue for AMPK-mediated inhibition.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/08698/elife-08698-fig6-v2.jpg)\n\n**Figure 6.:** (a) Flow cytometric analysis of phospho-rS6 Ser235/236 in CD44low or CD44high anti-CD3 and anti-CD28 stimulated CD4+ T cells (n = 4\u20136). (b) Phosphoblot of ACC Ser70 and RAPTOR Ser792 in primary mouse embryonic fibroblasts (MEFs) recovered in complete DMEM for 3 hr after 1 hr of 1 mM arsenite treatment (left). Quantitative ratios of phosphorylated RAPTOR to \u03b2-ACTIN input based in phosphoblot MFI readings (right). IB, immunoblot. (c-e) Analysis of stress granule induction in primary MEFs analyzed by fluorescence microscopy after 1 hr of 1 mM arsenite stress treatment showing counts of eIF3+ granules per cell (c), and size of individual eIF3+ granules in freshly arsenite-stressed primary MEFs based on area (d) and maximum feret (e). (f) Proportion of recovering primary MEFs exhibiting cytoplasmic eIF3+ stress granules (SG) after arsenite-mediated stress (n >30 per time point, with each n replicate representing a single field of view displaying 1\u20137 adherent cells). Columns, mean; error bars, s.d. (g) Representative micrographs displaying recovered primary MEFs at 3\u00a0hr post-arsenite stress. Scale bar, 50 \u03bcm. Statistics were calculated by Student\u2019s t-test, n.s., not significant; *p<0.05; ***p<0.0005. Data are representative of three independent double blind experiments. (h) Proportion of primary MEFs with eIF3+ stress granules after 1 hr of 1 mM arsenite treatment comparing wild-type and sanroque MEFs recovering in complete DMEM media. Data are representative of two independent experiments (n >30 per time point, with each n replicate representing a single field of view displaying 1\u20136 adherent cells). Error bars, s.d. Statistics were calculated by Student\u2019s t-test, n.s., not significant.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08698/elife-08698-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a,b) Colocalization of RAPTOR and eIF3+ stress granules in resting (a) and 1 mM arsenite (AS)-stressed (b) primary mouse embryonic fibroblasts derived from C57BL/6 timed matings. Data are representative of three independent experiments.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08698/elife-08698-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (a) Proportion of C57BL/6 primary mouse embryonic fibroblasts (MEFs) showing cytoplasmic eIF3+ stress granules (SG) immediately after cellular exposure to 1 mM arsenite (AS) for 30 min with or without 50 \u03bcM Compound C (CompC). (b) Proportion of primary MEFs with eIF3+ stress granules recovering in complete DMEM media after 1 hr of 1 mM AS treatment comparing cultures with or without 2 mM AICAR added during both AS treatment and recovery period. Data are representative of three independent experiments (n >30 per time point, with each n replicate representing a single field of view displaying 1\u20136 adherent cells). Error bars, s.d. Statistics were calculated by Student\u2019s t-test, ***p<0.0005.\n\nStress granules are AMPK-dependent (Hofmann et al., 2012; Mahboubi et al., 2015) cytoplasmic compartments that sequester and inactivate mTORC1 during cellular stress (Thedieck et al., 2013; Wippich et al., 2013). In primary MEFs, owing to their large cytoplasm and prominent stress granules, we confirmed RAPTOR localization to eIF3+ stress granules in a wild-type and Roquinringless background (Figure 6\u2014figure supplement 1a, b). We also found that arsenite-induced stress granule formation was impeded by AMPK inhibition in MEFs treated with Compound C (Figure 6\u2014figure supplement 2a). Therefore, we sought to determine if diminished mTOR signaling was associated with augmented stress granule formation or maintenance in ROQUIN RING-deficient cells. Analysis of arsenite-stressed primary MEFs by fluorescence microscopy revealed that loss of ROQUIN RING signaling did not alter stress granule induction (Figure 6c\u2013e) but rather prolonged the rate of stress granule dissolution during stress recovery (Figure 6f, g). A similar delay in stress granule recovery was mirrored in primary MEFs in which AMPK activity was raised upon treatment with AICAR (Figure 6\u2014figure supplement 2b). Conversely, in sanroque mutant primary MEFs expressing a ROQUIN variant incapable of regulating target mRNAs, we found that stress granule recovery post-arsenite treatment was comparable to wild-type MEFs (Figure 6h). Together, these data suggest that the selective Tfh cell defect in Tringless mice may be a result of a disrupted ROQUIN\u2013AMPK signaling axis, otherwise important in relieving stress granule inhibition of mTOR. Furthermore, ROQUIN RING-mediated stress granule subversion of mTOR activity appears to be independent of the RNA repressive functions of the ROQUIN ROQ domain.\n\n### mTOR is required for optimal Tfh cell formation\n\nTo determine if attenuated mTOR is associated with defective Tfh cell responses as observed in Tringless animals, we examined chino mice harboring a hypomorphic mutation (chi allele) in the Frap1 gene resulting in an Ile205Ser substitution within the HEAT repeat domain of the mTOR protein (Figure 7a), the region dedicated to binding RAPTOR (Kim et al., 2002). Unlike the in utero lethality observed in mice with complete mTOR deficiency (Gangloff et al., 2004; Murakami et al., 2004), chino is a viable strain that exhibits growth retardation, intact thymocyte development and output but reduced phosphorylation of ribosomal protein S6 in phorbol-12-myristate-13-acetate treated peripheral CD4+ T cells (Daley et al., 2013). We confirmed suboptimal phosphorylation of mTOR targets 4EBP1 and S6K in chino peripheral CD4+ T cells in response to physiological TCR activation with CD28 costimulation (Figure 7b). This was in contrast to significantly elevated FOXP3 expression. Thus, chino-mutant T cells represent a mild deficiency in mTOR signaling reminiscent of a partial loss-of-function in mTOR (Zhang et al., 2011) that exclusively affects extrathymic CD4+ T cell differentiation as seen in conditional T-cell-deleted Frap1 knockout mice (Delgoffe et al., 2009). We immunized chino mice with SRBC, assessed the GC response 5 days later by flow cytometry and found that Tfh cells were severely diminished compared to wild-type controls (Figure 7c). This corresponded with a reduction in the GC B cell response (Figure 7d).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/08698/elife-08698-fig7-v2.jpg)\n\n**Figure 7.:** (a) chino mutation causes a I205S substitution in the mTOR protein. (b) Flow cytometric measurements of intracellular phospho-4EBP1 Thr37/46, phospho-S6K Thr389, and FOXP3 in CD4+ T cells stimulated with anti-CD3 and -CD28 for 30 min (n = 4\u20136). MFI, mean fluorescence intensity; column, group mean, error bars, s.d. (c, d) chino mutants were immunized with sheep red blood cells (SRBC) and taken down 5 days later to analyze the proportion of PD1highCXCR5high Tfh cells from CD4+ T cells (c), and the proportion of GL7highFAShigh GC B cells from B220+ B cells (d) in the spleen. Data are representative of three independent experiments. Statistics were calculated by Student\u2019s t-test, **p<0.005; ***p<0.0005. (e, f) Flow cytometric analysis 50:50 mixed LY5A wild-type:LY5B chino bone marrow chimeras d7 post-SRBC immunization showing the proportion of PD1highCXCR5high Tfh cells (e), and expression of intracellular BCL6 (f) from the LY5A and LY5B CD4+B220\u2212 T cells. Linked dot symbols, congenic cells from same animal; MFI, mean fluorescence intensity. Data are representative of two independent experiments. Statistics were calculated by Paired Student\u2019s t-test between congenically marked cells of the same animal, *p<0.05.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08698/elife-08698-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** The RING zinc finger mediates autoubiquitination of ROQUIN, thereby attenuating its interacting partner AMPK which otherwise facilitates stress granule formation and maintenance, and limits both mTOR signaling and Tfh cell responses. The ROQ domain and its adjacent C3H zinc finger act in synergy to destabilize mRNA targets important in T cell activation. ROQUIN2 shares overlapping mRNA regulatory functions with ROQUIN. Pro-rich, proline rich region; 2xCoil, coiled-coil domain; AMPK, Adenosine monophosphate-activated protein kinase; Tfh cell, T follicular helper cell; mTOR, Mechanistic target of rapamycin.\n\nTo determine if mTOR acts within Tfh cells, we constructed and immunized 50:50 mixed wild-type:chino bone marrow chimeras with SRBC. At d7 post-immunization, we confirmed that the percentages of mTOR mutant PD1\u2009highCXCR5\u2009high Tfh cells were impaired compared to their competing wild-type counterparts in the same mouse (Figure 7e). This was associated with reduced BCL6 expression intrinsic to mTOR mutant CD4+ T cells (Figure 7f). Our data therefore demonstrates that Tfh cells depend on intact intracellular mTOR signaling and that the chino Tfh-intrinsic phenotype closely mimics a defective ROQUIN RING deleted Tfh response. We therefore conclude that not only does mTOR act in the same polarity as the ROQUIN RING domain during Tfh cell development, but since mTOR signaling is a bone fide target of AMPK-directed inhibition (Gwinn et al., 2008; Inoki et al., 2003) in CD4+ T cells (Zheng et al., 2009), it is most likely that mTOR represents a molecular pathway between the ROQUIN\u2013AMPK axis and the control of Tfh responses (Figure 7\u2014figure supplement 1).\n\n### Discussion\n\nThe critical signaling requirements specific to programming Tfh cell differentiation have been under intense investigation in the past decade (King and Sprent, 2012; Rolf et al., 2010). ROQUIN, acting through its ROQ and C3H domains, has previously been identified as a potent post-transcriptional repressor of CD4+ Tfh cells (Glasmacher et al., 2010; Pratama et al., 2013; Vinuesa et al., 2005; Vogel et al., 2013; Yu et al., 2007; Lee et al., 2012) but has also been shown to act similarly in limiting Th1, Th17 cells and CD8+ effector T cells (Bertossi et al., 2011; Jeltsch et al., 2014; Chang et al., 2012; Lee et al., 2012). In the present study, we highlight for the first time the cellular function of the amino terminal ROQUIN RING finger and unexpectedly its importance as a positive immunomodulator of peripheral Tfh cells exclusively. In response to SRBC immunization and also to acute LCMV primary infection, mice lacking the ROQUIN RING domain in T cells failed to optimally form mature Tfh cells that could support a robust GC response. Interestingly, Th1, Th2, Th17, and Treg responses were comparable to wild-type controls in vivo and in vitro, depicting a functional uncoupling between RING signaling and ROQ-C3H activity in ROQUIN. This is consistent with our previous observations of ROQUIN RING-deficient T cells showing minimally altered expression of ICOS, a target of post-transcriptional repression (Pratama et al., 2013). We show at the molecular level, that the RING domain of ROQUIN is required to attenuate AMPK signals. In support of this finding, adenosine metabolism has previously been linked to T-dependent antibody responses in mice with observations that antigen-specific Tfh cells displayed constitutively high surface expression of CD73, an ecto-enzyme that catabolizes extracellular AMP into adenosine (Iyer et al., 2013; Conter et al., 2014). Taken together, it is possible that Tfh cells utilize a purinergic autocrine signaling pathway similarly suggested in Treg cells (Deaglio et al., 2007; Sitkovsky, 2009), whereby CD73-generated adenosine external to Tfh cells is imported through nucleoside transporters for reversion back into cytoplasmic AMP by adenosine kinase, before ROQUIN RING-regulated activation of AMPK. Furthermore, since AMPK is an inhibitor of glycolysis and cellular growth (Hardie et al., 2012; Mihaylova and Shaw, 2011), its activity in Tfh cells could facilitate BCL6 function, especially in transcriptionally dampening CD4+ T cell glycolysis (Oestreich et al., 2014) which is otherwise important for cell growth (Jones and Thompson, 2007). This would form the basis for why Tfh cell numbers are so tightly contained throughout a GC response, acting as a critical limiting factor for controlling the magnitude and clonal diversity of GC reactions (Schwickert et al., 2011; Victora and Nussenzweig, 2012; Rolf et al., 2010). At first glance, it may seem conflicting that ROQUIN RING deficiency results in unrestrained AMPK leading to crippled BCL6 expression and Tfh cell hypocellularity. However, intact ROQUIN RING signaling may be advantageous, if not critical in Tfh responses, possibly acting to secure an intricate maximal threshold of AMPK activity that is key to maintaining narrow Tfh numbers for effective GC clonal selection while allowing ample, but not excessive, Tfh support to GCs.\n\nWe could not find any evidence that ROQUIN E3 ligase activity directly targets AMPK for proteosomal degradation. Instead, impaired autoubiquitination due to the absence of a functional RING domain suggests that ROQUIN E3 ligase activity can negatively regulate AMPK independent of the RNA regulatory functions of ROQUIN. Although AMPK \u03b2 and \u03b3 subunits have been shown to localize to stress granules (Mahboubi et al., 2015), our results demonstrated an inability of the ectopically expressed regulatory subunits to localize with ROQUIN+ stress granules in cells also overexpressing ROQUIN, hinting at the requirement of a different cofactor for their recruitment to stress granules. Given this and the present data demonstrating the ability of ROQUIN and AMPK\u03b11 to bind each other and colocalize within stress granules together with previous observations of stress granule exclusion of RING-deficient ROQUIN (Pratama et al., 2013), we propose a model whereby ROQUIN may be repressing AMPK activity via ubiquitin-dependent sequestration of the AMPK\u03b11 subunit within stress granules and thereby promoting repression of AMPK kinase activity. This stress granule-associated regulation of AMPK may not be exclusive to ROQUIN but could involve other binding partners such as G3BP1, which has been shown to localize with AMPK\u03b12 in stress granules (Mahboubi et al., 2015). Interestingly, a direct interaction has also been observed between AMPK\u03b1 and G3BP1 (Behrends et al., 2010), an integral component of stress granules that associates with ROQUIN (Glasmacher et al., 2010). Analogous to the T cell anergy-regulating RING-type E3 ubiquitin ligases GRAIL and CBL-B that undergo autoubiquitination (Anandasabapathy et al., 2003; Levkowitz et al., 1999) as well as targeting various T cell signaling molecules for RING-mediated ubiquitination (Nurieva et al., 2010; Su et al., 2006; 2009; Lineberry et al., 2008; Fang et al., 2001;\u00a0Fang and Liu, 2001; Jeon et al., 2004), it is likely that ROQUIN also ubiquitinates additional proteins to coordinate Tfh cell immunity.\n\nWe found that ROQUIN RING deficiency results in intact thymic development and low phosphorylation levels of ribosomal S6 in a subset of peripheral CD4+ T cells, which together resembles closely chino mutant mice with impaired mTOR function (Daley et al., 2013). Our data points to overactive AMPK as the link between the loss of ROQUIN RING activity and reduced mTOR signaling. As AMPK activity has been shown to be transiently upregulated within 5\u201320\u2009min of stress induction and to decline after the appearance of stress granules (Mahboubi et al., 2015), it is possible that the subcellular sequestration of AMPK within stress granules may represent a regulatory circuit breaker to interrupt the positive feed-forward loop that acts to shut down mTOR, mRNA translation and cell growth in response to cellular stress, AMPK induction and stress granules formation. Enhanced AMPK-mediated stress granule persistence leading to mTOR repression in the absence of ROQUIN RING signaling aligns well with a report of dampened TOR activity in eukaryotic cells during cellular stress by the transient shuttling of TOR into stress granules (Takahara and Maeda, 2012). In addition, Wippich et al. (2013) also found in HeLa cells having inactivated the stress granule inhibitory kinase DYRK3, that stress granule longevity was the key to prolonging mTOR inhibition.\n\nSince Rc3h1\u00a0appears to be ubiquitously expressed (Vinuesa et al., 2005), it is intriguing that the Tringless allele preferentially affects Tfh cells of the GC and no other CD4+ T cell lineage. We found in ROQUIN RING deleted CD4+ T cells that this may be a result, at least in part, of insufficient IL-21 cytokine production, which is otherwise required for optimal GC reactions and to a lesser degree, Tfh cell maintenance (Zotos et al., 2010; Vogelzang et al., 2008; Linterman et al., 2010). IL-21 deficiency would also explain why a normal Tfh cell response with diminished GC B cells in Tringless mice was detected early at d6 post-SRBC immunization (Pratama et al., 2013), but both mature GC Tfh and B cell populations were crippled at d8 in the current study. Within Tfh cells, ROQUIN RING activity may also be important for transducing stimuli downstream of a GC-specific receptor such as PD1, which is uniquely found most highly expressed on the surface of Tfh cells in humans and mice (Yu and Vinuesa, 2010; Kamphorst and Ahmed, 2013). In CD4+ T cells, ligation of PD1 couples mTOR signals (Francisco et al., 2009) and also restricts cellular glycolysis (Patsoukis et al., 2015; Parry et al., 2005) in a similar manner to AMPK\u03b11 activity (MacIver et al., 2011; Michalek et al., 2011). It remains unclear how ROQUIN RING activity links to Tfh cell environmental stimuli, but there is evidence of ROQUIN phosphorylation by unknown kinases in human T cells (Mayya et al., 2009).\n\nPreviously, we showed that the Rc3h1\u00a0\u2018sanroque\u2019 allele encodes a ROQUINM199R mutant protein with a defective RNA-binding ROQ domain unable to repress ICOS. This, together with excessive IFN\u03b3 signaling causes aberrant accumulation of Tfh cells leading to unrestrained and pathogenic GC growth (Lee et al., 2012; Yu et al., 2007). The accumulation of Tfh cells in sanroque animals opposes the defective Tfh response of Tringless mice. We postulate that ROQUIN133-1130 represents a complete loss of the AMPK-regulating functions with minimal disturbance to the RNA-regulating function. This may explain why the phenotype of mice with a combined deletion of the RING domains found in both ROQUIN and that of its closely related RC3H family member ROQUIN2 (Pratama et al., 2013) is less severe than the immune deregulation of Roquin/Roquin2 double knockout mice (Vogel et al., 2013). We have previously shown that ROQUIN2 can compensate for the RNA-regulating function of ROQUIN, both repressing overlapping mRNA targets (Pratama et al., 2013). By contrast, the sanroque ROQUINM199R mutated protein that can still localize to stress granules and bind RNA (Athanasopoulos et al., 2010) is likely to represent a recessive \u2018niche-filling\u2019 variant that selectively inactivates the normal mRNA-regulating function of ROQUIN but preserves its assembly into the mRNA decapping complex, preventing compensatory substitution by ROQUIN2 (Pratama et al., 2013). It is also likely that ROQUINM199R protein found in sanroque T cells retains RING finger activity to negatively regulate AMPK and promote Tfh cell development, which is compounded by the increased stability of T cell mRNAs that exacerbate Tfh accumulation and trigger autoimmunity. Indeed in mice, T cell AMPK activity has been shown to play a protective role in autoimmune models of rheumatoid arthritis and multiple sclerosis (Nath et al., 2009; Son et al., 2014).\n\nAs a downstream target of AMPK metabolic signaling, mTOR is well known to orchestrate T cell effector differentiation and peripheral tolerance (Chi, 2012; Araki et al., 2011). As such, deregulation of mTOR can facilitate T-dependent autoimmune disorders like systemic lupus erythematosus (Koga et al., 2014; Fernandez et al., 2006; Kato and Perl, 2014) and multiple sclerosis (Delgoffe et al., 2011; Esposito et al., 2010). Although active mTOR signaling in Tfh cells has been documented (Gigoux et al., 2014), the specific role mTOR has in Tfh cell responses remains largely uncharacterized (Araki et al., 2011). Our data indicate that mTOR can act in concert with and downstream of ROQUIN RING signaling to support optimal Tfh cell formation. Susceptible to both ROQUIN-controlled AMPK repression and stress granule sequestration, mTOR regulation is thus integral to Tfh cell responses. Multiple studies are also in line with this model. Similar to our findings of impaired IL-21 synthesis in mTOR-attenuated Tringless CD4+ T cells, a report on Frap1 knockout T cells cultured in vitro also displayed reduced expression of IL-21 (Delgoffe et al., 2009). Moreover, low expression and secretion of IL-21 was observed in rapamycin-treated human CD4+ T cells polarised toward the Tfh cell lineage ex vivo (De Bruyne et al., 2015). Also in mice with reduced mTOR, T-dependent B cell proliferation, isotype switching, GC formation and antigen-specific antibody responses were significantly crippled (Zhang et al., 2011; Keating et al., 2013). Additional in vivo studies, however, are required to dissect the downstream signals transduced by mTOR that orchestrate Tfh immune responses. Thorough investigation of these and similar metabolic pathways including AMPK-dependent cellular bioenergetics within Tfh cells and in other GC T cell subsets (Ramiscal and Vinuesa, 2013) is not only warranted but also may advance current strategies for vaccine design or reveal novel therapeutic interventions for antibody-mediated immune disorders.\n\n## Materials and methods\n\n### Mice\n\nROQUIN RING deleted\u00a0mice\u00a0(Pratama, et al., 2013) were generated by Ozgene, Australia; loxP sites that flanked or \u2018floxed\u2019 Rc3h1\u00a0exon 2, encoding the START codon and RING motif (Figure 1\u2014figure supplement 1),\u00a0were inserted into\u00a0C57BL/6\u00a0mouse embryonic stem (ES) cells via homologous recombination . Recombinant ES cell clones were implanted into C57BL/6\u00a0foster mothers. Heterozygote progeny were screened for germline transmission before crossing to Rosa26:Flp1 mice to remove the neo cassette. Mice harboring the floxed Rc3h1\u00a0allele (Rc3h1lox/+) were then\u00a0crossed to Rosa26:Cre knock-in mice for one generation. Removal of Cre expression was then achieved by a C57BL/6 backcross yielding a germline deletion of Rc3h1\u00a0exon 2. This strain was named ringless (rin allele). A conditional ROQUIN RING-deficient strain (called Tringless) was also generated by crossing Rc3h1lox/lox mice to Lck:Cre breeders to remove Rc3h1\u00a0exon 2 specifically in T lymphocytes (Trin allele). Upon Cre-mediated excision of Rc3h1\u00a0exon 2, rescue of in-frame protein synthesis at Met133 is expected to produce an E3 ligase defective ROQUIN mutant. Rosa26:Cre and Lck:Cre mice were maintained on a C57BL/6 background with one copy of the Cre transgene and provided by Ozgene, Australia. ENU-derived chino mutants were previously characterized (Daley et al., 2013). To generate mixed bone marrow chimeric mice, recipient Rag1-/- mice were sublethally irradiated and reconstituted i.v. with 2\u00a0x\u00a0106 bone marrow hematopoietic stem cells.\n\nAnimal experiments were approved by the Animal Experimentation Ethics Committee of the Australian National University (Protocols J. IG.71.08, A2012/05 and A2012/53) and the McGill University Ethics Committee (Protocol 7259). Mice were maintained in a specific germ-free environment. Where indicated, 8 to 12 wo mice were immunized i.p. with 2 x 109 SRBC to generate a T-dependent GC response or i.p. with 2\u00a0x\u00a0105 PFU of LCMV Armstrong.\n\n### Molecular reagents\n\nThe following antibodies were used in Western blots, immunoprecipitation assays and fluorescence microscopy: rabbit anti-phospho-ACC Ser79 (Cat. 3661, Cell Signaling), rabbit phospho-RAPTOR Ser792 (Cat. 2083, Cell Signaling), rabbit anti- \u03b2-ACTIN (13E5, Cell Signaling), rabbit anti-AMPK\u03b1 (Cat. ab32047, Abcam, UK), goat anti-eIF3 (N-20, Santa Cruz), mouse anti-GFP (7.1 and 13.1, Roche), rabbit anti-GFP (Cat. ab290, Abcam), mouse anti-HA (HA-7, Sigma-Aldrich), rabbit anti-HA (H6908, Sigma-Aldrich), rabbit anti-RAPTOR (24C12, Cell Signaling), rabbit anti-ROQUIN (Cat. A300-514A, Bethyl Laboratories), mouse anti-UBIQUITIN (P4D1, Cell Signaling), mouse anti-V5 (V5-10, Sigma-Aldrich), rabbit anti-V5 (Cat. V8137, Sigma- Aldrich), mouse anti-rabbit IgG light chain (211-032-171, Jackson ImmunoResearch), and goat anti-mouse IgG light chain (155-035-174, Jackson ImmunoResearch). AICAR (Calbiochem) and Compound C (Calbiochem) were used according to manufacturers\u2019 recommendations at indicated concentrations. N-terminal V5 tagged full length ROQUIN and ROQUIN133-1130 constructs have been previously described (Pratama et al., 2013). C-terminal GFP fused ROQUIN and ROQUINC14A constructs have previously been described (Athanasopoulos et al., 2010). GFP\u00a0tagged constructs of AMPK subunits were obtained from Origene. HEK293T and EL4 cells were obtained from the ATCC and perpetuated in-house. Primary MEFs were harvested from E14 fetuses of rin/+ or san/+ pregnant females that were paired with rin/+ or san/+ males, respectively, as part of a timed mating.\n\n### T cell stimulation, flow cytometry, and immunofluorescence\n\nWhere indicated in vitro stimulation of T cells was performed using anti-CD3 and anti-CD28 dual coated Dynabeads (Invitrogen) or for cytokine accumulation, phorbol myristate acetate (Sigma-Aldrich), and ionomycin (Sigma-Aldrich) was used with GolgiStop (BD Biosciences) in RPMI 1640 medium (Invitrogen) supplemented with 2 mM l-glutamine (Invitrogen), 100 U penicillin-streptomycin (Invitrogen), 0.1 mM non-essential amino acids (Invitrogen), 100 mM HEPES (Sigma-Aldrich), 0.0055 mM 2-mercaptoethanol, and 10% FCS. 20 ng/mL IL-2 (R&D Systems), 100 ng/mL IL-4 (Miltenyi Biotec), 100 ng/mL IL-6 (Peprotech), 20 ng/mL IL-12 (Miltenyi Biotec), 1 ng/mL TGF\u03b2 (R&D Systems), along with 1\u03bcg/mL of Biolegend antibodies anti-IL-4, anti-IFN\u03b3 and/or anti-IL-12 were used for in vitro polarization of (IL-2) Th0, (IL-2, IL-12, and anti-IL-4) Th1, (IL-2, IL-4, anti-IFN\u03b3, and anti-IL-12) Th2, (IL-2, IL-6, TGF\u03b2, anti-IL-4, and anti-IFN\u03b3) Th17, and (IL-2 and TGF\u03b2) iTreg cultures. To stain surface markers, cells were washed and stained in ice-cold staining buffer (2% FCS, 0.1% NaN3 in PBS). eBioscience FOXP3 Staining Buffer Set was used for flow cytometric detection of intracellular proteins. Data were acquired by a LSRII Flow Cytometer using FACSDiva software. MEFs and HEK293T cells were prepared for fluorescence microscopy as previously described (Athanasopoulos et al., 2010). Images were collected using an Olympus IX71 microscope with DP Controller software (Olympus).\n\n### AMPK kinase assay in CD4+ T cells\n\nCD4+ T cells were isolated from floxed wild-type or Tringless mice by MACS Microbead separation (Miltenyi Biotec). AMPK activity was measured from AMPK complexes immunoprecipitated from cell lysates using anti-AMPK\u03b1 antibody (Abcam) as previously described (Chen et al., 2003). Detection of ACC Ser79 phosphorylation levels was also used to measure AMPK allosteric activity.\n\n### Immunoprecipitation and Western blotting\n\nWhole-cell lysates were prepared using TNE lysis buffer (1% NP40, 150 mM NaCl, 20 mM Tris-base, 1 mM EDTA and Roche cOmplete EDTA-free protease inhibitory cocktail tablets all dissolved in water). PhosSTOP (Roche) was added to the TNE mix for the detection of phospho-residues. To immunoprecipitate proteins, antibody was added to pre-cleared lysates and mixed with Protein G Sepharose 4 Fast Flow (GE Healthcare) for 12\u2009hr then washed. For western blotting, lysates were separated by SDS-PAGE, transferred to nitrocellulose membrane, blocked in 5% BSA Tris-buffered saline containing 0.05% Tween-20, probed with primary antibodies and detected with horseradish peroxidase-conjugated anti-rabbit or anti-mouse secondary antibodies.\n\n### Proximity ligation assays\n\nMEFs were seeded on coverslips and prepared as described previously (Srivastava et al., 2015). To induce cellular stress, 1 mM arsenite was added to cultures for 1 hr. Stains with primary antibodies were carried out using optimized conditions overnight at 4\u00b0C in a humid chamber. The primary antibodies were goat anit-AMPK\u03b11, clone C20 (Santa Cruz) at 1:75 ; with either rabbit anti-ROQUIN at 1:75 (Cat. NB100-655, Novus Biologicals) or rabbit anti-GFP 1:1000 (Cat. ab6556, Abcam, UK). Images were taken on a Leica SP5 confocal microscope with a pin hole of 67.9 \u03bcm and an APO CS 1.25 UV x40 oil objective. Higher magnification images presented in Figure 3c were taken on a Leica SP5 confocal microscope with a pin-hole of 95.5 \u03bcm and an HCxPL APO lambda blue x63/1.4 oil objective.\n\n### In vitro autoubiquitination assays\n\nMouse UBCH5A (E2) was expressed as a GST-fusion protein and purified using standard protocols. ROQUIN constructs were also expressed as GST-fusion proteins using standard procedures except that 0.1\u00a0mM Zn-acetate was added to the growth media and all purification buffers. Human E1 (His6 tagged) was purchased from Biomol International. Bovine UBIQUITIN was purchased from Sigma-Aldrich. Ubiquitination assays were performed in 20 ml in 20 mM Tris-HCl, 50 mM NaCl, 2 mM MgCl2, 1 mM ATP, 0.1 mM DTT at 25oC. Reactions were stopped by the addition of 2x SDS PAGE loading buffer and heating at 95oC for 5 min and analyzed by SDS-PAGE and Coomassie Blue staining. Typically reactions contained 0.1 mM E1, 10 mM E2, 50 mM UBIQUITIN, and 0.5 mg/mL ROQUIN peptide.\n\n### In silico\u00a0analysis\n\nStatistics were calculated using Prism 5.0a software (GraphPad). Stress granule morphology and PLAs were assessed by ImageJ 1.46r software (NIH).\n",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "8f7943b9-8089-4d10-8c7d-06b2a7d7c826",
+      "submission_id": "cc078f84-9587-4d18-baa1-bd89d273e785",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Shimon Sakaguchi, Osaka University , Japan\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.08698.020](https://doi.org/10.7554/eLife.08698.020)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"Attenuation of AMPK signaling by ROQUIN promotes formation of T follicular helper cells\" for peer review at eLife. Your submission has been favorably evaluated by Tadatsugu Taniguchi (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. One of the three peer reviewers, Masato Kubo, has agreed to reveal his identity.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe post-transcriptional repressor ROQUIN has previously been demonstrated to have a critical role in the negative regulation of Tfh cells as sanroque mice with a dominant negative ROQUIN mutation or T cell-specific deletion of ROQUIN and its paralogue ROQUIN2 leads to unrestrained formation of Tfh. The authors here investigate the effect of specific depletion of the RING domain of ROQUIN and unexpectedly find that this domain has a positive role in Tfh formation in contrast to the overall negative role of ROQUIN. They describe that this loss of Tfh formation and function is due to loss of ROQUIN RING dependent antagonism of AMPK which in turn causes loss of mTOR function that, through largely unknown mechanisms, inhibits Tfh formation.\n\nMajor comments:\n\n1) In Figure 7, Foxp3 MFI rose in the chino mutants. As the authors of this paper have previously demonstrated CD4+PD1+CXCR5+ cells are made up of a mixture of Foxp3- Tfh and FOXP3+ Tfr cells. A rise in the MFI of Foxp3 fails to determine if this is Foxp3 expression being induced by Tfh or, as seems more likely, a change in the proportion of Foxp3 expressing Tfr cells within the \"Tfh\" gate. Since Tfh and Tfr are distinct populations it would be better to more clearly divide the population into Foxp3- Tfh and FOXP3+ Tfr and showing this both by representative gating and including a graph of % Foxp3 within \"Tfh\" or similar method. It is important that the authors have demonstrated in Figure 1\u2014figure supplement 2 that Thymic Treg formation and Treg levels in the periphery are not significantly altered in Trin/Trin mice. However this does not fully address the question of Tfr formation as we do not understand the role of Trin in Tfr. In much the same way that looking at total CD4 cells would not have revealed the effects on Tfh looking at total Tregs will not reveal any Tfr specific effects. Given the known role of mTOR inhibitors such as rapamycin in enhancing Treg numbers and the data in Figure 7e, it is plausible that the Tfh/Tfr ratio may be altered. Addressing this point will both strengthen the conclusions on Tfh (by confirming what percentage of them are actually Tfh) and add impact by widening the results to include or exclude an effect on Tfr. This issue can be quickly and simply addressed by including some indication of the percentage of Foxp3 expression within the PD1+CXCR5+ population Tfh in Figures 1 and 7. Presumably the data in Figure 7 is already available and simply requires reanalysis while Figure 1 may require a further experiment.\n\n2) Are these mice the same Roquin1 ringless mice previously used in Pratama et al. Immunity 2013? If so this could be referenced more clearly in the Methods section as the previous paper also described these mice to some extent. Of note in Pratama et al. 2013 it was shown in Figure 4a that Trin/Trin Lck:Cre mice had reduced GC formation and a trend towards reduced Tfh formation following SRBC vaccination. That is essentially the same experiment as seen here in Figure 1\u2014figure supplement 2. It would be harsh to suggest that this affects novelty, since the previous paper did not focus on this issue and the current paper goes into far more detail. Nonetheless the authors should more clearly clarify this work in its relation to previously published work by noting this previous finding.\n\n3) Figures 1 and 2 address the ROQUIN-mediated mTOR attenuation cause specific defect in Tfh during LCMV infection, and Figure 7 indicated that hypomorphic mutation mice of the Frap1 gene also had the same phenotype. However, previous reports have suggested that mTOR signals are also required for Th1, Th17, and Th2 differentiation (Kopf et al. 2007 Int. Immunopharmacol.; Delgoffe et al. 2009 Immunology; Delgoffe et al. 2011 Nat. Imunol.). I understand that different lineages have different requirements in mTOR signal. To strengthen their hypothesis, the authors need a more mechanistic explanation why the defect of RING domain loss appeared only in the Tfh program.\n\n4) The manuscript does very well at describing how the ROQUIN-AMPK-mTOR axis controls the expression of several key genes involved in the Tfh program, CXCR5 and Bcl6. It raises the question of how the ROQUIN-AMPK-mTOR axis controls the expression of CXCR5 and Bcl6 and what is a target of this pathway. It is recommended that the authors show transcriptome data of TFH cells in the ROQUIN RING loss mice and the hypomorphic mutant mice of the Frap1 gene and compare.\n\n5) The FACS profile indicating GC-B in the hypomorphic mutant mice of the Frap1 gene is clearly different from that in the ROQUIN RING loss mice (Figure 1d). We hope you can show the impact on humoral responses, because TFH and GC-B cell development is not convincing enough to prove the impact in humoral responses. It is recommended they show the antibody responses in the response to LCMV.\n\n6) The finding that the effects seen are independent of Roquin's RNA binding activity and its recruitment of the CCR4-NOT complex to RNA targets is particularly interesting. Nonetheless, some aspects of the data provided are not entirely compelling. Both proteins, ROQUIN and AMPK\u03b11, colocalize but the association as measured by co-immunoprecipitation, seems quite inefficient. The authors should consider being more circumspect in this conclusion and allow for the possibility that the interactions are indirect. Also, some of the lanes shown in Figure 4 are so overexposed that it is not clear what they add. Other blots are severely cropped \u2013 such blots are less convincing. In addition, it would seem that showing the control of a mutant with abrogation of the RNA binding could be useful in the stress granule assays.\n\n7) The main data demonstrating an alteration in mTOR signaling in Trin mice is presented in Figure 6a. Showing the primary data for a selected experiment (i.e. histograms of pS6) would be more convincing. More evidence supporting this conclusion would strengthen the authors' argument.\n\n8) The authors suggest that this effect seen is specific to Tfh cells. This may be the case; however, their investigation into alternate T cell subsets is limited. In vitro Th1, Th2, Th17, and iTreg differentiation would be the minimum exploration using the Trin mice, and it would be additionally helpful to explore antigen specific Th1 differentiation in LCMV (Figure 2, add tetramer+ Th1 cells). Additionally, exploration of these cell types in the chi/chi model would be helpful to confirm that this is truly specific to Tfh cell differentiation. An additional angle that is lacking is the role of Roquin2 in compensating for Roquin1. Previous work from this group has shown that Roquin2 can compensate for Roquin1. Do doubly deficient Roquin1/Roquin2 mice have a more severe defect in Tfh differentiation, or does it extend beyond Tfh cells? Are there circumstances in which compensation is more relevant? Roquin appears to be broadly expressed and the formation of stress granules is also not cell-type specific (and presumably will require AMPK for efficient resolving/modulation of TOR). Better explanation of why Tfh cells are selectively affected is in order.\n",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "75cc4386-5a5e-4b4a-9546-c682da978c40",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C1",
+      "claim": "T follicular helper cells (Tfh) are critical for the longevity and quality of antibody-mediated protection against infection.",
+      "claim_type": "EXPLICIT",
+      "source": "T follicular helper cells (Tfh) are critical for the longevity and quality of antibody-mediated protection against infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about Tfh cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "87a3c5df-5811-418a-a542-739417262c6c",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C2",
+      "claim": "ROQUIN is a post-transcriptional repressor of T cells, acting through its ROQ domain to destabilize mRNA targets important for Th1, Th17, and Tfh biology.",
+      "claim_type": "EXPLICIT",
+      "source": "ROQUIN is a post-transcriptional repressor of T cells, acting through its ROQ domain to destabilize mRNA targets important for Th1, Th17, and Tfh biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge about ROQUIN function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "84b8a21c-f6d9-427d-85cf-05d2c17fdfc7",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C3",
+      "claim": "Mice with a T cell-specific deletion of the ROQUIN RING domain have unchanged Th1, Th2, Th17, and Tregs during a T-dependent response.",
+      "claim_type": "EXPLICIT",
+      "source": "mice with a T cell-specific deletion of the ROQUIN RING domain have unchanged Th1, Th2, Th17, and Tregs during a T-dependent response",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "5f235257-5584-4f5c-833b-7c49d1aaf2b6",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C4",
+      "claim": "Mice with a T cell-specific deletion of the ROQUIN RING domain show a profoundly defective antigen-specific Tfh compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "mice with a T cell-specific deletion of the ROQUIN RING domain have unchanged Th1, Th2, Th17, and Tregs during a T-dependent response but show a profoundly defective antigen-specific Tfh compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "3b88c60b-f6e1-4d95-b654-8ee8a92d19d0",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C5",
+      "claim": "ROQUIN RING signaling directly antagonized the catalytic \u03b11 subunit of adenosine monophosphate-activated protein kinase (AMPK).",
+      "claim_type": "EXPLICIT",
+      "source": "ROQUIN RING signaling directly antagonized the catalytic \u03b11 subunit of adenosine monophosphate-activated protein kinase (AMPK), a central stress-responsive regulator of cellular metabolism and mTOR signaling, which is known to facilitate T-dependent humoral immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing direct interaction and functional antagonism.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "ac3df720-f0a0-4db1-ab7c-b3ff927ba9b4",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C6",
+      "claim": "AMPK is a central stress-responsive regulator of cellular metabolism and mTOR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "ROQUIN RING signaling directly antagonized the catalytic \u03b11 subunit of adenosine monophosphate-activated protein kinase (AMPK), a central stress-responsive regulator of cellular metabolism and mTOR signaling, which is known to facilitate T-dependent humoral immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about AMPK function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "3b2529e8-c8e8-4c41-ace5-aaa25936d070",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C7",
+      "claim": "AMPK is known to facilitate T-dependent humoral immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "ROQUIN RING signaling directly antagonized the catalytic \u03b11 subunit of adenosine monophosphate-activated protein kinase (AMPK), a central stress-responsive regulator of cellular metabolism and mTOR signaling, which is known to facilitate T-dependent humoral immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about AMPK's role in immunity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "a23cee0e-3b2e-4fff-984c-332f532a7e11",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C8",
+      "claim": "High-affinity and long-lasting humoral immunity against infection requires controlled cross-talk between limiting CD4+CXCR5highPD1highBCL6high T follicular helper (Tfh) cells and immunoglobulin-maturing germinal center (GC) B cells in secondary lymphoid tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "High-affinity and long-lasting humoral immunity against infection requires controlled cross-talk between limiting CD4+CXCR5highPD1highBCL6high T follicular helper (Tfh) cells and immunoglobulin-maturing germinal center (GC) B cells in secondary lymphoid tissues (King et al., 2008; Victora and Nussenzweig, 2012; Nutt and Tarlinton, 2011; Ramiscal and Vinuesa, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "4bf72e73-e5c2-4d2e-9a92-d8d3d14fa3cd",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C9",
+      "claim": "Tfh cells in narrow numbers are best at maintaining a selective pressure for B cell competition, favoring the survival of greater affinity antigen-responsive GC B cell clones.",
+      "claim_type": "EXPLICIT",
+      "source": "As the GC largely consists of clonally diverse B cells, Tfh cells especially in narrow numbers are best at maintaining a selective pressure for B cell competition, favoring the survival of greater affinity antigen-responsive GC B cell clones (Pratama and Vinuesa, 2014; Victora and Mesin, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "b638f2d2-a47f-4d4f-bf2e-36a247861f1b",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C10",
+      "claim": "Deregulation of Tfh cells can lead to faulty GC selection that may also seed the production of autoantibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Deregulation of Tfh cells can lead to faulty GC selection that may also seed the production of autoantibodies (Weinstein et al., 2012; Vinuesa et al., 2005; Kim et al., 2015; Linterman et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "e2a1b04a-8187-4d91-af57-c638fbbc160b",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C11",
+      "claim": "Deregulation of Tfh cells can lead to GC-derived malignancies such as follicular lymphoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Deregulation of Tfh cells can lead to faulty GC selection that may also seed the production of autoantibodies (Weinstein et al., 2012; Vinuesa et al., 2005; Kim et al., 2015; Linterman et al., 2009) and GC-derived malignancies such as follicular lymphoma (Rawal et al., 2013; Klein and Dalla-Favera, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "fdadb0ef-cbd0-4d46-b630-24752803cc76",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C12",
+      "claim": "The signals that exclusively govern Tfh cell differentiation over other T cell effector subsets remains poorly characterized.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, the signals that exclusively govern Tfh cell differentiation over other T cell effector subsets remains poorly characterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "53835574-2e0b-4335-a254-0cefcba6ba0f",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C13",
+      "claim": "ROQUIN (also called ROQUIN1) is encoded by Rc3h1.",
+      "claim_type": "EXPLICIT",
+      "source": "ROQUIN (also called ROQUIN1; encoded by Rc3h1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about ROQUIN nomenclature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "2a6e73af-d55c-491d-b670-0fc33b7b1909",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C14",
+      "claim": "ROQUIN binds effector T cell transcripts via its winged-helix ROQ domain.",
+      "claim_type": "EXPLICIT",
+      "source": "ROQUIN (also called ROQUIN1; encoded by Rc3h1) acts to post-transcriptionally repress Tfh cells by binding effector T cell transcripts via its winged-helix ROQ domain (Schuetz et al., 2014; Tan et al., 2014; Schlundt et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "b886e4cb-d6eb-49c4-8ff1-a58f38a18ff4",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C15",
+      "claim": "ROQUIN recruits proteins of the RNA decapping and deadenylation machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "ROQUIN (also called ROQUIN1; encoded by Rc3h1) acts to post-transcriptionally repress Tfh cells by binding effector T cell transcripts via its winged-helix ROQ domain (Schuetz et al., 2014; Tan et al., 2014; Schlundt et al., 2014) and recruiting proteins of the RNA decapping and deadenylation machinery (Athanasopoulos et al., 2010; Glasmacher et al., 2010; Leppek et al., 2013; Pratama et al., 2013; Yu et al., 2007; Vogel et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "8bd14e19-0d01-4e01-952b-3537ca51cb67",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C16",
+      "claim": "ROQUIN recruits the endoribonuclease REGNASE-1.",
+      "claim_type": "EXPLICIT",
+      "source": "ROQUIN (also called ROQUIN1; encoded by Rc3h1) acts to post-transcriptionally repress Tfh cells by binding effector T cell transcripts via its winged-helix ROQ domain (Schuetz et al., 2014; Tan et al., 2014; Schlundt et al., 2014) and recruiting proteins of the RNA decapping and deadenylation machinery (Athanasopoulos et al., 2010; Glasmacher et al., 2010; Leppek et al., 2013; Pratama et al., 2013; Yu et al., 2007; Vogel et al., 2013) as well as the endoribonuclease REGNASE-1 (Jeltsch et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "3323f4af-9c1d-41d8-aeeb-1d75e8bcc0f6",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C17",
+      "claim": "ROQUIN RNA targets include the Tfh-polarising Icos mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of its RNA targets include the Tfh-polarising Icos (Glasmacher et al., 2010) and Il6 mRNA (Jeltsch et al., 2014) as well as Ox40 (Vogel et al., 2013) and Tnf (Pratama et al., 2013) transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "2b74652d-bb52-4e91-94b2-b4c83e9d174d",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C18",
+      "claim": "ROQUIN RNA targets include Il6 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of its RNA targets include the Tfh-polarising Icos (Glasmacher et al., 2010) and Il6 mRNA (Jeltsch et al., 2014) as well as Ox40 (Vogel et al., 2013) and Tnf (Pratama et al., 2013) transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "d38c49a8-a24c-477f-9067-4dd02cbf8f89",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C19",
+      "claim": "ROQUIN RNA targets include Ox40 transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of its RNA targets include the Tfh-polarising Icos (Glasmacher et al., 2010) and Il6 mRNA (Jeltsch et al., 2014) as well as Ox40 (Vogel et al., 2013) and Tnf (Pratama et al., 2013) transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "1ba6d8ab-371c-492f-b8b6-bcd9549ac9a7",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C20",
+      "claim": "ROQUIN RNA targets include Tnf transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Some of its RNA targets include the Tfh-polarising Icos (Glasmacher et al., 2010) and Il6 mRNA (Jeltsch et al., 2014) as well as Ox40 (Vogel et al., 2013) and Tnf (Pratama et al., 2013) transcripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "ebf6598c-fc34-48bd-a715-688fe66e2045",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C21",
+      "claim": "In sanroque mice, an Rc3h1 missense point mutation encoding for a Met199 to Arg substitution translates into a minor conformational shift in the RNA-binding ROQ domain of ROQUIN.",
+      "claim_type": "EXPLICIT",
+      "source": "In sanroque mice, an Rc3h1 missense point mutation, encoding for a Met199 to Arg substitution translates into a minor conformational shift in the RNA-binding ROQ domain (Srivastava et al., 2015) of ROQUIN",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "7b897360-a1ac-465b-aa6c-a180c7d73a98",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C22",
+      "claim": "The sanroque mutation leads to a loss of function in post-transcriptional repression by ROQUIN.",
+      "claim_type": "EXPLICIT",
+      "source": "In sanroque mice, an Rc3h1 missense point mutation, encoding for a Met199 to Arg substitution translates into a minor conformational shift in the RNA-binding ROQ domain (Srivastava et al., 2015) of ROQUIN and a loss of function in post-transcriptional repression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consequence of the sanroque mutation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "161b278e-c806-4f7f-bcd0-7b42098b55b6",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C23",
+      "claim": "The sanroque mutation leads to excessive Tfh growth and systemic autoimmunity.",
+      "claim_type": "EXPLICIT",
+      "source": "In sanroque mice, an Rc3h1 missense point mutation, encoding for a Met199 to Arg substitution translates into a minor conformational shift in the RNA-binding ROQ domain (Srivastava et al., 2015) of ROQUIN and a loss of function in post-transcriptional repression. This leads to excessive Tfh growth and systemic autoimmunity (Linterman et al., 2009; Vinuesa et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "bd682d8a-4861-4c1f-b903-41fc7f59b0ba",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C24",
+      "claim": "Complete ablation of ROQUIN results in unexplained perinatal lethality in C57BL/6 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Complete ablation of ROQUIN results in unexplained perinatal lethality in C57BL/6 mice",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observed fact about ROQUIN knockout mice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "115c9688-89e7-4af8-8362-52b86a6bd7a9",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C25",
+      "claim": "Selective deletion of ROQUIN in T cells does not lead to Tfh cell accumulation nor autoimmunity.",
+      "claim_type": "EXPLICIT",
+      "source": "selective deletion of ROQUIN in T cells does not lead to Tfh cell accumulation nor autoimmunity (Bertossi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "2b2c2932-2d1e-457e-a3fa-4968cb122fc5",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C26",
+      "claim": "The lack of Tfh accumulation in T cell-specific ROQUIN deletion is at least in part explained by the existence of the closely related family member ROQUIN2 (encoded by Rc3h2), which has overlapping functions with ROQUIN.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter is at least in part explained by the existence of the closely related family member ROQUIN2 (encoded by Rc3h2), which has overlapping functions with ROQUIN (Pratama et al., 2013; Vogel et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "22b7e7c7-8357-4b5b-8c71-7fa67cf66853",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C27",
+      "claim": "The ROQUINM199R mutant protein has been proposed to act as a 'niche-filling' variant that has lost its RNA-regulating activity but can still localize to mRNA-regulating cytoplasmic granules to prevent the compensatory activity of ROQUIN2.",
+      "claim_type": "EXPLICIT",
+      "source": "The ROQUINM199R mutant protein has been proposed to act as a 'niche-filling' variant that has lost its RNA-regulating activity (Pratama et al., 2013) but can still localize to mRNA-regulating cytoplasmic granules to prevent the compensatory activity of ROQUIN2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research and inference about the mechanism.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "15e49a38-aeaa-4e67-b20e-b3bb2f44ce5f",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C28",
+      "claim": "ROQUIN contains a conserved amino terminal RING finger with two conforming zinc-chelating sites.",
+      "claim_type": "EXPLICIT",
+      "source": "ROQUIN contains a conserved amino terminal RING finger with two conforming zinc-chelating sites (Srivastava et al., 2015), despite an atypical aspartate as its eighth zinc ligand synonymous to RBX1 (Kamura et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "a28c2f90-367a-4adf-815d-3042ca5a1664",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C29",
+      "claim": "ROQUIN has an atypical aspartate as its eighth zinc ligand synonymous to RBX1.",
+      "claim_type": "EXPLICIT",
+      "source": "ROQUIN contains a conserved amino terminal RING finger with two conforming zinc-chelating sites (Srivastava et al., 2015), despite an atypical aspartate as its eighth zinc ligand synonymous to RBX1 (Kamura et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "550e4601-72fb-455f-9592-baf05a3a94d0",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C30",
+      "claim": "The structure of ROQUIN suggests it may function as an E3 ubiquitin ligase.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests ROQUIN may function as an E3 ubiquitin ligase (Deshaies and Joazeiro, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on structural features and cited knowledge about RING domains.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "68a6205a-d403-4953-9b91-e3e03ce7731c",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C31",
+      "claim": "To date, no enzymatic activity of the ROQUIN RING domain has been demonstrated in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests ROQUIN may function as an E3 ubiquitin ligase (Deshaies and Joazeiro, 2009) but, to date, no such enzymatic activity of the ROQUIN RING domain has been demonstrated in mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "0a7ec940-c2ca-4d28-9d57-3ddb790a7afe",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C32",
+      "claim": "The Caenorhabditis elegans ROQUIN ortholog, RLE-1, acts through its RING domain to ubiquitinate DAF-16, a pro-longevity forkhead box O (FOXO) transcription factor homolog.",
+      "claim_type": "EXPLICIT",
+      "source": "The Caenorhabditis elegans ROQUIN ortholog, RLE-1, acts through its RING domain to ubiquitinate DAF-16, a pro-longevity forkhead box O (FOXO) transcription factor homolog (Li et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "def878e8-de94-45aa-9756-fd10695cc51e",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C33",
+      "claim": "ROQUIN RING-deleted T cells in mice 6 days after sheep red blood cell (SRBC) immunization can form normal early Tfh cell responses but fail to promote optimal GC B cell reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously demonstrated that ROQUIN RING-deleted T cells in mice 6 days after sheep red blood cell (SRBC) immunization can form normal early Tfh cell responses but fail to promote optimal GC B cell reactions (Pratama et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "90d9cb79-c982-4f40-b0d3-0e975b1a3367",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C34",
+      "claim": "In mice that have developed robust Tfh-dependent GC responses toward SRBC or infected with lymphocytic choriomeningitis virus (LCMV), there is a novel and unexpected role of the ROQUIN RING domain in selectively promoting mature antigen-specific Tfh cell responses while leaving unaffected the development of other CD4+ effector T cell lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, in mice that have developed robust Tfh-dependent GC responses toward SRBC or infected with lymphocytic choriomeningitis virus (LCMV), we identify a novel and unexpected role of the ROQUIN RING domain in selectively promoting mature antigen-specific Tfh cell responses while leaving unaffected the development of other CD4+ effector T cell lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "ac99b6c2-7194-439a-9b8e-6f39416a55f9",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C35",
+      "claim": "ROQUIN directly binds to and limits adenosine monophosphate-activated protein kinase (AMPK).",
+      "claim_type": "EXPLICIT",
+      "source": "ROQUIN directly binds to and limits adenosine monophosphate-activated protein kinase (AMPK), a tumor suppressor and central regulator of T cell glucose uptake and glycolysis (MacIver et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "1ef7a6ee-ac98-49be-9cf3-6b09cb95418d",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C36",
+      "claim": "AMPK is a tumor suppressor and central regulator of T cell glucose uptake and glycolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "ROQUIN directly binds to and limits adenosine monophosphate-activated protein kinase (AMPK), a tumor suppressor and central regulator of T cell glucose uptake and glycolysis (MacIver et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "0b972c9b-6b4e-41c3-8246-f278cc612575",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C37",
+      "claim": "Loss of AMPK repression by deletion of the ROQUIN RING domain promotes stress granule persistence.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that loss of AMPK repression by deletion of the ROQUIN RING domain promotes stress granule persistence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "58b8a89b-9ac8-4d5f-ba9f-5fbbb4d63ace",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C38",
+      "claim": "Stress granule persistence cripples mTOR activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that loss of AMPK repression by deletion of the ROQUIN RING domain promotes stress granule persistence. This in turn cripples mTOR activity, otherwise known to play a critical role in driving CD4+ effector T cell expansion (Delgoffe et al., 2009; 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data and inference from the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "07780133-e47a-4e90-b160-f45dbadc5b54",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C39",
+      "claim": "mTOR plays a critical role in driving CD4+ effector T cell expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "This in turn cripples mTOR activity, otherwise known to play a critical role in driving CD4+ effector T cell expansion (Delgoffe et al., 2009; 2011) and T-dependent antibody responses (Keating et al., 2013; Zhang et al., 2011; Gigoux et al., 2014; De Bruyne et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "00cbbc12-4108-49c1-b227-98f925eb8453",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C40",
+      "claim": "mTOR plays a critical role in T-dependent antibody responses.",
+      "claim_type": "EXPLICIT",
+      "source": "This in turn cripples mTOR activity, otherwise known to play a critical role in driving CD4+ effector T cell expansion (Delgoffe et al., 2009; 2011) and T-dependent antibody responses (Keating et al., 2013; Zhang et al., 2011; Gigoux et al., 2014; De Bruyne et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "27fd0acc-9969-4ccd-b275-7b8a3e672726",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C41",
+      "claim": "Mice homozygous for the rin allele (germline ROQUIN RING deletion) were perinatally lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice homozygous for the rin allele were perinatally lethal (Figure 1\u2014figure supplement 1g\u2013i), precluding T cell studies in intact animals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 1g\u2013i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "09a93d90-58d8-4719-8f91-b53614d2cbd7",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C42",
+      "claim": "Tringless mice were viable and showed no severe variations in thymic development and output of CD4 single positive T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Tringless mice were viable and showed no severe variations in thymic development and output of CD4 single positive T cells (Figure 1\u2014figure supplement 2a\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 2a\u2013e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "5e3dbbfa-b961-4b5a-b159-641aba528c6c",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C43",
+      "claim": "There were no major changes in Th1 cell differentiation in Tringless mice infected with LCMV.",
+      "claim_type": "EXPLICIT",
+      "source": "There were also no major changes in Th1 cell differentiation in Tringless mice infected with LCMV (Figure 1a), which predominantly yields LY6Chigh Th1 and LY6Clow Tfh virus-specific effector cells (Hale et al., 2013; Marshall et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "c0c7cb12-81af-444b-b107-67435ceb8607",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C44",
+      "claim": "LCMV infection predominantly yields LY6Chigh Th1 and LY6Clow Tfh virus-specific effector cells.",
+      "claim_type": "EXPLICIT",
+      "source": "There were also no major changes in Th1 cell differentiation in Tringless mice infected with LCMV (Figure 1a), which predominantly yields LY6Chigh Th1 and LY6Clow Tfh virus-specific effector cells (Hale et al., 2013; Marshall et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "0663e17e-f7f4-477f-b191-d315789a3875",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C45",
+      "claim": "In Tringless animals immunized with SRBCs, the formation of Th1, Th2, Th17, and regulatory T cells remained largely unperturbed.",
+      "claim_type": "EXPLICIT",
+      "source": "In Tringless animals immunized with SRBCs, the formation of Th1, Th2, Th17, and regulatory T cells also remained largely unperturbed (Figure 1\u2014figure supplement 2f, g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 2f, g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "48ebbe3d-cd8f-4de7-8b8a-b7a1c6d55026",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C46",
+      "claim": "Tringless CD4+ naive T cells activated under Th1, Th2, Th17, or induced Treg (iTreg) polarizing conditions displayed maximal expression of intracellular TBET, GATA3, ROR\u03b3T, and FOXP3 comparable to floxed wild-type T cell cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "This was mirrored in vitro with Tringless CD4+ naive T cells activated under Th1, Th2, Th17, or induced Treg (iTreg) polarizing conditions (Figure 1\u2014figure supplement 2h) displaying maximal expression of intracellular TBET, GATA3, ROR\u03b3T, and FOXP3 comparable to floxed wild-type T cell cultures (Figure 1\u2014figure supplement 2i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 2h and 2i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "928c880b-91ba-41fc-abd1-ba430c930b81",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C47",
+      "claim": "In Tringless mice, there was an overall defective Tfh cell primary response to LCMV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly in Tringless mice, there was an overall defective Tfh cell primary response to LCMV infection (Figure 1b\u2013d)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1b\u2013d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "7bfc06ab-0eb9-4d41-800d-5426995fb5ca",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C48",
+      "claim": "In Tringless mice, there was an overall defective Tfh cell primary response to SBRC immunization.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly in Tringless mice, there was an overall defective Tfh cell primary response to LCMV infection (Figure 1b\u2013d) and to SBRC immunization (Figure 1\u2014figure supplement 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "fcea0133-6f1d-496a-89b1-cbc6e0596cc9",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C49",
+      "claim": "ROQUIN RING-deficient T cells were inefficient in supporting GC formation.",
+      "claim_type": "EXPLICIT",
+      "source": "ROQUIN RING-deficient T cells were also inefficient in supporting GC formation (Figure 1e, f and Figure 1\u2014figure supplement 3b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1e, f and Figure 1\u2014figure supplement 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "7c863d8a-155c-4af1-b793-d6693b05f69b",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C50",
+      "claim": "Defective GC formation in ROQUIN RING-deficient T cells was associated with reduced IL-21 production.",
+      "claim_type": "EXPLICIT",
+      "source": "ROQUIN RING-deficient T cells were also inefficient in supporting GC formation (Figure 1e, f and Figure 1\u2014figure supplement 3b), which was associated with reduced IL-21 production (Figure 2a), a Tfh signature cytokine vital in supporting GC reactions (Liu and King, 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2a and inference about the association.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "30b9f203-1134-45a4-a02f-ef473e880bec",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C51",
+      "claim": "IL-21 is a Tfh signature cytokine vital in supporting GC reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "ROQUIN RING-deficient T cells were also inefficient in supporting GC formation (Figure 1e, f and Figure 1\u2014figure supplement 3b), which was associated with reduced IL-21 production (Figure 2a), a Tfh signature cytokine vital in supporting GC reactions (Liu and King, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "ec306c53-9096-45f7-96fb-a5f96f92c6b9",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C52",
+      "claim": "ROQUIN RING loss did not disrupt protective Th1 responses during LCMV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "By stimulating splenocytes ex vivo with GP61-80 peptide to identify virus-responsive IFN\u03b3-producing Th1 cells (Figure 2b) and by examining splenic LYC6high Th1 cells amongst GP66-77+ tetramer stained T cells (Figure 2c), we verified that ROQUIN RING loss did not disrupt protective Th1 responses",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2b and 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "5459887f-6ebe-4f69-9379-03eac12e5ded",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C53",
+      "claim": "ROQUIN RING loss caused a severe abrogation of virus-specific Tfh cells during LCMV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "By stimulating splenocytes ex vivo with GP61-80 peptide to identify virus-responsive IFN\u03b3-producing Th1 cells (Figure 2b) and by examining splenic LYC6high Th1 cells amongst GP66-77+ tetramer stained T cells (Figure 2c), we verified that ROQUIN RING loss did not disrupt protective Th1 responses but caused a severe abrogation of virus-specific Tfh cells during LCMV infection (Figure 2d\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2d\u2013f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "a492e914-2bf9-4bd0-b036-74fc66b7f10f",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C54",
+      "claim": "Virus-specific T cells in ROQUIN RING-deficient mice showed significantly reduced expression of BCL6.",
+      "claim_type": "EXPLICIT",
+      "source": "Virus-specific T cells also showed significantly reduced expression of BCL6 (Figure 2g), an indispensible nuclear factor for Tfh cell terminal differentiation (Liu et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "d13925f5-ed12-4496-85db-7f68710286ff",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C55",
+      "claim": "BCL6 is an indispensible nuclear factor for Tfh cell terminal differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Virus-specific T cells also showed significantly reduced expression of BCL6 (Figure 2g), an indispensible nuclear factor for Tfh cell terminal differentiation (Liu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "90114c9b-8437-4b66-a992-8bcef04bb2ad",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C56",
+      "claim": "There was an increased frequency of FOXP3+ T follicular regulatory (Tfr) cells within the total Tfh pool in ROQUIN RING-deficient mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found an increased frequency of FOXP3+ T follicular regulatory (Tfr) cells within the total Tfh pool (Figure 2h)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "b6b2c066-bfdb-454d-909a-5bc4331dd4ec",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C57",
+      "claim": "Tfr cells in ROQUIN RING-deficient mice do not express a GP66-77 virus-specific T cell antigen receptor (TCR).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found an increased frequency of FOXP3+ T follicular regulatory (Tfr) cells within the total Tfh pool (Figure 2h) despite these Tfr cells not expressing a GP66-77 virus-specific T cell antigen receptor (TCR; Figure 2i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "416257ba-7d38-4201-a1bc-3f416b73c38d",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C58",
+      "claim": "Tfr cells are negative regulators of GC reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, as Tfr cells are negative regulators of GC reactions (Ramiscal and Vinuesa, 2013), their abundance may indicate augmented suppression of Tfh cells and long-term B cell responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "9f097ae1-badf-48cd-a855-1e43ac10a1d6",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C59",
+      "claim": "The abundance of Tfr cells may indicate augmented suppression of Tfh cells and long-term B cell responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, as Tfr cells are negative regulators of GC reactions (Ramiscal and Vinuesa, 2013), their abundance may indicate augmented suppression of Tfh cells and long-term B cell responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known function of Tfr cells.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "37d9a40b-cb3f-4604-be8a-d34df70c16d7",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C60",
+      "claim": "Rc3h1ringless fetuses displayed skeletal muscle atrophy of the thoracic diaphragm.",
+      "claim_type": "EXPLICIT",
+      "source": "Several lines of evidence implicated an involvement of ROQUIN in the negative regulation of AMPK signaling: Rc3h1ringless fetuses displayed skeletal muscle atrophy of the thoracic diaphragm (Figure 1\u2014figure supplement 1j), which is a characteristic phenotype of mice with overactive AMPK (Sanchez et al., 2012)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1\u2014figure supplement 1j.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "f7960206-a087-4f6b-ae74-13fe2f7a8e89",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C61",
+      "claim": "Skeletal muscle atrophy of the thoracic diaphragm is a characteristic phenotype of mice with overactive AMPK.",
+      "claim_type": "EXPLICIT",
+      "source": "Several lines of evidence implicated an involvement of ROQUIN in the negative regulation of AMPK signaling: Rc3h1ringless fetuses displayed skeletal muscle atrophy of the thoracic diaphragm (Figure 1\u2014figure supplement 1j), which is a characteristic phenotype of mice with overactive AMPK (Sanchez et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "b46a0447-3ab6-4f03-90b6-7e2ab5246872",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C62",
+      "claim": "Skeletal muscle atrophy in Rc3h1ringless fetuses pointed to perinatal respiratory failure as the cause of the lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "Rc3h1ringless fetuses displayed skeletal muscle atrophy of the thoracic diaphragm (Figure 1\u2014figure supplement 1j), which is a characteristic phenotype of mice with overactive AMPK (Sanchez et al., 2012) and pointed to perinatal respiratory failure as the cause of the lethality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed phenotype.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "d9b72cb7-65fb-4b8a-8f66-e5748a9223f9",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C63",
+      "claim": "AMPK over-expression in nematode worms has been shown to extend lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, AMPK over-expression in nematode worms has been shown to extend lifespan (Mair et al., 2011), an observation consistent with the phenotype of worms lacking the ROQUIN ortholog RLE-1 (Li et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "805f7526-8fea-4f5c-a7f3-51ba7a21ea82",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C64",
+      "claim": "Worms lacking the ROQUIN ortholog RLE-1 have extended lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, AMPK over-expression in nematode worms has been shown to extend lifespan (Mair et al., 2011), an observation consistent with the phenotype of worms lacking the ROQUIN ortholog RLE-1 (Li et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "b56b6982-e860-4190-8e3a-ed55c1b94e78",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C65",
+      "claim": "The AMPK\u03b11 catalytic subunit is expressed in T cells and responds to TCR activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the AMPK\u03b11 catalytic subunit is expressed in T cells and responds to TCR activation (Tamas et al., 2006), we tested the possibility of ROQUIN directly binding to this subunit of AMPK (encoded by Prkaa1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "cbc6e708-020a-4cfe-83ba-03f30f9a2ddd",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C66",
+      "claim": "Upon ectopic expression in HEK293T cells, ROQUIN colocalized with AMPK\u03b11 diffusely or in fine cytoplasmic speckles in resting cells and within larger cytoplasmic granules upon induction of oxidative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon ectopic expression in HEK293T cells, ROQUIN colocalized with AMPK\u03b11 diffusely or in fine cytoplasmic speckles in resting cells and within larger cytoplasmic granules upon induction of oxidative stress (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "6934a756-e32d-411f-83e7-d9e33e05dd21",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C67",
+      "claim": "Endogenous AMPK\u03b11 colocalized within ROQUIN+ cytoplasmic granules in arsenite-treated primary C57BL/6 mouse embryonic fibroblasts (MEFs).",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed colocalization of endogenous AMPK\u03b11 within ROQUIN+ cytoplasmic granules in arsenite-treated primary C57BL/6 mouse embryonic fibroblasts (MEFs) (Figure 3b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "e9700d7a-e276-4c4d-82f0-ba39fdac2bb9",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C68",
+      "claim": "Ectopically expressed AMPK \u03b2 and \u03b3 regulatory subunits did not associate with ROQUIN+ cytoplasmic granules.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the AMPK\u03b11 subunit, ectopically expressed AMPK \u03b2 and \u03b3 regulatory subunits did not associate with ROQUIN+ cytoplasmic granules, although AMPK\u03b32 and AMPK\u03b33 exhibited generally diffuse cytoplasmic distribution (Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "7c32d39b-527f-4567-bdc7-77bb89d69ba0",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C69",
+      "claim": "Endogenously expressed ROQUIN and AMPK\u03b11 proteins localized with very close molecular proximity in both resting and arsenite-stressed cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to control PLAs accounting for false interactions between endogenous AMPK\u03b11 and non-expressed green fluorescent protein (GFP) detected by optimized anti-GFP immunostaining (Figure 3\u2014figure supplement 1c), we found that endogenously expressed ROQUIN and AMPK\u03b11 proteins localized with very close molecular proximity in both resting and arsenite-stressed cells (Figure 3c, d)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3c, d and Figure 3\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "19c50d3b-b69e-4900-a029-32e1cc0e487f",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C70",
+      "claim": "The frequency of ROQUIN-AMPK\u03b11 proximity ligation events was 15-fold higher or more than weak PLA interactions previously observed between ROQUIN and AGO2.",
+      "claim_type": "EXPLICIT",
+      "source": "we found that endogenously expressed ROQUIN and AMPK\u03b11 proteins localized with very close molecular proximity in both resting and arsenite-stressed cells (Figure 3c, d) at a frequency 15-fold higher or more than weak PLA interactions previously observed between ROQUIN and AGO2 (Srivastava et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data and comparison to prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "e55ce56d-09c8-48e7-8fbe-e76252f92a37",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C71",
+      "claim": "ROQUIN and AMPK\u03b11 can be coimmunoprecipitated when over-expressed in HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we were able to coimmunoprecipitate ROQUIN and AMPK\u03b11 when over-expressed in HEK293T cells (Figure 3\u2014figure supplement 1d)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3\u2014figure supplement 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "aa0f1f03-05e2-44b6-9892-089f12b8fcd9",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C72",
+      "claim": "ROQUIN and AMPK\u03b11 can be coimmunoprecipitated when expressed endogenously in the mouse T lymphoblast line EL4 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we were able to coimmunoprecipitate ROQUIN and AMPK\u03b11 when over-expressed in HEK293T cells (Figure 3\u2014figure supplement 1d) or expressed endogenously in the mouse T lymphoblast line EL4 cells (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "d3969a45-0491-42cb-aa92-04c9645fd9db",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C73",
+      "claim": "Under physiological conditions, ROQUIN and AMPK\u03b11 can form a stable complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the PLAs, this indicated that ROQUIN bound specifically with the \u03b11 subunit of AMPK and that under physiological conditions, the two proteins could form a stable complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the coimmunoprecipitation and PLA data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "bb53b30f-83a3-4451-8a6e-2143362e21cd",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C74",
+      "claim": "In CD4+ T cells, phosphorylation of the AMPK target, acetyl CoA carboxylase (ACC) in ROQUIN RING-deficient cells was increased, demonstrating constitutively active AMPK activity in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to wild-type cells, phosphorylation of the AMPK target, acetyl CoA carboxylase (ACC) in ROQUIN RING-deficient CD4+ T cells was increased, demonstrating constitutively active AMPK activity in vitro (Figure 4a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "5481da54-d5fd-444f-9797-2defe26dcf6f",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C75",
+      "claim": "In CD4+ T cells, phosphorylation of the AMPK target, acetyl CoA carboxylase (ACC) in ROQUIN RING-deficient cells was increased in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to wild-type cells, phosphorylation of the AMPK target, acetyl CoA carboxylase (ACC) in ROQUIN RING-deficient CD4+ T cells was increased, demonstrating constitutively active AMPK activity in vitro (Figure 4a) and in vivo (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "8b94d8b7-cd54-4f1c-8bfc-ccaeabc39fad",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C76",
+      "claim": "ROQUIN acts through its RING domain to directly negatively regulate AMPK\u03b11 activity in T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ROQUIN acts through its RING domain to directly negatively regulate AMPK\u03b11 activity in T cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data showing increased AMPK activity in RING-deficient cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "ee47f925-1003-4da4-b567-aa1a861bc888",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C77",
+      "claim": "Absence of the ROQUIN RING domain did not alter AMPK ubiquitination.",
+      "claim_type": "EXPLICIT",
+      "source": "Absence of the ROQUIN RING domain did not alter AMPK ubiquitination (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a negative result from experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "0050622f-5879-440e-8f5c-7a688855e14c",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C78",
+      "claim": "Monoubiquitination of endogenous ROQUIN in EL4 cells was detected.",
+      "claim_type": "EXPLICIT",
+      "source": "However, monoubiquitination of endogenous ROQUIN in EL4 cells was detected (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "60e34b2c-0e25-4567-81c8-a2cd9bed0911",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C79",
+      "claim": "ROQUIN can undergo automonoubiquitination in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "By Coomassie staining PAGE-separated peptides of in vitro ubiquitination reactions, we detected a single protein band having higher molecular weight relative to ROQUIN peptide that formed in the presence of wild-type ROQUIN1-484 and ubiquitin (Figure 4e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "c1b5689b-775c-4edb-a3fb-16235efe536a",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C80",
+      "claim": "The higher molecular weight ROQUIN band formed at severely delayed times in the absence of the RING zinc finger.",
+      "claim_type": "EXPLICIT",
+      "source": "This slowly migrating band, consistent with monoubiquitin attachment, formed at severely delayed times in the absence of the RING zinc finger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data from the in vitro ubiquitination assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "1ec3aa17-ed93-4fe6-a9b1-174e292fec6d",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C81",
+      "claim": "Ubiquitin-conjugated ROQUIN was detected by immunoprecipitation when full-length ROQUIN was over-expressed but not with expression of the ROQUIN133-1130 variant.",
+      "claim_type": "EXPLICIT",
+      "source": "We also performed ubiquitination assays in transfected HEK293T cells and detected ubiquitin-conjugated ROQUIN by immunoprecipitation when full-length ROQUIN was over-expressed but not with expression of the ROQUIN133-1130 variant recapitulating the specific RING deletion borne by Tringless T cells (Figure 4f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "758cfe3e-195e-44f2-8f15-83be407f4d97",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C82",
+      "claim": "The ROQUIN RING domain can facilitate automonoubiquitination independent of residues carboxy terminal to Asp484.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our data show that the ROQUIN RING domain can facilitate automonoubiquitination independent of residues carboxy terminal to Asp484.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the in vitro and cellular ubiquitination data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "d7010551-bdb5-4ab0-8390-64bb9082e898",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C83",
+      "claim": "ROQUIN133-1130 lacking the RING domain did not coalesce with eIF3+ stress granules.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that ROQUIN133-1130 lacking the RING domain did not coalesce with eIF3+ stress granules (Pratama et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "81daf961-63bc-4193-bec5-fc3f0c47b355",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C84",
+      "claim": "Full length ROQUIN colocalized with eIF3+ stress granules in the presence of the AMPK agonist, AICAR.",
+      "claim_type": "EXPLICIT",
+      "source": "Full length ROQUIN still colocalized with eIF3+ stress granules in the presence of the AMPK agonist, AICAR (Figure 5a), which alone was ineffective at inducing stress granule formation (data not shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "14222488-1e46-42a6-8bef-48ba3bfc27b2",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C85",
+      "claim": "AICAR alone was ineffective at inducing stress granule formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Full length ROQUIN still colocalized with eIF3+ stress granules in the presence of the AMPK agonist, AICAR (Figure 5a), which alone was ineffective at inducing stress granule formation (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a negative result from experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "d5a794ee-6f90-4068-b022-197f6ac9f6cf",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C86",
+      "claim": "ROQUIN133-1130 mislocalization is a direct consequence of an intrinsic lack of the RING domain.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that ROQUIN133-1130 mislocalization is a direct consequence of an intrinsic lack of the RING domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that AMPK activity does not affect ROQUIN localization.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "d74159f4-4054-44f5-b0bf-b502729c983f",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C87",
+      "claim": "ROQUINC14A localization to eIF3+ stress granules was significantly impaired in response to arsenite exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "Although ROQUINC14A ectopic expression could facilitate de novo stress granule induction in the absence of arsenite treatment comparable to cells transfected with wild-type ROQUIN (Athanasopoulos et al., 2010), we found that in response to arsenite exposure, ROQUINC14A localization to eIF3+ stress granules was significantly impaired (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "a18f2416-e83c-4014-bc91-73a318884c4d",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C88",
+      "claim": "A deleted RING domain did not abrogate ROQUIN133-1130-AMPK\u03b11 colocalization.",
+      "claim_type": "EXPLICIT",
+      "source": "A deleted RING domain did not abrogate ROQUIN133-1130-AMPK\u03b11 colocalization; the two proteins were detected in small aggregates most likely outside of stress granules (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "6d0c9377-ca95-4d3c-9e62-d7ce5ec6bef3",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C89",
+      "claim": "RING deficient ROQUIN133-1130 protein is still capable of directly binding AMPK\u03b11.",
+      "claim_type": "EXPLICIT",
+      "source": "This was consistent with RING deficient ROQUIN133-1130 protein still capable of directly binding AMPK\u03b11 (Figure 5e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 5e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "c01a128d-118d-4bbe-b989-086749bc18e3",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C90",
+      "claim": "ROQUIN RING signaling does not play a role in AMPK recruitment to ROQUIN but rather directs negative regulation of AMPK\u03b11 through sequestration into stress granules following ROQUIN\u2013AMPK\u03b11 complex formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these findings indicate that ROQUIN RING signaling does not play a role in AMPK recruitment to ROQUIN but rather directs negative regulation of AMPK\u03b11 through sequestration into stress granules following ROQUIN\u2013AMPK\u03b11 complex formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data showing binding and localization patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "c0d67033-8bba-4180-832d-bba4c2eea8c3",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C91",
+      "claim": "AMPK activity directly suppresses mTORC1 signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "AMPK activity directly suppresses mTORC1 signaling (Gwinn et al., 2008; Inoki et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "23476466-7ba5-44b4-b460-39888ab2d88d",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C92",
+      "claim": "Deletion of AMPK\u03b11 increases mTORC1 signaling in T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "AMPK activity directly suppresses mTORC1 signaling (Gwinn et al., 2008; Inoki et al., 2003), and deletion of AMPK\u03b11 increases mTORC1 signaling in T cells (MacIver et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "6f313b01-d830-4d24-a077-31b27ad50963",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C93",
+      "claim": "The role of mTOR in promoting effector CD4+ and CD8+ T cell responses is well documented.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the role of mTOR in promoting effector CD4+ and CD8+ T cell responses is well documented (Araki et al., 2011; Chi, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "b74194e2-d819-4756-8b4a-87b16ce0f863",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C94",
+      "claim": "mTOR signaling in Tfh cell formation is incompletely understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the role of mTOR in promoting effector CD4+ and CD8+ T cell responses is well documented (Araki et al., 2011; Chi, 2012), mTOR signaling in Tfh cell formation, and therefore antibody responses, is incompletely understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "832e67d1-3649-4380-a69e-e430963a9d89",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C95",
+      "claim": "In CD4+ T cells, there was a reduction in phosphorylated ribosomal S6 in the absence of ROQUIN RING, indicating diminished mTORC1 function.",
+      "claim_type": "EXPLICIT",
+      "source": "In CD4+ T cells, we found a reduction in phosphorylated ribosomal S6 in the absence of ROQUIN RING, indicating diminished mTORC1 function (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "7b94a17f-f94a-4320-91ea-ca385e0c1ced",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C96",
+      "claim": "The reduction in phosphorylated ribosomal S6 was mild in naive CD44low T cells but accentuated in CD44 high cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect was mild in naive CD44low T cells but accentuated in CD44 high cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the data in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "45ce19e2-2e94-4430-9a5b-bce976706a21",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C97",
+      "claim": "Abated mTOR activity was observed in ROQUIN RING deleted primary MEFs by enhanced phosphorylation of RAPTOR Ser792.",
+      "claim_type": "EXPLICIT",
+      "source": "Reflecting a role for ROQUIN RING activity during early development, abated mTOR activity was also observed in ROQUIN RING deleted primary MEFs by enhanced phosphorylation of RAPTOR Ser792 (Figure 6b), a target residue for AMPK-mediated inhibition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "18f5947f-17cf-4a9e-80e6-785f975a19b2",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C98",
+      "claim": "RAPTOR Ser792 is a target residue for AMPK-mediated inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Reflecting a role for ROQUIN RING activity during early development, abated mTOR activity was also observed in ROQUIN RING deleted primary MEFs by enhanced phosphorylation of RAPTOR Ser792 (Figure 6b), a target residue for AMPK-mediated inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about RAPTOR phosphorylation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "f26294f3-ed74-4fbb-84ff-cca8c0be3edb",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C99",
+      "claim": "Stress granules are AMPK-dependent cytoplasmic compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Stress granules are AMPK-dependent (Hofmann et al., 2012; Mahboubi et al., 2015) cytoplasmic compartments that sequester and inactivate mTORC1 during cellular stress (Thedieck et al., 2013; Wippich et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "874c4d25-2281-4b27-a9bc-8aa2baaa7dea",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C100",
+      "claim": "Stress granules sequester and inactivate mTORC1 during cellular stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Stress granules are AMPK-dependent (Hofmann et al., 2012; Mahboubi et al., 2015) cytoplasmic compartments that sequester and inactivate mTORC1 during cellular stress (Thedieck et al., 2013; Wippich et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "ccbf8053-02e9-4337-a7cb-71b1c07a8ff7",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C101",
+      "claim": "RAPTOR localizes to eIF3+ stress granules in wild-type and Roquinringless primary MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "In primary MEFs, owing to their large cytoplasm and prominent stress granules, we confirmed RAPTOR localization to eIF3+ stress granules in a wild-type and Roquinringless background (Figure 6\u2014figure supplement 1a, b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6\u2014figure supplement 1a, b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "1fd15138-933f-47f3-9baa-064e1bad0963",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C102",
+      "claim": "Arsenite-induced stress granule formation was impeded by AMPK inhibition in MEFs treated with Compound C.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that arsenite-induced stress granule formation was impeded by AMPK inhibition in MEFs treated with Compound C (Figure 6\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6\u2014figure supplement 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "cbb8e361-6b5f-4e00-bb45-e52bc0fda604",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C103",
+      "claim": "Loss of ROQUIN RING signaling did not alter stress granule induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of arsenite-stressed primary MEFs by fluorescence microscopy revealed that loss of ROQUIN RING signaling did not alter stress granule induction (Figure 6c\u2013e)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6c\u2013e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "aed82d88-ff78-4478-b60f-b3ab7e7b02bf",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C104",
+      "claim": "Loss of ROQUIN RING signaling prolonged the rate of stress granule dissolution during stress recovery.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of arsenite-stressed primary MEFs by fluorescence microscopy revealed that loss of ROQUIN RING signaling did not alter stress granule induction (Figure 6c\u2013e) but rather prolonged the rate of stress granule dissolution during stress recovery (Figure 6f, g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6f, g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "5261490d-a9ac-47fb-8bd0-f1f1f600767d",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C105",
+      "claim": "A similar delay in stress granule recovery was mirrored in primary MEFs in which AMPK activity was raised upon treatment with AICAR.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar delay in stress granule recovery was mirrored in primary MEFs in which AMPK activity was raised upon treatment with AICAR (Figure 6\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6\u2014figure supplement 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "cd81bc38-d468-48e4-9a24-6387ab9f4f2d",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C106",
+      "claim": "In sanroque mutant primary MEFs expressing a ROQUIN variant incapable of regulating target mRNAs, stress granule recovery post-arsenite treatment was comparable to wild-type MEFs.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, in sanroque mutant primary MEFs expressing a ROQUIN variant incapable of regulating target mRNAs, we found that stress granule recovery post-arsenite treatment was comparable to wild-type MEFs (Figure 6h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "c42a23bd-f72b-42bf-945e-a76713f038dd",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C107",
+      "claim": "The selective Tfh cell defect in Tringless mice may be a result of a disrupted ROQUIN\u2013AMPK signaling axis, otherwise important in relieving stress granule inhibition of mTOR.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggest that the selective Tfh cell defect in Tringless mice may be a result of a disrupted ROQUIN\u2013AMPK signaling axis, otherwise important in relieving stress granule inhibition of mTOR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "a137dfda-c360-402d-bbdf-03cfec7fa280",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C108",
+      "claim": "ROQUIN RING-mediated stress granule subversion of mTOR activity appears to be independent of the RNA repressive functions of the ROQUIN ROQ domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, ROQUIN RING-mediated stress granule subversion of mTOR activity appears to be independent of the RNA repressive functions of the ROQUIN ROQ domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the sanroque mutant data showing normal stress granule recovery.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "de4c2bbb-be9e-410b-83a0-8d88aec901cf",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C109",
+      "claim": "chino mice harbor a hypomorphic mutation (chi allele) in the Frap1 gene resulting in an Ile205Ser substitution within the HEAT repeat domain of the mTOR protein.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if attenuated mTOR is associated with defective Tfh cell responses as observed in Tringless animals, we examined chino mice harboring a hypomorphic mutation (chi allele) in the Frap1 gene resulting in an Ile205Ser substitution within the HEAT repeat domain of the mTOR protein (Figure 7a), the region dedicated to binding RAPTOR (Kim et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7a and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "fb396c35-4456-49cb-a431-ac1c325369fc",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C110",
+      "claim": "The HEAT repeat domain of mTOR is the region dedicated to binding RAPTOR.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if attenuated mTOR is associated with defective Tfh cell responses as observed in Tringless animals, we examined chino mice harboring a hypomorphic mutation (chi allele) in the Frap1 gene resulting in an Ile205Ser substitution within the HEAT repeat domain of the mTOR protein (Figure 7a), the region dedicated to binding RAPTOR (Kim et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "3bb9274a-68a4-4a37-91c9-097dfc59a443",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C111",
+      "claim": "chino is a viable strain that exhibits growth retardation, intact thymocyte development and output but reduced phosphorylation of ribosomal protein S6 in phorbol-12-myristate-13-acetate treated peripheral CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the in utero lethality observed in mice with complete mTOR deficiency (Gangloff et al., 2004; Murakami et al., 2004), chino is a viable strain that exhibits growth retardation, intact thymocyte development and output but reduced phosphorylation of ribosomal protein S6 in phorbol-12-myristate-13-acetate treated peripheral CD4+ T cells (Daley et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "39648956-7c1d-469c-927c-91d8f50750a0",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C112",
+      "claim": "Mice with complete mTOR deficiency exhibit in utero lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the in utero lethality observed in mice with complete mTOR deficiency (Gangloff et al., 2004; Murakami et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "364d51c0-ee2c-4108-b9b7-537ec5142fe6",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C113",
+      "claim": "chino-mutant T cells exhibit suboptimal phosphorylation of mTOR targets 4EBP1 and S6K in response to physiological TCR activation with CD28 costimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed suboptimal phosphorylation of mTOR targets 4EBP1 and S6K in chino peripheral CD4+ T cells in response to physiological TCR activation with CD28 costimulation (Figure 7b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "ac225c94-750a-491c-b4e5-337fa1057cd7",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C114",
+      "claim": "chino-mutant T cells exhibit significantly elevated FOXP3 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed suboptimal phosphorylation of mTOR targets 4EBP1 and S6K in chino peripheral CD4+ T cells in response to physiological TCR activation with CD28 costimulation (Figure 7b). This was in contrast to significantly elevated FOXP3 expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "3cbd96f2-6ab1-4eee-b432-0fde91f43909",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C115",
+      "claim": "chino-mutant T cells represent a mild deficiency in mTOR signaling reminiscent of a partial loss-of-function in mTOR that exclusively affects extrathymic CD4+ T cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, chino-mutant T cells represent a mild deficiency in mTOR signaling reminiscent of a partial loss-of-function in mTOR (Zhang et al., 2011) that exclusively affects extrathymic CD4+ T cell differentiation as seen in conditional T-cell-deleted Frap1 knockout mice (Delgoffe et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed phenotype and comparison to prior research.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "2a2cc036-ff2d-4210-9a64-ac9a26fbde01",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C116",
+      "claim": "Tfh cells were severely diminished in chino mice immunized with SRBC compared to wild-type controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We immunized chino mice with SRBC, assessed the GC response 5 days later by flow cytometry and found that Tfh cells were severely diminished compared to wild-type controls (Figure 7c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "e73fe3ef-5b47-41fa-8d61-6bdb92cb6de4",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C117",
+      "claim": "The reduction in Tfh cells in chino mice corresponded with a reduction in the GC B cell response.",
+      "claim_type": "EXPLICIT",
+      "source": "We immunized chino mice with SRBC, assessed the GC response 5 days later by flow cytometry and found that Tfh cells were severely diminished compared to wild-type controls (Figure 7c). This corresponded with a reduction in the GC B cell response (Figure 7d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "099f3611-44a8-42a1-b9d6-3acb4e7005ee",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C118",
+      "claim": "The percentages of mTOR mutant PD1 highCXCR5 high Tfh cells were impaired compared to their competing wild-type counterparts in the same mouse in mixed bone marrow chimeras.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if mTOR acts within Tfh cells, we constructed and immunized 50:50 mixed wild-type:chino bone marrow chimeras with SRBC. At d7 post-immunization, we confirmed that the percentages of mTOR mutant PD1 highCXCR5 high Tfh cells were impaired compared to their competing wild-type counterparts in the same mouse (Figure 7e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "677856ce-a78a-4c34-abf7-2ea2af155c2e",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C119",
+      "claim": "Reduced Tfh cells in mTOR mutant cells was associated with reduced BCL6 expression intrinsic to mTOR mutant CD4+ T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At d7 post-immunization, we confirmed that the percentages of mTOR mutant PD1 highCXCR5 high Tfh cells were impaired compared to their competing wild-type counterparts in the same mouse (Figure 7e). This was associated with reduced BCL6 expression intrinsic to mTOR mutant CD4+ T cells (Figure 7f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 7f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "3e66ef25-22cd-4810-946c-79a380d42e88",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C120",
+      "claim": "Tfh cells depend on intact intracellular mTOR signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data therefore demonstrates that Tfh cells depend on intact intracellular mTOR signaling",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the chino mouse data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "c1b7e2f3-5ee3-4dd2-a1f6-53208d650ca2",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "claim_id": "C121",
+      "claim": "The chino Tfh-intrinsic phenotype closely mimics a defective ROQUIN RING deleted Tfh response.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data therefore demonstrates that Tfh cells depend on intact intracellular mTOR signaling and that the chino Tfh-intrinsic phenotype closely mimics a defective ROQUIN RING deleted Tfh response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the similarity of phenotypes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c6295fde-0eb6-40d0-a4be-d2b5b9259e8a",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The ROQUIN RING domain selectively controls Tfh cell formation without affecting other CD4+ T cell lineages. Tringless mice (T cell-specific ROQUIN RING deletion) showed normal Th1, Th2, Th17, and Treg responses but profoundly defective Tfh responses to both LCMV infection and SRBC immunization, with reduced BCL6 expression, IL-21 production, and impaired GC B cell support.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C42-C46 demonstrate normal development of other T cell lineages in vitro and in vivo. Claims C47-C54 provide converging evidence from multiple experimental systems (LCMV and SRBC) showing specific Tfh defects with appropriate flow cytometry markers and functional readouts. The selective phenotype is well-documented across multiple figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "20ba79e4-1d6c-47a0-9f0d-1093c659c166",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ROQUIN directly binds to and negatively regulates AMPK\u03b11 activity through its RING domain. Multiple lines of evidence demonstrate physical interaction (colocalization, proximity ligation assays, coimmunoprecipitation) and functional antagonism (increased ACC phosphorylation in RING-deficient cells).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C73 provide multiple orthogonal methods demonstrating direct ROQUIN-AMPK\u03b11 interaction in different cell types and conditions. Claims C74-C76 show functional consequences with increased AMPK activity (ACC phosphorylation) in RING-deficient cells both in vitro and in vivo. The convergence of biochemical and functional data strongly supports this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "f75a823a-7205-4c64-8b13-3bc1d49bf5b5",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The ROQUIN RING domain facilitates automonoubiquitination independent of C-terminal residues. This was demonstrated through detection of monoubiquitinated ROQUIN in cells, in vitro ubiquitination assays showing RING-dependent ubiquitin conjugation, and cellular assays confirming RING requirement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C82 provide complementary evidence from endogenous protein detection (C78), in vitro biochemical assays (C79-C80), and cellular overexpression systems (C81). The data consistently show RING-dependent autoubiquitination. However, the functional significance of this modification for AMPK regulation remains unclear (C77 shows no AMPK ubiquitination).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "a415cb54-7e17-42cf-9b20-14ab132edd05",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "ROQUIN RING signaling directs AMPK\u03b11 sequestration into stress granules but is not required for ROQUIN-AMPK binding. RING-deficient ROQUIN fails to localize to stress granules, and a catalytic RING mutant (C14A) shows impaired stress granule localization, yet RING-deficient ROQUIN still binds AMPK\u03b11.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C87 demonstrate that RING domain integrity is required for stress granule localization using deletion and point mutant approaches. Claims C88-C89 show that AMPK binding is RING-independent. Claim C90 synthesizes these observations into a mechanistic model. The data support a two-step model: RING-independent binding followed by RING-dependent sequestration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "5dd4f4b8-797e-46b9-8e18-252c01b3fec4",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Loss of ROQUIN RING signaling leads to diminished mTOR activity through prolonged stress granule persistence. RING-deficient cells show reduced phospho-S6, increased RAPTOR phosphorylation, and delayed stress granule dissolution. This effect is independent of ROQUIN's RNA regulatory function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C97 demonstrate reduced mTOR signaling in RING-deficient cells through multiple readouts. Claims C103-C105 show that RING deletion specifically affects stress granule dissolution, not formation, and this phenotype is mimicked by AMPK activation. Claim C106 demonstrates independence from ROQ domain function using sanroque mutants. The mechanistic link (C107-C108) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "4b7b42f6-8e66-4b88-9f9d-4c007d1f3e8c",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "mTOR is required for optimal Tfh cell formation. The hypomorphic chino mTOR mutant shows defective Tfh responses with reduced BCL6 expression in a cell-intrinsic manner, phenocopying the ROQUIN RING deletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C113, C116-C117 demonstrate Tfh defects in chino mice. Claims C118-C119 use mixed bone marrow chimeras to establish cell-intrinsic mTOR requirement with reduced BCL6. Claim C121 notes phenotypic similarity to Tringless mice. The data support mTOR as a downstream effector, though the directness of the ROQUIN-AMPK-mTOR pathway could be more rigorously established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "4761133e-e28d-41b7-a394-351246d59687",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Germline ROQUIN RING deletion (rin/rin) causes perinatal lethality associated with diaphragm muscle atrophy, consistent with overactive AMPK and respiratory failure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 establishes perinatal lethality. Claims C60-C62 provide phenotypic evidence (diaphragm atrophy) and link to known AMPK overactivity phenotypes through citation. The inference about respiratory failure (C62) is reasonable given the diaphragm phenotype, though direct evidence of respiratory failure is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "bb35a44e-ce89-4153-a85a-5170d260d3bd",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "AMPK \u03b2 and \u03b3 regulatory subunits do not associate with ROQUIN+ cytoplasmic granules when ectopically expressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 is supported by microscopy data showing lack of colocalization. This negative result helps establish specificity for AMPK\u03b11 interaction but is a supporting observation rather than a primary finding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "1bc4b27c-25eb-4248-ae94-5cfb51317045",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Absence of the ROQUIN RING domain did not alter AMPK ubiquitination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C77 reports a negative result but provides no data ('data not shown'). This is an important control for understanding the mechanism of AMPK regulation, but without seeing the data, the quality and interpretation cannot be assessed. The claim may be accurate but lacks transparency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "77eaffec-eb71-42f1-8ff8-82442f4a2b64",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "AICAR alone was ineffective at inducing stress granule formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C85 reports a negative result but provides no data ('data not shown'). This control is relevant for interpreting C84 but cannot be properly evaluated without the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "5dbab0eb-dd88-4851-a144-30990222ae1b",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "ROQUIN RING-deficient mice show increased frequency of FOXP3+ Tfr cells within the total Tfh pool, though these Tfr cells are not virus-specific. The abundance of Tfr cells may indicate augmented suppression of Tfh cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 present flow cytometry data on Tfr frequency and specificity. Claim C59 is explicitly stated as inference ('may indicate'). While the data on Tfr frequency are clear, the functional significance (C59) remains speculative without direct suppression assays or Tfr depletion experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    },
+    {
+      "id": "92eeeab6-4760-4102-8dd7-a9137355262e",
+      "content_id": "868ef006-84e4-4c12-b8d3-d27e778ba5b9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Stress granules are AMPK-dependent cytoplasmic compartments that sequester mTORC1 components. RAPTOR localizes to stress granules, and AMPK inhibition impedes stress granule formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C100 cite prior literature establishing stress granule function. Claims C101-C102 provide confirmatory data in the authors' system showing RAPTOR localization and AMPK-dependence. These are important validations of the model but largely confirm published findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:32:55.561454Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "84b8a21c-f6d9-427d-85cf-05d2c17fdfc7",
+      "result_id": "c6295fde-0eb6-40d0-a4be-d2b5b9259e8a"
+    },
+    {
+      "claim_id": "5f235257-5584-4f5c-833b-7c49d1aaf2b6",
+      "result_id": "c6295fde-0eb6-40d0-a4be-d2b5b9259e8a"
+    },
+    {
+      "claim_id": "90d9cb79-c982-4f40-b0d3-0e975b1a3367",
+      "result_id": "c6295fde-0eb6-40d0-a4be-d2b5b9259e8a"
+    },
+    {
+      "claim_id": "09a93d90-58d8-4719-8f91-b53614d2cbd7",
+      "result_id": "c6295fde-0eb6-40d0-a4be-d2b5b9259e8a"
+    },
+    {
+      "claim_id": "5e3dbbfa-b961-4b5a-b159-641aba528c6c",
+      "result_id": "c6295fde-0eb6-40d0-a4be-d2b5b9259e8a"
+    },
+    {
+      "claim_id": "0663e17e-f7f4-477f-b191-d315789a3875",
+      "result_id": "c6295fde-0eb6-40d0-a4be-d2b5b9259e8a"
+    },
+    {
+      "claim_id": "48ebbe3d-cd8f-4de7-8b8a-b7a1c6d55026",
+      "result_id": "c6295fde-0eb6-40d0-a4be-d2b5b9259e8a"
+    },
+    {
+      "claim_id": "928c880b-91ba-41fc-abd1-ba430c930b81",
+      "result_id": "c6295fde-0eb6-40d0-a4be-d2b5b9259e8a"
+    },
+    {
+      "claim_id": "7bfc06ab-0eb9-4d41-800d-5426995fb5ca",
+      "result_id": "c6295fde-0eb6-40d0-a4be-d2b5b9259e8a"
+    },
+    {
+      "claim_id": "fcea0133-6f1d-496a-89b1-cbc6e0596cc9",
+      "result_id": "c6295fde-0eb6-40d0-a4be-d2b5b9259e8a"
+    },
+    {
+      "claim_id": "7c863d8a-155c-4af1-b793-d6693b05f69b",
+      "result_id": "c6295fde-0eb6-40d0-a4be-d2b5b9259e8a"
+    },
+    {
+      "claim_id": "ec306c53-9096-45f7-96fb-a5f96f92c6b9",
+      "result_id": "c6295fde-0eb6-40d0-a4be-d2b5b9259e8a"
+    },
+    {
+      "claim_id": "5459887f-6ebe-4f69-9379-03eac12e5ded",
+      "result_id": "c6295fde-0eb6-40d0-a4be-d2b5b9259e8a"
+    },
+    {
+      "claim_id": "a492e914-2bf9-4bd0-b036-74fc66b7f10f",
+      "result_id": "c6295fde-0eb6-40d0-a4be-d2b5b9259e8a"
+    },
+    {
+      "claim_id": "ac99b6c2-7194-439a-9b8e-6f39416a55f9",
+      "result_id": "20ba79e4-1d6c-47a0-9f0d-1093c659c166"
+    },
+    {
+      "claim_id": "cbc6e708-020a-4cfe-83ba-03f30f9a2ddd",
+      "result_id": "20ba79e4-1d6c-47a0-9f0d-1093c659c166"
+    },
+    {
+      "claim_id": "6934a756-e32d-411f-83e7-d9e33e05dd21",
+      "result_id": "20ba79e4-1d6c-47a0-9f0d-1093c659c166"
+    },
+    {
+      "claim_id": "7c32d39b-527f-4567-bdc7-77bb89d69ba0",
+      "result_id": "20ba79e4-1d6c-47a0-9f0d-1093c659c166"
+    },
+    {
+      "claim_id": "19c50d3b-b69e-4900-a029-32e1cc0e487f",
+      "result_id": "20ba79e4-1d6c-47a0-9f0d-1093c659c166"
+    },
+    {
+      "claim_id": "e55ce56d-09c8-48e7-8fbe-e76252f92a37",
+      "result_id": "20ba79e4-1d6c-47a0-9f0d-1093c659c166"
+    },
+    {
+      "claim_id": "aa0f1f03-05e2-44b6-9892-089f12b8fcd9",
+      "result_id": "20ba79e4-1d6c-47a0-9f0d-1093c659c166"
+    },
+    {
+      "claim_id": "d3969a45-0491-42cb-aa92-04c9645fd9db",
+      "result_id": "20ba79e4-1d6c-47a0-9f0d-1093c659c166"
+    },
+    {
+      "claim_id": "bb53b30f-83a3-4451-8a6e-2143362e21cd",
+      "result_id": "20ba79e4-1d6c-47a0-9f0d-1093c659c166"
+    },
+    {
+      "claim_id": "5481da54-d5fd-444f-9797-2defe26dcf6f",
+      "result_id": "20ba79e4-1d6c-47a0-9f0d-1093c659c166"
+    },
+    {
+      "claim_id": "8b94d8b7-cd54-4f1c-8bfc-ccaeabc39fad",
+      "result_id": "20ba79e4-1d6c-47a0-9f0d-1093c659c166"
+    },
+    {
+      "claim_id": "0050622f-5879-440e-8f5c-7a688855e14c",
+      "result_id": "f75a823a-7205-4c64-8b13-3bc1d49bf5b5"
+    },
+    {
+      "claim_id": "60e34b2c-0e25-4567-81c8-a2cd9bed0911",
+      "result_id": "f75a823a-7205-4c64-8b13-3bc1d49bf5b5"
+    },
+    {
+      "claim_id": "c1b5689b-775c-4edb-a3fb-16235efe536a",
+      "result_id": "f75a823a-7205-4c64-8b13-3bc1d49bf5b5"
+    },
+    {
+      "claim_id": "1ec3aa17-ed93-4fe6-a9b1-174e292fec6d",
+      "result_id": "f75a823a-7205-4c64-8b13-3bc1d49bf5b5"
+    },
+    {
+      "claim_id": "758cfe3e-195e-44f2-8f15-83be407f4d97",
+      "result_id": "f75a823a-7205-4c64-8b13-3bc1d49bf5b5"
+    },
+    {
+      "claim_id": "d7010551-bdb5-4ab0-8390-64bb9082e898",
+      "result_id": "a415cb54-7e17-42cf-9b20-14ab132edd05"
+    },
+    {
+      "claim_id": "81daf961-63bc-4193-bec5-fc3f0c47b355",
+      "result_id": "a415cb54-7e17-42cf-9b20-14ab132edd05"
+    },
+    {
+      "claim_id": "d5a794ee-6f90-4068-b022-197f6ac9f6cf",
+      "result_id": "a415cb54-7e17-42cf-9b20-14ab132edd05"
+    },
+    {
+      "claim_id": "d74159f4-4054-44f5-b0bf-b502729c983f",
+      "result_id": "a415cb54-7e17-42cf-9b20-14ab132edd05"
+    },
+    {
+      "claim_id": "a18f2416-e83c-4014-bc91-73a318884c4d",
+      "result_id": "a415cb54-7e17-42cf-9b20-14ab132edd05"
+    },
+    {
+      "claim_id": "6d0c9377-ca95-4d3c-9e62-d7ce5ec6bef3",
+      "result_id": "a415cb54-7e17-42cf-9b20-14ab132edd05"
+    },
+    {
+      "claim_id": "c01a128d-118d-4bbe-b989-086749bc18e3",
+      "result_id": "a415cb54-7e17-42cf-9b20-14ab132edd05"
+    },
+    {
+      "claim_id": "832e67d1-3649-4380-a69e-e430963a9d89",
+      "result_id": "5dd4f4b8-797e-46b9-8e18-252c01b3fec4"
+    },
+    {
+      "claim_id": "7b94a17f-f94a-4320-91ea-ca385e0c1ced",
+      "result_id": "5dd4f4b8-797e-46b9-8e18-252c01b3fec4"
+    },
+    {
+      "claim_id": "45ce19e2-2e94-4430-9a5b-bce976706a21",
+      "result_id": "5dd4f4b8-797e-46b9-8e18-252c01b3fec4"
+    },
+    {
+      "claim_id": "cbb8e361-6b5f-4e00-bb45-e52bc0fda604",
+      "result_id": "5dd4f4b8-797e-46b9-8e18-252c01b3fec4"
+    },
+    {
+      "claim_id": "aed82d88-ff78-4478-b60f-b3ab7e7b02bf",
+      "result_id": "5dd4f4b8-797e-46b9-8e18-252c01b3fec4"
+    },
+    {
+      "claim_id": "5261490d-a9ac-47fb-8bd0-f1f1f600767d",
+      "result_id": "5dd4f4b8-797e-46b9-8e18-252c01b3fec4"
+    },
+    {
+      "claim_id": "cd81bc38-d468-48e4-9a24-6387ab9f4f2d",
+      "result_id": "5dd4f4b8-797e-46b9-8e18-252c01b3fec4"
+    },
+    {
+      "claim_id": "c42a23bd-f72b-42bf-945e-a76713f038dd",
+      "result_id": "5dd4f4b8-797e-46b9-8e18-252c01b3fec4"
+    },
+    {
+      "claim_id": "a137dfda-c360-402d-bbdf-03cfec7fa280",
+      "result_id": "5dd4f4b8-797e-46b9-8e18-252c01b3fec4"
+    },
+    {
+      "claim_id": "de4c2bbb-be9e-410b-83a0-8d88aec901cf",
+      "result_id": "4b7b42f6-8e66-4b88-9f9d-4c007d1f3e8c"
+    },
+    {
+      "claim_id": "364d51c0-ee2c-4108-b9b7-537ec5142fe6",
+      "result_id": "4b7b42f6-8e66-4b88-9f9d-4c007d1f3e8c"
+    },
+    {
+      "claim_id": "2a2cc036-ff2d-4210-9a64-ac9a26fbde01",
+      "result_id": "4b7b42f6-8e66-4b88-9f9d-4c007d1f3e8c"
+    },
+    {
+      "claim_id": "e73fe3ef-5b47-41fa-8d61-6bdb92cb6de4",
+      "result_id": "4b7b42f6-8e66-4b88-9f9d-4c007d1f3e8c"
+    },
+    {
+      "claim_id": "099f3611-44a8-42a1-b9d6-3acb4e7005ee",
+      "result_id": "4b7b42f6-8e66-4b88-9f9d-4c007d1f3e8c"
+    },
+    {
+      "claim_id": "677856ce-a78a-4c34-abf7-2ea2af155c2e",
+      "result_id": "4b7b42f6-8e66-4b88-9f9d-4c007d1f3e8c"
+    },
+    {
+      "claim_id": "3e66ef25-22cd-4810-946c-79a380d42e88",
+      "result_id": "4b7b42f6-8e66-4b88-9f9d-4c007d1f3e8c"
+    },
+    {
+      "claim_id": "c1b7e2f3-5ee3-4dd2-a1f6-53208d650ca2",
+      "result_id": "4b7b42f6-8e66-4b88-9f9d-4c007d1f3e8c"
+    },
+    {
+      "claim_id": "27fd0acc-9969-4ccd-b275-7b8a3e672726",
+      "result_id": "4761133e-e28d-41b7-a394-351246d59687"
+    },
+    {
+      "claim_id": "37d9a40b-cb3f-4604-be8a-d34df70c16d7",
+      "result_id": "4761133e-e28d-41b7-a394-351246d59687"
+    },
+    {
+      "claim_id": "f7960206-a087-4f6b-ae74-13fe2f7a8e89",
+      "result_id": "4761133e-e28d-41b7-a394-351246d59687"
+    },
+    {
+      "claim_id": "b46a0447-3ab6-4f03-90b6-7e2ab5246872",
+      "result_id": "4761133e-e28d-41b7-a394-351246d59687"
+    },
+    {
+      "claim_id": "e9700d7a-e276-4c4d-82f0-ba39fdac2bb9",
+      "result_id": "bb35a44e-ce89-4153-a85a-5170d260d3bd"
+    },
+    {
+      "claim_id": "ee47f925-1003-4da4-b567-aa1a861bc888",
+      "result_id": "1bc4b27c-25eb-4248-ae94-5cfb51317045"
+    },
+    {
+      "claim_id": "14222488-1e46-42a6-8bef-48ba3bfc27b2",
+      "result_id": "77eaffec-eb71-42f1-8ff8-82442f4a2b64"
+    },
+    {
+      "claim_id": "90114c9b-8437-4b66-a992-8bcef04bb2ad",
+      "result_id": "5dbab0eb-dd88-4851-a144-30990222ae1b"
+    },
+    {
+      "claim_id": "b6b2c066-bfdb-454d-909a-5bc4331dd4ec",
+      "result_id": "5dbab0eb-dd88-4851-a144-30990222ae1b"
+    },
+    {
+      "claim_id": "416257ba-7d38-4201-a1bc-3f416b73c38d",
+      "result_id": "5dbab0eb-dd88-4851-a144-30990222ae1b"
+    },
+    {
+      "claim_id": "9f097ae1-badf-48cd-a855-1e43ac10a1d6",
+      "result_id": "5dbab0eb-dd88-4851-a144-30990222ae1b"
+    },
+    {
+      "claim_id": "f26294f3-ed74-4fbb-84ff-cca8c0be3edb",
+      "result_id": "92eeeab6-4760-4102-8dd7-a9137355262e"
+    },
+    {
+      "claim_id": "874c4d25-2281-4b27-a9bc-8aa2baaa7dea",
+      "result_id": "92eeeab6-4760-4102-8dd7-a9137355262e"
+    },
+    {
+      "claim_id": "ccbf8053-02e9-4337-a7cb-71b1c07a8ff7",
+      "result_id": "92eeeab6-4760-4102-8dd7-a9137355262e"
+    },
+    {
+      "claim_id": "1fd15138-933f-47f3-9baa-064e1bad0963",
+      "result_id": "92eeeab6-4760-4102-8dd7-a9137355262e"
+    }
+  ],
+  "comparisons": []
+}

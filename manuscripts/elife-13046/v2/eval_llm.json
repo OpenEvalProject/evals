@@ -1,0 +1,380 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C11",
+      "C34",
+      "C39"
+    ],
+    "result": "The authors developed an in-focus data acquisition method with the Volta phase plate that achieved 3.2 \u00c5 resolution reconstruction of the 20S proteasome. This was enabled by implementing a double-area focusing strategy that achieved the required nanometer-level focusing precision, improving resolution from ~8\u00c5 to 3.2\u00c5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C11, C34, and C39 collectively demonstrate that accurate focusing is critical for high-resolution VPP imaging. The experimental data shows clear improvement from ~8\u00c5 (with conventional focusing) to 3.2\u00c5 (with double-area focusing), supported by FSC curves (C4, C87) and visual evidence of side chain densities (C86). The methodology is well-documented (C3, C53) and the resolution achievement is validated by multiple criteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The VPP matches or slightly exceeds the performance of conventional defocus CTEM when comparing equivalent numbers of particles. Both techniques show virtually identical resolution improvement as particle numbers increase, with similar B-factors (119 for CTEM vs 123 for VPP).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C89-C92 are well-supported by Figure 6A showing overlapping resolution curves for VPP and CTEM datasets. The CTEM dataset with 35,717 particles reached 3.1\u00c5 while the VPP dataset with 13,469 particles reached 3.2\u00c5, demonstrating comparable performance per particle. The similar B-factors provide additional quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C43",
+      "C44",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Spherical aberration limits the achievable resolution with in-focus phase plate imaging to approximately 2.7\u00c5 for a microscope with 2.7mm Cs. The resolution cutoff varies with phase shift (2.6-3.0\u00c5 range), and achieving sub-2.7\u00c5 resolution would require Cs correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C43-C44, C47-C49 are supported by theoretical CTF calculations shown in Figure 1B-D. The calculations demonstrate a clear resolution cutoff at ~2.7\u00c5 due to spherical aberration effects on the CTF. Figure 1D shows that Cs correction eliminates this cutoff, though the allowed defocus range narrows at higher resolutions. The theoretical framework is sound and consistent with electron optics principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C45",
+      "C46",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The VPP phase shift increases with accumulated dose, showing rapid onset followed by gradual increase. The phase shift behavior is reproducible between neighboring positions on the phase plate and matches previously reported VPP behavior. During data acquisition, the phase plate position was moved every 25-50 images to prevent excessive phase shift buildup.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C45-C46, C69-C71 are well-supported by experimental data in Figure 3 showing phase shift evolution with dose. The measurements were performed under controlled conditions (C66-C68) using ctffind4 software that supports phase shift fitting. The reproducibility between two consecutive positions (C69) and agreement with prior work (C70) strengthen confidence in these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C31",
+      "C32"
+    ],
+    "result": "Initial VPP trials using conventional CTEM focusing schemes achieved only ~8\u00c5 resolution, similar to previous Zernike phase plate results. This limitation was attributed to defocus errors of up to 200nm arising from support film tilt across holes (measured up to 400nm difference across 3.0\u03bcm distance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52, C31-C32 provide a logical explanation for initial poor performance. The measured 400nm defocus variation (C50) leads to ~200nm error with single-area focusing (C51), which is substantial compared to the nanometer-level precision required (Figure 1). This connects the experimental observation of ~8\u00c5 resolution (C31) to a specific technical limitation, providing strong support for the causal relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Spherical aberration affects both optimal defocus and measured defocus in beam-tilt focusing. For the Titan Krios with 10mrad beam tilt, this creates a 270nm offset that must be corrected. The authors compensated by setting target defocus at 250nm in SerialEM to achieve actual -20nm defocus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C65 describe a systematic correction for spherical aberration effects on defocus measurement. The physics is sound (C58, supported by Koster et al. 1987), the calculation is correct (Cs=2.7mm \u00d7 0.01\u00b2rad\u00b2 = 270nm), and the correction strategy is clearly documented (C65). The 10mrad beam tilt choice (C59) serves dual purposes: improved measurement sensitivity and moving tilted beam spots to high spatial frequencies (C60-C62).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "VPP images show higher overall contrast than CTEM images due to improved low-frequency transfer. The VPP exhibits uniform CTF without visible zeroes (first zero beyond 3.7\u00c5), while CTEM shows characteristic oscillations with multiple zeroes. The high contrast aids particle picking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are directly supported by Figure 4 showing side-by-side comparison of VPP and CTEM images and their power spectra. The visual evidence clearly demonstrates the contrast difference (Figure 4A vs 4C) and the distinct CTF characteristics (Figure 4B vs 4D). The inference about particle picking benefits (C80) is reasonable given the improved visibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "In a screening test using the first ~10 micrographs without extensive processing, VPP achieved 3.9\u00c5 resolution compared to 4.2\u00c5 for CTEM (first 12 micrographs, matched particle numbers ~2000). This suggests VPP may have advantages for initial sample screening or samples with mixed particle quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C108 describe a controlled comparison with clearly defined methodology (no classification, movie processing, or polishing). The 0.3\u00c5 advantage for VPP (C107) is shown in Figure 6A and represents a meaningful difference for screening purposes. The inference about screening advantages (C108) is reasonable but appropriately qualified as speculative ('may have').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Analysis of resolution versus particle number data reveals two distinct B-factor regimes: ~100 \u00c5\u00b2 for 500-2000 particles at resolutions above 3.6\u00c5, and ~200 \u00c5\u00b2 for >2000 particles at higher resolutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 are supported by Figure 6B showing linear fits to log(N) vs 1/d\u00b2 plots. The identification of two distinct regimes with different B-factors is based on standard Rosenthal-Henderson analysis. However, the physical interpretation of why B-factor changes at this transition is not provided, which limits mechanistic understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C109",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Despite achieving 3.2\u00c5 resolution, VPP performance remains below theoretical expectations. The main limiting factors are focusing accuracy, spherical aberration, and phase shift variation. Future improvements could include adjusting defocus according to phase shift evolution, which varies as shown in Figure 1C and requires advance calibration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109, C111-C115 provide critical assessment of current limitations and suggest improvements. The gap between achieved and theoretical performance (C109) is supported by comparison to Chang et al. 2010. The identification of limiting factors (C111) follows logically from the experimental results and theoretical analysis. The suggestions for improvement (C112-C115) are reasonable but remain untested, appropriately framed as future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "A VPP dataset at -50nm defocus with 6340 particles reached 3.5\u00c5 resolution, marginally worse (0.2\u00c5) than the -20nm dataset with equivalent particles. This underperformance relative to theoretical predictions suggests either systematic focusing error or phase plate performance variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C97 identify an unexpected result where the -50nm dataset underperformed theoretical predictions from Figures 1C and 3. While the observation is clear (C95), the explanation (C97) is speculative. The 0.2\u00c5 difference could reflect focusing errors, phase plate variation, or other uncontrolled factors. Without additional experiments or analysis, the cause remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The in-focus VPP approach reduced throughput ~1.7-fold (27 vs 45 micrographs/hour) due to precise focusing requirements and is more demanding in user experience. For 'easy' targets like large or highly symmetric particles, CTEM may be more time-efficient. The authors used 20S proteasome as an easy target to evaluate VPP performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 provide honest assessment of practical limitations. The throughput reduction (C120) is quantified from actual data collection. The inference about CTEM efficiency for easy targets (C122) is logical given comparable performance but lower throughput. The choice of 20S proteasome as a test case (C123) is appropriate for performance evaluation, though it limits conclusions about difficult targets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The VPP could enable single particle analysis of challenging samples (small size, heterogeneity, flexibility) that are difficult for conventional defocus approaches. The full potential will be demonstrated by difficult targets, and the extra effort may pay off for such samples, potentially widening the overlap between cryo-EM and X-ray crystallography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C124-C126 are speculative about future applications to difficult targets. While the improved contrast and uniform spectral coverage provide theoretical basis for these expectations, the manuscript only demonstrates performance on an 'easy' target (20S proteasome, C123). The claims are appropriately qualified with 'could' and 'expected,' but lack direct experimental validation for challenging samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Two defocus strategies exist for phase plate SPA: defocused (similar to CTEM) and in-focus. The defocused approach is simpler and faster but provides limited benefits. The in-focus approach eliminates CTF zeroes but requires precise focusing and cannot correct defocus errors post-acquisition. Initial defocused VPP trials were unsuccessful due to lack of software support, but future exploration is needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C42, C116-C118 provide comprehensive discussion of two acquisition strategies. The advantages and disadvantages of each approach (C36-C40) are logically derived from CTF theory and practical considerations. The unsuccessful defocused trials (C41) and greater success with in-focus approach (C42) are based on experimental data. The call for future exploration (C116-C118) is appropriate given that only one approach was fully developed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The 3.2\u00c5 resolution reconstruction from 13,469 particles (selected from 35,469 initial particles after 3D classification) shows side chain densities. Both 'gold standard' FSC and external map FSC give identical 3.2\u00c5 resolution estimates. This represents the highest resolution phase plate single particle reconstruction reported to date.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 describe the main reconstruction result with appropriate validation. The particle selection process (C85) is standard practice. The presence of side chain densities (C86, Figure 5B) confirms near-atomic resolution. The agreement between two independent FSC criteria (C87, Figure 5C) strengthens confidence. The claim of highest resolution (C88) is a factual statement about the literature at time of publication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "A VPP dataset collected on a Tecnai F20 microscope (200kV, inferior optical performance and stage stability) with Falcon II detector reached 4.5\u00c5 resolution, which is respectable for such a system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 demonstrate VPP applicability on a lower-tier microscope. The 4.5\u00c5 resolution (C98, Figure 6A) is appropriately contextualized relative to the microscope's limitations (C99). This provides useful information about VPP performance across different instrument classes, though the comparison is limited by different detectors and operating voltages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Campbell et al. (2015) achieved 2.8\u00c5 with 49,954 particles but used extensive CTF screening (19% of ~1000 micrographs retained) and super-resolution mode. The authors used 80% of micrographs with only visual screening and counting mode, which may explain their slightly lower resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 provide fair comparison to prior work. The data from Campbell et al. (C100-C101) is accurately cited. The methodological differences (C102-C103) are clearly stated and provide plausible explanation for the resolution difference. However, the relative contributions of screening stringency vs. super-resolution mode cannot be quantified from the available information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Sample preparation and data acquisition methods are described, including protein expression/purification, grid preparation, microscope configurations (Titan Krios and Tecnai F20), and automated data collection using SerialEM with custom macros.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C135 provide detailed methodology with appropriate citations. The sample preparation (C127-C131) follows standard protocols. The microscope configurations (C132-C134) are fully specified. The use of automated acquisition (C135) is consistent with claims throughout the manuscript (C30). These methodological details are sufficient for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Data processing involved visual screening (retaining ~80% of images), frame alignment, reference-free or reference-based particle picking, 3D classification with 6 classes and D7 symmetry, followed by 3D refinement, movie processing, and particle polishing in Relion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C142 describe standard cryo-EM data processing workflow with appropriate software citations. The visual screening approach (C136-C137) is clearly stated. The use of different picking methods for different datasets (C139-C140) is reasonable. The 3D classification and refinement steps (C141-C142) follow established best practices. The methodology is sufficiently detailed for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background and context claims about direct electron detectors, phase plate principles, Zernike phase plate characteristics and limitations, VPP development and design, and prior applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C25 provide literature context and technical background. These are well-supported by appropriate citations and represent established knowledge in the field. The descriptions of phase plate principles (C12-C15), Zernike phase plate issues (C19-C20), and VPP design (C21-C25) are accurate and properly referenced. This background appropriately frames the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C33",
+      "C55",
+      "C66",
+      "C67",
+      "C68",
+      "C72",
+      "C73",
+      "C74",
+      "C77",
+      "C78",
+      "C83",
+      "C84"
+    ],
+    "result": "Various technical and methodological details about VPP operation, phase shift management, focusing procedures, phase shift measurement, and detector dose rate effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30, C33, C55, C66-C68, C72-C74, C77-C78, C83-C84 describe technical details and operational considerations. These are supported by experimental data (e.g., Figure 3 for phase shift), citations (e.g., Li et al. 2013b for dose rate effects), or logical inference from established principles. The claims accurately represent the technical aspects of the methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C110",
+      "C119"
+    ],
+    "result": "Speculative claims about future improvements and applications: further experience will improve performance, and VPP could be ideal for quick screening and initial model building.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110 and C119 are forward-looking statements about potential improvements and applications. While C119 has some support from the screening test (C104-C108), both claims remain speculative about future developments. They are appropriately qualified but lack direct experimental validation in the current work.",
+    "result_type": "MINOR"
+  }
+]

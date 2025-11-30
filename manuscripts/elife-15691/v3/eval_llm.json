@@ -1,0 +1,351 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Prior work by the authors demonstrated that lactic acidosis protects cancer cells from glucose deprivation through multiple mechanisms, including reduced glycolysis, cell cycle arrest, autophagy induction, and apoptosis inhibition. This protective effect requires both lactate and protons to be present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are all supported by citations to the authors' previous publications (Wu et al., 2012; Xie et al., 2014). These claims establish the rationale for the current study but represent prior work rather than new findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Prior literature demonstrates that lactic acidosis has multiple tumor-promoting effects including serving as a prognostic indicator for metastasis and poor survival, and that pH alkalization can inhibit tumor progression. Lactic acidosis also affects immune cells, metabolism, chromosomal stability, and angiogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C12 are all supported by appropriate citations to prior literature. These claims provide background context for the therapeutic rationale but do not represent findings from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Large HCC (>3 cm) is not suitable for curative therapy per BCLC guidelines, and TACE is the recommended but ineffective treatment for large tumors. TACE works through local drug delivery and arterial occlusion, but embolization-induced hypoxia stimulates angiogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 are supported by appropriate citations to clinical guidelines and literature. These establish the clinical problem being addressed but represent background knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C86",
+      "C87"
+    ],
+    "result": "The authors hypothesized that HCC contains ~20 mM lactate creating lactic acidosis, which becomes trapped after TACE and attenuates therapeutic efficacy. They proposed that neutralizing this acidosis with bicarbonate would enhance tumor necrosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C17 relies on unpublished data without validation or methodology details. Claims C86-C87 are speculative hypotheses. The lactate measurement is critical to the study rationale but lacks peer-reviewed support or methodological transparency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "In the nonrandomized study, 27 patients received cTACE (2010-2012) and 30 patients received TILA-TACE (2012-2013). Patient characteristics were generally comparable between groups, though the cTACE group had more multifocal tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "The nonrandomized design with sequential enrollment (C24-C25) introduces temporal bias. The imbalance in multifocal tumors (C27) is a significant confounding factor that could affect outcomes. The lack of randomization and presence of baseline differences undermine causal inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In the nonrandomized study, TILA-TACE achieved significantly lower viable tumor residues (VTR) than cTACE (7.1% vs 45.1%, p<0.0001), representing an 81.1% therapeutic improvement. This difference persisted after multivariable adjustment, and no clinical covariates were significantly associated with VTR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the statistical significance is clear (C30), the nonrandomized design with sequential enrollment and baseline imbalances (particularly multifocal tumors, C27) introduces substantial confounding. The claim that covariates were not associated with VTR (C31) is concerning given the baseline differences. The dramatic effect size may be inflated by selection bias and temporal trends in practice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "In the nonrandomized study, TILA-TACE achieved 100% objective response rate (23% CR, 77% PR) compared to 44.4% ORR in cTACE (0% CR, 44.4% PR, 33.3% SD, 22.2% PD). This difference remained significant after adjusting for tumor volume (p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The 100% ORR in TILA-TACE (C36) is remarkable but raises concerns about selection bias in the nonrandomized design. The complete absence of SD or PD in TILA-TACE versus 55.5% SD/PD in cTACE suggests possible systematic differences beyond the intervention. Statistical adjustment (C37) cannot fully address unmeasured confounding in nonrandomized studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Based on power calculations from the nonrandomized study, 20 patients were randomized 1:1 to cTACE or TILA-TACE in 2014 (n=10 each). Patient characteristics were well matched between groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RCT design (C39) with matched baseline characteristics (C40) addresses the limitations of the nonrandomized study. The sample size calculation (C38) is appropriate for the primary endpoint of local tumor control, though the authors acknowledge it is underpowered for survival analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "In the RCT, TILA-TACE achieved 5.5-fold lower VTR than cTACE (4.6% vs 25.4%, p=0.008). After adjusting for tumor volume, VTR was 4.1% vs 28.1% (p=0.0009), representing an 80.1% therapeutic improvement, nearly identical to the nonrandomized study (81.1%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RCT provides strong evidence for the primary endpoint (C41, C43). The consistency between crude and adjusted analyses (C92-C95) and the near-identical therapeutic improvement across both studies (C44, C63) strengthen confidence in the findings. However, the small sample size (n=10 per group) limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "In the RCT, TILA-TACE achieved 100% ORR (4 CR, 8 PR out of 12 tumors) versus 63.6% ORR in cTACE (1 CR, 6 PR, 2 SD, 2 PD out of 11 tumors), with p=0.003 after adjustment for tumor volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RCT confirms superior tumor response with TILA-TACE (C45-C49). The 100% ORR is consistent across both studies, and the randomized design strengthens causal inference. The statistical significance after adjustment (C47) supports the robustness of the finding despite small sample size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In the nonrandomized study, TILA-TACE showed significantly better survival than cTACE (median >41 months vs 14 months, p=0.0052). The 1-, 2-, 3-year survival rates were 82.8%, 67.7%, 61.8% for TILA-TACE versus 66.7%, 40.7%, 25.9% for cTACE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the survival difference is statistically significant (C54), the nonrandomized design with sequential enrollment and baseline imbalances limits causal interpretation. The dramatic survival difference (median >41 vs 14 months) may reflect selection bias, temporal trends in supportive care, or unmeasured confounding factors beyond the intervention itself.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "In the RCT, 4 patients crossed over from cTACE to TILA-TACE. Intent-to-treat analysis showed no significant survival difference between groups, but per-protocol analysis suggested a survival advantage for TILA-TACE that was not statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge that crossover (C55) confounded survival analysis in the RCT. The lack of significant difference in ITT analysis (C59) and the trend in PP analysis (C60) are honestly reported. Claims C73-C74, C76-C77 appropriately acknowledge the study was not designed or powered for survival analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Pooling all patients from both studies showed a significant survival difference between cTACE and TILA-TACE groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Pooling nonrandomized and randomized data (C61) is methodologically inappropriate. This combines studies with different designs, enrollment periods, and potential confounders. The pooled analysis does not provide valid evidence and may mislead regarding survival benefits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C78",
+      "C79"
+    ],
+    "result": "Adverse effects were comparable between TILA-TACE and cTACE groups, demonstrating that TILA-TACE is as tolerable as cTACE and that local bicarbonate administration is safe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The safety data (C62) from Tables 5 and 6 support comparable tolerability (C78). The conclusion that local bicarbonate is safe (C79) is reasonable based on the observed adverse event profile, though longer-term safety data would strengthen this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "The therapeutic improvements by TILA-TACE were nearly identical between the nonrandomized (81.1%) and randomized (80.1%) studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The consistency of therapeutic improvement across both studies (C63, C32, C44) strengthens confidence in the reproducibility of the local tumor control effect, despite the limitations of the nonrandomized study. This consistency is a notable strength of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Historical literature shows that average objective tumor response to TACE is 35% (range 16-61%), increasing to >50% by 2012, with complete response being rare (0-4.8%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C64-C66) are appropriately cited and provide context for evaluating the study's results. The authors' cTACE results align with historical benchmarks, supporting the validity of their control group.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Prior studies have established that better local tumor control is an independent prognostic indicator for patient survival, with clear prognostic differences between complete response, partial response, stable disease, and progressive disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 are well-supported by multiple citations and provide important context linking local tumor control to survival outcomes, justifying the study's focus on VTR as the primary endpoint.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "TILA-TACE achieved remarkable improvement in local tumor control and suggested early signs of improved survival. However, 16 patients in TILA-TACE eventually developed progressive disease, suggesting that fast complete response and timely control of recurrent tumors may improve survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is well-supported by the RCT data. Claim C70 is appropriately cautious given study limitations. The observation of progressive disease (C71) and the inference about the importance of rapid control (C72) are reasonable, though C72 is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The RCT was designed for local tumor control, not survival, and was limited by small sample size and crossover. Survival assessment is more complex than local control assessment due to multiple confounding factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge study limitations (C73-C74, C76-C77) and explain why survival analysis is more complex than local control assessment (C75). This transparent discussion of limitations is a strength of the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C23"
+    ],
+    "result": "Bicarbonate infusion locally into HCC markedly enhances the anticancer activity of TACE, supporting the concept that neutralizing intratumoral lactic acidosis combined with glucose deprivation is an effective approach to control tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The main conclusion (C80, C23) is well-supported by the RCT data showing improved local tumor control. The broader mechanistic claim (C81) is reasonably supported by the combination of prior mechanistic work and current clinical findings, though direct mechanistic validation in this study is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C22",
+      "C70"
+    ],
+    "result": "Bicarbonate may bring survival benefit, with TILA-TACE suggesting early signs of improved survival for patients with large HCCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These cautiously worded claims (C22, C70) appropriately reflect uncertainty. The nonrandomized study showed significant survival differences, but the RCT was underpowered and confounded by crossover. The survival benefit remains unproven and requires a larger, adequately powered RCT.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The study was conducted with appropriate ethical approvals and trial registration. Treatment protocols, imaging assessment methods, and treatment characteristics are described.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological and ethical claims (C82-C83, C96-C99) are appropriately documented. The trial registration (C83) and ethical approval (C82) demonstrate proper study conduct. The treatment and assessment protocols are adequately described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C88"
+    ],
+    "result": "Large HCC size is a major obstacle limiting TACE efficacy, with larger tumors having poorer outcomes. Assessment of tumor necrosis after first treatment is most objective with least interference from confounding factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 are supported by appropriate citations. Claim C88 represents a reasonable methodological justification for focusing on first treatment response, though this is based on the authors' reasoning rather than empirical validation.",
+    "result_type": "MINOR"
+  }
+]

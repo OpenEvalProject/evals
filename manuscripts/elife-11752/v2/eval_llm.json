@@ -1,0 +1,427 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors introduce a new formulation of transcriptome variations called Local Splicing Variations (LSVs), which are defined as splits in a splice graph where multiple edges either come into or from a single reference exon. LSVs capture both classical binary alternative splicing events and more complex splicing variations involving more than two junctions, and can be quantified directly from junction spanning reads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C46 provide a comprehensive definition of LSVs and their properties. The formulation is clearly defined (C35-C37), captures both classical and complex splicing events (C38-C40), includes different LSV types (C41-C42), and can be quantified from junction reads (C45-C46). This is a methodological contribution that is well-supported by the formal definitions and examples provided in Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The MAJIQ method achieves high accuracy for PSI (R=0.8) and dPSI (R=0.95) quantification by RT-PCR, with reproducibility ratios of 77-86% for differential splicing detection, comparing favorably to alternative methods like MISO (61%) and rMATS (67%). Including de-novo junctions increased detection by over 30% while maintaining reproducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C61 are well-supported by extensive RT-PCR validation (208 experiments, C48-C49) and reproducibility analysis using biological replicates (C51-C55). The comparison to other methods is systematic and includes multiple metrics (Figure 2). The 95% RT-PCR reproducibility (C61) and the benefit of de-novo junction detection (C60) are directly supported by experimental data. The statistical rigor and multiple validation approaches strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Complex LSVs constitute 20.6-33.7% of LSVs in human annotated transcripts and are substantially present across metazoans. Adding RNA-Seq data to annotations increases both the total number of LSVs and the fraction of complex LSVs, with dramatic effects in less well-annotated species like opossum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 are supported by systematic cross-species analysis shown in Figure 3. The variation in complex LSV percentages across species and annotation databases (C62-C63) is documented, and the effect of adding RNA-Seq data is quantified (C64-C67). However, the authors appropriately note that this analysis is confounded by annotation quality and read coverage, which adds appropriate uncertainty to the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "A genome-wide analysis of 100,512 LSVs across 12 mouse tissues reveals that complex LSVs comprise 36.2% of detected variations and 27.5% of quantifiable variations. Complex LSVs show higher rates of junction switching (12% vs 5% for binary LSVs) and more evenly distributed junction usage. Widespread intron retention is observed, especially in brain tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C88 present a comprehensive genome-wide characterization supported by extensive data from 12 mouse tissues with 8 samples per tissue (Figure 4). The quantitative metrics for LSV usage (C71-C75), intron retention (C76-C78), LSV types (C79-C85), and overall complexity (C86-C88) are all directly supported by the data. The conservative threshold of \u03a8>10% for calling functional junctions is appropriate and well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The biochemical 'proximity rule' is commonly not reflected at the genomic level. Proximal junctions are dominant in approximately two-thirds of binary LSVs, while complex LSVs tend to have more evenly distributed inclusion levels with no dominant junction, supporting possible functionality of multiple isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 are supported by analysis shown in Figure 4D. The finding that the proximity rule is not universally followed (C89) and that complex LSVs show more even distribution (C91) is well-documented. However, the inference about functionality (C92) is speculative and would benefit from additional functional validation. The statistical support is adequate but the functional interpretation remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Tissue-specific analysis reveals clear clusters for brain (875 changing LSVs) and muscle (657 changing LSVs) tissues. Complex LSVs make up 47% of differentially spliced LSVs, representing a 1.7-fold enrichment compared to their proportion in the quantifiable set (P<2.3\u00d710\u207b\u00b2\u2077\u2078).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C102 are strongly supported by genome-wide differential splicing analysis (Figure 4E) with appropriate statistical testing. The tissue clustering patterns (C93-C100) align with previous reports, and the enrichment of complex LSVs in differential splicing (C101-C102) is highly significant. The binomial test with extremely low p-value provides strong statistical support for the enrichment claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Meta-analysis of 31 mouse datasets shows a median fraction of complex LSVs of 0.309 and median fold enrichment of 1.63 in differentially spliced LSVs, with significant enrichment in 30/32 datasets (p<1\u00d710\u207b\u00b3, Bonferroni corrected). This consistent overrepresentation suggests complex LSVs are an important aspect of regulated alternative splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 are supported by extensive meta-analysis across diverse experimental contexts (Figure 5A). The consistency of enrichment across 30/32 datasets with appropriate multiple testing correction strengthens the conclusion. However, the inference about biological importance (C106) would be strengthened by additional functional validation beyond the statistical enrichment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Over 20% of complex LSVs detected in multiple samples had the third most differentially included junction exhibit |\u0394\u03a8|>10% (2,236 LSVs). When considering additional experimental contexts, over 39% of complex LSVs had their third most included junction with \u03a8>10% (4,201 LSVs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 are supported by analysis shown in Figure 5B and supplementary figures. The quantification of third junction usage in complex LSVs provides evidence for functional complexity beyond binary events. The increase from 20% to 39% when including additional contexts (C109-C110) demonstrates that many complex LSVs show context-dependent regulation of multiple junctions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Tissue-regulated splicing involves significantly higher conservation in introns proximal to variable exonic segments. Differentially spliced complex LSVs exhibit significantly higher conservation levels in these regions compared to binary LSVs, possibly due to more complex splicing control requirements or tighter functional constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 are supported by conservation analysis shown in Figure 5C using phastCons60 scores. The higher conservation in complex LSVs compared to binary LSVs is a novel finding. However, the explanations for this observation (C113-C114) are speculative and labeled as such by the authors. The conservation data is solid, but the mechanistic interpretation requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Protein feature enrichment analysis shows that differentially included binary and complex LSVs are both enriched for low-complexity, disordered regions (p<1\u00d710\u207b\u2074). Complex LSVs additionally show enrichment for specific protein families (spectrin/filamin) and domains (RNA recognition motifs) that are largely distinct from those enriched in binary LSVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C121 are supported by systematic protein feature enrichment analysis with appropriate statistical testing (Fisher's exact test with permutation-based correction). The finding that complex and binary LSVs affect distinct protein features (C119) is novel and well-supported. However, the functional interpretation (C120-C121) is inferential and would benefit from experimental validation of the predicted effects on protein function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "MAJIQ detected a previously uncharacterized, brain-specific exon 14 in Ptbp1, a well-studied splicing factor critical to neural development. This exon shows conserved splice sites between mouse and human, inserts multiple premature termination codons, and is likely targeted by nonsense-mediated decay. The exon was not detected by Cufflinks but was validated by RT-PCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C130 are strongly supported by multiple lines of evidence: RNA-seq data (Figure 6A), RT-PCR validation across tissues (Figure 6B, Figure 6\u2014figure supplement 2), and sequence conservation analysis (Figure 6\u2014figure supplement 1). The inference about NMD targeting (C130) is reasonable given the presence of conserved PTCs, though direct NMD validation would strengthen this claim. The comparison to Cufflinks (C124) demonstrates the advantage of the LSV approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Ptbp1 has two independent NMD-inducing mechanisms: exclusion of exon 16 (previously known) and inclusion of novel exon 14. These events are independent, with exon 14 inclusion playing a larger role in the brain regions examined (26% of cerebellum transcripts contain PTCs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C136 are supported by RNA-seq data showing the independence of the two events (Figure 6\u2014figure supplement 1C) and quantification of exon 14 inclusion. The inference about independent mechanisms (C135) is well-supported by the lack of association between the two events. The quantification of 26% PTC-containing transcripts (C136) provides important functional context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Ptbp1 exon 14 shows clear developmental regulation with dramatic increase in inclusion from P15 through adulthood in mouse cortex. This complex LSV offers a novel mechanism for postnatal neuronal reduction in Ptbp1, complementing the known embryonic miR-124-mediated downregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C141 are supported by developmental time course data (Figure 6C) and prior literature on miR-124 regulation. The developmental regulation of exon 14 (C140) is clearly demonstrated. The inference about a novel postnatal mechanism (C141) is reasonable given the timing and the known limitations of miR-124 regulation, though direct functional validation of the NMD effect would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "AVISPA analysis identified Rbfox family binding motifs as important for neuronal splicing of Ptbp1 exon 14. Conserved Rbfox binding sites downstream of exon 14 suggest enhancement of inclusion. Rbfox1 and Rbfox2 knockout experiments show marked decrease in exon 14 inclusion, validating the regulatory hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C147 are strongly supported by multiple lines of evidence: AVISPA motif analysis (Figure 6D), sequence conservation (C144), and functional validation in Rbfox1 and Rbfox2 knockout mice (Figure 6E, Figure 6\u2014figure supplement 1D-E). The convergence of computational prediction and experimental validation provides strong support for Rbfox regulation of this exon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "CAMK2 subunits show complex splicing patterns affecting nuclear localization signals. MAJIQ accurately captures known splicing patterns in Camk2d (isoforms A, B, C) and also detects isolated inclusion of exon 23 in heart, which was missed by previous studies using junction-spanning primers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C157 are supported by RT-PCR validation (Figure 7A, Figure 1B) and comparison to prior literature. The detection of isolated exon 23 inclusion in heart (C156) represents a novel finding validated by both RT-PCR and independent heart development data. The claim about previous studies missing this event (C157) is supported by citations showing their primer design would preclude detection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Developmental analysis shows a switch in Camk2d splicing from isoform C to isoform A in brain, reaching over 80% A isoform by postnatal day 15 (a time of intense synaptogenesis). In heart, there is a more modest postnatal increase in exon 23 inclusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C158-C160 are supported by developmental time course data from cortex and heart (Figure 7B). The brain developmental switch is dramatic and well-documented. The timing correlation with synaptogenesis (C159) is supported by citation. The heart pattern (C160) is more subtle but consistent across RT-PCR and RNA-seq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "In Alzheimer's disease brains, CAMK2D shows a marked ~38% decrease in the neuronal-specific isoform with reciprocal increase in isoform C. Changes are also observed in CAMK2G. These findings are reproducible in a second independent cohort of 157 AD and 128 control samples across three brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C166 are supported by analysis of two independent AD cohorts (Figure 7C, Figure 7\u2014figure supplement 4). The initial finding (C163) is validated in a larger independent study (C166), which is a strength. However, the sample size in the initial cohort is small (n=3 per group), and the mechanistic link between CAMK2 splicing changes and AD pathology is not established. The conservation of affected exons (C165) supports functional relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "Approximately 200 LSVs are reproducibly differentially spliced between AD and normal brains, enriched in GO terms related to cytoskeleton, GTPase regulator activity, and synapse organization. Among these, 79 are complex LSVs, representing a significant 1.2-fold enrichment (p=0.04).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C169 are supported by analysis of two AD cohorts with appropriate reproducibility criteria. The GO term enrichment (C168) is biologically plausible for AD. However, the enrichment of complex LSVs (C169) is modest (1.2-fold) with a borderline p-value (0.04), especially compared to the much stronger enrichments seen in other contexts. The relatively low reproducibility rate (200 LSVs from initial detection) may reflect the small initial cohort size and coverage differences between datasets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "Additional validated complex LSVs include brain-specific isoforms of Klc1 (an amyloid-beta accumulation modifier), Clta (showing developmental dynamics and AD dysregulation), and Eif4g3 (with cerebellum-specific microexon and novel muscle-specific exon).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C173 are supported by RT-PCR validation and RNA-seq data shown in supplementary figures (Figure 7\u2014figure supplements 5-7). These examples demonstrate the breadth of complex LSVs detected by MAJIQ. The Clta finding (C171) is particularly strong as it shows both developmental regulation and AD dysregulation in two independent cohorts. These serve as additional validation of the method's utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Complex LSVs constitute over 30% of tissue-dependent transcript variations, affect specific protein families, and their prevalence is conserved in humans. Hundreds of LSVs are specific to brain subregions or altered in Alzheimer's patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 represent the main findings stated in the abstract and are supported by the comprehensive analyses described in the manuscript. The 30% figure (C3) is supported by genome-wide analysis (C86-C87, C101). Protein family effects (C4) are supported by enrichment analysis (C116-C119). Conservation in humans (C5) is supported by cross-species analysis (C62-C68). Brain subregion specificity (C6) and AD alterations (C7) are supported by tissue-specific and disease analyses (C93-C100, C163-C169).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Novel isoforms are identified in the Camk2 family and a novel poison exon in Ptbp1, a key splice factor in neurogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 summarize major novel discoveries. The Ptbp1 poison exon (C8) is extensively validated (C122-C147). The role of Ptbp1 in neurogenesis (C9) is supported by literature (C123, C137-C139). Novel Camk2 isoforms (C10) are validated by RT-PCR and developmental analysis (C148-C160). These represent significant novel biological findings enabled by the LSV approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "The LSV formulation addresses a representational gap between full transcripts and classical binary AS events. MAJIQ offers a unique approach spanning formulation, detection, quantification, and visualization, with LSVs quantifiable directly from junction reads and offering significant accuracy improvements over alternative methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C178 summarize the methodological contribution. The gap in existing approaches (C174-C175) is well-established. MAJIQ's comprehensive approach (C176) is demonstrated throughout. The advantage over ASMs (C177) is clear in terms of quantifiability. The accuracy improvements (C178) are supported by extensive validation (C48-C61). These claims accurately represent the methodological advances.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183"
+    ],
+    "result": "Complex LSVs are enriched in regulated splicing across diverse contexts, less likely to have dominant splice junctions, and commonly overcome the biochemical proximity rule. They tend to occur in unstructured protein regions and affect distinct protein domains compared to binary LSVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C179-C183 synthesize key findings about complex LSV properties. Enrichment in regulated splicing (C179) is supported by meta-analysis (C103-C106). The proximity rule finding (C180) and lack of dominant junctions (C181) are supported by genome-wide analysis (C89-C91). Protein feature associations (C182-C183) are supported by enrichment analysis (C115-C121). These represent important biological insights about complex LSVs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C69"
+    ],
+    "result": "Previously defined AS types fail to capture the full complexity of spliceosome decisions, representing them as strictly binary and involving only two exons or splice sites. Complex LSVs are likely to be removed, undetected, or mislabeled by algorithms that only quantify binary AS events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 and C69 articulate the motivation for the LSV approach. The limitations of classical AS types (C30-C32) are well-established in the field and supported by the examples shown. The inference about existing algorithms (C69) is reasonable given their design constraints, though the authors appropriately note this as a likely consequence rather than directly demonstrating it for all methods.",
+    "result_type": "MINOR"
+  }
+]

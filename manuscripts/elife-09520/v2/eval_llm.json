@@ -1,0 +1,254 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Swaziland achieved dramatic reductions in malaria incidence from 2.9 to 0.07 cases per 1,000 people per year between 1999 and the study period. Between 2010-2014, only 2,129 cases were confirmed with 1,524 investigated; of these, 870 (57%) were imported and 592 (38.8%) were locally-acquired, with the proportion of imported cases increasing over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 and C46-C51 provide consistent surveillance data from Swaziland's National Malaria Control Program showing dramatic declines in malaria incidence and a shift toward imported cases. The data are internally consistent, cite appropriate sources (Roll Back Malaria, 2012), and describe the surveillance methodology adequately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C52"
+    ],
+    "result": "The national average reproductive number under control (Rc) is estimated at approximately 0.4, calculated from the ratio of 592 local to 870 imported cases, suggesting that elimination of endemic transmission may have already been achieved or is imminent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C14 and C52 calculate Rc as the simple ratio of local to imported cases (592/870 \u2248 0.4). However, this assumes each imported case has equal opportunity to transmit and that all transmission chains are captured, which may not hold given incomplete surveillance, spatial heterogeneity, and temporal dynamics. The calculation lacks uncertainty quantification and validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Spatial analysis reveals that imported cases concentrate in major cities (Mbabane and Manzini) with proportionally fewer local cases, suggesting very low Rc in urban areas. In contrast, areas in the east and north show higher ratios of local to imported cases, indicating potential focal areas where endemic transmission may continue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 describe spatial patterns supported by Figure 1A and citation to Cohen (2013). The observation that urban areas have many imported but few local cases while rural areas show higher local:imported ratios is consistent with differential transmission potential. However, the inference about 'smoldering' transmission (C19) is somewhat speculative without formal statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors establish the biological parameters for malaria transmission modeling: intrinsic incubation period of minimally 18 days (6 days liver stage + 12 days for gametocyte maturation), extrinsic incubation period of minimally 12 days, and Anopheles mosquito lifespan of 10-14 days, modeled using exponential distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 and C53-C56 describe well-established malaria transmission biology parameters. The values cited (18-day intrinsic, 12-day extrinsic incubation, 10-14 day mosquito lifespan) are consistent with malaria literature. The use of exponential distribution for mosquito mortality is acknowledged as simplistic but standard practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Transmission network analysis and spatial modeling reveal that Rc is very low in major cities (0.08 in Mbabane, 0.12 in Manzini) but increases to 1.70 in the northeast near Mozambique. Endemic transmission does not appear to occur in urban centers but has not been eliminated from the entire country. The spatial heterogeneity in Rc is statistically significant (p<2e-16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C22-C28 present the core Rc mapping results. While the spatial pattern is plausible and statistically significant overall (C28), the authors acknowledge uncertainty about individual pixel significance and note that 'further analysis is required to assess the robustness of isolated locations.' The method relies on multiple assumptions about movement, detection, and transmission that are not fully validated. The high Rc values (up to 1.70) in some areas contrast with the overall declining trend.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Split-data validation analysis dividing cases before and after July 1, 2012 shows that malariogenic potential and importation maps are very similar between the two time periods. While some differences exist in Rc maps, both analyses consistently identified regions in the northeast where Rc exceeds 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 describe temporal validation shown in Figures 3 and 4. The consistency of malariogenic potential and importation maps across time periods supports robustness. The identification of northeast regions with Rc>1 in both periods strengthens confidence in this key finding, despite some differences in the Rc maps themselves.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The transmission network analysis identified 22 pairs of local cases forming 'loops' (cases that appear to be each other's most likely parent) and one completely unlinked case. The majority of these orphan loops occurred during months with the least transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 describe orphan cases identified by the algorithm, shown in Figures 1A, 1C, and 5. The occurrence of loops indicates limitations in surveillance or the model's ability to identify true parent cases. The temporal pattern (loops during low transmission months) is consistent with reduced probability of detecting actual parent cases when overall case numbers are low.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Intensive infection detection around cases between July 2014 and June 2015 identified very few additional infections (53/7,307), consistent with the assumption that there is not a large pool of unreported infections that would greatly bias the results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-C37 use reactive case detection data to argue against substantial underreporting. However, this data is from a later time period (2014-2015) than the main analysis (2010-2014) and was 'not done universally.' The low detection rate could reflect either truly low transmission or limitations in the detection method itself. Asymptomatic infections are acknowledged but not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "A spatial zero-inflated negative binomial regression model was developed using ecological, social, and demographic covariates (elevation, topography, TWI, NDVI, EVI from Landsat imagery, population density) to extrapolate Rc values from case locations to all of Swaziland at 100-meter resolution. Model selection used AIC across 4,095 sub-models, implemented in R version 3.1.1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C62 describe the receptivity modeling methodology. While the approach is reasonable and uses appropriate covariates (C57-C59 with citations), several concerns arise: (1) the authors acknowledge that many models have similar AIC values and the specific parameters are just 'a step of our algorithm,' (2) Table 1 shows the selected model retained non-significant covariates, (3) no validation metrics (e.g., cross-validation, out-of-sample prediction) are provided, and (4) the zero-inflated negative binomial may not be appropriate if the zeros represent true absence vs. unobserved transmission.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Malaria importation risk was modeled as a function of population density, distance to Mozambique, and distance to roads using GAM logistic regression. The model compared 870 imported case locations to 10,000 randomly selected background points, implemented using the 'mgcv' package in R with restricted maximum likelihood fitting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 describe the importation modeling methodology with appropriate citations (Anderson 2006, Phillips and Dud\u00edk 2008, Wood 2011). The use of background points and GAM logistic regression is standard for species distribution modeling adapted to disease importation. Table 2 shows all covariates were statistically significant. The approach is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors operationalize WHO concepts by defining vulnerability quantitatively as the rate of malaria importation (parasites crossing borders in humans and vectors), receptivity as the effective reproduction number Rc (expected secondary infections from one untreated infected human under control measures), and malariogenic potential as their product.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 provide clear quantitative definitions for historical WHO concepts. The definitions are logically consistent and appropriate for the elimination context. The product of importation rate and Rc as malariogenic potential is mathematically sound for estimating expected local cases.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The analysis confirms dramatic overall progress toward elimination but identifies substantial spatial heterogeneity within Swaziland. The National Malaria Control Program will need to continue managing imported malaria as long as endemic transmission persists in neighboring countries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 represent reasonable conclusions from the presented data. The dramatic progress is well-documented (C10-C13), spatial heterogeneity is demonstrated (C15-C19, C24-C27), and the need to manage importation given endemic neighbors is a logical inference. These conclusions appropriately synthesize the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The approach provides spatiotemporally resolved metrics of transmission that can identify critical versus unimportant cases for elimination efforts and stratify control responses by differentiating locations where elimination requires reducing importation versus reducing local receptivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 describe the operational utility of the approach. The maps do provide spatial stratification distinguishing high-importation/low-transmission areas (cities) from potential endemic foci (northeast). This differentiation could inform targeted interventions as described. The claims are supported by the demonstrated spatial heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors speculate that their predictions will be useful as a baseline for genetic/molecular typing models and will remain pertinent as a proxy where resources limit universal parasite typing. They suggest malaria elimination can become stable in Swaziland through regional elimination, economic growth, and efficient resource use.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C76 are explicitly speculative about future applications and outcomes. While the approach could complement genetic methods (C74 with citation to Greenhouse and Smith 2015), no validation against genetic data is provided. The optimistic projection about stable elimination (C76) depends on many factors beyond the scope of this analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The introduction establishes the global malaria context: malaria is a leading cause of childhood mortality, the Global Malaria Eradication Campaign (1955-1969) achieved permanent geographic contraction, 36 of 99 endemic countries had elimination plans as of 2011, and African elimination countries face higher importation rates than historical eliminators. Swaziland would be the first mainland sub-Saharan country to eliminate malaria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide background context supported by appropriate citations (Naghavi 2015, Mayo and Brady 1955, Gramiccia et al. 1988, Smith 2013, Cotter 2011, Tatem 2010, Foege et al. 1971). These are well-established facts in malaria epidemiology and elimination history that appropriately frame the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The discussion contextualizes the approach within infectious disease epidemiology: reproductive numbers provide theoretical basis for disease control planning, linking infections to estimate individual reproductive numbers has been used for other diseases, malaria presents special challenges due to spatial heterogeneity, and individual-based estimates become necessary as population-level measures become inadequate in elimination phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 appropriately situate the work within broader epidemiological theory with relevant citations (Anderson and May 1991, Walker et al. 2010, multiple citations for spatial heterogeneity, Hay et al. 2008). The progression from population-level to individual-level metrics in elimination settings is well-reasoned.",
+    "result_type": "MINOR"
+  }
+]

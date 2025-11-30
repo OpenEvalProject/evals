@@ -1,0 +1,204 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C66"
+    ],
+    "result": "USP14 is a direct substrate of Akt, which phosphorylates USP14 at Ser432 (major site) and Ser143 (minor site). This phosphorylation is demonstrated through multiple complementary approaches including in vitro kinase assays, mass spectrometry, phospho-specific antibodies, mutagenesis studies, and pharmacological inhibition experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C66 provide converging evidence from multiple experimental approaches (co-IP, in vitro kinase assays, MS, phospho-specific antibodies, mutagenesis, inhibitor studies, growth factor stimulation, PTEN knockout cells) that consistently demonstrate Akt phosphorylates USP14 at S432 as the major site. The use of multiple independent methods, appropriate controls (S432A mutants, Akt inhibitors), and validation in different cellular contexts strongly support this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C81"
+    ],
+    "result": "Akt-mediated phosphorylation at Ser432 activates USP14 deubiquitinating activity both in vitro and in cells. The S432E phosphomimetic mutant shows constitutively high activity (Km = 26 \u03bcM), and this activity can be further enhanced by proteasome association, suggesting phosphorylation and proteasome binding represent independent activation mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C81 demonstrate USP14 activation through Ub-AMC hydrolysis assays using recombinant proteins, immunoprecipitated proteins from cells, phosphomimetic mutants, and enzyme kinetics. The data consistently show that S432 phosphorylation activates USP14, with appropriate controls (S432A mutant blocks activation, S143A has no effect). The finding that S432E can be further activated by proteasome (C81) is well-supported by Figure 3H.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Phosphorylation of USP14 at Ser432 enhances its hydrolytic activity toward both K48 and K63 diubiquitin linkages, but not linear diubiquitin. The S432E mutant shows significantly increased activity compared to wild-type USP14, while the S432A mutant shows reduced activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 are supported by diubiquitin cleavage assays shown in Figures 4A-C and supplementary figures. The experiments use both recombinant proteins and immunoprecipitated proteins from cells, with appropriate mutant controls. The substrate specificity (K48/K63 but not linear) is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Phosphorylation of USP14 at Ser432 is critical for Akt to regulate proteasome activity and global protein degradation. This is demonstrated using the GFP-CL1 reporter system, where Akt activation increases GFP-CL1 levels (indicating reduced UPS activity) in a USP14-dependent manner that requires S432 phosphorylation. The effect is specific to ubiquitin-dependent substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C100 are well-supported by systematic experiments using the GFP-CL1 reporter in multiple conditions: Akt inhibitors reduce GFP-CL1 (C89-C91), Akt activation increases it (C92-C94), the effect is abolished in USP14 knockout cells (C95-C96), and requires S432 phosphorylation (C97). The specificity is confirmed by lack of effect on ubiquitin-independent substrate GFP-cODC (C98-C99). The experimental design includes appropriate controls and the results are internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Quantitative proteomic analysis reveals that USP14 phosphorylation regulates global protein degradation. A set of 87 proteins show reduced levels in USP14 knockout and non-phosphorylatable (AA) mutant cells compared to wild-type or phosphomimetic (DD) mutant cells. These proteins are stabilized by proteasome inhibitor MG132, confirming they are proteasome substrates. mTOR is the top hit among these regulated proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C115 describe a comprehensive TMT-based proteomic analysis with appropriate experimental design (WT, KO, KO+WT, KO+AA, KO+DD, KO+AA+MG132). The identification of 87 proteins with consistent patterns across conditions (C106-C108) and validation that they are proteasome substrates (C109-C110) is well-supported. The mTOR finding is confirmed by western blot (C113-C114). However, the analysis would benefit from more detailed statistical information and validation of additional proteins beyond mTOR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C82"
+    ],
+    "result": "Phosphorylated USP14 (p-S432) and unphosphorylated USP14 show different subcellular distributions, with p-S432 USP14 found predominantly in fractions with lower molecular weight proteins, while unphosphorylated USP14 co-fractionates with proteasomes. This suggests S432 phosphorylation and proteasome association represent two distinct regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by glycerol gradient centrifugation data (Figure 3\u2014figure supplement 2F) showing differential distribution of phosphorylated and total USP14. The interpretation that these represent two different regulatory mechanisms (C82) is reasonable given this data combined with the finding that S432E can be further activated by proteasome (C81). However, the functional significance of the different pools could be explored further.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Structural analysis reveals that Ser432 is located near a highly negatively charged patch in USP14, and the sequence around Ser432 is highly conserved across species. Computational prediction (Scansite) identifies Ser432 as a potential Akt substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by structural analysis (Figure 1C showing surface charge) and sequence alignment (Figure 1D). The evolutionary conservation (C37) and Scansite prediction (C38) provide supporting evidence for the functional importance of S432. However, C36 (the mechanistic hypothesis about electrostatic repulsion) is speculative and not directly tested experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Akt-dependent phosphorylation of USP14 elevates its catalytic activity beyond the level achieved by proteasome association alone (which induces 800-fold activation). Akt activates USP14 by a different mechanism than the proteasome and can cooperate with proteasome to achieve enhanced ubiquitin removal from substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 are supported by the data showing that S432E mutant can be further activated by proteasome (Figure 3H) and the GFP-CL1 reporter assays demonstrating physiological effects. The 800-fold activation by proteasome (C116) is cited from prior work. The interpretation that Akt and proteasome use different mechanisms (C118) is reasonable given the additive effects, though the molecular details of how phosphorylation activates USP14 are not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C124",
+      "C126",
+      "C127"
+    ],
+    "result": "The Akt-USP14 phosphorylation axis may provide a mechanism for PTEN-deficient cancer cells to control proteostasis and for growth factors to regulate global protein degradation. This is supported by elevated USP14 S432 phosphorylation in PTEN knockout cells and growth factor stimulation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C127 are partially supported by data showing elevated USP14 phosphorylation in PTEN knockout cells (C64) and growth factor-induced phosphorylation (C60-C63). However, these claims represent speculative extensions about cancer biology and growth factor signaling that are not directly tested. The manuscript does not examine actual cancer cells or demonstrate functional consequences in cancer-relevant contexts. These are reasonable hypotheses for future work but are not definitively established by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Structural studies have identified two forms of USP14: an inactive free form and an active Ub-aldehyde-bound form. The key difference is the position of blocking loops BL1 and BL2, with Ser432 in BL2 shifting 3-5 \u00c5 between the two states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 accurately describe established structural knowledge from prior crystallographic studies (Hu et al., 2005), appropriately cited and illustrated in Figure 1A-B. This provides important context for understanding the mechanism of USP14 activation and the rationale for investigating S432 phosphorylation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,213 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Peripheral motion during global image shifts enhances ganglion cell sensitivity to weak central stimuli. Cells with the weakest baseline responses showed the greatest enhancement (39/76 cells at least doubled their sensitivity), and this effect was independent of linear receptive field overlap with object borders or peripheral checker phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4-C7 are well-supported by experimental data in Figure 1 showing quantitative measurements of firing rate slopes, enhancement ratios, and controls for receptive field contributions. The experimental design appropriately separates object motion from global shifts, and the phase-insensitivity control (C7) strengthens the conclusion that effects are nonlinear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Peripheral shifts dynamically gate ganglion cell responses through a biphasic temporal pattern (excitation followed by inhibition), with peak sensitivity occurring 50-100 ms after the shift. During this gating window, temporal filters remain stable while sensitivity increases, and mutual information about central stimuli sharply increases across all cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C14 are supported by converging evidence from PSTHs (Figure 2B), LN model analysis (Figure 2C), and mutual information calculations (Figure 2D-E). The temporal dynamics are well-characterized, and the finding that temporal filters remain stable while sensitivity changes (C10) is a key mechanistic insight. The speculation about saccadic suppression (C9) is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "After peripheral shifts, information transmission increases to 0.47\u00b10.04 of the theoretical maximum (compared to 0.24\u00b10.05 before), representing a shift from energy-conserving to high-throughput coding. This comes at an energetic cost of increased firing rate (6.9\u00b11.7 Hz vs 1.9\u00b10.3 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 are supported by quantitative comparisons to theoretical maxima based on measured noise properties. The analysis appropriately considers the tradeoff between information transmission and metabolic cost. However, the theoretical maximum calculation depends on model assumptions about spike count coding that could be validated with alternative decoding schemes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Peripheral gating increases adaptation to central contrast, with stronger effects at low contrast (slope change of 5.5\u00b11.1 Hz per contrast unit at 3% vs 0.20\u00b10.06 at 24%). This increased adaptation allows both weak and strong signals to be conveyed with more similar response ranges during the gating window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C20-C25 are well-supported by systematic measurements across contrasts (Figure 3). The adaptation index provides a quantitative metric, and the contrast-dependent effects are clearly demonstrated. The mechanistic link between increased adaptation and increased information (C25) is a logical inference from the data showing more uniform responses across contrasts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Ganglion cells encode different stimulus properties at different times relative to peripheral shifts: intensity sequences are encoded during the gating window while contrast information is encoded at other times. This dynamic coding avoids the tradeoff between adaptation and preserving the adapting statistic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 are supported by information-theoretic analysis in Figure 4C showing distinct temporal dynamics for sequence vs. contrast information. The interpretation that dynamic coding resolves a fundamental tradeoff (C27) is a reasonable inference, though alternative explanations for the temporal separation are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C37"
+    ],
+    "result": "A computational model combining peripheral and central inputs prior to a threshold and adaptive stage successfully replicates experimental observations. The model shows that peripheral input acts as an additive signal that has larger effects on weak stimuli, and that a single amplitude of peripheral input can replicate results across all contrasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33, C37 are supported by model-data comparisons in Figure 5. The model architecture is parsimonious and mechanistically plausible. The key insight that peripheral input precedes the threshold (C29) explains contrast-dependent effects without requiring contrast-dependent peripheral signals (C32-C33). However, the model is simplified and does not capture all nonlinearities mentioned in the text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Peripheral gating acts over spatial distances up to 1 mm (approximately 20 degrees of visual angle), with excitatory and inhibitory influences operating over similar spatial scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 are supported by systematic measurements of sensitivity as a function of distance (Figure 6). The experimental design appropriately controls for central stimulus properties while varying peripheral distance. The spatial extent is well-characterized, though the exact mechanisms mediating long-range effects are not determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Using a spatiotemporal model with natural images and simulated eye movements, the timing of peripheral gating coincides with the expected increase in conditional mutual information in bipolar cells after global image shifts. The model shows that novel information arrives faster than predicted by linear filtering alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C40-C47 are supported by modeling results in Figure 7 comparing gating timing to expected information dynamics. The model appropriately incorporates measured bipolar cell properties and natural image statistics. However, the model makes simplifying assumptions (e.g., no luminance adaptation, linear bipolar cells) that are acknowledged but could affect quantitative predictions. The qualitative agreement in timing (C46) is convincing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C39",
+      "C54"
+    ],
+    "result": "Peripheral shifts cause a switch from energy-conserving to high-information coding, representing dynamic allocation of neural resources to times of expected high information content. This resolves competing demands of spike conservation and information transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C48-C49, C54 synthesize the experimental and modeling findings into a functional principle. The interpretation is well-supported by the energy-information tradeoff analysis (C16-C19) and timing coincidence with expected information increases (C46-C47). However, this remains an interpretive framework rather than a directly tested hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The water-filling principle from communications theory, which allocates power to times of higher signal-to-noise ratio, agrees with the observation that additional spiking is allocated to times of expected high variance in the filtered stimulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 appropriately apply communications theory principles to neural coding. The connection between higher variance signals and higher SNR in bipolar cells (C53) is supported by cited data. However, the comparison is qualitative rather than quantitative, and a full optimization analysis under dynamic conditions is noted as requiring further study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Peripheral gating is expected to be important during natural saccadic eye movements. The spatial scale of gating matches that of peripheral inhibition related to fixational eye movements, the phenomenon has been observed in mammals, and the temporal parameters match saccade durations across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C61 make predictions about functional relevance during natural behavior based on comparisons to literature. While the spatial scale similarity (C56) and cross-species saccade timing comparisons (C60) are well-documented, the actual role during natural eye movements (C55) remains speculative and untested. The salamander-mammal comparison (C57-C59) is reasonable but acknowledges differences in eye movement strategies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Timing signals indicating stimulus changes are found in other active sensing systems (olfaction, vibrissae). In the retina, lacking efferent copy, such signals must be computed from sensory input, potentially through long-range inhibitory amacrine cells. Similar principles may apply to oscillations in other brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62-C66 draw parallels to other systems and propose circuit mechanisms. The comparison to other sensory systems (C62) is well-cited, and the logic about retinal computation (C63) is sound. However, the specific circuit mechanism (C64) and broader generalizations (C65-C66) are speculative, appropriately qualified with \"could\" and \"may.\"",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C36"
+    ],
+    "result": "Neural codes embody tradeoffs between energy efficiency, information transmission, novelty detection, and adaptation. Rather than making a single fixed choice, cells can sequentially switch between complementary representations to capture benefits of multiple coding strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C67-C70 synthesize the findings into a general principle about neural coding flexibility. This is well-supported by the experimental demonstration of temporal switching between different coding regimes (sequence vs. contrast information, energy conservation vs. high throughput). The cited literature (C67-C69) appropriately contextualizes the tradeoffs.",
+    "result_type": "MAJOR"
+  }
+]

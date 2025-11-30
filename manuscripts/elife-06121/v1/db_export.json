@@ -1,0 +1,1826 @@
+{
+  "submission": {
+    "id": "1dfa3ff8-76d1-4b3c-b56d-c9a3aadd8c42",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:16:15.735144Z",
+    "updated_at": "2025-11-29T21:16:15.735144Z"
+  },
+  "content": [
+    {
+      "id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "submission_id": "1dfa3ff8-76d1-4b3c-b56d-c9a3aadd8c42",
+      "content_type": "manuscript",
+      "content_text": "# Cortical network architecture for context processing in primate brain\n\n## Authors\n\n- Zenas C Chao<sup>1</sup> \u2020\n- Yasuo Nagasaka<sup>1</sup>\n- Naotaka Fujii<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Laboratory for Adaptive Intelligence RIKEN Brain Science Institute Wako-shi Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nContext is information linked to a situation that can guide behavior. In the brain, context is encoded by sensory processing and can later be retrieved from memory. How context is communicated within the cortical network in sensory and mnemonic forms is unknown due to the lack of methods for high-resolution, brain-wide neuronal recording and analysis. Here, we report the comprehensive architecture of a cortical network for context processing. Using hemisphere-wide, high-density electrocorticography, we measured large-scale neuronal activity from monkeys observing videos of agents interacting in situations with different contexts. We extracted five context-related network structures including a bottom-up network during encoding and, seconds later, cue-dependent retrieval of the same network with the opposite top-down connectivity. These findings show that context is represented in the cortical network as distributed communication structures with dynamic information flows. This study provides a general methodology for recording and analyzing cortical network neuronal communication during cognition.\n\n## Introduction\n\nContext is the contingent sensory or cognitive background for a given situation. Different contexts can dramatically alter perception, cognition, or emotional reactions and decision-making, and in the brain network context can be represented during sensory encoding or mnemonic retrieval. The study of context is important for understanding the link between perception and cognition, in terms of both behavioral and neural processing, and the neural mechanisms underlying contextual information processing have been studied in a variety of domains including visual perception (Bar, 2004; Schwartz et al., 2007), emotion (De Gelder, 2006; Barrett et al., 2007; Barrett and Kensinger, 2010), language (Hagoort, 2005; Aravena et al., 2010), and social cognition (Iba\u00f1ez and Manes, 2012). In the brain, context is proposed to require an interplay between bottom-up and top-down information processing in distributed neural networks (Tononi and Edelman, 1997; Friston, 2005). However, a comprehensive functional view of the brain circuits that mediate contextual processing remains unknown because bottom-up and top-down processes are often concurrent and interdependent, making the temporal and spatial resolution of their neural network organization difficult to separate.\n\nTo understand contextual information processing, we developed a fundamentally new approach to study high-resolution brain network architecture. The approach combines broadband neural recording of brain activity at high spatial and temporal resolution with big data analytical techniques to enable the computational extraction of latent structure in functional network dynamics. We employed this novel methodological pipeline to identify functional network structures underlying fast, internal, concurrent, and interdependent cognitive processes during context processing in monkeys watching video clips with sequentially staged contextual scenarios. Each scenario contained a conspecific showing emotional responses preceded by different situational contexts. With specific combinations of context and response stimuli, this paradigm allowed an examination of context-dependent brain activity and behavior by isolating context processing as a single variable in the task.\n\nTo measure large-scale brain network dynamics with sufficient resolution, we used a 128-channel hemisphere-wide high-density electrocorticography (HD-ECoG) array to quantify neuronal interactions with high spatial, spectral, and temporal resolution. This ECoG system has wider spatial coverage than conventional ECoG and LFP (Buschman and Miller, 2007; Pesaran et al., 2008; Haegens et al., 2011) and single\u2013unit activity (Gregoriou et al., 2009), higher spatial resolution than MEG (Gross et al., 2004; Siegel et al., 2008), broader bandwidth than EEG (Hipp et al., 2011), and superior temporal resolution to fMRI (Rees and House, 2005; Freeman et al., 2011). After recording, we interrogated large-scale functional network dynamics using a multivariate effective connectivity analysis to quantify information content and directional flow within the brain network (Blinowska, 2011; Chao and Fujii, 2013) followed by big data analytical approaches to search the database of broadband neuronal connectivity for a latent organization of network communication structures.\n\n## Results\n\n### Large-scale recording of brain activity during video presentations\n\nMonkeys watched video clips of another monkey (video monkey, or vM) engaging with a second agent (Figure 1) while cortical activity was recorded with a 128-channel ECoG array covering nearly an entire cerebral hemisphere. Three monkeys participated, one with a right hemisphere array (Subject 1), and two in the right (Subjects 2 and 3) (Figure 1\u2014figure supplement 1). The data are fully accessible online and can be downloaded from the website Neurotycho.org.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/06121/elife-06121-fig1-v1.jpg)\n\n**Figure 1.:** We recorded 128-channel HD-ECoG signals from monkeys viewing video clips of a conspecific under three different situational contexts and two responses. The subject (lower-left, green circles represent ECoG electrodes) was seated in front of a TV monitor showing video clips consisting of a Waiting period of 2.5 s followed by a Context period of 1.5 s with one of three interactions between a video monkey (vM) on the left and a second agent on the right: vM threatened by a human (Ch), threatened by another monkey (Cm), or an empty wall (Cw). Next, a curtain closed to conceal the second agent followed by a Response period of 3 s with the vM showing either a frightened (Rf), or neutral expression (Rn). Pairwise combination of the contexts and responses produced six different video clips.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06121/elife-06121-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** In Subject 1, electrodes (green dots) were placed to cover most of the lateral surface of the right hemisphere, also the medial parts of the frontal and occipital lobes. In Subject 2, a similar layout was used, but in the left hemisphere. In Subjects 3, all electrodes were placed on the lateral surface of the left hemisphere, and no medial parts were covered. For brain map registration, the electrode locations and the brain outlines from Subjects 1 and 3 were manually registered to those from Subject 2 based on 13 markers (red circles) in the lateral hemisphere and five markers in the medial hemisphere.\n\nThe video clips started with a context between the two agents (Context period) followed by a response to the context (Response period). Six different video clips were created from three contexts, vM threatened by a human (Ch), threatened by another monkey (Cm), or facing an empty wall (Cw), combined with two responses, vM showing a frightened expression (Rf), or neutral expression (Rn), which were termed ChRf, CmRf, CwRf, ChRn, CmRn, and CwRn (see Videos 1\u20136). Each video contained audio associated with the event, for example, sounds of a threatening human (Ch) and a frightened monkey (Rf). Each video represents a unique social context-response scenario, For example, ChRf shows a human threatening a monkey (vM) followed by the monkey's frightened response. These staged presentations were designed to examine whether different contexts (Ch, Cm, or Cw) would give rise to context-dependent brain activity even with the same responses (Rf or Rn).\n\n### Eye movements demonstrate context- and response-dependent behaviors\n\nDuring the task, subjects freely moved their eyes to observe the video interactions. We monitored eye movements to examine these spontaneous behavioral reactions and the associated zones in the video. We divided the trials into two conditions based on whether the context stimulus was visually perceived: C+ where the subject was looking at the screen during the Context period, and C\u2212 where the subject was either closing its eyes or looking outside of the screen. Example eye movements are shown in Figure 2\u2014figure supplement 1.\n\nWe first investigated which side of the video monitor the monkey attended. When the context was perceived (C+) and the response stimulus was Rf, subjects focused more on the right section during the Response period, indicating interest in the curtain, or the threat behind the curtain, than the frightened vM (Figure 2A). This preference was absent when the response stimulus was Rn or the context was not visually perceived (C\u2212). This is behavioral evidence that gaze direction preference required not only the vM response, but also perception of the preceding context, which demonstrated a cognitive association between the perception of the context and response stimuli.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/06121/elife-06121-fig2-v1.jpg)\n\n**Figure 2.:** (A) Measurements of gaze shifting revealed a behavioral association between the context and response phases of the task. The gaze positions averaged from three subjects are shown for each trial type (ChRf, CmRf, CwRf, ChRn, CmRn, and CwRn) and condition (C+ and C\u2212). Gaze shifting was quantified by gaze positions significantly different from baseline values (\u03b1Bonf = 0.05, baseline: gray bar), and was found only in Rf trials under the C+ condition (upper-left panel, the timing of gaze shifts are indicated on top, where the color represents the trial type indicated on the right). Black vertical lines represent the following events (see labels on the x-axis): (a) onset of the Context period, (b) the curtain starts closing, (c) the curtain is fully closed, (d) onset of the Response period, and (e) end of the Response period (onset of the next trial). (B) Context and response dependence in gazing behavior. Gaze positions between different trial types were compared, separately in C+ and C\u2212. For each comparison (y-axis), the timing of significant differences are shown as circles (\u03b1Bonf = 0.05), where blue, green, and red circles represent context dependence in Rf, context dependence in Rn, and response dependence, respectively. Gazing behavior showed both response dependence and context dependence, but only in C+.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06121/elife-06121-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Examples of eye position during CmRf scenario under C+ condition from Subject 2. Sampled eye positions (circles) in the three periods (Waiting, Context, and Response) are shown, where the corresponding timings are indicated by the colorbar. Snapshots of the videos during the corresponding periods are also shown.\n\nWe then compared gazing behaviors from different trial types to identify behaviors selective to different scenarios (ChRf, CmRf, CwRf, ChRn, CmRn, or CwRn) and conditions (C+ or C\u2212). We performed nine pairwise comparisons on gaze positions from different scenarios, separating C+ and C\u2212 conditions, to examine their context and response dependence. For context dependence, we compared behaviors from trials with different context stimuli but the same response stimulus (6 comparisons: CmRf vs CwRf, CwRf vs ChRf, and ChRf vs CmRf for context dependence in Rf; CmRn vs CwRn, CwRn vs ChRn, and ChRn vs CmRn for context dependence in Rn). For response dependence, we compared behaviors from trials with the same context stimulus but with different response stimuli (3 comparisons: CmRf vs CmRn, CwRf vs CwRn, and ChRf vs ChRn).\n\nA context and response dependence was found in gazing behavior (Figure 2B). In C+, significant differences in gaze position were found during the Response period between CmRf and CwRf, and CwRf and ChRf, but not between ChRf and CmRf (blue circles in left panel). This indicated that gaze shifting in CmRf and ChRf was comparable and stronger than in CwRf. This context dependence was absent when the response stimuli were Rn (green circles in left panel). Furthermore, a significant response dependence was found during the Response period for all contexts (CmRf vs CmRn, CwRf vs CwRn, and ChRf vs ChRn) (red circles in left panel) consistent with the results described in Figure 2A. In C\u2212, the context and response dependence found in C+ was absent (right panel). These results indicated that the subjects' gaze shift during the Response period showed both response dependence (Rf > Rn) and context dependence (Cm \u2248 Ch > Cw), but only when context was perceived (C+ > C\u2212).\n\n### Mining of large-scale ECoG data for cortical network interactions\n\nTo analyze the large-scale ECoG dataset, we identified cortical areas over the 128 electrodes in the array by independent component analysis (ICA). Each independent component (IC) represented a cortical area with statistically independent source signals (Figure 3\u2014figure supplement 1, and experimental parameters in Table 1).\n\n**Table 1.**\n Experimental parameters\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th>Subject 1</th>\n      <th>Subject 2</th>\n      <th>Subject 3</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"6\">Experiment</td>\n      <td>Hemisphere implanted</td>\n      <td>Right</td>\n      <td>Left</td>\n      <td>Left</td>\n    </tr>\n    <tr>\n      <td># of electrodes</td>\n      <td>128</td>\n      <td>128</td>\n      <td>128</td>\n    </tr>\n    <tr>\n      <td># of trials per class</td>\n      <td>150</td>\n      <td>150</td>\n      <td>150</td>\n    </tr>\n    <tr>\n      <td># of trials preserved per class (mean \u00b1 std) (see trial screening in \u2018Materials and methods\u2019)</td>\n      <td>117.7 \u00b1 3.5</td>\n      <td>122.2 \u00b1 3.1</td>\n      <td>109.5 \u00b1 3.6</td>\n    </tr>\n    <tr>\n      <td># of C+ trials per class (mean \u00b1 std)</td>\n      <td>64.8 \u00b1 5.2</td>\n      <td>60.3 \u00b1 6.7</td>\n      <td>57.3 \u00b1 5.6</td>\n    </tr>\n    <tr>\n      <td># of C\u2212 trials per class (mean \u00b1 std)</td>\n      <td>52.8 \u00b1 1.9</td>\n      <td>61.8 \u00b1 8.1</td>\n      <td>52.2 \u00b1 3.5</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">ICA (see Figure 3\u2014figure supplement 1)</td>\n      <td># of ICs for 90% variance explained</td>\n      <td>58</td>\n      <td>38</td>\n      <td>39</td>\n    </tr>\n    <tr>\n      <td># of ICs preserved (see IC screening in \u2018Materials and methods\u2019)</td>\n      <td>49 (removed ICs 1, 2, 3, 4, 5, 11, 44, 46, and 47)</td>\n      <td>33 (removed ICs 1, 2, 7, 8, and 29)</td>\n      <td>36 (removed ICs 2, 10, and 27)</td>\n    </tr>\n  </tbody>\n</table>\n\nWe then measured the causality of a connection from one cortical area (source area) to another (sink area) with a multivariate effective connectivity measure based on Granger causality: direct directed transfer function (dDTF) (Korzeniewska et al., 2003), which can represent phase differences between the two source signals to provide a time-frequency representation of their asymmetric causal dependence. We acquired dDTFs from all connections for each trial type (12 types: six scenarios and two conditions), and measured event-related causality (ERC), by normalizing the dDTF of each time point and each frequency bin to the median of the corresponding baseline control values. Thus, ERCs represent the spectro-temporal dynamics of network interactions evoked by different scenarios and conditions. Examples of ERCs are shown in Figure 3A.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/06121/elife-06121-fig3-v1.jpg)\n\n**Figure 3.:** (A) Event-related causalities (ERCs) between cortical areas. Example ERCs for a connection (IC 8 to IC 14, the corresponding cortical areas shown on the top) in two scenarios (CmRf and CwRf in C+) from Subject 1 are shown. Each ERC represents the spectro-temporal dynamics of causality evoked by a scenario, calculated as the logarithmic ratio between the direct directed transfer function (dDTF) and corresponding baseline values (baseline: gray bar), and measured in decibel (dB). Black vertical lines represent task events explained in Figure 2. (B) \u2206ERCs, or the significant differences in ERCs between the two trial types (CmRf \u2212 CwRf) (\u03b1FDR = 0.05, false discovery rate correction) are shown. The results were either 0 (no significant difference), +1 (significantly greater), or \u22121 (significantly weaker). (C) 3D tensor of \u2206ERCs. The data for the entire study were organized in three dimensions: dynamics (top), function (middle), and anatomy (bottom). Top: \u2206ERCs shown in B describe the dynamics of difference in causality of a connection between two trial types, presented as a vector in 3D space (illustrated as a bar, where each segment represents a \u2206ERC value). Middle: For the same connection, \u2206ERCs from other comparisons were pooled to describe the functional dynamics of the connection (illustrated as a plate). Bottom: Functional dynamics from all connections were pooled to summarize the functional network dynamics in a subject (illustrated as a block). The data from all subjects were further combined to assess common functional network dynamics across subjects. (D) Parallel factor analysis (PARAFAC) extracted five dominant structures from the 3D tensor with consistency (>80%, also see Figure 3\u2014figure supplement 2). Each structure represented a unique pattern of network function, dynamics, and anatomy (e.g., Func. 1, Dyn. 1, and Anat. 1 for Structure 1).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06121/elife-06121-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The spatial distribution of each IC and its time course are shown for each subject. For each IC, the size of each circle represents the relative contribution of the activity from the electrode to the IC, where red and blue colors represent the positive and negative contributions, respectively. For clarity, the time courses shown were obtained by averaging source signals of the IC over one trial type (CmRf trials under C+ condition), and the y-axis is not shown. For each time course, three red vertical lines represent the events (a), (d) and (e) described in Figure 2. The ICs that were removed from analysis are labeled (see Table 1).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06121/elife-06121-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** A core consistency diagnostic was used to evaluate how well the tensor can be represented by different numbers of structures. During deconvolving the tensor into different numbers of structures, core consistencies were measured by two methods: DTLD/GRAM and random values (see the \u2018Materials and methods\u2019). For the random values method, 100 core consistency values were measured and their means and standard deviations are shown. In both methods, a sharp decrease in consistency was found when the number of structures increased from 5 to 6, indicating that five structures yielded the optimal fit.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/06121/elife-06121-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) PARAFAC results (with DTLD/GRAM method) from data obtained from ICA with 90% (ICA90%, as in Figure 2D), 80% (ICA80%), and 75% (ICA75%) of total variance preserved. In all cases, five latent network structures yelled the optimal fits. (B) Similarities among structures obtained from different ICA results. Top row: We first compared Structure i to Structure j obtained from ICA90% (90% vs 90%). Correlations were evaluated in four different domains: Comparison (the first tensor dimension), Time and Frequency (the second tensor dimension), and Causal outflow (the third tensor dimension). The significant correlations (\u03b1 = 0.05) are indicated as asterisks, and the correlations with high correlation coefficients (Pearson, \u03c1 > 0.8) are indicated as circles. Second row: Correlations between Structure i obtained from ICA80% and Structure j obtained from ICA90% (80% vs 90%). The structures obtained from ICA80% were reordered so that the correlations in the diagonals were maximized. Bottom row: Correlations between Structure i obtained from ICA75% and Structure j obtained from ICA90% (75% vs 90%). High correlations were found in the diagonals in 80% vs 90% and 75% vs 90%, and high similarities were found among 90% vs 90%, 80% vs 90%, and 75% vs 90%. These results indicate that the five latent network structures were similar under different selections of ICA model order.\n\nWe compared ERCs from different trial types to identify networks selectively activated in different scenarios (ChRf, CmRf, CwRf, ChRn, CmRn, or CwRn) and conditions (C+ or C\u2212). We performed nine pairwise comparisons on ERCs from different scenarios, separating C+ and C\u2212 trials, to examine their context and response dependence. To examine context dependence, we compared ERCs from trials with different contexts but the same response (6 comparisons). In contrast, to examine response dependence, we compared ERCs from trials with the same context but with different responses (3 comparisons). This approach is similar to the eye movement analysis (Figure 2B). The comparisons were performed with a subtractive approach to derive a significant difference in ERCs (\u2206ERCs, Figure 3B). Hence, \u2206ERCs revealed network connections, with corresponding time and frequency, where ERCs were significantly stronger or weaker in one scenario compared to another.\n\nWe pooled \u2206ERCs from all comparisons, conditions, connections, and subjects, to create a comprehensive broadband library of network dynamics for the entire study. To organize and visualize the dataset, we created a tensor with three dimensions: Comparison-Condition, Time-Frequency, and Connection-Subject, for the functional, dynamic, and anatomical aspects of the data, respectively (Figure 2C). The dimensionality of the tensor was 18 (nine comparisons under two conditions) by 3040 (160 time windows and 19 frequency bins) by 4668 (49 \u00d7 48 connections for Subject 1, 33 \u00d7 32 for Subject 2, and 36 \u00d7 35 for Subject 3).\n\nTo extract structured information from this high-volume dataset, we deconvolved the 3D tensor into multiple components by performing parallel factor analysis (PARAFAC), a generalization of principal component analysis (PCA) to higher order arrays (Harshman and Lundy, 1994) and measured the consistency of deconvolution under different iterations of PARAFAC (Bro and Kiers, 2003). Remarkably, we observed five dominant structures from the pooled \u2206ERCs that represented functional network dynamics, where each structure contained a comprehensive fingerprint of network function, dynamics, and anatomy (Figure 3D, and Figure 3\u2014figure supplement 2). These five structures were robust against model order selection for ICA (Figure 3\u2014figure supplement 3).\n\n### Discrete structured representations of functional network dynamics\n\nThe five structures are shown in Figure 4 (Structures 1 and 2) and Figure 5 (Structures 3, 4, and 5). Each structure represented a unique functional network dynamics, described by its compositions in the three tensor dimensions. The first tensor dimension (panel A) represented the differences across comparisons for each structure. We identified the significant differences and reconstructed the activation levels to show how each structure was activated under different scenarios and conditions (see the \u2018Materials and methods\u2019). The second tensor dimension (panel B) represented spectro-temporal dynamics for each structure. The third tensor dimension (panel C) represented the anatomical connectivity pattern for each structure. We measured three connectivity statistics: (1) causal density is the sum of all outgoing and incoming causality for each area, showing areas with busy interactions; (2) causal outflow is the net outgoing causality of each area, indicating the sources and sinks of interactions; and (3) maximum flow between areas is the maximal causality of all connections between cortical areas (7 areas found with busy interactions were chosen) (see results for individual subjects in Figure 4\u2014figure supplements 1\u20133). The extracted statistics were robust across all subjects with different electrode placements suggesting that the structures were bilaterally symmetric across hemispheres (Figure 4\u2014figure supplement 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/06121/elife-06121-fig4-v1.jpg)\n\n**Figure 4.:** Each structure was defined by three dimensions: function, dynamics, and anatomy. (A) Function: The function dimension showed each structure's context and response dependence. Top: For each structure, the first tensor dimension contained 18 differences for nine pairwise comparisons in the C+ or C\u2212 condition. Significant differences are highlighted (*, \u03b1 = 0.05, see the \u2018Materials and methods\u2019). Bottom: The comparisons with significant differences were used to reconstruct how each structure was selectively activated. Each oval and its vertical position represent the trial type and its activation level, respectively. Blue, green, or red arrows indicate significant context dependence under Rf, significant context dependence under Rn, and significant response dependence, respectively (each corresponds to a significance highlighted in the top panel). (B) Dynamics: The dynamics dimension indexed each structure's activation in different times and frequencies. Black vertical lines represent events, as explained in Figure 2. (C) Anatomy: The anatomy dimension showed each structure's activation in different connections. Three connectivity statistics, averaged across subjects after brain map registration, are shown on the lateral and medial cortices. Top: Cortical areas with greater causal density represent areas with busier interactions. Middle: Cortical areas with positive (red) and negative (blue) causal outflows represent the sources and sinks of interactions, respectively. Bottom: The direction and strength of each maximum flow between areas are indicated by the direction and size (and color) of an arrow, respectively. Seven cortical areas were determined for visualization: the visual (V), parietal (P), prefrontal (PF), medial prefrontal (mPF), motor (M), anterior temporal (aT), and posterior temporal (pT) cortices.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06121/elife-06121-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Cortical areas with high causal density (busy traffic) are indicated as red. Results from individual subjects and the summarized results after brain map registration are shown for each latent network structure.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06121/elife-06121-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Cortical areas with overall positive causal outflow (source areas) are indicated shown in red, and those with overall negative causal outflow (sink areas) are shown in blue. Results from individual subjects and the summarized results after brain map registration are shown for each latent network structure.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/06121/elife-06121-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) The maximum information flows between cortical areas in all subjects. For each subject (column) and each structure (row), the maximal loadings of connections from each of the seven cortical areas (source, y-axis) to the others (sink, x-axis) are shown. Seven cortical areas were manually identified: the visual cortex (V), the parietal cortex (P), the posterior temporal cortex (pT), the anterior temporal cortex (aT), the motor cortex (M), the prefrontal cortex (PFC), and the medial PFC (mPF). The seven areas identified in all subjects are shown on the registered brain map on the right. (B) The average maximum information flow between areas across subjects presented in two different formats: matrices (left) and arrows (right).\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/06121/elife-06121-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** For each connectivity statistics (causal density, causal outflow, or maximum flow between areas) from each structure, we compared its values (after brain map registration) between each subject pair. As results, 15 correlation coefficients were acquired for each connectivity statistics to show how similar the connectivity statistics across subjects in all structures. The average correlation coefficients for causal density, causal outflow, and maximum flow between areas were 0.66 \u00b1 0.08, 0.60 \u00b1 0.05, and 0.69 \u00b1 0.26, respectively (mean \u00b1 std, n = 15: 3 pairs, 5 structures). High correlations in connectivity statistics among subjects indicate that connectivity in each structure is robust across subjects.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/06121/elife-06121-fig5-v1.jpg)\n\n**Figure 5.:** The function (A), dynamics (B), and anatomy (C) dimensions of Structures 3, 4, and 5. Structures 3 and 4 represent the initial formation/encoding and later reactivation/retrieval of abstract context information, respectively, and Structure 5 represents context-dependent top-down feedback that modulates eye gaze or visual attention. Same presentation details as in Figure 4.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06121/elife-06121-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) The correlations between the causal outflows between structures. For each structure, causal outflows were measured for all ICs in all subjects, which resulted in a 1 by 118 vector (= 49 + 33 + 36, see the numbers of ICs in Table 1). The first two principal components (PC 1 and PC 2) of the causal outflows of the five structures are shown in the inset. The correlations between the causal outflows were also measured. The significant correlations (\u03b1 = 0.05) are indicated as asterisks, and the correlations with high correlation coefficients (Pearson, \u03c1 > 0.8) are indicated as circles. (B) The correlations between the frequency profiles of different structures. The frequency profile of each structure, shown in the inset, was quantified by averaging the corresponding loadings in the second tensor dimension (Time-Frequency) across time points, which resulted in a 1 by 19 vector. The correlations between the frequency profiles were then measured and shown.\n\nStructure 1 was activated first, with context dependence only in the Context period (Cm > Ch > Cw) suggesting sensory processing that can discriminate between contextual stimuli, that is, context perception. The context dependence was weaker but remained in C\u2212 (C+ > C\u2212), suggesting that auditory information in context stimuli was processed. The spectral dynamics of Structure 1 emerged primarily in the high-\u03b3 band (>70 Hz), and contained mostly bottom-up connections from the posterior to anterior parts of temporal cortex.\n\nStructure 2 was the earliest activated in the Response period, with only response dependence (Rf > Rn), and was independent of whether context stimuli were visually perceived (C+ \u2248 C\u2212). Thus, Structure 2 corresponds to sensory processing that can discriminate between response stimuli, that is, response perception. Spectrally, Structure 2 emerged in both high-\u03b3 and \u03b2 bands, and contained connections similar to those in Structure 1, with an additional communication channel from anterior temporal cortex to the prefrontal cortex (PFC). Therefore, Structures 1 and 2 represent the multisensory processing of audiovisual stimuli, and Structure 2 could underlie the additional evaluation of emotional valence associated with the stimuli.\n\nStructure 3 was activated the second earliest in the Context period showing a generalized context dependence (Cm \u2248 Ch > Cw) representing the abstract categorization of the context (\u2018an indeterminate agent is threatening vM\u2019). Similar to Structure 1, the dependence in Structure 3 was weaker in C\u2212 (C+ > C\u2212), which suggested that the creation of abstract contextual information depended on the initial perception of context stimuli. Structure 3 appeared mainly in the \u03b2 band (10\u201330 Hz), and contained primarily bottom-up connections from the posterior temporal cortex (mainly the area TEO) to the anterior temporal cortex (mainly the temporal pole) and the lateral and medial PFC.\n\nStructure 4 showed the same generalized context dependence as Structure 3, but during the Response period when context stimuli were absent and only in C+Rf (not in C+Rn and C\u2212). The absence of context dependence in C+Rn and C\u2212 suggested that Structure 4 required both vM responses with high emotional valence and its context. Moreover, Structure 4 exhibited spatial and spectral characteristics similar to Structure 3 (Figure 5\u2014figure supplement 1). We conclude that Structures 3 and 4 represent the same or very similar neural substrate, differing only in when and how they were activated. Structure 3 corresponds to the initial formation/encoding of the contextual information, while Structure 4 represents the Rf -triggered reactivation/retrieval of the contextual information. Therefore, Structures 3 and 4 represent the generalized, abstract perceptual and cognitive content of the context.\n\nStructure 5 showed context dependence (Cm \u2248 Ch > Cw) in C+Rf (not in C+Rn and C\u2212), and response dependence (Rf > Rn) in C+ (not in C\u2212) during the Response period, and appeared mainly in \u03b1 and low-\u03b2 bands (5\u201320 Hz). Anatomically, the structure showed primarily top-down connections between posterior temporal cortex, the anterior temporal cortex, and the lateral and medial PFC. Remarkably, Structure 5 is the only one demonstrating clear top-down connections, with the same context and response dependence as the gaze behavior (see Figure 2B). These results suggest that Structure 5 corresponds to a network for the context-dependent feedback modulation of eye gaze or visual attention during the task, and the other four structures index internal processes that lead to this behavioral modulation.\n\n### Functional, dynamical, and anatomical correlations between network structures\n\nWe investigated how the structures coordinated with each other during the task by examining how they correlated with each other in the functional, dynamical, and anatomical domains.\n\nTo study function, we evaluated how each structure's context and response dependence correlated with others', by measuring correlation coefficients of structures' differences in comparisons across contexts in Rf, across contexts in Rn, and across responses (Figure 6A) (detailed in the \u2018Materials and methods\u2019). Significant correlations between two structures indicated that one structure's activation affected another's, and vice versa, demonstrating a causal interdependence or a common external driver. Across contexts in Rf (Figure 6A, left), Structure 1 significantly correlated to Structures 3 and 4, which were themselves significantly correlated to Structure 5. However, across contexts in Rn (Figure 6A, middle), a significant correlation was found only between Structures 1 and 3. These results confirmed that sensory perception of the context stimuli could be significantly correlated to the formation of an abstract context, and, in turn this abstract context could be significantly correlated to its reactivation and top-down modulation when a response had high emotional valence. Across responses (Figure 6A, right), Structure 2 significantly correlated to Structure 4, which was itself significantly correlated to Structure 5. This indicated that that top-down modulation is the integration of response information and abstract context information.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/06121/elife-06121-fig6-v1.jpg)\n\n**Figure 6.:** (A) Functional coordination: The coordination between structures was evaluated by the correlation coefficients between structures' context and response dependence (the differences shown in Figures 4A, 5A). Each panel illustrates how Structure i (y-axis) correlated with Structure j (x-axis) in context dependence in Rf (left), context dependence in Rn (middle), and response dependence (right). Significant correlations are indicated as asterisks (\u03b1 = 0.05) (see \u2018Materials and methods\u2019). (B) Dynamic co-activation: The dynamics correlation was shown by correlation coefficients between structures' temporal and spectral activation. Each panel shows how Structure i correlated with Structure j in temporal dynamics (left) and frequency profile (right). Significant correlations are indicated as asterisks (\u03b1 = 0.05). (C) Anatomical overlap: The anatomical similarity was indexed by the ratio of shared anatomical connections between structures. Each panel illustrates the ratio of the number of shared connections between Structures i and j and the total number of connections in Structure i. Results obtained from three subjects are shown separately. (D) Undirected pathways of connections shared by all structures for each subject (top), and those appearing in at least one structure for each subject (bottom). The lateral cortical surface is shown on the left for Subject 1, and on the right for Subjects 2 and 3. Shared pathways (lines) between two cortical areas (circles) of the top 1, 5, 10, and 25% connections are shown. Pathways with greater strengths are overlaid on those with weaker strengths.\n\nTo examine dynamics, we tested whether network structures had mutually exclusive or overlapping spectro-temporal dynamics. We measured the temporal dynamics of each structure by summing up the activation in the second tensor dimension across frequencies. Significant correlations in temporal dynamics were found between structures activated in the Context period (Structures 1 and 3) and the Response period (Structures 2, 4, and 5) (Figure 6B, left). We then measured the spectral profile of each structure by summing up the activation in the second tensor dimension over time. Significant correlations in spectral profiles were found among structures with \u03b2 band activation (Structures 2, 3, 4, and 5) (Figure 6B, right).\n\nTo investigate anatomy, we identified directed connections with the top 10% strengths in the third tensor dimension, and examined the shared top 10% connections between structures for each subject (Figure 6C). The numbers of shared connections between all structures were particularly high (>70% shared) between Structures 3 and 4 (abstract contextual information), and Structures 1 and 2 (perception). We examined the undirected pathways that exclude the directionality of connections and found pathways shared by all structures and subjects in and from the temporal cortex to PFC (Figure 6D, top). Pathways appearing in at least one structure were widespread across cortex (Figure 6D, bottom).\n\nThese results demonstrate the functional coordination and spatio-spectro-temporal co-activation of the five identified network structures, and reveal the multiplexing property of large-scale neuronal interactions in brain: simultaneous information transfer in similar frequency bands along similar anatomical pathways could be functionally reconstituted into distinct cognitive operations depending on other networks' ongoing status. This type of information would be difficult to extract from traditional EEG/MEG/fMRI analyses.\n\n## Discussion\n\nIn this study, we demonstrate that context can be represented by dynamic communication structures involving distributed brain areas and coordinated within large-scale neuronal networks, or neurocognitive networks (Varela et al., 2001; Fries, 2005; Bressler and Menon, 2010; Siegel et al., 2012). Our analysis combines three critical properties of neurophysiology\u2014function, dynamics, and anatomy\u2014to provide a high-resolution large-scale description of brain network dynamics for context. The five network structures we identified reveal how contextual information can be encoded and retrieved to modulate behavior with different bottom-up or top-down configurations. The coordination of distributed brain areas explains how context can regulate diverse neurocognitive operations for behavioral flexibility.\n\n### Context is encoded by interactions of large-scale network structures\n\nThese findings show that context can be encoded in large-scale bottom-up interactions from the posterior temporal cortex to the anterior temporal cortex and the lateral and medial PFC. The PFC is an important node in the \u2018context\u2019 network (Miller and Cohen, 2001; Bar, 2004), where the lateral PFC is believed to be critical for establishing contingencies between contextually related events (Fuster et al., 2000; Koechlin et al., 2003), and the medial PFC is involved in context-dependent cognition (Shidara and Richmond, 2002) and conditioning (Fuster et al., 2000; Koechlin et al., 2003; Frankland et al., 2004; Quinn et al., 2008; Maren et al., 2013). Our results indicate that abstract contextual information can be encoded not only within the PFC, but in PFC interactions with lower-level perceptual areas in the temporal cortex. These dynamic interactions between unimodal sensory and multimodal association areas could explain the neuronal basis of why context networks can affect a wide range of cognitive processes, from lower-level perception to higher-level executive functions.\n\nApart from the bottom-up network structure that encodes abstract context, we discovered other network structures that process either lower-level sensory inputs for context encoding or integrate contextual information for behavioral modulation. Evidently, brain contextual processing, from initial perception to subsequent retrieval, is represented not by sequential activation but rather sequential modular communication among participating brain areas. Thus, we believe that the network structures we observed represent a module of modules, or \u2018meta-module\u2019 for brain communication connectivity. Further investigation of this meta-structure organization for brain network communication could help determine how deficits in context processing in psychiatric disorders such as schizophrenia (Barch et al., 2003) and post-traumatic stress disorder (Milad et al., 2009) could contribute to their etiology.\n\n### Cognition as a modular organization consisting of network structures\n\nThese results suggest a basic structural organization of large-scale communication within brain networks that coordinate context processing, and provide insight into how apparently seamless cognition is constructed from these network communication modules. In contrast to previous studies where brain modularity is defined as a \u2018community\u2019 of spatial connections (Bullmore and Sporns, 2009; Sporns, 2011), or coherent oscillations among neuronal populations in overlapping frequency bands (Siegel et al., 2012), our findings provide an even more general yet finer grained definition of modularity based on not only anatomical and spectral properties, but also temporal, functional, and directional connectivity data. The relationships among network properties in the functional, temporal, spectral, and anatomical domains revealed network structures whose activity coordinated with each other in a deterministic manner (Figure 7A), despite being highly overlapping in time, frequency, and space (Figure 7B). Such multiplexed, yet large-scale, neuronal network structures could represent a novel meta-structure organization for brain network communication. Further studies will be needed to show whether these structures are components of cognition.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/06121/elife-06121-fig7-v1.jpg)\n\n**Figure 7.:** (A) Coordination between network structures (S1 to S5, circles), under Rn (top) or Rf (bottom) responses. In both response contingencies, context perception (S1) encoded contextual information (S3). However, when the response stimulus contained high emotional valence (Rf, bottom), response perception (S2) reactivates the contextual information (S4), resulting in top-down modulation feedback (S5) that shares the same context and response dependence as the gazing behavior (black arrow and rounded rectangles). Green, blue, and red arrows represent correlations in context dependence in Rn, context dependence in Rf, and in response dependence, respectively (see Figure 6A). (B) Temporal, spectral, and spatial profiles and overlap in defined network structures. Network structures can be characterized by frequency range (labeled on the left) and connectivity pattern (shown on the right). Their temporal activations are plotted over trial time, with a \u2018sound-like\u2019 presentation, where a higher volume represents stronger activation. Black vertical lines represent the events as indicated in Figure 2.\n\n### Applications for large-scale functional brain network mapping\n\nWe developed an analytical approach using an unbiased deconvolution of comprehensive network activity under well-controlled and staged behavioral task conditions. This workflow enabled us to identify novel network structures and their dynamic evolution during ongoing behavior. In principle, this approach can be generally useful to investigate how network structures link neural activity and behavior. However, we caution that the latent network structures we identified were extracted computationally, and therefore will require further confirmatory experiments to verify their biological significance, particularly the causality of the connectivity patterns within each structure and the functional links bridging different structures. The biological meaning of the identified network structures could be achieved by selective manipulation of neuronal pathways by electrical or optogenetic stimulation linked to the ECoG array by neurofeedback, or neuropharmacological manipulations.\n\nThe general class of network structures we identified are not necessarily unique to context, By recording with a hemisphere-wide ECoG array and applying our analytical methodologies to other cognitive behaviors and tasks in non-human primates, we fully expect to observe similar network structures. Our approach of pooling large-scale data across subjects may be useful to extract network structures that are generalizable, because neural processes specific to individual subjects or trials will cancel. Indeed, the stable and consistent trial responses across subjects in our chronic ECoG recordings suggest that the network structures we isolated may be candidate innate, elemental units of brain organization. Conversely, future identification of unique differences in network structures between subjects could offer insight into structures related to individual trait and state variability, and the network-level etiology of brain diseases (Belmonte et al., 2004; Uhlhaas and Singer, 2006).\n\n## Materials and methods\n\n### Subjects and materials\n\nCustomized 128-channel ECoG electrode arrays (Unique Medical, Japan) containing 2.1 mm diameter platinum electrodes (1 mm diameter exposed from a silicone sheet) with an inter-electrode distances of 5 mm were chronically implanted in the subdural space in three Japanese macaques (Subjects 1, 2, and 3). The details of surgical methods can be found on Neurotycho.org. In Subject 1, electrodes were placed to cover most of the lateral surface of the right hemisphere, also the medial parts of the frontal and occipital lobes. In Subject 2, a similar layout was used, but in the left hemisphere. In Subjects 3, all electrodes were placed on the lateral surface of the left hemisphere, and no medial parts were covered. The reference electrode was also placed in the subdural space, and the ground electrode was placed in the epidural space. Electrical cables leading from the ECoG electrodes were connected to Omnetics connectors (Unique Medical) affixed to the skull with an adaptor and titanium screws. The locations of the electrodes were identified by overlaying magnetic resonance imaging scans and x-ray images. For brain map registration, the electrode locations and the brain outlines from Subjects 1 and 3 were manually registered to those from Subject 2 based on 13 markers in the lateral hemisphere and 5 markers in the medial hemisphere (see Figure 1\u2014figure supplement 1).\n\nAll experimental and surgical procedures were performed in accordance with the experimental protocols (No. H24-2-203(4)) approved by the RIKEN ethics committee and the recommendations of the Weatherall report, \u2018The use of non-human primates in research\u2019. Implantation surgery was performed under sodium pentobarbital anesthesia, and all efforts were made to minimize suffering. No animal was sacrificed in this study. Overall care was managed by the Division of Research Resource Center at RIKEN Brain Science Institute. The animal was housed in a large individual enclosure with other animals visible in the room, and maintained on a 12:12-hr light:dark cycle. The animal was given food (PS-A; Oriental Yeast Co., Ltd., Tokyo, Japan) and water ad libitum, and also daily fruit/dry treats as a means of enrichment and novelty. The animal was occasionally provided toys in the cage. The in-house veterinary doctor checked the animal and updated daily feedings in order to maintain weight. We have attempted to offer as humane treatment of our subject as possible.\n\n### Task design\n\nDuring the task, each monkey was seated in a primate-chair with its arms and head gently restrained, while a series of video clips was presented on a monitor (Videos 1\u20136). In one recording session, each of six video clips was presented 50 times, and all 300 stimuli were presented in a pseudorandom order in which the same stimulus would not be successively presented. In order to keep the monkey's attention to the videos, food items were given after every 100 stimuli. Each monkey participated three recording sessions within a week. Each stimulus consisted of three periods: Waiting, Context, and Response periods. During the Waiting period, a still picture created by pixel-based averaging and randomizing the all frames of stimuli was presented without sound for 2. During the first 0.5 s of the Context period, a still image of an actor (a monkey) and an opponent (a monkey, a human, or wall) was presented with the sound associated with the opponents. The actor was always positioned on the left side of the image. Then a curtain in the video started to close from the right side toward the center to cover the opponent. The curtain closing animation took 0.5 s, and the curtain stayed closed for another 0.5 s. During the Response period, one of two emotional expressions of the actor (frightening or neutral) was presented with sound for 3 s, followed by the Waiting period of the next trial.\n\n### ECoG and behavior recordings\n\nAn iMac personal computer (Apple, USA) was used to present the stimuli on a 24-in LCD monitor (IOData, Japan) located 60 cm away from the subject. The sound was presented through one MA-8BK monitor speaker (Roland, Japan) attached to the PC. The experiments were run by a program developed in MATLAB (MathWorks, USA) with Psychtoolbox-3 extensions (Brainard, 1997). The same PC was used to control the experiments and the devices for recording monkey's gaze and neural signals via USB-1208LS data acquisition device (Measurement Computing Co., USA). A custom-made eye-track system was used for monitoring and recording the monkey's left (Subject 1) or right (Subjects 2 and 3) eye at 30 Hz sampling (Nagasaka et al., 2011). Cerebus data acquisition systems (Blackrock Microsystems, USA) were used to record ECoG signals with a sampling rate of 1 kHz.\n\n### Trial screening\n\nTrials during which the subject's eye position was within the screen area more than 80% of the time during the first 0.5 s of the Context period were classified as C+ trials. The rest of the trials were identified as C\u2212 trials, where the subject either closed its eyes or the eye position was outside the screen or outside the recording range (\u00b130\u00b0).\n\n### Data analysis\n\n#### ICA\n\nICA was performed on the data combined C+ and C\u2212 trials to acquire a common basis for easier interpretation of the results. On the other hand, dDTF and the following analyses (ERC and SD-ERC) were calculated from C+ and C\u2212 trials separately, and later combined in PARAFAC analysis.\n\n##### Preprocessing\n\nThe 50 Hz line noise was removed from raw ECoG data by using the Chronux toolbox (Bokil et al., 2010). The data was then downsampled four times, resulted in a sampling rate of 250 Hz. Trials with abnormal spectra were rejected by using an automated algorithm from the EEGLAB library (Delorme et al., 2011), which has been suggested as the most effective method for artifact rejection (Delorme et al., 2007). The numbers of trials preserved are shown in Table 1.\n\n##### Model order selection\n\nThe model order, that is, the number of components, for ICA was determined by the PCA of the data covariance matrix, where the number of eigenvalues accounted for 90% of the total observed variance. The resulted model order is shown in Table 1.\n\n##### ICA algorithm\n\nICA was performed in multiple runs using different initial values and different bootstrapped data sets by using the ICASSO package (Himberg et al., 2004) with the FastICA algorithm (Hyv\u00e4rinen and Oja, 1997), which could significantly improve the reliability of the results (Meinecke et al., 2002). In the end, artifactual components with extreme values and abnormal spectra were discarded by using an automated algorithm from EEGLAB (Delorme and Makeig, 2004). The number of components preserved after this screening process is shown in Table 1.\n\n#### Multivariate spectral causality\n\nSpectral connectivity measures for multitrial multichannel data, which can be derived from the coefficients of the multivariate autoregressive model, require that each time series be covariance stationary, that is, its mean and variance remain unchanged over time. However, ECoG signals are usually highly nonstationary, exhibiting dramatic and transient fluctuations. A sliding-window method was implemented to segment the signals into sufficiently small windows, and connectivity was calculated within each window, where the signal is locally stationary.\n\n##### Preprocessing\n\nThree preprocessing steps were performed to achieve local stationarity: (1) detrending, (2) temporal normalization, and (3) ensemble normalization (Ding et al., 2000). Detrending, which is the subtraction of the best-fitting line from each time series, removes the linear drift in the data. Temporal normalization, which is the subtraction of the mean of each time series and division by the standard deviation, ensures that all variables have equal weights across the trial. These processes were performed on each trial for each channel. Ensemble normalization, which is the pointwise subtraction of the ensemble mean and division by the ensemble standard deviation, targets rich task-relevant information that cannot be inferred from the event-related potential (Ding et al., 2000; Bressler and Seth, 2011).\n\n##### Window length selection\n\nThe length and the step size of the sliding-window for segmentation were set as 250 ms and 50 ms, respectively. The window length selection satisfied the general rule that the number of parameters should be <10% of the data samples: to fit a VAR model with model order p on data of k dimensions (k ICs selected from ICA), the following relation needs to be satisfied: w \u2265 10 \u00d7 (k^2 \u00d7 p/n), where w and n represent the window length and the number of trials, respectively.\n\n##### Model order selection\n\nModel order, which is related to the length of the signal in the past that is relevant to the current observation, was determined by the Akaike information criterion (AIC) (Akaike, 1974). In all subjects, a model order of nine samples (equivalent to 9 \u00d7 4 = 36 ms of history) resulted in minimal AIC and was selected. The selected model order also passed the Kwiatkowski\u2013Phillips\u2013Schmidt\u2013Shin (KPSS) test, thus maintained local stationarity. Furthermore, the VAR model was validated by the whiteness test and the consistency test.\n\n##### Spectral connectivity\n\ndDTF (Korzeniewska et al., 2003), a VAR-based spectral connectivity measure, was calculated by using the Source Information Flow Toolbox (SIFT) (Delorme et al., 2011) together with other libraries, such as Granger Causal Connectivity Analysis (Seth, 2010) and Brain-System for Multivariate AutoRegressive Timeseries (Cui et al., 2008). A detailed tutorial of VAR-based connectivity measures can be found in the SIFT handbook (http://sccn.ucsd.edu/wiki/SIFT).\n\n#### ERC\n\nTo calculate ERC at time t and frequency f, or ERC(t, f), dDTF at time t and frequency f, or dDTF(t, f), was normalized by the median value during the baseline period at frequency f, or dDTFbaseline (f):\n\n$$\ndDTF_{baseline}(f)=median(dDTF(t\u2282baseline,f)),ERC(t,f)=10\u22c5log_{10}(\\frac{dDTF(t,f)}{dDTF_{baseline}(f)}).\n$$\n\n#### Comparisons for context and response dependencies\n\nNine comparisons were performed on the ERCs obtained from different social scenarios in C+ and C\u2212 trials separately. To examine context dependency, three comparisons were performed between scenarios with different contexts followed by the frightened response (ChRf \u2212 CmRf, CmRf \u2212 CwRf, and CwRf \u2212 ChRf), and another three comparisons were performed between scenarios with different contexts followed by the neutral response (ChRn \u2212 CmRn, CmRn \u2212 CwRn, and CwRn \u2212 ChRn). To examine response dependency, three comparisons were performed between scenarios with different responses under the same contexts (ChRf \u2212 ChRn, CmRf \u2212 CmRn, and CwRf \u2212 CwRn). False discovery rate (FDR) control was used to correct for multiple comparisons in multiple hypothesis testing, and a threshold of \u03b1FDR = 0.05 was used.\n\n#### PARAFAC\n\nPARAFAC was performed by using the N-way toolbox (Andersson and Bro, 2000), with the following constraints: no constraint on the first tensor dimension, and non-negativity on the second and the third tensor dimensions. The non-negativity constraint was introduced mainly for a more simple visualization of the results. The convergence criterion, that is, the relative change in fit for which the algorithm stops, was set to be 1e-6. The initialization method was set to be DTLD (direct trilinear decomposition) or GRAM (generalized rank annihilation method), which was considered the most accurate method (Cichocki et al., 2009). Initialization with random orthogonalized values (repeated 100 times, each time with different random values) was also shown for comparison.\n\n#### Connectivity statistics\n\nThe connectivity statistics used in this study were calculated from the connectivity matrix (a weighted directed relational matrix) from each latent network structure and each subject, by using the Brain Connectivity Toolbox (Rubinov and Sporns, 2010).\n\n##### Causal density and outflow\n\nNode strength was measured as the sum of weights of links connected to the node (IC). The causal density of each node was measured as the sum of outward and inward link weights (out-strength + in-strength), and the causal outflow of each node was measured as the difference between outward and inward link weights (out-strength\u2014in-strength). For visualization, each measure was spatially weighted by the absolute normalized spatial weights of the corresponding IC. For example, assume the causal density and causal outflow of IC ic is Densityic, and Outflowic, respectively, and the spatial weights of IC ic on channel ch is Wic,ch, then the spatial distributions of causal density and causal outflow on each channel will be:\n\n$$\nDensity_{ch}\u2009=\u2009\\sumic\\frac{abs(W_{ic,ch})}{max(abs(W_{ic,ch}))}\u22c5Density_{ic},Outflow_{ch}\u2009=\u2009\\sumic\\frac{abs(W_{ic,ch})}{max(abs(W_{ic,ch}))}\u22c5Outflow_{ic}.\n$$\n\n##### Maximum flow between areas\n\nSeven cortical areas were first manually determined: the visual (V), parietal (P), prefrontal (PF), medial prefrontal (mPF), motor (M), anterior temporal (aT), and posterior temporal (pT) cortices. The maximum link among all links connected two areas was selected to represent the maximum flow between the two areas.\n\n#### Activation levels from comparison loadings\n\nFor each experimental condition (C+ or C\u2212 trials), we determined the significant comparisons for each latent network structure by performing trial shuffling. For each shuffle, dDTF and SR-ERC were recalculated after trial type was randomly shuffled. A new tensor was formed and we estimated how the five spectrotemporal connectivity structures identified from the original data contributed in the shuffled data, by performing PARAFAC on the tensor from the shuffled data with the last two tensor dimensions (Time-Frequency and Connection-Subject) fixed with the values acquired from the original data. Trial shuffling was performed 50 times. The loading from the original data that was significantly different than the loadings from the shuffled data is identified as the significant loading (\u03b1 = 0.05). The comparisons with significant loadings showed the context and response dependencies of each structure, and further revealed the activation levels of each structure in different scenarios.\n\n#### Interdependencies among latent network structures\n\nWe determined the interdependencies among latent network structures by examining how the activation of one structure could affect the activation of the others. To achieve this, we examined the comparison loadings in the first tensor dimension. For the correlations of structures' activation differences across contexts under Rf, we focused on the six comparison loadings representing activation differences across contexts under Rf (ChRf \u2212 CmRf, CmRf \u2212 CwRf, and CwRf \u2212 ChRf) from C+ and C\u2212 trials, and evaluated the correlations of these comparison loadings from different structures. The p-values for testing the hypothesis of no correlation were then computed. For the correlations of structures' activation differences across contexts under Rn, we used the same approach to evaluate the correlations of structures' activation differences across contexts under Rn (ChRn \u2212 CmRn, CmRn \u2212 CwRn, and CwRn \u2212 ChRn). For the correlations of structures' activation differences across responses, we evaluated the correlations of structures' activation differences across responses (ChRf \u2212 ChRn, CmRf \u2212 CmRn, and CwRf \u2212 CwRn).\n\n![Video 1.](https://cdn.elifesciences.org/articles/06121/elife-06121-media1.mov.jpg)\n\n**Video 1.:** The clip contains the Context and Response periods.\n\n![Video 2.](https://cdn.elifesciences.org/articles/06121/elife-06121-media2.mov.jpg)\n\n**Video 2.:** The clip contains the Context and Response periods.\n\n![Video 3.](https://cdn.elifesciences.org/articles/06121/elife-06121-media3.mov.jpg)\n\n**Video 3.:** The clip contains the Context and Response periods.\n\n![Video 4.](https://cdn.elifesciences.org/articles/06121/elife-06121-media4.mov.jpg)\n\n**Video 4.:** The clip contains the Context and Response periods.\n\n![Video 5.](https://cdn.elifesciences.org/articles/06121/elife-06121-media5.mov.jpg)\n\n**Video 5.:** The clip contains the Context and Response periods.\n\n![Video 6.](https://cdn.elifesciences.org/articles/06121/elife-06121-media6.mov.jpg)\n\n**Video 6.:** The clip contains the Context and Response periods.\n",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "3b7cab56-52a5-4f3c-a67d-a5fac22cf65c",
+      "submission_id": "1dfa3ff8-76d1-4b3c-b56d-c9a3aadd8c42",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Timothy Behrens, Oxford University , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.06121.027](https://doi.org/10.7554/eLife.06121.027)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cMesoscopic brain networks regulate cognitive enchainment in social monitoring\u201d for consideration at eLife. Your article has been favorably evaluated by three reviewers, one of whom, Timothy Behrens (Senior Editor and Reviewing Editor) is a member of our board.\n\nThe editor and the other reviewers discussed their comments before we reached this decision, and the editor has assembled the following comments to help you prepare a revised submission.\n\nAll three reviewers were very impressed by the unusual nature of the data, by the sophisticated and revealing analysis that was able to simplify complex data to the dynamics of network activity that underlies social observations in the task, and all reviewers were excited by the ability to study this particular brain network in macaque monkeys, given its importance in social cognition in many human studies.\n\nExample praise for the manuscript in review was as follows:\n\nReviewer 1:\n\nThe neural mechanisms mediating social behavior appear to be distributed across the brain, including areas thought to be specialized for social information processing (such as those in the temporal lobe and medial prefrontal cortex) and others that serve more general purpose functions (such as those involved in reward, decision-making, executive control, and attention). One impediment to understanding how these circuits interact to translate sensory perception into behavior is that the methods typically applied suffer from either poor temporal resolution (fMRI in humans), poor spatial resolution (EEG), or limited coverage (single unit recording in animals). The current paper uses wide-scale recordings from intracranial EEG (ECoG) system to simultaneously assess interactions amongst cortical areas during social information processing. Importantly, the authors apply sophisticated, data-driven analytical tools to derive the information flow between and amongst these areas. This is an important advance.\n\nReviewer 2:\n\nThis paper describes a novel approach to extract information about the functional connectivity of distributed brain networks, and how these connections evolve through time as a function of carrying out social observation. The paper is unique in two respects. First, the dataset contains whole-hemisphere ECoG is collected whilst three non-human primates perform a social task (although the authors have published several papers with similar ECoG data previously). Second, the analysis approach is novel and innovative. dDTF is used to identify connections between regions, and then factor analysis is used to isolate how these vary as a function of different task conditions. Using this approach, the authors identify five separate networks (\u2018structures\u2019). These superficially have similarities in terms of their connectional structure (e.g. structures 1/2, and structures 3/4), but differ in terms of their temporal dynamics and their activation across conditions. Intriguingly, some of the networks contain classic \u2018social\u2019 regions, such as the superior temporal sulcus. By examining how these networks evolve through time, the authors attempt to reveal the chain of events underlying different forms of social observation.\n\nReviewer 3:\n\nThis paper reports extremely unusual data from ECoG recordings of macaque monkeys viewing other monkeys engaged in socially threatening situations. It also reports a novel and potentially powerful set of analysis tools for analysing functional networks acquired at high temporal resolution in ECoG data.\n\nThere are several key strengths and novelties about the paper.\n\n(1) Intriguing patterns of brain activity and functional connections are reported that have perhaps never been recorded from outside and fMRI scanner, and certainly not in social situations. These patterns are reminiscent of human brain areas that respond to complex social tasks.\n\n(2) The broad coverage of the ECoG data by comparison to most other macaque monkey recordings allows the analysis of information flow between brain areas. Because of the temporal resolution, these analyses can also begin to make directional inferences.\n\n(3) The complex nature of ECoG data requires sophisticated data compression techniques. The authors are extremely inventive in how they analyse their data \u2013 they develop tools which compress the data into its digestible patterns, but which maintain the key comparisons between conditions, between brain areas, and between task times. I find this very impressive.\n\nHowever, there were several features of the data that limited the reviewers' enthusiasm. In brief, these were broadly to do with the task and the over-interpretation of the data. We believe that with a thorough rewrite of the manuscript, to focus on describing the data clearly rather than making interpretations of the data, both in terms of its relevance to particular social behaviours, and in terms of causal mechanisms that are not supported directly by the data, it will be possible to improve the manuscript to remove these concerns.\n\nSpecifically:\n\nComments about the task:\n\nReviewer #1:\n\n1) The task, which the authors refer to as monitoring of a social context, involves only passive viewing without any differential response expected (or found) on the part of the observer monkey in reaction to different \u2018social scenarios\u2019. The only statistically significant difference in behavior is the reported difference in left vs. right gaze positions during the response phase of the trial when monkeys view a frightened vM vs. a neutral vM. Since the authors did not find this result to vary under different \u2018social\u2019 contexts, it remains unclear whether/what the observer monkeys made out of the different social situations examined in the study.\n\n2) In the Abstract, it might be more precise to talk about \u201cmapping the network structure\u201d as monkeys viewed scenes leading up to examining the valence on a conspecific's face rather than calling it a \u201csocial cognitive behavior\u201d/\u201csocial context monitoring\u201d since the behavior per se doesn't inform us in this regard.\n\n3) In the Methods, the task lacks a non-social control, which will in turn depend on what the authors, for the purpose of the expt., define as \u2018social\u2019. For instance, is the context of two monkeys looking at each other \u2018social\u2019 in which case, the non-social control could be another monkey looking away from the monkey on the left of the screen. Is monkey-monkey looking at each other more \u2018social\u2019 than monkey-human looking at each other? These are of course tough questions to answer from a single experiment but it will be still useful to discuss the authors' view on these issues as their basis for designing the expt.\n\nOn the other hand, if the element of affect/threatening the monkey on the left is what constitutes social in this case, a non-social control could be a non-threatening/neutral monkey on the right or perhaps an inanimate monkey/human with a threatening expression on it?\n\nFurthermore, the monkey in the video facing an empty wall does not control for the presence of an object or an individual. There are clear sensory/perceptual differences between a monkey face, a human face, and a wall.\n\nReviewer #3:\n\nIt is not clear from the monkey's behaviour that the social nature of the task, rather than the perceptual differences between stimuli, is what is important. In my view this slightly confounds the clear interpretation of these signals as social signals.\n\nComments about the interpretation of the data:\n\nReviewer #1:\n\n4) In the Results, the authors say that \u201csubjects tended to focus on the right section during the Response period when the response stimuli were Rf (C+Rf trials)\u201d vs C+Rn trials as well as C\u2013 trials. They conclude that this \u201cindicated that gazing behavior required not only vM responses with high emotional valence, but also the context of vM's response. This suggested that the gazing behavior by the subject represented an automatic or intuitive reaction to socially relatable scenarios (e.g. \u2018vM was frightened after being threatened\u2019).\u201d\n\nI think the comparison that the authors analyzed suggest that monkeys are interested in knowing what is behind the curtain when vM is frightened vs. when it is not. This comparison doesn't take into account the nature of context preceding the response since what frightened the monkey \u2013 monkey vs. human vs. empty wall \u2013 was not compared against each other here. In fact, when the context was indeed taken into account, the authors did not find any significant context dependence at all (Figure 1\u2013figure supplement 3) and hence, in my opinion, the reported difference in gazing location does not make the case for subjects \u2018monitoring the context of a social scenario\u2019 at all. This is a critical concern.\n\nReviewer #2:\n\nI came away with a less than clear impression of what the findings had taught us. I think that this was partly a result of the way the paper was structured. The focus, in the Abstract, Introduction and initial results, was quite heavily on the mathematical technique used as opposed to the results obtained with this technique. Upon reaching the Results, there were some clearly interesting findings, but many of the interpretations were dependent upon a reverse inference from the brain regions activated (Poldrack RA, TiCS 2006), as opposed to an inference based on the task manipulation. I would therefore urge the authors to shift the emphasis in the initial part of the paper towards what their technique and dataset tells us about the dynamics of connectivity in these brain regions, as opposed to being so heavily focused on the methodology.\n\nReviewer #3:\n\nThe nature of the task in combination with the complex analysis often makes interpretation of the results complex, and the authors resort to an interpretation that does not rely on the data. There are examples of this throughout the manuscript. Here is a typical one:\n\n\u201cThis result suggests that Structure 5 underlies the context-dependent feedback modulation of response perception linked to social reasoning in the task (\u2018why vM is frightened?\u2019 or \u2018is vM frightened because it was threatened by something?\u2019 or \u2018should I be concerned that vM is frightened?\u2019).\u201d\n\nThis kind of inference is inappropriate, and is also unnecessary.\n\nThe remaining major comments were either about the technicalities of the analysis, or about the reporting of these technicalities. Where possible, we would like you to address these technical concerns. More broadly speaking, we would like you to focus on clarifying the more technical aspects of the manuscript so that the manuscript can be clearly understood by a broad audience.\n\nOther comments:\n\nReviewer #1:\n\nIn the subsection \u201cDeconvolution Analysis or Cortical Information Processing,\u201d wouldn't it be more useful task-wise to identify independent sources by using only C+ trials instead of merging data from C+ & C\u2013 trials for ICA? Did the authors do this analysis? How does it affect the results?\n\nIn the first paragraph of the subsection \u201cDynamic Cognitive Chain Describes Social Context Monitoring\u201d to examine how the network interactions change as a function of context, wouldn't it be better to examine the correlations between activation differences across contexts (Cm & Ch vs. Cw) rather than between C+ vs. C\u2013 trials?\n\nIn the same subsection, as per Figure 5A, none of the correlations with structure 2 are significant. In that case does a causal dependence of structure 4 and 5 on structure 2 apply?\n\nIn the second paragraph of the same subsection, does this analysis include the time courses of gaze positions and scanning behavior of all contexts (Cm, Ch & Cw) and trials (C+ & C\u2013)? Did you find the timing correlations to be different across contexts?\n\nReviewer #2:\n\nI would therefore urge the authors to shift the emphasis in the initial part of the paper towards what their technique and dataset tells us about the dynamics of connectivity in these brain regions, as opposed to being so heavily focused on the methodology. That said, there were also times where it was unclear what order different techniques were being applied, and how they were being applied. For instance, it is mentioned that ICA was first applied, but it was unclear what the input dimensions of the ICA were, or how the obtained components were subsequently used for the dDTF and PARAFAC analysis. I felt that a clear \u2018analysis pipeline\u2019 diagram, starting with raw data and ending with the key results, would be very helpful to include as a supplementary figure.\n\nFinally, I felt that the presentation of the comparison-condition component in Figures 3 and 4 was unclear, in that it seemed diagrammatic whereas presumably it was based upon the statistics of the comparison being performed. A more quantitative approach to presenting this data would help to make it more clear and compelling.\n\nReviewer #3:\n\nThe manuscript is written from a very technical perspective, and does not introduce the key neuroscience issues well. This makes it a very tough read, particularly for a broad interest journal such as eLife.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \u201cMesoscopic brain networks regulate cognitive enchainment in social monitoring\u201d for further consideration at eLife. Your revised article has been evaluated by Timothy Behrens (Senior Editor and Reviewing Editor) and the original reviewers.\n\nThe reviews are appended below, and the sentiment in the reviews was reiterated in discussion between reviewers. Essentially, we all remain impressed with the data, are aware that the volume and complexity of data requires innovative new analytical tools, and we still all believe that the proposed analyses are likely very interesting. However, two of the reviewers are clear (and the editorial team agree) that the manuscript cannot possibly be published in a broad interest journal in its present form. Whilst the technical details are more revealing and the claims better substantiated in this current revision, the clarity of the manuscript has, in our view, not improved. It is very difficult indeed to parse the manuscript to understand what the central contribution is. The figures are not well explained in the legends \u2013 the legends report details that might be more appropriate in a technical methods section and do not perform the main function of a figure legend, which is to explain how to read the figure.\n\nWe would like to ask you to follow the reviewers\u2019 advice below and to restructure and rewrite the paper, so it can be followed in detail by a na\u00efve reader.\n\nReviewer #1:\n\nI think the authors have done a fine job revising this paper, which presents a novel analytical approach to analyzing density neurophysiological data gathered in monkeys viewing a set of different social scenarios. I'm not yet convinced that the descriptor \u201csocial scenario viewing task\u201d is much better than \u201csocial monitoring task\u201d\u2013 it's both a mouthful and I think still puts too much emphasis on the idea of a task. It might be more concise and precise to say the monkeys were viewing social scenarios.\n\nReviewer #2:\n\nThe authors have put quite some work into making the manuscript clearer, and providing more substantial information concerning the methodology. But the main concerns of the reviewers seem to have held: because of the task design, it is very difficult to draw any strong conclusions about the role of the identified networks in social cognition. In their own words, they acknowledge \u201cwithout a proper control, we can't conclusively link our results to social cognition.\u201d As such, the authors now explicitly state (in their response) that the main conclusion from the paper is about the development of a novel method. Not much can be learnt about the explicit meaning of the underlying cognitive processes.\n\nThe question then becomes, is this novel method of sufficiently broad interest and importance that it will change the views of the community? The authors main claim seems to be that it will reveal previously undiscovered \u2018cognitive chains\u2019. What exactly is meant by this? That brain regions are activated sequentially in response to a task, and that different brain areas will be recruited depending upon the cognitive function? On the one hand, this seems to be something that we already know from many years of MEG and EEG research in humans. On the other, it is clear that the spatial resolution of the ECoG data far surpasses this research, and the extraction of network structure is very different from what has gone before. Nevertheless, I still very much struggled to understand whether this extraction of network structure was (a) valid or (b) important. In terms of validity, if I were reviewing this paper at a methods journal, I'd expect a set of examples in simulated data to convince me that the method works well and robustly. In terms of importance, it's precisely because the task is poorly controlled that I don't get an \u201caha!\u201d moment when examining the results that convinces me that it has definitely worked.\n\nI can see that there is a lot of potential in the paper, and it seems unfair to dismiss what could be an important set of findings about a novel technique. But equally I didn't find the results and structure of the paper sufficiently compelling or clear to warrant publication at present. I'd be open to other reviewers pointing out what they felt was the evidence that the technique works convincingly, or that it has produced a particularly important result.\n\nReviewer #3:\n\nThe authors have done a good job dealing with the technical concerns and no longer over-interpret the data.\n\nHowever, there still remain concerns about whether the manuscript as currently written can be understood by a broad interest readership, or even a relatively specialised readership within the field. Indeed the mathematical expertise needed even to understand the basic analysis is extreme, and the authors do a very poor job in making the analysis comprehensible. Like the other reviewers, I suspect, I am still finding it difficult to really evaluate the neuroscientific findings, as I cannot fully understand their implications.\n\nDespite the unusual and high quality of the data and the sophisticated nature of the analysis, it is therefore very difficult to understand what we have learnt about the cognitive processes.\n\nFor example, the figure legends do not explain how to read the figures. The new diagram asked for by a different reviewer is difficult to understand.\n\nIt is essential that the authors address this in both the Abstract and the main text before this can be published in a journal such as eLife.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \u201cCortical network architecture for context processing in primate brain\u201d for further consideration at eLife. Your revised article has been favorably evaluated by Timothy Behrens (Senior Editor).\n\nThe new manuscript is, in my view, dramatically clarified, and the data remain extremely exciting. However, in the rewrite the focus of the Abstract and the Introduction has been moved towards the technical achievements of the manuscript. This presents a difficulty for eLife because the manuscript has not been reviewed or considered as a technical manuscript. In the Discussion, the nature of the claims is much more balanced between the technical innovations and the neuroscience claims (except perhaps in the first overarching paragraph where the balance is again towards the technical). eLife cannot publish the manuscript on the basis of the technical claim alone, but I believe it will be relatively easy to adjust the Abstract and Introduction to highlight and to be clear about the new neuroscience claim.\n\nIn my view, the neuroscience claim is still not clearly stated in the Abstract or Introduction. You summarise your findings as follows in the Abstract:\n\n\u201cCollectively, the five structures delineated the flow of information in the network, including two isomorphic variants defining the encoding and retrieval, respectively, of contextual information.\u201d\n\nand in the Introduction:\n\n\u201cThe structures we identified provide new insights on how contextual information is processed and help to identify relationships linking network communication and behavior.\u201d\n\nBoth of these statements are descriptions of the success of the technique, and not of new neuroscience findings. In brief, what new insights do they provide?\n\nIn the Discussion you are much more clear about this in the subsection \u201cContext is Encoded by Interactions of Large-Scale Network Structures\u201d.\n\nIf I am correct, it seems like the key claims can be summarised as follows:\n\na) Large-scale network interactions are different in different contexts.\n\nb) Bottom-up connections from posterior temporal cortex to anterior temporal cortex and medial PFC can encode a context whilst it is being first processed and held on-line.\n\nc) These exact same brain regions exhibit the opposite top-down connectivity only seconds later when the context is being applied to incoming sensory information.\n\nd) The extent to which the bottom-up connectivity is active during the processing of context predicts the extent to which the top-down connectivity will act when the context is later being applied.\n\nTo me, these claims seem to be striking and important and it is these claims that the manuscript has been judged on, but these claims no longer appear anywhere in the Abstract or Introduction and are only in a subsection of the Discussion. So I am asking for one further revision. In this round of revision, I am asking for changes to the Abstract, to the Introduction (and possibly also to the Discussion if you choose), which concisely and precisely highlight the new neuroscience claims, and which change the tone of the current version of the manuscript from being largely a methodological innovation, to being a balanced manuscript which introduces a new technique to make a clear and precise claim about the contextual processing of sensory information.\n",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7e533a36-1e7a-4fab-88c8-fc32becffd54",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C1",
+      "claim": "Context is information linked to a situation that can guide behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Context is information linked to a situation that can guide behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement provided in the abstract without supporting data in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "bad78d5d-023f-4faf-8983-d39ab9e22dcc",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C2",
+      "claim": "In the brain, context is encoded by sensory processing and can later be retrieved from memory.",
+      "claim_type": "EXPLICIT",
+      "source": "In the brain, context is encoded by sensory processing and can later be retrieved from memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by the experimental findings showing encoding and retrieval network structures (Structures 3 and 4).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "f0935e5a-67c3-45f1-8bd5-48398a799353",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C3",
+      "claim": "Using hemisphere-wide, high-density electrocorticography, large-scale neuronal activity was measured from monkeys observing videos of agents interacting in situations with different contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Using hemisphere-wide, high-density electrocorticography, we measured large-scale neuronal activity from monkeys observing videos of agents interacting in situations with different contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the use of 128-channel ECoG arrays and the experimental paradigm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "200c45cb-b2d0-4238-95bc-c2d62a19ad7d",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C4",
+      "claim": "Five context-related network structures were extracted including a bottom-up network during encoding and, seconds later, cue-dependent retrieval of the same network with the opposite top-down connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "We extracted five context-related network structures including a bottom-up network during encoding and, seconds later, cue-dependent retrieval of the same network with the opposite top-down connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "PARAFAC analysis identified five structures with distinct functional, temporal, and anatomical properties as shown in Figures 4 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "fd3caceb-db1e-410a-b90c-90a4d691f4ff",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C5",
+      "claim": "Context is represented in the cortical network as distributed communication structures with dynamic information flows.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings show that context is represented in the cortical network as distributed communication structures with dynamic information flows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The five network structures show distributed anatomical patterns with time-varying connectivity as demonstrated in the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "f817673b-895a-4ddf-80cb-9c4ba2e00da8",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C6",
+      "claim": "Context is proposed to require an interplay between bottom-up and top-down information processing in distributed neural networks.",
+      "claim_type": "EXPLICIT",
+      "source": "In the brain, context is proposed to require an interplay between bottom-up and top-down information processing in distributed neural networks (Tononi and Edelman, 1997; Friston, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "bc4d81a5-73e3-46ce-9c50-b52c6ad4f7a3",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C7",
+      "claim": "The neural mechanisms underlying contextual information processing have been studied in visual perception, emotion, language, and social cognition.",
+      "claim_type": "EXPLICIT",
+      "source": "the neural mechanisms underlying contextual information processing have been studied in a variety of domains including visual perception (Bar, 2004; Schwartz et al., 2007), emotion (De Gelder, 2006; Barrett et al., 2007; Barrett and Kensinger, 2010), language (Hagoort, 2005; Aravena et al., 2010), and social cognition (Iba\u00f1ez and Manes, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple citations support this claim about prior research domains.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "78e35f53-cc7a-4d37-858d-8e8e1630eb21",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C8",
+      "claim": "A 128-channel hemisphere-wide high-density electrocorticography array was used to quantify neuronal interactions with high spatial, spectral, and temporal resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "we used a 128-channel hemisphere-wide high-density electrocorticography (HD-ECoG) array to quantify neuronal interactions with high spatial, spectral, and temporal resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methods section describes the technical specifications of the recording system.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "c039a52f-689d-41d6-9d70-4bb68f09ab26",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C9",
+      "claim": "The ECoG system has wider spatial coverage than conventional ECoG and LFP.",
+      "claim_type": "EXPLICIT",
+      "source": "This ECoG system has wider spatial coverage than conventional ECoG and LFP (Buschman and Miller, 2007; Pesaran et al., 2008; Haegens et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative claim supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "b6a63c76-85ea-4589-b12f-28338a992454",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C10",
+      "claim": "The ECoG system has higher spatial resolution than MEG.",
+      "claim_type": "EXPLICIT",
+      "source": "higher spatial resolution than MEG (Gross et al., 2004; Siegel et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative claim supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "6c85e514-9c20-4753-ac22-649c18832ac6",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C11",
+      "claim": "The ECoG system has broader bandwidth than EEG.",
+      "claim_type": "EXPLICIT",
+      "source": "broader bandwidth than EEG (Hipp et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative claim supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "f4ac0712-ce9b-43ea-a47d-19a9c8b091d0",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C12",
+      "claim": "The ECoG system has superior temporal resolution to fMRI.",
+      "claim_type": "EXPLICIT",
+      "source": "superior temporal resolution to fMRI (Rees and House, 2005; Freeman et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative claim supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "e80b46d2-c512-457e-bcab-975bb813cce8",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C13",
+      "claim": "Three monkeys participated in the study, one with a right hemisphere array (Subject 1), and two in the left hemisphere (Subjects 2 and 3).",
+      "claim_type": "EXPLICIT",
+      "source": "Three monkeys participated, one with a right hemisphere array (Subject 1), and two in the right (Subjects 2 and 3)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "80d6f356-1ace-4947-b445-1b65e040129e",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C14",
+      "claim": "Six different video clips were created from three contexts combined with two responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Six different video clips were created from three contexts, vM threatened by a human (Ch), threatened by another monkey (Cm), or facing an empty wall (Cw), combined with two responses, vM showing a frightened expression (Rf), or neutral expression (Rn), which were termed ChRf, CmRf, CwRf, ChRn, CmRn, and CwRn",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design and stimulus conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "cadb190c-50db-4ce7-9a8e-796ceb65ed66",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C15",
+      "claim": "When the context was perceived (C+) and the response stimulus was Rf, subjects focused more on the right section during the Response period.",
+      "claim_type": "EXPLICIT",
+      "source": "When the context was perceived (C+) and the response stimulus was Rf, subjects focused more on the right section during the Response period, indicating interest in the curtain, or the threat behind the curtain, than the frightened vM (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by eye tracking data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "4b22bf09-4144-44c8-8b21-a1b28d43bce3",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C16",
+      "claim": "Gaze direction preference required not only the vM response, but also perception of the preceding context.",
+      "claim_type": "EXPLICIT",
+      "source": "This is behavioral evidence that gaze direction preference required not only the vM response, but also perception of the preceding context, which demonstrated a cognitive association between the perception of the context and response stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the eye tracking data showing differential gaze patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "168791a4-e88c-43ed-9cb3-cb415776be93",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C17",
+      "claim": "Gazing behavior showed both response dependence (Rf > Rn) and context dependence (Cm \u2248 Ch > Cw), but only when context was perceived (C+ > C\u2212).",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicated that the subjects' gaze shift during the Response period showed both response dependence (Rf > Rn) and context dependence (Cm \u2248 Ch > Cw), but only when context was perceived (C+ > C\u2212).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical comparisons of gaze positions shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "ff016b5c-5441-4887-97d2-36d7c736591a",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C18",
+      "claim": "Independent component analysis (ICA) was used to identify cortical areas over the 128 electrodes in the array.",
+      "claim_type": "EXPLICIT",
+      "source": "To analyze the large-scale ECoG dataset, we identified cortical areas over the 128 electrodes in the array by independent component analysis (ICA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical method used, with results shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "814ef79a-a850-457d-b46a-ad746857071d",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C19",
+      "claim": "Direct directed transfer function (dDTF) was used to measure the causality of a connection from one cortical area to another.",
+      "claim_type": "EXPLICIT",
+      "source": "We then measured the causality of a connection from one cortical area (source area) to another (sink area) with a multivariate effective connectivity measure based on Granger causality: direct directed transfer function (dDTF) (Korzeniewska et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the connectivity analysis method with citation to the original method.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "4147cc17-7673-4418-8af5-51a1243a1099",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C20",
+      "claim": "Parallel factor analysis (PARAFAC) extracted five dominant structures from the 3D tensor with consistency greater than 80%.",
+      "claim_type": "EXPLICIT",
+      "source": "Parallel factor analysis (PARAFAC) extracted five dominant structures from the 3D tensor with consistency (>80%, also see Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the core consistency diagnostic shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "904f6b06-2231-4898-88c9-c82712ab286b",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C21",
+      "claim": "Structure 1 was activated first, with context dependence only in the Context period (Cm > Ch > Cw) suggesting sensory processing that can discriminate between contextual stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Structure 1 was activated first, with context dependence only in the Context period (Cm > Ch > Cw) suggesting sensory processing that can discriminate between contextual stimuli, that is, context perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the functional analysis shown in Figure 4A for Structure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "55d2676f-66ed-4b96-86ba-5d40d568968d",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C22",
+      "claim": "The spectral dynamics of Structure 1 emerged primarily in the high-\u03b3 band (>70 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "The spectral dynamics of Structure 1 emerged primarily in the high-\u03b3 band (>70 Hz)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the dynamics panel of Figure 4B for Structure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "de56c72e-dc37-4cc6-81f5-9c07322bc62a",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C23",
+      "claim": "Structure 1 contained mostly bottom-up connections from the posterior to anterior parts of temporal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "and contained mostly bottom-up connections from the posterior to anterior parts of temporal cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the anatomical connectivity analysis in Figure 4C for Structure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "20d8c63e-8bc6-4955-9444-52a60a0f4106",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C24",
+      "claim": "Structure 2 was the earliest activated in the Response period, with only response dependence (Rf > Rn), and was independent of whether context stimuli were visually perceived (C+ \u2248 C\u2212).",
+      "claim_type": "EXPLICIT",
+      "source": "Structure 2 was the earliest activated in the Response period, with only response dependence (Rf > Rn), and was independent of whether context stimuli were visually perceived (C+ \u2248 C\u2212).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the functional analysis shown in Figure 4A for Structure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "1c7330fd-0b57-4380-a707-469406c4ba2b",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C25",
+      "claim": "Structure 2 emerged in both high-\u03b3 and \u03b2 bands.",
+      "claim_type": "EXPLICIT",
+      "source": "Spectrally, Structure 2 emerged in both high-\u03b3 and \u03b2 bands",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the dynamics panel of Figure 4B for Structure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "5c7966db-81fe-4dcd-8d36-6cfa59bc5668",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C26",
+      "claim": "Structure 2 corresponds to sensory processing that can discriminate between response stimuli, that is, response perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Structure 2 corresponds to sensory processing that can discriminate between response stimuli, that is, response perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the functional properties of Structure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "cbdeec96-776c-49d5-b43d-32860695fd1f",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C27",
+      "claim": "Structure 3 was activated the second earliest in the Context period showing a generalized context dependence (Cm \u2248 Ch > Cw) representing the abstract categorization of the context.",
+      "claim_type": "EXPLICIT",
+      "source": "Structure 3 was activated the second earliest in the Context period showing a generalized context dependence (Cm \u2248 Ch > Cw) representing the abstract categorization of the context ('an indeterminate agent is threatening vM').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the functional analysis shown in Figure 5A for Structure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "aa56b4ab-135a-4fdd-820f-a8e01e1ad8c3",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C28",
+      "claim": "Structure 3 appeared mainly in the \u03b2 band (10\u201330 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "Structure 3 appeared mainly in the \u03b2 band (10\u201330 Hz)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the dynamics panel of Figure 5B for Structure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "5d215579-2481-4655-8f48-32c84295dbc8",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C29",
+      "claim": "Structure 3 contained primarily bottom-up connections from the posterior temporal cortex (mainly the area TEO) to the anterior temporal cortex (mainly the temporal pole) and the lateral and medial PFC.",
+      "claim_type": "EXPLICIT",
+      "source": "and contained primarily bottom-up connections from the posterior temporal cortex (mainly the area TEO) to the anterior temporal cortex (mainly the temporal pole) and the lateral and medial PFC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the anatomical connectivity analysis in Figure 5C for Structure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "0649a6f6-7673-461c-920f-7a21b49f7486",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C30",
+      "claim": "Structure 4 showed the same generalized context dependence as Structure 3, but during the Response period when context stimuli were absent and only in C+Rf.",
+      "claim_type": "EXPLICIT",
+      "source": "Structure 4 showed the same generalized context dependence as Structure 3, but during the Response period when context stimuli were absent and only in C+Rf (not in C+Rn and C\u2212).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the functional analysis shown in Figure 5A for Structure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "d6f4c842-34c4-4b79-b813-2579af9eb1d3",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C31",
+      "claim": "Structure 4 exhibited spatial and spectral characteristics similar to Structure 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Structure 4 exhibited spatial and spectral characteristics similar to Structure 3 (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "986276c1-9416-4a31-8510-b9d3164f6415",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C32",
+      "claim": "Structure 3 corresponds to the initial formation/encoding of the contextual information, while Structure 4 represents the Rf-triggered reactivation/retrieval of the contextual information.",
+      "claim_type": "EXPLICIT",
+      "source": "Structure 3 corresponds to the initial formation/encoding of the contextual information, while Structure 4 represents the Rf -triggered reactivation/retrieval of the contextual information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the temporal and functional properties of Structures 3 and 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "1c8e10fc-aa6a-4029-826e-282bd30f65bc",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C33",
+      "claim": "Structure 5 showed context dependence (Cm \u2248 Ch > Cw) in C+Rf and response dependence (Rf > Rn) in C+ during the Response period.",
+      "claim_type": "EXPLICIT",
+      "source": "Structure 5 showed context dependence (Cm \u2248 Ch > Cw) in C+Rf (not in C+Rn and C\u2212), and response dependence (Rf > Rn) in C+ (not in C\u2212) during the Response period",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the functional analysis shown in Figure 5A for Structure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "2ebbff76-05a4-4502-8f44-a45388771692",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C34",
+      "claim": "Structure 5 appeared mainly in \u03b1 and low-\u03b2 bands (5\u201320 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "and appeared mainly in \u03b1 and low-\u03b2 bands (5\u201320 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the dynamics panel of Figure 5B for Structure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "2919c812-2ada-4a6b-a3ca-c8a2260e1b8b",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C35",
+      "claim": "Structure 5 showed primarily top-down connections between posterior temporal cortex, the anterior temporal cortex, and the lateral and medial PFC.",
+      "claim_type": "EXPLICIT",
+      "source": "Anatomically, the structure showed primarily top-down connections between posterior temporal cortex, the anterior temporal cortex, and the lateral and medial PFC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the anatomical connectivity analysis in Figure 5C for Structure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "76611f66-eb8a-4a45-ba8a-8766d17de3c8",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C36",
+      "claim": "Structure 5 is the only one demonstrating clear top-down connections, with the same context and response dependence as the gaze behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, Structure 5 is the only one demonstrating clear top-down connections, with the same context and response dependence as the gaze behavior (see Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of Structure 5 properties with behavioral data in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "6995a9ae-978d-44b6-b9fc-37cdad2abcb5",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C37",
+      "claim": "Structure 5 corresponds to a network for the context-dependent feedback modulation of eye gaze or visual attention during the task.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that Structure 5 corresponds to a network for the context-dependent feedback modulation of eye gaze or visual attention during the task",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the top-down connectivity and behavioral correlation of Structure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "5b821f70-6dcf-4a36-8dfb-fb371bcc8a87",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C38",
+      "claim": "Structure 1 significantly correlated to Structures 3 and 4 across contexts in Rf.",
+      "claim_type": "EXPLICIT",
+      "source": "Across contexts in Rf (Figure 6A, left), Structure 1 significantly correlated to Structures 3 and 4",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the functional coordination analysis in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "f91ce337-3f86-4446-88de-c99b171efd6d",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C39",
+      "claim": "Structures 3 and 4 were significantly correlated to Structure 5 across contexts in Rf.",
+      "claim_type": "EXPLICIT",
+      "source": "which were themselves significantly correlated to Structure 5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the functional coordination analysis in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "6e2c5728-28a0-477b-bc79-5fa9d788cd71",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C40",
+      "claim": "A significant correlation was found only between Structures 1 and 3 across contexts in Rn.",
+      "claim_type": "EXPLICIT",
+      "source": "However, across contexts in Rn (Figure 6A, middle), a significant correlation was found only between Structures 1 and 3.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the functional coordination analysis in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "63097435-2e98-4888-9cbc-50c464815f16",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C41",
+      "claim": "Structure 2 significantly correlated to Structure 4 across responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Across responses (Figure 6A, right), Structure 2 significantly correlated to Structure 4",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the functional coordination analysis in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "16348296-5646-48f9-b342-1e9c9614eeb7",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C42",
+      "claim": "Structure 4 was significantly correlated to Structure 5 across responses.",
+      "claim_type": "EXPLICIT",
+      "source": "which was itself significantly correlated to Structure 5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the functional coordination analysis in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "38d364e7-dee7-40e7-ab0b-f61d1d4464e1",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C43",
+      "claim": "Significant correlations in temporal dynamics were found between structures activated in the Context period (Structures 1 and 3) and the Response period (Structures 2, 4, and 5).",
+      "claim_type": "EXPLICIT",
+      "source": "Significant correlations in temporal dynamics were found between structures activated in the Context period (Structures 1 and 3) and the Response period (Structures 2, 4, and 5) (Figure 6B, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the dynamic co-activation analysis in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "f1e12f9b-efe5-419e-8859-0375912ee0b0",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C44",
+      "claim": "Significant correlations in spectral profiles were found among structures with \u03b2 band activation (Structures 2, 3, 4, and 5).",
+      "claim_type": "EXPLICIT",
+      "source": "Significant correlations in spectral profiles were found among structures with \u03b2 band activation (Structures 2, 3, 4, and 5) (Figure 6B, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the dynamic co-activation analysis in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "291d5b6b-2909-4d84-b19a-20a38c505cec",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C45",
+      "claim": "The numbers of shared connections between all structures were particularly high (>70% shared) between Structures 3 and 4 (abstract contextual information), and Structures 1 and 2 (perception).",
+      "claim_type": "EXPLICIT",
+      "source": "The numbers of shared connections between all structures were particularly high (>70% shared) between Structures 3 and 4 (abstract contextual information), and Structures 1 and 2 (perception).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the anatomical overlap analysis in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "480a5b1b-f04a-4e37-9fa2-a1e7be1d416b",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C46",
+      "claim": "Pathways shared by all structures and subjects were found in and from the temporal cortex to PFC.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined the undirected pathways that exclude the directionality of connections and found pathways shared by all structures and subjects in and from the temporal cortex to PFC (Figure 6D, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the anatomical overlap analysis in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "e2e752e4-2508-4060-bf8f-d43db9933836",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C47",
+      "claim": "Context can be represented by dynamic communication structures involving distributed brain areas and coordinated within large-scale neuronal networks.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we demonstrate that context can be represented by dynamic communication structures involving distributed brain areas and coordinated within large-scale neuronal networks, or neurocognitive networks (Varela et al., 2001; Fries, 2005; Bressler and Menon, 2010; Siegel et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion supported by the experimental findings and cited theoretical frameworks.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "4808ecbe-2931-46ac-b5dd-e0884cddbffb",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C48",
+      "claim": "Context can be encoded in large-scale bottom-up interactions from the posterior temporal cortex to the anterior temporal cortex and the lateral and medial PFC.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings show that context can be encoded in large-scale bottom-up interactions from the posterior temporal cortex to the anterior temporal cortex and the lateral and medial PFC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the anatomical connectivity patterns of Structure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "08354eec-81bb-4858-bf10-4f91f36c4bb5",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C49",
+      "claim": "The PFC is an important node in the 'context' network.",
+      "claim_type": "EXPLICIT",
+      "source": "The PFC is an important node in the 'context' network (Miller and Cohen, 2001; Bar, 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "01d2bb56-e68b-47e0-b0fd-03df5602b750",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C50",
+      "claim": "The lateral PFC is believed to be critical for establishing contingencies between contextually related events.",
+      "claim_type": "EXPLICIT",
+      "source": "where the lateral PFC is believed to be critical for establishing contingencies between contextually related events (Fuster et al., 2000; Koechlin et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "fd08b4ce-b825-4d37-b28e-9d547ee63c18",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C51",
+      "claim": "The medial PFC is involved in context-dependent cognition and conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "and the medial PFC is involved in context-dependent cognition (Shidara and Richmond, 2002) and conditioning (Fuster et al., 2000; Koechlin et al., 2003; Frankland et al., 2004; Quinn et al., 2008; Maren et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "405ccf60-c69b-45e4-892d-889f16b44248",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C52",
+      "claim": "Abstract contextual information can be encoded not only within the PFC, but in PFC interactions with lower-level perceptual areas in the temporal cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that abstract contextual information can be encoded not only within the PFC, but in PFC interactions with lower-level perceptual areas in the temporal cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the connectivity patterns observed in Structure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "57295f9c-6fd5-4c1e-8d14-56cf35aa1604",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C53",
+      "claim": "Brain contextual processing, from initial perception to subsequent retrieval, is represented not by sequential activation but rather sequential modular communication among participating brain areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidently, brain contextual processing, from initial perception to subsequent retrieval, is represented not by sequential activation but rather sequential modular communication among participating brain areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on the temporal and functional properties of the five structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "435f5386-192a-44b3-91d8-d5d712e57994",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C54",
+      "claim": "The network structures represent a module of modules, or 'meta-module' for brain communication connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we believe that the network structures we observed represent a module of modules, or 'meta-module' for brain communication connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical interpretation based on the hierarchical organization of the structures.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "8e25faca-4f21-4ff4-9c9a-5694af2390e0",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C55",
+      "claim": "Deficits in context processing in psychiatric disorders such as schizophrenia and post-traumatic stress disorder could contribute to their etiology.",
+      "claim_type": "EXPLICIT",
+      "source": "Further investigation of this meta-structure organization for brain network communication could help determine how deficits in context processing in psychiatric disorders such as schizophrenia (Barch et al., 2003) and post-traumatic stress disorder (Milad et al., 2009) could contribute to their etiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential clinical implications, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "32d37327-a88c-4a30-a9fe-5aea3efb6d5e",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C56",
+      "claim": "The five network structures' activity coordinated with each other in a deterministic manner, despite being highly overlapping in time, frequency, and space.",
+      "claim_type": "EXPLICIT",
+      "source": "The relationships among network properties in the functional, temporal, spectral, and anatomical domains revealed network structures whose activity coordinated with each other in a deterministic manner (Figure 7A), despite being highly overlapping in time, frequency, and space (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the coordination analyses shown in Figure 6 and summarized in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "35004c14-9958-4a2a-ae4c-13f203ff0ee7",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C57",
+      "claim": "Multiplexed, large-scale neuronal network structures could represent a novel meta-structure organization for brain network communication.",
+      "claim_type": "EXPLICIT",
+      "source": "Such multiplexed, yet large-scale, neuronal network structures could represent a novel meta-structure organization for brain network communication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical interpretation based on the observed properties of the structures.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "e57d9a52-8cd5-4e7b-82cb-3c2a017d62de",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C58",
+      "claim": "The latent network structures were extracted computationally and will require further confirmatory experiments to verify their biological significance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we caution that the latent network structures we identified were extracted computationally, and therefore will require further confirmatory experiments to verify their biological significance, particularly the causality of the connectivity patterns within each structure and the functional links bridging different structures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the limitations of the computational approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "de39ab7f-2e3f-4b68-8d4e-7292e276f16e",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C59",
+      "claim": "The biological meaning of the identified network structures could be achieved by selective manipulation of neuronal pathways by electrical or optogenetic stimulation linked to the ECoG array by neurofeedback, or neuropharmacological manipulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The biological meaning of the identified network structures could be achieved by selective manipulation of neuronal pathways by electrical or optogenetic stimulation linked to the ECoG array by neurofeedback, or neuropharmacological manipulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future experimental validation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "07b2ca5a-bb77-4ffe-8947-44cd25adf128",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C60",
+      "claim": "The general class of network structures identified are not necessarily unique to context.",
+      "claim_type": "EXPLICIT",
+      "source": "The general class of network structures we identified are not necessarily unique to context",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the generalizability of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "eff7c48b-4923-418e-8fed-51b1ac3b4060",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C61",
+      "claim": "The approach of pooling large-scale data across subjects may be useful to extract network structures that are generalizable.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach of pooling large-scale data across subjects may be useful to extract network structures that are generalizable, because neural processes specific to individual subjects or trials will cancel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological claim about the benefits of the analytical approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "e33c1ab9-2d8b-4eaf-b373-7af32fde6d8f",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C62",
+      "claim": "The stable and consistent trial responses across subjects suggest that the network structures isolated may be candidate innate, elemental units of brain organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the stable and consistent trial responses across subjects in our chronic ECoG recordings suggest that the network structures we isolated may be candidate innate, elemental units of brain organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the consistency of findings across subjects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "0c3d321f-ebe2-4edf-821b-16548023bab4",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C63",
+      "claim": "Future identification of unique differences in network structures between subjects could offer insight into structures related to individual trait and state variability, and the network-level etiology of brain diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, future identification of unique differences in network structures between subjects could offer insight into structures related to individual trait and state variability, and the network-level etiology of brain diseases (Belmonte et al., 2004; Uhlhaas and Singer, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "d2306f49-35cb-4dc4-bbd5-47055e94134a",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C64",
+      "claim": "Customized 128-channel ECoG electrode arrays containing 2.1 mm diameter platinum electrodes with an inter-electrode distance of 5 mm were chronically implanted in the subdural space in three Japanese macaques.",
+      "claim_type": "EXPLICIT",
+      "source": "Customized 128-channel ECoG electrode arrays (Unique Medical, Japan) containing 2.1 mm diameter platinum electrodes (1 mm diameter exposed from a silicone sheet) with an inter-electrode distances of 5 mm were chronically implanted in the subdural space in three Japanese macaques (Subjects 1, 2, and 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the experimental materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "b26ab186-dfb0-4260-93b1-4d98145892e3",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C65",
+      "claim": "In Subject 1, electrodes were placed to cover most of the lateral surface of the right hemisphere, also the medial parts of the frontal and occipital lobes.",
+      "claim_type": "EXPLICIT",
+      "source": "In Subject 1, electrodes were placed to cover most of the lateral surface of the right hemisphere, also the medial parts of the frontal and occipital lobes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of electrode placement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "a4e5e13a-cb77-46a4-8817-52190585d0e1",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C66",
+      "claim": "In Subject 2, a similar layout was used, but in the left hemisphere.",
+      "claim_type": "EXPLICIT",
+      "source": "In Subject 2, a similar layout was used, but in the left hemisphere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of electrode placement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "a743cc2f-db3a-47e5-a6d2-14b5b029a002",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C67",
+      "claim": "In Subject 3, all electrodes were placed on the lateral surface of the left hemisphere, and no medial parts were covered.",
+      "claim_type": "EXPLICIT",
+      "source": "In Subjects 3, all electrodes were placed on the lateral surface of the left hemisphere, and no medial parts were covered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of electrode placement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "93218307-a310-4066-bba2-25ed706c0578",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C68",
+      "claim": "All experimental and surgical procedures were performed in accordance with the experimental protocols approved by the RIKEN ethics committee and the recommendations of the Weatherall report.",
+      "claim_type": "EXPLICIT",
+      "source": "All experimental and surgical procedures were performed in accordance with the experimental protocols (No. H24-2-203(4)) approved by the RIKEN ethics committee and the recommendations of the Weatherall report, 'The use of non-human primates in research'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical compliance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "f9f77cd6-52c4-4ec2-b487-acebceb2065d",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C69",
+      "claim": "During the Waiting period, a still picture created by pixel-based averaging and randomizing all frames of stimuli was presented without sound for 2.5 s.",
+      "claim_type": "EXPLICIT",
+      "source": "During the Waiting period, a still picture created by pixel-based averaging and randomizing the all frames of stimuli was presented without sound for 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "53d1f0b4-76b1-4abc-8f47-e2f9099d328e",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C70",
+      "claim": "During the first 0.5 s of the Context period, a still image of an actor (a monkey) and an opponent (a monkey, a human, or wall) was presented with the sound associated with the opponents.",
+      "claim_type": "EXPLICIT",
+      "source": "During the first 0.5 s of the Context period, a still image of an actor (a monkey) and an opponent (a monkey, a human, or wall) was presented with the sound associated with the opponents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "f265d66b-bd55-433e-a3ed-decf50600750",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C71",
+      "claim": "The curtain closing animation took 0.5 s, and the curtain stayed closed for another 0.5 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The curtain closing animation took 0.5 s, and the curtain stayed closed for another 0.5 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "455aa425-0d02-4237-b6c6-64255b6c8081",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C72",
+      "claim": "During the Response period, one of two emotional expressions of the actor (frightening or neutral) was presented with sound for 3 s.",
+      "claim_type": "EXPLICIT",
+      "source": "During the Response period, one of two emotional expressions of the actor (frightening or neutral) was presented with sound for 3 s, followed by the Waiting period of the next trial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "ff7bda75-ac54-4dfc-b3dd-d65329307949",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C73",
+      "claim": "Cerebus data acquisition systems were used to record ECoG signals with a sampling rate of 1 kHz.",
+      "claim_type": "EXPLICIT",
+      "source": "Cerebus data acquisition systems (Blackrock Microsystems, USA) were used to record ECoG signals with a sampling rate of 1 kHz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the recording equipment and parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "7c7a6948-73e1-4fb9-813b-fcd112131da8",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C74",
+      "claim": "Trials during which the subject's eye position was within the screen area more than 80% of the time during the first 0.5 s of the Context period were classified as C+ trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Trials during which the subject's eye position was within the screen area more than 80% of the time during the first 0.5 s of the Context period were classified as C+ trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the trial classification criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "7f23df78-14cf-4ae0-a027-0e52d4d76478",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C75",
+      "claim": "The 50 Hz line noise was removed from raw ECoG data by using the Chronux toolbox.",
+      "claim_type": "EXPLICIT",
+      "source": "The 50 Hz line noise was removed from raw ECoG data by using the Chronux toolbox (Bokil et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the preprocessing method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "606dc3de-5fe8-4630-b2b1-7299c5009e47",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C76",
+      "claim": "The data was downsampled four times, resulting in a sampling rate of 250 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The data was then downsampled four times, resulted in a sampling rate of 250 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the preprocessing method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "a6f0380e-94c9-487c-b36d-6084f777ef38",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C77",
+      "claim": "The model order for ICA was determined by the PCA of the data covariance matrix, where the number of eigenvalues accounted for 90% of the total observed variance.",
+      "claim_type": "EXPLICIT",
+      "source": "The model order, that is, the number of components, for ICA was determined by the PCA of the data covariance matrix, where the number of eigenvalues accounted for 90% of the total observed variance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the model order selection method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "f55d666a-2cf9-4493-8043-a2cb9c57163f",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C78",
+      "claim": "ICA was performed in multiple runs using different initial values and different bootstrapped data sets by using the ICASSO package with the FastICA algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "ICA was performed in multiple runs using different initial values and different bootstrapped data sets by using the ICASSO package (Himberg et al., 2004) with the FastICA algorithm (Hyv\u00e4rinen and Oja, 1997), which could significantly improve the reliability of the results (Meinecke et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the ICA method with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "0906168f-9d38-4a03-ac70-d838945e0442",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C79",
+      "claim": "The length and the step size of the sliding-window for segmentation were set as 250 ms and 50 ms, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The length and the step size of the sliding-window for segmentation were set as 250 ms and 50 ms, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the analysis parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "f878f930-6464-4bed-b288-a189652164f6",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C80",
+      "claim": "In all subjects, a model order of nine samples (equivalent to 9 \u00d7 4 = 36 ms of history) resulted in minimal AIC and was selected.",
+      "claim_type": "EXPLICIT",
+      "source": "In all subjects, a model order of nine samples (equivalent to 9 \u00d7 4 = 36 ms of history) resulted in minimal AIC and was selected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the model order selection result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "365d175d-92d0-4cca-92a2-063082a29cc7",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C81",
+      "claim": "dDTF was calculated by using the Source Information Flow Toolbox (SIFT) together with other libraries.",
+      "claim_type": "EXPLICIT",
+      "source": "dDTF (Korzeniewska et al., 2003), a VAR-based spectral connectivity measure, was calculated by using the Source Information Flow Toolbox (SIFT) (Delorme et al., 2011) together with other libraries, such as Granger Causal Connectivity Analysis (Seth, 2010) and Brain-System for Multivariate AutoRegressive Timeseries (Cui et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the analysis tools with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "c4d932e5-fe61-4e31-bafe-0e9673a6d063",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C82",
+      "claim": "False discovery rate (FDR) control was used to correct for multiple comparisons in multiple hypothesis testing, and a threshold of \u03b1FDR = 0.05 was used.",
+      "claim_type": "EXPLICIT",
+      "source": "False discovery rate (FDR) control was used to correct for multiple comparisons in multiple hypothesis testing, and a threshold of \u03b1FDR = 0.05 was used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the statistical correction method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "44aeb6bd-732c-454b-b22d-58ae08c32222",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C83",
+      "claim": "PARAFAC was performed by using the N-way toolbox, with no constraint on the first tensor dimension, and non-negativity on the second and the third tensor dimensions.",
+      "claim_type": "EXPLICIT",
+      "source": "PARAFAC was performed by using the N-way toolbox (Andersson and Bro, 2000), with the following constraints: no constraint on the first tensor dimension, and non-negativity on the second and the third tensor dimensions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the PARAFAC analysis parameters with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "6c8b9ef5-98b9-4daa-b970-ef775f77b5af",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C84",
+      "claim": "The convergence criterion was set to be 1e-6.",
+      "claim_type": "EXPLICIT",
+      "source": "The convergence criterion, that is, the relative change in fit for which the algorithm stops, was set to be 1e-6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the analysis parameter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "c3087d11-1815-480d-bb1e-0a8f670d6fe9",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C85",
+      "claim": "The initialization method was set to be DTLD (direct trilinear decomposition) or GRAM (generalized rank annihilation method), which was considered the most accurate method.",
+      "claim_type": "EXPLICIT",
+      "source": "The initialization method was set to be DTLD (direct trilinear decomposition) or GRAM (generalized rank annihilation method), which was considered the most accurate method (Cichocki et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the analysis method with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "cf28cdf6-b7d5-44fc-bcf1-010d85d390a0",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C86",
+      "claim": "Seven cortical areas were manually determined: the visual (V), parietal (P), prefrontal (PF), medial prefrontal (mPF), motor (M), anterior temporal (aT), and posterior temporal (pT) cortices.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven cortical areas were first manually determined: the visual (V), parietal (P), prefrontal (PF), medial prefrontal (mPF), motor (M), anterior temporal (aT), and posterior temporal (pT) cortices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the anatomical regions of interest.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "6ee6d1cb-78c5-4195-8827-d510f272b64c",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C87",
+      "claim": "Trial shuffling was performed 50 times.",
+      "claim_type": "EXPLICIT",
+      "source": "Trial shuffling was performed 50 times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual description of the statistical validation procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "2eb7a5e6-c862-4cb0-aa30-011b587e25c1",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "claim_id": "C88",
+      "claim": "The data are fully accessible online and can be downloaded from the website Neurotycho.org.",
+      "claim_type": "EXPLICIT",
+      "source": "The data are fully accessible online and can be downloaded from the website Neurotycho.org.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d803ae17-3ee6-48e1-879a-fc23baef7e91",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors recorded large-scale cortical activity using a 128-channel hemisphere-wide high-density ECoG array in three macaque monkeys, with technical advantages over conventional methods in spatial coverage, resolution, bandwidth, and temporal resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C8, C13, C64-C68, and C73 provide detailed methodological descriptions of the recording system and experimental subjects. Claims C9-C12 compare the system to other methods with appropriate citations. The technical specifications are clearly documented and the ethical compliance is stated (C68).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "ce8bf6b3-1d1f-469c-b195-2ba5057f482f",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The experimental paradigm presented six video clips combining three contexts (monkey threat, human threat, or wall) with two responses (frightened or neutral expression), with trials classified as C+ or C- based on whether subjects visually attended to the context stimulus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14 and C69-C72 describe the experimental design with specific timing parameters. Claim C74 defines the trial classification criteria (80% eye position within screen during first 0.5s of Context period). The design is clearly specified and appropriate for testing context-dependent processing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "fc88ff1b-5300-4111-b352-32848ca65fd3",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Eye tracking data demonstrated that gaze behavior showed both context dependence and response dependence, but only when the context was visually perceived (C+), indicating a cognitive association between context and response perception.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 are supported by eye tracking data shown in Figure 2A-B. Statistical comparisons (Figure 2B) demonstrate significant differences in gaze patterns that depend on both context perception and response type. The behavioral evidence provides validation that subjects processed the contextual information.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "6322b322-fac4-42cf-8318-acc77957fe0d",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors applied ICA to identify cortical areas, used dDTF to measure directional causality between areas, and applied appropriate preprocessing and statistical corrections including FDR control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 and C75-C82 describe the analytical pipeline with appropriate technical details and citations. The ICA model order selection (90% variance explained, C77), VAR model order selection (AIC criterion, C80), and multiple comparison correction (FDR, C82) are all methodologically sound. The use of ICASSO with multiple runs (C78) improves reliability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "ff357868-44c4-4b0a-90f3-3eae79af4697",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "PARAFAC analysis extracted five dominant network structures from the 3D tensor of connectivity data with >80% consistency, using appropriate constraints and initialization methods, validated by trial shuffling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C20, and C83-C85 describe the PARAFAC methodology with appropriate technical specifications. The core consistency diagnostic (Figure 3\u2014figure supplement 2, C20) shows a sharp drop after 5 structures, supporting the selection of 5 components. Trial shuffling validation (C87) provides statistical support. The robustness across different ICA model orders (Figure 3\u2014figure supplement 3) strengthens confidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "35e4345c-5620-4565-9704-f6d5c04a5ee1",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Structure 1 represents context perception, activated first during the Context period with context dependence (Cm > Ch > Cw), emerging in high-\u03b3 band (>70 Hz) with bottom-up connections from posterior to anterior temporal cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 are supported by functional (Figure 4A), spectral (Figure 4B), and anatomical (Figure 4C) analyses. The temporal activation pattern, frequency profile, and connectivity pattern are consistent with sensory processing of contextual stimuli. The interpretation as 'context perception' is reasonable given the early timing and bottom-up connectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "9e2d1778-f420-4f43-9dfb-35a7678d342f",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Structure 2 represents response perception, activated earliest in the Response period with response dependence (Rf > Rn) independent of context perception, emerging in high-\u03b3 and \u03b2 bands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 are supported by the functional analysis (Figure 4A) showing response-selective activation and the spectral analysis (Figure 4B) showing dual-band activation. The independence from context perception (C+ \u2248 C\u2212) distinguishes this from other structures. The interpretation as 'response perception' is consistent with the timing and functional properties.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "1d44023a-c699-4726-a32e-fea1cd7aa15e",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Structure 3 represents encoding of abstract contextual information, activated second in the Context period with generalized context dependence (Cm \u2248 Ch > Cw), appearing in \u03b2 band (10-30 Hz) with bottom-up connections from posterior temporal cortex to anterior temporal cortex and PFC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 are supported by functional (Figure 5A), spectral (Figure 5B), and anatomical (Figure 5C) analyses. The generalized context dependence (treating monkey and human threats similarly) supports the interpretation as 'abstract' categorization. The bottom-up connectivity to PFC is consistent with encoding of higher-level contextual representations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "d12eabc1-cdab-4622-ac6e-f77fd46742ba",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Structure 4 represents retrieval of contextual information, showing the same generalized context dependence as Structure 3 but during the Response period when context stimuli are absent, with similar spatial and spectral characteristics to Structure 3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 are supported by functional analysis (Figure 5A) showing delayed activation with context dependence only in C+Rf, and correlation analysis (Figure 5\u2014figure supplement 1) showing spatial and spectral similarity to Structure 3. The interpretation as 'retrieval' is reasonable given the temporal delay and requirement for both context perception and emotional response. However, the causal interpretation requires caution as acknowledged by the authors (C58).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "a8fcc3b6-230d-4c4a-8541-0289dcccec16",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Structure 5 represents context-dependent top-down modulation of attention/gaze, showing both context and response dependence in C+Rf, appearing in \u03b1 and low-\u03b2 bands (5-20 Hz) with top-down connections, and correlating with gaze behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37 are supported by functional (Figure 5A), spectral (Figure 5B), and anatomical (Figure 5C) analyses. The top-down connectivity pattern distinguishes this structure from others (C36). The correlation with gaze behavior (Figure 2B) provides behavioral validation. The interpretation as 'top-down modulation' is consistent with the connectivity pattern and behavioral correlation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "cd178277-b292-4a9d-9536-f1ca93646737",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Functional coordination analysis revealed that Structure 1 (context perception) correlated with Structures 3 and 4 (contextual information), which correlated with Structure 5 (top-down modulation) in Rf trials, while Structure 2 (response perception) correlated with Structures 4 and 5 across responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 are supported by correlation analysis shown in Figure 6A. The pattern of correlations reveals a functional architecture where sensory processing feeds into abstract representations, which then drive behavioral modulation. The differential patterns in Rf vs Rn conditions provide insight into how emotional valence modulates the network.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "7cc8b797-c0f7-49a5-9b83-0a44700f51a4",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Dynamic coordination analysis showed significant correlations in temporal dynamics between Context and Response period structures, and in spectral profiles among structures with \u03b2 band activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 are supported by correlation analysis shown in Figure 6B. The temporal and spectral coordination patterns reveal how the structures are multiplexed in time and frequency, supporting the concept of dynamic network communication.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "bab3adce-443d-41ea-8710-6f66ad976a7a",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Anatomical overlap analysis revealed high shared connectivity (>70%) between Structures 3 and 4 (contextual information) and between Structures 1 and 2 (perception), with common pathways from temporal cortex to PFC shared across all structures and subjects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 are supported by anatomical overlap analysis shown in Figure 6C-D. The high overlap between functionally related structures (encoding/retrieval, context/response perception) provides anatomical validation of the functional interpretations. The shared pathways across subjects suggest conserved network architecture.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "d3bb2ac0-a62d-410e-9bb3-ddc065fa1da1",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Context is represented in the cortical network as distributed communication structures with dynamic information flows, encoded through bottom-up interactions from posterior temporal cortex to anterior temporal cortex and PFC, with structures coordinating in a deterministic manner despite temporal, spectral, and spatial overlap.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C5, C47-C48, C52-C53, and C56 represent the main conclusions of the study. These are well-supported by the comprehensive analysis of the five network structures (Figures 4-6) showing distinct functional, temporal, spectral, and anatomical properties. The coordination analyses (Figure 6) demonstrate how the structures work together. The interpretation is consistent with the data, though the authors appropriately acknowledge limitations (C58).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "d7cd2196-8d47-4784-ba58-8d0c5f247881",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The network structures represent a 'meta-module' organization for brain communication, with multiplexed large-scale structures potentially representing innate, elemental units of brain organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54, C57, and C62 are theoretical interpretations that extend beyond the direct evidence. While the data show coordinated, overlapping structures (C56), the characterization as 'meta-modules' or 'innate, elemental units' is speculative. The consistency across subjects (Figure 4\u2014figure supplement 4) provides some support, but the small sample size (n=3) and lack of direct experimental manipulation limit confidence in these broader claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "ad96128e-226b-4642-abac-b63bdb5c6f35",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The PFC is an important node in context networks, with lateral PFC critical for establishing contingencies between contextually related events and medial PFC involved in context-dependent cognition and conditioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 are supported by appropriate citations to prior work. These claims provide context for interpreting the current findings showing PFC involvement in Structures 3, 4, and 5. However, these are claims about prior knowledge rather than novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "12f13887-ff2f-49f1-b03a-61295668b611",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The findings have potential implications for understanding psychiatric disorders and individual variability, and the network structures may not be unique to context processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55, C59-C60, and C63 are speculative statements about future applications and generalizability. While reasonable hypotheses, these claims lack direct supporting evidence from the current study. Claim C59 suggests future experimental approaches but does not constitute a result from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "2818e337-b195-42ab-a741-117cf57352ba",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The latent network structures were extracted computationally and require further experimental validation, though the approach of pooling data across subjects may help extract generalizable structures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58 and C61 represent appropriate acknowledgment of methodological limitations and strengths. The authors correctly note that computational extraction requires biological validation (C58) while also noting the potential benefit of cross-subject pooling for generalizability (C61). This balanced assessment strengthens the overall credibility of the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "a00c9eff-d161-49d7-a63e-a8ad55347019",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Context is information linked to a situation that can guide behavior, proposed to require interplay between bottom-up and top-down processing in distributed networks, with prior research examining context in multiple cognitive domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6, and C7 provide definitional and background information supported by appropriate citations. These establish the conceptual framework for the study but do not represent novel findings. The definitions and prior work are accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    },
+    {
+      "id": "7715d3bb-fb24-4e10-ae45-5bd93a667675",
+      "content_id": "58db93ad-c7b1-4bb5-ac50-9307b9ead145",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Seven cortical areas were manually determined for analysis, and the data are publicly accessible online at Neurotycho.org.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86 and C88 describe methodological details (manual ROI definition) and data availability. The manual determination of cortical areas is a limitation but is clearly stated. The public data availability is commendable and supports reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:15.735144Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f0935e5a-67c3-45f1-8bd5-48398a799353",
+      "result_id": "d803ae17-3ee6-48e1-879a-fc23baef7e91"
+    },
+    {
+      "claim_id": "78e35f53-cc7a-4d37-858d-8e8e1630eb21",
+      "result_id": "d803ae17-3ee6-48e1-879a-fc23baef7e91"
+    },
+    {
+      "claim_id": "c039a52f-689d-41d6-9d70-4bb68f09ab26",
+      "result_id": "d803ae17-3ee6-48e1-879a-fc23baef7e91"
+    },
+    {
+      "claim_id": "b6a63c76-85ea-4589-b12f-28338a992454",
+      "result_id": "d803ae17-3ee6-48e1-879a-fc23baef7e91"
+    },
+    {
+      "claim_id": "6c85e514-9c20-4753-ac22-649c18832ac6",
+      "result_id": "d803ae17-3ee6-48e1-879a-fc23baef7e91"
+    },
+    {
+      "claim_id": "f4ac0712-ce9b-43ea-a47d-19a9c8b091d0",
+      "result_id": "d803ae17-3ee6-48e1-879a-fc23baef7e91"
+    },
+    {
+      "claim_id": "e80b46d2-c512-457e-bcab-975bb813cce8",
+      "result_id": "d803ae17-3ee6-48e1-879a-fc23baef7e91"
+    },
+    {
+      "claim_id": "d2306f49-35cb-4dc4-bbd5-47055e94134a",
+      "result_id": "d803ae17-3ee6-48e1-879a-fc23baef7e91"
+    },
+    {
+      "claim_id": "b26ab186-dfb0-4260-93b1-4d98145892e3",
+      "result_id": "d803ae17-3ee6-48e1-879a-fc23baef7e91"
+    },
+    {
+      "claim_id": "a4e5e13a-cb77-46a4-8817-52190585d0e1",
+      "result_id": "d803ae17-3ee6-48e1-879a-fc23baef7e91"
+    },
+    {
+      "claim_id": "a743cc2f-db3a-47e5-a6d2-14b5b029a002",
+      "result_id": "d803ae17-3ee6-48e1-879a-fc23baef7e91"
+    },
+    {
+      "claim_id": "93218307-a310-4066-bba2-25ed706c0578",
+      "result_id": "d803ae17-3ee6-48e1-879a-fc23baef7e91"
+    },
+    {
+      "claim_id": "ff7bda75-ac54-4dfc-b3dd-d65329307949",
+      "result_id": "d803ae17-3ee6-48e1-879a-fc23baef7e91"
+    },
+    {
+      "claim_id": "80d6f356-1ace-4947-b445-1b65e040129e",
+      "result_id": "ce8bf6b3-1d1f-469c-b195-2ba5057f482f"
+    },
+    {
+      "claim_id": "f9f77cd6-52c4-4ec2-b487-acebceb2065d",
+      "result_id": "ce8bf6b3-1d1f-469c-b195-2ba5057f482f"
+    },
+    {
+      "claim_id": "53d1f0b4-76b1-4abc-8f47-e2f9099d328e",
+      "result_id": "ce8bf6b3-1d1f-469c-b195-2ba5057f482f"
+    },
+    {
+      "claim_id": "f265d66b-bd55-433e-a3ed-decf50600750",
+      "result_id": "ce8bf6b3-1d1f-469c-b195-2ba5057f482f"
+    },
+    {
+      "claim_id": "455aa425-0d02-4237-b6c6-64255b6c8081",
+      "result_id": "ce8bf6b3-1d1f-469c-b195-2ba5057f482f"
+    },
+    {
+      "claim_id": "7c7a6948-73e1-4fb9-813b-fcd112131da8",
+      "result_id": "ce8bf6b3-1d1f-469c-b195-2ba5057f482f"
+    },
+    {
+      "claim_id": "cadb190c-50db-4ce7-9a8e-796ceb65ed66",
+      "result_id": "fc88ff1b-5300-4111-b352-32848ca65fd3"
+    },
+    {
+      "claim_id": "4b22bf09-4144-44c8-8b21-a1b28d43bce3",
+      "result_id": "fc88ff1b-5300-4111-b352-32848ca65fd3"
+    },
+    {
+      "claim_id": "168791a4-e88c-43ed-9cb3-cb415776be93",
+      "result_id": "fc88ff1b-5300-4111-b352-32848ca65fd3"
+    },
+    {
+      "claim_id": "ff016b5c-5441-4887-97d2-36d7c736591a",
+      "result_id": "6322b322-fac4-42cf-8318-acc77957fe0d"
+    },
+    {
+      "claim_id": "814ef79a-a850-457d-b46a-ad746857071d",
+      "result_id": "6322b322-fac4-42cf-8318-acc77957fe0d"
+    },
+    {
+      "claim_id": "7f23df78-14cf-4ae0-a027-0e52d4d76478",
+      "result_id": "6322b322-fac4-42cf-8318-acc77957fe0d"
+    },
+    {
+      "claim_id": "606dc3de-5fe8-4630-b2b1-7299c5009e47",
+      "result_id": "6322b322-fac4-42cf-8318-acc77957fe0d"
+    },
+    {
+      "claim_id": "a6f0380e-94c9-487c-b36d-6084f777ef38",
+      "result_id": "6322b322-fac4-42cf-8318-acc77957fe0d"
+    },
+    {
+      "claim_id": "f55d666a-2cf9-4493-8043-a2cb9c57163f",
+      "result_id": "6322b322-fac4-42cf-8318-acc77957fe0d"
+    },
+    {
+      "claim_id": "0906168f-9d38-4a03-ac70-d838945e0442",
+      "result_id": "6322b322-fac4-42cf-8318-acc77957fe0d"
+    },
+    {
+      "claim_id": "f878f930-6464-4bed-b288-a189652164f6",
+      "result_id": "6322b322-fac4-42cf-8318-acc77957fe0d"
+    },
+    {
+      "claim_id": "365d175d-92d0-4cca-92a2-063082a29cc7",
+      "result_id": "6322b322-fac4-42cf-8318-acc77957fe0d"
+    },
+    {
+      "claim_id": "c4d932e5-fe61-4e31-bafe-0e9673a6d063",
+      "result_id": "6322b322-fac4-42cf-8318-acc77957fe0d"
+    },
+    {
+      "claim_id": "200c45cb-b2d0-4238-95bc-c2d62a19ad7d",
+      "result_id": "ff357868-44c4-4b0a-90f3-3eae79af4697"
+    },
+    {
+      "claim_id": "4147cc17-7673-4418-8af5-51a1243a1099",
+      "result_id": "ff357868-44c4-4b0a-90f3-3eae79af4697"
+    },
+    {
+      "claim_id": "44aeb6bd-732c-454b-b22d-58ae08c32222",
+      "result_id": "ff357868-44c4-4b0a-90f3-3eae79af4697"
+    },
+    {
+      "claim_id": "6c8b9ef5-98b9-4daa-b970-ef775f77b5af",
+      "result_id": "ff357868-44c4-4b0a-90f3-3eae79af4697"
+    },
+    {
+      "claim_id": "c3087d11-1815-480d-bb1e-0a8f670d6fe9",
+      "result_id": "ff357868-44c4-4b0a-90f3-3eae79af4697"
+    },
+    {
+      "claim_id": "6ee6d1cb-78c5-4195-8827-d510f272b64c",
+      "result_id": "ff357868-44c4-4b0a-90f3-3eae79af4697"
+    },
+    {
+      "claim_id": "904f6b06-2231-4898-88c9-c82712ab286b",
+      "result_id": "35e4345c-5620-4565-9704-f6d5c04a5ee1"
+    },
+    {
+      "claim_id": "55d2676f-66ed-4b96-86ba-5d40d568968d",
+      "result_id": "35e4345c-5620-4565-9704-f6d5c04a5ee1"
+    },
+    {
+      "claim_id": "de56c72e-dc37-4cc6-81f5-9c07322bc62a",
+      "result_id": "35e4345c-5620-4565-9704-f6d5c04a5ee1"
+    },
+    {
+      "claim_id": "20d8c63e-8bc6-4955-9444-52a60a0f4106",
+      "result_id": "9e2d1778-f420-4f43-9dfb-35a7678d342f"
+    },
+    {
+      "claim_id": "1c7330fd-0b57-4380-a707-469406c4ba2b",
+      "result_id": "9e2d1778-f420-4f43-9dfb-35a7678d342f"
+    },
+    {
+      "claim_id": "5c7966db-81fe-4dcd-8d36-6cfa59bc5668",
+      "result_id": "9e2d1778-f420-4f43-9dfb-35a7678d342f"
+    },
+    {
+      "claim_id": "cbdeec96-776c-49d5-b43d-32860695fd1f",
+      "result_id": "1d44023a-c699-4726-a32e-fea1cd7aa15e"
+    },
+    {
+      "claim_id": "aa56b4ab-135a-4fdd-820f-a8e01e1ad8c3",
+      "result_id": "1d44023a-c699-4726-a32e-fea1cd7aa15e"
+    },
+    {
+      "claim_id": "5d215579-2481-4655-8f48-32c84295dbc8",
+      "result_id": "1d44023a-c699-4726-a32e-fea1cd7aa15e"
+    },
+    {
+      "claim_id": "0649a6f6-7673-461c-920f-7a21b49f7486",
+      "result_id": "d12eabc1-cdab-4622-ac6e-f77fd46742ba"
+    },
+    {
+      "claim_id": "d6f4c842-34c4-4b79-b813-2579af9eb1d3",
+      "result_id": "d12eabc1-cdab-4622-ac6e-f77fd46742ba"
+    },
+    {
+      "claim_id": "986276c1-9416-4a31-8510-b9d3164f6415",
+      "result_id": "d12eabc1-cdab-4622-ac6e-f77fd46742ba"
+    },
+    {
+      "claim_id": "1c8e10fc-aa6a-4029-826e-282bd30f65bc",
+      "result_id": "a8fcc3b6-230d-4c4a-8541-0289dcccec16"
+    },
+    {
+      "claim_id": "2ebbff76-05a4-4502-8f44-a45388771692",
+      "result_id": "a8fcc3b6-230d-4c4a-8541-0289dcccec16"
+    },
+    {
+      "claim_id": "2919c812-2ada-4a6b-a3ca-c8a2260e1b8b",
+      "result_id": "a8fcc3b6-230d-4c4a-8541-0289dcccec16"
+    },
+    {
+      "claim_id": "76611f66-eb8a-4a45-ba8a-8766d17de3c8",
+      "result_id": "a8fcc3b6-230d-4c4a-8541-0289dcccec16"
+    },
+    {
+      "claim_id": "6995a9ae-978d-44b6-b9fc-37cdad2abcb5",
+      "result_id": "a8fcc3b6-230d-4c4a-8541-0289dcccec16"
+    },
+    {
+      "claim_id": "5b821f70-6dcf-4a36-8dfb-fb371bcc8a87",
+      "result_id": "cd178277-b292-4a9d-9536-f1ca93646737"
+    },
+    {
+      "claim_id": "f91ce337-3f86-4446-88de-c99b171efd6d",
+      "result_id": "cd178277-b292-4a9d-9536-f1ca93646737"
+    },
+    {
+      "claim_id": "6e2c5728-28a0-477b-bc79-5fa9d788cd71",
+      "result_id": "cd178277-b292-4a9d-9536-f1ca93646737"
+    },
+    {
+      "claim_id": "63097435-2e98-4888-9cbc-50c464815f16",
+      "result_id": "cd178277-b292-4a9d-9536-f1ca93646737"
+    },
+    {
+      "claim_id": "16348296-5646-48f9-b342-1e9c9614eeb7",
+      "result_id": "cd178277-b292-4a9d-9536-f1ca93646737"
+    },
+    {
+      "claim_id": "38d364e7-dee7-40e7-ab0b-f61d1d4464e1",
+      "result_id": "7cc8b797-c0f7-49a5-9b83-0a44700f51a4"
+    },
+    {
+      "claim_id": "f1e12f9b-efe5-419e-8859-0375912ee0b0",
+      "result_id": "7cc8b797-c0f7-49a5-9b83-0a44700f51a4"
+    },
+    {
+      "claim_id": "291d5b6b-2909-4d84-b19a-20a38c505cec",
+      "result_id": "bab3adce-443d-41ea-8710-6f66ad976a7a"
+    },
+    {
+      "claim_id": "480a5b1b-f04a-4e37-9fa2-a1e7be1d416b",
+      "result_id": "bab3adce-443d-41ea-8710-6f66ad976a7a"
+    },
+    {
+      "claim_id": "bad78d5d-023f-4faf-8983-d39ab9e22dcc",
+      "result_id": "d3bb2ac0-a62d-410e-9bb3-ddc065fa1da1"
+    },
+    {
+      "claim_id": "fd3caceb-db1e-410a-b90c-90a4d691f4ff",
+      "result_id": "d3bb2ac0-a62d-410e-9bb3-ddc065fa1da1"
+    },
+    {
+      "claim_id": "e2e752e4-2508-4060-bf8f-d43db9933836",
+      "result_id": "d3bb2ac0-a62d-410e-9bb3-ddc065fa1da1"
+    },
+    {
+      "claim_id": "4808ecbe-2931-46ac-b5dd-e0884cddbffb",
+      "result_id": "d3bb2ac0-a62d-410e-9bb3-ddc065fa1da1"
+    },
+    {
+      "claim_id": "405ccf60-c69b-45e4-892d-889f16b44248",
+      "result_id": "d3bb2ac0-a62d-410e-9bb3-ddc065fa1da1"
+    },
+    {
+      "claim_id": "57295f9c-6fd5-4c1e-8d14-56cf35aa1604",
+      "result_id": "d3bb2ac0-a62d-410e-9bb3-ddc065fa1da1"
+    },
+    {
+      "claim_id": "32d37327-a88c-4a30-a9fe-5aea3efb6d5e",
+      "result_id": "d3bb2ac0-a62d-410e-9bb3-ddc065fa1da1"
+    },
+    {
+      "claim_id": "435f5386-192a-44b3-91d8-d5d712e57994",
+      "result_id": "d7cd2196-8d47-4784-ba58-8d0c5f247881"
+    },
+    {
+      "claim_id": "35004c14-9958-4a2a-ae4c-13f203ff0ee7",
+      "result_id": "d7cd2196-8d47-4784-ba58-8d0c5f247881"
+    },
+    {
+      "claim_id": "e33c1ab9-2d8b-4eaf-b373-7af32fde6d8f",
+      "result_id": "d7cd2196-8d47-4784-ba58-8d0c5f247881"
+    },
+    {
+      "claim_id": "08354eec-81bb-4858-bf10-4f91f36c4bb5",
+      "result_id": "ad96128e-226b-4642-abac-b63bdb5c6f35"
+    },
+    {
+      "claim_id": "01d2bb56-e68b-47e0-b0fd-03df5602b750",
+      "result_id": "ad96128e-226b-4642-abac-b63bdb5c6f35"
+    },
+    {
+      "claim_id": "fd08b4ce-b825-4d37-b28e-9d547ee63c18",
+      "result_id": "ad96128e-226b-4642-abac-b63bdb5c6f35"
+    },
+    {
+      "claim_id": "8e25faca-4f21-4ff4-9c9a-5694af2390e0",
+      "result_id": "12f13887-ff2f-49f1-b03a-61295668b611"
+    },
+    {
+      "claim_id": "de39ab7f-2e3f-4b68-8d4e-7292e276f16e",
+      "result_id": "12f13887-ff2f-49f1-b03a-61295668b611"
+    },
+    {
+      "claim_id": "07b2ca5a-bb77-4ffe-8947-44cd25adf128",
+      "result_id": "12f13887-ff2f-49f1-b03a-61295668b611"
+    },
+    {
+      "claim_id": "0c3d321f-ebe2-4edf-821b-16548023bab4",
+      "result_id": "12f13887-ff2f-49f1-b03a-61295668b611"
+    },
+    {
+      "claim_id": "e57d9a52-8cd5-4e7b-82cb-3c2a017d62de",
+      "result_id": "2818e337-b195-42ab-a741-117cf57352ba"
+    },
+    {
+      "claim_id": "eff7c48b-4923-418e-8fed-51b1ac3b4060",
+      "result_id": "2818e337-b195-42ab-a741-117cf57352ba"
+    },
+    {
+      "claim_id": "7e533a36-1e7a-4fab-88c8-fc32becffd54",
+      "result_id": "a00c9eff-d161-49d7-a63e-a8ad55347019"
+    },
+    {
+      "claim_id": "f817673b-895a-4ddf-80cb-9c4ba2e00da8",
+      "result_id": "a00c9eff-d161-49d7-a63e-a8ad55347019"
+    },
+    {
+      "claim_id": "bc4d81a5-73e3-46ce-9c50-b52c6ad4f7a3",
+      "result_id": "a00c9eff-d161-49d7-a63e-a8ad55347019"
+    },
+    {
+      "claim_id": "cf28cdf6-b7d5-44fc-bcf1-010d85d390a0",
+      "result_id": "7715d3bb-fb24-4e10-ae45-5bd93a667675"
+    },
+    {
+      "claim_id": "2eb7a5e6-c862-4cb0-aa30-011b587e25c1",
+      "result_id": "7715d3bb-fb24-4e10-ae45-5bd93a667675"
+    }
+  ],
+  "comparisons": []
+}

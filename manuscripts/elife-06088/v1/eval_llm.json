@@ -1,0 +1,255 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C13"
+    ],
+    "result": "The computational polymer model of the MT cytoskeleton, based on cortical nucleation with a steep posterior-to-anterior gradient, reproduces key experimental observations including MT density distribution, directional bias (8.5% posterior bias in 3D), and depth-dependent variations in 2D slices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 and C13 collectively demonstrate that the polymer model successfully recapitulates experimental MT distributions and directional biases. The model parameters are constrained by experimental measurements (C2, Figure 1D), and computational outputs (C4, C5) match published experimental data with appropriate quantitative agreement. The depth-dependent variation (C6) provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C10"
+    ],
+    "result": "2D confocal measurements inadequately characterize the 3D MT system, and the oocyte samples many independent MT network configurations over stage 9 due to rapid turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 is directly supported by the computational demonstration of depth-dependent directional bias (C6). Claim C10 follows logically from the Colchicine experiment data (C8, C9) showing 5-10 min turnover time combined with the 6-9 hr duration of stage 9, yielding tens to hundreds of independent configurations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "The MT network turns over within minutes, as demonstrated by Colchicine treatment causing MT disappearance in 5-10 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C9 are supported by multiple literature citations and personal communication. The inference that complete network turnover occurs within minutes (C9) is reasonable given that Colchicine blocks MT growth and the entire visible network disappears in 5-10 min.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Ensemble averaging over 50 independent realizations reveals that the MT cytoskeleton is organized in a compartmental fashion with distinct spatial domains: posterior-pointing at the anterior and inward-pointing at lateral sides. This organization is robust to model parameters and geometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 describe the emergence of compartmental organization from ensemble averaging. The computational results (C11, C12, Figure 1F) are internally consistent, and robustness testing (C14, C15) strengthens the conclusion. The finding that disordered arrays can have well-defined mean organizations (C16, C17) represents a key conceptual advance supported by both polymer and rod models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Computed cytoplasmic flow fields derived from the MT cytoskeleton model are consistent with experimentally observed slow flows, being strongest in the anterior half and weaker posteriorly, with flows driven by kinesin-dependent transport serving as a secondary readout of cytoskeletal organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C26 establish consistency between computed and experimental flows. The model is calibrated to match experimental flow speeds (C21, Figure 2F), and qualitative patterns agree (C22). Minor discrepancies are acknowledged (C23), and the negligible impact of the nucleus (C25) is quantified. The conclusion that flows are secondary readouts (C20, C26) is supported by the kinesin-dependence (C18, C19).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Simulations of oskar mRNA transport reproduce experimental localization patterns including transient channel formation and posterior crescent accumulation without requiring anchoring, with 12.5% of cargo localizing to a 4 \u03bcm posterior slice, demonstrating that continual transport with slow diffusion is sufficient for localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C36 describe oskar mRNA transport simulations. The model parameters are constrained by experimental data (C27, C28), and simulation results match experimental observations at multiple time points (C29, C31, C34). The quantitative localization efficiency (C35: 12.5%) is substantial. The exclusion of anchoring (C32, C33) is justified by experimental evidence, and the conclusion about sufficiency (C36) follows from the simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Motor-driven cytoskeletal transport is both necessary and sufficient for oskar mRNA localization, while cytoplasmic flows play a negligible role, as demonstrated by simulations showing 11.3% localization without flows versus complete failure without motors, and only 2.7% localization with flows alone even with a perfect anchor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 systematically test the contributions of different transport mechanisms. The simulations show that removing flows has minimal impact (C37, C38: 11.3% vs 12.5%), removing motors causes complete failure (C40), and flows with a perfect anchor achieve only 2.7% localization (C41). These results strongly support the necessity and sufficiency conclusion (C42), though the idealized anchor test (C41) may overestimate flow contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Simulations of naive bicoid mRNA transport (using Dynein-mediated minus-end directed transport) successfully reproduce experimental injection results, with mRNA accumulating at cortical regions nearest the injection site or splitting between regions when placed at compartment boundaries, supporting the compartmental organization of the MT cytoskeleton.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 describe bicoid mRNA simulations. The model appropriately inverts motor direction for Dynein (C43), and simulation results match experimental injection patterns (C44-C46). The independence from flows (C47) and the mechanistic explanation via compartment boundaries (C48) are consistent with the MT organization. The agreement between simulations and experiments (C49, C50) provides strong validation of the compartmental model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The model reproduces endogenous bicoid mRNA localization to anterior corners but fails to capture the specific anterior targeting of conditioned bicoid mRNA from distant injection sites, suggesting involvement of unidentified MT populations or MT-independent mechanisms dependent on Exuperantia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C54 show partial success in modeling endogenous bicoid, while C55-C56 acknowledge a significant limitation. The model captures local anterior localization (C53, C54) but not long-range specific targeting (C55). The speculation about Exuperantia mechanisms (C56) is reasonable but unresolved. This represents an important limitation that requires future work to address.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Cortical MT nucleation gradients are sufficient to assemble a functional compartmentalized cytoskeleton, and the model successfully reproduces the clone-adjacent mislocalisation phenotype by adding MT nucleation sites to one side of the posterior pole.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 summarizes the main finding, supported by all previous results. Claims C58-C60 test the model against a specific mutant phenotype. The simulation (C60) reproduces the experimental observation (C59) by modulating MT nucleation, providing additional validation of the model's explanatory power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Simulations with uniform posterior MT nucleation (mimicking strong par-1 hypomorphs) reproduce the central mislocalisation of oskar mRNA observed in ~90% of mutant oocytes, with MTs pointing toward a single central stable focus and directional bias eliminated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 describe par-1 mutant simulations. The model appropriately implements uniform posterior nucleation (C64) based on experimental observations (C61-C63), and simulation results (C65, C66) match the experimental phenotype (C63). The robustness to slight variations in posterior nucleation (C67) is consistent with the range of hypomorph severities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Simulations predict and experiments confirm that bicoid mRNA mislocalizes to both anterior corners and posterior pole in strong par-1 hypomorphs, matching EGFR mutant phenotypes, demonstrating that near-uniform MT nucleation explains polarity defects in multiple mutant backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 provide a strong prediction-validation cycle. The model predicts bicoid mislocalisation (C68), which matches EGFR mutants (C69), and new experimental data confirm the prediction for par-1 hypomorphs (C70). The conclusion that uniform MT nucleation explains multiple mutant phenotypes (C71) is well-supported by the convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Intermediate levels of posterior MT nucleation create a cytoskeleton with both stable and unstable fixed points separated by a potential barrier, explaining partial mislocalisation phenotypes where oskar mRNA splits between posterior pole and central dot, with diffusion and flows potentially aiding transport across the barrier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 describe intermediate phenotypes. The experimental observation (C72) is reproduced by simulations with intermediate nucleation parameters (C73, C74), and the mechanistic interpretation via stable/unstable fixed points (C75) is consistent with dynamical systems theory. The role of diffusion and flows in crossing barriers (C77) is a reasonable inference, and the summary conclusion (C78) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The transition from wild-type to par-1 hypomorph cytoskeletal topology constitutes a saddle-node bifurcation with cortical MT seeding density as the bifurcation parameter, and MT length emerges as a second bifurcation parameter, establishing both as key regulators of non-centrosomal network polarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 provide mathematical characterization of the system. The saddle-node bifurcation identification (C79) is supported by the mathematical analysis (Figure 4K-M), and the discovery of MT length as a second bifurcation parameter (C80) is demonstrated computationally. The mechanistic explanations (C81, C82) are logical, and the conclusion about key regulators (C83) follows from the parameter space analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The three-dimensional model demonstrates that a simple gradient of cortical MT nucleation is sufficient to reproduce MT distribution, flow patterns, and mRNA localizations, excludes a major role for cytoplasmic flows, reveals more ordered cytoskeletal organization than previously thought, and explains mutant phenotypes through bifurcations in cytoskeletal organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88 represent the main conclusions of the study, summarizing findings from all previous results. Each conclusion is supported by multiple lines of evidence: sufficiency of MT gradients (C84) by successful reproduction of multiple phenotypes, exclusion of flow role (C85) by systematic testing, ordered organization (C86) by ensemble averaging, bifurcation explanation (C87) by mutant simulations, and overall significance (C88) by the comprehensive explanatory power of the model.",
+    "result_type": "MAJOR"
+  }
+]

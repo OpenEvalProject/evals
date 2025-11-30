@@ -1,0 +1,1804 @@
+{
+  "submission": {
+    "id": "76dad065-3f2e-42ee-8eba-bbd9329c4e3f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:37:06.491724Z",
+    "updated_at": "2025-11-29T22:37:06.491724Z"
+  },
+  "content": [
+    {
+      "id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "submission_id": "76dad065-3f2e-42ee-8eba-bbd9329c4e3f",
+      "content_type": "manuscript",
+      "content_text": "# Fast turnover of genome transcription across evolutionary time exposes entire non-coding DNA to de novo gene emergence\n\n## Authors\n\n- Rafik Neme<sup>1</sup> ([ORCID: 0000-0001-8462-5291](https://orcid.org/0000-0001-8462-5291)) \u2020\n- Diethard Tautz<sup>1</sup> ([ORCID: 0000-0002-0460-5344](https://orcid.org/0000-0002-0460-5344)) \u2020\n\n### Affiliations\n\n1. Max-Planck Institute for Evolutionary Biology Pl\u00f6n Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nDeep sequencing analyses have shown that a large fraction of genomes is transcribed, but the significance of this transcription is much debated. Here, we characterize the phylogenetic turnover of poly-adenylated transcripts in a comprehensive sampling of taxa of the mouse (genus Mus), spanning a phylogenetic distance of 10 Myr. Using deep RNA sequencing we find that at a given sequencing depth transcriptome coverage becomes saturated within a taxon, but keeps extending when compared between taxa, even at this very shallow phylogenetic level. Our data show a high turnover of transcriptional states between taxa and that no major transcript-free islands exist across evolutionary time. This suggests that the entire genome can be transcribed into poly-adenylated RNA when viewed at an evolutionary time scale. We conclude that any part of the non-coding genome can potentially become subject to evolutionary functionalization via de novo gene evolution within relatively short evolutionary time spans.\n\n## Introduction\n\nGenome-wide surveys have provided evidence for 'pervasive transcription', i.e., much larger portions of the genome are transcribed than would have been predicted from annotated exons (Clark et al., 2011; Hangauer et al., 2013; Kellis et al., 2014). Most are expected to be non-coding RNAs (lncRNAs) of which some have been shown to be functional. However, the general conservation level of these additional transcripts tends to be low, which raises the question of their evolutionary turnover dynamics (Kutter et al., 2012; Kapusta and Feschotte, 2014). They are currently receiving additional attention, since they could be a source for de novo gene formation via a proto-gene stage (Carvunis et al., 2012; Ruiz-Orera et al., 2014; Neme and Tautz, 2014). It has been shown that de novo gene emergence shows particularly high rates in the youngest lineages (Tautz and Domazet-Loso, 2011), indicating that there is high turnover of such transcripts and genes between closely related species. Indeed, comparative studies of de novo genes between Drosophila species (Palmieri et al., 2014) and within Drosophila populations (Zhao et al., 2014) have confirmed this.\n\nA number of possibilities have been discussed by which new transcripts are generated in previously non-coding regions, including single mutational events, stabilization of bi-directional transcription and insertion of transposable elements with promotor activity (Brosius, 2005; Gotea et al., 2013; Neme and Tautz, 2013; Wu and Sharp, 2013; Sundaram et al., 2014; Ruiz-Orera et al., 2015). Detailed analyses of specific cases of emergence of a de novo gene have shown that single step mutations can be sufficient to generate a stable transcript in a region that was previously not transcribed and translated (Heinen et al., 2009; Knowles and McLysaght, 2009). The unequivocal identification of de novo transcript emergence can only be made in a comparison between very closely related evolutionary lineages, where orthologous genomic regions can be fully aligned, even for the neutrally evolving parts of the genome (Tautz et al., 2013). While the available genome and transcriptome data for mammals and insects are sufficient to screen for specific cases of de novo transcript emergence, they are still too far apart of each other to allow a comprehensive genome-wide assessment. Our analysis here is therefore based on a new dataset that reflects a very shallow divergence time-frame for relatives of the house mouse (Mus musculus).\n\n## Results\n\nWe selected populations, subspecies and species with increasing phylogenetic distance to the Mus musculus reference sequence (Keane et al., 2011). This reference was derived from an inbred strain of the subspecies Mus musculus domesticus and we use samples from three wild type populations of M. m. domesticus as the most closely related taxa, separated from each other by about 3,000\u201310,000 years. Further, we use samples from the related subspecies M. m. musculus and M. m. castaneus, which are separated since 0.3\u20130.5 million years. The other samples are recognized separate species with increasing evolutionary distances (Figure 1). We call this set of populations, subspecies and species collectively 'taxa' in the following. Altogether they span 10 million years of divergence, which corresponds to an average of 6% nucleotide difference for the most distant comparisons.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/09977/elife-09977-fig1-v3.jpg)\n\n**Figure 1.:** New genome sequences were generated for taxa with *. A common genome was constructed across all taxa (Figure 1\u2014figure supplement 1) based on a mapping algorithm that is not affected by the sequence divergence between the samples (Appendix 1). Figure 1\u2014figure supplement 2 shows the intersection of genome coverage between the named species.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09977/elife-09977-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The common genome represents the portion of the reference which is present and detectable across all species. The genome sequencing, processing and sequence analysis were done in the same way as for transcriptomes, effectively removing possible biases derived from sequencing and mapping. Note that the assignment of the common genome fraction was done after mapping all genomic and transcriptomic reads to the reference, i.e. the mapping process was not affected by a reduced mapping target.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/09977/elife-09977-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Windows covered by all four species are used as the common genome (shown as the intersection of all species).\n\nWe obtained genome sequence reads for all taxa and mapped them to the mouse reference genome, using an algorithm that was specifically designed to deal efficiently with problems that occur in cross-mapping between diverged genomes (Sedlazeck et al., 2013; see Appendix 1 for validation). All regions that could be unequivocally mapped for all taxa were then used for further analysis. We refer to this as the 'common genome' which allows comparisons on those regions of the genomes which have not been gained or lost along the phylogeny, i.e., are common across all taxa (Figure 1\u2014figure supplement 1). It represents 71.7% of the total reference genome length (Figure 1\u2014figure supplement 2). Hence, we are nominally not analyzing about a third of the total genome length, but this corresponds to the highly repetitive parts for which unique and reliable mapping of transcriptomic reads would not be possible. Also, changes in transcription derived from gain or loss of genomic regions do not contribute to the patterns described below.\n\nWe chose three tissues for transcriptome sequencing, including testis, brain and liver. Previous studies had shown that testis and brain harbor the largest diversity of transcripts (Necsulea and Kaessmann, 2014). We sequenced only the poly-A+ fraction of the RNA, i.e., our focus is on coding and non-coding exons in processed RNA.\n\nWe use non-overlapping sliding windows of 200nt to assay for presence or absence of reads within the windows and express overall coverage as the fraction of windows showing transcription (see methods for details). We use only uniquely mapping reads, implying that we neglect the contributions and dynamics at repetitive loci. We display three thresholds of window coverage, the minimum being coverage by at least a single read, while the higher ones represent at least 10 and 100 reads respectively. The first serves as a very inclusive metric of low-level transcription, with the drawback of potentially including noise into the analysis, due to stochasticity in sampling, while the others represent thresholds for more abundant transcripts that are unlikely to be affected by sampling noise.\n\nAmong the three tissues analyzed, liver has the lowest overall read coverage while brain and testis have similar overall levels (Figure 2A\u2013C). Combining the data from all three tissues or triplicating the read depth for one tissue (brain) increases the overall coverage in a similar way (Figure 2D,E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/09977/elife-09977-fig2-v3.jpg)\n\n**Figure 2.:** (A\u2013C) Liver, brain and testis, respectively, sequenced at approximately the same depth. (D) Combination of samples from A\u2013D. (E) Additional sequencing of brain samples at 3x depth, compared to B. (F) Combination of all samples, including additional brain sequencing. Three coverage levels are represented by colors from light blue to dark blue: window coverage with at least 1, 10 and 100 reads. Taxon abbreviations as summarized in Figure 1, with closest to the reference genome to the left of each panel and most divergent one to the right. Note that the slight rise in low read coverage for the distant taxa could partially be due to slightly more mismapping of reads at this phylogenetic distance (see Appendix 1 for simulation of mapping efficiency), but is also affected by a larger fraction of singleton reads (compare Figure 4\u2014figure supplement 1).\n\nFigure 2F shows the total coverage across all tissues and all sequencing runs, which amounts to an average of 50.0 \u00b1 2.5% per taxon. Hence, for each tissue, as well as in this combined set, we observe a very similar coverage in all taxa, with only a slight increase in the low expressed fraction for the most distant comparisons (see also legend Figure 2). This more or less stable pattern across phylogenetic time could either be due to the same regions being transcribed in all taxa, or a more or less constant rate of turnover of gain and loss of transcription between taxa.\n\nTo test these alternatives, we have asked which part of the transcribed window coverage is shared between the taxa and which is specific to the taxa. For this, we consider three classes: i) windows that are found in a single taxon only, ii) windows that are found in 2\u20139 taxa, i.e. more than one but not in all and iii) windows shared among all taxa (Figure 3; Figure 3\u2014figure supplement 1 shows an extended version where class ii) is separated into each individual group). However, such an analysis could potentially be subject to a sampling problem, i.e. not finding a transcript in a taxon does not necessarily imply true absence, but could also be due to failure of sampling. This would be particularly problematic for singleton reads, since the probability of falsely not detecting one in a second sample that expresses it at the same level is about 37%. However, given that we ask whether it is detected in any of the other 9 taxa, the probability of falsely not detecting it if it exists across all of them becomes small (0.01%) (see also further analysis on singletons below).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/09977/elife-09977-fig3-v3.jpg)\n\n**Figure 3.:** Three classes are represented: i) windows that are found in a single taxon only, ii) windows found in 2\u20139 taxa and iii) windows shared among all 10 taxa (from left to right in each panel). Windows with transcripts were first classified as belonging to one of the three classes, independent of their coverage, and were then assigned to the coverage classes represented by the blue shading (from light blue to dark blue: window coverage with at least 1, 10 and 100 reads). Taxon names as summarized in Figure 1. Figure 3\u2014figure supplement 1 shows an extended version where class ii) is separated into each individual group. Relative enrichment of annotated genes in the conserved class is shown in Figure 3\u2014figure supplement 2.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09977/elife-09977-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Windows with transcripts were first classified as belonging to each of the sharing categories (from 1 to 10), independent of their coverage, and were then assigned to the coverage classes represented by the blue shading (from light blue to dark blue: window coverage with at least 1, 10 and 100 transcripts). Taxon names as summarized in Figure 1.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/09977/elife-09977-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The effect is most evident for protein-coding genes, but still present for non-coding genes.\n\nBetween 1 and\u00a07% of transcribed windows are unique to one taxon only, with the more distant taxa showing the higher percentages (Figure 3). Most of these taxon-specific transcripts are lowly expressed (<10 reads per window), but the more distant taxa (MAT and APO in Figure 3I,J) show also some more highly expressed ones. We find a total of 6566 windows with read counts >50 that occur in a single taxon only, mostly in the long branches leading to MAT (1638 windows) and APO (4485 windows), but some also between the most closely related taxa (43 windows for DOM, including populations; 38 windows for MUS, including populations).\n\nApproximately 18% of windows show transcripts shared across all taxa. These include most of the very highly expressed ones (>100 reads per window), but also a fraction of the low expressed ones (Figure 3). They are also enriched in annotated genes, especially in exons of protein coding genes, but also in non-coding genes (Figure 3\u2014figure supplement 2). The class ii) windows (sharing between 2 and\u00a09 taxa in Figure 3) represents the genes showing more or less turnover between taxa, with more turnover the more distant they are of each other (Figure 3\u2014figure supplement 1). This class constitutes cumulatively the largest fraction (between 26 and\u00a033% of whole genome coverage - Figure 3), supporting the notion of a fast turnover of most of the transcribed regions between taxa.\n\nThe taxon-specific turnover of transcripts is also reflected in a distance tree of shared coverage. Taxa that are phylogenetically closer to each other share more transcripts, i.e. the tree topology mimics that of a phylogenetic tree based on molecular sequence divergence (Figure 4A,B). This implies that the turnover of the transcripts is not random, but time dependent. However, the relative branch lengths are much extended for the more closely related taxa compared to the molecular distances, implying that there is a particularly high turnover between them.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/09977/elife-09977-fig4-v3.jpg)\n\n**Figure 4.:** (A) Molecular phylogeny based on whole mitochondrial genome sequences as a measure of molecular divergence (black lines represent the branch lengths, dashed lines serve to highlight short branches). (B) Tree based on shared transcriptome coverage of the genome, using correlations of presence and absence of transcription of the common genome. All nodes have bootstrap support values of 70% or more (n\u00a0= 1000). (C) Tree based on shared transcriptome coverage of singleton reads only from subsampling of the extended brain transcriptomes. Left is the consensus tree with the variance component between samples depicted as triangles, right is the same tree, but only for the branch fraction that is robust to sampling variance. Taxon names as summarized in Figure 1. Figure 4\u2014figure supplement 1 shows the fraction of singletons in dependence of each sample in each taxon, Figure 4\u2014figure supplement 2 in dependence of read depth. Figure 4\u2014figure supplement 3 shows an extended version of the analysis shown in 4C for higher coverage levels.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09977/elife-09977-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A-C) Liver, brain and testis, respectively, sequenced at approximately the same depth. (D) Combination of samples from A\u2013D. (E) Additional sequencing of brain samples at 3x depth, compared to B. (F) Combination of all samples, including additional brain sequencing. Light gray indicates singletons observed in each individual sample/taxon combination. Dark gray indicates singletons across the whole experiment, i.e. not re-detected in any other tissue or taxon. Taxon abbreviations as summarized in Figure 1, with closest to the reference genome to the left of each panel and most divergent one to the right. Note that the rise in singleton number for the distant taxa can be ascribed to the longer branch length, i.e. absence of closely related taxa in which the singleton could have been re-detected.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/09977/elife-09977-fig4-figsupp2-v3.jpg)\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/09977/elife-09977-fig4-figsupp3-v3.jpg)\n\n**Figure 4\u2014figure supplement 3.:** We used the deep sequenced brain samples to estimate the proportion of sampling artifacts in terminal branches, and effectively subtracted the proportion of artifacts to obtain reliable phylogenetic signals. Each brain sample was split in three completely independent samples of 100 million reads. Top: Trees constructed using: regions covered only with one read in each taxon, regions covered by 1 and 5 reads (very low expression), regions covered by any reads, regions above 10 reads (mid expression) and regions above 100 reads (high expression). The percentage shown indicates the average level of sampling artifacts for each threshold, derived from the length of the terminal branches not found in all replicates of each taxon, i.e. the uncorrelated portion across samples of the same origin. These numbers are highest\u00a0for the lowly expressed regions, and are lowest for the highly expressed regions, and are more or less constant within comparisons. Once subtracted, the phylogenetic signal remains robust. Taxon names as summarized in Figure 1. The figure part with the 1 read fraction corresponds to Figure 4C.\n\nTo assess in how much this could be due a sampling variance problem at low expression levels, we have separately analyzed the transcripts that are represented by single reads only, since these should be most sensitive towards sampling problems. Depending on read depth and tissue, they constitute about 2\u201312% of the common windows when assessed on a per sample basis (Figure 4\u2014figure supplement 1). However, most of these singletons in a given sample were re-detected in another tissue or another taxon (Figure 4\u2014figure supplement 1), such that less than 2% are present in a given taxon (Figure 4\u2014figure supplement 1) and less than 7% cumulatively throughout the whole dataset (Figure 4\u2014figure supplement 2). We used the extended brain sample reads, split them into three non-overlapping sets of about 100 Mill reads for each taxon and constructed trees out of these sets using only the singleton reads. This is the equivalent of repeating the same experiment three times. We find indeed differences in the resulting trees, i.e. there is a measureable sampling variance. By constructing a consensus tree, we can partition the data into a variable and a common component. We find that 88% of the branch length is influenced by sampling variance, while the remaining 12% still recover the expected topology (Figure 4C). When we use a read coverage of 1\u20135 for the same analysis, we find that 52% of the branch length are subject to sampling variance and for all reads combined it is 35% (Figure 4\u2014figure supplement 3). Hence, at the 100 Mill read level, we have a noticeable effect of sampling variance, but this does not erase the underlying signal. Also, the analysis in Figure 4B is based on 600 Mill reads per taxon, where sampling variance is expected to be further lowered.\n\nThe high dynamics of transcriptional turnover between taxa raises the question whether all parts of the genome might be accessible to transcription at some point in evolutionary time. To explore this possibility, we used a rarefaction approach to simulate the addition of one taxon at a time and used the curve to predict the behavior of adding more taxa than the ones in the present study. We compared this approach to a curve of increasing depth of sequencing, by taking subsets at 10% intervals to understand whether depth or taxonomic diversity have different behavior in this respect. We assume that in each species only a subset of the genome is transcribed, therefore the increase in depth of sequencing would saturate at some point below 100%. Conversely, if each taxon is transcribing slightly different portions of the genome due to a steady turnover, increasing the total number of sampled taxa should increase the saturation more than the increase that could be achieved by sequencing depth. This is indeed what we find. The addition of taxa indeed leads to a further increase in transcriptomic coverage, with a generalized linear model best describing the data as increasing in a logarithmic fashion (Figure 5A). In contrast, we observe an asymptotic behavior of the curve for increasing depth of sequencing, with apparent saturation reached at 84.1%, close to the 83.2% that we have already achieved (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/09977/elife-09977-fig5-v3.jpg)\n\n**Figure 5.:** (A) Sequencing depth saturation as estimated from an increase in the number of taxa. (B) Sequencing depth saturation as estimated from increasing read number. Blue dots indicate increases per sub-sampled sequence fraction or taxon added from our dataset. Gray dotted line indicates the predicted behavior from the indicated regression, and gray area shows the prediction after doubling the current sampling either by additional taxa (A) or in sequencing effort (B). Each analysis was tested for logarithmic and asymptotic models. Best fit was selected from \u0394BIC, with Bayes factor shown and qualitative degree of support shown. Standard deviations are shown as black lines in A, and are too small to display in B (note that due to the sampling scheme for this analysis, the values above 50% are not statistically independent and that the 100% value constitutes a single data point without variance measure).\n\nCombined with the previous results, this allows two major conclusions. First, random transcriptional noise (technical or biological) or deficiencies in sampling low level transcripts should not be major factors in our analysis, since saturation with sequencing depth would not be possible under a singleton dominated regime. Furthermore, low level transcripts (including singletons) have detectable biological signal (Figure 4C). Second, the data are consistent with the above outlined ideas that the evolutionary turnover leads to steady \u2013\u00a0and almost unlimited \u2013 transcriptional exploration of the genome, when summed over multiple parallel evolutionary lineages and taxa.\n\nThe above overall statistical consideration would still allow for the possibility of the existence of a few scattered genomic islands that are not accessible to transcription because of structural reasons (so-called transcriptional deserts \u2013 Montavon and Duboule, 2012) or heterochromatically packed because they are not encoding genes required in the respective tissues. Hence, we analyzed also the size distribution of transcript-free genomic regions in our dataset. We find that the maximum observed length of non-transcribed regions is 6\u00a0kb (Figure 6), suggesting that apparent transcriptional deserts in one taxon are readily accessible to transcription in other taxa, at least for the non-repetitive windows of the genome that are analyzed here.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/09977/elife-09977-fig6-v3.jpg)\n\n**Figure 6.:** Size distribution of regions not covered in any transcript (green) versus size distribution of regions with at least one transcript (blue).\n\n## Discussion\n\nVarious studies have shown that many more regions of the genome are transcribed than are annotated as exons (Ponting and Belgard, 2010; Kapranov and St. Laurent, 2012). The significance of this additional transcription has been largely unclear and it has even been considered as noise, either biological or technical. Here we were able to trace the turnover of these extra transcripts. Our data suggest that many have sufficient stability to reflect a phylogenetic distance distribution that mimics the phylogeny of the taxa. Hence, they should not simply be considered as noise. Rather, their lifetime should be sufficient to expose them to evolutionary testing and in this way they become a substrate for de novo evolution of genes. On the other hand, they appear to have only a limited lifetime in case they do not acquire a function, i.e. there is also high turnover of the transcribed regions between taxa. This turnover has as a consequence that within a timespan of a few million years practically the whole genome is covered by transcription at some point in time, i.e. no major transcript-free islands exist.\n\nWe have here sampled only three tissues. If more tissues and more life stages were sampled, one would expect an even higher coverage of the genome within a given taxon. Such deep analyses have been done in the ENCODE projects (http://www.genome.gov/10005107) and they have confirmed pervasive transcription (Clark et al., 2011; Hangauer et al., 2013; Kellis et al., 2014) at the single-taxon level. Still, we expect that the turnover of transcribed regions between taxa would also apply to the other tissues and stages, i.e. evolutionary testing of new transcripts would relate to all tissues and stages. This turnover is contrasted by the set of conserved genes across taxa, for which even the expression levels may be maintained across larger evolutionary distances (Pervouchine et al., 2015).\n\nWe see a particularly large number of lineage-specific transcripts among the most closely related taxa. This becomes most evident in the distance tree in Figure 4B where the branch length of the three populations of M. m. domesticus, which have separated only a few thousand years ago, are almost as long as those of the sister species M. spretus that has separated almost 2 Mill. years ago. Although this is partially influenced by sampling variance of low expressed transcripts (Figure 4C), this suggests that at the very short evolutionary distances (thousands of years) there is an even higher turnover of transcripts than at the longer time frames (millions of years). Such a pattern of unequal rates suggests that weak selection could act against many newly arising transcripts, such that they can exist for a short time at a population scale, but not over an extended time. Hence, we expect that the presence of such transcripts will be polymorphic at the population level, similar as it has been shown in Drosophila (Zhao et al., 2014). We have done a preliminary analysis of transcriptional variance between four individuals of each of the taxa and find this expectation fulfilled, but a more extensive study is required to obtain reliable data at this level.\n\nWe expect that a fraction of new transcripts interacts with other genes and cellular processes, either via providing a positive function or via being slightly deleterious. Our data do not allow at present to speculate on how large this 'functional' fraction would be, but this could become subject to future experimental studies. It is also as yet open whether the transcripts exert their functions as RNAs or via translation products. The analysis of ribosome profiling data has shown that many RNAs that were initially classified as non-coding can be associated to ribosomes, i.e. are likely translated (Wilson and Masel, 2011;\u00a0Carvunis et al., 2012; Ruiz-Orera et al., 2014). On the other hand, when tracing the origin of de novo genes, one finds frequently that they act first as RNA and acquire open reading frames only at a later stage (Cai et al., 2008; Kapranov and St. Laurent, 2012; Reinhardt et al., 2013 - see discussion in Schl\u00f6tterer, 2015). For some of the de novo evolved genes in Drosophila it has been shown that they have assumed essential functions for the organism, such that knockouts of them are lethal (Chen et al., 2010). Global analyses of new gene emergence trends suggest that the de novo evolution process has been active throughout the evolutionary history (Neme and Tautz, 2013). Hence, the possibility of a transition from new transcript emergence over acquisition of reading frames towards assuming essential genetic functions is well documented.\n\nThe idea that many de novo transcripts are slightly deleterious is concordant with the fact that various cellular processes maintain a balance between RNA transcription and degradation (Houseley and Tollervey, 2009; Jensen et al., 2013). In yeast and mammals it has been shown that several molecular pathways exist that degrade excess transcripts, in particular the ones from bidirectional promoter activity (Jensen et al., 2013; Wu and Sharp, 2013). Hence, the fact that many of the transcripts found by deep sequencing occur only at low levels does not necessarily imply a low level of transcription, but could alternatively be due to fast targeting by a degradation machinery.\n\n**Table 1.**\n Genome sequencing and read mapping information relative to the C57Bl/6 reference strain (GRCm38.3/mm10).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Species</th>\n      <th>Uniquely mapping reads (MAPQ &gt;25)</th>\n      <th>Mean coverage depth (window based)</th>\n      <th>Reference coverage (% windows)</th>\n      <th>Total sequence divergence*</th>\n      <th>Accession Reads</th>\n      <th>Accession BAMs</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Apodemus uralensis</td>\n      <td>4.46E+08</td>\n      <td>40x</td>\n      <td>78.23%</td>\n      <td>5.60%</td>\n      <td>ERS942341</td>\n      <td>ERS946059</td>\n    </tr>\n    <tr>\n      <td>Mus mattheyi</td>\n      <td>5.58E+08</td>\n      <td>52x</td>\n      <td>77.19%</td>\n      <td>4.50%</td>\n      <td>ERS942343</td>\n      <td>ERS946060</td>\n    </tr>\n    <tr>\n      <td>Mus spretus</td>\n      <td>7.71E+08</td>\n      <td>52x</td>\n      <td>93.91%</td>\n      <td>1.70%</td>\n      <td></td>\n      <td>ERS946096**</td>\n    </tr>\n    <tr>\n      <td>Mus spicilegus</td>\n      <td>6.16E+08</td>\n      <td>57x</td>\n      <td>84.39%</td>\n      <td>1.60%</td>\n      <td>ERS942342</td>\n      <td>ERS946061</td>\n    </tr>\n  </tbody>\n</table>\n\n_* The percentage of divergence was estimated from mappings using NextGenMap (Sedlazeck et al., 2013). Only uniquely mapping reads were considered and mapping quality greater than 25. Variation was estimated from the alignments using samtools mpileup (Li et al., 2009). Divergence was calculated as number of changes divided by the genome size.** Corresponds to study accession PRJEB11535. All other accessions deposited under studies PRJEB11513 and PRJEB11533._\n\n**Table 2.**\n Transcriptome reads from each sample sequenced, mapped and normalized.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Taxon Code</th>\n      <th>Tissue</th>\n      <th>Lanes</th>\n      <th>QC-passed reads</th>\n      <th>Mapped reads</th>\n      <th>(% total)</th>\n      <th>Normalized subset</th>\n      <th>(%total)</th>\n      <th>(% mapped)</th>\n      <th>Accession Reads*</th>\n      <th>Accession BAMs**</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>DOMCB</td>\n      <td>Brain</td>\n      <td>0.33x</td>\n      <td>1.30E+08</td>\n      <td>1.26E+08</td>\n      <td>96%</td>\n      <td>9.15E+07</td>\n      <td>70%</td>\n      <td>73%</td>\n      <td>ERS946023</td>\n      <td>ERS942305</td>\n    </tr>\n    <tr>\n      <td>DOMCB</td>\n      <td>Liver</td>\n      <td>0.33x</td>\n      <td>1.41E+08</td>\n      <td>1.17E+08</td>\n      <td>83%</td>\n      <td>9.07E+07</td>\n      <td>64%</td>\n      <td>77%</td>\n      <td>ERS946025</td>\n      <td>ERS942306</td>\n    </tr>\n    <tr>\n      <td>DOMCB</td>\n      <td>Testis</td>\n      <td>0.33x</td>\n      <td>1.26E+08</td>\n      <td>1.22E+08</td>\n      <td>96%</td>\n      <td>1.19E+08</td>\n      <td>94%</td>\n      <td>98%</td>\n      <td>ERS946026</td>\n      <td>ERS942307</td>\n    </tr>\n    <tr>\n      <td>DOMMC</td>\n      <td>Brain</td>\n      <td>0.33x</td>\n      <td>1.17E+08</td>\n      <td>1.13E+08</td>\n      <td>96%</td>\n      <td>9.15E+07</td>\n      <td>78%</td>\n      <td>81%</td>\n      <td>ERS946027</td>\n      <td>ERS942309</td>\n    </tr>\n    <tr>\n      <td>DOMMC</td>\n      <td>Liver</td>\n      <td>0.33x</td>\n      <td>1.34E+08</td>\n      <td>1.09E+08</td>\n      <td>81%</td>\n      <td>9.07E+07</td>\n      <td>68%</td>\n      <td>84%</td>\n      <td>ERS946029</td>\n      <td>ERS942310</td>\n    </tr>\n    <tr>\n      <td>DOMMC</td>\n      <td>Testis</td>\n      <td>0.33x</td>\n      <td>1.42E+08</td>\n      <td>1.37E+08</td>\n      <td>96%</td>\n      <td>1.19E+08</td>\n      <td>83%</td>\n      <td>87%</td>\n      <td>ERS946030</td>\n      <td>ERS942311</td>\n    </tr>\n    <tr>\n      <td>DOMAH</td>\n      <td>Brain</td>\n      <td>0.33x</td>\n      <td>9.49E+07</td>\n      <td>9.15E+07</td>\n      <td>96%</td>\n      <td>9.15E+07</td>\n      <td>96%</td>\n      <td>100%</td>\n      <td>ERS946019</td>\n      <td>ERS942301</td>\n    </tr>\n    <tr>\n      <td>DOMAH</td>\n      <td>Liver</td>\n      <td>0.33x</td>\n      <td>1.16E+08</td>\n      <td>1.02E+08</td>\n      <td>88%</td>\n      <td>9.07E+07</td>\n      <td>78%</td>\n      <td>89%</td>\n      <td>ERS946021</td>\n      <td>ERS942302</td>\n    </tr>\n    <tr>\n      <td>DOMAH</td>\n      <td>Testis</td>\n      <td>0.33x</td>\n      <td>1.61E+08</td>\n      <td>1.55E+08</td>\n      <td>96%</td>\n      <td>1.19E+08</td>\n      <td>74%</td>\n      <td>77%</td>\n      <td>ERS946022</td>\n      <td>ERS942303</td>\n    </tr>\n    <tr>\n      <td>MUSKH</td>\n      <td>Brain</td>\n      <td>0.33x</td>\n      <td>1.33E+08</td>\n      <td>1.28E+08</td>\n      <td>96%</td>\n      <td>9.15E+07</td>\n      <td>69%</td>\n      <td>72%</td>\n      <td>ERS946035</td>\n      <td>ERS942313</td>\n    </tr>\n    <tr>\n      <td>MUSKH</td>\n      <td>Liver</td>\n      <td>0.33x</td>\n      <td>1.03E+08</td>\n      <td>9.07E+07</td>\n      <td>88%</td>\n      <td>9.07E+07</td>\n      <td>88%</td>\n      <td>100%</td>\n      <td>ERS946037</td>\n      <td>ERS942314</td>\n    </tr>\n    <tr>\n      <td>MUSKH</td>\n      <td>Testis</td>\n      <td>0.33x</td>\n      <td>1.36E+08</td>\n      <td>1.31E+08</td>\n      <td>96%</td>\n      <td>1.19E+08</td>\n      <td>87%</td>\n      <td>91%</td>\n      <td>ERS946038</td>\n      <td>ERS942315</td>\n    </tr>\n    <tr>\n      <td>MUSVI</td>\n      <td>Brain</td>\n      <td>0.33x</td>\n      <td>1.23E+08</td>\n      <td>1.19E+08</td>\n      <td>96%</td>\n      <td>9.15E+07</td>\n      <td>74%</td>\n      <td>77%</td>\n      <td>ERS946031</td>\n      <td>ERS942317</td>\n    </tr>\n    <tr>\n      <td>MUSVI</td>\n      <td>Liver</td>\n      <td>0.33x</td>\n      <td>1.23E+08</td>\n      <td>9.47E+07</td>\n      <td>77%</td>\n      <td>9.07E+07</td>\n      <td>74%</td>\n      <td>96%</td>\n      <td>ERS946033</td>\n      <td>ERS942318</td>\n    </tr>\n    <tr>\n      <td>MUSVI</td>\n      <td>Testis</td>\n      <td>0.33x</td>\n      <td>1.32E+08</td>\n      <td>1.27E+08</td>\n      <td>96%</td>\n      <td>1.19E+08</td>\n      <td>90%</td>\n      <td>93%</td>\n      <td>ERS946034</td>\n      <td>ERS942319</td>\n    </tr>\n    <tr>\n      <td>CAS</td>\n      <td>Brain</td>\n      <td>0.33x</td>\n      <td>1.21E+08</td>\n      <td>1.16E+08</td>\n      <td>96%</td>\n      <td>9.15E+07</td>\n      <td>76%</td>\n      <td>79%</td>\n      <td>ERS946039</td>\n      <td>ERS942321</td>\n    </tr>\n    <tr>\n      <td>CAS</td>\n      <td>Liver</td>\n      <td>0.33x</td>\n      <td>1.23E+08</td>\n      <td>1.01E+08</td>\n      <td>82%</td>\n      <td>9.07E+07</td>\n      <td>74%</td>\n      <td>90%</td>\n      <td>ERS946041</td>\n      <td>ERS942322</td>\n    </tr>\n    <tr>\n      <td>CAS</td>\n      <td>Testis</td>\n      <td>0.33x</td>\n      <td>1.23E+08</td>\n      <td>1.19E+08</td>\n      <td>96%</td>\n      <td>1.19E+08</td>\n      <td>96%</td>\n      <td>100%</td>\n      <td>ERS946042</td>\n      <td>ERS942323</td>\n    </tr>\n    <tr>\n      <td>SPI</td>\n      <td>Brain</td>\n      <td>0.33x</td>\n      <td>1.34E+08</td>\n      <td>1.29E+08</td>\n      <td>96%</td>\n      <td>9.15E+07</td>\n      <td>68%</td>\n      <td>71%</td>\n      <td>ERS946043</td>\n      <td>ERS942325</td>\n    </tr>\n    <tr>\n      <td>SPI</td>\n      <td>Liver</td>\n      <td>0.33x</td>\n      <td>1.05E+08</td>\n      <td>9.82E+07</td>\n      <td>93%</td>\n      <td>9.07E+07</td>\n      <td>86%</td>\n      <td>92%</td>\n      <td>ERS946045</td>\n      <td>ERS942326</td>\n    </tr>\n    <tr>\n      <td>SPI</td>\n      <td>Testis</td>\n      <td>0.33x</td>\n      <td>1.44E+08</td>\n      <td>1.38E+08</td>\n      <td>96%</td>\n      <td>1.19E+08</td>\n      <td>83%</td>\n      <td>86%</td>\n      <td>ERS946046</td>\n      <td>ERS942327</td>\n    </tr>\n    <tr>\n      <td>SPR</td>\n      <td>Brain</td>\n      <td>0.33x</td>\n      <td>1.09E+08</td>\n      <td>1.05E+08</td>\n      <td>96%</td>\n      <td>9.15E+07</td>\n      <td>84%</td>\n      <td>87%</td>\n      <td>ERS946047</td>\n      <td>ERS942329</td>\n    </tr>\n    <tr>\n      <td>SPR</td>\n      <td>Liver</td>\n      <td>0.33x</td>\n      <td>1.35E+08</td>\n      <td>1.20E+08</td>\n      <td>89%</td>\n      <td>9.07E+07</td>\n      <td>67%</td>\n      <td>76%</td>\n      <td>ERS946049</td>\n      <td>ERS942330</td>\n    </tr>\n    <tr>\n      <td>SPR</td>\n      <td>Testis</td>\n      <td>0.33x</td>\n      <td>1.34E+08</td>\n      <td>1.29E+08</td>\n      <td>96%</td>\n      <td>1.19E+08</td>\n      <td>88%</td>\n      <td>92%</td>\n      <td>ERS946050</td>\n      <td>ERS942331</td>\n    </tr>\n    <tr>\n      <td>MAT</td>\n      <td>Brain</td>\n      <td>0.33x</td>\n      <td>1.12E+08</td>\n      <td>1.04E+08</td>\n      <td>93%</td>\n      <td>9.15E+07</td>\n      <td>82%</td>\n      <td>88%</td>\n      <td>ERS946051</td>\n      <td>ERS942333</td>\n    </tr>\n    <tr>\n      <td>MAT</td>\n      <td>Liver</td>\n      <td>0.33x</td>\n      <td>1.23E+08</td>\n      <td>1.12E+08</td>\n      <td>91%</td>\n      <td>9.07E+07</td>\n      <td>74%</td>\n      <td>81%</td>\n      <td>ERS946053</td>\n      <td>ERS942334</td>\n    </tr>\n    <tr>\n      <td>MAT</td>\n      <td>Testis</td>\n      <td>0.33x</td>\n      <td>1.32E+08</td>\n      <td>1.23E+08</td>\n      <td>93%</td>\n      <td>1.19E+08</td>\n      <td>90%</td>\n      <td>97%</td>\n      <td>ERS946054</td>\n      <td>ERS942335</td>\n    </tr>\n    <tr>\n      <td>APO</td>\n      <td>Brain</td>\n      <td>0.33x</td>\n      <td>1.36E+08</td>\n      <td>1.18E+08</td>\n      <td>87%</td>\n      <td>9.15E+07</td>\n      <td>67%</td>\n      <td>78%</td>\n      <td>ERS946055</td>\n      <td>ERS942337</td>\n    </tr>\n    <tr>\n      <td>APO</td>\n      <td>Liver</td>\n      <td>0.33x</td>\n      <td>1.13E+08</td>\n      <td>1.00E+08</td>\n      <td>89%</td>\n      <td>9.07E+07</td>\n      <td>80%</td>\n      <td>91%</td>\n      <td>ERS946057</td>\n      <td>ERS942338</td>\n    </tr>\n    <tr>\n      <td>APO</td>\n      <td>Testis</td>\n      <td>0.33x</td>\n      <td>1.38E+08</td>\n      <td>1.20E+08</td>\n      <td>87%</td>\n      <td>1.19E+08</td>\n      <td>86%</td>\n      <td>99%</td>\n      <td>ERS946058</td>\n      <td>ERS942339</td>\n    </tr>\n  </tbody>\n</table>\n\n_All accessions deposited under studies PRJEB11533* and PRJEB11513**._\n\nOur results provide an evolutionary dynamics perspective where emergence, functionalization and decay of gene functions should be seen as an evolutionary life cycle of genes (Neme and Tautz, 2014). De novo gene birth should no longer be considered as the result of unlikely circumstances, but rather as an inherent property of the transcriptional apparatus and thus a mechanism for testing and revealing hidden adaptive potential in genomes (Brosius, 2005; Masel and Siegal, 2009). Within this evolutionary perspective, any non-genic part of the genome has the possibility to become useful at some time.\n\n**Table 3.**\n Additional sequencing effort, focused only on brain samples. Reads sequenced, mapped and normalized.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Taxon Code</th>\n      <th>Tissue</th>\n      <th>Lanes</th>\n      <th>QC-passed reads</th>\n      <th>Mapped reads</th>\n      <th>(% total)</th>\n      <th>Normalized subset</th>\n      <th>(% total)</th>\n      <th>(% mapped)</th>\n      <th>Accession Reads</th>\n      <th>Accession BAMs</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>DOMCB</td>\n      <td>Brain</td>\n      <td>1x</td>\n      <td>3.89E+08</td>\n      <td>3.76E+08</td>\n      <td>97%</td>\n      <td>3.19E+08</td>\n      <td>82%</td>\n      <td>85%</td>\n      <td>ERS946024</td>\n      <td>ERS942308</td>\n    </tr>\n    <tr>\n      <td>DOMMC</td>\n      <td>Brain</td>\n      <td>1x</td>\n      <td>3.76E+08</td>\n      <td>3.64E+08</td>\n      <td>97%</td>\n      <td>3.19E+08</td>\n      <td>85%</td>\n      <td>88%</td>\n      <td>ERS946028</td>\n      <td>ERS942312</td>\n    </tr>\n    <tr>\n      <td>DOMAH</td>\n      <td>Brain</td>\n      <td>1x</td>\n      <td>3.46E+08</td>\n      <td>3.35E+08</td>\n      <td>97%</td>\n      <td>3.19E+08</td>\n      <td>92%</td>\n      <td>95%</td>\n      <td>ERS946020</td>\n      <td>ERS942304</td>\n    </tr>\n    <tr>\n      <td>MUSKH</td>\n      <td>Brain</td>\n      <td>1x</td>\n      <td>4.64E+08</td>\n      <td>4.49E+08</td>\n      <td>97%</td>\n      <td>3.19E+08</td>\n      <td>69%</td>\n      <td>71%</td>\n      <td>ERS946036</td>\n      <td>ERS942316</td>\n    </tr>\n    <tr>\n      <td>MUSVI</td>\n      <td>Brain</td>\n      <td>1x</td>\n      <td>4.13E+08</td>\n      <td>4.00E+08</td>\n      <td>97%</td>\n      <td>3.19E+08</td>\n      <td>77%</td>\n      <td>80%</td>\n      <td>ERS946032</td>\n      <td>ERS942320</td>\n    </tr>\n    <tr>\n      <td>CAS</td>\n      <td>Brain</td>\n      <td>1x</td>\n      <td>4.35E+08</td>\n      <td>4.21E+08</td>\n      <td>97%</td>\n      <td>3.19E+08</td>\n      <td>73%</td>\n      <td>76%</td>\n      <td>ERS946040</td>\n      <td>ERS942324</td>\n    </tr>\n    <tr>\n      <td>SPI</td>\n      <td>Brain</td>\n      <td>1x</td>\n      <td>4.31E+08</td>\n      <td>4.16E+08</td>\n      <td>97%</td>\n      <td>3.19E+08</td>\n      <td>74%</td>\n      <td>77%</td>\n      <td>ERS946044</td>\n      <td>ERS942328</td>\n    </tr>\n    <tr>\n      <td>SPR</td>\n      <td>Brain</td>\n      <td>1x</td>\n      <td>3.87E+08</td>\n      <td>3.73E+08</td>\n      <td>96%</td>\n      <td>3.19E+08</td>\n      <td>82%</td>\n      <td>85%</td>\n      <td>ERS946048</td>\n      <td>ERS942332</td>\n    </tr>\n    <tr>\n      <td>MAT</td>\n      <td>Brain</td>\n      <td>1x</td>\n      <td>3.62E+08</td>\n      <td>3.40E+08</td>\n      <td>94%</td>\n      <td>3.19E+08</td>\n      <td>88%</td>\n      <td>94%</td>\n      <td>ERS946052</td>\n      <td>ERS942336</td>\n    </tr>\n    <tr>\n      <td>APO</td>\n      <td>Brain</td>\n      <td>1x</td>\n      <td>4.33E+08</td>\n      <td>3.77E+08</td>\n      <td>87%</td>\n      <td>3.19E+08</td>\n      <td>74%</td>\n      <td>84%</td>\n      <td>ERS946056</td>\n      <td>ERS942340</td>\n    </tr>\n  </tbody>\n</table>\n\n_All accessions deposited under studies PRJEB11533* and PRJEB11513**._\n\n## Material and methods\n\n### Sampled taxa\n\nThe youngest divergence point sampled, at about 3,000 years, corresponds to the split between two European populations of Mus musculus domesticus(Cucchi et al., 2005) one from France (Massif Central = DOMMC) and one from Germany (Cologne-Bonn area = DOMCB) (Ihle et al., 2006). These European populations in turn have diverged from an ancestral M. m. domesticus population in Iran (Ahvaz = DOMAH) about 12,000 years ago (Hardouin et al., 2015). The European M. m. domesticus are also the closest relatives of the reference genome, the C57BL/6J strain Didion and de Villena, 2013).\n\nWe included two populations of Mus musculus musculus; one from Austria (Vienna = MUSVI) and one from Kazakhstan (Almaty = MUSKH). These two populations are supposed to have a longer divergence between then the European M. m. domesticus populations, but a more accurate estimate is currently not available. We set the divergence for analyses at around 10,000 years as an approximate estimate. M. m. domesticus has diverged from M. m. musculus and Mus musculus castaneus about 0.4 to 0.5 million years ago, with a subsequent divergence, not long after, between M. m. musculus and M. m. castaneus (Suzuki et al., 2013). We included M. m. castaneus (CAS) from Taiwan as a representative of the subspecies.\n\nTo account for longer divergence times, we included Mus spicilegus (SPI; estimated divergence of 1.2 million years); Mus spretus (SPR; estimated divergence of 1.7 million years)(Suzuki et al., 2013); Mus matteyii (MAT; subgenus Nannomys), the North African miniature mouse (estimated divergence of 6.6 million years) (Catzeflis and Denys, 1992; Lecompte et al., 2008), and Apodemus uralensis, the Ural field mouse (APO; estimated divergence of 10.6 million years) (Lecompte et al., 2008).\n\nThe population-level samples (M. m. domesticus and M. m. musculus) included are maintained under outbreeding schemes, which allows for natural polymorphisms to be present in the samples. All other non-population samples are kept as more or less inbred stock, and therefore fewer polymorphisms are expected. All mice were obtained from the mouse collection at the Max Planck Institute for Evolutionary Biology, following standard rearing techniques which ensure a homogeneous environment for all animals. Mice were maintained and handled in accordance to FELASA guidelines and German animal welfare law (Tierschutzgesetz \u00a7 11, permit from Veterin\u00e4ramt Kreis Pl\u00f6n: 1401\u2013144/PL\u00d6-004697).\n\nA total of 60 mice were sampled, as follows: Eight male individuals from each population-level sample (outbreds), Iran (DOMAH), France (DOMMC), and Germany (DOMCB) of Mus musculus domesticus, and Austria (MUSVI) and Kazakhstan (MUSKH) of Mus musculus musculus. Four male individuals from the remaining taxa (partially inbred): Mus musculus castaneus (CAS), Mus spretus (SPR), Mus spicilegus (SPI), Mus mattheyi (MAT) and Apodemus uralensis (APO). Mice were sacrificed by CO2 asphyxiation followed immediately by cervical dislocation. Mice were dissected and tissues were snap-frozen within 5 min post-mortem. The tissues collected were liver (ventral view: front right lobe), both testis and whole brain including brain stem.\n\n### Genome sequencing\n\nOne individual from each of M. spicilegus, M. spretus, M. mattheyi, and Apodemus uralensis were selected for genome sequencing. DNA was extracted from liver samples. DNA extraction was performed using a standard salt extraction protocol. Tagged libraries were prepared using the Genomic DNA Sample preparation kit from Illumina, following the manufacturers\u2019 instructions. After library preparation, the samples were run in IlluminaHiSeq 2000 at a depth of approximately 2.6 lanes per genome. Library insert size is ~190bases and paired-end reads were 100 bases long. Library preparation and sequencing was performed at the Cologne Center for Genomics. Sequencing read statistics are provided in Table 1. Data are available under the study accessions PRJEB11513, PRJEB11533 and PRJEB11535, from the European Nucleotide Archive (http://www.ebi.ac.uk/ena/).\n\n### Transcriptome sequencing\n\nThe sampled tissues of each taxon were used for RNA extraction with the RNAeasy Mini Kit (QIAGEN) and RNA was pooled at equimolar concentrations. RNA quality was measured with the Agilent RNA Nano Kit, for the individual samples and pools. Samples with RIN values above 7.5 were used for sequencing. Library preparation was done using the Illumina TruSeq library preparation, with mRNA purification (poly-A+ selection), following manufacturers\u2019 instructions. Sequencing was done in Illumina HiSeq, 2000 sequencer. Libraries for each group were tagged, pooled and sequenced in a single lane, corresponding to approximately one third of a HiSeq2000 lane. Library insert size is ~190bases and paired-end reads were 100 bases long. Additional sequencing of the brain samples was performed to identify potential limitations in depth of sequencing. For this, each brain library was sequenced on a full lane of a HiSeq2000. All library preparation and sequencing was done at the Cologne Center for Genomics (CCG). Sequencing read statistics are provided in Tables 2 and 3. Data are available under the study accessions PRJEB11513 and PRJEB11533, from the European Nucleotide Archive (http://www.ebi.ac.uk/ena).\n\n### Raw data processing\n\nAll raw data files were trimmed for adaptors and quality using Trimmomatic\u00a0(Lohse et al., 2012). The quality trimming was performed basewise, removing bases below quality score of 20 (Q20), and keeping reads whose average quality was of at least Q30. Reads whose trimmed length was shorter than 60 bases were excluded from further analyses, and pairs missing one member because of poor quality were also removed from any further analyses.\n\n### Mapping\n\nThe reconstruction of transcriptomes using high-throughput sequencing data is not trivial when comparing information across different species to a single reference genome. This is due to the fact that most of the tools designed for such tasks do not work in a phylogenetically aware context. For this reason, any approximation which deals with fractional data (i.e. any high-throughput sequencing setup available to this date) is limited by the detection abilities of the software of choice and by the quality of the reference (transcriptome and genome).\n\nGiven the high quality state of the mouse genome repositories, we decided to take a reference-based approach, in which all analyses are centered in the reference genome of the C57BL/6 laboratory strain of Mus musculus domesticus, which enables direct comparisons across all species based on the annotations of the C57BL/6 laboratory strain.\n\nTranscriptome and genome sequencing reads were aligned against the mm10 version of the mouse reference genome (Waterston et al., 2002) from UCSC (Karolchik et al., 2014)\u00a0using NextGenMap which performs extremely well with divergences of over 10% compared to other standard mapping software (Sedlazeck et al., 2013), as confirmed by our own simulations (Appendix 1). The program was run under default settings, except for --strata 1 and --silent-clip. The first option enforces uniquely mapping reads and the second drops the unmapped portion of the reads, to avoid inflating coverage statistics. This is particularly relevant around exon-intron boundaries, where exonic reads are forced into intronic regions unless this option is set.\n\nWe produced normalized versions of the alignments per tissue. This was achieved by counting the total amount of uniquely mapped reads in each taxon for each tissue, and sampling without replacement a fraction of each file which would result in the roughly the same absolute number of uniquely mapped reads for all samples of the same tissue (summarized in Table 2 and\u00a0Table 3).\n\n### Coverage statistics\n\nWe performed coverage statistics on 200 bp windows, to minimize problems derived from the fractional nature of the data, in which a few nucleotides could be absent from a sequenced fragment due to the preparation of the samples, low quality towards read ends, or a few mismatches during mapping. Coverage statistics were computed from normalized alignment files with the featureCounts program from the Subreads suite (Liao et al., 2014). In order to avoid counting reads twice if they would span two windows (which would be the case for most reads), we assigned reads to the window where more than half of the read was present.\n\nGenomic reads were used as a metric of empiric mapability for the coverage statistics, i.e. to identify which regions can be reliably detected. For this, we removed from the mapping results against the reference genome (see above) all regions that were not mapped across the phylogeny based on the genomic reads from the taxa more than 1 Mill years apart. The remaining portion we call the \u2018common genome\u2019 in all analyses. It is important to highlight that this is not the same as synteny, since we did not perform any co-linearity analyses between fragments, but rather represent the mere presence in the species, in any possible order. The common genome serves to limit mapping artifacts, since the reads observed in each window must not only be uniquely mapping, but also be present and detectable in all the genomes considered.\n\nWe report coverage only from windows in the common genome for several reasons. First, we want to compare changes in transcription in regions which are present across all taxa, so the region must be present at the genome level. Second, the observation of transcriptome coverage on a region of the reference genome without genomic coverage from the respective taxon could represent mapping artifacts. Thus by enforcing coverage on both levels, and in all taxa at the genomic level, we reduce mapping artifacts and errors. Third, we assume that the transcriptional properties of the common genome should be general enough that they represent the properties of each of the genomes of the taxa under study. Summary data for coverage of all genomes and transcriptomes are available under the Dryad accession associated with this manuscript (doi:10.5061/dryad.8jb83).\n\n### Reconstruction of phylogenetic relationships\n\nWe performed genome-wide correlations of coverage to infer distance between the taxa under study. Correlations of two types were initially used: rank-based (spearman correlation) and binary (phi correlation). From correlation matrices, we constructed Manhattan distance matrices and from those we further constructed neighbor-joining trees to describe the proximity between any two taxa based on shared transcriptome information. We focus mostly on the presence or absence of transcriptional coverage. For this reason, we used only the binary correlations in the figures. In this representation, closely related organisms have more shared transcriptomic coverage than distantly related organisms. Analyses were performed in R, using the function dist() from the stats package and nj() from the ape package (Paradis et al., 2004).\n\nAdditionally, whole mitochondrial genomes were obtained for each taxon as consensus sequences from mapped reads using samtools mpileup (Li et al., 2009). The sequences were aligned with MUSCLE (Edgar, 2004), and a NJ tree was constructed with the dist.dna() and nj() functions from the ape package Paradis et al., 2004). All trees were tested with 1000 bootstraps with the boot.phylo() function from the ape package. Reported nodes have a support of 70% or greater.\n\n### Estimation of sampling variance from brain samples\n\nThe extensive sequencing of brain samples were used to obtain estimates of how sampling might affect the terminal branch lengths of trees based on low coverage regions. For this, we split the alignments into three non-overlapping sets of 100 million reads per taxon, such that each set would contain sets of independent observations. Paired-read relationships were maintained, so that pairs of the same fragments would be in the same set. From this, we obtained trees as mentioned before, and the portions of the branches of each taxon which were shared across sets were considered as robust to sampling biases, while the discordant portions between samples were considered to be due to sampling variance. Summary data from subsampled sets are available under the Dryad accession associated with this manuscript (doi:10.5061/dryad.8jb83).\n\n### Rarefaction and subsampling\n\nTranscriptome experiments tend to be limited by the depth of sequencing, with highly expressed genes being relatively easy to sample, and rare transcripts becoming increasingly difficult to find. Given the large amount of data generated, we investigated whether our data show signals of coverage saturation from subsets of the data of different sizes. The total experiment, comprising ten taxa, corresponds to 6.4 x 109 reads (or 6.4 billion reads). We subsampled (samtools view -s) portions of mapped reads for each taxon, ranging between 10% to 100%, at 10% intervals. The observation of coverage saturation in this case would indicate that our sequencing efforts likely cover most of the transcribed regions of the common genome. Summary data are available under the Dryad accession associated with this manuscript (doi:10.5061/dryad.8jb83).\n\nIn parallel, we estimated the individual and combined contribution of each taxon to the transcriptomic coverage of the common genome. Not all samples have the same phylogenetic distance to each other (some species have more representatives than others). To account for this we generated one hundred arrays of the ten taxa with random order, and recorded the coverage after the addition of each taxon in each array. The observation of coverage saturation in this setup would indicate that taxonomic sampling is sufficient to cover most of the potentially transcribed regions of the common genome.\n\nIn order to estimate whether our data continued to increase or approached saturation, we tested two alternative models: a generalized linear model with logarithmic behavior (ever increasing) or a self-starting nonlinear regression model (saturating). The best fit was decided based on the minimum BIC value between the two models, and an estimate of the Bayes factor was computed from the difference of BIC values and support was obtained from standard criteria (Kass and Raftery, 1995). Analyses were performed in R, using the functions glm(), nls(), SSasymp(), and BIC() from the stats package (R Core Team, 2014).\n\n### Analysis of transcribed and non-transcribed regions across the genome\n\nTranscribed and non-transcribed windows of the common genome were defined by the continuous presence or absence of transcriptomic coverage from mapping information of each taxon and tissue. Neighboring transcribed regions across species were combined to obtain stretches of transcriptionally active common genome.\n\n### Enrichment of annotations from the mouse reference\n\nAnnotations of Mus musculus from Ensembl v81 (Cunningham et al., 2015) were used to infer the relative contribution of known genes to the observed transcription across species. We partitioned the sets between genes, exons, and introns, and those were further partitioned between protein- coding and non-coding genes. To determine if the overlaps are significantly different from a random distribution of the features along the genome, we randomized 1000 times each of the annotated intervals (genes, exons, introns, and subsets of coding and non-coding) along the genome using shuffleBed from the bedtools suite (Quinlan and Hall, 2010), and compared the overlap to various transcribed regions (single taxa, less than 9 taxa, more than 8 taxa, 10 taxa, and transcribed in any taxon). Multiple testing corrections were performed and significant comparisons are reported at 5% FDR. Furthermore, since we assume that most annotations fall within transcribed regions in any species, we used the total transcriptomic coverage across all taxa to calculate potential discrepancies in the shuffling method. The ratios of expected and observed coverage of total transcription across taxa for a given feature were calculated to define the range of ratios for which comparisons were also non-significant, i.e., where we could not rule out method bias.\n",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "3c7c63a3-dffb-4af7-87d1-57adfcd077f5",
+      "submission_id": "76dad065-3f2e-42ee-8eba-bbd9329c4e3f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Thomas R Gingeras, Cold Spring Harbor Laboratory , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.09977.028](https://doi.org/10.7554/eLife.09977.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Fast turnover of genome-level transcriptional activity across short evolutionary time\" for peer review at eLife. Your submission has been favorably evaluated by Mark McCarthy (Senior editor) and two reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nAlthough the work is of interest and timely, we regret to inform you that the findings at this stage contain several problematic issues that require attention before a final decision can be rendered.\n\nThe first of these issues is the possibility that the analysis may be compromised by a serious artifact that would need to be corrected or excluded. In the authors' experimental design, it seems possible to call a region \"transcribed\" in taxon #1 and \"not transcribed\" in taxon #2 even if the region is in fact transcribed at exactly the same expression level in both taxa. This is because statistical fluctuation can cause even exactly the same region (even in the same taxon) to pass the simple coverage threshold (of coverage >= 1 or >= 5) in one sample but not another. For example, suppose a region is actually expressed at a level equivalent to a coverage of 1 read per base. With a Poisson probability of about 60%, one or more reads will fall over the position, and satisfy the \"transcribed\" threshold; with a probability of about 40%, zero reads will fall over the position, and then it will be called \"not transcribed\". The authors call the >=5 read threshold \"more stringent and therefore more reliable\" but this is not correct, because it is just as prone to the problem; for a region with an expression level of 5, in about half of samples you would observe a coverage of < 5 and call the region not transcribed, and in the other half you would observe a coverage of >= 5 and call the same region transcribed. Of course only low-expressed regions (close to the >=1 or >=5 thresholds) will suffer the problem of fluctuating above and below the thresholds, but many regions are lowly expressed, and indeed this is the point in a study of \"pervasive transcription\".\n\nBecause the probability of calling even the same low-expressed region \"transcribed\" in multiple replicate samples can be significantly less than one, the probability of seeing a region called \"transcribed\" in multiple samples will be an artifactually decreasing function, and indeed could look just like the results in Figure 3, depending on details.\n\nA control experiment that the authors could do: what fraction of regions within the same taxon are detected in common in biological replicates \u2013 i.e. what does Figure 3 look like if you do 10 replicates of the same taxon, not 10 different taxa? For the experiment to work as planned, that plot must show a constant level. But if this artifact is in play, you'll see a decreasing function much like Figure 3.\n\nOne effect of the artifact would be that closely related taxa would show unexpectedly large \"distances\" in the analysis of Figure 4, because some unknown amount of \"distance\" is being generated by stochastic fluctuation on mapped read counts, not by evolutionary divergence. This is an alternative explanation for the authors' observation that the closely related taxa have disproportionately large distances, undermining one of the paper's main conclusions that there is larger turnover at shorter evolutionary divergence. (The fact that the tree is reasonably concordant with the expected mouse tree does suggest that there is signal in the data, though, so my expectation is that there's a mixture of artifact and signal going on.)\n\nThus I do not think the authors can safely conclude that transcription is not conserved in these taxa. I don't think a simple threshold on coverage is the right way to analyze the data. I think they must do a more statistically rigorous experimental analysis that takes into account the distributions P(c1 e1) and P(c2 e2) for how much read coverage c1, c2 you observe in taxa 1,2 given unknown expression levels e1, e2 (differential RNA-seq methods typically estimate negative binomial distributions, e.g. over dispersed Poissons, for these). For example you might seek to reject the hypothesis that e1=e2 given the observed c1, c2 (though this would only test for significant changes in expression level, not gain/loss of txn), or that e1>threshold for \"on\" and e2=epsilon where epsilon is some chosen background \"off\" level. Any such analysis would also leave you with regions of \"don't know\", where you were unable to tell from the observed counts if the region were differentially transcribed or not.\n\nThere is an issue concerning the distribution of the detected transcripts between annotated coding or non-coding transcripts (i.e. a large proportion of which will be coding regions) and novel transcribed regions (a large proportion of which are likely to have little coding potential). The authors indicate that cumulatively (Figure 2F) ~36% present in the \"common genome\" (~70% of total genome) for each taxa is transcribed, resulting in a total of ~76% of the common genome being transcribed considering all 3 tissues of all 10 taxa. What proportion of these uniquely mapped reads correspond to annotated vs. unannotated (i.e. novel transcribed regions found in these experiments)? Are the turnover rates observed different between these two categories of genomic regions? If they are different is the turnover rate observed driven by one or the other regions? This seems important since the underlying assumption seems to be that the novel regions (i.e. as yet unannotated regions) are driving the rapid turning. Additionally, do the de novo transcripts that survive this turnover possess more coding or non-coding characteristics? If they are non-coding mostly, are there \"observations\" that can be made about the evolution of genomes as being driven by the ongoing emergence of non-coding genes?\n\nThe sequence data must be deposited in appropriate public database (NCBI GEO, for example) and accessioned. The \"Datasets generated\" point in the cover page is set to \"N/A\" but should not be. The authors should provide not just the reads, but also some sort of summary data files (such as.bed files) that enable reviewers and readers to reproduce the important features of the analyses without having to remap reads. Both summary.bed files and read data also need to be provided to reviewers.\n\nTo do the analysis in Figure 5, you can't just select the best hypothesis of the two (your GLM for continuously increasing, vs. your nonlinear regression for saturation). For all we know, the two hypotheses explain the data essentially equally well. You can't conclude that Figure 5A shows continuous increase and Figure 5B shows saturation unless you show that one hypothesis is significantly better (i.e. statistically significantly). If you're using BIC (Bayesian information criterion) it seems you should be able to directly calculate and report the Bayes factor supporting one hypothesis versus the other.\n\nThe simulation is unclear. How does a string of 10,000 states approximate a 3Gb genome? Why bother with making it a string, since there's no dependence (that I see) between positions in your model (even though in a real genome there would be strong dependency between sites, because transcripts are contiguous). Why do you model 0->0 and 1->1 as \"events\"? (I think a time-dependent Markovian birth/death state change model would usually just have 0->1 with a birth rate, and 1->0 with a death rate.) Why do you call fitting to observed parameters by RMSD \"maximum parsimony\"? (Parsimony minimizes some counted events, possibly weighted ones, not a RMSD of continuous-valued features.) What exactly are the observed features that you fit the simulation to (as opposed to how you list example \"summary values such as\u2026\", I want to understand exactly what you used), and how did you calculate them?\n\nIt is stated that NextGenMap is designed for mapping to divergent genomes, but your results are so dependent on the quality of that mapping that I think you're obligated to do and show a control experiment that demonstrates that it is in fact working as expected on these genomes, rather than just asserting that it \"performs extremely well\" (subsection \u201cMapping\u201d, third paragraph).\n\n[Editors\u2019 note: this article was rejected after discussions between the reviewers, but the authors were invited to resubmit after an appeal against the decision.]\n\nThank you for submitting your work entitled \"Fast turnover of genome transcription across evolutionary time exposes entire non-coding DNA to de novo gene emergence\" for consideration by eLife. Your article has been reviewed by one of the original reviewers (Sean Eddy), and the evaluation has been overseen by a Reviewing Editor and Mark McCarthy as the Senior Editor.\n\nOur decision has been reached after consultation between the editors and the reviewer. Based on these discussions and the individual reviews, we regret to inform you that your work will not be considered further for publication in eLife.\n\nAfter review of your revised manuscript, it has been determined that there are still a number of concerns on the analyses and conclusions described. Details of these concerns are cited below. Given that the overall evaluation is still not positive, regretfully, we are unable to accept this manuscript for publication. We are sorry that on this occasion we cannot be more encouraging, but thank you for this submission.\n\nReviewer #2:\n\nIn this revised manuscript, the authors' central assumption remains: that it is meaningful to distinguish \"transcribed\" from \"non-transcribed\" loci (qualitatively), and that regions of the genome with 0 mapped RNA-seq reads can be inferred to be \"non-transcribed\", as opposed to just undersampled.\n\nThe analysis now completely depends on a new conclusion, reached by mathematically erroneous means in Appendix 2, that the minimum expression level for any locus is >=1-2 reads per 100M reads, with no loci more lowly expressed. The authors now switch to an analysis of aggregated data (600M reads), conceding that the 100M sample size in the previous manuscript is too small. They argue that at 600M reads, they have saturated the detected transcriptional coverage (because if the minimum expression level is 1/100M, and we sample 600M reads, we expect to map ~6 reads per window; thus the probability of seeing 0 mapped reads on a transcribed window is small). The analysis then proceeds to count singleton loci with only 1 mapped read as \"expressed\" and 0 reads as \"not expressed\" (Figure 2), for large numbers of singletons observed in the data, conflicting with the argument they are at saturation, because saturation requires that the number of singletons has been driven to a negligible number.\n\nIt remains the case that we cannot count 1 versus 0 mapped reads as different expression levels, for the reasons already pointed out for the previous manuscript version. This remains a fundamental flaw in the analysis, which in my opinion needs to be completely rethought.\n\nDetail on why I call Appendix 2 mathematically erroneous:\n\nApologies for the length but I think it's important to explain.\n\nIn the previous review, I had worried that the analysis was subject to a small sample number artifact on low-expression regions. Supposing a low-expressed locus is transcribed at the equivalent of 1 expected read: then 60% of the time it will be detected with >=1 mapped read, and 40% of the time it will have 0 mapped reads. So when low-expressed loci exist, where small numbers of reads are mapping, the same locus will appear to be \"non-transcribed\" in one sample and \"transcribed\" in another, simply by statistical fluctuation. This would be an extremely troubling and serious error in a data analysis design, but I wasn't entirely sure I understood the manuscript, so I left it open to the authors to explain any misunderstanding. The authors' response confirms that I understood their analysis correctly.\n\nTo address the problem, the authors have inserted a new analysis in Appendix 2. The purpose of Appendix 2 is to argue that this is not a problem in the aggregated data (600M reads), although the authors concede the problem in the individual tissue data sets (100M reads). The claim is that the data are \"compatible with\" a minimum expression level of 1-2 mapped reads per 100M reads (i.e. essentially no locus has a lower expression level than this) and thus at 600M reads, all transcribed loci have been saturated.\n\nAside from my skepticism that any fixed minimum expression level can exist (how would that work, thermodynamically and biologically?), the analysis in Appendix 2 appears to be mathematically incorrect in several respects. First, most seriously, it confuses a cumulative distribution, P(counts >= 1), with a probability distribution, P(counts = x). The equation P = 1-(1-x)^n gives (as the authors correctly say) \"the probability for finding a read at least once among n total reads\" \u2013 this is a cumulative distribution, P(counts >= 1). The authors then compare this to the number of singletons: which is the number of windows with exactly one mapped read, P(counts = 1). The number of windows with exactly one mapped read is not calculated by the authors' equation; it would instead be calculated by the binomial distribution for P(counts=1), n * x * (1-x)^(n-1).\n\nSecond, you cannot extrapolate this calculation to the total number of expected singletons in the 100M or 300M read sample unless you assume that all loci are expressed at the same low level t. This is obviously not the case. For starters, known coding genes are expressed at far higher levels. If less well expressed loci exist, they will also contribute to the singleton counts, each detected with lower probability. The authors' analysis assumes that all loci have the same expression level t and therefore no lower expressed loci exist. Since the analysis is intended to test whether lower expressed loci exist, it is a problem that the analysis assumes that conclusion.\n\nThird, it seems obvious from the singleton counts that the authors' conclusions can't be right. The authors' main argument in Appendix 2 is that the \"data are compatible\" with loci having a minimum concentration of 1-2 reads per 100M reads, so by the time they have sampled 600M reads, the probability of detecting any given locus is essentially one and \"no major sampling variance is expected\". But the reason that the probability of detecting a locus transcribed at 1 read/100M reads in a sample of 600M reads is high is that the expected number of reads is 6. Under the authors' assumptions, the Poisson probability of detecting a singleton in a 100M read sample is 40% (40% probability of 0 counts, 40% of 1 count, 20% of >1 count). The Poisson probability of detecting a singleton in a 600M read sample is 15% (5% probability of detecting 0 counts; 15% of 1 count; 80% of >1 count; mean expected number of counts = 6). Thus if the authors' assumptions are correct, the number of singletons should decrease in a larger sample, not increase. Indeed, this is what saturation means! Instead, the data in Appendix 2 consistently show more singletons in the 300M sample than the 100M sample. That's what you expect if there's a continuous tail of lower and lower expressed loci, which seems to me likely.\n\nThe authors inappropriately fit their observed singleton numbers for P(counts=1) (for example, 427585 for AH 100M sample, 569564 for AH 300M sample) to the cumulative binomial probability for P(counts >= 1); this is mathematically nonsensical. Oddly, though they get very good \"fits\", with \"expected\" counts almost exactly equal to observed counts \u2013 how could this be? It took me a while to figure this out. First, note that if these were really \"expected\" vs. \"observed\" counts, the observed counts c would have sampling errors of about sqrt(c), about +-700 here; it's a red flag that the agreement between \"expected\" and \"observed\" is far too good. What's happening is that the authors' \"expected\" counts aren't really expected counts under a model. Instead what the authors are doing (I believe) is a numerical fit to the observed data: given observed counts a1 and a2, from sample sizes n1 and n2, they ask if they can fit an unknown \"predicted number in sample\", N, that satisfies both a1/N = 1 \u2013 (1-x)^n1 and a2/N = 1-(1-x)^n2. Because they can fit N, they conclude that the data are \"compatible\" with their conclusion that there is a \"minimum\" (actually, the analysis requires it to be constant, not just minimal; see above) expression level of ~1 read/100M reads. The trouble with this analysis (which, again, is set up wrong in the first place), and the reason that it appears to work, is that if n2/n1 > a2/a1, I believe you can always find a \"predicted number in sample\" N that satisfies the two (inappropriate) cumulative binomial distribution equations. That is, the fit shows nothing other than the fact that the number of singletons is increasing slower than the increase in sample size, which is expected under any possible model. It does not say anything about the minimum concentration t. Indeed, again, the fact that the number of singletons is increasing, not decreasing, as we go from 100M to 300M sample size says that we are not at saturation, and the 300M sample is starting to detect singletons at even lower-expressed loci.\n\nThe authors point to Figure 5B as additional evidence that they are at saturation. Figure 5B is indeed puzzling, because the appearance of an asymptotic saturation at about 85% coverage conflicts with the increasing numbers of singletons with increasing read number in Appendix 2. But there are two things about Figure 5B that reduce my confidence in the authors' conclusions about it. One is that if we extrapolate the other direction (to lower coverage), the authors' model fit predicts that with no sequencing reads at all (the y intercept of the graph at x=0), 40% of the genome is detected by (nonexistent) sequencing reads with coverage of >= 1 read! If the model fit can't extrapolate safely to low coverage, I'm not sure why I would trust its extrapolations to high coverage. Second, the authors comment that the standard deviations on the data points in Figure 5B are \"too small to display\". To obtain a standard deviation, you have to make measurements on multiple independent samples. The top data point is measured on all the data \u2013 I believe there is only one measurement, which is why the std deviation is too small to display (it's zero). The other data points are measured (I understand) on subsets of the data. For any depth >0.5, the measurements cannot be independent (because to get measurements at depth 0.5 of the total, you can only split the data in half, to get two independent measurements). This will result in underestimating the variance. Small shifts in those data points could lead to a different appearance of whether these data are saturating or not, and I suspect something like that is going on.\n\n(Similarly the model fit in Figure 5A, if taken seriously, predicts that once we have >25 taxa sequenced, we will cover >100% of the genome; sequencing 100 taxa will cover 120% of the genome. The model fits in Figure 5 seem inappropriate and overly precise to me, given that they both produce nonsensical predictions.)\n\nTranscription levels are likely to be a continuum, reaching down to lower and lower expression levels, never truly zero. (Even if the authors disagree with this, I'd point out that all their data are on heterogeneous tissue samples like brain, which are a complex mixture of cell types. A locus expressed at some amount in one neuronal cell type can show any degree of smaller expression level in the overall tissue sample, simply because there can be any degree of dilution of that cell type in the sample.) I think the authors need to rethink how they're doing their data analysis. I think the only way to do it is to look for loci that have statistically significantly increased expression in one taxon relative to another. Differential analysis of RNA-seq gene expression data is a well understood area, with good existing methods, and I think one of them could be used in a redesigned analytic strategy here.\n\nThe data are still not available, though the authors say they are. The authors cite EBI ENA and Dryad accession numbers. None of these accessions exist at EBI ENA or Dryad. Perhaps the authors have them deposited under some sort of hold? Referees must have access to these data to perform peer review.\n\nAn important control that the authors should do to validate their analysis is to do replicates on the same taxon. You should not see \"novel transcription\" in replicates, under the conditions of this analysis (i.e. with individual variation and environment held fixed). If the data analysis strategy is valid (if they are at saturation), they will see a negligible number of \"novel transcription\" windows in replicates of the same taxon. If instead there is a small sampling artifact, they will see \"novel transcription\" for low-level expressed regions, created merely by sampling variation between replicates. I suggested this control in the previous review; I do not understand the authors' response. They say they can't do it because they \"cannot use different individuals\". The idea of a replicate control (in this case) is to take multiple samples from the same individuals/same taxon. (Maybe it's better to think in terms of technical replicates, rather than biological replicates; the question is only about variation cause by sampling depth.) The authors say that \"the analogous analysis is done in our use of the brain samples at 100M vs. 300M read depth in Appendix 2\". I don't understand that response either, because nothing in Appendix 2 measures the false positive rate of \"detected transcription\" between different sequence read samples of the same size from the same source. They could, for example, given an even deeper sample (1200M reads, for example), compare 600M to 600M subsets to see how much novel transcription they see, to try to validate their analysis at a 600M sample size. It might also be possible to use bootstrap resampling statistics, resampling the 600M with replacement, which could be done without needing more sequencing depth.\n\nThe simulation experiments on the NGM mapper performance may need to be interpreted more carefully. The plots in Appendix 1 show a ~5% mismapping rate at ~6% divergence, increasing with higher divergence. The conclusions in the paper depend in part on observing 1-7% unique transcription coverage per taxon, which is within the mismapping rate of NGM. Note that the observed coverage in Figure 2 increases with increasing phylogenetic distance, which is not expected biologically, but is the prediction of an increasing mismapping rate. Moreover, the actual analysis (as opposed to the simulations in Appendix 1) leaves out ~30% of the genome and only maps to the \"common genome\"; leaving genome out increases mismapping rates (because a read that maps better to the missing part of the genome that the mapper doesn't see can be mapped to its best but incorrect match in the genome that the mapper does see.)\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for choosing to send your work entitled \"Fast turnover of genome transcription across evolutionary time exposes entire non-coding DNA to de novo gene emergence\" for consideration at eLife. Your letter of appeal has been considered by Mark McCarthy (Senior editor) and the original Reviewing editor.\n\nIn the light of your comments, we have sent your manuscript out for an additional perspective and set of reviews. Enclosed you will find the reviews provided by this reviewer. As you will see, while this reviewer agrees with some of the issues raised by the earlier set of reviews, it is the judgement of the new reviewer that these issues do not affect the major conclusions of your manuscript. This review does point out that there are remaining issues associated with the saturation plots. However, the reviewer makes some concrete suggestions in the final paragraph of the review that should address these issues.\n\nWe would welcome a revised manuscript that addresses these remaining issues along the lines suggested by the most recent reviewer. We look forward to your response and receiving a revised manuscript.\n\nReviewer #3:\n\nIn the manuscript \"Fast turnover of genome transcription across evolutionary time exposes entire non-coding DNA to de novo gene emergence\" the authors, Rafik Neme and Diethard Tautz, analyze transcriptome data (RNA-seq) from different mouse taxa, for each of three tissues, to evaluate the transcription of coding and non-coding regions from an evolutionary perspective. In agreement to previous published results, the authors find that majority of the genome is transcriptionally active. By focusing on the portions of the genomes that are shared across the taxa studied they find that many of these regions are commonly transcribed across multiple taxa. They are capable of recapitulating the phylogenic tree, counteracting the common view that most of these lowly transcribed regions are mostly biological and technical noise. The evidence that pervasive transcription might be a resource to promote non-functional regions to selection is a valuable finding.\n\nThe criticisms raised by the reviewers are mostly reasonable. Indeed, some of the analyses presented by the paper, especially the saturation of sequencing depth, are not as robust as they could be. The authors claim that the fraction of the genome transcribed should saturate with increasing sequencing depth at approximately 85%. However, as one of the reviewers points out, 7% of the 200bp windows are singletons (only contain a single read supporting transcription), suggesting many windows are right at the threshold of detectability. Nonetheless, the authors show that the lowly transcribed regions are able to reconstruct the phylogenetic tree of the taxa, indicating that the biological signal is significantly higher than any technical noise due to sequencing depth and thresholding. We believe that despite the limitations of the saturation analysis with respect to sequencing depth being important, in the revision of the manuscript this area has been modified, but some technical details remain that do not help the authors\u2019 arguments (maybe remnants of the first submission).\n\nIn order to reconcile the interesting findings and the saturation analysis we suggest that authors revise the text associated with Figure 5 and only include what is necessary for the central conclusions of the paper. Also, they should clearly state the amount of putatively noisy (singleton) windows for each taxon in the main text. We also suggest an additional analysis that would pragmatically answer to the question whether low coverage windows are noise or not. The authors could build phylogenetic trees using different thresholds. If different thresholds result in phylogenetic trees similar to the nucleotide divergence tree, the authors could indirectly infer that the sequencing depth noise is significantly smaller than the biological signal. While we recognize the potential deficiencies of the saturation/thresholding analyses, we don't believe it should preclude publication.\n",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bb96f8c0-a675-4ed6-b6f6-65ed7232e146",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C1",
+      "claim": "A large fraction of genomes is transcribed according to deep sequencing analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Deep sequencing analyses have shown that a large fraction of genomes is transcribed, but the significance of this transcription is much debated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to existing literature on deep sequencing analyses.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "1ec35e84-49f3-4a50-bf3a-02295afc6f47",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C2",
+      "claim": "At a given sequencing depth, transcriptome coverage becomes saturated within a taxon.",
+      "claim_type": "EXPLICIT",
+      "source": "Using deep RNA sequencing we find that at a given sequencing depth transcriptome coverage becomes saturated within a taxon, but keeps extending when compared between taxa, even at this very shallow phylogenetic level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the RNA sequencing data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "0e4c8aba-e7e6-498a-a799-119be8e847d3",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C3",
+      "claim": "Transcriptome coverage keeps extending when compared between taxa at shallow phylogenetic levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Using deep RNA sequencing we find that at a given sequencing depth transcriptome coverage becomes saturated within a taxon, but keeps extending when compared between taxa, even at this very shallow phylogenetic level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the RNA sequencing data comparing multiple taxa.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "280fc79e-0f34-4fcc-a748-f36b433b97a1",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C4",
+      "claim": "There is high turnover of transcriptional states between taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show a high turnover of transcriptional states between taxa and that no major transcript-free islands exist across evolutionary time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the comparative transcriptome data across taxa.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "5dde9f59-3638-4060-a118-facab2b41c98",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C5",
+      "claim": "No major transcript-free islands exist across evolutionary time.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show a high turnover of transcriptional states between taxa and that no major transcript-free islands exist across evolutionary time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the analysis of transcriptome coverage across evolutionary time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "379d2b23-32f4-4d73-87d1-eee39f98ebdb",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C6",
+      "claim": "The entire genome can be transcribed into poly-adenylated RNA when viewed at an evolutionary time scale.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the entire genome can be transcribed into poly-adenylated RNA when viewed at an evolutionary time scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the data showing high turnover and lack of transcript-free islands.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "a46269c0-1006-4368-a776-40d61acc4059",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C7",
+      "claim": "Any part of the non-coding genome can potentially become subject to evolutionary functionalization via de novo gene evolution within relatively short evolutionary time spans.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that any part of the non-coding genome can potentially become subject to evolutionary functionalization via de novo gene evolution within relatively short evolutionary time spans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the data showing pervasive transcription and turnover.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "7d1a5088-381c-4c93-b98b-1ee7692fc832",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C8",
+      "claim": "Much larger portions of the genome are transcribed than would have been predicted from annotated exons.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide surveys have provided evidence for 'pervasive transcription', i.e., much larger portions of the genome are transcribed than would have been predicted from annotated exons (Clark et al., 2011; Hangauer et al., 2013; Kellis et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous genome-wide surveys.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "81a6d337-8f0a-45fb-aa13-42bde3decf4e",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C9",
+      "claim": "Most additional transcripts are expected to be non-coding RNAs (lncRNAs).",
+      "claim_type": "EXPLICIT",
+      "source": "Most are expected to be non-coding RNAs (lncRNAs) of which some have been shown to be functional.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about pervasive transcription.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "f26c72d1-5d41-4d03-9b43-00a522690f37",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C10",
+      "claim": "Some lncRNAs have been shown to be functional.",
+      "claim_type": "EXPLICIT",
+      "source": "Most are expected to be non-coding RNAs (lncRNAs) of which some have been shown to be functional.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on existing literature on lncRNA function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "dfeff712-305b-4a3d-bd6e-3e0e3ddb7516",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C11",
+      "claim": "The general conservation level of additional transcripts tends to be low.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the general conservation level of these additional transcripts tends to be low, which raises the question of their evolutionary turnover dynamics (Kutter et al., 2012; Kapusta and Feschotte, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on transcript conservation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "11827bce-1cf7-4caf-842a-5db1669ee97d",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C12",
+      "claim": "Additional transcripts could be a source for de novo gene formation via a proto-gene stage.",
+      "claim_type": "EXPLICIT",
+      "source": "They are currently receiving additional attention, since they could be a source for de novo gene formation via a proto-gene stage (Carvunis et al., 2012; Ruiz-Orera et al., 2014; Neme and Tautz, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on de novo gene formation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "c338b61f-56aa-4168-9469-b34f8c2bc8b4",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C13",
+      "claim": "De novo gene emergence shows particularly high rates in the youngest lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that de novo gene emergence shows particularly high rates in the youngest lineages (Tautz and Domazet-Loso, 2011), indicating that there is high turnover of such transcripts and genes between closely related species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a study on de novo gene emergence rates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "df390f41-4ead-44f5-95f0-24e5e46c266c",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C14",
+      "claim": "There is high turnover of transcripts and genes between closely related species.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that de novo gene emergence shows particularly high rates in the youngest lineages (Tautz and Domazet-Loso, 2011), indicating that there is high turnover of such transcripts and genes between closely related species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the high rates of de novo gene emergence in young lineages.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "c2413d52-76fc-4a13-8cab-8322081dc55d",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C15",
+      "claim": "Comparative studies of de novo genes between Drosophila species have confirmed high turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, comparative studies of de novo genes between Drosophila species (Palmieri et al., 2014) and within Drosophila populations (Zhao et al., 2014) have confirmed this.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to comparative studies in Drosophila.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "a905256e-4e99-4596-9967-50078005763b",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C16",
+      "claim": "Single mutational events can generate new transcripts in previously non-coding regions.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of possibilities have been discussed by which new transcripts are generated in previously non-coding regions, including single mutational events, stabilization of bi-directional transcription and insertion of transposable elements with promotor activity (Brosius, 2005; Gotea et al., 2013; Neme and Tautz, 2013; Wu and Sharp, 2013; Sundaram et al., 2014; Ruiz-Orera et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on mechanisms of transcript generation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "f9fd583b-13d7-4a30-b604-3c5fc8386ff6",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C17",
+      "claim": "Single step mutations can be sufficient to generate a stable transcript in a region that was previously not transcribed and translated.",
+      "claim_type": "EXPLICIT",
+      "source": "Detailed analyses of specific cases of emergence of a de novo gene have shown that single step mutations can be sufficient to generate a stable transcript in a region that was previously not transcribed and translated (Heinen et al., 2009; Knowles and McLysaght, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to detailed case studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "26128099-1827-47af-bf64-ba2b9681f1ad",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C18",
+      "claim": "The unequivocal identification of de novo transcript emergence can only be made in a comparison between very closely related evolutionary lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "The unequivocal identification of de novo transcript emergence can only be made in a comparison between very closely related evolutionary lineages, where orthologous genomic regions can be fully aligned, even for the neutrally evolving parts of the genome (Tautz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation and represents a methodological principle.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "418d32db-06ed-400a-90e3-934463bcba17",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C19",
+      "claim": "Available genome and transcriptome data for mammals and insects are too far apart to allow a comprehensive genome-wide assessment of de novo transcript emergence.",
+      "claim_type": "EXPLICIT",
+      "source": "While the available genome and transcriptome data for mammals and insects are sufficient to screen for specific cases of de novo transcript emergence, they are still too far apart of each other to allow a comprehensive genome-wide assessment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on assessment of existing data and justifies the current study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "ecf541ed-9103-4355-9c4c-0ef2a914732b",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C20",
+      "claim": "The study samples span 10 million years of divergence.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether they span 10 million years of divergence, which corresponds to an average of 6% nucleotide difference for the most distant comparisons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the phylogenetic sampling design of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "c492d65e-12ab-456b-b8b5-2bf87a9c41bc",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C21",
+      "claim": "The most distant comparisons correspond to an average of 6% nucleotide difference.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether they span 10 million years of divergence, which corresponds to an average of 6% nucleotide difference for the most distant comparisons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on sequence divergence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "2aa08b75-b6d1-4bdc-b2e1-bfaba92b260d",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C22",
+      "claim": "The common genome represents 71.7% of the total reference genome length.",
+      "claim_type": "EXPLICIT",
+      "source": "It represents 71.7% of the total reference genome length (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on genome mapping data shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "12fb9c19-febb-42bb-a38e-128373aa187b",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C23",
+      "claim": "About a third of the total genome length is not analyzed, corresponding to highly repetitive parts.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we are nominally not analyzing about a third of the total genome length, but this corresponds to the highly repetitive parts for which unique and reliable mapping of transcriptomic reads would not be possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the methodological approach and genome composition.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "9d0f6391-e593-4039-ad8c-37b09bba9009",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C24",
+      "claim": "Testis and brain harbor the largest diversity of transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies had shown that testis and brain harbor the largest diversity of transcripts (Necsulea and Kaessmann, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "66b4285f-f87b-4d78-a317-448215755e5c",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C25",
+      "claim": "The study sequenced only the poly-A+ fraction of the RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We sequenced only the poly-A+ fraction of the RNA, i.e., our focus is on coding and non-coding exons in processed RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the study design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "2596ea72-3a90-46d6-82dd-731802916061",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C26",
+      "claim": "Liver has the lowest overall read coverage among the three tissues analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the three tissues analyzed, liver has the lowest overall read coverage while brain and testis have similar overall levels (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the sequencing data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "d40fc634-95be-410c-bcb5-86599d675356",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C27",
+      "claim": "Brain and testis have similar overall levels of read coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the three tissues analyzed, liver has the lowest overall read coverage while brain and testis have similar overall levels (Figure 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the sequencing data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "f5ac1c98-0d6a-40e0-b78b-5317f0653d27",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C28",
+      "claim": "Combining data from all three tissues increases overall coverage similarly to triplicating read depth for one tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining the data from all three tissues or triplicating the read depth for one tissue (brain) increases the overall coverage in a similar way (Figure 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on comparison of sequencing strategies shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "bb80ddea-2ef2-4020-bcbd-21a01104cf60",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C29",
+      "claim": "The total coverage across all tissues and sequencing runs amounts to an average of 50.0 \u00b1 2.5% per taxon.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2F shows the total coverage across all tissues and all sequencing runs, which amounts to an average of 50.0 \u00b1 2.5% per taxon.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the combined sequencing data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "586735e9-e545-40d5-ab47-68369dc6614f",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C30",
+      "claim": "A very similar coverage is observed in all taxa for each tissue and in the combined set.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, for each tissue, as well as in this combined set, we observe a very similar coverage in all taxa, with only a slight increase in the low expressed fraction for the most distant comparisons (see also legend Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the coverage data across taxa.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "9d2b4fec-36c7-4a66-a764-730b7c4c9159",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C31",
+      "claim": "Between 1 and 7% of transcribed windows are unique to one taxon only.",
+      "claim_type": "EXPLICIT",
+      "source": "Between 1 and 7% of transcribed windows are unique to one taxon only, with the more distant taxa showing the higher percentages (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the analysis of taxon-specific transcripts shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "b461f2d8-d359-4619-a379-b7bf52116d25",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C32",
+      "claim": "More distant taxa show higher percentages of taxon-specific transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Between 1 and 7% of transcribed windows are unique to one taxon only, with the more distant taxa showing the higher percentages (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the analysis of taxon-specific transcripts shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "f838a437-6139-4b74-bc55-4fc50fdfaeb5",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C33",
+      "claim": "Most taxon-specific transcripts are lowly expressed (<10 reads per window).",
+      "claim_type": "EXPLICIT",
+      "source": "Most of these taxon-specific transcripts are lowly expressed (<10 reads per window), but the more distant taxa (MAT and APO in Figure 3I,J) show also some more highly expressed ones.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the expression level analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "f6240ab0-292e-48b6-9d22-cd50c97916f3",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C34",
+      "claim": "A total of 6566 windows with read counts >50 occur in a single taxon only.",
+      "claim_type": "EXPLICIT",
+      "source": "We find a total of 6566 windows with read counts >50 that occur in a single taxon only, mostly in the long branches leading to MAT (1638 windows) and APO (4485 windows), but some also between the most closely related taxa (43 windows for DOM, including populations; 38 windows for MUS, including populations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on quantitative analysis of highly expressed taxon-specific transcripts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "41d11675-6552-4a84-9534-52abe2bf946c",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C35",
+      "claim": "Approximately 18% of windows show transcripts shared across all taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 18% of windows show transcripts shared across all taxa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the analysis of conserved transcripts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "eed6d988-f980-4e6b-aa10-96d0fcf15424",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C36",
+      "claim": "Shared transcripts across all taxa include most of the very highly expressed ones (>100 reads per window).",
+      "claim_type": "EXPLICIT",
+      "source": "These include most of the very highly expressed ones (>100 reads per window), but also a fraction of the low expressed ones (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the expression level analysis of conserved transcripts shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "e8a079d1-f8b9-49da-9761-712ae3eeaddd",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C37",
+      "claim": "Shared transcripts are enriched in annotated genes, especially in exons of protein coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "They are also enriched in annotated genes, especially in exons of protein coding genes, but also in non-coding genes (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on annotation enrichment analysis shown in the figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "53ad1a6e-957c-4fed-bcf3-58c548fc15af",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C38",
+      "claim": "Windows sharing between 2 and 9 taxa constitute cumulatively the largest fraction (between 26 and 33% of whole genome coverage).",
+      "claim_type": "EXPLICIT",
+      "source": "This class constitutes cumulatively the largest fraction (between 26 and 33% of whole genome coverage - Figure 3), supporting the notion of a fast turnover of most of the transcribed regions between taxa.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the quantitative analysis of transcript sharing shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "afc7e7f8-3e33-4ad7-8287-7d64847eef51",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C39",
+      "claim": "The taxon-specific turnover of transcripts is reflected in a distance tree of shared coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "The taxon-specific turnover of transcripts is also reflected in a distance tree of shared coverage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the phylogenetic analysis of transcript sharing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "afca3ea6-f5ae-4ce7-84f6-69d730bf086f",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C40",
+      "claim": "Taxa that are phylogenetically closer to each other share more transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Taxa that are phylogenetically closer to each other share more transcripts, i.e. the tree topology mimics that of a phylogenetic tree based on molecular sequence divergence (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on comparison of transcript-based and molecular phylogenies shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "ef785a7c-e9f6-4229-b00c-d9e3cf68115b",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C41",
+      "claim": "The turnover of transcripts is not random, but time dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that the turnover of the transcripts is not random, but time dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the phylogenetic pattern of transcript sharing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "33d8b98a-4ad3-4d0d-96a7-89fb9df1977a",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C42",
+      "claim": "The relative branch lengths are much extended for the more closely related taxa compared to the molecular distances.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the relative branch lengths are much extended for the more closely related taxa compared to the molecular distances, implying that there is a particularly high turnover between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison of branch lengths in different phylogenies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "5f6ce253-7a75-4c04-841d-a80f3801fdbc",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C43",
+      "claim": "There is a particularly high turnover of transcripts between closely related taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the relative branch lengths are much extended for the more closely related taxa compared to the molecular distances, implying that there is a particularly high turnover between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the extended branch lengths in the transcript-based tree.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "aa42727c-5ae4-44b5-b621-276dfa612470",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C44",
+      "claim": "Singletons constitute about 2\u201312% of the common windows when assessed on a per sample basis.",
+      "claim_type": "EXPLICIT",
+      "source": "Depending on read depth and tissue, they constitute about 2\u201312% of the common windows when assessed on a per sample basis (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the singleton analysis shown in the figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "035cec04-ea9e-4da4-8e71-71a5777028ea",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C45",
+      "claim": "Most singletons in a given sample were re-detected in another tissue or another taxon.",
+      "claim_type": "EXPLICIT",
+      "source": "However, most of these singletons in a given sample were re-detected in another tissue or another taxon (Figure 4\u2014figure supplement 1), such that less than 2% are present in a given taxon (Figure 4\u2014figure supplement 1) and less than 7% cumulatively throughout the whole dataset (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the re-detection analysis of singletons shown in the figure supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "baffe566-dda7-422c-b20d-422e1bf67840",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C46",
+      "claim": "88% of singleton-based branch length is influenced by sampling variance.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that 88% of the branch length is influenced by sampling variance, while the remaining 12% still recover the expected topology (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the variance analysis of singleton reads shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "f6a4dc62-8c36-4678-b216-d177f51f92cc",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C47",
+      "claim": "At the 100 Mill read level, there is a noticeable effect of sampling variance, but this does not erase the underlying signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, at the 100 Mill read level, we have a noticeable effect of sampling variance, but this does not erase the underlying signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the sampling variance analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "7aeab489-297f-4589-98f2-fcee64141087",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C48",
+      "claim": "The addition of taxa leads to a further increase in transcriptomic coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of taxa indeed leads to a further increase in transcriptomic coverage, with a generalized linear model best describing the data as increasing in a logarithmic fashion (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the rarefaction analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "3c6494d4-5a8c-42a3-a45a-5796def228d9",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C49",
+      "claim": "Transcriptomic coverage increases in a logarithmic fashion with addition of taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of taxa indeed leads to a further increase in transcriptomic coverage, with a generalized linear model best describing the data as increasing in a logarithmic fashion (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on statistical modeling of the rarefaction data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "6b616865-84c7-4b65-82a1-b14beb371284",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C50",
+      "claim": "An asymptotic behavior is observed for increasing depth of sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we observe an asymptotic behavior of the curve for increasing depth of sequencing, with apparent saturation reached at 84.1%, close to the 83.2% that we have already achieved (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the sequencing depth analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "c68be039-08d7-4ca4-8411-588e6cee80cf",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C51",
+      "claim": "Sequencing depth saturation is reached at 84.1%.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we observe an asymptotic behavior of the curve for increasing depth of sequencing, with apparent saturation reached at 84.1%, close to the 83.2% that we have already achieved (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the saturation analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "0db1dfa6-51e3-4406-b711-86104c24367c",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C52",
+      "claim": "Random transcriptional noise or deficiencies in sampling low level transcripts are not major factors in the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "First, random transcriptional noise (technical or biological) or deficiencies in sampling low level transcripts should not be major factors in our analysis, since saturation with sequencing depth would not be possible under a singleton dominated regime.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the saturation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "b53c04b3-7931-498d-b345-ba9587f37404",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C53",
+      "claim": "Low level transcripts (including singletons) have detectable biological signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, low level transcripts (including singletons) have detectable biological signal (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the singleton analysis shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "11fc148c-ab1f-408e-aa31-09dc9e76e8d4",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C54",
+      "claim": "The data are consistent with evolutionary turnover leading to steady and almost unlimited transcriptional exploration of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the data are consistent with the above outlined ideas that the evolutionary turnover leads to steady \u2013 and almost unlimited \u2013 transcriptional exploration of the genome, when summed over multiple parallel evolutionary lineages and taxa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the rarefaction and saturation analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "3ffcc8d3-533d-46e5-8bcc-15482d58f53f",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C55",
+      "claim": "The maximum observed length of non-transcribed regions is 6 kb.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the maximum observed length of non-transcribed regions is 6 kb (Figure 6), suggesting that apparent transcriptional deserts in one taxon are readily accessible to transcription in other taxa, at least for the non-repetitive windows of the genome that are analyzed here.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on the analysis of non-transcribed regions shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "1e9f30ec-f8bc-4c11-a1b2-e9a480d080f6",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C56",
+      "claim": "Apparent transcriptional deserts in one taxon are readily accessible to transcription in other taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the maximum observed length of non-transcribed regions is 6 kb (Figure 6), suggesting that apparent transcriptional deserts in one taxon are readily accessible to transcription in other taxa, at least for the non-repetitive windows of the genome that are analyzed here.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the small maximum size of non-transcribed regions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "2c702f4b-3f2c-4035-bb9e-73979e97b9b1",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C57",
+      "claim": "Many additional transcripts have sufficient stability to reflect a phylogenetic distance distribution that mimics the phylogeny of the taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we were able to trace the turnover of these extra transcripts. Our data suggest that many have sufficient stability to reflect a phylogenetic distance distribution that mimics the phylogeny of the taxa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the phylogenetic analysis of transcript sharing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "0006a5c6-27ba-4139-bbb9-5e484d17b466",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C58",
+      "claim": "Additional transcripts should not simply be considered as noise.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, they should not simply be considered as noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the phylogenetic signal in transcript turnover.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "57f0af85-7119-41ec-87f5-c44b1e83ac77",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C59",
+      "claim": "The lifetime of additional transcripts should be sufficient to expose them to evolutionary testing.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, their lifetime should be sufficient to expose them to evolutionary testing and in this way they become a substrate for de novo evolution of genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the stability and phylogenetic signal of transcripts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "3a0f21f2-b65c-47d2-aa84-4dfed0fc90c0",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C60",
+      "claim": "Additional transcripts become a substrate for de novo evolution of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, their lifetime should be sufficient to expose them to evolutionary testing and in this way they become a substrate for de novo evolution of genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on the properties of the transcripts.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "5fae5554-bc67-4cac-b074-f076eae64d5a",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C61",
+      "claim": "Transcripts have high turnover between taxa if they do not acquire a function.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, they appear to have only a limited lifetime in case they do not acquire a function, i.e. there is also high turnover of the transcribed regions between taxa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observed turnover patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "1517f2ed-10ef-4154-ab71-789fa60d6f44",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C62",
+      "claim": "Within a timespan of a few million years practically the whole genome is covered by transcription at some point in time.",
+      "claim_type": "EXPLICIT",
+      "source": "This turnover has as a consequence that within a timespan of a few million years practically the whole genome is covered by transcription at some point in time, i.e. no major transcript-free islands exist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the turnover and rarefaction analyses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "7b7859c2-d540-43eb-b296-0aad6ca35194",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C63",
+      "claim": "If more tissues and life stages were sampled, one would expect an even higher coverage of the genome within a given taxon.",
+      "claim_type": "EXPLICIT",
+      "source": "If more tissues and more life stages were sampled, one would expect an even higher coverage of the genome within a given taxon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the current sampling.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "ec243160-1b01-484c-9d42-51c43bd4bd37",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C64",
+      "claim": "The turnover of transcribed regions between taxa would also apply to other tissues and stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, we expect that the turnover of transcribed regions between taxa would also apply to the other tissues and stages, i.e. evolutionary testing of new transcripts would relate to all tissues and stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim extrapolating from the current findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "026a299c-7934-4fe9-b321-a6a22983de02",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C65",
+      "claim": "ENCODE projects have confirmed pervasive transcription at the single-taxon level.",
+      "claim_type": "EXPLICIT",
+      "source": "Such deep analyses have been done in the ENCODE projects (http://www.genome.gov/10005107) and they have confirmed pervasive transcription (Clark et al., 2011; Hangauer et al., 2013; Kellis et al., 2014) at the single-taxon level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to ENCODE project publications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "05f8c753-843b-4f57-ba03-0231beceffa0",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C66",
+      "claim": "The set of conserved genes across taxa may maintain expression levels across larger evolutionary distances.",
+      "claim_type": "EXPLICIT",
+      "source": "This turnover is contrasted by the set of conserved genes across taxa, for which even the expression levels may be maintained across larger evolutionary distances (Pervouchine et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a study on conserved gene expression.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "dec4c316-2986-4391-9fdf-55ac92d35b87",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C67",
+      "claim": "There is a particularly large number of lineage-specific transcripts among the most closely related taxa.",
+      "claim_type": "EXPLICIT",
+      "source": "We see a particularly large number of lineage-specific transcripts among the most closely related taxa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the analysis of taxon-specific transcripts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "223806ab-2987-42d1-aec5-8d3d41d08088",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C68",
+      "claim": "At very short evolutionary distances (thousands of years) there is an even higher turnover of transcripts than at longer time frames (millions of years).",
+      "claim_type": "EXPLICIT",
+      "source": "Although this is partially influenced by sampling variance of low expressed transcripts (Figure 4C), this suggests that at the very short evolutionary distances (thousands of years) there is an even higher turnover of transcripts than at the longer time frames (millions of years).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the branch length patterns in phylogenetic trees.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "97a6c0d3-30c2-4322-9588-9200dd14cd07",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C69",
+      "claim": "Weak selection could act against many newly arising transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a pattern of unequal rates suggests that weak selection could act against many newly arising transcripts, such that they can exist for a short time at a population scale, but not over an extended time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the observed turnover patterns.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "ae0c7df0-b603-456b-b288-4f382354bd8f",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C70",
+      "claim": "The presence of new transcripts will be polymorphic at the population level.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we expect that the presence of such transcripts will be polymorphic at the population level, similar as it has been shown in Drosophila (Zhao et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim supported by analogy to Drosophila studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "f2769d1a-ae4a-4948-bbce-4ad08cca617e",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C71",
+      "claim": "A fraction of new transcripts interacts with other genes and cellular processes.",
+      "claim_type": "EXPLICIT",
+      "source": "We expect that a fraction of new transcripts interacts with other genes and cellular processes, either via providing a positive function or via being slightly deleterious.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about transcript function.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "84af5408-364e-4d0a-8e1e-6a43e5ac4d25",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C72",
+      "claim": "Many RNAs initially classified as non-coding can be associated to ribosomes and are likely translated.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis of ribosome profiling data has shown that many RNAs that were initially classified as non-coding can be associated to ribosomes, i.e. are likely translated (Wilson and Masel, 2011; Carvunis et al., 2012; Ruiz-Orera et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to ribosome profiling studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "e5659e74-4759-4f16-92ca-613200137465",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C73",
+      "claim": "De novo genes frequently act first as RNA and acquire open reading frames only at a later stage.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, when tracing the origin of de novo genes, one finds frequently that they act first as RNA and acquire open reading frames only at a later stage (Cai et al., 2008; Kapranov and St. Laurent, 2012; Reinhardt et al., 2013 - see discussion in Schl\u00f6tterer, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on de novo gene evolution.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "5fa969c2-639a-4c0f-b7fa-58099feedc94",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C74",
+      "claim": "Some de novo evolved genes in Drosophila have assumed essential functions such that knockouts are lethal.",
+      "claim_type": "EXPLICIT",
+      "source": "For some of the de novo evolved genes in Drosophila it has been shown that they have assumed essential functions for the organism, such that knockouts of them are lethal (Chen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a Drosophila study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "28a48c23-02be-42c3-b3a6-0232882ab4f8",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C75",
+      "claim": "The de novo evolution process has been active throughout evolutionary history.",
+      "claim_type": "EXPLICIT",
+      "source": "Global analyses of new gene emergence trends suggest that the de novo evolution process has been active throughout the evolutionary history (Neme and Tautz, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a global analysis study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "153af37d-5a3e-4501-ab9e-9a8ef737e60f",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C76",
+      "claim": "The possibility of a transition from new transcript emergence over acquisition of reading frames towards assuming essential genetic functions is well documented.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the possibility of a transition from new transcript emergence over acquisition of reading frames towards assuming essential genetic functions is well documented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on synthesis of cited literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "0de97576-19af-4e04-9eb6-ce0cae974d0f",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C77",
+      "claim": "The idea that many de novo transcripts are slightly deleterious is concordant with cellular processes maintaining a balance between RNA transcription and degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "The idea that many de novo transcripts are slightly deleterious is concordant with the fact that various cellular processes maintain a balance between RNA transcription and degradation (Houseley and Tollervey, 2009; Jensen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on RNA homeostasis.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "ea619a21-4eb4-4dd6-909a-910a37a064fc",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C78",
+      "claim": "Several molecular pathways exist that degrade excess transcripts in yeast and mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast and mammals it has been shown that several molecular pathways exist that degrade excess transcripts, in particular the ones from bidirectional promoter activity (Jensen et al., 2013; Wu and Sharp, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on transcript degradation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "01f63f66-f054-48c2-9413-83b99d22a62f",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C79",
+      "claim": "Low levels of transcripts found by deep sequencing could alternatively be due to fast targeting by a degradation machinery rather than low transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the fact that many of the transcripts found by deep sequencing occur only at low levels does not necessarily imply a low level of transcription, but could alternatively be due to fast targeting by a degradation machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the interpretation of low-level transcripts.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "2b7b0c73-880c-4f20-9281-b67dcd5d89ff",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C80",
+      "claim": "Emergence, functionalization and decay of gene functions should be seen as an evolutionary life cycle of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results provide an evolutionary dynamics perspective where emergence, functionalization and decay of gene functions should be seen as an evolutionary life cycle of genes (Neme and Tautz, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual claim based on the study results and cited work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "ee4ec759-ee0c-4a32-b10e-aead579ca288",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C81",
+      "claim": "De novo gene birth should be considered as an inherent property of the transcriptional apparatus.",
+      "claim_type": "EXPLICIT",
+      "source": "De novo gene birth should no longer be considered as the result of unlikely circumstances, but rather as an inherent property of the transcriptional apparatus and thus a mechanism for testing and revealing hidden adaptive potential in genomes (Brosius, 2005; Masel and Siegal, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual claim based on the study results and cited work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "ac75425c-158b-4e6c-b0f3-086ae63b2490",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C82",
+      "claim": "Any non-genic part of the genome has the possibility to become useful at some time.",
+      "claim_type": "EXPLICIT",
+      "source": "Within this evolutionary perspective, any non-genic part of the genome has the possibility to become useful at some time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual claim based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "d00d6457-9e40-4715-9ce7-c1b947419e1c",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C83",
+      "claim": "The two European populations of Mus musculus domesticus diverged about 3,000 years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "The youngest divergence point sampled, at about 3,000 years, corresponds to the split between two European populations of Mus musculus domesticus(Cucchi et al., 2005) one from France (Massif Central = DOMMC) and one from Germany (Cologne-Bonn area = DOMCB) (Ihle et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to studies on mouse population history.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "ddd6c178-b4af-4101-8739-a917eec9bca8",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C84",
+      "claim": "European M. m. domesticus populations diverged from an ancestral population in Iran about 12,000 years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "These European populations in turn have diverged from an ancestral M. m. domesticus population in Iran (Ahvaz = DOMAH) about 12,000 years ago (Hardouin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a study on mouse population history.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "2ef08cd8-4adb-4af2-bff6-b4e251882e40",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C85",
+      "claim": "M. m. domesticus has diverged from M. m. musculus and M. m. castaneus about 0.4 to 0.5 million years ago.",
+      "claim_type": "EXPLICIT",
+      "source": "M. m. domesticus has diverged from M. m. musculus and Mus musculus castaneus about 0.4 to 0.5 million years ago, with a subsequent divergence, not long after, between M. m. musculus and M. m. castaneus (Suzuki et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a phylogenetic study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "ed2ea607-3b14-47ce-acf8-98065ac34c71",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C86",
+      "claim": "Mus spicilegus has an estimated divergence of 1.2 million years.",
+      "claim_type": "EXPLICIT",
+      "source": "To account for longer divergence times, we included Mus spicilegus (SPI; estimated divergence of 1.2 million years); Mus spretus (SPR; estimated divergence of 1.7 million years)(Suzuki et al., 2013); Mus matteyii (MAT; subgenus Nannomys), the North African miniature mouse (estimated divergence of 6.6 million years) (Catzeflis and Denys, 1992; Lecompte et al., 2008), and Apodemus uralensis, the Ural field mouse (APO; estimated divergence of 10.6 million years) (Lecompte et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to phylogenetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "281ec95a-77df-41e1-a75b-6fc959dce088",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C87",
+      "claim": "Mus spretus has an estimated divergence of 1.7 million years.",
+      "claim_type": "EXPLICIT",
+      "source": "To account for longer divergence times, we included Mus spicilegus (SPI; estimated divergence of 1.2 million years); Mus spretus (SPR; estimated divergence of 1.7 million years)(Suzuki et al., 2013); Mus matteyii (MAT; subgenus Nannomys), the North African miniature mouse (estimated divergence of 6.6 million years) (Catzeflis and Denys, 1992; Lecompte et al., 2008), and Apodemus uralensis, the Ural field mouse (APO; estimated divergence of 10.6 million years) (Lecompte et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to phylogenetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "16a6eb03-4882-4bb5-9bf1-2e2c4ac44527",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C88",
+      "claim": "Mus mattheyi has an estimated divergence of 6.6 million years.",
+      "claim_type": "EXPLICIT",
+      "source": "To account for longer divergence times, we included Mus spicilegus (SPI; estimated divergence of 1.2 million years); Mus spretus (SPR; estimated divergence of 1.7 million years)(Suzuki et al., 2013); Mus matteyii (MAT; subgenus Nannomys), the North African miniature mouse (estimated divergence of 6.6 million years) (Catzeflis and Denys, 1992; Lecompte et al., 2008), and Apodemus uralensis, the Ural field mouse (APO; estimated divergence of 10.6 million years) (Lecompte et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to phylogenetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "c701cd92-d564-4f66-a366-43a7680ffce1",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C89",
+      "claim": "Apodemus uralensis has an estimated divergence of 10.6 million years.",
+      "claim_type": "EXPLICIT",
+      "source": "To account for longer divergence times, we included Mus spicilegus (SPI; estimated divergence of 1.2 million years); Mus spretus (SPR; estimated divergence of 1.7 million years)(Suzuki et al., 2013); Mus matteyii (MAT; subgenus Nannomys), the North African miniature mouse (estimated divergence of 6.6 million years) (Catzeflis and Denys, 1992; Lecompte et al., 2008), and Apodemus uralensis, the Ural field mouse (APO; estimated divergence of 10.6 million years) (Lecompte et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to phylogenetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "302d2441-bc89-4a4a-a46e-966514388750",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "claim_id": "C90",
+      "claim": "NextGenMap performs extremely well with divergences of over 10% compared to other standard mapping software.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptome and genome sequencing reads were aligned against the mm10 version of the mouse reference genome (Waterston et al., 2002) from UCSC (Karolchik et al., 2014) using NextGenMap which performs extremely well with divergences of over 10% compared to other standard mapping software (Sedlazeck et al., 2013), as confirmed by our own simulations (Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation and validation simulations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "363ced4d-7191-4785-9f4b-3661b6919c1e",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Transcriptome coverage saturates within a taxon at a given sequencing depth (~50% per taxon on average), but continues to extend when comparing between taxa. This pattern is consistent across tissues (liver, brain, testis) and sequencing depths, with liver showing lowest coverage and brain/testis showing similar levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C26-C30 are well-supported by the RNA-seq data presented in Figure 2. The saturation within taxa and extension across taxa is demonstrated through systematic sequencing experiments across 10 taxa and multiple tissues. The quantitative measurements (50.0 \u00b1 2.5% coverage per taxon) and tissue-specific patterns are directly derived from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "e86b6814-b814-45c5-8d54-5c1deb3a3fed",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "There is high turnover of transcriptional states between taxa, with 1-7% of transcribed windows being taxon-specific (higher in more distant taxa), and 26-33% of windows showing intermediate sharing patterns (2-9 taxa). Most taxon-specific transcripts are lowly expressed, though distant taxa show some highly expressed taxon-specific transcripts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C31-C34, C38, C67 are supported by the quantitative analysis shown in Figure 3. The data demonstrate clear patterns of transcript turnover with phylogenetic distance, with specific percentages and expression levels documented. The finding of 6566 highly expressed (>50 reads) taxon-specific windows provides strong evidence for biological signal rather than noise.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "0d61215f-5ccf-4f08-832f-08fadabedc84",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Approximately 18% of transcribed windows are shared across all 10 taxa, including most highly expressed transcripts (>100 reads per window) and some low-expressed ones. These conserved transcripts are enriched in annotated genes, especially protein-coding exons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 are supported by the data in Figure 3 and Figure 3\u2014figure supplement 2. The quantification of conserved transcripts and their enrichment in annotated genes provides clear evidence for a core set of stable transcripts across evolutionary time. The expression level distribution and annotation enrichment analyses strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "4f871e88-3ef4-4830-8d25-74558b9accd4",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Transcript sharing patterns reflect phylogenetic relationships, with closer taxa sharing more transcripts. However, branch lengths are extended for closely related taxa compared to molecular distances, suggesting particularly high turnover at short evolutionary timescales (thousands of years vs. millions of years).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C43, C68 are supported by the phylogenetic analyses in Figure 4A-B. The tree topology based on transcript sharing mimics the molecular phylogeny, demonstrating time-dependent turnover. The extended branch lengths for closely related taxa are clearly visible in the comparison, though C68 acknowledges partial influence from sampling variance (Figure 4C).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "5528c595-cc21-426b-a2d7-a05b2721aad5",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Singleton transcripts (single-read coverage) constitute 2-12% of windows per sample, but most are re-detected in other tissues or taxa. Analysis of sampling variance shows that 88% of singleton-based branch length is influenced by sampling variance, but 12% recovers the expected phylogenetic topology, indicating biological signal exists even in low-level transcripts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47, C52-C53 are supported by the singleton analysis in Figure 4\u2014figure supplements 1-2 and Figure 4C. The variance partitioning analysis using replicate subsampling provides rigorous quantification of sampling effects. The finding that biological signal persists despite sampling variance strengthens the interpretation that low-level transcripts are not merely technical noise.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "05053abc-fed4-4f22-9950-e45ab3486098",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Transcriptomic coverage increases logarithmically with addition of taxa (rarefaction analysis), while sequencing depth shows asymptotic saturation at ~84%. This pattern is consistent with evolutionary turnover leading to steady transcriptional exploration of the genome across taxa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51, C54 are supported by the rarefaction and saturation analyses in Figure 5. The statistical modeling (generalized linear model for taxa addition, asymptotic model for sequencing depth) with Bayes factors provides strong quantitative support. The contrasting behaviors between taxonomic sampling and sequencing depth directly support the evolutionary turnover hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "f15e874e-5397-4f47-890f-ceca45688b95",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "No major transcript-free islands exist across evolutionary time. The maximum observed length of non-transcribed regions is 6 kb, suggesting that within a timespan of a few million years, practically the whole genome is covered by transcription at some point.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C55-C56, C62 are supported by the analysis of non-transcribed regions in Figure 6. The 6 kb maximum size of non-transcribed regions, combined with the rarefaction analysis showing continued increase in coverage with taxa addition, provides strong evidence against persistent transcriptional deserts. However, this applies only to the non-repetitive 71.7% of the genome analyzed (C22-C23).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "01ec8966-77f0-415c-9b36-532bb3b896f3",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The entire genome can be transcribed into poly-adenylated RNA when viewed at an evolutionary time scale, and any part of the non-coding genome can potentially become subject to evolutionary functionalization via de novo gene evolution within relatively short evolutionary time spans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C82 represent the main conclusions of the study, supported by the combined evidence from transcript turnover (C4), lack of transcript-free islands (C5, C55-C56), and logarithmic increase in coverage with taxa (C48-C49). However, these conclusions are limited to the 71.7% non-repetitive common genome analyzed (C22-C23) and represent inferences from the data rather than direct observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "0e026593-1bfb-4008-ae40-d496a833be97",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Additional transcripts beyond annotated genes have sufficient stability to reflect phylogenetic relationships and should not be considered noise. Their lifetime is sufficient for evolutionary testing, making them substrates for de novo gene evolution, though they show high turnover if they do not acquire function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C57-C61 represent interpretations and inferences from the phylogenetic signal in transcript turnover. While C57-C58 are reasonably supported by the phylogenetic tree analysis (Figure 4), claims C59-C60 about evolutionary testing and substrate for de novo evolution are speculative extrapolations. No direct functional evidence is provided, and the connection between transcript stability and evolutionary potential requires additional experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "85d11dfa-0213-415b-b00e-7b6a1595425f",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study samples span 10 million years of divergence (6% nucleotide difference for most distant comparisons). The common genome analyzed represents 71.7% of the reference genome, excluding highly repetitive regions where unique mapping is not possible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 describe the study design and methodological constraints. These are well-supported by the phylogenetic sampling (Figure 1) and genome mapping analysis (Figure 1\u2014figure supplements 1-2). The exclusion of ~30% of the genome is a significant limitation that should be considered when interpreting the main conclusions about genome-wide transcription.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "e29f5ca2-0cc2-42ac-8402-94e6b35c7e45",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "NextGenMap performs extremely well with divergences over 10% compared to other standard mapping software, as confirmed by the authors' simulations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C90 is supported by citation to Sedlazeck et al. 2013 and validation through the authors' own simulations (Appendix 1). This methodological choice is critical for the study given the phylogenetic distances involved (up to 6% divergence, C21). The validation simulations strengthen confidence in the mapping approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "84517d72-2c13-4ac1-a7fb-b44b0ff86d68",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors speculate that sampling more tissues and life stages would increase coverage within taxa, that turnover patterns would apply to other tissues/stages, that weak selection acts against many new transcripts, that new transcripts are polymorphic at the population level, and that low transcript levels may reflect degradation rather than low transcription.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C64, C69-C71, C79 are explicitly speculative (marked as SPECULATION in evidence_type). While some are reasonable extrapolations from the data (C63-C64) or supported by analogy to other systems (C70, citing Drosophila), they lack direct experimental support in this study. These represent hypotheses for future work rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "eb1d62e7-eb73-451f-8fa2-8052a5845ab7",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The introduction and discussion cite extensive prior work on pervasive transcription, lncRNAs, de novo gene evolution, transcript conservation, and RNA degradation pathways to contextualize the current findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C19, C24, C65-C66, C72-C78 represent background knowledge and prior work, all supported by appropriate citations. These establish the scientific context for the study and are generally well-documented in the literature. The authors appropriately distinguish between established knowledge and their novel contributions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "e16cf62b-726d-4243-bc41-e4ae905fff07",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors propose a conceptual framework where emergence, functionalization, and decay of gene functions should be seen as an evolutionary life cycle, and de novo gene birth should be considered an inherent property of the transcriptional apparatus rather than unlikely circumstances.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C81 represent the conceptual synthesis of the study's findings with prior work. These are supported by the combination of data presented (transcript turnover, lack of transcript-free islands, phylogenetic patterns) and cited literature on de novo gene evolution. While conceptual rather than directly experimental, these conclusions are reasonable interpretations of the evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "f9dc5266-d8ca-444c-a371-48b96fb9e2ba",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The phylogenetic relationships and divergence times of the sampled taxa are established based on prior studies, ranging from 3,000 years (European M. m. domesticus populations) to 10.6 million years (Apodemus uralensis).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C89 describe the phylogenetic sampling design, all supported by appropriate citations to population genetics and phylogenetic studies. These establish the temporal framework for interpreting transcript turnover patterns. The divergence time estimates are taken from the literature rather than calculated de novo, which is appropriate for this study's design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    },
+    {
+      "id": "41b483cd-7933-4c3d-886f-af4699c35900",
+      "content_id": "e72e9104-272e-448c-aa14-cd9ad772b0ff",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study sequenced only the poly-A+ fraction of RNA, focusing on coding and non-coding exons in processed RNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C25 is a straightforward methodological statement about the study design. This is an important limitation as it excludes non-polyadenylated transcripts, which could affect the completeness of the transcriptome coverage assessment. The focus on poly-A+ RNA is clearly stated and appropriate for the study's goals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:37:06.491724Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1ec35e84-49f3-4a50-bf3a-02295afc6f47",
+      "result_id": "363ced4d-7191-4785-9f4b-3661b6919c1e"
+    },
+    {
+      "claim_id": "0e4c8aba-e7e6-498a-a799-119be8e847d3",
+      "result_id": "363ced4d-7191-4785-9f4b-3661b6919c1e"
+    },
+    {
+      "claim_id": "2596ea72-3a90-46d6-82dd-731802916061",
+      "result_id": "363ced4d-7191-4785-9f4b-3661b6919c1e"
+    },
+    {
+      "claim_id": "d40fc634-95be-410c-bcb5-86599d675356",
+      "result_id": "363ced4d-7191-4785-9f4b-3661b6919c1e"
+    },
+    {
+      "claim_id": "f5ac1c98-0d6a-40e0-b78b-5317f0653d27",
+      "result_id": "363ced4d-7191-4785-9f4b-3661b6919c1e"
+    },
+    {
+      "claim_id": "bb80ddea-2ef2-4020-bcbd-21a01104cf60",
+      "result_id": "363ced4d-7191-4785-9f4b-3661b6919c1e"
+    },
+    {
+      "claim_id": "586735e9-e545-40d5-ab47-68369dc6614f",
+      "result_id": "363ced4d-7191-4785-9f4b-3661b6919c1e"
+    },
+    {
+      "claim_id": "280fc79e-0f34-4fcc-a748-f36b433b97a1",
+      "result_id": "e86b6814-b814-45c5-8d54-5c1deb3a3fed"
+    },
+    {
+      "claim_id": "9d2b4fec-36c7-4a66-a764-730b7c4c9159",
+      "result_id": "e86b6814-b814-45c5-8d54-5c1deb3a3fed"
+    },
+    {
+      "claim_id": "b461f2d8-d359-4619-a379-b7bf52116d25",
+      "result_id": "e86b6814-b814-45c5-8d54-5c1deb3a3fed"
+    },
+    {
+      "claim_id": "f838a437-6139-4b74-bc55-4fc50fdfaeb5",
+      "result_id": "e86b6814-b814-45c5-8d54-5c1deb3a3fed"
+    },
+    {
+      "claim_id": "f6240ab0-292e-48b6-9d22-cd50c97916f3",
+      "result_id": "e86b6814-b814-45c5-8d54-5c1deb3a3fed"
+    },
+    {
+      "claim_id": "53ad1a6e-957c-4fed-bcf3-58c548fc15af",
+      "result_id": "e86b6814-b814-45c5-8d54-5c1deb3a3fed"
+    },
+    {
+      "claim_id": "dec4c316-2986-4391-9fdf-55ac92d35b87",
+      "result_id": "e86b6814-b814-45c5-8d54-5c1deb3a3fed"
+    },
+    {
+      "claim_id": "41d11675-6552-4a84-9534-52abe2bf946c",
+      "result_id": "0d61215f-5ccf-4f08-832f-08fadabedc84"
+    },
+    {
+      "claim_id": "eed6d988-f980-4e6b-aa10-96d0fcf15424",
+      "result_id": "0d61215f-5ccf-4f08-832f-08fadabedc84"
+    },
+    {
+      "claim_id": "e8a079d1-f8b9-49da-9761-712ae3eeaddd",
+      "result_id": "0d61215f-5ccf-4f08-832f-08fadabedc84"
+    },
+    {
+      "claim_id": "afc7e7f8-3e33-4ad7-8287-7d64847eef51",
+      "result_id": "4f871e88-3ef4-4830-8d25-74558b9accd4"
+    },
+    {
+      "claim_id": "afca3ea6-f5ae-4ce7-84f6-69d730bf086f",
+      "result_id": "4f871e88-3ef4-4830-8d25-74558b9accd4"
+    },
+    {
+      "claim_id": "ef785a7c-e9f6-4229-b00c-d9e3cf68115b",
+      "result_id": "4f871e88-3ef4-4830-8d25-74558b9accd4"
+    },
+    {
+      "claim_id": "33d8b98a-4ad3-4d0d-96a7-89fb9df1977a",
+      "result_id": "4f871e88-3ef4-4830-8d25-74558b9accd4"
+    },
+    {
+      "claim_id": "5f6ce253-7a75-4c04-841d-a80f3801fdbc",
+      "result_id": "4f871e88-3ef4-4830-8d25-74558b9accd4"
+    },
+    {
+      "claim_id": "223806ab-2987-42d1-aec5-8d3d41d08088",
+      "result_id": "4f871e88-3ef4-4830-8d25-74558b9accd4"
+    },
+    {
+      "claim_id": "aa42727c-5ae4-44b5-b621-276dfa612470",
+      "result_id": "5528c595-cc21-426b-a2d7-a05b2721aad5"
+    },
+    {
+      "claim_id": "035cec04-ea9e-4da4-8e71-71a5777028ea",
+      "result_id": "5528c595-cc21-426b-a2d7-a05b2721aad5"
+    },
+    {
+      "claim_id": "baffe566-dda7-422c-b20d-422e1bf67840",
+      "result_id": "5528c595-cc21-426b-a2d7-a05b2721aad5"
+    },
+    {
+      "claim_id": "f6a4dc62-8c36-4678-b216-d177f51f92cc",
+      "result_id": "5528c595-cc21-426b-a2d7-a05b2721aad5"
+    },
+    {
+      "claim_id": "0db1dfa6-51e3-4406-b711-86104c24367c",
+      "result_id": "5528c595-cc21-426b-a2d7-a05b2721aad5"
+    },
+    {
+      "claim_id": "b53c04b3-7931-498d-b345-ba9587f37404",
+      "result_id": "5528c595-cc21-426b-a2d7-a05b2721aad5"
+    },
+    {
+      "claim_id": "7aeab489-297f-4589-98f2-fcee64141087",
+      "result_id": "05053abc-fed4-4f22-9950-e45ab3486098"
+    },
+    {
+      "claim_id": "3c6494d4-5a8c-42a3-a45a-5796def228d9",
+      "result_id": "05053abc-fed4-4f22-9950-e45ab3486098"
+    },
+    {
+      "claim_id": "6b616865-84c7-4b65-82a1-b14beb371284",
+      "result_id": "05053abc-fed4-4f22-9950-e45ab3486098"
+    },
+    {
+      "claim_id": "c68be039-08d7-4ca4-8411-588e6cee80cf",
+      "result_id": "05053abc-fed4-4f22-9950-e45ab3486098"
+    },
+    {
+      "claim_id": "11fc148c-ab1f-408e-aa31-09dc9e76e8d4",
+      "result_id": "05053abc-fed4-4f22-9950-e45ab3486098"
+    },
+    {
+      "claim_id": "5dde9f59-3638-4060-a118-facab2b41c98",
+      "result_id": "f15e874e-5397-4f47-890f-ceca45688b95"
+    },
+    {
+      "claim_id": "3ffcc8d3-533d-46e5-8bcc-15482d58f53f",
+      "result_id": "f15e874e-5397-4f47-890f-ceca45688b95"
+    },
+    {
+      "claim_id": "1e9f30ec-f8bc-4c11-a1b2-e9a480d080f6",
+      "result_id": "f15e874e-5397-4f47-890f-ceca45688b95"
+    },
+    {
+      "claim_id": "1517f2ed-10ef-4154-ab71-789fa60d6f44",
+      "result_id": "f15e874e-5397-4f47-890f-ceca45688b95"
+    },
+    {
+      "claim_id": "379d2b23-32f4-4d73-87d1-eee39f98ebdb",
+      "result_id": "01ec8966-77f0-415c-9b36-532bb3b896f3"
+    },
+    {
+      "claim_id": "a46269c0-1006-4368-a776-40d61acc4059",
+      "result_id": "01ec8966-77f0-415c-9b36-532bb3b896f3"
+    },
+    {
+      "claim_id": "ac75425c-158b-4e6c-b0f3-086ae63b2490",
+      "result_id": "01ec8966-77f0-415c-9b36-532bb3b896f3"
+    },
+    {
+      "claim_id": "2c702f4b-3f2c-4035-bb9e-73979e97b9b1",
+      "result_id": "0e026593-1bfb-4008-ae40-d496a833be97"
+    },
+    {
+      "claim_id": "0006a5c6-27ba-4139-bbb9-5e484d17b466",
+      "result_id": "0e026593-1bfb-4008-ae40-d496a833be97"
+    },
+    {
+      "claim_id": "57f0af85-7119-41ec-87f5-c44b1e83ac77",
+      "result_id": "0e026593-1bfb-4008-ae40-d496a833be97"
+    },
+    {
+      "claim_id": "3a0f21f2-b65c-47d2-aa84-4dfed0fc90c0",
+      "result_id": "0e026593-1bfb-4008-ae40-d496a833be97"
+    },
+    {
+      "claim_id": "5fae5554-bc67-4cac-b074-f076eae64d5a",
+      "result_id": "0e026593-1bfb-4008-ae40-d496a833be97"
+    },
+    {
+      "claim_id": "ecf541ed-9103-4355-9c4c-0ef2a914732b",
+      "result_id": "85d11dfa-0213-415b-b00e-7b6a1595425f"
+    },
+    {
+      "claim_id": "c492d65e-12ab-456b-b8b5-2bf87a9c41bc",
+      "result_id": "85d11dfa-0213-415b-b00e-7b6a1595425f"
+    },
+    {
+      "claim_id": "2aa08b75-b6d1-4bdc-b2e1-bfaba92b260d",
+      "result_id": "85d11dfa-0213-415b-b00e-7b6a1595425f"
+    },
+    {
+      "claim_id": "12fb9c19-febb-42bb-a38e-128373aa187b",
+      "result_id": "85d11dfa-0213-415b-b00e-7b6a1595425f"
+    },
+    {
+      "claim_id": "302d2441-bc89-4a4a-a46e-966514388750",
+      "result_id": "e29f5ca2-0cc2-42ac-8402-94e6b35c7e45"
+    },
+    {
+      "claim_id": "7b7859c2-d540-43eb-b296-0aad6ca35194",
+      "result_id": "84517d72-2c13-4ac1-a7fb-b44b0ff86d68"
+    },
+    {
+      "claim_id": "ec243160-1b01-484c-9d42-51c43bd4bd37",
+      "result_id": "84517d72-2c13-4ac1-a7fb-b44b0ff86d68"
+    },
+    {
+      "claim_id": "97a6c0d3-30c2-4322-9588-9200dd14cd07",
+      "result_id": "84517d72-2c13-4ac1-a7fb-b44b0ff86d68"
+    },
+    {
+      "claim_id": "ae0c7df0-b603-456b-b288-4f382354bd8f",
+      "result_id": "84517d72-2c13-4ac1-a7fb-b44b0ff86d68"
+    },
+    {
+      "claim_id": "f2769d1a-ae4a-4948-bbce-4ad08cca617e",
+      "result_id": "84517d72-2c13-4ac1-a7fb-b44b0ff86d68"
+    },
+    {
+      "claim_id": "01f63f66-f054-48c2-9413-83b99d22a62f",
+      "result_id": "84517d72-2c13-4ac1-a7fb-b44b0ff86d68"
+    },
+    {
+      "claim_id": "bb96f8c0-a675-4ed6-b6f6-65ed7232e146",
+      "result_id": "eb1d62e7-eb73-451f-8fa2-8052a5845ab7"
+    },
+    {
+      "claim_id": "7d1a5088-381c-4c93-b98b-1ee7692fc832",
+      "result_id": "eb1d62e7-eb73-451f-8fa2-8052a5845ab7"
+    },
+    {
+      "claim_id": "81a6d337-8f0a-45fb-aa13-42bde3decf4e",
+      "result_id": "eb1d62e7-eb73-451f-8fa2-8052a5845ab7"
+    },
+    {
+      "claim_id": "f26c72d1-5d41-4d03-9b43-00a522690f37",
+      "result_id": "eb1d62e7-eb73-451f-8fa2-8052a5845ab7"
+    },
+    {
+      "claim_id": "dfeff712-305b-4a3d-bd6e-3e0e3ddb7516",
+      "result_id": "eb1d62e7-eb73-451f-8fa2-8052a5845ab7"
+    },
+    {
+      "claim_id": "11827bce-1cf7-4caf-842a-5db1669ee97d",
+      "result_id": "eb1d62e7-eb73-451f-8fa2-8052a5845ab7"
+    },
+    {
+      "claim_id": "c338b61f-56aa-4168-9469-b34f8c2bc8b4",
+      "result_id": "eb1d62e7-eb73-451f-8fa2-8052a5845ab7"
+    },
+    {
+      "claim_id": "df390f41-4ead-44f5-95f0-24e5e46c266c",
+      "result_id": "eb1d62e7-eb73-451f-8fa2-8052a5845ab7"
+    },
+    {
+      "claim_id": "c2413d52-76fc-4a13-8cab-8322081dc55d",
+      "result_id": "eb1d62e7-eb73-451f-8fa2-8052a5845ab7"
+    },
+    {
+      "claim_id": "a905256e-4e99-4596-9967-50078005763b",
+      "result_id": "eb1d62e7-eb73-451f-8fa2-8052a5845ab7"
+    },
+    {
+      "claim_id": "f9fd583b-13d7-4a30-b604-3c5fc8386ff6",
+      "result_id": "eb1d62e7-eb73-451f-8fa2-8052a5845ab7"
+    },
+    {
+      "claim_id": "26128099-1827-47af-bf64-ba2b9681f1ad",
+      "result_id": "eb1d62e7-eb73-451f-8fa2-8052a5845ab7"
+    },
+    {
+      "claim_id": "418d32db-06ed-400a-90e3-934463bcba17",
+      "result_id": "eb1d62e7-eb73-451f-8fa2-8052a5845ab7"
+    },
+    {
+      "claim_id": "9d0f6391-e593-4039-ad8c-37b09bba9009",
+      "result_id": "eb1d62e7-eb73-451f-8fa2-8052a5845ab7"
+    },
+    {
+      "claim_id": "026a299c-7934-4fe9-b321-a6a22983de02",
+      "result_id": "eb1d62e7-eb73-451f-8fa2-8052a5845ab7"
+    },
+    {
+      "claim_id": "05f8c753-843b-4f57-ba03-0231beceffa0",
+      "result_id": "eb1d62e7-eb73-451f-8fa2-8052a5845ab7"
+    },
+    {
+      "claim_id": "84af5408-364e-4d0a-8e1e-6a43e5ac4d25",
+      "result_id": "eb1d62e7-eb73-451f-8fa2-8052a5845ab7"
+    },
+    {
+      "claim_id": "e5659e74-4759-4f16-92ca-613200137465",
+      "result_id": "eb1d62e7-eb73-451f-8fa2-8052a5845ab7"
+    },
+    {
+      "claim_id": "5fa969c2-639a-4c0f-b7fa-58099feedc94",
+      "result_id": "eb1d62e7-eb73-451f-8fa2-8052a5845ab7"
+    },
+    {
+      "claim_id": "28a48c23-02be-42c3-b3a6-0232882ab4f8",
+      "result_id": "eb1d62e7-eb73-451f-8fa2-8052a5845ab7"
+    },
+    {
+      "claim_id": "153af37d-5a3e-4501-ab9e-9a8ef737e60f",
+      "result_id": "eb1d62e7-eb73-451f-8fa2-8052a5845ab7"
+    },
+    {
+      "claim_id": "0de97576-19af-4e04-9eb6-ce0cae974d0f",
+      "result_id": "eb1d62e7-eb73-451f-8fa2-8052a5845ab7"
+    },
+    {
+      "claim_id": "ea619a21-4eb4-4dd6-909a-910a37a064fc",
+      "result_id": "eb1d62e7-eb73-451f-8fa2-8052a5845ab7"
+    },
+    {
+      "claim_id": "2b7b0c73-880c-4f20-9281-b67dcd5d89ff",
+      "result_id": "e16cf62b-726d-4243-bc41-e4ae905fff07"
+    },
+    {
+      "claim_id": "ee4ec759-ee0c-4a32-b10e-aead579ca288",
+      "result_id": "e16cf62b-726d-4243-bc41-e4ae905fff07"
+    },
+    {
+      "claim_id": "d00d6457-9e40-4715-9ce7-c1b947419e1c",
+      "result_id": "f9dc5266-d8ca-444c-a371-48b96fb9e2ba"
+    },
+    {
+      "claim_id": "ddd6c178-b4af-4101-8739-a917eec9bca8",
+      "result_id": "f9dc5266-d8ca-444c-a371-48b96fb9e2ba"
+    },
+    {
+      "claim_id": "2ef08cd8-4adb-4af2-bff6-b4e251882e40",
+      "result_id": "f9dc5266-d8ca-444c-a371-48b96fb9e2ba"
+    },
+    {
+      "claim_id": "ed2ea607-3b14-47ce-acf8-98065ac34c71",
+      "result_id": "f9dc5266-d8ca-444c-a371-48b96fb9e2ba"
+    },
+    {
+      "claim_id": "281ec95a-77df-41e1-a75b-6fc959dce088",
+      "result_id": "f9dc5266-d8ca-444c-a371-48b96fb9e2ba"
+    },
+    {
+      "claim_id": "16a6eb03-4882-4bb5-9bf1-2e2c4ac44527",
+      "result_id": "f9dc5266-d8ca-444c-a371-48b96fb9e2ba"
+    },
+    {
+      "claim_id": "c701cd92-d564-4f66-a366-43a7680ffce1",
+      "result_id": "f9dc5266-d8ca-444c-a371-48b96fb9e2ba"
+    },
+    {
+      "claim_id": "66b4285f-f87b-4d78-a317-448215755e5c",
+      "result_id": "41b483cd-7933-4c3d-886f-af4699c35900"
+    }
+  ],
+  "comparisons": []
+}

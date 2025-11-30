@@ -1,0 +1,351 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors established a neuronal differentiation model from human iPSC-derived NPCs. NPCs showed >90% Sox2/Nestin expression, differentiated neurons showed ~85% MAP2 expression at 3 weeks, and 4-week neurons could fire action potentials. RNA-seq confirmed neuronal gene upregulation and cell cycle gene downregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C98-C103 collectively establish a well-characterized neuronal differentiation system. The immunostaining data (C1, C2), electrophysiology (C3), quality control criteria (C98), and RNA-seq validation (C100-C103) provide converging evidence for successful neuronal differentiation. The methodological rigor is appropriate for the model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C46",
+      "C47",
+      "C78",
+      "C121",
+      "C122"
+    ],
+    "result": "During neuronal differentiation, HK2 and LDHA expression dramatically decrease (to near-zero protein levels), and PKM splicing shifts from PKM2 to PKM1. These changes mark the transition from aerobic glycolysis in NPCs to oxidative phosphorylation in neurons, and are conserved in mouse cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C19-C22, C46-C47, C78, and C121-C122 are strongly supported by multiple orthogonal datasets: RNA-seq showing mRNA decreases, immunoblotting showing near-complete protein loss, immunostaining confirming cellular localization, RT-PCR validating splicing changes, and conservation in mouse cells. The convergence of evidence across techniques and species strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "c-MYC and N-MYC protein levels decrease by ~70% and ~85% during neuronal differentiation. Both MYC proteins bind HK2 and LDHA promoters in NPCs, and c-MYC overexpression upregulates these genes. The MYC decrease is proposed as the primary mechanism for HK2/LDHA downregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C52-C55, and C124-C127 are well-supported by ChIP data showing MYC binding to target promoters, overexpression experiments demonstrating functional regulation, and immunoblotting showing MYC protein decreases. The mechanistic link between MYC decrease and HK2/LDHA downregulation is strongly supported, though C55's claim of 'predominantly' attributable may be overstated without ruling out other mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C130",
+      "C132",
+      "C133"
+    ],
+    "result": "Constitutive expression of HK2 and LDHA during neuronal differentiation causes ~40% neuronal death (vs ~6% control), increased AMPK phosphorylation, and 4-fold increased lactate secretion. Supplementing with 10-fold pyruvate rescues neuronal death, indicating that shutting off aerobic glycolysis is essential for neuronal survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C58-C62, C130, C132-C133 provide strong evidence through gain-of-function experiments. The rescue experiment with pyruvate (C62) is particularly compelling, supporting the mechanistic interpretation that pyruvate depletion causes death. However, the ~40% GFAP+ cells (C58) is unexplained and suggests additional complexity. The AMPK data (C60) supports energy deficiency but was only measured at early timepoints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C123"
+    ],
+    "result": "Depletion of HK2 or LDHA significantly slows NPC proliferation by 2.6-3.5 fold, indicating that aerobic glycolysis is required for NPC proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by knockdown experiments with two independent shRNAs per target. The effect size is substantial and consistent with cited literature (C123). However, the experiments lack rescue controls and don't distinguish between effects on proliferation vs. survival.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "NPCs express PKM2 while neurons express PKM1, with astrocytes expressing only PKM2. The splicing shift occurs during neuronal differentiation and correlates with decreased hnRNPI, hnRNPA1, and hnRNPA2 expression (to ~40% of NPC levels). This pattern is conserved in mouse cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 and C110-C115 are well-supported by RNA-seq, RT-PCR with isoform-specific primers, and comparison across cell types and species. The correlation with hnRNP decreases (C39) is consistent with known splicing mechanisms (C115), though causality is not directly tested. The functional significance is discussed but not experimentally validated in this system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C92",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "OGDH undergoes neuron-specific alternative splicing, with NPCs expressing OGDH1 (containing a Ca2+-binding motif) and neurons expressing OGDHneu (lacking this motif). This splicing is conserved in mouse neurons but not found in astrocytes or cardiomyocytes. The OGDHneu isoform is insensitive to Ca2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 and C92, C116-C120 are supported by RNA-seq, RT-PCR validation, sequence analysis, and cited functional characterization (C45). The conservation in mouse (C43) and absence in cardiomyocytes (C119) strengthen the finding. However, C120's speculation about avoiding prolonged OGDH activation is not experimentally tested and remains hypothetical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C48",
+      "C82"
+    ],
+    "result": "TCA cycle gene expression remains largely unchanged during neuronal differentiation (except IDH2, which drops ~50%). PDC subunit expression is unchanged, but PDK1/3/4 decrease and PDP1 increases ~2.5-fold, favoring increased PDC activity. PDH Ser300 phosphorylation decreases considerably, consistent with increased PDC activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29, C48, and C82 are supported by RNA-seq and immunoblotting data. The inference about increased PDC activity (C28, C82) is reasonable given the changes in regulatory enzymes and decreased inhibitory phosphorylation (C29). However, direct measurement of PDC enzymatic activity would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C109"
+    ],
+    "result": "Metabolite levels of glycolytic intermediates (3PG to 52%, pyruvate to 32%) and TCA intermediates (citrate 32%, \u03b1-ketoglutarate 17%, fumarate 30%, malate 22%, succinate 62%) decrease in neurons compared to NPCs. However, absolute metabolite levels do not directly reflect metabolite flux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by GC-MS data with appropriate normalization. The caveat in C109 is important and correctly noted\u2014decreased metabolite pools don't necessarily indicate decreased flux. The relatively higher succinate (C32) is speculatively attributed to decreased SDHB, but this interpretation is not rigorously tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Neurons show significantly higher basal OCR (~98 vs ~82 pmoles/min/10\u00b5g) and maximum OCR (~183 vs ~130) compared to NPCs. The lactate/glucose ratio decreases from ~1.61 in NPCs to ~0.35 in neurons, consistent with decreased aerobic glycolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by Seahorse measurements and lactate/glucose assays. The OCR data directly demonstrate increased oxidative capacity in neurons. However, the figure supplement notes that NPC measurements were complicated by pH changes due to high lactate production, which may affect the reliability of NPC ECAR measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C128",
+      "C129"
+    ],
+    "result": "LDHA is downregulated in neurons directly converted from fibroblasts using Ngn2/Ascl1 overexpression, but not in less mature PTB knockdown-derived neurons, indicating metabolic resetting during transdifferentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 and C128-C129 are supported by immunostaining data from two transdifferentiation protocols. The correlation between neuronal maturity (Tau expression) and LDHA downregulation strengthens the conclusion. However, the sample size and quantification are limited, and the PTB knockdown protocol may simply produce less mature neurons rather than representing a different metabolic state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "PGC-1\u03b1 and ERR\u03b3 increase 3-4 fold and 2.8-3.4 fold respectively during neuronal differentiation. Despite these increases, metabolic and mitochondrial gene expression remains unchanged compared to NPCs. Knockdown experiments show PGC-1\u03b1/ERR\u03b3 are required to maintain (not increase) expression of these genes, revealing distinct transcriptional regulation in proliferating vs. post-mitotic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12, C68-C77, and C89-C91 present a surprising and well-supported finding. The RNA-seq data (C68-C70), knockdown experiments (C71-C75), and mechanistic interpretation (C76-C77, C89-C91) are internally consistent. The shift from MYC/E2F-mediated transcription in NPCs to PGC-1\u03b1/ERR\u03b3-mediated maintenance in neurons is a novel insight, though the role of MYC/E2F in NPCs (C90) is inferred rather than directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C141",
+      "C142"
+    ],
+    "result": "Mitochondrial mass (measured by mtDNA copy number) increases ~4-fold during neuronal differentiation, proportional to the ~4-fold increase in cellular protein mass. Mitochondrial protein levels per unit total protein remain constant, indicating unchanged mitochondrial density. This suggests an unknown mechanism linking mitochondrial biogenesis to cell size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C63-C67, and C141-C142 are supported by mtDNA quantification, protein mass measurements, and immunoblotting. The proportional relationship between mitochondrial mass and cell size is clearly demonstrated. However, C14's claim of an 'unknown mechanism' is speculative\u2014the mechanism may simply be that mitochondrial biogenesis scales with cell growth. The cited high-throughput screen (C141-C142) provides correlative support but doesn't establish causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "UCP2 expression drops significantly during neuronal differentiation, with 3-week neurons showing only 20% of NPC levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is supported by RNA-seq data. This finding is consistent with the metabolic transition from glycolysis to oxidative phosphorylation, as UCP2 is known to limit pyruvate entry into the TCA cycle. However, this is a single observation without functional validation in this system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Background claims establishing that neurons rely on oxidative phosphorylation, OXPHOS malfunctions cause neurological disorders, and the metabolic transition during neuronal differentiation is tightly coupled but molecularly undefined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 and C93-C97 are background knowledge supported by appropriate citations. These establish the context and motivation for the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C79",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The absence of LDHA in neurons is consistent with prior immunohistochemistry showing neurons express only LDHB while astrocytes express both LDHA and LDHB. Lactate from glial cells is a critical neuronal energy source, and LDHA downregulation would favor the LDHB-catalyzed reverse reaction generating pyruvate from lactate. Hypoxia exposure of NPCs increases glial differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C86-C88 integrate the current findings with prior literature. The mechanistic interpretation about LDHA/LDHB (C87) is biochemically sound but not directly tested. These claims provide important context for understanding the functional significance of LDHA downregulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C83",
+      "C85"
+    ],
+    "result": "The authors propose that the PKM2 to PKM1 shift, decreased HK2/GLUT expression, and decreased PDK/increased PDP expression collectively terminate aerobic glycolysis. They conclude that avoiding aerobic glycolysis is the major reason for neuronal reliance on oxidative phosphorylation, allowing efficient pyruvate use for energy production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81, C83, and C85 represent interpretive conclusions based on the collective data. While the individual observations are well-supported, the claim that 'avoiding aerobic glycolysis is the major reason' (C83) is somewhat overstated\u2014neurons may also require oxidative phosphorylation for other reasons (e.g., biosynthetic precursors, redox balance). The pyruvate rescue experiment (C62) strongly supports C85.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "For most glycolytic reactions, only a single paralogous enzyme is predominantly expressed in NPCs or neurons. HK1 and PFKM show minor increases during differentiation. Pentose phosphate pathway genes for NADPH production remain unchanged, while nucleotide synthesis branch genes decrease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C108 are supported by RNA-seq data. These observations provide additional detail about metabolic enzyme expression patterns. The decrease in nucleotide synthesis genes (C108) is consistent with post-mitotic status, though this is correlative rather than causal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Background on the PGC-1\u03b1/ERR\u03b3/NRF transcriptional circuit in other tissues, including its role in cardiac development, muscle metabolism, and neuronal gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C140 are background knowledge supported by appropriate citations. These establish the known roles of PGC-1\u03b1/ERR\u03b3 in other systems, providing context for the unexpected findings in neurons.",
+    "result_type": "MINOR"
+  }
+]

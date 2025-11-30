@@ -1,0 +1,1445 @@
+{
+  "submission": {
+    "id": "06c580c9-8ff2-41ba-8614-e8f58ec89612",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:09:52.818412Z",
+    "updated_at": "2025-11-30T00:09:52.818412Z"
+  },
+  "content": [
+    {
+      "id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "submission_id": "06c580c9-8ff2-41ba-8614-e8f58ec89612",
+      "content_type": "manuscript",
+      "content_text": "# Community-level cohesion without cooperation\n\n## Authors\n\n- Mikhail Tikhonov<sup>1</sup> ([ORCID: 0000-0002-9558-1121](https://orcid.org/0000-0002-9558-1121)) \u2020\n\n### Affiliations\n\n1. Center of Mathematical Sciences and Applications Harvard University Cambridge United States\n2. Harvard John A Paulson School of Engineering and Applied Sciences Harvard University Cambridge United States\n3. Kavli Institute for Bionano Science and Technology Harvard University Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nRecent work draws attention to community-community encounters ('coalescence') as likely an important factor shaping natural ecosystems. This work builds on MacArthur\u2019s classic model of competitive coexistence to investigate such community-level competition in a minimal theoretical setting. It is shown that the ability of a species to survive a coalescence event is best predicted by a community-level 'fitness' of its native community rather than the intrinsic performance of the species itself. The model presented here allows formalizing a macroscopic perspective whereby a community harboring organisms at varying abundances becomes equivalent to a single organism expressing genes at different levels. While most natural communities do not satisfy the strict criteria of multicellularity developed by multi-level selection theory, the effective cohesion described here is a generic consequence of resource partitioning, requires no cooperative interactions, and can be expected to be widespread in microbial ecosystems.\n\n## Introduction\n\nOver the last decade, the sequencing-driven revolution in microbial ecology unveiled the staggering complexity of microbial communities that shape the health of our planet, and our own (Caporaso et al., 2011; Lozupone et al., 2012; Human Microbiome Project Consortium, 2012; Gilbert et al., 2014). These ecosystems routinely harbor hundreds of species of microorganisms, the vast majority of which remain poorly characterized. This makes the bottom-up approach to their modeling extremely challenging (Greenblum et al., 2013; Bucci and Xavier, 2014; Ji and Nielsen, 2015), prompting the question of whether some effective, top-down theory of the community as a whole might be a more viable alternative (Doolittle and Zhaxybayeva, 2010; Borenstein, 2012; Greenblum et al., 2013; Bucci and Xavier, 2014).\n\nThe need for a top-down approach is highlighted by multiple experimental observations. The microscopic species-level composition of independently assembled communities is highly variable even in similar environments; in contrast, the community metagenome (pathways carried by the population as a whole) appears to be more stable (Human Microbiome Project Consortium, 2012). Studies of obesity or inflammatory bowel disease indicate that these conditions are unlikely to be caused by specific 'pathogenic species' (Major and Spiller, 2014; Mathur and Barlow, 2015); similarly, the healthy human microbiota exhibits no core set of 'healthy' microorganisms (Human Microbiome Project Consortium, 2012). Thus, the 'healthy' and 'diseased' states of human-associated microbiota appear to be community-level phenotypic labels that may not always be traceable to specific community members.\n\nRemarkably, the behavior of such macroscopically defined states can be productively studied even as the microscopic details remain unclear: thus, studies report on 'lean microbiota' outcompeting 'obese microbiota' in mice (Ridaura et al., 2013), or on the efficacy of fecal matter transplant in treating Clostridium difficile infections, whereby a 'healthy' community overtakes the 'diseased' state (Bakken et al., 2011). Both examples can be conceptualized as community-level competition events, termed 'community coalescence'. Although poorly understood, such events are widespread in natural microbial ecosystems and likely play a major role shaping their structure (Rillig et al., 2015). Intriguingly, Rillig et al. argue that coalescing communities often appear to be \u201cinteracting as internally integrated units rather than as a collection of species that suddenly interact with another collection of species\u201d (Rillig et al., 2015).\n\nAlthough comparing a community to a functionally integrated 'superorganism' is a recurring metaphor (Shapiro, 1998; West et al., 2006), a well-established body of theory cautions against using such terms loosely (Gardner and Grafen, 2009). The formal criteria under which a group of organisms can be considered a 'multicellular whole' have been extensively discussed in the context of multi-level selection theory (MLS) (Okasha, 2008). At the very least, the established notions of group-level individuality and 'organismality' crucially rely on cooperative traits of group members (Buss, 1987; Michod, 1999; Michod and Nedelcu, 2003). As a result, the formal applicability of the 'superorganism' perspective appears to be severely restricted, as pervasive cooperation between members must first be demonstrated. In particular, the microbiota inhabiting the human gut is extremely unlikely to satisfy such criteria.\n\nHowever, the utility of a macroscopic community-level perspective, and its ability to predict the outcome of competition between communities, need not hinge on whether they constitute a valid level of selection in the strict sense of MLS. It is well known that performance of a species is dependent on community context (Davis et al., 1998; McGill et al., 2006; McIntire and Fajardo, 2014): for example, niche-packed communities (MacArthur, 1969; Roughgarden, 1976) are more resistant to invasion (Levine and D\u2019Antonio, 1999). Building on these ideas, the present work extends the classical model of MacArthur (MacArthur, 1969) to construct a simple adaptive dynamics framework that describes co-evolution in multi-species communities (Roughgarden, 1976; Geritz et al., 1998; Nurmi and Parvinen, 2008) and allows investigating the phenomenon of 'community coalescence' in a minimal theoretical setting. The central result is a mathematically precise analogy established between a community whose members can change in abundance and an individual organism whose pathways can modulate in expression. This analogy concerns the manner in which a community interacts with its environment and with other communities; it does not investigate reproduction, and so does not constitute multicellularity in the established sense of the term (Okasha, 2008). Rather than being a limitation, this expands the potential applicability of the top-down perspective advocated here. While the criteria of 'true multicellularity' are too stringent to apply to most natural communities, the phenomenon described in this work is a generic consequence of ecological interactions in a diverse ecosystem and requires no cooperative behavior or 'altruism' (Gardner and Grafen, 2009).\n\n## Methods\n\n### The metagenome partitioning model\n\nTo investigate community coalescence in the simplest theoretical setting, consider the following model for resource competition in a diverse community. It is closely related to MacArthur\u2019s model of competitive coexistence on multiple resources (MacArthur, 1969); see Supplementary file 1, section A.\n\nConsider a community in a habitat where a single limiting resource exists in N forms ('substrates' i\u2208{1\u2062\u2026\u2062N}) denoted A, B, etc. For example, this could be carbon-limited growth in an environment with N carbon sources, or a community limited by availability of electron acceptors in an environment with N oxidants. The substrates can be utilized with 'pathways' i (one specialized pathway per substrate). A species is defined by the pathways that it carries (similar, for example, to the approach of Levin et al., 1990). There is a total of 2N-1 possible species in this model; they will be denoted using a binary vector indicating pathway presence/absence \u03c3\u2192\u2261{\u03c3i}={1,1,0,1,\u2026}, or by a string listing all substrates they can use, e.g. 'species A\u2062B\u2062D\u00af' (the underline distinguishes specialist organisms such as A\u00af from the substrate they consume, in this case A). Let n\u03c3\u2192 be the total abundance of species \u03c3\u2192 in the community, and let Ti be the total number of individuals capable of utilizing substrate i (Figure 1):Ti\u2261\u2211\u03c3\u2192n\u03c3\u2192\u2062\u03c3i.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/15747/elife-15747-fig1-v2.jpg)\n\n**Figure 1.:** Organisms are defined by the pathways they carry. The benefit from each substrate is equally partitioned among all organisms who can use it, and population growth/death of each species is determined by the resource surplus it experiences.\n\nAssume a well-mixed environment, so that each of these $T_{i}$ individuals gets an equal share $R_{i}/T_{i}$ of the total benefit $R_{i}$ (carbon content, oxidation power; etc.) available from substrate $i$ ('scramble competition'). Any one substrate is capable of sustaining growth, but accessing multiple cumulates the benefits. The population growth/death rate of species $\\sigma\u2192$ will be determined by the resource surplus $\u0394$ experienced by each of its individuals:\n\n$$\n\u0394_{\\sigma\u2192}=\\sumi\\sigma_{i}\u2062\\frac{R_{i}}{T_{i}}-\u03c7_{\\sigma\u2192}.\n$$\n\nHere, the first term is the benefit harvested by all carried pathways, and the second represents the maintenance costs of organism $\\sigma\u2192$. These costs summarize all the biochemistry that makes different species more or less efficient at processing their resources. For simplicity, let these costs be random:\n\n$$\n\u03c7_{\\sigma\u2192}=\u03c7_{0}\u2062|\\sigma\u2192|\u2062(1+\u03f5\u2062\u03be_{\\sigma\u2192}).\n$$\n\nHere, $\u03c7_{0}$ is a constant (the average cost per pathway), $\u03be_{\\sigma\u2192}$ is a random variable chosen once for each species and drawn out of the standard normal distribution (truncated to ensure $\u03c7_{\\sigma\u2192}>0$), the 'cost scatter' $\u03f5$ sets the magnitude of cost fluctuations, and $|\\sigma\u2192|\u2261\\sum_{i}\\sigma_{i}$ is the number of pathways carried by the species: expressing more pathways incurs a higher cost (in this simple model, carrying and expressing a pathway is synonymous). The cost function (2) ensures that neither specialists nor generalists are systematically favored in competition (see below).\n\nThe resource surplus $\u0394_{\\sigma\u2192}$ is used to generate biomass. The simplest approach is to equate the biomass of an organism with its cost, so that the total biomass of a species is $\u03c7_{\\sigma\u2192}\u2062n_{\\sigma\u2192}$, and the dynamics of the model is given by:\n\n$$\n\\tau_{0}\u2062\u03c7_{\\sigma\u2192}\u2062\\frac{d\u2062n_{\\sigma\u2192}}{d\u2062t}=g_{\\sigma\u2192}\u2062({n_{\\sigma\u2192}})\u2261n_{\\sigma\u2192}\u2062\u0394_{\\sigma\u2192}.\n$$\n\nThe constants $\u03c7_{0}$ and $\\tau_{0}$ set the units of resource and time. It is worth noting that a different choice for the biomass of each species would only change transient dynamics, but not the outcome of their competition: the equilibrium state where $\\frac{d\u2062n_{\\sigma\u2192}}{d\u2062t}=0$ (see Supplementary file 1, section B).\n\nThe approach taken here purposefully ignores multiple factors, most notably trophic interactions or any other form of organism inter-dependence. This is intentional: it ensures that the interaction matrix\n\n$$\nM_{a\u2062b}\u2261\\frac{\\partial\u2061g_{\\sigma\u2192_{a}}}{\\partial\u2061n_{\\sigma\u2192_{b}}}\n$$\n\nhas no positive terms, that\u00a0is,\u00a0the setting is purely competitive (indices $a$, $b$ label species, and $g_{\\sigma\u2192}$ is defined as the right-hand side of Equation 3). This helps underline that the whole-community behavior exhibited below is a generic consequence of resource partitioning, and requires no explicitly cooperative interactions.\n\nOther simplifications include the assumption of deterministic dynamics and a well-mixed environment. Although stochasticity and spatial structure are tremendously important in most contexts, the simplified model adopted here provides a convenient starting point and makes the problem tractable analytically.\n\nThis work will investigate coalescence of communities that originate and remain in similar environments, for\u00a0example, transfer of oral communities by kissing (Kort et al., 2014) as opposed to invasion of microbes from the mouth into the gut (Qin et al., 2014). Imagine a collection of islands (or patches) labeled by $\\alpha$, each harboring a community $\ud835\udc9e_{\\alpha}$ experiencing the same environment. The next section investigates the within-island dynamics (3) to establish some key properties that make this simplified model particularly convenient for our purposes. Specifically, let $\u03a9\u2062(\ud835\udc9e)$ denote the set of species present at non-zero abundance in a community $\ud835\udc9e$. It will be shown that under the dynamics (3), any community $\ud835\udc9e$ will eventually converge to a stable equilibrium, uniquely determined by the set $\u03a9\u2062(\ud835\udc9e)$. At this equilibrium, certain species establish at a non-zero abundance, while others 'go extinct', exponentially decreasing towards zero. Importantly, the set of survivors will depend only on the identity of the initially present species, and not on their initial abundance. Thus a community $\ud835\udc9e_{1}$ coalescing with $\ud835\udc9e_{2}$ will yield the same community $\ud835\udc9e_{*}$ irrespective of the initial mixing ratios. While obviously a simplification, this makes the metagenome partitioning model an especially convenient starting point to build theoretical intuition about community-community interactions before more general situations can be studied, for\u00a0example, numerically.\n\nThese properties are established in the next section; the following section then turns to the main subject of this work, namely coalescence events between islands.\n\n### Single-island adaptive dynamics: intrinsic species performance and a community-level objective function\n\nConsider N=10 equiabundant substrates, and one random realization of organism costs with scatter \u03f5=10-3. (MATLAB scripts (MATLAB, Inc.) performing simulations and reproducing all figures are available as Supplementary file 2). The numerical simulation of competition between all 1023 possible species, initialized at equal abundance, results in the equilibrium state depicted in Figure 2A,\u00a0Supplementary file 2. In this example, it consists of nine species. It is natural to ask: for a given initial set of competitors, what determines the species that survive?\n\n![Figure 2.](https://cdn.elifesciences.org/articles/15747/elife-15747-fig2-v2.jpg)\n\n**Figure 2.:** (A) Community equilibrium for $N=10$ substrates with abundance $R_{i}/\u03c7_{0}=100$ and one particular random realization of organism costs with scatter $\u03f5=10^{-3}$. Species are ordered by abundance and labeled by the pathways they carry. Also indicated is the individual performance rank; all surviving species were within the top 30 (out of 1023). (B) The median individual performance rank of survivors, weighted (dashed) or not weighted (solid) by abundance. Curves show mean over 100 random communities for each value of cost scatter $\u03f5$; the standard deviation across 100 instances is stable at approximately 40% of the mean for both curves, independently of $\u03f5$ (not shown to reduce clutter).\n\nIn the present model, the only intrinsic performance characteristic of a species is its cost per pathway. Consider an assay whereby a single individual of species $\\sigma\u2192$ is placed in an\u00a0environment with no other organisms present, and, for simplicity, an equal supply of all substrates $R_{i}=R$. The initial population growth rate in this chemostat is given by:\n\n$$\n\\frac{d\u2062n_{\\sigma\u2192}}{d\u2062t}|_{t=0}=\\frac{1}{\\tau_{0}\u2062\u03c7_{\\sigma\u2192}}\u2062[\\sumiR_{i}\u2062\\sigma_{i}-\u03c7_{\\sigma\u2192}]=\\frac{1}{\\tau_{0}}\u2062[R\u2062\\frac{|\\sigma\u2192|}{\u03c7_{\\sigma\u2192}}-1],\n$$\n\nand abundance eventually equilibrates at $n_{\\sigma\u2192}=R\u2062|\\sigma\u2192|/\u03c7_{\\sigma\u2192}$. Both these quantities characterize performance of species $\\sigma\u2192$ (the term 'fitness' is avoided as it is a micro-evolutionary concept that, strictly speaking, should be defined only within individuals of one species), and both are determined by the inverse cost per pathway. Define the 'individual' performance measure of species $\\sigma\u2192$ as\n\n$$\nf_{\\sigma\u2192}\u2261\u03c7_{0}\u2062\\frac{|\\sigma\u2192|}{\u03c7_{\\sigma\u2192}}-1.\n$$\n\nThis definition is convenient as it makes $f_{\\sigma\u2192}$ a dimensionless quantity of order $\u03f5$. Under the cost model (2), the performance ranking of species is random, set by the random realization of the costs $\u03be$:\u00a0$f_{\\sigma\u2192}=\\frac{1}{1+\u03f5\u03be_{\\sigma\u2192}}\u22121\u2248\u2212\u03f5\u03be_{\\sigma\u2192}$. This model was chosen so that no group of species has an obvious advantage. A different cost function would effectively reduce the pool of competitors, excluding certain (prohibitively expensive) species from the start.\n\nPredictably, this performance ranking is correlated with the success of a species in a community, but not very well (Figure 2). The equilibrium depicted in panel A predominantly consists of top-ranked species, and the median performance rank of surviving species is consistently low across a range of values of the cost scatter $\u03f5$ (panel B). This median rank becomes even lower if the median is weighted by a species\u2019 abundance at equilibrium, indicating that top-ranked species tend to be present at higher abundance (Davis et al., 1998; Birch, 1953). Still, at the equilibrium shown in Figure 2A, the species ranked fourth in intrinsic performance went extinct, but six others ranked as low as #29 remained present.\n\nThese observations reflect the well-known fact that the success of a species is context-dependent and observing a species in isolation does not measure its performance in the relevant environment (McGill et al., 2006; McIntire and Fajardo, 2014). In the model described here, the context experienced by all species is fully encoded in the vector of 'harvests', that\u00a0is, the benefit an organism receives from carrying pathway $i$:\n\n$$\nH_{i}\u2261R_{i}/T_{i}.\n$$\n\nA growing demand for substrate $i$ (increasing $T_{i}$) depletes its availability, in the sense that $H_{i}$ is reduced. Consider the three-substrate world depicted in Figure 1, and assume that $A\u2062B\u00af$ is the highest-performing species with a very low cost. As $A\u2062B\u00af$ multiplies, it depletes resources $A$ and $B$. As a result, the final equilibrium is highly likely to include the specialist organism $C\u00af$, even if its cost is relatively high, and under other circumstances (if $A\u2062B\u00af$ were less fit) it would have yielded to $A\u2062C\u00af$ or $B\u2062C\u00af$.\n\nConveniently, in the model described here, these complex effects studied by niche construction theory can be summarized in a single community-level objective function. The dynamics (3) possess a Lyapunov function, i.e. a quantity that is increasing on any trajectory of the system (compare to MacArthur, 1969):\n\n$$\nF=\\frac{1}{R_{tot}}\u2062(\\sumiR_{i}\u2062ln\u2061\\frac{T_{i}}{R_{i}/\u03c7_{0}}-\\sum\\sigma\u2192\u03c7_{\\sigma\u2192}\u2062n_{\\sigma\u2192}+R_{tot}).\n$$\n\nHere, $R_{tot}$ is a constant introduced for later convenience. Specifically, set $R_{tot}=\\sum_{i}R_{i}$; this choice ensures that close to community equilibrium, $F$ is also of order $\u03f5$ (see Supplementary file 1, section C). This function has the property that $R_{tot}\u2062\\frac{\\partial\u2061F}{\\partial\u2061n_{\\sigma\u2192}}=\u0394_{\\sigma\u2192}$ (the resource surplus), and therefore\n\n$$\n\\frac{d\u2062F}{d\u2062t}=\\sum\\sigma\u2192\\frac{\\partial\u2061F}{\\partial\u2061n_{\\sigma\u2192}}\u2062\\frac{d\u2062n_{\\sigma\u2192}}{d\u2062t}=\\sum\\sigma\u2192\\frac{n_{\\sigma\u2192}\u2062(\u0394_{\\sigma\u2192})^{2}}{R_{tot}\u2062\u03c7_{0}\u2062\\tau_{0}}>0\n$$\n\nThus, F is indeed monotonically increasing as the system is converging to equilibrium. To illustrate this, Figure 3A shows 10 trajectories of ecological dynamics for the same system as in Figure 2A, starting from random initial conditions (with all species present; see Supplementary file 1, section H). Far from equilibrium, while most high-cost species are being eliminated by competitors, the mean intrinsic performance of surviving organisms and F increase together (Figure 3A, inset), confirming that intrinsic performance is a useful predictor. However, as equilibrium is approached, community-induced changes in substrate availability Hi reduce the relevance of the original performance ranking, which was measured in the 'wrong' environment; previously successful species can be driven to extinction (Figure 3B). The set {Hi} at equilibrium characterizes the environment the surviving species had 'carved' for themselves. The performance rank ordering will be all the more sensitive to the environment {Hi}, the smaller the scatter of intrinsic organism costs \u03f5. Therefore, the role of this parameter is to tune the relative magnitude of intrinsic and environment-dependent factors in determining a species\u2019 fate. So far, \u03f5 was fixed at 10-3\u22482-N, and Figure 2B shows that for small cost scatter \u03f5, the structure of the final equilibria does not significantly depend on this parameter (see Supplementary file 1, section D). The large-\u03f5 regime will be discussed later.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/15747/elife-15747-fig3-v2.jpg)\n\n**Figure 3.:** (A) 10 trajectories of an example system, starting from random initial conditions and converging to the equilibrium depicted in Figure 2A. Direction of dynamics indicated by arrows. Far from equilibrium, mean intrinsic performance of members (weighted by abundance) and the community-level function $F$ increase together (inset; data aspect ratio as in the main panel). Close to equilibrium, intrinsic performance loses relevance. (B) Time traces of species\u2019 abundance for one community trajectory (thick red line in A). Arrowheads in panels A and B indicate matching time points. Species that eventually go extinct shown in red; many enjoy transient success. (C) The complex dynamics of panel B is driven by the simple objective to efficiently deplete all substrates simultaneously, encoded in $F$. Shown is mean availability of the 10 substrates, for each trajectory of panel A.\n\nEach of the trajectories in Figure 3A converges to the same equilibrium (depicted in Figure 2A). This is because $F$ is convex and bounded from above (see Supplementary file 1, section A). Therefore, for every set of species $\u03a9$, any community restricted to these species will always reach the same (stable) equilibrium, corresponding to the unique maximum of $F$ within the subspace where only species of $\u03a9$ are allowed non-zero abundance. This maximum will often be at the border of this subspace, corresponding to the extinction of some species.\n\nUnder the dynamics (3), no new species can 'appear' if their original abundance was zero. Imagine, however, that on each island, a rare mutation (or migration) occasionally introduces a random new species; if it can invade, the community transitions to a new equilibrium and awaits a new mutation. This process of adaptive dynamics defines the evolution of each island, and can be seen as a mesoscopic population genetics model for a multi-species community evolving through horizontal gene transfer (loss/acquisition of whole pathways). For each island, $F$ is monotonically increasing throughout its evolution. Indeed, $F$ is continuous and non-singular in all $n_{\\sigma\u2192}$, so introducing an invader at a vanishingly small abundance will leave $F$ unchanged, and the subsequent convergence to a new equilibrium is a valid trajectory of ecological dynamics on which $F$ increases.\n\nWhat is the intuitive meaning of the function $F$ that is being optimized by the community? It is easy to show that $\\sum_{\\sigma\u2192}\u03c7_{\\sigma\u2192}n_{\\sigma\u2192}=\\sum_{i}R_{i}$ at any equilibrium (total demand matches the total supply; see Supplementary file 1, section C). Therefore, for a community at equilibrium, $F$ characterizes its ability to deplete substrates:\n\n$$\nF=-\\frac{\\sum_{i}R_{i}\u2062ln\u2061H_{i}}{R_{tot}}+const\n$$\n\nIf all substrates are equiabundant for simplicity, maximizing $F$ is equivalent to minimizing $\\sum_{i}ln\u2061H_{i}$. The optimization principle that appears in this model is therefore a generalization of Tilman\u2019s $R^{*}$ rule (Tilman, 1982). In the classic form, this rule states that for a single limiting resource, the unique winning species is the one capable of depleting this resource to the lowest concentration. However, if the limiting resource can be harvested from multiple substrates, as considered here, multiple species may coexist; the winning community is the one that is most efficient at depleting all substrates simultaneously, weighted as described in Equation (7). This is illustrated in Figure 3C. While the time trajectories of individual species may be highly complex (Figure 3B), the net effect of these dynamics is to deplete substrate availability down to the lowest concentrations capable of sustaining a population (see also Figure S1 in Supplementary file 1, section H).\n\nThe following sections will argue that $F$ can be thought of as community-level 'fitness', but this term will not be used until justification is provided.\n\n### The community-level function F predicts the outcome of community coalescence\n\nConsider now a coalescence event whereby the equilibrium communities from two islands $\ud835\udc9e_{\\alpha}$ and $\ud835\udc9e_{\\beta}$ are brought into contact; as established above, the resulting community $\ud835\udc9e_{*}$ will not depend on the details of the mixing protocol. If none of the species from island $\\beta$ could invade the community $\ud835\udc9e_{\\alpha}$, then $\ud835\udc9e_{*}=\ud835\udc9e_{\\alpha}$ and the community $\ud835\udc9e_{\\alpha}$ is the clear winner. In general, however, the space of competition outcomes is richer than merely one community taking over: both competitors $\ud835\udc9e_{\\alpha}$, $\ud835\udc9e_{\\beta}$ can contribute to $\ud835\udc9e_{*}$, but can be more or less successful at doing so, contributing more or fewer species. What makes a community more likely to be successful?\n\nThe community on each island $\\alpha$ constructs its own environment, establishing certain levels of substrate availability ${H_{i}^{(\\alpha)}}$. When species from island $\\alpha$ are introduced onto island $\\beta$, they are exposed to a random new environment, and the equilibrium environment ${H_{i}^{*}}$ that the coalescence survivors will have created for themselves will be different still. Although success of a species is environment-dependent, for a random environment, $f_{\\sigma\u2192}$ as defined above remains the best available performance predictor. One may therefore expect that the more successful community should be the one with more high-performance species. On the other hand, we also found that the ultimate equilibrium community that cannot be invaded by any species does not consist of species with the highest intrinsic performance, but corresponds to the global maximum of $F$. This suggests that the community-level function $F$ should be the better predictor of the competition outcome. If so, it could be said to characterize the 'collective fitness' of a community (in the restricted, purely competitive, rather than reproductive, sense).\n\nTo settle the competition between these two hypotheses, the following procedure was implemented. For N=10 substrates, and a given random realization of the cost structure \u03be with scatter \u03f5=10-3, M=50 random species were selected to allow for an exhaustive sampling of sub-communities (the results reported below do not significantly depend on this choice). This set was used to construct all (504)=230300 possible combinations of k=4 species, 104,006 of which constituted fully functional communities with all N=10 pathways present; these were independently equilibrated. The putative collective fitness F of these communities, and the mean individual performance of their members, is shown in Figure 4A. This procedure puts at our disposal multiple examples of communities where the two performance measures are both high, both low, or one is high while the other is low (the quadrants highlighted in Figure 4A). Competing pairs of communities drawn from these pools will make it possible to determine which of the two factors, individual performance of a species f\u03c3\u2192 or the collective fitness F of its native community, can better predict its post-coalescence survival.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/15747/elife-15747-fig4-v2.jpg)\n\n**Figure 4.:** (A) Community fitness $F$\u00a0vs mean intrinsic performance $\u27e8f_{\\sigma\u2192}\u27e9$ of its members, measured in units of cost scatter $\u03f5$, for 104,006 communities with four species (see text). Communities in which both characteristics are in the top or bottom 10% are highlighted. (B) Elimination assay competing quadrants I (cyan) vs III (magenta). Five\u00a0hundred randomly drawn community pairs (columns) were jointly equilibrated, with up to eight species each time (rows; ordered by $f_{\\sigma\u2192}$). For each species that went extinct during equilibration, the corresponding cell in the table is colored by the species\u2019 provenance. As expected, most eliminated species were from the less fit cyan communities (there are more cyan cells than magenta). These species also had lower $f_{\\sigma\u2192}$ (most colored cells are in the lower half of the table). (C) Same, competing quadrants II (blue) vs IV (red). The dominant color is now red: most eliminated species were from red communities, and went extinct despite having higher $f_{\\sigma\u2192}$ (most colored cells are in the upper half of the table). Columns ordered by dominant color. (D) Community similarity $S\u2062(\ud835\udc9e_{1},\ud835\udc9e)$ for a coalescence event depicted in the cartoon (inset), computed for $10^{4}$ random community pairs, as a function of fitness difference between competing communities. Fitness difference scaled to the maximum of 1 so both fitness measures can be shown in same axes. Shown is binned mean (7 bins) over communities with similar fitness difference (solid line) $\u00b1 1$ standard deviation (shaded).\n\nTo begin, consider the competition between the cyan and magenta quadrants (I and III, respectively). Communities from the magenta quadrant are predicted to be more fit, both in the collective sense and as measured by the average intrinsic performance of members. Therefore, one expects that the magenta (III) communities should, on average, be more successful in pairwise competitions. To confirm this, Figure 4B presents the results of an 'elimination assay' competing communities from these quadrants. Five\u00a0hundred random pairs were drawn, and correspond to columns in Figure 4B. For each pair, species from both communities (up to 8 each time) were equilibrated together; the rows in Figure 4B correspond to these species, ordered by individual performance rank: high (top) to low (bottom). For each species that went extinct during equilibration, its provenance was identified (\u201cdid it come from the magenta or the cyan community?\u201d), and the corresponding rectangle in Figure 4B was colored accordingly; in the rare cases when the eliminated species was originally present in both communities, it was colored yellow. The dominant color in Figure 4B is cyan, confirming that the cyan communities are typically less successful at contributing their members to the final equilibrium. Note also that the colored entries are predominantly located in the bottom half of the table: the eliminated species tend to also have lower intrinsic performance than their more successful competitors. This is the expected result.\n\nNow, consider the competition between blue and red quadrants (II and IV). An elimination assay conducted in an identical manner is presented in Figure 4C. Now the colored entries are predominantly red and occupy the top half of the table. In other words, members of the red communities are being outcompeted despite the fact that their intrinsic performance is higher: the individual performance of a species is less predictive of its ability to survive coalescence than the collective fitness of the community of which it was part.\n\nFinally, $10^{4}$ random community pairs from the pool of Figure 4A (not restricted to any quadrant) were competed. Define community similarity for $\ud835\udc9e_{1}\u2261{n_{1\u2062\\sigma\u2192}}$ and $\ud835\udc9e_{2}\u2261{n_{2\u2062\\sigma\u2192}}$ as the normalized scalar product of their species abundance vectors:\n\n$$\nS\u2062(\ud835\udc9e_{1},\ud835\udc9e_{2})=\\frac{\\sum_{\\sigma\u2192}n_{1\u2062\\sigma\u2192}\u2062n_{2\u2062\\sigma\u2192}}{\\sqrt{\\sum_{\\sigma\u2192}n_{1\u2062\\sigma\u2192}^{2}}\u2062\\sqrt{\\sum_{\\sigma\u2192}n_{2\u2062\\sigma\u2192}^{2}}}.\n$$\n\nFor each of the $10^{4}$ coalescence instances $\ud835\udc9e_{1}+\ud835\udc9e_{2}\u21a6\ud835\udc9e_{*}$, Figure 4D plots the similarity $S_{1}\u2261S\u2062(\ud835\udc9e_{1},\ud835\udc9e_{*})$ as a function of fitness difference between 'parent' communities $\ud835\udc9e_{1}$ and $\ud835\udc9e_{2}$. It comes as no surprise (cf. Figure 2) that the predictive power of the mean individual performance is extremely weak (black line). In contrast, community fitness is a strong predictor: the larger the difference in community fitness, the stronger the similarity between the post-coalescence community and its more fit parent (red line). In the mathematical framework developed here, the observation that coalescing communities appear to be 'interacting as coherent wholes' acquires a precise formulation. Without implying the emergence of any new level of selection, and without invoking any cooperative traits, we observe that community coalescence can be usefully described as an interaction between two entities, characterized macroscopically at the whole-community level.\n\n### The 'community as an individual' metaphor becomes exact\n\nConsider now an external observer who is denied direct microscopic access to community composition, and is able to perform only 'metagenomic' (or, rather, 'metaproteomic') experiments, measuring the community-wide pathway expression $T\u2192={T_{i}}$ in response to substrate influx $R\u2192={R_{i}}$.\n\nFirst, consider an island $\\alpha_{G}$ harboring a single species: the complete generalist $\\sigma\u2192_{G}={1,1\u2062\u2026\u20621}$. Its abundance at equilibrium will be $n_{G}=T_{i}=R_{tot}/\u03c7_{G}$. Although substrates may be supplied in varying abundance, the island $\\alpha_{G}$ can only express all pathways at the same level.\n\nAnother island $\\alpha_{S}$ might harbor a community of perfect specialists: $A\u00af={1,0,0\u2062\u2026}$, $B\u00af={0,1,0\u2062\u2026}$, etc. Faced with an uneven supply of substrates, this island will adjust expression levels $T_{i}$ to precisely track the supply vector $R_{i}$, so that $T_{i}=R_{i}/\u03c7_{i}$, where $\u03c7_{i}$ is the cost of the respective specialist. For an external observer whose toolkit is limited to investigating the mapping $R\u2192\u21a6T\u2192$, the specialists\u2019 island $\\alpha_{S}$ is formally indistinguishable from an organism who can sense its environment and up-regulate or down-regulate individual pathways.\n\nSuch perfect regulation is, however, costly: typically, $A\u00af$, $B\u00af$, etc. will not be the most cost-efficient combinations. As a result, allowing the community to evolve while holding $R\u2192$ fixed, one will obtain a different multi-organism community $\ud835\udc9e$. Unlike $\\alpha_{S}$, it will generally be unable to respond to all environmental perturbations: for example, the nine-species equilibrium community of Figure 2A will necessariy be insensitive to some direction in the 10-dimensional space of substrate concentrations. Our external observer will conclude that evolution in a stable environment has traded some of the sensing capacity for the ability to fit a particular substrate influx with more efficient pathway combinations.\n\nThe model presented here can therefore be reinterpreted as a model for adaptive evolution of a single organism striving to better adjust its response $T\u2192$ to the environment $R\u2192$ it experiences. The model specifies how the genotype (patterns of pathway co-regulation) determines phenotype (the mapping $R\u2192\u21a6T\u2192$), and the competitive fitness $F$is an explicit function of both the genotype and the environment (Ribeck and Lenski, 2015). To conclude this section, let us compute the community fitness $F$ of the single-species generalist community $\\alpha_{G}$ for the case $R_{i}\u2261R$. Applying the definition (6), and using $T_{i}=n_{G}=N\u2062R/\u03c7_{G}$ one finds:\n\n$$\nF=\\frac{1}{\\sum_{i}R_{i}}\u2062(\\sumiR_{i}\u2062ln\u2061\\frac{T_{i}}{R_{i}/\u03c7_{0}}-n_{G}\u2062\u03c7_{G})+1=ln\u2061\\frac{N\u2062\u03c7_{0}}{\u03c7_{G}}=ln\u2061(1+f_{G})\u2248f_{G}\n$$\n\nwhere $f_{G}$ is the individual performance (4) of organism $\\sigma_{G}$, and the approximate equality holds because $f_{G}$ is of order $\u03f5$, assumed small. In other words, for a single-species community, the community fitness coincides with the individual performance of that species, reinforcing the emergent parallel between a community and an individual that had evolved an internal division of labor. This interpretation is specific to the particular model explored here, but within this model, the metaphor is mathematically exact.\n\n### Community cohesion as a generic consequence of ecological interactions\n\nIt is important to contrast the results of the previous section with the notion of 'fitness decoupling' in multi-level selection theory (MLS). In MLS, a higher level of organization is recognized when a group of cooperating organisms acquires interests that are distinct from the self-interest of its members (Okasha, 2008). Here, competition always remains entirely 'selfish'. In each instance of community competition assayed in Figure 4, whenever some species invaded a community, it was because its fitness in that particular environment was higher than the fitness of species already present. In contrast to fitness decoupling, which requires special circumstances to evolve, the community-level cohesion described in this work is a generic consequence of the fact that organisms modify their environment, and that fitness is context-dependent (Hay et al., 2004; McGill et al., 2006; McIntire and Fajardo, 2014; Ribeck and Lenski, 2015).\n\nThe definition (4) corresponds to how we might experimentally measure fitness, by placing an organism in a 'typical' environment it is believed to experience. In the model described here, this typical environment is often an excellent approximation: for a community at equilibrium with equiabundant substrates $R_{i}=R$, the total community-wide expression of each pathway is roughly $T\u2248R/\u03c7_{0}$, the same for all $i$. Nevertheless, even small deviations may be sufficient to induce substantial reordering of the relative performance rank of different species, in which case the context-dependent component of fitness can become dominant.\n\nIf this interpretation of the results of Figure 4 is correct, then reducing the degree to which environmental perturbations affect relative fitness of individuals should lead to a tighter link between community fitness and individual species\u2019 performance. This prediction can be tested by increasing \u03f5, the parameter that determines the width of the distribution of organism costs. For example, consider a community where the substrate A is disputed by only two organisms: A\u00af and A\u2062B\u00af. Assume that fA_\u00a0>\u00a0fAB_, so that when substrates A and B are equally abundant, the species A\u00af displaces A\u2062B\u00af(the resource\u00a0B is then consumed by some other species). Reducing the availability of substrate A can reverse this outcome (if A is absent, A\u2062B\u00af can still survive, but not A\u00af). However, the larger the difference in intrinsic performance fA\u00af and fA\u2062B\u00af, the more extreme such resource depletion would have to be. Therefore, increasing the intrinsic cost scatter \u03f5 will reduce the relative effect that changing environment has on fitness rank ordering. Figure 5 repeats the analysis of Figure 4A for \u03f5=0.1 (rather than \u03f5=10-3 used previously). As predicted, the collective fitness is now strongly associated with the performance of individuals. In fact, this is already apparent in Figure 2B: as \u03f5 is increased, the median fitness rank of survivors at the final equilibrium begins to reduce. At high \u03f5, it is increasingly true that high collective fitness is merely a reflection of high intrinsic performance of community members. Thus, Figure 2B documents a transition between a largely individualistic regime (at large \u03f5) and a regime where the genetically inhomogenous assembly of species increasingly acts 'as a whole', in the precise sense discussed in the previous section.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/15747/elife-15747-fig5-v2.jpg)\n\n**Figure 5.:** Cost scatter $\u03f5$ tunes the magnitude of community cohesion.Same as Figure 4A, for larger $\u03f5=0.1$. Increasing the scatter of intrinsic costs $\u03f5$ reduces the relative importance of environment in determining the performance ranking of species. As a result, collective fitness of a community and the mean individual performance of its members remain strongly coupled. Defining quadrants as in Figure 4A leaves the blue and red quadrants empty.\n\n## Discussion\n\nThis work presented a theoretical framework where the analogy between a community harboring organisms at varying abundances, and an organism expressing genes at different levels, becomes an exact mathematical statement. A striking feature of this perspective is the blurred boundary between the notions of competition and genetic recombination (Shapiro et al., 2012; Rosen et al., 2015). Consider competition between organisms as an operation that takes two organisms and yields one:\n\n$$\nCompetition:\u2003(\ud835\udcaa_{1},\ud835\udcaa_{2})\u21a6\ud835\udcaa_{*}.\n$$\n\nTraditionally, the space of outcomes is binary: one competitor lives, one dies, and the propensity to survive competition is called fitness. When competition between communities of organisms is considered, this definition must inevitably be generalized to allow $\ud835\udcaa_{*}$ to be distinct from either of the original competitors. Such 'competitors', however, might be more aptly named 'parents'. In sexual reproduction, recombination allows a subset of the genes inherited from both parents to form progeny with potentially higher fitness; here, the competition between parent communities $\ud835\udc9e_{\\alpha}$ and $\ud835\udc9e_{\\beta}$ allows a subset of their members to regroup into a daughter community $\ud835\udc9e_{*}$ with a higher collective fitness $F$. The parallel becomes especially clear if one imagines propagules of $\ud835\udc9e_{\\alpha}$ and $\ud835\udc9e_{\\beta}$ co-colonizing a fresh environmental patch.\n\nSuch member regrouping can be much more flexible than the rules of sexual recombination, but reduces to the latter in the particular case of communities with clearly demarcated functional guilds (e.g., consider competition between two communities that each has one plant, one pollinator, one herbivore, one carnivore, etc.). Long before the evolution of sex, such recombination would have allowed communities with divided labor to fix evolutionary novelty more efficiently than a clonal population of generalists. Although the metaphor of a genome as an 'ecosystem of genes' is not new (Avise, 2001), the framework presented here allows it to be formalized and investigated quantitatively (see also Akin, 1979 and Supplementary file 1 Section J).\n\nThe results in this work were derived within the simplified framework of a particular model where microscopic dynamics conveniently took the form of optimizing a community-level objective function. In general, of course, collective dynamics are almost never reducible to solving an optimization problem (Akin, 1979; Hofbauer and Sigmund, 1998; Metz et al., 2008). However, the effective cohesion of coalescing communities described here is merely a result of environment-dependent species\u2019 performance combined with the community shaping its own environment, a niche construction effect (Scott-Phillips et al., 2014) not specific to one modeling framework. A certain parallel can also be seen with the hypothesis that niche-packed communities may be more resistant to invasion (MacArthur, 1955; Levine and D\u2019Antonio, 1999). In the model at hand, the existence of a global objective function made this phenomenon particularly easy to investigate; in a more general model, it would\u00a0not be possible to quantify this effect with a single number (a 'community fitness'). Nevertheless, the qualitative result may be expected to persist, so that members of a co-evolved community with a history of coalescence would tend to have higher persistence upon interaction with a 'naive' community that had never been exposed to such events, as proposed by\u00a0Rillig et al. (2015). More work is required to verify the generality of this hypothesis.\n\nThe results presented here, derived in a purely competitive model, demonstrate that functional cohesion is conceptually separate from the discussions of 'altruism' and cooperation (Gardner and Grafen, 2009), except to the extent described by the formula 'enemy of my enemy is my friend' (indirect facilitation [Levine, 1999]). The latter can be seen as a form of cooperation (Hay et al., 2004), but is a generic phenomenon and is not vulnerable to 'cheaters'.\n\nWhile the criteria of 'true multicellularity' are too stringent to apply to most natural communities, the phenomenon described in this work is a generic consequence of ecological interactions in a diverse ecosystem. Many effects omitted here can be expected to further contribute to such cohesion, especially co-evolved interdependence of organisms. If whole-community coalescence events are indeed a significant factor shaping the evolutionary history of microbial consortia, then community-level cohesion of the type described here can be expected to be broadly relevant for natural ecosystems (Doolittle and Zhaxybayeva, 2010).\n",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "7e051df1-52ca-4050-a68d-2b882d3cbdaa",
+      "submission_id": "06c580c9-8ff2-41ba-8614-e8f58ec89612",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Carl T Bergstrom, University of Washington , United States\n\n## Review text\n\nDOI: [10.7554/eLife.15747.010](https://doi.org/10.7554/eLife.15747.010)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Community-level cohesion without cooperation\" for consideration by eLife. Your article has been reviewed by three peer reviewers, including Jeff Gore and Carl Bergstrom, who is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Ian Baldwin as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe author has developed a simple and powerful model of ecological community formation. The reviewers appreciate the novelty and creativity of the approach, and value the model for its simplicity, its tractability, and its role as a potential null model for thinking about community formation. With appropriate revisions this paper merit publication in eLife and serve as a valuable contribution to the research community more broadly.\n\nEssential revisions:\n\n1) Please attempt to provide a better intuitive understanding of what contributes to community level fitness and how it \"works\" with respect to resource partitioning, redundancy, etc. Is there a simple description of what is the quantity maximized by the community?\n\nFor example, it would be useful to find ways to visualize how community competitive ability (F) relates to the distribution of resource processing among community members (e.g. a plot of some metric of resource overlap against F). For the section 3 experiments, any theory that could developed in this arena would be very welcome. Even a nice example would help. How does AB, CD, EFG, HIJ do against invaders, for example? I might intuit that it would be hard to beat what for its efficient resource partitioning, but do \"cross linkages\" e.g. ABCF, CDEI, EFG, GHIJA do even better because they help adjust to resource availability as discussed in section IV? Do these cross-linkages help because they trade off growth against stability to environmental perturbations, as discussed in section V?\n\n2) Please at least discuss the sensitivity of the model results to the form of the cost function. For example, how would we expect adding an exponent to norm (\u03c3) in the cost function (2) to change things? This would modulate something like the efficiency of adding additional pathways. Are the conclusions of this work dependent on this assumption that the cost is proportional to the biomass?\n\n3) Throughout, terms could be better defined and explained in the text. In general, the paper is quite heavy in notation, some of which may even be unnecessary. Remind the reader periodically what the variables stand for. For example, each variable could have a name in English and that name could be used together with the symbol in the text. Though it's clear from context, I don't think the paper ever explains in words how \u03c3iis to be interpreted. Nor does g\u03c3 seem to be defined. Hi(\u03b1) is not clearly explained; it's an environment, but explain how parametrized. Similarly, the figure and figure legends could be made more self-explanatory. For example, in Figure 1 I had to go back to the main text to determine what \u03b5 was. This should be explained in words. In the interest of reaching the broadest possible set of readers perhaps consider providing a bit more explanation for technicalities such as what a Lyapunov function is.\n",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c747850c-8871-4620-bf76-f7b1e84648dc",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C1",
+      "claim": "Community-community encounters ('coalescence') are likely an important factor shaping natural ecosystems.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work draws attention to community-community encounters ('coalescence') as likely an important factor shaping natural ecosystems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is attributed to 'recent work' without specific citations in this sentence, making it a citation-based claim referencing external literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "c8959b5e-9cf0-40da-bfab-fa8fb51eeb5c",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C2",
+      "claim": "The ability of a species to survive a coalescence event is best predicted by a community-level 'fitness' of its native community rather than the intrinsic performance of the species itself.",
+      "claim_type": "EXPLICIT",
+      "source": "It is shown that the ability of a species to survive a coalescence event is best predicted by a community-level 'fitness' of its native community rather than the intrinsic performance of the species itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the work, supported by the modeling and simulation data presented in the manuscript, particularly in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "06c9ec67-e884-4d50-acdf-e3829ee42be3",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C3",
+      "claim": "A community harboring organisms at varying abundances can become equivalent to a single organism expressing genes at different levels from a macroscopic perspective.",
+      "claim_type": "EXPLICIT",
+      "source": "The model presented here allows formalizing a macroscopic perspective whereby a community harboring organisms at varying abundances becomes equivalent to a single organism expressing genes at different levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical result derived from the mathematical model presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "31d4f5cf-ab6d-48a4-996c-5a3520b9737b",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C4",
+      "claim": "Most natural communities do not satisfy the strict criteria of multicellularity developed by multi-level selection theory.",
+      "claim_type": "EXPLICIT",
+      "source": "While most natural communities do not satisfy the strict criteria of multicellularity developed by multi-level selection theory, the effective cohesion described here is a generic consequence of resource partitioning, requires no cooperative interactions, and can be expected to be widespread in microbial ecosystems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This draws on established knowledge from multi-level selection theory and applies it to natural communities.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "e667070d-21ce-47b0-8ad5-f2735c63e219",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C5",
+      "claim": "The effective cohesion described in this work is a generic consequence of resource partitioning.",
+      "claim_type": "EXPLICIT",
+      "source": "While most natural communities do not satisfy the strict criteria of multicellularity developed by multi-level selection theory, the effective cohesion described here is a generic consequence of resource partitioning, requires no cooperative interactions, and can be expected to be widespread in microbial ecosystems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion derived from the model analysis presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "66dc83b9-4cb9-4aef-bca0-37730c619552",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C6",
+      "claim": "The effective cohesion described in this work requires no cooperative interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "While most natural communities do not satisfy the strict criteria of multicellularity developed by multi-level selection theory, the effective cohesion described here is a generic consequence of resource partitioning, requires no cooperative interactions, and can be expected to be widespread in microbial ecosystems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding of the model, demonstrated through the purely competitive framework used.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "605ffa51-485d-4cee-8dce-80c854e45b74",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C7",
+      "claim": "The effective cohesion described in this work can be expected to be widespread in microbial ecosystems.",
+      "claim_type": "EXPLICIT",
+      "source": "While most natural communities do not satisfy the strict criteria of multicellularity developed by multi-level selection theory, the effective cohesion described here is a generic consequence of resource partitioning, requires no cooperative interactions, and can be expected to be widespread in microbial ecosystems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative extrapolation from the model results to natural ecosystems.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "47baefe8-4b5e-4d55-89b0-764d06eb5dbf",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C8",
+      "claim": "The sequencing-driven revolution in microbial ecology unveiled the staggering complexity of microbial communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the last decade, the sequencing-driven revolution in microbial ecology unveiled the staggering complexity of microbial communities that shape the health of our planet, and our own (Caporaso et al., 2011; Lozupone et al., 2012; Human Microbiome Project Consortium, 2012; Gilbert et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "7190c44c-a7c6-49b5-875d-f580ee5958d5",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C9",
+      "claim": "Microbial communities routinely harbor hundreds of species of microorganisms.",
+      "claim_type": "EXPLICIT",
+      "source": "These ecosystems routinely harbor hundreds of species of microorganisms, the vast majority of which remain poorly characterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in microbial ecology, implied by the preceding citations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "d67a8974-867a-4833-bce4-199c7901cb19",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C10",
+      "claim": "The vast majority of microorganisms in microbial communities remain poorly characterized.",
+      "claim_type": "EXPLICIT",
+      "source": "These ecosystems routinely harbor hundreds of species of microorganisms, the vast majority of which remain poorly characterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in microbial ecology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "ea6ed951-9462-486a-89bc-728ae80e45cb",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C11",
+      "claim": "The bottom-up approach to modeling microbial communities is extremely challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "This makes the bottom-up approach to their modeling extremely challenging (Greenblum et al., 2013; Bucci and Xavier, 2014; Ji and Nielsen, 2015), prompting the question of whether some effective, top-down theory of the community as a whole might be a more viable alternative (Doolittle and Zhaxybayeva, 2010; Borenstein, 2012; Greenblum et al., 2013; Bucci and Xavier, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "b97c7871-b700-4e67-ad49-8a1066395cf2",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C12",
+      "claim": "The microscopic species-level composition of independently assembled communities is highly variable even in similar environments.",
+      "claim_type": "EXPLICIT",
+      "source": "The microscopic species-level composition of independently assembled communities is highly variable even in similar environments; in contrast, the community metagenome (pathways carried by the population as a whole) appears to be more stable (Human Microbiome Project Consortium, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the Human Microbiome Project.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "83179633-0872-410b-97df-b48ad903182b",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C13",
+      "claim": "The community metagenome appears to be more stable than species-level composition.",
+      "claim_type": "EXPLICIT",
+      "source": "The microscopic species-level composition of independently assembled communities is highly variable even in similar environments; in contrast, the community metagenome (pathways carried by the population as a whole) appears to be more stable (Human Microbiome Project Consortium, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the Human Microbiome Project.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "9f69d04a-a52e-4f99-a813-ccd792cbcc36",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C14",
+      "claim": "Obesity and inflammatory bowel disease are unlikely to be caused by specific 'pathogenic species'.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of obesity or inflammatory bowel disease indicate that these conditions are unlikely to be caused by specific 'pathogenic species' (Major and Spiller, 2014; Mathur and Barlow, 2015); similarly, the healthy human microbiota exhibits no core set of 'healthy' microorganisms (Human Microbiome Project Consortium, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "01a86e81-e525-4707-8f14-508a9c802d14",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C15",
+      "claim": "The healthy human microbiota exhibits no core set of 'healthy' microorganisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of obesity or inflammatory bowel disease indicate that these conditions are unlikely to be caused by specific 'pathogenic species' (Major and Spiller, 2014; Mathur and Barlow, 2015); similarly, the healthy human microbiota exhibits no core set of 'healthy' microorganisms (Human Microbiome Project Consortium, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the Human Microbiome Project.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "570b8555-d6a4-4329-aa26-120536279c3d",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C16",
+      "claim": "'Healthy' and 'diseased' states of human-associated microbiota are community-level phenotypic labels that may not always be traceable to specific community members.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the 'healthy' and 'diseased' states of human-associated microbiota appear to be community-level phenotypic labels that may not always be traceable to specific community members.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the preceding observations about lack of core species and pathogenic species.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "31a9bdeb-4de3-4c74-8b00-14d649be089e",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C17",
+      "claim": "'Lean microbiota' outcompetes 'obese microbiota' in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, studies report on 'lean microbiota' outcompeting 'obese microbiota' in mice (Ridaura et al., 2013), or on the efficacy of fecal matter transplant in treating Clostridium difficile infections, whereby a 'healthy' community overtakes the 'diseased' state (Bakken et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ridaura et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "d6fe3534-5e04-4905-b91a-e3a04607df80",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C18",
+      "claim": "Fecal matter transplant is efficacious in treating Clostridium difficile infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, studies report on 'lean microbiota' outcompeting 'obese microbiota' in mice (Ridaura et al., 2013), or on the efficacy of fecal matter transplant in treating Clostridium difficile infections, whereby a 'healthy' community overtakes the 'diseased' state (Bakken et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bakken et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "c957a13c-b43b-4df0-a775-4ec39a9fbde7",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C19",
+      "claim": "Community coalescence events are widespread in natural microbial ecosystems.",
+      "claim_type": "EXPLICIT",
+      "source": "Although poorly understood, such events are widespread in natural microbial ecosystems and likely play a major role shaping their structure (Rillig et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rillig et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "475c4677-637d-4a68-8c18-78575767d9cf",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C20",
+      "claim": "Community coalescence events likely play a major role shaping the structure of natural microbial ecosystems.",
+      "claim_type": "EXPLICIT",
+      "source": "Although poorly understood, such events are widespread in natural microbial ecosystems and likely play a major role shaping their structure (Rillig et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rillig et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "85b38da8-427e-41f9-ae2f-c334b1319254",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C21",
+      "claim": "Coalescing communities often appear to be interacting as internally integrated units rather than as a collection of species.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, Rillig et al. argue that coalescing communities often appear to be \"interacting as internally integrated units rather than as a collection of species that suddenly interact with another collection of species\" (Rillig et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is attributed to Rillig et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "5b164595-d487-4c5d-8768-a51779b3f35d",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C22",
+      "claim": "The formal criteria under which a group of organisms can be considered a 'multicellular whole' have been extensively discussed in the context of multi-level selection theory.",
+      "claim_type": "EXPLICIT",
+      "source": "The formal criteria under which a group of organisms can be considered a 'multicellular whole' have been extensively discussed in the context of multi-level selection theory (MLS) (Okasha, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Okasha, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "5a9d1a37-6cfa-4b9c-8146-de37942bb028",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C23",
+      "claim": "The established notions of group-level individuality and 'organismality' crucially rely on cooperative traits of group members.",
+      "claim_type": "EXPLICIT",
+      "source": "At the very least, the established notions of group-level individuality and 'organismality' crucially rely on cooperative traits of group members (Buss, 1987; Michod, 1999; Michod and Nedelcu, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant literature on multi-level selection theory.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "ee9f44c9-96c0-474a-98e6-098c377caea1",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C24",
+      "claim": "The microbiota inhabiting the human gut is extremely unlikely to satisfy the criteria for a 'superorganism'.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the microbiota inhabiting the human gut is extremely unlikely to satisfy such criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the requirement for pervasive cooperation and the nature of gut microbiota.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "0ee41bd1-8d4c-45b0-a6aa-5cb71a6b6919",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C25",
+      "claim": "Performance of a species is dependent on community context.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known that performance of a species is dependent on community context (Davis et al., 1998; McGill et al., 2006; McIntire and Fajardo, 2014): for example, niche-packed communities (MacArthur, 1969; Roughgarden, 1976) are more resistant to invasion (Levine and D'Antonio, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to ecological literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "85fef22a-84c5-4f57-bbe5-9f992e729146",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C26",
+      "claim": "Niche-packed communities are more resistant to invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known that performance of a species is dependent on community context (Davis et al., 1998; McGill et al., 2006; McIntire and Fajardo, 2014): for example, niche-packed communities (MacArthur, 1969; Roughgarden, 1976) are more resistant to invasion (Levine and D'Antonio, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to ecological literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "eef60880-9541-4967-810c-c3e3ec87ab0f",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C27",
+      "claim": "The model establishes a mathematically precise analogy between a community whose members can change in abundance and an individual organism whose pathways can modulate in expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The central result is a mathematically precise analogy established between a community whose members can change in abundance and an individual organism whose pathways can modulate in expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary theoretical result of the work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "095627ed-210f-4c35-a92c-ddf200090db8",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C28",
+      "claim": "The analogy concerns the manner in which a community interacts with its environment and with other communities, not reproduction.",
+      "claim_type": "EXPLICIT",
+      "source": "This analogy concerns the manner in which a community interacts with its environment and with other communities; it does not investigate reproduction, and so does not constitute multicellularity in the established sense of the term (Okasha, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This clarifies the scope and limitations of the theoretical result.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "c71a34f7-82ee-467c-9284-ee4e112b4d50",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C29",
+      "claim": "The phenomenon described in this work is a generic consequence of ecological interactions in a diverse ecosystem and requires no cooperative behavior or 'altruism'.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than being a limitation, this expands the potential applicability of the top-down perspective advocated here. While the criteria of 'true multicellularity' are too stringent to apply to most natural communities, the phenomenon described in this work is a generic consequence of ecological interactions in a diverse ecosystem and requires no cooperative behavior or 'altruism' (Gardner and Grafen, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key theoretical conclusion of the work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "8b88e82e-d044-4e36-a1c3-d387e7980f29",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C30",
+      "claim": "The model is closely related to MacArthur's model of competitive coexistence on multiple resources.",
+      "claim_type": "EXPLICIT",
+      "source": "It is closely related to MacArthur's model of competitive coexistence on multiple resources (MacArthur, 1969); see Supplementary file 1, section A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This establishes the theoretical foundation of the model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "cb1c3edd-964a-4cc7-8f91-b2fbcd233d2d",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C32",
+      "claim": "The model purposefully ignores trophic interactions and other forms of organism inter-dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "The approach taken here purposefully ignores multiple factors, most notably trophic interactions or any other form of organism inter-dependence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit modeling choice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "e53bda46-65df-47a0-a52e-c6791bc91532",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C34",
+      "claim": "The whole-community behavior is a generic consequence of resource partitioning and requires no explicitly cooperative interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "This helps underline that the whole-community behavior exhibited below is a generic consequence of resource partitioning, and requires no explicitly cooperative interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key conclusion drawn from the model structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "dce3f99e-dfc9-4ee9-b064-a8a8d3729103",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C36",
+      "claim": "The set of survivors will depend only on the identity of the initially present species, and not on their initial abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the set of survivors will depend only on the identity of the initially present species, and not on their initial abundance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical property of the model dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "611b036a-b514-4468-b5fa-2ece04944185",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C38",
+      "claim": "In the equilibrium state depicted in Figure 2A, nine species survive out of 1023 possible species.",
+      "claim_type": "EXPLICIT",
+      "source": "The numerical simulation of competition between all 1023 possible species, initialized at equal abundance, results in the equilibrium state depicted in Figure 2A, Supplementary file 2. In this example, it consists of nine species.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from numerical simulation shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "e0e41714-952b-4aed-962b-1737f1729f9d",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C39",
+      "claim": "All surviving species in the equilibrium of Figure 2A were within the top 30 in individual performance rank.",
+      "claim_type": "EXPLICIT",
+      "source": "Also indicated is the individual performance rank; all surviving species were within the top 30 (out of 1023).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "153c924d-0c78-4832-8719-62c6417fd8e0",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C41",
+      "claim": "Top-ranked species tend to be present at higher abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "This median rank becomes even lower if the median is weighted by a species' abundance at equilibrium, indicating that top-ranked species tend to be present at higher abundance (Davis et al., 1998; Birch, 1953).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the data in Figure 2B and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "b423ab24-5f94-4ac3-abad-5d59b1639d8b",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C42",
+      "claim": "At the equilibrium shown in Figure 2A, the species ranked fourth in intrinsic performance went extinct, but six others ranked as low as #29 remained present.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, at the equilibrium shown in Figure 2A, the species ranked fourth in intrinsic performance went extinct, but six others ranked as low as #29 remained present.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific observation from the data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "f821ec10-1e34-4353-b6dd-af15dc961bf0",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C43",
+      "claim": "The success of a species is context-dependent and observing a species in isolation does not measure its performance in the relevant environment.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations reflect the well-known fact that the success of a species is context-dependent and observing a species in isolation does not measure its performance in the relevant environment (McGill et al., 2006; McIntire and Fajardo, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "e40058e4-2983-4579-955d-32757eb83c9b",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C45",
+      "claim": "F is monotonically increasing as the system converges to equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, F is indeed monotonically increasing as the system is converging to equilibrium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived mathematically from the properties of F.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "5ca58ce0-a54a-41d6-8223-41a20f24978c",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C46",
+      "claim": "Far from equilibrium, the mean intrinsic performance of surviving organisms and F increase together.",
+      "claim_type": "EXPLICIT",
+      "source": "Far from equilibrium, while most high-cost species are being eliminated by competitors, the mean intrinsic performance of surviving organisms and F increase together (Figure 3A, inset), confirming that intrinsic performance is a useful predictor.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the simulation data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "62c3a29c-4694-471c-8b6b-705f83b9f4fe",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C47",
+      "claim": "As equilibrium is approached, community-induced changes in substrate availability reduce the relevance of the original performance ranking.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as equilibrium is approached, community-induced changes in substrate availability Hi reduce the relevance of the original performance ranking, which was measured in the 'wrong' environment; previously successful species can be driven to extinction (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the simulation data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "b23a607a-b57a-44cc-b332-5fe74a8a480c",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C55",
+      "claim": "Tilman's R* rule states that for a single limiting resource, the unique winning species is the one capable of depleting this resource to the lowest concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "In the classic form, this rule states that for a single limiting resource, the unique winning species is the one capable of depleting this resource to the lowest concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of established ecological theory.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "c40eec4c-a330-426d-bc40-d6b49a55d990",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C56",
+      "claim": "If the limiting resource can be harvested from multiple substrates, multiple species may coexist.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if the limiting resource can be harvested from multiple substrates, as considered here, multiple species may coexist; the winning community is the one that is most efficient at depleting all substrates simultaneously, weighted as described in Equation (7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical result from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "cc3cef77-c2e9-4c3b-bd45-6010066ffc59",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C57",
+      "claim": "The winning community is the one that is most efficient at depleting all substrates simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "However, if the limiting resource can be harvested from multiple substrates, as considered here, multiple species may coexist; the winning community is the one that is most efficient at depleting all substrates simultaneously, weighted as described in Equation (7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical result from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "fcfa52fc-77ea-4128-ad98-6c81eb24adb2",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C58",
+      "claim": "The net effect of complex species dynamics is to deplete substrate availability down to the lowest concentrations capable of sustaining a population.",
+      "claim_type": "EXPLICIT",
+      "source": "While the time trajectories of individual species may be highly complex (Figure 3B), the net effect of these dynamics is to deplete substrate availability down to the lowest concentrations capable of sustaining a population (see also Figure S1 in Supplementary file 1, section H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from simulation data in Figure 3C and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "42e4a00e-0a97-4c17-b4b4-987afcae995e",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C63",
+      "claim": "Communities from quadrant III (magenta) are predicted to be more fit than communities from quadrant I (cyan) in both collective and individual performance measures.",
+      "claim_type": "IMPLICIT",
+      "source": "To begin, consider the competition between the cyan and magenta quadrants (I and III, respectively). Communities from the magenta quadrant are predicted to be more fit, both in the collective sense and as measured by the average intrinsic performance of members.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the positioning of quadrants in Figure 4A.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "c0d23c78-3171-4b6c-b787-76b0df598da5",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C64",
+      "claim": "Magenta (III) communities are more successful than cyan (I) communities in pairwise competitions.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, one expects that the magenta (III) communities should, on average, be more successful in pairwise competitions. To confirm this, Figure 4B presents the results of an 'elimination assay' competing communities from these quadrants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is confirmed by the elimination assay data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "cc7e4c88-a7c4-4a00-99bc-101d1448b2c0",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C65",
+      "claim": "The dominant color in Figure 4B is cyan, confirming that cyan communities are typically less successful.",
+      "claim_type": "EXPLICIT",
+      "source": "The dominant color in Figure 4B is cyan, confirming that the cyan communities are typically less successful at contributing their members to the final equilibrium.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the data visualization in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "480e85d5-916f-4951-a5c3-5d3db385d969",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C66",
+      "claim": "The eliminated species in Figure 4B tend to have lower intrinsic performance than their competitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Note also that the colored entries are predominantly located in the bottom half of the table: the eliminated species tend to also have lower intrinsic performance than their more successful competitors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the data visualization in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "3a569716-bbdd-44a3-85a9-84a6cea1b89f",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C67",
+      "claim": "Members of red communities are outcompeted despite having higher intrinsic performance than blue community members.",
+      "claim_type": "EXPLICIT",
+      "source": "Now the colored entries are predominantly red and occupy the top half of the table. In other words, members of the red communities are being outcompeted despite the fact that their intrinsic performance is higher: the individual performance of a species is less predictive of its ability to survive coalescence than the collective fitness of the community of which it was part.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the elimination assay data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "64a26fc2-f0cb-42df-bbc5-93c421575ea3",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C68",
+      "claim": "The individual performance of a species is less predictive of its ability to survive coalescence than the collective fitness of its native community.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, members of the red communities are being outcompeted despite the fact that their intrinsic performance is higher: the individual performance of a species is less predictive of its ability to survive coalescence than the collective fitness of the community of which it was part.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key finding demonstrated by the data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "a7d8d6d7-c4ce-4117-8edd-1f3e1a6e6125",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C69",
+      "claim": "The predictive power of mean individual performance is extremely weak.",
+      "claim_type": "EXPLICIT",
+      "source": "It comes as no surprise (cf. Figure 2) that the predictive power of the mean individual performance is extremely weak (black line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "c16ce967-81c2-4adc-8a6d-cdb48f871919",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C70",
+      "claim": "Community fitness is a strong predictor of coalescence outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, community fitness is a strong predictor: the larger the difference in community fitness, the stronger the similarity between the post-coalescence community and its more fit parent (red line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "cd63da81-a9fe-4eb7-b294-df93f9096d27",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C71",
+      "claim": "Community coalescence can be usefully described as an interaction between two entities characterized macroscopically at the whole-community level.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mathematical framework developed here, the observation that coalescing communities appear to be 'interacting as coherent wholes' acquires a precise formulation. Without implying the emergence of any new level of selection, and without invoking any cooperative traits, we observe that community coalescence can be usefully described as an interaction between two entities, characterized macroscopically at the whole-community level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion drawn from the model results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "b67fd6e4-e4c6-47e4-9a42-10a8b51a0900",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C76",
+      "claim": "Evolution in a stable environment trades some sensing capacity for the ability to fit a particular substrate influx with more efficient pathway combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our external observer will conclude that evolution in a stable environment has traded some of the sensing capacity for the ability to fit a particular substrate influx with more efficient pathway combinations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical interpretation of the model's evolutionary dynamics.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "52232281-52c8-4d44-b11e-9957e5d5e131",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C78",
+      "claim": "For a single-species community, the community fitness coincides with the individual performance of that species.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, for a single-species community, the community fitness coincides with the individual performance of that species, reinforcing the emergent parallel between a community and an individual that had evolved an internal division of labor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived mathematically from the formula for F.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "25f709c5-4c7f-41f4-977e-65b4dad1941a",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C79",
+      "claim": "The metaphor of community as individual is mathematically exact within this model.",
+      "claim_type": "EXPLICIT",
+      "source": "This interpretation is specific to the particular model explored here, but within this model, the metaphor is mathematically exact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion about the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "682ff841-83d7-4aaa-a250-8d8de08bef3e",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C80",
+      "claim": "In each instance of community competition, whenever some species invaded a community, it was because its fitness in that particular environment was higher than the fitness of species already present.",
+      "claim_type": "EXPLICIT",
+      "source": "In each instance of community competition assayed in Figure 4, whenever some species invaded a community, it was because its fitness in that particular environment was higher than the fitness of species already present.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the competition dynamics in the model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "70e0fd63-f2e0-42a7-a5b9-83a03fea20ce",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C81",
+      "claim": "The community-level cohesion described in this work is a generic consequence of the fact that organisms modify their environment and that fitness is context-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to fitness decoupling, which requires special circumstances to evolve, the community-level cohesion described in this work is a generic consequence of the fact that organisms modify their environment, and that fitness is context-dependent (Hay et al., 2004; McGill et al., 2006; McIntire and Fajardo, 2014; Ribeck and Lenski, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion supported by citations to relevant literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "c223f66b-f7d5-4cef-aea3-7de60e04fed0",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C83",
+      "claim": "Even small deviations in substrate availability may be sufficient to induce substantial reordering of the relative performance rank of different species.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, even small deviations may be sufficient to induce substantial reordering of the relative performance rank of different species, in which case the context-dependent component of fitness can become dominant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the model behavior at small cost scatter.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "445e1871-07cc-4c37-9a44-5a9822a1c475",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C84",
+      "claim": "Reducing the degree to which environmental perturbations affect relative fitness should lead to a tighter link between community fitness and individual species' performance.",
+      "claim_type": "EXPLICIT",
+      "source": "If this interpretation of the results of Figure 4 is correct, then reducing the degree to which environmental perturbations affect relative fitness of individuals should lead to a tighter link between community fitness and individual species' performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction derived from the theoretical interpretation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "1ce2893c-1329-4fbd-abba-8183b86dff6d",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C89",
+      "claim": "The analogy between a community and an organism becomes an exact mathematical statement in this framework.",
+      "claim_type": "EXPLICIT",
+      "source": "This work presented a theoretical framework where the analogy between a community harboring organisms at varying abundances, and an organism expressing genes at different levels, becomes an exact mathematical statement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the main theoretical contribution of the work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "a72cfe28-4113-451a-8aef-c792ab5cedd2",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C90",
+      "claim": "The boundary between competition and genetic recombination is blurred in this perspective.",
+      "claim_type": "EXPLICIT",
+      "source": "A striking feature of this perspective is the blurred boundary between the notions of competition and genetic recombination (Shapiro et al., 2012; Rosen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical insight with supporting citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "061322c2-a48b-43f8-a550-41f175edc6be",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C93",
+      "claim": "Member regrouping in community coalescence can be much more flexible than the rules of sexual recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "Such member regrouping can be much more flexible than the rules of sexual recombination, but reduces to the latter in the particular case of communities with clearly demarcated functional guilds (e.g., consider competition between two communities that each has one plant, one pollinator, one herbivore, one carnivore, etc.).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical comparison between community coalescence and sexual reproduction.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "32faca7e-317c-45b0-baee-a0ee2e9d6c68",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C94",
+      "claim": "Community recombination would have allowed communities with divided labor to fix evolutionary novelty more efficiently than a clonal population of generalists before the evolution of sex.",
+      "claim_type": "EXPLICIT",
+      "source": "Long before the evolution of sex, such recombination would have allowed communities with divided labor to fix evolutionary novelty more efficiently than a clonal population of generalists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative evolutionary hypothesis based on the model.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "d2dadc6e-c87f-4694-a844-907534b29930",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C95",
+      "claim": "In general, collective dynamics are almost never reducible to solving an optimization problem.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, of course, collective dynamics are almost never reducible to solving an optimization problem (Akin, 1979; Hofbauer and Sigmund, 1998; Metz et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "79a8311d-bef9-4ddd-b555-1f3ff82762cb",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C96",
+      "claim": "The effective cohesion of coalescing communities is a result of environment-dependent species' performance combined with the community shaping its own environment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the effective cohesion of coalescing communities described here is merely a result of environment-dependent species' performance combined with the community shaping its own environment, a niche construction effect (Scott-Phillips et al., 2014) not specific to one modeling framework.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion with supporting citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "b60e1c28-da80-4111-99e4-7d5f67d71af0",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C97",
+      "claim": "In a more general model, it would not be possible to quantify community cohesion with a single number.",
+      "claim_type": "EXPLICIT",
+      "source": "In the model at hand, the existence of a global objective function made this phenomenon particularly easy to investigate; in a more general model, it would not be possible to quantify this effect with a single number (a 'community fitness').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges limitations of the specific model used.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "099bf4c7-4a5c-426c-af2d-453bcc54d204",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C98",
+      "claim": "The qualitative result of community cohesion may be expected to persist in more general models.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the qualitative result may be expected to persist, so that members of a co-evolved community with a history of coalescence would tend to have higher persistence upon interaction with a 'naive' community that had never been exposed to such events, as proposed by Rillig et al. (2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative extrapolation with supporting citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "6f0a641f-a1df-440d-aa2c-d83b7a4bcda8",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C99",
+      "claim": "Functional cohesion is conceptually separate from discussions of 'altruism' and cooperation.",
+      "claim_type": "EXPLICIT",
+      "source": "The results presented here, derived in a purely competitive model, demonstrate that functional cohesion is conceptually separate from the discussions of 'altruism' and cooperation (Gardner and Grafen, 2009), except to the extent described by the formula 'enemy of my enemy is my friend' (indirect facilitation [Levine, 1999]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical conclusion with supporting citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "306b899b-d1ad-4f7e-8b7c-c8af1f18cf27",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C100",
+      "claim": "Indirect facilitation can be seen as a form of cooperation but is not vulnerable to 'cheaters'.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter can be seen as a form of cooperation (Hay et al., 2004), but is a generic phenomenon and is not vulnerable to 'cheaters'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical interpretation with supporting citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "86c961f4-b1dd-4bf2-993e-0c75dd39b403",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C101",
+      "claim": "Many effects omitted from this model can be expected to further contribute to community cohesion, especially co-evolved interdependence of organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "While the criteria of 'true multicellularity' are too stringent to apply to most natural communities, the phenomenon described in this work is a generic consequence of ecological interactions in a diverse ecosystem. Many effects omitted here can be expected to further contribute to such cohesion, especially co-evolved interdependence of organisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about factors not included in the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "e4f887cb-4db5-4ac1-9ef2-1182a5462e14",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "claim_id": "C102",
+      "claim": "If whole-community coalescence events are a significant factor shaping the evolutionary history of microbial consortia, then community-level cohesion can be expected to be broadly relevant for natural ecosystems.",
+      "claim_type": "EXPLICIT",
+      "source": "If whole-community coalescence events are indeed a significant factor shaping the evolutionary history of microbial consortia, then community-level cohesion of the type described here can be expected to be broadly relevant for natural ecosystems (Doolittle and Zhaxybayeva, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conditional speculation with supporting citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "978889ad-fbac-4e07-b9fd-51665f0aa20f",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological and ecological context for studying community coalescence, citing prior work showing that microbial communities are complex, species-variable but functionally stable, and that community-level states (healthy/diseased, lean/obese) can compete as units.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C21 are all citation-based claims that accurately represent established findings from prior literature (Human Microbiome Project, studies on obesity, fecal transplants, etc.). These provide appropriate context and motivation for the theoretical work, though they represent background rather than novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "9e323fd7-3f52-4103-809c-0f6d73ed0c95",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript positions its work relative to multi-level selection theory, noting that established criteria for multicellularity require cooperation, which most natural communities (including gut microbiota) do not satisfy, and that species performance is context-dependent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 accurately cite and interpret established theory from multi-level selection and community ecology. These claims appropriately frame the theoretical gap the manuscript aims to address: community-level behavior without requiring cooperation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "d99d27d6-fc67-4eb8-80bc-7b4f878b1f29",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The model is based on MacArthur's competitive coexistence framework and purposefully excludes trophic interactions and cooperation to demonstrate that community cohesion arises from resource partitioning alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C32, and C34 accurately describe the model's theoretical foundation and intentional simplifications. The purely competitive framework (verified by the negative interaction matrix in Equation 4) is essential to the manuscript's argument that cohesion requires no cooperation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "d3c1c78b-22f1-437d-855a-1a879d8ae6b9",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In the model, the equilibrium community composition depends only on which species are initially present (not their abundances), and simulations show that surviving species tend to have high intrinsic performance but this correlation is imperfect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C42 are supported by the mathematical properties of the model (convexity of F) and simulation data in Figure 2. The observation that species ranked #4 went extinct while species ranked #29 survived (C42) effectively demonstrates the context-dependence that motivates the community-level perspective.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "a149bd6a-c353-481e-90db-01a4ff22af15",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The model possesses a Lyapunov function F that monotonically increases toward equilibrium, representing a generalization of Tilman's R* rule where communities optimize collective substrate depletion rather than individual species performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C58 describe the central mathematical result. The derivation of F (Equation 6-7) and proof of dF/dt > 0 (Equation 8) are mathematically sound. Figure 3 provides empirical support showing F increases monotonically while individual performance becomes less predictive near equilibrium. This establishes the theoretical foundation for community-level fitness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "5b8d61ef-56bc-480e-ae72-9386f09e4e60",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In community coalescence simulations, the collective fitness F of a species' native community is a much stronger predictor of post-coalescence survival than the species' individual performance, with species from high-F communities persisting even when they have lower intrinsic performance than competitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2 and C63-C70 represent the manuscript's primary empirical finding, supported by elimination assays in Figure 4B-D. The contrast between quadrants I vs. III (where both predictors agree) and II vs. IV (where they disagree, with F winning) is compelling. Figure 4D quantitatively shows community fitness strongly predicts outcomes while individual performance does not. This is the key result supporting community-level cohesion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "0984e656-da67-4cfc-b5f2-7c4c209d769a",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The model establishes a mathematically exact analogy between communities with variable species abundances and organisms with variable gene expression, where community fitness F reduces to individual performance for single-species communities, though this analogy concerns ecological interactions not reproduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C27-C28, C71, C76, C78-C79, and C89 describe the theoretical interpretation. The mathematical derivation showing F equals individual performance for single-species communities (Equation 9) is correct. The analogy is carefully qualified as not constituting true multicellularity (C28), which is appropriate. The interpretation is internally consistent with the model structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "cb811eb2-f6fb-490d-a136-ed43eac721fc",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Community cohesion arises generically from context-dependent fitness and niche construction, with the parameter \u03b5 tuning the relative importance of intrinsic versus environmental factors in determining species success.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C84 provide mechanistic interpretation supported by the model structure and Figure 5, which shows that increasing cost scatter \u03b5 reduces community cohesion by making intrinsic performance more dominant. The explanation that small environmental changes can reorder fitness rankings at small \u03b5 is consistent with the model dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "3a9de93e-bb13-43b2-a1ea-729f2b10e3f1",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The effective cohesion demonstrated requires no cooperative interactions and is conceptually distinct from multi-level selection theory, arising instead from resource partitioning and indirect facilitation in purely competitive dynamics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C29, C34, C99-C100 articulate the manuscript's key conceptual contribution: demonstrating community-level behavior without cooperation. The purely competitive model structure (negative interaction matrix) directly supports this. The distinction from MLS theory is appropriately drawn, though the claim that this is 'generic' (C5) is somewhat overstated given the model's specific assumptions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "89b1c700-f977-4acd-bf63-c11f4772a6e0",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Community coalescence can be viewed as analogous to genetic recombination, potentially allowing pre-sexual communities to fix evolutionary novelty more efficiently than clonal generalists.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90, C93-C94 present an interesting theoretical perspective linking community coalescence to recombination. While the analogy is creative and the model does show 'recombination' of species between communities, the claim about pre-sexual evolution (C94) is highly speculative with no empirical or detailed theoretical support provided. This remains an intriguing hypothesis requiring further development.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    },
+    {
+      "id": "222ab30f-40e2-407e-80c6-9820c870f1ea",
+      "content_id": "c43cb25b-0c58-4731-b6b5-c5b44a096c37",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors speculate that community cohesion should be widespread in microbial ecosystems and persist in more general models beyond the specific optimization framework used here, though quantifying it may require more complex approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7, C95-C98, C101-C102 are explicitly speculative about generalization beyond the model. While the authors appropriately acknowledge that most ecological dynamics don't reduce to optimization (C95) and that their model has special properties (C97), the prediction that qualitative results will persist (C98) lacks rigorous justification. These are reasonable hypotheses for future work but remain undemonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:52.818412Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "47baefe8-4b5e-4d55-89b0-764d06eb5dbf",
+      "result_id": "978889ad-fbac-4e07-b9fd-51665f0aa20f"
+    },
+    {
+      "claim_id": "7190c44c-a7c6-49b5-875d-f580ee5958d5",
+      "result_id": "978889ad-fbac-4e07-b9fd-51665f0aa20f"
+    },
+    {
+      "claim_id": "d67a8974-867a-4833-bce4-199c7901cb19",
+      "result_id": "978889ad-fbac-4e07-b9fd-51665f0aa20f"
+    },
+    {
+      "claim_id": "ea6ed951-9462-486a-89bc-728ae80e45cb",
+      "result_id": "978889ad-fbac-4e07-b9fd-51665f0aa20f"
+    },
+    {
+      "claim_id": "b97c7871-b700-4e67-ad49-8a1066395cf2",
+      "result_id": "978889ad-fbac-4e07-b9fd-51665f0aa20f"
+    },
+    {
+      "claim_id": "83179633-0872-410b-97df-b48ad903182b",
+      "result_id": "978889ad-fbac-4e07-b9fd-51665f0aa20f"
+    },
+    {
+      "claim_id": "9f69d04a-a52e-4f99-a813-ccd792cbcc36",
+      "result_id": "978889ad-fbac-4e07-b9fd-51665f0aa20f"
+    },
+    {
+      "claim_id": "01a86e81-e525-4707-8f14-508a9c802d14",
+      "result_id": "978889ad-fbac-4e07-b9fd-51665f0aa20f"
+    },
+    {
+      "claim_id": "570b8555-d6a4-4329-aa26-120536279c3d",
+      "result_id": "978889ad-fbac-4e07-b9fd-51665f0aa20f"
+    },
+    {
+      "claim_id": "31a9bdeb-4de3-4c74-8b00-14d649be089e",
+      "result_id": "978889ad-fbac-4e07-b9fd-51665f0aa20f"
+    },
+    {
+      "claim_id": "d6fe3534-5e04-4905-b91a-e3a04607df80",
+      "result_id": "978889ad-fbac-4e07-b9fd-51665f0aa20f"
+    },
+    {
+      "claim_id": "c957a13c-b43b-4df0-a775-4ec39a9fbde7",
+      "result_id": "978889ad-fbac-4e07-b9fd-51665f0aa20f"
+    },
+    {
+      "claim_id": "475c4677-637d-4a68-8c18-78575767d9cf",
+      "result_id": "978889ad-fbac-4e07-b9fd-51665f0aa20f"
+    },
+    {
+      "claim_id": "85b38da8-427e-41f9-ae2f-c334b1319254",
+      "result_id": "978889ad-fbac-4e07-b9fd-51665f0aa20f"
+    },
+    {
+      "claim_id": "5b164595-d487-4c5d-8768-a51779b3f35d",
+      "result_id": "9e323fd7-3f52-4103-809c-0f6d73ed0c95"
+    },
+    {
+      "claim_id": "5a9d1a37-6cfa-4b9c-8146-de37942bb028",
+      "result_id": "9e323fd7-3f52-4103-809c-0f6d73ed0c95"
+    },
+    {
+      "claim_id": "ee9f44c9-96c0-474a-98e6-098c377caea1",
+      "result_id": "9e323fd7-3f52-4103-809c-0f6d73ed0c95"
+    },
+    {
+      "claim_id": "0ee41bd1-8d4c-45b0-a6aa-5cb71a6b6919",
+      "result_id": "9e323fd7-3f52-4103-809c-0f6d73ed0c95"
+    },
+    {
+      "claim_id": "85fef22a-84c5-4f57-bbe5-9f992e729146",
+      "result_id": "9e323fd7-3f52-4103-809c-0f6d73ed0c95"
+    },
+    {
+      "claim_id": "8b88e82e-d044-4e36-a1c3-d387e7980f29",
+      "result_id": "d99d27d6-fc67-4eb8-80bc-7b4f878b1f29"
+    },
+    {
+      "claim_id": "cb1c3edd-964a-4cc7-8f91-b2fbcd233d2d",
+      "result_id": "d99d27d6-fc67-4eb8-80bc-7b4f878b1f29"
+    },
+    {
+      "claim_id": "e53bda46-65df-47a0-a52e-c6791bc91532",
+      "result_id": "d99d27d6-fc67-4eb8-80bc-7b4f878b1f29"
+    },
+    {
+      "claim_id": "dce3f99e-dfc9-4ee9-b064-a8a8d3729103",
+      "result_id": "d3c1c78b-22f1-437d-855a-1a879d8ae6b9"
+    },
+    {
+      "claim_id": "611b036a-b514-4468-b5fa-2ece04944185",
+      "result_id": "d3c1c78b-22f1-437d-855a-1a879d8ae6b9"
+    },
+    {
+      "claim_id": "e0e41714-952b-4aed-962b-1737f1729f9d",
+      "result_id": "d3c1c78b-22f1-437d-855a-1a879d8ae6b9"
+    },
+    {
+      "claim_id": "153c924d-0c78-4832-8719-62c6417fd8e0",
+      "result_id": "d3c1c78b-22f1-437d-855a-1a879d8ae6b9"
+    },
+    {
+      "claim_id": "b423ab24-5f94-4ac3-abad-5d59b1639d8b",
+      "result_id": "d3c1c78b-22f1-437d-855a-1a879d8ae6b9"
+    },
+    {
+      "claim_id": "f821ec10-1e34-4353-b6dd-af15dc961bf0",
+      "result_id": "a149bd6a-c353-481e-90db-01a4ff22af15"
+    },
+    {
+      "claim_id": "e40058e4-2983-4579-955d-32757eb83c9b",
+      "result_id": "a149bd6a-c353-481e-90db-01a4ff22af15"
+    },
+    {
+      "claim_id": "5ca58ce0-a54a-41d6-8223-41a20f24978c",
+      "result_id": "a149bd6a-c353-481e-90db-01a4ff22af15"
+    },
+    {
+      "claim_id": "62c3a29c-4694-471c-8b6b-705f83b9f4fe",
+      "result_id": "a149bd6a-c353-481e-90db-01a4ff22af15"
+    },
+    {
+      "claim_id": "b23a607a-b57a-44cc-b332-5fe74a8a480c",
+      "result_id": "a149bd6a-c353-481e-90db-01a4ff22af15"
+    },
+    {
+      "claim_id": "c40eec4c-a330-426d-bc40-d6b49a55d990",
+      "result_id": "a149bd6a-c353-481e-90db-01a4ff22af15"
+    },
+    {
+      "claim_id": "cc3cef77-c2e9-4c3b-bd45-6010066ffc59",
+      "result_id": "a149bd6a-c353-481e-90db-01a4ff22af15"
+    },
+    {
+      "claim_id": "fcfa52fc-77ea-4128-ad98-6c81eb24adb2",
+      "result_id": "a149bd6a-c353-481e-90db-01a4ff22af15"
+    },
+    {
+      "claim_id": "c8959b5e-9cf0-40da-bfab-fa8fb51eeb5c",
+      "result_id": "5b8d61ef-56bc-480e-ae72-9386f09e4e60"
+    },
+    {
+      "claim_id": "42e4a00e-0a97-4c17-b4b4-987afcae995e",
+      "result_id": "5b8d61ef-56bc-480e-ae72-9386f09e4e60"
+    },
+    {
+      "claim_id": "c0d23c78-3171-4b6c-b787-76b0df598da5",
+      "result_id": "5b8d61ef-56bc-480e-ae72-9386f09e4e60"
+    },
+    {
+      "claim_id": "cc7e4c88-a7c4-4a00-99bc-101d1448b2c0",
+      "result_id": "5b8d61ef-56bc-480e-ae72-9386f09e4e60"
+    },
+    {
+      "claim_id": "480e85d5-916f-4951-a5c3-5d3db385d969",
+      "result_id": "5b8d61ef-56bc-480e-ae72-9386f09e4e60"
+    },
+    {
+      "claim_id": "3a569716-bbdd-44a3-85a9-84a6cea1b89f",
+      "result_id": "5b8d61ef-56bc-480e-ae72-9386f09e4e60"
+    },
+    {
+      "claim_id": "64a26fc2-f0cb-42df-bbc5-93c421575ea3",
+      "result_id": "5b8d61ef-56bc-480e-ae72-9386f09e4e60"
+    },
+    {
+      "claim_id": "a7d8d6d7-c4ce-4117-8edd-1f3e1a6e6125",
+      "result_id": "5b8d61ef-56bc-480e-ae72-9386f09e4e60"
+    },
+    {
+      "claim_id": "c16ce967-81c2-4adc-8a6d-cdb48f871919",
+      "result_id": "5b8d61ef-56bc-480e-ae72-9386f09e4e60"
+    },
+    {
+      "claim_id": "06c9ec67-e884-4d50-acdf-e3829ee42be3",
+      "result_id": "0984e656-da67-4cfc-b5f2-7c4c209d769a"
+    },
+    {
+      "claim_id": "eef60880-9541-4967-810c-c3e3ec87ab0f",
+      "result_id": "0984e656-da67-4cfc-b5f2-7c4c209d769a"
+    },
+    {
+      "claim_id": "095627ed-210f-4c35-a92c-ddf200090db8",
+      "result_id": "0984e656-da67-4cfc-b5f2-7c4c209d769a"
+    },
+    {
+      "claim_id": "cd63da81-a9fe-4eb7-b294-df93f9096d27",
+      "result_id": "0984e656-da67-4cfc-b5f2-7c4c209d769a"
+    },
+    {
+      "claim_id": "b67fd6e4-e4c6-47e4-9a42-10a8b51a0900",
+      "result_id": "0984e656-da67-4cfc-b5f2-7c4c209d769a"
+    },
+    {
+      "claim_id": "52232281-52c8-4d44-b11e-9957e5d5e131",
+      "result_id": "0984e656-da67-4cfc-b5f2-7c4c209d769a"
+    },
+    {
+      "claim_id": "25f709c5-4c7f-41f4-977e-65b4dad1941a",
+      "result_id": "0984e656-da67-4cfc-b5f2-7c4c209d769a"
+    },
+    {
+      "claim_id": "1ce2893c-1329-4fbd-abba-8183b86dff6d",
+      "result_id": "0984e656-da67-4cfc-b5f2-7c4c209d769a"
+    },
+    {
+      "claim_id": "682ff841-83d7-4aaa-a250-8d8de08bef3e",
+      "result_id": "cb811eb2-f6fb-490d-a136-ed43eac721fc"
+    },
+    {
+      "claim_id": "70e0fd63-f2e0-42a7-a5b9-83a03fea20ce",
+      "result_id": "cb811eb2-f6fb-490d-a136-ed43eac721fc"
+    },
+    {
+      "claim_id": "c223f66b-f7d5-4cef-aea3-7de60e04fed0",
+      "result_id": "cb811eb2-f6fb-490d-a136-ed43eac721fc"
+    },
+    {
+      "claim_id": "445e1871-07cc-4c37-9a44-5a9822a1c475",
+      "result_id": "cb811eb2-f6fb-490d-a136-ed43eac721fc"
+    },
+    {
+      "claim_id": "31d4f5cf-ab6d-48a4-996c-5a3520b9737b",
+      "result_id": "3a9de93e-bb13-43b2-a1ea-729f2b10e3f1"
+    },
+    {
+      "claim_id": "e667070d-21ce-47b0-8ad5-f2735c63e219",
+      "result_id": "3a9de93e-bb13-43b2-a1ea-729f2b10e3f1"
+    },
+    {
+      "claim_id": "66dc83b9-4cb9-4aef-bca0-37730c619552",
+      "result_id": "3a9de93e-bb13-43b2-a1ea-729f2b10e3f1"
+    },
+    {
+      "claim_id": "c71a34f7-82ee-467c-9284-ee4e112b4d50",
+      "result_id": "3a9de93e-bb13-43b2-a1ea-729f2b10e3f1"
+    },
+    {
+      "claim_id": "e53bda46-65df-47a0-a52e-c6791bc91532",
+      "result_id": "3a9de93e-bb13-43b2-a1ea-729f2b10e3f1"
+    },
+    {
+      "claim_id": "6f0a641f-a1df-440d-aa2c-d83b7a4bcda8",
+      "result_id": "3a9de93e-bb13-43b2-a1ea-729f2b10e3f1"
+    },
+    {
+      "claim_id": "306b899b-d1ad-4f7e-8b7c-c8af1f18cf27",
+      "result_id": "3a9de93e-bb13-43b2-a1ea-729f2b10e3f1"
+    },
+    {
+      "claim_id": "a72cfe28-4113-451a-8aef-c792ab5cedd2",
+      "result_id": "89b1c700-f977-4acd-bf63-c11f4772a6e0"
+    },
+    {
+      "claim_id": "061322c2-a48b-43f8-a550-41f175edc6be",
+      "result_id": "89b1c700-f977-4acd-bf63-c11f4772a6e0"
+    },
+    {
+      "claim_id": "32faca7e-317c-45b0-baee-a0ee2e9d6c68",
+      "result_id": "89b1c700-f977-4acd-bf63-c11f4772a6e0"
+    },
+    {
+      "claim_id": "605ffa51-485d-4cee-8dce-80c854e45b74",
+      "result_id": "222ab30f-40e2-407e-80c6-9820c870f1ea"
+    },
+    {
+      "claim_id": "d2dadc6e-c87f-4694-a844-907534b29930",
+      "result_id": "222ab30f-40e2-407e-80c6-9820c870f1ea"
+    },
+    {
+      "claim_id": "79a8311d-bef9-4ddd-b555-1f3ff82762cb",
+      "result_id": "222ab30f-40e2-407e-80c6-9820c870f1ea"
+    },
+    {
+      "claim_id": "b60e1c28-da80-4111-99e4-7d5f67d71af0",
+      "result_id": "222ab30f-40e2-407e-80c6-9820c870f1ea"
+    },
+    {
+      "claim_id": "099bf4c7-4a5c-426c-af2d-453bcc54d204",
+      "result_id": "222ab30f-40e2-407e-80c6-9820c870f1ea"
+    },
+    {
+      "claim_id": "86c961f4-b1dd-4bf2-993e-0c75dd39b403",
+      "result_id": "222ab30f-40e2-407e-80c6-9820c870f1ea"
+    },
+    {
+      "claim_id": "e4f887cb-4db5-4ac1-9ef2-1182a5462e14",
+      "result_id": "222ab30f-40e2-407e-80c6-9820c870f1ea"
+    }
+  ],
+  "comparisons": []
+}

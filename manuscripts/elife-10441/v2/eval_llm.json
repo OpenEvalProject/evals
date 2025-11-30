@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Biogenic amines are recognized by GPCRs through a conserved salt bridge between the ligand amino group and Asp3.32 on transmembrane helix III, and mutation of this residue eliminates amine recognition in multiple receptor types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are well-established facts in GPCR biology, supported by multiple citations to peer-reviewed literature (Katritch et al., 2013; Shi and Javitch, 2002; Surgand et al., 2006). This represents foundational knowledge for the field and provides the context for the novel findings in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C11",
+      "C12"
+    ],
+    "result": "TAARs are a family of vertebrate olfactory receptors with varying repertoire sizes across species. Most mammalian TAARs retain the canonical Asp3.32, while most zebrafish clade III TAARs (85/87) lack this residue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C11-C12 provide established background information about TAAR distribution and sequence features, supported by citations to published phylogenetic and sequence analyses. The bioinformatic observations about Asp3.32 conservation are straightforward sequence analyses that can be independently verified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C15"
+    ],
+    "result": "TAAR13c recognizes the diamine cadaverine through two remote aspartates: Asp3.32 on transmembrane helix III and Asp5.42 on transmembrane helix V. Computational docking and mutagenesis experiments demonstrate that both residues are essential for cadaverine recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24, C26-C27, and C15 collectively demonstrate the dual aspartate mechanism through homology modeling (based on appropriate template with 33% identity), computational docking, and functional mutagenesis. The mutagenesis data (Figure 1C) shows statistically significant loss of function (p<0.01) for both D112A and D202A mutants, providing strong experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C16"
+    ],
+    "result": "Mutation of Asp5.42 to alanine in TAAR13c transforms the receptor from a diamine receptor (responsive to cadaverine) into a monoamine receptor (responsive to 3-methoxytyramine), demonstrating the functional importance of this residue in determining ligand specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 and C16 describe a gain-of-function experiment where the D202A mutant acquires responsiveness to 3-methoxytyramine while losing cadaverine responsiveness. This is supported by dose-response data (Figure 1D) and represents strong evidence for the role of Asp5.42 in ligand orientation and specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Bioinformatic analysis reveals that Asp5.42 is absent from most mammalian biogenic amine receptors but is present in the vast majority of zebrafish TAARs (91/112). Most zebrafish TAARs with Asp5.42 lack Asp3.32 (84/91), and this pattern is conserved across multiple fish species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C41 present comprehensive bioinformatic analysis of Asp3.32 and Asp5.42 distribution across receptor families and species. The data are presented systematically in Figure 2 and represent straightforward sequence analysis that can be independently verified. The observations are internally consistent and supported by phylogenetic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Phylogenetic analysis indicates that clade III TAARs (containing Asp5.42 but not Asp3.32) are found in teleosts and constitute a large branch of the TAAR family. TAARs with both aspartates reside phylogenetically between clade I and clade III, suggesting clade III evolved from clade I by first gaining Asp5.42 then losing Asp3.32.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 present phylogenetic analysis (Figures 2, 2\u2014figure supplements 1-2) using appropriate methods (RAxML, maximum likelihood, 100 bootstrap replicates). The evolutionary inference in C45 is reasonable given the phylogenetic placement of intermediate forms, though it remains an inference rather than direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C18"
+    ],
+    "result": "High-throughput screening of 63 zebrafish TAARs identified ligands for four clade I TAARs (TAAR10a, TAAR10b, TAAR12h, TAAR12i) that retain Asp3.32. These receptors detect primary monoamines including serotonin, tryptamine, 2-phenylethylamine, and 3-methoxytyramine with EC50 values ranging from 0.3-100 \u03bcM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 and C18 describe ligand identification for clade I TAARs using validated heterologous expression methods (C48). The dose-response data are presented with error bars (n=3 or n=6) and show clear concentration-dependent responses. The approach has been extensively validated in prior studies with in vivo confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C66",
+      "C20"
+    ],
+    "result": "Seven zebrafish TAARs retain both Asp3.32 and Asp5.42 and recognize di-cationic molecules. TAAR13d detects putrescine (EC50 ~1 \u03bcM) with strict length selectivity, TAAR13a selectively detects histamine (EC50 ~20 \u03bcM), and TAAR13e and TAAR14d detect agmatine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60, C62-C63, C66, and C20 describe ligand identification for dual-aspartate TAARs. The dose-response data (Figure 4A and related figures) show clear concentration-dependent activation with appropriate controls and replicates (n=3). The structure-activity relationships (e.g., 3000-fold reduced sensitivity for diaminopropane vs putrescine) support specific recognition mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C19"
+    ],
+    "result": "Three clade III TAARs lacking Asp3.32 (TAAR16c, TAAR16e, TAAR16f) detect monoamines including N-methylpiperidine, N,N-dimethylcyclohexylamine, and isoamylamine. Structure-activity studies demonstrate that the amino group is essential for receptor activation, as oxygen-containing analogs fail to activate these receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C76 and C19 demonstrate that clade III TAARs are amine receptors despite lacking Asp3.32. The structure-activity data (Figure 4, Figure 4\u2014figure supplements) provide strong evidence: removing the amino group or replacing it with oxygen abolishes activity. This is critical evidence that clade III TAARs detect amines through a non-canonical mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Mutagenesis studies demonstrate that clade I TAARs require Asp3.32 for amine recognition, clade III TAARs require Asp5.42, and dual-aspartate TAARs require both residues. Charge-neutralizing mutations at the critical aspartate(s) completely eliminate or greatly reduce ligand responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 present systematic mutagenesis data (Figure 5) for nine TAARs representing different clades. The data consistently show loss of function upon mutation of the predicted critical aspartate(s), with appropriate controls (n=3). This provides strong functional validation of the bioinformatic predictions and structural models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C87"
+    ],
+    "result": "Homology modeling indicates that clade I TAARs position ligands with the amino group near Asp3.32, while clade III TAARs invert the ligand with the amino group near Asp5.42. Engineering a serotonin receptor (HTR6) to swap aspartate positions (D3.32A; A5.42D) changes ligand preference from serotonin to ethanolamine, supporting the ligand inversion model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 and C87 combine structural modeling with a critical gain-of-function experiment. The HTR6 double mutant experiment (Figure 6\u2014figure supplement 1) provides strong support for the ligand inversion hypothesis by demonstrating that moving the anionic site from position 3.32 to 5.42 changes ligand specificity. Statistical significance is shown (p<0.05, p<0.01, n=3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C21"
+    ],
+    "result": "The authors propose a two-step evolutionary model: an ancestral clade I TAAR gained Asp5.42 to recognize diamines, then lost Asp3.32 to create clade III TAARs with non-classical monoamine recognition. This innovation allowed dramatic expansion of clade III TAARs through gene duplication, increasing the capacity to detect water-soluble amine odors important for aquatic animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102 and C21 present an evolutionary model supported by phylogenetic analysis, ligand identification, and functional data. The model is internally consistent with the data: intermediate forms exist phylogenetically (C44), functional validation supports the proposed mechanisms (mutagenesis data), and the expansion of clade III is documented. However, this remains an evolutionary inference rather than direct historical evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C64",
+      "C65"
+    ],
+    "result": "Zebrafish TAARs that detect biogenic amines (serotonin, histamine, 2-phenylethylamine) share only modest sequence identity (18-41%) with mammalian receptors for the same ligands, suggesting convergent evolution of ligand recognition within the GPCR family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57, C64-C65 present sequence comparisons showing low identity between zebrafish TAARs and mammalian receptors for the same ligands. The convergent evolution interpretation (C65) is reasonable given the low sequence identity and phylogenetic distance, though it remains an inference. The observation that different GPCR families evolved to recognize the same ligands is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Zebrafish have comparable numbers of TAARs (112) and odorant receptors (143), representing a much larger proportion of olfactory receptors than in mammals (1-2%). Almost all zebrafish TAARs (111/112) contain Asp3.32, Asp5.42, or both, suggesting teleost TAARs represent a large family of diverse amine receptors with an expanded role in fish chemosensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 synthesize the bioinformatic and functional data to draw conclusions about the importance of TAARs in fish olfaction. The numerical data are straightforward (C88-C89, C91), and the inference about expanded role (C90, C92) is reasonable given the relative repertoire sizes and the demonstration that most zebrafish TAARs are amine receptors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Many identified TAAR ligands (cadaverine, histamine, agmatine, putrescine, tryptamine, 2-phenylethylamine, isoamylamine) are biogenic amines produced by microbial decarboxylation of amino acids. These compounds are measured as indicators of fish quality and freshness, and evoke various behaviors in fish species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 provide ecological and behavioral context for the identified ligands, supported by citations to published literature on biogenic amine biosynthesis (C93), food quality indicators (C94), scombroid poisoning (C95), and fish behavior (C96-C97). This contextualizes the biological significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The study employed standard molecular biology, cell biology, bioinformatics, and computational methods including gene cloning, reporter gene assays, phylogenetic analysis (RAxML with 100 bootstrap replicates), homology modeling (SWISS-MODEL), and ligand docking (Schr\u00f6dinger Glide).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C110 describe the methods used in the study. All methods are standard, well-established approaches with appropriate citations to software and protocols. The methods are described with sufficient detail for reproducibility, including software versions, parameters, and validation approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C13",
+      "C14",
+      "C25",
+      "C61",
+      "C67"
+    ],
+    "result": "Prior studies established that mammalian TAARs detect various amines with specific behavioral consequences, TAAR13c detects cadaverine with preference for odd-chained diamines, and position 5.42 in some GPCRs contacts ligands. These findings provide context for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10, C13-C14, C25, C61, and C67 summarize relevant prior work, all supported by appropriate citations to peer-reviewed literature. These claims establish the scientific context and prior knowledge upon which the current study builds.",
+    "result_type": "MINOR"
+  }
+]

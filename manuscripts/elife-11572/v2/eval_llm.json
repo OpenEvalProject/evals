@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "A behavioral screen identified that RNAi-mediated knockdown of Sema1a, PlexA, and PlexB in leg motoneurons results in locomotor defects, while Sema2a knockdown does not affect walking behavior. The authors conclude that PlexA, PlexB, and Sema1a, but not Sema2a, are required in leg motoneurons for correct locomotor activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 provide specific behavioral phenotypes for each knockdown, and C23 synthesizes these observations into a coherent conclusion. The data are consistent across multiple genotypes and the negative control (Sema2a) strengthens the specificity of the findings. The behavioral assay (footprint tracking) is appropriate for assessing walking defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C33",
+      "C34"
+    ],
+    "result": "PlexA/Sema1a knockdown in leg motoneurons causes region-specific axon projection defects in the proximal femur, characterized by reduced axon branching and defasciculation. Two distinct phenotypes are observed: stalling of the tidm-innervating branch and failure of the ltm2-innervating branch to defasciculate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 establish the wild-type baseline, C26-C28 describe specific phenotypes with supporting figures, and C33-C34 provide appropriate interpretation. The phenotypes are well-documented with imaging data (Figure 2) and the description of two distinct defects suggests careful phenotypic analysis. The use of OK371-Gal4 for pan-motoneuron knockdown is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34"
+    ],
+    "result": "PlexA/Sema1a knockdown in leg motoneurons causes increased axon branching in the distal tibia, with excessive defasciculation affecting both tadm and tarm innervation. This contrasts with the reduced branching observed in the proximal femur.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29 establishes wild-type anatomy, C30-C32 describe the increased branching phenotype with figure support, and C34 explicitly notes the regional difference. The opposing phenotypes in femur vs. tibia are well-documented and suggest compartment-specific roles for PlexA/Sema1a signaling. The data are consistent across both PlexA and Sema1a knockdowns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Overexpression of PlexA or Sema1a in leg motoneurons produces axon branching phenotypes opposite to those seen in knockdown experiments. In the femur, overexpression causes increased defasciculation, while in the tibia it causes decreased branching. The authors conclude that normal levels of PlexA/Sema1a signaling are required for correct axonal projections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 provide detailed phenotypic descriptions with figure support, showing that both gain- and loss-of-function produce aberrant phenotypes. Claims C41-C43 appropriately synthesize these findings. The bidirectional perturbation approach strengthens the conclusion that precise PlexA/Sema1a levels are critical. The observation that overexpression phenotypes are generally opposite to knockdown phenotypes is internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Using the VGN6341-Gal4 driver to target a subset of motoneurons, the authors show that PlexA/Sema1a knockdown in early-born femur motoneurons causes loss of appropriate femoral innervation and gain of inappropriate tibial innervation. This mis-projection phenotype is confirmed in genetic mutants and likely contributes to the overall axonal projection defects observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 describe experiments using a more restricted Gal4 driver and genetic mutants, providing cell-type-specific evidence. C48-C49 appropriately interpret these findings. The use of multiple approaches (RNAi with specific driver, null mutants, heteroallelic combinations, trans-heterozygotes) strengthens the conclusions. The mis-projection phenotype provides a mechanistic explanation for the opposing femur/tibia phenotypes observed with pan-motoneuron knockdown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Immunolabeling reveals that Sema1a and Sema2a are widely expressed in thoracic ganglia but show opposing gradients at the midline: Sema1a is lowest at the midline while Sema2a is highest at/near the midline. The authors hypothesize that midline-derived Sema2a could influence motoneuron dendrite development in a non-cell autonomous manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 describe expression patterns with figure support (Figure 5), and C54 proposes a reasonable hypothesis based on these observations. The expression analysis is quantitative (intensity profiles shown) and the opposing gradients are clearly documented. However, C54 is explicitly speculative and requires functional validation, which is appropriately provided in subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "PlexB knockdown in motoneurons causes dendritic mis-projection specifically in late-born motoneurons, with dendrites shifting medially and projecting ectopic branches toward the midline, resembling early-born motoneuron morphology. Sema2a knockdown in motoneurons has no effect on dendritic arbors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 establish the experimental approach and wild-type morphology, C58-C60 describe the PlexB knockdown phenotype with figure support, and C61 provides an important negative control. The birth-order specificity is well-documented and the transformation of late-born to early-born morphology is clearly shown. The negative result for Sema2a knockdown in motoneurons (C61) is critical for establishing non-cell autonomy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Sema2a knockdown in glial cells using Repo-Gal4 or Slit-Gal4 drivers causes dendritic mis-projection specifically in late-born motoneurons, phenocopying PlexB knockdown in motoneurons. The authors conclude that PlexB/Sema2a signaling is required for correct dendritic projections of late-born motoneurons, with PlexB acting cell-autonomously in motoneurons and Sema2a acting non-cell autonomously from glia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 describe the glial knockdown phenotype with multiple drivers and genetic mutant confirmation (C65), and C67-C68 provide appropriate mechanistic interpretation. The use of two different glial drivers (Repo-Gal4 and Slit-Gal4) strengthens the conclusion. The cell autonomy analysis is well-supported by comparing motoneuron-specific vs. glial-specific knockdowns. This represents a novel finding about glia-motoneuron communication in dendritic patterning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C85"
+    ],
+    "result": "The authors conclude that PlexA/Sema1a is required cell-autonomously in motoneurons for peripheral axon guidance affecting both early- and late-born motoneurons, while PlexB/Sema2a is required for central dendrite targeting specifically in late-born motoneurons, with PlexB acting cell-autonomously and Sema2a acting non-cell autonomously from glia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 and C85 synthesize the major findings from the axon guidance and dendrite targeting experiments. These conclusions are well-supported by the combined evidence from knockdown, overexpression, and genetic mutant analyses. The distinction between cell-autonomous and non-cell autonomous requirements is clearly established through tissue-specific manipulations. The birth-order specificity for PlexB/Sema2a but not PlexA/Sema1a is consistently demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C101"
+    ],
+    "result": "The authors demonstrate a correlation between Plexin/Semaphorin perturbations, motoneuron architectural defects, and abnormal walking behavior, supporting the functional importance of correct motoneuron architecture for walking circuitry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 and C101 connect the behavioral and anatomical phenotypes. The correlation is well-established through parallel analyses of the same genetic manipulations. However, the authors appropriately acknowledge that other effects on the neural circuitry may exist and that the correlation, while striking, does not definitively prove causation. The conclusion is appropriately cautious while still supporting the functional significance of the anatomical findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C86",
+      "C87"
+    ],
+    "result": "The authors propose that PlexA/Sema1a signaling may have multiple roles in motor axon guidance that are motoneuron-specific and potentially linked to birth order, possibly operating through axon-axon interactions or cis-interactions within motoneuron axons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C84 and C86-C87 are explicitly speculative hypotheses about mechanisms. While the differential effects in femur vs. tibia and the cell-autonomous requirement support the possibility of multiple roles, the specific mechanisms (axon-axon interactions vs. cis-interactions) are not directly tested. The birth-order linkage is inferred from the VGN6341-Gal4 experiments but not definitively proven. These are reasonable hypotheses that require further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors propose a model in which Sema2a secreted from midline and other glial cells acts through PlexB receptors on late-born motoneurons to restrict their dendrites to lateral neuropile domains, with PlexB acting cell-autonomously and Sema2a acting non-cell autonomously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 synthesize the expression and functional data into a coherent model. The model is well-supported by: (1) Sema2a expression at the midline (C50-C53), (2) PlexB knockdown phenotype in motoneurons (C58-C60), (3) Sema2a knockdown phenotype in glia (C62-C64), and (4) the specificity for late-born motoneurons. The cell autonomy conclusions are based on appropriate tissue-specific manipulations. This represents a novel mechanism for glial regulation of dendritic patterning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C79",
+      "C6"
+    ],
+    "result": "The authors conclude that two different Plexin/Semaphorin signaling systems (PlexA/Sema1a and PlexB/Sema2a) act through integrative communication within motoneurons and between glia and motoneurons to establish the specific leg motoneuron architecture required for a functional myotopic map and appropriate motor circuitry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99, C79, and C6 represent the main conclusions of the paper, synthesizing all experimental findings. These conclusions are well-supported by the combined evidence from behavioral, anatomical, expression, and genetic analyses. The demonstration of two distinct signaling systems with different cellular requirements (cell-autonomous vs. non-cell autonomous) and different target populations (all motoneurons vs. late-born motoneurons) is a significant advance. The connection to functional myotopic map formation is supported by the behavioral data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C72",
+      "C76",
+      "C80",
+      "C81",
+      "C82",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors provide extensive background on motoneuron organization, Plexin/Semaphorin signaling, and leg motoneuron development in Drosophila, establishing the context for their experimental work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from prior literature, appropriately cited throughout. They provide necessary context for understanding the significance of the current findings. The citations appear accurate and relevant. This background information is essential for framing the research questions but does not constitute novel findings from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "The authors suggest that the relative independence of PlexA/Sema1a and PlexB/Sema2a signaling systems could allow axon guidance and dendrite targeting to operate at separate times, but note that timeline analysis indicates these processes occur simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C100 proposes a hypothesis about temporal independence that is immediately contradicted by cited evidence (C72) showing simultaneous development. This appears to be a speculative discussion point rather than a supported conclusion. The authors appropriately acknowledge that the hypothesis is unlikely given the temporal overlap, but the logical flow is somewhat unclear.",
+    "result_type": "MINOR"
+  }
+]

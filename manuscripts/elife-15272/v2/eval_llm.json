@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C24"
+    ],
+    "result": "The manuscript provides historical context for Zika virus, documenting its discovery in Uganda in 1947, transmission by Aedes mosquitoes, sporadic infections until 2007, and subsequent outbreaks in Micronesia (2007), French Polynesia (2013-14), and Latin America (2015), with phylogeographic evidence suggesting introduction to Latin America between May-December 2013.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by appropriate citations to primary literature (Dick et al. 1952, 1953; Lanciotti et al. 2008; Musso et al. 2015a; Zanluca et al. 2015; Faria et al. 2016). The historical narrative is consistent with established knowledge and provides proper attribution to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C25",
+      "C26",
+      "C27",
+      "C73"
+    ],
+    "result": "The manuscript reports associations between ZIKV and severe complications including microcephaly in infants and Guillain-Barr\u00e9 syndrome in adults, which prompted WHO's declaration of a Public Health Emergency of International Concern and led to public health warnings for pregnant women.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are appropriately cited (WHO 2015; Martines et al. 2016; Heymann et al. 2016; Gatherer and Kohl 2016) and accurately describe the public health response. The authors appropriately use cautious language ('possible associations', 'could lead to') reflecting the state of knowledge at the time.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The manuscript characterizes ZIKV vector competence, noting isolation from 19 Aedes species with most frequent detection in Ae. aegypti, and discusses the potential role of Ae. albopictus as a secondary vector with consideration of its global distribution and traveler-mediated virus introduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are well-supported by multiple citations (Haddow et al. 2012; Grard et al. 2014; Monlun et al. 1992; Marchette et al. 1969; Kutsuna et al. 2015; Roiz et al. 2015). The authors appropriately acknowledge uncertainty about Ae. albopictus competence while justifying its inclusion in modeling based on distribution and importation risk.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "The manuscript describes diagnostic challenges for ZIKV, noting potential cross-reactivity with dengue in IgM ELISA tests and identifying PCR on acute specimens as the only confirmatory method at the time of writing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are appropriately supported by citations (Lanciotti et al. 2008; Faye et al. 2008) and reflect established knowledge about flavivirus diagnostic challenges. The temporal qualifier ('currently') appropriately acknowledges the evolving diagnostic landscape.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C82",
+      "C83",
+      "C108",
+      "C109"
+    ],
+    "result": "The manuscript applies species distribution modeling using boosted regression trees (BRT), a methodology previously validated for mapping dengue, Leishmaniasis, and Crimean-Congo Hemorrhagic Fever, to establish empirical relationships between ZIKV occurrence and environmental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological approach is well-justified with appropriate citations (Bhatt et al. 2013; Pigott et al. 2014b; Messina et al. 2015b; De'ath 2007; Elith et al. 2008; Friedman 2001). The application of established methods to a new pathogen is scientifically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The manuscript assembled a dataset of 323 standardized ZIKV occurrence records from peer-reviewed literature, ProMED-mail, and Brazilian Ministry of Health data, with 63% from the 2015-2016 Latin American outbreak. Only laboratory-confirmed symptomatic cases were included, excluding serological evidence from healthy individuals and large polygons >1 square decimal degree.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data collection methodology is rigorous and well-documented, following established protocols (Kraemer et al. 2015b; Messina et al. 2014). Exclusion criteria are scientifically justified (C90, C93) to minimize spatial uncertainty and avoid cross-reactivity artifacts. The temporal bias toward recent outbreaks (C36) is acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "The manuscript generated 10,000 background locations using biased sampling based on inverse Aedes occurrence probability, weighted to equal the total number of occurrence locations (n=237; pseudo-absence weighting=0.0237) to improve model discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The background sampling methodology is appropriate and well-cited (Barbet-Massin et al. 2012). The biased sampling toward areas of vector absence is scientifically sound. However, there is a discrepancy: C94 states 323 occurrences while C96 states n=237 for weighting, suggesting some occurrences were excluded from modeling without clear explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The manuscript used six environmental covariates: temperature suitability for dengue via Ae. aegypti and Ae. albopictus, minimum relative humidity, annual cumulative precipitation, Enhanced Vegetation Index, and urban extents. Each covariate is justified based on known effects on mosquito biology and arbovirus transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Covariate selection is well-justified with extensive citations supporting biological mechanisms (Brady et al. 2013; Chandy et al. 2013; Col\u00f3n-Gonz\u00e1lez et al. 2011; Linthicum et al. 1999; Fuller et al. 2009; Brown et al. 2011). Data sources are appropriate (WorldClim, MODIS). The use of dengue temperature suitability as a proxy for ZIKV is acknowledged as a limitation (C76, C117) but justified by lack of ZIKV-specific data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The manuscript generated a 5\u00d75 km resolution global map from an ensemble of 300 BRT models fitted to bootstrapped data, restricted to areas where Ae. aegypti probability >0.8 or temperature suitable for transmission \u2265355 days/year. Models predict environmental suitability on a 0-1 scale with uncertainty quantified across the ensemble.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ensemble modeling approach is rigorous and follows best practices (Ara\u00fajo and New 2007; Bhatt et al. 2013). Spatial restrictions are scientifically justified to limit predictions to biologically plausible areas. The use of pairwise distance sampling to avoid AUC inflation (C113) demonstrates methodological sophistication (Wenger and Olden 2012).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "The BRT ensemble achieved high predictive performance with AUC of 0.829 (\u00b10.121 SD) in 10-fold cross-validation using pairwise distance sampling to avoid spatial sorting bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The validation approach is appropriate and the AUC value indicates good model performance. The authors appropriately note that pairwise distance sampling yields lower but more realistic AUC values than standard procedures. The high standard deviation (\u00b10.121) suggests substantial variability across folds, which could reflect data limitations or spatial heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Variable importance analysis showed annual cumulative precipitation contributed most to model variation (65.0%), followed by temperature suitability for DENV via Ae. albopictus (14.6%), urban extents (8.3%), temperature suitability via Ae. aegypti (5.7%), EVI (3.8%), and minimum relative humidity (2.5%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The variable importance results are clearly reported and sum to 100%. The dominance of precipitation (65%) is biologically plausible given mosquito breeding requirements. However, the relatively low contribution of Ae. aegypti temperature suitability (5.7%) compared to Ae. albopictus (14.6%) is surprising given that Ae. aegypti is considered the primary vector (C19, C20), suggesting potential model artifacts or collinearity issues not discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The model predicts high environmental suitability for ZIKV transmission across tropical and subtropical regions, with largest areas in Brazil, Colombia, and Venezuela in the Americas; extensive suitability in sub-Saharan Africa; over 2 million km\u00b2 in India; and nearly 250,000 km\u00b2 in northern Australia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The geographic predictions are supported by the modeling results and are consistent with known vector distributions and observed outbreak patterns. The specific area calculations (C46, C47) demonstrate quantitative rigor. The prediction of low suitability in central Brazil (C43) is appropriately explained by low population and mosquito densities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C115"
+    ],
+    "result": "A threshold environmental suitability value of 0.397 was determined to incorporate 90% of ZIKV occurrence locations, with the 90% cutoff chosen to account for potential errors or inaccurate locations in the occurrence dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The threshold selection methodology is appropriate and follows established protocols (Pigott et al. 2015a). The 90% cutoff is a reasonable compromise between sensitivity and specificity, acknowledging data quality limitations. However, the manuscript does not report sensitivity analysis on threshold choice or its impact on population estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The manuscript estimates 2.17 billion people globally live in areas environmentally suitable for ZIKV transmission, with 1.42 billion in Asia (primarily India), 453 million in Africa (primarily Nigeria), and 298 million in the Americas (40% in Brazil).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The population estimates are derived by combining the suitability map with high-resolution population data (WorldPop 2015; SEDAC 2015), which is methodologically sound. However, the manuscript does not provide confidence intervals for these estimates or sensitivity analysis on the threshold choice (0.397). The estimates represent populations in suitable areas, not predicted infections, but this distinction could be clearer. The discrepancy between 237 modeling occurrences (C96) and 323 total occurrences (C94) may affect threshold determination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C116"
+    ],
+    "result": "The manuscript estimates 5.42 million births will occur in the Americas in areas and times suitable for ZIKV transmission, with year-round transmission possible in most suitable areas. Temporal suitability was derived from temperature models predicting days per year suitable for arbovirus transmission in Ae. aegypti.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The birth estimate methodology is clearly described, combining spatial suitability with temporal suitability and 2015 birth data (WorldPop 2015; Tatem et al. 2014). The use of dengue temperature models as a proxy (C116, C117) is acknowledged as a limitation but justified by lack of ZIKV-specific data (Lambrechts et al. 2011). However, no uncertainty bounds are provided for the 5.42 million estimate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The manuscript contextualizes ZIKV within broader flavivirus epidemiology and discusses limitations of environmental suitability mapping, noting that suitability does not guarantee arrival/establishment, that transmission depends on human mobility and local dynamics, that not all individuals in suitable areas will be exposed, and that herd immunity will reduce susceptible populations over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These discussion points appropriately acknowledge the limitations of environmental suitability modeling and are well-supported by citations (Woolhouse et al. 2012; ICTV 2014; Murray et al. 2013; Weaver and Reisen 2010; Stoddard et al. 2013; Kraemer et al. 2015a; Salje et al. 2016; Dick et al. 1952). The authors demonstrate appropriate scientific caution in interpreting their results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The manuscript acknowledges sexual transmission of ZIKV, lack of basic epidemiological information, use of dengue temperature suitability as a proxy due to limited ZIKV-specific data, and the need for dataset updates as more information becomes available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These limitations are appropriately acknowledged with supporting citations (Patino-Barbosa et al. 2015; Musso et al. 2015b; Foy et al. 2011a; Brady et al. 2013, 2014). The authors demonstrate scientific integrity by clearly stating assumptions and data limitations. However, sexual transmission is mentioned but not incorporated into the model, which could underestimate risk in some settings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C84"
+    ],
+    "result": "The study produced the first global high spatial-resolution (5\u00d75 km) map of environmental suitability for ZIKV transmission to humans, with maps and data freely available via figshare to support surveillance, resource allocation, and disease prevention efforts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This represents the primary contribution of the manuscript. The novelty claim appears justified given the 2016 publication date during the ZIKV emergency. Data sharing via figshare demonstrates good scientific practice. The 5\u00d75 km resolution is appropriate for global-scale analysis, though finer resolution might be needed for local decision-making.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "The manuscript states that public health education about reducing mosquito populations and avoiding contact with vectors is required in at-risk areas for all arboviral diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a general public health recommendation supported by established knowledge. While not requiring specific citation, it appropriately contextualizes the practical implications of the mapping work.",
+    "result_type": "MINOR"
+  }
+]

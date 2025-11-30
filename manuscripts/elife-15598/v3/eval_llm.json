@@ -1,0 +1,316 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35"
+    ],
+    "result": "Molecular dynamics simulations reveal that replacing ADP-BeFx with ATP results in the lateral gate (LG) of SecY either retaining a part-open state (~1.8 nm) or widening to an open state (~2.6 nm), while substitution with ADP causes LG closure to ~1.5 nm in all simulations, closely resembling the resting SecY structure. These conformational changes occur rapidly within the first 10 ns and are consistent across different force fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C35 provide converging computational evidence from MD simulations showing nucleotide-dependent LG conformational changes. The use of multiple independent simulations (C28), validation with different force fields (C32), and comparison with known crystal structures (C31) strengthen the findings. The rapid divergence (C34) and interpretation as a high-energy intermediate (C35) are appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C59"
+    ],
+    "result": "MD simulations show that the configuration of helicase motif residues in SecA's nucleotide binding site (NBS) correlates with the open or closed state of the SecY channel, with the NBS being more open in ATP simulations compared to ADP-bound simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C59 are supported by MD simulation data (Figure 3C and Figure 6A+B). The correlation between NBS configuration and channel state provides mechanistic insight into long-range communication between SecA and SecY, though the pathway of signal transmission is acknowledged as subtle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "A FRET-based experimental system using doubly-labeled SecY**EG demonstrates that SecA binding causes LG movement, with further FRET decrease upon AMPPNP addition but not ADP. The changes represent differences in LG width rather than binding affinity differences, consistent with MD predictions of nucleotide-dependent channel conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 establish a functional FRET system with appropriate controls (activity assays C37, labeling verification C38, orientation analysis C39) and demonstrate nucleotide-dependent conformational changes. The titration experiments (C42) properly distinguish affinity effects from conformational changes, validating the MD predictions experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C57"
+    ],
+    "result": "Single-molecule FRET analysis reveals that SecY**EG exists in three principal conformational states: closed (EFRET ~0.76), part-open (EFRET ~0.59), and open (EFRET ~0.45). AMPPNP favors the open state, ADP favors the closed state, and ATP predominantly populates the part-open state. Mathematical modeling confirms the part-open state is a true intermediate rather than an averaging artifact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C54, C57 provide rigorous single-molecule evidence with appropriate controls (single FRET pair selection C44), statistical validation (SVD and global fitting C47), and mathematical modeling to exclude artifacts (C53). The identification of three states with nucleotide-dependent populations is well-supported, and the ~0.9 nm distance change (C49) is consistent with MD and crystal structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Addition of pre-protein (pOA) with ATP causes the open state to dominate in single-molecule FRET experiments, consistent with known acceleration of ADP release by pre-protein, without detecting additional channel states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 demonstrate that pre-protein shifts the equilibrium toward the open state, consistent with established biochemical properties of SecA (C56 citation). The observation that no additional states are detected (C57) is important for model parsimony, though it doesn't exclude transient states below detection limits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "The combined MD and FRET results establish that nucleotide occupancy in SecA regulates the opening of the SecY protein-channel and lateral gate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is a well-supported synthesis of the computational (C27-C35) and experimental (C36-C57) findings. The convergence of independent MD simulations and multiple experimental approaches (ensemble and single-molecule FRET) provides strong evidence for nucleotide-dependent channel regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Two-way communication exists between SecYEG and SecA over >5 nm: trapping the LG in a closed position reduces SecA's affinity for AMPPNP 5-fold and slows ADP release by ~50%, demonstrating that LG conformational state is transmitted to the NBS and controls ATP affinity and ADP release rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 provide experimental evidence for bidirectional communication using a cross-linked LG mutant. The 5-fold reduction in AMPPNP affinity (C61) and 50% reduction in ADP koff (C63) are quantitative measurements supporting the conclusion (C64). However, C60 is speculative and appropriately qualified as inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The increase in ATP turnover caused by LG opening could provide a mechanistic basis for the known allosteric activation of SecA by signal sequence binding into the LG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C65 establishes prior knowledge of allosteric activation, but C66 is explicitly speculative (\"could provide a basis\"). While the hypothesis is reasonable given the demonstrated LG-NBS communication, direct experimental evidence linking signal sequence binding to the observed effects is not provided in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The two-helix finger (2HF) of SecA, positioned at the SecY channel entrance, acts as a sensor for translocating peptides: cross-linking peptides to the 2HF region increases ADP release rate in a size-dependent manner (bulkier peptides have greater effects), suggesting steric sensing of passing peptides that transmits information back to the NBS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C75 provide experimental evidence that peptides at the channel entrance affect nucleotide exchange. The position-specific effects (C71 at 2HF but not C at position R20C), size-dependence (C72), and consistency with previous mutation studies (C74, C75) support the conclusion. However, C69 and C75 are appropriately qualified as hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Steered MD simulations demonstrate that the closed SecY channel (ADP-bound state) permits passage of narrow substrates like AGAGA but substantially retards larger substrates like AWAWA, while the open channel (ATP-bound state) allows all tested substrates to pass freely. This indicates the closed conformation selects against bulky stretches, requiring channel opening for their passage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C85 combine prior knowledge (C76-C79) with new steered MD data (C82-C83) to demonstrate size-selective substrate passage. The experimental design is appropriate, though C81 is speculative. The conclusions (C84-C85) are well-supported by the simulation data and consistent with the overall model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The authors propose a Brownian ratchet mechanism for protein translocation where ATP binding by SecA causes long-range opening of the SecY channel, substrates at the channel entrance regulate nucleotide exchange in SecA, and this two-way communication biases the direction of random polypeptide diffusion. The mechanism is directional because energy-dependent blockage resolution occurs only at the cytosolic surface, with irreversible initiation and completion steps ensuring forward movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C104, C123-C125 synthesize the experimental and computational findings into a coherent mechanistic model. The model is well-supported by the demonstrated nucleotide-dependent channel states, bidirectional communication, and substrate sensing. However, the model represents an inference from the data rather than direct observation of the complete translocation cycle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The different open and closed states required for the proposed model are represented in various published translocon structures. A recent structure with pseudo pre-protein shows the LG in a part-open state with narrow polypeptide, suggesting the complex might not reach the fully closed state with substrate bound and that further opening would be required for larger substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 appropriately contextualize the findings within existing structural data. The comparison with the recent Li et al. 2016 structure (C106-C109) provides independent validation of the proposed states, though C108-C109 are inferences rather than direct demonstrations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The prevailing power-stroke model for SecA-mediated translocation lacks direct evidence, and structural considerations make it unclear how the 2HF could selectively bind and move diverse substrate regions. Immobilization of the 2HF does not prevent translocation, suggesting any power-stroke would need to be extremely subtle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 provide critical assessment of the existing model based on prior literature (C86, C89) and structural reasoning (C88). This establishes the scientific context and motivation for the alternative Brownian ratchet mechanism, though it represents evaluation of prior work rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Differential substrate binding between ATP- and ADP-bound SecA states could represent either an additional pre-protein clamp to refine the proposed model or a proof-reading mechanism to prevent substrate jamming, which is known to be deleterious and lead to SecY degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C114 discuss potential refinements to the model based on prior observations (C110, C113, C114). However, C111 and C112 are explicitly speculative alternatives without experimental discrimination between them in this study. These represent reasonable hypotheses for future work rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The proposed Brownian ratchet model accounts for previously observed properties including translocation intermediates at low ATP, linear dependence of translocation rate on substrate length, and the tight binding of ATP-bound SecA to the channel (which prevents ion leakage from an open channel).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 demonstrate that the proposed model is consistent with diverse prior observations. C115-C116 show the model explains existing data through inference, while C117 cites prior work and C118 provides functional reasoning. This strengthens the model's plausibility but represents post-hoc explanation rather than prediction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C126",
+      "C127"
+    ],
+    "result": "The proposed mechanism resembles suggested mechanisms for eukaryotic Sec machinery but with cytosolic ratcheting, may offer a unifying concept for protein transport in other systems (mitochondria, chloroplasts), and parallels two-way communication observed in other molecular motors (helicases, dynein), suggesting a common mechanism for converting chemical energy into directional motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C122, C126-C127 place the findings in broader context. C119 and C121 cite relevant prior work, but C120, C122, and C127 are explicitly speculative about generalizability. While the parallels are interesting, direct evidence for these broader applications is not provided in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Background claims establish that the Sec system is the main protein secretion pathway across life, describe the SecYEG/Sec61 translocon structure and function, detail SecA's role as a cytosolic ATPase driving translocation, and note that while ATP turnover is coupled to translocation, the mechanism remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C26 provide established background knowledge supported by appropriate citations to prior literature. These claims set the scientific context but do not represent new findings from this study. C14-C15 and C25 include appropriate speculation about potential functions based on structural features.",
+    "result_type": "MINOR"
+  }
+]

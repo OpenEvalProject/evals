@@ -1,0 +1,360 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "H2B ubiquitylation at the ste11 promoter represses gene expression by promoting H3K4 methylation and subsequent deacetylation, which impedes RSC recruitment and increases nucleosome occupancy. The htb1 K119R mutant (lacking H2B ubiquitylation) shows decreased nucleosome occupancy and derepression of ste11, while RSC deletion has the opposite effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 are well-supported by multiple lines of experimental evidence including ChIP data (C37, C38), RT-Q-PCR (C52), and genetic suppression experiments (C46, C48, C57). The mechanistic link between H2Bubi, H3K4me3, deacetylation, and RSC recruitment is demonstrated through multiple mutant analyses and is consistent with the proposed model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "H2Bubi has spatially distinct roles at the ste11 locus: it represses transcription at the promoter while promoting it in the transcribed region. H2Bubi occupancy decreases at the promoter but increases along the transcribed unit during gene induction. H3K4me3 follows a similar pattern at the promoter and requires prior H2B ubiquitylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are directly supported by ChIP data shown in Figure 1E. The opposite dynamics of H2Bubi at different genomic locations (C4, C69) are well-documented and provide a mechanistic explanation for the paradoxical effects of ubp8 and htb1 K119R mutations. The dependency of H3K4me3 on H2Bubi (C68) is confirmed experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C45",
+      "C46",
+      "C47",
+      "C80",
+      "C81",
+      "C82",
+      "C84",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The RSC chromatin remodeling complex is required for ste11 expression through nucleosome displacement at the promoter. Deletion of RSC components (rsc1, arp9, snf21) decreases ste11 expression and increases nucleosome occupancy at the promoter, while SWI/SNF components have no effect on ste11.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82, C89-C91 are supported by RT-Q-PCR data (Figure 2B), ChIP data showing increased H3 occupancy (Figures 2G, 3A), nucleosome scanning (Figure 3B), and conditional depletion experiments (Figures 2C-G). The gene-specific requirement for RSC over SWI/SNF is demonstrated by both expression analysis and ChIP showing Snf22 presence at cdc14 but not ste11 (C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C102",
+      "C103",
+      "C104",
+      "C133"
+    ],
+    "result": "S2P-dependent H3 acetylation is required for RSC recruitment to the ste11 promoter. Abolition of H3K14 acetylation or Lsk1 reduces RSC occupancy, while abolition of H2B ubiquitylation or deacetylation increases RSC occupancy. H3 acetylation increases at the ste11 promoter when H2B ubiquitylation is abolished.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93, C102-C104 are directly supported by ChIP data (Figures 3C-D, 4B-E). The mechanistic connection between S2P, acetylation, and RSC recruitment (C92, C133) is well-supported by the data and consistent with previous work (C70, Materne et al., 2015). The model is coherent with RSC's known recognition of acetylated nucleosomes through bromodomains (C32).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Both abolition of H2B ubiquitylation (htb1 K119R, rhp6\u0394) and constitutive H2B ubiquitylation (ubp8\u0394) lead to increased ste11 expression. However, only htb1 K119R suppresses the lsk1 deletion phenotype, indicating that Lsk1 function is not required when H2B cannot be ubiquitylated, but is required for ubp8 to upregulate ste11.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C59 are supported by RT-Q-PCR data (Figure 1C), genetic suppression experiments (Figures 1A, 1D), and epistasis analysis. The paradoxical observation that both presence and absence of ubiquitylation lead to derepression (C56) is well-documented and explained by the spatial differences in H2Bubi function (C69). The differential genetic interactions with lsk1 (C57-C59) are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Genome-wide MNase-Seq analysis reveals a mechanistic connection between CTD S2P and RSC function. Genes whose promoter NDR shrinks most in the S2A mutant also show higher nucleosome occupancy in the rsc1 mutant, with significant overlap (p=3.416e-06) between the two gene sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C111 are supported by genome-wide MNase-Seq data (Figure 4\u2014figure supplement 1). The meta-gene analysis (C105), nucleosome shift quantification (C106), and statistical analysis of gene overlap (C110) provide strong evidence for a genome-wide connection between S2P and RSC (C111). The ste11 gene belongs to the affected category (C107), validating the single-gene analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Deletion of lsk1 or mutation of H3K14 increases histone occupancy at the ste11 promoter, while htb1 K119R or hos2\u0394 decreases it. The ubp8 mutant shows wild-type histone occupancy, indicating a different mechanism of ste11 upregulation. H2B ubiquitylation at the ste11 promoter correlates with repressed transcription and high H3K4me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 are supported by ChIP data (Figure 2A). The differential effects on nucleosome occupancy provide strong evidence for the proposed pathway linking H2Bubi to H3K4me3 to deacetylation to nucleosome occupancy. The observation that ubp8\u0394 does not affect promoter nucleosome occupancy (C76) while still increasing expression supports the model of distinct mechanisms at promoter vs. transcribed regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C48",
+      "C49"
+    ],
+    "result": "The CTD S2 kinase Lsk1 is required for cytokinesis in response to latrunculin A (LatA), and this sensitivity relates to downregulation of cdc14. Overexpression of cdc14 suppresses LatA sensitivity of lsk1\u0394. The htb1 K119R mutation suppresses the cdc14 expression defect in lsk1\u0394, while ubp8\u0394 has no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 are supported by established literature (C40, Karagiannis et al., 2005) and experimental data (Figure 1\u2014figure supplement 1A-B). The genetic suppression experiments (C43, C48) and RT-Q-PCR data (C48, Figure 1B) provide strong evidence that the LatA sensitivity phenotype relates to cdc14 downregulation and can be suppressed by abolishing H2B ubiquitylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "A new monoclonal antibody specifically recognizes ubiquitylated H2B in fission yeast. H2Bubi levels are increased in ubp8\u0394 but not ubp16\u0394, and the double ubp8\u0394 ubp16\u0394 mutant resembles the single ubp8\u0394 mutant, indicating that Ubp8 is the primary H2B deubiquitylase in fission yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by Western blot data (Figure 1\u2014figure supplement 2B). The antibody specificity is confirmed by lack of signal in K119R mutant (C60). The genetic analysis of ubp8 and ubp16 mutants (C61-C63) provides clear evidence that Ubp8 is the primary deubiquitylase (C64), consistent with previous work (Sadeghi et al., 2014).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The NuA3 and NuA4 histone acetyltransferases are not required for ste11 transcription. Inactivation of both NuA3 and NuA4 barely affects ste11 induction, and the H4K16R mutant behaves like wild type. Gcn5 is the primary HAT acting at the ste11 locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94 and C97 are supported by RT-Q-PCR data (Figure 3\u2014figure supplement 2A-B). The lack of effect of NuA3/NuA4 inactivation (C94) and H4K16R mutation (C97) argues against their involvement in ste11 regulation through H3K4me3 (C95). The conclusion that Gcn5 is the primary HAT (C96) is supported by citation to Helmlinger et al., 2008.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The cdc14 gene expression is affected by both RSC and SWI/SNF complexes, unlike ste11 which is only affected by RSC. The SWI/SNF-specific subunit Snf22 is present at the cdc14 promoter but not at the ste11 promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are supported by RT-Q-PCR data (Figure 2\u2014figure supplement 1C) and ChIP data (Figure 2\u2014figure supplement 1D). This demonstrates gene-specific requirements for chromatin remodeling complexes and validates the specificity of the ste11 findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Conditional depletion of Snf21 (RSC catalytic subunit) using the tet0 system results in decreased Snf21 protein levels, reduced cell viability, decreased ste11 and snf21 mRNA levels (60% reduction within 3 hours), and increased histone H3 occupancy at the ste11 promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 are supported by Western blot (Figure 2C), spot dilution assay (Figure 2D), RT-Q-PCR (Figures 2E-F), and ChIP data (Figure 2G). The temporal correlation between Snf21 depletion and effects on ste11 expression and nucleosome occupancy provides strong evidence for a direct role of RSC in ste11 regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Deletion of rsc1 does not affect H2B ubiquitylation at the ste11 promoter but decreases it in the transcribed region, likely as a consequence of decreased transcription when Rsc1 is absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by ChIP data (Figure 4A). The differential effects at promoter vs. transcribed region are consistent with the model that RSC acts downstream of H2Bubi at the promoter. The interpretation that decreased H2Bubi in the transcribed region is a consequence of reduced transcription (C101) is reasonable but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C131"
+    ],
+    "result": "The level of Lsk1 is increased at the ste11 promoter when histone H2B ubiquitylation is abolished.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C131 is supported by ChIP data (Figure 4\u2014figure supplement 2B). This observation supports the speculation (C130) that H2Bubi may act as a barrier to Lsk1 recruitment, similar to the reported role in budding yeast (C129).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Background information on CTD phosphorylation, H3K4 methylation, H2B ubiquitylation, and chromatin remodeling complexes from established literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C33 are background information supported by multiple citations to established literature. These claims provide the necessary context for understanding the current work and are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C70",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Background information on ste11 regulation by S2P and the Set1-H3K4me3-HDAC pathway from previous work, including discussion of alternative models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51, C70, C112-C113 are supported by citations to previous work, primarily Materne et al., 2015. Claims C114-C116 discuss alternative models from the literature and provide appropriate context for the current findings. These are appropriately cited and provide necessary background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C122",
+      "C123",
+      "C129"
+    ],
+    "result": "Background information on H2B ubiquitylation dynamics and function from established literature, including parallels to GAL1 regulation and the role of Ubp8 in elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119, C122-C123, C129 are supported by citations to established literature. These provide important context for interpreting the paradoxical effects of ubp8 and htb1 K119R mutations and are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C39",
+      "C98",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Proposed mechanistic model: H2Bubi at the ste11 promoter promotes H3K4me3, which recruits SET3C HDAC leading to deacetylation and reduced RSC recruitment. Upon induction, Ubp8 removes ubiquitin and Lsk1 deposits S2P, both impeding SET3C and allowing RSC recruitment and NDR formation. The balance between H2Bubi and RSC is critical for timely gametogenesis induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C39, C98, C124-C128, C132-C136 represent the integrated model proposed by the authors. This model is well-supported by the experimental data presented (multiple ChIP experiments, genetic analyses, nucleosome occupancy studies) and is consistent with established knowledge about the functions of these chromatin regulators. The model coherently explains the observed genetic interactions and molecular phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C117",
+      "C130"
+    ],
+    "result": "Speculative claims about alternative mechanisms: Set1 may repress ste11 independently of H3K4 methylation (but this is not predominant), and H2Bubi may act as a barrier to Lsk1 recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117 and C130 are explicitly speculative. C117 acknowledges the possibility of H3K4me-independent Set1 repression but notes it is not predominant based on the H3K4R mutant data. C130 speculates about H2Bubi acting as a barrier to Lsk1, which is supported by increased Lsk1 occupancy in htb1 K119R (C131) and literature on budding yeast (C129), but requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79",
+      "C120",
+      "C121"
+    ],
+    "result": "Mechanistic interpretations: H3K4me3 may favor histone deacetylation by SET3C; the positive effects of H2Bubi addition and removal may operate through unrelated mechanisms; lsk1 function is required upstream of ubp8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is a reasonable inference based on the known function of SET3C and the correlation data, though marked as speculation. Claims C120-C121 are inferences from genetic epistasis data (double mutant analysis) and are well-supported by the experimental observations, though they represent interpretations rather than direct measurements.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1456 @@
+{
+  "submission": {
+    "id": "44b54876-f618-4ee1-8aad-4731baa8b1ab",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:12:22.308756Z",
+    "updated_at": "2025-11-29T22:12:22.308756Z"
+  },
+  "content": [
+    {
+      "id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "submission_id": "44b54876-f618-4ee1-8aad-4731baa8b1ab",
+      "content_type": "manuscript",
+      "content_text": "# Neural coding in barrel cortex during whisker-guided locomotion\n\n## Authors\n\n- Nicholas James Sofroniew<sup>1</sup>\n- Yurii A Vlasov<sup>1</sup> ([ORCID: 0000-0002-5864-3346](https://orcid.org/0000-0002-5864-3346))\n- Samuel Andrew Hires<sup>1</sup>\n- Jeremy Freeman<sup>1</sup>\n- Karel Svoboda<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States\n2. IBM Thomas J. Watson Research Center New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAnimals seek out relevant information by moving through a dynamic world, but sensory systems are usually studied under highly constrained and passive conditions that may not probe important dimensions of the neural code. Here, we explored neural coding in the barrel cortex of head-fixed mice that tracked walls with their whiskers in tactile virtual reality. Optogenetic manipulations revealed that barrel cortex plays a role in wall-tracking. Closed-loop optogenetic control of layer 4 neurons can substitute for whisker-object contact to guide behavior resembling wall tracking. We measured neural activity using two-photon calcium imaging and extracellular recordings. Neurons were tuned to the distance between the animal snout and the contralateral wall, with monotonic, unimodal, and multimodal tuning curves. This rich representation of object location in the barrel cortex could not be predicted based on simple stimulus-response relationships involving individual whiskers and likely emerges within cortical circuits.\n\n## Introduction\n\nAnimals must understand the spatial relationships of objects in their environment for navigation. Rodents move their whiskers to localize (Knutsen et al., 2006; O'Connor et al., 2010) and identify (Anjum et al., 2006) nearby objects, and to guide their locomotion along walls and through narrow tunnels (Vincent, 1912; Sofroniew and Svoboda, 2015). The neuronal responses to passive deflections of whiskers (Simons, 1978; Armstrong-James et al., 1992; Simons et al., 1992) and whisker-object touches (Krupa et al., 2004; Curtis and Kleinfeld, 2009; O'Connor et al., 2010; 2013; Hires et al., 2015; Peron et al., 2015) have been well studied; but little is known about neural coding during natural behaviors, such as tracking a wall during whisker-based navigation. Studying tactile sensation during such natural behaviors is important, because the sensors themselves - digits, whiskers - move in an adaptive manner to produce sensory input.\n\nTouches between whiskers and objects cause deformations of the whiskers and forces at the base of the whisker (Birdwell et al., 2007; Pammer et al., 2013) that are translated into neural excitation (Zucker and Welker, 1969; Stuttgen et al., 2008) by mechanosensory receptors (D\u00f6rfl, 1985). Whiskers are elastic rods with a gradually decreasing thickness as a function of distance from the face (Birdwell et al., 2007; Hires et al., 2013). Because of the whisker taper, more proximal deflections cause larger forces at the base of the whisker than distal deflections (Birdwell et al., 2007; Pammer et al., 2013). Objects that are closer to the face therefore trigger higher spike rates in primary sensory neurons (Szwed et al., 2006).\n\nExcitation from primary sensory neurons ascends through the brainstem and thalamus to the whisker representation area of the somatosensory cortex, also referred to as barrel cortex (Van der Loos and Woolsey, 1973; Diamond et al., 2008; Bosman et al., 2011). Layer (L) 4 is the main thalamocortical recipient layer and contains spatial clusters of neurons, termed \u2018barrels\u2019. There is a one-to-one correspondence between L4 barrels and specific individual whiskers on the face (Van der Loos and Woolsey, 1973). Neurons in layers 2/3, 5 & 6, above and below a particular barrel, are part of a \u2018barrel column\u2019. Neurons in different layers interact through intricate excitatory and inhibitory neural circuits (Shepherd and Svoboda, 2005; Lefort et al., 2009; Pouille et al., 2009; Hooks et al., 2011; Adesnik et al., 2012; Pluta et al., 2015).\n\nPassive whisker deflection causes brief, short latency (~10 ms) excitatory responses in neurons across layers of the corresponding barrel column (Simons, 1978; Armstrong-James et al., 1992; De Kock et al., 2007). Individual neurons are sensitive to the direction (Simons and Carvell, 1989), amplitude and velocity of whisker deflection, and neural responses increase monotonically with the strength of a whisker stimulus (Simons, 1978). Deflection of neighboring whiskers causes longer-latency, weaker, excitatory responses (Armstrong-James et al., 1992) and surround suppression (Simons, 1985; Moore and Nelson, 1998), implying that neighboring barrel columns can inhibit each other. Similarly, sustained activation of one layer can have mainly inhibitory effects on other layers (Olsen et al., 2012; Pluta et al., 2015), which could underlie complex responses of barrel cortex neurons that are sometimes seen during active sensation involving prolonged interactions with an object (Krupa et al., 2004).\n\nDuring exploration, mice move their whiskers rhythmically over objects at ~16 Hz (Mitchinson et al., 2011; Sofroniew et al., 2014; Sofroniew and Svoboda, 2015). In a whisker-based pole localization task in head-fixed mice, neurons in layer 4 and layer 2/3 of the barrel cortex show activity highly correlated with touch onset (O'Connor et al., 2010; Crochet et al., 2011; Hires et al., 2015), with larger forces producing more vigorous responses (O'Connor et al., 2013; Peron et al., 2015). These responses are sensitive to the phase of the whisker at touch (Curtis and Kleinfeld, 2009) and the direction of deflection (Andermann and Moore, 2006; Peron et al., 2015). Rodents can use the identity, magnitude, and timing of whisker-object touch to determine the spatial location of nearby objects (Brecht et al., 1997; Diamond et al., 2008; Knutsen and Ahissar, 2009).\n\nHere, we explored coding in the whisker system during naturalistic behavior. We used a tactile virtual reality system that combines stimulus control and rich behavior with neural recordings and optogenetic manipulation to specifically investigate neural coding of wall position and motion across layers of the barrel cortex during whisker-guided locomotion. Our data show how environmental features are transformed and abstracted by somatosensory circuits.\n\n## Results\n\n### Barrel cortex is involved in wall tracking\n\nMice were head-fixed in a tactile virtual reality system consisting of an air-supported ball and two motorized walls (Figure 1a) (Sofroniew et al., 2014). The lateral distance between mouse and the walls was controlled in closed-loop with motion of the ball, allowing simulation of a winding corridor. When mice ran towards a wall, a motor moved the wall closer to the animal; when mice ran away from a wall, a motor moved the wall away (Figure 1b). When the mice are in the center of the corridor, their whiskers can just touch the walls. Mice use their whiskers to track the walls, staying near the center of the winding corridor without training (Sofroniew et al., 2014). This wall-tracking behavior requires mice to interpret forces exerted by the walls on their whiskers in terms of wall distance.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/12559/elife-12559-fig1-v2.jpg)\n\n**Figure 1.:** (a) Side view of a mouse in the tactile virtual reality system. (b) Schematic illustrating closed-loop control of the walls. If the mouse runs at speed v in the direction \u03d5\u00a0in a corridor with a turn angle\u00a0\u03c8 then wall position u updates according to the coupling equation \u0394u = \u03b3 v sin(\u03b5) \u0394t where \u03b5 = \u03d5 \u2212 \u03c8 the difference, or error, between the run angle and the turn angle, is the gain, and \u0394t is the time interval. (c) One-left-turn trial. The mouse trajectory (pink) is overlaid on the ideal trajectory (gray), which corresponds to staying in the center of the corridor. The angle error is the difference between the actual and ideal trajectories at the end of the turn. (d) Top, twenty randomly selected running trajectories corresponding to three different turn angles recorded in one session. Bottom, same as above during barrel cortex photoinhibition achieved by photostimulating GABAergic neurons expressing ChR2 (left, pink; straight, gray; right, purple). (e) Average angle error during interleaved trials with no photoinhibition, visual cortex photoinhibition, barrel cortex photoinhibition, and trials with no whiskers. Barrel cortex photoinhibition impaired tracking performance (p = 6.4*10\u20134 t-test; 8 mice).\n\nTrials were defined as two-meter-long segments of the corridor that contained either bends to the left or right or were straight. Trials with different bends were randomly interleaved. Mice continued to track the walls and matched their run angle to the bend angle in the corridor (Figure 1c). We quantified performance for each trial using angle error, defined as the absolute difference between the run angle of the mouse and the angle of the bend in the corridor.\n\nWhisker-guided locomotion could depend on activity in the barrel cortex, which rodents use in whisker-dependent gap crossing (Hutson and Masterton, 1986), object detection (Miyashita and Feldman, 2013) and object localization (O'Connor et al., 2010). Alternatively, whisker-guided locomotion might be independent of the barrel cortex, for example, relying instead on the superior colliculus, which by itself can mediate orienting behaviors (Sprague, 1966) and active avoidance (Cohen and Castro-Alamancos, 2007). We tested whether whisker-guided wall tracking uses neural activity in the barrel cortex. Excitatory neurons in the barrel cortex were silenced by photostimulating GABAergic neurons expressing ChannelRhodopsin-2 (ChR2) in VGAT-ChR2-EYFP transgenic mice (Zhao et al., 2011). Laser light was focused on the skull, 'photoinhibiting' all cortical layers across a 2-mm-diameter area within 20 ms of laser onset, which was reversed within 150 ms after laser offset (Guo et al., 2014). Rapid laser movement between spots on the left and right hemispheres enabled bilateral photoinhibition of the cortex. For silencing barrel cortex, the laser was centered on the C2 barrel, localized using intrinsic signal imaging (O'Connor et al., 2010). Mice whiskers were trimmed such that either a single C2 whisker (n = 3) or the C1, C2, and C3 whiskers (n = 5) remained. The corresponding barrel columns fall within the central millimeter of the photoinhibition volume, thus ensuring that the relevant representation in the barrel cortex was abolished by photoinhibition. The task was performed in the dark and stray light from the laser was shielded, eliminating visual cues for locomotion. Photoinhibition lasted for the time needed for mice to run through a one-meter bend (typically 3\u20137 s).\n\nSilencing barrel cortex bilaterally impaired turning in response to bends in the corridor (angle error 8.09 \u00b1 2.22\u00b0 vs. 3.68 \u00b1 0.55\u00b0, p = 6.4*10\u22124 t-test) (Figure 1d,e). Performance during photoinhibition was similar to performance after trimming all whiskers (angle error 8.09 \u00b1 2.22\u00b0 vs. 8.83 \u00b1 2.24\u00b0, p = 0.52 t-test). In contrast, there was no effect on turning performance in response to bilateral photoinhibition of the visual cortex (angle error 3.20 \u00b1 0.79\u00b0 vs. 3.68 \u00b1 0.55\u00b0, p = 0.19 t-test), controlling for non-specific effects of photoinhibition. We conclude that mice use neural activity in barrel cortex to guide locomotion along the wall.\n\n### Optogenetic activation of barrel cortex can guide locomotion\n\nObject position can be encoded in spike counts in barrel cortex layer 4 (O'Connor et al., 2013). To determine whether activity in the barrel cortex can also drive a wall-tracking like behavior we optogenetically activated layer 4 using Scnn1a-TG3-Cre x Ai32 mice. Photoactivation was controlled in a closed-loop with the motion of the ball and in the absence of walls thus creating an 'illusory corridor', where information about distance to illusory walls is encoded in the strength of the photostimulus (Figure 2a). Stimuli consisted of 2-ms laser pulses (10 Hz); at maximum experienced power the photostimulus evoked up to 8 additional spikes per neuron per second in layer 4 (Figure 2\u2014figure supplement 1b). The power was modulated depending on the position of the mice in the illusory corridor. When mice were in the center of the illusory corridor the laser was off; when mice were on the right side, the left barrel cortex was activated, and vice-versa. The closer the mice were to the edge of the illusory corridor, the higher the laser power in the corresponding hemisphere. Mice responded to photoactivation of layer 4 by making left and right turns at bends in the illusory corridor (Figure 2b), with slightly lower angle error than when responding to real walls (angle error 2.30 \u00b1 0.85\u00b0 vs. 3.19 \u00b1 0.55\u00b0, p = 0.026 t-test). Running speeds in the illusory corridor were slower (13.2 \u00b1 3.6 cm/s) than running speeds in the corridor with walls (20.4 \u00b1 3.8 cm/s). When parietal (n=3 mice) or visual cortices (n=5 mice) were activated mice did not follow the bends in the corridor (angle error 14.01 \u00b1 1.73\u00b0 vs. 3.19 \u00b1 0.55\u00b0, p = 1.7*10-8 t-test) (Figure 2c). This response to photoactivation was not learnt as all mice performed the task from the very first trial, similarly to how they perform the task with the real walls (Sofroniew et al., 2014), and the reward was provided in each trial independent of behavioral performance.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/12559/elife-12559-fig2-v2.jpg)\n\n**Figure 2.:** (a) Schematic of an illusory corridor generated with position-dependent photoactivation. In the center of the corridor the laser intensity was zero. On the right side of the corridor the left barrel cortex was stimulated and vice versa. The laser power increased with proximity to the edge of the corridor. (b) Twenty randomly selected running trajectories from three different turn angles during closed-loop photoactivation (left, pink; straight, gray; right, purple). (c) Average angle error during trials of whisker-based wall-tracking, barrel cortex activation, visual or parietal cortex activation, and no cues. Barrel cortex photoactivation was able to drive a behavior resembling wall tracking (p = 1.7*10\u22128 t-test; 8 mice). Trials with barrel cortex activation, visual or parietal cortex activation, and no whisker or photostimulation cues were randomly interleaved. Trials with whisker-based wall-tracking were recorded in separate sessions. Half of the mice performed the photoactivation sessions after the wall-tracking sessions and half of the mice performed them before.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12559/elife-12559-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Twenty randomly selected running trajectories in a straight corridor either with no photoactivation (gray) or with photoactivation of layer 4 of the right barrel cortex (purple). (b) Average activity (6 cells) evoked by photoactivation during cell attached recordings in awake, non-behaving mice as a function of laser power (mean \u00b1 SE). (c) Wall distance bias evoked by photoactivation of barrel (left) and visual / pariental cortex (right) as a function of laser power (8 mice, mean \u00b1 SE).\n\nWe also unilaterally activated layer 4 with trains of light pulses at constant power as the mice ran through a straight corridor with real walls (Figure 2\u2014figure supplement 1a). Running trajectories were biased towards the side of the activation, as if the mice were avoiding a wall they were touching on the contralateral side (7.7\u00a0mm \u00b1 4.5\u00a0mm at 2.0 mW) (Figure 2\u2014figure supplement 1c). Activation of the parietal (n=3) or visual cortex (n=5) did not show an effect on distance from the wall (0.7\u00a0mm \u00b1 3.8\u00a0mm at 2.0 mW) (Figure 2\u2014figure supplement 1d). Together, these results show that activity in the barrel cortex can guide locomotion, and suggest that wall distance may be encoded by spike rates in barrel cortex.\n\n### Barrel cortex contains neurons tuned to wall-distance\n\nTo examine population encoding of wall distance, we recorded neuronal activity in layer 2/3 of barrel cortex using 2-photon microscopy and GCaMP6s (Chen et al., 2013) in a separate group of mice running through the winding corridor (6 mice). Mice were left with all their whiskers, so we could look at neural coding under their natural whisker configuration. Three 600 x 600 \u03bcm planes separated by 20 \u03bcm in depth were imaged at 7.1 Hz around the center of the C2 barrel column, found using intrinsic signal imaging (Peron et al., 2015). To measure repeated responses across a range of wall distances, we also included 'open-loop' trials in the winding corridor, in which the contralateral wall was moved to fixed distances away from the mouse independent of the animal\u2019s locomotion (Figure 3a).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/12559/elife-12559-fig3-v2.jpg)\n\n**Figure 3.:** (a) Schematic of two-photon calcium imaging. (b) Overlay of a pixelwise regression map and mean intensity image. Each pixel in the regression map is colored according to its tuning to wall distance; brightness was adjusted according to the r2 value of the tuning. Three example ROIs are highlighted (corresponding to panel c). This imaging region is approximately centered on the C2 barrel\u00a0(diameter, 300 \u03bcm) and contains parts of the neighboring D1 and C1 barrels. (c) Distance from the snout to the wall as a function of time (top) and \u0394F/F for three example ROIs (same ROIs as in b). (d) Fraction of neurons in L2/3 that are inactive, tuned, and untuned to the wall distance. (e) Tuning curves to wall distance for example ROIs (mean \u00b1 SE over trials). (f) Heatmap of tuning curves normalized by maximum activity across all mice. (g) Histogram of the location of tuning curve peaks.\n\nWe investigated the relationship between neural activity and wall distance using two complimentary methods. First, a pixelwise regression (Ohki et al., 2005; Freeman et al., 2014) related fluorescence changes at each pixel to wall distance. Analysis was restricted to periods of running (speed > 3 cm/s), which ensures that mice were actively whisking and that their whiskers were interacting with the walls (Sofroniew et al., 2014). This analysis yielded a map with each pixel colored based on the wall distance at which the pixel was maximally active, and its brightness is based on an r2\u00a0value indicating the reliability of that response (Figure 3b). Individual neurons appeared as tuned to different wall distances. In a second analysis, we manually defined regions of interest (ROIs) around individual neurons (2019 neurons, 6 mice). Calcium fluorescence time courses from individual ROIs showed tuning to wall distance consistent with the pixel-wise maps (Figure 3c,e). For most ROIs, responses increased with decreasing wall distance. For other\u00a0ROIs, responses peaked at particular wall distances, or even increased with increasing wall distance (Figure 3f).\n\nOverall 564/2019 (28%) of ROIs showed significant tuning to wall distance (p<0.05, ANOVA across trials) (Figure 3d). A further 334/2019 (17%) of ROIs were active (90th percentile F/F > 1.0) but were not tuned to wall distance, and the remaining 1121/2019 (55%) ROIs were inactive. The peak wall distance preferred by the tuned ROIs tiled the length of the whiskers, although there was a bias towards small distances (Figure 3f,g). These imaging experiments revealed a rich representation of wall distance in the superficial layers of the barrel cortex.\n\n### Electrophysiology in barrel cortex during corridor tracking\n\nTo examine other cortical layers, and to verify the response properties observed with calcium imaging, we made extracellular recordings from barrel cortex in a separate group of mice running through the winding corridor (Figure 4a) (13 mice). We used 32-channel single shank silicon probes in mice expressing ChR2-eYFP in layer 4 neurons (Scnn1a-Tg3-Cre x Ai32). We targeted recordings to barrel field by visualizing the eYFP fluorescence during surgery. The probe was coated with DiI, allowing us to reconstruct the probe location within the barrel cortex (Figure 4b). Recordings were clustered around the C2 barrel (Figure 4\u2014figure supplement 1a). Current source density analysis triggered on layer 4 activation of ChR2 and electrolytic lesions were used to calibrate the laminar location of the probe and determine the depth of the recorded neurons (Figure 4\u2014figure supplement 1b). Recordings spanned layer 2 to layer 5, although the majority of units were located in infragranular layers (Figure 4\u2014figure supplement 2a). Baseline and peak spike rates were higher in deeper layer neurons (Figure 4\u2014figure supplement 2b,c). Spike sorting was performed manually, and both false alarm rate of the inter-spike-interval distribution < 1.5% and waveform SNR > 6 were used as quality control metrics (Figure 4\u2014figure supplement 1c,f). As with the imaging experiments, analysis was restricted to periods of running (speed > 3 cm/s), ensuring the mice were actively whisking (Sofroniew et al., 2014).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/12559/elife-12559-fig4-v2.jpg)\n\n**Figure 4.:** (a) Schematic showing silicon probe recordings during open loop trials. The wall was moved in and out of different fixed distances from the mouse during a period of 4 s. (b) Coronal section through the brain of an Scnn1a-Tg3-Cre x RCL-ChR2-EYFP mouse acquired with green filter showing the barrels. Image acquired with orange filter is superimposed on top showing the track of the silicon probe coated in DiI. Electrolytic lesion is seen at the end of the DiI trace. Location of the probe is identified as C3 barrel. (c) Example spike rasters of regular spiking units during open-loop trials. Each row of the raster corresponds to one trial and each dot corresponds to one spike. The color of each dot represents the position of the wall at the time of the spike. Recordings are performed around C1 and C2 barrels. Only trials with running speed over 3\u00a0cm/s are represented. (d) Corresponding tuning curves to wall distance for the spike rasters shown in B (mean \u00b1 SE over trials). (e) Histogram of the location of tuning curve peaks. (f) Scatter plot of tuning curve suppression vs. activation. Activation is the difference between peak rate and baseline rate when the wall is out of reach. Suppression is the difference between minimum rate and baseline rate. (g) Heatmaps of z-scored tuning curves for units activated by more than 1 Hz (top) and units suppressed by more than 1 Hz (bottom) sorted by the location of the maximum and minimum wall distances respectively. Units that were both activated and suppressed appear in both plots. (h) Histogram of the tuning modulation, defined as the ratio of the difference between the activation and suppression divided by the sum of the activation and suppression. Units that are just activated have modulation 1, units that are just suppressed have modulation \u22121, and units that are both activated and suppressed have a modulation near 0. (i) Modulation index as a function of laminar position. Light gray, units classified as layer 2/3; medium gray, layer 4; dark gray, layer 5.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12559/elife-12559-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Image acquired with green filter of a whole brain removed from the skull of a Scnn1a-Tg3-Cre x RCL-ChR2-EYFP mouse. Overlay of 13 recordings sites identified by DiI tracing of silicon probe tracks. An image acquired with orange filter and superimposed on top for one example. The recording site is shown by arrow. (b) Illustration of three complementary methods used for identification of the depth of recorded units. Left: Coronal section of barrel cortex acquired with green and orange filters showing with dotted square the location of recording site. Center: Blown-up portion of the same area of the coronal section (turned rotated by 39 degrees) taken with green filter showing of L4 barrels. The location of two electrolytic lesions on top and bottom electrodes and the center of layer 4 are marked with dashed white lines. Right: Current source density trace used to identify the middle of Layer 4 as a short-time (<3\u00a0ms) minimum. The schematics of electrodes positions on the silicon probe that is aligned with the centers of the top and bottom lesions. (c) Inter-spike-interval distributions for units presented in Figure 4 and Figure 5. (d) Histogram of spike widths. Fast spikers (< 350 \u03bcs): pink, intermediate: gray, and regular spikers (> 450 \u03bcs): purple). (e) Z-scored waveforms from all units. (fast spikers: pink, intermediate: gray, regular spikers: purple). (f) Scatter plot of waveform SNR against ISI false alarm rate. The area shown by colored square corresponds to accepted units with SNR > 6 and false alarm rate < 1.5%\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12559/elife-12559-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a) Distribution of the location of regular spiking units by depth relative to the middle of Layer 4. (b) Depth distribution of a baseline spike rate of regular spiking units during locomotion (speed over 3\u00a0cm/s). Light gray, units classified as layer 2/3; medium gray, layer 4; dark gray, layer 5. (c) Depth distribution of a peak spike rate of regular spiking units during locomotion (speed over 3cm/s). Light gray, units classified as layer 2/3; medium gray, layer 4; dark gray, layer 5.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/12559/elife-12559-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (a) Open-loop and closed-loop tuning curves for a regular spiking unit that gets activated by the wall.\u00a0(b) Open-loop and closed-loop tuning curves for a unit that gets suppressed by the wall. (c) Scatter of the mean spiking rate of open-loop and closed-loop tuning curves. (d) Histogram of open vs. closed-loop modulation index which is the difference in open-loop and closed-loop spiking rates divided by the sum of open-loop and closed-loop spiking rates. Units that respond more during open loop trials have positive modulation, units that respond more during closed loop trials have negative modulation, and units that responded equally to both open and closed loop trials have a modulation of 0.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/12559/elife-12559-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** (a) Four example units that showed significant tuning to running speed when the wall was out of reach.\u00a0The activity of the top left unit increased linearly with speed over a large range, the activity of top right unit increased rapidly and then saturated at low speeds, the activity of the bottom right unit peaked at low speeds and then decreased at higher speeds, and the activity of bottom left unit decreased with running speed. (b) Histogram of the peak speed tuning for units significantly tuned to speed (31%; 46/148) from the population used in Figure 4. (c) Example wall distance tuning curve while the mouse is running in fast trials (top) and slow trials (bottom). Fast and slow trials were split based on the median of the trial speeds in trials when the mouse was running. This unit is the same as used in Figure 4\u2014figure supplement 3a). (d) Example wall distance tuning curve while the mouse is running fast trials (top) and slow trials (bottom). This unit is the same as used in Figure 4\u2014figure supplement 3b). (e) Histogram of the modulation of wall distance tuning by speed for all 148 units. This index was the log of the gain parameter that describes a multiplicative scaling of the slow tuning curve to the fast tuning curve. Units that are more active during fast running have positive modulation indices, units that are less active during fast running have negative indices.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/12559/elife-12559-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** (a) Example spike raster of regular spiking unit in open-loop trials when the wall is contralateral (top) or ipsilateral to the recording site (bottom).\u00a0Only epochs with running speed over 3\u00a0m/s are represented. This neuron was activated by interactions with the wall. (b) Corresponding tuning curves recorded during locomotion (running speed over 3\u00a0m/s). (c,d) Same as a,\u00a0b for a suppressed regular spiking unit. (e) Scatter plot of range of spiking of ipsilateral vs. contralateral tuning curves. The range of spiking is the difference between the maximum and minimum of the tuning curve. (f) Histogram of laterality modulation index, which is the difference in contralateral range and ipsilateral range divided by the sum of the contralateral range and ipsilateral range. Units that respond only to the contralateral wall have modulation 1, units that respond only to the ipsilateral wall have modulation \u22121, and units that respond to both the contralateral and ipsilateral wall have a modulation near 0.\n\nWe isolated a total of 209 units (13 mice). Of these units, 179 (86%) showed significant tuning to wall distance during open-loop movements of the wall (p<0.05 ANOVA). 148 were classified as regular spiking and presumed excitatory based on spike width (Figure 4\u2014figure supplement 1d,e) (Guo et al., 2014) and used for further analysis. Individual units showed diverse responses to interactions with the wall that were reproducible across trials (Figure 4c,d). Some units had low activity when the wall was out of reach and increased activity monotonically as the wall moved closer or had maximal responses at particular wall distances (Figure 4c,d). Other units had high activity when the wall was out of reach and decreased activity monotonically as the wall approached certain wall distances. We also observed more complex responses, including a mix of enhancement and suppression across wall distances. Distances eliciting peak responses tiled the relevant space of wall distance (Figure 4e).\n\nFor each unit, we quantified activation and suppression as a function of wall distance (Figure 4f). The baseline rate of each unit was the spike rate during periods of running when the wall was out of reach of the whiskers. Activation was the difference between peak spike rate and baseline spike rate; suppression was the difference between baseline spike rate and minimum spike rate. Both the peaks and troughs of the activated and suppressed units tiled the relevant wall distance range (Figure 4g). A modulation index was calculated as the difference between activation and suppression normalized by the sum of activation and suppression (Figure 4h). This index ranged from one, for activated units, to minus one, for suppressed units, with mixed units that are both activated and suppressed near zero. The majority of units showed activation (106/148; 72% modulation > 0.5), but a sizable fraction showed suppression or mixed responses (42/148; 28% modulation <0.5). Units with negative and near-zero modulation indices tended to be found in infragranular layers (Figure 4i).\n\nThese tuning curves were generated during open-loop movements of the wall, but during natural behavior the wall will move in closed-loop with locomotion. To investigate whether tuning under these conditions is similar, we characterized wall distance tuning during closed-loop wall-movements for a subset of mice (10 mice; 114 regular spiking units). In closed-loop, wall distance sampling is non-uniform because the sensory stimulus depends on behavior. We combined epochs across several widths and bends in the corridor to approximately sample wall distance as in the open-loop condition. Units showed similar tuning curves under both open-loop and closed-loop (Figure 4\u2014figure supplement 3a,b), with similar average rates over the same wall distances range (107/114; 94% -0.5 < open vs. closed modulation < 0.5) (Figure 4\u2014figure supplement 3c,d). A substantial fraction of all units (31%; 46/148) were significantly modulated by running speed in the absence of the walls (Figure 4\u2014figure supplement 4a,b) (Keller et al., 2012; Saleem et al., 2013). However, the wall distance tuning curves computed during slow running and fast running were similar on average (modulation index was \u22120.10 \u00b1 0.55) (Figure 4\u2014figure supplement 4c,d,e).\n\nWhen running in a narrow corridor, whiskers can interact with both walls simultaneously. Information from the whiskers projects directly to the contralateral barrel cortex from subcortical structures; however, a small callosal projection also carries information from one side of the barrel cortex to the other (Czeiger and White, 1993). For a subset of mice (3 mice; 29 regular spiking units) we recorded activity in response to open-loop movements of the ipsilateral wall. Compared to interactions with the contralateral wall, very few units were strongly modulated by interactions with the ipsilateral wall (Figure 4\u2014figure supplement 5a,b,c,d). Spike rate changes in response to interactions with the contralateral wall were consistently greater than to the ipsilateral wall (27/29; 93% contra vs ipsi modulation > 0) (Figure 4\u2014figure supplement 5e,f). This finding is consistent with the results of the unilateral activation experiment, which suggest the hemisphere contralateral to the wall is predominantly involved in wall-tracking.\n\nSome units exhibited sensitivity not only to wall position, but also to the direction of wall motion. We compared responses when the wall moved towards or away from the mouse on open-loop trials. Some units were activated when the wall distance decreased (Figure 5a,b,\u00a0top two), whereas other units were activated when wall distance increased (Figure 5a,b,\u00a0bottom two). The peak responses of different units tiled the range of distances covered the wall moved either towards or away from the mouse (Figure 5c). A direction modulation index was computed by comparing spike rates during movement towards and away (Figure 5d,e). Some neurons were strongly modulated (82/148, 55% absolute direction modulation > 0.2). Barrel cortex thus encodes both wall position and direction of wall motion.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/12559/elife-12559-fig5-v2.jpg)\n\n**Figure 5.:** (a) Example spike rasters of regular spiking units that showed strong modulation by wall direction during open-loop trials during locomotion (running speed over 3\u00a0cm/s). (b) Spike rate as a function of time during epochs when wall is moving towards/away from the mice for the same regular spiking units as in a. (c) Heatmap of time profiles curves normalized by maximum for symmetric and asymmetric units, sorted by time to peak. (d) Scatter of the range of spike rates as the wall moved towards and away from the mouse. The range of spike rates is the difference between the maximum and minimum rate during the 1 s when the wall was moving towards or away from the mouse. (e) Histogram of direction modulation index, which is the range difference in spike rates during wall movement towards and away from the mouse divided by the sum of the towards range and away range. Units that respond only when the wall approaches have modulation 1, units that respond only when the wall moves away have modulation \u22121, and units that respond to both the wall approaching and moving away have a modulation near 0.\n\n## Discussion\n\nWe measured neural coding in the barrel cortex during naturalistic wall tracking. Mice used their whiskers to navigate winding corridors in tactile virtual reality (Sofroniew et al., 2014). Neural activity in the barrel cortex was necessary for guiding locomotion based on whisker cues (Figure 1). In addition, graded activation of layer 4 neurons in the barrel cortex was sufficient to guide locomotion in an illusory corridor (Figure 2). Remarkably, similar to closed-loop wall tracking (Sofroniew et al., 2014), no training was required for mice to run in an illusory corridor. The tracking accuracy in the illusory corridor was on par or better compared to the real corridor; this may be because the photostimulus provided a stronger distance-dependent signal compared to touch-evoked activity. These experiments show that downstream layers and brain areas can interpret increases of layer 4 spike rate as increased proximity to a wall on the contralateral side and drive the appropriate turning responses. Previous experiments suggest key roles for the superior colliculus in orienting and goal-directed behaviors (Sprague, 1966; Cohen and Castro-Alamancos, 2007). Barrel cortex activity could drive whisker-guided locomotion through the superior colliculus and rubrospinal circuits. These brain areas could also be capable of mediating this behavior independently after chronic barrel cortex lesions.\n\nThe optogenetic experiments (Figure 2) suggest a simple code for wall distance: wall distance could be coded as inversely proportional to neural activity in layer 4. Sensory neurons in the trigeminal ganglion have monotonic responses to object distance (Szwed et al., 2006). Similarly, during passive stimulation (Simons, 1978) or simple single-whisker behaviors (Simons, 1978; Peron et al., 2015) barrel cortex neurons show monotonic relationships with stimulus strength. The majority of L2/3 and L4 (Figure 4\u2014figure supplement 2b,c) neurons responded weakly when the wall was out of reach and only responded strongly when the contralateral wall came within reach. However, many neurons exhibited a rich representation of wall distance (Figure 4h). Some neurons had non-monotonic unimodal relationships with wall distance and were most active at intermediate wall distances. Across the population, neuronal tuning tiled all wall distances (Figure 4g). Activity of other neurons showed even more complex, multimodal tuning to wall distance. Complex responses to wall distance were especially pronounced in L5 (Figure 4i). Encoding wall distance with a population of tuning curves that increase monotonically with decreasing wall distance (i.e. sigmoids) would lead to very large metabolic costs when representing small distances. Given a fixed metabolic cost, a population of non-monotonic (i.e. Gaussian) tuning curves that tile the most frequently encountered distances can achieve higher overall encoding accuracy (Ganguli and Simoncelli, 2014). Some of the features of these complex tuning curves may also be used for processing by downstream neurons.\n\nWe measured tuning curves from layer 2/3 neurons using both calcium imaging (Figure 3) and electrophysiology (Figure 4). Both recording methods revealed neurons that were strongly activated when the wall approached. The calcium imaging dataset in addition contained some neurons that were activated by running and suppressed monotonically as the wall came closer to the face (Figure 3c). These neurons may have been activated by tactile stimuli from the D and E row whiskers that are capable of touching the ball during running, and suppressed as the shorter surround whiskers touched the wall at smaller wall distances. In contrast, in the electrophysiology data the majority of the units were located in the C row barrels and had low baseline activity even during running.\n\nCalcium imaging revealed 28% of neurons as tuned to wall distance. Using similar methods, 17% of neurons responded to touch during a pole location discrimination task performed with a single whisker (Peron et al., 2015). These differences could arise from the multi-whisker nature of the wall-tracking experiments, the greater complexity of the interactions between the whiskers and the wall compared to the pole, or the fact that mice were running during wall-tracking.\n\nNeurons were also sensitive to the direction of wall movement. This sensitivity could be produced by neurons that have tuning to the direction of whisker deflection (Andermann and Moore, 2006). Wall direction selective neurons could be useful for helping the mice determine wall velocity, and acceleration. Coding for these variables, in addition to wall distance, could help the mice better track the walls through control laws that include derivative feedback alongside proportional feedback (Sofroniew et al., 2014).\n\nMultiple mechanisms could contribute to complex, non-monotonic tuning curves in barrel cortex neurons. Mice may have adjusted their whisker movements in subtle ways with wall distance (Voigts et al., 2015) which could change the strengths of the interactions with the wall and thus shape tuning curves. The similarity of tuning curves under open-loop and closed-loop conditions (Figure 4\u2014figure supplement 3), where running direction are different, suggests that the details of whisker motion are unlikely to be a critical factor. Another mechanism is based on cross-columnar inhibition mediated by multi-whisker interactions (Simons, 1985; Brumberg et al., 1996; Moore and Nelson, 1998). Individual whiskers have different lengths (Ibrahim and Wright, 1975) and touch the wall at different times as it approaches. Neurons driven by the long whiskers may be suppressed by neurons driven by the shorter whiskers at smaller wall distances, resulting in non-monotonic distance tuning curves. A third mechanism relies on cross-laminar excitation and inhibition. Neurons in different layers are coupled through interlaminar connections which excite both excitatory neurons and inhibitory interneurons in the target layers (Lefort et al., 2009; Hooks et al., 2011; Feldmeyer et al., 2013; Pluta et al., 2015). The balance of excitation and inhibition can change over time scales of milliseconds to seconds. For example, over short time scales the synchronous excitation of L4 neurons (O'Connor et al., 2013; Hires et al., 2015) is expected to drive spikes in L5 neurons (O'Connor et al., 2013). Over longer time scales L4 activation promotes mostly inhibition in L5 (Pluta et al., 2015). Cross-columnar and cross-laminar inhibition combined with short-term synaptic plasticity, likely help generate the complex representation of distance in the barrel cortex, which in turn supports wall-tracking behavior.\n\n## Materials and methods\n\n### Mice\n\nTwelve VGAT-ChR2-EYFP BAC (line 8) transgenic mice (Jackson Labs, Bar Harbor, ME: 014548; VGAT corresponds to Slc321a)\u00a0were used for photoinhibition experiments (Zhao et al., 2011; Guo et al., 2014). Eight Scnn1a-TG3-Cre x Ai32 mice were used for photoactivation experiments. Scnn1a-TG3-Cre mice (Jackson Labs: 009613) have Cre expression restricted to ~85% layer 4 excitatory neurons in the cortex and some thalamic neurons (Madisen et al., 2010; Pluta et al., 2015). Ai32 (Jackson Labs: 012569)\u00a0mice contain the Channelrhodopsin-2 (ChR2H134R-EYFP) gene in a Cre-dependent reporter cassette at the Rosa26 locus (Madisen et al., 2012). Expression of ChR2 was confirmed in barrel cortex and visual cortex by histology, although expression in parietal cortex is much weaker. Thirteen Scnn1a-TG3-Cre x Ai32 mice were used for the electrophysiology. Six C57BL/6Crl (Jackson Labs: 000664)\u00a0mice were used for the calcium imaging experiments.\n\nMice were housed individually in cages with bedding and running wheels (Bio-Serv,\u00a0Flemington,\u00a0NJ: K3327 and K3251) in a reverse light-cycle room. Mice were restricted to consume 1.0-1.5\u00a0ml of water per day (Guo et al., 2014), which could either be obtained during behavioral sessions or in supplements after behavioral sessions. The weight change during the behavioral session was used to estimate the amount of water consumed during the session, and the supplement was chosen accordingly. The weight and health (posture, quality of fur, and motor activity) of the mice were monitored daily. All procedures were in accordance with protocols approved by the Janelia Farm Institutional Animal Care and Use Committee.\n\n### Polished dental cement preparation\n\nFor optogenetic experiments, mice were prepared with a clear skull implant (Guo et al., 2014). Mice were implanted with headposts. Before starting photostimulation experiments (typically 1-8 weeks after headpost implantation) the surface of the clear dental acrylic was polished (Acrylic Polishing Kit HP Shank, Pearson Dental,\u00a0Sylmar,\u00a0CA) and covered with a thin layer of clear nail polish (Electron Microscopy Sciences,\u00a0Hatfield,\u00a0PA, 72180). This preparation transmits ~60% of incident light to the brain (Guo et al., 2014).\n\n### Laser photostimulation system\n\nPhotostimulation of Channelrhodopsin-2 was achieved using a 473 nm DPSS laser (Ultralasers,\u00a0Toronto,\u00a0Canada, DHOM-T-473-200). Laser power was controlled using an acousto-optic modulator (AOM) (Quanta Tech,\u00a0Shoreline,\u00a0WA, MTS110-A3-VIS) and fixed RF frequency driver (Quanta Tech, MODA110-D4500-2460). The AOM was controlled with a 0-5\u00a0V analogue signal from the behavioral control system. The output of the AOM was coupled to a 62.5 \u03bcm multimode fibre (Thorlabs\u00a0Newton,\u00a0NJ, M31L03) with an FC/PC adaptor (Thorlabs, PAF-X-5-A) and brought inside the light tight box. The light was directed onto a 2D scanning galvo system (Thorlabs, GVSM002). The position of the scan mirrors was controlled with +/\u2212 10\u00a0V analogue signals from the behavioral control system. The beam was then expanded 5x with plano-convex lenses (Thorlabs, LA1951-A, and LA1384-A) and focused onto the brain surface with a f = 200 mm lens (Thorlabs, AC508-200-A). The beam diameter on the skull in a system of identical design was 400 \u00b5m (Guo et al., 2014). The laser path was shielded with a\u00a02\"-diameter lens tubes. To ensure complete shielding of the stray laser light for silencing experiments, 3D-printed black plastic pieces were secured to the skull of the mouse and to a lens tube via a black bellows junction (McMaster Carr,\u00a0Elmhurst,\u00a0IL, 94205K77). A stereomicroscope (Nikon,\u00a0Tokyo,\u00a0Japan, SMZ745, with C-W 10xB [F.N. 22] eyepieces and a G-AL0.5X auxiliary objective) was used to align the laser with vasculature or Bregma.\n\n### Photoinhibition parameters\n\nBilateral photoinhibition was achieved by deflecting the laser beam between the left and right hemispheres at 100 Hz. On each hemisphere the laser either dwelled at a single spot for 10 ms or dithered between 5 spots arranged in a cross with 300 \u00b5m between the spots. For bilateral silencing, three mice were stimulated with average power 25 mW per hemisphere in a 300 \u00b5m cross, two mice were stimulated with average power 15 mW per hemisphere in a 300 \u00b5m cross, and three mice were stimulated with average power 20 mW per hemisphere at a single spot. For each animal, stimulation of S1 and V1 used the same parameters. Unilateral photoinhibition was achieved by deflecting the laser between the target hemisphere and a spot outside of the preparation at 100 Hz. Four mice were silenced at a single spot with average power 7.5 mW per hemisphere. These parameters result in robust silencing throughout the depth of the cortex over a 2\u20134 mm2 area (Guo et al., 2014). Silencing lasted for the duration of the 100-cm test period, which was generally 2\u20136 s. Trials silencing S1 and V1 were interleaved randomly with trials without silencing, such that trials of different types occurred with equal probability. Based on intrinsic signal imaging, the coordinates for the C2 barrel were 1.0 mm posterior to Bregma and \u00b1 3.0 mm lateral. Coordinates for V1 were 3.0 mm posterior to Bregma and \u00b1 1.0 mm lateral based on the Allen Brain Atlas (www.brain-map.org). For silencing, mice had either all their whiskers or a single whisker/row of whiskers on each side\n\n### Photoactivation parameters\n\nLayer 4 activation was done at a single spot at 10 Hz with 2-ms pulses. L4 photoactivation rapidly (<10 ms) drives spikes in other layers of the barrel cortex (O'Connor et al., 2013). For open-loop biasing experiments peak laser power ranged from 0 to 2 mW. The effects of photoactivation were calibrated using cell-attached recordings in awake but non-running mice (Figure 2\u2014figure supplement 1b). For closed-loop activation experiments, peak laser power was scaled to position in the virtual corridor such that the laser was off when mice were at the center of the corridor and at 4.5 mW power if mice were at the edge of the virtual corridor. Mice mainly stayed in the portion of the corridor where the laser power was under 2 mW. The left hemisphere was stimulated if the mouse was on the right side of the virtual corridor, and the right hemisphere was stimulated if the mouse was on the left side of the virtual corridor. For both open- and closed-loop experiments, stimulation only occurred when the mouse was running. For activation experiments mice had all their whiskers.\n\nCalibrations of the L4 photoactivation were performed in awake Scnn1a-TG3-Cre x Ai32 mice. On the day of the recording, a small craniotomy (\u223c200 \u03bcm diameter) was made over the barrel cortex (O'Connor et al., 2010). The dura was left intact. Recordings targeting cortical L4 were obtained with patch pipettes pulled from borosilicate tubing (Sutter instrument, Novato,\u00a0CA) and an Axopatch 700B amplifier (Molecular Devices,\u00a0Sunnyvale,\u00a0CA). Loose-seal juxtacellular pipettes were filled with ACSF or cortex buffer (in mM): 125 NaCl, 5 KCl, 10 dextrose, 10 HEPES, 2 CaCl2, 2 MgSO4, pH 7.4, osmolality \u223c272 mmol/kg. The manipulator depth was zeroed upon pipette tip contact with the dura. After contact, the craniotomy was covered by cortex buffer or 2% agar in cortex buffer. Aided by positive pressure (1 psi), the pipette was advanced through the dura. When searching for cells, the pipette pressure was reduced to 0.1\u20130.3 psi. Manipulator depths of 444\u2013560 \u03bcm were considered L4 (Andrew Hires et al., 2015). Data acquisition was controlled by Ephus (Suter et al., 2010). The sampling rate was 10 kHz.\n\n### Trial structure during illusory wall tracking\n\nTrials were 200 cm long. Mice were rewarded with water on every trial irrespective of the angle error. For three mice, trials with turns at \u00b1 11.3\u00b0 and 0\u00b0 were interleaved. For five mice, turns at \u00b1 5.7\u00b0, \u00b1 11.3\u00b0, 16.7\u00b0, and 0\u00b0 were interleaved. Trials with no photostimulation, photostimulation of barrel cortex, and photostimulation of parietal cortex (three mice), and visual cortex (five mice) were interleaved. All mice were acclimatized to head-fixed running on the ball for 2\u20133 daily sessions, 15\u201330 min each before experiments began. Four mice were first tested on the wall-tracking task with real walls, and four mice were first tested with wall-tracking on the illusory walls.\n\n### Trial structure during unilateral activation experiments\n\nPhotoactivation of L4 neurons occurred during an otherwise straight corridor. Left hemisphere and right hemisphere photostimulation trials were interleaved with trials without photostimulation. For three of the mice undergoing activation experiments, parietal cortex, 2.0 mm posterior to Bregma and 1.7 mm lateral to Bregma (Harvey et al., 2012), and barrel cortex were activated on interleaved trials. For the remaining five mice visual cortex and barrel cortex were activated on interleaved trials, as visual cortex had greater expression of ChR2 than parietal cortex. For three of the mice during activation experiments trials were only 100 cm long (with activation during the middle 50 cm) instead of 200 cm long (with activation during the middle 100 cm). Wall distance bias was calculated as the difference between the wall distance at the end of the trial and the mean wall distance on un-stimulated trials. For creating summary plots, data from manipulations of the left hemisphere were flipped in sign and averaged with data from manipulations of the right hemisphere.\n\n### Cranial window surgery\n\nCranial window surgery was performed as described (Huber et al., 2012). A 3-mm diameter craniotomy was made over S1, centred at 1.5 mm posterior 3.4 mm lateral to Bregma in the left hemisphere. GCaMP6s virus was injected over a grid of 9 sites with 300 \u00b5m spacing between the sites, 20\u00a0nl per site. Injections were performed at a rate of 20 nl/80 s. Virus was injected with a volumetric injection system (Narishige, East Meadow, NY, MO-10 manipulator) and a bevelled pipette (20\u201330 \u00b5m inner diameter, Drummond Scientific,\u00a0Broomall,\u00a0PA; Wiretrol II Capillary; P/N 5-000-2010). The imaging window was constructed from two glass circles (150 \u00b5m thickness each). An inner circle, 3 mm diameter (Warner Instruments,\u00a0Hamden,\u00a0CT, 64-0720), and an outer circle, 5 mm diameter (Warner Instruments, 64-0700), were glued together with curable optical glue (NOR-61, Norland,\u00a0Cranbury,\u00a0NJ). The window was lowered into the craniotomy such that the outer circle rested on the bone and the inner circle rested on the brain. The space between the glass and the bone was filled with a layer of agar (2%). The window was secured in place with dental acrylic (Lang Dental,\u00a0Wheeling,\u00a0IL). Imaging sessions started 2\u20133 weeks after viral injection.\n\n### Intrinsic optical imaging\n\nIntrinsic optical imaging was performed through the cranial window as previously described (O'Connor et al., 2010). Mice were lightly anesthetized with isofluorane (0.5% ) and were placed on a heat blanket with their bodies maintained at 37\u00b0. Images were acquired using a CCD camera (Retiga-2000RV, Qimaging, Surrey, BC, Canada) through a Leica MZ12.5 microscope (field of view 4.8 x 3.6 mm) with 630 nm LED illumination (Philips LumiLEDs,\u00a0Amsterdam,\u00a0Netherlands). The targeted whisker was placed inside a glass pipette connected to a piezoelectric bimorph. The whisker was deflected at 10 Hz for 4 s every 20 s for 10 min. Images were averaged during the 4 s stimulation epoch. A baseline image of the average of the 10 s period proceeding each stimulation epoch was subtracted of this image to generate the intrinsic signal image. Barrels were visible as regions showing decreased 630 nm reflectance. An image of the vasculature was taken with 530 nm LED illumination (Philips LumiLEDs) as a reference for alignment.\n\n### 2-photon calcium imaging\n\nThe design of the 2-photon imaging system used has been described elsewhere (Peron et al., 2015). A Ti-Sapphire laser (MaiTai-HP, Spectra Physics,\u00a0Irvine,\u00a0CA) tuned to 1000\u00a0nm was used for excitation. Photons were detected using GaAsP photomultiplier tubes (10770PB-40). Imaging was performed through a 16x0.8 NA microscope objective (Nikon). The objective was moved by a piezo (PI) in the z-axis to enable multi-plane imaging. The beam was deflected along the x-axis by a resonant scan mirror (Thorlabs) to enable fast imaging. The field of view was 600 x 600 \u00b5m (512 x 512 pixels) over 3 planes separated by 20 \u00b5m in the z-axis, imaged at 7.8 Hz per plane. The top image was 100\u2013150\u00a0\u00b5m below the pia. The microscope was controlled with Scanimage4 (https://openwiki.janelia.org/wiki/display/ephus/ScanImage). Average imaging power was <\u00a040 mW, measured at the back aperture of the objective. GCaMP6s has a rise time of 200 ms and a decay time of 600 ms, which means the fast dynamics of neurons will be hard to capture during a calcium imaging experiment (Chen et al., 2013).\n\nImaging was performed during the wall-tracking task in closed-loop trials, in which the wall motion was coupled to the ball motion, interleaved with open-loop trials, in which the walls were moved to a fixed position independent of ball motion. Only data from open-loop trials were analysed. Open-loop trials lasted 8 s, and consisted of 2 s while the right side wall (contralateral to the imaging window) moved into place and the left side wall (ipsilateral to the imaging window) moved far out of reach, a middle 4 s when the right wall did not move, and 2 s while the walls returned to their centered positions, 19 mm from the face. The wall was allowed to come to the face not closer than 4 mm.\n\n### Imaging analysis\n\nAnalysis of the calcium imaging data was performed using the Thunder library for neural data analysis written in Spark\u2019s Python API (Freeman et al., 2014) and in Python using the numpy, scipy, and pandas packages. To correct for brain motion, each image frame was registered to a reference image using global shifts obtained from the peak of an FFT based cross-correlation. The fluorescent time series of each pixel was regressed against the distance of the contralateral wall during open-loop trials when the mouse was running at least 3 cm/s. The wall distance and running speed of the mouse were down-sampled to the sampling rate to the imaging based on their mean values.\n\nRegions of interest (ROIs) were drawn manually based on neuronal shape in an image of mean fluorescence across the session and an image of the local correlations of each pixel with a 5-pixel neighborhood (Cheng et al., 2011). Drawing ROIs without an activity independent anatomical marker (Peron et al., 2015) may lead to a slight bias towards active neurons. Baseline fluorescence, F0, was determined using the 20th percentile of fluorescence in a 160-s rolling window. \u0394F/F was computed as (F\u2013F0 /F0). Neuropil \u0394F/F was calculated in a doughnut 3\u20138 pixels from the boundary of the ROI using the same procedure and subtracted from the ROI \u0394F/F to generate the corrected \u0394F/F signal. An ROI was taken to be active if the 90th quantile of its \u0394F/F was greater than 1.0 \u0394F/F. Under similar conditions a single yields a \u0394F/F of 0.3, with a half decay time of ~600 ms (Chen et al., 2013), suggesting that a 1.0 \u0394F/F threshold corresponds to a train of 3\u20134 spikes.\n\nFor each ROI, on each trial a wall distance tuning curve was created by taking the average of the \u0394F/F inside 3 mm bins of wall distance. The wall distance tuning curve was then created by averaging together these tuning curves on trials where the average speed of the mouse was greater than 3 cm/s. The significance of the tuning was assessed using an ANOVA. An ROI was taken to be tuned if the p value of the ANOVA was less than 0.05 and the range of its tuning curve was larger than 0.3 \u0394F/F. Tuning curves were smoothed with a univariate spline and a smoothing factor of 1.\n\n### Electrophysiology\n\nFor silicon probe recordings, methods were similar to those previously described (Guo et al., 2014). Extracellular signals were recorded with A32-edge probes (A1x32-Edge-5\u00a0mm-20-177-A32, Neuronexus) that were connected to custom headstages (Intan Technology, Los Angeles, CA, fabricated at Janelia Research Campus, Brian Barbarits, Tim Harris,\u00a0http://www.janelia.org/lab/apig-harris-lab). These headstages multiplexed the 32-channel voltage recording into 2 analog signals that were recorded on a PCI6133 board at 312.5 kHz (National Instrument,\u00a0Austin,\u00a0TX) and digitized at 14 bit. The signals were demultiplexed into the 32 voltage traces at the sampling frequency of 19531.25 Hz and saved and displayed using custom software spikeGL (C. Culianu, Anthony Leonardo, Janelia Research Campus). The headstage was connected to a motorized micromanipulator (MP-285, Sutter Instrument).\n\nA small craniotomy (approximately 0.2 mm in diameter) was made over the C-row of the barrel field in mice already implanted with the clear-skull cap and headpost. The dura was left intact. The C-row barrel field was targeted using fluorescence from layer 4 of the barrel field in the Scnn1a-Tg3-Cre x Ai32 mice (Figure 4\u2014figure supplement 1a). The dental acrylic and bone were thinned using a dental drill. The remaining thinned bone was carefully removed using a bent forceps. A separate craniotomy (~0.2 mm in diameter) was made through the headpost for ground wire in the cerebellum. A 2-mm-long platinum iridium ground wire (A-M Systems,\u00a0Carlsborg,\u00a0WA: 776000) was used as a ground wire.\n\nTo identify the position of the silicon probe in the brain, the top several millimeters of the probe were covered with DiI solution leaving electrode area clean. The probe was lowered 500 \u03bcm-700 \u03bcm deep into the cortex at rate of 20 \u03bcm per minute. The probe was rotated to 40\u00b0 angle around the anterior posterior axis and inserted approximately perpendicular to cortical surface. The probe was then given around 15 min to settle before recordings started. At the end of every experiment layer 4 was photoactivated at 10 Hz with 2\u00a0ms pulses (1\u00a0mW-2\u00a0mW peak) to obtain current source density (CSD) traces as shown in Figure 4\u2014figure supplement 1b. At the end of the experiment electrolytic lesions were made using the top and bottom pads of the silicon probe by passing 10 \u03bcA of current for 500 ms (Digitimer,\u00a0Welwyn Garden City,\u00a0UK: DS3). Immediately after the experiment mice were deeply anesthetized with 5% isoflurane then perfused with 0.1 M sodium phosphate buffer followed by 4% paraformaldehyde (PFA, in 0.1 M phosphate buffer, pH 7.4). The brain was immersed in fixative for at least 24 hr before sectioning.\n\nBefore sectioning, fluorescent images of the whole brain removed from the skull were taken with a microscope (Olympus,\u00a0Tokyo,\u00a0Japan: MVX10) to visualize the location of the silicon probe within the barrel field as shown in Figure 4\u2014figure supplement 1a. The brain was then sectioned into 70-\u03bcm-thick coronal sections to allow for the visualization of the electrolytic lesions and the DiI stain tracks (Figure 4\u2014figure supplement 1b). Combination of top and bottom lesions, the location of DiI traces, as well as the CSD analysis were critical for localization of the laminar position of the recording electrodes (Figure 4\u2014figure supplement 1b). The pronounced minimum in the CSD trace was used to identify the middle of layer 4 for each recording that was used as a reference for all depth measurements. Each recorded unit then was assigned a depth value relative to L4 by extrapolating corresponding spike waveform amplitudes across the neighboring channels.\n\nMice were acclimatized to head-fixation and running on the ball for one to three days before the recording day. Each mouse was recorded for only one 2\u20134 hr long session, in a random sequence of open-loop and closed-loop experiments. Open-loop experiments were four seconds long and consisted of one second of the wall moving in towards a fixed distance from the mouse and one second of the wall moving away from the animal. The wall was allowed to come to the face not closer than 4 mm.\n\n### Electrophysiology analysis\n\nRaw voltages were band-pass filtered between 300 and 6000 Hz (MATLAB,\u00a0Natick,\u00a0MA: \u2018idealfilter\u2019). Common noise was estimated by averaging across channels at each time-point (MATLAB \u2018trimmean\u2019, using 50% of the channels) and was subtracted from each of the individual channels. All events that exceeded an amplitude threshold of three standard deviations of the background activity were detected. To avoid detecting multiple copies of synchronously spiking neighboring neurons threshold crossings that occurred within a 450 \u03bcs shadow period were merged within a mask covering several neighboring channels. The mask depth was adjusted dynamically and varied from 4 to 7 electrodes depending on neighboring activity. The event amplitudes across all 32 channels along with the first 3 PCAs of the waveform were used as features for spike sorting. Spikes were manually sorted in the klusters environment (http://neurosuite.sourceforge.net/). A waveform signal to noise ratio > 6 and the false alarm rate < 1.5% were used as quality control metrics (Figure 4\u2014figure supplement 1f) (Guo et al., 2014). With these parameters 95% of the sorted units had a maximum spike rate > 1 Hz (Figure 4\u2014figure supplement 2c).\n\nAll subsequent data analysis was done in Python using the numpy, scipy, and pandas packages. Spike times were binned in 2-ms bins and compared to the wall distance using the same methods as the calcium imaging. Analysis code and data can be found at https://github.com/sofroniewn/tactile-coding.\n",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "703424dc-8447-49db-830e-ff37699f21bb",
+      "submission_id": "44b54876-f618-4ee1-8aad-4731baa8b1ab",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sacha B Nelson, Brandeis University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.12559.014](https://doi.org/10.7554/eLife.12559.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Neural coding in barrel cortex during whisker-guided locomotion\" for consideration by eLife. Your article has been favorably evaluated by Eve Marder (Senior Editor) and three reviewers, one of whom, Sacha Nelson, is a member of our Board of Reviewing Editors. One of the reviewers, Daniel Feldman, has also agreed to share his identity.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis study investigates whisker-based sensory coding of wall distance in somatosensory cortex during innate wall following behavior in mice. This is an important extension of prior whisker coding studies in mouse S1, which have focused on simple detection, front-back localization, and surface properties. Using optogenetics, the authors show that S1 firing is necessary and sufficient for accurate wall following. Multi electrode recording, and calcium imaging, show that many S1 neurons encode wall distance, with most neurons preferring close distances, but many showing clear tuning for intermediate wall distances. In addition, many S1 neurons also encode direction of wall motion. Overall, these findings reveal a critical role for S1 activity in encoding distance estimation during wall following behavior.\n\nEssentials revisions:\n\n1) Although the text refers to layers 2/3 and 5, the figures do not make clear where the boundaries of L4 are. It would be clearer to actually assign units to specific laminae and not simply distance from the center of L4. If this is not possible, perhaps the average boundaries could be indicated in Figure 4\u2014figure supplement 2.\n\n2) Although there are other indications that activity in L2/3 is sparse, the authors should say more about a) whether or not there is overall agreement in the activity of cells studied electrophysiologically and with imaging and b) whether there were indications that the inactive cells were completely inactive or fired occasionally. Related to this is the question of how ROIs were chosen--i.e. is there any approximate sense of how the criteria stated in the methods translates into firing rate? Did a similar minimum firing rate apply in practice to units which could be isolated electrophysiologically?\n\n3) It might be useful to include some additional analyses of the relationship between firing and running rate. It is not clear how tuning for wall distance and speed interact.\n\nAdditional suggestions:\n\nOne of the reviewers made the following suggestions for additional work that would add to the impact of the paper, but the reviewers agreed this would not be necessary for acceptance of the paper. Perhaps some of these issues could be addressed in the Discussion.\n\n1) How is distance information read out from S1? The L4-ChR2 results argue for a simple firing rate code for proximity. However, the physiology shows many neurons that are tuned for intermediate distances, and the Discussion argues that such Gaussian tuning curves are metabolically more efficient than monotonic distance-response functions. If distance information is encoded by Gaussian-tuned neurons, why does ChR2 stimulation at varying intensities-which implements a monotonic population firing rate code-effectively drive wall-following behavior? (This fictive wall following is even more accurate than real-wall following!)\n\n2) How is distance tuning generated for individual S1 neurons? Perhaps the simplest model is that each neuron's preferred distance matches the length of its principal whisker. This would make sense because more distant positions cannot directly drive spikes from the cell, while closer wall positions likely suppress firing by activating additional, shorter surround whiskers, which inhibit the recorded neuron. Such net inhibition between neighboring whiskers has been observed often in passive studies.\n",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "42126ef0-ecc0-4a73-b6f4-c7c40233664f",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C1",
+      "claim": "Mice use their whiskers to track walls, staying near the center of a winding corridor without training.",
+      "claim_type": "EXPLICIT",
+      "source": "When the mice are in the center of the corridor, their whiskers can just touch the walls. Mice use their whiskers to track the walls, staying near the center of the winding corridor without training (Sofroniew et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sofroniew et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "b5fb0405-9871-4097-9387-2f56fbd49d70",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C2",
+      "claim": "Bilateral photoinhibition of barrel cortex impaired turning performance in response to bends in the corridor.",
+      "claim_type": "EXPLICIT",
+      "source": "Silencing barrel cortex bilaterally impaired turning in response to bends in the corridor (angle error 8.09 \u00b1 2.22\u00b0 vs. 3.68 \u00b1 0.55\u00b0, p = 6.4*10\u22124 t-test) (Figure 1d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data showing increased angle error during photoinhibition and reference to Figure 1d,e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "363acf53-c96b-425e-8688-45dfe42cc68f",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C3",
+      "claim": "Performance during barrel cortex photoinhibition was similar to performance after trimming all whiskers.",
+      "claim_type": "EXPLICIT",
+      "source": "Performance during photoinhibition was similar to performance after trimming all whiskers (angle error 8.09 \u00b1 2.22\u00b0 vs. 8.83 \u00b1 2.24\u00b0, p = 0.52 t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data comparing angle errors with no significant difference",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "024313b9-c257-45ce-b5f9-036c51e68878",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C4",
+      "claim": "Bilateral photoinhibition of visual cortex had no effect on turning performance.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, there was no effect on turning performance in response to bilateral photoinhibition of the visual cortex (angle error 3.20 \u00b1 0.79\u00b0 vs. 3.68 \u00b1 0.55\u00b0, p = 0.19 t-test), controlling for non-specific effects of photoinhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data showing no significant difference in angle error",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "21211957-5e97-4e6d-b61a-108779be9de2",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C5",
+      "claim": "Mice use neural activity in barrel cortex to guide locomotion along the wall.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that mice use neural activity in barrel cortex to guide locomotion along the wall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from photoinhibition experiments showing impaired performance",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "e02bf6f5-dbfe-4208-8ef6-ebaadaa2f771",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C6",
+      "claim": "Photoactivation of layer 4 barrel cortex evoked up to 8 additional spikes per neuron per second at maximum experienced power.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimuli consisted of 2-ms laser pulses (10 Hz); at maximum experienced power the photostimulus evoked up to 8 additional spikes per neuron per second in layer 4 (Figure 2\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by cell-attached recordings during photoactivation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "4643ef4b-93f6-4e4c-a879-d5de4e931cbe",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C7",
+      "claim": "Mice responded to photoactivation of layer 4 by making left and right turns at bends in the illusory corridor.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice responded to photoactivation of layer 4 by making left and right turns at bends in the illusory corridor (Figure 2b), with slightly lower angle error than when responding to real walls (angle error 2.30 \u00b1 0.85\u00b0 vs. 3.19 \u00b1 0.55\u00b0, p = 0.026 t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data comparing angle errors in illusory vs. real corridors",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "75661b8a-d84e-478a-9b0e-dd2df8d96e20",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C8",
+      "claim": "Running speeds in the illusory corridor were slower than running speeds in the corridor with walls.",
+      "claim_type": "EXPLICIT",
+      "source": "Running speeds in the illusory corridor were slower (13.2 \u00b1 3.6 cm/s) than running speeds in the corridor with walls (20.4 \u00b1 3.8 cm/s).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental measurements of running speed",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "16b88075-6ef6-41d7-8968-b1f5c48b2807",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C9",
+      "claim": "Photoactivation of parietal or visual cortices did not enable mice to follow bends in the corridor.",
+      "claim_type": "EXPLICIT",
+      "source": "When parietal (n=3 mice) or visual cortices (n=5 mice) were activated mice did not follow the bends in the corridor (angle error 14.01 \u00b1 1.73\u00b0 vs. 3.19 \u00b1 0.55\u00b0, p = 1.7*10-8 t-test) (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data showing significantly higher angle error",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "14f3b7e1-247a-4ae2-a78d-d4d81a573e12",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C10",
+      "claim": "The response to photoactivation was not learnt as all mice performed the task from the very first trial.",
+      "claim_type": "EXPLICIT",
+      "source": "This response to photoactivation was not learnt as all mice performed the task from the very first trial, similarly to how they perform the task with the real walls (Sofroniew et al., 2014), and the reward was provided in each trial independent of behavioral performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral observation and citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "1635cbc7-2dbe-4077-97e2-4be72f312f4f",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C11",
+      "claim": "Unilateral activation of layer 4 with constant power biased running trajectories towards the side of activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Running trajectories were biased towards the side of the activation, as if the mice were avoiding a wall they were touching on the contralateral side (7.7 mm \u00b1 4.5 mm at 2.0 mW) (Figure 2\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental measurements of trajectory bias",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "755285d0-9417-41cc-9862-96510dfd25f3",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C12",
+      "claim": "Activation of parietal or visual cortex did not show an effect on distance from the wall.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of the parietal (n=3) or visual cortex (n=5) did not show an effect on distance from the wall (0.7 mm \u00b1 3.8 mm at 2.0 mW) (Figure 2\u2014figure supplement 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental measurements showing minimal trajectory bias",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "d91d3dbf-109e-4bc9-9877-21caf402e0eb",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C13",
+      "claim": "Activity in the barrel cortex can guide locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results show that activity in the barrel cortex can guide locomotion, and suggest that wall distance may be encoded by spike rates in barrel cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from photoactivation experiments",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "3d9616f2-4a2d-408c-8ecb-1500ee0bf351",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C14",
+      "claim": "Wall distance may be encoded by spike rates in barrel cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results show that activity in the barrel cortex can guide locomotion, and suggest that wall distance may be encoded by spike rates in barrel cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference from photoactivation experiments",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "d6802d91-09c5-41ad-bb64-7954d3fa9c58",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C15",
+      "claim": "28% of layer 2/3 ROIs showed significant tuning to wall distance.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall 564/2019 (28%) of ROIs showed significant tuning to wall distance (p<0.05, ANOVA across trials) (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by calcium imaging data and statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "e501d052-8c82-4b85-94b7-d26577d54230",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C16",
+      "claim": "17% of layer 2/3 ROIs were active but not tuned to wall distance.",
+      "claim_type": "EXPLICIT",
+      "source": "A further 334/2019 (17%) of ROIs were active (90th percentile F/F > 1.0) but were not tuned to wall distance, and the remaining 1121/2019 (55%) ROIs were inactive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by calcium imaging data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "23ff9984-a4d0-47b4-93a7-0abc539e2b35",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C17",
+      "claim": "55% of layer 2/3 ROIs were inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "A further 334/2019 (17%) of ROIs were active (90th percentile F/F > 1.0) but were not tuned to wall distance, and the remaining 1121/2019 (55%) ROIs were inactive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by calcium imaging data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "09c138c7-85f1-4926-b5d8-a0c44d298b2d",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C18",
+      "claim": "The peak wall distance preferred by tuned ROIs tiled the length of the whiskers, with a bias towards small distances.",
+      "claim_type": "EXPLICIT",
+      "source": "The peak wall distance preferred by the tuned ROIs tiled the length of the whiskers, although there was a bias towards small distances (Figure 3f,g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by calcium imaging data showing distribution of tuning curve peaks",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "8df6bfac-d690-46d1-9db0-f5f70570008a",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C19",
+      "claim": "86% of recorded units showed significant tuning to wall distance during open-loop movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these units, 179 (86%) showed significant tuning to wall distance during open-loop movements of the wall (p<0.05 ANOVA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by electrophysiology data and statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "a2243b37-a649-496f-835f-ea394b53d4ca",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C20",
+      "claim": "The majority of units showed activation (72% with modulation > 0.5).",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of units showed activation (106/148; 72% modulation > 0.5), but a sizable fraction showed suppression or mixed responses (42/148; 28% modulation <0.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by electrophysiology data and modulation index analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "ac3f0139-4943-44bc-a275-652edfc7d893",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C21",
+      "claim": "28% of units showed suppression or mixed responses (modulation <0.5).",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of units showed activation (106/148; 72% modulation > 0.5), but a sizable fraction showed suppression or mixed responses (42/148; 28% modulation <0.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by electrophysiology data and modulation index analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "c770bc83-1dbe-4ec2-9a5e-ac02012ccabb",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C22",
+      "claim": "Units with negative and near-zero modulation indices tended to be found in infragranular layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Units with negative and near-zero modulation indices tended to be found in infragranular layers (Figure 4i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by electrophysiology data showing laminar distribution",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "55892e3e-6883-49c5-89ed-84789ec809af",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C23",
+      "claim": "Units showed similar tuning curves under both open-loop and closed-loop conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Units showed similar tuning curves under both open-loop and closed-loop (Figure 4\u2014figure supplement 3a,b), with similar average rates over the same wall distances range (107/114; 94% -0.5 < open vs. closed modulation < 0.5) (Figure 4\u2014figure supplement 3c,d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by electrophysiology data comparing open-loop and closed-loop conditions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "8a5d4659-de72-4e1e-bb5c-0d32bc750575",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C24",
+      "claim": "31% of all units were significantly modulated by running speed in the absence of walls.",
+      "claim_type": "EXPLICIT",
+      "source": "A substantial fraction of all units (31%; 46/148) were significantly modulated by running speed in the absence of the walls (Figure 4\u2014figure supplement 4a,b) (Keller et al., 2012; Saleem et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by electrophysiology data and citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "37187157-f61c-4803-8744-e8312e4508df",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C25",
+      "claim": "Wall distance tuning curves computed during slow running and fast running were similar on average.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the wall distance tuning curves computed during slow running and fast running were similar on average (modulation index was \u22120.10 \u00b1 0.55) (Figure 4\u2014figure supplement 4c,d,e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by electrophysiology data comparing tuning curves at different speeds",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "8bb0d398-1a38-4eac-955c-b121be87695d",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C26",
+      "claim": "Spike rate changes in response to interactions with the contralateral wall were consistently greater than to the ipsilateral wall.",
+      "claim_type": "EXPLICIT",
+      "source": "Spike rate changes in response to interactions with the contralateral wall were consistently greater than to the ipsilateral wall (27/29; 93% contra vs ipsi modulation > 0) (Figure 4\u2014figure supplement 5e,f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by electrophysiology data comparing contralateral and ipsilateral responses",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "ec2f66bb-d7c7-4215-a4ff-0e9e2243950b",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C27",
+      "claim": "The hemisphere contralateral to the wall is predominantly involved in wall-tracking.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is consistent with the results of the unilateral activation experiment, which suggest the hemisphere contralateral to the wall is predominantly involved in wall-tracking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from laterality data and unilateral activation experiments",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "f9e8a1a5-395e-4267-9546-1d8f053fa019",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C28",
+      "claim": "55% of neurons were strongly modulated by wall direction (absolute direction modulation > 0.2).",
+      "claim_type": "EXPLICIT",
+      "source": "Some neurons were strongly modulated (82/148, 55% absolute direction modulation > 0.2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by electrophysiology data analyzing direction modulation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "9df49915-9739-4161-8eb5-5c78d1b4084f",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C29",
+      "claim": "Barrel cortex encodes both wall position and direction of wall motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Barrel cortex thus encodes both wall position and direction of wall motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from electrophysiology data showing position and direction tuning",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "4c0a9f6a-1e3f-444a-882d-3dd6295641c5",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C30",
+      "claim": "Rodents move their whiskers to localize and identify nearby objects.",
+      "claim_type": "EXPLICIT",
+      "source": "Rodents move their whiskers to localize (Knutsen et al., 2006; O'Connor et al., 2010) and identify (Anjum et al., 2006) nearby objects, and to guide their locomotion along walls and through narrow tunnels (Vincent, 1912; Sofroniew and Svoboda, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "c1a883fc-1ab2-4136-b7f3-455874bda46c",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C31",
+      "claim": "Whiskers are elastic rods with a gradually decreasing thickness as a function of distance from the face.",
+      "claim_type": "EXPLICIT",
+      "source": "Whiskers are elastic rods with a gradually decreasing thickness as a function of distance from the face (Birdwell et al., 2007; Hires et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "79004b3c-710b-4fb7-bfb6-81a2ffc02359",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C32",
+      "claim": "More proximal deflections cause larger forces at the base of the whisker than distal deflections.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of the whisker taper, more proximal deflections cause larger forces at the base of the whisker than distal deflections (Birdwell et al., 2007; Pammer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research on whisker mechanics",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "d6ada111-6087-4975-b3a3-79354349d5b8",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C33",
+      "claim": "Objects that are closer to the face trigger higher spike rates in primary sensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Objects that are closer to the face therefore trigger higher spike rates in primary sensory neurons (Szwed et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "1b370b7e-a9bd-44e5-99eb-29d5e03f2d60",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C34",
+      "claim": "Layer 4 is the main thalamocortical recipient layer and contains spatial clusters of neurons termed 'barrels'.",
+      "claim_type": "EXPLICIT",
+      "source": "Layer (L) 4 is the main thalamocortical recipient layer and contains spatial clusters of neurons, termed 'barrels'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established anatomical knowledge about barrel cortex",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "273f5013-1032-4048-8959-94e20377a478",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C35",
+      "claim": "There is a one-to-one correspondence between L4 barrels and specific individual whiskers on the face.",
+      "claim_type": "EXPLICIT",
+      "source": "There is a one-to-one correspondence between L4 barrels and specific individual whiskers on the face (Van der Loos and Woolsey, 1973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to foundational research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "eaaf75dd-fdab-4a46-8985-1392be9a4a22",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C36",
+      "claim": "Passive whisker deflection causes brief, short latency (~10 ms) excitatory responses in neurons across layers of the corresponding barrel column.",
+      "claim_type": "EXPLICIT",
+      "source": "Passive whisker deflection causes brief, short latency (~10 ms) excitatory responses in neurons across layers of the corresponding barrel column (Simons, 1978; Armstrong-James et al., 1992; De Kock et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior electrophysiology research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "3f30b110-de0f-4dbf-91e7-c10fbce92dad",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C37",
+      "claim": "Neural responses increase monotonically with the strength of a whisker stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual neurons are sensitive to the direction (Simons and Carvell, 1989), amplitude and velocity of whisker deflection, and neural responses increase monotonically with the strength of a whisker stimulus (Simons, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "f6768e5b-b9f8-4344-91a5-2a005392b149",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C38",
+      "claim": "Deflection of neighboring whiskers causes longer-latency, weaker, excitatory responses and surround suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Deflection of neighboring whiskers causes longer-latency, weaker, excitatory responses (Armstrong-James et al., 1992) and surround suppression (Simons, 1985; Moore and Nelson, 1998), implying that neighboring barrel columns can inhibit each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "c62a73d4-532f-461f-a317-04ca14f6875f",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C39",
+      "claim": "During exploration, mice move their whiskers rhythmically over objects at ~16 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "During exploration, mice move their whiskers rhythmically over objects at ~16 Hz (Mitchinson et al., 2011; Sofroniew et al., 2014; Sofroniew and Svoboda, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior behavioral research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "c9521c11-c996-49b2-b1a1-492710a39189",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C40",
+      "claim": "Neurons in layer 4 and layer 2/3 of the barrel cortex show activity highly correlated with touch onset during whisker-based pole localization.",
+      "claim_type": "EXPLICIT",
+      "source": "In a whisker-based pole localization task in head-fixed mice, neurons in layer 4 and layer 2/3 of the barrel cortex show activity highly correlated with touch onset (O'Connor et al., 2010; Crochet et al., 2011; Hires et al., 2015), with larger forces producing more vigorous responses (O'Connor et al., 2013; Peron et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "b1a31eaf-2ef9-4431-ac12-95ef419709cd",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C41",
+      "claim": "Barrel cortex activity could drive whisker-guided locomotion through the superior colliculus and rubrospinal circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Barrel cortex activity could drive whisker-guided locomotion through the superior colliculus and rubrospinal circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative hypothesis about neural pathways",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "9849da13-5a00-480f-b652-0b782d596658",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C42",
+      "claim": "The tracking accuracy in the illusory corridor was on par or better compared to the real corridor.",
+      "claim_type": "EXPLICIT",
+      "source": "The tracking accuracy in the illusory corridor was on par or better compared to the real corridor; this may be because the photostimulus provided a stronger distance-dependent signal compared to touch-evoked activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from experimental data with speculative explanation",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "c6f6e0cf-35fd-4ab1-9478-8531715e3d4e",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C43",
+      "claim": "Downstream layers and brain areas can interpret increases of layer 4 spike rate as increased proximity to a wall on the contralateral side and drive the appropriate turning responses.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments show that downstream layers and brain areas can interpret increases of layer 4 spike rate as increased proximity to a wall on the contralateral side and drive the appropriate turning responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from photoactivation experiments",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "f9a281d6-2fcd-4e3d-9055-ca252b906587",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C44",
+      "claim": "Encoding wall distance with a population of non-monotonic tuning curves that tile the most frequently encountered distances can achieve higher overall encoding accuracy given a fixed metabolic cost.",
+      "claim_type": "EXPLICIT",
+      "source": "Encoding wall distance with a population of tuning curves that increase monotonically with decreasing wall distance (i.e. sigmoids) would lead to very large metabolic costs when representing small distances. Given a fixed metabolic cost, a population of non-monotonic (i.e. Gaussian) tuning curves that tile the most frequently encountered distances can achieve higher overall encoding accuracy (Ganguli and Simoncelli, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to theoretical work",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "91034b79-077c-4880-8e55-b48a45404a3d",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C45",
+      "claim": "Calcium imaging revealed 28% of neurons as tuned to wall distance, compared to 17% of neurons responding to touch during a pole location discrimination task.",
+      "claim_type": "EXPLICIT",
+      "source": "Calcium imaging revealed 28% of neurons as tuned to wall distance. Using similar methods, 17% of neurons responded to touch during a pole location discrimination task performed with a single whisker (Peron et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of current data with cited prior research",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "e8facdd6-ec38-4b52-80c7-0d23cb8dac24",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C46",
+      "claim": "The differences in tuned neuron percentages could arise from the multi-whisker nature of the wall-tracking experiments, the greater complexity of the interactions, or the fact that mice were running during wall-tracking.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences could arise from the multi-whisker nature of the wall-tracking experiments, the greater complexity of the interactions between the whiskers and the wall compared to the pole, or the fact that mice were running during wall-tracking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative explanation for observed differences",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "6c2c3e18-9e38-44ed-8408-600bee03076f",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C47",
+      "claim": "Wall direction selective neurons could be useful for helping mice determine wall velocity and acceleration.",
+      "claim_type": "EXPLICIT",
+      "source": "Wall direction selective neurons could be useful for helping the mice determine wall velocity, and acceleration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative functional interpretation",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "368917b0-4014-4231-b942-510786ad5309",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C48",
+      "claim": "Coding for wall distance, velocity, and acceleration could help mice better track walls through control laws that include derivative feedback alongside proportional feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "Coding for these variables, in addition to wall distance, could help the mice better track the walls through control laws that include derivative feedback alongside proportional feedback (Sofroniew et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative functional interpretation with citation",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "ffb1fccf-4d14-43bd-9d62-15245977668a",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C49",
+      "claim": "The similarity of tuning curves under open-loop and closed-loop conditions suggests that the details of whisker motion are unlikely to be a critical factor.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity of tuning curves under open-loop and closed-loop conditions (Figure 4\u2014figure supplement 3), where running direction are different, suggests that the details of whisker motion are unlikely to be a critical factor.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference drawn from comparison of tuning curves under different conditions",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "ec1b72f8-8a5b-47ee-a18a-85e1c03a62b1",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C50",
+      "claim": "Cross-columnar inhibition mediated by multi-whisker interactions could contribute to complex, non-monotonic tuning curves.",
+      "claim_type": "EXPLICIT",
+      "source": "Another mechanism is based on cross-columnar inhibition mediated by multi-whisker interactions (Simons, 1985; Brumberg et al., 1996; Moore and Nelson, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative mechanism with citations to prior research",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "5feea4cc-71c3-4410-bdc8-188bfd7856b3",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C51",
+      "claim": "Individual whiskers have different lengths and touch the wall at different times as it approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual whiskers have different lengths (Ibrahim and Wright, 1975) and touch the wall at different times as it approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation and logical inference",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "cc290b93-dc44-4c18-b339-23d1d564fb0c",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C52",
+      "claim": "Neurons driven by long whiskers may be suppressed by neurons driven by shorter whiskers at smaller wall distances, resulting in non-monotonic distance tuning curves.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons driven by the long whiskers may be suppressed by neurons driven by the shorter whiskers at smaller wall distances, resulting in non-monotonic distance tuning curves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative mechanistic explanation",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "1ffbaf88-4612-4790-accd-0705c52b3b1c",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C53",
+      "claim": "Cross-laminar excitation and inhibition could contribute to complex tuning curves through interlaminar connections.",
+      "claim_type": "EXPLICIT",
+      "source": "A third mechanism relies on cross-laminar excitation and inhibition. Neurons in different layers are coupled through interlaminar connections which excite both excitatory neurons and inhibitory interneurons in the target layers (Lefort et al., 2009; Hooks et al., 2011; Feldmeyer et al., 2013; Pluta et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative mechanism with citations to prior research",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "f73e0078-0d04-4e9c-98da-61dcaac24ecc",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C54",
+      "claim": "Over short time scales, synchronous excitation of L4 neurons is expected to drive spikes in L5 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, over short time scales the synchronous excitation of L4 neurons (O'Connor et al., 2013; Hires et al., 2015) is expected to drive spikes in L5 neurons (O'Connor et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on cited prior research",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "2fa7f2de-91b9-4960-a5b1-d79c91beed44",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C55",
+      "claim": "Over longer time scales, L4 activation promotes mostly inhibition in L5.",
+      "claim_type": "EXPLICIT",
+      "source": "Over longer time scales L4 activation promotes mostly inhibition in L5 (Pluta et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "da3fe9ce-e034-4c30-b488-9c8bec1201a8",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C56",
+      "claim": "Cross-columnar and cross-laminar inhibition combined with short-term synaptic plasticity likely help generate the complex representation of distance in the barrel cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-columnar and cross-laminar inhibition combined with short-term synaptic plasticity, likely help generate the complex representation of distance in the barrel cortex, which in turn supports wall-tracking behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative mechanistic explanation",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "fd38e1ef-0d88-42a1-99c4-fd0ca369c4f7",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C57",
+      "claim": "The complex representation of distance in barrel cortex supports wall-tracking behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-columnar and cross-laminar inhibition combined with short-term synaptic plasticity, likely help generate the complex representation of distance in the barrel cortex, which in turn supports wall-tracking behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference connecting neural representation to behavior",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "f2459aa6-f18a-4940-a822-9090e9ddb4ce",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C58",
+      "claim": "Neurons were tuned to the distance between the animal snout and the contralateral wall, with monotonic, unimodal, and multimodal tuning curves.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons were tuned to the distance between the animal snout and the contralateral wall, with monotonic, unimodal, and multimodal tuning curves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings from imaging and electrophysiology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "ce7abbc4-8378-44e8-954d-56817f8c8421",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C59",
+      "claim": "This rich representation of object location in the barrel cortex could not be predicted based on simple stimulus-response relationships involving individual whiskers.",
+      "claim_type": "EXPLICIT",
+      "source": "This rich representation of object location in the barrel cortex could not be predicted based on simple stimulus-response relationships involving individual whiskers and likely emerges within cortical circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the complexity of observed tuning curves",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "4e926236-56a1-48c8-b0a9-d8edcdee3072",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C60",
+      "claim": "The rich representation of object location likely emerges within cortical circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "This rich representation of object location in the barrel cortex could not be predicted based on simple stimulus-response relationships involving individual whiskers and likely emerges within cortical circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the complexity of observed tuning curves",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "cfb9d076-6283-4a75-9613-c41ab9c52208",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C61",
+      "claim": "Optogenetic manipulations revealed that barrel cortex plays a role in wall-tracking.",
+      "claim_type": "EXPLICIT",
+      "source": "Optogenetic manipulations revealed that barrel cortex plays a role in wall-tracking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of photoinhibition experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "ea923021-f044-44cc-a62c-7f2c6bb69a74",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C62",
+      "claim": "Closed-loop optogenetic control of layer 4 neurons can substitute for whisker-object contact to guide behavior resembling wall tracking.",
+      "claim_type": "EXPLICIT",
+      "source": "Closed-loop optogenetic control of layer 4 neurons can substitute for whisker-object contact to guide behavior resembling wall tracking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of photoactivation experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "b6f7e340-04d1-412f-b528-dd6fe213f502",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C63",
+      "claim": "Mice were housed individually in cages with bedding and running wheels in a reverse light-cycle room.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were housed individually in cages with bedding and running wheels (Bio-Serv, Flemington, NJ: K3327 and K3251) in a reverse light-cycle room.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "2afb824e-58c0-4338-af86-50458c7eaa6e",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C64",
+      "claim": "Mice were restricted to consume 1.0-1.5 ml of water per day.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were restricted to consume 1.0-1.5 ml of water per day (Guo et al., 2014), which could either be obtained during behavioral sessions or in supplements after behavioral sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "92107125-810a-4a02-be2f-cfc85d46dc58",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C65",
+      "claim": "GCaMP6s has a rise time of 200 ms and a decay time of 600 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "GCaMP6s has a rise time of 200 ms and a decay time of 600 ms, which means the fast dynamics of neurons will be hard to capture during a calcium imaging experiment (Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research on GCaMP6s properties",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "40e20803-024f-4db5-bc04-813015a98e02",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C66",
+      "claim": "A single spike yields a \u0394F/F of 0.3, with a half decay time of ~600 ms for GCaMP6s.",
+      "claim_type": "EXPLICIT",
+      "source": "Under similar conditions a single yields a \u0394F/F of 0.3, with a half decay time of ~600 ms (Chen et al., 2013), suggesting that a 1.0 \u0394F/F threshold corresponds to a train of 3\u20134 spikes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to prior research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "cc1e81d6-10ce-4f2c-a68e-13010ea04a94",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C67",
+      "claim": "A 1.0 \u0394F/F threshold corresponds to a train of 3\u20134 spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "Under similar conditions a single yields a \u0394F/F of 0.3, with a half decay time of ~600 ms (Chen et al., 2013), suggesting that a 1.0 \u0394F/F threshold corresponds to a train of 3\u20134 spikes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference based on cited GCaMP6s properties",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "aae2b476-2381-4de9-b3de-ad27757f6626",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C68",
+      "claim": "Recordings spanned layer 2 to layer 5, although the majority of units were located in infragranular layers.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings spanned layer 2 to layer 5, although the majority of units were located in infragranular layers (Figure 4\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of electrophysiology recording locations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "00fda2c8-8d08-4185-adfd-4e419b18d3cd",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C69",
+      "claim": "Baseline and peak spike rates were higher in deeper layer neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Baseline and peak spike rates were higher in deeper layer neurons (Figure 4\u2014figure supplement 2b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from electrophysiology data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "d8645154-64f8-45b6-8567-0aa85d160101",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C70",
+      "claim": "Both false alarm rate of the inter-spike-interval distribution < 1.5% and waveform SNR > 6 were used as quality control metrics.",
+      "claim_type": "EXPLICIT",
+      "source": "Spike sorting was performed manually, and both false alarm rate of the inter-spike-interval distribution < 1.5% and waveform SNR > 6 were used as quality control metrics (Figure 4\u2014figure supplement 1c,f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of data analysis methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "b39b2071-84e0-4a6d-aa97-96bf25a7d952",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C71",
+      "claim": "With quality control parameters, 95% of the sorted units had a maximum spike rate > 1 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "With these parameters 95% of the sorted units had a maximum spike rate > 1 Hz (Figure 4\u2014figure supplement 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result of applying quality control metrics",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "69f11590-7eb4-4afc-a0d4-eb6515c99803",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "claim_id": "C72",
+      "claim": "Analysis was restricted to periods of running (speed > 3 cm/s), ensuring the mice were actively whisking.",
+      "claim_type": "EXPLICIT",
+      "source": "As with the imaging experiments, analysis was restricted to periods of running (speed > 3 cm/s), ensuring the mice were actively whisking (Sofroniew et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data analysis methods with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c327e009-bc90-49ca-bebd-c3816f9bc6fd",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Barrel cortex is necessary for whisker-guided wall tracking. Bilateral photoinhibition of barrel cortex impaired turning performance to a level similar to whisker trimming, while visual cortex photoinhibition had no effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C4 provide strong experimental evidence with appropriate controls (visual cortex) and statistical significance (p = 6.4\u00d710\u207b\u2074). The comparison to whisker trimming (C3) validates that the photoinhibition effect is specific to whisker-dependent behavior. The conclusion (C5) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "396edfb3-954d-46e6-ab38-cdb4873aecc0",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Closed-loop optogenetic activation of layer 4 barrel cortex can substitute for whisker-wall contact to guide locomotion in an illusory corridor. Activation of parietal or visual cortex did not produce this effect, and the behavior required no training.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C9, and C10 provide strong evidence with appropriate controls (parietal/visual cortex) and statistical significance (p = 1.7\u00d710\u207b\u2078). The calibration of photoactivation effects (C6) and unilateral activation experiments (C11-C12) provide additional support. However, C14 is speculative about the encoding mechanism, and C42's explanation for superior performance is not tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "040d98e7-6061-405f-8f3c-e047eb72e976",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Two-photon calcium imaging revealed that 28% of layer 2/3 neurons showed significant tuning to wall distance, with tuning curve peaks tiling the whisker length range but biased toward small distances.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18 provide clear quantitative data with appropriate statistical testing (p<0.05, ANOVA). The classification of neurons into tuned, active-but-untuned, and inactive populations is well-documented. C45 provides useful comparison to prior work, though the comparison involves different behavioral contexts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "7dc065d5-c6a4-489b-9ec2-3fc7b2b82998",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Extracellular recordings revealed that 86% of units showed significant tuning to wall distance, with diverse response profiles including monotonic activation (72%), suppression, and mixed responses (28%). Suppressed and mixed-response units were enriched in infragranular layers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22 provide robust electrophysiological data with appropriate statistical testing and quality control metrics (C70-C71). The laminar distribution analysis (C22, C68-C69) adds important depth to the findings. The diversity of tuning profiles (C58) is well-documented across multiple recording sessions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "b8bb81e5-d923-4ec6-a398-a5ef82913fa9",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Neural tuning to wall distance was similar under open-loop and closed-loop conditions, suggesting that whisker motion details are not critical for the observed tuning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C23 provides quantitative evidence (94% of units with modulation between -0.5 and 0.5) comparing the two conditions. The inference in C49 is reasonable given the data, though alternative explanations are not fully excluded. The comparison addresses an important potential confound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "a9c2699d-4bb0-4342-94a9-e82a815f6ecb",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "While 31% of units were modulated by running speed in the absence of walls, wall distance tuning curves were similar during slow and fast running.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 address an important confound with appropriate statistical testing. The modulation index of -0.10 \u00b1 0.55 indicates minimal effect of running speed on wall distance tuning. However, the analysis could benefit from more detailed examination of speed-tuned neurons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "ef36e4ef-1aa7-4308-8b2c-f2299a0e16f4",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Neural responses to the contralateral wall were consistently stronger than to the ipsilateral wall (93% of units), suggesting the contralateral hemisphere is predominantly involved in wall-tracking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 provides clear quantitative evidence from a subset of recordings (n=3 mice, 29 units). The inference in C27 is consistent with both the laterality data and the unilateral activation experiments (C11). However, the sample size for ipsilateral recordings is relatively small.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "865c44db-4aea-44d3-99e1-0fd9319edf9d",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Barrel cortex encodes both wall position and direction of wall motion, with 55% of neurons strongly modulated by wall direction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 provide evidence for directional tuning with clear quantitative criteria (absolute modulation > 0.2). The conclusion that barrel cortex encodes both position and direction is supported by the data, though the functional significance requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "ddd64849-644d-409a-9ae7-f2db9b1696e0",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The rich representation of object location in barrel cortex could not be predicted from simple stimulus-response relationships and likely emerges within cortical circuits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The complexity of tuning curves (monotonic, unimodal, multimodal) documented in the imaging and electrophysiology experiments supports this inference. However, the claim is somewhat speculative as the authors do not directly test whether subcortical representations are simpler or rule out all alternative explanations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "0776eb75-122b-4cea-a1e2-1bce7bd31f3a",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Multiple mechanisms could generate complex tuning curves, including cross-columnar inhibition from multi-whisker interactions, cross-laminar excitation/inhibition with short-term plasticity, and efficient coding principles that tile frequently encountered distances.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims are largely speculative (C50, C52, C53, C56) and cite prior work rather than directly testing mechanisms. While C44 cites theoretical work on efficient coding and C54-C55 cite prior research on laminar interactions, the manuscript does not provide direct experimental evidence for these specific mechanisms generating the observed tuning curves.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "184251b4-43fa-41cf-9b53-205299613a99",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Speculative interpretations about neural pathways, functional roles of direction-selective neurons, and comparisons to prior work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These claims are explicitly speculative (C41, C47, C48) or offer possible explanations without testing them (C46). While they provide useful context and suggest future directions, they are not directly supported by the current experimental data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "87628e98-c13a-4728-be28-26244f915974",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims about whisker anatomy, barrel cortex organization, and prior findings on neural responses to whisker stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are well-supported by citations to established prior research. They provide necessary context for interpreting the current findings but do not represent novel results from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    },
+    {
+      "id": "e5ffbb00-af11-4b78-8e26-f2af45f9ec24",
+      "content_id": "c7b8c5c6-7895-4f44-ba70-9b941ff7d608",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methodological details including animal housing, calcium indicator properties, and data analysis parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These methodological claims are clearly documented and appropriately cited where relevant (C64, C65, C66, C72). The quality control metrics (C70-C71) are appropriate. However, C67's inference about spike counts from \u0394F/F relies on cited calibrations rather than direct validation in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:12:22.308756Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "42126ef0-ecc0-4a73-b6f4-c7c40233664f",
+      "result_id": "c327e009-bc90-49ca-bebd-c3816f9bc6fd"
+    },
+    {
+      "claim_id": "b5fb0405-9871-4097-9387-2f56fbd49d70",
+      "result_id": "c327e009-bc90-49ca-bebd-c3816f9bc6fd"
+    },
+    {
+      "claim_id": "363acf53-c96b-425e-8688-45dfe42cc68f",
+      "result_id": "c327e009-bc90-49ca-bebd-c3816f9bc6fd"
+    },
+    {
+      "claim_id": "024313b9-c257-45ce-b5f9-036c51e68878",
+      "result_id": "c327e009-bc90-49ca-bebd-c3816f9bc6fd"
+    },
+    {
+      "claim_id": "21211957-5e97-4e6d-b61a-108779be9de2",
+      "result_id": "c327e009-bc90-49ca-bebd-c3816f9bc6fd"
+    },
+    {
+      "claim_id": "cfb9d076-6283-4a75-9613-c41ab9c52208",
+      "result_id": "c327e009-bc90-49ca-bebd-c3816f9bc6fd"
+    },
+    {
+      "claim_id": "e02bf6f5-dbfe-4208-8ef6-ebaadaa2f771",
+      "result_id": "396edfb3-954d-46e6-ab38-cdb4873aecc0"
+    },
+    {
+      "claim_id": "4643ef4b-93f6-4e4c-a879-d5de4e931cbe",
+      "result_id": "396edfb3-954d-46e6-ab38-cdb4873aecc0"
+    },
+    {
+      "claim_id": "75661b8a-d84e-478a-9b0e-dd2df8d96e20",
+      "result_id": "396edfb3-954d-46e6-ab38-cdb4873aecc0"
+    },
+    {
+      "claim_id": "16b88075-6ef6-41d7-8968-b1f5c48b2807",
+      "result_id": "396edfb3-954d-46e6-ab38-cdb4873aecc0"
+    },
+    {
+      "claim_id": "14f3b7e1-247a-4ae2-a78d-d4d81a573e12",
+      "result_id": "396edfb3-954d-46e6-ab38-cdb4873aecc0"
+    },
+    {
+      "claim_id": "1635cbc7-2dbe-4077-97e2-4be72f312f4f",
+      "result_id": "396edfb3-954d-46e6-ab38-cdb4873aecc0"
+    },
+    {
+      "claim_id": "755285d0-9417-41cc-9862-96510dfd25f3",
+      "result_id": "396edfb3-954d-46e6-ab38-cdb4873aecc0"
+    },
+    {
+      "claim_id": "d91d3dbf-109e-4bc9-9877-21caf402e0eb",
+      "result_id": "396edfb3-954d-46e6-ab38-cdb4873aecc0"
+    },
+    {
+      "claim_id": "3d9616f2-4a2d-408c-8ecb-1500ee0bf351",
+      "result_id": "396edfb3-954d-46e6-ab38-cdb4873aecc0"
+    },
+    {
+      "claim_id": "9849da13-5a00-480f-b652-0b782d596658",
+      "result_id": "396edfb3-954d-46e6-ab38-cdb4873aecc0"
+    },
+    {
+      "claim_id": "c6f6e0cf-35fd-4ab1-9478-8531715e3d4e",
+      "result_id": "396edfb3-954d-46e6-ab38-cdb4873aecc0"
+    },
+    {
+      "claim_id": "ea923021-f044-44cc-a62c-7f2c6bb69a74",
+      "result_id": "396edfb3-954d-46e6-ab38-cdb4873aecc0"
+    },
+    {
+      "claim_id": "d6802d91-09c5-41ad-bb64-7954d3fa9c58",
+      "result_id": "040d98e7-6061-405f-8f3c-e047eb72e976"
+    },
+    {
+      "claim_id": "e501d052-8c82-4b85-94b7-d26577d54230",
+      "result_id": "040d98e7-6061-405f-8f3c-e047eb72e976"
+    },
+    {
+      "claim_id": "23ff9984-a4d0-47b4-93a7-0abc539e2b35",
+      "result_id": "040d98e7-6061-405f-8f3c-e047eb72e976"
+    },
+    {
+      "claim_id": "09c138c7-85f1-4926-b5d8-a0c44d298b2d",
+      "result_id": "040d98e7-6061-405f-8f3c-e047eb72e976"
+    },
+    {
+      "claim_id": "91034b79-077c-4880-8e55-b48a45404a3d",
+      "result_id": "040d98e7-6061-405f-8f3c-e047eb72e976"
+    },
+    {
+      "claim_id": "8df6bfac-d690-46d1-9db0-f5f70570008a",
+      "result_id": "7dc065d5-c6a4-489b-9ec2-3fc7b2b82998"
+    },
+    {
+      "claim_id": "a2243b37-a649-496f-835f-ea394b53d4ca",
+      "result_id": "7dc065d5-c6a4-489b-9ec2-3fc7b2b82998"
+    },
+    {
+      "claim_id": "ac3f0139-4943-44bc-a275-652edfc7d893",
+      "result_id": "7dc065d5-c6a4-489b-9ec2-3fc7b2b82998"
+    },
+    {
+      "claim_id": "c770bc83-1dbe-4ec2-9a5e-ac02012ccabb",
+      "result_id": "7dc065d5-c6a4-489b-9ec2-3fc7b2b82998"
+    },
+    {
+      "claim_id": "f2459aa6-f18a-4940-a822-9090e9ddb4ce",
+      "result_id": "7dc065d5-c6a4-489b-9ec2-3fc7b2b82998"
+    },
+    {
+      "claim_id": "aae2b476-2381-4de9-b3de-ad27757f6626",
+      "result_id": "7dc065d5-c6a4-489b-9ec2-3fc7b2b82998"
+    },
+    {
+      "claim_id": "00fda2c8-8d08-4185-adfd-4e419b18d3cd",
+      "result_id": "7dc065d5-c6a4-489b-9ec2-3fc7b2b82998"
+    },
+    {
+      "claim_id": "55892e3e-6883-49c5-89ed-84789ec809af",
+      "result_id": "b8bb81e5-d923-4ec6-a398-a5ef82913fa9"
+    },
+    {
+      "claim_id": "ffb1fccf-4d14-43bd-9d62-15245977668a",
+      "result_id": "b8bb81e5-d923-4ec6-a398-a5ef82913fa9"
+    },
+    {
+      "claim_id": "8a5d4659-de72-4e1e-bb5c-0d32bc750575",
+      "result_id": "a9c2699d-4bb0-4342-94a9-e82a815f6ecb"
+    },
+    {
+      "claim_id": "37187157-f61c-4803-8744-e8312e4508df",
+      "result_id": "a9c2699d-4bb0-4342-94a9-e82a815f6ecb"
+    },
+    {
+      "claim_id": "8bb0d398-1a38-4eac-955c-b121be87695d",
+      "result_id": "ef36e4ef-1aa7-4308-8b2c-f2299a0e16f4"
+    },
+    {
+      "claim_id": "ec2f66bb-d7c7-4215-a4ff-0e9e2243950b",
+      "result_id": "ef36e4ef-1aa7-4308-8b2c-f2299a0e16f4"
+    },
+    {
+      "claim_id": "f9e8a1a5-395e-4267-9546-1d8f053fa019",
+      "result_id": "865c44db-4aea-44d3-99e1-0fd9319edf9d"
+    },
+    {
+      "claim_id": "9df49915-9739-4161-8eb5-5c78d1b4084f",
+      "result_id": "865c44db-4aea-44d3-99e1-0fd9319edf9d"
+    },
+    {
+      "claim_id": "ce7abbc4-8378-44e8-954d-56817f8c8421",
+      "result_id": "ddd64849-644d-409a-9ae7-f2db9b1696e0"
+    },
+    {
+      "claim_id": "4e926236-56a1-48c8-b0a9-d8edcdee3072",
+      "result_id": "ddd64849-644d-409a-9ae7-f2db9b1696e0"
+    },
+    {
+      "claim_id": "f9a281d6-2fcd-4e3d-9055-ca252b906587",
+      "result_id": "0776eb75-122b-4cea-a1e2-1bce7bd31f3a"
+    },
+    {
+      "claim_id": "ec1b72f8-8a5b-47ee-a18a-85e1c03a62b1",
+      "result_id": "0776eb75-122b-4cea-a1e2-1bce7bd31f3a"
+    },
+    {
+      "claim_id": "5feea4cc-71c3-4410-bdc8-188bfd7856b3",
+      "result_id": "0776eb75-122b-4cea-a1e2-1bce7bd31f3a"
+    },
+    {
+      "claim_id": "cc290b93-dc44-4c18-b339-23d1d564fb0c",
+      "result_id": "0776eb75-122b-4cea-a1e2-1bce7bd31f3a"
+    },
+    {
+      "claim_id": "1ffbaf88-4612-4790-accd-0705c52b3b1c",
+      "result_id": "0776eb75-122b-4cea-a1e2-1bce7bd31f3a"
+    },
+    {
+      "claim_id": "f73e0078-0d04-4e9c-98da-61dcaac24ecc",
+      "result_id": "0776eb75-122b-4cea-a1e2-1bce7bd31f3a"
+    },
+    {
+      "claim_id": "2fa7f2de-91b9-4960-a5b1-d79c91beed44",
+      "result_id": "0776eb75-122b-4cea-a1e2-1bce7bd31f3a"
+    },
+    {
+      "claim_id": "da3fe9ce-e034-4c30-b488-9c8bec1201a8",
+      "result_id": "0776eb75-122b-4cea-a1e2-1bce7bd31f3a"
+    },
+    {
+      "claim_id": "fd38e1ef-0d88-42a1-99c4-fd0ca369c4f7",
+      "result_id": "0776eb75-122b-4cea-a1e2-1bce7bd31f3a"
+    },
+    {
+      "claim_id": "b1a31eaf-2ef9-4431-ac12-95ef419709cd",
+      "result_id": "184251b4-43fa-41cf-9b53-205299613a99"
+    },
+    {
+      "claim_id": "e8facdd6-ec38-4b52-80c7-0d23cb8dac24",
+      "result_id": "184251b4-43fa-41cf-9b53-205299613a99"
+    },
+    {
+      "claim_id": "6c2c3e18-9e38-44ed-8408-600bee03076f",
+      "result_id": "184251b4-43fa-41cf-9b53-205299613a99"
+    },
+    {
+      "claim_id": "368917b0-4014-4231-b942-510786ad5309",
+      "result_id": "184251b4-43fa-41cf-9b53-205299613a99"
+    },
+    {
+      "claim_id": "4c0a9f6a-1e3f-444a-882d-3dd6295641c5",
+      "result_id": "87628e98-c13a-4728-be28-26244f915974"
+    },
+    {
+      "claim_id": "c1a883fc-1ab2-4136-b7f3-455874bda46c",
+      "result_id": "87628e98-c13a-4728-be28-26244f915974"
+    },
+    {
+      "claim_id": "79004b3c-710b-4fb7-bfb6-81a2ffc02359",
+      "result_id": "87628e98-c13a-4728-be28-26244f915974"
+    },
+    {
+      "claim_id": "d6ada111-6087-4975-b3a3-79354349d5b8",
+      "result_id": "87628e98-c13a-4728-be28-26244f915974"
+    },
+    {
+      "claim_id": "1b370b7e-a9bd-44e5-99eb-29d5e03f2d60",
+      "result_id": "87628e98-c13a-4728-be28-26244f915974"
+    },
+    {
+      "claim_id": "273f5013-1032-4048-8959-94e20377a478",
+      "result_id": "87628e98-c13a-4728-be28-26244f915974"
+    },
+    {
+      "claim_id": "eaaf75dd-fdab-4a46-8985-1392be9a4a22",
+      "result_id": "87628e98-c13a-4728-be28-26244f915974"
+    },
+    {
+      "claim_id": "3f30b110-de0f-4dbf-91e7-c10fbce92dad",
+      "result_id": "87628e98-c13a-4728-be28-26244f915974"
+    },
+    {
+      "claim_id": "f6768e5b-b9f8-4344-91a5-2a005392b149",
+      "result_id": "87628e98-c13a-4728-be28-26244f915974"
+    },
+    {
+      "claim_id": "c62a73d4-532f-461f-a317-04ca14f6875f",
+      "result_id": "87628e98-c13a-4728-be28-26244f915974"
+    },
+    {
+      "claim_id": "c9521c11-c996-49b2-b1a1-492710a39189",
+      "result_id": "87628e98-c13a-4728-be28-26244f915974"
+    },
+    {
+      "claim_id": "b6f7e340-04d1-412f-b528-dd6fe213f502",
+      "result_id": "e5ffbb00-af11-4b78-8e26-f2af45f9ec24"
+    },
+    {
+      "claim_id": "2afb824e-58c0-4338-af86-50458c7eaa6e",
+      "result_id": "e5ffbb00-af11-4b78-8e26-f2af45f9ec24"
+    },
+    {
+      "claim_id": "92107125-810a-4a02-be2f-cfc85d46dc58",
+      "result_id": "e5ffbb00-af11-4b78-8e26-f2af45f9ec24"
+    },
+    {
+      "claim_id": "40e20803-024f-4db5-bc04-813015a98e02",
+      "result_id": "e5ffbb00-af11-4b78-8e26-f2af45f9ec24"
+    },
+    {
+      "claim_id": "cc1e81d6-10ce-4f2c-a68e-13010ea04a94",
+      "result_id": "e5ffbb00-af11-4b78-8e26-f2af45f9ec24"
+    },
+    {
+      "claim_id": "d8645154-64f8-45b6-8567-0aa85d160101",
+      "result_id": "e5ffbb00-af11-4b78-8e26-f2af45f9ec24"
+    },
+    {
+      "claim_id": "b39b2071-84e0-4a6d-aa97-96bf25a7d952",
+      "result_id": "e5ffbb00-af11-4b78-8e26-f2af45f9ec24"
+    },
+    {
+      "claim_id": "69f11590-7eb4-4afc-a0d4-eb6515c99803",
+      "result_id": "e5ffbb00-af11-4b78-8e26-f2af45f9ec24"
+    }
+  ],
+  "comparisons": []
+}

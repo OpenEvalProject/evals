@@ -1,0 +1,223 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C52",
+      "C53"
+    ],
+    "result": "NF-\u03baB in GFP-p65 knock-in MEFs behaves as a damped oscillator that synchronizes to periodic TNF-\u03b1 stimulation across a wide range of forcing frequencies and amplitudes, but does not exhibit entrainment. Synchronization does not improve with repeated forcing, disappears rapidly when forcing ceases, and occurs without preference for the intrinsic 90-min period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 provide direct experimental evidence of synchronization behavior and its properties. Claims C52-C53 correctly conclude that the system is not entrained based on failure to meet entrainment criteria (sustained oscillations, improvement with training, resonance preference). The mathematical model (C28) provides mechanistic support. The experimental data on synchrony metrics, phase analysis, and loss of synchrony after forcing cessation are internally consistent and well-documented across multiple forcing conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Under constant TNF-\u03b1 stimulation, GFP-p65 knock-in cells exhibit heterogeneous, damped oscillations with an intrinsic period of ~90 min that converge to equilibrium. Mathematical modeling shows that damped oscillations arise from the vast majority of parameter combinations in the NF-\u03baB regulatory network, while sustained oscillations require specific parameter sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Experimental observations (C32, C37, C38) are well-documented with quantitative analysis of peak timing and frequency. The mathematical modeling (C39-C42) provides mechanistic insight through systematic parameter exploration and stability analysis. The conclusion that damped oscillations are the norm is supported by both experimental data (average of 4 peaks in 12 hr vs. expected 8) and computational analysis showing most parameter combinations yield stable fixed points.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C29",
+      "C30",
+      "C31",
+      "C59",
+      "C60",
+      "C61",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Synchronous NF-\u03baB oscillations drive three distinct patterns of gene expression: oscillating transcripts (Cluster 1, enriched for chemokines/cytokines), rapidly accumulating transcripts (Cluster 2, immunity genes), and slowly accumulating transcripts (Cluster 3, extracellular matrix genes). mRNA degradation rate is the key parameter distinguishing these patterns, with Cluster 1 genes showing highest degradation rates and resetting with each stimulus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The three expression patterns are demonstrated through multiple lines of evidence: qPCR validation (C59-C61), genome-wide microarray clustering (C64-C65), and pathway enrichment analysis (C71-C74). The mathematical model successfully reproduces all three patterns (C29, C68) and identifies mRNA degradation as the discriminating parameter (C30, C69). The functional coherence within clusters (C31) is statistically significant. The claim that Cluster 1 genes reset with each stimulus (C66) is supported by the oscillatory pattern, though direct experimental validation of 'no memory' would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Single cells activate NF-\u03baB synchronously to external TNF-\u03b1 stimulation, with synchronization occurring across a wide variety of forcing periods (45, 60, 90, 180 min) and amplitudes, without preference for the intrinsic 90-min period. Synchronization intensity increases monotonically with stimulus amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The synchronization is demonstrated through phase plots, synchrony intensity measurements (\u03b7), and period distributions across multiple experimental conditions. The lack of resonance preference (C49) is shown by successful 1:1 locking at periods ranging from 0.5T\u2080 to 2T\u2080. The amplitude dependence (C50) is quantified through systematic variation of TNF-\u03b1 doses. The data are internally consistent and well-replicated across conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "A minimal mathematical model incorporating NF-\u03baB dynamics and gene regulation successfully reproduces all three observed transcriptional patterns, with mRNA degradation rate as the key discriminating parameter. The oscillatory regulator Zfp36 in Cluster 1 may contribute to shaping peaked responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model fits are quantitatively validated with average relative error <10% for genes with increasing expression (Figure 6\u2014figure supplement 5). The identification of mRNA degradation as the key parameter (C69) is supported by parameter analysis showing two orders of magnitude difference between Cluster 1 and Clusters 2/3. The observation about Zfp36 (C70) is appropriately qualified as speculative ('might contribute'). The model's ability to fit data while keeping NF-\u03baB parameters constant across genes strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C54",
+      "C55",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors propose that oscillatory TF dynamics segments time into ~90-min cycles providing renewing opportunity windows for cellular decisions. The damped oscillator behavior allows adaptation to irregular stimulation patterns, with cells making independent decisions under constant stimulation but coordinating when stimuli vary beyond a threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims represent speculative interpretations of the biological significance of the observed dynamics. While the experimental observations supporting damped oscillator behavior are solid, the proposed functional advantages (C54, C55, C76-C81) are not directly tested. The evolutionary argument (C55) and the speculation about coordinated vs. uncoordinated cell movement (C77-C80) lack experimental validation. These are reasonable hypotheses that follow from the data, but require additional experiments to be considered supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Control experiments demonstrate that the imaging conditions (Hoechst staining, UV/488nm laser exposure) do not cause significant cell death, DNA damage, or cell cycle perturbation in the experimental system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal assays support this conclusion: cell viability/division in unstimulated cells (C33), thymine dimer immunostaining (C34), \u03b3H2AX immunostaining (C35), and FACS cell cycle analysis (C36). The controls are appropriate and the data are clearly presented in supplementary figures. These controls are essential for validating that the observed NF-\u03baB dynamics reflect biological responses rather than imaging artifacts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript describes the canonical NF-\u03baB signaling pathway, including I\u03baB and A20 feedback loops, and notes that constant stimulation produces heterogeneous, asynchronous oscillations at the single-cell level that appear non-oscillatory at the population level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize well-established knowledge about NF-\u03baB regulation, supported by appropriate citations (C15-C19). The observation about population-level asynchrony (C20-C21) is consistent with prior literature and serves as motivation for the synchronization experiments. These are background claims that provide context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C22",
+      "C23"
+    ],
+    "result": "The introduction establishes that NF-\u03baB plays key roles in inflammation and cancer, displays oscillations of unclear biological advantage, and that prior work has reported both short-period oscillations in various systems and entrainment in synthetic genetic oscillators and 3T3 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent established knowledge (C1, C10-C14) and prior work (C3, C22-C23) with appropriate citations. Claim C2 correctly identifies a knowledge gap that motivates the study. These are contextual claims that frame the research question and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C51"
+    ],
+    "result": "NF-\u03baB does not behave as a free oscillator under continuous stimulation, and the ability to synchronize to 45-min forcing (half the intrinsic period) without skipping cycles demonstrates the plasticity of synchronization rather than entrainment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lack of sustained oscillations under constant stimulation (C45) is demonstrated through long-term imaging showing dampening over time. The 45-min forcing experiment (C51) provides strong evidence against entrainment, as entrained oscillators would exhibit 1:2 resonance (skipping alternate cycles), which is not observed. This supports the damped oscillator interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Mathematical simulations suggest that sustained oscillations are not the norm but arise from specific parameter combinations, with the NF-\u03baB network having an equilibrium that can be stable (damped oscillations) or unstable (sustained oscillations) depending on parameters, with transitions mediated by Hopf bifurcation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The parameter exploration (C56) is systematic and shows <10% of parameter combinations yield sustained oscillations. The stability analysis (C57) correctly identifies the mathematical basis for the transition between damped and sustained oscillations. This provides mechanistic insight into why different cell types might show different dynamics, though experimental validation of the Hopf bifurcation prediction would strengthen the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C75"
+    ],
+    "result": "NF-\u03baB oscillations consist of periodic nuclear-cytoplasmic relocalization with corresponding cycles of DNA binding, and oscillating transcription programs are best achieved with oscillating transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 describes the observed phenomenon accurately. Claim C75 is a logical inference about the relationship between TF dynamics and gene expression patterns, supported by the observation that Cluster 1 genes (oscillating transcripts) are driven by oscillating NF-\u03baB. This is a reasonable conclusion though stated somewhat generally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Genes with increasing transcription are enriched for predicted NF-\u03baB targets, while genes with decreasing expression are not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is demonstrated through enrichment analysis against known NF-\u03baB target gene lists with statistically significant p-values (10\u207b\u00b9\u2074 < p < 0.05) as shown in Figure 6\u2014figure supplement 3. This validates that the increasing expression clusters contain bona fide NF-\u03baB targets while decreasing clusters likely represent indirect effects.",
+    "result_type": "MINOR"
+  }
+]

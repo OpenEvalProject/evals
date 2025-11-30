@@ -1,0 +1,2171 @@
+{
+  "submission": {
+    "id": "5c50e8e0-a5ff-4d6a-956c-a48b8890a525",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:15:08.365863Z",
+    "updated_at": "2025-11-30T00:15:08.365863Z"
+  },
+  "content": [
+    {
+      "id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "submission_id": "5c50e8e0-a5ff-4d6a-956c-a48b8890a525",
+      "content_type": "manuscript",
+      "content_text": "# The Lamin B receptor is essential for cholesterol synthesis and perturbed by disease-causing mutations\n\n## Authors\n\n- Pei-Ling Tsai<sup>1</sup>\n- Chenguang Zhao<sup>1</sup>\n- Elizabeth Turner<sup>1</sup>\n- Christian Schlieker<sup>1</sup> ([ORCID: 0000-0002-1237-4267](https://orcid.org/0000-0002-1237-4267)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Biophysics and Biochemistry Yale University New Haven United States\n2. Department of Cell Biology Yale School of Medicine New Haven United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nLamin B receptor (LBR) is a polytopic membrane protein residing in the inner nuclear membrane in association with the nuclear lamina. We demonstrate that human LBR is essential for cholesterol synthesis. LBR mutant derivatives implicated in Greenberg skeletal dysplasia or Pelger-Hu\u00ebt anomaly fail to rescue the cholesterol auxotrophy of a LBR-deficient human cell line, consistent with a loss-of-function mechanism for these congenital disorders. These disease-causing variants fall into two classes: point mutations in the sterol reductase domain perturb enzymatic activity by reducing the affinity for the essential cofactor NADPH, while LBR truncations render the mutant protein metabolically unstable, leading to its rapid degradation at the inner nuclear membrane. Thus, metabolically unstable LBR variants may serve as long-sought-after model substrates enabling previously impossible investigations of poorly understood protein turnover mechanisms at the inner nuclear membrane of higher eukaryotes.\n\n## Introduction\n\nLamin B receptor (LBR) is an evolutionary conserved, multifunctional protein (Olins et al., 2010). The N-terminal moiety of LBR, which resides in the nucleoplasm, contains a chromatin-binding TUDOR domain and associates with the nuclear lamina (Makatsori et al., 2004; Pyrpasopoulou et al., 1996; Worman et al., 1988), while the polytopic C-terminal domain anchors LBR in the inner nuclear membrane (INM) and has sequence homology to sterol C14 reductases (Li et al., 2015; Silve et al., 1998; Worman et al., 1990). Sterol C14 reductases are widely conserved throughout evolution and are responsible for the reduction of a specific carbon-carbon double bond as part of the tightly controlled enzymatic cascade which results in the production of cholesterol and cholesterol-related compounds (Benveniste, 2004; Holmer et al., 1998)\u00a0(Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/16011/elife-16011-fig1-v2.jpg)\n\n**Figure 1.:** Simplified schematic of cholesterol biosynthesis starting from Acetyl-CoA. After 13 enzymatic steps, the intermediate Lanosterol can enter one of two parallel pathways designated Bloch and Kandutsch-Russel pathways, respectively, both of which employ an NADPH-dependent reduction step which can be catalyzed by sterol C14 reductases LBR or TM7SF2 (highlighted in magenta). Adapted, with modifications, from (Sharpe and Brown, 2013). The inset on the upper right depicts distinct subcellular localizations of the human sterol reductases LBR and TM7SF2 localizing to the inner nuclear membrane and ER, respectively.\n\nThere is currently no known functional connection between the chromatin-binding N-terminus of LBR and the sterol reductase C-terminus of the protein. The function of the sterol reductase domain (SRD) of LBR is further obfuscated by the fact that human cells have a second C14 sterol reductase enzyme called TM7SF2, which is conserved in evolution and localizes to the endoplasmic reticulum (ER), where other enzymes responsible for cholesterol biogenesis are typically found (Bennati et al., 2006). The TM7SF2 promoter harbors a sterol response element (SRE) common to most, if not all enzymes implicated in cholesterol synthesis, allowing for the tight regulation of their transcription in response to cholesterol availability (Brown and Goldstein, 1999; Sharpe and Brown, 2013). However, the LBR gene lacks an SRE consensus sequence and is constitutively expressed (Bennati et al., 2006; Cohen et al., 2008; Sharpe and Brown, 2013), drawing into question whether LBR has a significant role in cholesterol synthesis.\n\nWhile congenital diseases associated with defects in cholesterol homeostasis have been extensively investigated (Goldstein and Brown, 2015), much less is known about the possible involvement of LBR mutations in cholesterol metabolism. Two congenital disorders are known to be associated with mutations in LBR: Pelger-Hu\u00ebt anomaly and Greenberg skeletal dysplasia (Oosterwijk et al., 2003; Shultz et al., 2003; Wassif et al., 2007; Waterham et al., 2003)\u00a0(see Table 1). Pelger-Hu\u00ebt anomaly is an autosomal dominant disorder in which a single mutation in one LBR allele results in abnormal hypolobulation of granulocyte nuclei (Best et al., 2003; Hoffmann et al., 2002; Shultz et al., 2003). The other human disease associated with LBR, Greenberg skeletal dysplasia, is a perinatally lethal, autosomal recessive condition that results in abnormal bone development, fetal hydrops, and the ultimate nonviability of the fetus (Chitayat et al., 1993; Greenberg et al., 1988; Horn et al., 2000; Konstantinidou et al., 2008; Trajkovski et al., 2002). Interestingly, mounting evidence indicates that Greenberg skeletal dysplasia results from the inheritance of two mutant LBR alleles that when heterozygous cause Pelger-Hu\u00ebt anomaly (Konstantinidou et al., 2008; Oosterwijk et al., 2003), indicating that the two diseases represent different allelic states of the same chromosomal lesion. However, it is unclear whether these diseases are caused by structural changes in the nuclear lamina, or whether they are diseases of cholesterol metabolism (Clayton et al., 2010; Olins et al., 2010; Wassif et al., 2007; Waterham et al., 2003; Worman and Bonne, 2007).\n\n**Table 1.**\n Diseases-associated LBR mutations used in this study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>LBR variant</th>\n      <th>Mutation</th>\n      <th>Phenotype</th>\n      <th>Reference</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>N547D</td>\n      <td>c.1639A&gt;G</td>\n      <td>Heterozygous - No Phenotype</td>\n      <td>Clayton et al., 2010</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>p.N547D</td>\n      <td>Homozygous - Greenberg Dysplasia</td>\n      <td>Konstantinidou et al., 2008</td>\n    </tr>\n    <tr>\n      <td>R583Q</td>\n      <td>c.1748G&gt;A</td>\n      <td>Heterozygous - No Phenotype</td>\n      <td>Clayton et al., 2010</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>p.R583Q</td>\n      <td>Homozygous - Greenberg Dysplasia</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>1402T\u0394</td>\n      <td>c.1402delT</td>\n      <td>Heterozygous - Phenotype Unknown</td>\n      <td>Clayton et al., 2010</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>p.Y468TfsX475</td>\n      <td>Homozygous - Greenberg Dysplasia</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>1600*</td>\n      <td>c.1599-1605TCTTCTA\u2192CTAGAAG</td>\n      <td>Heterozygous - Pelger-Hu\u00ebt Anomaly</td>\n      <td>Waterham et al., 2003</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>p.X534</td>\n      <td>Homozygous - Greenberg Dysplasia</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nIn this study, we show that LBR is essential for cholesterol synthesis. Using a human cell culture model, we demonstrate that it is this function that is perturbed by LBR mutations associated with Pelger-Hu\u00ebt anomaly and Greenberg skeletal dysplasia, suggesting a loss-of-function mechanism for these congenital disorders. Unexpectedly, disease-causing mutations involving C-terminal truncations of LBR lead to their rapid degradation in the nuclear envelope (NE). Such LBR mutants appear to be dislocated from the INM directly into the nucleoplasm, unlike traditional substrates of the ER-associated degradation (ERAD) machinery, which are eliminated in the cytosol after their dislocation from the ER (Claessen et al., 2012; Vembar and Brodsky, 2008). Metabolically unstable LBR mutant proteins will therefore be informative for future studies aimed at elucidating mechanisms of protein quality control at the nuclear envelope of mammalian cells, a site that was previously experimentally inaccessible due to the absence of suitable model substrates.\n\n## Results\n\n### Generation of LBR knockout HeLa cell lines\n\nIn order to clarify the cellular function of LBR both in cholesterol metabolism and as a structural component of the nuclear lamina, we used the CRISPR/Cas9 system (Mali et al., 2013) to generate LBR knockout HeLa cell lines (Figure 2\u2014figure supplement 1A). CRISPR/Cas9 editing of LBR alleles was performed in a recombination-competent HeLa FlpIn cell line (hereafter designated wild type or WT cells), allowing for rapid and efficient introduction of WT rescue and disease-specific LBR alleles into the LBR knockout cell background via site-specific recombination (Turner et al., 2015). CRISPR/Cas9-treated WT cells were screened for the absence of full-length LBR protein by immunoblotting using antibodies against both the N and C termini of the protein (Figure 2\u2014figure supplement 1B), and via genotyping using PCR primers flanking the CRISPR target site (Figure 2\u2014figure supplement 1A, arrows). A clone was obtained that yielded no detectable LBR protein as judged by immunoblotting, corresponding to the absence of a PCR product of the size predicted by the wild-type LBR allele (Figure 2\u2014figure supplement 1C), indicating that all LBR alleles had been effectively targeted.\n\nTo exclude the presence of hypomorphic alleles, we performed deep sequencing on the genetic locus encompassing the LBR CRISPR/Cas9 target site. Since HeLa cells are aneuploid, including three complete copies of chromosome 1 where the LBR gene is located, any LBR knockout should have three distinct genome 'edits'.\n\nIndeed, sequence analysis revealed three distinct mutant alleles, all containing frame-shift mutations or premature stop codons within the 5' region of the LBR open reading frame, showing that no more than 12 amino acids of LBR WT sequence can be produced from any of the three mutant alleles (Figure 2\u2014figure supplement 2).\n\n### Deletion of LBR does not alter NE integrity\n\nAs indicated by its name, LBR has long been implicated in NE integrity and NE anchoring to the nuclear lamina (Appelbaum et al., 1990; Worman et al., 1990, 1988; Ye and Worman, 1994), prompting us to investigate if removing LBR perturbs the structure and composition of the nuclear lamina. We performed immunofluorescence microscopy analysis of known INM proteins and components of the nuclear lamina in both LBR knockout (KO) and WT cells. No differences in overall cell morphology or growth were observed between WT and LBR KO cells under normal growth conditions (Figure 2A). Surprisingly, we found no change in the localization of Lamin B1, Lamin A/C or Emerin in LBR KO cells compared to control cells (Figure 2A). Similarly, we found that the absence of LBR also had no effect on the localization of other structural proteins of the NE such as Sun1 or Sun2, which serve as the INM components of the LINC (linker of nucleoskeleton and cytoskeleton) complex (Crisp et al., 2006)\u00a0(Figure 2\u2014figure supplement 3A and B). Similar results were obtained for other NE, nuclear and ER markers (Figure 2\u2014figure supplement 3).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/16011/elife-16011-fig2-v2.jpg)\n\n**Figure 2.:** (A) HeLa WT and HeLa LBR KO cells were stained with antibodies against LBR using an antibody recognizing the N-terminal domain (ND), Lamin B1, Lamin A/C, and Emerin and then imaged by immunofluorescence microscopy. Scale bar = 10 \u03bcm. (B) EM images of WT and LBR KO HeLa cells. The nucleus (N) and cytosol (C) are labeled and nuclear pores are indicated by arrowheads. Scale bar = 500 nm. (C) Indicated cell lines were cultured under cholesterol-restrictive growth conditions for two days, imaged by bright-field microscopy, and cultured for 2 more days under cholesterol restrictive conditions, and imaged again. Cells were exposed either to vehicle, free cholesterol or LDL (10 \u00b5M) for four days as indicated. Scale bar = 50 \u00b5m. (D) HeLa WT and LBR KO cells in LPDS-containing medium were metabolically labeled with [14C]-acetate. Lipids were extracted and separated by TLC and visualized via autoradiography. [14C]-cholesterol was included as a standard (std).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16011/elife-16011-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Schematic diagram encompassing the human LBR locus. Shown are the CRISPR guide RNA sequence used to create the knockout and the flanking genotyping PCR primers used to amplify the targeted region. Exons are black boxes, introns are black lines, and PCR primers are half arrows. (B) Parental and LBR knockout cells were harvested and analyzed for the presence of LBR protein by SDS-PAGE followed by immunoblotting (IB) using antibodies raised against the N-terminal domain (top) and C-terminal domain (bottom) of LBR. Blots were stripped and probed for \u03b2-actin as a loading control. (C) Genotyping PCR of the targeted LBR locus using primers shown in panel A for parental and LBR knockout cells. GAPDH was used as a loading control.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16011/elife-16011-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) At the nucleotide level, three different mutations, designated Edit 1, Edit 2, and Edit 3, each corresponding to one of the three copies of LBR found in HeLa cells, were detected. The first mutation completely removes the LBR start codon, while the second two mutations are large out-of-frame deletions, the second of which removes the exon 1 5\u2019 splice site. (B) At the protein level, Edit 1 results in the translation of a 34 amino acid out-of-frame peptide from an internal start codon located at p.251. Edit 2 results in the truncation of LBR at position p.17, and Edit 3 results in the correct translation of the first 11 amino acids of LBR, followed by 38 amino acids translated from LBR intron 1, with the introduction of a premature stop codon at LBR p.50.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/16011/elife-16011-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A\u2013G) HeLa WT and HeLa LBR KO cells were fixed and processed for immunofluorescence using the indicated antibodies. Scale bar = 10 \u03bcm.\n\nLastly, we utilized electron microscopy on both LBR KO and WT cells to obtain high-resolution images of the NE. We found that in both WT and LBR KO cells, the inner and outer nuclear membranes were regularly spaced and featured a nuclear lamina and nuclear pores of normal morphology (Figure 2B, arrowheads). These data, together with our previous observations by immunofluorescence microscopy, indicate that in these cells, LBR does not play a significant role in maintaining NE integrity. We cannot, however, exclude that LBR plays a role in the structural integrity of the nuclear lamina in specific cell types, under conditions of mechanical stress, or developmental stages found only in the context of the living organism.\n\n### LBR is required for viability under cholesterol starvation conditions\n\nNext, we set out to investigate the role of LBR in cholesterol synthesis. In order to determine if LBR is required for cell proliferation under cholesterol-restrictive growth conditions, HeLa WT cells and LBR KO cells were cultured in medium containing lipoprotein-depleted fetal bovine serum. We found that after 4 days under cholesterol-restrictive growth conditions LBR KO, but not WT HeLa cells exhibited slow growth, cell rounding, and detachment, followed quickly by cell death on days 5\u20137 (Figure 2C). Addition of 10 \u00b5M exogenous cholesterol to the cell culture medium effectively rescued the observed sensitivity of LBR KO cells to low-cholesterol growth conditions (Figure 2C), indicating that the observed phenotype is in fact due to a deficiency in cholesterol production. The observed growth defect of LBR KO cells was also rescued by the addition of low density lipoprotein (LDL) particles, a physiologically relevant cholesterol carrier (Lodish, 2013), to the cell culture medium (Figure 2C). These results suggest that the primary function of LBR in our tissue culture model is to sustain cholesterol biogenesis when the extracellular supply of cholesterol is scarce.\n\nGiven that LBR is endowed with sterol C14 reductase activity (Bennati et al., 2006; Silve et al., 1998), we tested directly whether LBR-deficient cells are compromised in de novo cholesterol synthesis. To this end, HeLa WT and LBR KO cells were cultured in lipid-deprived medium for 48\u2009hr, followed by the addition of 14C acetate to the culture medium. After four hours, cells were harvested, lysed and the extracted lipids were separated via thin layer chromatography (TLC). We readily detected newly synthesized cholesterol in WT cells, as judged by its co-migration with purified 14C cholesterol, which was included as a standard (Figure 2D). Notably, we observed a near-complete loss of cholesterol synthesis in LBR KO cells (Figure 2D), validating our previous assumption that LBR KO cells cannot effectively sustain cholesterol synthesis.\n\nFinally, we asked whether these findings can be reproduced in other human cell types. We chose human foreskin fibroblasts (HFFs) to include non-transformed primary cells, as well as commonly used HEK293T cells. In either case, we observed a strong reduction of viability in LBR-silenced cells under cholesterol-restrictive conditions, whereas control cells transfected with non-targeting siRNAs displayed normal cell morphology under these conditions (Figure 3 A,B,D,E). To validate our RNA interference approach, we subjected the corresponding cell lysates to immunoblotting and observed a robust LBR knockdown efficacy in both cell types (Figure 3C,F). These findings rule out that the cholesterol auxotrophy observed in HeLa LBR KO cells is attributable to their degeneracy or their transformed nature.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/16011/elife-16011-fig3-v2.jpg)\n\n**Figure 3.:** (A) 293T cells were transfected with control siRNA or LBR siRNA, incubated for 48\u00a0hr, cultured in cholesterol-restrictive condition for 1 day and imaged via bright-field microscopy. Scale bar = 50 \u00b5m (B) Surviving adherent cells were quantified using crystal violet staining, and data were standardized relative to the level of control siRNA. The error bars represent mean\u00a0\u00b1\u00a0SD from three independent experiments (N\u00a0=\u00a03), and the statistical analysis was performed using paired t-test (*p value <\u00a00.05, **p value <\u00a00.01). (C) An additional parallel well of 293T cells with same treatment as described above was lysed and analyzed using immunoblotting. (D\u2013F) HFF cells were treated with siRNA and cultured under cholesterol-restrictive conditions as described in (A) with an exception that HFF cells are cultured in the LPDS medium for 3 days. (G and H) HFF, 293T, and HeLa cells were cultured in normal medium or cholesterol-restrictive medium for 2 days, and cells were harvested and split into two aliquots. Total RNAs were extracted from one aliquot, reverse transcribed into cDNA, and analyzed using real-time PCR with gene specific primers as indicated. The data was represented as a relative level to the normal condition (i.e. \u2013LPDS was set to one in each cell line). (I) The other aliquot of cells was lysed with sample buffer and subjected to immunoblotting analysis.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16011/elife-16011-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013D) Wild-type or LBR KO HeLa cells were transfected with control siRNA or SMARTpool siRNA targeting to SREBP2 for 48\u00a0hr, and cultured in normal medium or cholesterol-restrictive medium for another 48\u00a0hr. Total RNAs were then isolated, reversed transcribed into cDNA, and analyzed using real-time PCR with specific primers as indicated. Data were normalized relative to wild-type HeLa cells transfected with control siRNA, cultured in normal conditions. Error bars represent mean\u00a0\u00b1\u00a0SD from triplicates.\n\n### LBR is required for cholesterol synthesis despite the presence of TM7SF2\n\nOur assignment of LBR to an essential role in cholesterol synthesis contrast earlier findings in mice, which reported redundant functions for LBR and TM7SF2 in cholesterol synthesis (Wassif et al., 2007). We therefore asked whether HeLa, HEK293T and HFF cells expressed both TM7SF2 and LBR under normal and cholesterol-restrictive conditions. For this analysis, we isolated total RNA and prepared protein extracts from these three cell types grown under normal and cholesterol-restrictive conditions. TM7SF2 and LBR transcript levels were quantified via qPCR, and the observed fold change under restrictive conditions was normalized relative to the transcript abundance under normal growth conditions, which was set to one. As expected (Bennati et al., 2006), we found that HFF and HeLa cells upregulated TM7SF2 under starvation conditions (Figure 3G), whereas LBR was constitutively expressed and unresponsive to cholesterol starvation (Figure 3H). Interestingly, HEK293T cells did not materially up-regulate TM7SF2 on the transcript level (Figure 3G). Similar results were obtained when we monitored the LBR and TM7SF2 protein levels via immunoblotting. The abundance of the TM7SF2 protein in HFF and HeLa cells increased under cholesterol-restrictive conditions, whereas HEK293T cells displayed somewhat higher levels of TM7SF2 even under normal conditions but did not upregulate TM7SF2 to the same degree as HFF or HeLa cells (Figure 3I).\n\nLastly, we wanted to ascertain that LBR KO cells are capable of mounting a sterol regulatory element-binding protein-2 (SREBP2)-dependent transcriptional response under cholesterol starvation conditions (Brown and Goldstein, 1997). We did not observe significant differences between HeLa WT and HeLa LBR KO cells in their ability to up-regulate TM7SF2 on the transcript level, as judged by qPCR (Figure 3\u2014figure supplement 1A). Similar results were obtained for HMG-CoA reductase (Figure 3\u2014figure supplement 1C), which was included as a control since the HMG-CoA reductase gene is an established target of SREBP2 (Brown and Goldstein, 1997). In accordance with previous findings (Bennati et al., 2006), the observed upregulation was dependent on SREBP2, as judged by a profound reduction of TM7SF2 and HMG-CoA reductase on the transcript levels in cells depleted of SREBP2 via RNA interference.\n\nFinally, to exclude the formal possibility that coding mutations in TM7SF2 are responsible for the observed essential role of LBR in HeLa cells through perturbation of TM7SF2 sterol C14 reductase activity, we cloned and sequenced the corresponding cDNA. This isolated cDNA (1401 bp) contains the entire coding sequence (CDS) of the published transcript variant 1 (NM_003273), with no apparent mutations as evidenced by a sequence alignment to the CDS of NM_003273 (Figure 3\u2014source\u00a0data 1). This isoform appears to be the major isoform expressed in HeLa, HFF, and HEK 293T cells, as judged by the observed co-migration of the corresponding TM7SF2 proteins in SDS-PAGE/Immunoblots (Figure 3I).\n\nBased on the foregoing, we arrive at the conclusion that LBR is essential for cholesterol synthesis in several human cell lines despite the presence of TM7SF2.\n\n### LBR disease alleles do not rescue the cholesterol auxotrophy of LBR knockout cells\n\nHaving demonstrated that LBR is essential for cell viability under cholesterol-depleted conditions, we asked whether the mutant variants of LBR found in Pelger-Hu\u00ebt anomaly and Greenberg skeletal dysplasia can sustain cholesterol biogenesis in human cells. To this end, we used the FlpIn gene integration system to generate HeLa cells that express either WT LBR or LBR disease alleles under doxycycline control from the FlpIn locus (Turner et al., 2015). We focused on two LBR point mutations, one frameshift mutation, and one nonsense mutation, the latter of which results in a truncated LBR C-terminus (Table 1)\u00a0(Clayton et al., 2010; Konstantinidou et al., 2008; Waterham et al., 2003). The two point mutations, LBR N547D and LBR R583Q (Figure 4A), are both associated with Greenberg skeletal dysplasia when both LBR alleles are mutated (Clayton et al., 2010; Konstantinidou et al., 2008). Both positions are highly conserved in homologous C14 sterol reductases (Figure 5\u2014figure supplement 1) and are not associated with Pelger-Hu\u00ebt anomaly in heterozygous individuals (Table 1) (Clayton et al., 2010). For the LBR truncations, the first frameshift mutation results from a single nucleotide deletion in the C-terminal sterol reductase domain of LBR, c.1402delT, which results in the alteration of downstream codons 468\u2013475 and the formation of a premature stop codon at position 475 (p.Y468TfsX475) (Clayton et al., 2010), which we designated LBR 1402T\u0394. This mutation results in\u00a0a C-terminally truncated LBR protein that is missing the final three membrane spanning helices that form the sterol-reductase domain of LBR (Figure 4A) and results in Greenberg skeletal dysplasia in homozygous individuals. It is unknown whether individuals heterozygous for the LBR c.1402delT mutation exhibit Pelger-Hu\u00ebt anomaly. The second frameshift mutation causing a distinct C-terminal truncation, LBR c.1599-1605TCTTCTA->CTAGAAG (LBR p.X534), which we have designated as LBR 1600*, has been shown to cause Pelger-Hu\u00ebt anomaly in heterozygous individuals as well as Greenberg skeletal dysplasia when both LBR alleles are mutated (Waterham et al., 2003). This mutation is a seven nucleotide substitution beginning at LBR position 1599 that directly causes the introduction of a premature stop codon at position LBR p.534, resulting in a truncated LBR C-terminus lacking the final two transmembrane helices of the protein (Figure 4A). To determine if these mutations are loss-of-function alleles, we expressed each of these as well as wild-type LBR under doxycycline control in our LBR KO HeLa cell line. Cells expressing various LBR alleles in an LBR knockout background were grown under cholesterol-restrictive culture conditions for 7 days. We then imaged and counted the cells and measured total cholesterol content (see Materials and methods). We found that expression of LBR WT from the FlpIn locus completely rescued the growth defect observed for LBR KO cells in cholesterol starvation growth medium (Figure 4B and C). This excluded off-target effects as a cause for the observed phenotype. Importantly, all four disease-associated LBR alleles failed to rescue the observed growth defect (Figure 4B and C). LBR KO cells were found to have approximately 40% less total cholesterol content than LBR WT cells after 7 days of cholesterol starvation (Figure 4E). Cellular cholesterol content was fully restored to that of WT cells by expression of LBR WT from the FlpIn locus even at somewhat lower LBR expression levels compared to WT cells (Figure 4D and E), but not by expression of any of the four disease-associated LBR alleles (Figure 4E). From these data we conclude that LBR KO HeLa cells are strongly compromised for cholesterol production. Neither cell growth nor cellular cholesterol content are restored by the expression of LBR N547D, LBR R583Q, LBR 1402T\u0394 or LBR 1600* in a LBR KO background, indicating that these genetic lesions ultimately result in a failure to sustain cell growth under cholesterol-restrictive conditions.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/16011/elife-16011-fig4-v2.jpg)\n\n**Figure 4.:** (A) Domain structure of LBR. Locations of disease-associated point mutations are indicated as black circles and asterisks demark disease-associated frameshift/truncation mutations. (B) Parental WT, LBR KO, or LBR KO cells expressing either WT LBR or mutant LBR from the FlpIn locus were cultured for 7 days in cholesterol-restrictive growth medium and then imaged by bright field microscopy. (C) The cell lines described above were grown in triplicate for 7 days in cholesterol-restrictive growth conditions, trypsinized, and counted. Values represent a mean of three independent experiments with error bars indicating the standard deviation (D) Immunoblot analysis of cell lysates harvested on day 7 of the experiment showing LBR expression level in each cell line relative to wild-type. (E) The above described cell lines were treated exactly as in (C), harvested, and the total cholesterol concentration was determined using a fluorometric assay (see Materials and methods). Values represent a mean of three independent experiments with error bars indicating the standard deviation. A cholesterol standard curve is shown on the right.\n\n### The C-terminal sterol reductase domain of LBR is necessary and sufficient for cholesterol production of HeLa cells\n\nWe next investigated the functional relationship between the N-terminal nuclear lamin B/chromatin binding domain of LBR and the C-terminal sterol reductase domain (SRD). We generated cell lines in an LBR KO background that expressed either LBR WT, the isolated LBR SRD in an LBR knockout cell background (see Figure 4A for LBR domain structure), or the fusion protein Sun2-LBR, which contains the nuclear domain of Sun2 containing a nuclear targeting signal (Turgay et al., 2010), fused to the LBR SRD. Additionally, we generated a cell line that expressed an LBR construct that encompasses the nuclear domain of LBR together with the first transmembrane helix of the SRD (LBR TM1), a construct that is competent for INM targeting (Smith and Blobel, 1993; Soullam and Worman, 1993).\n\nLBR KO-derived cell lines expressing constructs described above were cultured in triplicate in lipoprotein-depleted growth medium for 7 days. Cells were then trypsinized and stained with Trypan blue to exclude non-viable cells and counted. As expected, very few live cells remained in the LBR KO cell sample, while expression of full-length LBR in an LBR knockout cell background restored the cells to near-WT levels of growth (Figure 5A). Conversely, LBR TM1 failed to rescue cell growth. Finally, both the isolated LBR SRD and the fusion protein SUN2-LBR rescued the LBR KO phenotype. Given that all constructs were expressed at levels higher than the rescuing WT allele (Figure 5B), our results indicate that the SRD is necessary and sufficient for survival of cholesterol-starved cells.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/16011/elife-16011-fig5-v2.jpg)\n\n**Figure 5.:** (A) WT HeLa cells, LBR knockout HeLa cells, or LBR knockout cells expressing either WT LBR, the LBR nuclear domain plus the first transmembrane helix (LBR-TM1), the LBR sterol reductase domain (LBR-SRD), or the nuclear domain of Sun2 fused to the sterol reductase domain of LBR (Sun2-LBR) were grown in triplicate under cholesterol restrictive growth conditions for 7 days. The cells were then trypsinized and counted and the results were plotted with standard deviations shown. (B) Anti-LBR immunoblots of lysates from the above treated cells show LBR expression level relative to WT. Membranes were probed with two distinct anti-LBR antibodies recognizing an N- and C-terminal LBR epitope, respectively. (C) Electrostatic surface potential representation of themaSR1 (crystal structure (PDB: 4QUV) with kT/e \u00b1 1. NADPH and residues N359 and R395 corresponding to LBR disease-associated residues N547 and R583 (cf. Figure 5\u2014figure supplement 1) are shown as sticks. (D) Disease-associated LBR point mutants LBR N547D and LBR R583Q show a decreased affinity for NADPH compared to wild-type LBR. Intrinsic tryptophan fluorescence of purified LBR WT and mutants upon NADPH binding was plotted against NADPH concentration and non-linear regressions were fitted in GraphPad Prism. All measurements were performed in triplicate. (E) HeLa LBR KO cells stably expressing LBR WT, LBR mutant N54D or R583Q were cultured in LPDS containing medium for 48 hr\u00a0prior to metabolically labeling with [14C]-acetate. Lipids were extracted and separated by TLC and visualized via autoradiography. Bands corresponding to [14C]-cholesterol are marked by an arrowhead.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16011/elife-16011-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** LBR sequences from human, rat, and mouse together with maSR1 (Methylomicrobium alcaliphilum delta (14)-sterol reductase) were aligned with Clustal Omega. Secondary structures of maSR1 are labeled above the sequences. The boxes indicate helices, the arrows indicate \u03b2-sheets, and the solid lines indicate random structural regions. The asterisks indicate stop codons of LBR 1402T\u0394 and LBR 1600* mutants. The triangles indicate N547D and R583Q mutants.\n\n### Disease-associated LBR point mutants substantially reduce NADPH binding\n\nThe observations that (i) the LBR N547D and LBR R583Q transgenes are defective in rescuing the cholesterol auxotrophy and that (ii) both mutations map to the SRD, which is necessary and sufficient to complement the LBR KO phenotype, strongly suggests that these mutations affect sterol reductase activity. Indeed, both affected residues are widely conserved in related reductases, including the sterol reductase from Methylomicrobium alcaliphilum (maSR1), the structure of which was recently determined (Li et al., 2015). Based on a sequence alignment (Figure 5\u2014figure supplement 1), the LBR N547 and R583 residues correspond to maSR1 N359 and R395, respectively, both of which map to the NADPH binding pocket, with N359 being implicated in a hydrogen bond formation with a phosphate oxygen of NADPH (Li et al., 2015)\u00a0(Figure 5C). We therefore tested whether these mutants displayed a reduced affinity for NADPH, the cofactor that contributes the electrons for the reduction reaction. WT LBR, LBR N547D, and LBR 583Q were purified and their NADPH binding affinities measured using a spectroscopic approach (see materials and methods). WT LBR displayed hyperbolic saturation for the cofactor with a KD of 24.2 \u00b5M. Both mutants had a severely decreased binding affinity to NADPH, with N547D having the strongest effect (Figure 5D). We attribute this lack of affinity to a possible charge repulsion between the introduced Asp side chain and the negatively charged phosphate of the cofactor. Given that the physiological concentration of NADPH is in the range of ~ 100 \u00b5M\u2013a concentration range at which the discrepancy of cofactor occupancy of LBR and LBR N547D/LBR R583Q would be maximal\u2013 our measurements provide a direct rationale for the inability of those mutants to efficiently rescue the cholesterol auxotrophy (cf. Figure 4B). As expected, neither LBR N547D nor LBR 583Q transgenes efficiently restored de novo cholesterol synthesis in LBR KO cells, which was monitored by metabolic incorporation of 14C acetate into cholesterol (Figure 5E).\n\n### C-terminally truncated LBR proteins are rapidly degraded via a proteasome-dependent pathway\n\nNeither of the LBR C-terminal truncation mutant proteins (1402T\u0394 or 1600*) were detected via immunoblotting using an LBR antibody that recognizes the N-terminal (nuclear) domain of LBR (see Figure 4D). Given that these cell lines were engineered to express their WT, LBR N547D, or LBR 583Q transgenes to comparable levels, we speculate that the LBR truncation either leads to nonsense-mediated decay (NMD) of the encoding mRNA (Kurosaki and Maquat, 2016), or that the proteins themselves are recognized as aberrant and degraded by a cellular protein quality-control system (Labbadia and Morimoto, 2015).\n\nTo distinguish between these possibilities, we monitored the metabolic stability of LBR and its mutant derivatives by pulse-chase analysis as described previously (Rose et al., 2014). We found that LBR WT, LBR N547D and LBR R583Q are extremely stable (Figure 6A and B), indicating that the lack of cofactor binding does not lead to LBR instability. In contrast, both truncated LBR variants were produced at levels comparable to WT LBR at the beginning of the chase period but were rapidly degraded (Figure 6A and B). These observations are consistent with a post-translational effect on protein stability and argue against a major contribution of NMD.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/16011/elife-16011-fig6-v2.jpg)\n\n**Figure 6.:** (A),\u00a0(B) LBR KO cells expressing either WT LBR or the disease-associate LBR mutants were metabolically labeled with 35S and then chased with an excess of unlabeled cysteine/methionine.\u00a0LBR was then retrieved at the indicated time points via immunoprecipitation, resolved by SDS-PAGE and imaged via autoradiography. (C),\u00a0(D) Turnover of LBR 1402T\u0394 and LBR 1600* was measured on a shorter time scale in the absence or the presence of MG132.\n\nTo investigate the degradation mechanisms of LBR 1402T\u0394 and LBR 1600*, we repeated the pulse-chase experiments on a shorter time scale and in the absence or presence of MG132, a potent cell-permeable proteasome inhibitor (Rock et al., 1994). We found that both LBR 1402T\u0394 and LBR 1600* proteins were degraded extremely rapidly, with little or no protein remaining after 30 min (Figure 6C and D). Both mutants were significantly stabilized by MG132, with minimal degradation taking place in 60 min after synthesis. We conclude that the degradation of truncated LBR variants depends on the proteasome. Notably, the kinetics of LBR 1402T\u0394 and LBR 1600* degradation were remarkably rapid, with half-lives of 10\u201315\u2009min, especially considering that these mutant derivatives are polytopic membrane proteins. As a standard of comparison, the half-life of CFTR\u0394506, a mutant variant of the polytopic chloride channel responsible for cystic fibrosis (Turnbull et al., 2007) which is widely used as model substrate to study protein turnover, is four hours (Heda et al., 2001). Thus, LBR disease variants have significant potential as novel model substrates to study protein turnover.\n\n### Truncated LBR variants are ubiquitylated\n\nSince protein ubiquitylation is a key step in proteasome-mediated protein turnover of misfolded membrane proteins (Claessen et al., 2012; Raasi and Wolf, 2007; Vembar and Brodsky, 2008), we next determined if the rapidly degraded truncated LBR proteins LBR 1402T\u0394 and LBR 1600* are ubiquitylated. We expressed either FLAG-LBR WT, FLAG-LBR 1402T\u0394, or FLAG-LBR 1600* together with HA-Ubiquitin (Ub) in a LBR knockout cell background. Cells were then treated with either MG132 or vehicle for 2\u2009hr and subjected to denaturing detergent lysis to disrupt non-covalent protein-protein interactions. Following dilution with SDS-free buffer, extracts were immunoprecipitated with an anti-FLAG resin to retrieve tagged LBR protein.\n\nAnti-HA immunoblotting of input samples demonstrated that HA-Ub was expressed in all HA-Ub transfected cells, with the expected increase of HA-Ub conjugates in the higher molecular mass range in response to proteasomal inhibition (Figure 7A, top panel). Identical samples were subjected to immunoblotting with anti-FLAG antibodies to detect LBR or its mutant derivatives. In agreement with our pulse-chase data, both LBR 1402T\u0394 and LBR 1600* are expressed at extremely low levels under steady-state conditions when compared to LBR WT (Figure 7A, bottom panel).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/16011/elife-16011-fig7-v2.jpg)\n\n**Figure 7.:** LBR KO cells were co-transfected with plasmids encoding HA-tagged ubiquitin and FLAG-tagged LBR WT, LBR 1600*, or LBR1402T\u0394. Sixteen-hours-post transfection, cells were treated with MG132 or DMSO for another 4 hr before harvesting and denaturing SDS lysis. (A) Five percent of cell lysates used per immunoprecipitation (B) were separated by SDS-PAGE and subjected to immunoblotting using the indicated antibodies (B) Lysates were diluted in SDS-free buffer and subjected to immunoprecipitation using anti-FLAG antibody, followed by SDS-PAGE and immunoblotting analysis using the indicated antibodies.\n\nNext, the anti-FLAG immunoprecipitates were subjected to SDS-PAGE and immunoblotting. As expected, HA-Ub conjugated species were significantly more abundant for both LBR 1402T\u0394 and LBR 1600* than for LBR WT in both untreated and MG132-treated samples, with the latter condition leading to an additional increase (Figure 7B, upper panel). Since the levels of unmodified LBR WT far exceed those of LBR 1402T\u0394 and LBR 1600* (Figure 7B, lower panel), these data reflect a disproportionate increase in abundance of ubiquitylated LBR species for the disease-associated variants relative to LBR WT. Together, the data argue that the metabolic instability of LBR 1402T\u0394 and LBR 1600* is caused by degradation\u00a0via the Ub/proteasome system (UPS).\n\n### Truncated LBR accumulates inside the nucleus after proteasome inhibition\n\nGiven our finding that C-terminally truncated LBR is degraded via a UPS-dependent pathway, LBR 1402T and LBR 1600* could represent typical substrates for the pathway responsible for the degradation of ER-resident proteins referred to as ER-associated degradation (ERAD) (Claessen et al., 2012; Raasi and Wolf, 2007; Vembar and Brodsky, 2008). The ERAD machinery can act on LBR 1402T\u0394 and LBR 1600* before they arrive at the INM. Alternatively, a distinct, INM resident pathway might mediate LBR 1402T\u0394 and LBR 1600* turnover.\n\nAs a first step towards resolving this question, we monitored the cellular localization of LBR 1402T\u0394 and LBR 1600* in the absence or presence of MG132 using confocal fluorescence microscopy. In the absence of MG132, LBR 1402T\u0394 is partitioned between the ER and the NE, as judged by a co-staining with anti-LBR and anti-Lamin A/C antibodies (Figure 8A, left panel). LBR 1600*, on the other hand, displays nuclear rim staining that is indistinguishable from LBR WT (Figure 8B, left panel; cf. Figure 2A, upper left panel)\u00a0(Worman et al., 1988).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/16011/elife-16011-fig8-v2.jpg)\n\n**Figure 8.:** (A,B) LBR knockout cells expressing either LBR 1402T\u0394 or LBR 1600* were treated with MG132 or DMSO vehicle for 4 hr and then fixed, stained, and imaged by confocal fluorescence microscopy. The cells were stained with antibodies against LBR (green) and Lamin A/C (red). (C) Cells were treated and imaged as above (A,B), and the nuclear fluorescence obtained from 20 complete z-stack series for each condition was quantified using ImageJ, summed up, and standardized relative to the sum of total fluorescence. The ratio of nuclear to total cellular fluorescence is given as arithmetic mean value. Error bar represents mean \u00b1 SD. The statistical significance is determined by unpaired t-test. ***p<0.001 (D) Pulse-chase analysis of LBR KO HeLa cells co-transfected with FLAG-tagged LBR 1600* mutant and p97 WT or QQ mutant. (E) Densitometric quantification of pulse-chase data. (F) LBR-knockout HeLa cells were co-transfected with LBR mutant 1600* and with p97 WT or QQ mutant and treated with 10 \u00b5M of MG132 or DMSO for 4 hr. Cells are stained with anti-LBR (green) and anti-p97 (red), and imaged with a confocal microscope. Scale bar\u00a0= 20 \u03bcm.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16011/elife-16011-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** LBR knockout cells expressing either LBR 1402T\u0394 or LBR 1600* were treated with MG132 or DMSO vehicle for 4 hr and then fixed, stained, and imaged by confocal fluorescence microscopy. The cells were stained with antibodies against LBR (green) and Lamin A/C (red).\n\nAgainst all expectations, both truncated LBR proteins appear to accumulate in the nucleoplasm upon proteasomal inhibition (Figure 8A and B, right panels). In addition, both LBR mutants are clearly excluded from nucleoli in the presence of MG132. Quantification of these results, based on a total projection average of 20 independent z-stack series for each condition, is shown in Figure 8C (see Figure 8\u2014figure supplement 1 for a corresponding z-stack series). We observe that with both mutants, MG132 treatment resulted in a shift from a non-nuclear to a nuclear LBR immunofluorescence signal, with LBR 1402T\u0394 showing a slightly larger shift in localization than LBR 1600*, which resides primarily in the nuclear compartment even in the absence of MG132 (Figure 8A,B).\n\nThese unexpected results indicate that disease-associated, C-terminally truncated LBR mutants surprisingly accumulate in the nuclear compartment, rather than the ER or cytosol, after MG132 treatment. Given that LBR1600* is extremely short-lived but mainly localizes to the INM under steady-state conditions even in the absence of MG132, we suggest that it is here that membrane dislocation occurs.\n\nThe requirement of the AAA+ ATPase p97 for the extraction or dislocation of membrane proteins from the ER membrane is firmly established (Ye et al., 2003). Given that p97 has additional functions in the nuclear compartment (Dantuma and Hoppe, 2012), we asked whether p97 is implicated in the extraction of LBR 1600* from the INM. LBR KO cells were transfected either with FLAG-LBR 1600* alone or in combination with either p97 WT or p97 QQ, a dominant-negative mutant of p97 that potently blocks p97-dependent functions (Ernst et al., 2009; Ye et al., 2003). We then performed pulse-chase analyses to monitor the stability of LBR 1600*. As expected, p97 WT had no effect on LBR 1600* degradation (Figure 8D and E). However, p97 QQ inhibited LBR 1600* turnover to an extent that is comparable to proteasomal inhibition (Figure 8D and E).\n\nWe next asked whether p97 QQ can block LBR 1600* turnover in the nuclear compartment using confocal microscopy. Cells were again co-transfected with LBR 1600* and either p97 QQ or p97 WT and then treated with MG132 or carrier. This experimental setup allowed us to explore the possibility of an epistatic relationship between p97 QQ and MG132. If p97 is indeed required for the dislocation of LBR 1600* from the INM, we would expect p97 QQ to prevent the accumulation of LBR 1600* in the nucleoplasm upon MG132 treatment. Using double-staining with anti-p97 and anti-LBR antibodies, we indeed found this to be the case. In the presence of both p97 WT and MG132, we observed the expected LBR 1600* accumulation in the nucleoplasm and to a lesser degree, the ER (Figure 8F), whereas LBR 1600* accumulates nearly quantitatively at the nuclear rim in the presence of p97 QQ even in the presence of MG132. The data are consistent with a blockage of the membrane dislocation step at the INM (Figure 8F).\n\nIn conclusion, these results are consistent with a mechanism in which only a small percentage of LBR 1600* is degraded by the canonical ERAD pathway. The majority of the truncated protein is localized to the INM, where it appears that a second quality control pathway operates to extract and destroy LBR 1600* in a series of reactions employing both p97 and the UPS (Figure 9).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/16011/elife-16011-fig9-v2.jpg)\n\n**Figure 9.:** C-terminal truncation of LBR (e.g. in LBR 1600* or 1400T\u0394) causes the sterol reductase domain (SRD) to misfold, leading to LBR ubiquitylation, membrane dislocation and its subsequent degradation via the Ub/proteasome pathway. A minor portion of LBR1600* is degraded by the canonical ERAD pathway in the ER, whereas the majority will enter the nucleus by virtue of the correctly folded N-terminal domain and be retained by binding to the nuclear lamina. Here, a presumably ERAD-independent pathway is operative, involving both p97 and the Ub/proteasome. Turnover at the INM can be inhibited at the dislocation or degradation step by a dominant negative p97 variant (p97 QQ) or the proteasome inhibitor MG132, respectively. Note that several ERAD components as well as p97 cofactors are omitted for clarity. ER, endoplasmic reticulum; INM, inner nuclear membrane; ONM, outer nuclear membrane; Ub, ubiquitin.\n\n## Discussion\n\nIn this study, we assign human LBR to an essential role in cholesterol synthesis. We found LBR to be essential for survival under cholesterol-restrictive growth conditions in three different human cell types (Figures\u00a02C,\u00a03A\u2013D). Correspondingly, LBR-deficient HeLa cells cannot efficiently synthesize cholesterol (Figure 2D), but are readily rescued by the addition of LDL particles or free cholesterol to the cholesterol starvation medium (Figure 2C). These results are unexpected since previous studies in mice reported that the sterol reductase activities of LBR and TM7SF2 are functionally redundant, suggesting that HEM dysplasia is likely a laminopathy that is unrelated to the sterol reductase activity of LBR (Wassif et al., 2007). In cultured HeLa cells, however, LBR does not play a significant role in NE organization despite being a constitutively expressed, abundant INM component (Figure 2A,B), possibly due to functional redundancy with some of the multitude of other lamina-associated membrane proteins (Hetzer and Wente, 2009; Schirmer and Gerace, 2005). In our opinion, a major role for TM7SF2 in generic cholesterol synthesis is difficult to reconcile with the absence of an overt phenotype upon deletion of TM7SF2 in mice, which are not compromised in cholesterol synthesis (Bennati et al., 2008). In fact, TM7SF2 is expressed under cholesterol-restrictive conditions in all tested human cell lines (Figure 3I), but cannot compensate for the absence of LBR. Nevertheless, it is striking that mice lacking a fully functional LBR allele due to homozygous mutations at the ichthyosis locus (ic/ic) are viable, although these animals display numerous phenotypic abnormalities including alopecia, syndactyly and hydrocephalus as well as an increase in embryonic lethality (Shultz et al., 2003). Growth defects were also observed in primary cells isolated from mouse models with mutations in the LBR gene (Subramanian et al., 2012; Verhagen et al., 2012). Of note, defects in neutrophil maturation in ic/ic animals can be recued in vitro by expression of the LBR SRD (Subramanian et al., 2012).\n\nIt is likely that LBR function is subject to diversification in the course of evolution. For example, human LBR can rescue sterol reductase deficiency in yeast (Silve et al., 1998), while LBR from Droshophila melanogaster does not complement this phenotype (Wagner et al., 2004). Since D. melanogaster is a cholesterol-auxotrophic organism, we speculate that additional LBR functions could involve the N-terminal Tudor domain. While we found this domain to be dispensable for cholesterol synthesis (Figure 5A), a possible role could involve heterochromatin organiziation (Solovei et al., 2013), which may be related to the nuclear abnormalities observed in e.g. Pelger-Huet anomaly (Hoffmann et al., 2002) and mouse models of ichtyosis (Shultz et al., 2003). Since the LBR SRD is neccesary and sufficient to restore cholesterol synthesis (Figure 5A) and rescues a defect in neutrophil maturation observed in ic/ic cells in vitro\u00a0(Subramanian et al., 2012), a knock-in of either the SRD or the Tudor domain (including the first transmembrane domain) into the LBR locus could help to deconvolute distinct functions of the SRD and Tudor domains in mammalian development.\n\nGiven that our study establishes LBR as the major sterol reductase required for cholesterol synthesis in human cells, the question arises why a second, functionally equivalent enzyme is encoded in the human genome. Since cholesterol synthesis can proceed through differential, tissue-specific usage of distinct yet interchangeable segments of the established synthesis pathways (Mitsche et al., 2015), we speculate that TM7SF2 could be required for cholesterol synthesis in a specific physiological context. Interestingly, a recent study suggested that TM7SF2 may participate in healing of burn wounds (Lei et al., 2016), possibly representing a case of a more specialized physiological role.\n\nBased on our finding that all tested disease-causing mutations in LBR fail to complement the cholesterol auxotrophy imposed by an LBR deficiency in our tissue culture model (Figure 4), we believe that animal models of LBR malfunction warrant additional scrutiny from the perspective of cholesterol metabolism. The administration of a low cholesterol diet or inhibitors of cholesterol synthesis in animal models with LBR mutations could reveal previously unknown phenotypes and thus provide new insight into disease etiology. Similarly, it would be interesting to explore states in which specific cell types are exposed to conditions of low environmental cholesterol in a physiological context, as for example in the course of embryogenesis, which could help to rationalize the embryonic-lethal phenotypes in Greenberg skeletal dysplasia.\n\nAnother unexpected outcome of this study is that C-terminally truncated LBR proteins found in both Pelger-Hu\u00ebt anomaly and Greenberg skeletal dysplasia are rapidly degraded by a proteasome-dependent protein quality-control pathway that appears to be distinct from the canonical ERAD pathway (Figures 8, 9). Given that INM-resident proteins are synthesized in the ER prior to their targeting to the INM (Lusk et al., 2007; Ungricht and Kutay, 2015), we propose that the correctly folded N-terminal moiety of LBR containing INM targeting information (Smith and Blobel, 1993; Soullam and Worman, 1993) leads to the rapid trafficking of LBR 1600* to the INM before elements of the ERAD pathway can act (Figure 8). Considering that near-quantitative nuclear accumulation of an HA-tagged LBR variant is achieved in ~20\u2009min (Ungricht et al., 2015), and that the half life of LBR 1600* is ~10\u201315\u2009min, it follows that a significant fraction of LBR 1600* escapes the ERAD system leading to localization to the INM mediated by the intact N-terminal domain, which confers lamin binding (see. Figure 8B and Figure 8\u2014figure supplement 1 demonstrating INM localization of LBR 1600* under steady-state conditions). Upon arrival of LBR 1600* at the INM, a system analogous to but distinct from the known ERAD system is responsible for the ubiquitylation of LBR 1600* and its p97-dependent extraction from the INM (Figures 8, 9). Based on the unusually rapid kinetics and substantial protein accumulation in a dislocated nuclear state in presence of MG132, we believe that the INM degradative system is different from the established ERAD machinery.\n\nIn fact, it is still unclear which Ub ligases account for protein turnover at the INM of mammalian cells. In general, the mechanisms of protein quality control operative at the NE of budding yeast are far better understood than analogous systems in mammalian cells (Deng and Hochstrasser, 2006; Foresti et al., 2014; Khmelinskii et al., 2014; Rose and Schlieker, 2012; Webster et al., 2014). The absence of suitable model substrates in higher eukaryotes has been the major limitation.\n\nThis study establishes the long sought-after methodological framework to investigate NE-directed quality control mechanisms in human cells. We propose that the combination of (i) the extremely short half-life of LBR1600*, (ii) its near-exclusive localization to the INM as well as (iii) and ease with which LBR1600* can be arrested at distinct stages of dislocation and turnover make this LBR variant an ideal tool to pursue mechanistic studies aimed at the elucidation of protein quality control and turnover at the INM.\n\n## Materials and methods\n\n### Cell lines\n\nAll cell lines and primary cells were purchased from ATCC (HFF-1: ATCC cat# SCRC-1041; HEK293T: ATCC cat# CRL-11268; HeLa: ATCC act# CCL-2) and regularly tested to be Mycoplasma-negative as judged by the absence of extranuclear DAPI staining.\n\n### Generation of LBR knockout HeLa cell lines\n\nLBR knockout HeLa cells were generated using the CRISPR/Cas9 genome editing system as described previously (Mali et al., 2013; Turner et al., 2015). The CRISPR guide sequence LBR 5\u2019-GACTCCCTCGGCGTCTGGAAGGG-3\u2019 targeting the first exon of LBR was chosen from a published index of human exon gRNA targets (Mali et al., 2013). Potential knockout colonies were harvested, expanded, and screened both by genotyping PCR and by immunoblotting. The genotyping primers used were LBR gt-F: 5\u2019-TTCAAGCTCTGTTCC-3\u2019 and LBR gt-R: 5\u2019-TGTGTATGTATTGACTC-3\u2019; GAPDH-F: 5\u2019-CGACCGGAGTCAACGGATTTGGTCG-3\u2019 and GAPDH-R: 5\u2019-GGCAACAATATCCACTTTACCAGA-3\u2019.\n\n### Illumina MiSeq sequencing\n\nIllumina MiSeq of LBR knockout cell CRISPR target sites was performed in collaboration with the Yale Center for Genomic Analysis. Genomic DNA from LBR knockout FlpIn HeLa cells was harvested using QuickExtract DNA Extraction Solution (Epicentre, Madison, WI) according to manufacturer instructions. A 500 nucleotide region centered around the CRISPR target site of the LBR gene (see Figure 2\u2014figure supplements 1 and 2) was then PCR amplified using the primers LBR FW 5\u2019-TAGTGTCACATAGATAACGCAGTGGCT-3\u2019 and LBR RV 5\u2019-CAAGAGCTCAATCCTCTGCCTTCA-3\u2019. The resulting mixture was then gel purified and submitted for a single lane of Illumina MiSeq sequencing, obtaining several million reads of the target region. Reads with complete sequence coverage of the target area were binned according to the mutation detected, resulting in the delineation of three separate LBR gene edits, corresponding to the three copies of the LBR gene found in HeLa cells.\n\n### Electron microscopy\n\nElectron microscopy was carried out by the Yale Biological Electron Microscopy facility as described previously (Rose et al., 2014).\n\n### Generation of LBR WT and LBR mutant rescue cell lines\n\nStable cell lines expressing the gene of interest under doxycycline control were generated using the FlpIn T-REx cell system (Invitrogen) as described previously based on HeLa cell obtained from ATCC CCL-2 (Turner et al., 2015). LBR N547D, LBR R583Q, and LBR 1402T\u0394 constructs were generated via quickchange mutagenesis according to standard protocols. LBR 1600*, LBR ND, LBR TM1, and LBR SRD were generated by PCR amplification of the relevant cDNA region of LBR as follows: LBR 1600* amino acids 1\u2013534, LBR ND amino acids 1\u2013209, LBR TM1 amino acids 1\u2013246, and LBR SRD amino acids 197\u2013616. The Sun2-LBR fusion construct was generated via fusion PCR and encompasses amino acids 1\u2013177 of Sun2 fused to amino acids 197\u2013616 of LBR.\n\n### Cholesterol synthesis\n\nHeLa cells were grown on a 6-well plate and starved for 48\u2009hrs in DMEM medium containing lipoprotein-deficient serum (LPDS). Cell were metabolically labeled with 2 uCi/well [14C]-acetate (Perkin Elmer) for 4\u2009hr at 37\u00b0C as described previously (Zelcer et al., 2014). Cells were lysed and saponified. The lipids were extracted three times with 2\u2009ml hexane and dried under nitrogen stream. Extracts were re-dissolved in 60\u2009\u03bcL hexane and aliquots were separated on a Silica Gel 60 F254 plate (Merck) with a mobile phase of hexane: diethyl ether: glacial acetic acid (60:40:1, v/v/v) as described by Gill et al. (2011). The TLC plate was exposed to an imaging plate (Fujifilm) and visualized with a Storm Scanner (GE Healthcare).\n\n### Real-time PCR\n\nWild-type or LBR KO HeLa cells were seeded in a 12-well plate at a density of 1x105 cells/well and transfected with 50 nM of control siRNA or SMARTpool siRNA targeting to SREBP2. After 48h, the cells were split 1:2 into two 12-well plates in normal medium or LPDS medium and incubated for another 2 days. Total RNAs were then isolated and transcribed into cDNA using SuperScript II reverse transcriptase (ThermoFisher Scientific). The RT reactions were diluted 1:5 with water, and 1.25\u2009\u03bcL were used in real-time PCR which is carried out using iQ SYBR Green mix and CFX Real-Time PCR Detection System (Bio-Rad). Data was analyzed using \u25b3\u25b3Ct method, in which the \u25b3Ct was calculated first as Ct of internal control (RPL32) was subtracted from each sample, and the \u25b3\u25b3Ct was further calculated by subtracting \u25b3Ct of control group from \u25b3Ct of each treated group, and final results were represented as 2(-\u25b3\u25b3Ct). Primer sequences used in qPCR are listed as follows (5\u2019 to 3\u2019): RPL32 (Forward: CGGCGTGCAACAAATCTTACTGTGCCG; Reverse: CCAGTTGGGCAGCTCTTTCC), SREBP2 (Forward: CCGGGCGCAACGCAAAC; Reverse: CGCCCATGACACCCGACAA), LBR (Forward: AGTATAGCCTTCGTCCAAGAAGA; Reverse: CAAAGGTTCTCACTGCCAGTT), TM7SF2 (Forward: AACTCAGGCAATCCGATTTACG; Reverse: GGGTCGCAGTTCACAGAAATA), HMGCR (Forward: AGGGGATGCCATGGGGATGA; Reverse: ACGGCTAGAATCTGCATTTCAGGG)\n\n### Cloning of TM7SF2 cDNA\n\nThe TM7SF2 cDNA was cloned from HeLa cells by RT-PCR. Total RNAs were isolated from HeLa cells cultured in cholesterol-restrictive medium and reversed transcribed into cDNA using a cDNA amplification kit (SMARTer RACE kit, Clontech). The TM7SF2 cDNA was amplified using a universal forward primer (5\u2019-CTAATACGACTCACTATAGGGC-3\u2019) and a gene-specific reverse primer (5\u2019-TCAGTAGATGTAGGGCATGATGCG-3\u2019). The resulting PCR product was subjected to Sanger sequencing.\n\n### Antibodies and immunoblotting\n\nImmunoblotting was performed according to standard protocols in 5% (wt/vol) skim milk in Tris-buffered saline and 0.1% (vol/vol) Tween 20 (TBS-T) using Western Lightning plus ECL reagent (Perkin\u00a0Elmer). The antibodies used in this study were the following (numbering according to http://antibodyregistry.org): anti-LBR N-terminal domain (AB_775968, Abcam) at 1:2,000, anti-LBR C-terminal domain (AB_10712378, Abcam) at 1:2,000, anti-Tubulin (AB_477583, Sigma) at 1:2000, anti- \u03b2-actin (AB_306371, Abcam) at 1:2000, and anti-TM7SF2 (Covance custom antiserum). The specificity of the anti-TM7SF2 antibody was confirmed by inclusion of a TM7SF2 knockout cell lysate as a reference (see Figure 3I).\n\n### Immunofluorescence microscopy\n\nImmunofluorescence microscopy was performed as described previously (Rose et al., 2014). The primary antibodies used were the following (numbering according to http://antibodyregistry.org): anti-LBR N-terminal domain (AB_775968, Abcam) at 1:500, anti-Lamin B1 (AB_10107828, Abcam) at 1:500, anti-Lamin A+C (AB_306913, Abcam) at 1:500, anti-\u03b2-actin (AB_306371, Abcam) at 1:1,000, anti-Sun1 (AB_1080462, Sigma) at 1:500, anti-Sun2 (Covance custom antiserum) at 1:1,000, anti-Lap1 (Covance custom antiserum) (Turner et al., 2015)(Zhao et al., 2013) at 1:1,000, anti-Mab414 (AB_448181, Abcam) at 1:500, anti-hnRNP A1 (AB_305145, Abcam) at 1:500, anti-hnRNP A2B1 (AB_732978, Abcam) at 1:500, and anti-calnexin (AB_1310022, Abcam) at 1:500.\n\n### Cholesterol-starvation cell growth assay\n\n200,000 HeLa cells were counted in triplicate, washed with 1mL PBS, and then resuspended in lipoprotein-depleted growth medium (DMEM + 10% lipoprotein depleted fetal bovine serum) in 24-well plates. The cells were then cultured using standard mammalian tissue culture conditions for 7 days. All samples were split 1:3 on days 2 and 4. If exogenous cholesterol or LDL was used in the experiment, it was introduced on day 2 and was continued through the end of the experiment. If expression of LBR from the FlpIn locus was used (e.g. for LBR rescue), all cell samples were treated with doxycycline (500 ng/mL) beginning on day 1 and continuing through the end of the experiment. After day 4, the cells were grown until day 7, at which time they were trypsinized, treated with 1:1 trypan blue to exclude nonviable cells, and then counted in triplicate.\n\nHuman foreskin fibroblast cell (HFF) and 293T were seeded in a 12-well plate at a density of 1x105 cells/well one day prior to transfection. Cells were transfected with 50 nM of control siRNA or ON-TARGETplus SMARTpool targeting to LBR (GE Dharmacon) using Lipofectamine RNAiMax (ThermoFisher Scientific). After 48h, cells were trypsinized, washed with PBS, and split 1:3 (293T) or 1:5 (HFF) into 24-well plates in medium containing LPDS, and incubated for another 1 day (293T) or 3 days (HFF), respectively. The surviving adherent cells were quantified using crystal violet staining as described (Zivadinovic et al., 2005).\n\n### Total cholesterol detection assay\n\nTotal cholesterol measurements of cell extracts were performed using a fluorometric cholesterol + cholesterol ester detection kit (Abcam ab65359). Triplicate sets of cells treated for 7 days as described above and samples were subjected to fluorometric total cholesterol detection according to manufacturer instructions.\n\n### NADPH binding assay\n\nFlag-tagged LBR and mutants were expressed in Expi293 cells (Life technologies) for 3 days as described by the manufacturer and purified as reported previously (Zhao et al., 2013). The NADPH binding measurement was performed using intrinsic tryptophan fluorescence of LBR. In short, 150 \u00b5l of 10 \u00b5M purified LBR was titrated by increasing concentration of NADPH in elution buffer (20\u2009mM HEPES, 150\u2009mM NaCl, 5\u2009mM MgCl2, 5\u2009mM KCl, 0.01% (w/v) n-dodecyl-D-maltoside (DDM) pH 7.5). Fluorescence decrease (Ex:295 nm / Em:335 nm) upon NADPH addition was recorded on a spectrofluorometer (Photon Technology International) at 20\u00b0C and further corrected for the inner filter effect (Woodyer et al., 2005). The fluorescence change was plotted against NADPH concentration and non-linearly fitted using GraphPad Prism.\n",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "40beae14-a92f-4f2a-8bf8-31fdcd0557fe",
+      "submission_id": "5c50e8e0-a5ff-4d6a-956c-a48b8890a525",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephen G Young, University of California, Los Angeles , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.16011.021](https://doi.org/10.7554/eLife.16011.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The Lamin B Receptor is Essential for Cholesterol Synthesis and Perturbed by Disease-causing Mutations\" for consideration by eLife. Your article has been favorably evaluated by Vivek Malhotra (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission\n\nAll three of the reviewers liked this manuscript and thought that, with suitable revisions, it could be appropriate for publication in eLife. However, all three reviewers were insistent that revisions, including additional experiments, are necessary. One reviewer commented that the quality of the writing in this paper is excellent, but the same reviewer was disappointed by the content of the Discussion section.\n\nSummary:\n\nThe authors have shown that the lamin B receptor is not required for maintenance of nuclear structure, but that it is required for cholesterol synthesis-at least in HeLa cells. They carefully characterize lamin B receptor mutants associated with human disease. Finally, they clearly show proteosomal turnover of the lamin B receptor in the nucleus. Their findings help to elucidate mechanisms for turnover of inner nuclear membrane proteins.\n\nEssential revisions:\n\n1) It is important to determine whether the importance of the lamin B receptor is unique to HeLa cells. Do HeLa cells express TM7SF2 transcripts and protein?\n\nA survey of LBR and TM7SF2 transcript and protein levels in several different human cell lines would be instructive. Are there coding mutations in TM7SF2 in HeLa cells? eLife readers need to have some inkling about whether the essential nature of the LBR for cholesterol synthesis is a peculiarity of one tumor cell line.\n\n2) Document an accumulation of \u03b4 14 sterols in the LBR-deficient cells.\n\n3) Measure cholesterol synthesis in LBR-deficient cells.\n\n4) It would be highly desirable to show that the mutants are ubiquitinylated at more native levels of expression; protein overexpression could induce proteasomal degradation.\n\n5) It would be desirable to take a fresh look at SREBP control of LBR and TMSSF2 expression.\n\n6) While the quality of the writing was excellent, the Discussion section was too short and disappointing in terms of the content. Not to discuss the ichthyosis phenotype in the mice and speculate about its etiology was odd. Not to include a discussion of the Wassif paper that concluded that the enzymatic activities of the two proteins were redundant was odd. Not to mention conclusions from the mouse KO of the DHCR14 gene is odd. Not to discuss in more detail the Subramanian paper was odd. Putting your data in the context of earlier contributions is the right thing to do.\n",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "88483ce4-92a1-4167-b609-b042b0886b09",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C1",
+      "claim": "Human LBR is essential for cholesterol synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that human LBR is essential for cholesterol synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by multiple experimental approaches including knockout cell lines, cholesterol starvation assays, and metabolic labeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "64a219a5-7c3b-40c9-8ff1-738bfc0da8f7",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C2",
+      "claim": "LBR mutant derivatives implicated in Greenberg skeletal dysplasia or Pelger-Hu\u00ebt anomaly fail to rescue the cholesterol auxotrophy of a LBR-deficient human cell line.",
+      "claim_type": "EXPLICIT",
+      "source": "LBR mutant derivatives implicated in Greenberg skeletal dysplasia or Pelger-Hu\u00ebt anomaly fail to rescue the cholesterol auxotrophy of a LBR-deficient human cell line, consistent with a loss-of-function mechanism for these congenital disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated through rescue experiments in LBR knockout cells with disease-associated mutations (Figure 4).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "c60e1803-8588-458f-bb3a-3cd0d5bb2d59",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C3",
+      "claim": "Disease-causing LBR variants fall into two classes: point mutations in the sterol reductase domain that perturb enzymatic activity by reducing the affinity for NADPH, and LBR truncations that render the mutant protein metabolically unstable.",
+      "claim_type": "EXPLICIT",
+      "source": "These disease-causing variants fall into two classes: point mutations in the sterol reductase domain perturb enzymatic activity by reducing the affinity for the essential cofactor NADPH, while LBR truncations render the mutant protein metabolically unstable, leading to its rapid degradation at the inner nuclear membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by NADPH binding assays (Figure 5D) and pulse-chase experiments (Figure 6).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "1352de04-60fa-49dc-bd94-f20820dc515e",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C4",
+      "claim": "Point mutations in the sterol reductase domain reduce the affinity for the essential cofactor NADPH.",
+      "claim_type": "EXPLICIT",
+      "source": "point mutations in the sterol reductase domain perturb enzymatic activity by reducing the affinity for the essential cofactor NADPH",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by NADPH binding assays showing reduced affinity for N547D and R583Q mutants (Figure 5D).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "b24591dd-2291-456f-b2b9-ca0ee72ef3d3",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C5",
+      "claim": "LBR truncations lead to rapid degradation of the mutant protein at the inner nuclear membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "LBR truncations render the mutant protein metabolically unstable, leading to its rapid degradation at the inner nuclear membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Shown by pulse-chase experiments demonstrating rapid degradation of LBR 1402T\u0394 and LBR 1600* (Figure 6).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "dbccb298-be9a-4de7-a3c4-8ae314da0320",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C6",
+      "claim": "Metabolically unstable LBR variants may serve as model substrates for investigating protein turnover mechanisms at the inner nuclear membrane of higher eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, metabolically unstable LBR variants may serve as long-sought-after model substrates enabling previously impossible investigations of poorly understood protein turnover mechanisms at the inner nuclear membrane of higher eukaryotes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prospective claim based on the observed properties of the mutants.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "32143075-0193-490a-89cd-b75b7488a3ed",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C7",
+      "claim": "LBR is an evolutionary conserved, multifunctional protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Lamin B receptor (LBR) is an evolutionary conserved, multifunctional protein (Olins et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "1feb6062-2ba5-4b24-9ba1-b860a1d7828d",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C8",
+      "claim": "The N-terminal moiety of LBR resides in the nucleoplasm and contains a chromatin-binding TUDOR domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal moiety of LBR, which resides in the nucleoplasm, contains a chromatin-binding TUDOR domain and associates with the nuclear lamina (Makatsori et al., 2004; Pyrpasopoulou et al., 1996; Worman et al., 1988)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "70e1bd02-baae-45d6-bde6-56d5309be5d7",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C9",
+      "claim": "The N-terminal moiety of LBR associates with the nuclear lamina.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal moiety of LBR, which resides in the nucleoplasm, contains a chromatin-binding TUDOR domain and associates with the nuclear lamina (Makatsori et al., 2004; Pyrpasopoulou et al., 1996; Worman et al., 1988)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "537ff498-e1cd-49b4-8193-68d2d31a66f8",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C10",
+      "claim": "The polytopic C-terminal domain anchors LBR in the inner nuclear membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "while the polytopic C-terminal domain anchors LBR in the inner nuclear membrane (INM) and has sequence homology to sterol C14 reductases (Li et al., 2015; Silve et al., 1998; Worman et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "ae970cef-35df-40a4-bec0-aac3be3b3d67",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C11",
+      "claim": "The C-terminal domain of LBR has sequence homology to sterol C14 reductases.",
+      "claim_type": "EXPLICIT",
+      "source": "while the polytopic C-terminal domain anchors LBR in the inner nuclear membrane (INM) and has sequence homology to sterol C14 reductases (Li et al., 2015; Silve et al., 1998; Worman et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "23ea8f5d-3834-40f9-81d6-b6ef1c41c82c",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C12",
+      "claim": "Sterol C14 reductases are widely conserved throughout evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Sterol C14 reductases are widely conserved throughout evolution and are responsible for the reduction of a specific carbon-carbon double bond as part of the tightly controlled enzymatic cascade which results in the production of cholesterol and cholesterol-related compounds (Benveniste, 2004; Holmer et al., 1998) (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "45882674-e190-4c7a-a0ec-3eb6e645d516",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C13",
+      "claim": "Sterol C14 reductases are responsible for the reduction of a specific carbon-carbon double bond in cholesterol biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Sterol C14 reductases are widely conserved throughout evolution and are responsible for the reduction of a specific carbon-carbon double bond as part of the tightly controlled enzymatic cascade which results in the production of cholesterol and cholesterol-related compounds (Benveniste, 2004; Holmer et al., 1998) (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "9a23b8c0-97ed-4767-a3e0-142a1001908f",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C14",
+      "claim": "There is currently no known functional connection between the chromatin-binding N-terminus of LBR and the sterol reductase C-terminus of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "There is currently no known functional connection between the chromatin-binding N-terminus of LBR and the sterol reductase C-terminus of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "51436d41-12c2-4161-8688-349454467b4d",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C15",
+      "claim": "Human cells have a second C14 sterol reductase enzyme called TM7SF2.",
+      "claim_type": "EXPLICIT",
+      "source": "The function of the sterol reductase domain (SRD) of LBR is further obfuscated by the fact that human cells have a second C14 sterol reductase enzyme called TM7SF2, which is conserved in evolution and localizes to the endoplasmic reticulum (ER), where other enzymes responsible for cholesterol biogenesis are typically found (Bennati et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "4f123bd6-8b1e-41ea-9269-2320f5ffe2d7",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C16",
+      "claim": "TM7SF2 is conserved in evolution and localizes to the endoplasmic reticulum.",
+      "claim_type": "EXPLICIT",
+      "source": "The function of the sterol reductase domain (SRD) of LBR is further obfuscated by the fact that human cells have a second C14 sterol reductase enzyme called TM7SF2, which is conserved in evolution and localizes to the endoplasmic reticulum (ER), where other enzymes responsible for cholesterol biogenesis are typically found (Bennati et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "449bb76f-75a0-4782-b360-2a560ae2a146",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C17",
+      "claim": "The TM7SF2 promoter harbors a sterol response element (SRE).",
+      "claim_type": "EXPLICIT",
+      "source": "The TM7SF2 promoter harbors a sterol response element (SRE) common to most, if not all enzymes implicated in cholesterol synthesis, allowing for the tight regulation of their transcription in response to cholesterol availability (Brown and Goldstein, 1999; Sharpe and Brown, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "643e5fe8-6956-4cf4-9136-409d8a57bcea",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C18",
+      "claim": "The LBR gene lacks an SRE consensus sequence and is constitutively expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the LBR gene lacks an SRE consensus sequence and is constitutively expressed (Bennati et al., 2006; Cohen et al., 2008; Sharpe and Brown, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "1407dfd9-ff36-40bf-991f-86b18eb2c59a",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C19",
+      "claim": "Two congenital disorders are known to be associated with mutations in LBR: Pelger-Hu\u00ebt anomaly and Greenberg skeletal dysplasia.",
+      "claim_type": "EXPLICIT",
+      "source": "Two congenital disorders are known to be associated with mutations in LBR: Pelger-Hu\u00ebt anomaly and Greenberg skeletal dysplasia (Oosterwijk et al., 2003; Shultz et al., 2003; Wassif et al., 2007; Waterham et al., 2003) (see Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature and Table 1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "53695d5c-40a6-4bf3-872d-67f559a275c5",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C20",
+      "claim": "Pelger-Hu\u00ebt anomaly is an autosomal dominant disorder in which a single mutation in one LBR allele results in abnormal hypolobulation of granulocyte nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Pelger-Hu\u00ebt anomaly is an autosomal dominant disorder in which a single mutation in one LBR allele results in abnormal hypolobulation of granulocyte nuclei (Best et al., 2003; Hoffmann et al., 2002; Shultz et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "82908b63-1faa-42e3-8952-12a0ac32a546",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C21",
+      "claim": "Greenberg skeletal dysplasia is a perinatally lethal, autosomal recessive condition that results in abnormal bone development, fetal hydrops, and the ultimate nonviability of the fetus.",
+      "claim_type": "EXPLICIT",
+      "source": "Greenberg skeletal dysplasia, is a perinatally lethal, autosomal recessive condition that results in abnormal bone development, fetal hydrops, and the ultimate nonviability of the fetus (Chitayat et al., 1993; Greenberg et al., 1988; Horn et al., 2000; Konstantinidou et al., 2008; Trajkovski et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "acefa58d-9a26-484c-9729-15fc7c223662",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C22",
+      "claim": "Greenberg skeletal dysplasia results from the inheritance of two mutant LBR alleles that when heterozygous cause Pelger-Hu\u00ebt anomaly.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, mounting evidence indicates that Greenberg skeletal dysplasia results from the inheritance of two mutant LBR alleles that when heterozygous cause Pelger-Hu\u00ebt anomaly (Konstantinidou et al., 2008; Oosterwijk et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "77c9c2c5-0ed9-49bf-a43b-5f8f514db511",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C23",
+      "claim": "The two diseases (Pelger-Hu\u00ebt anomaly and Greenberg skeletal dysplasia) represent different allelic states of the same chromosomal lesion.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that the two diseases represent different allelic states of the same chromosomal lesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited evidence about the genetic relationship between the two diseases.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "2391a856-2082-4bc9-8658-516745bc603b",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C24",
+      "claim": "It is unclear whether Pelger-Hu\u00ebt anomaly and Greenberg skeletal dysplasia are caused by structural changes in the nuclear lamina, or whether they are diseases of cholesterol metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is unclear whether these diseases are caused by structural changes in the nuclear lamina, or whether they are diseases of cholesterol metabolism (Clayton et al., 2010; Olins et al., 2010; Wassif et al., 2007; Waterham et al., 2003; Worman and Bonne, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects uncertainty in the field prior to this study, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "9840c5a5-dc9b-4151-8cd7-48b31f63b31e",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C25",
+      "claim": "LBR knockout HeLa cells were generated using the CRISPR/Cas9 system.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to clarify the cellular function of LBR both in cholesterol metabolism and as a structural component of the nuclear lamina, we used the CRISPR/Cas9 system (Mali et al., 2013) to generate LBR knockout HeLa cell lines (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement supported by citation and reference to supplementary figure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "5cc2caa1-986d-4fbc-a83b-3f130747462a",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C26",
+      "claim": "A clone was obtained that yielded no detectable LBR protein as judged by immunoblotting.",
+      "claim_type": "EXPLICIT",
+      "source": "A clone was obtained that yielded no detectable LBR protein as judged by immunoblotting, corresponding to the absence of a PCR product of the size predicted by the wild-type LBR allele (Figure 2\u2014figure supplement 1C), indicating that all LBR alleles had been effectively targeted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunoblotting and PCR data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "0131889d-fafc-4ddc-b780-ede5a9fafaf5",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C27",
+      "claim": "HeLa cells are aneuploid, including three complete copies of chromosome 1 where the LBR gene is located.",
+      "claim_type": "EXPLICIT",
+      "source": "Since HeLa cells are aneuploid, including three complete copies of chromosome 1 where the LBR gene is located, any LBR knockout should have three distinct genome 'edits'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about HeLa cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "4b1fa75d-eac9-4895-9b1d-7e499668bad0",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C28",
+      "claim": "Sequence analysis revealed three distinct mutant alleles, all containing frame-shift mutations or premature stop codons within the 5' region of the LBR open reading frame.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, sequence analysis revealed three distinct mutant alleles, all containing frame-shift mutations or premature stop codons within the 5' region of the LBR open reading frame, showing that no more than 12 amino acids of LBR WT sequence can be produced from any of the three mutant alleles (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by deep sequencing data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "ed70a9d6-df6f-46f8-897c-066c47149929",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C29",
+      "claim": "No differences in overall cell morphology or growth were observed between WT and LBR KO cells under normal growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "No differences in overall cell morphology or growth were observed between WT and LBR KO cells under normal growth conditions (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by microscopy data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "590ef034-daba-441b-8963-ae278c1871b1",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C30",
+      "claim": "No change in the localization of Lamin B1, Lamin A/C or Emerin was found in LBR KO cells compared to control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we found no change in the localization of Lamin B1, Lamin A/C or Emerin in LBR KO cells compared to control cells (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunofluorescence microscopy data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "096d17c9-498b-4b87-a9b5-e3261d9d2c36",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C31",
+      "claim": "The absence of LBR had no effect on the localization of Sun1 or Sun2.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we found that the absence of LBR also had no effect on the localization of other structural proteins of the NE such as Sun1 or Sun2, which serve as the INM components of the LINC (linker of nucleoskeleton and cytoskeleton) complex (Crisp et al., 2006) (Figure 2\u2014figure supplement 3A and B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunofluorescence microscopy data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "69910c40-0b80-44fd-93dc-8dfea4c7be8e",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C32",
+      "claim": "In both WT and LBR KO cells, the inner and outer nuclear membranes were regularly spaced and featured a nuclear lamina and nuclear pores of normal morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in both WT and LBR KO cells, the inner and outer nuclear membranes were regularly spaced and featured a nuclear lamina and nuclear pores of normal morphology (Figure 2B, arrowheads).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by electron microscopy data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "edc385e9-9e9b-4682-bc8d-4521b88de98a",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C33",
+      "claim": "LBR does not play a significant role in maintaining NE integrity in HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These data, together with our previous observations by immunofluorescence microscopy, indicate that in these cells, LBR does not play a significant role in maintaining NE integrity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the electron microscopy and immunofluorescence data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "8d28334f-fd4d-46f0-813b-d00a853a3573",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C34",
+      "claim": "After 4 days under cholesterol-restrictive growth conditions LBR KO, but not WT HeLa cells exhibited slow growth, cell rounding, and detachment, followed quickly by cell death on days 5\u20137.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that after 4 days under cholesterol-restrictive growth conditions LBR KO, but not WT HeLa cells exhibited slow growth, cell rounding, and detachment, followed quickly by cell death on days 5\u20137 (Figure 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by bright-field microscopy data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "d15c179f-8beb-42b2-8ea3-5c80d4841bb3",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C35",
+      "claim": "Addition of 10 \u00b5M exogenous cholesterol to the cell culture medium effectively rescued the observed sensitivity of LBR KO cells to low-cholesterol growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of 10 \u00b5M exogenous cholesterol to the cell culture medium effectively rescued the observed sensitivity of LBR KO cells to low-cholesterol growth conditions (Figure 2C)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by bright-field microscopy data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "a87042f5-f3c8-47cf-a807-01c56f296342",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C36",
+      "claim": "The observed growth defect of LBR KO cells was rescued by the addition of low density lipoprotein (LDL) particles to the cell culture medium.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed growth defect of LBR KO cells was also rescued by the addition of low density lipoprotein (LDL) particles, a physiologically relevant cholesterol carrier (Lodish, 2013), to the cell culture medium (Figure 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by bright-field microscopy data shown in Figure 2C and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "bc7e42ed-caaf-440d-93bc-2d56c8600e86",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C37",
+      "claim": "The primary function of LBR in the tissue culture model is to sustain cholesterol biogenesis when the extracellular supply of cholesterol is scarce.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the primary function of LBR in our tissue culture model is to sustain cholesterol biogenesis when the extracellular supply of cholesterol is scarce.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the rescue experiments with cholesterol and LDL.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "7c0e5268-8b88-47da-b986-5d61d8545632",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C38",
+      "claim": "Newly synthesized cholesterol was readily detected in WT cells but there was a near-complete loss of cholesterol synthesis in LBR KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We readily detected newly synthesized cholesterol in WT cells, as judged by its co-migration with purified 14C cholesterol, which was included as a standard (Figure 2D). Notably, we observed a near-complete loss of cholesterol synthesis in LBR KO cells (Figure 2D)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by metabolic labeling and TLC data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "32280e98-ed0a-47c6-b599-684dc19abb91",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C39",
+      "claim": "A strong reduction of viability was observed in LBR-silenced HFF cells under cholesterol-restrictive conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In either case, we observed a strong reduction of viability in LBR-silenced cells under cholesterol-restrictive conditions, whereas control cells transfected with non-targeting siRNAs displayed normal cell morphology under these conditions (Figure 3 A,B,D,E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by microscopy and viability assay data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "eab3c2ad-567c-4c9f-98da-16d6c27f3e1f",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C40",
+      "claim": "A strong reduction of viability was observed in LBR-silenced HEK293T cells under cholesterol-restrictive conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In either case, we observed a strong reduction of viability in LBR-silenced cells under cholesterol-restrictive conditions, whereas control cells transfected with non-targeting siRNAs displayed normal cell morphology under these conditions (Figure 3 A,B,D,E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by microscopy and viability assay data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "63ef838d-8313-42f0-a191-38cc653b5d62",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C41",
+      "claim": "HFF and HeLa cells upregulated TM7SF2 under starvation conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected (Bennati et al., 2006), we found that HFF and HeLa cells upregulated TM7SF2 under starvation conditions (Figure 3G)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qPCR data shown in Figure 3G and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "e34286bd-1e76-4e4f-a582-988400826440",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C42",
+      "claim": "LBR was constitutively expressed and unresponsive to cholesterol starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas LBR was constitutively expressed and unresponsive to cholesterol starvation (Figure 3H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qPCR data shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "dbb8b2bb-0c95-4afc-affa-3463169e2c71",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C43",
+      "claim": "HEK293T cells did not materially up-regulate TM7SF2 on the transcript level.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, HEK293T cells did not materially up-regulate TM7SF2 on the transcript level (Figure 3G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qPCR data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "83f995df-fe62-456f-a284-d2ab2eaa257e",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C44",
+      "claim": "The abundance of the TM7SF2 protein in HFF and HeLa cells increased under cholesterol-restrictive conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The abundance of the TM7SF2 protein in HFF and HeLa cells increased under cholesterol-restrictive conditions, whereas HEK293T cells displayed somewhat higher levels of TM7SF2 even under normal conditions but did not upregulate TM7SF2 to the same degree as HFF or HeLa cells (Figure 3I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunoblotting data shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "ff090f24-1642-4b0f-b738-7e034c8654e9",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C45",
+      "claim": "No significant differences were observed between HeLa WT and HeLa LBR KO cells in their ability to up-regulate TM7SF2 on the transcript level.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe significant differences between HeLa WT and HeLa LBR KO cells in their ability to up-regulate TM7SF2 on the transcript level, as judged by qPCR (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qPCR data shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "3ff2c65a-8f74-4639-8957-85334be6cec7",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C46",
+      "claim": "The observed upregulation of TM7SF2 was dependent on SREBP2.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with previous findings (Bennati et al., 2006), the observed upregulation was dependent on SREBP2, as judged by a profound reduction of TM7SF2 and HMG-CoA reductase on the transcript levels in cells depleted of SREBP2 via RNA interference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qPCR data after SREBP2 knockdown and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "dafd3394-028e-4f93-abb7-7fa40dde58b9",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C47",
+      "claim": "The isolated TM7SF2 cDNA contains the entire coding sequence of the published transcript variant 1 (NM_003273), with no apparent mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "This isolated cDNA (1401 bp) contains the entire coding sequence (CDS) of the published transcript variant 1 (NM_003273), with no apparent mutations as evidenced by a sequence alignment to the CDS of NM_003273 (Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "95502d2e-ca90-42a6-80e1-f0961bf940ca",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C48",
+      "claim": "LBR is essential for cholesterol synthesis in several human cell lines despite the presence of TM7SF2.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the foregoing, we arrive at the conclusion that LBR is essential for cholesterol synthesis in several human cell lines despite the presence of TM7SF2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the data from multiple cell lines showing LBR essentiality despite TM7SF2 expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "4e14699c-ef16-4eb5-978b-f11bcb3a7ed3",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C49",
+      "claim": "Expression of LBR WT from the FlpIn locus completely rescued the growth defect observed for LBR KO cells in cholesterol starvation growth medium.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that expression of LBR WT from the FlpIn locus completely rescued the growth defect observed for LBR KO cells in cholesterol starvation growth medium (Figure 4B and C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cell growth and imaging data shown in Figure 4B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "52e9e90a-a50c-41c2-8225-43b40acb89b9",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C50",
+      "claim": "All four disease-associated LBR alleles failed to rescue the observed growth defect.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, all four disease-associated LBR alleles failed to rescue the observed growth defect (Figure 4B and C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cell growth and imaging data shown in Figure 4B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "c13eb8a1-3739-487a-8a26-7637611256e5",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C51",
+      "claim": "LBR KO cells were found to have approximately 40% less total cholesterol content than LBR WT cells after 7 days of cholesterol starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "LBR KO cells were found to have approximately 40% less total cholesterol content than LBR WT cells after 7 days of cholesterol starvation (Figure 4E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cholesterol quantification data shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "4a61f5ed-5616-4562-a654-2a1bef8c3aea",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C52",
+      "claim": "Cellular cholesterol content was fully restored to that of WT cells by expression of LBR WT from the FlpIn locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular cholesterol content was fully restored to that of WT cells by expression of LBR WT from the FlpIn locus even at somewhat lower LBR expression levels compared to WT cells (Figure 4D and E)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cholesterol quantification and immunoblotting data shown in Figure 4D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "7d6ad69f-1e6b-43ca-b5e4-b878a94119bb",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C53",
+      "claim": "Neither cell growth nor cellular cholesterol content are restored by the expression of LBR N547D, LBR R583Q, LBR 1402T\u0394 or LBR 1600* in a LBR KO background.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither cell growth nor cellular cholesterol content are restored by the expression of LBR N547D, LBR R583Q, LBR 1402T\u0394 or LBR 1600* in a LBR KO background, indicating that these genetic lesions ultimately result in a failure to sustain cell growth under cholesterol-restrictive conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cell growth and cholesterol quantification data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "4da505a3-16c9-4783-9926-05ccff9a3aac",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C54",
+      "claim": "Both the isolated LBR SRD and the fusion protein SUN2-LBR rescued the LBR KO phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, both the isolated LBR SRD and the fusion protein SUN2-LBR rescued the LBR KO phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by cell growth data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "e3f50aca-d7da-4cc8-9bcf-1fdac6efb20f",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C55",
+      "claim": "The SRD is necessary and sufficient for survival of cholesterol-starved cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that all constructs were expressed at levels higher than the rescuing WT allele (Figure 5B), our results indicate that the SRD is necessary and sufficient for survival of cholesterol-starved cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the rescue experiments with domain constructs shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "3b3dd43c-5975-49b7-9aca-a5162e494ed1",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C56",
+      "claim": "LBR N547 and R583 residues correspond to maSR1 N359 and R395, respectively, both of which map to the NADPH binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on a sequence alignment (Figure 5\u2014figure supplement 1), the LBR N547 and R583 residues correspond to maSR1 N359 and R395, respectively, both of which map to the NADPH binding pocket, with N359 being implicated in a hydrogen bond formation with a phosphate oxygen of NADPH (Li et al., 2015) (Figure 5C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by sequence alignment and structural data from the cited crystal structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "08fa81e1-63da-49ef-a98d-89c01d317eef",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C57",
+      "claim": "WT LBR displayed hyperbolic saturation for NADPH with a KD of 24.2 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "WT LBR displayed hyperbolic saturation for the cofactor with a KD of 24.2 \u00b5M.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by NADPH binding assay data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "87b213cb-72c6-4408-8350-aa4e6228762b",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C58",
+      "claim": "Both LBR N547D and LBR R583Q mutants had a severely decreased binding affinity to NADPH, with N547D having the strongest effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Both mutants had a severely decreased binding affinity to NADPH, with N547D having the strongest effect (Figure 5D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by NADPH binding assay data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "b9a1a9d2-3726-4ec8-baa3-16f57143b21e",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C59",
+      "claim": "Neither LBR N547D nor LBR 583Q transgenes efficiently restored de novo cholesterol synthesis in LBR KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, neither LBR N547D nor LBR 583Q transgenes efficiently restored de novo cholesterol synthesis in LBR KO cells, which was monitored by metabolic incorporation of 14C acetate into cholesterol (Figure 5E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by metabolic labeling and TLC data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "6fe58483-fe7b-4ea8-827c-c688d8274150",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C60",
+      "claim": "Neither of the LBR C-terminal truncation mutant proteins (1402T\u0394 or 1600*) were detected via immunoblotting using an LBR antibody that recognizes the N-terminal domain of LBR.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither of the LBR C-terminal truncation mutant proteins (1402T\u0394 or 1600*) were detected via immunoblotting using an LBR antibody that recognizes the N-terminal (nuclear) domain of LBR (see Figure 4D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunoblotting data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "f3ae873e-ec03-42eb-82fb-090d1f42bb39",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C61",
+      "claim": "LBR WT, LBR N547D and LBR R583Q are extremely stable.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that LBR WT, LBR N547D and LBR R583Q are extremely stable (Figure 6A and B)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pulse-chase data shown in Figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "235fb94f-8f3c-4b6d-8fa7-24fbc6eacd2c",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C62",
+      "claim": "The lack of cofactor binding does not lead to LBR instability.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that the lack of cofactor binding does not lead to LBR instability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the stability of N547D and R583Q mutants despite their reduced NADPH binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "603f4452-4555-4c48-a738-4ce76fef0332",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C63",
+      "claim": "Both truncated LBR variants (1402T\u0394 and 1600*) were produced at levels comparable to WT LBR at the beginning of the chase period but were rapidly degraded.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, both truncated LBR variants were produced at levels comparable to WT LBR at the beginning of the chase period but were rapidly degraded (Figure 6A and B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pulse-chase data shown in Figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "55585c83-7a15-4061-ac82-57cdb64c4173",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C64",
+      "claim": "Both LBR 1402T\u0394 and LBR 1600* proteins were degraded extremely rapidly, with little or no protein remaining after 30 min.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that both LBR 1402T\u0394 and LBR 1600* proteins were degraded extremely rapidly, with little or no protein remaining after 30 min (Figure 6C and D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pulse-chase data shown in Figure 6C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "472ae746-19fd-403e-8ecc-e4d6e7006e39",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C65",
+      "claim": "Both LBR 1402T\u0394 and LBR 1600* mutants were significantly stabilized by MG132.",
+      "claim_type": "EXPLICIT",
+      "source": "Both mutants were significantly stabilized by MG132, with minimal degradation taking place in 60 min after synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pulse-chase data with MG132 treatment shown in Figure 6C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "b461e3c2-386c-43c7-aa50-04bc33ab62b7",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C66",
+      "claim": "The degradation of truncated LBR variants depends on the proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the degradation of truncated LBR variants depends on the proteasome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the stabilization of mutants by the proteasome inhibitor MG132.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "d9b934ba-77b6-4b75-abee-e8ea13ad6e46",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C67",
+      "claim": "The kinetics of LBR 1402T\u0394 and LBR 1600* degradation were remarkably rapid, with half-lives of 10\u201315 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the kinetics of LBR 1402T\u0394 and LBR 1600* degradation were remarkably rapid, with half-lives of 10\u201315 min",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pulse-chase data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "5e06a8c9-b42e-43ac-914c-fb17ba5806fc",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C68",
+      "claim": "HA-Ub conjugated species were significantly more abundant for both LBR 1402T\u0394 and LBR 1600* than for LBR WT in both untreated and MG132-treated samples.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, HA-Ub conjugated species were significantly more abundant for both LBR 1402T\u0394 and LBR 1600* than for LBR WT in both untreated and MG132-treated samples, with the latter condition leading to an additional increase (Figure 7B, upper panel).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunoprecipitation and immunoblotting data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "3c934065-052d-477b-b263-a132686894bd",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C69",
+      "claim": "The metabolic instability of LBR 1402T\u0394 and LBR 1600* is caused by degradation via the Ub/proteasome system (UPS).",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the data argue that the metabolic instability of LBR 1402T\u0394 and LBR 1600* is caused by degradation via the Ub/proteasome system (UPS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the ubiquitylation and proteasome-dependence data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "001552d0-f696-41ab-b579-67fadea05bbd",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C70",
+      "claim": "In the absence of MG132, LBR 1402T\u0394 is partitioned between the ER and the NE.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of MG132, LBR 1402T\u0394 is partitioned between the ER and the NE, as judged by a co-staining with anti-LBR and anti-Lamin A/C antibodies (Figure 8A, left panel).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by confocal microscopy data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "be63fbbc-a972-4d39-824a-05ed88c09695",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C71",
+      "claim": "LBR 1600* displays nuclear rim staining that is indistinguishable from LBR WT.",
+      "claim_type": "EXPLICIT",
+      "source": "LBR 1600*, on the other hand, displays nuclear rim staining that is indistinguishable from LBR WT (Figure 8B, left panel; cf. Figure 2A, upper left panel) (Worman et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by confocal microscopy data shown in Figure 8B and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "f065299a-1c8c-4dce-a0d7-b427291d238c",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C72",
+      "claim": "Both truncated LBR proteins appear to accumulate in the nucleoplasm upon proteasomal inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Against all expectations, both truncated LBR proteins appear to accumulate in the nucleoplasm upon proteasomal inhibition (Figure 8A and B, right panels).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by confocal microscopy data shown in Figure 8A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "3074fc96-79a4-4e1d-9732-a08c938d3e30",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C73",
+      "claim": "Both LBR mutants are clearly excluded from nucleoli in the presence of MG132.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, both LBR mutants are clearly excluded from nucleoli in the presence of MG132.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by confocal microscopy data shown in Figure 8A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "896d31e6-057a-4e36-bf6b-297080bf615f",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C74",
+      "claim": "MG132 treatment resulted in a shift from a non-nuclear to a nuclear LBR immunofluorescence signal for both mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that with both mutants, MG132 treatment resulted in a shift from a non-nuclear to a nuclear LBR immunofluorescence signal, with LBR 1402T\u0394 showing a slightly larger shift in localization than LBR 1600*, which resides primarily in the nuclear compartment even in the absence of MG132 (Figure 8A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by quantification of confocal microscopy data shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "bfc1c201-c05e-4080-b5e7-c48a28992726",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C75",
+      "claim": "Disease-associated, C-terminally truncated LBR mutants accumulate in the nuclear compartment, rather than the ER or cytosol, after MG132 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "These unexpected results indicate that disease-associated, C-terminally truncated LBR mutants surprisingly accumulate in the nuclear compartment, rather than the ER or cytosol, after MG132 treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the microscopy data showing nuclear accumulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "ea2cb8ba-bb02-4e3a-b7c0-876aaae26f4f",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C76",
+      "claim": "p97 WT had no effect on LBR 1600* degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, p97 WT had no effect on LBR 1600* degradation (Figure 8D and E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pulse-chase data shown in Figure 8D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "76f43f89-9941-48b5-b8f9-8f980b8566bd",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C77",
+      "claim": "p97 QQ inhibited LBR 1600* turnover to an extent that is comparable to proteasomal inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "However, p97 QQ inhibited LBR 1600* turnover to an extent that is comparable to proteasomal inhibition (Figure 8D and E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pulse-chase data shown in Figure 8D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "c187ca35-a432-4bbe-82ab-663d6c2e54fa",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C78",
+      "claim": "In the presence of both p97 WT and MG132, LBR 1600* accumulates in the nucleoplasm and to a lesser degree, the ER.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of both p97 WT and MG132, we observed the expected LBR 1600* accumulation in the nucleoplasm and to a lesser degree, the ER (Figure 8F)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by confocal microscopy data shown in Figure 8F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "3e8eb445-cf25-42e6-b6b6-2bbc16ce01fb",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C79",
+      "claim": "LBR 1600* accumulates nearly quantitatively at the nuclear rim in the presence of p97 QQ even in the presence of MG132.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas LBR 1600* accumulates nearly quantitatively at the nuclear rim in the presence of p97 QQ even in the presence of MG132.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by confocal microscopy data shown in Figure 8F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "2d8ed73d-43a7-4eef-baf2-8252533a145c",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C80",
+      "claim": "The data are consistent with a blockage of the membrane dislocation step at the INM by p97 QQ.",
+      "claim_type": "EXPLICIT",
+      "source": "The data are consistent with a blockage of the membrane dislocation step at the INM (Figure 8F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the microscopy data showing nuclear rim accumulation with p97 QQ.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "02c43acb-5162-4a3e-bc11-e36674a19452",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C81",
+      "claim": "Only a small percentage of LBR 1600* is degraded by the canonical ERAD pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, these results are consistent with a mechanism in which only a small percentage of LBR 1600* is degraded by the canonical ERAD pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the localization and degradation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "0e5f31a4-e370-4cb1-9867-e6568dd07618",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C82",
+      "claim": "The majority of LBR 1600* is localized to the INM, where a second quality control pathway operates to extract and destroy it in a series of reactions employing both p97 and the UPS.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of the truncated protein is localized to the INM, where it appears that a second quality control pathway operates to extract and destroy LBR 1600* in a series of reactions employing both p97 and the UPS (Figure 9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the localization, p97-dependence, and proteasome-dependence data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "efac775d-a0a2-4276-b9e6-4da162159790",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C83",
+      "claim": "Previous studies in mice reported that the sterol reductase activities of LBR and TM7SF2 are functionally redundant.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are unexpected since previous studies in mice reported that the sterol reductase activities of LBR and TM7SF2 are functionally redundant, suggesting that HEM dysplasia is likely a laminopathy that is unrelated to the sterol reductase activity of LBR (Wassif et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous findings in the literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "68dd961a-2a02-474c-b40c-12abd8a909c7",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C84",
+      "claim": "In cultured HeLa cells, LBR does not play a significant role in NE organization despite being a constitutively expressed, abundant INM component.",
+      "claim_type": "EXPLICIT",
+      "source": "In cultured HeLa cells, however, LBR does not play a significant role in NE organization despite being a constitutively expressed, abundant INM component (Figure 2A,B)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the microscopy data showing no changes in NE structure in LBR KO cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "646dd574-ade3-442a-80ad-25f8a0f7c908",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C85",
+      "claim": "Mice lacking a fully functional LBR allele due to homozygous mutations at the ichthyosis locus (ic/ic) are viable, although these animals display numerous phenotypic abnormalities.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, it is striking that mice lacking a fully functional LBR allele due to homozygous mutations at the ichthyosis locus (ic/ic) are viable, although these animals display numerous phenotypic abnormalities including alopecia, syndactyly and hydrocephalus as well as an increase in embryonic lethality (Shultz et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous findings in mouse models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "c3fe2847-5826-4b0c-91b4-d2dfc846cb58",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C86",
+      "claim": "Growth defects were observed in primary cells isolated from mouse models with mutations in the LBR gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Growth defects were also observed in primary cells isolated from mouse models with mutations in the LBR gene (Subramanian et al., 2012; Verhagen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous findings in mouse models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "2dec4f0d-081d-46ac-8994-ae9dc449ddcf",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C87",
+      "claim": "Defects in neutrophil maturation in ic/ic animals can be rescued in vitro by expression of the LBR SRD.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, defects in neutrophil maturation in ic/ic animals can be recued in vitro by expression of the LBR SRD (Subramanian et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous findings in mouse models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "f52a3c71-9ec5-45f2-942a-729fd604a11f",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C88",
+      "claim": "LBR function is subject to diversification in the course of evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that LBR function is subject to diversification in the course of evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on comparative observations across species.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "fa2c7a28-7bd1-4bd9-906c-fc1c50a7635d",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C89",
+      "claim": "Human LBR can rescue sterol reductase deficiency in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, human LBR can rescue sterol reductase deficiency in yeast (Silve et al., 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "a9774c63-a79b-4882-8250-60db7ffa8877",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C90",
+      "claim": "LBR from Drosophila melanogaster does not complement sterol reductase deficiency in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "while LBR from Droshophila melanogaster does not complement this phenotype (Wagner et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "6a5cba4c-3df4-49bb-85af-d3eda5a29f9c",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C91",
+      "claim": "Drosophila melanogaster is a cholesterol-auxotrophic organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Since D. melanogaster is a cholesterol-auxotrophic organism",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about D. melanogaster.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "d32ccf67-9064-4087-9205-0221d21b40f4",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C92",
+      "claim": "The Tudor domain of LBR is dispensable for cholesterol synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "While we found this domain to be dispensable for cholesterol synthesis (Figure 5A)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by rescue experiments with domain constructs shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "7e5296d0-2f6a-4cd6-98d9-d9f379a22b86",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C93",
+      "claim": "The LBR SRD is necessary and sufficient to restore cholesterol synthesis and rescues a defect in neutrophil maturation observed in ic/ic cells in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the LBR SRD is neccesary and sufficient to restore cholesterol synthesis (Figure 5A) and rescues a defect in neutrophil maturation observed in ic/ic cells in vitro (Subramanian et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by data from this study and citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "3ae2845a-b544-4915-b6b1-16c3bdf0f2e4",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C94",
+      "claim": "Cholesterol synthesis can proceed through differential, tissue-specific usage of distinct yet interchangeable segments of the established synthesis pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Since cholesterol synthesis can proceed through differential, tissue-specific usage of distinct yet interchangeable segments of the established synthesis pathways (Mitsche et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "69565bf7-c9b0-41c2-bf84-d48c53c254a3",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C95",
+      "claim": "TM7SF2 may participate in healing of burn wounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a recent study suggested that TM7SF2 may participate in healing of burn wounds (Lei et al., 2016), possibly representing a case of a more specialized physiological role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "e386abd3-f869-44b9-851f-fc40328b7bf7",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C96",
+      "claim": "All tested disease-causing mutations in LBR fail to complement the cholesterol auxotrophy imposed by an LBR deficiency in the tissue culture model.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our finding that all tested disease-causing mutations in LBR fail to complement the cholesterol auxotrophy imposed by an LBR deficiency in our tissue culture model (Figure 4)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by rescue experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "1c30a0a5-7d5c-44c1-9b3e-00d33293c2aa",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C97",
+      "claim": "C-terminally truncated LBR proteins found in both Pelger-Hu\u00ebt anomaly and Greenberg skeletal dysplasia are rapidly degraded by a proteasome-dependent protein quality-control pathway that appears to be distinct from the canonical ERAD pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Another unexpected outcome of this study is that C-terminally truncated LBR proteins found in both Pelger-Hu\u00ebt anomaly and Greenberg skeletal dysplasia are rapidly degraded by a proteasome-dependent protein quality-control pathway that appears to be distinct from the canonical ERAD pathway (Figures 8, 9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pulse-chase, ubiquitylation, and microscopy data shown in Figures 6-8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "8f46b873-4afc-4a29-8749-98024b131ffd",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C98",
+      "claim": "INM-resident proteins are synthesized in the ER prior to their targeting to the INM.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that INM-resident proteins are synthesized in the ER prior to their targeting to the INM (Lusk et al., 2007; Ungricht and Kutay, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "cb4602c4-f297-419c-ac06-929c4c4ceac6",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C99",
+      "claim": "The correctly folded N-terminal moiety of LBR containing INM targeting information leads to the rapid trafficking of LBR 1600* to the INM before elements of the ERAD pathway can act.",
+      "claim_type": "EXPLICIT",
+      "source": "we propose that the correctly folded N-terminal moiety of LBR containing INM targeting information (Smith and Blobel, 1993; Soullam and Worman, 1993) leads to the rapid trafficking of LBR 1600* to the INM before elements of the ERAD pathway can act (Figure 8).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the localization data and citations to previous work on INM targeting.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "6553cc5d-9644-4d10-8aee-cc095bc67b40",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C100",
+      "claim": "Near-quantitative nuclear accumulation of an HA-tagged LBR variant is achieved in ~20 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that near-quantitative nuclear accumulation of an HA-tagged LBR variant is achieved in ~20 min (Ungricht et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "57c8245a-ca75-42a5-bf20-dc3bcf740d61",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C101",
+      "claim": "The half life of LBR 1600* is ~10\u201315 min.",
+      "claim_type": "EXPLICIT",
+      "source": "and that the half life of LBR 1600* is ~10\u201315 min",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by pulse-chase data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "35e5930c-b6df-46eb-b3e6-9f3c7fd791e1",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C102",
+      "claim": "A significant fraction of LBR 1600* escapes the ERAD system leading to localization to the INM mediated by the intact N-terminal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "it follows that a significant fraction of LBR 1600* escapes the ERAD system leading to localization to the INM mediated by the intact N-terminal domain, which confers lamin binding (see. Figure 8B and Figure 8\u2014figure supplement 1 demonstrating INM localization of LBR 1600* under steady-state conditions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the kinetics and localization data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "88a33687-5f18-4d06-9e17-c97f4676e25d",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C103",
+      "claim": "Upon arrival of LBR 1600* at the INM, a system analogous to but distinct from the known ERAD system is responsible for the ubiquitylation of LBR 1600* and its p97-dependent extraction from the INM.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon arrival of LBR 1600* at the INM, a system analogous to but distinct from the known ERAD system is responsible for the ubiquitylation of LBR 1600* and its p97-dependent extraction from the INM (Figures 8, 9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the ubiquitylation, p97-dependence, and localization data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "0c87b4c5-b439-44e4-a073-9366f904f0a9",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C104",
+      "claim": "The INM degradative system is different from the established ERAD machinery.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the unusually rapid kinetics and substantial protein accumulation in a dislocated nuclear state in presence of MG132, we believe that the INM degradative system is different from the established ERAD machinery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the kinetics and localization data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "29c99095-9737-445a-b86e-971a840b7a7a",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C105",
+      "claim": "It is still unclear which Ub ligases account for protein turnover at the INM of mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, it is still unclear which Ub ligases account for protein turnover at the INM of mammalian cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "95257b4e-ea70-4d60-bd44-d205899feff5",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C106",
+      "claim": "The mechanisms of protein quality control operative at the NE of budding yeast are far better understood than analogous systems in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the mechanisms of protein quality control operative at the NE of budding yeast are far better understood than analogous systems in mammalian cells (Deng and Hochstrasser, 2006; Foresti et al., 2014; Khmelinskii et al., 2014; Rose and Schlieker, 2012; Webster et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "955c27d6-2bb8-4e21-abe0-06d569776c67",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C107",
+      "claim": "The absence of suitable model substrates has been the major limitation for studying protein quality control at the NE in higher eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "The absence of suitable model substrates in higher eukaryotes has been the major limitation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "a4009898-7e38-4b66-a5b4-ab0be2885baf",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C108",
+      "claim": "This study establishes the methodological framework to investigate NE-directed quality control mechanisms in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This study establishes the long sought-after methodological framework to investigate NE-directed quality control mechanisms in human cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the significance of the study.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "4f923ebc-d1c8-48d2-b958-d17c9c7ac055",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C109",
+      "claim": "The combination of the extremely short half-life of LBR1600*, its near-exclusive localization to the INM, and ease with which LBR1600* can be arrested at distinct stages of dislocation and turnover make this LBR variant an ideal tool to pursue mechanistic studies.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the combination of (i) the extremely short half-life of LBR1600*, (ii) its near-exclusive localization to the INM as well as (iii) and ease with which LBR1600* can be arrested at distinct stages of dislocation and turnover make this LBR variant an ideal tool to pursue mechanistic studies aimed at the elucidation of protein quality control and turnover at the INM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prospective claim about the utility of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "82e89e36-4db9-4dcb-966f-99a69246ed8d",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C111",
+      "claim": "Both Bloch and Kandutsch-Russel pathways employ an NADPH-dependent reduction step which can be catalyzed by sterol C14 reductases LBR or TM7SF2.",
+      "claim_type": "EXPLICIT",
+      "source": "both of which employ an NADPH-dependent reduction step which can be catalyzed by sterol C14 reductases LBR or TM7SF2 (highlighted in magenta).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 1 schematic.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "db5fa423-c9b2-405e-9beb-409eb917974d",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "claim_id": "C112",
+      "claim": "Human sterol reductases LBR and TM7SF2 localize to the inner nuclear membrane and ER, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The inset on the upper right depicts distinct subcellular localizations of the human sterol reductases LBR and TM7SF2 localizing to the inner nuclear membrane and ER, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 1 inset.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c6bc4523-132b-49fa-a4bd-f0e91b96e0ba",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "LBR is essential for cholesterol synthesis in human cells. LBR knockout HeLa cells exhibit growth defects and cell death under cholesterol-restrictive conditions, which are rescued by exogenous cholesterol or LDL. LBR KO cells show near-complete loss of de novo cholesterol synthesis, and this essentiality is observed across multiple human cell lines (HeLa, HFF, HEK293T) despite the presence of TM7SF2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C34-C40, and C48 collectively demonstrate LBR essentiality through multiple complementary approaches: genetic knockout (C1, C25-C28), cholesterol starvation assays showing cell death rescued by cholesterol/LDL (C34-C36), metabolic labeling showing loss of cholesterol synthesis (C38), and replication in multiple cell types (C39-C40). The convergence of genetic, biochemical, and cell biological evidence strongly supports this major finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "b99cc471-471e-4cc8-94e2-9e932dcad91d",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Disease-associated LBR mutations (N547D, R583Q, 1402T\u0394, 1600*) fail to rescue the cholesterol auxotrophy of LBR-deficient cells. Wild-type LBR fully rescues both cell growth and cholesterol content in LBR KO cells, while all four disease-associated alleles fail to restore either phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C49-C53, and C96 demonstrate through rescue experiments that WT LBR restores growth and cholesterol levels while disease mutants do not. The data include cell counting (C49-C50), cholesterol quantification (C51-C52), and microscopy (Figure 4B-E), providing multiple lines of evidence for loss-of-function mechanisms in these congenital disorders.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "a1268e4c-52a7-41d1-a230-bf3b6d75458a",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Point mutations in the sterol reductase domain (N547D, R583Q) reduce NADPH binding affinity and impair enzymatic activity. These residues map to the NADPH binding pocket based on structural homology to maSR1, and mutants show severely decreased NADPH binding (KD increased from 24.2 \u03bcM to 285.8 \u03bcM for N547D and 187.9 \u03bcM for R583Q) and fail to restore cholesterol synthesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C56-C59 provide mechanistic insight into point mutation pathogenesis through structural modeling (C56), quantitative NADPH binding assays (C57-C58), and functional cholesterol synthesis assays (C59). The data directly link reduced cofactor binding to loss of enzymatic function, with appropriate controls and quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "740c42be-e534-4e3d-9c65-a4e630e5c0e6",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "C-terminal truncation mutations (1402T\u0394, 1600*) render LBR metabolically unstable with rapid proteasome-dependent degradation. These mutants are undetectable by steady-state immunoblotting but are produced at normal levels initially, then rapidly degraded with half-lives of 10-15 minutes. Degradation is blocked by the proteasome inhibitor MG132, while point mutants (N547D, R583Q) remain stable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C60-C67 demonstrate protein instability through pulse-chase experiments showing rapid degradation (C63-C64, C67) that is proteasome-dependent (C65-C66). The contrast with stable point mutants (C61-C62) controls for effects of loss of enzymatic activity versus protein stability. The kinetic measurements are quantitative and reproducible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "84753439-29ad-4bc8-b742-b6ba93ed10a4",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Truncated LBR variants (1402T\u0394, 1600*) are ubiquitylated and degraded via the ubiquitin/proteasome system. Immunoprecipitation experiments show significantly more HA-ubiquitin conjugated species for truncated mutants compared to WT LBR, with further accumulation upon MG132 treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 demonstrate ubiquitylation of truncated mutants through co-immunoprecipitation experiments with HA-tagged ubiquitin (Figure 7B). The increased ubiquitylation of mutants versus WT, combined with proteasome-dependence (C65-C66), establishes UPS-mediated degradation. The experimental design with denaturing lysis prevents artifacts from non-covalent interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "542ab003-4f4a-43e7-adaf-a98a1ced0a48",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Truncated LBR mutants accumulate in the nucleoplasm upon proteasome inhibition rather than in the ER or cytosol. LBR 1600* localizes to the nuclear rim under steady-state conditions, while LBR 1402T\u0394 is partitioned between ER and NE. Upon MG132 treatment, both mutants shift to nuclear accumulation with exclusion from nucleoli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C75 demonstrate unexpected nuclear accumulation through confocal microscopy with quantification (C74, Figure 8C). The localization data are supported by co-staining with nuclear markers (Lamin A/C) and show clear differences between untreated and MG132-treated conditions. The finding challenges expectations for ERAD substrates and is well-documented with imaging.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "d01e1563-35fd-41c0-9fe8-09426ed4b65a",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "LBR 1600* degradation requires p97 and occurs primarily at the INM via a pathway distinct from canonical ERAD. A dominant-negative p97 mutant (p97 QQ) blocks LBR 1600* turnover and causes accumulation at the nuclear rim even with MG132 treatment, while WT p97 has no effect. This indicates p97-dependent extraction from the INM followed by proteasomal degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C82 and C97-C104 establish a novel INM degradation pathway through pulse-chase experiments (C76-C77), localization studies (C78-C79), and epistasis analysis (C80). The p97 QQ dominant-negative approach provides strong evidence for p97 involvement in membrane extraction. The combination of rapid kinetics, nuclear localization, and p97-dependence distinguishes this from canonical ERAD.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "78445120-e10b-4cba-907d-c6fbf4c7858f",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The sterol reductase domain (SRD) of LBR is necessary and sufficient for cholesterol synthesis and cell survival under starvation conditions. Both the isolated SRD and a Sun2-LBR fusion protein rescue the LBR KO phenotype, while constructs lacking the SRD (LBR TM1) fail to rescue, demonstrating that the N-terminal Tudor domain is dispensable for this function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 and C92-C93 demonstrate domain sufficiency through rescue experiments with truncated constructs (Figure 5A-B). All rescuing constructs contain the SRD and are expressed at higher levels than WT, while non-rescuing constructs lack the SRD. This clearly delineates functional requirements and shows the Tudor domain is not required for cholesterol synthesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "fcaf5543-f364-40f8-b881-7888b662a833",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "LBR does not play a significant role in maintaining nuclear envelope integrity in cultured HeLa cells. LBR KO cells show normal cell morphology, growth, and localization of nuclear lamina proteins (Lamin B1, Lamin A/C, Emerin, Sun1, Sun2) under normal conditions, with regularly spaced nuclear membranes and normal nuclear pore morphology by electron microscopy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 and C84 demonstrate lack of structural defects through multiple imaging modalities: immunofluorescence for lamina proteins (C30-C31, Figure 2A) and electron microscopy for ultrastructure (C32, Figure 2B). The comprehensive analysis of multiple NE components and normal morphology under standard conditions supports the conclusion, though the authors appropriately note this may not apply to all cell types or conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "f1385729-5e98-48ac-9bae-3785e1c48fe4",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "TM7SF2 is upregulated under cholesterol starvation in an SREBP2-dependent manner, while LBR is constitutively expressed. HFF and HeLa cells show strong TM7SF2 upregulation at both transcript and protein levels, while HEK293T cells show less upregulation. The TM7SF2 cDNA from HeLa cells contains no mutations. LBR expression is unresponsive to cholesterol starvation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C47 characterize differential regulation through qPCR (C41-C43, C45) and immunoblotting (C44). SREBP2-dependence is demonstrated by siRNA knockdown (C46). Sequencing confirms TM7SF2 is not mutated in HeLa cells (C47). The data establish that despite TM7SF2 upregulation, it cannot compensate for LBR loss, supporting LBR's essential role.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "56ad1358-028c-42ee-bd18-5fd4ffa21c93",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "LBR knockout HeLa cells were successfully generated using CRISPR/Cas9, with complete ablation of LBR protein. Deep sequencing revealed three distinct mutant alleles (corresponding to three copies of chromosome 1 in HeLa cells), all containing frameshift mutations or premature stop codons producing no more than 12 amino acids of LBR sequence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 describe the generation and validation of the knockout cell line through CRISPR/Cas9 (C25), immunoblotting and PCR (C26), and deep sequencing (C28). The characterization is thorough, accounting for HeLa aneuploidy (C27) and confirming no hypomorphic alleles remain. This is essential methodology supporting all subsequent experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "4cbd0d04-0484-4562-858d-67990436835b",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Metabolically unstable LBR variants may serve as model substrates for investigating protein turnover mechanisms at the inner nuclear membrane. The combination of extremely short half-life, near-exclusive INM localization, and ability to arrest degradation at distinct stages makes LBR 1600* an ideal tool for future mechanistic studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C6, C108, and C109 are prospective statements about future utility rather than demonstrated results. While the properties described (short half-life, INM localization, arrestability) are supported by the data, the actual utility for mechanistic studies remains to be demonstrated. These are reasonable proposals but represent speculation about future work rather than current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "f1956259-8f8c-4595-a94d-0caa25cae4c8",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "A significant fraction of LBR 1600* escapes ERAD and localizes to the INM via its intact N-terminal domain before degradation. The rapid INM targeting (~20 min for nuclear accumulation) combined with the short half-life (~10-15 min) allows escape from ER quality control, leading to INM-localized degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C102 propose a kinetic model based on measured rates: nuclear accumulation time from prior work (C100) and half-life from this study (C101). The inference that rapid trafficking allows ERAD escape (C102) is logical given the kinetics and localization data (C71, C78-C79). While the model is inferential, it is well-supported by quantitative measurements and localization studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "3e0a549b-7862-423a-ac7a-e2a206348006",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "LBR is a multifunctional protein with an N-terminal Tudor domain in the nucleoplasm that associates with the nuclear lamina, and a C-terminal sterol reductase domain anchored in the inner nuclear membrane. Human cells also express TM7SF2, a second C14 sterol reductase localized to the ER with sterol-responsive transcriptional regulation, while LBR lacks an SRE and is constitutively expressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C18, C111-C112 provide background on LBR structure and function, supported by citations to prior literature and Figure 1. These establish the context for the study, describing known protein domains, subcellular localization, and the existence of TM7SF2 as a potentially redundant enzyme. The information is well-established and appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "5ef9e617-dccf-40be-a1b1-dc2b7fc90701",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Two congenital disorders are associated with LBR mutations: Pelger-Hu\u00ebt anomaly (autosomal dominant, single mutant allele, granulocyte nuclear abnormalities) and Greenberg skeletal dysplasia (autosomal recessive, two mutant alleles, perinatally lethal with skeletal abnormalities). Evidence suggests these represent different allelic states of the same genetic lesion, though the mechanism (structural vs. metabolic) was previously unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 summarize prior clinical and genetic knowledge about LBR-associated diseases, supported by multiple citations. The genetic relationship between the two disorders (C22-C23) is established in prior literature. The uncertainty about mechanism (C24) provides motivation for the current study. This background is appropriately cited and accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "a8419b3d-2e4c-42cb-a73c-5595fef9c0a2",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "LBR function shows evolutionary diversification. Previous mouse studies suggested LBR/TM7SF2 redundancy, and ic/ic mice (lacking functional LBR) are viable with phenotypic abnormalities. Human LBR rescues yeast sterol reductase deficiency while Drosophila LBR does not. Cholesterol synthesis pathways show tissue-specific variation, and TM7SF2 may have specialized roles such as wound healing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C91, C94-C95 discuss evolutionary and species-specific differences in LBR function, all supported by citations to prior work. These provide important context for interpreting the human cell culture results and explain apparent discrepancies with mouse studies. The discussion of evolutionary diversification (C88) is speculative but reasonable given the comparative data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    },
+    {
+      "id": "a9076ab7-1fca-43e5-bc7b-015974964d88",
+      "content_id": "ec56ce1f-e55b-4210-ae63-888bcf2e06f5",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The mechanisms of protein quality control at the nuclear envelope in mammalian cells are poorly understood compared to yeast systems, and the absence of suitable model substrates has been a major limitation for studying INM protein turnover in higher eukaryotes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C107 describe the state of the field regarding NE quality control, supported by citations (C106). These statements provide context for the significance of identifying LBR mutants as model substrates. The assessment of the field is accurate and appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:15:08.365863Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "88483ce4-92a1-4167-b609-b042b0886b09",
+      "result_id": "c6bc4523-132b-49fa-a4bd-f0e91b96e0ba"
+    },
+    {
+      "claim_id": "8d28334f-fd4d-46f0-813b-d00a853a3573",
+      "result_id": "c6bc4523-132b-49fa-a4bd-f0e91b96e0ba"
+    },
+    {
+      "claim_id": "d15c179f-8beb-42b2-8ea3-5c80d4841bb3",
+      "result_id": "c6bc4523-132b-49fa-a4bd-f0e91b96e0ba"
+    },
+    {
+      "claim_id": "a87042f5-f3c8-47cf-a807-01c56f296342",
+      "result_id": "c6bc4523-132b-49fa-a4bd-f0e91b96e0ba"
+    },
+    {
+      "claim_id": "bc7e42ed-caaf-440d-93bc-2d56c8600e86",
+      "result_id": "c6bc4523-132b-49fa-a4bd-f0e91b96e0ba"
+    },
+    {
+      "claim_id": "7c0e5268-8b88-47da-b986-5d61d8545632",
+      "result_id": "c6bc4523-132b-49fa-a4bd-f0e91b96e0ba"
+    },
+    {
+      "claim_id": "32280e98-ed0a-47c6-b599-684dc19abb91",
+      "result_id": "c6bc4523-132b-49fa-a4bd-f0e91b96e0ba"
+    },
+    {
+      "claim_id": "eab3c2ad-567c-4c9f-98da-16d6c27f3e1f",
+      "result_id": "c6bc4523-132b-49fa-a4bd-f0e91b96e0ba"
+    },
+    {
+      "claim_id": "95502d2e-ca90-42a6-80e1-f0961bf940ca",
+      "result_id": "c6bc4523-132b-49fa-a4bd-f0e91b96e0ba"
+    },
+    {
+      "claim_id": "64a219a5-7c3b-40c9-8ff1-738bfc0da8f7",
+      "result_id": "b99cc471-471e-4cc8-94e2-9e932dcad91d"
+    },
+    {
+      "claim_id": "4e14699c-ef16-4eb5-978b-f11bcb3a7ed3",
+      "result_id": "b99cc471-471e-4cc8-94e2-9e932dcad91d"
+    },
+    {
+      "claim_id": "52e9e90a-a50c-41c2-8225-43b40acb89b9",
+      "result_id": "b99cc471-471e-4cc8-94e2-9e932dcad91d"
+    },
+    {
+      "claim_id": "c13eb8a1-3739-487a-8a26-7637611256e5",
+      "result_id": "b99cc471-471e-4cc8-94e2-9e932dcad91d"
+    },
+    {
+      "claim_id": "4a61f5ed-5616-4562-a654-2a1bef8c3aea",
+      "result_id": "b99cc471-471e-4cc8-94e2-9e932dcad91d"
+    },
+    {
+      "claim_id": "7d6ad69f-1e6b-43ca-b5e4-b878a94119bb",
+      "result_id": "b99cc471-471e-4cc8-94e2-9e932dcad91d"
+    },
+    {
+      "claim_id": "e386abd3-f869-44b9-851f-fc40328b7bf7",
+      "result_id": "b99cc471-471e-4cc8-94e2-9e932dcad91d"
+    },
+    {
+      "claim_id": "c60e1803-8588-458f-bb3a-3cd0d5bb2d59",
+      "result_id": "a1268e4c-52a7-41d1-a230-bf3b6d75458a"
+    },
+    {
+      "claim_id": "1352de04-60fa-49dc-bd94-f20820dc515e",
+      "result_id": "a1268e4c-52a7-41d1-a230-bf3b6d75458a"
+    },
+    {
+      "claim_id": "3b3dd43c-5975-49b7-9aca-a5162e494ed1",
+      "result_id": "a1268e4c-52a7-41d1-a230-bf3b6d75458a"
+    },
+    {
+      "claim_id": "08fa81e1-63da-49ef-a98d-89c01d317eef",
+      "result_id": "a1268e4c-52a7-41d1-a230-bf3b6d75458a"
+    },
+    {
+      "claim_id": "87b213cb-72c6-4408-8350-aa4e6228762b",
+      "result_id": "a1268e4c-52a7-41d1-a230-bf3b6d75458a"
+    },
+    {
+      "claim_id": "b9a1a9d2-3726-4ec8-baa3-16f57143b21e",
+      "result_id": "a1268e4c-52a7-41d1-a230-bf3b6d75458a"
+    },
+    {
+      "claim_id": "b24591dd-2291-456f-b2b9-ca0ee72ef3d3",
+      "result_id": "740c42be-e534-4e3d-9c65-a4e630e5c0e6"
+    },
+    {
+      "claim_id": "6fe58483-fe7b-4ea8-827c-c688d8274150",
+      "result_id": "740c42be-e534-4e3d-9c65-a4e630e5c0e6"
+    },
+    {
+      "claim_id": "f3ae873e-ec03-42eb-82fb-090d1f42bb39",
+      "result_id": "740c42be-e534-4e3d-9c65-a4e630e5c0e6"
+    },
+    {
+      "claim_id": "235fb94f-8f3c-4b6d-8fa7-24fbc6eacd2c",
+      "result_id": "740c42be-e534-4e3d-9c65-a4e630e5c0e6"
+    },
+    {
+      "claim_id": "603f4452-4555-4c48-a738-4ce76fef0332",
+      "result_id": "740c42be-e534-4e3d-9c65-a4e630e5c0e6"
+    },
+    {
+      "claim_id": "55585c83-7a15-4061-ac82-57cdb64c4173",
+      "result_id": "740c42be-e534-4e3d-9c65-a4e630e5c0e6"
+    },
+    {
+      "claim_id": "472ae746-19fd-403e-8ecc-e4d6e7006e39",
+      "result_id": "740c42be-e534-4e3d-9c65-a4e630e5c0e6"
+    },
+    {
+      "claim_id": "b461e3c2-386c-43c7-aa50-04bc33ab62b7",
+      "result_id": "740c42be-e534-4e3d-9c65-a4e630e5c0e6"
+    },
+    {
+      "claim_id": "d9b934ba-77b6-4b75-abee-e8ea13ad6e46",
+      "result_id": "740c42be-e534-4e3d-9c65-a4e630e5c0e6"
+    },
+    {
+      "claim_id": "5e06a8c9-b42e-43ac-914c-fb17ba5806fc",
+      "result_id": "84753439-29ad-4bc8-b742-b6ba93ed10a4"
+    },
+    {
+      "claim_id": "3c934065-052d-477b-b263-a132686894bd",
+      "result_id": "84753439-29ad-4bc8-b742-b6ba93ed10a4"
+    },
+    {
+      "claim_id": "001552d0-f696-41ab-b579-67fadea05bbd",
+      "result_id": "542ab003-4f4a-43e7-adaf-a98a1ced0a48"
+    },
+    {
+      "claim_id": "be63fbbc-a972-4d39-824a-05ed88c09695",
+      "result_id": "542ab003-4f4a-43e7-adaf-a98a1ced0a48"
+    },
+    {
+      "claim_id": "f065299a-1c8c-4dce-a0d7-b427291d238c",
+      "result_id": "542ab003-4f4a-43e7-adaf-a98a1ced0a48"
+    },
+    {
+      "claim_id": "3074fc96-79a4-4e1d-9732-a08c938d3e30",
+      "result_id": "542ab003-4f4a-43e7-adaf-a98a1ced0a48"
+    },
+    {
+      "claim_id": "896d31e6-057a-4e36-bf6b-297080bf615f",
+      "result_id": "542ab003-4f4a-43e7-adaf-a98a1ced0a48"
+    },
+    {
+      "claim_id": "bfc1c201-c05e-4080-b5e7-c48a28992726",
+      "result_id": "542ab003-4f4a-43e7-adaf-a98a1ced0a48"
+    },
+    {
+      "claim_id": "ea2cb8ba-bb02-4e3a-b7c0-876aaae26f4f",
+      "result_id": "d01e1563-35fd-41c0-9fe8-09426ed4b65a"
+    },
+    {
+      "claim_id": "76f43f89-9941-48b5-b8f9-8f980b8566bd",
+      "result_id": "d01e1563-35fd-41c0-9fe8-09426ed4b65a"
+    },
+    {
+      "claim_id": "c187ca35-a432-4bbe-82ab-663d6c2e54fa",
+      "result_id": "d01e1563-35fd-41c0-9fe8-09426ed4b65a"
+    },
+    {
+      "claim_id": "3e8eb445-cf25-42e6-b6b6-2bbc16ce01fb",
+      "result_id": "d01e1563-35fd-41c0-9fe8-09426ed4b65a"
+    },
+    {
+      "claim_id": "2d8ed73d-43a7-4eef-baf2-8252533a145c",
+      "result_id": "d01e1563-35fd-41c0-9fe8-09426ed4b65a"
+    },
+    {
+      "claim_id": "02c43acb-5162-4a3e-bc11-e36674a19452",
+      "result_id": "d01e1563-35fd-41c0-9fe8-09426ed4b65a"
+    },
+    {
+      "claim_id": "0e5f31a4-e370-4cb1-9867-e6568dd07618",
+      "result_id": "d01e1563-35fd-41c0-9fe8-09426ed4b65a"
+    },
+    {
+      "claim_id": "1c30a0a5-7d5c-44c1-9b3e-00d33293c2aa",
+      "result_id": "d01e1563-35fd-41c0-9fe8-09426ed4b65a"
+    },
+    {
+      "claim_id": "88a33687-5f18-4d06-9e17-c97f4676e25d",
+      "result_id": "d01e1563-35fd-41c0-9fe8-09426ed4b65a"
+    },
+    {
+      "claim_id": "0c87b4c5-b439-44e4-a073-9366f904f0a9",
+      "result_id": "d01e1563-35fd-41c0-9fe8-09426ed4b65a"
+    },
+    {
+      "claim_id": "4da505a3-16c9-4783-9926-05ccff9a3aac",
+      "result_id": "78445120-e10b-4cba-907d-c6fbf4c7858f"
+    },
+    {
+      "claim_id": "e3f50aca-d7da-4cc8-9bcf-1fdac6efb20f",
+      "result_id": "78445120-e10b-4cba-907d-c6fbf4c7858f"
+    },
+    {
+      "claim_id": "d32ccf67-9064-4087-9205-0221d21b40f4",
+      "result_id": "78445120-e10b-4cba-907d-c6fbf4c7858f"
+    },
+    {
+      "claim_id": "7e5296d0-2f6a-4cd6-98d9-d9f379a22b86",
+      "result_id": "78445120-e10b-4cba-907d-c6fbf4c7858f"
+    },
+    {
+      "claim_id": "ed70a9d6-df6f-46f8-897c-066c47149929",
+      "result_id": "fcaf5543-f364-40f8-b881-7888b662a833"
+    },
+    {
+      "claim_id": "590ef034-daba-441b-8963-ae278c1871b1",
+      "result_id": "fcaf5543-f364-40f8-b881-7888b662a833"
+    },
+    {
+      "claim_id": "096d17c9-498b-4b87-a9b5-e3261d9d2c36",
+      "result_id": "fcaf5543-f364-40f8-b881-7888b662a833"
+    },
+    {
+      "claim_id": "69910c40-0b80-44fd-93dc-8dfea4c7be8e",
+      "result_id": "fcaf5543-f364-40f8-b881-7888b662a833"
+    },
+    {
+      "claim_id": "edc385e9-9e9b-4682-bc8d-4521b88de98a",
+      "result_id": "fcaf5543-f364-40f8-b881-7888b662a833"
+    },
+    {
+      "claim_id": "68dd961a-2a02-474c-b40c-12abd8a909c7",
+      "result_id": "fcaf5543-f364-40f8-b881-7888b662a833"
+    },
+    {
+      "claim_id": "63ef838d-8313-42f0-a191-38cc653b5d62",
+      "result_id": "f1385729-5e98-48ac-9bae-3785e1c48fe4"
+    },
+    {
+      "claim_id": "e34286bd-1e76-4e4f-a582-988400826440",
+      "result_id": "f1385729-5e98-48ac-9bae-3785e1c48fe4"
+    },
+    {
+      "claim_id": "dbb8b2bb-0c95-4afc-affa-3463169e2c71",
+      "result_id": "f1385729-5e98-48ac-9bae-3785e1c48fe4"
+    },
+    {
+      "claim_id": "83f995df-fe62-456f-a284-d2ab2eaa257e",
+      "result_id": "f1385729-5e98-48ac-9bae-3785e1c48fe4"
+    },
+    {
+      "claim_id": "ff090f24-1642-4b0f-b738-7e034c8654e9",
+      "result_id": "f1385729-5e98-48ac-9bae-3785e1c48fe4"
+    },
+    {
+      "claim_id": "3ff2c65a-8f74-4639-8957-85334be6cec7",
+      "result_id": "f1385729-5e98-48ac-9bae-3785e1c48fe4"
+    },
+    {
+      "claim_id": "dafd3394-028e-4f93-abb7-7fa40dde58b9",
+      "result_id": "f1385729-5e98-48ac-9bae-3785e1c48fe4"
+    },
+    {
+      "claim_id": "9840c5a5-dc9b-4151-8cd7-48b31f63b31e",
+      "result_id": "56ad1358-028c-42ee-bd18-5fd4ffa21c93"
+    },
+    {
+      "claim_id": "5cc2caa1-986d-4fbc-a83b-3f130747462a",
+      "result_id": "56ad1358-028c-42ee-bd18-5fd4ffa21c93"
+    },
+    {
+      "claim_id": "0131889d-fafc-4ddc-b780-ede5a9fafaf5",
+      "result_id": "56ad1358-028c-42ee-bd18-5fd4ffa21c93"
+    },
+    {
+      "claim_id": "4b1fa75d-eac9-4895-9b1d-7e499668bad0",
+      "result_id": "56ad1358-028c-42ee-bd18-5fd4ffa21c93"
+    },
+    {
+      "claim_id": "dbccb298-be9a-4de7-a3c4-8ae314da0320",
+      "result_id": "4cbd0d04-0484-4562-858d-67990436835b"
+    },
+    {
+      "claim_id": "a4009898-7e38-4b66-a5b4-ab0be2885baf",
+      "result_id": "4cbd0d04-0484-4562-858d-67990436835b"
+    },
+    {
+      "claim_id": "4f923ebc-d1c8-48d2-b958-d17c9c7ac055",
+      "result_id": "4cbd0d04-0484-4562-858d-67990436835b"
+    },
+    {
+      "claim_id": "cb4602c4-f297-419c-ac06-929c4c4ceac6",
+      "result_id": "f1956259-8f8c-4595-a94d-0caa25cae4c8"
+    },
+    {
+      "claim_id": "6553cc5d-9644-4d10-8aee-cc095bc67b40",
+      "result_id": "f1956259-8f8c-4595-a94d-0caa25cae4c8"
+    },
+    {
+      "claim_id": "57c8245a-ca75-42a5-bf20-dc3bcf740d61",
+      "result_id": "f1956259-8f8c-4595-a94d-0caa25cae4c8"
+    },
+    {
+      "claim_id": "35e5930c-b6df-46eb-b3e6-9f3c7fd791e1",
+      "result_id": "f1956259-8f8c-4595-a94d-0caa25cae4c8"
+    },
+    {
+      "claim_id": "32143075-0193-490a-89cd-b75b7488a3ed",
+      "result_id": "3e0a549b-7862-423a-ac7a-e2a206348006"
+    },
+    {
+      "claim_id": "1feb6062-2ba5-4b24-9ba1-b860a1d7828d",
+      "result_id": "3e0a549b-7862-423a-ac7a-e2a206348006"
+    },
+    {
+      "claim_id": "70e1bd02-baae-45d6-bde6-56d5309be5d7",
+      "result_id": "3e0a549b-7862-423a-ac7a-e2a206348006"
+    },
+    {
+      "claim_id": "537ff498-e1cd-49b4-8193-68d2d31a66f8",
+      "result_id": "3e0a549b-7862-423a-ac7a-e2a206348006"
+    },
+    {
+      "claim_id": "ae970cef-35df-40a4-bec0-aac3be3b3d67",
+      "result_id": "3e0a549b-7862-423a-ac7a-e2a206348006"
+    },
+    {
+      "claim_id": "23ea8f5d-3834-40f9-81d6-b6ef1c41c82c",
+      "result_id": "3e0a549b-7862-423a-ac7a-e2a206348006"
+    },
+    {
+      "claim_id": "45882674-e190-4c7a-a0ec-3eb6e645d516",
+      "result_id": "3e0a549b-7862-423a-ac7a-e2a206348006"
+    },
+    {
+      "claim_id": "9a23b8c0-97ed-4767-a3e0-142a1001908f",
+      "result_id": "3e0a549b-7862-423a-ac7a-e2a206348006"
+    },
+    {
+      "claim_id": "51436d41-12c2-4161-8688-349454467b4d",
+      "result_id": "3e0a549b-7862-423a-ac7a-e2a206348006"
+    },
+    {
+      "claim_id": "4f123bd6-8b1e-41ea-9269-2320f5ffe2d7",
+      "result_id": "3e0a549b-7862-423a-ac7a-e2a206348006"
+    },
+    {
+      "claim_id": "449bb76f-75a0-4782-b360-2a560ae2a146",
+      "result_id": "3e0a549b-7862-423a-ac7a-e2a206348006"
+    },
+    {
+      "claim_id": "643e5fe8-6956-4cf4-9136-409d8a57bcea",
+      "result_id": "3e0a549b-7862-423a-ac7a-e2a206348006"
+    },
+    {
+      "claim_id": "82e89e36-4db9-4dcb-966f-99a69246ed8d",
+      "result_id": "3e0a549b-7862-423a-ac7a-e2a206348006"
+    },
+    {
+      "claim_id": "db5fa423-c9b2-405e-9beb-409eb917974d",
+      "result_id": "3e0a549b-7862-423a-ac7a-e2a206348006"
+    },
+    {
+      "claim_id": "1407dfd9-ff36-40bf-991f-86b18eb2c59a",
+      "result_id": "5ef9e617-dccf-40be-a1b1-dc2b7fc90701"
+    },
+    {
+      "claim_id": "53695d5c-40a6-4bf3-872d-67f559a275c5",
+      "result_id": "5ef9e617-dccf-40be-a1b1-dc2b7fc90701"
+    },
+    {
+      "claim_id": "82908b63-1faa-42e3-8952-12a0ac32a546",
+      "result_id": "5ef9e617-dccf-40be-a1b1-dc2b7fc90701"
+    },
+    {
+      "claim_id": "acefa58d-9a26-484c-9729-15fc7c223662",
+      "result_id": "5ef9e617-dccf-40be-a1b1-dc2b7fc90701"
+    },
+    {
+      "claim_id": "77c9c2c5-0ed9-49bf-a43b-5f8f514db511",
+      "result_id": "5ef9e617-dccf-40be-a1b1-dc2b7fc90701"
+    },
+    {
+      "claim_id": "2391a856-2082-4bc9-8658-516745bc603b",
+      "result_id": "5ef9e617-dccf-40be-a1b1-dc2b7fc90701"
+    },
+    {
+      "claim_id": "efac775d-a0a2-4276-b9e6-4da162159790",
+      "result_id": "a8419b3d-2e4c-42cb-a73c-5595fef9c0a2"
+    },
+    {
+      "claim_id": "646dd574-ade3-442a-80ad-25f8a0f7c908",
+      "result_id": "a8419b3d-2e4c-42cb-a73c-5595fef9c0a2"
+    },
+    {
+      "claim_id": "c3fe2847-5826-4b0c-91b4-d2dfc846cb58",
+      "result_id": "a8419b3d-2e4c-42cb-a73c-5595fef9c0a2"
+    },
+    {
+      "claim_id": "2dec4f0d-081d-46ac-8994-ae9dc449ddcf",
+      "result_id": "a8419b3d-2e4c-42cb-a73c-5595fef9c0a2"
+    },
+    {
+      "claim_id": "f52a3c71-9ec5-45f2-942a-729fd604a11f",
+      "result_id": "a8419b3d-2e4c-42cb-a73c-5595fef9c0a2"
+    },
+    {
+      "claim_id": "fa2c7a28-7bd1-4bd9-906c-fc1c50a7635d",
+      "result_id": "a8419b3d-2e4c-42cb-a73c-5595fef9c0a2"
+    },
+    {
+      "claim_id": "a9774c63-a79b-4882-8250-60db7ffa8877",
+      "result_id": "a8419b3d-2e4c-42cb-a73c-5595fef9c0a2"
+    },
+    {
+      "claim_id": "6a5cba4c-3df4-49bb-85af-d3eda5a29f9c",
+      "result_id": "a8419b3d-2e4c-42cb-a73c-5595fef9c0a2"
+    },
+    {
+      "claim_id": "3ae2845a-b544-4915-b6b1-16c3bdf0f2e4",
+      "result_id": "a8419b3d-2e4c-42cb-a73c-5595fef9c0a2"
+    },
+    {
+      "claim_id": "69565bf7-c9b0-41c2-bf84-d48c53c254a3",
+      "result_id": "a8419b3d-2e4c-42cb-a73c-5595fef9c0a2"
+    },
+    {
+      "claim_id": "29c99095-9737-445a-b86e-971a840b7a7a",
+      "result_id": "a9076ab7-1fca-43e5-bc7b-015974964d88"
+    },
+    {
+      "claim_id": "95257b4e-ea70-4d60-bd44-d205899feff5",
+      "result_id": "a9076ab7-1fca-43e5-bc7b-015974964d88"
+    },
+    {
+      "claim_id": "955c27d6-2bb8-4e21-abe0-06d569776c67",
+      "result_id": "a9076ab7-1fca-43e5-bc7b-015974964d88"
+    }
+  ],
+  "comparisons": []
+}

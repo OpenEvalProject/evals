@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Combined force-FRET measurements reveal that the weakly bound TPP state (F\u2032\u2022TPP) exhibits intermediate FRET efficiency distinct from the strongly bound state (F\u2033\u2022TPP), indicating that the weaker binding state binds TPP but fails to form the tertiary P3-L5 docking interaction required for complete binding. This tertiary interaction stabilizes the riboswitch structure and confers ligand specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C5, and C17-C22 collectively demonstrate the main finding using concurrent force and FRET measurements. The data show distinct FRET signatures for three states (APO, WB, SB) that correlate with force-extension curves, directly revealing differences in helix-arm orientation. The experimental approach is sound, with appropriate controls and multiple lines of converging evidence supporting the interpretation that tertiary docking is incomplete in the weakly bound state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "k-means cluster analysis (k=3) of opening force versus opening FRET values established quantitative thresholds that distinguish three conformational states: APO (low FRET, <11.5 pN), weakly bound WB (intermediate FRET, 11.5-21.0 pN), and strongly bound SB (high FRET, >21.0 pN). These thresholds match previous force spectroscopy estimates and correspond to distinct P3-L5 arm configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C30 describe a systematic analytical approach validated by comparison to prior work (C27). The k-means clustering provides objective thresholds, and the correspondence between FRET efficiency and inter-dye distance is well-established. The validation against previous force spectroscopy results strengthens confidence in the assignments. However, the choice of k=3 could benefit from more rigorous statistical justification beyond visual inspection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Experiments with TPP analogs (TMP and T) lacking phosphate groups show that these analogs produce FECs similar to the weakly bound TPP state but exhibit significantly lower FRET efficiencies (0.64-0.69) compared to TPP-bound WB state (0.73), indicating that phosphate groups are required to bring helix arms into close proximity for proper docking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 provide strong evidence through systematic comparison of TPP with its analogs. The observation that FECs are similar (secondary structure) while FRET differs (tertiary structure) is internally consistent and supports the interpretation. The quantitative FRET differences are statistically significant and the conclusion that phosphates are required for proper arm positioning is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Hidden Markov modeling of FRET refolding trajectories at two TPP concentrations (5 \u00b5M and 50 \u00b5M) reveals that only the Apo\u2192WB transition is TPP-dependent, with transition rates faster than previously measured by force spectroscopy alone. At high TPP concentration, the APO state lifetime is vanishingly short, suggesting the A\u2192B transition rate exceeds detection capability (>20 s\u207b\u00b9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C45 describe HMM analysis that provides kinetic information complementary to the force-FRET measurements. The consistency between HMM-derived FRET values and k-means clustering (C38) validates both approaches. The identification of the TPP-dependent step (C39-C40) is logical and well-supported. The acknowledgment of temporal resolution limits (C45) is appropriate. However, the faster rates compared to previous work (C42) warrant discussion of potential methodological differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The eukaryotic TPP aptamer exhibits a stable, rigid helix-arm configuration in the unbound APO state, contrasting with the dynamic behavior of the bacterial aptamer. This difference may be attributable to the longer P3 stem extension present in the eukaryotic form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 compare eukaryotic and bacterial aptamers, drawing on both current data (C46) and prior literature (C47). The observation of stability in the eukaryotic form is well-supported by the low-variance FRET trajectories. The structural comparison (C49) is factual, but the mechanistic explanation (C50) is speculative. The conclusion is reasonable but would benefit from direct experimental testing of the P3 extension's role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Upon TPP binding, the aptamer transitions from APO to WB state with increased FRET and high variance, indicating mobile, partially docked helix arms. The WB state then transitions irreversibly to the SB state characterized by stable, high FRET and low variance, representing fully docked P3-L5 arms. The WB state exhibits conformational heterogeneity, either dynamic flexibility or rapid interconversion between states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 describe the binding pathway with strong support from FRET variance analysis. The high variance in WB (C52) versus low variance in SB (C53) provides quantitative evidence for different degrees of mobility. The interpretation of WB as partially docked (C55) is consistent with intermediate FRET. The alternative explanations for WB heterogeneity (C56-C57) appropriately acknowledge uncertainty, though distinguishing between them would require higher temporal resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The bipartite binding site coordinates both thiamine and phosphate moieties of TPP. Analogs lacking phosphates (TMP, T) produce stable, low-variance FRET trajectories with arms farther apart than in TPP-bound states, suggesting that phosphate groups draw arms together while maintaining flexibility essential for proper orientation and subsequent docking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C67 integrate structural knowledge with experimental observations to propose a mechanistic model. The comparison of FRET variance between analogs (low) and TPP-WB (high) is quantitatively supported (C64). The interpretation that flexibility is essential for docking (C67) is logical but somewhat speculative. The model is consistent with all data presented, though direct observation of arm orientation would strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The eukaryotic TPP riboswitch exhibits a ligand binding process distinct from the bacterial form, with rigid arms in the APO state and increased dynamics upon TPP binding (opposite to bacterial behavior). Both secondary and tertiary interactions are vital for tight TPP binding, with helix-arm fluctuations occurring faster than secondary structural changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 synthesize comparisons between eukaryotic and bacterial systems. The contrasts in arm dynamics (C69-C70) are well-documented through comparison with cited literature. The conclusion about the importance of both interaction types (C72) is supported by the combined force-FRET data. The inference about relative timescales (C71) is reasonable given the FRET observations, though direct kinetic measurements would be more definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "A speculative mechanistic model proposes that ligand binding anchors the lower helix arm regions, inducing strains that cause fluctuations in distal regions, thereby increasing P3-L5 contact frequency and docking probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C74 present a mechanistic hypothesis that is explicitly speculative. While consistent with the data showing increased dynamics upon binding, this model lacks direct experimental support. The proposal would require additional experiments, such as site-specific labeling at different positions along the arms or molecular dynamics simulations, to test the strain-induced fluctuation mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Despite sharing core structure and ligand, bacterial and eukaryotic TPP riboswitches exhibit distinct properties due to minor structural differences. The longer P3 stem in the eukaryotic form leads to slower arm dynamics with wide-ranging consequences. The combined force-FRET technique is anticipated to be valuable for studying riboswitches across kingdoms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 summarize comparative findings with appropriate support from the data. The connection between P3 stem length and dynamics (C77) is a reasonable inference from structural differences and observed behavior. Claim C78 is forward-looking and speculative about future applications, but the demonstrated utility in this study provides some support for this optimism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The experimental approach involved fluorescently labeling the L5 and P3 helix arms with ATTO550 and ATTO647N dyes, then subjecting aptamers to repeated unfolding/refolding cycles under controlled force while simultaneously measuring extension and FRET. FECs were categorized into three distinct forms corresponding to different conformational states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 describe the core experimental methodology. The approach is clearly documented with appropriate references to figures and prior work. The labeling strategy (C79) is well-designed to probe tertiary interactions. The cycling protocol (C80-C83) is standard for optical trapping experiments. The categorization of FECs (C84) is validated by comparison to previous work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Combined single-molecule fluorescence and optical trapping instruments represent a comparatively new development with significant technical challenges, but novel findings have recently begun to emerge from such approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 provide context about the methodology, supported by multiple citations. These are accurate statements about the state of the field and appropriately position the current work within the broader technical landscape.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Control experiments with DNA hairpins (SJ1 and SJ2) validated that base modifications and dye labeling have minimal effects on mechanical properties, though rapid force ramps may cause slight overstretching. FRET measurements were temporally coincident with hairpin rupture, and predicted FRET values matched experimental values for SJ2. Discrepancies for SJ1 were attributed to dye-nucleotide interactions, informing RNA construct design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C95 describe thorough control experiments that validate the experimental approach. The DNA hairpin controls are appropriate, and the identification of potential dye-quenching issues (C89, C94) demonstrates careful experimental design. The use of these findings to inform RNA construct design (C95) shows proper application of controls. Minor force differences (C88) are appropriately explained with citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Trolox-quinone (TQ) was used to reduce triplet-state quenching and blinking of fluorescent dyes, with DNA hairpins showing reduced blinking in the presence of TQ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 describe a standard approach to improve fluorescence imaging, supported by citations and experimental validation. This is a methodological detail that enhances data quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C58",
+      "C75"
+    ],
+    "result": "Background knowledge establishes that TPP riboswitches are cis-regulatory elements that modify gene expression through conformational changes in their aptamer domains. They are found across all kingdoms of life, share common binding conformations involving bipartite ligand binding sites, and previous force spectroscopy suggested a two-state binding model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16, C58, and C75 present established background knowledge appropriately supported by citations to prior literature. These claims provide necessary context for interpreting the current findings and are accurately represented.",
+    "result_type": "MINOR"
+  }
+]

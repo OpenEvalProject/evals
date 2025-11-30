@@ -1,0 +1,1779 @@
+{
+  "submission": {
+    "id": "8e2b356f-f23c-48b2-948c-d63bd98b93a8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:02:17.836544Z",
+    "updated_at": "2025-11-29T23:02:17.836544Z"
+  },
+  "content": [
+    {
+      "id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "submission_id": "8e2b356f-f23c-48b2-948c-d63bd98b93a8",
+      "content_type": "manuscript",
+      "content_text": "# Intraneural stimulation elicits discrimination of textural features by artificial fingertip in intact and amputee humans\n\n## Authors\n\n- Calogero Maria Oddo<sup>1</sup> ([ORCID: 0000-0002-1489-5701](https://orcid.org/0000-0002-1489-5701)) \u2020\n- Stanisa Raspopovic<sup>1</sup>\n- Fiorenzo Artoni<sup>1</sup>\n- Alberto Mazzoni<sup>1</sup>\n- Giacomo Spigler<sup>1</sup>\n- Francesco Petrini<sup>2</sup>\n- Federica Giambattistelli<sup>6</sup>\n- Fabrizio Vecchio<sup>5</sup>\n- Francesca Miraglia<sup>5</sup>\n- Loredana Zollo<sup>4</sup>\n- Giovanni Di Pino<sup>4</sup>\n- Domenico Camboni<sup>1</sup>\n- Maria Chiara Carrozza<sup>1</sup>\n- Eugenio Guglielmelli<sup>4</sup>\n- Paolo Maria Rossini<sup>5</sup>\n- Ugo Faraguna<sup>8</sup>\n- Silvestro Micera<sup>1</sup> ([ORCID: 0000-0003-4396-8217](https://orcid.org/0000-0003-4396-8217)) \u2020\n\n### Affiliations\n\n1. The BioRobotics Institute Scuola Superiore Sant'Anna Pisa Italy\n2. Bertarelli Foundation Chair in Translational NeuroEngineering, Institute of Bioengineering, School of Engineering \u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne Lausanne Switzerland\n3. Center for Neuroprosthetics \u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne Lausanne Switzerland\n4. Laboratory of Biomedical Robotics & Biomicrosystems Universit\u00e0 Campus Bio-Medico di Roma Roma Italy\n5. Brain Connectivity Laboratory IRCCS San Raffaele Pisana Roma Italy\n6. Institute of Neurology Universit\u00e0 Campus Bio-Medico di Roma Roma Italy\n7. Institute of Neurology Catholic University of The Sacred Heart Roma Italy\n8. Azienda Ospedaliero-Universitaria Pisana Pisa Italy\n9. IRCCS Stella Maris Foundation Pisa Italy\n10. Dipartimento di Ricerca Traslazionale e delle Nuove Tecnologie in Medicina e Chirurgia Universit\u00e0 di Pisa Pisa Italy\n\n\u2020 Corresponding author\n\n## Abstract\n\nRestoration of touch after hand amputation is a desirable feature of ideal prostheses. Here, we show that texture discrimination can be artificially provided in human subjects by implementing a neuromorphic real-time mechano-neuro-transduction (MNT), which emulates to some extent the firing dynamics of SA1 cutaneous afferents. The MNT process was used to modulate the temporal pattern of electrical spikes delivered to the human median nerve via percutaneous microstimulation in four intact subjects and via implanted intrafascicular stimulation in one transradial amputee. Both approaches allowed the subjects to reliably discriminate spatial coarseness of surfaces as confirmed also by a hybrid neural model of the median nerve. Moreover, MNT-evoked EEG activity showed physiologically plausible responses that were superimposable in time and topography to the ones elicited by a natural mechanical tactile stimulation. These findings can open up novel opportunities for sensory restoration in the next generation of neuro-prosthetic hands.\n\n## Introduction\n\nOne of the most remarkable characteristics of a human hand is its ability to gather a rich variety of sensory information about the external world. In particular, tactile information conveyed by the four classes of low-threshold mechanoreceptor afferent units in the fingertips (Johnson et al., 2000; Johnson, 2001; Vallbo and Johansson, 1984a; Abraira and Ginty, 2013) is fundamental for manipulation activities (Edin et al., 1992; Edin and Johansson, 1995). In addition, the biological sensors innervating the glabrous skin can provide complex types of information such as the onset of the contact with an object, the level of performed grasping force, and discrimination of textural features (Weber et al., 2013; Darian-Smith et al., 1980a).\n\nThe possibility of providing natural and rich sensory information to hand prosthesis users represents a major achievement. In fact, even though a significant research in biology, medicine and engineering has produced artificial hands that progressively approached the performance of a \u201cnatural hand\u201d, it is a shared belief that providing a sense of touch is still the missing milestone (Kwok, 2013). This achievement will allow the \u201csymbiosis\u201d between the user and interface to become more adaptive (to changing tasks and situations), more robust (beyond interfering stimuli), more effective (learn from the past to anticipate or predict the future), and more natural (rapidly becoming part of the body scheme). Therefore, the restoration of sensory perception is the crucial step to achieve in the development of next generation of artificial limbs and hand prostheses, in particular.\n\nThus far, promising results have been recently achieved to restore information about the touch of objects (Tan et al., 2014) and also the level of produced grasping force (Raspopovic, 2014). The restoration of ability to judge textural features represents the next significant step towards the re-establishment of close-to-natural sensory skills of a natural hand.\n\nHere, we sought to achieve this goal via an integrated approach to mimic natural coding using a neuromorphic, real-time, mechano-neuro-transduction (Spigler et al., 2012) (MNT) process through a sensorized artificial finger (Oddo et al., 2011a) that integrates a Micro Electro-Mechanical System (MEMS) tactile sensor (Beccai et al., 2005). In this framework, the temporal coding of tactile information was based on the use of a biologically plausible neural model (Izhikevich, 2003) , which has shown promise as a versatile and computationally efficient framework for reproducing a wide range of phenomenological neural responses to stimuli.\n\nIn this study, the MNT process was first tested in intact subjects by delivering electrical stimulation to their sensory peripheral nerve fibers during microstimulation via tungsten needle microelectrodes (Vallbo et al., 1984b; Torebj\u00f6rk et al., 1987). Furthermore, the effects of natural mechanical stimulation at the fingertip and of the MNT-based electrical stimulation were qualitatively compared in terms of electrophysiological signals elicited in the contralateral sensory cortex of the subjects.\n\nMoreover, we wanted to evaluate whether the results achieved during needle microstimulation could be translated into experiments, which would be related to the real-time and longer-term use of hand prostheses. In fact, percutaneous needle microstimulation of peripheral nerves cannot be used in amputees as part of an effective long-term assistive device because a stable needle-to-fibers spatial relationship cannot be maintained in a moving limb. Therefore, its use can only be limited to a single experimental session lasting a few hours at most (Vallbo et al., 2004). Instead, implantable neural interfaces, such as Transverse Intrafascicular Multichannel Electrodes (TIMEs) (Boretius et al., 2010) , are surgically positioned and firmly stabilized to adhere to nerve fascicles and do not require an arm rest compared with needle interfaces. Therefore, implantable neural interfaces are suitable for long-term implants. In this study, we developed a novel computational model to investigate the similarities between neural effects, such as in afferent nerve recruitment curves, achieved using microstimulation with percutaneous needles and with TIME neural interfaces. This comparison allowed verification of the possibility of extending the results achieved using percutaneous needle stimulation to TIMEs.\n\nThe MNT process was tested in acute conditions in four intact subjects and was validated in a TIMEs implanted subject with a transradial amputation. For the first time in human hand neuroprosthetics, these integrated approaches allowed to show that discrimination of textural features can be reliably provided to users in different experimental conditions using peripheral intraneural electrical stimulation. The range of tested tactile stimuli in the current work is on the order of millimeters (0.5\u20133.0 mm). Thus, these stimuli pertain to the lower boundary (towards the fine region) of stimuli that are typically classified as coarse (Weber et al., 2013).\n\n## Results\n\n### Experiments with intact subjects using needle microstimulation of the median nerve\n\nThe MNT process translates surface coarseness into the injection of current pulses into the nerve. It qualitatively mimics the neuronal activity recorded during human microneurographic experiments (Oddo et al., 2011b). The MNT approach was initially tested in four intact volunteers using percutaneous electrical microstimulation of the median nerve (Vallbo et al., 1984b; Torebj\u00f6rk and Ochoa, 1980) (Figure 1a, Figure 2). The participants - without visual or acoustic cues about the stimuli - were asked to discriminate surface pairs (Figure 1b) that differed in the Spatial Period (SP) of alternating ridges and grooves (gratings), i.e., in the distance between consecutive ridges separated by grooves (defined in Figure 2a), which was a constant quantity in each half grating (as shown in Figure 1b).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/09148/elife-09148-fig1-v2.jpg)\n\n**Figure 1.:** (a) Sensorized artificial finger and tactile stimulation platform. (b) Tactile stimuli that were used in the\u00a0three-alternative forced-choice (3AFC) psychophysical protocol and the raster plot of spike trains that were generated in all sessions with one subject by the artificial finger while the gratings were slid. (c) Setup of percutaneous electrical microstimulation (left) and implanted intrafascicular stimulation (right) of the median nerve, and discrimination performance during all experimental sessions involving four intact subjects and one transradial upper limb amputee.Source data of the spike trains that were transduced by the artificial finger while the gratings were indented and slid over have been deposited in Dryad (Oddo et al., 2016). Such spikes were used to trigger the neural stimulator in all the experimental sessions with DAS amputee (raster plot depicted in Figure 1b).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/09148/elife-09148-fig2-v2.jpg)\n\n**Figure 2.:** (a) MEMS sensor with 4 transducing piezoresistors implanted at the base of a cross-shaped structure (sensor piezoresistive outputs Sx+ and Sx- are represented in blue and in green, respectively), grating with ridges and grooves that alternate with spatial period SP, and sensorized fingertip, which is in contact with tactile stimulus. (b) The sequence of presentation of surface pair to the artificial finger. (c) Example of implementation of the Izhikevich model for real-time conversion of MEMS sensor data into a sequence of artificial neural spikes. The blue and green traces show raw sensor outputs from the pair of opposing channels depicted in panel a. The red trace shows the input to the Izhikevich artificial neuron, which results from the application of Equation 1 and 2 (described in the Materials and methods section). The black lines depict the spikes that are generated when the membrane potential of the Izhikevich artificial neuron reaches the threshold (Equation 5 in the Materials and methods section) and, thus, the neural stimulator is triggered. (d\u2013e) Implementation of the Izhikevich model with a close-up view during the sliding motion over the first and second halves of the grating. The traces and color-coding are shown in panel c.\n\nVia percutaneous electrical neural microstimulation, they reported mechanical sensation pertaining to the palmar side of the first four fingers of the hand. Microstimulation allowed users to reach discrimination ability above 77% (107/138, Figure 1c, Figure 3a) during a three-alternative forced-choice (3AFC) psychophysical procedure (Perez et al., 2010; Gibson and Craig, 2005) mediated by the artificial touch system, which is based on the use of a MEMS sensor embedded into a human-sized robotic fingertip (Video 1). Confidence analyses indicated that percutaneous electrical microstimulation successfully induced percepts that were used to assess the coarseness of textured surfaces (Figure 3b). The capability to discriminate between the two sides of the surface pairs was correlated with the difference between their spatial periods (Figure 3c).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/09148/elife-09148-fig3-v2.jpg)\n\n**Figure 3.:** Each column reports results of the analyses on individual subject basis. (a) Each panel displays the confusion matrix of behavioral responses relative to the four intact subjects with microstimulation. The titles indicate correct/total responses (percentage). (b) Vertical bars display correct responses that are associated with each stimulus. The vertical solid lines over each bar indicate the 95% confidence intervals (Clopper Pearson exact interval) per stimulus. The dashed horizontal line indicates chance level (1/3). (c) The fraction of trials a pair of stimuli is perceived as different as a function of difference in spatial period (\u0394SP) between the two stimulus halves, and logistic fit (dashed line). The title reports the R2 associated with the fit, i.e., the fraction of data variance explained by the logistic function, and the significance of the Pearson correlation between data points and the fit.\n\n![Video 1.](https://cdn.elifesciences.org/articles/09148/elife-09148-media1.mp4.jpg)\n\n**Video 1.:** The video includes an interview with DAS amputee subject reporting the percepts immediately after one experimental session.\n\nAs described hereafter, the comparison between the EEG activity that was evoked by the natural mechanical tactile stimulation of the real fingertip in the right hand and the one evoked by the substitutive electrical stimulation showed no significant differences in source topography, response timing, and clustering of cortical connections between the two stimulation modalities. Event-related potentials (Figure 4a) after substitutive electrical (n\u00a0=\u00a04, estimated power 0.75, Figure 4\u2014figure supplement 2) and natural mechanical stimulation (n\u00a0=\u00a04, estimated power 0.79, Figure 4\u2014figure supplement 3) conditions did not reveal any statistical difference (Montecarlo statistics with cluster correction for multiple comparisons). Furthermore, a network graph analysis approach (Vecchio et al., 2015a) revealed a lateralized EEG frequency modulation that was evoked both by electrical and mechanical stimuli (Figure 4b). Indeed, the primary sensorimotor areas in the hemisphere contralateral to the stimulus presented a significant reduction (3-way ANOVA followed by Duncan\u2019s multiple range test, F(1,6)\u00a0=\u00a06.48, p<0.05, comparison to the ipsilateral hemisphere) in the clustering coefficient following the incoming sensory stimulus, regardless of its tactile or substitutive nature (Figure 4c). Moreover, the generator sources of short-latency components of Somatosensory Evoked Potentials (SEPs) that were elicited by the substitutive electrical stimulation were localized at the Postcentral Gyrus (Brodmann Areas 2 and 3), which was consistent with a physiological tactile activation of the primary somatosensory cortex (Figure 5), as previously described using a hand area functional source separation method (Di Pino et al., 2012).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/09148/elife-09148-fig4-v2.jpg)\n\n**Figure 4.:** (a) Grand average event related potentials (ERPs) of all subjects (n\u00a0=\u00a04) for both substitutive neuromorphic electrical (red) and natural mechanical tactile (blue) stimulation, ranging from -1500 to 3000 ms with respect to the stimulus onset. Each channel was normalized for the standard deviation of the prestimulus. (b) eLORETA connectivity maps for delta, theta, alpha, low beta and high beta bands. Each tract (red for electrical and blue for mechanical stimulations) among the 7 sensorimotor regions of interest (Brodmann Areas BA 1\u20137) reports the connectivity value higher than the cut-off threshold (functional coupling >0.3). (c) Clustering modulation (percentage of variation during stimulation with respect to baseline) in the left and right hemispheres with electrical and mechanical stimulations. A significant reduction in clustering modulation across all frequencies occurred in the hemisphere contralateral to the stimulation (p<0.05, comparison to the right hemisphere, Duncan test after ANOVA).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09148/elife-09148-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The horizontal black bar indicates the time window (210\u2013240 ms) when the evoked potential reached significance compared with the prestimulus voltage (2 Standard Deviations from the mean prestimulus voltage), both after the electrical microstimulation and after the mechanical stimulation.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/09148/elife-09148-fig4-figsupp2-v2.jpg)\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/09148/elife-09148-fig4-figsupp3-v2.jpg)\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/09148/elife-09148-fig4-figsupp4-v2.jpg)\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/09148/elife-09148-fig4-figsupp5-v2.jpg)\n\n![Figure 5.](https://cdn.elifesciences.org/articles/09148/elife-09148-fig5-v2.jpg)\n\n**Figure 5.:** (a) Butterfly plot of SEPs for all 64 channels of one subject (M4). All traces are aligned to the electrical stimulus delivery. On top, the topographic representation of amplitude distribution at different time lags (ms). (b) Position of the associated equivalent dipole, which corresponds to P27 peak, superimposed on the individual horizontal, coronal and sagittal structural MRI planes of the subject.\n\n### Translatability from needle microstimulation to TIME-based stimulation\n\nThe possibility to translate results from needle microstimulation to TIMEs was investigated by developing a novel hybrid model (Raspopovic et al., 2011) of the median nerve (Figure 6) with both a microneedle and TIME interfaces inserted inside the nerve trunk (Figure 7, Figure 8). The model, which takes into account realistic anatomical (Jabaley et al., 1980) and neurophysiological (Vallbo et al., 1984) data, indicated that the stimulated portion of axonal population (Figure 7), and, therefore, the type of sensation, together with the stimulation threshold (statistically non-different: p>0.05, Kruskal-Wallis test) were similar for the two interfaces. The range of electric charge necessary for recruitment in both cases was comparable (Figure 7, Figure 8). These findings provided evidence that implanted intraneural electrodes could achieve results that were comparable to needle percutaneous microstimulation and justified the transition from the acute to implantable interface to pursue a long-term use.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/09148/elife-09148-fig6-v2.jpg)\n\n**Figure 6.:** (a) Implementation for the TIME electrode. (b) Implementation for the microneedle. (c) Different locations for stimulating active site and tip, that were used in the model to compare the TIME interface versus the microstimulation needle. Red dot represents the evaluated intrafascicular positioning of the TIME active site and the end of microstimulation needle tip. Yellow dot represents close-to-fascicle location, where the end of microstimulation needle tip and the active site of TIME interface were placed. Blue dot represents an example position with a shielding fascicle. The X marker represents the targeted fascicle, where the fiber activation was calculated for different locations of microneedle and TIME for 9 different populations that emulated biologically inherent uncertainty in the placement and extension of fibers innervating a specific hand district. This procedure was performed analogously for medium and small fascicles and confirmed the results.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09148/elife-09148-fig6-figsupp1-v2.jpg)\n\n![Figure 7.](https://cdn.elifesciences.org/articles/09148/elife-09148-fig7-v2.jpg)\n\n**Figure 7.:** (a,b), Recruitment curves of sensory axon populations resulting from different positions of the active sites for the needle microstimulation and TIME stimulation (mean +/- S.E.M. of percentage of recruited fibers). R4/L4 is the pair of active sites within the target fascicle; R5/L5 is close to it, and R6/L6 is shielded with respect to it. For each position of the stimulating tip/active site, nine different axonal populations were computed. The fiber was considered active when the spike travelled until the last node of Ranvier that was implemented. Figure insets represent voltage distributions for different positions of active sites, as calculated using the FEM solver. These results are representative for several electrode insertion configurations. The same computations were performed for medium and small fascicles and confirmed the results.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/09148/elife-09148-fig8-v2.jpg)\n\n**Figure 8.:** (a) Recruitment results obtained for placement of the microneedle tip (insulated and non-insulated tip) and the TIME active site (L4 and R4) within the fascicle of interest. The recruitment curves are the mean +/- S.E.M. for the 9 implemented populations in 4 different FEM configurations. The results for the microstimulation needle and TIME interface are similar, which supports the translation from percutaneous towards intraneural stimulation. The 2 cases of microneedle tip exposure yielded comparable outcomes. (b) Voltage distribution induced by the close active site and positioning of 9 different fiber populations that were implemented to emulate the inherent anatomical uncertainty of sensory axon locations (see Figure 8\u2014figure supplement 1 for the correspondence between each color of the fibers illustrated in the panel and the specific implemented population). (c) The colored dots indicate another randomized positioning of 9 different fiber populations implemented in the simulations of the hybrid electrical-biophysical model of the median nerve, with active site inside of fascicle.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09148/elife-09148-fig8-figsupp1-v2.jpg)\n\n### Experiments with a transradial amputee\n\nThe 3AFC psychophysical protocol used during microstimulation experiments was also evaluated during sessions with subject DAS, a transradial amputee that was implanted with TIMEs (Raspopovic, 2014). The sensations elicited by temporal modulation of spiking electrical stimulation of the median nerve through a single implanted electrode were reported by DAS as pertaining to the palmar side of the index finger of the missing hand and as providing a realistic representation of the mechanical alternation between ridges and gaps of the experimented gratings (Video 1). DAS showed to be able to comply with the entire 3AFC psychophysical protocol via neural stimulation, without any visual input or guidance by the experimenter, and without interruption in each session, and in 77/80 trials (Figure 1c, Figure 9a) of trials he was able to correctly identify whether the two sides of the surface had the same SP or which one had a larger SP (Figure 10). This performance was significant (p<0.05 confidence, Clopper Pearson exact interval) for each presented single surface (Figure 9b). These results indicate that the discrimination ability obtained using TIME stimulation was higher than the one with microstimulation (Figure 1c, Figure 3). This was attributed to the prolonged use/training of the implanted neural interface before the present study (Raspopovic, 2014).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/09148/elife-09148-fig9-v2.jpg)\n\n**Figure 9.:** (a) Confusion matrix of the responses given by DAS subject. (b) Vertical bars display the correct responses, which are associated with each stimulus. The vertical solid lines over each bar indicate the 95% confidence intervals (Clopper Pearson exact interval) per stimulus. The dashed horizontal line indicates chance level (1/3). (c) Fraction of trials for which a pair of stimuli is perceived as different as a function of the difference in spatial period (\u0394SP) between the two stimulus halves, and logistic fit (dashed line). The title reports the R2 associated with the fit, i.e., the fraction of data variance explained by the logistic function, and the significance of the Pearson correlation between data points and the fit. (d,e) Comparison between IBI-based and AFR-based discrimination. Difference between IBIs (\u0394IBI, panel d) and difference between AFRs (\u0394AFR, panel e) measured in the spike patterns elicited by the two sides of each stimulus and plotted as a function of the difference between grating SPs (\u0394SP). Error bars indicate the interquartile range. The title reports the fraction of explained variance.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/09148/elife-09148-fig10-v2.jpg)\n\n**Figure 10.:** In all panels the spatial structure (scale: 2 mm) of the grating is superimposed over a sample temporal pattern (scale: 200 ms) of the spike train that was obtained as a result of transduction with the artificial finger. The ratio between the spatial and temporal scales turns into the stimulus sliding velocity (10 mm/s). The instantaneous firing rate (scale: 50 spikes/s) is shown together with the average firing rate during the stimulus sliding motion. (a) (above) Stimulus \u22060.0+ is characterized by thw presentation of two half surfaces in the SP1 - SP2 order (first: 1.5 mm, second: 1.5 mm); (below) stimulus \u22060.0-, is characterized by the presentation of two half surfaces in the SP2 \u2013 SP1 order (first: 1.5 mm, second: 1.5 mm). For stimulus \u22060.0, the two half surfaces have the same coarseness. Therefore, \u22060.0+ and \u22060.0- result in spiking patterns with a common temporal structure. (b), (above) Stimulus \u22061.0+ is characterized by the presentation of two half surfaces in the SP1 - SP2 order (first: 2.0 mm, second: 1.0 mm); (below) stimulus \u22061.0- is characterized by the presentation of two half surfaces in the SP2 \u2013 SP1 order (first: 1.0 mm, second: 2.0 mm). (c) (above) Stimulus \u22062.0+ is characterized by the presentation of two half surfaces in the SP1 - SP2 order (first: 3.0 mm, second: 1.0 mm); (below) stimulus \u22062.0- is characterized by the presentation of two half surfaces in the SP2 \u2013 SP1 order (first: 1.0 mm, second: 3.0 mm). (d) (above) Stimulus \u22062.5+ is characterized by the presentation of two half surfaces in the SP1 - SP2 order (first: 3.0 mm, second: 0.5 mm); (below) stimulus \u22062.5- is characterized by the presentation of two half surfaces in the SP2 \u2013 SP1 order (first: 0.5 mm, second: 3.0 mm).\n\n![Figure 10\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09148/elife-09148-fig10-figsupp1-v2.jpg)\n\n**Figure 10\u2014figure supplement 1.:** The depicted spatial modulations have the same monotonic trend versus the period of grating. The spatial modulation of our spike trains is globally higher in comparison with the neurophysiological data that was previously shown (Phillips and Johnson, 1981) for surfaces with the same spatial period (highlighted by a red box in the figure). We hypothesize that this difference exists because our surfaces had a constant ridge width of 0.25 mm, whereas, the surfaces in the study performed by Phillips and Johnson were square-wave gratings (i.e., ridge width was equal to groove width and was equal to half the spatial period).\n\n### Analysis of neural coding strategies\n\nThe behavioral performance as a function of stimulus in subject DAS can be fit exactly (R\u00a0=\u00a01) using a logistic function of the difference of SPs between the two halves of each surface (Figure 9c). To understand how the very good surface discrimination, which was shown both by intact subjects with microstimulation and by DAS with the TIME implant, was achieved (Figure 1c), we tested which neural features correlated with the difference of SPs. During the conditions of constant sliding velocity (10 mm/s) and regulated load force (400 mN), the periodic contact between the sensor and the texture ridges generated regular patterns in the sensor output. The spiking response was given by a sequence of bursts of reliable duration, time-locked to the alternation of ridges and grooves during the sliding motion of gratings (Figure 10). This suggested that the Inter Burst Interval (IBI, illustrated in Figure 10a), given by the temporal distance between the onset of consecutives bursts, might characterize the response to each texture. Indeed, the MNT process led to linear correlation between the stimulus SP of each texture and a highly specific IBI (ANOVA test, Tukey Kramer correction for multiple comparisons, p<0.00001) reproducing neurophysiological findings in non-human (Darian-Smith et al., 1980a; Phillips and Johnson, 1981) and human (Oddo et al., 2011b) primate studies with similar gratings. Consequently, the difference in IBI between the MNT output that was elicited by the two sides of each stimulus correlated almost perfectly (R2\u00a0=\u00a00.997) with the difference in SP (Figure 9d). Additionally, the behavioral responses of DAS were perfectly (R\u00a0=\u00a01) fit by a logistic function of the difference in IBI.\n\nThe abovementioned results show that DAS behavioral responses may be based on the temporal structure of stimulation. However, they do not rule out the possibility that the responses were based simply on the count of the total number of spikes injected during each stimulus. Then, we tested whether a rate code not taking into account the temporal structure of the response was able to lead to comparable discrimination of stimuli as the one observed behaviorally. A commonly accepted definition of a rate code is the count of spikes within the time frame of encoding window (Theunissen and Miller, 1995; Panzeri et al., 2010) which in our case is assumed to be the 2 s presentation of each stimulus. Then, the sensor response to each stimulus, based on which we performed the IBI-based analysis, was also quantified by measuring the overall average firing rate (AFR), i.e., the ratio between the total number of spikes emitted during the sliding and the (fixed) 2\u2009s sliding duration. We found that the AFRs generated in response to different SPs were often similar because a larger IBI was associated with a more intense bursting activity (Figure 10). In particular, the AFRs of responses to 0.5, 1.0 and 1.5 mm were not significantly different, and the AFRs of responses to 2.0 mm and 3.0 mm were not significantly different (p<0.05 ANOVA test with multiple comparisons). Consequently, the difference \u0394AFR in AFR between the two sides of a stimulus correlated very weakly with the difference between their SP (R2\u00a0=\u00a00.066 for \u0394AFR vs R2\u00a0=\u00a00.997 for \u0394IBI, compare Figure 9e and Figure 9d). Note that no logistic function of the difference in AFR was able to fit DAS behavioral responses (R2\u00a0=\u00a00.04, p\u00a0=\u00a00.8), which was a significant contrast with the perfect fit achieved with \u0394IBI. Therefore, because the total spike count was not able to encode differences between stimuli to a degree compatible with behavioral responses, we concluded that the rate code was not responsible for the subject perception of the presented textures. This further strengthens the hypothesis that the subject exploited the temporal structure of the response to discriminate the stimuli.\n\nFigure 10 shows the instantaneous firing rate (L\u00e1nsk\u00fd et al., 2004) of different responses computed as the inverse of the inter-spike interval. It is apparent that the temporal evolution of the instantaneous firing rate matches the alternation of ridges and grooves. Indeed, it is already known that, when sliding occurs at fixed velocity, the temporal structure of the sensor output is a linear transformation of the spatial structure of the texture (Oddo et al., 2011b; 2011c) , at least for regular textures such as those considered here. Therefore, this is a case of temporal coding of the stimulus (Theunissen and Miller, 1995; Borst and Theunissen, 1999) : the temporal evolution of the spiking response reflects the time evolution of the stimulus rather than internal dynamics of stimulus encoding. Because the spatial structure is highly regular and the textures primarily differ for a single spatial variable (the SP), it is possible to discriminate between them using the corresponding single temporal variable (the IBI). Then, this may be the feature of the injected spike trains that allows subjects to precisely decode the presented stimuli.\n\n## Discussion\n\nRecent neuroprosthetic studies showed that pressure sensation can be elicited by injecting a train of pulses with a fixed shape and different frequencies via intrafascicular (Dhillon and Horch, 2005) or cuff (Tan et al., 2014; Ortiz-Catalan et al., 2014) interfaces. Additionally, reconstruction of tactile sensation of force levels and object shape was shown using multi-electrode stimulation via pulses with current amplitude linearly increasing with sensor outputs (Raspopovic, 2014). In contrast, this work focused on eliciting textural features by injecting a biomimetic (Saal and Bensmaia, 2015) temporal structure of pulse trains with a fixed current amplitude in each experimental session. Discrimination of textural features is a remarkable skill of our somatosensory system, which is used in everyday activities to interact with a peri-personal space. The subjects that use hand prostheses will significantly benefit from the restoration of this sensory function, which represents the next desirable feature after recent achievements (Tan et al., 2014; Raspopovic, 2014; Ortiz-Catalan et al., 2014). The results of this study show that the texture discrimination skills can be artificially provided to users using both needle microstimulation in intact subjects and implantable intraneural interfaces in a transradial amputee. Both in needle and TIME-based experiments, the subjects were able to use our \u2018artificial\u2019 feedback to perform a 3AFC psychophysical test with very good and comparable performance.\n\nThe similarity between the needle and TIME-based stimulations was predicted by our hybrid FEM-biophysical model, which supported the transition from acute preparation towards chronically implanted electrodes. In addition, this result opens up interesting scientific and clinical opportunities. In the future, needle microstimulation can be used during translational experiments to test different types of peripheral neural coding strategies, which - if successful in this prototypal situation - would be implemented using implantable neural interfaces in disabled patients. Furthermore, model predictions were confirmed by the quasi-perfect discrimination (96% overall stimuli, see Figure 1c, and see Figure 9a,b for the analysis on a per-stimulus basis) that was achieved by DAS amputee with TIME stimulation.\n\nThe results of the present study showed that a temporal neuronal coding of spatial structure (Weber et al., 2013) can successfully elicit tactile cues in case of coarse surfaces that were explored under a passive- dynamic-touch protocol with a constant sliding velocity and a regulated load force, thus, involving controlled motion of the tactile stimulus while the fingertip was not moving (Yoshioka et al., 2001). In such passive-touch framework there is a lack of voluntary movement. This allows decoupling of cutaneous information (which was our interest in this study) from the kinaesthetic afferent sensory feedback and efference copy associated with movement dynamics. Thus, it was possible to compare the EEG activities evoked by the substitutive neuromorphic electrical stimulation versus the natural mechanical tactile stimulation. No significant differences in topography or frequency modulation clustering were shown by the EEG signals in the two cases.\n\nThe behavioral results showed that injecting the sensor output via a single stimulation channel was sufficient to induce accurate responses (particularly from DAS) in the designed experimental protocol with locked indentation force and tangential velocity of stimulus pairs. Additionally, these experiments allowed us to investigate how the subjects were able to achieve these results in this specific case. In fact, the relationship between IBI and behavioral performance seems to indicate that responses of subject DAS were based on temporal structures of the injected stimuli (which, due to the linearity of our MNT process in mapping the geometry of stimuli, correspond to temporal modulation in the spiking activity captured by the IBI for regular textures), rather than on their average firing rate alone. IBI was previously shown to be given by the ratio between the surface spatial period SP and the sliding velocity V in human (Oddo et al., 2011b) and animal (Weber et al., 2013; Darian-Smith et al., 1980a) neurophysiological investigations and in artificial touch (Oddo et al., 2011c) studies. Because in our protocol the sliding velocity V was fixed (10 mm/s), the IBI was proportional to the SP, and so were their differences (\u2206IBI and \u2206SP) between the two sides of the stimuli (Figure 9d).\n\nOur results indicate that a temporal single-channel MNT-based intraneural stimulation allows gathering of textural features of medium-coarse surfaces with constant and slow sliding velocity. However, for more complex texture discriminating tasks it is plausible that integration of spatiotemporal information from neighboring receptors distributed along the fingertip (Johansson and Flanagan, 2009; J\u00f6rntell et al., 2014) and, thus, multi-channel stimulation, combined with amplitude modulation (Raspopovic, 2014), would be needed in less restrictive conditions that involve velocity or force variations and everyday life stimuli (Weber et al., 2013; D\u00e9peault et al., 2008; Rongala et al., 2015).\n\nThe promising results obtained with microstimulation in four intact subjects, combined with robust translational indications from the hybrid model and an excellent outcome from one amputee, prompt the idea that neuromorphic stimulation could be a natural and effective tool for eliciting texture discrimination abilities via hand prostheses. Neuroprosthetic research (Tan et al., 2014; Raspopovic, 2014; Dhillon and Horch, 2005; Rossini et al., 2010) can in parallel contribute to the evaluation of open neuroscientific hypotheses about tactile perception (Weber et al., 2013; Yoshioka et al., 2001; Johansson and Flanagan, 2009; Hollins and Risner, 2000) for the advancement of understanding of human somatosensory physiology.\n\n## Materials and methods\n\n### Sensorized finger\n\nThe core element of the artificial fingertip was a Micro Electro Mechanical System (MEMS) sensor with 4 transducing piezoresistors implanted at the base of a cross-shaped structure (Beccai et al., 2005) (Figure 3). The MEMS was packaged with polymeric compliant material (Dragon Skin, Smooth-On, USA). Sensor data were sampled at 380\u2009Hz per channel by a 24-bit Analog to Digital Converter (ADS1258, Texas Instruments, USA) integrated in the fingertip, and acquired via SPI by a Field Programmable Gate Array (Cyclone II FPGA, Altera, USA).\n\n### Mechano-neuro-transduction (MNT) process\n\nThe FPGA streamed the acquired information via Ethernet to a PC for real-time implementation of an artificial mechanoreceptor model emulating the tactile coding recorded during human microneurography sessions carried out with surfaces and experimental apparatus as those of current study (Oddo et al., 2011b; 2011d). To this aim, MEMS sensor signals were converted into sequences of neural spikes via a real-time C++ implementation of the Izhikevich spiking neuron (Izhikevich, 2003). Such model was originally conceived to emulate neuron-to-neuron signaling, whereas in this modified implementation the input is haptic rather than synaptic. As detailed in the following sections, these transduced spike trains were injected in the median nerve as train of pulses of fixed width and amplitude through microstimulation electrode in the case of intact subjects and through TIME interface in the case of DAS amputee.\n\nWe did not model the fine details of the complex spatio-temporal mechanical interaction between physical stimuli, soft tissues and receptors (Hayward et al., 2014), but we injected as input current in the neuron model a signal generated from the outputs of sensors integrated in the artificial fingertip, as follows. Sensor piezoresistive outputs (Sx+ and Sx-, represented in blue and in green in Figure 2c) belonging to opposite tethers of the cross-shaped structure were subtracted (Equation 1) to obtain a component, proximal to distal on the biomimetic fingertip, highly correlated to the frictional shear stress (Oddo et al., 2007) arising along the direction of the stimulus sliding motion. This component was half-rectified and amplified (Equation 2, as represented in red in Figure 2c) in order to inject it as input current in the spiking neuron model (Ix in Equation 3). Equations 3 and 4 describe the subthreshold evolution of the membrane potential v and the recovery variable u in the implemented artificial neuron model (Spigler et al., 2012; Izhikevich, 2003). Whenever the membrane potential v reached the threshold level, a spike was triggered, v was set to a reset value c and u was increased of a fixed value d (Equation 5). The spike was broadcasted by TCP communication to successive services and graphical user interface (Labview, NI, USA).\n\nThe computed binary response constituted the output of the neuromorphic artificial touch system, which triggered via USB the current stimulator (STG4008, Multichannel System, Germany) each time that a spike template had to be delivered.\n\nThe coefficients of the model (Spigler et al., 2012; Izhikevich, 2003) were tuned so to achieve a phasic firing with respect to the moving ridges of surfaces (Gardner and Palmer, 1989). The MNT process emulated to some extent the neural representation of stimulus spatial patterning observed in previous non-human (Weber et al., 2013; Darian-Smith et al., 1980a) and human (Oddo et al., 2011b) primate recordings of SA1 afferents associated to Merkel mechanoreceptors, a functionally relevant class of tactile units able to encode medium-coarse textures (Weber et al., 2013; Phillips and Johnson, 1981; Yoshioka et al., 2001; Darian-Smith et al., 1980b) such as the surfaces evaluated in the present study. The MNT process coded the temporal period of the surface, a feature scaling linearly with spatial period of the grating and inversely with the stimulus tangential velocity. The resulting firing (Figure 2) was characterized by biomimetic (Sathian et al., 1989) bursts of multiple spikes per ridge with coarser surfaces (see 3.0 mm and 2.0 mm SP in Figure 10), by triplets or duplets for surfaces with medium coarseness (see 1.5 mm and 1.0 mm SP in Figure 10), down to a single spike per ridge with finer surfaces (see 0.5 mm SP in Figure 10), thus implementing a neural code of stimulus geometry based on the modulation of discharge rather than on the mean discharge frequency, resembling SA1 electrophysiological recordings under similar tactile stimulation conditions (Darian-Smith et al., 1980a; Phillips and Johnson, 1981) (Figure 10\u2014figure supplement 1). Furthermore, the instantaneous firing rate of the implemented artificial mechanoreceptor model achieves a modulation up to tens of spikes/s (see red traces in Figure 10), coherently with typical values reported in the literature for SA1 units (Johnson, 2001; Phillips and Johnson, 1981).\n\n$$\nS_{x}=S_{x+}\u2212S_{x\u2212}\n$$\n\n$$\nI_{x}=KS_{x},x\\geq00,x<0\n$$\n\n$$\n\\frac{dv}{dt}=Av^{2}+Bv+C\u2212u+\\frac{I_{x}}{RC_{m}}\n$$\n\n$$\n\\frac{du}{dt}=a(bv\u2212u)\n$$\n\n$$\nif(v\\geqv_{th}),thenv\u2190cu\u2190u+d\n$$\n\nThe following parameters were used: K\u00a0=\u00a015,000; A\u00a0=\u00a00.04/sV; B\u00a0=\u00a05/s; C\u00a0=\u00a0140\u00a0V/s; Cm\u00a0=1F; R\u00a0=\u00a01C; a\u00a0=\u00a00.02;\u00a0b\u00a0=\u00a00.2/s; c\u00a0=\u00a0-65\u00a0mV; d\u00a0=\u00a08\u00a0mV; vth\u00a0=\u00a030\u00a0mV.\n\n### Percutaneous electrical microstimulation of the median nerve with intact subjects\n\nFour intact subjects (2 males and 2 females, 25\u201326 years old) underwent the experiments of texture discrimination with tactile feedback elicited by a stimulation injected through two microneurographic electrodes (FHC UNP40GAS, shaped as needles). The enrolment was subjected to signing a written Informed Consent, approved by the Campus Bio-Medico University Ethics Committee, where this set of experiments took place.\n\nA neurologist trained in microneurography performed the procedure (Hagbarth and Vallbo, 1967) , consisting of two phases of electrical stimulation, superficial and percutaneous, necessary to identify the correct site for electrodes insertion. The reference electrode was positioned just through the skin and the active one into the nerve.\n\nInitially, we stimulated the skin of the right arm of the subject in an area centred 2\u20133 cm proximal and medial to the elbow. A 1\u2009Hz cathodic biphasic balanced square current was delivered to the subject. Pulse duration was 0.2 ms, while amplitude was changed in the range 1\u201310 mA. The nerve area was identified whenever a hand muscle twitch occurred in correspondence of 1\u20132 mA amplitude. Reference and active electrodes were then inserted through subject\u2019s skin, after cleaning.\n\nA cathodic biphasic balanced square wave was injected through the needles with a frequency of 1\u2009Hz. Pulse duration was 0.2 ms, while the current changed within the 1\u2013100 \u03bcA range. The neurologist moved slightly the active electrode towards the inner of the arm seeking for a reported sensation or a muscular twitch over/of the hand. If one of those conditions occurred with amplitude of the injected current between 1\u201310 \u03bcA, the electrode impaled the nerve fiber. The neurologist then moved the needle in the area of insertion until the subject reported a distinct tactile sensation over one of the first four fingers.\n\nAs final evaluation of proper placement of the electrodes, the electroneurogram (ENG) was visualized and acoustically identified: afferent ENG from the median nerve had to be discriminated over the background nerve activity as some mechanical stimuli were exerted over the fingers. Acquisition was performed by means of a system comprising a single channel amplifier (15LT Bipolar, Grass Instrument, USA) and a 16-bit data acquisition board (PCI-6251, NI, USA) installed on a personal computer running a custom interface (Labview, NI, USA).\n\nThe subject was instructed to avoid any voluntary movement that could alter the needle placement once the nerve search procedure was completed. An experimenter-guided session of microstimulation was performed in order to identify appropriate parameters to use in the upcoming 3AFC psychophysical protocol: 500 ms trains of cathodic biphasic balanced squares were delivered while changing frequency, pulse duration (Ts) and amplitude (As) starting from 10\u2009Hz, 5 \u03bcs and 2 \u03bcA, respectively. The tuning of stimulation parameters was operated heuristically among the subjects while performing pilot trials, such as: a) subject connected to the stimulator while the experimented touched manually the artificial fingertip, b) subject exploring the gratings with the non-stimulated hand and then c) perceiving the same surfaces via the artificial fingertip. An additional experimental session of recording somatosensory evoked potentials (SEP) (Kunesch et al., 1995) at 1\u2009Hz stimulation rate was performed with subjects M3 and M4 before starting the 3AFC psychophysical experimental protocol: the spike template was injected in the nerve through microstimulation. Stimulation was delivered as square pulses lasting 200 \u03bcs at 1\u2009Hz with a number of repetitions (180 for M3 and 700 for M4) allowing a robust Independent Component Analysis (Artoni et al., 2014)\u00a0on EEG data (as detailed in the specific session). In order to allow a better comparison among subjects, stimulation amplitude was individually tailored and chosen as an amplitude that was clearly perceived by the subject, without producing any discomfort (between 5 and 10 \u03bcA). Pilot trials of the 3AFC psychophysical test with neuromorphic sensory feedback were then repeated for variable duration among subjects just before starting the actual experimental protocol.\n\n### Intraneural stimulation of the median nerve with implanted interface in transradial amputee\n\nParticipant DAS had suffered a traumatic transradial left arm amputation 10 years before the experiments. He was selected from a group of 31 persons with hand amputation because of the stump characteristics and his psychophysical abilities. All procedures were approved by the Institutional Ethics Committees of Policlinic A. Gemelli at Catholic University, where the surgery was performed, IRCCS S. Raffaele Pisana (Rome), where the experiments were performed, the Ethics Committee of Campus Bio-Medico University and the Italian Ministry of Health.\n\nTIME neural interfaces were implanted under general anaesthesia. After superficial disinfection of the medial aspect of the left upper limb, placed extrarotated, the skin was cut along the medial edge of the biceps muscle for about 15 centimetres, from few centimetres below the axilla to about 6 cm above the elbow. The ulnar and the medial nerves were exposed along their course, through careful smooth dissection of the dermal and hypodermic structures, fascial bands, and muscles. Following an epineurial microdissection, performed under a surgical microscope (Zeiss, Pentero) to visualize the fascicles, two TIME electrodes were inserted into the nerve trunk of each nerve (median and ulnar, only the former of which was used for electrical stimulation in the present work). Electrodes were pulled inside the nerve, until the embedded active contacts reached the targeted location, close in contact with the nerve fascicles. Cable segments were placed in subcutaneous pockets, while four holes were made in close proximity of the skin incision, two medially and two laterally for the electrode emission (Raspopovic, 2014; Di Pino et al., 2014).\n\nThe electrodes were removed after 30 days, in accordance with EU guidelines. At the time of removal however, the TIME electrodes were still performing extremely well, and did not cause any discomfort to the subject. The follow-up of the clinical condition of the participant almost 2 years after the end of the protocol did not reveal any subjective or objective side effects.\n\nUpon connection of the neural interface implanted in the median nerve with the current stimulator, an experimenter-guided session of intraneural stimulation was performed in order to identify appropriate parameters to use in the upcoming 3AFC psychophysical protocol, also capitalizing on the information gathered during the previous days of experimental activities with DAS. Pulse duration (Ts) and amplitude (As) were initially set to 100 \u03bcs and 100 \u03bcA, respectively. The tuning of stimulation parameters was operated heuristically in 33 min while performing pilot trials, such as: a) DAS connected to the stimulator while he (with the intact hand, to have a sort of self-touch experience) or the experimenter touched manually the artificial fingertip, b) DAS exploring the gratings with the intact hand and then c) perceiving the same surfaces via the artificial fingertip. Pilot trials of the 3AFC psychophysical test with neuromorphic sensory feedback were then repeated for 8 min with the selected parameters (As\u00a0=\u00a0160 \u03bcA, Ts\u00a0=\u00a0100 \u03bcs) just before starting the experimental protocol.\n\n### Three-alternative forced-choice (3AFC) psychophysical protocol\n\nThe protocol structure was essentially the same during microstimulation of intact subjects, and stimulation through implanted TIMEs in the amputee.\n\nThe artificial fingertip underwent mechanical stimulation with surface pairs that were presented using a mechatronic platform (Oddo et al., 2011d) designed to implement standardized human and artificial passive-touch (Jones and Smith, 2014) experimental protocols. The tactile stimuli were gratings, fabricated with 3D printing of plastic material (Project HD 3000, 3D Systems), consisting of a sequence of alternating ridges and grooves with spatial period (SP) from a minimum of 0.5 mm to a maximum of 3.0 mm depending on the stimulus and on the half portion of the surface under test (Figure 1b, Figure 2, Figure 10). The sequence of presented stimuli was randomized within sessions of 16 trials composed of 4 presentations of the 4 surfaces \u22060.0, \u22061.0, \u22062.0 and \u22062.5. In each session, the 4 trials per each stimulus were composed of 2 trials with presentation of the two surface halves in the SP1-SP2 order (labeled +: \u22060.0+, \u22061.0+, \u22062.0+ and \u22062.5+), and 2 trials with reversed SP2-SP1 order (labeled 2: \u22060.0-, \u22061.0-, \u22062.0- and \u22062.5-). The first half-surface was indented at 400 mN on the artificial fingertip and, after 4\u2009s of indentation without tangential movement, it was slid at 10 mm/s for 2\u2009s under regulated load force. The sliding motion was followed by 2\u2009s of indentation at 400 mN without stimulus movement, and then the surface was detached. The same sequence was applied to the second half-surface, starting 3 s after the end of presentation of the first half (see Figure 2 and Video 1 for the representation of the whole stimulation sequence). At the end of the presentation of the surface pair, the subject stated whether the first half-surface was perceived as having coarser, finer or same spatial coarseness in comparison to the second half. During the experiment the subject received no feedback about the correctness of the responses.\n\nFor the intact subjects who participated in the microstimulation sessions, the gratings were also presented mechanically, via the tactile stimulation platform (Oddo et al., 2011d) , directly on the finger (fixed to the platform via a finger holder glued to the nail) that was identified as source of the sensory perception elicited with microstimulation. During the experiment the subjects received no feedback about the correctness of the responses.\n\nThe\u00a095% confidence intervals for performance estimate from individual subjects responses were computed with exact Clopper Pearson method (binofit function in Matlab) and compared against chance level (1/3) to assess performance significance. Parameters for logistic fit of performance as a function of stimulus features were estimated with generalized linear regression (glmfit function in Matlab), then the optimal logistic fit function was generated (glmval function in Matlab) and its accuracy evaluated as the squared correlation coefficient between data and fit.\n\n### EEG signals recording\n\nIn order to investigate the neural correlates of natural and substitutive texture discrimination, EEG signals were recorded in all microstimulation sessions using a 64 channel EEG device (SD LTM Express, Micromed S.p.A., Italy) with a 2 kHz sampling rate. The montage was in accordance with the 5% 10/20 system (Oostenveld and Praamstra, 2001). Careful scalp preparation granted electrodes impedance below 5 k\u2126 in at least 90% of derivations, as measured at the experiment onset.\n\n### EEG signal processing\n\nData were analyzed by Matlab scripts based on the EEGLAB toolbox (Delorme and Makeig, 2004). EEG signals were processed via independent component analysis (ICA) filtering to remove non-neural sources and artifacts. In order to optimize the dipolarity of the independent components (IC) extracted (Artoni et al., 2014)\u00a0and to maximize the amount of data fed to the algorithm (while maintaining a sufficient density of information) the EEG continuous data were epoched.\n\nData were high-pass filtered using a zero-phase 1\u2009Hz, 24th order, Chebyshev type II filter and low-pass filtered using a zero-phase, 45\u2009Hz, 71th order, Chebyshev type II filter to remove slow drifts and high-frequency noise respectively, then resampled at 256\u2009Hz. Channels with prolonged prominent artifacts (by visual inspection) or with probability more than five times the standard deviation from the mean across all channels were removed (in the end the remaining numbers of channels were 21, 40, 59, 61 respectively for the four subjects), then a common average reference was used for the remaining channels. Epochs containing high-amplitude artefactual potentials, high-frequency muscle noise and other irregular artifacts, as identified by visual inspection, were removed and remaining data were submitted to AMICA (Palmer et al., 2007), a generalization of the Infomax algorithm (Makeig et al., 1996) to multiple mixture approaches (Lee et al., 1999) under the hypothesis that the ICs are spatially static (general stationarity, e.g. recording environment). ICA decompositions were performed separately on each subject over all conditions. Stereotyped artifacts such as eye movements, eye blinks and muscle tension were removed by ICA. The ICA decomposition was then saved and reapplied to data, pre-processed using the same described procedure, but high-passed using a 0.5\u2009Hz, 94th order, Chebyshev type II filter but using the pre-computed weights. This procedure allowed to efficiently remove artifacts while retaining the low-frequency EEG information.\n\nRegarding source localization, for subject M4 a realistic head model was obtained by means of the NFT toolbox (Acar and Makeig, 2010) using a T1-weighted magnetic resonance (MR) image of the subject and a 4-layer model accounting for scalp (\u03c3 = 0.33), skull (\u03c3 = 0.0132), brain tissue (\u03c3 = 0.33), and cerebrospinal fluid (\u03c3 = 1.79) respectively. Electrodes positions on the head were co-registered with an optoelectronic neuronavigation system SoftAxic (E.M.S. srl, Italy) and aligned with the Montreal Neurological Institute MNI, Canada. The Finite Element Method (FEM) was used for the numerical solution of the forward problem with Boundary Element Method (BEM) meshes as boundaries. Given the potentials distribution across the scalp, the position of a best-fitting single equivalent current dipole (inverse problem) was determined using the (Dipfit toolbox of EEGLAB) (Oostenveld and Oostendorp, 2002; Delorme et al., 2012).\n\nEEG recording time-locked with 1\u2009Hz intraneural median nerve microstimulation was exploited to evidence the early somatosensory potentials, the components more strictly due to the stimulation. SEP data epochs were selected from 20 ms before to 100 ms after each stimulation onset. Noisy epochs were rejected by careful visual inspection. Similarly to the continuous data, the criteria for epoch removal were the presence of high amplitude artifacts (e.g., Jaw clenching). Source localization was then performed on the most reliable short-latency potential of cortical origin, namely the P27 peak (Figure 5).\n\nEvent-related potentials (ERPs) were time-locked to the onset of either the electrical microstimulation or of the sliding phase of the mechanical stimulation (Figure 4, Figure 4\u2014figure supplement 1). ERPs were normalized for the standard deviation of the prestimulus (1000 ms). ERP\u2019s statistical significance between conditions (electrical microstimulation vs. mechanical stimulation) was assessed using a Montecarlo statistics with cluster correction for multiple comparisons (triangulation and maxsum as clustered statistics) (Maris and Oostenveld, 2007) , adapted from the FieldTrip toolbox (Oostenveld et al., 2011). Statistical power of ERPs comparisons between stimulation conditions was computed for dependent groups (GPower, Duesseldorf, Germany) (Figure 4\u2014figure supplements 2\u20135).\n\n### EEG functional connectivity analysis and EEG graph analysis\n\nEEG functional connectivity analysis was performed using the eLORETA exact low-resolution electromagnetic tomography (Vecchio et al., 2015; Pascual-Marqui, 2011; Vecchio et al., 2014a; 2014b; 2015b) software.\n\nTo obtain a topographic view of the sensorimotor network, brain connectivity was computed with sLORETA/eLORETA software in 7 regions, positioning the center in Brodmann Areas (BAs: 1\u20137) separately on the left and right hemispheres.\n\nFor each subject and for each hemisphere, among the eLORETA current density time series of the 7 Regions of Interest (ROIs), intracortical Lagged Linear Coherence, extracted using a sphere with 19 mm of radius (Pascual-Marqui, 2011; 2007) , was computed between all possible pairs of the ROIs for each of the five independent EEG frequency bands: delta (2\u20134\u2009Hz), theta (4\u20138\u2009Hz), alpha (8\u201313\u2009Hz), low beta (13\u201320\u2009Hz) and high beta (20\u201330\u2009Hz).\n\nA weighted network was built based on the connectivity between ROIs. The nodes of the network were ROIs, and the edges of the network were weighed by the lagged linear coherence values.\n\nThe vertices of the network were the estimated cortical sources in the BAs, and the edges were weighted by the Lagged Linear value within each pair of vertices.\n\nThe measure considered here was the clustering (C) that characterizes the tendency of the nearest neighbors of a node to be interconnected. The mean clustering coefficient was computed for all nodes of the graph and was then averaged to estimate the tendency of network elements to form local segregated clusters. Finally, to obtain individual normalized relative measures, the values of each mean clustering coefficient were divided by the mean values obtained by their average in all bands of each subject.\n\nStatistical analysis of percent clustering modulation with respect to baseline period was performed with Statistica v.7 software (StatSoft Inc., USA). Greenhouse and Geisser correction was used for the protection against the violation of the sphericity assumption in the repeated measure ANOVA. Besides, statistical significance was determined by 3-way ANOVA followed by Duncan\u2019s multiple range test. ANOVA was performed between three factors: stimulation mode (mechanical and electrical; independent variable), hemisphere (left and right), and band (delta, theta, alpha, low beta, high beta).\n\n### Hybrid electrical-biophysical model of the median nerve for the comparison between microstimulation needle and implanted TIME\n\nHybrid models (Raspopovic et al., 2011; McIntyre et al., 2002) account for the anisotropy of extracellular conductivity during the calculation of the electrical field induced by the injection of the electrical current into the tissue, present in real nerves, and for the nonlinear response of cells to the extracellular stimulation. Those two aspects were addressed by means of a finite element method (FEM) to solve the voltage distribution generated by injected currents, and by calculating the neuronal dynamics to estimate the axonal response to the electrical stimulation. The volume conductor model implemented via multiphysics FEM (COMSOL Multiphysics, Sweden) can solve Poisson\u2019s equation provided by proper boundary conditions. To do so, an anatomically shaped geometrical model of the median nerve (Jabaley et al., 1980) was generated by image segmentation (ImageJ, USA). Coordinates of the image segmentation were exported (livelink COMSOL-Matlab) to edit a 3D nerve model (procedure illustrated in Figure 6\u2014figure supplement 1). Perineurium had a thickness of 3% of the diameter of the fascicles (Grinberg et al., 2008) , and coordinates were interpolated. The nerve diameter had a maximum of 4.6 mm and minimum of 2.3 mm, as obtained from unpublished histological data provided by Dr. Xavier Navarro and from post-mortem human cadavers dissections at Universitat Autonoma de Barcelona, Spain. A cylinder, representing the nerve\u2019s outer space, filled with saline, enclosed the nerve. Boundary optimal dimensions of cylinder were found to be 69 mm for the diameter and 140 mm for the height, using convergence calculations (Raspopovic et al., 2011). Electrical ground was therefore fixed in this cylindrical boundary of the structure.\n\nOn the biophysical side, MRG model (McIntyre et al., 2002) was used to model the nerve tactile sensory fibers. This model represents the nonlinear modified Hodgkin-Huxley Equations for the active compartment of the axons (the nodes of Ranvier) and a detailed realistic representation of the myelinated tracts. The model (available in NEURON model repository) is capable of reproducing several experimental aspects of cells dynamics (McIntyre et al., 2002). Then, a fiber with 21 segments (Raspopovic et al., 2011; McIntyre et al., 2002) of nodes of Ranvier was built and extracellular stimulation procedure used to excite the cell. For a fiber of diameter D, a model had internodal spacing L\u00a0=\u00a0100D. A fiber was considered recruited when a generated action potential travelled along its whole length (i.e., reached the last node of Ranvier). The total recruitment was calculated as the portion of the fibers activated for the specific charge injected with respect to the total number of fibers implemented. Furthermore, nodal length was fixed at 1 \u03bcm and nodal diameter scaled from a previous study (McIntyre et al., 2002). A list of plausible assumptions had to be taken, during the model construction. The sensory axon populations were constructed (NEURON, USA) by using a probabilistic distribution of fibers diameters (Vallbo and Johansson, 1984) for different tactile units of the human hand, resulting in two Gaussian distributions which differentiate nociceptive fibers from fibers responsible for pressure/touch sensation, and the latter was used. One of the assumptions constraining the model was that the stimulation of different fiber types, such as nociceptive fibers, was not induced, at used current range. A total amount of 100 modeled fibers for each fascicle were placed randomly in the specific target fascicle, for several placements (Figure 8), as explained in continuation. As the fiber organization within different fascicles in the nerve is unknown, we assumed that fibers within one fascicle innervate the same hand area (Jabaley et al., 1980) (i.e., the fibers in one fascicle are innervating a single finger tip and not many of them). Moreover, since there is an inherent anatomical uncertainty in placement and extension of fibers innervating a specific hand district, for every position of stimulating electrode/needle we implemented 9 populations having different extensions and centroids for the same large fascicle (i.e., spanning from having the whole fascicle uniformly populated, to the case of very concentrated population where the fibers are almost touching each-other, Figure 8 and Figure 8\u2014figure supplement 1). Then the analysis has been performed for the range of significant fascicle sizes, defined as median size representatives of three groups: small (1 population implemented), medium (5 populations implemented) and large (9 populations). Different device placements were also studied: within, close, or far from fascicle, finally resulting in n\u00a0=\u00a090 simulations for TIME and n\u00a0=\u00a045 simulations cases for microneedle (this is because for every position of needle tip there are 2 corresponding positions of TIME: left and right).\n\nThe microstimulation needle (FHC UNP40GAS) was replicated as a cylinder with a cone-like ending (Figure 6): the cylinder had 3 mm length, and cone (tip) with semi-angle 12.78\u00b0 and shank diameter 250 \u03bcm. The whole structure was insulated and had electrical conductivity of 6.67 10\u201314 S/m and the tip was non-insulated with a conductivity of 1.89 107 S/m. Since in the case of microstimulation needle the tip was un-insulated by the neurologist, imminently before the insertion, the precise un-insulated cone dimension is not known. In order to account for this uncertainty, two models were implemented and the results analyzed for both (Figure 8). The TIME electrode was built as a rectangular structure where seven circled active sites were placed in each side of the structure (Figure 6). Conductivity of the polyimide substrate was set to 6.67 10\u201314 S/m. The radius for the active sites was 40 \u03bcm and the thickness 300 nm. The overall structure had 4 mm length, 0.35 mm width and 20 \u03bcm thickness. The electrical conductivity values used for the FEM were [0.0826i 0.0826j 0.571k] S/m for the endoneurium (Raspopovic et al., 2011; McIntyre et al., 2002) , 880 \u03bcS/m for perineurium, 0.0826 S/m for the epineurium (Raspopovic et al., 2011; McIntyre et al., 2002) , 2 S/m for saline.\n\nConductivity of perineurium was recalculated from a previous study (Weerasuriya et al., 1984) taking into account the thickness of the perineurium as 3% of diameter of the fascicle and the difference of temperature between frogs and humans. Although TIME electrode was implanted in vivo and no saline placed outside the nerve, this value was used as in previous studies (Raspopovic et al., 2011; McIntyre et al., 2002).\n\nThe similarity between needle and TIME is estimated by comparison of charges necessary for 10% of recruitment of fibers, for respectively 45 and 90 populations computed, by means of Kruskal-Wallis test, with significance level fixed at 0.05.\n",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "75163722-4e07-4a0b-aaf9-dda2e26ffdab",
+      "submission_id": "8e2b356f-f23c-48b2-948c-d63bd98b93a8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Emery N Brown, Massachusetts Institute of Technology , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.09148.026](https://doi.org/10.7554/eLife.09148.026)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Intraneural stimulation can restore discrimination of textural features by artificial fingertips in humans\" for peer review at eLife. Your submission has been favorably evaluated by Timothy Behrens (Senior editor), a Reviewing editor, and two reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper reports further on the very good pioneering work by these authors (previously reported) regarding the sensory/tactile input into the peripheral nerve. This paper extends the previous work, with some different aspects, although there is also a considerable overlap (which must be explained). Specifically, the authors study the use of NMT and TIME, in volunteer studies, in the study of a transradial amputee and in a simulation investigation as a way to restore tactile sensation.\n\nThe main result of neuromorphic stimulation, and neural response are interesting first presentations.\n\nThe strength of the paper is the very detailed experimentation, involving microneurography and the sensory input provided in an amputee. These experiments are aided by giving a biomimetic or neuromorphic input. Further, modeling shows how microneurography and TIM electrodes work comparably. This type of modeling coupled to experiments shows that this paper represents thorough research. The cortical response further validates that sensory perception is observed \u2013 this is quite interesting and novel as well. Overall, the work has enormous promise for establishing a paradigm for restoring tactile sensation to patients with limb injuries.\n\nEssential revisions:\n\nFirst, and most importantly, previous work by Raspopovic, more or less lays out the tactile stimulation. Also, the authors have published their sensors work. The new aspect seems to be the biologically plausible model. But the model selected \u2013 Izh ikevich is not a biological model of receptors \u2013 does not produce receptor-spiking activity and no transduction is built in.\n\nIn the subheading \u201cMechano-neuro-transduction (MNT) process\u201d, sensor to spike output from Izhikevich is not an ideal receptor to neural activity transformation. The authors should point out this simplification \u2013 actually a limitation. The periodic rate output is also a significant simplification. The model produces bursts vs single spikes, but it's not clear it is biomimetic. This interpretation also needs some caution.\n\nSecond, the paper does not clearly and cleanly present what is novel here \u2013 and differentiate from many prior papers by the authors. What is novel \u2013 the stimulus pattern? The computational model? Comparison with 4 normal, amputee? Distinguish from the prior work by the same group. Please emphasize this point in your response letter and revised manuscript. The question of novelty will be critical in making a final decision on the publication of this work.\n\nThird, the work presents tactile encoding \u2013 in particular coarse + geometric -> shape sensing. This is not clear. Is it only the artifact of their stimulus (grating) or is this the result of perception by the subjects \u2013 having tested many stimuli. i.e. is the perceptual output of the given microneurographic access to nerves and penetrating electrodes' access to the fascicles? If so, how specific and representative is it?\n\nFourth, the statistical analysis of the data should be improved. The text and Figure 1 discuss the results of the study in terms of the overall success rate. Figure 3 shows the breakdown of the responses by subject. There is a conspicuous lack of analysis of the data. The data should be analyzed not by lumping together all of the subjects and reporting an aggregate successful discrimination rate, but rather by individual subject as a function of stimulus type. The coarser the stimulus, the greater the discriminatory power and the weaker the stimulus the less the discriminatory power. There should be an analysis showing that the performance by individual is greater than what would be expected by chance, where chance here is 0.33. If there is an approximate monotone relation among the stimuli then a logistic regression analysis could be performed. The analysis should be conducted using confidence intervals or Bayesian methods and not just simply by reporting p-values. An advantage of a Bayesian hierarchical analysis or a random effects model across subjects is that they provide a formal way of pooling information across subjects. The latter is crucial for this problem because the authors which to establish that they have been able to provide neuromorphically tactile sensation. This statement should be made with an assessment of the accuracy of the discriminatory power of the MNT technique for each subject as a function of stimulus type. It is likely that the results will reveal that more trials will be required to show that there is truly discriminatory capability.\n\nThe authors state that they observed no difference in the natural EEG activity and evoked stimulation in source topography, response timing and clustering. How were these assessments made? They involve negative results and require a power analysis to establish their validity.\n\nAlthough the data are more compelling for the TIME technique applied to the transradial amputee patient, a similar analysis should be performed for these data as well.\n\nThe authors wish to establish from their simulation analyses that the response patterns under MNT and TIME are similar if not effectively the same. It is unclear where the uncertainty comes from in these analyses since they are simulation models. Therefore how can statistical assessments of uncertainty and formal statistical inferences be made? Moreover, the authors wish to infer that the stimulation responses of the two modalities do not differ. They report a p-value without a specific statement about the statistical test being used in the analysis. Because the authors wish to establish a negative result of no difference between the two stimulations modalities, they should report a power analysis stating what types and magnitudes of differences their investigations were calibrated to detect.\n\nThe authors do not have to develop an ancillary classifier model to understand the performance characteristics of the MNT and the TIME paradigms. If they build statistical models to analyze the data from the subjects that include covariates that has IBI they will get their answer with the same model being used to analyze the data. This approach would obviate the current analyses which lead to multiple comparisons corrections.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Intraneural stimulation can restore discrimination of textural features by artificial fingertips in humans\" for further consideration at eLife. Your revised article has been favorably evaluated by Timothy Behrens (Senior editor), a Reviewing editor, and one reviewer. The manuscript has been improved but there are a few remaining issues that need to be addressed before acceptance, as described below.\n\nGeneral Comments:\n\nThis paper has been revised, and more importantly, careful and thoughtful rebuttal to all the questions has been provided. Supplementary figures and additional statistical analysis are also appreciated. Overall, the paper is acceptable. The authors should note a few salient points and revise their paper accordingly (no further review is needed).\n\nThis is an outstanding piece of work. The paper has many novel aspects, now better clarified as requested, to point out the texture discrimination capability in humans, different stimuli and temporal coding, comparison with needle vs intrafascicular, etc. The cortical, neural topographic map, and source localization strengthen the paper. The claim about neuromorphic/Izhikevich is now moderated, although the authors still argue that this is representation of tactile receptors, bur arguably this is still a significant approximation based on the Izhikevich model.\n\nThe paper's distinction from the previous, Raspopovic paper is now made and is acceptable. The comments made concerning this, from texture to encoding model, are acceptable.\n\nThe novelty aspect has been responded to: a) Texture discrimination (but not \"restoration\" \u2013 see below);\n\nb) Hybrid FEM model is very useful and demonstrates TIME's utility and various fiber and recruiting; c) Perceptual studies, both psychophysical and cortical, strengthen the paper.\n\nSuggested Revisions:\n\n1) The claim in the Abstract is still too broad: \"Intraneural MNT-based stimulation restored discrimination of textural features, thus enhancing the user's tactile capabilities.\" The word \"restore\" is too strong. It implies permanent restoration/recovery. Here a texture perception has been mimicked, and performance has not been \"enhanced.\"\n\n2) Paragraph two, subheading \u201cAnalysis of neural coding strategies\u201d: This information pertains to Figure 10 (e). The message that the rate (in e, worse) vs temporal code (in d, good) is getting lost in this paragraph. This is an important observation and clarification would help. The figure caption could be more explanatory too.\n\n3) Paragraph two, subheading \u201cHybrid electrical-biophysical model of the median nerve for the comparison between microstimulation needle and implanted TIME\u201d: As the fiber organization within different fascicles in the nerve is unknown, we assumed that fibers within the fascicles belong to same functionality.\n\nPlease clarify how nociceptive fibers were separated from sensory (e.g. see the comment pertaining to the model).Indeed, this issue or not being able to separate different fiber types is quite critical and must be marked as a limitation.\n\n4) Figure 2: Traces and colors are not well explained.\n\n5) Figure 6 caption: The X marker represents the targeted fascicle where the fiber activation per 9 different populations was calculated. What does this mean (what populations?) for different locations of microneedle and TIME? This procedure is carried out analogously for medium and small fascicles, confirming results. Please could you also clarify the procedure.\n\n6) Figure 8: outcomes. Color-coding is not explained\n\n7) Figure 10: This figure, slightly modified to clarify rate vs temporal, would be much clearer (and certainly this result is important).\n",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e4ad434b-7872-4f6c-b538-f4cdad59621b",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C1",
+      "claim": "Tactile information conveyed by four classes of low-threshold mechanoreceptor afferent units in fingertips is fundamental for manipulation activities.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, tactile information conveyed by the four classes of low-threshold mechanoreceptor afferent units in the fingertips (Johnson et al., 2000; Johnson, 2001; Vallbo and Johansson, 1984a; Abraira and Ginty, 2013) is fundamental for manipulation activities (Edin et al., 1992; Edin and Johansson, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research establishing this relationship.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "f47cf2fd-045a-4a76-8c63-7dd711933676",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C2",
+      "claim": "Biological sensors innervating glabrous skin can provide information about contact onset, grasping force level, and discrimination of textural features.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the biological sensors innervating the glabrous skin can provide complex types of information such as the onset of the contact with an object, the level of performed grasping force, and discrimination of textural features (Weber et al., 2013; Darian-Smith et al., 1980a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "87b3c6b3-d865-4f73-bc6b-d368024b5fe2",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C3",
+      "claim": "Providing a sense of touch is the missing milestone in hand prosthesis development.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, even though a significant research in biology, medicine and engineering has produced artificial hands that progressively approached the performance of a \"natural hand\", it is a shared belief that providing a sense of touch is still the missing milestone (Kwok, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation and represents a consensus view in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "cf0d8eac-cb54-4067-b584-89a2300d61b9",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C4",
+      "claim": "The MNT process was tested in four intact subjects using percutaneous electrical microstimulation of the median nerve.",
+      "claim_type": "EXPLICIT",
+      "source": "The MNT approach was initially tested in four intact volunteers using percutaneous electrical microstimulation of the median nerve (Vallbo et al., 1984b; Torebj\u00f6rk and Ochoa, 1980) (Figure 1a, Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the experimental procedure performed in the study, with reference to figures showing the setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "e2fedc7e-d23f-40d2-b584-ad10b75cb6aa",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C5",
+      "claim": "Intact subjects achieved discrimination ability above 77% (107/138) during the 3AFC psychophysical procedure via percutaneous electrical microstimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Microstimulation allowed users to reach discrimination ability above 77% (107/138, Figure 1c, Figure 3a) during a three-alternative forced-choice (3AFC) psychophysical procedure (Perez et al., 2010; Gibson and Craig, 2005) mediated by the artificial touch system, which is based on the use of a MEMS sensor embedded into a human-sized robotic fingertip (Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim presents experimental results with specific performance metrics and references to figures showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "e3043074-36ac-49b7-972e-8688af649850",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C6",
+      "claim": "The capability to discriminate between two sides of surface pairs was correlated with the difference between their spatial periods.",
+      "claim_type": "EXPLICIT",
+      "source": "The capability to discriminate between the two sides of the surface pairs was correlated with the difference between their spatial periods (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes a correlation found in the experimental data, with reference to a figure showing this relationship.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "020b0d92-24d2-45ed-bfc9-4d4b109c1fc8",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C7",
+      "claim": "Event-related potentials after substitutive electrical and natural mechanical stimulation conditions did not reveal any statistical difference.",
+      "claim_type": "EXPLICIT",
+      "source": "Event-related potentials (Figure 4a) after substitutive electrical (n = 4, estimated power 0.75, Figure 4\u2014figure supplement 2) and natural mechanical stimulation (n = 4, estimated power 0.79, Figure 4\u2014figure supplement 3) conditions did not reveal any statistical difference (Montecarlo statistics with cluster correction for multiple comparisons).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim presents statistical analysis results comparing two stimulation conditions, with reference to figures showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "2ea3c2c2-2a5f-4575-a45e-fa7470496e2b",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C8",
+      "claim": "Primary sensorimotor areas in the hemisphere contralateral to the stimulus presented a significant reduction in clustering coefficient following the incoming sensory stimulus, regardless of its tactile or substitutive nature.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the primary sensorimotor areas in the hemisphere contralateral to the stimulus presented a significant reduction (3-way ANOVA followed by Duncan's multiple range test, F(1,6) = 6.48, p<0.05, comparison to the ipsilateral hemisphere) in the clustering coefficient following the incoming sensory stimulus, regardless of its tactile or substitutive nature (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim presents statistical analysis results with specific test statistics and p-values, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "3fd0ccb7-9f82-4249-a087-15f5ec76fc35",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C9",
+      "claim": "Generator sources of short-latency components of SEPs elicited by substitutive electrical stimulation were localized at the Postcentral Gyrus (Brodmann Areas 2 and 3).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the generator sources of short-latency components of Somatosensory Evoked Potentials (SEPs) that were elicited by the substitutive electrical stimulation were localized at the Postcentral Gyrus (Brodmann Areas 2 and 3), which was consistent with a physiological tactile activation of the primary somatosensory cortex (Figure 5), as previously described using a hand area functional source separation method (Di Pino et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim presents localization results from SEP analysis, with reference to a figure and citation to methodology.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "cc66bf80-f158-4a68-a5e8-1d885d8b444b",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C10",
+      "claim": "The stimulation threshold was similar for microneedle and TIME interfaces (statistically non-different: p>0.05, Kruskal-Wallis test).",
+      "claim_type": "EXPLICIT",
+      "source": "The model, which takes into account realistic anatomical (Jabaley et al., 1980) and neurophysiological (Vallbo et al., 1984) data, indicated that the stimulated portion of axonal population (Figure 7), and, therefore, the type of sensation, together with the stimulation threshold (statistically non-different: p>0.05, Kruskal-Wallis test) were similar for the two interfaces.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim presents statistical comparison results from computational modeling, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "f5c40a4c-70b0-4cc3-b4ef-d6de09bacc55",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C11",
+      "claim": "The range of electric charge necessary for recruitment was comparable for both microneedle and TIME interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "The range of electric charge necessary for recruitment in both cases was comparable (Figure 7, Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim presents modeling results comparing the two interfaces, with reference to figures showing the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "6f214db1-5cf1-48c4-ba35-46e6a45bc6d5",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C12",
+      "claim": "Subject DAS achieved 77/80 correct trials (96%) in the 3AFC psychophysical protocol using TIME stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "DAS showed to be able to comply with the entire 3AFC psychophysical protocol via neural stimulation, without any visual input or guidance by the experimenter, and without interruption in each session, and in 77/80 trials (Figure 1c, Figure 9a) of trials he was able to correctly identify whether the two sides of the surface had the same SP or which one had a larger SP (Figure 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim presents experimental results with specific performance metrics for the amputee subject, with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "49267cc5-4fe6-4e9b-a248-007fe946f0bd",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C13",
+      "claim": "DAS reported sensations elicited by temporal modulation of spiking electrical stimulation as pertaining to the palmar side of the index finger of the missing hand.",
+      "claim_type": "EXPLICIT",
+      "source": "The sensations elicited by temporal modulation of spiking electrical stimulation of the median nerve through a single implanted electrode were reported by DAS as pertaining to the palmar side of the index finger of the missing hand and as providing a realistic representation of the mechanical alternation between ridges and gaps of the experimented gratings (Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim reports subjective perceptual experience of the amputee subject, with reference to a video.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "8255e313-fffb-4454-80e2-c11ab7ae147b",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C14",
+      "claim": "The discrimination ability obtained using TIME stimulation was higher than the one with microstimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the discrimination ability obtained using TIME stimulation was higher than the one with microstimulation (Figure 1c, Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim compares performance between two experimental conditions, with reference to figures showing the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "7c2730e5-30c1-452c-958b-e18c7d694f86",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C15",
+      "claim": "The higher discrimination performance with TIME stimulation was attributed to prolonged use/training of the implanted neural interface before the present study.",
+      "claim_type": "EXPLICIT",
+      "source": "This was attributed to the prolonged use/training of the implanted neural interface before the present study (Raspopovic, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim provides an interpretation of the observed performance difference, with citation to prior work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "6ace29d1-bb0f-4aaf-ba4f-e35e4eaaafdf",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C16",
+      "claim": "The behavioral performance as a function of stimulus in subject DAS can be fit exactly (R = 1) using a logistic function of the difference of SPs between the two halves of each surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The behavioral performance as a function of stimulus in subject DAS can be fit exactly (R = 1) using a logistic function of the difference of SPs between the two halves of each surface (Figure 9c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim presents a statistical modeling result with a perfect fit, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "e6346c8e-08b2-4dca-8a73-05c8291540d0",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C17",
+      "claim": "The MNT process led to linear correlation between the stimulus SP of each texture and a highly specific IBI (ANOVA test, Tukey Kramer correction for multiple comparisons, p<0.00001).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the MNT process led to linear correlation between the stimulus SP of each texture and a highly specific IBI (ANOVA test, Tukey Kramer correction for multiple comparisons, p<0.00001) reproducing neurophysiological findings in non-human (Darian-Smith et al., 1980a; Phillips and Johnson, 1981) and human (Oddo et al., 2011b) primate studies with similar gratings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim presents statistical analysis results with specific test statistics and p-values, and cites prior neurophysiological studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "ffb8581a-55f6-49b4-a9a7-5a60d267b5f0",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C18",
+      "claim": "The difference in IBI between the MNT output elicited by the two sides of each stimulus correlated almost perfectly (R\u00b2 = 0.997) with the difference in SP.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the difference in IBI between the MNT output that was elicited by the two sides of each stimulus correlated almost perfectly (R2 = 0.997) with the difference in SP (Figure 9d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim presents a correlation analysis result with a very high R\u00b2 value, with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "3d1a4999-e9b1-41a3-83c7-62c159d13c92",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C19",
+      "claim": "DAS behavioral responses were perfectly (R = 1) fit by a logistic function of the difference in IBI.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the behavioral responses of DAS were perfectly (R = 1) fit by a logistic function of the difference in IBI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim presents a statistical modeling result with a perfect fit.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "e548db8e-b437-4991-b7ad-98a3205f80cf",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C20",
+      "claim": "The AFRs of responses to 0.5, 1.0 and 1.5 mm were not significantly different.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the AFRs of responses to 0.5, 1.0 and 1.5 mm were not significantly different, and the AFRs of responses to 2.0 mm and 3.0 mm were not significantly different (p<0.05 ANOVA test with multiple comparisons).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim presents statistical analysis results comparing average firing rates across different stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "a1e1578e-4106-46a3-837f-e73497ba84b0",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C21",
+      "claim": "The difference \u0394AFR in AFR between the two sides of a stimulus correlated very weakly with the difference between their SP (R\u00b2 = 0.066 for \u0394AFR vs R\u00b2 = 0.997 for \u0394IBI).",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the difference \u0394AFR in AFR between the two sides of a stimulus correlated very weakly with the difference between their SP (R2 = 0.066 for \u0394AFR vs R2 = 0.997 for \u0394IBI, compare Figure 9e and Figure 9d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim presents a comparison of correlation strengths between two different neural coding schemes, with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "f11a10f3-0fb1-4e5d-9b97-3b33041c9408",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C22",
+      "claim": "No logistic function of the difference in AFR was able to fit DAS behavioral responses (R\u00b2 = 0.04, p = 0.8).",
+      "claim_type": "EXPLICIT",
+      "source": "Note that no logistic function of the difference in AFR was able to fit DAS behavioral responses (R2 = 0.04, p = 0.8), which was a significant contrast with the perfect fit achieved with \u0394IBI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim presents statistical modeling results showing poor fit for rate-based coding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "4c887005-7af8-47dd-8188-96cab9c51830",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C23",
+      "claim": "The rate code was not responsible for the subject perception of the presented textures.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, because the total spike count was not able to encode differences between stimuli to a degree compatible with behavioral responses, we concluded that the rate code was not responsible for the subject perception of the presented textures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the analysis of behavioral and neural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "4f61a0b1-ec0f-4d05-a8d0-fd1e426be63a",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C24",
+      "claim": "The subject exploited the temporal structure of the response to discriminate the stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "This further strengthens the hypothesis that the subject exploited the temporal structure of the response to discriminate the stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an interpretation based on the analysis showing poor fit for rate coding and good fit for temporal coding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "5c3fdaa3-9c61-446f-934e-2a69e99e5b9e",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C25",
+      "claim": "When sliding occurs at fixed velocity, the temporal structure of the sensor output is a linear transformation of the spatial structure of the texture.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it is already known that, when sliding occurs at fixed velocity, the temporal structure of the sensor output is a linear transformation of the spatial structure of the texture (Oddo et al., 2011b; 2011c) , at least for regular textures such as those considered here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior work establishing this relationship.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "0bb17cd0-1f8d-4034-a833-7e6111b5a015",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C26",
+      "claim": "Recent neuroprosthetic studies showed that pressure sensation can be elicited by injecting a train of pulses with a fixed shape and different frequencies via intrafascicular or cuff interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent neuroprosthetic studies showed that pressure sensation can be elicited by injecting a train of pulses with a fixed shape and different frequencies via intrafascicular (Dhillon and Horch, 2005) or cuff (Tan et al., 2014; Ortiz-Catalan et al., 2014) interfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes prior research findings with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "33e95388-a45a-4baa-b942-94cfb014f5cd",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C27",
+      "claim": "Reconstruction of tactile sensation of force levels and object shape was shown using multi-electrode stimulation via pulses with current amplitude linearly increasing with sensor outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, reconstruction of tactile sensation of force levels and object shape was shown using multi-electrode stimulation via pulses with current amplitude linearly increasing with sensor outputs (Raspopovic, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes prior research findings with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "6d163b72-c0b2-4732-bde4-649a993dc4f5",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C28",
+      "claim": "This work focused on eliciting textural features by injecting a biomimetic temporal structure of pulse trains with a fixed current amplitude in each experimental session.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, this work focused on eliciting textural features by injecting a biomimetic (Saal and Bensmaia, 2015) temporal structure of pulse trains with a fixed current amplitude in each experimental session.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the approach taken in the current study, distinguishing it from prior work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "0c774687-a590-4297-b894-5e0a46065180",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C29",
+      "claim": "The range of tested tactile stimuli in the current work is on the order of millimeters (0.5\u20133.0 mm).",
+      "claim_type": "EXPLICIT",
+      "source": "The range of tested tactile stimuli in the current work is on the order of millimeters (0.5\u20133.0 mm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental parameters used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "84867848-7c5f-4556-86e4-340c463476a9",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C30",
+      "claim": "The tested stimuli pertain to the lower boundary (towards the fine region) of stimuli that are typically classified as coarse.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these stimuli pertain to the lower boundary (towards the fine region) of stimuli that are typically classified as coarse (Weber et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim characterizes the stimuli used in the study with reference to established classification.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "bca2e83b-7f57-4985-b7eb-22c66e4ab4e3",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C31",
+      "claim": "Texture discrimination can be artificially provided to users using both needle microstimulation in intact subjects and implantable intraneural interfaces in a transradial amputee.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of this study show that the texture discrimination skills can be artificially provided to users using both needle microstimulation in intact subjects and implantable intraneural interfaces in a transradial amputee.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes the main findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "253a8eae-826e-4296-8954-cd7223c902b9",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C32",
+      "claim": "Both in needle and TIME-based experiments, the subjects were able to use 'artificial' feedback to perform a 3AFC psychophysical test with very good and comparable performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Both in needle and TIME-based experiments, the subjects were able to use our 'artificial' feedback to perform a 3AFC psychophysical test with very good and comparable performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes the behavioral results across both experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "782b9dd8-2843-4b2a-bc09-378ff9b69b39",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C33",
+      "claim": "The similarity between the needle and TIME-based stimulations was predicted by the hybrid FEM-biophysical model.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity between the needle and TIME-based stimulations was predicted by our hybrid FEM-biophysical model, which supported the transition from acute preparation towards chronically implanted electrodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes how computational modeling supported the experimental design.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "702d667f-24f9-4b18-b90e-66f9630f8283",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C34",
+      "claim": "Model predictions were confirmed by the quasi-perfect discrimination (96% overall stimuli) achieved by DAS amputee with TIME stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, model predictions were confirmed by the quasi-perfect discrimination (96% overall stimuli, see Figure 1c, and see Figure 9a,b for the analysis on a per-stimulus basis) that was achieved by DAS amputee with TIME stimulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes how experimental results validated computational model predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "9fd307f5-dfeb-4d25-880b-5a481600361c",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C35",
+      "claim": "A temporal neuronal coding of spatial structure can successfully elicit tactile cues in case of coarse surfaces explored under a passive-dynamic-touch protocol with constant sliding velocity and regulated load force.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of the present study showed that a temporal neuronal coding of spatial structure (Weber et al., 2013) can successfully elicit tactile cues in case of coarse surfaces that were explored under a passive- dynamic-touch protocol with a constant sliding velocity and a regulated load force, thus, involving controlled motion of the tactile stimulus while the fingertip was not moving (Yoshioka et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes the main finding regarding neural coding strategy, with citations to relevant literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "539399af-d01e-4505-addf-77661c5b3b35",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C36",
+      "claim": "The passive-touch framework allows decoupling of cutaneous information from kinaesthetic afferent sensory feedback and efference copy associated with movement dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "In such passive-touch framework there is a lack of voluntary movement. This allows decoupling of cutaneous information (which was our interest in this study) from the kinaesthetic afferent sensory feedback and efference copy associated with movement dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim explains the rationale for the experimental design choice.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "c4638bd2-e12d-4bb0-98f9-947f0f7b989b",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C37",
+      "claim": "No significant differences in topography or frequency modulation clustering were shown by the EEG signals between substitutive neuromorphic electrical stimulation and natural mechanical tactile stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it was possible to compare the EEG activities evoked by the substitutive neuromorphic electrical stimulation versus the natural mechanical tactile stimulation. No significant differences in topography or frequency modulation clustering were shown by the EEG signals in the two cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes the EEG analysis results comparing the two stimulation modalities.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "9e3e55a9-af67-4c4f-80f8-71fd4063a8f6",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C38",
+      "claim": "Injecting the sensor output via a single stimulation channel was sufficient to induce accurate responses in the designed experimental protocol with locked indentation force and tangential velocity of stimulus pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "The behavioral results showed that injecting the sensor output via a single stimulation channel was sufficient to induce accurate responses (particularly from DAS) in the designed experimental protocol with locked indentation force and tangential velocity of stimulus pairs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim summarizes a key finding about the sufficiency of single-channel stimulation under controlled conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "4f247b08-a07c-440b-8b31-eef75a121a13",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C39",
+      "claim": "For more complex texture discriminating tasks, integration of spatiotemporal information from neighboring receptors distributed along the fingertip and multi-channel stimulation combined with amplitude modulation would be needed in less restrictive conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for more complex texture discriminating tasks it is plausible that integration of spatiotemporal information from neighboring receptors distributed along the fingertip (Johansson and Flanagan, 2009; J\u00f6rntell et al., 2014) and, thus, multi-channel stimulation, combined with amplitude modulation (Raspopovic, 2014), would be needed in less restrictive conditions that involve velocity or force variations and everyday life stimuli (Weber et al., 2013; D\u00e9peault et al., 2008; Rongala et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation about future requirements based on the current findings and cited literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "f3dbb93c-58db-4354-9d1a-6d9712fa9307",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C40",
+      "claim": "Neuromorphic stimulation could be a natural and effective tool for eliciting texture discrimination abilities via hand prostheses.",
+      "claim_type": "EXPLICIT",
+      "source": "The promising results obtained with microstimulation in four intact subjects, combined with robust translational indications from the hybrid model and an excellent outcome from one amputee, prompt the idea that neuromorphic stimulation could be a natural and effective tool for eliciting texture discrimination abilities via hand prostheses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the combined results of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "3f6fa667-a7f6-4aaa-ba78-6b25068010d4",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C41",
+      "claim": "Neuroprosthetic research can contribute to the evaluation of open neuroscientific hypotheses about tactile perception for the advancement of understanding of human somatosensory physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuroprosthetic research (Tan et al., 2014; Raspopovic, 2014; Dhillon and Horch, 2005; Rossini et al., 2010) can in parallel contribute to the evaluation of open neuroscientific hypotheses about tactile perception (Weber et al., 2013; Yoshioka et al., 2001; Johansson and Flanagan, 2009; Hollins and Risner, 2000) for the advancement of understanding of human somatosensory physiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim discusses the broader implications of neuroprosthetic research with citations to relevant literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "5df2fe40-d4fe-41dd-a062-d96205189bd1",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C42",
+      "claim": "The MEMS sensor has 4 transducing piezoresistors implanted at the base of a cross-shaped structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The core element of the artificial fingertip was a Micro Electro Mechanical System (MEMS) sensor with 4 transducing piezoresistors implanted at the base of a cross-shaped structure (Beccai et al., 2005) (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the technical specifications of the sensor used in the study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "bbae38b8-bc5f-4000-88ca-c12b6df19989",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C43",
+      "claim": "The Izhikevich spiking neuron model was originally conceived to emulate neuron-to-neuron signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Such model was originally conceived to emulate neuron-to-neuron signaling, whereas in this modified implementation the input is haptic rather than synaptic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the original purpose of the model and how it was adapted for this study.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "88280100-5221-45a2-96a4-7adf05e97832",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C44",
+      "claim": "The MNT process emulated to some extent the neural representation of stimulus spatial patterning observed in previous non-human and human primate recordings of SA1 afferents associated to Merkel mechanoreceptors.",
+      "claim_type": "EXPLICIT",
+      "source": "The MNT process emulated to some extent the neural representation of stimulus spatial patterning observed in previous non-human (Weber et al., 2013; Darian-Smith et al., 1980a) and human (Oddo et al., 2011b) primate recordings of SA1 afferents associated to Merkel mechanoreceptors, a functionally relevant class of tactile units able to encode medium-coarse textures (Weber et al., 2013; Phillips and Johnson, 1981; Yoshioka et al., 2001; Darian-Smith et al., 1980b) such as the surfaces evaluated in the present study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes how the MNT process was designed to mimic biological neural responses, with citations to prior neurophysiological studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "bf9866e8-c0c2-4b0c-84a0-31e0e5ae2736",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C45",
+      "claim": "The resulting firing was characterized by biomimetic bursts of multiple spikes per ridge with coarser surfaces, by triplets or duplets for surfaces with medium coarseness, down to a single spike per ridge with finer surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting firing (Figure 2) was characterized by biomimetic (Sathian et al., 1989) bursts of multiple spikes per ridge with coarser surfaces (see 3.0 mm and 2.0 mm SP in Figure 10), by triplets or duplets for surfaces with medium coarseness (see 1.5 mm and 1.0 mm SP in Figure 10), down to a single spike per ridge with finer surfaces (see 0.5 mm SP in Figure 10), thus implementing a neural code of stimulus geometry based on the modulation of discharge rather than on the mean discharge frequency, resembling SA1 electrophysiological recordings under similar tactile stimulation conditions (Darian-Smith et al., 1980a; Phillips and Johnson, 1981) (Figure 10\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the characteristics of the artificial neural responses with references to figures and citations to biological recordings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "36d67a8f-de58-40bb-989e-e25eb5901bec",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C46",
+      "claim": "The instantaneous firing rate of the implemented artificial mechanoreceptor model achieves a modulation up to tens of spikes/s, coherently with typical values reported in the literature for SA1 units.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the instantaneous firing rate of the implemented artificial mechanoreceptor model achieves a modulation up to tens of spikes/s (see red traces in Figure 10), coherently with typical values reported in the literature for SA1 units (Johnson, 2001; Phillips and Johnson, 1981).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim compares the artificial system's firing rates to biological values from the literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "88850bf1-0717-4c3d-b68f-60210792672a",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C47",
+      "claim": "Four intact subjects (2 males and 2 females, 25\u201326 years old) underwent the experiments of texture discrimination with tactile feedback elicited by stimulation injected through two microneurographic electrodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Four intact subjects (2 males and 2 females, 25\u201326 years old) underwent the experiments of texture discrimination with tactile feedback elicited by a stimulation injected through two microneurographic electrodes (FHC UNP40GAS, shaped as needles).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the participant demographics and experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "1ed1430b-b03b-451f-a78a-0370f06a77b5",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C48",
+      "claim": "The enrolment was subjected to signing a written Informed Consent, approved by the Campus Bio-Medico University Ethics Committee.",
+      "claim_type": "EXPLICIT",
+      "source": "The enrolment was subjected to signing a written Informed Consent, approved by the Campus Bio-Medico University Ethics Committee, where this set of experiments took place.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the ethical approval for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "fe47f5ec-e108-4b12-9c97-eb26ecef473f",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C49",
+      "claim": "Participant DAS had suffered a traumatic transradial left arm amputation 10 years before the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Participant DAS had suffered a traumatic transradial left arm amputation 10 years before the experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim provides background information about the amputee participant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "341bf5e1-3fac-4ca9-96e8-c171e8d1e689",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C50",
+      "claim": "DAS was selected from a group of 31 persons with hand amputation because of the stump characteristics and his psychophysical abilities.",
+      "claim_type": "EXPLICIT",
+      "source": "He was selected from a group of 31 persons with hand amputation because of the stump characteristics and his psychophysical abilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the selection criteria for the amputee participant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "8f190a7f-3d86-45ad-8c22-93eacd2f4bdf",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C51",
+      "claim": "All procedures were approved by the Institutional Ethics Committees of Policlinic A. Gemelli at Catholic University, IRCCS S. Raffaele Pisana (Rome), the Ethics Committee of Campus Bio-Medico University and the Italian Ministry of Health.",
+      "claim_type": "EXPLICIT",
+      "source": "All procedures were approved by the Institutional Ethics Committees of Policlinic A. Gemelli at Catholic University, where the surgery was performed, IRCCS S. Raffaele Pisana (Rome), where the experiments were performed, the Ethics Committee of Campus Bio-Medico University and the Italian Ministry of Health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the ethical approvals for the amputee experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "24983ffb-4210-465a-9904-a937361deeec",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C52",
+      "claim": "TIME neural interfaces were implanted under general anaesthesia.",
+      "claim_type": "EXPLICIT",
+      "source": "TIME neural interfaces were implanted under general anaesthesia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the surgical procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "799df03f-f90a-400e-9b79-5d168c8791e1",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C53",
+      "claim": "Two TIME electrodes were inserted into the nerve trunk of each nerve (median and ulnar, only the former of which was used for electrical stimulation in the present work).",
+      "claim_type": "EXPLICIT",
+      "source": "Following an epineurial microdissection, performed under a surgical microscope (Zeiss, Pentero) to visualize the fascicles, two TIME electrodes were inserted into the nerve trunk of each nerve (median and ulnar, only the former of which was used for electrical stimulation in the present work).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the surgical implantation procedure and which electrodes were used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "57449545-ffdd-49f3-b339-308c2443d307",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C54",
+      "claim": "The electrodes were removed after 30 days, in accordance with EU guidelines.",
+      "claim_type": "EXPLICIT",
+      "source": "The electrodes were removed after 30 days, in accordance with EU guidelines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the duration of the implant and regulatory compliance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "b05faf59-2358-40f7-bd78-6e895eac7d5e",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C55",
+      "claim": "At the time of removal, the TIME electrodes were still performing extremely well, and did not cause any discomfort to the subject.",
+      "claim_type": "EXPLICIT",
+      "source": "At the time of removal however, the TIME electrodes were still performing extremely well, and did not cause any discomfort to the subject.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim reports the functional status and safety of the implanted electrodes at removal.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "0fa49526-d092-425e-b68a-b013d431ab46",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C56",
+      "claim": "The follow-up of the clinical condition of the participant almost 2 years after the end of the protocol did not reveal any subjective or objective side effects.",
+      "claim_type": "EXPLICIT",
+      "source": "The follow-up of the clinical condition of the participant almost 2 years after the end of the protocol did not reveal any subjective or objective side effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim reports long-term safety outcomes for the amputee participant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "ac768d35-cf85-4a5f-b03b-fe04e9443336",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C57",
+      "claim": "The tactile stimuli were gratings fabricated with 3D printing of plastic material consisting of a sequence of alternating ridges and grooves with spatial period (SP) from a minimum of 0.5 mm to a maximum of 3.0 mm.",
+      "claim_type": "EXPLICIT",
+      "source": "The tactile stimuli were gratings, fabricated with 3D printing of plastic material (Project HD 3000, 3D Systems), consisting of a sequence of alternating ridges and grooves with spatial period (SP) from a minimum of 0.5 mm to a maximum of 3.0 mm depending on the stimulus and on the half portion of the surface under test (Figure 1b, Figure 2, Figure 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the fabrication and specifications of the tactile stimuli used in the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "c57f8ebe-7afe-4c76-be97-4fc5346cbd3b",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C58",
+      "claim": "The sequence of presented stimuli was randomized within sessions of 16 trials composed of 4 presentations of the 4 surfaces \u22060.0, \u22061.0, \u22062.0 and \u22062.5.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequence of presented stimuli was randomized within sessions of 16 trials composed of 4 presentations of the 4 surfaces \u22060.0, \u22061.0, \u22062.0 and \u22062.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental protocol design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "62274cd0-d699-46d7-9798-49e9f899404e",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C59",
+      "claim": "The 95% confidence intervals for performance estimate from individual subjects responses were computed with exact Clopper Pearson method.",
+      "claim_type": "EXPLICIT",
+      "source": "The 95% confidence intervals for performance estimate from individual subjects responses were computed with exact Clopper Pearson method (binofit function in Matlab) and compared against chance level (1/3) to assess performance significance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the statistical methods used for performance analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "8c5d710d-d260-442c-8979-adbe97c6c90f",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C60",
+      "claim": "EEG signals were recorded in all microstimulation sessions using a 64 channel EEG device with a 2 kHz sampling rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to investigate the neural correlates of natural and substitutive texture discrimination, EEG signals were recorded in all microstimulation sessions using a 64 channel EEG device (SD LTM Express, Micromed S.p.A., Italy) with a 2 kHz sampling rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the EEG recording equipment and parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "f0161b65-775f-4c7d-a423-451c78e2c6ff",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C61",
+      "claim": "The montage was in accordance with the 5% 10/20 system.",
+      "claim_type": "EXPLICIT",
+      "source": "The montage was in accordance with the 5% 10/20 system (Oostenveld and Praamstra, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the EEG electrode placement system used, with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "9675cf97-252a-4f8e-9712-9f8401187853",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C62",
+      "claim": "Careful scalp preparation granted electrodes impedance below 5 k\u03a9 in at least 90% of derivations, as measured at the experiment onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Careful scalp preparation granted electrodes impedance below 5 k\u03a9 in at least 90% of derivations, as measured at the experiment onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the quality control measures for EEG recording.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "b7c6c45f-1ce1-4fa7-9f59-2fadaa1b1c16",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C63",
+      "claim": "EEG signals were processed via independent component analysis (ICA) filtering to remove non-neural sources and artifacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Data were analyzed by Matlab scripts based on the EEGLAB toolbox (Delorme and Makeig, 2004). EEG signals were processed via independent component analysis (ICA) filtering to remove non-neural sources and artifacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the signal processing methods used for EEG analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "ed0ce048-3304-489d-94f3-e1b385ef1cf8",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C64",
+      "claim": "For subject M4, a realistic head model was obtained using a T1-weighted magnetic resonance (MR) image of the subject and a 4-layer model accounting for scalp, skull, brain tissue, and cerebrospinal fluid.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding source localization, for subject M4 a realistic head model was obtained by means of the NFT toolbox (Acar and Makeig, 2010) using a T1-weighted magnetic resonance (MR) image of the subject and a 4-layer model accounting for scalp (\u03c3 = 0.33), skull (\u03c3 = 0.0132), brain tissue (\u03c3 = 0.33), and cerebrospinal fluid (\u03c3 = 1.79) respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the methods used for EEG source localization modeling.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "9196e5bc-9829-4436-a9d8-fc7a762794d4",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C65",
+      "claim": "The Finite Element Method (FEM) was used for the numerical solution of the forward problem with Boundary Element Method (BEM) meshes as boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "The Finite Element Method (FEM) was used for the numerical solution of the forward problem with Boundary Element Method (BEM) meshes as boundaries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the computational methods used for EEG source localization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "095b79a4-5421-4b3f-8c02-aa42b5a65899",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C66",
+      "claim": "Source localization was performed on the most reliable short-latency potential of cortical origin, namely the P27 peak.",
+      "claim_type": "EXPLICIT",
+      "source": "Source localization was then performed on the most reliable short-latency potential of cortical origin, namely the P27 peak (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes which EEG component was analyzed for source localization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "ddb39121-ebd9-4e5c-a73b-1dc37a4bd88f",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C67",
+      "claim": "EEG functional connectivity analysis was performed using the eLORETA exact low-resolution electromagnetic tomography software.",
+      "claim_type": "EXPLICIT",
+      "source": "EEG functional connectivity analysis was performed using the eLORETA exact low-resolution electromagnetic tomography (Vecchio et al., 2015; Pascual-Marqui, 2011; Vecchio et al., 2014a; 2014b; 2015b) software.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the software and methods used for connectivity analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "261e11f6-c3a7-475b-b647-f445eaa5e86e",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C68",
+      "claim": "Brain connectivity was computed with sLORETA/eLORETA software in 7 regions, positioning the center in Brodmann Areas (BAs: 1\u20137) separately on the left and right hemispheres.",
+      "claim_type": "EXPLICIT",
+      "source": "To obtain a topographic view of the sensorimotor network, brain connectivity was computed with sLORETA/eLORETA software in 7 regions, positioning the center in Brodmann Areas (BAs: 1\u20137) separately on the left and right hemispheres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the regions of interest used for connectivity analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "cf7e0ef4-9e84-4b47-8af6-cf2c87819d1b",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C69",
+      "claim": "Intracortical Lagged Linear Coherence was computed between all possible pairs of the ROIs for each of the five independent EEG frequency bands: delta (2\u20134 Hz), theta (4\u20138 Hz), alpha (8\u201313 Hz), low beta (13\u201320 Hz) and high beta (20\u201330 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "For each subject and for each hemisphere, among the eLORETA current density time series of the 7 Regions of Interest (ROIs), intracortical Lagged Linear Coherence, extracted using a sphere with 19 mm of radius (Pascual-Marqui, 2011; 2007) , was computed between all possible pairs of the ROIs for each of the five independent EEG frequency bands: delta (2\u20134 Hz), theta (4\u20138 Hz), alpha (8\u201313 Hz), low beta (13\u201320 Hz) and high beta (20\u201330 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the connectivity metric and frequency bands used in the analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "13dec4a1-55a5-4848-a5fc-eeb06d936d7b",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C70",
+      "claim": "The clustering coefficient characterizes the tendency of the nearest neighbors of a node to be interconnected.",
+      "claim_type": "EXPLICIT",
+      "source": "The measure considered here was the clustering (C) that characterizes the tendency of the nearest neighbors of a node to be interconnected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim defines the graph theory metric used in the analysis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "7a8ded15-c992-4e3f-b653-9c3cb8f21b21",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C71",
+      "claim": "Hybrid models account for the anisotropy of extracellular conductivity during the calculation of the electrical field induced by the injection of electrical current into the tissue and for the nonlinear response of cells to the extracellular stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Hybrid models (Raspopovic et al., 2011; McIntyre et al., 2002) account for the anisotropy of extracellular conductivity during the calculation of the electrical field induced by the injection of the electrical current into the tissue, present in real nerves, and for the nonlinear response of cells to the extracellular stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the capabilities of hybrid computational models with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "191cdc2d-5ad3-422d-9288-a728ad294b24",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C72",
+      "claim": "An anatomically shaped geometrical model of the median nerve was generated by image segmentation.",
+      "claim_type": "EXPLICIT",
+      "source": "To do so, an anatomically shaped geometrical model of the median nerve (Jabaley et al., 1980) was generated by image segmentation (ImageJ, USA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the method used to create the nerve model geometry.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "a0de9b34-f6af-4550-8ece-da1c5a3e4b44",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C73",
+      "claim": "Perineurium had a thickness of 3% of the diameter of the fascicles.",
+      "claim_type": "EXPLICIT",
+      "source": "Perineurium had a thickness of 3% of the diameter of the fascicles (Grinberg et al., 2008) , and coordinates were interpolated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes an anatomical parameter used in the model, with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "292472cf-dbfd-40e5-b657-a54d6292cfec",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C74",
+      "claim": "The nerve diameter had a maximum of 4.6 mm and minimum of 2.3 mm, as obtained from unpublished histological data provided by Dr. Xavier Navarro and from post-mortem human cadavers dissections at Universitat Autonoma de Barcelona, Spain.",
+      "claim_type": "EXPLICIT",
+      "source": "The nerve diameter had a maximum of 4.6 mm and minimum of 2.3 mm, as obtained from unpublished histological data provided by Dr. Xavier Navarro and from post-mortem human cadavers dissections at Universitat Autonoma de Barcelona, Spain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes anatomical parameters used in the model based on unpublished data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "c309bf79-fc60-426b-9a20-29a31f3502a2",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C75",
+      "claim": "MRG model was used to model the nerve tactile sensory fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "On the biophysical side, MRG model (McIntyre et al., 2002) was used to model the nerve tactile sensory fibers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the biophysical model used for nerve fibers, with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "8eefc5bd-b7aa-4a50-a938-b7b5c8e0ab28",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C76",
+      "claim": "The MRG model is capable of reproducing several experimental aspects of cells dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "The model (available in NEURON model repository) is capable of reproducing several experimental aspects of cells dynamics (McIntyre et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the capabilities of the MRG model with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "200d152e-963c-4f8f-bfca-018c54407b65",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C77",
+      "claim": "A fiber was considered recruited when a generated action potential travelled along its whole length (i.e., reached the last node of Ranvier).",
+      "claim_type": "EXPLICIT",
+      "source": "A fiber was considered recruited when a generated action potential travelled along its whole length (i.e., reached the last node of Ranvier).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim defines the criterion used for fiber recruitment in the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "2b329eaa-b952-40c8-b658-aa1d795bc1a2",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C78",
+      "claim": "The sensory axon populations were constructed by using a probabilistic distribution of fibers diameters for different tactile units of the human hand, resulting in two Gaussian distributions which differentiate nociceptive fibers from fibers responsible for pressure/touch sensation.",
+      "claim_type": "EXPLICIT",
+      "source": "The sensory axon populations were constructed (NEURON, USA) by using a probabilistic distribution of fibers diameters (Vallbo and Johansson, 1984) for different tactile units of the human hand, resulting in two Gaussian distributions which differentiate nociceptive fibers from fibers responsible for pressure/touch sensation, and the latter was used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes how fiber populations were modeled, with citation to the source of diameter distributions.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "e5844918-6fd2-4e5b-88ae-7513d305c1b7",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C79",
+      "claim": "One of the assumptions constraining the model was that the stimulation of different fiber types, such as nociceptive fibers, was not induced at the used current range.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the assumptions constraining the model was that the stimulation of different fiber types, such as nociceptive fibers, was not induced, at used current range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes an assumption made in the modeling work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "2de463a6-4398-4672-b887-336028ac317d",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C80",
+      "claim": "A total amount of 100 modeled fibers for each fascicle were placed randomly in the specific target fascicle.",
+      "claim_type": "EXPLICIT",
+      "source": "A total amount of 100 modeled fibers for each fascicle were placed randomly in the specific target fascicle, for several placements (Figure 8), as explained in continuation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes a parameter of the computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "7380a86f-de73-4176-a0a4-e89399482bcb",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C81",
+      "claim": "It was assumed that fibers within one fascicle innervate the same hand area.",
+      "claim_type": "EXPLICIT",
+      "source": "As the fiber organization within different fascicles in the nerve is unknown, we assumed that fibers within one fascicle innervate the same hand area (Jabaley et al., 1980) (i.e., the fibers in one fascicle are innervating a single finger tip and not many of them).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes an assumption made in the modeling work, with citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "04121d15-11ec-425d-9291-30cc5e11cc0d",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C82",
+      "claim": "For every position of stimulating electrode/needle, 9 populations having different extensions and centroids were implemented for the same large fascicle.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, since there is an inherent anatomical uncertainty in placement and extension of fibers innervating a specific hand district, for every position of stimulating electrode/needle we implemented 9 populations having different extensions and centroids for the same large fascicle (i.e., spanning from having the whole fascicle uniformly populated, to the case of very concentrated population where the fibers are almost touching each-other, Figure 8 and Figure 8\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes how anatomical uncertainty was addressed in the modeling, with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "5f80738e-aa56-4983-a960-b73f6df55714",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C83",
+      "claim": "The analysis has been performed for the range of significant fascicle sizes, defined as median size representatives of three groups: small (1 population implemented), medium (5 populations implemented) and large (9 populations).",
+      "claim_type": "EXPLICIT",
+      "source": "Then the analysis has been performed for the range of significant fascicle sizes, defined as median size representatives of three groups: small (1 population implemented), medium (5 populations implemented) and large (9 populations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the scope of the modeling analysis across different fascicle sizes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "abf98711-a7aa-4e8f-9389-1f58c5fa9cae",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C84",
+      "claim": "The modeling resulted in n = 90 simulations for TIME and n = 45 simulations cases for microneedle.",
+      "claim_type": "EXPLICIT",
+      "source": "Different device placements were also studied: within, close, or far from fascicle, finally resulting in n = 90 simulations for TIME and n = 45 simulations cases for microneedle (this is because for every position of needle tip there are 2 corresponding positions of TIME: left and right).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the total number of simulations performed for each interface type.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "bcaa9e4f-2533-45aa-afd5-9b9183e95ea3",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C85",
+      "claim": "The microstimulation needle was replicated as a cylinder with a cone-like ending: the cylinder had 3 mm length, and cone (tip) with semi-angle 12.78\u00b0 and shank diameter 250 \u03bcm.",
+      "claim_type": "EXPLICIT",
+      "source": "The microstimulation needle (FHC UNP40GAS) was replicated as a cylinder with a cone-like ending (Figure 6): the cylinder had 3 mm length, and cone (tip) with semi-angle 12.78\u00b0 and shank diameter 250 \u03bcm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the geometric specifications of the modeled microneedle.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "ac746d71-9c73-4338-955f-6fca20e55235",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C86",
+      "claim": "The whole microneedle structure was insulated and had electrical conductivity of 6.67 10\u207b\u00b9\u2074 S/m and the tip was non-insulated with a conductivity of 1.89 10\u2077 S/m.",
+      "claim_type": "EXPLICIT",
+      "source": "The whole structure was insulated and had electrical conductivity of 6.67 10\u201314 S/m and the tip was non-insulated with a conductivity of 1.89 107 S/m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the electrical properties of the modeled microneedle.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "5f1b044d-cac4-4504-a7c0-b8788bd2f309",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C87",
+      "claim": "Two models of microneedle tip were implemented to account for uncertainty in the precise un-insulated cone dimension.",
+      "claim_type": "EXPLICIT",
+      "source": "Since in the case of microstimulation needle the tip was un-insulated by the neurologist, imminently before the insertion, the precise un-insulated cone dimension is not known. In order to account for this uncertainty, two models were implemented and the results analyzed for both (Figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes how uncertainty was addressed in the modeling.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "16184df3-5766-484e-a9d4-bd37c6f6851b",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C88",
+      "claim": "The TIME electrode was built as a rectangular structure where seven circled active sites were placed in each side of the structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The TIME electrode was built as a rectangular structure where seven circled active sites were placed in each side of the structure (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim describes the geometric specifications of the modeled TIME electrode.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "0691177c-983e-4106-81e3-eeaa45e24124",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C89",
+      "claim": "The TIME active sites had radius of 40 \u03bcm and thickness of 300 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The radius for the active sites was 40 \u03bcm and the thickness 300 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the geometric specifications of the TIME active sites.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "d3049ab6-e870-4ce9-a19c-8b45ee5b56e3",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C90",
+      "claim": "The overall TIME structure had 4 mm length, 0.35 mm width and 20 \u03bcm thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall structure had 4 mm length, 0.35 mm width and 20 \u03bcm thickness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the geometric specifications of the TIME electrode.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "2397b06d-6eb7-4ef4-a620-06e84991ed0e",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "claim_id": "C91",
+      "claim": "The similarity between needle and TIME is estimated by comparison of charges necessary for 10% of recruitment of fibers by means of Kruskal-Wallis test, with significance level fixed at 0.05.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity between needle and TIME is estimated by comparison of charges necessary for 10% of recruitment of fibers, for respectively 45 and 90 populations computed, by means of Kruskal-Wallis test, with significance level fixed at 0.05.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the statistical method used to compare the two interfaces.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "03bd12bd-40ab-4d01-bd6b-905126ede0d6",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Intact subjects achieved texture discrimination above 77% (107/138 trials) using percutaneous needle microstimulation of the median nerve with neuromorphic tactile feedback. Discrimination performance was correlated with differences in spatial period between surface pairs, demonstrating that artificial texture discrimination can be provided via needle microstimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 provide experimental evidence with specific performance metrics (77%, 107/138 trials) and statistical validation (confidence intervals, correlation analysis). The results are supported by appropriate psychophysical testing (3AFC protocol) and show significant above-chance performance. Claims C31-C32 appropriately summarize these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "4f8e200d-d4ba-469f-ac3a-4cef6237619b",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "EEG analysis revealed no significant differences between electrical microstimulation and natural mechanical tactile stimulation in terms of event-related potentials, cortical topography, or frequency modulation clustering. Both stimulation modalities produced similar contralateral sensorimotor cortex activation patterns and SEP source localization to the postcentral gyrus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 present EEG results with appropriate statistical testing (Monte Carlo statistics with cluster correction, 3-way ANOVA with F(1,6)=6.48, p<0.05) and adequate statistical power (0.75-0.79). Source localization results (C9) are consistent with expected physiological responses. The conclusion (C37) is well-supported by the data showing equivalence between stimulation modalities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "3784af84-a8d1-4c52-953e-85a3e0c9bb1e",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A hybrid FEM-biophysical computational model of the median nerve predicted that microneedle and TIME interfaces would produce similar stimulation thresholds (p>0.05, Kruskal-Wallis test) and comparable ranges of electric charge necessary for fiber recruitment, supporting the translatability from acute needle microstimulation to chronic implantable interfaces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11 present the key modeling results with appropriate statistical comparison (Kruskal-Wallis test, p>0.05). Claims C71-C91 provide comprehensive methodological details about the model construction, including anatomical parameters, biophysical models, and simulation scope (n=90 for TIME, n=45 for microneedle). The model appropriately accounts for anatomical uncertainty and uses validated biophysical models (MRG model). Statistical comparison is appropriate for the non-parametric data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "fc66b2d1-3d50-4ac6-a6d5-4e3ddab4efa1",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Amputee subject DAS achieved 96% discrimination accuracy (77/80 trials) using TIME-based intraneural stimulation, which was higher than microstimulation performance. DAS reported realistic sensations localized to the palmar side of the missing index finger, confirming model predictions of successful translation to implantable interfaces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C12 provides specific performance metrics (77/80, 96%) that are statistically significant based on the confidence interval analysis described in C59. Claims C13-C14 report subjective and comparative findings. However, C15's attribution to training/prolonged use is speculative and not directly tested. Despite this limitation, the overall result is supported by the high discrimination performance and model validation (C34).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "e2460d16-da77-44c9-8b92-a3fd8be4692a",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Analysis of neural coding strategies revealed that subject DAS's behavioral responses were based on temporal coding (inter-burst interval, IBI) rather than rate coding (average firing rate, AFR). IBI correlated almost perfectly with spatial period differences (R\u00b2=0.997, p<0.00001), while AFR showed weak correlation (R\u00b2=0.066). Behavioral responses were perfectly fit by IBI-based logistic functions (R=1) but not by AFR-based functions (R\u00b2=0.04, p=0.8).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C22 present a comprehensive analysis comparing temporal vs. rate coding with strong statistical evidence. The near-perfect correlation for IBI (R\u00b2=0.997) and poor correlation for AFR (R\u00b2=0.066) provide compelling evidence. The perfect logistic fits for IBI (R=1) versus poor fits for AFR (R\u00b2=0.04, p=0.8) strongly support the conclusion. Claims C23-C24 appropriately interpret these findings. The statistical tests are appropriate and the effect sizes are large.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "8c140f71-c3ed-41a6-9d33-9bc554d618e7",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Temporal neuronal coding of spatial structure successfully elicited tactile discrimination of coarse surfaces under passive-dynamic-touch conditions with constant sliding velocity and regulated load force. The passive-touch framework allowed decoupling of cutaneous information from kinesthetic feedback.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25 and C35 are supported by prior literature citations and the experimental results demonstrating successful texture discrimination. Claim C36 provides appropriate rationale for the experimental design choice. The conclusion is well-supported by the behavioral and neural coding results, though the scope is appropriately limited to the specific experimental conditions tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "989147f8-d1fe-48f2-8889-2dd969669cde",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Single-channel stimulation was sufficient for accurate texture discrimination under controlled experimental conditions (locked indentation force and tangential velocity), but multi-channel stimulation with amplitude modulation would likely be needed for more complex tasks involving velocity/force variations and everyday stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C38 is supported by the experimental results showing high discrimination accuracy with single-channel stimulation. However, C39 is speculative about future requirements and is not directly tested in the current study. While the speculation is reasonable and supported by citations, it represents a hypothesis rather than a demonstrated result. The claim appropriately acknowledges limitations of the current approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "8fad0598-b661-4901-8e0b-4fde68e11772",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The mechano-neuro-transduction (MNT) system used a MEMS sensor with 4 piezoresistors and an adapted Izhikevich spiking neuron model to generate biomimetic neural responses that emulated SA1 afferent firing patterns observed in primate studies, with firing rates modulating up to tens of spikes/s and burst patterns varying with surface coarseness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 provide comprehensive technical description of the MNT system with appropriate citations to prior neurophysiological studies. The biomimetic nature is supported by comparisons to biological recordings (C44-C46) and the firing patterns are well-documented in Figure 10. The system appropriately adapts the Izhikevich model for haptic rather than synaptic input (C43).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "080c3fce-f439-4848-b5c3-332e07be3742",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Four intact subjects (2 males, 2 females, 25-26 years) participated in microstimulation experiments with appropriate ethical approval. One transradial amputee (DAS) was selected from 31 candidates and underwent TIME implantation surgery with electrodes remaining functional for 30 days and showing no adverse effects at 2-year follow-up.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C56 provide appropriate documentation of participant demographics, selection criteria, ethical approvals, surgical procedures, and safety outcomes. The long-term follow-up (C56) demonstrates safety. All procedures appear to have appropriate ethical oversight from multiple committees (C48, C51).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "be0a731c-8a17-450b-a234-aae2bbdd758d",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The experimental protocol used 3D-printed gratings with spatial periods from 0.5-3.0 mm presented in randomized 16-trial sessions. Statistical analysis used Clopper-Pearson confidence intervals compared to chance level (1/3). EEG was recorded with 64 channels at 2 kHz using standard 10/20 montage with impedances <5 k\u03a9, processed with ICA filtering, and analyzed using eLORETA for source localization and connectivity analysis across 5 frequency bands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C70 provide comprehensive methodological details for stimuli, experimental design, statistical analysis, and EEG recording/analysis. The methods are appropriate and well-documented with citations to established techniques (C59, C61, C63, C67). Quality control measures are described (C62). The statistical methods (C59) are appropriate for the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "5c4c15ca-d759-4ba7-a2c3-b89b5b42a670",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Tactile information from low-threshold mechanoreceptors in fingertips is fundamental for manipulation, biological sensors provide complex tactile information, and providing a sense of touch is the missing milestone in hand prosthesis development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 are background claims supported by multiple citations to established literature. These represent consensus views in the field and provide appropriate context for the study. They are not novel findings but rather establish the motivation for the research.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "9474dc1e-3b00-4d7a-832b-a53d2cba6954",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior neuroprosthetic studies showed pressure sensation and force/shape reconstruction using frequency modulation and amplitude modulation. The current work focused on textural features using biomimetic temporal structure with fixed amplitude, testing stimuli in the 0.5-3.0 mm range at the lower boundary of coarse textures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 appropriately summarize prior work with citations and distinguish the current approach. Claims C29-C30 accurately characterize the stimulus range used in the study. These claims provide appropriate context and positioning relative to prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    },
+    {
+      "id": "e6a98741-dee9-49a4-8274-ee6e1083e782",
+      "content_id": "e2d547e6-83ea-4450-a6f1-3b92e4ae3309",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Neuromorphic stimulation could be a natural and effective tool for texture discrimination via hand prostheses, and neuroprosthetic research can contribute to understanding human somatosensory physiology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 are appropriate conclusions drawn from the combined results of the study (microstimulation in intact subjects, modeling predictions, and amputee outcomes). While somewhat speculative about future applications, they are well-grounded in the presented evidence and appropriately cite relevant literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:17.836544Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cf0d8eac-cb54-4067-b584-89a2300d61b9",
+      "result_id": "03bd12bd-40ab-4d01-bd6b-905126ede0d6"
+    },
+    {
+      "claim_id": "e2fedc7e-d23f-40d2-b584-ad10b75cb6aa",
+      "result_id": "03bd12bd-40ab-4d01-bd6b-905126ede0d6"
+    },
+    {
+      "claim_id": "e3043074-36ac-49b7-972e-8688af649850",
+      "result_id": "03bd12bd-40ab-4d01-bd6b-905126ede0d6"
+    },
+    {
+      "claim_id": "bca2e83b-7f57-4985-b7eb-22c66e4ab4e3",
+      "result_id": "03bd12bd-40ab-4d01-bd6b-905126ede0d6"
+    },
+    {
+      "claim_id": "253a8eae-826e-4296-8954-cd7223c902b9",
+      "result_id": "03bd12bd-40ab-4d01-bd6b-905126ede0d6"
+    },
+    {
+      "claim_id": "020b0d92-24d2-45ed-bfc9-4d4b109c1fc8",
+      "result_id": "4f8e200d-d4ba-469f-ac3a-4cef6237619b"
+    },
+    {
+      "claim_id": "2ea3c2c2-2a5f-4575-a45e-fa7470496e2b",
+      "result_id": "4f8e200d-d4ba-469f-ac3a-4cef6237619b"
+    },
+    {
+      "claim_id": "3fd0ccb7-9f82-4249-a087-15f5ec76fc35",
+      "result_id": "4f8e200d-d4ba-469f-ac3a-4cef6237619b"
+    },
+    {
+      "claim_id": "c4638bd2-e12d-4bb0-98f9-947f0f7b989b",
+      "result_id": "4f8e200d-d4ba-469f-ac3a-4cef6237619b"
+    },
+    {
+      "claim_id": "cc66bf80-f158-4a68-a5e8-1d885d8b444b",
+      "result_id": "3784af84-a8d1-4c52-953e-85a3e0c9bb1e"
+    },
+    {
+      "claim_id": "f5c40a4c-70b0-4cc3-b4ef-d6de09bacc55",
+      "result_id": "3784af84-a8d1-4c52-953e-85a3e0c9bb1e"
+    },
+    {
+      "claim_id": "782b9dd8-2843-4b2a-bc09-378ff9b69b39",
+      "result_id": "3784af84-a8d1-4c52-953e-85a3e0c9bb1e"
+    },
+    {
+      "claim_id": "7a8ded15-c992-4e3f-b653-9c3cb8f21b21",
+      "result_id": "3784af84-a8d1-4c52-953e-85a3e0c9bb1e"
+    },
+    {
+      "claim_id": "191cdc2d-5ad3-422d-9288-a728ad294b24",
+      "result_id": "3784af84-a8d1-4c52-953e-85a3e0c9bb1e"
+    },
+    {
+      "claim_id": "a0de9b34-f6af-4550-8ece-da1c5a3e4b44",
+      "result_id": "3784af84-a8d1-4c52-953e-85a3e0c9bb1e"
+    },
+    {
+      "claim_id": "292472cf-dbfd-40e5-b657-a54d6292cfec",
+      "result_id": "3784af84-a8d1-4c52-953e-85a3e0c9bb1e"
+    },
+    {
+      "claim_id": "c309bf79-fc60-426b-9a20-29a31f3502a2",
+      "result_id": "3784af84-a8d1-4c52-953e-85a3e0c9bb1e"
+    },
+    {
+      "claim_id": "8eefc5bd-b7aa-4a50-a938-b7b5c8e0ab28",
+      "result_id": "3784af84-a8d1-4c52-953e-85a3e0c9bb1e"
+    },
+    {
+      "claim_id": "200d152e-963c-4f8f-bfca-018c54407b65",
+      "result_id": "3784af84-a8d1-4c52-953e-85a3e0c9bb1e"
+    },
+    {
+      "claim_id": "2b329eaa-b952-40c8-b658-aa1d795bc1a2",
+      "result_id": "3784af84-a8d1-4c52-953e-85a3e0c9bb1e"
+    },
+    {
+      "claim_id": "e5844918-6fd2-4e5b-88ae-7513d305c1b7",
+      "result_id": "3784af84-a8d1-4c52-953e-85a3e0c9bb1e"
+    },
+    {
+      "claim_id": "2de463a6-4398-4672-b887-336028ac317d",
+      "result_id": "3784af84-a8d1-4c52-953e-85a3e0c9bb1e"
+    },
+    {
+      "claim_id": "7380a86f-de73-4176-a0a4-e89399482bcb",
+      "result_id": "3784af84-a8d1-4c52-953e-85a3e0c9bb1e"
+    },
+    {
+      "claim_id": "04121d15-11ec-425d-9291-30cc5e11cc0d",
+      "result_id": "3784af84-a8d1-4c52-953e-85a3e0c9bb1e"
+    },
+    {
+      "claim_id": "5f80738e-aa56-4983-a960-b73f6df55714",
+      "result_id": "3784af84-a8d1-4c52-953e-85a3e0c9bb1e"
+    },
+    {
+      "claim_id": "abf98711-a7aa-4e8f-9389-1f58c5fa9cae",
+      "result_id": "3784af84-a8d1-4c52-953e-85a3e0c9bb1e"
+    },
+    {
+      "claim_id": "bcaa9e4f-2533-45aa-afd5-9b9183e95ea3",
+      "result_id": "3784af84-a8d1-4c52-953e-85a3e0c9bb1e"
+    },
+    {
+      "claim_id": "ac746d71-9c73-4338-955f-6fca20e55235",
+      "result_id": "3784af84-a8d1-4c52-953e-85a3e0c9bb1e"
+    },
+    {
+      "claim_id": "5f1b044d-cac4-4504-a7c0-b8788bd2f309",
+      "result_id": "3784af84-a8d1-4c52-953e-85a3e0c9bb1e"
+    },
+    {
+      "claim_id": "16184df3-5766-484e-a9d4-bd37c6f6851b",
+      "result_id": "3784af84-a8d1-4c52-953e-85a3e0c9bb1e"
+    },
+    {
+      "claim_id": "0691177c-983e-4106-81e3-eeaa45e24124",
+      "result_id": "3784af84-a8d1-4c52-953e-85a3e0c9bb1e"
+    },
+    {
+      "claim_id": "d3049ab6-e870-4ce9-a19c-8b45ee5b56e3",
+      "result_id": "3784af84-a8d1-4c52-953e-85a3e0c9bb1e"
+    },
+    {
+      "claim_id": "2397b06d-6eb7-4ef4-a620-06e84991ed0e",
+      "result_id": "3784af84-a8d1-4c52-953e-85a3e0c9bb1e"
+    },
+    {
+      "claim_id": "6f214db1-5cf1-48c4-ba35-46e6a45bc6d5",
+      "result_id": "fc66b2d1-3d50-4ac6-a6d5-4e3ddab4efa1"
+    },
+    {
+      "claim_id": "49267cc5-4fe6-4e9b-a248-007fe946f0bd",
+      "result_id": "fc66b2d1-3d50-4ac6-a6d5-4e3ddab4efa1"
+    },
+    {
+      "claim_id": "8255e313-fffb-4454-80e2-c11ab7ae147b",
+      "result_id": "fc66b2d1-3d50-4ac6-a6d5-4e3ddab4efa1"
+    },
+    {
+      "claim_id": "7c2730e5-30c1-452c-958b-e18c7d694f86",
+      "result_id": "fc66b2d1-3d50-4ac6-a6d5-4e3ddab4efa1"
+    },
+    {
+      "claim_id": "702d667f-24f9-4b18-b90e-66f9630f8283",
+      "result_id": "fc66b2d1-3d50-4ac6-a6d5-4e3ddab4efa1"
+    },
+    {
+      "claim_id": "6ace29d1-bb0f-4aaf-ba4f-e35e4eaaafdf",
+      "result_id": "e2460d16-da77-44c9-8b92-a3fd8be4692a"
+    },
+    {
+      "claim_id": "e6346c8e-08b2-4dca-8a73-05c8291540d0",
+      "result_id": "e2460d16-da77-44c9-8b92-a3fd8be4692a"
+    },
+    {
+      "claim_id": "ffb8581a-55f6-49b4-a9a7-5a60d267b5f0",
+      "result_id": "e2460d16-da77-44c9-8b92-a3fd8be4692a"
+    },
+    {
+      "claim_id": "3d1a4999-e9b1-41a3-83c7-62c159d13c92",
+      "result_id": "e2460d16-da77-44c9-8b92-a3fd8be4692a"
+    },
+    {
+      "claim_id": "e548db8e-b437-4991-b7ad-98a3205f80cf",
+      "result_id": "e2460d16-da77-44c9-8b92-a3fd8be4692a"
+    },
+    {
+      "claim_id": "a1e1578e-4106-46a3-837f-e73497ba84b0",
+      "result_id": "e2460d16-da77-44c9-8b92-a3fd8be4692a"
+    },
+    {
+      "claim_id": "f11a10f3-0fb1-4e5d-9b97-3b33041c9408",
+      "result_id": "e2460d16-da77-44c9-8b92-a3fd8be4692a"
+    },
+    {
+      "claim_id": "4c887005-7af8-47dd-8188-96cab9c51830",
+      "result_id": "e2460d16-da77-44c9-8b92-a3fd8be4692a"
+    },
+    {
+      "claim_id": "4f61a0b1-ec0f-4d05-a8d0-fd1e426be63a",
+      "result_id": "e2460d16-da77-44c9-8b92-a3fd8be4692a"
+    },
+    {
+      "claim_id": "5c3fdaa3-9c61-446f-934e-2a69e99e5b9e",
+      "result_id": "8c140f71-c3ed-41a6-9d33-9bc554d618e7"
+    },
+    {
+      "claim_id": "9fd307f5-dfeb-4d25-880b-5a481600361c",
+      "result_id": "8c140f71-c3ed-41a6-9d33-9bc554d618e7"
+    },
+    {
+      "claim_id": "539399af-d01e-4505-addf-77661c5b3b35",
+      "result_id": "8c140f71-c3ed-41a6-9d33-9bc554d618e7"
+    },
+    {
+      "claim_id": "9e3e55a9-af67-4c4f-80f8-71fd4063a8f6",
+      "result_id": "989147f8-d1fe-48f2-8889-2dd969669cde"
+    },
+    {
+      "claim_id": "4f247b08-a07c-440b-8b31-eef75a121a13",
+      "result_id": "989147f8-d1fe-48f2-8889-2dd969669cde"
+    },
+    {
+      "claim_id": "5df2fe40-d4fe-41dd-a062-d96205189bd1",
+      "result_id": "8fad0598-b661-4901-8e0b-4fde68e11772"
+    },
+    {
+      "claim_id": "bbae38b8-bc5f-4000-88ca-c12b6df19989",
+      "result_id": "8fad0598-b661-4901-8e0b-4fde68e11772"
+    },
+    {
+      "claim_id": "88280100-5221-45a2-96a4-7adf05e97832",
+      "result_id": "8fad0598-b661-4901-8e0b-4fde68e11772"
+    },
+    {
+      "claim_id": "bf9866e8-c0c2-4b0c-84a0-31e0e5ae2736",
+      "result_id": "8fad0598-b661-4901-8e0b-4fde68e11772"
+    },
+    {
+      "claim_id": "36d67a8f-de58-40bb-989e-e25eb5901bec",
+      "result_id": "8fad0598-b661-4901-8e0b-4fde68e11772"
+    },
+    {
+      "claim_id": "88850bf1-0717-4c3d-b68f-60210792672a",
+      "result_id": "080c3fce-f439-4848-b5c3-332e07be3742"
+    },
+    {
+      "claim_id": "1ed1430b-b03b-451f-a78a-0370f06a77b5",
+      "result_id": "080c3fce-f439-4848-b5c3-332e07be3742"
+    },
+    {
+      "claim_id": "fe47f5ec-e108-4b12-9c97-eb26ecef473f",
+      "result_id": "080c3fce-f439-4848-b5c3-332e07be3742"
+    },
+    {
+      "claim_id": "341bf5e1-3fac-4ca9-96e8-c171e8d1e689",
+      "result_id": "080c3fce-f439-4848-b5c3-332e07be3742"
+    },
+    {
+      "claim_id": "8f190a7f-3d86-45ad-8c22-93eacd2f4bdf",
+      "result_id": "080c3fce-f439-4848-b5c3-332e07be3742"
+    },
+    {
+      "claim_id": "24983ffb-4210-465a-9904-a937361deeec",
+      "result_id": "080c3fce-f439-4848-b5c3-332e07be3742"
+    },
+    {
+      "claim_id": "799df03f-f90a-400e-9b79-5d168c8791e1",
+      "result_id": "080c3fce-f439-4848-b5c3-332e07be3742"
+    },
+    {
+      "claim_id": "57449545-ffdd-49f3-b339-308c2443d307",
+      "result_id": "080c3fce-f439-4848-b5c3-332e07be3742"
+    },
+    {
+      "claim_id": "b05faf59-2358-40f7-bd78-6e895eac7d5e",
+      "result_id": "080c3fce-f439-4848-b5c3-332e07be3742"
+    },
+    {
+      "claim_id": "0fa49526-d092-425e-b68a-b013d431ab46",
+      "result_id": "080c3fce-f439-4848-b5c3-332e07be3742"
+    },
+    {
+      "claim_id": "ac768d35-cf85-4a5f-b03b-fe04e9443336",
+      "result_id": "be0a731c-8a17-450b-a234-aae2bbdd758d"
+    },
+    {
+      "claim_id": "c57f8ebe-7afe-4c76-be97-4fc5346cbd3b",
+      "result_id": "be0a731c-8a17-450b-a234-aae2bbdd758d"
+    },
+    {
+      "claim_id": "62274cd0-d699-46d7-9798-49e9f899404e",
+      "result_id": "be0a731c-8a17-450b-a234-aae2bbdd758d"
+    },
+    {
+      "claim_id": "8c5d710d-d260-442c-8979-adbe97c6c90f",
+      "result_id": "be0a731c-8a17-450b-a234-aae2bbdd758d"
+    },
+    {
+      "claim_id": "f0161b65-775f-4c7d-a423-451c78e2c6ff",
+      "result_id": "be0a731c-8a17-450b-a234-aae2bbdd758d"
+    },
+    {
+      "claim_id": "9675cf97-252a-4f8e-9712-9f8401187853",
+      "result_id": "be0a731c-8a17-450b-a234-aae2bbdd758d"
+    },
+    {
+      "claim_id": "b7c6c45f-1ce1-4fa7-9f59-2fadaa1b1c16",
+      "result_id": "be0a731c-8a17-450b-a234-aae2bbdd758d"
+    },
+    {
+      "claim_id": "ed0ce048-3304-489d-94f3-e1b385ef1cf8",
+      "result_id": "be0a731c-8a17-450b-a234-aae2bbdd758d"
+    },
+    {
+      "claim_id": "9196e5bc-9829-4436-a9d8-fc7a762794d4",
+      "result_id": "be0a731c-8a17-450b-a234-aae2bbdd758d"
+    },
+    {
+      "claim_id": "095b79a4-5421-4b3f-8c02-aa42b5a65899",
+      "result_id": "be0a731c-8a17-450b-a234-aae2bbdd758d"
+    },
+    {
+      "claim_id": "ddb39121-ebd9-4e5c-a73b-1dc37a4bd88f",
+      "result_id": "be0a731c-8a17-450b-a234-aae2bbdd758d"
+    },
+    {
+      "claim_id": "261e11f6-c3a7-475b-b647-f445eaa5e86e",
+      "result_id": "be0a731c-8a17-450b-a234-aae2bbdd758d"
+    },
+    {
+      "claim_id": "cf7e0ef4-9e84-4b47-8af6-cf2c87819d1b",
+      "result_id": "be0a731c-8a17-450b-a234-aae2bbdd758d"
+    },
+    {
+      "claim_id": "13dec4a1-55a5-4848-a5fc-eeb06d936d7b",
+      "result_id": "be0a731c-8a17-450b-a234-aae2bbdd758d"
+    },
+    {
+      "claim_id": "e4ad434b-7872-4f6c-b538-f4cdad59621b",
+      "result_id": "5c4c15ca-d759-4ba7-a2c3-b89b5b42a670"
+    },
+    {
+      "claim_id": "f47cf2fd-045a-4a76-8c63-7dd711933676",
+      "result_id": "5c4c15ca-d759-4ba7-a2c3-b89b5b42a670"
+    },
+    {
+      "claim_id": "87b3c6b3-d865-4f73-bc6b-d368024b5fe2",
+      "result_id": "5c4c15ca-d759-4ba7-a2c3-b89b5b42a670"
+    },
+    {
+      "claim_id": "0bb17cd0-1f8d-4034-a833-7e6111b5a015",
+      "result_id": "9474dc1e-3b00-4d7a-832b-a53d2cba6954"
+    },
+    {
+      "claim_id": "33e95388-a45a-4baa-b942-94cfb014f5cd",
+      "result_id": "9474dc1e-3b00-4d7a-832b-a53d2cba6954"
+    },
+    {
+      "claim_id": "6d163b72-c0b2-4732-bde4-649a993dc4f5",
+      "result_id": "9474dc1e-3b00-4d7a-832b-a53d2cba6954"
+    },
+    {
+      "claim_id": "0c774687-a590-4297-b894-5e0a46065180",
+      "result_id": "9474dc1e-3b00-4d7a-832b-a53d2cba6954"
+    },
+    {
+      "claim_id": "84867848-7c5f-4556-86e4-340c463476a9",
+      "result_id": "9474dc1e-3b00-4d7a-832b-a53d2cba6954"
+    },
+    {
+      "claim_id": "f3dbb93c-58db-4354-9d1a-6d9712fa9307",
+      "result_id": "e6a98741-dee9-49a4-8274-ee6e1083e782"
+    },
+    {
+      "claim_id": "3f6fa667-a7f6-4aaa-ba78-6b25068010d4",
+      "result_id": "e6a98741-dee9-49a4-8274-ee6e1083e782"
+    }
+  ],
+  "comparisons": []
+}

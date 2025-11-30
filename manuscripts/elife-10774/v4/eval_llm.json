@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The authors developed a head-fixed, multi-step prehension task in mice where animals reach for, grab, and consume a food pellet following an auditory cue. The behavior was broken into six sequential epochs (Lift, Hand open, Grab, Supinate, At mouth, Chew) and all trained animals learned the task, achieving stable performance (74% success rate) in approximately 15 sessions. High-speed video and machine-learning-based tracking revealed stereotyped trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C34 describe the behavioral task development and training outcomes with appropriate sample sizes (n=13 animals for performance metrics). The methodology is well-documented with references to figures and videos, and the learning timeline and success rates are clearly quantified. The use of head fixation is justified for reducing variability and enabling physiological investigations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C53"
+    ],
+    "result": "Optogenetic inhibition of contralateral sensorimotor cortex at cue onset blocked initiation of skilled prehension (initiation in only 35/459 trials vs. 3675/3692 control trials, n=8 animals), while inhibition of ipsilateral sensorimotor, visual, or frontal cortex had no effect. Prehension reliably occurred after inhibition ceased (436/467 trials). This demonstrates that contralateral sensorimotor cortex activity is necessary for initiating learned, goal-directed prehension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C47, C53 present a well-controlled experiment with appropriate anatomical specificity controls and adequate sample sizes (n=8 animals for main effect, n=3 animals per control region). The dramatic difference between contralateral sensorimotor cortex inhibition and other regions, combined with the reversibility upon light cessation, provides strong evidence for necessity. The spatial and temporal control of optogenetic inhibition addresses limitations of classical perturbation methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Sensorimotor cortical suppression did not affect voluntary grooming (11/11 trials, n=4 animals) or cued licking behavior. During cued licking, some animals made non-stereotyped forelimb movements that were also unaffected by contralateral sensorimotor cortical suppression (44/44 control trials and 20/20 laser trials for two animals).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 provide important specificity controls demonstrating that the cortical inhibition effect is selective for trained prehension and not all forelimb movements. Sample sizes are modest but adequate for control experiments (n=4 for grooming, n=2-3 for licking). The distinction between stereotyped trained movements and non-stereotyped movements is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Sensorimotor cortical suppression during execution of Lift, Hand open, Grab, and Supination components caused behavioral freezing after a short latency (72-170 ms for a representative animal, n=5 animals). Movement during the delay was not simply momentum, as animals often progressed to the next component before freezing. Cortical suppression did not impede hand movements during chewing, suggesting these motor programs do not require sensorimotor cortex. This demonstrates that ongoing contralateral sensorimotor cortex activity is necessary for progressing through the steps of skilled prehension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 demonstrate the necessity of cortex during execution with appropriate sample size (n=5 animals) and temporal resolution. The latency measurements provide insight into the timescale of cortical control. The chewing control (C58-C59) is important for demonstrating specificity, though the inference that chewing motor programs don't require sensorimotor cortex could be strengthened with additional evidence. The progression to next components before freezing (C57) effectively rules out simple momentum explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Upon cessation of cortical inhibition, animals immediately performed 'rebound prehension' (8/8 animals) with shorter and less variable initiation latencies than control prehension. Once initiated, the durations, trajectories, and end-point accuracies of rebound prehension were statistically indistinguishable from control behavior (4/5 animals, p>0.05). Remarkably, end-point accuracy was similar whether rebound prehension began from the perch or from diverse midair positions (5/5 animals, p>0.05), indicating that motor programs comparable to natural behavior follow termination of inhibitory neuron activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C70 describe a novel and unexpected phenomenon with appropriate statistical analysis (Wilcoxon-Mann-Whitney rank sum tests) and adequate sample sizes (n=5-8 animals). The kinematic similarity between control and rebound prehension is well-documented with multiple metrics. The position-invariant accuracy (C69) is particularly compelling evidence for a stored motor program. One animal showed significant but small end-point error (0.74\u00b10.52 mm), which is appropriately reported and does not undermine the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Rebound prehension occurred even when animals had already grabbed the pellet, supporting its involuntary nature. In uncued experiments without pellet, animals remained motionless during inhibition but then reached for the empty pellet tray upon light cessation (192/224 trials, n=8 animals). Rebound execution did not occur in untrained animals (3/3 animals) and was specific to prehension (n=1434 trials, n=5 animals). These observations indicate that rebound prehension is not due to ongoing sensory information or remembered behavioral state, but rather that termination of inhibitory neuron activation in sensorimotor cortex, combined with training-induced plastic changes, is sufficient to evoke a complex learned motor act.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C79 provide compelling evidence for the sufficiency of cortical activity to evoke learned behavior through multiple well-controlled experiments. The no-cue/no-pellet condition (C73-C74) with high initiation rate (192/224 trials) is particularly strong evidence against sensory or memory-based explanations. The training requirement (C75) and behavioral specificity (C76) with large trial numbers (n=1434) strengthen the conclusion. The inference about motor engrams (C79) is well-supported by the collective evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Rebound prehension showed anatomical, temporal, and state-dependent properties. Only contralateral sensorimotor cortex inhibition evoked rebound prehension in the no-cue/no-pellet condition (ipsilateral sensorimotor: 0/68 trials, n=3; frontal: 0/20 trials, n=2; visual: 0/21 trials, n=3). At least 2 s of cortical inhibition was required for >90% rebound rates (n=4 animals), and longer durations reduced latency variability. Long photostimulation durations (\u22652 s) were associated with prominent rebound spiking in cortical neurons, suggesting this may underlie rebound prehension. Rebound prehension itself is cortically dependent, as reactivation of inhibitory neurons freezes the rebound movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C88 systematically characterize the parameters governing rebound prehension with appropriate controls and sample sizes. The anatomical specificity (C80-C83) mirrors the initiation results. The temporal requirements (C84-C85) are well-documented. The correlation with rebound spiking (C86) is interesting, though the causal link (C87) is appropriately presented as speculative. The demonstration that rebound prehension itself requires cortex (C88) is important for ruling out purely subcortical mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Rebound prehension was gated by motivational state. The presence of food in the mouth decreased rebound rates (18/95 trials), with animals still chewing in 93/95 trials at light termination. However, prehension generally occurred during pelletless chewing (21/29 trials), distinguishing motor competition from motivational effects. Animals on free food for one day showed significantly reduced rebound prehension rates despite still performing control prehension. These results suggest that motivational drive, operating on both short (eating) and long (satiety) timescales, gates rebound prehension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 demonstrate motivational gating through well-designed experiments that distinguish motor competition from satiety effects. The pelletless chewing control (C91) is particularly important for isolating motivational factors. The free-food manipulation (C92) provides strong evidence for long-term motivational gating. The interpretation (C93-C95) is well-supported by the data, though the mechanisms remain to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors conclude that cortex is necessary for initiating and executing both dexterous and non-dexterous steps of skilled movement, contrary to views that cortex only achieves dexterity. They suggest differences from prior work (Kawai et al., 2015) may reflect task differences: their prehension task requires learning precise spatial positions of external targets, while lever-press tasks require learning time intervals. The rapidity of optogenetic inhibition may also impede compensatory mechanisms that ameliorate phenotypes in slower perturbation methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 provide a thoughtful discussion of how the current findings relate to and differ from prior work. The comparison to Kawai et al. is appropriate and the proposed explanations for discrepancies (task differences, perturbation speed) are reasonable, though somewhat speculative (C100, C102). The citation of the outlier animal from Kawai et al. (C101) that supports their hypothesis strengthens the argument. The consistency with some primate stimulation studies (C97) is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors propose that termination of inhibition evokes a motor engram specifying the learned goal/end-point of trained behavior. Rebound prehension differs from movements evoked by electrical or optogenetic stimulation in being a coordinated sequence accurately directed to an external goal regardless of starting position, depending on training, and being gated by motivation. They speculate that cortical synapses modified during learning may store these motor engrams, though the engram could alternatively be stored elsewhere with cortical inhibition relief triggering its activation in downstream networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C112 present an interpretive framework for understanding rebound prehension. While the characterization of rebound prehension properties (C106-C108) is well-supported by the data, the motor engram hypothesis (C109-C111) is largely speculative. The authors appropriately acknowledge alternative explanations (C111) and cite relevant literature on synaptic plasticity (C110), but direct evidence for where and how the engram is stored is lacking. The statement about future research possibilities (C112) is appropriately speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The authors address the concern that striatal ChR2 expression in the Slc32a1-COP4*H134R/EYFP line could mediate the observed phenotypes. They measured light transmission showing negligible 473 nm intensity at striatal depths (+1.8 mm) and demonstrated that direct striatal fiber photostimulation did not halt prehension (190/191 laser trials vs. 271/271 control trials, n=3 mice). Viral injection limiting ChR2 to sensorimotor cortical neurons in Gad2-IRES-Cre mice produced similar prehension deficits (n=2 animals). ChR2-positive axons were not detected in external capsule or corpus callosum, ruling out long-range cortical projections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C133 provide important controls addressing potential confounds of the optogenetic approach. The light transmission measurements (C129) and direct striatal stimulation experiments (C130) with adequate sample sizes effectively rule out striatal contributions. The viral injection experiments (C132) in a different mouse line, though with small sample size (n=2), provide convergent evidence. The absence of ChR2-positive long-range axons (C133) addresses another potential confound. These controls strengthen confidence that the phenotypes result from cortical inhibition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The authors developed a machine-learning-based method using a modified version of Cascaded Pose Regression to automatically track the mouse's hand from video frames. The method learns a cascade of regressors that iteratively refine position estimates. Three-dimensional trajectories were reconstructed by calibrating cameras using the Camera Calibration Toolbox for MATLAB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136 describe the computational methods for behavioral analysis with appropriate citations. The modification of Cascaded Pose Regression is described, though details of the modifications are limited. The 3D reconstruction approach using camera calibration is standard. The method appears adequate for the quantitative comparisons performed, as evidenced by the trajectory data presented in figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Extracellular recordings from Slc32a1-COP4*H134R/EYFP mice (n=2) yielded 87 single units under awake, non-behaving conditions. Units were classified as fast-spiking neurons (spike width <0.35 ms, 10/90 units) or putative pyramidal neurons (spike width >0.45 ms, 77/90 units) based on spike waveform characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 describe electrophysiological recordings with appropriate methodology and citation support. The sample size (n=2 mice, 87 units) is modest but adequate for characterizing population responses to photostimulation. The classification criteria for neuron types based on spike width are standard and appropriately cited. These recordings support the rebound spiking observations (C86).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The authors establish the scientific context by noting that while mammalian cerebral cortex is accepted as critical for voluntary motor control, the specific functions remain unclear. They review prior work showing cortical neurons display dynamic activity during movement, but recordings alone cannot assess functional contribution. Previous inactivation experiments suggested cortex tunes rather than initiates/executes motor programs, but classical perturbation methods lack temporal specificity and allow compensation. Electrical stimulation can elicit complex movements, but it's difficult to distinguish direct cortical effects from antidromic activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C13-C23 provide appropriate background and motivation for the study with extensive citation support. The characterization of prior work and its limitations is fair and accurate. The identification of knowledge gaps (C2, C23) appropriately motivates the current investigation. The critique of classical methods (C19-C20) justifies the optogenetic approach used in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The abstract summarizes that sudden cortical inhibition blocked initiation or froze execution of skilled prehension but left untrained forelimb movements unaffected. Unexpectedly, kinematically normal prehension occurred immediately after inhibition, even without cue and pellet. This 'rebound' prehension was only evoked in trained and food-deprived animals, suggesting a motivation-gated motor engram is activated at inhibition's end. The results demonstrate the necessity and sufficiency of cortical activity for enacting a learned skill.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C12 accurately summarize the main findings presented in the abstract. These claims are supported by the detailed experimental results described in the body of the manuscript. The necessity claim (C11) is well-supported by the inhibition experiments. The sufficiency claim (C12) is supported by the rebound prehension phenomenon, though the interpretation of a motor engram (C10) is somewhat speculative but reasonable given the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The methods section describes animal care procedures approved by IACUC, food restriction protocols (80-90% body weight, 2-3 g/day), mouse lines used (Slc32a1-COP4*H134R/EYFP from Jackson Laboratory), surgical procedures (cranial window or cleared skull), recovery periods (\u22651 week), training protocols (30 min/day, ~15 sessions to mastery), behavioral parameters (pellet arrival ~200 ms after 5 kHz tone, 20 s-1 min inter-trial intervals, ~50 trials/day), video acquisition (500 frames/s, 352\u00d7260 pixels), and optogenetic stimulation parameters (473 nm laser, 40 Hz sinusoidal, 1-15 mW, 0.1-4 s duration, <20% of trials).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C127 provide comprehensive methodological details that would enable replication. The ethical approval (C113), animal care procedures (C114, C118), and training protocols (C119-C122) are clearly described. The optogenetic parameters (C124-C127) are well-specified with appropriate citation support for the effectiveness of the laser power used (C126). The video acquisition specifications (C123) are adequate for the behavioral analysis performed.",
+    "result_type": "MINOR"
+  }
+]

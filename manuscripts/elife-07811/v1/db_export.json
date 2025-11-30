@@ -1,0 +1,1506 @@
+{
+  "submission": {
+    "id": "c58609de-44b9-4d7d-8a9c-873b3aaa3fae",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:53:45.590459Z",
+    "updated_at": "2025-11-29T21:53:45.590459Z"
+  },
+  "content": [
+    {
+      "id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "submission_id": "c58609de-44b9-4d7d-8a9c-873b3aaa3fae",
+      "content_type": "manuscript",
+      "content_text": "# Mechanical stress contributes to the expression of the STM homeobox gene in Arabidopsis shoot meristems\n\n## Authors\n\n- Beno\u00eet Landrein<sup>1</sup>\n- Annamaria Kiss<sup>1</sup>\n- Massimiliano Sassi<sup>1</sup> ([ORCID: 0000-0002-9685-4902](https://orcid.org/0000-0002-9685-4902))\n- Aur\u00e9lie Chauvet<sup>1</sup>\n- Pradeep Das<sup>1</sup>\n- Millan Cortizo<sup>3</sup>\n- Patrick Laufs<sup>3</sup>\n- Seiji Takeda<sup>5</sup>\n- Mitsuhiro Aida<sup>6</sup>\n- Jan Traas<sup>1</sup>\n- Teva Vernoux<sup>1</sup>\n- Arezki Boudaoud<sup>1</sup>\n- Olivier Hamant<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Laboratoire de Reproduction de d\u00e9veloppement des plantes INRA, CNRS, ENS Lyon, UCB Lyon 1, Universit\u00e9 de Lyon Lyon France\n2. Laboratoire Joliot-Curie, Laboratoire de Physique CNRS, ENS Lyon, UCB Lyon 1, Universit\u00e9 de Lyon Lyon France\n3. INRA, Institut Jean-Pierre Bourgin UMR 1318, ERL CNRS 3559, Saclay Plant Sciences Versailles France\n4. AgroParisTech, Institut Jean-Pierre Bourgin UMR 1318, ERL CNRS 3559, Saclay Plant Sciences Versailles France\n5. Cell and Genome Biology Graduate School of Life and Environmental Sciences, Kyoto Prefectural University Kyoto Japan\n6. Graduate School of Biological Sciences Nara Institute of Science and Technology Nara Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe role of mechanical signals in cell identity determination remains poorly explored in tissues. Furthermore, because mechanical stress is widespread, mechanical signals are difficult to uncouple from biochemical-based transduction pathways. Here we focus on the homeobox gene SHOOT MERISTEMLESS (STM), a master regulator and marker of meristematic identity in Arabidopsis. We found that STM expression is quantitatively correlated to curvature in the saddle-shaped boundary domain of the shoot apical meristem. As tissue folding reflects the presence of mechanical stress, we test and demonstrate that STM expression is induced after micromechanical perturbations. We also show that STM expression in the boundary domain is required for organ separation. While STM expression correlates with auxin depletion in this domain, auxin distribution and STM expression can also be uncoupled. STM expression and boundary identity are thus strengthened through a synergy between auxin depletion and an auxin-independent mechanotransduction pathway at the shoot apical meristem.\n\n## Introduction\n\nAlmost 100 years ago, Thomas D\u2019Arcy Wentworth Thompson proposed that shape of plants and animals could be described as a consequence of the laws of physics (D\u2019Arcy Thompson, 1917). While this view has been overshadowed by the rise of molecular biology and morphogen-based patterning mechanisms, a growing contribution of mechanics in shape changes is currently emerging. In this framework, an instructing role of mechanical forces has been successfully explored theoretically (Shraiman, 2005; Aegerter-Wilmsen et al., 2007) and there is today accumulating evidence that many molecular actors involved in development are under both biochemical and mechanical control. In particular, studies on single animal cells show that mechanical forces contribute to the control of cell division and cell polarity, and relevant mechanotransduction pathways have been identified (e.g. Houk et al., 2012; Fink et al., 2011; Thery et al., 2007). The idea that mechanical stress may also play a role in defining cell identity has also emerged in the past decade (Engler et al., 2006 Aliee et al., 2012; Landsberg et al., 2009; Farge, 2003; Brunet et al., 2013). However, this pioneering work is still debated and a role of mechanical signals in cell identity during development remains an open question. Furthermore, all the currently known mechanotransduction pathways involve elements of established biochemical-based transduction pathway (e.g. Janmey et al., 2013; Jaalouk and Lammerding, 2009; Orr et al., 2006). Assuming mechanical signals play an important role in development, one may thus question the added value of mechanical signals in development if their action is so tightly coupled to biochemical signaling.\n\nBecause their development is slow, iterative and does not involve cell movements, plants are systems of choice to explore the possible contribution of mechanical signals in proprioception, i.e. in channeling growth and identity from intrinsically generated mechanical stresses. Mechanical cues contribute to the emergence of lateral roots in Arabidopsis (Ditengou et al., 2008; Richter et al., 2009), the expression level of the transcription factor PtaZFP2 correlates to the amount of bending in poplar stems (Coutand et al., 2009) and the expression of the ELA1 gene in a specific cell layer of the developing seed is triggered by mechanical signals that are generated by the growth of the embryo against the endosperm (Creff et al., 2015). While these studies suggest that physical forces can contribute to cell identity definition in plants, this remains to be fully demonstrated. A fitting system for this question is the shoot apical meristem (SAM), which contains a plant stem cell niche and controls the formation and identity of all aerial organs. Because cells are glued to each other, differential growth generates mechanical conflicts leading to shape changes. For instance, tissue folding occurs in the boundary domain of the SAM between the slow growing meristem and the fast growing organ. Because the epidermis is load-bearing (Dumais and Steele, 2000; Kutschera and Niklas, 2007), the boundary domain is characterized by a highly anisotropic mechanical stress; this mechanical stress controls microtubule orientation, which in turn channels growth direction and promotes tissue folding (Burian et al., 2013; Hamant et al., 2008). A contribution of mechanical stress in the polarity of the auxin efflux carrier PIN-FORMED 1 (PIN1) was also proposed suggesting an indirect contribution of mechanical signals in auxin patterns and thus in organogenesis at the shoot apex (Heisler et al., 2010; Nakayama et al., 2012). While the genetic bases of meristem functions are now well documented, a link between these genetic regulators and mechanical signals remains to be identified in the SAM.\n\nThe homeodomain transcription factor SHOOT MERISTEMLESS (STM) is a key regulator of meristem functions and its expression is often considered as the best marker of meristematic identity. In the shoot apical meristem, STM is expressed ubiquitously, with the exception of young primordia where it is down-regulated (Long et al., 1996). Interestingly, the STM promoter has previously been reported to be more active in the boundary domains of the SAM (Heisler et al., 2005; Leasure et al., 2009; Kim et al., 2003; Jurkuta et al., 2009). In line with this observation, STM expression is regulated by several boundary specific genes (Aida et al., 1999; Borghi et al., 2007; Lee et al., 2009; Takada et al., 2001), in part via auxin signaling (Aida et al., 2002; Treml et al., 2005). Because the boundary domain is also a site under mechanical stress, we investigated whether such stresses could act as signals to control STM expression at the shoot apical meristem.\n\n## Results\n\n### STM promoter activity is quantitatively correlated to curvature at the meristem boundary\n\nBecause it is easily accessible, we focus our analysis on the shoot apical meristem (SAM) at inflorescence stage; the generated organs are thus floral meristems. We generated a transcriptional fusion pSTM::CFP-N7 with the 5,7 kb region upstream of the STM gene (AT1G62360) and observed the presence of an enhanced STM promoter activity in the SAM boundaries, as previously shown (Heisler et al., 2005; Leasure et al., 2009; Kim et al., 2003; Jurkuta et al., 2009), n\u00a0>\u00a020, Figure 1A). To further confirm this result, which was obtained in dissected meristems from greenhouse-grown plants, we also analyzed the CFP signal in meristems from NPA-treated in vitro grown seedlings. In these conditions, polar auxin transport is inhibited and naked meristems are generated (Grandjean et al., 2004). When plants were taken off the drug and started to initiate new organs, higher CFP signal was observed specifically in the boundary domain (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07811/elife-07811-fig1-v1.jpg)\n\n**Figure 1.:** (A) pSTM::CFP-N7 expression pattern in the SAM. Membranes are labeled with FM4-64 (white, lower panel) and pSTM::CFP-N7 expression is shown using the Fire lookup table in ImageJ (upper panel, n\u00a0>\u00a020). (B)\u00a0 Longitudinal optical sections (5 \u03bcm thick maximal projection of orthogonal views) through the middle of five successive boundaries of a representative meristem expressing pSTM::CFP-N7. Note the increase of pSTM::CFP-N7 signal intensity in the boundary as the crease between organ and meristem becomes deeper. (C)\u00a0Close-ups showing a correlation between pSTM::CFP-N7 signal intensity (upper panels) and Gaussian curvature (lower panels, see Material and methods) in three successive boundaries of the meristem presented in A. (D and E)\u00a0Quantification of the correlation between pSTM::CFP-N7 signal intensity (upper panel) and Gaussian curvature (lower panel) in the meristem presented in A (see Material and methods). (D) The white outline encloses the cells that are used for the graph presented in E. (E)\u00a0pSTM::CFP-N7 signal intensity is plotted against Gaussian curvature. Values are compared using a bilateral Student test.\u00a0The same correlation was observed in 5 independent meristems. Scale bars, 20 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07811/elife-07811-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** i1 and i2 marks the presence of new initia where the CFP-N7 signal decreases and the white arrows points toward a new developing boundary where the CFP-N7 signal increases. Note that t = \u2009h corresponds to 24 h after transfer to a NPA free medium. Scale bars: 20 \u00b5m.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07811/elife-07811-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Correlation between pSTM::CFP-N7 signal intensity and Gaussian curvature in another meristem than the one presented in Figure 1. The white outline encloses the cells that are used for the graph presented in B (See Material and methods). (B) Quantitative measurement of the negative correlation between pSTM::CFP-N7 intensity and Gaussian curvature in the meristem presented in A (n = 231 cells). Successive values are displayed with a Student confidence interval (\u03b1 = 0.05) and compared using a bilateral Student test. Scale bars: 20 \u00b5m.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/07811/elife-07811-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Z-projection of a meristem expressing the L1 transcriptional reporter pPDF1::CFP-N7 (left panel). CFP-N7 Signal intensity map of the signal and Gaussian curvature extracted using the level set method and MorphoGraphX (right panels). Scale bars: 20 \u00b5m.\n\nWhen performing live-imaging of the meristem expressing pSTM::CFP-N7, we found a correlation between STM promoter activity in the boundaries and the progressive formation of a crease in this domain, at least qualitatively (Figure 1B). To assess this quantitatively, we measured the Gaussian curvature of the boundary at different stages of development in parallel with CFP signal intensity. Existing quantification protocols were not adequate: the replica method for instance involves the application of dental resin to make a cast of the meristem (e.g. Kwiatkowska and Dumais, 2003) and this may impact gene expression; the image analysis software MorphoGraphX could provide a mesh surface together with gene expression levels, but some errors in the most curvy parts of the meristem could not be avoided. We thus implemented the level set method (Sethian, 1999) in Python to detect the exact surface of the meristem: a suitable surface obtained by the thresholding of the image is evolved to the smooth surface that is the most accurate representation of the surface contrast in the 3D images. Second, MorphoGraphX was used to mesh the surface (Kierzkowski et al., 2012), and to compute the Gaussian curvature taking into account neighborhoods within a 15 \u03bcm radius (Figures 1C and Figure 1\u2014figure supplement 2). Using this pipeline, a negative correlation between CFP signal intensity and Gaussian curvature could be revealed and quantified (Figure 1C\u2013E, Figure 1\u2014figure supplement 2). As a negative control, and using the same pipeline, no clear correlation between Gaussian curvature and CFP signal could be observed in a line expressing a transcriptional fusion pPDF1::CFP-N7 that exhibits a relatively homogeneous signal in the whole meristem epidermis (Figure 1\u2014figure supplement 3).\n\nTo test this correlation further, we also analyzed the expression pattern of STM in the pSTM::ALcR AlcA::GFP line (named hereafter pBOUND>>GFP) which contains 4.4 kb sequence upstream of the STM gene and has already been described previously (Laufs et al., 2004). In this line, expression is restricted to boundaries, thus confirming the correlation between the GFP signal intensity and the extent of curvature at the boundary at least qualitatively (n\u00a0>\u00a020, Figure 2A). The correlation could also be observed in meristems from NPA-grown seedlings (Figure 2\u2014figure supplement 1). In this line, the signal was so clear-cut, that the total area of GFP expressing cells on longitudinal sections could be qualitatively correlated with the formation of a crease (Figure 2B). To quantify this, we generated optical longitudinal section through the middle of each emerging primordia, measured the surface area of expression of pBOUND>>GFP in these sections and plotted it against the angle of tissue folding at the same position (see Material and methods). As in the pSTM::CFP-N7 line, we measured a strong correlation between the area of pBOUND>>GFP expression and the angle of boundary folding measured on the orthogonal sections (n = 154, 5 SAMs observed at 5 time points over 48\u2009hr, Figure 2D). A similar correlation could be measured in another independent live-imaging experiment (Figure 2\u2014figure supplement 2, n = 193, 5 SAMs observed at 6 time points over 39\u2009h).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07811/elife-07811-fig2-v1.jpg)\n\n**Figure 2.:** (A) pBOUND>>GFP expression pattern in WT (ecotype WS-4) and bot1-7 meristems. Membranes are labeled with FM4-64 (white) and pBOUND>>GFP expression is shown using the Fire lookup table in ImageJ. (B) Longitudinal sections through the middle of successive boundaries of the meristems presented in A (2 \u03bcm thick maximal projection of orthogonal views). Organ size (surface area as viewed from the top) is written in red for each stage. Note the delay in tissue folding and GFP signal expression in bot1-7 when compared to the WT. The white line marks the outer surface of the SAM. (C) Quantification of the delay in curvature at the boundary in bot1-7: Folding angle is measured on orthogonal views and organ size is estimated from the measurement of surface area on top views. (D) The correlation between the folding angle of the boundary and the area of pBOUND>>GFP expression is maintained in bot1-7 (both parameters are measured on orthogonal sections; WT: n = 130 from 5 SAM followed during a time lapse of 5 time points during 48 h, bot1-7: n = 79 from 3 SAM followed during a time lapse of 5 time points during 48 h). Values are displayed with a Student confidence interval (\u03b1 = 0.05) and compared using a bilateral Student test. Scale bars: 20 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07811/elife-07811-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Note the signal induction in old and new boundaries. Scale bar, 20 \u00b5m.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07811/elife-07811-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Quantitative correlation between the folding angle of the boundary and the area of pBOUND>>GFP expression on longitudinal sections from another independent time course as the one presented in Figure 2 (n = 154, 5 meristems imaged 5 times over a time course of 48\u2009hr).\n\nTo test the strength of the correlation between STM promoter activity and meristem shape, we next analyzed STM promoter activity in the katanin mutant allele bot1-7 in which the presence of disorganized microtubules leads to the formation of a shallow crease at the boundary (Uyttewaal et al., 2012; Bichet et al., 2001). We reasoned that if STM promoter activity is truly correlated with curvature at the boundary, we should still be able to detect such correlation in the bot1-7 mutant background, although with a delay in time. First, we measured the folding angle with respect to organ size in bot1-7. As expected, we observed a reduction in folding angle for a given primordium size in bot1-7 when compared to the WT, demonstrating that the relation between tissue folding and organ emergence is impaired in bot1-7: large organs still have shallow boundaries (Figure 2A,B,C). Next, we measured the GFP signal area in the boundaries of the bot1-7 pBOUND>>GFP line as described above. Note that both bot1-7 and pBOUND>>GFP are in the WS-4 ecotype, allowing comparison between mutant and WT backgrounds. Whereas pBOUND>>GFP expression area was still correlated to tissue folding, we also observed a reduction in the area of GFP expression for a given primordium stage, when compared to the WT indicating a delay in pBOUND>>GFP appearance in bot1-7 (Figure 2D, WT: n = 154 measured on 5 meristems at 5 time points; bot1-7: n = 79 measured on 4 meristems at 5 time points). Therefore, modifying the shape of the SAM in bot1-7 did not abolish the correlation between STM promoter activity and curvature, and instead demonstrated that STM promoter activity scales to Gaussian curvature values even when the relation between organ size and boundary shape is affected. Based on these results, STM promoter activity can thus be considered as a read-out of the extent of folding in the boundary of the SAM.\n\n### STM expression at the boundary is required for organ separation\n\nEven though we find a correlation between STM expression and tissue folding, it is not clear whether STM promoter activity at the boundary using a reporter line truly recapitulates STM expression in the SAM.\n\nTo check this, we first crossed the strong stm mutant allele stm-dgh6 (Aida et al., 2002) with a previously described pSTM::STM-Venus line, whose expression is enhanced in boundaries, as observed in our transcriptional marker lines (Heisler et al., 2005; Besnard et al., 2014; Figure 3A). The stm-dgh6 mutant exhibits the typical stm phenotype with two partly fused cotyledons, at an angle divergent from 180\u00b0, and a development arrest. At the same stage, the WT can exhibit up to 8 leaves while the stm-dgh6\u00a0\u00a0only displays two old cotyledons (Figure 3B). As observed in other strong stm alleles, stm-dgh6 was able in rare cases to reinitiate organogenesis and generate a lot of vegetative tissues. In our growth conditions, we found that roughly 1out of 30 stm-dgh6 plants managed to grow beyond the cotyledon stage: these plants generated many whorled leaves and a few sterile flowers (Figure 3C). To test whether pSTM::STM-Venus can complement the stm-dgh6 phenotype, we selected 96 plants homozygous for the pSTM::STM-Venus construct and segregating the stm-dgh6 mutation. After genotyping for the presence of the stm-dgh6 mutation, we could not distinguish the WT, stm-dgh6 heterozygotes and stm-dgh6 homozygote plants visually, confirming that pSTM::STM-Venus can fully complement the mutation (Figure 3D-F, Figure 3\u2014figure supplement 1). Importantly, we checked that STM-Venus was expressed in the stm-dgh6 homozygote background by confocal microscopy. We found that the signal was comparable to that of pSTM::STM-Venus in a WT background, notably with an enhanced signal in boundaries (Figure 3G). In a few plants, we also observed larger stems and meristems, suggesting that pSTM::STM-Venus expression level might be slightly higher than that of the endogenous gene. These results demonstrate that higher STM promoter activity at the boundary in the marker lines reflects the endogenous STM expression pattern. Based on these data, and to ease the reading for the rest of the paper, we will use the wording 'STM expression' when analyzing the fluorescent signal in STM transcriptional reporter lines.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07811/elife-07811-fig3-v1.jpg)\n\n**Figure 3.:** (A) Representative expression pattern of the translational fusion pSTM::STM-Venus in a FM4-64 stained meristem showing an increased signal intensity in boundaries. Scale bar, 20 \u03bcm. (B\u2013F) The translational fusion pSTM::STM-Venus partially rescues the phenotype of the strong mutant allele stm-dgh6 (n = 5). (B) Phenotype of 3-week-old WT and stm-dgh6 plants. Note the absence of postembryonic organs in the mutant. Scale bars, 1 cm. Aerial phenotype of 2-month old stm-dgh6 plants. Scale bar, 1 cm. (D) Representative stm-dgh6 pSTM::STM-Venus plant. Scale bar, 1 cm. (E) Representative stm-dgh6 pSTM::STM-Venus inflorescence. Scale bar, 1 cm. (F) Representative stm-dgh6 pSTM::STM-Venus rosette. Scale bar, 1 cm. (G)\u00a0Representative expression pattern of the translational fusion pSTM::STM-Venus in a stm-dgh6 (-/-) meristem showing a similar expression pattern as in the WT. Scale bar, 20 \u03bcm. (H, I) Homogeneous expression pattern of the translational fusion pSTM::STM-Venus in two independent pSTM::STMamiRNA lines. Scale bar (microscopy), 20 \u03bcm. Scale bar (whole plant), 1 cm. (J) FM4-64 stained WT meristem (ecotype Col-0), Gaussian curvature extracted using the level set method and MorphoGraphX, Scale bar (microscopy), 20 \u03bcm. Scale bar (inflorescences), 1 cm. (K) FM4-64 stained pSTM::STMamiRNA pSTM::STM-Venus meristem, Gaussian curvature extracted using the level set method and MorphoGraphX. Scale bar, 20 \u03bcm. Boundaries do not scale to the reduced meristem size; inflorescence phenotype with fusion events. Scale bar, 1 cm.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07811/elife-07811-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A)  48 pSTM::STM-Venus plants segregating the stm-dgh6 mutation. (B) stm-dgh6 genotyping of the plants shown in A. No obvious difference can be detected between the different lines.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07811/elife-07811-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) STMamiRNA expression in 2-week-old seedlings by qPCR in three independent pSTM::STMamiRNA lines (see Material s\u00a0and methods). Values are displayed with a Student confidence interval (\u03b1 = 0.05) and compared using a bilateral Student test. (B) STM expression in 2-weeks-old seedlings by qPCR in three independent pSTM::STMamiRNA lines, as in A.\n\nTo further confirm the biological relevance of higher STM promoter activity at the boundary, we next attempted to down-regulate STM expression at the boundary. Genetic evidence suggests that, in addition to its role in meristem maintenance, STM also contributes to organ separation in the meristem, in conjunction with other boundary expressed genes, such as CUC, KNAT6, JLO and LOF genes (Lee et al., 2009; Aida et al., 2002; Belles-Boix et al., 2006; Spinelli et al., 2011; Borghi et al., 2007; Aida et al., 1999). Lack of STM activity can generate organ fusions (e.g. Endrizzi et al., 1996) and can enhance the fusion phenotype of cuc1 and cuc2 mutant seedlings, revealing a role of STM in boundary formation during the early stages of embryo development (Aida et al., 1999; 2002). This function also involves the STM paralog KNAT6 gene, which is expressed in the boundary domain of the meristem in embryos (Belles-Boix et al., 2006). Based on this literature, the expression of STM at the boundary is generally thought to control organ separation, but this has not been formally demonstrated.\n\nTo address this hypothesis, we generated lines expressing an artificial microRNA (amiRNA) against STM under the control of the STM promoter. In these lines, STM expression level was not always negatively correlated to STM amiRNA expression level; yet, STM expression was down-regulated in all the lines we analyzed showing that this amiRNA can effectively inactivate STM to some extent (Figure 3\u2014figure supplement 2). Given the expression pattern in the STM transcriptional marker lines, we reasoned that in these lines, we should primarily inactivate STM in the boundaries and to a lesser extent in the rest of the meristem. To test whether the amiRNA was effective at downregulating STM mRNA accumulation in boundaries, we introgressed the pSTM::STMamiRNA in the pSTM::STM-Venus lines. As expected, the STM-Venus signal was slightly (Figure 3H) or more strongly reduced (Figure 3I) at the boundary, leading to a homogeneous STM-Venus signal in the meristem. Although meristem size was affected in these lines (Figure 3J and K), meristem termination defects were rare when compared to stm mutants. In particular, many normal and fertile flowers were generated (Figure 3K). We also observed that Gaussian curvature in the boundaries did not scale to meristem size (Figure 3K). Strikingly, major fusion defects were observed in most of the lines we generated, thus showing that organ separation was impaired in these lines (Figure 3K). The presence of wide boundaries (relative to meristem size) together with a reduction in meristem size that brings adjacent boundaries next to one another, may cause such fusion events. Because the fusions are revealed much later in development, we cannot completely exclude other scenarios. Note that STM mRNA, protein or amiRNA can move between non-boundary cells and boundary cells. Yet, as a negative impact of the amiRNA on STM-Venus signal could be detected at the boundary, these data rather confirm that STM expression at the boundary has functional implications and further support its role in organ separation.\n\n### Auxin depletion is not absolutely required for STM expression at the boundary\n\nThe fact that STM expression correlates with curvature at the boundary can simply be explained by the fact that STM reduces the growth rate at the boundary, leading to tissue folding. KNOX genes can cause alterations in curvature in otherwise smooth surface (Long and Barton, 1998; Barkoulas et al., 2008). The impact of STM on crease formation at the boundary could be mediated by inhibiting cell growth in this domain. Consistent with this scenario, KNOX target genes include genes involved in auxin transport as well as genes involved in cell wall synthesis (Bolduc et al., 2012). Given the strong correlation between STM promoter activity and tissue folding, we investigated whether a signal related to curvature could add robustness to the STM expression pattern at the boundary.\n\nThe plant hormone auxin could play such a role. A local auxin peak is one of the earliest marker of organ initiation, and conversely auxin depletion is an early marker of the boundary domain (de Reuille et al., 2006; Reinhardt et al., 2003; Heisler et al., 2005). As auxin keeps accumulating in the organ, outgrowth goes on and curvature at the boundary increases. Interestingly, auxin and KNOX proteins are known to act antagonistically. Disrupting auxin transport with NPA or in pin1 and pid mutant enhances class I KNOX gene expression (Scanlon, 2003; Furutani et al., 2004). Conversely, KNAT1 inactivation can partially rescue the leaf number defects in pin1, suggesting that the auxin signaling pathway also promotes organ emergence by repressing the expression of KNOX genes (Hay et al., 2006). In the boundary, the PIN1-dependent auxin minimum was also shown to promote axillary meristem formation whereas ectopic auxin production in the boundary inhibits axillary meristem formation (Wang et al., 2014). This is further consolidated by the analysis of the DII-Venus auxin sensor, which is degraded in the presence of auxin and exhibits a strong signal at the boundary (Brunoud et al., 2012; Vernoux et al., 2011). Consistent with the characteristic localization of PIN1 transporters around the boundary (Figure 4\u2014figure supplement 1;\u00a0Heisler et al., 2005), we also observed that a higher DII-Venus signal in the boundaries correlates with an increase in pSTM::CFP-N7 expression (Figure 4A). Interestingly, while this correlation could also be observed on longitudinal sections through the boundary as it folds (Figure 4B), we also found that this correlation is stronger in the L1 layer: In the L2 layer, pSTM::CFP-N7 expression increased during crease formation, but this was not always correlated with an increase in DII-Venus signal (Figure 4B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/07811/elife-07811-fig4-v1.jpg)\n\n**Figure 4.:** (A) Projection of a representative meristem expressing both pSTM::CFP-N7 and DII-Venus-N7 and stained with FM4-64: both signals are induced in the boundary. (B)\u00a0Orthogonal sections through the middle of the boundaries of the successive primordia of the SAM presented in showing an overlap of both signals, except in the L2 layer. (C, D)\u00a0Overnight treatment with 10 \u03bcM of synthetic auxin 2,4-D on dissected meristems: (C) no effect on pSTM-CFP expression after 2,4-D application (Control: n = 3, 2-4D treatment: n = 3). White arrows point at new CFP signals in boundaries (C and D); (D) total degradation of DII-Venus after 2,4-D application (Control: n = 11, 2-4D treatment: n = 12). Scale bars, 20 \u00b5m.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07811/elife-07811-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Whole-mount PIN1 immunolocalization in the SAM (n = 6). (B) close-up from (A). White arrows point at boundaries where the polarity of PIN1 is strengthened and predicts an auxin depletion in this domain. Scale bars, 20 \u00b5m.\n\nSo far, our data are thus consistent with a scenario in which a local depletion of auxin leads to the initial induction of STM expression at the boundary. If this scenario were true, the application of exogenous auxin should thus inhibit STM expression at the boundary. To test this hypothesis, we applied the synthetic auxin 2,4-D onto the meristem and observed the expression of STM. As expected, DII-Venus levels were dramatically decreased in these conditions ([Brunoud et al., 2012]; Figure 4D), confirming that auxin could indeed diffuse into the meristem. In the same conditions, STM expression at the boundary was however either unchanged or even slightly increased (Figure 4C). This suggests that, whereas auxin levels negatively correlate with STM expression in the meristem, this correlation is also dispensable: STM expression and auxin depletion can be uncoupled at the boundary. This also shows that the relation between auxin and STM expression is more complex. Next we investigated whether the involvement of mechanical signals in STM expression at the boundary could help clarify these discrepancies.\n\n### STM expression is induced by mechanical stress\n\nThere is growing evidence that mechanical stresses act as instructive signals in parallel to biochemical signals in development. These stresses have notably been involved in the progression of gastrulation in Drosophila embryos (e.g. Farge, 2003; Lecuit and Lenne, 2007) or in the formation of leaves with ruffled edges (Audoly and Boudaoud, 2003; Nath et al., 2003). In the meristem, the boundary separates a fast growing organ from the slow growing meristem. Mechanical stresses thus emerge early on from differential growth in the boundary and have been shown to act as instructive signals controlling the behavior of cortical microtubules and PIN1 early on. In turn, this promotes tissue folding that further reinforces the stress pattern at the boundary (Hamant et al., 2008; Heisler et al., 2010). We thus explored a scenario in which mechanical stress may be sufficient to induce and reinforce STM expression at the boundary. To do so, we investigated whether mechanical perturbations can trigger STM expression.\n\nNote that mechanical perturbations can be of different nature. Mechanical perturbations induced by wind or touch, are extrinsic and discontinuous; they cause short-term elastic deformations (e.g. transient bending). They can impact gene expression within minutes and induce major developmental responses such as stem thickening, when repeated (Braam and Davis, 1990). In the context of meristem growth, mechanical (tensile) stresses are in contrast intrinsic and continuous, and they cause long-term plastic responses (growth). The origin of such growth-related stresses lies in the presence of high turgor pressure rather than external stimuli. The opposition between these two kind of stresses can be illustrated with the microtubule response: transient pinching does not lead to supracellular microtubule alignments in the meristem, and this has even served as a negative control for the microtubule response to ablations in this tissue (Hamant et al., 2008). Nonetheless we cannot exclude the possibility that some elements of the mechanotransduction pathways are shared between these two types of mechanical signals. Here, given our correlation between STM expression and crease formation at the boundary, we designed our mechanical tests to check whether STM expression can be modified by continuous mechanical perturbations.\n\nFirst, we modified the mechanical stress pattern in the SAM using compressions or ablations and we followed the impact on the pSTM::CFP-N7 and pBOUND>>GFP expression patterns. Note that in all these experiments, we used in vitro-grown plants with a naked meristem recovering from a NPA treatment, as plants from the greenhouse need to be dissected to access the SAM, and the wounds may interfere with the mechanical perturbations. Using a microvice, we first induced global compression of the SAM. This is predicted to increase tension in the epidermis, and in the most extreme cases, to induce a bias in maximal stress direction parallel to the blades (Figure 5A, [Hamant et al., 2008; Uyttewaal et al., 2012]). Around 8 h after compression, we detected an increase of pSTM::CFP-N7 signal (n = 8; Figure 5B and Video 1). Similar induction was observed in the pBOUND>>GFP line; although the GFP signal was more variable before compression, a strong induction could nevertheless be observed in the pBOUND>>GFP line after compression (n = 11; Figure 5C and Video 2). Furthermore, even if the induction of STM expression occurred earlier in the pSTM::CFP-N7 line than in the pBOUND>>GFP line (Figure 5B and C), the overall time frame (8 h onwards) rather suggests an indirect effect of compressions on STM expression.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/07811/elife-07811-fig5-v1.jpg)\n\n**Figure 5.:** (A to C) Global compression of meristems with a microvice lead to an increase in STM expression (arrows indicate the direction of the compression). (A) Predicted impact of compression on the mechanical stress pattern. (B)\u00a0pSTM::CFP-N7 signal before and after compression in a representative meristem (n = 8). (C) pBOUND>>GFP signal before and after compression in a representative meristem (n = 11, red dots correspond to plast auto-fluorescence). (D to F) Ablation of a small number of cells leads to an increase in STM expression (white arrows indicate the site of ablation). (D)\u00a0Predicted impact of a local ablation on the mechanical stress pattern. (E)\u00a0pSTM::CFP-N7 signal before and after ablation with a needle (n\u00a0>\u00a030). (F) pBOUND>>GFP signal before and after ablation using a pulsed UV laser (n\u00a0>\u00a012, red dots correspond to plast auto-fluorescence). (G and H) Isoxaben treatment leads to an increase of pSTM::CFP-N7 signal. (G) Representative pSTM::CFP-N7 signal after overnight immersion in water with DMSO (upper panel) or in 10 \u03bcM isoxaben (lower panel). Note the increased nucleus size after isoxaben treatment, consistent with increased endoreduplication levels. (H) Quantifications: CFP signal intensity in 10 nuclei from the central zone of 6 isoxaben-treated meristems and 7 water-treated meristems. Values are displayed with a Student confidence interval (\u03b1 = 0.05) and compared using a bilateral Student test. (I) Isoxaben treatment leads to an increase in pBOUND>>GFP signal (red dots correspond to plast auto-fluorescence). (I,\u00a0left) Representative pBOUND>>GFP signal after overnight immersion in water (n = 10). (I, right) Representative pBOUND>>GFP signal after overnight immersion in 5 to 20 \u03bcM isoxaben (n = 20). Scale bars, 20 \u00b5m. (J, K) Jasmonate does not enhance STM promoter activity (J) pSTM::CFP-N7 signal after prolonged incubation in water supplemented with 1/1000 V/V ethanol. (K) pSTM::CFP-N7 signal after prolonged incubation in water supplemented with 100 \u00b5M jasmonate diluted in ethanol (1/1000 V/V). Scale bars, 20 \u00b5m. (L-O) Jasmonate enhances pJAZ10 promoter activity. (L, M) Aerial part (L) and root (M) of 3 week old NPA grown seedlings. pJAZ10::GUS staining after overnight incubation in water supplemented with 1/1000 V/V ethanol (n = 8). (N,O) Aerial part (N) and root (O) of 3 week old NPA grown seedlings. pJAZ10::GUS staining after overnight incubation in water supplemented with 100 \u00b5M jasmonate diluted in ethanol (1/1000 V/V) (n = 14). Scale bars, 0.5 cm.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07811/elife-07811-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Z-projections of meristems expressing pSTM::CFP-N7 and labeled with FM4-64 (white) before and after ablations of different sizes. (B) Quantification of the CFP signal intensity in 10 nuclei around the ablation site (positive area) or in the opposite side of the meristem (control area) of the three meristems presented in A. Values are displayed with a Student confidence interval (\u03b1 = 0.05) and compared using a bilateral Student test. (C) Longitudinal sections (5 \u00b5m thick maximal projections) of the ablated meristems presented in A, 20 hr after the ablations revealing that the induction of pSTM::CFP-N7 roughly scales to the ablation size. Scale bars, 20 \u00b5m.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07811/elife-07811-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Whole mount in situ hybridizations using a STM probe in a SAM from WT NPA grown plants. (B) Whole mount in situ hybridizations using a STM probe in a SAM from WT NPA grown plants 24 hr (right and left panels) and 48 h (central panel) after ablation. Red arrows point at the ablation sites. Scale bars, 100 \u00b5m.\n\n![Video 1.](https://cdn.elifesciences.org/articles/07811/elife-07811-media1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/07811/elife-07811-media2.mp4.jpg)\n\nTo check whether STM can also be induced after a more local mechanical perturbation, we next performed ablations of a few cells in the meristem to induce high circumferential stress around the site of ablation (Figure 5D [Hamant et al., 2008; Heisler et al., 2010; Uyttewaal et al., 2012]). Strikingly, we observed a local increase of pSTM::CFP-N7 signal intensity around the ablation site from t = 18 h onwards (n = 16; Figures 5E and Video 3). The induction also seemed stronger in larger ablations than in smaller ablations, consistent with a greater range of stress perturbation in larger ablations (Figure 5\u2014figure supplement 1). A similar response was also observed in the pBOUND>>GFP background, again with a delay (n = 12; Figure 5F and Video 4). While some degree of variability between individual plants at t = \u20090h could be observed, pBOUND>>GFP expression was also consistently induced after ablation (Figure 5F). We also noticed that with both markers, the induction of STM was not homogeneous around the ablation site. In particular, STM was never induced at the base of meristem, that\u00a0is in the differentiating cells from the upper part of the stem. This is consistent with the prevailing view from the literature stating that the competence to express STM is limited to meristematic cells sensu stricto, and our data suggest that such a prepattern cannot be overridden by mechanical perturbations.\n\n![Video 3.](https://cdn.elifesciences.org/articles/07811/elife-07811-media3.mp4.jpg)\n\n![Video 4.](https://cdn.elifesciences.org/articles/07811/elife-07811-media4.mp4.jpg)\n\nTo confirm these results, we analyzed the distribution of STM mRNA by whole mount in situ hybridizations on shoot apices after ablation (Rozier et al., 2014). Even though this method is only semi-quantitative, we could detect an asymmetric signal, with a higher intensity near the ablation site, consistent with the results obtained with the pSTM::CFP-N7 and pBOUND>>GFP lines after ablation (Figure 5\u2014figure supplement 2, n = 9). Note that ablation may also provide increased accessibility to the probe. Last, to check whether STM expression would be enhanced by wound-induced jasmonate production, we incubated shoot apices with 100 \u03bcM jasmonate over night. In these conditions, we did not observe any significant induction of pSTM::CFP-N7 signal in most of the plants (N = 10/14, Figure 5J), and slight fluctuations in CFP signal in the remaining ones (N = 4/14, Figure 5K). Based on these results, we cannot rule out completely that jasmonate interferes with STM expression. Yet, as this contrasts with the systematic and steady induction of STM after ablation and with the robust induction of a pJAZ10::GUS reporter by jasmonate (Figure 5L-O), wound-induced jasmonate is not the most likely candidate as a secondary messenger between stress and STM induction.\n\nTo further confirm an induction of STM expression by mechanical signals, we next modified the mechanical stress level using isoxaben treatments. Isoxaben is a well-known inhibitor of cellulose synthesis; after treatment, walls become mechanically weaker, and thus tensile stress increases (Heisler et al., 2010; Uyttewaal et al., 2012). In these conditions, we could detect a global increase in pSTM-CFP-N7 signal intensity, when compared to that of the control (measurement on 10 nucleus of the central zone in the control (n = 6 meristems) and isoxaben-treated (n = 7 meristems); Figure 5G and H). This response was also confirmed in the pBOUND>>GFP background (control: n = 10, isoxaben: n = 20; Figure 5I). Note that pBOUND>>GFP was not induced in the entire meristem after isoxaben treatment, further demonstrating that mechanical perturbations cannot override the prepattern in the SAM. Because these different experimental setups have little in common except mechanical stress perturbation, we thus propose that STM expression can indeed be modulated by mechanical stress in the SAM.\n\n### Boundary expressed genes are not systematically induced after mechanical perturbations\n\nOne may wonder whether such artificial mechanical perturbations could induce the expression of all meristematic genes, and in particular other boundary-expressed genes, as a non-specific stress response. To test this hypothesis, we first focused on PINOID (PID). Like STM in the boundaries, PID has an established role in organ separation and boundary function (Furutani et al., 2004; Reinhardt et al., 2003). In a pPID::PID-YFP line, we observed a more abundant signal at the boundary of the meristem, as in the pSTM::STM-Venus line (Figure 6A). As detailed expression data were lacking in the meristem, we first analyzed the activity of the PID promoter. We generated a pPID::CFP-N7 line and observed a pattern that somewhat echoes that of pSTM::CFP-N7. In particular, the CFP signal was detected in the entire meristem and was enhanced in the boundary domain (Figure 6B). The signal obtained in a pPID::AlcR ALcA::GFP line (pPID>>GFP) further confirmed this result, echoing the pBOUND>>GFP signal (Figure 6C and D). However, after ablation, PID expression was not affected in both the pPID::CFP-N7 and pPID>>GFP lines, in contrast to our results in the pSTM::CFP-N7 and pBOUND>>GFP line (Figure 6E\u2013G, pPID::CFP-N7: n = 13; pPID>>GFP: n = 7). No induction could also be detected after isoxaben treatment in the pPID>>GFP line (Figure 6\u2014figure supplement 1; n = 11). Therefore, in our hands PID expression appeared as a negative control for our mechanical perturbations: PID expression at the boundary may not depend on a mechanical signal. Conversely, it suggests that the induction of STM by mechanical stress retains some specificity.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/07811/elife-07811-fig6-v1.jpg)\n\n**Figure 6.:** (A\u2013C)\u00a0PINOID expression pattern in representative meristems: a higher expression of PINOID is observed in boundaries. (A) Expression pattern of the translational fusion pPID::PID-YFP. (B)\u00a0Expression pattern of the transcriptional reporters pPID::CFP-N7. (C)Expression pattern of pPID>>GFP. (D) Orthogonal sections through the middle of the boundaries of the meristems presented in (A\u2013C). (E\u2013F) Time lapse of a representative meristems showing the absence of response of pPID::CFP-N7 (F, n = 13) after ablation when compared to the control (E,\u00a0n = 6). (G) Time lapse of a representative meristems showing the absence of response of pBOUND>>GFP after ablations (control n = 14, ablation n = 7). Scale bars, 20 \u00b5m.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07811/elife-07811-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Overnight treatment with isoxaben does not lead to an induction of pPID::GFP expression, even 48 h after the first exposition to isoxaben. (Control, n = 14; isoxaben treatment, n = 11). Scale bars, 20 \u00b5m.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07811/elife-07811-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** pCUC1::CUC1-GFP expression after an ablation (arrow). No major changes are induced, and the pattern follows the organogenetic pattern instead of consolidating around the ablation site (n = 11). Scale bar, 20 \u00b5m. Drawings illustrate the last time points, with the hatched zone corresponding to the ablated zone.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/07811/elife-07811-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** pCUC3::CFP expression after an ablation. Note the steady induction, when compared to control (bottom line, n = 20). Scale bar, 20 \u00b5m.\n\nTo further check whether other boundary expressed transcription factors are induced by mechanical perturbations, we performed ablations in pCUC1::CUC1-GFP and pCUC3::CFP expressing meristems. As ablations are also inducing other signals than mechanical signals, such a test is not sufficient to know whether a gene is induced by mechanical stress. Yet, induction after wounding is a necessary condition for a gene to respond to mechanical perturbation and thus this simple test can help to identify genes whose expression is insensitive to mechanical stress.\n\nCUC1 and CUC3 belong to the NAC family of transcription factors and are two well-known regulators of boundary function at the shoot apical meristem (Aida and Tasaka, 2006). Note that in contrast to CUC3 for which a transcriptional fusion is sufficient to recapitulate boundary expression, CUC1 expression is restricted to the boundary via the post-transcriptional action of miR164, and thus strict boundary expression of CUC1 can only be observed in a translational fusion line (Sieber et al., 2007; Laufs et al., 2004). After ablations, no significant induction could be observed in the pCUC1::CUC1-GFP line (Figure 6\u2014figure supplement 2; n = 11). For instance, when comparing the time points before and 24 h after ablations, GFP signal intensities were roughly identical and the GFP pattern could not be easily related to the wound position or shape. Later on, as the meristem recovered from the wound, new boundaries were initiated in which new GFP signal could be observed, again with no relation to the ablation position or shape (Figure 6\u2014figure supplement 2). Sometimes, the new CUC1-GFP signal even formed a line perpendicular to the wound edge, corresponding to the initiation of the boundary of following organs (Figure 6\u2014figure supplement 2, bottom panels), in contrast to pSTM::CFP-N7 and pBOUND>>GFP induction that always appear and further consolidates along the wound edge. In other words, the cycle of CUC1 induction at the boundary went on largely undisturbed, independent of the presence of a neighboring ablation. Altogether, this strongly suggests that CUC1 expression at the boundary is also not controlled by a mechanical signal.\n\nThe response of the pCUC3::CFP line to ablation was completely different than that of the pCUC1::CUC1-GFP line. In the pCUC3::CFP line, we observed a strong and steady induction of CFP signal after ablation in all the analyzed meristems (n = 20). Interestingly, this induction seemed to appear earlier than in the pSTM::CFP-N7 line, as a strong induction could be detected as early as t = 6 hr after ablation (Figure 6\u2014figure supplement 3). Although these data may suggest that CUC3 expression is controlled by a mechanical signal, further tests would be required to reach such a conclusion. Nonetheless this demonstrates that boundary expressed transcription factors, even from the same family, are not systematically induced by wounding and, thus, that the mechanical induction of STM retains some specificity.\n\n### STM induction after mechanical perturbations can be partly uncoupled from PIN1-dependent auxin distribution\n\nAnother issue raised by our mechanical perturbations is the relatively long time responses (8 to 24 hr) for STM to be induced. While this is consistent with the relatively slow timing of organ emergence and boundary folding in Arabidopsis meristems (Kwiatkowska, 2004; Reddy et al., 2004; Grandjean et al., 2004), it strongly suggests that the induction of STM expression after mechanical perturbations is indirect and could involve secondary signals, such as hormones. In line with this hypothesis, mechanical signals in animal development have all been shown to interfere with established biochemical signal transduction pathways (e.g. [Janmey et al., 2013; Jaalouk and Lammerding, 2009; Orr et al., 2006]). Auxin signaling could again play such a role at the boundary, as the polarity of the auxin efflux carrier PIN1 depends in part on membrane tension (Heisler et al., 2010; Nakayama et al., 2012). Based on these data, a scenario emerges where mechanical stress would control PIN1 localization at the boundary, which in turn would locally deplete this domain from auxin, leading to a local induction of STM expression. Although our previous results suggest that STM expression at the boundary does not solely rely on auxin depletion (based on a global auxin treatment, see Figure 4C,D), it does not formally exclude the possibility that the contribution of mechanical stress in STM expression at the boundary is mediated by local auxin gradients. In other words, whether mechanical stress impacts STM expression independently of the response of PIN1 to mechanical stress is unknown.\n\nFirst, we checked whether mechanical stress can affect the distribution of auxin in the SAM. To do so, we performed a series of ablations on meristems expressing the DII-Venus sensor. Such treatments induce a local reorientation of PIN1 around the ablation (Heisler et al., 2010), i.e. parallel to the new stress pattern, and should lead to the local depletion of auxin. After ablation and despite some variability in the basal level of DII-Venus signal on meristems recovering from NPA treatment (Figure 7A), we indeed consistently observed an induction of DII-Venus signal around the site of ablation (n = 21; Figure 7B, Video 5). Interestingly, the first effect of mechanical stress on DII-Venus signal was detected around 4 to 8 h after ablation, which is consistent with the timing of the response of PIN1 after ablation (ca. 4 hr [Heisler et al., 2010]) and the subsequent response of pSTM::CFP-N7 after mechanical perturbation (8 to 18 hr after compression or ablation respectively, this study). The DII-Venus signal was also induced after compression (Figure 7C) further matching the response observed in the pSTM::CFP-N7 line. Altogether, this suggests that auxin patterns and mechanical stress fields act synergistically to control STM expression at the boundary.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/07811/elife-07811-fig7-v1.jpg)\n\n**Figure 7.:** (A) Time lapse of representative meristems from a NPA-grown plant and expressing DII-Venus. From t = \u2009h, the plants are not exposed to NPA anymore. (B)\u00a0DII-Venus-N7 signal increases after ablation: Time lapse of a representative meristems from a NPA-grown plant and expressing DII-Venus as in C, after ablation (Control n = 15, Ablation n = 21). (C)\u00a0Representative DII-Venus signal before and after compression. An increased signal is usually detected after 4 to 8 hr after compression in the overall meristem (n = 10). (D) Representative pin1-6 meristem expressing DII-Venus-N7 and pSTM::CFP-N7: the presence of CFP signal at the pseudo-boundary does not correlate with DII-Venus-N7 signal anymore (n = 6). (E)\u00a0Representative pin1-6 meristem expressing pBOUND>>GFP showing the presence of GFP signal in a pseudo-boundary (n = 7). (F)\u00a0Representative pin1-6 pBOUND>>GFP meristem after ablation: pBOUND>>GFP is induced around the site of ablation (n = 14). (G)\u00a0Representative pin1-6 DII-Venus-N7 pSTM::CFP-N7 meristem after ablation: pSTM::CFP-N7 is induced around the site of ablation but DII-Venus-N7 is not (n = 10). Scale bars, 20 \u00b5m.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07811/elife-07811-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Two representative pin1-6 DII-Venus-N7 pSTM::CFP-N7 meristem after ablation (time-lapse): pSTM::CFP-N7 is induced around the site of ablation but not DII-Venus-N7 (n = 10).\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07811/elife-07811-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Representative pin1-6 meristems expressing pBOUND>>GFP showing the presence of GFP signal in a pseudo-boundary (n = 7) and an induction of GFP signal after ablation (n = 14).\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/07811/elife-07811-fig7-figsupp3-v1.jpg)\n\n**Figure 7\u2014figure supplement 3.:** (A) Top and side views of a pSTM::CFP-N7 meristem grown on NPA and maintained on NPA after the local application of the microtubule depolymerizing drug oryzalin. A bump is induced and a local increase in CFP signal is detected at the pseudo-boundary (n = 17/22). (B) Top and side views of a pBOUND>>GFP meristem grown on NPA and maintained on NPA after the local application of the microtubule depolymerizing drug oryzalin. A bump is induced and a local increase in GFP signal is detected at the pseudo-boundary (n = 20/21). Scale bars, 20 \u00b5m.\n\n![Video 5.](https://cdn.elifesciences.org/articles/07811/elife-07811-media5.mp4.jpg)\n\nNext, we investigated whether the mechanical induction of STM depends on PIN1. First, we analyzed the DII-Venus signal in the pin1-6 background. Although polar auxin transport in the meristem is largely inhibited, this mutant can generate bulges and sometimes ill-shaped flowers suggesting that compensatory mechanisms can be induced (Figure 7D and E; [Okada et al., 1991]). Because some degree of organogenesis is present in the pin1 mutant, this allowed us to observe boundary formation in this background. To distinguish this form of organogenesis from what we observed in the WT, we use the word 'pseudo-boundary' in pin1-6. Despite the variability in DII-Venus signal in the pin1-6 meristems, we could not detect any DII-Venus signal in pin1-6 pseudo-boundaries, suggesting that PIN1 is necessary to deplete auxin from the boundary (Figure 7D, n = 6). Interestingly, both pBOUND>>GFP and pSTM::CFP-N7 signals were present in the pin1-6 pseudo-boundaries (Figure 7D and E), thus suggesting that PIN1 is not a major player in the correlation between tissue folding and STM expression.\n\nTo further confirm this result, we performed mechanical perturbations in the pin1-6 DII-Venus pSTM:CFP-N7 background. No significant induction of DII-Venus signal could be detected after ablation in pin1-6 demonstrating that auxin depletion after ablation mainly relies on PIN1 (n = 11, Figure 7G; Figure 7\u2014figure supplement 1). However, both pSTM::CFP-N7 and pBOUND>>GFP were systematically induced around the site of ablation (Figure 7F and G; Figure 7\u2014figure supplement 1 and 2). This demonstrates that the induction of STM after ablation can occur independently of PIN1. While we cannot rule out the possibility that other auxin carriers substitute for PIN1 in the pin1 background, despite our efforts, the induction of STM around the ablation site could not be clearly correlated with DII-Venus signal intensity, suggesting that the induction of STM after an ablation is not primarily caused by a local reduction in auxin levels. In other words, STM expression and auxin distribution can be partially uncoupled and the correlation between tissue folding and STM expression always remains.\n\nLast, we used a recently developed protocol in which tissue folding is triggered by the local application of the microtubule depolymerizing drug oryzalin, in the presence of the auxin transport inhibitor NPA (Sassi et al., 2014). In these conditions, a lateral outgrowth can be induced at the periphery of the meristem, mimicking the first stages of organ emergence. In both the pBOUND>>GFP and pSTM::CFP-N7 lines, oryzalin-triggered tissue folding led to a slight increase of GFP and CFP signals respectively, in the young boundaries (Figure 7\u2014figure supplement 3). Because this induction occurred in the presence of NPA and as oryzalin indirectly modifies the mechanical status of cell walls (and thus promotes organ emergence), this further supports a scenario in which mechanical stress can promote the expression of STM at the boundary, relatively independently of auxin distribution.\n\n## Discussion\n\nBecause tissue folding is generally associated with the presence of high mechanical stress levels, crease formation is a unique event in development where the biochemical regulation of morphogenesis may also involve a strong contribution of mechanical signals. For instance, the patterning genes Twist and Notail are induced by the deformation of the embryo during gastrulation and epiboly in Drosophila and Zebrafish embryos respectively, through the activation of the \u03b2-catenin pathway (Brunet et al., 2013; Farge, 2003; Desprat et al., 2008). This suggests that shape changes are not only the result of biochemical regulation, but are also the source of mechanical signals that further channel morphogenesis via the control of gene expression. Our observations are in line with these conclusions: we report that the expression of STM at the boundary of the shoot apical meristem is correlated with tissue folding and is increased by mechanical stress. This provides a scenario in which biochemical factors, such as auxin, promote differential growth and shape changes in the meristem, which in turn, generate mechanical signals that can impact the expression of some of these regulators.\n\nIncidentally, our work also echoes results from Drosophila embryo where tension lines acting as genetic and mechanical boundaries have been revealed in the wing disk and shown to compartment cell identities (Aliee et al., 2012; Landsberg et al., 2009). Here we show that mechanical stress at the boundary contributes to the local expression of STM that is in turn necessary for the separation between organs. Note that tensile stress at the meristem boundary becomes anisotropic before tissue folds, as maximal stress direction is first prescribed by differential growth. In this respect, our results might thus be extended to other tissues like leaves or embryo, where the induction of KNOX genes would be related to differential growth, and thus stress, before tissue folding.\n\nBeyond organ separation, the boundary has many other functions. In particular, it is the site where new meristems, called axillary meristems, can be initiated. Interestingly, overexpression of class I KNOX genes is sufficient to induce ectopic meristems (Chuck et al., 1996). The boundary also plays a crucial role in plant architecture: this is where auxin is redistributed from the adjacent neighboring organ to the meristematic pool where new organs or new axis need to be initiated (Heisler et al., 2005; Reinhardt et al., 2003; de Reuille et al., 2006). The central role of the meristem boundary in plants largely explains why this domain has received considerable attention over the past decades, albeit from a molecular genetics point of view mainly (Aida and Tasaka, 2006; Tian et al., 2014). The role of mechanical stress in the function and regulation of the boundary domain of the meristem opens the possibility that other functions than organ separation are influenced by mechanical signals.\n\nAnother question raised in this work is that of the coordination between mechanical and biochemical signals to control development. In animals, well-known elements of biochemical-based transduction pathways are involved in mechanotransduction. For instance, integrin, \u03b2-catenin or YAP/TAZ are all involved in transducing mechanical signals (e.g. Janmey et al., 2013; Jaalouk and Lammerding, 2009; Orr et al., 2006). Such intermingling raises the question of whether these signals can really be uncoupled with one another and this may even question the added value of mechanical signals in development. This is what we touched upon by analyzing the coordination between the plant hormone auxin and mechanical stress in the meristem. While we provide further evidence supporting a strong coordination between STM expression and auxin depletion, we also found that the response to mechanical stress can uncouple them. In particular, mechanical perturbations induce STM expression even when auxin transport or level is affected. In addition, mechanical stress does not seem to impact the expression of PINOID, which has been associated with the control of PIN1 polarity and thus auxin patterns in the meristem (Robert and Offringa, 2008). This is thus a case where two redundant signalling pathways act relatively independently to control the same morphogenetic event. We propose that the absence of a strict coupling between auxin depletion and mechanical stress is a way to add robustness in meristem functions at the boundary. Incidentally, this highlights the added value of mechanical signals in this domain.\n\nAlternative cues may be involved in the promotion of STM expression at the boundary. In addition to auxin, STM has been associated with the homeostasis of cytokinins, gibberellins and ethylene. Activation of STM promotes the expression of the cytokinin biosynthesis gene AtIPT7 and cytokinin response factor ARR5 (Yanai et al., 2005). Conversely, overproduction or application of cytokinins increase the expression level of STM and can rescue weak stm mutant alleles (Rupp et al., 1999; Jasinski et al., 2005). This interaction with cytokinins is largely shared among the different class I KNOX genes and, consistently, it has been shown that KNAT1 and KNAT6 display redundant functions with STM. Interestingly, the level of cytokinins has been predicted to increase in the boundary, based on the cytokinin activity reporter pTCS signal, and axillary meristem formation has been shown to require cytokinin signalling (Wang et al., 2014), consistent with the well-known bushy phenotypes of cytokinin overproducers. Temporally, this cytokinin burst would follow the initial reduction in auxin level at the boundary (Wang et al., 2014). Thus cytokinin, in parallel to and after auxin depletion, may very well contribute to STM induction at the boundary. Class I KNOX proteins also reduce gibberellins levels, notably through a direct repression of the GA-20\u00a0oxidase gene (Sakamoto et al., 2001; Chen et al., 2004); conversely gibberellins can rescue the phenotype of KNOX overexpressors (Hay et al., 2002). The induction of the gibberellin catabolism gene GA-2\u00a0oxidase was also shown to depend on KNOX proteins (Jasinski et al., 2005).\n\nWhile both cytokinins and gibberellins are tightly linked to class I KNOX gene expression, the potential interplay with mechanical stress has not been explored. In contrast, other hormones, such as ethylene, have been associated to the plant response to many stresses. Interestingly, ethylene restricts the expression of class I KNOX gene KNAT2 in the shoot meristem to the boundary domain (Hamant et al., 2002). Note however that the exact contribution of ethylene in mechanoperception remains debated. For instance, while touch can induce ethylene synthesis, ethylene response mutants still display thigmomorphogenesis in response to touch (Chehab et al., 2012); touch-induced thigmomorphogenesis rather depends on jasmonate (Chehab et al., 2012). While certain hormones are rather associated with repetitive elastic deformations (like touch or wind), others are involved in continuous plastic deformations (i.e. growth and shape changes), these may be better candidates for the regulation of STM expression at the boundary.\n\nMore generally, and as auxin does not seem to act as a secondary messenger of mechanical signals for STM expression, another exciting prospect for this work will be to identify the elements of the mechanotransduction pathway acting on STM at the boundary. The current dissection of the gene regulatory network acting at the boundary (e.g. [Tian et al., 2014]) should help us weigh the putative contributions of these biochemical factors in transducing mechanical signals at the SAM in the future.\n\nAs illustrated in the art of origami, folding can in principle generate the widest diversity of shapes from simple inputs. In the past decades, there has been tremendous progress in the identification of genes that trigger such events in all living organisms. The robustness of such a complex regulation is often thought to rely on redundancy between different molecular pathways. Here we have investigated whether the shape itself, and its associated mechanics, interferes with gene expression and channels morphogenesis by constraining the possible outputs of the gene regulatory network. If generalized, such a dialog between gene and form could help us understand how reproducible shapes can emerge from a complex gene regulatory network that is susceptible to noise. Because of its essential function in morphogenesis and its impact on developmental robustness, this 'shape to gene' feedback may also have far reaching implications in evolution.\n\n## Material and methods\n\n### Plant lines and growth conditions\n\nThe pBOUND>>GFP, DII-Venus, pin1-6, stm-dgh6 lines were already described in the literature (Brunoud et al., 2012; Vernoux et al., 2011; Laufs et al., 2004; Dharmasiri et al., 2005; Vernoux et al., 2000; Aida et al., 2002). The pCUC1::CUC1-GFP and pCUC3::CFP lines have recently been described (Goncalves et al., 2015). Note that the Mo223::GFP line (Cary et al., 2002) was also used to test the response of the CUC1 promoter to ablations. The pJAZ10::GUS used as control for the JA treatment has also been previously described (Mousavi et al., 2013). The pSTM::CFP-N7, pPDF1::CFP-N7 and pPID::CFP-N7 lines were generated by fusing either the 5,7 kb region upstream of STM (AT1G62360) ATG, the 1456 pb region upstream of PDF1 (AT2G42840) ATG, or the 4 kb region upstream of PID (AT2G34650) ATG to a CFP targeted to the nucleus through a N7 signal in a pH7m34GW vector using the Gateway system and transformed in Col0 ecotype. The pPID>>GFP line was generated by fusing the 4 kb region upstream of PID (AT2G34650) ATG to the Alc-R coding sequence fused to an pAlcA::GFP-ER in a derivate of the pGREEN129 plasmid and transformed into the WS-4 ecotype. The pSTM::STM-Venus line was generated by transforming the plasmid described by Heisler et al. (Heisler et al., 2005) in Col-0 plants. The STMamiRNA line (binding to the STM coding sequence though the following sequence: TTAACCACTGTACTTGCGCGA) was designed and amplified from the pRS300 plasmid following previously described protocol (http://wmd3.weigelworld.org/cgi-bin/webapp.cgi) and fused to the pSTM promoter in a pK7m34GW vector using the Gateway system. The construction was transformed either in Col-0or in the pSTM::STM-Venus line. pBOUND>>GFP and pPID>>GFP expression was induced by an overnight treatment with 70% ethanol vapor following a previously described protocol (Deveaux et al., 2003).\n\n'Greenhouse grown plants' were initially grown in short-day conditions (8 hr/16 hr light/dark period) for one month and then transferred to long-day conditions (16 h/8 h light/dark period). Stems were cut and the SAM was dissected when the inflorescence meristem was visible, i.e. between the appearance of the first flower to the appearance of first silique (stages 13 to 17 [Smyth, 1990]) and transferred on a half MS medium with vitamins and 0.125 \u00b5g/\u00b5L of BAP for imaging as already described (Fernandez et al., 2010).\n\n\"In vitro grown plants\u201d were grown in a phytotron in long day conditions on Arabidopsis medium (Duchefa, Haarlem, the Netherlands) supplemented with 10 \u00b5M NPA to inhibit flower initiation and generate naked meristems. NPA-treated in vitro grown plants were transferred to a medium without NPA as soon as naked meristems were formed as already described (Grandjean et al., 2004). Meristems were then imaged from 24\u2009hr to 48\u2009hr after transfer on the NPA-free medium. For in vitro\u00a0experiments on pin1 meristems, plants were grown in vitro on MS medium without NPA in a phytotron in long day conditions.\n\n### Confocal laser scanning microscopy and image analysis\n\nDissected meristems and plants grown in vitro were imaged in water using either a LSM700or a LSM780 confocal microscope (Zeiss, Germany) to generate stack of optical sections with an interval of 0.25, 1or 2 \u00b5m between slices. In some cases, membranes were stained with FM4-64 and the signal in the L1 was extracted using the Merryproj software as described in de Reuille et al., (de Reuille et al., 2005). Longitudinal optical sections of various thicknesses were performed using the ImageJ software. In many cases, the Fire lookup table from ImageJ was used to represent the CFP signal intensity and background signal from raw images was reduced in images, by modulating the minimum level of intensity in ImageJ as shown by the calibration bars on the different pictures. The minimum level was however never above 50\u00a0out of 256 in intensity and the same processing was applied on all time points, and on control and assay alike. In some projections from of pSTM::STM-Venus and pSTM::CFP-N7 where the signal was weak, area outside the nucleus emitting in both green and red channels and corresponding to either the auto-fluorescence of the plasts or the FM4-64 signal were automatically removed using the function calculator-plus subtraction of ImageJ.\n\nThe maps and quantifications of meristem curvature and pSTM::CFP-N7 signal at cellular levels were obtained using the MorphographX software (www.morphographix.org). The curvature maps were generated by plotting the mean Gaussian curvature on either non-segmented or cell-segmented meshes with a neighboring of 15 \u00b5m. The maps of pSTM::CFP-N7 signal were generated by blurring the CFP signal with a radius of 10 \u00b5m and projecting it on the cellular mesh with a thickness of 10 \u00b5m. Note that the oldest organs were not included in the quantifications because of the inability of the mesh to follow the surface of the meristem in very deep boundaries and to extract well the pSTM::CFP-N7 signal in these area. Furthermore, cells at the extremities of the mesh were also not included in the quantifications due to the presence of aberrations of Gaussian curvature on these parts of the mesh.\n\nOrgan size was quantified using ImageJ: stacks were projected using the function z-stack, a circle was drawn using the freehand selection around each organ viewed from the top and the surface inside this selection was automatically measured. The folding angle of the boundary was measured manually on longitudinal sections taken in the middle of each boundary using the angle tool of ImageJ.\n\nFor the quantification of the pSTM::CFP-N7 nuclear signal after Isoxaben treatments or after ablations, each nucleus from the central zone (Isoxaben treatment) or from the peripheral zone (around the site or on the opposite site of the ablation) was isolated manually using the ImageJ software on the slice from the z-stack where its size and intensity was the highest. A circle was manually fitted around each nucleus and the integrated intensity was calculated in this circle. 10 nuclei were measured for each meristem. The quantification of nucleus signal intensity after Isoxaben treatment was performed on one of two sets of individual plants (see Supplementary file 1).\n\n### Compressions, ablations and chemical treatments\n\nEach experiment was performed on at least two independent sets of plants, and with at least 4 independent plants in each set. In all experiments, the t = X\u00a0hr time point corresponds to X hours after the beginning of treatment. Controls and assays were analyzed in parallel (same growth conditions, same imaging conditions). The compressions, ablations and isoxaben treatments that were carried out on WT plants were performed on plants previously grown in vitro NPA and transferred in a medium without NPA 0 to 24\u2009hr before the beginning of the experiment.\n\nThe ablations were performed with a needle or using a pulsed UV laser as already described (Hamant et al., 2008; Uyttewaal et al., 2012). Note that the ablations performed on pin1-6 meristems were performed on plants grown in vitro on NPA-free medium.\n\nThe isoxaben treatments were conducted by immersing the plants in solutions of 5 to 20 \u00b5M of isoxaben overnight (for 12 to 14 hr, Heisler et al., 2010; Uyttewaal et al., 2012). Controls were obtained by water immersion with an equivalent volume of Dimethyl Sulfoxide (DMSO). All these concentrations gave similar results. The presence of isoxaben in the meristem could be confirmed by its impact on meristem, cell and nucleus size.\n\nFor the auxin treatments, dissected meristems in half MS Vitamins and BAP boxes were immerged in a solution of 10 \u00b5M of 2-4D overnight (for 12 to 14 hr). Controls were obtained by immersing the meristem in a solution of equivalent volume of water. Similar experiments were also performed on plants grown in vitroand recovering from an NPA treatment and with IAA and gave similar result (data not shown). The disappearance of the DII-Venus-N7 signal reflected the presence of high auxin levels in treated meristems.\n\nFor jasmonate treatments on pSTM::CFP-N7 and pJAZ10::GUS, jasmonic acid (Sigma) was diluted in 100% Ethanol to make a stock solution. JA was then diluted in water (1/1000) for the treatments. NPA grown plants in Arabidopsis medium exhibiting naked meristems and recovering from the NPA treatment were fully immersed overnight (12 to 14 hr) in a water solution containing 100 \u00b5M of JA or in a similar dilution of ethanol for the control.\n\nOryzalin applications in lanolin paste were carried out as previously described (Sassi et al., 2014).\n\n### GUS staining\n\nTo reveal the presence of GUS activity in the pJAZ::GUS plants grown on NPA and treated with jasmonate, the samples were first immersed overnight at 37\u00b0C in a GUS solution (100 mM Na2HPO4 pH7, 5 mM K4Fe [CN]6\u00b73H20, 5 mM K3Fe [CN]6, 0.05% Triton-X-100, 0.5 mg/ml X-Gluc) before being cleared trough successive ethanol baths (from 70 to 100% Ethanol). Imaging was performed with a Zeiss stereomicroscope Discovery V20.\n\n### Whole mount immunolocalizations of PIN1\n\nThe whole mount immunolocalizations of PIN1 were performed on WT plants (WS-4 ecotype) as previously described (Besnard et al., 2013). Imaging was performed with a Zeiss LSM700 microscope.\n\n### Whole mount in situ hybridization\n\nThe whole mount in situ hybidization of STM mRNA was performed as previously described (Rozier et al., 2014). Imaging was performed with a Zeiss stereomicroscope Discovery V20.\n\n### Stm-dgh6 genotyping\n\nThe stm-dgh6 mutant was originally identified in the Versailles T-DNA collection. In this allele the T-DNA is inserted between nucleotide 723 and 724 in the cDNA sequence. To genotype the stm-dgh6 populations, we used the forward primer GGGTAAATACCCCTTTGATGG (before the T-DNA insertion) and reverse primer TCGTTCCTTATCCTGAGTTG (in the following gene). This amplified a 2600 bp long fragment in the WT and stm-dgh6 heterozygote, and nothing in the stm-dgh6 homozygote. Conversely, to detect the presence of the T-DNA, we used the forward primer CGTGTGCCAGGTGCCCACGGAATAGT (LB4, T-DNA) and reverse primer GTAGTGACGGCTCCACCAAT (STM). This amplified a 300 bp long fragment in the stm-dgh6 heterozygote and homozygote, and nothing in the WT.\n\n### qPCR on STMamiRNA lines\n\nThe qPCRs for STM and STMamiRNA were performed on 2 week-old seedlings grown on \u00bd MS medium with kanamycin. The qPCRs on the pSTM::STMamiRNA lines were performed on either homozygous or heterozygous F3 populations. The qPCR on WT plants was performed on plants harboring a kanamycin resistance at homozygous state and growing in the same conditions as the pSTM::STMamiRNA lines. As shown in Figure 3\u2014figure supplement 2, the expression of the amiRNA (Primers: STMamiRNA Q5: CACTGGTTATTCACAGGTCGTG, STMamiRNA Q3: CAGTGGTTAATCAAAGAGAATCAATG) and its effect on STM expression was checked by qPCR (Primers: qSTM-F: TCGACTTCTTCCTCGGATGACCCA, qSTM-R: TCTCCGGTTATGGAGAGACAGCAA). Three independent biological replicates were at least used for each sample. Expression is shown relative to that of TCTP, a stable housekeeping gene.\n",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "d480ec58-2de1-4215-a9b9-304a3f3fa0da",
+      "submission_id": "c58609de-44b9-4d7d-8a9c-873b3aaa3fae",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christian S Hardtke, University of Lausanne , Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.07811.032](https://doi.org/10.7554/eLife.07811.032)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \"Mechanical stress channels STM expression in the Arabidopsis meristem\" for consideration at eLife. Your article has been evaluated by Detlef Weigel (Senior Editor), a member of our Board of Reviewing Editors, and three reviewers, one of whom, Gabriel Monshausen (Reviewer 3), has agreed to share his identity.\n\nWe are in principle interested in the work, but the reviewers have also identified a series of concerns. Below you can find the individual comments of the three reviewers, and we would like to ask you to address them point-by-point.\n\nIn the discussions between the reviewers and editors, a few key points emerged. Please pay particular attention to these:\n\n1) A key aspect of your paper is your claim that STM expression is mechanosensitive. However, given the considerable lag between the mechanical insult and the change in STM expression, the reviewers feel that alternative interpretations are still valid and the claim that the STM promoter is mechanosensitive is overstated. We would therefore like to ask you to perform a more comprehensive analysis to strengthen your idea. For example, how does STM expression react to transient mechanical stimuli, such as pinching? Moreover, we would like to ask you to perform experiments to exclude the possibility that the observed expression changes are due to a wounding response. Analysis of STM expression upon local jasmonate application is one experiment that can be helpful here. Demonstrating that the behavior of the STM reporter is unchanged in the JA signaling mutant coi1 would be another option. (We are aware that others have suggested that JA may be involved in thigmotropism, but it appears that those effects are probably rather indirect).\n\n2) There are some questions about the specificity of your observations. If there is indeed causality linking mechanical stress and STM expression rather than correlation only, one could expect that this does not hold for any gene expressed in the boundary region. Performing the key experiments with other genes that are expressed in the boundary region could answer this question. Such control experiments should focus on other transcriptions factors.\n\n3) Please also carefully address some technical issues. It would be especially important to demonstrate that your assumption that the amiRNA construct preferentially downregulates STM in the boundary region is true. Combination of this construct with a STM protein fusion reporter could substantiate this claim.\n\nReviewer #1:The authors of this paper are attempting to advance the hypothesis that mechanical stress in the shoot apical meristem turns on expression of the STM transcription factor which then acts to mediate the separation between organs.\n\nTo do this, the authors do experiments to:\n\n1) Show a correlation between STM reporter expression and curvature.\n\nThe authors do a convincing job of establishing this correlation.\n\n2) Show that the STM reporter is activated by mechanical stress.\n\nMechanical stresses are applied to the apical meristem in the form of ablation or compression. STM reporter expression increases but with a long lag such that the authors conclude this is a secondary effect of mechanical stimulation. They attempt to connect the mechanical stimulus to alterations in STM reporter expression via the auxin pathway but experiments show that the mechanically induced changes in the auxin pathway cannot easily explain the changes in STM expression.\n\n3) Show that STM expression in the boundary zone is required for organ separation.\n\nThe requirement for STM function in organ separation has been shown previously (Long and Barton, Development, 1998; Belles-Boix et al., 2006) making this experiment largely confirmatory.\n\nWhile the authors might argue they specifically knock down STM function in the peripheral zone, this is complicated by the observation by other labs (e.g. Jackson lab, Kim et al., 2003, Development) that STM protein can move from its site of synthesis into adjacent cells. Therefore, using a microRNA in the boundary zone would affect the action of STM in both this zone as well as in any cells into which STM moves.\n\nIn summary, curvature and STM reporter expression are correlated in the shoot apical meristem. However, the experiments in this paper do not satisfactorily solve the question of causation. Because KNOX genes can cause alterations in curvature in otherwise smooth surfaces (e.g. Tsiantis lab work in Cardamine leaf; Long and Barton, 1998, Development, for work in the Arabidopsis embryo), the simplest explanation seems to be that STM causes the alterations in curvature by inhibiting cell division and/or cell expansion at the boundary. A mechanism for this is suggested by findings by the Hake lab showing that KNOX targets include genes involved in auxin transport as well as genes involved in cell wall synthesis.\n\nAs for the experiments showing that mechanical stress induces STM expression, it is possible that many types of wounding or perturbations to the shoot apical meristem will cause an indirect increase in STM reporter expression as the plant attempts to compensate for the insult. The authors should test additional stresses to see if this is a more general phenomenon. The authors should also extend the analysis to other \"meristem genes\" expressed especially in the boundary zone \u2013 CUCs, BOPs, JLO \u2013 to determine if this is specific to STM.\n\nReviewer #2:The core message of this very interesting manuscript is that mechanical stress activates the expression of STM, a homeodomain transcription factor with key roles in maintaining meristem fate at the boundary of meristem and organ primordial and that STM is required for boundary formation and organ separation. The finding that an important developmental regulator is under control of physical forces in the growing organism while at the same time acting on shaping the organism is certainly of relevance to a wide audience. The experiments (mostly live cell imaging of fluorescent reporters, coupled to perturbations) and analyses shown are of high quality and are mostly well presented. However, in the present form the manuscript has several important shortcomings, which need to be addressed, but based on the exciting findings, I think it is a strong candidate for publication in eLife after revision.\n\n1) The authors exclusively use a fluorescent reporter as proxy for STM activity, however, it does not faithfully recapitulate endogenous STM expression. The differences need to be addressed, preferably by in situ hybridization of reporter plants using STM and CFP probes. I think this experiment is essential validate the major claims concerning the responsiveness of STM expression to mechanical stimuli. Along these lines, I would also like to see that endogenous STM expression responds to a selected experimental stimulus, such as pinching. Again, these experiments could be done in the reporter line, comparing STM and CFP expression by qRT-PCR. These experiments would unequivocally demonstrate that the observed CFP induction is not an artifact of the reporter.\n\n2) The boundary phenotype in the pSTM::STM rescue and amiRNA silencing plants is not documented properly. To be able to judge the phenotypes, we need SAM microscopy and curvature measurements. The pictures shown in Figure 3 are not very informative with regards to the boundary effect, rather they show overall growth habitus.\n\n3) The boundary specific silencing supposed to be happening in the amiRNA lines is not documented. Again, in situ hybridization seems essential to analyze where STM silencing occurs, to be able to interpret the results shown in Figure 4E.\n\n4) The claim the STM responds to mechanical stimuli after 8 hours onwards is not substantiated by the data presented. From the images shown in Figure 5 it seems that the first effects become visible only after around 20 hours. Please comment.\n\n5) The authors routinely refer to \"STM expression\" when they are talking about pSTM::CFP reporter activity. Please be more careful with wording.\n\n6) The claim that STM reporter expression is much higher after removal of NPA is not substantiated by the data shown in Figure 1\u2013figure supplement 1.\n\nReviewer #3:This interesting manuscript by Hamant and coworkers addresses the question of how the expression of STM, a key regulator of the shoot apical meristem also required for organ separation, is regulated. This is an important biological problem, which is explored by the authors using a range of sophisticated imaging, image processing and genetic tools. Overall this manuscript is very well written and the data provide strong experimental support for a role of mechanical stress in controlling STM expression patterns.\n\n1) To analyze the relationship between mechanical stress, and more specifically Gaussian curvature, and STM expression, the authors mapped meristem curvature at high resolution and projected this onto a map of pSTM::CFP-N7 expression. These experiments convincingly show that negative Gaussian curvature is correlated with enhanced STM expression in the boundary domain of the SAM.\n\n2) The authors further analyze whether STM expression in the boundary is functionally important for organ separation during development. To this end, STM-Venus preferentially expressed in the boundary was introduced into a strong STM mutant (dgh6). The resulting transgenic lines exhibited only a partial recovery of meristem maintenance but a complete loss of organ fusion defects. pSTM::STMamiRNA2 was introduced into WT to preferentially silence STM expression in the meristem boundary. This resulted in reduced, but functional meristems, and major organ fusions.\n\nThese are creative attempts to specifically alter STM expression in the boundary region; however, no evidence is presented to actually confirm that such preferential alteration has actually occurred. It would have been informative to show the expression pattern of pSTM::STM-Venus not only in a WT background (Figure 3A) but in the dgh6 mutant line, as the expression pattern of the weakly expressing WT parent line (Heisler et al. 2005a) may not necessarily have been maintained after crossing. Similarly, it would be useful to know whether STM expression is preferentially silenced in the boundary in pSTM::STMamiRNA2 lines. Transformation of the constructs into pSTM::STM-Venus lines would have been informative. If these experiments are not done, the limitations should at least be discussed.\n\n3) The authors convincingly demonstrate that enhanced STM expression in the boundary is correlated with but not dependent on local auxin depletion. Treatment with 2,4-D globally increased auxin levels in the SAM (as monitored using DII-Venus) but did not alter the pattern of STM expression (although slightly increasing the intensity of pSTM::CFP-N7 expression).\n\nOne question this experiment raised for me was whether 24 hour incubation with 2,4-D altered meristem organization in any noticeable manner, i.e. were Gaussian curvatures in the boundaries affected by the treatment? According to the authors' model, this should have affected STM expression.\n\n4) The authors provide strong evidence that mechanical perturbations (compression of meristem and local cell ablation) and pharmacological treatments resulting in altered mechanical stress (isoxaben, NPA+oryzalin) resulted in increased STM expression. Based on the authors' initial experiments, STM expression was correlated with negative Gaussian curvature. Does this relationship hold when the SAM is perturbed by the various treatments described here? This analysis could greatly strengthen the concept that STM expression is regulated by a specific type of mechanical stress.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Mechanical stress channels STM expression in the Arabidopsis meristem\" for further consideration at eLife. Your revised article has been favorably evaluated by Detlef Weigel (Senior Editor), a Reviewing Editor, and three reviewers, one of whom, Gabriel Monshausen (Reviewer 3), has agreed to share his identity. The manuscript has been improved but there are some remaining issues that need to be addressed before acceptance.\n\nAll reviewers and the editors agree that your work is interesting and original, but as you can see from their comments, the reviewers still have some questions about the causality relations put forward in your study. Yet, there is also consensus that this is a hard chicken-and-egg type of problem, and a completely unambiguous answer is hard to come by with current means. Although things might turn out somewhat different in the long run, your study presents one of the best ways forward into this area for the moment, and is likely to stimulate further research. In light of this, we believe that it would be in your own interest to be very careful how you phrase your conclusions. Please go once more through your manuscript and tone down any strong statements with respect to situations that entail a possibly circular logic. In that respect, please pay particular attention to the comments of reviewer 1.\n\nPlease also clarify the following: there is some doubts whether the experiments show jasmonate insensitivity of STM expression as stated in the text. In the supplemental figure, there is clear STM expression increase that does not occur in any of the mock treated samples. It thus appears simply wrong to say it is insensitive, and these results should not be \"hidden\" in the supporting information.\n\nReviewer #1: This paper presents several interesting observations. My problem with the paper \u2013 even after the changes and in some cases even more so after the authors' additions \u2013 is that the authors shoehorn their observations into a model in which mechanical stress increases STM expression.\n\nIn the body of the paper, the authors include alternative explanations for the correlation such as in this paragraph:\n\n\"The fact that STM expression correlates with curvature at the boundary can simply be explained by the fact that STM reduces the growth rate at the boundary, leading to tissue folding. KNOX genes can cause alterations in curvature in otherwise smooth surface (Long and Barton, 1998, Barkoulas et al., 2008). The impact of STM on crease formation at the boundary could be mediated by inhibiting cell growth in this domain. Consistent with this scenario, KNOX target genes include genes involved in auxin transport as well as genes involved in cell wall synthesis (Bolduc et al., 2012). However the strong correlation between STM promoter activity and tissue folding suggests that a signal, which is related to curvature, could add robustness to the STM expression pattern at the boundary.\"\n\nWhy would a strong correlation lead one to prefer one direction of causality over the other? We know that STM/KNOX expression exists in the absence of tissue folding and also precedes tissue folding in the embryo, and precedes tissue folding in the development of leaf lobing. To my knowledge, there is no case of tissue folding that precedes STM/KNOX expression. Of all the treatments that the authors subject the plants to, pinching would seem to best simulate folding but pinching the meristem does not increase STM expression. This argues strongly for the arrow of causation to be in the direction counter to what the authors propose. (The authors make arguments about how pinching is somehow different than the stresses that would normally be sensed by STM but I am not convinced.)\n\nWhatever the reality may be, in this paper alternative interpretations are downplayed. There is no mention of alternative models in the Discussion and the title is overly strong in its assertion given the weak, and by the authors' own admission, indirect, connection between physical stress and STM expression.\n\nUnfortunately, without the framework of mechanical stress acting to increase STM, the experiments presented in this paper lack cohesion.\n\nComments on revisions:\n\n1) The authors shore up their complementation data. They have now used PCR to genotype homozygous stm/stm; pSTM::STM-Venus/pSTM::STM-Venus double mutants segregating from among the progeny of stm/+ pSTM::STM-Venus/pSTM::STM-Venus parents. It would have been more convincing if they had recovered a fertile double homozygote but if the PCR data are compelling, then they likely have identified complemented individuals. (Unfortunately, the PCR data aren't shown. I would be worried about using the presence/absence of a 2.6 kb band for determining the presence of the wild type allele as lack of a band can be due to simple PCR failure. Presumably the authors have adequately controlled for this.)\n\n2) The authors have added a test for response of STM expression to jasmonate, a hormone associated with wounding stress. This is an experiment to determine whether the response of STM expression to ablation might be in response to wounding. The data are given in the supplemental section (Figure 5\u2013figure supplement 3). Most plants do not respond \u2013 however a significant fraction, 4 out of the 20 or so plants tested, did show an increase in STM expression in response to jasmonate. The authors dismiss this positive result as unimportant but I am not sure what the basis for their dismissal is.\n\n(I can easily envision an entirely different historical scenario for these experiments that would lead to a different set of conclusions: A set of jasmonate researchers could have reasonably concluded that applied jasmonate can increase STM expression. They would then have followed up that observation with ablation experiments on the meristem finding that STM expression increased in response to wounding.)\n\nIn short, the jasmonate experiments indicate that the situation is likely to be complex. Rather than sweeping this complexity under the rug, the authors should discuss it.\n\n3) The authors add data for other boundary-expressed genes and find that one \u2013 CUC3, but not the other, CUC1, respond to ablation with increased expression. This is very interesting but I am not entirely sure what to make of it. Again, it reinforces the conclusion that the situation is complex.\n\n(I would add here as well that these experiments are done in NPA treated meristems and therefore the results hold for a context in which auxin is improperly localized. Since there is reason to believe that auxin and KNOX genes interact at some level, this is important to keep in mind. A different result might be obtained in the context of properly localized auxin).\n\nReviewer #2:I am very happy with the thorough revision of the manuscript and the addition of many meaningful and well-executed new experiments. I now support publication of the manuscript without hesitation.\n\nThe only issue I still have is the rather poor quality of STM in situ hybridizations after ablation. With some good will it is possible to identify enhanced STM RNA levels next to the ablation site, but it could be helpful to include more apices (if the authors have pictures available) to make that trend clearer.\n\nReviewer #3:The authors satisfactorily addressed the issues that I raised previously; the manuscript is considerably strengthened by new experiments (i) showing insensitivity of STM expression to JA, (ii) confirming preferential downregulation of STM in the boundary region by STM amiRNA and (iii) demonstrating differential mechanosensitivity of CUC1 and CUC3 expression in SAMs.\n",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0b759ab8-ee35-4a94-be7d-cd7b66f0135f",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C1",
+      "claim": "STM promoter activity is enhanced in the boundary domain of the shoot apical meristem.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated a transcriptional fusion pSTM::CFP-N7 with the 5,7 kb region upstream of the STM gene (AT1G62360) and observed the presence of an enhanced STM promoter activity in the SAM boundaries, as previously shown (Heisler et al., 2005; Leasure et al., 2009; Kim et al., 2003; Jurkuta et al., 2009), n > 20, Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental observation of pSTM::CFP-N7 expression pattern in Figure 1A and cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "842dc14c-d546-4ed3-8318-b0d19fd8d57c",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C2",
+      "claim": "STM promoter activity is quantitatively correlated to Gaussian curvature in the boundary domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this pipeline, a negative correlation between CFP signal intensity and Gaussian curvature could be revealed and quantified (Figure 1C\u2013E, Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative measurements shown in Figures 1C-E demonstrate statistical correlation between CFP signal and curvature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "4b441d77-533c-4f59-9474-e9b7b4fa12cf",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C3",
+      "claim": "The correlation between STM promoter activity and tissue folding is maintained in the bot1-7 mutant background.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas pBOUND>>GFP expression area was still correlated to tissue folding, we also observed a reduction in the area of GFP expression for a given primordium stage, when compared to the WT indicating a delay in pBOUND>>GFP appearance in bot1-7 (Figure 2D, WT: n = 154 measured on 5 meristems at 5 time points; bot1-7: n = 79 measured on 4 meristems at 5 time points).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative data from bot1-7 mutant analysis shown in Figure 2D demonstrates maintained correlation despite altered timing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "b16155f8-ec54-4a92-8037-f3c51364fcf4",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C4",
+      "claim": "The bot1-7 mutant exhibits a delay in tissue folding at the boundary compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we observed a reduction in folding angle for a given primordium size in bot1-7 when compared to the WT, demonstrating that the relation between tissue folding and organ emergence is impaired in bot1-7: large organs still have shallow boundaries (Figure 2A,B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparative measurements between WT and bot1-7 shown in Figure 2A-C demonstrate reduced folding angle.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "885d2b69-4b2f-49ee-9f94-e6e56b4eea89",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C5",
+      "claim": "The pSTM::STM-Venus translational fusion can fully complement the stm-dgh6 mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "After genotyping for the presence of the stm-dgh6 mutation, we could not distinguish the WT, stm-dgh6 heterozygotes and stm-dgh6 homozygote plants visually, confirming that pSTM::STM-Venus can fully complement the mutation (Figure 3D-F, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Phenotypic analysis of complementation shown in Figures 3D-F demonstrates rescue of mutant phenotype.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "a4cfc9f8-d710-4ef3-82cc-34c20862bc7d",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C6",
+      "claim": "STM expression at the boundary is required for organ separation.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, major fusion defects were observed in most of the lines we generated, thus showing that organ separation was impaired in these lines (Figure 3K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation of fusion defects in pSTM::STMamiRNA lines shown in Figure 3K demonstrates requirement for organ separation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "13d2cd3a-53d2-4b65-bcf7-96e02de387c9",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C7",
+      "claim": "The stm-dgh6 mutant exhibits two partly fused cotyledons and developmental arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "The stm-dgh6 mutant exhibits the typical stm phenotype with two partly fused cotyledons, at an angle divergent from 180\u00b0, and a development arrest. At the same stage, the WT can exhibit up to 8 leaves while the stm-dgh6  only displays two old cotyledons (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Phenotypic description supported by observation in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "2bed19c1-6180-4ae6-9656-4bf0c4b3d37e",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C8",
+      "claim": "DII-Venus signal is higher in the boundaries and correlates with pSTM::CFP-N7 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the characteristic localization of PIN1 transporters around the boundary (Figure 4\u2014figure supplement 1; Heisler et al., 2005), we also observed that a higher DII-Venus signal in the boundaries correlates with an increase in pSTM::CFP-N7 expression (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation of co-localization shown in Figure 4A and cited literature support correlation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "7c2ea8b0-5a42-4d15-80b9-2a97cfc00068",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C9",
+      "claim": "The correlation between DII-Venus and pSTM::CFP-N7 is stronger in the L1 layer than in the L2 layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, while this correlation could also be observed on longitudinal sections through the boundary as it folds (Figure 4B), we also found that this correlation is stronger in the L1 layer: In the L2 layer, pSTM::CFP-N7 expression increased during crease formation, but this was not always correlated with an increase in DII-Venus signal (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Layer-specific analysis shown in Figure 4B demonstrates differential correlation between layers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "0b453797-fc8f-4406-8304-d823a7feac91",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C10",
+      "claim": "Application of synthetic auxin 2,4-D does not inhibit STM expression at the boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "In the same conditions, STM expression at the boundary was however either unchanged or even slightly increased (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental treatment with 2,4-D shown in Figure 4C demonstrates lack of inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "8bb4170b-1404-468a-ad5e-27eb11f52bab",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C11",
+      "claim": "Application of 2,4-D dramatically decreases DII-Venus levels in the meristem.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, DII-Venus levels were dramatically decreased in these conditions ([Brunoud et al., 2012]; Figure 4D), confirming that auxin could indeed diffuse into the meristem.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental observation shown in Figure 4D and cited literature confirm auxin sensor response.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "9894d251-9a2b-4cf9-ab76-7ca2c1869d59",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C12",
+      "claim": "STM expression and auxin depletion can be uncoupled at the boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that, whereas auxin levels negatively correlate with STM expression in the meristem, this correlation is also dispensable: STM expression and auxin depletion can be uncoupled at the boundary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from 2,4-D treatment experiments showing STM expression persists despite auxin presence.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "ddd429d0-2435-486f-8ef5-0e873f995b14",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C13",
+      "claim": "Global compression of the SAM leads to an increase in pSTM::CFP-N7 signal around 8 hours after compression.",
+      "claim_type": "EXPLICIT",
+      "source": "Around 8 h after compression, we detected an increase of pSTM::CFP-N7 signal (n = 8; Figure 5B and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Time-lapse imaging after mechanical compression shown in Figure 5B demonstrates temporal induction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "7ded1e5f-8cfa-456f-88e1-e6d37657e4f5",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C14",
+      "claim": "Global compression of the SAM leads to an increase in pBOUND>>GFP signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar induction was observed in the pBOUND>>GFP line; although the GFP signal was more variable before compression, a strong induction could nevertheless be observed in the pBOUND>>GFP line after compression (n = 11; Figure 5C and Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Time-lapse imaging after mechanical compression shown in Figure 5C demonstrates induction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "559497ff-82b7-4fd1-9e29-dc81f1ea78f8",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C15",
+      "claim": "Ablation of a few cells in the meristem leads to a local increase of pSTM::CFP-N7 signal intensity around the ablation site from 18 hours onwards.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, we observed a local increase of pSTM::CFP-N7 signal intensity around the ablation site from t = 18 h onwards (n = 16; Figures 5E and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Time-lapse imaging after ablation shown in Figure 5E demonstrates localized temporal induction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "7cd0992c-3a39-43a8-ae13-f13b4cb84fd4",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C16",
+      "claim": "The induction of STM after ablation appears stronger in larger ablations than in smaller ablations.",
+      "claim_type": "EXPLICIT",
+      "source": "The induction also seemed stronger in larger ablations than in smaller ablations, consistent with a greater range of stress perturbation in larger ablations (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of different ablation sizes shown in Figure 5\u2014figure supplement 1 demonstrates dose-dependent response.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "d31f43fc-d0a2-444b-879a-66125c7c3d2b",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C17",
+      "claim": "pBOUND>>GFP expression is induced after ablation with a delay compared to pSTM::CFP-N7.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar response was also observed in the pBOUND>>GFP background, again with a delay (n = 12; Figure 5F and Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Time-lapse comparison shown in Figure 5F demonstrates delayed but consistent induction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "5ae6c11c-50d5-4fe4-830b-81a4d81c110c",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C18",
+      "claim": "STM is never induced at the base of meristem after ablation, in the differentiating cells from the upper part of the stem.",
+      "claim_type": "EXPLICIT",
+      "source": "We also noticed that with both markers, the induction of STM was not homogeneous around the ablation site. In particular, STM was never induced at the base of meristem, that is in the differentiating cells from the upper part of the stem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from ablation experiments indicates spatial restriction of induction response.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "8bf095f0-1b69-43e3-b90b-f19199340a6f",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C19",
+      "claim": "The competence to express STM is limited to meristematic cells sensu stricto and cannot be overridden by mechanical perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the prevailing view from the literature stating that the competence to express STM is limited to meristematic cells sensu stricto, and our data suggest that such a prepattern cannot be overridden by mechanical perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from spatial restriction of STM induction combined with established knowledge from literature.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "2f813644-4e3e-4f7e-a069-09b03f1eee6d",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C20",
+      "claim": "Whole mount in situ hybridization detected an asymmetric STM mRNA signal with higher intensity near the ablation site.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though this method is only semi-quantitative, we could detect an asymmetric signal, with a higher intensity near the ablation site, consistent with the results obtained with the pSTM::CFP-N7 and pBOUND>>GFP lines after ablation (Figure 5\u2014figure supplement 2, n = 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "In situ hybridization results shown in Figure 5\u2014figure supplement 2 confirm reporter line observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "c1a4f167-2af5-426d-8084-433a049feefc",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C21",
+      "claim": "Incubation with 100 \u03bcM jasmonate overnight does not induce significant pSTM::CFP-N7 signal in most plants.",
+      "claim_type": "EXPLICIT",
+      "source": "In these conditions, we did not observe any significant induction of pSTM::CFP-N7 signal in most of the plants (N = 10/14, Figure 5J), and slight fluctuations in CFP signal in the remaining ones (N = 4/14, Figure 5K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Jasmonate treatment experiment shown in Figures 5J-K demonstrates lack of consistent induction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "306424c9-fa18-4246-88b6-679f34bec1fd",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C22",
+      "claim": "Wound-induced jasmonate is not the most likely candidate as a secondary messenger between stress and STM induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, as this contrasts with the systematic and steady induction of STM after ablation and with the robust induction of a pJAZ10::GUS reporter by jasmonate (Figure 5L-O), wound-induced jasmonate is not the most likely candidate as a secondary messenger between stress and STM induction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison between ablation response and jasmonate treatment shown in Figures 5L-O supports inference.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "d81bc504-1198-4336-9aed-0d21770676fe",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C23",
+      "claim": "Isoxaben treatment leads to a global increase in pSTM-CFP-N7 signal intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "In these conditions, we could detect a global increase in pSTM-CFP-N7 signal intensity, when compared to that of the control (measurement on 10 nucleus of the central zone in the control (n = 6 meristems) and isoxaben-treated (n = 7 meristems); Figure 5G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantitative measurements after isoxaben treatment shown in Figures 5G-H demonstrate increased signal.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "726b8176-23ee-480a-a1c7-8a49c6473a8f",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C24",
+      "claim": "Isoxaben treatment induces pBOUND>>GFP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This response was also confirmed in the pBOUND>>GFP background (control: n = 10, isoxaben: n = 20; Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Isoxaben treatment experiment shown in Figure 5I confirms induction in alternative reporter line.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "a78ebbea-5c9f-4d90-bb3b-4e19c7ad8dbf",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C25",
+      "claim": "Mechanical perturbations cannot override the prepattern in the SAM as pBOUND>>GFP was not induced in the entire meristem after isoxaben treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that pBOUND>>GFP was not induced in the entire meristem after isoxaben treatment, further demonstrating that mechanical perturbations cannot override the prepattern in the SAM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from isoxaben experiments demonstrates spatial restriction of mechanical response.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "1b12a34b-2b82-4586-b81c-8a9acdea932b",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C26",
+      "claim": "STM expression can be modulated by mechanical stress in the SAM.",
+      "claim_type": "EXPLICIT",
+      "source": "Because these different experimental setups have little in common except mechanical stress perturbation, we thus propose that STM expression can indeed be modulated by mechanical stress in the SAM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from multiple independent mechanical perturbation experiments (compression, ablation, isoxaben).",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "850ae8f4-3e35-4b45-b25d-9f9a80212182",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C27",
+      "claim": "PID promoter activity is enhanced in the boundary domain of the meristem.",
+      "claim_type": "EXPLICIT",
+      "source": "In a pPID::PID-YFP line, we observed a more abundant signal at the boundary of the meristem, as in the pSTM::STM-Venus line (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation of pPID::PID-YFP expression pattern shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "8cdcad4b-e835-4d66-8133-f28f6af63b40",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C28",
+      "claim": "PID expression is not affected by ablation in both pPID::CFP-N7 and pPID>>GFP lines.",
+      "claim_type": "EXPLICIT",
+      "source": "However, after ablation, PID expression was not affected in both the pPID::CFP-N7 and pPID>>GFP lines, in contrast to our results in the pSTM::CFP-N7 and pBOUND>>GFP line (Figure 6E\u2013G, pPID::CFP-N7: n = 13; pPID>>GFP: n = 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Ablation experiments on PID reporter lines shown in Figures 6E-G demonstrate lack of response.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "c21f8f82-9b7a-4932-b65e-4eca45ae322a",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C29",
+      "claim": "PID expression is not induced by isoxaben treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "No induction could also be detected after isoxaben treatment in the pPID>>GFP line (Figure 6\u2014figure supplement 1; n = 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Isoxaben treatment experiment shown in Figure 6\u2014figure supplement 1 demonstrates lack of induction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "8ffd84c9-97e3-4e31-a7a0-732032ac59dc",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C30",
+      "claim": "PID expression at the boundary may not depend on a mechanical signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in our hands PID expression appeared as a negative control for our mechanical perturbations: PID expression at the boundary may not depend on a mechanical signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from lack of PID response to multiple mechanical perturbations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "d5058f58-b980-4095-94e2-da5f4d1488fe",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C31",
+      "claim": "The induction of STM by mechanical stress retains some specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, it suggests that the induction of STM by mechanical stress retains some specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from differential response between STM and PID to mechanical perturbations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "ea2bd9ca-c6f3-450a-9b39-4fce92d072a3",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C32",
+      "claim": "No significant induction of pCUC1::CUC1-GFP could be observed after ablations.",
+      "claim_type": "EXPLICIT",
+      "source": "After ablations, no significant induction could be observed in the pCUC1::CUC1-GFP line (Figure 6\u2014figure supplement 2; n = 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Ablation experiments on CUC1 reporter line shown in Figure 6\u2014figure supplement 2 demonstrate lack of induction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "11870f88-d1e3-4aea-8358-0e4e55059a7f",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C33",
+      "claim": "CUC1 expression at the boundary is not controlled by a mechanical signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, this strongly suggests that CUC1 expression at the boundary is also not controlled by a mechanical signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from lack of CUC1 response to ablation and pattern independence from wound position.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "5b03eefd-9851-4e91-a028-3d2dd6eb7e16",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C34",
+      "claim": "A strong and steady induction of pCUC3::CFP signal was observed after ablation in all analyzed meristems.",
+      "claim_type": "EXPLICIT",
+      "source": "In the pCUC3::CFP line, we observed a strong and steady induction of CFP signal after ablation in all the analyzed meristems (n = 20).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Ablation experiments on CUC3 reporter line shown in Figure 6\u2014figure supplement 3 demonstrate consistent induction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "56466c7d-b32b-46dc-858a-16e91e1c8de0",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C35",
+      "claim": "CUC3 induction after ablation appears earlier than STM induction, as early as 6 hours after ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this induction seemed to appear earlier than in the pSTM::CFP-N7 line, as a strong induction could be detected as early as t = 6 hr after ablation (Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Temporal comparison shown in Figure 6\u2014figure supplement 3 demonstrates earlier response.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "dcfee7c5-2524-4c9e-aa16-9a4b10a380fc",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C36",
+      "claim": "Boundary expressed transcription factors are not systematically induced by wounding.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless this demonstrates that boundary expressed transcription factors, even from the same family, are not systematically induced by wounding and, thus, that the mechanical induction of STM retains some specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from differential responses of CUC1, CUC3, PID, and STM to mechanical perturbations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "8be7d8fb-b948-42c8-8e05-5feb0c7e4506",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C37",
+      "claim": "The relatively long time responses (8 to 24 hr) for STM induction after mechanical perturbations strongly suggests that the induction is indirect.",
+      "claim_type": "EXPLICIT",
+      "source": "While this is consistent with the relatively slow timing of organ emergence and boundary folding in Arabidopsis meristems (Kwiatkowska, 2004; Reddy et al., 2004; Grandjean et al., 2004), it strongly suggests that the induction of STM expression after mechanical perturbations is indirect and could involve secondary signals, such as hormones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from temporal kinetics of STM induction combined with cited literature on meristem dynamics.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "ea0db8d7-efde-4b06-ba83-bbe967b66466",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C38",
+      "claim": "Mechanical stress can affect the distribution of auxin in the SAM.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we checked whether mechanical stress can affect the distribution of auxin in the SAM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental question addressed through DII-Venus sensor experiments after mechanical perturbations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "f7bd64f7-2029-41cf-a3a8-01889140626a",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C39",
+      "claim": "An induction of DII-Venus signal around the site of ablation was consistently observed after ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "After ablation and despite some variability in the basal level of DII-Venus signal on meristems recovering from NPA treatment (Figure 7A), we indeed consistently observed an induction of DII-Venus signal around the site of ablation (n = 21; Figure 7B, Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Ablation experiments with DII-Venus sensor shown in Figure 7B demonstrate auxin depletion response.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "5600e37d-779b-4068-84c8-f4730e724b08",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C40",
+      "claim": "The first effect of mechanical stress on DII-Venus signal was detected around 4 to 8 hours after ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the first effect of mechanical stress on DII-Venus signal was detected around 4 to 8 h after ablation, which is consistent with the timing of the response of PIN1 after ablation (ca. 4 hr [Heisler et al., 2010]) and the subsequent response of pSTM::CFP-N7 after mechanical perturbation (8 to 18 hr after compression or ablation respectively, this study).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Temporal analysis of DII-Venus response compared with cited literature on PIN1 response and current study's STM data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "7192092a-63be-4269-98aa-8d15e8fdbf29",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C41",
+      "claim": "DII-Venus signal is induced after compression.",
+      "claim_type": "EXPLICIT",
+      "source": "The DII-Venus signal was also induced after compression (Figure 7C) further matching the response observed in the pSTM::CFP-N7 line.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Compression experiments with DII-Venus sensor shown in Figure 7C demonstrate auxin depletion response.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "03282de8-3964-4235-b01b-f0e6d338b4fa",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C42",
+      "claim": "Auxin patterns and mechanical stress fields act synergistically to control STM expression at the boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, this suggests that auxin patterns and mechanical stress fields act synergistically to control STM expression at the boundary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from coordinated temporal responses of DII-Venus and STM reporters to mechanical perturbations.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "94ff3f5a-fcb7-4632-84f6-99458ec5c1e0",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C43",
+      "claim": "No DII-Venus signal could be detected in pin1-6 pseudo-boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the variability in DII-Venus signal in the pin1-6 meristems, we could not detect any DII-Venus signal in pin1-6 pseudo-boundaries, suggesting that PIN1 is necessary to deplete auxin from the boundary (Figure 7D, n = 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of DII-Venus in pin1-6 mutant shown in Figure 7D demonstrates requirement for PIN1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "1c5ef89e-6c8e-4082-85c6-5f7a067ffd5d",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C44",
+      "claim": "Both pBOUND>>GFP and pSTM::CFP-N7 signals are present in pin1-6 pseudo-boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, both pBOUND>>GFP and pSTM::CFP-N7 signals were present in the pin1-6 pseudo-boundaries (Figure 7D and E), thus suggesting that PIN1 is not a major player in the correlation between tissue folding and STM expression.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of STM reporters in pin1-6 mutant shown in Figures 7D-E demonstrates PIN1-independent expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "2a3eef2a-c4de-42b0-9230-174357030914",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C45",
+      "claim": "No significant induction of DII-Venus signal could be detected after ablation in pin1-6.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant induction of DII-Venus signal could be detected after ablation in pin1-6 demonstrating that auxin depletion after ablation mainly relies on PIN1 (n = 11, Figure 7G; Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Ablation experiments in pin1-6 mutant shown in Figure 7G demonstrate PIN1 requirement for auxin response.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "c7040523-efb4-4440-a83d-9ca3294d4088",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C46",
+      "claim": "Both pSTM::CFP-N7 and pBOUND>>GFP are systematically induced around the site of ablation in pin1-6.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both pSTM::CFP-N7 and pBOUND>>GFP were systematically induced around the site of ablation (Figure 7F and G; Figure 7\u2014figure supplement 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Ablation experiments in pin1-6 mutant shown in Figures 7F-G demonstrate STM induction despite PIN1 absence.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "4848056c-32d2-4207-a518-1cef55ca0df5",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C47",
+      "claim": "The induction of STM after ablation can occur independently of PIN1.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that the induction of STM after ablation can occur independently of PIN1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from observation of STM induction in pin1-6 mutant after ablation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "0877a238-1002-4ef6-af96-f2d3d0836dc9",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C48",
+      "claim": "The induction of STM around the ablation site could not be clearly correlated with DII-Venus signal intensity in pin1-6.",
+      "claim_type": "EXPLICIT",
+      "source": "While we cannot rule out the possibility that other auxin carriers substitute for PIN1 in the pin1 background, despite our efforts, the induction of STM around the ablation site could not be clearly correlated with DII-Venus signal intensity, suggesting that the induction of STM after an ablation is not primarily caused by a local reduction in auxin levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of spatial correlation between STM and DII-Venus in pin1-6 after ablation shows lack of correspondence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "b6afd52d-01ea-4c7b-a388-581a61522247",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C49",
+      "claim": "STM expression and auxin distribution can be partially uncoupled.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, STM expression and auxin distribution can be partially uncoupled and the correlation between tissue folding and STM expression always remains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from pin1-6 experiments showing STM induction without corresponding auxin depletion.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "19f4be7b-6318-4dd6-a4c9-f971b4640b50",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C50",
+      "claim": "Oryzalin-triggered tissue folding leads to a slight increase of GFP and CFP signals in the young boundaries in both pBOUND>>GFP and pSTM::CFP-N7 lines.",
+      "claim_type": "EXPLICIT",
+      "source": "In both the pBOUND>>GFP and pSTM::CFP-N7 lines, oryzalin-triggered tissue folding led to a slight increase of GFP and CFP signals respectively, in the young boundaries (Figure 7\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Oryzalin application experiments shown in Figure 7\u2014figure supplement 3 demonstrate induction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "6a4cf5eb-2a5c-4fb7-a392-7ae9c1bb5b26",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C51",
+      "claim": "Mechanical stress can promote the expression of STM at the boundary relatively independently of auxin distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Because this induction occurred in the presence of NPA and as oryzalin indirectly modifies the mechanical status of cell walls (and thus promotes organ emergence), this further supports a scenario in which mechanical stress can promote the expression of STM at the boundary, relatively independently of auxin distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from oryzalin experiments in presence of NPA showing STM induction without auxin transport.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "0a9bba36-c86d-4345-be45-6786f1e51bda",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C52",
+      "claim": "The patterning genes Twist and Notail are induced by embryo deformation during gastrulation and epiboly in Drosophila and Zebrafish embryos through activation of the \u03b2-catenin pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the patterning genes Twist and Notail are induced by the deformation of the embryo during gastrulation and epiboly in Drosophila and Zebrafish embryos respectively, through the activation of the \u03b2-catenin pathway (Brunet et al., 2013; Farge, 2003; Desprat et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited literature provides evidence for mechanically-induced gene expression in animal development.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "1cd66f5b-5f17-4a4d-be2d-72bf5a765e30",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C53",
+      "claim": "The expression of STM at the boundary of the shoot apical meristem is correlated with tissue folding.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations are in line with these conclusions: we report that the expression of STM at the boundary of the shoot apical meristem is correlated with tissue folding and is increased by mechanical stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement supported by multiple experimental observations throughout the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "16ee831c-ad5b-49b5-b4df-8feb0b305f07",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C54",
+      "claim": "Biochemical factors such as auxin promote differential growth and shape changes in the meristem, which generate mechanical signals that can impact the expression of regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides a scenario in which biochemical factors, such as auxin, promote differential growth and shape changes in the meristem, which in turn, generate mechanical signals that can impact the expression of some of these regulators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed model integrating experimental findings on auxin, mechanical stress, and STM expression.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "0c30842c-e67b-4cca-8b26-bda221d5f56c",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C55",
+      "claim": "Mechanical stress at the boundary contributes to the local expression of STM that is necessary for the separation between organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that mechanical stress at the boundary contributes to the local expression of STM that is in turn necessary for the separation between organs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement integrating mechanical perturbation experiments and STM knockdown phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "48d88f42-2cb3-4564-bb48-cd51368d548a",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C56",
+      "claim": "Tensile stress at the meristem boundary becomes anisotropic before tissue folds, as maximal stress direction is first prescribed by differential growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that tensile stress at the meristem boundary becomes anisotropic before tissue folds, as maximal stress direction is first prescribed by differential growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement based on established understanding of mechanical stress patterns in growing tissues.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "e0630a4e-6efc-4591-8a9d-7dbb78c54d5b",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C57",
+      "claim": "Overexpression of class I KNOX genes is sufficient to induce ectopic meristems.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, overexpression of class I KNOX genes is sufficient to induce ectopic meristems (Chuck et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited literature provides evidence for KNOX gene function in meristem formation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "5c5bc6ce-079c-400c-a58d-51725f5325e8",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C58",
+      "claim": "The boundary is where auxin is redistributed from the adjacent neighboring organ to the meristematic pool where new organs or new axis need to be initiated.",
+      "claim_type": "EXPLICIT",
+      "source": "The boundary also plays a crucial role in plant architecture: this is where auxin is redistributed from the adjacent neighboring organ to the meristematic pool where new organs or new axis need to be initiated (Heisler et al., 2005; Reinhardt et al., 2003; de Reuille et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited literature provides evidence for auxin dynamics at the boundary.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "ea6d0966-e39f-4975-ac2a-5c03ece135e5",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C59",
+      "claim": "The response to mechanical stress can uncouple STM expression from auxin depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "While we provide further evidence supporting a strong coordination between STM expression and auxin depletion, we also found that the response to mechanical stress can uncouple them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary statement integrating findings from auxin treatment and pin1 mutant experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "dffec96e-07e0-4372-b44c-e017d471a008",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C60",
+      "claim": "Mechanical perturbations induce STM expression even when auxin transport or level is affected.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, mechanical perturbations induce STM expression even when auxin transport or level is affected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of findings from 2,4-D treatment, pin1 mutant, and NPA+oryzalin experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "e206ddb1-d922-4652-bb83-3435a2129020",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C61",
+      "claim": "Mechanical stress does not impact the expression of PINOID.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, mechanical stress does not seem to impact the expression of PINOID, which has been associated with the control of PIN1 polarity and thus auxin patterns in the meristem (Robert and Offringa, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of PID reporter experiments combined with cited literature on PID function.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "d901defd-e10b-4fee-b26a-c34d29987bb5",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C62",
+      "claim": "The absence of strict coupling between auxin depletion and mechanical stress adds robustness to meristem functions at the boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the absence of a strict coupling between auxin depletion and mechanical stress is a way to add robustness in meristem functions at the boundary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed interpretation of the partial uncoupling between auxin and mechanical signaling.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "e4b43cb6-223b-4933-85d5-e947347d7af5",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C63",
+      "claim": "STM promotes the expression of the cytokinin biosynthesis gene AtIPT7 and cytokinin response factor ARR5.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of STM promotes the expression of the cytokinin biosynthesis gene AtIPT7 and cytokinin response factor ARR5 (Yanai et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited literature provides evidence for STM-cytokinin interaction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "db36b801-2e69-4ca7-a585-3a3226a7f644",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C64",
+      "claim": "Overproduction or application of cytokinins increase the expression level of STM and can rescue weak stm mutant alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, overproduction or application of cytokinins increase the expression level of STM and can rescue weak stm mutant alleles (Rupp et al., 1999; Jasinski et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited literature provides evidence for cytokinin effects on STM expression.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "a9b45e82-2e54-44b3-bba6-e486de0e427c",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C65",
+      "claim": "The level of cytokinins has been predicted to increase in the boundary based on the pTCS signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the level of cytokinins has been predicted to increase in the boundary, based on the cytokinin activity reporter pTCS signal, and axillary meristem formation has been shown to require cytokinin signalling (Wang et al., 2014), consistent with the well-known bushy phenotypes of cytokinin overproducers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited literature provides evidence for cytokinin distribution and function at the boundary.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "ae01e693-2454-4a8a-908b-d7a83ad7a3ca",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C66",
+      "claim": "Class I KNOX proteins reduce gibberellins levels through direct repression of the GA-20 oxidase gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Class I KNOX proteins also reduce gibberellins levels, notably through a direct repression of the GA-20 oxidase gene (Sakamoto et al., 2001; Chen et al., 2004); conversely gibberellins can rescue the phenotype of KNOX overexpressors (Hay et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited literature provides evidence for KNOX-gibberellin interaction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "2c48e1a4-b72e-4aa1-8a92-c98343f03dc8",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C67",
+      "claim": "The induction of the gibberellin catabolism gene GA-2 oxidase depends on KNOX proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The induction of the gibberellin catabolism gene GA-2 oxidase was also shown to depend on KNOX proteins (Jasinski et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited literature provides evidence for KNOX regulation of gibberellin metabolism.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "9ecf6ea7-7ddc-4154-a1e7-0a5531af8f79",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C68",
+      "claim": "Ethylene restricts the expression of class I KNOX gene KNAT2 in the shoot meristem to the boundary domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ethylene restricts the expression of class I KNOX gene KNAT2 in the shoot meristem to the boundary domain (Hamant et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited literature provides evidence for ethylene regulation of KNOX gene expression.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "a94847b8-39ea-4abf-8be6-020cb8d2be48",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C69",
+      "claim": "Ethylene response mutants still display thigmomorphogenesis in response to touch despite touch inducing ethylene synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, while touch can induce ethylene synthesis, ethylene response mutants still display thigmomorphogenesis in response to touch (Chehab et al., 2012); touch-induced thigmomorphogenesis rather depends on jasmonate (Chehab et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited literature provides evidence for hormone involvement in mechanoperception.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "0f6a2047-c2bd-4626-aee1-19eeac3f99b5",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "claim_id": "C70",
+      "claim": "The robustness of complex morphogenetic regulation may rely on a dialog between gene and form where shape constrains possible outputs of the gene regulatory network.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we have investigated whether the shape itself, and its associated mechanics, interferes with gene expression and channels morphogenesis by constraining the possible outputs of the gene regulatory network. If generalized, such a dialog between gene and form could help us understand how reproducible shapes can emerge from a complex gene regulatory network that is susceptible to noise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative proposal based on integration of study findings with broader developmental biology concepts.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a24e98eb-38a3-48c7-a212-b75b401d7f28",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "STM promoter activity is enhanced in the boundary domain of the shoot apical meristem and quantitatively correlates with Gaussian curvature, showing a negative correlation between CFP signal intensity and curvature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 are well-supported by experimental data. C1 demonstrates enhanced STM promoter activity in boundaries through pSTM::CFP-N7 expression patterns (Figure 1A) with n>20 and literature support. C2 provides quantitative correlation through novel image analysis methods (level set method and MorphoGraphX) with statistical validation shown in Figures 1C-E and Figure 1\u2014figure supplement 2. The methodology is clearly described and appropriate for the measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "f4004a78-6844-461e-9817-af102ad8075d",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The correlation between STM promoter activity and tissue folding is maintained in the bot1-7 mutant background, although the mutant exhibits delayed tissue folding at the boundary compared to wild type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C4 are supported by quantitative data from bot1-7 mutant analysis. C4 demonstrates reduced folding angle for given primordium size (Figure 2A-C), while C3 shows maintained correlation between pBOUND>>GFP expression and tissue folding despite altered timing (Figure 2D, WT: n=154, bot1-7: n=79). This demonstrates that STM expression scales with curvature even when the relationship between organ size and boundary shape is perturbed, strengthening the correlation claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "7e8ea1b5-b40c-49ce-83fd-9b1fe558a218",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The pSTM::STM-Venus translational fusion fully complements the stm-dgh6 mutation, and STM expression at the boundary is required for organ separation, as demonstrated by fusion defects in STM knockdown lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 are well-supported. C7 establishes the stm-dgh6 phenotype (Figure 3B). C5 demonstrates full complementation through phenotypic rescue (Figures 3D-F, Figure 3\u2014figure supplement 1, n=96 plants genotyped) with STM-Venus expression confirmed at boundaries (Figure 3G). C6 shows fusion defects in pSTM::STMamiRNA lines (Figure 3K), though the authors acknowledge some uncertainty about whether effects are solely due to boundary expression. The complementation validates that reporter lines reflect endogenous STM expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "4cb3d222-83a7-48dd-b103-d2cda9414bf0",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "While DII-Venus signal (indicating auxin depletion) correlates with pSTM::CFP-N7 expression in boundaries, particularly in the L1 layer, STM expression and auxin depletion can be uncoupled, as demonstrated by 2,4-D treatment experiments where STM expression persists despite high auxin levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12 are supported by experimental data. C8 and C9 demonstrate correlation between DII-Venus and STM expression with layer-specific differences (Figure 4A-B). C10-C11 show that 2,4-D treatment dramatically decreases DII-Venus (confirming auxin presence, Figure 4D, n=12) but does not inhibit STM expression at boundaries (Figure 4C, n=3). C12's inference that STM and auxin can be uncoupled is justified by these observations. However, sample sizes for the 2,4-D experiments are relatively small (n=3 for STM), which could be noted as a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "553cf5b6-5895-4628-bcbe-d672d3681bc2",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mechanical perturbations (compression and ablation) induce STM expression in the shoot apical meristem, with induction occurring 8-18 hours after perturbation, showing dose-dependence with ablation size, and confirmed by in situ hybridization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 and C20 are well-supported by time-lapse imaging data. C13-C14 show compression induces pSTM::CFP-N7 (n=8) and pBOUND>>GFP (n=11) around 8h (Figures 5B-C, Videos 1-2). C15-C17 demonstrate ablation induces local STM expression from 18h onwards (pSTM::CFP-N7: n=16, pBOUND>>GFP: n=12, Figures 5E-F, Videos 3-4) with dose-dependence (C16, Figure 5\u2014figure supplement 1). C20 confirms induction with in situ hybridization (n=9, Figure 5\u2014figure supplement 2). The temporal kinetics and spatial patterns are consistent across multiple reporter lines and methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "1430625b-3da1-4973-8b74-cfb3e9f633af",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "STM induction after mechanical perturbations is spatially restricted to meristematic cells and is never induced at the base of the meristem in differentiating cells, indicating that mechanical perturbations cannot override the developmental prepattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18 and C19 are supported by observations from ablation experiments showing spatial restriction of STM induction. C18 documents that STM is never induced in differentiating cells at the meristem base. C19's inference that competence to express STM is limited to meristematic cells and cannot be overridden by mechanical signals is consistent with established literature and the observed spatial patterns. This is further supported by C25 showing pBOUND>>GFP was not induced throughout the meristem after isoxaben treatment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "d05effd5-895b-46bc-93cd-38d552da70b4",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Wound-induced jasmonate is not the primary secondary messenger between mechanical stress and STM induction, as jasmonate treatment does not consistently induce STM expression despite robust induction of jasmonate-responsive reporters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21 and C22 are supported by experimental comparisons. C21 shows that 100 \u03bcM jasmonate treatment does not induce significant pSTM::CFP-N7 signal in most plants (10/14 showed no induction, 4/14 showed slight fluctuations, Figures 5J-K). C22's inference is justified by comparing this weak/inconsistent response to the systematic STM induction after ablation and the robust induction of pJAZ10::GUS by jasmonate (Figures 5L-O). The authors appropriately note they cannot completely rule out jasmonate involvement, showing appropriate caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "f78db720-9c3f-44bd-bec3-52cedb5d8661",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Isoxaben treatment (which increases mechanical stress by weakening cell walls) induces STM expression globally in the meristem, but not throughout the entire meristem, demonstrating that STM expression can be modulated by mechanical stress while respecting developmental constraints.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 are supported by isoxaben treatment experiments. C23 shows global increase in pSTM-CFP-N7 signal intensity (control: n=6, isoxaben: n=7, Figures 5G-H with statistical comparison). C24 confirms induction in pBOUND>>GFP line (control: n=10, isoxaben: n=20, Figure 5I). C25 notes spatial restriction (pBOUND>>GFP not induced throughout entire meristem). C26's inference that STM can be modulated by mechanical stress is justified by convergent evidence from multiple perturbation types (compression, ablation, isoxaben) that share mechanical stress as a common feature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "21d0698e-e36f-4edd-8e0d-e7ffdbb182e4",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "PID promoter activity is enhanced in the boundary domain but is not affected by mechanical perturbations (ablation or isoxaben treatment), serving as a negative control and demonstrating specificity of the mechanical induction of STM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 are supported by PID reporter experiments. C27 shows PID expression at boundaries (Figure 6A). C28-C29 demonstrate lack of response to ablation (pPID::CFP-N7: n=13, pPID>>GFP: n=7, Figures 6E-G) and isoxaben (n=11, Figure 6\u2014figure supplement 1). C30-C31's inferences about PID not depending on mechanical signals and STM induction retaining specificity are justified. This negative control strengthens the claim that STM induction is not a general stress response but shows specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "bafabfc2-8c78-4bde-8b4a-7e9ca358dd7a",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Boundary-expressed transcription factors show differential responses to wounding: CUC1 is not induced by ablation, while CUC3 is strongly induced (earlier than STM), demonstrating that boundary genes are not systematically induced by wounding and that mechanical induction shows specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 are supported by ablation experiments on CUC reporter lines. C32-C33 show CUC1 is not induced by ablation (n=11, Figure 6\u2014figure supplement 2) with pattern following organogenesis rather than wound position. C34-C35 show CUC3 is strongly induced after ablation (n=20, Figure 6\u2014figure supplement 3) as early as 6h. C36's inference about differential responses is justified. However, the authors appropriately note that CUC3 induction alone is insufficient to conclude mechanical control without further tests, showing appropriate scientific caution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "c3fd8b48-35a8-4558-b807-1fd4a46f8016",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The relatively long time responses (8-24 hours) for STM induction after mechanical perturbations strongly suggests the induction is indirect and could involve secondary signals such as hormones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 is a reasonable inference supported by temporal kinetics data from multiple experiments (compression: 8h, ablation: 18h) and comparison with cited literature on meristem dynamics. The timing is consistent with indirect effects requiring intermediate steps. This interpretation is appropriately presented as a suggestion rather than definitive conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "64d2a1c8-3460-4678-b32c-c50c7783f028",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Mechanical stress affects auxin distribution in the SAM, as demonstrated by DII-Venus induction around ablation sites (4-8h) and after compression, suggesting that auxin patterns and mechanical stress fields act synergistically to control STM expression at the boundary.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 are supported by DII-Venus sensor experiments. C39 shows consistent DII-Venus induction after ablation (n=21, Figure 7B, Video 5). C40 documents timing (4-8h) consistent with PIN1 response from literature and subsequent STM response. C41 shows DII-Venus induction after compression (Figure 7C). C42's inference about synergistic action is justified by the coordinated temporal responses, though the authors appropriately note this is a suggestion. The experiments effectively address the question posed in C38.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "461e4368-7ba8-4854-9a7f-e6f6d8a5717b",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "In the pin1-6 mutant, STM expression at pseudo-boundaries and STM induction after ablation occur independently of PIN1-mediated auxin depletion, demonstrating that STM expression and auxin distribution can be partially uncoupled while the correlation between tissue folding and STM expression remains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C49 are well-supported by pin1-6 experiments. C43 shows no DII-Venus signal in pin1-6 pseudo-boundaries (n=6, Figure 7D). C44 shows STM reporters present in pseudo-boundaries (Figures 7D-E). C45 shows no DII-Venus induction after ablation in pin1-6 (n=11, Figure 7G, Figure 7\u2014figure supplement 1). C46 shows STM reporters are induced after ablation in pin1-6 (Figures 7F-G, Figure 7\u2014figure supplements 1-2). C47's inference is justified. C48-C49 appropriately note the lack of clear correlation between STM and DII-Venus in pin1-6 and conclude partial uncoupling. The authors acknowledge the caveat that other auxin carriers might substitute for PIN1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "a3867fd7-25d2-4474-a1d2-8e49407666ec",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Oryzalin-triggered tissue folding in the presence of NPA (auxin transport inhibitor) leads to increased STM expression at boundaries, further supporting that mechanical stress can promote STM expression relatively independently of auxin distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50 and C51 are supported by oryzalin application experiments (Figure 7\u2014figure supplement 3). C50 shows slight increase in both pBOUND>>GFP and pSTM::CFP-N7 signals at young boundaries. C51's inference is justified because the induction occurs in the presence of NPA (blocking auxin transport) and oryzalin indirectly modifies mechanical status of cell walls. This provides additional evidence for auxin-independent mechanical induction, though the effect is described as 'slight' suggesting it may be weaker than other perturbations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "ae6541a8-c225-44c0-b7b9-6559ee992255",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study demonstrates that STM expression at the boundary correlates with tissue folding and is increased by mechanical stress, providing a scenario where biochemical factors promote shape changes that generate mechanical signals impacting gene expression, with mechanical stress contributing to STM expression necessary for organ separation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 represent summary statements and proposed models integrating the study's findings. C52 provides context from animal development literature. C53 summarizes the main findings supported by multiple experiments throughout the study. C54 proposes an integrative model supported by the data showing coordination between auxin, mechanical stress, and STM expression. C55 integrates mechanical perturbation experiments with STM knockdown phenotypes. These are appropriately presented as interpretive frameworks rather than direct experimental claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "5f3c05c2-11ca-47fe-8b57-434ec1e9701c",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background knowledge claims about mechanical stress patterns, KNOX gene functions, and boundary roles in plant architecture are established from literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C58 are statements of established knowledge from cited literature. C56 describes mechanical stress patterns in growing tissues. C57 cites evidence for KNOX gene function in meristem formation. C58 describes auxin dynamics at the boundary from multiple cited sources. These provide appropriate context for the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "f0131384-7b1a-451e-b01e-8331e81078ac",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The study demonstrates that mechanical stress can uncouple STM expression from auxin depletion, with mechanical perturbations inducing STM even when auxin transport or levels are affected, and mechanical stress not impacting PINOID expression, suggesting this uncoupling adds robustness to meristem boundary functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C62 are summary statements integrating findings from multiple experiments. C59-C60 summarize findings from 2,4-D treatment, pin1 mutant, and NPA+oryzalin experiments. C61 summarizes PID reporter experiments. C62 proposes an interpretation about robustness, appropriately presented as a proposal rather than proven fact. These claims effectively synthesize the experimental evidence, though C62 is speculative about the evolutionary/functional significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "d7e07042-26aa-4f95-820e-479d4cc9d934",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Literature-based claims about interactions between STM/KNOX genes and various hormones (cytokinins, gibberellins, ethylene, jasmonate) provide context for potential mechanotransduction pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C69 are all based on cited literature and provide context for the Discussion. They describe established interactions between KNOX genes and various hormones (C63-C67 on cytokinins and gibberellins, C68-C69 on ethylene and jasmonate). These are appropriately cited and provide relevant background for discussing potential mechanisms, but are not novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    },
+    {
+      "id": "cb917088-9f85-4f52-a225-f365e28e8861",
+      "content_id": "7fcd4b91-5f62-4d3d-8e9d-ab345e946f1b",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The authors propose that robustness of morphogenetic regulation may rely on a dialog between gene and form where shape constrains possible outputs of the gene regulatory network, potentially explaining how reproducible shapes emerge from complex, noise-susceptible networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C70 is a speculative proposal about broader implications of the work. While it represents an interesting hypothesis that integrates the study's findings with developmental biology concepts, it is explicitly presented as speculation ('may rely', 'could help us understand', 'If generalized'). The claim goes beyond what the data directly demonstrate and would require additional work to validate. The authors appropriately present this as a hypothesis rather than a conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:45.590459Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0b759ab8-ee35-4a94-be7d-cd7b66f0135f",
+      "result_id": "a24e98eb-38a3-48c7-a212-b75b401d7f28"
+    },
+    {
+      "claim_id": "842dc14c-d546-4ed3-8318-b0d19fd8d57c",
+      "result_id": "a24e98eb-38a3-48c7-a212-b75b401d7f28"
+    },
+    {
+      "claim_id": "4b441d77-533c-4f59-9474-e9b7b4fa12cf",
+      "result_id": "f4004a78-6844-461e-9817-af102ad8075d"
+    },
+    {
+      "claim_id": "b16155f8-ec54-4a92-8037-f3c51364fcf4",
+      "result_id": "f4004a78-6844-461e-9817-af102ad8075d"
+    },
+    {
+      "claim_id": "885d2b69-4b2f-49ee-9f94-e6e56b4eea89",
+      "result_id": "7e8ea1b5-b40c-49ce-83fd-9b1fe558a218"
+    },
+    {
+      "claim_id": "a4cfc9f8-d710-4ef3-82cc-34c20862bc7d",
+      "result_id": "7e8ea1b5-b40c-49ce-83fd-9b1fe558a218"
+    },
+    {
+      "claim_id": "13d2cd3a-53d2-4b65-bcf7-96e02de387c9",
+      "result_id": "7e8ea1b5-b40c-49ce-83fd-9b1fe558a218"
+    },
+    {
+      "claim_id": "2bed19c1-6180-4ae6-9656-4bf0c4b3d37e",
+      "result_id": "4cb3d222-83a7-48dd-b103-d2cda9414bf0"
+    },
+    {
+      "claim_id": "7c2ea8b0-5a42-4d15-80b9-2a97cfc00068",
+      "result_id": "4cb3d222-83a7-48dd-b103-d2cda9414bf0"
+    },
+    {
+      "claim_id": "0b453797-fc8f-4406-8304-d823a7feac91",
+      "result_id": "4cb3d222-83a7-48dd-b103-d2cda9414bf0"
+    },
+    {
+      "claim_id": "8bb4170b-1404-468a-ad5e-27eb11f52bab",
+      "result_id": "4cb3d222-83a7-48dd-b103-d2cda9414bf0"
+    },
+    {
+      "claim_id": "9894d251-9a2b-4cf9-ab76-7ca2c1869d59",
+      "result_id": "4cb3d222-83a7-48dd-b103-d2cda9414bf0"
+    },
+    {
+      "claim_id": "ddd429d0-2435-486f-8ef5-0e873f995b14",
+      "result_id": "553cf5b6-5895-4628-bcbe-d672d3681bc2"
+    },
+    {
+      "claim_id": "7ded1e5f-8cfa-456f-88e1-e6d37657e4f5",
+      "result_id": "553cf5b6-5895-4628-bcbe-d672d3681bc2"
+    },
+    {
+      "claim_id": "559497ff-82b7-4fd1-9e29-dc81f1ea78f8",
+      "result_id": "553cf5b6-5895-4628-bcbe-d672d3681bc2"
+    },
+    {
+      "claim_id": "7cd0992c-3a39-43a8-ae13-f13b4cb84fd4",
+      "result_id": "553cf5b6-5895-4628-bcbe-d672d3681bc2"
+    },
+    {
+      "claim_id": "d31f43fc-d0a2-444b-879a-66125c7c3d2b",
+      "result_id": "553cf5b6-5895-4628-bcbe-d672d3681bc2"
+    },
+    {
+      "claim_id": "2f813644-4e3e-4f7e-a069-09b03f1eee6d",
+      "result_id": "553cf5b6-5895-4628-bcbe-d672d3681bc2"
+    },
+    {
+      "claim_id": "5ae6c11c-50d5-4fe4-830b-81a4d81c110c",
+      "result_id": "1430625b-3da1-4973-8b74-cfb3e9f633af"
+    },
+    {
+      "claim_id": "8bf095f0-1b69-43e3-b90b-f19199340a6f",
+      "result_id": "1430625b-3da1-4973-8b74-cfb3e9f633af"
+    },
+    {
+      "claim_id": "c1a4f167-2af5-426d-8084-433a049feefc",
+      "result_id": "d05effd5-895b-46bc-93cd-38d552da70b4"
+    },
+    {
+      "claim_id": "306424c9-fa18-4246-88b6-679f34bec1fd",
+      "result_id": "d05effd5-895b-46bc-93cd-38d552da70b4"
+    },
+    {
+      "claim_id": "d81bc504-1198-4336-9aed-0d21770676fe",
+      "result_id": "f78db720-9c3f-44bd-bec3-52cedb5d8661"
+    },
+    {
+      "claim_id": "726b8176-23ee-480a-a1c7-8a49c6473a8f",
+      "result_id": "f78db720-9c3f-44bd-bec3-52cedb5d8661"
+    },
+    {
+      "claim_id": "a78ebbea-5c9f-4d90-bb3b-4e19c7ad8dbf",
+      "result_id": "f78db720-9c3f-44bd-bec3-52cedb5d8661"
+    },
+    {
+      "claim_id": "1b12a34b-2b82-4586-b81c-8a9acdea932b",
+      "result_id": "f78db720-9c3f-44bd-bec3-52cedb5d8661"
+    },
+    {
+      "claim_id": "850ae8f4-3e35-4b45-b25d-9f9a80212182",
+      "result_id": "21d0698e-e36f-4edd-8e0d-e7ffdbb182e4"
+    },
+    {
+      "claim_id": "8cdcad4b-e835-4d66-8133-f28f6af63b40",
+      "result_id": "21d0698e-e36f-4edd-8e0d-e7ffdbb182e4"
+    },
+    {
+      "claim_id": "c21f8f82-9b7a-4932-b65e-4eca45ae322a",
+      "result_id": "21d0698e-e36f-4edd-8e0d-e7ffdbb182e4"
+    },
+    {
+      "claim_id": "8ffd84c9-97e3-4e31-a7a0-732032ac59dc",
+      "result_id": "21d0698e-e36f-4edd-8e0d-e7ffdbb182e4"
+    },
+    {
+      "claim_id": "d5058f58-b980-4095-94e2-da5f4d1488fe",
+      "result_id": "21d0698e-e36f-4edd-8e0d-e7ffdbb182e4"
+    },
+    {
+      "claim_id": "ea2bd9ca-c6f3-450a-9b39-4fce92d072a3",
+      "result_id": "bafabfc2-8c78-4bde-8b4a-7e9ca358dd7a"
+    },
+    {
+      "claim_id": "11870f88-d1e3-4aea-8358-0e4e55059a7f",
+      "result_id": "bafabfc2-8c78-4bde-8b4a-7e9ca358dd7a"
+    },
+    {
+      "claim_id": "5b03eefd-9851-4e91-a028-3d2dd6eb7e16",
+      "result_id": "bafabfc2-8c78-4bde-8b4a-7e9ca358dd7a"
+    },
+    {
+      "claim_id": "56466c7d-b32b-46dc-858a-16e91e1c8de0",
+      "result_id": "bafabfc2-8c78-4bde-8b4a-7e9ca358dd7a"
+    },
+    {
+      "claim_id": "dcfee7c5-2524-4c9e-aa16-9a4b10a380fc",
+      "result_id": "bafabfc2-8c78-4bde-8b4a-7e9ca358dd7a"
+    },
+    {
+      "claim_id": "8be7d8fb-b948-42c8-8e05-5feb0c7e4506",
+      "result_id": "c3fd8b48-35a8-4558-b807-1fd4a46f8016"
+    },
+    {
+      "claim_id": "ea0db8d7-efde-4b06-ba83-bbe967b66466",
+      "result_id": "64d2a1c8-3460-4678-b32c-c50c7783f028"
+    },
+    {
+      "claim_id": "f7bd64f7-2029-41cf-a3a8-01889140626a",
+      "result_id": "64d2a1c8-3460-4678-b32c-c50c7783f028"
+    },
+    {
+      "claim_id": "5600e37d-779b-4068-84c8-f4730e724b08",
+      "result_id": "64d2a1c8-3460-4678-b32c-c50c7783f028"
+    },
+    {
+      "claim_id": "7192092a-63be-4269-98aa-8d15e8fdbf29",
+      "result_id": "64d2a1c8-3460-4678-b32c-c50c7783f028"
+    },
+    {
+      "claim_id": "03282de8-3964-4235-b01b-f0e6d338b4fa",
+      "result_id": "64d2a1c8-3460-4678-b32c-c50c7783f028"
+    },
+    {
+      "claim_id": "94ff3f5a-fcb7-4632-84f6-99458ec5c1e0",
+      "result_id": "461e4368-7ba8-4854-9a7f-e6f6d8a5717b"
+    },
+    {
+      "claim_id": "1c5ef89e-6c8e-4082-85c6-5f7a067ffd5d",
+      "result_id": "461e4368-7ba8-4854-9a7f-e6f6d8a5717b"
+    },
+    {
+      "claim_id": "2a3eef2a-c4de-42b0-9230-174357030914",
+      "result_id": "461e4368-7ba8-4854-9a7f-e6f6d8a5717b"
+    },
+    {
+      "claim_id": "c7040523-efb4-4440-a83d-9ca3294d4088",
+      "result_id": "461e4368-7ba8-4854-9a7f-e6f6d8a5717b"
+    },
+    {
+      "claim_id": "4848056c-32d2-4207-a518-1cef55ca0df5",
+      "result_id": "461e4368-7ba8-4854-9a7f-e6f6d8a5717b"
+    },
+    {
+      "claim_id": "0877a238-1002-4ef6-af96-f2d3d0836dc9",
+      "result_id": "461e4368-7ba8-4854-9a7f-e6f6d8a5717b"
+    },
+    {
+      "claim_id": "b6afd52d-01ea-4c7b-a388-581a61522247",
+      "result_id": "461e4368-7ba8-4854-9a7f-e6f6d8a5717b"
+    },
+    {
+      "claim_id": "19f4be7b-6318-4dd6-a4c9-f971b4640b50",
+      "result_id": "a3867fd7-25d2-4474-a1d2-8e49407666ec"
+    },
+    {
+      "claim_id": "6a4cf5eb-2a5c-4fb7-a392-7ae9c1bb5b26",
+      "result_id": "a3867fd7-25d2-4474-a1d2-8e49407666ec"
+    },
+    {
+      "claim_id": "0a9bba36-c86d-4345-be45-6786f1e51bda",
+      "result_id": "ae6541a8-c225-44c0-b7b9-6559ee992255"
+    },
+    {
+      "claim_id": "1cd66f5b-5f17-4a4d-be2d-72bf5a765e30",
+      "result_id": "ae6541a8-c225-44c0-b7b9-6559ee992255"
+    },
+    {
+      "claim_id": "16ee831c-ad5b-49b5-b4df-8feb0b305f07",
+      "result_id": "ae6541a8-c225-44c0-b7b9-6559ee992255"
+    },
+    {
+      "claim_id": "0c30842c-e67b-4cca-8b26-bda221d5f56c",
+      "result_id": "ae6541a8-c225-44c0-b7b9-6559ee992255"
+    },
+    {
+      "claim_id": "48d88f42-2cb3-4564-bb48-cd51368d548a",
+      "result_id": "5f3c05c2-11ca-47fe-8b57-434ec1e9701c"
+    },
+    {
+      "claim_id": "e0630a4e-6efc-4591-8a9d-7dbb78c54d5b",
+      "result_id": "5f3c05c2-11ca-47fe-8b57-434ec1e9701c"
+    },
+    {
+      "claim_id": "5c5bc6ce-079c-400c-a58d-51725f5325e8",
+      "result_id": "5f3c05c2-11ca-47fe-8b57-434ec1e9701c"
+    },
+    {
+      "claim_id": "ea6d0966-e39f-4975-ac2a-5c03ece135e5",
+      "result_id": "f0131384-7b1a-451e-b01e-8331e81078ac"
+    },
+    {
+      "claim_id": "dffec96e-07e0-4372-b44c-e017d471a008",
+      "result_id": "f0131384-7b1a-451e-b01e-8331e81078ac"
+    },
+    {
+      "claim_id": "e206ddb1-d922-4652-bb83-3435a2129020",
+      "result_id": "f0131384-7b1a-451e-b01e-8331e81078ac"
+    },
+    {
+      "claim_id": "d901defd-e10b-4fee-b26a-c34d29987bb5",
+      "result_id": "f0131384-7b1a-451e-b01e-8331e81078ac"
+    },
+    {
+      "claim_id": "e4b43cb6-223b-4933-85d5-e947347d7af5",
+      "result_id": "d7e07042-26aa-4f95-820e-479d4cc9d934"
+    },
+    {
+      "claim_id": "db36b801-2e69-4ca7-a585-3a3226a7f644",
+      "result_id": "d7e07042-26aa-4f95-820e-479d4cc9d934"
+    },
+    {
+      "claim_id": "a9b45e82-2e54-44b3-bba6-e486de0e427c",
+      "result_id": "d7e07042-26aa-4f95-820e-479d4cc9d934"
+    },
+    {
+      "claim_id": "ae01e693-2454-4a8a-908b-d7a83ad7a3ca",
+      "result_id": "d7e07042-26aa-4f95-820e-479d4cc9d934"
+    },
+    {
+      "claim_id": "2c48e1a4-b72e-4aa1-8a92-c98343f03dc8",
+      "result_id": "d7e07042-26aa-4f95-820e-479d4cc9d934"
+    },
+    {
+      "claim_id": "9ecf6ea7-7ddc-4154-a1e7-0a5531af8f79",
+      "result_id": "d7e07042-26aa-4f95-820e-479d4cc9d934"
+    },
+    {
+      "claim_id": "a94847b8-39ea-4abf-8be6-020cb8d2be48",
+      "result_id": "d7e07042-26aa-4f95-820e-479d4cc9d934"
+    },
+    {
+      "claim_id": "0f6a2047-c2bd-4626-aee1-19eeac3f99b5",
+      "result_id": "cb917088-9f85-4f52-a225-f365e28e8861"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1328 @@
+{
+  "submission": {
+    "id": "8b3b6047-93f7-45fe-9153-a2ef1b0983e1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:55:42.659389Z",
+    "updated_at": "2025-11-29T21:55:42.659389Z"
+  },
+  "content": [
+    {
+      "id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "submission_id": "8b3b6047-93f7-45fe-9153-a2ef1b0983e1",
+      "content_type": "manuscript",
+      "content_text": "# Nanobodies: site-specific labeling for super-resolution imaging, rapid epitope-mapping and native protein complex isolation\n\n## Authors\n\n- Tino Pleiner<sup>1</sup> ([ORCID: 0000-0002-5104-0315](https://orcid.org/0000-0002-5104-0315))\n- Mark Bates<sup>2</sup> ([ORCID: 0000-0003-0668-5277](https://orcid.org/0000-0003-0668-5277))\n- Sergei Trakhanov<sup>1</sup> ([ORCID: 0000-0002-1326-6153](https://orcid.org/0000-0002-1326-6153))\n- Chung-Tien Lee<sup>3</sup>\n- Jan Erik Schliep<sup>5</sup> ([ORCID: 0000-0001-7103-5954](https://orcid.org/0000-0001-7103-5954))\n- Hema Chug<sup>1</sup> ([ORCID: 0000-0002-9889-7076](https://orcid.org/0000-0002-9889-7076))\n- Marc B\u00f6hning<sup>1</sup> ([ORCID: 0000-0002-4245-5113](https://orcid.org/0000-0002-4245-5113))\n- Holger Stark<sup>5</sup>\n- Henning Urlaub<sup>3</sup> ([ORCID: 0000-0003-1837-5233](https://orcid.org/0000-0003-1837-5233))\n- Dirk G\u00f6rlich<sup>1</sup> ([ORCID: 0000-0002-4343-5210](https://orcid.org/0000-0002-4343-5210)) \u2020\n\n### Affiliations\n\n1. Department of Cellular Logistics Max Planck Institute for Biophysical Chemistry G\u00f6ttingen Germany\n2. Department of NanoBiophotonics Max Planck Institute for Biophysical Chemistry G\u00f6ttingen Germany\n3. Bioanalytical Mass Spectrometry Max Planck Institute for Biophysical Chemistry G\u00f6ttingen Germany\n4. Bioanalytics, Institute for Clinical Chemistry University Medical Center G\u00f6ttingen G\u00f6ttingen Germany\n5. 3D Electron Cryo-Microscopy Group Max Planck Institute for Biophysical Chemistry G\u00f6ttingen Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nNanobodies are single-domain antibodies of camelid origin. We generated nanobodies against the vertebrate nuclear pore complex (NPC) and used them in STORM imaging to locate individual NPC proteins with <2 nm epitope-label displacement. For this, we introduced cysteines at specific positions in the nanobody sequence and labeled the resulting proteins with fluorophore-maleimides. As nanobodies are normally stabilized by disulfide-bonded cysteines, this appears counterintuitive. Yet, our analysis showed that this caused no folding problems. Compared to traditional NHS ester-labeling of lysines, the cysteine-maleimide strategy resulted in far less background in fluorescence imaging, it better preserved epitope recognition and it is site-specific. We also devised a rapid epitope-mapping strategy, which relies on crosslinking mass spectrometry and the introduced ectopic cysteines. Finally, we used different anti-nucleoporin nanobodies to purify the major NPC building blocks \u2013 each in a single step, with native elution and, as demonstrated, in excellent quality for structural analysis by electron microscopy. The presented strategies are applicable to any nanobody and nanobody-target.\n\n## Introduction\n\nNanobodies represent antigen-binding domains of 'heavy-chain-only' camelid antibodies and are typically selected by phage display from an immune library (Hamers-Casterman et al., 1993; Arbabi Ghahroudi et al., 1997; Muyldermans, 2013). Their small size (~13\u2009kDa), monoclonal nature and high specificity are ideal for applications like affinity purification or protein detection and localization (Helma et al., 2015). Their utility as crystallization chaperones is also widely appreciated (Pardon et al., 2014; Desmyter et al., 2015).\n\nNanobodies are commonly expressed in Escherichia coli and secreted into the oxidative periplasm, where their conserved internal disulfide bond can be formed (Vincke et al., 2012; Pardon et al., 2014; Fridy et al., 2014). Periplasmic expression comes, however, with several drawbacks. For example, it often results in low final yield (Baneyx and Mujacic, 2004), probably due to saturation of the secretion machinery and aggregation of precursor proteins in the cytoplasm. The limited set of chaperones and high proteolytic activity in the periplasm also restrict the choices of fusion tags that can be used (de Marco, 2009; Feilmeier et al., 2000). Furthermore, the purification of periplasmic proteins involves considerably more hands-on time than purification from the cytoplasm.\n\nIn typical affinity chromatography applications, nanobodies are covalently attached to a resin, which later necessitates harsh conditions for the elution of bound target proteins (Rothbauer et al., 2008; Fridy et al., 2014). This is appropriate for an identification, but hardly for any further downstream structural or functional analysis of the purified target proteins. As a workaround, a native isolation of protein A-tagged protein complexes using a specific nanobody modified with a dithiothreitol (DTT)-cleavable crosslinker was recently reported (Fridy et al., 2015). However, the achievable yield was modest, as most of the isolated complexes resisted release. Furthermore, the presence of any thiol-reducing agent (like DTT or glutathion) during binding is incompatible with this method.\n\nIn traditional indirect immunofluorescence, epitopes are initially decorated with a primary antibody and detected with a fluorophore-labeled secondary one, each around 12\u201315 nm in size (Harris et al., 1998). The effective displacement between label and epitope can reach up to 24\u201330 nm and thus significantly deteriorate the achievable precision and accuracy of protein localization by super-resolution fluorescence microscopy (Hell, 2009; Huang et al., 2009). Nanobodies (diameter: 4 nm) are an ideal solution to this problem (Ries et al., 2012; Szymborska et al., 2013). This, however, requires a direct nanobody labeling. Ideally, labeling should be site-specific, so that the remaining small displacement between epitope and fluorescent dye can be predicted and corrected for in the measurements.\n\nSo far, nanobodies were labeled at lysines by N-hydroxysuccinimide (NHS) ester fluorophores (Ries et al., 2012; Fridy et al., 2014), which is random and rarely quantitative. As we show below, it also deteriorates signal-to-background ratios or even completely abolishes epitope recognition. A workaround to this basic problem was the addition of a C-terminal oligo-lysine stretch to divert labeling from nanobody framework lysine residues (described for the anti-GFP nanobody 'Enhancer' in Platonova et al., 2015). This, however, increases the epitope-label distance again. Furthermore, fluorescent labeling of nanobodies using Sortase A was presented (Witte et al., 2012). This strategy is limited to the N- or C-terminus and uses modified fluorophores that are not readily available. Adding an extra C-terminal cysteine (for subsequent maleimide modification) to a periplasmically expressed nanobody was also not a satisfying solution, because it led to a severe reduction in yield and caused extensive dimerization (Massa et al., 2014).\n\nHence, we explored solutions to the above-described limitations of the current nanobody technology. We demonstrate functional cytoplasmic expression of nanobodies with protease-cleavable tags for native affinity purification and with engineered cysteines for site-specific fluorescent labeling. We chose the Xenopus nuclear pore complex (NPC) as a model target and developed a toolbox of high-affinity nanobodies against its major constituent proteins, nucleoporins (Nups), which occur in large subcomplexes. Using specific nanobodies, we purified their target protein complexes from Xenopus egg extract in a single step with native elution based on proteolytic matrix-release. This allowed a direct analysis of nanobody-purified endogenous Nup complexes by negative stain electron microscopy. Labeling these anti-Nup nanobodies with NHS ester fluorescent dyes for imaging often produced non-functional reagent or significant background staining. We therefore implemented a simple and generally applicable strategy for obtaining site-specifically fluorophore-labeled nanobodies of superior imaging quality. It involves engineered cysteines at the nanobody surface, their modification with maleimide fluorophores, and leaves the internal framework cysteines fully intact. This strategy allowed super-resolution imaging of NPCs with a negligible label displacement and very low background. A novel strategy for rapid mapping of conformational nanobody epitopes via crosslinking mass spectrometry involving the engineered surface cysteines is also presented here.\n\n## Results\n\nNPCs are gateways for nucleocytoplasmic transport. Their very large size of \u2248110 MDa not only places them amongst the largest molecular machines, but also poses formidable challenges for any structural and functional investigation (reviewed in Hurt and Beck, 2015). Nucleoporins are organized in multiple subcomplexes around a central eightfold rotational symmetry axis. Certainly, the most characteristic subcomplex is the Nup107-Nup160 or Y-shaped complex (Siniossoglou et al., 2000; Vasu et al., 2001). Its essential role in NPC assembly (Harel et al., 2003; Walther et al., 2003) as well as its structural organization and relative position within the NPC have been studied intensely (Bui et al., 2013; Eibauer et al., 2015; Kelley et al., 2015; Stuwe et al., 2015b; von Appen et al., 2015). The inner ring of the NPC scaffold comprises also essential Nup93-containing subcomplexes (Sachdev et al., 2012; Vollmer and Antonin, 2014), whose stoichiometry and orientation are less understood. Nup93 further anchors the trimeric Nup62\u2022Nup58\u2022Nup54 complex in the central transport channel (Finlay et al., 1991; Hu et al., 1996; Chug et al., 2015; Stuwe et al., 2015a).\n\n### Functional cytoplasmic expression of anti-NPC nanobodies\n\nIn order to provide new tools for studying NPCs, we generated nanobodies against constituents of the Xenopus NPC scaffold, namely Nup85, Nup93, and Nup155, as well as against Nup98 and the Nup62\u2022Nup58\u2022Nup54 complex. The latter two species were included because their Phe-Gly (FG)-repeat domains form a permeability barrier within the central NPC channel (H\u00fclsmann et al., 2012). High-affinity nanobodies against all these targets were readily obtained from alpaca immune libraries by phage display.\n\nWe noticed that these nanobodies could be produced in the cytoplasm of various E. coli strains, as recently reported for other nanobodies (Olichon and Surrey, 2007; Zarschler et al., 2013; Djender et al., 2014). We also observed that fusing nanobodies behind a His14-bdNEDD8 module (Frey and G\u00f6rlich, 2014) increased their yield dramatically (Figure 1a).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/11349/elife-11349-fig1-v4.jpg)\n\n**Figure 1.:** (a) Comparison of typical yields for the anti-Nup93 nanobody TP179 and the anti-Nup98 nanobody TP377 expressed either in the Escherichia coli BLR periplasm with a C-terminal His6-tag or in\u00a0the oxidative cytoplasm of E. coli SHuffle with an N-terminal His14-bdNEDD8-tag. (b) Analysis of disulfide bond content using a maleimide shift assay. Anti-Nup93 nanobody TP179 and anti-Nup98 nanobody TP377, expressed either in the oxidative periplasm of E. coli BLR, the oxidative cytosol of E. coli SHuffle or in\u00a0the reductive cytoplasm of E. coli BLR, were subjected to modification with biotin-PEG23-maleimide in SDS\u2013PAGE sample buffer (-DTT) and analyzed by non-reducing SDS\u2013PAGE followed by Coomassie\u00a0staining. (c) The redox state of the anti-Nup98 nanobody TP377 does not affect the affinity for its target. Biotinylated His14-Avi-bdSUMO-tagged Nup98716-866 was immobilized on Streptavidin agarose und used to bind the reduced GFP-tagged TP377. Binding was in the absence or presence of an equimolar amount or fivefold excess of nanobody competitor, namely untagged TP377 produced either in the oxidative periplasm, in the mildly oxidative cytoplasm of E. coli SHuffle or in the reductive cytoplasm of BLR. Bound nanobodies were then eluted by proteolytic cleavage of the bdSUMO tag of Nup98 and analyzed by SDS\u2013PAGE followed by Coomassie\u00a0staining. Note that the oxidized, disulfide bond-stabilized nanobody (produced in the periplasm) behaved like the reduced variant (produced in the E. coli BLR cytoplasm). Formation of the disulfide bond therefore does not seem to significantly contribute to the overall affinity. (d) Differential scanning fluorimetry (thermofluor, Niesen et al., 2007) analysis of nanobodies expressed in the oxidative periplasm (red) or the reductive cytosol (blue) of E. coli BLR. The anti-Nup93 and anti-Nup98 nanobodies were heated in the presence of Sypro Orange dye from 30\u00a0to\u00a0100\u00b0C and thermal unfolding curves were obtained. The melting temperature is derived from the inflection point of the curve.\n\nIn order to test whether disulfide bond formation can occur in the cytoplasm and if this is important for nanobody function, we expressed an anti-Nup93 and an anti-Nup98 nanobody either in the periplasm, the reductive cytoplasm of E. coli BLR or in the cytoplasm of E. coli SHuffle. The latter strain contains a cytoplasmic disulfide isomerase and harbors mutations that render its cytoplasm (moderately) oxidative (Lobstein et al., 2012). The obtained nanobody variants were then treated with biotin-PEG23-maleimide under denaturing conditions. Reduced nanobodies are thereby modified at their free cysteines, and the resulting size shift distinguishes them from disulfide-containing nanobodies (Figure 1b). While periplasmic secretion resulted in fully oxidized nanobodies, only a fraction of the SHuffle-expressed nanobodies contained a disulfide bond. Cytoplasmic expression in E. coli BLR yielded completely reduced nanobodies.\n\nOne could assume that the antigen affinity of nanobodies is negatively affected by a loss of their scaffold disulfide bond. A competition for antigen-binding revealed, however, no affinity difference between reduced and disulfide bond-containing anti-Nup98 nanobodies (Figure 1c). As expected, we observed by differential scanning fluorimetry (Niesen et al., 2007) a decreased thermostability of fully reduced anti-Nup98 and anti-Nup93 nanobodies (Figure 1d). Their melting temperatures of 47\u00b0C and 57\u00b0C are, however, still well above any reasonable incubation temperature for downstream applications.\n\nAll nanobodies that we obtained via phage display against a wide range of antigens could be functionally produced in the E. coli cytoplasm. Only very few of those nanobodies contained a second pair of cysteines that can form an additional, solvent-exposed disulfide bond between the antigen-binding loops CDR II and CDR III which likely contributes to the overall affinity (Govaert et al., 2012). However, most biochemical applications as well as imaging techniques like STORM require reducing conditions that disrupt accessible disulfide bonds, making such nanobodies a poor option anyway.\n\n### Native purification of endogenous protein complexes using nanobodies\n\nCytoplasmic expression of nanobodies provides a number of advantages. First, the yield often exceeds 100 mg per liter of culture and can be up to 30 times higher as compared to periplasmic expression (Figure 1a). Second, it saves hands-on time, because a cumbersome preparation of a periplasmic fraction is bypassed, and third, a far broader range of fusion modules can be used.\n\nWe exploited this for affinity purification of endogenous target protein complexes with nanobodies and native elution. For this strategy, we produced His14-Avi-(GlySer)9-SUMOStar-(GlySer)9-nanobody fusions and purified them by Ni2+ chelate affinity chromatography and imidazole elution (Figure 2\u2014figure supplement 1a). The Avi-tag can be biotinylated by cytoplasmic co-expression of the biotin ligase BirA in E. coli (Schatz, 1993; Beckett et al., 1999) or\u00a0in vitro using the purified enzyme (Fairhead and Howarth, 2015). It then mediates binding of the purified nanobody to streptavidin magnetic beads. The interspersed long unfolded Gly-Ser spacers minimize steric hindrance effects. The SUMOStar module is an engineered SUMO variant that cannot be cleaved by endogenous eukaryotic desumoylases but by an engineered SUMOStar protease (LifeSensors), (Liu et al., 2008). In combination, these modules allow native elution of nanobody-bound target proteins or protein complexes by cleaving the tag with nanomolar concentrations of the SUMOStar protease. This strategy also provides a purer and more specific end product, because any protein species, which sticks non-specifically to the beads, will not be released. Thus, such highly specific protease elution makes the otherwise crucial control for matrix background-binding (Marcon et al., 2015; Mellacheruvu et al., 2013) essentially dispensable.\n\nAs a proof of principle, we purified five nucleoporin complexes from a Xenopus egg extract to near homogeneity (Figure 2a and b). For each complex we achieved a \u224810 000-fold enrichment within a single native purification step and yields of around 50%. The anti-Nup85 nanobody retrieved the \u2248750\u2009kDa nine-membered Y-complex as well as Tpr and Elys as specific but sub-stoichiometric binding partners. We obtained substantial amounts of the complex, namely 50\u2013100 \u00b5g from as little as 2 ml egg extract, which initially contained \u2248150 \u00b5g or \u2248100 nM of the complex (W\u00fchr et al., 2014). Post-elution with SDS sample buffer indicated a quantitative proteolytic release of the complex from the beads (Figure 2\u2014figure supplement 1b).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/11349/elife-11349-fig2-v4.jpg)\n\n**Figure 2.:** (a) Schematic representation of the subcomplex organization and relative localization of Nups within an asymmetric unit of the eightfold rotational symmetric vertebrate NPC (ONM/INM = outer and inner nuclear membrane). The nuclear and cytoplasmic rings of the structural NPC scaffold are mainly composed of the Nup107-Nup160 Y-shaped complex (green). The central inner ring of the scaffold is composed of the Nup93 subcomplex (blue). The scaffold is bound to the nuclear envelope via transmembrane Nups and further anchors FG-repeat nucleoporins (e.g. Nup98 [red] and the Nup62\u2022Nup58\u2022Nup54 complex [brown]) within the central channel, where they form the permeability barrier. Nups against which nanobodies were raised are highlighted in bold. (b) Native purification of major NPC scaffold subcomplexes and FG-repeat nucleoporins from Xenopus egg extract. Biotinylated His14-Avi-(GlySer)9-SUMOStar-(GlySer)9-tagged nanobodies were immobilized on magnetic Streptavidin beads and then incubated with Xenopus egg extract. After washing, nanobodies were gently eluted along with their bound target complexes by SUMOStar protease cleavage. One tenth of the eluates were analyzed by SDS\u2013PAGE and Coomassie\u00a0staining. All labeled bands were identified via mass spectrometry. The color code represents the subcomplex organization of the NPC as illustrated in (a). A nanobody raised against Escherichia coli Maltose-binding protein (MBP) served as a negative control.\u00a0NPC,\u00a0nuclear pore complex.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11349/elife-11349-fig2-figsupp1-v4.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) SDS\u2013PAGE and Coomassie staining showing the expression of the anti-Nup98 nanobody TP377 carrying a protease-cleavable affinity tag (His14-Avi-(GlySer)9-SUMOStar-(GlySer)9) in the Escherichia coli cytoplasm and its one-step purification using Ni2+ chelate affinity chromatography and imidazole elution. The Avi-tag mediates binding to Streptavidin after biotinylation by the biotin ligase BirA (Beckett et al., 1999; Schatz, 1993). (b) Analysis of natively purified and remaining bead-bound material. Anti-Nup93 and anti-Nup85 nanobodies were used to purify their respective target complexes from crude Xenopus egg extract. After native elution with SUMOStar protease, the beads were heated in SDS\u2013PAGE sample buffer containing 400 mM urea for 10 min at 97\u00b0C. Note that protease cleavage released the cognate complexes very efficiently and that the remaining bead-bound material essentially represents just the non-specific background, cleaved tags and leaked streptavidin. (c) Effect of a RanQ69L\u2022GTP wash on FG-repeat Nup purification. FG repeat-bound nuclear transport receptor\u2022cargo complexes were efficiently removed by washing the beads for 10 min at 4\u00b0C with 100 \u00b5l 1 \u00b5M RanQ69L5-180\u2022GTP before elution with SUMOStar protease.\n\nThe anti-Nup155 nanobody retrieved Nup155 as a single species. This might appear surprising as Nup155 is thought to contact Nup93 and Nup53/35 within the inner ring of the NPC scaffold (Hawryluk-Gara et al., 2005; Hawryluk-Gara et al., 2008; Sachdev et al., 2012). We therefore assume that mitotic post-translational modifications transiently suppress interactions between these proteins. We also purified the Nup98\u2022Gle2 and the Nup62\u2022Nup58\u2022Nup54 complex using anti-Nup98 and anti-Nup54 nanobodies, respectively. Here, we included a RanQ69L\u2022GTP wash to release nuclear transport receptors, which otherwise would remain bound to the FG domains of Nup98 or the Nup62 complex (Figure 2\u2014figure supplement 1c).\n\nThe anti-Nup93 nanobody purified the expected mixture of the two paralogous Nup93\u2022Nup188 and Nup93\u2022Nup205 complexes (Theerthagiri et al., 2010), which are also a\u00a0part of the structurally least understood NPC inner ring. In this case, we analyzed the natively eluted material straightaway by negative stain electron microscopy (Figure 3a). Class averaging revealed characteristically curved \u03b1-solenoid fold-like particles, which are known to exhibit conformational flexibility (Figure 3b). The obtained structures were very reminiscent of the hook and eye-shaped structures reported earlier for the Nup188 and Nup205 orthologues from Saccharomyces cerevisiae (Amlacher et al., 2011) and Myceliophthora thermophila (Andersen et al., 2013). This suggests not only that the overall shape of the Nup93 complexes is conserved from fungi to vertebrates, but also that our single-step purification strategy for large protein complexes yields material of sufficient quality for a direct structural analysis.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/11349/elife-11349-fig3-v4.jpg)\n\n**Figure 3.:** (a) Anti-Nup93 nanobody TP179-purified Nup93\u2022Nup188 and Nup93\u2022Nup205 complexes were subjected to the GraFix procedure (Kastner et al., 2008) and negative staining for analysis by electron microscopy. (b) Gallery of 12 selected class averages of Nup93\u2022Nup188 and Nup93\u2022Nup205 particles.\n\n### Site-specific fluorescent labeling of nanobodies\n\nIn order to use anti-Nup nanobodies to image their targets within intact NPCs, we initially modified them with NHS ester fluorophores. We found, however, that such NHS-labeled nanobodies performed remarkably poorly, in particular when far-red fluorophores were used. As documented by the specific examples below, none of the NHS-labeled nanobodies had sufficient probe quality to allow acquisition of STORM images. We therefore explored alternative and more reliable nanobody-labeling strategies.\n\nOne possibility was to label nanobodies at engineered (and reduced) cysteines with maleimides. This, however, posed the risk of modifying also the scaffold cysteines of the IgG-fold, which inevitably would cause an irreversible unfolding of the nanobodies.\n\nTo address this issue, we incubated reduced nanobodies with biotin-PEG23-maleimide (Figure 4). After unfolding by urea, the scaffold cysteines became modified at either 37\u00b0C, 23\u00b0C, or 0\u00b0C. In native buffer, however, modification was quantitative only at 37\u00b0C, pointing to a transient exposure of the otherwise buried scaffold cysteines ('thermal breathing'). Importantly, they remained fully protected at 0\u00b0C, predicting that maleimide-labeling on ice would be fully selective for engineered surface cysteines.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/11349/elife-11349-fig4-v4.jpg)\n\n**Figure 4.:** Indicated nanobodies, expressed in the reductive cytoplasm of Escherichia coli BLR, were incubated at the indicated temperatures in the presence or absence of a two-fold molar excess of biotin-PEG23-maleimide (1.45 kDa) in buffer. The addition of 6 M urea served as a positive control for maleimide modification of the internal cysteines upon chemical unfolding.\n\nIn order to better guide cysteine placement in the nanobody framework, we solved the crystal structure of the anti-Nup98 nanobody TP377 in complex with the globular Nup98 NPC anchor domain (residues 716\u2013866) at 1.9\u2009\u00c5 resolution (Figure 5a, Table 1). TP377 contacts its target through all three CDR loops and does not block the absolute Nup98 C-terminus, which anchors Nup98 via Nup96 or Nup88 to the NPC scaffold (Hodel et al., 2002; Griffis et al., 2003; Stuwe et al., 2012). The internal disulfide bond-forming cysteines Cys22 and Cys96 of TP377 are reduced in the crystal structure.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/11349/elife-11349-fig5-v4.jpg)\n\n**Figure 5.:** (a) Crystal structure of the Nup98 NPC anchor domain (Nup98716-866, blue) in complex with the anti-Nup98 nanobody TP377 (beige). The three antigen-binding loops (CDR I-III) of TP377 are colored red. (NT = N-terminus, CT = C-terminus) (b) Tested positions of engineered cysteines (yellow) illustrated for nanobody TP377. Antigen-binding loops are shown in red. (c) Quantitative labeling of TP377 with Alexa Fluor 488 maleimide. TP377 with cysteines at the indicated positions can be quantitatively labeled with Alexa Fluor 488 maleimide. Labeling introduces a size shift in SDS\u2013PAGE. Detection was either by Coomassie\u00a0staining or by in-gel fluorescence. (3xCys = NT-Cys + S7C + S71C) (d) Digitonin-permeabilized Xenopus XL177 cells were incubated with 10 nM TP377 carrying a single Alexa Fluor 647 molecule at the indicated position. Cells were then washed, fixed, and counterstained with DAPI (DNA). A characteristic nuclear rim stain indicates labeling of NPCs. Note that labeling of TP377 very close to its antigen-binding loops did not perturb binding.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11349/elife-11349-fig5-figsupp1-v4.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Amino acid sequence of anti-Nup98 nanobody TP377 illustrating the positions chosen for mutation to cysteine (red). (b) SDS\u2013PAGE and Coomassie\u00a0staining showing the expression and purification of TP377 with three engineered cysteines (NT-Cys, Ser7Cys, CT-Cys) in the Escherichia coli cytoplasm. Single-step purification was performed using Ni2+ chelate affinity chromatography and cleavage using the bdNEDP1 protease. (c) Relative affinity of TP377 with different labeling ratio to Nup98716-866. GFP-tagged TP377 was incubated with biotinylated His14-Avi-bdSUMO-tagged Nup98716-866 immobilized on Streptavidin agarose. For competition, unlabeled, 1x or 3x Alexa Fluor 488-labeled TP377 was added in equimolar amount or fivefold molar excess relative to GFP-TP377. Bound nanobodies were eluted by bdSEN1P cleavage and analyzed by SDS\u2013PAGE followed by Coomassie\u00a0staining.\n\n**Table 1.**\n Crystallographic data collection and refinement statistics\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Nup98\u2022Nb TP377 complexa</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data collection</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P41</td>\n    </tr>\n    <tr>\n      <td>Cell dimensions</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>a, b, c (\u00c5)</td>\n      <td>66.59, 66.59, 87.90</td>\n    </tr>\n    <tr>\n      <td>\u03b1, \u03b2, \u03b3 (\u00b0)</td>\n      <td>90.00, 90.00, 90.00</td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>47.00-1.90 (1.95-1.90)b</td>\n    </tr>\n    <tr>\n      <td>Rsym or Rmerge</td>\n      <td>0.128 (&gt;1)b</td>\n    </tr>\n    <tr>\n      <td>I / \u03c3I</td>\n      <td>27.7 (2.6)b</td>\n    </tr>\n    <tr>\n      <td>Completeness (%)</td>\n      <td>99.5 (98.7)b</td>\n    </tr>\n    <tr>\n      <td>Redundancy</td>\n      <td>27.4 (27.4)b</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Resolution (\u00c5)</td>\n      <td>47.00-1.90</td>\n    </tr>\n    <tr>\n      <td>No. reflections</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Measured</td>\n      <td>823105</td>\n    </tr>\n    <tr>\n      <td>Unique</td>\n      <td>30218</td>\n    </tr>\n    <tr>\n      <td>Rwork/Rfree</td>\n      <td>0.167 / 0.196</td>\n    </tr>\n    <tr>\n      <td>No. atoms</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>2176</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>145</td>\n    </tr>\n    <tr>\n      <td>Wilson B-factor (\u00c52)</td>\n      <td>27.4</td>\n    </tr>\n    <tr>\n      <td>R.m.s. deviations</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.010</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>1.08</td>\n    </tr>\n    <tr>\n      <td>Ramachandran statistics (%)</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Favored</td>\n      <td>98.0</td>\n    </tr>\n    <tr>\n      <td>Allowed</td>\n      <td>2.0</td>\n    </tr>\n    <tr>\n      <td>Outliers</td>\n      <td>-</td>\n    </tr>\n  </tbody>\n</table>\n\n_aA single crystal was used for data collection.bValues in parentheses are for highest resolution shell._\n\nWe next mutated solvent-exposed small residues (Gly, Ser, and Ala) at six alternative positions of the nanobody scaffold to cysteines (Figure 5b; Figure 5\u2014figure supplement 1a). We found that not only all individual mutants, but also nanobodies with up to three ectopic surface cysteines were well expressed and highly soluble in E. coli (Figure 5\u2014figure supplement 1b). Moreover, cysteines on all six positions on our model anti-Nup98 nanobody TP377 could be quantitatively labeled with maleimide fluorescent dyes (Figure 5c). Even nanobodies carrying three fluorophores were readily obtained. Importantly, competitive binding assays indicated that the introduction of ectopic cysteines and their modification did not impair binding to the Nup98 target (Figure 5\u2014figure supplement 1c). Based on the crystal structure, we estimate that fluorophores attached via an N-terminal cysteine or A75C to anti-Nup98 nanobody TP377 can be as close as ~2 nm to the target Nup98.\n\n### Immunofluorescence with site-specifically labeled nanobodies\n\nIn order to test nanobodies in imaging, we grew Xenopus laevis XL177 cells on coverslips, digitonin-permeabilized their plasma membranes, incubated them with low nanomolar concentrations (1\u201310 nM) of labeled nanobody, and fixed them after several washing steps. In this workflow, even nanobodies with fixation-sensitive epitopes could bind their target.\n\nWe first tested anti-Nup98 nanobody TP377 carrying a single Alexa Fluor 647 maleimide at the six alternative positions (Figure 5d). In confocal laser scanning microscopy, all variants produced a very bright punctuate nuclear rim staining of XL177 cells, characteristic for NPCs, against a very low background.\n\nCombining minimal label displacement with ease of cloning, we routinely labeled our nanobodies via an N-terminal cysteine. This way, all chosen NPC targets (Nup98, Nup93, Nup85 and Nup155) could be visualized with specific nanobodies carrying a single N-terminal Alexa Fluor 647 maleimide (Figure 6a). Despite the presence of only one dye molecule per nanobody, we again obtained very bright nuclear rim stains with very low background. Staining of Nup155 required a prior permeabilization with Triton X-100, probably because it is located in close proximity to the pore membrane and is likely buried by other NPC scaffold components (Eisenhardt et al., 2014; Mitchell et al., 2010).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/11349/elife-11349-fig6-v4.jpg)\n\n**Figure 6.:** (a) Xenopus XL177 cells were digitonin-permeabilized and stained with anti-Nup nanobodies carrying a single N-terminal Alexa Fluor 647 maleimide dye before fixation and DAPI staining. A characteristic nuclear rim stain indicates labeling of NPCs. A nanobody raised against Escherichia coli Maltose-binding protein (MBP) served as a negative control. (b) Labeling of the anti-GFP nanobody Enhancer with Alexa Fluor 647 NHS ester at lysines or at three engineered cysteines using Alexa Fluor 647 maleimide. Labeling introduces a size shift in SDS\u2013PAGE. Detection was either by Coomassie\u00a0staining or by in-gel fluorescence. (c) Staining of HeLa cells stably expressing GFP-tagged Nup153 with the anti-GFP nanobody labeled via NHS ester or maleimide Alexa Fluor 647. The nanobody TP377, raised against Xenopus (x)Nup98, does not cross-react with human Nup98 and served as a negative control. The NHS-labeled GFP nanobody produced strong background-staining, while its maleimide-labeled version yielded bright nuclear rim stains. (d) Staining of XL177 cells with nanobodies labeled with Alexa Fluor 647 either at their internal lysine residues (NHS ester dye) or via engineered cysteines (maleimide dye). Note that the widely used anti-GFP nanobody Enhancer produces significant background staining when labeled via lysines but not when using engineered cysteines and a maleimide dye. All nanobodies were used at a concentration of 10 nM and all images were obtained under identical settings. DOL, degree of labeling.\n\nFor a direct comparison of the NHS chemistry for nanobody-labeling at lysines with maleimide-labeling at engineered surface cysteines, we chose Alexa Fluor 647 as a fluorophore and the widely used anti-GFP nanobody Enhancer (Kirchhofer et al., 2010) as an example (Figure 6b). When a HeLa Nup153-GFP cell line was stained, we observed a brilliant NPC signal for the Alexa Fluor 647 maleimide-labeled 'Enhancer', which perfectly coincided with the (weaker) GFP signal, and an extremely low background (Figure 6c). In contrast, when this nanobody was labeled at lysines with Alexa Fluor 647 NHS ester, it produced strong nucleoplasmic and cytoplasmic background staining, which essentially obscured the specific signal. The degree of labeling\u00a0(DOL) was the same for both variants.\n\nWhen the Alexa Fluor 647 NHS-labeled 'Enhancer' was applied to XL177 cells (which lack a GFP-target), we again observed very strong background (Figure 6d). In contrast, its Alexa Fluor 647 maleimide-labeled counterpart behaved like a perfect negative control. High background-staining was also observed with the Alexa Fluor 647 NHS-labeled anti-Nup98 nanobody TP377. The anti-Nup93 nanobody TP179 contains a lysine in CDR II and even lost antigen-binding after NHS modification. In contrast, the Alexa Fluor 647 maleimide-labeled anti-Nup98 and anti-Nup93 nanobodies behaved as perfect imaging reagents and gave crisp NPC signals against very low backgrounds. This comparison indicated that modification of (multiple) framework lysines likely creates hydrophobic patches that favor unspecific binding and aggregation. This is certainly sequence context-dependent and milder when reducing the labeling density. However, we did not observe any such complications when labeling nanobodies via engineered cysteines.\n\n### Super-resolution imaging with site-specifically labeled nanobodies\n\nDue to a diameter well below the diffraction limit, NPCs have been studied by super-resolution microscopy using either indirect immunofluorescence (L\u00f6schberger et al., 2012; G\u00f6ttfert et al., 2013) or the anti-GFP nanobody (Szymborska et al., 2013). Site-specific fluorescent labeling of nanobodies via cysteines now reliably yields 'renewable' high-quality imaging reagents that can bring fluorophores very close to their target. We therefore tested the performance of our anti-Nup nanobodies in STORM imaging (Rust et al., 2006) of XL177 cell NPCs (Figure 7a\u2013c).\n\nInterestingly, singly Alexa Fluor 647 maleimide-labeled anti-Nup nanobodies were sufficient to produce enough localizations to reconstruct very detailed views of individual NPCs, where multiple copies of the imaged target proteins (Nup98, Nup93, and Nup155) appear arranged around the central NPC channel (Figure 7c). A whole nucleus stained with the model anti-Nup98 nanobody TP377 is shown in Figure 7a and magnified views of the nuclear envelope stained with anti-Nup93 and anti-Nup155 nanobody are shown in Figure 7b. Even after applying higher concentrations (~100\u2013300 nM) of nanobody to saturate binding sites, we achieved very low background binding, indicating well-behaved imaging reagents.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/11349/elife-11349-fig7-v4.jpg)\n\n**Figure 7.:** (a) STORM image of an entire XL177 cell nucleus stained with anti-Nup98 nanobody TP377 carrying a single N-terminal Alexa Fluor 647 maleimide. (b) Close-up view of XL177 cell nuclear envelope regions stained with anti-Nup93 nanobody TP179 (upper panel) or an anti-Nup155 nanobody (lower panel) containing multiple NPCs. (c) STORM images of individual NPCs stained with indicated anti-Nup nanobodies.\n\n### Rapid mapping of conformational epitopes via crosslinking mass spectrometry\n\nSite-specifically labeled nanobodies enabled us to visualize their targeted epitope with high precision. Mapping the corresponding 'visible' epitopes would therefore reveal surface areas of the target that are accessible in a cellular environment. The complementary 'invisible' epitopes on the other hand, would hint to regions that are buried in interaction interfaces.\n\nEpitope-mapping strategies based on binding assays to truncated or mutated antigens, co-crystallization or NMR observation of chemical shift perturbations are, however, not suited for high-throughput analysis or hardly applicable to conformational epitopes on protein complexes. We therefore considered crosslinking nanobodies to their target followed by sequencing of the crosslinked target peptide via mass spectrometry as a rapid epitope mapping strategy. Here, a crucial aspect is that a shorter crosslinker will provide a better spatial resolution, provided crosslinkable groups are in reach. As cysteines are by far the best crosslinkable groups, and because we had already placed cysteines at the nanobody surface in close proximity to bound targets, we assessed their suitability for epitope-mapping.\n\nAs a proof of principle, we crosslinked two anti-Nup93 nanobodies, with or without an N-terminal cysteine, to Nup93 using either an NH2-to-NH2 (Bis-NHS; BS3; 11.4\u00c5) or an SH-to-NH2 (Mal-NHS; BMPS; 5.9\u00a0\u00c5) crosslinker (Figure 8a). For both anti-Nup93 nanobodies (TP179 and TP324), exclusive amine-crosslinking was very inefficient and produced only few nanobody\u2022Nup93 adducts that run at higher molecular weight in SDS\u2013PAGE. However, combining the N-terminal cysteine on the nanobody with the (far shorter) heterobifunctional crosslinker, produced very prominent nanobody\u2022Nup93 crosslinks. Their position was then clearly identifiable by LC-MS/MS (Figure 8b\u2013c, Figure 8\u2014figure supplement 1).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/11349/elife-11349-fig8-v4.jpg)\n\n**Figure 8.:** (a) Crosslinking of two different anti-Nup93 nanobodies (TP179 and TP324) to Nup93 using amine-to-amine ('Bis-NHS'; BS3; 11.4 \u00c5 linker length) or thiol-to-amine ('Mal-NHS'; BMPS; 5.9 \u00c5 linker length) crosslinking reagents. The combination of the very short Mal-NHS crosslinker with an engineered cysteine close to the antigen-binding loops provided for both nanobodies by far the highest yield of crosslinked nanobody\u2022Nup93 adduct. (b) List of identified crosslinked peptides involving Nup93 lysines and Cys-TP179 or Cys-TP324. The crosslinked amino acids are highlighted in red (see also Figure 8\u2014figure supplement 1). (c) Crosslinked lysines of Nup93 to the N-terminal cysteine on anti-Nup93 nanobodies TP179 (red) or TP324 (blue) are depicted on a structural model of Nup93168-end generated by I-TASSER (Zhang, 2008). Based on the orthologous yeast crystal structures (Jeudy and Schwartz, 2007; Schrader et al., 2008), Nup93 is predicted to form a similar J-shaped structure (color gradient: NT = N-terminus in blue to CT = C-terminus in orange). Whereas TP179 binds to the central portion, TP324 binds to the C-terminus of Nup93.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11349/elife-11349-fig8-figsupp1-v4.jpg)\n\n**Figure 8\u2014figure supplement 1.:** The spectra with the best pLink score are shown for the crosslinks between: (a) TP179 Cys3 - Nup93 Lys607, (b) TP179 Cys3 - Nup93 Lys612, (c) TP324 Cys3 - Nup93 Lys762, (d) TP324 Cys3 - Nup93 Lys765, and (e) TP324 Cys3 - Nup93 Lys782. The peaks of the b and y ions are labeled with their charge stages and m/z values. The b and y ions of the longer peptide in a crosslink pair are highlighted in magenta and red, respectively, and the b and y ions of the shorter peptide are highlighted in green and blue, respectively. Fragment ions with superscript 'x' represent those fragment ions with the other peptide crosslinked.\n\nFor a better visualization of the positions of the identified nanobody crosslinks we generated a structural model of Nup93168-end using I-TASSER (Zhang, 2008), based on structures of its yeast ortholog (Jeudy and Schwartz, 2007; Schrader et al., 2008) (Figure 8c).\n\nWe used the anti-Nup93 nanobody TP179 in STORM imaging of Nup93 within the NPC and could now map its accessible epitope. TP179 binds to the middle region of the J-shaped structure of Nup93 surrounding residues K607 and K612 (Figure 8\u2014figure supplement 1a\u2013b), while TP324 has a C-terminal epitope surrounding lysines K762, K765, and K782 of Nup93 (Figure 8\u2014figure supplement 1c\u2013e). The C-terminal region of Nup93 was previously shown to be essential for NPC assembly (Sachdev et al., 2012). Accordingly, anti-Nup93 nanobody TP324 that targets the C-terminus of Nup93 does not stain intact NPCs (data not shown), but rather represents a good candidate to selectively disrupt NPC assembly.\n\n## Discussion\n\nWe developed a well-characterized toolset of high-affinity nanobodies against the vertebrate NPC and established novel strategies to use these nanobodies to natively purify large NPC subcomplexes and to reliably label them with fluorophores for precise super-resolution localization. While these nanobodies will be very valuable to the nucleocytoplasmic transport field, we expect the presented strategies to be widely applicable to all nanobodies.\n\nNanobodies against a single epitope of a larger protein complex now allow a native single-step purification of the entire complex, and thus a subsequent structural and functional analysis. This is certainly especially useful for complexes that are not directly accessible to recombinant production. Furthermore, nanobody-purified endogenous complexes can be used as antigens for another round of immunization, and binders to all complex components can then be selected from the successive nanobody library. Mapping epitopes via crosslinking mass spectrometry will become especially important when selecting nanobodies against such complex antigens (like large subcomplexes, whole organelles or vesicles) that cannot be made recombinantly. Combining these strategies therefore has the potential to significantly increase throughput in the selection and identification of renewable binders to eukaryotic proteomes (Colwill et al., 2011).\n\nFinally, we introduced a method for a reliable fluorescent labeling of nanobodies using surface cysteines and maleimide chemistry. This way, we obtained well-behaved imaging reagents that can bring fluorescent dyes as close as 1\u20132 nm to their target. Maleimide-labeled nanobodies consistently recognized their antigens far better and produced less background than the corresponding NHS-modified variants. NHS esters have the additional disadvantage that they react not only with amino groups, but also rapidly hydrolyze in aqueous buffers. This makes it difficult to adjust labeling densities and requires adding them in substantial molar excess. In contrast, maleimide-labeling of exposed cysteines is quantitative even with just stoichiometric amounts of labeling reagent and thus far more economical.\n\nSite-specific and quantitative fluorescent labeling of nanobodies is going to be crucial for super-resolution microscopy aiming at a detailed structural analysis or determination of absolute protein copy numbers. It also allows predicting the effective label displacement, a fact that will be especially important when applying particle averaging techniques to localization microscopy data (precision of <1 nm reported by Szymborska et al., 2013). Because of its well-defined dimension and symmetric structure, the NPC has become a benchmark for many new advancements of super-resolution microscopy (Schermelleh et al., 2008; Szymborska et al., 2013; G\u00f6ttfert et al., 2013). The anti-NPC nanobodies described here excelled in super-resolution imaging; they can be renewably produced in high yields and are therefore ideal labeling reagents for such benchmark studies.\n\n## Methods\n\n### Alpaca immunization\n\nTwo female alpacas, held at the Max Planck Institute for Biophysical Chemistry, were immunized with 0.5\u20131.0 mg protein or protein complex at 3\u20134 week intervals for 3\u20134 times. The antigens had been expressed recombinantly in E. coli, affinity-purified and mixed with a mild squalen/\u03b1-tocopherol/Tween-80-based adjuvant (oil-in-water emulsion) before immunization. In detail, we immunized one animal with xlNup93168-end, xtNup98716-866,\u00a0and the xlNup62342-547\u2022Nup58267-490\u2022Nup54146-535 complex (Chug et al., 2015) and another animal with full length xlNup155 and full length xlNup85.\n\n### Nanobody library generation and phage display selection\n\nFour days after the final boost, 100 ml of blood were collected from the immunized animal. Peripheral blood lymphocytes were isolated by density gradient centrifugation using Leucosep tubes (Greiner Bio-One, Austria) and total RNA was prepared according to Chomczynski and Sacchi (Chomczynski and Sacchi, 2006). For library generation, cDNA was generated from 30 \u00b5g of total RNA using the Superscript III kit (Life Technologies) with an IgG-CH2 domain specific primer, pCALL002 (Conrath et al., 2001). For VHH domain amplification, a nested PCR was performed. The first PCR product was obtained using the primers AlpVh-L, AlpVHHR1 and AlpVHHR2 (Maass et al., 2007), which anneal in the leader sequence and the VHH-specific hinge regions. The first PCR product served as a template for amplification with VHH framework 1 and framework 4-specific primers (PT411: AATATAGGATCCCAAGTGCAGCTCGTRGAGTCTGG and 38: GGACTAGTGCGGCCGCTGGAGACGGTGACCTGGGT) introducing BamHI and NotI restriction sites (underlined), respectively. A previous study (Rothbauer et al., 2006) used NcoI, which according to our sequencing data very frequently cleaves within the CDR I-coding region, resulting in many truncated non-functional nanobody sequences. The BamHI and NotI digested VHH immune library was then cloned into a pHEN4-derived phagemid (Arbabi Ghahroudi et al., 1997) and used to transform E. coli TG1 (Lucigen). A library of 2\u20133\u00a0x\u00a0108 individual transformants was infected with helper phage M13KO7 (New England Biolabs) and VHH-displaying bacteriophages were produced overnight while shaking at 37\u00b0C. Bacteriophages were purified from the culture supernatant by two successive precipitation steps with 4% PEG-8000, 500 mM NaCl. The pellets were gently resuspended in 50 mM Tris/HCl pH 7.5, 300 mM NaCl and the obtained phage stock solution used directly for selection. Panning was performed using recombinant antigens carrying an Avi-tag that was biotinylated in E. coli by co-expression of biotin ligase BirA (Beckett et al., 1999; Schatz, 1993). For the first round of panning, biotinylated antigen was pre-immobilized on Dynabeads Streptavidin T1 (Life Technologies). During later rounds, phages were incubated with biotinylated antigen in solution and then retrieved by adding magnetic beads. After thorough washing, bound phages were eluted and the obtained binders were characterized. Typically three rounds of panning with decreasing antigen concentration (e.g. 100 nM, 20 nM, and 1 nM) and increasingly thorough washing were performed.\n\n### Expression and purification of nanobodies\n\nNanobodies with protease-cleavable affinity tags or engineered cysteines were routinely expressed in the cytoplasm of E. coli BLR (BL21 derivative; Novagen) or E. coli SHuffle Express (New England Biolabs). A 50 ml preculture (Terrific Broth or 2YT medium containing 50 \u00b5g/ml Kanamycin) was grown overnight at 28\u00b0C. The culture was then diluted with fresh medium to 250 ml. After 1\u2009h of growth at 25\u00b0C, protein expression was induced for 3\u20135\u2009h by adding 0.2 mM IPTG. After addition of 1 mM PMSF and 10 mM EDTA to the culture, bacteria were harvested by centrifugation, resuspended in lysis buffer (50 mM Tris/HCl pH 7.5, 300 mM NaCl, 20 mM imidazole) and then lysed by sonication. The lysate was cleared by ultracentrifugation for 1.5\u2009h (T647.5 rotor, Sorvall, 38,000 rpm) at 4\u00b0C.\n\nFor native affinity purification, nanobodies were fused to an N-terminal His14-Avi peptide (GLNDIFEAQKIEWHE)-(GlySer)9-scSUMOStar-(GlySer)9-tag and co-expressed with the biotin ligase BirA (Beckett et al., 1999; Schatz, 1993) in the presence of ~20 \u00b5g/ml biotin in the medium. Following lysis, nanobodies were purified by Ni2+ chelate affinity chromatography. After washing with lysis buffer, the bound protein was eluted with 50 mM Tris/HCl pH 7.5, 300 mM NaCl, 500 mM imidazole. Alternatively, the purified enzyme BirA was added after binding the nanobody to a Ni2+ chelate affinity resin for on-column biotinylation in Bio-buffer (50 mM Tris/HCl pH 7.5, 100 mM NaCl, 10 mM ATP, 12.5 mM MgCl2, 250 \u00b5M biotin). For this, 1 \u00b5M BirA in twofold\u00a0resin bed volume of\u00a0Bio-buffer was incubated with resin under constant mixing for 2\u2009h at room temperature. Nanobodies with engineered cysteines carried an N-terminal His14-bdNEDD8-tag and were affinity purified via Ni2+ chelate affinity chromatography. After washing, untagged nanobodies were eluted by cleavage with the bdNEDP1 protease (Frey and G\u00f6rlich, 2014).\n\n### Native purification of protein complexes from Xenopus egg extract\n\nInterphase low-speed supernatant (LSS) extract was prepared from Xenopus eggs essentially as described before (Blow and Laskey, 1986) and stored at -80\u00b0C. LSS was thawed, diluted fourfold in S250 buffer (20 mM HEPES pH 7.5, 90 mM KAc, 2 mM MgAc, 250 mM sucrose), supplemented with 5 mM ATP and 5 \u00b5g/ml Cytochalasin B and then centrifuged in Seton tubes (SETON Scientific) for 1\u2009h at 235,000\u2009g in a Sorvall Discovery M120 SE ultracentrifuge (S52ST rotor). The lipid- and membrane-free high-speed supernatant (HSS) extract was retrieved by puncturing the side of the tube with a needle and served as starting material for affinity purifications.\n\nBiotinylated nanobodies were immobilized on magnetic Dynabeads MyOne Streptavidin T1 (Life Technologies) in S250 buffer for 30\u2009min at 4\u00b0C. Remaining biotin-binding sites on Streptavidin were subsequently blocked by incubation with 50 \u00b5M Biotin-PEG-COOH (Iris Biotech) in S250 buffer for 15\u2009min. The blocked beads were then added to Xenopus egg extract (= HSS) for 1\u2009h at 4\u00b0C. Using a magnetic rack, the beads were separated from extract and washed twice in S250 buffer, followed by two washes in 50 mM Tris/HCl pH 7.5, 300 mM NaCl, 0.05% Tween-20. Nanobody\u2022target protein complexes were then eluted by adding 0.5 \u00b5M SUMOStar protease (Liu et al., 2008) in 50 mM Tris/HCl pH 7.5, 300 mM NaCl for 45\u2009min at 4\u00b0C.\n\n### Electron microscopy sample preparation and image processing\n\nDirectly after elution, nanobody-purified Nup93\u2022Nup188 and Nup93\u2022Nup205 complexes were subjected to the GraFix protocol (Kastner et al., 2008) for complex stabilization. Briefly, ~200 pmoles of nanobody-purified complexes (~140 \u00b5l) were loaded onto a 4.2 ml 5% \u2013 20% (w/v) sucrose-gradient supplemented with 0.1% (v/v) glutaraldehyde in the 20% fraction. The gradient was run in a TH-660 ultra-centrifuge rotor (Thermo Scientific; 34,000 rpm, 16\u2009h, 4\u00b0C) and then fractionated into 200 \u00b5l fractions. The chemically stabilized molecules from the peak fraction were adsorbed to a thin carbon film by surface flotation for 1\u2009min and negatively stained in uranyl formate solution. Images were acquired at room temperature at a magnification of 117,333\u00d7 on a 4k x 4k CCD camera (TVIPS GmbH) using twofold pixel binning (2.5\u2009\u00c5/pixel) in a Philips CM200 FEG electron microscope (Philips/FEI) operated at 160 kV acceleration voltage. From the images, 8139 particles were selected (Busche, 2013) and subjected to contrast transfer function correction (Sander et al., 2003). Subsequently, an initial alignment-by-classification (Dube et al., 1993) step followed by iterative multi-reference alignment and multivariate statistical analysis were performed using IMAGIC (van Heel et al., 1996), resulting in 2D class averages.\n\n### Site-specific fluorescent labeling of nanobodies with engineered cysteines\n\nPurified nanobodies with engineered cysteines were freshly reduced by adding 15 mM TCEP for 10\u2009min on ice. Using PD-10 desalting columns (GE Healthcare), the buffer was exchanged to Maleimide-labeling buffer (100 mM potassium phosphate pH 6.4, 150 mM NaCl, 1 mM EDTA, 250 mM sucrose) that had been vacuum degased and purged with argon. For a standard labeling reaction, 10 nmoles of nanobody (concentration 75\u2013150 \u00b5M) were rapidly mixed with 12 nmoles of Alexa Fluor 647 C2 Maleimide (Life Technologies) (from a 20 mM stock in DMF), neutralized to pH 7.5 with K2HPO4 and incubated for 1.5\u2009h on ice. Free dye was separated from labeled nanobody by buffer exchange to Maleimide labeling buffer on PD10 desalting columns. Quantitative labeling was quality controlled by calculating the degree of labeling (DOL), which defines the molar ratio of dye to protein, as well as by SDS\u2013PAGE and Coomassie\u00a0staining. In order to obtain nanobodies with three fluorophores, we recommend introducing cysteines at the N-terminus, Ser7 and Ala75 (other amino acids can occur at these positions in different nanobodies) of a given nanobody sequence to achieve the smallest possible label displacement. For easy cloning, three cysteines can also be introduced with primers in a single PCR reaction (positions: N-terminus and Ser7 in the forward primer and at the C-terminus with the reverse primer).\n\nFor Alexa Fluor 647 NHS-labeling, 10 nmoles of nanobody (concentration 75\u2013150 \u00b5M) were incubated with an eightfold molar excess of dye (20 mM stock in DMF) in 100 mM sodium bicarbonate pH 7.8, 300 mM NaCl for 1\u2009h at 23\u00b0C. Subsequently, the reaction was quenched and free dye was separated by buffer exchange to 50 mM Tris/HCl pH 7.5, 300 mM NaCl, 250 mM sucrose on PD10 desalting columns.\n\n### Immunofluorescence with fluorescent nanobodies\n\nXenopus laevis XL177 epithelial cells (Miller and Daniel, 1977; Ellison et al., 1985) were grown on coverslips at 27\u00b0C with 5% CO2 in Xenopus culture medium: (25% v/v water, 10% fetal bovine serum, 65% DMEM high glucose medium containing pyruvate and glutamine, and 50 U/ml penicillin + 50 \u00b5g/ml streptomycin). Alternatively Xenopus laevis A6 cells (#ATCC CCL-102 TM) can be used. Cells were pre-fixed for 30 s with 2.4% (w/v) paraformaldehyde in Transport buffer (TRB) (20 mM HEPES pH 7.5, 5 mM MgAc, 110 mM KAc, 1 mM EGTA, 250 mM sucrose) to prevent detachment of cells from the coverslips and briefly washed twice with TRB. The cells were then permeabilized for 8\u2009min on ice with pre-chilled TRB containing 25 \u00b5g/ml Digitonin. Following two washes with TRB + 1% (w/v) Bovine Serum Albumin (BSA) for 5\u2009min each, the cells were incubated with 1\u201310 nM of fluorescent nanobody for 15\u2009min on ice. Subsequently, the cells were washed thrice for 5\u2009min with TRB + 1% (w/v) BSA at room temperature and then fixed for 10\u2009min with 3% (w/v) paraformaldehyde in TRB. The nuclear envelopes of the fixed cells were afterwards permeabilized with 0.3% Triton X-100 for 3\u2009min, washed with 1xPBS and DNA was stained by addition of 2 \u00b5g/ml DAPI in 1xPBS for 10\u2009min. The coverslips were mounted in SlowFade Gold or SlowFade Diamond Antifade Mountant (Life Technologies) and analyzed by confocal laser-scanning microscopy on a Leica SP5 microscope.\n\n### STORM imaging of nanobody-stained XL177 cells\n\nIn order to obtain the highest labeling efficiency, XL177 cells were stained with Alexa Fluor 647 maleimide-conjugated nanobodies initially after a short pre-fixation and digitonin permeabilization of the plasma membrane. The cells were subsequently fixed, the nuclear envelope was permeabilized with Triton X-100 and labeled nanobodies were added again. The optimal concentration of each nanobody for both steps was titrated before, using confocal microscopy. All STORM imaging experiments were carried out in MEA imaging buffer as previously described (Dempsey et al., 2011). The buffer consisted of 50 mM Tris/HCl pH 8.0, 10 mM NaCl, 10% glucose (w/v), 10 mM \u03b2-mercaptoethylamine pH 8.5 (Sigma, 30070), and 1% of an enzymatic oxygen scavenger system stock solution, added to the buffer immediately prior to use. The oxygen scavenger stock solution was prepared by mixing glucose oxidase (10 mg, Sigma, G2133) with catalase (50 \u00b5l, 20 mg/ml\u22121, Sigma, C30) in 1x PBS (200 \u00b5l), and centrifuging the mixture at 13,000 rpm for 1\u2009min.\n\nSTORM imaging measurements were performed using a custom-built STORM microscope, based on an inverted fluorescence microscope stand (Olympus IX71) as previously described (Dempsey et al., 2011). The microscope was fitted with a 100x oil-immersion objective lens (Olympus UPLANSAPO, NA1.4), which enabled efficient detection of single fluorophores. The objective lens was mounted on a piezo-positioner (Piezo Jena), which enabled fine focus adjustment. A custom-built focus-lock system was used to maintain a stable focus during data acquisition. For STORM imaging, photo-switchable Alexa Fluor 647 was excited at 642 nm, and in some measurements, the sample was also exposed to 405 nm light to increase the activation rate of switching. A fiber laser (MPB Communications, 2RU-VFL-P-1000-642) was used to generate 642 nm light. The laser illumination was configured such that the illumination angle could be varied between an epi-illumination geometry and a total internal reflection (TIRF) illumination mode. Typically, the sample was illuminated with oblique illumination (not TIRF) for reduced background signal. Fluorescence emission of Alexa Fluor 647 was detected using an EMCCD camera (Andor Ixon DU860). STORM data analysis was carried out using custom analysis software, as previously described (Bates et al., 2007).\n\n### Crystallization and structure determination\n\nThe Xenopus Nup98716-866 NPC anchor domain and the anti-Nup98 nanobody TP377 were expressed with an N-terminal His14-bdSUMO-tag and purified using Ni2+ chelate affinity chromatography. Crystallization required an exchange of the surface-exposed cysteine 821 of Nup98 to serine. Highly pure untagged protein was cleaved off the column using 50 nM bdSEN1P protease (Frey and G\u00f6rlich, 2014) in 20 mM Tris, 20 mM NaCl. The complex was formed by incubating equimolar amounts of Nup98716-866 and TP377 o/n at 4\u00b0C and then subjected to anion exchange chromatography using a HiTrap Q HP 5 ml column (GE Healthcare). The eluted complex was then further purified using gel filtration on a Hi-Load Superdex 75 16/60 column equilibrated in 20 mM Tris/HCl pH 7.5, 50 mM NaCl. The complex was crystallized by the vapor diffusion method in sitting drops. 60 nl of a reservoir solution containing 45% (w/v) Pentaerythritol propoxylate (17/8 PO/OH; Jena Bioscience) and 100 mM Tris pH 8.5 was mixed with 60 nl of the prepared protein complex solution concentrated to 25 mg/ml. Crystals grew within 1 day at 20\u00b0C and were flash-frozen in liquid nitrogen without additional cryo-protection. Diffraction data were collected at 100\u2009K with a wavelength of 0.9787\u2009\u00c5 on the beamline PXII at the Swiss Light Source (SLS) at the Paul Scherrer Institute, Switzerland. Crystals belonged to the space group P41 and diffracted to 1.9\u2009\u00c5 (see Table 1). For structure determination, molecular replacement was performed in PHASER with a published nanobody structure (PDB 4KRN; Schmitz et al., 2013) as a search model. The resulting electron density map was used for automated model building in Phenix (Adams et al., 2010).\n\n### Epitope mapping via crosslinking mass spectrometry\n\nAnti-Nup93 nanobodies TP179 or TP324 and Nup93 (~20 \u00b5M each) were incubated on ice for 30\u2009min in Maleimide labeling buffer to allow complex formation. After adding 40 \u00b5M of crosslinking agent, the pH was increased to 7.5 and the reaction was continued for 1\u2009h on ice. The following crosslinkers were used 'Mal-NHS' = BMPS (3-[Maleimido]propionic acid NHS ester, Iris Biotech, CAS #55750-62-4) and 'Bis-NHS' = BS3 (Suberic acid bis[sulfo NHS ester], Life Technologies, CAS #82436-77-9). One-eighth of the reaction was loaded on a SDS\u2013PAGE gel. The band corresponding to crosslinked products was excised and subjected to in-gel trypsin digestion as described (Schmidt and Urlaub, 2009). The peptide fragments were extracted in a solvent system containing 5% acetonitrile (ACN), 0.1% formic acid (FA) to a final volume of 20\u201330 \u00b5l and submitted to liquid chromatography-tandem mass spectrometry (LC-MS/MS) analysis.\n\nFor LC-MS/MS analysis, 6 \u00b5l of the sample solution was injected into a nano-liquid chromatography system (UltiMateTM 3000 RSLCnano system) including a 3 cm \u00d7 150 \u00b5m inner diameter C18 trapping column in-line with a 30 cm \u00d7 75 \u00b5m inner diameter C18 analytical column (both in-house packed with 1.9 \u00b5m C18 material, Dr. Maisch GmbH). Peptides were desalted on the trapping column for 3\u2009min at a flow rate of 10 \u00b5l/min in 95% of mobile phase A (0.1% FA in H2O, v/v) and 5% of mobile phase B (80% ACN and 0.05% FA in H2O, v/v), eluted from the trapping column, and separated on the analytical column using a 43\u2009min linear gradient of 15\u201346% mobile phase B at a flow rate of 300 nl/min. Separated peptides were analyzed on-line with an Orbitrap Fusion mass spectrometer (Thermo Scientific). The 20 most intense precursor ions with charge states 3\u20138 in the survey scan (380\u20131580\u2009m/z scan range) were isolated in the quadrupole mass filter (isolation window 1.6\u2009m/z) and fragmented in the higher energy collisional dissociation (HCD) cell with 30% normalized collision energy. A dynamic exclusion of 20\u2009s was used. Both the survey scan (MS1) and the product ion scan (MS2) were performed in the Orbitrap at 120,000 and 30,000 resolution, respectively. Spray voltage was set at 2.3 kV and 60% of S-lens RF level was used. Automatic gain control (AGC) targets were set at 5\u00d7105 and 5\u00d7104 for MS1 and MS2, respectively.\n\n### Database search for crosslinked peptides\n\nThe raw data of LC-MS/MS analysis were converted to mascot generic format (mgf) files by Proteome Discoverer 2.0.0.802 software (Thermo Scientific). The mgf files were searched against a FASTA database containing the sequences of the nanobody and Nup93 by pLink 1.22 software (Yang et al., 2012) using a target-decoy strategy. Database search parameters included mass accuracies of MS1 <10 ppm and MS2 <20 ppm, carbamidomethylation on cysteine and oxidation on methionine as variable modifications. The number of residues of each peptide on a crosslink pair was set between 4 and 100. A maximum of two trypsin missed-cleavage sites were allowed. The results were obtained with 1% false discovery rate. The identified crosslinks were filtered with a threshold of at least two spectral counts and a pLink score < 10e-4.\n",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "b0632822-93b0-4b42-918e-4b44893fb990",
+      "submission_id": "8b3b6047-93f7-45fe-9153-a2ef1b0983e1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Karsten Weis, ETH Z\u00fcrich , Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.11349.015](https://doi.org/10.7554/eLife.11349.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Nanobodies: site-specific labeling for superresolution imaging, rapid epitope-mapping & native protein complex isolation\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Karsten Weis as Reviewing Editor and Randy Schekman as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThere was consensus amongst the reviewers that the manuscript by Pleiner et al. is an impressive study that will be of great use to many labs in cell biology and biochemistry describing valuable tools and approaches for the specific study of the nuclear pore complex. The reviewers had no major scientific issues with the study but made multiple suggestions to edit the text. For example, the Abstract was considered to be not as strong or clear as the research deserves. Clarity could be achieved with the rewording of the Abstract to stronger emphasize the scientific achievements. Similar points were made for the main the text, too. See, for example, the fourth paragraph of the subsection \u201cSite-specific fluorescent labeling of nanobodies\u201d.\n",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b22ed1de-ebe6-4875-b99b-3234540fb5d5",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C1",
+      "claim": "Nanobodies are single-domain antibodies of camelid origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanobodies are single-domain antibodies of camelid origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about nanobodies, supported by the citation context in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "e6aee59c-0dc7-4428-89de-46ab623619b9",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C2",
+      "claim": "Nanobodies are typically selected by phage display from an immune library.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanobodies represent antigen-binding domains of 'heavy-chain-only' camelid antibodies and are typically selected by phage display from an immune library (Hamers-Casterman et al., 1993; Arbabi Ghahroudi et al., 1997; Muyldermans, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple literature citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "4ebfa12a-b746-4a00-8398-19911dbfa6fc",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C3",
+      "claim": "Nanobodies have a small size of approximately 13 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "Their small size (~13 kDa), monoclonal nature and high specificity are ideal for applications like affinity purification or protein detection and localization (Helma et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated directly in the text with citation support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "9a9b244c-6705-4faa-a26f-72d1a9f740e9",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C4",
+      "claim": "Nanobodies are commonly expressed in Escherichia coli and secreted into the oxidative periplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanobodies are commonly expressed in Escherichia coli and secreted into the oxidative periplasm, where their conserved internal disulfide bond can be formed (Vincke et al., 2012; Pardon et al., 2014; Fridy et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple literature citations describing standard nanobody expression methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "68624215-cd6c-426f-9ece-259191934329",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C5",
+      "claim": "Periplasmic expression of nanobodies often results in low final yield.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it often results in low final yield (Baneyx and Mujacic, 2004), probably due to saturation of the secretion machinery and aggregation of precursor proteins in the cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation and includes speculative reasoning about the mechanism.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "5479cefe-7967-4e6a-a65c-a21d056fad9d",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C6",
+      "claim": "The authors generated nanobodies against constituents of the Xenopus NPC scaffold, including Nup85, Nup93, Nup155, Nup98, and the Nup62\u2022Nup58\u2022Nup54 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to provide new tools for studying NPCs, we generated nanobodies against constituents of the Xenopus NPC scaffold, namely Nup85, Nup93, and Nup155, as well as against Nup98 and the Nup62\u2022Nup58\u2022Nup54 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement of experimental work performed by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "31f72af1-f7cf-4302-948d-ccff291f2d38",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C7",
+      "claim": "High-affinity nanobodies against all NPC targets were readily obtained from alpaca immune libraries by phage display.",
+      "claim_type": "EXPLICIT",
+      "source": "High-affinity nanobodies against all these targets were readily obtained from alpaca immune libraries by phage display.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental outcome of the authors' work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "38755c5b-7af3-4bbb-921a-3dc58c06d070",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C8",
+      "claim": "Anti-NPC nanobodies could be produced in the cytoplasm of various E. coli strains.",
+      "claim_type": "EXPLICIT",
+      "source": "We noticed that these nanobodies could be produced in the cytoplasm of various E. coli strains, as recently reported for other nanobodies (Olichon and Surrey, 2007; Zarschler et al., 2013; Djender et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the authors' experiments, supported by citations to similar findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "72937d9d-89c2-470f-bf96-53b64a14d173",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C9",
+      "claim": "Fusing nanobodies behind a His14-bdNEDD8 module increased their yield dramatically.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that fusing nanobodies behind a His14-bdNEDD8 module (Frey and G\u00f6rlich, 2014) increased their yield dramatically (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1a and cited methodology.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "c97ec320-dfbb-4d36-86bb-9e88ae68f909",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C10",
+      "claim": "Periplasmic secretion resulted in fully oxidized nanobodies.",
+      "claim_type": "EXPLICIT",
+      "source": "While periplasmic secretion resulted in fully oxidized nanobodies, only a fraction of the SHuffle-expressed nanobodies contained a disulfide bond.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the maleimide shift assay results described in the text and shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "cdefb1f6-d967-47ee-aeaf-b761b0c00774",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C11",
+      "claim": "Cytoplasmic expression in E. coli BLR yielded completely reduced nanobodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytoplasmic expression in E. coli BLR yielded completely reduced nanobodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental results from the maleimide shift assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "7b8fda33-3d38-46f5-80aa-ecc81ecb51ce",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C12",
+      "claim": "There was no affinity difference between reduced and disulfide bond-containing anti-Nup98 nanobodies.",
+      "claim_type": "EXPLICIT",
+      "source": "A competition for antigen-binding revealed, however, no affinity difference between reduced and disulfide bond-containing anti-Nup98 nanobodies (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental competition binding assay data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "685b3559-e429-4a87-8fc0-97cfac46117f",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C13",
+      "claim": "Reduced anti-Nup98 and anti-Nup93 nanobodies showed decreased thermostability compared to oxidized versions.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, we observed by differential scanning fluorimetry (Niesen et al., 2007) a decreased thermostability of fully reduced anti-Nup98 and anti-Nup93 nanobodies (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on differential scanning fluorimetry data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "f480a1ca-7eda-403c-8453-6eb6e0a51b00",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C14",
+      "claim": "The melting temperatures of reduced anti-Nup98 and anti-Nup93 nanobodies were 47\u00b0C and 57\u00b0C, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Their melting temperatures of 47\u00b0C and 57\u00b0C are, however, still well above any reasonable incubation temperature for downstream applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the differential scanning fluorimetry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "21af0a81-5419-4bee-8572-c5019ab9b3ee",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C15",
+      "claim": "All nanobodies obtained via phage display against a wide range of antigens could be functionally produced in the E. coli cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "All nanobodies that we obtained via phage display against a wide range of antigens could be functionally produced in the E. coli cytoplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the authors' experimental observations across multiple nanobodies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "7215dd9c-8064-48f4-90b4-f31aa22fc107",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C16",
+      "claim": "The yield of cytoplasmic nanobody expression often exceeds 100 mg per liter of culture.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the yield often exceeds 100 mg per liter of culture and can be up to 30 times higher as compared to periplasmic expression (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental yield measurements shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "ad3e2741-ac6a-4b71-9887-2c364a470937",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C17",
+      "claim": "Cytoplasmic nanobody expression can yield up to 30 times higher than periplasmic expression.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the yield often exceeds 100 mg per liter of culture and can be up to 30 times higher as compared to periplasmic expression (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparative yield data shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "3badb486-7bbf-49ec-aa1f-4fb56ad7a454",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C18",
+      "claim": "The anti-Nup85 nanobody retrieved the approximately 750 kDa nine-membered Y-complex as well as Tpr and Elys as specific but sub-stoichiometric binding partners.",
+      "claim_type": "EXPLICIT",
+      "source": "The anti-Nup85 nanobody retrieved the \u2248750 kDa nine-membered Y-complex as well as Tpr and Elys as specific but sub-stoichiometric binding partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the purification results shown in Figure 2b and mass spectrometry identification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "7c3bfd25-f1db-4715-addb-3018ba31b427",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C19",
+      "claim": "For each nucleoporin complex, the authors achieved approximately 10,000-fold enrichment within a single native purification step.",
+      "claim_type": "EXPLICIT",
+      "source": "For each complex we achieved a \u224810 000-fold enrichment within a single native purification step and yields of around 50%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantitative analysis of the purification results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "0c3125f9-4c40-4499-a440-d74f8a0380e9",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C20",
+      "claim": "The authors obtained 50-100 \u00b5g of Y-complex from 2 ml egg extract.",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained substantial amounts of the complex, namely 50\u2013100 \u00b5g from as little as 2 ml egg extract, which initially contained \u2248150 \u00b5g or \u2248100 nM of the complex (W\u00fchr et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on quantitative measurements of purified material with citation for initial concentration.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "8bccbd7a-1673-46c5-86ad-4f60e22597e8",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C21",
+      "claim": "The crystal structure of the anti-Nup98 nanobody TP377 in complex with the globular Nup98 NPC anchor domain was solved at 1.9 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to better guide cysteine placement in the nanobody framework, we solved the crystal structure of the anti-Nup98 nanobody TP377 in complex with the globular Nup98 NPC anchor domain (residues 716\u2013866) at 1.9 \u00c5 resolution (Figure 5a, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on X-ray crystallography data presented in Figure 5a and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "625fef0a-bc55-494c-becb-5e2c7fc6fd55",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C22",
+      "claim": "TP377 contacts its target through all three CDR loops.",
+      "claim_type": "EXPLICIT",
+      "source": "TP377 contacts its target through all three CDR loops and does not block the absolute Nup98 C-terminus, which anchors Nup98 via Nup96 or Nup88 to the NPC scaffold (Hodel et al., 2002; Griffis et al., 2003; Stuwe et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the crystal structure with citations for functional context.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "8e223b86-e9e7-4793-a894-631835fb821f",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C23",
+      "claim": "The internal disulfide bond-forming cysteines Cys22 and Cys96 of TP377 are reduced in the crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The internal disulfide bond-forming cysteines Cys22 and Cys96 of TP377 are reduced in the crystal structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the crystal structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "9855c23d-3f70-465e-abb5-6cb1524765ee",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C24",
+      "claim": "All individual cysteine mutants and nanobodies with up to three ectopic surface cysteines were well expressed and highly soluble in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that not only all individual mutants, but also nanobodies with up to three ectopic surface cysteines were well expressed and highly soluble in E. coli (Figure 5\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on expression and purification data shown in Figure 5\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "a909e747-c30d-43fc-85a2-66e410bf51f2",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C25",
+      "claim": "Cysteines on all six positions on the anti-Nup98 nanobody TP377 could be quantitatively labeled with maleimide fluorescent dyes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, cysteines on all six positions on our model anti-Nup98 nanobody TP377 could be quantitatively labeled with maleimide fluorescent dyes (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on labeling experiments shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "6631fe44-8cc6-49e5-a600-eac14d4fdb1d",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C26",
+      "claim": "The introduction of ectopic cysteines and their modification did not impair binding to the Nup98 target.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, competitive binding assays indicated that the introduction of ectopic cysteines and their modification did not impair binding to the Nup98 target (Figure 5\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on competitive binding assay data shown in Figure 5\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "30fc6760-4b7c-46b6-a409-ed7acdb55c7a",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C27",
+      "claim": "Fluorophores attached via an N-terminal cysteine or A75C to anti-Nup98 nanobody TP377 can be as close as approximately 2 nm to the target Nup98.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the crystal structure, we estimate that fluorophores attached via an N-terminal cysteine or A75C to anti-Nup98 nanobody TP377 can be as close as ~2 nm to the target Nup98.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate based on analysis of the crystal structure data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "3344da42-1d1d-456e-8fd8-0351cd4d07e3",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C28",
+      "claim": "All anti-Nup nanobody variants with Alexa Fluor 647 at different positions produced very bright punctuate nuclear rim staining characteristic for NPCs against very low background.",
+      "claim_type": "EXPLICIT",
+      "source": "In confocal laser scanning microscopy, all variants produced a very bright punctuate nuclear rim staining of XL177 cells, characteristic for NPCs, against a very low background.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on confocal microscopy imaging data shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "ac475075-0fee-4343-947d-76c8dc84bcec",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C29",
+      "claim": "The Alexa Fluor 647 NHS-labeled anti-GFP nanobody Enhancer produced strong nucleoplasmic and cytoplasmic background staining.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when this nanobody was labeled at lysines with Alexa Fluor 647 NHS ester, it produced strong nucleoplasmic and cytoplasmic background staining, which essentially obscured the specific signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparative imaging data shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "11097201-bf17-4ea7-95ed-b7c0828a2253",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C30",
+      "claim": "The Alexa Fluor 647 maleimide-labeled anti-GFP nanobody Enhancer produced brilliant NPC signal with extremely low background.",
+      "claim_type": "EXPLICIT",
+      "source": "When a HeLa Nup153-GFP cell line was stained, we observed a brilliant NPC signal for the Alexa Fluor 647 maleimide-labeled 'Enhancer', which perfectly coincided with the (weaker) GFP signal, and an extremely low background (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on imaging data shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "c62a769f-daa0-4b6f-b2e3-59dfedade42a",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C31",
+      "claim": "Singly Alexa Fluor 647 maleimide-labeled anti-Nup nanobodies were sufficient to produce enough localizations to reconstruct very detailed views of individual NPCs in STORM imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, singly Alexa Fluor 647 maleimide-labeled anti-Nup nanobodies were sufficient to produce enough localizations to reconstruct very detailed views of individual NPCs, where multiple copies of the imaged target proteins (Nup98, Nup93, and Nup155) appear arranged around the central NPC channel (Figure 7c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on STORM imaging data shown in Figure 7c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "86f15f8d-24e7-4722-a237-af4dbf6976ee",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C32",
+      "claim": "Combining the N-terminal cysteine on the nanobody with the heterobifunctional crosslinker produced very prominent nanobody\u2022Nup93 crosslinks.",
+      "claim_type": "EXPLICIT",
+      "source": "However, combining the N-terminal cysteine on the nanobody with the (far shorter) heterobifunctional crosslinker, produced very prominent nanobody\u2022Nup93 crosslinks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on crosslinking experiments shown in Figure 8a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "7e43c955-17d2-44bf-868b-b3ea0d5b68e3",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C33",
+      "claim": "TP179 binds to the middle region of the J-shaped structure of Nup93 surrounding residues K607 and K612.",
+      "claim_type": "EXPLICIT",
+      "source": "TP179 binds to the middle region of the J-shaped structure of Nup93 surrounding residues K607 and K612 (Figure 8\u2014figure supplement 1a\u2013b), while TP324 has a C-terminal epitope surrounding lysines K762, K765, and K782 of Nup93 (Figure 8\u2014figure supplement 1c\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on crosslinking mass spectrometry data shown in Figure 8 and Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "5d3154a7-a2c0-422f-8b88-67973de667b6",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C34",
+      "claim": "TP324 has a C-terminal epitope surrounding lysines K762, K765, and K782 of Nup93.",
+      "claim_type": "EXPLICIT",
+      "source": "TP179 binds to the middle region of the J-shaped structure of Nup93 surrounding residues K607 and K612 (Figure 8\u2014figure supplement 1a\u2013b), while TP324 has a C-terminal epitope surrounding lysines K762, K765, and K782 of Nup93 (Figure 8\u2014figure supplement 1c\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on crosslinking mass spectrometry data shown in Figure 8 and Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "fd9e1d8f-da4c-477f-a119-430e19308c18",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C35",
+      "claim": "Anti-Nup93 nanobody TP324 does not stain intact NPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, anti-Nup93 nanobody TP324 that targets the C-terminus of Nup93 does not stain intact NPCs (data not shown), but rather represents a good candidate to selectively disrupt NPC assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observation with speculative interpretation about its potential use.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "fa268e7b-9b84-4cc8-9d3a-bd68ae51acbd",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C36",
+      "claim": "The C-terminal region of Nup93 is essential for NPC assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal region of Nup93 was previously shown to be essential for NPC assembly (Sachdev et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a literature citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "93e0ce11-40ee-4921-b94b-2557593926e2",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C37",
+      "claim": "Nanobody-purified endogenous Nup93 complexes analyzed by negative stain electron microscopy revealed characteristically curved \u03b1-solenoid fold-like particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Class averaging revealed characteristically curved \u03b1-solenoid fold-like particles, which are known to exhibit conformational flexibility (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on electron microscopy data and class averaging shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "695cdd83-85eb-444d-98a2-8b93cfaa9a08",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C38",
+      "claim": "The obtained Nup93 complex structures were reminiscent of the hook and eye-shaped structures reported for Nup188 and Nup205 orthologues from Saccharomyces cerevisiae and Myceliophthora thermophila.",
+      "claim_type": "EXPLICIT",
+      "source": "The obtained structures were very reminiscent of the hook and eye-shaped structures reported earlier for the Nup188 and Nup205 orthologues from Saccharomyces cerevisiae (Amlacher et al., 2011) and Myceliophthora thermophila (Andersen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of the authors' EM data with previously published structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "c73113ad-b591-48b6-898d-ef69969e1eb8",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C39",
+      "claim": "The overall shape of the Nup93 complexes is conserved from fungi to vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests not only that the overall shape of the Nup93 complexes is conserved from fungi to vertebrates, but also that our single-step purification strategy for large protein complexes yields material of sufficient quality for a direct structural analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural similarity observed in the EM data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "6d9c4f5d-e4fb-414c-a746-976c3fd597d4",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C40",
+      "claim": "The single-step purification strategy yields material of sufficient quality for direct structural analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests not only that the overall shape of the Nup93 complexes is conserved from fungi to vertebrates, but also that our single-step purification strategy for large protein complexes yields material of sufficient quality for a direct structural analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the quality of the EM data obtained from nanobody-purified complexes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "55c40d79-c660-47c0-9f05-c6d55406c5b1",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C41",
+      "claim": "At 0\u00b0C, scaffold cysteines of nanobodies remained fully protected from maleimide modification in native buffer.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, they remained fully protected at 0\u00b0C, predicting that maleimide-labeling on ice would be fully selective for engineered surface cysteines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the biotin-maleimide modification experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "40422b73-9700-4c1c-997a-953b8503cd5e",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C42",
+      "claim": "Scaffold cysteines became modified at 37\u00b0C in native buffer, pointing to transient exposure through thermal breathing.",
+      "claim_type": "EXPLICIT",
+      "source": "After unfolding by urea, the scaffold cysteines became modified at either 37\u00b0C, 23\u00b0C, or 0\u00b0C. In native buffer, however, modification was quantitative only at 37\u00b0C, pointing to a transient exposure of the otherwise buried scaffold cysteines ('thermal breathing').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the biotin-maleimide modification experiments shown in Figure 4 with mechanistic interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "e5c9ec42-b4fb-4d8b-a826-1ead7150681f",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C43",
+      "claim": "Modification of framework lysines likely creates hydrophobic patches that favor unspecific binding and aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "This comparison indicated that modification of (multiple) framework lysines likely creates hydrophobic patches that favor unspecific binding and aggregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation based on the comparative imaging data showing high background with NHS-labeled nanobodies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "b450ffb5-6854-4ea7-8eae-735923f69a25",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C44",
+      "claim": "NPCs have a diameter well below the diffraction limit.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to a diameter well below the diffraction limit, NPCs have been studied by super-resolution microscopy using either indirect immunofluorescence (L\u00f6schberger et al., 2012; G\u00f6ttfert et al., 2013) or the anti-GFP nanobody (Szymborska et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about NPCs supported by citations to super-resolution microscopy studies.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "4160f707-0546-473a-9e99-662c690f1c4b",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C45",
+      "claim": "The NPC has a very large size of approximately 110 MDa.",
+      "claim_type": "EXPLICIT",
+      "source": "Their very large size of \u2248110 MDa not only places them amongst the largest molecular machines, but also poses formidable challenges for any structural and functional investigation (reviewed in Hurt and Beck, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about NPCs supported by a review citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "d85149da-18ee-4622-9320-7885c5c6d93e",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C46",
+      "claim": "The Nup107-Nup160 or Y-shaped complex is the most characteristic NPC subcomplex.",
+      "claim_type": "EXPLICIT",
+      "source": "Certainly, the most characteristic subcomplex is the Nup107-Nup160 or Y-shaped complex (Siniossoglou et al., 2000; Vasu et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about NPC structure supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "652e4681-fa44-4890-95e4-31222a03cb4b",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C47",
+      "claim": "The Y-shaped complex has an essential role in NPC assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Its essential role in NPC assembly (Harel et al., 2003; Walther et al., 2003) as well as its structural organization and relative position within the NPC have been studied intensely (Bui et al., 2013; Eibauer et al., 2015; Kelley et al., 2015; Stuwe et al., 2015b; von Appen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by multiple literature citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "6541892f-a5fd-411a-9261-4217455ef007",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C48",
+      "claim": "FG-repeat domains of Nup98 and the Nup62 complex form a permeability barrier within the central NPC channel.",
+      "claim_type": "EXPLICIT",
+      "source": "We also purified the Nup98\u2022Gle2 and the Nup62\u2022Nup58\u2022Nup54 complex using anti-Nup98 and anti-Nup54 nanobodies, respectively. Here, we included a RanQ69L\u2022GTP wash to release nuclear transport receptors, which otherwise would remain bound to the FG domains of Nup98 or the Nup62 complex (Figure 2\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about NPC function, with experimental data showing the need for RanQ69L\u2022GTP wash.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "c90d2d67-5313-427e-a941-270bf1c26dbd",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C49",
+      "claim": "Two alpacas were immunized with 0.5-1.0 mg protein or protein complex at 3-4 week intervals for 3-4 times.",
+      "claim_type": "EXPLICIT",
+      "source": "Two female alpacas, held at the Max Planck Institute for Biophysical Chemistry, were immunized with 0.5\u20131.0 mg protein or protein complex at 3\u20134 week intervals for 3\u20134 times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental immunization protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "080dae5f-8d56-4057-9c99-84141d5ef0cd",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C50",
+      "claim": "A library of 2-3 x 10^8 individual transformants was generated for nanobody selection.",
+      "claim_type": "EXPLICIT",
+      "source": "A library of 2\u20133 x 108 individual transformants was infected with helper phage M13KO7 (New England Biolabs) and VHH-displaying bacteriophages were produced overnight while shaking at 37\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the phage display library size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "3510a209-a592-4499-8053-2dba79407d16",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C51",
+      "claim": "Typically three rounds of panning with decreasing antigen concentration were performed.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically three rounds of panning with decreasing antigen concentration (e.g. 100 nM, 20 nM, and 1 nM) and increasingly thorough washing were performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the phage display selection protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "d4ff5743-05d2-4ccb-abb0-089be0def649",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C52",
+      "claim": "The crystal structure belongs to space group P41.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystals belonged to the space group P41 and diffracted to 1.9 \u00c5 (see Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is crystallographic data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "500f8474-b8bd-4631-ae8e-7dc40126ef64",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C53",
+      "claim": "Molecular replacement was performed using a published nanobody structure (PDB 4KRN) as a search model.",
+      "claim_type": "EXPLICIT",
+      "source": "For structure determination, molecular replacement was performed in PHASER with a published nanobody structure (PDB 4KRN; Schmitz et al., 2013) as a search model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the crystallographic method with citation to the search model.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "e3045004-c4f2-40b4-acf0-dc99649ee851",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C54",
+      "claim": "In traditional indirect immunofluorescence, the effective displacement between label and epitope can reach up to 24-30 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "In traditional indirect immunofluorescence, epitopes are initially decorated with a primary antibody and detected with a fluorophore-labeled secondary one, each around 12\u201315 nm in size (Harris et al., 1998). The effective displacement between label and epitope can reach up to 24\u201330 nm and thus significantly deteriorate the achievable precision and accuracy of protein localization by super-resolution fluorescence microscopy (Hell, 2009; Huang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about immunofluorescence limitations supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "e5fa8dc7-c0fa-437d-bdb5-dbd0e15aa7e7",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C55",
+      "claim": "Nanobodies have a diameter of 4 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Nanobodies (diameter: 4 nm) are an ideal solution to this problem (Ries et al., 2012; Szymborska et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about nanobody size supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "5ded2222-3faa-49b7-a0f6-14313c60fcdd",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C56",
+      "claim": "NHS ester labeling of nanobodies at lysines is random and rarely quantitative.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, nanobodies were labeled at lysines by N-hydroxysuccinimide (NHS) ester fluorophores (Ries et al., 2012; Fridy et al., 2014), which is random and rarely quantitative.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of existing labeling methods supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "43e2091b-a9fe-4371-843c-882ad196147f",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C57",
+      "claim": "NHS ester labeling deteriorates signal-to-background ratios or even completely abolishes epitope recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "As we show below, it also deteriorates signal-to-background ratios or even completely abolishes epitope recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a forward reference to experimental results shown later in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "108dce73-fd75-407a-bc9a-6ffd44303b9a",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C58",
+      "claim": "Adding an extra C-terminal cysteine to a periplasmically expressed nanobody led to severe reduction in yield and caused extensive dimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding an extra C-terminal cysteine (for subsequent maleimide modification) to a periplasmically expressed nanobody was also not a satisfying solution, because it led to a severe reduction in yield and caused extensive dimerization (Massa et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of problems with previous approaches supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "89363893-30f3-4554-a4f1-2678b784795c",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C59",
+      "claim": "The anti-Nup93 nanobody TP179 contains a lysine in CDR II and lost antigen-binding after NHS modification.",
+      "claim_type": "EXPLICIT",
+      "source": "The anti-Nup93 nanobody TP179 contains a lysine in CDR II and even lost antigen-binding after NHS modification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation about the effect of NHS labeling on a specific nanobody.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "655c532d-aa14-48b5-b095-a80fda87a98e",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C60",
+      "claim": "Maleimide-labeling of exposed cysteines is quantitative even with just stoichiometric amounts of labeling reagent.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, maleimide-labeling of exposed cysteines is quantitative even with just stoichiometric amounts of labeling reagent and thus far more economical.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' experimental observations with maleimide labeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "26230e8b-d3ed-4965-a67b-61010ee4c2d3",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C61",
+      "claim": "NHS esters react not only with amino groups but also rapidly hydrolyze in aqueous buffers.",
+      "claim_type": "EXPLICIT",
+      "source": "NHS esters have the additional disadvantage that they react not only with amino groups, but also rapidly hydrolyze in aqueous buffers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established chemical knowledge about NHS ester reactivity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "cfec707b-28e1-4908-9472-7a4d47df77ca",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "claim_id": "C62",
+      "claim": "The NPC has become a benchmark for many new advancements of super-resolution microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of its well-defined dimension and symmetric structure, the NPC has become a benchmark for many new advancements of super-resolution microscopy (Schermelleh et al., 2008; Szymborska et al., 2013; G\u00f6ttfert et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the use of NPCs in microscopy supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0c986517-107d-4818-8473-dee4ae4c5296",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors successfully generated high-affinity nanobodies against multiple Xenopus NPC constituents (Nup85, Nup93, Nup155, Nup98, and the Nup62\u2022Nup58\u2022Nup54 complex) using alpaca immunization and phage display selection from immune libraries containing 2-3 x 10^8 transformants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, C49-C51 collectively describe a complete and well-documented nanobody generation workflow. The immunization protocol, library size, and selection strategy are clearly specified with appropriate methodological detail, and the successful outcome (high-affinity nanobodies against all targets) is explicitly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "1b398bb8-406e-4689-89dd-2d743ef58f9c",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Anti-NPC nanobodies can be functionally expressed in the E. coli cytoplasm with dramatically increased yields (often >100 mg/L, up to 30-fold higher than periplasmic expression) when fused to a His14-bdNEDD8 module.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9 and C15-C17 are supported by experimental data shown in Figure 1a demonstrating quantitative yield comparisons. The generalizability claim (C15) is supported by the authors' observations across multiple nanobodies, though the exact number tested is not specified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "71180023-ffcb-4dfc-856d-0ef48f50b95b",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Cytoplasmic expression in E. coli BLR produces completely reduced nanobodies that retain full antigen-binding affinity despite lacking the internal disulfide bond, though they show decreased thermostability (melting temperatures of 47\u00b0C and 57\u00b0C for anti-Nup98 and anti-Nup93, respectively).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C14 are well-supported by multiple complementary assays: maleimide shift assay (Figure 1b), competition binding assay (Figure 1c), and differential scanning fluorimetry (Figure 1d). The data clearly demonstrate that reduced nanobodies maintain binding function despite structural differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "c6609462-800b-44dd-bc12-668e35329708",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Nanobody-based affinity purification achieved ~10,000-fold enrichment of endogenous nucleoporin complexes in a single native purification step with ~50% yields, obtaining 50-100 \u00b5g of Y-complex from 2 ml Xenopus egg extract.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 are supported by purification data in Figure 2b and quantitative measurements. The enrichment and yield values are explicitly stated and the purified complexes were validated by mass spectrometry identification of components.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "f3d71783-5a64-4d03-b205-47fddd8f7004",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Nanobody-purified endogenous Nup93 complexes analyzed by negative stain electron microscopy revealed \u03b1-solenoid fold-like particles with structures reminiscent of fungal orthologs, suggesting conservation of overall shape from fungi to vertebrates and demonstrating that the purification strategy yields material suitable for structural analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 are supported by electron microscopy data (Figure 3) showing class averages of purified complexes. The structural similarity to published fungal structures is appropriately cited, and the inference about conservation is reasonable based on the morphological comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "4c48cdb3-2b96-43ca-80e3-34931ec097dd",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The crystal structure of anti-Nup98 nanobody TP377 in complex with Nup98 NPC anchor domain was solved at 1.9 \u00c5 resolution (space group P41), revealing that TP377 contacts its target through all three CDR loops and that the internal disulfide bond-forming cysteines are reduced in the structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C23 and C52-C53 are supported by crystallographic data presented in Figure 5a and Table 1. The resolution, space group, and structural features are clearly documented. The observation of reduced cysteines in the crystal structure is consistent with the functional data showing reduced nanobodies retain binding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "502d3eee-3d1f-4193-b4e8-ab1d5766ba00",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "At 0\u00b0C, scaffold cysteines of nanobodies remain fully protected from maleimide modification in native buffer, but become modified at 37\u00b0C through thermal breathing, predicting that maleimide labeling on ice would be selective for engineered surface cysteines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 are supported by temperature-dependent biotin-maleimide modification experiments shown in Figure 4. The data clearly demonstrate temperature-dependent accessibility of scaffold cysteines, and the mechanistic interpretation (thermal breathing) is reasonable and appropriately tentative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "0ce9b7c1-7bd0-4f93-8ebe-689ca550f9b8",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Nanobodies with up to three engineered surface cysteines at six alternative positions were well-expressed, highly soluble, and could be quantitatively labeled with maleimide fluorescent dyes without impairing target binding, with fluorophores positioned as close as ~2 nm to the target.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 are supported by expression data (Figure 5\u2014figure supplement 1b), labeling data (Figure 5c), competitive binding assays (Figure 5\u2014figure supplement 1c), and structural analysis. The ~2 nm distance estimate (C27) is appropriately identified as an estimate based on crystal structure analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "b98bd710-453a-4226-a7ad-22d5d217be38",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Site-specifically labeled anti-Nup nanobodies with single Alexa Fluor 647 maleimide dyes produced bright punctate nuclear rim staining with very low background in confocal microscopy and were sufficient for detailed STORM super-resolution imaging of individual NPCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28, C30-C31 are supported by confocal microscopy data (Figure 5d, Figure 6a, Figure 6c) and STORM imaging data (Figure 7). The imaging quality is clearly demonstrated across multiple targets and imaging modalities.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "7fd2b712-9bb0-4ef0-b9b0-bf6d3a9419b3",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "NHS ester labeling of nanobodies at lysines is random, rarely quantitative, and produces strong background staining or complete loss of antigen binding, likely due to creation of hydrophobic patches that favor unspecific binding and aggregation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C43, C56-C57, and C59 are supported by comparative imaging data (Figure 6c-d) showing high background with NHS-labeled nanobodies and loss of function for TP179. The mechanistic interpretation (C43) is appropriately tentative and based on the comparative data, though direct evidence for hydrophobic patch formation is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "885c7d5b-b17f-4353-ae27-22d4f29de723",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Crosslinking mass spectrometry using an N-terminal cysteine on nanobodies with a short heterobifunctional crosslinker (BMPS, 5.9 \u00c5) efficiently mapped conformational epitopes, revealing that TP179 binds the middle region of Nup93 (K607, K612) while TP324 binds the C-terminus (K762, K765, K782).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 are supported by crosslinking data (Figure 8a) and mass spectrometry identification of crosslinked peptides (Figure 8b, Figure 8\u2014figure supplement 1). The epitope mapping is clearly demonstrated with specific lysine residues identified and validated by MS/MS spectra.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "91c08da2-b3e6-4afb-8f1b-98aa7305c9ef",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Anti-Nup93 nanobody TP324, which targets the C-terminal region of Nup93 essential for NPC assembly, does not stain intact NPCs and may selectively disrupt NPC assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C35 states that TP324 does not stain intact NPCs but provides no data ('data not shown'). Claim C36 about the C-terminus being essential for assembly is supported by citation. The speculation about disrupting assembly is not tested, making the overall result uncertain without the supporting imaging data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "edd2f693-439e-42ec-a0c6-db40cdeca2ef",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Compared to traditional indirect immunofluorescence (24-30 nm label displacement) and NHS ester labeling (random, non-quantitative, rapidly hydrolyzes), maleimide labeling of nanobodies (4 nm diameter) at engineered cysteines is quantitative with stoichiometric reagent amounts and more economical.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 and C60-C61 combine established knowledge (C54-C55, C61 supported by citations) with experimental observations (C60 supported by labeling data). The comparison effectively contextualizes the advantages of the maleimide-cysteine strategy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "627dc6e0-bbe5-4dec-8e8e-3270bee4d330",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Nanobodies are single-domain antibodies (~13 kDa) of camelid origin, typically selected by phage display from immune libraries and commonly expressed in E. coli periplasm, though periplasmic expression often results in low yields.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 represent established background knowledge about nanobodies, appropriately supported by multiple literature citations. These claims provide necessary context for the experimental work but do not represent novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "925162b6-b867-4411-bceb-d6d78ba452d2",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "NPCs are large (~110 MDa) molecular machines with diameter below the diffraction limit, organized in subcomplexes including the characteristic Y-shaped complex essential for assembly and FG-repeat domains forming the permeability barrier, making them a benchmark for super-resolution microscopy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48 and C62 represent established knowledge about NPC structure and function, appropriately supported by multiple literature citations. These provide necessary biological context but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    },
+    {
+      "id": "3c85a0a8-b507-41c2-b708-52a208abc2e0",
+      "content_id": "a5b1e42d-44cf-45cb-8edd-9724c64eafe2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Adding an extra C-terminal cysteine to periplasmically expressed nanobodies led to severe reduction in yield and extensive dimerization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 describes limitations of a previous approach, supported by citation (Massa et al., 2014). This contextualizes why the authors' cytoplasmic expression strategy with engineered surface cysteines is advantageous.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:55:42.659389Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5479cefe-7967-4e6a-a65c-a21d056fad9d",
+      "result_id": "0c986517-107d-4818-8473-dee4ae4c5296"
+    },
+    {
+      "claim_id": "31f72af1-f7cf-4302-948d-ccff291f2d38",
+      "result_id": "0c986517-107d-4818-8473-dee4ae4c5296"
+    },
+    {
+      "claim_id": "c90d2d67-5313-427e-a941-270bf1c26dbd",
+      "result_id": "0c986517-107d-4818-8473-dee4ae4c5296"
+    },
+    {
+      "claim_id": "080dae5f-8d56-4057-9c99-84141d5ef0cd",
+      "result_id": "0c986517-107d-4818-8473-dee4ae4c5296"
+    },
+    {
+      "claim_id": "3510a209-a592-4499-8053-2dba79407d16",
+      "result_id": "0c986517-107d-4818-8473-dee4ae4c5296"
+    },
+    {
+      "claim_id": "38755c5b-7af3-4bbb-921a-3dc58c06d070",
+      "result_id": "1b398bb8-406e-4689-89dd-2d743ef58f9c"
+    },
+    {
+      "claim_id": "72937d9d-89c2-470f-bf96-53b64a14d173",
+      "result_id": "1b398bb8-406e-4689-89dd-2d743ef58f9c"
+    },
+    {
+      "claim_id": "21af0a81-5419-4bee-8572-c5019ab9b3ee",
+      "result_id": "1b398bb8-406e-4689-89dd-2d743ef58f9c"
+    },
+    {
+      "claim_id": "7215dd9c-8064-48f4-90b4-f31aa22fc107",
+      "result_id": "1b398bb8-406e-4689-89dd-2d743ef58f9c"
+    },
+    {
+      "claim_id": "ad3e2741-ac6a-4b71-9887-2c364a470937",
+      "result_id": "1b398bb8-406e-4689-89dd-2d743ef58f9c"
+    },
+    {
+      "claim_id": "c97ec320-dfbb-4d36-86bb-9e88ae68f909",
+      "result_id": "71180023-ffcb-4dfc-856d-0ef48f50b95b"
+    },
+    {
+      "claim_id": "cdefb1f6-d967-47ee-aeaf-b761b0c00774",
+      "result_id": "71180023-ffcb-4dfc-856d-0ef48f50b95b"
+    },
+    {
+      "claim_id": "7b8fda33-3d38-46f5-80aa-ecc81ecb51ce",
+      "result_id": "71180023-ffcb-4dfc-856d-0ef48f50b95b"
+    },
+    {
+      "claim_id": "685b3559-e429-4a87-8fc0-97cfac46117f",
+      "result_id": "71180023-ffcb-4dfc-856d-0ef48f50b95b"
+    },
+    {
+      "claim_id": "f480a1ca-7eda-403c-8453-6eb6e0a51b00",
+      "result_id": "71180023-ffcb-4dfc-856d-0ef48f50b95b"
+    },
+    {
+      "claim_id": "3badb486-7bbf-49ec-aa1f-4fb56ad7a454",
+      "result_id": "c6609462-800b-44dd-bc12-668e35329708"
+    },
+    {
+      "claim_id": "7c3bfd25-f1db-4715-addb-3018ba31b427",
+      "result_id": "c6609462-800b-44dd-bc12-668e35329708"
+    },
+    {
+      "claim_id": "0c3125f9-4c40-4499-a440-d74f8a0380e9",
+      "result_id": "c6609462-800b-44dd-bc12-668e35329708"
+    },
+    {
+      "claim_id": "93e0ce11-40ee-4921-b94b-2557593926e2",
+      "result_id": "f3d71783-5a64-4d03-b205-47fddd8f7004"
+    },
+    {
+      "claim_id": "695cdd83-85eb-444d-98a2-8b93cfaa9a08",
+      "result_id": "f3d71783-5a64-4d03-b205-47fddd8f7004"
+    },
+    {
+      "claim_id": "c73113ad-b591-48b6-898d-ef69969e1eb8",
+      "result_id": "f3d71783-5a64-4d03-b205-47fddd8f7004"
+    },
+    {
+      "claim_id": "6d9c4f5d-e4fb-414c-a746-976c3fd597d4",
+      "result_id": "f3d71783-5a64-4d03-b205-47fddd8f7004"
+    },
+    {
+      "claim_id": "8bccbd7a-1673-46c5-86ad-4f60e22597e8",
+      "result_id": "4c48cdb3-2b96-43ca-80e3-34931ec097dd"
+    },
+    {
+      "claim_id": "625fef0a-bc55-494c-becb-5e2c7fc6fd55",
+      "result_id": "4c48cdb3-2b96-43ca-80e3-34931ec097dd"
+    },
+    {
+      "claim_id": "8e223b86-e9e7-4793-a894-631835fb821f",
+      "result_id": "4c48cdb3-2b96-43ca-80e3-34931ec097dd"
+    },
+    {
+      "claim_id": "d4ff5743-05d2-4ccb-abb0-089be0def649",
+      "result_id": "4c48cdb3-2b96-43ca-80e3-34931ec097dd"
+    },
+    {
+      "claim_id": "500f8474-b8bd-4631-ae8e-7dc40126ef64",
+      "result_id": "4c48cdb3-2b96-43ca-80e3-34931ec097dd"
+    },
+    {
+      "claim_id": "55c40d79-c660-47c0-9f05-c6d55406c5b1",
+      "result_id": "502d3eee-3d1f-4193-b4e8-ab1d5766ba00"
+    },
+    {
+      "claim_id": "40422b73-9700-4c1c-997a-953b8503cd5e",
+      "result_id": "502d3eee-3d1f-4193-b4e8-ab1d5766ba00"
+    },
+    {
+      "claim_id": "9855c23d-3f70-465e-abb5-6cb1524765ee",
+      "result_id": "0ce9b7c1-7bd0-4f93-8ebe-689ca550f9b8"
+    },
+    {
+      "claim_id": "a909e747-c30d-43fc-85a2-66e410bf51f2",
+      "result_id": "0ce9b7c1-7bd0-4f93-8ebe-689ca550f9b8"
+    },
+    {
+      "claim_id": "6631fe44-8cc6-49e5-a600-eac14d4fdb1d",
+      "result_id": "0ce9b7c1-7bd0-4f93-8ebe-689ca550f9b8"
+    },
+    {
+      "claim_id": "30fc6760-4b7c-46b6-a409-ed7acdb55c7a",
+      "result_id": "0ce9b7c1-7bd0-4f93-8ebe-689ca550f9b8"
+    },
+    {
+      "claim_id": "3344da42-1d1d-456e-8fd8-0351cd4d07e3",
+      "result_id": "b98bd710-453a-4226-a7ad-22d5d217be38"
+    },
+    {
+      "claim_id": "11097201-bf17-4ea7-95ed-b7c0828a2253",
+      "result_id": "b98bd710-453a-4226-a7ad-22d5d217be38"
+    },
+    {
+      "claim_id": "c62a769f-daa0-4b6f-b2e3-59dfedade42a",
+      "result_id": "b98bd710-453a-4226-a7ad-22d5d217be38"
+    },
+    {
+      "claim_id": "ac475075-0fee-4343-947d-76c8dc84bcec",
+      "result_id": "7fd2b712-9bb0-4ef0-b9b0-bf6d3a9419b3"
+    },
+    {
+      "claim_id": "e5c9ec42-b4fb-4d8b-a826-1ead7150681f",
+      "result_id": "7fd2b712-9bb0-4ef0-b9b0-bf6d3a9419b3"
+    },
+    {
+      "claim_id": "5ded2222-3faa-49b7-a0f6-14313c60fcdd",
+      "result_id": "7fd2b712-9bb0-4ef0-b9b0-bf6d3a9419b3"
+    },
+    {
+      "claim_id": "43e2091b-a9fe-4371-843c-882ad196147f",
+      "result_id": "7fd2b712-9bb0-4ef0-b9b0-bf6d3a9419b3"
+    },
+    {
+      "claim_id": "89363893-30f3-4554-a4f1-2678b784795c",
+      "result_id": "7fd2b712-9bb0-4ef0-b9b0-bf6d3a9419b3"
+    },
+    {
+      "claim_id": "86f15f8d-24e7-4722-a237-af4dbf6976ee",
+      "result_id": "885c7d5b-b17f-4353-ae27-22d4f29de723"
+    },
+    {
+      "claim_id": "7e43c955-17d2-44bf-868b-b3ea0d5b68e3",
+      "result_id": "885c7d5b-b17f-4353-ae27-22d4f29de723"
+    },
+    {
+      "claim_id": "5d3154a7-a2c0-422f-8b88-67973de667b6",
+      "result_id": "885c7d5b-b17f-4353-ae27-22d4f29de723"
+    },
+    {
+      "claim_id": "fd9e1d8f-da4c-477f-a119-430e19308c18",
+      "result_id": "91c08da2-b3e6-4afb-8f1b-98aa7305c9ef"
+    },
+    {
+      "claim_id": "fa268e7b-9b84-4cc8-9d3a-bd68ae51acbd",
+      "result_id": "91c08da2-b3e6-4afb-8f1b-98aa7305c9ef"
+    },
+    {
+      "claim_id": "e3045004-c4f2-40b4-acf0-dc99649ee851",
+      "result_id": "edd2f693-439e-42ec-a0c6-db40cdeca2ef"
+    },
+    {
+      "claim_id": "e5fa8dc7-c0fa-437d-bdb5-dbd0e15aa7e7",
+      "result_id": "edd2f693-439e-42ec-a0c6-db40cdeca2ef"
+    },
+    {
+      "claim_id": "655c532d-aa14-48b5-b095-a80fda87a98e",
+      "result_id": "edd2f693-439e-42ec-a0c6-db40cdeca2ef"
+    },
+    {
+      "claim_id": "26230e8b-d3ed-4965-a67b-61010ee4c2d3",
+      "result_id": "edd2f693-439e-42ec-a0c6-db40cdeca2ef"
+    },
+    {
+      "claim_id": "b22ed1de-ebe6-4875-b99b-3234540fb5d5",
+      "result_id": "627dc6e0-bbe5-4dec-8e8e-3270bee4d330"
+    },
+    {
+      "claim_id": "e6aee59c-0dc7-4428-89de-46ab623619b9",
+      "result_id": "627dc6e0-bbe5-4dec-8e8e-3270bee4d330"
+    },
+    {
+      "claim_id": "4ebfa12a-b746-4a00-8398-19911dbfa6fc",
+      "result_id": "627dc6e0-bbe5-4dec-8e8e-3270bee4d330"
+    },
+    {
+      "claim_id": "9a9b244c-6705-4faa-a26f-72d1a9f740e9",
+      "result_id": "627dc6e0-bbe5-4dec-8e8e-3270bee4d330"
+    },
+    {
+      "claim_id": "68624215-cd6c-426f-9ece-259191934329",
+      "result_id": "627dc6e0-bbe5-4dec-8e8e-3270bee4d330"
+    },
+    {
+      "claim_id": "b450ffb5-6854-4ea7-8eae-735923f69a25",
+      "result_id": "925162b6-b867-4411-bceb-d6d78ba452d2"
+    },
+    {
+      "claim_id": "4160f707-0546-473a-9e99-662c690f1c4b",
+      "result_id": "925162b6-b867-4411-bceb-d6d78ba452d2"
+    },
+    {
+      "claim_id": "d85149da-18ee-4622-9320-7885c5c6d93e",
+      "result_id": "925162b6-b867-4411-bceb-d6d78ba452d2"
+    },
+    {
+      "claim_id": "652e4681-fa44-4890-95e4-31222a03cb4b",
+      "result_id": "925162b6-b867-4411-bceb-d6d78ba452d2"
+    },
+    {
+      "claim_id": "6541892f-a5fd-411a-9261-4217455ef007",
+      "result_id": "925162b6-b867-4411-bceb-d6d78ba452d2"
+    },
+    {
+      "claim_id": "cfec707b-28e1-4908-9472-7a4d47df77ca",
+      "result_id": "925162b6-b867-4411-bceb-d6d78ba452d2"
+    },
+    {
+      "claim_id": "108dce73-fd75-407a-bc9a-6ffd44303b9a",
+      "result_id": "3c85a0a8-b507-41c2-b708-52a208abc2e0"
+    }
+  ],
+  "comparisons": []
+}

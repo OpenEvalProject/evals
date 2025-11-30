@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C18",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C92"
+    ],
+    "result": "HEG1 binds directly to Rasip1 independently of KRIT1. This interaction was identified through an unbiased proteomic screen showing Rasip1 binding to HEG1 from HUVEC but not HeLa lysates. The interaction is independent of KRIT1, as demonstrated by binding to HEG1 \u0394YF (which cannot bind KRIT1), persistence after KRIT1 silencing, and lack of binding to the KRIT1-binding region of HEG1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches (mass spectrometry, pull-down assays, co-immunoprecipitation, KRIT1 silencing, and domain mapping) consistently demonstrate direct HEG1-Rasip1 binding independent of KRIT1 (Figures 1, 2). The endothelial-specific detection aligns with known Rasip1 expression patterns. Controls are appropriate and multiple independent reagents confirm specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C29",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "HEG1 is required for Rasip1 recruitment to forming endothelial cell-cell junctions. During junction assembly induced by calcium switch and Rap1 activation, Rasip1 localizes to VE-cadherin-positive junctions in control cells but fails to do so when HEG1 is silenced. This requirement is independent of KRIT1 and is not rescued by ROCK inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The calcium switch assay with Rap1 activation provides a physiologically relevant model for junction assembly. Multiple independent HEG1 knockdown reagents (two shRNAs and one siRNA) consistently prevent Rasip1 junctional localization (Figure 3), addressing off-target concerns. The demonstration that KRIT1 silencing does not affect Rasip1 recruitment further supports HEG1-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C54"
+    ],
+    "result": "Mitochondria-targeted HEG1 relocalizes Rasip1 to mitochondria in cells, and deletion of the Rasip1-binding site (aa 1327-1335) prevents this recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mitochondrial relocalization experiment provides elegant functional evidence for direct HEG1-Rasip1 interaction in living cells (Figures 1E, 4D). This gain-of-function approach complements the loss-of-function junction studies and demonstrates that HEG1 is sufficient to recruit Rasip1 to ectopic locations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C53",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The Rasip1-binding site in HEG1 was mapped to a 9 amino acid sequence (TDVYYSPTS, aa 1327-1335). Deletion of this sequence prevents Rasip1 binding in vitro, recruitment to mitochondria-targeted HEG1, and co-immunoprecipitation with full-length HEG1. A 22-mer peptide encompassing this region is sufficient for Rasip1 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Systematic deletion mapping with multiple complementary assays (in vitro binding, cellular recruitment, co-IP) consistently identifies the same minimal binding region (Figure 4). The sufficiency of the 22-mer peptide and necessity of the 9-mer provide strong evidence for this being the critical binding site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "HEG1 binds directly to the FHA-containing central region of Rasip1 (aa 266-550). This region is both necessary and sufficient for HEG1 binding, as demonstrated by domain mapping and direct binding assays with purified recombinant proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Domain mapping with FLAG-tagged constructs identifies Rasip1(266-550) as sufficient for binding, while deletion of this region (\u0394334-539) abolishes binding (Figure 5B, C). Direct binding with purified MBP-Rasip1(266-550) to HEG1 peptides confirms the interaction is direct and does not require additional cellular factors (Figure 5D).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C63",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Deletion of the HEG1-binding central domain of Rasip1 (\u0394334-539) prevents Rasip1 recruitment to endothelial cell-cell junctions. The mutant accumulates on cytoplasmic vesicles near junctions but never incorporates into them, suggesting transport to the periphery is intact but junctional incorporation requires HEG1 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Immunofluorescence microscopy clearly shows that Rasip1(\u0394334-539) fails to localize to junctions despite accumulating on nearby vesicles (Figure 5E). This observation provides insight into the mechanism, suggesting HEG1 binding is specifically required for the final step of junctional incorporation rather than vesicular transport.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The HEG1-Rasip1 interaction is required for regulation of ROCK activity in endothelial cells. Silencing either HEG1 or Rasip1 increases MLC phosphorylation and stress fiber formation. Rescue with wild-type proteins restores normal ROCK activity, but HEG1-binding deficient mutants (HEG1 \u03941283-1291 or Rasip1 \u0394334-539) fail to rescue, with Rasip1(\u0394334-539) acting in a dominant-negative manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches (knockdown, rescue with WT, failure to rescue with binding-deficient mutants) consistently demonstrate the importance of HEG1-Rasip1 interaction for ROCK regulation (Figures 6, 7). Quantification of pMLC levels provides objective measurements. The dominant-negative effect of Rasip1(\u0394334-539) further supports the functional importance of this interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C13",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The HEG1-Rasip1 interaction is required for maintaining endothelial cell junctional integrity. Silencing Rasip1 increases endothelial permeability two-fold, which is rescued by wild-type Rasip1 but not by HEG1-binding deficient Rasip1(\u0394334-539).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Transwell permeability assays with FITC-dextran provide quantitative measurements of barrier function (Figure 7D). The rescue experiment design with shRNA-resistant constructs is appropriate and demonstrates that the permeability phenotype is specifically due to loss of HEG1-Rasip1 interaction rather than off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C98",
+      "C99",
+      "C100",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "A structure-based Rasip1 RA domain mutant (R182E) was designed based on homology modeling with Radil. The mutant is well-folded and forms dimers like wild-type but exhibits markedly reduced affinity for Rap1 (wild-type Kd = 0.77 \u00b1 0.09 \u03bcM), as demonstrated by size exclusion chromatography and isothermal titration calorimetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The homology modeling approach is well-justified given 31% sequence identity with Radil (Figure 8A, B). Multiple biophysical techniques (SEC, ITC) confirm the mutant is properly folded (same elution pattern as WT) but has drastically reduced Rap1 binding (Figure 8D, E). The Kd measurement by ITC provides quantitative binding data for the wild-type interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C110",
+      "C111"
+    ],
+    "result": "Rasip1(R182E), which cannot bind Rap1, fails to associate with HEG1 in living cells. The mutant is not recruited to mitochondria-targeted HEG1, demonstrating that Rap1 binding is required for Rasip1-HEG1 interaction in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mitochondrial recruitment assay provides a clear readout for HEG1-Rasip1 interaction in cells (Figure 8F). The demonstration that disrupting Rap1 binding prevents HEG1 association establishes Rap1 as a critical regulator of this interaction, linking the two Rap1 effector pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Rasip1(R182E) fails to rescue the effects of Rasip1 silencing on increased MLC phosphorylation and endothelial permeability, despite being well expressed. This demonstrates that Rap1 binding is required for Rasip1 function in regulating ROCK activity and maintaining barrier integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rescue experiments with Rasip1(R182E) provide functional validation of the Rap1-binding requirement (Figure 9). Western blots confirm the mutant is well expressed (Figure 9D), ruling out expression level as a confounding factor. The failure to rescue both pMLC and permeability phenotypes demonstrates Rap1 binding is essential for Rasip1 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C72",
+      "C73",
+      "C74",
+      "C78"
+    ],
+    "result": "The binding of HEG1 to Rasip1 mediates Rap1-dependent recruitment of Rasip1 to and stabilization of EC cell-cell junctions. Both HEG1 binding (via the FHA domain) and Rap1 binding (via the RA domain) are required for Rasip1 junctional localization, ROCK inhibition, and maintenance of junctional integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The integration of results from HEG1 silencing, Rasip1(\u0394334-539), and Rasip1(R182E) experiments demonstrates that both interactions are necessary (Figures 3, 5E, 7, 8F, 9). The model that HEG1 and Rap1 cooperatively regulate Rasip1 localization and function is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "The effect of Rasip1 on \u03b21 integrin activation is independent of HEG1. Silencing Rasip1 decreases activated \u03b21 integrin (9EG7 binding), but silencing HEG1 has no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Flow cytometry measurements of 9EG7 binding provide quantitative assessment of \u03b21 integrin activation (Figure 6A). The differential effects of Rasip1 vs. HEG1 silencing clearly demonstrate that Rasip1 has HEG1-independent functions, consistent with the more severe phenotype of Rasip1 null mice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "HEG1 is required for Rasip1 translocation to cell-cell contacts but not for formation of Rasip1-Rap1 or Rasip1-Radil-ARHGAP29 complexes. Co-immunoprecipitation experiments show that HEG1 silencing does not affect these protein-protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Co-IP experiments demonstrate that Rasip1 can still bind Rap1, Radil, and ARHGAP29 in the absence of HEG1 (Figure 3\u2014figure supplement 3). This establishes that HEG1 functions specifically in localization rather than complex assembly, providing mechanistic insight into the pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C80"
+    ],
+    "result": "HEG1 serves as a physical nexus for Rap1 signaling in vascular integrity and development by interacting with two different Rap1 effectors (Rasip1 and KRIT1) at distinct binding sites. Both interactions are regulated by Rap1 binding and contribute to control of RhoA/ROCK signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The current study demonstrates HEG1-Rasip1 interaction at a distinct site from KRIT1 binding, and both are Rap1-regulated. This integrates well with prior literature on HEG1-KRIT1 (cited appropriately). The model of HEG1 as a convergence point for Rap1 effectors is well-supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Rasip1 has functions that do not depend on HEG1 binding or recruitment to EC junctions, as evidenced by the more severe phenotype of Rasip1 null mice (lethal by E9.5 with profound vascular collapse) compared to HEG1 null mice. One possibility is that Rasip1 null mice exhibit profound EC detachment from basement membranes due to effects on integrin activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison of null phenotypes from the literature is accurate based on the cited references (Xu et al., 2011; Wilson et al., 2013; Kleaveland et al., 2009). The current study's finding that HEG1 silencing does not affect \u03b21 integrin activation while Rasip1 silencing does (Figure 6A) provides supporting evidence for HEG1-independent Rasip1 functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Rasip1(\u0394334-539) transport to the cell periphery appears intact based on vesicular accumulation near junctions, but incorporation into cell-cell contacts depends on HEG1. The junctional localization of Rasip1 is important for regulation of RhoA/ROCK and vascular permeability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation of vesicular accumulation near junctions (Figure 5E) combined with the failure to rescue ROCK activity and permeability (Figure 7) supports the interpretation that junctional localization is functionally important. However, the vesicular transport mechanism is inferred from static images rather than directly demonstrated.",
+    "result_type": "MINOR"
+  }
+]

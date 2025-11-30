@@ -1,0 +1,417 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The authors manually curated 1256 virus-interacting proteins (VIPs) from low-throughput virology literature, defined as proteins physically interacting with viral proteins, RNA, or DNA. These VIPs were identified from 9861 proteins conserved across 24 mammalian genomes, with 95% representing human-virus interactions and HIV-1 being the most represented virus (240 VIPs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dataset construction is well-documented with clear inclusion/exclusion criteria (C23-C25). The exclusion of high-throughput data is justified by concerns about false positives (C25), making this a conservative approach. The phylogenetic scope (C26) and virus representation (C27-C29) are clearly stated, providing transparency about dataset composition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors acknowledge that many VIPs remain undiscovered, as evidenced by the fact that half of all VIP publications appeared in the past 7 years with no sign of discovery rate slowing. This means the non-VIP control group likely contains undiscovered VIPs, making comparisons conservative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal analysis of VIP discovery (C31, C108) provides empirical support for ongoing discovery. The inference that non-VIPs contain undiscovered VIPs (C109) is logically sound and appropriately characterized as making results conservative. This represents good scientific practice in acknowledging limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "VIPs span diverse cellular functions including transcription (354 VIPs), signal transduction (396 VIPs), apoptosis (185 VIPs), and transport (264 VIPs), with 162 GO categories containing >50 VIPs. Critically, only 5% (57) have known antiviral activity and only 20% (241) have any immune function, meaning >80% are non-immune proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional diversity is well-documented through GO analysis (C33-C35) with specific counts provided. The key finding that most VIPs lack immune function (C36-C38) is central to the paper's novelty and is clearly quantified. This establishes that viral adaptation extends beyond specialized immune proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "VIPs evolve more slowly than non-VIPs, with ~15% lower mammal-wide dN/dS (0.124 vs 0.145, P=0), 21% lower pN/pS in human African populations (0.759 vs 0.966, P=0), and 25% lower pN/pS in great apes (0.526 vs 0.697, P=0). VIPs also show excess low-frequency deleterious variants. This pattern is consistent across viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent measures of purifying selection (dN/dS, pN/pS across different populations) all converge on the same conclusion (C39-C43). Statistical significance is extremely strong (P=0 after 10^9 iterations). The consistency across viruses (C44) strengthens the generality. The excess of deleterious variants (C42) provides additional mechanistic support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "VIPs are expressed in more tissues than non-VIPs (25.5 vs 11.9 at RNA level, 15.1 vs 6.1 at protein level, P=0) and have more protein-protein interaction partners (18.4 vs 3.2, P=0). The difference in purifying selection between VIPs and non-VIPs is driven at least partly by VIPs being network hubs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Expression breadth and network connectivity are measured using established datasets (GTEx, Human Proteome Map, Biogrid) with strong statistical support (C45-C46). The mechanistic interpretation linking hub status to constraint (C47) is supported by the observation that matching for interaction partners reduces but doesn't eliminate the pN/pS difference, appropriately stated as 'at least partly'.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Within functional categories, viruses preferentially interact with the most conserved proteins. Even immune VIPs show significantly reduced pN/pS compared to immune non-VIPs, while non-immune VIPs show similar constraint reduction as all VIPs combined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "GO-matched analysis (C48) controls for functional category, strengthening the conclusion. The finding that even immune VIPs are more constrained (C49) is counterintuitive and well-supported by Figure 3C. The consistency between non-immune VIPs and all VIPs (C50) indicates the pattern is not driven by a small subset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Using the classic MK test with variants \u226510% frequency, \u03b1 is strongly elevated in VIPs versus non-VIPs (0.19 vs -0.02, P=2\u00d710\u207b\u2075). This difference is robust to recombination, GC content, sequence length, expression levels, protein-protein interactions, and GO category matching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The classic MK test shows clear elevation in VIPs (C51). The extensive robustness checks (C52-C53) address potential confounders systematically, with all showing persistent significant differences. The authors appropriately note this test underestimates true \u03b1 due to slightly deleterious variants, making results conservative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Virus-specific and function-specific MK analysis shows HIV-1 and HBV VIPs have significant adaptation increases, 14/20 GO categories show elevated adaptation (9 significantly), and non-immune VIPs show strongly increased adaptation (\u03b1=0.26 vs 0.02, P=3\u00d710\u207b\u2077). Surprisingly, immune VIPs show no adaptation increase versus immune non-VIPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The virus-specific analysis (C55) identifies particular viruses driving adaptation. The GO analysis (C56) shows breadth across functions. The strong signal in non-immune VIPs (C57) is the paper's most striking finding. The lack of signal in immune VIPs (C58) is puzzling but the authors appropriately note adequate statistical power, suggesting a real biological pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C6",
+      "C98"
+    ],
+    "result": "The asymptotic MK test estimates \u03b1=27% in VIPs versus ~9% in non-VIPs. Although VIPs represent only 13% of orthologs and 11% of substitutions, they account for almost 30% of all adaptive amino acid changes in human evolution within the conserved mammalian proteome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The asymptotic MK test (C59) addresses the downward bias of the classic test. The calculation that VIPs account for ~30% of adaptive changes (C60, C6, C98) is mathematically sound given the \u03b1 estimates and proportions. The authors appropriately limit this to the 'conserved mammalian proteome', acknowledging scope limitations. Simulation validation (mentioned in methods) supports the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Using BS-REL and BUSTED tests across the mammalian phylogeny, VIPs experienced twice as many adaptive changes as non-VIPs on average (P=0). VIPs with strongest evidence (BUSTED P<10\u207b\u2075) show six-fold excess adaptation. This excess results from more VIPs adapting, more branches per VIP showing adaptation, and greater proportions of codons evolving adaptively per branch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phylogenetic analysis (C61-C62) uses appropriate branch-site tests and shows dose-response with significance threshold. The decomposition of the signal (C63) into three components provides mechanistic insight. The use of permutation tests matching for purifying selection (described in methods) addresses the key confound that VIPs are more constrained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Nine of ten viruses with >50 VIPs show strong adaptation excess in their VIPs, with HIV-1 and HBV showing the strongest signal (3\u00d7 more selected codons). HCV is the sole exception, showing no adaptation excess, consistent with HCV having no known close viral relatives in other mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The virus-specific phylogenetic analysis (C64-C65) parallels the MK test results, providing independent validation. The HCV exception (C66-C67) is particularly compelling as it represents a prediction (no close relatives \u2192 no mammalian adaptation signal) that is confirmed, strengthening causal inference that viral interactions drive adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Of 162 GO categories with >50 VIPs, 118 (73%) show \u226550% adaptation excess (all P<0.05), indicating widespread adaptation across host functions. Immune VIPs show very strong adaptation excess versus immune non-VIPs, while non-immune VIPs show similar excess to all VIPs combined (P=0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The breadth of GO categories affected (C68-C69) supports the 'pervasive' characterization. The strong signal in immune VIPs (C70) is expected and validates the approach. The equally strong signal in non-immune VIPs (C71) is the key novel finding. Note the contrast with MK test results (C58) may reflect different timescales or statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "All mammalian clades show similar adaptation excess in VIPs, though primates show lower overall positive selection proportions, likely due to reduced BS-REL statistical power in short branches. VIPs with strong adaptation signals show signals across all clades, suggesting many human VIPs were also VIPs throughout mammalian evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phylogenetic breadth (C72, C75) strengthens the generality of findings beyond human-specific interactions. The primate anomaly (C73) is appropriately explained by statistical power issues (C74) rather than biological differences. The inference about evolutionary persistence of VIP status (C76) is reasonable given the phylogenetic distribution, though necessarily indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Aminopeptidase N (ANPEP) was identified as the most positively selected non-antiviral VIP meeting criteria for detailed study. Analysis of 84 mammals shows pervasive adaptation (76/165 branches). ANPEP is a multifunctional enzyme used as a receptor by group I coronaviruses. Structural studies identified 22 contact residues, with an N-glycosylation site at position 736 (porcine)/739 (human) being critical for viral binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The case study selection criteria (C77) are transparent and appropriate. The phylogenetic analysis (C78) confirms widespread adaptation. The functional context (C80-C81) and structural information (C82-C86) from prior work provide the foundation for interpreting adaptation patterns. The experimental evidence that the glycosylation site controls viral binding (C85-C86) is crucial for mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "MEME test detects significant adaptation in 85/931 codons in ANPEP. Several adaptively evolving codons are within or adjacent to the viral contact surface. Codons in contact with TGEV/PRCV and neighbors show strong enrichment in adaptation versus ANPEP overall, with enrichment fading rapidly with distance from the contact surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MEME analysis (C87) identifies specific codons under selection. The spatial clustering near the viral interface (C88-C89) provides strong evidence for virus-driven selection. The distance-dependent decay (C90) is particularly compelling as it argues against diffuse selection across ANPEP and specifically implicates the coronavirus interaction surface.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Two codons within the N-glycosylation consensus motif (NX[ST]) evolved adaptively (MEME P=0.005 for both). The mammalian ancestor had functional N-glycosylation, which was lost independently 11 times and regained only twice. These parallel adaptive losses likely resulted from selective pressure by ancient coronaviruses, given the site's critical role in viral binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of adaptation in the glycosylation motif (C91) is statistically significant. The ancestral reconstruction (C92-C94) shows clear directionality (11 losses vs 2 gains), consistent with selection against viral binding. The interpretation of coronavirus-driven selection (C95-C96) is well-supported by the experimental evidence that this site controls viral tropism (C84-C86), though necessarily inferential for ancient viruses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C20"
+    ],
+    "result": "VIPs tend to evolve slowly and experience much stronger evolutionary constraint than other proteins within the same functional categories. Within host functions, viruses preferentially use the most evolutionarily constrained proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result synthesizes the purifying selection findings (C19-C20) with the GO-matched analysis (C3, C48). The conclusion that viruses use constrained proteins is well-supported by multiple lines of evidence showing VIPs are more constrained than functional matches. This represents a key finding that sets up the paradox resolved by the adaptation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C22"
+    ],
+    "result": "Despite experiencing stronger evolutionary constraint, VIPs display higher rates of adaptation compared to other proteins. This excess adaptation is visible across biological functions, multiple time scales, multiple taxa, and across multiple studied viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the central paradox and main finding of the paper (C4, C21). The breadth claim (C22) is supported by the virus-specific, GO-specific, phylogenetic, and temporal analyses throughout the results. The combination of high constraint with high adaptation is the paper's key conceptual contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C5",
+      "C100",
+      "C101"
+    ],
+    "result": "Adaptation is elevated in VIPs across all functional categories, including both immune and non-immune functions. There is substantial enrichment in adaptation signals in VIPs with no known antiviral or immune functions, spanning diverse functions including transcription and signal transduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The breadth across functional categories (C5, C101) is demonstrated by GO analysis showing 73% of categories with \u226550% excess. The strong signal in non-immune VIPs (C100) is supported by both MK test (\u03b1=0.26) and phylogenetic analysis (similar excess to all VIPs). This extends adaptation beyond specialized immune proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C7",
+      "C97",
+      "C118"
+    ],
+    "result": "Viruses are one of the most dominant drivers of evolutionary change across mammalian and human proteomes, having been a major selective pressure in the evolution of the mammalian proteome and exerting very powerful selective pressure across its breadth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion (C7, C97, C118) is supported by the ~30% estimate of adaptive changes attributable to viruses, the breadth across functions and taxa, and the consistency across multiple analytical approaches. The characterization as 'one of the most dominant' is justified by the quantitative estimates, though comparative data on other selective pressures would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The diverse range of functions showing adaptation strongly argues for a pervasive external selective pressure (viruses) as the cause. Adaptation against viruses involves not only specialized antiviral proteins but the entire population of host proteins contacting viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The argument from functional diversity (C102) is logically sound\u2014it's implausible that diverse functions would independently show similar patterns without a common cause. The conclusion about breadth of viral adaptation (C103) follows from the non-immune VIP findings. This represents a paradigm shift from viewing viral adaptation as limited to specialized immune proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "The transferrin receptor (TFRC), previously the only known housekeeping protein adapting to viruses, may represent the rule rather than an exception. Consistent with this, NPC1 was recently shown to adapt against filovirus use in bats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reinterpretation of TFRC (C104) is justified by the findings that many non-immune VIPs show adaptation. The NPC1 example (C105) provides independent contemporary validation. However, this remains somewhat speculative as detailed mechanistic studies like those for TFRC are lacking for most VIPs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C106",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The amount of adaptive evolution attributable to viruses is likely underestimated because: (1) many VIPs remain undiscovered, (2) adaptation likely extends beyond proteins physically contacting viruses to downstream signaling and regulatory elements, (3) not all identified VIPs have been consistently interacting with viruses throughout evolution, and (4) 95% of VIPs were discovered in humans with unknown interaction frequency in other mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Each limitation is logically sound and appropriately conservative (C106, C110-C113). The argument about undiscovered VIPs is supported by discovery rate data. The speculation about downstream effects (C111) is reasonable though untested. The human-centric bias (C113-C114) is acknowledged and appropriately characterized as making results conservative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The results may explain why protein adaptation rates appear invariant across GO functions: because viruses interact with diverse proteins across most functions, they elevate adaptation across the proteome in a function-independent manner. Grouping genes by pathogen interactions rather than GO categories may better reveal selective pressures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly speculative (C115-C116) and represents an interesting hypothesis rather than a tested result. The logic is sound\u2014if a pervasive selective pressure (viruses) affects all functions, it could mask function-specific patterns. However, this remains untested and would require systematic comparison with other selective pressures. The methodological suggestion (C117) is reasonable but also untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "Pathogens in general may be the key driver of protein adaptation in mammals and other lineages, potentially driving many pleiotropic effects on diverse biological functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This extrapolation from viruses to all pathogens (C119) is explicitly speculative ('suggests the possibility'). While viruses are a major pathogen class, bacteria, fungi, and parasites have different interaction modes. The pleiotropic effects claim is logical given the functional breadth but remains speculative without direct evidence for other pathogen classes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Prior work established that viruses interact with hundreds to thousands of mammalian proteins, but adaptation studies focused on specialized antiviral proteins like PKR. Most VIPs evolve slowly, are network hubs, and few cases of adaptation are known outside specialized antiviral proteins, with TFRC being the notable exception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the prior knowledge context (C1-C2, C8-C16). The characterization of PKR (C8-C9) and TFRC (C14-C16) as examples is appropriate. The statements about VIP constraint (C11-C12) and limited known adaptation (C13) set up the paper's contribution. All are supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "The study analyzed ~1300 VIPs manually curated from virology literature, from a set of ~10,000 proteins conserved across 24 mammalian genomes. The vast majority (~80%) have no known antiviral or immune activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe the study design (C17-C18) and are well-documented in the methods and results. The numbers are consistent throughout the manuscript. This establishes the scope and composition of the analysis.",
+    "result_type": "MINOR"
+  }
+]

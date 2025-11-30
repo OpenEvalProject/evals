@@ -1,0 +1,216 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Prior research has established that the brain uses internal models for motor control, which enable prediction of motor command outcomes before sensory feedback becomes available, compensating for inherent sensory delays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 collectively establish the scientific foundation for internal models through extensive citations to prior work. These claims describe established knowledge about motor control, sensory feedback delays, and the role of internal models, all supported by appropriate citations to the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The study addresses limitations of prior work by extracting rich internal models from high-dimensional neural population activity recorded during BMI control, where the BMI provides a simplified, well-defined feedback control system with linear dynamics and complete specification of the mapping from neural activity to cursor movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C17 describe the rationale and methodological approach of the study. The BMI paradigm's advantages (C14-C17) are well-documented properties of the experimental design, and the approach to extract internal models from population activity (C12) is supported by the data presented throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Two rhesus macaques implanted with 96-channel microelectrode arrays in primary motor cortex demonstrated proficient and stable BMI control with success rates near 100% and movement times averaging less than one second.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 and C31-C35 describe the experimental setup and behavioral performance, supported by data in Figure 1\u2014figure supplement 1. The measurements of neuronal units recorded (C32-C33) and methodological details (C34) are clearly documented in the methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Subjects compensated for visuomotor latencies of 100 ms (monkey A) and 133 ms (monkey C), with motor commands pointing closer to targets when originating from current cursor positions rather than delayed positions, suggesting subjects use internal models to predict current cursor position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 are supported by experimental data in Figure 2. The visuomotor latencies (C20-C21) are measured from neural activity, the comparison to prior work (C22) is appropriately cited, and the finding that commands point closer to current positions (C23) supports the inference of internal prediction (C24).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C36",
+      "C37",
+      "C38",
+      "C57",
+      "C66"
+    ],
+    "result": "Internal model mismatch explains approximately 65% of cursor movement errors (70% monkey A, 59% monkey C), with the majority of explanatory power arising from identifying structure in high-dimensional neural activity rather than low-dimensional behavioral measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C25, C36 state the primary quantitative finding, supported by cross-validated data in Figure 3C. Claims C37-C38 and C66 demonstrate that the effect depends on high-dimensional neural structure through control analyses (Figure 3\u2014figure supplements 3-4), and C57 confirms cross-validation on held-out trials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Multiple control analyses rule out alternative explanations for internal model mismatch, including subjects' inability to produce required neural patterns, correlated noise artifacts, and overfitting, with all findings properly cross-validated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C69 describe extensive control analyses. The data show subjects can produce all movement directions (C61-C62, Figure 3\u2014figure supplement 5), simulations under the null hypothesis produce opposite results (C64, Figure 3\u2014figure supplement 6), cross-validation prevents overfitting (C65-C66), and shuffled data controls confirm the effect requires structured neural activity (C67-C69, Figure 3\u2014figure supplement 7).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Internal model mismatch explains long-standing deficiencies in BMI speed control, with subjects intending to hold the cursor steadier during hold periods and move faster during movements than actually occurred, suggesting the subject's learning process may be a key limitation in BMI performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C39-C42 are supported by data in Figure 5 showing systematic speed mismatches. The finding that no speed assumptions were made during model fitting (C43) strengthens the result. Claims C44-C45 and C70-C72 appropriately frame this as explaining known BMI limitations, though C45 and C72 are somewhat speculative inferences from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C59"
+    ],
+    "result": "When the BMI mapping was perturbed, extracted internal models adapted in a manner consistent with the perturbations, with the time-varying internal model tracking changes toward the perturbed mapping during perturbation trials and back toward the intuitive mapping during washout trials, while internal model mismatch persisted throughout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C48-C53, and C59 are supported by data in Figure 6 showing internal model adaptation. The context from prior work on adaptation (C46-C47) is appropriately cited. The finding that internal models track perturbations while mismatch persists (C51) is a key result demonstrating the dynamic nature of internal models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Although internal models may not reside in M1, their computations influence M1 activity, enabling extraction of internal model properties from M1 population recordings through a forward model framework consistent with prior behavioral and computational studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 and C54-C55 appropriately acknowledge that internal models likely originate upstream of M1 (with appropriate citations) while justifying why M1 recordings can reveal internal model properties. Claim C56 explains the methodological choice of forward model framework with appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The finding that intended speed is better predicted by internal models than the BMI mapping provides independent validation of extracted internal models, and it may be possible to improve BMI performance by applying extracted internal models as the BMI mapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C58 makes a valid inference about independent validation from the speed prediction results. However, claims C73-C74 are speculative about future applications without experimental validation. Claim C75 cites prior work but does not directly test whether the current approach would improve performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C83"
+    ],
+    "result": "Access to high-dimensional neural activity enabled identification of subjects' intended movements without constraining them to match actual movements, revealing that neural activity correct under the internal model sometimes produced aberrant cursor behavior, explaining outwardly irrational behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 and C83 describe key insights enabled by the high-dimensional approach, supported by data in Figures 3-4 and control analyses in Figure 3\u2014figure supplement 4. The finding that analyzing cursor movements alone would not reveal these effects (C78) is demonstrated by the control analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C84"
+    ],
+    "result": "Prior beliefs and their role in sensation and behavior have been studied in visual perception, perceptual decision-making, and sensorimotor learning, and similar approaches using multi-neuronal recordings and appropriate statistical algorithms may enable extraction of rich prior beliefs in other systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 appropriately cite prior work on prior beliefs in various domains. Claim C84 is a reasonable speculation about future applications based on the demonstrated methodology, though it remains to be tested experimentally.",
+    "result_type": "MINOR"
+  }
+]

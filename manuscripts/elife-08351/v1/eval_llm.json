@@ -1,0 +1,299 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The systematic review identified 74 studies containing 332 experiments investigating sunitinib's effect on tumor volume. Of these, 158 experiments involving 2716 animals were eligible for meta-analysis, with 52% excluded due to inadequate reporting. The overall pooled effect size was SMD \u22121.8 [\u22122.1, \u22121.6] with mean experiment duration of 31 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 provide clear descriptive statistics from the systematic review and meta-analysis. The data extraction methodology is described, sample sizes are reported, and the overall pooled effect size is calculated using appropriate statistical methods (Hedges' g). These are straightforward reporting of study characteristics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C60",
+      "C61"
+    ],
+    "result": "Preclinical sunitinib studies showed poor implementation of validity practices: no experiments used blinded outcome assessment, only 6% investigated dose-response (\u22653 doses), experiments predominantly used juvenile, female, immunocompromised mouse models with human xenografts (n=110), very few used genetically engineered models (n=4) or spontaneous tumors (n=0), and most malignancies scored low (score=1) for external validity with testing in only one model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C29-C37, C60-C61 are directly supported by the data extraction results shown in Figure 1A and 1B and reported in the text. The systematic assessment of internal, construct, and external validity practices is methodologically sound, with clear operational definitions and transparent reporting of frequencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Subgroup analyses revealed that internal validity practices showed no clear relationship with effect sizes, but active drug comparators were associated with significantly larger effects (\u22122.2 vs \u22121.4, p<0.001). Model type significantly affected effect sizes (genetically engineered vs xenograft p<0.0001; vs allograft p=0.001), and malignancies tested in more diverse systems showed smaller effect sizes (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 report statistical comparisons shown in Figure 3A-C with appropriate p-values. The analyses use standard meta-analytic subgroup comparison methods. However, the lack of multiple testing correction (acknowledged in C129) and the exploratory nature (C104) mean these associations require confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C69",
+      "C70",
+      "C71",
+      "C73"
+    ],
+    "result": "Evidence suggests substantial publication bias: 65.8% of individual experiments showed statistical significance despite small sample sizes (mean ~8 animals/arm), funnel plots were highly asymmetrical, and trim-and-fill analysis estimated 45% overestimation of effect size overall (11% for glioma, 52% for breast cancer). All malignancy types tested showed statistically significant anti-tumor activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50, C69-C71, C73 are supported by appropriate publication bias analyses (funnel plots, trim-and-fill) shown in Figure 4. The finding that 65.8% of small studies showed significance and all malignancies showed significant effects is suspicious and consistent with publication bias. However, funnel plot asymmetry can have other causes, and the authors appropriately acknowledge limitations (C70).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Preclinical effect sizes showed no apparent relationship with clinical efficacy: RCC showed small preclinical effects despite high clinical activity, while small cell lung cancer showed large preclinical effects but was clinically inactive. No dose-response relationship was detected across three orders of magnitude (0.2-120 mg/kg/day) overall or within RCC (4-80 mg/kg/day).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C51-C57, C74-C76 are supported by Figure 2 (showing all malignancies had significant effects) and Figure 5 (showing no dose-response). The comparison with clinical outcomes (C52-C55) relies on cited literature. The absence of dose-response is particularly concerning given that clinical trials show dose-response (C79, C130). This represents a major validity concern for the preclinical literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C25",
+      "C102"
+    ],
+    "result": "Reporting quality was poor: 52% of experiments (174/332) could not be included in meta-analysis due to inadequate reporting (missing sample sizes, measures of dispersion, or error bars), and few reports provided detailed animal housing and testing conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59, C25, C102 document serious reporting deficiencies. The 52% exclusion rate due to inadequate reporting is a direct observation from the data extraction. This is compared to ARRIVE guidelines (C58) providing an appropriate standard. The claim is well-supported but represents a limitation of the published literature rather than a finding about sunitinib per se.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C63",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Unlike some prior studies showing relationships between internal validity practices and effect sizes, this study found no clear relationship. However, consistent with stroke research, testing in more models tended to produce smaller effect sizes, though this could reflect regression to the mean rather than a true validity effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64, C66 report negative/weak findings from subgroup analyses (Figure 3), while C63, C65 cite prior literature showing different results. The authors appropriately acknowledge the alternative explanation of regression to the mean (C67-C68). The uncertainty stems from the exploratory nature, lack of multiple testing correction, and the plausible alternative explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors propose multiple speculative explanations for the lack of dose-response and poor clinical correlation: heterogeneity in cell lines, xenograft model limitations, varied experimental methods, need for mechanistic context, inclusion of poorly designed studies, or fundamentally poor design/reporting practices that render preclinical tumor volume data uninterpretable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C92 are explicitly speculative explanations (marked as SPECULATION in evidence_type). While the authors provide reasoning for and against various explanations (e.g., C84 argues xenografts should show dose-response regardless of predictive value), these remain hypotheses rather than tested conclusions. The discussion appropriately explores multiple possibilities but cannot definitively determine which explanation is correct.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C109",
+      "C110"
+    ],
+    "result": "The study has several acknowledged limitations: reliance on published reports only (with English language restriction), potential unreported use of validity practices, use of graph digitizer software for data extraction, inability to access FDA preclinical data despite FOIA request, exploratory nature requiring confirmation, single-drug focus potentially limiting generalizability, and inability to assess all relevant design elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C110 transparently acknowledge study limitations. These are appropriate and honest assessments. The FOIA request denial (C97-C98) is a factual statement. The exploratory nature (C104) and need for confirmation (C105) appropriately temper conclusions. The limitation about single-drug generalizability (C106-C107) is partially addressed by C108 noting consistency with other reviews.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C131"
+    ],
+    "result": "The systematic review used comprehensive database searches (MEDLINE, EMBASE, BIOSIS) with validated search strategies, dual screening at citation level, 12% double-coding with 83% agreement, and calculated effect sizes as standardized mean differences (Hedges' g) using random effects meta-analysis. Statistical significance was set at p<0.05 without adjustment for multiple testing given the exploratory nature, and no protocol was prospectively registered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C131 describe the methodology transparently. The search strategy (C120-C121) is comprehensive and based on validated approaches. The screening and extraction procedures (C122-C124) include appropriate quality control measures. The statistical methods (C125-C127) are standard for meta-analysis. However, the lack of multiple testing correction (C129) and protocol registration (C131) are acknowledged limitations appropriate for exploratory work but reduce confidence in specific p-values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The introduction establishes context: poor preclinical methodology causes bias, preclinical research has reproducibility problems, few studies have systematically examined design across malignancies, oncology lacks design guidelines despite high attrition rates and costs, and sunitinib (a multi-targeted tyrosine kinase inhibitor licensed for three malignancies, introduced ~2000) provides an opportunity to study preclinical design across multiple cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C22 provide background context supported by appropriate citations to prior literature (C10-C11, C15-C19) and factual statements about sunitinib (C20-C22). These establish the rationale for the study. The claims about preclinical research problems (C1, C10-C14) are well-established in the literature and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The discussion contextualizes findings within broader concerns about preclinical cancer research quality, noting that only 11% of studies withstood industry replication, ongoing reproducibility projects, problems with clinically unachievable drug concentrations, and the existence of design guidelines in other fields (stroke, epilepsy, cardiology) and reporting guidelines (ARRIVE). The authors conclude their findings support developing similar guidelines for oncology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C119 appropriately contextualize the study findings within the broader literature on preclinical research quality. The citations to prior work (C113-C115, C117-C118) are appropriate. The conclusion (C119) that findings support guideline development is a reasonable inference from the documented deficiencies, though it is an opinion about implications rather than a direct empirical finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C108",
+      "C111"
+    ],
+    "result": "The authors note their findings are consistent with observations in experimental stroke and other preclinical cancer intervention reviews, and that other fields (particularly neurology) have successfully implemented validity methods as standard practice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62, C108, C111 appropriately contextualize findings relative to other research areas. These comparisons are supported by citations (C62, C108) and general knowledge (C111). They strengthen the argument that the observed problems are not unique to sunitinib but reflect broader issues in preclinical research, while also showing that solutions are feasible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Study-level characteristics showed that 26% declared conflicts of interest, 59% had private for-profit funding, and 50% recommended clinical testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C134 report descriptive statistics from Table 1. These are straightforward data summaries. The high rate of industry funding (59%) and recommendation for clinical testing (50%) provide context for interpreting potential biases in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C130"
+    ],
+    "result": "Dose-response relationships were found in post-analysis of sunitinib clinical studies in metastatic RCC and GIST.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C130 is supported by citation to clinical literature (Houk et al., 2010). This provides important context showing that dose-response exists clinically (making its absence in preclinical studies more concerning), but is not a finding of the current study.",
+    "result_type": "MINOR"
+  }
+]

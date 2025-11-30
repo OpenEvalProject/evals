@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14"
+    ],
+    "result": "V600E is the predominant BRAF mutation in cancer, accounting for >95% of all BRAF kinase mutations and 98% in the COSMIC database. Less frequent mutations at position 600 (V600D, V600K, V600R) require two nucleotide substitutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13, and C14 are well-supported by mutation database data (COSMIC) and multiple literature citations. The frequency data is consistent across claims and provides strong evidence for the predominance of V600E.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "BRAF is a serine/threonine kinase regulating MEK/ERK signaling, found mutated in germline diseases and somatic cancers. BRAF is autoinhibited by 14-3-3 dimer binding and activated through dephosphorylation and subsequent phosphorylation at Thr599 and Ser602.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C6 describe established BRAF biology supported by multiple literature citations (Garnett and Marais 2004, Wellbrock et al. 2004, Rauen 2013, Holderfield et al. 2014, Brummer et al. 2006, Taylor and Kornev 2011). These are well-established facts in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The BRAF kinase domain has N-terminal and C-terminal lobes connected through the activation segment (AS). Val600 is buried in a hydrophobic pocket in the inactive conformation, and AS residues undergo hydrophobic interactions that lock the kinase in its inactive state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 and C47-C51 describe BRAF structural features supported by citations (Scheeff and Bourne 2005, Roskoski 2010, Lavoie and Therrien 2015) and structural data shown in Figure 1. These are well-established structural descriptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Substitution of Val600 by charged amino acids disrupts hydrophobic interactions and results in constitutive kinase activation. BRAF V600E does not require RAF dimerization or Ras interaction to be active but has increased propensity to form dimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 are supported by multiple literature citations (Wan et al. 2004, Poulikakos et al. 2011, Freeman et al. 2013, Roring et al. 2012, Thevakumaran et al. 2015). These describe established properties of the V600E mutation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "FoldX energy calculations show good correlation between energies derived from active structures or inactive structures separately, but poor correlation when comparing active and inactive structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 are supported by computational analysis shown in Figure 1E. The correlation analysis validates the classification of template structures as active or inactive, providing methodological support for subsequent analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The AS loop (Leu597-Gly615) is moderately to highly flexible with high B-factors and is unsolved in many structures. Position Val600 is moderately flexible (70% solved). Mutations in flexible regions have less impact on BRAF unfolding compared to rigid regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 and C53-C55 are supported by structural analysis of 28 BRAF structures (Figure 2) and citations (Lu et al. 2015, Marino et al. 2015). The correlation between B-factors and presence in structures (Figure 2C) provides quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Experimental validation shows V600E phosphorylates MEK at higher levels than wild-type, similar to V600D and V600K. V600M and V600A show wild-type activity (passenger mutations). V600G is an intermediate activity mutant. Bulkier hydrophobic substitutions (V600W, V600M, V600L) show weak or no activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 are supported by Western blot data in Figure 3B-C with multiple biological replicates. The experimental data directly validates FoldX predictions and provides functional characterization of mutations. However, the classification of V600M and V600A as passenger mutations (C21) is an inference that could benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "An excellent correlation exists between FoldX predictions (incorporating loop destabilization, active conformation stability, and hydrophobic solvation energy) and MEK phosphorylation normalized by total BRAF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by correlation analysis shown in Figure 3D. The integration of multiple FoldX parameters with experimental MEK phosphorylation data demonstrates the predictive power of the computational approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Solubility analysis shows V600E and V600W have similar soluble/insoluble ratios to wild-type, while V487E and L525E have more insoluble protein. F498S has very low expression levels. The soluble/insoluble ratios inversely correlate with FoldX folding energies (R\u00b2~0.67).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 are supported by fractionation experiments (Figure 4C-E) and correlation analysis (Figure 4\u2014figure supplement 2). The R\u00b2~0.67 correlation provides quantitative support. However, the F498S ratio is estimated rather than directly measured, introducing some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Three conservative RASopathy mutations (L485F, L485S, V487G) are found in the hydrophobic pocket region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by citation to Rauen 2013 and data in Supplementary file 1. This connects the findings to germline disease mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "V600E and V600K with T599A/S602A mutations (preventing phosphorylation) show no change or slight reduction in MEK phosphorylation, suggesting the kinase becomes active independent of phosphorylation by opening the AS. Mutating Glu611 to Ala in V600E context does not change MEK phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by Western blot data in Figure 4G-H and supplementary figures. The experiments directly test the phosphorylation-independence hypothesis. However, C34 is an inference that could benefit from additional mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Overall energy changes in inactive structures have poor correlation with cancer mutation occurrence. The authors propose that mutations destabilizing inactive or active conformations decrease effective protein concentration through chaperone binding or degradation, while unfavorable AS loop energies favor kinase activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by correlation analysis (Figure 3A, supplementary figures) and literature citations (Grbovic et al. 2006, Heidorn et al. 2010, Poulikakos et al. 2010). The poor correlation motivates the multi-parameter approach. Claims C57-C59 involve reasonable inferences about protein stability effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Structural analysis suggests K601E could interact with Arg575, but position 600 always points away from Arg575 in active conformations. In V600E structures, Glu600 forms a salt bridge with Lys507, but FoldX calculations suggest negligible energetic contribution. This explains why V600K and V600R are as activating as V600E and V600D.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 are supported by structural modeling (Figure 4F, Figure 4\u2014figure supplement 4), FoldX calculations, and structural analysis of PDB entry 4MNF. The inference in C64 is reasonable given the structural and energetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "The lower frequency of V600K and V600D mutants in cancer is due to requiring two base substitutions, whereas V600E requires only one.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by experimental data showing V600K and V600D are as active as V600E (Figure 3B) and citation to Davies et al. 2002. This provides strong support for the nucleotide substitution hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "Mutations requiring three base substitutions (V600H) have kinase activities similar to V600E.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 is supported by experimental data in Figure 3C showing V600H has high kinase activity. This extends the nucleotide substitution hypothesis to three-base changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C67"
+    ],
+    "result": "Random forest analysis shows AS loop energy contributes ~70% to predicting cancer frequencies, while folding energy (active), nucleotide substitution frequency, codon usage change, and hydrophobic solvation energy contribute almost equally. Destabilization of inactive conformation and salt bridge contribute little. Results are similar with or without V600E in training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 and C67 are supported by random forest analysis shown in Figure 5C and Figure 5\u2014figure supplement 1. The quantitative dissection of parameter contributions is a key finding. The robustness to V600E inclusion/exclusion strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C39",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "V600E is the only single nucleotide substitution that opens the AS through destabilization without significantly impairing folding. Position Val600 is in a flexible region where destabilization activates the kinase while allowing proper folding. Mutations in rigid areas cause unfolding. Whether BRAF mutations are found in disease depends on AS properties, nucleotide substitution requirements, and stability impacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C41-C43 represent the main conclusions synthesizing computational and experimental findings. They are well-supported by the combined evidence from FoldX modeling, structural flexibility analysis (Figure 2), experimental validation (Figures 3-4), and random forest analysis (Figure 5). The model illustrated in Figure 6 effectively summarizes these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Rare mutations can be passengers or drivers depending on nucleotide substitutions needed. Individuals with silent mutations at hotspots may acquire rare disease mutations. Mutations that activate and slightly destabilize proteins may be rescued by chaperone level fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44-C46 are speculative inferences extending beyond the direct experimental evidence. C44 is reasonably supported by the V600H data. C45 is speculative without supporting data. C46 is supported by citation to Lehner 2013 but remains speculative in the BRAF context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Mutations in the phosphate-binding loop (residues 464-472) correspond to <1% of all BRAF mutations in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by mutation frequency data from cancer databases. This contextualizes the focus on the AS region.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "Mutations from frequent to rare codons could affect translation efficiency and protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by citation to Lampson et al. 2013. This parameter is included in the random forest analysis as a contributing factor.",
+    "result_type": "MINOR"
+  }
+]

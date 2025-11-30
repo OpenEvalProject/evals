@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The authors collected a comprehensive electrophysiological dataset from 155 tectal cells measuring 9-33 variables per cell (median 26), with 18% missing data. Correlation analysis revealed three distinct clusters of correlated variables (spikiness, spike shape/dynamics, and intrinsic properties), with 90/528 correlations significant after FDR correction. Principal Variable Analysis showed spike-related variables explained the most variance (15% and 14%), and the step current injection protocol was identified as most informative, explaining 42% of total variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C28 provide detailed methodological information and statistical results that are internally consistent and appropriately analyzed. The use of FDR correction for multiple testing (C21), Principal Variable Analysis (C23-C26), and Principal Variance Analysis (C27) are appropriate statistical approaches. The conclusion that the dataset is well-balanced (C26) and the recommendation for the step protocol (C28) follow logically from the presented analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "During development from stages 43-49, tectal neurons undergo systematic changes in electrophysiological properties. Twelve properties changed significantly across developmental periods, with 14 variables showing increased variability (40%+ increase in SD) from stages 45-46 to 48-49. PCA revealed that the first component (C1, 'Spikiness') changed significantly with age, first increasing through stage 47 then decreasing at stages 48-49, while the second component (C2, 'Current density') remained relatively stable. Cells at stages 48-49 showed 22% larger pairwise differences in 33-dimensional space compared to stages 45-46, indicating increased electrophysiological diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C51 present a coherent developmental trajectory supported by multiple statistical tests (ANOVA, Mann-Whitney, variance tests) with appropriate p-values reported. The PCA analysis (C34-C51) is well-validated through comparison with alternative methods (C119-C123), and the interpretation of components as 'Spikiness' and 'Current density' is supported by loading patterns. The finding of increased diversity at later stages is supported by multiple independent metrics (pairwise distances, variance measures, clustering coefficients).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "At stages 48-49, tectal cells showed 36% higher clustering coefficient (0.67\u00b10.04) compared to stages 45-46 (0.49\u00b10.03), indicating increased internal heterogeneity. Despite this increased heterogeneity, local PCA explained slightly more variance in older cells (0.35\u00b10.04) than younger cells (0.31\u00b10.02), suggesting that cell properties become more coordinated in mature networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 use appropriate clustering analysis (AGNES coefficient) and local PCA to quantify internal structure. The finding that both heterogeneity and coordination increase simultaneously is counterintuitive but well-supported by the data and properly interpreted. The statistical significance (PTT < 1e-11) is strong, and the use of multiple imputation with subsampling (described in methods) addresses the missing data issue appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Four hours of patterned visual stimulation in stage 49 tadpoles altered 8 of 33 electrophysiological properties. Stimulated cells showed increased spiking to step injections (7.1\u00b14.7 vs 4.6\u00b13.3 spikes) but unchanged response to cosine injections, suggesting different biophysical mechanisms underlie developmental versus experience-dependent changes in excitability. Only 3 properties changed both developmentally and after stimulation, with spike threshold changing in opposite directions. Membrane capacitance was the only property affected by both development and stimulation that could contribute to excitability changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C67 demonstrate clear experimental design with appropriate controls (na\u00efve vs stimulated stage 49 animals). The differential response to step vs cosine injections (C57-C60) provides strong evidence for distinct mechanisms. The effect size analysis (Figure 7D, C64) appropriately shows minimal overlap between developmental and stimulation effects. The speculation about electrical coupling (C67) is appropriately hedged and supported by citations to similar findings in other systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Visual stimulation increased neuronal 'Spikiness' (C1) but did not change 'Current density' (C2). The PCA cloud size decreased (11% reduction in 33D pairwise distances), with 8 properties becoming less variable and only 2 more variable. Clustering coefficient decreased from 0.67\u00b10.04 to 0.62\u00b10.02, while local PCA variance explained increased from 0.35\u00b10.04 to 0.41\u00b10.02, indicating reduced cell-to-cell variability but increased interdependence of properties within cells, consistent with homeostatic constraint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C77 present a coherent picture of homeostatic plasticity effects using multiple complementary metrics. The finding that stimulation reduces diversity while increasing property correlations is well-supported by clustering analysis (C74), local PCA (C75), and variance tests (C72-C73). All statistical tests show strong significance (PTT < 1e-15 for most comparisons). The interpretation as homeostatic constraint (C77) is appropriately supported by citations and consistent with the data pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Sequential linear regression modeling identified that activation potentials for INa and IKS explained 18-19% of spike-output variance, followed by membrane resistance (7-13% with interactions). Five variables together explained 33% of variance without interactions and 51% with interactions. The high proportion of variance explained by interactions (18% vs 33% for main effects) and abundance of significant interactions (7/26) indicate that electrophysiological properties do not regulate spiking independently but are constrained, requiring coordinated changes to maintain constant spike output.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 use appropriate regression modeling to identify predictors of spike output. The finding that interactions explain substantial variance (18%) is well-supported and properly interpreted as evidence for constraints (C81). However, the analysis could not differentiate between developmental and stimulation mechanisms when both factors were included, which is appropriately acknowledged. The interpretation about coordinated changes (C82) follows logically from the interaction effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C5",
+      "C101",
+      "C102"
+    ],
+    "result": "Analysis of cells with similar spiking outputs (identified using spike-train similarity metrics) revealed that cells producing similar spike trains can have very diverse underlying electrophysiological properties, and conversely, cells with different spiking outputs can have similar low-level properties. When plotted in PCA space or on correlograms of key predictive variables (INa/IKS activation, Rm/Cm, current amplitudes), similarly-spiking cells did not form compact clusters but showed substantial overlap and dispersion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84, C5, C101-C102 use appropriate spike-train similarity analysis (Victor-Purpura metric) to identify functionally similar cells. The finding of degeneracy (multiple parameter configurations producing similar outputs) is well-demonstrated through Figure 8 and consistent with theoretical expectations cited (C103-C104). The analysis appropriately shows that low-dimensional projections do not capture the full complexity of the relationship between properties and output.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C2",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "During development, tectal neurons become increasingly diverse in their electrophysiological properties, though they do not split into distinct non-overlapping cell types at the stages studied. Cell-to-cell variability remained low at stages 43-47 with properties relatively uncorrelated, but by stages 48-49 variability increased and internal structure emerged with properties agglomerating into clusters. Most physiological differences between cells are linked to overall spikiness, and this tuning and differentiation likely reflects maturation of tectal networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C85-C91 synthesize the developmental findings into a coherent narrative. The conclusion is well-supported by the clustering analysis (C52), PCA results (C45-C51), and variance measures (C30-C33, C48-C50). The comparison to other systems (C91-C92) is appropriately cited. The statement that cells don't form distinct types (C86) is supported by the continuous distribution in PCA space rather than discrete clusters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Sensory stimulation reduced both electrophysiological diversity and functional differentiation of cells, making neurons more similar to each other. The amount of variance explained by linear correlations between variables increased after stimulation, suggesting that sensory stimulation and homeostatic plasticity left a predictable trace in the mutual arrangement of physiological properties within each cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C94-C96 are well-supported by the clustering (C74), local PCA (C75), and variance analyses (C70-C73). The interpretation that increased correlations reflect homeostatic plasticity (C96) is appropriately supported by citations to prior work on homeostatic mechanisms in this system. The contrast with developmental increases in diversity (C94) is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C77"
+    ],
+    "result": "The amount of cross-correlations between cell properties increased after patterned stimulation as a result of homeostatic plasticity, making different cell properties more interdependent and predictable, consistent with the consequences of a strong homeostatic constraint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C77 are directly supported by the local PCA analysis showing increased variance explained (C75: 0.41\u00b10.02 vs 0.35\u00b10.04, PTT < 1e-15). The interpretation as homeostatic constraint is well-supported by the pattern of results and appropriately cited literature. This finding complements the reduced diversity (C3) to paint a coherent picture of homeostatic plasticity effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C60",
+      "C65"
+    ],
+    "result": "Changes in intrinsic excitability during development and in response to sensory stimulation are mediated by different underlying mechanisms. While both developmental stage 47 and visually stimulated stage 49 cells show high spikiness, the biophysical mechanisms underlying this excitability are not shared, as evidenced by differential responses to cosine vs step injections and minimal overlap in affected variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C60, C65 are well-supported by the effect size analysis (Figure 7D) showing only 3 properties changed in both conditions, with one changing in opposite directions. The differential response to cosine vs step injections (C58-C59) provides strong mechanistic evidence. This is a key finding that distinguishes developmental programs from experience-dependent plasticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Developmental stage 47 represents a likely critical tuning period for tectal network maturation, characterized by a previously undocumented sharp, transient (12-18 hour) increase in cell excitability (almost two-fold) and rapid changes in cell tuning variability. This stage is traditionally defined solely on morphological criteria but shows distinctive electrophysiological characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C100 identify stage 47 as a critical period based on the transient peak in C1 (Spikiness) shown in Figure 5B with strong statistical support (PANOVA = 1e-5, PMW < 4e-3 for transitions). This finding explains previous practices of grouping stages 45-46 and 48-49 separately from stage 47. The characterization as a critical period is appropriately hedged ('likely candidate') and represents a novel contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "The conflicting biological goals of developmental flexibility and stability in response to perturbations rely on the redundancy of parameters underlying dynamic behavior, such that multiple parameter configurations can produce phenomenologically identical patterns of network activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 represent appropriate interpretation of the degeneracy findings (C83-C84, C101-C102) in the context of established theory, well-supported by citations to Marder and colleagues. This interpretation connects the empirical findings to broader principles of neural network function and is consistent with the data showing similar outputs from diverse parameter combinations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The experimental procedures included breeding Xenopus laevis with hCG priming, rearing to specific stages (44-46 at 9-12 dpf, 48-49 at 18-20 dpf), visual stimulation with flashing LEDs for 4 hours, and recording between ZT 3-9 from the middle third of the tectum within 3 hours of dissection. Control analyses showed minimal effects of rostro-caudal position (only Cm and Rm correlated), no difference in sampling location between na\u00efve and stimulated groups, and no effects of preparation age or time of day on measured variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C115 provide detailed methodological information that demonstrates appropriate experimental design and controls. The restriction to middle third of tectum (C110) and temporal controls (C109, C114-C115) address potential confounds. The analysis of spatial effects (C112-C113) appropriately acknowledges the two variables that correlate with position while showing this doesn't confound the main comparisons. These are important methodological details that support the validity of the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "In small tectal cells, the resting membrane potential Em is dominated by ionic concentrations of internal and external solutions and is disrupted within 2-3 seconds after whole-cell patch establishment. Na+ and K+ ionic currents are sufficiently temporally isolated to allow simultaneous measurement from voltage-clamp traces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 provide important technical context about the recording conditions and measurement validity. These are appropriately supported by citations (C117-C118) and represent established knowledge about patch-clamp recording in small cells. This information is important for interpreting the holding current measurements as proxies for Em.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "PCA with missing values was validated as the most appropriate dimensionality reduction method for this dataset, preserving 51\u00b12% of variance in pairwise differences. This outperformed Isomap (17\u00b14% to 36\u00b17% depending on neighbors) and Local Linear Embedding (27\u00b19% at optimal 19 neighbors), indicating that linear factor analysis is not only adequate but most appropriate for this data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C123 demonstrate thorough validation of the analytical approach through comparison with alternative methods. The use of R\u00b2 between 2D and 33D distances as a quality metric is appropriate, and the finding that linear methods outperform non-linear methods is well-documented. This validation strengthens confidence in the PCA-based results throughout the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The introduction establishes that biophysical properties of neurons become increasingly diverse during development, that perturbations can lead to neurodevelopmental disorders, and that homeostatic plasticity allows neurons to adjust properties based on circuit activity. In the Xenopus tectum, sensory inputs strengthen over development while intrinsic excitability decreases to maintain stable dynamic range. Homeostatic plasticity is expected to constrain cellular properties, and multivariate distributions may contain unique information about network tuning, though few studies have attempted large-scale multivariate analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C17 provide appropriate background and motivation for the study, well-supported by citations to prior literature. These claims establish the biological context (C1, C7-C13), theoretical framework (C14-C16), and gap in knowledge (C17) that justify the current work. The claims about the Xenopus system (C9-C13) are particularly relevant and well-cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The increase in cell tuning variability observed in developing Xenopus tectum is reminiscent of reports from mammalian sensory cortex, where non-uniformity of neuronal recruitment thresholds is a common feature of developed, functional networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 appropriately place the findings in broader context through comparison to mammalian systems, supported by relevant citations. This comparative perspective strengthens the generalizability of the findings and connects them to established principles in other model systems.",
+    "result_type": "MINOR"
+  }
+]

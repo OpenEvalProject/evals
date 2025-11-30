@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The authors developed an ERSE-luciferase reporter cell line that selectively reports on ATF6 branch activation. The reporter shows 3.8 \u00b1 0.2-fold induction upon ER stress and is not affected by IRE1 inhibition, indicating selectivity for ATF6 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 describe the construction and validation of the ERSE-luciferase reporter system. The experimental data (Figure 1A-B and Figure 1\u2014figure supplement 1) demonstrate robust induction by ER stress and lack of response to IRE1 inhibition, supporting the claim of ATF6 selectivity. The Z' score of 0.7 \u00b1 0.18 indicates excellent assay quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "A high-throughput screen of 106,281 compounds identified 538 compounds that inhibit ER stress-induced ATF6 signaling without affecting transcription, translation, or other UPR branches. The primary screen yielded 1,142 hits (>69% inhibition), which were filtered through counter-screens to remove non-specific inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 describe a systematic screening cascade with appropriate counter-screens. The workflow (Figure 3\u2014figure supplement 2) and data (Figure 1C) support the identification of selective ATF6 inhibitors. The counter-screening strategy effectively removed compounds affecting general transcription/translation or other UPR branches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "A nuclear translocation assay using GFP-ATF6\u03b1 in U2-OS cells was developed to identify compounds that block ATF6\u03b1 activation. The assay achieved a Z' of 0.7 \u00b1 0.18 and identified 85 compounds (Class 1 inhibitors) that prevent nuclear translocation of ATF6\u03b1, including Ceapin-A1 which causes perinuclear accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 describe a robust image-based assay with excellent statistical parameters. The microscopy data (Figure 2A-D) clearly show the expected localization patterns, and the quantitative analysis (Figure 2E-F) demonstrates assay robustness. The Z' score indicates this is a high-quality screening assay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "After tertiary screening with repurchased compounds, Ceapin-A1 emerged as the only Class 1 inhibitor that consistently blocked ATF6\u03b1 target gene upregulation. Of 99 repurchased compounds, 98 showed activity with thapsigargin and 82 also inhibited tunicamycin-induced responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 describe the final validation steps. The qPCR data (Figure 3\u2014figure supplement 1) support the identification of Ceapin-A1 as the lead compound. The high attrition rate during validation is concerning but is acknowledged by the authors and reflects the stringency of the endogenous gene expression assay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Ceapin-A1 inhibits ERSE-luciferase and GRP78 mRNA induction with IC50 = 4.7 \u00b1 1.1 \u03bcM, comparable to S1P inhibitor. IRE1 inhibition had minimal effect, while ISR inhibition showed decreased ATF6\u03b1 target gene induction, consistent with known crosstalk between PERK and ATF6 pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by dose-response data (Figure 3A-B) and are consistent with published literature on UPR crosstalk. The IC50 values are well-characterized with error estimates. The differential effects of IRE1 vs ISR inhibition support pathway selectivity and known biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Ceapin-A1 does not inhibit S1P or S2P proteases, as demonstrated by its lack of effect on SREBP processing at concentrations >5\u00d7 its IC50. This establishes Ceapin-A1 as the first ATF6 inhibitor that does not target these proteases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by the SREBP processing assay (Figure 3C). The data clearly show that Ceapin-A1 at 25 \u03bcM (>5\u00d7 IC50) does not block SREBP cleavage, while the S1P inhibitor does. This is a critical specificity control that distinguishes Ceapins from prior ATF6 inhibitors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Ceapin-A1 prevents ATF6\u03b1 cleavage entirely, while S1P inhibitor produces a membrane-bound cleavage product (ATF6\u03b1-M) that cannot enter the nucleus. This difference suggests Ceapin-A1 traps ATF6\u03b1 in a state/location where it cannot be cleaved, rather than inhibiting proteases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 describe a key mechanistic distinction supported by Western blot and fractionation data (Figure 3D and Figure 3\u2014figure supplement 4). The differential migration and localization of ATF6\u03b1-M vs ATF6\u03b1-N provide strong evidence for distinct mechanisms. The inference about trapping (C62) is reasonable given the data, though the exact mechanism requires further investigation (addressed in companion paper).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Structure-activity relationship studies identified that all four rings in Ceapin-A1 are necessary for activity, and substitution with bis-trifluoromethyl groups (Ceapin-A7) increased potency ~10-fold to IC50 = 0.59 \u00b1 0.17 \u03bcM. IC50 values from qPCR assays correlated well with ERSE-luciferase reporter values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C71 describe systematic SAR studies supported by data in Figure 4. The structure-activity relationships are clearly defined with IC50 values and error estimates. The correlation between reporter and endogenous gene assays (Figure 4E-F) validates the screening approach. The chemical synthesis schemes are provided in the methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Ceapin-A7 selectively inhibits ATF6\u03b1 without affecting PERK or IRE1 branches of the UPR. Western blot analysis shows Ceapin-A7 prevents ATF6\u03b1-N formation while PERK phosphorylation and XBP1s production remain intact. Partial inhibition of XBP1s and DDIT3 mRNA is consistent with ATF6\u03b1 knockout data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 are strongly supported by Western blot data (Figure 5A-B) and qPCR analysis (Figure 5C). The selectivity for ATF6\u03b1 over other UPR branches is clearly demonstrated. The partial effects on XBP1s and DDIT3 are consistent with known crosstalk and cited literature (C80), strengthening the conclusion that Ceapins phenocopy genetic ATF6\u03b1 loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Ceapin-A7 is highly selective for ATF6\u03b1 over ATF6\u03b2. Even at 18.9 \u03bcM (33\u00d7 its IC50 for ATF6\u03b1), Ceapin-A7 does not inhibit ATF6\u03b2-N production or nuclear translocation, while S1P inhibitor blocks both ATF6\u03b1 and ATF6\u03b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 demonstrate remarkable selectivity between closely related paralogs. The Western blot data (Figure 5D and Figure 5\u2014figure supplement 2) clearly show ATF6\u03b2 processing is unaffected by Ceapin-A7 at high concentrations. This is a critical specificity control given the 41% sequence identity and shared activation mechanism between ATF6\u03b1 and ATF6\u03b2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Ceapin-A7 sensitizes cells to ER stress, reducing the IC50 for thapsigargin from 7.1 nM to 4.5 nM (~2-fold), while showing no toxicity in unstressed cells. At higher ER stress levels (30-90 nM Tg), Ceapin-A7 causes a 2-fold increase in apoptotic cells, phenocopying genetic ATF6\u03b1 ablation in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C93 are supported by cell viability (Figure 6A-B) and apoptosis assays (Figure 6C). The 2-fold sensitization is consistent with published ATF6\u03b1 knockout data (C89). The lack of toxicity in unstressed cells (C90) is an important control. The dose-dependent increase in apoptosis at higher stress levels (C91-C92) demonstrates that ATF6\u03b1 is specifically required under stress conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C21",
+      "C26",
+      "C27",
+      "C28",
+      "C94"
+    ],
+    "result": "Ceapins represent a first-in-class series of ATF6\u03b1 inhibitors that selectively block ATF6\u03b1 without affecting ATF6\u03b2, SREBP, or other UPR branches, and without inhibiting S1P/S2P proteases. Through SAR studies, potency was improved 10-fold to IC50 = 600 nM. Ceapins show no toxicity in unstressed cells but increase sensitivity to ER stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C26-C28, and C94 summarize the key findings. The comprehensive selectivity data (Figures 3C, 5A-D, 6C) and SAR studies (Figure 4) support these conclusions. The claim of \"first-in-class\" (C21, C94) is justified given the unique mechanism (not protease inhibition) and selectivity profile. All major claims are backed by experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background on the UPR: About one-third of proteins pass through the ER, where three sensors (IRE1, PERK, ATF6) monitor folding stress. These branches have distinct functions and temporal dynamics, with IRE1 and ATF6 attenuating after prolonged stress while PERK signaling is maintained and promotes apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 provide established background information, all supported by appropriate citations to the literature. These claims accurately represent current understanding of UPR biology and provide necessary context for the study. No experimental validation is needed as these are literature-based background claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on ATF6 and rationale for study: While inhibitors exist for PERK and IRE1, no selective ATF6 modulators have been developed. ATF6\u03b1 and ATF6\u03b2 act redundantly in development but not during ER stress. Prior ATF6 inhibition relied on S1P/S2P inhibitors, which have pleiotropic effects limiting their usefulness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C20 establish the rationale for developing selective ATF6 inhibitors. All claims are supported by appropriate citations. The logic is sound: existing protease inhibitors lack selectivity (C17-C20), and ATF6 was considered \"undruggable\" (C12), justifying the need for novel approaches. These background claims accurately frame the problem addressed by the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C22",
+      "C96"
+    ],
+    "result": "Ceapins trap ATF6\u03b1 in the ER in discrete foci through rapid, reversible clustering, preventing ER exit. This mechanism is detailed in an accompanying manuscript.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C96 reference findings from a companion paper (Gallagher and Walter, 2016). While the detailed mechanism is not shown in this manuscript, the citation to a peer-reviewed companion paper provides appropriate support. The naming rationale (\"ceap\" = to trap) is consistent with the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The inactive Ceapin analog A5 does not inhibit ATF6\u03b1 target genes, serving as a negative control. Higher IC50 values for HERPUD1 reflect contributions from IRE1/XBP1 and PERK/ATF4 branches, consistent with known UPR crosstalk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 describe important controls. The inactive analog data (Figure 3B) validates the specificity of active Ceapins. The interpretation of HERPUD1 IC50 values (C73) is supported by citations and is consistent with known biology of this gene being regulated by multiple UPR branches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Discussion of ATF6 in disease and therapeutic potential: ATF6 was considered undruggable, but has roles in tumor dormancy, cystic fibrosis, and amyloidosis. UPR branch crosstalk complicates therapeutic strategies. Ceapins now enable pharmacological modulation of all three UPR branches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C102 discuss the broader implications and are supported by appropriate citations. The claim that Ceapins enable modulation of all three UPR branches (C102) is justified given the availability of IRE1 and PERK inhibitors. These discussion points appropriately contextualize the significance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Summary of Ceapin selectivity: Ceapins do not inhibit IRE1, PERK, SREBP processing, or ATF6\u03b2 activation in response to ER stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 summarize key selectivity findings that are detailed in other results. These are supported by data in Figures 3C, 5A, and 5D. While these are summary statements, they accurately reflect the experimental evidence and are appropriately included in the abstract/introduction.",
+    "result_type": "MINOR"
+  }
+]

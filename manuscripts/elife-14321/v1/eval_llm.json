@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C37",
+      "C78",
+      "C79"
+    ],
+    "result": "All dorsal CA1 pyramidal neurons recorded in this study are place cells. Of 1264 recorded pyramidal cells, 780 had directional place fields distributed throughout the linear track, while the remaining 484 had low firing rates everywhere, consistent with place cells lacking a place field in this environment. None of the 1264 cells responded to the CS in a purely non-spatial manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18, C19, C37, C78, and C79 collectively support this result through comprehensive spatial mapping of all recorded neurons. The classification of all neurons as place cells (either active or silent in this environment) is well-documented with appropriate criteria (firing rate, spike width, bursting properties). The authors acknowledge detection limitations for very low-firing cells (C79), which strengthens rather than weakens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C26",
+      "C42"
+    ],
+    "result": "Dorsal CA1 pyramidal neurons do not respond to the tone (CS) when the animal is moving. CS-evoked changes in firing rate are absent during running, and this lack of response does not impair task performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C24, C26, and C42 provide converging evidence from neural recordings (Figures 3A, 3B) and behavioral performance data (Figure 3\u2014figure supplement 1). The dissociation between neural response and behavioral performance is critical and well-documented. The velocity thresholds for classifying 'running' vs 'sitting' are clearly defined (>10 cm/s vs <2 cm/s).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C41"
+    ],
+    "result": "When the animal is inactive, apparent tone-evoked responses reflect an arousal-mediated resumption of place-specific firing. During sitting, pre-trial firing rates differ from spatially predicted rates due to ripple-associated activity, and the CS triggers cessation of ripples and realignment of firing with place field intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C25, C27, C28, C29, C30, C31, C32, and C41 form a coherent mechanistic explanation supported by multiple lines of evidence: ripple detection (Figure 4A), correlation between CS responses and ripple presence (Figure 4B-C), and quantitative analysis of firing rate alignment with place fields (Figure 3C). The arousal hypothesis is well-supported by the data showing that post-CS firing matches place field predictions while pre-CS firing does not.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "A cell's spatial tuning exerts strong influence on its response to non-spatial stimuli. The CS evokes increased firing when delivered within a cell's place field and silences the cell when delivered outside its place field. This correlation holds at both population and single-cell levels, indicating no CA1 neurons respond to the CS in a space-invariant fashion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C21, C22, and C23 are strongly supported by comprehensive spatial analysis (Figure 2C-F) showing correlation between place field intensity and CS-evoked firing at both population and single-cell levels. The use of Spearman's rank correlation (Figure 2F) is appropriate for this analysis. The exclusion of eyeblink trials from place field construction (C20) is a critical methodological strength that prevents circular analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "While 10% of recorded cells (123/1264) showed statistically significant changes in firing rate following CS onset (87 increases, 36 decreases), none responded consistently across trials. The statistical significance should be interpreted as heuristic only, as spatial tuning and brain state violate independence assumptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C17, C80, C81, and C82 provide appropriate statistical analysis with important caveats. The authors correctly identify that the Wilcoxon signed-rank test assumptions are violated (C82), which is a critical acknowledgment. The trial-by-trial variability analysis (Figure 1E-F) demonstrates that population-level statistics mask the lack of consistent single-trial responses, which is a key finding that challenges previous interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The CS does not reset hippocampal theta phase. While one of three animals showed sustained theta phase alignment to CS/US, the new phase remained highly correlated with pre-stimulus phase, indicating subtle phase shift rather than reset. This perturbation is not necessary for task performance as it was absent in two of three animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C34, C35, C36, C49, C50, and C51 provide strong evidence against theta reset through careful phase continuity analysis (Figure 5E). The STFT-based approach with non-overlapping windows (Figure 5\u2014figure supplement 3) ensures independent pre- and post-stimulus phase estimates, which is methodologically sound. The variability across animals (only 1/3 showing the effect) combined with normal task performance in all animals strongly argues against necessity of theta phase effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C43",
+      "C63"
+    ],
+    "result": "The dorsal hippocampus (specifically CA1) transmits exclusively spatial information, even in this hippocampally dependent non-spatial task. The most parsimonious explanation is that dorsal CA1 neurons are all place cells and apparent responses to non-spatial stimuli are due to arousal-mediated resumption of place-specific firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C43, and C63 represent the main conclusion, which is well-supported by the convergence of multiple lines of evidence: (1) all neurons are place cells, (2) CS responses are absent during running, (3) CS responses during sitting align with place field predictions, and (4) CS responses correlate with ripple cessation. The parsimony argument is strengthened by the ability to explain previous findings (C44) and predict outcomes under different experimental conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The conjunctive CS-place cell model is rejected because CS-evoked changes in firing rate disappear when the animal is running. Instead, the data support an arousal-mediated model where place cells exhibit place-specific firing when moving or alert, but different patterns during quiet wakefulness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C39, and C40 provide clear logical reasoning for rejecting the conjunctive model. The key observation that CS responses disappear during running (when place cells are most active) is incompatible with a model where cells encode CS-place conjunctions. The alternative arousal model makes specific, testable predictions (C40) that are confirmed by the data (C41).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "CS-evoked changes in dorsal CA1 firing rates and theta phase are not necessary for task performance, yet dorsally restricted hippocampal lesions produce learning deficits. The authors propose several speculative explanations for this apparent discrepancy, including involvement of other hippocampal areas, subtle encoding mechanisms, offline consolidation processes, or necessity of spatial context for learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54 and C55 establish an important tension between the current findings and lesion literature. However, claims C56-C62 are explicitly speculative and not tested in this study. While the speculation is reasonable and well-grounded in literature (C58, C59, C61, C62 cite supporting work), none of these alternative explanations are empirically evaluated. This represents an important limitation and direction for future work rather than a supported result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The arousal-mediated model can account for previously reported patterns of hippocampal activity in eyeblink conditioning. Studies with restrained animals would observe consistent CS responses in cells with place fields overlapping the recording location. Any salient stimulus should evoke responses regardless of task dependence, and stimulus salience changes during learning could produce stereotyped evolution of hippocampal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C45, C46, and C47 provide testable predictions that reconcile current findings with previous literature. The prediction about restrained animals (C44) is particularly strong as it explains why previous studies found consistent CS responses. The predictions are well-grounded in cited literature (Berger et al., 1983; Moita et al., 2003; McEchron and Disterhoft, 1997), though C46 involves some speculation about learning-related changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "These experiments highlight the importance of accounting for brain state in studies where alertness changes may confound observed selectivity to experimental stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 represents an important methodological conclusion well-supported by the demonstration that apparent CS responses are actually brain state transitions. This has broad implications for interpretation of neural responses in behavioral tasks and is a significant contribution to experimental methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C15",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The study recorded from 1264 putative pyramidal cells (estimated 400-500 unique cells) across three male Long-Evans rats using chronically implanted tetrode arrays in dorsal CA1. Animals were trained in trace eyeblink conditioning (250 ms tone CS, 250 ms trace interval, 10 ms eyelid stimulation US) while freely moving on a linear track, receiving 38-186 trials per session across two daily sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C65-C77 provide comprehensive methodological details that are clearly reported. The cell classification criteria (firing rate <4 Hz, spike width >0.25 ms, bursting >5%) are standard for pyramidal cell identification. The acknowledgment that 1264 units likely represent 400-500 unique cells (C77) due to repeated recordings is an important caveat. The trace interval duration is validated by citation to lesion studies (C72).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The introduction establishes the scientific context: the hippocampus is crucial for episodic memory in humans and spatial learning in rodents. Previous studies found that dorsal CA1 neurons can respond to non-spatial stimuli in trace eyeblink conditioning, but these studies did not characterize spatial tuning properties, leaving the functional significance controversial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C7-C14 accurately represent established knowledge and prior work, supported by appropriate citations to foundational literature (Squire, 1992; O'Keefe and Nadel, 1978; Scoville and Milner, 1957; Berger et al., 1976, 1983; Weiss et al., 1996; Weible et al., 2006). The identification of the gap in previous studies (C14) provides clear motivation for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48",
+      "C52"
+    ],
+    "result": "Previous studies reported that CS can reset hippocampal theta phase, but the current analysis does not rule out that CS may modulate the degree of theta phase-locking across brain areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C52 appropriately cite prior work (Nokia et al., 2010; Darling et al., 2011) and acknowledge limitations of the current analysis. The caveat in C52 is important as it recognizes that absence of evidence for theta reset does not preclude other forms of theta modulation that were not measured.",
+    "result_type": "MINOR"
+  }
+]

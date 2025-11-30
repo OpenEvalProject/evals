@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors identify Apo2 as 11',12'-dihydrogalloxanthin through spectroscopic analysis, mass spectrometry, theoretical calculations, and ozonolysis experiments. The compound has the same molecular weight as galloxanthin plus two daltons, a 22 nm blue-shifted absorbance spectrum, and saturation at the 11',12' double bond.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 provide converging evidence from multiple independent methods (UV-Vis spectroscopy, LC-MS, theoretical predictions using Woodward-Fieser rules, and chemical derivatization/ozonolysis) that consistently support the structural identification of Apo2 as 11',12'-dihydrogalloxanthin. The experimental data match theoretical predictions closely (22 nm observed vs. 22.5 nm predicted shift), and the ozonolysis fragmentation pattern confirms the specific position of saturation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "UVS species have significantly higher dihydrogalloxanthin:galloxanthin ratios (0.81 \u00b1 0.09) compared to VS species (0.52 \u00b1 0.27) in whole retina extracts. This association remains significant after accounting for phylogenetic relationships (p=0.012).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 demonstrate a statistically significant difference in apocarotenoid ratios between VS and UVS species using appropriate phylogenetic comparative methods. The analysis accounts for phylogenetic inertia (Blomberg's K = 1.58, Pagel's \u03bb = 0.93) and uses phylogenetic generalized linear models to control for non-independence of species data. Sample sizes are adequate (n=21 UVS, n=24 VS species).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Microspectrophotometric analysis and spectral curve fitting of individual C-type oil droplets confirm that UVS species contain primarily dihydrogalloxanthin while VS species contain primarily galloxanthin, demonstrating that birds modulate these apocarotenoid ratios to tune SWS2 cone spectral filtering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by direct measurements of individual oil droplets using microspectrophotometry combined with spectral curve fitting that explains >98% of variance. This provides direct cellular-level evidence complementing the whole-retina measurements, strengthening the conclusion about the mechanism of spectral tuning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C49",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors propose and experimentally validate a three-step enzymatic pathway for dihydrogalloxanthin synthesis: BCO2 cleaves zeaxanthin to produce 3-Hydroxy-10'-apo-\u03b2-caroten-10'-al, RDH12 reduces this to galloxanthin, and RETSAT saturates galloxanthin to produce dihydrogalloxanthin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C54 are supported by systematic enzyme reconstitution experiments in HEK293 cells. Each step produces the expected product as verified by HPLC with characteristic absorbance spectra. The sequential addition of enzymes yields the predicted intermediates and final product, demonstrating sufficiency of the pathway. However, necessity has not been demonstrated (e.g., through knockout experiments in vivo).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "BCO2, RDH12, and RETSAT are expressed in the photoreceptor layer of developing chicken retina, with transcript levels increasing significantly during development (p<10^-5 for all three enzymes) in parallel with apocarotenoid accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 provide complementary evidence from in situ hybridization (spatial localization) and qPCR (temporal expression patterns) that correlate enzyme expression with apocarotenoid accumulation. The statistical significance is strong (p-values ranging from 10^-5 to 10^-7), and the temporal correlation supports but does not prove causation. Three biological replicates were used at each developmental time point.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C67"
+    ],
+    "result": "Color vision modeling shows that optimal C-type oil droplet filtering differs significantly between VS (\u03bbcut = 457.4 \u00b1 9.7 nm) and UVS species (\u03bbcut = 425.1 \u00b1 6.5 nm) in bright light, with actual visual system parameters differing by only 2% from modeled optima.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62, C67 are supported by computational modeling using the receptor noise-limited (RNL) framework with appropriate parameters. The close match between predicted optima and actual measurements (2% difference) in bright light conditions is compelling. However, the model makes several assumptions about the 'chromatic ecosystem' and uses generalized parameters that may not reflect species-specific visual ecology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "UVS species are predicted to discriminate significantly more colors (8.24 \u00b1 1.77 \u00d7 10^6) than VS species (5.18 \u00b1 1.03 \u00d7 10^6) in bright light (p=0.00021), consistent with previous modeling studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by the color vision modeling with appropriate statistical testing (independent sample t-test). The result is consistent with prior literature, providing external validation. However, the absolute numbers depend on model assumptions about the complete color space rather than ecologically relevant colors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "In dim and very dim light conditions, the model predicts significantly reduced color discrimination compared to bright light, and actual C-type droplet parameters underperform model optima by 14-25%, significantly worse than the fit in bright light (p=1.25 \u00d7 10^-11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by modeling under different light conditions with appropriate statistical testing (paired t-test and repeated measures ANOVA). The poor fit in low-light conditions compared to bright light supports the hypothesis that these visual systems are optimized for bright-light conditions. However, the absolute dark noise levels in avian photoreceptors are unknown, limiting interpretation of the very dim condition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Increment threshold modeling shows that mismatching UVS visual systems with VS-like C-type droplets creates a spectral 'blind spot' between 400-450 nm, while the reverse mismatch produces little change, demonstrating the importance of complementary SWS2 tuning in UVS species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by increment threshold spectral sensitivity modeling that tests the functional consequences of mismatched visual system components. The asymmetric effect of mismatching (UVS systems are more sensitive to mismatch than VS systems) provides strong evidence for the functional importance of coordinated tuning in UVS species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C73",
+      "C74",
+      "C128"
+    ],
+    "result": "The shift from VS to UVS vision requires complementary spectral tuning of both SWS1 (via opsin changes) and SWS2 cones (via apocarotenoid-based oil droplet filtering) to maintain optimal color discrimination and even spectral sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C73-C74, C128 represent the central thesis supported by the combined biochemical, spectroscopic, and modeling evidence. The correlation between SWS1 opsin tuning and C-type droplet filtering (C21), the identification of the molecular mechanism (apocarotenoid ratios), and the functional modeling all converge to support this conclusion. This represents a comprehensive demonstration of coordinated evolution of distinct spectral tuning mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Birds have repurposed BCO2, typically a carotenoid-degrading enzyme, for color vision by retaining and accumulating its apocarotenoid products at high concentrations in the retina for spectral filtering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 are supported by the demonstration that BCO2 produces apocarotenoids that accumulate in avian retinas (rather than being degraded as in mammals), and these products serve a specific functional role in spectral tuning. This represents a novel functional interpretation of BCO2 activity, though the evolutionary mechanisms underlying this repurposing are not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C103"
+    ],
+    "result": "Avian RDH12 and RETSAT exhibit broader substrate specificity than previously reported, acting on apocarotenoids in addition to their known retinoid substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100 and C103 are supported by the enzyme reconstitution experiments showing that avian RDH12 reduces apocarotenal substrates and RETSAT saturates galloxanthin. However, the claim of 'broader substrate specificity' is relative to mammalian orthologs, and direct comparative enzyme kinetics are not provided. The sufficiency demonstrated in cell culture does not exclude the possibility of other enzymes contributing in vivo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Despite the theoretical requirement for MWS cone blue-shifting in UVS species to achieve perfect spectral separation, no systematic differences in MWS cone positioning are observed between VS and UVS species, suggesting mechanical constraints or limited functional impact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C106 identify an interesting discrepancy between theoretical predictions and observations, but the explanation remains speculative. The authors suggest mechanical constraints or limited functional impact but provide no direct evidence for either hypothesis. This represents an important observation that requires further investigation but cannot be definitively evaluated with the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C112"
+    ],
+    "result": "The complementary tuning of SWS1 opsin and C-type oil droplet filtering represents an adaptation specifically for enhanced color discrimination under bright-light conditions, maintaining near-optimal performance and eliminating spectral blind spots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109, C112 are supported by the modeling results showing optimal performance in bright light but poor fit in dim/very dim conditions. The increment threshold modeling further supports the functional importance for maintaining spectral sensitivity. However, the conclusion about selective pressure is inferential rather than directly demonstrated through evolutionary or ecological studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C118"
+    ],
+    "result": "The VS-to-UVS transition involves a complex suite of coordinated optical adaptations including SWS1 opsin changes, C-type oil droplet filtering shifts, and ocular media transmittance changes, all necessary to obtain maximal functional benefit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116 and C118 synthesize findings from the current study with cited literature on ocular media and photoreceptor optics. While the current study directly demonstrates the oil droplet component, the integration with other adaptations relies on literature citations. The conclusion about the necessity of coordinated changes is supported by the modeling showing functional deficits with mismatched components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Current practice of categorizing avian visual systems based solely on SWS1 opsin sequences may provide an incomplete view of spectral adaptations, as complementary changes in oil droplet filtering and ocular media are not guaranteed to be present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 represent an important methodological critique supported by the demonstration that multiple coordinated changes are required for optimal function. The observation that oil droplet composition varies even among species with the same opsin type (C41) supports this concern. However, the extent of this problem in the literature is not systematically quantified.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C21",
+      "C22",
+      "C23",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors developed a 'clip-chip' approach that enables proteome-wide, activity-based screening for novel enzymes by delivering thousands of purified proteins from a protein microarray to a substrate-coated slide for parallel biochemical reactions. Using this method with 4256 E. coli proteins, they identified four KDAC candidates, including YcgC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C23 and C119-C122 collectively demonstrate the successful development and application of the clip-chip method. The experimental data (Figure 1) shows identification of YcgC and validation of its deacetylase activity. The method's design principles are clearly described and experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C36",
+      "C37",
+      "C38",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "YcgC is a serine hydrolase that uses Ser200 as the catalytic nucleophile for lysine deacetylation and does not require NAD+ or Zn2+ cofactors. The enzyme is inhibited by AEBSF but not by conventional deacetylase inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C36-C63 provide converging biochemical evidence including: (1) deacetylation activity without NAD+/Zn2+ (Figure 2a, HPLC, ICP-MS); (2) inhibition by AEBSF but not other inhibitors (Figure 3\u2014supplement 1); (3) MS/MS identification of AEBSF-labeled Ser200 (Figure 3b); (4) loss of activity in S200A and 5SA mutants (Figure 3a). This establishes YcgC as a novel serine hydrolase-based KDAC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "YcgC deacetylates RutR at Lys52 and Lys62 both in vitro and in vivo. LC-MS/MS analysis identified these sites as acetylated in wild-type RutR, and acetylation was lost after YcgC treatment. Mutagenesis studies confirmed both sites are major acetylation targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C51 are supported by multiple lines of evidence: (1) LC-MS/MS identification of acetylated K52 and K62 in untreated RutR (Figure 2b, Figure 2\u2014supplement 2a); (2) loss of acetylation signals after YcgC treatment (Figure 2c, Figure 2\u2014supplement 2b); (3) K52Q, K62Q, and K52/62Q mutants showing reduced acetylation (Figure 2e). The data consistently demonstrate these are the primary deacetylation sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "YcgC effectively deacetylates RutR in vivo in a dose-dependent manner without affecting RutR protein stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by IP-coupled immunoblotting showing dose-dependent reduction in RutR acetylation upon YcgC induction while total RutR levels remain constant (Figure 2d). This demonstrates in vivo KDAC activity without proteolytic degradation of the substrate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Deacetylation of RutR by either YcgC or CobB triggers apparent autoproteolysis resulting in N-terminal truncation and faster migration on SDS-PAGE. This autoproteolytic activity is dependent on deacetylation (particularly at K62) and requires native protein conformation, as heat-denatured RutR can be deacetylated but does not undergo cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C75 are supported by: (1) consistent observation of downshifted bands with both YcgC and CobB (Figures 2a, 3a); (2) N-terminal sequencing showing loss of 11-14 residues (C66-C68); (3) heat-denatured RutR being deacetylated without cleavage (Figure 3c); (4) K62 mutants showing diminished cleavage (Figure 3\u2014supplement 2). The convergence of evidence from two mechanistically distinct deacetylases supports autoproteolysis rather than direct protease activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "The Km and Vmax of YcgC for RutR deacetylation are 2.13 \u00b1 0.65 \u03bcM and 0.29 \u00b1 0.07 \u03bcM/min/\u03bcM, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by steady-state kinetic assays measuring production of the downshifted RutR band at various substrate concentrations (Figure 3\u2014supplement 3). However, the use of the cleavage product as a surrogate for deacetylation activity introduces potential complications, as the measured kinetics reflect both deacetylation and subsequent autoproteolysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C83",
+      "C84",
+      "C114"
+    ],
+    "result": "YcgC regulates transcription by deacetylating RutR at K52 and K62, leading to down-regulation of RutR target genes pmrD and gcd without affecting rutR expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C83-C84, and C114 are supported by qPCR data showing ~5-fold reduction in pmrD and gcd expression upon ycgC induction while rutR levels remain unchanged (Figure 4a). This is consistent with the in vitro and in vivo deacetylation data for RutR. The mechanism linking deacetylation to transcriptional repression requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "YcgC and CobB target distinct sets of substrates and function via different biological processes. Global gene expression analysis shows minimal overlap between genes affected by ycgC versus cobB induction, and Western blot analysis reveals different acetylation profile changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C85-C97 are supported by: (1) microarray data showing 197 down-regulated and 93 up-regulated genes for ycgC vs. 195 down-regulated and 136 up-regulated for cobB with minimal overlap (Figure 4b, Venn diagrams); (2) differential effects on RutR target genes; (3) distinct acetylation profile changes by Western blot (Figure 4c). The convergent evidence from multiple approaches strongly supports distinct substrate specificities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "YcgC has prokaryotic homologs with conserved KDAC activity but no significant eukaryotic homologs. Five representative homologs from different bacterial species all exhibit KDAC activity with different substrate preferences, as demonstrated by unique deacetylation signatures upon overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C98-C104 are supported by: (1) sequence analysis identifying prokaryotic but not eukaryotic homologs; (2) sequence alignment showing conserved N-terminal regions (Figure 5b); (3) Western blot data showing each homolog produces a unique deacetylation signature (Figure 5c,d). This demonstrates conserved KDAC function across bacterial species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "YcgC and its homologs represent a novel family of prokaryotic KDACs that share little similarity with known KDACs and do not require NAD+ or Zn2+ cofactors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C105-C107 are supported by the combination of: (1) lack of sequence homology to known KDACs; (2) unique serine hydrolase mechanism; (3) independence from NAD+/Zn2+ cofactors; (4) conserved KDAC activity among bacterial homologs. These features collectively establish YcgC as representing a novel KDAC family.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Acetylation of RutR may enhance its stability, as endogenous RutR is heavily acetylated and deacetylation triggers autoproteolysis. The authors claim this is the first example of protein deacetylation driving proteolytic activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C113 involve speculation and novelty claims. While C112 is supported by experimental observation, C111 is an inference that requires additional validation (e.g., measuring RutR half-life under different acetylation states). C113 is a literature-based novelty claim that cannot be fully verified without comprehensive literature review. The proposed mechanism is plausible but incompletely characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116",
+      "C118"
+    ],
+    "result": "The authors propose that YcgC deacetylates RutR, leading to recruitment of additional cofactors that enhance silencing of target gene expression, and suggest possible crosstalk between protein acetylation and phosphorylation in E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116 and C118 are speculative mechanistic proposals not directly tested in this study. While the data show deacetylation leads to transcriptional changes, the proposed mechanism involving cofactor recruitment lacks experimental support. The crosstalk hypothesis is based on known PmrD function but requires direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background claims establishing the importance of lysine acetylation, the limited number of known prokaryotic KDACs, and the rationale for developing biochemical rather than bioinformatics approaches to identify novel KDACs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C9-C15 represent established knowledge and background information supported by appropriate citations. These provide context for the study but are not novel findings. The rationale for the biochemical approach is well-justified given the limitations of homology-based searches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C115",
+      "C117"
+    ],
+    "result": "Background information about substrate selection (NhoA, RutR, YceC), YcgC/DhaM, deacetylase cofactor requirements, and RutR function as a transcriptional regulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20, C28-C35, C78-C82, C115, and C117 represent established knowledge supported by appropriate citations. These provide necessary context for experimental design and interpretation but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Validation of clip-chip candidates showed CobB deacetylates RutR, YjgD shows no activity, and Gnd/YhbL show slight activity. YcgC also showed KDAC activity against NhoA and YceC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are supported by immunoblot data (Figure 1d). However, C27 lacks shown data, reducing confidence. These results validate the clip-chip approach and confirm CobB as a positive control, but the focus appropriately shifts to YcgC characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Deacetylated RutR appears at slightly lower molecular weight than acetylated RutR on Coomassie staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is an observation that led to the discovery of RutR autoproteolysis. This is supported by consistent observations across multiple experiments and is important for understanding the complete biochemical characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "The authors envision that the clip-chip strategy will be of wide application for de novo discovery of enzyme activity in biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C123 is speculation about future applications. While the successful identification of YcgC demonstrates proof-of-concept, broader applicability requires validation with other enzyme classes and substrates. The claim is reasonable but not experimentally supported in this manuscript.",
+    "result_type": "MINOR"
+  }
+]

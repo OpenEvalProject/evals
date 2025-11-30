@@ -1,0 +1,239 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C62"
+    ],
+    "result": "The authors generated a stable transgenic Drosophila line ubiquitously expressing rsEGFP2-\u03b1-tubulin fusion protein under the ubiquitin 68E promoter. The flies showed normal lifespan (~41 days at 25\u00b0C), maintained fitness over 50+ generations, and expressed the fusion protein at moderate levels (3:1 ratio of endogenous to fusion protein) without adverse effects on development or reproduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C21-C29, and C62 provide converging evidence from multiple experimental approaches (confocal imaging, lifespan analysis, Western blotting, multi-generational propagation) demonstrating successful generation of a viable transgenic line. The Western blot data (C28) quantitatively confirms moderate expression levels, and the observation of normal oogenesis/spermatogenesis (C25-C27) supports the lack of developmental defects. The consistency across multiple assays and the long-term stability over 50+ generations strongly support this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C37"
+    ],
+    "result": "RESOLFT nanoscopy achieved sub-diffraction resolution imaging of microtubules in resected Drosophila tissues (body wall muscles, salivary glands), with FWHM values consistently around 50-60 nm, representing an approximately 4-fold improvement over diffraction-limited confocal microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 are supported by quantitative FWHM measurements shown in multiple figures (Figure 2\u2014figure supplement 1B, Figure 3\u2014figure supplement 1) and direct visual comparison between confocal and RESOLFT images. The resolution measurements are based on averaging multiple line profiles (3 or 10 adjacent profiles) and fitting with Lorentzian functions (C93), which is an appropriate method. The consistent achievement of 50-60 nm resolution across different tissue types strengthens the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The authors demonstrated 3D RESOLFT imaging by recording z-stacks with both 2D-doughnut (14 images, 250 nm axial spacing) and 3D-doughnut configurations (33 images in 2 \u03bcm volume), with the 3D-doughnut providing approximately 4-fold improved axial resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by imaging data in Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3, and Videos 1-2. The technical implementation is clearly described (C35, C87), and the improvement in axial resolution with the 3D-doughnut is demonstrated. However, the manuscript acknowledges that the 2D-doughnut approach had 'relatively poor axial resolution' (C34), which is an appropriate limitation to note.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C6"
+    ],
+    "result": "RESOLFT nanoscopy enabled imaging up to 42 \u03bcm deep within scattering fly tissue with superior signal-to-noise ratio compared to confocal microscopy. While resolution decreased with depth, RESOLFT consistently outperformed confocal imaging at all depths, attributed to switching off-state molecules outside the focal region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 are supported by depth-series imaging data in Figure 2D showing systematic comparison of confocal and RESOLFT at multiple depths (2, 10, 23, 42 \u03bcm). The mechanistic explanation (C42, C73) for improved contrast is consistent with the RESOLFT principle. The acknowledgment that resolution degrades with depth (C43) demonstrates appropriate scientific rigor. The use of silicone oil immersion objective to match tissue refractive index shows proper experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C4"
+    ],
+    "result": "RESOLFT nanoscopy was successfully performed on intact living Drosophila larvae by imaging through the cuticle, achieving \u226460 nm lateral resolution. Larvae were immobilized between spacers while maintaining viability, and individual microtubules were resolved despite occasional larval movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 are supported by imaging data in Figure 3 showing successful in vivo imaging through intact cuticle. The sample preparation method is clearly described (C47, C95), and quantitative resolution measurements (C52, Figure 3E, Figure 3\u2014figure supplement 1) confirm achievement of \u226460 nm resolution comparable to resected tissues. This represents a significant technical achievement as imaging through intact cuticle adds optical challenges. The ability to resolve structures despite larval movement (C48, C50) demonstrates robustness of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C5"
+    ],
+    "result": "Time-lapse RESOLFT imaging was demonstrated over 2.5 hours (40 frames, 552 \u03bcm\u00b2 field of view) and at higher temporal resolution (40 frames at 9.3 s/frame, 52 \u03bcm\u00b2 field of view), showing continued microtubule dynamics without obvious cellular distress despite photobleaching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 are supported by time-lapse data in Figure 4, Videos 3-4, and Figure 4\u2014figure supplement 1. The observation of continued microtubule growth/shrinkage (C55) and lack of cellular distress (C56) provides evidence for cell viability during extended imaging. However, the assessment of 'no obvious signs of cellular distress' (C56) is qualitative and somewhat subjective. The authors acknowledge 'recognizable photobleaching' (C56), which is appropriately transparent. The two different temporal scales (2.5 hr and 9.3 s/frame) demonstrate flexibility of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C1",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "No phototoxic effects were observed during RESOLFT imaging, attributed to the relatively low light intensities required (up to 6 orders of magnitude lower than STED, comparable to confocal microscopy) and low total light dose (3-4 orders of magnitude lower than single-molecule approaches).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C63 states no phototoxic effects were observed, but this is based on qualitative assessment during imaging rather than systematic quantitative measurements of cell viability, proliferation, or molecular markers of stress. The comparative light intensity claims (C13-C15) are supported by citations but represent general knowledge rather than measurements from this specific study. While the mechanistic explanation (C64-C65) is reasonable, the lack of quantitative phototoxicity assessment (e.g., cell viability assays, stress markers) limits the strength of this conclusion. The observation of 'recognizable photobleaching' (C56) suggests some photodamage occurred.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C69",
+      "C70",
+      "C72",
+      "C73"
+    ],
+    "result": "RESOLFT microscopy is particularly suitable for live-cell imaging of complex samples like tissues due to its compatibility with confocal detection (which rejects out-of-focus fluorescence), low light requirements, and flexibility to adjust resolution versus recording speed/phototoxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 and C69-C70 describe technical advantages of RESOLFT that are demonstrated throughout the manuscript. The benefit for deep tissue imaging (C72-C73) is directly supported by the depth-series data (C38-C44). The mechanistic explanation for improved deep tissue imaging (C73) is consistent with the RESOLFT principle. However, some claims (C18, C69-C70) are somewhat general statements about the method rather than specific findings from this study. The flexibility claim (C69-C70) is stated but not systematically demonstrated with parameter optimization experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C60",
+      "C61"
+    ],
+    "result": "This study represents the first application of RESOLFT (or any super-resolution nanoscopy) to image subcellular details in living transgenic animals ubiquitously expressing a fusion protein, extending previous work that was limited to single cells or sparse labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 and C60-C61 establish the novelty of this work. The statement that no prior work achieved this (C19) is qualified with 'to our knowledge' which is appropriately cautious. The distinction from prior work (C60, supported by multiple citations) is clear: previous RESOLFT studies used only single cells, whereas this work images tissues and intact organisms with ubiquitous expression. This represents a significant advance in the field, though the 'to our knowledge' qualifier acknowledges the possibility of overlooked prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The manuscript contextualizes the work within the field, noting that nanoscopy of thick specimens is typically performed on fixed/cleared tissue, live tissue nanoscopy usually requires sparse labeling, and RESOLFT light intensities exceed thresholds for long-term developmental imaging but are acceptable for short-term experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C66-C68 provide appropriate context from the literature, supported by citations. The acknowledgment that RESOLFT intensities exceed thresholds for very long-term imaging (C66) while arguing they are acceptable for the experiments performed (C67-C68) shows balanced assessment. However, C68 makes a somewhat subjective judgment about when phototoxicity is 'irrelevant' that could be debated. These are primarily literature review claims rather than experimental findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The manuscript reviews the development and properties of rsEGFP2 and other reversibly switchable fluorescent proteins, noting that rsEGFP2 was previously used only in single-layered cells and that while newer RSFPs exist, rsEGFP2 remains optimal for beam-scanning RESOLFT in tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C9-C12, and C74-C78 provide background on rsEGFP2 and related fluorescent proteins, all supported by appropriate citations. The assessment that rsEGFP2 is optimal for this application (C77) is a judgment call but reasonable given the successful results. The comparison to earlier RSFPs like Dronpa (C78) is supported by citations. These are primarily review/context claims rather than novel experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C71"
+    ],
+    "result": "The authors speculate that superior RSFPs will be developed in the future and that the application range of RESOLFT nanoscopy in multicellular organisms will expand. They also note that deconvolution could further improve their data but was not applied.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 and C71 are explicitly speculative statements about future developments, appropriately qualified with language like 'we expect' and 'can be anticipated.' These are reasonable predictions based on the demonstrated feasibility in this study. The statement about deconvolution (C71) is transparent about what was not done, which is appropriate. These are discussion/speculation claims rather than experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The manuscript provides detailed methods for fly generation (phiC31 integrase-based transformation), RESOLFT imaging (switching scheme with 405 nm activation, 488 nm doughnut-shaped deactivation, 488 nm Gaussian readout), data analysis (Lorentzian fitting of averaged line profiles), and sample preparation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C96 describe methods in detail. The fly generation method (C81-C83) follows standard procedures with appropriate citation (C83). The imaging protocol (C84-C91) is clearly described with specific wavelengths, beam shapes, and timing. The statement that all images are raw data without processing (C92) is important for transparency and interpretation. The data analysis method (C93) using averaged line profiles and Lorentzian fitting is appropriate for resolution determination. Sample preparation methods (C94-C96) are clearly described. These methodological details are well-documented and support reproducibility.",
+    "result_type": "MINOR"
+  }
+]

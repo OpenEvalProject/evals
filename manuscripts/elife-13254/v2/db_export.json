@@ -1,0 +1,2070 @@
+{
+  "submission": {
+    "id": "c237832d-5d15-43a3-9267-d1679b05ed5e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:34:27.761209Z",
+    "updated_at": "2025-11-29T23:34:27.761209Z"
+  },
+  "content": [
+    {
+      "id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "submission_id": "c237832d-5d15-43a3-9267-d1679b05ed5e",
+      "content_type": "manuscript",
+      "content_text": "# The Ionotropic Receptors IR21a and IR25a mediate cool sensing in Drosophila\n\n## Authors\n\n- Lina Ni<sup>1</sup>\n- Mason Klein<sup>4</sup> \u2020\n- Kathryn V Svec<sup>1</sup>\n- Gonzalo Budelli<sup>1</sup>\n- Elaine C Chang<sup>1</sup>\n- Anggie J Ferrer<sup>5</sup>\n- Richard Benton<sup>7</sup>\n- Aravinthan DT Samuel<sup>4</sup> \u2020\n- Paul A Garrity<sup>1</sup> ([ORCID: 0000-0002-8274-6564](https://orcid.org/0000-0002-8274-6564)) \u2020\n\n### Affiliations\n\n1. National Center for Behavioral Genomics Brandeis University Waltham United States\n2. Volen Center for Complex Systems Brandeis University Waltham United States\n3. Department of Biology Brandeis University Waltham United States\n4. Department of Physics Harvard University Cambridge United States\n5. Department of Physics University of Miami Coral Gables United States\n6. Center for Brain Science Harvard University Cambridge United States\n7. Center for Integrative Genomics, Faculty of Biology and Medicine University of Lausanne Lausanne Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nAnimals rely on highly sensitive thermoreceptors to seek out optimal temperatures, but the molecular mechanisms of thermosensing are not well understood. The Dorsal Organ Cool Cells (DOCCs) of the Drosophila larva are a set of exceptionally thermosensitive neurons critical for larval cool avoidance. Here, we show that DOCC cool-sensing is mediated by Ionotropic Receptors (IRs), a family of sensory receptors widely studied in invertebrate chemical sensing. We find that two IRs, IR21a and IR25a, are required to mediate DOCC responses to cooling and are required for cool avoidance behavior. Furthermore, we find that ectopic expression of IR21a can confer cool-responsiveness in an Ir25a-dependent manner, suggesting an instructive role for IR21a in thermosensing. Together, these data show that IR family receptors can function together to mediate thermosensation of exquisite sensitivity.\n\n## Introduction\n\nTemperature is an omnipresent physical variable with a dramatic impact on all aspects of biochemistry and physiology (Sengupta and Garrity, 2013). To cope with the unavoidable spatial and temporal variations in temperature they encounter, animals rely on thermosensory systems of exceptional sensitivity. These systems are used to avoid harmful thermal extremes and to seek out and maintain body temperatures optimal for performance, survival and reproduction (Barbagallo and Garrity, 2015; Flouris, 2011).\n\nAmong the most sensitive biological thermoreceptors described to date are the Dorsal Organ Cool Cells (DOCCs), a recently discovered trio of cool-responsive neurons found in each of the two dorsal organs at the anterior of the Drosophila melanogaster larva (Klein et al., 2015). The DOCCs robustly respond to decreases in temperature as small as a few millidegrees C per second (Klein et al., 2015), a thermosensitivity similar to that of the rattlesnake pit organ (Goris, 2011), a structure known for its extraordinary sensitivity. A combination of laser ablation, calcium imaging and cell-specific inhibition studies was used to establish the DOCCs as critical for mediating larval avoidance of temperatures below ~20\u02daC, with the thermosensitivity of this avoidance behavior paralleling the thermosensitivity of DOCC physiology (Klein et al., 2015). While the DOCCs are exceptionally responsive to temperature, the molecular mechanisms that underlie their thermosensitivity are unknown.\n\nAt the molecular level, several classes of transmembrane receptors have been shown to participate in thermosensation in animals. The most extensively studied are the highly thermosensitive members of the Transient Receptor Potential (TRP) family of cation channels (Palkar et al., 2015; Vriens et al., 2014). These TRPs function as temperature-activated ion channels and mediate many aspects of thermosensing from fruit flies to humans (Barbagallo and Garrity, 2015; Palkar et al., 2015; Vriens et al., 2014). In addition to TRPs, other classes of channels contribute to thermosensation in vertebrates, including the thermosensitive calcium-activated chloride channel Anoctamin 1 (Cho et al., 2012) and the two pore\u00a0domain potassium channel TREK-1 (Alloui et al., 2006). Recent work in Drosophila has demonstrated that sensory receptors normally associated with other modalities, such as chemical sensing, can also make important contributions to thermotransduction. In particular, GR28B(D), a member of the invertebrate gustatory receptor (GR) family, was shown to function as a warmth receptor to mediate warmth avoidance in adult flies exposed to a steep thermal gradient (Ni et al., 2013). The photoreceptor Rhodopsin has also been reported to contribute to temperature responses, although its role in thermosensory neurons is unexamined (Shen et al., 2011).\n\nIonotropic Receptors (IRs) are a family of invertebrate receptors that have been widely studied in insect chemosensation, frequently serving as receptors for diverse acids and amines (Benton et al., 2009; Silbering et al., 2011). The IRs belong to the ionotropic glutamate receptor (iGluR) family, an evolutionarily conserved family of heterotetrameric cation channels that includes\u00a0critical regulators of synaptic transmission like the NMDA and AMPA receptors (Croset et al., 2010). In contrast to iGluRs, IRs have been found only in Protostomia and are implicated in sensory transduction rather than synaptic transmission (Rytz et al., 2013). In insects, the IR family has undergone significant expansion and diversification, with the fruit fly D. melanogaster genome encoding 66 IRs (Croset et al., 2010). While the detailed structures of IR complexes are unknown, at least some IRs are thought to form heteromeric channels in which a broadly-expressed IR 'co-receptor' (such as IR25a, IR8a or IR76b) partners one or more selectively-expressed 'stimulus-specific' IRs (Abuin et al., 2011).\n\nAmong insect IRs, IR25a is the most highly conserved across species (Croset et al., 2010). In Drosophila, IR25a expression has been observed in multiple classes of chemosensory neurons with diverse chemical specificities, and IR25a has been shown to function as a 'co-receptor' that forms chemoreceptors of diverse specificities in combination with other, stimulus-specific IRs (Abuin et al., 2011; Rytz et al., 2013). IR21a is conserved in mosquitoes and other insects, but has not been associated with a specific chemoreceptor function (Silbering et al., 2011), raising the possibility that it may contribute to other sensory modalities.\n\nHere, we show that the previously 'orphan' IR, Ir21a, acts together with the co-receptor IR25a to mediate thermotransduction. We show that these receptors are required for larval cool avoidance behavior as well as the physiological responsiveness of the DOCC thermosensory neurons to cooling. Furthermore, we find that ectopic expression of IR21a can confer cool responsiveness in an Ir25a-dependent manner, indicating that IR21a can influence thermotransduction in an instructive fashion.\n\n## Results\n\n### Dorsal organ cool cells express Ir21a-Gal4\n\nTo identify potential regulators of DOCC thermosensitivity, we sought sensory receptors specifically expressed in the dorsal organ housing these thermoreceptors (Figure 1a). Examining a range of potential sensory receptors in the larva, we found that regulatory sequences from the Ionotropic Receptor Ir21a drove robust gene expression (via the Gal4/UAS system [Brand and Perrimon, 1993]) in a subset of neurons in the dorsal organ ganglion, as well as in other locations (Figure 1b,c, Figure 1\u2014figure supplement 1). Within each dorsal organ ganglion, Ir21a-Gal4 drove gene expression in three neurons (Figure 1b,c). These neurons exhibited the characteristic morphology of the DOCCs, which have unusual sensory processes that form a characteristic 'dendritic bulb' inside the larva (Klein et al., 2015).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/13254/elife-13254-fig1-v2.jpg)\n\n**Figure 1.:** (a) First/second instar larval anterior. Each Dorsal Organ Ganglion (grey) contains three DOCCs (blue). Anterior-Posterior axis denoted by double-headed arrow. (b,c) Ir21a-Gal4;UAS-GFP (Ir21a>GFP) labels larval DOCCs. Arrows denote cell bodies and arrowheads dendritic bulbs. (d) Temperature responses of Ir21a-Gal4;UAS-GCaMP6m-labeled DOCCs. Left panels, raw images; right panels, colors reflect fluorescence intensity. Arrows denote cell bodies. (e) Fluorescence quantified as percent change in fluorescence intensity compared to minimum intensity. n=22 cells (from 6 animals). (f,g) Temperature-responses of Ir21a-Gal4;R11F02-Gal4;UAS-GCaMP6m-labeled DOCCs. n=26 (7). Scale bars, 10 microns. Traces, average +/- SEM. Figure 1\u2014figure supplement 1 provides an example of the 3-D imaging stacks used for calcium imaging data acquisition.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13254/elife-13254-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Ir21a-Gal4; UAS-GFP expression. (b) R11F02-Gal4; UAS-GFP expression. In addition to expression in the Dorsal Organ, both Gal4s exhibit expression in ~100 cells in the brain and ventral ganglion, neurons along the larval body wall and in the tail. R11F02-Gal4 is also expressed by sensory neurons in the Terminal Organ.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/13254/elife-13254-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Dimensions of imaging volume. DOCCs depicted in blue. (b) Maximum intensity projections used for visualizing fluorescence intensity. (c) Representative image of maximum intensity projections of Ir21a>GCaMP6m-labeled DOCCs. DOCC cell bodies remain within imaging field throughout.\n\nTo confirm that the Ir21a-Gal4-positive neurons were indeed cool-responsive, their thermosensitivity was tested by cell-specific expression of the genetically encoded calcium indicator GCaMP6m under Ir21a-Gal4 control. Consistent with previously characterized DOCC responses (Klein et al., 2015), when exposed to a sinusoidal temperature stimulus between ~14\u02daC and ~20\u02daC, GCaMP6m fluorescence in these neurons increased upon cooling and decreased upon warming (Figure 1d,e and Figure 1\u2014figure supplement 2). The expression of Ir21a-Gal4 was also compared with that of R11F02-Gal4 (Figure 1\u2014figure supplement 1), a promoter used in the initial characterization of the DOCCs (Klein et al., 2015). As expected, GCaMP6m expressed under the combined control of Ir21a-Gal4 and R11F02-Gal4 revealed their precise overlap in three cool-responsive neurons with DOCC morphology in the dorsal organ, further confirming the identification of the Ir21a-Gal4-expressing cells as the cool-responsive DOCCs (Figure 1f,g).\n\n### Ir21a mediates larval thermotaxis\n\nTo assess the potential importance of Ir21a in larval thermosensation, we tested the ability of animals to thermotax when Ir21a function has been eliminated. Two Ir21a alleles were generated, Ir21a123 and Ir21a\u22061.\u00a0Ir21a123 deletes 23 nucleotides in the region encoding the first transmembrane domain of IR21a and creates a translational frameshift (Figure 2a). Ir21a\u22061 is an ~11 kb deletion removing all except the last 192 nucleotides of the Ir21a open reading frame, including all transmembrane and ion pore sequences (Figure 2a). As the deletion in Ir21a\u22061 could also disrupt the nearby chitin deacetylase 5 (cda5) gene (Figure 2\u2014figure supplement 1), Ir21a-specific rescue experiments were performed to confirm all defects reflected the loss of Ir21a activity (see below).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/13254/elife-13254-fig2-v2.jpg)\n\n**Figure 2.:** (a) Sequence alterations in Ir21a and Ir25a alleles. Ir21a regulatory sequences present in Ir21a-Gal4 are denoted in green and regions encoding transmembrane domains (TMs) and pore region in red. Additional details provided in Figure 2\u2014figure supplement 1. (b) Thermotaxis is quantified as navigational bias. Cool avoidance behavior was assessed by tracking larval trajectories on a ~0.36\u02daC/cm gradient extending from ~13.5\u02daC to ~21.5\u02daC, with a midpoint of ~17.5\u02daC. (c) Cool avoidance requires Ir21a and Ir25a. Ir21a>Ir21a denotes a wild type Ir21a transcript expressed under Ir21a-Gal4 control. {Ir21a+} and {Ir25a+} denote wild type genomic rescue transgenes. Letters denote statistically distinct categories (alpha=0.05; Tukey HSD). wild type, n=836 animals. Ir21a\u22061, n=74. Ir21a\u22061;Ir21a-Gal4, n=48. Ir21a\u22061;UAS-Ir21a, n=10. Ir21a\u22061;Ir21a>Ir21a, n= 88. Ir21a\u22061/ Ir21a123, n=71; Ir21a\u22061/ Ir21a123; {Ir21a+} n=70; Ir25a2, n =100. Ir25a2; {Ir25a+} n= 247. Additional mutant analyses provided in Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13254/elife-13254-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Cda5/Ir21a genomic region, denoting positions of the FRT-containing transposon insertions used to generate Ir21a\u22061 (PBc04017 and PBc02720), the sequences deleted in Ir21a\u22061, the Ir21a sequences present in the UAS-Ir21a rescue construct and the sequences present in the {Ir21+} genomic rescue construct. Untranslated regions are in gray. (b) Larval thermotaxis of Ir8a and Ir76b mutants quantified as navigational bias. Neither Ir8a nor Ir76b is required for cool avoidance; Ir8a mutants show enhanced cool avoidance compared to wild type. Letters denote statistically distinct categories (alpha=0.05; Tukey HSD). wild type, n=836 animals. Ir8a, n=166; Ir76b1, n=96, Ir76b2, n= 100.\n\nThe loss of Ir21a function strongly disrupted larval thermotaxis. When exposed to a thermal gradient of ~0.36\u02daC/cm, ranging from ~13.5\u02daC to ~21.5\u02daC, Ir21a\u22061 null mutants as well as Ir21a123/ Ir21a\u22061 heterozygotes were unable to navigate away from cooler temperatures and toward warmer temperatures (Figure 2b,c). These defects could be rescued by expression of a wild-type Ir21a transcript under Ir21a-Gal4 control and by a wild-type Ir21a genomic transgene (Figure 2c). Taken together, these results are consistent with a critical role for Ir21a in larval thermotaxis.\n\n### Ir25a mediates larval thermotaxis and is expressed in DOCCs\n\nAs IRs commonly act in conjunction with 'co-receptor' IRs, we examined the possibility that larval thermotaxis involved such additional IRs. Animals homozygous for loss-of-function mutations in two previously reported IR co-receptors, Ir8a and Ir76b, exhibited robust avoidance of cool temperatures, indicating that these receptors are not essential for this behavior (Figure 2\u2014figure supplement 1). By contrast, Ir25a2\u00a0null mutants failed to avoid cool temperatures, a defect that could be rescued by the introduction of a transgene containing a wild type copy of Ir25a (Figure 2c). Thus, Ir25a also participates in cool avoidance. To assess IR25a expression, larvae were stained with antisera for IR25a. Robust IR25a protein expression was detected in multiple cells in the dorsal organ ganglion, including the three Ir21a-Gal4-expressing DOCCs (Figure 3a). Within DOCCs, IR25a strongly labels the 'dendritic bulbs', consistent with a role in sensory transduction. Staining was absent in Ir25a null mutants demonstrating staining specificity (Figure 3b). Thus Ir25a is required for thermotaxis and is expressed in the neurons that drive this behavior.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/13254/elife-13254-fig3-v2.jpg)\n\n**Figure 3.:** (a) Left panel, Ir21a>GFP-labeled DOCCs. Middle panel, IR25a protein expression in dorsal organ. Right panel, Ir21a>GFP-labeled DOCCs express IR25a protein. Arrows denote DOCC cell bodies and arrowheads DOCC dendritic bulbs. (b) IR25a immunostaining is not detected in Ir25a2 null mutants. Scale bar, 10 microns.\n\n### Ir21a and Ir25a are required for cool detection by DOCCs\n\nTo assess whether Ir21a and Ir25a contribute to cool detection by the DOCCs, DOCC cool-responsiveness was examined using the genetically encoded calcium sensor GCaMP6m. Consistent with a role for Ir21a\u00a0in cool responses, DOCCs exhibited strongly reduced responses to cooling in Ir21a\u22061 deletion mutants, and this defect was robustly rescued by expression of an Ir21a transcript in the DOCCs using R11F02-Gal4 (Figure 4a-e,h). Similarly, DOCC thermosensory responses were greatly reduced in Ir25a mutants, a defect that was rescued by a wild type Ir25a transgene (Figure 4f\u2013h). Together these data demonstrate a critical role for Ir21a and Ir25a in the detection of cooling by the DOCCs.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/13254/elife-13254-fig4-v2.jpg)\n\n**Figure 4.:** DOCC responses monitored using R11F02>GCaMP6m. DOCCs exhibit robust cool-responsive increases in fluorescence (a,c), which are dramatically reduced in Ir21a (b,d) and Ir25a (f) mutants. (e) Ir21a transcript expression under R11F02-Gal4 control rescues the Ir21a mutant defect. (g) Introduction of an Ir25a genomic rescue transgene rescues the Ir25a mutant defect. (h) Ratio of fluorescence at 14\u02daC versus 20\u02daC depicted using a violin plot. Letters denote statistically distinct categories, p<0.0001, Steel-Dwass test. Scale bars, 10 microns. Traces, average +/- SEM. wild type, n=33 cells (from 11 animals). Ir21a\u22061, n= 58 (14). Ir21a\u22061; R11F02>Ir21a, n=32 (9). Ir25a2, n=43 (16). Ir25a2; {Ir25a+}, n=30 (10). Analyses of brv1 and brv2 mutants provided in Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13254/elife-13254-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) brv1 but not brv2 mutants exhibit defects in larval cool avoidance. Thermotaxis quantified as navigational bias. Letters denote statistically distinct categories (alpha=0.05; Tukey HSD). wild type, n=836 animals. brv1L653stop, n =43. brv2W205stop, n =99. b) Ir21a>GCaMP6m-labelled DOCCs respond to cooling in brv1L653stop mutants. n= 35 cells (from 6 animals).\n\nPrior work has suggested that three TRP channels, Brivido-1, Brivido-2 and Brivido-3, work together to mediate cool sensing in adult thermosensors (Gallio et al., 2011). Putative null mutations are available for two of these genes, brv1 and brv2, and we used these alleles to test the potential role of Brivido function in DOCC cool sensing (Gallio et al., 2011). Although brv1 mutant showed defects in thermotactic behavior, DOCC responses to cooling appeared unaffected in brv1 mutants (Figure 4\u2014figure supplement 1). brv2 nulls exhibited no detectable thermotaxis defects (Figure 4\u2014figure supplement 1). Thus, we detect no role for these receptors in cool sensing by the DOCCs.\n\n### Ectopic IR21a expression confers cool-sensitivity in an Ir25a-dependent manner\n\nThe requirement for Ir21a and Ir25a in DOCC-mediated cool sensing raised the question of whether ectopic expression of these receptors could confer cool-responsiveness upon a cell, as might be predicted for a cool receptor. Attempts to express IR21a and IR25a together or separately in heterologous cells, including S2 cells, Xenopus oocytes and HEK cells, failed to yield detectable responses to cooling or warming, as did attempts to confer thermosensitivity upon non-thermosensitive neurons by ectopically expressing them separately or together in Drosophila, broadly throughout the larval nervous system and in adult chemosensory neurons (G.B., L.N., M.K. and P.G, unpublished). However, ectopic expression of IR21a in one set of neurons in the adult, Hot Cell thermoreceptors in the arista that normally respond to warming rather than cooling, conferred cool-sensitivity.\n\nThe adult arista contains three warmth-activated thermosensory neurons, termed Hot Cells (or HC neurons) (Gallio et al., 2011). We found that forced expression of IR21a in the HC neurons could significantly alter their response to temperature. As previously reported (Gallio et al., 2011), wild-type HC neurons respond to warming with robust increases in intracellular calcium and to cooling with decreases in intracellular calcium, as reflected in temperature-dependent changes in GCaMP6m fluorescence (Figure 5a,c). In contrast, HC neurons in which IR21a is expressed under the control of a pan-neuronal promoter (N-syb>Ir21a animals) frequently exhibited elevations in calcium not only in response to warming, but also at the coolest temperatures (Figure 5b,d,f, Figure 5\u2014figure supplement 1a). Thus, ectopic IR21a expression causes HC neurons, which are normally inhibited by cooling, to become responsive to both cooling and warming.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/13254/elife-13254-fig5-v2.jpg)\n\n**Figure 5.:** (a,b) Temperature responses of wild type (a) or N-syb>Ir21a-expressing (b) thermoreceptors in the arista, monitored with N-syb>GCaMP6m. Cell bodies of warmth-responsive Hot Cells outlined in red and cool-responsive Cold Cells in blue. Arrows highlight Hot Cells at 14\u02daC. Traces of Hot Cell and Cold Cell responses shown at right. Scale bar, 10 microns. (c-e) Fluorescence of Hot Cells in response to sinusoidal 14\u02daC to 30\u02daC temperature stimulus, quantified as percent \u2206F/Fmin. Dotted lines denote temperature minima. Traces, average +/- SEM. (f) Difference between \u2206F/Fmin at 14\u02daC vs 20\u02daC (average +/- SEM). Responses of N-syb>Ir21a cells were statistically distinct from both wild type and Ir25a2;N-syb>Ir21a (p<0.01, Steel-Dwass test; letters denote statistically distinct groups).\u00a0wild type, n= 16 cells (from 8 animals). N-syb>Ir21a, n= 16 (10). Ir25a2; N-syb>Ir21a, n= 20 (10). Analysis of endogenous IR25a expression in the Hot Cells and of the consequences of Hot Cell-specific misexpression of IR21a provided in Figure 5\u2014figure supplement 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13254/elife-13254-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Difference between \u2206F/Fmin at 14\u02daC vs 20\u02daC for each cell imaged in Figure 5. (b, c) Left panel, HC>GFP-labeled Hot Cell neurons. Middle panel, IR25a immunostaining. Right panel, HC>GFP and IR25a co-expression. Arrows indicate Hot Cell neuron cell bodies. Specific IR25a immunostaining is absent in Ir25a null mutants (b). (d, e) Temperature responses of wild type (d), HC>Ir21a-expressing (e) thermoreceptors in the adult arista, monitored using HC>GCaMP6m. Dotted lines denote temperature minima. Traces, average +/- SEM. wild type, n=4 cells (2 animals). HC>IR21a n=25 (9).\n\nAs Ir21a-dependent cool detection in the DOCCs relies upon Ir25a, we examined the requirement for Ir25a in IR21a-mediated cool activation of the HC neurons. Consistent with previously reported IR25a expression in the arista (Benton et al., 2009), we observed robust IR25a protein expression in the HC neurons (Figure 5\u2014figure supplement 1b,c). Consistent with a role for Ir25a in Ir21a-mediated cool-responsiveness, ectopic IR21a expression failed to drive significant HC neuron cool responses in Ir25a mutants (Figure 5e,f). Thus, IR21a can confer cool-sensitivity upon an otherwise warmth-responsive neuron in an Ir25a-dependent fashion. Similar cool sensitivity was observed when IR21a was ectopically expressed under the control of an HC-specific promoter (HC>Ir21a, Figure 5\u2014figure supplement 1d,e). Finally, ectopic expression of IR21a in Gr28b mutant HC neurons, which lack the Gr28b(D) warmth receptor, yields neurons that respond only to cooling (Figure 6). Together, these data demonstrate that ectopic IR21a expression can confer cool-sensitivity in an Ir25a-dependent fashion.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/13254/elife-13254-fig6-v2.jpg)\n\n**Figure 6.:** (a-c) Temperature responses of wild type (a), Gr28b mutant (b), and HC>Ir21a-expressing Gr28b mutant (c) thermoreceptors in the adult arista, monitored using HC>GCaMP6m. Dotted lines denote temperature minima. Traces, mean +/- SEM. wild type, n=11 cells (3 animals). Gr28bMi\u00a0n=9 (3). HC>IR21a; Gr28bMi\u00a0n=11 (3). (d) Cool responses (\u2206F/F14\u02daC - \u2206F/F30\u02daC) of HC>IR21a; Gr28bMicells were distinct from both wild type and Gr28bMi (p<0.01, Steel-Dwass test, letters denote statistically distinct groups).\n\n## Discussion\n\nThese data demonstrate that the ionotropic receptors IR21a and IR25a have critical roles in thermosensation in Drosophila, mediating cool detection by the larval dorsal organ cool cells (DOCCs) and the avoidance of cool temperatures. Combinations of IRs have been previously found to contribute to a wide range of chemosensory responses, including the detection of acids and amines (Rytz et al., 2013). These findings extend the range of sensory stimuli mediated by these receptor combinations to cool temperatures. Interestingly, IR21a- and IR25a-dependent cool sensation appears independent of Brivido 1 and Brivido 2, two TRP channels implicated in cool sensing in the adult (Gallio et al., 2011).\n\nThe precise nature of the molecular complexes that IRs form is not well understood. IR25a has been shown to act with other IRs in the formation of chemoreceptors, potentially as heteromers (Rytz et al., 2013). This precedent raises the appealing possibility that IR25a might form heteromeric thermoreceptors in combination with IR21a. However, our inability to readily reconstitute temperature-responsive receptor complexes in heterologous cells suggests that the mechanism by which these receptors contribute to cool responsiveness is likely to involve additional molecular cofactors. It is interesting to note that the range of cell types in which ectopic IR21a expression confers cool-sensitivity is so far restricted to neurons that already respond to temperature. This observation suggests the existence of additional co-factors or structures in these thermosensory cells that are critical for IR21a and IR25a to mediate responses to temperature. All studies to date implicate IRs as receptors for sensory stimuli (Rytz et al., 2013), and our misexpression studies are consistent with a similar role for Ir21a and IR25a in cool sensation. However, we cannot formally exclude the possibility that they could have indirect, and possibly separate, functions in this process, for example, in regulating the expression or function of an unidentified cool receptor. Interestingly, IR25a was recently implicated in warmth-responsive resetting of the circadian clock, and suggested to confer warmth-sensitivity on its own, without the co-expression of other IRs (Chen et al., 2015). The ability of IR25a to serve as a warmth receptor on its own would be a surprise given both its broad expression and its established role as an IR co-receptor (Abuin et al., 2011). As IR25a misexpression only slightly enhanced the thermosensitivity of an already warmth-responsive neuron (Chen et al., 2015), this raises the alternative possibility that \u2013 analogous to cool-sensing \u2013 IR25a acts not on its own, but rather as a co-receptor with other IRs involved in warmth-sensing.\n\nWhile the present study focuses on the role of IR21a and IR25a in larval thermosensation, it is interesting to note that the\u00a0expression of both IR21a and IR25a has been detected in the thermoreceptors of the adult arista (Benton et al., 2009). Thus, related mechanisms could contribute to thermosensory responses not only in the DOCCs, but also in other cellular contexts and life stages. Moreover, the presence of orthologs of IR21a and IR25a across a range of insects (Croset et al., 2010) raises the possibility that these IRs, along other members of the IR family, constitute a family of deeply-conserved thermosensors.\n\n## Materials and methods\n\n### Fly strains\n\nIr25a2 (Benton et al., 2009>), BAC{Ir25a+} (Chen et al., 2015), Ir8a1 (Abuin et al., 2011), Ir76b1\u00a0(Zhang et al., 2013),\u00a0Ir76b2 (Zhang et al., 2013), R11F02-Gal4 (Klein et al., 2015), brv1L653stop (Gallio et al., 2011), brv2w205stop\u00a0(Gallio et al., 2011), HC-Gal4 (Gallio et al., 2011), Gr28bMi (Ni et al., 2013),\u00a0UAS-GCaMP6m (P{20XUAS-IVS-GCaMP6m}attp2 and P{20XUAS-IVS-GCaMP6m}attp2attP40 [Chen et al., 2013]), UAS-GFP (p{10X UAS-IVS-Syn21-GFP-p10}attP2 [Pfeiffer et al., 2012]), nSyb-Gal4 (P{GMR57c10-Gal4}attP2, [Pfeiffer et al., 2012]), and y1 P(act5c-cas9, w+) M(3xP3-RFP.attP)ZH-2A w* (Port et al., 2014) were previously described.\n\nIn Ir21a-Gal4, sequences from\u00a0-606 to +978 with respect to the Ir21a translational start site (chromosome 2L: 24,173 \u2013 25757, reverse complement) lie upstream of Gal4 protein-coding sequences. UAS-Ir21a contains the Ir21a primary transcript including introns (chromosome 2L: 21823\u201325155, reverse complement) placed under UAS control. The {Ir21a+} genomic rescue construct contains sequences from -1002 to +4439 with respect to the Ir21a translational start site (chromosome 2L: 26153\u201320712).\n\nIr21a\u22061 was generated by FLP-mediated recombination between two FRT-containing transposon insertions (PBac{PB}c02720 and PBac{PB}c04017) as described (Parks et al., 2004). Ir21a123 was generated by transgene-based CRISPR-mediated genome engineering as described (Port et al., 2014), with an Ir21a-targeting gRNA (5\u2019-CTGATTTGCGTTTACCTCGG) expressed under U6-3 promoter control (dU6-3:gRNA) in the presence of act-cas9 (Port et al., 2014).\n\n### Behaviour\n\nThermotaxis of early 2nd instar larvae was assessed over a 15\u2009min period on a temperature gradient extending from 13.5 to 21.5\u00b0C over 22 cm (~0.36\u02daC/cm) as described (Klein et al., 2015). As behavioral data appear normally distributed (as assessed by Shapiro-Wilk test), statistical comparisons were performed by Tukey HSD test, which corrects for multiple comparisons.\n\n### Calcium imaging\n\nCalcium imaging was performed as previously described for larvae (Klein et al., 2015). Pseudocolor images were created using the 16_colors lookup table in ImageJ 1.43r. Adult calcium imaging was performed as described for larvae (Klein et al., 2015), with modifications to the temperature stimulus and sample preparation approach. Adult temperature stimulus ranged from 14\u00b0C to 30\u00b0C. Intact adult antennae with aristae attached were dissected and placed in fly saline (110\u2009mM NaCl, 5.4\u2009mM KCl, 1.9\u2009mM CaCl2, 20\u2009mM NaHCO3, 15\u2009mM tris(hydroxymethyl)aminomethane (Tris), 13.9\u2009mM glucose, 73.7\u2009mM sucrose, and 23\u2009mM fructose, pH 7.2, [Brotz and Borst, 1996]) on a large cover slip (24\u2009mm x 50\u2009mm) and then covered by a small cover slip (18\u2009mm x 18\u2009mm). The large cover slip was placed on top of a drop of glycerol on the temperature control stage. As quantified calcium imaging data (Figure 4h, Figure 5f, Figure 6d) did not conform to a normal distribution as assessed by Shapiro-Wilk test (p<0.01), statistical comparisons were performed by Steel-Dwass test, a non-parametric test that corrects for multiple comparisons, using JMP11 (SAS).\n\n### Immunohistochemistry\n\nImmunostaining was performed as described (Kang et al., 2012) using rabbit anti-Ir25a (1:100; [Benton et al., 2009]), mouse anti-GFP (1:200; Roche), goat anti-rabbit Cy3 (1:100; Jackson ImmunoResearch), donkey anti-mouse FITC (1:100; Jackson ImmunoResearch).\n",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "fc666280-5ab3-49de-8d2a-5a61374d041c",
+      "submission_id": "c237832d-5d15-43a3-9267-d1679b05ed5e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ronald L Calabrese, Emory University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.13254.014](https://doi.org/10.7554/eLife.13254.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"The Ionotropic Receptors IR21a and IR25a mediate cool sensing in Drosophila\" for consideration by eLife. Your article has been favorably evaluated by K VijayRaghavan (Senior editor) and three reviewers, one of whom, (Ronald L. Calabrese) is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis research report presents convincing genetic, calcium imaging, and behavioral data that specific Ionotropic Receptors (IRs) are required for cool sensing in Dorsal Organ Cool Cells (DOCCs) of the Drosophila larva and for cool avoidance (thermotaxis) in larvae. IR21a and IR25a appear to work together to confer cool sensing to the DOCCs. Moreover, ectopic expression of IR21a in thermosensitive neurons confers a component of cool sensitivity but requires IR25a expression. The demonstration that temperature sensing can be mediated by IRs has wide implication for the study of thermostatic behavior throughout the Protostomia, particularly insects.\n\nThe experiments are carefully performed and appropriately analyzed with relevant statistics. The Figures are easy to assimilate and the legends clear. Supplementary data answers for important controls. Materials and methods is adequate. Writing is very clear.\n\nEssential revisions:\n\nThere are some concerns however that must be addressed before the manuscript can be published in eLife. While it is clear that IR21a and IR25a are necessary for cool sensing in DOCCs, it is not completely convincing that they themselves are cool receptors. As one expert reviewer points out \"In contrast to earlier work showing that ectopic expression of Drosophila TRPA1 or GR28B(D) confers heat sensitivity to various cell types (e.g. Ni et al. Nature 2013 from the same group), this does not seem to be the case for IR21a and IR25a, except for a small response in the already thermosensitive Hot Cell neurons. Therefore, various other plausible scenarios can be envisaged where deletion of these proteins would abolish a cold response, without them being involved in the actual cold sensing. For instance, they could act downstream of the actual cold sensor (e.g. similar to a voltage-gated calcium channel at a sensory nerve ending), or their genetic elimination could merely influence the expression of the actual cold sensor. Similarly, it is suggested that these proteins act in a molecular complex, possibly as heteromultimers, but there is no evidence presented that these IRs interact with each other at the molecular level. Given that IR25a has already recently been implicated in thermosensing (Chen et al. 2015), I feel that, for this paper to represent a sufficient advance to merit publication in eLife, additional evidence supporting the hypothesis of IR21a/IR25a complexes as cold sensor should be provided. Minimally the authors should do an experiment where IR21a is expressed ectopically in thermosensitive neurons lacking a hot response (ectopic expression in a Gr28 mutant) to show robust confirmation of cool sensing. Moreover, that authors should discuss their results in light of these caveats.\n\nThere are two other concerns from the expert reviewers that should be addressed.\n\n1) What is the demonstration that the 3 sensory cells that respond to cool are responsible for the behavioral phenotypes? Complete expression patterns of Ir21a-Gal4, Ir25a-Gal4, and R11F02 are necessary to evaluate this. If Ir21a or R11F02 is only in the 3 cool cells, this is easily resolved. Otherwise, how do the authors determine that the sensory cells are responsible for the behavioral phenotype?\n\n2) The BRV TRP channels have been implicated in sensing cool temperatures in adult Drosophila and it is unclear how these genes relate to the Irs reported here. From the 2015 PNAS paper, it appears that BRV1-Gal4 is expressed in the cool-sensing neurons as well as additional sensory neurons in larvae. Separating out the role of these channel families in cool sensation would significantly advance the field and help resolve the different studies. Does a RNAi knock-down of BRV1,2, and 3 in Ir21a cells cause a behavioral or cellular phenotype? How do the authors resolve the loss of cool sensing in brv1 mutant larvae with the lack of a cellular phenotype? Do other brv1 neurons respond to cool? Do brv1 neurons and IR21a neurons represent different cool cell populations or do they overlap in expression and function?\n\nMinimally the authors should address this issue forthrightly in Discussion.\n",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4a585475-7b1b-402e-badc-e99b832528c5",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C1",
+      "claim": "The Dorsal Organ Cool Cells (DOCCs) of the Drosophila larva are a set of exceptionally thermosensitive neurons critical for larval cool avoidance.",
+      "claim_type": "EXPLICIT",
+      "source": "The Dorsal Organ Cool Cells (DOCCs) of the Drosophila larva are a set of exceptionally thermosensitive neurons critical for larval cool avoidance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior work establishing DOCC function and thermosensitivity.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "f0673561-6e83-4522-bc4e-59fcaf7fb4e3",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C2",
+      "claim": "DOCC cool-sensing is mediated by Ionotropic Receptors IR21a and IR25a.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that DOCC cool-sensing is mediated by Ionotropic Receptors (IRs), a family of sensory receptors widely studied in invertebrate chemical sensing. We find that two IRs, IR21a and IR25a, are required to mediate DOCC responses to cooling and are required for cool avoidance behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the manuscript, supported by genetic, physiological, and behavioral data presented throughout.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "0cf952e0-246a-43b1-a1fe-653801c63025",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C3",
+      "claim": "IR21a and IR25a are required for cool avoidance behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that two IRs, IR21a and IR25a, are required to mediate DOCC responses to cooling and are required for cool avoidance behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by behavioral thermotaxis experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "e575da6a-6139-4864-84fb-23c33c2cf744",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C4",
+      "claim": "Ectopic expression of IR21a can confer cool-responsiveness in an Ir25a-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we find that ectopic expression of IR21a can confer cool-responsiveness in an Ir25a-dependent manner, suggesting an instructive role for IR21a in thermosensing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by misexpression experiments in Hot Cells shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "bc829291-9485-4529-9bf5-deb3d91eecf6",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C5",
+      "claim": "IR21a has an instructive role in thermosensing.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we find that ectopic expression of IR21a can confer cool-responsiveness in an Ir25a-dependent manner, suggesting an instructive role for IR21a in thermosensing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the ability of IR21a misexpression to confer cool sensitivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "43cf93ac-5a0b-4717-9f17-7ed539a39b4e",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C6",
+      "claim": "IR family receptors can function together to mediate thermosensation of exquisite sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data show that IR family receptors can function together to mediate thermosensation of exquisite sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on all experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "992a6aaa-f849-4f88-b13a-fe71167698bc",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C7",
+      "claim": "The DOCCs robustly respond to decreases in temperature as small as a few millidegrees C per second.",
+      "claim_type": "EXPLICIT",
+      "source": "The DOCCs robustly respond to decreases in temperature as small as a few millidegrees C per second (Klein et al., 2015), a thermosensitivity similar to that of the rattlesnake pit organ (Goris, 2011), a structure known for its extraordinary sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Klein et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "cbe6683f-52d5-4fe4-b59e-659c43b2f1d0",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C8",
+      "claim": "DOCC thermosensitivity is similar to that of the rattlesnake pit organ.",
+      "claim_type": "EXPLICIT",
+      "source": "The DOCCs robustly respond to decreases in temperature as small as a few millidegrees C per second (Klein et al., 2015), a thermosensitivity similar to that of the rattlesnake pit organ (Goris, 2011), a structure known for its extraordinary sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is supported by citations to Klein et al., 2015 and Goris, 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "780b5840-e819-407c-8687-990a2a456dc2",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C9",
+      "claim": "The rattlesnake pit organ is known for its extraordinary sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The DOCCs robustly respond to decreases in temperature as small as a few millidegrees C per second (Klein et al., 2015), a thermosensitivity similar to that of the rattlesnake pit organ (Goris, 2011), a structure known for its extraordinary sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge cited from Goris, 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "6bc47a08-0860-44d8-85c0-782a35ea0713",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C10",
+      "claim": "The DOCCs are critical for mediating larval avoidance of temperatures below ~20\u02daC.",
+      "claim_type": "EXPLICIT",
+      "source": "A combination of laser ablation, calcium imaging and cell-specific inhibition studies was used to establish the DOCCs as critical for mediating larval avoidance of temperatures below ~20\u02daC, with the thermosensitivity of this avoidance behavior paralleling the thermosensitivity of DOCC physiology (Klein et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Klein et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "8e5f9dab-29df-419d-a070-3985db00f504",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C11",
+      "claim": "The thermosensitivity of larval cool avoidance behavior parallels the thermosensitivity of DOCC physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "A combination of laser ablation, calcium imaging and cell-specific inhibition studies was used to establish the DOCCs as critical for mediating larval avoidance of temperatures below ~20\u02daC, with the thermosensitivity of this avoidance behavior paralleling the thermosensitivity of DOCC physiology (Klein et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Klein et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "b80b61eb-58b9-41c0-ad72-e457e30819e0",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C12",
+      "claim": "The molecular mechanisms that underlie DOCC thermosensitivity are unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "While the DOCCs are exceptionally responsive to temperature, the molecular mechanisms that underlie their thermosensitivity are unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement establishes the knowledge gap that the study addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "928b6dd4-da18-45ed-82b3-7ff9fa9184a4",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C13",
+      "claim": "Several classes of transmembrane receptors have been shown to participate in thermosensation in animals.",
+      "claim_type": "EXPLICIT",
+      "source": "At the molecular level, several classes of transmembrane receptors have been shown to participate in thermosensation in animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "ff296cc3-6eb2-4b98-9356-41d5e98e46ff",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C14",
+      "claim": "The most extensively studied thermosensory receptors are the highly thermosensitive members of the Transient Receptor Potential (TRP) family of cation channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The most extensively studied are the highly thermosensitive members of the Transient Receptor Potential (TRP) family of cation channels (Palkar et al., 2015; Vriens et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "844f2875-e034-4b04-8698-71c56dfdd9f3",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C15",
+      "claim": "TRP channels function as temperature-activated ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "These TRPs function as temperature-activated ion channels and mediate many aspects of thermosensing from fruit flies to humans (Barbagallo and Garrity, 2015; Palkar et al., 2015; Vriens et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "13fa361f-96c5-4fb0-8364-1f7804ef07ed",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C16",
+      "claim": "TRP channels mediate many aspects of thermosensing from fruit flies to humans.",
+      "claim_type": "EXPLICIT",
+      "source": "These TRPs function as temperature-activated ion channels and mediate many aspects of thermosensing from fruit flies to humans (Barbagallo and Garrity, 2015; Palkar et al., 2015; Vriens et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "e0c6a18d-8174-4628-b17c-e0dabbef4798",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C17",
+      "claim": "Anoctamin 1 is a thermosensitive calcium-activated chloride channel that contributes to thermosensation in vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to TRPs, other classes of channels contribute to thermosensation in vertebrates, including the thermosensitive calcium-activated chloride channel Anoctamin 1 (Cho et al., 2012) and the two pore domain potassium channel TREK-1 (Alloui et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Cho et al., 2012.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "c6d55b74-2511-4451-85fa-29d138ace8d3",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C18",
+      "claim": "TREK-1 is a two pore domain potassium channel that contributes to thermosensation in vertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to TRPs, other classes of channels contribute to thermosensation in vertebrates, including the thermosensitive calcium-activated chloride channel Anoctamin 1 (Cho et al., 2012) and the two pore domain potassium channel TREK-1 (Alloui et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Alloui et al., 2006.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "fff5c9fe-caf9-471d-902b-df88857897b7",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C19",
+      "claim": "Sensory receptors normally associated with chemical sensing can make important contributions to thermotransduction in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work in Drosophila has demonstrated that sensory receptors normally associated with other modalities, such as chemical sensing, can also make important contributions to thermotransduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established by recent scientific work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "b074c527-c437-49a1-bdd2-89115615b726",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C20",
+      "claim": "GR28B(D) is a member of the invertebrate gustatory receptor (GR) family that functions as a warmth receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, GR28B(D), a member of the invertebrate gustatory receptor (GR) family, was shown to function as a warmth receptor to mediate warmth avoidance in adult flies exposed to a steep thermal gradient (Ni et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ni et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "4f33e2a5-4210-470e-8830-fd7d11414cfc",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C21",
+      "claim": "GR28B(D) mediates warmth avoidance in adult flies exposed to a steep thermal gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, GR28B(D), a member of the invertebrate gustatory receptor (GR) family, was shown to function as a warmth receptor to mediate warmth avoidance in adult flies exposed to a steep thermal gradient (Ni et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ni et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "860f904e-6362-4bf9-8d33-0fb9b0fbdc6d",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C22",
+      "claim": "Rhodopsin has been reported to contribute to temperature responses.",
+      "claim_type": "EXPLICIT",
+      "source": "The photoreceptor Rhodopsin has also been reported to contribute to temperature responses, although its role in thermosensory neurons is unexamined (Shen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Shen et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "4b67e931-a657-4f78-8204-1b59d0bc2a29",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C23",
+      "claim": "The role of Rhodopsin in thermosensory neurons is unexamined.",
+      "claim_type": "EXPLICIT",
+      "source": "The photoreceptor Rhodopsin has also been reported to contribute to temperature responses, although its role in thermosensory neurons is unexamined (Shen et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "eb713c20-c741-4617-8dd7-9578b7a86074",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C24",
+      "claim": "Ionotropic Receptors (IRs) are a family of invertebrate receptors that have been widely studied in insect chemosensation.",
+      "claim_type": "EXPLICIT",
+      "source": "Ionotropic Receptors (IRs) are a family of invertebrate receptors that have been widely studied in insect chemosensation, frequently serving as receptors for diverse acids and amines (Benton et al., 2009; Silbering et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "18e882a5-c7bc-4997-8619-bb4a893bdbed",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C25",
+      "claim": "IRs frequently serve as receptors for diverse acids and amines.",
+      "claim_type": "EXPLICIT",
+      "source": "Ionotropic Receptors (IRs) are a family of invertebrate receptors that have been widely studied in insect chemosensation, frequently serving as receptors for diverse acids and amines (Benton et al., 2009; Silbering et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "5ab9d3ab-4615-4d8d-8b57-e6dd9f579f62",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C26",
+      "claim": "IRs belong to the ionotropic glutamate receptor (iGluR) family.",
+      "claim_type": "EXPLICIT",
+      "source": "The IRs belong to the ionotropic glutamate receptor (iGluR) family, an evolutionarily conserved family of heterotetrameric cation channels that includes critical regulators of synaptic transmission like the NMDA and AMPA receptors (Croset et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Croset et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "6982bd5e-974d-4e62-9a1e-8f4647a16ec7",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C27",
+      "claim": "The iGluR family is an evolutionarily conserved family of heterotetrameric cation channels.",
+      "claim_type": "EXPLICIT",
+      "source": "The IRs belong to the ionotropic glutamate receptor (iGluR) family, an evolutionarily conserved family of heterotetrameric cation channels that includes critical regulators of synaptic transmission like the NMDA and AMPA receptors (Croset et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Croset et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "cddd3085-4d73-4d75-9845-66f4a981d725",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C28",
+      "claim": "The iGluR family includes critical regulators of synaptic transmission like the NMDA and AMPA receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "The IRs belong to the ionotropic glutamate receptor (iGluR) family, an evolutionarily conserved family of heterotetrameric cation channels that includes critical regulators of synaptic transmission like the NMDA and AMPA receptors (Croset et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Croset et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "642bb9bd-7787-48e8-8b60-633c76b72d3e",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C29",
+      "claim": "IRs have been found only in Protostomia.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to iGluRs, IRs have been found only in Protostomia and are implicated in sensory transduction rather than synaptic transmission (Rytz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Rytz et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "6a108840-95ca-4f69-853b-9674cf0ea6ac",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C30",
+      "claim": "IRs are implicated in sensory transduction rather than synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to iGluRs, IRs have been found only in Protostomia and are implicated in sensory transduction rather than synaptic transmission (Rytz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Rytz et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "78f785ad-48e8-4911-8bb3-85d69b212967",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C31",
+      "claim": "The IR family has undergone significant expansion and diversification in insects.",
+      "claim_type": "EXPLICIT",
+      "source": "In insects, the IR family has undergone significant expansion and diversification, with the fruit fly D. melanogaster genome encoding 66 IRs (Croset et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Croset et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "c6ee2971-fc82-4cf5-ab64-8d9eaaf32fd6",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C32",
+      "claim": "The fruit fly D. melanogaster genome encodes 66 IRs.",
+      "claim_type": "EXPLICIT",
+      "source": "In insects, the IR family has undergone significant expansion and diversification, with the fruit fly D. melanogaster genome encoding 66 IRs (Croset et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Croset et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "fad395d1-4acc-4de3-b807-dde6edc3868b",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C33",
+      "claim": "At least some IRs are thought to form heteromeric channels in which a broadly-expressed IR 'co-receptor' partners one or more selectively-expressed 'stimulus-specific' IRs.",
+      "claim_type": "EXPLICIT",
+      "source": "While the detailed structures of IR complexes are unknown, at least some IRs are thought to form heteromeric channels in which a broadly-expressed IR 'co-receptor' (such as IR25a, IR8a or IR76b) partners one or more selectively-expressed 'stimulus-specific' IRs (Abuin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Abuin et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "8ffed113-0d9b-4075-8bbb-e2b9829a8a48",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C34",
+      "claim": "IR25a, IR8a and IR76b are examples of broadly-expressed IR 'co-receptors'.",
+      "claim_type": "EXPLICIT",
+      "source": "While the detailed structures of IR complexes are unknown, at least some IRs are thought to form heteromeric channels in which a broadly-expressed IR 'co-receptor' (such as IR25a, IR8a or IR76b) partners one or more selectively-expressed 'stimulus-specific' IRs (Abuin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Abuin et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "fbcb6320-c4be-4b3e-a45d-094b09b63982",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C35",
+      "claim": "IR25a is the most highly conserved IR across insect species.",
+      "claim_type": "EXPLICIT",
+      "source": "Among insect IRs, IR25a is the most highly conserved across species (Croset et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Croset et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "6aa2907b-10a4-4c71-ae40-ee77a7d16a14",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C36",
+      "claim": "IR25a expression has been observed in multiple classes of chemosensory neurons with diverse chemical specificities in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, IR25a expression has been observed in multiple classes of chemosensory neurons with diverse chemical specificities, and IR25a has been shown to function as a 'co-receptor' that forms chemoreceptors of diverse specificities in combination with other, stimulus-specific IRs (Abuin et al., 2011; Rytz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "e979aeda-763b-4362-8290-fe04f4eca823",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C37",
+      "claim": "IR25a functions as a 'co-receptor' that forms chemoreceptors of diverse specificities in combination with other, stimulus-specific IRs.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, IR25a expression has been observed in multiple classes of chemosensory neurons with diverse chemical specificities, and IR25a has been shown to function as a 'co-receptor' that forms chemoreceptors of diverse specificities in combination with other, stimulus-specific IRs (Abuin et al., 2011; Rytz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "9fc0ff5b-f8db-4b44-9757-abb150291b9b",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C38",
+      "claim": "IR21a is conserved in mosquitoes and other insects.",
+      "claim_type": "EXPLICIT",
+      "source": "IR21a is conserved in mosquitoes and other insects, but has not been associated with a specific chemoreceptor function (Silbering et al., 2011), raising the possibility that it may contribute to other sensory modalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Silbering et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "630af5f4-47ca-42cf-a4e7-67c8cca61523",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C39",
+      "claim": "IR21a has not been associated with a specific chemoreceptor function.",
+      "claim_type": "EXPLICIT",
+      "source": "IR21a is conserved in mosquitoes and other insects, but has not been associated with a specific chemoreceptor function (Silbering et al., 2011), raising the possibility that it may contribute to other sensory modalities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Silbering et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "8fe981d9-6185-48a6-aea4-0a2dabadea4f",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C40",
+      "claim": "Ir21a-Gal4 drives robust gene expression in a subset of neurons in the dorsal organ ganglion.",
+      "claim_type": "EXPLICIT",
+      "source": "Examining a range of potential sensory receptors in the larva, we found that regulatory sequences from the Ionotropic Receptor Ir21a drove robust gene expression (via the Gal4/UAS system [Brand and Perrimon, 1993]) in a subset of neurons in the dorsal organ ganglion, as well as in other locations (Figure 1b,c, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "8cef9121-fe72-40d5-aeef-97fc19610f07",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C41",
+      "claim": "Ir21a-Gal4 drives gene expression in three neurons within each dorsal organ ganglion.",
+      "claim_type": "EXPLICIT",
+      "source": "Within each dorsal organ ganglion, Ir21a-Gal4 drove gene expression in three neurons (Figure 1b,c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "c7ebaa76-c5d8-4bf6-982f-2c897abb9789",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C42",
+      "claim": "The three Ir21a-Gal4-expressing neurons in each dorsal organ ganglion exhibit the characteristic morphology of the DOCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "These neurons exhibited the characteristic morphology of the DOCCs, which have unusual sensory processes that form a characteristic 'dendritic bulb' inside the larva (Klein et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1 and citation to Klein et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "c63f89c7-e5f2-4ebc-9cc6-7056d2e2bbb4",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C43",
+      "claim": "DOCCs have unusual sensory processes that form a characteristic 'dendritic bulb' inside the larva.",
+      "claim_type": "EXPLICIT",
+      "source": "These neurons exhibited the characteristic morphology of the DOCCs, which have unusual sensory processes that form a characteristic 'dendritic bulb' inside the larva (Klein et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established by citation to Klein et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "0a0f096f-241a-4e9e-ba5f-1cffb695b7d6",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C44",
+      "claim": "Ir21a-Gal4-positive neurons are cool-responsive.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that the Ir21a-Gal4-positive neurons were indeed cool-responsive, their thermosensitivity was tested by cell-specific expression of the genetically encoded calcium indicator GCaMP6m under Ir21a-Gal4 control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 1d,e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "23a8b67c-a227-43fe-9eaf-e851ef8524e7",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C45",
+      "claim": "When exposed to a sinusoidal temperature stimulus between ~14\u02daC and ~20\u02daC, GCaMP6m fluorescence in Ir21a-Gal4-positive neurons increased upon cooling and decreased upon warming.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previously characterized DOCC responses (Klein et al., 2015), when exposed to a sinusoidal temperature stimulus between ~14\u02daC and ~20\u02daC, GCaMP6m fluorescence in these neurons increased upon cooling and decreased upon warming (Figure 1d,e and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "3141d4be-8837-4c50-bed6-4517a0d18d0b",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C46",
+      "claim": "Ir21a-Gal4 and R11F02-Gal4 precisely overlap in three cool-responsive neurons with DOCC morphology in the dorsal organ.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, GCaMP6m expressed under the combined control of Ir21a-Gal4 and R11F02-Gal4 revealed their precise overlap in three cool-responsive neurons with DOCC morphology in the dorsal organ, further confirming the identification of the Ir21a-Gal4-expressing cells as the cool-responsive DOCCs (Figure 1f,g).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 1f,g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "7e569561-fa50-4307-ab80-6a31a456002d",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C47",
+      "claim": "Ir21a\u22061 deletes approximately 11 kb removing all except the last 192 nucleotides of the Ir21a open reading frame.",
+      "claim_type": "EXPLICIT",
+      "source": "Ir21a\u22061 is an ~11 kb deletion removing all except the last 192 nucleotides of the Ir21a open reading frame, including all transmembrane and ion pore sequences (Figure 2a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the molecular nature of the mutant allele generated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "c0c18524-d9d9-433c-9649-cff1dd6f3b3f",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C48",
+      "claim": "Ir21a123 deletes 23 nucleotides in the region encoding the first transmembrane domain of IR21a and creates a translational frameshift.",
+      "claim_type": "EXPLICIT",
+      "source": "Ir21a123 deletes 23 nucleotides in the region encoding the first transmembrane domain of IR21a and creates a translational frameshift (Figure 2a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the molecular nature of the mutant allele generated.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "2be4d33a-cd1e-48f7-ab68-6cfb0c5bc8fc",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C49",
+      "claim": "Ir21a\u22061 null mutants are unable to navigate away from cooler temperatures and toward warmer temperatures on a thermal gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "When exposed to a thermal gradient of ~0.36\u02daC/cm, ranging from ~13.5\u02daC to ~21.5\u02daC, Ir21a\u22061 null mutants as well as Ir21a123/ Ir21a\u22061 heterozygotes were unable to navigate away from cooler temperatures and toward warmer temperatures (Figure 2b,c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "9f4f8874-685b-40ec-b146-3b0efbcedcd7",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C50",
+      "claim": "Ir21a123/Ir21a\u22061 heterozygotes are unable to navigate away from cooler temperatures and toward warmer temperatures on a thermal gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "When exposed to a thermal gradient of ~0.36\u02daC/cm, ranging from ~13.5\u02daC to ~21.5\u02daC, Ir21a\u22061 null mutants as well as Ir21a123/ Ir21a\u22061 heterozygotes were unable to navigate away from cooler temperatures and toward warmer temperatures (Figure 2b,c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "b19c3f4c-5d52-41cf-8acb-3e883c53c813",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C51",
+      "claim": "The thermotaxis defects of Ir21a mutants can be rescued by expression of a wild-type Ir21a transcript under Ir21a-Gal4 control.",
+      "claim_type": "EXPLICIT",
+      "source": "These defects could be rescued by expression of a wild-type Ir21a transcript under Ir21a-Gal4 control and by a wild-type Ir21a genomic transgene (Figure 2c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral rescue data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "16603a69-1632-4e86-8436-61379bb26e4f",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C52",
+      "claim": "The thermotaxis defects of Ir21a mutants can be rescued by a wild-type Ir21a genomic transgene.",
+      "claim_type": "EXPLICIT",
+      "source": "These defects could be rescued by expression of a wild-type Ir21a transcript under Ir21a-Gal4 control and by a wild-type Ir21a genomic transgene (Figure 2c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral rescue data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "35004d21-a5b3-4550-a007-819c62538a2f",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C53",
+      "claim": "Ir21a has a critical role in larval thermotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results are consistent with a critical role for Ir21a in larval thermotaxis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutant and rescue data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "44401781-d8c8-496f-8765-46b42a06aabd",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C54",
+      "claim": "Animals homozygous for loss-of-function mutations in Ir8a exhibit robust avoidance of cool temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Animals homozygous for loss-of-function mutations in two previously reported IR co-receptors, Ir8a and Ir76b, exhibited robust avoidance of cool temperatures, indicating that these receptors are not essential for this behavior (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "633c6025-60af-48ff-8059-9ebe945323cb",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C55",
+      "claim": "Animals homozygous for loss-of-function mutations in Ir76b exhibit robust avoidance of cool temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Animals homozygous for loss-of-function mutations in two previously reported IR co-receptors, Ir8a and Ir76b, exhibited robust avoidance of cool temperatures, indicating that these receptors are not essential for this behavior (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "2f368611-1e3e-4bd9-a2c6-07bcd3060836",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C56",
+      "claim": "Ir8a and Ir76b are not essential for cool avoidance behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Animals homozygous for loss-of-function mutations in two previously reported IR co-receptors, Ir8a and Ir76b, exhibited robust avoidance of cool temperatures, indicating that these receptors are not essential for this behavior (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from behavioral data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "90579cbb-3258-4a36-bf9c-5e5850bfda0d",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C57",
+      "claim": "Ir25a2 null mutants fail to avoid cool temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, Ir25a2 null mutants failed to avoid cool temperatures, a defect that could be rescued by the introduction of a transgene containing a wild type copy of Ir25a (Figure 2c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "e39a718f-b0c3-4cd8-ba5c-b8de0a9e420c",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C58",
+      "claim": "The cool avoidance defect of Ir25a2 null mutants can be rescued by a transgene containing a wild type copy of Ir25a.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, Ir25a2 null mutants failed to avoid cool temperatures, a defect that could be rescued by the introduction of a transgene containing a wild type copy of Ir25a (Figure 2c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral rescue data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "6918718c-36c5-4747-a8c5-4c463e6915a8",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C59",
+      "claim": "Ir25a participates in cool avoidance.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Ir25a also participates in cool avoidance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutant and rescue data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "90fcf403-55cb-4e32-802f-4ec766b4fd9b",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C60",
+      "claim": "Robust IR25a protein expression is detected in multiple cells in the dorsal organ ganglion, including the three Ir21a-Gal4-expressing DOCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess IR25a expression, larvae were stained with antisera for IR25a. Robust IR25a protein expression was detected in multiple cells in the dorsal organ ganglion, including the three Ir21a-Gal4-expressing DOCCs (Figure 3a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "bb7b868f-6003-4901-8740-3527403aaa70",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C61",
+      "claim": "Within DOCCs, IR25a strongly labels the 'dendritic bulbs'.",
+      "claim_type": "EXPLICIT",
+      "source": "Within DOCCs, IR25a strongly labels the 'dendritic bulbs', consistent with a role in sensory transduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "e2892d10-174e-4a73-910a-39bc5e8532c1",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C62",
+      "claim": "IR25a staining is absent in Ir25a null mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Staining was absent in Ir25a null mutants demonstrating staining specificity (Figure 3b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "ae87a3fc-7a69-4baf-85cc-f1953182acbb",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C63",
+      "claim": "Ir25a is required for thermotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus Ir25a is required for thermotaxis and is expressed in the neurons that drive this behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from behavioral and expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "812b712c-bebc-4e6f-beb8-9a5d0599516a",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C64",
+      "claim": "Ir25a is expressed in the neurons that drive thermotaxis behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus Ir25a is required for thermotaxis and is expressed in the neurons that drive this behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "59ac4e7c-8c89-46e1-b323-95082760cca1",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C65",
+      "claim": "DOCCs exhibit strongly reduced responses to cooling in Ir21a\u22061 deletion mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a role for Ir21a in cool responses, DOCCs exhibited strongly reduced responses to cooling in Ir21a\u22061 deletion mutants, and this defect was robustly rescued by expression of an Ir21a transcript in the DOCCs using R11F02-Gal4 (Figure 4a-e,h).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "3c9d20e6-a899-49a8-8e51-7a8067f45916",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C66",
+      "claim": "The reduced DOCC cool responses in Ir21a\u22061 mutants are robustly rescued by expression of an Ir21a transcript in the DOCCs using R11F02-Gal4.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a role for Ir21a in cool responses, DOCCs exhibited strongly reduced responses to cooling in Ir21a\u22061 deletion mutants, and this defect was robustly rescued by expression of an Ir21a transcript in the DOCCs using R11F02-Gal4 (Figure 4a-e,h).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium imaging rescue data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "62ba437e-cd88-4d10-ae25-96c347ccc657",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C67",
+      "claim": "DOCC thermosensory responses are greatly reduced in Ir25a mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, DOCC thermosensory responses were greatly reduced in Ir25a mutants, a defect that was rescued by a wild type Ir25a transgene (Figure 4f\u2013h).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "79868268-58e0-4ed7-b609-a469451a8dd4",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C68",
+      "claim": "The reduced DOCC thermosensory responses in Ir25a mutants are rescued by a wild type Ir25a transgene.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, DOCC thermosensory responses were greatly reduced in Ir25a mutants, a defect that was rescued by a wild type Ir25a transgene (Figure 4f\u2013h).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium imaging rescue data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "bd7f2aa8-364c-478c-a618-4a39aba79bc0",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C69",
+      "claim": "Ir21a and Ir25a have a critical role in the detection of cooling by the DOCCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these data demonstrate a critical role for Ir21a and Ir25a in the detection of cooling by the DOCCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mutant and rescue calcium imaging data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "eb242c4f-1d1a-479f-b6d9-39d20d752fd3",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C70",
+      "claim": "DOCC responses to cooling appear unaffected in brv1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Although brv1 mutant showed defects in thermotactic behavior, DOCC responses to cooling appeared unaffected in brv1 mutants (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "4e117bd9-f7c7-4da7-a5e7-daf9a8195075",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C71",
+      "claim": "brv2 nulls exhibit no detectable thermotaxis defects.",
+      "claim_type": "EXPLICIT",
+      "source": "brv2 nulls exhibited no detectable thermotaxis defects (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "29091809-5724-40fa-acac-022d2b066d53",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C72",
+      "claim": "No role for brv1 and brv2 in cool sensing by the DOCCs is detected.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we detect no role for these receptors in cool sensing by the DOCCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the behavioral and calcium imaging data for brv mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "88685daf-175e-46c6-b057-bca8a37674e7",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C73",
+      "claim": "Ectopic expression of IR21a in Hot Cell thermoreceptors confers cool-sensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ectopic expression of IR21a in one set of neurons in the adult, Hot Cell thermoreceptors in the arista that normally respond to warming rather than cooling, conferred cool-sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "7f384686-9dd6-4e16-91b5-3619eb83870d",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C74",
+      "claim": "Hot Cell thermoreceptors in the arista normally respond to warming rather than cooling.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ectopic expression of IR21a in one set of neurons in the adult, Hot Cell thermoreceptors in the arista that normally respond to warming rather than cooling, conferred cool-sensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge cited from prior work.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "25f8ea5a-8567-4a72-a626-00fac95b1df0",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C75",
+      "claim": "Wild-type HC neurons respond to warming with robust increases in intracellular calcium.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported (Gallio et al., 2011), wild-type HC neurons respond to warming with robust increases in intracellular calcium and to cooling with decreases in intracellular calcium, as reflected in temperature-dependent changes in GCaMP6m fluorescence (Figure 5a,c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 5 and citation to Gallio et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "5464a439-b54a-4dbd-ab72-6d81c5d2bba3",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C76",
+      "claim": "Wild-type HC neurons respond to cooling with decreases in intracellular calcium.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported (Gallio et al., 2011), wild-type HC neurons respond to warming with robust increases in intracellular calcium and to cooling with decreases in intracellular calcium, as reflected in temperature-dependent changes in GCaMP6m fluorescence (Figure 5a,c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 5 and citation to Gallio et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "042e6e7e-6d20-467e-9d33-781bff3693e5",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C77",
+      "claim": "HC neurons in which IR21a is expressed under the control of a pan-neuronal promoter frequently exhibit elevations in calcium in response to both warming and cooling.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, HC neurons in which IR21a is expressed under the control of a pan-neuronal promoter (N-syb>Ir21a animals) frequently exhibited elevations in calcium not only in response to warming, but also at the coolest temperatures (Figure 5b,d,f, Figure 5\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "78f3831c-555b-43bd-945e-ce64853f45da",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C78",
+      "claim": "Ectopic IR21a expression causes HC neurons, which are normally inhibited by cooling, to become responsive to both cooling and warming.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, ectopic IR21a expression causes HC neurons, which are normally inhibited by cooling, to become responsive to both cooling and warming.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the calcium imaging data shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "bcd04130-8c28-44e1-b61c-9d1d108bf6d0",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C79",
+      "claim": "Robust IR25a protein expression is observed in the HC neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previously reported IR25a expression in the arista (Benton et al., 2009), we observed robust IR25a protein expression in the HC neurons (Figure 5\u2014figure supplement 1b,c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunostaining data shown in Figure 5\u2014figure supplement 1 and citation to Benton et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "e9da7a5e-c10f-4d62-b0fd-ba01857f1749",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C80",
+      "claim": "Ectopic IR21a expression fails to drive significant HC neuron cool responses in Ir25a mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a role for Ir25a in Ir21a-mediated cool-responsiveness, ectopic IR21a expression failed to drive significant HC neuron cool responses in Ir25a mutants (Figure 5e,f).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "a24c561c-dad9-486b-a59a-b3325d86ccb6",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C81",
+      "claim": "IR21a can confer cool-sensitivity upon an otherwise warmth-responsive neuron in an Ir25a-dependent fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, IR21a can confer cool-sensitivity upon an otherwise warmth-responsive neuron in an Ir25a-dependent fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the misexpression and mutant data shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "c6db7e85-1320-44a6-9814-a56209920557",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C82",
+      "claim": "Ectopic expression of IR21a in Gr28b mutant HC neurons yields neurons that respond only to cooling.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, ectopic expression of IR21a in Gr28b mutant HC neurons, which lack the Gr28b(D) warmth receptor, yields neurons that respond only to cooling (Figure 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "c7d6b98b-dc82-4dcf-8025-1bc9ce85916e",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C83",
+      "claim": "Gr28b mutant HC neurons lack the Gr28b(D) warmth receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, ectopic expression of IR21a in Gr28b mutant HC neurons, which lack the Gr28b(D) warmth receptor, yields neurons that respond only to cooling (Figure 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the Gr28b mutant.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "bf89f797-05c8-4d44-8cea-086e499224d6",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C84",
+      "claim": "Ectopic IR21a expression can confer cool-sensitivity in an Ir25a-dependent fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data demonstrate that ectopic IR21a expression can confer cool-sensitivity in an Ir25a-dependent fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the misexpression experiments shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "d9d4da42-4713-4c79-aea5-d4fad8dfd8e8",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C85",
+      "claim": "The ionotropic receptors IR21a and IR25a have critical roles in thermosensation in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that the ionotropic receptors IR21a and IR25a have critical roles in thermosensation in Drosophila, mediating cool detection by the larval dorsal organ cool cells (DOCCs) and the avoidance of cool temperatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by all experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "a6b867f2-4c02-4694-bbf9-4269eaa37b89",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C86",
+      "claim": "IR21a and IR25a mediate cool detection by the larval dorsal organ cool cells (DOCCs).",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that the ionotropic receptors IR21a and IR25a have critical roles in thermosensation in Drosophila, mediating cool detection by the larval dorsal organ cool cells (DOCCs) and the avoidance of cool temperatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium imaging data in Figures 1, 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "96450948-3706-480c-ae0c-f196696a1138",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C87",
+      "claim": "IR21a and IR25a mediate the avoidance of cool temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that the ionotropic receptors IR21a and IR25a have critical roles in thermosensation in Drosophila, mediating cool detection by the larval dorsal organ cool cells (DOCCs) and the avoidance of cool temperatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "3715af32-1790-4a28-81af-3915f0c2dacc",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C88",
+      "claim": "Combinations of IRs have been previously found to contribute to a wide range of chemosensory responses, including the detection of acids and amines.",
+      "claim_type": "EXPLICIT",
+      "source": "Combinations of IRs have been previously found to contribute to a wide range of chemosensory responses, including the detection of acids and amines (Rytz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Rytz et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "551c10d4-9910-49ff-bb11-5f35975a9476",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C89",
+      "claim": "The findings extend the range of sensory stimuli mediated by IR receptor combinations to cool temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings extend the range of sensory stimuli mediated by these receptor combinations to cool temperatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "71bc3da3-3198-4a8d-ad78-fc5067bc5075",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C90",
+      "claim": "IR21a- and IR25a-dependent cool sensation appears independent of Brivido 1 and Brivido 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, IR21a- and IR25a-dependent cool sensation appears independent of Brivido 1 and Brivido 2, two TRP channels implicated in cool sensing in the adult (Gallio et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the brv mutant data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "3d195966-2a42-434e-9c50-270f5c274f56",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C91",
+      "claim": "Brivido 1 and Brivido 2 are two TRP channels implicated in cool sensing in the adult.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, IR21a- and IR25a-dependent cool sensation appears independent of Brivido 1 and Brivido 2, two TRP channels implicated in cool sensing in the adult (Gallio et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Gallio et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "9b2fe53c-e6f0-4f95-a5ba-679e00882c2b",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C92",
+      "claim": "IR25a has been shown to act with other IRs in the formation of chemoreceptors, potentially as heteromers.",
+      "claim_type": "EXPLICIT",
+      "source": "IR25a has been shown to act with other IRs in the formation of chemoreceptors, potentially as heteromers (Rytz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Rytz et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "1dced276-5869-4e3d-b323-0425258d4eef",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C93",
+      "claim": "IR25a might form heteromeric thermoreceptors in combination with IR21a.",
+      "claim_type": "EXPLICIT",
+      "source": "This precedent raises the appealing possibility that IR25a might form heteromeric thermoreceptors in combination with IR21a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on known IR function in chemosensation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "1672893e-f692-431e-9753-50cf23eebfd8",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C94",
+      "claim": "The mechanism by which IR21a and IR25a contribute to cool responsiveness is likely to involve additional molecular cofactors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our inability to readily reconstitute temperature-responsive receptor complexes in heterologous cells suggests that the mechanism by which these receptors contribute to cool responsiveness is likely to involve additional molecular cofactors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the failure of heterologous expression experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "e4bb584f-c9b3-4c1e-a06c-5e548ac11f82",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C95",
+      "claim": "The range of cell types in which ectopic IR21a expression confers cool-sensitivity is restricted to neurons that already respond to temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to note that the range of cell types in which ectopic IR21a expression confers cool-sensitivity is so far restricted to neurons that already respond to temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the misexpression experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "d4eec8eb-9434-43bd-bb81-6feb4072c4cd",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C96",
+      "claim": "Additional co-factors or structures in thermosensory cells are critical for IR21a and IR25a to mediate responses to temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation suggests the existence of additional co-factors or structures in these thermosensory cells that are critical for IR21a and IR25a to mediate responses to temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that IR21a only confers cool sensitivity in certain cell types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "cb42a135-7946-45a3-99b8-529e3f5b8e14",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C97",
+      "claim": "All studies to date implicate IRs as receptors for sensory stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "All studies to date implicate IRs as receptors for sensory stimuli (Rytz et al., 2013), and our misexpression studies are consistent with a similar role for Ir21a and IR25a in cool sensation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Rytz et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "9781b385-add3-41f8-852b-ec272d0fd587",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C98",
+      "claim": "The misexpression studies are consistent with a role for Ir21a and IR25a as receptors for cool sensation.",
+      "claim_type": "EXPLICIT",
+      "source": "All studies to date implicate IRs as receptors for sensory stimuli (Rytz et al., 2013), and our misexpression studies are consistent with a similar role for Ir21a and IR25a in cool sensation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the misexpression data shown in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "481de169-9a51-440f-ab51-fd34b5da1f02",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C99",
+      "claim": "IR25a was recently implicated in warmth-responsive resetting of the circadian clock.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, IR25a was recently implicated in warmth-responsive resetting of the circadian clock, and suggested to confer warmth-sensitivity on its own, without the co-expression of other IRs (Chen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established by citation to Chen et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "3ac0fb1d-591b-4fd8-9602-dc8eaa3d7ddc",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C100",
+      "claim": "IR25a was suggested to confer warmth-sensitivity on its own, without the co-expression of other IRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, IR25a was recently implicated in warmth-responsive resetting of the circadian clock, and suggested to confer warmth-sensitivity on its own, without the co-expression of other IRs (Chen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim from Chen et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "6f108962-c395-4339-803c-bf7d81ebdaf4",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C101",
+      "claim": "The ability of IR25a to serve as a warmth receptor on its own would be a surprise given both its broad expression and its established role as an IR co-receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of IR25a to serve as a warmth receptor on its own would be a surprise given both its broad expression and its established role as an IR co-receptor (Abuin et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on established knowledge about IR25a function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "9d8cab23-14b9-4447-a83a-7240d6ddf3e6",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C102",
+      "claim": "IR25a may act as a co-receptor with other IRs involved in warmth-sensing rather than acting on its own.",
+      "claim_type": "EXPLICIT",
+      "source": "As IR25a misexpression only slightly enhanced the thermosensitivity of an already warmth-responsive neuron (Chen et al., 2015), this raises the alternative possibility that \u2013 analogous to cool-sensing \u2013 IR25a acts not on its own, but rather as a co-receptor with other IRs involved in warmth-sensing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the authors' findings and data from Chen et al., 2015.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "756f3392-13b3-4385-9b64-1b3ded21a07c",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C103",
+      "claim": "The expression of both IR21a and IR25a has been detected in the thermoreceptors of the adult arista.",
+      "claim_type": "EXPLICIT",
+      "source": "While the present study focuses on the role of IR21a and IR25a in larval thermosensation, it is interesting to note that the expression of both IR21a and IR25a has been detected in the thermoreceptors of the adult arista (Benton et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established by citation to Benton et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "b68852ec-69a5-4077-b608-ab5702118c9e",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C104",
+      "claim": "Related mechanisms could contribute to thermosensory responses in other cellular contexts and life stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, related mechanisms could contribute to thermosensory responses not only in the DOCCs, but also in other cellular contexts and life stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the expression patterns of IR21a and IR25a.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "c0c04ee8-c330-4ba2-9ea5-3a3ad5b66f27",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C105",
+      "claim": "Orthologs of IR21a and IR25a are present across a range of insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the presence of orthologs of IR21a and IR25a across a range of insects (Croset et al., 2010) raises the possibility that these IRs, along other members of the IR family, constitute a family of deeply-conserved thermosensors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge supported by citation to Croset et al., 2010.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "1fbdc5a8-0d54-4b69-95ea-3ab025a30b11",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C106",
+      "claim": "IR21a and IR25a, along with other members of the IR family, may constitute a family of deeply-conserved thermosensors.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the presence of orthologs of IR21a and IR25a across a range of insects (Croset et al., 2010) raises the possibility that these IRs, along other members of the IR family, constitute a family of deeply-conserved thermosensors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the conservation of IR21a and IR25a across insects.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "b0029faf-9abd-4fa0-8b4c-6707073fd6b1",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C107",
+      "claim": "Ir21a-Gal4 regulatory sequences span from -606 to +978 with respect to the Ir21a translational start site.",
+      "claim_type": "EXPLICIT",
+      "source": "In Ir21a-Gal4, sequences from -606 to +978 with respect to the Ir21a translational start site (chromosome 2L: 24,173 \u2013 25757, reverse complement) lie upstream of Gal4 protein-coding sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the molecular construction of the Ir21a-Gal4 transgene.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "4b391358-d335-4e57-be53-269f2c706c61",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C108",
+      "claim": "UAS-Ir21a contains the Ir21a primary transcript including introns placed under UAS control.",
+      "claim_type": "EXPLICIT",
+      "source": "UAS-Ir21a contains the Ir21a primary transcript including introns (chromosome 2L: 21823\u201325155, reverse complement) placed under UAS control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the molecular construction of the UAS-Ir21a transgene.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "710dc0a4-a749-4e21-a0cc-56d769344483",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C109",
+      "claim": "The {Ir21a+} genomic rescue construct contains sequences from -1002 to +4439 with respect to the Ir21a translational start site.",
+      "claim_type": "EXPLICIT",
+      "source": "The {Ir21a+} genomic rescue construct contains sequences from -1002 to +4439 with respect to the Ir21a translational start site (chromosome 2L: 26153\u201320712).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the molecular construction of the genomic rescue transgene.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "fff8f89b-cf3a-4ca1-9ce7-8137e11e5c89",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C110",
+      "claim": "Ir21a\u22061 was generated by FLP-mediated recombination between two FRT-containing transposon insertions.",
+      "claim_type": "EXPLICIT",
+      "source": "Ir21a\u22061 was generated by FLP-mediated recombination between two FRT-containing transposon insertions (PBac{PB}c02720 and PBac{PB}c04017) as described (Parks et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method used to generate the Ir21a\u22061 allele.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "249e0258-23a8-4954-b596-4e9e63aee2b0",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C111",
+      "claim": "Ir21a123 was generated by transgene-based CRISPR-mediated genome engineering.",
+      "claim_type": "EXPLICIT",
+      "source": "Ir21a123 was generated by transgene-based CRISPR-mediated genome engineering as described (Port et al., 2014), with an Ir21a-targeting gRNA (5'-CTGATTTGCGTTTACCTCGG) expressed under U6-3 promoter control (dU6-3:gRNA) in the presence of act-cas9 (Port et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method used to generate the Ir21a123 allele.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "3aaa5075-6b37-4899-b5d4-c2e8042d69fe",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C112",
+      "claim": "Thermotaxis of early 2nd instar larvae was assessed over a 15 min period on a temperature gradient extending from 13.5 to 21.5\u00b0C over 22 cm.",
+      "claim_type": "EXPLICIT",
+      "source": "Thermotaxis of early 2nd instar larvae was assessed over a 15 min period on a temperature gradient extending from 13.5 to 21.5\u00b0C over 22 cm (~0.36\u02daC/cm) as described (Klein et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the behavioral assay methodology.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "ef6c9d0d-9644-4477-9a23-31a21cf675bf",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C113",
+      "claim": "Calcium imaging was performed as previously described for larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Calcium imaging was performed as previously described for larvae (Klein et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the calcium imaging methodology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "bf976a14-a42d-444a-bccf-97b1bd778408",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C114",
+      "claim": "Adult calcium imaging was performed with modifications to the temperature stimulus and sample preparation approach compared to larval imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult calcium imaging was performed as described for larvae (Klein et al., 2015), with modifications to the temperature stimulus and sample preparation approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the adult calcium imaging methodology.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "76b85e6f-0604-444c-8cfd-1a1aaa66b9c3",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C115",
+      "claim": "Adult temperature stimulus ranged from 14\u00b0C to 30\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult temperature stimulus ranged from 14\u00b0C to 30\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the temperature range used in adult calcium imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "3398f9ce-fb21-4312-88dc-1d8226c0e468",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "claim_id": "C116",
+      "claim": "Immunostaining was performed using rabbit anti-Ir25a (1:100).",
+      "claim_type": "EXPLICIT",
+      "source": "Immunostaining was performed as described (Kang et al., 2012) using rabbit anti-Ir25a (1:100; [Benton et al., 2009]), mouse anti-GFP (1:200; Roche), goat anti-rabbit Cy3 (1:100; Jackson ImmunoResearch), donkey anti-mouse FITC (1:100; Jackson ImmunoResearch).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the immunostaining methodology.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "438718d7-d9cb-4bac-a8e2-26513e7f9e4b",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Ir21a-Gal4 drives expression in three cool-responsive neurons in the dorsal organ ganglion that exhibit DOCC morphology. These neurons show increased GCaMP6m fluorescence upon cooling and decreased fluorescence upon warming when exposed to sinusoidal temperature stimuli between ~14\u00b0C and ~20\u00b0C. Ir21a-Gal4 and R11F02-Gal4 precisely overlap in these three cool-responsive neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C46 are well-supported by the expression and calcium imaging data shown in Figure 1. The morphological identification, functional characterization via GCaMP6m imaging, and overlap with the previously characterized R11F02-Gal4 line provide converging evidence that Ir21a-Gal4 labels the DOCCs. The calcium imaging methodology is appropriately described and the temperature responses are consistent with prior characterization of DOCCs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "fdb539f9-48a0-4e38-8e2a-df997cd72270",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Two Ir21a mutant alleles (Ir21a\u22061 and Ir21a123) were generated and characterized. Both Ir21a\u22061 null mutants and Ir21a123/Ir21a\u22061 heterozygotes are unable to navigate away from cooler temperatures on a thermal gradient. These thermotaxis defects can be rescued by expression of wild-type Ir21a under Ir21a-Gal4 control or by a wild-type Ir21a genomic transgene, demonstrating a critical role for Ir21a in larval thermotaxis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C53 are well-supported by the molecular characterization of the mutants (Figure 2a), behavioral thermotaxis data (Figure 2b,c), and genetic rescue experiments. The use of two independent alleles and multiple rescue approaches provides strong evidence for Ir21a's role in thermotaxis. Statistical analysis using Tukey HSD is appropriate for the normally distributed behavioral data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "eeb4d240-398d-4bed-9f70-4cf766bdbe4b",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Animals homozygous for loss-of-function mutations in the IR co-receptors Ir8a and Ir76b exhibit robust avoidance of cool temperatures, indicating that these receptors are not essential for cool avoidance behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 are supported by behavioral data shown in Figure 2\u2014figure supplement 1. The negative results for Ir8a and Ir76b mutants help narrow down which IR co-receptors are involved in cool sensing. The data are appropriately analyzed and the conclusion that these receptors are not essential is justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "e135cf6e-0c2a-4ca7-ac25-d23486ebe302",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Ir25a2 null mutants fail to avoid cool temperatures, a defect that can be rescued by introduction of a transgene containing a wild-type copy of Ir25a, demonstrating that Ir25a participates in cool avoidance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 are well-supported by behavioral data and genetic rescue experiments shown in Figure 2c. The loss-of-function and rescue experiments provide strong evidence for Ir25a's role in cool avoidance behavior. The experimental design parallels that used for Ir21a, providing consistent evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "7b7a3b89-10e8-4aca-8e31-11f33fce3e0a",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "IR25a protein is robustly expressed in multiple cells in the dorsal organ ganglion, including the three Ir21a-Gal4-expressing DOCCs, where it strongly labels the dendritic bulbs. IR25a staining is absent in Ir25a null mutants, confirming antibody specificity. Ir25a is required for thermotaxis and is expressed in the neurons that drive this behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C64 are well-supported by immunostaining data shown in Figure 3. The co-localization of IR25a with Ir21a-Gal4-expressing DOCCs, the strong labeling of dendritic bulbs (consistent with a sensory transduction role), and the negative control in Ir25a mutants provide strong evidence. The conclusion that IR25a is both required for and expressed in thermotaxis neurons is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "25dcc58e-fa11-412a-a263-b05bd505fb70",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "DOCCs exhibit strongly reduced responses to cooling in both Ir21a\u22061 and Ir25a mutants. These defects are robustly rescued by expression of wild-type Ir21a or Ir25a transgenes, demonstrating a critical role for both Ir21a and Ir25a in the detection of cooling by the DOCCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C69 are well-supported by calcium imaging data shown in Figure 4. The use of GCaMP6m to measure DOCC responses, the dramatic reduction in cool responses in both mutants, and the robust rescue by transgenic expression provide strong converging evidence. The use of Steel-Dwass test for non-parametric data is appropriate. The physiological defects parallel the behavioral defects, strengthening the overall conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "b44baf8a-a7a0-4b01-b1f9-4fc28d2b403b",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "DOCC responses to cooling appear unaffected in brv1 mutants despite behavioral thermotaxis defects, and brv2 nulls exhibit no detectable thermotaxis defects. No role for brv1 and brv2 in cool sensing by the DOCCs is detected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 are supported by data shown in Figure 4\u2014figure supplement 1. The negative results for brv1 and brv2 help distinguish IR-mediated cool sensing from TRP channel-mediated mechanisms. However, the discrepancy between brv1 behavioral defects and normal DOCC physiology suggests brv1 may act elsewhere in the thermosensory circuit, which is not fully explored.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "56f5f39b-fdfa-41ae-9642-22d2c517fd1d",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Ectopic expression of IR21a in Hot Cell thermoreceptors (which normally respond to warming) confers cool-sensitivity, causing these neurons to respond to both cooling and warming. This effect requires IR25a, as ectopic IR21a expression fails to drive significant HC neuron cool responses in Ir25a mutants. IR25a protein is robustly expressed in HC neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C81 are well-supported by calcium imaging data shown in Figure 5. The gain-of-function experiment demonstrates that IR21a can confer cool sensitivity when ectopically expressed. The requirement for endogenous IR25a (shown by loss of effect in Ir25a mutants) and the demonstration of IR25a expression in HC neurons provide strong evidence for IR21a/IR25a functional interaction. The use of Steel-Dwass test for statistical analysis is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "f6b9f572-c734-46b9-97c9-15294a974790",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Ectopic expression of IR21a in Gr28b mutant HC neurons (which lack the warmth receptor) yields neurons that respond only to cooling, demonstrating that ectopic IR21a expression can confer cool-sensitivity in an Ir25a-dependent fashion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82 and C84 are well-supported by calcium imaging data shown in Figure 6. The experiment in Gr28b mutant background cleanly demonstrates that IR21a can confer cool-only responses when the endogenous warmth receptor is removed. This provides strong evidence for IR21a's instructive role in thermosensing and complements the data from wild-type HC neurons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "d254fbe3-7d9c-4ad7-9d5f-6f3633442e8d",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The ionotropic receptors IR21a and IR25a have critical roles in thermosensation in Drosophila, mediating cool detection by the larval dorsal organ cool cells (DOCCs) and the avoidance of cool temperatures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C85-C87 represent the main conclusions of the study and are well-supported by the comprehensive set of experiments including expression analysis, loss-of-function mutants, genetic rescue, calcium imaging, and behavioral assays. The convergence of evidence from multiple experimental approaches (Figures 1-6) strongly supports these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "8fa3fb6c-7371-4fb2-b51c-1facbd5fd61e",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Ectopic expression of IR21a can confer cool-responsiveness in an Ir25a-dependent manner, suggesting an instructive role for IR21a in thermosensing. The misexpression studies are consistent with a role for Ir21a and IR25a as receptors for cool sensation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, and C98 are well-supported by the misexpression experiments in Figures 5 and 6. The ability of IR21a to confer cool sensitivity when ectopically expressed, the requirement for IR25a, and the conversion of warmth-responsive neurons to cool-responsive neurons provide strong evidence for an instructive role. However, the failure to reconstitute responses in heterologous cells suggests additional cofactors are required.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "f5169618-5b56-4917-a533-432dfe90fff6",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The findings extend the range of sensory stimuli mediated by IR receptor combinations to cool temperatures. IR21a- and IR25a-dependent cool sensation appears independent of Brivido 1 and Brivido 2, two TRP channels implicated in cool sensing in the adult.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89 and C90 are supported by the experimental data. The extension of IR function to thermosensation is a novel finding well-supported by the data. The independence from Brivido channels is supported by the brv mutant analysis (Figure 4\u2014figure supplement 1), though the discrepancy between brv1 behavioral and physiological phenotypes suggests complexity not fully resolved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "9ce16960-e986-439f-a7c8-f7e92a4ea4c7",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "IR25a might form heteromeric thermoreceptors in combination with IR21a, though the mechanism likely involves additional molecular cofactors. The range of cell types in which ectopic IR21a expression confers cool-sensitivity is restricted to neurons that already respond to temperature, suggesting the existence of additional co-factors or structures in thermosensory cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C93-C96 are speculative interpretations based on the data. While the requirement for both IR21a and IR25a is well-established, the heteromeric receptor model is inferred from prior work on IR chemoreceptors rather than directly demonstrated. The failure to reconstitute responses in heterologous cells and the restriction of IR21a gain-of-function to thermosensory neurons suggest additional factors are required, but these factors are not identified. These remain important open questions requiring further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "d61fd43d-8edc-42a2-bd27-cbb99e6c5930",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors discuss a recent report (Chen et al., 2015) suggesting IR25a confers warmth-sensitivity on its own, and propose an alternative interpretation that IR25a may act as a co-receptor with other IRs in warmth-sensing, analogous to its role in cool-sensing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C99-C102 are speculative discussion points about prior work. The authors appropriately note that the Chen et al. interpretation conflicts with established IR25a function as a co-receptor. However, the alternative interpretation proposed here is also speculative and not directly tested. This represents a reasonable hypothesis for future work but is not supported by data in the current manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "c1f7f8cf-14ed-4739-a248-55af5aed12fc",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The expression of both IR21a and IR25a has been detected in adult arista thermoreceptors, suggesting related mechanisms could contribute to thermosensory responses in other cellular contexts and life stages. The conservation of IR21a and IR25a orthologs across insects raises the possibility that these IRs constitute a family of deeply-conserved thermosensors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C103-C106 are speculative extensions based on expression data and evolutionary conservation. While the expression of IR21a and IR25a in adult thermoreceptors (cited from Benton et al., 2009) and their conservation across insects (cited from Croset et al., 2010) are established, the functional significance in other contexts is not tested in this study. These represent reasonable hypotheses for future work but are not directly supported by the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    },
+    {
+      "id": "542520db-7535-46f6-9485-3379d1aad4d4",
+      "content_id": "dadfeeff-9cc6-43d6-8412-f6c579ca31da",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The manuscript describes the molecular construction of transgenes (Ir21a-Gal4, UAS-Ir21a, genomic rescue constructs), generation of mutant alleles (Ir21a\u22061 by FLP-mediated recombination, Ir21a123 by CRISPR), and experimental methodologies for behavioral thermotaxis assays, larval and adult calcium imaging, and immunostaining.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C116 describe methodological details that are appropriately documented. The molecular constructs are clearly defined with genomic coordinates, mutant generation methods are cited to established protocols, and experimental procedures reference prior publications (Klein et al., 2015) with modifications noted. These methodological claims are adequately supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:34:27.761209Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8fe981d9-6185-48a6-aea4-0a2dabadea4f",
+      "result_id": "438718d7-d9cb-4bac-a8e2-26513e7f9e4b"
+    },
+    {
+      "claim_id": "8cef9121-fe72-40d5-aeef-97fc19610f07",
+      "result_id": "438718d7-d9cb-4bac-a8e2-26513e7f9e4b"
+    },
+    {
+      "claim_id": "c7ebaa76-c5d8-4bf6-982f-2c897abb9789",
+      "result_id": "438718d7-d9cb-4bac-a8e2-26513e7f9e4b"
+    },
+    {
+      "claim_id": "0a0f096f-241a-4e9e-ba5f-1cffb695b7d6",
+      "result_id": "438718d7-d9cb-4bac-a8e2-26513e7f9e4b"
+    },
+    {
+      "claim_id": "23a8b67c-a227-43fe-9eaf-e851ef8524e7",
+      "result_id": "438718d7-d9cb-4bac-a8e2-26513e7f9e4b"
+    },
+    {
+      "claim_id": "3141d4be-8837-4c50-bed6-4517a0d18d0b",
+      "result_id": "438718d7-d9cb-4bac-a8e2-26513e7f9e4b"
+    },
+    {
+      "claim_id": "7e569561-fa50-4307-ab80-6a31a456002d",
+      "result_id": "fdb539f9-48a0-4e38-8e2a-df997cd72270"
+    },
+    {
+      "claim_id": "c0c18524-d9d9-433c-9649-cff1dd6f3b3f",
+      "result_id": "fdb539f9-48a0-4e38-8e2a-df997cd72270"
+    },
+    {
+      "claim_id": "2be4d33a-cd1e-48f7-ab68-6cfb0c5bc8fc",
+      "result_id": "fdb539f9-48a0-4e38-8e2a-df997cd72270"
+    },
+    {
+      "claim_id": "9f4f8874-685b-40ec-b146-3b0efbcedcd7",
+      "result_id": "fdb539f9-48a0-4e38-8e2a-df997cd72270"
+    },
+    {
+      "claim_id": "b19c3f4c-5d52-41cf-8acb-3e883c53c813",
+      "result_id": "fdb539f9-48a0-4e38-8e2a-df997cd72270"
+    },
+    {
+      "claim_id": "16603a69-1632-4e86-8436-61379bb26e4f",
+      "result_id": "fdb539f9-48a0-4e38-8e2a-df997cd72270"
+    },
+    {
+      "claim_id": "35004d21-a5b3-4550-a007-819c62538a2f",
+      "result_id": "fdb539f9-48a0-4e38-8e2a-df997cd72270"
+    },
+    {
+      "claim_id": "44401781-d8c8-496f-8765-46b42a06aabd",
+      "result_id": "eeb4d240-398d-4bed-9f70-4cf766bdbe4b"
+    },
+    {
+      "claim_id": "633c6025-60af-48ff-8059-9ebe945323cb",
+      "result_id": "eeb4d240-398d-4bed-9f70-4cf766bdbe4b"
+    },
+    {
+      "claim_id": "2f368611-1e3e-4bd9-a2c6-07bcd3060836",
+      "result_id": "eeb4d240-398d-4bed-9f70-4cf766bdbe4b"
+    },
+    {
+      "claim_id": "90579cbb-3258-4a36-bf9c-5e5850bfda0d",
+      "result_id": "e135cf6e-0c2a-4ca7-ac25-d23486ebe302"
+    },
+    {
+      "claim_id": "e39a718f-b0c3-4cd8-ba5c-b8de0a9e420c",
+      "result_id": "e135cf6e-0c2a-4ca7-ac25-d23486ebe302"
+    },
+    {
+      "claim_id": "6918718c-36c5-4747-a8c5-4c463e6915a8",
+      "result_id": "e135cf6e-0c2a-4ca7-ac25-d23486ebe302"
+    },
+    {
+      "claim_id": "90fcf403-55cb-4e32-802f-4ec766b4fd9b",
+      "result_id": "7b7a3b89-10e8-4aca-8e31-11f33fce3e0a"
+    },
+    {
+      "claim_id": "bb7b868f-6003-4901-8740-3527403aaa70",
+      "result_id": "7b7a3b89-10e8-4aca-8e31-11f33fce3e0a"
+    },
+    {
+      "claim_id": "e2892d10-174e-4a73-910a-39bc5e8532c1",
+      "result_id": "7b7a3b89-10e8-4aca-8e31-11f33fce3e0a"
+    },
+    {
+      "claim_id": "ae87a3fc-7a69-4baf-85cc-f1953182acbb",
+      "result_id": "7b7a3b89-10e8-4aca-8e31-11f33fce3e0a"
+    },
+    {
+      "claim_id": "812b712c-bebc-4e6f-beb8-9a5d0599516a",
+      "result_id": "7b7a3b89-10e8-4aca-8e31-11f33fce3e0a"
+    },
+    {
+      "claim_id": "59ac4e7c-8c89-46e1-b323-95082760cca1",
+      "result_id": "25dcc58e-fa11-412a-a263-b05bd505fb70"
+    },
+    {
+      "claim_id": "3c9d20e6-a899-49a8-8e51-7a8067f45916",
+      "result_id": "25dcc58e-fa11-412a-a263-b05bd505fb70"
+    },
+    {
+      "claim_id": "62ba437e-cd88-4d10-ae25-96c347ccc657",
+      "result_id": "25dcc58e-fa11-412a-a263-b05bd505fb70"
+    },
+    {
+      "claim_id": "79868268-58e0-4ed7-b609-a469451a8dd4",
+      "result_id": "25dcc58e-fa11-412a-a263-b05bd505fb70"
+    },
+    {
+      "claim_id": "bd7f2aa8-364c-478c-a618-4a39aba79bc0",
+      "result_id": "25dcc58e-fa11-412a-a263-b05bd505fb70"
+    },
+    {
+      "claim_id": "eb242c4f-1d1a-479f-b6d9-39d20d752fd3",
+      "result_id": "b44baf8a-a7a0-4b01-b1f9-4fc28d2b403b"
+    },
+    {
+      "claim_id": "4e117bd9-f7c7-4da7-a5e7-daf9a8195075",
+      "result_id": "b44baf8a-a7a0-4b01-b1f9-4fc28d2b403b"
+    },
+    {
+      "claim_id": "29091809-5724-40fa-acac-022d2b066d53",
+      "result_id": "b44baf8a-a7a0-4b01-b1f9-4fc28d2b403b"
+    },
+    {
+      "claim_id": "88685daf-175e-46c6-b057-bca8a37674e7",
+      "result_id": "56f5f39b-fdfa-41ae-9642-22d2c517fd1d"
+    },
+    {
+      "claim_id": "042e6e7e-6d20-467e-9d33-781bff3693e5",
+      "result_id": "56f5f39b-fdfa-41ae-9642-22d2c517fd1d"
+    },
+    {
+      "claim_id": "78f3831c-555b-43bd-945e-ce64853f45da",
+      "result_id": "56f5f39b-fdfa-41ae-9642-22d2c517fd1d"
+    },
+    {
+      "claim_id": "bcd04130-8c28-44e1-b61c-9d1d108bf6d0",
+      "result_id": "56f5f39b-fdfa-41ae-9642-22d2c517fd1d"
+    },
+    {
+      "claim_id": "e9da7a5e-c10f-4d62-b0fd-ba01857f1749",
+      "result_id": "56f5f39b-fdfa-41ae-9642-22d2c517fd1d"
+    },
+    {
+      "claim_id": "a24c561c-dad9-486b-a59a-b3325d86ccb6",
+      "result_id": "56f5f39b-fdfa-41ae-9642-22d2c517fd1d"
+    },
+    {
+      "claim_id": "c6db7e85-1320-44a6-9814-a56209920557",
+      "result_id": "f6b9f572-c734-46b9-97c9-15294a974790"
+    },
+    {
+      "claim_id": "bf89f797-05c8-4d44-8cea-086e499224d6",
+      "result_id": "f6b9f572-c734-46b9-97c9-15294a974790"
+    },
+    {
+      "claim_id": "f0673561-6e83-4522-bc4e-59fcaf7fb4e3",
+      "result_id": "d254fbe3-7d9c-4ad7-9d5f-6f3633442e8d"
+    },
+    {
+      "claim_id": "0cf952e0-246a-43b1-a1fe-653801c63025",
+      "result_id": "d254fbe3-7d9c-4ad7-9d5f-6f3633442e8d"
+    },
+    {
+      "claim_id": "d9d4da42-4713-4c79-aea5-d4fad8dfd8e8",
+      "result_id": "d254fbe3-7d9c-4ad7-9d5f-6f3633442e8d"
+    },
+    {
+      "claim_id": "a6b867f2-4c02-4694-bbf9-4269eaa37b89",
+      "result_id": "d254fbe3-7d9c-4ad7-9d5f-6f3633442e8d"
+    },
+    {
+      "claim_id": "96450948-3706-480c-ae0c-f196696a1138",
+      "result_id": "d254fbe3-7d9c-4ad7-9d5f-6f3633442e8d"
+    },
+    {
+      "claim_id": "e575da6a-6139-4864-84fb-23c33c2cf744",
+      "result_id": "8fa3fb6c-7371-4fb2-b51c-1facbd5fd61e"
+    },
+    {
+      "claim_id": "bc829291-9485-4529-9bf5-deb3d91eecf6",
+      "result_id": "8fa3fb6c-7371-4fb2-b51c-1facbd5fd61e"
+    },
+    {
+      "claim_id": "9781b385-add3-41f8-852b-ec272d0fd587",
+      "result_id": "8fa3fb6c-7371-4fb2-b51c-1facbd5fd61e"
+    },
+    {
+      "claim_id": "551c10d4-9910-49ff-bb11-5f35975a9476",
+      "result_id": "f5169618-5b56-4917-a533-432dfe90fff6"
+    },
+    {
+      "claim_id": "71bc3da3-3198-4a8d-ad78-fc5067bc5075",
+      "result_id": "f5169618-5b56-4917-a533-432dfe90fff6"
+    },
+    {
+      "claim_id": "1dced276-5869-4e3d-b323-0425258d4eef",
+      "result_id": "9ce16960-e986-439f-a7c8-f7e92a4ea4c7"
+    },
+    {
+      "claim_id": "1672893e-f692-431e-9753-50cf23eebfd8",
+      "result_id": "9ce16960-e986-439f-a7c8-f7e92a4ea4c7"
+    },
+    {
+      "claim_id": "e4bb584f-c9b3-4c1e-a06c-5e548ac11f82",
+      "result_id": "9ce16960-e986-439f-a7c8-f7e92a4ea4c7"
+    },
+    {
+      "claim_id": "d4eec8eb-9434-43bd-bb81-6feb4072c4cd",
+      "result_id": "9ce16960-e986-439f-a7c8-f7e92a4ea4c7"
+    },
+    {
+      "claim_id": "481de169-9a51-440f-ab51-fd34b5da1f02",
+      "result_id": "d61fd43d-8edc-42a2-bd27-cbb99e6c5930"
+    },
+    {
+      "claim_id": "3ac0fb1d-591b-4fd8-9602-dc8eaa3d7ddc",
+      "result_id": "d61fd43d-8edc-42a2-bd27-cbb99e6c5930"
+    },
+    {
+      "claim_id": "6f108962-c395-4339-803c-bf7d81ebdaf4",
+      "result_id": "d61fd43d-8edc-42a2-bd27-cbb99e6c5930"
+    },
+    {
+      "claim_id": "9d8cab23-14b9-4447-a83a-7240d6ddf3e6",
+      "result_id": "d61fd43d-8edc-42a2-bd27-cbb99e6c5930"
+    },
+    {
+      "claim_id": "756f3392-13b3-4385-9b64-1b3ded21a07c",
+      "result_id": "c1f7f8cf-14ed-4739-a248-55af5aed12fc"
+    },
+    {
+      "claim_id": "b68852ec-69a5-4077-b608-ab5702118c9e",
+      "result_id": "c1f7f8cf-14ed-4739-a248-55af5aed12fc"
+    },
+    {
+      "claim_id": "c0c04ee8-c330-4ba2-9ea5-3a3ad5b66f27",
+      "result_id": "c1f7f8cf-14ed-4739-a248-55af5aed12fc"
+    },
+    {
+      "claim_id": "1fbdc5a8-0d54-4b69-95ea-3ab025a30b11",
+      "result_id": "c1f7f8cf-14ed-4739-a248-55af5aed12fc"
+    },
+    {
+      "claim_id": "b0029faf-9abd-4fa0-8b4c-6707073fd6b1",
+      "result_id": "542520db-7535-46f6-9485-3379d1aad4d4"
+    },
+    {
+      "claim_id": "4b391358-d335-4e57-be53-269f2c706c61",
+      "result_id": "542520db-7535-46f6-9485-3379d1aad4d4"
+    },
+    {
+      "claim_id": "710dc0a4-a749-4e21-a0cc-56d769344483",
+      "result_id": "542520db-7535-46f6-9485-3379d1aad4d4"
+    },
+    {
+      "claim_id": "fff8f89b-cf3a-4ca1-9ce7-8137e11e5c89",
+      "result_id": "542520db-7535-46f6-9485-3379d1aad4d4"
+    },
+    {
+      "claim_id": "249e0258-23a8-4954-b596-4e9e63aee2b0",
+      "result_id": "542520db-7535-46f6-9485-3379d1aad4d4"
+    },
+    {
+      "claim_id": "3aaa5075-6b37-4899-b5d4-c2e8042d69fe",
+      "result_id": "542520db-7535-46f6-9485-3379d1aad4d4"
+    },
+    {
+      "claim_id": "ef6c9d0d-9644-4477-9a23-31a21cf675bf",
+      "result_id": "542520db-7535-46f6-9485-3379d1aad4d4"
+    },
+    {
+      "claim_id": "bf976a14-a42d-444a-bccf-97b1bd778408",
+      "result_id": "542520db-7535-46f6-9485-3379d1aad4d4"
+    },
+    {
+      "claim_id": "76b85e6f-0604-444c-8cfd-1a1aaa66b9c3",
+      "result_id": "542520db-7535-46f6-9485-3379d1aad4d4"
+    },
+    {
+      "claim_id": "3398f9ce-fb21-4312-88dc-1d8226c0e468",
+      "result_id": "542520db-7535-46f6-9485-3379d1aad4d4"
+    }
+  ],
+  "comparisons": []
+}

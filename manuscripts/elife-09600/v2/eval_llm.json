@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The achiasmic subject exhibits overlapped cortical representations of left and right visual hemifields in V1-V3, with mirror-image retinotopic mapping at the voxel level. MRI confirmed absence of the optic chiasm, and retinotopic mapping showed that points symmetrically placed across the vertical meridian map to the same cortical location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13-C19 provide converging evidence from MRI structural imaging (C13), functional retinotopic mapping (C14-C18), and consistency with prior literature (C19). The retinotopic data in Figure 1 clearly demonstrates the mirror-image organization at both the regional and voxel level, supporting the characterization of the achiasmic visual system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The two overlapping visual field representations in V1-V3 of the achiasmic subject are mediated by two co-localized but functionally independent neuronal populations. Behavioral observations, psychophysical masking experiments, and fMRI adaptation experiments all failed to demonstrate interactions between the populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C29 provide multiple lines of converging evidence for functional independence: behavioral observations (C20-C21), psychophysical experiments showing no masking effects (C22-C24), equal BOLD responses to mirror stimuli (C25), and critically, fMRI adaptation experiments (C26-C28) showing release from adaptation when stimuli are at different locations despite cortical co-localization. The evidence is internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "The two neuronal populations in achiasmic visual cortex share the same local vascular control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C3 is inferred from co-localization and general knowledge of neurovascular coupling, but is not directly demonstrated. While the co-localization at the voxel level (3x3x3 mm\u00b3) and the BOLD summation results are consistent with shared vascular control, direct evidence (e.g., from high-resolution vascular imaging) is not provided. This assumption is critical for the main conclusions about the BvZ function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "BOLD summation in the achiasmic subject exhibits compressive nonlinearity: the BOLD response to simultaneous bilateral stimulation (A+B) is significantly greater than doubling contrast but significantly less than linear summation of responses to unilateral stimuli. This nonlinearity is not due to response saturation and implies a nonlinear relationship between neural and BOLD responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 are well-supported by the BOLD summation experiments with appropriate statistical tests (paired t-tests with significant p-values reported in C30-C31). The comparison between 1-s and 6-s stimulus durations (C33) provides evidence against saturation. The experimental design leverages the unique properties of the achiasmic system to isolate BOLD nonlinearity from neural nonlinearity, which is a key strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The exponent \u03b3 of the power-law BvZ function (B = kZ^\u03b3) is approximately 0.5 in V2 and V3, and is relatively invariant to stimulus duration (6-s vs 1-s). The higher \u03b3 value in V1 (~0.76 for 6-s, ~0.56 for 1-s) is attributed to incomplete co-localization of neuronal populations in V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C42 present the core quantitative findings from the stitching analysis. The statistical approach is sound, with confidence intervals provided. The consistency of \u03b3 across V2 and V3 (C36) and across stimulus durations (C39-C41) strengthens the conclusion. The interpretation of the V1 result (C37) is reasonable given the discussion of cortical organization, though it relies on speculation about layer-specific organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Neural activity inferred from BOLD responses using the BvZ function with \u03b3~0.5 matches single-unit spiking data from primate V1, while linearly scaled BOLD data does not fit the single-unit data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 provide important cross-validation of the inferred BvZ function. The comparison to Albrecht (1995) single-unit data is appropriate and the visual fit in Figure 5A is compelling. This cross-species, cross-method validation strengthens confidence in the \u03b3~0.5 result. However, the comparison relies on the assumption that human and macaque V1 have similar contrast response functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "The observed BOLD nonlinearity cannot be attributed to anticipatory or endogenous task-related responses because the subject performed an asynchronous demanding fixation task and no responses were observed in the unstimulated left hemisphere.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 address an important potential confound. The experimental design with asynchronous fixation task (C46) and the control analysis of the left hemisphere (C45, Figure 3\u2014figure supplement 3) provide good evidence against task-related baseline effects. This strengthens the interpretation that the nonlinearity reflects neurovascular coupling rather than cognitive factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C81"
+    ],
+    "result": "Meta-analysis of 21 datasets from 12 published fMRI studies in neurologically normal subjects shows that \u03b3~0.5 is typical, with the bulk of the distribution lying mid-range between 0 and 1, and the interquartile range including 0.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 and C81 present the meta-analysis results that generalize findings from the single achiasmic subject. The hypothesis-driven approach is appropriate, and the consistency across multiple independent datasets is compelling. However, the meta-analysis assumes a power-law relationship and relies on fitting to single-unit data from different species and experimental conditions, which introduces uncertainty. The distribution shown in Figure 5 is broad, indicating substantial variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The achiasmic subject was a 24-year-old male with isolated foveal hypoplasia, reduced visual acuity, congenital nystagmus with horizontal amplitude <2.1\u00b0, right-eye preference with left-eye suppression, and no binocular fusion or stereoacuity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C12 provide detailed characterization of the subject. These are direct measurements and observations that are well-documented. The nystagmus amplitude is important for interpreting the retinotopic mapping results, and the authors appropriately designed experiments to be robust to these eye movements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors propose a developmental model for cortical organization in achiasma, suggesting visual-field dominance columns in V1 Layer 4 that dissolve into finely intermingled but non-interacting neurons in superficial and deep layers. This model is used to explain the higher \u03b3 value observed in V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C66 present a detailed speculative model of cortical organization. While the model is plausible and draws on established knowledge of cortical development and organization (C51, C63, C65), most claims are explicitly labeled as speculation (C53, C55-C57, C59-C62, C64, C66) or inference (C52, C56-C59, C61-C62, C66). The preliminary 7T fMRI data (C54) provides some support but is not shown. This model is used to explain the V1 results but lacks direct empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The summation method for inferring the BvZ function requires co-localization and non-interaction of neuronal populations. These conditions were not fully met in V1, but the BvZ function inferred from V2/V3 provides excellent fit to V1 single-unit data, suggesting the relationship is applicable across V1-V3 and does not depend significantly on stimulus duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 provide important methodological discussion and validation. The recognition that V1 violates the co-localization assumption (C68) is appropriate given the proposed columnar organization. The cross-validation with single-unit data (C70) and consistency across stimulus durations (C69) support the generalizability of the inferred BvZ function, though these rely on the assumptions discussed above.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The achiasmic visual cortex provides a versatile in vivo model for quantifying the neural-BOLD relationship, demonstrating that BOLD amplitude is proportional to neural response raised to a power of approximately 0.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 summarize the main conclusions of the study. These are well-supported by the experimental results (C30-C42) and cross-validation (C43-C50). The unique properties of the achiasmic system enable a novel approach to a fundamental question in fMRI. However, the generalizability depends on the validity of key assumptions (shared vascular control, independence of populations) and the applicability of findings from a single rare subject.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The study addresses a gap in the literature regarding the quantitative relationship between BOLD and neural responses. Prior fMRI studies of achiasma did not use it as a model system for this purpose. The current subject is typical of achiasmic individuals but unique in being neurologically normal and highly dedicated to research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C73-C80 provide context and justify the study's significance. The characterization of prior work is accurate based on the citations provided. The comparison to prior achiasma studies (C78) supports generalizability. The acknowledgment of the single-subject limitation and the hypothesis-driven meta-analysis (C80) are appropriate responses to this limitation.",
+    "result_type": "MINOR"
+  }
+]

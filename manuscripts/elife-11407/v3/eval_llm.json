@@ -1,0 +1,424 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "MgtA was successfully overexpressed in E. coli with yields up to 4 mg/L and purified to >95% purity using His-tag affinity chromatography followed by size exclusion chromatography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 describe the expression and purification protocol with specific quantitative outcomes (4 mg/L yield, >85% purity after affinity, >95% after SEC). These are supported by Figure 2A showing SDS-PAGE analysis at each purification step. The methodology is standard and the results are clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "MgtA loses >90% ATPase activity during purification, which is restored by E. coli lipids. Only anionic lipids (DOPG and cardiolipin) restore activity in a concentration-dependent manner, with cardiolipin showing 100-fold activation compared to 30-fold for DOPG and only 3-fold for DOPE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C54 collectively demonstrate lipid-dependent activation of MgtA with clear quantitative differences between lipid types. Figure 2B shows activity loss during purification and recovery with lipids, while Figure 2C provides concentration-dependent activation curves for different lipids. The D373N negative control (C48-C49) strengthens the conclusion that observed activity is MgtA-specific.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C113"
+    ],
+    "result": "This is the first demonstration that MgtA is highly dependent on anionic phospholipids, particularly cardiolipin, representing the first link between cardiolipin activation and any P-type ATPase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C113 assert novelty of the cardiolipin-MgtA interaction. The experimental data in Figure 2C clearly demonstrates cardiolipin dependence. However, the claim of being 'first' for any P-type ATPase requires comprehensive literature knowledge that cannot be fully verified from this manuscript alone, though no contradicting evidence is presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The cardiolipin head group, rather than fatty acid chain composition, plays the major role in MgtA activation, as evidenced by equivalent initial activation profiles between E. coli CL (diverse fatty acids) and bovine heart CL (predominantly linoleate chains), though maximal activity with bovine CL is ~30% lower.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 describe the comparison between E. coli and bovine heart CL. Figure 2D shows similar initial activation profiles supporting the head group hypothesis (C57-C58), while the 30% difference in maximal activity (C59) is clearly shown. The interpretation about suboptimal linoleate chains (C60) is speculative but reasonable given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C58"
+    ],
+    "result": "The head group of cardiolipin plays a major role in activation of MgtA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C58 are supported by the comparison of E. coli and bovine heart CL (Figure 2D), which differ in fatty acid composition but share the same head group structure. The equivalent initial activation profiles provide strong evidence for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C132",
+      "C134"
+    ],
+    "result": "Cardiolipin may act as a Mg2+ chaperone for MgtA, with the head group potentially functioning to bind and deliver Mg2+ to the transporter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C132, and C134 propose a chaperone mechanism for cardiolipin. While the activation data and Mg2+ binding properties of CL (C131) are established, the chaperone hypothesis is explicitly speculative. No direct evidence of Mg2+-CL-MgtA complex formation or Mg2+ transfer is provided. This requires structural or binding studies for verification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C115"
+    ],
+    "result": "MgtA functions as a monomer in the presence of cardiolipin and Mg2+, as shown by SEC analysis revealing a monodisperse peak with a ~50 kDa shift upon CL binding (indicating increased micelle size) but no further shift with Mg2+ addition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 and C115 describe SEC analysis in Figure 2E. The monodisperse peak and lack of oligomerization are clearly shown. The interpretation of the ~50 kDa shift as increased micelle radius (C65) is reasonable for a detergent-solubilized membrane protein. The conclusion that MgtA functions as a monomer is well-supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "MgtA is inhibited by P-type ATPase inhibitors (vanadate, AlF4-, ADP-AlF4-) but not by F-type ATPase inhibitor azide, confirming it behaves like other P-type ATPases such as SERCA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 describe inhibitor sensitivity shown in Figure 2\u2014figure supplement 3. The differential sensitivity to P-type versus F-type inhibitors is clear. The comparison to SERCA (C71) is appropriate given the similar inhibitor profiles, though the conclusion is somewhat general.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "In vitro, MgtA ATPase activity is inhibited by divalent cations in the order Zn2+ > Co2+ > Ni2+ > Ca2+ > Mn2+ > Mg2+, with IC50 values of <5 \u03bcM (Zn2+), 37 \u03bcM (Co2+), 100 \u03bcM (Ni2+), 500 \u03bcM (Ca2+), and 1 mM (Mn2+), agreeing reasonably well with published in vivo values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 describe divalent cation inhibition shown in Figure 2F. The order of inhibition and IC50 values are clearly presented. The comparison to published in vivo data (C72, C75) provides validation. The data are quantitative and reproducible (n=3).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Ni2+ likely acts as a non-competitive inhibitor of MgtA rather than competitive, contrary to previous reports suggesting competitive inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 compare current findings to published work. Figure 2\u2014figure supplement 4 shows that increasing Ni2+ at fixed Mg2+ concentrations produces a pattern consistent with non-competitive inhibition. This contradicts the cited literature (C76), but the data clearly support the non-competitive mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "MgtA colocalizes with cardiolipin-rich domains at the cell poles in E. coli, as demonstrated by confocal microscopy showing MgtA-BFP and N\u039431-MgtA-BFP colocalization with NAO-stained CL domains, while BFP alone does not colocalize.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C81-C83 describe colocalization experiments shown in Figure 3A-C. The confocal images clearly show polar localization and colocalization with NAO staining. The BFP-only control (C83) is appropriate. However, recent concerns about NAO specificity (C120-C121) introduce some uncertainty about whether the signal is CL-specific or represents anionic lipids more generally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C117"
+    ],
+    "result": "The N-terminal 31 amino acids of MgtA, predicted to be intrinsically disordered, are not required for cardiolipin activation, membrane trafficking, or targeting to CL domains, as the N\u039431 mutant shows equivalent ATPase activity and polar localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 and C117 describe the N\u039431 mutant analysis. Figure 3D shows equivalent ATPase activity, and Figure 3B shows similar polar localization. The disorder prediction in Figure 3E supports the characterization. The conclusion that the N-terminus is not required for CL binding is well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The catalytically inactive D373N mutant shows similar polar localization to wild-type MgtA, indicating that active ion transport does not affect membrane trafficking or localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 describe the D373N-GFP localization shown in Figure 3\u2014figure supplement 1. The similar polar localization despite lack of catalytic activity supports the conclusion that transport activity is not required for proper localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C94",
+      "C95",
+      "C136"
+    ],
+    "result": "MgtA is highly sensitive to free Mg2+ levels, being activated below 10 \u03bcM Mg2+free, peaking at 250 \u03bcM, and strongly inhibited above 1 mM Mg2+free, with equivalent activation concentration (~10 \u03bcM) across different ATP concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C94-C95, and C136 describe Mg2+free sensitivity shown in Figure 4B. The activation and inhibition profiles are clearly demonstrated with quantitative values. The use of MAXC to calculate Mg2+free is appropriate. The narrow activity window is a key finding well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C96"
+    ],
+    "result": "Mg2+free acts as a product inhibitor of MgtA, with inhibition occurring above the physiological cytoplasmic Mg2+free concentration of ~1 mM, suggesting regulation from the cytoplasmic side.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C96 interpret the inhibition at high Mg2+free as product inhibition. The logic is sound given that MgtA imports Mg2+ into the cytoplasm and inhibition occurs at physiological cytoplasmic concentrations. The interpretation is reasonable though not directly proven by transport measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "MgtA ATPase activity shows steep activation at low Mg2+total that peaks when ATP and Mg2+total concentrations are equivalent, reaching maximum velocity of ~14 \u03bcmol Pi min-1 mg-1 regardless of ATP concentration, followed by rapid decline at higher Mg2+total.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 describe the Mg2+total dependency shown in Figure 4A. The peak at equimolar ATP:Mg2+ ratios and the consistent Vmax values are clearly demonstrated. The shift in activation profile with increasing ATP (C93) is explained by ATP chelating Mg2+.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "The apparent Km for Mg2+free is 10-15 \u03bcM across three ATP concentrations tested, only slightly lower than the ~29 \u03bcM reported from in vivo studies with S. typhimurium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 report Km values from Figure 4C and Table 1. The values are clearly calculated and presented. The comparison to in vivo data provides validation. The slight difference could be due to temperature (in vitro at 37\u00b0C vs in vivo) or species differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "In complementary experiments with increasing ATP at fixed Mg2+total, ATPase activity peaks when ATP equals Mg2+total but shows slight decrease at higher ATP concentrations, possibly due to ATPfree competing for the Mg2+-ATP binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 describe Figure 4D. The peak at equimolar concentrations is consistent with Figure 4A. The decrease at high ATP (C100) is observed, though the competitive inhibition mechanism (C101) is speculative. Alternative explanations (substrate inhibition, conformational effects) are not excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Maximum ATPase activity occurs at pH 7.2, with product inhibition at high Mg2+total observed at all pH values. In the pH range 6.3-7.2, activation and inhibition profiles are equivalent with only decreased maximum activity below pH 7.0, while at pH 7.6 and 7.9, Mg2+free affinity is reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 describe pH dependency shown in Figures 4E-F. The optimal pH and the consistent inhibition pattern are clearly shown. The reduced affinity at higher pH (C105) is evident in Figure 4F. The data support pH effects on activity but not necessarily on transport mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The data do not show clear proton-dependent Mg2+ affinity for MgtA. Given that the MgtA homolog PH1 lacks proton transport activity and both MgtA and PH1 lack the conserved arginine required for proton translocation in P3A-type ATPases, MgtA may import magnesium without proton counter-transport, though this awaits further verification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C111 address the proton coupling question. The lack of clear pH-dependent Mg2+ affinity (C106, Figure 4F) and absence of the conserved arginine (C108) are valid observations. However, the conclusion that protons are not counter-ions (C109) is speculative. The pH effects on activity could reflect protonation of catalytic residues rather than transport coupling. Direct transport measurements are needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C11",
+      "C148"
+    ],
+    "result": "MgtA may act as both a sensor and a transporter of Mg2+, based on its high sensitivity to Mg2+free levels and narrow activity range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11 and C148 propose a dual sensor-transporter function. While the high Mg2+ sensitivity and narrow activity window are well-documented (Figures 4A-B), the 'sensor' function is inferred rather than directly demonstrated. No evidence is provided that MgtA transmits a signal beyond its transport activity. The claim conflates regulation of activity with a distinct sensory function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "MgtA is more sensitive to Mg2+ concentrations in vitro than any other studied P-type ATPase, showing complete inhibition above 5 mM Mg2+total compared to the related H+ ATPase from Neurospora crassa which is not completely inhibited even above 20 mM, presenting a strikingly narrow activity range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C141 compare MgtA sensitivity to other P-type ATPases. The narrow activity window is clearly demonstrated in Figure 4A-B. The comparison to Neurospora H+ ATPase (C138) is cited. However, the claim of being 'more sensitive than any other studied P-type ATPase' (C141) is a strong assertion that would require comprehensive comparison to all characterized P-type ATPases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C142",
+      "C143"
+    ],
+    "result": "The sensitivity toward Mg2+ indicates that Mg2+ is the ion transported through MgtA in vivo, and the narrow activity range suggests MgtA may have additional Mg2+ binding sites beyond the transport sites to sense varying Mg2+free concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C142 infers transport from sensitivity, which is reasonable but not definitive without direct transport measurements. Claim C143 speculates about additional Mg2+ binding sites, which is plausible given the narrow activity window but lacks direct evidence. Structural or binding studies would be needed to identify such sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The cytoplasmic Mg2+free concentration in E. coli is ~1 mM, and MgtA activity decreases above this physiological level, strengthening the notion that cytoplasmic Mg2+free regulates MgtA internally. When cytoplasmic Mg2+ exceeds the threshold, Mg2+free negatively regulates both MgtA protein activity and mgtA gene transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C147 integrate the in vitro findings with known physiology. The cytoplasmic Mg2+ concentration (C144) is cited. The correlation between inhibition threshold and physiological Mg2+ levels (C145) is compelling. The dual regulation at protein and transcriptional levels (C146-C147) is supported by citations and the current data, forming a coherent regulatory model shown in Figure 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "A recent study questions NAO specificity for cardiolipin, showing it stains both PG and CL at E. coli poles, making it impossible to distinguish which anionic lipid has the most pronounced effect on MgtA in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 acknowledge a limitation in the NAO colocalization experiments. The cited study (Oliver et al., 2014) is appropriately referenced. This honest assessment of experimental limitations is important, though it introduces uncertainty about whether the observed colocalization is CL-specific or represents anionic lipids more broadly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "MgtA expression and Mg2+ removal from the periplasm further activates PhoQ, creating positive feedback. Phosphorylated PhoP localizes to one pole in S. typhimurium, and MgtA localization in CL-rich polar domains connects these observations, though the exact molecular mechanism remains to be determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124 integrate the current findings with published work on PhoP/PhoQ regulation. The positive feedback mechanism (C122) and PhoP polar localization (C123) are cited. The connection to MgtA-CL colocalization (C124) is a reasonable inference. The acknowledgment that the mechanism is unknown (C125) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "Activation by anionic lipids has been observed for other membrane proteins including respiratory complexes, MscL, SecYEG, and MinD/MinE, supporting the conclusion that MgtA is active in an anionic phospholipid environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 place the findings in broader context with appropriate citations. The conclusion that MgtA functions in an anionic lipid environment (C127) is well-supported by both the current data and precedent from other systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "In bacteria, CL is synthesized from two PG molecules and carries two negative charges versus one for PG. This charge difference could contribute to efficient lipid binding or Mg2+ presentation to MgtA. CL can bind Mg2+ and undergo phase changes as a function of Mg2+ concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131 provide biochemical context for the CL-MgtA interaction. The biosynthesis (C128), charge difference (C129), and Mg2+ binding properties (C131) are cited. The speculation about functional consequences (C130) is reasonable given the data, though not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C133",
+      "C135"
+    ],
+    "result": "Cu+-ATPases require protein chaperones to deliver Cu+, and by analogy, the CL head group could function as a Mg2+ chaperone for MgtA. However, a crystal structure of CL-bound MgtA will be necessary to determine the sidedness and nature of CL binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C133 provides precedent for metal chaperones in P1B-type ATPases. The analogy to MgtA (C134, related to C6) is speculative. Claim C135 appropriately identifies that structural studies are needed to resolve the mechanism. This represents a hypothesis requiring future work rather than a supported conclusion.",
+    "result_type": "MINOR"
+  }
+]

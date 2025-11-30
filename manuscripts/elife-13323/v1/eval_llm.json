@@ -1,0 +1,191 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The study analyzed 102,740 NIH R01 grants with percentile scores \u226420 from 1980-2008, focusing on the most relevant range for current paylines (which hover around the 10th percentile). Data included publications within 5 years and citations through 2013, analyzed using parametric statistics, ROC curves, and random forest models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 and C55-C58 provide clear methodological details about the dataset selection, rationale, and analytical approaches. The focus on percentile scores \u226420 is well-justified based on current NIH funding practices, and the methods are adequately described for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Publication and citation productivity show wide variability across percentile scores in the 0-20 range. While a statistically significant correlation exists (r\u00b2=0.0078, slope=-0.132\u00b10.005 publications and -9.6\u00b10.337 citations per percentile increment), the correlation is very modest. Only grants with percentile scores \u22642 showed significantly higher citations than those with poorer scores; scores \u22653 showed no significant differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C27 are well-supported by the data presented in Figures 1A and 1B. The statistical analyses demonstrate both the existence of a weak correlation and its limited practical significance. The r\u00b2 value of 0.0078 indicates that percentile scores explain less than 1% of variance in productivity, supporting the conclusion of weak predictive ability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C67",
+      "C68"
+    ],
+    "result": "Random forest modeling demonstrates that percentile ranking accounts for only ~1% (0.98%) of variance in grant productivity, suggesting that peer review has minimal impact in stratifying meritorious applications beyond what would be expected from random ranking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 and C67-C68 are supported by the random forest analysis shown in Figure 1\u2014figure supplement 1. The convergence of mean squared residuals and the variance explained (~1%) provide quantitative evidence for the limited predictive power of percentile scores. However, the interpretation that this is equivalent to 'random ranking' may be slightly overstated without direct comparison to actual random assignment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "When grants are divided into top and bottom halves based on productivity (\u22656 publications or \u2265128 citations), substantial overlap exists in percentile scores between high and low performers. A grant in the top half by citations would have only a 58% chance of being funded if only half of applications could be funded based on percentile scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 and C59-C62 are well-supported by Figure 2 data showing overlapping distributions of percentile scores for high and low productivity grants. The mean percentile scores differ by less than 1 point between top and bottom halves (9.2 vs 9.9), demonstrating poor discrimination. The 58% probability calculation is a reasonable inference from the overlap data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "ROC curve analysis confirms poor discriminatory ability of percentile scores for grants in the \u226420th percentile range, with an AUC of only 0.54 (95% CI: 0.53-0.54), barely better than random chance (AUC=0.5). Even grants with perfect percentile scores (0) showed 17% failure rate in producing citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 and C64-C66 are strongly supported by Figure 3 and the ROC analysis. An AUC of 0.54 is only marginally better than random chance, providing robust evidence for poor predictive validity. The 17% failure rate for top-scored grants (C36) further demonstrates the unpredictability of research outcomes even for highly-rated proposals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C39",
+      "C40",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Despite reviewers' ability to discriminate extremely strong applications from the rest across the full percentile range, they have limited ability to predict productivity within the critical 3-20 percentile range relevant to current paylines. This means the best science is not necessarily being funded, as applications above and below current paylines are indistinguishable in citation productivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C39-C40, and C51-C53 represent well-supported conclusions synthesizing the empirical findings. The data consistently show that while peer review has some discriminatory ability overall (C51), this does not extend to the critical 3-20 percentile range (C52). The conclusion that 'best science is not necessarily receiving support' (C53) follows logically from the demonstrated overlap in productivity between funded and unfunded applications in this range.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Several confounding factors may artificially inflate the observed correlation between percentile scores and productivity: (1) citation practices doubled between 1980-2004, favoring more recent grants with better percentile scores due to declining paylines; (2) 13% of funded grants were exceptions scoring worse than paylines, often receiving reduced budgets and later funding that could adversely impact productivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C47 identify important potential confounders but are largely speculative (C44, C47). While C43 and C46 cite supporting evidence for the existence of these factors, the actual magnitude of their impact on the observed correlations is not quantified. These represent plausible alternative explanations that weaken causal interpretations but require additional analysis to confirm their contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C48",
+      "C49",
+      "C50",
+      "C54"
+    ],
+    "result": "The findings suggest current paylines are inadequate to fund the most productive applications, leaving considerable productivity 'on the table.' The authors propose that reviewers might save resources by identifying the top 20% and then awarding funding randomly or by programmatic priorities, noting that New Zealand has already implemented a lottery system for some grants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41 and C48-C50 represent policy recommendations and speculative proposals rather than empirical findings. While C41 is a reasonable inference from the data showing productive grants below paylines, the lottery proposal (C48-C49) is speculative and not directly tested. C50 provides an example of lottery implementation but doesn't evaluate its effectiveness. These are discussion points rather than supported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C24"
+    ],
+    "result": "Prior literature presents conflicting evidence on peer review effectiveness: some studies found no correlation between percentile scores and productivity at individual NIH institutes (Berg 2013, Danthi et al. 2014), while Li and Agha (2015) found correlation across 130,000+ grants. However, the Li and Agha study included many grants with poor percentile scores (>40th) not competitive today and didn't examine stratification within meritorious applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C16 and C24 accurately summarize prior work and identify the gap this study addresses. The citations appear appropriate and the critique of Li and Agha's relevance (C15-C16) is reasonable given the changing funding landscape. This provides proper context for the current re-analysis focusing on the \u226420th percentile range.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C38"
+    ],
+    "result": "Peer review is widely used to fund the highest-ranked grant applications, but this re-analysis of 102,740 NIH grants with percentile scores \u226420 demonstrates that percentile scores are poor discriminators of productivity. This may contribute to pervasive dissatisfaction with the peer review system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C4 frame the study's main finding, which is well-supported by the comprehensive analyses presented. C38 is more speculative about the connection to dissatisfaction but is supported by citations to prior literature documenting such dissatisfaction. Together these claims accurately represent the study's core contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Fewer grants received a percentile score of zero due to rounding to the nearest whole number and changes in the NIH percentiling algorithm since 2009.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 provides a methodological explanation for an observation in Figure 2. This is supported by knowledge of NIH practices and explains the distribution pattern observed in the data.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C88"
+    ],
+    "result": "Prior work established that Kip2 deletion causes nuclear migration defects and shorter, less abundant cytoplasmic microtubules in budding yeast, while Kip2 overexpression results in hyper-elongated microtubules. The stabilization mechanism was thought to be indirect via Bik1 transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C88 accurately summarize established prior work on Kip2's in vivo phenotypes, supported by appropriate citations. These provide essential context for the current study's investigation of Kip2's direct biochemical activities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Kip2 directly promotes microtubule growth in vitro, increasing microtubule length, growth rate (2.9-fold), and reducing catastrophe frequency (10-fold) in an ATP-dependent manner at physiologically relevant concentrations (half-maximal effect at ~7 nM, cellular concentration ~25 nM). Kip2 does not affect shrinkage rate or rescue frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C13, C15, and C89-C91 are well-supported by experimental data with appropriate statistical tests (p<0.0001), multiple replicates, and controls including AMP-PNP. The data demonstrate that Kip2 alone is sufficient for microtubule growth promotion without requiring Bik1, challenging the prior indirect mechanism model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C92",
+      "C93"
+    ],
+    "result": "Kip2's effects on microtubule dynamics are conserved between porcine and yeast tubulin, with similar fold-changes in growth rate (2.3-fold for yeast) and catastrophe inhibition (20-fold for yeast) at comparable concentrations (half-maximal at ~12 nM for yeast).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 and C92-C93 demonstrate species conservation of Kip2 activity using both porcine and yeast tubulin with DIC microscopy. The similar concentration dependence and effects strengthen the physiological relevance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "Kip2 functions as a microtubule polymerase and anti-catastrophe factor in vitro without requiring additional proteins such as Bik1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 are directly supported by the in vitro reconstitution experiments showing Kip2 alone is sufficient for both activities. This is a key finding that contradicts the prior model requiring Bik1 for Kip2's microtubule-stabilizing effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Kip2 increases the effective tubulin association rate constant (kon) twofold and decreases the dissociation rate (koff) threefold, facilitates microtubule nucleation at lower tubulin concentrations, and these kinetic changes likely account for the decreased catastrophe frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 provide mechanistic insight through kinetic measurements. The kon and koff measurements are well-documented (Figure 1\u2014figure supplement 3), and the inference that these changes explain catastrophe inhibition is reasonable given established microtubule dynamics theory, though C25 relies on the assumption that GMPCPP-tubulin is a valid GTP-tubulin analog.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Single Kip2-eGFP molecules walk processively toward microtubule plus ends at 5.0 \u00b1 0.9 \u03bcm/min with a run length of 4.1 \u00b1 0.3 \u03bcm and reside at plus ends for 30 \u00b1 26 s, accumulating up to 12 molecules. Kip2 moves slower on dynamic microtubules (2.1 \u03bcm/min) but can still track growing ends. Movement requires ATP hydrolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C35 are supported by single-molecule TIRF microscopy with adequate sample sizes (n=674 traces for velocity, n=217 for run length, n=40 for end residence). The AMP-PNP control (C33) confirms ATP-dependent motility. The comparison to Roberts et al. (C30) acknowledges discrepancies in run length measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Kip2's mechanism differs fundamentally from XMAP215: Kip2 uses processive motor activity and ATP hydrolysis to reach microtubule ends, decreases koff, and strongly inhibits catastrophe, whereas XMAP215 targets ends by diffusion, increases both kon and koff, and has little effect on catastrophe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 make a well-supported comparison between Kip2 and XMAP215 based on experimental data (C36, C40) and accurate citations of XMAP215 properties (C37-C39, C41). The conclusion that Kip2 is a unique regulator (C42) is justified by the distinct mechanistic features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C94",
+      "C95"
+    ],
+    "result": "Kip2 is a processive, low-force motor with a stall force of 0.81 \u00b1 0.04 pN, a nearly linear force-velocity relationship, and the ability to slip at high forces without detaching. The zero-force speed measured by optical tweezers (4.0 \u00b1 0.5 \u03bcm/min) is consistent with TIRF measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47, C94-C95 are supported by optical tweezers measurements with appropriate controls and methodology (n=11 molecules). The slip behavior (C45-C46) is documented and interpreted based on prior work. The consistency between optical tweezers and TIRF measurements strengthens confidence in the velocity measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The low force of Kip2 supports the idea that individual motors transport small cargos like dynein and Bik1 rather than organelles, though multiple motors could potentially cooperate for larger cargos. The strong plus-end localization is consistent with Kip2 being a microtubule dynamics regulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is a reasonable inference from the low stall force data and cited literature, though it remains speculative. Claim C49 is explicitly speculative. Claim C50 is a logical inference connecting localization data to function. These interpretations are appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C61",
+      "C62"
+    ],
+    "result": "Kip2 is a length-dependent microtubule polymerase: at low-to-intermediate Kip2 concentrations (1-10 nM), long microtubules grow faster than short ones (p<0.0001), while without Kip2 or at high Kip2 concentrations (20-40 nM), growth is length-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54, C61-C62 demonstrate length-dependent growth promotion with appropriate statistical tests. The observation that length dependence disappears at high Kip2 concentrations (C53) is explained by saturation effects. This is a key mechanistic finding supported by quantitative data in Figure 4B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Kip2 inhibits catastrophe in a length-dependent manner: without Kip2, catastrophe frequency increases with length (microtubule aging), but at 5 nM Kip2, longer microtubules have greater catastrophe lengths than shorter ones (p<0.0001), indicating that catastrophe frequency decreases with increasing length in the presence of Kip2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 are supported by catastrophe length analysis with appropriate statistical tests (Figure 4C). The comparison between short (<4 \u03bcm) and long (>4 \u03bcm) microtubules is methodologically sound, and the interpretation that Kip2 reverses the normal aging-dependent increase in catastrophe frequency is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C85",
+      "C86"
+    ],
+    "result": "Kip2 creates a positive feedback mechanism for microtubule growth: because Kip2's translocation rate exceeds microtubule growth rate, longer microtubules bind more motors (antenna effect), more motors reach the plus end, growth rate increases and catastrophe frequency decreases, leading to even longer microtubules. This allows microtubules to 'escape' catastrophe and switch from short to long states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69, C85-C86 present the central mechanistic model, which is a logical inference from the experimental data on length-dependent growth (C52), length-dependent catastrophe inhibition (C57-C60), processivity (C27-C29), and the relationship between translocation and growth rates (C34-C35). The positive feedback model is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Kip2's positive feedback mechanism differs from kinesin-8's negative feedback: kinesin-8 is a length-dependent depolymerase that stabilizes microtubule length through negative feedback, whereas Kip2 promotes growth through positive feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 make an appropriate comparison to kinesin-8 based on cited literature. The distinction between positive and negative feedback mechanisms for length control is conceptually important and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The positive feedback mechanism likely operates in vivo: in vivo, Kip2's translocation rate (6.6 \u03bcm/min) exceeds microtubule growth rate (2.3 \u03bcm/min), and Kip2's run length (~4 \u03bcm) exceeds cytoplasmic microtubule length (~2 \u03bcm), implying almost every Kip2 reaches the plus end where it can promote growth, inhibit catastrophe, and deliver dynein to the bud cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 extend the in vitro findings to in vivo context using appropriate citations for in vivo parameters (C73-C74). The inference that the feedback mechanism operates in vivo (C72, C75-C76) is reasonable given the parameter values, though C72 is explicitly speculative and would benefit from direct in vivo testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Bik1 may be required in vivo to increase Kip2's processivity: feedback requires run length to exceed microtubule length, and since Roberts et al. found Bik1 can increase Kip2's run length 3-4 fold, Bik1 may act as a processivity factor allowing more Kip2 to reach ends where it enhances growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C80 propose a speculative model to reconcile the in vitro findings (Kip2 doesn't need Bik1) with prior in vivo observations (Bik1 required for Kip2 overexpression phenotype). The proposal is logical and cites relevant data (C79), but remains untested. The discrepancy in run lengths between this study (~4 \u03bcm) and Roberts et al. (~1 \u03bcm) is acknowledged but not explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C87"
+    ],
+    "result": "The authors propose that positive feedback, common in biochemical signaling pathways, can also operate in mechanical signaling to switch between structural states (short vs. long microtubules), representing a novel mechanism for microtubule length control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 accurately describe the state of the field, and C87 presents the conceptual advance. The proposal that positive feedback can control polymer length is novel and well-supported by the experimental data, though the broader applicability to other systems remains to be tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The experimental methods include protein purification, TIRF microscopy, DIC microscopy, and optical tweezers measurements with appropriate controls, replication (at least 3 independent experiments), and consideration of photobleaching effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C107 describe the experimental methods. The photobleaching analysis (C100-C104) appropriately addresses a potential confound. The methods appear rigorous with adequate replication and controls, though some details (e.g., how catastrophe events were identified, statistical power calculations) could be more explicit.",
+    "result_type": "MINOR"
+  }
+]

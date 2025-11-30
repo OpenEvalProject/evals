@@ -1,0 +1,1722 @@
+{
+  "submission": {
+    "id": "91458ecf-0aae-444f-af49-c0a23d766a37",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:23:29.490015Z",
+    "updated_at": "2025-11-30T00:23:29.490015Z"
+  },
+  "content": [
+    {
+      "id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "submission_id": "91458ecf-0aae-444f-af49-c0a23d766a37",
+      "content_type": "manuscript",
+      "content_text": "# Adaptation in protein fitness landscapes is facilitated by indirect paths\n\n## Authors\n\n- Nicholas C Wu<sup>1</sup> ([ORCID: 0000-0002-9078-6697](https://orcid.org/0000-0002-9078-6697))\n- Lei Dai<sup>1</sup>\n- C Anders Olson<sup>1</sup>\n- James O Lloyd-Smith<sup>3</sup> ([ORCID: 0000-0001-7941-502X](https://orcid.org/0000-0001-7941-502X))\n- Ren Sun<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular and Medical Pharmacology University of California, Los Angeles Los Angeles United States\n2. Molecular Biology Institute University of California, Los Angeles Los Angeles United States\n3. Department of Ecology and Evolutionary Biology University of California, Los Angeles Los Angeles United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe structure of fitness landscapes is critical for understanding adaptive protein evolution. Previous empirical studies on fitness landscapes were confined to either the neighborhood around the wild type sequence, involving mostly single and double mutants, or a combinatorially complete subgraph involving only two amino acids at each site. In reality, the dimensionality of protein sequence space is higher (20L) and there may be higher-order interactions among more than two sites. Here we experimentally characterized the fitness landscape of four sites in protein GB1, containing 204 = 160,000 variants. We found that while reciprocal sign epistasis blocked many direct paths of adaptation, such evolutionary traps could be circumvented by indirect paths through genotype space involving gain and subsequent loss of mutations. These indirect paths alleviate the constraint on adaptive protein evolution, suggesting that the heretofore neglected dimensions of sequence space may change our views on how proteins evolve.\n\n## Introduction\n\nThe fitness landscape is a fundamental concept in evolutionary biology (Kauffman and Levin, 1987; Poelwijk et al., 2007; Romero and Arnold, 2009; Hartl, 2014; Kondrashov and Kondrashov, 2015; de Visser and Krug, 2014). Large-scale datasets combined with quantitative analysis have successfully unraveled important features of empirical fitness landscapes (Kouyos et al., 2012; Barton et al., 2015; Szendro et al., 2013). Nevertheless, there is a huge gap between the limited throughput of fitness measurements (usually on the order of 102 variants) and the vast size of sequence space. Recently, the bottleneck in experimental throughput has been improved substantially by coupling saturation mutagenesis with deep sequencing (Fowler et al., 2010; Hietpas et al., 2011; Jacquier et al., 2013; Wu et al., 2014; Thyagarajan and Bloom, 2014; Qi et al., 2014; Stiffler et al., 2015), which opens up unprecedented opportunities to understand the structure of high-dimensional fitness landscapes (Jim\u00e9nez et al., 2013; Pitt and Ferr\u00e9-D'Amar\u00e9, 2010; Payne and Wagner, 2014).\n\nPrevious empirical studies on combinatorially complete fitness landscapes have been limited to subgraphs of the sequence space consisting of only two amino acids at each site (2L genotypes) (Weinreich et al., 2006; Lunzer et al., 2005; O\u2019Maille et al., 2008; Lozovsky et al., 2009; Franke et al., 2011; Tan et al., 2011). Most studies of adaptive walks in these diallelic sequence spaces focused on \u201cdirect paths\u201d where each mutational step reduces the Hamming distance from the starting point to the destination. However, it has also been shown that mutational reversions can occur during adaptive walks in diallelic sequence spaces such that adaptation proceeds via \u201cindirect paths\u201d (DePristo et al., 2007; Berestycki et al., 2014; Martinsson, 2015; Li, 2015; Palmer et al., 2015). In sequence space with higher dimensionality (20L, for a protein sequence with L amino acid residues), the extra dimensions may further provide additional routes for adaptation (Gavrilets, 1997; Cariani, 2002). Although the existence of indirect paths has been implied in different contexts, it has not been studied systematically and its influence on protein adaptation remains unclear. Another underappreciated property of fitness landscapes is the influence of higher-order interactions. Empirical evidence suggests that pairwise epistasis is prevalent in fitness landscapes (Kvitek and Sherlock, 2011; Kouyos et al., 2012; O\u2019Maille et al., 2008; Lozovsky et al., 2009). Specifically, sign epistasis between two loci is known to constrain adaptation by limiting the number of selectively accessible paths (Weinreich et al., 2006). Higher-order epistasis (i.e. interactions among more than two loci) has received much less attention and its role in adaptation is yet to be elucidated (Weinreich et al., 2013; Palmer et al., 2015).\n\n## Results\n\n### Empirical determination of a four-site fitness landscape\n\nIn this study, we investigated the fitness landscape of all variants (204 = 160,000) at four amino acid sites (V39, D40, G41 and V54) in an epistatic region of protein G domain B1 (GB1, 56 amino acids in total) (Figure 1\u2014figure supplement 1), an immunoglobulin-binding protein expressed in Streptococcal bacteria (Sj\u00f6bring et al., 1991; Sauer-Eriksson et al., 1995). The four chosen sites contain 12 of the top 20 positively epistatic interactions among all pairwise interactions in protein GB1, as we previously characterized (Olson et al., 2014) (Figure 1\u2014figure supplement 2). Thus the sequence space is expected to cover highly beneficial variants, which presents an ideal scenario for studying adaptive evolution. Moreover, this empirical fitness landscape is expected to provide us insights on how high dimensionality and epistasis would influence evolutionary accessibility. Briefly, a mutant library containing all amino acid combinations at these four sites was generated by codon randomization. The \u201cfitness\u201d of protein GB1 variants, as determined by both stability (i.e. the fraction of folded proteins) and function (i.e. binding affinity to IgG-Fc), was measured in a high-throughput manner by coupling mRNA display with Illumina sequencing (see Materials and methods, Figure 1\u2014figure supplement 3) (Roberts and Szostak, 1997; Olson et al., 2012). The relative frequency of mutant sequences before and after selection allowed us to compute the fitness of each variant relative to the wild type protein (WT). While most mutants had a lower fitness compared to WT (fitness < 1), 2.4% of mutants were beneficial (fitness > 1). (Figure 1\u2014figure supplement 4). We note that this study does not aim to extrapolate protein fitness to organismal fitness. Although there are examples showing that protein fitness in vitro correlates with organismal fitness in vivo (Natarajan et al., 2013; Wu et al., 2012), this relation may not be linear and is likely to be system-specific due to the difference in selection pressures in vitro and in vivo (P\u00e1l et al., 2006; Hingorani and Gierasch, 2014).\n\n### Direct paths of adaptation are constrained by pairwise epistasis\n\nTo understand the impact of epistasis on protein adaptation, we first analyzed subgraphs of sequence space including only two amino acids at each site (Figure 1A). Each subgraph represented a classical adaptive landscape connecting WT to a beneficial quadruple mutant, analogous to previously studied protein fitness landscapes (Weinreich et al., 2006; Szendro et al., 2013). Each variant is denoted by the single letter code of amino acids across sites 39, 40, 41 and 54 (for example, WT sequence is VDGV). Each subgraph is combinatorially complete with 24 = 16 variants, including WT, the quadruple mutant, and all intermediate variants. We identified a total of 29 subgraphs in which the quadruple mutant was the only fitness peak. By focusing on these subgraphs, we essentially limited the analysis to direct paths of adaptation, where each step would reduce the Hamming distance from the starting point (WT) to the destination (quadruple mutant). Out of 24 possible direct paths, the number of selectively accessible paths (i.e. with monotonically increasing fitness) varied from 12 to 1 among the 29 subgraphs (Figure 1B). In the most extreme case, only one path was accessible from WT to the quadruple mutant WLFA (Figure 1A). We also observed a substantial skew in the computed probability of realization among accessible direct paths (Figure 1\u2014figure supplement 5), suggesting that most of the realizations in adaptation were captured by a small fraction of possible trajectories (Weinreich et al., 2006). These results indicated the existence of sign epistasis and reciprocal sign epistasis, both of which may constrain the accessibility of direct paths (Weinreich et al., 2006; Tufts et al., 2015). Indeed, we found that these two types of epistasis were prevalent in our fitness landscape (Figure 1C). Furthermore, we classified the types of all 24 pairwise epistasis in each subgraph and computed the level of ruggedness as fs\u2062i\u2062g\u2062n+2\u2062fr\u2062e\u2062c\u2062i\u2062p\u2062r\u2062o\u2062c\u2062a\u2062l, where ft\u2062y\u2062p\u2062e was the fraction of each type of pairwise epistasis. As expected, the number of selectively inaccessible direct paths, i.e. paths that involve fitness declines, was found to be positively correlated with the ruggedness induced by pairwise epistasis (Figure 1\u2014figure supplement 6, Pearson correlation = 0.66, p=1.0\u00a0\u00d7\u00a010\u22124) (Poelwijk et al., 2007).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/16965/elife-16965-fig1-v4.jpg)\n\n**Figure 1.:** (A) An example of subgraph that contains VDGV (wild type, WT), the quadruple mutant WLFA and all intermediates between them. Each variant in the subgraph is represented by a node. Edges are drawn between nearest neighbors. The arrows in bold represent the only accessible direct path of adaptation from VDGV to WLFA. HD: Hamming distance. (B) We identified a total of 29 subgraphs in which the quadruple mutant was the only fitness peak. The number of accessible direct paths from WT to the quadruple mutant is shown for each subgraph. The maximum number of direct paths is 24. (C) The fraction of three types of pairwise epistasis around WT (2091 out of 2166), randomly sampled from the entire sequence space (105 in total), or in the neighborhood of the top 100 fitness variants and 100 lethal variants. We note that this analysis is different from previous studies on how epistasis changes along adaptive walks, where the quadruples are chosen such that the fitness values of genotype 00, 01 and 11 are in increasing order (Greene and Crona, 2014). Sign epistasis and reciprocal sign epistasis, both of which can block adaptive paths, are prevalent in the fitness landscape. Classification scheme of epistasis is shown at the top. Each node represents a genotype, which is within a sequence space of two loci and two alleles. Green arrows represent the accessible paths from genotype \u201c00\u201d to a beneficial double mutant \u201c11\u201d (colored in red).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16965/elife-16965-fig1-figsupp1-v4.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) The locations of sites 39, 40, 41, and 54 of protein GB1 are shown on the protein structure. PDB: 1PGA (Gallagher et al., 1994). (B) The WT sequence of the nucleotide template (Olson et al., 2014). T7 promoter is highlighted in magenta. Randomized sites (39, 40, 41, and 54) are highlighted in red. Poly-GS linkers are highlighted in green. FLAG-tag is highlighted in blue.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16965/elife-16965-fig1-figsupp2-v4.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The distribution of pairwise epistasis measured by Olson et al. (Olson et al., 2014). The pairwise epistatic values among sites 39, 40, 41, and 54 are ranked and represented by the red line. The pairwise epistatic values among other sites (all but 39, 40, 41, and 54) are ranked and represented by the black line.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/16965/elife-16965-fig1-figsupp3-v4.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) The workflow of mRNA display is shown. This is adapted from (Olson et al., 2014). (B) The fitness values for all single substitution variants and double substitution variants in this study and in our previous study (based on an independently constructed library) (Olson et al., 2014) are compared. The high correlation (Pearson correlation = 0.97, p<2.2\u00d7\u00a010\u221216) validates the fitness data obtained in this study.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/16965/elife-16965-fig1-figsupp4-v4.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A)\u00a0The distribution of fitness values of all non-lethal genotypes. The fitness rank of the wild type genotype is 2.4% in the distribution of all fitness measurements. 19.7% of the measured genotypes are lethal (fitness=0).\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/16965/elife-16965-fig1-figsupp5-v4.jpg)\n\n**Figure 1\u2014figure supplement 5.:** We calculated the relative probabilities to realize each accessible path (Weinreich et al., 2006) (see Materials and methods). In all the subgraphs analyzed, we found that most of the realizations were captured by a few accessible paths, as demonstrated by the skew in the cumulative probability of realization among different paths. (A) Cumulative probability of realization for mutational trajectories from WT (VDGV) to beneficial variants that have a Hamming distance (HD) of 4 from WT. This analysis only included those subgraphs with a reachable quadruple mutation variant (HD = 4 from WT) as the only fitness peak. Correlated Fixation Model is used. The diagonal line indicates the cumulative probability of a subgraph with equal probability of realization for all 24 possible trajectories. The bias of probability of realization in each subgraph was quantified using the Gini index (see Materials and methods) and is shown as a histogram in the inset. (B) Same as panel A, except Equal Fixation Model is used instead. (C and D) Cumulative probability for mutational trajectories from a deleterious variants that have a Hamming distance (HD) of 4 from WT (VDGV) to WT. This analysis only included those subgraphs with WT being the only fitness peak and the quadruple variant has a fitness between 0.01 to 1. The diagonal line indicates the cumulative probability of a subgraph with equal probability of realization for all 24 possible trajectories. The bias of probability of realization in each subgraph was quantified using the Gini index and is shown as a histogram in the inset. A total of 526 subgraphs were analyzed. (C) Correlated Fixation Model is used. (D) Equal Fixation Model is used. (E) Number of accessible trajectory from a deleterious variants that have a Hamming distance (HD) of 4 from WT (VDGV) to WT in each subgraph is shown as a barplot. The maximum possible number of accessible trajectory is 24. (F) The distribution of number of accessible trajectory is shown as a box plot. \u201cAdaptation from WT\u201d indicates those subgraphs based on the adaptation from WT to a beneficial variant that has a Hamming distance of 4 from WT. \u201cAdaptation to WT\u201d indicates those subgraphs based on the adaptation from a deleterious variant that has a Hamming distance of 4 from WT to WT.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/16965/elife-16965-fig1-figsupp6-v4.jpg)\n\n**Figure 1\u2014figure supplement 6.:** The number of inaccessible direct paths is positively correlated (Pearson correlation = 0.66, p=1.0\u00a0\u00d7\u00a010\u22124) with the ruggedness induced by sign and reciprocal sign epistasis. The level of ruggedness is quantified as $f_{s\u2062i\u2062g\u2062n}+2\u2062f_{r\u2062e\u2062c\u2062i\u2062p\u2062r\u2062o\u2062c\u2062a\u2062l}$, where $f_{t\u2062y\u2062p\u2062e}$ denotes the fraction of each type of pairwise epistasis. The number inside a symbol indicates the number of subgraphs with identical properties.\n\n### Two distinct mechanisms of extra-dimensional bypass\n\nOur findings support the view that direct paths of protein adaptation are often constrained by pairwise epistasis on a rugged fitness landscape (Weinreich et al., 2005; Kondrashov and Kondrashov, 2015). In particular, adaptation can be trapped when direct paths are blocked by reciprocal sign epistasis. However, crucially, this analysis was limited to mutational trajectories within a subgraph of the sequence space. In reality, the dimensionality of protein sequence space is higher. Intuitively, when an extra dimension is introduced, a local maximum may become a saddle point and allow for further adaptation \u2013 a phenomenon that is also known as \u201cextra-dimensional bypass\u201d (Gavrilets, 1997; Cariani, 2002; Guti\u00e9rrez and Maere, 2014). With our experimental data, we observed two distinct mechanisms of bypass, either using an extra amino acid at the same site or using an additional site, that allow proteins to continue adaptation when no direct paths were accessible due to reciprocal sign epistasis (Figure 2). The first mechanism of bypass, which we termed \u201cconversion bypass\u201d, works by converting to an extra amino acid at one of the interacting sites (Palmer et al., 2015). Consider a simple scenario with only two interacting sites. If the sequence space is limited to 2 amino acids at each site, as in past analyses of adaptive trajectories, the number of neighbors is 2; however, if all 20 possible amino acids were considered, the total number of neighbors would be 38. Some of these 36 extra neighbors may lead to potential routes that circumvent the reciprocal sign epistasis (Figure 2A). In this case, a successful bypass would require a conversion step that substitutes one of the two interacting sites with an extra amino acid ($00\u219220$), followed by the loss of this mutation ($21\u219211$). This bypass is feasible only if the original reciprocal sign epistasis is changed to sign epistasis after the conversion. To test whether such bypasses were present in our system, we randomly sampled $10^{5}$ pairwise interactions from the sequence space and analyzed the ~20,000 reciprocal sign epistasis among them (see Materials and methods). More than 40% of the time there was at least one successful conversion bypass and in many cases multiple bypasses were available (Figure 2B).\n\nThe second mechanism of bypass, which we termed \u201cdetour bypass\u201d, involves an additional site (Figure 2C). In this case, adaptation can proceed by taking a detour step to gain a mutation at the third site (000\u2192100), followed by the later loss of this mutation (111\u2192011) (DePristo et al., 2007; Palmer et al., 2015). Detour bypass was observed in our system (Figure 2D), but was not as prevalent and had a lower probability of success than conversion bypass. Out of 38 possible detour bypasses for a chosen reciprocal sign epistasis, we found that there were on average 1.2 conversion bypasses and 0.27 detour bypasses available. We note, however, that the lower prevalence of detour bypass in our fitness landscape (L=4) does not necessarily mean that it should be expected to be less frequent than conversion bypass in other systems. While the maximum number of possible conversion bypasses is always fixed (19\u00d72-2=36), the maximum number of possible detour bypasses (19\u00a0\u00d7\u00a0(L\u00a0\u2212\u00a02)) is proportional to the sequence length L of the entire protein (whereas our study uses a subset L\u00a0=\u00a04). The pervasiveness of extra-dimensional bypasses in our system contrasts with the prevailing view that adaptive evolution is often blocked by reciprocal sign epistasis, when only direct paths of adaptation are considered. The two distinct mechanisms of bypass both require the use of indirect paths, where the Hamming distance to the destination is either unchanged (conversion) or increased (detour).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/16965/elife-16965-fig2-v4.jpg)\n\n**Figure 2.:** (A) Extra amino acids at one of the two interacting sites may open up potential paths that circumvent the reciprocal sign epistasis. The starting point is 00 and the destination is 11 (in red). Green arrows indicate the accessible path. A successful bypass would require a \u201cconversion\u201d step that substitutes one of the two interacting sites with an extra amino acid ($00\u219220$), followed by the loss of this mutation later ($21\u219211$). The original reciprocal sign epistasis is changed to sign epistasis on the new genetic background after conversion. (B) Among ~20,000 randomly sampled reciprocal sign epistasis, >40% of them can be circumvented by at least one conversion bypass (i.e. success, inset). The number of available bypass for the success cases is shown as histogram. (C) The second mechanism of bypass involves an additional site. In this case, adaptation involves a \u201cdetour\u201d step to gain mutation at the third site ($000\u2192100$), followed by the loss of this mutation ($111\u2192011$). The original reciprocal sign epistasis is changed to either magnitude epistasis or sign epistasis on the new genetic background after detour (Figure 2\u2014figure supplement 1). (D) In comparison to conversion bypass, detour bypass has a lower probability of success (<20%, inset) and is less prevalent.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16965/elife-16965-fig2-figsupp1-v4.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Reciprocal sign epistasis may be bypassed via the involvement of a third site. (B\u2013D) There are three possible scenarios. With a mutation at the third site, reciprocal sign epistasis between the first two sites can be changed to magnitude epistasis in (B) or sign epistasis in (C\u2013D). It can be proven that higher-order epistasis is required for the scenarios in (B) and (C) (see Materials and methods).\n\n### Evidence and impacts of higher-order epistasis\n\nIn order to circumvent the inaccessible direct paths via extra dimensions, reciprocal sign epistasis must be changed into other types of pairwise epistasis. For detour bypass, this means that the original reciprocal sign epistasis is changed to either magnitude epistasis or sign epistasis in the presence of a third mutation (Figure 2\u2014figure supplement 1A). There are three possible scenarios where detour bypass can occur (Figure 2\u2014figure supplement 1B\u2013D). We proved that higher-order epistasis is necessary for the scenario that reciprocal sign epistasis is changed to magnitude epistasis, as well as for one of the two scenarios that reciprocal sign epistasis is changed to sign epistasis (see Materials and methods). This suggests a critical role of higher-order epistasis in mediating detour bypass.\n\nTo confirm the presence of higher-order epistasis, we decomposed the fitness landscape by Fourier analysis (see Materials and methods, Figure 3\u2014figure supplement 1) (Szendro et al., 2013; Weinreich et al., 2013; Neidhart et al., 2013). The Fourier coefficients can be interpreted as epistatic interactions of different orders (Weinreich et al., 2013; de Visser and Krug, 2014), including the main effects of single mutations (the first order), pairwise epistasis (the second order), and higher-order epistasis (the third and the fourth order). The fitness of variants can be reconstructed by expansion of Fourier coefficients up to a certain order (Figure 3\u2014figure supplement 2). In our system with four sites, the fourth order Fourier expansion will always reproduce the measured fitness (i.e. the fraction of variance in fitness explained equals 1). When the second order Fourier expansion does not reproduce the measured fitness, it indicates the presence of higher-order epistasis. In this way, we identified the 0.1% of subgraphs with greatest fitness contribution from higher-order epistasis (Figure 3A, red lines) and visualized the corresponding quadruple mutants by the sequence logo plot (Figure 3B). The skewed composition of amino acids in these subgraphs indicates that higher-order interactions are enriched among specific amino acid combinations of site 39, 41 and 54. This interaction among 3 sites is consistent with our knowledge of the protein structure, where the side chains of sites 39, 41, and 54 can physically interact with each other at the core (Figure 1\u2014figure supplement 1A) and destabilize the protein due to steric effects (Figure 3\u2014figure supplement 3).\n\nIn the presence of higher-order epistasis, epistasis between any two sites would vary across different genetic backgrounds. We computed the magnitude of pairwise epistasis (\u03b5) between each pair of amino acid substitutions (see Materials and methods)\u00a0(Khan et al., 2011), and observed numerous instances where the sign of pairwise epistasis depended on genetic background. For example, G41L and V54H were positively epistatic when site 39 was isoleucine [I], but the interaction changed to negative epistasis when site 39 carried a tyrosine [Y] or a tryptophan [W] (Figure 3C\u2013D). Similar patterns were observed in other pairwise interactions among site 39, 41 and 54, such as G41F/V54A and V39W/V54H (Figure 3\u2014figure supplement 4). The observed pattern of higher-order epistasis was consistent with the results of the Fourier analysis (Figure 3B). For example, site 40 was mostly excluded from higher-order epistasis; tyrosine [Y] or tryptophan [W] at site 39 were involved in the most significant higher-order interactions, as they often changed the sign of pairwise epistasis. Higher-order epistasis can also switch the type of pairwise epistasis, such as shifting from reciprocal sign epistasis to magnitude or sign epistasis (Figure 3\u2014figure supplement 5), which in turn is important for the existence of detour bypass.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/16965/elife-16965-fig3-v4.jpg)\n\n**Figure 3.:** (A) The fitness decomposition was performed on all subgraphs without missing variants. The fitness of variants can be reconstructed using Fourier coefficients truncated to a certain order. The fraction of variance in fitness explained by expansion of Fourier coefficients truncated to different orders (from first\u00a0to fourth) is shown for each subgraph. The blue line corresponds to the median. The top 0.1% subgraphs with fitness contributions from higher-order epistasis (the bottom 0.1% subgraphs ranked by fraction of variance explained at second order expansion) are shown in red lines. (B) A sequence logo was generated for the quadruple mutants corresponding to the top 0.1% subgraphs with higher-order epistasis. The skewed composition of amino acids indicates that higher-order interactions are enriched among specific amino acid combinations of site 39, 41 and 54. (C) The magnitude of pairwise epistasis between G41L and V54H across different genetic backgrounds (i.e. all combinations of amino acids at site 39 and 40) is shown as a heat map. The amino acids of WT are boxed. Epistasis that cannot be determined due to missing variant is colored in grey. (D) Altering the genetic background at site 39 changed the positive epistasis ($\\epsilon>0$) between G41L and V54H to negative epistasis ($\\epsilon<0$). The fitness of each variant is indicated in the parentheses.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16965/elife-16965-fig3-figsupp1-v4.jpg)\n\n**Figure 3\u2014figure supplement 1.:** For the 109,235 complete subgraphs that we analyzed, the fraction of the variance in fitness explained by each order is shown. Although the first order (main effects) and the second order Fourier coefficients (pairwise epistasis) can explain most of the variance in fitness, higher-order epistasis is present in certain combination of mutations.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16965/elife-16965-fig3-figsupp2-v4.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Here we show two examples where the fitness contribution from higher-order epistasis is small (bottom 0.1%, from VDGV to CSPA) in (A) and large (top 0.1%, from VDGV to WLLH) in (B). The fitness of variants can be reconstructed using Fourier coefficients truncated to a certain order. The Fourier coefficients can be interpreted as epistatic interactions of different orders, including the main effects of single mutations (the first order), pairwise epistasis (the second order), and higher-order epistasis (the third and the fourth order). (C) In our system with four sites, the reconstructed fitness by expansion to the fourth order Fourier coefficients will always reproduce the measured fitness (i.e. Pearson correlation equals 1). If expansion to the second order Fourier coefficients did not reproduce the measured fitness (i.e. Pearson correlation less than 1), it would indicate the presence of higher-order epistasis.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/16965/elife-16965-fig3-figsupp3-v4.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A and B) The relationship between fitness and the total volume of residue 39, 41, and 54 is shown as a scatter plot for (A) all variants, and (B) variants with HD of 4 from WT. The blue line indicates the volume of WT (VDGV). The red line indicates the fraction of beneficial variants within a sliding window of $\u00b1 $20\u2009\u00c53. We postulated that the observed higher-order epistasis was, at least partially, due to the steric effect among site 39, 41, and 54. This was evidenced by the enrichment of beneficial variants when the total volume of these three interacting residues was between ~200\u2009\u00c53 and ~300\u2009\u00c53. As the total volume further increased, proportion of beneficial variants dropped. (C and D) The relationship between the predicted $\u0394\u2062\u0394$G and the total size of residue 39, 41, and 54 for all variants is shown as a scatter plot for (C) all variants (Pearson correlation = 0.41), and (D) variants with HD of 4 from WT (Pearson correlation = 0.34). The purple line represents the linear regression. The predicted $\u0394\u2062\u0394$G increased as the total volume of core residues increased, indicating that the protein would be destabilized (i.e. decrease in fitness) when the core was overpacked. Therefore, the higher-order epistasis observed in this study could be partially attributed to steric effect. Nonetheless, we acknowledged that entropic effect and conformational effect in IgG-FC binding may also contribute to higher-order epistasis.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/16965/elife-16965-fig3-figsupp4-v4.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Pairwise epistatic effect of each substitution pair under each genetic background (total possible genetic backgrounds for each substitution pair = 20 \u00d7 20 = 400) was quantified. For each substitution pair, the range of epistasis across different genetic backgrounds is shown in the top panel (brown). For each substitution pair, the standard deviation of epistasis across different genetic backgrounds is shown in the middle panel (green). For each substitution pair, the maximum epistatic value across different genetic backgrounds (magenta), the minimum epistatic value across different genetic backgrounds (cyan), and the epistatic value under WT background (grey) are shown. Substitution pair is ranked by the range of epistasis (maximum epistatic value minus minimum epistatic value). (B) Epistasis between G41F and V54A across different genetic backgrounds (different combination of amino acids in sites 39 and 40) is shown. The epistasis value is color coded. Amino acids of WT are boxed. Epistasis that cannot be determined due to missing variant is colored in grey. (C) Epistasis between V39W and V54H across different genetic backgrounds (different combination of amino acids in sites 40 and 41) is shown. The epistasis value is color coded. Amino acids of WT are boxed. Epistasis that cannot be determined due to missing variant is colored in grey.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/16965/elife-16965-fig3-figsupp5-v4.jpg)\n\n**Figure 3\u2014figure supplement 5.:** The type of pairwise interaction could be changed in the presence of higher-order epistasis. (A) Reciprocal sign epistasis between G41L-V54G is changed to magnitude epistasis given the mutation at site 39 (K39W). (B) Reciprocal sign epistasis between G41L-V54G is changed to sign epistasis given the mutation at site 39 (Q39Y).\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/16965/elife-16965-fig3-figsupp6-v4.jpg)\n\n**Figure 3\u2014figure supplement 6.:** To further study the effect of higher-order epistasis on landscape ruggedness, we performed additional analyses on the subgraphs identified in Figure 1B. We applied Fourier decomposition and set all higher-order coefficients to 0. (A) Among the subgraphs in which the quadruple mutant was still the only fitness peak, we found that the ruggedness score did not show a systematic trend after removal of higher-order epistasis. (B) In the meantime, on average the number of accessible direct paths seemed to decrease. Each data point is color-coded so that individual subgraphs can be matched between panel A and B.\n\n### Indirect paths promote evolutionary accessibility\n\nOur analysis on circumventing reciprocal sign epistasis revealed how indirect paths could open up new avenues of adaptation. To study the impact of indirect paths at a global scale, we performed simulated adaptation in the entire sequence space of 160,000 variants. The fitness landscape was completed by imputing fitness values of the 10,639 missing variants (i.e. 6.6% of the sequence space) that had fewer than 10 sequencing read counts in the input library. Our model of protein fitness incorporated main effects of single mutations, pairwise interactions, and three-way interactions among site 39, 41 and 54 (see Materials and methods, Figure 4\u2014figure supplement 1). We used predictor selection based on biological knowledge, followed by regularized regression, which has been demonstrated to ameliorate possible bias in the inferred fitness landscape (Otwinowski and Plotkin, 2014). In the complete sequence space, we identified a total of 30 fitness peaks (i.e. local maxima); among them 15 peaks had fitness larger than WT and their combined basins of attraction covered 99% of the sequence space (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/16965/elife-16965-fig4-v4.jpg)\n\n**Figure 4.:** (A) 15 peaks had fitness larger than WT and their combined basins of attraction accounted for 99% of the entire sequence space. The size of each basin of attraction is identified by the Greedy Model (see Materials and methods). The area of each node is in proportion to the size of the basin of attraction of the corresponding fitness peak. An edge is drawn between fitness peaks that are separated by a Hamming distance of 2. (B) A possible adaptive path starting from WT (VDGV) to the fitness peak LYGV. (C) The frequency of different types of mutational step are shown. Three models, including the Greedy Model (green), Correlated Fixation Model (blue) and Equal Fixation Model (red), are used to simulate 1000 adaptive paths starting from each variant in the sequence space. All the adaptive paths end at a fitness peak. (D) The distribution of the length of the adaptive path initiated at different starting points. For Correlated Fixation Model and Equal Fixation Model, the length was computed by averaging over 1000 simulated paths for each starting point. The scale on the left is for Greedy Model. The scale on the right is for Correlated Fixation Model and Equal Fixation Model. (E) Indirect paths increased the number of genotypes accessible to each fitness peak. The 15 peaks are ordered by increasing fitness (from left to right). (F) A large fraction of beneficial variants in the sequence space (fitness > 1) were accessible from WT only via indirect paths. Beneficial variants were classified by their Hamming distance (HD) from WT.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16965/elife-16965-fig4-figsupp1-v4.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Coefficients of the statistical model were fit by lasso regression on the measured fitness values of 119,884 non-lethal variants (see Materials and methods). (A) 10-fold CV (cross-validation) MSE (mean squared errors) of lasso regression with varying penalty parameter $\\lambda$. The black line indicates the 10-fold CV MSE of ordinary least squares regression (i.e. penalty parameter is zero). The red lines indicate the standard deviation. $\\lambda=10^{-4}$ is chosen for imputing the fitness values of missing variants. (B) The number of nonzero coefficients in the model with varying penalty parameter $\\lambda$. The line indicates the number of nonzero coefficients given by ordinary least squares regression. (C) Comparison between the predicted fitness values and the measured fitness values (Pearson correlation=0.93).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16965/elife-16965-fig4-figsupp2-v4.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) A mutational trajectory initiated from PIWI under Greedy Model, which ended at the fitness peak, FWLG. (B) One of the shortest mutational trajectories from WT (VDGV) to a beneficial mutation (VHGL). (C) Histogram of the number of fitness accessible from a given genotype. The fraction of genotypes accessible to 15 fitness peaks increased substantially when indirect paths are allowed in adaptation.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/16965/elife-16965-fig4-figsupp3-v4.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) To study evolutionary accessibility under constraints imposed by the standard genetic code, we restricted amino acid substitutions to those that were differed by a single nucleotide. This constraint is shown as a symmetric matrix, where red represents substitution that is allowed and white represents substitution that is not allowed. (B) Beneficial variants (fitness > 1) were classified by their Hamming distance (HD) from WT at the amino acid level. Accessibility to these beneficial variants from WT was determined under the constraints imposed by the standard genetic code.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/16965/elife-16965-fig4-figsupp4-v4.jpg)\n\n**Figure 4\u2014figure supplement 4.:** An entropy of evolutionary outcome was calculated for each of the 160,000 variants. Given a variant $v$ with $n$ accessible fitness peaks, the entropy of evolutionary outcome was then computed as follow:\n\n$$\nE\u2062n\u2062t\u2062r\u2062o\u2062p\u2062y_{v}=\\sumi=1n-P_{i}\\timesln\u2061(P_{i})\n$$\n\nwhere $P_{i}$ represented the frequency of reaching the fitness peak $i$ among 1000 simulated mutational trajectories from variant $v$ following Correlated Fixation Model.The entropy of evolutionary fates at each step along an adaptive path is shown. Adaptive paths with the same number of steps are grouped together. We observed that many mutational trajectories that involved extra-dimensional bypass did not fully commit to a fitness peak (entropy = 0) until the last two steps. Each grey line represents a mutational trajectory in each category. Only 100 randomly sampled trajectories are shown due to the difficulty in visualizing a large number of lines on the graph. The median entropy at each step in each category is represented by the red line.\n\nWe then simulated adaptation on the fitness landscape using three different models of adaptive walks (see Materials and methods), namely the Greedy Model (de Visser and Krug, 2014), Correlated Fixation Model (Gillespie, 1984), and Equal Fixation Model (Weinreich et al., 2006). In the Greedy Model, adaptation proceeds by sequential fixation of mutations that render the largest fitness gain at each step. The other two models assign a nonzero fixation probability to all beneficial mutations, either weighted by (Correlated Fixation Model) or independent of (Equal Fixation Model) the relative fitness gain. The Greedy Model represents adaptive evolution of a large population with pervasive clonal interference (de Visser and Krug, 2014). The Correlated Fixation Model represents adaptive evolution of a population under the scheme of strong-selection/weak-mutation (SSWM) (Gillespie, 1984), which assumes that the time to fixation is much shorter than the time between mutations and the fixation probability of a given mutation is proportional to the improvement in fitness. The Equal Fixation Model represents a simplified scenario of adaptation where all beneficial mutations fix with equal probability (Weinreich et al., 2006).\n\nAmong all the possible adaptive paths to fitness peaks, many of them involved indirect paths, i.e. they employed mechanisms of extra-dimensional bypass (Figure 4B, Figure 4\u2014figure supplement 2). We classified each step on the adaptive paths into three categories based on the change of Hamming distance to the destination (a fitness peak, in this case): \u201ctowards (-1)\u201d, \u201cconversion (0)\u201d, and \u201cdetour (+1)\u201d (Figure 4C). Conversion was found to be pervasive during adaptation in our fitness landscape (17% of mutational steps for Greedy Model, 41% for Correlated Fixation Model, 59% for Equal Fixation Model). The use of detour was less frequent (0.1% of mutational steps for Greedy Model, 1.3% for Correlated Fixation Model, 3.7% for Equal Fixation Model), in accordance with the previous observation that detour bypass was less available than conversion bypass in our fitness landscape with $L=4$. A conversion step would increase the length of an adaptive path by 1, while a detour step would increase the length by 2. As a result, an indirect path can be substantially longer than a direct path consisting of only \u201ctowards\u201d steps. We found that many of the adaptive paths required more than 4 steps, which was the maximal length of a direct path between any variants in this landscape (Figure 4D). Interestingly, because indirect adaptive paths involved more variants of intermediate fitness, the use of conversion and detour steps depended on the strength of selection. Consistent with previous studies (Orr, 2002, 2003), when mutations conferring larger fitness gains were more likely to fix (e.g. Greedy Model and Correlated Fixation Model), adaptation favored direct moves toward the destination, thus leading to a shorter adaptive paths (Figure 4C\u2013D). This suggests that the strength of selection interacts with the topological structure of fitness landscapes to determine the length and directness of evolutionary trajectories.\n\nGiven that extra-dimensional bypasses can help proteins avoid evolutionary traps, we expect that their existence would facilitate adaptation in rugged fitness landscapes. Indeed, we found that indirect paths increased the number of genotypes with access to each fitness peak (Figure 4E). In addition, the fraction of genotypes with accessible paths to all 15 fitness peaks increased from from 34% to 93% when indirect adaptive paths were allowed (Figure 4\u2014figure supplement 2C). We also found that a substantial fraction of beneficial variants (fitness > 1) in the sequence space were accessible from WT only if indirect paths were used (Figure 4F). We repeated the analysis in Figure 4F with the consideration of the constraints imposed by the standard genetic code (Figure 4\u2014figure supplement 3A). The constraints from the genetic code decreased the number of accessible variants due to the reduction in connectivity. However, this reduction in connectivity did not alter our core finding that indirect paths substantially increase evolutionary accessibility (Figure 4\u2014figure supplement 3B). Taken together, these results suggest that indirect paths promote evolutionary accessibility in rugged fitness landscapes. This enhanced accessibility would allow proteins to explore more sequence space and lead to delayed commitment to evolutionary fates (i.e. fitness peaks) (Palmer et al., 2015). Consistent with this expectation, our simulations showed that many mutational trajectories involving extra-dimensional bypass did not fully commit to a fitness peak until the last two steps (Figure 4\u2014figure supplement 4).\n\n## Discussion\n\nIn our analysis, we have limited adaptation to the regime where fitness is monotonically increasing via sequential fixation of one-step beneficial mutants. When this assumption is relaxed, adaptation can sometimes proceed by crossing fitness valleys, such as via genetic drift or recombination (de Visser and Krug, 2014; Weissman et al., 2009; Ostman et al., 2012; Poelwijk et al., 2007; Weissman et al., 2010). Another simplification in most of our analyses is to treat all sequences in a \u201cprotein space\u201d (Smith, 1970), where two sequences are considered as neighbors if they differ by a single amino-acid substitution. In practice, amino acid substitutions occurring via a single nucleotide mutation are limited by the genetic code, so the total number of one-step neighbors would be reduced from 19L to approximately 6L (Figure 4\u2014figure supplement 3). We also expect fitness landscapes of different systems to have different topological structure. Even in our system (with >93% coverage of the genotype space), the global structure of the fitness landscape is influenced by the imputed fitness values of missing variants, which can vary when different fitness models or fitting methods are used. Our analysis also ignored measurement errors, but the measurement errors are expected to be very small due to the high reproducibility in the data (Figure 1\u2014figure supplement 3B). Both imputation of missing variants and measurement errors can lead to slight mis-specification of the topological structure of the fitness landscape. Finally, we note that the four amino acids chosen in our study are in physical proximity and have strong epistatic interactions. While the availability of conversion bypass only depends on the dimensionality at each site, the degree of higher-order epistasis and the availability of detour bypasses can be quite different in other fitness landscapes. Although the details of a particular fitness landscape can influence the quantitative role of different bypass mechanisms, this does not undermine the generality of our conceptual findings on extra-dimensional bypass, higher-order epistasis, and their roles in protein evolution.\n\nHigher-order epistasis has been reported in a few biological systems (Wang et al., 2013; Pettersson et al., 2011; Palmer et al., 2015), and is likely to be common in nature (Weinreich et al., 2013). In this study, we observed the presence of higher-order epistasis and systematically quantified its contribution to protein fitness. Our results suggest that higher-order epistasis can either increase or decrease the ruggedness induced by pairwise epistasis, which in turn determines the accessibility of direct paths in a rugged fitness landscape (Figure 3\u2014figure supplement 6). We also revealed the important role of higher-order epistasis in mediating detour bypass, which could promote evolutionary accessibility via indirect paths. Our work demonstrates that even in the most rugged regions of a protein fitness landscape, most of the sequence space can remain highly accessible owing to the indirect paths opened up by high dimensionality. The enhanced accessibility mediated by indirect paths may provide a partial explanation for some observations in viral evolution. For example, throughout the course of infection HIV always seems to find a way to revert to the global consensus sequence, a putatively \u201coptimal\u201d HIV-1 sequence after immune invasion (Zanini et al., 2015). As we pointed out, the possible number of detour bypasses scales up with sequence length, so it will be interesting to study how extra-dimensional bypass influences adaptation in sequence space of even higher dimensionality. For example, it is plausible that the sequence of a large protein may never be trapped in adaptation (Gavrilets, 1997), so that adaptive accessibility becomes a quantitative rather than qualitative problem.\n\nGiven the continuing development of sequencing technology, we anticipate that the scale of experimentally determined fitness landscapes will further increase, yet the full protein sequence space is too huge to be mapped exhaustively. Does this mean that we will never be able to understand the full complexity of fitness landscapes? Or perhaps big data from high-throughput measurements will guide us to find general rules? By coupling state-of-the-art experimental techniques with novel quantitative analysis of fitness landscapes, this work takes the optimistic view that we can push the boundary further and discover new mechanisms underlying evolution (Fisher et al., 2013; Desai, 2013; Szendro et al., 2013]).\n\n## Materials and methods\n\n### Mutant library construction\n\nTwo oligonucleotides (Integrated DNA Technologies, Coralville, IA), 5\u2019-AGT CTA GTA TCC AAC GGC NNS NNS NNK GAA TGG ACC TAC GAC GAC GCT ACC AAA ACC TT-3\u2019 and 5\u2019-TTG TAA TCG GAT CCT CCG GAT TCG GTM NNC GTG AAG GTT TTG GTA GCG TCG TCG T-3\u2019 were annealed by heating to 95\u00b0C for 5 min and cooling to room temperature over 1\u2009hr. The annealed nucleotide was extended in a reaction containing 0.5 \u00b5M of each oligonucleotide, 50\u2009mM NaCl, 10\u2009mM Tris-HCl pH 7.9, 10\u2009mM MgCl2, 1\u2009mM DTT, 250 \u00b5M each dNTP, and 50 units Klenow exo- (New England Biolabs, Ipswich, MA) for 30 mins at 37\u00b0C. The product (cassette I) was purified by PureLink PCR Purification Kit (Life Technologies, Carlsbad, CA) according to manufacturer\u2019s instructions.\n\nA constant region was generated by PCR amplification using KOD DNA polymerase (EMD Millipore, Billerica, MA) with 1.5 mM MgSO4, 0.2 mM of each dNTP (dATP, dCTP, dGTP, and dTTP), 0.05 ng protein GB1 wild type (WT) template, and 0.5 \u00b5M each of 5\u2019-TTC TAA TAC GAC TCA CTA TAG GGA CAA TTA CTA TTT ACA TAT CCA CCA TG-3\u2019 and 5\u2019-AGT CTA GTA TCC TCG ACG CCG TTG TCG TTA GCG TAC TGC-3\u2019. The sequence of the WT template consisted of a T7 promoter, 5\u2019 UTR, the coding sequence of Protein GB1, 3\u2019 poly-GS linkers, and a FLAG-tag (Figure 1\u2014figure supplement 1B) ([Olson et al., 2014). The thermocycler was set as follows: 2 min at 95\u00b0C, then 18 three-step cycles of 20 s at 95\u00b0C, 15 s at 58\u00b0C, and 20 s at 68\u00b0C, and 1 min final extension at 68\u00b0C. The product (constant region) was purified by PureLink PCR Purification Kit (Life Technologies) according to manufacturer\u2019s instructions. Both the purified constant region and cassette I were digested with BciVI (New England Biolabs) and purified by PureLink PCR Purification Kit (Life Technologies) according to manufacturer\u2019s instructions.\n\nLigation between the constant region and cassette I (molar ratio of 1:1) was performed using T4 DNA ligase (New England Biolabs). Agarose gel electrophoresis was performed to separate the ligated product from the reactants. The ligated product was purified from the agarose gel using Zymoclean Gel DNA Recovery Kit (Zymo Research, Irvine, CA) according to manufacturer\u2019s instructions. PCR amplification was then performed using KOD DNA polymerase (EMD Millipore) with 1.5\u2009mM MgSO4, 0.2\u2009mM of each dNTP (dATP, dCTP, dGTP, and dTTP), 4 ng of the ligated product, and 0.5 \u00b5M each of 5\u2019-TTC TAA TAC GAC TCA CTA TAG GGA CAA TTA CTA TTT ACA TAT CCA CCA TG-3\u2019 and 5\u2019-GGA GCC GCT ACC CTT ATC GTC GTC ATC CTT GTA ATC GGA TCC TCC GGA TTC-3\u2019. The thermocycler was set as follows: 2 min at 95\u00b0C, then 10 three-step cycles of 20 s at 95\u00b0C, 15 s at 56\u00b0C, and 20 s at 68\u00b0C, and 1 min final extension at 68\u00b0C. The product, which is referred as \u201cDNA library\u201d, was purified by PureLink PCR Purification Kit (Life Technologies) according to manufacturer\u2019s instructions.\n\n### Affinity selection by mRNA display\n\nAffinity selection by mRNA display (Roberts and Szostak, 1997; Olson et al., 2012) was performed as described (Figure 1\u2014figure supplement 3A) (Olson et al., 2014). Briefly, The DNA library was transcribed by T7 RNA polymerase (Life Technologies) according to manufacturer\u2019s instructions. Ligation was performed using 1 nmol of mRNA, 1.1 nmol of 5\u2019-TTT TTT TTT TTT GGA GCC GCT ACC-3\u2019, and 1.2 nmol of 5\u2019-/5Phos/-d(A)21-(C9)3-d(ACC)-Puromycin by T4 DNA ligase (New England Biolabs) in a 100 \u00b5L reaction. The ligated product was purified by urea PAGE and translated in a 100 \u00b5L reaction volume using Retic Lysate IVT Kit (Life Technologies) according to manufacturer\u2019s instructions followed by incubation with 500\u2009mM final concentration of KCl and 60\u2009mM final concentration of MgCl$_{2}$ for at least 30 min at room temperature to increase the efficiency for fusion formation (Liu et al., 2000). The mRNA-protein fusion was then purified using ANTI-FLAG M2 Affinity Gel (Sigma-Aldrich, St. Louis, MO). Elution was performed using 3X FLAG peptide (Sigma-Aldrich). The purified mRNA-protein fusion was reverse transcribed using SuperScript III Reverse Transcriptase (Life Technologies). This reverse transcribed product, which was referred as \u201cinput library\u201d, was incubated with Pierce streptavidin agarose (SA) beads (Life Technologies) that were conjugated with biotinylated human IgG-FC (Rockland Immunochemicals, Limerick, PA). After washing, the immobilized mRNA-protein fusion was eluted by heating to 95\u00b0C. The eluted sample was referred as \u201cselected library\u201d.\n\n### Sequencing library preparation\n\nPCR amplification was performed using KOD DNA polymerase (EMD Millipore) with 1.5\u2009mM MgSO4, 0.2\u2009mM of each dNTP (dATP, dCTP, dGTP, and dTTP), the selected library, and 0.5 \u00b5M each of 5\u2019-CTA CAC GAC GCT CTT CCG ATC TNN NAG CAG TAC GCT AAC GAC AAC G-3\u2019 and 5\u2019-TGC TGA ACC GCT CTT CCG ATC TNN NTA ATC GGA TCC TCC GGA TTC G-3\u2019. The underlined \u201cNNN\u201d indicated the position of the multiplex identifier, GTG for input library and TGT for post-selection library. The thermocycler was set as follows: 2 min at 95\u00b0C, then 10 to 12 three-step cycles of 20 s at 95\u00b0C, 15 s at 56\u00b0C, and 20 s at 68\u00b0C, and 1 min final extension at 68\u00b0C. The product was then PCR amplified again using KOD DNA polymerase (EMD Millipore) with 1.5\u2009mM MgSO4, 0.2\u2009mM of each dNTP (dATP, dCTP, dGTP, and dTTP), the eluted product from mRNA display, and 0.5 \u00b5M each of 5\u2019-AAT GAT ACG GCG ACC ACC GAG ATC TA CAC TCT TTC CCT ACA CGA CGC TCT TCC G-3\u2019 and 5\u2019-CAA GCA GAA GAC GGC ATA CGA GAT CGG TCT CGG CAT TCC TGC TGA ACC GCT CTT CCG-3\u2019. The thermocycler was set as follows: 2 min at 95\u00b0C, then 10 to 12 three-step cycles of 20 s at 95\u00b0C, 15 s at 56\u00b0C, and 20 s at 68\u00b0C, and 1 min final extension at 68\u00b0C. The PCR product was then subjected to 2 \u00d7 100 bp paired-end sequencing using Illumina HiSeq 2500 platform. We aimed to obtain at least 20 million paired-end reads for each input library and post-selection library such that the average coverage for each variant would be more than 100 paired-end reads. There were 89,075,246 paired-end reads obtained for the input library and 45,587,128 paired-end reads obtained for the post-selection library. Raw sequencing data have been submitted to the NIH Short Read Archive under accession number: BioProject PRJNA278685.\n\nWe were able to compute the fitness for 93.4% of all variants from the sequencing data. The fitness measurements in this study were highly consistent with our previous study on the fitness of single and double mutants in protein GB1 (Pearson correlation = 0.97, Figure 1\u2014figure supplement 3B) (Olson et al., 2014).\n\n### Sequencing data analysis\n\nThe first three nucleotides of both forward read and reverse read were used for demultiplexing. If the first three nucleotides of the forward read were different from that of the reverse read, the given paired-end read would be discarded. For both forward read and reverse read, the nucleotides that were corresponding to the codons of protein GB1 sites 39, 40, 41, and 54 were extracted. If coding sequence of sites 39, 40, 41, and 54 in the forward read and that in the reverse read did not reverse-complement each other, the paired-end read would be discarded. Subsequently, the occurrence of individual variants at the amino acid level for site 39, 40, 41, and 54 in both input library and selected library were counted, with each paired-end read represented 1 count. Custom python scripts and bash scripts were used for sequencing data processing. All scripts have been deposited to https://github.com/wchnicholas/ProteinGFourMutants.\n\n### Calculation of fitness\n\nThe fitness (w) for a given variant i was computed as:\n\n$$\nw_{i}=\\frac{c\u2062o\u2062u\u2062n\u2062t_{i,s\u2062e\u2062l\u2062e\u2062c\u2062t\u2062e\u2062d}/c\u2062o\u2062u\u2062n\u2062t_{i,i\u2062n\u2062p\u2062u\u2062t}}{c\u2062o\u2062u\u2062n\u2062t_{W\u2062T,s\u2062e\u2062l\u2062e\u2062c\u2062t\u2062e\u2062d}/c\u2062o\u2062u\u2062n\u2062t_{W\u2062T,i\u2062n\u2062p\u2062u\u2062t}}\n$$\n\nwhere $count_{i,selected}$ represented the count of variant i in the selected library, $count_{i,input}$ represented the count of variant i in the input library, $count_{WT,selected}$ represented the count of WT (VDGV) in the selected library, and $count_{WT,input}$ represented the count of WT (VDGV) in the input library.\n\nTherefore, the fitness of each variant, wi, could be viewed as the fitness relative to WT (VDGV), such that = 1. Variants with $count_{input}<10$ were filtered to reduce noise. The fraction of all possible variants that passed this filter was 93.4% (149,361 out of 160,000 all possible variants).\n\nThe fitness of each single substitution variant was referenced to our previous study (Olson et al., 2014), because the sequencing coverage of single substitution variants in our previous study was much higher than in this study (~100 fold higher). Hence, our confidence in computing fitness for a single substitution variant should also be much higher in our previous study than this study. Subsequently, the fitness of each single substitution in this study was calculated by multiplying a factor of 1.159 by the fitness of that single substitution computed from our previous study (Olson et al., 2014). This is based on the linear regression analysis between the single substitution fitness as measured in our previous study and in this study, which had a slope of 1.159 and a y-intercept of ~0. The fitness of each profiled variant is shown in Supplementary file 1.\n\n### Magnitude and type of pairwise epistasis\n\nThe three types of pairwise epistasis (magnitude, sign and reciprocal sign) were classified by ranking the fitness of the four variants involved (Greene and Crona, 2014).\n\nTo quantify the magnitude of epistasis ($\\epsilon$) between substitutions a and b on a given background variant BG, the relative epistasis model (Khan et al., 2011) was employed as follows:\n\n$$\n\\epsilon_{a\u2062b,B\u2062G}=ln\u2061(\\frac{w_{a\u2062b}}{w_{B\u2062G}})-ln\u2061(\\frac{w_{a}}{w_{B\u2062G}})-ln\u2061(\\frac{w_{b}}{w_{B\u2062G}})\n$$\n\nwhere wab represents the fitness of the double substitution, ln(wa) and ln(wb) represents the fitness of each of the single substitution respectively, and wBG represents the fitness of the background variant.\n\nAs described previously (Olson et al., 2014), there exists a limitation in determining the exact fitness for very low-fitness variants in this system. To account for this limitation, several rules were adapted from our previous study to minimize potential artifacts in determining $\\epsilon$\u00a0(Olson et al., 2014). We previously determined that the detection limit of fitness (w) in this system is ~0.01 (Olson et al., 2014).\n\nRule 1) if max($\\frac{w_{a\u2062b}}{w_{B\u2062G}}$, $\\frac{w_{a}}{w_{B\u2062G}}$, $\\frac{w_{b}}{w_{B\u2062G}}$) $<$ 0.01, $\\epsilon_{a\u2062b,B\u2062G,a\u2062d\u2062j\u2062u\u2062s\u2062t\u2062e\u2062d}$ = 0\n\nRule 2) if min(wa, wb, $\\frac{w_{a}}{w_{B\u2062G}}$, $\\frac{w_{b}}{w_{B\u2062G}}$) $<$ 0.01, $\\epsilon_{a\u2062b,B\u2062G,a\u2062d\u2062j\u2062u\u2062s\u2062t\u2062e\u2062d}$ = max(0, $\\epsilon_{a\u2062b,B\u2062G}$)\n\nRule 3) if min(wab, $\\frac{w_{a\u2062b}}{w_{B\u2062G}}$) $<$ 0.01, $\\epsilon_{a\u2062b,B\u2062G,a\u2062d\u2062j\u2062u\u2062s\u2062t\u2062e\u2062d}$ = min(0, $\\epsilon_{a\u2062b,B\u2062G}$)\n\nRule 1 prevents epistasis being artificially estimated from low-fitness variants. Rule 2 prevents overestimation of epistasis due to low fitness of one of the two single substitutions. Rule 3 prevents underestimation of epistasis due to low fitness of the double substitution. Of note, $\\epsilon_{a\u2062b,B\u2062G,a\u2062d\u2062j\u2062u\u2062s\u2062t\u2062e\u2062d}$ was set to 0 if both Rule 2 and Rule 3 were satisfied. To compute the epistasis between two substitutions, a and b, on a given background variant BG, $\\epsilon_{a\u2062b,B\u2062G,a\u2062d\u2062j\u2062u\u2062s\u2062t\u2062e\u2062d}$ would be used if any one of the above three rules was satisfied. Otherwise, $\\epsilon_{a\u2062b,B\u2062G}$ would be used.\n\n### Fourier analysis\n\nFitness decomposition was performed on all subgraphs without missing variants (109,235 subgraphs in total). We decomposed the fitness landscape into epistatic interactions of different orders by Fourier analysis (Stadler, 1996; Szendro et al., 2013; Weinreich et al., 2013; Neidhart et al., 2013). The Fourier coefficients given by the transform can be interpreted as epistasis of different orders (Weinreich et al., 2013; de Visser and Krug, 2014).\n\nFor a binary sequence $z\u2192$ with dimension $L$ ($z_{i}$ equals 1 if mutation is present at position $i$, or 0 otherwise), the Fourier decomposition theorem states that the fitness function $f\u2062(z\u2192)$ can be expressed as (Weinberger, 1991):\n\n$$\nf\u2062(z\u2192)=\\sumk\u2192f^_{k\u2192}\u2062(-1)^{z\u2192\u22c5k\u2192}\n$$\n\nThe formula for the Fourier coefficients $f^_{k\u2192}$ is then:\n\n$$\nf^_{k\u2192}=\\frac{1}{2^{L}}\u2062\\sumz\u2192f\u2062(z\u2192)\u2062(-1)^{z\u2192\u22c5k\u2192}\n$$\n\nFor example, we can expand the fitness landscape up to the second order, i.e. with linear and quadratic terms\n\n$$\nf(\\sigma\u2192)=f_{0}^+\\sumif^_{e_{i}\u2192}\\sigma_{i}+\\sumi<jf^_{e_{i}\u2192+e_{j}\u2192}\\sigma_{i}\\sigma_{j}+\u22ef\n$$\n\nwhere $\\sigma_{i}\u2261(-1)^{z_{i}}\\in{+1,-1}$, and $e_{i}\u2192$ is a unit vector along the $i^{t\u2062h}$ direction. In our analysis of subgraphs, there are a total of $2^{4}=16$ terms in the Fourier decomposition, with $(4i)$ terms for the $i^{t\u2062h}$ order ($i=0,1,2,3,4$). We can expand the fitness landscape up to a given order by ignoring all higher-order terms in Equation 3. In this paper, we refer to higher-order epistasis as non-zero contribution to fitness from the third order terms and beyond.\n\n### Imputing the fitness of missing variants\n\nThe fitness values for 10,639 variants (6.6% of the entire sequence space) were not directly measured (read count in the input pool = 0) or were filtered out because of low read counts in the input pool (see section \u201cCalculation of fitness\u201d). To impute the fitness of these missing variants, we performed regularized regression on fitness values of observed variants using the following model (Hinkley et al., 2011; Otwinowski and Plotkin, 2014):\n\n$$\nl\u2062o\u2062g\u2062(f)=\\alpha_{0}+\\sumi=1N_{M}\\beta_{i}\u2062M_{i}+\\sumj=1N_{P}\\gamma_{j}\u2062P_{j}+\\sumk=1N_{T}\\delta_{k}\u2062T_{k}\n$$\n\nHere, $f$ is the protein fitness. $\\alpha_{0}$ is the intercept that represents the log fitness of WT; $\\beta_{i}$ represents the main effect of a single mutation, i;\u00a0Mi is a dummy variable that equals 1 if the single mutation $i$ is present in the sequence, or 0 if the single mutation is absent; and $N_{M}=19\\times(41)=76$ is the total number of single mutations. Similarly, $\\gamma_{j}$ represents the effect of interaction between a pair of mutations; $P_{j}$ is the dummy variable that equals either 1 or 0 depending on the presence of that those two mutations; and $N_{P}=19^{2}\\times(42)=2166$ is the total number of possible pairwise interactions. In addition to the main effects of single mutations and pairwise interactions, the three-way interactions among sites 39, 41 and 54 are included in the model, based on our knowledge of higher-order epistasis (Figure 3). $\\delta_{k}$ represents the effect of three-way interactions among sites 39, 41 and 54; $T_{k}$ is the dummy variable that equals either 1 or 0 depending on the presence of that three-way interaction; and $N_{T}=19^{3}=6859$ is the total number of three-way interactions. Thus, the total number of coefficients in this model is 9102, including main effects of each site (i.e. additive effects), interactions between pairs of sites (i.e. pairwise epistasis), and a subset of three-way interactions (i.e. higher-order epistasis).\n\nOut of the 149,361 variants with experimentally measured fitness values, 119,884 variants were non-lethal ($f>0$) and were used to fit the model coefficients using lasso regression (Matlab R2014b). Lasso regression adds a penalty term $\\lambda\u2062\\sum|\\theta|$ ($\\theta$ stands for any coefficient in the model) when minimizing the least squares, thus it favors sparse solutions of coefficients (Figure 4\u2014figure supplement 1B). We calculated the 10-fold cross-validation MSE (mean squared errors) of the lasso regression for a wide range of penalty parameter $\\lambda$ (Figure 4\u2014figure supplement 1A). $\\lambda=10^{-4}$ is chosen. For measured variants, the model-predicted fitness values were highly correlated with the actual fitness values (Pearson correlation=0.93, Figure 4\u2014figure supplement 1C). We then used the fitted model to impute the fitness of the 10,639 missing variants and complete the entire fitness landscape. Imputed fitness values for missing variants are listed in Supplementary file 2.\n\n### Simulating adaptation using three models for fixation\n\nPython package \u201cnetworkx\u201d was employed to construct a directed graph that represented the entire fitness landscape for sites 39, 40, 41, and 54. A total of 204 = 160,000 nodes were present in the directed graph, where each node represented a 4-site variant. For all pairs of variants separated by a Hamming distance of 1, a directed edge was generated from the variant with a lower fitness to the variant with a higher fitness. Therefore, all successors of a given node had a higher fitness than the given node. A fitness peak was defined as a node that had 0 out-degree. Three models, namely the Greedy Model (de Visser and Krug, 2014), the Correlated Fixation Model (Gillespie, 1984), and the Equal Fixation Model (Weinreich et al., 2006), were employed in this study to simulate the mutational steps in adaptive trajectories. Under all three models, the probability of fixation of a deleterious or neutral mutation is 0. Considering a mutational trajectory initiated at a node, ni with a fitness value of wi, where ni has M successors, (n1, n2, \u2026 nM) with fitness values of (w1, w2, \u2026 wM). Then the probability that the next mutational step is from ni to nk, where k $\\in$ (1, 2, \u2026 M), is denoted Pi\u2192k and called the probability of fixation, and can be computed for each model as follows.\n\nFor the Greedy Model (deterministic model),\n\n$$\nif\u2062w_{k}=m\u2062a\u2062x\u2062(w_{1},w_{2},\u2026\u2062w_{M})\u2062,\u2062P_{i\u2192k}=1\n$$\n\n\n\n$$\notherwise,\u2062P_{i\u2192k}=0\n$$\n\nFor the Correlated Fixation Model (non-deterministic model),\n\n$$\nP_{i\u2192k}=\\frac{w_{k}\u2212w_{i}}{\\sumn=1M(w_{n}\u2212w_{i})}\n$$\n\nFor the Equal Fixation Model (non-deterministic model),\n\n$$\nP_{i\u2192k}=\\frac{1}{M}\n$$\n\nTo compute the shortest path from a given variant to all reachable variants, the function \u201csingle$_$source$_$shortest$_$path\u201d in \u201cnetworkx\u201d was used. If the shortest path between a low-fitness variant and a high-fitness variant does not exist, it means that the high-fitness variant is inaccessible. If the length of the shortest path is larger than the Hamming distance between two variants, it means that adaptation requires indirect paths.\n\nUnder constraints imposed by the standard genetic code, the connectivity of the directed graph that represented the fitness landscape was restricted according to the matrix shown in Figure 4\u2014figure supplement 3A. The genetic distance between two variants was calculated according to the matrix shown in Figure 4\u2014figure supplement 3A. If the length of the shortest path is larger than the genetic distance between two variants, it means that adaptation requires indirect paths.\n\n### Analysis of direct paths within a subgraph\n\nIn the subgraph analysis shown in Figure 1\u2014figure supplement 4, the fitness landscape was restricted to 2 amino acids at each of the 4 sites (the WT and adapted alleles). There was a total of 24 variants, hence nodes, in a given subgraph. Only those subgraphs where the fitness of all variants was measured directly were used (i.e. any subgraph with missing variants was excluded from this analysis). Mutational trajectories were generated in the same manner as in the analysis of the entire fitness landscape (see subsection \u201cSimulating adaptation using three models for fixation\u201d). In a subgraph with only one fitness peak, the probability of a mutational trajectory from node i to node j via intermediate a, b, and c was as follows:\n\n$$\nP_{i\u2192a\u2192b\u2192c\u2192j}=P_{i\u2192a}\\timesP_{a\u2192b}\\timesP_{b\u2192c}\\timesP_{c\u2192j}\n$$\n\nTo compute the Gini index for a given set of mutational trajectories from node i to node j, the probabilities of all possible mutational trajectories were sorted from large to small. Inaccessible trajectories were also included in this sorted list with a probability of 0. This sorted list with t\u00a0trajectories was denoted as ($P_{i\u2192j,1}$, $P_{i\u2192j,2}$, \u2026 $P_{i\u2192j,t}$), where $P_{i\u2192j,1}$ was the largest and $P_{i\u2192j,t}$ was the smallest. This sorted list was converted into a list of cumulative probabilities, which is denoted as ($A_{i\u2192j,1}$, $A_{i\u2192j,2}$, \u2026 $A_{i\u2192j,t}$), where $A_{i\u2192j,t}$ = $\\sumn=1tP_{i\u2192j,t}$.\n\nThe Gini index for the given subgraph was then computed as follows:\n\n$$\nGini\u00a0index\u00a0=\\frac{2\\times\\sumn=1t\u22121(A_{i\u2192j,n})+A_{i\u2192j,t}\u2212t}{t\u22121}\n$$\n\n### Visualization\n\nSequence logo was generated by WebLogo (http://weblogo.berkeley.edu/logo.cgi) (Crooks et al., 2004). The visualization of basins of attraction (Figure 4A) was generated using Graphviz with \u201cfdp\u201d as the option for layout.\n\n### \u0394\u2062\u0394G prediction\n\nThe $\u0394\u2062\u0394$G prediction was performed by the ddg$_$monomer application in Rosetta software (Das and Baker, 2008) using the parameters from row 16 of Table I in Kellogg et al. (Kellogg et al., 2011).\n\n### Extra-dimensional bypass is mediated by higher-order epistasis\n\nHere we prove that higher-order epistasis is required for two possible scenarios of extra-dimensional bypass via an additional site (Figure 2\u2014figure supplement 1). For a fitness landscape defined on a Boolean hypercube, we can expand the fitness as Taylor series (Weinberger, 1991).\n\n$$\nf_{000}=\\alpha_{0}f_{001}=\\alpha_{0}+\\alpha_{1}f_{010}=\\alpha_{0}+\\alpha_{2}f_{100}=\\alpha_{0}+\\alpha_{3}f_{011}=\\alpha_{0}+\\alpha_{1}+\\alpha_{2}+\\alpha_{12}f_{101}=\\alpha_{0}+\\alpha_{1}+\\alpha_{3}+\\alpha_{13}f_{110}=\\alpha_{0}+\\alpha_{2}+\\alpha_{3}+\\alpha_{23}f_{111}=\\alpha_{0}+\\alpha_{1}+\\alpha_{2}+\\alpha_{3}+\\alpha_{12}+\\alpha_{13}+\\alpha_{23}+\\alpha_{123}\n$$\n\nTo prove that higher-order epistasis is present is equivalent to prove that $\\alpha_{123}\\neq0$. The fitness difference between neighbors is visualized by the directed edges that go from low-fitness variant to high-fitness variant, thus each edge represents an inequality. No cyclic paths are allowed in this directed graph.\n\nThe reciprocal sign epistasis (Figure 2\u2014figure supplement 1A) gives,\n\n$$\n000\u2190001:\\alpha_{1}\u00a0<\u00a00\n$$\n\n\n\n$$\n000\u2190010:\\alpha_{2}\u00a0<\u00a00\n$$\n\n\n\n$$\n001\u2192011:\\alpha_{2}+\\alpha_{12}\u00a0>\u00a00\n$$\n\n\n\n$$\n010\u2192011:\\alpha_{1}+\\alpha_{12}\u00a0>\u00a00\n$$\n\nThe detour step ($000\u2192100$) and the loss step ($111\u2192011$) are required for extra-dimensional bypass,\n\n$$\n000\u2192100:\\alpha_{3}\u00a0>\u00a00\n$$\n\n\n\n$$\n011\u2190111:\\alpha_{3}+\\alpha_{13}+\\alpha_{23}+\\alpha_{123}\u00a0<\u00a00\n$$\n\nFor the remaining 6 edges, there are 3 possible configurations (Figure 2\u2014figure supplement 1B\u2013D). For the scenario illustrated in (B), we have\n\n$$\n100\u2192101:\\alpha_{1}+\\alpha_{13}\u00a0>\u00a00\n$$\n\n\n\n$$\n100\u2192110:\\alpha_{2}+\\alpha_{23}\u00a0>\u00a00\n$$\n\nCombining inequality (14) and (20) gives\n\n$$\n\\alpha_{13}\u00a0>\u00a00\n$$\n\nCombining inequality (15) and (21) gives\n\n$$\n\\alpha_{23}\u00a0>\u00a00\n$$\n\nCombining the above two inequalities with (18) and (19), we arrive at\n\n$$\n\\alpha_{123}\u00a0<\u00a00\n$$\n\nFor the scenario in (C), the proof of higher-order epistasis is similar. We have (the yellow edge)\n\n$$\n001\u2192101:\\alpha_{3}+\\alpha_{13}\u00a0>\u00a00\n$$\n\nCombining the above inequality with (15), (19) and (21), we arrive at\n\n$$\n\\alpha_{123}\u00a0<\u00a00\n$$\n\nFor the scenario in (D), when $\\alpha_{3}+\\alpha_{13}\u00a0<\u00a00$, all the inequalities can be satisfied with $\\alpha_{123}=0$. So higher-order epistasis is not necessary in this case.\n",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "c5725bd2-fa7b-4517-ace3-ced5e79c35cc",
+      "submission_id": "91458ecf-0aae-444f-af49-c0a23d766a37",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard A Neher, Max Planck Institute for Developmental Biology , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.16965.028](https://doi.org/10.7554/eLife.16965.028)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Adaptation in protein fitness landscapes is facilitated by indirect paths\" for consideration by eLife. Your article has been favorably evaluated by Diethard Tautz as the Senior editor and three reviewers, including Joachim Krug (Reviewer #2) and a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nWu et al. report fitness measurements of all possible of combinations of amino acid substitutions at 4 positions in the protein GB1. Properties of fitness or folding landscapes of proteins are fundamental determinants of evolution since they determine which mutations are permissible on which genetic background. The major contribution of this manuscript is that it for the first time measures all combinations of all amino acids at multiple (four) sites. Using this data, the authors demonstrate that indirect path often enable ascend to the global fitness maximum, even when direct path a blocked by fitness valleys.\n\nEssential revisions:\n\nAll reviews agreed that the results reported are a significant step forward in understanding the landscapes governing evolution of proteins. Before we can recommend publication, we would like to see the following points addressed.\n\n1) A more thorough discussion of the generality of the results. The sites were chosen to be as epistatic as possible. Hence it is not clear how representative the properties of the 4 site landscape are. Along the same lines, we would like know how the wild type genotype compares to the ensemble of possible genotypes. Where does the wild type fall in the distribution of all fitness measurements? It would be informative to have Figure 1C not only for WT and the average sequence, but also the top and bottom 5% or similar.\n\n2) Quantification of ruggedness and the importance of higher order coefficients. Figure 3A quantifies the accuracy of the approximation of the fitness landscapes (2 allele subspaces) after inclusion of 1st, 2nd, and 3rd order effects. This is important and useful, but can be improved. Instead of plotting the correlation coefficient, plot the fraction of variance explained by each order (that is the power spectrum of the Fourier decomposition, see Neher and Shraiman, RMP, 2011 or Neidhart et al., JTB 2013). Furthermore, a distribution of the 1st, 2nd, and 3rd order variance would be easier to parse than the current overlay of many lines. Along similar lines, can one quantify whether higher-order epistasis makes the landscape more or less rugged on average? If all higher order coefficients are set to 0, does the number of accessible path go up or down?\n\n3) Your simulations allow transitions from every amino acid to any other amino acid and hence ignore the constraints imposed by the encoding as codons. It does not seem to be a big complication to restrict transitions to those that can be achieved by single nucleotide substitutions. Does this reduction in connectivity reduce the effects of indirect path substantially?\n\n4) Missing literature and inaccurate statements. Even if there are only two amino acids (or more generally two alleles) per site, there can still be indirect paths with mutational reversions. The statements in the second paragraph of the Main text are not accurate. The mechanisms of bypass and conversion have been discussed previously (and have not been \"discovered\" by the authors; Main text, fifth paragraph). Gavrilets (1997) discusses extra-dimensional bypass. Several recent papers have theoretically studied the effect of reversions on evolutionary accessibility in diallelic sequence spaces:\n\nJulien Berestycki, Eric Brunet, Zhan Shi. http://arxiv.org/abs/1401.6894\n\nAnders Martinsson. http://arxiv.org/abs/1501.0220\n\nLi Li. http://arxiv.org/abs/1502.07642\n\nThe adaptation schemes referred to by the authors as 'Greedy model', 'Correlated Fixation Model' and 'Equal Fixation Model' should be placed into their proper population-genetic context. Key references are:\n\nH. Allen Orr. Evolution, 56(7), 2002, pp. 1317-1330\n\nH. Allen Orr. J. theor. Biol. (2003) 220, 241-247\n\nwhich discuss the performance of the three types of 'adaptive walks' in the uncorrelated random 'mutational landscape' model and show, in particular, that greedy walks are much shorter than 'correlated fixation' walks which in turn are shorter than 'equal fixation' walks. This is expected to be a fairly general pattern that also appears in the results shown in Figure 4D.\n\n5) One take home message of the manuscript is that even in the most rugged place of a protein fitness landscape, the multitude of possible mutations makes most places accessible (via detours at times). This could be a way to reconcile the seemingly contradictory observations that (i) there is a lot of epistasis/ruggedness and (ii) that amino acid preferences are preserved (work by Bloom et al) and that viruses like HIV extensively revert to a putatively optimal fitness peak after immune evasion. In high dimensions, fitness landscapes seem to be locally rugged and accessible at the same time. A more thorough discussion of the potentially wider implications of indirect path could place these results into a broader context.\n",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0ff763a0-7bf4-4ec5-99db-e8b4eec1ade8",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C1",
+      "claim": "The fitness landscape of four sites in protein GB1 contains 204 = 160,000 variants.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we investigated the fitness landscape of all variants (204 = 160,000) at four amino acid sites (V39, D40, G41 and V54) in an epistatic region of protein G domain B1 (GB1, 56 amino acids in total) (Figure 1\u2014figure supplement 1), an immunoglobulin-binding protein expressed in Streptococcal bacteria (Sj\u00f6bring et al., 1991; Sauer-Eriksson et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of variants and provides the calculation (204 = 160,000).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "21132d8c-318c-44ee-8f8e-3234f8c5fd59",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C2",
+      "claim": "The four chosen sites (V39, D40, G41, V54) contain 12 of the top 20 positively epistatic interactions among all pairwise interactions in protein GB1.",
+      "claim_type": "EXPLICIT",
+      "source": "The four chosen sites contain 12 of the top 20 positively epistatic interactions among all pairwise interactions in protein GB1, as we previously characterized (Olson et al., 2014) (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reference to previous work (Olson et al., 2014) and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "2e184070-70a0-4c92-bbe9-16dd0c1a0d79",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C3",
+      "claim": "2.4% of mutants in the fitness landscape were beneficial (fitness > 1).",
+      "claim_type": "EXPLICIT",
+      "source": "While most mutants had a lower fitness compared to WT (fitness < 1), 2.4% of mutants were beneficial (fitness > 1). (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated in the text and supported by Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "1e71bc90-3ff2-4231-9f53-44b706df0b95",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C4",
+      "claim": "Sign epistasis and reciprocal sign epistasis are prevalent in the fitness landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that these two types of epistasis were prevalent in our fitness landscape (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and supported by Figure 1C showing the fraction of different types of epistasis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "9d5de6b1-931c-4f3d-b45b-cb772dc09f4a",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C5",
+      "claim": "The number of selectively inaccessible direct paths is positively correlated with the ruggedness induced by pairwise epistasis.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the number of selectively inaccessible direct paths, i.e. paths that involve fitness declines, was found to be positively correlated with the ruggedness induced by pairwise epistasis (Figure 1\u2014figure supplement 6, Pearson correlation = 0.66, p=1.0 \u00d7 10\u22124) (Poelwijk et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated with statistical support (Pearson correlation and p-value) and referenced to Figure 1\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "1089d334-c20d-44a6-ab5b-4279ee00a0a8",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C6",
+      "claim": "More than 40% of reciprocal sign epistasis can be circumvented by at least one conversion bypass.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 40% of the time there was at least one successful conversion bypass and in many cases multiple bypasses were available (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated in the text and supported by Figure 2B showing the distribution of conversion bypasses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "33fe9a64-c736-493d-8497-33be73adaff6",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C7",
+      "claim": "Detour bypass has a lower probability of success than conversion bypass.",
+      "claim_type": "EXPLICIT",
+      "source": "Detour bypass was observed in our system (Figure 2D), but was not as prevalent and had a lower probability of success than conversion bypass.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the text and supported by Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "1745507c-f5cc-4e12-add1-122fd24020a7",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C8",
+      "claim": "Out of 38 possible detour bypasses for a chosen reciprocal sign epistasis, there were on average 1.2 conversion bypasses and 0.27 detour bypasses available.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 38 possible detour bypasses for a chosen reciprocal sign epistasis, we found that there were on average 1.2 conversion bypasses and 0.27 detour bypasses available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with specific numerical values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "045e658b-63f5-417c-834d-e3616e845879",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C9",
+      "claim": "Higher-order epistasis is necessary for two of the three possible scenarios where detour bypass can occur.",
+      "claim_type": "EXPLICIT",
+      "source": "We proved that higher-order epistasis is necessary for the scenario that reciprocal sign epistasis is changed to magnitude epistasis, as well as for one of the two scenarios that reciprocal sign epistasis is changed to sign epistasis (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated and proven in the Materials and methods section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "11532431-7ff9-4815-826c-b07f7b152f03",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C10",
+      "claim": "Higher-order interactions are enriched among specific amino acid combinations of sites 39, 41 and 54.",
+      "claim_type": "EXPLICIT",
+      "source": "The skewed composition of amino acids in these subgraphs indicates that higher-order interactions are enriched among specific amino acid combinations of site 39, 41 and 54.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the sequence logo analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "1aa1f32d-f9e8-4001-9cc2-197f94b3babf",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C11",
+      "claim": "The interaction among sites 39, 41, and 54 is consistent with the protein structure, where the side chains of these sites can physically interact with each other at the core.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction among 3 sites is consistent with our knowledge of the protein structure, where the side chains of sites 39, 41, and 54 can physically interact with each other at the core (Figure 1\u2014figure supplement 1A) and destabilize the protein due to steric effects (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated based on structural knowledge and supported by Figure 1\u2014figure supplement 1A and Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "86d29271-70d0-482e-b9b7-a61a389bb52e",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C12",
+      "claim": "G41L and V54H were positively epistatic when site 39 was isoleucine [I], but the interaction changed to negative epistasis when site 39 carried a tyrosine [Y] or a tryptophan [W].",
+      "claim_type": "EXPLICIT",
+      "source": "For example, G41L and V54H were positively epistatic when site 39 was isoleucine [I], but the interaction changed to negative epistasis when site 39 carried a tyrosine [Y] or a tryptophan [W] (Figure 3C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 3C-D showing the epistasis values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "8bb1df89-0192-41bc-8cb9-b767e2b2120c",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C13",
+      "claim": "In the complete sequence space, there are a total of 30 fitness peaks (local maxima).",
+      "claim_type": "EXPLICIT",
+      "source": "In the complete sequence space, we identified a total of 30 fitness peaks (i.e. local maxima); among them 15 peaks had fitness larger than WT and their combined basins of attraction covered 99% of the sequence space (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "dda91f12-2e5f-4969-8f7a-faf0ab593b78",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C14",
+      "claim": "15 fitness peaks had fitness larger than WT and their combined basins of attraction covered 99% of the sequence space.",
+      "claim_type": "EXPLICIT",
+      "source": "In the complete sequence space, we identified a total of 30 fitness peaks (i.e. local maxima); among them 15 peaks had fitness larger than WT and their combined basins of attraction covered 99% of the sequence space (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "2cf8fae0-0319-4db3-9947-95ca1e12df76",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C15",
+      "claim": "Conversion was found to be pervasive during adaptation in the fitness landscape (17% of mutational steps for Greedy Model, 41% for Correlated Fixation Model, 59% for Equal Fixation Model).",
+      "claim_type": "EXPLICIT",
+      "source": "Conversion was found to be pervasive during adaptation in our fitness landscape (17% of mutational steps for Greedy Model, 41% for Correlated Fixation Model, 59% for Equal Fixation Model).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with specific percentages for each model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "52af420b-0b28-402d-add4-f9c39fb4e7e5",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C17",
+      "claim": "Indirect paths increased the number of genotypes with access to each fitness peak.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that indirect paths increased the number of genotypes with access to each fitness peak (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "3244a556-cbdb-4fd1-824a-8c1f8de411e9",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C18",
+      "claim": "The fraction of genotypes with accessible paths to all 15 fitness peaks increased from 34% to 93% when indirect adaptive paths were allowed.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the fraction of genotypes with accessible paths to all 15 fitness peaks increased from from 34% to 93% when indirect adaptive paths were allowed (Figure 4\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated with specific percentages and supported by Figure 4\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "05399e57-cc0b-4f1e-b4c0-105ce578573e",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C19",
+      "claim": "A substantial fraction of beneficial variants (fitness > 1) in the sequence space were accessible from WT only if indirect paths were used.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that a substantial fraction of beneficial variants (fitness > 1) in the sequence space were accessible from WT only if indirect paths were used (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "4aaa4e87-bcd6-4352-84d9-7efe379e392b",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C20",
+      "claim": "The fitness measurements in this study were highly consistent with a previous study on the fitness of single and double mutants in protein GB1 (Pearson correlation = 0.97).",
+      "claim_type": "EXPLICIT",
+      "source": "The fitness measurements in this study were highly consistent with our previous study on the fitness of single and double mutants in protein GB1 (Pearson correlation = 0.97, Figure 1\u2014figure supplement 3B) (Olson et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated with a Pearson correlation value and supported by Figure 1\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "e3aab93c-c226-40e7-9187-4c1cf97f5c23",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C21",
+      "claim": "93.4% of all variants had fitness values computed from the sequencing data.",
+      "claim_type": "EXPLICIT",
+      "source": "We were able to compute the fitness for 93.4% of all variants from the sequencing data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "d0d56662-f74b-4b50-aa9e-a980abd0edbb",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C22",
+      "claim": "The fitness values for 10,639 variants (6.6% of the entire sequence space) were not directly measured or were filtered out because of low read counts.",
+      "claim_type": "EXPLICIT",
+      "source": "The fitness values for 10,639 variants (6.6% of the entire sequence space) were not directly measured (read count in the input pool = 0) or were filtered out because of low read counts in the input pool (see section \"Calculation of fitness\").",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "a0f50bd8-9e8a-460f-84df-22da7660f55d",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C23",
+      "claim": "The model-predicted fitness values were highly correlated with the actual fitness values (Pearson correlation=0.93).",
+      "claim_type": "EXPLICIT",
+      "source": "For measured variants, the model-predicted fitness values were highly correlated with the actual fitness values (Pearson correlation=0.93, Figure 4\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated with a Pearson correlation value and supported by Figure 4\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "3dbf7eaf-af76-49a4-acdd-da67550e52f5",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C24",
+      "claim": "Protein GB1 is an immunoglobulin-binding protein expressed in Streptococcal bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we investigated the fitness landscape of all variants (204 = 160,000) at four amino acid sites (V39, D40, G41 and V54) in an epistatic region of protein G domain B1 (GB1, 56 amino acids in total) (Figure 1\u2014figure supplement 1), an immunoglobulin-binding protein expressed in Streptococcal bacteria (Sj\u00f6bring et al., 1991; Sauer-Eriksson et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated and supported by citations (Sj\u00f6bring et al., 1991; Sauer-Eriksson et al., 1995).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "2a7236d7-35a0-4938-a675-be0de9624278",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C25",
+      "claim": "The fitness of protein GB1 variants is determined by both stability (the fraction of folded proteins) and function (binding affinity to IgG-Fc).",
+      "claim_type": "EXPLICIT",
+      "source": "The \"fitness\" of protein GB1 variants, as determined by both stability (i.e. the fraction of folded proteins) and function (i.e. binding affinity to IgG-Fc), was measured in a high-throughput manner by coupling mRNA display with Illumina sequencing (see Materials and methods, Figure 1\u2014figure supplement 3) (Roberts and Szostak, 1997; Olson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the text and supported by citations (Roberts and Szostak, 1997; Olson et al., 2012).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "dd376c93-5ec7-4c94-9f8e-1600539a1ba1",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C26",
+      "claim": "The number of selectively accessible paths varied from 12 to 1 among the 29 subgraphs analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of 24 possible direct paths, the number of selectively accessible paths (i.e. with monotonically increasing fitness) varied from 12 to 1 among the 29 subgraphs (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "d6477d6a-f97d-4dfd-afdf-e0f00f28f9db",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C27",
+      "claim": "In the most extreme case, only one path was accessible from WT to the quadruple mutant WLFA.",
+      "claim_type": "EXPLICIT",
+      "source": "In the most extreme case, only one path was accessible from WT to the quadruple mutant WLFA (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "d6c42c0e-94d8-41d0-9631-86c12b1c9e01",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C28",
+      "claim": "There was a substantial skew in the computed probability of realization among accessible direct paths.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a substantial skew in the computed probability of realization among accessible direct paths (Figure 1\u2014figure supplement 5), suggesting that most of the realizations in adaptation were captured by a small fraction of possible trajectories (Weinreich et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 1\u2014figure supplement 5 and a citation (Weinreich et al., 2006).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "f349fc54-8569-4a20-98de-78ac284a35ae",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C29",
+      "claim": "Most of the realizations in adaptation were captured by a small fraction of possible trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed a substantial skew in the computed probability of realization among accessible direct paths (Figure 1\u2014figure supplement 5), suggesting that most of the realizations in adaptation were captured by a small fraction of possible trajectories (Weinreich et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a suggestion based on the observed skew in probability of realization and supported by a citation (Weinreich et al., 2006).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "3ee35275-90ae-4f43-9e2e-dffefdd4e91b",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C30",
+      "claim": "The maximum number of possible conversion bypasses is always fixed at 19\u00d72-2=36.",
+      "claim_type": "EXPLICIT",
+      "source": "While the maximum number of possible conversion bypasses is always fixed (19\u00d72-2=36), the maximum number of possible detour bypasses (19 \u00d7 (L \u2212 2)) is proportional to the sequence length L of the entire protein (whereas our study uses a subset L = 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with the calculation provided.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "cb254916-4578-4b56-8b9e-c0f09c33b17b",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C31",
+      "claim": "The maximum number of possible detour bypasses (19 \u00d7 (L \u2212 2)) is proportional to the sequence length L of the entire protein.",
+      "claim_type": "EXPLICIT",
+      "source": "While the maximum number of possible conversion bypasses is always fixed (19\u00d72-2=36), the maximum number of possible detour bypasses (19 \u00d7 (L \u2212 2)) is proportional to the sequence length L of the entire protein (whereas our study uses a subset L = 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with the formula provided.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "2abcb59d-f53f-42fe-b14d-3b379cbae96a",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C32",
+      "claim": "The pervasiveness of extra-dimensional bypasses contrasts with the prevailing view that adaptive evolution is often blocked by reciprocal sign epistasis when only direct paths of adaptation are considered.",
+      "claim_type": "EXPLICIT",
+      "source": "The pervasiveness of extra-dimensional bypasses in our system contrasts with the prevailing view that adaptive evolution is often blocked by reciprocal sign epistasis, when only direct paths of adaptation are considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a contrast to the prevailing view.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "bd149212-1fcc-45a6-bb55-857163f5389b",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C33",
+      "claim": "Higher-order epistasis has been reported in a few biological systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher-order epistasis has been reported in a few biological systems (Wang et al., 2013; Pettersson et al., 2011; Palmer et al., 2015), and is likely to be common in nature (Weinreich et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated and supported by citations (Wang et al., 2013; Pettersson et al., 2011; Palmer et al., 2015; Weinreich et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "098e4cdf-aaaf-42da-9654-4efbdd0db46f",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C34",
+      "claim": "Higher-order epistasis is likely to be common in nature.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher-order epistasis has been reported in a few biological systems (Wang et al., 2013; Pettersson et al., 2011; Palmer et al., 2015), and is likely to be common in nature (Weinreich et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a likelihood and supported by a citation (Weinreich et al., 2013).",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "20fe9cb9-334a-4d15-a295-e6905271463b",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C35",
+      "claim": "Higher-order epistasis can either increase or decrease the ruggedness induced by pairwise epistasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that higher-order epistasis can either increase or decrease the ruggedness induced by pairwise epistasis, which in turn determines the accessibility of direct paths in a rugged fitness landscape (Figure 3\u2014figure supplement 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as a suggestion based on the results and supported by Figure 3\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "dde03298-378b-43c8-9f58-d2177d118a95",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C36",
+      "claim": "Higher-order epistasis plays an important role in mediating detour bypass.",
+      "claim_type": "EXPLICIT",
+      "source": "We also revealed the important role of higher-order epistasis in mediating detour bypass, which could promote evolutionary accessibility via indirect paths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a finding of the work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "b8a5812b-b995-4165-8acb-14316ea7e761",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C37",
+      "claim": "Even in the most rugged regions of a protein fitness landscape, most of the sequence space can remain highly accessible owing to the indirect paths opened up by high dimensionality.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work demonstrates that even in the most rugged regions of a protein fitness landscape, most of the sequence space can remain highly accessible owing to the indirect paths opened up by high dimensionality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a demonstration from the work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "84b898e8-a5f0-4ffc-8192-d81a9d50a5e7",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C38",
+      "claim": "Throughout the course of infection, HIV always seems to find a way to revert to the global consensus sequence after immune invasion.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, throughout the course of infection HIV always seems to find a way to revert to the global consensus sequence, a putatively \"optimal\" HIV-1 sequence after immune invasion (Zanini et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an example and supported by a citation (Zanini et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "b7eb960c-6bab-4052-9050-c8e734c12f1a",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C39",
+      "claim": "The sequence of a large protein may never be trapped in adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it is plausible that the sequence of a large protein may never be trapped in adaptation (Gavrilets, 1997), so that adaptive accessibility becomes a quantitative rather than qualitative problem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a plausible scenario and supported by a citation (Gavrilets, 1997).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "9fcc5ead-aaf6-4459-824f-38e4cd702fa5",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C40",
+      "claim": "The detection limit of fitness (w) in this system is ~0.01.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously determined that the detection limit of fitness (w) in this system is ~0.01 (Olson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated and supported by a citation (Olson et al., 2014).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "10e593f0-3026-4b37-8122-bde6e496335e",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C41",
+      "claim": "The fitness landscape was completed by imputing fitness values of the 10,639 missing variants using a model that incorporated main effects of single mutations, pairwise interactions, and three-way interactions among sites 39, 41 and 54.",
+      "claim_type": "EXPLICIT",
+      "source": "The fitness landscape was completed by imputing fitness values of the 10,639 missing variants (i.e. 6.6% of the sequence space) that had fewer than 10 sequencing read counts in the input library. Our model of protein fitness incorporated main effects of single mutations, pairwise interactions, and three-way interactions among site 39, 41 and 54 (see Materials and methods, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated in the text and supported by Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "a60043b1-a457-4173-89a6-d2201c691347",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C42",
+      "claim": "Regularized regression with predictor selection based on biological knowledge was used to ameliorate possible bias in the inferred fitness landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "We used predictor selection based on biological knowledge, followed by regularized regression, which has been demonstrated to ameliorate possible bias in the inferred fitness landscape (Otwinowski and Plotkin, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated and supported by a citation (Otwinowski and Plotkin, 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "ca4da241-81e0-4c22-a4b4-a3b7232563f3",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C43",
+      "claim": "When mutations conferring larger fitness gains were more likely to fix, adaptation favored direct moves toward the destination, leading to shorter adaptive paths.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies (Orr, 2002, 2003), when mutations conferring larger fitness gains were more likely to fix (e.g. Greedy Model and Correlated Fixation Model), adaptation favored direct moves toward the destination, thus leading to a shorter adaptive paths (Figure 4C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by citations (Orr, 2002, 2003) and Figure 4C-D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "d611c989-c07a-4494-9d5f-ad1855fe81f4",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C44",
+      "claim": "The strength of selection interacts with the topological structure of fitness landscapes to determine the length and directness of evolutionary trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the strength of selection interacts with the topological structure of fitness landscapes to determine the length and directness of evolutionary trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a suggestion based on the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "dbf8ed50-ec3e-4e9c-b0df-f8b7b1f7a06d",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C45",
+      "claim": "Many mutational trajectories involving extra-dimensional bypass did not fully commit to a fitness peak until the last two steps.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this expectation, our simulations showed that many mutational trajectories involving extra-dimensional bypass did not fully commit to a fitness peak until the last two steps (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 4\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "3bf10077-05d3-48b8-aee8-49a440b5bc80",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C46",
+      "claim": "The constraints from the genetic code decreased the number of accessible variants due to the reduction in connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The constraints from the genetic code decreased the number of accessible variants due to the reduction in connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the text.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "83059ce6-6bc9-47cf-bcc0-b23043328a09",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C47",
+      "claim": "The reduction in connectivity from genetic code constraints did not alter the core finding that indirect paths substantially increase evolutionary accessibility.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this reduction in connectivity did not alter our core finding that indirect paths substantially increase evolutionary accessibility (Figure 4\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 4\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "1af9508a-d85b-4f9a-b66f-6c0043b02d75",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C48",
+      "claim": "The observed higher-order epistasis was, at least partially, due to the steric effect among sites 39, 41, and 54.",
+      "claim_type": "EXPLICIT",
+      "source": "We postulated that the observed higher-order epistasis was, at least partially, due to the steric effect among site 39, 41, and 54. This was evidenced by the enrichment of beneficial variants when the total volume of these three interacting residues was between ~200 \u00c53 and ~300 \u00c53.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a postulation and supported by evidence from Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "3c95af0f-012f-47f1-a909-b9e2d1129ba7",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C50",
+      "claim": "Entropic effect and conformational effect in IgG-FC binding may also contribute to higher-order epistasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, we acknowledged that entropic effect and conformational effect in IgG-FC binding may also contribute to higher-order epistasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly acknowledged as a possibility.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "7c998642-c715-4004-8aad-818b1d7c7e0c",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C51",
+      "claim": "The global structure of the fitness landscape is influenced by the imputed fitness values of missing variants, which can vary when different fitness models or fitting methods are used.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in our system (with >93% coverage of the genotype space), the global structure of the fitness landscape is influenced by the imputed fitness values of missing variants, which can vary when different fitness models or fitting methods are used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "ea29de5a-19dc-4a6a-8245-68fd53a02db7",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C52",
+      "claim": "Measurement errors are expected to be very small due to the high reproducibility in the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis also ignored measurement errors, but the measurement errors are expected to be very small due to the high reproducibility in the data (Figure 1\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 1\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "c81cd050-6493-48b7-8912-44c77a27a291",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C53",
+      "claim": "The four amino acids chosen in the study are in physical proximity and have strong epistatic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we note that the four amino acids chosen in our study are in physical proximity and have strong epistatic interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a note about the study design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "44e9998d-e50a-4419-a573-86cbf7b1a718",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C54",
+      "claim": "The availability of conversion bypass only depends on the dimensionality at each site.",
+      "claim_type": "EXPLICIT",
+      "source": "While the availability of conversion bypass only depends on the dimensionality at each site, the degree of higher-order epistasis and the availability of detour bypasses can be quite different in other fitness landscapes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a general principle.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "b27c4552-64b0-48ba-bdbc-913b4e468f6b",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C55",
+      "claim": "The degree of higher-order epistasis and the availability of detour bypasses can be quite different in other fitness landscapes.",
+      "claim_type": "EXPLICIT",
+      "source": "While the availability of conversion bypass only depends on the dimensionality at each site, the degree of higher-order epistasis and the availability of detour bypasses can be quite different in other fitness landscapes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a caveat about generalizability.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "71fd8348-62b3-4c5f-b331-3b8987445bbe",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C56",
+      "claim": "The details of a particular fitness landscape can influence the quantitative role of different bypass mechanisms, but this does not undermine the generality of the conceptual findings on extra-dimensional bypass, higher-order epistasis, and their roles in protein evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the details of a particular fitness landscape can influence the quantitative role of different bypass mechanisms, this does not undermine the generality of our conceptual findings on extra-dimensional bypass, higher-order epistasis, and their roles in protein evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a conclusion about the generalizability of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "21205301-a920-450f-8cf4-890c5b38a982",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C57",
+      "claim": "Pairwise epistasis is prevalent in fitness landscapes.",
+      "claim_type": "EXPLICIT",
+      "source": "Empirical evidence suggests that pairwise epistasis is prevalent in fitness landscapes (Kvitek and Sherlock, 2011; Kouyos et al., 2012; O'Maille et al., 2008; Lozovsky et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated and supported by multiple citations (Kvitek and Sherlock, 2011; Kouyos et al., 2012; O'Maille et al., 2008; Lozovsky et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "4b60a67a-bdad-45af-8bca-54e56cc2761a",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C58",
+      "claim": "Sign epistasis between two loci is known to constrain adaptation by limiting the number of selectively accessible paths.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, sign epistasis between two loci is known to constrain adaptation by limiting the number of selectively accessible paths (Weinreich et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated and supported by a citation (Weinreich et al., 2006).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "52b4e5fa-f42e-4aab-8d49-63153d89ed88",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C59",
+      "claim": "Previous empirical studies on combinatorially complete fitness landscapes have been limited to subgraphs of the sequence space consisting of only two amino acids at each site (2L genotypes).",
+      "claim_type": "EXPLICIT",
+      "source": "Previous empirical studies on combinatorially complete fitness landscapes have been limited to subgraphs of the sequence space consisting of only two amino acids at each site (2L genotypes) (Weinreich et al., 2006; Lunzer et al., 2005; O'Maille et al., 2008; Lozovsky et al., 2009; Franke et al., 2011; Tan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated and supported by multiple citations (Weinreich et al., 2006; Lunzer et al., 2005; O'Maille et al., 2008; Lozovsky et al., 2009; Franke et al., 2011; Tan et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "a933c1c3-f351-4ee4-83d0-b9efd03ae6ab",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C60",
+      "claim": "Mutational reversions can occur during adaptive walks in diallelic sequence spaces such that adaptation proceeds via indirect paths.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it has also been shown that mutational reversions can occur during adaptive walks in diallelic sequence spaces such that adaptation proceeds via \"indirect paths\" (DePristo et al., 2007; Berestycki et al., 2014; Martinsson, 2015; Li, 2015; Palmer et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated and supported by multiple citations (DePristo et al., 2007; Berestycki et al., 2014; Martinsson, 2015; Li, 2015; Palmer et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "53bbb99f-21a4-4b19-b7be-0c9d82209ce4",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C61",
+      "claim": "In sequence space with higher dimensionality (20L), the extra dimensions may further provide additional routes for adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "In sequence space with higher dimensionality (20L, for a protein sequence with L amino acid residues), the extra dimensions may further provide additional routes for adaptation (Gavrilets, 1997; Cariani, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated and supported by citations (Gavrilets, 1997; Cariani, 2002).",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "2296562d-2a92-4a46-9a96-537e0b5967ae",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C62",
+      "claim": "The existence of indirect paths has been implied in different contexts, but it has not been studied systematically and its influence on protein adaptation remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the existence of indirect paths has been implied in different contexts, it has not been studied systematically and its influence on protein adaptation remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a gap in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "5f6ac16d-1289-45fd-a588-1586ebd96273",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C63",
+      "claim": "Higher-order epistasis (interactions among more than two loci) has received much less attention and its role in adaptation is yet to be elucidated.",
+      "claim_type": "EXPLICIT",
+      "source": "Higher-order epistasis (i.e. interactions among more than two loci) has received much less attention and its role in adaptation is yet to be elucidated (Weinreich et al., 2013; Palmer et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated and supported by citations (Weinreich et al., 2013; Palmer et al., 2015).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "e294a57e-e729-494b-b274-47d55cf8a7e1",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C64",
+      "claim": "When an extra dimension is introduced, a local maximum may become a saddle point and allow for further adaptation \u2013 a phenomenon known as extra-dimensional bypass.",
+      "claim_type": "EXPLICIT",
+      "source": "Intuitively, when an extra dimension is introduced, a local maximum may become a saddle point and allow for further adaptation \u2013 a phenomenon that is also known as \"extra-dimensional bypass\" (Gavrilets, 1997; Cariani, 2002; Guti\u00e9rrez and Maere, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated and supported by citations (Gavrilets, 1997; Cariani, 2002; Guti\u00e9rrez and Maere, 2014).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "3af8929d-e6cf-4122-9a63-ec12dc446028",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C65",
+      "claim": "Two distinct mechanisms of bypass were observed: conversion bypass (using an extra amino acid at the same site) and detour bypass (using an additional site).",
+      "claim_type": "EXPLICIT",
+      "source": "With our experimental data, we observed two distinct mechanisms of bypass, either using an extra amino acid at the same site or using an additional site, that allow proteins to continue adaptation when no direct paths were accessible due to reciprocal sign epistasis (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is explicitly stated and supported by Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "c03af768-66e8-4238-9a75-afb739a284f8",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C66",
+      "claim": "If the sequence space is limited to 2 amino acids at each site, the number of neighbors is 2; however, if all 20 possible amino acids were considered, the total number of neighbors would be 38.",
+      "claim_type": "EXPLICIT",
+      "source": "If the sequence space is limited to 2 amino acids at each site, as in past analyses of adaptive trajectories, the number of neighbors is 2; however, if all 20 possible amino acids were considered, the total number of neighbors would be 38.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated with the calculation provided.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "ccd4d62d-8569-4518-a32d-46344afb4fab",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C67",
+      "claim": "A successful conversion bypass requires that the original reciprocal sign epistasis is changed to sign epistasis after the conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "This bypass is feasible only if the original reciprocal sign epistasis is changed to sign epistasis after the conversion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a requirement for conversion bypass.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "ecc09f58-2c83-4e8d-b436-dcb6e29fbe38",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C69",
+      "claim": "The enhanced accessibility mediated by indirect paths may provide a partial explanation for some observations in viral evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The enhanced accessibility mediated by indirect paths may provide a partial explanation for some observations in viral evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a potential implication of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "64f5db56-93c0-4549-ba92-81bd319d9615",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C70",
+      "claim": "Adaptive accessibility becomes a quantitative rather than qualitative problem when the sequence of a large protein may never be trapped in adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, it is plausible that the sequence of a large protein may never be trapped in adaptation (Gavrilets, 1997), so that adaptive accessibility becomes a quantitative rather than qualitative problem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a plausible scenario and supported by a citation (Gavrilets, 1997).",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "c4510590-515b-4910-bbc7-4c809b3712bd",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C71",
+      "claim": "The bottleneck in experimental throughput has been improved substantially by coupling saturation mutagenesis with deep sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the bottleneck in experimental throughput has been improved substantially by coupling saturation mutagenesis with deep sequencing (Fowler et al., 2010; Hietpas et al., 2011; Jacquier et al., 2013; Wu et al., 2014; Thyagarajan and Bloom, 2014; Qi et al., 2014; Stiffler et al., 2015), which opens up unprecedented opportunities to understand the structure of high-dimensional fitness landscapes (Jim\u00e9nez et al., 2013; Pitt and Ferr\u00e9-D'Amar\u00e9, 2010; Payne and Wagner, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated and supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "dbbd7929-fe01-4e83-b1cb-620b971e4d43",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C72",
+      "claim": "There is a huge gap between the limited throughput of fitness measurements (usually on the order of 102 variants) and the vast size of sequence space.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, there is a huge gap between the limited throughput of fitness measurements (usually on the order of 102 variants) and the vast size of sequence space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a challenge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "5588a85a-b325-491b-a5a0-c75f2ff727a9",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C73",
+      "claim": "The study does not aim to extrapolate protein fitness to organismal fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that this study does not aim to extrapolate protein fitness to organismal fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a limitation of the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "4086f9d3-578c-428f-9b33-31b42a8f0c5e",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C74",
+      "claim": "There are examples showing that protein fitness in vitro correlates with organismal fitness in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there are examples showing that protein fitness in vitro correlates with organismal fitness in vivo (Natarajan et al., 2013; Wu et al., 2012), this relation may not be linear and is likely to be system-specific due to the difference in selection pressures in vitro and in vivo (P\u00e1l et al., 2006; Hingorani and Gierasch, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated and supported by citations (Natarajan et al., 2013; Wu et al., 2012; P\u00e1l et al., 2006; Hingorani and Gierasch, 2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "bfb76b0d-9b7f-49bc-a043-553cabdd5934",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C75",
+      "claim": "The relation between protein fitness in vitro and organismal fitness in vivo may not be linear and is likely to be system-specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there are examples showing that protein fitness in vitro correlates with organismal fitness in vivo (Natarajan et al., 2013; Wu et al., 2012), this relation may not be linear and is likely to be system-specific due to the difference in selection pressures in vitro and in vivo (P\u00e1l et al., 2006; Hingorani and Gierasch, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated and supported by citations (P\u00e1l et al., 2006; Hingorani and Gierasch, 2014).",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "586767ca-96e3-4c97-bdb3-90b60b475050",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C76",
+      "claim": "A total of 29 subgraphs were identified in which the quadruple mutant was the only fitness peak.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a total of 29 subgraphs in which the quadruple mutant was the only fitness peak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "f434b33a-2e56-4508-ae91-1bd6dfda04a1",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C77",
+      "claim": "Each subgraph is combinatorially complete with 24 = 16 variants, including WT, the quadruple mutant, and all intermediate variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Each subgraph is combinatorially complete with 24 = 16 variants, including WT, the quadruple mutant, and all intermediate variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "3e555262-813f-46a7-821d-42e2c98a12a0",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C78",
+      "claim": "The analysis was limited to direct paths of adaptation, where each step would reduce the Hamming distance from the starting point (WT) to the destination (quadruple mutant).",
+      "claim_type": "EXPLICIT",
+      "source": "By focusing on these subgraphs, we essentially limited the analysis to direct paths of adaptation, where each step would reduce the Hamming distance from the starting point (WT) to the destination (quadruple mutant).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated as a methodological choice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "8632e4f6-a6a0-4d8f-ac2a-26afe931177a",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C79",
+      "claim": "19.7% of the measured genotypes are lethal (fitness=0).",
+      "claim_type": "EXPLICIT",
+      "source": "19.7% of the measured genotypes are lethal (fitness=0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "63d750c6-0d91-4766-8f91-69a271cd8397",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C80",
+      "claim": "The fitness rank of the wild type genotype is 2.4% in the distribution of all fitness measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "The fitness rank of the wild type genotype is 2.4% in the distribution of all fitness measurements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "be209381-850b-4c19-9095-0c7211753043",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C81",
+      "claim": "There were 89,075,246 paired-end reads obtained for the input library and 45,587,128 paired-end reads obtained for the post-selection library.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 89,075,246 paired-end reads obtained for the input library and 45,587,128 paired-end reads obtained for the post-selection library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "a1b1d520-a961-4419-a0b7-e89ff3dbae24",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C82",
+      "claim": "Raw sequencing data have been submitted to the NIH Short Read Archive under accession number: BioProject PRJNA278685.",
+      "claim_type": "EXPLICIT",
+      "source": "Raw sequencing data have been submitted to the NIH Short Read Archive under accession number: BioProject PRJNA278685.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "d4dba93e-b4e4-4a99-a44e-8d29eea6241b",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C83",
+      "claim": "The fitness of each variant is computed relative to WT (VDGV), such that the fitness of WT equals 1.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the fitness of each variant, wi, could be viewed as the fitness relative to WT (VDGV), such that = 1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "88690b43-4230-4e4c-8542-93208ec73c17",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C85",
+      "claim": "The fraction of all possible variants that passed the filter was 93.4% (149,361 out of 160,000 all possible variants).",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of all possible variants that passed this filter was 93.4% (149,361 out of 160,000 all possible variants).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "9c4f9c80-e685-4356-bf09-0a38722928aa",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C86",
+      "claim": "The fitness of each single substitution variant was referenced to a previous study because the sequencing coverage was much higher in that study.",
+      "claim_type": "EXPLICIT",
+      "source": "The fitness of each single substitution variant was referenced to our previous study (Olson et al., 2014), because the sequencing coverage of single substitution variants in our previous study was much higher than in this study (~100 fold higher).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the Materials and methods section and supported by a citation (Olson et al., 2014).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "924f1525-10b0-4375-be93-4df4c3eab4e3",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C87",
+      "claim": "The fitness of each single substitution in this study was calculated by multiplying a factor of 1.159 by the fitness of that single substitution computed from the previous study.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequently, the fitness of each single substitution in this study was calculated by multiplying a factor of 1.159 by the fitness of that single substitution computed from our previous study (Olson et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the Materials and methods section and supported by a citation (Olson et al., 2014).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "e75a2271-23f7-47e9-b1cd-11f51001067e",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "claim_id": "C88",
+      "claim": "The linear regression analysis between the single substitution fitness as measured in the previous study and in this study had a slope of 1.159 and a y-intercept of ~0.",
+      "claim_type": "EXPLICIT",
+      "source": "This is based on the linear regression analysis between the single substitution fitness as measured in our previous study and in this study, which had a slope of 1.159 and a y-intercept of ~0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explicitly stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "858b4fb4-c4d9-4dc6-8032-dbe4e795039f",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors experimentally characterized a fitness landscape of 160,000 variants (20^4) at four amino acid sites (V39, D40, G41, V54) in protein GB1, achieving 93.4% coverage with high-throughput sequencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C21, C22, C81, C82, and C85 collectively establish the experimental scope and data quality. The high coverage (93.4%), substantial sequencing depth (>89M reads for input), and consistency with prior work (C20, Pearson r=0.97) provide strong validation. The four sites were rationally chosen based on known epistatic interactions (C2).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "5f7f5730-ccaf-4466-9905-75569e46a81b",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The fitness landscape shows that 2.4% of mutants were beneficial (fitness > 1), 19.7% were lethal (fitness = 0), and wild-type fitness ranked at the 97.6th percentile.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C79, and C80 provide consistent quantitative characterization of the fitness distribution. These measurements are directly stated and supported by Figure 1\u2014figure supplement 4, establishing the baseline fitness landscape properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "85c1b10c-4d22-41df-aa8a-e5ef9dd842bb",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Sign epistasis and reciprocal sign epistasis are prevalent in the fitness landscape, constraining direct adaptive paths. The number of accessible direct paths varied from 12 to 1 among 29 subgraphs, with strong positive correlation (r=0.66, p=1.0\u00d710^-4) between inaccessible paths and landscape ruggedness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5 and C26-C29 demonstrate epistatic constraints on adaptation through multiple lines of evidence: prevalence data (C4, Figure 1C), correlation analysis with statistical significance (C5), and extreme cases like WLFA with only one accessible path (C27). The skewed probability distribution (C28) further supports constrained accessibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "b1e25dfa-6e92-409d-b5a5-56ff20a1e04e",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Two distinct mechanisms of extra-dimensional bypass were identified: conversion bypass (using extra amino acids at the same site) and detour bypass (using additional sites). Conversion bypass was more prevalent (>40% success rate) than detour bypass, with an average of 1.2 conversion vs 0.27 detour bypasses available per reciprocal sign epistasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 and C65-C67 establish both mechanisms with quantitative support. The higher prevalence of conversion bypass (C6-C7) is explained by fixed availability (36 possible, C30) versus length-dependent detour options (C31). The mechanistic requirement that conversion changes reciprocal sign to sign epistasis (C67) provides theoretical grounding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "24f8b012-4df7-4bbc-8122-9610af20e24f",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Higher-order epistasis is necessary for two of three detour bypass scenarios and plays an important role in mediating evolutionary accessibility via indirect paths.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C9 provides mathematical proof that higher-order epistasis is required for specific bypass scenarios. Claims C33-C34 and C63 establish the broader context that higher-order epistasis, while reported in other systems, has been understudied. Claim C36 synthesizes the mechanistic role in promoting accessibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "cc4415ff-2bd9-4409-bcfb-41f50fa4148c",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Higher-order interactions are enriched among specific amino acid combinations at sites 39, 41, and 54, consistent with protein structure where these residues physically interact at the core. The epistasis between G41L and V54H switched from positive to negative depending on the amino acid at site 39.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 demonstrate higher-order epistasis through sequence logo analysis (C10, Figure 3B) and specific examples of sign-switching epistasis (C12, Figure 3C-D). Structural rationalization (C11) and steric effect hypothesis (C48) provide mechanistic context, though C50 appropriately acknowledges alternative explanations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "195ebf04-621f-4458-b439-9cf1534e23bc",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The complete fitness landscape contains 30 fitness peaks, with 15 peaks having fitness greater than wild-type and covering 99% of sequence space. Missing variants (6.6%) were imputed using regularized regression incorporating main effects, pairwise interactions, and three-way interactions, achieving high correlation (r=0.93) with measured values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14 characterize the global landscape structure. Claims C41-C42 describe the imputation methodology with appropriate statistical rigor (regularized regression, predictor selection). Claim C23 validates the approach with high correlation. However, C51 acknowledges that imputation can influence landscape structure, introducing some uncertainty.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "18d172da-964d-4856-bf38-cb2777af5e4b",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Indirect paths involving conversion and detour steps are pervasive during adaptation (17-59% of steps depending on model) and substantially increase evolutionary accessibility. The fraction of genotypes with access to all 15 fitness peaks increased from 34% to 93% when indirect paths were allowed. The strength of selection interacts with landscape topology to determine trajectory length and directness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C17-C19 quantify the impact of indirect paths across three evolutionary models with consistent findings. Claims C43-C44 explain model-dependent variation in path usage. Claim C45 shows delayed commitment to fitness peaks with indirect paths. The convergent evidence from multiple models and metrics strongly supports enhanced accessibility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "0efbb1a3-cf00-45aa-897f-6e5d21ae3320",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Genetic code constraints reduce connectivity and accessible variants, but do not alter the core finding that indirect paths substantially increase evolutionary accessibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 address an important biological constraint. The analysis shows robustness of the main conclusion despite reduced connectivity from genetic code restrictions (Figure 4\u2014figure supplement 3B), strengthening the generalizability of findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "a9378f12-a866-4328-93fc-54a581606700",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Fitness measurements were validated against a previous independent study (Pearson r=0.97). Single substitution fitness values were calibrated using a scaling factor (1.159) derived from linear regression between studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20 and C86-C88 establish measurement reproducibility and appropriate data integration. The high correlation (r=0.97) and transparent calibration procedure (slope=1.159, y-intercept\u22480) support data quality. This validation is critical for trusting the fitness landscape characterization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "b8eacdac-8b25-402f-9f5a-a5ba71320a4b",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Protein GB1 is an immunoglobulin-binding protein from Streptococcal bacteria. Fitness was measured by both stability and IgG-Fc binding affinity using mRNA display. The study does not extrapolate protein fitness to organismal fitness, acknowledging that this relationship may be nonlinear and system-specific.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 establish the biological system and fitness definition. Claims C73-C75 appropriately scope the study and acknowledge limitations in extrapolating to organismal fitness. This transparent discussion of scope strengthens rather than weakens the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "c01d32fe-4b08-4cdb-8859-4fbea70d8475",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The pervasiveness of extra-dimensional bypasses contrasts with the prevailing view that reciprocal sign epistasis blocks adaptation. Even in highly rugged fitness landscapes, most sequence space remains accessible via indirect paths opened by high dimensionality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32 and C37 synthesize the main conceptual advance. Claim C56 appropriately qualifies that quantitative details may vary across landscapes while maintaining generality of conceptual findings. Claim C69 suggests potential applications to viral evolution. The claims are well-supported by the extensive empirical data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "f2571804-58d2-4688-b521-2233cda5a470",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Higher-order epistasis can either increase or decrease ruggedness induced by pairwise epistasis. While conversion bypass availability depends only on dimensionality, the degree of higher-order epistasis and detour bypass availability can vary across fitness landscapes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C35 is supported by Figure 3\u2014figure supplement 6 but shows no systematic trend in the analyzed subgraphs. Claims C54-C55 appropriately acknowledge system-specific variation. The evidence for C35 is suggestive but not conclusive, as the relationship between higher-order epistasis and ruggedness appears complex and context-dependent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "36d2774c-cc8e-49e5-95ca-58e898c35520",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study acknowledges several limitations: imputed fitness values can influence landscape structure, measurement errors were ignored (though expected to be small), and the four chosen sites have strong epistatic interactions and physical proximity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 transparently discuss limitations. C52 is supported by high reproducibility (Figure 1\u2014figure supplement 3B). C53 acknowledges that site selection may affect generalizability. This honest assessment of limitations is appropriate and does not undermine the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "0c137dc8-e567-42a1-9860-06b9156f6a0f",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Enhanced accessibility via indirect paths may explain observations in viral evolution, such as HIV's ability to revert to consensus sequences. For large proteins, adaptive accessibility may become a quantitative rather than qualitative problem.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C38-C39 and C70 are speculative extensions supported by citations but not directly tested. C38 cites HIV reversion data (Zanini et al., 2015) and C39/C70 cite theoretical work (Gavrilets, 1997). These are plausible implications but remain hypotheses requiring future validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "3683f5ca-9067-4265-b77e-3a364e328073",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior work established that pairwise epistasis is prevalent and constrains adaptation, but previous empirical studies were limited to 2^L genotypes. Indirect paths and higher-order epistasis have been implied but not systematically studied. Extra-dimensional bypass occurs when additional dimensions convert local maxima to saddle points.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C64 accurately summarize prior literature with appropriate citations. These claims establish the knowledge gap and conceptual framework motivating the study. The characterization of prior work appears accurate and well-supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "465fcd49-8840-4355-95e6-aa27ba10c3ff",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Fitness detection limit is ~0.01, and fitness is computed relative to wild-type (set to 1.0).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40 and C83 establish methodological details for fitness calculation. C40 is supported by prior work (Olson et al., 2014). These are straightforward methodological claims that are well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    },
+    {
+      "id": "82855999-d14e-4da2-a7a2-9a8156dcc30b",
+      "content_id": "c661a676-c7cb-4704-9aab-e1b0ee053bb9",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Recent advances coupling saturation mutagenesis with deep sequencing have substantially improved experimental throughput, though a gap remains between measurement capacity (~10^2 variants) and sequence space size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 accurately characterize the state of the field with appropriate citations. These claims contextualize the technical advance represented by this study (160,000 variants measured).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:29.490015Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0ff763a0-7bf4-4ec5-99db-e8b4eec1ade8",
+      "result_id": "858b4fb4-c4d9-4dc6-8032-dbe4e795039f"
+    },
+    {
+      "claim_id": "21132d8c-318c-44ee-8f8e-3234f8c5fd59",
+      "result_id": "858b4fb4-c4d9-4dc6-8032-dbe4e795039f"
+    },
+    {
+      "claim_id": "e3aab93c-c226-40e7-9187-4c1cf97f5c23",
+      "result_id": "858b4fb4-c4d9-4dc6-8032-dbe4e795039f"
+    },
+    {
+      "claim_id": "d0d56662-f74b-4b50-aa9e-a980abd0edbb",
+      "result_id": "858b4fb4-c4d9-4dc6-8032-dbe4e795039f"
+    },
+    {
+      "claim_id": "be209381-850b-4c19-9095-0c7211753043",
+      "result_id": "858b4fb4-c4d9-4dc6-8032-dbe4e795039f"
+    },
+    {
+      "claim_id": "a1b1d520-a961-4419-a0b7-e89ff3dbae24",
+      "result_id": "858b4fb4-c4d9-4dc6-8032-dbe4e795039f"
+    },
+    {
+      "claim_id": "88690b43-4230-4e4c-8542-93208ec73c17",
+      "result_id": "858b4fb4-c4d9-4dc6-8032-dbe4e795039f"
+    },
+    {
+      "claim_id": "2e184070-70a0-4c92-bbe9-16dd0c1a0d79",
+      "result_id": "5f7f5730-ccaf-4466-9905-75569e46a81b"
+    },
+    {
+      "claim_id": "8632e4f6-a6a0-4d8f-ac2a-26afe931177a",
+      "result_id": "5f7f5730-ccaf-4466-9905-75569e46a81b"
+    },
+    {
+      "claim_id": "63d750c6-0d91-4766-8f91-69a271cd8397",
+      "result_id": "5f7f5730-ccaf-4466-9905-75569e46a81b"
+    },
+    {
+      "claim_id": "1e71bc90-3ff2-4231-9f53-44b706df0b95",
+      "result_id": "85c1b10c-4d22-41df-aa8a-e5ef9dd842bb"
+    },
+    {
+      "claim_id": "9d5de6b1-931c-4f3d-b45b-cb772dc09f4a",
+      "result_id": "85c1b10c-4d22-41df-aa8a-e5ef9dd842bb"
+    },
+    {
+      "claim_id": "dd376c93-5ec7-4c94-9f8e-1600539a1ba1",
+      "result_id": "85c1b10c-4d22-41df-aa8a-e5ef9dd842bb"
+    },
+    {
+      "claim_id": "d6477d6a-f97d-4dfd-afdf-e0f00f28f9db",
+      "result_id": "85c1b10c-4d22-41df-aa8a-e5ef9dd842bb"
+    },
+    {
+      "claim_id": "d6c42c0e-94d8-41d0-9631-86c12b1c9e01",
+      "result_id": "85c1b10c-4d22-41df-aa8a-e5ef9dd842bb"
+    },
+    {
+      "claim_id": "f349fc54-8569-4a20-98de-78ac284a35ae",
+      "result_id": "85c1b10c-4d22-41df-aa8a-e5ef9dd842bb"
+    },
+    {
+      "claim_id": "1089d334-c20d-44a6-ab5b-4279ee00a0a8",
+      "result_id": "b1e25dfa-6e92-409d-b5a5-56ff20a1e04e"
+    },
+    {
+      "claim_id": "33fe9a64-c736-493d-8497-33be73adaff6",
+      "result_id": "b1e25dfa-6e92-409d-b5a5-56ff20a1e04e"
+    },
+    {
+      "claim_id": "1745507c-f5cc-4e12-add1-122fd24020a7",
+      "result_id": "b1e25dfa-6e92-409d-b5a5-56ff20a1e04e"
+    },
+    {
+      "claim_id": "3ee35275-90ae-4f43-9e2e-dffefdd4e91b",
+      "result_id": "b1e25dfa-6e92-409d-b5a5-56ff20a1e04e"
+    },
+    {
+      "claim_id": "cb254916-4578-4b56-8b9e-c0f09c33b17b",
+      "result_id": "b1e25dfa-6e92-409d-b5a5-56ff20a1e04e"
+    },
+    {
+      "claim_id": "3af8929d-e6cf-4122-9a63-ec12dc446028",
+      "result_id": "b1e25dfa-6e92-409d-b5a5-56ff20a1e04e"
+    },
+    {
+      "claim_id": "c03af768-66e8-4238-9a75-afb739a284f8",
+      "result_id": "b1e25dfa-6e92-409d-b5a5-56ff20a1e04e"
+    },
+    {
+      "claim_id": "ccd4d62d-8569-4518-a32d-46344afb4fab",
+      "result_id": "b1e25dfa-6e92-409d-b5a5-56ff20a1e04e"
+    },
+    {
+      "claim_id": "045e658b-63f5-417c-834d-e3616e845879",
+      "result_id": "24f8b012-4df7-4bbc-8122-9610af20e24f"
+    },
+    {
+      "claim_id": "bd149212-1fcc-45a6-bb55-857163f5389b",
+      "result_id": "24f8b012-4df7-4bbc-8122-9610af20e24f"
+    },
+    {
+      "claim_id": "098e4cdf-aaaf-42da-9654-4efbdd0db46f",
+      "result_id": "24f8b012-4df7-4bbc-8122-9610af20e24f"
+    },
+    {
+      "claim_id": "dde03298-378b-43c8-9f58-d2177d118a95",
+      "result_id": "24f8b012-4df7-4bbc-8122-9610af20e24f"
+    },
+    {
+      "claim_id": "5f6ac16d-1289-45fd-a588-1586ebd96273",
+      "result_id": "24f8b012-4df7-4bbc-8122-9610af20e24f"
+    },
+    {
+      "claim_id": "11532431-7ff9-4815-826c-b07f7b152f03",
+      "result_id": "cc4415ff-2bd9-4409-bcfb-41f50fa4148c"
+    },
+    {
+      "claim_id": "1aa1f32d-f9e8-4001-9cc2-197f94b3babf",
+      "result_id": "cc4415ff-2bd9-4409-bcfb-41f50fa4148c"
+    },
+    {
+      "claim_id": "86d29271-70d0-482e-b9b7-a61a389bb52e",
+      "result_id": "cc4415ff-2bd9-4409-bcfb-41f50fa4148c"
+    },
+    {
+      "claim_id": "1af9508a-d85b-4f9a-b66f-6c0043b02d75",
+      "result_id": "cc4415ff-2bd9-4409-bcfb-41f50fa4148c"
+    },
+    {
+      "claim_id": "3c95af0f-012f-47f1-a909-b9e2d1129ba7",
+      "result_id": "cc4415ff-2bd9-4409-bcfb-41f50fa4148c"
+    },
+    {
+      "claim_id": "8bb1df89-0192-41bc-8cb9-b767e2b2120c",
+      "result_id": "195ebf04-621f-4458-b439-9cf1534e23bc"
+    },
+    {
+      "claim_id": "dda91f12-2e5f-4969-8f7a-faf0ab593b78",
+      "result_id": "195ebf04-621f-4458-b439-9cf1534e23bc"
+    },
+    {
+      "claim_id": "10e593f0-3026-4b37-8122-bde6e496335e",
+      "result_id": "195ebf04-621f-4458-b439-9cf1534e23bc"
+    },
+    {
+      "claim_id": "a60043b1-a457-4173-89a6-d2201c691347",
+      "result_id": "195ebf04-621f-4458-b439-9cf1534e23bc"
+    },
+    {
+      "claim_id": "a0f50bd8-9e8a-460f-84df-22da7660f55d",
+      "result_id": "195ebf04-621f-4458-b439-9cf1534e23bc"
+    },
+    {
+      "claim_id": "2cf8fae0-0319-4db3-9947-95ca1e12df76",
+      "result_id": "18d172da-964d-4856-bf38-cb2777af5e4b"
+    },
+    {
+      "claim_id": "52af420b-0b28-402d-add4-f9c39fb4e7e5",
+      "result_id": "18d172da-964d-4856-bf38-cb2777af5e4b"
+    },
+    {
+      "claim_id": "3244a556-cbdb-4fd1-824a-8c1f8de411e9",
+      "result_id": "18d172da-964d-4856-bf38-cb2777af5e4b"
+    },
+    {
+      "claim_id": "05399e57-cc0b-4f1e-b4c0-105ce578573e",
+      "result_id": "18d172da-964d-4856-bf38-cb2777af5e4b"
+    },
+    {
+      "claim_id": "ca4da241-81e0-4c22-a4b4-a3b7232563f3",
+      "result_id": "18d172da-964d-4856-bf38-cb2777af5e4b"
+    },
+    {
+      "claim_id": "d611c989-c07a-4494-9d5f-ad1855fe81f4",
+      "result_id": "18d172da-964d-4856-bf38-cb2777af5e4b"
+    },
+    {
+      "claim_id": "dbf8ed50-ec3e-4e9c-b0df-f8b7b1f7a06d",
+      "result_id": "18d172da-964d-4856-bf38-cb2777af5e4b"
+    },
+    {
+      "claim_id": "3bf10077-05d3-48b8-aee8-49a440b5bc80",
+      "result_id": "0efbb1a3-cf00-45aa-897f-6e5d21ae3320"
+    },
+    {
+      "claim_id": "83059ce6-6bc9-47cf-bcc0-b23043328a09",
+      "result_id": "0efbb1a3-cf00-45aa-897f-6e5d21ae3320"
+    },
+    {
+      "claim_id": "4aaa4e87-bcd6-4352-84d9-7efe379e392b",
+      "result_id": "a9378f12-a866-4328-93fc-54a581606700"
+    },
+    {
+      "claim_id": "9c4f9c80-e685-4356-bf09-0a38722928aa",
+      "result_id": "a9378f12-a866-4328-93fc-54a581606700"
+    },
+    {
+      "claim_id": "924f1525-10b0-4375-be93-4df4c3eab4e3",
+      "result_id": "a9378f12-a866-4328-93fc-54a581606700"
+    },
+    {
+      "claim_id": "e75a2271-23f7-47e9-b1cd-11f51001067e",
+      "result_id": "a9378f12-a866-4328-93fc-54a581606700"
+    },
+    {
+      "claim_id": "3dbf7eaf-af76-49a4-acdd-da67550e52f5",
+      "result_id": "b8eacdac-8b25-402f-9f5a-a5ba71320a4b"
+    },
+    {
+      "claim_id": "2a7236d7-35a0-4938-a675-be0de9624278",
+      "result_id": "b8eacdac-8b25-402f-9f5a-a5ba71320a4b"
+    },
+    {
+      "claim_id": "5588a85a-b325-491b-a5a0-c75f2ff727a9",
+      "result_id": "b8eacdac-8b25-402f-9f5a-a5ba71320a4b"
+    },
+    {
+      "claim_id": "4086f9d3-578c-428f-9b33-31b42a8f0c5e",
+      "result_id": "b8eacdac-8b25-402f-9f5a-a5ba71320a4b"
+    },
+    {
+      "claim_id": "bfb76b0d-9b7f-49bc-a043-553cabdd5934",
+      "result_id": "b8eacdac-8b25-402f-9f5a-a5ba71320a4b"
+    },
+    {
+      "claim_id": "2abcb59d-f53f-42fe-b14d-3b379cbae96a",
+      "result_id": "c01d32fe-4b08-4cdb-8859-4fbea70d8475"
+    },
+    {
+      "claim_id": "b8a5812b-b995-4165-8acb-14316ea7e761",
+      "result_id": "c01d32fe-4b08-4cdb-8859-4fbea70d8475"
+    },
+    {
+      "claim_id": "71fd8348-62b3-4c5f-b331-3b8987445bbe",
+      "result_id": "c01d32fe-4b08-4cdb-8859-4fbea70d8475"
+    },
+    {
+      "claim_id": "ecc09f58-2c83-4e8d-b436-dcb6e29fbe38",
+      "result_id": "c01d32fe-4b08-4cdb-8859-4fbea70d8475"
+    },
+    {
+      "claim_id": "20fe9cb9-334a-4d15-a295-e6905271463b",
+      "result_id": "f2571804-58d2-4688-b521-2233cda5a470"
+    },
+    {
+      "claim_id": "44e9998d-e50a-4419-a573-86cbf7b1a718",
+      "result_id": "f2571804-58d2-4688-b521-2233cda5a470"
+    },
+    {
+      "claim_id": "b27c4552-64b0-48ba-bdbc-913b4e468f6b",
+      "result_id": "f2571804-58d2-4688-b521-2233cda5a470"
+    },
+    {
+      "claim_id": "7c998642-c715-4004-8aad-818b1d7c7e0c",
+      "result_id": "36d2774c-cc8e-49e5-95ca-58e898c35520"
+    },
+    {
+      "claim_id": "ea29de5a-19dc-4a6a-8245-68fd53a02db7",
+      "result_id": "36d2774c-cc8e-49e5-95ca-58e898c35520"
+    },
+    {
+      "claim_id": "c81cd050-6493-48b7-8912-44c77a27a291",
+      "result_id": "36d2774c-cc8e-49e5-95ca-58e898c35520"
+    },
+    {
+      "claim_id": "84b898e8-a5f0-4ffc-8192-d81a9d50a5e7",
+      "result_id": "0c137dc8-e567-42a1-9860-06b9156f6a0f"
+    },
+    {
+      "claim_id": "b7eb960c-6bab-4052-9050-c8e734c12f1a",
+      "result_id": "0c137dc8-e567-42a1-9860-06b9156f6a0f"
+    },
+    {
+      "claim_id": "64f5db56-93c0-4549-ba92-81bd319d9615",
+      "result_id": "0c137dc8-e567-42a1-9860-06b9156f6a0f"
+    },
+    {
+      "claim_id": "21205301-a920-450f-8cf4-890c5b38a982",
+      "result_id": "3683f5ca-9067-4265-b77e-3a364e328073"
+    },
+    {
+      "claim_id": "4b60a67a-bdad-45af-8bca-54e56cc2761a",
+      "result_id": "3683f5ca-9067-4265-b77e-3a364e328073"
+    },
+    {
+      "claim_id": "52b4e5fa-f42e-4aab-8d49-63153d89ed88",
+      "result_id": "3683f5ca-9067-4265-b77e-3a364e328073"
+    },
+    {
+      "claim_id": "a933c1c3-f351-4ee4-83d0-b9efd03ae6ab",
+      "result_id": "3683f5ca-9067-4265-b77e-3a364e328073"
+    },
+    {
+      "claim_id": "53bbb99f-21a4-4b19-b7be-0c9d82209ce4",
+      "result_id": "3683f5ca-9067-4265-b77e-3a364e328073"
+    },
+    {
+      "claim_id": "2296562d-2a92-4a46-9a96-537e0b5967ae",
+      "result_id": "3683f5ca-9067-4265-b77e-3a364e328073"
+    },
+    {
+      "claim_id": "5f6ac16d-1289-45fd-a588-1586ebd96273",
+      "result_id": "3683f5ca-9067-4265-b77e-3a364e328073"
+    },
+    {
+      "claim_id": "e294a57e-e729-494b-b274-47d55cf8a7e1",
+      "result_id": "3683f5ca-9067-4265-b77e-3a364e328073"
+    },
+    {
+      "claim_id": "9fcc5ead-aaf6-4459-824f-38e4cd702fa5",
+      "result_id": "465fcd49-8840-4355-95e6-aa27ba10c3ff"
+    },
+    {
+      "claim_id": "d4dba93e-b4e4-4a99-a44e-8d29eea6241b",
+      "result_id": "465fcd49-8840-4355-95e6-aa27ba10c3ff"
+    },
+    {
+      "claim_id": "c4510590-515b-4910-bbc7-4c809b3712bd",
+      "result_id": "82855999-d14e-4da2-a7a2-9a8156dcc30b"
+    },
+    {
+      "claim_id": "dbbd7929-fe01-4e83-b1cb-620b971e4d43",
+      "result_id": "82855999-d14e-4da2-a7a2-9a8156dcc30b"
+    }
+  ],
+  "comparisons": []
+}

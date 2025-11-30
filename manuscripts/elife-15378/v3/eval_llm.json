@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C14",
+      "C15",
+      "C19",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C28",
+      "C56",
+      "C57"
+    ],
+    "result": "Motor memories can be artificially tagged during training with tDCS polarity and later retrieved by applying the same polarity during testing. Participants trained to adapt reaching movements to conflicting force fields (rightward/leftward) paired with different tDCS polarities (anodal/cathodal) to M1. During testing with error-clamp trials, applying each tDCS polarity automatically retrieved the corresponding motor memory, producing polarity-dependent force output modulation of approximately 7-10%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The T-T group showed statistically significant polarity-dependent force modulation during testing (C26: p=0.0009), with forces during cathodal stimulation larger than during anodal stimulation (C21-C24). The effect was stable across test periods (C27: p=0.313 for interaction) and consistent across both subgroups showing anti-phase patterns. Multiple analytical approaches (model-free and model-based) converged on the same conclusion. Control experiments (S-T, T-S, PPC groups) demonstrated specificity: the effect required active tDCS during both training and testing (C33-C42, C45-C50), and was specific to M1 stimulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Active tDCS during training is necessary for memory tagging. The S-T group (sham training, active testing) showed little polarity-dependent force modulation during most of the test period, though there was a significant effect in the first block that may reflect differential memory decay rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The S-T group showed no significant block-dependent modulation from blocks 2-3 (p=0.905) and 3-4 (p=0.278) (C34), and significantly smaller modulation than T-T group from block 2 onwards (C35: p=0.0012 and p=0.0146). The significant first-block effect (C34: p=0.0132) suggests cathodal stimulation may prolong memory decay compared to anodal (C37-C38), but this alternative mechanism was insufficient to produce the robust tagging effect seen in T-T group.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C45"
+    ],
+    "result": "Active tDCS during testing is necessary for memory retrieval. The T-S group (active training, sham testing) showed no significant polarity-dependent modulation during testing, indicating that reinstating the activity pattern present during learning is required for memory retrieval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The T-S group showed no significant block-dependent modulation (C41: p=0.163), and significantly smaller modulation than T-T group (C42: p=0.0018). This demonstrates that merely tagging memories during training is insufficient\u2014the same neural activity pattern must be reinstated during retrieval (C45). This control is critical for establishing that the effect is not simply due to training-induced changes that persist regardless of testing conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C72"
+    ],
+    "result": "The memory tagging and retrieval effect is specific to M1 stimulation. Stimulation of the posterior parietal cortex (PPC) failed to produce polarity-dependent memory modulation, indicating anatomical specificity of the effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PPC group showed no significant block-dependent modulation (C46: p=0.369), significantly smaller effects than T-T group (C47: p=0.0082), and no effect in model-based analysis (C48: p=0.179). The ANOVA confirmed M1 stimulation was more effective than PPC (C49: p=0.031). This anatomical control strengthens the conclusion that the effect depends on modulating sensorimotor cortex activity patterns, not general arousal or sensory effects from stimulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The polarity-dependent force modulation was not caused by kinematic changes. Peak velocity showed no polarity-dependent modulation, indicating the effect reflects genuine motor memory retrieval rather than movement execution changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "No significant interaction between group and block order for peak velocity (C30, Figure 2\u2014figure supplement 2: p=0.551). Since the force fields were velocity-dependent, any kinematic changes would confound force output measurements. The absence of velocity modulation confirms the force changes reflect retrieved motor memories, not altered movement kinematics. Data processing methods were appropriate (C109-C112).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Active tDCS during training may reduce interference between conflicting motor memories. Groups receiving active tDCS during training showed smaller lateral deviations on the first trial of each block compared to sham training, though this effect was modest and requires confirmation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The effect on first-trial lateral deviation was statistically significant (C51: p=0.041, \u03b7p\u00b2=0.10) but had small effect size and borderline significance. The authors appropriately note this needs confirmation in follow-up studies (C52). End-of-block performance was equivalent across groups (C53), indicating similar learning levels. While suggestive of reduced interference, the limited effect size and lack of strong mechanistic explanation warrant caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C98"
+    ],
+    "result": "Statistical power analysis indicates 99.8% likelihood of a true effect despite one non-significant result in the Tffrev-T control group. The Tffrev-T group (reversed force field-polarity association) showed mixed results with one subgroup significant and one non-significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The positive predictive value calculation (C69: PPV=0.998) is mathematically correct given the stated assumptions, but relies on assumed prior probability and power estimates. The Tffrev-T group showed significant effects in model-based analysis for one subgroup but not the other (C98, Figure 3\u2014figure supplement 2). While the PPV calculation provides reassurance, the mixed Tffrev-T results introduce some uncertainty about robustness. The effect appears real but may have moderators not fully understood.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C122"
+    ],
+    "result": "Two complementary analytical approaches (model-free and model-based) were used to account for natural exponential decay of motor memories during testing. Both approaches converged on the same conclusions regarding polarity-dependent modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The natural exponential decay (C25, C114) required special analytical treatment. The model-free approach subtracted force between subgroups assuming identical decay (C115), while model-based approach fitted exponential curves and analyzed residuals (C119-C120). Bootstrap (C116) and permutation tests (C117-C118) provided appropriate statistical inference. Using two exponential functions avoided artifacts from data drift (C122). The convergence of both methods strengthens confidence in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The experimental design involved 84 participants (after 5 exclusions) divided into multiple groups, performing reaching movements with force field perturbations paired with tDCS. Training consisted of 12 blocks with alternating force fields and tDCS polarities, followed by 4 test blocks using error-clamp trials. No explicit contextual cues were provided.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental protocol is clearly described with appropriate sample sizes (N=8-9 per subgroup), proper exclusion criteria (C61), participant blinding (C81), and ethical approval (C78-C82). The design appropriately counterbalanced subgroups (ACAC vs CACA) to control for order effects. The use of error-clamp trials during testing (C67, C101) was appropriate for measuring motor memory without additional learning. The absence of explicit cues (C68) was critical for demonstrating that tDCS itself served as the contextual cue.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Bihemispheric tDCS montage (electrodes on left and right M1, 2 mA) was used to localize stimulation to sensorimotor cortex. Safety procedures included impedance monitoring and pain assessment. Participants may have felt stronger sensations during active versus sham stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bihemispheric montage was justified by prior evidence for better localization (C70). Safety procedures were appropriate with impedance checks (C105-C106: 3.86\u00b11.09 k\u03a9) and continuous monitoring (C107). Pain ratings showed significant group\u00d7block interaction (C108: p=0.003) but differences were small (<1 point). The authors acknowledge potential for ipsilateral effects (C71) and limited involvement of parietal areas based on PPC control (C72). While blinding may have been imperfect, the anatomical and temporal specificity controls argue against simple expectancy effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The mechanism likely involves polarity-specific modulation of M1 excitability and firing rates during stimulation, rather than long-lasting plastic effects. The short stimulation duration (2 min) and alternating polarities likely prevented long-lasting effects and homeostatic plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Prior evidence supports polarity-dependent modulation of M1 excitability and firing rates (C73). While tDCS can have long-lasting effects with sufficient duration (C74), the 2-min blocks were too short (C75) and alternating polarities would cancel long-lasting effects (C76). This reasoning is sound and supported by the temporal specificity of the effect\u2014memory retrieval required concurrent tDCS application (T-S control). However, the exact neural mechanisms remain speculative without direct neural recordings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C16",
+      "C17",
+      "C18",
+      "C20",
+      "C54",
+      "C55",
+      "C77"
+    ],
+    "result": "The study builds on prior work showing context-dependent motor learning and memory, with contexts often associated with different sensorimotor cortex activity patterns. The work relates to broader principles of memory retrieval through reinstatement of neural activity patterns, demonstrated in other domains with invasive stimulation and optogenetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The background claims are well-supported by appropriate citations to prior literature (C6-C13, C16-C17, C20, C54-C55, C77). The authors correctly identify the gap in understanding mechanisms of context-dependent motor learning (C9) and appropriately position their work within the broader memory literature. The parallel to declarative memory and fear conditioning studies (C54-C55, C77) is conceptually appropriate, though the mechanisms may differ across memory systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The findings suggest potential applications for manipulating formation and recollection of various memory types by artificially changing activity patterns in relevant brain regions, opening new avenues for tDCS in memory research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative claims about future applications (C58-C59). While the current findings support the principle that artificial modulation of neural activity can tag and retrieve motor memories, generalization to declarative memory, visuomotor rotation, or sequence learning remains untested. The speculation is reasonable given the results but requires empirical validation. The claims are appropriately framed as possibilities rather than established facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C113",
+      "C124"
+    ],
+    "result": "Standard motor learning methods were used including velocity-dependent force fields, error-clamp trials with force channel constraints, and appropriate data processing including baseline subtraction. Statistical threshold was set at p<0.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methods are standard in the motor learning field with appropriate citations (C84, C86). Force field parameters and error-clamp implementation are clearly specified (C87-C90). Data processing steps including baseline subtraction (C113) and statistical thresholds (C124) are appropriate. These methodological details are sufficient for replication and are consistent with best practices in the field.",
+    "result_type": "MINOR"
+  }
+]

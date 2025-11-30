@@ -1,0 +1,2196 @@
+{
+  "submission": {
+    "id": "98554053-8658-4f45-a938-379b54aea7f1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:37:09.277707Z",
+    "updated_at": "2025-11-29T21:37:09.277707Z"
+  },
+  "content": [
+    {
+      "id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "submission_id": "98554053-8658-4f45-a938-379b54aea7f1",
+      "content_type": "manuscript",
+      "content_text": "# Temporal transcriptomics suggest that twin-peaking genes reset the clock\n\n## Authors\n\n- William G Pembroke<sup>1</sup>\n- Arran Babbs<sup>1</sup>\n- Kay E Davies<sup>1</sup> \u2020\n- Chris P Ponting<sup>1</sup> ([ORCID: 0000-0003-0202-7816](https://orcid.org/0000-0003-0202-7816)) \u2020\n- Peter L Oliver<sup>1</sup> \u2020\n\n### Affiliations\n\n1. MRC Functional Genomics Unit, Department of Physiology Anatomy and Genetics University of Oxford Oxford United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe mammalian suprachiasmatic nucleus (SCN) drives daily rhythmic behavior and physiology, yet a detailed understanding of its coordinated transcriptional programmes is lacking. To reveal the finer details of circadian variation in the mammalian SCN transcriptome we combined laser-capture microdissection (LCM) and RNA-seq over a 24\u2009hr light / dark cycle. We show that 7-times more genes exhibited a classic sinusoidal expression signature than previously observed in the SCN. Another group of 766 genes unexpectedly peaked twice, near both the start and end of the dark phase; this twin-peaking group is significantly enriched for synaptic transmission genes that are crucial for light-induced phase shifting of the circadian clock. 341 intergenic non-coding RNAs, together with novel exons of annotated protein-coding genes, including Cry1, also show specific circadian expression variation. Overall, our data provide an important chronobiological resource (www.wgpembroke.com/shiny/SCNseq/) and allow us to propose that transcriptional timing in the SCN is gating clock resetting mechanisms.\n\n## Introduction\n\nThe suprachiasmatic nucleus (SCN) of the hypothalamus is the seat of the principal circadian clock in mammals. Entrained by photic information and other external stimuli, this group of neurons maintains 24-hr rhythms of physiology and behaviour by synchronising molecular oscillators in the brain and peripheral tissues (Welsh et al., 2010; Ko and Takahashi, 2006; Maywood et al., 2007). The transcriptional output of the SCN is thus critical for this fundamental biological adaptation to night\u00a0and\u00a0day (Panda et al., 2002; Zhang et al., 2014b; Li et al., 2015).\n\nAn early microarray study of the SCN identified 650 genes displaying circadian oscillations (Panda et al., 2002). However, this number will have been limited by the number of genes surveyed, the low signal-to-noise ratio of certain genes (e.g. Per2), and the use of experimental samples likely to include a large proportion of the surrounding hypothalamic tissue. The study of such heterogeneous samples will result in reduced amplitudes of oscillations for genes that cycle asynchronously in different brain regions (Zhang et al., 2014b). A recent study estimated that over half of all protein-coding genes show circadian oscillations in the mouse, although only 642 could be identified in hypothalamic samples (Zhang et al., 2014b). Furthermore, many circadian transcriptomic surveys of mammalian systems have utilised constant lighting conditions to focus on the endogenous, free-running circadian clock and have not assessed more physiologically\u00a0relevant light/dark (LD) cycles (Zhang et al., 2014b; Panda et al., 2002; Hughes et al., 2009; Hurley et al., 2014).\n\nTo identify circadian processes driven by photic cues, we combined RNA-seq with laser-capture microdissection (LCM) of the SCN to provide a comprehensive and tissue-specific transcriptomic investigation of the master pacemaker. These data reveal many hundreds of novel cycling transcripts and provide evidence that the temporal variation in a specific group of genes plays a role in modulating light-induced phase resetting of the circadian clock.\n\n## Results and discussion\n\n### RNA-seq of high quality SCN samples identifies novel SCN enriched genes\n\nLCM accurately isolated the entire SCN for transcriptional profiling (Figure 1\u2014figure supplement 1A). Pooled dissected tissue from five adult male mice provided one of three replicates for each of six timepoints over a 12:12 LD cycle (ZT2, 6, 10, 14, 18 and 22). Sequencing RNA in each replicate generated up to 133 million paired-end reads of which 45\u201365% were subsequently mapped to the mouse genome allowing for gene expression level estimation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/10518/elife-10518-fig1-v2.jpg)\n\n**Figure 1.:** (A) Heatmap showing mean expression of key clock genes in the SCN across circadian time. The majority (8/10) show significant cycling (DESeq2 and JTK Cycle; *q <\u00a00.05) and peak at the expected timepoint denoted by a yellow box (Ko and Takahashi, 2006). (B) Statistically significant Gene Ontology (GO) enrichments for SCN enriched genes (q <\u00a00.05). Bars represent the number of genes of a given category expected by chance among SCN enriched genes (grey) versus those observed (black). q-values: *q <\u00a00.05, **q <\u00a00.01, ***q <\u00a00.001. (C) In situ hybridisation (ISH) of four SCN\u00a0enriched genes at ZT6 in the wild-type brain. Scale bar: 0.5\u00a0mm (low magnification); 0.2\u00a0mm (high magnification).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10518/elife-10518-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Representative Nissl-stained brain sections before and after laser-capture microdissection (LCM) of the SCN. Scale bar: 0.5\u00a0mm. (B) Principal component analysis (PCA) plot showing separation of RNA-seq data according to timepoint and sequencing batch. Ellipses delineate the 95% confidence intervals for each timepoint. (C) Dot plot showing the Pearson\u2019s correlation between RNA-seq and quantitative polymerase chain reaction (qPCR) values for all the annotated genes surveyed (excluding those housekeeping genes used to normalise the data); 43/59 genes show a high concordance between methods (r >0.4). (D) Scatter plot showing a trend for increased correlation of cycling gene expression measured in the two different platforms for increased dynamic range. Gene expression values with larger dynamic ranges tend to be less susceptible to extrinsic factors such as random noise and batch effects which therefore contribute less. (E) Heatmap showing the mean expression levels for 17 twin-peaking genes across circadian time according to (i) RNA-seq or (ii) qPCR from LCM SCN samples.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/10518/elife-10518-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) PCA plot showing successful separation of RNA-seq data according to tissue but, importantly, not according to study. Adjacent numbers indicate the study from which data were collected (1, Azzi et al. (2014); 2, Barbosa-Morais et al. (2012); 3, Merkin et al. (2012); 4, Brawand et al. (2011); 5, Zhang et al., (2014b); 6, Menet et al. (2012)). Ellipses delineate the 95% confidence intervals for each tissue. The first principal component (PC1) explains nearly 80% of the expression variance in samples and displays a large separation between liver and brain tissues signifying substantial transcriptomic differences between these disparate tissues. The second principal component (PC2; approximately 10%) in part explains variation among different regions of the brain. Samples from the same tissue (e.g. cerebellum) cluster together more closely than tissue samples from the same study (labelled by number) but different brain region. This indicates that RNA-seq batch effects are small relative to biological variation. Of the non-SCN brain tissues samples, the published \u2018hypothalamus\u2019 RNA-seq dataset (Zhang et al., 2014b) shows the greatest similarity to the SCN samples. (B) Fold-change\u00a0(FC) enrichment of SCN marker (purple) and control gene (red) expression in the LCM SCN samples relative to mean brain fragments per kilobase of exon per million (FPKM) levels from other transcriptomic studies in (A). These SCN markers display large FC enrichment compared to general markers of neurons (e.g. Snap25), oligodendrocytes (e.g. Mbp) and housekeeping genes (e.g. ActB, Gapdh). (C) Heatmap showing mean expression levels of the 146 SCN\u00a0enriched genes across all other transcriptomic studies in (A). Numbers indicate study from which data were collected as in (A). These genes show the highest expression in the SCN followed by the hypothalamus, as expected, given the location of the SCN within the hypothalamus.\n\nGlobal expression differences were apparent between timepoints, as revealed by principal component analysis (PCA) (Figure 1\u2014figure supplement 1B). Of 10 key circadian-clock genes, 8 showed the classic sinusoidal circadian profile (q <\u00a00.05) with a zenith and nadir at the expected timepoints (Figure 1A); this verifies the temporal expression of our LCM SCN transcriptome dataset and indicates that any sequencing batch effects are minimal. Furthermore, quantitative (q)PCR of the LCM SCN samples showed a high degree of concordance with the RNA-seq expression data (Figure 1\u2014figure supplement 1C\u2013D). Our SCN transcriptomes are also separable from those in other brain regions and non-CNS tissues (Zhang et al., 2014b; Brawand et al., 2011; Merkin et al., 2012; Menet et al., 2012; Barbosa-Morais et al., 2012; Azzi et al., 2014) (Figure 1\u2014figure supplement 2A). In addition, four key SCN markers (Avp, Vip, Grp\u00a0and Six6) showed a far greater expression enrichment in the SCN over other brain regions (Figure 1\u2014figure supplement 2B). In summary, these data provide the first identification of SCN\u00a0enriched genes either on a genome-wide scale or over a 24-hr period and allow an anatomically precise and comprehensive examination of the SCN transcriptional output over the full day. To allow further exploration into the dataset, we provide a user-friendly web application (www.wgpembroke.com/shiny/SCNseq/).\n\nA total of 146 genes were identified whose expression is highly enriched in the SCN (Materials and methods; analysis of variance (ANOVA), q <\u00a00.05) of which 4 out of 4 were confirmed using in situ hybridisation (ISH) (Figure 1\u2014figure supplement 2C; Figure 1C). These genes included many known SCN markers, as well as others not previously implicated in circadian biology or in SCN function (Figure 1C). Their significant enrichments for the Mouse Phenotype term \u2018abnormal circadian rhythm\u2019 (q = 1.2\u00d710-4) and for Gene Ontology (GO) annotations relating to signalling pathways (q <\u00a00.05; Figure 1B) are consistent with the SCN\u2019s role as the master pacemaker. Enrichment for the flagellum annotation and G-protein coupled receptor (GPCR) signalling pathways (Figure 1B) may reflect the roles of primary cilia as GPCR signalling hubs (Omori et al., 2015). These results thus suggest that GPCR-mediated neuropeptide signalling via cilia may be important for SCN function.\n\n### Identification of sinusoidally cycling genes\n\nWe next identified 4569 genes (24% of 18,889 Ensembl-annotated coding or non-coding models expressed (\u22651 read) in over six samples) whose expression oscillated in a sinusoidal manner (Figure 2\u2014figure supplement 1A,B) according to both JTK Cycle and DESeq2 approaches (Materials and methods). Importantly, this number of cycling genes is sevenfold higher than previously reported in the SCN (Panda et al., 2002). This large increase is likely to reflect a combination of factors: first, the significantly improved anatomical enrichment of the SCN tissue we have surveyed; second, the greater sensitivity and specificity of the statistical approaches we have applied (Hughes et al., 2010); and finally, our sampling approach under LD as opposed to the constant dark (DD) conditions utilised in earlier studies (Panda et al., 2002). For example, we are able to detect cycling genes that may be physiologically relevant to light\u00a0exposure or light-induced transcriptional cascades that are undetectable as cycling under DD (Ueda et al., 2002; Leming et al., 2014). Our new collection of SCN cycling genes were enriched for GO terms relating to key processes such as translation and mitochondrion-related genes, in line with previous findings (Figure 2\u2014figure supplement 1C; Panda et al., 2002). De novo transcription has been shown to drive rhythmicity of approximately 20\u201330% of all cycling genes (Koike et al., 2012; Menet et al., 2012), which illustrates the importance of post-transcriptional regulation in shaping the circadian transcriptome. Interestingly, we observe novel enrichments among cycling genes in terms relating to RNA splicing and ribonucleoprotein (RNP) complexes (Figure 2\u2014figure supplement 1C) which suggests that these processes may establish oscillatory expression patterns (Wang et al., 2013). Other post-transcriptional mechanisms, such as miRNA level fluctuation, which were not assessed in this experiment, could also contribute to initiating these patterns.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/10518/elife-10518-fig2-v2.jpg)\n\n**Figure 2.:** (A) Relative expression of each gene present in the identified twin-peaking module over 24 hr. The black line represents the module eigengene \u2013 the first principal component of the gene expression matrix for this module. (B) Top three statistically significant (q <\u00a00.05) Gene Ontology (GO) (biological process (BP), cellular component (CC), molecular function (MF)) and Kyoto Encyclopedia of Genes and Genomes (KEGG) enriched terms for the 496 significantly fluctuating twin-peaking genes. q-values: *q <\u00a00.05, **q <\u00a00.01, ***q <\u00a00.001. (C) Illustration of the theoretical phase response curve (PRC) in mouse, which demonstrates the phase shifting potential when a light pulse is applied at different times (black line) (Golombek and Rosenstein, 2010). Our module eigengene for the twin-peaking module (blue dotted line) indicates that when its expression lies above the threshold level (black horizontal line), the phase of the organism is able to shift. The greater the expression over this threshold, the larger the phase shift. Conversely, when expression is low and below this threshold, the suprachiasmatic nucleus (SCN) is resistant to phase shifting induced by light pulses. This suggests the presence of susceptibility windows (shown by green bars) when light impulses are able to shift the phase of the SCN. (D) Circadian gating of light signalling pathway, adapted from (Iyer et al., 2014). Twin-peaking gene-encoded proteins identified by laser-capture microdissection (LCM) SCN RNA-seq are indicated in blue. Photic information is transmitted to the SCN via glutamatergic signalling through the retinohypothalamic tract (RHT). (i) Brain-derived neurotrophic factor (BDNF) gates glutamatergic synaptic transmission by regulating either presynaptic release or membrane channel activity. (ii) Voltage-gated potassium channels hyperpolarise the SCN neurons allowing photic input from the RHT to elicit a significant response. (iii) Glutamate binding to\u00a0glutamate receptor, ionotropic, N-methyl D-aspartate\u00a0(GRIN) receptors\u00a0induces calcium influx inducing CaMKII autophosphorylation. (iv) Active pCaMKII phophorylates neuronal nitric oxide synthase (nNOS), which generates nitric oxide (NO), producing differential effects according to time of day. (v) In early night (ZT14), we observe peaking of genes relating to small guanosine triphosphate (GTPase) activation and actin-based cytoskeletal remodelling. At this timepoint, F-actin levels are at their highest and an influx of Ca2+ depolymerises the F-actin affecting components of the mitogen-activated protein (MAP) kinase pathway. Ca2+ also induces intracellular Ca2+ release though the opening of the endoplasmic reticulum calcium channel RyR2. (vi) In late night (ZT22), NO activates guanylyl-cyclase (GC), which increases cyclic guanosine monophosphate (cGMP) levels activating protein kinase G (PKG). (vii) Phosphorylation of cAMP response element-binding protein (CREB) leads to the transcription of PER1, which contributes to the shifting of the circadian phase.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10518/elife-10518-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Heatmap showing the expression levels in each biological replicate for the 4569 significantly cycling genes in the SCN across circadian time ordered by peak phase (DESeq2 and JTK Cycle, q <\u00a00.05). (B) Polar plot showing the distribution of peak phases for the identified 4569 cycling genes binned in 2-hr windows. Cycling genes tend to peak during transcriptional \u2018rush hours\u2019 near to light transitions (shown by black lines), as previously described (Zhang et al., 2014b). (C) Top three statistically significant GO (\u00a0BP, CC, MF) and KEGG enrichments for the 4569 cycling genes. q-values: *q <\u00a00.05, **q <\u00a00.01, ***q <\u00a00.001. (D) Number of other tissues in which the 4569 cycling genes also cycle. Colours indicate the distribution of these cycling genes across the different tissues. (E) Number of the 4569 cycling genes that are also significantly cycling in other tissues from other studies (Zhang et al., 2014b) ordered by fold-change (FC) enrichment (right). Tissues which show significantly greater LCM SCN cycling genes are denoted with an asterisk (*q <\u00a00.05, **q <\u00a00.01, ***q <\u00a00.001); as expected, the greatest enrichment in overlap was with the SCN results from the microarray study by Panda et al. (2002). (F) Statistically significant GO and KEGG enrichments for the 1034 cycling genes peaking at ZT14. q-values: *q <\u00a00.05, **q <\u00a00.01, ***q <\u00a00.001. (G) Distribution of peak phases for significantly cycling genes with GO annotations \u2018actin cytoskeleton organisation\u2019 (n = 25) and \u2018small GTPase regulator activity\u2019 (n = 29).\n\nApproximately half of the SCN cycling genes (2451/4569) showed no evidence for sinusoidal expression in 12 other tissues, including the whole hypothalamus, based on published circadian expression data (JTK Cycle; q <\u00a00.05; Figure 2\u2014figure supplement 1D) (Zhang et al., 2014b). These genes included those essential for normal SCN function, including Prok2, Rorb\u00a0and Nts,\u00a0which were also validated by quantitative polymerase chain reaction (qPCR) (Figure 1\u2014figure supplement 1C). This indicates that many genes cycle exclusively in the SCN, or only cycle under a 12:12 LD lighting schedule rather than under the constant dark conditions used previously (Zhang et al., 2014b). Comparing our results under LD with published DD datasets may inflate the perceived number of genes cycling solely in the SCN, however, as there are genes likely to cycle under LD exclusively as shown by microarray studies in lower organisms (Ueda et al., 2002; Leming et al., 2014). Six of the nine genes which cycled significantly across all 12 other tissues (q <\u00a00.05) also cycled in the LCM SCN samples (Arntl, Dbp, Nr1d2, Per2, Per3 and Tsc22d3)\u00a0suggesting a core set of universally cycling genes (Figure 2\u2014figure supplement 1D). In support of this notion our LCM SCN cycling gene list significantly overlapped with those cycling in 8 of 12 other tissues (q <\u00a00.05), as well as those cycling in an SCN microarray study (Zhang et al., 2014b; Panda et al., 2002) (Figure 2\u2014figure supplement 1E). As expected, the SCN, hypothalamus and cerebellum showed the greatest overlap of their circadian transcriptomes (Figure 2\u2014figure supplement 1E).\n\n### Identification of novel twin-peaking synaptic module\n\nPrevious studies only considered circadian gene expression following a sinusoidal pattern. Alternative and potentially functionally important expression profiles may thus have been overlooked. Using Weighted Correlation Network Analysis (WGCNA), which does not assume a single mode of temporal variation, we identified a single module of 766 genes, which instead of adopting a sinusoidal profile, displayed two peaks of expression at ZT14 and ZT22 (Figure 2A). From this \u2018twin-peaking\u2019 module 496 genes individually exhibited statistically significant temporal fluctuations (DESeq2, q <\u00a00.05), of which 17 of 17 were validated by qPCR (Figure 1\u2014figure supplement 1E). This profile is also distinct from previously described 12-hr harmonics (Cagampang et al., 1998a; 1998b; Hughes et al., 2009), and prior to this, only single genes from individual studies were shown to possess similar expression patterns (Shinohara et al., 1993; Cagampang et al., 1998c; 1998d). For example, isoforms of protein kinase C (Prkcb and Prkcg) exhibit a twin-peaking profile in rat SCN similar to that observed in our RNA-seq data (Cagampang et al., 1998c). This twin-peaking transcriptional profile, particularly for this large number of genes, was thus unexpected. Functional annotations related to synaptic transmission, calcium signalling and gated channel activity were greatly and significantly enriched among these twin-peaking genes (q <\u00a00.05; Figure 2B), suggesting a circadian component to establishing the electrophysiological environment of the SCN.\n\nThe peaking of expression at ZT14 and ZT22 coincides with phase shifting \u2018susceptibility windows\u2019; time periods in which the photic input permits phase shifting (or \u2018resetting\u2019) of the clock (Ding et al., 1994; Iyer et al., 2014). This is demonstrated by the phase response curve (PRC): a light impulse at ZT14 will initiate a phase delay of the clock whereas a light impulse at ZT22 will initiate a phase advance (Figure 2C) (Golombek and Rosenstein, 2010; Ding et al., 1994). At all other timepoints we assessed under an LD cycle the twin-peaking genes exhibited low expression levels exactly when the clock is resistant to phase shifts. This suggests a possible transcriptional gating mechanism in which a threshold level of gene expression needs to be exceeded for light to activate this phase shifting pathway (Ding et al., 1994; Gillette and Mitchell, 2002; Iyer et al., 2014). Transcriptional profiling at a higher temporal resolution would be required to confirm the elevated expression of twin-peaking genes above this critical threshold at timepoints when light-induced phase shifts are possible (e.g. ZT12; Figure 2C). Genes previously known to participate in this light-induced phase shifting pathway display this twin-peaking pattern (Figure 2D), and their pharmacological inhibition (e.g. for Grin2a/b, Camk2a, Nos1, Ryr2) blocks light-induced phase shifts (Ebling et al., 1991; Yokota et al., 2001; Ding et al., 1998; 1994; 2007; 2010). Many genes whose expression peaks singly at ZT14 have functions related to actin cytoskeleton reorganisation and/or to small GTPase signalling (Figure 2\u2014figure supplement 1F\u2013G). This supports the hypothesis that actin depolymerisation is important for phase delays but not phase advances (Gerber et al., 2013; Cabej, 2013). Taken together, our data indicate that oscillations in the SCN transcriptome play an important role in gating the differential responses to light, a fundamental circadian process. The complex relationship between photic and non-photic cues and their relative roles in phase adjustment must also be considered, however. Light exposure during constant conditions can still modify the processing of non-photic signals by the SCN (Challet and Pevet, 2003). For example, novelty-induced running in the subjective mid-day induces a phase advance in mice, although a 1-hr light pulse administered after access to running wheels can significantly attenuate this affect (Biello and Mrosovsky, 1995). More work is required to determine how the timing or relative level of gene expression mediates these light-induced behavioural changes.\n\n### Identification of novel transcripts with circadian expression profiles\n\nA total of 3187 multiexonic long intergenic non-coding RNA (lincRNAs; >200 nucleotides) loci were identified from the SCN transcriptome data. Considered together, they displayed evidence of significant sequence conservation, had lower expression and fewer exons than protein-coding genes in line with lncRNAs identified in other mammalian tissues (Zhang et al., 2014a; Cabili et al., 2011; Ponjavic et al., 2007), but did not display correlated expression with that of the nearest protein-coding gene suggesting these lincRNAs are often not functioning as enhancer (e)RNAs (Figure 3\u2014figure supplement 1A\u2013D). Of these lincRNAs, 341 (11%) displayed significant temporal fluctuation, including lincRNA NONCO7761 (3100003L05Rik) whose presence in the SCN was confirmed by ISH at ZT6 (Figure 3D) as well as by qPCR to peak at both ZT6 and ZT18 (Figure 3E). In addition, 28 of these fluctuating lincRNAs peaked at ZT14 and ZT22 (Figure 3B\u2013C), and thus may modulate or be modulated by the transcriptional or post-transcriptional regulation of protein-coding genes of the twin-peaking synaptic module described earlier.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/10518/elife-10518-fig3-v2.jpg)\n\n**Figure 3.:** (A) Proportion of the 3187 identified lincRNAs which (i) have been previously annotated (according to Ensembl or UCSC), (ii) are not annotated in these resources but have been identified in other studies (Belgard et al., 2011, Ramos et al., 2013) or (iii) are unique to this study. (B) Proportion of the 3187 identified lincRNAs which show significant fluctuating expression patterns (twin-peaking module and DESeq2 q <\u00a00.05, or JTK cycle q <\u00a00.05 and DESeq2 q <\u00a00.05); protein-coding genes are shown for comparison. (C) Heatmap showing the expression levels in each biological replicate for the 341 fluctuating lincRNAs. (D) In situ hybridisation (ISH) of NONCO7761 (3100003L05Rik) at ZT6 in the mouse brain showing low yet distinct expression in the SCN. Scale bar: 0.5\u00a0mm (low magnification), 0.2\u00a0mm (high magnification). (E) RNA-seq and quantitative polymerase chain reaction (qPCR) show fluctuating mean expression \u00b1 SD of the lincRNA NONCO7761 (3100003L05Rik) over 24 hr.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10518/elife-10518-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Density plot comparing the distribution of expression levels of the 3187 identified lincRNAs (red) and protein-coding genes (blue); lincRNAs tend to be significantly lower expressed than protein-coding genes (p <\u00a02.2\u00d710-16, Kolmogorov\u2013Smirrnov (KS) test). (B) Cumulative frequency graph showing the number of exons possessed by protein-coding genes and the identified 3187 lincRNA loci. Despite this study only considering multiexonic lincRNAs, protein-coding genes tend to possess significantly more exons (p <\u00a02.2\u00d710-16, KS test). (C) Violin plot showing phastCons conservation scores for the exonic regions of the 2796 identified lincRNAs with available conservation scores; these lincRNAs showed significantly less conservation than protein-coding genes but significantly greater conservation than two proxies for neutral evolution: (i) transposable elements within a 50-kb window of the lincRNA locus (p <\u00a02.2\u00d710-16, KS test), (ii) 500-bp of sequence up- or downstream of the lincRNA locus selected randomly within a 1- to 5-kb window (p <\u00a02.2\u00d710-16, KS test). (D) Violin and box plot showing no significant difference (p\u00a0=\u00a00.45, KS test) in the Pearson\u2019s correlation of a lincRNA\u2019s expression with that for its genomically most proximal protein-coding gene (n = 2261, expression correlation not possible if closest gene is not expressed) compared to a randomly selected protein-coding gene.\n\nWe also identified 1013 novel exons \u2013 transcribed regions of the transcriptome which have not been annotated by Ensembl or UCSC, but contribute to alternative transcripts in a known gene. Of these, we focused on the novel exon of the core clock gene Cry1 which appears to represent an alternative transcriptional start site (TSS) (Figure 4A). Despite its large size (322\u00a0bp) and high expression, the novel exon present in the first intron of Cry1 had remained elusive, yet is confirmed by reverse transcription polymerase chain reaction (RT-PCR) from SCN tissue (Figure 4C). The novel and canonical Cry1 isoforms are expressed in antiphase, as confirmed by qPCR from LCM SCN samples (Figure 4D), indicating an unanticipated mode of temporal regulation in the SCN for this core clock gene.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/10518/elife-10518-fig4-v2.jpg)\n\n**Figure 4.:** (A) Genomic region of mouse chromosome 10 displaying the novel exon (blue bar) for the clock gene Cry1, which appears to represent an alternate transcriptional start sites (TSS). Peaks (black) signify total expression of the exon whereas representative RNA-seq spliced reads (black) indicate exonic splice junctions. (B) Schematic diagram showing the 5\u2019 gene structure of the canonical (red) and novel (blue) Cry1 isoforms. The novel exon (exon 1b) splices into the subsequent second exon using two different exon boundaries. Dotted arrows denote the position of PCR primers used to amplify Cry1 by RT-PCR. (C) RT-PCR from SCN RNA at ZT6 confirms the presence of novel Cry1 TSS capable of producing two different isoforms as labelled. The identity of all PCR products was confirmed by sequencing. (D) Quantitative polymerase chain reaction (qPCR) of the canonical and novel Cry1 TSS show antiphase cycling expression (mean \u00b1 SD) patterns.\n\nIn conclusion, this first temporal analysis of the SCN using RNA-sequencing reveals the presence of a twin-peaking transcriptional module with a suspected function in circadian control, and identifies thousands of novel transcripts, including a novel Cry1 isoform, which may play important roles in SCN function.\n\n## Materials and methods\n\n### SCN RNA sample preparation\n\nAll animal experimentation has been approved by the UK Home Office and the University of Oxford Ethical Review Board. Male C3H/HeH mice at 10\u201312 weeks of age were group housed in light-tight chambers equipped with light emitting diode (LED) lighting at 150 lx at the cage floor. After 7 days of acclimatisation, mice were singly housed for 7 days prior to tissue harvesting. Brains were removed at one of six Zeitgeber times (ZT) and immediately frozen on dry ice in optimal cutting temperature (OCT) mounting media (VWR, Lutterworth, United Kingdom). Eighteen frozen coronal sections at 15\u00a0\u03bcM were cut spanning the entire rostral to caudal region of the SCN and mounted onto polyethylene naphthalate (PEN) slides (Carl Zeiss Ltd., Cambridge, United Kingdom). LCM was carried out from dehydrated, Nissl-stained sections using the PALM system (Carl Zeiss Ltd., Cambridge, United Kingdom) as previously described (Dulneva et al., 2015). Tissue from five animals was pooled to generate one biological replicate sample (15 mice in total were used per ZT) and total RNA was purified using the RNeasy micro kit (Qiagen, Manchester, United Kingdom). RNA quality was determined using an RNA Picochip (Agilent, Stockport, United Kingdom), with RNA Integrity Number (RIN) values over 8 for all samples and average yield of approximately 10\u00a0ng per replicate. Approximately 1\u00a0ng of RNA was amplified using the SMARTer protocol (Takata Clontech Bio Europe SAS, France), and the resulting libraries were 100-bp paired-end sequenced on the HiSeq (Illumina, Fulbourn, United Kingdom; Wellcome Trust Centre for Human Genetics Sequencing Core). The average read pair count obtained was \u223c35\u00a0M per technical replicate (\u223c100\u00a0M per biological replicate).\n\n### Acquisition of additional RNA-seq data sets\n\nOne SCN, six brain and five liver transcriptome datasets from six independent studies (GSE54124, GSE30352, GSE54652, GSE41637, GSE41338 and GSE36874) were downloaded from the Gene Expression Omnibus (GEO) database to allow comparison of expression between tissues. PCA revealed separation of datasets according to tissue rather than experimental factors (Figure 1\u2014figure supplement 2A) suggesting negligible batch effects and therefore differences in expression are likely due to biological, rather than technical differences.\n\n### Read processing and mapping\n\nAll sequencing data was processed as follows unless otherwise specified. To retain only high quality reads an in-house script was used to: (i) trim ends of reads with a Phred base quality score below 3, (ii) remove specified over-represented adapter or contaminating sequences, (iii) remove reads with a length below 50 bp (or 40 bp if initial sequencing length was shorter (Merkin et al., 2012; Barbosa-Morais et al., 2012) and (iv) remove any reads with an average Phred quality score below 30. Reads were multimapped against the Genomic Mapping and Alignment Program for mRNA and EST sequences (GMAP; version 2012-07-20; Wu and Watanabe, 2005) and processed mm10/GRCm38.70 reference genome using Genomic Short Nucleotide Alignment Program (GSNAP; Wu and Nacu, 2010) with the option to consider novel splice sites. Data are deposited in GEO accession number GSE72095. Further details of all genes surveyed are shown in Supplementary file 2.\n\n### Identification of novel exons\n\nDe novo\u00a0transcript assembly was conducted using cufflinks v2.0.2 (Trapnell et al., 2010) allowing identification of 6610 novel exons. These were required not to overlap but were within a 10-kb window of any feature in the most recent Ensembl or UCSC gene annotation sets. Of these exons, only those (i) with a reciprocal overlap of <25% with any retroposed pseudogene (ucscRetroAli6), (ii) with a reciprocal overlap of <50% with any transposable element, (iii) with over 20 spliced reads in the novel exon, (iv) with over 10 spliced reads per 100 bp of the novel exon, (v) with over 20 reads that splice into a known transcript and were (vi) shorter than 3000 bp, were retained providing a robust set of 1013 novel exons. Further details of all novel exons surveyed are shown in Supplementary file 4.\n\n### Identification of lincRNAs\n\nIdentification of lincRNAs was conducted through the use of the CGAT NGS pipelines rnaseqtranscripts.py and rnaseqlncrna.py (Sims et al., 2014). The first pipeline identifies transfrags using cufflinks and retains those present in at least two samples. The second predicts lncRNAs by removing transfrags which overlap protein-coding exons. These lncRNAs are then assessed for coding potential using the coding potential calculator (CPC; Kong et al., 2007) and removed if annotated as \u2018coding\u2019 (CP score >1). Only the intergenic (>2\u00a0kb from any protein-coding gene), multiexonic lncRNAs with expression (\u22651 read) in over six biological replicates were chosen for further investigation. Further details of all lincRNAs surveyed are shown in Supplementary files 3 and 5.\n\n### Expression quantification\n\nTo determine the expression level for each gene in each sample, aligned reads were quantified using either HTSeq (version 0.5.4p1; Anders et al., 2015) or cuffNorm. Both methods used a GTF file generated from combining both the most recent Ensembl annotation and the identified set of lincRNAs. FPKM values were generated using cuffQuant and normalised with cuffNorm, whereas count tables were generated using HTseq and normalised using DESeq2 (Love et al., 2014).\n\n### Identification of SCN enriched genes\n\nTo identify SCN enriched genes, genes were required to show significantly greater expression (q <\u00a00.05, Benjamini\u2013Hochberg) in the brain than in liver and significantly greater expression (q <\u00a00.05, Benjamini\u2013Hochberg) in both this study\u2019s SCN dataset and the published SCN dataset (Azzi et al., 2014) relative to the brain using ANOVA in R. FPKM values were then averaged for each study and quantile normalised. Fold-change (FC) enrichment scores were calculated by averaging the FPKM values for each study for a particular tissue and then comparing this average to the mean FPKM value for another tissue. A gene was defined as being SCN enriched if it showed a threefold enrichment in the SCN over brain samples.\n\n### Identification of fluctuating genes\n\nThe R packages JTK_CYCLE (v2.1; Hughes et al., 2010) and DESeq2 (v 1.6.3) were used together to identify genes whose expression significantly altered over time with a sinusoidal oscillatory pattern. DESeq2 was used to perform a likelihood ratio test to determine the genes whose expression significantly altered over time (q <\u00a00.05, Benjamini\u2013Hochberg) and the JTK_CYCLE was used to identify genes whose expression followed 24-hr periodic waveforms (q <\u00a00.05, Bonferroni). To identify genes with non-sinusoidal oscillatory patterns, signed WGCNA (Langfelder and Horvath, 2008) was used to detect modules based upon gene coexpression. Modules were merged if their similarity was greater than 0.3 according to dendrogram height. Of the resultant 23 modules only the \u2018lightsteelblue1\u2019 module was investigated further because it was the only non-sinusoidal module whose expression pattern was not influenced by anomalous expression of a single sample at a particular timepoint. Genes of this module were defined as fluctuating if their expression significantly altered over time (q <\u00a00.05, Benjamini\u2013Hochberg; DESeq2).\n\n### Gene-annotation enrichment analysis\n\nEnrichment analysis was performed using the Database for Annotation, Visualization and Integrated Discovery (DAVID) Functional Annotation Tool v6.7 (Huang da et al., 2009). DAVID incorporates Fisher\u2019s exact test and was used to determine significant (q <\u00a00.05, Benjamini) GO terms and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathways. GO terms were passed through REVIGO to prune redundant terms with a semantic similarity of 0.5, 0.7 or 0.9, depending on the length of the GO term (Supek et al., 2011). Mammalian Phenotype (MP) enrichment was determined using the Mouse Genome Informatics (MGI) database (Eppig et al., 2015).\n\n### qRT-PCR and RT-PCR\n\nFor validation of results from RNA-seq, qRT-PCR was performed using the BioMark system (Fluidigm) as according to the two-step single-cell gene expression protocol using EvaGreen as described in the Real-Time PCR Analysis User Guide (PN 68000088, Fluidigm). For the process, 666\u00a0ng of starting RNA was used for each sample, which underwent 18 cycles of specific target amplification (STA) followed by a tenfold dilution. SCN CT values were normalised using the housekeeping genes ActB, Gapdh and eight genes which showed the most stable expression in the SCN according to sequencing data (Ankrd40, Nkiras1, Sar1a, Smarce1, Snrpn, Tpgs2, Tsn and Ywhaz). Primer sequences are listed in Supplementary file 1.\n\nFor RT-PCR of novel exons of Cry1, total RNA was purified from dissected SCN tissue and used to prepare cDNA (Revertaid, Fermentas). Primers representing previously annotated (5\u2019 GTGAGGAGGTTTTCTTGGAAG 3\u2019) and novel (5\u2019 CTTCTAGGGAATTGCGACTG 3\u2019) exons were used with a common reverse primer (5\u2019 CTGGGAAATACATCAGCTGG 3\u2019) to amplify products by RT-PCR followed by visualisation on an agarose gel and sequencing. The genomic coordinates of the novel exon are: chr10: 85,183,342 to 85,183,832 (mm10) with splicing into the following exon at 85,183,342 or 85,183,510.\n\n### In situ hybridisation\n\nBrains from male mice representing ZT6 were isolated as above and frozen sections at 15\u00a0\u03bcM were cut and mounted onto Superfrost slides (VWR). Regions of the selected transcripts were cloned into pCR4-TOPO (Life Technologies, Paisley, United Kingdom) for DIG-labelled riboprobe synthesis: Avp (1\u2013490\u00a0bp of accession number NM_009732.1), Vip (191\u2013715\u00a0bp of NM_011702.1), Scg2 (844\u20131287\u00a0bp of NM_009129.1), Grpr (1287\u20131741\u00a0bp of NM_008177.1) and NONCO7761 (3100003L05Rik; 32\u2013583\u00a0bp of NR_045907). Slide hybridisation and riboprobe detection was carried out as described previously (Chodroff et al., 2010).\n",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "c423a531-40f5-400f-9a93-0cb2d4f4d2cd",
+      "submission_id": "98554053-8658-4f45-a938-379b54aea7f1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Louis Pt\u00e1\u010dek, University of California, San Francisco , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.10518.032](https://doi.org/10.7554/eLife.10518.032)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"Temporal transcriptomics suggest that twin-peaking genes reset the clock\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Louis Pt\u00e1\u010dek (Reviewing Editor) and Aviv Regev as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this submission (manuscript and on-line tool), Pembroke and colleagues report on a transcriptomic profile and search tool for the suprachiasmatic nuclei (SCN), site of the brain's main circadian pacemaker. They improve on earlier studies of this type by 1) limiting the sampling of the tissue to the SCN itself (some other studies did not have this degree of neuroanatomical resolution and instead sample the SCN along with extraSCN tissue). 2) by sampling under the physiologically relevant light-dark cycle (as opposed to constant lighting). By combining RNAseq with 1 and 2, they provide exciting new evidence that many other transcripts cycle in a SCN specific manner as do long intergenic non-coding RNAs. Further, they show that some transcripts show two peaks in expression per 24h. Additionally they characterise a novel isoform of the key clock gene, Cry1.\n\nThey use established algorithms and analytic tools to identify functionally related groups of genes whose expression cycles and confirm these with qPCR In some instances they also confirm expression via in situ hybridisation. The manuscript is linked to an on-line tool which appears relatively easy to use and allows researchers to interrogate this database. This is a valuable resource, particularly for researchers with limited knowledge/insight into these types of investigations.\n\nEssential revisions:\n\n1) In their description of the times of rising and falling transcripts, the authors highlight that the peak in some transcripts occurs at time when light cannot shift mouse rhythms and while others peak at times when light can shift the mouse SCN clock. There is somewhat of an over interpretation in this aspect (paragraph two, subheading \u201cIdentification of novel twin-peaking synaptic module\u201d) since mice light-pulsed mice in constant dark will show shifts during the late subjective day or early subjective night. The authors show this is in Figure 2C. Indeed, light pulses during the day can counteract shifts to non-photic stimuli given at these times. This means that the apparent paucity/abundance of transcript may or may not be important for shifts to light. This aspect needs to be softened in the text.\n\n2) When using the on-line resource, it is clear that the level of variability of some transcripts can be very high. For example, for npy2r and avpr1a, the variability in night (ZT18 or 22) is much higher than at other time points. The authors need to comment on why this is the way it is and also describe further the functional consequences.\n\n3) In Figure 1C, is it GRP receptor transcript or GRP transcript itself that was measured?\n\n4) For the transcripts showing 2 peaks in expression per 24h, this pattern has been previously observed (Cagampang et al., 1998a, b) and this merits discussion.\n\n5) For reporting replicates, could the authors please provide details on the total number of mice used \u2013 is it 5 mice=1 data so samples from 15 mice are combined for the average expression profile at a given time point?\n\n6) As the authors themselves point out, the fact that they find 7x more oscillating transcripts than Panda 2002 is simply a reflection of improved methodologies, or the fact that their experiments were conducted in LD rather than DD conditions. Some might also arise due to more evolved statistical criteria. Discussion on this point is warranted.\n\n7) The claim that half the genes oscillating in the SCN do not oscillate in other tissues is unfortunately marred by the fact that they are comparing their L:D dataset to D:D datasets, as the authors state. This should be discussed.\n",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "095117ad-0856-4bb1-8fd5-8660bda9f049",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C1",
+      "claim": "The mammalian suprachiasmatic nucleus (SCN) drives daily rhythmic behavior and physiology.",
+      "claim_type": "EXPLICIT",
+      "source": "The mammalian suprachiasmatic nucleus (SCN) drives daily rhythmic behavior and physiology, yet a detailed understanding of its coordinated transcriptional programmes is lacking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in circadian biology supported by scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "4bf7179a-164b-4498-8f5b-93bcb66b580d",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C2",
+      "claim": "7-times more genes exhibited a classic sinusoidal expression signature than previously observed in the SCN.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that 7-times more genes exhibited a classic sinusoidal expression signature than previously observed in the SCN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the RNA-seq data analysis comparing the current study to previous microarray studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "3f5af337-19e2-4f92-a652-65a00c0cbeb7",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C3",
+      "claim": "766 genes unexpectedly peaked twice, near both the start and end of the dark phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Another group of 766 genes unexpectedly peaked twice, near both the start and end of the dark phase",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by WGCNA analysis of the RNA-seq data identifying the twin-peaking module.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "b399423c-4d55-4c19-827c-3aacdefa03f7",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C4",
+      "claim": "The twin-peaking group is significantly enriched for synaptic transmission genes that are crucial for light-induced phase shifting of the circadian clock.",
+      "claim_type": "EXPLICIT",
+      "source": "this twin-peaking group is significantly enriched for synaptic transmission genes that are crucial for light-induced phase shifting of the circadian clock.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by GO enrichment analysis of the twin-peaking genes and their known roles in phase shifting.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "1a904fe7-1ace-48ba-b45c-1e31c3e92f5d",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C5",
+      "claim": "341 intergenic non-coding RNAs show specific circadian expression variation.",
+      "claim_type": "EXPLICIT",
+      "source": "341 intergenic non-coding RNAs, together with novel exons of annotated protein-coding genes, including Cry1, also show specific circadian expression variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the identification and temporal analysis of lincRNAs from the RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "2b7eea79-4d36-47b3-ad1e-e976a7b2b70b",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C6",
+      "claim": "Novel exons of annotated protein-coding genes, including Cry1, show specific circadian expression variation.",
+      "claim_type": "EXPLICIT",
+      "source": "341 intergenic non-coding RNAs, together with novel exons of annotated protein-coding genes, including Cry1, also show specific circadian expression variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the identification of novel exons and their temporal expression patterns in the RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "67f530bf-e783-4ec5-afa5-5976ade6c28d",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C7",
+      "claim": "Transcriptional timing in the SCN is gating clock resetting mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our data provide an important chronobiological resource (www.wgpembroke.com/shiny/SCNseq/) and allow us to propose that transcriptional timing in the SCN is gating clock resetting mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the correlation between twin-peaking gene expression and phase response curve susceptibility windows.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "04675ed7-d199-4695-afba-28a57cd5e619",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C8",
+      "claim": "The suprachiasmatic nucleus (SCN) of the hypothalamus is the seat of the principal circadian clock in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "The suprachiasmatic nucleus (SCN) of the hypothalamus is the seat of the principal circadian clock in mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge in chronobiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "09e54dc6-a26c-44f8-a18f-00c62fbd21ce",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C9",
+      "claim": "The SCN is entrained by photic information and other external stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Entrained by photic information and other external stimuli, this group of neurons maintains 24-hr rhythms of physiology and behaviour by synchronising molecular oscillators in the brain and peripheral tissues (Welsh et al., 2010; Ko and Takahashi, 2006; Maywood et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "cebf8be9-6e78-4a26-a4d0-1efab13bf55f",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C10",
+      "claim": "The SCN maintains 24-hr rhythms of physiology and behaviour by synchronising molecular oscillators in the brain and peripheral tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Entrained by photic information and other external stimuli, this group of neurons maintains 24-hr rhythms of physiology and behaviour by synchronising molecular oscillators in the brain and peripheral tissues (Welsh et al., 2010; Ko and Takahashi, 2006; Maywood et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "5a6f07d8-fd7d-4aed-8c21-d02ae6437918",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C11",
+      "claim": "The transcriptional output of the SCN is critical for biological adaptation to night and day.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcriptional output of the SCN is thus critical for this fundamental biological adaptation to night and day (Panda et al., 2002; Zhang et al., 2014b; Li et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "aae67735-5fab-444c-86a8-b2f4c316cd66",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C12",
+      "claim": "An early microarray study of the SCN identified 650 genes displaying circadian oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "An early microarray study of the SCN identified 650 genes displaying circadian oscillations (Panda et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the Panda et al. 2002 study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "a7580b76-c9b1-4d03-966b-d19ea20c1b7b",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C13",
+      "claim": "The number of cycling genes identified in previous studies was limited by the number of genes surveyed, the low signal-to-noise ratio of certain genes, and the use of experimental samples likely to include a large proportion of the surrounding hypothalamic tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this number will have been limited by the number of genes surveyed, the low signal-to-noise ratio of certain genes (e.g. Per2), and the use of experimental samples likely to include a large proportion of the surrounding hypothalamic tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on methodological limitations of previous studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "1d89182c-ad62-4417-8337-a0768ea27c36",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C14",
+      "claim": "The study of heterogeneous samples will result in reduced amplitudes of oscillations for genes that cycle asynchronously in different brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The study of such heterogeneous samples will result in reduced amplitudes of oscillations for genes that cycle asynchronously in different brain regions (Zhang et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zhang et al. 2014b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "ffc52cfe-f118-45b9-b4e8-6ad4be9c04ce",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C15",
+      "claim": "Over half of all protein-coding genes show circadian oscillations in the mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study estimated that over half of all protein-coding genes show circadian oscillations in the mouse, although only 642 could be identified in hypothalamic samples (Zhang et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zhang et al. 2014b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "ab1bd179-cac0-4348-9797-0734297a7677",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C16",
+      "claim": "Only 642 cycling genes could be identified in hypothalamic samples.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study estimated that over half of all protein-coding genes show circadian oscillations in the mouse, although only 642 could be identified in hypothalamic samples (Zhang et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Zhang et al. 2014b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "9f89a61f-5f76-4414-9e9f-13d7b7fc8ae6",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C17",
+      "claim": "Many circadian transcriptomic surveys of mammalian systems have utilised constant lighting conditions to focus on the endogenous, free-running circadian clock.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, many circadian transcriptomic surveys of mammalian systems have utilised constant lighting conditions to focus on the endogenous, free-running circadian clock and have not assessed more physiologically relevant light/dark (LD) cycles (Zhang et al., 2014b; Panda et al., 2002; Hughes et al., 2009; Hurley et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "41392f4d-296a-4d8d-a093-0aba280c5dfd",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C18",
+      "claim": "Previous circadian transcriptomic surveys have not assessed more physiologically relevant light/dark (LD) cycles.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, many circadian transcriptomic surveys of mammalian systems have utilised constant lighting conditions to focus on the endogenous, free-running circadian clock and have not assessed more physiologically relevant light/dark (LD) cycles (Zhang et al., 2014b; Panda et al., 2002; Hughes et al., 2009; Hurley et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "3ca0fb82-a1dc-48a7-82f0-7abd10fe3706",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C19",
+      "claim": "LCM accurately isolated the entire SCN for transcriptional profiling.",
+      "claim_type": "EXPLICIT",
+      "source": "LCM accurately isolated the entire SCN for transcriptional profiling (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the figure showing before and after LCM images.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "57d44cea-33b3-48c1-a776-e933661d81dd",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C20",
+      "claim": "Pooled dissected tissue from five adult male mice provided one of three replicates for each of six timepoints over a 12:12 LD cycle (ZT2, 6, 10, 14, 18 and 22).",
+      "claim_type": "EXPLICIT",
+      "source": "Pooled dissected tissue from five adult male mice provided one of three replicates for each of six timepoints over a 12:12 LD cycle (ZT2, 6, 10, 14, 18 and 22).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design and sampling strategy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "0561c150-e794-44c0-9243-9978f8c83495",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C21",
+      "claim": "Sequencing RNA in each replicate generated up to 133 million paired-end reads of which 45\u201365% were subsequently mapped to the mouse genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequencing RNA in each replicate generated up to 133 million paired-end reads of which 45\u201365% were subsequently mapped to the mouse genome allowing for gene expression level estimation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sequencing results and mapping efficiency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "ecf0d3cd-5e41-4295-8c89-5742bea50b20",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C22",
+      "claim": "The majority (8/10) of key clock genes show significant cycling (DESeq2 and JTK Cycle; q < 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "The majority (8/10) show significant cycling (DESeq2 and JTK Cycle; *q < 0.05) and peak at the expected timepoint denoted by a yellow box (Ko and Takahashi, 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the heatmap in Figure 1A and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "ede5d0ba-1ca1-4759-b500-1fda66f9da8c",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C23",
+      "claim": "Key clock genes peak at the expected timepoint.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority (8/10) show significant cycling (DESeq2 and JTK Cycle; *q < 0.05) and peak at the expected timepoint denoted by a yellow box (Ko and Takahashi, 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the heatmap in Figure 1A and citation to Ko and Takahashi 2006.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "a520019f-9e73-4398-a7f2-303957bb817e",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C24",
+      "claim": "Global expression differences were apparent between timepoints, as revealed by principal component analysis (PCA).",
+      "claim_type": "EXPLICIT",
+      "source": "Global expression differences were apparent between timepoints, as revealed by principal component analysis (PCA) (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the PCA plot showing separation by timepoint.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "e624e09b-5c43-4b61-b9db-92250aae9b7f",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C25",
+      "claim": "Sequencing batch effects are minimal.",
+      "claim_type": "EXPLICIT",
+      "source": "this verifies the temporal expression of our LCM SCN transcriptome dataset and indicates that any sequencing batch effects are minimal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the expected cycling patterns of clock genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "110da36a-3473-4d3c-a2ae-7473ea3d52eb",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C26",
+      "claim": "Quantitative (q)PCR of the LCM SCN samples showed a high degree of concordance with the RNA-seq expression data.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, quantitative (q)PCR of the LCM SCN samples showed a high degree of concordance with the RNA-seq expression data (Figure 1\u2014figure supplement 1C\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the correlation analysis between qPCR and RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "97650215-d1f9-4f19-ac51-343a774f81ad",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C27",
+      "claim": "SCN transcriptomes are separable from those in other brain regions and non-CNS tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Our SCN transcriptomes are also separable from those in other brain regions and non-CNS tissues (Zhang et al., 2014b; Brawand et al., 2011; Merkin et al., 2012; Menet et al., 2012; Barbosa-Morais et al., 2012; Azzi et al., 2014) (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by PCA analysis comparing multiple datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "08b9e111-c513-4d82-b4b3-a0ef92155094",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C28",
+      "claim": "Four key SCN markers (Avp, Vip, Grp and Six6) showed a far greater expression enrichment in the SCN over other brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, four key SCN markers (Avp, Vip, Grp and Six6) showed a far greater expression enrichment in the SCN over other brain regions (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the fold-change enrichment analysis shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "812fe819-93bc-49fb-858b-a37db076e8d5",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C29",
+      "claim": "146 genes were identified whose expression is highly enriched in the SCN.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 146 genes were identified whose expression is highly enriched in the SCN (Materials and methods; analysis of variance (ANOVA), q < 0.05)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of expression data across tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "c3dea026-9985-4f2a-8146-bfc556665dea",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C30",
+      "claim": "4 out of 4 SCN enriched genes were confirmed using in situ hybridisation (ISH).",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 146 genes were identified whose expression is highly enriched in the SCN (Materials and methods; analysis of variance (ANOVA), q < 0.05) of which 4 out of 4 were confirmed using in situ hybridisation (ISH) (Figure 1\u2014figure supplement 2C; Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ISH images showing SCN-specific expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "b16faf0d-1b46-47bc-af8d-62c362ac25dd",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C31",
+      "claim": "SCN enriched genes included many known SCN markers, as well as others not previously implicated in circadian biology or in SCN function.",
+      "claim_type": "EXPLICIT",
+      "source": "These genes included many known SCN markers, as well as others not previously implicated in circadian biology or in SCN function (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison with known SCN markers and literature.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "b4abd701-aa2a-45ee-b10b-13784738d535",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C32",
+      "claim": "SCN enriched genes show significant enrichment for the Mouse Phenotype term 'abnormal circadian rhythm' (q = 1.2\u00d710-4).",
+      "claim_type": "EXPLICIT",
+      "source": "Their significant enrichments for the Mouse Phenotype term 'abnormal circadian rhythm' (q = 1.2\u00d710-4)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by enrichment analysis using the MGI database.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "189d7487-e69e-4282-8118-b944ddfa7d98",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C33",
+      "claim": "SCN enriched genes show significant enrichment for Gene Ontology (GO) annotations relating to signalling pathways (q < 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "and for Gene Ontology (GO) annotations relating to signalling pathways (q < 0.05; Figure 1B) are consistent with the SCN's role as the master pacemaker.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GO enrichment analysis shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "155bd6a3-ab04-4984-a242-9d2132ca3d46",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C34",
+      "claim": "Enrichment for the flagellum annotation and G-protein coupled receptor (GPCR) signalling pathways may reflect the roles of primary cilia as GPCR signalling hubs.",
+      "claim_type": "EXPLICIT",
+      "source": "Enrichment for the flagellum annotation and G-protein coupled receptor (GPCR) signalling pathways (Figure 1B) may reflect the roles of primary cilia as GPCR signalling hubs (Omori et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis based on enrichment analysis and citation to Omori et al. 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "0b2d951c-232f-4342-9b8e-8efdccb13233",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C35",
+      "claim": "GPCR-mediated neuropeptide signalling via cilia may be important for SCN function.",
+      "claim_type": "EXPLICIT",
+      "source": "These results thus suggest that GPCR-mediated neuropeptide signalling via cilia may be important for SCN function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the enrichment analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "f22179be-1b63-4d53-a2ff-778dfe52ef81",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C36",
+      "claim": "4569 genes (24% of 18,889 Ensembl-annotated coding or non-coding models expressed in over six samples) oscillated in a sinusoidal manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We next identified 4569 genes (24% of 18,889 Ensembl-annotated coding or non-coding models expressed (\u22651 read) in over six samples) whose expression oscillated in a sinusoidal manner (Figure 2\u2014figure supplement 1A,B) according to both JTK Cycle and DESeq2 approaches (Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis using JTK Cycle and DESeq2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "c3768092-799b-4c94-8674-c60e22b6d0de",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C37",
+      "claim": "The number of cycling genes is sevenfold higher than previously reported in the SCN.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this number of cycling genes is sevenfold higher than previously reported in the SCN (Panda et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with the Panda et al. 2002 study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "cbd8101c-1f95-402c-b6dd-873eef42d959",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C38",
+      "claim": "The large increase in cycling genes is likely to reflect improved anatomical enrichment of the SCN tissue, greater sensitivity and specificity of statistical approaches, and sampling under LD as opposed to DD conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This large increase is likely to reflect a combination of factors: first, the significantly improved anatomical enrichment of the SCN tissue we have surveyed; second, the greater sensitivity and specificity of the statistical approaches we have applied (Hughes et al., 2010); and finally, our sampling approach under LD as opposed to the constant dark (DD) conditions utilised in earlier studies (Panda et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on methodological improvements over previous studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "5f17aa0f-d948-4f53-b67e-796d753963f9",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C39",
+      "claim": "The sampling approach under LD allows detection of cycling genes that may be physiologically relevant to light exposure or light-induced transcriptional cascades that are undetectable as cycling under DD.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, we are able to detect cycling genes that may be physiologically relevant to light exposure or light-induced transcriptional cascades that are undetectable as cycling under DD (Ueda et al., 2002; Leming et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies showing LD-specific cycling genes.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "f87fe346-ed49-4089-bb60-3805e4767aaf",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C40",
+      "claim": "SCN cycling genes were enriched for GO terms relating to key processes such as translation and mitochondrion-related genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our new collection of SCN cycling genes were enriched for GO terms relating to key processes such as translation and mitochondrion-related genes, in line with previous findings (Figure 2\u2014figure supplement 1C; Panda et al., 2002).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GO enrichment analysis and citation to Panda et al. 2002.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "0d0aaef5-807e-43aa-930e-4ff557cd6ed7",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C41",
+      "claim": "De novo transcription has been shown to drive rhythmicity of approximately 20\u201330% of all cycling genes.",
+      "claim_type": "EXPLICIT",
+      "source": "De novo transcription has been shown to drive rhythmicity of approximately 20\u201330% of all cycling genes (Koike et al., 2012; Menet et al., 2012), which illustrates the importance of post-transcriptional regulation in shaping the circadian transcriptome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Koike et al. 2012 and Menet et al. 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "feeca137-cb80-46d8-bca9-a55dc23d8e0e",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C42",
+      "claim": "Post-transcriptional regulation is important in shaping the circadian transcriptome.",
+      "claim_type": "EXPLICIT",
+      "source": "De novo transcription has been shown to drive rhythmicity of approximately 20\u201330% of all cycling genes (Koike et al., 2012; Menet et al., 2012), which illustrates the importance of post-transcriptional regulation in shaping the circadian transcriptome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fact that only 20-30% of cycling is driven by de novo transcription.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "834e4c22-9459-48db-b150-36c551bc2b97",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C43",
+      "claim": "Novel enrichments among cycling genes in terms relating to RNA splicing and ribonucleoprotein (RNP) complexes suggest that these processes may establish oscillatory expression patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observe novel enrichments among cycling genes in terms relating to RNA splicing and ribonucleoprotein (RNP) complexes (Figure 2\u2014figure supplement 1C) which suggests that these processes may establish oscillatory expression patterns (Wang et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis based on enrichment analysis and citation to Wang et al. 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "4aa8178b-4f27-4d31-b3ec-13b884f208d7",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C44",
+      "claim": "Approximately half of the SCN cycling genes (2451/4569) showed no evidence for sinusoidal expression in 12 other tissues, including the whole hypothalamus.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately half of the SCN cycling genes (2451/4569) showed no evidence for sinusoidal expression in 12 other tissues, including the whole hypothalamus, based on published circadian expression data (JTK Cycle; q < 0.05; Figure 2\u2014figure supplement 1D) (Zhang et al., 2014b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison with published datasets from Zhang et al. 2014b.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "195c540e-84a7-4fda-913a-336f59b1dd26",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C45",
+      "claim": "Many genes cycle exclusively in the SCN, or only cycle under a 12:12 LD lighting schedule rather than under constant dark conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that many genes cycle exclusively in the SCN, or only cycle under a 12:12 LD lighting schedule rather than under the constant dark conditions used previously (Zhang et al., 2014b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison with other tissues and lighting conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "b3c7eac1-b790-4932-851a-ab344d6ef841",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C46",
+      "claim": "Six of the nine genes which cycled significantly across all 12 other tissues also cycled in the LCM SCN samples (Arntl, Dbp, Nr1d2, Per2, Per3 and Tsc22d3).",
+      "claim_type": "EXPLICIT",
+      "source": "Six of the nine genes which cycled significantly across all 12 other tissues (q < 0.05) also cycled in the LCM SCN samples (Arntl, Dbp, Nr1d2, Per2, Per3 and Tsc22d3) suggesting a core set of universally cycling genes (Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison across multiple tissue datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "037dcf9d-b775-4eba-864d-c3b8cf7320fa",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C47",
+      "claim": "There is a core set of universally cycling genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Six of the nine genes which cycled significantly across all 12 other tissues (q < 0.05) also cycled in the LCM SCN samples (Arntl, Dbp, Nr1d2, Per2, Per3 and Tsc22d3) suggesting a core set of universally cycling genes (Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis based on the overlap of cycling genes across tissues.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "8f929da2-967d-49b1-a039-664f2485b67f",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C48",
+      "claim": "The LCM SCN cycling gene list significantly overlapped with those cycling in 8 of 12 other tissues (q < 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this notion our LCM SCN cycling gene list significantly overlapped with those cycling in 8 of 12 other tissues (q < 0.05), as well as those cycling in an SCN microarray study (Zhang et al., 2014b; Panda et al., 2002) (Figure 2\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical comparison of cycling gene lists.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "8d0e260f-1e37-4ef6-a298-4b2383a785b2",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C49",
+      "claim": "The SCN, hypothalamus and cerebellum showed the greatest overlap of their circadian transcriptomes.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the SCN, hypothalamus and cerebellum showed the greatest overlap of their circadian transcriptomes (Figure 2\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the overlap analysis shown in the figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "e5f5c199-991d-4e5b-bb70-5a05f12cf44e",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C50",
+      "claim": "A single module of 766 genes displayed two peaks of expression at ZT14 and ZT22.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Weighted Correlation Network Analysis (WGCNA), which does not assume a single mode of temporal variation, we identified a single module of 766 genes, which instead of adopting a sinusoidal profile, displayed two peaks of expression at ZT14 and ZT22 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by WGCNA analysis of the RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "b47ffacc-2889-4ba0-92c2-2acd3acbbed4",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C51",
+      "claim": "496 genes from the twin-peaking module individually exhibited statistically significant temporal fluctuations (DESeq2, q < 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "From this 'twin-peaking' module 496 genes individually exhibited statistically significant temporal fluctuations (DESeq2, q < 0.05), of which 17 of 17 were validated by qPCR (Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis and qPCR validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "ac7784df-9dbc-43f7-800f-99ac65eb2515",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C52",
+      "claim": "17 of 17 twin-peaking genes were validated by qPCR.",
+      "claim_type": "EXPLICIT",
+      "source": "From this 'twin-peaking' module 496 genes individually exhibited statistically significant temporal fluctuations (DESeq2, q < 0.05), of which 17 of 17 were validated by qPCR (Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR validation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "3167cead-6424-40eb-aa05-0d0b2a098b6c",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C53",
+      "claim": "The twin-peaking profile is distinct from previously described 12-hr harmonics.",
+      "claim_type": "EXPLICIT",
+      "source": "This profile is also distinct from previously described 12-hr harmonics (Cagampang et al., 1998a; 1998b; Hughes et al., 2009), and prior to this, only single genes from individual studies were shown to possess similar expression patterns (Shinohara et al., 1993; Cagampang et al., 1998c; 1998d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on 12-hr harmonics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "eb43e64b-0dad-4929-9a3b-38cb6b68680a",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C54",
+      "claim": "Prior to this study, only single genes from individual studies were shown to possess twin-peaking expression patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "This profile is also distinct from previously described 12-hr harmonics (Cagampang et al., 1998a; 1998b; Hughes et al., 2009), and prior to this, only single genes from individual studies were shown to possess similar expression patterns (Shinohara et al., 1993; Cagampang et al., 1998c; 1998d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "db9a79f2-e1d7-46b7-81ae-da875dfb58d7",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C55",
+      "claim": "Isoforms of protein kinase C (Prkcb and Prkcg) exhibit a twin-peaking profile in rat SCN.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, isoforms of protein kinase C (Prkcb and Prkcg) exhibit a twin-peaking profile in rat SCN similar to that observed in our RNA-seq data (Cagampang et al., 1998c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cagampang et al. 1998c.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "c5efc151-bc1b-46ba-968f-f231b4b26473",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C56",
+      "claim": "Functional annotations related to synaptic transmission, calcium signalling and gated channel activity were greatly and significantly enriched among twin-peaking genes (q < 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Functional annotations related to synaptic transmission, calcium signalling and gated channel activity were greatly and significantly enriched among these twin-peaking genes (q < 0.05; Figure 2B), suggesting a circadian component to establishing the electrophysiological environment of the SCN.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GO enrichment analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "e4ad1366-c2a3-4cc4-8d3d-d0c8979e774b",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C57",
+      "claim": "Twin-peaking genes suggest a circadian component to establishing the electrophysiological environment of the SCN.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional annotations related to synaptic transmission, calcium signalling and gated channel activity were greatly and significantly enriched among these twin-peaking genes (q < 0.05; Figure 2B), suggesting a circadian component to establishing the electrophysiological environment of the SCN.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis based on the functional enrichment of twin-peaking genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "eeba1b76-fa0c-40a3-9097-1d376d8d38e3",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C58",
+      "claim": "The peaking of expression at ZT14 and ZT22 coincides with phase shifting 'susceptibility windows'.",
+      "claim_type": "EXPLICIT",
+      "source": "The peaking of expression at ZT14 and ZT22 coincides with phase shifting 'susceptibility windows'; time periods in which the photic input permits phase shifting (or 'resetting') of the clock (Ding et al., 1994; Iyer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on phase shifting.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "23a0d865-b9e1-4185-b7f4-ac9f72661b79",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C59",
+      "claim": "A light impulse at ZT14 will initiate a phase delay of the clock.",
+      "claim_type": "EXPLICIT",
+      "source": "This is demonstrated by the phase response curve (PRC): a light impulse at ZT14 will initiate a phase delay of the clock whereas a light impulse at ZT22 will initiate a phase advance (Figure 2C) (Golombek and Rosenstein, 2010; Ding et al., 1994).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to studies on phase response curves.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "f522b23e-b50b-4814-9f17-c667835434f8",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C60",
+      "claim": "A light impulse at ZT22 will initiate a phase advance.",
+      "claim_type": "EXPLICIT",
+      "source": "This is demonstrated by the phase response curve (PRC): a light impulse at ZT14 will initiate a phase delay of the clock whereas a light impulse at ZT22 will initiate a phase advance (Figure 2C) (Golombek and Rosenstein, 2010; Ding et al., 1994).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to studies on phase response curves.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "cfb48847-0559-4bb5-9e3c-42c93a4035ba",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C61",
+      "claim": "At all other timepoints assessed under an LD cycle the twin-peaking genes exhibited low expression levels exactly when the clock is resistant to phase shifts.",
+      "claim_type": "EXPLICIT",
+      "source": "At all other timepoints we assessed under an LD cycle the twin-peaking genes exhibited low expression levels exactly when the clock is resistant to phase shifts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the expression data and comparison with the phase response curve.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "8629885e-22c5-45c4-9d11-4b5e01553741",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C62",
+      "claim": "A threshold level of gene expression needs to be exceeded for light to activate the phase shifting pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests a possible transcriptional gating mechanism in which a threshold level of gene expression needs to be exceeded for light to activate this phase shifting pathway (Ding et al., 1994; Gillette and Mitchell, 2002; Iyer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the correlation between expression and phase shifting susceptibility.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "e663fc49-abbb-4ada-ad70-f23ef595b71b",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C63",
+      "claim": "Genes previously known to participate in the light-induced phase shifting pathway display the twin-peaking pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes previously known to participate in this light-induced phase shifting pathway display this twin-peaking pattern (Figure 2D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the pathway diagram in Figure 2D showing twin-peaking genes.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "7738e24b-6d09-4d1c-8e9f-eee2d850ddb5",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C64",
+      "claim": "Pharmacological inhibition of Grin2a/b, Camk2a, Nos1, and Ryr2 blocks light-induced phase shifts.",
+      "claim_type": "EXPLICIT",
+      "source": "and their pharmacological inhibition (e.g. for Grin2a/b, Camk2a, Nos1, Ryr2) blocks light-induced phase shifts (Ebling et al., 1991; Yokota et al., 2001; Ding et al., 1998; 1994; 2007; 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to pharmacological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "8bd75dd0-c176-4e4d-89a0-d980ed60486e",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C65",
+      "claim": "Many genes whose expression peaks singly at ZT14 have functions related to actin cytoskeleton reorganisation and/or to small GTPase signalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Many genes whose expression peaks singly at ZT14 have functions related to actin cytoskeleton reorganisation and/or to small GTPase signalling (Figure 2\u2014figure supplement 1F\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GO enrichment analysis and peak phase distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "64810116-c494-4dfe-b928-efda3c4b4f2e",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C66",
+      "claim": "Actin depolymerisation is important for phase delays but not phase advances.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports the hypothesis that actin depolymerisation is important for phase delays but not phase advances (Gerber et al., 2013; Cabej, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on actin and phase shifting.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "197bfa5e-ccf8-4bd9-b9eb-08de5f796639",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C67",
+      "claim": "Oscillations in the SCN transcriptome play an important role in gating the differential responses to light.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our data indicate that oscillations in the SCN transcriptome play an important role in gating the differential responses to light, a fundamental circadian process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the twin-peaking gene analysis and their correlation with phase shifting.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "2c3795bc-59f4-4844-9ce7-eb2fc97b8035",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C68",
+      "claim": "Light exposure during constant conditions can modify the processing of non-photic signals by the SCN.",
+      "claim_type": "EXPLICIT",
+      "source": "Light exposure during constant conditions can still modify the processing of non-photic signals by the SCN (Challet and Pevet, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Challet and Pevet 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "b7222ec8-50dd-4f0d-a908-2764affece78",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C69",
+      "claim": "Novelty-induced running in the subjective mid-day induces a phase advance in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, novelty-induced running in the subjective mid-day induces a phase advance in mice, although a 1-hr light pulse administered after access to running wheels can significantly attenuate this affect (Biello and Mrosovsky, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Biello and Mrosovsky 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "0f87813d-0bdf-4e87-9981-763ff9ff25f2",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C70",
+      "claim": "A 1-hr light pulse administered after access to running wheels can significantly attenuate the phase advance induced by novelty-induced running.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, novelty-induced running in the subjective mid-day induces a phase advance in mice, although a 1-hr light pulse administered after access to running wheels can significantly attenuate this affect (Biello and Mrosovsky, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Biello and Mrosovsky 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "bb388799-0a3d-4b51-aafb-73a67eaecd70",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C71",
+      "claim": "3187 multiexonic long intergenic non-coding RNA (lincRNAs; >200 nucleotides) loci were identified from the SCN transcriptome data.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 3187 multiexonic long intergenic non-coding RNA (lincRNAs; >200 nucleotides) loci were identified from the SCN transcriptome data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the lincRNA identification pipeline applied to the RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "bb53a55a-7399-438d-9a49-9b67663362ff",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C72",
+      "claim": "Identified lincRNAs displayed evidence of significant sequence conservation.",
+      "claim_type": "EXPLICIT",
+      "source": "Considered together, they displayed evidence of significant sequence conservation, had lower expression and fewer exons than protein-coding genes in line with lncRNAs identified in other mammalian tissues (Zhang et al., 2014a; Cabili et al., 2011; Ponjavic et al., 2007)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by conservation analysis shown in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "a761f9df-8ade-4494-bed9-9a437ce9a792",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C73",
+      "claim": "Identified lincRNAs had lower expression than protein-coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Considered together, they displayed evidence of significant sequence conservation, had lower expression and fewer exons than protein-coding genes in line with lncRNAs identified in other mammalian tissues (Zhang et al., 2014a; Cabili et al., 2011; Ponjavic et al., 2007)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by expression comparison shown in Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "424b0d49-88ca-4363-acfc-1259d870e734",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C74",
+      "claim": "Identified lincRNAs had fewer exons than protein-coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Considered together, they displayed evidence of significant sequence conservation, had lower expression and fewer exons than protein-coding genes in line with lncRNAs identified in other mammalian tissues (Zhang et al., 2014a; Cabili et al., 2011; Ponjavic et al., 2007)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by exon number comparison shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "1b43556e-030d-43e1-b198-e02ba6874e98",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C75",
+      "claim": "Identified lincRNAs did not display correlated expression with that of the nearest protein-coding gene suggesting these lincRNAs are often not functioning as enhancer (e)RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "but did not display correlated expression with that of the nearest protein-coding gene suggesting these lincRNAs are often not functioning as enhancer (e)RNAs (Figure 3\u2014figure supplement 1A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 3\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "711a5004-a686-4658-b6ed-28b3145b7110",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C76",
+      "claim": "341 (11%) of the identified lincRNAs displayed significant temporal fluctuation.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these lincRNAs, 341 (11%) displayed significant temporal fluctuation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of lincRNA expression over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "f3c50d0e-0ada-44d5-9a8d-f273598e42c2",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C77",
+      "claim": "The presence of lincRNA NONCO7761 (3100003L05Rik) in the SCN was confirmed by ISH at ZT6.",
+      "claim_type": "EXPLICIT",
+      "source": "including lincRNA NONCO7761 (3100003L05Rik) whose presence in the SCN was confirmed by ISH at ZT6 (Figure 3D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ISH image in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "f3e5d8e3-686f-455a-90da-df86c73e9005",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C78",
+      "claim": "lincRNA NONCO7761 (3100003L05Rik) peaks at both ZT6 and ZT18 as confirmed by qPCR.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as by qPCR to peak at both ZT6 and ZT18 (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "253f852b-3bee-4f6e-9d5d-147bbe9ad524",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C79",
+      "claim": "28 fluctuating lincRNAs peaked at ZT14 and ZT22.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, 28 of these fluctuating lincRNAs peaked at ZT14 and ZT22 (Figure 3B\u2013C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the heatmap in Figure 3C showing twin-peaking lincRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "f6400525-e364-4f82-953b-de0fbf96b395",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C80",
+      "claim": "Twin-peaking lincRNAs may modulate or be modulated by the transcriptional or post-transcriptional regulation of protein-coding genes of the twin-peaking synaptic module.",
+      "claim_type": "EXPLICIT",
+      "source": "and thus may modulate or be modulated by the transcriptional or post-transcriptional regulation of protein-coding genes of the twin-peaking synaptic module described earlier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the temporal correlation between twin-peaking lincRNAs and protein-coding genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "4dee57b7-eccf-4837-ad92-f4fa7c677337",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C81",
+      "claim": "1013 novel exons were identified \u2013 transcribed regions of the transcriptome which have not been annotated by Ensembl or UCSC, but contribute to alternative transcripts in a known gene.",
+      "claim_type": "EXPLICIT",
+      "source": "We also identified 1013 novel exons \u2013 transcribed regions of the transcriptome which have not been annotated by Ensembl or UCSC, but contribute to alternative transcripts in a known gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by de novo transcript assembly and filtering criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "54e572b9-c63b-4ab9-9154-138b3852a585",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C82",
+      "claim": "A novel exon of the core clock gene Cry1 appears to represent an alternative transcriptional start site (TSS).",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, we focused on the novel exon of the core clock gene Cry1 which appears to represent an alternative transcriptional start site (TSS) (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the genomic structure shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "3b241dfc-d3f8-4633-865f-7be4d1abe2c2",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C83",
+      "claim": "The novel exon of Cry1 is 322 bp in size.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite its large size (322 bp) and high expression, the novel exon present in the first intron of Cry1 had remained elusive, yet is confirmed by reverse transcription polymerase chain reaction (RT-PCR) from SCN tissue (Figure 4C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing the novel Cry1 exon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "1fc950ce-d758-469a-9cb2-ab56073599b1",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C84",
+      "claim": "The novel exon of Cry1 is highly expressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite its large size (322 bp) and high expression, the novel exon present in the first intron of Cry1 had remained elusive, yet is confirmed by reverse transcription polymerase chain reaction (RT-PCR) from SCN tissue (Figure 4C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text describing the novel Cry1 exon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "a169e2dd-b6ff-495e-b11d-7eff6e237d6c",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C85",
+      "claim": "The novel exon of Cry1 is present in the first intron of Cry1.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite its large size (322 bp) and high expression, the novel exon present in the first intron of Cry1 had remained elusive, yet is confirmed by reverse transcription polymerase chain reaction (RT-PCR) from SCN tissue (Figure 4C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "e784046a-e465-4183-8de6-10f3d2e54da7",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C86",
+      "claim": "The novel exon of Cry1 is confirmed by reverse transcription polymerase chain reaction (RT-PCR) from SCN tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite its large size (322 bp) and high expression, the novel exon present in the first intron of Cry1 had remained elusive, yet is confirmed by reverse transcription polymerase chain reaction (RT-PCR) from SCN tissue (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RT-PCR results shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "251218eb-44c3-4212-8bdd-957e89b35798",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C87",
+      "claim": "The novel and canonical Cry1 isoforms are expressed in antiphase.",
+      "claim_type": "EXPLICIT",
+      "source": "The novel and canonical Cry1 isoforms are expressed in antiphase, as confirmed by qPCR from LCM SCN samples (Figure 4D), indicating an unanticipated mode of temporal regulation in the SCN for this core clock gene.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qPCR data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "72ade6f5-7eff-4b07-8b61-bd4c00483e98",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C88",
+      "claim": "The antiphase expression of Cry1 isoforms indicates an unanticipated mode of temporal regulation in the SCN for this core clock gene.",
+      "claim_type": "EXPLICIT",
+      "source": "The novel and canonical Cry1 isoforms are expressed in antiphase, as confirmed by qPCR from LCM SCN samples (Figure 4D), indicating an unanticipated mode of temporal regulation in the SCN for this core clock gene.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the antiphase expression pattern.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "22b18dd3-f968-4011-84d0-3f107c67b02f",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C89",
+      "claim": "Male C3H/HeH mice at 10\u201312 weeks of age were used for the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Male C3H/HeH mice at 10\u201312 weeks of age were group housed in light-tight chambers equipped with light emitting diode (LED) lighting at 150 lx at the cage floor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental animals used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "311e1d48-0f18-46db-93f4-ad15640c8544",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C90",
+      "claim": "Mice were group housed in light-tight chambers equipped with LED lighting at 150 lx at the cage floor.",
+      "claim_type": "EXPLICIT",
+      "source": "Male C3H/HeH mice at 10\u201312 weeks of age were group housed in light-tight chambers equipped with light emitting diode (LED) lighting at 150 lx at the cage floor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the housing conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "456b2770-c62c-4f43-bcbd-cde060050823",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C91",
+      "claim": "After 7 days of acclimatisation, mice were singly housed for 7 days prior to tissue harvesting.",
+      "claim_type": "EXPLICIT",
+      "source": "After 7 days of acclimatisation, mice were singly housed for 7 days prior to tissue harvesting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental timeline.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "693181ce-5351-4d3e-9dcd-ac87120190f4",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C92",
+      "claim": "Eighteen frozen coronal sections at 15 \u03bcM were cut spanning the entire rostral to caudal region of the SCN.",
+      "claim_type": "EXPLICIT",
+      "source": "Eighteen frozen coronal sections at 15 \u03bcM were cut spanning the entire rostral to caudal region of the SCN and mounted onto polyethylene naphthalate (PEN) slides (Carl Zeiss Ltd., Cambridge, United Kingdom).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the tissue sectioning procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "d8f1f149-6e08-4d16-a544-9b5f695042d4",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C93",
+      "claim": "RNA Integrity Number (RIN) values were over 8 for all samples.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA quality was determined using an RNA Picochip (Agilent, Stockport, United Kingdom), with RNA Integrity Number (RIN) values over 8 for all samples and average yield of approximately 10 ng per replicate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the RNA quality metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "9fe0cc98-b655-4305-af33-a87c4ed7441e",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C94",
+      "claim": "Average RNA yield was approximately 10 ng per replicate.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA quality was determined using an RNA Picochip (Agilent, Stockport, United Kingdom), with RNA Integrity Number (RIN) values over 8 for all samples and average yield of approximately 10 ng per replicate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the RNA yield.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "d62ec910-3756-4799-a633-0bc7803a11d1",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C95",
+      "claim": "The average read pair count obtained was \u223c35 M per technical replicate (\u223c100 M per biological replicate).",
+      "claim_type": "EXPLICIT",
+      "source": "The average read pair count obtained was \u223c35 M per technical replicate (\u223c100 M per biological replicate).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sequencing depth.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "a8ae14cc-c9b8-49f6-b8c2-b0b0fb319cd6",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C96",
+      "claim": "PCA revealed separation of datasets according to tissue rather than experimental factors suggesting negligible batch effects.",
+      "claim_type": "EXPLICIT",
+      "source": "PCA revealed separation of datasets according to tissue rather than experimental factors (Figure 1\u2014figure supplement 2A) suggesting negligible batch effects and therefore differences in expression are likely due to biological, rather than technical differences.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by PCA analysis shown in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "28fd1225-8c79-4cba-b973-e92e230c3101",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C97",
+      "claim": "Differences in expression are likely due to biological, rather than technical differences.",
+      "claim_type": "EXPLICIT",
+      "source": "PCA revealed separation of datasets according to tissue rather than experimental factors (Figure 1\u2014figure supplement 2A) suggesting negligible batch effects and therefore differences in expression are likely due to biological, rather than technical differences.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the PCA results showing tissue-based separation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "373ad83f-1031-495b-b716-bbb066e587e4",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C98",
+      "claim": "De novo transcript assembly was conducted using cufflinks v2.0.2 allowing identification of 6610 novel exons.",
+      "claim_type": "EXPLICIT",
+      "source": "De novo transcript assembly was conducted using cufflinks v2.0.2 (Trapnell et al., 2010) allowing identification of 6610 novel exons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational method used for novel exon identification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "2dbb94aa-9698-4865-8a00-70ac4b6a02a5",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C99",
+      "claim": "Novel exons were required not to overlap but were within a 10-kb window of any feature in the most recent Ensembl or UCSC gene annotation sets.",
+      "claim_type": "EXPLICIT",
+      "source": "These were required not to overlap but were within a 10-kb window of any feature in the most recent Ensembl or UCSC gene annotation sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the filtering criteria for novel exons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "85574ed5-9cf9-46c8-ba58-f4225f58a2e5",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C100",
+      "claim": "A robust set of 1013 novel exons was retained after applying filtering criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these exons, only those (i) with a reciprocal overlap of <25% with any retroposed pseudogene (ucscRetroAli6), (ii) with a reciprocal overlap of <50% with any transposable element, (iii) with over 20 spliced reads in the novel exon, (iv) with over 10 spliced reads per 100 bp of the novel exon, (v) with over 20 reads that splice into a known transcript and were (vi) shorter than 3000 bp, were retained providing a robust set of 1013 novel exons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the filtering criteria and final number of novel exons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "4541474c-c1b6-4249-98e9-4f3d9a1ea486",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C101",
+      "claim": "Identification of lincRNAs was conducted through the use of the CGAT NGS pipelines rnaseqtranscripts.py and rnaseqlncrna.py.",
+      "claim_type": "EXPLICIT",
+      "source": "Identification of lincRNAs was conducted through the use of the CGAT NGS pipelines rnaseqtranscripts.py and rnaseqlncrna.py (Sims et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational pipeline used for lincRNA identification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "27e379d1-b7ba-4daa-b3ac-9794c516bd69",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C102",
+      "claim": "lncRNAs are assessed for coding potential using the coding potential calculator (CPC) and removed if annotated as 'coding' (CP score >1).",
+      "claim_type": "EXPLICIT",
+      "source": "These lncRNAs are then assessed for coding potential using the coding potential calculator (CPC; Kong et al., 2007) and removed if annotated as 'coding' (CP score >1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for filtering out coding transcripts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "6247e647-779f-435a-81a6-505a41f73485",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C103",
+      "claim": "Only the intergenic (>2 kb from any protein-coding gene), multiexonic lncRNAs with expression (\u22651 read) in over six biological replicates were chosen for further investigation.",
+      "claim_type": "EXPLICIT",
+      "source": "Only the intergenic (>2 kb from any protein-coding gene), multiexonic lncRNAs with expression (\u22651 read) in over six biological replicates were chosen for further investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the selection criteria for lincRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "c626f16e-21b5-4a7a-b4f5-f4482d49c245",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C104",
+      "claim": "The R packages JTK_CYCLE (v2.1) and DESeq2 (v 1.6.3) were used together to identify genes whose expression significantly altered over time with a sinusoidal oscillatory pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "The R packages JTK_CYCLE (v2.1; Hughes et al., 2010) and DESeq2 (v 1.6.3) were used together to identify genes whose expression significantly altered over time with a sinusoidal oscillatory pattern.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical methods used for identifying cycling genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "d49aa477-c0b8-402f-8527-76c85a9c0d8b",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C105",
+      "claim": "DESeq2 was used to perform a likelihood ratio test to determine the genes whose expression significantly altered over time (q < 0.05, Benjamini\u2013Hochberg).",
+      "claim_type": "EXPLICIT",
+      "source": "DESeq2 was used to perform a likelihood ratio test to determine the genes whose expression significantly altered over time (q < 0.05, Benjamini\u2013Hochberg)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical test used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "1b32d93e-63c3-4738-bbc4-0609f54722aa",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C106",
+      "claim": "JTK_CYCLE was used to identify genes whose expression followed 24-hr periodic waveforms (q < 0.05, Bonferroni).",
+      "claim_type": "EXPLICIT",
+      "source": "and the JTK_CYCLE was used to identify genes whose expression followed 24-hr periodic waveforms (q < 0.05, Bonferroni).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical test used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "973c8342-0136-4dc8-a254-101db534ac32",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C107",
+      "claim": "Signed WGCNA was used to detect modules based upon gene coexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify genes with non-sinusoidal oscillatory patterns, signed WGCNA (Langfelder and Horvath, 2008) was used to detect modules based upon gene coexpression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method used for identifying non-sinusoidal patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "2b8ad483-691c-44e1-ac20-6f42371c4aab",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C108",
+      "claim": "Modules were merged if their similarity was greater than 0.3 according to dendrogram height.",
+      "claim_type": "EXPLICIT",
+      "source": "Modules were merged if their similarity was greater than 0.3 according to dendrogram height.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the module merging criteria in WGCNA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "90bb7bca-5273-47dc-8fb7-7d504e718978",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C109",
+      "claim": "Of the resultant 23 modules only the 'lightsteelblue1' module was investigated further because it was the only non-sinusoidal module whose expression pattern was not influenced by anomalous expression of a single sample at a particular timepoint.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the resultant 23 modules only the 'lightsteelblue1' module was investigated further because it was the only non-sinusoidal module whose expression pattern was not influenced by anomalous expression of a single sample at a particular timepoint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the selection of the twin-peaking module.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "9ccf3597-0381-4784-8883-8b169215739d",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C110",
+      "claim": "Enrichment analysis was performed using the Database for Annotation, Visualization and Integrated Discovery (DAVID) Functional Annotation Tool v6.7.",
+      "claim_type": "EXPLICIT",
+      "source": "Enrichment analysis was performed using the Database for Annotation, Visualization and Integrated Discovery (DAVID) Functional Annotation Tool v6.7 (Huang da et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the tool used for enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "da7dd9f5-c99c-4fef-8cb1-2435966d3464",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C111",
+      "claim": "DAVID incorporates Fisher's exact test and was used to determine significant (q < 0.05, Benjamini) GO terms and KEGG pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "DAVID incorporates Fisher's exact test and was used to determine significant (q < 0.05, Benjamini) GO terms and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical method used in enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "625c25de-ed24-4af3-8fcf-2d789d8f0497",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C112",
+      "claim": "GO terms were passed through REVIGO to prune redundant terms with a semantic similarity of 0.5, 0.7 or 0.9, depending on the length of the GO term.",
+      "claim_type": "EXPLICIT",
+      "source": "GO terms were passed through REVIGO to prune redundant terms with a semantic similarity of 0.5, 0.7 or 0.9, depending on the length of the GO term (Supek et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for reducing redundancy in GO terms.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "c170cc53-279a-4d93-bf4b-295ba83cb211",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C113",
+      "claim": "For validation of results from RNA-seq, qRT-PCR was performed using the BioMark system (Fluidigm).",
+      "claim_type": "EXPLICIT",
+      "source": "For validation of results from RNA-seq, qRT-PCR was performed using the BioMark system (Fluidigm) as according to the two-step single-cell gene expression protocol using EvaGreen as described in the Real-Time PCR Analysis User Guide (PN 68000088, Fluidigm).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the validation method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "41152259-d9c2-4fee-924b-cfb395e59a8d",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C114",
+      "claim": "666 ng of starting RNA was used for each qRT-PCR sample, which underwent 18 cycles of specific target amplification (STA) followed by a tenfold dilution.",
+      "claim_type": "EXPLICIT",
+      "source": "For the process, 666 ng of starting RNA was used for each sample, which underwent 18 cycles of specific target amplification (STA) followed by a tenfold dilution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the qRT-PCR protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "075b40b6-ac5b-478d-b3ab-187c2a396914",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C115",
+      "claim": "SCN CT values were normalised using housekeeping genes and genes which showed the most stable expression in the SCN according to sequencing data.",
+      "claim_type": "EXPLICIT",
+      "source": "SCN CT values were normalised using the housekeeping genes ActB, Gapdh and eight genes which showed the most stable expression in the SCN according to sequencing data (Ankrd40, Nkiras1, Sar1a, Smarce1, Snrpn, Tpgs2, Tsn and Ywhaz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the normalization method for qRT-PCR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "5603235d-7544-490b-bdeb-150f00b35692",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C116",
+      "claim": "The genomic coordinates of the novel Cry1 exon are: chr10: 85,183,342 to 85,183,832 (mm10) with splicing into the following exon at 85,183,342 or 85,183,510.",
+      "claim_type": "EXPLICIT",
+      "source": "The genomic coordinates of the novel exon are: chr10: 85,183,342 to 85,183,832 (mm10) with splicing into the following exon at 85,183,342 or 85,183,510.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides the precise genomic location of the novel Cry1 exon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "4a58f42a-4c02-4784-b77e-ebb4eddbc08c",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C117",
+      "claim": "Brains from male mice representing ZT6 were isolated for in situ hybridisation.",
+      "claim_type": "EXPLICIT",
+      "source": "Brains from male mice representing ZT6 were isolated as above and frozen sections at 15 \u03bcM were cut and mounted onto Superfrost slides (VWR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the tissue preparation for ISH.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "36674686-296e-442a-b0e4-20d4a570c753",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "claim_id": "C118",
+      "claim": "Regions of selected transcripts were cloned into pCR4-TOPO for DIG-labelled riboprobe synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Regions of the selected transcripts were cloned into pCR4-TOPO (Life Technologies, Paisley, United Kingdom) for DIG-labelled riboprobe synthesis: Avp (1\u2013490 bp of accession number NM_009732.1), Vip (191\u2013715 bp of NM_011702.1), Scg2 (844\u20131287 bp of NM_009129.1), Grpr (1287\u20131741 bp of NM_008177.1) and NONCO7761 (3100003L05Rik; 32\u2013583 bp of NR_045907).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the probe preparation for ISH.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4b95ede9-ed16-47c6-941e-f56cfaf91900",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study successfully generated high-quality, SCN-enriched RNA-seq data using laser-capture microdissection (LCM) from six timepoints across a 12:12 light/dark cycle. The data showed expected circadian patterns for clock genes, minimal batch effects, high concordance with qPCR validation, and identified 146 SCN-enriched genes with appropriate functional annotations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C97 collectively demonstrate rigorous experimental design and data quality. The LCM approach successfully isolated SCN tissue (C19), appropriate replication was used (C20), sequencing depth was adequate (C21, C95), key clock genes showed expected cycling patterns (C22, C23), multiple validation approaches confirmed data quality (C24-C26, C96, C97), and SCN-enriched genes were identified with biologically relevant functional enrichments (C29-C33). The methodological rigor and multiple lines of validation strongly support these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "71ee95fd-54c4-45b0-803f-44c142603e93",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study identified 4569 genes with sinusoidal circadian expression in the SCN, representing a sevenfold increase over previous studies. This increase is attributed to improved tissue enrichment, more sensitive statistical methods, and sampling under light/dark rather than constant dark conditions. Approximately half of these cycling genes appear SCN-specific or light/dark-specific.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C36-C49 provide strong evidence for a dramatic expansion of the SCN circadian transcriptome. The sevenfold increase (C2, C37) is well-supported by appropriate statistical methods (C36, C104-C106) and validated by qPCR (C26). The authors provide reasonable explanations for the increase (C38, C39) and demonstrate tissue-specificity through comparisons with 12 other tissues (C44-C49). The functional enrichments (C40) align with known circadian biology, further supporting the validity of these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "dde585f1-14ad-4741-8be5-d39c91d59166",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A novel module of 766 genes displays a twin-peaking expression pattern at ZT14 and ZT22, coinciding with phase-shifting susceptibility windows. These genes are enriched for synaptic transmission functions and include known components of the light-induced phase-shifting pathway, suggesting transcriptional gating of clock resetting mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C3, C4, C50-C67 identify an intriguing twin-peaking pattern with compelling correlations to phase-shifting biology. The WGCNA analysis (C50, C107-C109) and qPCR validation (C51, C52) support the existence of this expression pattern. However, the mechanistic interpretation (C62, C67) remains speculative. The correlation between expression timing and phase-shifting windows (C58-C61) is observational, and the proposed threshold model (C62) lacks direct experimental validation. The study would benefit from functional experiments demonstrating that manipulating these genes affects phase-shifting responses. The result represents an important hypothesis-generating finding but requires additional experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "b326faf3-d364-451d-8854-aad8736c871b",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors propose that transcriptional timing in the SCN gates clock resetting mechanisms, with potential roles for GPCR-mediated neuropeptide signaling via cilia in SCN function. They acknowledge complex interactions between photic and non-photic cues in phase adjustment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C7, C34, C35 represent speculative interpretations based on correlative data. While the enrichment analyses (C33, C34) provide suggestive evidence, the mechanistic proposals lack direct experimental support. The authors appropriately cite relevant literature (C68-C70) acknowledging the complexity of phase-shifting regulation, but the specific roles proposed for transcriptional gating and ciliary signaling remain hypothetical. These claims represent reasonable hypotheses for future investigation rather than established findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "af7a7318-1637-4682-91d1-fdb09469b641",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The study identified 3187 long intergenic non-coding RNAs (lincRNAs) in the SCN, of which 341 (11%) show circadian expression variation. These lincRNAs display characteristics typical of lncRNAs (lower expression, fewer exons, sequence conservation) and do not appear to function primarily as enhancer RNAs. Twenty-eight lincRNAs show twin-peaking expression patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C71-C80, C101-C103 demonstrate rigorous identification and characterization of lincRNAs using appropriate computational pipelines and filtering criteria. The lincRNAs show expected characteristics compared to protein-coding genes (C72-C74) and other mammalian lincRNAs. ISH and qPCR validation (C77, C78) confirm the presence and temporal expression of at least one example. The lack of correlation with nearest protein-coding genes (C75) appropriately argues against an eRNA function. The identification of twin-peaking lincRNAs (C79) is well-supported, though their functional relationship to the protein-coding twin-peaking module (C80) remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "846509e5-5f5e-4009-82fb-0682f9485bb6",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study identified 1013 novel exons, including a 322 bp novel exon in the core clock gene Cry1 that represents an alternative transcriptional start site. The novel and canonical Cry1 isoforms are expressed in antiphase, suggesting a previously unrecognized mode of temporal regulation for this clock gene.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C81-C88, C98-C100, C116 provide strong evidence for novel transcript isoforms. The computational pipeline for novel exon identification used appropriate filtering criteria (C98-C100) to ensure robustness. The Cry1 novel exon is particularly well-validated through multiple approaches: RNA-seq data, RT-PCR confirmation (C86), and qPCR showing antiphase expression (C87). The size (C83), location (C85), and genomic coordinates (C116) are precisely specified. The antiphase expression pattern (C87) is a novel and potentially important finding for understanding Cry1 regulation, though the functional significance (C88) requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "98bf7a2a-997c-470c-82d2-85e0488c349c",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Previous circadian transcriptomic studies had methodological limitations including heterogeneous tissue samples, limited gene coverage, low signal-to-noise ratios, and use of constant lighting conditions rather than physiologically relevant light/dark cycles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C18 accurately characterize limitations of prior work based on appropriate citations (C14-C18). The inference about methodological limitations (C13) is reasonable given the technologies available at the time of earlier studies. These claims appropriately contextualize the improvements made in the current study and are well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "5bfa35a0-6bbe-4d49-bb59-4ee2ef513d03",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The SCN is the principal circadian clock in mammals, maintaining 24-hour rhythms through transcriptional output that is critical for adaptation to day/night cycles. Previous microarray studies identified approximately 650 cycling genes in the SCN.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C12 represent well-established background knowledge in circadian biology, appropriately cited to foundational literature. These claims accurately summarize the scientific consensus and provide necessary context for the study. They are not novel findings but are correctly stated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "899b530d-d375-4f56-9f27-9af1aefee383",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study employed appropriate statistical and bioinformatic methods including JTK_CYCLE and DESeq2 for identifying cycling genes, DAVID for functional enrichment analysis, and qRT-PCR using the Fluidigm BioMark system for validation with appropriate normalization strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C115 describe methodologically sound approaches. The combination of JTK_CYCLE and DESeq2 (C104-C106) provides complementary statistical tests for circadian rhythms. The enrichment analysis methods (C110-C112) are standard and appropriate. The qRT-PCR validation approach (C113-C115) uses adequate starting material, appropriate amplification cycles, and proper normalization with multiple stable reference genes. These methods are well-established and appropriately applied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    },
+    {
+      "id": "93502b66-3c62-4554-bc7c-8ac5e355f81e",
+      "content_id": "d682ab5d-4c05-4ce3-9ec3-449c4f8846be",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In situ hybridization was performed on brain sections from mice at ZT6 using DIG-labeled riboprobes for selected transcripts including SCN markers and a novel lincRNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C117-C118 describe standard ISH methodology with appropriate tissue preparation and probe synthesis. The methods are clearly described and represent routine validation approaches. The ISH results shown in figures confirm SCN-specific expression patterns for the tested genes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:37:09.277707Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3ca0fb82-a1dc-48a7-82f0-7abd10fe3706",
+      "result_id": "4b95ede9-ed16-47c6-941e-f56cfaf91900"
+    },
+    {
+      "claim_id": "57d44cea-33b3-48c1-a776-e933661d81dd",
+      "result_id": "4b95ede9-ed16-47c6-941e-f56cfaf91900"
+    },
+    {
+      "claim_id": "0561c150-e794-44c0-9243-9978f8c83495",
+      "result_id": "4b95ede9-ed16-47c6-941e-f56cfaf91900"
+    },
+    {
+      "claim_id": "ecf0d3cd-5e41-4295-8c89-5742bea50b20",
+      "result_id": "4b95ede9-ed16-47c6-941e-f56cfaf91900"
+    },
+    {
+      "claim_id": "ede5d0ba-1ca1-4759-b500-1fda66f9da8c",
+      "result_id": "4b95ede9-ed16-47c6-941e-f56cfaf91900"
+    },
+    {
+      "claim_id": "a520019f-9e73-4398-a7f2-303957bb817e",
+      "result_id": "4b95ede9-ed16-47c6-941e-f56cfaf91900"
+    },
+    {
+      "claim_id": "e624e09b-5c43-4b61-b9db-92250aae9b7f",
+      "result_id": "4b95ede9-ed16-47c6-941e-f56cfaf91900"
+    },
+    {
+      "claim_id": "110da36a-3473-4d3c-a2ae-7473ea3d52eb",
+      "result_id": "4b95ede9-ed16-47c6-941e-f56cfaf91900"
+    },
+    {
+      "claim_id": "97650215-d1f9-4f19-ac51-343a774f81ad",
+      "result_id": "4b95ede9-ed16-47c6-941e-f56cfaf91900"
+    },
+    {
+      "claim_id": "08b9e111-c513-4d82-b4b3-a0ef92155094",
+      "result_id": "4b95ede9-ed16-47c6-941e-f56cfaf91900"
+    },
+    {
+      "claim_id": "812fe819-93bc-49fb-858b-a37db076e8d5",
+      "result_id": "4b95ede9-ed16-47c6-941e-f56cfaf91900"
+    },
+    {
+      "claim_id": "c3dea026-9985-4f2a-8146-bfc556665dea",
+      "result_id": "4b95ede9-ed16-47c6-941e-f56cfaf91900"
+    },
+    {
+      "claim_id": "b16faf0d-1b46-47bc-af8d-62c362ac25dd",
+      "result_id": "4b95ede9-ed16-47c6-941e-f56cfaf91900"
+    },
+    {
+      "claim_id": "b4abd701-aa2a-45ee-b10b-13784738d535",
+      "result_id": "4b95ede9-ed16-47c6-941e-f56cfaf91900"
+    },
+    {
+      "claim_id": "189d7487-e69e-4282-8118-b944ddfa7d98",
+      "result_id": "4b95ede9-ed16-47c6-941e-f56cfaf91900"
+    },
+    {
+      "claim_id": "22b18dd3-f968-4011-84d0-3f107c67b02f",
+      "result_id": "4b95ede9-ed16-47c6-941e-f56cfaf91900"
+    },
+    {
+      "claim_id": "311e1d48-0f18-46db-93f4-ad15640c8544",
+      "result_id": "4b95ede9-ed16-47c6-941e-f56cfaf91900"
+    },
+    {
+      "claim_id": "456b2770-c62c-4f43-bcbd-cde060050823",
+      "result_id": "4b95ede9-ed16-47c6-941e-f56cfaf91900"
+    },
+    {
+      "claim_id": "693181ce-5351-4d3e-9dcd-ac87120190f4",
+      "result_id": "4b95ede9-ed16-47c6-941e-f56cfaf91900"
+    },
+    {
+      "claim_id": "d8f1f149-6e08-4d16-a544-9b5f695042d4",
+      "result_id": "4b95ede9-ed16-47c6-941e-f56cfaf91900"
+    },
+    {
+      "claim_id": "9fe0cc98-b655-4305-af33-a87c4ed7441e",
+      "result_id": "4b95ede9-ed16-47c6-941e-f56cfaf91900"
+    },
+    {
+      "claim_id": "d62ec910-3756-4799-a633-0bc7803a11d1",
+      "result_id": "4b95ede9-ed16-47c6-941e-f56cfaf91900"
+    },
+    {
+      "claim_id": "a8ae14cc-c9b8-49f6-b8c2-b0b0fb319cd6",
+      "result_id": "4b95ede9-ed16-47c6-941e-f56cfaf91900"
+    },
+    {
+      "claim_id": "28fd1225-8c79-4cba-b973-e92e230c3101",
+      "result_id": "4b95ede9-ed16-47c6-941e-f56cfaf91900"
+    },
+    {
+      "claim_id": "4bf7179a-164b-4498-8f5b-93bcb66b580d",
+      "result_id": "71ee95fd-54c4-45b0-803f-44c142603e93"
+    },
+    {
+      "claim_id": "f22179be-1b63-4d53-a2ff-778dfe52ef81",
+      "result_id": "71ee95fd-54c4-45b0-803f-44c142603e93"
+    },
+    {
+      "claim_id": "c3768092-799b-4c94-8674-c60e22b6d0de",
+      "result_id": "71ee95fd-54c4-45b0-803f-44c142603e93"
+    },
+    {
+      "claim_id": "cbd8101c-1f95-402c-b6dd-873eef42d959",
+      "result_id": "71ee95fd-54c4-45b0-803f-44c142603e93"
+    },
+    {
+      "claim_id": "5f17aa0f-d948-4f53-b67e-796d753963f9",
+      "result_id": "71ee95fd-54c4-45b0-803f-44c142603e93"
+    },
+    {
+      "claim_id": "f87fe346-ed49-4089-bb60-3805e4767aaf",
+      "result_id": "71ee95fd-54c4-45b0-803f-44c142603e93"
+    },
+    {
+      "claim_id": "0d0aaef5-807e-43aa-930e-4ff557cd6ed7",
+      "result_id": "71ee95fd-54c4-45b0-803f-44c142603e93"
+    },
+    {
+      "claim_id": "feeca137-cb80-46d8-bca9-a55dc23d8e0e",
+      "result_id": "71ee95fd-54c4-45b0-803f-44c142603e93"
+    },
+    {
+      "claim_id": "834e4c22-9459-48db-b150-36c551bc2b97",
+      "result_id": "71ee95fd-54c4-45b0-803f-44c142603e93"
+    },
+    {
+      "claim_id": "4aa8178b-4f27-4d31-b3ec-13b884f208d7",
+      "result_id": "71ee95fd-54c4-45b0-803f-44c142603e93"
+    },
+    {
+      "claim_id": "195c540e-84a7-4fda-913a-336f59b1dd26",
+      "result_id": "71ee95fd-54c4-45b0-803f-44c142603e93"
+    },
+    {
+      "claim_id": "b3c7eac1-b790-4932-851a-ab344d6ef841",
+      "result_id": "71ee95fd-54c4-45b0-803f-44c142603e93"
+    },
+    {
+      "claim_id": "037dcf9d-b775-4eba-864d-c3b8cf7320fa",
+      "result_id": "71ee95fd-54c4-45b0-803f-44c142603e93"
+    },
+    {
+      "claim_id": "8f929da2-967d-49b1-a039-664f2485b67f",
+      "result_id": "71ee95fd-54c4-45b0-803f-44c142603e93"
+    },
+    {
+      "claim_id": "8d0e260f-1e37-4ef6-a298-4b2383a785b2",
+      "result_id": "71ee95fd-54c4-45b0-803f-44c142603e93"
+    },
+    {
+      "claim_id": "3f5af337-19e2-4f92-a652-65a00c0cbeb7",
+      "result_id": "dde585f1-14ad-4741-8be5-d39c91d59166"
+    },
+    {
+      "claim_id": "b399423c-4d55-4c19-827c-3aacdefa03f7",
+      "result_id": "dde585f1-14ad-4741-8be5-d39c91d59166"
+    },
+    {
+      "claim_id": "e5f5c199-991d-4e5b-bb70-5a05f12cf44e",
+      "result_id": "dde585f1-14ad-4741-8be5-d39c91d59166"
+    },
+    {
+      "claim_id": "b47ffacc-2889-4ba0-92c2-2acd3acbbed4",
+      "result_id": "dde585f1-14ad-4741-8be5-d39c91d59166"
+    },
+    {
+      "claim_id": "ac7784df-9dbc-43f7-800f-99ac65eb2515",
+      "result_id": "dde585f1-14ad-4741-8be5-d39c91d59166"
+    },
+    {
+      "claim_id": "3167cead-6424-40eb-aa05-0d0b2a098b6c",
+      "result_id": "dde585f1-14ad-4741-8be5-d39c91d59166"
+    },
+    {
+      "claim_id": "eb43e64b-0dad-4929-9a3b-38cb6b68680a",
+      "result_id": "dde585f1-14ad-4741-8be5-d39c91d59166"
+    },
+    {
+      "claim_id": "db9a79f2-e1d7-46b7-81ae-da875dfb58d7",
+      "result_id": "dde585f1-14ad-4741-8be5-d39c91d59166"
+    },
+    {
+      "claim_id": "c5efc151-bc1b-46ba-968f-f231b4b26473",
+      "result_id": "dde585f1-14ad-4741-8be5-d39c91d59166"
+    },
+    {
+      "claim_id": "e4ad1366-c2a3-4cc4-8d3d-d0c8979e774b",
+      "result_id": "dde585f1-14ad-4741-8be5-d39c91d59166"
+    },
+    {
+      "claim_id": "eeba1b76-fa0c-40a3-9097-1d376d8d38e3",
+      "result_id": "dde585f1-14ad-4741-8be5-d39c91d59166"
+    },
+    {
+      "claim_id": "23a0d865-b9e1-4185-b7f4-ac9f72661b79",
+      "result_id": "dde585f1-14ad-4741-8be5-d39c91d59166"
+    },
+    {
+      "claim_id": "f522b23e-b50b-4814-9f17-c667835434f8",
+      "result_id": "dde585f1-14ad-4741-8be5-d39c91d59166"
+    },
+    {
+      "claim_id": "cfb48847-0559-4bb5-9e3c-42c93a4035ba",
+      "result_id": "dde585f1-14ad-4741-8be5-d39c91d59166"
+    },
+    {
+      "claim_id": "8629885e-22c5-45c4-9d11-4b5e01553741",
+      "result_id": "dde585f1-14ad-4741-8be5-d39c91d59166"
+    },
+    {
+      "claim_id": "e663fc49-abbb-4ada-ad70-f23ef595b71b",
+      "result_id": "dde585f1-14ad-4741-8be5-d39c91d59166"
+    },
+    {
+      "claim_id": "7738e24b-6d09-4d1c-8e9f-eee2d850ddb5",
+      "result_id": "dde585f1-14ad-4741-8be5-d39c91d59166"
+    },
+    {
+      "claim_id": "8bd75dd0-c176-4e4d-89a0-d980ed60486e",
+      "result_id": "dde585f1-14ad-4741-8be5-d39c91d59166"
+    },
+    {
+      "claim_id": "64810116-c494-4dfe-b928-efda3c4b4f2e",
+      "result_id": "dde585f1-14ad-4741-8be5-d39c91d59166"
+    },
+    {
+      "claim_id": "197bfa5e-ccf8-4bd9-b9eb-08de5f796639",
+      "result_id": "dde585f1-14ad-4741-8be5-d39c91d59166"
+    },
+    {
+      "claim_id": "973c8342-0136-4dc8-a254-101db534ac32",
+      "result_id": "dde585f1-14ad-4741-8be5-d39c91d59166"
+    },
+    {
+      "claim_id": "2b8ad483-691c-44e1-ac20-6f42371c4aab",
+      "result_id": "dde585f1-14ad-4741-8be5-d39c91d59166"
+    },
+    {
+      "claim_id": "90bb7bca-5273-47dc-8fb7-7d504e718978",
+      "result_id": "dde585f1-14ad-4741-8be5-d39c91d59166"
+    },
+    {
+      "claim_id": "67f530bf-e783-4ec5-afa5-5976ade6c28d",
+      "result_id": "b326faf3-d364-451d-8854-aad8736c871b"
+    },
+    {
+      "claim_id": "155bd6a3-ab04-4984-a242-9d2132ca3d46",
+      "result_id": "b326faf3-d364-451d-8854-aad8736c871b"
+    },
+    {
+      "claim_id": "0b2d951c-232f-4342-9b8e-8efdccb13233",
+      "result_id": "b326faf3-d364-451d-8854-aad8736c871b"
+    },
+    {
+      "claim_id": "2c3795bc-59f4-4844-9ce7-eb2fc97b8035",
+      "result_id": "b326faf3-d364-451d-8854-aad8736c871b"
+    },
+    {
+      "claim_id": "b7222ec8-50dd-4f0d-a908-2764affece78",
+      "result_id": "b326faf3-d364-451d-8854-aad8736c871b"
+    },
+    {
+      "claim_id": "0f87813d-0bdf-4e87-9981-763ff9ff25f2",
+      "result_id": "b326faf3-d364-451d-8854-aad8736c871b"
+    },
+    {
+      "claim_id": "1a904fe7-1ace-48ba-b45c-1e31c3e92f5d",
+      "result_id": "af7a7318-1637-4682-91d1-fdb09469b641"
+    },
+    {
+      "claim_id": "bb388799-0a3d-4b51-aafb-73a67eaecd70",
+      "result_id": "af7a7318-1637-4682-91d1-fdb09469b641"
+    },
+    {
+      "claim_id": "bb53a55a-7399-438d-9a49-9b67663362ff",
+      "result_id": "af7a7318-1637-4682-91d1-fdb09469b641"
+    },
+    {
+      "claim_id": "a761f9df-8ade-4494-bed9-9a437ce9a792",
+      "result_id": "af7a7318-1637-4682-91d1-fdb09469b641"
+    },
+    {
+      "claim_id": "424b0d49-88ca-4363-acfc-1259d870e734",
+      "result_id": "af7a7318-1637-4682-91d1-fdb09469b641"
+    },
+    {
+      "claim_id": "1b43556e-030d-43e1-b198-e02ba6874e98",
+      "result_id": "af7a7318-1637-4682-91d1-fdb09469b641"
+    },
+    {
+      "claim_id": "711a5004-a686-4658-b6ed-28b3145b7110",
+      "result_id": "af7a7318-1637-4682-91d1-fdb09469b641"
+    },
+    {
+      "claim_id": "f3c50d0e-0ada-44d5-9a8d-f273598e42c2",
+      "result_id": "af7a7318-1637-4682-91d1-fdb09469b641"
+    },
+    {
+      "claim_id": "f3e5d8e3-686f-455a-90da-df86c73e9005",
+      "result_id": "af7a7318-1637-4682-91d1-fdb09469b641"
+    },
+    {
+      "claim_id": "253f852b-3bee-4f6e-9d5d-147bbe9ad524",
+      "result_id": "af7a7318-1637-4682-91d1-fdb09469b641"
+    },
+    {
+      "claim_id": "f6400525-e364-4f82-953b-de0fbf96b395",
+      "result_id": "af7a7318-1637-4682-91d1-fdb09469b641"
+    },
+    {
+      "claim_id": "4541474c-c1b6-4249-98e9-4f3d9a1ea486",
+      "result_id": "af7a7318-1637-4682-91d1-fdb09469b641"
+    },
+    {
+      "claim_id": "27e379d1-b7ba-4daa-b3ac-9794c516bd69",
+      "result_id": "af7a7318-1637-4682-91d1-fdb09469b641"
+    },
+    {
+      "claim_id": "6247e647-779f-435a-81a6-505a41f73485",
+      "result_id": "af7a7318-1637-4682-91d1-fdb09469b641"
+    },
+    {
+      "claim_id": "2b7eea79-4d36-47b3-ad1e-e976a7b2b70b",
+      "result_id": "846509e5-5f5e-4009-82fb-0682f9485bb6"
+    },
+    {
+      "claim_id": "4dee57b7-eccf-4837-ad92-f4fa7c677337",
+      "result_id": "846509e5-5f5e-4009-82fb-0682f9485bb6"
+    },
+    {
+      "claim_id": "54e572b9-c63b-4ab9-9154-138b3852a585",
+      "result_id": "846509e5-5f5e-4009-82fb-0682f9485bb6"
+    },
+    {
+      "claim_id": "3b241dfc-d3f8-4633-865f-7be4d1abe2c2",
+      "result_id": "846509e5-5f5e-4009-82fb-0682f9485bb6"
+    },
+    {
+      "claim_id": "1fc950ce-d758-469a-9cb2-ab56073599b1",
+      "result_id": "846509e5-5f5e-4009-82fb-0682f9485bb6"
+    },
+    {
+      "claim_id": "a169e2dd-b6ff-495e-b11d-7eff6e237d6c",
+      "result_id": "846509e5-5f5e-4009-82fb-0682f9485bb6"
+    },
+    {
+      "claim_id": "e784046a-e465-4183-8de6-10f3d2e54da7",
+      "result_id": "846509e5-5f5e-4009-82fb-0682f9485bb6"
+    },
+    {
+      "claim_id": "251218eb-44c3-4212-8bdd-957e89b35798",
+      "result_id": "846509e5-5f5e-4009-82fb-0682f9485bb6"
+    },
+    {
+      "claim_id": "72ade6f5-7eff-4b07-8b61-bd4c00483e98",
+      "result_id": "846509e5-5f5e-4009-82fb-0682f9485bb6"
+    },
+    {
+      "claim_id": "373ad83f-1031-495b-b716-bbb066e587e4",
+      "result_id": "846509e5-5f5e-4009-82fb-0682f9485bb6"
+    },
+    {
+      "claim_id": "2dbb94aa-9698-4865-8a00-70ac4b6a02a5",
+      "result_id": "846509e5-5f5e-4009-82fb-0682f9485bb6"
+    },
+    {
+      "claim_id": "85574ed5-9cf9-46c8-ba58-f4225f58a2e5",
+      "result_id": "846509e5-5f5e-4009-82fb-0682f9485bb6"
+    },
+    {
+      "claim_id": "5603235d-7544-490b-bdeb-150f00b35692",
+      "result_id": "846509e5-5f5e-4009-82fb-0682f9485bb6"
+    },
+    {
+      "claim_id": "a7580b76-c9b1-4d03-966b-d19ea20c1b7b",
+      "result_id": "98bf7a2a-997c-470c-82d2-85e0488c349c"
+    },
+    {
+      "claim_id": "1d89182c-ad62-4417-8337-a0768ea27c36",
+      "result_id": "98bf7a2a-997c-470c-82d2-85e0488c349c"
+    },
+    {
+      "claim_id": "ffc52cfe-f118-45b9-b4e8-6ad4be9c04ce",
+      "result_id": "98bf7a2a-997c-470c-82d2-85e0488c349c"
+    },
+    {
+      "claim_id": "ab1bd179-cac0-4348-9797-0734297a7677",
+      "result_id": "98bf7a2a-997c-470c-82d2-85e0488c349c"
+    },
+    {
+      "claim_id": "9f89a61f-5f76-4414-9e9f-13d7b7fc8ae6",
+      "result_id": "98bf7a2a-997c-470c-82d2-85e0488c349c"
+    },
+    {
+      "claim_id": "41392f4d-296a-4d8d-a093-0aba280c5dfd",
+      "result_id": "98bf7a2a-997c-470c-82d2-85e0488c349c"
+    },
+    {
+      "claim_id": "095117ad-0856-4bb1-8fd5-8660bda9f049",
+      "result_id": "5bfa35a0-6bbe-4d49-bb59-4ee2ef513d03"
+    },
+    {
+      "claim_id": "04675ed7-d199-4695-afba-28a57cd5e619",
+      "result_id": "5bfa35a0-6bbe-4d49-bb59-4ee2ef513d03"
+    },
+    {
+      "claim_id": "09e54dc6-a26c-44f8-a18f-00c62fbd21ce",
+      "result_id": "5bfa35a0-6bbe-4d49-bb59-4ee2ef513d03"
+    },
+    {
+      "claim_id": "cebf8be9-6e78-4a26-a4d0-1efab13bf55f",
+      "result_id": "5bfa35a0-6bbe-4d49-bb59-4ee2ef513d03"
+    },
+    {
+      "claim_id": "5a6f07d8-fd7d-4aed-8c21-d02ae6437918",
+      "result_id": "5bfa35a0-6bbe-4d49-bb59-4ee2ef513d03"
+    },
+    {
+      "claim_id": "aae67735-5fab-444c-86a8-b2f4c316cd66",
+      "result_id": "5bfa35a0-6bbe-4d49-bb59-4ee2ef513d03"
+    },
+    {
+      "claim_id": "c626f16e-21b5-4a7a-b4f5-f4482d49c245",
+      "result_id": "899b530d-d375-4f56-9f27-9af1aefee383"
+    },
+    {
+      "claim_id": "d49aa477-c0b8-402f-8527-76c85a9c0d8b",
+      "result_id": "899b530d-d375-4f56-9f27-9af1aefee383"
+    },
+    {
+      "claim_id": "1b32d93e-63c3-4738-bbc4-0609f54722aa",
+      "result_id": "899b530d-d375-4f56-9f27-9af1aefee383"
+    },
+    {
+      "claim_id": "9ccf3597-0381-4784-8883-8b169215739d",
+      "result_id": "899b530d-d375-4f56-9f27-9af1aefee383"
+    },
+    {
+      "claim_id": "da7dd9f5-c99c-4fef-8cb1-2435966d3464",
+      "result_id": "899b530d-d375-4f56-9f27-9af1aefee383"
+    },
+    {
+      "claim_id": "625c25de-ed24-4af3-8fcf-2d789d8f0497",
+      "result_id": "899b530d-d375-4f56-9f27-9af1aefee383"
+    },
+    {
+      "claim_id": "c170cc53-279a-4d93-bf4b-295ba83cb211",
+      "result_id": "899b530d-d375-4f56-9f27-9af1aefee383"
+    },
+    {
+      "claim_id": "41152259-d9c2-4fee-924b-cfb395e59a8d",
+      "result_id": "899b530d-d375-4f56-9f27-9af1aefee383"
+    },
+    {
+      "claim_id": "075b40b6-ac5b-478d-b3ab-187c2a396914",
+      "result_id": "899b530d-d375-4f56-9f27-9af1aefee383"
+    },
+    {
+      "claim_id": "4a58f42a-4c02-4784-b77e-ebb4eddbc08c",
+      "result_id": "93502b66-3c62-4554-bc7c-8ac5e355f81e"
+    },
+    {
+      "claim_id": "36674686-296e-442a-b0e4-20d4a570c753",
+      "result_id": "93502b66-3c62-4554-bc7c-8ac5e355f81e"
+    }
+  ],
+  "comparisons": []
+}

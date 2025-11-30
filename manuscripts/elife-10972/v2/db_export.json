@@ -1,0 +1,1819 @@
+{
+  "submission": {
+    "id": "cbec462a-7895-4d75-8c37-f72182091770",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:04:19.292669Z",
+    "updated_at": "2025-11-29T22:04:19.292669Z"
+  },
+  "content": [
+    {
+      "id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "submission_id": "cbec462a-7895-4d75-8c37-f72182091770",
+      "content_type": "manuscript",
+      "content_text": "# The carcinine transporter CarT is required in Drosophila photoreceptor neurons to sustain histamine recycling\n\n## Authors\n\n- Drew Stenesen<sup>1</sup>\n- Andrew T Moehlman<sup>1</sup>\n- Helmut Kr\u00e4mer<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Neuroscience University of Texas Southwestern Medical Center Dallas United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSynaptic transmission from Drosophila photoreceptors to lamina neurons requires recycling of histamine neurotransmitter. Synaptic histamine is cleared by uptake into glia and conversion into carcinine, which functions as transport metabolite. How carcinine is transported from glia to photoreceptor neurons remains unclear. In a targeted RNAi screen for genes involved in this pathway, we identified carT, which encodes a member of the SLC22A transporter family. CarT expression in photoreceptors is necessary and sufficient for fly vision and behavior. Carcinine accumulates in the lamina of carT flies. Wild-type levels are restored by photoreceptor-specific expression of CarT, and endogenous tagging suggests CarT localizes to synaptic endings. Heterologous expression of CarT in S2 cells is sufficient for carcinine uptake, demonstrating the ability of CarT to utilize carcinine as a transport substrate. Together, our results demonstrate that CarT transports the histamine metabolite carcinine into photoreceptor neurons, thus contributing an essential step to the histamine\u2013carcinine cycle.\n\n## Introduction\n\nHistaminergic neurotransmission plays an important role in a variety of mammalian and invertebrate behavioral processes and contributes to the regulation of arousal, sleep and circadian rhythms (Nall and Sehgal, 2014; Panula and Nuutinen, 2013). Defects in histaminergic signaling are linked to multiple neurodegenerative diseases, depression and Tourette\u2019s syndrome (Panula and Nuutinen, 2013; Shan et al., 2015; Castellan Baldan et al., 2014). Synaptic clearance and recycling of monoamine neurotransmitters, including serotonin and dopamine, depend on transporters that promote uptake into the\u00a0presynaptic terminals or the\u00a0surrounding glia (Torres and Amara, 2007). For histamine, such transporter activities have been documented in mammalian and invertebrate glia (Yoshikawa et al., 2013; Edwards and Meinertzhagen, 2010). In the Drosophila visual system, histidine decarboxylase (Hdc) generates histamine in photoreceptor neurons (Burg et al., 1993). Light-induced depolarization of these neurons (Wang and Montell, 2007) promotes synaptic release of histamine, which opens histamine-gated chloride channels on postsynaptic L1 and L2 lamina neurons, triggering their hyperpolarization (Pantazis et al., 2008). These postsynaptic voltage changes can be followed with electroretinograms (ERGs) that reveal ON and OFF transient peaks coinciding with initiation and cessation of the light source (Alawi and Pak, 1971; Heisenberg, 1971). In addition to identifying mutants that interfere with presynaptic release (Kim et al., 2012), this phenotype has also contributed to the genetic dissection of histamine recycling (Edwards and Meinertzhagen, 2010). Synaptic histamine is taken up into epithelial glia that completely envelope photoreceptor synapses (Meinertzhagen and O'Neil, 1991). Within these glia, histamine is modified by the Ebony-catalyzed condensation with \u03b2-alanine (Richardt et al., 2002; Borycz et al., 2002; Hartwig et al., 2014; Richardt et al., 2003). The reaction product carcinine is transferred to photoreceptors, which recover histamine by Tan-catalyzed hydrolysis (Borycz et al., 2002; True et al., 2005; Wagner et al., 2007).\u00a0This histamine\u2013carcinine cycle (see below: Figure 4\u2014figure supplement 1), reminiscent of the glutamate\u2013glutamine cycle in the mammalian brain (Br\u00f6er and Brookes, 2001), is necessary to maintain visual neurotransmission (Borycz et al., 2005) and depends on the compartmentalization of glial Ebony and neuronal Tan (Stuart et al., 2007). Mutants for ebony or tan lack ON and OFF transients (Heisenberg, 1971; Hotta and Benzer, 1969; Chaturvedi et al., 2014), indicating that neither histamine synthesis in photoreceptor neurons by Hdc nor a putative direct re-uptake mechanism is sufficient to sustain neurotransmitter release at photoreceptor synapses (Ziegler et al., 2013). The identity of the transporters that facilitate glial uptake of histamine from the synaptic cleft and transport of its metabolite, carcinine, out of glia and into photoreceptor neurons remains a long-standing mystery, (Edwards and Meinertzhagen, 2010; Stuart et al., 2007; Romero-Calder\u00f3n et al., 2007; 2008). Here, we show that the previously uncharacterized CG9317 gene, that we named carT, encodes a transporter responsible for uptake of carcinine into photoreceptor neurons. We demonstrate that CarT activity is a prerequisite for visual neurotransduction.\n\n## Results and discussion\n\n### CG9317 knockdown in photoreceptor cells disrupts visual signal transduction\n\nThe Drosophila genome is estimated to contain 603 transmembrane transporters (Ren et al., 2007; Featherstone, 2011). To concentrate on those transporters with a higher probability of participating in histamine neurotransmitter recycling, we focused on families that contain individual members previously associated with neurotransmitter transport. This includes known serotonin, dopamine, gamma-aminobutyric acid, and glutamate neurotransmitter transporters in the solute-linked carrier (SLC) families SLC1 and SLC6, and other transporters in the SLC17, SLC18 and SLC22A families (C\u00e9sar-Razquin et al., 2015). In addition, ATP-binding cassette transporters have been implicated in altered neurotransmitter distribution (Borycz et al., 2008). In Drosophila, these transporter families contain 137 members that we considered as candidates potentially involved in the histamine\u2013carcinine cycle. To test their possible roles in photoreceptor neurons, we knocked down each candidate gene individually using Glass Multiple Response element (GMR)-Gal4 to drive double-stranded\u00a0RNA expression in photoreceptors and evaluated visual signal transduction by ERG recordings.\n\nThe screen yielded a single transporter gene, CG9317, whose knockdown caused severely reduced ON and OFF transients (Figure 1A). To test the consistency of this result in multiple genetic backgrounds and confirm its specific requirement in photoreceptor neurons, we expressed the CG9317 RNAi transgene with two additional photoreceptor-specific Gal4 lines, longGMR-Gal4 (Wernet et al., 2003) and otd1.6-Gal4 (McDonald et al., 2010) and the pan-glial driver, repo-Gal4 (Sepp et al., 2001). ERG recordings indicated that CG9317 is necessary in photoreceptor neurons, but not glia, for proper histaminergic transduction in the visual system (Figure 1A\u2013C). Of note, compared with wild type, none of these genotypes displayed significantly reduced sustained negative potentials ( Figure 1D), indicating that CG9317 knockdown did not affect overall photoreceptor health (Williamson et al., 2010). Based on these results and the findings presented below, we will refer to CG9317 as carcinine transporter, abbreviated carT.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/10972/elife-10972-fig1-v2.jpg)\n\n**Figure 1.:** (A) ERGs recorded from female flies expressing a UAS-CG9317 RNAi transgene (VDRC 101145) targeting CG9317 under the control of the indicated Gal4 driver specific for photoreceptors (GMR-Gal4, longGMR-gal4 and otd1.6-Gal4) or glia (repo-Gal4). Quantifications of (B) ON transients, (C) OFF transients, and (D) sustained negative photoreceptor potentials were averaged from three replicate experiments, including at least 45 traces from 15 flies. Arrows indicate SNP, ON and OFF\u00a0transient of the control recording. Graphs report upper and lower quartiles (box) and minimum and maximum values (whiskers). ns, not significant; *p < 0.05, ****p < 0.0001 compared to OreR;GMR-Gal4 control.\u00a0ERGs, electroretinograms;\u00a0SNPs, sustained negative potentials.\n\n### Photoreceptor-specific expression of CarT is sufficient for visual signal transduction\n\nTo test whether carT is the causal gene, the knockdown of which is responsible for loss of ERG ON and OFF transient components, we generated null alleles by clustered regularly-interspaced short palindromic repeats\u00a0(CRISPR)/Cas9-mediated mutagenesis (Gratz et al., 2013; Bassett et al., 2013; Yu et al., 2013). We isolated three individual CRISPR-induced deletions: 11 bp for carT16A, 26 bp for carT16B and 56 bp for carT43 (Figure 2A). Each of these mutations resulted in a frameshift within the first transmembrane domain (Figure 2B) followed by a premature stop codon within 17, 19 and 1 bp, respectively. All three carT alleles were homozygous viable and fertile, but lacked\u00a0the ON\u00a0and OFF transients, indicating that carT is required for visual signal transduction (Figure 2C,D). For further analysis, we focused on the allele with the largest deletion, carT43. To prove that loss of CarT function causes the ERG-phenotype in carT43 mutants, we tested whether it could be rescued by cell\u00a0type-specific expression of the CarT transcript. When driven in carT43 mutant photoreceptor neurons by longGMR-Gal4, CarT restored ON and OFF transient components of ERG recordings (Figure 2C,D). By contrast, glial-specific expression of CarT failed to rescue ON and OFF transient defects (Figure 2C,D). To further probe CarT function, we generated a Myc-CarT transgene. This N-terminally tagged transporter was fully functional, as its expression in carT43 also rescued defects in ON and OFF transients (Figure 2C,D). Taken together, these data indicate that expression of CarT in photoreceptor neurons is necessary and sufficient for visual signal transduction.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/10972/elife-10972-fig2-v2.jpg)\n\n**Figure 2.:** (A) CRISPR targeted site in the carT gene and resulting mutations. (B) Primary structure and predicted transmembrane domains (yellow) of CarT. Red arrows indicate location of premature stops within mutant alleles. Gray and black letters indicate conserved and highly conserved amino acids among SLC22 transporters (Eraly et al., 2004; Koepsell, 2013), respectively. The SLC22 family is characterized by a large extracellular loop containing four cysteines (C) and a glycosylation site (blue) at conserved positions. (C) ERGs recorded from female flies carrying wild type (+) or the indicated CarT alleles (16A, 16B, 43, or tdTomato-CarT) with or without expression of a wild-type or a Myc-tagged UAS-CarT transgene driven by longGMR-Gal4 or repo-Gal4 as indicated. (D) Quantifications of ON and\u00a0OFF transients, and SNPs of all genotypes in panel C averaged from three replicate experiments, including at least 45 traces from 15 flies (G: longGMR-Gal4; R: repo-Gal4; -: not present). (E) Phototactic behavior of OreR and carT43 mutant flies compared with other mutants that disrupt the histamine\u2013carcinine cycle (HdcMB07212, ebony1, or tan1) presented as a light preference index. (F) Phototactic behavior of flies expressing a UAS-CarT transgene in photoreceptor neurons under control of the longGMR-Gal4 driver in carT43 mutants compared with controls shows the restoration of wild type behavior. For each graph, the box outlines the upper and lower quartiles, and the whiskers show minimum and maximum recorded values. ns, not significant; ****p < 0.0001 compared with carT43 (D) or OreR (E and F).\u00a0CRISPR, clustered regularly-interspaced short palindromic repeats;\u00a0ERG, electroretinograms;\u00a0SNPs, sustained negative potentials.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10972/elife-10972-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Drosophila and bee SLC22 transporters were identified using\u00a0the\u00a0Basic Local Alignement Search Tool Protein (BLASTp) provided by the National Center for Biotechnology Information (NCBI)\u00a0based on similarity to known mammalian and insect family members (Koepsell, 2013; Zhu et al., 2015). A phylogeny tree was obtained using Clustal W2 and visualized using iToL (Letunic and Bork, 2011). Numbers represent simulated branch lengths.\n\n### Photoreceptor CarT is required for normal visual behavior\n\nTo examine whether the disruption of visual neurotransmission in carT mutants alters visual behavior, we used a phototaxis assay\u00a0(Benzer, 1967). Wild-type flies were naturally phototactic (Figure 2E). However, flies with defects in the synthesis of histamine (HdcMB07212) or its recycling (ebony1 or tan1) were\u00a0randomly distributed between the lit and dark arms of a T-maze, consistent with a lack of phototactic preference due to their inability to detect light (Figure 2E). Similarly, phototactic behavior was severely reduced in carT43 flies (Figure 2E). Light preference of carT43 flies was restored by expression of wild-type CarT in photoreceptor neurons under control of longGMR-Gal4 (Figure 2F). Together, these results indicate that CarT expression in photoreceptor neurons is necessary and sufficient for behavioral aspects of normal vision and electrophysiological properties of visual transduction.\n\n### Carcinine accumulates in CarT mutant lamina\n\nInterference with aspects of the histamine\u2013carcinine cycle by different mutations causes distinct changes in the distribution of these two metabolites in the retina and lamina, although overall architecture of these tissues is not altered in carT, ebony, tan and Hdc mutants (Figure 3A\u2013D) and references (Chaturvedi et al., 2014; Borycz et al., 2008). Consistent with their function in the histamine\u2013carcinine cycle, characteristic increases in the levels of histamine in ebony1 (Figure 3C) and carcinine in tan1 heads (Figure 3D) were detected by antibody staining (Chaturvedi et al., 2014). When compared with wild type, carT43 heads displayed no discernable alterations in histamine staining intensity or distribution (Figure 3C). However, carcinine levels were elevated in carT43 lamina (Figure 3D, arrow) and medulla (arrowhead). Staining for carcinine in carT43 lamina partially localized to the\u00a0glia visualized by repo-Gal4 driven UAS-mCD8::RFP (Figure 3E) suggested a build up of carcinine in the\u00a0glia and the extracellular space in the lamina, consistent with a requirement of CarT in carcinine transport into photoreceptors. Notably, carcinine accumulation in carT43 brains was restored to wild-type levels by photoreceptor-specific expression of a Myc-CarT transgene (Figure 3D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/10972/elife-10972-fig3-v2.jpg)\n\n**Figure 3.:** (A) Confocal sections of photoreceptor axonal endings within the lamina stained for the synapse marker Bruchpilot (Brp) and the glia-specific Ebony. (B) Micrographs of cryo-sections from control (OreR) and flies expressing the UAS-Myc-CarT transgene driven by longGMR-Gal4 in the carT43 background. Retina (R), lamina (L), and medulla (M) neuropiles are stained for DNA (magenta) and Myc-tagged CarT (green). Arrow points to Myc staining in photoreceptor axonal endings and arrowhead to distal retina. (C,D) Micrographs of cryo-sections from control (OreR) and mutant flies affecting the histamine\u2013carcinine cycle: carT43, carT43;GMR-Gal4/UAS-Myc-CarT, ebony1, tan1, and HdcMB07212 stained for histamine (C) or carcinine (D). Arrow and arrowhead in D point to carcinine accumulations in the lamina and medulla, respectively. (E) Micrographs from control (carT43/+ ) or carT43\u00a0flies expressing a UAS-mCD8::RFP transgene driven by repo-Gal4 and stained for carcinine. (F) Micrographs showing tdTomato fluorescence of the in-frame tdTomato-CarT allele compared with wild type control. DNA staining is shown in green. Arrowheads point to tdTomato signal at R7 and R8 photoreceptor terminals within the medulla. (G) Confocal section of laminal region of a tdTomato-CarT fly stained for glia-specific Ebony. (H) Confocal sections of flies heterozygous for tdTomato-CarT (red) and photoreceptor-specific 3xPax3-eGFP (blue) stained for Brp (green). Sections are parallel to and across photoreceptor axons, respectively. Scale bars are 20 \u00b5m in A, E, G and H and 50 \u00b5m in B\u2013D and F.\n\n### CarT is enriched close to photoreceptor synapses\n\nWithin photoreceptors, the longGMR-driven Myc-CarT transporter was enriched in their axonal endings in the lamina (arrow in Figure 3B) and the distal retina (arrowhead in Figure 3B) indicating CarT may function near synaptic terminals and in neuronal cell bodies to facilitate perisynaptic and long-distance recycling, two pathways previously suggested (Chaturvedi et al., 2014; Borycz et al., 2012; Rahman et al., 2012). Endogenous CarT RNA expression is highly enriched in the eye (http://flybase.org/reports/FBlc0000157.html). To further examine endogenous CarT expression, we utilized CRISPR-induced deletions coupled with homology-directed repair to incorporate an in-frame insertion of tdTomato N-terminally to the CarT coding sequence (Figure 2B). ERG analysis of flies harboring one copy of this tdTomato-CarT over the nonfunctional carT43\u00a0allele displayed normal ON and OFF\u00a0transient responses, indicating that\u00a0the endogenous tdTomato-tagged CarT was fully functional (Figure 2C,D). This endogenous tdTomato-CarT was highly enriched within photoreceptor projections in the lamina and medulla (Figure 3F). Co-labeling with the glial Ebony (Figure 3G), or synaptic Bruchpilot and a 3xPax3-eGFP, which labels photoreceptor neurons (Figure 3H), indicates that CarT is present in photoreceptors near synaptic terminals (Figure 3H).\n\n### CarT transports carcinine\n\nTo determine whether the CarT transporter utilizes carcinine as a substrate, we developed an immunofluorescence-based carcinine transport assay. Full-length or internally truncated Myc-CarT were expressed in S2 cells that were probed by antibody staining for carcinine uptake. When cultured in standard Schneider\u2019s medium, transfected S2 cells displayed no appreciable carcinine staining, indicating a lack of endogenous carcinine and sufficient specificity of the carcinine antibody in this context (Figure 4A and A\u2019; quantified in D). When culture media was supplemented with carcinine (0.5 mM), cells expressing full-length Myc-CarT stained positively for carcinine, indicating its uptake in these cells. Importantly, neighboring untransfected cells (negative for the Myc epitope) lacked carcinine staining, despite being maintained in the same carcinine-supplemented medium as Myc-CarT positive cells (Figure 4B and B\u2019). Furthermore, an internal deletion of 10 of the 12 transmembrane domains within CarT abolished carcinine uptake (Figure 4C and C\u2019; quantified in D). Taken together, these data demonstrate CarT functions as a carcinine transporter.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/10972/elife-10972-fig4-v2.jpg)\n\n**Figure 4.:** (A) Micrographs of S2 cells transfected with the Myc-CarT transgene (A,A\u2019 and B, B\u2019) or the Myc-CarTdel transgene deleted for 10 internal transmembrane domains (C,C\u2019) cultured in media lacking carcinine (A,A\u2019) or supplemented with 0.5 mM carcinine (B,B\u2019 and C,C\u2019) and stained for DNA and the Myc epitope (A\u2013C) or carcinine (A\u2019\u2013C\u2019). (D) Quantification of carcinine signals normalized to signals for the Myc epitope. ****p < 0.001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10972/elife-10972-fig4-figsupp1-v2.jpg)\n\nSequence comparison indicates that CarT is a member of the SLC22 family of transporters (Eraly et al., 2004) and together with other CarT-like transporters in invertebrates constitutes a distinct subfamily (Figure 2\u2014figure supplement 1). Interestingly, OCT2 and OCT3, members of the closely related organic cation subfamily of SLC22A transporters, have been implicated in histamine uptake into human astrocytes (Yoshikawa et al., 2013) and the transport of histamine receptor antagonists (Koepsell, 2013). Many of the biochemically characterized members of the extended SLC22 family that are involved in the transport of neurotransmitters, exhibit overlapping substrate specificity providing transport redundancies (Koepsell, 2013). However, our data argue against such redundancy as carT null alleles efficiently blocks synaptic transmission dependent on the histamine\u2013carcinine cycle (Figure 4\u2014figure supplement 1). A role in this process has previously been suggested for the putative Na/Cl\u2013 dependent neurotransmitter/osmolyte transporter Inebriated (Stuart et al., 2007), possibly by directly transporting carcinine into photoreceptors (Gavin et al., 2007). No direct evidence for such a function has been reported, however, suggesting that Inebriated may indirectly support the histamine\u2013carcinine cycle by promoting the long-distance recycling of \u03b2-alanine from photoreceptors to glia (Stuart et al., 2007; Chaturvedi et al., 2014; Borycz et al., 2012). An indirect role of Inebriated is also more consistent with its role in water homeostasis in the hindgut (Luan et al., 2015).\n\nHere, we presented several lines of evidence that CG9317, which is highly expressed in heads, but not bodies (Eraly et al., 2004), encodes the carcinine transporter CarT. Heterologous expression of CarT in cultured cells was sufficient to facilitate carcinine uptake. This biochemical activity and the accumulation of carcinine in CarT lamina could be consistent with CarT facilitating export of carcinine from glia, or its import into photoreceptors. Strong support for the second possibility is provided by genetic experiments that reveal a requirement of CarT in photoreceptors, but not glia and the accumulation of carcinine in the lamina. CarT expression in photoreceptors is necessary and sufficient to sustain visual transduction, as indicated by ON and OFF transients as signatures of synaptic activity and by visual behavior. Together, these findings support a role of CarT as the transmembrane transporter responsible for the uptake of carcinine into photoreceptor neurons, a critical step in the histamine\u2013carcinine cycle.\n\nHistamine, similar to its impact on multiple behaviors in the mammalian brain (Nall and Sehgal, 2014; Panula and Nuutinen, 2013; Shan et al., 2015; Castellan Baldan et al., 2014), has been implicated in several circuits in the insect brain as well, including those controlling sleep, circadian rhythms and thermosensation (Nall and Sehgal, 2014; Buchner et al., 1993; Oh et al., 2013; Hong et al., 2006; Suh and Jackson, 2007). The identification of CarT\u2019s role in the histamine\u2013carcinine cycle will provide additional tools to further address the role of histaminergic circuits in these different behaviors.\n\n### Experimental procedures\n\n#### Fly work\n\nFlies were maintained using standard conditions. Fly lines GMR-Gal4 (BL1104), longGMR-Gal4 (BL8121), repo-Gal4 (BL7415), ebony1 (BL1658), tan1(BL130), HdcMB07212(BL25260), UAS-mCD8::RFP (BL32218) were provided by the Bloomington Drosophila Stock Center. The otd1.6-Gal4 line (McDonald et al., 2010) was a gift from T. Cook (Cincinnati Children\u2019s, Cincinnati, OH). The UAS-CG9317.RNAi line (VDRC KK101145) was obtained from the Vienna Drosophila Resource Center (VDRC). Other UAS-RNAi lines used for screening were obtained from either the VDRC or the Transgenic RNAi Project. CRISPR-mediated mutagenesis was performed via tools and protocols available from the O\u2019Connor-Giles, Wildonger, and Harrison laboratories (www.flycrispr.wisc.edu). A germline mutation rate of 76.1% of injected flies was detected by polychromase chain reaction (PCR) amplification of the target region, slow ramp speed re-annealing, T7 endonuclease treatment, and polyacrylamide gel electrophoresis analysis of potential cleavage products (Gratz et al., 2013; Bassett et al., 2013; Yu et al., 2013). Exact lesions were characterized by sequencing of PCR products. Identified mutations were homozygous viable and crossed into a w+ background prior to ERG recordings and behavioral assays. To generate UAS-CarT transgenic flies, a CarT complementary\u00a0DNA was obtained form the Berkeley Drosophila Genome Project, cloned into a modified pUASt vector, sequence verified, and injected into embryos (Rainbow Transgenics, Camarillo, CA) using standard methods. Endogenous tdTomato was tagged by dual-cut CRISPR-mediated excision of 532 base pairs, including the CarT start site, and introduction of a donor plasmid containing an in-frame tdTomato sequence with roughly 1\u00a0kb homology arms (Gratz et al., 2014). Homology-directed repair resulting in the td-Tomato insertion was detected by PCR amplification of the tdTomato insert, and proper in-frame insertion was verified by sequencing.\n\n### Electroretinogram recordings\n\nERGs were recorded as previously described (Williamson et al., 2010). In brief, voltage measurements of immobilized female flies were recorded with electrodes containing 2M NaCl placed on the corneal surface and inserted into the thorax. Measurements were filtered through an electrometer (IE-210; Warner Instruments,\u00a0Hamden, CT), digitized with a Digidata 1440A and MiniDigi 1B system, and recorded using Clampex 10.2 and quantified with Clampfit software\u00a0(Molecular Devices, Sunnyvale, CA). Light pulses (1 s) were computer controlled (MC1500; Schott, Mainz, Germany).\n\n### Phototaxis assays\n\nFor light-choice assays (Benzer, 1967), male flies were collected within 12 hr of eclosion and aged for 3\u20134\u00a0d. Flies were anesthetized briefly with CO2, transferred to empty culture tubes, and left to recover for 1\u00a0hr. For testing, a group of 20 flies was introduced into a T-maze apparatus and allowed to distribute for 20 s between a dark tube and a tube exposed to incandescent light. Each group was tested in triplicate. A light preference index was calculated using the equation, PI = (#Light- #Dark) / #total. For all genotypes, at least 100 flies were tested.\n\n### Histology\n\nFly heads were dissected in HL3 hemolymph-like solution (Stewart et al., 1994) to remove the proboscis and posterior cuticle, fixed for 4 hr in ice\u00a0cold 4% 1-ethyl-3-(-3-dimethylaminopropyl) carbodiimide (wt/vol, Sigma, St Louis, MO) in 0.1 M phosphate buffer solution, washed overnight in 25% (wt/vol) sucrose in phosphate buffer (pH 7.4), embedded in optimal cutting temperature compound, frozen in dry ice, and sectioned at 20\u00a0\u03bcm thickness on a cryostat microtome (Hacker-Bright, Winnsboro, SC). Sections were incubated overnight with antibodies to histamine (1:1000, Sigma, St Louis, MO, cat# H7403 preabsorbed with 200 \u00b5M carcinine) or carcinine (1:1000, Immunostar, Hudson, WI, cat# 22939 preabsorbed with 200 \u00b5M histamine [Chaturvedi et al., 2014]). Other antibodies used include anti-Ebony (gift from Bernhard Hovemann [Richardt et al., 2002]), anti-Bruchpilot (nc82, Hybridoma Bank,\u00a0Iowa\u00a0City), anti-Myc (9E10, BAbCO, Richmond, CA), and anti-RFP (Rockland, Limerick, PA, cat# 600-401-379). Secondary antibodies were labeled with Alexa488 (1:500, Molecular Probes, Pittsburg, PA, cat# A-11008), Alexa568 (1:500, Molecular Probes, cat# A-11011), or Alexa647 (1:250, Molecular Probes,\u00a0cat#A-21235). Where indicated, Topro-3 Iodide (Molecular Probes, T3605) was used to stain DNA. Images were captured with 20\u00d7 NA 0.75 or 63\u00d7 NA 1.4 lenses on an inverted confocal microscope (LSM510 Meta; Carl Zeiss, Oberkochen,\u00a0Germany) at 21\u00b0C\u201323\u00b0C.\n\n### Carcinine uptake assay\n\nBecause radioactive carcinine is not commercially available, we developed an immunofluorescence-based transport assay. Drosophila S2 cells were cultured using standard methods and transfected with plasmids containing Myc-tagged constructs as noted using the TransIT-2020 manufacturer\u2019s protocol (Mirus,\u00a0Madison,\u00a0WI). Transfected cells were incubated with 0.5 mM carcinine for 24 hr prior to a 1 hr fixation in ice\u00a0cold 4% 1-ethyl-3-(-3-dimethylaminopropyl) carbodiimide (wt/vol, Sigma) in 0.1 M phosphate buffer solution. Cells were then permeabilized in phosphate-buffered\u00a0saline containing 0.3% Saponin, blocked in 5% normal goat serum, and incubated overnight with carcinine and Myc antibodies. Quantification was performed in ImageJ by normalizing the integrated density of the carcinine signal by that of the Myc signal.\n\n### Phylogenetics\n\nCarT was identified as a SLC22 family member using BLASTpsi alignments against the NCBI non-redundant protein sequence database. Drosophila SLC22-related family members were identified from existing annotations on FlyBase and by running a BLASTp search with the CarT Isoform C peptide sequence against only Drosophila melanogaster (taxid:7227). Searches for individual organisms were performed using the following taxa identifiers on NCBI BLASTp suite: Homo sapiens (taxid:9606), Mus musculus (taxid:10090), Apis mellifera (taxid:7460). Additionally, previously identified mammalian SLC22 transporters were included (Koepsell, 2013; Zhu et al., 2015; Martin and Krantz, 2014). For preparation of multiple alignments, CLUSTAL Omega was used (http://www.ebi.ac.uk/Tools/msa/clustalo/) with default parameters (Sievers et al., 2011). Multiple sequence alignments were entered into Clustal W2 and phylogenies were generated using the Neighbor-joining clustering method with default parameters (Larkin et al., 2007). The resulting phylogenies were analyzed using Interactive Tree of Life (iToL; http://itol.embl.de), an online phylogeny tree viewer and editor (Letunic and Bork, 2011).\n\n### Statistics\n\nStatistical significance was determined using one-way analysis of variance (ANOVA) followed by Tukey\u2019s or Bonferroni\u2019s multiple comparisons using GraphPad Prism 6.\n",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "2ced8434-555c-4c69-a3b0-ad8d958d876c",
+      "submission_id": "cbec462a-7895-4d75-8c37-f72182091770",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Hugo J Bellen, Howard Hughes Medical Institute, Baylor College of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.10972.010](https://doi.org/10.7554/eLife.10972.010)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"The carcinine transporter CarT is required in Drosophila photoreceptor neurons to sustain histamine recycling\" for peer review at eLife. Your submission has been favorably evaluated by K VijayRaghavan (Senior editor), Hugo Bellen (Reviewing editor), and two reviewers, one of whom David Krantz, has agreed to reveal his identity.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors first performed an RNAi screen to knock down 132 transporter candidates and found that one \u2013 CG9317 \u2013 which they rename carT, disrupts ERGs a standard measure of signaling in the visual system. They determined that expression was required in photoreceptors but not glia, then confirm their findings using CRISPR/CAS-9 mutants in carT and genetic rescue with a cart transgenes. They back up their electrophysiological results with both behavioral assays demonstrating phototactic deficits and carcinine build-up in carT mutants, both rescued with a carT transgene. Finally they prove that carT transports carcinine into S2 cells as predicted. The paper by Stenesen et al. very convincingly shows that the CarT transporter is required for carcinine uptake, which in turn is a reaction product of histamine modification in glia cells that take up histamine from the synaptic cleft. With this discovery, the circle for release and reuptake of this neurotransmitter has been closed for the first time.\n\nMinor points that we would like to see addressed:\n\nMinor concerns include some difficulty in visualizing the label for carcinine and histamine in Figure 3. It seems likely that this could result from the relatively low resolution of the PDF. Nonetheless, the authors should ensure that the images will be easily interpreted in the final version on the manuscript.\n\nThe authors should also comment on the overall distribution of endogenous carT, and whether or not this is known. The model in Figure 4 indicates that carT localizes to photoreceptors but not glia and this is clearly supported by their RNAi data. However, it seems possible that carT could be expressed in other neurons in the CNs and perhaps play a role in other organs.\n\nAdditional, small changes that might improve the paper for the interested reader include a list of the genes that were probed in their RNAi screen, and a brief note about the phylogeny of SLC22A family in the fly. The authors state: \"[\u2026] our data argue against such redundancy for CarT as it efficiently blocks the histamine-carcinine cycle.\" Nonetheless, it would be nice to know if there are any similar fly orthologs with the potential to compensate for loss of carT.\n\nI think it would be reasonable to ask the authors to provide better colocalization data for CarT in the synaptic region of the lamina to support their core argument. Ideally one would like to know whether CarT resides at the capitate projections, invaginations of glia into the photoreceptor terminals, but an immuno-EM study of this is beyond the scope of the present work. However, colocalization analysis with glia markers, active zone markers and pre- and postsynaptic cell markers at high resolution would be helpful.\n\nSimilarly, it would be helpful to see carcinine accumulations in the mutant indeed occurring the glia cells, as predicted by the model, to support the core argument. Again, this would only require higher resolution and more detailed immunohistochemical analysis.\n",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "83a1f2bc-4a07-4f38-8b16-ee34016d1a18",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C1",
+      "claim": "Synaptic transmission from Drosophila photoreceptors to lamina neurons requires recycling of histamine neurotransmitter.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptic transmission from Drosophila photoreceptors to lamina neurons requires recycling of histamine neurotransmitter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established fact in the abstract, drawing on established scientific knowledge about Drosophila visual system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "2f3ac34c-7027-4543-b0de-1f4e2762f545",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C2",
+      "claim": "Synaptic histamine is cleared by uptake into glia and conversion into carcinine.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptic histamine is cleared by uptake into glia and conversion into carcinine, which functions as transport metabolite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established fact in the abstract, drawing on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "a9790c64-8242-4811-992d-4b25610a21ba",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C3",
+      "claim": "Carcinine functions as a transport metabolite.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptic histamine is cleared by uptake into glia and conversion into carcinine, which functions as transport metabolite.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established fact in the abstract, drawing on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "c8ff7099-37cd-4e1d-a67e-30f333891ae1",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C4",
+      "claim": "carT encodes a member of the SLC22A transporter family.",
+      "claim_type": "EXPLICIT",
+      "source": "In a targeted RNAi screen for genes involved in this pathway, we identified carT, which encodes a member of the SLC22A transporter family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the RNAi screen results and sequence analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "261278ac-88ea-40f4-8256-e475670ac494",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C5",
+      "claim": "CarT expression in photoreceptors is necessary for fly vision and behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "CarT expression in photoreceptors is necessary and sufficient for fly vision and behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ERG recordings and phototaxis assays presented in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "c331f5d3-7194-4666-9c4a-fbfcec811a65",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C6",
+      "claim": "CarT expression in photoreceptors is sufficient for fly vision and behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "CarT expression in photoreceptors is necessary and sufficient for fly vision and behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by rescue experiments shown in Figure 2 where photoreceptor-specific CarT expression restores visual function.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "448d468b-47dc-4838-b729-cd8518af214e",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C7",
+      "claim": "Carcinine accumulates in the lamina of carT mutant flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Carcinine accumulates in the lamina of carT flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence staining data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "bf487c10-5cb1-419f-a5e6-a60e67f4d070",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C8",
+      "claim": "Wild-type carcinine levels are restored by photoreceptor-specific expression of CarT in carT mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type levels are restored by photoreceptor-specific expression of CarT, and endogenous tagging suggests CarT localizes to synaptic endings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by immunofluorescence data in Figure 3D showing rescue of carcinine accumulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "2803dc5c-d3ab-4681-94de-5aa6a2d42291",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C9",
+      "claim": "Endogenous CarT localizes to synaptic endings.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type levels are restored by photoreceptor-specific expression of CarT, and endogenous tagging suggests CarT localizes to synaptic endings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by tdTomato-CarT localization data shown in Figure 3F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "8fb4b03c-2763-44e3-b553-fa4038f3b18b",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C10",
+      "claim": "Heterologous expression of CarT in S2 cells is sufficient for carcinine uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterologous expression of CarT in S2 cells is sufficient for carcinine uptake, demonstrating the ability of CarT to utilize carcinine as a transport substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the immunofluorescence-based carcinine uptake assay shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "d55108ef-a985-4699-a918-0f6fcae6cb77",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C11",
+      "claim": "CarT can utilize carcinine as a transport substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterologous expression of CarT in S2 cells is sufficient for carcinine uptake, demonstrating the ability of CarT to utilize carcinine as a transport substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the carcinine uptake assay in S2 cells shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "17f11d41-0a7b-4880-ad2d-daba87b07512",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C12",
+      "claim": "CarT transports the histamine metabolite carcinine into photoreceptor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results demonstrate that CarT transports the histamine metabolite carcinine into photoreceptor neurons, thus contributing an essential step to the histamine\u2013carcinine cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple lines of evidence including localization, accumulation in mutants, and uptake assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "b0ed4443-e263-4dcd-9389-0723f7dc4197",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C13",
+      "claim": "CarT contributes an essential step to the histamine\u2013carcinine cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results demonstrate that CarT transports the histamine metabolite carcinine into photoreceptor neurons, thus contributing an essential step to the histamine\u2013carcinine cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the necessity of CarT for visual function and its role in carcinine transport.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "98bfddc3-32c6-4f44-8fd0-1ff9bbc43f61",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C14",
+      "claim": "Histaminergic neurotransmission plays an important role in a variety of mammalian and invertebrate behavioral processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Histaminergic neurotransmission plays an important role in a variety of mammalian and invertebrate behavioral processes and contributes to the regulation of arousal, sleep and circadian rhythms (Nall and Sehgal, 2014; Panula and Nuutinen, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "859f2750-fe2f-4054-8d95-2dc522f03009",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C15",
+      "claim": "Histaminergic neurotransmission contributes to the regulation of arousal, sleep and circadian rhythms.",
+      "claim_type": "EXPLICIT",
+      "source": "Histaminergic neurotransmission plays an important role in a variety of mammalian and invertebrate behavioral processes and contributes to the regulation of arousal, sleep and circadian rhythms (Nall and Sehgal, 2014; Panula and Nuutinen, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "77bae24a-33b7-4ca1-b793-da2e6ce69b66",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C16",
+      "claim": "Defects in histaminergic signaling are linked to multiple neurodegenerative diseases, depression and Tourette's syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects in histaminergic signaling are linked to multiple neurodegenerative diseases, depression and Tourette's syndrome (Panula and Nuutinen, 2013; Shan et al., 2015; Castellan Baldan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "cdcbe978-1cb1-495b-91a9-b4e1c5e9ab83",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C17",
+      "claim": "Synaptic clearance and recycling of monoamine neurotransmitters, including serotonin and dopamine, depend on transporters that promote uptake into the presynaptic terminals or the surrounding glia.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptic clearance and recycling of monoamine neurotransmitters, including serotonin and dopamine, depend on transporters that promote uptake into the presynaptic terminals or the surrounding glia (Torres and Amara, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "349ab1e8-3723-4450-a132-14495fdddef8",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C18",
+      "claim": "Histamine transporter activities have been documented in mammalian and invertebrate glia.",
+      "claim_type": "EXPLICIT",
+      "source": "For histamine, such transporter activities have been documented in mammalian and invertebrate glia (Yoshikawa et al., 2013; Edwards and Meinertzhagen, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "98000760-6ba1-4a82-b5b1-aac6ec5d8f63",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C19",
+      "claim": "Histidine decarboxylase (Hdc) generates histamine in photoreceptor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Drosophila visual system, histidine decarboxylase (Hdc) generates histamine in photoreceptor neurons (Burg et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "f8e5fa80-c629-4ee5-ba1f-e03dc11a80a7",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C20",
+      "claim": "Light-induced depolarization of photoreceptor neurons promotes synaptic release of histamine.",
+      "claim_type": "EXPLICIT",
+      "source": "Light-induced depolarization of these neurons (Wang and Montell, 2007) promotes synaptic release of histamine, which opens histamine-gated chloride channels on postsynaptic L1 and L2 lamina neurons, triggering their hyperpolarization (Pantazis et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "ba794718-5144-4f0f-8bc8-7d3b9f327ec3",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C21",
+      "claim": "Synaptic histamine opens histamine-gated chloride channels on postsynaptic L1 and L2 lamina neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Light-induced depolarization of these neurons (Wang and Montell, 2007) promotes synaptic release of histamine, which opens histamine-gated chloride channels on postsynaptic L1 and L2 lamina neurons, triggering their hyperpolarization (Pantazis et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "47636948-0c20-4202-b188-47b6ca64cdfd",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C22",
+      "claim": "Histamine-gated chloride channel opening triggers hyperpolarization of L1 and L2 lamina neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Light-induced depolarization of these neurons (Wang and Montell, 2007) promotes synaptic release of histamine, which opens histamine-gated chloride channels on postsynaptic L1 and L2 lamina neurons, triggering their hyperpolarization (Pantazis et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "54469042-31b1-484d-8b6f-a55fbd7d19f5",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C23",
+      "claim": "Electroretinograms (ERGs) reveal ON and OFF transient peaks coinciding with initiation and cessation of the light source.",
+      "claim_type": "EXPLICIT",
+      "source": "These postsynaptic voltage changes can be followed with electroretinograms (ERGs) that reveal ON and OFF transient peaks coinciding with initiation and cessation of the light source (Alawi and Pak, 1971; Heisenberg, 1971).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "4bd19707-cf57-4961-a65d-3801ee3beb57",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C24",
+      "claim": "ERG phenotypes have contributed to the genetic dissection of histamine recycling.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to identifying mutants that interfere with presynaptic release (Kim et al., 2012), this phenotype has also contributed to the genetic dissection of histamine recycling (Edwards and Meinertzhagen, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "987d181d-05fb-4437-a5af-ddaf142a703a",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C25",
+      "claim": "Synaptic histamine is taken up into epithelial glia that completely envelope photoreceptor synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Synaptic histamine is taken up into epithelial glia that completely envelope photoreceptor synapses (Meinertzhagen and O'Neil, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "34e9e1bc-a9d6-401c-8c75-39c3f0cab0db",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C26",
+      "claim": "Within glia, histamine is modified by the Ebony-catalyzed condensation with \u03b2-alanine.",
+      "claim_type": "EXPLICIT",
+      "source": "Within these glia, histamine is modified by the Ebony-catalyzed condensation with \u03b2-alanine (Richardt et al., 2002; Borycz et al., 2002; Hartwig et al., 2014; Richardt et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "277f3ecc-9e6e-44f1-92ad-e5b524fa8d6c",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C27",
+      "claim": "The reaction product carcinine is transferred to photoreceptors.",
+      "claim_type": "EXPLICIT",
+      "source": "The reaction product carcinine is transferred to photoreceptors, which recover histamine by Tan-catalyzed hydrolysis (Borycz et al., 2002; True et al., 2005; Wagner et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "a64f8a0b-8ec9-443f-a9c6-f7837e895ca6",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C28",
+      "claim": "Photoreceptors recover histamine from carcinine by Tan-catalyzed hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The reaction product carcinine is transferred to photoreceptors, which recover histamine by Tan-catalyzed hydrolysis (Borycz et al., 2002; True et al., 2005; Wagner et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "168aa8ac-6084-4b89-9804-a69dedab579a",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C29",
+      "claim": "The histamine\u2013carcinine cycle is reminiscent of the glutamate\u2013glutamine cycle in the mammalian brain.",
+      "claim_type": "EXPLICIT",
+      "source": "This histamine\u2013carcinine cycle (see below: Figure 4\u2014figure supplement 1), reminiscent of the glutamate\u2013glutamine cycle in the mammalian brain (Br\u00f6er and Brookes, 2001), is necessary to maintain visual neurotransmission (Borycz et al., 2005) and depends on the compartmentalization of glial Ebony and neuronal Tan (Stuart et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "217d0038-05d1-405f-afa0-abfbb9350c7d",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C30",
+      "claim": "The histamine\u2013carcinine cycle is necessary to maintain visual neurotransmission.",
+      "claim_type": "EXPLICIT",
+      "source": "This histamine\u2013carcinine cycle (see below: Figure 4\u2014figure supplement 1), reminiscent of the glutamate\u2013glutamine cycle in the mammalian brain (Br\u00f6er and Brookes, 2001), is necessary to maintain visual neurotransmission (Borycz et al., 2005) and depends on the compartmentalization of glial Ebony and neuronal Tan (Stuart et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "60926a78-89f0-4dc0-a897-9f5861a3bebf",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C31",
+      "claim": "The histamine\u2013carcinine cycle depends on the compartmentalization of glial Ebony and neuronal Tan.",
+      "claim_type": "EXPLICIT",
+      "source": "This histamine\u2013carcinine cycle (see below: Figure 4\u2014figure supplement 1), reminiscent of the glutamate\u2013glutamine cycle in the mammalian brain (Br\u00f6er and Brookes, 2001), is necessary to maintain visual neurotransmission (Borycz et al., 2005) and depends on the compartmentalization of glial Ebony and neuronal Tan (Stuart et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "136b9e3d-0876-4a2f-818d-05c87be4aa52",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C32",
+      "claim": "Mutants for ebony or tan lack ON and OFF transients.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutants for ebony or tan lack ON and OFF transients (Heisenberg, 1971; Hotta and Benzer, 1969; Chaturvedi et al., 2014), indicating that neither histamine synthesis in photoreceptor neurons by Hdc nor a putative direct re-uptake mechanism is sufficient to sustain neurotransmitter release at photoreceptor synapses (Ziegler et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "5b302fa9-be64-46dd-ae3b-e323e71217f0",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C33",
+      "claim": "Neither histamine synthesis in photoreceptor neurons by Hdc nor a putative direct re-uptake mechanism is sufficient to sustain neurotransmitter release at photoreceptor synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutants for ebony or tan lack ON and OFF transients (Heisenberg, 1971; Hotta and Benzer, 1969; Chaturvedi et al., 2014), indicating that neither histamine synthesis in photoreceptor neurons by Hdc nor a putative direct re-uptake mechanism is sufficient to sustain neurotransmitter release at photoreceptor synapses (Ziegler et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature and inference from mutant phenotypes.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "555dbf2e-43d5-4f55-89f9-ac8f8e1536d3",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C34",
+      "claim": "The Drosophila genome is estimated to contain 603 transmembrane transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "The Drosophila genome is estimated to contain 603 transmembrane transporters (Ren et al., 2007; Featherstone, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "d8101aeb-e74c-43bf-b0b9-eca3ef1fc1d3",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C35",
+      "claim": "The SLC1, SLC6, SLC17, SLC18 and SLC22A transporter families contain known neurotransmitter transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "This includes known serotonin, dopamine, gamma-aminobutyric acid, and glutamate neurotransmitter transporters in the solute-linked carrier (SLC) families SLC1 and SLC6, and other transporters in the SLC17, SLC18 and SLC22A families (C\u00e9sar-Razquin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "369efafe-547f-468b-a3e2-5361fa765fe7",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C36",
+      "claim": "ATP-binding cassette transporters have been implicated in altered neurotransmitter distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, ATP-binding cassette transporters have been implicated in altered neurotransmitter distribution (Borycz et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "acbcdc83-678b-47a6-b040-7e9ff348cb15",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C37",
+      "claim": "The candidate transporter families contain 137 members in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, these transporter families contain 137 members that we considered as candidates potentially involved in the histamine\u2013carcinine cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of Drosophila genome annotations.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "7593415e-1c4e-4e71-8e95-8056ce714e90",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C38",
+      "claim": "CG9317 knockdown caused severely reduced ON and OFF transients.",
+      "claim_type": "EXPLICIT",
+      "source": "The screen yielded a single transporter gene, CG9317, whose knockdown caused severely reduced ON and OFF transients (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ERG recordings shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "42a0296f-15bd-45dc-adf5-e4fabae6dbe6",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C39",
+      "claim": "CG9317 is necessary in photoreceptor neurons, but not glia, for proper histaminergic transduction in the visual system.",
+      "claim_type": "EXPLICIT",
+      "source": "ERG recordings indicated that CG9317 is necessary in photoreceptor neurons, but not glia, for proper histaminergic transduction in the visual system (Figure 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ERG recordings with different Gal4 drivers shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "98491ff5-78a0-4fd1-bf5f-ccb9ced0577b",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C40",
+      "claim": "CG9317 knockdown did not affect overall photoreceptor health.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, compared with wild type, none of these genotypes displayed significantly reduced sustained negative potentials ( Figure 1D), indicating that CG9317 knockdown did not affect overall photoreceptor health (Williamson et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sustained negative potential measurements in Figure 1D and citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "dbe4d725-8763-4b70-a556-4eb0ddae6ff0",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C41",
+      "claim": "Three CRISPR-induced deletions were isolated: 11 bp for carT16A, 26 bp for carT16B and 56 bp for carT43.",
+      "claim_type": "EXPLICIT",
+      "source": "We isolated three individual CRISPR-induced deletions: 11 bp for carT16A, 26 bp for carT16B and 56 bp for carT43 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequencing data and shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "623affb4-1eb8-481d-a782-4263770bc2a7",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C42",
+      "claim": "Each carT mutation resulted in a frameshift within the first transmembrane domain followed by a premature stop codon.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of these mutations resulted in a frameshift within the first transmembrane domain (Figure 2B) followed by a premature stop codon within 17, 19 and 1 bp, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence analysis shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "bac1928b-6fec-477a-b8e3-aaf1d0913c4f",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C43",
+      "claim": "All three carT alleles were homozygous viable and fertile.",
+      "claim_type": "EXPLICIT",
+      "source": "All three carT alleles were homozygous viable and fertile, but lacked the ON and OFF transients, indicating that carT is required for visual signal transduction (Figure 2C,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observations of fly viability and fertility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "dd18cd09-cf43-4718-8e4e-eba296b10334",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C44",
+      "claim": "All three carT alleles lacked the ON and OFF transients.",
+      "claim_type": "EXPLICIT",
+      "source": "All three carT alleles were homozygous viable and fertile, but lacked the ON and OFF transients, indicating that carT is required for visual signal transduction (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ERG recordings shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "e5be0af9-80dd-4219-bbc3-ea062c45152b",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C45",
+      "claim": "carT is required for visual signal transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "All three carT alleles were homozygous viable and fertile, but lacked the ON and OFF transients, indicating that carT is required for visual signal transduction (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the ERG phenotype of carT mutants shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "dffbefc9-cd54-4fee-92a5-51c89e4e767b",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C46",
+      "claim": "Photoreceptor-specific expression of CarT driven by longGMR-Gal4 restored ON and OFF transient components in carT43 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "When driven in carT43 mutant photoreceptor neurons by longGMR-Gal4, CarT restored ON and OFF transient components of ERG recordings (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ERG recordings shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "fbcc4ba9-1841-4f7e-8891-1495ccae721a",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C47",
+      "claim": "Glial-specific expression of CarT failed to rescue ON and OFF transient defects in carT43 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, glial-specific expression of CarT failed to rescue ON and OFF transient defects (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ERG recordings shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "baf00585-64ad-4386-a0e8-66e4cee599ec",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C48",
+      "claim": "N-terminally Myc-tagged CarT was fully functional.",
+      "claim_type": "EXPLICIT",
+      "source": "This N-terminally tagged transporter was fully functional, as its expression in carT43 also rescued defects in ON and OFF transients (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ERG recordings showing rescue with Myc-CarT in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "59878fe0-bcb3-4b59-9b61-9f92325a9466",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C49",
+      "claim": "Expression of CarT in photoreceptor neurons is necessary and sufficient for visual signal transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that expression of CarT in photoreceptor neurons is necessary and sufficient for visual signal transduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined knockdown, mutant, and rescue experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "381ed3fc-7c19-42df-b97b-d4a3be25483b",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C50",
+      "claim": "Wild-type flies were naturally phototactic.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type flies were naturally phototactic (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phototaxis assay data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "c0b0e3e6-3c2b-4099-a183-b8505d5010fd",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C51",
+      "claim": "Flies with defects in the synthesis of histamine (HdcMB07212) or its recycling (ebony1 or tan1) were randomly distributed between the lit and dark arms of a T-maze.",
+      "claim_type": "EXPLICIT",
+      "source": "However, flies with defects in the synthesis of histamine (HdcMB07212) or its recycling (ebony1 or tan1) were randomly distributed between the lit and dark arms of a T-maze, consistent with a lack of phototactic preference due to their inability to detect light (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phototaxis assay data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "62b37b84-2c66-491a-9d49-c3716655098b",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C52",
+      "claim": "Phototactic behavior was severely reduced in carT43 flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, phototactic behavior was severely reduced in carT43 flies (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phototaxis assay data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "0751e64f-05ec-4a21-bc31-b64a019932b5",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C53",
+      "claim": "Light preference of carT43 flies was restored by expression of wild-type CarT in photoreceptor neurons under control of longGMR-Gal4.",
+      "claim_type": "EXPLICIT",
+      "source": "Light preference of carT43 flies was restored by expression of wild-type CarT in photoreceptor neurons under control of longGMR-Gal4 (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phototaxis assay data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "359f0ba5-287e-46d0-ab1d-73aa8e7b7f4f",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C54",
+      "claim": "CarT expression in photoreceptor neurons is necessary and sufficient for behavioral aspects of normal vision and electrophysiological properties of visual transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that CarT expression in photoreceptor neurons is necessary and sufficient for behavioral aspects of normal vision and electrophysiological properties of visual transduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined ERG and phototaxis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "0f3f01b9-5d1c-4038-a906-17798a1f2c3b",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C55",
+      "claim": "Overall architecture of retina and lamina tissues is not altered in carT, ebony, tan and Hdc mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Interference with aspects of the histamine\u2013carcinine cycle by different mutations causes distinct changes in the distribution of these two metabolites in the retina and lamina, although overall architecture of these tissues is not altered in carT, ebony, tan and Hdc mutants (Figure 3A\u2013D) and references (Chaturvedi et al., 2014; Borycz et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by histological images in Figure 3 and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "e2200158-bc0a-495c-be90-e62513ecb09f",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C56",
+      "claim": "ebony1 mutants display characteristic increases in the levels of histamine.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with their function in the histamine\u2013carcinine cycle, characteristic increases in the levels of histamine in ebony1 (Figure 3C) and carcinine in tan1 heads (Figure 3D) were detected by antibody staining (Chaturvedi et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data in Figure 3C and citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "b4c297b3-74f9-43b5-b1d7-0d700ecb9644",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C57",
+      "claim": "tan1 mutants display characteristic increases in the levels of carcinine.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with their function in the histamine\u2013carcinine cycle, characteristic increases in the levels of histamine in ebony1 (Figure 3C) and carcinine in tan1 heads (Figure 3D) were detected by antibody staining (Chaturvedi et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data in Figure 3D and citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "492b4b03-53dc-4790-860f-2ecc572f5d6b",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C58",
+      "claim": "carT43 heads displayed no discernable alterations in histamine staining intensity or distribution compared with wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "When compared with wild type, carT43 heads displayed no discernable alterations in histamine staining intensity or distribution (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "580be244-0677-4c6c-be4f-d77fe16809f6",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C59",
+      "claim": "Carcinine levels were elevated in carT43 lamina and medulla.",
+      "claim_type": "EXPLICIT",
+      "source": "However, carcinine levels were elevated in carT43 lamina (Figure 3D, arrow) and medulla (arrowhead).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "26e01fc6-59d4-46af-b85a-218da7382232",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C60",
+      "claim": "Carcinine staining in carT43 lamina partially localized to the glia.",
+      "claim_type": "EXPLICIT",
+      "source": "Staining for carcinine in carT43 lamina partially localized to the glia visualized by repo-Gal4 driven UAS-mCD8::RFP (Figure 3E) suggested a build up of carcinine in the glia and the extracellular space in the lamina, consistent with a requirement of CarT in carcinine transport into photoreceptors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-localization data in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "e7820356-581d-4291-90d3-b0b8942d2cbd",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C61",
+      "claim": "Carcinine accumulation in carT43 brains was restored to wild-type levels by photoreceptor-specific expression of a Myc-CarT transgene.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, carcinine accumulation in carT43 brains was restored to wild-type levels by photoreceptor-specific expression of a Myc-CarT transgene (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "ab076063-61ea-4123-9059-74dcbeb62d46",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C62",
+      "claim": "longGMR-driven Myc-CarT transporter was enriched in photoreceptor axonal endings in the lamina and the distal retina.",
+      "claim_type": "EXPLICIT",
+      "source": "Within photoreceptors, the longGMR-driven Myc-CarT transporter was enriched in their axonal endings in the lamina (arrow in Figure 3B) and the distal retina (arrowhead in Figure 3B) indicating CarT may function near synaptic terminals and in neuronal cell bodies to facilitate perisynaptic and long-distance recycling, two pathways previously suggested (Chaturvedi et al., 2014; Borycz et al., 2012; Rahman et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "881f5d4c-2486-4a63-9477-18a3fb9f36ac",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C63",
+      "claim": "CarT may function near synaptic terminals and in neuronal cell bodies to facilitate perisynaptic and long-distance recycling.",
+      "claim_type": "EXPLICIT",
+      "source": "Within photoreceptors, the longGMR-driven Myc-CarT transporter was enriched in their axonal endings in the lamina (arrow in Figure 3B) and the distal retina (arrowhead in Figure 3B) indicating CarT may function near synaptic terminals and in neuronal cell bodies to facilitate perisynaptic and long-distance recycling, two pathways previously suggested (Chaturvedi et al., 2014; Borycz et al., 2012; Rahman et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the localization pattern and supported by citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "62367f4c-3a02-4cfa-bb10-4ed3b971196d",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C64",
+      "claim": "Endogenous CarT RNA expression is highly enriched in the eye.",
+      "claim_type": "EXPLICIT",
+      "source": "Endogenous CarT RNA expression is highly enriched in the eye (http://flybase.org/reports/FBlc0000157.html).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by reference to FlyBase expression data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "2930f277-1463-432f-bfa2-f76c5a7949d5",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C65",
+      "claim": "tdTomato-CarT over carT43 displayed normal ON and OFF transient responses.",
+      "claim_type": "EXPLICIT",
+      "source": "ERG analysis of flies harboring one copy of this tdTomato-CarT over the nonfunctional carT43 allele displayed normal ON and OFF transient responses, indicating that the endogenous tdTomato-tagged CarT was fully functional (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ERG recordings shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "e0be0925-3295-4e28-ac5b-1d9efb121fb7",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C66",
+      "claim": "Endogenous tdTomato-tagged CarT was fully functional.",
+      "claim_type": "EXPLICIT",
+      "source": "ERG analysis of flies harboring one copy of this tdTomato-CarT over the nonfunctional carT43 allele displayed normal ON and OFF transient responses, indicating that the endogenous tdTomato-tagged CarT was fully functional (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the ERG rescue data shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "3eb4c40d-7b9e-4fa7-872f-0413ff0aed59",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C67",
+      "claim": "Endogenous tdTomato-CarT was highly enriched within photoreceptor projections in the lamina and medulla.",
+      "claim_type": "EXPLICIT",
+      "source": "This endogenous tdTomato-CarT was highly enriched within photoreceptor projections in the lamina and medulla (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence imaging in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "76ecc24f-d6fa-41d9-9b19-89082a07569f",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C68",
+      "claim": "CarT is present in photoreceptors near synaptic terminals.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-labeling with the glial Ebony (Figure 3G), or synaptic Bruchpilot and a 3xPax3-eGFP, which labels photoreceptor neurons (Figure 3H), indicates that CarT is present in photoreceptors near synaptic terminals (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-localization data in Figure 3G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "8b9af074-7459-4cc4-877a-29537e4d95c8",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C69",
+      "claim": "S2 cells cultured in standard Schneider's medium displayed no appreciable carcinine staining.",
+      "claim_type": "EXPLICIT",
+      "source": "When cultured in standard Schneider's medium, transfected S2 cells displayed no appreciable carcinine staining, indicating a lack of endogenous carcinine and sufficient specificity of the carcinine antibody in this context (Figure 4A and A'; quantified in D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data in Figure 4A and A'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "fb9850a2-e11b-46ca-b96b-578b0bc22cc5",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C70",
+      "claim": "S2 cells expressing full-length Myc-CarT stained positively for carcinine when culture media was supplemented with carcinine.",
+      "claim_type": "EXPLICIT",
+      "source": "When culture media was supplemented with carcinine (0.5 mM), cells expressing full-length Myc-CarT stained positively for carcinine, indicating its uptake in these cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data in Figure 4B and B'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "e2c042a1-8c7d-466c-8f5a-bdc195390732",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C71",
+      "claim": "Untransfected S2 cells lacked carcinine staining despite being maintained in carcinine-supplemented medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, neighboring untransfected cells (negative for the Myc epitope) lacked carcinine staining, despite being maintained in the same carcinine-supplemented medium as Myc-CarT positive cells (Figure 4B and B').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data in Figure 4B and B'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "5ff22631-b622-48d0-acb2-aa144b20d239",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C72",
+      "claim": "An internal deletion of 10 of the 12 transmembrane domains within CarT abolished carcinine uptake.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, an internal deletion of 10 of the 12 transmembrane domains within CarT abolished carcinine uptake (Figure 4C and C'; quantified in D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence data in Figure 4C and C'.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "26ce1847-d5ce-4231-b3dd-84e90bb27ff5",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C73",
+      "claim": "CarT functions as a carcinine transporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data demonstrate CarT functions as a carcinine transporter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the S2 cell uptake assay data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "4c83ffc2-7ac1-4b05-862b-fa6ee5ddb520",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C74",
+      "claim": "CarT is a member of the SLC22 family of transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence comparison indicates that CarT is a member of the SLC22 family of transporters (Eraly et al., 2004) and together with other CarT-like transporters in invertebrates constitutes a distinct subfamily (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence analysis and phylogenetic tree shown in Figure 2\u2014figure supplement 1, and citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "fec3b5ac-736f-4e1c-a271-1b85840cf56e",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C75",
+      "claim": "CarT together with other CarT-like transporters in invertebrates constitutes a distinct subfamily of SLC22 transporters.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence comparison indicates that CarT is a member of the SLC22 family of transporters (Eraly et al., 2004) and together with other CarT-like transporters in invertebrates constitutes a distinct subfamily (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by phylogenetic analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "03db7eb5-5c21-4525-a605-c3b6b459324a",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C76",
+      "claim": "OCT2 and OCT3 have been implicated in histamine uptake into human astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, OCT2 and OCT3, members of the closely related organic cation subfamily of SLC22A transporters, have been implicated in histamine uptake into human astrocytes (Yoshikawa et al., 2013) and the transport of histamine receptor antagonists (Koepsell, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "6e82e966-300e-4eb8-b253-c5baa386771c",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C77",
+      "claim": "OCT2 and OCT3 have been implicated in the transport of histamine receptor antagonists.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, OCT2 and OCT3, members of the closely related organic cation subfamily of SLC22A transporters, have been implicated in histamine uptake into human astrocytes (Yoshikawa et al., 2013) and the transport of histamine receptor antagonists (Koepsell, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "8d63b6fa-a7dd-4ae5-94d1-2764a2ae70fb",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C78",
+      "claim": "Many biochemically characterized members of the extended SLC22 family involved in neurotransmitter transport exhibit overlapping substrate specificity providing transport redundancies.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the biochemically characterized members of the extended SLC22 family that are involved in the transport of neurotransmitters, exhibit overlapping substrate specificity providing transport redundancies (Koepsell, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "c030bdcb-33c2-456a-ba87-afe17a05b04c",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C79",
+      "claim": "The data argue against transport redundancy for CarT function.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our data argue against such redundancy as carT null alleles efficiently blocks synaptic transmission dependent on the histamine\u2013carcinine cycle (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the severe phenotype of carT null mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "f9a36459-0d81-45a3-83d1-aae998f12fc9",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C80",
+      "claim": "A role in the histamine-carcinine cycle has previously been suggested for the putative Na/Cl\u2013 dependent neurotransmitter/osmolyte transporter Inebriated.",
+      "claim_type": "EXPLICIT",
+      "source": "A role in this process has previously been suggested for the putative Na/Cl\u2013 dependent neurotransmitter/osmolyte transporter Inebriated (Stuart et al., 2007), possibly by directly transporting carcinine into photoreceptors (Gavin et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "6f24f61f-fe33-490a-b9ba-2ee4ae0e6621",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C81",
+      "claim": "Inebriated may indirectly support the histamine\u2013carcinine cycle by promoting the long-distance recycling of \u03b2-alanine from photoreceptors to glia.",
+      "claim_type": "EXPLICIT",
+      "source": "No direct evidence for such a function has been reported, however, suggesting that Inebriated may indirectly support the histamine\u2013carcinine cycle by promoting the long-distance recycling of \u03b2-alanine from photoreceptors to glia (Stuart et al., 2007; Chaturvedi et al., 2014; Borycz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on lack of direct evidence and citations to previous literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "db7c287f-c0bf-4a3a-a066-0e8703534995",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C82",
+      "claim": "An indirect role of Inebriated is more consistent with its role in water homeostasis in the hindgut.",
+      "claim_type": "EXPLICIT",
+      "source": "An indirect role of Inebriated is also more consistent with its role in water homeostasis in the hindgut (Luan et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "dd67cd1d-943a-4f42-8538-2399c4a21168",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C83",
+      "claim": "CG9317 is highly expressed in heads, but not bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we presented several lines of evidence that CG9317, which is highly expressed in heads, but not bodies (Eraly et al., 2004), encodes the carcinine transporter CarT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "a39c801f-dee6-4a14-83c2-7e7aeb0d5e89",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C84",
+      "claim": "Histamine has been implicated in several circuits in the insect brain, including those controlling sleep, circadian rhythms and thermosensation.",
+      "claim_type": "EXPLICIT",
+      "source": "Histamine, similar to its impact on multiple behaviors in the mammalian brain (Nall and Sehgal, 2014; Panula and Nuutinen, 2013; Shan et al., 2015; Castellan Baldan et al., 2014), has been implicated in several circuits in the insect brain as well, including those controlling sleep, circadian rhythms and thermosensation (Nall and Sehgal, 2014; Buchner et al., 1993; Oh et al., 2013; Hong et al., 2006; Suh and Jackson, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "561924a1-5e0f-4ddc-84a4-3b9b344fe040",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C85",
+      "claim": "The identification of CarT's role in the histamine\u2013carcinine cycle will provide additional tools to further address the role of histaminergic circuits in different behaviors.",
+      "claim_type": "EXPLICIT",
+      "source": "The identification of CarT's role in the histamine\u2013carcinine cycle will provide additional tools to further address the role of histaminergic circuits in these different behaviors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about future applications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "a732c106-a6fa-453d-8adf-4b26771b793a",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C86",
+      "claim": "A germline mutation rate of 76.1% of injected flies was detected by PCR amplification and T7 endonuclease treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "A germline mutation rate of 76.1% of injected flies was detected by polychromase chain reaction (PCR) amplification of the target region, slow ramp speed re-annealing, T7 endonuclease treatment, and polyacrylamide gel electrophoresis analysis of potential cleavage products (Gratz et al., 2013; Bassett et al., 2013; Yu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from CRISPR mutagenesis and citations to methods.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "1ffaed19-cbbb-4efa-83ac-5a4a5bc1f429",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C87",
+      "claim": "Identified carT mutations were homozygous viable.",
+      "claim_type": "EXPLICIT",
+      "source": "Identified mutations were homozygous viable and crossed into a w+ background prior to ERG recordings and behavioral assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on observations of fly viability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "db0d3bcc-eada-4c62-828f-024197a7d321",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C88",
+      "claim": "The SLC22 family is characterized by a large extracellular loop containing four cysteines and a glycosylation site at conserved positions.",
+      "claim_type": "EXPLICIT",
+      "source": "The SLC22 family is characterized by a large extracellular loop containing four cysteines (C) and a glycosylation site (blue) at conserved positions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as established knowledge about SLC22 family characteristics and shown in Figure 2B.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "d9aa3f6f-ae53-40c6-bb19-56c14d774c90",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "claim_id": "C89",
+      "claim": "Carcinine accumulation in carT43 is consistent with a requirement of CarT in carcinine transport into photoreceptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Staining for carcinine in carT43 lamina partially localized to the glia visualized by repo-Gal4 driven UAS-mCD8::RFP (Figure 3E) suggested a build up of carcinine in the glia and the extracellular space in the lamina, consistent with a requirement of CarT in carcinine transport into photoreceptors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the localization pattern of carcinine accumulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3f7eb774-dbd2-4e3f-b231-ff86c02180af",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "An RNAi screen of 137 candidate transporter genes identified CG9317 (carT) as necessary in photoreceptor neurons for visual signal transduction, as evidenced by severely reduced ON and OFF transients in ERG recordings when knocked down specifically in photoreceptors but not glia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C38, C39, and C40 collectively demonstrate that the RNAi screen successfully identified carT and that its knockdown specifically in photoreceptors (but not glia) disrupts visual transduction without affecting overall photoreceptor health. The data from multiple Gal4 drivers and sustained negative potential measurements provide strong converging evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "44088fb4-f739-4aa5-afa3-03dfb19da884",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Three CRISPR-induced carT null alleles (carT16A, carT16B, carT43) were generated, each containing frameshift mutations in the first transmembrane domain. All three alleles are homozygous viable and fertile but completely lack ON and OFF transients, demonstrating that carT is required for visual signal transduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C45 provide strong genetic evidence through independent null alleles. The molecular characterization (sequencing), viability data, and consistent ERG phenotypes across all three alleles strongly support the conclusion that carT is essential for visual transduction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "a2b90ef3-d1ad-4b6e-a029-67fa8ac83cd7",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Photoreceptor-specific expression of CarT is both necessary and sufficient to rescue visual signal transduction defects in carT mutants, while glial-specific expression fails to rescue, demonstrating cell-autonomous function in photoreceptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C49, C5, and C6 demonstrate necessity and sufficiency through complementary genetic experiments. The rescue with both untagged and Myc-tagged CarT in photoreceptors, combined with failure of glial rescue, provides strong evidence for photoreceptor-specific function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "fe40a6cb-7117-4caa-a3b3-702eaa51cbea",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "carT43 mutant flies exhibit severely reduced phototactic behavior comparable to histamine synthesis and recycling mutants, and this behavioral defect is rescued by photoreceptor-specific CarT expression, demonstrating that CarT is necessary and sufficient for normal visual behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 provide behavioral validation of the electrophysiological findings. The phototaxis assays show that carT mutants phenocopy known histamine pathway mutants, and the rescue experiments confirm specificity. The data support both necessity and sufficiency for visual behavior.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "21dca1f4-646d-49f1-af14-ee4941511987",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Carcinine accumulates in the lamina and medulla of carT43 mutants, with partial localization to glia, and this accumulation is rescued to wild-type levels by photoreceptor-specific CarT expression, consistent with CarT mediating carcinine transport into photoreceptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C59, C60, C61, and C89 provide metabolite distribution data supporting CarT's role in carcinine transport. The accumulation pattern, glial localization, and rescue by photoreceptor-specific CarT expression are consistent with a block in carcinine uptake into photoreceptors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "6dbea2d4-bb1d-4bf7-ab4b-7bf6c1638c7c",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "carT43 mutants show no alterations in histamine distribution compared to wild-type, while ebony1 and tan1 mutants show characteristic increases in histamine and carcinine respectively. Overall tissue architecture is preserved in all histamine-carcinine cycle mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58, C56, C57, and C55 provide important negative and positive controls. The lack of histamine accumulation in carT mutants distinguishes it from ebony mutants and supports a role downstream of histamine uptake. The preserved tissue architecture rules out gross developmental defects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "e16340cd-fd17-44ab-a982-730d88176764",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CarT localizes to photoreceptor axonal endings in the lamina and distal retina, with endogenous tdTomato-tagged CarT enriched near synaptic terminals, suggesting CarT functions in both perisynaptic and long-distance recycling pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62, C63, C9, C67, and C68 demonstrate CarT localization through both overexpression and endogenous tagging approaches. The enrichment at synaptic terminals and cell bodies is consistent with the proposed transport function, though the inference about dual recycling pathways relies on localization patterns and prior literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "d5253a94-6ede-4350-82f5-f372884f0da1",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Both N-terminally Myc-tagged and tdTomato-tagged CarT are fully functional, as demonstrated by their ability to rescue ERG defects in carT mutants, validating the use of tagged constructs for localization studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65, C66, and C48 provide essential validation that epitope tagging does not disrupt CarT function. The ERG rescue data with both tags supports the validity of localization studies using these constructs.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "441a5bed-69f2-42e0-aa75-ec8af18c7937",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Heterologous expression of full-length CarT in S2 cells is sufficient for carcinine uptake, while untransfected cells and cells expressing a transmembrane domain deletion mutant show no uptake, demonstrating that CarT directly transports carcinine.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10, C11, C69-C73 provide direct biochemical evidence for CarT's transport activity. The S2 cell assay includes appropriate negative controls (untransfected cells, deletion mutant) and demonstrates cell-autonomous carcinine uptake. However, the assay is qualitative (immunofluorescence-based) rather than quantitative kinetic analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "8da9d487-db20-4648-a1ae-181dd64cab4d",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Sequence analysis reveals that CarT is a member of the SLC22 transporter family and, together with other invertebrate homologs, constitutes a distinct subfamily within this family.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74, C75, and C4 are supported by phylogenetic analysis shown in Figure 2\u2014figure supplement 1. The sequence comparison and phylogenetic tree demonstrate SLC22 family membership and the existence of an invertebrate-specific subfamily.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "fc73842c-204d-45b5-99f5-d988c93e7341",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "CarT transports carcinine into photoreceptor neurons, contributing an essential step to the histamine-carcinine cycle required for sustained visual neurotransmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12 and C13 represent the main conclusion, integrating multiple lines of evidence: genetic necessity and sufficiency, carcinine accumulation in mutants, localization to photoreceptors, and direct transport activity. The convergence of genetic, cellular, and biochemical data strongly supports this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "3b03d638-4aa5-4c62-9bb1-1b7fda5df7ee",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The severe phenotype of carT null alleles argues against functional redundancy with other transporters in the histamine-carcinine cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C79 is supported by the complete loss of ON and OFF transients in null mutants. If redundant transporters existed, partial function would be expected. The inference is reasonable given the data, though it cannot rule out non-functional redundant genes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "9035607a-9b31-4a77-8b0b-c1190c1d460d",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological context by reviewing established knowledge about histaminergic neurotransmission, the Drosophila visual system, and the histamine-carcinine recycling pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C14-C33 represent background knowledge supported by appropriate citations to prior literature. These claims establish the context for the current work and are appropriately attributed to previous studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "f6e51323-9716-4227-b4cb-0f07e1532a7b",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors designed a targeted RNAi screen focusing on 137 Drosophila transporters from families previously associated with neurotransmitter transport (SLC1, SLC6, SLC17, SLC18, SLC22A, and ABC transporters).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 describe the screening strategy. The number of candidate genes (137) is based on genome annotations and the selection criteria are justified by prior knowledge of neurotransmitter transporter families. The approach is reasonable and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "6b961cc6-13da-42ff-bea3-b79f46be0d4b",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors discuss the relationship of CarT to other SLC22 family members (OCT2, OCT3) implicated in histamine transport and to the previously proposed carcinine transporter Inebriated, suggesting Inebriated may have an indirect role in \u03b2-alanine recycling instead.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76-C78, C80-C82 discuss prior work and propose alternative interpretations. While the citations support the statements about OCT2/OCT3 and Inebriated, the reinterpretation of Inebriated's role (C81) is speculative and not directly tested in this study. The discussion is reasonable but represents inference rather than demonstrated fact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "abab1552-ca0a-4dea-8ad4-d24eabdad73a",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "CG9317/carT is highly expressed in fly heads but not bodies, with RNA expression enriched in the eye.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83 and C64 are supported by citations to expression databases (FlyBase, Eraly et al. 2004). These expression patterns are consistent with the visual system function identified in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "2c37f36b-5f52-4fb0-884c-33804b1d7f25",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors propose that identifying CarT's role will provide tools to study histaminergic circuits involved in sleep, circadian rhythms, and thermosensation in insects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C84 and C85 represent future applications and speculation. While C84 is supported by citations about histamine's roles in various behaviors, C85 is a forward-looking statement about potential applications rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    },
+    {
+      "id": "00fe61c7-13fa-4bc0-94fd-39534f0da865",
+      "content_id": "541e2279-a579-410c-81fc-a98e8b5fde91",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The CRISPR mutagenesis achieved a 76.1% germline mutation rate, and the identified mutations were homozygous viable. The SLC22 family is characterized by conserved structural features including four cysteines and a glycosylation site in a large extracellular loop.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C88 describe methodological details and structural features. The mutation rate is documented, viability is observed, and the SLC22 family characteristics are established knowledge shown in Figure 2B.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:04:19.292669Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c8ff7099-37cd-4e1d-a67e-30f333891ae1",
+      "result_id": "3f7eb774-dbd2-4e3f-b231-ff86c02180af"
+    },
+    {
+      "claim_id": "7593415e-1c4e-4e71-8e95-8056ce714e90",
+      "result_id": "3f7eb774-dbd2-4e3f-b231-ff86c02180af"
+    },
+    {
+      "claim_id": "42a0296f-15bd-45dc-adf5-e4fabae6dbe6",
+      "result_id": "3f7eb774-dbd2-4e3f-b231-ff86c02180af"
+    },
+    {
+      "claim_id": "98491ff5-78a0-4fd1-bf5f-ccb9ced0577b",
+      "result_id": "3f7eb774-dbd2-4e3f-b231-ff86c02180af"
+    },
+    {
+      "claim_id": "dbe4d725-8763-4b70-a556-4eb0ddae6ff0",
+      "result_id": "44088fb4-f739-4aa5-afa3-03dfb19da884"
+    },
+    {
+      "claim_id": "623affb4-1eb8-481d-a782-4263770bc2a7",
+      "result_id": "44088fb4-f739-4aa5-afa3-03dfb19da884"
+    },
+    {
+      "claim_id": "bac1928b-6fec-477a-b8e3-aaf1d0913c4f",
+      "result_id": "44088fb4-f739-4aa5-afa3-03dfb19da884"
+    },
+    {
+      "claim_id": "dd18cd09-cf43-4718-8e4e-eba296b10334",
+      "result_id": "44088fb4-f739-4aa5-afa3-03dfb19da884"
+    },
+    {
+      "claim_id": "e5be0af9-80dd-4219-bbc3-ea062c45152b",
+      "result_id": "44088fb4-f739-4aa5-afa3-03dfb19da884"
+    },
+    {
+      "claim_id": "dffbefc9-cd54-4fee-92a5-51c89e4e767b",
+      "result_id": "a2b90ef3-d1ad-4b6e-a029-67fa8ac83cd7"
+    },
+    {
+      "claim_id": "fbcc4ba9-1841-4f7e-8891-1495ccae721a",
+      "result_id": "a2b90ef3-d1ad-4b6e-a029-67fa8ac83cd7"
+    },
+    {
+      "claim_id": "baf00585-64ad-4386-a0e8-66e4cee599ec",
+      "result_id": "a2b90ef3-d1ad-4b6e-a029-67fa8ac83cd7"
+    },
+    {
+      "claim_id": "59878fe0-bcb3-4b59-9b61-9f92325a9466",
+      "result_id": "a2b90ef3-d1ad-4b6e-a029-67fa8ac83cd7"
+    },
+    {
+      "claim_id": "261278ac-88ea-40f4-8256-e475670ac494",
+      "result_id": "a2b90ef3-d1ad-4b6e-a029-67fa8ac83cd7"
+    },
+    {
+      "claim_id": "c331f5d3-7194-4666-9c4a-fbfcec811a65",
+      "result_id": "a2b90ef3-d1ad-4b6e-a029-67fa8ac83cd7"
+    },
+    {
+      "claim_id": "381ed3fc-7c19-42df-b97b-d4a3be25483b",
+      "result_id": "fe40a6cb-7117-4caa-a3b3-702eaa51cbea"
+    },
+    {
+      "claim_id": "c0b0e3e6-3c2b-4099-a183-b8505d5010fd",
+      "result_id": "fe40a6cb-7117-4caa-a3b3-702eaa51cbea"
+    },
+    {
+      "claim_id": "62b37b84-2c66-491a-9d49-c3716655098b",
+      "result_id": "fe40a6cb-7117-4caa-a3b3-702eaa51cbea"
+    },
+    {
+      "claim_id": "0751e64f-05ec-4a21-bc31-b64a019932b5",
+      "result_id": "fe40a6cb-7117-4caa-a3b3-702eaa51cbea"
+    },
+    {
+      "claim_id": "359f0ba5-287e-46d0-ab1d-73aa8e7b7f4f",
+      "result_id": "fe40a6cb-7117-4caa-a3b3-702eaa51cbea"
+    },
+    {
+      "claim_id": "448d468b-47dc-4838-b729-cd8518af214e",
+      "result_id": "21dca1f4-646d-49f1-af14-ee4941511987"
+    },
+    {
+      "claim_id": "580be244-0677-4c6c-be4f-d77fe16809f6",
+      "result_id": "21dca1f4-646d-49f1-af14-ee4941511987"
+    },
+    {
+      "claim_id": "26e01fc6-59d4-46af-b85a-218da7382232",
+      "result_id": "21dca1f4-646d-49f1-af14-ee4941511987"
+    },
+    {
+      "claim_id": "e7820356-581d-4291-90d3-b0b8942d2cbd",
+      "result_id": "21dca1f4-646d-49f1-af14-ee4941511987"
+    },
+    {
+      "claim_id": "d9aa3f6f-ae53-40c6-bb19-56c14d774c90",
+      "result_id": "21dca1f4-646d-49f1-af14-ee4941511987"
+    },
+    {
+      "claim_id": "492b4b03-53dc-4790-860f-2ecc572f5d6b",
+      "result_id": "6dbea2d4-bb1d-4bf7-ab4b-7bf6c1638c7c"
+    },
+    {
+      "claim_id": "e2200158-bc0a-495c-be90-e62513ecb09f",
+      "result_id": "6dbea2d4-bb1d-4bf7-ab4b-7bf6c1638c7c"
+    },
+    {
+      "claim_id": "b4c297b3-74f9-43b5-b1d7-0d700ecb9644",
+      "result_id": "6dbea2d4-bb1d-4bf7-ab4b-7bf6c1638c7c"
+    },
+    {
+      "claim_id": "0f3f01b9-5d1c-4038-a906-17798a1f2c3b",
+      "result_id": "6dbea2d4-bb1d-4bf7-ab4b-7bf6c1638c7c"
+    },
+    {
+      "claim_id": "ab076063-61ea-4123-9059-74dcbeb62d46",
+      "result_id": "e16340cd-fd17-44ab-a982-730d88176764"
+    },
+    {
+      "claim_id": "881f5d4c-2486-4a63-9477-18a3fb9f36ac",
+      "result_id": "e16340cd-fd17-44ab-a982-730d88176764"
+    },
+    {
+      "claim_id": "2803dc5c-d3ab-4681-94de-5aa6a2d42291",
+      "result_id": "e16340cd-fd17-44ab-a982-730d88176764"
+    },
+    {
+      "claim_id": "3eb4c40d-7b9e-4fa7-872f-0413ff0aed59",
+      "result_id": "e16340cd-fd17-44ab-a982-730d88176764"
+    },
+    {
+      "claim_id": "76ecc24f-d6fa-41d9-9b19-89082a07569f",
+      "result_id": "e16340cd-fd17-44ab-a982-730d88176764"
+    },
+    {
+      "claim_id": "2930f277-1463-432f-bfa2-f76c5a7949d5",
+      "result_id": "d5253a94-6ede-4350-82f5-f372884f0da1"
+    },
+    {
+      "claim_id": "e0be0925-3295-4e28-ac5b-1d9efb121fb7",
+      "result_id": "d5253a94-6ede-4350-82f5-f372884f0da1"
+    },
+    {
+      "claim_id": "baf00585-64ad-4386-a0e8-66e4cee599ec",
+      "result_id": "d5253a94-6ede-4350-82f5-f372884f0da1"
+    },
+    {
+      "claim_id": "8fb4b03c-2763-44e3-b553-fa4038f3b18b",
+      "result_id": "441a5bed-69f2-42e0-aa75-ec8af18c7937"
+    },
+    {
+      "claim_id": "d55108ef-a985-4699-a918-0f6fcae6cb77",
+      "result_id": "441a5bed-69f2-42e0-aa75-ec8af18c7937"
+    },
+    {
+      "claim_id": "8b9af074-7459-4cc4-877a-29537e4d95c8",
+      "result_id": "441a5bed-69f2-42e0-aa75-ec8af18c7937"
+    },
+    {
+      "claim_id": "fb9850a2-e11b-46ca-b96b-578b0bc22cc5",
+      "result_id": "441a5bed-69f2-42e0-aa75-ec8af18c7937"
+    },
+    {
+      "claim_id": "e2c042a1-8c7d-466c-8f5a-bdc195390732",
+      "result_id": "441a5bed-69f2-42e0-aa75-ec8af18c7937"
+    },
+    {
+      "claim_id": "5ff22631-b622-48d0-acb2-aa144b20d239",
+      "result_id": "441a5bed-69f2-42e0-aa75-ec8af18c7937"
+    },
+    {
+      "claim_id": "26ce1847-d5ce-4231-b3dd-84e90bb27ff5",
+      "result_id": "441a5bed-69f2-42e0-aa75-ec8af18c7937"
+    },
+    {
+      "claim_id": "4c83ffc2-7ac1-4b05-862b-fa6ee5ddb520",
+      "result_id": "8da9d487-db20-4648-a1ae-181dd64cab4d"
+    },
+    {
+      "claim_id": "fec3b5ac-736f-4e1c-a271-1b85840cf56e",
+      "result_id": "8da9d487-db20-4648-a1ae-181dd64cab4d"
+    },
+    {
+      "claim_id": "c8ff7099-37cd-4e1d-a67e-30f333891ae1",
+      "result_id": "8da9d487-db20-4648-a1ae-181dd64cab4d"
+    },
+    {
+      "claim_id": "17f11d41-0a7b-4880-ad2d-daba87b07512",
+      "result_id": "fc73842c-204d-45b5-99f5-d988c93e7341"
+    },
+    {
+      "claim_id": "b0ed4443-e263-4dcd-9389-0723f7dc4197",
+      "result_id": "fc73842c-204d-45b5-99f5-d988c93e7341"
+    },
+    {
+      "claim_id": "c030bdcb-33c2-456a-ba87-afe17a05b04c",
+      "result_id": "3b03d638-4aa5-4c62-9bb1-1b7fda5df7ee"
+    },
+    {
+      "claim_id": "83a1f2bc-4a07-4f38-8b16-ee34016d1a18",
+      "result_id": "9035607a-9b31-4a77-8b0b-c1190c1d460d"
+    },
+    {
+      "claim_id": "2f3ac34c-7027-4543-b0de-1f4e2762f545",
+      "result_id": "9035607a-9b31-4a77-8b0b-c1190c1d460d"
+    },
+    {
+      "claim_id": "a9790c64-8242-4811-992d-4b25610a21ba",
+      "result_id": "9035607a-9b31-4a77-8b0b-c1190c1d460d"
+    },
+    {
+      "claim_id": "98bfddc3-32c6-4f44-8fd0-1ff9bbc43f61",
+      "result_id": "9035607a-9b31-4a77-8b0b-c1190c1d460d"
+    },
+    {
+      "claim_id": "859f2750-fe2f-4054-8d95-2dc522f03009",
+      "result_id": "9035607a-9b31-4a77-8b0b-c1190c1d460d"
+    },
+    {
+      "claim_id": "77bae24a-33b7-4ca1-b793-da2e6ce69b66",
+      "result_id": "9035607a-9b31-4a77-8b0b-c1190c1d460d"
+    },
+    {
+      "claim_id": "cdcbe978-1cb1-495b-91a9-b4e1c5e9ab83",
+      "result_id": "9035607a-9b31-4a77-8b0b-c1190c1d460d"
+    },
+    {
+      "claim_id": "349ab1e8-3723-4450-a132-14495fdddef8",
+      "result_id": "9035607a-9b31-4a77-8b0b-c1190c1d460d"
+    },
+    {
+      "claim_id": "98000760-6ba1-4a82-b5b1-aac6ec5d8f63",
+      "result_id": "9035607a-9b31-4a77-8b0b-c1190c1d460d"
+    },
+    {
+      "claim_id": "f8e5fa80-c629-4ee5-ba1f-e03dc11a80a7",
+      "result_id": "9035607a-9b31-4a77-8b0b-c1190c1d460d"
+    },
+    {
+      "claim_id": "ba794718-5144-4f0f-8bc8-7d3b9f327ec3",
+      "result_id": "9035607a-9b31-4a77-8b0b-c1190c1d460d"
+    },
+    {
+      "claim_id": "47636948-0c20-4202-b188-47b6ca64cdfd",
+      "result_id": "9035607a-9b31-4a77-8b0b-c1190c1d460d"
+    },
+    {
+      "claim_id": "54469042-31b1-484d-8b6f-a55fbd7d19f5",
+      "result_id": "9035607a-9b31-4a77-8b0b-c1190c1d460d"
+    },
+    {
+      "claim_id": "4bd19707-cf57-4961-a65d-3801ee3beb57",
+      "result_id": "9035607a-9b31-4a77-8b0b-c1190c1d460d"
+    },
+    {
+      "claim_id": "987d181d-05fb-4437-a5af-ddaf142a703a",
+      "result_id": "9035607a-9b31-4a77-8b0b-c1190c1d460d"
+    },
+    {
+      "claim_id": "34e9e1bc-a9d6-401c-8c75-39c3f0cab0db",
+      "result_id": "9035607a-9b31-4a77-8b0b-c1190c1d460d"
+    },
+    {
+      "claim_id": "277f3ecc-9e6e-44f1-92ad-e5b524fa8d6c",
+      "result_id": "9035607a-9b31-4a77-8b0b-c1190c1d460d"
+    },
+    {
+      "claim_id": "a64f8a0b-8ec9-443f-a9c6-f7837e895ca6",
+      "result_id": "9035607a-9b31-4a77-8b0b-c1190c1d460d"
+    },
+    {
+      "claim_id": "168aa8ac-6084-4b89-9804-a69dedab579a",
+      "result_id": "9035607a-9b31-4a77-8b0b-c1190c1d460d"
+    },
+    {
+      "claim_id": "217d0038-05d1-405f-afa0-abfbb9350c7d",
+      "result_id": "9035607a-9b31-4a77-8b0b-c1190c1d460d"
+    },
+    {
+      "claim_id": "60926a78-89f0-4dc0-a897-9f5861a3bebf",
+      "result_id": "9035607a-9b31-4a77-8b0b-c1190c1d460d"
+    },
+    {
+      "claim_id": "136b9e3d-0876-4a2f-818d-05c87be4aa52",
+      "result_id": "9035607a-9b31-4a77-8b0b-c1190c1d460d"
+    },
+    {
+      "claim_id": "5b302fa9-be64-46dd-ae3b-e323e71217f0",
+      "result_id": "9035607a-9b31-4a77-8b0b-c1190c1d460d"
+    },
+    {
+      "claim_id": "555dbf2e-43d5-4f55-89f9-ac8f8e1536d3",
+      "result_id": "f6e51323-9716-4227-b4cb-0f07e1532a7b"
+    },
+    {
+      "claim_id": "d8101aeb-e74c-43bf-b0b9-eca3ef1fc1d3",
+      "result_id": "f6e51323-9716-4227-b4cb-0f07e1532a7b"
+    },
+    {
+      "claim_id": "369efafe-547f-468b-a3e2-5361fa765fe7",
+      "result_id": "f6e51323-9716-4227-b4cb-0f07e1532a7b"
+    },
+    {
+      "claim_id": "acbcdc83-678b-47a6-b040-7e9ff348cb15",
+      "result_id": "f6e51323-9716-4227-b4cb-0f07e1532a7b"
+    },
+    {
+      "claim_id": "03db7eb5-5c21-4525-a605-c3b6b459324a",
+      "result_id": "6b961cc6-13da-42ff-bea3-b79f46be0d4b"
+    },
+    {
+      "claim_id": "6e82e966-300e-4eb8-b253-c5baa386771c",
+      "result_id": "6b961cc6-13da-42ff-bea3-b79f46be0d4b"
+    },
+    {
+      "claim_id": "8d63b6fa-a7dd-4ae5-94d1-2764a2ae70fb",
+      "result_id": "6b961cc6-13da-42ff-bea3-b79f46be0d4b"
+    },
+    {
+      "claim_id": "f9a36459-0d81-45a3-83d1-aae998f12fc9",
+      "result_id": "6b961cc6-13da-42ff-bea3-b79f46be0d4b"
+    },
+    {
+      "claim_id": "6f24f61f-fe33-490a-b9ba-2ee4ae0e6621",
+      "result_id": "6b961cc6-13da-42ff-bea3-b79f46be0d4b"
+    },
+    {
+      "claim_id": "db7c287f-c0bf-4a3a-a066-0e8703534995",
+      "result_id": "6b961cc6-13da-42ff-bea3-b79f46be0d4b"
+    },
+    {
+      "claim_id": "dd67cd1d-943a-4f42-8538-2399c4a21168",
+      "result_id": "abab1552-ca0a-4dea-8ad4-d24eabdad73a"
+    },
+    {
+      "claim_id": "62367f4c-3a02-4cfa-bb10-4ed3b971196d",
+      "result_id": "abab1552-ca0a-4dea-8ad4-d24eabdad73a"
+    },
+    {
+      "claim_id": "a39c801f-dee6-4a14-83c2-7e7aeb0d5e89",
+      "result_id": "2c37f36b-5f52-4fb0-884c-33804b1d7f25"
+    },
+    {
+      "claim_id": "561924a1-5e0f-4ddc-84a4-3b9b344fe040",
+      "result_id": "2c37f36b-5f52-4fb0-884c-33804b1d7f25"
+    },
+    {
+      "claim_id": "a732c106-a6fa-453d-8adf-4b26771b793a",
+      "result_id": "00fe61c7-13fa-4bc0-94fd-39534f0da865"
+    },
+    {
+      "claim_id": "1ffaed19-cbbb-4efa-83ac-5a4a5bc1f429",
+      "result_id": "00fe61c7-13fa-4bc0-94fd-39534f0da865"
+    },
+    {
+      "claim_id": "db0d3bcc-eada-4c62-828f-024197a7d321",
+      "result_id": "00fe61c7-13fa-4bc0-94fd-39534f0da865"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,414 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The H3 T118ph antibody is specific and recognizes H3 T118 phosphorylation in multiple assays. The antibody shows specificity in dot-blot and western blot assays, recognizes a single protein at the expected H3 size, increases signal upon phosphatase inhibitor treatment, immunoprecipitates H3 from mitotic cells, and shows cell cycle-specific localization by immunofluorescence. H3 T118ph levels dramatically increase during mitosis and the signal is competed away by H3 T118ph peptide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 provide converging evidence from multiple orthogonal assays (dot-blot, western blot, immunoprecipitation, immunofluorescence, peptide competition) demonstrating antibody specificity and the mitotic enrichment of H3 T118ph. The data includes appropriate controls (phosphatase inhibitor, peptide competition, multiple cell lines) and is consistent with prior mass spectrometry data (C5).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "H3 T118ph is conserved and localizes to centromeres in metazoans. T118 and surrounding residues are conserved among metazoan H3 proteins. H3 T118ph localizes to chromatin and centrosomes during mitosis in Drosophila and to centromeres in C. elegans. CENP-A knockdown in C. elegans diminishes H3 T118ph from chromatin, indicating that H3 T118ph localization depends on intact centromeres.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 demonstrate conservation across metazoans (human, Drosophila, C. elegans) using immunofluorescence and RNAi approaches. The CENP-A knockdown experiment (C17) provides functional evidence that H3 T118ph localization depends on centromeric chromatin structure. The data support evolutionary conservation of this modification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "H3 T118ph localizes to pericentromeric regions with distinct spatiotemporal dynamics. In human cells, H3 T118ph co-localizes with CENP-A during prophase and pro-metaphase but disappears upon chromosome alignment in metaphase, with timing distinct from other mitotic histone phosphorylation marks. Under colcemid treatment, H3 T118ph localizes to the inner centromere while CENP-A remains at the outer centromere. With dynamic microtubule attachment, H3 T118ph exists in two foci per chromosome that are larger than CENP-A foci, consistent with pericentromeric localization. H3 T118ph also appears along chromosome arms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C28 use immunofluorescence on intact cells, mitotic spreads with and without colcemid treatment, and extended chromatin fibers to map H3 T118ph localization. The data demonstrate distinct spatial (pericentromeric vs outer centromere) and temporal (prophase/pro-metaphase vs metaphase) patterns. The comparison with other histone marks (C21) and use of colcemid to manipulate kinetochore tension (C23, C25) provide mechanistic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Aurora-A is the kinase responsible for H3 T118 phosphorylation. A screen of 190 kinases identified Aurora-A as the only cell cycle-regulated kinase efficiently phosphorylating H3 T118. Aurora-B and Aurora-C do not phosphorylate H3 T118. Two different Aurora-A inhibitors eradicate H3 T118ph signal, Aurora-A knockdown eliminates H3 T118ph on chromatin, and knockdown of TPX2 (an Aurora-A activator) greatly reduces H3 T118ph.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 provide multiple lines of evidence identifying Aurora-A as the H3 T118 kinase: a comprehensive kinase screen (C29), negative results for Aurora-B/C (C30-C31), pharmacological inhibition with two different inhibitors (C32), genetic knockdown of Aurora-A (C33), and knockdown of the Aurora-A activator TPX2 (C34). The convergence of these approaches strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Expression of H3 T118E or T118I mutants causes chromosome alignment defects and delayed cytokinesis. Transient transfection of H3 T118E or T118I significantly increases lagging chromosomes and delays cytokinesis. Lagging chromosomes are symptomatic of chromosome congression defects. In an error correction assay, H3 T118E or T118I significantly decrease the ability to align chromosomes compared to wild type H3 or T118A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 use live cell imaging and error correction assays to demonstrate functional consequences of H3 T118 mutations. The data show increased lagging chromosomes (C36), delayed cytokinesis (C37), and defects in chromosome alignment (C41). The correlation between lagging chromosomes and cytokinesis delay (C38) and the use of appropriate controls (wild type H3 and T118A) support the conclusions. However, the mutants are expressed at only ~10% of total H3, which may limit interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Normal levels of H3 T118 phosphorylation are essential for Drosophila development. In Drosophila where all endogenous H3 is replaced with transgenic H3, wild type H3 supports viability to adulthood, but H3 T118A, T118E, and T118I mutants cause embryonic lethality after depletion of maternal histones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 demonstrate the essential nature of proper H3 T118 regulation using a Drosophila system where all endogenous H3 genes are deleted and replaced with 12 transgenic copies. The embryonic lethality of all three mutants (preventing phosphorylation or mimicking constitutive phosphorylation) indicates that dynamic regulation of H3 T118ph is essential for development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "H3 T118ph remains at centromeres of misaligned chromosomes and its removal is triggered by chromosome alignment. Caffeine-induced misaligned chromosomes retain H3 T118ph at centromeres along with the spindle assembly checkpoint kinase BubR1 even in metaphase. Misaligned chromosomes in H3 T118E and T118I mutants form proper kinetochores and recruit SAC proteins normally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 use caffeine treatment to induce misaligned chromosomes and demonstrate that H3 T118ph persists on misaligned chromosomes (C46), suggesting its removal is triggered by alignment (C47). The observation that kinetochore and SAC proteins are normal in the mutants (C48-C49) helps narrow the mechanism. The data support a model where H3 T118ph responds to chromosome alignment status.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "H3 T118E and T118I mutations cause loss of sister chromatid cohesion. Mitotic spreads from cells expressing H3 T118E or T118I show a higher incidence of partially separated or fully separated sister chromatids compared to wild type H3 or T118A, indicating loss of arm and centromeric cohesion. The cohesion defects are most pronounced for H3 T118I. The authors propose that faulty cohesion is responsible for chromosome alignment defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 use mitotic spreads with monastrol and MG132 treatments to assess sister chromatid cohesion. The data show quantitative increases in partially separated (C51-C52) and fully separated (C53) chromatids in T118E/I mutants. The correlation between cohesion defects and alignment defects supports the proposed causal relationship (C55), though this remains correlative rather than definitively causal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Overexpression of Aurora-A increases H3 T118ph levels and causes cohesion loss. Aurora-A overexpression increases H3 T118ph along chromosome arms and causes 44% of sister chromatids to be partially separated upon colcemid-induced pro-metaphase arrest, compared to 20% for control cells. This phenocopies the cohesion defects seen with H3 T118E and T118I mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 use Aurora-A overexpression to test whether increased H3 T118ph recapitulates the mutant phenotypes. The data show increased H3 T118ph (C57) and cohesion defects (C58) similar to the T118E/I mutants, supporting the interpretation that these mutants mimic excess phosphorylation. This provides important validation that the mutant phenotypes reflect the biological function of H3 T118ph.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "H3 T118E and T118I mutations disrupt higher-order chromatin packaging. Expression of H3 T118E and T118I makes chromosomes significantly wider and shorter, increases sister chromatid interkinetochore distances, and produces less tightly packed mitotic chromosomes with longer radiating DNA loops as visualized by SEM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 use multiple approaches (chromosome measurements, interkinetochore distance measurements, SEM) to demonstrate altered chromosome structure in T118E/I mutants. The convergence of these independent measurements (width/length, interkinetochore distance, chromatin loop structure) provides strong evidence for disrupted higher-order chromatin packaging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "H3 T118I increases chromatin accessibility and histone extractability. H3 T118I is more readily extracted from chromatin at 600 mM salt and increases DNA accessibility to DNase I in both asynchronous and mitotically arrested cells. These results are consistent with biochemical studies showing that H3 T118ph favors removal of histone H3 from DNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 use salt extraction and DNase I digestion assays to demonstrate altered chromatin properties in the T118I mutant. The consistency with prior biochemical studies on mononucleosomes (C67) supports the interpretation. These data provide mechanistic insight into how H3 T118ph affects chromatin structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Aurora-A overexpression phenocopies H3 T118E and T118I mutations in chromosome structure defects. Overexpression of Aurora-A causes significant widening and shortening of chromosome arms and increased interkinetochore distances, similar to H3 T118E and T118I. These results indicate that H3 T118I and T118E are functional mimics of H3 T118 phosphorylation in vivo and that H3 T118ph disrupts higher-order chromatin packaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 demonstrate that Aurora-A overexpression produces chromosome structure defects similar to the T118E/I mutants, while kinase-dead Aurora-A does not. This provides strong evidence that the mutants functionally mimic phosphorylation and that the observed effects are due to H3 T118ph rather than off-target effects of the mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "H3 T118E and T118I mutations cause premature cohesin loss via PLK-1 or Aurora-B pathways. The intensity of the cohesin component Rad21/Scc1 is drastically reduced in cells expressing H3 T118E and T118I during mitotic delay. Cohesin loss persists despite separase inhibition with MG132, indicating it is not due to premature separase activity. PLK-1 and Aurora-B inhibitors prevent cohesion loss, while Topo II inhibition causes chromosome tangling, indicating DNA catenation is intact. The mutations do not disrupt establishment of cohesion but lead to premature loss via PLK-1 or Aurora-B pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 use immunofluorescence and pharmacological inhibitors to dissect the mechanism of cohesin loss. The data systematically rule out separase-mediated cleavage (C73-C74) and defects in DNA catenation (C76), while implicating PLK-1 and Aurora-B pathways (C75). The logic is sound and the use of multiple inhibitors strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "H3 T118E and T118I mutations cause selective loss of condensin I but not condensin II or Topo II from chromatin. Upon PLK-1 inhibition, H3 T118I-expressing cells show extremely short chromosomes in 90% of mitotic spreads versus 22% for wild type. H3 T118ph does not co-localize with Topo II or condensin I. Topo II and condensin II staining is similar among wild type and mutant cells, but upon mitotic delay, there is significant loss of condensin I CAP-H in H3 T118E (25%) and T118I (50%) cells compared to wild type (0%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C87 use immunofluorescence and GFP-tagged condensin I to demonstrate selective loss of condensin I but not condensin II or Topo II. The specificity for condensin I (C85-C86) is well-documented with quantitative data. The lack of co-localization (C81-C82) and similar staining of other scaffold proteins (C83-C84) support the selectivity. The hypercondensation phenotype with PLK-1 inhibition (C78-C79) provides additional context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "H3 T118ph does not directly affect condensin I binding to mononucleosomes but may indirectly reduce condensin I occupancy through effects on chromatin packaging. EMSA experiments show that condensin I can bind to nucleosomes and altered histone-DNA forms irrespective of H3 T118 phosphorylation status. The authors favor the idea that H3 T118ph promotes changes in global chromatin packaging that indirectly reduce condensin I occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 use EMSA with purified condensin I and reconstituted nucleosomes to test direct binding effects. The lack of a direct binding effect (C88-C89) combined with the in vivo loss of condensin I (from previous claims) supports an indirect mechanism via chromatin structure changes (C90). This is a reasonable interpretation, though the EMSA uses mononucleosomes which may not fully recapitulate the in vivo context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Aurora-A overexpression causes condensin I loss from chromatin. Upon mitotic delay, Aurora-A overexpression causes significant loss of condensin I (25% of mitotic cells GFP negative) compared to control (0%). This demonstrates that excess H3 T118ph leads to condensin I loss and suggests that the function of mitotic H3 T118ph is to indirectly reduce condensin I and cohesin occupancy via its influence on chromosome packaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 use Aurora-A overexpression to validate that increased H3 T118ph causes condensin I loss, phenocopying the T118E/I mutants. This provides strong support for the proposed model that H3 T118ph regulates condensin I occupancy. The integration with cohesin data (C93) provides a unified model, though this remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "H3 T118ph is dynamically regulated during mitosis and excess H3 T118ph causes multiple mitotic defects. H3 T118ph is regulated by Aurora-A kinase at pericentromeric regions and chromosome arms, appearing during prophase and disappearing upon chromosome alignment. Excess H3 T118ph (via Aurora-A overexpression or amino acid substitution) causes lagging chromosomes, chromosome congression defects, delayed cytokinesis, altered chromosome compaction, cohesion loss, and cohesin and condensin I loss. The authors propose that H3 T118ph alters chromatin structure to limit condensin I and cohesin occupancy to enable efficient spindle attachment and chromosome compaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 provide a comprehensive summary of the major findings and propose an integrative model. The model is well-supported by the extensive data on localization, kinase identification, mutant phenotypes, and effects on chromosome structure and scaffold proteins. The proposal that H3 T118ph limits condensin I and cohesin occupancy (C98) is supported by multiple lines of evidence, though the precise mechanism remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Aurora-A phosphorylates H3 T118 on chromatin arms and centromeres, representing a novel Aurora-A substrate. Aurora-A is known for centrosome separation but the current data support its involvement in chromosome error correction through H3 T118 phosphorylation. The H3 sequence fits the Aurora-A consensus site. Aurora-A, with its activator TPX2, is proposed to phosphorylate H3 T118 on chromatin arms and centromeres. H3 T118 is the first known Aurora-A target along chromosome arms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C105 place the findings in the context of Aurora-A biology. The identification of H3 T118 as an Aurora-A substrate on chromosome arms (C105) is novel and well-supported by the kinase identification data. The sequence analysis (C101) and citations to Aurora-A localization and other substrates (C103-C104) provide supporting context. The proposal about TPX2 (C102) is reasonable given the TPX2 knockdown data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "H3 T118 phosphorylation likely requires nucleosome remodeling, and the T118E/I mutants have dominant effects. Given the buried location of T118 in the nucleosome, phosphorylation likely requires nucleosome disruption by an ATP-dependent remodeler. The H3 T118A mutant shows no phenotype when expressed at ~10% of total H3, which is not surprising given the presence of endogenous H3. In contrast, H3 T118E and T118I have dominant effects. Drosophila cell clones expressing only H3 T118A, T118E, or T118I have significant growth defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 provide important caveats and context for interpreting the mutant data. The reasoning about nucleosome remodeling (C106) is sound given the structural position of T118. The explanation for lack of T118A phenotype (C107) is reasonable given the low expression level. The dominant effects of T118E/I (C108) and the Drosophila data (C109) support the biological relevance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "H3 T118ph physically distorts nucleosomal DNA and T118I is a better structural mimic than T118E. H3 T118ph distorts nucleosomal DNA at the dyad to loosen nucleosome structure and generate altered nucleosomal states, and these alterations impact higher-order chromosome packaging. T118I gives more drastic phenotypes than T118E because isoleucine has a large bulky side chain that distorts DNA trajectory more than glutamic acid and mimics the rigidity of the phosphate group. Aurora-A overexpression produces identical phenotypes to T118I, supporting the idea that T118I structurally mimics phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C114 provide structural and mechanistic interpretation of the mutant phenotypes. The integration with prior biochemical studies (C110) and the structural reasoning about amino acid properties (C112-C113) are sound. The validation that Aurora-A overexpression phenocopies T118I (C114) provides strong functional support for T118I as a phosphomimetic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "H3 T118ph regulates centromere flexibility to facilitate chromosome alignment. H3 T118ph appears at pericentromeric regions during prophase and disappears upon chromosome alignment. The authors propose that H3 T118ph organizes chromatin structure to achieve optimal cohesin and condensin I levels for conformational flexibility needed for microtubule attachment. Condensin I is enriched at centromeres and promotes centromere rigidity. Aurora-A destabilizes microtubule connections of misaligned chromosomes, and upon Aurora-A knockdown/inhibition, kinetochores become more rigid. H3 T118ph at centromeres acts to limit condensin I occupancy to increase flexibility at misaligned chromosomes. Upon proper attachment, removal of H3 T118ph allows better centromere rigidity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C125 present a detailed model for H3 T118ph function at centromeres. The model integrates the temporal dynamics of H3 T118ph (C115), the effects on condensin I and cohesin (C116, C121), and the need for both flexibility (for error correction) and rigidity (for resisting spindle forces) (C123-C124). The model is well-supported by the data and consistent with published work on condensin I and Aurora-A function (C117-C120). The increased interkinetochore distances (C122) provide supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "H3 T118ph regulates chromosome arm compaction by modulating condensin I levels. H3 T118ph occurs in a punctate pattern along chromosome arms in prophase/pro-metaphase. Excess H3 T118ph leads to altered chromosome compaction with wider, shorter arms and longer chromatin loops, suggesting a role in shaping mitotic chromosomes. Mitotic chromosomes are packaged in two phases mediated by condensins, with condensin II for axial compaction and condensin I for loop organization. H3 T118ph and condensin I have similar timing but distinct spatial localization, and there is no evidence for direct recruitment or displacement. H3 T118 phosphorylation regulates condensin I occupancy, as evidenced by condensin I loss in T118I/E mutants and Aurora-A overexpression. The disruption of condensin I function correlates with longer chromatin loops and delayed cytokinesis. The dynamic association of condensin I with chromatin enables H3 T118ph to regulate condensin I levels. The condensin I:condensin II ratio is tightly controlled and affects chromosome shape, and removal of H3 T118ph by metaphase likely regulates this ratio. The loss of condensin I occurs indirectly via chromatin structure effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C143 present a comprehensive model for H3 T118ph function on chromosome arms. The model integrates observations about H3 T118ph localization (C126), effects on chromosome structure (C127), the two-phase model of chromosome packaging (C128-C129), the relationship between H3 T118ph and condensin I (C130-C131, C135-C136), and the importance of condensin ratios (C140-C141). The indirect mechanism (C143) is supported by the EMSA data. The model is well-reasoned and supported by the data, though some aspects remain speculative (e.g., the preferred model of physical H3 removal, C142).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C144",
+      "C145"
+    ],
+    "result": "Cohesin loss is proposed to be an indirect consequence of altered chromatin structure caused by excess H3 T118ph. The authors propose that altered chromatin packaging exposes the cohesin ring to PLK-1-mediated phosphorylation and removal. However, they could not rule out the possibility that the cohesion phenotype is due to loss of Sgo-1-mediated protection against PLK-1 and Aurora-B kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C144-C145 propose a mechanism for cohesin loss but acknowledge uncertainty. The proposal that altered chromatin structure exposes cohesin to PLK-1 (C144) is reasonable given the data on chromatin structure changes and PLK-1 inhibitor effects, but remains speculative. The inability to rule out alternative mechanisms involving Sgo-1 (C145) indicates that the mechanism is not fully resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "H3 T118 phosphorylation by Aurora-A is a critical and conserved mechanism for regulating mitosis. The authors propose that H3 T118 phosphorylation at the nucleosome dyad by Aurora-A is critical for chromosome congression via effects on chromosome compaction and cohesion through physically regulating nucleosome structure. These functions are conserved in metazoans (nematodes, flies, humans). The importance is underscored by embryonic lethality in Drosophila when H3 T118 cannot be phosphorylated or is constitutively mimicked. The carcinogenic effect of Aurora-A overexpression in cancers may be mediated in part via altering mitotic chromatin structure by phosphorylation at the nucleosome dyad.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C148 provide a comprehensive summary and emphasize the biological importance of the findings. The model (C146) is well-supported by the extensive data. The conservation across metazoans (C147) is demonstrated by the localization studies in multiple organisms. The Drosophila lethality data (C148) provides strong evidence for the essential nature of proper H3 T118ph regulation. The speculation about Aurora-A in cancer (C149) is reasonable but remains speculative and would require additional investigation.",
+    "result_type": "MAJOR"
+  }
+]

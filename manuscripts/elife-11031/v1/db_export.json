@@ -1,0 +1,1467 @@
+{
+  "submission": {
+    "id": "c45c9c88-35a1-45a3-9b03-a289999f4786",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:34:29.432969Z",
+    "updated_at": "2025-11-30T00:34:29.432969Z"
+  },
+  "content": [
+    {
+      "id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "submission_id": "c45c9c88-35a1-45a3-9b03-a289999f4786",
+      "content_type": "manuscript",
+      "content_text": "# Integrative neuromechanics of crawling in D. melanogaster larvae\n\n## Authors\n\n- Cengiz Pehlevan<sup>1</sup> ([ORCID: 0000-0001-9767-6063](https://orcid.org/0000-0001-9767-6063))\n- Paolo Paoletti<sup>3</sup> ([ORCID: 0000-0001-6131-0377](https://orcid.org/0000-0001-6131-0377))\n- L Mahadevan<sup>4</sup> ([ORCID: 0000-0002-5114-0519](https://orcid.org/0000-0002-5114-0519)) \u2020\n\n### Affiliations\n\n1. The Swartz Program in Theoretical Neuroscience Harvard University Cambridge United States\n2. Simons Center for Data Analysis Simons Foundation New York United States\n3. School of Engineering The University of Liverpool Liverpool United Kingdom\n4. John A Paulson School of Engineering and Applied Sciences Harvard University Cambridge United States\n5. Department of Organismic and Evolutionary Biology Harvard University Cambridge United States\n6. Wyss Institute for Bioinspired Engineering Harvard University Cambridge United States\n7. Kavli Institute for BioNano Science and Technology Harvard University Cambridge United States\n8. Department of Physics Harvard University Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nLocomotion in an organism is a consequence of the coupled interaction between brain, body and environment. Motivated by qualitative observations and quantitative perturbations of crawling in Drosophila melanogaster larvae, we construct a minimal integrative mathematical model for its locomotion. Our model couples the excitation-inhibition circuits in the nervous system to force production in the muscles and body movement in a frictional environment, thence linking neural dynamics to body mechanics via sensory feedback in a heterogeneous environment. Our results explain the basic observed phenomenology of crawling with and without proprioception, and elucidate the stabilizing role that proprioception plays in producing a robust crawling phenotype in the presence of biological perturbations. More generally, our approach allows us to make testable predictions on the effect of changing body-environment interactions on crawling, and serves as a step in the development of hierarchical models linking cellular processes to behavior.\n\n## Introduction\n\nA complete theory of locomotory behavior requires an integrative approach linking the nervous system in an organism to the body in which the nervous system lives and the environment that the body interacts with\u00a0(Pearson et al., 2006; Tytell et al., 2011; Chiel et al., 2009). However, most studies focus on rhythmic gait and its maintenance in an organism driven by the presence of a central pattern generator (CPG) that drives coordinated motor activity (Marder and Bucher, 2001; Ijspeert, 2008). While the existence of a CPG has been validated in a variety of organisms (Marder and Bucher, 2001; Grillner, 2006) and exploited in artificial systems (Ijspeert, 2008; Boxerbaum et al., 2012), growing evidence suggests that sensory feedback plays an important role in maintaining robust and stable locomotion. Indeed recent studies on C. elegans (Wen et al., 2012; Boyle et al., 2012) focusing on local sensory feedback and proprioception show that these modalities suffice to modulate the locomotory pattern and explain gait transitions associated with undulatory swimming and crawling, without the need for a central pattern generator. This has led to recent attempts to include proprioceptive coupling and build an integrative theory of locomotion in examples such as anguilliform swimming in fish (Ekeberg, 1993; Ekeberg and Grillner, 1999), swimming in leech (Cang and Friesen, 2002), walking in insects (Kukillaya et al., 2009; Proctor et al., 2010; Proctor and Holmes, 2010; Holmes et al., 2006) and humanoids (Verdaasdonk et al., 2009). However, the complexity of the brain-body-environment coupling in these organismal systems has been a substantial impediment in the use of models to make testable predictions on the biological mechanisms regulating locomotion.\n\nHere, we consider the rectilinear crawling behavior of a model organism, the larva of the fruit fly, D. melanogaster (Video 1), which has increasingly become the focus of molecular, cellular, genetic and behavioral studies using a variety of experimental probes (Suster and Bate, 2002; Fox et al., 2006; Hughes and Thomas, 2007; Crisp et al., 2008; Song et al., 2007; Lahiri et al., 2011; Inada et al., 2011; Berni et al., 2012; Heckscher et al., 2012; Crisp et al., 2011; Fushiki et al., 2013; Gjorgjieva et al., 2013; Vogelstein et al., 2014; Kohsaka et al., 2014; Itakura et al., 2015; Pulver et al., 2015). The larva is a soft bodied cylindrical organism about 4 mm in length and about\u00a0800\u00a0\u03bcm\u00a0in diameter in the third instar stage. It moves in a manner similar to other long soft-bodied creatures such as earthworms and leeches by exploiting the peristaltic propagation of muscular relaxation and contraction waves along their bodies to induce forward locomotion, or crawling (Trueman, 1975); despite biomechanical differences between these different organisms, the crawling gait seems to be a convergent strategy across species. The dynamical process that triggers, coordinates and maintains the propagation of such waves has attracted the attention of researchers for a century (Garrey, 1915). Early experimental efforts tried to understand the macroscopic mechanics of soft bodied animal locomotion (Trueman, 1975) by focusing on one of the underlying subsystems: body mechanics, muscular force production and neural dynamics. More recently, there is a growing realization that the coupling between the nervous system, the body and the substrate in the presence of sensory feedback plays a major role in development and maintenance of\u00a0crawling gaits, and perhaps even in evolution (Chiel et al., 2009). For example, the locomotory behavior of Manduca sexta larvae, an organism where proprioceptive sensing displays a wide range of behaviors (Simon and Trimmer, 2009), is known to be dependent on substrate stiffness that modulates the role of external stimuli and on body deformation rate (Lin and Trimmer, 2010). In the D. melanogaster larva, there is strong evidence that proprioception plays as important a role as the CPG in generating coordinated motion. Eliminating proprioception with genetic (Hughes and Thomas, 2007) and optogenetic (Inada et al., 2011) methods leads to qualitative changes in the crawling gait: peristaltic waves have a period that is \u22484 times longer or may even stop propagating (Song et al., 2007), and body segments contract \u22482 times more (Hughes and Thomas, 2007). Experiments that block sensory input in the embryo show that crawling behavior still develops in the larva, but with longer peristaltic wave periods (Suster and Bate, 2002; Fushiki et al., 2013), providing further evidence for the importance of proprioception. Together, the classical and modern studies on locomotory physiology and the modern studies on the molecular and cellular subsystems in the larva suggest that it is an excellent biophysical testbed for an integrative theory that spans multiple scales.\n\n![Video 1.](https://cdn.elifesciences.org/articles/11031/elife-11031-media1.mp4.jpg)\n\n**Video 1.:** Courtesy of Ellie Heckscher. See also reference (Heckscher et al., 2012). Original video is available at: https://www.youtube.com/watch?v=1d7zMYWLjLI\n\nIn this paper, we present a mathematical model of crawling in D. melanogaster larvae that is guided by the anatomy and the kinematics of the gait of the organism. Our theory explicitly accounts for the mechanics of the passive deformable soft body, properties of the substrate on which the crawling occurs, active muscular forcing, neural dynamics and the interactions and feedbacks between these sub-systems. This allows us to reproduce the robust crawling gait that is consistent with experimental findings in first (Heckscher et al., 2012) and third (Hughes and Thomas, 2007) instar larvae. Furthermore, our model qualitatively and quantitatively captures the effects of a) optogenetic perturbations of neural activity (Inada et al., 2011; Kohsaka et al., 2014), and b) silencing proprioception with genetic (Hughes and Thomas, 2007) and optogenetic (Inada et al., 2011) methods.\n\nOur integrated model also allows us to make specific experimentally testable predictions. In particular, by changing the strength of coupling between adjacent segments in the CPG, both in the absence and presence of proprioception, we show how proprioception increases the robustness of crawling. This leads to the prediction that there should be much more variability in crawling metrics among individuals with silenced or weakened proprioception. Furthermore, we predict that larvae could use the strength of CPG coupling as a means of controlling the speed of gait. Finally, we show that changing the frictional interactions of the organism with the substrate should yield observable effects on the efficiency of locomotion.\n\nMore broadly, our study also aims to provide a set of plausible scenarios for the biophysical mechanisms underlying crawling, by linking body mechanics, muscular forcing, neural dynamics, the properties of the substrate and their coupling, with natural implications for engineering applications.\n\n## Mathematical model\n\n### Overview\n\nWe start with a broad overview of our model leaving aside the mathematical details and experimental justifications behind them in the rest of this section.\n\nIn Figure 1,\u00a0we\u00a0show our model of a D. melanogaster larva. Anatomically, the larva has 3 thoracic (T1-T3) and 8 abdominal (A1-A8) segments, Figure 1A. In addition, there is a head/mouth and a tail, but due to the lack of sharp boundaries in their musculature, experiments have not been able to distinguish the dynamics of the head motion from that of T1 and the tail from that of A8 (Lahiri et al., 2011; Heckscher et al., 2012). We therefore treat the head as a part of the T1 segment, and the tail as a part of the A8\u00a0segment. Moreover, here we focus on the simplest locomotory behavior associated with rectilinear motion along the anterior-posterior axis (Hughes and Thomas, 2007; Heckscher et al., 2012), thus ignoring the individual dynamics of hemisegments which move together in rectilinear crawling, and enumerate segments from 0 to 10\u00a0starting from the head.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/11031/elife-11031-fig1-v1.jpg)\n\n**Figure 1.:** (A) Drosophila larvae have segmented bodies. (B) An overview of the model for one segment. Only input neural and proprioceptive signals are shown to the neural controller, its output is not shown. Shades mark subsystems. Red lines show excitatory neural synapses, blue denotes inhibitory synapses. (C) The larva body is modeled as a linear chain of masses, connected by damped linear springs. Head and tail segments are coupled mechanically, denoted by the green line. Each segment feels friction due to contact with the substrate. Body segments are actuated with muscular forces, $f_{i}$, that are excited by input from the larva VNC. VNC is modeled as a chain of excitatory, $E_{i}$, and inhibitory, $I_{i}$, neural populations. Self-coupling of populations are not shown. VNC gets proprioceptive input that signals contraction of a particular segment, shown by lines with arrows on both ends. (D) Segment-to-segment propagation of neural activity happens through neural ($w_{E\u2062n}$) and proprioceptive ($w_{E\u2062p}$) couplings. Detailed description and model equations are given in the Model section.\n\nThe larva is modeled as a set of discrete, repetitive units, one unit for each body segment. The main features of each unit are illustrated in Figure 1B, while Figure 1C shows the collective dynamics of the multiple units. When stationary, each segment has length $L$, a parameter that sets the length scale in the model. The larva is soft-bodied and the elastic properties of body segments are approximated by a set of linear springs and dampers. A key parameter here is the stiffness of the springs that sets the scale of forces in the model. Each unit has a neural controller made of excitation-inhibition circuits in the Ventral Nerve Cord (VNC), which governs the reaction time of excitation in the neural controller. The excitatory neurons act also as motor neurons, and drive a muscle within the segment, which exerts a contractile force to the segment when activated. Crawling occurs on a substrate when the force rises above a threshold controlled by friction. Larvae lift segments off the ground when they contract (Heckscher et al., 2012) and hence control friction actively.\n\nThe contraction wave propagates through the body by a sequential activation of neural controllers in the VNC, leading to propagation through two channels (Figure 1D): 1) A proprioceptive channel that is mediated by 'Stretch receptors', which respond to changes in segmental length, get activated when a segment contracts beyond a threshold and send two excitatory signals. One of them feeds the excitatory neurons in the next anterior segment and propagates the neural activity. The other signal feeds to the inhibitory neurons in the same segment, leading to the inhibition of excitatory neurons that then causes contraction to be stopped. This model of proprioception is consistent with the 'mission accomplished' model of proprioception, proposed in\u00a0(Hughes and Thomas, 2007). 2) A neural channel that is mediated by excitatory neurons in adjacent segments that are coupled from posterior to anterior direction.\n\nFinally, our model also involves long range mechanical and neural/proprioceptive coupling between head and tail to trigger a new cycle of crawling as soon as the head starts moving. At the beginning of each crawling cycle, it has been observed that the head and the tail of a larva move concurrently in a motion called the 'visceral piston phase' of crawling (Heckscher et al., 2012; Simon et al., 2010), because the gut moves with the head and the tail, in advance of the surrounding body tissues. We model this behavior by forcing the displacement of head and tail segments to be the same. Once the peristaltic wave reaches the head, it propagates to the tail through assumed long range neural and proprioceptive couplings of T2 and A8 segments, and a new wave is initiated.\n\nOur study builds on and extends a recent minimal model for crawling locomotion (Paoletti and Mahadevan, 2014) that shows how a local sensory feedback-based mechanism is capable of inducing rhythmic locomotion in soft bodied organisms by accounting for a fully coupled excitatory-inhibitory neural circuit, and the nonlinear frictional interaction with the substrate, while hewing close to experiments on the D. melanogaster larva.\n\nIt is useful to also contrast with a recent study (Gjorgjieva et al., 2013), which focused on the neural dynamics of the VNC and studied conditions under which activity propagates in the VNC. The model differs from our neural model most importantly by including anterior-to-posterior couplings and intersegmental coupling from inhibitory to excitatory neurons, both of which were necessary to achieve bidirectional wave propagation in the\u00a0VNC. The same study also considered a bilateral VNC model and examined its left-right synchronization properties. However, unlike the present study, this model did not include any mechanical, muscular and environmental coupling.\n\n### Neural dynamics: excitation, inhibition and proprioceptive coupling\n\nWe model the neural dynamics of the ventral nerve chord (VNC) in terms of the classical Wilson-Cowan equations (Wilson and Cowan, 1972) for the activity of excitatory and inhibitory populations of neurons in a segment. This choice leads to a more realistic model than the single population phase oscillators used in (Paoletti and Mahadevan, 2014) and is thus similar to recent approaches that consider the purely neural aspects of the locomotory circuit (Gjorgjieva et al., 2013):\n\n$$\n\\tau_{E}E\u02d9_{i}=\u2212E_{i}+\\sigma_{n}[w_{EE}E_{i}+w_{EI}I_{i}+h_{i}^{E}\u2212\\theta^_{E}],\\tau_{I}I\u02d9_{i}=\u2212I_{i}+\\sigma_{n}[w_{IE}E_{i}+w_{II}I_{i}+h_{i}^{I}\u2212\\theta^_{I}],i=1,\u2026,10.(1)\n$$\n\nHere $E_{i}\u2062(t)$ and $I_{i}\u2062(t)$ are the activity levels of the excitatory and inhibitory neuron populations respectively, $w_{E\u2062E},w_{E\u2062I},w_{I\u2062E}$, and $w_{I\u2062I}$ are the weights for the excitatory-excitatory, excitatory-inhibitory and inhibitory-inhibitory couplings, $\\theta^_{E}$ and $\\theta^_{I}$ are activation thresholds for the different neural populations, $\\sigma_{n}\u2062[E]=0.5+0.5\u2062tanh\u2061(g_{n}\u2062E)$ is a sigmoid characterizing the switching threshold with $g_{n}$ the dimensionless gain, and $h_{i}^{E,I}$ refer to external inputs to these segmental populations. The external inputs take two forms: neural coupling that links to the neural populations in the neighboring posterior segment, and proprioceptive coupling that accounts for mechano-sensory feedback from the body to the VNC, shown in Figure 1B,C\u00a0and\u00a0D. A minimal mathematical description of this leads to the following dynamics of inputs $h_{i}^{E}\u2062(t),h_{i}^{I}\u2062(t)$ :\n\n$$\nh_{i}^{E}=w_{En}E_{i+1}+w_{Ep}\\sigma_{p}[u_{i+1}\u2212u_{i}\u2212u^],i=1,\u2026,9,h_{10}^{E}=w_{En}E_{1}+w_{Ep}\\sigma_{p}[u_{1}\u2212u_{0}\u2212u^],(2)h_{i}^{I}=w_{Ip}\\sigma_{p}[u_{i}\u2212u_{i\u22121}\u2212u^],i=1,\u2026,10.\n$$\n\nFor inputs to excitatory neurons, i.e. the first two equations, the first term on the right hand side corresponds to the input from the neural populations, which did not exist in (Paoletti and Mahadevan, 2014), while the last term corresponds to the proprioceptive input from the body. Here $w_{E\u2062n}$ governs the strength of neural coupling, $w_{E\u2062p}$ and $w_{I\u2062p}$ the strengths of the proprioceptive couplings, $u_{i}\u2062(t)$ is the location of segment $i$, $u^$ being the segmental contraction threshold, and $\\sigma_{p}\u2062[u]=0.5+0.5\u2062tanh\u2061(g_{p}\u2062u/L)$, where $g_{p}$ is the gain. The last Equation in (2) characterizes proprioceptive input to inhibitory neurons thresholded by $u^$. We have assumed that the response time of the stretch receptors is relatively fast compared to the dynamics of the VNC neural populations, and model the input from the stretch receptors as sigmoids, $\\sigma_{p}$, weighted by parameters $w_{E\u2062p}$ and $w_{I\u2062p}$. Thus, when $w_{E\u2062p}=0$ and $w_{I\u2062p}=0$ there is no proprioception; as we will see, varying these parameters may be directly related to recent experimental manipulations (Hughes and Thomas, 2007; Inada et al., 2011).\n\nObservations show that larvae can crawl without proprioceptive feedback (Suster and Bate, 2002; Hughes and Thomas, 2007; Inada et al., 2011) or input from the brain (Berni et al., 2012). Furthermore, the central nervous system, when isolated from the body, can still produce waves of neural activity propagating from posterior to anterior (Pulver et al., 2015). Therefore, the VNC should be able to propagate neural activity purely by segment-to-segment neural coupling; in our model this is achieved by introducing excitatory neural couplings from posterior to adjacent anterior segments, strengths of which are governed by the parameter $w_{E\u2062n}$ (Figure 1B,C\u00a0and\u00a0D).\n\nFor the proprioceptive coupling we assume the 'mission accomplished' model (Hughes and Thomas, 2007; Song et al., 2007) (Figure 1B,C\u00a0and\u00a0D). In (Hughes and Thomas, 2007) silencing bipolar dendrite and class I multidendritic types of sensory neurons was shown to slow down frequency of peristaltic waves significantly. The 'mission accomplished' model (Hughes and Thomas, 2007) proposes that these neurons signal the VNC at the end of a successful contraction in a body segment. When a segment contracts relative to an adjacent anterior segment beyond a threshold, an excitatory signal is sent to the next anterior VNC segment to initiate contraction. Simultaneously, activity in the current segment is suppressed by exciting the inhibitory population, a mechanism that was not accounted for in our earlier minimal model (Paoletti and Mahadevan, 2014).\n\nWe also assume neural and proprioceptive inputs from segment T2 to segment A8, as modeled by the second Equation (1); these naturally lead to reinitiation of the crawling cycle. This again differs from (Paoletti and Mahadevan, 2014) and (Gjorgjieva et al., 2013) where reinitiation is achieved by external inputs. Such long range coupling, also used in stick insect models (Daun-Gruhn and T\u00f3th, 2011), is plausible as neurons that extend across multiple segments have been observed in Drosophila larva VNC (Schmid et al., 1999). We note that this is not the only possible mechanism to reinitiate crawling cycles, and an alternative is discussed in the Appendix 1.\n\n### Body mechanics: active muscular and passive tissue mechanics\n\nAt the anatomical level, we assume that each segment has mass $m$, length $L$ and is linked to its immediate neighbors by linear springs with stiffness $k$ and damping coefficient $c$, as shown in Figure 1C and similar to what is described in (Paoletti and Mahadevan, 2014). As we will see, this minimal mechanical model suffices to explain a range of experimental observations.\n\nOne cycle of larval forward crawling has two phases (Heckscher et al., 2012): (i) the\u00a0'visceral piston' phase (Simon et al., 2010), where the gut moves forward in advance of the surrounding tissues, concurrently with the head and the tail, followed by (ii) the wave phase, where the peristaltic wave propagates from posterior to anterior in the remaining segments. The mechanism underlying the tail-head coordination during the visceral piston phase is unknown, however the observation that the gut moves together with the head and the tail (Heckscher et al., 2012), is consistent with the suggestion that the gut mechanically couples the head and the tail and leads to visceral piston-like action as seen in other organisms such as the Manduca sexta larvae (Simon et al., 2010). We chose to minimally implement this coupling by linking the head and the tail with a rod, i.e. an infinitely stiff spring, thus enforcing a 'periodic' boundary condition that leads to concurrent head-tail movement. Softening the spring will introduce a small temporal delay and allows for changes in the length of the larva during peristalsis, but does not change the qualitative nature of our results. Our model ignores the frictional interactions of the gut with the body segments, however in the absence of experimental data to guide modeling such interactions, we choose to keep our model minimal. Another mechanism for enforcing such periodic boundary condition could be synchronized neural drive at the head and the tail segments, which requires more elaborate models that we explore in the Appendix 1.\n\nFurther, since the maggot and its segments move relatively slowly, we assume that inertial effects are negligible so that segmental forces are balanced by friction locally. Although experimental measurements of these forces do not yet exist, a simple estimate shows that this hypothesis is justified. The mass of a third instar larva is \u224810-3\u00a0g and the acceleration of the larvae is on the order of \u224810-3 m/s2, which leads to an inertial force of \u224810-6\u00a0gm/s2. In an experimental study (Wallace, 1969), friction forces to draw a glass fiber of the size of a small nematode on an agar surface was measured to be\u00a0\u22485\u00b710-2 gm/s2, justifying our approximation.\n\nCollecting all these arguments together, the displacement of individual segments $u_{i}\u2062(t)$ are governed by the equations:\n\n$$\n0=k(u_{i\u22121}\u22122u_{i}+u_{i+1})+c(u\u02d9_{i\u22121}\u22122u\u02d9_{i}+u\u02d9_{i+1})+f_{i}\u2212f_{i+1}\u2212F_{i}^{f},i=1,\u2026,90=k(u_{9}\u2212u_{10}+u_{1}\u2212u_{0})+c(u\u02d9_{9}\u2212u\u02d9_{10}+u\u02d9_{1}\u2212u\u02d9_{0})+f_{10}\u2212f_{1}\u2212F_{10}^{f}\u2212F_{0}^{f},(3)0=u_{10}\u2212u_{0}\u221210L,\n$$\n\nwhere $F_{i}^{f}$ is the frictional force on the body segments, and $f_{i}$ are the muscular forces. Here, the penultimate equation characterizes the mechanics of the first segment, while the last equation describes our enforced periodic boundary condition to model the concurrent head-tail motion in the visceral piston phase, a boundary condition that was not used in our earlier model (Paoletti and Mahadevan, 2014) that required an external periodic excitation signal to achieve sustained crawling.\n\nMuscles in each segment provide contractile forces in the anterior-posterior axis necessary for locomotion (Heckscher et al. (2012)). They are activated by excitatory input from the neurons of the corresponding segment of the VNC. This is consistent with the observation that the propagation of contraction waves can be temporarily stopped by locally inhibiting the motor neurons in one segment (Inada et al. (2011)). As detailed studies of the muscular dynamics are not available in the larva, we model this behavior using a simple first-order dynamical law for the muscular force\n\n$$\n\\tau_{f}\u00a0f\u02d9_{i}=\u2212f_{i}+f_{max}\\sigma_{f}[E_{i}\u2212E^],i=1,\u2026,10,\n$$\n\nwhere $f_{max}$ is the maximum force exerted by muscles, $\\sigma_{f}\u2062[E]=0.5+0.5\u2062tanh\u2061(g_{f}\u2062E)$, where $g_{f}$ is the gain and $E^$ is a threshold for muscle activation.\n\nDue to the assumed head-tail coupling, contraction of the tail segment leads to stretching of the head segment driven by $f_{10}$, consistent with the observation in (Heckscher et al., 2012), that tail muscles contract in the visceral piston phase. In (Heckscher et al., 2012), it was speculated that tail contraction provides both a moving of the tail forward and pushing of the gut forward. Our model could be interpreted as adding to this speculation that the push gets transferred to the head by the gut and causes its motion. It is possible that motion in head segment is not totally passive, but mediated actively by contraction of muscles in the head. However, experimental evidence on this issue is not decisive (Heckscher et al., 2012) and we do not consider this scenario here.\n\n### Environmental mechanics: substrate frictional coupling\n\nDirected rectilinear locomotion is a consequence of body contraction coupled to the anisotropic and inhomogeneous friction of the body relative to the substrate. Frictional inhomogeneity arises as segments are lifted off the ground when they contract (Heckscher et al., 2012), allowing them to slip and providing the organism active control of friction. Indeed, activity of the muscles that coordinate segment lifting are synchronized with the activity of muscles that provide contractile forces in the segment (Heckscher et al., 2012). Consistent with this, we assume that the frictional resistance $F_{i}^{f}$ vanishes when $f_{i}$ is above a threshold, i.e.\n\n$$\nF_{i}^{f}=F_{max}sign(u\u02d9_{i})\\sigma_{F}[f^\u2212f_{i}],i=1,\u2026,10,(5)F_{0}^{f}=F_{max}sign(u\u02d9_{0})\\sigma_{F}[f^\u2212f_{10}],\n$$\n\nwhere $F_{max}$ is the maximum frictional force, $\\sigma_{F}\u2062[f]=0.5+0.5\u2062tanh\u2061(g_{F}\u2062f/k\u2062L)$, where $g_{F}$ is the gain, and $f^$ is the threshold segmental muscular force associated with segment lifting and the resulting vanishing of friction. This nonlinear frictional interaction is different from that in our earlier minimal model (Paoletti and Mahadevan, 2014) where the strength of friction was dependent on the direction of motion. Again, the last equation describes the head-tail coupling. We note that the frictional interaction of the body with the substrate decouples segments far from each other both mechanically (due to inhomogeneous deformation) and neurally (due to inhomogeneous proprioception). Manipulating the body-substrate coupling by changing $F_{max}/k\u2062L$ allows us to make experimentally testable predictions for gait changes.\n\nEquations (1\u20135) characterize the coupled neuromechanics of the larva linking the brain, body and environment by incorporating the neural dynamics that induces muscle contraction, the passive and active mechanics of the body, and the frictional interaction with the substrate on which the maggot moves, and the various interactions between these subsystems. Together with initial conditions, this completes the formulation of the problem. Our differential equations have strong nonlinearities associated with the sigmoids, which makes them numerically stiff. Introducing small inertial contributions for the segments allow us to use explicit numerical integration schemes encoded in MATLAB, although our results are robust with respect to changes in this parameter (see Appendix 2). We note that our numerical solution method differs from that used in (Paoletti and Mahadevan (2014)), where a continuum limit (when the number of segments is large) was taken first to derive a partial differential equation that was then solved numerically.\n\n### Parameters\n\nOur model is characterized by a number of dimensionless parameters that are given by the dimensionless damping $c\u2062\\tau_{E}/k$, the scaled maximum frictional force $F_{max}/k\u2062L$, the scaled maximum muscular force $f_{max}/k\u2062L$, the scaled threshold muscular force that causes segment lifting $f^/k\u2062L$, the activation thresholds for neural populations $\\theta^_{E}$ and $\\theta^_{I}$, the activation threshold for muscular forces $E^$, the scaled segment displacement $u^/L$, neural network weights $w_{E\u2062E}$, $w_{E\u2062I}$, $w_{I\u2062E}$, $w_{I\u2062I}$, $w_{E\u2062n}$, $w_{E\u2062p}$, $w_{I\u2062p}$, the gains $g_{n}$, $g_{f}$, $g_{p}$, $g_{F}$ and the scaled muscular relaxation time scale and inhibitory time scale $\\tau_{f}/\\tau_{E}$, $\\tau_{I}/\\tau_{E}$. All our results are reported in units of segment length $L$, neural excitation time constant $\\tau_{E}$ and body stiffness $k$. To initiate crawling, we apply a rectangular pulse of height 0.61\u00a0for a duration of $10\\tau_{E}$ to the appropriate segment's excitatory neuron.\n\nThe dimensionless parameters in the problem were adjusted to approximate the quantitative results reported in (Heckscher et al., 2012; Hughes and Thomas, 2007), and reproduce the effects of optogenetic perturbations of neural activity in the\u00a0VNC (Inada et al., 2011; Kohsaka et al., 2014) (Table 1). First, the VNC model parameters were chosen so that the VNC by itself could produce repeated propagation of activity. We made sure that the VNC was configured much below the maximum excitation it can carry, to make room for the additional proprioceptive input when the full model is put together. Next, the scaled muscular force was chosen so that fmax/k\u2062L\u22641 for stability, and to allow for the large contractions observed in crawling without proprioception. Finally, the scaled friction force was chosen so that Fmax/kL\u00a0>>\u00a01 to avoid slippage. Together, this allowed us to find a stable crawling solution that matches experimental results (Heckscher et al., 2012; Hughes and Thomas, 2007; Inada et al., 2011; Kohsaka et al., 2014).\n\n**Table 1.**\n Dimensionless parameters of our model and their default values used in numerical simulations.\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>3.5</td>\n      <td>5/6</td>\n      <td>0.4</td>\n      <td>c\u2062\u03c4E/k</td>\n      <td>fmax/k\u2062L</td>\n      <td>\u03c4f/\u03c4E</td>\n    </tr>\n    <tr>\n      <td>25/3</td>\n      <td>5/12</td>\n      <td>3</td>\n      <td>Fmax/k\u2062L</td>\n      <td>f^/k\u2062L</td>\n      <td>\u03c4I/\u03c4E</td>\n    </tr>\n    <tr>\n      <td>1</td>\n      <td>-2</td>\n      <td>0.6</td>\n      <td>wE\u2062E</td>\n      <td>wE\u2062I</td>\n      <td>wI\u2062E</td>\n    </tr>\n    <tr>\n      <td>0</td>\n      <td>0.6</td>\n      <td>1.95</td>\n      <td>wI\u2062I</td>\n      <td>wE\u2062n</td>\n      <td>wE\u2062p</td>\n    </tr>\n    <tr>\n      <td>1.95</td>\n      <td>0.4</td>\n      <td>0.6</td>\n      <td>wI\u2062p</td>\n      <td>E^</td>\n      <td>\u03b8^E,I</td>\n    </tr>\n    <tr>\n      <td>-17/18</td>\n      <td>40000</td>\n      <td>1000</td>\n      <td>u^/L</td>\n      <td>gn</td>\n      <td>gf,p,F</td>\n    </tr>\n  </tbody>\n</table>\n\n## Results\n\nWe start with a quantitative description of our model results and their comparison to experiments before turning to make testable predictions.\n\n### Experimental validation of the model\n\n#### The model produces sustained crawling with metrics matching experiments\n\nCrawling is initiated with a short excitatory pulse to the excitatory neural population in the most posterior segment. We do not model the source of this initiation command; it could be, for instance, a descending signal from the brain initiating forward movement or sensory feedback from the tail initiating an escape. This yields a sustained crawling gait shown in Figure 2, where a kymograph of body segments of the larva (Figure 2A) as well as the corresponding muscular (Figure 2B) and neural activity (Figure 2C) are shown (also see Video 2). We see that head and tail segments move together in the visceral piston phase (Heckscher et al., 2012; Simon et al., 2010), followed by a peristaltic wave with neural activity leading in phase, followed by muscular and contraction activity (Figure 2), propagating from posterior to anterior segments. Crawling can be stopped by shutting down the activity of excitatory neurons in the most posterior segment by an inhibitory input (see also section 3.1.2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/11031/elife-11031-fig2-v1.jpg)\n\n**Figure 2.:** Time is in units of $\\tau_{E}$. Model is simulated for $500\\tau_{E}$, only first $100\\tau_{E}$ is shown. All simulations were based on Equations (1\u20135), with parameter values as specified in the Table 1. Shade shows the duration of an example peristaltic wave. (A) Kymograph of body segments. Distance is measured in units of $L$. (B) Muscular forces in segments. Same color code is used as in the A). (C) Neural activity in segments. Solid line denotes excitatory neuron population activity, and dashed lines denote inhibitory population. Same color code is used as in the A)\n\n![Video 2.](https://cdn.elifesciences.org/articles/11031/elife-11031-media2.mp4.jpg)\n\n**Video 2.:** To illustrate the changes in friction, body segments are drawn off the ground when $f_{i}$ exceeds $f^$ in Equation (5).\n\nOur simulations show that the larva produces approximately 0.04 waves per unit time associated with the relaxation of the excitatory neurons $\\tau_{E}$, where waves start when the tail moves off the ground, leading to a larval speed \u2248$0.04\u2062L/\\tau_{E}$. Hughes and Thomas (Hughes and Thomas, 2007) found that third instar larvae of typical length $10L$\u22484 mm (estimated from Figure 1 of (Hughes and Thomas, 2007)) produce \u22481.5 waves/s. Using this latter number, we can estimate the time scale: $\\tau_{E}$\u224825 ms, a reasonable time constant for activity of neural populations. Combining the time scale estimate and the length of the third instar larvae, our model predicts a speed of \u22480.5 mm/s, comparable with the observed speed of \u22481 mm/s (estimated from Figure 1 of Hughes and Thomas, [2007]). In another experiment, for first instar larvae with typical length $10L$\u2248600\u00a0\u03bcm\u00a0(estimated from Figure 1 of Heckscher et al. [2012]), Heckscher et. al. Heckscher et al. (2012) give a range of 0.5 \u2212\u00a01.5 waves produced per second, which suggests the neural time scale range $\\tau_{E}$\u224825\u00a0\u2212\u00a075\u00a0ms, again a reasonable time constant range. Combining the time scale estimate and the length of the first instar larvae, our model predicts a speed range of \u224830\u00a0\u2212\u00a090\u00a0\u03bcm/s, in agreement with the range reported in (Heckscher et al., 2012): \u224840 \u2212 125\u00a0\u03bcm/s. Our simulations show that typically (median across time steps), three segments are off the ground, defined by the number of segments in which $f_{i}$ is above $f^$ and thus friction vanishes, consistent with observations (Heckscher et al., 2012). Furthermore, we find that peak segmental contraction, averaged over segments and waves, is \u224830%, consistent with observations (Hughes and Thomas, 2007).\n\n#### The model reproduces the effects of optogenetic VNC perturbations\n\nOur model shows that normal segment-to-segment propagation of activity arises through two different but coordinated channels, the posterior-to-anterior neural coupling between excitatory populations in adjacent segments, and via proprioceptive coupling (Figure 1C\u00a0and\u00a0D). Experimental perturbations of these channels are known to change the crawling modalities.\n\nFor example, recent advances in optogenetics have allowed for targeted manipulations of specific neuron types in the VNC (Inada et al., 2011; Kohsaka et al., 2014; Itakura et al., 2015). When segment-to-segment propagation was perturbed with optogenetic inhibition of motor neurons in a VNC segment (Inada et al., 2011), crawling stopped when the wave reached that segment. Conversely, when the inhibition is removed after up to 10\u00a0s, the larva resumed crawling from the same segment. To see whether this observation is reproduced in our model, we performed an acute shutdown of the excitatory population in a segment, modeling the effect of optogenetic inhibition on motor neurons. Figure 3A\u2013C and Video 3 show the results of this simulation. Crawling is stopped at segment A6 (u8) by setting E8=0 when t\u2208[65,95]. We note that crawling continues in this time frame until it reaches segment A6, consistent with that observed experimentally (Figure\u00a07\u00a0of (Inada et al., 2011)). Additionally, even after crawling stops, contraction of the body segment A\u20627 keeps producing proprioceptive input to E8 and I9. This can be seen by the sustained activity of I9 during stopping, while the activity of E9 dies out. When the optogenetic inhibition is removed, allowing E8 to evolve according to its normal dynamics (Equation (1)), proprioceptive input drives E8 to firing and the larva resumes crawling from A6.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/11031/elife-11031-fig3-v1.jpg)\n\n**Figure 3.:** Top row: $E_{8}$ is inhibited for $t\\in[65,95]$, shown in purple. Bottom row: $I_{8}$ is maximally excited in the range $t\\in[65,95]$, shown in purple. Color code and parameters are the same as Figure 1. (A) and (D) Kymograph of body segments. (B) and (E) Muscular forces in segments. (C) and (F) Neural activity in segments. We note that in these simulations, crawling is started at $t=0$ with an excitatory pulse applied to $E_{6}$ of the stationary larva, demonstrating that our model allows for the peristaltic wave to start at any segment.\n\n![Video 3.](https://cdn.elifesciences.org/articles/11031/elife-11031-media3.mp4.jpg)\n\n**Video 3.:** Cycle is started at A4 and temporarily stopped at A6 by inhibiting the excitatory population.\n\nIn our model (Figure 3), during a stop, the memory of crawling phase is kept in the contraction of the body and the proprioceptive channel which drives the proprioceptive activity. In Inada et. al.\u2019s experiments (Inada et al., 2011), it is possible to resume crawling even after the neighboring posterior segment to the one being inhibited completes a contraction and relaxes back to its equilibrium length (Figure\u00a07\u00a0of (Inada et al., 2011)). Hence, Inada et. al. propose that the memory is held in the VNC. At first this might seem to contradict our result that the memory is kept in the body and the proprioceptive channel, but, although our model does not include such mechanism, it is possible for the proprioceptive neurons to exhibit self-sustained activity and be the location of memory. We also want to point that in\u00a0(Inada et al., 2011) the memory can last as long as 10\u00a0s. Whether in the VNC or in the proprioceptive neurons, the mechanism that creates such long time intervals from neural time scales of a few tens of milliseconds is an open problem.\n\nMore recent experimental studies (Kohsaka et al., 2014; Itakura et al., 2015) identified pre-motor inhibitory neuron populations that play a role in locomotion. Specifically, during forward crawling, period-positive median segmental interneurons (PMSIs) were found to be activated slightly later than the motor neurons in the same segment (Kohsaka et al., 2014) and their optogenetic activation leads to inhibition of motor neuron activity locally, arresting peristaltic crawling. These observations match nicely with the dynamics of the inhibitory neurons in our model, which are activated slightly later than the excitatory neurons in the same segment (Figure 2C). Further, increasing their activity above what is normally seen during normal crawling led to the local arrest of crawling. In Figure 3D\u2013F and Video 4, we show the results of a simulation where crawling is stopped at segment A6 (u8) by setting I8=1, the maximum inhibitory population activity in our model, over the time period t\u2208[65,95]. Increased inhibitory neuron activity prevents the excitatory neurons from becoming active and stops the peristaltic wave. This causes the behavior of the model to be similar to the previous case where E8 was shut down, except that here I8 is active in the time frame of perturbation. When I8 is left to evolve according to to its normal dynamics (Equation (1)), proprioceptive input drives E8 to fire and larva resumes crawling from A6.\n\n![Video 4.](https://cdn.elifesciences.org/articles/11031/elife-11031-media4.mp4.jpg)\n\n**Video 4.:** Cycle is started at A4 and temporarily stopped at A6 by exciting the inhibitory population.\n\nIn the optogenetic inhibition experiments of Kohsaka et al. (2014), when the activation of PMSIs is removed, the peristaltic wave did not continue from the inhibited segment, but a new wave from the posterior end started. This is in contrast to our model, where crawling continues from the inhibited segment. Other observations on PMSIs (Kohsaka et al., 2014) that remain to be incorporated into future models are: when inhibited using genetic and optogenetic methods, speed of peristalsis greatly decreased, duration of motor neuron bursting and muscle contraction increased however degree of segmental contraction did not change.\n\n#### The model reproduces effects of silencing proprioception\n\nIn another set of experiments, it was shown that silencing proprioceptive feedback to VNC using genetic (Hughes and Thomas, 2007; Suster and Bate, 2002) and optogenetic (Inada et al., 2011) methods leads to an increase in peak segmental contraction from\u00a0\u224830% to \u224865%\u00a0(Hughes and Thomas, 2007), and a reduction in rate to approximately one fourth (Inada et al., 2011) and to one tenth (Hughes and Thomas, 2007), and reduced speed (Hughes and Thomas, 2007). To understand this, we implemented a purely neural coupling in our model by setting proprioceptive couplings wE\u2062p=0 and wI\u2062p=0. With purely neural coupling, the model still produces sustained crawling but with a qualitative change in the crawling pattern (Figure 4 and Video 5). Only a single segment is off-the-ground at a time, while peak segmental contraction, averaged over all segments, increases to\u00a0\u224865% of segmental length (\u224870% for only A3-A4 segmental distance,\u00a0Figure 4E)\u00a0the larva produces a reduced rate of \u22480.01 waves per \u03c4E and moves with speed \u22480.01\u2062L/\u03c4E (Figure 4A and D), in agreement with experiments. Furthermore, we see that inhibitory neural dynamics show a significant modulation, due to the removal of excitatory proprioceptive input to these populations, and peak activity of inhibitory population is reduced and delayed, as shown in\u00a0Figure 4C. However, the phases of muscular and neural activity within a wave do not change, but the contraction phase is slightly earlier (Figure 4F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/11031/elife-11031-fig4-v1.jpg)\n\n**Figure 4.:** The absence of proprioception induces slower crawling. In the lower panels, \u201cp.\u201d denotes crawling with proprioception, 'np.' denotes crawling without proprioception. (A) Kymograph of body segments. (B) Muscular forces in segments. (C) Neural activity in segments. (D) Kymograph of A4 segment ($u_{6}$) in the full model vs. the model without proprioceptive feedback. (E) Peak contraction of A3-A4 ($u_{5}-u_{6}$) segmental distance averaged over waves. Here, we plot only one segment interval as in (Hughes and Thomas, 2007) to ease comparison. (F) Phases of (excitatory) neural, muscular and contraction activity in different segments within a wave, with respect to excitatory neuron activity in tail segment. To calculate phases, first Discrete Fourier Transform of the relevant signal is obtained. Phase is the negative complex phase of the fundamental frequency. Contraction of a segment is the difference between its and next anterior neighbor segment\u2019s center of mass displacements.\n\n![Video 5.](https://cdn.elifesciences.org/articles/11031/elife-11031-media5.mp4.jpg)\n\n### Predictions\n\n#### Role of proprioceptive coupling\n\nWe tried the converse of silencing proprioception, and implemented a purely proprioceptive coupling with no neural coupling by setting the posterior-to-anterior neural coupling $w_{E\u2062n}=0$. In this case, we find that our model produces sustained crawling almost identical to what is shown in Figure 2 (see also below) where both channels are intact. This shows that a spatially coordinated CPG is not necessary for crawling, as was also suggested and shown in the simpler model put forward in (Paoletti and Mahadevan, 2014). While this might not be biologically realistic in an adult, our model shows that this plausible arrangement might be relevant in engineering coordinated locomotion, and even of some interest in an evolutionary or developmental setting.\n\nThe relative insensitivity of our model to variations in the parameters that describe neural coupling and the qualitative changes that result from silencing proprioception led us to investigate the stabilizing effect of proprioception in more detail. To this end, we varied posterior-to-anterior neural coupling, wE\u2062n, and investigated its effect when proprioception was silenced or intact. In Figure 5, we quantify various metrics characterizing the dynamics of the segments. As a function of wE\u2062n, Figure 5A shows the frequency of peristaltic waves which increases with wE\u2062n: stronger neural coupling leads to faster propagation of peristaltic wave. While higher frequency of peristaltic waves leads to faster locomotion as shown in Figure 5B, the relationship between speed and wave frequency is not linear as the size of step taken per peristaltic wave also increases with wE\u2062n, see Figure 5C. Figure 5D shows that peak contraction falls as wE\u2062n increases and Figure 5E shows that the number of simultaneously off-ground segments increases as wE\u2062n increases: faster peristaltic waves leave less time for segments to contract.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/11031/elife-11031-fig5-v1.jpg)\n\n**Figure 5.:** Crawling metrics as a function of $w_{E\u2062n}$. In dashed-red, we show the results from the model without proprioceptive feedback (np.), while in blue and black, we show the results with proprioception (p.) based on Equation (1\u20135) with parameter values as described in the Table 1. (A) Peristaltic waves per unit time ($\\tau_{E}$). (B) Speed of crawling in units of $L/\\tau_{E}$. (C) Step size, defined as the tail displacement divided by number of waves. It is measured in units of (L) D) Peak contraction in a segment, averaged over segments and waves. E) Number of simultaneously off-ground segments. This number is calculated at each time step, and the median number across time steps are plotted. (F) Propagation delays through neural and proprioceptive channels (see text for a detailed discussion) are shown. 'n-to-n' denotes neuron propagation delay. 'n-to-p' denotes proprioceptive propagation delay.\n\nThis manipulation suggests that proprioception increases robustness of locomotory behavior in two distinct ways. First, there is a wider range of neural coupling over which sustained crawling can be achieved. When proprioception is silenced, there is a minimum value of $w_{E\u2062n}$ below which crawling is not possible, due to neural coupling being too weak to excite the neural population in the next segment (Figure 5). Proprioception provides the extra excitation that allows for sustained crawling till the neural coupling weight $w_{E\u2062n}=0$. Second, in all metrics that we used to characterize crawling, the observed changes as a function of $w_{E\u2062n}$ was smaller when proprioception was intact (Figure 5). Thus, proprioception has a stabilizing effect on crawling. Gjorgjieva et al.\u00a0(2013)\u00a0came to a similar conclusion with their purely neural model.\n\nIn Figure 5 all metrics of crawling with and without proprioception show a cross-over around $w_{E\u2062n}\u22480.65$, which also sets the threshold below which sustained crawling in the full model shows no dependence on $w_{E\u2062n}$. To understand these further, we investigate the propagation delays through both the neural and proprioceptive channels. In Figure 5F, we plot three quantities: 1) the time it takes for excitatory neurons in neighboring segments to cross $E^$ (threshold to activate muscular forces) in the presence of proprioception (blue line), which quantifies segment-to-segment signal propagation delay, 2) the time for supra-threshold activation of excitatory neurons without proprioception (dashed red line), which quantifies the propagation delay through the neural channel, and 3) the time it takes for the excitatory population in a segment to cross $E^$ and the turning on of proprioceptive signal in that population (black line), which quantifies the propagation delay through the proprioceptive channel. We see that segment-to-segment signal propagation in the full model follows the faster channel, while in the proprioception silenced model it always follows the neural channel. Proprioceptive propagation delay becomes comparable to neural propagation delay around $w_{E\u2062n}\u22480.65$, the threshold when the metrics of crawling with and without proprioception cross-over. Below this threshold, proprioception is faster, explaining why the full model is insensitive to $w_{E\u2062n}$. Above this threshold, neural propagation is faster, but proprioception still has a stabilizing effect in this regime because of its inhibitory effect on the neural activity in the moving segment, neutralizing strong excitation. Furthermore, the proprioceptive channel gets slower beyond the cross-over point: it takes longer for a segment to contract to the proprioceptive threshold point. This is consistent with decreased peak contraction and increased number of simultaneously moving segments.\n\nOur results with varied proprioceptive coupling lead us to make the following predictions:\n\n#### Role of body-substrate frictional coupling\n\nTo quantify the effect of the environment on the locomotion, we varied the maximum scaled frictional force, Fmax/k\u2062L between body and the substrate. Our results are shown in Figure 6 and Video 6. Our main observation is that metrics of crawling are robust until friction falls below a threshold (Fm\u2062a\u2062x/k\u2062L\u223c0.4), when muscular forces become stronger than friction, leading to slippage. At this point the number of moving segments start differing from number of off-ground segments (Figure 6F). An example kymograph from the slipping regime (Fmax/k\u2062L=0.005), and corresponding muscular and neural activities are shown in Figure 6A and Video 6. Below the threshold, number of peristaltic waves per unit time drops (Figure 6B), as is confirmed by increased segment-to-segment propagation delay in the VNC\u00a0(Figure 6G). Thus we see an effect on neural propagation due to a change in the mechanical interaction with the substrate, clearly showing how we cannot ignore the triad of nervous system-body-substrate in continuous conversation with each other. The speed of the larva (Figure 6C) also follows an interesting trend; with decreasing friction, speed first increases due to larger step sizes (Figure 6D), even though the frequency of peristaltic waves decreases (Figure 6B), but eventually saturates. Peak contraction of segments increase (Figure 6E) with decreased friction. These effects on behavior are clear testable predictions of our model.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/11031/elife-11031-fig6-v1.jpg)\n\n**Figure 6.:** (A) Kymograph, muscular forces and neural activity as a function of time for $F_{max}/k\u2062L=0.005$. See Figure 2 and text for explanation of plots. (B,C,D,E) Crawling metrics as a function of $F_{max}/k\u2062L$. See Figure 5 and text for explanation of plots.\n\n![Video 6.](https://cdn.elifesciences.org/articles/11031/elife-11031-media6.mp4.jpg)\n\n**Video 6.:** Crawling simulations of larva with low friction.$F_{max}/kL=0.005.$\n\n## Discussion\n\nOur theoretical model for the forward crawling of a D. melanogaster larva incorporates the coupled mechanics of the soft body, the neural dynamics of VNC and frictional interactions with the substrate, complementing earlier isolated studies of these sub-systems. It produces a robust, sustained crawling gait with metrics consistent with experimental findings (Heckscher et al., 2012; Hughes and Thomas, 2007), and furthermore, can reproduce qualitative and quantitative changes in crawling gait due to perturbations in proprioceptive (Hughes and Thomas, 2007; Inada et al., 2011) and neural (Inada et al., 2011; Kohsaka et al., 2014) channels of segment-to-segment wave propagation.\n\nA surprising finding of our model is its ability to produce sustained crawling with purely proprioceptive coupling between segments, a scenario which was first suggested by us for a very general model of crawling (Paoletti and Mahadevan, 2014). While both in our model and in experiments (Hughes and Thomas, 2007; Heckscher et al., 2012), the larvae can crawl without any proprioception, albeit much slower, the demonstration of purely proprioceptive crawling challenges the central role of CPG in crawling locomotion. It will be interesting to see if this finding can be experimentally tested by disrupting intersegmental coupling in the VNC.\n\nOur study suggests that proprioception increases the robustness of crawling by effectively stabilizing segment-to-segment neural coupling. Interpreting this variation in parameters to that due to variations across individuals in a population, we predict that there should be much more variability in crawling metrics among individuals with silenced or weakened proprioception, a scenario amenable to testing using existing genetic tools (Hughes and Thomas, 2007; Inada et al., 2011).\n\nIn the context of body-nervous system coupling, proprioception is necessary for adaptive behavior, but are both neural and proprioceptive intersegmental coupling needed, since crawling is possible with only one of them? Neural coupling may be used to control speed. Indeed, our model predicts that increase in neural coupling leads to higher speeds, even in the presence of proprioception. This suggestion is supported by experiments in stick insects, which show that slow, steady-walking is mainly coordinated by local proprioceptive signals but faster motion is driven by increased neural coupling between legs (B\u00fcschges, 2012).\n\nOur model makes testable predictions on how crawling should change if body-substrate coupling is modified. In particular, decreasing friction below slippage threshold should lead to a higher speed with larger step sizes but a smaller number of waves per unit time, another testable prediction.\n\nOur minimal model makes a number of assumptions and simplifications. Improvements, some of which are already pointed out, will be necessary to describe forward crawling as more experiments become available. For example, in a very recent experiment (Itakura et al., 2015), a new class of pre-motor inhibitory neurons, Glutamatergic Ventro-Lateral Interneurons (GVLIs), were identified (glutamate inhibits larva motor neurons (Rohrbough and Broadie, 2002)), which ceased locomotion in the same segment when optogenetically activated. During unperturbed peristaltic wave propagation, GVLIs\u2019 activation lagged motor neurons by several segments, suggesting that GVLIs provide a contraction termination signal when the wave reaches anterior segments. In contrast, inhibitory neurons of our model get activated slightly later than the excitatory neurons in the same segment, and receive proprioceptive input only from the same segment. Therefore, our current model does not take into account the role of GLVIs in locomotion. Some other points of improvement could be moving beyond linear mechanics, taking into account different muscles, introducing dynamics for stretch receptors, incorporating observations on PMSI\u2019s (Kohsaka et al., 2014), including further specialized neuron types and accompanying connectivity profiles in a segment of the VNC, introducing possible long range intersegmental neural and proprioceptive connections, and using more sophisticated parameter fitting procedures.\n\nOur integrated approach suggests generalizations that can move us beyond prograde rectilinear locomotion. Backward crawling, for instance, could be achieved by a separate neural circuit running from anterior-to-posterior, perhaps similar to that in C. elegans (Haspel et al., 2010), or by introducing anterior to posterior neural coupling between individual segments as in the model of Gjorgjieva et al. (2013). Additional extensions of the body mechanics to account for bending by differential movement of hemisegments, and a bilateral VNC, similar to that in (Gjorgjieva et al., 2013), allowing for propagation of neural excitation in opposite directions in different hemisegments will allow us to account for turning, and thus the larger behavioral repertoire of Drosophila larvae (Vogelstein et al., 2014).\n\nFinally, our model naturally suggests novel biomimetic designs for robotics crawlers. In fact, the interest in soft robots has significantly grown in the last few years thanks to these systems\u2019 capability of moving in uncertain environments, a daunting task for traditional rigid robots. For example\u00a0Boyle et al., (2013) presented a proprioceptive-driven articulated crawler based on C. elegans morphology and showed that it is able to navigate arenas with unknown obstacles without requiring complex sensory capability. On the other hand, Trimmer and colleagues are developing a soft platform to build artificial crawlers, see for example (Umedachi et al., 2013) and (Kim et al., 2013) for a review of current attempts. Our model can then be exploited to merge soft robotics and proprioception to create novel biomimetic crawlers with an electromechanical circuit implementing force production and proprioception in a soft gel.\n",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "15e2363d-69c6-4f77-9108-fd31d912094a",
+      "submission_id": "c45c9c88-35a1-45a3-9b03-a289999f4786",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Ronald L Calabrese, Emory University , United States\n\n## Review text\n\nDOI: [10.7554/eLife.11031.018](https://doi.org/10.7554/eLife.11031.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Integrative neuromechanics of crawling in D. melanogaster larvae\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Ronald L. Calabrese as the Reviewing Editor and K VijayRaghavan as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe neuro-mechanics underlying peristalsis in the Drosophila larva offers an excellent opportunity to understand the link between a body, its nervous system and the environment surrounding it. In recent years, the neural network underlying crawling in the larva has been investigated by numerous labs. Theorists have started integrating experimental data in quantitative models, as was done in pioneering work by Gjorgjieva et al. 2013. The present manuscript offers a detailed model of the dynamics produced by the neuro-mechanical coupling of larval segments. The model is minimally complex, which makes it elegant and powerful. Using this model, the authors explore the influence of proprioceptive inputs and body-substrate friction on quantitative aspects crawling behavior. Many behavioral observations are reproduced. Remarkably, the authors propose a set of experimentally testable predictions. The strength of the manuscript is the novelty and the elegance of the model, its ability to account for a number of experimental observed phenomena, and its clear experimental predictions.\n\nEssential revisions:\n\nThe major weaknesses pointed out in the expert reviews and which require revision are:\n\n1) At the moment, the model is presented for applied mathematicians but not biologists. Given that this paper targets an audience of biologists, an effort should be made to create a more intuitive understanding of the math behind the model. To help this issue, we suggest that the authors add a model overview section, preceding the current modeling section, that explains the physics and the biology of the model in a way that is accessible to a biologist, but without equations. Such a section would have to be written so that a reader who wants to struggle through the equations will have read the overview and therefore have a good intuitive understanding of what the model consists of/model assumptions etc., whereas a reader who chooses to skip the technical section can still fully follow the Results and Discussion of the paper. Particularly indicate how the parameters of the model pertain to specific interactions perhaps in reference to an expanded Figure 1. Given that the model contains a large number of parameters more effort must be made to explain how the different parameters were fitted to the model. It is important to discuss the limitations inherent in the assumptions of the model (i.e. obvious discrepancies with/simplifications of the biological process) and in the future how might these limitations be overcome?\n\n2) In 2013, Gjorgjieva et al. proposed a model similar to that presented by the authors. Although the conclusions of both studies do not fully overlap, the authors should discuss more thoroughly how their findings compare to those of Gjorgjieva et al. One striking difference is related to the necessary involvement of a CPG to drive peristalsis. The authors demonstrate that peristalsis can emerge from a pure neuro-mechanical coupling between neighboring segments. This result should be highlighted in the context of the CPG-centric view prevailing in the field. Perhaps part of the discussion found in supplementary information should be moved to the main text? The authors should also emphasize the fundamental differences between a CPG-based and pure neuro-mechanical coupling model.\n\n3) Currently, the model does not integrate the results of two recent studies from the lab of Aki Nose:\n\nA) Kohsaka H, Takasu E, Morimoto T, Nose A. A group of segmental premotor interneurons regulates the speed of axial locomotion in Drosophila larvae. Curr Biol. 2014 Nov 17;24(22):2632-42. doi: 10.1016/j.cub.2014.09.026. Epub 2014 Oct 16. PubMed PMID: 25438948.\n\nB) Itakura Y, Kohsaka H, Ohyama T, Zlatic M, Pulver SR, Nose A. Identification of Inhibitory Premotor Interneurons Activated at a Late Phase in a Motor Cycle during Drosophila Larval Locomotion. PLoS One. 2015 Sep 3;10(9):e0136660. doi: 10.1371/journal.pone.0136660. eCollection 2015. PubMed PMID: 26335437; PubMedCentral PMCID: PMC4559423.\n\nThese papers should be considered. See B. and D. below for more detail.\n\nBelow are excerpts from the expert reviews that expand on these needed revisions.\n\nA) The model is simple and elegant. Necessarily, it includes a large number of assumptions and simplifications. These are in general clearly stated, but some of these lack justification (and references to the neurobiological evidence). For example, the proprioceptive coupling is only from the nearby segment (contraction of segment i+1 feeds into the neural activation of segment i). Furthermore, such coupling is subject to a highly nonlinear activation function (effectively a threshold), and is fast (the very strong nonlinearity is somewhat reminiscent of other models, e.g. in C. elegans, Bryden 2008, Boyle 2012) begging the question is such strong nonlinearity strictly necessary for the model to work and does this render the dynamics of each segment as effectively binary, up to the capacitive filtering?\n\nB) The model assumes one excitatory and one inhibitory neuronal cell type. Recent literature has revealed more specialized cell types, e.g. excitatory PMSIs (Kohsaka et al., Curr Biol. 2014;24(22):2632-42.) and inhibitory GVLIs (Itakura et al. 2015, PLoS ONE 10(9):e0136660), with both classes implicated in peristaltic locomotion, and at least the inhibitory class also possibly consistent with the existing \"mission accomplished\" intuition. Is this more recent literature consistent with the model? Would it be possible to add a schematic with relevant cell types and lay out the reasoning of how these may be simplified/collapsed to the model presented?\n\nC) The mathematical model builds on a 2014 paper by two of the authors (Paoletti and L Mahadevan, Proc. R. Soc. B, 2014). While this is stated, much more detail needs to be given to explain what elements of the previous model framework are built on, and what elements of the current model and results are novel (e.g. are the results in sections 3.2.1 new?). Specifically, the previous model seems to focus on the passive and active body model and a minimal control system consisting of nearest-neighbor inter-segmental proprioceptive and diffusive coupling. There, the rhythmic pattern was generated by an oscillator in the head. This model now adds neuronal detail (pattern generating neuronal populations in each segment along the VNC). Thus in this model, some patterns can be propagated along the body even in the absence of ascending (proprioceptive) or descending (brain) control, and the proprioception is then superimposed (with a demonstrated stabilizing effect). This offers an excellent framework to study the interplay between central and peripheral control in this system. It would be helpful to the readers if any differences from the previous model (regarding the biomechanics/proprioception) and head oscillator were highlighted and justified. Where there are none, this should also be stated.\n\nBackground and literature search \u2013 I was surprised the very relevant work on leech proprioception was not cited, e.g. Cang and Friesen (2002), Model for Intersegmental Coordination of Leech Swimming: Central and Sensory Mechanisms. J. Neurophys. 87(6): 2760-2769.\n\nD) The inhibitory interneurons described in the last paragraph of section 2.1 should be related to the population of local interneurons neurons described by Kohsaka et al. 2014: the PMSIs. The same should be done for the glutamatergic interneuron GVLIs described in Itakura et al. 2015. The predictions of the model should be compared to the activity patterns reported for the PMSIs and GVLIs. The authors will note that the dynamics of GVLIs does not appear to be consistent with interactions that purely involves neighboring segments (the GVLIs lag behind the motor neurons by several segments).\n\nRelated to this point, Gjorgjieva et al. 2013 assumed a coupling of ipsilateral excitatory and inhibitory interneurons (nearest-neighbor coupling through inhibitory interneurons), which is different from that used by the authors (nearest-neighbor coupling through excitatory interneurons). Should one favor one connectivity pattern over the other one? Could the functional implications of these differences be commented on?\n\nE) In the last paragraph of the section 3.1.2: the authors make an equivalence between the acute loss-of-function achieved through the expression of halo-rhodopsin experiments in the motorneurons (see Inada et al., 2011) and an acute increase in the activity of the inhibitory interneurons. In my view, this mathematical description of the loss-of-function is incorrect. The effect of halo-rhodopsin should be described as a dramatic reduction in the activity of the excitatory interneurons (possibly through a large increase in the value of Ei in equation 1). This perturbation might have different consequences on the network dynamics. In particular, it might explain why the authors still predict muscular contractions upon activation of halo-rhodospin, which seems incompatible with the inhibition of the motorneurons.\n\nF) At several occasions, the length of larvae is incorrectly approximated. In the second paragraph of the Introduction, third instar larvae are assumed to be 8 mm long. I was wondering where this estimate comes from. In my experience, third instar larvae are typically 4 mm long, with a maximum length of 5 mm. In section 3.1.1, the length of the larva is assumed to be 0.7mm. Did the authors intend to write 7mm? In any case, this estimate is justified by referring to the Figure 1 in Inada et al., 2011, but the scale bar on the figure of reference shows that the larva is not larger than 4mm. The authors should correct these dimension and update their parameter estimates.\n\nG) In the Discussion, the authors should consider aspects of the biological phenomenology that have been neglected in their model. (1) The coupling of left and right hemi-segments. Gjorgjieva et al. 2013 have discussed that the contralateral coupling of excitatory and inhibitory interneurons might be important to produce robust propagation of peristaltic waves. How would such coupling affect the present model? (2) Can the present model account for the propagation of backward waves during backing-up movements?\n\nH) It is not quite clear to me how the approach of Mahadevan and his colleagues differs from other modeling studies investigating crawling in D. melanogaster larvae or C. elegans or other worms or snakes. The authors state in the Introduction that recent studies on C. elegans (Wen et al., 2012; Boyle, Berri and Cohen, 2012) have already focused on local sensory feedback and proprioception and show that this suffices to modulate the locomotory pattern and explain gait transitions. Boyle and his colleagues have also shown that proprioception stabilizes crawling and makes it more robust against external perturbation. Furthermore, old studies by Niebur and Erd\u00f6s in the 90s have already started to emphasize the role of sensory feedback in gait generation. Or, the works on crawling in leeches by Friesen and colleagues. I think it would be really helpful for the reader if the authors could include a paragraph into the Discussion stating how their approach differs from existing ones and what the specific advantages of their approach are.\n\nI) The second point which was not quite clear to me concerns the coupling structure (neural and proprioceptive) that the authors used in their simulations. Which parts of this structure are based on neurobiological findings in D. melanogaster larvae and which are based on physiologically reasonable assumptions, because they are known to exist in other biological systems? In line with this, the question whether different neural coupling structures, e.g. including anterior to posterior couplings between the individual segments will interfere with the results, arises.\n\nIn case that not much is known about the neurobiology of the coupling structure and that it is mainly based on assumptions, did the authors test and compare different central/neural coupling structures and their outputs?\n",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5b0c9bbe-3d6d-4fef-8538-479eab0ec696",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C1",
+      "claim": "D. melanogaster larvae are soft bodied cylindrical organisms about 4 mm in length and about 800 \u03bcm in diameter in the third instar stage.",
+      "claim_type": "EXPLICIT",
+      "source": "The larva is a soft bodied cylindrical organism about 4 mm in length and about 800 \u03bcm in diameter in the third instar stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the manuscript providing anatomical measurements of the organism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "11204f85-8a95-4aeb-8a08-e7b408de84b2",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C2",
+      "claim": "D. melanogaster larvae move by exploiting the peristaltic propagation of muscular relaxation and contraction waves along their bodies to induce forward locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "It moves in a manner similar to other long soft-bodied creatures such as earthworms and leeches by exploiting the peristaltic propagation of muscular relaxation and contraction waves along their bodies to induce forward locomotion, or crawling (Trueman, 1975)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation to Trueman, 1975.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "ff54c10c-41a6-4182-aef9-283e1a4c22cc",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C3",
+      "claim": "Eliminating proprioception with genetic and optogenetic methods leads to peristaltic waves with a period that is approximately 4 times longer or may even stop propagating.",
+      "claim_type": "EXPLICIT",
+      "source": "Eliminating proprioception with genetic (Hughes and Thomas, 2007) and optogenetic (Inada et al., 2011) methods leads to qualitative changes in the crawling gait: peristaltic waves have a period that is \u22484 times longer or may even stop propagating (Song et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "597c4dda-8332-43fc-8f61-612e775b05ab",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C4",
+      "claim": "Eliminating proprioception causes body segments to contract approximately 2 times more.",
+      "claim_type": "EXPLICIT",
+      "source": "body segments contract \u22482 times more (Hughes and Thomas, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation to Hughes and Thomas, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "facaf804-8c6a-44bc-9824-c02d377bb781",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C5",
+      "claim": "Experiments that block sensory input in the embryo show that crawling behavior still develops in the larva, but with longer peristaltic wave periods.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments that block sensory input in the embryo show that crawling behavior still develops in the larva, but with longer peristaltic wave periods (Suster and Bate, 2002; Fushiki et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "08fbdeec-532a-4c19-b0bd-0aff3831a658",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C6",
+      "claim": "The mathematical model couples excitation-inhibition circuits in the nervous system to force production in the muscles and body movement in a frictional environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model couples the excitation-inhibition circuits in the nervous system to force production in the muscles and body movement in a frictional environment, thence linking neural dynamics to body mechanics via sensory feedback in a heterogeneous environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement in the abstract describing the model structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "fd65ca04-bf82-460a-8050-7febaa8056b0",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C7",
+      "claim": "The model explains the basic observed phenomenology of crawling with and without proprioception.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results explain the basic observed phenomenology of crawling with and without proprioception, and elucidate the stabilizing role that proprioception plays in producing a robust crawling phenotype in the presence of biological perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement in the abstract describing model results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "90bb8e02-e444-4099-abe5-ee041dc2f64a",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C8",
+      "claim": "Proprioception plays a stabilizing role in producing a robust crawling phenotype in the presence of biological perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results explain the basic observed phenomenology of crawling with and without proprioception, and elucidate the stabilizing role that proprioception plays in producing a robust crawling phenotype in the presence of biological perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement in the abstract describing model findings about proprioception.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "81ca38b1-edda-49ab-a73b-a327a0d674ba",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C9",
+      "claim": "The larva has 3 thoracic (T1-T3) and 8 abdominal (A1-A8) segments.",
+      "claim_type": "EXPLICIT",
+      "source": "Anatomically, the larva has 3 thoracic (T1-T3) and 8 abdominal (A1-A8) segments, Figure 1A.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with reference to Figure 1A showing anatomical structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "e6187606-d0a1-4f13-9a31-ad2b66367459",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C10",
+      "claim": "The head is treated as part of the T1 segment and the tail as part of the A8 segment in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore treat the head as a part of the T1 segment, and the tail as a part of the A8 segment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement describing modeling assumptions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "bcf03a96-4ad4-42e4-871a-5f55c5d2ccae",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C11",
+      "claim": "Larvae lift segments off the ground when they contract.",
+      "claim_type": "EXPLICIT",
+      "source": "Larvae lift segments off the ground when they contract (Heckscher et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation to Heckscher et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "bfc5a1e9-3c15-4174-8574-047c047adc49",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C12",
+      "claim": "The model uses Wilson-Cowan equations for the activity of excitatory and inhibitory populations of neurons in a segment.",
+      "claim_type": "EXPLICIT",
+      "source": "We model the neural dynamics of the ventral nerve chord (VNC) in terms of the classical Wilson-Cowan equations (Wilson and Cowan, 1972) for the activity of excitatory and inhibitory populations of neurons in a segment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement describing the mathematical model with citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "c5f5f072-180e-4f38-98f2-00ec49cc93f0",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C13",
+      "claim": "Larvae can crawl without proprioceptive feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "Observations show that larvae can crawl without proprioceptive feedback (Suster and Bate, 2002; Hughes and Thomas, 2007; Inada et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "6d5760fa-2613-465e-bbfe-2bf8ae19ee82",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C14",
+      "claim": "Larvae can crawl without input from the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Observations show that larvae can crawl without proprioceptive feedback (Suster and Bate, 2002; Hughes and Thomas, 2007; Inada et al., 2011) or input from the brain (Berni et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation to Berni et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "97250417-b007-4919-9c0e-cabfa1349e99",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C15",
+      "claim": "The central nervous system, when isolated from the body, can still produce waves of neural activity propagating from posterior to anterior.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the central nervous system, when isolated from the body, can still produce waves of neural activity propagating from posterior to anterior (Pulver et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citation to Pulver et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "1986c973-6c6b-4eac-abaf-d2a475f230ae",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C16",
+      "claim": "Inertial effects are negligible in larval segment movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, since the maggot and its segments move relatively slowly, we assume that inertial effects are negligible so that segmental forces are balanced by friction locally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement describing a modeling assumption with justification provided.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "dcad07b4-c186-43bb-8126-5b84fac54c96",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C17",
+      "claim": "The mass of a third instar larva is approximately 10^-3 g.",
+      "claim_type": "EXPLICIT",
+      "source": "The mass of a third instar larva is \u224810-3 g and the acceleration of the larvae is on the order of \u224810-3 m/s2, which leads to an inertial force of \u224810-6 gm/s2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement providing quantitative estimate.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "761c0d51-4fb9-4f6c-ae26-b6669b88b849",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C21",
+      "claim": "The model predicts a speed of approximately 0.5 mm/s for third instar larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining the time scale estimate and the length of the third instar larvae, our model predicts a speed of \u22480.5 mm/s, comparable with the observed speed of \u22481 mm/s (estimated from Figure 1 of Hughes and Thomas, [2007]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement describing model prediction and comparison with experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "2967edcb-80c9-4e68-b401-ec9a6b5ff9e4",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C22",
+      "claim": "The observed speed of third instar larvae is approximately 1 mm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining the time scale estimate and the length of the third instar larvae, our model predicts a speed of \u22480.5 mm/s, comparable with the observed speed of \u22481 mm/s (estimated from Figure 1 of Hughes and Thomas, [2007]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement citing experimental observation from Hughes and Thomas, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "0bda09be-d372-4a96-8236-659d186d6d6d",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C24",
+      "claim": "First instar larvae produce 0.5-1.5 waves per second.",
+      "claim_type": "EXPLICIT",
+      "source": "Heckscher et. al. Heckscher et al. (2012) give a range of 0.5 \u2212 1.5 waves produced per second",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement citing experimental findings from Heckscher et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "5ec14680-ed49-43a7-a920-475724a9ee3e",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C25",
+      "claim": "The model predicts a speed range of approximately 30-90 \u03bcm/s for first instar larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining the time scale estimate and the length of the first instar larvae, our model predicts a speed range of \u224830 \u2212 90 \u03bcm/s, in agreement with the range reported in (Heckscher et al., 2012): \u224840 \u2212 125 \u03bcm/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement describing model prediction and comparison with experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "05a5df1b-9c54-48c3-ac26-c7a3c796c1fc",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C26",
+      "claim": "The observed speed range for first instar larvae is approximately 40-125 \u03bcm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining the time scale estimate and the length of the first instar larvae, our model predicts a speed range of \u224830 \u2212 90 \u03bcm/s, in agreement with the range reported in (Heckscher et al., 2012): \u224840 \u2212 125 \u03bcm/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement citing experimental observation from Heckscher et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "00301e4c-ef18-486d-a0cc-1b841ae405f5",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C28",
+      "claim": "Peak segmental contraction, averaged over segments and waves, is approximately 30%.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we find that peak segmental contraction, averaged over segments and waves, is \u224830%, consistent with observations (Hughes and Thomas, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement describing simulation results and comparison with experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "04a0d8c1-9d3c-4321-837f-c47ffc394f46",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C29",
+      "claim": "When segment-to-segment propagation was perturbed with optogenetic inhibition of motor neurons in a VNC segment, crawling stopped when the wave reached that segment.",
+      "claim_type": "EXPLICIT",
+      "source": "When segment-to-segment propagation was perturbed with optogenetic inhibition of motor neurons in a VNC segment (Inada et al., 2011), crawling stopped when the wave reached that segment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement citing experimental findings from Inada et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "18a94650-dcb2-4c3c-8635-fe50bf4510a8",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C30",
+      "claim": "When optogenetic inhibition is removed after up to 10 s, the larva resumed crawling from the same segment.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, when the inhibition is removed after up to 10 s, the larva resumed crawling from the same segment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement citing experimental findings from Inada et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "a70220b0-c179-45ef-b2c0-b8789ed0f90b",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C31",
+      "claim": "Period-positive median segmental interneurons (PMSIs) are activated slightly later than the motor neurons in the same segment during forward crawling.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, during forward crawling, period-positive median segmental interneurons (PMSIs) were found to be activated slightly later than the motor neurons in the same segment (Kohsaka et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement citing experimental findings from Kohsaka et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "244fa8a4-434b-45ef-8d33-699adc899a02",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C32",
+      "claim": "Optogenetic activation of PMSIs leads to inhibition of motor neuron activity locally, arresting peristaltic crawling.",
+      "claim_type": "EXPLICIT",
+      "source": "their optogenetic activation leads to inhibition of motor neuron activity locally, arresting peristaltic crawling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement citing experimental findings from Kohsaka et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "0e76b8a2-bd49-4162-b060-5028d87d79b2",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C33",
+      "claim": "Silencing proprioceptive feedback using genetic and optogenetic methods leads to an increase in peak segmental contraction from approximately 30% to approximately 65%.",
+      "claim_type": "EXPLICIT",
+      "source": "In another set of experiments, it was shown that silencing proprioceptive feedback to VNC using genetic (Hughes and Thomas, 2007; Suster and Bate, 2002) and optogenetic (Inada et al., 2011) methods leads to an increase in peak segmental contraction from \u224830% to \u224865% (Hughes and Thomas, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement citing experimental findings from multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "7543dc46-7bec-4517-9823-3b9e03acdf12",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C34",
+      "claim": "Silencing proprioceptive feedback leads to a reduction in crawling rate to approximately one fourth.",
+      "claim_type": "EXPLICIT",
+      "source": "and a reduction in rate to approximately one fourth (Inada et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement citing experimental findings from Inada et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "157a9848-c91b-4383-a947-29df5ffe0c04",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C35",
+      "claim": "Silencing proprioceptive feedback leads to a reduction in crawling rate to approximately one tenth.",
+      "claim_type": "EXPLICIT",
+      "source": "and to one tenth (Hughes and Thomas, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement citing experimental findings from Hughes and Thomas, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "a4a46b80-1e9c-4d47-b6f0-e59550557bd3",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C36",
+      "claim": "With purely neural coupling (no proprioception), the model produces sustained crawling with only a single segment off-the-ground at a time.",
+      "claim_type": "EXPLICIT",
+      "source": "With purely neural coupling, the model still produces sustained crawling but with a qualitative change in the crawling pattern (Figure 4 and Video 5). Only a single segment is off-the-ground at a time",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement describing simulation results with reference to Figure 4 and Video 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "867285d2-01d5-4941-843c-3e82139ac813",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C37",
+      "claim": "With purely neural coupling, peak segmental contraction increases to approximately 65% of segmental length.",
+      "claim_type": "EXPLICIT",
+      "source": "while peak segmental contraction, averaged over all segments, increases to \u224865% of segmental length (\u224870% for only A3-A4 segmental distance, Figure 4E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement describing simulation results with reference to Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "8325d72d-255a-4405-bec5-07e4c52a55ed",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C38",
+      "claim": "With purely neural coupling, the larva produces a reduced rate of approximately 0.01 waves per \u03c4E.",
+      "claim_type": "EXPLICIT",
+      "source": "the larva produces a reduced rate of \u22480.01 waves per \u03c4E and moves with speed \u22480.01\u2062L/\u03c4E (Figure 4A and D), in agreement with experiments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement describing simulation results with reference to Figure 4A and D, and comparison with experiments.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "4cd01095-ca85-4297-9a8b-dd43e18a2c94",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C40",
+      "claim": "A spatially coordinated CPG is not necessary for crawling.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that a spatially coordinated CPG is not necessary for crawling, as was also suggested and shown in the simpler model put forward in (Paoletti and Mahadevan, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement describing model findings with citation to previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "c79cddcc-8a82-46cb-8da4-76d16fe3c640",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C41",
+      "claim": "Proprioception increases robustness of locomotory behavior by providing a wider range of neural coupling over which sustained crawling can be achieved.",
+      "claim_type": "EXPLICIT",
+      "source": "This manipulation suggests that proprioception increases robustness of locomotory behavior in two distinct ways. First, there is a wider range of neural coupling over which sustained crawling can be achieved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement describing model findings based on parameter manipulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "23dd1246-e553-4edf-a485-6d35588905b8",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C44",
+      "claim": "Decreasing friction below slippage threshold should lead to higher speed with larger step sizes but a smaller number of waves per unit time.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, decreasing friction below slippage threshold should lead to a higher speed with larger step sizes but a smaller number of waves per unit time, another testable prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement describing model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "5e904d17-e605-46a5-a711-10852523a109",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C45",
+      "claim": "There should be much more variability in crawling metrics among individuals with silenced or weakened proprioception.",
+      "claim_type": "EXPLICIT",
+      "source": "Interpreting this variation in parameters to that due to variations across individuals in a population, we predict that there should be much more variability in crawling metrics among individuals with silenced or weakened proprioception, a scenario amenable to testing using existing genetic tools (Hughes and Thomas, 2007; Inada et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement describing model predictions with citations to relevant experimental tools.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "e548780e-f467-43e7-a4a2-dbf186948177",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C46",
+      "claim": "Neural coupling may be used to control speed, with increased neural coupling leading to higher speeds.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural coupling may be used to control speed. Indeed, our model predicts that increase in neural coupling leads to higher speeds, even in the presence of proprioception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement describing model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "8d2cca2f-385f-43f7-8768-d13ff44c4e6c",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C47",
+      "claim": "In stick insects, slow, steady-walking is mainly coordinated by local proprioceptive signals but faster motion is driven by increased neural coupling between legs.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggestion is supported by experiments in stick insects, which show that slow, steady-walking is mainly coordinated by local proprioceptive signals but faster motion is driven by increased neural coupling between legs (B\u00fcschges, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement citing experimental findings from B\u00fcschges, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "89766507-ee58-4193-8a16-0e05eab353ca",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C48",
+      "claim": "The model reproduces the robust crawling gait consistent with experimental findings in first and third instar larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows us to reproduce the robust crawling gait that is consistent with experimental findings in first (Heckscher et al., 2012) and third (Hughes and Thomas, 2007) instar larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement describing model results with citations to experimental studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "2d944d96-bb66-4fca-a465-4ec6c2a707c8",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C49",
+      "claim": "The model qualitatively and quantitatively captures the effects of optogenetic perturbations of neural activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our model qualitatively and quantitatively captures the effects of a) optogenetic perturbations of neural activity (Inada et al., 2011; Kohsaka et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement describing model results with citations to experimental studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "f92af8e4-17e8-4574-b3c2-2f01af723c02",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C50",
+      "claim": "The model qualitatively and quantitatively captures the effects of silencing proprioception with genetic and optogenetic methods.",
+      "claim_type": "EXPLICIT",
+      "source": "and b) silencing proprioception with genetic (Hughes and Thomas, 2007) and optogenetic (Inada et al., 2011) methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement describing model results with citations to experimental studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "8f5879bb-8c3f-4a32-8419-7b832136b50b",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C51",
+      "claim": "The head and tail of a larva move concurrently in a motion called the 'visceral piston phase' of crawling at the beginning of each crawling cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "At the beginning of each crawling cycle, it has been observed that the head and the tail of a larva move concurrently in a motion called the 'visceral piston phase' of crawling (Heckscher et al., 2012; Simon et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement citing experimental observations from Heckscher et al., 2012 and Simon et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "fe8ba2cc-1c72-4050-a8c4-900564574182",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C52",
+      "claim": "The gut moves with the head and the tail in advance of the surrounding body tissues during the visceral piston phase.",
+      "claim_type": "EXPLICIT",
+      "source": "because the gut moves with the head and the tail, in advance of the surrounding body tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement describing experimental observations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "d3cd0ea6-d25c-4999-a6d4-2acdcb94d5cd",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C53",
+      "claim": "The model implements head-tail coupling by forcing the displacement of head and tail segments to be the same.",
+      "claim_type": "EXPLICIT",
+      "source": "We model this behavior by forcing the displacement of head and tail segments to be the same.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement describing modeling approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "d86daaa4-cc12-4dbf-9e7d-b773a8319304",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C54",
+      "claim": "The peristaltic wave propagates to the tail through assumed long range neural and proprioceptive couplings of T2 and A8 segments once it reaches the head.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the peristaltic wave reaches the head, it propagates to the tail through assumed long range neural and proprioceptive couplings of T2 and A8 segments, and a new wave is initiated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement describing model mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "5b9576e8-4a97-4b25-9e53-34b68a3c0af9",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C55",
+      "claim": "The model shows that head and tail segments move together in the visceral piston phase followed by a peristaltic wave propagating from posterior to anterior segments.",
+      "claim_type": "EXPLICIT",
+      "source": "We see that head and tail segments move together in the visceral piston phase (Heckscher et al., 2012; Simon et al., 2010), followed by a peristaltic wave with neural activity leading in phase, followed by muscular and contraction activity (Figure 2), propagating from posterior to anterior segments.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement describing simulation results with reference to Figure 2 and citations to experimental studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "7addd06f-2d9e-4c43-99bf-d0e73da7582e",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C56",
+      "claim": "In the model, neural activity leads in phase, followed by muscular and contraction activity during the peristaltic wave.",
+      "claim_type": "EXPLICIT",
+      "source": "followed by a peristaltic wave with neural activity leading in phase, followed by muscular and contraction activity (Figure 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement describing simulation results with reference to Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "dafc7c42-beea-4ab8-a2aa-89ff50958572",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C57",
+      "claim": "Crawling can be stopped by shutting down the activity of excitatory neurons in the most posterior segment by an inhibitory input.",
+      "claim_type": "EXPLICIT",
+      "source": "Crawling can be stopped by shutting down the activity of excitatory neurons in the most posterior segment by an inhibitory input (see also section 3.1.2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement describing simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "6f05c802-1ee2-4645-8907-36ceca02526d",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C58",
+      "claim": "In the model, during a stop, the memory of crawling phase is kept in the contraction of the body and the proprioceptive channel.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model (Figure 3), during a stop, the memory of crawling phase is kept in the contraction of the body and the proprioceptive channel which drives the proprioceptive activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement describing model mechanism with reference to Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "a965c040-8832-4ecc-9831-c38ef225c6c7",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C59",
+      "claim": "In Inada et al.'s experiments, it is possible to resume crawling even after the neighboring posterior segment to the one being inhibited completes a contraction and relaxes back to its equilibrium length.",
+      "claim_type": "EXPLICIT",
+      "source": "In Inada et. al.'s experiments (Inada et al., 2011), it is possible to resume crawling even after the neighboring posterior segment to the one being inhibited completes a contraction and relaxes back to its equilibrium length (Figure 7 of (Inada et al., 2011)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement citing experimental findings from Inada et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "a75371dc-99f7-45dd-a072-3f32343c6e25",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C60",
+      "claim": "Inada et al. propose that the memory of crawling phase is held in the VNC.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, Inada et. al. propose that the memory is held in the VNC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement citing proposal from Inada et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "6f40d92a-727f-4e5e-9933-e0424a1917e4",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C61",
+      "claim": "In Inada et al.'s experiments, the memory of crawling phase can last as long as 10 s.",
+      "claim_type": "EXPLICIT",
+      "source": "We also want to point that in (Inada et al., 2011) the memory can last as long as 10 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement citing experimental findings from Inada et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "04805d1a-d9ee-4b1e-a269-caad8f052ae4",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C62",
+      "claim": "When PMSIs are inhibited using genetic and optogenetic methods, speed of peristalsis greatly decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "Other observations on PMSIs (Kohsaka et al., 2014) that remain to be incorporated into future models are: when inhibited using genetic and optogenetic methods, speed of peristalsis greatly decreased",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement citing experimental findings from Kohsaka et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "f85218f5-9873-4921-b976-03327c0de90f",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C63",
+      "claim": "When PMSIs are inhibited, duration of motor neuron bursting and muscle contraction increased.",
+      "claim_type": "EXPLICIT",
+      "source": "duration of motor neuron bursting and muscle contraction increased",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement citing experimental findings from Kohsaka et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "455013d1-a577-44d8-b0ec-04668df82d6d",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C64",
+      "claim": "When PMSIs are inhibited, degree of segmental contraction did not change.",
+      "claim_type": "EXPLICIT",
+      "source": "however degree of segmental contraction did not change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement citing experimental findings from Kohsaka et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "2d94e77e-03ea-4d4d-add3-135ac8ca81fa",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C65",
+      "claim": "Glutamatergic Ventro-Lateral Interneurons (GVLIs) ceased locomotion in the same segment when optogenetically activated.",
+      "claim_type": "EXPLICIT",
+      "source": "In a very recent experiment (Itakura et al., 2015), a new class of pre-motor inhibitory neurons, Glutamatergic Ventro-Lateral Interneurons (GVLIs), were identified (glutamate inhibits larva motor neurons (Rohrbough and Broadie, 2002)), which ceased locomotion in the same segment when optogenetically activated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement citing experimental findings from Itakura et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "c78b898d-3667-4fe4-acc7-c664805a8ef9",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C66",
+      "claim": "During unperturbed peristaltic wave propagation, GVLIs' activation lagged motor neurons by several segments.",
+      "claim_type": "EXPLICIT",
+      "source": "During unperturbed peristaltic wave propagation, GVLIs' activation lagged motor neurons by several segments",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement citing experimental findings from Itakura et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "b38c2b18-7449-46d8-8cc8-5d07a1053876",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C67",
+      "claim": "GVLIs provide a contraction termination signal when the wave reaches anterior segments.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that GVLIs provide a contraction termination signal when the wave reaches anterior segments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement citing interpretation from Itakura et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "abdb873a-99c7-4a3e-8acb-88508e543472",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C68",
+      "claim": "Glutamate inhibits larva motor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "(glutamate inhibits larva motor neurons (Rohrbough and Broadie, 2002))",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement citing experimental findings from Rohrbough and Broadie, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "d94f51a6-39f5-4419-82ea-3b1c740cbf05",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C69",
+      "claim": "Neurons that extend across multiple segments have been observed in Drosophila larva VNC.",
+      "claim_type": "EXPLICIT",
+      "source": "Such long range coupling, also used in stick insect models (Daun-Gruhn and T\u00f3th, 2011), is plausible as neurons that extend across multiple segments have been observed in Drosophila larva VNC (Schmid et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement citing experimental observations from Schmid et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "0b723449-b365-465a-83e0-b504e5b1de4a",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C70",
+      "claim": "The activity of the muscles that coordinate segment lifting are synchronized with the activity of muscles that provide contractile forces in the segment.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, activity of the muscles that coordinate segment lifting are synchronized with the activity of muscles that provide contractile forces in the segment (Heckscher et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement citing experimental findings from Heckscher et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "b716ce05-9f76-42c1-b533-878221c22f9a",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C71",
+      "claim": "Segment-to-segment propagation of neural activity arises through posterior-to-anterior neural coupling between excitatory populations in adjacent segments and via proprioceptive coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model shows that normal segment-to-segment propagation of activity arises through two different but coordinated channels, the posterior-to-anterior neural coupling between excitatory populations in adjacent segments, and via proprioceptive coupling (Figure 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement describing model findings with reference to Figure 1C and D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "fce862c9-6425-4103-bf79-45941c9cf51e",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C72",
+      "claim": "Crawling metrics are robust until friction falls below a threshold (Fmax/kL\u223c0.4), when muscular forces become stronger than friction, leading to slippage.",
+      "claim_type": "EXPLICIT",
+      "source": "Our main observation is that metrics of crawling are robust until friction falls below a threshold (Fm\u2062a\u2062x/k\u2062L\u223c0.4), when muscular forces become stronger than friction, leading to slippage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement describing simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "d9fc66b9-6d23-4ce1-a557-2164e9f4dec0",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C73",
+      "claim": "Below the friction threshold, the number of peristaltic waves per unit time drops.",
+      "claim_type": "EXPLICIT",
+      "source": "Below the threshold, number of peristaltic waves per unit time drops (Figure 6B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement describing simulation results with reference to Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "1f2092a7-047b-4cc5-bbca-c71b129ce5d4",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C74",
+      "claim": "Below the friction threshold, segment-to-segment propagation delay in the VNC increases.",
+      "claim_type": "EXPLICIT",
+      "source": "as is confirmed by increased segment-to-segment propagation delay in the VNC (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement describing simulation results with reference to Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "2681dec5-0c15-40b9-a4e0-d74b0f617948",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C75",
+      "claim": "With decreasing friction, speed first increases due to larger step sizes, even though the frequency of peristaltic waves decreases, but eventually saturates.",
+      "claim_type": "EXPLICIT",
+      "source": "The speed of the larva (Figure 6C) also follows an interesting trend; with decreasing friction, speed first increases due to larger step sizes (Figure 6D), even though the frequency of peristaltic waves decreases (Figure 6B), but eventually saturates.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement describing simulation results with references to Figure 6B, C, and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "4fa7d7b3-0d0c-4367-bd5d-9dd3737dccd0",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C76",
+      "claim": "Peak contraction of segments increases with decreased friction.",
+      "claim_type": "EXPLICIT",
+      "source": "Peak contraction of segments increase (Figure 6E) with decreased friction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statement describing simulation results with reference to Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "3fff6a38-38b8-4e8d-80f4-33411ae2356d",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C77",
+      "claim": "The model produces a robust, sustained crawling gait with metrics consistent with experimental findings.",
+      "claim_type": "EXPLICIT",
+      "source": "Our theoretical model for the forward crawling of a D. melanogaster larva incorporates the coupled mechanics of the soft body, the neural dynamics of VNC and frictional interactions with the substrate, complementing earlier isolated studies of these sub-systems. It produces a robust, sustained crawling gait with metrics consistent with experimental findings (Heckscher et al., 2012; Hughes and Thomas, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement describing model results with citations to experimental studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "1fa58573-49c6-4476-8d7f-37cd304779aa",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C78",
+      "claim": "The model can reproduce qualitative and quantitative changes in crawling gait due to perturbations in proprioceptive and neural channels of segment-to-segment wave propagation.",
+      "claim_type": "EXPLICIT",
+      "source": "and furthermore, can reproduce qualitative and quantitative changes in crawling gait due to perturbations in proprioceptive (Hughes and Thomas, 2007; Inada et al., 2011) and neural (Inada et al., 2011; Kohsaka et al., 2014) channels of segment-to-segment wave propagation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement describing model results with citations to experimental studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "a13fbe5b-0443-4d57-907b-dc892522990c",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "claim_id": "C79",
+      "claim": "The demonstration of purely proprioceptive crawling challenges the central role of CPG in crawling locomotion.",
+      "claim_type": "EXPLICIT",
+      "source": "While both in our model and in experiments (Hughes and Thomas, 2007; Heckscher et al., 2012), the larvae can crawl without any proprioception, albeit much slower, the demonstration of purely proprioceptive crawling challenges the central role of CPG in crawling locomotion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement describing model findings and their implications with citations to experimental studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "098c918f-e0be-436c-9951-84701bf748b6",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript describes the anatomical and kinematic features of D. melanogaster larvae, including body dimensions, segmentation, and peristaltic locomotion mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C9, C10, and C11 are well-supported by citations to established literature (Trueman 1975, Heckscher et al. 2012) and represent standard anatomical knowledge about the organism. These descriptive claims provide the biological foundation for the modeling work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "ca8f29d1-6ec7-411b-92fc-b850f42a1ace",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior experimental work demonstrates that eliminating proprioception leads to slower crawling with longer wave periods and increased segmental contraction, while larvae can still crawl without proprioception or brain input.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C13-C15, C33-C35 accurately cite multiple experimental studies (Hughes and Thomas 2007, Inada et al. 2011, Song et al. 2007, Suster and Bate 2002, Fushiki et al. 2013, Berni et al. 2012, Pulver et al. 2015). These claims establish the experimental context for the modeling work and are consistently supported across multiple independent studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "d4aeaf23-8943-4164-a1ea-56997f1ce104",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The model couples Wilson-Cowan neural dynamics to body mechanics and frictional environment, with specific assumptions including negligible inertial effects and head-tail coupling via enforced displacement equality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C12, C16, C53, C54 describe the model structure and key assumptions. The negligible inertia assumption (C16) is justified with quantitative estimates (C17) showing inertial forces (~10^-6 gm/s\u00b2) are much smaller than friction forces (~5\u00d710^-2 gm/s\u00b2). The modeling choices are clearly stated and justified, though some (like head-tail coupling) are acknowledged as simplifications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "d66f544d-ecd4-4f84-b4fe-bc1c2f745110",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The model quantitatively reproduces crawling speeds and metrics for both first and third instar larvae, predicting speeds of ~0.5 mm/s for third instar and ~30-90 \u03bcm/s for first instar larvae, with ~30% peak segmental contraction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C22, C24-C26, C28 show reasonable quantitative agreement between model predictions and experimental observations. The model predictions are within a factor of 2 of experimental values (e.g., 0.5 mm/s predicted vs 1 mm/s observed for third instar), which is acceptable given the model's simplifications. The agreement across multiple metrics (speed, wave frequency, contraction) strengthens the validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "3c629f97-1d34-4fd1-86f5-26f4b3a7edac",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The model reproduces optogenetic perturbation experiments showing that inhibiting motor neurons stops crawling at the inhibited segment, and crawling can resume when inhibition is removed, with memory maintained in body contraction and proprioceptive channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C29-C32, C57-C61 show the model qualitatively reproduces optogenetic inhibition experiments (Inada et al. 2011). However, there is a discrepancy regarding the memory mechanism: the model proposes memory is in body contraction/proprioception (C58), while experiments suggest it's in the VNC (C60). The authors acknowledge this difference but don't fully resolve it. The 10-second memory timescale (C61) also remains unexplained by the model's millisecond-scale neural dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "aeab579a-de6f-4fe8-8079-951f6feebdec",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The model reproduces the effects of silencing proprioception, showing increased peak contraction (~65%), reduced crawling rate (~0.01 waves per \u03c4E), and only single segments off-ground, matching experimental observations qualitatively and quantitatively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38, C48-C50 demonstrate the model successfully captures proprioception-silencing experiments by setting wEp=0 and wIp=0. The predicted changes (65% contraction vs 30% normal, ~4\u00d7 slower rate) match experimental observations from Hughes and Thomas 2007 and Inada et al. 2011. Figure 4 provides visual confirmation of these results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "db35c280-2b7e-49e6-a819-4172032e7ea1",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The model demonstrates that sustained crawling is possible with purely proprioceptive coupling (no CPG), challenging the central role of CPG in crawling locomotion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40 and C79 show that setting wEn=0 (no neural coupling) still produces sustained crawling in the model. This is a significant theoretical finding supported by the model simulations. However, the authors acknowledge this may not be biologically realistic in adults, and no direct experimental validation of this specific prediction is provided. The finding is consistent with the earlier Paoletti and Mahadevan 2014 model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "01042c53-e124-48ce-9c55-05f29167a56a",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Proprioception increases robustness by widening the range of neural coupling parameters that support sustained crawling, leading to the prediction that individuals with silenced proprioception should show greater variability in crawling metrics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41 and C45 are supported by the systematic parameter variation shown in Figure 5. The model demonstrates that proprioception allows crawling over a wider range of wEn values and reduces sensitivity to parameter variations. The prediction of increased variability (C45) is a logical inference from the model but remains untested experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "66f9b9ad-1fab-4456-a9ee-6109a71c1bac",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The model predicts that neural coupling strength can control crawling speed, with increased coupling leading to higher speeds, supported by analogous findings in stick insects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46 and C47 show that increasing wEn leads to higher speeds in the model (Figure 5B). This prediction is supported by analogy to stick insect experiments (B\u00fcschges 2012, C47) where faster motion involves increased neural coupling. However, this remains a prediction for Drosophila larvae without direct experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "e08285f0-d2e2-457b-b327-7daef4609ca5",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The model predicts that decreasing friction below a threshold (~0.4 Fmax/kL) leads to slippage, reduced wave frequency, increased propagation delays, initially increased then saturating speed, larger step sizes, and increased peak contraction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44, C72-C76 describe systematic predictions from varying the friction parameter Fmax/kL, shown in Figure 6. The model identifies a clear threshold where slippage begins and predicts multiple coordinated changes in crawling metrics. These are testable predictions but lack experimental validation. The predictions are internally consistent and arise naturally from the model mechanics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "e24e88d0-c67a-4dbe-a7eb-09ff842ec310",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The integrated model explains crawling phenomenology with and without proprioception and elucidates proprioception's stabilizing role in producing robust crawling under biological perturbations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C8, C77, C78 represent the main conclusions of the paper. These are well-supported by the combination of quantitative validation (C21-C28), reproduction of optogenetic perturbations (C29-C32, C36-C38), and parameter sensitivity analysis (C41, Figure 5). The model successfully integrates neural, mechanical, and environmental components to explain multiple experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "e5d7011e-e6e5-4068-a35c-88e4282c7527",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The model reproduces the visceral piston phase where head and tail move concurrently, followed by posterior-to-anterior peristaltic waves with neural activity leading muscular contraction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51, C52, C55, C56 describe the model's reproduction of the visceral piston phase observed experimentally (Heckscher et al. 2012, Simon et al. 2010). Figure 2 shows the model captures this behavior through the enforced head-tail coupling. The phase relationships between neural, muscular, and contraction activity are clearly demonstrated in the simulations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "70aaf28f-4b8f-474b-bd00-0a18127ef9c7",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Recent experimental findings on PMSIs and GVLIs show additional inhibitory mechanisms affecting crawling speed and contraction termination that are not yet incorporated into the model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C70 accurately cite recent experimental findings (Kohsaka et al. 2014, Itakura et al. 2015, Rohrbough and Broadie 2002, Schmid et al. 1999, Heckscher et al. 2012) but explicitly acknowledge these observations are not yet incorporated into the current model. These claims establish context for future model development rather than validating current model predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "0a12d06a-b059-4a9a-8816-c9d538817dab",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The model identifies two coordinated channels for segment-to-segment propagation: posterior-to-anterior neural coupling and proprioceptive coupling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 describes a key mechanistic insight from the model, shown in Figures 1C-D and analyzed in Figure 5F. The model demonstrates how these two channels work together, with their relative contributions depending on the neural coupling strength wEn. This is a central organizing principle of the model architecture.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    },
+    {
+      "id": "8f088a47-abea-42f3-a447-2ebe6ddb4dfd",
+      "content_id": "a308823b-3a02-43ff-8a6d-edd6109137ca",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The mass of a third instar larva is approximately 10^-3 g, with acceleration ~10^-3 m/s\u00b2, leading to inertial forces of ~10^-6 gm/s\u00b2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C17 provides quantitative justification for the negligible inertia assumption (C16). The calculation is straightforward and the comparison to friction forces (~5\u00d710^-2 gm/s\u00b2 from Wallace 1969) shows inertial forces are ~4 orders of magnitude smaller, strongly supporting the quasi-static approximation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:29.432969Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5b0c9bbe-3d6d-4fef-8538-479eab0ec696",
+      "result_id": "098c918f-e0be-436c-9951-84701bf748b6"
+    },
+    {
+      "claim_id": "11204f85-8a95-4aeb-8a08-e7b408de84b2",
+      "result_id": "098c918f-e0be-436c-9951-84701bf748b6"
+    },
+    {
+      "claim_id": "81ca38b1-edda-49ab-a73b-a327a0d674ba",
+      "result_id": "098c918f-e0be-436c-9951-84701bf748b6"
+    },
+    {
+      "claim_id": "e6187606-d0a1-4f13-9a31-ad2b66367459",
+      "result_id": "098c918f-e0be-436c-9951-84701bf748b6"
+    },
+    {
+      "claim_id": "bcf03a96-4ad4-42e4-871a-5f55c5d2ccae",
+      "result_id": "098c918f-e0be-436c-9951-84701bf748b6"
+    },
+    {
+      "claim_id": "ff54c10c-41a6-4182-aef9-283e1a4c22cc",
+      "result_id": "ca8f29d1-6ec7-411b-92fc-b850f42a1ace"
+    },
+    {
+      "claim_id": "597c4dda-8332-43fc-8f61-612e775b05ab",
+      "result_id": "ca8f29d1-6ec7-411b-92fc-b850f42a1ace"
+    },
+    {
+      "claim_id": "facaf804-8c6a-44bc-9824-c02d377bb781",
+      "result_id": "ca8f29d1-6ec7-411b-92fc-b850f42a1ace"
+    },
+    {
+      "claim_id": "c5f5f072-180e-4f38-98f2-00ec49cc93f0",
+      "result_id": "ca8f29d1-6ec7-411b-92fc-b850f42a1ace"
+    },
+    {
+      "claim_id": "6d5760fa-2613-465e-bbfe-2bf8ae19ee82",
+      "result_id": "ca8f29d1-6ec7-411b-92fc-b850f42a1ace"
+    },
+    {
+      "claim_id": "97250417-b007-4919-9c0e-cabfa1349e99",
+      "result_id": "ca8f29d1-6ec7-411b-92fc-b850f42a1ace"
+    },
+    {
+      "claim_id": "0e76b8a2-bd49-4162-b060-5028d87d79b2",
+      "result_id": "ca8f29d1-6ec7-411b-92fc-b850f42a1ace"
+    },
+    {
+      "claim_id": "7543dc46-7bec-4517-9823-3b9e03acdf12",
+      "result_id": "ca8f29d1-6ec7-411b-92fc-b850f42a1ace"
+    },
+    {
+      "claim_id": "157a9848-c91b-4383-a947-29df5ffe0c04",
+      "result_id": "ca8f29d1-6ec7-411b-92fc-b850f42a1ace"
+    },
+    {
+      "claim_id": "08fbdeec-532a-4c19-b0bd-0aff3831a658",
+      "result_id": "d4aeaf23-8943-4164-a1ea-56997f1ce104"
+    },
+    {
+      "claim_id": "bfc5a1e9-3c15-4174-8574-047c047adc49",
+      "result_id": "d4aeaf23-8943-4164-a1ea-56997f1ce104"
+    },
+    {
+      "claim_id": "1986c973-6c6b-4eac-abaf-d2a475f230ae",
+      "result_id": "d4aeaf23-8943-4164-a1ea-56997f1ce104"
+    },
+    {
+      "claim_id": "d3cd0ea6-d25c-4999-a6d4-2acdcb94d5cd",
+      "result_id": "d4aeaf23-8943-4164-a1ea-56997f1ce104"
+    },
+    {
+      "claim_id": "d86daaa4-cc12-4dbf-9e7d-b773a8319304",
+      "result_id": "d4aeaf23-8943-4164-a1ea-56997f1ce104"
+    },
+    {
+      "claim_id": "761c0d51-4fb9-4f6c-ae26-b6669b88b849",
+      "result_id": "d66f544d-ecd4-4f84-b4fe-bc1c2f745110"
+    },
+    {
+      "claim_id": "2967edcb-80c9-4e68-b401-ec9a6b5ff9e4",
+      "result_id": "d66f544d-ecd4-4f84-b4fe-bc1c2f745110"
+    },
+    {
+      "claim_id": "0bda09be-d372-4a96-8236-659d186d6d6d",
+      "result_id": "d66f544d-ecd4-4f84-b4fe-bc1c2f745110"
+    },
+    {
+      "claim_id": "5ec14680-ed49-43a7-a920-475724a9ee3e",
+      "result_id": "d66f544d-ecd4-4f84-b4fe-bc1c2f745110"
+    },
+    {
+      "claim_id": "05a5df1b-9c54-48c3-ac26-c7a3c796c1fc",
+      "result_id": "d66f544d-ecd4-4f84-b4fe-bc1c2f745110"
+    },
+    {
+      "claim_id": "00301e4c-ef18-486d-a0cc-1b841ae405f5",
+      "result_id": "d66f544d-ecd4-4f84-b4fe-bc1c2f745110"
+    },
+    {
+      "claim_id": "04a0d8c1-9d3c-4321-837f-c47ffc394f46",
+      "result_id": "3c629f97-1d34-4fd1-86f5-26f4b3a7edac"
+    },
+    {
+      "claim_id": "18a94650-dcb2-4c3c-8635-fe50bf4510a8",
+      "result_id": "3c629f97-1d34-4fd1-86f5-26f4b3a7edac"
+    },
+    {
+      "claim_id": "a70220b0-c179-45ef-b2c0-b8789ed0f90b",
+      "result_id": "3c629f97-1d34-4fd1-86f5-26f4b3a7edac"
+    },
+    {
+      "claim_id": "244fa8a4-434b-45ef-8d33-699adc899a02",
+      "result_id": "3c629f97-1d34-4fd1-86f5-26f4b3a7edac"
+    },
+    {
+      "claim_id": "dafc7c42-beea-4ab8-a2aa-89ff50958572",
+      "result_id": "3c629f97-1d34-4fd1-86f5-26f4b3a7edac"
+    },
+    {
+      "claim_id": "6f05c802-1ee2-4645-8907-36ceca02526d",
+      "result_id": "3c629f97-1d34-4fd1-86f5-26f4b3a7edac"
+    },
+    {
+      "claim_id": "a965c040-8832-4ecc-9831-c38ef225c6c7",
+      "result_id": "3c629f97-1d34-4fd1-86f5-26f4b3a7edac"
+    },
+    {
+      "claim_id": "a75371dc-99f7-45dd-a072-3f32343c6e25",
+      "result_id": "3c629f97-1d34-4fd1-86f5-26f4b3a7edac"
+    },
+    {
+      "claim_id": "6f40d92a-727f-4e5e-9933-e0424a1917e4",
+      "result_id": "3c629f97-1d34-4fd1-86f5-26f4b3a7edac"
+    },
+    {
+      "claim_id": "a4a46b80-1e9c-4d47-b6f0-e59550557bd3",
+      "result_id": "aeab579a-de6f-4fe8-8079-951f6feebdec"
+    },
+    {
+      "claim_id": "867285d2-01d5-4941-843c-3e82139ac813",
+      "result_id": "aeab579a-de6f-4fe8-8079-951f6feebdec"
+    },
+    {
+      "claim_id": "8325d72d-255a-4405-bec5-07e4c52a55ed",
+      "result_id": "aeab579a-de6f-4fe8-8079-951f6feebdec"
+    },
+    {
+      "claim_id": "89766507-ee58-4193-8a16-0e05eab353ca",
+      "result_id": "aeab579a-de6f-4fe8-8079-951f6feebdec"
+    },
+    {
+      "claim_id": "2d944d96-bb66-4fca-a465-4ec6c2a707c8",
+      "result_id": "aeab579a-de6f-4fe8-8079-951f6feebdec"
+    },
+    {
+      "claim_id": "f92af8e4-17e8-4574-b3c2-2f01af723c02",
+      "result_id": "aeab579a-de6f-4fe8-8079-951f6feebdec"
+    },
+    {
+      "claim_id": "4cd01095-ca85-4297-9a8b-dd43e18a2c94",
+      "result_id": "db35c280-2b7e-49e6-a819-4172032e7ea1"
+    },
+    {
+      "claim_id": "a13fbe5b-0443-4d57-907b-dc892522990c",
+      "result_id": "db35c280-2b7e-49e6-a819-4172032e7ea1"
+    },
+    {
+      "claim_id": "c79cddcc-8a82-46cb-8da4-76d16fe3c640",
+      "result_id": "01042c53-e124-48ce-9c55-05f29167a56a"
+    },
+    {
+      "claim_id": "5e904d17-e605-46a5-a711-10852523a109",
+      "result_id": "01042c53-e124-48ce-9c55-05f29167a56a"
+    },
+    {
+      "claim_id": "e548780e-f467-43e7-a4a2-dbf186948177",
+      "result_id": "66f9b9ad-1fab-4456-a9ee-6109a71c1bac"
+    },
+    {
+      "claim_id": "8d2cca2f-385f-43f7-8768-d13ff44c4e6c",
+      "result_id": "66f9b9ad-1fab-4456-a9ee-6109a71c1bac"
+    },
+    {
+      "claim_id": "23dd1246-e553-4edf-a485-6d35588905b8",
+      "result_id": "e08285f0-d2e2-457b-b327-7daef4609ca5"
+    },
+    {
+      "claim_id": "fce862c9-6425-4103-bf79-45941c9cf51e",
+      "result_id": "e08285f0-d2e2-457b-b327-7daef4609ca5"
+    },
+    {
+      "claim_id": "d9fc66b9-6d23-4ce1-a557-2164e9f4dec0",
+      "result_id": "e08285f0-d2e2-457b-b327-7daef4609ca5"
+    },
+    {
+      "claim_id": "1f2092a7-047b-4cc5-bbca-c71b129ce5d4",
+      "result_id": "e08285f0-d2e2-457b-b327-7daef4609ca5"
+    },
+    {
+      "claim_id": "2681dec5-0c15-40b9-a4e0-d74b0f617948",
+      "result_id": "e08285f0-d2e2-457b-b327-7daef4609ca5"
+    },
+    {
+      "claim_id": "4fa7d7b3-0d0c-4367-bd5d-9dd3737dccd0",
+      "result_id": "e08285f0-d2e2-457b-b327-7daef4609ca5"
+    },
+    {
+      "claim_id": "fd65ca04-bf82-460a-8050-7febaa8056b0",
+      "result_id": "e24e88d0-c67a-4dbe-a7eb-09ff842ec310"
+    },
+    {
+      "claim_id": "90bb8e02-e444-4099-abe5-ee041dc2f64a",
+      "result_id": "e24e88d0-c67a-4dbe-a7eb-09ff842ec310"
+    },
+    {
+      "claim_id": "3fff6a38-38b8-4e8d-80f4-33411ae2356d",
+      "result_id": "e24e88d0-c67a-4dbe-a7eb-09ff842ec310"
+    },
+    {
+      "claim_id": "1fa58573-49c6-4476-8d7f-37cd304779aa",
+      "result_id": "e24e88d0-c67a-4dbe-a7eb-09ff842ec310"
+    },
+    {
+      "claim_id": "8f5879bb-8c3f-4a32-8419-7b832136b50b",
+      "result_id": "e5d7011e-e6e5-4068-a35c-88e4282c7527"
+    },
+    {
+      "claim_id": "fe8ba2cc-1c72-4050-a8c4-900564574182",
+      "result_id": "e5d7011e-e6e5-4068-a35c-88e4282c7527"
+    },
+    {
+      "claim_id": "5b9576e8-4a97-4b25-9e53-34b68a3c0af9",
+      "result_id": "e5d7011e-e6e5-4068-a35c-88e4282c7527"
+    },
+    {
+      "claim_id": "7addd06f-2d9e-4c43-99bf-d0e73da7582e",
+      "result_id": "e5d7011e-e6e5-4068-a35c-88e4282c7527"
+    },
+    {
+      "claim_id": "04805d1a-d9ee-4b1e-a269-caad8f052ae4",
+      "result_id": "70aaf28f-4b8f-474b-bd00-0a18127ef9c7"
+    },
+    {
+      "claim_id": "f85218f5-9873-4921-b976-03327c0de90f",
+      "result_id": "70aaf28f-4b8f-474b-bd00-0a18127ef9c7"
+    },
+    {
+      "claim_id": "455013d1-a577-44d8-b0ec-04668df82d6d",
+      "result_id": "70aaf28f-4b8f-474b-bd00-0a18127ef9c7"
+    },
+    {
+      "claim_id": "2d94e77e-03ea-4d4d-add3-135ac8ca81fa",
+      "result_id": "70aaf28f-4b8f-474b-bd00-0a18127ef9c7"
+    },
+    {
+      "claim_id": "c78b898d-3667-4fe4-acc7-c664805a8ef9",
+      "result_id": "70aaf28f-4b8f-474b-bd00-0a18127ef9c7"
+    },
+    {
+      "claim_id": "b38c2b18-7449-46d8-8cc8-5d07a1053876",
+      "result_id": "70aaf28f-4b8f-474b-bd00-0a18127ef9c7"
+    },
+    {
+      "claim_id": "abdb873a-99c7-4a3e-8acb-88508e543472",
+      "result_id": "70aaf28f-4b8f-474b-bd00-0a18127ef9c7"
+    },
+    {
+      "claim_id": "d94f51a6-39f5-4419-82ea-3b1c740cbf05",
+      "result_id": "70aaf28f-4b8f-474b-bd00-0a18127ef9c7"
+    },
+    {
+      "claim_id": "0b723449-b365-465a-83e0-b504e5b1de4a",
+      "result_id": "70aaf28f-4b8f-474b-bd00-0a18127ef9c7"
+    },
+    {
+      "claim_id": "b716ce05-9f76-42c1-b533-878221c22f9a",
+      "result_id": "0a12d06a-b059-4a9a-8816-c9d538817dab"
+    },
+    {
+      "claim_id": "dcad07b4-c186-43bb-8126-5b84fac54c96",
+      "result_id": "8f088a47-abea-42f3-a447-2ebe6ddb4dfd"
+    }
+  ],
+  "comparisons": []
+}

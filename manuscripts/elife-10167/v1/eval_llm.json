@@ -1,0 +1,206 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C19"
+    ],
+    "result": "The authors demonstrate that equilibrium distributions for organelle numbers in the SMOP model can be calculated exactly using recurrence relations for three scenarios (Golgi, vacuoles, peroxisomes), identifying them as standard distributions (Poisson, truncated Poisson, and negative binomial respectively). This approach eliminates the need for stochastic simulations or approximate formulae derived from the fluctuation dissipation theorem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C19 are well-supported by the mathematical derivations presented throughout the manuscript. The recurrence relation (Equation 2) is rigorously derived from equilibrium conditions (C18), and the identification of standard distributions is demonstrated in the appendices. The simulation results in Figure 1C validate that the recurrence method produces distributions matching long-time simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "For the Golgi model ({de novo; decay}), the equilibrium distribution is Poisson, consistent with the original SMOP analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 is supported by the mathematical derivation in Appendix 3 and agrees with the original SMOP analysis. This represents a validation of one aspect of the original model using the exact recurrence method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "For vacuoles, the correct equilibrium distribution is truncated Poisson, not the shifted Poisson reported in the SMOP analysis. The Fano factor for truncated Poisson approaches 1 much more rapidly than for shifted Poisson, and experimental data that appeared to agree well with the incorrect prediction shows much poorer agreement with the corrected prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 are strongly supported by the mathematical derivation in Appendix 4 and visual evidence in Figure 2. The figure clearly shows that experimental data points (C63-C65) align well with the incorrect shifted Poisson curve but poorly with the correct truncated Poisson curve. This represents a significant correction to the original SMOP analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C29"
+    ],
+    "result": "The {de novo, fission; decay} model for peroxisomes has a negative binomial equilibrium distribution, and the expression \u03c3\u00b2/n = 1 + kfission<n>/kde novo is exact for all parameter values when kfusion = 0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C29 are supported by rigorous mathematical derivation in Appendix 5. The identification of the negative binomial distribution and the exact formula for the Fano factor represent important theoretical advances over the approximate treatment in the original SMOP paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C43",
+      "C44",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The corrected analysis shows that for oleate growth conditions, the contributions from fission and de novo production are approximately equal (42% de novo, 58% fission for Fano factor 2.4), not fission-dominated as claimed in the original SMOP paper. The boundary for equal contributions is at Fano factor = 2.0, not 1.0 as originally stated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 and C43-C44 are well-supported by the corrected mathematical analysis using exact formulae (Equations 3-5) and illustrated in Figure 3. The calculations in C66-C68 demonstrate that the term 'dominant' is misleading for the oleate condition. This represents a major reinterpretation of the original SMOP conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C60"
+    ],
+    "result": "For the {de novo, fission; decay} model to have a limiting equilibrium distribution, kfission must be less than \u03b3. If kfission exceeds \u03b3, the number of organelles grows without limit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by mathematical reasoning from the rate equations and demonstrated empirically in Figure 1D (C60), which shows divergence when kfission > \u03b3. This identifies an important constraint on the model parameters that was not explicitly discussed in the original SMOP analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The SMOP model's conclusion that fission contributes negligibly (<10%) to peroxisome biogenesis on glucose is questioned. The model predicts only a 10% drop in peroxisome number upon fission pathway deletion, but experimental data from Motley et al. (2015) and Kuravi et al. (2006) show much larger drops (70% and 44% respectively in double deletion mutants).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4 and C48-C54 identify a significant discrepancy between model predictions and experimental data for glucose conditions. However, the authors acknowledge potential experimental issues with peroxisome counting (C55-C56), particularly for small, low-fluorescence peroxisomes. The discrepancy raises valid concerns about the model's applicability, but the uncertainty in experimental measurements prevents a definitive conclusion. Additional controlled experiments with validated counting methods would be needed to resolve this issue.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The agreement between experimental data and the SMOP model is less compelling than originally presented, and interpretation of experimental observations to mechanistic conclusions is questionable. Difficulties in quantifying peroxisome numbers, especially small peroxisomes, may contribute to discrepancies. The work highlights the need for better accounting of detection limits, intensity distributions, and time-dependent issues in organelle count data analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C55-C58 are supported by the cumulative evidence presented in the manuscript, including the corrected vacuole analysis showing poor agreement (C23-C24) and the discrepancies with deletion mutant data (C52, C54). The citation to Jung et al. (2010) regarding fluorescence marker brightness issues (C56) provides external support. These represent important methodological considerations for the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C59",
+      "C61",
+      "C62"
+    ],
+    "result": "Stochastic simulations demonstrate that birth-death systems settle to limiting distributions independent of initial conditions, and distributions calculated at different times show convergence. The recurrence relation method produces results matching long-time simulation distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C59-C62 are directly supported by the simulation data shown in Figure 1A and 1C. The visual evidence clearly demonstrates convergence to equilibrium distributions and validates the recurrence relation approach. This provides important empirical validation of the theoretical framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "The SMOP analysis implicitly assumes populations are at equilibrium for all three cases (simulations, experimental data, fluctuation dissipation theorem), though this was not originally made explicit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 are supported by reference to a clarifying comment added to the original SMOP paper and citation to Paulsson (2005) regarding the fluctuation dissipation theorem. This represents an important clarification of assumptions underlying the original analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The model suggests fission contribution increases approximately five-fold when switching from glucose to oleate growth. Supporting evidence from deletion of fission factors (Vps1, Dnm1, Fis1) was provided for oleate conditions, but no corresponding data for glucose conditions was shown in the SMOP paper.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 are supported by the model calculations and accurate description of what was reported in the original SMOP paper. The observation that glucose deletion data were not shown (C47) is a factual statement about the original publication and represents an important gap in the experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C15",
+      "C18"
+    ],
+    "result": "The manuscript provides background on the SMOP model structure and birth-death process theory, including standard terminology and the principle of detailed balance at equilibrium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C12, C14-C15, and C18 represent accurate descriptions of the SMOP model, established birth-death process theory, and fundamental equilibrium principles. These are well-supported by appropriate citations and represent standard knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The mechanism of peroxisome biogenesis is contentious, with recent models relying on fission during organelle inheritance as the proliferation mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by appropriate citations to papers with differing views (Hoepfner et al. 2005, Motley and Hettema 2007, Knoblach et al. 2013). This provides important biological context for why the SMOP model analysis matters.",
+    "result_type": "MINOR"
+  }
+]

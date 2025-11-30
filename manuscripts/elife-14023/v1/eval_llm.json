@@ -1,0 +1,439 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Cytokine withdrawal triggers autophagy in activated Tregs, as evidenced by increased LC3II isoform, formation of LC3 puncta, and increased Atg5 protein, while cells remain viable throughout the assay period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 collectively demonstrate autophagy induction through multiple complementary assays (immunoblot for LC3II, confocal microscopy for LC3 puncta, Atg5 expression) with appropriate controls and quantification. The viability data (C27) confirms cells are not dying during the observation period, strengthening the interpretation that autophagy is a regulated response rather than a consequence of cell death.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Autophagy is required for Treg survival following cytokine withdrawal, as demonstrated by cell death upon treatment with autophagy inhibitors (Bafilomycin A, 3-Methyladenine) or genetic ablation of autophagy components (Vps34, Atg7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 provide converging evidence through both pharmacological (Baf, 3MA) and genetic (shRNA knockdown) approaches. The use of multiple independent perturbations targeting different steps of autophagy strengthens the conclusion. Knockdown efficiency is demonstrated by immunoblots, and functional consequences are measured by apoptosis assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Ligand-dependent Notch1 activity is required for autophagy induction in Tregs following cytokine withdrawal, as shown by GSI treatment and DLL-1 ablation blocking both LC3 puncta formation and cell survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 demonstrate Notch1 dependence through pharmacological inhibition (GSI-X) and genetic ablation (DLL-1 shRNA). The GSI experiments show membrane-restricted Notch1 staining (C39) confirming inhibitor efficacy, and loss of LC3 puncta (C40) linking Notch activity to autophagy. DLL-1 knockdown experiments provide orthogonal validation of ligand-dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Notch1 regulation of autophagy in Tregs is independent of canonical RBPJ-\u03ba-dependent transcriptional signaling, as RBPJ-\u03ba ablation does not affect LC3 puncta induction or cytokine-independent survival despite reducing Hes1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 establish non-canonical Notch signaling through negative evidence: RBPJ-\u03ba knockdown (confirmed by reduced Hes1, C47-C48) does not affect autophagy or survival (C44-C45), contrasting with the requirement for Notch1 itself. This dissociation between canonical transcriptional targets and autophagy regulation is well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C57"
+    ],
+    "result": "Notch1-/- Tregs show impaired autophagy induction and compromised survival following cytokine withdrawal, which can be rescued by ectopic expression of Atg3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 demonstrate the requirement for Notch1 using genetic knockout, and C53 provides functional rescue with Atg3, establishing that autophagy is downstream of Notch1. The rescue experiment is critical for establishing causality rather than correlation. C57 appropriately summarizes this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Non-nuclear Notch activity (NIC-NES) is sufficient to activate autophagy and protect Notch1-/- Tregs from apoptosis, and this protection requires autophagy as it is blocked by Bafilomycin or 3MA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 demonstrate that cytoplasmic-localized NIC (NIC-NES) can rescue Notch1-/- Tregs, and C60 shows this rescue is autophagy-dependent through pharmacological inhibition. This establishes non-nuclear Notch signaling as sufficient for autophagy activation. The localization of endogenous NIC (C58) provides context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C69"
+    ],
+    "result": "NIC physically interacts with autophagy initiation complex components Beclin1 and Atg14, as demonstrated by co-immunoprecipitation experiments in Tregs undergoing cytokine deprivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 provide bidirectional co-IP evidence (Notch1 IP pulls down Beclin1/Atg14; Beclin1 IP pulls down NIC) establishing physical interaction. The specificity is demonstrated by IgG controls and selective interaction (NIC with Beclin1/Atg14 but not Vps34/LC3). This provides molecular mechanism linking Notch to autophagy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Notch1 and autophagy signaling control mitochondrial organization and function in Tregs, as perturbations of either pathway (GSI, Notch1/DLL-1 knockdown, Bafilomycin, Atg7 knockdown) disrupt mitochondrial structure while maintaining mitochondrial transmembrane potential in wildtype Tregs during cytokine withdrawal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C82 demonstrate Notch and autophagy control of mitochondria through multiple approaches: MTP measurements (C72-C73), mitochondrial imaging (C75-C81), and various perturbations. The convergence of pharmacological and genetic approaches targeting both Notch and autophagy pathways provides strong evidence. However, the mechanistic link between autophagy and mitochondrial organization could be more directly established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Notch1-/- Tregs exhibit compromised mitochondrial function (reduced MTP, fragmented morphology, low FRAP) that can be rescued by expression of either Atg3 or NIC-NES, establishing that both NIC and autophagy are critical for mitochondrial integrity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 characterize mitochondrial defects in Notch1-/- Tregs using complementary approaches (MTP, morphology, FRAP), and rescue experiments with Atg3 and NIC-NES (C87-C88) establish causality. The FRAP analysis provides quantitative assessment of mitochondrial connectivity. Claims C89-C91 appropriately summarize these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The Notch1-autophagy axis regulates survival in T-effectors as well as Tregs: T-effectors lack autophagy induction and have nuclear NIC, but ectopic NIC-NES (not NIC-NLS) protects them from cytokine withdrawal-induced death in an autophagy-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C102 extend findings to T-effectors, showing they normally lack autophagy (C94-C95) and have nuclear NIC (C96), but can be rescued by cytoplasmic NIC-NES (C97-C100). The NIC-NLS control (C98) and autophagy inhibitor experiments (C100) establish specificity. This demonstrates the Notch-autophagy mechanism is not Treg-specific.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Activated Notch1-/- Tregs show comparable Foxp3 expression and gene expression profiles to wildtype Tregs, and Notch1 is required for Foxp3 induction in iTregs but not for maintaining Foxp3 in naturally arising Tregs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 characterize Notch1-/- Tregs at the molecular level, showing preserved Foxp3 and gene expression in activated natural Tregs (C103-C107) while confirming Notch1 requirement for iTreg differentiation (C104). This establishes that Notch1's role in natural Tregs is distinct from its role in iTreg differentiation, supporting the non-canonical mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C117"
+    ],
+    "result": "Notch1 controls Treg suppressor activity in vivo, as demonstrated by loss of suppression in Notch1 shRNA-treated or Notch1-/- Tregs in adoptive transfer assays, which can be rescued by reconstitution with recombinant NIC or Atg3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 demonstrate functional consequences using in vivo suppressor assays with both shRNA knockdown and genetic knockout approaches. The rescue experiments with NIC (C112) and Atg3 (C117) establish that the Notch-autophagy axis is functionally important for Treg suppressor activity. The in vivo setting strengthens physiological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Vps34 is critical for Treg suppressor function both in vitro and in vivo, and its ablation does not affect Foxp3 expression, indicating autophagy regulates Treg function through mechanisms independent of Foxp3 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C116 demonstrate autophagy requirement for Treg function using Vps34 knockdown in both in vitro and in vivo assays. The preservation of Foxp3 expression (C114) despite loss of function suggests autophagy acts through post-transcriptional mechanisms. This complements the Notch1 findings and establishes autophagy as functionally important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "Non-nuclear Notch activity (NIC-NES but not NIC-NLS) restores suppressor activity in Notch1-/- Tregs in vivo, demonstrating that cytoplasmic Notch signaling is sufficient for Treg function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 provide critical evidence for non-nuclear Notch signaling through the NIC-NES vs NIC-NLS comparison in functional assays. The differential rescue by NIC-NES (C118) but not NIC-NLS (C119) establishes that nuclear localization is not required and cytoplasmic activity is sufficient for Treg function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Wildtype Tregs correct glucose clearance defects in obese Leprdb/db mice, and this function requires Notch1 as Notch1-/- Tregs fail to improve glucose clearance unless reconstituted with NIC-NES or Atg3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 establish the glucose tolerance assay, and C127-C129 demonstrate Notch1 and autophagy requirements using rescue experiments with NIC-NES and Atg3. This provides an independent functional readout beyond T-cell proliferation assays, strengthening the physiological relevance of the Notch-autophagy axis in Treg function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C139",
+      "C162"
+    ],
+    "result": "Foxp3-Cre::Notch1lox/lox mice exhibit immune hyperactivity with enlarged lymph nodes, increased effector and central memory T-cell subsets, which can be partially rescued by WT Treg transfer, indicating Notch1 deficiency in Tregs causes immune dysregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C137 characterize the Foxp3-Cre::Notch1lox/lox phenotype showing immune inflammation, and C135-C136 demonstrate partial rescue by WT Treg transfer, establishing that Treg dysfunction contributes to the phenotype. The reduced birth ratio (C130) and inflammatory features (C131, C133-C134) are consistent with Treg deficiency. Claims C139 and C162 appropriately conclude Notch1's role in immune homeostasis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C138"
+    ],
+    "result": "Foxp3 expression is comparable in Tregs from Foxp3-Cre::Notch1lox/lox and control mice, indicating that immune dysregulation in these mice is not due to loss of Foxp3 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C138 is directly demonstrated by immunostaining data in Figure 6G. This is an important control showing that the immune phenotype is not simply due to loss of Treg identity (Foxp3 expression), but rather functional defects in Foxp3+ Tregs lacking Notch1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C144",
+      "C155"
+    ],
+    "result": "The study establishes that Notch1-regulated autophagy is an integral controlling element of activated Treg homeostasis, with Notch-induced autophagy serving as a quality control mechanism for mitochondrial architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C142 and C144 represent the main conclusions synthesizing the experimental findings. These are well-supported by the collective evidence from survival, autophagy, mitochondrial, and functional assays. Claim C155 appropriately notes this represents a novel role for Notch signaling. These summary claims are justified by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C146",
+      "C147"
+    ],
+    "result": "Notch1-/- Tregs show suppressor activity in vitro but not in vivo, potentially because cytokines accumulating in culture dishes protect Notch1-/- Tregs from death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C146 notes a discrepancy between in vitro and in vivo results, which is an important observation. However, C147 is explicitly labeled as speculation without direct experimental evidence. While the speculation is reasonable given the cytokine-dependence data, it remains untested. Additional experiments would be needed to confirm this mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C161"
+    ],
+    "result": "Cd4-Cre::Notch1lox/lox mice (Notch1 deletion in all CD4+ T-cells) do not show overt inflammatory phenotypes, contrasting with Foxp3-Cre::Notch1lox/lox mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C161 is stated as an observation and supported by citation. This comparison is important for establishing that Notch1's role is particularly critical in the Treg lineage rather than all CD4+ T-cells, though the lack of detailed phenotypic data for Cd4-Cre mice in this manuscript limits full evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Atg3 is an E2-ubiquitin-like-conjugating enzyme that catalyzes LC3I lipidation, a key step in autophagy, and is implicated in maintaining mitochondrial health under nutrient stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 describe established knowledge about Atg3 function, supported by citations. This background information contextualizes why Atg3 was chosen for rescue experiments and explains its dual role in autophagy and mitochondrial maintenance, which is relevant to the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Vps34 and Beclin form multiple dynamic cellular complexes regulated by phosphorylation of the proteins and their interacting partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 describe established knowledge about Vps34-Beclin complexes, supported by citations. This provides important context for interpreting the co-IP results showing NIC in complexes with Beclin but not always with Vps34, suggesting dynamic complex formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "Mitochondrial remodeling controls cellular responses to changing bioenergetic needs, and Notch modulation of mitochondrial function has been suggested in earlier work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 provide background from published literature establishing the rationale for examining mitochondria in the context of Notch and autophagy. These are appropriately cited and provide context for the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C143"
+    ],
+    "result": "The requirement for Notch1 in thymus-derived activated Tregs is distinct from identified roles for Notch-TGF\u03b2 interactions in iTregs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C143 distinguishes the current findings from previous work on iTregs, supported by citations. This is an important distinction clarifying that the non-canonical Notch-autophagy mechanism in natural Tregs differs from the canonical Notch-TGF\u03b2 pathway in iTreg differentiation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C154"
+    ],
+    "result": "The findings align with and extend recent work by other groups showing roles for autophagy and Notch in Treg function, though there are differences in interpretation regarding whether Notch acts as a positive or negative regulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C152 and C154 compare the current findings with recent publications (Charbonnier et al., Wei et al.), noting both agreements and differences. These comparisons are appropriately cited and help contextualize the current work within the broader literature. The discussion of differences (C151-C152) is particularly valuable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C153"
+    ],
+    "result": "The increased representation of activated and memory T-cell subsets in Foxp3-Cre::Notch1lox/lox mice is likely a response to antigens experienced in high barrier housing conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C153 is explicitly labeled as speculation. While the speculation is reasonable given the housing conditions and the observation that genetic controls are indistinguishable from wildtype mice, this remains an untested hypothesis. The phenotype could have alternative explanations that are not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Notch1 tunes a late event in the differentiation of Tregs already committed to the suppressor lineage, as Notch1 deficiency at later stages does not impair lineage commitment but low-level immune challenge elicits inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C158 propose a model for Notch1's role in Treg biology. C156 is supported by literature citations, C157 is a reasonable proposal based on the data showing preserved Foxp3 expression, and C158 is an observation from the mouse phenotype. This model reconciles the current findings with previous work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C163",
+      "C164"
+    ],
+    "result": "Notch1 activity in Tregs may be context-dependent, and the integration of autophagy and non-nuclear Notch activity may be a conserved mechanism in other cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C163-C164 are explicitly speculative. C163 suggests context-dependence (supported by citation) which is reasonable but not directly tested. C164 proposes the mechanism may be conserved in other cell types, which is an interesting hypothesis but purely speculative without supporting data from other cell types.",
+    "result_type": "MINOR"
+  }
+]

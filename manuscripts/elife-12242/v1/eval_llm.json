@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C19",
+      "C20",
+      "C5",
+      "C21",
+      "C22",
+      "C67",
+      "C68"
+    ],
+    "result": "The 20 bp ZF6-cis sequence (-84 to -65 bp from TSS) in the RHO promoter is necessary for RHO expression. Deletion of this sequence in reporter assays resulted in ~50-fold decreased eGFP expression in porcine retina, confirmed by both qPCR and histology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C67, and C68 provide direct experimental evidence from deletion experiments showing loss of reporter expression. Claims C5 and C22 appropriately interpret these results as demonstrating necessity of the ZF6-cis element. The experimental design (reporter assay with deletion construct) is appropriate for testing CRE function, though the conclusion is limited to the 776 bp promoter fragment tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C73"
+    ],
+    "result": "ZF6-DB binds specifically to the ZF6-cis target sequence in the RHO promoter. ChIP-qPCR in transfected HEK293 cells showed RHO-specific enrichment at the TSS region containing ZF6-cis, but not at control loci (GNAT1, ARR3, tubulin).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 provides ChIP-qPCR data with appropriate controls demonstrating specific binding. However, the experiment was performed in HEK293 cells rather than photoreceptors, which may not fully recapitulate the physiological context. The n=3 independent experiments provides reasonable statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C14",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C54",
+      "C63"
+    ],
+    "result": "ZF6-DB, a DNA-binding protein without an effector domain, produces efficient and specific transcriptional silencing of Rho in vivo. AAV8-mediated delivery to porcine photoreceptors resulted in 45% Rho transcript reduction in bulk retina and ~85% reduction in FACS-sorted transduced rods, with corresponding protein depletion and outer segment collapse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary methods (qPCR in bulk tissue C26, FACS-sorted cells C29, immunofluorescence C27, histology C28) converge on the same conclusion. The 45% vs 85% difference appropriately reflects transduction efficiency. Photoreceptor nuclei preservation (C28) at 15 days suggests the effect is specific rather than due to general toxicity. This is the central finding of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C44"
+    ],
+    "result": "ZF6-DB produces minimal genome-wide transcriptional perturbation compared to ZF6-KRAB (19 vs 222 DEGs) and to ablation of endogenous TF NRL (19 vs 500 DEGs). ZF6-DB-induced changes are restricted to Rho, its interactor Gnat1, and two inflammatory response genes (A2m, Gfap).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-seq data with appropriate statistical thresholds (FDR \u22640.1) support the low number of DEGs. The comparison to NRL ablation (C33) provides useful context, though it relies on published data. The pathway analysis (C34, C35) appropriately interprets the biological significance of the DEGs. Sample sizes appear adequate (n=6 ZF6-DB, n=4 ZF6-KRAB, n=7 controls).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C75",
+      "C76"
+    ],
+    "result": "ZF6-DB and ZF6-KRAB share 16 DEGs (84% of ZF6-DB DEGs) with concordant expression changes and bind the ZF6-cis target with similar affinities (Kd = 41.94\u00b13.45 nM for ZF6-DB vs 108.00\u00b111.78 nM for ZF6-KRAB). This suggests ZF6-KRAB achieves silencing primarily through DNA binding rather than KRAB-mediated repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The high overlap of DEGs (C39) with concordant directionality (C40, Pearson r=0.98) and similar binding affinities (C42, C75, C76) support the interpretation. However, the Kd values show ZF6-DB actually binds ~2.5-fold tighter than ZF6-KRAB, which somewhat complicates the interpretation. The gel shift assays appear technically sound with appropriate curve fitting (R\u00b2>0.96).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C58"
+    ],
+    "result": "Despite ~20-fold lower expression than endogenous photoreceptor TFs (Crx, Nrl), ZF6-DB and ZF6-KRAB achieve robust Rho silencing. This suggests the silencing mechanism is not simple displacement of key RHO transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-seq expression data (C30) quantitatively supports the low expression claim. The inference (C58) is reasonable given the expression levels and lack of known TFBSs in ZF6-cis (C20). However, this remains somewhat speculative as direct competition experiments were not performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C77",
+      "C78"
+    ],
+    "result": "In the RHO-P347S mouse model of autosomal dominant retinitis pigmentosa, ZF6-DB provided significantly better functional protection (ERG A- and B-wave preservation) than ZF6-KRAB or eGFP controls. Neither construct caused detectable functional impairment in wild-type C57Bl/6 mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ERG data (C47, C77) show functional preservation with appropriate controls. The P347S model is well-characterized (C49) and contains the human ZF6-cis sequence while the mouse promoter lacks it (C50), providing specificity. Wild-type safety data (C48, C78) is important. However, sample sizes are modest (n=10 P347S, n=4 WT per group) and the mechanism for why ZF6-DB outperforms ZF6-KRAB is not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C64",
+      "C65"
+    ],
+    "result": "A dual-function DBR-R vector combining ZF6-DB-mediated silencing with human RHO replacement achieved 38% porcine Rho repression and 68% hRHO replacement in porcine retina. Gnat1 levels were restored, supporting secondary Gnat1 down-regulation with Rho repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The experimental data (C52, C53) from qPCR, Western blot, and immunofluorescence support the quantitative claims. However, the authors themselves acknowledge (C65) that 38% silencing may be insufficient for therapeutic efficacy. The construct design required optimization of promoter strength and vector dose, suggesting the approach needs further development. The Gnat1 complementation (C53) is interesting but based on limited data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C61"
+    ],
+    "result": "The mechanism of ZF6-DB-mediated silencing likely involves DNA binding interference with local DNA sequence features and transcription factor interactions in the RHO proximal promoter, rather than recruitment of co-repressor complexes. Both deletion and trans-acting binding experiments support DNA as an active operator of transcriptional function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This mechanistic interpretation (C55, C57) is reasonable given the experimental data but remains speculative. The deletion experiment (C61) and binding data support DNA involvement, but the specific molecular mechanism is not directly demonstrated. Alternative explanations (steric hindrance, chromatin accessibility changes) are not fully excluded. Claims C59 and C60 about DNA structural features are highly speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "Up-regulation of inflammatory response genes (A2m, Gfap) may be due to retinal scaffold collapse caused by Rho depletion rather than direct ZF6-DB effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This interpretation (C38) is speculative and not directly tested. While the correlation between Rho depletion and inflammatory gene expression is observed, causality is not established. Alternative explanations (AAV-mediated inflammation, direct off-target effects) are not ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "The porcine retina shares 19 out of 20 DNA base pairs with the human genomic ZF6-cis sequence, making it a suitable model for testing ZF6-DB function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Sequence alignment data (Figure 1\u2014figure supplement 1a) and citation support this claim. The single base pair difference is clearly shown and does not appear to affect ZF6-DB binding or function based on the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Immunofluorescence and FACS analysis show that ZF6-DB treatment causes outer segment collapse with retention of photoreceptor nuclei, and that transduction efficiency is similar between single vector (17.3%) and dual vector (22.4%) approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The immunofluorescence data (C69, C70) clearly show the described phenotype with appropriate co-localization markers. FACS data (C71, C72) provide quantitative transduction efficiency. However, these are primarily descriptive observations supporting the main findings rather than independent results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Modified RHO promoter constructs (RHO-short and RHO-s-\u0394ZF6) show reduced expression compared to full-length promoter, but maintain rod-specific expression. The DBR-R construct shows rod-specific transduction 2 months post-delivery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "qPCR (C79), histology (C80), and immunofluorescence (C81) data support these technical observations about promoter optimization for the DBR-R construct. These are methodological details supporting the therapeutic approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background on transcription factor structure and function: TFs operate through modular DNA-binding domains and effector domains; engineered TFs mimic this design with synthetic DBDs for specificity and selected EDs for activation/repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established concepts in the field, appropriately cited (Brent 1985, Kadonaga 2004, Malik and Roeder 2010, etc.). They provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C18"
+    ],
+    "result": "Background on the therapeutic target: RHO gain-of-function mutations are the most common cause of autosomal dominant retinitis pigmentosa, an incurable form of blindness. Prior work showed ZF6-KRAB effectively represses human RHO transgene in an adRP mouse model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established facts about the disease (C15, C16, cited to Dryja et al. 1990) and prior work by the authors (C18, cited to Mussolino et al. 2011a). They provide rationale for the study but are not new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C62",
+      "C66"
+    ],
+    "result": "Conceptual framework and therapeutic implications: The authors propose DNA structural features may contribute to transcriptional output, and that ZF6-DB represents a noise-resistant synthetic protein approach for treating gain-of-function mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are largely speculative interpretations (C59, C60) and forward-looking statements (C62, C66) about the therapeutic potential. While the experimental data support some aspects, the mechanistic model remains unproven and the therapeutic efficacy is acknowledged as suboptimal (C65).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "ZF6-KRAB delivery resulted in up-regulation of 10 inflammatory response genes and down-regulation of 7 phototransduction genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is supported by pathway analysis (Figure 2\u2014figure supplement 1a) and provides context for comparing ZF6-DB and ZF6-KRAB effects. It is a descriptive finding supporting the main conclusion about ZF6-DB specificity.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,209 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Nucleosomes assembled on the artificial 601 sequence inhibit Cas9 cleavage in a position-dependent manner. Cleavage at flanking DNA is comparable to naked DNA, entry/exit sites show ~23-28x inhibition, and dyad sites show ~1000x inhibition. This pattern correlates with nucleosome breathing dynamics, suggesting Cas9 accesses DNA during transient unwrapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 provide quantitative experimental data from Figure 1 showing position-dependent inhibition. Claims C14-C16 connect this to the established mechanism of nucleosome breathing, with appropriate citations. The interpretation that Cas9 acts on transiently unwrapped DNA is well-supported by the correlation between breathing thermodynamics and cleavage rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "dCas9 cannot stably bind to PAM sites within nucleosomes. Gel shift assays show robust binding to naked DNA but undetectable binding to 601 0/0 nucleosomes, with absence of super-shift patterns indicating PAMs on nucleosomes are inaccessible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 are supported by experimental data in Figure 1\u2014figure supplement 1B showing clear differences between DNA and nucleosome binding. The interpretation is consistent with cited work (Hinz et al., 2015) and provides mechanistic insight into where nucleosomes block Cas9 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Nucleosomes assembled on the native 5S sequence are substantially more permissive to Cas9 cleavage than 601 nucleosomes. At entry/exit sites, 5S nucleosomes show 700-fold enhancement over 601 (only 1.5-fold slower than naked DNA vs. 1000-fold for 601). This difference is attributed to ~100-fold greater DNA breathing in 5S nucleosomes, supporting the model that Cas9 accesses nucleosomal DNA during transient unwrapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 provide strong quantitative data from Figure 2 comparing 5S and 601 nucleosomes. The 700-fold difference at entry sites is dramatic and well-documented. Claims C27-C28 and C37-C40 appropriately connect this to the established ~100-fold difference in breathing dynamics (C22, C38), providing a mechanistic explanation. The correlation between breathing rates and cleavage rates strongly supports the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C57",
+      "C58",
+      "C59",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The ISWI-family remodeler SNF2h enhances Cas9 cleavage on nucleosomes by sliding nucleosomes toward the DNA center. SNF2h treatment of 601 80/0 nucleosomes increases Cas9 cleavage to ~34-40% of naked DNA rates, whether remodeling and cleavage are performed sequentially or simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 and C58-C65 are well-supported by experimental data in Figure 3A-D and Figure 3\u2014figure supplement 2. The nucleosome sliding activity is documented (C29, C59) and the enhancement of Cas9 cleavage is quantified consistently across different experimental designs. The mechanism is clear and the data are reproducible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C56",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The SWI/SNF-family remodeler RSC enhances Cas9 cleavage through nucleosome destabilization and repositioning toward DNA ends. RSC treatment increases Cas9 cleavage to ~63% of naked DNA rates at entry sites, demonstrating that different classes of remodelers can facilitate Cas9 access through distinct mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C61-C62 are supported by experimental data in Figure 3E-H. Claim C56 provides established knowledge about RSC's multiple activities. Claims C60-C61 document RSC's distinct repositioning bias (Figure 3\u2014figure supplement 3). The data clearly show RSC enhances Cas9 activity despite using different mechanisms than SNF2h.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C35",
+      "C42",
+      "C43"
+    ],
+    "result": "Chromatin remodeling enzymes from two different classes (ISWI and SWI/SNF) significantly enhance Cas9 access to nucleosomal DNA through distinct mechanisms, demonstrating that chromatin remodeling plays a critical role in regulating Cas9 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C32, C35, C42, and C43 synthesize the remodeling results. The experimental data with both SNF2h and RSC (Figure 3) clearly demonstrate enhancement through different mechanisms. This is a well-supported conclusion based on the comprehensive remodeling experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "The intrinsic stability of histone-DNA interactions and the location of target sites within nucleosomes (nucleosome positioning) play critical roles in regulating Cas9 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are summary conclusions supported by the comprehensive experimental data: position-dependent inhibition on 601 nucleosomes (C11-C13), dramatic differences between 5S and 601 nucleosomes (C23-C26), and the correlation with breathing dynamics. These conclusions are well-justified by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C39",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The combination of spontaneous nucleosomal DNA breathing and chromatin remodeling allows Cas9 to effectively access chromatin in vivo. In vivo, most nucleosomes are not on strong positioning sequences and may be permissive to Cas9, with remodeling providing additional access at less favorable sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C5, C39, C44-C46 extrapolate from in vitro biochemical data to in vivo function. While the biochemical mechanisms are well-established, the claims about in vivo effectiveness are inferences not directly tested. The model is reasonable and consistent with the data, but lacks direct in vivo validation. Claims C44 and C46 are explicitly speculative (\"may be permissive,\" \"we hypothesize\").",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "Cas9 recognizes DNA through a two-step process: PAM binding followed by DNA melting and sgRNA annealing, with complete 20-nt guide annealing required for the conformational change that authorizes cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 describe established Cas9 mechanism supported by appropriate citations (Sternberg et al., 2014, 2015; Jiang et al., 2015; Josephs et al., 2016). This is background knowledge correctly cited and illustrated in Figure 1\u2014figure supplement 1A.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background on chromatin structure and function: bacterial DNA organization differs from eukaryotic chromatin, nucleosomes generally inhibit DNA binding factors, ATP-dependent remodelers regulate factor access, and the 601 sequence is an artificial high-affinity positioning sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C10 present established background knowledge with appropriate citations. These are well-accepted facts in the field that provide context for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C36"
+    ],
+    "result": "CRISPR-Cas9 has become a versatile tool for genome editing in eukaryotes, and recent work with 601 nucleosomes has shown nucleosomes are refractory to Cas9 action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C36 accurately describe the state of the field with appropriate citations. C1 describes the widespread adoption of CRISPR-Cas9, and C36 correctly cites recent parallel work (Hinz et al., 2015; Horlbeck et al., 2016).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C49",
+      "C51",
+      "C52"
+    ],
+    "result": "CRISPR-Cas9 applications have focused on actively transcribed regions with high remodeling rates. Cas9 favors euchromatin but is not excluded from heterochromatin. Nucleosome phasing at the +1 nucleosome strongly affects dCas9 binding for transcriptional regulation but less so for genome editing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C49, C51-C52 discuss in vivo observations and parallel studies with appropriate citations. C49 cites single-molecule imaging (Knight et al., 2015), and C52 cites parallel high-resolution studies (Horlbeck et al., 2016; Smith et al., 2016). These contextual claims are well-supported by cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C50",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Potential strategies to improve CRISPR-Cas9 activity include: targeting during cell cycle phases when chromatin is accessible, considering nucleosome positioning in sgRNA design using available maps, and using chromatin decondensation drugs. Nucleosome phasing may particularly impact dCas9 applications requiring stable binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48, C50, C53-C55 are speculative suggestions for future applications. C48 is explicitly speculative (\"conceivable\"). C50 and C53 are inferences from the data. C54-C55 suggest strategies with citations but without experimental validation. These are reasonable proposals but lack direct experimental support in this manuscript.",
+    "result_type": "MINOR"
+  }
+]

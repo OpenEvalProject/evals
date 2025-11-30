@@ -1,0 +1,385 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "TGM2 was identified as a tumor suppressor that inhibits oncogenic transformation of HMECs, BJ human fibroblasts, and NIH 3T3 mouse fibroblasts. Knockdown of TGM2 with independent shRNAs produced colonies in soft agar, and the number of colonies correlated with knockdown efficiency. TGM2 restoration at physiological levels suppressed colony formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C21-C26 provide converging evidence from multiple cell types (HMECs, BJ fibroblasts, NIH 3T3) using independent shRNAs, dose-response correlation, and rescue experiments. The use of multiple independent shRNAs (C21) and rescue with shRNA-resistant cDNA (C23) effectively control for off-target effects. The consistency across different cell types (C24-C26) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "TGM2 expression is regulated by TP53. TGM2 knockdown did not affect TP53 expression or activity, indicating TGM2 is not an upstream regulator of TP53. Conversely, TP53 knockdown reduced TGM2 expression, and TP53 reconstitution restored TGM2 expression in multiple cell types including HMECs, BJ cells, and MEFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 establish the regulatory relationship through bidirectional experiments: TGM2 depletion does not affect TP53 (C27-C28), while TP53 depletion reduces TGM2 (C29, C31-C32), and TP53 rescue restores TGM2 (C30). The consistency across multiple cell types (C31-C32) and the use of rescue experiments (C30) provide strong evidence for TP53-dependent regulation of TGM2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "TGM2 is a potential direct transcriptional target of TP53. TGM2 expression was increased by Nutlin-3a treatment in a TP53-dependent manner. An 82 bp element from -159 to -78 of the TGM2 promoter, which lacks a canonical TP53 binding consensus, was necessary and sufficient for TP53-mediated transactivation and was specifically immunoprecipitated with endogenous TP53.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 provide multiple lines of evidence: pharmacological TP53 activation (C34), luciferase reporter assays identifying a minimal responsive element (C35), and ChIP demonstrating direct TP53 binding (C36). However, the lack of a canonical TP53 binding consensus (C35, C37) suggests this may be an indirect or non-canonical interaction, which warrants further investigation of the mechanism. The evidence supports TP53-dependent regulation but the 'direct' nature remains somewhat uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Depletion of growth supplements induces TP53-dependent autophagy in HMECs. About 80% of TP53+/+ cells showed red punctae indicative of autophagy, compared to only 40% in TP53-/- cells. TP53 knockdown or knockout cells displayed decreased LC3-I and LC3-II levels and minimal LC3-II accumulation upon chloroquine treatment, indicating reduced autophagic flux.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 use complementary approaches: RFP-GFP-LC3 imaging (C38-C40) and LC3 Western blotting with chloroquine treatment (C42-C43). The consistency between TP53 knockout and knockdown approaches (C39-C40, C43) strengthens the conclusion. The quantitative differences (80% vs 40% in C38-C39) and the chloroquine flux assay (C42-C43) provide robust evidence for TP53-dependent autophagy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "TGM2 is induced by depletion of growth supplements in a TP53-dependent manner. Growth supplement removal increased TGM2 protein and mRNA levels in TP53 wild-type cells but not in TP53 knockout or knockdown cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 demonstrate TP53-dependent TGM2 induction using both protein and mRNA measurements (C44-C45) in multiple TP53-deficient contexts (knockout clones and shRNA). The consistency across different TP53 loss-of-function approaches strengthens the conclusion that TGM2 induction requires TP53.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "TGM2 promotes autophagic protein degradation and autolysosome clearance. TGM2 knockdown did not prevent autophagosome-lysosome fusion but caused two-fold enlargement of autolysosomes, increased LC3-II/LC3-I ratio without chloroquine, accumulation of SQSTM1, and enlarged vesicles with undigested protein by electron microscopy, without altering lysosomal acidity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C57 provide comprehensive characterization using multiple complementary techniques: confocal microscopy (C47-C49), Western blotting for LC3 and SQSTM1 (C50-C53), electron microscopy (C54), and Lysotracker staining (C55). The convergence of evidence from independent methods strongly supports the conclusion that TGM2 functions in late-stage autophagy (protein degradation and clearance) rather than early stages (autophagosome formation or fusion). The use of independent shRNAs (C51) controls for off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "CDKN1A and TGM2 provide complementary contributions to tumor suppression in the TP53 pathway. Simultaneous knockdown of TGM2 and CDKN1A produced significantly more colonies than knockdown of either gene individually. Double knockdown of CDKN1A/TGM2#1 produced more colonies than TP53 knockdown alone, while CDKN1A and TP53 knockdown together was similar to TP53 knockdown alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 demonstrate synergy through systematic double knockdown experiments with appropriate controls. The epistasis analysis (C60) showing CDKN1A/TP53 knockdown equals TP53 alone supports pathway placement. However, C59 showing CDKN1A/TGM2#1 exceeding TP53 knockdown is explained by residual TGM2 expression in TP53 knockdown cells (acknowledged in the manuscript), which is a technical limitation but does not invalidate the synergy conclusion. The use of two independent TGM2 shRNAs with different efficiencies (C58-C59) provides internal consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Loss of both TGM2 and CDKN1A expression allows HMECs to overcome TP53-dependent tumor suppression in vivo. HMECTERT/ST/RasV12 cells with simultaneous TGM2 and CDKN1A knockdown formed tumors in 6/6 NOD/SCID mice after 4 weeks, while single knockdowns showed reduced penetrance (2/6) and increased latency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 extend the in vitro findings (C58-C62) to an in vivo xenograft model. The tumor formation data (6/6 for double knockdown vs 2/6 for single knockdowns) demonstrate biological significance. However, the sample size (n=6 per group) is modest, and no statistical analysis is provided. The consistency with in vitro soft agar results strengthens the conclusion, but larger cohorts would provide more robust evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Inhibition of autophagy through knockdown of core autophagy genes (ATG12, ATG5, BECN1) synergizes with loss of CDKN1A to promote transformation in HMECs. Knockdown of ATG12, ATG5, or BECN1 alone increased colony formation, and simultaneous knockdown with CDKN1A led to substantially more colonies than either alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 test the hypothesis that TGM2 functions through autophagy by examining core autophagy genes. The synergy between autophagy gene knockdown and CDKN1A knockdown (C67, C69) parallels the TGM2/CDKN1A synergy (C58), supporting the model. The use of multiple independent autophagy genes (ATG12, ATG5, BECN1) and multiple independent shRNAs strengthens the conclusion. However, the observation that ATG12 knockdown elevates CDKN1A protein (mentioned in text) complicates interpretation and may explain why ATG12 knockdown alone produces fewer colonies than TGM2 knockdown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Knockdown of TGM2 promotes colony formation possibly by inhibiting autophagy. Simultaneous knockdown of TGM2 with ATG12, ATG5, or BECN1 did not produce additional colonies compared to TGM2 knockdown alone, suggesting TGM2 and these autophagy genes function in the same pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 provide epistasis analysis showing lack of additivity between TGM2 and core autophagy genes, supporting the conclusion that TGM2 functions through autophagy. The use of multiple autophagy genes (ATG12, ATG5, BECN1) strengthens this conclusion. However, the claim uses cautious language ('possibly') which is appropriate given that TGM2 may have additional non-autophagic functions. The epistasis data strongly support autophagy as a major mechanism but do not exclude other functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The GTPase activity of TGM2 is more important than its crosslinking activity for promoting autophagic protein degradation. Treatment with LDN 27219 (GTPase inhibitor) but not Z-DON (crosslinking inhibitor) led to significant SQSTM1 accumulation and dramatic increases in LC3-II levels and LC3-II/LC3-I ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 use pharmacological inhibitors to dissect TGM2 enzymatic activities. The differential effects of LDN 27219 vs Z-DON on SQSTM1 and LC3-II (C75-C76) support the conclusion. However, the partial effect of Z-DON on LC3-II (C76) suggests some contribution of crosslinking activity. The conclusion would be strengthened by dose-response curves and verification of inhibitor specificity. The claim appropriately states GTPase is 'more important' rather than exclusively required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The GTPase activity of TGM2 is required to suppress cell transformation. Wild-type TGM2 suppressed colony formation in TGM2 knockdown cells, but the GTP binding site mutant (R580A) completely ablated this effect, while the transamidation site mutant (C277S) showed only slightly reduced suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 use structure-function analysis with point mutants to confirm the pharmacological findings (C75-C77). The complete loss of function with R580A and minimal effect with C277S (C79) strongly support the importance of GTPase activity. The rescue experiment design (C78) with shRNA-resistant cDNA is appropriate. However, the 'slightly reduced' effect of C277S suggests some contribution of transamidation activity that should not be completely dismissed. The convergence of pharmacological (C75-C77) and genetic (C78-C80) evidence strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "A soft agar screening system was developed where HMECTERT/ST/ER-RasV12 cells require loss of TP53 activity for transformation. Under stringent conditions (4-OHT only for 3 days), cells produced significantly fewer colonies, but TP53 knockdown substantially increased colony formation. 122 candidate genes with lower expression in TP53 wild-type tumors were selected for screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 describe the experimental system and candidate selection strategy. The development of TP53-dependent transformation conditions (C18-C19) is well-supported by the data. The bioinformatic candidate selection (C20) using chi-square analysis on a breast cancer dataset (GSE3494) is methodologically sound. This provides the foundation for the screen that identified TGM2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background claims establishing the role of TP53 in tumor suppression, its target genes including CDKN1A, the requirement for TP53 inactivation in transformation, and the characteristics of the HMEC model system used in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 are background claims supported by appropriate citations to established literature. These provide context for the study but do not represent new findings. The citations appear appropriate and the claims accurately represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Cell cycle arrest mediated by CDKN1A and autophagy mediated by TGM2 are two critical TP53-dependent tumor suppressive barriers. Knockdown of core autophagy genes synergized with CDKN1A loss but not TGM2 loss, and inhibition of TGM2 GTPase activity prevents both autophagic protein degradation and colony formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C111-C114 synthesize the major findings into an integrated model. The evidence from epistasis experiments (C112), pharmacological and genetic inhibition of TGM2 GTPase activity (C113), and the synergy between TGM2/CDKN1A (C111) collectively support this model. This represents the central conclusion of the paper, integrating multiple lines of evidence from the preceding results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The role of TGM2 in cancer is complex and context-dependent. TGM2 has been reported to have both tumor suppressive functions (inducing apoptosis/differentiation, inhibiting angiogenesis, epigenetic silencing in some tumors) and tumor promoting functions (overexpression in other tumors, upregulation by oncogenic pathways).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 are discussion points supported by appropriate citations reviewing the literature on TGM2 in cancer. These contextualize the current findings within the broader field and acknowledge the complexity of TGM2 function. The inference that TGM2 role is context-dependent (C86) is reasonable given the conflicting reports in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The TGM2 promoter contains a non-canonical TP53 binding site. About 10% of validated TP53 responsive elements lack canonical consensus sequences. The kinetics of TGM2 induction differ between cell types (24 hr in H1299 reporter assay vs 48 hr in HMECs/BJ cells), possibly reflecting differences in epigenetics, co-factors, or TP53 modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 discuss the non-canonical nature of the TP53 binding site in the TGM2 promoter. C87 is supported by citation, C88 is a reasonable inference from C35-C37, C89 is supported by experimental data, and C90 is speculative but reasonable. The discussion appropriately acknowledges the complexity and uncertainty around the mechanism of TP53-mediated TGM2 regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "TGM2 has two well-established enzymatic activities (transamidation and GTPase), which have been implicated in different cellular functions in various contexts. The current data suggest the GTPase function is required for autophagy and transformation suppression in HMECs, and the predominant activity may determine tumor suppressive vs promoting function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 discuss TGM2 enzymatic activities. C91-C92 are supported by citations to prior work, C93 is supported by the current data (C75-C80), C94 is supported by citation, and C95 is a reasonable inference integrating prior work with current findings. This discussion appropriately contextualizes the structure-function findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The role of autophagy in cancer is complex and stage-dependent, with tumor suppressive roles in early stages and tumor promoting roles in established tumors. TGM2 promotes autophagy and prevents early transformation in HMECs by enhancing autophagic protein degradation and autolysosome clearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C103 discuss the dual role of autophagy in cancer. C96-C99 are supported by citations to established literature, C100-C101 are supported by the current data (C47-C57), C102 is supported by citation to prior work on TGM2, and C103 is a reasonable synthesis. This discussion appropriately places the findings in the context of autophagy's complex role in cancer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "While TGM2-mediated autophagy suppresses early transformation, TGM2's autophagic function may promote tumor progression in established tumors under nutrient stress. TGM2 has also been reported to stimulate EMT and remodel extracellular matrix, supporting a role in later stages of tumorigenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C105 are speculative (C104 explicitly noted as speculation) about potential dual roles of TGM2 in different stages of tumorigenesis. C105 is supported by citation. While these are reasonable hypotheses based on the dual role of autophagy in cancer, they are not directly tested in this study. The speculation is appropriately qualified and represents reasonable future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "TP53 has diverse roles in autophagy that are context-dependent. Nuclear TP53 promotes autophagy through many target genes, while cytoplasmic and mutant TP53 inhibit autophagy. In the current HMEC model, TP53 promotes autophagic flux and autophagosome formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 discuss TP53's complex role in autophagy. C106-C108 are supported by citations to established literature, C109 is a reasonable inference from the complexity, and C110 is supported by the current data (C38-C43). This discussion appropriately acknowledges that TP53's role in autophagy must be determined in each specific context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Technical considerations in interpreting RNAi experiments: incomplete knockdown can lead to synergistic effects even for genes in the same pathway. The combined knockdown of TP53 and TGM2 produced more colonies than TP53 alone, which may reflect incomplete TGM2 knockdown by TP53 shRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 acknowledge technical limitations of RNAi experiments. C115 reflects general knowledge about RNAi limitations, and C116 is supported by experimental data. This discussion appropriately addresses a potential concern about the interpretation of the double knockdown experiments and provides a reasonable explanation for the observation in C59.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Recent evidence challenges the traditional view of TP53-mediated tumor suppression and highlights non-canonical functions like autophagy. The current work shows TGM2 is a TP53 target that suppresses transformation through autophagy, collaborating with CDKN1A-mediated cell cycle arrest. These findings are consistent with recent reports that autophagy is part of the TP53 tumor suppressive response in early tumorigenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 synthesize the findings in the context of evolving understanding of TP53 function. C117 and C120 are supported by citations, while C118-C119 summarize the current findings. This appropriately positions the work as contributing to a shift in understanding TP53's tumor suppressive mechanisms beyond the canonical cell cycle arrest/apoptosis functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Inhibition of autophagy as a cancer therapeutic strategy may have unintended tumorigenic effects in cases where autophagy is part of the early tumor suppressive response. Weakening the TP53-dependent barrier by inhibiting autophagy may allow early lesions to progress to more aggressive disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 discuss therapeutic implications. C121 and C123 are inferences from the tumor suppressive role of autophagy demonstrated in this study, while C122 is supported by citation and inference. These are reasonable cautionary notes about autophagy inhibition therapy, appropriately qualified as context-dependent concerns. The logic is sound: if autophagy suppresses early transformation, inhibiting it could promote tumor development.",
+    "result_type": "MINOR"
+  }
+]

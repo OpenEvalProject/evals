@@ -1,0 +1,320 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C88",
+      "C89",
+      "C90",
+      "C104",
+      "C105",
+      "C118",
+      "C119"
+    ],
+    "result": "Dystrophin exists as a freely diffusing cytoplasmic pool in zebrafish muscle fibers. The diffusion constant for human Dystrophin-GFP (huDysGFP) averaged 4.4 \u03bcm\u00b2/s (range 1.4-10.1 \u03bcm\u00b2/s), zebrafish Dystrophin-GFP (zfDysGFP) averaged 2.9 \u03bcm\u00b2/s (range 0.6-6.7 \u03bcm\u00b2/s), and endogenous zebrafish Dystrophin-Citrine (zfDysCitrine) averaged 2.2 \u03bcm\u00b2/s (range 0.9-4.3 \u03bcm\u00b2/s). These values are approximately one-fourth that of GFP alone (13.2 \u03bcm\u00b2/s), and show significant cell-to-cell variability but consistency within individual cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C52-C62, C88-C90, C104-C105, C118-C119 collectively demonstrate free diffusion of Dystrophin in the cytoplasm through FRAP experiments with appropriate controls (GFP). The measured diffusion constants are validated against published values for muscle cells (C53), and the methodology accounts for bleaching during imaging and diffusion during bleaching. The finding of cell-to-cell variability with within-cell consistency (C57-C61) is well-supported by paired experiments showing high correlation (R=0.9813). The observation holds across multiple experimental conditions (exogenous and endogenous Dystrophin).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C64",
+      "C65",
+      "C66",
+      "C84",
+      "C92",
+      "C106",
+      "C129",
+      "C130"
+    ],
+    "result": "An immobile, stably-bound pool of Dystrophin exists at muscle fiber tips. This pool shows three characteristic signatures: (1) only partial recovery in bleached tip regions independent of cytoplasmic intensity, (2) normalized intensity difference between unbleached and bleached tip regions reaches a plateau above zero, and (3) larger intensity drops in unbleached tips compared to cytoplasm during imaging. This immobile pool is found consistently across human and zebrafish Dystrophin in both wild-type and dystrophin-null backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C64-C66, C84, C92, C106, C129-C130 provide converging evidence for an immobile Dystrophin pool through multiple independent FRAP signatures. The three signatures are clearly defined and consistently observed across different experimental conditions (C84, C92, C106). The methodology appropriately controls for bleaching-due-to-imaging by comparing unbleached tip regions with cytoplasm that receive identical imaging exposure (C65). The finding is robust across species and genetic backgrounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C75",
+      "C85",
+      "C98",
+      "C99",
+      "C108",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "A dynamic, mobile-bound pool of Dystrophin exists at fiber tips with rapid turnover (sub-second to few seconds). This pool shows recovery faster than expected from cytoplasmic diffusion alone, with at least 50% of recovery occurring within 10 seconds in most cases. The mobile-bound pool is found even in fibers with undetectably low cytoplasmic Dystrophin levels, indicating it occurs independently of overexpression. Dark-state effects contribute less than 1% to recovery, and no evidence of lateral diffusion of bound Dystrophin was found.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C70-C73, C75, C85, C98-C99, C108, C127-C129 demonstrate a mobile-bound Dystrophin pool through careful analysis that excludes alternative explanations. The rapid recovery (C72, C85, C99, C108) is faster than can be explained by cytoplasmic diffusion (C71) or dark-state effects (C70). The absence of lateral diffusion gradients (C74-C75) supports exchange with the cytoplasmic pool rather than membrane mobility. The finding in cells with very low cytoplasmic levels (C127-C128) rules out overexpression artifacts. The methodology appropriately compares unbleached tip and cytoplasm recovery to estimate the contribution of diffusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C11",
+      "C12",
+      "C13",
+      "C86",
+      "C87",
+      "C93",
+      "C95",
+      "C96",
+      "C97",
+      "C100",
+      "C101",
+      "C107",
+      "C109",
+      "C110"
+    ],
+    "result": "The three Dystrophin populations (cytoplasmic, mobile-bound, and immobile-bound) are found consistently across multiple experimental conditions: human and zebrafish Dystrophin, wild-type and dystrophin-null (dmdta222a/ta222a) backgrounds, overexpressed and endogenously-driven expression. Two-way ANOVA analysis showed a significant effect of Dystrophin origin (human vs zebrafish) on immobile fraction (p=0.0012) but no effect of host genotype and no interaction between origin and genotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13, C86-C87, C93, C95-C97, C100-C101, C107, C109-C110 demonstrate the robustness of the three-pool model across diverse experimental conditions. The statistical analysis (C95-C97) appropriately uses two-way ANOVA to test for effects of genotype and species origin. The consistency across wild-type and dystrophin-null backgrounds (C86-C87) rules out competition with endogenous protein as an explanation for the mobile-bound pool. The finding in endogenously-driven zfDysCitrine (C13, C107, C109) addresses concerns about overexpression artifacts. Minor differences between human and zebrafish Dystrophin (C94-C95) do not affect the overall conclusion about three populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C40",
+      "C41",
+      "C42",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Human Dystrophin localizes in zebrafish skeletal muscle similarly to zebrafish Dystrophin at both mRNA and protein levels. GFP-tagged Dystrophin shows equivalent localization to untagged Dystrophin and endogenous Dystrophin. Both human and zebrafish Dystrophin rescue the dystrophic phenotype in dmdta222a/ta222a embryos. Tag position (C-terminal GFP vs internal Citrine) does not affect Dystrophin dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35, C40-C42, C113-C117 validate the zebrafish model system through multiple lines of evidence: immunofluorescence showing co-localization (C32, C34-C35), in situ hybridization showing mRNA localization (C40), and functional rescue experiments (C76-C80, C91, C116). The comparison of tagged and untagged Dystrophin (C41) and different tag positions (C115) addresses concerns about artifacts from fluorescent tags. The rescue experiments provide functional validation that the tagged proteins are biologically active. This validation is essential for interpreting the FRAP dynamics data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C67",
+      "C68",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "In most muscle fibers, the majority of Dystrophin is in the cytoplasm with only a minority at the tips, despite higher concentration at tips. Cytoplasmic fluorescence increases with total Dystrophin levels, while tip fluorescence does not, indicating saturable binding sites at tips. In dystrophin-null embryos, the tips:cytoplasm intensity ratio is 2.5-fold higher than in wild-type, suggesting that overexpressed human Dystrophin does not displace all endogenous zebrafish Dystrophin in wild-type background.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C51, C67-C68, C81-C83 provide quantitative analysis of Dystrophin distribution using integrated density measurements. The finding that tip fluorescence saturates while cytoplasmic fluorescence increases linearly (C44-C45) is strong evidence for limited binding sites. The 2.5-fold increase in tips:cytoplasm ratio in dystrophin-null background (C81-C82) provides additional evidence for competition with endogenous protein in wild-type. The analysis appropriately accounts for the volume difference between tips and cytoplasm. This characterization is important for interpreting the FRAP data in the context of overexpression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C91"
+    ],
+    "result": "Human and zebrafish Dystrophin efficiently rescue the dystrophic phenotype in dmdta222a/ta222a zebrafish embryos. At 3 days post-fertilization, nearly all dmdta222a/ta222a embryos show dystrophy, and 23% of GFP-positive control fibers detached. In contrast, 0% of huDysGFP-expressing fibers (0/56) and zfDysGFP-expressing fibers (32/32) detached, indicating full rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80, C91 demonstrate functional rescue through quantitative analysis of fiber detachment. The use of GFP control (C78) provides an appropriate negative control showing that injection and expression per se do not rescue. The statistical significance (p=0.000126 for huDysGFP vs GFP; p=0.003 for zfDysGFP) supports the conclusion. The complete rescue (0% detachment) for both human and zebrafish Dystrophin validates their functional equivalence in this system. This functional validation is critical for the biological interpretation of the dynamics data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "huDysGFP was generally less bright than GFP alone but was more readily detected in muscle than non-muscle tissue, suggesting that binding and stabilization at the membrane differ between tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by quantitative fluorescence measurements (Figure 2A-B) showing statistically significant differences (p<0.0001 for brightness, p=0.0032 for tissue distribution). The inference that tissue-specific differences reflect differential binding/stabilization (C39) is reasonable given the known biology of Dystrophin. However, alternative explanations (e.g., tissue-specific degradation, translation efficiency) are not fully excluded. The finding supports the use of muscle tissue for the dynamics studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Endogenous zebrafish Dystrophin-Citrine shows detectable cytoplasmic diffusion. Very low cytoplasmic zfDysCitrine intensity could be bleached and showed recovery, indicating presence of diffusible protein. Dark-state contribution to recovery was minimal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 demonstrate cytoplasmic diffusion of endogenous Dystrophin through FRAP experiments with appropriate controls (Citrine-negative siblings showing flat curves). The dark-state control (C103) addresses a potential artifact. This finding is important because it shows that the cytoplasmic pool is not solely an overexpression artifact. However, the signal is very low, making quantification challenging. The recovery curves and Gaussian profiles (C104) provide additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The expression constructs lack Dystrophin 5'- and 3'-UTR regions, yet mRNA still localizes to fiber tips. This indicates that UTR regions are dispensable for tip localization, and specific RNA transport requiring UTRs is unlikely to account for the observed mRNA distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C140 are supported by the construct design (C138) and in situ hybridization data (C40). The inference that UTRs are dispensable (C139) is valid given the observed localization without UTRs. The conclusion that specific RNA transport is unlikely (C140) is reasonable and supported by citations to RNA transport reviews. However, alternative mechanisms for mRNA localization (e.g., anchorage by nascent protein chains) are speculative. This finding contributes to understanding Dystrophin localization mechanisms but is not central to the main dynamics findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The new FRAP analysis methods developed overcome low signal-to-noise ratios, account for diffusion during bleaching and bleaching during imaging, and reveal that pooling results from different cells can mask cell-to-cell variability. The methodology is implemented in open-source software.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C143 describe methodological advances that are validated by the successful application to in vivo FRAP analysis. The modeling approach accounts for known artifacts (diffusion during bleaching, bleaching during imaging) that would otherwise introduce errors. The finding of significant cell-to-cell variability with within-cell consistency (C57-C61) demonstrates the importance of avoiding pooling. The validation against published GFP diffusion constants (C53) supports the accuracy of the approach. The availability of software enhances reproducibility. These methodological contributions have broad applicability beyond Dystrophin studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background information on Dystrophin function, muscular dystrophy, and zebrafish as a model system. Dystrophin links sarcolemma and cytoskeleton; mutations cause DMD/BMD. Zebrafish Dystrophin is well-studied and homologous to human Dystrophin. Both species show developmental progression of Dystrophin localization from cytoplasm to membrane. Dystrophin half-life is believed to be very long.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C14-C31 represent established knowledge supported by appropriate citations to previous research. These claims provide essential context for the study but are not novel findings. The citations appear appropriate and the statements are consistent with the scientific literature on Dystrophin and muscular dystrophy. This background information justifies the choice of zebrafish as a model system and the focus on developmental stages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The stable-bound Dystrophin pool is consistent with its known function in sustaining mechanical stability during muscle contraction. The mobile-bound pool represents a new aspect of Dystrophin biology. The immobile pool can transmit significant forces (10 pN/molecule for 1 s), while the mobile pool presumably cannot. Weak binding may allow response to weak forces or fulfill other functions such as assembly, sensing, or signaling. Analogies are drawn to ezrin, which shows similar immobile and mobile membrane-bound forms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C137 represent interpretation and speculation about the functional significance of the findings. The connection between the stable pool and mechanical function (C111) is well-supported by citations and known biology. However, the functional implications of the mobile-bound pool (C112, C132-C133) are largely speculative. The force transmission estimates (C131) are inferred from stability and supported by one citation but not directly measured. The analogy to ezrin (C134-C136) is interesting but does not constitute direct evidence for Dystrophin. The speculation about tension-dependent regulation (C137) is reasonable but untested. These interpretations are plausible but require further experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The measured diffusion constant for Dystrophin (approximately one-quarter that of GFP) is surprisingly high given Dystrophin's large size (~100 nm rod vs 3\u00d73\u00d74 nm globular GFP). Possible explanations include active diffusion due to energy-using cellular processes or a compact rapidly diffusing Dystrophin conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C122 identify an interesting discrepancy between expected and observed diffusion rates. The observation (C120) is valid given the size difference and measured diffusion constants. However, the proposed explanations (C121-C122) are speculative. Active diffusion (C121) is supported by citations to previous work but not directly tested here. The compact conformation hypothesis (C122) is acknowledged as speculative given the lack of full-length Dystrophin structure. Additional experiments (e.g., testing ATP dependence, structural studies) would be needed to distinguish between these possibilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Cytoplasmic Dystrophin has been observed in human embryos/fetuses, adult heart, regenerating fibers, and differentiating muscle cultures, where it may recapitulate embryonic deposition patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C126 are supported by appropriate citations to previous research. These observations from the literature provide important context for the finding of cytoplasmic Dystrophin in zebrafish embryos, suggesting it is not solely an artifact of the experimental system. The suggestion that regenerating muscle recapitulates embryonic patterns is from cited work. This contextualizes the current findings within the broader Dystrophin literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The study reveals complex Dystrophin dynamics in maturing muscle cells in vivo for the first time, including important cell-to-cell variations likely reflecting fiber maturation. Developmental state and genetic background are expected to influence Dystrophin stability, which could be clinically important. Unstable binding or shortage of specific pools may affect turnover and muscle performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C145 accurately summarize the novel findings of the study. The observation of cell-to-cell variability is well-supported by the data (C57-C61). The interpretation that this reflects maturation (C145) is reasonable but not definitively proven. The speculation about clinical implications (C146-C147) is plausible given the findings but represents future directions rather than demonstrated results. These claims appropriately frame the significance of the work while acknowledging uncertainties.",
+    "result_type": "MAJOR"
+  }
+]

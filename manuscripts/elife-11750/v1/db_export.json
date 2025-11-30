@@ -1,0 +1,2035 @@
+{
+  "submission": {
+    "id": "72d239f1-2f4c-4b58-be96-167d9d3b0cbc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:06:24.150746Z",
+    "updated_at": "2025-11-29T22:06:24.150746Z"
+  },
+  "content": [
+    {
+      "id": "dec53dba-406e-4088-a928-305599e37a92",
+      "submission_id": "72d239f1-2f4c-4b58-be96-167d9d3b0cbc",
+      "content_type": "manuscript",
+      "content_text": "# The cation channel TRPA1 tunes mosquito thermotaxis to host temperatures\n\n## Authors\n\n- Rom\u00e1n A Corfas<sup>1</sup>\n- Leslie B Vosshall<sup>1</sup> ([ORCID: 0000-0002-6060-8099](https://orcid.org/0000-0002-6060-8099)) \u2020\n\n### Affiliations\n\n1. Laboratory of Neurogenetics and Behavior The Rockefeller University New York United States\n2. Howard Hughes Medical Institute, The Rockefeller University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nWhile most animals thermotax only to regulate their temperature, female mosquitoes are attracted to human body heat during pursuit of a blood meal. Here we elucidate the basic rules of Aedes aegypti thermotaxis and test the function of candidate thermoreceptors in this important behavior. We show that host-seeking mosquitoes are maximally attracted to thermal stimuli approximating host body temperatures, seeking relative warmth while avoiding both relative cool and stimuli exceeding host body temperature. We found that the cation channel TRPA1, in addition to playing a conserved role in thermoregulation and chemosensation, is required for this specialized host-selective thermotaxis in mosquitoes. During host-seeking, AaegTRPA1-/- mutants failed to avoid stimuli exceeding host temperature, and were unable to discriminate between host-temperature and high-temperature stimuli. TRPA1-dependent tuning of thermotaxis is likely critical for mosquitoes host-seeking in a complex thermal environment in which humans are warmer than ambient air, but cooler than surrounding sun-warmed surfaces.\n\n## Introduction\n\nThermotaxis is a sensory-motor behavior that guides animals toward a preferred temperature. This type of sensory navigation allows animals to avoid environments of noxious cold and heat, with the goal of remaining in physiologically suitable ambient temperatures. For ectotherms, such as most insects, thermotaxis behavior is the primary method of thermoregulation. Terrestrial invertebrates are vulnerable to temperature extremes, facing the risk of desiccation at elevated temperatures, and rapid hypothermia at low temperatures. Therefore, mechanisms to detect environmental temperatures and trigger appropriate approach or avoidance behaviors are extremely important for their survival. For instance, adult Caenorhabditis elegans worms migrate preferentially toward a specific thermal environment determined by the temperature of their cultivation (Hedgecock and Russell, 1975; Mori and Ohshima, 1995). Adult Drosophila melanogaster flies prefer a narrow range of air temperatures around 24\u201325\u00b0C (Sayeed and Benzer, 1996; Hamada et al., 2008) and rapidly avoid air temperatures of ~31\u00b0C (Ni et al., 2013).\n\nInterestingly, some hematophagous (blood-feeding) arthropods have evolved a specialized mode of thermotaxis to locate endothermic\u00a0(warm-blooded) hosts. Such thermophilic behavior is seen in kissing bugs [Triatoma infestans (Flores and Lazzari, 1996) and Rhodnius prolixus (Schmitz et al., 2000)], the bedbug [Cimex lectularius (Rivnai, 1931)], the tick [Ixodes ricinus (Lees, 1948)], and many species of mosquito (Clements, 1999) including Ae. aegypti, a major tropical disease-vector (Bhatt et al., 2013). Female Ae. aegypti require a vertebrate blood meal for the production of eggs, and finding a suitable warm-blooded host is therefore an essential component of reproduction. Mosquitoes use a variety of physical and chemical senses to locate hosts in their environment (Card\u00e9, 2015). When host-seeking, these animals become strongly attracted to inanimate warm objects, eagerly probing at them as if they were hosts (Howlett, 1910).\n\nIn nature, mosquitoes thermotax in a complex thermal landscape in which ambient air temperature, host body temperature, and surrounding surface temperatures can vary widely. For mosquitoes such as Ae. aegypti, host-seeking behavior can be activated by an increase in ambient carbon dioxide (CO2) (Majeed et al., 2014). This activation elicits flight activity (Eiras and Jepson, 1991; McMeniman et al., 2014) and results in an array of behaviors including attraction to visual stimuli (van Breugel et al., 2015) and host olfactory cues (Dekker et al., 2005; McMeniman et al., 2014), and landing on warm objects (Burgess, 1959; Eiras and Jepson, 1994; Kr\u00f6ber et al., 2010; Maekawa et al., 2011; McMeniman et al., 2014; van Breugel et al., 2015). Ae. aegypti flying in a wind tunnel can detect a warmed stimulus from a distance, eliciting attraction and thermotaxis (van Breugel et al., 2015).\n\nWhat are the mechanisms by which animals detect thermal stimuli, and how might these be adapted for the specialized needs of heat-seeking female mosquitoes? Thermotaxis is typically initiated by thermosensitive neurons that sample environmental temperature to inform navigational decision-making. Such neurons must be equipped with molecular thermosensors capable of detecting and transducing thermal stimuli. Diverse molecular thermoreceptors have been identified in the animal kingdom, many of which are members of the transient receptor potential (TRP) superfamily of ion channels (Barbagallo and Garrity, 2015; Palkar et al., 2015). Different thermosensitive TRPs show distinct tuning spanning the thermal spectrum from noxious cold to noxious heat. Among these is TRPA1, which is a heat sensor in multiple insects, including the vinegar fly D. melanogaster and the malaria mosquito Anopheles gambiae (Hamada et al., 2008; Wang et al., 2009). Neurons in thermosensitive sensilla (Gingl et al., 2005) of An. gambiae female antennae express TRPA1 (Wang et al., 2009). In D. melanogaster, TRPA1 is expressed in internal thermosensors located in the brain, and DmelTRPA1-/- mutants fail to avoid high air temperature in a thermal gradient (Hamada et al., 2008). Interestingly, some snakes and vampire bats express thermosensitive TRP channels in organs used to sense infrared radiation from warm-blooded prey (Gracheva et al., 2010; 2011). This raises the possibility that AaegTRPA1 may be used by mosquitoes to find hosts. Recently, a structurally distinct insect thermosensor, Gr28b, was identified in D. melanogaster (Ni et al., 2013). Gr28b, a gustatory receptor paralog, is expressed in heat-sensitive neurons of D. melanogaster aristae and is an important component of thermotaxis during rapid avoidance of heat (Ni et al., 2013). It is also highly conserved among Drosophila species (McBride et al., 2007), and has a clear ortholog in Ae. aegypti, AaegGr19 (Ni et al., 2013). A functional role for these thermosensors has never been investigated in the mosquito.\n\nHere, we use high-resolution quantitative assays to examine the behavioral strategies underlying mosquito heat-seeking behavior. Our results show that by seeking relative warmth and avoiding both relative cool and high temperatures, female mosquitoes selectively localized to thermal stimuli that approximate warm-blooded hosts. Using genome editing, we generated mutations in the candidate thermoreceptors, AaegTRPA1 and AaegGr19. We found that TRPA1 is required for tuning mosquito thermotaxis during host-seeking. AaegTRPA1-/-\u00a0mutants lacked normal avoidance of thermal stimuli exceeding host body temperatures, resulting in a loss of preference for biologically\u00a0relevant thermal stimuli that resemble hosts. This work is important because it identifies a key mechanism by which mosquitoes tune their thermosensory systems toward human body temperatures.\n\n## Results\n\nWe previously described an assay to model heat-seeking behavior in the laboratory by monitoring mosquitoes landing on a warmed Peltier element in the context of a cage supplemented with CO2 (Figure 1A,B) (McMeniman et al., 2014). This assay has the advantages that it is simple in design, produces robust behaviors, and enables the collection of data from large numbers of animals in a short experimental timeframe. Using this system, we can examine mosquito responses to diverse thermal stimuli and measure thermotaxis in different ambient temperature environments. We first needed to determine whether heat-seeking behavior habituates over multiple thermal stimulations. In our heat-seeking assay, Ae. aegypti mosquitoes reliably responded to 12 serial presentations of a 3-minute long 40\u00b0C stimulus over the course of more than 2.5\u2009hr, with no evidence of habituation (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/11750/elife-11750-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of heat-seeking assay enclosure (30 \u00d7 30 \u00d7 30 cm). (B) Representative experimental image showing mosquitoes detected on and near the Peltier (red square). (C) Typical skin and core temperatures of Ae. aegypti hosts, humans and chickens (Richards, 1971; Yao, et al., 2008. (D\u2013F) Heat-seeking behavior measured for a range of stimuli from 26 to\u00a060\u00b0C (n = 6 trials per condition). Peltier temperature measured by thermocouple (D, top trace, mean in red, s.e.m. in gray) and percent of mosquitoes on Peltier (D, bottom trace, mean in black, s.e.m. in gray). We note that variance in both traces is low, making s.e.m. traces difficult to see. (E) Percent mosquitoes on Peltier during seconds 90\u2013180 of each stimulus period in (D). Each replicate is indicated by a dot, and mean by a line. Arrowheads indicate significant differences (p < 0.05) from the second presentation of the 40\u00b0C stimulus or from 26\u00b0C (repeated measures one-way ANOVA with Bonferroni correction). (F) Heat maps showing mean mosquito occupancy on the Peltier (red square) and surrounding area, during seconds 90\u2013180 of each stimulus period in (D). Bold borders indicate stimuli with responses significantly different from 26\u00b0C stimulus (top row) or 40\u00b0C stimulus (bottom row) in (E) (p < 0.05; repeated-measures ANOVA with Bonferroni correction).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11750/elife-11750-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Peltier temperature measured by thermocouple (top trace, mean in red, s.e.m. in gray) and percent of mosquitoes on Peltier (bottom trace, mean in black, s.e.m. in gray). n = 10 trials. We note that variance in both traces is low, making s.e.m. traces difficult to see. (B) Percent mosquitoes on Peltier during seconds 90\u2013180 of each stimulus period in (A). Each replicate is indicated by a dot, and the mean by a line. There is no significant difference (p > 0.05) in Peltier occupancy between the first and last stimulus (repeated measures one-way ANOVA with Bonferroni correction).\n\nAe. aegypti can feed on a variety of hosts (Clements, 1999; Tandon and Ray, 2000) with core body temperatures ranging from ~37\u00b0C (humans) to ~40\u201343\u00b0C (chickens) (Richards, 1971) (Figure 1C). It is unknown whether there are minimal or maximal temperature thresholds constraining mosquito heat-seeking, and whether responses to thermal stimuli depend on the background ambient temperature.\n\nTo investigate these questions, we measured attraction to thermal stimuli produced by heating the Peltier to temperatures ranging from ambient (set to 26\u00b0C in these experiments) to 60\u00b0C (Figure 1D, E). We found that mosquitoes were highly sensitive to thermal contrast and were attracted to stimuli 2.5\u00b0C above ambient (Figure 1D\u2013F). Furthermore, mosquito occupancy on the Peltier increased monotonically\u00a0with stimulus temperatures up to 40\u00b0C. However, for higher\u00a0temperature stimuli, we observed a dramatic reduction in Peltier occupancy. A 50\u00b0C stimulus resulted in approximately half as many animals on the Peltier compared to a 40\u00b0C stimulus (Figure 1D\u2013F). Stimuli of 55\u00b0C or greater resulted in occupancy rates indistinguishable from an ambient thermal stimulus (26\u00b0C) (Figure 1D\u2013F). Spatial analysis of mosquito occupancy on or near the Peltier revealed that while mosquitoes were still attracted to high-temperature stimuli, they populated the area peripheral to the Peltier, and strongly avoided the Peltier itself for stimuli \u2265 55\u00b0C (Figure 1F).\n\nFemale mosquitoes searching for a warm-blooded host may be responding to the absolute temperature of a stimulus or may instead be evaluating relative warmth, defined as the differential between a stimulus and background ambient temperature. To investigate the thermotaxis strategies constituting mosquito heat-seeking behavior, we conducted experiments at three ambient temperatures: 21, 26, and 31\u00b0C (Figure 2A\u2013F). We found that Peltier occupancy for stimuli 21\u201340\u00b0C depended on the differential between the Peltier and ambient temperature (Figures 2B,C), rather than the absolute temperature of the Peltier (Figure 2A). For example, at all ambient temperatures tested, a stimulus 5\u00b0C above ambient was sufficient to elicit significant heat-seeking, and elicited approximately half as much Peltier occupancy as a stimulus 10\u00b0C above ambient. On the other hand, heat-seeking to targets 50\u201355\u00b0C was inhibited at all ambient temperatures tested (Figures 2D,F), despite the fact that the temperature differential varied widely in these situations (Figure 2E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/11750/elife-11750-fig2-v1.jpg)\n\n**Figure 2.:** (A\u2013F) Heat-seeking at different ambient temperatures (n = 5\u20136 trials per condition): 21\u00b0C (blue), 26\u00b0C (gray), 31\u00b0C (orange). Data in A, B, D, and E are plotted as mean \u00b1 s.e.m. (A,D) Percent of mosquitoes on Peltier during seconds 90\u2013180 of stimuli of indicated temperature, normalized to stimulus 10\u00b0C above ambient (A, open circle) or 40\u00b0C stimulus (D, open circle). (B,E) Same data as in (A) and (D),\u00a0respectively, plotted using differential between ambient and Peltier temperature. For each ambient temperature, arrowheads indicate the lowest temperature stimulus found to elicit a significant increase in heat-seeking compared to an ambient temperature stimulus (A,B) or a reduction in heat-seeking compared to a 40\u00b0C stimulus (D,E) (p < 0.05; repeated-measures ANOVA with Bonferroni correction). For each ambient temperature, linear regressions (A,\u00a0B, 21\u00b0C: 10.6/\u00b0C, R2 = 0.98, 26\u00b0C: 12/\u00b0C, R2 = 0.99, 31\u00b0C: 9.5/\u00b0C, R2 = 0.97) or variable slope sigmoidal dose\u2013response curves (D, E, 21\u00b0C: IC50 = 55.4\u00b0C, R2 = 0.87, 26\u00b0C: IC50 = 52.5\u00b0C, R2 = 0.92, 31\u00b0C: IC50 = 50.5\u00b0C, R2 = 0.91) are plotted. (C,F) Heat maps showing mean mosquito occupancy on the Peltier (red square) and surrounding area, during seconds 90\u2013180 of each stimulus period. Bold borders indicate stimuli with responses significantly different from an ambient-temperature stimulus (C) in (A,B), or significantly different from a 40\u00b0C stimulus (F) in (D,E) (p < 0.05; repeated-measures ANOVA with Bonferroni correction). (G,H) Analysis of mosquito responses to cooling from data in (Figure 1D). (G) Mean percent of mosquitoes on Peltier during thermal stimuli 31\u201340\u00b0C. Dashed line indicates the end of the stimulus period. (H) Post-stimulus time at which the percent of mosquitoes on Peltier has decayed to one half of the mean during seconds 90\u2013180 of the stimulus period from (Figure 1E). Each replicate is indicated by a dot, mean \u00b1 s.e.m. by lines (NS, not significant; one-way ANOVA with Bonferroni correction).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11750/elife-11750-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Mean Peltier temperature measured by thermocouple during presentation of thermal stimuli (31\u201340\u00b0C). Dashed line indicates the end of the stimulus period.\n\nThese results show that Ae. aegypti thermotaxis is driven by seeking relative warmth, but restricted by an absolute upper threshold of ~50\u201355\u00b0C. Because female mosquitoes are attracted to relative warmth, we hypothesized that they may also avoid relative cool. This complementary behavior would serve to improve host-seeking thermotaxis. We examined mosquito responses to cooling by analyzing the rate at which animals left the Peltier when it cooled at the conclusion of a stimulus period. We found that mosquitoes left the Peltier at similar rates regardless of the absolute temperature of the stimulus (Figure 2G,H, Figure 2\u2014figure supplement 1; based on analysis of data in Figure 1D,E), demonstrating that mosquitoes avoid relative cool during heat-seeking.\n\nOur characterization of Ae. aegypti heat-seeking revealed multiple behavioral components contributing to selective thermotaxis during host-seeking: 1) the seeking of relative warmth; 2) the avoidance of relative cool; and 3) the avoidance of thermal stimuli exceeding host temperature. Each of these sensory-motor functions may rely on the same molecular thermosensors, or may instead use distinct thermosensors. We considered the possibility that thermoreceptors ordinarily dedicated to the behavioral thermoregulation typical of most ectotherms such as D. melanogaster, may have evolved a function in host-seeking by mosquitoes and other hematophagous arthropods. Using this reasoning, we generated AaegTRPA1-/- mutants using zinc-finger nuclease-mediated genome editing (Figure 3A, Figure 3\u2014figure supplement 1A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/11750/elife-11750-fig3-v1.jpg)\n\n**Figure 3.:** (A) Representative bright field (left) and fluorescence (right) images of wild-type and AaegTRPA1-/-\u00a0female pupae marked by ubiquitous expression of enhanced cyan fluorescent protein (ECFP). Scale bars: 0.5 mm. (B) Schematic of capillary feeding (CAFE) assay. (C,D) Sucrose preference over sucrose containing the indicated concentration of N-methylmaleimide (C, n = 10\u201312 trials per condition) or denatonium benzoate (D, n = 7 trials per condition) for mosquitoes of the indicated genotypes (NS, not significant; *p < 0.05, **p < 0.01; one-way ANOVA with Bonferroni correction compared to wild-type). (E) Percent of mosquitoes of indicated genotypes on Peltier during seconds 90\u2013180 of stimuli of indicated temperature (mean \u00b1 s.e.m., n = 6\u20139 trials per genotype; ***p < 0.001; repeated measures one-way ANOVA with Bonferroni correction). (F) Heat maps showing mean mosquito occupancy for the indicated genotypes on the Peltier (red square) and surrounding area, during seconds 90\u2013180 of each stimulus period. Bold borders indicate stimuli with responses significantly different from wild-type in (E) (p < 0.05; repeated-measures ANOVA with Bonferroni correction). (G) Mean percent of mosquitoes of indicated genotypes on Peltier during seconds 0\u2013180 of thermal stimuli 40\u201360\u00b0C and during subsequent re-presentation of 40\u00b0C. Timespans with statistically significant increases in AaegTRPA1-/- mutant Peltier occupancy compared to wild-type are indicated by purple lines (calculated from 15 second bins; p < 0.05; one-way ANOVA with Bonferroni correction).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11750/elife-11750-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Genomic organization and targeted mutagenesis of AaegTRPA1. Non-coding (white) and coding (black) exons are shown to scale (vectorbase.org). Introns are denoted by connecting lines (not to scale). The AaegTRPA1 ZFN targets exon 12 (purple arrow). An insertion cassette (shown to scale), including the Ae. aegypti polyubiquitin (polyUB) promoter driving expression of enhanced cyan fluorescent protein (ECFP) and an SV40 polyadenylation signal, is integrated via homology-directed repair. (B) Schematic of the thermal gradient assay (top, side view). Representative experimental image (bottom, top view) showing mosquitoes outlined in red detected across one lane of the thermal gradient assay, with instantaneous air temperature reported for each of 8 analysis sectors. (C,D) Percent of mosquitoes of indicated genotypes detected in each sector and mean sector air temperature (rounded to nearest \u00b0C) in the absence (C) or presence (D) of a thermal gradient (n = 6 trials per genotype). Data are plotted as mean \u00b1 s.e.m. (***p < 0.001; two-way ANOVA with Bonferroni correction compared to wild-type). (E) Heat maps showing mean air temperature (left) and percent of mosquitoes of the indicated genotypes detected (right) in each sector over 90 min from the onset of a thermal gradient. (F) Same data as in (E), showing total percent of mosquitoes of the indicated genotypes detected in sectors 1\u20133 (cold side, solid line, mean; s.e.m., shading) and sectors 6\u20138 (hot side, dotted line, mean; s.e.m., shading) during onset and maintenance of a thermal gradient. G, Percent of total mosquitoes of the indicated genotypes found dead in sectors 6\u20138 at the conclusion of the experiment. Each replicate is indicated by a dot, and mean \u00b1 s.e.m. by lines. Genotypes with different letters are significantly different (p < 0.01, one-way ANOVA with Bonferroni correction).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11750/elife-11750-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Genomic organization and targeted mutagenesis of AaegGr19. Coding (black) exons are shown to scale, introns are denoted by connecting lines (not to scale), and alternative splicing is denoted by dashed lines (vectorbase.org). The AaegGr19 ZFN targets exon 3 (green arrow). An insertion cassette (shown to scale), including the Ae. aegypti polyubiquitin (polyUB) promoter driving expression of Discosoma sp. red fluorescent protein (DsRed) and an SV40 polyadenylation signal, is integrated via homology-directed repair. (B) Representative bright field (left) and fluorescence (right) images of wild-type and AaegGr19-/-\u00a0female pupae marked with ubiquitous expression of DsRed Scale bars: 0.5 mm. The wild-type bright-field image is duplicated from (Figure 3A). (C) Percent of mosquitoes of indicated genotypes on Peltier during seconds 90\u2013180 of stimuli of indicated temperature (mean \u00b1 s.e.m., n = 6\u20139 trials per genotype). Neither AaegGr19-/-\u00a0nor AaegGr19+/-\u00a0were significantly different from wild-type at any stimulus temperature (repeated measures one-way ANOVA with Bonferroni correction).\n\nIn addition to its function as a thermoreceptor, TRPA1 is a highly conserved chemosensor of electrophile irritants such as N-methylmaleimide\u00a0(Macpherson et al., 2007; Kang et al., 2010). Using a modified capillary feeding (CAFE) assay (Ja et al., 2007) (Figure 3B), we found that wild-type Ae. aegypti mosquitoes strongly avoided consumption of N-methylmaleimide (Figure 3C), as well as the bitter compound denatonium benzoate (Figure 3D). AaegTRPA1-/-\u00a0mutants rejected denatonium benzoate (Figure 3D) but did not avoid consumption of N-methylmaleimide (Figure 3C). We interpret this result as a loss of N-methylmaleimide detection in AaegTRPA1-/-\u00a0mutants, leading to no preference between sucrose and sucrose containing N-methylmaleimide. We note that this simple CAFE assay could be used to discover additional mosquito anti-feedants to repel Ae. aegypti, beyond the two chemicals identified here.\n\nBecause TRPA1 is important in insect thermoregulation (Hamada et al., 2008), we used a modified thermal gradient assay (Sayeed and Benzer, 1996; Hamada et al., 2008) to assess thermal preference in wild-type and AaegTRPA1-/-\u00a0mutant mosquitoes (Figure 3\u2014figure supplement 1B). AaegTRPA1-/- mutants were impaired in avoidance of high air temperature, leading to significant mortality (Figure 3\u2014figure supplement 1C\u2013G). Together, these data indicate that TRPA1 has a conserved chemosensory and thermosensory function in Ae. aegypti.\n\nWe next asked if AaegTRPA1 is required for mosquito heat-seeking behavior. AaegTRPA1-/- mutants showed normal attraction to stimuli at or below 45\u00b0C, but strikingly lacked normal avoidance of higher\u00a0temperature stimuli (50\u00b0C and 55\u00b0C) (Figures 3E,F). A detailed analysis of Peltier occupancy over time revealed that AaegTRPA1-/-\u00a0mutants persisted on the Peltier during 50, 55, and 60\u00b0C stimulus presentations, whereas control animals rapidly left these high-temperature stimuli (Figure 3G). Therefore, AaegTRPA1 is not required for initial attraction to warmth but is required for normal avoidance of high-temperature stimuli that exceed host body temperature.\n\nBecause AaegTRPA1-/- mutants retained attraction to warm stimuli, we used targeted mutagenesis to test a requirement for AaegGr19, the Ae. aegypti ortholog of Gr28b, in heat-seeking (Figure 3\u2014figure supplement 2A,B). Although this thermosensor is required for mediating rapid avoidance of warmth in D. melanogaster (Ni et al., 2013), AaegGr19-/-\u00a0mutant mosquitoes showed no thermotaxis defects (Figure 3\u2014figure supplement 2C). The different phenotypes of these mutations in Ae. aegypti and D. melanogaster may reflect differences in expression patterns of these genes. DmelTRPA1 is expressed in internal thermosensors of the brain (Hamada et al., 2008), while thermosensitive isoforms of DmelGr28b are expressed in peripheral heat-sensors (Ni et al., 2013). In Ae. aegypti, TRPA1 RNA is expressed in numerous tissues including the antennae (Matthews et al., 2015), where it may be associated with peripheral thermosensitive sensilla responding to rapid thermal fluctuations (Gingl et al., 2005), as it is in An. gambiae (Wang et al., 2009). The cellular expression pattern of Gr19 in Ae. aegypti is not known, but its transcript is broadly expressed (Matthews et al., 2015).\n\nAlthough AaegTRPA1-/- mutants did not show normal avoidance of high-temperature stimuli, they may still prefer host-temperature stimuli if presented with a choice. In a heat-seeking choice assay with two independently controlled Peltiers, we examined the importance of AaegTRPA1 in guiding mosquito thermotaxis in a more complex thermal landscape (Figure 4A). In this assay, mosquitoes were simultaneously presented with two thermal stimuli. When presented with two 40\u00b0C stimuli, both wild-type and mutant mosquitoes distributed equally between the Peltiers (Figure 4B), but in a choice between a 40\u00b0C and 50\u00b0C stimulus, wild-type mosquitoes strongly preferred the 40\u00b0C Peltier (Figure 4C) and avoided the 50\u00b0C Peltier (Figure 4D). Remarkably, in this choice scenario, AaegTRPA1-/-\u00a0mutants failed to avoid the 50\u00b0C Peltier, resulting in no preference for the 40\u00b0C stimulus (Figure 4 C, D, Video 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/11750/elife-11750-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic of heat-seeking choice assay. (B,C) Preference for 40\u00b0C versus 40\u00b0C (B) or 50\u00b0C versus 40\u00b0C (C) Peltiers for indicated genotypes (n = 6 trials per genotype; mean \u00b1 s.e.m., with each replicate indicated by a dot; NS, not significant; ***p < 0.001; one sample t-test versus zero preference). In (C) AaegTRPA1-/-\u00a0mutants are significantly different from wild-type and heterozygous mutants (p < 0.05, one-way ANOVA with Bonferroni correction). (D) Heat maps showing mean mosquito occupancy for the indicated genotypes on Peltiers (red squares) of the indicated temperatures and surrounding area, during seconds 60\u2013240 of each stimulus period. (E) Model of mosquito thermotaxis. (F) Thermal image of a person (arrow) standing on a sunlit patch of grass in Central Park in New York City.\n\n![Video 1.](https://cdn.elifesciences.org/articles/11750/elife-11750-media1.mp4.jpg)\n\n**Video 1.:** AaegTRPA1-/- mutants presented with a choice between two Peltiers, one at 40\u00b0C and one at 50\u00b0C. Video is sped up 10-fold (images acquired at 1 Hz and reproduced at 10 frames/s), and shows seconds 60\u2013240 of the stimulus period.\n\n## Discussion\n\nWe have elucidated the basic thermotaxis strategies used by mosquitoes, and revealed an important role for TRPA1 in regulating this behavior (Figure 4E). Using a quantitative thermotaxis assay, we modelled Ae. aegypti heat-seeking behavior in the laboratory. We found that mosquitoes can search for hosts in a wide range of ambient temperatures by seeking relative warmth and avoiding relative cool. Remarkably, these animals can detect a stimulus with thermal contrast as small as 2.5\u00b0C. In an outdoor environment, however, hosts are often warmer than the surrounding air but cooler than sun-warmed soil, rocks, trees, and human-made objects (Figure 4F). For this reason, diurnal mosquitoes such as Ae. aegypti are poorly served by merely thermotaxing to the hottest object available. A more optimal strategy is to search specifically for biologically relevant stimuli, and to avoid thermal stimuli exceeding host temperature, as we have observed in our laboratory models of heat-seeking. Acquiring a blood meal is an essential component of reproduction for a female Ae. aegypti mosquito. To maximize her chances of success, a female mosquito should reject \u2018distracting\u2019 stimuli that exceed host temperatures. Our results demonstrate that AaegTRPA1 is critical for this selective thermotaxis.\n\nMosquito heat-seeking behavior represents an excellent model system for further study of the genetics (Kang et al., 2012; Zhong et al., 2012), neuroscience (Frank et al., 2015; Liu et al., 2015), and decision-making (Luo et al., 2010) underlying thermosensation and thermotaxis. Until now, mechanistic studies of thermosensation have been largely restricted to traditional laboratory model organisms, such as domestic mice and Drosophila melanogaster flies, whose thermotaxis consists mainly of moving away from suboptimal thermal environments. Mosquitoes too, must undergo such behavioral thermoregulation, as we have found in our thermal gradient assay. However, their repertoire of thermotactic behaviors is expanded by the evolution of a specialized and highly tuned mode of thermotaxis to locate warm-blooded hosts. It may also be that these two thermotactic drives\u2014host-seeking and thermoregulation\u2014interact in mosquitoes. For instance, the avoidance of high-temperature stimuli during heat-seeking may be influenced by a nociceptive or thermoregulatory response independent of host-seeking behavior. It will be interesting to investigate the neural mechanisms that regulate divergent behavioral choices of thermoregulation and heat-seeking, and whether these systems are in behavioral conflict during mosquito host-seeking.\n\nOur work identifies TRPA1 as a gene regulating mosquito avoidance of high-temperature stimuli, which we have shown to be a major behavioral component of heat-seeking. However, because both AaegTRPA1-/- and AaegGr19-/-\u00a0mutants retain normal attraction to warmth, this aspect of heat-seeking must rely on other thermoreceptors, still to be identified. Our study shows that this attraction must be mediated either by a single thermosensor that adapts to background temperature, or multiple thermosensors each tuned to a distinct absolute threshold. During interactions with a warm-blooded host or a 50\u00b0C Peltier, mosquitoes are likely experiencing a wide range of thermal fluctuations. For instance, there can be a 10\u00b0C thermal gradient in the air within 5 mm of a 37\u00b0C stimulus or human arm (van Breugel et al., 2015). This suggests that for a mosquito standing on a warmed Peltier, the antennae, brain, thorax, forelegs, and proboscis may all be experiencing different temperatures. The temperature of mosquito tissues will also be greatly influenced by their material and geometric properties, as well as thermal conduction due to contact with the Peltier. Furthermore, convective plumes forming in the air near a vertical heated plate can be highly dynamic and turbulent in their structure, with thermal air gradients differing considerably at the bottom and top of the plate (Bejan, 2013). These features of thermal stimuli may explain why mosquitoes in our assay often appear to be differentially attracted to the bottom and top of the Peltier. Future studies characterizing this complex thermal microenvironment, and identifying the relevant thermosensory neurons and receptors will be required to define the thermal fluctuations experienced by mosquitoes during heat-seeking. Understanding the behavioral and molecular basis of thermotaxis in mosquitoes and other disease vectors (Flores and Lazzari, 1996; Schmitz et al., 2000) is of great biomedical importance. Ae. aegypti mosquitoes are potent vectors of yellow fever, chikungunya, and dengue arboviruses, resulting annually in hundreds of millions of infections (Bhatt et al., 2013). Further study of mosquito heat-seeking behavior may aid in the design of next-generation traps, repellents, and control strategies.\n\n## Materials\u00a0and\u00a0methods\n\n### Mosquito rearing and maintenance\n\nAe. aegypti wild-type (Orlando), AaegGr19, and AaegTRPA1 mutant strains were maintained and reared at 25\u201328\u00b0C, 70\u201380% relative humidity with a photoperiod of 14\u2009hr light:10\u2009hr dark (lights on at 8 a.m.) as previously described (DeGennaro et al., 2013). Adult mosquitoes were provided constant access to 10% sucrose solution for feeding, and females were provided with a blood source for egg production, either live mice or human volunteers. Blood-feeding procedures were approved and monitored by The Rockefeller University Institutional Animal Care and Use Committee and Institutional Review Board, protocols 14756 and LV-0652 respectively. Human volunteers gave their informed written consent to participate in mosquito blood-feeding procedures. Before behavioral assays, mosquitoes were sexed and sorted under cold anesthesia (4\u00b0C) and fasted for 15\u201324\u2009hr in the presence of a water source.\n\n### ZFN-mediated targeted mutagenesis\n\n#### Molecular biology\n\nPCR was carried out using Novagen KOD polymerase (EMD Millipore, Billerica, MA), products were cloned using pCR4-TOPO (Invitrogen), and Sanger sequenced by Genewiz (South Plainfield, NJ).\n\n#### ZFN design\n\nZFNs targeting AaegTRPA1 or AaegGr19 (VectorBase Accession numbers AAEL009419 and AAEL011073, respectively) were designed and produced by the CompoZr Custom ZFN Service (Sigma-Aldrich, St. Louis, MO). The nucleotide sequences of the ZFN-binding sites (upper case) and nonspecific cut site for wild-type heterodimeric Fok1 endonuclease (lower case) are:\n\nAaegTRPA1: 5\u2019-GTCGTTTTCGTCCATACCgatgtcGTTGCTTAGGACGTT-3\u2019.\n\nAaegGr19: 5\u2019-ACCAACCTTTCACTGCaaatgacCCACCGGAAAGTGGCA-3\u2019.\n\n#### Homologous recombination design\n\nDonor plasmids were generated as previously described (McMeniman et al., 2014). All donor plasmids included homologous arms cloned from wild-type genomic DNA, and consisting of sequence flanking or partially overlapping the ZFN recognition sites.\n\nAaegTRPA1 was targeted using pSL1180-HR-PUbECFP-TRPA1. The left homologous arm (1608 bp, primers: forward, 5\u2019-GCATGCATGGGTAACAAGAAGGGTTGT-3\u2019 and reverse, 5\u2019-CGACAAGTGGTTTACTTGTGTGTCAATC-3\u2019) and right homologous arm (3037 bp, primers: forward, 5\u2019-CGTTTTCCATGATGCTCGGC-3\u2019 and reverse, 5\u2019-CGAAGACCAACGCGATGTAGTTCCA-3\u2019) were cloned into the EcoRI and NotI sites of pSL1180-HR-PUbECFP (Addgene #47917), respectively.\n\nAaegGr19 was targeted using pSL1180-HR-PUBdsRED-Gr19. The left homologous arm (1257 bp, primers: forward, 5\u2019-AGGTATGCCTGGATTGGACGTAAGAAA-3\u2019 and reverse, 5\u2019-GCAGTGAAAGGTTGGTTAACTG-3\u2019) and right homologous arm (1203 bp, primers: forward, 5\u2019-CCACCGGAAAGTGGCATTTACCGC-3\u2019 and reverse, 5\u2019-GCGACGGTCCCTTGCGATGTCGTTAT-3\u2019) were cloned into the XmaI and NotI sites of pSL1180-HR-PUBdsRED (Addgene #49327), respectively.\n\n#### Generation of mutant lines\n\nTo generate AaegTRPA1 homologous recombination mutant alleles, 2000 pre-blastoderm stage wild-type embryos were microinjected (Genetic Services Inc., Cambridge, MA) with AaegTRPA1 ZFN mRNA (200 ng/\u00b5l) and pSL1180-HR-PUbECFP-TRPA1 (750 ng/\u00b5l). To generate AaegGr19 homologous recombination mutant alleles, 1000 pre-blastoderm stage wild-type embryos were microinjected (IBBR Insect Transformation Facility, Rockville, MD) with AaegGr19 ZFN mRNA (200 ng/\u00b5l) and pSL1180-HR-PUBdsRED-Gr19 (700 ng/\u00b5l). Injected G0 animals were crossed to wild-type in multiple batches to generate G1 lines with independent ZFN mutagenesis events. G1 homologous recombination mutant individuals were recovered via fluorescence as previously described (McMeniman et al., 2014), and outcrossed separately to wild-type for five generations before establishing four independent homozygous lines: AaegTRPA1ECFP-1, AaegTRPA1ECFP-2, AaegGr19DsRed-1, and AaegGr19DsRed-2.\n\nTo confirm directed insertion of the PUbECFPnls-SV40 cassette into the AaegTRPA1 locus, a diagnostic PCR product (no wild-type band, 2075 bp mutant band) was amplified using a forward primer anchored outside the boundary of the left homologous arm (5\u2019-CATGGGACAATTTGGCGTAGGCAGTAT-3\u2019) and an ECFP reverse primer anchored inside the inserted cassette (5\u2019- AGATCTCGACCCAAGAAAAAGCGGAAG-3\u2019). To establish homozygous AaegTRPA1-/-\u00a0lines, a diagnostic PCR product (679 bp wild-type band, 3305 bp mutant band) spanning the ZFN cut-site was amplified using primers: forward, 5-GGTTTCAAGGATGATTGACACACAAG-3\u2019, and reverse, 5\u2019-GCAGAGCTGATTTCTCGTAGTTTTCG-3\u2019.\n\nTo confirm directed insertion of the PUBdsRED-SV40 cassette into the AaegGr19 locus, a diagnostic PCR product (6362 bp wild-type band, 8787 bp mutant band) was amplified using primers anchored outside the boundaries of both homologous arms: forward, 5\u2019-AGCTGATCAACGTTAACAACTACGATG-3\u2019, and reverse, 5\u2019-AGAGCATGGTGTAAACTTGACAGCTCAA-3\u2019.\n\nThe following lines were used for all experiments: AaegTRPA1ECFP-1/ECFP-2, AaegTRPA1ECFP-1/+, AaegGr19DsRed-1/DsRed-2, AaegGr19DsRed-1/+. Heteroallelic mutants were used to minimize fitness effects that might be present in homozygous mutants.\n\n### Behavior\n\nAll assays were carried out between ZT2-ZT12 at 26\u00b0C and 70\u201380% relative humidity unless stated otherwise. Whenever possible, time of day was randomized across conditions. All mosquitoes used were 10\u201321 day-old females, age-matched across conditions and genotypes.\n\n#### Heat-seeking\n\nAssays were performed as previously described (McMeniman et al., 2014), in a 30 \u00d7 30 \u00d7 30 cm Plexiglas enclosure. All stimulus periods lasted 3 min and were presented on a single Peltier element (6 x 9 cm) covered with a piece of standard white letter size printer paper (extra bright, Navigator; Office Depot/Office Max, Cleveland, OH) cut to 15 \u00d7 17 cm and held taut by a magnetic frame. CO2 pulses (20 s) accompanied all stimulus period onsets. A second identical control Peltier element was situated on the wall opposite to the stimulus Peltier and was set to ambient temperature during all experiments. Peltier temperature set-point is reported throughout the paper. Measurements of Peltier temperature via a thermocouple embedded in the Peltier element are reported in Figure 1D, Figure 1\u2014figure supplement 1A and Figure 2\u2014figure supplement 1. For each trial, 45\u201350 mosquitoes were introduced into the assay, and only mosquitoes directly on the Peltier area (Figure 1B) during seconds 90\u2013180 of stimulus periods were scored.\u00a0The custom\u00a0MATLAB scripts used to run and analyze these experiments are available for download\u00a0as\u00a0Source code 1 and 2 respectively. Heat maps are smoothed 2D histograms of mean mosquito occupancy during seconds 90\u2013180 of stimulus periods, sampled at 1\u2009Hz and binned into 12 \u00d7\u00a016 image sectors.\n\n#### Heat-seeking choice\n\nThe assay was modified from the heat-seeking assay described above. For each trial, 45\u201350 mosquitoes were introduced into a custom-made Plexiglas box (38.5 \u00d7 28 \u00d7 12.5 cm) with two Peltier elements (4.6 \u00d7 6.5 cm surface area, ATP-O40-12, Custom Thermoelectric, Bishopville, MD) each covered with a taut piece of standard white letter size printer paper (extra bright, Navigator) cut to 9 \u00d7 11\u00a0cm. The Peltier elements were mounted on a single wall, 3.5 cm above the floor, 8.5 cm from either edge of the enclosure, and adjacent to one another separated by 6.5 cm. Mosquitoes were allowed to acclimate for 10 min, at which point the Peltier elements were both warmed to 40\u00b0C. After fully warming the Peltier elements for 60 s, a CO2 pulse (20 s) was added to the airstream and the Peltier elements were kept at 40\u00b0C for a 4-min stimulus period at which point they were returned to ambient temperature (26\u00b0C). After a 12-min interstimulus period, the stimulus was repeated, this time with the left Peltier element warmed to 50\u00b0C while the right Peltier element was warmed to 40\u00b0C. A camera (Point Grey Research, Richmond, BC, Canada) was used to measure mosquito landings, and only mosquitoes directly on either Peltier area during seconds 60\u2013240 of stimulus periods were scored. Preference was calculated by subtracting the proportion of total mosquitoes on the left Peltier (40 or 50\u00b0C) from the proportion of total mosquitoes on the right Peltier (40\u00b0C). Heat maps are smoothed 2D histograms of mean mosquito occupancy during seconds 60\u2013240 of stimulus periods, sampled at 1\u2009Hz and binned into 15 \u00d7 52 image sectors.\n\n#### Capillary feeder (CAFE)\n\nThis assay was adapted for the mosquito from the original assay developed for Drosophila (Ja et al., 2007) For each trial, five mosquitoes were fasted with access to water for 24\u2009hr, and placed in a polypropylene vial (#89092\u2013742, VWR, Radnor, PA) with access to two 5-\u00b5l calibrated glass capillaries (#53432\u2013706, VWR) containing 10% (w: v) sucrose with 5% (v: v) green McCormick brand food dye. Capillaries spaced ~0.5 cm apart traversed the cotton plug (#49\u2013101, Genesee Scientific, San Diego, CA) of the vial and protruded into the vial < 1 mm to provide a flush surface for mosquitoes to access the liquid while resting on the plug surface. The control capillary contained only green sucrose solution, and the experimental capillary contained green sucrose solution supplemented with 0, 1, or 10 mM of denatonium benzoate (Sigma-Aldrich) or 0, 10, 50, or 100 mM of N-methylmaleimide (Sigma-Aldrich). The experimental capillary with 0 mM chemical was identical to the control capillary, and served as a zero-choice to test for side-bias in the assay. Because a small amount of liquid evaporated during preparation of the capillaries, all choice conditions and genotypes were prepared in a time-staggered format so that any measurement error due to evaporation was spread across the conditions. The levels of remaining liquid in both capillaries were measured after 18\u201320\u2009hr and were compared to the known initial liquid level. Experiments started at ZT 8\u201310 and ended at ZT 4\u20136 the following day. Consumption values were compared to control capillaries in vials without mosquitoes to account for evaporation. We note that in cases where mosquitoes did not feed from a capillary and all liquid loss was due to evaporation, consumption values could be calculated to be negative due to very small variation in evaporation rates between experimental and control capillaries. Any negative consumption values were rounded to zero. Sucrose preference was calculated by dividing the amount consumed from the control capillary (not containing denatonium benzoate or N-methylmaleimide) by the total amount consumed from both capillaries. In experiments with 0 mM denatonium benzoate or 0 mM N-methylmaleimide, one capillary was arbitrarily designated \u2018sucrose only\u2019.\n\n#### Thermal gradient\n\nThis assay was adapted from one developed for Drosophila\u00a0(Sayeed and Benzer, 1996; Hamada et al., 2008). A custom-built enclosure (6 mm tall) was affixed to an aluminum thermal gradient bar (50 \u00d7 30.5 cm, TGB-5030, ThermoElectric Cooling America Corp., Chicago, IL) driven by two Peltier elements (AHP-1200CPV, ThermoElectric Cooling America Corp., Chicago, IL). The enclosure was separated lengthwise into 4 lanes (each 50 \u00d7 6 cm) that were visually isolated from one another. Three lanes were for testing mosquito thermal preference, while the fourth lane was dedicated to measuring air temperature via an array of eight digital temperature sensors (DS18B20, Maxim, San Jose, CA; connected to an Arduino Uno, https://www.arduino.cc/) mounted to the top of the enclosure and distributed evenly across the length of the lane and centered in each analysis sector. An overhead camera (C910, Logitech, Lausanne, Switzerland) monitored mosquito position through the transparent lid of the enclosure. Images were acquired once per minute and analyzed using custom MATLAB scripts to count mosquitoes across eight analysis sectors of the lane. The MATLAB script\u00a0is available for download\u00a0as\u00a0Source code 3. The assay was conducted in a room maintained at 80\u201390% relative humidity and 14\u00b0C to achieve low air temperatures within the gradient enclosure. At the beginning of each 3-hr trial, the air temperature throughout the enclosure was stabilized at ~26\u00b0C, and 25\u201330 mosquitoes were introduced into each lane of the assay. After 90 min, a thermal gradient was established (air temperatures: ~19\u00b0C to ~36\u00b0C) by heating the right Peltier element and cooling the left Peltier element. Mosquitoes were monitored for an additional 90 min while exposed to this thermal gradient. Mosquito distributions during minutes 60\u201390 were monitored in both the \u2018no thermal gradient\u2019 and \u2018thermal gradient\u2019 conditions. Dead mosquitoes were visually identified at the conclusion of each trial. All genotypes were tested in parallel, and their lane positions were randomized across trials.\n\n### Thermal images\n\nAll thermal images were acquired with an infrared camera (E60, FLIR Systems, Wilsonville, OR).\n\n### Statistical analysis\n\nAll statistical analyses were performed using Prism 5 software (GraphPad Software, Inc., La Jolla, CA).\n",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "340aa1f0-a592-4c36-93ac-2f4d62863e18",
+      "submission_id": "72d239f1-2f4c-4b58-be96-167d9d3b0cbc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kristin Scott, University of California, Berkeley , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.11750.015](https://doi.org/10.7554/eLife.11750.015)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"TRPA1 tunes mosquito thermotaxis to host temperatures\" for consideration by eLife. Your article has been favorably assessed by a Senior Editor and three peer reviewers, one of whom is a member of our Board of Reviewing Editors. One of the three reviewers, Paul Garrity, has agreed to share his identity.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is an elegant manuscript that examines genes involved in thermosensation in Ae. Aegypti mosquitoes. The authors established a behavioral assay to test thermal preference and determined the range of temperatures that female mosquitoes find attractive. They then generated targeted mutations in TRPA1 and Gr19, previously shown to participate in Drosophila thermosensation, and examined their role in thermal preference. This is an important study because thermotaxis behaviors in mosquitoes have not yet been studied in depth (and quantitatively), and because the authors link a particular thermoreceptor to heat avoidance using genetic knockouts. The behavioral assays are quite nice and the analysis of mutant mosquitos impressive.\n\nThe following clarifications/additions would help improve the manuscript:\n\n1) A figure showing the genomic organization of TRPA1 and Gr19 genes in wild type/mutant would be extremely useful to assess the genomic alterations.\n\n2) For figures that plot occupancy on the Peltier, the mosquitoes tend to accumulate on the bottom of the Peltier. Since the differential between Peltier temp and ambient temp is relevant here, it would be valuable to know the temperature profile throughout the box (and particularly surrounding the edges of the Peltier). If the temp of the Peltier plate is uneven, then measuring the temp gradient across the plate could help the authors to better define the temp preference range for the mosquitoes. Alternatively, it might be possible to determine occupancy only in the central region of the Peltier, where the temperature is uniform.\n\n3) Why is the occupancy in Figure 1 ~2-3x what is seen in Figure 3?\n\n4) The authors suggest that the broad peak in temp preference (Figure 1E) matches the range of host body temps (Figure 1C), but shouldn't it also represent a trade-off between thermoregulatory (regulating internal body temp) and heat-seeking behavior? Can the authors comment on this trade-off? Do the authors have a suggestion for how these two processes could be uncoupled to study them separately in this system?\n\n5) Figure 2(A\u2013E) should be displayed as \"% on Peltier\" rather than \"normalized% on Peltier\". This is necessary to corroborate the claim that mosquitoes respond to the temperature differential not the absolute temperature, which would be very interesting.\n\n6) Figure 3G explores the temporal dynamics of the temperature seeking behavior. However it is unclear whether the origin of the plots is at t=0 or some other time point. These plots indicate that in all cases (even at higher temperatures >45C) mosquitoes first land on the warm object and then leave it if it is too hot, or persist if it is around 40C. This implies that the \"seeking\" part of the behavior might only depend on detecting warm objects, and that the 90-180 second time window used for all quantifications in the paper comprises a combination of temperature seeking + heat avoidance behaviors. The TrpA1-/- mosquitoes seem to be defective in the heat avoidance behavior not the seeking behavior. These results/interpretations should be discussed in the text.\n\n7) The Introduction does a good job of providing background on the mosquito thermotaxis literature, but could provide better background in comparing/contrasting the thermosensory system of the mosquito with the better studied Drosophila system. As warmth-sensing in Drosophila involves TRPA1 acting in internal thermosensors located in the brain and Gr28b(D) acting in peripheral thermoreceptors located in the antenna/arista, the authors may wish to comment on how this may relate (or not) to mosquito anatomy and what their findings (Aedes and Drosophila TRPA1s seem to have similar functions; Gr28b/Gr19 may not) may mean in this context.\n\n8) Based on the data, statements about blood seeking do not seem relevant. The behavioral phenotype that the authors clearly demonstrated is decreased heat aversion rather than decreased attraction to humans. Statements about the role of TrpA1 in host-seeking behavior of A. aegypti would be best left to the Discussion.\n",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "89f4eceb-ee35-43b5-82dd-e68d01672f23",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C1",
+      "claim": "Female mosquitoes are attracted to human body heat during pursuit of a blood meal.",
+      "claim_type": "EXPLICIT",
+      "source": "While most animals thermotax only to regulate their temperature, female mosquitoes are attracted to human body heat during pursuit of a blood meal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a known fact about mosquito behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "03f5638b-56eb-461e-bb51-18bba6654ab0",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C2",
+      "claim": "Host-seeking mosquitoes are maximally attracted to thermal stimuli approximating host body temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that host-seeking mosquitoes are maximally attracted to thermal stimuli approximating host body temperatures, seeking relative warmth while avoiding both relative cool and stimuli exceeding host body temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "34a6dec0-0782-4b12-83d2-cfb926f9ed6b",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C3",
+      "claim": "Host-seeking mosquitoes seek relative warmth while avoiding both relative cool and stimuli exceeding host body temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that host-seeking mosquitoes are maximally attracted to thermal stimuli approximating host body temperatures, seeking relative warmth while avoiding both relative cool and stimuli exceeding host body temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "772ea02c-4a5f-403b-a01c-8e25c23f6dcc",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C4",
+      "claim": "TRPA1 is required for specialized host-selective thermotaxis in mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the cation channel TRPA1, in addition to playing a conserved role in thermoregulation and chemosensation, is required for this specialized host-selective thermotaxis in mosquitoes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by mutant analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "0af6b50b-f1a9-4660-a406-187ca5f54ed5",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C5",
+      "claim": "AaegTRPA1-/- mutants failed to avoid stimuli exceeding host temperature during host-seeking.",
+      "claim_type": "EXPLICIT",
+      "source": "During host-seeking, AaegTRPA1-/- mutants failed to avoid stimuli exceeding host temperature, and were unable to discriminate between host-temperature and high-temperature stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by behavioral assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "9b018145-3cfc-41a4-9411-68f1b18f2b49",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C6",
+      "claim": "AaegTRPA1-/- mutants were unable to discriminate between host-temperature and high-temperature stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "During host-seeking, AaegTRPA1-/- mutants failed to avoid stimuli exceeding host temperature, and were unable to discriminate between host-temperature and high-temperature stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by choice assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "76497464-31cf-4e80-84e7-92f6c457e5f3",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C7",
+      "claim": "TRPA1-dependent tuning of thermotaxis is likely critical for mosquitoes host-seeking in a complex thermal environment in which humans are warmer than ambient air, but cooler than surrounding sun-warmed surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPA1-dependent tuning of thermotaxis is likely critical for mosquitoes host-seeking in a complex thermal environment in which humans are warmer than ambient air, but cooler than surrounding sun-warmed surfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings based on the experimental data and ecological context.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "0461e523-1f3d-46b0-9996-f37714664858",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C8",
+      "claim": "Adult Caenorhabditis elegans worms migrate preferentially toward a specific thermal environment determined by the temperature of their cultivation.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, adult Caenorhabditis elegans worms migrate preferentially toward a specific thermal environment determined by the temperature of their cultivation (Hedgecock and Russell, 1975; Mori and Ohshima, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "7849046b-1b5e-44a4-88b7-2bd0f7958f6d",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C9",
+      "claim": "Adult Drosophila melanogaster flies prefer a narrow range of air temperatures around 24\u201325\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult Drosophila melanogaster flies prefer a narrow range of air temperatures around 24\u201325\u00b0C (Sayeed and Benzer, 1996; Hamada et al., 2008) and rapidly avoid air temperatures of ~31\u00b0C (Ni et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "b5594b20-a6c2-4869-ae69-7db3daaaf0e2",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C10",
+      "claim": "Adult Drosophila melanogaster flies rapidly avoid air temperatures of ~31\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult Drosophila melanogaster flies prefer a narrow range of air temperatures around 24\u201325\u00b0C (Sayeed and Benzer, 1996; Hamada et al., 2008) and rapidly avoid air temperatures of ~31\u00b0C (Ni et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "a039b688-b540-4bfc-aae0-312870d31c31",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C11",
+      "claim": "Some hematophagous arthropods have evolved a specialized mode of thermotaxis to locate endothermic hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, some hematophagous (blood-feeding) arthropods have evolved a specialized mode of thermotaxis to locate endothermic (warm-blooded) hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by examples and citations provided in the following sentence.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "b54039d4-f57f-42b5-948a-ca939900b2d0",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C12",
+      "claim": "Thermophilic behavior is seen in kissing bugs Triatoma infestans and Rhodnius prolixus.",
+      "claim_type": "EXPLICIT",
+      "source": "Such thermophilic behavior is seen in kissing bugs [Triatoma infestans (Flores and Lazzari, 1996) and Rhodnius prolixus (Schmitz et al., 2000)], the bedbug [Cimex lectularius (Rivnai, 1931)], the tick [Ixodes ricinus (Lees, 1948)], and many species of mosquito (Clements, 1999) including Ae. aegypti, a major tropical disease-vector (Bhatt et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "15372713-1463-4615-886a-4db81d884ddd",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C13",
+      "claim": "Thermophilic behavior is seen in the bedbug Cimex lectularius.",
+      "claim_type": "EXPLICIT",
+      "source": "Such thermophilic behavior is seen in kissing bugs [Triatoma infestans (Flores and Lazzari, 1996) and Rhodnius prolixus (Schmitz et al., 2000)], the bedbug [Cimex lectularius (Rivnai, 1931)], the tick [Ixodes ricinus (Lees, 1948)], and many species of mosquito (Clements, 1999) including Ae. aegypti, a major tropical disease-vector (Bhatt et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "417d94e7-a215-49c7-925e-22083020eb01",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C14",
+      "claim": "Thermophilic behavior is seen in the tick Ixodes ricinus.",
+      "claim_type": "EXPLICIT",
+      "source": "Such thermophilic behavior is seen in kissing bugs [Triatoma infestans (Flores and Lazzari, 1996) and Rhodnius prolixus (Schmitz et al., 2000)], the bedbug [Cimex lectularius (Rivnai, 1931)], the tick [Ixodes ricinus (Lees, 1948)], and many species of mosquito (Clements, 1999) including Ae. aegypti, a major tropical disease-vector (Bhatt et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "556928af-7f61-4f7e-a638-f869befc143d",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C15",
+      "claim": "Thermophilic behavior is seen in many species of mosquito including Ae. aegypti.",
+      "claim_type": "EXPLICIT",
+      "source": "Such thermophilic behavior is seen in kissing bugs [Triatoma infestans (Flores and Lazzari, 1996) and Rhodnius prolixus (Schmitz et al., 2000)], the bedbug [Cimex lectularius (Rivnai, 1931)], the tick [Ixodes ricinus (Lees, 1948)], and many species of mosquito (Clements, 1999) including Ae. aegypti, a major tropical disease-vector (Bhatt et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "40a030fc-29b8-4a98-8917-b4149130bc27",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C16",
+      "claim": "Ae. aegypti is a major tropical disease-vector.",
+      "claim_type": "EXPLICIT",
+      "source": "Such thermophilic behavior is seen in kissing bugs [Triatoma infestans (Flores and Lazzari, 1996) and Rhodnius prolixus (Schmitz et al., 2000)], the bedbug [Cimex lectularius (Rivnai, 1931)], the tick [Ixodes ricinus (Lees, 1948)], and many species of mosquito (Clements, 1999) including Ae. aegypti, a major tropical disease-vector (Bhatt et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "30921c2a-15df-4d0f-a098-4dade90eedba",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C17",
+      "claim": "Female Ae. aegypti require a vertebrate blood meal for the production of eggs.",
+      "claim_type": "EXPLICIT",
+      "source": "Female Ae. aegypti require a vertebrate blood meal for the production of eggs, and finding a suitable warm-blooded host is therefore an essential component of reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mosquito biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "1359652d-5f2c-47d1-939a-57d55b99c329",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C18",
+      "claim": "Finding a suitable warm-blooded host is an essential component of reproduction for female Ae. aegypti.",
+      "claim_type": "EXPLICIT",
+      "source": "Female Ae. aegypti require a vertebrate blood meal for the production of eggs, and finding a suitable warm-blooded host is therefore an essential component of reproduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the requirement for blood meals for egg production.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "8058ddc8-d9e3-4de0-82c7-afa25cbbcf12",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C19",
+      "claim": "Mosquitoes use a variety of physical and chemical senses to locate hosts in their environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Mosquitoes use a variety of physical and chemical senses to locate hosts in their environment (Card\u00e9, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "85ca1cd0-e281-4f51-afc9-2c693f88452b",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C20",
+      "claim": "When host-seeking, mosquitoes become strongly attracted to inanimate warm objects, eagerly probing at them as if they were hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "When host-seeking, these animals become strongly attracted to inanimate warm objects, eagerly probing at them as if they were hosts (Howlett, 1910).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "9ad582fd-272f-4aff-bf9f-3a46a98fe57a",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C21",
+      "claim": "Host-seeking behavior in Ae. aegypti can be activated by an increase in ambient carbon dioxide.",
+      "claim_type": "EXPLICIT",
+      "source": "For mosquitoes such as Ae. aegypti, host-seeking behavior can be activated by an increase in ambient carbon dioxide (CO2) (Majeed et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "725ddf05-9902-47d7-a894-3aef81b52315",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C22",
+      "claim": "CO2 activation elicits flight activity in Ae. aegypti.",
+      "claim_type": "EXPLICIT",
+      "source": "This activation elicits flight activity (Eiras and Jepson, 1991; McMeniman et al., 2014) and results in an array of behaviors including attraction to visual stimuli (van Breugel et al., 2015) and host olfactory cues (Dekker et al., 2005; McMeniman et al., 2014), and landing on warm objects (Burgess, 1959; Eiras and Jepson, 1994; Kr\u00f6ber et al., 2010; Maekawa et al., 2011; McMeniman et al., 2014; van Breugel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "83cda4d6-7eed-40b8-9f80-4059555098cb",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C23",
+      "claim": "CO2 activation results in attraction to visual stimuli in Ae. aegypti.",
+      "claim_type": "EXPLICIT",
+      "source": "This activation elicits flight activity (Eiras and Jepson, 1991; McMeniman et al., 2014) and results in an array of behaviors including attraction to visual stimuli (van Breugel et al., 2015) and host olfactory cues (Dekker et al., 2005; McMeniman et al., 2014), and landing on warm objects (Burgess, 1959; Eiras and Jepson, 1994; Kr\u00f6ber et al., 2010; Maekawa et al., 2011; McMeniman et al., 2014; van Breugel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "0d708637-8483-42de-a362-e5090f08b0e5",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C24",
+      "claim": "CO2 activation results in attraction to host olfactory cues in Ae. aegypti.",
+      "claim_type": "EXPLICIT",
+      "source": "This activation elicits flight activity (Eiras and Jepson, 1991; McMeniman et al., 2014) and results in an array of behaviors including attraction to visual stimuli (van Breugel et al., 2015) and host olfactory cues (Dekker et al., 2005; McMeniman et al., 2014), and landing on warm objects (Burgess, 1959; Eiras and Jepson, 1994; Kr\u00f6ber et al., 2010; Maekawa et al., 2011; McMeniman et al., 2014; van Breugel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "1ba79564-4c4f-4229-9453-8a56d5c36e67",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C25",
+      "claim": "CO2 activation results in landing on warm objects in Ae. aegypti.",
+      "claim_type": "EXPLICIT",
+      "source": "This activation elicits flight activity (Eiras and Jepson, 1991; McMeniman et al., 2014) and results in an array of behaviors including attraction to visual stimuli (van Breugel et al., 2015) and host olfactory cues (Dekker et al., 2005; McMeniman et al., 2014), and landing on warm objects (Burgess, 1959; Eiras and Jepson, 1994; Kr\u00f6ber et al., 2010; Maekawa et al., 2011; McMeniman et al., 2014; van Breugel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "fdc8ac35-62fb-43de-a089-ad2dba6fffeb",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C26",
+      "claim": "Ae. aegypti flying in a wind tunnel can detect a warmed stimulus from a distance, eliciting attraction and thermotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "Ae. aegypti flying in a wind tunnel can detect a warmed stimulus from a distance, eliciting attraction and thermotaxis (van Breugel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "59eb3454-1d3b-4ef2-a3cc-d1053ac14fd7",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C27",
+      "claim": "Thermotaxis is typically initiated by thermosensitive neurons that sample environmental temperature to inform navigational decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "Thermotaxis is typically initiated by thermosensitive neurons that sample environmental temperature to inform navigational decision-making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about thermotaxis mechanisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "444b8b50-d0a0-4ff5-9146-5453097b0933",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C28",
+      "claim": "Thermosensitive neurons must be equipped with molecular thermosensors capable of detecting and transducing thermal stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Such neurons must be equipped with molecular thermosensors capable of detecting and transducing thermal stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the function of thermosensitive neurons.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "88d7a4ad-6581-4ec6-871f-13974c891c04",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C29",
+      "claim": "Many molecular thermoreceptors are members of the transient receptor potential (TRP) superfamily of ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Diverse molecular thermoreceptors have been identified in the animal kingdom, many of which are members of the transient receptor potential (TRP) superfamily of ion channels (Barbagallo and Garrity, 2015; Palkar et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "b211f74f-890b-4479-8d88-dcb07d4b702a",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C30",
+      "claim": "Different thermosensitive TRPs show distinct tuning spanning the thermal spectrum from noxious cold to noxious heat.",
+      "claim_type": "EXPLICIT",
+      "source": "Different thermosensitive TRPs show distinct tuning spanning the thermal spectrum from noxious cold to noxious heat.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TRP channel properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "6932d6a8-c5c6-44d9-8227-b523992c5a51",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C31",
+      "claim": "TRPA1 is a heat sensor in Drosophila melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these is TRPA1, which is a heat sensor in multiple insects, including the vinegar fly D. melanogaster and the malaria mosquito Anopheles gambiae (Hamada et al., 2008; Wang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "58ab59a8-4160-45f5-8fc6-477b71c9da9b",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C32",
+      "claim": "TRPA1 is a heat sensor in Anopheles gambiae.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these is TRPA1, which is a heat sensor in multiple insects, including the vinegar fly D. melanogaster and the malaria mosquito Anopheles gambiae (Hamada et al., 2008; Wang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "a309e157-d0e7-4d46-97ee-5b645c3e9f6a",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C33",
+      "claim": "Neurons in thermosensitive sensilla of An. gambiae female antennae express TRPA1.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons in thermosensitive sensilla (Gingl et al., 2005) of An. gambiae female antennae express TRPA1 (Wang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "3f5ba719-b9be-4a92-b6e4-76e3c6da6261",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C34",
+      "claim": "In D. melanogaster, TRPA1 is expressed in internal thermosensors located in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "In D. melanogaster, TRPA1 is expressed in internal thermosensors located in the brain, and DmelTRPA1-/- mutants fail to avoid high air temperature in a thermal gradient (Hamada et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "7affc097-b906-4bad-b63c-0688174529a4",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C35",
+      "claim": "DmelTRPA1-/- mutants fail to avoid high air temperature in a thermal gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "In D. melanogaster, TRPA1 is expressed in internal thermosensors located in the brain, and DmelTRPA1-/- mutants fail to avoid high air temperature in a thermal gradient (Hamada et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "c53252da-3461-4dbc-9834-37a8f8c0648a",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C36",
+      "claim": "Some snakes and vampire bats express thermosensitive TRP channels in organs used to sense infrared radiation from warm-blooded prey.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, some snakes and vampire bats express thermosensitive TRP channels in organs used to sense infrared radiation from warm-blooded prey (Gracheva et al., 2010; 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "a1702cda-4080-411d-a9b4-84751e119b8d",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C37",
+      "claim": "Gr28b is a gustatory receptor paralog expressed in heat-sensitive neurons of D. melanogaster aristae.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a structurally distinct insect thermosensor, Gr28b, was identified in D. melanogaster (Ni et al., 2013). Gr28b, a gustatory receptor paralog, is expressed in heat-sensitive neurons of D. melanogaster aristae and is an important component of thermotaxis during rapid avoidance of heat (Ni et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "18ae7a59-7e42-4ab8-8cd2-6ed6140ca62d",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C38",
+      "claim": "Gr28b is an important component of thermotaxis during rapid avoidance of heat in D. melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a structurally distinct insect thermosensor, Gr28b, was identified in D. melanogaster (Ni et al., 2013). Gr28b, a gustatory receptor paralog, is expressed in heat-sensitive neurons of D. melanogaster aristae and is an important component of thermotaxis during rapid avoidance of heat (Ni et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "00f54783-f55a-41a3-a350-8bd671e90a1b",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C39",
+      "claim": "Gr28b is highly conserved among Drosophila species.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also highly conserved among Drosophila species (McBride et al., 2007), and has a clear ortholog in Ae. aegypti, AaegGr19 (Ni et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "466bbb61-86ed-4501-8293-f568714cddc5",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C40",
+      "claim": "Gr28b has a clear ortholog in Ae. aegypti, AaegGr19.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also highly conserved among Drosophila species (McBride et al., 2007), and has a clear ortholog in Ae. aegypti, AaegGr19 (Ni et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "743d0137-ed8d-41cb-86c0-1c0136d40889",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C41",
+      "claim": "Ae. aegypti mosquitoes reliably responded to 12 serial presentations of a 3-minute long 40\u00b0C stimulus over the course of more than 2.5 hr, with no evidence of habituation.",
+      "claim_type": "EXPLICIT",
+      "source": "In our heat-seeking assay, Ae. aegypti mosquitoes reliably responded to 12 serial presentations of a 3-minute long 40\u00b0C stimulus over the course of more than 2.5 hr, with no evidence of habituation (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "96f2a4a7-a0a5-4b06-a4ff-63faed5b8826",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C42",
+      "claim": "Ae. aegypti can feed on a variety of hosts with core body temperatures ranging from ~37\u00b0C (humans) to ~40\u201343\u00b0C (chickens).",
+      "claim_type": "EXPLICIT",
+      "source": "Ae. aegypti can feed on a variety of hosts (Clements, 1999; Tandon and Ray, 2000) with core body temperatures ranging from ~37\u00b0C (humans) to ~40\u201343\u00b0C (chickens) (Richards, 1971) (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous research and illustrated in Figure 1C.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "3c21b8b0-0542-48bf-bd11-f72b564e6869",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C43",
+      "claim": "Mosquitoes were highly sensitive to thermal contrast and were attracted to stimuli 2.5\u00b0C above ambient.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mosquitoes were highly sensitive to thermal contrast and were attracted to stimuli 2.5\u00b0C above ambient (Figure 1D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "1c540c90-80be-457d-ba09-0a7827999798",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C44",
+      "claim": "Mosquito occupancy on the Peltier increased monotonically with stimulus temperatures up to 40\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, mosquito occupancy on the Peltier increased monotonically with stimulus temperatures up to 40\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "44cc6e4c-d274-40fe-bd83-6826d7bdd340",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C45",
+      "claim": "For higher temperature stimuli above 40\u00b0C, there was a dramatic reduction in Peltier occupancy.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for higher temperature stimuli, we observed a dramatic reduction in Peltier occupancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "910e693c-c453-4831-bb1e-e9febe67e7be",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C46",
+      "claim": "A 50\u00b0C stimulus resulted in approximately half as many animals on the Peltier compared to a 40\u00b0C stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "A 50\u00b0C stimulus resulted in approximately half as many animals on the Peltier compared to a 40\u00b0C stimulus (Figure 1D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "04ed58c9-eaf1-45a3-9c6d-eebbbaa6a0ce",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C47",
+      "claim": "Stimuli of 55\u00b0C or greater resulted in occupancy rates indistinguishable from an ambient thermal stimulus (26\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "Stimuli of 55\u00b0C or greater resulted in occupancy rates indistinguishable from an ambient thermal stimulus (26\u00b0C) (Figure 1D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "a0bbb298-5358-4800-81b8-9ce7f2ed888d",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C48",
+      "claim": "While mosquitoes were still attracted to high-temperature stimuli, they populated the area peripheral to the Peltier, and strongly avoided the Peltier itself for stimuli \u2265 55\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Spatial analysis of mosquito occupancy on or near the Peltier revealed that while mosquitoes were still attracted to high-temperature stimuli, they populated the area peripheral to the Peltier, and strongly avoided the Peltier itself for stimuli \u2265 55\u00b0C (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by spatial analysis data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "508dcac2-0fc7-4dc3-9af8-6b0cd4fa3755",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C49",
+      "claim": "Peltier occupancy for stimuli 21\u201340\u00b0C depended on the differential between the Peltier and ambient temperature, rather than the absolute temperature of the Peltier.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Peltier occupancy for stimuli 21\u201340\u00b0C depended on the differential between the Peltier and ambient temperature (Figures 2B,C), rather than the absolute temperature of the Peltier (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 2A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "56bde5d5-5742-4288-8ca6-440e8c85d8df",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C50",
+      "claim": "At all ambient temperatures tested, a stimulus 5\u00b0C above ambient was sufficient to elicit significant heat-seeking.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, at all ambient temperatures tested, a stimulus 5\u00b0C above ambient was sufficient to elicit significant heat-seeking, and elicited approximately half as much Peltier occupancy as a stimulus 10\u00b0C above ambient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "2cfcb2b3-1d4c-4f20-89bf-bb2a4dd291c8",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C51",
+      "claim": "A stimulus 5\u00b0C above ambient elicited approximately half as much Peltier occupancy as a stimulus 10\u00b0C above ambient.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, at all ambient temperatures tested, a stimulus 5\u00b0C above ambient was sufficient to elicit significant heat-seeking, and elicited approximately half as much Peltier occupancy as a stimulus 10\u00b0C above ambient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "70ab3948-25d2-49ab-bbd0-d81f785e12c4",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C52",
+      "claim": "Heat-seeking to targets 50\u201355\u00b0C was inhibited at all ambient temperatures tested.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, heat-seeking to targets 50\u201355\u00b0C was inhibited at all ambient temperatures tested (Figures 2D,F), despite the fact that the temperature differential varied widely in these situations (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 2D\u2013F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "7880307a-89f0-46af-9b3d-e336a05edefb",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C53",
+      "claim": "Ae. aegypti thermotaxis is driven by seeking relative warmth, but restricted by an absolute upper threshold of ~50\u201355\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that Ae. aegypti thermotaxis is driven by seeking relative warmth, but restricted by an absolute upper threshold of ~50\u201355\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "b2d13b28-810b-4e13-be2c-4b3788982328",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C54",
+      "claim": "Mosquitoes left the Peltier at similar rates regardless of the absolute temperature of the stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mosquitoes left the Peltier at similar rates regardless of the absolute temperature of the stimulus (Figure 2G,H, Figure 2\u2014figure supplement 1; based on analysis of data in Figure 1D,E), demonstrating that mosquitoes avoid relative cool during heat-seeking.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 2G,H and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "538dc160-0fd0-471e-9cb4-63845687a568",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C55",
+      "claim": "Mosquitoes avoid relative cool during heat-seeking.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mosquitoes left the Peltier at similar rates regardless of the absolute temperature of the stimulus (Figure 2G,H, Figure 2\u2014figure supplement 1; based on analysis of data in Figure 1D,E), demonstrating that mosquitoes avoid relative cool during heat-seeking.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the experimental data showing similar rates of leaving the Peltier.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "cfd065bc-f7d1-478a-9850-843b6257f01e",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C56",
+      "claim": "Ae. aegypti heat-seeking involves seeking of relative warmth, avoidance of relative cool, and avoidance of thermal stimuli exceeding host temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Our characterization of Ae. aegypti heat-seeking revealed multiple behavioral components contributing to selective thermotaxis during host-seeking: 1) the seeking of relative warmth; 2) the avoidance of relative cool; and 3) the avoidance of thermal stimuli exceeding host temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings from the thermotaxis assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "d1321aa8-898b-48a2-9c30-2bf1d57916fc",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C57",
+      "claim": "AaegTRPA1-/- mutants rejected denatonium benzoate.",
+      "claim_type": "EXPLICIT",
+      "source": "AaegTRPA1-/- mutants rejected denatonium benzoate (Figure 3D) but did not avoid consumption of N-methylmaleimide (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "0156beb0-f8eb-47f9-bd3b-44d0dae05aeb",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C58",
+      "claim": "AaegTRPA1-/- mutants did not avoid consumption of N-methylmaleimide.",
+      "claim_type": "EXPLICIT",
+      "source": "AaegTRPA1-/- mutants rejected denatonium benzoate (Figure 3D) but did not avoid consumption of N-methylmaleimide (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "f90763d7-22dc-48cf-b676-5d2432bb811d",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C59",
+      "claim": "Wild-type Ae. aegypti mosquitoes strongly avoided consumption of N-methylmaleimide.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a modified capillary feeding (CAFE) assay (Ja et al., 2007) (Figure 3B), we found that wild-type Ae. aegypti mosquitoes strongly avoided consumption of N-methylmaleimide (Figure 3C), as well as the bitter compound denatonium benzoate (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "a8eb645b-2683-489c-9a91-703835a5ed3e",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C60",
+      "claim": "Wild-type Ae. aegypti mosquitoes strongly avoided consumption of denatonium benzoate.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a modified capillary feeding (CAFE) assay (Ja et al., 2007) (Figure 3B), we found that wild-type Ae. aegypti mosquitoes strongly avoided consumption of N-methylmaleimide (Figure 3C), as well as the bitter compound denatonium benzoate (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "d4053a97-46ac-48e1-b513-f98dbddfc83e",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C61",
+      "claim": "TRPA1 is a highly conserved chemosensor of electrophile irritants such as N-methylmaleimide.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to its function as a thermoreceptor, TRPA1 is a highly conserved chemosensor of electrophile irritants such as N-methylmaleimide (Macpherson et al., 2007; Kang et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "07ab1b78-c5b0-4d35-85d8-de60a4639776",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C62",
+      "claim": "AaegTRPA1-/- mutants were impaired in avoidance of high air temperature, leading to significant mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "AaegTRPA1-/- mutants were impaired in avoidance of high air temperature, leading to significant mortality (Figure 3\u2014figure supplement 1C\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1C\u2013G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "a0041af6-842d-4186-a1ab-bf7f07f75d23",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C63",
+      "claim": "TRPA1 has a conserved chemosensory and thermosensory function in Ae. aegypti.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that TRPA1 has a conserved chemosensory and thermosensory function in Ae. aegypti.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the N-methylmaleimide avoidance and thermal gradient assay data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "95d74611-3460-40d8-bf7e-93eb224fd2b8",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C64",
+      "claim": "AaegTRPA1-/- mutants showed normal attraction to stimuli at or below 45\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "AaegTRPA1-/- mutants showed normal attraction to stimuli at or below 45\u00b0C, but strikingly lacked normal avoidance of higher temperature stimuli (50\u00b0C and 55\u00b0C) (Figures 3E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 3E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "8da55e9a-f997-406d-9345-3d4235e1825a",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C65",
+      "claim": "AaegTRPA1-/- mutants lacked normal avoidance of higher temperature stimuli (50\u00b0C and 55\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "AaegTRPA1-/- mutants showed normal attraction to stimuli at or below 45\u00b0C, but strikingly lacked normal avoidance of higher temperature stimuli (50\u00b0C and 55\u00b0C) (Figures 3E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 3E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "4b416289-754e-4573-8c39-40e73f4e02a0",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C66",
+      "claim": "AaegTRPA1-/- mutants persisted on the Peltier during 50, 55, and 60\u00b0C stimulus presentations, whereas control animals rapidly left these high-temperature stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "A detailed analysis of Peltier occupancy over time revealed that AaegTRPA1-/- mutants persisted on the Peltier during 50, 55, and 60\u00b0C stimulus presentations, whereas control animals rapidly left these high-temperature stimuli (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "50031600-7c36-4600-8d5c-3a4da7e41e11",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C67",
+      "claim": "AaegTRPA1 is not required for initial attraction to warmth but is required for normal avoidance of high-temperature stimuli that exceed host body temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, AaegTRPA1 is not required for initial attraction to warmth but is required for normal avoidance of high-temperature stimuli that exceed host body temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data in Figures 3E\u2013G.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "a86bcb7e-e80b-4083-ab40-f483ed01148e",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C68",
+      "claim": "AaegGr19-/- mutant mosquitoes showed no thermotaxis defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this thermosensor is required for mediating rapid avoidance of warmth in D. melanogaster (Ni et al., 2013), AaegGr19-/- mutant mosquitoes showed no thermotaxis defects (Figure 3\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "25ce2aea-1f6a-4ecd-bbf9-0e16cfa7cac6",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C69",
+      "claim": "Gr28b is required for mediating rapid avoidance of warmth in D. melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "Although this thermosensor is required for mediating rapid avoidance of warmth in D. melanogaster (Ni et al., 2013), AaegGr19-/- mutant mosquitoes showed no thermotaxis defects (Figure 3\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "3fe04fc2-592d-46b5-8571-5cdcce1149a0",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C70",
+      "claim": "DmelTRPA1 is expressed in internal thermosensors of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "DmelTRPA1 is expressed in internal thermosensors of the brain (Hamada et al., 2008), while thermosensitive isoforms of DmelGr28b are expressed in peripheral heat-sensors (Ni et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "ecbb6a7d-bf1b-41b6-9937-3b55d0209aaf",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C71",
+      "claim": "Thermosensitive isoforms of DmelGr28b are expressed in peripheral heat-sensors.",
+      "claim_type": "EXPLICIT",
+      "source": "DmelTRPA1 is expressed in internal thermosensors of the brain (Hamada et al., 2008), while thermosensitive isoforms of DmelGr28b are expressed in peripheral heat-sensors (Ni et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "5a902f2b-be4f-4662-8a43-dd80f5004ec5",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C72",
+      "claim": "TRPA1 RNA is expressed in numerous tissues including the antennae in Ae. aegypti.",
+      "claim_type": "EXPLICIT",
+      "source": "In Ae. aegypti, TRPA1 RNA is expressed in numerous tissues including the antennae (Matthews et al., 2015), where it may be associated with peripheral thermosensitive sensilla responding to rapid thermal fluctuations (Gingl et al., 2005), as it is in An. gambiae (Wang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "026465d6-8795-4dce-a590-4be441f4b652",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C73",
+      "claim": "TRPA1 may be associated with peripheral thermosensitive sensilla responding to rapid thermal fluctuations in Ae. aegypti.",
+      "claim_type": "EXPLICIT",
+      "source": "In Ae. aegypti, TRPA1 RNA is expressed in numerous tissues including the antennae (Matthews et al., 2015), where it may be associated with peripheral thermosensitive sensilla responding to rapid thermal fluctuations (Gingl et al., 2005), as it is in An. gambiae (Wang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on expression data and comparison to An. gambiae.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "ffd147c7-8b66-45d4-9373-20353c4c990e",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C74",
+      "claim": "Gr19 transcript is broadly expressed in Ae. aegypti.",
+      "claim_type": "EXPLICIT",
+      "source": "The cellular expression pattern of Gr19 in Ae. aegypti is not known, but its transcript is broadly expressed (Matthews et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "55d5e0fd-71d0-401d-877f-c87212a52b1e",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C75",
+      "claim": "When presented with two 40\u00b0C stimuli, both wild-type and mutant mosquitoes distributed equally between the Peltiers.",
+      "claim_type": "EXPLICIT",
+      "source": "When presented with two 40\u00b0C stimuli, both wild-type and mutant mosquitoes distributed equally between the Peltiers (Figure 4B), but in a choice between a 40\u00b0C and 50\u00b0C stimulus, wild-type mosquitoes strongly preferred the 40\u00b0C Peltier (Figure 4C) and avoided the 50\u00b0C Peltier (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "8281540b-4d1c-4a8d-9b21-35f9f705fdc0",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C76",
+      "claim": "In a choice between a 40\u00b0C and 50\u00b0C stimulus, wild-type mosquitoes strongly preferred the 40\u00b0C Peltier.",
+      "claim_type": "EXPLICIT",
+      "source": "When presented with two 40\u00b0C stimuli, both wild-type and mutant mosquitoes distributed equally between the Peltiers (Figure 4B), but in a choice between a 40\u00b0C and 50\u00b0C stimulus, wild-type mosquitoes strongly preferred the 40\u00b0C Peltier (Figure 4C) and avoided the 50\u00b0C Peltier (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "4748e536-79c7-4d0a-936b-48a79978cadd",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C77",
+      "claim": "In a choice between a 40\u00b0C and 50\u00b0C stimulus, wild-type mosquitoes avoided the 50\u00b0C Peltier.",
+      "claim_type": "EXPLICIT",
+      "source": "When presented with two 40\u00b0C stimuli, both wild-type and mutant mosquitoes distributed equally between the Peltiers (Figure 4B), but in a choice between a 40\u00b0C and 50\u00b0C stimulus, wild-type mosquitoes strongly preferred the 40\u00b0C Peltier (Figure 4C) and avoided the 50\u00b0C Peltier (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "57b2a4a9-4c22-42ac-9699-ccad7eea6829",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C78",
+      "claim": "In a choice between a 40\u00b0C and 50\u00b0C stimulus, AaegTRPA1-/- mutants failed to avoid the 50\u00b0C Peltier, resulting in no preference for the 40\u00b0C stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, in this choice scenario, AaegTRPA1-/- mutants failed to avoid the 50\u00b0C Peltier, resulting in no preference for the 40\u00b0C stimulus (Figure 4 C, D, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 4C,D and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "b1552734-a9b6-4e1f-86e9-075989823aad",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C79",
+      "claim": "In an outdoor environment, hosts are often warmer than the surrounding air but cooler than sun-warmed soil, rocks, trees, and human-made objects.",
+      "claim_type": "EXPLICIT",
+      "source": "In an outdoor environment, however, hosts are often warmer than the surrounding air but cooler than sun-warmed soil, rocks, trees, and human-made objects (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated by the thermal image in Figure 4F.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "a465b860-d511-48df-a966-b93642a3b156",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C80",
+      "claim": "Diurnal mosquitoes such as Ae. aegypti are poorly served by merely thermotaxing to the hottest object available.",
+      "claim_type": "EXPLICIT",
+      "source": "For this reason, diurnal mosquitoes such as Ae. aegypti are poorly served by merely thermotaxing to the hottest object available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the thermal landscape described.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "c713cf81-d66c-4715-a326-95af26525acc",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C81",
+      "claim": "A more optimal strategy for mosquitoes is to search specifically for biologically relevant stimuli, and to avoid thermal stimuli exceeding host temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "A more optimal strategy is to search specifically for biologically relevant stimuli, and to avoid thermal stimuli exceeding host temperature, as we have observed in our laboratory models of heat-seeking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data and ecological context.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "6bb361ee-b42c-4443-951c-563f19a43c8e",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C82",
+      "claim": "Acquiring a blood meal is an essential component of reproduction for a female Ae. aegypti mosquito.",
+      "claim_type": "EXPLICIT",
+      "source": "Acquiring a blood meal is an essential component of reproduction for a female Ae. aegypti mosquito.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mosquito biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "c718b429-2c95-498c-a5ba-924f406986eb",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C83",
+      "claim": "A female mosquito should reject 'distracting' stimuli that exceed host temperatures to maximize her chances of success.",
+      "claim_type": "EXPLICIT",
+      "source": "To maximize her chances of success, a female mosquito should reject 'distracting' stimuli that exceed host temperatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the need to find hosts efficiently.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "d2547974-03d9-463c-b73b-0ae3d13e0942",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C84",
+      "claim": "AaegTRPA1 is critical for selective thermotaxis in mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that AaegTRPA1 is critical for this selective thermotaxis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing mutant phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "cf601595-286b-4ec2-bfc2-cf741d6f00e5",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C85",
+      "claim": "Mosquito heat-seeking behavior represents an excellent model system for further study of the genetics, neuroscience, and decision-making underlying thermosensation and thermotaxis.",
+      "claim_type": "EXPLICIT",
+      "source": "Mosquito heat-seeking behavior represents an excellent model system for further study of the genetics (Kang et al., 2012; Zhong et al., 2012), neuroscience (Frank et al., 2015; Liu et al., 2015), and decision-making (Luo et al., 2010) underlying thermosensation and thermotaxis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an opinion supported by citations to relevant research areas.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "93623bef-0915-4381-9b05-59b4e355aec7",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C86",
+      "claim": "Mechanistic studies of thermosensation have been largely restricted to traditional laboratory model organisms, such as domestic mice and Drosophila melanogaster flies.",
+      "claim_type": "EXPLICIT",
+      "source": "Until now, mechanistic studies of thermosensation have been largely restricted to traditional laboratory model organisms, such as domestic mice and Drosophila melanogaster flies, whose thermotaxis consists mainly of moving away from suboptimal thermal environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the field of thermosensation research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "cb18cc6e-0eb5-44bb-be50-5eb9160a4dfe",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C87",
+      "claim": "The thermotaxis of traditional laboratory model organisms consists mainly of moving away from suboptimal thermal environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Until now, mechanistic studies of thermosensation have been largely restricted to traditional laboratory model organisms, such as domestic mice and Drosophila melanogaster flies, whose thermotaxis consists mainly of moving away from suboptimal thermal environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about thermotaxis in model organisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "9fd38ca7-f272-4d17-b177-adb48e448b34",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C88",
+      "claim": "The avoidance of high-temperature stimuli during heat-seeking may be influenced by a nociceptive or thermoregulatory response independent of host-seeking behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the avoidance of high-temperature stimuli during heat-seeking may be influenced by a nociceptive or thermoregulatory response independent of host-seeking behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the mechanisms underlying the observed behavior.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "30f6854f-c2c7-4089-a6f9-512d2bab0652",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C89",
+      "claim": "Both AaegTRPA1-/- and AaegGr19-/- mutants retain normal attraction to warmth.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work identifies TRPA1 as a gene regulating mosquito avoidance of high-temperature stimuli, which we have shown to be a major behavioral component of heat-seeking. However, because both AaegTRPA1-/- and AaegGr19-/- mutants retain normal attraction to warmth, this aspect of heat-seeking must rely on other thermoreceptors, still to be identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data showing normal attraction to warmth in both mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "2eba526a-2c44-43da-9737-0213add50d19",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C90",
+      "claim": "Attraction to warmth in mosquitoes must rely on other thermoreceptors, still to be identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work identifies TRPA1 as a gene regulating mosquito avoidance of high-temperature stimuli, which we have shown to be a major behavioral component of heat-seeking. However, because both AaegTRPA1-/- and AaegGr19-/- mutants retain normal attraction to warmth, this aspect of heat-seeking must rely on other thermoreceptors, still to be identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the mutant phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "5b580692-5ed9-4f3e-8738-80a06aa57281",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C91",
+      "claim": "Attraction to warmth must be mediated either by a single thermosensor that adapts to background temperature, or multiple thermosensors each tuned to a distinct absolute threshold.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study shows that this attraction must be mediated either by a single thermosensor that adapts to background temperature, or multiple thermosensors each tuned to a distinct absolute threshold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the mechanisms underlying attraction to warmth.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "693e4b5a-7522-4f05-b028-345fb85bf7f5",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C92",
+      "claim": "During interactions with a warm-blooded host or a 50\u00b0C Peltier, mosquitoes are likely experiencing a wide range of thermal fluctuations.",
+      "claim_type": "EXPLICIT",
+      "source": "During interactions with a warm-blooded host or a 50\u00b0C Peltier, mosquitoes are likely experiencing a wide range of thermal fluctuations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the thermal environment.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "8bb4de9a-5a32-4b6e-9d8b-47b0a3490e62",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C93",
+      "claim": "There can be a 10\u00b0C thermal gradient in the air within 5 mm of a 37\u00b0C stimulus or human arm.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, there can be a 10\u00b0C thermal gradient in the air within 5 mm of a 37\u00b0C stimulus or human arm (van Breugel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "54ccbffb-872b-4b49-89b5-e936fb538cbb",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C94",
+      "claim": "For a mosquito standing on a warmed Peltier, the antennae, brain, thorax, forelegs, and proboscis may all be experiencing different temperatures.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that for a mosquito standing on a warmed Peltier, the antennae, brain, thorax, forelegs, and proboscis may all be experiencing different temperatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the thermal gradient data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "29c770e0-abd1-4db4-85d4-fb3d6dc493ff",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C95",
+      "claim": "The temperature of mosquito tissues will be greatly influenced by their material and geometric properties, as well as thermal conduction due to contact with the Peltier.",
+      "claim_type": "EXPLICIT",
+      "source": "The temperature of mosquito tissues will also be greatly influenced by their material and geometric properties, as well as thermal conduction due to contact with the Peltier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of heat transfer.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "5432b192-a295-4386-abd0-33386f4d76c0",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C96",
+      "claim": "Convective plumes forming in the air near a vertical heated plate can be highly dynamic and turbulent in their structure, with thermal air gradients differing considerably at the bottom and top of the plate.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, convective plumes forming in the air near a vertical heated plate can be highly dynamic and turbulent in their structure, with thermal air gradients differing considerably at the bottom and top of the plate (Bejan, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "b613aadd-48b0-4a9e-a437-9c1bb35a8c7b",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C97",
+      "claim": "Mosquitoes in the assay often appear to be differentially attracted to the bottom and top of the Peltier.",
+      "claim_type": "EXPLICIT",
+      "source": "These features of thermal stimuli may explain why mosquitoes in our assay often appear to be differentially attracted to the bottom and top of the Peltier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "1870ebba-cc8a-461e-b511-db9bf15de31f",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C98",
+      "claim": "Understanding the behavioral and molecular basis of thermotaxis in mosquitoes and other disease vectors is of great biomedical importance.",
+      "claim_type": "EXPLICIT",
+      "source": "Understanding the behavioral and molecular basis of thermotaxis in mosquitoes and other disease vectors (Flores and Lazzari, 1996; Schmitz et al., 2000) is of great biomedical importance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the importance of the research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "1fdc8ddc-ddc0-4346-b3ab-affe0b54bf3f",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C99",
+      "claim": "Ae. aegypti mosquitoes are potent vectors of yellow fever, chikungunya, and dengue arboviruses, resulting annually in hundreds of millions of infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Ae. aegypti mosquitoes are potent vectors of yellow fever, chikungunya, and dengue arboviruses, resulting annually in hundreds of millions of infections (Bhatt et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "6387fd76-c28a-4b48-ba92-a33b612be7a0",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C100",
+      "claim": "Further study of mosquito heat-seeking behavior may aid in the design of next-generation traps, repellents, and control strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Further study of mosquito heat-seeking behavior may aid in the design of next-generation traps, repellents, and control strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the potential applications of the research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "d8964ff8-8181-4ddf-bc3b-4e94e13eda9b",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C101",
+      "claim": "Humans have typical skin temperatures around 33-34\u00b0C and core temperatures around 37\u00b0C.",
+      "claim_type": "IMPLICIT",
+      "source": "Typical skin and core temperatures of Ae. aegypti hosts, humans and chickens (Richards, 1971; Yao, et al., 2008.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C with citation support.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "c9599afa-c42b-4a46-b1a8-091805bc52d3",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C102",
+      "claim": "Chickens have typical skin temperatures around 32-33\u00b0C and core temperatures around 40-43\u00b0C.",
+      "claim_type": "IMPLICIT",
+      "source": "Typical skin and core temperatures of Ae. aegypti hosts, humans and chickens (Richards, 1971; Yao, et al., 2008.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 1C with citation support.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "f5063c1c-3003-4083-9efa-73044f317b64",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "claim_id": "C103",
+      "claim": "Mosquitoes can detect thermal contrast as small as 2.5\u00b0C above ambient temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mosquitoes can search for hosts in a wide range of ambient temperatures by seeking relative warmth and avoiding relative cool. Remarkably, these animals can detect a stimulus with thermal contrast as small as 2.5\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6243e5a8-ec0d-4bb4-b095-f89d042aa04b",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mosquitoes show no habituation to repeated thermal stimuli over 2.5 hours. Ae. aegypti reliably responded to 12 serial presentations of a 3-minute 40\u00b0C stimulus with consistent Peltier occupancy across all presentations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 is directly supported by experimental data in Figure 1\u2014figure supplement 1, showing consistent behavioral responses across 12 stimulus presentations with no significant decline in occupancy. This validates the assay for subsequent experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "b8a02339-3ab4-496d-9dd3-3070ae119aa9",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mosquitoes exhibit maximal attraction to thermal stimuli approximating host body temperatures (up to 40\u00b0C) while avoiding stimuli exceeding host temperature. Mosquitoes detect thermal contrast as small as 2.5\u00b0C above ambient, with occupancy increasing monotonically up to 40\u00b0C, then dramatically declining at 50\u00b0C and becoming indistinguishable from ambient at \u226555\u00b0C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C43-C48, and C103 are well-supported by comprehensive experimental data in Figures 1D-F showing dose-response relationships and spatial occupancy patterns. The data demonstrate both attraction to host-temperature stimuli and avoidance of higher temperatures with appropriate statistical comparisons (n=6 trials per condition).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "69b8ef4a-bbf8-4b48-a85a-addb924d7edd",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Mosquito thermotaxis is driven by seeking relative warmth (temperature differential) rather than absolute temperature for stimuli 21-40\u00b0C, but restricted by an absolute upper threshold of ~50-55\u00b0C. A stimulus 5\u00b0C above ambient elicits significant heat-seeking at all ambient temperatures tested (21, 26, 31\u00b0C).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 are strongly supported by experiments at three different ambient temperatures (Figure 2A-F). The data show that responses to moderate temperatures depend on thermal differential (linear regressions R\u00b2=0.97-0.99), while avoidance of high temperatures (50-55\u00b0C) occurs regardless of ambient temperature, demonstrating both relative and absolute thermal sensing mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "595a8616-1e67-4197-b84b-c9ea60fce364",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mosquitoes avoid relative cool during heat-seeking, leaving the Peltier at similar rates regardless of absolute stimulus temperature when it cools to ambient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 are supported by analysis of cooling responses in Figures 2G-H and Figure 2\u2014figure supplement 1. The data show consistent decay rates across different stimulus temperatures, indicating avoidance of relative cooling rather than response to absolute temperature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "d9281420-6473-4087-b5c5-278080429737",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Ae. aegypti heat-seeking behavior comprises three distinct behavioral components: seeking relative warmth, avoiding relative cool, and avoiding thermal stimuli exceeding host temperature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 is a well-supported synthesis of the experimental findings from claims C49-C55, integrating data from multiple temperature conditions and temporal analyses. This represents a comprehensive characterization of mosquito thermotaxis strategy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "5c3602c6-ecdd-4a23-b7f2-7523b4d06e51",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "TRPA1 functions as a conserved chemosensor in Ae. aegypti. Wild-type mosquitoes avoid N-methylmaleimide consumption, but AaegTRPA1-/- mutants show no avoidance, while retaining normal avoidance of denatonium benzoate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59, C61, and C63 are supported by CAFE assay data in Figures 3C-D. The selective loss of N-methylmaleimide avoidance in TRPA1 mutants while maintaining denatonium benzoate avoidance demonstrates specific chemosensory function consistent with TRPA1's known role as an electrophile sensor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "e833fc48-963c-48a5-9b93-b12a54315c08",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "AaegTRPA1-/- mutants are impaired in avoidance of high air temperature in a thermal gradient assay, leading to significant mortality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 is supported by thermal gradient assay data in Figure 3\u2014figure supplement 1C-G showing mutants accumulate in hot sectors and experience increased mortality. This demonstrates TRPA1's conserved role in thermoregulatory behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "30c090ac-3218-4da8-9974-0adf9309badd",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "TRPA1 is required for selective host-temperature thermotaxis in mosquitoes. AaegTRPA1-/- mutants show normal attraction to stimuli \u226445\u00b0C but fail to avoid high-temperature stimuli (50-60\u00b0C), persisting on the Peltier while wild-type mosquitoes rapidly leave.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C64-C67, and C84 are strongly supported by heat-seeking assay data in Figures 3E-G (n=6-9 trials per genotype). The mutants show a specific deficit in avoiding supra-host temperatures while maintaining normal warmth attraction, demonstrating TRPA1's critical role in tuning thermotaxis to biologically relevant temperatures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "10512246-a272-4049-8387-27ad527bec82",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "AaegGr19-/- mutant mosquitoes show no thermotaxis defects, despite Gr28b (the Drosophila ortholog) being required for rapid heat avoidance in D. melanogaster.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 are supported by experimental data in Figure 3\u2014figure supplement 2C showing no significant differences between AaegGr19-/- mutants and controls across all temperatures tested. This negative result is important for ruling out this candidate thermoreceptor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "e19188db-8279-48e5-a242-aa4ad1cb9c9f",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In a two-choice assay, wild-type mosquitoes strongly prefer 40\u00b0C over 50\u00b0C stimuli, while AaegTRPA1-/- mutants show no preference, failing to discriminate between host-temperature and high-temperature stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C78 are supported by choice assay data in Figures 4B-D and Video 1 (n=6 trials per genotype). The mutants' inability to discriminate in a direct choice context provides strong evidence that TRPA1 is critical for selective thermotaxis in ecologically relevant scenarios.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "b72031dc-3695-4330-a0bd-6192c88133b4",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Both AaegTRPA1-/- and AaegGr19-/- mutants retain normal attraction to warmth, indicating that other unidentified thermoreceptors must mediate this aspect of heat-seeking behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C90 are supported by the experimental data showing both mutant lines have normal responses to moderate temperatures (Figures 3E-F and Figure 3\u2014figure supplement 2C). This is a logical inference from the data indicating additional thermoreceptors remain to be identified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "a6b1322e-22c5-43c7-8a18-bdc6d3c0f3c0",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "TRPA1-dependent tuning of thermotaxis is critical for mosquitoes host-seeking in complex thermal environments where hosts are warmer than ambient air but cooler than sun-warmed surfaces. Avoiding supra-host temperatures is an optimal strategy for locating biologically relevant thermal stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C79-C81 integrate experimental findings with ecological context illustrated in Figure 4F. The interpretation is well-supported by the mutant phenotypes demonstrating that TRPA1-mediated avoidance of high temperatures would prevent attraction to non-host thermal distractors in natural environments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "12db94fe-de96-4e74-b4ee-2a2ec5b0e626",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Attraction to warmth must be mediated either by a single thermosensor that adapts to background temperature, or multiple thermosensors each tuned to distinct absolute thresholds.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C91 presents two alternative mechanistic hypotheses to explain the relative warmth-seeking behavior observed in Figure 2. While the behavioral data support that some mechanism enables adaptation to ambient temperature, the manuscript provides no direct evidence to distinguish between these two proposed molecular mechanisms. This remains speculative and requires future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background context on thermotaxis, mosquito biology, host temperatures, and prior work on thermoreceptors in various organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1, C8-C40, C42, C70-C72, C74, C82, C86-C87, C93, C95-C96, C98-C99, C101-C102) provide established background knowledge supported by appropriate citations or represent general knowledge about mosquito biology and thermosensation. They establish context for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "b71df04a-44c6-4cb1-9683-5be161b56cb1",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Wild-type and AaegTRPA1-/- mutant mosquitoes both reject denatonium benzoate, demonstrating intact bitter taste sensation in the mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57 and C60 are supported by CAFE assay data in Figure 3D showing both genotypes avoid denatonium benzoate. This serves as an important control demonstrating that the loss of N-methylmaleimide avoidance is specific and not due to general feeding defects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "6ff1bbd0-cad6-4cbd-9a11-bddf1533578e",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Speculations about TRPA1 expression patterns, thermal microenvironments experienced by mosquitoes, and potential interactions between host-seeking and thermoregulatory behaviors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73, C88, C92, C94, and C97 represent reasonable speculations based on the data and prior knowledge, but lack direct experimental support in this manuscript. These are appropriately presented as hypotheses for future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    },
+    {
+      "id": "f0815c75-0717-42ee-89ef-39d68eb4e2d1",
+      "content_id": "dec53dba-406e-4088-a928-305599e37a92",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Mosquito heat-seeking represents an excellent model system for studying thermosensation and may aid in designing vector control strategies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C85 and C100 represent forward-looking statements about the potential value and applications of this research. While reasonable given the findings, these represent opinions about future directions rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:06:24.150746Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "743d0137-ed8d-41cb-86c0-1c0136d40889",
+      "result_id": "6243e5a8-ec0d-4bb4-b095-f89d042aa04b"
+    },
+    {
+      "claim_id": "03f5638b-56eb-461e-bb51-18bba6654ab0",
+      "result_id": "b8a02339-3ab4-496d-9dd3-3070ae119aa9"
+    },
+    {
+      "claim_id": "34a6dec0-0782-4b12-83d2-cfb926f9ed6b",
+      "result_id": "b8a02339-3ab4-496d-9dd3-3070ae119aa9"
+    },
+    {
+      "claim_id": "3c21b8b0-0542-48bf-bd11-f72b564e6869",
+      "result_id": "b8a02339-3ab4-496d-9dd3-3070ae119aa9"
+    },
+    {
+      "claim_id": "1c540c90-80be-457d-ba09-0a7827999798",
+      "result_id": "b8a02339-3ab4-496d-9dd3-3070ae119aa9"
+    },
+    {
+      "claim_id": "44cc6e4c-d274-40fe-bd83-6826d7bdd340",
+      "result_id": "b8a02339-3ab4-496d-9dd3-3070ae119aa9"
+    },
+    {
+      "claim_id": "910e693c-c453-4831-bb1e-e9febe67e7be",
+      "result_id": "b8a02339-3ab4-496d-9dd3-3070ae119aa9"
+    },
+    {
+      "claim_id": "04ed58c9-eaf1-45a3-9c6d-eebbbaa6a0ce",
+      "result_id": "b8a02339-3ab4-496d-9dd3-3070ae119aa9"
+    },
+    {
+      "claim_id": "a0bbb298-5358-4800-81b8-9ce7f2ed888d",
+      "result_id": "b8a02339-3ab4-496d-9dd3-3070ae119aa9"
+    },
+    {
+      "claim_id": "f5063c1c-3003-4083-9efa-73044f317b64",
+      "result_id": "b8a02339-3ab4-496d-9dd3-3070ae119aa9"
+    },
+    {
+      "claim_id": "508dcac2-0fc7-4dc3-9af8-6b0cd4fa3755",
+      "result_id": "69b8ef4a-bbf8-4b48-a85a-addb924d7edd"
+    },
+    {
+      "claim_id": "56bde5d5-5742-4288-8ca6-440e8c85d8df",
+      "result_id": "69b8ef4a-bbf8-4b48-a85a-addb924d7edd"
+    },
+    {
+      "claim_id": "2cfcb2b3-1d4c-4f20-89bf-bb2a4dd291c8",
+      "result_id": "69b8ef4a-bbf8-4b48-a85a-addb924d7edd"
+    },
+    {
+      "claim_id": "70ab3948-25d2-49ab-bbd0-d81f785e12c4",
+      "result_id": "69b8ef4a-bbf8-4b48-a85a-addb924d7edd"
+    },
+    {
+      "claim_id": "7880307a-89f0-46af-9b3d-e336a05edefb",
+      "result_id": "69b8ef4a-bbf8-4b48-a85a-addb924d7edd"
+    },
+    {
+      "claim_id": "b2d13b28-810b-4e13-be2c-4b3788982328",
+      "result_id": "595a8616-1e67-4197-b84b-c9ea60fce364"
+    },
+    {
+      "claim_id": "538dc160-0fd0-471e-9cb4-63845687a568",
+      "result_id": "595a8616-1e67-4197-b84b-c9ea60fce364"
+    },
+    {
+      "claim_id": "cfd065bc-f7d1-478a-9850-843b6257f01e",
+      "result_id": "d9281420-6473-4087-b5c5-278080429737"
+    },
+    {
+      "claim_id": "0156beb0-f8eb-47f9-bd3b-44d0dae05aeb",
+      "result_id": "5c3602c6-ecdd-4a23-b7f2-7523b4d06e51"
+    },
+    {
+      "claim_id": "f90763d7-22dc-48cf-b676-5d2432bb811d",
+      "result_id": "5c3602c6-ecdd-4a23-b7f2-7523b4d06e51"
+    },
+    {
+      "claim_id": "d4053a97-46ac-48e1-b513-f98dbddfc83e",
+      "result_id": "5c3602c6-ecdd-4a23-b7f2-7523b4d06e51"
+    },
+    {
+      "claim_id": "a0041af6-842d-4186-a1ab-bf7f07f75d23",
+      "result_id": "5c3602c6-ecdd-4a23-b7f2-7523b4d06e51"
+    },
+    {
+      "claim_id": "07ab1b78-c5b0-4d35-85d8-de60a4639776",
+      "result_id": "e833fc48-963c-48a5-9b93-b12a54315c08"
+    },
+    {
+      "claim_id": "772ea02c-4a5f-403b-a01c-8e25c23f6dcc",
+      "result_id": "30c090ac-3218-4da8-9974-0adf9309badd"
+    },
+    {
+      "claim_id": "0af6b50b-f1a9-4660-a406-187ca5f54ed5",
+      "result_id": "30c090ac-3218-4da8-9974-0adf9309badd"
+    },
+    {
+      "claim_id": "9b018145-3cfc-41a4-9411-68f1b18f2b49",
+      "result_id": "30c090ac-3218-4da8-9974-0adf9309badd"
+    },
+    {
+      "claim_id": "95d74611-3460-40d8-bf7e-93eb224fd2b8",
+      "result_id": "30c090ac-3218-4da8-9974-0adf9309badd"
+    },
+    {
+      "claim_id": "8da55e9a-f997-406d-9345-3d4235e1825a",
+      "result_id": "30c090ac-3218-4da8-9974-0adf9309badd"
+    },
+    {
+      "claim_id": "4b416289-754e-4573-8c39-40e73f4e02a0",
+      "result_id": "30c090ac-3218-4da8-9974-0adf9309badd"
+    },
+    {
+      "claim_id": "50031600-7c36-4600-8d5c-3a4da7e41e11",
+      "result_id": "30c090ac-3218-4da8-9974-0adf9309badd"
+    },
+    {
+      "claim_id": "d2547974-03d9-463c-b73b-0ae3d13e0942",
+      "result_id": "30c090ac-3218-4da8-9974-0adf9309badd"
+    },
+    {
+      "claim_id": "a86bcb7e-e80b-4083-ab40-f483ed01148e",
+      "result_id": "10512246-a272-4049-8387-27ad527bec82"
+    },
+    {
+      "claim_id": "25ce2aea-1f6a-4ecd-bbf9-0e16cfa7cac6",
+      "result_id": "10512246-a272-4049-8387-27ad527bec82"
+    },
+    {
+      "claim_id": "55d5e0fd-71d0-401d-877f-c87212a52b1e",
+      "result_id": "e19188db-8279-48e5-a242-aa4ad1cb9c9f"
+    },
+    {
+      "claim_id": "8281540b-4d1c-4a8d-9b21-35f9f705fdc0",
+      "result_id": "e19188db-8279-48e5-a242-aa4ad1cb9c9f"
+    },
+    {
+      "claim_id": "4748e536-79c7-4d0a-936b-48a79978cadd",
+      "result_id": "e19188db-8279-48e5-a242-aa4ad1cb9c9f"
+    },
+    {
+      "claim_id": "57b2a4a9-4c22-42ac-9699-ccad7eea6829",
+      "result_id": "e19188db-8279-48e5-a242-aa4ad1cb9c9f"
+    },
+    {
+      "claim_id": "30f6854f-c2c7-4089-a6f9-512d2bab0652",
+      "result_id": "b72031dc-3695-4330-a0bd-6192c88133b4"
+    },
+    {
+      "claim_id": "2eba526a-2c44-43da-9737-0213add50d19",
+      "result_id": "b72031dc-3695-4330-a0bd-6192c88133b4"
+    },
+    {
+      "claim_id": "76497464-31cf-4e80-84e7-92f6c457e5f3",
+      "result_id": "a6b1322e-22c5-43c7-8a18-bdc6d3c0f3c0"
+    },
+    {
+      "claim_id": "b1552734-a9b6-4e1f-86e9-075989823aad",
+      "result_id": "a6b1322e-22c5-43c7-8a18-bdc6d3c0f3c0"
+    },
+    {
+      "claim_id": "a465b860-d511-48df-a966-b93642a3b156",
+      "result_id": "a6b1322e-22c5-43c7-8a18-bdc6d3c0f3c0"
+    },
+    {
+      "claim_id": "c713cf81-d66c-4715-a326-95af26525acc",
+      "result_id": "a6b1322e-22c5-43c7-8a18-bdc6d3c0f3c0"
+    },
+    {
+      "claim_id": "5b580692-5ed9-4f3e-8738-80a06aa57281",
+      "result_id": "12db94fe-de96-4e74-b4ee-2a2ec5b0e626"
+    },
+    {
+      "claim_id": "89f4eceb-ee35-43b5-82dd-e68d01672f23",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "0461e523-1f3d-46b0-9996-f37714664858",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "7849046b-1b5e-44a4-88b7-2bd0f7958f6d",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "b5594b20-a6c2-4869-ae69-7db3daaaf0e2",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "a039b688-b540-4bfc-aae0-312870d31c31",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "b54039d4-f57f-42b5-948a-ca939900b2d0",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "15372713-1463-4615-886a-4db81d884ddd",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "417d94e7-a215-49c7-925e-22083020eb01",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "556928af-7f61-4f7e-a638-f869befc143d",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "40a030fc-29b8-4a98-8917-b4149130bc27",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "30921c2a-15df-4d0f-a098-4dade90eedba",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "1359652d-5f2c-47d1-939a-57d55b99c329",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "8058ddc8-d9e3-4de0-82c7-afa25cbbcf12",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "85ca1cd0-e281-4f51-afc9-2c693f88452b",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "9ad582fd-272f-4aff-bf9f-3a46a98fe57a",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "725ddf05-9902-47d7-a894-3aef81b52315",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "83cda4d6-7eed-40b8-9f80-4059555098cb",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "0d708637-8483-42de-a362-e5090f08b0e5",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "1ba79564-4c4f-4229-9453-8a56d5c36e67",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "fdc8ac35-62fb-43de-a089-ad2dba6fffeb",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "59eb3454-1d3b-4ef2-a3cc-d1053ac14fd7",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "444b8b50-d0a0-4ff5-9146-5453097b0933",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "88d7a4ad-6581-4ec6-871f-13974c891c04",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "b211f74f-890b-4479-8d88-dcb07d4b702a",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "6932d6a8-c5c6-44d9-8227-b523992c5a51",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "58ab59a8-4160-45f5-8fc6-477b71c9da9b",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "a309e157-d0e7-4d46-97ee-5b645c3e9f6a",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "3f5ba719-b9be-4a92-b6e4-76e3c6da6261",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "7affc097-b906-4bad-b63c-0688174529a4",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "c53252da-3461-4dbc-9834-37a8f8c0648a",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "a1702cda-4080-411d-a9b4-84751e119b8d",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "18ae7a59-7e42-4ab8-8cd2-6ed6140ca62d",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "00f54783-f55a-41a3-a350-8bd671e90a1b",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "466bbb61-86ed-4501-8293-f568714cddc5",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "96f2a4a7-a0a5-4b06-a4ff-63faed5b8826",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "3fe04fc2-592d-46b5-8571-5cdcce1149a0",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "ecbb6a7d-bf1b-41b6-9937-3b55d0209aaf",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "5a902f2b-be4f-4662-8a43-dd80f5004ec5",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "ffd147c7-8b66-45d4-9373-20353c4c990e",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "6bb361ee-b42c-4443-951c-563f19a43c8e",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "93623bef-0915-4381-9b05-59b4e355aec7",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "cb18cc6e-0eb5-44bb-be50-5eb9160a4dfe",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "8bb4de9a-5a32-4b6e-9d8b-47b0a3490e62",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "29c770e0-abd1-4db4-85d4-fb3d6dc493ff",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "5432b192-a295-4386-abd0-33386f4d76c0",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "1870ebba-cc8a-461e-b511-db9bf15de31f",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "1fdc8ddc-ddc0-4346-b3ab-affe0b54bf3f",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "d8964ff8-8181-4ddf-bc3b-4e94e13eda9b",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "c9599afa-c42b-4a46-b1a8-091805bc52d3",
+      "result_id": "e9340b11-c965-4b10-b2d2-0cd5ccd05143"
+    },
+    {
+      "claim_id": "d1321aa8-898b-48a2-9c30-2bf1d57916fc",
+      "result_id": "b71df04a-44c6-4cb1-9683-5be161b56cb1"
+    },
+    {
+      "claim_id": "a8eb645b-2683-489c-9a91-703835a5ed3e",
+      "result_id": "b71df04a-44c6-4cb1-9683-5be161b56cb1"
+    },
+    {
+      "claim_id": "026465d6-8795-4dce-a590-4be441f4b652",
+      "result_id": "6ff1bbd0-cad6-4cbd-9a11-bddf1533578e"
+    },
+    {
+      "claim_id": "9fd38ca7-f272-4d17-b177-adb48e448b34",
+      "result_id": "6ff1bbd0-cad6-4cbd-9a11-bddf1533578e"
+    },
+    {
+      "claim_id": "693e4b5a-7522-4f05-b028-345fb85bf7f5",
+      "result_id": "6ff1bbd0-cad6-4cbd-9a11-bddf1533578e"
+    },
+    {
+      "claim_id": "54ccbffb-872b-4b49-89b5-e936fb538cbb",
+      "result_id": "6ff1bbd0-cad6-4cbd-9a11-bddf1533578e"
+    },
+    {
+      "claim_id": "b613aadd-48b0-4a9e-a437-9c1bb35a8c7b",
+      "result_id": "6ff1bbd0-cad6-4cbd-9a11-bddf1533578e"
+    },
+    {
+      "claim_id": "cf601595-286b-4ec2-bfc2-cf741d6f00e5",
+      "result_id": "f0815c75-0717-42ee-89ef-39d68eb4e2d1"
+    },
+    {
+      "claim_id": "6387fd76-c28a-4b48-ba92-a33b612be7a0",
+      "result_id": "f0815c75-0717-42ee-89ef-39d68eb4e2d1"
+    }
+  ],
+  "comparisons": []
+}

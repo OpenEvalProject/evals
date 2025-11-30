@@ -1,0 +1,440 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C45",
+      "C46",
+      "C48",
+      "C107"
+    ],
+    "result": "EGFR is predominantly monomeric in the absence of ligand at low expression levels. Photobleaching analysis in Xenopus oocytes showed ~94% of EGFR spots exhibit single-step photobleaching, with ~3% two-step events after baseline correction, indicating minimal preformed dimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C45, C46, C48, and C107 are mutually consistent and supported by photobleaching data in Figure 3A. The use of Claudin-16 as a monomeric control (C47) provides appropriate baseline correction. The low expression level (~1-5 molecules/\u03bcm\u00b2) minimizes artifacts from crowding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C30",
+      "C55",
+      "C56",
+      "C108"
+    ],
+    "result": "EGF addition to EGFR results predominantly in higher-order multimers rather than just dimers. Photobleaching analysis showed roughly 50% multistep, 25% two-step, and 25% one-step bleaching events after EGF addition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C30, C55, C56, and C108 are supported by photobleaching data in Figure 4A-B. The observation of multistep photobleaching (\u22653 steps) in ~50% of spots provides direct evidence for higher-order oligomers. The kinase-dead mutant (C57-C58) shows similar multimerization, ruling out kinase activity as a requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Specific residues in Domain IV (spanning residues 526-556, particularly Ile 545 and Ile 556) are critical for EGFR multimerization. Mutations in this region (IIIV/KKRE, VEN/ERR, TN/RR) significantly reduce multimerization without completely abolishing dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C69, C70, C72, C73, and C74 are supported by systematic mutagenesis and photobleaching data in Figure 6. The differential effects of IIIV/KKRE vs. IIIV/AARE mutations (C70-C71) provide specificity. However, the authors acknowledge testing only a limited set of mutations, so the complete interfacial region may not be fully defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "EGFR forms ligand-dependent multimers in mammalian cells (COS-7), and Domain IV mutations (IIIV/KKRE) that block multimerization in Xenopus oocytes also prevent multimer formation in mammalian cells, limiting the response to dimer formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C33, C75-C80 are supported by PIE-FCCS data in Figure 7. The cross-correlation values (fc = 0.19 for WT+EGF vs. fc = 0.11 for IIIV/KKRE+EGF) and diffusion coefficients provide orthogonal evidence. The consistency between Xenopus and mammalian systems strengthens the conclusion, though the expression levels differ substantially (~200-fold).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C34",
+      "C35",
+      "C36",
+      "C81",
+      "C82",
+      "C84",
+      "C110"
+    ],
+    "result": "Domain IV mutations that reduce multimerization decrease autophosphorylation of both proximal (Tyr 992) and distal (Tyr 1173) sites in the EGFR C-terminal tail, and strongly attenuate PI3K phosphorylation (~30% of wild-type). For the II/KK mutant, Tyr 992 and Tyr 1173 phosphorylation are reduced to ~35% and ~50% of wild-type levels, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C34, C35, C36, C81, C82, C84, and C110 are supported by FACS data in Figure 8A-C. Multiple independent Domain IV mutants show consistent effects. Control experiments (C83) demonstrate that surface expression is unaffected, ruling out trafficking defects. The specificity for PI3K over ERK (C37, C85) is notable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C85"
+    ],
+    "result": "ERK phosphorylation is not affected by Domain IV mutations that reduce multimerization, in contrast to the strong effects on proximal phosphorylation and PI3K.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C85 are supported by FACS data in Figure 8D showing similar bimodal ERK phosphorylation distributions for wild-type and Domain IV mutants. This differential effect suggests multimerization specifically impacts proximal signaling pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C86",
+      "C87",
+      "C89",
+      "C90"
+    ],
+    "result": "In EGFR dimers restricted by mutations, distal sites (Tyr 1173) are phosphorylated in both receiver and activator tails (with higher efficiency in activator), while proximal sites (Tyr 992) show much lower phosphorylation in the activator tail compared to the receiver tail.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C86, C87, C89, and C90 are supported by co-transfection experiments in Figure 9. The asymmetric phosphorylation pattern for Tyr 992 vs. Tyr 1173 is consistent with structural constraints of the asymmetric dimer (C88). This provides mechanistic insight into why multimerization enhances proximal phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Lateral phosphorylation of bystander EGFR substrates is inefficient. For efficient tail phosphorylation, the kinase bearing the tail must be part of an asymmetric dimer. Substrate-EGFR that is activator-impaired (V924R) shows no efficient phosphorylation of Tyr 1173.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 are supported by co-transfection experiments in Figure 10. The requirement for the substrate to have an intact activator surface (C94-C95) demonstrates that phosphorylation requires incorporation into an asymmetric dimer, not just proximity to active kinase. This contradicts a prior inference (C96 cites Ruan and Kannan, 2015).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C31",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The authors propose that EGFR multimerization occurs through self-association of ligand-bound dimers via Domain IV, forming chains where the majority of kinase domains function as both activators and receivers, thereby boosting tail phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C31, C98-C100 represent the central mechanistic model. This is supported by: (1) Domain IV mutagenesis showing multimerization interface distinct from dimerization, (2) functional data showing enhanced proximal phosphorylation requires multimerization, (3) co-transfection data showing phosphorylation requires asymmetric dimer participation. The model is consistent with all experimental observations, though direct structural evidence for the proposed kinase chain is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C102",
+      "C103"
+    ],
+    "result": "Mutations disrupting either the transmembrane helix dimer interface or the asymmetric kinase dimer interface substantially reduce EGFR multimerization. Transmembrane mutations show similar functional effects to Domain IV mutations: strong PI3K inhibition with mild ERK effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C65, C102, and C103 are supported by photobleaching data in Figure 5 and FACS data in Figure 8\u2014figure supplement 1. The requirement for intact transmembrane and kinase dimer interfaces indicates that multimerization depends on proper assembly of all receptor modules. The functional similarity between TM and Domain IV mutations strengthens the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "TGF-\u03b1 induces a similar distribution of photobleaching events as EGF, indicating that neither ligand is likely at the interfaces between protomers in multimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C60 are supported by photobleaching data in Figure 4D. The reasoning that surface-exposed residues differ between EGF and TGF-\u03b1 when bound is sound. This argues against ligand-mediated bridging between dimers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "A 133-fold increase in EGF concentration (from 15 nM to 2 \u03bcM) did not substantially change the relative population of multimers, indicating the multimer interface does not involve empty ligand binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C62 are supported by photobleaching data in Figure 4E. This rules out half-site binding or ligand-bridging mechanisms for multimerization. The logic is sound given that high ligand concentration would saturate any empty sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "A kinase-dead EGFR variant (D813N) exhibits similar multimerization to wild-type EGFR, demonstrating that multimer formation does not require active kinase signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C58 are supported by photobleaching data in Figure 4C. This control is important for ruling out that multimerization is a consequence of kinase activity or downstream signaling events. The result indicates multimerization is driven by receptor-receptor interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Deletion of the dimerization arm (\u0394-arm) does not substantially affect the extent of EGF-induced multimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is supported by photobleaching data in Figure 5. This is somewhat surprising but the authors explain it may reflect offsetting effects on autoinhibition and dimerization (C51-C52). The result helps define that the multimerization interface is distinct from the dimerization arm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Deletion of the dimerization arm (\u0394-arm) or mutation of the autoinhibitory tether (\u0394-tether) increases ligand-independent dimerization from ~3% to ~9-11%, consistent with the autoinhibited conformation providing a steric block to dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by photobleaching data in Figure 3B-C. The interpretation that these mutations release autoinhibition is reasonable and consistent with prior structural knowledge (Ferguson et al., 2003). This validates the experimental system and provides insight into basal receptor regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Isolated transmembrane helices do not form multimers at low expression levels, but show ~13% dimerization compared to ~3% for full-length EGFR without EGF, consistent with the tethered extracellular domain blocking dimerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by photobleaching data in Figure 5\u2014figure supplement 1. The control experiment with isolated TM helices is well-designed. The higher dimerization propensity of isolated TM helices supports the autoinhibition model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "The IIIV/AARE mutant (I545A, I556A, I562R, V592E) shows similar multimerization to wild-type EGFR, in contrast to IIIV/KKRE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by photobleaching data in Figure 6C. This control demonstrates specificity\u2014alanine substitutions at positions 545 and 556 do not disrupt multimerization, while lysine substitutions do. This suggests the interface requires hydrophobic character but can tolerate smaller side chains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "Surface expression of EGFR is unaffected by the II/KK Domain IV mutation, as measured by the ratio of surface-exposed to total EGFR across the full range of expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is supported by fluorescence microscopy data in Figure 8\u2014figure supplement 2. This control is critical for ruling out that reduced phosphorylation in Domain IV mutants is due to trafficking defects. The experiment is well-designed, measuring both surface and total receptor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors propose a structural model for an EGFR tetramer with kinase domains chained head-to-tail (unlike the back-to-front arrangement in IRE1), potentially stabilizing active conformations and facilitating proximal tail phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C115 describe a computational model based on ClusPro docking and coarse-grained MD simulation (Figure 11, Figure 11\u2014figure supplements 3-4). While the model is consistent with experimental constraints, it lacks direct structural validation. The authors appropriately describe it as a 'structural hypothesis' requiring further testing. The comparison to IRE1 (C112) is speculative but conceptually useful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The authors suggest that in isolated dimers, proximal sites on the activator kinase cannot reach the receiver kinase active site and would be poorly phosphorylated, while multimerization forming kinase chains would allow stronger phosphorylation including proximal sites in cis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38 and C39 represent mechanistic interpretations. C38 is supported by structural reasoning and co-transfection data (C87, C89). C39 is explicitly speculative ('we speculate') and represents the proposed mechanism for how multimerization enhances proximal phosphorylation. While consistent with data, direct evidence for kinase chains is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "The closed conformation of the extracellular module is stabilized by transmembrane helix dimerization, and disruption of the TM dimer substantially reduces multimerization in Xenopus oocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101 and C102 are supported by prior literature (Endres et al., 2013; Mineev et al., 2010) and photobleaching data in Figure 5B. The coupling between TM dimerization and extracellular conformation provides a structural rationale for why TM mutations affect multimerization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "Deletion of the dimerization arm compromises EGFR function more generally, blocking both PI3K and ERK phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C104 states data are 'not shown,' making evaluation impossible. If true, this would indicate \u0394-arm has broader functional defects than Domain IV mutations, consistent with its role in dimerization. However, without data, this claim cannot be evaluated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "The general hydrophobicity of residues in the Domain IV multimerization interface region is conserved among human EGFR family members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C105 is based on sequence analysis but no data are shown. If true, this would suggest multimerization may be a conserved feature across EGFR family members. However, without alignment data or experimental validation in other family members, this remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The authors speculate that EGFR multimerization may be crucial for signaling by increasing the effective density of docking sites for multivalent adaptor proteins, potentially leading to larger-scale clusters and signaling platforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C118 are explicitly speculative statements about broader implications. While conceptually reasonable and consistent with the observation that multimerization enhances signaling, these claims lack direct experimental support. They represent hypotheses for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background claims about EGFR structure, activation mechanism, family members, and prior observations of higher-order oligomers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6, C11-C28 represent established knowledge about EGFR, supported by extensive prior literature (multiple citations provided). These provide necessary context but are not novel findings of this study. C1 and C6 are particularly important as they frame the canonical model being extended.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Xenopus oocytes provide a suitable low-expression system for EGFR stoichiometry studies, with surface density ~1-5 molecules/\u03bcm\u00b2 compared to ~100-600 molecules/\u03bcm\u00b2 in cancer cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 describe the experimental system. C40-C41 are supported by prior literature (Opresko and Wiley, 1990). C42 is supported by measurements in Figure 2. C43-C44 provide important context about expression levels. The low expression minimizes artifacts from crowding, though it may not fully represent physiological conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C47",
+      "C49",
+      "C50"
+    ],
+    "result": "Control measurements and technical considerations for photobleaching analysis, including baseline correction using Claudin-16 and accounting for dark EGFP molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C49, and C50 describe important methodological controls. C47 provides the baseline for random colocalization. C49 validates the results against prior literature. C50 (citing Ulbrich and Isacoff, 2007) explains why photobleaching steps may undercount subunits. These are appropriate technical considerations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C88",
+      "C91"
+    ],
+    "result": "Prior structural and functional knowledge about EGFR phosphorylation: Tyr 992 can only access its own kinase domain in an asymmetric dimer, and bystander phosphorylation is inefficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88 and C91 cite prior literature (Koland, 2014; Muthuswamy et al., 1999) that provides important context for interpreting the current results. These established findings support the interpretation that multimerization is necessary for efficient proximal phosphorylation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C106",
+      "C109"
+    ],
+    "result": "Prior reports of EGFR multimerization and its importance for HER2-HER3 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106 and C109 cite prior literature (Zhang et al., 2012; Clayton et al., 2005; 2008) showing that multimerization has been observed before. The current work's contribution is identifying the molecular basis (Domain IV interface) and functional consequences (proximal phosphorylation).",
+    "result_type": "MINOR"
+  }
+]

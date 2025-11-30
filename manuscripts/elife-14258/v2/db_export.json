@@ -1,0 +1,2384 @@
+{
+  "submission": {
+    "id": "9d027558-c5c1-4170-830c-78bbd1bafb45",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:18:52.236309Z",
+    "updated_at": "2025-11-29T23:18:52.236309Z"
+  },
+  "content": [
+    {
+      "id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "submission_id": "9d027558-c5c1-4170-830c-78bbd1bafb45",
+      "content_type": "manuscript",
+      "content_text": "# Using mobile sequencers in an academic classroom\n\n## Authors\n\n- Sophie Zaaijer<sup>1</sup>\n- Yaniv Erlich<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Computer Science, Fu Foundation School of Engineering Columbia University New York United States\n2. New York Genome Center New York United States\n3. Department of Systems Biology Center for Computational Biology and Bioinformatics, Columbia University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe advent of mobile DNA sequencers has made it possible to generate DNA sequencing data outside of laboratories and genome centers. Here, we report our experience of using the MinION, a mobile sequencer, in a 13-week academic course for undergraduate and graduate students. The course consisted of theoretical sessions that presented fundamental topics in genomics and several applied hackathon sessions. In these hackathons, the students used MinION sequencers to generate and analyze their own data and gain hands-on experience in the topics discussed in the theoretical classes. The manuscript describes the structure of our class, the educational material, and the lessons we learned in the process. We hope that the knowledge and material presented here will provide the community with useful tools to help educate future generations of genome scientists.\n\n## Introduction\n\nThe last decade has witnessed dramatic changes in the field of genomics with the advent of high-throughput DNA sequencing technologies. Sequencers have become the ultimate tool for a wide range of applications, from prenatal genetic screens and microbe identification to forensic sciences and autopsies. As such, genomics requires interdisciplinary thinking that involves concepts from molecular biology, statistics, computer science, and ethical and societal issues. Previous work has highlighted the benefit of hands-on training to help students put these concepts into context (Altman 1998; Donovan, 2008; Reisdorph et al., 2013; Magana et al., 2014). Hands-on training is also the preferred learning style of the Millennial generation, which currently makes up the majority of undergraduate and graduate students. Research has shown that people in this generation are technology focused, work most effectively in groups, and absorb information most efficiently by kinesthetic learning (learning by doing; Shapiro et al., 2013; Evans et al., 2015; Linderman et al., 2015).\n\nHere, we describe our experience of using mobile DNA sequencers in the classroom to facilitate hands-on learning. Our class focused on the newest sequencing technology: the MinION by Oxford Nanopore Technologies (ONT). Unlike other sequencing technologies that are static and require a laboratory setting, the MinION sequencer is slightly larger than a typical USB stick and only requires a laptop to run (Figure 1A and B;\u00a0Gardy et al., 2015; McIntyre et al., 2015; Erlich, 2015).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/14258/elife-14258-fig1-v2.jpg)\n\n**Figure 1.:** (A) Illumina MiSeq benchtop sequencer (left) and\u00a0the MinION sequencer made by Oxford Nanopore Technologies (right; red rectangle). (B) The class during a hackathon.\n\n## Overview of the Ubiquitous Genomics class\n\nWe developed a course for Columbia University entitled \u2018Ubiquitous Genomics\u2019 that brings portable sequencing to the classroom. The Computer Science department offered the course as an elective. Of the 20 students who enrolled in the course, 50% were studying towards a bachelor\u2019s, 30% towards a master\u2019s degree, and 20% were enrolled in a PhD program. The majority (~60%) of students were enrolled in a computer science program, and the rest were enrolled in other programs, including electrical engineering, environmental health science and biomedical informatics. The class had no prerequisites, but nearly all students had some programming experience and about a third of the students had taken at least one class in computational biology. Students with computational biology experience performed slightly better in our class.\n\nThe course consisted of 13 meetings (one two-hour class per week) and was separated into a theoretical section and an applied section (Supplementary file 1). The theoretical section overviewed sequencing technologies and their potential uses in medicine, bio-surveillance, forensics, and ethical aspects of DNA sequencing, such as genetic privacy and the ability of participants to comprehend risks and potential harm. The aim of the theoretical section was to create a common ground for the group of students with diverse majors and background knowledge. The format was an interactive seminar where the class discussed one or two recent research papers.\n\nThe applied section comprised two three-week blocks of \u201chackathons\u201d that included MinION sequencing, data analysis and an\u00a0assignment. We estimate the consumable costs of a hackathon to be on the order of $1,000 per team per assignment (Table 1). However, nearly 90% of the cost is due to the MinION sequencer and any reduction in its price will affect the projection of the costs. We decided to use the term hackathon to convey to the students that, unlike a regular course lab, the questions were open-ended and even we (the instructors) did not always know the answers or the best tools to solve the assignments. In the first hackathon, entitled \u201cfrom snack to sequence\u201d, the students received unlabeled DNA collected from food and supermarket ingredients. They had to use the sequencers to collect the DNA data and devise a pipeline to infer the ingredients. In the second hackathon, called \u201cCSI Columbia\u201d, the students sequenced several human DNA samples without knowing the identity of the samples. The hackathon focused on collecting data from these samples and students were encouraged to try any possible method they could imagine to generate investigative leads.\n\n**Table 1.**\n MinION consumables:Total cost estimate (in US Dollars) is for one MinION run per team. For the complete list of equipment and consumables required for organizing a hackathon, please see the following link: https://nanoporetech.com/uploads/community/Equipment_and_consumables_vC_with_FAQ_Sep2015.pdf\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Company</th>\n      <th>Product</th>\n      <th>Cat no</th>\n      <th>Price per unit (USD)</th>\n      <th>Unit quantity</th>\n      <th>Amount needed for ONT protocol</th>\n      <th>Cost</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Covaris</td>\n      <td>g-TUBE</td>\n      <td>520079</td>\n      <td>$275</td>\n      <td>10</td>\n      <td>1</td>\n      <td>$27.50</td>\n    </tr>\n    <tr>\n      <td>NEB</td>\n      <td>Ultra\u2122 End Repair/dA-Tailing Module</td>\n      <td>E7442S</td>\n      <td>$225.00</td>\n      <td>72 ul</td>\n      <td>3 \u03bcl</td>\n      <td>$9.40</td>\n    </tr>\n    <tr>\n      <td>Agencourt</td>\n      <td>AMPure XP</td>\n      <td>A63880</td>\n      <td>$315.00</td>\n      <td>5 ml</td>\n      <td>60 \u03bcl</td>\n      <td>$3.78</td>\n    </tr>\n    <tr>\n      <td>Thermo Fisher</td>\n      <td>Dynabeads MyOne Streptavidin C1</td>\n      <td>65001</td>\n      <td>$475.00</td>\n      <td>2 mL</td>\n      <td>50 \u03bcl</td>\n      <td>$12</td>\n    </tr>\n    <tr>\n      <td>NEB</td>\n      <td>Blunt/TA Ligase Master Mix</td>\n      <td>M0367S</td>\n      <td>$95</td>\n      <td>250ul</td>\n      <td>50 \u03bcl</td>\n      <td>$19</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>Tubes/ pipette-tips/H2O/ ethanol etc</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>~$10</td>\n    </tr>\n    <tr>\n      <td>ONT</td>\n      <td>Flow-cell Reagent kit</td>\n      <td></td>\n      <td>$900</td>\n      <td>1</td>\n      <td>1</td>\n      <td>$900</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Projected cost per team per run:</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>$981.68</td>\n    </tr>\n  </tbody>\n</table>\n\n## The hackathon structure\n\nTo address our teaching goals, we set the three week hackathon cycle as follows: in the first week of each hackathon-block, the students met for a ~3-hour session, in which they worked in groups to set\u00a0up the MinION sequencer, generate data, and start strategizing about the best approach to answer the assignment. In the second week, we had a meeting with the students to discuss technical issues related to the assignment, such as the best approach to identify an organism from MinION data. Each group had to explore a different approach and to report the results in a 5-minute presentation to the rest of the class. In the final class of each hackathon-block, the students presented their results and turned in their written assignments (Supplementary file 1).\n\nNaturally, the most challenging classes to prepare for were the MinION sessions. We employed several strategies to maximize the hands-on experience of the students within the time constraints of the class (Figure 2):\n\n![Figure 2.](https://cdn.elifesciences.org/articles/14258/elife-14258-fig2-v2.jpg)\n\nA week before the hackathon, the students were instructed to form groups of 4\u20135 people. We encouraged them to form groups with diverse skill\u00a0sets (e.g. combinations of biology backgrounds and computer science backgrounds).\n\nSeveral days before the hackathons, the instructors prepared the DNA libraries for the class. We decided to do this part ourselves and not as part of the training, since genomic DNA extraction and ONT library preparation takes ~4\u2009hr (Supplementary file 2). It was not realistic to include these steps as part of the hackathon given the time limits (although this might change with the advent of the automated library preparation device, the VolTRAX).\n\nEach hackathon started by tuning student expectations; we reminded the students about the experimental nature of the events. We communicated clearly that they should anticipate technical issues and that we would be surprised if everything went smoothly. This helped to reduce frustration for\u00a0the\u00a0students, who are accustomed to interacting with mature technology in day-to-day life. We continued with a 45-minute lecture about the goals of the hackathon and background material, such as how the DNA libraries were prepared, the MinION software interface features, and the base-calling pipeline (see Supplementary files 3\u20136 for assignments and PowerPoint slides).\n\nNext, we had students practice pipetting. The loading of reagents onto the MinION flow cell requires good pipetting skills; otherwise, the yield may be substantially lower. As most of our students had never touched a pipette before, we allowed them to practice loading water onto used MinION flow cells until they were comfortable pipetting with precision.\n\nArmed with a protocol, the students were fully responsible for generating the data with minimal assistance. They connected the devices to the computers, activated the relevant programs, loaded the priming mix (dubbed \u2018fuel\u2019) and DNA libraries onto the flow cells, and launched the sequencing run using MinKnow. Once data was generated, they monitored the progress of the sequencing run. After checking quality measures, the sequencers were left unattended for 48 hours to generate data according to the ONT protocol.\n\nAfter data generation, we instructed the students to complete an assignment, which was divided into two milestones (Supplementary files 5 and 6). The first milestone was to report on the technical performance of the MinION sequencer, such as the total reads, the read length distribution, DNA library quality, and the read quality scores over time. The aim of the quality control analysis was to guide the students on how to approach large genomic data sets. The second milestone focused on an actual scientific problem (see below). For each milestone, the students had to submit a written report and a GitHub link to their code (an example: https://github.com/dspeyer/ubiq_genome). Each hackathon concluded with a 10-minute talk by each group. All relevant teaching material is provided under the Creative Commons Attribution-Share Alike 4.0 International License.\n\n## Hackathon project 1: Snack to sequence\n\nThe first hackathon was called \u201cfrom snack to sequence\u201d. It was inspired by several food scandals, such as the horsemeat found in ready-made meals that were labeled as beef throughout Europe in 2013, as well as the revelation that a number of sushi restaurants in New York City claimed to be selling white tuna but in reality were serving escolar. Based on this issue, we wanted to introduce students to the identification of species in different food items.\n\nWe prepared five sequencing libraries from dishes purchased at local restaurants and raw food products that were purchased at a supermarket. The DNA libraries were a mix of multiple ingredients (like raw beef and tomato). We set out to address the following questions with the students: a) Can you identify the species in a food sample using MinION sequencing, without prior knowledge? b) Can you quantify the composition of the different ingredients? c) What is the minimal sequencing runtime required to detect the ingredients of the sample?\n\nAfter generating the data in the hackathons, we devoted the next class to exploring a diverse number of sequencing algorithms that could be used for species identification. Importantly, Oxford Nanopore\u2019s \u2018What\u2019s In My Pot\u2019 species identification workflow does not support the identification of eukaryotic samples (Juul et al., 2015) and the students had to find alternatives. The consensus among the students of the class was that a Basic Local Alignment Search Tool (BLAST) was the best option.\n\nMost groups were able to identify the species within the dish. One interesting discussion resulted from the two groups that sequenced samples putatively containing beef. The top BLAST hit was for bighorn sheep (Ovis canadensis), whereas the domesticated sheep (Ovis aries) or cow (Bos taurus) was returned with lower alignment quality values. The identification of bighorn sheep was suspicious, since this animal is not domesticated. Cow is part of the Bovidae family, as are the bighorn and domesticated sheep. The students reasoned that the sample could be from a family member and selected the domesticated sheep as the most likely candidate. A surprising finding was the detection of DNA from the parasites Babesia bigemina, Wuchereria bancrofti and Onchocerca ochengi in the raw beef samples (at least two or more reads per parasite). These findings led to a vivid discussion in the class on food safety. (Note: After reading a previous version of this manuscript on bioRxiv, Steven Salzberg noted that the Genbank sequences of these parasites are likely to be contaminated with cow DNA. Thus, the BLAST matches to these parasites do not conclusively indicate that they were present in the food samples.)\n\nOverall, this hackathon was academically apt for the level of the students. The only technical challenge the students repeatedly encountered was how to BLAST a large number of query sequences using the application programming interface (API). They had to find creative solutions, such as mirroring the National Institutes of Health (NIH) BLAST to a private server and tweaking the input parameters to make it possible to search a large number of long MinION reads.\n\n## Hackathon project 2: CSI Columbia\n\nFor the second hackathon, we explored the identification of individuals using ultra low coverage genome sequencing with the MinION. In forensics, DNA evidence identification relies on the analysis of the 13 well-characterized Combined DNA Index System (CODIS) short tandem repeat (STR) loci (Kayser and de Knijff 2011). However, theoretical analysis has suggested that a small number (30\u201380) of common single nucleotide polymorphisms that are inherited independently of each other are sufficient for positive identification (Lin et al., 2004). The aim of this hackathon was to test whether it would possible to use this technique to identify individuals using MinION shotgun sequencing with extremely shallow coverage. We also encouraged the students to test various methods to identify the person, such as examining the mitochondrial haplogroup, the sex of the person, and estimating his or her ancestry. In any case, our expectations were focused on their scientific decision process rather than the answer, and the students were encouraged to send the instructors questions when they required help.\n\nTwo groups sequenced a DNA library prepared from genomic DNA from Craig Venter (Levy et al., 2007), one group sequenced a HapMap sample from the 1000 Genomes Project, and two groups sequenced the genomic DNA of one of the authors (YE). We chose these individuals because of their publically available DNA reference data. The students initially did not know the identity of the sequenced genome, but in a later stage of the hackathon we told them that their sample was either one of the following individuals: Craig Venter, Jim Watson, the author (YE), or a participant of the 1000 Genomes Project.\n\nThe students found this assignment much more challenging than the previous one. Of the five groups, one was able to correctly identify their input sample (Craig Venter). The students tried an impressive array of tools but their main challenge was data wrangling. They had to convert their data to various formats in order to test different tools just to realize that the tools did not perform as expected or were poorly documented, wasting a significant amount of time. Interestingly, some of the undergraduate students told us later that this was the first time they were exposed to an open-ended real-world research problem and that this task gave them a better understanding of academic research. The students also suggested that more discussions between the groups during the hackathon could have helped to solve some of the technical problems. This can be done using online communication tools (like Facebook or a Piazza website). Future instructors of this hackathon can circumvent some of the difficulties by restricting the scope of the analysis. For example, instead of instructing the students to generate any possible identity lead, students could be told to focus only on ancestry analysis from shotgun sequencing or sequence specific regions such as the mitochondria for a more structured analysis.\n\n## Lessons learned from conducting MinION hackathons\n\nPrepare spare parts: We experienced multiple technical difficulties in the 10 intended MinION runs (five groups over in two hackathons). Three flow\u00a0cells had an insufficient pore number (<51) and had to be replaced. In another event, a computer failed to connect with any MinION instruments despite a working USB 3.0 port. During the hackathon, there is little time to troubleshoot. It is therefore crucial to anticipate scenarios of failure and have spare parts (i.e. computers, flow cells, fuel mix, and DNA library).\n\nConsider back-up data: As part of testing our hackathon setting, we sequenced some of the DNA libraries with the MinION before the actual event. The data generated from these tests was kept to have a contingency plan in case none of the MinIONs worked at the time of the hackathon. This way students would still have data to analyze, and the course progression would not be jeopardized. While we fortunately did not have to use this data, we encourage MinION hackathon organizers to consider this option.\n\nExpect variability in the amount of data: The yield of the MinION sequencers varied between runs. The experimental design and the questions posed during each hackathon should be compatible with both a low and a high sequencing yield.\n\nLocate appropriate computers: One of our main challenges was to procure five computers that matched ONT specifications. Our department is almost entirely Mac-based, whereas the current ONT specification requires a Microsoft Windows computer. We tried installing Windows virtual machines on our Macintosh computers but found this solution unreliable, presumably due to the fast data transmission rates of the sequencers. The students\u2019 computers also fell short of the specifications required by ONT, such as having a solid-state drive. MinION hackathon organizers should keep in mind that locating multiple appropriate computers can be a time-demanding task.\n\nNetwork: ONT sequencing requires an Internet connection for base-calling. We connected the five computers to a regular network hub using a standard Ethernet protocol. We did not experience any issues.\n\nUse free tools for data transfer: MinION sequencing can result in large data folders. We looked for a free program to automatically transfer the data 48\u2009hrs after the start of the run from the sequencing laptop to the students\u2019 computers. Cloud-based products, such as Dropbox, do not support synchronizing this amount of data with their free accounts. As an alternative, we used the free version of BitTorrent Sync, which allows sharing of files over the P2P BitTorrrent network without a size limit. BitTorrent can be pre-installed on the workstation and can be synchronized with the student\u2019s personal computer by exchanging a folder-specific key. This solution for large files can be set up within a few minutes and prevents technical challenges.\n\n## Questionnaire\n\nWe sought to learn more quantitatively about the views of students with respect to genomics and mobile sequencing. We asked them to answer a questionnaire before the first hackathon, when the students were exposed only to the theory of sequencing and its applications, and then three weeks later, after the completion of the first hackathon.\n\nWhile our sample size is too small to draw statistical conclusions, we did learn from the trends in the answers. The hackathons seemed to have shaped a more realistic view of the technical challenges inherent to genomic applications. For instance, for the question \u201cHow long do you think it takes from sample preparation to sequencing results using MinION?\u201d, about 70% of the students answered \u2018one hour\u2019 (or less) before the hackathon; but after the hackathon, only 30% of the students thought it would take one hour. After the hackathons, students also thought that it would take more time for mobile sequencers to be used for health tracking by the general public and suggested lower costs for home sequencing applications. Despite discussing the\u00a0ethical implications of DNA analysis quite extensively throughout the course,\u00a0we did not observe changes in the students views on several ethical issues such as \u201cDo you think it is ethical to sequence hair found on the street?\u201d or \u201cDo you think getting your genome sequenced is safe?\u201d These trends suggest that the hackathon mainly shaped the students\u2019 technical understanding and demonstrated the value of hands-on experience as a way of helping them to\u00a0develop realistic views of the challenges of new technologies.\n\n## Concluding remarks\n\nMobile sequencing in the classroom proved to be a useful method for teaching students about the cross-disciplinary field of genomics and to\u00a0contextualize genomic concepts. These devices are relatively inexpensive and do not require complicated equipment or designated lab space to be operated. As such, they dramatically reduce the barrier to classroom integration compared to other sequencing technologies.\n\nThe main focus of this manuscript was the use of mobile sequencing in the higher education system (undergraduate and postgraduate). Even though most students were computer science majors, it could be suitable for other majors such as molecular biology\u00a0and pharmacy, and also\u00a0for\u00a0medical school students. We highly recommend instructors of students with limited programming backgrounds to design assignments that use existing data analysis pipelines (such as ONT\u2019s \u201cWhat\u2019s in my pot\u201d tool). It might also\u00a0be useful to customize the assignments to the major of the students. For example, for biology students, the assignment could focus on taxonomy,\u00a0while medical students could benefit from sequencing microbes that are known to cause disease. We also see the potential of using these devices in high school STEM curricula and enrichment programs. Such activities can expose pupils early in their training to the fascinating world of DNA and serve as an educational springboard to study other disciplines such as math, computer science and chemistry. We hope that the resources and experience outlined in this manuscript will help to facilitate the advent of these programs.\n",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "6a8f2b5a-55d3-4ad4-a7b7-39ce77803fbe",
+      "submission_id": "9d027558-c5c1-4170-830c-78bbd1bafb45",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sarah Shailes, eLife , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.14258.012](https://doi.org/10.7554/eLife.14258.012)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Integration of mobile sequencers in an academic classroom\" to eLife for consideration as a Feature Article. Your article has been reviewed by Samuel Donovan, Michael Linderman, and Nicholas Loman, and the evaluation was overseen by a member of the eLife staff (Sarah Shailes, Assistant Features Editor).\n\nThe peer reviewers and Dr Shailes have drafted this decision letter to help you submit a revised version of the article.\n\nDr Shailes will also contact you separately about some editorial issues that you will need to address.\n\nSummary:\n\nThis was an enjoyable and interesting report about a hands-on workshop to train students in evolution, genomics, sequencing and bioinformatics employing the MinION portable genome sequencer. For the course, students completed a six-week introductory block of seminar-style classes and then two three-week \"hackathons\" in which they performed experiments using the MiniION sequencer. The paper has the potential to raise awareness about, and provide a concrete example of, the types of authentic science that can be done in undergraduate classrooms. This is an area of intense interest in the science education community and many efforts are underway suggesting that there should be a broad audience interested in this report.\n\nThe report highlights several important design features that are worth sharing including the interdisciplinary nature of the course, the \"hackathon\" instructional framework, and the focus on data management skills. The reported exercises and \"lessons learned\" will be valuable to other educators considering running a similar course.\n\nBefore publication, the following comments should be addressed.\n\nEssential revisions:\n\n1) As it is currently organized, the manuscript focuses too narrowly on the details of the technology employed. The context of this course is important, but the broader potential for informing diverse educational settings is not as clear as it could be. Please, therefore, include a fuller discussion of the key features of the approach, for example:\n\n1a) The audience. Was the course advertised as a \"bioinformatics\" course? Did it have any prerequisites? Did students without a bioinformatics background have any particular difficulties with the hackathon projects? One or two sentences about the framing of the course and the experiences of different kinds of students would help provide context and orient other educators considering similar techniques.\n\n1b) Using a \"hackathon\" instructional model \u2013 share with the audience what the features of a hackathon are and how it structured the classroom.\n\n1c) Tuning student expectations \u2013 this strikes me as essential when working on authentic tasks.\n\n1d) At a certain level this curriculum could be criticized as a \"canned lab\" because of the ways that the samples were prepared, and the data collection is highly automated. The reviewers don't share this criticism but they think that it may be useful to articulate the learning goals in order to highlight all of the challenging work that was done even when the data generation did not involve a lot of student decisions.\n\nAs each of these points are introduced as challenges/opportunities you can follow-up with details from the course that demonstrate how those opportunities were leveraged for engagement and learning.\n\n2) Please include more fine details of the methods used in the course to help other instructors to reproduce it themselves. It might be better to give an exhaustive \"kit list\" and perhaps even costs associated with setting up such a workshop.\n\n3) Subsection \u201cQuestionnaire\u201d: you report that \"We did not observe changes before and after the hackathon for ethical issues\u2026\". How much discussion of potential ethical issues was included in the syllabus? That is, would any changes in such views (or not) result only from their personal experiences, or were students deliberately exposed to different viewpoints on those questions?\n\n4) What are the ethical implications of using the instructors' own DNA samples in the CSI practical? A discussion on this point would be useful.\n\n5) The CSI practical is much less likely to \"succeed\" than the food experiment because shallow coverage nanopore sequencing is quite error prone (10% error at best). There should be some discussion about making this practical more likely to succeed, either by doing something like mitochondrial sequencing or some bioinformatics method of imputation that is sensitive to nanopore error model.\n",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "eb720b2f-6b5f-4b85-ac75-fbda36789655",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C1",
+      "claim": "The advent of mobile DNA sequencers has made it possible to generate DNA sequencing data outside of laboratories and genome centers.",
+      "claim_type": "EXPLICIT",
+      "source": "The advent of mobile DNA sequencers has made it possible to generate DNA sequencing data outside of laboratories and genome centers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the capabilities of mobile DNA sequencers, representing established knowledge in the field of genomics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "e56d8f93-0d67-45ae-bcc1-ecd1beb401a0",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C2",
+      "claim": "The MinION is a mobile sequencer used in a 13-week academic course for undergraduate and graduate students.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report our experience of using the MinION, a mobile sequencer, in a 13-week academic course for undergraduate and graduate students.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of the authors' experience as described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "cb1e0989-bdea-4689-9554-68835f218911",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C3",
+      "claim": "The course consisted of theoretical sessions presenting fundamental topics in genomics and several applied hackathon sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "The course consisted of theoretical sessions that presented fundamental topics in genomics and several applied hackathon sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structure of the course as implemented by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "5cede3e3-1c38-4730-92fd-4106351e5d6d",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C4",
+      "claim": "In the hackathons, students used MinION sequencers to generate and analyze their own data.",
+      "claim_type": "EXPLICIT",
+      "source": "In these hackathons, the students used MinION sequencers to generate and analyze their own data and gain hands-on experience in the topics discussed in the theoretical classes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the activities performed by students during the hackathons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "4c903567-85d1-483f-b86d-e0398aaedc54",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C5",
+      "claim": "Previous work has highlighted the benefit of hands-on training to help students put genomics concepts into context.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has highlighted the benefit of hands-on training to help students put these concepts into context (Altman 1998; Donovan, 2008; Reisdorph et al., 2013; Magana et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research on educational methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "1fa3cf1b-1ecf-4e64-bb61-a3e324abdfd8",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C6",
+      "claim": "Hands-on training is the preferred learning style of the Millennial generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Hands-on training is also the preferred learning style of the Millennial generation, which currently makes up the majority of undergraduate and graduate students.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to research on generational learning preferences.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "15eb7e94-3b67-4356-8039-1203f17eb3ed",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C7",
+      "claim": "The Millennial generation is technology focused, works most effectively in groups, and absorbs information most efficiently by kinesthetic learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Research has shown that people in this generation are technology focused, work most effectively in groups, and absorb information most efficiently by kinesthetic learning (learning by doing; Shapiro et al., 2013; Evans et al., 2015; Linderman et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to research studies on Millennial learning characteristics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "94c3b33b-425a-4c02-a12d-91ec67e97365",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C8",
+      "claim": "The MinION sequencer is slightly larger than a typical USB stick and only requires a laptop to run.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike other sequencing technologies that are static and require a laboratory setting, the MinION sequencer is slightly larger than a typical USB stick and only requires a laptop to run (Figure 1A and B; Gardy et al., 2015; McIntyre et al., 2015; Erlich, 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by both citations and visual evidence in Figure 1A showing the size comparison.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "601d1460-40ff-4e72-b171-0c4bb35dd847",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C9",
+      "claim": "Other sequencing technologies are static and require a laboratory setting.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike other sequencing technologies that are static and require a laboratory setting, the MinION sequencer is slightly larger than a typical USB stick and only requires a laptop to run (Figure 1A and B; Gardy et al., 2015; McIntyre et al., 2015; Erlich, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement about traditional sequencing technologies, supported by citations and general knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "756f1dce-e70a-4cbc-9211-4fd92d5669e9",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C10",
+      "claim": "20 students enrolled in the Ubiquitous Genomics course.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 20 students who enrolled in the course, 50% were studying towards a bachelor's, 30% towards a master's degree, and 20% were enrolled in a PhD program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of enrollment data from the course.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "153c7f82-958d-4d0b-a713-79ecd470d259",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C11",
+      "claim": "50% of enrolled students were studying towards a bachelor's degree.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 20 students who enrolled in the course, 50% were studying towards a bachelor's, 30% towards a master's degree, and 20% were enrolled in a PhD program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demographic data from the course enrollment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "cdc41a86-bbce-4e72-aadc-36e617618f78",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C12",
+      "claim": "30% of enrolled students were studying towards a master's degree.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 20 students who enrolled in the course, 50% were studying towards a bachelor's, 30% towards a master's degree, and 20% were enrolled in a PhD program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demographic data from the course enrollment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "be4fd3fb-2404-4d47-a672-e6ffb2b58e6d",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C13",
+      "claim": "20% of enrolled students were enrolled in a PhD program.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 20 students who enrolled in the course, 50% were studying towards a bachelor's, 30% towards a master's degree, and 20% were enrolled in a PhD program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demographic data from the course enrollment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "eaba167e-370a-4199-b4f9-98ab9d2f9a57",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C14",
+      "claim": "Approximately 60% of students were enrolled in a computer science program.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority (~60%) of students were enrolled in a computer science program, and the rest were enrolled in other programs, including electrical engineering, environmental health science and biomedical informatics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demographic data about student majors from the course.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "774a3278-d200-492e-94c5-b3342ec92697",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C15",
+      "claim": "The class had no prerequisites.",
+      "claim_type": "EXPLICIT",
+      "source": "The class had no prerequisites, but nearly all students had some programming experience and about a third of the students had taken at least one class in computational biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the course requirements as set by the instructors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "78f845a6-ef88-4d6d-9e7c-04fc0c81303c",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C16",
+      "claim": "Nearly all students had some programming experience.",
+      "claim_type": "EXPLICIT",
+      "source": "The class had no prerequisites, but nearly all students had some programming experience and about a third of the students had taken at least one class in computational biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observational data about the student background.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "153035dc-d07e-4cda-b62c-a46a18bdf06f",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C17",
+      "claim": "About a third of the students had taken at least one class in computational biology.",
+      "claim_type": "EXPLICIT",
+      "source": "The class had no prerequisites, but nearly all students had some programming experience and about a third of the students had taken at least one class in computational biology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observational data about the student background.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "02de3f7c-828a-4a98-9eb1-e44b2fc7fda0",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C18",
+      "claim": "Students with computational biology experience performed slightly better in the class.",
+      "claim_type": "EXPLICIT",
+      "source": "Students with computational biology experience performed slightly better in our class.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observational finding from the course outcomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "ad390dfb-52b5-4b34-92de-f40cb660f2a6",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C19",
+      "claim": "The course consisted of 13 meetings with one two-hour class per week.",
+      "claim_type": "EXPLICIT",
+      "source": "The course consisted of 13 meetings (one two-hour class per week) and was separated into a theoretical section and an applied section (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structure and schedule of the course.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "19f93414-1a53-4e5a-b198-66400456f230",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C20",
+      "claim": "The theoretical section overviewed sequencing technologies and their potential uses in medicine, bio-surveillance, forensics, and ethical aspects of DNA sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "The theoretical section overviewed sequencing technologies and their potential uses in medicine, bio-surveillance, forensics, and ethical aspects of DNA sequencing, such as genetic privacy and the ability of participants to comprehend risks and potential harm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the content covered in the theoretical section of the course.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "ee6d8790-a23a-4638-822d-fb565ed5adc2",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C21",
+      "claim": "The aim of the theoretical section was to create a common ground for the group of students with diverse majors and background knowledge.",
+      "claim_type": "EXPLICIT",
+      "source": "The aim of the theoretical section was to create a common ground for the group of students with diverse majors and background knowledge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This states the pedagogical goal of the theoretical section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "451654d3-f86d-4f2a-953c-5d8ec9675fbd",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C22",
+      "claim": "The format of the theoretical section was an interactive seminar where the class discussed one or two recent research papers.",
+      "claim_type": "EXPLICIT",
+      "source": "The format was an interactive seminar where the class discussed one or two recent research papers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the teaching format used in the theoretical section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "7d5bca9e-688c-401c-9b99-db03e240b999",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C23",
+      "claim": "The applied section comprised two three-week blocks of hackathons that included MinION sequencing, data analysis and an assignment.",
+      "claim_type": "EXPLICIT",
+      "source": "The applied section comprised two three-week blocks of \"hackathons\" that included MinION sequencing, data analysis and an assignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structure of the applied section of the course.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "6ac13618-ad40-450b-acaa-b6e14b51fd3f",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C24",
+      "claim": "The consumable costs of a hackathon are estimated to be on the order of $1,000 per team per assignment.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate the consumable costs of a hackathon to be on the order of $1,000 per team per assignment (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a cost estimate based on the materials used, with detailed breakdown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "91bcebf5-e96a-4246-a92f-9c49fe84bee7",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C25",
+      "claim": "Nearly 90% of the hackathon cost is due to the MinION sequencer.",
+      "claim_type": "EXPLICIT",
+      "source": "However, nearly 90% of the cost is due to the MinION sequencer and any reduction in its price will affect the projection of the costs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the cost breakdown data presented in Table 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "78ad90fd-483c-44b1-ba33-df878e113dc1",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C26",
+      "claim": "Any reduction in the MinION sequencer price will affect the projection of the costs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, nearly 90% of the cost is due to the MinION sequencer and any reduction in its price will affect the projection of the costs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the cost structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "7a70d0b3-de5f-4c1e-a4e7-c72822334df4",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C27",
+      "claim": "In the first hackathon, students received unlabeled DNA collected from food and supermarket ingredients.",
+      "claim_type": "EXPLICIT",
+      "source": "In the first hackathon, entitled \"from snack to sequence\", the students received unlabeled DNA collected from food and supermarket ingredients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the first hackathon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "53407104-3fa9-43be-92a0-a32a93912e46",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C28",
+      "claim": "In the first hackathon, students had to use sequencers to collect DNA data and devise a pipeline to infer the ingredients.",
+      "claim_type": "EXPLICIT",
+      "source": "They had to use the sequencers to collect the DNA data and devise a pipeline to infer the ingredients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the assignment given to students in the first hackathon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "359cca00-9903-4205-b235-3499d87e7e70",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C29",
+      "claim": "In the second hackathon, students sequenced several human DNA samples without knowing the identity of the samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In the second hackathon, called \"CSI Columbia\", the students sequenced several human DNA samples without knowing the identity of the samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the second hackathon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "c4a87f77-839c-4754-a61b-645a5292eda4",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C30",
+      "claim": "The second hackathon focused on collecting data from human samples and students were encouraged to try any possible method to generate investigative leads.",
+      "claim_type": "EXPLICIT",
+      "source": "The hackathon focused on collecting data from these samples and students were encouraged to try any possible method they could imagine to generate investigative leads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the assignment and approach for the second hackathon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "2e3f2507-273e-4603-937e-00b771f28294",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C31",
+      "claim": "Students were instructed to form groups of 4-5 people a week before the hackathon.",
+      "claim_type": "EXPLICIT",
+      "source": "A week before the hackathon, the students were instructed to form groups of 4\u20135 people.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the organizational structure as shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "7a407274-3da5-439e-bded-e77e9ec2a89b",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C32",
+      "claim": "Students were encouraged to form groups with diverse skill sets.",
+      "claim_type": "EXPLICIT",
+      "source": "We encouraged them to form groups with diverse skill sets (e.g. combinations of biology backgrounds and computer science backgrounds).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the instructors' guidance for group formation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "d294b8cf-c9c4-4e00-8ec0-64e2f5e96824",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C33",
+      "claim": "Genomic DNA extraction and ONT library preparation takes approximately 4 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "We decided to do this part ourselves and not as part of the training, since genomic DNA extraction and ONT library preparation takes ~4 hr (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a time estimate based on the protocol used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "13457928-72bf-424c-bf81-7f384bd53826",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C34",
+      "claim": "The instructors prepared the DNA libraries several days before the hackathons.",
+      "claim_type": "EXPLICIT",
+      "source": "Several days before the hackathons, the instructors prepared the DNA libraries for the class.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the preparation process undertaken by the instructors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "64de14bb-e0b4-4572-877d-9558b37bd348",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C35",
+      "claim": "Each hackathon started with a 45-minute lecture about the goals and background material.",
+      "claim_type": "EXPLICIT",
+      "source": "We continued with a 45-minute lecture about the goals of the hackathon and background material, such as how the DNA libraries were prepared, the MinION software interface features, and the base-calling pipeline (see Supplementary files 3\u20136 for assignments and PowerPoint slides).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structure of the hackathon sessions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "ead6e7c2-7a73-4a42-a769-3eed576605a7",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C36",
+      "claim": "Students practiced pipetting before loading reagents onto the MinION flow cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we had students practice pipetting. The loading of reagents onto the MinION flow cell requires good pipetting skills; otherwise, the yield may be substantially lower. As most of our students had never touched a pipette before, we allowed them to practice loading water onto used MinION flow cells until they were comfortable pipetting with precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a training activity implemented in the hackathons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "3d0a2677-857f-4566-b953-710b4e417b8c",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C37",
+      "claim": "Most students had never touched a pipette before the hackathon.",
+      "claim_type": "EXPLICIT",
+      "source": "As most of our students had never touched a pipette before, we allowed them to practice loading water onto used MinION flow cells until they were comfortable pipetting with precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the students' prior laboratory experience.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "24f7c78f-2d5d-4963-84c2-4d594d15862e",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C38",
+      "claim": "Loading of reagents onto the MinION flow cell requires good pipetting skills.",
+      "claim_type": "EXPLICIT",
+      "source": "The loading of reagents onto the MinION flow cell requires good pipetting skills; otherwise, the yield may be substantially lower.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of the technical requirements and observed outcomes.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "de3ddb32-8ce7-4dff-a5db-7467c7541821",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C39",
+      "claim": "Poor pipetting skills can substantially lower the sequencing yield.",
+      "claim_type": "EXPLICIT",
+      "source": "The loading of reagents onto the MinION flow cell requires good pipetting skills; otherwise, the yield may be substantially lower.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on technical knowledge and experience.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "d6f85583-cd5d-4afc-bda9-5d39b82f8d11",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C40",
+      "claim": "Students were fully responsible for generating the data with minimal assistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Armed with a protocol, the students were fully responsible for generating the data with minimal assistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the level of independence given to students during the hackathons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "e11a7986-819b-4263-b569-f4f2ad1b45a3",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C41",
+      "claim": "Sequencers were left unattended for 48 hours to generate data according to the ONT protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "After checking quality measures, the sequencers were left unattended for 48 hours to generate data according to the ONT protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sequencing protocol followed in the hackathons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "fd93263f-fc3e-47b4-815f-10b156b6f828",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C42",
+      "claim": "The assignment was divided into two milestones.",
+      "claim_type": "EXPLICIT",
+      "source": "After data generation, we instructed the students to complete an assignment, which was divided into two milestones (Supplementary files 5 and 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the structure of the student assignments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "b2eda884-35c8-44d2-8635-39f215744189",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C43",
+      "claim": "The first milestone was to report on the technical performance of the MinION sequencer.",
+      "claim_type": "EXPLICIT",
+      "source": "The first milestone was to report on the technical performance of the MinION sequencer, such as the total reads, the read length distribution, DNA library quality, and the read quality scores over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the content of the first assignment milestone.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "9ec42712-d548-4cea-ad13-80c4b001d846",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C44",
+      "claim": "The aim of the quality control analysis was to guide students on how to approach large genomic data sets.",
+      "claim_type": "EXPLICIT",
+      "source": "The aim of the quality control analysis was to guide the students on how to approach large genomic data sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This states the pedagogical goal of the first milestone.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "766667a6-cd1c-4d4b-8637-ea6a85a659ae",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C45",
+      "claim": "The second milestone focused on an actual scientific problem.",
+      "claim_type": "EXPLICIT",
+      "source": "The second milestone focused on an actual scientific problem (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the nature of the second assignment milestone.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "5651e41d-9415-459a-8236-3242955a5405",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C46",
+      "claim": "Students had to submit a written report and a GitHub link to their code for each milestone.",
+      "claim_type": "EXPLICIT",
+      "source": "For each milestone, the students had to submit a written report and a GitHub link to their code (an example: https://github.com/dspeyer/ubiq_genome).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the deliverables required from students.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "681b2d83-af01-4406-883a-fab854b5fa94",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C47",
+      "claim": "Each hackathon concluded with a 10-minute talk by each group.",
+      "claim_type": "EXPLICIT",
+      "source": "Each hackathon concluded with a 10-minute talk by each group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the final presentation requirement for the hackathons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "98e77cae-8fb6-4d28-a0bc-9bd5304e72f0",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C48",
+      "claim": "All relevant teaching material is provided under the Creative Commons Attribution-Share Alike 4.0 International License.",
+      "claim_type": "EXPLICIT",
+      "source": "All relevant teaching material is provided under the Creative Commons Attribution-Share Alike 4.0 International License.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This states the licensing terms for the educational materials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "73d23888-2b01-4e63-99e7-5eb865eb4999",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C49",
+      "claim": "The first hackathon was inspired by food scandals such as horsemeat found in ready-made meals labeled as beef throughout Europe in 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "It was inspired by several food scandals, such as the horsemeat found in ready-made meals that were labeled as beef throughout Europe in 2013, as well as the revelation that a number of sushi restaurants in New York City claimed to be selling white tuna but in reality were serving escolar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the real-world context that motivated the hackathon design.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "934d4291-3580-4db9-9706-e2adb772c565",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C50",
+      "claim": "A number of sushi restaurants in New York City claimed to be selling white tuna but were actually serving escolar.",
+      "claim_type": "EXPLICIT",
+      "source": "It was inspired by several food scandals, such as the horsemeat found in ready-made meals that were labeled as beef throughout Europe in 2013, as well as the revelation that a number of sushi restaurants in New York City claimed to be selling white tuna but in reality were serving escolar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a real-world food mislabeling incident.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "8377b052-e13e-42bc-afc1-b744bcfe7576",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C51",
+      "claim": "Five sequencing libraries were prepared from dishes purchased at local restaurants and raw food products purchased at a supermarket.",
+      "claim_type": "EXPLICIT",
+      "source": "We prepared five sequencing libraries from dishes purchased at local restaurants and raw food products that were purchased at a supermarket.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample preparation for the first hackathon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "9b318754-7e9d-40af-bb2f-c26c86e520e3",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C52",
+      "claim": "The DNA libraries were a mix of multiple ingredients.",
+      "claim_type": "EXPLICIT",
+      "source": "The DNA libraries were a mix of multiple ingredients (like raw beef and tomato).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the composition of the samples used in the first hackathon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "47c69c4e-dac2-4d5e-8736-bb24df0a3cea",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C53",
+      "claim": "Oxford Nanopore's 'What's In My Pot' species identification workflow does not support the identification of eukaryotic samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Oxford Nanopore's 'What's In My Pot' species identification workflow does not support the identification of eukaryotic samples (Juul et al., 2015) and the students had to find alternatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical limitation of the software, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "5767276b-82c1-43e0-9b35-7e8c3b7bf14f",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C54",
+      "claim": "The consensus among the students was that BLAST was the best option for species identification.",
+      "claim_type": "EXPLICIT",
+      "source": "The consensus among the students of the class was that a Basic Local Alignment Search Tool (BLAST) was the best option.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the outcome of student exploration and discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "fc4bbfab-0f24-4009-a455-52aa3457d52b",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C55",
+      "claim": "Most groups were able to identify the species within the dish.",
+      "claim_type": "EXPLICIT",
+      "source": "Most groups were able to identify the species within the dish.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an outcome measure from the first hackathon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "fa65ced1-55c8-4797-ba20-b5005fa49912",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C56",
+      "claim": "For samples containing beef, the top BLAST hit was for bighorn sheep (Ovis canadensis).",
+      "claim_type": "EXPLICIT",
+      "source": "One interesting discussion resulted from the two groups that sequenced samples putatively containing beef. The top BLAST hit was for bighorn sheep (Ovis canadensis), whereas the domesticated sheep (Ovis aries) or cow (Bos taurus) was returned with lower alignment quality values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a data analysis result from the first hackathon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "7a99e2bd-8781-49d6-abc7-53f83a08934d",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C57",
+      "claim": "Domesticated sheep (Ovis aries) and cow (Bos taurus) were returned with lower alignment quality values than bighorn sheep for the beef samples.",
+      "claim_type": "EXPLICIT",
+      "source": "The top BLAST hit was for bighorn sheep (Ovis canadensis), whereas the domesticated sheep (Ovis aries) or cow (Bos taurus) was returned with lower alignment quality values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a data analysis result from the first hackathon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "1b840eeb-bd0f-42ce-b627-952095a77f72",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C58",
+      "claim": "Bighorn sheep is not domesticated.",
+      "claim_type": "EXPLICIT",
+      "source": "The identification of bighorn sheep was suspicious, since this animal is not domesticated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is general biological knowledge about bighorn sheep.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "25c73f9d-5eb0-4465-ad1e-4e3f7894196f",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C59",
+      "claim": "Cow is part of the Bovidae family, as are bighorn and domesticated sheep.",
+      "claim_type": "EXPLICIT",
+      "source": "Cow is part of the Bovidae family, as are the bighorn and domesticated sheep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is taxonomic knowledge about these species.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "c7c875a9-22c2-443e-b41c-71287471618b",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C60",
+      "claim": "Students reasoned that the beef sample could be from a Bovidae family member and selected domesticated sheep as the most likely candidate.",
+      "claim_type": "EXPLICIT",
+      "source": "The students reasoned that the sample could be from a family member and selected the domesticated sheep as the most likely candidate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the reasoning process of the students based on the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "4dd702b6-8ebc-4326-a275-f77f84a876a8",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C61",
+      "claim": "DNA from the parasites Babesia bigemina, Wuchereria bancrofti and Onchocerca ochengi was detected in the raw beef samples.",
+      "claim_type": "EXPLICIT",
+      "source": "A surprising finding was the detection of DNA from the parasites Babesia bigemina, Wuchereria bancrofti and Onchocerca ochengi in the raw beef samples (at least two or more reads per parasite).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a data analysis result from the first hackathon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "b87c4201-abca-43a8-8f9e-4f5426a08ac3",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C62",
+      "claim": "At least two or more reads per parasite were detected in the raw beef samples.",
+      "claim_type": "EXPLICIT",
+      "source": "A surprising finding was the detection of DNA from the parasites Babesia bigemina, Wuchereria bancrofti and Onchocerca ochengi in the raw beef samples (at least two or more reads per parasite).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This quantifies the sequencing evidence for the parasite detection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "3ebdd15d-bbc9-45b0-8e42-353403a7ff08",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C63",
+      "claim": "The Genbank sequences of Babesia bigemina, Wuchereria bancrofti and Onchocerca ochengi are likely to be contaminated with cow DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "After reading a previous version of this manuscript on bioRxiv, Steven Salzberg noted that the Genbank sequences of these parasites are likely to be contaminated with cow DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is information provided by an external expert based on database knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "eb9f6105-ad59-445b-86f1-bca5a1d0605a",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C64",
+      "claim": "The BLAST matches to the parasites do not conclusively indicate that they were present in the food samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the BLAST matches to these parasites do not conclusively indicate that they were present in the food samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the database contamination information.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "f5f5b6ed-03cb-4304-acff-255a236f2e86",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C65",
+      "claim": "The first hackathon was academically apt for the level of the students.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this hackathon was academically apt for the level of the students.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment by the instructors of the hackathon difficulty.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "37f70686-e739-4b7d-aa9a-cfd4832982fe",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C66",
+      "claim": "The main technical challenge students encountered was how to BLAST a large number of query sequences using the API.",
+      "claim_type": "EXPLICIT",
+      "source": "The only technical challenge the students repeatedly encountered was how to BLAST a large number of query sequences using the application programming interface (API).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation of student difficulties during the hackathon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "797f12a0-d707-402b-8288-87c3f7d8dabf",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C67",
+      "claim": "Students found creative solutions such as mirroring the NIH BLAST to a private server and tweaking input parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "They had to find creative solutions, such as mirroring the National Institutes of Health (NIH) BLAST to a private server and tweaking the input parameters to make it possible to search a large number of long MinION reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the problem-solving approaches taken by students.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "d1282a98-5b35-4876-825a-ddc0822ccd71",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C68",
+      "claim": "The second hackathon explored the identification of individuals using ultra low coverage genome sequencing with the MinION.",
+      "claim_type": "EXPLICIT",
+      "source": "For the second hackathon, we explored the identification of individuals using ultra low coverage genome sequencing with the MinION.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the focus of the second hackathon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "8b03b774-6832-4139-a190-27c60f0aa88b",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C69",
+      "claim": "In forensics, DNA evidence identification relies on the analysis of the 13 well-characterized CODIS short tandem repeat loci.",
+      "claim_type": "EXPLICIT",
+      "source": "In forensics, DNA evidence identification relies on the analysis of the 13 well-characterized Combined DNA Index System (CODIS) short tandem repeat (STR) loci (Kayser and de Knijff 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in forensic science, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "feb2850b-bceb-4948-87a1-dc931faccd35",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C70",
+      "claim": "Theoretical analysis has suggested that 30-80 common SNPs that are inherited independently are sufficient for positive identification.",
+      "claim_type": "EXPLICIT",
+      "source": "However, theoretical analysis has suggested that a small number (30\u201380) of common single nucleotide polymorphisms that are inherited independently of each other are sufficient for positive identification (Lin et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical finding from prior research, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "7c01d68a-5235-43dd-b33c-e407b3d02a76",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C71",
+      "claim": "Two groups sequenced a DNA library prepared from genomic DNA from Craig Venter.",
+      "claim_type": "EXPLICIT",
+      "source": "Two groups sequenced a DNA library prepared from genomic DNA from Craig Venter (Levy et al., 2007), one group sequenced a HapMap sample from the 1000 Genomes Project, and two groups sequenced the genomic DNA of one of the authors (YE).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample distribution in the second hackathon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "c1b88f02-203b-4eaf-8775-7b571e5f2c70",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C72",
+      "claim": "One group sequenced a HapMap sample from the 1000 Genomes Project.",
+      "claim_type": "EXPLICIT",
+      "source": "Two groups sequenced a DNA library prepared from genomic DNA from Craig Venter (Levy et al., 2007), one group sequenced a HapMap sample from the 1000 Genomes Project, and two groups sequenced the genomic DNA of one of the authors (YE).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample distribution in the second hackathon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "fa1a57a1-7851-46d6-80e7-d5c31b9ebb02",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C73",
+      "claim": "Two groups sequenced the genomic DNA of one of the authors (YE).",
+      "claim_type": "EXPLICIT",
+      "source": "Two groups sequenced a DNA library prepared from genomic DNA from Craig Venter (Levy et al., 2007), one group sequenced a HapMap sample from the 1000 Genomes Project, and two groups sequenced the genomic DNA of one of the authors (YE).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample distribution in the second hackathon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "b5d9318d-f1c9-48c6-a292-c12f8b1ce326",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C74",
+      "claim": "The sequenced individuals were chosen because of their publicly available DNA reference data.",
+      "claim_type": "EXPLICIT",
+      "source": "We chose these individuals because of their publically available DNA reference data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the rationale for sample selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "0865cbd7-f945-4569-8a17-a7ffa89f872d",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C75",
+      "claim": "Students initially did not know the identity of the sequenced genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The students initially did not know the identity of the sequenced genome, but in a later stage of the hackathon we told them that their sample was either one of the following individuals: Craig Venter, Jim Watson, the author (YE), or a participant of the 1000 Genomes Project.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the information disclosure strategy in the hackathon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "d22cad36-3d53-4395-b35d-3c1d6f8ba9db",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C76",
+      "claim": "Students found the second assignment much more challenging than the first one.",
+      "claim_type": "EXPLICIT",
+      "source": "The students found this assignment much more challenging than the previous one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is feedback from students about the difficulty level.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "22c63443-80e2-4ff9-9b35-8fdf9d5646ec",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C77",
+      "claim": "Of the five groups, one was able to correctly identify their input sample (Craig Venter).",
+      "claim_type": "EXPLICIT",
+      "source": "Of the five groups, one was able to correctly identify their input sample (Craig Venter).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an outcome measure from the second hackathon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "c3b0d43a-a20a-4831-bfaa-5bc1d6e29f1f",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C78",
+      "claim": "The main challenge for students in the second hackathon was data wrangling.",
+      "claim_type": "EXPLICIT",
+      "source": "The students tried an impressive array of tools but their main challenge was data wrangling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation of student difficulties during the second hackathon.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "e9c02d22-5717-4935-b457-b2b95af92d13",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C79",
+      "claim": "Students had to convert their data to various formats to test different tools.",
+      "claim_type": "EXPLICIT",
+      "source": "They had to convert their data to various formats in order to test different tools just to realize that the tools did not perform as expected or were poorly documented, wasting a significant amount of time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical challenges faced by students.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "0bfdeadd-1f8b-41fe-8f2d-3b46fd2a701e",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C80",
+      "claim": "Some undergraduate students said this was the first time they were exposed to an open-ended real-world research problem.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, some of the undergraduate students told us later that this was the first time they were exposed to an open-ended real-world research problem and that this task gave them a better understanding of academic research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is student feedback about their learning experience.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "6803cd5c-48c4-4514-a8dd-5e30de790cf9",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C81",
+      "claim": "The second hackathon task gave students a better understanding of academic research.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, some of the undergraduate students told us later that this was the first time they were exposed to an open-ended real-world research problem and that this task gave them a better understanding of academic research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is student feedback about their learning experience.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "7779c08d-a83e-4be1-9952-ae29f66ec81c",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C82",
+      "claim": "Students suggested that more discussions between groups during the hackathon could have helped solve technical problems.",
+      "claim_type": "EXPLICIT",
+      "source": "The students also suggested that more discussions between the groups during the hackathon could have helped to solve some of the technical problems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is student feedback about potential improvements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "064c8ed4-9886-4bf9-b0c6-83ea391bdd05",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C83",
+      "claim": "Online communication tools like Facebook or Piazza can facilitate discussions between groups.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be done using online communication tools (like Facebook or a Piazza website).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for implementing student feedback.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "3dc16c14-a1b9-43c2-9bde-475de789b03f",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C84",
+      "claim": "Future instructors can circumvent difficulties by restricting the scope of the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Future instructors of this hackathon can circumvent some of the difficulties by restricting the scope of the analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the experience from the course.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "e6a1dcbc-faa7-4a47-9d50-2ed9e8e691f7",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C85",
+      "claim": "Three flow cells had an insufficient pore number (<51) and had to be replaced.",
+      "claim_type": "EXPLICIT",
+      "source": "Three flow cells had an insufficient pore number (<51) and had to be replaced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes technical difficulties encountered during the hackathons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "10c9658c-9fa1-45e2-b896-b2471ddd6baa",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C86",
+      "claim": "A computer failed to connect with any MinION instruments despite a working USB 3.0 port.",
+      "claim_type": "EXPLICIT",
+      "source": "In another event, a computer failed to connect with any MinION instruments despite a working USB 3.0 port.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes technical difficulties encountered during the hackathons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "1e797840-459e-4cb3-84ed-1e3cae694259",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C87",
+      "claim": "During the hackathon, there is little time to troubleshoot.",
+      "claim_type": "EXPLICIT",
+      "source": "During the hackathon, there is little time to troubleshoot.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the time constraints of the hackathon format.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "e5a5511f-a9a8-4619-8780-00ee902833ef",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C88",
+      "claim": "It is crucial to anticipate scenarios of failure and have spare parts.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore crucial to anticipate scenarios of failure and have spare parts (i.e. computers, flow cells, fuel mix, and DNA library).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the experience from the course.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "fda561d2-ddf0-4c98-8abc-5b9a9d02ebaf",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C89",
+      "claim": "The instructors sequenced some DNA libraries with the MinION before the actual hackathon event as part of testing.",
+      "claim_type": "EXPLICIT",
+      "source": "As part of testing our hackathon setting, we sequenced some of the DNA libraries with the MinION before the actual event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the preparation process undertaken by the instructors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "02b48121-4f8e-4f4f-91c9-e4095e848cdb",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C90",
+      "claim": "Back-up data was kept as a contingency plan in case none of the MinIONs worked during the hackathon.",
+      "claim_type": "EXPLICIT",
+      "source": "The data generated from these tests was kept to have a contingency plan in case none of the MinIONs worked at the time of the hackathon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the risk management strategy employed by the instructors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "f167ee99-afc5-435a-b345-fe6d805ff946",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C91",
+      "claim": "The back-up data was not needed during the course.",
+      "claim_type": "EXPLICIT",
+      "source": "While we fortunately did not have to use this data, we encourage MinION hackathon organizers to consider this option.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an outcome from the course implementation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "07816495-17fb-4477-af71-b9f340879cff",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C92",
+      "claim": "The yield of the MinION sequencers varied between runs.",
+      "claim_type": "EXPLICIT",
+      "source": "The yield of the MinION sequencers varied between runs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the technical performance of the sequencers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "d2869e38-d23a-4f29-a477-7fcafd3fbc88",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C93",
+      "claim": "The experimental design and questions should be compatible with both low and high sequencing yield.",
+      "claim_type": "EXPLICIT",
+      "source": "The experimental design and the questions posed during each hackathon should be compatible with both a low and a high sequencing yield.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the observed variability in sequencing yield.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "4f78797b-9786-418a-b01e-e910d7aa0213",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C94",
+      "claim": "One of the main challenges was to procure five computers that matched ONT specifications.",
+      "claim_type": "EXPLICIT",
+      "source": "One of our main challenges was to procure five computers that matched ONT specifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a logistical challenge encountered during course preparation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "386180ed-17a9-4a3c-a7fa-4624eeb9f328",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C95",
+      "claim": "The department is almost entirely Mac-based.",
+      "claim_type": "EXPLICIT",
+      "source": "Our department is almost entirely Mac-based, whereas the current ONT specification requires a Microsoft Windows computer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computing infrastructure of the department.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "8430ec95-2ddc-43ad-ab34-1c92e3b794d4",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C96",
+      "claim": "The current ONT specification requires a Microsoft Windows computer.",
+      "claim_type": "EXPLICIT",
+      "source": "Our department is almost entirely Mac-based, whereas the current ONT specification requires a Microsoft Windows computer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical requirement from Oxford Nanopore Technologies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "f4d19e90-b904-4c48-a749-a5495afe33b6",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C97",
+      "claim": "Installing Windows virtual machines on Macintosh computers was found to be unreliable.",
+      "claim_type": "EXPLICIT",
+      "source": "We tried installing Windows virtual machines on our Macintosh computers but found this solution unreliable, presumably due to the fast data transmission rates of the sequencers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an attempted solution and its outcome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "53c43b21-6e21-4757-abf2-f4bd86afb11c",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C98",
+      "claim": "The unreliability of Windows virtual machines on Macs is presumably due to the fast data transmission rates of the sequencers.",
+      "claim_type": "EXPLICIT",
+      "source": "We tried installing Windows virtual machines on our Macintosh computers but found this solution unreliable, presumably due to the fast data transmission rates of the sequencers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed technical problem.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "50343c6b-8d5c-419e-8b4c-41de506dd9d7",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C99",
+      "claim": "Students' computers fell short of the specifications required by ONT, such as having a solid-state drive.",
+      "claim_type": "EXPLICIT",
+      "source": "The students' computers also fell short of the specifications required by ONT, such as having a solid-state drive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of student-owned equipment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "3c6760b6-9cc5-4c1f-844a-fb5ebad85b7a",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C100",
+      "claim": "Locating multiple appropriate computers can be a time-demanding task.",
+      "claim_type": "EXPLICIT",
+      "source": "MinION hackathon organizers should keep in mind that locating multiple appropriate computers can be a time-demanding task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the experience from the course.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "943f5072-47c8-43a4-935f-afcfc889cccc",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C101",
+      "claim": "ONT sequencing requires an Internet connection for base-calling.",
+      "claim_type": "EXPLICIT",
+      "source": "ONT sequencing requires an Internet connection for base-calling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a technical requirement of the ONT sequencing system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "875d953a-a42d-44e3-a542-59fb9981a28e",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C102",
+      "claim": "The five computers were connected to a regular network hub using standard Ethernet protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "We connected the five computers to a regular network hub using a standard Ethernet protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the network setup used in the hackathons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "95937237-f444-409d-8ff7-476250f479c8",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C103",
+      "claim": "No network issues were experienced during the hackathons.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not experience any issues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an outcome observation about the network setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "ec80442a-61e8-4ea4-b270-e51c4bf87ad7",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C104",
+      "claim": "MinION sequencing can result in large data folders.",
+      "claim_type": "EXPLICIT",
+      "source": "MinION sequencing can result in large data folders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characteristic of the data output from MinION sequencing.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "6096d056-a994-4425-8503-5d48fb0accd7",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C105",
+      "claim": "Cloud-based products like Dropbox do not support synchronizing large amounts of data with their free accounts.",
+      "claim_type": "EXPLICIT",
+      "source": "Cloud-based products, such as Dropbox, do not support synchronizing this amount of data with their free accounts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is knowledge about the limitations of free cloud storage services.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "f3a9795b-71d7-4831-8222-8debec20bc29",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C106",
+      "claim": "The free version of BitTorrent Sync allows sharing of files over the P2P BitTorrent network without a size limit.",
+      "claim_type": "EXPLICIT",
+      "source": "As an alternative, we used the free version of BitTorrent Sync, which allows sharing of files over the P2P BitTorrrent network without a size limit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the capabilities of BitTorrent Sync as used in the course.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "cf0d54f4-e7f9-4551-b5f5-32422aa70ea4",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C107",
+      "claim": "BitTorrent Sync can be set up within a few minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "This solution for large files can be set up within a few minutes and prevents technical challenges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the ease of implementing BitTorrent Sync.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "4e5a5708-225b-4435-91f7-b14962305614",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C108",
+      "claim": "A questionnaire was administered before the first hackathon and three weeks later after its completion.",
+      "claim_type": "EXPLICIT",
+      "source": "We asked them to answer a questionnaire before the first hackathon, when the students were exposed only to the theory of sequencing and its applications, and then three weeks later, after the completion of the first hackathon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the timing of the questionnaire administration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "205083e4-ae51-4f9f-8307-1e7b8497d2f6",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C109",
+      "claim": "The sample size is too small to draw statistical conclusions.",
+      "claim_type": "EXPLICIT",
+      "source": "While our sample size is too small to draw statistical conclusions, we did learn from the trends in the answers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of the limitations of the questionnaire data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "5a0e436f-d2a6-4dde-b649-b1e12923ca7f",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C110",
+      "claim": "The hackathons seemed to have shaped a more realistic view of the technical challenges inherent to genomic applications.",
+      "claim_type": "EXPLICIT",
+      "source": "The hackathons seemed to have shaped a more realistic view of the technical challenges inherent to genomic applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of trends observed in the questionnaire responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "f1d7095d-d44c-4a10-8c05-f9b19b0eaa50",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C111",
+      "claim": "About 70% of students answered 'one hour or less' for sample preparation to sequencing results time before the hackathon.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, for the question \"How long do you think it takes from sample preparation to sequencing results using MinION?\", about 70% of the students answered 'one hour' (or less) before the hackathon; but after the hackathon, only 30% of the students thought it would take one hour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the pre-hackathon questionnaire.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "f968a6f2-7d77-47a4-88b7-77ab50d06886",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C112",
+      "claim": "After the hackathon, only 30% of students thought it would take one hour from sample preparation to sequencing results.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, for the question \"How long do you think it takes from sample preparation to sequencing results using MinION?\", about 70% of the students answered 'one hour' (or less) before the hackathon; but after the hackathon, only 30% of the students thought it would take one hour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is data from the post-hackathon questionnaire.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "19843530-908a-4702-86c1-f614868084a4",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C113",
+      "claim": "After the hackathons, students thought it would take more time for mobile sequencers to be used for health tracking by the general public.",
+      "claim_type": "EXPLICIT",
+      "source": "After the hackathons, students also thought that it would take more time for mobile sequencers to be used for health tracking by the general public and suggested lower costs for home sequencing applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a trend observed in the post-hackathon questionnaire responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "f2963998-aec0-41bf-b6dd-92c8bdf2499a",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C114",
+      "claim": "After the hackathons, students suggested lower costs for home sequencing applications.",
+      "claim_type": "EXPLICIT",
+      "source": "After the hackathons, students also thought that it would take more time for mobile sequencers to be used for health tracking by the general public and suggested lower costs for home sequencing applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a trend observed in the post-hackathon questionnaire responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "8e4457ab-ebb1-4e6e-9c7f-ab6a88f95f17",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C115",
+      "claim": "No changes were observed in students' views on ethical issues such as sequencing hair found on the street or the safety of genome sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite discussing the ethical implications of DNA analysis quite extensively throughout the course, we did not observe changes in the students views on several ethical issues such as \"Do you think it is ethical to sequence hair found on the street?\" or \"Do you think getting your genome sequenced is safe?\"",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from comparing pre- and post-hackathon questionnaire responses.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "702c612f-3697-4922-8c9e-29e0407036ee",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C116",
+      "claim": "The hackathon mainly shaped students' technical understanding.",
+      "claim_type": "EXPLICIT",
+      "source": "These trends suggest that the hackathon mainly shaped the students' technical understanding and demonstrated the value of hands-on experience as a way of helping them to develop realistic views of the challenges of new technologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the questionnaire data trends.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "592389d8-3064-4146-8746-4ec37ff56791",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C117",
+      "claim": "Hands-on experience helps students develop realistic views of the challenges of new technologies.",
+      "claim_type": "EXPLICIT",
+      "source": "These trends suggest that the hackathon mainly shaped the students' technical understanding and demonstrated the value of hands-on experience as a way of helping them to develop realistic views of the challenges of new technologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the questionnaire data and overall course experience.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "f7c5898a-b7b5-47c6-9f17-203c1f5db249",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C118",
+      "claim": "Mobile sequencing in the classroom proved to be a useful method for teaching students about genomics.",
+      "claim_type": "EXPLICIT",
+      "source": "Mobile sequencing in the classroom proved to be a useful method for teaching students about the cross-disciplinary field of genomics and to contextualize genomic concepts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the overall experience of teaching the course.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "d0f9f21d-0b6b-4d91-807a-c0c323fa2cdd",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C119",
+      "claim": "Mobile sequencers are relatively inexpensive compared to other sequencing technologies.",
+      "claim_type": "EXPLICIT",
+      "source": "These devices are relatively inexpensive and do not require complicated equipment or designated lab space to be operated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement about the cost of mobile sequencers.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "7757fde5-b6fe-494b-985f-bbe6a9d0b1b0",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C120",
+      "claim": "Mobile sequencers do not require complicated equipment or designated lab space to be operated.",
+      "claim_type": "EXPLICIT",
+      "source": "These devices are relatively inexpensive and do not require complicated equipment or designated lab space to be operated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the operational requirements of mobile sequencers.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "0986fa6a-fb8a-402f-b00a-57201d290c85",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C121",
+      "claim": "Mobile sequencers dramatically reduce the barrier to classroom integration compared to other sequencing technologies.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, they dramatically reduce the barrier to classroom integration compared to other sequencing technologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the characteristics of mobile sequencers and the course experience.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "da381e99-2363-4973-9dc5-2957b90cb79c",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C122",
+      "claim": "The course could be suitable for other majors such as molecular biology, pharmacy, and medical school students.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though most students were computer science majors, it could be suitable for other majors such as molecular biology and pharmacy, and also for medical school students.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the broader applicability of the course.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "84d09230-c265-4388-a6cd-0fd64171ac11",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C123",
+      "claim": "Instructors of students with limited programming backgrounds should design assignments that use existing data analysis pipelines.",
+      "claim_type": "EXPLICIT",
+      "source": "We highly recommend instructors of students with limited programming backgrounds to design assignments that use existing data analysis pipelines (such as ONT's \"What's in my pot\" tool).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the experience from the course.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "5c9957d2-69fc-4a4c-9b4f-f9c95a7b24bb",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C124",
+      "claim": "It might be useful to customize assignments to the major of the students.",
+      "claim_type": "EXPLICIT",
+      "source": "It might also be useful to customize the assignments to the major of the students.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for adapting the course to different student populations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "9a5fc09a-4f84-43c1-986d-484d344f7e5e",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C125",
+      "claim": "For biology students, the assignment could focus on taxonomy.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, for biology students, the assignment could focus on taxonomy, while medical students could benefit from sequencing microbes that are known to cause disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for customizing assignments for biology students.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "3e85e349-027f-4150-98a2-fd99c06aef7e",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C126",
+      "claim": "Medical students could benefit from sequencing microbes that are known to cause disease.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, for biology students, the assignment could focus on taxonomy, while medical students could benefit from sequencing microbes that are known to cause disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for customizing assignments for medical students.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "2f2eff8c-4420-44c8-9215-22bb266bfc34",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C127",
+      "claim": "Mobile sequencers have potential for use in high school STEM curricula and enrichment programs.",
+      "claim_type": "EXPLICIT",
+      "source": "We also see the potential of using these devices in high school STEM curricula and enrichment programs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about extending the use of mobile sequencers to younger students.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "eab20685-688d-46c3-b9a9-2e0bd0e9f6be",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "claim_id": "C128",
+      "claim": "Using mobile sequencers in high school can expose pupils early to the world of DNA and serve as an educational springboard to study other disciplines.",
+      "claim_type": "EXPLICIT",
+      "source": "Such activities can expose pupils early in their training to the fascinating world of DNA and serve as an educational springboard to study other disciplines such as math, computer science and chemistry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the educational benefits for high school students.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d5c9a5c2-b2fd-4273-88d9-8912e94159eb",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors successfully implemented a 13-week 'Ubiquitous Genomics' course at Columbia University using MinION mobile sequencers. The course enrolled 20 students from diverse academic backgrounds (50% bachelor's, 30% master's, 20% PhD; ~60% computer science majors) and consisted of theoretical sessions covering genomics fundamentals and two three-week hackathon blocks where students generated and analyzed their own sequencing data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C23 provide consistent, detailed documentation of the course structure, student demographics, and pedagogical approach. The descriptive data about enrollment, course format, and content are internally consistent and represent direct observations from the instructors' implementation of the course.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "4486e112-607f-4b02-b512-de870edd7ad0",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The estimated consumable cost per hackathon is approximately $1,000 per team per assignment, with nearly 90% of costs attributed to the MinION sequencer itself, making the total cost sensitive to changes in sequencer pricing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26 are supported by the detailed cost breakdown in Table 1, which itemizes all consumables. The calculation that ~90% of cost comes from the MinION flow cell and reagent kit ($900 of $981.68 total) is mathematically verifiable from the provided data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "85739527-1962-4796-9510-97cbae488325",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "In the first hackathon ('from snack to sequence'), students successfully used MinION sequencing and BLAST analysis to identify species in unlabeled food samples containing mixed ingredients. Most groups correctly identified species, though BLAST results for beef samples showed ambiguous hits to Bovidae family members, and apparent parasite detections were later attributed to database contamination rather than actual presence in samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C67 describe the first hackathon design, execution, and results with appropriate caveats. The authors acknowledge the limitation regarding parasite detection (C63-C64), demonstrating scientific integrity. The pedagogical assessment (C65) and technical challenges (C66-C67) are consistent with the course objectives and student skill levels.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "6fb6c9dd-f715-4f92-a1ea-4b40aba7d4ea",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In the second hackathon ('CSI Columbia'), students attempted to identify individuals from ultra-low coverage MinION sequencing of human DNA samples (Craig Venter, HapMap sample, and author YE). Only one of five groups successfully identified their sample, with students finding the assignment significantly more challenging than the first hackathon due to data wrangling difficulties and tool compatibility issues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C84 provide honest reporting of a challenging educational exercise where most students did not achieve the primary objective (C77), but gained valuable experience with real-world research problems (C80-C81). The low success rate and documented difficulties (C78-C79) support the pedagogical value while acknowledging the need for potential modifications (C82-C84).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "c258f3fd-1189-419b-a1c1-15e6a1dc2ed5",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The hackathon structure involved students working in groups of 4-5 with diverse skill sets, with instructors pre-preparing DNA libraries (~4 hours) to maximize hands-on time. Each hackathon included pipetting practice (essential for students with no prior lab experience), student-led data generation, and a two-milestone assignment structure focusing on quality control analysis and scientific problem-solving.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C48 describe the pedagogical design and implementation details consistently. The decision to pre-prepare libraries (C33-C34) and include pipetting practice (C36-C37) demonstrates thoughtful adaptation to student skill levels. The structured assignment approach (C42-C47) balances technical training with scientific inquiry.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "09873127-eda7-4654-ad4a-ca66d732bd42",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The instructors encountered multiple technical challenges including flow cell failures (3 of 10 with insufficient pores), computer connectivity issues, and variable sequencing yields. They implemented risk mitigation strategies including maintaining spare parts and pre-generating backup data, though the backup was ultimately not needed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C93 provide transparent reporting of technical difficulties and practical solutions. The specific failure rate (C85) and mitigation strategies (C88-C91) offer valuable guidance for future implementations. The recommendation to design experiments compatible with variable yields (C93) is a logical inference from observed variability (C92).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "b0900ab5-ce72-40f5-a760-2a3ac8053924",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Procuring appropriate computers was a major logistical challenge due to ONT's Windows requirement conflicting with the department's Mac-based infrastructure. Virtual machines proved unreliable, and student computers lacked required specifications. However, networking five computers via standard Ethernet for base-calling worked without issues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94-C103 document practical infrastructure challenges with specific technical details. The explanation for virtual machine failure (C98) is appropriately marked as speculative. The successful network setup (C102-C103) provides useful implementation guidance, though the sample size is limited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "e6fd72f7-6d99-4cd2-8ffd-03cf07a20b92",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "MinION sequencing generates large data files that exceed free cloud storage limits (e.g., Dropbox). The authors successfully used BitTorrent Sync as a free alternative for P2P file sharing without size limits, which could be set up quickly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C107 provide a practical solution to a common data management challenge. The recommendation is based on direct experience (C106-C107) and addresses a real limitation of free cloud services (C105). This is useful technical guidance for future course implementations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "03cf972a-73a8-44e8-9d53-cda14f6c698e",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Pre- and post-hackathon questionnaires (n=20) revealed that hands-on experience shaped students' technical understanding, making their expectations more realistic about sequencing timelines and technology adoption. However, the hackathons did not significantly change students' views on ethical issues despite extensive discussion, and the sample size was too small for statistical conclusions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C108-C117 appropriately acknowledge statistical limitations (C109) while reporting meaningful trends. The shift in time estimates (C111-C112: 70% to 30% expecting one-hour turnaround) suggests genuine learning. The lack of change in ethical views (C115) is honestly reported and may reflect the complexity of ethical reasoning versus technical understanding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "d12029ed-6412-4488-b0de-b060f0735e75",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mobile DNA sequencers like the MinION enable DNA sequencing outside traditional laboratory settings and proved to be an effective educational tool. These devices are relatively inexpensive, require minimal infrastructure (just a laptop), and dramatically lower barriers to classroom integration compared to traditional sequencing technologies, making them well-suited for hands-on genomics education aligned with Millennial learning preferences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 and C118-C121 synthesize the educational value demonstrated throughout the manuscript. The conclusion that mobile sequencing is effective for teaching (C118) is supported by the successful course implementation, student outcomes, and questionnaire data. The comparative advantages (C119-C121) are validated by the practical experience described, though 'relatively inexpensive' (C119) is contextual given the ~$1000 per team cost.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    },
+    {
+      "id": "2f747f5f-7020-467c-a256-a2e3de1635ac",
+      "content_id": "253282fd-8869-4a3e-8e66-c3162a771e44",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors suggest the course could be adapted for other majors (molecular biology, pharmacy, medical students) and educational levels (high school STEM programs) by customizing assignments to student backgrounds and using existing analysis pipelines for those with limited programming experience.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C122-C128 are speculative recommendations (appropriately marked as such in evidence_type) that extend beyond the demonstrated implementation. While the suggestions are reasonable based on the course experience, they lack empirical validation. The recommendation for existing pipelines (C123) is logical given observed challenges, but the broader applicability claims require testing in different educational contexts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:18:52.236309Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e56d8f93-0d67-45ae-bcc1-ecd1beb401a0",
+      "result_id": "d5c9a5c2-b2fd-4273-88d9-8912e94159eb"
+    },
+    {
+      "claim_id": "cb1e0989-bdea-4689-9554-68835f218911",
+      "result_id": "d5c9a5c2-b2fd-4273-88d9-8912e94159eb"
+    },
+    {
+      "claim_id": "5cede3e3-1c38-4730-92fd-4106351e5d6d",
+      "result_id": "d5c9a5c2-b2fd-4273-88d9-8912e94159eb"
+    },
+    {
+      "claim_id": "94c3b33b-425a-4c02-a12d-91ec67e97365",
+      "result_id": "d5c9a5c2-b2fd-4273-88d9-8912e94159eb"
+    },
+    {
+      "claim_id": "756f1dce-e70a-4cbc-9211-4fd92d5669e9",
+      "result_id": "d5c9a5c2-b2fd-4273-88d9-8912e94159eb"
+    },
+    {
+      "claim_id": "153c7f82-958d-4d0b-a713-79ecd470d259",
+      "result_id": "d5c9a5c2-b2fd-4273-88d9-8912e94159eb"
+    },
+    {
+      "claim_id": "cdc41a86-bbce-4e72-aadc-36e617618f78",
+      "result_id": "d5c9a5c2-b2fd-4273-88d9-8912e94159eb"
+    },
+    {
+      "claim_id": "be4fd3fb-2404-4d47-a672-e6ffb2b58e6d",
+      "result_id": "d5c9a5c2-b2fd-4273-88d9-8912e94159eb"
+    },
+    {
+      "claim_id": "eaba167e-370a-4199-b4f9-98ab9d2f9a57",
+      "result_id": "d5c9a5c2-b2fd-4273-88d9-8912e94159eb"
+    },
+    {
+      "claim_id": "774a3278-d200-492e-94c5-b3342ec92697",
+      "result_id": "d5c9a5c2-b2fd-4273-88d9-8912e94159eb"
+    },
+    {
+      "claim_id": "78f845a6-ef88-4d6d-9e7c-04fc0c81303c",
+      "result_id": "d5c9a5c2-b2fd-4273-88d9-8912e94159eb"
+    },
+    {
+      "claim_id": "153035dc-d07e-4cda-b62c-a46a18bdf06f",
+      "result_id": "d5c9a5c2-b2fd-4273-88d9-8912e94159eb"
+    },
+    {
+      "claim_id": "02de3f7c-828a-4a98-9eb1-e44b2fc7fda0",
+      "result_id": "d5c9a5c2-b2fd-4273-88d9-8912e94159eb"
+    },
+    {
+      "claim_id": "ad390dfb-52b5-4b34-92de-f40cb660f2a6",
+      "result_id": "d5c9a5c2-b2fd-4273-88d9-8912e94159eb"
+    },
+    {
+      "claim_id": "19f93414-1a53-4e5a-b198-66400456f230",
+      "result_id": "d5c9a5c2-b2fd-4273-88d9-8912e94159eb"
+    },
+    {
+      "claim_id": "ee6d8790-a23a-4638-822d-fb565ed5adc2",
+      "result_id": "d5c9a5c2-b2fd-4273-88d9-8912e94159eb"
+    },
+    {
+      "claim_id": "451654d3-f86d-4f2a-953c-5d8ec9675fbd",
+      "result_id": "d5c9a5c2-b2fd-4273-88d9-8912e94159eb"
+    },
+    {
+      "claim_id": "7d5bca9e-688c-401c-9b99-db03e240b999",
+      "result_id": "d5c9a5c2-b2fd-4273-88d9-8912e94159eb"
+    },
+    {
+      "claim_id": "6ac13618-ad40-450b-acaa-b6e14b51fd3f",
+      "result_id": "4486e112-607f-4b02-b512-de870edd7ad0"
+    },
+    {
+      "claim_id": "91bcebf5-e96a-4246-a92f-9c49fe84bee7",
+      "result_id": "4486e112-607f-4b02-b512-de870edd7ad0"
+    },
+    {
+      "claim_id": "78ad90fd-483c-44b1-ba33-df878e113dc1",
+      "result_id": "4486e112-607f-4b02-b512-de870edd7ad0"
+    },
+    {
+      "claim_id": "7a70d0b3-de5f-4c1e-a4e7-c72822334df4",
+      "result_id": "85739527-1962-4796-9510-97cbae488325"
+    },
+    {
+      "claim_id": "53407104-3fa9-43be-92a0-a32a93912e46",
+      "result_id": "85739527-1962-4796-9510-97cbae488325"
+    },
+    {
+      "claim_id": "73d23888-2b01-4e63-99e7-5eb865eb4999",
+      "result_id": "85739527-1962-4796-9510-97cbae488325"
+    },
+    {
+      "claim_id": "934d4291-3580-4db9-9706-e2adb772c565",
+      "result_id": "85739527-1962-4796-9510-97cbae488325"
+    },
+    {
+      "claim_id": "8377b052-e13e-42bc-afc1-b744bcfe7576",
+      "result_id": "85739527-1962-4796-9510-97cbae488325"
+    },
+    {
+      "claim_id": "9b318754-7e9d-40af-bb2f-c26c86e520e3",
+      "result_id": "85739527-1962-4796-9510-97cbae488325"
+    },
+    {
+      "claim_id": "47c69c4e-dac2-4d5e-8736-bb24df0a3cea",
+      "result_id": "85739527-1962-4796-9510-97cbae488325"
+    },
+    {
+      "claim_id": "5767276b-82c1-43e0-9b35-7e8c3b7bf14f",
+      "result_id": "85739527-1962-4796-9510-97cbae488325"
+    },
+    {
+      "claim_id": "fc4bbfab-0f24-4009-a455-52aa3457d52b",
+      "result_id": "85739527-1962-4796-9510-97cbae488325"
+    },
+    {
+      "claim_id": "fa65ced1-55c8-4797-ba20-b5005fa49912",
+      "result_id": "85739527-1962-4796-9510-97cbae488325"
+    },
+    {
+      "claim_id": "7a99e2bd-8781-49d6-abc7-53f83a08934d",
+      "result_id": "85739527-1962-4796-9510-97cbae488325"
+    },
+    {
+      "claim_id": "1b840eeb-bd0f-42ce-b627-952095a77f72",
+      "result_id": "85739527-1962-4796-9510-97cbae488325"
+    },
+    {
+      "claim_id": "25c73f9d-5eb0-4465-ad1e-4e3f7894196f",
+      "result_id": "85739527-1962-4796-9510-97cbae488325"
+    },
+    {
+      "claim_id": "c7c875a9-22c2-443e-b41c-71287471618b",
+      "result_id": "85739527-1962-4796-9510-97cbae488325"
+    },
+    {
+      "claim_id": "4dd702b6-8ebc-4326-a275-f77f84a876a8",
+      "result_id": "85739527-1962-4796-9510-97cbae488325"
+    },
+    {
+      "claim_id": "b87c4201-abca-43a8-8f9e-4f5426a08ac3",
+      "result_id": "85739527-1962-4796-9510-97cbae488325"
+    },
+    {
+      "claim_id": "3ebdd15d-bbc9-45b0-8e42-353403a7ff08",
+      "result_id": "85739527-1962-4796-9510-97cbae488325"
+    },
+    {
+      "claim_id": "eb9f6105-ad59-445b-86f1-bca5a1d0605a",
+      "result_id": "85739527-1962-4796-9510-97cbae488325"
+    },
+    {
+      "claim_id": "f5f5b6ed-03cb-4304-acff-255a236f2e86",
+      "result_id": "85739527-1962-4796-9510-97cbae488325"
+    },
+    {
+      "claim_id": "37f70686-e739-4b7d-aa9a-cfd4832982fe",
+      "result_id": "85739527-1962-4796-9510-97cbae488325"
+    },
+    {
+      "claim_id": "797f12a0-d707-402b-8288-87c3f7d8dabf",
+      "result_id": "85739527-1962-4796-9510-97cbae488325"
+    },
+    {
+      "claim_id": "359cca00-9903-4205-b235-3499d87e7e70",
+      "result_id": "6fb6c9dd-f715-4f92-a1ea-4b40aba7d4ea"
+    },
+    {
+      "claim_id": "c4a87f77-839c-4754-a61b-645a5292eda4",
+      "result_id": "6fb6c9dd-f715-4f92-a1ea-4b40aba7d4ea"
+    },
+    {
+      "claim_id": "d1282a98-5b35-4876-825a-ddc0822ccd71",
+      "result_id": "6fb6c9dd-f715-4f92-a1ea-4b40aba7d4ea"
+    },
+    {
+      "claim_id": "8b03b774-6832-4139-a190-27c60f0aa88b",
+      "result_id": "6fb6c9dd-f715-4f92-a1ea-4b40aba7d4ea"
+    },
+    {
+      "claim_id": "feb2850b-bceb-4948-87a1-dc931faccd35",
+      "result_id": "6fb6c9dd-f715-4f92-a1ea-4b40aba7d4ea"
+    },
+    {
+      "claim_id": "7c01d68a-5235-43dd-b33c-e407b3d02a76",
+      "result_id": "6fb6c9dd-f715-4f92-a1ea-4b40aba7d4ea"
+    },
+    {
+      "claim_id": "c1b88f02-203b-4eaf-8775-7b571e5f2c70",
+      "result_id": "6fb6c9dd-f715-4f92-a1ea-4b40aba7d4ea"
+    },
+    {
+      "claim_id": "fa1a57a1-7851-46d6-80e7-d5c31b9ebb02",
+      "result_id": "6fb6c9dd-f715-4f92-a1ea-4b40aba7d4ea"
+    },
+    {
+      "claim_id": "b5d9318d-f1c9-48c6-a292-c12f8b1ce326",
+      "result_id": "6fb6c9dd-f715-4f92-a1ea-4b40aba7d4ea"
+    },
+    {
+      "claim_id": "0865cbd7-f945-4569-8a17-a7ffa89f872d",
+      "result_id": "6fb6c9dd-f715-4f92-a1ea-4b40aba7d4ea"
+    },
+    {
+      "claim_id": "d22cad36-3d53-4395-b35d-3c1d6f8ba9db",
+      "result_id": "6fb6c9dd-f715-4f92-a1ea-4b40aba7d4ea"
+    },
+    {
+      "claim_id": "22c63443-80e2-4ff9-9b35-8fdf9d5646ec",
+      "result_id": "6fb6c9dd-f715-4f92-a1ea-4b40aba7d4ea"
+    },
+    {
+      "claim_id": "c3b0d43a-a20a-4831-bfaa-5bc1d6e29f1f",
+      "result_id": "6fb6c9dd-f715-4f92-a1ea-4b40aba7d4ea"
+    },
+    {
+      "claim_id": "e9c02d22-5717-4935-b457-b2b95af92d13",
+      "result_id": "6fb6c9dd-f715-4f92-a1ea-4b40aba7d4ea"
+    },
+    {
+      "claim_id": "0bfdeadd-1f8b-41fe-8f2d-3b46fd2a701e",
+      "result_id": "6fb6c9dd-f715-4f92-a1ea-4b40aba7d4ea"
+    },
+    {
+      "claim_id": "6803cd5c-48c4-4514-a8dd-5e30de790cf9",
+      "result_id": "6fb6c9dd-f715-4f92-a1ea-4b40aba7d4ea"
+    },
+    {
+      "claim_id": "7779c08d-a83e-4be1-9952-ae29f66ec81c",
+      "result_id": "6fb6c9dd-f715-4f92-a1ea-4b40aba7d4ea"
+    },
+    {
+      "claim_id": "064c8ed4-9886-4bf9-b0c6-83ea391bdd05",
+      "result_id": "6fb6c9dd-f715-4f92-a1ea-4b40aba7d4ea"
+    },
+    {
+      "claim_id": "3dc16c14-a1b9-43c2-9bde-475de789b03f",
+      "result_id": "6fb6c9dd-f715-4f92-a1ea-4b40aba7d4ea"
+    },
+    {
+      "claim_id": "2e3f2507-273e-4603-937e-00b771f28294",
+      "result_id": "c258f3fd-1189-419b-a1c1-15e6a1dc2ed5"
+    },
+    {
+      "claim_id": "7a407274-3da5-439e-bded-e77e9ec2a89b",
+      "result_id": "c258f3fd-1189-419b-a1c1-15e6a1dc2ed5"
+    },
+    {
+      "claim_id": "d294b8cf-c9c4-4e00-8ec0-64e2f5e96824",
+      "result_id": "c258f3fd-1189-419b-a1c1-15e6a1dc2ed5"
+    },
+    {
+      "claim_id": "13457928-72bf-424c-bf81-7f384bd53826",
+      "result_id": "c258f3fd-1189-419b-a1c1-15e6a1dc2ed5"
+    },
+    {
+      "claim_id": "64de14bb-e0b4-4572-877d-9558b37bd348",
+      "result_id": "c258f3fd-1189-419b-a1c1-15e6a1dc2ed5"
+    },
+    {
+      "claim_id": "ead6e7c2-7a73-4a42-a769-3eed576605a7",
+      "result_id": "c258f3fd-1189-419b-a1c1-15e6a1dc2ed5"
+    },
+    {
+      "claim_id": "3d0a2677-857f-4566-b953-710b4e417b8c",
+      "result_id": "c258f3fd-1189-419b-a1c1-15e6a1dc2ed5"
+    },
+    {
+      "claim_id": "24f7c78f-2d5d-4963-84c2-4d594d15862e",
+      "result_id": "c258f3fd-1189-419b-a1c1-15e6a1dc2ed5"
+    },
+    {
+      "claim_id": "de3ddb32-8ce7-4dff-a5db-7467c7541821",
+      "result_id": "c258f3fd-1189-419b-a1c1-15e6a1dc2ed5"
+    },
+    {
+      "claim_id": "d6f85583-cd5d-4afc-bda9-5d39b82f8d11",
+      "result_id": "c258f3fd-1189-419b-a1c1-15e6a1dc2ed5"
+    },
+    {
+      "claim_id": "e11a7986-819b-4263-b569-f4f2ad1b45a3",
+      "result_id": "c258f3fd-1189-419b-a1c1-15e6a1dc2ed5"
+    },
+    {
+      "claim_id": "fd93263f-fc3e-47b4-815f-10b156b6f828",
+      "result_id": "c258f3fd-1189-419b-a1c1-15e6a1dc2ed5"
+    },
+    {
+      "claim_id": "b2eda884-35c8-44d2-8635-39f215744189",
+      "result_id": "c258f3fd-1189-419b-a1c1-15e6a1dc2ed5"
+    },
+    {
+      "claim_id": "9ec42712-d548-4cea-ad13-80c4b001d846",
+      "result_id": "c258f3fd-1189-419b-a1c1-15e6a1dc2ed5"
+    },
+    {
+      "claim_id": "766667a6-cd1c-4d4b-8637-ea6a85a659ae",
+      "result_id": "c258f3fd-1189-419b-a1c1-15e6a1dc2ed5"
+    },
+    {
+      "claim_id": "5651e41d-9415-459a-8236-3242955a5405",
+      "result_id": "c258f3fd-1189-419b-a1c1-15e6a1dc2ed5"
+    },
+    {
+      "claim_id": "681b2d83-af01-4406-883a-fab854b5fa94",
+      "result_id": "c258f3fd-1189-419b-a1c1-15e6a1dc2ed5"
+    },
+    {
+      "claim_id": "98e77cae-8fb6-4d28-a0bc-9bd5304e72f0",
+      "result_id": "c258f3fd-1189-419b-a1c1-15e6a1dc2ed5"
+    },
+    {
+      "claim_id": "e6a1dcbc-faa7-4a47-9d50-2ed9e8e691f7",
+      "result_id": "09873127-eda7-4654-ad4a-ca66d732bd42"
+    },
+    {
+      "claim_id": "10c9658c-9fa1-45e2-b896-b2471ddd6baa",
+      "result_id": "09873127-eda7-4654-ad4a-ca66d732bd42"
+    },
+    {
+      "claim_id": "1e797840-459e-4cb3-84ed-1e3cae694259",
+      "result_id": "09873127-eda7-4654-ad4a-ca66d732bd42"
+    },
+    {
+      "claim_id": "e5a5511f-a9a8-4619-8780-00ee902833ef",
+      "result_id": "09873127-eda7-4654-ad4a-ca66d732bd42"
+    },
+    {
+      "claim_id": "fda561d2-ddf0-4c98-8abc-5b9a9d02ebaf",
+      "result_id": "09873127-eda7-4654-ad4a-ca66d732bd42"
+    },
+    {
+      "claim_id": "02b48121-4f8e-4f4f-91c9-e4095e848cdb",
+      "result_id": "09873127-eda7-4654-ad4a-ca66d732bd42"
+    },
+    {
+      "claim_id": "f167ee99-afc5-435a-b345-fe6d805ff946",
+      "result_id": "09873127-eda7-4654-ad4a-ca66d732bd42"
+    },
+    {
+      "claim_id": "07816495-17fb-4477-af71-b9f340879cff",
+      "result_id": "09873127-eda7-4654-ad4a-ca66d732bd42"
+    },
+    {
+      "claim_id": "d2869e38-d23a-4f29-a477-7fcafd3fbc88",
+      "result_id": "09873127-eda7-4654-ad4a-ca66d732bd42"
+    },
+    {
+      "claim_id": "4f78797b-9786-418a-b01e-e910d7aa0213",
+      "result_id": "b0900ab5-ce72-40f5-a760-2a3ac8053924"
+    },
+    {
+      "claim_id": "386180ed-17a9-4a3c-a7fa-4624eeb9f328",
+      "result_id": "b0900ab5-ce72-40f5-a760-2a3ac8053924"
+    },
+    {
+      "claim_id": "8430ec95-2ddc-43ad-ab34-1c92e3b794d4",
+      "result_id": "b0900ab5-ce72-40f5-a760-2a3ac8053924"
+    },
+    {
+      "claim_id": "f4d19e90-b904-4c48-a749-a5495afe33b6",
+      "result_id": "b0900ab5-ce72-40f5-a760-2a3ac8053924"
+    },
+    {
+      "claim_id": "53c43b21-6e21-4757-abf2-f4bd86afb11c",
+      "result_id": "b0900ab5-ce72-40f5-a760-2a3ac8053924"
+    },
+    {
+      "claim_id": "50343c6b-8d5c-419e-8b4c-41de506dd9d7",
+      "result_id": "b0900ab5-ce72-40f5-a760-2a3ac8053924"
+    },
+    {
+      "claim_id": "3c6760b6-9cc5-4c1f-844a-fb5ebad85b7a",
+      "result_id": "b0900ab5-ce72-40f5-a760-2a3ac8053924"
+    },
+    {
+      "claim_id": "943f5072-47c8-43a4-935f-afcfc889cccc",
+      "result_id": "b0900ab5-ce72-40f5-a760-2a3ac8053924"
+    },
+    {
+      "claim_id": "875d953a-a42d-44e3-a542-59fb9981a28e",
+      "result_id": "b0900ab5-ce72-40f5-a760-2a3ac8053924"
+    },
+    {
+      "claim_id": "95937237-f444-409d-8ff7-476250f479c8",
+      "result_id": "b0900ab5-ce72-40f5-a760-2a3ac8053924"
+    },
+    {
+      "claim_id": "ec80442a-61e8-4ea4-b270-e51c4bf87ad7",
+      "result_id": "e6fd72f7-6d99-4cd2-8ffd-03cf07a20b92"
+    },
+    {
+      "claim_id": "6096d056-a994-4425-8503-5d48fb0accd7",
+      "result_id": "e6fd72f7-6d99-4cd2-8ffd-03cf07a20b92"
+    },
+    {
+      "claim_id": "f3a9795b-71d7-4831-8222-8debec20bc29",
+      "result_id": "e6fd72f7-6d99-4cd2-8ffd-03cf07a20b92"
+    },
+    {
+      "claim_id": "cf0d54f4-e7f9-4551-b5f5-32422aa70ea4",
+      "result_id": "e6fd72f7-6d99-4cd2-8ffd-03cf07a20b92"
+    },
+    {
+      "claim_id": "4e5a5708-225b-4435-91f7-b14962305614",
+      "result_id": "03cf972a-73a8-44e8-9d53-cda14f6c698e"
+    },
+    {
+      "claim_id": "205083e4-ae51-4f9f-8307-1e7b8497d2f6",
+      "result_id": "03cf972a-73a8-44e8-9d53-cda14f6c698e"
+    },
+    {
+      "claim_id": "5a0e436f-d2a6-4dde-b649-b1e12923ca7f",
+      "result_id": "03cf972a-73a8-44e8-9d53-cda14f6c698e"
+    },
+    {
+      "claim_id": "f1d7095d-d44c-4a10-8c05-f9b19b0eaa50",
+      "result_id": "03cf972a-73a8-44e8-9d53-cda14f6c698e"
+    },
+    {
+      "claim_id": "f968a6f2-7d77-47a4-88b7-77ab50d06886",
+      "result_id": "03cf972a-73a8-44e8-9d53-cda14f6c698e"
+    },
+    {
+      "claim_id": "19843530-908a-4702-86c1-f614868084a4",
+      "result_id": "03cf972a-73a8-44e8-9d53-cda14f6c698e"
+    },
+    {
+      "claim_id": "f2963998-aec0-41bf-b6dd-92c8bdf2499a",
+      "result_id": "03cf972a-73a8-44e8-9d53-cda14f6c698e"
+    },
+    {
+      "claim_id": "8e4457ab-ebb1-4e6e-9c7f-ab6a88f95f17",
+      "result_id": "03cf972a-73a8-44e8-9d53-cda14f6c698e"
+    },
+    {
+      "claim_id": "702c612f-3697-4922-8c9e-29e0407036ee",
+      "result_id": "03cf972a-73a8-44e8-9d53-cda14f6c698e"
+    },
+    {
+      "claim_id": "592389d8-3064-4146-8746-4ec37ff56791",
+      "result_id": "03cf972a-73a8-44e8-9d53-cda14f6c698e"
+    },
+    {
+      "claim_id": "eb720b2f-6b5f-4b85-ac75-fbda36789655",
+      "result_id": "d12029ed-6412-4488-b0de-b060f0735e75"
+    },
+    {
+      "claim_id": "4c903567-85d1-483f-b86d-e0398aaedc54",
+      "result_id": "d12029ed-6412-4488-b0de-b060f0735e75"
+    },
+    {
+      "claim_id": "1fa3cf1b-1ecf-4e64-bb61-a3e324abdfd8",
+      "result_id": "d12029ed-6412-4488-b0de-b060f0735e75"
+    },
+    {
+      "claim_id": "15eb7e94-3b67-4356-8039-1203f17eb3ed",
+      "result_id": "d12029ed-6412-4488-b0de-b060f0735e75"
+    },
+    {
+      "claim_id": "94c3b33b-425a-4c02-a12d-91ec67e97365",
+      "result_id": "d12029ed-6412-4488-b0de-b060f0735e75"
+    },
+    {
+      "claim_id": "601d1460-40ff-4e72-b171-0c4bb35dd847",
+      "result_id": "d12029ed-6412-4488-b0de-b060f0735e75"
+    },
+    {
+      "claim_id": "f7c5898a-b7b5-47c6-9f17-203c1f5db249",
+      "result_id": "d12029ed-6412-4488-b0de-b060f0735e75"
+    },
+    {
+      "claim_id": "d0f9f21d-0b6b-4d91-807a-c0c323fa2cdd",
+      "result_id": "d12029ed-6412-4488-b0de-b060f0735e75"
+    },
+    {
+      "claim_id": "7757fde5-b6fe-494b-985f-bbe6a9d0b1b0",
+      "result_id": "d12029ed-6412-4488-b0de-b060f0735e75"
+    },
+    {
+      "claim_id": "0986fa6a-fb8a-402f-b00a-57201d290c85",
+      "result_id": "d12029ed-6412-4488-b0de-b060f0735e75"
+    },
+    {
+      "claim_id": "da381e99-2363-4973-9dc5-2957b90cb79c",
+      "result_id": "2f747f5f-7020-467c-a256-a2e3de1635ac"
+    },
+    {
+      "claim_id": "84d09230-c265-4388-a6cd-0fd64171ac11",
+      "result_id": "2f747f5f-7020-467c-a256-a2e3de1635ac"
+    },
+    {
+      "claim_id": "5c9957d2-69fc-4a4c-9b4f-f9c95a7b24bb",
+      "result_id": "2f747f5f-7020-467c-a256-a2e3de1635ac"
+    },
+    {
+      "claim_id": "9a5fc09a-4f84-43c1-986d-484d344f7e5e",
+      "result_id": "2f747f5f-7020-467c-a256-a2e3de1635ac"
+    },
+    {
+      "claim_id": "3e85e349-027f-4150-98a2-fd99c06aef7e",
+      "result_id": "2f747f5f-7020-467c-a256-a2e3de1635ac"
+    },
+    {
+      "claim_id": "2f2eff8c-4420-44c8-9215-22bb266bfc34",
+      "result_id": "2f747f5f-7020-467c-a256-a2e3de1635ac"
+    },
+    {
+      "claim_id": "eab20685-688d-46c3-b9a9-2e0bd0e9f6be",
+      "result_id": "2f747f5f-7020-467c-a256-a2e3de1635ac"
+    }
+  ],
+  "comparisons": []
+}

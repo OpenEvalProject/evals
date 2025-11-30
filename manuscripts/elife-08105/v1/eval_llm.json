@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C42"
+    ],
+    "result": "Place cell activity sequences during running accurately encode both spatial paths (median error 6.0-13.5 cm) and trial types (74.3-84.5% accuracy) in well-trained rats performing a figure-eight maze task with three subtasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide converging evidence with appropriate sample sizes (1084 cells, 556 place cells meeting criteria), statistical controls (ANCOVA with covariates), and validation methods (Bayesian decoder, leave-one-out cross-validation). C42 appropriately concludes the methods are sufficient for subsequent replay analyses. The decoding accuracies are well above chance (12.5%) and supported by confusion matrices across all rats.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "During correct trials, rats' head directions pointed toward memory-guided goals in start zones and maze stem, but head direction was ambiguous in the maze stem during erroneous trials, indicating reduced spatial memory demand and lack of behavioral decision-making prior to errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 provide strong statistical evidence (Watson-Williams and Rayleigh tests with highly significant p-values for correct trials, non-significant p=0.29 for erroneous stem trials). The interpretations in C43-C45 are reasonable given the behavioral data, though C45 is somewhat speculative. The head direction analyses serve as important behavioral validation for the replay analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C46"
+    ],
+    "result": "Of 2820 candidate events, 552 statistically significant path replays were identified, with 99.8% coincident with sharp wave/ripples and predominantly occurring in start zones and maze stem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 provide clear quantitative data with appropriate statistical validation (Monte Carlo methods with two shuffle modes, p<0.05). The high SWR coincidence (99.8%) and reduced theta power confirm these are genuine replay events distinct from movement-related activity. The spatial distribution (C46) is documented in figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C47",
+      "C48"
+    ],
+    "result": "Path representation in replays was significantly concentrated near goals rather than distributed according to occupancy time or place-field representation, suggesting replays represent memory-guided journeys rather than simple consequences of reward expectation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 provides strong statistical evidence (Wilcoxon rank-sum test, p=3.3\u00d710\u207b\u00b9\u2070\u2076). C47 is supported by supplementary analyses showing no correlation with occupancy or place-field distribution. However, C48 presents alternative hypotheses without definitively distinguishing between them, which is appropriately cautious but leaves some ambiguity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C51",
+      "C52"
+    ],
+    "result": "Place cell firing rates during replays were temporally compressed approximately 9-fold compared to running, with maximum firing rates ~10 times faster (~80 Hz vs ~8 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C51 provide specific quantitative measurements. The median compression rate of 9.0 (C10) is consistent with the ~10-fold increase in maximum firing rates (C51). C52 appropriately interprets these findings as temporal compression of firing rates, parallel to the temporal compression of firing timings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C49",
+      "C50"
+    ],
+    "result": "Path replays preferentially represented future regions over past regions in correct trials (both spatial alternation and visually guided), but not in erroneous trials. In the maze stem, path representation in replays was directly linked to the animal's actual future path, differing significantly between journeys toward correct versus erroneous goals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 provide statistical evidence with appropriate tests (Wilcoxon signed-rank tests) showing significant future bias in correct trials (p=0.0037, p=0.0078) but not errors (p=0.73). C14 shows significant difference between correct and erroneous journeys (p=0.0078). C49-C50 provide reasonable interpretations supported by the data and prior literature. The convergence of evidence across multiple trial types strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C62"
+    ],
+    "result": "Of 552 path replays, 108 episodic replays were identified. Episodic replay occurrence was significantly biased toward the DA (delayed alternation) subtask requiring spatial working memory, with this bias occurring in start zones but not maze stem. The enhancement reflects upcoming spatial working memory demand rather than specific reactivation of the DA subtask.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 provide clear quantitative data with strong statistical support (Chi-square tests, p=8.6\u00d710\u207b\u2075, p=9.9\u00d710\u207b\u2074). C55 appropriately rules out pause time as an explanation. C56-C57 provide reasonable interpretations, though C57 involves some inference. The citation to Jadhav et al. 2012 (C54) appropriately contextualizes the findings. However, the claim that enhancement is not specific to DA (C57) requires careful interpretation of the prediction data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C58",
+      "C59"
+    ],
+    "result": "Trial-type representation in episodic replays matched actual trial types moderately well at the decision point (Cohen's \u03ba=0.58, p=3.7\u00d710\u207b\u2074) but not in start zones (\u03ba=0.017, p=0.83) or center of stem (\u03ba=0.022, p=0.93). This representation was internally generated rather than driven by external cues (visual cues or barriers), and replays represented actual trial types when identifiable but otherwise represented all previously experienced trial types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 provide appropriate statistical tests (Cohen's kappa, z-tests) showing location-dependent trial-type matching. C20-C21 rule out sensory cue explanations with non-significant results. C58-C59 provide reasonable interpretations, though C59 represents a broad conclusion that integrates multiple findings. The convergence of evidence from multiple analyses (visual cues, barriers, location-dependent matching) supports the internally-generated nature of the representation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C60",
+      "C61",
+      "C63"
+    ],
+    "result": "Replays encode non-spatial subtask information in temporally compressed firing rates while encoding spatial path information in temporally compressed firing timings, preserving the global and rate remapping mechanisms observed during running.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 provides observational evidence of firing rate differences between subtasks during replays. C60-C61 summarize the main findings appropriately. C63 provides a reasonable interpretation linking to prior work on remapping mechanisms. However, the direct quantitative evidence for rate-based subtask encoding could be stronger - the study relies more on trial-type prediction accuracy than direct analysis of rate remapping during replays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Four rats were trained on a figure-eight maze with three subtasks (VD, NA, DA) that could only be distinguished at the decision point based on visual cues, with appropriate housing, training criteria, and experimental controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 and C83-C91 provide detailed methodological information about the experimental design, training protocol, and controls. The task design is well-described with appropriate controls (dim lighting, wall height preventing early cue detection). Training criteria (80-90% performance) and ethical approvals are documented. This provides essential context for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Electrophysiological recordings were performed using appropriate surgical procedures, electrode placement, signal processing parameters, and cell classification criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C101 provide detailed methodological information about surgical procedures, electrode placement coordinates, signal processing parameters (filtering, amplification, sampling rates), and cell classification criteria. The methods are standard for the field and appropriately referenced to prior work. Exclusion criteria are clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Place maps were constructed and replays were detected using appropriate spatial binning, smoothing, time windows, population activity thresholds, statistical validation (Monte Carlo with 5000 shuffles), and analysis software.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C115 provide comprehensive methodological details for place map construction, Bayesian decoding, replay detection, and episodic replay classification. The methods include appropriate parameters (spatial resolution, smoothing kernels, time windows) and rigorous statistical validation (Monte Carlo with multiple shuffle modes, p<0.05 threshold). Software is specified (Matlab v8.3, R). These methods are standard and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The study addresses a gap in knowledge: while previous work established that hippocampal place cells encode spatial and non-spatial information during running and that replays reactivate spatial sequences, it remained unclear whether replays convey 'what' information (events) along reactivated paths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C33 accurately characterize established knowledge about hippocampal function, place cells, and replay phenomena, with appropriate citations. C32-C33 correctly identify the knowledge gap that motivates the study. These claims provide essential background and context for the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Previous work by the author showed that journey differences and subtask differences are independently encoded in place cell firing locations and rates, respectively, and that all trial types could be decoded from ensemble activity during running.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 accurately summarize findings from the author's prior work (Takahashi, 2013), which provides the foundation for the current replay analyses. These claims establish that the encoding mechanisms exist during running, motivating the investigation of whether they are preserved in replays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The findings are interpreted in the context of prior work on replay function, VTE events, and episodic memory, suggesting that replays represent possible trial types to prepare for unforeseen changes and support episodic-like memory retrieval for navigational planning and decision making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C71 accurately characterize prior literature on replay, VTE, and memory with appropriate citations. C72-C75 provide reasonable interpretations of the current findings in this context. However, these are largely interpretive claims that extend beyond the direct evidence. The interpretations are plausible but somewhat speculative, particularly C73 regarding preparation for unforeseen changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The findings are discussed in relation to preplay phenomena and future research directions, with speculation about functional significance for episodic memory abilities including mental time travel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C77 accurately cite prior work on preplay. However, C78-C81 are explicitly speculative (using 'speculate' or 'might'), representing hypotheses about functional significance and mechanisms rather than supported conclusions. C82 makes a claim about broader significance that is reasonable but not directly tested. These speculations are appropriate for a Discussion section but should not be considered supported results.",
+    "result_type": "MINOR"
+  }
+]

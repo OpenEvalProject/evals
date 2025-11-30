@@ -1,0 +1,232 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "DYT1 dystonia is a rare, dominantly inherited motor disorder caused by a specific three-base-pair deletion in the TOR1A gene. Patients exhibit variable severity of muscle contractions producing abnormal movements but maintain normal intelligence and show no obvious brain abnormalities or neurodegeneration on post-mortem examination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide a well-established clinical and genetic characterization of DYT1 dystonia, supported by appropriate citations (Ozelius et al., 1997; Paudel et al., 2012) and established medical knowledge. These background claims are foundational for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C45"
+    ],
+    "result": "Rodent models of DYT1 dystonia demonstrate abnormally strong long-term potentiation (LTP) and weak or absent long-term depression (LTD) in corticostriatal synapses compared to wild-type controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, and C45 consistently report findings from rodent models, supported by multiple citations (Martella et al., 2009; Grundmann et al., 2012). This prior work forms the mechanistic basis for the authors' hypothesis about human behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Reinforcement learning theory posits that dopamine-dependent synaptic plasticity in corticostriatal networks underlies trial-and-error learning, with dopamine signaling prediction errors that modulate LTP and LTD to strengthen or weaken synapses, thereby affecting action selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 describe the theoretical framework of reinforcement learning in the basal ganglia, supported by extensive citations (Sutton and Barto, 1998; Barnes et al., 2005; Schultz et al., 1997; Reynolds et al., 2001; Frank et al., 2004). This established theory provides the conceptual foundation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The study tested 13 DYT1 dystonia patients and 13 age- and sex-matched healthy controls, all with at least 13 years of education. Both groups showed similarly low numbers of aborted trials and reaction times well below the deadline, confirming that motor symptoms did not interfere with task performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 and C25-C27 describe the study sample and demonstrate adequate matching and task performance. Statistical tests confirm no significant differences in age (P=0.55), aborted trials (P=0.11), or reaction times (P=0.14), supporting the validity of the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Both DYT1 dystonia patients and healthy controls quickly learned the task and showed similarly high probabilities of choosing the best cue in trials with deterministic outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C24 demonstrate that both groups performed equivalently on trials with clear optimal choices (P=0.94 and P=0.17, respectively), establishing that basic learning and task comprehension were intact in both groups. This validates the experimental paradigm for testing risk preferences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C28",
+      "C38"
+    ],
+    "result": "DYT1 dystonia patients displayed significantly less risk aversion than healthy controls, choosing the risky 0/10\u00a2 cue over the equal-mean 5\u00a2 sure cue more frequently throughout the experiment (DYT 0.44\u00b10.18 vs CTL 0.25\u00b10.20, P<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C13, C28, and C38 report the primary behavioral finding with appropriate statistical support (Mann-Whitney z=2.33, P<0.05; Friedman's test \u03c7\u00b2=16.2, P<0.0001). The effect is consistent across multiple blocks and is supported by Figure 3a-b. This represents a robust group difference in risk preference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C14",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Both groups showed dynamic adjustment of risky choices based on recent outcomes, with significantly more risky choices following wins than losses. DYT1 patients maintained this sensitivity throughout training, while controls' behavior became less sensitive to local outcomes in later trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C49-C52 demonstrate that both groups engaged in reinforcement learning (DYT P<0.005, CTL P<0.05), ruling out random choice as an explanation for DYT patients' behavior. ANOVA analysis (P<0.01 for outcome effect) and time-bin analysis support ongoing learning, particularly in the DYT group.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C15",
+      "C43"
+    ],
+    "result": "Risk-taking behavior in DYT1 dystonia patients was significantly correlated with clinical disease severity (Pearson's r=0.62, P<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C43 report a significant correlation between risk-taking and dystonia severity using the Fahn-Marsden scale. The correlation is moderate-to-strong (r=0.62) and statistically significant, though the sample size is small (df=11, suggesting n=13 patients). This dose-response relationship strengthens the link between the disease and behavioral phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "The relationship between risk-taking and symptom severity remained significant when controlling for sex, age, and medication, with risky behavior not significantly affected by sex or medication regimen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C17 address potential confounds through regression analysis. While the text notes that including both medications simultaneously lost significance (likely due to overfitting with small sample size), the core relationship held when controlling for individual factors (P<0.05), supporting the robustness of the severity-behavior correlation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C18",
+      "C48"
+    ],
+    "result": "The asymmetric reinforcement learning model explained participants' data significantly better than the classical reinforcement learning model for the majority of participants (16/26), particularly those showing risk-seeking or risk-averse behavior. The model also outperformed a win-stay-lose-shift strategy model (25/26 participants).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C48 report model comparison results using likelihood ratio tests. The asymmetric model was justified for 16/26 participants (P<0.05), particularly non-risk-neutral individuals. The superiority over simpler models supports the interpretation that learning asymmetries drive risk preferences. Note: There appears to be a typographical error in C18 (CTL 19 should be CTL 10).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C29"
+    ],
+    "result": "DYT1 dystonia patients showed significantly different learning asymmetry parameters compared to controls (DYT -0.05\u00b10.27 vs CTL -0.34\u00b10.27, P<0.05), with no differences in overall learning rate or inverse temperature parameters, consistent with enhanced learning from positive prediction errors and reduced learning from negative prediction errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C20, and C29 report the key computational finding: a specific difference in learning asymmetry (\u03ba parameter) between groups (Mann-Whitney z=-2.51, P<0.05) without differences in other parameters (learning rate P=0.18, inverse temperature P=0.23). This selective difference supports the hypothesis that altered synaptic plasticity affects learning asymmetry specifically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "The learning asymmetry parameter was significantly correlated with dystonia severity (Pearson's r=0.64, P<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 reports a strong correlation between the computational parameter (\u03ba) and clinical severity. This correlation (r=0.64) is slightly stronger than the behavioral correlation (r=0.62), providing convergent evidence that the computational model captures disease-relevant variance. However, the small sample size (df=11) warrants caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C22",
+      "C53",
+      "C54"
+    ],
+    "result": "The asymmetric learning model explained choice behavior significantly better than a nonlinear utility model (t=1.92, df=25, P<0.05), with strongly nonlinear utilities in the domain of small payoffs being generally unlikely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C53, and C54 address an alternative explanation (nonlinear utility functions) through formal model comparison. The asymmetric learning model performed better population-wide (paired t-test, P<0.05), and the citation to Rabin and Thaler (2001) supports the implausibility of strong utility nonlinearities for small amounts. This strengthens the learning-based interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "DYT1 dystonia patients appear to have intact striatal dopamine signaling but altered corticostriatal LTP/LTD, contrasting with Parkinson's disease where learning asymmetries arise from impaired dopamine signaling that can be alleviated with medication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 draw a mechanistic contrast between DYT1 dystonia and Parkinson's disease, supported by multiple citations (Balcioglu et al., 2007; Dang et al., 2006; Grundmann et al., 2007; Zhao et al., 2008 for DYT1; Frank et al., 2004; Rutledge et al., 2009; Shohamy et al., 2004 for PD). This comparison strengthens the interpretation that plasticity mechanisms, not dopamine signaling per se, drive the observed effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Current evidence suggests differential plasticity in direct (D1) and indirect (D2) pathways, with the DYT1 mouse model showing impaired indirect pathway plasticity due to D2 receptor dysfunction. The direct pathway supports 'Go' choices while the indirect pathway supports 'NoGo' avoidance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 discuss the mechanistic complexity of basal ganglia learning, supported by citations (Beeler et al., 2012; Napolitano et al., 2010; Wiecki et al., 2009; Kravitz et al., 2012; Shen et al., 2008). The authors appropriately acknowledge that multiple mechanisms could produce the observed behavioral asymmetry, though they cannot distinguish between them with current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C37",
+      "C42",
+      "C44",
+      "C46",
+      "C47"
+    ],
+    "result": "The findings support the role of striatal plasticity in shaping human choice behavior, demonstrating that DYT1 dystonia extends beyond motor symptoms to affect reinforcement learning and decision-making, with asymmetric learning computationally predicting risk-taking in probabilistic tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C42, C44, C46, and C47 present the study's broader implications. The convergence of rodent plasticity findings, computational predictions, and human behavioral data provides strong support for linking corticostriatal plasticity to choice behavior. Citations support the non-motor aspects of dystonia (Fiorio et al., 2007; Heiman et al., 2004; Molloy et al., 2003; Stamelou et al., 2012).",
+    "result_type": "MAJOR"
+  }
+]

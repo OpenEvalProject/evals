@@ -1,0 +1,2088 @@
+{
+  "submission": {
+    "id": "14663307-43f0-4256-bfd3-f9ef41eb9f15",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:25:02.972690Z",
+    "updated_at": "2025-11-29T23:25:02.972690Z"
+  },
+  "content": [
+    {
+      "id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "submission_id": "14663307-43f0-4256-bfd3-f9ef41eb9f15",
+      "content_type": "manuscript",
+      "content_text": "# The molecular basis for ANE syndrome revealed by the large ribosomal subunit processome interactome\n\n## Authors\n\n- Kathleen L McCann<sup>1</sup> ([ORCID: 0000-0002-7144-4851](https://orcid.org/0000-0002-7144-4851))\n- Takamasa Teramoto<sup>2</sup>\n- Jun Zhang<sup>2</sup>\n- Traci M Tanaka Hall<sup>2</sup> \u2020\n- Susan J Baserga<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Genetics Yale University School of Medicine New Haven United States\n2. Epigenetics and Stem Cell Biology Laboratory National Institute of Environmental Health Sciences, National Institutes of Health Research Triangle Park United States\n3. Department of Therapeutic Radiology Yale University School of Medicine New Haven United States\n4. Department of Molecular Biophysics and Biochemistry Yale University School of Medicine New Haven United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nANE syndrome is a ribosomopathy caused by a mutation in an RNA recognition motif of RBM28, a nucleolar protein conserved to yeast (Nop4). While patients with ANE syndrome have fewer mature ribosomes, it is unclear how this mutation disrupts ribosome assembly. Here we use yeast as a model system and show that the mutation confers growth and pre-rRNA processing defects. Recently, we found that Nop4 is a hub protein in the nucleolar large subunit (LSU) processome interactome. Here we demonstrate that the ANE syndrome mutation disrupts Nop4\u2019s hub function by abrogating several of Nop4\u2019s protein-protein interactions. Circular dichroism and NMR demonstrate that the ANE syndrome mutation in RRM3 of human RBM28 disrupts domain folding. We conclude that the ANE syndrome mutation generates defective protein folding which abrogates protein-protein interactions and causes faulty pre-LSU rRNA processing, thus revealing one aspect of the molecular basis of this human disease.\n\n## Introduction\n\nRibosomes are essential for life. The fundamental cellular process of ribosome assembly requires the coordinated action of all three RNA polymerases, over 200 biogenesis factors, and a number of small nucleolar RNAs (Thomson et al., 2013; Woolford and Baserga, 2013; Fern\u00e1ndez-Pevida et al., 2015). In yeast, ribosome biogenesis initiates in the nucleolus with the transcription of the 35S polycistronic pre-ribosomal RNA (rRNA) precursor by RNA polymerase I. The 35S pre-rRNA undergoes a number of cleavage and modification events to give rise to the mature 18S, 5.8S and 25S rRNAs. Mutations that partially disrupt ribosome assembly or function are often deleterious and can lead to disease in humans. Collectively, these diseases of ribosome biogenesis are called ribosomopathies. Ribosomopathies are caused by mutations in proteins that function in all stages of ribosome assembly (McCann and Baserga, 2013; Armistead and Triggs-Raine, 2014).\n\nA homozygous missense mutation in the nucleolar protein RBM28 causes the ribosomopathy, alopecia, neurological defects and endocrinopathy (ANE) syndrome (Nousbeck et al., 2008). Five affected children of a consanguineous kindred displayed degrees of baldness, mental retardation, motor deterioration, and reduced pituitary gland function in their second decade of life (Nousbeck et al., 2008; Warshauer et al., 2015). The mutation segregated in the family in an autosomal recessive manner and was mapped to a single leucine to proline amino acid substitution at position 351 (L351P) of RBM28. This residue resides in the first \u03b1-helix of its third RNA recognition motif (RRM3; Figure 1A, Figure 1\u2014figure supplement 1). ANE syndrome was classified as a ribosomopathy because RBM28 is localized to the nucleolus and because patient fibroblasts showed reduced numbers of ribosomes (Damianov et al., 2006; Nousbeck et al., 2008). While the L351P mutation is predicted to disrupt the first \u03b1-helix of RRM3 and thereby impair RBM28 function, it is not known how this single amino acid substitution disrupts the normal function of RBM28 in the nucleolus. Specifically, what is the molecular basis of ANE syndrome pathogenesis?\n\n![Figure 1.](https://cdn.elifesciences.org/articles/16381/elife-16381-fig1-v2.jpg)\n\n**Figure 1.:** (A) The leucine that is mutated in ANE syndrome is highly conserved. Top: Diagram of the domain structure for human RBM28 and its yeast ortholog, Nop4. The boxes represent RNA Recognition Motifs (RRMs). Arrowheads indicate the approximate location of the mutated amino acid, L351P in humans and L306P in yeast. Bottom: Multiple sequence alignment of the portion of RRM3 containing the mutated leucine. Shaded amino acids in are conserved. A box outlines the conserved leucine that is mutated in ANE syndrome. (B) Schematic of the yeast strain used for testing the ANE syndrome mutation in Nop4. Endogenous Nop4 was placed under the control of the inducible GAL4 promoter in haploid yeast. FLAG-tagged unmutated Nop4 WT or Nop4 L306P was expressed constitutively from the p414GPD plasmid. (C) Nop4 WT and Nop4 L306P are expressed at equivalent levels from the yeast expression vector p414GPD-3xFLAG-GW. The depletion of endogenous Nop4 protein was confirmed by western blot using an HRP-conjugated monoclonal antibody against the 3xHA tag. Expression of Nop4 WT or Nop4 L306P from p414GPD-3xFLAG-GW was analyzed by western blot using a monoclonal antibody against the 3xFLAG tag. As a loading control, a western blot using \u03b1-Mpp10 was performed. The expression levels of Nop4 WT and Nop4 L306P relative to Mpp10 were quantitated and normalized to Nop4 WT: Nop4 WT = 1, Nop4 L306P = 0.96. EV = empty vector. The arrows indicate the expected bands. The arrowhead indicates an Mpp10 species only observed when yeast are grown in galactose and raffinose. The asterisk denotes degradation. (D) The ANE syndrome mutation in Nop4 impairs growth on solid medium. Serial dilutions of yeast expressing the indicated Nop4 constructs were grown on solid medium for 3 days at 30\u00b0C and 37\u00b0C or for 5 days at 23\u00b0C and 17\u00b0C. Three biological replicates were performed starting with transformation of the plasmids into the yeast strain. (E) The Nop4 ANE syndrome mutation impairs growth in liquid medium. Yeast expressing the indicated Nop4 constructs were transferred from SG/R-Trp to SD-Trp and 23\u00b0C to deplete the endogenous Nop4. Growth was monitored for 48 hr by measuring the absorbance at OD600. The log2 of the OD600 was plotted over time and the slope was used to estimate the doubling time. Four biological replicates were performed starting with transformation of the plasmids into the yeast strain.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16381/elife-16381-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The amino acids corresponding to RRM3 from human RBM28, yeast Nop4 and RBM28 from M. mulatta, M. musculus, X. tropicalis and D. rerio were aligned. The conserved structural elements of a canonical RRM are indicated above the alignment. The shaded amino acids are conserved. The conserved leucine that is mutated in ANE syndrome is outlined with a box.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16381/elife-16381-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Nop4 and RBM28 are expressed from the yeast expression vector p414GPD-3xFLAG-GW. Expression of Nop4 (78 kDa) or RBM28 (86 kDa) from p414GPD-3xFLAG-GW was analyzed by western blot using a monoclonal antibody against the 3xFLAG tag. As a loading control, a western blot using \u03b1-Mpp10 was performed. The arrowhead indicates an Mpp10 species only observed when yeast are grown in galactose and raffinose. The expression levels of Nop4 and RBM28 relative to Mpp10 were quantitated and normalized to Nop4: Nop4 = 1, RBM28 = 0.4. (B) RBM28 complements growth on solid medium. Serial dilutions of yeast expressing either Nop4 or RBM28 were grown on solid medium for 3 days at 30\u00b0C and 37\u00b0C or for 5 days at 23\u00b0C and 17\u00b0C.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/16381/elife-16381-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The complete amino acid alignment of human RBM28 protein and its yeast ortholog, Nop4, was created using ClustalX. The conserved leucine that is mutated to proline in ANE syndrome, L351 in RBM28 and L306 in Nop4, is circled in black. RRM domains are indicated by the labeled boxes. Below the alignment, the conservation score for each column is plotted. A high score indicates high conservation whereas a low score indicates low conservation.\n\nNop4, the yeast ortholog of RBM28, is required for assembly of the large ribosomal subunit (LSU; Berg\u00e8s et al., 1994; Sun and Woolford, 1994; Nousbeck et al., 2008). Recently, the LSU processome interactome revealed that Nop4 functions as a hub protein, interacting with many more proteins than average within the LSU processome (McCann et al., 2015). We hypothesized that introduction of the orthologous ANE syndrome mutation into Nop4 (L306P) would disrupt Nop4\u2019s function as a hub protein and therefore disrupt LSU assembly in the nucleolus.\n\nWe demonstrate that introduction of the ANE syndrome mutation into Nop4 disrupts growth and pre-rRNA processing in yeast and abrogates several, but not all, of its protein-protein interactions. Surprisingly, the C-terminal half of Nop4, where the ANE syndrome mutation occurs, is necessary and sufficient for hub protein function, cell growth and pre-rRNA processing. Consistent with these findings, circular dichroism and NMR reveal that the ANE mutation in RRM3 of the Nop4 human ortholog, RBM28, disrupts folding of the entire domain, not just the first \u03b1-helix. Together, these results suggest that the molecular basis of ANE syndrome lies in defective protein folding that reduces protein interactions and the function of RBM28 as a hub protein, resulting in pre-rRNA processing defects in the nucleolus.\n\n## Results\n\n### The ANE syndrome mutation in Nop4 causes growth defects in yeast\n\nOur goal was to elucidate the molecular basis of the ribosomopathy ANE syndrome, which is attributed to a single amino acid substitution, L351P, in RBM28 (Nousbeck et al., 2008). Human RBM28 can complement the growth defect in the yeast, Saccharomyces cerevisiae, when its ortholog, the essential Nop4 protein, is depleted (Figure 1\u2014figure supplement 2; Kachroo et al., 2015). Therefore, we used yeast genetics to pinpoint the molecular basis of ANE syndrome. A ClustalX alignment of the yeast Nop4 and human RBM28 amino acid sequences permitted identification of the orthologous ANE syndrome mutation in Nop4 (Figure 1\u2014figure supplement 3). Over their entire length, the amino acid sequences of Nop4 and RBM28 are ~26% identical and 34% similar, and both contain four RRMs (Figure 1A). The ANE syndrome mutation in human RBM28, L351P, is within the third RRM. Inspection of the alignment revealed an orthologous leucine in the third RRM of yeast Nop4, which we mutated to proline to introduce the ANE syndrome mutation into Nop4 (L306P; Figure 1A; Figure 1\u2014figure supplement 1).\n\nWe determined that the ANE syndrome mutation in Nop4 (L306P) impaired yeast growth. We generated a strain where endogenous NOP4 is under the control of a galactose-inducible, glucose-repressible promoter and tagged with a triple-HA epitope (Figure 1B). Unmutated (wild type; WT) Nop4 or Nop4 L306P protein is tagged with a triple-FLAG epitope and constitutively expressed from a plasmid (p414GPD). Western blotting of total protein demonstrated that after growth of this strain in glucose for 48\u2009hr at 23\u00b0C, the endogenous Nop4 was reduced to undetectable levels and plasmid-borne Nop4 WT and Nop4 L306P were expressed at comparable levels (Figure 1C). Serial dilutions of strains bearing the plasmids: empty vector (EV), Nop4 WT and Nop4 L306P were spotted onto plates containing glucose and incubated at 30\u00b0C, 37\u00b0C, 23\u00b0C and 17\u00b0C. At all tested temperatures, depletion of Nop4 (EV) conferred a severe growth defect relative to growth of Nop4 WT (Figure 1D). The L306P mutation impaired growth at all temperatures tested compared to WT, although the defect was not as severe as that observed with the EV control (Figure 1D).\n\nTo confirm our findings, we analyzed growth in liquid medium at 23\u00b0C and estimated the doubling time for each strain. Endogenous Nop4 was depleted and the growth of strains bearing the plasmids: EV, Nop4 WT or Nop4 L306P was monitored for 48\u2009hr. Similar to growth on solid medium, Nop4 L306P exhibited a moderate growth defect in liquid culture, doubling every 7.8\u2009hr, compared to WT, which doubled every 4.8\u2009hr; however, the defect was not as severe as that observed with the EV control, which doubled every 20.5\u2009hr (Figure 1E).\n\n### The ANE syndrome mutation causes pre-rRNA processing defects in yeast\n\nThe ANE syndrome mutation, L306P in yeast Nop4, also disrupts pre-rRNA processing. As growth defects caused by mutation of a nucleolar protein are often indicative of ribosome biogenesis defects, we tested whether the growth defects conferred by Nop4 L306P were due to disruption of ribosome biogenesis. Previously, it has been shown that the mature 25S rRNA and the 27S and 7S pre-rRNA precursors are severely reduced in yeast depleted of Nop4 (Figure 2A; Berg\u00e8s et al., 1994; Sun and Woolford, 1994). To determine whether Nop4 L306P similarly disrupts production of the 25S rRNA, total RNA was harvested from strains bearing plasmids expressing no Nop4 (empty vector; EV), Nop4 WT or Nop4 L306P and depleted of endogenous Nop4 for 0 and 48\u2009hr. The 25S and 18S rRNAs were visualized by ethidium bromide staining, quantified and the ratio of 25S/18S, a measure of the relative levels of the mature rRNAs, was calculated and normalized to Nop4 WT for each time point (Figure 2B top panels). The observed decrease in the 25S/18S ratios correlated with the trend of the observed growth defects. The EV control, which had the most severe growth defect, also had the most severe reduction in 25S/18S ratio levels in comparison to Nop4 WT. Nop4 L306P conferred a moderate growth defect and a moderate, but statistically significant, reduction in the 25S/18S rRNA ratio (Figure 2C), consistent with reduced 25S levels.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/16381/elife-16381-fig2-v2.jpg)\n\n**Figure 2.:** (A) Simplified diagram depicting the pre-rRNA processing steps in yeast. The pre-rRNA is transcribed as a 35S polycistronic precursor. The external transcribed spacers (5\u00b4 and 3\u00b4 ETS) and the internal transcribed spacers (ITS1 and 2) are removed through a number of cleavage steps to produce the mature 18S, 5.8S and 25S rRNAs. Oligonucleotide probe e, which is complementary to ITS2 and detects all 27S and 7S pre-rRNAs (indicated on top line), was used for northern blotting. (B) The ANE syndrome mutation in Nop4 impairs pre-rRNA processing in yeast. Top panel: Ethidium bromide staining of total RNA extracted from yeast expressing no Nop4 (empty vector; EV), Nop4 WT or Nop4 L306P after depletion of endogenous Nop4 for the indicated time. Bottom panel: Northern blots of total RNA using radio-labeled oligonucleotide probe e to detect 35S, 27S, and 7S pre-rRNAs and an oligonucleotide probe complementary to Scr1 as a loading control. (C) The ratios of the mature rRNAs (25S/18S), the ratios of the precursors (27S/35S and 7S/35S) and the ratios of the precursors to the loading control Scr1 (35S/Scr1, 27S/Scr1 and 7S/Scr1) were calculated from four replicate experiments and were plotted with error bars representing the standard deviation. The significance of the ratios of Nop4 depleted yeast (empty vector; EV) or Nop4 L306P compared to WT was evaluated using one-way ANOVA. ****indicates a p value < 0.0001. ***indicates a p value < 0.001. **indicates a p value <0.01. NS = not significant. Four biological replicates were performed.\n\nSince the L306P mutation resulted in a reduction of the 25S/18S ratio, we determined whether the L306P mutation had an effect on pre-rRNA processing. Northern blot analysis of total RNA harvested from strains expressing no Nop4 (EV), Nop4 WT or Nop4 L306P after depletion of endogenous Nop4 for 0 and 48\u2009hr was performed using an oligonucleotide probe in ITS2 and an oligonucleotide probe against the loading control Scr1 (Figure 2A). The ratios of 27S/35S and 7S/35S pre-rRNAs as well as the ratios of the precursors to the loading control, Scr1, were quantified and normalized to Nop4 WT. Similar to the 25S/18S ratios, the pre-rRNA processing defects mirror the growth defects. Depletion of Nop4 (EV) resulted in a severe reduction of 27S and 7S levels, with a concomitant decrease in the 27S/35S, 7S/35S, 27S/Scr1 and 7S/Scr1 ratios, indicative of an ITS1 processing defect, as has been previously observed (Figure 2B,C; Berg\u00e8s et al., 1994; Sun and Woolford, 1994). The Nop4 L306P mutant showed an intermediate growth defect and also displayed an intermediate, but statistically significant, ITS1 processing defect as indicated by reduced 27S/35S, 7S/35S and 7S/Scr1 ratios (Figure 2B,C).\n\n### The ANE syndrome mutation disrupts Nop4 protein-protein interactions\n\nAs the LSU processome interactome revealed that Nop4 functions as a hub protein (McCann et al., 2015), we tested whether the ANE mutation in Nop4 abrogates protein-protein interactions using a directed yeast two-hybrid (Y2H) assay (Figure 3A). Nop4 WT and Nop4 L306P were expressed at comparable levels as prey fusion proteins from the Y2H vector, pACT2, in PJ69-4\u03b1 (Figure 3B). Yeast expressing either of these prey proteins or no Nop4 (empty vector; EV) were co-transformed with the Y2H bait vector, pAS2-1, encoding 5 Nop4-interacting proteins (Table 1; McCann et al., 2015), including Nop4 itself, and tested for interaction by serial dilution on the indicated selective medium (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/16381/elife-16381-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic of Y2H analysis. Nop4 WT or Nop4 L306P were cloned into the prey vector (pACT2) while five Nop4 interacting proteins (Noc2, Mak5, Nop4, Nsa2 and Dbp10) were cloned into the bait vector (pAS2-1). Each bait was individually co-transformed into the yeast strain PJ69-\u03b1 with empty vector (EV), Nop4 WT or Nop4 L306P prey and spotted onto medium to confirm the presence of both Y2H plasmids (SD-Leu-Trp) and onto medium to test for protein-protein interactions (SD-Leu-Trp-His + 6 mM 3-AT). (B) Nop4 WT and Nop4 L306P are expressed at equivalent levels from the Y2H vector pACT2. Total protein was extracted from PJ69-4\u03b1 yeast transformed with EV or expressing Nop4 WT or Nop4 L306P from the Y2H prey vector, pACT2. Nop4 WT and Nop4 L306P are expressed as fusions with the GAL4 activation domain and a 3xHA tag. Protein extracts were separated by SDS-PAGE and analyzed by \u03b1-HA western blot. As a loading control, a western blot using \u03b1-Mpp10 was performed. The expression levels of Nop4 WT and Nop4 L306P relative to Mpp10 were quantitated and normalized to Nop4 WT: Nop4 WT = 1, Nop4 L306P = 1.1 (C) Y2H analysis by serial dilution reveals that the ANE syndrome (L306P) mutation disrupts some Nop4 protein-protein interactions. Two biological replicates of a subset of interacting proteins were performed starting with co-transformation of the bait and prey plasmids into the Y2H strain. (D) The ANE syndrome (L306P) mutation reduces protein-protein interactions as determined by co-immunoprecipitation. Yeast extract was generated from yeast expressing either Nop4 WT or Nop4 L306P and one of its interacting partners and incubated with \u03b1-FLAG resin. Co-immunoprecipitations were assessed by \u03b1-HA western blot. The expected molecular weights of the Nop4 interacting proteins are: Dbp10 = 113 kDa, Mak5 = 87 kDa, Noc2 = 82 kDa, Nop4 = 78 kDa and Nsa2 = 30 kDa. (E) The ratio of co-purified 3xFLAG tagged Nop4 WT or Nop4 L306P to co-immunoprecipitated 3xHA tagged interacting partner was calculated from three replicate experiments and plotted with error bars representing the standard deviation. The significance of the co-immunoprecipitation ratio of Nop4 L306P compared to WT for each interacting partner was evaluated using a t-test. ****indicates a p value < 0.0001. ***indicates a p value < 0.001. **indicates a p value <0.01. NS = not significant. Three biological replicates were performed.\n\n**Table 1.**\n Nop4 interacts with 23 large subunit assembly factors with high confidence. The Nop4 interacting proteins were identified by yeast two-hybrid and were assigned a confidence score in (McCann et al., 2015).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Nop4 Interacting Partner</th>\n      <th>Confidence Score (from McCann et al., 2015)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Nop4</td>\n      <td>92%</td>\n    </tr>\n    <tr>\n      <td>Loc1</td>\n      <td>92%</td>\n    </tr>\n    <tr>\n      <td>Ebp2</td>\n      <td>85%</td>\n    </tr>\n    <tr>\n      <td>Nop12</td>\n      <td>85%</td>\n    </tr>\n    <tr>\n      <td>Nsa2</td>\n      <td>85%</td>\n    </tr>\n    <tr>\n      <td>Mak5</td>\n      <td>84%</td>\n    </tr>\n    <tr>\n      <td>Cgr1</td>\n      <td>70%</td>\n    </tr>\n    <tr>\n      <td>Cic1</td>\n      <td>70%</td>\n    </tr>\n    <tr>\n      <td>Has1</td>\n      <td>70%</td>\n    </tr>\n    <tr>\n      <td>Noc2</td>\n      <td>70%</td>\n    </tr>\n    <tr>\n      <td>Nop13</td>\n      <td>70%</td>\n    </tr>\n    <tr>\n      <td>Nsr1</td>\n      <td>70%</td>\n    </tr>\n    <tr>\n      <td>Rrp12</td>\n      <td>70%</td>\n    </tr>\n    <tr>\n      <td>Rrp14</td>\n      <td>70%</td>\n    </tr>\n    <tr>\n      <td>Mak21</td>\n      <td>68%</td>\n    </tr>\n    <tr>\n      <td>Dbp10</td>\n      <td>63%</td>\n    </tr>\n    <tr>\n      <td>Drs1</td>\n      <td>63%</td>\n    </tr>\n    <tr>\n      <td>Nop16</td>\n      <td>63%</td>\n    </tr>\n    <tr>\n      <td>Nug1</td>\n      <td>63%</td>\n    </tr>\n    <tr>\n      <td>Prp43</td>\n      <td>63%</td>\n    </tr>\n    <tr>\n      <td>Spb4</td>\n      <td>63%</td>\n    </tr>\n    <tr>\n      <td>Tma16</td>\n      <td>63%</td>\n    </tr>\n    <tr>\n      <td>Nog1</td>\n      <td>53%</td>\n    </tr>\n  </tbody>\n</table>\n\nThe presence of the ANE syndrome mutation (L306P) disrupted the interaction between Nop4 and 4 of the 5 interacting partners we tested (Figure 3C), including Nop4 itself. While all 5 bait proteins interacted with Nop4 WT, as indicated by growth on SD-Leu-Trp-His + 6\u2009mM 3-AT, Mak5, Nop4, and Nsa2 did not interact with Nop4 L306P, as no growth was observed (Figure 3C). Noc2 did interact with Nop4 L306P, but growth was reduced compared to WT. In contrast, Dbp10 interaction with Nop4 was unaffected by the L306P mutation (Figure 3C). Thus, the presence of the ANE syndrome mutation (L306P) disrupts Nop4 interaction with a subset of Nop4\u2019s interacting proteins (Mak5, Nop4, Nsa2 and Noc2) by Y2H, suggesting that the ANE syndrome mutation disrupts Nop4 function as a hub protein in the LSU processome.\n\nTo confirm our findings, we utilized a co-immunoprecipitation method developed to validate Y2H datasets (McCann et al., 2015) to assay for changes in protein-protein interactions in the presence of the ANE syndrome mutation (L306P). Nop4 WT and Nop4 L306P were expressed as 3xHA fusion proteins from the modified yeast expression vector p414GPD-3xFLAG and the 5 Nop4-interacting proteins were expressed as 3xFLAG fusion proteins from the modified yeast expression vector p415GPD-3xHA (Mumberg et al., 1995; McCann et al., 2015). The plasmids were co-transformed into yeast, immunoprecipitations were performed with anti-FLAG resin and the co-purifying Nop4 proteins were visualized by Western blotting with an antibody to the 3xHA tag (Figure 3D). The ratio of co-purifying 3xHA-Nop4 or 3xHA-Nop4 L306P to co-immunoprecipitated 3xFLAG-interacting protein was calculated and normalized to WT for each interacting partner (Figure 3E). Interestingly, 3xHA-Nop4 L306P co-purified significantly less efficiently than 3xHA-Nop4 WT with all interacting partners assayed, except Dbp10, as was observed by Y2H. Thus, the ANE syndrome mutation disrupts or reduces a subset of Nop4 protein-protein interactions.\n\n### RRM3 and RRM4 of Nop4 mediate protein binding\n\nWe hypothesized that Nop4 RRM3 may be important for protein binding since it contains the ANE syndrome mutation (L306P) that, when present, abrogates interaction with a subset of Nop4 interacting proteins (Figure 1A; Figure 3C\u2013E). Although RRM domains typically bind RNA, there are several published examples of RRMs that bind proteins rather than RNA (Fribourg et al., 2003; Lau et al., 2003; Selenko et al., 2003; Bono et al., 2004; Kadlec et al., 2004). To determine the contribution of the 4 RRMs to Nop4\u2019s function as a protein-binding hub, we divided Nop4 into two fragments. One fragment contained RRM1 and RRM2 (Nop4 RRM 1\u20132), and the second fragment contained RRM3 and RRM4 (Nop4 RRM 3\u20134; Figure 4A). We also attempted to determine if RRM3 alone was sufficient to mediate protein-protein interactions, however, RRM3 can not be stably expressed from the yeast two-hybrid vector (data not shown).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/16381/elife-16381-fig4-v2.jpg)\n\n**Figure 4.:** (A) Schematic representation of Nop4 RRM domains and the N- and C-terminal fragments containing RRMs 1 and 2 (RRM 1\u20132; residues 1\u2013250) or 3 and 4 (RRM 3\u20134; residues 252\u2013685), respectively. (B) Nop4 WT and the Nop4 fragments are differentially expressed from the Y2H vector pACT2. Total protein was extracted from PJ69-4\u03b1 yeast transformed with empty vector (EV) or expressing Nop4 WT (78 kDa), Nop4 RRM 1\u20132 (28.3 kDa) or Nop4 RRM 3\u20134 (49.4 kDa) from the Y2H prey vector, pACT2. Nop4 WT, Nop4 RRM 1\u20132 and Nop4 RRM 3\u20134 are expressed as fusions with the GAL4 activation domain and a 3xHA tag. Protein extracts were separated by SDS-PAGE and analyzed by \u03b1-HA western blot. As a loading control, a western blot using \u03b1-Glucose-6-Phosphate Dehydrogenase (G-6-PDH) was performed. The expression levels of Nop4 WT, Nop4 RRM 1\u20132 and Nop4 RRM 3\u20134 relative to G-6-PDH were quantitated and normalized to Nop4 WT: Nop4 WT = 1, Nop4 RRM 1\u20132 = 7.4, Nop4 RRM 3\u20134 = 0.29. (C) Y2H analysis demonstrates that Nop4 RRM 3\u20134 mediates protein-protein interactions. Nop4 WT and the Nop4 fragments described in (a) were tested as preys for interaction with 23 Nop4 interacting proteins as baits. The baits are labeled for the empty vector (EV) control plate. Growth on selective medium (SD-Leu-Trp-His + 6 mM 3-AT) indicates an interacting bait-prey pair. Two biological replicates were performed starting with the transformation of the bait and prey plasmids into the Y2H strains.\n\nWe found that Nop4 RRM 3\u20134 mediated the protein-protein interactions observed in the LSU processome interactome using a directed Y2H assay. Full-length Nop4 WT, Nop4 RRM 1\u20132 and Nop4 RRM 3\u20134 were expressed as prey fusion proteins (Figure 4B) and tested with 23 Nop4 interacting proteins (Table 1; McCann et al., 2015) expressed as bait fusions (James et al., 1996). Each prey was mated against each bait in an array-based Y2H assay and interactions were identified by growth on selective medium (Figure 4C; de Folter and Immink, 2011; McCann et al., 2015). As was previously observed in the LSU processome interactome, Nop4 WT interacted with the majority of the defined Nop4 interacting proteins after two weeks (Figure 4C; McCann et al., 2015). To our surprise, Nop4 RRM 1\u20132 did not interact with any of the Nop4 interacting proteins. In contrast, Nop4 RRM 3\u20134 interacted with the majority of the defined interacting set of proteins, similar to the full-length Nop4 WT (Figure 4C). Thus, Nop4 RRMs 3 and 4 are necessary and sufficient for these protein-protein interactions and are thereby likely to mediate Nop4\u2019s function as a hub protein in the LSU processome.\n\n### RRM3 and RRM4 are sufficient for Nop4\u2019s essential function\n\nNop4 RRM 3\u20134 is also sufficient to complement the growth defect observed upon Nop4 depletion. We constitutively expressed either full length Nop4 WT, Nop4 RRM 1\u20132 or Nop4 RRM 3\u20134 from plasmids in a yeast strain in which endogenous Nop4 was depleted (Figure 1B). Western blotting of total protein demonstrated that plasmid-borne, FLAG-tagged Nop4 WT, Nop4 RRM 1\u20132 and Nop4 RRM 3\u20134 were expressed, albeit at very different levels (Figure 5A). Serial dilutions of strains bearing the plasmids: empty vector (EV), Nop4 WT, Nop4 RRM 1\u20132 and Nop4 RRM 3\u20134 were spotted onto plates containing glucose and incubated at 30\u00b0C, 37\u00b0C, 23\u00b0C and 17\u00b0C. As expected, EV did not complement the growth defect at any temperature whereas Nop4 WT complemented at all temperatures (Figure 5B). Like EV, Nop4 RRM 1\u20132 did not complement the growth defect. However, Nop4 RRM 3\u20134 complemented the growth defect at 23\u00b0C and 17\u00b0C and partially complemented at 30\u00b0C (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/16381/elife-16381-fig5-v2.jpg)\n\n**Figure 5.:** (A) Nop4 WT and the Nop4 fragments are differentially expressed from the yeast expression vector p414GPD-3xFLAG-GW. Total protein was extracted from YPH499 GAL::3xHA-NOP4 yeast transformed with empty vector (EV) or expressing Nop4 WT (78 kDa), Nop4 RRM 1\u20132 (28.3 kDa) or Nop4 RRM 3\u20134 (49.4 kDa) from the yeast expression vector, p414GPD-3xFLAG-GW. Protein extracts were separated by SDS-PAGE and analyzed by \u03b1-FLAG western blot. As a loading control, a western blot using \u03b1-Mpp10 was performed. The expression levels of Nop4 WT, Nop4 RRM 1\u20132 and Nop4 RRM 3\u20134 relative to Mpp10 were quantitated and normalized to Nop4 WT: Nop4 WT = 1, Nop4 RRM 1\u20132 = 4.9, Nop4 RRM 3\u20134 = 0.27. (B) Serial dilutions of yeast expressing the indicated Nop4 fragments were grown on solid medium for 3 days at 30\u00b0C and 37\u00b0C or for 5 days at 23\u00b0C and 17\u00b0C. (C) Yeast expressing the indicated Nop4 fragments were transferred from SG/R-Trp-Leu to SD-Trp-Leu to deplete the endogenous Nop4. Growth was monitored for 24 hr at 30\u00b0C by measuring the absorbance at OD600. The log2 of the OD600 was plotted over time and the slope was used to estimate the doubling time. Three biological replicates were performed starting with transformation of the plasmids into the yeast strain. (D) Yeast expressing the indicated Nop4 fragments were transferred from SG/R-Trp-Leu to SD-Trp-Leu to deplete the endogenous Nop4. Growth was monitored for 48 hr at 23\u00b0C by measuring the absorbance at OD600. The log2 of the OD600 was plotted over time and the slope was used to estimate the doubling time. Three biological replicates were performed starting with transformation of the plasmids into the yeast strain.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16381/elife-16381-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Expression of the Nop4 fragments from the yeast two-hybrid vector pACT2 ensures nuclear targeting. Yeast expressing 3xHA-Nop4 WT, 3xHA-Nop4 RRM 1\u20132 or 3xHA-Nop4 RRM 3\u20134 from the yeast two-hybrid vector, pACT2, after depletion of endogenous Nop4 for 48 hr at 23\u00b0C were stained with DAPI (blue) and HA antibodies (green). The immunofluorescence microscopy images were merged. Nop4 WT, Nop4 RRM 1\u20132 and Nop4 RRM 3\u20134 localize primarily to the nucleus. (B) Serial dilutions of yeast expressing the indicated Nop4 fragments from pACT2 were grown on solid medium for 3 days at 30\u00b0C and 37\u00b0C or for 5 days at 23\u00b0C and 17\u00b0C.\n\nAs an additional test, we analyzed complementation in liquid medium at 30\u00b0C and 23\u00b0C. Endogenous Nop4 was depleted and the growth of strains expressing no Nop4 (empty vector; EV), Nop4 WT, Nop4 RRM 1\u20132 and Nop4 RRM 3\u20134, was monitored for 24\u2009hr at 30\u00b0C or 48\u2009hr at 23\u00b0C (Figure 5C,D). Similar to results on solid medium, Nop4 RRM 3\u20134 did not significantly complement the growth defect at 30\u00b0C but did complement the growth defect at 23\u00b0C, whereas Nop4 RRM 1\u20132 did not complement at either temperature (Figure 5C,D). The failure of Nop4 RRM 1\u20132 to complement the growth defect is not due to aberrant localization of the protein fragment. Nop4 RRM 1\u20132 also fails to complement when expressed from the yeast two-hybrid vector, pACT2, which ensures targeting of the fragment to the nucleus (Figure 5\u2014figure supplement 1A,B), suggesting that this domain is not essential for Nop4 function. In contrast, the ability of Nop4 RRM 3\u20134 to complement the growth defect in both solid and liquid medium suggests that the essential function of Nop4 is mediated through RRMs 3 and 4.\n\nExpression of Nop4 RRM 3\u20134 is sufficient to partially restore pre-rRNA processing. To determine whether complementation of the growth defect is due to rescue of the pre-rRNA processing defect, total RNA was harvested from strains depleted of endogenous Nop4 for 48\u2009hr at 23\u00b0C or for 24\u2009hr at 30\u00b0C and bearing plasmids expressing no Nop4 (EV), Nop4 WT, Nop4 RRM 1\u20132 or Nop4 RRM 3\u20134. The 25S and 18S rRNAs were visualized by ethidium bromide staining, quantified and the ratio of 25S/18S was calculated and normalized to WT for each time point (Figure 6A,B). Complementation of growth correlated with the rescue of pre-rRNA processing. As expected, Nop4 WT restored the 25S/18S ratio compared to EV at both 23\u00b0C and 30\u00b0C. Nop4 RRM 1\u20132 did not complement growth and did not rescue the 25S/18S ratio at either temperature (Figure 6A,B). In contrast, Nop4 RRM 3\u20134 was sufficient to significantly rescue the 25S/18S ratio compared to EV at 23\u00b0C, but not at 30\u00b0C (Figure 6B), consistent with a restoration of 25S levels at 23\u00b0C.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/16381/elife-16381-fig6-v2.jpg)\n\n**Figure 6.:** (A) Top panel: Total RNA extracted from yeast expressing the indicated Nop4 fragment after depletion of endogenous Nop4 for 24 hr at 30\u00b0C or for 48 hr at 23\u00b0C was visualized by ethidium bromide staining. Bottom panel: Northern blot analysis of total RNA using oligonucleotide probe e, which is complementary to a region of ITS2 of the pre-rRNA. As a loading control, we used an oligonucleotide complementary to the Scr1 RNA. Three biological replicates were performed. (B) The ratios of the mature rRNAs (25S/18S) and the ratios of the precursors to the loading control Scr1 (35S/Scr1, 27S/Scr1S and 7S/Scr1) were calculated from three replicate experiments and were plotted with error bars representing the standard deviation. The significance of the ratios of 25S/18S, 35S/Scr1, 27S/Scr1 and 7S/Scr1 of Nop4 WT, Nop4 RRM 1\u20132 or Nop4 RRM 3\u20134 compared to EV was evaluated using one-way ANOVA. ****indicates a p value < 0.0001. **indicates a p value < 0.01.\n\nTo further assess the rescue of pre-rRNA processing, we also examined pre-rRNA processing by northern blotting using an oligonucleotide probe in ITS2 (Figure 2A). Depletion of Nop4 (EV) led to a reduction in the 27S and 7S pre-rRNAs but did not affect the levels of the 35S pre-rRNA, as has been observed before (Berg\u00e8s et al., 1994; Sun and Woolford, 1994; Qiu et al., 2008). Expression of Nop4 WT restored pre-rRNA processing and the levels of the 27S and 7S pre-rRNA intermediates compared to the EV control at both 23\u00b0C and 30\u00b0C (Figure 6A,B). Strikingly, expression of Nop4 RRM 3\u20134, but not Nop4 RRM 1\u20132, significantly restored the levels of the 27S and 7S intermediates at 23\u00b0C but failed to rescue at 30\u00b0C (Figure 6B). Thus, pre-rRNA processing parallels the observed growth complementation and suggests that the essential function of Nop4 in ribosome assembly is mediated through the protein binding RRMs, RRM3 and RRM4.\n\n### The ANE syndrome mutation disrupts the structure of human RBM28 RRM3\n\nAs the ANE syndrome mutation in yeast Nop4 causes pre-rRNA processing defects and reduces protein-protein interactions with a subset of proteins that we tested, we hypothesized that the mutation causes a structural change in RRM3. To test this, we analyzed WT and mutant human RBM28 RRM3 domains (amino acids 330\u2013419) by circular dichroism (CD) and NMR. We used RBM28 RRM3 because Nop4 RRM3 was not soluble. We found that the L351P mutation disrupts the backbone structure of the RBM28 RRM3 domain. The CD spectra of WT and L351P RBM28 RRM3 showed notable differences in ellipticities [\u03b8] at 208, 215 and 222 nm (Figure 7A), indicating that the amino acid substitution reduced \u03b1-helical and \u03b2-sheet content. The CD spectrum of the L351P mutant protein with a minimum only at ~200 nm indicated the presence of random coil. We confirmed the disruption of domain folding by NMR. 15N-HSQC of WT RBM28 RRM3 showed well dispersed resonances (Figure 7B), indicating the presence of both \u03b1-helices and \u03b2-strands, as expected for an RRM domain(Nagai et al., 1990). In contrast, the majority of resonances in the spectrum of L351P ANE syndrome mutant RRM3 were clustered around 8.0~8.5 ppm in the proton dimension, demonstrating that the mutant protein backbone is disordered. A homology model of the human RBM28 RRM3, based on an NMR structure of mouse RBM28 RRM3, indicates that L351 is buried within the core of the domain (Figure 7C). Mutation to proline would be expected to disrupt helix \u03b11 and the overall tertiary structure of this RRM.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/16381/elife-16381-fig7-v2.jpg)\n\n**Figure 7.:** (A) Circular dichroism spectra of WT human RBM28 RRM3 (black) and L351P mutant (red). Four technical replicates were performed. (B) 15N-HSQC spectra of WT hRBM28 RRM3 (amino acids 330\u2013419) (black) and L351P mutant (red) are superimposed and plotted at the same contour level. In addition to clustering of resonances around 8.0~8.5 ppm in the proton dimension, dispersion of glutamine and asparagine side chains (7.0~7.8 ppm in the 1H dimension and 111~114 ppm in the 15N dimension) is reduced considerably, consistent with protein backbone disruption. Thirty-two technical replicates were performed. (C) Ribbon diagram of a homology model of human RBM28 RRM3. The model including residues 330\u2013419 was generated using the Phyre2 server (Kelley et al., 2015), and the best template was a solution structure of mouse RBM28 RRM3 (90% sequence identity with human RBM28, PDB ID 1X4H). L351 is shown with red space-filling spheres and typical RNA interacting residues in RNP motifs are colored yellow.\n\n## Discussion\n\nWe determined that the molecular pathogenesis of ANE syndrome (L351P in the nucleolar protein, RBM28) results from disrupted RRM3 protein structure that reduces its function as a hub protein in the LSU processome and causes defects in pre-rRNA processing. Introducing the ANE syndrome mutation into RRM3 of the yeast ortholog, Nop4 (L306P), causes growth and pre-rRNA processing defects, as well as reduced association with interacting protein partners. RRMs 3 and 4 of Nop4 alone are necessary and sufficient for Nop4 protein-protein interactions and for yeast growth and pre-rRNA processing. Biophysical methods indicate that RRM3 containing the ANE syndrome mutation is unfolded. Taken together, these results provide evidence that ANE syndrome is a ribosomopathy with a molecular defect in nucleolar steps of ribosome biogenesis.\n\nThe finding that an essential function of Nop4 is to mediate protein binding was unexpected. Nop4 has been cross-linked to pre-rRNA (Berg\u00e8s et al., 1994; Sun and Woolford, 1994; Granneman et al., 2011), leading to the expectation that its 4 RRMs would be essential for RNA binding. We show by Y2H analysis that the C-terminal half of Nop4 (RRMs 3 and 4) mediates protein-protein interactions and hub protein function in the LSU processome. Strikingly, this half of Nop4 is necessary and sufficient to complement the growth and pre-rRNA processing defects observed upon depletion of endogenous Nop4. As the ANE syndrome mutation occurs in RRM3 and disrupts Nop4 protein-protein interactions, ANE syndrome is therefore likely a disease of altered protein interaction rather than of RNA binding. We are now in a position to determine which interactions are critical for Nop4 function and how disruptions of those specific interactions contribute to ANE syndrome pathogenesis.\n\nNevertheless, Nop4 is undoubtedly an RNA-binding protein. Nop4 binds RNA in vitro (Sun and Woolford, 1997), co-immunoprecipitates the 27S and 7S pre-rRNAs and crosslinks to the 25S within the pre-rRNA in vivo (Granneman et al., 2011). Additionally, all 4 RRMs are important for Nop4 function as mutations in any of the RRMs disrupt growth and LSU assembly at 37\u00b0C (Sun and Woolford, 1997). Although RRMs 1 and 2 are not required for Nop4\u2019s hub protein function or sufficient for growth, they may bind the pre-rRNA. Furthermore, while RRMs 3 and 4 mediate protein binding, the possibility that they may also bind RNA is not precluded.\n\nHow does an RRM facilitate protein binding and thus hub protein function? Several examples of RRMs mediating interactions with other proteins have been identified including in the U2AF35-U2AF65, the U2AF65-SF1, the Snu17-Bud13, and the Y14-Mago complexes (Kielkopf et al., 2001; Fribourg et al., 2003; Lau et al., 2003; Selenko et al., 2003; Tripsianes et al., 2014). An RRM is comprised of a 4-stranded \u03b2-sheet, which forms the primary RNA binding interface, and 2 \u03b1-helices (Maris et al., 2005; Cl\u00e9ry et al., 2008). The \u03b1-helices of the RRM often mediate interaction between protein pairs, leaving the \u03b2-sheet accessible for RNA binding (Kielkopf et al., 2001; Selenko et al., 2003; Tripsianes et al., 2014). Alternatively, in the case of the Y14-Mago complex, the interaction is through the \u03b2-sheet, which precludes RNA binding (Fribourg et al., 2003; Lau et al., 2003). RRMs also can serve as oligomerization domains. In the case of Human antigen R (HuR), the third RRM promotes dimerization through its \u03b1-helices (Scheiba et al., 2014). These examples highlight the possibility that RRMs 3 and 4 of Nop4 may mediate protein binding and hub function through more than one of its structural motifs. The ANE mutation lies in an \u03b1-helix and the mutation disrupts not only the \u03b1-helix, but unfolds the RRM tertiary structure. Since the mutation abrogates some but not all protein-protein interactions, a subset of Nop4 interactions may be mediated by unstructured peptide elements in RRM3 or by the RRM4 domain.\n\nFibroblasts from patients with ANE syndrome have ribosome levels reduced to approximately 60% of controls (Nousbeck et al., 2008), consistent with the modest defects in ribosome biogenesis that we can now associate with the ANE syndrome mutation. In the yeast model system, the mutation confers reduced growth and mild pre-rRNA processing defects when compared to the Nop4 null (EV). Thus, the ANE syndrome mutation is a hypomorphic allele, consistent with its autosomal recessive inheritance (Nousbeck et al., 2008). This hypomorphism may, in part, explain how the ANE syndrome mutation is compatible with life, as the presence of the mutation leads to a partially functional RBM28 protein.\n\n## Materials and methods\n\n### Amino acid sequence alignment\n\nThe amino acid sequence of Nop4 was obtained from the Saccharomyces Genome Database (www.yeastgenome.org). The amino acid sequence of human RBM28 (accession number NP_060547) was obtained from the Protein Database (http://www.ncbi.nlm.nih.gov/protein/). The amino acid sequences of RBM28 from M. mulatta, M. musculus, X. tropicalis and D. rerio were obtained from Uniprot (www.uniprot.org). Amino acid alignments were determined using either ClustalX (Jeanmougin et al., 1998) or MegAlign Pro version 12.2.0 from DNASTAR. Madison, WI.\n\n### Yeast strains and plasmids\n\nA GAL::3HA-NOP4 strain was generated in the parental strain YPH499 (MATa ura3-52 lys2-801 ade2-101 trp1-\u039463 his3-\u0394200 leu2-\u03941) as described in (Charette and Baserga, 2010) that expresses 3HA-tagged Nop4 from the endogenous locus when grown in medium containing galactose but represses endogenous Nop4 expression when grown in medium containing glucose. The strain was confirmed by western blot using \u03b1-HA-HRP (Roche, Indianapolis, Indiana\u00a0).\n\nNOP4 was shuttled into the Gateway-modified yeast expression vector p414GPD-3xFLAG-GW (TRP1) or the Gateway-modified Y2H prey vector pACT2 (LEU2) and RBM28 was shuttled into p414GPD-3xFLAG-GW (TRP1) by Gateway cloning (Life Technologies) as in (Charette and Baserga, 2010). Site-directed mutagenesis to introduce the L306P missense mutation was performed using a Change-IT kit (Affymetrix, Santa Clara, California). RBM28, Nop4 WT and Nop4 L306P were all fully sequenced by either the W.M. Keck Foundation facility at the Yale School of Medicine or by GENEWIZ, Inc. Expression of RBM28, Nop4 WT and Nop4 L306P from p414GPD-3xFLAG-GW or pACT2 was analyzed by western blot using either \u03b1-3xFLAG-HRP (Sigma, St. Louis, Missouri) or \u03b1-HA-HRP (Roche, Indianapolis, Indiana). As a loading control, a western blot using \u03b1-Mpp10 (Dunbar et al., 1997) was performed.\n\nThe Nop4 fragments in Figure 4A were cloned into a Gateway Entry vector (pDONR221) and subsequently shuttled into the Y2H prey vector (pACT2) or the yeast expression vector p414GPD-3xFLAG-GW by Gateway cloning (Life Technologies) as in (Charette and Baserga, 2010). All clones were fully sequenced by either the W.M. Keck Foundation facility at the Yale School of Medicine or by GENEWIZ, Inc. Expression of the Nop4 fragments from p414GPD-3xFLAG-GW and pACT2 was analyzed by western blot using either \u03b1-3xFLAG-HRP (Sigma, St. Louis, Missouri) or \u03b1-HA-HRP (Roche). As a loading control, a western blot using \u03b1-G-6-PDH (Sigma) or using \u03b1-Mpp10 (Dunbar et al., 1997) was performed.\n\n### Growth assays\n\nFor analysis of the complementation by RBM28 of the growth defect conferred by Nop4 depletion, the YPH499 GAL::3xHA-NOP4 yeast strain was transformed with either empty vector (EV) or plasmids expressing Nop4 or RBM28. For serial dilutions, 0.2\u2009mL of cells at an OD600 of 1 were resuspended in 1\u2009mL water, diluted 1/10 and spotted onto SG/R-Trp or SD-Trp. Cells were incubated at 30\u00b0C or 37\u00b0C for 3 days or at 23\u00b0C or 17\u00b0C for 5 days. Two biological replicates were performed starting with transformation of the plasmids into the yeast strain.\n\nFor analysis of the effect of the ANE syndrome mutation (L306P) on growth, the YPH499 GAL::3xHA-Nop4 yeast strain was transformed with either empty vector (EV), or plasmids expressing Nop4 WT or Nop4 L306P. For serial dilutions, 0.2\u2009mL of cells at an OD600 of 1 were resuspended in 1\u2009mL water, diluted 1/10 and spotted onto medium containing 2% w/v galactose and 2% w/v raffinose and lacking tryptophan (SG/R-Trp) or onto medium containing 2% w/v glucose (dextrose) and lacking tryptophan (SD-Trp). Cells were incubated at 30\u00b0C or 37\u00b0C for 3 days or at 23\u00b0C or 17\u00b0C for 5 days. Four biological replicates were performed starting with transformation of the plasmids into the yeast strain. For analysis in liquid medium, the GAL::3xHA-NOP4 yeast strain transformed with empty vector (EV) or expressing either 3xFLAG-tagged Nop4 WT or Nop4 L306P from the p414GPD vector was depleted of endogenous Nop4 by first growing cultures to mid-log phase (OD600 = 0.4\u20130.8) in SG/R-Trp at 30\u00b0C and then transferring the cultures to the non-permissive (SD-Trp) medium and 23\u00b0C. The cells were maintained in mid-log phase (OD600 < 0.8) by dilution of the culture with fresh SD-Trp media. Growth was monitored by OD600 measurement for 48\u2009hr. Three biological replicates were performed starting with transformation of the plasmids into the yeast strain.\n\nFor analysis of the complementation by the Nop4 fragments of the growth defect conferred by Nop4 depletion, the YPH499 GAL::3xHA-NOP4 yeast strain was co-transformed with empty p415GPD-3xHA-GW and either empty p414GPD-3xFLAG-GW vector (EV) or p414GPD-3xFLAG-GW expressing the Nop4 fragments. For serial dilutions, 0.2\u2009mL of cells at an OD600 of 1 were resuspended in 1\u2009mL water, diluted 1/10 and spotted onto SG/R-Trp-Leu or SD-Trp-Leu. Cells were incubated at 30\u00b0C or 37\u00b0C for 3 days or at 23\u00b0C or 17\u00b0C for 5 days. Two biological replicates were performed starting with transformation of the plasmids into the yeast strain. For analysis in liquid medium of the complementation by the Nop4 fragments of the growth defect conferred by Nop4 depletion, the YPH499 GAL::3xHA-NOP4 yeast strain expressing one of the 3xFLAG-tagged Nop4 fragments was depleted of endogenous Nop4 by first growing cultures to mid-log phase (OD600 = 0.4\u20130.8) in SG/R-Trp-Leu at 30\u00b0C and then transferring the cultures to the non-permissive (SD-Trp-Leu) medium and growing at either 30\u00b0C or 23\u00b0C. The cells were maintained in mid-log phase (OD600 < 0.8) by dilution of the culture with fresh SD-Trp-Leu media. Growth was monitored by OD600 measurement for 24\u2009hr at 30\u00b0C or for 48\u2009hr at 23\u00b0C. Three biological replicates were performed starting with transformation of the plasmids into the yeast strain.\n\nFor analysis of the complementation of the growth defect conferred by Nop4 depletion by the Nop4 fragments expressed from pACT2, the YPH499 GAL::3xHA-NOP4 yeast strain was transformed with either pACT2 Nop4 WT, pACT2 Nop4 RRM 1\u20132 or pACT2 Nop4 RRM 3\u20134. For serial dilutions, 0.2\u2009mL of cells at an OD600 of 1 were resuspended in 1\u2009mL water, diluted 1/10 and spotted onto SG/R- Leu or SD- Leu. Cells were incubated at 30\u00b0C or 37\u00b0C for 3 days or at 23\u00b0C or 17\u00b0C for 5 days. Two biological replicates were performed starting with transformation of the plasmids into the yeast strain.\n\n### RNA and northern blot analysis\n\nFor analysis of the effect of the ANE syndrome mutation, the YPH499 GAL::3xHA-NOP4 yeast strain was transformed with EV or plasmids expressing either Nop4 WT or Nop4 L306P from the p414GPD-3xFLAG vector. The strain was depleted of endogenous Nop4 as described above. Cells (20\u2009mL) at an OD600 of ~0.5 were collected from each culture after 0 and 48\u2009hr of growth at 23\u00b0C. Total RNA was extracted as described in (Dunbar et al., 1997). For analysis of the mature rRNAs, 5\u2009\u03bcg of total RNA per sample was separated by electrophoresis on a 1% agarose gel. RNA was visualized by ethidium bromide staining, and the bands were quantified by densitometric analysis using ImageJ (Schneider et al., 2012). For northern blot analysis, 3\u2009\u03bcg of total RNA per sample was separated by electrophoresis on a 1% agarose/1.25% formaldehyde gel, transferred to a nylon membrane (Hybond-XL, GE Healthcare, Buckinghamshire, England) and detected by hybridization with radiolabelled oligonucleotide e (5\u00b4 \u2013 GGCCAGCAATTTCAAGT \u2013 3\u00b4) and radiolabelled oligonucleotide Scr1 (5\u2019 \u2013 CGTGTCTAGCCGCGAGGAAGGATTTGTTCC \u2013 3\u2019) as described in (Wehner and Baserga, 2002; Qiu et al., 2014). The 35S, 27S and 7S pre-rRNAs and the Scr1 RNA were quantified using a Biorad Personal Molecular Imager. The ratios of 27S or 7S to the 35S pre-rRNA and the ratios of the 35S, 27S or 7S to Scr1 were calculated. Four biological replicates were performed for each experiment. GraphPad PRISM was used to calculate the means of the ratios and plotted with error bars (SD). Significance compared to the WT control was determined using one-way ANOVA.\n\nFor analysis of the complementation by the Nop4 fragments of the pre-rRNA processing defect, the YPH499 GAL::3xHA-NOP4 yeast strain transformed with EV or expressing one of the 3xFLAG-tagged Nop4 fragments was depleted of endogenous Nop4 as described. Cells (20\u2009mL) at an OD600 of ~0.5 were collected from each culture after either 24\u2009hr of growth at 30\u00b0C or after 48\u2009hr of growth at 23\u00b0C. Total RNA was extracted as described in (Dunbar et al., 1997). For northern blot analysis, 3\u2009\u03bcg of total RNA per sample was separated by electrophoresis on a 1% agarose/1.25% formaldehyde gel, transferred to a nylon membrane (Hybond-XL, GE Healthcare, Buckinghamshire, England) and detected by hybridization with radiolabelled oligonucleotide probe e (5\u00b4 \u2013 GGCCAGCAATTTCAAGT \u2013 3\u00b4), which is complementary to ITS2 of the yeast pre-rRNA, and probe Scr1 (5\u00b4-CGTGTCTAGCCGCGAGGAAGGATTTGTTCC-3\u00b4), which is complementary to the RNA Scr1, as described in (Wehner and Baserga, 2002). The 7S, 27S and 35S pre-rRNA species were quantified on a Biorad Personal Molecular Imager, and the ratios of 7S, 27S or 35S to Scr1 were calculated. Three biological replicates were performed for each experiment. GraphPad PRISM was used to calculate the means of the ratios and plotted with error bars (SD). Significance compared to the EV control was determined using one-way ANOVA.\n\n### Yeast two-hybrid analysis\n\nFor Y2H analysis to determine the effect of the ANE syndrome mutation (L306P; Figure 3) on protein-protein interactions, a subset of the Nop4 interacting proteins identified in (McCann et al., 2015) were expressed from the Y2H bait vector (pAS2-1) and were co-transformed with either empty pACT2 vector, Nop4 WT or Nop4 L306P into the yeast strain PJ69-4\u03b1. Co-transformed yeast were serially diluted by resuspending 0.2\u2009mL of cells at an OD600 of 1 in 1\u2009mL water, diluting 1/10 and spotting onto medium selecting for the presence of both plasmids (SD-Leu-Trp) and medium selecting for Y2H interactions [SD-Leu-Trp-His + 6\u2009mM 3-Amino-1,2,4 triazole (3-AT)]. Cells were incubated at 30\u00b0C for 7 days. Two biological replicates of a subset of interacting proteins were performed starting with co-transformation of the bait and prey plasmids into the Y2H strain.\n\nFor Y2H analysis of Nop4 fragments (Figure 4), Nop4 WT and the Nop4 fragments were shuttled into the Y2H prey vector (pACT2) by Gateway (Invitrogen) recombination and individually transformed into the yeast strain PJ69-4a. The Nop4 interacting proteins identified in (McCann et al., 2015) were shuttled into the Y2H bait vector (pAS2-1) and transformed into the yeast strain PJ69-4\u03b1 as an array. All baits were mated against all preys in a semi-high-throughput Y2H matrix screen (de Folter and Immink, 2011). The mated yeast were transferred to SD-Leu-Trp plates to select for diploids bearing both the bait and prey vectors. Diploids were then transferred to the selective medium: SD-Leu-Trp-His + 6mM 3-AT. Growth on selective medium greater than that of the negative control after 2 weeks was indicative of an interacting bait-prey pair. Two biological replicates were performed starting with the transformation of the bait and prey plasmids into the Y2H strains.\n\n### Co-immunoprecipitations\n\nA subset of the Nop4 interacting proteins identified in (McCann et al., 2015) were expressed from p414GPD-3xFLAG-GW and were co-transformed with either p415GPD-3xHA-GW Nop4 WT or Nop4 L306P into the yeast strain YPH499 (MATa ura3-52 lys2-801 ade2-101 trp1-\u039463 his3-\u0394200 leu2-\u03941). The resulting transformed strains were grown in medium containing 2% dextrose and lacking leucine and tryptophan (SD-Leu-Trp) at 30\u00b0C. Negative control strains were only transformed with p415GPD-3xHA-GW clones and were grown in medium containing 2% dextrose and lacking leucine (SD-Leu) at 30\u00b0C. For each co-immunoprecipitation, 20\u2009mL of cells at an OD600 of ~0.5 was collected, washed with water and resuspended in NET2 (20\u2009mM Tris-HCl, pH 7.5, 150\u2009mM NaCl, 0.01% Nonidet P-40) with 1x HALT protease inhibitors (Thermo Fisher Scientific, Rockford, Illinois). Cells were lysed with 0.5-mm glass beads. The lysate was cleared by centrifugation at 15,000g for 10\u2009min at 4\u00b0C. Aliquots of 500 \u00b5L of lysate were incubated with \u03b1-FLAG beads (Sigma) for 1\u2009hr at 4\u00b0C. The beads were washed five times with NET2 and resuspended in 25 \u00b5L SDS loading dye. Immunoprecipitates were separated on 4\u201312% Bis-Tris PAGE and transferred to a PVDF membrane. Western blot analysis with \u03b1-HA (Abcam, Cambridge, Massachusetts) and \u03b1-FLAG-HRP (Sigma) was performed. The protein bands were quantified using ImageJ (Schneider et al., 2012) and the ratio of HA to FLAG was calculated. GraphPad PRISM was used to plot the means of the ratios with error bars (SD). Significance compared to the WT control for each interacting protein was determined using a t-test. Three biological replicates were performed.\n\n### Immunofluorescence\n\nFor analysis of the Nop4 fragment localization, the YPH499 GAL::3xHA-NOP4 yeast strain was transformed with either pACT2 Nop4 WT, pACT2 Nop4 RRM 1\u20132 or pACT2 Nop4 RRM 3\u20134 and endogenous Nop4 was depleted for 48\u2009hr at 23\u00b0C as described above. For immunofluorescence, 50\u2009mL of cells at an OD600 of ~0.5 was collected, washed with water, resuspended in Fixing buffer (100\u2009mM Sucrose, 5% paraformaldehyde) and incubated at room temperature for 45\u2009min. The cells were then washed three times with Buffer B (100\u2009mM K2HPO4 pH 7.5, 1.2\u2009M sorbitol), resupsended in 1\u2009ml of Spheroplasting buffer (100\u2009mM K2HPO4 pH 7.5, 1.2\u2009M sorbitol, 30\u2009mM \u03b2-mercaptoethanol) containing lyticase (Sigma) at 800\u2009U/mL and incubated for 8\u2009min at 30\u00b0C. The reaction was stopped by adding 5\u2009mL of ice-cold Buffer B. The yeast were washed once with ice-cold Buffer B, resuspended in 1\u2009ml of Buffer B and 500 \u00b5L were plated into each well of a 12-well plate containing a poly-D-lysine coated cover glass. Cells were incubated for 1\u2009hr at 4\u00b0C, washed once with Buffer B and permeabilized overnight in 70% ethanol at -20\u00b0C. Fixed and permeabilized cells incubated with mouse anti-HA.11 (BioLegend, San Diego, California) diluted 1:1000 for 90\u2009min at room temperature. The secondary antibody (Alexa Fluor 488 donkey anti-Mouse; Life Technologies, Carlsbad, California) was used at a dilution of 1:1000 and was incubated for 1\u2009hr at room temperature. Cover glasses were mounted with Prolong Gold containing DAPI (Life Technologies) and cells were imaged on a wide-field, epifluorescence microscope using a x100 oil-immersion objective (Carl Zeiss).\n\n### Protein expression and purification\n\nE.\u00a0coli codon-optimized cDNAs encoding the wild type (WT) and L351P mutant human RBM28 RRM3 (330-419) were obtained by gene synthesis (Genewiz, Inc.). The cDNAs were subcloned into pSMT3 with an N-terminal His6-SUMO tag. WT and L351P human RBM28 RRM3 domains were overexpressed in E. coli strain BL21-CodonPlus (DE3)-RIL (Agilent Technologies, Santa Clara, California) at 20 \u00b0C overnight after induction with 0.5\u2009mM IPTG. The cells were collected by centrifugation, and pellets were resuspended in lysis buffer (50\u2009mM Tris-HCl, pH 8.0, 500\u2009mM NaCl) and stored at \u221280 \u00b0C until use.\n\nCells expressing WT human RBM28 RRM3 domain were disrupted by sonication. The soluble fraction was applied to a Ni-NTA agarose column and thoroughly washed with lysis buffer containing 20\u2009mM imidazole. The target SUMO fusion protein was eluted with lysis buffer containing 400\u2009mM imidazole. The fusion protein was cleaved overnight with 0.2 mg of Ulp1 protease. The cleaved fusion protein sample was applied to a HiLoad 16/60 Superdex 75 column (GE Healthcare) equilibrated with lysis buffer containing 1\u2009mM Tris (2-carboxyethyl) phosphine hydrochloride (TCEP). The eluted fractions containing WT hRBM28 RRM3 protein were pooled and applied to a Ni-NTA agarose column again to remove released SUMO protein. The protein sample was dialyzed against a buffer containing 50\u2009mM Tris-HCl, pH 8.0, 100\u2009mM NaCl and 0.5\u2009mM TCEP and purified further using a HiTrap Q HR anion-exchange column (GE Healthcare). Bound proteins were eluted using a linear gradient from 0.05 to 1\u2009M NaCl in 50\u2009mM Tris-HCl, pH 8.0 and 0.5\u2009mM TCEP. Peak fractions containing WT hRBM28 RRM3 were pooled and concentrated.\n\nL351P mutant human RBM28 RRM3 domain was purified by the same procedure as WT protein up to the first Ni-NTA agarose column. The eluted SUMO fusion protein was cleaved overnight with Ulp1 protease in conjunction with dialysis into 50\u2009mM Tris-HCl, pH 8.0, 100\u2009mM NaCl and 0.5\u2009mM TCEP. The cleaved fusion protein sample was applied to a HiTrap Q HR anion-exchange column and eluted with a linear gradient from 0.1 to 1\u2009M NaCl in 50\u2009mM Tris-HCl, pH 8.0 and 0.5\u2009mM TCEP. The eluted fractions containing L351P hRBM28 RRM3 protein were pooled and reapplied to a Ni-NTA agarose column. The protein was concentrated and purified further using a HiLoad 16/60 Superdex 75 column equilibrated with lysis buffer containing 0.5\u2009mM TCEP. Two peaks of L351P hRBM28 RRM3 eluted from the Superdex 75 column. Because the peak eluting at 58.5\u2009ml contained many contaminating proteins, only the fractions containing the peak eluting at 72.2\u2009ml were pooled and concentrated.\n\n### Circular dichroism (CD) spectroscopy\n\nThe CD spectra of WT and L351P mutant human RBM28 RRM3 domains were measured on a JASCO J-810\u2009CD spectrometer at room temperature. For each sample (200\u2009\u03bcL in a 0.1 cm light-path cell), four scans were accumulated in the wavelength range of 190\u2013260 nm with a 0.2 nm step size. Protein samples were 100\u2009\u03bcg/mL in 20\u2009mM Na phosphate buffer, pH 7.0, 100\u2009mM NaCl and 0.2\u2009mM TCEP. The raw CD data were adjusted by subtracting a buffer blank. Four technical replicates were performed.\n\n### NMR measurement\n\n15N-/13C-labeled WT and L351P human RBM28 RRM3 domains were prepared as described above, except that E. coli cultures were grown in M9 medium containing appropriate isotopes. The protein samples for NMR experiments were 0.4\u2009mM in 20\u2009mM sodium phosphate buffer, pH 7.0, 100\u2009mM NaCl, 0.2\u2009mM TCEP and 10% (v/v) D2O. 15N-HSQC spectra were collected on a Varian Inova 60 MHz magnet installed with a cryo-probe at 298\u2009K. The data were processed and plotted using NMRPipe (Delaglio et al., 1995) and NMRViewJ (Johnson, 2004). Thirty-two technical replicates were performed.\n",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "d1ceada3-80ae-4544-9117-8cc1f9128f71",
+      "submission_id": "14663307-43f0-4256-bfd3-f9ef41eb9f15",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Timothy W Nilsen, Case Western Reserve University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.16381.020](https://doi.org/10.7554/eLife.16381.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The previous decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"The molecular basis for ANE syndrome revealed by the large ribosomal subunit processome interactome\" for consideration by eLife. Your article has been reviewed by three reviewers in addition to a Reviewing Editor, and James Manley was the Senior Editor. The decision was reached after consultation between the four reviewers. Based on these discussions, and the individual reviews below, we regret to inform you that your work cannot be considered further for publication in eLife.\n\nWhile all reviewers thought that the subject matter was significant, there was some disagreement regarding the overall quality of the work. In particular, two of the referees felt that the experiments did not go far enough in dissecting the molecular defect caused by the mutation. They also raised a number of technical points, most importantly the question of the effect of temperature. Even the more positive reviewer raised similar technical points. The reviewers concluded that there was insufficient enthusiasm for the work to warrant publication in eLife. Because eLife does not encourage major revision we are declining the paper.\n\nReviewer #1:\n\nIn this interesting paper the authors study the biochemical consequences of a missense mutation in the nucleolar protein RBM28 known to be causative for ANE syndrome. Most of the experiments are conducted on the yeast ortholog of RBM28, Nop4. They show that mutant Nop4 causes a growth defect in yeast traced down to impaired rRNA processing. They further show that the mutant protein fails to interact with a number of its binding partners. The mutation is in RRM3 of the protein. This domain previously thought to bind RNA is a protein-protein interaction site. Finally, they show that the Leu->Pro mutation disrupts the structural integrity of RRM3 The work is clearly presented and provides new insight into ANE syndrome. The quality and impact of the work make it suitable for eLife.\n\nReviewer #2:\n\nThe manuscript by McCann et al. entitled \"The Molecular Basis for ANE Syndrome Revealed by the Large Ribosomal Subunit Processome Interactions\" describes an experimental approach that uses modeling in budding yeast to probe the molecular defects that underlie ANE syndrome. In humans, this disease is caused by a L->P amino acid substitution in the RBM28 protein. The budding yeast orthologue of RBM28, Nop4, has a conserved leucine that is located in the analogous domain as the change detected in patients.\n\nAs RBM28 can replace the function of the essential Nop4 protein, the authors modeled the disease-causing amino acid substitution in the budding yeast Nop4 protein. The authors use a nice complement of functional studies coupled with dissection of the key interacting domain and finally structural studies. The study is fairly straightforward but does provide insight into what mechanisms might underline disease and also provides insight into key interactions required for proper large subunit assembly.\n\nThe authors make the surprising finding that RRM3 and 4 of Nop4 are sufficient to confer function and they seem to do so by mediating protein-protein interactions. One experimental issue is that Nop4 functions within the nucleolus and thus needs to be targeted there to function. A quick perusal of the literature shows no published information on how Nop4 enters the nucleus \u2013 which it must do to access the nucleolus. There are a number of predicted classical nuclear localization motifs and most are in the C-terminal domain of the protein. While this is not an issue for the two-hybrid system which presumably contains a nuclear targeting module, this could be an issue for the functional studies. The authors should really include localization as an aspect of their studies to validate their conclusions that the Rrm3-4 mediates the essential function of Nop4 and that Rrm1-2 is not sufficient to do so (see detailed comments below).\n\nWith the broad interactions examined, the use of the two-hybrid is quite reasonable; however, for at least some of the interactions, the authors should validate the loss of interaction with a biochemical approach. They could easily choose binding partners for which antibodies are available or employ commercially available TAP-tagged proteins.\n\nOne minor issue that should be clarified is the reference to the Leucine to Proline amino acid substation as a point mutation. While this change in the codons could easily occur due to a single point mutation in the DNA that changes a leucine codon to a proline codon (presumably this is what happens in the patients?) \u2013 it is the amino acid change that is the consequence of the point mutation that causes the functional change. The authors should merely keep this in mind in finalizing the text.\n\nOverall there are some relatively minor points that could enhance the impact of the studies but the experiments are nicely set up and the data presented support the conclusions drawn.\n\nSpecific Comments:\n\nFigure 1 presents the phenotype observed. Figure 1A presents a schematic that compares RBM28 with Nop4. Although the detailed amino acid sequences of these proteins are included as a supplemental figure, providing the sequence of amino acids immediately surrounding the conserved leucine would make the information presented in Figure 1A far more convincing that the leucine is located within a conserved domain \u2013 without forcing the reader to refer to the supplemental figure.\n\nFigure 3 employs two-hybrid screening to identify interactions that are lot or maintained with the L306P amino acid change. The approach is reasonable for the broad screening. However, the authors should validate at least a few of these differential interactions through a biochemical approach (co-immunoprecipitation being the logical approach). Such biochemistry would complement the rationale use of the two-hybrid analyses.\n\nFigure 5 assesses the domains of Nop4 required for function. The immunoblot shown in Figure 5A is very difficult to interpret. The RRM1-2 domain appears very degraded. The authors need to provide a different blot showing that at least some protein of the predicted size is generated. Arrows marking the correct bands (corresponding to the predicted size) would help. Addition of molecular weight markers would also help in this and other immunoblots shown. The immunoblot shown in Figure 5A does not really compare to the one shown in Figure 4B (albeit they are different constructs- one FLAG-tagged and one for two-hybrid).\n\nThe authors really do not comment on the temperature sensitive rescue of rRNA processing and growth by the Rrm3-4 fragment (Figure 5 and 6). The legend for Figure 6 does not mention the different temperatures. The authors need to provide some insight into why this rescue is temperature-dependent. Do they suspect that the domain may be less stable at higher temperatures? Some immunoblotting carried out from cells grown at the different temperatures might help to address this temperature-sensitive effect.\n\nThe other experimental issue that should be addressed for this analysis is the localization of the protein domains. These fragments appear to be FLAG-tagged so it should be straightforward to examine the localization of the protein domains and append an NLS if needed. Could the two-hybrid clones be used to test for function?\n\nIt would be nice to have a bit more information about how RBM28 rescues the yeast phenotype and whether the amino acid substitution in the human protein recapitulates the defects seen with the altered yeast protein.\n\nThe authors are now in a position to determine which interactions are critical for the function of Nop4. This point could be mentioned in the Discussion.\n\nReviewer #3:\n\nThe authors have taken the observation, by others, that a recessive mutation in RBM28, a human homologue of Nop4 of yeast, causes ribosomopathy, and expanded on it with reference to their recent very nice work on the Processosome (McCann et al. G&D). They show that when this mutation is transferred to the yeast gene, the formation of 25S rRNA is partially disrupted, (Figure 2) and that the interaction of Nop4 with a number of other proteins is reduced (Figure 3). These are interesting findings, but perhaps not surprising since the mutation causes substantial reduction of 60S ribosome synthesis in human cells. The rest of the paper is concerned with Nop4 and its fragments in yeast, where they conclude that only the C=terminal half of Nop4 is sufficient for growth, but only at 23 degrees. Quite similar experiments were reported by Sun & Woolford in 1997 (L611) that suggested all 4 RRMs were essential. But the difference is simply a matter of temperatures used for growth. Finally, (Figure 7) some protein structural measurements suggest that the L>P mutation disrupts the structure of RRM3 suggesting that leads to loss of interactions with other members of the processosome.\n\nI have a number of problems with the data, but overall I feel the authors have sold themselves short by not investigating just how the mutation affects 60S ribosome synthesis, which the yeast system is perfect for. Instead they have confined themselves to nibbling around the edges of a problem that they are in the perfect position to solve. While I am not in a position to critique Figure 7, again it seems to me that more could be done, e.g. the effects of mutation & temperature on structure and on interaction with other proteins (Figure 3).\n\nIn summary, the data presented are for the most part sound, but the conclusions contribute only marginally to deep analysis of the problem.\n\nReviewer #4:\n\nIn this manuscript McCann et al. investigate the molecular basis of ANE syndrome pathogenesis. ANE syndrome is caused by a mutation in the nucleolar protein RBM28 (L351P) which affects the LSU processome resulting in ribosome biogenesis defects. McCann et. al use yeast as a model to study the effect of ANE mutation on the structure and function (as a hub protein) using the homologous protein, Nop4p. The authors first validate the model system, demonstrate that the ANE mutation affects Nop4 \"hub\" function, investigate the molecular biology of the RRM3 and RRM4 domains of Nop4 and conclude with biophysical analyses demonstrating that the L351P mutation disrupts folding of the RRM3 domain. This is a very straightforward study employing basic yeast molecular genetics and complemented with some nice biophysical studies. The conclusions are warranted by the data. However, the work could benefit from some minor improvement, and some of the data analyses are questionable.\n\nFigure 1.\n\nThe abbreviation EV is not explained/mentioned in the figure legend and text. Figure 1C is missing quantification. This is important because Nousbeck et. al 2008 reported that decreased expression of mutant RBM28 in ANE patient cells. Also, the presence of additional bands in the anti-FLAG and anti-Mpp10 blots are not explained.\n\nThe growth defect for the Nop4 L306P expressing strain is described as 'severe' as compared to the EV expressing strain (for 1D and 1E). However, the EV expressing strain is essentially \"dead' (in 1D). Thus, the proper comparison should be of the mutant to the WT. This renders the growth defect 'moderate'.\n\nThe growth assays in Figure 1E have some issues: a) the time points are randomly selected (more time points are clustered around 20 hrs). b) the data could be quantified, i.e. doubling times should be calculated. c) While the EV expressing strain is dead in the dilution spot assays, it seems to have grown to in the liquid media. This can be explained as a consequence of residual Nop4 after gene shutoff.\n\nFigure 1\u2014figure supplement 3: While it is clear that the authors did identify the correct yeast leucine residue to mutate, the use of a simple 1 to 1 protein alignment also gives the impression of someone having done the minimal effort. Additional alignments and phylogenetic analyses are simple to perform, and would lend more credibility to the choice of which leucine to mutate.\n\nFigure 2.\n\nThere are some significant problems with this figure, especially as it compares with Figure 6. In general, it appears that Figure 2 and Figure 6 were performed by different people at different times each having different standards for quality and data interpretation.\n\nIn the text, the reference to Figure 2A in the first paragraph of the subsection \u201cThe ANE syndrome mutation causes pre-rRNA processing defects in yeast\u201d is confusing. The text would seem to indicate that the figure shows that \"\u2026the mature 25S rRNA and the 27S and 7S pre-rRNA precursors are severely reduced in yeast depleted of Nop4\". However, Figure 2A only shows the processing schema.\n\nFigure 2B top panel (gel) uses Ethidium bromide to quantify the 25S and 18S rRNA. The method is not terribly sensitive for quantitation. To be honest, I cannot discern the differences between the wild-type and mutant in either the top or bottom panels of Figure 2B that are graphed in panel C. Additionally, in the 48 hr EV lane, there is so little rRNA (because the cells are dead) that it borders on disingenuous to claim any quantitation in Panel C. Compare these gels/autorads to those shown in Figure 6: these ones are much less informative.\n\nUnlike Figure 6A, Figure 2B is missing a loading control.\n\nThe claim that Nop4 L306P results in 'severe reduction in 27S and 7S levels\u2026' (subsection \u201cThe ANE syndrome mutation causes pre-rRNA processing defects in yeast\u201d, last paragraph) is not supported by the quantification in 2C. The fold change as compared to WT is moderate.\n\nThe claim that the EV control had most severe reduction in 25S/18S ratio and also 27S and 7S levels (subsection \u201cThe ANE syndrome mutation causes pre-rRNA processing defects in yeast\u201d) again borders on disingenuous, because this mutant is dead, or at the very least, in the process of dying.\n\nThe statistical comparisons in Figure 2C are different than those in Figure 6B. Here, comparisons are performed with respect to wild-type (which is correct). In 6B, the comparisons are with respect to empty vector (which is wrong, again because EV is dead).\n\nFigure 3.\n\nIt is unclear why such a small panel of bait reporters were assayed here, especially in light of the fact that the lab possesses 23 bait reporters already (as shown in Figure 4). Again, were Figure 3 and Figure 4 done by different people? Assaying the entire panel would illuminate the role of Nop4 in the interactome and the consequences of the mutation.\n\nIncluding the Nop4 interactome map of as an additional panel (from McCann, K. L et.al 2015. Genes Dev) might be helpful in illuminating which partners, and thus which pathways in ribosome biogenesis, may be affected by this mutation.\n\nFigure 4.\n\nFigure 4B. Western lot analysis should be accompanied with a quantification graph. Also, compare this to Figure 5A. Why are they so different?\n\nFigure 4C. Since the mutation associated with ANE is in RRM3, one would like to see a construct expressing RRM1, 2 and 4 only. This would be a great negative control.\n\nThe protocol notes that the growth time for the Y2H assay in 4C was 2 weeks. Those familiar with Y2H assays might be concerned about the high false positive rate when these assays are performed in the cold for such a long time.\n\nCo-immunoprecipitation assays would serve as orthogonal test of the protein -protein interactions.\n\nFigure 5.\n\nFigure 5A, lanes 2 and 3 have a lot of background. Additionally, the figure lacks quantification.\n\nAgain the growth assays in 5C and 5D a) contain random time points (time points not equally spaced) b) missing quantification of doubling time and c) the EV control is dead in the dilution spot assays, however it grows in liquid media.\n\nIn Figure 5C the scale on Y-axis is misleading. It seems that the log scale on Y-axis starts at 'zero' because the origin is not labeled. The next tick upward on the Y-axis is also not labeled.\n\nFigure 6.\n\nAgain, Figure 6A top panel (gel) uses Ethidium bromide to quantify the 25S and 18S rRNA. However, here, we can actually see a difference at 30\u00b0C.\n\nIn 6B the significance of the ratios 25S/18S, 35S/Scr1, 27S/Scr1 and 7S/Scr1 is calculated as compared to the EV control. However, EV control strain is dead. As noted above, the proper comparison should be to WT.\n\nThere is no way to compare the quantitative graphs in Figure 2C with Figure 6B because Figure 2B lacks a loading control. This results in an apples to oranges comparison that only serves to confuse the reader. For example, the claim that RRM 3-4 significantly restored the pre-rRNA processing defects at 23\u00b0C is supported by the data in 6B as there is a discernable difference in the ratios. However, the similar analyses shown in Figure 2C indicate that the differences are lesser, but the claim is that the effects are greater. I am totally confused.\n\nFigure 7.\n\nThis is the biophysical characterization of the mutant, but it is done with the RRM3 fragment of the human protein. While I do not have a problem with the switch from yeast-based studies to the human protein, an explanation for why would be informative. (Indeed, one might ask, if the human protein can complement deletion of Nop4 in yeast, why weren't these studies performed using the human protein to begin with?). Figure 7B (NMR data) requires more explanation to illuminate the differences between the WT and the mutant protein structure. As written, the information content is minimal.\n\nFigure 7C needs labels: a) WT and mutant protein and b) location of the mutation L351P.\n\nReviewer #4 (Additional data files and statistical comments):\n\nAs noted in the long form review, quantitative analyses are lacking in some places, and the statistical analyses performed in Figures 2 and 6 need to be aligned.\n",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8010fc06-68df-467e-bf5f-9bc674460132",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C1",
+      "claim": "ANE syndrome is a ribosomopathy caused by a mutation in an RNA recognition motif of RBM28.",
+      "claim_type": "EXPLICIT",
+      "source": "ANE syndrome is a ribosomopathy caused by a mutation in an RNA recognition motif of RBM28, a nucleolar protein conserved to yeast (Nop4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is supported by citation to prior work (Nousbeck et al., 2008) establishing ANE syndrome as a ribosomopathy.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "0ee776a0-143c-4a21-83d4-49dbd96356e4",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C2",
+      "claim": "RBM28 is a nucleolar protein conserved to yeast (Nop4).",
+      "claim_type": "EXPLICIT",
+      "source": "ANE syndrome is a ribosomopathy caused by a mutation in an RNA recognition motif of RBM28, a nucleolar protein conserved to yeast (Nop4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and reflects established knowledge about the conservation of RBM28.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "a19930ac-a8b5-4862-9a85-ccbdbddb1fdb",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C3",
+      "claim": "Patients with ANE syndrome have fewer mature ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "While patients with ANE syndrome have fewer mature ribosomes, it is unclear how this mutation disrupts ribosome assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and is supported by citation to Nousbeck et al., 2008 elsewhere in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "6583fce2-e976-42ab-a6f0-96ab50dea0b2",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C4",
+      "claim": "Nop4 is a hub protein in the nucleolar large subunit (LSU) processome interactome.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we found that Nop4 is a hub protein in the nucleolar large subunit (LSU) processome interactome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and refers to the authors' recent work (McCann et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "c8186d87-af4d-44f6-a9b1-ff45a1f4bcdb",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C5",
+      "claim": "The ANE syndrome mutation in yeast Nop4 (L306P) confers growth defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we use yeast as a model system and show that the mutation confers growth and pre-rRNA processing defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data shown in Figure 1D and 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "81d7c0a0-7a57-42da-b43f-f6857aab59dc",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C6",
+      "claim": "The ANE syndrome mutation in yeast Nop4 (L306P) confers pre-rRNA processing defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we use yeast as a model system and show that the mutation confers growth and pre-rRNA processing defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "026f2a58-7e7f-4c92-afa2-b60190e17dc9",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C7",
+      "claim": "The ANE syndrome mutation disrupts Nop4's hub function by abrogating several of Nop4's protein-protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we demonstrate that the ANE syndrome mutation disrupts Nop4's hub function by abrogating several of Nop4's protein-protein interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by Y2H and co-immunoprecipitation data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "c210ac41-89c1-4821-9480-9c6a4e07166f",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C8",
+      "claim": "The ANE syndrome mutation in RRM3 of human RBM28 disrupts domain folding as demonstrated by circular dichroism.",
+      "claim_type": "EXPLICIT",
+      "source": "Circular dichroism and NMR demonstrate that the ANE syndrome mutation in RRM3 of human RBM28 disrupts domain folding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by CD data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "97d7e034-8cb0-4455-8995-92e84fa7b231",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C9",
+      "claim": "The ANE syndrome mutation in RRM3 of human RBM28 disrupts domain folding as demonstrated by NMR.",
+      "claim_type": "EXPLICIT",
+      "source": "Circular dichroism and NMR demonstrate that the ANE syndrome mutation in RRM3 of human RBM28 disrupts domain folding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by NMR data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "2abe7b2e-88e6-4656-afbb-27fb7c957132",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C10",
+      "claim": "The ANE syndrome mutation generates defective protein folding which abrogates protein-protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the ANE syndrome mutation generates defective protein folding which abrogates protein-protein interactions and causes faulty pre-LSU rRNA processing, thus revealing one aspect of the molecular basis of this human disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion stated in the abstract, integrating findings from structural and functional studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "53ad2ab5-9b41-4678-9e25-b6d781a6c8f7",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C11",
+      "claim": "The ANE syndrome mutation causes faulty pre-LSU rRNA processing.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the ANE syndrome mutation generates defective protein folding which abrogates protein-protein interactions and causes faulty pre-LSU rRNA processing, thus revealing one aspect of the molecular basis of this human disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by pre-rRNA processing data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "0ea2b42f-8ace-421b-a3fa-1b453cd8a323",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C12",
+      "claim": "Ribosome biogenesis requires the coordinated action of all three RNA polymerases.",
+      "claim_type": "EXPLICIT",
+      "source": "The fundamental cellular process of ribosome assembly requires the coordinated action of all three RNA polymerases, over 200 biogenesis factors, and a number of small nucleolar RNAs (Thomson et al., 2013; Woolford and Baserga, 2013; Fern\u00e1ndez-Pevida et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "d125f2ef-4ecc-45af-b486-ad2939504d22",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C13",
+      "claim": "Ribosome biogenesis requires over 200 biogenesis factors.",
+      "claim_type": "EXPLICIT",
+      "source": "The fundamental cellular process of ribosome assembly requires the coordinated action of all three RNA polymerases, over 200 biogenesis factors, and a number of small nucleolar RNAs (Thomson et al., 2013; Woolford and Baserga, 2013; Fern\u00e1ndez-Pevida et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "eb50db36-e734-4f4f-b74b-34a67e7c3e66",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C14",
+      "claim": "Ribosome biogenesis requires a number of small nucleolar RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The fundamental cellular process of ribosome assembly requires the coordinated action of all three RNA polymerases, over 200 biogenesis factors, and a number of small nucleolar RNAs (Thomson et al., 2013; Woolford and Baserga, 2013; Fern\u00e1ndez-Pevida et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "3d8809c4-faf7-416b-a2bc-5fa8b2000216",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C15",
+      "claim": "In yeast, ribosome biogenesis initiates in the nucleolus with the transcription of the 35S polycistronic pre-ribosomal RNA precursor by RNA polymerase I.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, ribosome biogenesis initiates in the nucleolus with the transcription of the 35S polycistronic pre-ribosomal RNA (rRNA) precursor by RNA polymerase I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and reflects established knowledge about yeast ribosome biogenesis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "a2077116-4634-46b5-a5ed-02a87110c520",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C16",
+      "claim": "The 35S pre-rRNA undergoes cleavage and modification events to give rise to the mature 18S, 5.8S and 25S rRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The 35S pre-rRNA undergoes a number of cleavage and modification events to give rise to the mature 18S, 5.8S and 25S rRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and reflects established knowledge about pre-rRNA processing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "3c211872-40f5-48d3-ba69-242eeff3b5b1",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C17",
+      "claim": "Mutations that partially disrupt ribosome assembly or function can lead to disease in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations that partially disrupt ribosome assembly or function are often deleterious and can lead to disease in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and reflects established knowledge about ribosomopathies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "28bac179-2e59-4a9e-9d92-0dae9df1fdd3",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C18",
+      "claim": "Diseases of ribosome biogenesis are called ribosomopathies.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these diseases of ribosome biogenesis are called ribosomopathies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and reflects established terminology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "db951e86-e364-43d4-b418-970aad873486",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C19",
+      "claim": "Ribosomopathies are caused by mutations in proteins that function in all stages of ribosome assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribosomopathies are caused by mutations in proteins that function in all stages of ribosome assembly (McCann and Baserga, 2013; Armistead and Triggs-Raine, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to review literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "5cf31795-7426-45fe-a10b-b9540b2dac80",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C20",
+      "claim": "A homozygous missense mutation in RBM28 causes ANE syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "A homozygous missense mutation in the nucleolar protein RBM28 causes the ribosomopathy, alopecia, neurological defects and endocrinopathy (ANE) syndrome (Nousbeck et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citation to Nousbeck et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "8b4e0428-4b94-4359-b553-54516216f41a",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C21",
+      "claim": "Five affected children of a consanguineous kindred displayed degrees of baldness, mental retardation, motor deterioration, and reduced pituitary gland function in their second decade of life.",
+      "claim_type": "EXPLICIT",
+      "source": "Five affected children of a consanguineous kindred displayed degrees of baldness, mental retardation, motor deterioration, and reduced pituitary gland function in their second decade of life (Nousbeck et al., 2008; Warshauer et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to clinical reports.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "cfb2d1e9-b1dc-4a68-ae4f-018a3f8875ff",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C22",
+      "claim": "The ANE syndrome mutation segregated in the family in an autosomal recessive manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutation segregated in the family in an autosomal recessive manner and was mapped to a single leucine to proline amino acid substitution at position 351 (L351P) of RBM28.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citation to Nousbeck et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "d87f03b6-4e68-49fd-8dcf-4b0f52b4e83d",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C23",
+      "claim": "The ANE syndrome mutation was mapped to a single leucine to proline amino acid substitution at position 351 (L351P) of RBM28.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutation segregated in the family in an autosomal recessive manner and was mapped to a single leucine to proline amino acid substitution at position 351 (L351P) of RBM28.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citation to Nousbeck et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "99e4df21-ad02-489a-9868-d0071d034f1c",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C24",
+      "claim": "The L351P residue resides in the first \u03b1-helix of RBM28's third RNA recognition motif (RRM3).",
+      "claim_type": "EXPLICIT",
+      "source": "This residue resides in the first \u03b1-helix of its third RNA recognition motif (RRM3; Figure 1A, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Introduction and supported by structural information shown in Figure 1A and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "35fa528d-e8e0-407d-9142-3718a30152fe",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C25",
+      "claim": "ANE syndrome was classified as a ribosomopathy because RBM28 is localized to the nucleolus.",
+      "claim_type": "EXPLICIT",
+      "source": "ANE syndrome was classified as a ribosomopathy because RBM28 is localized to the nucleolus and because patient fibroblasts showed reduced numbers of ribosomes (Damianov et al., 2006; Nousbeck et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "13632d3c-1b33-4b0d-8537-10c3e1633c7b",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C26",
+      "claim": "ANE syndrome was classified as a ribosomopathy because patient fibroblasts showed reduced numbers of ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "ANE syndrome was classified as a ribosomopathy because RBM28 is localized to the nucleolus and because patient fibroblasts showed reduced numbers of ribosomes (Damianov et al., 2006; Nousbeck et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "c437354d-c49d-4353-b8e6-d6696f93d3cb",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C27",
+      "claim": "The L351P mutation is predicted to disrupt the first \u03b1-helix of RRM3.",
+      "claim_type": "EXPLICIT",
+      "source": "While the L351P mutation is predicted to disrupt the first \u03b1-helix of RRM3 and thereby impair RBM28 function, it is not known how this single amino acid substitution disrupts the normal function of RBM28 in the nucleolus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and is based on structural predictions.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "e3e6c5e0-a493-406f-b950-5a46662ef2b5",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C28",
+      "claim": "Nop4 is the yeast ortholog of RBM28.",
+      "claim_type": "EXPLICIT",
+      "source": "Nop4, the yeast ortholog of RBM28, is required for assembly of the large ribosomal subunit (LSU; Berg\u00e8s et al., 1994; Sun and Woolford, 1994; Nousbeck et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "cbb5e4f7-68cd-4fb0-b41c-9b718859b585",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C29",
+      "claim": "Nop4 is required for assembly of the large ribosomal subunit (LSU).",
+      "claim_type": "EXPLICIT",
+      "source": "Nop4, the yeast ortholog of RBM28, is required for assembly of the large ribosomal subunit (LSU; Berg\u00e8s et al., 1994; Sun and Woolford, 1994; Nousbeck et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "9b343f7e-00a4-4e79-b849-1865514ab4c3",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C30",
+      "claim": "The LSU processome interactome revealed that Nop4 functions as a hub protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the LSU processome interactome revealed that Nop4 functions as a hub protein, interacting with many more proteins than average within the LSU processome (McCann et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citation to the authors' prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "a8083606-e7c8-4a14-bc3a-b0ac0a7d4a22",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C31",
+      "claim": "Nop4 interacts with many more proteins than average within the LSU processome.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, the LSU processome interactome revealed that Nop4 functions as a hub protein, interacting with many more proteins than average within the LSU processome (McCann et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Introduction and supported by citation to the authors' prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "ca4cd5ff-ddee-4eb4-b2a1-720b6141a69f",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C39",
+      "claim": "Nop4 L306P has a doubling time of 7.8 hours compared to 4.8 hours for Nop4 WT in liquid medium at 23\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to growth on solid medium, Nop4 L306P exhibited a moderate growth defect in liquid culture, doubling every 7.8 hr, compared to WT, which doubled every 4.8 hr; however, the defect was not as severe as that observed with the EV control, which doubled every 20.5 hr (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "e6780d63-c769-4723-93be-3c5d85170f13",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C40",
+      "claim": "The mature 25S rRNA and the 27S and 7S pre-rRNA precursors are severely reduced in yeast depleted of Nop4.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, it has been shown that the mature 25S rRNA and the 27S and 7S pre-rRNA precursors are severely reduced in yeast depleted of Nop4 (Figure 2A; Berg\u00e8s et al., 1994; Sun and Woolford, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "1fa33d71-e290-43c9-93ad-fbdd33469e33",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C41",
+      "claim": "Nop4 L306P confers a statistically significant reduction in the 25S/18S rRNA ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Nop4 L306P conferred a moderate growth defect and a moderate, but statistically significant, reduction in the 25S/18S rRNA ratio (Figure 2C), consistent with reduced 25S levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2C with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "1966e128-6f0a-4176-a9f9-70cff0fc5680",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C43",
+      "claim": "Depletion of Nop4 results in a severe reduction of 27S and 7S levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Depletion of Nop4 (EV) resulted in a severe reduction of 27S and 7S levels, with a concomitant decrease in the 27S/35S, 7S/35S, 27S/Scr1 and 7S/Scr1 ratios, indicative of an ITS1 processing defect, as has been previously observed (Figure 2B,C; Berg\u00e8s et al., 1994; Sun and Woolford, 1994).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2B,C, with support from prior citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "55a88781-eab6-41f6-87ec-4656568f4c22",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C44",
+      "claim": "The Nop4 L306P mutant displays a statistically significant ITS1 processing defect as indicated by reduced 27S/35S, 7S/35S and 7S/Scr1 ratios.",
+      "claim_type": "EXPLICIT",
+      "source": "The Nop4 L306P mutant showed an intermediate growth defect and also displayed an intermediate, but statistically significant, ITS1 processing defect as indicated by reduced 27S/35S, 7S/35S and 7S/Scr1 ratios (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 2B,C with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "79f30fa7-740d-4587-badc-b5a7853f54db",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C45",
+      "claim": "The ANE mutation in Nop4 (L306P) abrogates interaction with Mak5 by Y2H.",
+      "claim_type": "EXPLICIT",
+      "source": "While all 5 bait proteins interacted with Nop4 WT, as indicated by growth on SD-Leu-Trp-His + 6 mM 3-AT, Mak5, Nop4, and Nsa2 did not interact with Nop4 L306P, as no growth was observed (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in the Y2H assay in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "b01cd2ac-a84e-4d84-9eeb-31713982c685",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C46",
+      "claim": "The ANE mutation in Nop4 (L306P) abrogates interaction with Nop4 itself by Y2H.",
+      "claim_type": "EXPLICIT",
+      "source": "While all 5 bait proteins interacted with Nop4 WT, as indicated by growth on SD-Leu-Trp-His + 6 mM 3-AT, Mak5, Nop4, and Nsa2 did not interact with Nop4 L306P, as no growth was observed (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in the Y2H assay in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "5e825194-dafc-4646-8396-c51bee676f49",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C47",
+      "claim": "The ANE mutation in Nop4 (L306P) abrogates interaction with Nsa2 by Y2H.",
+      "claim_type": "EXPLICIT",
+      "source": "While all 5 bait proteins interacted with Nop4 WT, as indicated by growth on SD-Leu-Trp-His + 6 mM 3-AT, Mak5, Nop4, and Nsa2 did not interact with Nop4 L306P, as no growth was observed (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in the Y2H assay in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "0262f4c0-f724-48bc-9d08-5d8aa6c0fdf8",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C48",
+      "claim": "Noc2 interacts with Nop4 L306P by Y2H, but growth is reduced compared to WT.",
+      "claim_type": "EXPLICIT",
+      "source": "Noc2 did interact with Nop4 L306P, but growth was reduced compared to WT.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in the Y2H assay in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "d35bbe22-c2af-4913-9de3-cd1bc2b7e56c",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C49",
+      "claim": "Dbp10 interaction with Nop4 is unaffected by the L306P mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Dbp10 interaction with Nop4 was unaffected by the L306P mutation (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in the Y2H assay in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "a008fd92-a68c-475e-9826-d85a9a14b9f4",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C50",
+      "claim": "3xHA-Nop4 L306P co-purifies significantly less efficiently than 3xHA-Nop4 WT with all interacting partners assayed except Dbp10.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, 3xHA-Nop4 L306P co-purified significantly less efficiently than 3xHA-Nop4 WT with all interacting partners assayed, except Dbp10, as was observed by Y2H.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in the co-immunoprecipitation data in Figure 3D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "f7920043-6e9a-48cc-bb91-dfb0bc2fa5df",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C51",
+      "claim": "The ANE syndrome mutation disrupts or reduces a subset of Nop4 protein-protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the ANE syndrome mutation disrupts or reduces a subset of Nop4 protein-protein interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by Y2H and co-IP data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "e29ba97d-9291-4174-99ee-e18835b1fa28",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C52",
+      "claim": "RRM domains typically bind RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Although RRM domains typically bind RNA, there are several published examples of RRMs that bind proteins rather than RNA (Fribourg et al., 2003; Lau et al., 2003; Selenko et al., 2003; Bono et al., 2004; Kadlec et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and reflects established knowledge about RRM domains.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "ee6ca742-e67a-48ac-8e96-b7c2b73c87c0",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C53",
+      "claim": "There are several published examples of RRMs that bind proteins rather than RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Although RRM domains typically bind RNA, there are several published examples of RRMs that bind proteins rather than RNA (Fribourg et al., 2003; Lau et al., 2003; Selenko et al., 2003; Bono et al., 2004; Kadlec et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "9f405eaa-6955-47cc-b200-51d9ea1a99a3",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C54",
+      "claim": "Nop4 RRM 3-4 mediates protein-protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Nop4 RRM 3\u20134 mediated the protein-protein interactions observed in the LSU processome interactome using a directed Y2H assay.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in the Y2H data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "4ce0d4ec-6541-44d5-b5d1-329a44524a23",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C55",
+      "claim": "Nop4 RRM 1-2 did not interact with any of the Nop4 interacting proteins by Y2H.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, Nop4 RRM 1\u20132 did not interact with any of the Nop4 interacting proteins.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in the Y2H data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "4d656611-d479-4fb8-bce1-4f65994b8b63",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C56",
+      "claim": "Nop4 RRM 3-4 interacted with the majority of the defined interacting set of proteins, similar to the full-length Nop4 WT.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Nop4 RRM 3\u20134 interacted with the majority of the defined interacting set of proteins, similar to the full-length Nop4 WT (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in the Y2H data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "75f933b8-07a2-44fa-8d7e-fc712e40d56c",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C57",
+      "claim": "Nop4 RRMs 3 and 4 are necessary and sufficient for protein-protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Nop4 RRMs 3 and 4 are necessary and sufficient for these protein-protein interactions and are thereby likely to mediate Nop4's function as a hub protein in the LSU processome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and supported by Y2H data in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "05a89604-3047-4b1f-99d4-acbb2878b317",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C58",
+      "claim": "Nop4 RRMs 3 and 4 are likely to mediate Nop4's function as a hub protein in the LSU processome.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Nop4 RRMs 3 and 4 are necessary and sufficient for these protein-protein interactions and are thereby likely to mediate Nop4's function as a hub protein in the LSU processome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and is an inference based on the Y2H data in Figure 4C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "0ddd1547-2c11-46aa-bd5e-1ec3ca987755",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C59",
+      "claim": "Nop4 RRM 3-4 is sufficient to complement the growth defect observed upon Nop4 depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Nop4 RRM 3\u20134 is also sufficient to complement the growth defect observed upon Nop4 depletion.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in the growth assays in Figure 5B,C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "c3bb5517-8c9a-4bcd-8aad-362505f2db9a",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C60",
+      "claim": "Nop4 RRM 3-4 complemented the growth defect at 23\u00b0C and 17\u00b0C and partially complemented at 30\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Nop4 RRM 3\u20134 complemented the growth defect at 23\u00b0C and 17\u00b0C and partially complemented at 30\u00b0C (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in the growth assay in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "970b7d1c-ef3a-49f0-aa30-3c8a1b4ff67c",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C61",
+      "claim": "Nop4 RRM 1-2 did not complement the growth defect at any temperature tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Like EV, Nop4 RRM 1\u20132 did not complement the growth defect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in the growth assay in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "d98089cd-1b41-4bf0-a21a-e60f17b8ba1b",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C62",
+      "claim": "The failure of Nop4 RRM 1-2 to complement the growth defect is not due to aberrant localization of the protein fragment.",
+      "claim_type": "EXPLICIT",
+      "source": "The failure of Nop4 RRM 1\u20132 to complement the growth defect is not due to aberrant localization of the protein fragment. Nop4 RRM 1\u20132 also fails to complement when expressed from the yeast two-hybrid vector, pACT2, which ensures targeting of the fragment to the nucleus (Figure 5\u2014figure supplement 1A,B), suggesting that this domain is not essential for Nop4 function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in the immunofluorescence and growth data in Figure 5\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "88551545-7651-48fd-bd15-07273af700d2",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C63",
+      "claim": "The essential function of Nop4 is mediated through RRMs 3 and 4.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the ability of Nop4 RRM 3\u20134 to complement the growth defect in both solid and liquid medium suggests that the essential function of Nop4 is mediated through RRMs 3 and 4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and is an inference based on the complementation data in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "90283653-22f0-455d-9668-06530766b84a",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C64",
+      "claim": "Expression of Nop4 RRM 3-4 is sufficient to partially restore pre-rRNA processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of Nop4 RRM 3\u20134 is sufficient to partially restore pre-rRNA processing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in the pre-rRNA processing data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "97bc43f2-ccd2-4b3e-915b-beef3024f6ae",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C65",
+      "claim": "Nop4 RRM 3-4 significantly rescued the 25S/18S ratio compared to EV at 23\u00b0C, but not at 30\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Nop4 RRM 3\u20134 was sufficient to significantly rescue the 25S/18S ratio compared to EV at 23\u00b0C, but not at 30\u00b0C (Figure 6B), consistent with a restoration of 25S levels at 23\u00b0C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 6B with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "b7bccede-01ca-4888-b45d-fee60ed6240b",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C66",
+      "claim": "Expression of Nop4 RRM 3-4, but not Nop4 RRM 1-2, significantly restored the levels of the 27S and 7S intermediates at 23\u00b0C but failed to rescue at 30\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, expression of Nop4 RRM 3\u20134, but not Nop4 RRM 1\u20132, significantly restored the levels of the 27S and 7S intermediates at 23\u00b0C but failed to rescue at 30\u00b0C (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 6B with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "baa44c38-2df6-4c5e-a230-9c0e72c665a9",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C67",
+      "claim": "The essential function of Nop4 in ribosome assembly is mediated through the protein binding RRMs, RRM3 and RRM4.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, pre-rRNA processing parallels the observed growth complementation and suggests that the essential function of Nop4 in ribosome assembly is mediated through the protein binding RRMs, RRM3 and RRM4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and is an inference based on the complementation and pre-rRNA processing data in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "90c71193-04ae-4d00-a5d4-16770994c0cf",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C68",
+      "claim": "The L351P mutation disrupts the backbone structure of the RBM28 RRM3 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the L351P mutation disrupts the backbone structure of the RBM28 RRM3 domain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown by CD data in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "8ffe68ca-bccb-4518-a9a6-f4ef6112f597",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C69",
+      "claim": "The CD spectra of WT and L351P RBM28 RRM3 showed notable differences in ellipticities [\u03b8] at 208, 215 and 222 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "The CD spectra of WT and L351P RBM28 RRM3 showed notable differences in ellipticities [\u03b8] at 208, 215 and 222 nm (Figure 7A), indicating that the amino acid substitution reduced \u03b1-helical and \u03b2-sheet content.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "995b760b-8a5c-4b9f-ae0b-87b81db40ca0",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C70",
+      "claim": "The amino acid substitution L351P reduced \u03b1-helical and \u03b2-sheet content in RBM28 RRM3.",
+      "claim_type": "EXPLICIT",
+      "source": "The CD spectra of WT and L351P RBM28 RRM3 showed notable differences in ellipticities [\u03b8] at 208, 215 and 222 nm (Figure 7A), indicating that the amino acid substitution reduced \u03b1-helical and \u03b2-sheet content.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and is an interpretation of the CD data in Figure 7A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "f58bbc18-b945-4d7c-9847-4b2fc39ab8de",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C71",
+      "claim": "The CD spectrum of the L351P mutant protein with a minimum only at ~200 nm indicated the presence of random coil.",
+      "claim_type": "EXPLICIT",
+      "source": "The CD spectrum of the L351P mutant protein with a minimum only at ~200 nm indicated the presence of random coil.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and is an interpretation of the CD data in Figure 7A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "37eda5ec-76fb-4d1f-8a01-dcbd9f9106e6",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C72",
+      "claim": "15N-HSQC of WT RBM28 RRM3 showed well dispersed resonances, indicating the presence of both \u03b1-helices and \u03b2-strands.",
+      "claim_type": "EXPLICIT",
+      "source": "15N-HSQC of WT RBM28 RRM3 showed well dispersed resonances (Figure 7B), indicating the presence of both \u03b1-helices and \u03b2-strands, as expected for an RRM domain(Nagai et al., 1990).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 7B, with support from citation to Nagai et al., 1990.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "0025b7b8-d905-4ad1-bee8-f4770ad1b9e7",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C73",
+      "claim": "The majority of resonances in the spectrum of L351P ANE syndrome mutant RRM3 were clustered around 8.0~8.5 ppm in the proton dimension, demonstrating that the mutant protein backbone is disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the majority of resonances in the spectrum of L351P ANE syndrome mutant RRM3 were clustered around 8.0~8.5 ppm in the proton dimension, demonstrating that the mutant protein backbone is disordered.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "01324aa4-7611-4cc0-baf5-afb02184f755",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C74",
+      "claim": "L351 is buried within the core of the RBM28 RRM3 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "A homology model of the human RBM28 RRM3, based on an NMR structure of mouse RBM28 RRM3, indicates that L351 is buried within the core of the domain (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and shown in the homology model in Figure 7C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "c966509d-d2de-4aee-8bae-7478cc22c6d9",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C75",
+      "claim": "Mutation of L351 to proline would be expected to disrupt helix \u03b11 and the overall tertiary structure of RBM28 RRM3.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation to proline would be expected to disrupt helix \u03b11 and the overall tertiary structure of this RRM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section and is an inference based on the structural model and known properties of proline.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "c3cf1719-668e-43ed-968f-f99c0947ae79",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C76",
+      "claim": "The molecular pathogenesis of ANE syndrome results from disrupted RRM3 protein structure that reduces its function as a hub protein in the LSU processome.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined that the molecular pathogenesis of ANE syndrome (L351P in the nucleolar protein, RBM28) results from disrupted RRM3 protein structure that reduces its function as a hub protein in the LSU processome and causes defects in pre-rRNA processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and is the main conclusion integrating all findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "743223ae-5af8-42ed-a0e6-f68a9a2f397c",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C77",
+      "claim": "Introducing the ANE syndrome mutation into RRM3 of the yeast ortholog, Nop4 (L306P), causes growth defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Introducing the ANE syndrome mutation into RRM3 of the yeast ortholog, Nop4 (L306P), causes growth and pre-rRNA processing defects, as well as reduced association with interacting protein partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and is supported by data in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "ef66b45b-7219-499c-ac00-3318659fd619",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C78",
+      "claim": "Introducing the ANE syndrome mutation into RRM3 of the yeast ortholog, Nop4 (L306P), causes pre-rRNA processing defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Introducing the ANE syndrome mutation into RRM3 of the yeast ortholog, Nop4 (L306P), causes growth and pre-rRNA processing defects, as well as reduced association with interacting protein partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and is supported by data in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "a9d4d5bb-7cff-43ef-bd8c-1ef27bd721bd",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C79",
+      "claim": "Introducing the ANE syndrome mutation into RRM3 of the yeast ortholog, Nop4 (L306P), causes reduced association with interacting protein partners.",
+      "claim_type": "EXPLICIT",
+      "source": "Introducing the ANE syndrome mutation into RRM3 of the yeast ortholog, Nop4 (L306P), causes growth and pre-rRNA processing defects, as well as reduced association with interacting protein partners.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and is supported by data in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "3582332c-a21b-4856-beb6-8ba5935d1c08",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C80",
+      "claim": "RRMs 3 and 4 of Nop4 alone are necessary and sufficient for Nop4 protein-protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "RRMs 3 and 4 of Nop4 alone are necessary and sufficient for Nop4 protein-protein interactions and for yeast growth and pre-rRNA processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and is supported by data in Figures 4, 5, and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "9e818390-95d9-4500-b0ab-d8cfe80421b8",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C81",
+      "claim": "RRMs 3 and 4 of Nop4 alone are necessary and sufficient for yeast growth.",
+      "claim_type": "EXPLICIT",
+      "source": "RRMs 3 and 4 of Nop4 alone are necessary and sufficient for Nop4 protein-protein interactions and for yeast growth and pre-rRNA processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and is supported by data in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "a712316b-5820-474d-b092-bad53d6143e4",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C82",
+      "claim": "RRMs 3 and 4 of Nop4 alone are necessary and sufficient for pre-rRNA processing.",
+      "claim_type": "EXPLICIT",
+      "source": "RRMs 3 and 4 of Nop4 alone are necessary and sufficient for Nop4 protein-protein interactions and for yeast growth and pre-rRNA processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and is supported by data in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "ca3b9c65-601b-4108-9b13-822f93612ff1",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C83",
+      "claim": "Biophysical methods indicate that RRM3 containing the ANE syndrome mutation is unfolded.",
+      "claim_type": "EXPLICIT",
+      "source": "Biophysical methods indicate that RRM3 containing the ANE syndrome mutation is unfolded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and is supported by CD and NMR data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "c23e371a-996d-49c9-a511-3f33c51c9a68",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C84",
+      "claim": "ANE syndrome is a ribosomopathy with a molecular defect in nucleolar steps of ribosome biogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results provide evidence that ANE syndrome is a ribosomopathy with a molecular defect in nucleolar steps of ribosome biogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and is the main conclusion of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "0dbc0866-037a-44ec-8ac3-26f4c0a652de",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C85",
+      "claim": "The finding that an essential function of Nop4 is to mediate protein binding was unexpected.",
+      "claim_type": "EXPLICIT",
+      "source": "The finding that an essential function of Nop4 is to mediate protein binding was unexpected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and reflects the authors' interpretation of their findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "c6ad772a-a8b7-459c-a55e-cad08e6b01a8",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C86",
+      "claim": "Nop4 has been cross-linked to pre-rRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Nop4 has been cross-linked to pre-rRNA (Berg\u00e8s et al., 1994; Sun and Woolford, 1994; Granneman et al., 2011), leading to the expectation that its 4 RRMs would be essential for RNA binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "64a543d6-cbf6-4a15-9374-7d9bf6088175",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C87",
+      "claim": "The C-terminal half of Nop4 (RRMs 3 and 4) mediates protein-protein interactions and hub protein function in the LSU processome.",
+      "claim_type": "EXPLICIT",
+      "source": "We show by Y2H analysis that the C-terminal half of Nop4 (RRMs 3 and 4) mediates protein-protein interactions and hub protein function in the LSU processome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and is supported by Y2H data in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "9f45bb0c-baab-40c4-82f0-1c6216939cba",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C88",
+      "claim": "The C-terminal half of Nop4 (RRMs 3 and 4) is necessary and sufficient to complement the growth and pre-rRNA processing defects observed upon depletion of endogenous Nop4.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, this half of Nop4 is necessary and sufficient to complement the growth and pre-rRNA processing defects observed upon depletion of endogenous Nop4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and is supported by data in Figures 5 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "b50e6b9c-4ef4-42ec-983c-17296aa6d9cf",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C89",
+      "claim": "ANE syndrome is likely a disease of altered protein interaction rather than of RNA binding.",
+      "claim_type": "EXPLICIT",
+      "source": "As the ANE syndrome mutation occurs in RRM3 and disrupts Nop4 protein-protein interactions, ANE syndrome is therefore likely a disease of altered protein interaction rather than of RNA binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and is an inference based on the findings that the mutation disrupts protein interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "20c26e46-c4f3-48d7-a685-5352486fb094",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C90",
+      "claim": "Nop4 binds RNA in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Nop4 binds RNA in vitro (Sun and Woolford, 1997), co-immunoprecipitates the 27S and 7S pre-rRNAs and crosslinks to the 25S within the pre-rRNA in vivo (Granneman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citation to Sun and Woolford, 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "455f1316-fa48-4e62-a8ce-8333fb4975ce",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C91",
+      "claim": "Nop4 co-immunoprecipitates the 27S and 7S pre-rRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Nop4 binds RNA in vitro (Sun and Woolford, 1997), co-immunoprecipitates the 27S and 7S pre-rRNAs and crosslinks to the 25S within the pre-rRNA in vivo (Granneman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citation to Granneman et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "eaf62a60-a087-4ee2-948f-1474eded9df6",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C92",
+      "claim": "Nop4 crosslinks to the 25S within the pre-rRNA in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Nop4 binds RNA in vitro (Sun and Woolford, 1997), co-immunoprecipitates the 27S and 7S pre-rRNAs and crosslinks to the 25S within the pre-rRNA in vivo (Granneman et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citation to Granneman et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "9657d180-d64c-4729-8808-32f0ac45e060",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C93",
+      "claim": "All 4 RRMs of Nop4 are important for Nop4 function as mutations in any of the RRMs disrupt growth and LSU assembly at 37\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, all 4 RRMs are important for Nop4 function as mutations in any of the RRMs disrupt growth and LSU assembly at 37\u00b0C (Sun and Woolford, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citation to Sun and Woolford, 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "afa4b3be-b0f8-4815-ae7a-45e4cc435b6f",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C94",
+      "claim": "RRMs 1 and 2 of Nop4 may bind the pre-rRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Although RRMs 1 and 2 are not required for Nop4's hub protein function or sufficient for growth, they may bind the pre-rRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and is speculation based on the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "0db09c74-5bbb-4919-8627-0fcd693279d2",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C95",
+      "claim": "The possibility that RRMs 3 and 4 may also bind RNA is not precluded.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while RRMs 3 and 4 mediate protein binding, the possibility that they may also bind RNA is not precluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and is speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "f3d4b022-7aac-48b3-81ed-7d7f414d48b5",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C96",
+      "claim": "Several examples of RRMs mediating interactions with other proteins have been identified including in the U2AF35-U2AF65, the U2AF65-SF1, the Snu17-Bud13, and the Y14-Mago complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Several examples of RRMs mediating interactions with other proteins have been identified including in the U2AF35-U2AF65, the U2AF65-SF1, the Snu17-Bud13, and the Y14-Mago complexes (Kielkopf et al., 2001; Fribourg et al., 2003; Lau et al., 2003; Selenko et al., 2003; Tripsianes et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "3956a7f7-58fe-4c5b-b276-2cbf41d530a9",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C97",
+      "claim": "An RRM is comprised of a 4-stranded \u03b2-sheet, which forms the primary RNA binding interface, and 2 \u03b1-helices.",
+      "claim_type": "EXPLICIT",
+      "source": "An RRM is comprised of a 4-stranded \u03b2-sheet, which forms the primary RNA binding interface, and 2 \u03b1-helices (Maris et al., 2005; Cl\u00e9ry et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citations to prior work describing RRM structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "31428504-280a-409d-950c-a1d6410ff501",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C98",
+      "claim": "The \u03b1-helices of the RRM often mediate interaction between protein pairs, leaving the \u03b2-sheet accessible for RNA binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b1-helices of the RRM often mediate interaction between protein pairs, leaving the \u03b2-sheet accessible for RNA binding (Kielkopf et al., 2001; Selenko et al., 2003; Tripsianes et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "b51a8d94-0804-4814-a0a4-db5906cb000a",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C99",
+      "claim": "In the case of the Y14-Mago complex, the interaction is through the \u03b2-sheet, which precludes RNA binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, in the case of the Y14-Mago complex, the interaction is through the \u03b2-sheet, which precludes RNA binding (Fribourg et al., 2003; Lau et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "62343b37-41d0-4b16-bc60-41c006cd3478",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C100",
+      "claim": "RRMs can serve as oligomerization domains.",
+      "claim_type": "EXPLICIT",
+      "source": "RRMs also can serve as oligomerization domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and reflects established knowledge about RRM function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "9a273d45-c1f9-45ec-848e-a43a833b329c",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C101",
+      "claim": "In the case of Human antigen R (HuR), the third RRM promotes dimerization through its \u03b1-helices.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of Human antigen R (HuR), the third RRM promotes dimerization through its \u03b1-helices (Scheiba et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citation to Scheiba et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "73625722-dcc9-4ba3-8af9-b60a89115d45",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C102",
+      "claim": "RRMs 3 and 4 of Nop4 may mediate protein binding and hub function through more than one of its structural motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "These examples highlight the possibility that RRMs 3 and 4 of Nop4 may mediate protein binding and hub function through more than one of its structural motifs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and is speculation based on the examples provided.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "6d4f4505-9950-4206-9090-63be5633275d",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C103",
+      "claim": "The ANE mutation lies in an \u03b1-helix and the mutation disrupts not only the \u03b1-helix, but unfolds the RRM tertiary structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The ANE mutation lies in an \u03b1-helix and the mutation disrupts not only the \u03b1-helix, but unfolds the RRM tertiary structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and is supported by the structural data in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "abb7a014-b45e-4fd1-8150-66718f8171a7",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C104",
+      "claim": "A subset of Nop4 interactions may be mediated by unstructured peptide elements in RRM3 or by the RRM4 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the mutation abrogates some but not all protein-protein interactions, a subset of Nop4 interactions may be mediated by unstructured peptide elements in RRM3 or by the RRM4 domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and is speculation based on the observation that not all interactions are disrupted.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "d5558490-0b72-48cf-855e-22bfc5322780",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C105",
+      "claim": "Fibroblasts from patients with ANE syndrome have ribosome levels reduced to approximately 60% of controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Fibroblasts from patients with ANE syndrome have ribosome levels reduced to approximately 60% of controls (Nousbeck et al., 2008), consistent with the modest defects in ribosome biogenesis that we can now associate with the ANE syndrome mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and supported by citation to Nousbeck et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "31c1a096-9763-4277-b472-cc5a62e4c34f",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C106",
+      "claim": "The ANE syndrome mutation confers reduced growth and mild pre-rRNA processing defects when compared to the Nop4 null in the yeast model system.",
+      "claim_type": "EXPLICIT",
+      "source": "In the yeast model system, the mutation confers reduced growth and mild pre-rRNA processing defects when compared to the Nop4 null (EV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and is supported by data in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "182c0f56-29e8-4189-8be4-c533404f374e",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C107",
+      "claim": "The ANE syndrome mutation is a hypomorphic allele.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the ANE syndrome mutation is a hypomorphic allele, consistent with its autosomal recessive inheritance (Nousbeck et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and is an inference based on the observed phenotypes and inheritance pattern.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "4c37312b-b4ae-49d5-a8fc-eadb456a782f",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C108",
+      "claim": "The hypomorphism of the ANE syndrome mutation may, in part, explain how the mutation is compatible with life.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypomorphism may, in part, explain how the ANE syndrome mutation is compatible with life, as the presence of the mutation leads to a partially functional RBM28 protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and is speculation based on the hypomorphic nature of the mutation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "91cebe92-64c9-4763-a995-722c3ed885fd",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C109",
+      "claim": "The presence of the ANE syndrome mutation leads to a partially functional RBM28 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypomorphism may, in part, explain how the ANE syndrome mutation is compatible with life, as the presence of the mutation leads to a partially functional RBM28 protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Discussion and is an inference based on the observed partial complementation in yeast.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "6ae61e53-5630-431a-ab15-4944de2b0e47",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C110",
+      "claim": "Human RBM28 can complement the growth defect in yeast when its ortholog, Nop4, is depleted.",
+      "claim_type": "EXPLICIT",
+      "source": "Human RBM28 can complement the growth defect in the yeast, Saccharomyces cerevisiae, when its ortholog, the essential Nop4 protein, is depleted (Figure 1\u2014figure supplement 2; Kachroo et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and supported by data in Figure 1\u2014figure supplement 2 and citation to Kachroo et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "0ff00071-0004-48d3-9a02-4043c86796f7",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C111",
+      "claim": "Over their entire length, the amino acid sequences of Nop4 and RBM28 are ~26% identical and 34% similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Over their entire length, the amino acid sequences of Nop4 and RBM28 are ~26% identical and 34% similar, and both contain four RRMs (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the Results section and is based on sequence alignment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "4d35e4eb-edcc-404c-95ed-28842a57d998",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "claim_id": "C112",
+      "claim": "Nop4 interacts with 23 large subunit assembly factors with high confidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Table 1. Nop4 interacts with 23 large subunit assembly factors with high confidence. The Nop4 interacting proteins were identified by yeast two-hybrid and were assigned a confidence score in (McCann et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in Table 1 and supported by citation to McCann et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "56d9f89a-39e9-470f-bd72-cc3de1d8efd2",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ANE syndrome is a ribosomopathy caused by a homozygous L351P mutation in RBM28's RRM3 domain. Five affected children displayed baldness, mental retardation, motor deterioration, and reduced pituitary function, with patient fibroblasts showing reduced ribosome numbers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C20-C26 establish ANE syndrome as a ribosomopathy with well-documented clinical features and genetic basis, supported by citations to Nousbeck et al., 2008. The mutation location in RRM3 (C23, C24) is confirmed by structural data in Figure 1A. These are established facts from prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "5272c080-dca8-4b5d-8e8f-a15b0cdb99cd",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Nop4, the yeast ortholog of RBM28, is required for LSU assembly and functions as a hub protein in the LSU processome, interacting with 23 large subunit assembly factors with high confidence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31, C4, and C112 establish Nop4's role and hub function, supported by citations to prior work (Berg\u00e8s et al., 1994; Sun and Woolford, 1994; McCann et al., 2015) and data in Table 1. The hub protein designation is based on the authors' previous interactome study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "81db40e0-947a-40ff-a683-49aff539c52d",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The ANE syndrome mutation (L306P) in yeast Nop4 causes moderate growth defects, with a doubling time of 7.8 hours compared to 4.8 hours for wild-type at 23\u00b0C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C39, and C77 are directly supported by experimental data in Figures 1D and 1E showing growth defects on solid and liquid media at multiple temperatures. Statistical analysis and multiple biological replicates strengthen the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "6c9aa8a2-24eb-4690-b64b-032ce2c46ad1",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The ANE syndrome mutation (L306P) in yeast Nop4 causes statistically significant pre-rRNA processing defects, with reduced 25S/18S ratios and reduced 27S/35S, 7S/35S, and 7S/Scr1 ratios indicative of ITS1 processing defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C40-C44, and C78 are supported by northern blot and ethidium bromide staining data in Figure 2B,C with statistical analysis (one-way ANOVA). Four biological replicates were performed. The defects are intermediate between wild-type and null, consistent with the growth phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "8940f942-07aa-4027-8e98-647784121bc4",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The ANE syndrome mutation (L306P) disrupts Nop4's hub function by abrogating or reducing protein-protein interactions with Mak5, Nop4 itself, Nsa2, and Noc2, while leaving Dbp10 interaction unaffected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C45-C51, and C79 are supported by both Y2H data (Figure 3C) and co-immunoprecipitation experiments (Figure 3D,E) with statistical analysis. The selective disruption of interactions (some but not all) is demonstrated by multiple orthogonal methods with biological replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "6e40f0a7-e1b7-4c39-8a20-27b12c9d0895",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Nop4 RRMs 3 and 4 are necessary and sufficient for protein-protein interactions and hub protein function, while RRMs 1 and 2 do not mediate these interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58, C80, and C87 are supported by Y2H data in Figure 4C showing that RRM 3-4 interacts with the majority of Nop4's partners while RRM 1-2 does not. Two biological replicates were performed. The conclusion that RRM 3-4 mediates hub function is a reasonable inference from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "83934809-7d14-4abb-99bb-5cdca3283d74",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Nop4 RRM 3-4 is sufficient to complement the growth defect caused by Nop4 depletion at 23\u00b0C and 17\u00b0C, while RRM 1-2 is not, suggesting the essential function of Nop4 is mediated through RRMs 3 and 4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63, C81, and C88 are supported by growth complementation data on solid medium (Figure 5B) and in liquid culture (Figure 5C,D) at multiple temperatures. The failure of RRM 1-2 is not due to mislocalization (Figure 5\u2014figure supplement 1A,B). Multiple biological replicates strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "54d448b3-42f5-4f0a-bb3c-47c648e17348",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Expression of Nop4 RRM 3-4 is sufficient to partially restore pre-rRNA processing at 23\u00b0C, significantly rescuing 25S/18S, 27S, and 7S levels, suggesting the essential function in ribosome assembly is mediated through RRMs 3 and 4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 and C82 are supported by northern blot and ethidium bromide staining data in Figure 6A,B with statistical analysis (one-way ANOVA). The rescue parallels growth complementation. Three biological replicates were performed. The temperature-dependent rescue is consistent with the growth data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "26214892-8bcd-4dbc-9bd9-ceb6a0bad576",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The ANE syndrome mutation (L351P) in human RBM28 RRM3 disrupts domain folding as demonstrated by circular dichroism, showing reduced \u03b1-helical and \u03b2-sheet content and increased random coil.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C68-C71, and C83 are supported by CD spectroscopy data in Figure 7A showing notable differences in ellipticities at 208, 215, and 222 nm. Four technical replicates were performed. The interpretation of reduced secondary structure is standard for CD analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "0eae7d89-48d2-4713-bda9-b0e847e146a9",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The ANE syndrome mutation (L351P) in human RBM28 RRM3 disrupts domain folding as demonstrated by NMR, with mutant protein showing clustered resonances indicative of a disordered backbone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C72-C73, and C83 are supported by 15N-HSQC NMR data in Figure 7B. Wild-type shows well-dispersed resonances characteristic of folded RRM domains, while L351P shows clustering around 8.0-8.5 ppm indicating disorder. Thirty-two technical replicates were performed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "cb443780-5835-4d75-bc84-39291cbc1003",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "L351 is buried within the core of RBM28 RRM3, and mutation to proline would be expected to disrupt helix \u03b11 and overall tertiary structure based on a homology model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 are supported by the homology model shown in Figure 7C based on mouse RBM28 RRM3 structure (90% sequence identity). The prediction that proline would disrupt the helix is based on established structural principles. The model provides structural context for the experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "8c4f0c64-d760-4ef4-afe5-424626330ae3",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The molecular pathogenesis of ANE syndrome results from defective protein folding in RRM3 that abrogates protein-protein interactions, reduces hub protein function, and causes faulty pre-rRNA processing, establishing ANE syndrome as a disease of altered protein interaction rather than RNA binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11, C76, C84, and C89 represent the main conclusions integrating structural data (Figure 7), interaction data (Figure 3), and functional data (Figures 1-2, 5-6). The conclusion is well-supported by converging evidence from multiple experimental approaches. The inference that this is a protein interaction disease is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "06eb2ee4-609c-4bf4-812d-ac2aac496cfa",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The ANE syndrome mutation is a hypomorphic allele that confers reduced growth and mild pre-rRNA processing defects compared to null, with patient fibroblasts showing ~60% of control ribosome levels, which may explain compatibility with life through partial RBM28 function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C109 integrate patient data (C105, cited from Nousbeck et al., 2008) with yeast model data (C106, Figures 1-2) to conclude the mutation is hypomorphic (C107). The speculation about compatibility with life (C108-C109) is reasonable given the partial function observed. The autosomal recessive inheritance supports hypomorphism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "065c2cb2-5d53-4d52-9997-713158e00c91",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Human RBM28 can complement yeast Nop4 depletion, with the proteins sharing ~26% identity and 34% similarity over their entire length and both containing four RRMs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110-C111 are supported by complementation data in Figure 1\u2014figure supplement 2 and sequence alignment data in Figure 1A. The conservation justifies using yeast as a model system. Citation to Kachroo et al., 2015 provides additional support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "4b9e688d-9052-42d6-b327-32c9fecd5f5d",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Ribosome biogenesis requires coordinated action of three RNA polymerases, over 200 biogenesis factors, and small nucleolar RNAs. In yeast, the 35S pre-rRNA undergoes cleavage and modification to produce mature rRNAs. Mutations disrupting ribosome assembly can cause ribosomopathies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C19 provide established background knowledge about ribosome biogenesis and ribosomopathies, supported by citations to review literature (Thomson et al., 2013; Woolford and Baserga, 2013; Fern\u00e1ndez-Pevida et al., 2015; McCann and Baserga, 2013; Armistead and Triggs-Raine, 2014). These are well-established facts in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "196c2c51-8d88-48bf-af21-59e8f9df2c08",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "RRM domains typically bind RNA but can also mediate protein-protein interactions through \u03b1-helices or \u03b2-sheets, and can serve as oligomerization domains, as demonstrated in several protein complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53, C96-C101 provide established knowledge about RRM structure and function, supported by multiple citations to structural studies (Fribourg et al., 2003; Lau et al., 2003; Selenko et al., 2003; Bono et al., 2004; Kadlec et al., 2004; Kielkopf et al., 2001; Maris et al., 2005; Cl\u00e9ry et al., 2008; Tripsianes et al., 2014; Scheiba et al., 2014). This contextualizes the findings about Nop4 RRM function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "72575b63-1b7b-4372-ba52-5e7580faaf31",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Nop4 has been cross-linked to pre-rRNA, binds RNA in vitro, co-immunoprecipitates 27S and 7S pre-rRNAs, and all 4 RRMs are important for function as mutations in any RRM disrupt growth and LSU assembly at 37\u00b0C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86, C90-C93 cite prior work (Berg\u00e8s et al., 1994; Sun and Woolford, 1994, 1997; Granneman et al., 2011) establishing Nop4 as an RNA-binding protein. This provides important context that Nop4 likely has both RNA-binding and protein-binding functions, though the current study focuses on protein interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "8992691c-85ac-4a41-a0d7-cda1c014dc8a",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The finding that protein binding is an essential function of Nop4 was unexpected given prior RNA-binding data. RRMs 1-2 may bind pre-rRNA, and RRMs 3-4 may also bind RNA in addition to proteins. The mechanism of protein binding may involve multiple structural motifs, with some interactions potentially mediated by unstructured elements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C27, C85, C94-C95, C102, and C104 are largely speculative (marked as SPECULATION or INFERENCE in evidence_type). While the speculation is reasonable given the data, these claims represent hypotheses for future testing rather than demonstrated results. The unexpected nature of the findings (C85) is an interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    },
+    {
+      "id": "556f6f39-8547-4f19-b764-7914ae4b67d6",
+      "content_id": "da1912e1-12bd-4b00-b126-bf1e77123305",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The ANE mutation lies in an \u03b1-helix and disrupts not only the \u03b1-helix but unfolds the entire RRM tertiary structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C103 is supported by the structural data in Figure 7 showing complete unfolding of the domain by both CD and NMR. This is a key finding that the mutation has more severe structural consequences than initially predicted (disruption of just the \u03b1-helix).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:25:02.972690Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8010fc06-68df-467e-bf5f-9bc674460132",
+      "result_id": "56d9f89a-39e9-470f-bd72-cc3de1d8efd2"
+    },
+    {
+      "claim_id": "0ee776a0-143c-4a21-83d4-49dbd96356e4",
+      "result_id": "56d9f89a-39e9-470f-bd72-cc3de1d8efd2"
+    },
+    {
+      "claim_id": "a19930ac-a8b5-4862-9a85-ccbdbddb1fdb",
+      "result_id": "56d9f89a-39e9-470f-bd72-cc3de1d8efd2"
+    },
+    {
+      "claim_id": "5cf31795-7426-45fe-a10b-b9540b2dac80",
+      "result_id": "56d9f89a-39e9-470f-bd72-cc3de1d8efd2"
+    },
+    {
+      "claim_id": "8b4e0428-4b94-4359-b553-54516216f41a",
+      "result_id": "56d9f89a-39e9-470f-bd72-cc3de1d8efd2"
+    },
+    {
+      "claim_id": "cfb2d1e9-b1dc-4a68-ae4f-018a3f8875ff",
+      "result_id": "56d9f89a-39e9-470f-bd72-cc3de1d8efd2"
+    },
+    {
+      "claim_id": "d87f03b6-4e68-49fd-8dcf-4b0f52b4e83d",
+      "result_id": "56d9f89a-39e9-470f-bd72-cc3de1d8efd2"
+    },
+    {
+      "claim_id": "99e4df21-ad02-489a-9868-d0071d034f1c",
+      "result_id": "56d9f89a-39e9-470f-bd72-cc3de1d8efd2"
+    },
+    {
+      "claim_id": "35fa528d-e8e0-407d-9142-3718a30152fe",
+      "result_id": "56d9f89a-39e9-470f-bd72-cc3de1d8efd2"
+    },
+    {
+      "claim_id": "13632d3c-1b33-4b0d-8537-10c3e1633c7b",
+      "result_id": "56d9f89a-39e9-470f-bd72-cc3de1d8efd2"
+    },
+    {
+      "claim_id": "e3e6c5e0-a493-406f-b950-5a46662ef2b5",
+      "result_id": "5272c080-dca8-4b5d-8e8f-a15b0cdb99cd"
+    },
+    {
+      "claim_id": "cbb5e4f7-68cd-4fb0-b41c-9b718859b585",
+      "result_id": "5272c080-dca8-4b5d-8e8f-a15b0cdb99cd"
+    },
+    {
+      "claim_id": "9b343f7e-00a4-4e79-b849-1865514ab4c3",
+      "result_id": "5272c080-dca8-4b5d-8e8f-a15b0cdb99cd"
+    },
+    {
+      "claim_id": "a8083606-e7c8-4a14-bc3a-b0ac0a7d4a22",
+      "result_id": "5272c080-dca8-4b5d-8e8f-a15b0cdb99cd"
+    },
+    {
+      "claim_id": "6583fce2-e976-42ab-a6f0-96ab50dea0b2",
+      "result_id": "5272c080-dca8-4b5d-8e8f-a15b0cdb99cd"
+    },
+    {
+      "claim_id": "4d35e4eb-edcc-404c-95ed-28842a57d998",
+      "result_id": "5272c080-dca8-4b5d-8e8f-a15b0cdb99cd"
+    },
+    {
+      "claim_id": "c8186d87-af4d-44f6-a9b1-ff45a1f4bcdb",
+      "result_id": "81db40e0-947a-40ff-a683-49aff539c52d"
+    },
+    {
+      "claim_id": "ca4cd5ff-ddee-4eb4-b2a1-720b6141a69f",
+      "result_id": "81db40e0-947a-40ff-a683-49aff539c52d"
+    },
+    {
+      "claim_id": "743223ae-5af8-42ed-a0e6-f68a9a2f397c",
+      "result_id": "81db40e0-947a-40ff-a683-49aff539c52d"
+    },
+    {
+      "claim_id": "81d7c0a0-7a57-42da-b43f-f6857aab59dc",
+      "result_id": "6c9aa8a2-24eb-4690-b64b-032ce2c46ad1"
+    },
+    {
+      "claim_id": "e6780d63-c769-4723-93be-3c5d85170f13",
+      "result_id": "6c9aa8a2-24eb-4690-b64b-032ce2c46ad1"
+    },
+    {
+      "claim_id": "1fa33d71-e290-43c9-93ad-fbdd33469e33",
+      "result_id": "6c9aa8a2-24eb-4690-b64b-032ce2c46ad1"
+    },
+    {
+      "claim_id": "1966e128-6f0a-4176-a9f9-70cff0fc5680",
+      "result_id": "6c9aa8a2-24eb-4690-b64b-032ce2c46ad1"
+    },
+    {
+      "claim_id": "55a88781-eab6-41f6-87ec-4656568f4c22",
+      "result_id": "6c9aa8a2-24eb-4690-b64b-032ce2c46ad1"
+    },
+    {
+      "claim_id": "ef66b45b-7219-499c-ac00-3318659fd619",
+      "result_id": "6c9aa8a2-24eb-4690-b64b-032ce2c46ad1"
+    },
+    {
+      "claim_id": "026f2a58-7e7f-4c92-afa2-b60190e17dc9",
+      "result_id": "8940f942-07aa-4027-8e98-647784121bc4"
+    },
+    {
+      "claim_id": "79f30fa7-740d-4587-badc-b5a7853f54db",
+      "result_id": "8940f942-07aa-4027-8e98-647784121bc4"
+    },
+    {
+      "claim_id": "b01cd2ac-a84e-4d84-9eeb-31713982c685",
+      "result_id": "8940f942-07aa-4027-8e98-647784121bc4"
+    },
+    {
+      "claim_id": "5e825194-dafc-4646-8396-c51bee676f49",
+      "result_id": "8940f942-07aa-4027-8e98-647784121bc4"
+    },
+    {
+      "claim_id": "0262f4c0-f724-48bc-9d08-5d8aa6c0fdf8",
+      "result_id": "8940f942-07aa-4027-8e98-647784121bc4"
+    },
+    {
+      "claim_id": "d35bbe22-c2af-4913-9de3-cd1bc2b7e56c",
+      "result_id": "8940f942-07aa-4027-8e98-647784121bc4"
+    },
+    {
+      "claim_id": "a008fd92-a68c-475e-9826-d85a9a14b9f4",
+      "result_id": "8940f942-07aa-4027-8e98-647784121bc4"
+    },
+    {
+      "claim_id": "f7920043-6e9a-48cc-bb91-dfb0bc2fa5df",
+      "result_id": "8940f942-07aa-4027-8e98-647784121bc4"
+    },
+    {
+      "claim_id": "a9d4d5bb-7cff-43ef-bd8c-1ef27bd721bd",
+      "result_id": "8940f942-07aa-4027-8e98-647784121bc4"
+    },
+    {
+      "claim_id": "9f405eaa-6955-47cc-b200-51d9ea1a99a3",
+      "result_id": "6e40f0a7-e1b7-4c39-8a20-27b12c9d0895"
+    },
+    {
+      "claim_id": "4ce0d4ec-6541-44d5-b5d1-329a44524a23",
+      "result_id": "6e40f0a7-e1b7-4c39-8a20-27b12c9d0895"
+    },
+    {
+      "claim_id": "4d656611-d479-4fb8-bce1-4f65994b8b63",
+      "result_id": "6e40f0a7-e1b7-4c39-8a20-27b12c9d0895"
+    },
+    {
+      "claim_id": "75f933b8-07a2-44fa-8d7e-fc712e40d56c",
+      "result_id": "6e40f0a7-e1b7-4c39-8a20-27b12c9d0895"
+    },
+    {
+      "claim_id": "05a89604-3047-4b1f-99d4-acbb2878b317",
+      "result_id": "6e40f0a7-e1b7-4c39-8a20-27b12c9d0895"
+    },
+    {
+      "claim_id": "3582332c-a21b-4856-beb6-8ba5935d1c08",
+      "result_id": "6e40f0a7-e1b7-4c39-8a20-27b12c9d0895"
+    },
+    {
+      "claim_id": "64a543d6-cbf6-4a15-9374-7d9bf6088175",
+      "result_id": "6e40f0a7-e1b7-4c39-8a20-27b12c9d0895"
+    },
+    {
+      "claim_id": "0ddd1547-2c11-46aa-bd5e-1ec3ca987755",
+      "result_id": "83934809-7d14-4abb-99bb-5cdca3283d74"
+    },
+    {
+      "claim_id": "c3bb5517-8c9a-4bcd-8aad-362505f2db9a",
+      "result_id": "83934809-7d14-4abb-99bb-5cdca3283d74"
+    },
+    {
+      "claim_id": "970b7d1c-ef3a-49f0-aa30-3c8a1b4ff67c",
+      "result_id": "83934809-7d14-4abb-99bb-5cdca3283d74"
+    },
+    {
+      "claim_id": "d98089cd-1b41-4bf0-a21a-e60f17b8ba1b",
+      "result_id": "83934809-7d14-4abb-99bb-5cdca3283d74"
+    },
+    {
+      "claim_id": "88551545-7651-48fd-bd15-07273af700d2",
+      "result_id": "83934809-7d14-4abb-99bb-5cdca3283d74"
+    },
+    {
+      "claim_id": "9e818390-95d9-4500-b0ab-d8cfe80421b8",
+      "result_id": "83934809-7d14-4abb-99bb-5cdca3283d74"
+    },
+    {
+      "claim_id": "9f45bb0c-baab-40c4-82f0-1c6216939cba",
+      "result_id": "83934809-7d14-4abb-99bb-5cdca3283d74"
+    },
+    {
+      "claim_id": "90283653-22f0-455d-9668-06530766b84a",
+      "result_id": "54d448b3-42f5-4f0a-bb3c-47c648e17348"
+    },
+    {
+      "claim_id": "97bc43f2-ccd2-4b3e-915b-beef3024f6ae",
+      "result_id": "54d448b3-42f5-4f0a-bb3c-47c648e17348"
+    },
+    {
+      "claim_id": "b7bccede-01ca-4888-b45d-fee60ed6240b",
+      "result_id": "54d448b3-42f5-4f0a-bb3c-47c648e17348"
+    },
+    {
+      "claim_id": "baa44c38-2df6-4c5e-a230-9c0e72c665a9",
+      "result_id": "54d448b3-42f5-4f0a-bb3c-47c648e17348"
+    },
+    {
+      "claim_id": "a712316b-5820-474d-b092-bad53d6143e4",
+      "result_id": "54d448b3-42f5-4f0a-bb3c-47c648e17348"
+    },
+    {
+      "claim_id": "c210ac41-89c1-4821-9480-9c6a4e07166f",
+      "result_id": "26214892-8bcd-4dbc-9bd9-ceb6a0bad576"
+    },
+    {
+      "claim_id": "90c71193-04ae-4d00-a5d4-16770994c0cf",
+      "result_id": "26214892-8bcd-4dbc-9bd9-ceb6a0bad576"
+    },
+    {
+      "claim_id": "8ffe68ca-bccb-4518-a9a6-f4ef6112f597",
+      "result_id": "26214892-8bcd-4dbc-9bd9-ceb6a0bad576"
+    },
+    {
+      "claim_id": "995b760b-8a5c-4b9f-ae0b-87b81db40ca0",
+      "result_id": "26214892-8bcd-4dbc-9bd9-ceb6a0bad576"
+    },
+    {
+      "claim_id": "f58bbc18-b945-4d7c-9847-4b2fc39ab8de",
+      "result_id": "26214892-8bcd-4dbc-9bd9-ceb6a0bad576"
+    },
+    {
+      "claim_id": "ca3b9c65-601b-4108-9b13-822f93612ff1",
+      "result_id": "26214892-8bcd-4dbc-9bd9-ceb6a0bad576"
+    },
+    {
+      "claim_id": "97d7e034-8cb0-4455-8995-92e84fa7b231",
+      "result_id": "0eae7d89-48d2-4713-bda9-b0e847e146a9"
+    },
+    {
+      "claim_id": "37eda5ec-76fb-4d1f-8a01-dcbd9f9106e6",
+      "result_id": "0eae7d89-48d2-4713-bda9-b0e847e146a9"
+    },
+    {
+      "claim_id": "0025b7b8-d905-4ad1-bee8-f4770ad1b9e7",
+      "result_id": "0eae7d89-48d2-4713-bda9-b0e847e146a9"
+    },
+    {
+      "claim_id": "ca3b9c65-601b-4108-9b13-822f93612ff1",
+      "result_id": "0eae7d89-48d2-4713-bda9-b0e847e146a9"
+    },
+    {
+      "claim_id": "01324aa4-7611-4cc0-baf5-afb02184f755",
+      "result_id": "cb443780-5835-4d75-bc84-39291cbc1003"
+    },
+    {
+      "claim_id": "c966509d-d2de-4aee-8bae-7478cc22c6d9",
+      "result_id": "cb443780-5835-4d75-bc84-39291cbc1003"
+    },
+    {
+      "claim_id": "2abe7b2e-88e6-4656-afbb-27fb7c957132",
+      "result_id": "8c4f0c64-d760-4ef4-afe5-424626330ae3"
+    },
+    {
+      "claim_id": "53ad2ab5-9b41-4678-9e25-b6d781a6c8f7",
+      "result_id": "8c4f0c64-d760-4ef4-afe5-424626330ae3"
+    },
+    {
+      "claim_id": "c3cf1719-668e-43ed-968f-f99c0947ae79",
+      "result_id": "8c4f0c64-d760-4ef4-afe5-424626330ae3"
+    },
+    {
+      "claim_id": "c23e371a-996d-49c9-a511-3f33c51c9a68",
+      "result_id": "8c4f0c64-d760-4ef4-afe5-424626330ae3"
+    },
+    {
+      "claim_id": "b50e6b9c-4ef4-42ec-983c-17296aa6d9cf",
+      "result_id": "8c4f0c64-d760-4ef4-afe5-424626330ae3"
+    },
+    {
+      "claim_id": "d5558490-0b72-48cf-855e-22bfc5322780",
+      "result_id": "06eb2ee4-609c-4bf4-812d-ac2aac496cfa"
+    },
+    {
+      "claim_id": "31c1a096-9763-4277-b472-cc5a62e4c34f",
+      "result_id": "06eb2ee4-609c-4bf4-812d-ac2aac496cfa"
+    },
+    {
+      "claim_id": "182c0f56-29e8-4189-8be4-c533404f374e",
+      "result_id": "06eb2ee4-609c-4bf4-812d-ac2aac496cfa"
+    },
+    {
+      "claim_id": "4c37312b-b4ae-49d5-a8fc-eadb456a782f",
+      "result_id": "06eb2ee4-609c-4bf4-812d-ac2aac496cfa"
+    },
+    {
+      "claim_id": "91cebe92-64c9-4763-a995-722c3ed885fd",
+      "result_id": "06eb2ee4-609c-4bf4-812d-ac2aac496cfa"
+    },
+    {
+      "claim_id": "6ae61e53-5630-431a-ab15-4944de2b0e47",
+      "result_id": "065c2cb2-5d53-4d52-9997-713158e00c91"
+    },
+    {
+      "claim_id": "0ff00071-0004-48d3-9a02-4043c86796f7",
+      "result_id": "065c2cb2-5d53-4d52-9997-713158e00c91"
+    },
+    {
+      "claim_id": "0ea2b42f-8ace-421b-a3fa-1b453cd8a323",
+      "result_id": "4b9e688d-9052-42d6-b327-32c9fecd5f5d"
+    },
+    {
+      "claim_id": "d125f2ef-4ecc-45af-b486-ad2939504d22",
+      "result_id": "4b9e688d-9052-42d6-b327-32c9fecd5f5d"
+    },
+    {
+      "claim_id": "eb50db36-e734-4f4f-b74b-34a67e7c3e66",
+      "result_id": "4b9e688d-9052-42d6-b327-32c9fecd5f5d"
+    },
+    {
+      "claim_id": "3d8809c4-faf7-416b-a2bc-5fa8b2000216",
+      "result_id": "4b9e688d-9052-42d6-b327-32c9fecd5f5d"
+    },
+    {
+      "claim_id": "a2077116-4634-46b5-a5ed-02a87110c520",
+      "result_id": "4b9e688d-9052-42d6-b327-32c9fecd5f5d"
+    },
+    {
+      "claim_id": "3c211872-40f5-48d3-ba69-242eeff3b5b1",
+      "result_id": "4b9e688d-9052-42d6-b327-32c9fecd5f5d"
+    },
+    {
+      "claim_id": "28bac179-2e59-4a9e-9d92-0dae9df1fdd3",
+      "result_id": "4b9e688d-9052-42d6-b327-32c9fecd5f5d"
+    },
+    {
+      "claim_id": "db951e86-e364-43d4-b418-970aad873486",
+      "result_id": "4b9e688d-9052-42d6-b327-32c9fecd5f5d"
+    },
+    {
+      "claim_id": "e29ba97d-9291-4174-99ee-e18835b1fa28",
+      "result_id": "196c2c51-8d88-48bf-af21-59e8f9df2c08"
+    },
+    {
+      "claim_id": "ee6ca742-e67a-48ac-8e96-b7c2b73c87c0",
+      "result_id": "196c2c51-8d88-48bf-af21-59e8f9df2c08"
+    },
+    {
+      "claim_id": "f3d4b022-7aac-48b3-81ed-7d7f414d48b5",
+      "result_id": "196c2c51-8d88-48bf-af21-59e8f9df2c08"
+    },
+    {
+      "claim_id": "3956a7f7-58fe-4c5b-b276-2cbf41d530a9",
+      "result_id": "196c2c51-8d88-48bf-af21-59e8f9df2c08"
+    },
+    {
+      "claim_id": "31428504-280a-409d-950c-a1d6410ff501",
+      "result_id": "196c2c51-8d88-48bf-af21-59e8f9df2c08"
+    },
+    {
+      "claim_id": "b51a8d94-0804-4814-a0a4-db5906cb000a",
+      "result_id": "196c2c51-8d88-48bf-af21-59e8f9df2c08"
+    },
+    {
+      "claim_id": "62343b37-41d0-4b16-bc60-41c006cd3478",
+      "result_id": "196c2c51-8d88-48bf-af21-59e8f9df2c08"
+    },
+    {
+      "claim_id": "9a273d45-c1f9-45ec-848e-a43a833b329c",
+      "result_id": "196c2c51-8d88-48bf-af21-59e8f9df2c08"
+    },
+    {
+      "claim_id": "c6ad772a-a8b7-459c-a55e-cad08e6b01a8",
+      "result_id": "72575b63-1b7b-4372-ba52-5e7580faaf31"
+    },
+    {
+      "claim_id": "20c26e46-c4f3-48d7-a685-5352486fb094",
+      "result_id": "72575b63-1b7b-4372-ba52-5e7580faaf31"
+    },
+    {
+      "claim_id": "455f1316-fa48-4e62-a8ce-8333fb4975ce",
+      "result_id": "72575b63-1b7b-4372-ba52-5e7580faaf31"
+    },
+    {
+      "claim_id": "eaf62a60-a087-4ee2-948f-1474eded9df6",
+      "result_id": "72575b63-1b7b-4372-ba52-5e7580faaf31"
+    },
+    {
+      "claim_id": "9657d180-d64c-4729-8808-32f0ac45e060",
+      "result_id": "72575b63-1b7b-4372-ba52-5e7580faaf31"
+    },
+    {
+      "claim_id": "c437354d-c49d-4353-b8e6-d6696f93d3cb",
+      "result_id": "8992691c-85ac-4a41-a0d7-cda1c014dc8a"
+    },
+    {
+      "claim_id": "0dbc0866-037a-44ec-8ac3-26f4c0a652de",
+      "result_id": "8992691c-85ac-4a41-a0d7-cda1c014dc8a"
+    },
+    {
+      "claim_id": "afa4b3be-b0f8-4815-ae7a-45e4cc435b6f",
+      "result_id": "8992691c-85ac-4a41-a0d7-cda1c014dc8a"
+    },
+    {
+      "claim_id": "0db09c74-5bbb-4919-8627-0fcd693279d2",
+      "result_id": "8992691c-85ac-4a41-a0d7-cda1c014dc8a"
+    },
+    {
+      "claim_id": "73625722-dcc9-4ba3-8af9-b60a89115d45",
+      "result_id": "8992691c-85ac-4a41-a0d7-cda1c014dc8a"
+    },
+    {
+      "claim_id": "abb7a014-b45e-4fd1-8150-66718f8171a7",
+      "result_id": "8992691c-85ac-4a41-a0d7-cda1c014dc8a"
+    },
+    {
+      "claim_id": "6d4f4505-9950-4206-9090-63be5633275d",
+      "result_id": "556f6f39-8547-4f19-b764-7914ae4b67d6"
+    }
+  ],
+  "comparisons": []
+}

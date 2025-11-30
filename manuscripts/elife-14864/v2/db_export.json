@@ -1,0 +1,1661 @@
+{
+  "submission": {
+    "id": "5eddec34-0a4f-4f4f-9c58-302230767aaf",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:47:42.382115Z",
+    "updated_at": "2025-11-29T23:47:42.382115Z"
+  },
+  "content": [
+    {
+      "id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "submission_id": "5eddec34-0a4f-4f4f-9c58-302230767aaf",
+      "content_type": "manuscript",
+      "content_text": "# Compaction and segregation of sister chromatids via active loop extrusion\n\n## Authors\n\n- Anton Goloborodko<sup>1</sup> ([ORCID: 0000-0002-2210-8616](https://orcid.org/0000-0002-2210-8616))\n- Maxim V Imakaev<sup>1</sup>\n- John F Marko<sup>2</sup>\n- Leonid Mirny<sup>1</sup> ([ORCID: 0000-0002-0785-5410](https://orcid.org/0000-0002-0785-5410)) \u2020\n\n### Affiliations\n\n1. Department of Physics Massachusetts Institute of Technology Cambridge United States\n2. Department of Molecular Biosciences Northwestern University Evanston United States\n3. Institute for Medical Engineering and Science Massachusetts Institute of Technology Cambridge United States\n4. Department of Physics and Astronomy Northwestern University Evanston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe mechanism by which chromatids and chromosomes are segregated during mitosis and meiosis is a major puzzle of biology and biophysics. Using polymer simulations of chromosome dynamics, we show that a single mechanism of loop extrusion by condensins can robustly compact, segregate and disentangle chromosomes, arriving at individualized chromatids with morphology observed in vivo. Our model resolves the paradox of topological simplification concomitant with chromosome 'condensation', and explains how enzymes a few nanometers in size are able to control chromosome geometry and topology at micron length scales. We suggest that loop extrusion is a universal mechanism of genome folding that mediates functional interactions during interphase and compacts chromosomes during mitosis.\n\n## Introduction\n\nThe mechanism whereby eukaryote chromosomes are compacted and concomitantly segregated from one another remains poorly understood. A number of aspects of this process are remarkable. First, the chromosomes are condensed into elongated structures that maintain the linear order, i.e. the order of genomic elements in the elongated chromosome resembles their order along the genome (Trask et al., 1993). Second, the compaction machinery is able to distinguish different chromosomes and chromatids, preferentially forming intra-chromatid cross-links: if this were not the case, segregation would not occur (Nasmyth, 2001). Third, the process of compaction is coincident with segregation of sister chromatids, i.e. formation of two separate chromosomal bodies. Finally, originally intertwined sister chromatids become topologically disentangled, which is surprising, given the general tendency of polymers to become more intertwined as they are concentrated (Marko, 2011).\n\nNone of these features cannot be produced by indiscriminate cross-linking of chromosomes (Marko and Siggia, 1997), which suggests that a novel mechanism of polymer compaction must occur, namely 'lengthwise compaction'\u00a0(Marko, 2009; 2011; Marko and Rippe, 2011), which permits each chromatid to be compacted while avoiding sticking of separate chromatids together. Cell-biological studies suggest that topoisomerase II and condensin are essential for metaphase chromosome compaction (Hirano and Mitchison, 1993; 1994; Wood and Earnshaw, 1990; Hirano, 1995), leading to the hypothesis that mitotic compaction-segregation relies on the interplay between the activities of these two protein complexes. Final structures of mitotic chromosomes were shown to consist arrays of consecutive loops (Paulson and Laemmli, 1977; Earnshaw and Laemmli, 1983; Naumova et al., 2013). Formation of such arrays would naturally results in lengthwise chromosome compaction.\n\nOne hypothesis of how condensins can generate compaction without crosslinking of topologically distinct chromosomes is that they bind to two nearby points and then slide to generate a progressively larger loop (Nasmyth, 2001). This 'loop extrusion' process creates an array of consecutive loops in individual chromosomes (Nasmyth, 2001). When loop-extruding condensins exchange with the solvent, the process eventually settles at a dynamical steady state with a well-defined average loop size\u00a0(Gerlich et al., 2006;\u00a0Goloborodko et al., 2015). Simulations of this system at larger scales\u00a0(Goloborodko et al., 2015)\u00a0have established that there are two regimes of the steady-state dynamics: (i) a sparse regime where little compaction is achieved and, (ii) a dense regime where a dense array of stabilized loops efficiently compacts a chromosome. Importantly, loop extrusion in the dense regime generates chromatin loops that are stabilized by multiple \u201cstacked\u201d condensins (Alipour and Marko, 2012), making loops robust against the known dynamic binding-unbinding of individual condensin complexes (Gerlich et al., 2006). These two quantitative studies of loop extrusion kinetics (Goloborodko et al., 2015; Alipour and Marko, 2012) focused on the hierarchy of extruded loops and did not consider the 3D conformation and topology of the chromatin fiber in the formed loop arrays. The question of whether loop-extruding factors can act on a chromatin fiber so as to form an array of loops, driving chromosome compaction and chromatid segregation, as originally hypothesized for condensin in Nasmyth (2001), is salient and unanswered. The main objective of this paper is to test this hypothesis and to understand how formation of extruded loop arrays ultimately leads to compaction, segregation and disentanglement (topology simplification) of originally intertwined sister chromatids.\n\nHere we use large-scale polymer simulations to show that active loop extrusion in presence of topo II is sufficient to reproduce robust lengthwise compaction of chromatin into dense, elongated, prophase chromatids with morphology in quantitative accord with experimental observations. Condensin-driven lengthwise compaction, combined with the strand passing activity of topo II drives disentanglement and segregation of sister chromatids in agreement with the\u00a0theoretical prediction that linearly compacted chromatids must spontaneously disentangle\u00a0(Marko, 2011).\n\n### Model\n\nWe consider a chromosome as a flexible polymer, coarse-graining to monomers of 10 nm diameter, each corresponding to three nucleosomes (600\u00a0bp). As earlier (Naumova et al., 2013; Fudenberg et al., 2015), the polymer has a persistence length of ~5 monomers (3\u00a0Kb), is subject to excluded volume interactions and to the activity of loop-extruding condensin molecules and topo II (see below, and in Fudenberg et al. (2015)). We simulate chains of 50000 monomers, which corresponds to 30 Mb, close to the size of the smallest human chromosomal arm.\n\nEach condensin complex is modeled as a dynamic bond between a pair of monomers that is changed as a function of time (Figure 1, Video 1). Upon binding, each condensin forms a bond between two adjacent monomers; subsequently both bond ends of a condensin move along the chromosome in opposite directions, progressively bridging more distant sites and effectively extruding a loop. As in prior lattice models of condensins (Goloborodko et al., 2015; Alipour and Marko, 2012), when two condensins collide on the chromatin, their translocation is blocked; equivalently, only one condensin is permitted to bind to each monomer, modeling their steric exclusion. Exchange of condensins between chromatin and solution is modeled by allowing each condensin molecule to stochastically unbind from the polymer. To maintain a constant number of bound condensins, when one condensin molecule dissociates, another molecule associates at a randomly chosen location, including chromatin within loops extruded by other condensins. This can potentially lead to formation of reinforced loops (Video\u00a01) (Goloborodko et al., 2015; Alipour and Marko, 2012).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/14864/elife-14864-fig1-v2.jpg)\n\n**Figure 1.:** Top row, the update rules used in simulations: (A) a condensin extrudes a loop by moving the two ends along the chromosome in the opposite directions, (B) collision of condensins bound to chromosomes blocks loop extrusion on the collided sides, (C) a condensin spontaneously dissociates and the loop disassembles; (D) a condensin associates at randomly chosen site and starts extruding a loop. Bottom row, (E) we use polymer simulations to study how combined action of many loop extruding condensins changes the conformation of a long chromosome.\n\n![Video 1.](https://cdn.elifesciences.org/articles/14864/elife-14864-media1.mp4.jpg)\n\n**Video 1.:** When a condensin (red sphere) binds to chromatin (grey fiber), it binds to two adjacent loci and then slides the two contact points in the opposite directions, effectively extruding a loop (highlighted in orange). The diagram on the bottom shows the position of the two loci brought together by the condensin over time (red arc). Condensins occasionally unbind and then rebind to a randomly chosen site, starting a new loop. When two condensins (loops shown in orange and purple) meet on the chromosome, they stop extrusion on the collided sides. Condensins can also bind within already extruded loops. If the growth of the outer loop is blocked by other loops or barriers (not shown), the inner condensin can re-extrude it, forming a single loop reinforced by multiple condensins (the number above the arc). Such a loop is stabilized against unbinding of individual condensins and disassembles only upon unbinding of the last condensin. Available at https://www.youtube.com/watch?v=xikxZ0yF1yU&list=PLnV-JMzdy0ZMOvyK6Z1bzU7C2Jt8Brbit&index=1\n\nTo simulate the strand-passing activity of topo II enzymes, we permit crossings of chromosomal fiber by setting a finite energy cost of fiber overlaps. By adjusting the overlap energy cost we can control the rate at which topology changes occur.\n\nThis model has seven parameters. Three describe the properties of the chromatin fiber (linear density, fiber diameter, and persistence length); two control condensin kinetics (the mean linear separation between condensins, and their processivity, i.e. the average size of a loop formed by an isolated condensin before it dissociates, and defined as two times the velocity of bond translocation times the mean residence time); one parameter controls the length of the monomer-monomer bond mediated by a condensin (effectively the size of a condensin complex), and finally we have the energy barrier to topological change.\n\nThe effects of two of these parameters, linear separation of condensins and their processivity, have been considered earlier in the context of a 1D model (Goloborodko et al., 2015). These parameters control the fraction of a chromosome extruded into loops and the average loop length. In our simulations, we use the separation of 30\u00a0kb (1000 condensins per 30 Mb chromosome, as measured in Fukui and Uchiyama (2007) and the processivity of 830 kb such that condensins form a dense array of gapless loops with the average loop length of 100\u00a0kb, which agrees with available experimental observations (Paulson and Laemmli, 1977; Earnshaw and Laemmli, 1983; Naumova et al., 2013; Jackson et al., 1990). The effects of the other five parameters are considered below.\n\nInitially, chromosomes are compacted to the density of chromatin inside the human nucleus and topologically equilibrated, thus assuming an equilibrium globular conformation, corresponding to a chromosomal territory. In the simulations of sister chromatid segregation, the initial conformation of one chromatid is generated as above, while the second chromatid traces the same path at a distance of 50\u00a0nm and winds one full turn per 100 monomers (60 kb). In this state, two chromatids run parallel to each other and are highly entangled, while residing in the same chromosome territory. This represents to the most challenging case for segregation of sister chromatids.\n\n## Results\n\n### Loop extrusion compacts randomly coiled interphase chromosomes into prophase-like chromosomes\n\nOur main qualitative result is that loop extrusion by condensins and strand passing mediated by topo II convert initially globular interphase chromosomes into elongated, unknotted and relatively stiff structures that closely resemble prophase chromosomes (Figure 2, Video 2, Figure 2\u2014figure supplement 1). The compacted chromosomes have the familiar 'noodle' morphology (Figure 2BC) of prophase chromosomes observed in optical and electron microscopy (Yunis, 1981; Sumner, 1991). Consistent with the observed linear organization of prophase chromosomes, our simulated chromosomes preserve the underlying linear order of the genome\u00a0(Yunis, 1981; Sumner, 1991; Yunis and Sanchez, 1975; Furey and Haussler, 2003; Strukov and Belmont, 2009) (Figure 2C). Moreover, the geometric parameters of our simulated chromosomes match the experimentally measured parameters of mid-prophase chromosomes Figure 2\u2014figure supplement 1: both simulated and human chromosomes have the linear compaction density of\u00a0~5 kb/nm (Yunis, 1981) and the radius of 300\u00a0nm (el-Alfy and Leblond, 1989; Sarkar et al., 2002; Kireeva et al., 2004).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/14864/elife-14864-fig2-v2.jpg)\n\n**Figure 2.:** (A) Dynamics of loop array formation. Left, the fraction of the chromosome extruded into loops (loop coverage, gray) and the mean loop size (black). The time is measured in the units of condensin residence time. Data for each curve was obtained using 10 simulation replicas; the thickness of each line shows the difference between the 10th and 90th percentile at each time point. Right, a phase diagram showing loop coverage vs mean loop length. The curve is averaged over the simulation replicas and colored by log-time. Two stages of dynamics are separated by the two vertical dashed lines corresponding to 95% coverage and 95% of the steady state mean loop length. The distinction between the two stages of compaction is especially easy to see on the phase curve. (B) Dynamics of chromosome morphology. Left: chromosome length (blue) and the mean chromosome diameter (red) shown as a function of time; the thickness of each line shows the difference between the 10th and 90th percentile at each time point. Right, a phase diagram showing chromosome length vs diameter; the curve is averaged over the simulation replicas and colored by log-time. Note that most of chromosome linear compaction is achieved during the first phase, while the second is characterized by widening of the chromosome and further three-fold shortening. (C) Snapshots of polymer simulations. Top row: the conformations of chromosomes at the beginning of simulations (left), slightly before the transition between the loop formation and maturation stages (middle), and in the steady state (right). Color (rainbow: from red to blue) shows positions of individual monomers along the chain and demonstrates that loci in compacted chromosomes are arranged linearly according to their genomic location. Bottom row: same as above, with chromosomes shown in semitransparent gray and condensins as red spheres.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14864/elife-14864-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Simulations with altered condensin abundance: '0.2x condensin', '0.5x condensin', '2x condensins' and '4x condensins' - simulations with 200, 500, 2000 and 4000 condensins, correspondingly. (B) Simulations with altered parameters of the chromatin fiber and condensins: 'Stiffer fiber' \u2013 simulations with 2x bending energy of the fiber, 'softer fiber' \u2013 simulations with 0.5x bending energy; 'wide condensins' \u2013 simulations with increased spacing between condensins at loop bases; '10\u00a0nm fiber' - simulations with reduced linear DNA of the fiber; '30\u00a0nm fiber' \u2013 simulations with increased linear DNA density of the fiber and increased fiber thickness. The vertical gray lines show the experimental observations on the linear density of DNA along the human prophase chromosome I (6.25 kb/nm) and chromosome XXII (5.0 kb/nm) (Yunis, 1981). The horizontal gray lines show the experimental data on the diameter of prophase chromosomes: 400 nm (Kireeva et al., 2004), 600 nm (Sarkar et al., 2002) and 679 nm (el-Alfy and Leblond, 1989).\n\n![Video 2.](https://cdn.elifesciences.org/articles/14864/elife-14864-media2.mp4.jpg)\n\n**Video 2.:** Top left, fiber color corresponds to the position of each monomer along the genome. Top right, fiber shown in semitransparent gray, condensins are shown as red spheres. Bottom, the diagram of the crosslinks (red arcs) formed by condensins. The numbers above the arcs show the number of condensins stacked at the bases of reinforced loops. We sped up the second half of the video 20 times to illustrate the slow phase of loop maturation and the long-term stability of the compacted state. Available at https://www.youtube.com/watch?v=_Vc7__xfnfc&list=PLnV-JMzdy0ZMOvyK6Z1bzU7C2Jt8Brbit&index=2\n\nThe internal structure of compacted chromosomes also agrees with structural data for mitotic chromosomes. First, loop extrusion compacts a chromosome into a chain of consecutive loops (Goloborodko et al., 2015) which agrees with a wealth of microscopy observations (Paulson and Laemmli, 1977; Earnshaw and Laemmli, 1983; Maeshima et al., 2005) and the recent Hi-C study (Naumova et al., 2013). Second, our polymer simulations show that a chain of loops naturally assumes a cylindrical shape, with loops forming the periphery of the cylinder and loop-extruding condensins at loop bases forming the core (Figure 2C, Video 2), as was predicted in Nasmyth (2001). Condensin-staining experiments reveal similar cores in the middle of in vivo and reconstituted mitotic chromosomes (Maeshima et al., 2005; Maeshima and Laemmli, 2003). In agreement with experiments where condensin cores appear as early as late prophase (Kireeva et al., 2004), we observe rapid formation of condensin core in simulations (Figure 2, Video 2). Thus, the structure of chromosomes compacted by loop extrusion is consistent with the loop-compaction picture of mitotic (Paulson and Laemmli, 1977; Maeshima and Laemmli, 2003; Marsden and Laemmli, 1979) and meiotic chromosomes (Liang et al., 2015; Kleckner, 2006). However, it should be noted that our model does not rely on a connected 'scaffold', and that cleavage of the DNA will result in disintegration of the entire structure, as is observed experimentally\u00a0(Poirier and Marko, 2002).\n\n### Loop-extrusion generates chromosome morphology kinetics similar to those observed experimentally\n\nSimulations also reproduce several aspects of compaction kinetics observed experimentally. First, the model shows that formed loops are stably maintained by condensins despite their constant exchange with the nucleoplasm (Hirano and Mitchison, 1994; Gerlich et al., 2006; Oliveira et al., 2007). This stability is achieved by accumulation of several condensins at a loop base (Goloborodko et al., 2015; Alipour and Marko, 2012). Supported by multiple condensins, each loop persists for times much longer than the residency time for individual condensins (Goloborodko et al., 2015).\n\nSecond, simulations show that chromosome compaction proceeds by two stages (Figure 2AB): fast formation of a loose, elongated morphology, followed by a slow maturation stage. During the initial 'loop formation stage', condensins associate with the chromosome and extrude loops until colliding with each other, rapidly compacting the chromosome (Figure 2, Video 2). At the end of this stage, that takes a fraction of the condensin exchange time, a gapless array of loops is formed, the loops are relatively small, supported by single condensins, and the chromosome is long and thin (Figure 2B).\n\nDuring the following 'maturation stage', due to condensin exchange some loops dissolve and divide while others grow and get reinforced by multiple condensins\u00a0(Goloborodko et al., 2015; Alipour and Marko, 2012). As we recently showed\u00a0(Goloborodko et al., 2015), a loop can dissolve when all of its condensins dissociate; while new loops are born when two condensins land inside an existing loop at about the same time and split it into two loops. As the mean loop size grows during the maturation stage (Figure 2A), the chromosome becomes thicker and shorter. By the end this stage, which takes several rounds of condensin exchange, the rates of loop death becomes equal the rate of loop division and the chromosome achieves a steady state. At steady state, loops get reinforced by multiple condensins and the average loop size and the lengthwise compaction reach their maximal values (Figure 2). These dynamics are in accord with the observation that chromosomes rapidly attain a condensed 'noodle'-like shape in early prophase, then spend the rest of prophase growing thicker and shorter (Yunis, 1981; Sumner, 1991; Kireeva et al., 2004; Schwarzacher, 1976) (see Discussion).\n\n### Loop extrusion separates and disentangles sister chromatids\n\nIn the second set of simulations, we studied whether loop extrusion and strand passing simultaneously lead to spatial segregation (Nasmyth, 2001) and disentanglement of sister chromatids (Marko, 2009). We simulated two long polymers connected at their midpoints that represented sister chromatids with stable centromeric cohesion. To model cohesion of sister chromatids in late G2 phase we further twisted them around each other (see Materials\u00a0and\u00a0methods) while maintaining them with a chromosomal territory.\n\nWe find that the activity of loop-extruding condensins in the presence of topo II leads to compactions of each of the sister chromatids into prophase-like 'noodle' structures (Video 3). Moreover, we observe that formed compact chromosomes (a) become segregated from each other, as evident by the drastic growth of the mean distance between their backbones (Figure 3A), and (b) become disentangled, as shown by the reduction of the winding number of their backbones (Figure 3B). Thus, loop extrusion and strand passing fold highly catenated sister chromatids into separate disentangled structures. (Figure 3C, Video 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/14864/elife-14864-fig3-v2.jpg)\n\n**Figure 3.:** (A) The median separation between condensin-rich axes of two sister chromosomes (blue) and the mean chromosome diameter (red) as a function of time, measured in condensin residence times, as above. The blue band shows the range between 25th and 75th percentile across 10 simulation replicas at each time point; the light blue shows 10%--90% range. (B) Entanglement of sister chromatids measured by the linking number of the condensin cores of sister chromatids; the blue bands show variability between simulation replicas, same as above. (C) Conformations of two sister chromatids in the polymer simulations (shown in red and blue) illustrate the observed segregation and disentanglement.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14864/elife-14864-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The median separation between condensin-rich axes of two sister chromosomes (solid lines) and the mean chromosome diameter (red) as a function of time, measured in condensin residence times, as above. Depletion of topo II was simulated by a simultaneous increase of the energy barrier of fiber overlap (shown by the line color) and a 3x increase in of the radius of repulsion. (B) Entanglement of sister chromatids in simulations of topo II depletion, measured by the linking number of the condensin cores of sister chromatids.\n\n![Video 3.](https://cdn.elifesciences.org/articles/14864/elife-14864-media3.mp4.jpg)\n\n**Video 3.:** The two sister chromatids (30\u00a0Mb each) are shown in red and blue. Initially, the two chromatids were compacted and twisted around each other. Second half of the video is sped up 20x. Available at https://www.youtube.com/watch?v=stZR5s9n32s&index=3&list=PLnV-JMzdy0ZMOvyK6Z1bzU7C2Jt8Brbit\n\nDespite stochastic dynamics of condensins, compaction, segregation and disentanglement of sister chromatids are highly reproducible and robust to changes in simulation parameters. Disentanglement and segregation were observed in each of 16 simulation replicas (Video 4). We also performed simulations with altered chromatin polymer parameters (Video 5). Again, we observed chromatids segregation and disentanglement irrespective of fiber parameters and size of a single condensin molecule.\n\n![Video 4.](https://cdn.elifesciences.org/articles/14864/elife-14864-media4.mp4.jpg)\n\n**Video 4.:** Available at https://www.youtube.com/watch?v=UXXLnGGit-8&index=4&list=PLnV-JMzdy0ZMOvyK6Z1bzU7C2Jt8Brbit\n\n![Video 5.](https://cdn.elifesciences.org/articles/14864/elife-14864-media5.mp4.jpg)\n\n**Video 5.:** Top row: left, simulations with a more flexible fiber (0.5x bending energy); right \u2013 a stiffer fiber (2x bending energy); bottom row, left - simulations with wider condensins at loop bases; right \u2013 simulations with disabled excluded volume interactions. Available at https://www.youtube.com/watch?v=YhgSHppJXVI&index=5&list=PLnV-JMzdy0ZMOvyK6Z1bzU7C2Jt8Brbit\n\nOur model makes several predictions that can be tested against available experimental data. First, in agreement with the published literature (Savvidou et al., 2005; Steffensen et al., 2001; Hagstrom et al., 2002; Ono et al., 2013) the abundance of condensins on the chromosome significantly affects geometry of simulated chromatids (Video 6). When we varied abundance of chromosome-bound condensin by 20-fold (five-fold decrease and four-fold increase) we observed two major effects (Figure 2\u2014figure supplement 1). First, we noticed that condensin depletion leads to a systematic (three-fold) increase in chromosome diameter. Second, we observed nonmonotonic changes in the linear density of chromatin in compacted chromosomes: both five-fold increase and four-fold decrease of condensin abundance lead to about two-fold drop in linear compaction (i.e. two-fold increase in chromosome length). This reduced compaction, however, emerges due to different mechanisms: an increase of condensin abundance leads to reduction of loop sizes while keeping all chromatin in the loops, creating thin chromosomes with long scaffold formed by excessive condensins. Decrease of condensins abundance, on the contrary, leads to formation of chromosomes where some regions are not extruded into loops; such gaps between loops lead to substantial increase in chromosome length and inefficient compaction. These nontrivial dependences of chromosome geometry on condensin abundance can be further tested experimentally.\n\n![Video 6.](https://cdn.elifesciences.org/articles/14864/elife-14864-media6.mp4.jpg)\n\n**Video 6.:** Top row, left - 2000 condensins per chromatid, middle - 500 condensins per chromatid; right - 200 condensins; bottom row, left - 4000 condensins, left - 100 condensins; right, 50 condensins. Available at https://www.youtube.com/watch?v=4img9nmQrtU&index=6&list=PLnV-JMzdy0ZMOvyK6Z1bzU7C2Jt8Brbit\n\nNext, we examined the role of topological constraints and topo II enzyme in the process of chromosome compaction and segregation. Activity of topo II is modeled by a finite energy barrier for monomer overlap, allowing for occasional fiber crossings. We simulated topo II depletion by elevating the energy barrier and increasing the radius of repulsion between distant particles, thus reducing the rate of fiber crossings. In these simulations, segregation of sister chromatids is drastically slowed down (Video 7). This effect of topological constraints on kinetics of compaction and segregation is expected since each chromosome is a chain with open ends that thus can eventually segregate from each other. Reduction of topo II activity (increase of the crossing barrier) prevents disentanglement and segregation of sister chromatids, while having little effect of diameter of individual chromatids (Figure 3\u2014figure supplement 1). We conclude that topo II is essential for rapid chromosome segregation and disentanglement, in accord with an earlier theoretical work (Sikorav and Jannink, 1994) and with experimental observations (Wood and Earnshaw, 1990; DiNardo et al., 1984; Newport and Spann, 1987; Shamu and Murray, 1992).\n\n![Video 7.](https://cdn.elifesciences.org/articles/14864/elife-14864-media7.mp4.jpg)\n\n**Video 7.:** Depletion of topo II was simulated by a simultaneous increase of the energy barrier of fiber overlap and the increased radius of repulsion, which decreased, but not fully prevented chain crossings. Available at https://www.youtube.com/watch?v=YO3Qx8liK3s&list=PLnV-JMzdy0ZMOvyK6Z1bzU7C2Jt8Brbit&index=7\n\nFinally, we examined the role of cohesin-dependent cohesion of chromosomal arms of sister chromatids. It is known that cohesins are actively removed from chromosomal arms in prophase. Interference with processes of cohesins removal or cleavage leads to compaction into elongated chromosomes that fail to segregate (Kueng et al., 2006; Gandhi et al., 2006). We simulated prophase compaction in the presence of cohesin rings (Nasmyth and Haering, 2009) that stay on sister chromatids and can be pushed around by loop-extruding condensins. If cohesins remain uncleaved on sister chromatids (Video 8), we observe compaction of sister chromatids, that remain unsegregated, in agreement with experiments (Kueng et al., 2006; Gandhi et al., 2006).\n\n![Video 8.](https://cdn.elifesciences.org/articles/14864/elife-14864-media8.mp4.jpg)\n\n**Video 8.:** We simulated cohesins as crosslinks between the chromosomes (shown with the blue lines on the bottom arc diagram) that can be pushed along each of the chromatids by loop-extruding condensins. Available at https://www.youtube.com/watch?v=vmwNbz41pqM&list=PLnV-JMzdy0ZMOvyK6Z1bzU7C2Jt8Brbit&index=8\n\nTaken together, these results indicate that loop extrusion is sufficient to compact, disentangle and segregated chromosomes from a more open interphase state, to a compacted, elongated and linearly organized prophase state. Future Hi-C experiments focused on prophase chromosomes may be able to make detailed structural comparison with the prediction of our model.\n\n### Repulsion between loops shapes and segregates compacted chromatids\n\nReorganization of chromosomes by loop extrusion can be rationalized by considering physical interactions between extruded loops. A dense array of extruded loops makes a chromosome acquire a bottle-brush organization with loops forming side chains of the brush. Polymer bottle-brushes has been studied in physics both experimentally and computationally (Birshtein et al., 1987; Ball et al., 1991; Li and Witten, 1994), and has been proposed as models of mitotic and meiotic chromosomes (Marko and Siggia, 1997). A recent study also suggested a bottle-brush organization of centromeres in yeast, where centromere chromatin loops lead to separation of sister centromeres and create spring-like properties of the centromere in mitosis (Lawrimore et al., 2015; 2016).\n\nCentral to properties of chromosomal bottle-brushes are excluded volume interactions and maximization of conformational entropy that lead to repulsion of loops from each other (Marko and Siggia, 1997; Zhang and Heermann, 2011). Loops further stretch from the core and extend radially (Figure 4), similar to stretching of side chains in polymer bottle-brushes (Birshtein et al., 1987; Ball et al., 1991; Li and Witten, 1994). This in turn leads to formation of the central core where loop-bases accumulate (Figure 4A). Strong steric repulsion between the loops, caused by excluded volume interactions, stretches the core, thus maintaining linear ordering of loop bases along the genome (Figure 2C). Repulsion between loops also leads to stiffening of the formed loop-bottle-brush, as chromosome bending would increase overlaps between the loops.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/14864/elife-14864-fig4-v2.jpg)\n\n**Figure 4.:** (A) Left, conformation of a single chromosome with chromatin fiber shown in semitransparent gray and condensins shown in red; two loops are highlighted with blue. Right: the diagram showing that loop repulsion straightens chromosomal cores and extends individual loops radially. (B) Left, cross section of two parallel loop brushes placed at a short distance from each other. Right, the diagram shows that steric interactions between loops of sister chromatids lead to chromatid repulsion and segregation.\n\nSteric repulsion between loops of sister chromatid leads to segregation of sister chromatids that minimizes the overlap of their brush coronas (Figure 4B). Stiffening of the bottle-brush, in turn, leads to disentanglement of sister chromatids. To test this mechanism we performed simulations where excluded volume interactions have been turned off (Video 5). In these simulations, chromosomes did not assume a 'bottle-brush' morphology and did not segregate, which confirms the fundamental role of steric repulsion for chromosome segregation.\n\n## Discussion\n\nOur results show that chromosomal compaction by loop extrusion generates the major features of chromosome reorganization observed during prophase (Nasmyth, 2001; Alipour and Marko, 2012). Loop extrusion leads to lengthwise compaction and formation of cylindrical, brush-like chromatids, reducing chromosome length by roughly 25-fold, while at the same time removing entanglements between separate chromatids. Unlike models of prophase condensation based on crosslinking of randomly colliding fibers (Zhang and Heermann, 2011; Cheng et al., 2015), chromatid compaction by loop extrusion exclusively forms bridges between loci of the same chromosome (Figure 1A). Similarly, loop-extrusion in bacteria, mediated by SMC proteins, was suggested to form intra-arm chromosomal bridges leading to lengthwise chromosome compaction (Wang et al., 2015; Wilhelm et al., 2015).\n\nOur computations indicate that it takes an extended period of time for loop-extruding enzymes to maximally compact chromosomes. Maximal compaction is achieved by slow maturation of the loop array over multiple rounds of condensin exchange, rather than a single round of loop expansion. Loop length and the number of condensins per loop gradually increase during the maturation stage. Assuming that condensin II in prophase exchanges with the fast rate of condensin I in metaphase (~200 s)\u00a0(Gerlich et al., 2006) and using an average loop size of 100 kb, and an average spacing of condensins of 30 kb, it should take ~5 condensin exchange times, or about 17 min to achieve maximal compaction, which roughly agrees with the duration of prophase in human cells (Mora-Berm\u00fadez et al., 2007; Leblond and El-Alfy, 1998). This gradual compaction also may explain why chromosomes of cells arrested in metaphase continue shrinking for many hours after the arrest (condensin II metaphase exchange time ~hours\u00a0(Gerlich et al., 2006).\n\nOur model is idealized and does not aim to describe all of aspects of chromosome folding during mitosis. First, our model does not fully capture the specifics of later stages of mitosis. We model only the action of condensin II in prophase (Hirota et al., 2004). Simple geometric considerations, Hi-C studies and mechanical perturbation of mitotic chromosomes show that, in metaphase, cells use additional mechanisms of lengthwise (axial) compaction.\n\nLoop extrusion does not require specific interaction sites (e.g. loop anchors or condensin binding sites) and is therefore robust to mutations and chromosome rearrangements. This robustness also explains how a large segment of chromatin inserted into a chromosome of a different species can be reliably compacted by mitotic machinery of the host (Dietzel and Belmont, 2001; Hirano and Mitchison, 1991). At the same time, this model allows the morphology of mitotic chromosomes to be tuned. Most importantly, the diameter and length of the simulated chromosomes depend on chromatin fiber properties as well as numbers of condensins (Figure 2\u2014figure supplement 1); those dependences invite experimental tests.\n\nIn summary, we have shown that loop extrusion is a highly robust mechanism to compact, segregate and disentangle chromosomes. In a recent study (Fudenberg et al., 2015) we also demonstrated that loop extrusion by another SMC complex, cohesin, could lead to formation of interphase topological association domains (TADs). We suggest that during interphase, cohesins are sparsely bound, extruding 50\u201370% of DNA into highly dynamic loops, while metaphase condensins are bound more densely and more processive forming a dense array of stable loops. Taken together these studies suggest that loop extrusion can be a universal mechanism of genome folding, to mediate functional interactions during interphase and to compact during mitosis.\n\n## Materials and methods\n\n### Methods\n\nOur model of loop extrusion acting on a polymer fiber consists of (a) a 1D model that governs the dynamics of intra-chromosomal bonds formed by condensins over time and (b) a 3D polymer model of chromosome dynamics subject to the condensins bonds\n\n### The 1D model of loop extrusion\n\nThe dynamics of loop extruding condensins on a chromatin fiber is simulated using a 1D lattice simulations as it was described previously for generic loop-extruding factors (Goloborodko et al., 2015; Alipour and Marko, 2012).\u00a0In the lattice, each position corresponds to one monomer in the 3D polymer simulation. We model a condensin molecule very generally as having two chromatin binding sites or, 'heads', connected by a linker. Each head of a condensin occupies one lattice position at a time, and no two heads can occupy the same lattice position. To simulate the process of loop extrusion, the positions of the two condensin heads stochastically move away from each other over time (simulated with the Gillespie algorithm\u00a0(Gillespie, 1977).\n\nWe initialize the simulations by placing condensin molecules at random positions along the polymer chain, with both heads in adjacent positions. To simulate the exchange of condensins between chromatin and solution, condensins stochastically dissociate from the chromatin fiber. Every dissociation event is immediately followed by association of another condensin molecule with the chromatin fiber so that the total number of condensins bound to the chromatin stays constant.\n\nThis 1D model has four parameters: the size of the lattice, the\u00a0number of condensins bound to chromatin, the\u00a0speed of extrusion,\u00a0and\u00a0the average residency time of a condensin on the chromatin fiber. We model a 30 Mb chromosome with a lattice of 50000 sites, 600 bp each. The chromosome is bound by 1000 condensins. Without loss of generality, we set the speed of extrusion to be 1 step per unit time and the condensin residency time at 692 units of time, such that the resulting average loop length is equal 167 monomers, or, 100\u00a0kb, close to previous observations in vivo.\n\n### 3D simulations of chromosomes\n\nTo perform Langevin dynamics polymer simulations we use OpenMM, a high-performance GPU-assisted molecular dynamics (API Eastman and Pande, 2010; Eastman et al., 2013). To represent chromatin fibers as polymers, we use a sequence of spherical monomers of 1 unit of length in diameter. Here and below all distances are measured in monomer sizes (~3 nucleosomes, ~10\u00a0nm), density is measured in particles per cubic unit, and energies are measured in kT. We use the following parameters of the Langevin integrator: particle mass = 1 amu, friction coefficient = 0.01 ps-1, time step = 1ps, temperature = 300\u00a0K.\n\nNeighboring monomers are connected by harmonic bonds, with a potential $U=100(r\u22121)^{2}$ (here and below in units of kT). We model polymer stiffness with a three point interaction term, with the potential $U=5(1\u2212cos(\\alpha))$, where alpha is the angle between neighboring bonds.\n\nTo allow chain passing, which represents activity of topoisomerase II, we use a soft-core potential for interactions between monomers, similar to Naumova et al. (2013), Le et al. (2013). All monomers interact via a repulsive potential\n\n$$\nU=2.0(\u22121+(r/\\sqrt{(6\u20447)})^{12}\u22c5((r/\\sqrt{(6\u20447)})^{2}\u22121)\u22c5(823543)/46656)\n$$\n\nThis is a fast and efficient potential designed to be constant at 2.0 kT up to r\u00a0=\u00a00.7\u20130.8 and then quickly go to zero at r\u00a0=\u00a01.00.\n\nTo connect 1D LEF simulations with 3D polymer simulations, we first run 1D LEF dynamics for a total period of 10 condensin residence times, recording the state of the systems each unit of time. We then assign bonds to the monomers in polymer simulations according to the current position of condensins\u2019 heads. The two monomers held by the two heads of each condensin are connected by a harmonic bond with the potential $U=100(r\u22121)^{2}$. For each position of condensins\u2019 heads from the 1D model, we perform 40000 steps of Langevin dynamics. 3D conformations are recorded every 20000 steps.\n\nWe allow an overlap of the heads of collided condensins at the loop bases (i.e. two heads of collided condensins could occupy the same monomer instead of two adjacent monomers). We implement this by shifting the positions of the downstream heads of all condensins by 1 monomer downstream. This allows us to achieve the maximally possible compaction of the chromosomal core (one loop per one monomer of the axis).\n\nWe generate the initial conformation of a single chromosome as following: a polymer chain was spherically compacted to a density of 0.01 particle per unit length3, then allowed to equilibrate over 4,000,000 steps of Langevin dynamics, with a gradual increase of repulsion energy to equilibrate both the topology and the distribution of density inside the confining sphere. We generate the initial conformations of two sister chromatids by winding of two polymer chains along the conformation of a single chromosome, with one full turn each 100 monomers.\n\nWe simulate topo II depletion by adjusting two factors. First, we increase the energy of monomer overlap to 20 kT. Since this measure alone proved to be inefficient to prevent chain passing, we additionally increase the radius of repulsion up to 3 length units. In order to maintain the contour length of the polymer, we keep the length of a monomer bond at 1 and ignore repulsion between pairs of neighboring monomers, up to 3 monomers distance along the chain.\n\nTo study how the parameters of simulations affect the geometry of compacted chromosomes, we alter the following parameters: (a) increase 2x and (b) decrease 0.5x the number of condensins, (c) increase 2x and (d) decrease 0.5x the bending energy, (e) disallow overlaps of condensins at loop bases, thus simulating wide condensins; (f) reduce linear DNA density of the chromatin fiber to 400 bp/10\u00a0nm to model compaction of a 10\u00a0nm fiber of stacked nucleosomes and (e) increase linear DNA density of the chromatin fiber to 2400 bp/10\u00a0nm and increased the fiber thickness to 30\u00a0nm to model compaction of a 30\u00a0nm fiber.\n",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "e5fbe967-cbe7-4388-9051-e6695b3800ab",
+      "submission_id": "5eddec34-0a4f-4f4f-9c58-302230767aaf",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Antoine M van Oijen, University of Groningen , Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.14864.017](https://doi.org/10.7554/eLife.14864.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Compaction and segregation of sister chromatids via active loop extrusion\" for consideration by eLife.\n\nYour article has been favorably evaluated by Kevin Struhl (Senior editor) and three reviewers, one of whom, is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript proposes and analyzes a mechanism for the compaction and segregation of chromosomes based on the creation and growth of DNA loops formed by condensins. The major conclusion is that these loops have the effect of converting a globular polymer into an elongated unknotted, stiffer structure that resembles prophase chromosomes. Addition of topo II-like crossovers in the simulation results in a faithful recapitulation of disentanglement and segregation of sister chromatids. The manuscript is well-written and the model underlying the simulations provides a conceptually simple picture that makes a great deal of intuitive sense.\n\nEssential revisions:\n\n1) A concern is that the authors do not seem to be aware of a recent report that reaches quite similar conclusions. In Lawrimore et al. (Lawrimore et al., 2015), the authors demonstrate that loops, i.e. side chains relative to a primary axis, have the effect of elongating and stiffening the chain. Please compare Figure 8 (Lawrimore et al., MCB 2016) to Figures 2 and 4 in the current manuscript. In addition, there is compelling experimental evidence that such a loop organization contributes to tension in mitosis (see Figure 6 in Lawrimore et al., JCB 2015). From the physics perspective of the effect of side chains (i.e. loops) on stiffening the axis, there is a wealth of information (e.g. Panyukov et al., JPCB 2009; Panyukov et al., PRL 2009).\n\nWhile the inclusion of crossovers into their model does provide insight going beyond what previously has been published, the authors should place their condensing-loop results in the context of earlier published papers and carefully explain what aspects of their study are novel.\n\n2) The authors explain how a 2- or 0.5-fold change in condensin levels would impact the kinetics of loop formation and how long these loops are (Figure 2\u2014figure supplement 1 and a wider range in Video 6). It would be interesting to recapitulate in one figure the effect loop-size distribution (and thus compaction and chromatid thickness) on wider ranges of condensin to inform experiments that could titrate condensin expression levels. Addition of graphs showing the dependence of the important observables (loop size, loop coverage, chromatid thickness and length) on condensin concentration (exchange rate) would significantly strengthen the manuscript. The same for the crossover energy (as a proxy for topo II activity) and its effects on segregation and disentanglement (evolution of median gap between chromatids).\n",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "08b42f99-c982-46c0-a76c-2ce6012c5994",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C1",
+      "claim": "A single mechanism of loop extrusion by condensins can robustly compact, segregate and disentangle chromosomes, arriving at individualized chromatids with morphology observed in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Using polymer simulations of chromosome dynamics, we show that a single mechanism of loop extrusion by condensins can robustly compact, segregate and disentangle chromosomes, arriving at individualized chromatids with morphology observed in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by polymer simulation data presented throughout the manuscript, including Figures 2 and 3 and associated videos.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "ad677c84-639d-4b74-b7b4-d49c6768a266",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C2",
+      "claim": "Eukaryote chromosomes are condensed into elongated structures that maintain linear order.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the chromosomes are condensed into elongated structures that maintain the linear order, i.e. the order of genomic elements in the elongated chromosome resembles their order along the genome (Trask et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Trask et al., 1993.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "da865077-fdfb-492a-844c-75a80a4b5c6c",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C3",
+      "claim": "The compaction machinery distinguishes different chromosomes and chromatids, preferentially forming intra-chromatid cross-links.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the compaction machinery is able to distinguish different chromosomes and chromatids, preferentially forming intra-chromatid cross-links: if this were not the case, segregation would not occur (Nasmyth, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Nasmyth, 2001 and logical inference about segregation requirements.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "bc7f0b5c-f971-488d-962c-f74226c10d0a",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C4",
+      "claim": "The process of compaction is coincident with segregation of sister chromatids.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the process of compaction is coincident with segregation of sister chromatids, i.e. formation of two separate chromosomal bodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established observation about chromosome behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "d1d03921-b12e-4266-bae0-b178c1152473",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C5",
+      "claim": "Originally intertwined sister chromatids become topologically disentangled during compaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, originally intertwined sister chromatids become topologically disentangled, which is surprising, given the general tendency of polymers to become more intertwined as they are concentrated (Marko, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Marko, 2011 and contrasted with general polymer physics knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "f133501b-cc6b-4591-9af4-4688d8dd18b9",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C6",
+      "claim": "Indiscriminate cross-linking of chromosomes cannot produce the features of chromosome compaction observed during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "None of these features cannot be produced by indiscriminate cross-linking of chromosomes (Marko and Siggia, 1997), which suggests that a novel mechanism of polymer compaction must occur, namely 'lengthwise compaction' (Marko, 2009; 2011; Marko and Rippe, 2011), which permits each chromatid to be compacted while avoiding sticking of separate chromatids together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Marko and Siggia, 1997 and subsequent papers on lengthwise compaction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "d35ae627-fc97-4ae9-9953-ab69e1831942",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C7",
+      "claim": "Topoisomerase II and condensin are essential for metaphase chromosome compaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell-biological studies suggest that topoisomerase II and condensin are essential for metaphase chromosome compaction (Hirano and Mitchison, 1993; 1994; Wood and Earnshaw, 1990; Hirano, 1995), leading to the hypothesis that mitotic compaction-segregation relies on the interplay between the activities of these two protein complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "995adb0d-c366-43ba-b566-d9a131c9f100",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C8",
+      "claim": "Mitotic chromosomes consist of arrays of consecutive loops.",
+      "claim_type": "EXPLICIT",
+      "source": "Final structures of mitotic chromosomes were shown to consist arrays of consecutive loops (Paulson and Laemmli, 1977; Earnshaw and Laemmli, 1983; Naumova et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "d78aefe2-cef6-490f-b122-20b5726da90e",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C9",
+      "claim": "Loop extrusion creates an array of consecutive loops in individual chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "This 'loop extrusion' process creates an array of consecutive loops in individual chromosomes (Nasmyth, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Nasmyth, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "e226a7ea-ba3c-4622-a3ae-202193c84f57",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C10",
+      "claim": "Loop extrusion dynamics has two regimes: a sparse regime with little compaction and a dense regime with efficient compaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Simulations of this system at larger scales (Goloborodko et al., 2015) have established that there are two regimes of the steady-state dynamics: (i) a sparse regime where little compaction is achieved and, (ii) a dense regime where a dense array of stabilized loops efficiently compacts a chromosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior simulation work by Goloborodko et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "d0b2fadc-2d84-4416-909f-f359748ff60b",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C11",
+      "claim": "Loop extrusion in the dense regime generates chromatin loops that are stabilized by multiple stacked condensins.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, loop extrusion in the dense regime generates chromatin loops that are stabilized by multiple \"stacked\" condensins (Alipour and Marko, 2012), making loops robust against the known dynamic binding-unbinding of individual condensin complexes (Gerlich et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Alipour and Marko, 2012 and Gerlich et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "7989e306-2023-4633-91c6-005650266940",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C12",
+      "claim": "Each monomer in the simulation corresponds to three nucleosomes (600 bp).",
+      "claim_type": "EXPLICIT",
+      "source": "We consider a chromosome as a flexible polymer, coarse-graining to monomers of 10 nm diameter, each corresponding to three nucleosomes (600 bp).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model parameter definition stated in the Methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "330390c0-b805-4b8a-9a67-437e394322ac",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C13",
+      "claim": "The polymer has a persistence length of ~5 monomers (3 Kb).",
+      "claim_type": "EXPLICIT",
+      "source": "As earlier (Naumova et al., 2013; Fudenberg et al., 2015), the polymer has a persistence length of ~5 monomers (3 Kb), is subject to excluded volume interactions and to the activity of loop-extruding condensin molecules and topo II (see below, and in Fudenberg et al. (2015)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model parameter based on prior work cited.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "5739d25f-7ce2-4c51-bf3c-af5bcf946fdb",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C14",
+      "claim": "The simulations use chains of 50000 monomers, corresponding to 30 Mb.",
+      "claim_type": "EXPLICIT",
+      "source": "We simulate chains of 50000 monomers, which corresponds to 30 Mb, close to the size of the smallest human chromosomal arm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model parameter stated in the Methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "d29788d2-4bd0-44f5-832b-841809cd71bd",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C15",
+      "claim": "Only one condensin is permitted to bind to each monomer, modeling steric exclusion.",
+      "claim_type": "EXPLICIT",
+      "source": "As in prior lattice models of condensins (Goloborodko et al., 2015; Alipour and Marko, 2012), when two condensins collide on the chromatin, their translocation is blocked; equivalently, only one condensin is permitted to bind to each monomer, modeling their steric exclusion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model rule based on prior work cited.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "b743988e-445c-4b38-a606-9baaba2b2b1b",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C16",
+      "claim": "Loop extrusion by condensins and strand passing mediated by topo II convert initially globular interphase chromosomes into elongated, unknotted structures that resemble prophase chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our main qualitative result is that loop extrusion by condensins and strand passing mediated by topo II convert initially globular interphase chromosomes into elongated, unknotted and relatively stiff structures that closely resemble prophase chromosomes (Figure 2, Video 2, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 2, Video 2, and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "2fc140a9-2234-4ae4-b4f3-43458aa429ef",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C17",
+      "claim": "Compacted chromosomes have the 'noodle' morphology of prophase chromosomes observed in optical and electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "The compacted chromosomes have the familiar 'noodle' morphology (Figure 2BC) of prophase chromosomes observed in optical and electron microscopy (Yunis, 1981; Sumner, 1991).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data in Figure 2BC and citations to experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "3c6eab6e-1cdd-4f35-a3fa-81d344ff7e37",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C18",
+      "claim": "Simulated chromosomes preserve the underlying linear order of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the observed linear organization of prophase chromosomes, our simulated chromosomes preserve the underlying linear order of the genome (Yunis, 1981; Sumner, 1991; Yunis and Sanchez, 1975; Furey and Haussler, 2003; Strukov and Belmont, 2009) (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data in Figure 2C and citations to experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "27a10a4e-8c59-4015-a674-4230ab91f261",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C19",
+      "claim": "Simulated and human chromosomes have the linear compaction density of ~5 kb/nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the geometric parameters of our simulated chromosomes match the experimentally measured parameters of mid-prophase chromosomes Figure 2\u2014figure supplement 1: both simulated and human chromosomes have the linear compaction density of ~5 kb/nm (Yunis, 1981) and the radius of 300 nm (el-Alfy and Leblond, 1989; Sarkar et al., 2002; Kireeva et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data in Figure 2\u2014figure supplement 1 and citation to Yunis, 1981.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "f8ddac48-4a84-4898-b9c8-a9f72bf58484",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C20",
+      "claim": "Simulated and human chromosomes have a radius of 300 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the geometric parameters of our simulated chromosomes match the experimentally measured parameters of mid-prophase chromosomes Figure 2\u2014figure supplement 1: both simulated and human chromosomes have the linear compaction density of ~5 kb/nm (Yunis, 1981) and the radius of 300 nm (el-Alfy and Leblond, 1989; Sarkar et al., 2002; Kireeva et al., 2004).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data in Figure 2\u2014figure supplement 1 and citations to experimental measurements.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "d0f97f8b-10b4-4385-be5d-079d66b47c53",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C21",
+      "claim": "Chromosome compaction proceeds by two stages: fast formation of a loose, elongated morphology, followed by a slow maturation stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, simulations show that chromosome compaction proceeds by two stages (Figure 2AB): fast formation of a loose, elongated morphology, followed by a slow maturation stage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 2AB.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "519f05eb-d3f9-41b6-8fc6-9a001de08d88",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C22",
+      "claim": "During the initial 'loop formation stage', condensins associate with the chromosome and extrude loops until colliding with each other, rapidly compacting the chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "During the initial 'loop formation stage', condensins associate with the chromosome and extrude loops until colliding with each other, rapidly compacting the chromosome (Figure 2, Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 2 and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "6d803015-9999-462f-ba64-6b9133e1c724",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C23",
+      "claim": "The loop formation stage takes a fraction of the condensin exchange time.",
+      "claim_type": "EXPLICIT",
+      "source": "At the end of this stage, that takes a fraction of the condensin exchange time, a gapless array of loops is formed, the loops are relatively small, supported by single condensins, and the chromosome is long and thin (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "78bf53cd-2be2-436d-8a59-2ff085205314",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C24",
+      "claim": "During the maturation stage, due to condensin exchange some loops dissolve and divide while others grow and get reinforced by multiple condensins.",
+      "claim_type": "EXPLICIT",
+      "source": "During the following 'maturation stage', due to condensin exchange some loops dissolve and divide while others grow and get reinforced by multiple condensins (Goloborodko et al., 2015; Alipour and Marko, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation observations and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "b720c40f-371c-42f4-97ac-711339908552",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C25",
+      "claim": "The maturation stage takes several rounds of condensin exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "By the end this stage, which takes several rounds of condensin exchange, the rates of loop death becomes equal the rate of loop division and the chromosome achieves a steady state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "036a77ba-30de-4b56-b049-20ba20782c77",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C26",
+      "claim": "Chromosomes rapidly attain a condensed 'noodle'-like shape in early prophase, then spend the rest of prophase growing thicker and shorter.",
+      "claim_type": "EXPLICIT",
+      "source": "These dynamics are in accord with the observation that chromosomes rapidly attain a condensed 'noodle'-like shape in early prophase, then spend the rest of prophase growing thicker and shorter (Yunis, 1981; Sumner, 1991; Kireeva et al., 2004; Schwarzacher, 1976) (see Discussion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "0b283a1c-c3cc-436c-af85-bae61d423338",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C27",
+      "claim": "Loop extrusion and strand passing lead to spatial segregation and disentanglement of sister chromatids.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the activity of loop-extruding condensins in the presence of topo II leads to compactions of each of the sister chromatids into prophase-like 'noodle' structures (Video 3). Moreover, we observe that formed compact chromosomes (a) become segregated from each other, as evident by the drastic growth of the mean distance between their backbones (Figure 3A), and (b) become disentangled, as shown by the reduction of the winding number of their backbones (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 3A, 3B, and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "e7b8b0e4-b11e-4cc0-a5c4-a90c75ea6586",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C28",
+      "claim": "Loop extrusion and strand passing fold highly catenated sister chromatids into separate disentangled structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, loop extrusion and strand passing fold highly catenated sister chromatids into separate disentangled structures. (Figure 3C, Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 3C and Video 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "ecfa687d-bcd5-4ee6-92ac-7a791f8dd04e",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C29",
+      "claim": "Compaction, segregation and disentanglement of sister chromatids are highly reproducible and robust to changes in simulation parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite stochastic dynamics of condensins, compaction, segregation and disentanglement of sister chromatids are highly reproducible and robust to changes in simulation parameters. Disentanglement and segregation were observed in each of 16 simulation replicas (Video 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data across 16 replicas shown in Video 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "1c80550a-2f81-46a3-a4c3-34e5d1e82ae3",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C30",
+      "claim": "Chromatid segregation and disentanglement occur irrespective of fiber parameters and size of a single condensin molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "We also performed simulations with altered chromatin polymer parameters (Video 5). Again, we observed chromatids segregation and disentanglement irrespective of fiber parameters and size of a single condensin molecule.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data with varied parameters shown in Video 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "9606c802-c90a-47fb-bb64-d3355184874e",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C31",
+      "claim": "Condensin abundance on the chromosome significantly affects geometry of simulated chromatids.",
+      "claim_type": "EXPLICIT",
+      "source": "First, in agreement with the published literature (Savvidou et al., 2005; Steffensen et al., 2001; Hagstrom et al., 2002; Ono et al., 2013) the abundance of condensins on the chromosome significantly affects geometry of simulated chromatids (Video 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data in Video 6 and citations to experimental literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "1f040a69-d8d1-44a4-b1fc-fb912bd364df",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C32",
+      "claim": "Condensin depletion leads to a systematic three-fold increase in chromosome diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "When we varied abundance of chromosome-bound condensin by 20-fold (five-fold decrease and four-fold increase) we observed two major effects (Figure 2\u2014figure supplement 1). First, we noticed that condensin depletion leads to a systematic (three-fold) increase in chromosome diameter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "0d6cbc3f-fedc-4c9e-8691-7fad620bdf4a",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C33",
+      "claim": "Both five-fold increase and four-fold decrease of condensin abundance lead to about two-fold drop in linear compaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, we observed nonmonotonic changes in the linear density of chromatin in compacted chromosomes: both five-fold increase and four-fold decrease of condensin abundance lead to about two-fold drop in linear compaction (i.e. two-fold increase in chromosome length).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "65f69901-44d8-4aab-a7ee-3602cdb61408",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C34",
+      "claim": "Reduction of topo II activity prevents disentanglement and segregation of sister chromatids.",
+      "claim_type": "EXPLICIT",
+      "source": "In these simulations, segregation of sister chromatids is drastically slowed down (Video 7). This effect of topological constraints on kinetics of compaction and segregation is expected since each chromosome is a chain with open ends that thus can eventually segregate from each other. Reduction of topo II activity (increase of the crossing barrier) prevents disentanglement and segregation of sister chromatids, while having little effect of diameter of individual chromatids (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Video 7 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "ab21646e-7a26-4aae-a1bc-6eb2b2b4347e",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C35",
+      "claim": "Topo II is essential for rapid chromosome segregation and disentanglement.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that topo II is essential for rapid chromosome segregation and disentanglement, in accord with an earlier theoretical work (Sikorav and Jannink, 1994) and with experimental observations (Wood and Earnshaw, 1990; DiNardo et al., 1984; Newport and Spann, 1987; Shamu and Murray, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation data and citations to theoretical and experimental work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "123b282b-eeef-4d99-b2d1-06f4555e182c",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C36",
+      "claim": "Interference with cohesin removal or cleavage leads to compaction into elongated chromosomes that fail to segregate.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that cohesins are actively removed from chromosomal arms in prophase. Interference with processes of cohesins removal or cleavage leads to compaction into elongated chromosomes that fail to segregate (Kueng et al., 2006; Gandhi et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "204d8310-ab6a-42d3-8b8f-fded22fdaee9",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C37",
+      "claim": "If cohesins remain uncleaved on sister chromatids, compaction occurs but chromatids remain unsegregated.",
+      "claim_type": "EXPLICIT",
+      "source": "If cohesins remain uncleaved on sister chromatids (Video 8), we observe compaction of sister chromatids, that remain unsegregated, in agreement with experiments (Kueng et al., 2006; Gandhi et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data in Video 8 and citations to experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "64f41c1d-5509-4ed7-9e28-91443d116329",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C38",
+      "claim": "Loop extrusion is sufficient to compact, disentangle and segregate chromosomes from an open interphase state to a compacted, elongated prophase state.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that loop extrusion is sufficient to compact, disentangle and segregated chromosomes from a more open interphase state, to a compacted, elongated and linearly organized prophase state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the simulation results presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "25251817-292d-4558-82a6-b1f954243a50",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C39",
+      "claim": "A dense array of extruded loops makes a chromosome acquire a bottle-brush organization with loops forming side chains of the brush.",
+      "claim_type": "EXPLICIT",
+      "source": "A dense array of extruded loops makes a chromosome acquire a bottle-brush organization with loops forming side chains of the brush.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the simulation results based on polymer physics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "fce961cb-3a7c-4885-be63-e7ddd15fa981",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C40",
+      "claim": "Polymer bottle-brushes have been studied in physics both experimentally and computationally.",
+      "claim_type": "EXPLICIT",
+      "source": "Polymer bottle-brushes has been studied in physics both experimentally and computationally (Birshtein et al., 1987; Ball et al., 1991; Li and Witten, 1994), and has been proposed as models of mitotic and meiotic chromosomes (Marko and Siggia, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to polymer physics literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "7d47931f-b48e-4472-8af1-54c413e02c12",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C41",
+      "claim": "Excluded volume interactions and maximization of conformational entropy lead to repulsion of loops from each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Central to properties of chromosomal bottle-brushes are excluded volume interactions and maximization of conformational entropy that lead to repulsion of loops from each other (Marko and Siggia, 1997; Zhang and Heermann, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on polymer physics principles and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "ac6ab482-22f0-40c8-a8d0-9fa82ff3bcee",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C42",
+      "claim": "Loops stretch from the core and extend radially, similar to stretching of side chains in polymer bottle-brushes.",
+      "claim_type": "EXPLICIT",
+      "source": "Loops further stretch from the core and extend radially (Figure 4), similar to stretching of side chains in polymer bottle-brushes (Birshtein et al., 1987; Ball et al., 1991; Li and Witten, 1994).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data in Figure 4 and citations to polymer physics literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "ad440b19-8193-4d46-8942-30146fe99e43",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C43",
+      "claim": "Strong steric repulsion between loops stretches the core, maintaining linear ordering of loop bases along the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong steric repulsion between the loops, caused by excluded volume interactions, stretches the core, thus maintaining linear ordering of loop bases along the genome (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on simulation observations shown in Figure 2C and polymer physics reasoning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "43e67c5b-a3db-4f52-a88c-054af7b9e71d",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C44",
+      "claim": "Repulsion between loops leads to stiffening of the formed loop-bottle-brush.",
+      "claim_type": "EXPLICIT",
+      "source": "Repulsion between loops also leads to stiffening of the formed loop-bottle-brush, as chromosome bending would increase overlaps between the loops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on polymer physics reasoning about the consequences of loop repulsion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "f5f0eca5-89c1-491a-9a4d-2036cca06bcb",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C45",
+      "claim": "Steric repulsion between loops of sister chromatids leads to chromatid repulsion and segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Steric repulsion between loops of sister chromatid leads to segregation of sister chromatids that minimizes the overlap of their brush coronas (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on simulation observations shown in Figure 4B and polymer physics reasoning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "4f964a7c-c232-4cb9-90cb-33f01a79f46f",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C46",
+      "claim": "When excluded volume interactions are turned off, chromosomes do not assume a bottle-brush morphology and do not segregate.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this mechanism we performed simulations where excluded volume interactions have been turned off (Video 5). In these simulations, chromosomes did not assume a 'bottle-brush' morphology and did not segregate, which confirms the fundamental role of steric repulsion for chromosome segregation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Video 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "7a2fcd39-e02d-4069-9d2d-93a4b6cd17cd",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C47",
+      "claim": "Chromosomal compaction by loop extrusion generates the major features of chromosome reorganization observed during prophase.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that chromosomal compaction by loop extrusion generates the major features of chromosome reorganization observed during prophase (Nasmyth, 2001; Alipour and Marko, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary conclusion supported by simulation results and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "eff0da30-1406-4603-972c-a659bcd97fb0",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C48",
+      "claim": "Loop extrusion leads to lengthwise compaction and formation of cylindrical, brush-like chromatids, reducing chromosome length by roughly 25-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Loop extrusion leads to lengthwise compaction and formation of cylindrical, brush-like chromatids, reducing chromosome length by roughly 25-fold, while at the same time removing entanglements between separate chromatids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "13052472-f447-4565-880d-ae76ad84a815",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C49",
+      "claim": "Loop-extrusion exclusively forms bridges between loci of the same chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike models of prophase condensation based on crosslinking of randomly colliding fibers (Zhang and Heermann, 2011; Cheng et al., 2015), chromatid compaction by loop extrusion exclusively forms bridges between loci of the same chromosome (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is based on the model design shown in Figure 1A and contrasted with other models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "7bbb6438-0817-4e14-a2ac-670c1856404d",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C50",
+      "claim": "Loop-extrusion in bacteria, mediated by SMC proteins, forms intra-arm chromosomal bridges leading to lengthwise chromosome compaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, loop-extrusion in bacteria, mediated by SMC proteins, was suggested to form intra-arm chromosomal bridges leading to lengthwise chromosome compaction (Wang et al., 2015; Wilhelm et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies on bacterial chromosome organization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "e9765a7f-4087-4231-af95-f01ada63fff5",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C51",
+      "claim": "It takes an extended period of time for loop-extruding enzymes to maximally compact chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our computations indicate that it takes an extended period of time for loop-extruding enzymes to maximally compact chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "350b9643-af0b-4bfd-92dd-a89488e6c408",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C52",
+      "claim": "Maximal compaction is achieved by slow maturation of the loop array over multiple rounds of condensin exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "Maximal compaction is achieved by slow maturation of the loop array over multiple rounds of condensin exchange, rather than a single round of loop expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "8fefc4d7-ab11-4233-bd6d-7abf553eb2e6",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C53",
+      "claim": "It should take about 17 min to achieve maximal compaction, which roughly agrees with the duration of prophase in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming that condensin II in prophase exchanges with the fast rate of condensin I in metaphase (~200 s) (Gerlich et al., 2006) and using an average loop size of 100 kb, and an average spacing of condensins of 30 kb, it should take ~5 condensin exchange times, or about 17 min to achieve maximal compaction, which roughly agrees with the duration of prophase in human cells (Mora-Berm\u00fadez et al., 2007; Leblond and El-Alfy, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on calculations using simulation parameters and cited experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "c1eafa2d-98a9-47d3-82d2-e52a0c119047",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C54",
+      "claim": "Gradual compaction may explain why chromosomes of cells arrested in metaphase continue shrinking for many hours after the arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "This gradual compaction also may explain why chromosomes of cells arrested in metaphase continue shrinking for many hours after the arrest (condensin II metaphase exchange time ~hours (Gerlich et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a speculation based on simulation results and cited experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "5c075f30-da1b-4227-a203-863d29f3f502",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C55",
+      "claim": "The model does not fully capture the specifics of later stages of mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "First, our model does not fully capture the specifics of later stages of mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit limitation stated by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "8b5cbd4e-ce8d-4112-825c-d2d1567a3bce",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C56",
+      "claim": "The model only describes the action of condensin II in prophase.",
+      "claim_type": "EXPLICIT",
+      "source": "We model only the action of condensin II in prophase (Hirota et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model limitation stated by the authors with citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "42de88a8-f02e-4069-9af9-81a469bb0ca5",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C57",
+      "claim": "In metaphase, cells use additional mechanisms of lengthwise (axial) compaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Simple geometric considerations, Hi-C studies and mechanical perturbation of mitotic chromosomes show that, in metaphase, cells use additional mechanisms of lengthwise (axial) compaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from multiple types of evidence.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "af2b616a-26aa-4832-9565-3621c61ab694",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C58",
+      "claim": "Loop extrusion does not require specific interaction sites and is therefore robust to mutations and chromosome rearrangements.",
+      "claim_type": "EXPLICIT",
+      "source": "Loop extrusion does not require specific interaction sites (e.g. loop anchors or condensin binding sites) and is therefore robust to mutations and chromosome rearrangements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the model design and logical inference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "1aee6aa1-4c04-4a20-b9f6-41aa4a430e14",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C59",
+      "claim": "A large segment of chromatin inserted into a chromosome of a different species can be reliably compacted by mitotic machinery of the host.",
+      "claim_type": "EXPLICIT",
+      "source": "This robustness also explains how a large segment of chromatin inserted into a chromosome of a different species can be reliably compacted by mitotic machinery of the host (Dietzel and Belmont, 2001; Hirano and Mitchison, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental observations and explained by the model.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "6c5722b5-9933-4fab-a32d-9111362102a3",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C60",
+      "claim": "The diameter and length of simulated chromosomes depend on chromatin fiber properties as well as numbers of condensins.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, this model allows the morphology of mitotic chromosomes to be tuned. Most importantly, the diameter and length of the simulated chromosomes depend on chromatin fiber properties as well as numbers of condensins (Figure 2\u2014figure supplement 1); those dependences invite experimental tests.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "85700f0c-6203-4a02-b2b1-0da36d00932e",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C61",
+      "claim": "Loop extrusion is a highly robust mechanism to compact, segregate and disentangle chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we have shown that loop extrusion is a highly robust mechanism to compact, segregate and disentangle chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on all simulation results presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "48f4f619-0910-4a00-b382-cfdcd30ae252",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C62",
+      "claim": "Loop extrusion by cohesin could lead to formation of interphase topological association domains (TADs).",
+      "claim_type": "EXPLICIT",
+      "source": "In a recent study (Fudenberg et al., 2015) we also demonstrated that loop extrusion by another SMC complex, cohesin, could lead to formation of interphase topological association domains (TADs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to prior work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "df9042b1-7c8c-4dc9-a4a6-78a3fc2049e7",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C63",
+      "claim": "During interphase, cohesins are sparsely bound, extruding 50\u201370% of DNA into highly dynamic loops.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that during interphase, cohesins are sparsely bound, extruding 50\u201370% of DNA into highly dynamic loops, while metaphase condensins are bound more densely and more processive forming a dense array of stable loops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their modeling work.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "9d119233-7db2-43c2-ad18-7c0888a6ff07",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C64",
+      "claim": "Metaphase condensins are bound more densely and more processive than interphase cohesins, forming a dense array of stable loops.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that during interphase, cohesins are sparsely bound, extruding 50\u201370% of DNA into highly dynamic loops, while metaphase condensins are bound more densely and more processive forming a dense array of stable loops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their modeling work.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "a8cf44c6-0dcf-4a97-b178-340beca54b7d",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C65",
+      "claim": "Loop extrusion can be a universal mechanism of genome folding, to mediate functional interactions during interphase and to compact during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together these studies suggest that loop extrusion can be a universal mechanism of genome folding, to mediate functional interactions during interphase and to compact during mitosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a broad hypothesis proposed by the authors based on their modeling studies.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "e6a71daa-f3e7-4fe4-8124-42a2a68aa893",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C66",
+      "claim": "The model does not rely on a connected 'scaffold'.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it should be noted that our model does not rely on a connected 'scaffold', and that cleavage of the DNA will result in disintegration of the entire structure, as is observed experimentally (Poirier and Marko, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model property stated by the authors and supported by citation to experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "0f246de8-a8d5-41da-88b5-467705df1227",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C67",
+      "claim": "Formed loops are stably maintained by condensins despite their constant exchange with the nucleoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the model shows that formed loops are stably maintained by condensins despite their constant exchange with the nucleoplasm (Hirano and Mitchison, 1994; Gerlich et al., 2006; Oliveira et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results and citations to experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "3a5da289-d9f7-4c3e-b30d-36c4f2347681",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C68",
+      "claim": "Stability of loops is achieved by accumulation of several condensins at a loop base.",
+      "claim_type": "EXPLICIT",
+      "source": "This stability is achieved by accumulation of several condensins at a loop base (Goloborodko et al., 2015; Alipour and Marko, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results and citations to prior modeling work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "7adc909e-0653-4be8-a7f9-b3bebb41f71f",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C69",
+      "claim": "Each loop persists for times much longer than the residency time for individual condensins.",
+      "claim_type": "EXPLICIT",
+      "source": "Supported by multiple condensins, each loop persists for times much longer than the residency time for individual condensins (Goloborodko et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by simulation results and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "db1c02b2-3490-4b41-9dac-16177c942e77",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C70",
+      "claim": "A chain of loops naturally assumes a cylindrical shape, with loops forming the periphery and loop-extruding condensins at loop bases forming the core.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, our polymer simulations show that a chain of loops naturally assumes a cylindrical shape, with loops forming the periphery of the cylinder and loop-extruding condensins at loop bases forming the core (Figure 2C, Video 2), as was predicted in Nasmyth (2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by simulation data shown in Figure 2C and Video 2, and citation to prior prediction.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "870e9adf-92e5-4473-b5a9-96ef194baee1",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C71",
+      "claim": "Condensin-staining experiments reveal cores in the middle of in vivo and reconstituted mitotic chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Condensin-staining experiments reveal similar cores in the middle of in vivo and reconstituted mitotic chromosomes (Maeshima et al., 2005; Maeshima and Laemmli, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental observations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "b2f41f12-6ee9-4ea0-923a-ccd92196d8ce",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C72",
+      "claim": "Condensin cores appear as early as late prophase in experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with experiments where condensin cores appear as early as late prophase (Kireeva et al., 2004), we observe rapid formation of condensin core in simulations (Figure 2, Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citation to experimental observations and simulation data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "ba6f09fa-d24f-4ec9-b1bb-07488f2ae5b9",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C73",
+      "claim": "The structure of chromosomes compacted by loop extrusion is consistent with the loop-compaction picture of mitotic and meiotic chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the structure of chromosomes compacted by loop extrusion is consistent with the loop-compaction picture of mitotic (Paulson and Laemmli, 1977; Maeshima and Laemmli, 2003; Marsden and Laemmli, 1979) and meiotic chromosomes (Liang et al., 2015; Kleckner, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion based on simulation results and citations to experimental observations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "ab6d48dc-a16a-4386-b18b-8a2cbaa6f6b6",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C74",
+      "claim": "A recent study suggested a bottle-brush organization of centromeres in yeast, where centromere chromatin loops lead to separation of sister centromeres.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study also suggested a bottle-brush organization of centromeres in yeast, where centromere chromatin loops lead to separation of sister centromeres and create spring-like properties of the centromere in mitosis (Lawrimore et al., 2015; 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to recent experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "75b325e1-a71b-49fc-a0f7-ec8a181f0f0b",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C75",
+      "claim": "The simulations use 1000 condensins per 30 Mb chromosome, as measured experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "In our simulations, we use the separation of 30 kb (1000 condensins per 30 Mb chromosome, as measured in Fukui and Uchiyama (2007) and the processivity of 830 kb such that condensins form a dense array of gapless loops with the average loop length of 100 kb, which agrees with available experimental observations (Paulson and Laemmli, 1977; Earnshaw and Laemmli, 1983; Naumova et al., 2013; Jackson et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a model parameter based on cited experimental measurements.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "3b987e67-2b14-4d87-8769-c5121640ab4a",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C76",
+      "claim": "The simulations use condensin processivity of 830 kb such that condensins form a dense array of gapless loops with average loop length of 100 kb.",
+      "claim_type": "EXPLICIT",
+      "source": "In our simulations, we use the separation of 30 kb (1000 condensins per 30 Mb chromosome, as measured in Fukui and Uchiyama (2007) and the processivity of 830 kb such that condensins form a dense array of gapless loops with the average loop length of 100 kb, which agrees with available experimental observations (Paulson and Laemmli, 1977; Earnshaw and Laemmli, 1983; Naumova et al., 2013; Jackson et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a model parameter chosen to match cited experimental observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "36244d66-8561-4ea7-b5f7-44d57211cfab",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C77",
+      "claim": "Initially, chromosomes are compacted to the density of chromatin inside the human nucleus and topologically equilibrated.",
+      "claim_type": "EXPLICIT",
+      "source": "Initially, chromosomes are compacted to the density of chromatin inside the human nucleus and topologically equilibrated, thus assuming an equilibrium globular conformation, corresponding to a chromosomal territory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the initial conditions in the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "60c251a5-daee-4955-9634-54bd5e0dbc0a",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C78",
+      "claim": "In simulations of sister chromatid segregation, the second chromatid traces the same path as the first at a distance of 50 nm and winds one full turn per 100 monomers (60 kb).",
+      "claim_type": "EXPLICIT",
+      "source": "In the simulations of sister chromatid segregation, the initial conformation of one chromatid is generated as above, while the second chromatid traces the same path at a distance of 50 nm and winds one full turn per 100 monomers (60 kb).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the initial conditions in the simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "c03250b3-dc37-4ba1-bd7e-bf60e63453fd",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C79",
+      "claim": "The initial state of two chromatids running parallel and highly entangled represents the most challenging case for segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "In this state, two chromatids run parallel to each other and are highly entangled, while residing in the same chromosome territory. This represents to the most challenging case for segregation of sister chromatids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the simulation design choice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "edb9a8a2-7cb1-49db-9e72-a98f711432ff",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C80",
+      "claim": "The model uses OpenMM, a high-performance GPU-assisted molecular dynamics API.",
+      "claim_type": "EXPLICIT",
+      "source": "To perform Langevin dynamics polymer simulations we use OpenMM, a high-performance GPU-assisted molecular dynamics (API Eastman and Pande, 2010; Eastman et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational methods with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "9908351d-937c-40f5-9900-9fdc205c9edc",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "claim_id": "C81",
+      "claim": "The simulations use a soft-core potential for interactions between monomers to allow chain passing, representing activity of topoisomerase II.",
+      "claim_type": "EXPLICIT",
+      "source": "To allow chain passing, which represents activity of topoisomerase II, we use a soft-core potential for interactions between monomers, similar to Naumova et al. (2013), Le et al. (2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model design with citations to similar approaches.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5915a693-5cbb-4edf-81ce-1868192c4d8a",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a computational model of chromosome compaction using polymer simulations with specific parameters: monomers representing 600 bp (3 nucleosomes), persistence length of ~3 kb, chains of 50,000 monomers (30 Mb), 1000 condensins per chromosome with 30 kb spacing, processivity of 830 kb yielding ~100 kb average loop length, and soft-core potentials to simulate topoisomerase II activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15, C75-C78, C80-C81 describe the model parameters and computational implementation. These are clearly stated methodological choices supported by citations to prior work and experimental measurements. The parameters are internally consistent and appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "c973a69d-8727-47f2-919e-99f489869c79",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Loop extrusion by condensins and topoisomerase II-mediated strand passing convert globular interphase chromosomes into elongated prophase-like structures with 'noodle' morphology, linear genomic order, cylindrical shape with condensin cores, and geometric parameters (linear compaction ~5 kb/nm, radius ~300 nm) matching experimental observations of mid-prophase chromosomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20, C70, C72-C73 demonstrate that simulations reproduce key morphological features of prophase chromosomes. The results are supported by simulation data (Figures 2, 2-supplement 1, Videos 2) and quantitative agreement with multiple experimental measurements cited from the literature. The cylindrical bottle-brush structure with condensin cores emerges naturally from the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "8c00f1e2-236c-4c08-87e2-3e46197e2346",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Chromosome compaction proceeds through two kinetic stages: a rapid 'loop formation stage' where condensins extrude loops until collision, followed by a slower 'maturation stage' where loops are reinforced by multiple condensins through exchange dynamics, with loops stabilized by condensin stacking persisting longer than individual condensin residence times.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C26, C51-C52, C67-C69 describe the biphasic compaction kinetics observed in simulations (Figure 2AB). The two-stage process is well-documented in the simulation data and consistent with experimental observations of prophase chromosome morphology changes. The mechanism of loop stabilization through condensin stacking is supported by prior modeling work (Goloborodko et al., 2015; Alipour and Marko, 2012).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "ec20a7f5-6ce3-4569-9773-057ee6b5e83c",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Loop extrusion combined with topoisomerase II activity leads to spatial segregation and topological disentanglement of initially intertwined sister chromatids, with this process being highly reproducible across simulation replicates and robust to variations in chromatin fiber parameters and condensin size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 demonstrate sister chromatid segregation and disentanglement. The results are supported by simulation data showing increased inter-chromatid distance and reduced winding number (Figure 3A-C, Videos 3-5), with reproducibility demonstrated across 16 replicas and robustness shown through parameter variation studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "d2eaffcf-9df1-41fa-8c34-99afce8476a3",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Condensin abundance significantly affects chromosome geometry in a non-monotonic manner: depletion causes systematic three-fold increase in diameter, while both five-fold increase and four-fold decrease in condensin abundance lead to approximately two-fold reduction in linear compaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33, C60 describe the effects of varying condensin abundance on chromosome morphology. The non-monotonic relationship is supported by simulation data (Figure 2-supplement 1, Video 6) and consistent with experimental literature. The mechanistic explanations for the non-monotonic behavior (excessive scaffold vs. gaps between loops) are reasonable interpretations of the simulation results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "6c6d113a-bf4c-4d28-9f39-8eb9ecde3394",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Topoisomerase II is essential for rapid chromosome segregation and disentanglement, with reduction of topo II activity (increased crossing barrier) preventing disentanglement and segregation while having little effect on individual chromatid diameter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C35 demonstrate the role of topoisomerase II in the model. The results are supported by simulations with varied crossing barriers (Figure 3-supplement 1, Video 7) and consistent with prior theoretical work (Sikorav and Jannink, 1994) and experimental observations. The differential effect on segregation vs. compaction is clearly shown.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "9de9257b-72ab-453f-ba0a-ba2e4edd4b0d",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "When cohesins remain uncleaved on sister chromatids, compaction occurs but chromatids fail to segregate, consistent with experimental observations of cohesin removal interference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37 test the role of cohesin in the model. The simulation results (Video 8) showing compaction without segregation when cohesins remain are consistent with experimental observations (Kueng et al., 2006; Gandhi et al., 2006), validating this aspect of the model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "192db675-f97d-4134-806d-72d9ae9b58d8",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Loop extrusion creates a bottle-brush chromosome organization where excluded volume interactions and conformational entropy cause loops to repel each other, extend radially, stretch and stiffen the core maintaining linear order, and drive sister chromatid segregation by minimizing overlap of brush coronas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C46 provide the physical mechanism explaining simulation results. The bottle-brush model is well-established in polymer physics (cited literature), and the simulation data (Figure 4, Video 5) directly demonstrate that turning off excluded volume interactions abolishes both bottle-brush morphology and segregation, confirming the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "6a8b59a6-92cd-440b-add5-1b6c0a58a7de",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Using experimentally measured condensin exchange rates (~200 s for condensin I in metaphase) and simulation parameters (100 kb loops, 30 kb condensin spacing), the model predicts maximal compaction should take ~5 exchange times or ~17 minutes, roughly agreeing with prophase duration in human cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C53 makes a quantitative prediction about timing. However, the calculation assumes condensin II in prophase exchanges at the fast rate of condensin I in metaphase, which is explicitly stated as an assumption. The authors cite that condensin II metaphase exchange time is ~hours (Gerlich et al., 2006), creating uncertainty about whether the assumed rate is appropriate. The agreement with prophase duration may be fortuitous given this assumption.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "c8e18763-3a87-4e82-bf84-307e0b41ee3e",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Gradual compaction through loop maturation may explain why chromosomes of cells arrested in metaphase continue shrinking for many hours after arrest.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C54 is explicitly speculative ('may explain'). While the gradual compaction observed in simulations is well-supported, the connection to metaphase-arrested cells is a hypothesis rather than a tested prediction. The authors note condensin II metaphase exchange time is ~hours, making this plausible but unverified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "2b2705e3-ab6b-4d1c-8ec2-ad4e1ca40f69",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Loop extrusion is sufficient to compact, segregate, and disentangle chromosomes from an open interphase state to a compacted, elongated prophase state, generating major features of chromosome reorganization observed during prophase including ~25-fold length reduction and cylindrical brush-like chromatid formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C38, C47-C48, C61 represent the main conclusions of the study. These summary claims are well-supported by the comprehensive simulation results demonstrating compaction (Figures 2), segregation and disentanglement (Figure 3), mechanistic understanding (Figure 4), and robustness across parameter variations. The claims appropriately synthesize the detailed findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "47869ca4-cbb0-4c97-8a1b-303127040913",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Loop extrusion exclusively forms intra-chromosomal bridges without requiring specific interaction sites, making it robust to mutations and chromosome rearrangements and explaining how foreign chromatin segments can be reliably compacted by host mitotic machinery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C58-C59 describe key properties of the loop extrusion mechanism. The intra-chromosomal specificity is inherent to the model design (Figure 1A) and contrasts with random crosslinking models. The robustness to sequence and the explanation for cross-species chromatin compaction (supported by citations to Dietzel and Belmont, 2001; Hirano and Mitchison, 1991) are logical consequences of the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "ddb7c41c-44ba-4702-b144-438c6d96454c",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The model has limitations: it does not fully capture later stages of mitosis, only describes condensin II action in prophase, and does not account for additional axial compaction mechanisms used in metaphase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 explicitly state model limitations. These are appropriately acknowledged by the authors and represent honest assessment of the model's scope. The limitations are reasonable given the focus on prophase chromosome organization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "5c368897-3d36-42ea-8cd9-f971cd021a0e",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Loop extrusion may be a universal mechanism of genome folding, with cohesins sparsely bound during interphase extruding 50-70% of DNA into dynamic loops to form TADs, while condensins are more densely bound and processive in metaphase forming stable loop arrays, mediating functional interactions during interphase and compaction during mitosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C62-C65 propose a broad hypothesis extending beyond the current work. While C62 is supported by citation to prior work (Fudenberg et al., 2015), claims C63-C65 are explicitly speculative ('we suggest'). The hypothesis is plausible and integrates multiple studies, but represents proposed future work rather than demonstrated results. The specific quantitative predictions (50-70% DNA in loops, density and processivity differences) lack direct supporting evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "26cb1b2e-e2af-432e-ac13-c11dfd2206eb",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The model does not rely on a connected scaffold, and DNA cleavage would result in disintegration of the entire structure, as observed experimentally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 describes a key property of the model distinguishing it from scaffold-based models. The prediction that DNA cleavage causes disintegration is a logical consequence of the model design and is supported by experimental observations (Poirier and Marko, 2002).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "ca694bbe-44b3-4756-b238-48cdac8e42b2",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background knowledge establishes that eukaryotic chromosome compaction involves: elongated structures maintaining linear order, preferential intra-chromatid crosslinking, coincident compaction and segregation, topological disentanglement, essential roles for topoisomerase II and condensin, arrays of consecutive loops, and loop extrusion dynamics with sparse and dense regimes where loops are stabilized by multiple stacked condensins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C11 summarize established knowledge from the literature that motivates the study. These are appropriately cited background claims supported by multiple experimental and theoretical studies. They provide the foundation for the modeling work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    },
+    {
+      "id": "a535e5f0-2549-46f5-9892-85da1c4fcde2",
+      "content_id": "51b2f122-2120-49d7-8e96-e18faf7f4cc2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Loop extrusion mechanisms have been observed or proposed in other systems: SMC proteins in bacteria form intra-arm bridges leading to lengthwise compaction, condensin cores appear in mitotic chromosomes, and bottle-brush organization has been suggested for yeast centromeres.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C71, C74 cite related findings from other systems that support the generality of loop extrusion mechanisms. These are appropriately cited observations from the literature (bacterial SMC proteins, condensin staining experiments, yeast centromere organization) that provide broader context for the model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:47:42.382115Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7989e306-2023-4633-91c6-005650266940",
+      "result_id": "5915a693-5cbb-4edf-81ce-1868192c4d8a"
+    },
+    {
+      "claim_id": "330390c0-b805-4b8a-9a67-437e394322ac",
+      "result_id": "5915a693-5cbb-4edf-81ce-1868192c4d8a"
+    },
+    {
+      "claim_id": "5739d25f-7ce2-4c51-bf3c-af5bcf946fdb",
+      "result_id": "5915a693-5cbb-4edf-81ce-1868192c4d8a"
+    },
+    {
+      "claim_id": "d29788d2-4bd0-44f5-832b-841809cd71bd",
+      "result_id": "5915a693-5cbb-4edf-81ce-1868192c4d8a"
+    },
+    {
+      "claim_id": "75b325e1-a71b-49fc-a0f7-ec8a181f0f0b",
+      "result_id": "5915a693-5cbb-4edf-81ce-1868192c4d8a"
+    },
+    {
+      "claim_id": "3b987e67-2b14-4d87-8769-c5121640ab4a",
+      "result_id": "5915a693-5cbb-4edf-81ce-1868192c4d8a"
+    },
+    {
+      "claim_id": "36244d66-8561-4ea7-b5f7-44d57211cfab",
+      "result_id": "5915a693-5cbb-4edf-81ce-1868192c4d8a"
+    },
+    {
+      "claim_id": "60c251a5-daee-4955-9634-54bd5e0dbc0a",
+      "result_id": "5915a693-5cbb-4edf-81ce-1868192c4d8a"
+    },
+    {
+      "claim_id": "edb9a8a2-7cb1-49db-9e72-a98f711432ff",
+      "result_id": "5915a693-5cbb-4edf-81ce-1868192c4d8a"
+    },
+    {
+      "claim_id": "9908351d-937c-40f5-9900-9fdc205c9edc",
+      "result_id": "5915a693-5cbb-4edf-81ce-1868192c4d8a"
+    },
+    {
+      "claim_id": "b743988e-445c-4b38-a606-9baaba2b2b1b",
+      "result_id": "c973a69d-8727-47f2-919e-99f489869c79"
+    },
+    {
+      "claim_id": "2fc140a9-2234-4ae4-b4f3-43458aa429ef",
+      "result_id": "c973a69d-8727-47f2-919e-99f489869c79"
+    },
+    {
+      "claim_id": "3c6eab6e-1cdd-4f35-a3fa-81d344ff7e37",
+      "result_id": "c973a69d-8727-47f2-919e-99f489869c79"
+    },
+    {
+      "claim_id": "27a10a4e-8c59-4015-a674-4230ab91f261",
+      "result_id": "c973a69d-8727-47f2-919e-99f489869c79"
+    },
+    {
+      "claim_id": "f8ddac48-4a84-4898-b9c8-a9f72bf58484",
+      "result_id": "c973a69d-8727-47f2-919e-99f489869c79"
+    },
+    {
+      "claim_id": "db1c02b2-3490-4b41-9dac-16177c942e77",
+      "result_id": "c973a69d-8727-47f2-919e-99f489869c79"
+    },
+    {
+      "claim_id": "b2f41f12-6ee9-4ea0-923a-ccd92196d8ce",
+      "result_id": "c973a69d-8727-47f2-919e-99f489869c79"
+    },
+    {
+      "claim_id": "ba6f09fa-d24f-4ec9-b1bb-07488f2ae5b9",
+      "result_id": "c973a69d-8727-47f2-919e-99f489869c79"
+    },
+    {
+      "claim_id": "d0f97f8b-10b4-4385-be5d-079d66b47c53",
+      "result_id": "8c00f1e2-236c-4c08-87e2-3e46197e2346"
+    },
+    {
+      "claim_id": "519f05eb-d3f9-41b6-8fc6-9a001de08d88",
+      "result_id": "8c00f1e2-236c-4c08-87e2-3e46197e2346"
+    },
+    {
+      "claim_id": "6d803015-9999-462f-ba64-6b9133e1c724",
+      "result_id": "8c00f1e2-236c-4c08-87e2-3e46197e2346"
+    },
+    {
+      "claim_id": "78bf53cd-2be2-436d-8a59-2ff085205314",
+      "result_id": "8c00f1e2-236c-4c08-87e2-3e46197e2346"
+    },
+    {
+      "claim_id": "b720c40f-371c-42f4-97ac-711339908552",
+      "result_id": "8c00f1e2-236c-4c08-87e2-3e46197e2346"
+    },
+    {
+      "claim_id": "036a77ba-30de-4b56-b049-20ba20782c77",
+      "result_id": "8c00f1e2-236c-4c08-87e2-3e46197e2346"
+    },
+    {
+      "claim_id": "e9765a7f-4087-4231-af95-f01ada63fff5",
+      "result_id": "8c00f1e2-236c-4c08-87e2-3e46197e2346"
+    },
+    {
+      "claim_id": "350b9643-af0b-4bfd-92dd-a89488e6c408",
+      "result_id": "8c00f1e2-236c-4c08-87e2-3e46197e2346"
+    },
+    {
+      "claim_id": "0f246de8-a8d5-41da-88b5-467705df1227",
+      "result_id": "8c00f1e2-236c-4c08-87e2-3e46197e2346"
+    },
+    {
+      "claim_id": "3a5da289-d9f7-4c3e-b30d-36c4f2347681",
+      "result_id": "8c00f1e2-236c-4c08-87e2-3e46197e2346"
+    },
+    {
+      "claim_id": "7adc909e-0653-4be8-a7f9-b3bebb41f71f",
+      "result_id": "8c00f1e2-236c-4c08-87e2-3e46197e2346"
+    },
+    {
+      "claim_id": "0b283a1c-c3cc-436c-af85-bae61d423338",
+      "result_id": "ec20a7f5-6ce3-4569-9773-057ee6b5e83c"
+    },
+    {
+      "claim_id": "e7b8b0e4-b11e-4cc0-a5c4-a90c75ea6586",
+      "result_id": "ec20a7f5-6ce3-4569-9773-057ee6b5e83c"
+    },
+    {
+      "claim_id": "ecfa687d-bcd5-4ee6-92ac-7a791f8dd04e",
+      "result_id": "ec20a7f5-6ce3-4569-9773-057ee6b5e83c"
+    },
+    {
+      "claim_id": "1c80550a-2f81-46a3-a4c3-34e5d1e82ae3",
+      "result_id": "ec20a7f5-6ce3-4569-9773-057ee6b5e83c"
+    },
+    {
+      "claim_id": "9606c802-c90a-47fb-bb64-d3355184874e",
+      "result_id": "d2eaffcf-9df1-41fa-8c34-99afce8476a3"
+    },
+    {
+      "claim_id": "1f040a69-d8d1-44a4-b1fc-fb912bd364df",
+      "result_id": "d2eaffcf-9df1-41fa-8c34-99afce8476a3"
+    },
+    {
+      "claim_id": "0d6cbc3f-fedc-4c9e-8691-7fad620bdf4a",
+      "result_id": "d2eaffcf-9df1-41fa-8c34-99afce8476a3"
+    },
+    {
+      "claim_id": "6c5722b5-9933-4fab-a32d-9111362102a3",
+      "result_id": "d2eaffcf-9df1-41fa-8c34-99afce8476a3"
+    },
+    {
+      "claim_id": "65f69901-44d8-4aab-a7ee-3602cdb61408",
+      "result_id": "6c6d113a-bf4c-4d28-9f39-8eb9ecde3394"
+    },
+    {
+      "claim_id": "ab21646e-7a26-4aae-a1bc-6eb2b2b4347e",
+      "result_id": "6c6d113a-bf4c-4d28-9f39-8eb9ecde3394"
+    },
+    {
+      "claim_id": "123b282b-eeef-4d99-b2d1-06f4555e182c",
+      "result_id": "9de9257b-72ab-453f-ba0a-ba2e4edd4b0d"
+    },
+    {
+      "claim_id": "204d8310-ab6a-42d3-8b8f-fded22fdaee9",
+      "result_id": "9de9257b-72ab-453f-ba0a-ba2e4edd4b0d"
+    },
+    {
+      "claim_id": "25251817-292d-4558-82a6-b1f954243a50",
+      "result_id": "192db675-f97d-4134-806d-72d9ae9b58d8"
+    },
+    {
+      "claim_id": "fce961cb-3a7c-4885-be63-e7ddd15fa981",
+      "result_id": "192db675-f97d-4134-806d-72d9ae9b58d8"
+    },
+    {
+      "claim_id": "7d47931f-b48e-4472-8af1-54c413e02c12",
+      "result_id": "192db675-f97d-4134-806d-72d9ae9b58d8"
+    },
+    {
+      "claim_id": "ac6ab482-22f0-40c8-a8d0-9fa82ff3bcee",
+      "result_id": "192db675-f97d-4134-806d-72d9ae9b58d8"
+    },
+    {
+      "claim_id": "ad440b19-8193-4d46-8942-30146fe99e43",
+      "result_id": "192db675-f97d-4134-806d-72d9ae9b58d8"
+    },
+    {
+      "claim_id": "43e67c5b-a3db-4f52-a88c-054af7b9e71d",
+      "result_id": "192db675-f97d-4134-806d-72d9ae9b58d8"
+    },
+    {
+      "claim_id": "f5f0eca5-89c1-491a-9a4d-2036cca06bcb",
+      "result_id": "192db675-f97d-4134-806d-72d9ae9b58d8"
+    },
+    {
+      "claim_id": "4f964a7c-c232-4cb9-90cb-33f01a79f46f",
+      "result_id": "192db675-f97d-4134-806d-72d9ae9b58d8"
+    },
+    {
+      "claim_id": "8fefc4d7-ab11-4233-bd6d-7abf553eb2e6",
+      "result_id": "6a8b59a6-92cd-440b-add5-1b6c0a58a7de"
+    },
+    {
+      "claim_id": "c1eafa2d-98a9-47d3-82d2-e52a0c119047",
+      "result_id": "c8e18763-3a87-4e82-bf84-307e0b41ee3e"
+    },
+    {
+      "claim_id": "08b42f99-c982-46c0-a76c-2ce6012c5994",
+      "result_id": "2b2705e3-ab6b-4d1c-8ec2-ad4e1ca40f69"
+    },
+    {
+      "claim_id": "64f41c1d-5509-4ed7-9e28-91443d116329",
+      "result_id": "2b2705e3-ab6b-4d1c-8ec2-ad4e1ca40f69"
+    },
+    {
+      "claim_id": "7a2fcd39-e02d-4069-9d2d-93a4b6cd17cd",
+      "result_id": "2b2705e3-ab6b-4d1c-8ec2-ad4e1ca40f69"
+    },
+    {
+      "claim_id": "eff0da30-1406-4603-972c-a659bcd97fb0",
+      "result_id": "2b2705e3-ab6b-4d1c-8ec2-ad4e1ca40f69"
+    },
+    {
+      "claim_id": "85700f0c-6203-4a02-b2b1-0da36d00932e",
+      "result_id": "2b2705e3-ab6b-4d1c-8ec2-ad4e1ca40f69"
+    },
+    {
+      "claim_id": "13052472-f447-4565-880d-ae76ad84a815",
+      "result_id": "47869ca4-cbb0-4c97-8a1b-303127040913"
+    },
+    {
+      "claim_id": "af2b616a-26aa-4832-9565-3621c61ab694",
+      "result_id": "47869ca4-cbb0-4c97-8a1b-303127040913"
+    },
+    {
+      "claim_id": "1aee6aa1-4c04-4a20-b9f6-41aa4a430e14",
+      "result_id": "47869ca4-cbb0-4c97-8a1b-303127040913"
+    },
+    {
+      "claim_id": "5c075f30-da1b-4227-a203-863d29f3f502",
+      "result_id": "ddb7c41c-44ba-4702-b144-438c6d96454c"
+    },
+    {
+      "claim_id": "8b5cbd4e-ce8d-4112-825c-d2d1567a3bce",
+      "result_id": "ddb7c41c-44ba-4702-b144-438c6d96454c"
+    },
+    {
+      "claim_id": "42de88a8-f02e-4069-9af9-81a469bb0ca5",
+      "result_id": "ddb7c41c-44ba-4702-b144-438c6d96454c"
+    },
+    {
+      "claim_id": "48f4f619-0910-4a00-b382-cfdcd30ae252",
+      "result_id": "5c368897-3d36-42ea-8cd9-f971cd021a0e"
+    },
+    {
+      "claim_id": "df9042b1-7c8c-4dc9-a4a6-78a3fc2049e7",
+      "result_id": "5c368897-3d36-42ea-8cd9-f971cd021a0e"
+    },
+    {
+      "claim_id": "9d119233-7db2-43c2-ad18-7c0888a6ff07",
+      "result_id": "5c368897-3d36-42ea-8cd9-f971cd021a0e"
+    },
+    {
+      "claim_id": "a8cf44c6-0dcf-4a97-b178-340beca54b7d",
+      "result_id": "5c368897-3d36-42ea-8cd9-f971cd021a0e"
+    },
+    {
+      "claim_id": "e6a71daa-f3e7-4fe4-8124-42a2a68aa893",
+      "result_id": "26cb1b2e-e2af-432e-ac13-c11dfd2206eb"
+    },
+    {
+      "claim_id": "ad677c84-639d-4b74-b7b4-d49c6768a266",
+      "result_id": "ca694bbe-44b3-4756-b238-48cdac8e42b2"
+    },
+    {
+      "claim_id": "da865077-fdfb-492a-844c-75a80a4b5c6c",
+      "result_id": "ca694bbe-44b3-4756-b238-48cdac8e42b2"
+    },
+    {
+      "claim_id": "bc7f0b5c-f971-488d-962c-f74226c10d0a",
+      "result_id": "ca694bbe-44b3-4756-b238-48cdac8e42b2"
+    },
+    {
+      "claim_id": "d1d03921-b12e-4266-bae0-b178c1152473",
+      "result_id": "ca694bbe-44b3-4756-b238-48cdac8e42b2"
+    },
+    {
+      "claim_id": "f133501b-cc6b-4591-9af4-4688d8dd18b9",
+      "result_id": "ca694bbe-44b3-4756-b238-48cdac8e42b2"
+    },
+    {
+      "claim_id": "d35ae627-fc97-4ae9-9953-ab69e1831942",
+      "result_id": "ca694bbe-44b3-4756-b238-48cdac8e42b2"
+    },
+    {
+      "claim_id": "995adb0d-c366-43ba-b566-d9a131c9f100",
+      "result_id": "ca694bbe-44b3-4756-b238-48cdac8e42b2"
+    },
+    {
+      "claim_id": "d78aefe2-cef6-490f-b122-20b5726da90e",
+      "result_id": "ca694bbe-44b3-4756-b238-48cdac8e42b2"
+    },
+    {
+      "claim_id": "e226a7ea-ba3c-4622-a3ae-202193c84f57",
+      "result_id": "ca694bbe-44b3-4756-b238-48cdac8e42b2"
+    },
+    {
+      "claim_id": "d0b2fadc-2d84-4416-909f-f359748ff60b",
+      "result_id": "ca694bbe-44b3-4756-b238-48cdac8e42b2"
+    },
+    {
+      "claim_id": "7bbb6438-0817-4e14-a2ac-670c1856404d",
+      "result_id": "a535e5f0-2549-46f5-9892-85da1c4fcde2"
+    },
+    {
+      "claim_id": "870e9adf-92e5-4473-b5a9-96ef194baee1",
+      "result_id": "a535e5f0-2549-46f5-9892-85da1c4fcde2"
+    },
+    {
+      "claim_id": "ab6d48dc-a16a-4386-b18b-8a2cbaa6f6b6",
+      "result_id": "a535e5f0-2549-46f5-9892-85da1c4fcde2"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The study used two male rhesus monkeys in a gambling task with specific visual target parameters (2.25\u00d72.25\u00b0 squares, 10\u00b0 from fixation at 45/135/225/315\u00b0 angles) and a color-reward mapping system (cyan/red/blue/green indicating 1/3/5/9 units of water). The study was conducted under approved IACUC protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide explicit methodological details about subjects, ethical approval, and task parameters that are clearly stated in the manuscript. These are standard methodological descriptions that are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "From 516 total SEF neurons recorded (329 from monkey A, 187 from monkey I), 353 were classified as task-related, with 128 showing directional tuning. Of these, 106 neurons were tested with \u22658 direction combinations and 86 with all 12 direction combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C33-C35 provide explicit counts of neurons recorded and analyzed. These are straightforward data reporting claims that are clearly stated in the methods and results sections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "Saccade reaction times in no-choice trials were significantly negatively correlated with target value in both monkeys (monkey B: t(5)=8.40, p=0.03; monkey I: t(5)=27.35, p=0.003).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 reports a behavioral finding with statistical support and cites previous work (So and Stuphorn, 2010). The statistics are provided and the finding is consistent with prior literature, making it well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "SEF neural activity predicted the chosen gamble option beginning ~160 ms before saccade onset (peaking at ~120 ms), while prediction of saccade direction began only ~60 ms before saccade onset. Information theoretic analysis confirmed this temporal sequence, with significant chosen vs. non-chosen information appearing at 113 ms (gamble option) and 47 ms (saccade direction) before saccade onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 describe the core temporal finding using two independent analytical approaches (classification and mutual information) that converge on the same conclusion. Both analyses include appropriate statistical testing (permutation tests with multiple comparison correction), and the ~66 ms difference is consistent across methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "SEF neurons encode relative action value by representing the value of targets in their preferred direction (PD) but not non-preferred direction (NPD) during no-choice trials. In choice trials, PD target value positively influences activity (\u03b2=0.119, t(5)=10.629, p<0.001) while NPD target value negatively influences activity (\u03b2=-0.058, t(5)=-4.345, p=0.007), with PD influence approximately twice as strong as NPD influence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C17 describe the value encoding properties with appropriate statistical support from regression analyses. The opposing influences of PD and NPD targets provide evidence for relative action value encoding. However, the claim that PD influence is \"about twice\" NPD influence (C17) is approximate (0.119/0.058 \u2248 2.05) and the neurons don't encode exact value difference, which the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Regression analysis revealed a sequential decision process: chosen gamble option coefficient strength increased at 110 ms before saccade onset while non-chosen remained constant, followed by divergence of chosen vs. non-chosen saccade direction coefficients at 60 ms before saccade onset. The opposing pattern for saccade direction suggests competitive action selection in SEF, while the lack of opposing pattern for gamble options indicates SEF receives the output of goods selection from other brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 describe regression analysis results with appropriate statistical testing (permutation tests with multiple comparison correction). The interpretation that opposing patterns indicate competition while non-opposing patterns indicate input from elsewhere is reasonable, though the claim about \"other brain regions\" (C24) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C29",
+      "C30"
+    ],
+    "result": "Population activity maps showed two sets of neurons initially active for both chosen and non-chosen targets in choice trials, with significant differentiation emerging 70 ms before saccade onset. Analysis of trials with different choices for identical gamble pairs confirmed representation of both relative action value and final choice. The onset of significant activity difference occurred earlier for large value differences (42 ms) than small value differences (68 ms) before saccade onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C29-C30 describe population-level analyses that complement single-neuron findings. The timing differences based on value difference (C30) support the competitive inhibition hypothesis. Statistical testing with permutation tests and multiple comparison correction is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "State-space analysis showed that trajectory distances at saccade initiation significantly correlated with chosen value differences across all four saccade directions, and were significantly modulated by non-chosen value when saccade direction and chosen value were fixed. Trajectories separated first along the value axis, then along the direction axis, with variance explained by value increasing earlier than variance explained by saccade direction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 describe state-space analysis results that provide an independent confirmation of the sequential decision process and relative action value encoding. The analysis appropriately uses regression to define task-relevant dimensions and shows temporal dynamics consistent with other analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "SEF represents the relative action value of all possible saccades as a population map. During value-based decisions, SEF first encodes the chosen gamble option and only later the chosen direction. This activity reflects the action selection step of the decision process, occurring through competitive inhibition between groups of neurons carrying relative action value signals for different saccades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 represent the main conclusions synthesizing multiple analyses. The sequential encoding (C78) is well-supported by convergent evidence from classification, information theory, regression, and state-space analyses. The competitive inhibition mechanism (C80) is supported by opposing influences of chosen/non-chosen directions and value-difference-dependent timing, though direct evidence for inhibition would require additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The manuscript describes three existing models of value-based decision making: the goods-based model (selection of option values followed by action preparation), the action-based model (parallel representation and competition of potential actions), and the distributed consensus model (reciprocal interactions between goods and action levels leading to parallel selection).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 accurately describe existing theoretical models with appropriate citations. These are literature review claims that correctly represent the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The findings rule out the goods-based, action-based, and distributed consensus models. The goods-based model is ruled out by evidence of competition in action-based reference frames. The action-based model is contradicted by chosen value information appearing earlier than chosen action information. The distributed consensus model is not supported by the robust 100 ms temporal separation between option and direction selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C51-C53 present logical arguments against existing models based on the data. The reasoning is sound: the goods-based model cannot explain action-level competition (C51), the action-based model cannot explain the temporal dissociation (C52), and the distributed consensus model predicts simultaneous selection which is contradicted by the 100 ms difference (C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C54",
+      "C62"
+    ],
+    "result": "The authors propose a sequential decision model in which two selection processes start independently at goods and action levels. The action selection receives input from goods selection but not vice versa (asymmetric connectivity). Once goods-level competition resolves, value signals for the chosen option increase and non-chosen decrease, cascading to the action level to determine action selection. This architecture requires two different selection processes in different representational spaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50, C54, C62 describe the proposed sequential model. The model is well-supported by the data showing temporal sequence, opposing patterns at action but not goods level, and value-difference-dependent dynamics. However, the specific claim about \"asymmetric connectivity\" (C48) is an inference from the data rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Previous work found a similar goods-then-action sequence when information was provided sequentially. The current study shows this sequence is obligatory even when information for both selections is given simultaneously, suggesting the two selection steps are functionally independent and involve different brain circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 make an important distinction between the current findings and prior work (Cai and Padoa-Schioppa, 2014). The claim that the sequence is \"obligatory\" (C56) is well-supported by the data showing it occurs even with simultaneous information. The inference about \"different brain circuits\" (C57) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The competition between subjective value representations likely occurs in OFC and vmPFC, while competition between action value representations occurs in SEF and DLPFC. The selected action value signals can influence motor-related areas like FEF and SC that encode final action commitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C58-C60 propose a broader circuit architecture based on citations to other studies. While the citations are appropriate, these claims go beyond what the current data directly demonstrate. The authors use qualifiers like \"most likely\" and \"can influence,\" acknowledging the speculative nature. The claims would require additional experiments (e.g., simultaneous recordings, perturbations) to be fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The relative importance of goods vs. action selection stages likely depends on behavioral context. In purely economic contexts, goods selection is more important and action competition may be absent. In different contexts, different circuit elements become critical. Behavior is best understood as resulting from two independent, functionally different selection mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C67 discuss context-dependence and generalizability with appropriate citations. However, these are largely speculative extensions beyond the current data. The current study used only one task type, so claims about context-dependence (C63, C66) cannot be directly tested. The citations support that such context-dependence exists, but the integration with the sequential model is inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The inhibition underlying action selection could occur through local SEF mechanisms (mutual inhibition or global inhibitory pool) or reflect signals in a distributed network. Similar action value signals have been reported in lateral prefrontal cortex, ACC, and basal ganglia. Future perturbation experiments are needed to test SEF's causal role and whether relative action value encoding results from local inhibition or network input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 appropriately acknowledge limitations and propose future directions. The authors correctly note that the current recording data cannot distinguish between local vs. network mechanisms (C68-C69), cite relevant literature (C70), and identify necessary future experiments (C71). This is appropriate scientific reasoning about what the data can and cannot demonstrate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "SEF receives input from value-representing areas (OFC, ACC, amygdala) and projects to oculomotor areas (FEF, superior colliculus). Previous research indicates SEF neurons participate in using value signals to select eye movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 describe anatomical connectivity and prior functional findings with appropriate citations. These are well-established facts from the literature that provide context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The task design prevented direct stimulus-response associations due to reward uncertainty, numerous gamble pairs, and variable spatial configurations, requiring both goods-based and action-based selection on each trial. There is a time window (100-50 ms before saccade onset) when SEF encodes which option is chosen but not yet which saccade will be chosen. Similar separation between stimulus categorization and action selection has been found in other decision processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 describe task design rationale and a key temporal dissociation. The task design logic (C81-C82) is sound. The temporal dissociation (C83) is well-supported by multiple analyses and is critical evidence against the action-based model. The citation to similar findings in other domains (C84) appropriately contextualizes the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Different neural and functional architectures have been suggested to underlie different types of value-based decision making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is a literature review statement with appropriate citation (Hunt et al., 2013). This provides context for the authors' contrasting claim that the same architecture is always used.",
+    "result_type": "MINOR"
+  }
+]

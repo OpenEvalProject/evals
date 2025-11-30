@@ -1,0 +1,1478 @@
+{
+  "submission": {
+    "id": "1d571ff1-975b-44cd-8fcd-057f60ef541c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:44:14.165257Z",
+    "updated_at": "2025-11-29T21:44:14.165257Z"
+  },
+  "content": [
+    {
+      "id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "submission_id": "1d571ff1-975b-44cd-8fcd-057f60ef541c",
+      "content_type": "manuscript",
+      "content_text": "# Reward signal in a recurrent circuit drives appetitive long-term memory formation\n\n## Authors\n\n- Toshiharu Ichinose<sup>1</sup>\n- Yoshinori Aso<sup>3</sup>\n- Nobuhiro Yamagata<sup>1</sup>\n- Ayako Abe<sup>1</sup>\n- Gerald M Rubin<sup>3</sup>\n- Hiromu Tanimoto<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Graduate School of Life Sciences Tohoku University Sendai Japan\n2. Max Planck Institute of Neurobiology Martinsried Germany\n3. Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDopamine signals reward in animal brains. A single presentation of a sugar reward to Drosophila activates distinct subsets of dopamine neurons that independently induce short- and long-term olfactory memories (STM and LTM, respectively). In this study, we show that a recurrent reward circuit underlies the formation and consolidation of LTM. This feedback circuit is composed of a single class of reward-signaling dopamine neurons (PAM-\u03b11) projecting to a restricted region of the mushroom body (MB), and a specific MB output cell type, MBON-\u03b11, whose dendrites arborize that same MB compartment. Both MBON-\u03b11 and PAM-\u03b11 neurons are required during the acquisition and consolidation of appetitive LTM. MBON-\u03b11 additionally mediates the retrieval of LTM, which is dependent on the dopamine receptor signaling in the MB \u03b1/\u03b2 neurons. Our results suggest that a reward signal transforms a nascent memory trace into a stable LTM using a feedback circuit at the cost of memory specificity.\n\n## Introduction\n\nEnvironmentally relevant information, such as poison or food, can trigger formation of long-term memory (LTM) in a single association event (Garcia et al., 1955; Alexander et al., 1984). Because LTM formation is energetically costly (Mery and Kawecki, 2005; Placais and Preat, 2013), it is advantageous for animals to refer to surrounding conditions when selecting what information to retain as stable LTM. Appetitive olfactory learning in Drosophila melanogaster provides an opportunity to uncover the mechanisms underlying such integration of information, as a single presentation of nutritious sugar and an odor drives robust short-term memory (STM) and LTM, while non-nutritious sugar induces only STM (Krashes and Waddell, 2008; Colomb et al., 2009; Burke and Waddell, 2011).\n\nIn Drosophila, sugar reward is mediated by a group of dopamine neurons called the protocerebral anterior medial (PAM) cluster (Burke et al., 2012; Liu et al., 2012). Artificial activation of the PAM cluster neurons in the presence of odor drives robust appetitive STM and LTM formation. Recent studies subdivided the PAM cluster neurons into STM- and LTM-inducing cell types and identified several cell types responsible for LTM formation, including PAM-\u03b11 (Huetteroth et al., 2015; Yamagata et al., 2015). Interestingly, the induced LTM is undetectable immediately after conditioning but gradually develops with time (Das et al., 2014; Huetteroth et al., 2015; Yamagata et al., 2015).\n\nDopamine reward signals are conveyed by PAM cluster neurons to a brain structure called mushroom body (MB), where the convergence of the reward and the odor is assumed to take place (Schwaerzel et al., 2003; Krashes et al., 2007; Trannoy et al., 2011; Cervantes-Sandoval et al., 2013; Huang et al., 2013). The MB represents odors using a sparse subset of \u223c2000 intrinsic neurons, Kenyon cells (KCs) (Turner et al., 2008; Aso et al., 2009; Honegger et al., 2011; Campbell et al., 2013). KCs send parallel fibers to form lobe structures, where multiple MB-output neuron (MBON) types elaborate spatially segregated dendritic arbors (Aso et al., 2014a). The KC-MBON synapses are presumed to be modified in the course of memory formation by the reinforcing dopamine neurons (Tomchik and Davis, 2009; Gervasi et al., 2010; Sejourne et al., 2011; Cervantes-Sandoval et al., 2013; Placais et al., 2013; Boto et al., 2014).\n\nWhile there has been progress on the molecular and cellular mechanisms underlying LTM formation resulting from repetitive conditioning (Pagani et al., 2009; Placais et al., 2012; Philips et al., 2013), how a single presentation of a reward can trigger LTM remains to be understood. Here, we identify and behaviorally characterize a recurrent reward circuit that is essential for appetitive LTM formation and consolidation. The recurrent circuit consists of PAM-\u03b11 dopamine neurons and a single MBON type, MBON-\u03b11. This recurrent dopamine reward circuit may provide insights into a general mechanism for LTM formation.\n\n## Results\n\n### MBON-\u03b11 provides a glutamatergic feedback to PAM-\u03b11\n\nPAM-\u03b11 delivers reward signals essential for appetitive LTM formation (Yamagata et al., 2015). To understand the neuronal circuit that regulates rewards for LTM formation, we first sought to anatomically identify the input neurons to PAM-\u03b11. The presynaptic terminals of PAM-\u03b11 are localized to the basal compartment of the MB \u03b1 lobe (\u03b11) (Liu et al., 2012), whereas the dendrites stretch horizontally across the superior medial, intermediate, and lateral protocerebra (SMP, SIP, and SLP, respectively) (Aso et al., 2014a; Yamagata et al., 2015) (Figure 1A,B,H). By segmenting the dendrites of PAM-\u03b11 in confocal images (Aso et al., 2014a), we queried a database of GAL4 expression patterns (Jenett et al., 2012) to computationally search for candidate upstream neurons. Strikingly, one of the input candidates we identified was the output neurons from the \u03b11 compartment of the MB (MBON-\u03b11) (Figure 1C,D). Transgenic expression of a presynaptic marker (Robinson et al., 2002) by MB310C-GAL4 revealed that the presynaptic terminals of MBON-\u03b11 lie in close apposition to the dendrites of PAM-\u03b11 (Figure 1E,I). The terminals of MBON-\u03b11 were immunoreactive for the vesicular glutamate transporter (Figure 1F) (Daniels et al., 2008) but not for markers for GABAergic or cholinergic neurons (glutamic acid decarboxylase [Jackson et al., 1990] or choline acetyltransferase [Takagawa and Salvaterra, 1996], respectively) (Figure 1\u2014figure supplement 1), consistent with MBON-\u03b11 being glutamatergic (Aso et al., 2014a). Differential labeling of the individual MBON-\u03b11 neurons in the same brain (Nern et al., 2015) revealed that MBON-\u03b11 comprises two cells with very similar morphology (Figure 1G).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/10719/elife-10719-fig1-v1.jpg)\n\n**Figure 1.:** (A\u2013D) Anatomy of PAM-\u03b11 (A, B) and MBON-\u03b11 (C, D). Dotted line indicates \u03b1/\u03b2 lobes in the mushroom body (MB) (A, C) or SMP, SIP, and SLP (superior medial, intermediate, and lateral protocerebra, respectively) (B, D). Arrows indicate \u03b11 and arrowheads the SIP and SLP (A, C). PAM-\u03b11 and MBON-\u03b11 are visualized by pJFRC2-10xUAS-mCD8GFP in VK00005 and MB299B-GAL4 (A, B) or MB310C-GAL4 (C, D), respectively. (E) Presynaptic terminals of MBON-\u03b11 are highly localized in SIP and SLP. MB310C-GAL4 is used to drive a general membrane marker (green) and a presynaptic marker (magenta) in MBON-\u03b11. (F) Double labeling of the membrane of MBON-\u03b11 (green) and anti-vesicular glutamate transporter (dVGluT, magenta) (F1), membrane staining (F2), and anti-dVGluT staining (F3). Arrowheads highlight the overlap. (G) Two individual MBON-\u03b11 neurons visualized by multi-color flip-out with different colors (red and cyan). (H, I) Schematics of PAM-\u03b11 and MBON-\u03b11, respectively. The \u03b1/\u03b2 lobe of the MB is outlined with light orange. Scale bars, 10 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10719/elife-10719-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Double labeling of the membrane of MBON-\u03b11 (green) and anti-glutamic acid decarboxylase (GAD1) (A, magenta) or choline acetyltransferase (ChAT) (B, magenta). Arrowheads highlight some of the processes, where no obvious overlaps are observed. Scale bars, 10 \u00b5m.\n\nTo precisely determine the relative arrangement of PAM-\u03b11 and MBON-\u03b11 neurites, we performed a double-labeling experiment using R72D01-LexA, which labels PAM-\u03b11, and the split-GAL4 driver MB310C-GAL4, which labels MBON-\u03b11 (Aso et al., 2014a). Confocal images revealed that the processes of MBON-\u03b11 and PAM-\u03b11 substantially intermingled both in the SIP and SLP, and in the \u03b11 compartment of the MB\u2014the input and output sites of PAM-\u03b11, respectively (Figure 2A\u2013E, Figure 2\u2014figure supplement 1, Video 1). To observe these processes in SIP and SLP in even greater detail, we employed a microscope with a super resolution detection system and found bouton-like structures of MBON-\u03b11 attached to the dendrites of PAM-\u03b11 (Figure 2B\u2013D). Furthermore, a GFP reconstitution across synaptic partners (GRASP) (Feinberg et al., 2008; Gordon and Scott, 2009) experiment using R72D01-LexA and MB310C-GAL4 revealed strong GRASP signals in SIP, SLP, and the \u03b11 compartment (Figure 2F). This further supports the close juxtaposition between PAM-\u03b11 and MBON-\u03b11.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/10719/elife-10719-fig2-v1.jpg)\n\n**Figure 2.:** (A) Double labeling of PAM-\u03b11 and MBON-\u03b11. PAM-\u03b11 (magenta) and MBON-\u03b11 (green) are visualized using R72D01-LexA and MB310C-GAL4, respectively. (B\u2013D) Magnified substack images in SIP and SLP, obtained by a super-resolution detection system. (E) Magnified substack image in the \u03b11 compartment in the MB. (F) GFP reconstitution across synaptic partner (GRASP) signals in SIP, SLP, and MB \u03b11 support the contacts between PAM-\u03b11 and MBON-\u03b11. Scale bars, 10 \u00b5m (A, B, E, F), 1 \u00b5m (C, D).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10719/elife-10719-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A, C) Two additional examples of the double labeling confirm stereotypy of the projections. (B, D) Magnified substacks for the insets in (A) and (C), respectively. Scale bars, 10 \u00b5m.\n\n![Video 1.](https://cdn.elifesciences.org/articles/10719/elife-10719-media1.mov.jpg)\n\n### Appetitive LTM formation requires feedback from MBON-\u03b11\n\nIf the MB feedback modulates PAM-\u03b11, the output of MBON-\u03b11 might be required for the acquisition of LTM of the sugar reward. We examined the requirement of PAM-\u03b11 and MBON-\u03b11 by expressing a temperature-sensitive dominant negative dynamin, Shibirets1 (Kitamoto, 2001) using the split-GAL4 drivers MB299B-GAL4 and MB310C-GAL4 (Figure 3B,F). MB299B-GAL4 has strong expression in PAM-\u03b11 (Aso et al., 2014a; Yamagata et al., 2015) (Figure 3B). Consistent with our previous results (Yamagata et al., 2015), the blockade of PAM-\u03b11 during conditioning did not significantly affect STM (Figure 3C), but led to a severe impairment of sucrose-rewarded LTM (Figure 3D). The unimpaired performance in appetitive STM demonstrates that flies of these genotypes have normal sugar and odor perception at the restrictive temperature. Intriguingly, we found a similar preferential impairment of LTM upon the blockade of MBON-\u03b11, using MB310C-GAL4 driver (Figure 3H). The same blockade did not significantly impair STM (Figure 3G). We confirmed the preferential requirement of MBON-\u03b11 for LTM using another driver, MB323B-GAL4 (Figure 3\u2014figure supplement 1A), and obtained similar results (Figure 3G,H); neither MB310C/UAS-shi nor MB323B/UAS-shi flies showed a significant LTM impairment when trained and tested at the permissive temperature (Figure 3\u2014figure supplement 1B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/10719/elife-10719-fig3-v1.jpg)\n\n**Figure 3.:** (A) Diagram of the experiment. (B) Expression pattern of MB299B-GAL4. (C) Blockade of PAM-\u03b11 does not impair STM significantly. 5-min appetitive memory was measured (n = 10, 10, 12). c: conditioning, t: test. (D) Blockade of PAM-\u03b11 during conditioning impairs LTM. 24-hr appetitive LTM was measured (n = 9, 12, 12). (E) Diagram of experiment. (F) Expression pattern of MB310C-GAL4. (G) Blockade of MBON-\u03b11 does not impair STM significantly (n = 6, 7, 10, 6, 10). (H) Blockade of MBON-\u03b11 during conditioning impairs LTM. MB323B-GAL4 is a second driver line that expresses in MBON-\u03b11 (see figure supplement; n = 23, 24, 13, 14, 24). Bar graphs are mean \u00b1 s.e.m. *: p < 0.05, ***: p < 0.001, n.s.: p > 0.05. Scale bars, 20 \u00b5m.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10719/elife-10719-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Scale bar, 20 \u00b5m. (B) The LTM performance of MB310C/UAS-shi and MB323B/UAS-shi flies at the permissive temperature is not affected (n = 17, 16, 8, 9, 11). n.s.: p > 0.05.\n\nWe next examined whether glutamatergic input to PAM-\u03b11 is required for LTM formation by down-regulating the expression of glutamate receptors using MB299B-GAL4. For efficient and cell-type-specific manipulation, we used UAS-RNAi fly strains based on the shRNA technique (Ni et al., 2011). Intriguingly, knocking down either dNR-1 or dNR-2, which together form the functional NMDA receptor (Xia et al., 2005), impaired LTM (Figure 4C) but not STM (Figure 4B). This preferential requirement in LTM is similar to the blockade of MBON-\u03b11 and PAM-\u03b11, suggesting the direct glutamatergic feedback.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/10719/elife-10719-fig4-v1.jpg)\n\n**Figure 4.:** (A) The subunits of NMDA receptor are down-regulated in PAM-\u03b11. (B, C) Knocking down NMDA receptor subunits does not impair 5-min memory (B: n = 16, 8, 13, 12, 13) but impairs 24-hr memory significantly (C: n = 18, 8, 22, 20, 29). Bar graphs are mean \u00b1 s.e.m. *: p < 0.05, **: p < 0.01, n.s.: p > 0.05. Scale bars, 20 \u00b5m.\n\nGiven that thermogenetic stimulation of PAM-\u03b11 with a temperature-sensitive cation channel dTrpA1 (Hamada et al., 2008) can provide the reward signal for LTM formation (Yamagata et al., 2015), we asked if activation of MBON-\u03b11 would also be capable of inducing appetitive LTM (Figure 5A). Indeed, we found appetitive LTM upon thermo-activation of MBON-\u03b11 in the presence of an odor (Figure 5B). These results, together with the consistent requirements of MBON-\u03b11 and NMDAR-signaling in PAM-\u03b11, are most easily explained if the glutamatergic feedback regulation from MBON-\u03b11 augments dopamine reward signaling by PAM-\u03b11.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/10719/elife-10719-fig5-v1.jpg)\n\n**Figure 5.:** (A) Activation of MBON-\u03b11 was paired with odor presentations and 24-hr memory was measured. (B) Activation of MBON-\u03b11 induces appetitive LTM formation (n = 16, 24, 24). Bar graphs are mean \u00b1 s.e.m. *: p < 0.05, n.s.: p > 0.05. Scale bars, 20 \u00b5m.\n\n### DopR1-mediated appetitive LTM trace is formed in \u03b1/\u03b2 KCs\n\nSeveral lines of evidence suggest that D1-like dopamine receptor (DopR1) is required in KCs for appetitive memory (Kim et al., 2007; Liu et al., 2012; Boto et al., 2014). However, previous studies focused on only STM. To identify the receiving site of dopamine for LTM formation, we knocked down DopR1, either in \u03b1/\u03b2 KCs or in MBON-\u03b11, the potential targets of dopamine from PAM-\u03b11, and measured appetitive LTM. To target the expression specifically to the \u03b1/\u03b2 KCs, we employed two driver lines, MB008B-GAL4 (Aso et al., 2014a; Vogt et al., 2014) (Figure 6\u2014figure supplement 1A) and c739-GAL4 (Yang et al., 1995). Interestingly, knocking down DopR1 in the \u03b1/\u03b2 KCs, using c739-GAL4 or MB008B-GAL4, resulted in a severe impairment of appetitive LTM (Figure 6A) while leaving STM unaffected (Figure 6\u2014figure supplement 1B). These results are consistent with the observation that the coincidence detector adenylate cyclase encoded by rutabaga, thought to act downstream of the dopamine receptor (Tomchik and Davis, 2009; Gervasi et al., 2010; Boto et al., 2014), functions for LTM in the \u03b1/\u03b2 KCs (Trannoy et al., 2011). On the other hand, knocking down DopR1 in MBON-\u03b11 did not significantly impair either appetitive LTM or STM (Figure 6A and Figure 6\u2014figure supplement 1B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/10719/elife-10719-fig6-v1.jpg)\n\n**Figure 6.:** (A) Knocking down DopR1 in \u03b1/\u03b2 Kenyon cells (KCs) but not in MBON-\u03b11 impairs appetitive LTM (n = 17, 10, 11, 11, 18, 12, 7, 12, 27). (B) KC expression of DopR1 in the dumb2 mutant background fully rescues the LTM impairment (n = 12, 10, 7, 13). Bar graphs are mean \u00b1 s.e.m. *: p < 0.05, ***: p < 0.001.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10719/elife-10719-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Scale bar, 20 \u00b5m. (B) Knocking down DopR1 in \u03b1/\u03b2 KCs or MBON-\u03b11 does not impair appetitive STM, suggesting normal sugar or odor perception of these flies (n = 7, 7, 12, 10, 10, 10, 9, 9, 22). Bar graphs are mean \u00b1 s.e.m. n.s.: p > 0.05.\n\nTo further localize the role of DopR1 in KCs, we performed a rescue experiment, using a piggyBac insertion mutant, dumb2 (Liu et al., 2012; Qin et al., 2012). dumb2 mutant flies showed severely impaired appetitive LTM. Targeting wild-type DopR1 gene expression in KCs fully rescued the defects (Figure 6B). Together, although we cannot exclude the possible role of other dopamine receptors in MBON-\u03b11, we propose that DopR1-mediated memory trace is formed in \u03b1/\u03b2 KCs not in MBON-\u03b11.\n\n### Output from the \u03b1/\u03b2 KCs is required during conditioning\n\nPrevious studies have highlighted the role of the output from \u03b1/\u03b2 KCs for memory retrieval (Krashes et al., 2007; Trannoy et al., 2011; Cervantes-Sandoval et al., 2013; Perisse et al., 2013). Given the requirement of MBON-\u03b11 for the acquisition of appetitive LTM, the output of the \u03b1/\u03b2 KCs during conditioning may be important for LTM formation. To test this possibility, we blocked the output of the \u03b1/\u03b2 KCs with Shits1. Strikingly, the blockade of the \u03b1/\u03b2 KCs during conditioning significantly impaired appetitive LTM, but not STM (Figure 7A,B), similar to the blockade of PAM-\u03b11 and MBON-\u03b11 (Figure 3). When the flies were trained and tested at the permissive temperature, no significant impairment of appetitive LTM was observed (Figure 7\u2014figure supplement 1). The requirement for \u03b1/\u03b2 KC synaptic signaling during LTM formation supports our model that MBON-\u03b11 provides information about the memory trace, formed in the \u03b1/\u03b2 KCs, to the reward signaling PAM-\u03b11 neurons.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/10719/elife-10719-fig7-v1.jpg)\n\n**Figure 7.:** (A) Blockade of \u03b1/\u03b2 KCs does not impair STM significantly (n = 8, 7, 7, 8, 9). (B) Blockade of \u03b1/\u03b2 KCs during conditioning impairs LTM (n = 7, 7, 18, 19, 20). Bar graphs are mean \u00b1 s.e.m. *: p < 0.05, n.s.: p > 0.05.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10719/elife-10719-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Bar graphs are mean \u00b1 s.e.m. n.s.: p > 0.05.\n\n### LTM retrieval requires MBON-\u03b11\n\nIf the nascent memory trace in \u03b1/\u03b2 KCs is communicated by MBON-\u03b11 during conditioning, MBON-\u03b11 might also convey the read-out of LTM. Intriguingly, when MBON-\u03b11 was blocked only during the test phase of LTM, we found a severe impairment of conditioned odor approach (Figure 8A). In contrast, the blockade of PAM-\u03b11 during LTM retrieval did not have a significant effect (Figure 8B). These results imply that MBON-\u03b11 plays a dual role in both formation and retrieval of LTM; different post-synaptic targets of MBON-\u03b11 would be used in these two roles, with the recurrent PAM-\u03b11-MBON-\u03b11 circuit selectively involved in LTM formation.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/10719/elife-10719-fig8-v1.jpg)\n\n**Figure 8.:** (A) Blocking MBON-\u03b11 during test impairs appetitive LTM retrieval (n = 20, 21, 11, 13, 20). (B) Blocking PAM-\u03b11 during test does not significantly impair LTM retrieval (n = 7, 7, 10). Bar graphs are mean \u00b1 s.e.m. *: p < 0.05, **: p < 0.01, n.s.: p > 0.05.\n\n### Post-training dopamine release consolidates the nascent memory trace at the cost of memory specificity\n\nThe glutamatergic input from MBON-\u03b11 might provide an excitatory feedback on the PAM-\u03b11 neurons via the NMDA receptor thereby prolonging the dopamine release after the cessation of sugar presentation. If this model were correct, the post-training blockade of the feedback circuit might be expected to impair appetitive LTM. Consistent with this idea, blocking any component of the feedback circuit for 1 hr immediately following conditioning resulted in a significant impairment of appetitive LTM (Figure 9A,C,E), whereas the same blockade 22 hr after training did not (Figure 9B,D,F). These results strongly suggest that the recurrent circuit has an ongoing activity, which plays a key role in early phase of appetitive LTM consolidation.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/10719/elife-10719-fig9-v1.jpg)\n\n**Figure 9.:** (A, C, E) Blocking PAM-\u03b11 (A), MBON-\u03b11 (C), or \u03b1/\u03b2\u2212KC (E) for 1 hr immediately after conditioning impairs appetitive LTM (n = 16, 15, 22 (A); n = 15, 16, 14, 20, 34 (C); n = 9, 8, 10, 7, 15 (E)). (B, D, F) Blocking PAM-\u03b11 (B), MBON-\u03b11 (D), or \u03b1/\u03b2\u2212KC (F) for 1 hr, 22 hr after conditioning does not impair appetitive LTM (n = 15, 15, 14 (B); n = 16, 15, 13, 13, 23 (D); n = 12, 12, 15, 12, 15 (F)). Bar graphs are mean \u00b1 s.e.m. *: p < 0.05, ***: p < 0.001, n.s.: p > 0.05.\n\nProlonged dopamine release in the absence of odor may also modulate KCs that do not respond to the rewarded odor. If so, the odor specificity of appetitive LTM might be compromised compared to STM. Thus, we measured the generalization profile of STM and LTM by testing with the graded mixtures of \u2018contaminating\u2019 odors (Figure 10). Odor mixtures were created by systematically varying the relative contents of the contaminant (trained odor: contaminant = 100:0, 80:20, 60:40, 40:60, 20:80, or 0:100): if the memory is specific to the trained odor, the performance quickly decreases with the increasing contaminant ratio. Strikingly, the performance decline is shallower in LTM compared to STM (Figure 10C,D). We confirmed these results with another set of odorants, suggesting that compromised stimulus specificity in LTM is general (Figure 10\u2014figure supplement 1). Considering that the only difference between these groups is the retention time, there may be a trade-off between consolidation and specificity, possibly due to the prolonged dopamine release in the MB following memory acquisition.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/10719/elife-10719-fig10-v1.jpg)\n\n**Figure 10.:** (A) Chemical structures of odorants. (B) Design of the experiment. For one group, presentation of 4-methylcyclohexanol was paired with sugar reward. The reciprocal group received sugar without odor. In the test situation, flies of each group were allowed to choose between the air and the mixture of the trained odor and the \u2018contaminant\u2019 (2-methylcyclohexanol). (C, D) The performance index declined more sharply with the increasing contamination ratio in STM (C; n = 16 for each) than in LTM (D; n = 24 for each). Each group was compared to the group that was tested without the contaminant (left most bar). Bar graphs are mean \u00b1 s.e.m. *: p < 0.05, **: p < 0.01, ***: p < 0.001, n.s.: p > 0.05.\n\n![Figure 10\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10719/elife-10719-fig10-figsupp1-v1.jpg)\n\n**Figure 10\u2014figure supplement 1.:** (A) Chemical structures of odorants. (B, C) The performance declined more sharply in STM (B: n = 20 for each) than in LTM (C: n = 20 for each) also with this odor pair. Each group was compared to the group that was tested without the contaminant (left most bar). Bar graphs are mean \u00b1 s.e.m. *: p < 0.05, n.s.: p > 0.05.\n\n## Discussion\n\n### Function of a recurrent reward circuit\n\nPrior studies on the role of MBONs in learning and memory have focused on memory retrieval (Sejourne et al., 2011; Pai et al., 2013; Placais et al., 2013; Aso et al., 2014b). Here, we extend the known role of MBONs and show that MB output through MBON-\u03b11 is required not only for the retrieval, but also for the acquisition and early consolidation of long-term appetitive olfactory memory. This unanticipated aspect of the MB output for LTM formation appears to function through a recurrent loop (Figure 11): MBON-\u03b11 dendrites and the terminals of PAM-\u03b11 occupy the same MB compartment (Aso et al., 2014a); the DopR1 dopamine receptor is required in the KCs of that compartment (Figure 6); MBON-\u03b11 in turn sends a portion of its outputs to the dendrites of PAM-\u03b11 (Figures 1, 2) closing the loop; synaptic signaling by all three cell types\u2014\u03b1/\u03b2 KCs, MBON-\u03b11, and PAM-\u03b11\u2014is required during LTM formation and consolidation (Figures 3, 7, 9). These findings strongly support our model that feedback signals from \u03b1/\u03b2 KCs, mediated by MBON-\u03b11, play a critical role in controlling the rewarding dopamine signals from PAM-\u03b11 (Figure 11). Inhibitory recurrent circuits in the MBs have been implicated in appetitive learning of honeybees (Grunewald, 1999a, 1999b). Our present study reveals a new circuit motif, a feedback circuit that is required for dopamine neurons to provide reinforcement during appetitive LTM formation.\n\n![Figure 11.](https://cdn.elifesciences.org/articles/10719/elife-10719-fig11-v1.jpg)\n\n**Figure 11.:** Feedback circuit model of appetitive LTM formation. Neuronal signal of a sugar reward mediated by PAM-\u03b11 converges with olfactory information in the \u03b1/\u03b2 KCs. The coincidental signal is read out through MBON-\u03b11 to give glutamatergic feedback onto PAM-\u03b11 for the gain control of the dopamine release. Appetitive LTM is read out through MBON-\u03b11 to activate other downstream targets.\n\nDopamine has been thought to simply relay rewarding or punitive stimuli (Gerber et al., 2004; Waddell, 2013). However, our results call into question this prevailing circuit model. More specifically, PAM-\u03b11 might integrate simultaneous inputs from sugar perception and the nascent memory trace to augment and sustain the dopamine release to gate LTM formation (Figure 11). The requirement of the NMDA receptor in PAM-\u03b11 (Figure 4) further supports this model. Such integration by PAM-\u03b11 might enhance the reward gain selectively in relevant sensory environments. In other words, the reinforcing signal for LTM formation may depend on the presence of other sensory stimuli (e.g., odor). As LTM formation is energetically costly (Mery and Kawecki, 2005; Placais and Preat, 2013; Musso et al., 2015), this gain control of the reinforcing signal might serve to restrict LTM formation to ecologically relevant situations. Although the requirement of NMDA receptor in PAM-\u03b11 implies that MBON-\u03b11 provides excitatory input, the synaptic connectivity between MBON-\u03b11 and PAM-\u03b11 awaits physiological demonstration, given functional inhibitory glutamate receptor signaling (Liu and Wilson, 2013).\n\nIn addition to the role in memory acquisition, the PAM-\u03b11 output is required during consolidation (Figure 9A,B). The dopamine release is likely to be sustained by the ongoing activity of the recurrent circuit (Figure 9C\u2013F). A recent study reported a consistent finding that the output from \u03b1/\u03b2 KCs during consolidation has an essential role for appetitive and aversive LTM (Huang et al., 2012) in addition to their role in retrieval (Krashes et al., 2007; Trannoy et al., 2011; Cervantes-Sandoval et al., 2013; Xie et al., 2013). Recent studies revealed a gradual development of appetitive LTM after conditioning (Das et al., 2014; Huetteroth et al., 2015; Yamagata et al., 2015). Ongoing activity in the recurrent loop we propose here may provide a circuit mechanism for the gradual LTM development. In addition, previous studies reported that LTM consolidation in Drosophila (Placais et al., 2012; Musso et al., 2015) or in rats (Rossato et al., 2009) requires post-training dopamine inputs.\n\nOur generalization experiments show that appetitive LTM is less specific to the trained odor, compared to STM (Figure 10). This result fits well into previous studies in mice and bees, demonstrating that long-lasting memories are more generalized (Stach and Giurfa, 2005; Wiltgen and Silva, 2007). More generalizable LTM makes sense from an ecological viewpoint: it is worth taking a chance for survival even if the smell is not exactly the same as learned.\n\nIn the fly brain, distinct types of dopamine neurons signal reward for STM and LTM, and these memories are independently formed in different MB lobes (Trannoy et al., 2011; Huetteroth et al., 2015; Yamagata et al., 2015). Octopamine has been widely accepted as a positive reinforcement signal in insects (Hammer, 1993; Hammer and Menzel, 1998; Schwaerzel et al., 2003; Schroll et al., 2006; Perry and Barron, 2013). In Drosophila, it is considered to provide inputs to dopamine neurons that induce STM formation (Burke et al., 2012; Das et al., 2014; Huetteroth et al., 2015). Recent studies in mammals reached a similar conclusion that memories with different temporal dynamics are mutually conflicting and formed in distinct areas, to which different classes of dopamine neurons project (Liljenstrom, 2003; Abraham and Robins, 2005; Kim and Hikosaka, 2013; Kim et al., 2014). Independent processing of STM and LTM might be a conserved strategy among animals.\n\n### Circuit mechanism of memory-guided behavior\n\nIn addition to the function in the recurrent reward circuit, MBON-\u03b11 mediates retrieval of the LTM trace in the MB (Figure 8). MBON-\u03b11 samples from the MB-\u03b11 and terminates in the SIP and the SLP. Another type of MBONs also mediates appetitive LTM retrieval: MBON-\u03b13 (also known as MB-V3) (Placais et al., 2013). In contrast to MBON-\u03b11, blocking MBON-\u03b13 during conditioning does not impair appetitive LTM acquisition (Placais et al., 2013). MBON-\u03b13 arborizes dendrites in the tip of the \u03b1 lobe and projects to the SMP and the SIP where the terminals of MBON-\u03b11 and MBON-\u03b13 are intermingled (Aso et al., 2014a). Therefore, appetitive LTM formed in the \u03b1/\u03b2 KCs is read out through at least two different classes of MBONs. These MBONs converge in the SIP (Aso et al., 2014a) and might activate shared downstream targets to guide conditioned odor approach.\n\n### Interplay between reinforcing signals and learned information\n\nThe recent comprehensive connectivity map of the afferent and efferent neurons of the Drosophila MB revealed many potential feedback connections outside the MB (Aso et al., 2014a). Considering the central role of the MB in sensory integration and memory-guided behavior (Aso et al., 2014b), recurrent computation between learned information and reinforcement signals might be a fundamental principle of memory processing.\n\nIn both vertebrates and invertebrates, the activity of reinforcement neurons is modified upon associative learning (Hammer, 1993; Mirenowicz and Schultz, 1994; Riemensperger et al., 2005; Cohen et al., 2012; Schultz, 2013). Our results delineated such a feedback circuit, which was predicted by a physiological study in Drosophila (Riemensperger et al., 2005). In this circuit, MBON-\u03b11 mediates monosynaptic feedback to the dopamine neurons. In contrast, there is no monosynaptic feedback to the dopamine neurons found in mammals, rather anatomical studies suggest such a feedback to be polysynaptic (Lisman and Grace, 2005; Watabe-Uchida et al., 2012). Further comparative studies should assess how the recurrent circuit motif of reinforcement is implemented in different animal brains.\n\n## Materials and methods\n\n### Flies\n\nCanton-S was used as a wild-type strain. Generation and basic characterization of the split-GAL4 drivers (MB008B-GAL4, MB299B-GAL4, MB310C-GAL4, and MB323B-GAL4) are described in Aso et al. (2014a). R72D01-LexA was constructed using the methods described in Pfeiffer et al. (2010) and inserted into attP40. c739-GAL4 is an enhancer-trap GAL4 driver described in Yang et al. (1995). Flies were raised at 60% relative humidity at 24\u00b0C. Flies for the NMDAR knock down (Figure 4) were incubated at 30\u00b0C for 4\u20135 days prior to the experiment to facilitate the GAL4 activity.\n\nThe synaptic blockade experiments (Figures 3, 7-9) used F1 progeny of crosses between females of w;;UAS-shits1 (single copy of UAS-shits1 from Thomas Preat laboratory, CNRS, France) or w and males of the GAL4 drivers. The thermoactivation experiment (Figure 5) used F1 progeny of crosses between females of w; UAS-dTrpA1 (Hamada et al., 2008) or w and males of MB310C-GAL4 or w. The receptor knock down experiments (Figures 4, 6) used F1 progeny of crosses between females of UAS-Nmdar1RNAi (P(TRiP.HMS02200) attP40; Bloomington stock center #41667), UAS-Nmdar2RNAi (P(TRiP.HMS02012) attP2; Bloomington stock center #40846), UAS-DopR1RNAi (P(TRiP.HMC02344) attP2; Bloomington stock center #55239) (Ni et al., 2011) or CS and males of the GAL4 drivers. The dumb2 rescue experiments (Figure 6B) used F1 progeny of crosses between females of UAS-DopR1;;dumb2 or CS and males of MB247-GAL4; dumb2 or dumb2. CS flies were used as wild type (Figures 6B, 10).\n\nFor immunohistochemistry, the following reporter strains were crossed to the respective GAL4 or LexA drivers: pJFRC2-10xUAS-mCD8GFP in VK00005 (Figure 1A\u2013D), pJFRC200-10XUAS-IVS-myr::smGFP-HA in attP18 (Figure 2A\u2013D; Figure 2\u2014figure supplement 1; Figure 3B,F; Figure 6\u2014figure supplement 1A) and pJFRC216-13XLexAop2-IVS-myr::smGFP-V5 in su(Hw)attP8 (Figure 2A-E; Figure 2\u2014figure supplement 1), pJFRC206-5xUAS-IVS-myr-smGFP-FLAG in VK00005 (Figure 1E,F; Figure 1\u2014figure supplement 1; Figure 3\u2014figure supplement 1A), pJFRC51-3xUAS-Syt-smHA in su(Hw)attP1 (presynaptic marker; Figure 1E), UAS-CD4::spGFP1-10 and LexAop-CD4::spGFP11 (Figure 2F).\n\npJFRC2 is described in Pfeiffer et al. (2010). pJFRC200 and pJFRC206 are described in Viswanathan et al. (2015) and pJFRC216 in Nern et al. (2015). pJFRC51 was generated by standard methods described in Pfeiffer et al. (2010). UAS-CD4::spGFP1-10 and LexAop-CD4::spGFP11 are described in Gordon and Scott (2009).\n\nMulticolor flp-out (MCFO; Figure 1G) is a stochastic method that labels individual cells in different colors using a set of three UAS-STOP-epitope constructs that each expresses a different epitope when the STOP cassette is removed. The STOP cassettes in these constructs are each flanked by FRT sites that are removed in a stochastic way by limited expression of flp recombinase. Reagents for MCFO are described in Nern et al. (2015).\n\n### Immunohistochemistry\n\nDissection and immunohistochemistry of fly brains were done as previously described (Aso et al., 2014a). The following antibodies were used: rabbit-anti-GFP (1:1000; A11122; Invitrogen), mouse-anti-GFP (1:200; UC Davis/NIH Neuromab Facility; clone N86/38; for GRASP), mouse anti-nc82 (1:33.3; Developmental Studies Hybridoma Bank, Univ. Iowa, Iowa City, IA, United States) (Hofbauer et al., 2009), rat-anti-nCad (1:200; DN-Ex #8; Developmental Studies Hybridoma Bank, University of Iowa), rabbit anti-HA (1:300; Cell Signaling Technology, MA, United States), rat anti-FLAG (1:200; Novus Biologicals, Littleton, CO, United States), mouse anti-Drosophila ChAT (ChAT4B1; 1: 100; Developmental Studies Hybridoma Bank, Univ. Iowa) (Takagawa and Salvaterra, 1996), rabbit anti-Drosophila GAD1 (1:1000; a gift from Dr FR Jackson) (Featherstone et al., 2000), rabbit anti-DvGluT (1:5000; a gift from Dr A DiAntonio) (Daniels et al., 2008) as primary antibodies, and cross-adsorbed secondary antibodies to IgG (H+L): AlexaFluor-488 donkey anti-mouse (1:400; Jackson Labs), Cy3 donkey anti-rabbit (1:500; Jackson Labs), AlexaFluor-647 donkey anti-rat (1:300; Jackson Labs), AlexaFluor-488 goat anti-rabbit (1:800; A11034; Invitrogen, Carlsbad, CA, United States), and AlexaFluor-568 goat anti-mouse (1:400; A11031; Invitrogen).\n\nConfocal images were obtained by using LSM710 (Zeiss, Oberkochen, Germany) (Figures 1A\u2013F, 2A,E, 3B,F, Figure 1\u2014figure supplement 1, Figure 2\u2014figure supplement 1, Figure 3\u2014figure supplement 1, Figure 6\u2014figure supplement 1) and FV1200 (Olympus, Tokyo, Japan) (Figure 2F) and processed by using ImageJ. The magnified images in SIP and SLP (Figure 2B\u2013D) were obtained by using LSM880 (Zeiss) with Airyscan and were deconvoluted using the Fiji plugin provided by Bob Dougherty (http://fiji.sc/Deconvolution). Airyscan is equipped with 32 GaAsP detectors that collect light from one illumination spot. It can resolve 140 nm (lateral) or 400 nm (axial) at 488-nm wavelength. For the 3D rendering video, confocal images from LSM710 were deconvoluted using the Fiji plugin and then were subjected to 3D image rendering software (Volocity: from PerkinElmer, Waltham, MA, United States).\n\n### Behavioral assays\n\nThe conditioning and testing protocol was as described previously with minor modifications (Liu et al., 2012; Aso et al., 2014b; Yamagata et al., 2015). Briefly, a group of approximately 50 flies in a training tube alternately received octan-3-ol (3-OCT; Merck) and 4-methylcyclohexanol (4-MCH; Sigma\u2013Aldrich, St. Louis, MO, United States) for 1 min in a constant air stream with or without dried sucrose paper. 3-OCT and 4-MCH were diluted 1% and 2%, respectively, in paraffin oil (Sigma\u2013Aldrich), placed in a cup with a diameter of 14 mm and presented to flies. For thermoactivation experiments (Figure 5), 3-OCT and 4-MCH were diluted 10% in paraffin oil, placed in a cup with a diameter of 3 mm and 5, respectively, and presented to flies. For the generalization experiments (Figure 10), 1% 1-octen-3-ol (Sigma\u2013Aldrich) and 2% 2-methylcyclohexanol (Sigma\u2013Aldrich) were also utilized. These diluted odors were mixed with the respective ratios. The restrictive temperature for the experiments with UAS-shits1 was 32\u00b0C and the permissive temperature was 24\u00b0C, measured with Venta-Hygrometer (Venta Luftw\u00e4scher GmbH, Weingarten, Germany). At the test, the trained flies were allowed to choose between MCH and OCT for 2 min in a custom-made transparent Plexiglas T-maze, illuminated by infrared LEDs (Osram 720-SFH487P, Mouser electronics, Mansfield, TX, United States), and the walls were covered with Fluon (Insect-a-Slip, PTFE30, BioQuip Products, Inc., Rancho Dominguez, CA, United States) and the distribution of flies was imaged by cameras (FFMV-03M2M, Point Grey, Richmond, Canada). Captured images were sent to the computer and the fly number in each tube was counted by a custom-made ImageJ macro. The preference index was calculated by taking the mean indices of the last 60 s in the 2-min choice and the learning index was calculated by taking the mean of preference indices of the two reciprocally trained groups. Half of the trained groups received reinforcement together with the first presented odor and the other half with the second odor to cancel the effect of the order of reinforcement.\n\nFor thermoactivation with dTrpA1 (Figure 5), flies were trained by being transferred from a background temperature of 24\u00b0C to a prewarmed tube in a climate box (30\u00b0C) and presented with the training odorant for 1 min.\n\nFlies were aged 3\u201310 days after eclosion and were starved so that the mortality rate reaches 5\u201315% at the test. Between the training and the test, flies were kept without food. Conditioning was performed in dim red light and testing was in darkness.\n\n### Statistics\n\nStatistical analyses were performed with StatPlus and Prism5 (GraphPad, La Jolla, CA, United States). Data did not violate the assumption of normal distribution (Shapiro\u2013Wilk test) and homogeneity of variance (Bartlett test). Therefore, the data were analyzed with parametric statistics: one-sample t-test or one-way analysis of variance followed by the planned pairwise multiple comparisons (Bonferroni). The significance level of statistical tests was set to 0.05.\n",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "aeb74836-c581-465a-9809-2fab45dfac8b",
+      "submission_id": "1d571ff1-975b-44cd-8fcd-057f60ef541c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Leslie C Griffith, Brandeis University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.10719.021](https://doi.org/10.7554/eLife.10719.021)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The first decision letter after peer review is shown below.]\n\nThank you for choosing to send your work entitled \u201cReward signal in a recurrent circuit drives appetitive long-term memory formation\u201d for consideration at eLife. Your full submission has been evaluated by K VijayRaghavan (Senior Editor) and three peer reviewers: Leslie Griffith, who is a member of our Board of Reviewing Editors, Martin Giurfa and one other.\n\nThe decision was reached after discussions between the reviewers. Based on our discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife since the amount of work required to make this submission completely solid is too substantial. The complete reviews are appended to help you in revising the work.\n\nIn summary, this paper leverages new anatomical reagents to investigate mechanisms of LTM formation for appetitive learning. The finding of an LTM-specific putative positive feedback loop for consolidation involving DANs and MBONs is very interesting. All the reviewers agree that the finding is important, but some of the connections that are made to support the story rest on rather weak or incomplete evidence. Another point of weakness for two of the three reviewers was that many of the key points of support for the new model are based on information that was already available in the literature; there is little new experimental territory explored in this paper. The few novel findings are very suggestive, but not by themselves conclusive or complete enough to warrant publication of this version of the paper. For these reasons the paper in its present form is rejected, but we encourage you to submit a substantially expanded paper when these matters are dealt with (this would of course be treated as a new submission). Specific issues included:\n\n1) Neuronal connectivity: The coexistence in similar spatial domains of terminals from putatively connected neurons is the only evidence of direct connectivity and this is weak. There should be live imaging data (using sensors like GCaMP or EPAC) showing that the neurons in this putative circuit have functional relationships and respond to the postulated transmitters.\n\n2) The evidence that there is no DAergic connection between PAM and MBON needs to be strengthened. To really nail this, the authors should rule out other DARs and be able to show no DA responses in MBON using functional imaging.\n\n3) The nature of the glutamatergic connection (excitatory vs. inhibitory) between MBON and PAM is not investigated. This really matters since this is a synapse that could be inhibitory via mGluR/GluCl or excitatory via AMPA-like or NMDARs. The whole idea that this is an LTP-like excitatory feedback loop, while not inconsistent with data, rests on the assertion that this is an excitatory and potentiating connection. Some evidence is needed here. It is not sufficient for the sign of a synapse to be inferred from indirect behavioral evidence; you need to determine it experimentally. This can be done with functional imaging.\n\nReviewer #1:\n\nThis paper leverages new anatomical reagents to investigate mechanisms of LTM formation for appetitive learning. The finding of an LTM-specific putative positive feedback loop for consolidation involving DANs and MBONs is quite interesting and a bit unexpected. The finding is really novel and important, but some of the connections that are made rest on rather weak or incomplete evidence.\n\n1) Neuronal connectivity:\n\na) The coexistence in similar spatial domains of terminals from putatively connected neurons is the only evidence of direct connectivity and this is weak. These data are presented as single example images with no quantification or indication of whether these images are typical. At minimum there should be markers showing the presence of dendritic/axonal markers (or citations if these experiments have already been published elsewhere) and GRASP to show contact.\n\nb) There should be live imaging data (using sensors like GCaMP or EPAC) showing that the neurons in this putative circuit have functional relationships and respond to the postulated transmitters.\n\nc) Completeness of model: The authors should be able to show that shits during consolidation in MBON also blocks LTM.\n\n2) The evidence that there is no DAergic connection between PAM and MBON needs to be strengthened \u2013 basically a failure of a single RNAi to block LTM. This could be due to: 1) the RNAi not being effective in that cell type, or 2) a different DAR mediating the connection. To really nail this, the authors should rule out other DARs and be able to show no DA responses in MBON using functional imaging.\n\n3) The nature of the glutamatergic connection (excitatory vs. inhibitory) between MBON and PAM is not investigated. This really matters since this is a synapse that could be inhibitory via mGluR/GluCl or excitatory via AMPA-like or NMDARs. The whole idea that this is an LTP-like excitatory feedback loop, while not inconsistent with data, rests on the assertion that this is an excitatory and potentiating connection. Some evidence is needed here. It is not sufficient for the sign of a synapse to be inferred from indirect behavioral evidence; you need to determine it experimentally. This can be done with functional imaging.\n\nReviewer #2:\n\nThis is an excellent work showing for the first time that one-trial appetitive conditioning leading to the formation of long-term memory in Drosophila relies on a previously unknown circuit integrated by PAM-\u03b11 neurons, conveying the dopaminergic reward signal to \u03b1\u03b2 Kenyon cells (KC) of the mushroom bodies (MBs), and MBON-\u03b11 neurons, which are extrinsic to \u03b1/\u03b2 KCs and which provide an excitatory glutamatergic loop onto PAM-\u03b11. In this way, dopamine reward signaling is enhanced via the glutamatergic feedback of MBON-\u03b11, thereby leading to appetitive LTM formation.\n\nIn general, I am very enthusiastic about this work and the elegance of the experiments presented. I have a couple of general remarks that the authors could address to improve their manuscript.\n\nI found very interesting that the authors identified two MBON-\u03b11 cells with very similar morphology (Figure 2C). Unfortunately, they did not elaborate on the redundancy/complementarity of these two cells for the phenomena under scrutiny. Personally I would like to know why there are two cells. Are they fully redundant? Are they modulating dopaminergic signaling at different rates? Do they contribute equally to LTM formation? Can the authors provide some experimental evidence aimed at disentangling the contributions of the two cells?\n\nAlso the circuits presented in Figure 2D and Figure 7C, create the wrong impression (in particular 2D, less in the case of 7C) of a closed circuit with no external input/output. What is missing in these figures, and it would be nice to see it, is the octopaminergic circuit proving relay sugar signals to PAM neurons. This is important to see from where does the sugar signal come from. On the other hand, the term \u201cLTM read-out\u201d is obscure. What do the authors mean in terms of circuitry, structures?\n\nThe Discussion was a bit poor, in particular given the richness and importance of the results presented in this work. Although it is clear that this would be the first excitatory loop found at the level of the MBs, various reports have studied the presence of inhibitory loops and their involvement in aversive LTM formation in the fly as well as in appetitive memory formation in the honeybee. The latter case is particularly relevant for this article given the common appetitive paradigm. I would appreciate that the authors discuss the parallels and differences between inhibitory, GABAergic feedback neurons, and excitatory, glutamatergic feedback neurons in LTM formation.\n\nReviewer #3:\n\nThe authors report an analysis of a neuronal circuit required for appetitive long-term memory (LTM) formation. A specific type of dopaminergic neurons (PAM-\u03b11) targeting a specific region of the mushroom body is shown to be required for appetitive LTM, but not short-term memory. A connection to a mushroom body output neuron (MBON-\u03b11) is demonstrated, and a feedback loop between MBON-\u03b11 and PAM-\u03b11 proposed. In addition, transmitter release from the specific mushroom body cells targeted by both MBON-\u03b11 and PAM-\u03b11 neurons (\u03b1/\u03b2-lobe Kenyon cells) are shown to be required during the learning process (acquisition) to induce the formation of LTM.\n\nFirst, the authors report an anatomical interaction between MBON-\u03b11 and PAM-\u03b11. The cellular anatomy and the determination of the directionality of the signals using a dendrite marker and a presynaptic marker are beautifully described and convincing. However, this finding has been reported already in detail in Aso et al., eLife 2014; 3:e04577 (Figure 14N; Figure 20C). The two MBON-\u03b11 cells have been described in this publication to be glutamatergic and not cholinergic or GABAergic as well.\n\nSecond, the authors report that blocking the output from PAM-\u03b11 neurons during training does not significantly affect appetitive short-term memory, but LTM. This has been reported already in Yamagata et al., PNAS 2015, 112:578-583 (Figure 4H, I).\n\nThird, the authors show that blocking output from MBON-\u03b11 neurons during training likewise impairs LTM (tested 24h after training), but not STM (tested directly after training). In Aso et al., eLife 2014, 3:e04580 (Figure 7B) it has been reported that blocking MBON-\u03b11 impairs appetitive 2h memory. Therefore, the finding that LTM, but not STM is affected is novel. However, the conclusion that MBON-\u03b11 neurons mediate specifically LTM (\u201c\u2026we found a similar selective impairment of LTM upon the blockade of MBON-\u03b11\u201d) is perhaps not entirely correct.\n\nFourth, the authors find that downregulating the dopamine receptor DopR1 in MBON-\u03b11 neurons does not affect LTM formation or acquisition. However, they find that RNAi-mediated downregulation of DopR1 in \u03b1/\u03b2-type Kenyon cells does impair LTM. The authors do not directly exclude that PAM-\u03b11 neurons target MBON-\u03b11, but correctly state that \u201c\u2026these results indicate that the DopR1-mediated LTM trace is primarily formed in \u03b1/\u03b2 KCs, not in MBON-\u03b11\u201d. I totally agree with that conclusion, and I find it highly interesting. However, the finding that \u03b1/\u03b2-type Kenyon cells require this receptor for LTM formation is not surprising given the results from Perisse et al. 2013, 79: 945-956 and Trannoy et al 2011, 21: 1647-1653, and excluding a dopaminergic signal from PAM-\u03b11 onto MBON-\u03b11 can be assured only after testing the effect of downregulating the remaining classes dopamine receptors.\n\nFifth, the authors show that output from \u03b1/\u03b2-type Kenyon cells is required during the training phase to induce appetitive LTM. This convincing set of experiments confirms the finding obtained by Trannoy et al 2011, 21: 1647-1653 (Figure 4G) that STM and LTM are independently formed in \u03b3-type Kenyon cells and \u03b1/\u03b2-type Kenyon cells, respectively.\n\nSixth, it is shown that the mushroom body output neuron MBON-\u03b11 is required for LTM retrieval, whereas the PAM-\u03b11 neuron is required not only during, but also directly after the training. The effect of dopamine released by PAM-\u03b11 is not required 22h after training. This demonstrates that dopamine release does not only signal the CS-US coincidence, but is also required for the induction of LTM shortly after training. This is indeed a novel and interesting finding.\n\nOverall, most of the results presented here have been already described. Only very few aspects are new, which perhaps do not justify the publication of this manuscript in its current form.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for submitting your work entitled \u201cReward signal in a recurrent circuit drives appetitive long-term memory formation\u201d for peer review at eLife. Your submission has been favorably evaluated by K VijayRaghavan (Senior Editor), Leslie Griffith (Reviewing Editor), and two reviewers.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a minority revised submission.\n\nThis study shows that a specific subset of rewarding dopamine neurons in the Drosophila brain receives feedback regulation from the developing associative memory trace. This feedback signal is conveyed from the mushroom body by two pairs of mushroom body efferent neurons. This is a novel mechanism of consolidation.\n\nEssential revisions:\n\nWe were overall satisfied with the changes made in this paper since the last version that was reviewed. There were two minor remaining concerns that should be addressed in the text in a revised version.\n\n1) There was a bit of concern about the lack of functional imaging, but the data on NMDAR make it highly probable this is an excitatory synapse, but there are no functional data. An acknowledgement that the identification of this connection is preliminary would be appropriate.\n\n2) The wording on OA made it seem like OA is NOT involved. It is, just one synapse back. This should be clarified in the text.\n",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cc52845b-1120-4320-a141-21d06d8d0cf1",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C1",
+      "claim": "A single presentation of a sugar reward to Drosophila activates distinct subsets of dopamine neurons that independently induce short- and long-term olfactory memories (STM and LTM, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "A single presentation of a sugar reward to Drosophila activates distinct subsets of dopamine neurons that independently induce short- and long-term olfactory memories (STM and LTM, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior work establishing this finding.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "f4234b16-638f-4d51-8c62-8b8824bdf092",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C2",
+      "claim": "A recurrent reward circuit underlies the formation and consolidation of LTM.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we show that a recurrent reward circuit underlies the formation and consolidation of LTM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by multiple experimental results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "7f5d57bf-4c38-4d6c-ac85-7899eb30ad5b",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C3",
+      "claim": "The feedback circuit is composed of a single class of reward-signaling dopamine neurons (PAM-\u03b11) projecting to a restricted region of the mushroom body (MB), and a specific MB output cell type, MBON-\u03b11, whose dendrites arborize that same MB compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "This feedback circuit is composed of a single class of reward-signaling dopamine neurons (PAM-\u03b11) projecting to a restricted region of the mushroom body (MB), and a specific MB output cell type, MBON-\u03b11, whose dendrites arborize that same MB compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This anatomical description is supported by imaging data shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "fc84a4ff-7972-4c77-8b34-d75afac220b4",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C4",
+      "claim": "Both MBON-\u03b11 and PAM-\u03b11 neurons are required during the acquisition and consolidation of appetitive LTM.",
+      "claim_type": "EXPLICIT",
+      "source": "Both MBON-\u03b11 and PAM-\u03b11 neurons are required during the acquisition and consolidation of appetitive LTM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral experiments using synaptic blockade shown in Figures 3 and 9.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "83297627-6d68-441e-bbdb-06de85cce998",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C5",
+      "claim": "MBON-\u03b11 additionally mediates the retrieval of LTM, which is dependent on the dopamine receptor signaling in the MB \u03b1/\u03b2 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "MBON-\u03b11 additionally mediates the retrieval of LTM, which is dependent on the dopamine receptor signaling in the MB \u03b1/\u03b2 neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral experiments shown in Figures 6 and 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "643a8e4c-a473-4b7e-8e8e-740e8c025aa3",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C6",
+      "claim": "A reward signal transforms a nascent memory trace into a stable LTM using a feedback circuit at the cost of memory specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that a reward signal transforms a nascent memory trace into a stable LTM using a feedback circuit at the cost of memory specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the generalization experiments shown in Figure 10.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "e543bed3-d166-4d61-af42-5a0fe4c777fe",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C7",
+      "claim": "A single presentation of nutritious sugar and an odor drives robust short-term memory (STM) and LTM in Drosophila melanogaster.",
+      "claim_type": "EXPLICIT",
+      "source": "Appetitive olfactory learning in Drosophila melanogaster provides an opportunity to uncover the mechanisms underlying such integration of information, as a single presentation of nutritious sugar and an odor drives robust short-term memory (STM) and LTM, while non-nutritious sugar induces only STM (Krashes and Waddell, 2008; Colomb et al., 2009; Burke and Waddell, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "8c1db210-d3cc-42fa-8bf0-cae6588e1a9c",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C8",
+      "claim": "Non-nutritious sugar induces only STM.",
+      "claim_type": "EXPLICIT",
+      "source": "Appetitive olfactory learning in Drosophila melanogaster provides an opportunity to uncover the mechanisms underlying such integration of information, as a single presentation of nutritious sugar and an odor drives robust short-term memory (STM) and LTM, while non-nutritious sugar induces only STM (Krashes and Waddell, 2008; Colomb et al., 2009; Burke and Waddell, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "39e0b38b-9722-4d48-a8da-d80b678d0f6b",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C9",
+      "claim": "Sugar reward is mediated by a group of dopamine neurons called the protocerebral anterior medial (PAM) cluster.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, sugar reward is mediated by a group of dopamine neurons called the protocerebral anterior medial (PAM) cluster (Burke et al., 2012; Liu et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "1c51c421-2b4b-49f8-9aa7-e161d26beab9",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C10",
+      "claim": "Artificial activation of the PAM cluster neurons in the presence of odor drives robust appetitive STM and LTM formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Artificial activation of the PAM cluster neurons in the presence of odor drives robust appetitive STM and LTM formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "7494afe5-cd5a-4450-ab66-23548ba7e0ee",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C11",
+      "claim": "PAM-\u03b11 is one of several cell types responsible for LTM formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies subdivided the PAM cluster neurons into STM- and LTM-inducing cell types and identified several cell types responsible for LTM formation, including PAM-\u03b11 (Huetteroth et al., 2015; Yamagata et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "94579b3d-f54e-43a8-9f53-3454d3fc1c96",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C12",
+      "claim": "The induced LTM is undetectable immediately after conditioning but gradually develops with time.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the induced LTM is undetectable immediately after conditioning but gradually develops with time (Das et al., 2014; Huetteroth et al., 2015; Yamagata et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "ba04404f-5f5e-4d96-9a7e-c9f850f4dc28",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C13",
+      "claim": "Dopamine reward signals are conveyed by PAM cluster neurons to the mushroom body (MB), where the convergence of the reward and the odor is assumed to take place.",
+      "claim_type": "EXPLICIT",
+      "source": "Dopamine reward signals are conveyed by PAM cluster neurons to a brain structure called mushroom body (MB), where the convergence of the reward and the odor is assumed to take place (Schwaerzel et al., 2003; Krashes et al., 2007; Trannoy et al., 2011; Cervantes-Sandoval et al., 2013; Huang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "ae0de23b-c44c-4e25-a0d9-356fd8a2d0d1",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C14",
+      "claim": "The MB represents odors using a sparse subset of \u223c2000 intrinsic neurons, Kenyon cells (KCs).",
+      "claim_type": "EXPLICIT",
+      "source": "The MB represents odors using a sparse subset of \u223c2000 intrinsic neurons, Kenyon cells (KCs) (Turner et al., 2008; Aso et al., 2009; Honegger et al., 2011; Campbell et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "e007d6ec-95d5-4347-ba3a-f8d6498bdd36",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C15",
+      "claim": "KCs send parallel fibers to form lobe structures, where multiple MB-output neuron (MBON) types elaborate spatially segregated dendritic arbors.",
+      "claim_type": "EXPLICIT",
+      "source": "KCs send parallel fibers to form lobe structures, where multiple MB-output neuron (MBON) types elaborate spatially segregated dendritic arbors (Aso et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "2d785dd8-2e95-4a2a-8343-ab9be29c56c4",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C16",
+      "claim": "The KC-MBON synapses are presumed to be modified in the course of memory formation by the reinforcing dopamine neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The KC-MBON synapses are presumed to be modified in the course of memory formation by the reinforcing dopamine neurons (Tomchik and Davis, 2009; Gervasi et al., 2010; Sejourne et al., 2011; Cervantes-Sandoval et al., 2013; Placais et al., 2013; Boto et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "7772faf2-951c-4134-8118-0c4d78964f63",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C17",
+      "claim": "The presynaptic terminals of PAM-\u03b11 are localized to the basal compartment of the MB \u03b1 lobe (\u03b11).",
+      "claim_type": "EXPLICIT",
+      "source": "The presynaptic terminals of PAM-\u03b11 are localized to the basal compartment of the MB \u03b1 lobe (\u03b11) (Liu et al., 2012)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation and shown in Figure 1A,B,H.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "96494b12-59db-46fb-9c6a-e36c69ea161e",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C18",
+      "claim": "The dendrites of PAM-\u03b11 stretch horizontally across the superior medial, intermediate, and lateral protocerebra (SMP, SIP, and SLP, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the dendrites stretch horizontally across the superior medial, intermediate, and lateral protocerebra (SMP, SIP, and SLP, respectively) (Aso et al., 2014a; Yamagata et al., 2015) (Figure 1A,B,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and shown in Figure 1A,B,H.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "efa7b83e-d576-4269-9951-e3f77a4df975",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C19",
+      "claim": "One of the input candidates to PAM-\u03b11 identified was the output neurons from the \u03b11 compartment of the MB (MBON-\u03b11).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, one of the input candidates we identified was the output neurons from the \u03b11 compartment of the MB (MBON-\u03b11) (Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by computational search and shown in Figure 1C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "d8cf0504-5ed0-4ac4-858c-6f67efb4a4b9",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C20",
+      "claim": "The presynaptic terminals of MBON-\u03b11 lie in close apposition to the dendrites of PAM-\u03b11.",
+      "claim_type": "EXPLICIT",
+      "source": "Transgenic expression of a presynaptic marker (Robinson et al., 2002) by MB310C-GAL4 revealed that the presynaptic terminals of MBON-\u03b11 lie in close apposition to the dendrites of PAM-\u03b11 (Figure 1E,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 1E,I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "267abf18-7b95-40f9-8690-8686e870d3f6",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C21",
+      "claim": "The terminals of MBON-\u03b11 were immunoreactive for the vesicular glutamate transporter.",
+      "claim_type": "EXPLICIT",
+      "source": "The terminals of MBON-\u03b11 were immunoreactive for the vesicular glutamate transporter (Figure 1F) (Daniels et al., 2008)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "1422d5cc-de6b-42bb-afef-2bb84624fc59",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C22",
+      "claim": "MBON-\u03b11 is glutamatergic.",
+      "claim_type": "EXPLICIT",
+      "source": "The terminals of MBON-\u03b11 were immunoreactive for the vesicular glutamate transporter (Figure 1F) (Daniels et al., 2008) but not for markers for GABAergic or cholinergic neurons (glutamic acid decarboxylase [Jackson et al., 1990] or choline acetyltransferase [Takagawa and Salvaterra, 1996], respectively) (Figure 1\u2014figure supplement 1), consistent with MBON-\u03b11 being glutamatergic (Aso et al., 2014a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunohistochemistry shown in Figure 1F and Figure 1\u2014figure supplement 1, and citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "7f8e1564-e1c6-498a-b469-54153616139c",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C23",
+      "claim": "MBON-\u03b11 comprises two cells with very similar morphology.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential labeling of the individual MBON-\u03b11 neurons in the same brain (Nern et al., 2015) revealed that MBON-\u03b11 comprises two cells with very similar morphology (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by multicolor flip-out imaging shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "4d9a6b93-611a-4e03-881e-b8eb35164b8c",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C24",
+      "claim": "The processes of MBON-\u03b11 and PAM-\u03b11 substantially intermingled both in the SIP and SLP, and in the \u03b11 compartment of the MB.",
+      "claim_type": "EXPLICIT",
+      "source": "Confocal images revealed that the processes of MBON-\u03b11 and PAM-\u03b11 substantially intermingled both in the SIP and SLP, and in the \u03b11 compartment of the MB\u2014the input and output sites of PAM-\u03b11, respectively (Figure 2A\u2013E, Figure 2\u2014figure supplement 1, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by double-labeling confocal imaging shown in Figure 2A\u2013E, Figure 2\u2014figure supplement 1, and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "e395d5ee-e15c-4afd-95a5-531e5090f9dc",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C25",
+      "claim": "Bouton-like structures of MBON-\u03b11 are attached to the dendrites of PAM-\u03b11.",
+      "claim_type": "EXPLICIT",
+      "source": "To observe these processes in SIP and SLP in even greater detail, we employed a microscope with a super resolution detection system and found bouton-like structures of MBON-\u03b11 attached to the dendrites of PAM-\u03b11 (Figure 2B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by super-resolution imaging shown in Figure 2B\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "a4193d46-8493-4fd6-a977-f62192c8c1c8",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C26",
+      "claim": "A GRASP experiment revealed strong GRASP signals in SIP, SLP, and the \u03b11 compartment, supporting the close juxtaposition between PAM-\u03b11 and MBON-\u03b11.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a GFP reconstitution across synaptic partners (GRASP) (Feinberg et al., 2008; Gordon and Scott, 2009) experiment using R72D01-LexA and MB310C-GAL4 revealed strong GRASP signals in SIP, SLP, and the \u03b11 compartment (Figure 2F). This further supports the close juxtaposition between PAM-\u03b11 and MBON-\u03b11.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by GRASP imaging shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "7fd61fb0-5df8-407d-a13e-edd063675c84",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C27",
+      "claim": "The blockade of PAM-\u03b11 during conditioning did not significantly affect STM.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our previous results (Yamagata et al., 2015), the blockade of PAM-\u03b11 during conditioning did not significantly affect STM (Figure 3C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "c230aab1-0a60-427a-ad90-75831d27ef60",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C28",
+      "claim": "The blockade of PAM-\u03b11 during conditioning led to a severe impairment of sucrose-rewarded LTM.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our previous results (Yamagata et al., 2015), the blockade of PAM-\u03b11 during conditioning did not significantly affect STM (Figure 3C), but led to a severe impairment of sucrose-rewarded LTM (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "65d431fb-b541-4eea-9f1b-cf680590c6b6",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C29",
+      "claim": "Blocking MBON-\u03b11 during conditioning resulted in a preferential impairment of LTM.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, we found a similar preferential impairment of LTM upon the blockade of MBON-\u03b11, using MB310C-GAL4 driver (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "4dcd7fd7-0c77-4203-afae-060e5b0183e2",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C30",
+      "claim": "Blocking MBON-\u03b11 during conditioning did not significantly impair STM.",
+      "claim_type": "EXPLICIT",
+      "source": "The same blockade did not significantly impair STM (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "a6843e94-8eec-45f2-ad2f-98b850097ac6",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C31",
+      "claim": "Knocking down either dNR-1 or dNR-2 in PAM-\u03b11 impaired LTM but not STM.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, knocking down either dNR-1 or dNR-2, which together form the functional NMDA receptor (Xia et al., 2005), impaired LTM (Figure 4C) but not STM (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 4B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "2927262a-0d00-4f55-8261-cdc787f8a33b",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C32",
+      "claim": "Thermo-activation of MBON-\u03b11 in the presence of an odor induced appetitive LTM.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found appetitive LTM upon thermo-activation of MBON-\u03b11 in the presence of an odor (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "9d4ed2d7-8852-4cd5-bf5c-e2b827e6e5e0",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C35",
+      "claim": "Knocking down DopR1 in MBON-\u03b11 did not significantly impair either appetitive LTM or STM.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, knocking down DopR1 in MBON-\u03b11 did not significantly impair either appetitive LTM or STM (Figure 6A and Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 6A and Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "5f1fbaaa-4a2c-4b15-84ae-95cda8ec9060",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C36",
+      "claim": "Targeting wild-type DopR1 gene expression in KCs fully rescued the defects in dumb2 mutant flies.",
+      "claim_type": "EXPLICIT",
+      "source": "dumb2 mutant flies showed severely impaired appetitive LTM. Targeting wild-type DopR1 gene expression in KCs fully rescued the defects (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "28df49cb-2393-41e1-9553-f9d86b453ded",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C37",
+      "claim": "The blockade of the \u03b1/\u03b2 KCs during conditioning significantly impaired appetitive LTM, but not STM.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the blockade of the \u03b1/\u03b2 KCs during conditioning significantly impaired appetitive LTM, but not STM (Figure 7A,B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 7A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "56f19eba-ed70-4a62-9b00-01745dc1c3a6",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C38",
+      "claim": "When MBON-\u03b11 was blocked only during the test phase of LTM, there was a severe impairment of conditioned odor approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, when MBON-\u03b11 was blocked only during the test phase of LTM, we found a severe impairment of conditioned odor approach (Figure 8A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 8A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "6b788bc4-f3f8-494f-a3af-a212d8f4b0d4",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C39",
+      "claim": "The blockade of PAM-\u03b11 during LTM retrieval did not have a significant effect.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the blockade of PAM-\u03b11 during LTM retrieval did not have a significant effect (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "fb8eb161-4ccf-4ea0-ac34-91d212d5d04e",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C40",
+      "claim": "Blocking any component of the feedback circuit for 1 hr immediately following conditioning resulted in a significant impairment of appetitive LTM.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this idea, blocking any component of the feedback circuit for 1 hr immediately following conditioning resulted in a significant impairment of appetitive LTM (Figure 9A,C,E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 9A,C,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "48450594-4568-4c2b-aea8-ec3a96ea0408",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C41",
+      "claim": "Blocking any component of the feedback circuit 22 hr after training did not impair appetitive LTM.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the same blockade 22 hr after training did not (Figure 9B,D,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 9B,D,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "d6de4fc7-3f5e-48bb-97fd-2ea07b058407",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C42",
+      "claim": "The performance decline is shallower in LTM compared to STM in odor generalization experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the performance decline is shallower in LTM compared to STM (Figure 10C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 10C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "39002b63-3a34-446d-a3a2-e917dbb67f11",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C43",
+      "claim": "Compromised stimulus specificity in LTM is general.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed these results with another set of odorants, suggesting that compromised stimulus specificity in LTM is general (Figure 10\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 10\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "f6eaa27d-cf5e-4b34-800d-16017df1ec2e",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C44",
+      "claim": "MB output through MBON-\u03b11 is required not only for the retrieval, but also for the acquisition and early consolidation of long-term appetitive olfactory memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we extend the known role of MBONs and show that MB output through MBON-\u03b11 is required not only for the retrieval, but also for the acquisition and early consolidation of long-term appetitive olfactory memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by behavioral experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "cfdf5219-e26a-4836-9ded-180aec1b9e07",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C45",
+      "claim": "Feedback signals from \u03b1/\u03b2 KCs, mediated by MBON-\u03b11, play a critical role in controlling the rewarding dopamine signals from PAM-\u03b11.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings strongly support our model that feedback signals from \u03b1/\u03b2 KCs, mediated by MBON-\u03b11, play a critical role in controlling the rewarding dopamine signals from PAM-\u03b11 (Figure 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the experimental results, supported by the data and shown in Figure 11.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "9a220682-6866-4b78-9f55-82d7438a0d41",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C46",
+      "claim": "PAM-\u03b11 might integrate simultaneous inputs from sugar perception and the nascent memory trace to augment and sustain the dopamine release to gate LTM formation.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, PAM-\u03b11 might integrate simultaneous inputs from sugar perception and the nascent memory trace to augment and sustain the dopamine release to gate LTM formation (Figure 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "516e1f8e-ae01-4f51-89dd-5082a6462297",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C47",
+      "claim": "The requirement of the NMDA receptor in PAM-\u03b11 supports the model that PAM-\u03b11 integrates inputs from sugar perception and the nascent memory trace.",
+      "claim_type": "EXPLICIT",
+      "source": "The requirement of the NMDA receptor in PAM-\u03b11 (Figure 4) further supports this model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the experimental results shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "2b8e0491-2007-4b55-84aa-749cba33bdeb",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C48",
+      "claim": "The reinforcing signal for LTM formation may depend on the presence of other sensory stimuli (e.g., odor).",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, the reinforcing signal for LTM formation may depend on the presence of other sensory stimuli (e.g., odor).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the proposed model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "a9d3e322-4013-4644-beeb-833cbf1f46bc",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C49",
+      "claim": "LTM formation is energetically costly.",
+      "claim_type": "EXPLICIT",
+      "source": "As LTM formation is energetically costly (Mery and Kawecki, 2005; Placais and Preat, 2013; Musso et al., 2015), this gain control of the reinforcing signal might serve to restrict LTM formation to ecologically relevant situations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "0196ed96-1ee7-4653-b5f2-e6649075a322",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C50",
+      "claim": "The dopamine release is likely to be sustained by the ongoing activity of the recurrent circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "The dopamine release is likely to be sustained by the ongoing activity of the recurrent circuit (Figure 9C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the experimental results shown in Figure 9C\u2013F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "2de7db59-e5a0-411b-93fb-d0ef9a7d6f76",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C51",
+      "claim": "The output from \u03b1/\u03b2 KCs during consolidation has an essential role for appetitive and aversive LTM.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study reported a consistent finding that the output from \u03b1/\u03b2 KCs during consolidation has an essential role for appetitive and aversive LTM (Huang et al., 2012) in addition to their role in retrieval (Krashes et al., 2007; Trannoy et al., 2011; Cervantes-Sandoval et al., 2013; Xie et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "fe9b2258-4157-4d59-b0e1-b2c1f6e8d48a",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C52",
+      "claim": "Appetitive LTM gradually develops after conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies revealed a gradual development of appetitive LTM after conditioning (Das et al., 2014; Huetteroth et al., 2015; Yamagata et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "41059a8b-3f15-4d6a-bfd5-5cedf63f316b",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C53",
+      "claim": "Ongoing activity in the recurrent loop may provide a circuit mechanism for the gradual LTM development.",
+      "claim_type": "EXPLICIT",
+      "source": "Ongoing activity in the recurrent loop we propose here may provide a circuit mechanism for the gradual LTM development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the proposed model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "6c36c926-ff94-414b-b403-5c986720f509",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C54",
+      "claim": "LTM consolidation in Drosophila requires post-training dopamine inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, previous studies reported that LTM consolidation in Drosophila (Placais et al., 2012; Musso et al., 2015) or in rats (Rossato et al., 2009) requires post-training dopamine inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "5ca0d5ca-6970-4065-97db-9f6bbd69d8ab",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C55",
+      "claim": "Appetitive LTM is less specific to the trained odor, compared to STM.",
+      "claim_type": "EXPLICIT",
+      "source": "Our generalization experiments show that appetitive LTM is less specific to the trained odor, compared to STM (Figure 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 10.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "304ad55a-4581-4cb8-b808-cc169cec809c",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C56",
+      "claim": "Long-lasting memories are more generalized in mice and bees.",
+      "claim_type": "EXPLICIT",
+      "source": "This result fits well into previous studies in mice and bees, demonstrating that long-lasting memories are more generalized (Stach and Giurfa, 2005; Wiltgen and Silva, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "97e3de9e-27f7-46b3-95d1-350458c86022",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C57",
+      "claim": "Distinct types of dopamine neurons signal reward for STM and LTM in the fly brain, and these memories are independently formed in different MB lobes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the fly brain, distinct types of dopamine neurons signal reward for STM and LTM, and these memories are independently formed in different MB lobes (Trannoy et al., 2011; Huetteroth et al., 2015; Yamagata et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "9e5684db-8519-4e8e-b9ca-d4799615885a",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C58",
+      "claim": "Octopamine has been widely accepted as a positive reinforcement signal in insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Octopamine has been widely accepted as a positive reinforcement signal in insects (Hammer, 1993; Hammer and Menzel, 1998; Schwaerzel et al., 2003; Schroll et al., 2006; Perry and Barron, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "34d58e86-36f4-4055-bd5a-e2f9c2950492",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C59",
+      "claim": "In Drosophila, octopamine is considered to provide inputs to dopamine neurons that induce STM formation.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, it is considered to provide inputs to dopamine neurons that induce STM formation (Burke et al., 2012; Das et al., 2014; Huetteroth et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "88b912e2-32d7-4c91-ab33-198719e07c19",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C60",
+      "claim": "Memories with different temporal dynamics are mutually conflicting and formed in distinct areas in mammals, to which different classes of dopamine neurons project.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies in mammals reached a similar conclusion that memories with different temporal dynamics are mutually conflicting and formed in distinct areas, to which different classes of dopamine neurons project (Liljenstrom, 2003; Abraham and Robins, 2005; Kim and Hikosaka, 2013; Kim et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "c7d28c07-a220-48fb-82e1-b2ec05c0e8ba",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C61",
+      "claim": "Independent processing of STM and LTM might be a conserved strategy among animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Independent processing of STM and LTM might be a conserved strategy among animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on comparative observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "3c39bb83-7d49-4edb-9354-f92de781604b",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C62",
+      "claim": "MBON-\u03b13 (also known as MB-V3) mediates appetitive LTM retrieval.",
+      "claim_type": "EXPLICIT",
+      "source": "Another type of MBONs also mediates appetitive LTM retrieval: MBON-\u03b13 (also known as MB-V3) (Placais et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "71849716-1b35-4e9f-a9e0-56e0dbe3379f",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C63",
+      "claim": "Blocking MBON-\u03b13 during conditioning does not impair appetitive LTM acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to MBON-\u03b11, blocking MBON-\u03b13 during conditioning does not impair appetitive LTM acquisition (Placais et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "39361bbf-c2c9-4839-8129-5d0d4e96cd85",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C64",
+      "claim": "Appetitive LTM formed in the \u03b1/\u03b2 KCs is read out through at least two different classes of MBONs.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, appetitive LTM formed in the \u03b1/\u03b2 KCs is read out through at least two different classes of MBONs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental results and prior studies.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "70f89867-6ce6-4916-8b61-bacb8e00f12a",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C65",
+      "claim": "MBON-\u03b11 and MBON-\u03b13 converge in the SIP and might activate shared downstream targets to guide conditioned odor approach.",
+      "claim_type": "EXPLICIT",
+      "source": "These MBONs converge in the SIP (Aso et al., 2014a) and might activate shared downstream targets to guide conditioned odor approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on anatomical observations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "15b287c0-f5b9-466a-87e6-e1ea52cb9731",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C66",
+      "claim": "The recent comprehensive connectivity map of the afferent and efferent neurons of the Drosophila MB revealed many potential feedback connections outside the MB.",
+      "claim_type": "EXPLICIT",
+      "source": "The recent comprehensive connectivity map of the afferent and efferent neurons of the Drosophila MB revealed many potential feedback connections outside the MB (Aso et al., 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to a prior study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "2e726955-8160-43b7-8491-7fc1177b4d3f",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C67",
+      "claim": "Recurrent computation between learned information and reinforcement signals might be a fundamental principle of memory processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the central role of the MB in sensory integration and memory-guided behavior (Aso et al., 2014b), recurrent computation between learned information and reinforcement signals might be a fundamental principle of memory processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the findings and prior knowledge.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "0ab8e42a-21b4-4131-9489-43cf86630773",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C68",
+      "claim": "The activity of reinforcement neurons is modified upon associative learning in both vertebrates and invertebrates.",
+      "claim_type": "EXPLICIT",
+      "source": "In both vertebrates and invertebrates, the activity of reinforcement neurons is modified upon associative learning (Hammer, 1993; Mirenowicz and Schultz, 1994; Riemensperger et al., 2005; Cohen et al., 2012; Schultz, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "cbb81bb6-8d7e-4654-b359-03720ad89d6d",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C69",
+      "claim": "In the feedback circuit identified in this study, MBON-\u03b11 mediates monosynaptic feedback to the dopamine neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In this circuit, MBON-\u03b11 mediates monosynaptic feedback to the dopamine neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the anatomical and functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "07596e8d-2409-42d0-b2b7-f379717e9d4f",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C70",
+      "claim": "There is no monosynaptic feedback to the dopamine neurons found in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, there is no monosynaptic feedback to the dopamine neurons found in mammals, rather anatomical studies suggest such a feedback to be polysynaptic (Lisman and Grace, 2005; Watabe-Uchida et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "c9d7821a-01ee-4100-b9a6-cd65613a9e98",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C71",
+      "claim": "A single association event can trigger formation of long-term memory (LTM) for environmentally relevant information, such as poison or food.",
+      "claim_type": "EXPLICIT",
+      "source": "Environmentally relevant information, such as poison or food, can trigger formation of long-term memory (LTM) in a single association event (Garcia et al., 1955; Alexander et al., 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "672f679f-b0ff-4e68-bfef-aec018c4fc96",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "claim_id": "C72",
+      "claim": "It is advantageous for animals to refer to surrounding conditions when selecting what information to retain as stable LTM.",
+      "claim_type": "EXPLICIT",
+      "source": "Because LTM formation is energetically costly (Mery and Kawecki, 2005; Placais and Preat, 2013), it is advantageous for animals to refer to surrounding conditions when selecting what information to retain as stable LTM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the energetic cost of LTM formation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3930ef17-5c78-49aa-b885-7c2d5dfacef6",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MBON-\u03b11 provides glutamatergic feedback to PAM-\u03b11 dopamine neurons. The anatomical data show that MBON-\u03b11 dendrites and PAM-\u03b11 terminals occupy the same MB compartment (\u03b11), while MBON-\u03b11 presynaptic terminals are closely apposed to PAM-\u03b11 dendrites in the SIP and SLP regions. MBON-\u03b11 is glutamatergic, comprising two morphologically similar cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C26 provide converging anatomical evidence from multiple imaging modalities (confocal, super-resolution, GRASP) showing close spatial apposition between MBON-\u03b11 and PAM-\u03b11. Immunohistochemistry confirms glutamatergic identity (C21-C22). The anatomical circuit is well-characterized with appropriate controls and multiple complementary techniques.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "cd69c8e0-f708-4454-9465-19339b9eebe6",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Both PAM-\u03b11 and MBON-\u03b11 are specifically required for LTM formation but not STM. Synaptic blockade of either PAM-\u03b11 or MBON-\u03b11 during conditioning impairs 24-hr LTM while leaving 5-min STM intact.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C30 demonstrate selective LTM impairment with appropriate behavioral controls showing intact STM (indicating normal sensory function). The parallel requirement of both circuit components supports their functional interaction. Statistical significance is reported and genetic controls are included.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "19d0a19e-f751-4543-8bd2-8d015e54c5bf",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "NMDA receptor signaling in PAM-\u03b11 is required for LTM but not STM formation. Knockdown of either NMDA receptor subunit (dNR-1 or dNR-2) in PAM-\u03b11 selectively impairs LTM, supporting a model where PAM-\u03b11 integrates glutamatergic feedback with sugar reward signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31 and C47 provide genetic evidence for NMDA receptor requirement in PAM-\u03b11 with selective LTM impairment. This supports the proposed integration model, though direct physiological demonstration of glutamatergic transmission is not provided. RNAi knockdown is an appropriate approach with proper controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "01729ff4-8615-4b22-b7f5-c4e7e61a82a9",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Artificial activation of MBON-\u03b11 in the presence of odor is sufficient to induce appetitive LTM formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 demonstrates sufficiency of MBON-\u03b11 activation for LTM using thermogenetic activation (dTrpA1). This complements the necessity experiments and supports the functional role of MBON-\u03b11 in the reward circuit. Appropriate controls are included.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "a96ba4a9-8241-4542-9da0-f018a6ca5475",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "DopR1-mediated dopamine signaling in \u03b1/\u03b2 Kenyon cells, but not in MBON-\u03b11, is required for appetitive LTM formation. Knockdown of DopR1 in \u03b1/\u03b2 KCs impairs LTM, and KC-specific rescue of DopR1 in mutant flies restores LTM. Synaptic output from \u03b1/\u03b2 KCs during conditioning is also required for LTM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 localize the dopamine receptor requirement to KCs using cell-type-specific knockdown and genetic rescue experiments. The requirement for KC output during conditioning (C37) supports the feedback model. Multiple driver lines and appropriate controls strengthen the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "7c5f334f-0a8d-44e5-ba6c-6ea5fdde0206",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "MBON-\u03b11, but not PAM-\u03b11, is required for LTM retrieval. Blocking MBON-\u03b11 during the test phase impairs conditioned odor approach, while blocking PAM-\u03b11 during retrieval has no effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 demonstrate a dual role for MBON-\u03b11 in both LTM formation and retrieval, while PAM-\u03b11 is only required during formation. This dissociation is well-controlled and supports distinct circuit functions during different memory phases.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "4e916c90-e74e-484a-be61-0dee9dcd1ce3",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The recurrent circuit (PAM-\u03b11, MBON-\u03b11, and \u03b1/\u03b2 KCs) is required during early consolidation (0-1 hr post-conditioning) but not later (22 hr post-conditioning). This suggests ongoing circuit activity sustains dopamine release during the consolidation window.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C41 define a critical consolidation window using temporally restricted synaptic blockade. The time-course experiments are well-designed with appropriate controls. Claim C50 provides a mechanistic interpretation consistent with the data, though direct measurement of sustained dopamine release is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "512e4bea-7046-46be-b7e5-a775450524bc",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Appetitive LTM shows reduced odor specificity compared to STM. In generalization experiments using graded odor mixtures, LTM performance declines more gradually than STM as contaminant odor increases, and this effect is general across different odor pairs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C43 and C55 demonstrate reduced odor specificity in LTM using a systematic generalization paradigm. The effect is replicated with multiple odor pairs (C43), strengthening the conclusion. The experimental design appropriately controls for retention time as the only variable between STM and LTM groups.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "7f72b497-d44b-4c38-ab56-9465b372ba06",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A recurrent reward circuit composed of PAM-\u03b11 dopamine neurons, MBON-\u03b11 output neurons, and \u03b1/\u03b2 Kenyon cells underlies appetitive LTM formation and consolidation. The circuit integrates sugar reward signals with nascent memory traces to gate LTM formation, with the trade-off of reduced memory specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C6, C44-C46 synthesize the main findings into a coherent circuit model. The model is well-supported by converging anatomical, genetic, and behavioral evidence from multiple experiments. While some mechanistic details (e.g., direct physiological recordings) are not provided, the overall circuit architecture and function are strongly supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "e8491d24-c04b-43a5-a77b-8891ff514d16",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior work established that sugar reward activates distinct PAM dopamine neuron subsets that independently induce STM and LTM, with PAM-\u03b11 being one LTM-inducing cell type. LTM gradually develops after conditioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C12 accurately summarize prior work with appropriate citations. These provide essential context for the current study and are correctly attributed to previous studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "79ccfe8f-969a-476a-92b1-b0add5b2ba50",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior work established that dopamine reward signals converge with odor information in the mushroom body, where Kenyon cells represent odors and synapse onto MB output neurons. These KC-MBON synapses are modified by dopamine during memory formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 accurately describe established MB circuit architecture and learning mechanisms with appropriate citations. This background is essential for contextualizing the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "852054c8-c9c5-4b81-a464-047b7686ba9f",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "LTM formation is energetically costly, and single-trial learning of environmentally relevant information (poison, food) can trigger LTM. It is advantageous for animals to gate LTM formation based on ecological relevance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C71-C72 cite prior work on the energetic costs of LTM and provide ecological context for the gating mechanism proposed in this study. The citations are appropriate and the reasoning is sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "3042d8fc-2e1b-4cb5-8700-c5e00437259f",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior studies showed that \u03b1/\u03b2 KC output is required during consolidation for both appetitive and aversive LTM, that appetitive LTM gradually develops after conditioning, and that post-training dopamine is required for LTM consolidation in Drosophila and rats.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52, C54 accurately cite prior work that is consistent with and supports the current findings. These provide important comparative context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "78e0a5b3-1a9e-458a-b00d-fcb9a3602868",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior work in other species shows that long-lasting memories are more generalized (mice, bees), that distinct dopamine neuron types signal STM vs LTM in flies, that octopamine provides reward signals in insects, and that memories with different temporal dynamics are formed in distinct brain areas in mammals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C60 provide appropriate comparative context from other species and prior Drosophila work. The citations are accurate and relevant to the discussion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "a36a5ff4-d00b-4337-977d-11a5fffb0503",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Another MBON type (MBON-\u03b13) also mediates appetitive LTM retrieval but is not required for acquisition. MBON-\u03b11 and MBON-\u03b13 converge anatomically and may activate shared downstream targets for conditioned approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C64 accurately cite prior work on MBON-\u03b13 and make reasonable inferences about convergent circuit architecture. Claim C65 is speculative but appropriately qualified and based on anatomical data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "f790a516-485a-496f-bdd8-c1714ceed1e8",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior anatomical studies revealed many potential feedback connections in the MB circuit. Reinforcement neuron activity is modified by learning in vertebrates and invertebrates. The monosynaptic feedback identified here differs from polysynaptic feedback in mammals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C70 provide appropriate comparative context and cite relevant prior work. The distinction between monosynaptic (fly) and polysynaptic (mammal) feedback is accurately stated. Claim C67 is speculative but reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    },
+    {
+      "id": "1684f5d3-a79c-4dc8-819b-e18b75825366",
+      "content_id": "27f034f9-5b6b-4f62-9bd8-41ea88e9cd55",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Speculative claims about circuit function and evolutionary conservation: the reinforcing signal may depend on sensory context, ongoing circuit activity may explain gradual LTM development, and independent STM/LTM processing may be conserved across animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C48, C53, C61 are explicitly speculative interpretations. While consistent with the data, they lack direct experimental support and are appropriately qualified as hypotheses for future testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:44:14.165257Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7772faf2-951c-4134-8118-0c4d78964f63",
+      "result_id": "3930ef17-5c78-49aa-b885-7c2d5dfacef6"
+    },
+    {
+      "claim_id": "96494b12-59db-46fb-9c6a-e36c69ea161e",
+      "result_id": "3930ef17-5c78-49aa-b885-7c2d5dfacef6"
+    },
+    {
+      "claim_id": "efa7b83e-d576-4269-9951-e3f77a4df975",
+      "result_id": "3930ef17-5c78-49aa-b885-7c2d5dfacef6"
+    },
+    {
+      "claim_id": "d8cf0504-5ed0-4ac4-858c-6f67efb4a4b9",
+      "result_id": "3930ef17-5c78-49aa-b885-7c2d5dfacef6"
+    },
+    {
+      "claim_id": "267abf18-7b95-40f9-8690-8686e870d3f6",
+      "result_id": "3930ef17-5c78-49aa-b885-7c2d5dfacef6"
+    },
+    {
+      "claim_id": "1422d5cc-de6b-42bb-afef-2bb84624fc59",
+      "result_id": "3930ef17-5c78-49aa-b885-7c2d5dfacef6"
+    },
+    {
+      "claim_id": "7f8e1564-e1c6-498a-b469-54153616139c",
+      "result_id": "3930ef17-5c78-49aa-b885-7c2d5dfacef6"
+    },
+    {
+      "claim_id": "4d9a6b93-611a-4e03-881e-b8eb35164b8c",
+      "result_id": "3930ef17-5c78-49aa-b885-7c2d5dfacef6"
+    },
+    {
+      "claim_id": "e395d5ee-e15c-4afd-95a5-531e5090f9dc",
+      "result_id": "3930ef17-5c78-49aa-b885-7c2d5dfacef6"
+    },
+    {
+      "claim_id": "a4193d46-8493-4fd6-a977-f62192c8c1c8",
+      "result_id": "3930ef17-5c78-49aa-b885-7c2d5dfacef6"
+    },
+    {
+      "claim_id": "7fd61fb0-5df8-407d-a13e-edd063675c84",
+      "result_id": "cd69c8e0-f708-4454-9465-19339b9eebe6"
+    },
+    {
+      "claim_id": "c230aab1-0a60-427a-ad90-75831d27ef60",
+      "result_id": "cd69c8e0-f708-4454-9465-19339b9eebe6"
+    },
+    {
+      "claim_id": "65d431fb-b541-4eea-9f1b-cf680590c6b6",
+      "result_id": "cd69c8e0-f708-4454-9465-19339b9eebe6"
+    },
+    {
+      "claim_id": "4dcd7fd7-0c77-4203-afae-060e5b0183e2",
+      "result_id": "cd69c8e0-f708-4454-9465-19339b9eebe6"
+    },
+    {
+      "claim_id": "a6843e94-8eec-45f2-ad2f-98b850097ac6",
+      "result_id": "19d0a19e-f751-4543-8bd2-8d015e54c5bf"
+    },
+    {
+      "claim_id": "516e1f8e-ae01-4f51-89dd-5082a6462297",
+      "result_id": "19d0a19e-f751-4543-8bd2-8d015e54c5bf"
+    },
+    {
+      "claim_id": "2927262a-0d00-4f55-8261-cdc787f8a33b",
+      "result_id": "01729ff4-8615-4b22-b7f5-c4e7e61a82a9"
+    },
+    {
+      "claim_id": "9d4ed2d7-8852-4cd5-bf5c-e2b827e6e5e0",
+      "result_id": "a96ba4a9-8241-4542-9da0-f018a6ca5475"
+    },
+    {
+      "claim_id": "5f1fbaaa-4a2c-4b15-84ae-95cda8ec9060",
+      "result_id": "a96ba4a9-8241-4542-9da0-f018a6ca5475"
+    },
+    {
+      "claim_id": "28df49cb-2393-41e1-9553-f9d86b453ded",
+      "result_id": "a96ba4a9-8241-4542-9da0-f018a6ca5475"
+    },
+    {
+      "claim_id": "56f19eba-ed70-4a62-9b00-01745dc1c3a6",
+      "result_id": "7c5f334f-0a8d-44e5-ba6c-6ea5fdde0206"
+    },
+    {
+      "claim_id": "6b788bc4-f3f8-494f-a3af-a212d8f4b0d4",
+      "result_id": "7c5f334f-0a8d-44e5-ba6c-6ea5fdde0206"
+    },
+    {
+      "claim_id": "fb8eb161-4ccf-4ea0-ac34-91d212d5d04e",
+      "result_id": "4e916c90-e74e-484a-be61-0dee9dcd1ce3"
+    },
+    {
+      "claim_id": "48450594-4568-4c2b-aea8-ec3a96ea0408",
+      "result_id": "4e916c90-e74e-484a-be61-0dee9dcd1ce3"
+    },
+    {
+      "claim_id": "0196ed96-1ee7-4653-b5f2-e6649075a322",
+      "result_id": "4e916c90-e74e-484a-be61-0dee9dcd1ce3"
+    },
+    {
+      "claim_id": "d6de4fc7-3f5e-48bb-97fd-2ea07b058407",
+      "result_id": "512e4bea-7046-46be-b7e5-a775450524bc"
+    },
+    {
+      "claim_id": "39002b63-3a34-446d-a3a2-e917dbb67f11",
+      "result_id": "512e4bea-7046-46be-b7e5-a775450524bc"
+    },
+    {
+      "claim_id": "5ca0d5ca-6970-4065-97db-9f6bbd69d8ab",
+      "result_id": "512e4bea-7046-46be-b7e5-a775450524bc"
+    },
+    {
+      "claim_id": "f4234b16-638f-4d51-8c62-8b8824bdf092",
+      "result_id": "7f72b497-d44b-4c38-ab56-9465b372ba06"
+    },
+    {
+      "claim_id": "7f5d57bf-4c38-4d6c-ac85-7899eb30ad5b",
+      "result_id": "7f72b497-d44b-4c38-ab56-9465b372ba06"
+    },
+    {
+      "claim_id": "fc84a4ff-7972-4c77-8b34-d75afac220b4",
+      "result_id": "7f72b497-d44b-4c38-ab56-9465b372ba06"
+    },
+    {
+      "claim_id": "83297627-6d68-441e-bbdb-06de85cce998",
+      "result_id": "7f72b497-d44b-4c38-ab56-9465b372ba06"
+    },
+    {
+      "claim_id": "643a8e4c-a473-4b7e-8e8e-740e8c025aa3",
+      "result_id": "7f72b497-d44b-4c38-ab56-9465b372ba06"
+    },
+    {
+      "claim_id": "f6eaa27d-cf5e-4b34-800d-16017df1ec2e",
+      "result_id": "7f72b497-d44b-4c38-ab56-9465b372ba06"
+    },
+    {
+      "claim_id": "cfdf5219-e26a-4836-9ded-180aec1b9e07",
+      "result_id": "7f72b497-d44b-4c38-ab56-9465b372ba06"
+    },
+    {
+      "claim_id": "9a220682-6866-4b78-9f55-82d7438a0d41",
+      "result_id": "7f72b497-d44b-4c38-ab56-9465b372ba06"
+    },
+    {
+      "claim_id": "cc52845b-1120-4320-a141-21d06d8d0cf1",
+      "result_id": "e8491d24-c04b-43a5-a77b-8891ff514d16"
+    },
+    {
+      "claim_id": "e543bed3-d166-4d61-af42-5a0fe4c777fe",
+      "result_id": "e8491d24-c04b-43a5-a77b-8891ff514d16"
+    },
+    {
+      "claim_id": "8c1db210-d3cc-42fa-8bf0-cae6588e1a9c",
+      "result_id": "e8491d24-c04b-43a5-a77b-8891ff514d16"
+    },
+    {
+      "claim_id": "39e0b38b-9722-4d48-a8da-d80b678d0f6b",
+      "result_id": "e8491d24-c04b-43a5-a77b-8891ff514d16"
+    },
+    {
+      "claim_id": "1c51c421-2b4b-49f8-9aa7-e161d26beab9",
+      "result_id": "e8491d24-c04b-43a5-a77b-8891ff514d16"
+    },
+    {
+      "claim_id": "7494afe5-cd5a-4450-ab66-23548ba7e0ee",
+      "result_id": "e8491d24-c04b-43a5-a77b-8891ff514d16"
+    },
+    {
+      "claim_id": "94579b3d-f54e-43a8-9f53-3454d3fc1c96",
+      "result_id": "e8491d24-c04b-43a5-a77b-8891ff514d16"
+    },
+    {
+      "claim_id": "ba04404f-5f5e-4d96-9a7e-c9f850f4dc28",
+      "result_id": "79ccfe8f-969a-476a-92b1-b0add5b2ba50"
+    },
+    {
+      "claim_id": "ae0de23b-c44c-4e25-a0d9-356fd8a2d0d1",
+      "result_id": "79ccfe8f-969a-476a-92b1-b0add5b2ba50"
+    },
+    {
+      "claim_id": "e007d6ec-95d5-4347-ba3a-f8d6498bdd36",
+      "result_id": "79ccfe8f-969a-476a-92b1-b0add5b2ba50"
+    },
+    {
+      "claim_id": "2d785dd8-2e95-4a2a-8343-ab9be29c56c4",
+      "result_id": "79ccfe8f-969a-476a-92b1-b0add5b2ba50"
+    },
+    {
+      "claim_id": "a9d3e322-4013-4644-beeb-833cbf1f46bc",
+      "result_id": "852054c8-c9c5-4b81-a464-047b7686ba9f"
+    },
+    {
+      "claim_id": "c9d7821a-01ee-4100-b9a6-cd65613a9e98",
+      "result_id": "852054c8-c9c5-4b81-a464-047b7686ba9f"
+    },
+    {
+      "claim_id": "672f679f-b0ff-4e68-bfef-aec018c4fc96",
+      "result_id": "852054c8-c9c5-4b81-a464-047b7686ba9f"
+    },
+    {
+      "claim_id": "2de7db59-e5a0-411b-93fb-d0ef9a7d6f76",
+      "result_id": "3042d8fc-2e1b-4cb5-8700-c5e00437259f"
+    },
+    {
+      "claim_id": "fe9b2258-4157-4d59-b0e1-b2c1f6e8d48a",
+      "result_id": "3042d8fc-2e1b-4cb5-8700-c5e00437259f"
+    },
+    {
+      "claim_id": "6c36c926-ff94-414b-b403-5c986720f509",
+      "result_id": "3042d8fc-2e1b-4cb5-8700-c5e00437259f"
+    },
+    {
+      "claim_id": "304ad55a-4581-4cb8-b808-cc169cec809c",
+      "result_id": "78e0a5b3-1a9e-458a-b00d-fcb9a3602868"
+    },
+    {
+      "claim_id": "97e3de9e-27f7-46b3-95d1-350458c86022",
+      "result_id": "78e0a5b3-1a9e-458a-b00d-fcb9a3602868"
+    },
+    {
+      "claim_id": "9e5684db-8519-4e8e-b9ca-d4799615885a",
+      "result_id": "78e0a5b3-1a9e-458a-b00d-fcb9a3602868"
+    },
+    {
+      "claim_id": "34d58e86-36f4-4055-bd5a-e2f9c2950492",
+      "result_id": "78e0a5b3-1a9e-458a-b00d-fcb9a3602868"
+    },
+    {
+      "claim_id": "88b912e2-32d7-4c91-ab33-198719e07c19",
+      "result_id": "78e0a5b3-1a9e-458a-b00d-fcb9a3602868"
+    },
+    {
+      "claim_id": "3c39bb83-7d49-4edb-9354-f92de781604b",
+      "result_id": "a36a5ff4-d00b-4337-977d-11a5fffb0503"
+    },
+    {
+      "claim_id": "71849716-1b35-4e9f-a9e0-56e0dbe3379f",
+      "result_id": "a36a5ff4-d00b-4337-977d-11a5fffb0503"
+    },
+    {
+      "claim_id": "39361bbf-c2c9-4839-8129-5d0d4e96cd85",
+      "result_id": "a36a5ff4-d00b-4337-977d-11a5fffb0503"
+    },
+    {
+      "claim_id": "70f89867-6ce6-4916-8b61-bacb8e00f12a",
+      "result_id": "a36a5ff4-d00b-4337-977d-11a5fffb0503"
+    },
+    {
+      "claim_id": "15b287c0-f5b9-466a-87e6-e1ea52cb9731",
+      "result_id": "f790a516-485a-496f-bdd8-c1714ceed1e8"
+    },
+    {
+      "claim_id": "2e726955-8160-43b7-8491-7fc1177b4d3f",
+      "result_id": "f790a516-485a-496f-bdd8-c1714ceed1e8"
+    },
+    {
+      "claim_id": "0ab8e42a-21b4-4131-9489-43cf86630773",
+      "result_id": "f790a516-485a-496f-bdd8-c1714ceed1e8"
+    },
+    {
+      "claim_id": "cbb81bb6-8d7e-4654-b359-03720ad89d6d",
+      "result_id": "f790a516-485a-496f-bdd8-c1714ceed1e8"
+    },
+    {
+      "claim_id": "07596e8d-2409-42d0-b2b7-f379717e9d4f",
+      "result_id": "f790a516-485a-496f-bdd8-c1714ceed1e8"
+    },
+    {
+      "claim_id": "2b8e0491-2007-4b55-84aa-749cba33bdeb",
+      "result_id": "1684f5d3-a79c-4dc8-819b-e18b75825366"
+    },
+    {
+      "claim_id": "41059a8b-3f15-4d6a-bfd5-5cedf63f316b",
+      "result_id": "1684f5d3-a79c-4dc8-819b-e18b75825366"
+    },
+    {
+      "claim_id": "c7d28c07-a220-48fb-82e1-b2ec05c0e8ba",
+      "result_id": "1684f5d3-a79c-4dc8-819b-e18b75825366"
+    }
+  ],
+  "comparisons": []
+}

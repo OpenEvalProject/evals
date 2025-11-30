@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "DSBs induced by I-PpoI in human cells lead to complete local nucleosome disassembly within approximately 750 bp (8 nucleosomes) from the break site, followed by chromatin reassembly concomitant with DNA repair. This disassembly occurs without significant DNA end resection, as evidenced by stable DNA input levels around the break.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C39 provide converging experimental evidence from ChIP analysis showing synchronized histone H3 loss and recovery that correlates with DNA cutting and repair kinetics (Figures 1B, 1D). The spatial restriction of histone loss (C36-C38) and stable DNA input levels (C39) support the conclusion that complete nucleosome disassembly occurs locally without extensive resection. The temporal correlation between repair completion and chromatin reassembly (C34-C35) is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The observed chromatin disassembly and reassembly occurs during NHEJ repair rather than HR, as demonstrated by the requirement for KU80 but not RAD51, and independence from MRE11 nuclease activity. Chromatin disassembly occurs prior to recruitment of core NHEJ machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C49 provide strong genetic evidence through knockdown experiments (Figure 2A) showing that RAD51 depletion does not affect repair or chromatin dynamics (C40-C41, C45), while KU80 depletion blocks repair (C42). MRE11 inhibitor experiments (C48) and cell cycle analysis (C44) rule out confounding effects. The observation that chromatin disassembly occurs in KU80 knockdown cells (C46-C47) logically supports the temporal ordering conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "ATM, but not ATR, promotes timely and efficient nucleosome disassembly around DSBs. ATM inhibition delays chromatin disassembly by approximately 2 hours and reduces the extent of histone loss from 50% to 75% occupancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 are supported by pharmacological inhibitor experiments (Figure 3). ATR inhibition shows no effect (C52), while ATM inhibition produces quantifiable delays and reduced efficiency (C54-C55). The double inhibition experiment (C57) supports epistasis. However, the interpretation that ATM directly promotes chromatin disassembly (C56) is somewhat inferential, as ATM has multiple roles in DNA damage response that could indirectly affect chromatin dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "SMARCAD1 does not play a direct role in promoting chromatin disassembly in the I-PpoI system, as the observed delay in chromatin disassembly upon SMARCAD1 knockdown is explained by reduced I-PpoI endonuclease expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C64 demonstrate appropriate scientific reasoning by identifying a confounding variable. The parallel delays in DNA cutting and chromatin disassembly (C61) led to investigation of I-PpoI expression (C63), revealing the indirect mechanism. This negative result is well-controlled and appropriately interpreted (C62), though the mechanistic speculation about SMARCAD1's role in I-PpoI expression (C64) remains unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "INO80 is required for timely chromatin disassembly around DSBs in human cells. INO80 knockdown delays chromatin disassembly relative to DNA cutting and blocks DNA repair. Combined ATM inhibition and INO80 knockdown shows epistasis, suggesting they function in the same pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 provide strong evidence from knockdown experiments (Figure 4C) showing INO80's role in both chromatin disassembly (C69) and repair (C68). The epistasis experiment (C71) supports a functional relationship with ATM. However, the claim that INO80 is \"required\" for chromatin disassembly (C70) may be overstated, as the data show delay rather than complete block, and the knockdown may not be complete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C98"
+    ],
+    "result": "ASF1A and ASF1B play non-redundant roles in chromatin reassembly after DSB repair, with ASF1A being essential (complete block upon knockdown) while ASF1B is largely dispensable (only subtle delay upon knockdown).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 and C98 are supported by knockdown experiments (Figure 5A-B) showing differential requirements for the two paralogs. The complete block with ASF1A knockdown (C72) versus subtle delay with ASF1B knockdown (C73) demonstrates non-redundancy. However, the interpretation that ASF1B is \"dispensable\" may be too strong given the observed delay, and the possibility of partial redundancy or compensation is not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "CAF-1 is required for chromatin reassembly after DSB repair, even in the absence of significant DNA resection or synthesis. This role is direct and localized to the DSB region, not due to indirect effects on cell cycle progression or HIRA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by knockdown experiments (Figure 5C) showing major defects in chromatin reassembly. The control arguments (C102-C104) address potential confounders: spatial specificity argues against cell cycle effects (C102), timing argues against S-phase progression (C103), and protein level measurements rule out indirect effects on HIRA (C104). However, the claim that CAF-1 functions \"even in the absence of significant DNA resection or DNA synthesis\" (C75) is inferential and not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "HIRA is essential for chromatin reassembly after DSB repair in human cells, as demonstrated by complete block in chromatin reassembly with two independent shRNAs, indicating that replication-independent chromatin assembly is important for restoring chromatin structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are well-supported by knockdown experiments using two independent shRNAs (Figure 5D), which strengthens confidence in the specificity of the effect. The complete block in chromatin reassembly (C76) directly supports the conclusion about HIRA's importance (C77). The use of multiple shRNAs is a strength that addresses potential off-target effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C82",
+      "C5"
+    ],
+    "result": "The replication-dependent (CAF-1) and replication-independent (HIRA) chromatin assembly pathways function in an interdependent manner to restore chromatin structure and re-establish epigenetic information after DSB repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78, C82, and C5 propose interdependence based on the observation that both CAF-1 and HIRA knockdowns severely impair chromatin reassembly. However, the data show independent requirements rather than direct evidence of interdependence or coordination. True interdependence would require showing that one pathway requires the other, or that they function sequentially or cooperatively. The current data are consistent with both pathways being independently necessary, but not sufficient evidence for mechanistic interdependence. Additional experiments (e.g., epistasis analysis, temporal ordering, or biochemical interaction studies) would be needed to support the interdependence claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C79",
+      "C80",
+      "C81",
+      "C109",
+      "C110"
+    ],
+    "result": "Nucleosome disassembly during NHEJ in human cells is a highly regulated, checkpoint-stimulated process involving ATM and INO80, resulting in localized disassembly of approximately 4 nucleosomes on each side of the break, independent of DNA end resection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C1, C2, C79-C81, C109-C110) integrate findings from multiple experimental results. They are supported by the collective evidence from ATM inhibition (showing checkpoint involvement), INO80 knockdown (showing remodeler requirement), spatial analysis (showing ~8 nucleosomes total), and MRE11 inhibition/RAD51 knockdown (showing resection-independence). The claims appropriately synthesize the major findings, though some aspects (e.g., \"highly regulated\") are somewhat interpretive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C97",
+      "C111"
+    ],
+    "result": "Chromatin reassembly after DSB repair requires functional coordination between histone chaperones ASF1A, CAF-1, and HIRA. This reassembly occurs after DNA repair is complete and is not required for repair per se.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C97, and C111 summarize the chromatin reassembly findings. The requirement for ASF1A, CAF-1, and HIRA is well-supported by knockdown experiments (Figure 5). The temporal relationship (C97) is supported by the observation that histone reassembly kinetics follow DNA repair completion. However, the claim that reassembly is \"not required for DSB repair per se\" (C97) is inferential\u2014while knockdowns of assembly factors don't prevent repair, this doesn't definitively prove reassembly is unnecessary for repair completion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The current study's findings of H3 disassembly during NHEJ in euchromatin differ from prior work showing H3 loss only in cycling cells at rDNA loci. This difference is explained by the unique chromatin structure and HR-based repair mechanisms at rDNA versus euchromatic NHEJ repair examined here.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 appropriately contextualize the current findings relative to prior work (Goldstein et al., 2013). The comparison identifies key differences: cell cycle dependence (C85), spatial extent (C86 vs C87), and genomic location (rDNA vs euchromatin). The explanation invoking rDNA's unique properties (C88-C89) and different repair mechanisms (C90) is reasonable and well-supported by citations. This represents good scientific practice in reconciling apparently contradictory findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C96",
+      "C83",
+      "C108"
+    ],
+    "result": "The localized chromatin disassembly may facilitate NHEJ machinery recruitment while preserving epigenetic information, and coordinated reassembly mechanisms may enable accurate re-establishment of transcription programs after repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91, C96, C83, and C108 are explicitly speculative (\"may,\" \"presumably\") about functional significance and mechanisms. While these speculations are reasonable given the data, they lack direct experimental support. The manuscript appropriately presents these as hypotheses rather than conclusions, but they should not be evaluated as supported results. Future work testing these hypotheses (e.g., measuring epigenetic mark retention, transcription recovery, or NHEJ factor recruitment efficiency) would be needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C50",
+      "C51",
+      "C58",
+      "C59",
+      "C65",
+      "C66",
+      "C92",
+      "C93",
+      "C95",
+      "C99",
+      "C100",
+      "C101",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Background claims establishing prior knowledge about DSB repair pathways, chromatin structure, histone chaperones, and relevant factors in yeast and mammalian systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C6-C29, C50-C51, C58-C59, C65-C66, C92-C93, C95, C99-C101, C105-C107) represent established knowledge from prior literature, appropriately cited. They provide necessary context for interpreting the current study's findings. As background information supported by citations, they are appropriately characterized, though their accuracy depends on the cited sources being correct.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "In mammalian cells, INO80 promotes chromatin disassembly in the absence of apparent DNA resection, suggesting it can directly modify chromatin structure during DSB repair, unlike its resection-dependent role in yeast.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is supported by the combination of INO80 knockdown effects (C67-C70) and the absence of resection (C39, C48-C49). The comparison to yeast (C93) highlights a species-specific difference. However, the inference that INO80 \"directly\" modifies chromatin structure is not definitively proven\u2014the effect could still be indirect through other factors. The supporting evidence from NER (C95) strengthens the interpretation but doesn't prove direct action.",
+    "result_type": "MAJOR"
+  }
+]

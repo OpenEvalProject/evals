@@ -1,0 +1,2093 @@
+{
+  "submission": {
+    "id": "d6a90085-5e5d-4c32-887c-a870bead53f5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:21:39.822966Z",
+    "updated_at": "2025-11-29T23:21:39.822966Z"
+  },
+  "content": [
+    {
+      "id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "submission_id": "d6a90085-5e5d-4c32-887c-a870bead53f5",
+      "content_type": "manuscript",
+      "content_text": "# Two FGFRL-Wnt circuits organize the planarian anteroposterior axis\n\n## Authors\n\n- M Lucila Scimone<sup>1</sup>\n- Lauren E Cote<sup>1</sup> ([ORCID: 0000-0002-1772-7447](https://orcid.org/0000-0002-1772-7447))\n- Travis Rogers<sup>1</sup>\n- Peter W Reddien<sup>1</sup> ([ORCID: 0000-0002-5569-333X](https://orcid.org/0000-0002-5569-333X)) \u2020\n\n### Affiliations\n\n1. Whitehead Institute for Biomedical Research Cambridge United States\n2. Department of Biology Massachusetts Institute of Technology Cambridge United States\n3. Howard Hughes Medical Institute, Massachusetts Institute of Technology Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHow positional information instructs adult tissue maintenance is poorly understood. Planarians undergo whole-body regeneration and tissue turnover, providing a model for adult positional information studies. Genes encoding secreted and transmembrane components of multiple developmental pathways are predominantly expressed in planarian muscle cells. Several of these genes regulate regional identity, consistent with muscle harboring positional information. Here, single-cell RNA-sequencing of 115 muscle cells from distinct anterior-posterior regions identified 44 regionally expressed genes, including multiple Wnt and ndk/FGF receptor-like (ndl/FGFRL) genes. Two distinct FGFRL-Wnt circuits, involving juxtaposed anterior FGFRL and posterior Wnt expression domains, controlled planarian head and trunk patterning. ndl-3 and wntP-2 inhibition expanded the trunk, forming ectopic mouths and secondary pharynges, which independently extended and ingested food. fz5/8-4 inhibition, like that of ndk and wntA, caused posterior brain expansion and ectopic eye formation. Our results suggest that FGFRL-Wnt circuits operate within a body-wide coordinate system to control adult axial positioning.\n\n## Introduction\n\nAdult animals replace cells during tissue turnover and, in many cases, regeneration. How animals specify and maintain regional tissue identity during these processes is poorly understood. Planarians can regenerate any missing body part and replace aged tissues during homeostasis, presenting a powerful system for identifying adult positional information mechanisms (Reddien and S\u00e1nchez Alvarado, 2004; Reddien, 2011).\n\nPlanarian regeneration requires an abundant population of dividing cells called neoblasts that includes pluripotent stem cells (Wagner et al., 2011; Rink, 2013; Reddien, 2013). Accordingly, many genes required for regeneration are required for neoblast biology. However, some phenotypes associated with gene inhibition do not impact the capacity of animals to regenerate, but instead affect the outcome of regeneration, suggestive of a role for such genes in providing\u00a0positional information. For example, inhibition of components of the Wnt signaling pathway causes regeneration of heads in place of tails, generating two-headed animals with heads facing opposing directions (Petersen and Reddien, 2008; Gurley et al., 2008; Iglesias et al., 2008). Neoblasts are also constantly utilized for the replacement of differentiated cells during natural tissue turnover. Several striking planarian phenotypes associated with altered regional tissue identity during tissue turnover have also been identified, including hypercephalized (Wnt-signaling inhibition) (Petersen and Reddien, 2008; Gurley et al., 2008; Iglesias et al., 2008) and ventralized (BMP-signaling inhibition) (Reddien et al., 2007; Molina et al., 2007; Orii and Watanabe, 2007) planarians. Reminiscent of the roles of Wnt and Bmp in planarian regeneration and tissue turnover, Wnt regulates anterior-posterior (AP) axis development (Petersen and Reddien, 2009b; Niehrs, 2010) and Bmp regulates dorsal-ventral (DV) axis development (De Robertis and Sasai, 1996) in many animal phyla.\n\nMany receptors, ligands, and secreted inhibitors belonging to key pathways that regulate development in many organisms, such as BMP and Wnt pathways are constitutively expressed in a regionalized manner across adult planarian body axes (Reddien, 2011). Interestingly, these genes are predominantly expressed together in the same planarian tissue, the body-wall muscle (Witchley et al., 2013). Expression patterns of these genes can change dynamically following injury (Petersen and Reddien, 2008; Petersen and Reddien, 2009a; Gurley et al., 2010; Witchley et al., 2013), and some of these changes can occur in existing muscle cells in the absence of neoblasts (Witchley et al., 2013). Body-wall muscle is distributed peripherally around the entire planarian body, and the known expression domains of candidate patterning molecules in muscle broadly span the AP, DV, and medial-lateral (ML) body axes, raising the possibility that muscle provides a body-wide coordinate system of positional information that controls regional tissue identity in tissue turnover and regeneration (Witchley et al., 2013). However, the roles for many of these genes with regionally restricted expression in muscle are poorly understood, and it is likely that many genes with regionally restricted expression in muscle and roles in positional information await identification.\n\nIdentification of muscle as a major site of expression of genes controlling regeneration and tissue turnover in adult planarians presented the opportunity for systematic characterization of positional information in an adult metazoan. To this end, we performed single-cell RNA sequencing on muscle cells isolated from 10 discrete regions along the planarian AP axis and found 44 genes for which expression within planarian muscle was restricted to specific AP domains. An RNA interference (RNAi) screen of many of these genes revealed two similar circuits each containing FGFRL\u00a0and\u00a0Wnt components that are required for the normal patterning of two distinct regions of the planarian body: the head and the\u00a0trunk.\n\n## Results\n\n### Single muscle cell sequencing reveals 44 genes expressed in restricted domains along the AP axis\n\nThe prior identification of a single, body-wide cell type (body-wall muscle) expressing genes implicated in patterning in restricted domains (Witchley et al., 2013) raised the possibility that RNA sequencing of muscle cells could systematically identify components of this candidate adult positional information system. We sought such genes with regional expression in muscle utilizing single-cell RNA sequencing of muscle cells isolated from different regions along the AP axis. Non-dividing single cells from 10 consecutive regions along the AP axis (Figure 1A) were isolated by fluorescence activated cell sorting (FACS), and the resulting single-cell cDNA libraries were screened by qRT-PCR for expression of planarian muscle markers before sequencing (Methods, Figure 1\u2014figure supplement 1A\u2013C, Supplementary file 1A). Cells expressed an average of 3,253 transcripts, within the range reported for planarian single-cell libraries (Wurtzel et al., 2015). Principal component analysis (PCA) on the 177 single cells sequenced was performed using highly variable transcripts. Two significant principal components that separated cells by expression of muscle markers (PC1<0) and expression of neoblast markers (PC2<0) were identified (details in Methods, Figure 1\u2014figure supplement 1D\u2013F, Supplementary file 1B). PCA and troponin expression confirmed the identity of 115 muscle cells, and these 115 cells were used in all subsequent analyses (Figure 1\u2014figure supplement 1D, Supplementary file 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/12845/elife-12845-fig1-v2.jpg)\n\n**Figure 1.:** (A) Single cells from each colored AP region were isolated by FACS and resultant cDNA was screened by qRT-PCR for muscle marker expression. Positive cells were sequenced and analyzed for differential expression. (B) Whole-mount in situ hybridization (ISH) (n=2 experiments) shows expression of a subset of new and previously known (#) muscle regionally expressed genes (mRGs). Images are representative of n>10 animals for new mRGs. Anterior, up. Scale bar, 100 \u03bcm. Right, violin plots show the expression distribution in muscle cells (black dots) within the 10 dissected regions. cpm, counts per million. (C) Double fluorescence ISH (FISH) show co-localization of several newly identified mRGs (magenta) and the muscle marker collagen (green). DAPI was used to label nuclei DNA (gray). Yellow arrows point to cells co-expressing both genes. Scale bar, 10 \u03bcm. (D) Heat map shows hierarchical clustering of the average expression per region of the 44 identified mRGs. Top color bar indicates dissected region. (*) marks genes that are named by best human BLASTx hits. (E) Pie chart shows the percentage, within the 44 genes shown in D, of Wnt-signaling genes, FGFRL, and Hox homologs.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12845/elife-12845-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic of the 10 regions dissected and macerated to isolate single cells. (B) Representative FACS plot of Hoechst-stained cells from a single region indicating the gate used to isolate non-dividing cells. (C) Representative qRT-PCR plot for the muscle marker troponin used to screen single-cell cDNA libraries. The libraries from cells circled in red were sequenced. (D) Principal component (PC) analysis and troponin expression identified 115 muscle cells. Cells separated along two significant principal components: PC1 (29.9% of variance explained, p=1.4E-120) separated muscle from epidermal lineage and PC2 (8.3% of variance explained, p=4.4E-44) separated neoblasts from differentiated cells (Supplementary file 1B). Cells to the left of the dashed line that expressed troponin were retained for further analysis as muscle cells. (E) Distribution of contigs with two or more reads in the 177 single-cell libraries used for PC analysis. Nearly all cells with a\u00a0high number of expressed contigs that could signal a doublet event from FACS were categorized as non-muscle cells and excluded from differential expression analysis. (F) Muscle cells from all regions were evenly distributed throughout PC-space indicating that AP region of origin did not explain a significant proportion of the variance. Inset includes number of muscle cells analyzed per region. (G) Different differential expression analysis methods were tested for the ability to identify known mRGs. The rank order by p-value is shown on the y-axis in log10 scale for several canonical mRGs. Arrows mark the rank separating significant (filled circle) and not significant (n.s., unfilled circle) genes at p<0.01 for each method. (H) Three differential expression analyses (left) using SCDE were performed between the indicated regions. Ranking of genes by a differential expression score was used to generate a receiver-operator curve (right) to evaluate whether the SCDE analysis correctly classified genes as mRGs compared to ISH validation (Materials\u00a0and\u00a0methods).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12845/elife-12845-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Colorimetric ISH of mRGs (blue) identified in SCDE analyses. Violin plots show the distribution of cells that express that gene in each of the 10 dissected regions; cpm, counts per million. #, previously known mRGs. (A) Genes with p<0.005 in any analysis; (B) Genes with p>0.005. Anterior, up. Scale bar, 100 \u03bcm. Each image is representative of n>5 animals. At least 2 independent ISH experiments were performed for each new mRG.\n\nSingle-cell differential expression (SCDE, [Kharchenko et al., 2014]) analysis of the data was used to identify regionally expressed genes in the muscle single cell sequencing data, because of its ability to identify transcripts of genes with known anterior and posterior expression patterns (details in Methods, Figure 1\u2014figure supplement 1G). SCDE analyses of three different anterior-versus-posterior region comparisons (Materials\u00a0and\u00a0methods, Figure 1A, Figure 1\u2014figure supplement 1H, Supplementary file 1C\u2013E) identified transcripts of 99 genes as differentially expressed at p<0.005. To further validate the regional expression of these candidate genes, RNA probes were generated for all statistically significant transcripts (88/99 successfully amplified) and whole-mount in situ\u00a0hybridization (ISH) was performed (Figure 1B). 18 genes with regional expression in muscle have been previously identified (Figure 1\u2014figure supplement 2, [Witchley et al., 2013; Vogg et al., 2014; Reuter et al., 2015]). Although these three SCDE analyses correctly identified 13 of these 18 genes, those expressed in rare muscle cells (wnt1, foxD, zic-1), in shallow gradients (sFRP-2), or broadly (wntA), were below statistical significance (Materials\u00a0and\u00a0methods, Figure 1\u2014figure supplement 1H, Figure\u00a01\u2014figure supplement 2B). Therefore, an additional 168 genes, for which transcripts showed non-significant differential expression in the SCDE analysis, were tested by ISH. ISH reveals expression in all tissue types, which might obscure detection of regional expression within muscle cells for some genes by this method. Nonetheless, ISH analysis verified 44 of these genes as regionally expressed (35/44 with p<0.005 in any of anterior-versus-posterior SCDE analyses) from the total 256 genes tested, including 26 previously not reported to be regionally expressed in muscle (Figure 1B, Figure 1\u2014figure supplement 2, Supplementary file 1F). All newly identified regionally expressed genes tested were expressed at least in part in cells expressing the planarian muscle marker collagen (Figure 1C).\n\nThe term position control gene (PCG) has been used for genes with both regional adult expression, and patterning abnormal RNAi phenotypes or prediction by sequence to be in a pathway regulating planarian patterning (Witchley et al., 2013). The function for many such PCGs awaits elucidation. Many of the genes identified here have as yet no known function and cannot be linked to known signaling pathways by sequence; we will therefore use in this manuscript the broadly inclusive term muscle regionally expressed gene (mRG). Hierarchical clustering of the average expression per region of the 44 mRGs identified recapitulates the AP order of the regions (Figure 1D). Interestingly, the 44 identified mRGs identified here were comprised mainly of genes encoding Wnt-signaling components, Hox-family transcription factors, and fibroblast\u00a0growth\u00a0factor receptor-like (FGFRL) proteins (Figure 1E), suggesting that these gene families have prominent roles in providing positional information for maintaining and regenerating the planarian primary body axis.\n\n### Regionally expressed genes in muscle, including FGFRL and Wnt-pathway genes, constitute an axial expression map in adult muscle\n\nCombinatorial expression analysis using fluorescence ISH (FISH) of previously known mRGs and those newly described here generated a map depicting multiple, overlapping expression domains in planarian muscle along the planarian AP axis (Figure 2A, Figure 2\u2014figure supplement 1A). Few genes, like sFRP-2 and ptk7 (Gurley et al., 2010; Reuter et al., 2015), were expressed broadly in the trunk. The posterior involves multiple overlapping expression domains of genes encoding Wnt, Hox, and novel proteins (Petersen and Reddien, 2008; Adell et al., 2009; Iglesias et al., 2008; Reuter et al., 2015; Currie et al., 2016). The anterior region involves overlapping expression domains of several components of the Wnt pathway and genes of the FGFRL family (Petersen and Reddien, 2008; Rink et al., 2009), some of which extended from the anterior head tip to varying posterior extents of the head and some were expressed in the pre-pharyngeal region (Figure 2\u2014figure supplement 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/12845/elife-12845-fig2-v2.jpg)\n\n**Figure 2.:** (A) FISH using mRGs maps discrete domains of mRG expression onto the planarian AP axis. Bars on left indicate the approximate extent of the expression domain for each of the genes analyzed. Images are representative of n\u22655 animals. Anterior, up. Scale bar, 100 \u03bcm. (B) Heatmap shows co-expression of anterior FGFRL and Wnt pathway mRGs in the four anterior regions indicated in the cartoon (1\u20134). Each column shows expression within a single cell with color bars above indicating the dissected region of origin for the cell. cpm, counts per million (C) FISH using different FGFRL/ndl probes and Wnt pathway mRGs show co-expression in the four regions depicted in the cartoon. Black boxes (1\u20134) in the cartoon in B show the region imaged for the FISH, as denoted by the number and colored rectangle next to the merged image. Scale bar, 10 \u03bcm. Images are representative of n\u22655 animals.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12845/elife-12845-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) FISH using a combination of known and new mRG RNA probes show distributions of gradients along the AP axis. Anterior, left. Scale bar, 100 \u03bcm. Each image is representative of n>5 animals. (B) Heatmap shows hierarchical clustering of the identified 44 mRGs in each of the 115 muscle cells analyzed. Cartoon on top depicts the 10 regions dissected. Top color bar indicates region of origin for that cell. Expression values for each gene are scaled across each row as z-scores. (*) marks transcripts that are\u00a0named\u00a0by best human BLASTx hits.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12845/elife-12845-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Top right: Domain diagram of FGFR and FGFRL proteins. IG, immunoglobulin domain; TM, transmembrane domain; TyrKc, Tyrosine kinase. Tree showing 54 FGFRL proteins from diverse organisms, which were aligned using MUSCLE with default settings and trimmed with Gblocks. Maximum likelihood analyses were run using PhyML with 100 bootstrap replicates, the WAG model of amino acid substitution, 4 substitution rate categories and the proportion of invariable sites estimated from the dataset. All ML bootstrap values are shown above or below respective branch. Hs, Homo sapiens; Mm, Mus musculus; Xt, Xenopus tropicalis; Sp, Strongylocentrotus purpuratus; Cs, Capitella sp. I; Lg, Lottia gigantean; Ci, Ciona intestinalis; Sm, Schistosoma mansoni; Smed, Schmidtea mediterranea; Dj, Dugesia japonica; Dl, Dendrocoelum lacteum; Ptor, Planaria torva; Pt, Polycelis tenuis; Pn, Polycelis nigra; Nv, Nematostella vectensis. Right, ISH of the 6 Schmidtea mediterranea FGFRL genes shown in tree. Images are representative of n>10 animals. Anterior, left.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/12845/elife-12845-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** FISH shows expression of ndl-5, ndl-2, ndl-3, and sFRP-1 in control and \u00a0\u03b2-catenin-1 RNAi animals after one, two, or four RNAi feedings (1F, 2F, 4F). Animals were fixed at different timepoints after initiation of RNAi, shown in brackets at the top. Yellow arrows show ectopic expression of anterior mRGs in posterior regions of the animal before ectopic eyes are visible. Red arrow indicates ectopic expression of the prepharyngeal mRG ndl-3. opsin (green) marks eyes. Anterior, up. Scale bar, 100 \u03bcm.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/12845/elife-12845-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Heatmap shows efficiency of RNAi inhibition in each condition, and no significant effects in the expression level of other genes. Color scale represents mean log2 fold change in expression of each gene (rows) in the RNAi conditions (columns) compared to control RNAi in 6 dpa head fragments (cartoon on left, screen RNAi feeding protocol was used, see Methods). At least three head fragments were analyzed by qRT-PCR in each condition. One-way ANOVA, * p<0.05, ** p<0.01, *** p<0.001, **** p<0.0001. (B) FISH shows normal expression of ndk and wntP-2 in ndl-1; ndl-2; ndl-4; ndl-5 RNAi animals in prepharyngeal fragments 6 dpa (cartoon on left, same RNAi feeding protocol as A). Anterior, up. Scale bar, 100 \u03bcm.\n\nFGFRL-family proteins, which lack the intracellular kinase domain present in FGFRs, have been little studied but are broadly conserved (Figure 2\u2014figure supplement 2, [Cebri\u00e0 et al., 2002; Bertrand et al., 2009]). The molecular mechanism of action of FGFRL proteins is not well understood. Planarians have six FGFRL-encoding genes, named nou darake (ndk), the defining member of the FGFRL family (Cebri\u00e0 et al., 2002), and nou darake-like (ndl)-1 through ndl-5 (Figure 2\u2014figure supplement 2). All of these FGFRL genes were identified in the SCDE analyses as AP mRGs (Figure 1D). At least three of the five FGFRL genes with expression at the anterior-most region of the animal (ndk, ndl-1, ndl-2, ndl-4, ndl-5) were co-expressed in all 11 muscle cells isolated and sequenced from the anterior head tip (region 1); 10/11 of these cells also co-expressed ndk and frizzled5/8\u20134 (fz5/8\u20134) (Figure 2B). In the single muscle cells sequenced from the pre-pharyngeal region (region 4), 3/6 cells expressing ndl-3 also expressed wntP-2. FISH also demonstrated co-expression of FGFRL and Wnt-pathway genes together in the same cells in regions where their expression domains overlapped (Figure 2C). Similarly, extensive co-expression of multiple mRGs in single muscle cells was observed in different regions along the entire AP axis (Figure 2\u2014figure supplement 1B).\n\nWnt signaling is also required for maintenance of the AP axis, with \u03b2-catenin-1 RNAi animals developing ectopic heads around the entire body during tissue turnover (Petersen and Reddien, 2008; Gurley et al., 2008; Iglesias et al., 2008). At early timepoints following RNAi (7\u20139 days after first RNAi feeding), \u03b2-catenin-1 RNAi animals showed subtle posterior expansions of ndl-5 and ndl-2 expression domains (Figure 2\u2014figure supplement 3). Later, ectopic expression of ndl-5 in posterior and lateral locations occurred and preceded ectopic expression of ndl-2 (9 days after first RNAi feeding) even before the appearance of ectopic eyes. Fully formed ectopic heads (21 days after first RNAi feeding) showed clear ectopic expression of the pre-pharyngeal mRG ndl-3 (Figure 2\u2014figure supplement 3). Gross anatomical changes in the AP axis are therefore accompanied by corresponding changes in FGFRL expression domains.\n\nThe axial expression map of genes in planarian adult muscle is reminiscent of regionalized gene expression patterns found during embryonic development in other species (Pankratz and J\u00e4ckle, 1993; De Robertis et al., 2000; Jaeger et al., 2012) and provides a tool to dissect adult positional identity maintenance and regeneration.\n\n### Functional analysis of AP mRGs from major gene families\n\nThe regional expression of mRGs raises the possibility that many of these genes will have a role in controlling regional tissue identity. Therefore, we sought to determine with functional assays the roles of particular mRGs in the maintenance and/or regeneration of regional tissue identity. The prominence of a few gene families in the dataset of mRGs suggests that FGFRL/Wnt/Hox genes are major patterning determinants of the planarian AP axis. We, therefore, performed extensive single and multi-gene RNAi to identify the roles of these genes in adult positional identity (Supplementary file 1G). Inhibition of single or combinations of Hox genes and a subset of FGFRL genes (ndl-1, ndl-2, ndl-4, and ndl-5) did not result in animals with a robust abnormal phenotype (Supplementary file 1G). Additionally, expression of other members of the FGFRL family was not affected under these RNAi conditions at the time-point analyzed (Figure 2\u2014figure supplement 4). However, we found striking AP patterning phenotypes when inhibiting a subset of Wnt pathway components and FGFRL genes as described below.\n\n### ndl-3 and wntP-2 restrict the number of mouths and pharynges in the planarian trunk\n\nThe ndl-3 gene is expressed from below the eyes to the esophagus at the anterior end of the pharynx (Figure\u00a01B,\u00a0[Rink et al., 2009]), which is located centrally in the animal trunk (Figure 3A). ndl-3 RNAi resulted in a striking phenotype: the formation of two or more mouths and two pharynges (Figure 3A\u2013C, Figure 3\u2014figure supplement 1A\u2013D). The ectopic mouths and pharynges of ndl-3 RNAi animals appeared within the trunk, posterior to the original mouth/pharynx location. This phenotype emerged both during tissue turnover in uninjured animals (Figure 3\u2014figure supplement 1C) and following regeneration (Figure 3A, Figure 3\u2014figure supplement 1A). In the case of regeneration, animals initially regenerated a single mouth/pharynx, but as regenerating animals grew following feeding, ectopic mouths and pharynges emerged. Inhibition of the posterior mRG wntP-2/wnt11-5 also caused ectopic mouth and pharynx formation (Figure 3A\u2013C, Figure 3\u2014figure supplement 1A\u2013D), in agreement with a recent report (Sureda-G\u00f3mez et al., 2015). Double RNAi of ndl-3 and wntP-2 was synergistic (Figure 3A, Fisher\u2019s exact test p<0.0001 for ndl-3, p=0.0153 for wntP-2, Figure 3\u2014figure supplement 1C). Inhibition of ndl-3 and wntP-2 also resulted in pharyngeal cavity expansion (Figure 3B,C, Figure 3\u2014figure supplement 1B), and in increased numbers of para-pharyngeal cells (Figure 3B), which express the matrix metalloproteinase mmp1 (Newmark et al., 2003). In summary, when either ndl-3 or wntP-2 was inhibited, ectopic trunk structures were added sequentially as the animal grew and replaced tissues.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/12845/elife-12845-fig3-v2.jpg)\n\n**Figure 3.:** (A) Live, ventral images of ectopic pharynges and mouths in 20\u201330 day post-amputation (dpa) RNAi animals. Right top, cartoon depicts esophagus, pharynx, and mouth. Left, pharynges (yellow arrows) and ectopic mouths without a protruding pharynx (white arrows). Scale bar, 500 \u03bcm. Right bottom, mouths (white arrows) in 7 dpa RNAi animals. Anterior, left. Total number of animals were pooled from at least 2 independent RNAi experiments. (B) Increased numbers of para-pharyngeal mmp1+ cells in RNAi animals. NB.22.1e labels mouths. Graph below shows mean \u00b1 SD (n>8 animals/condition, 2 pooled experiments, One-way ANOVA). (C) Esophagus-gut connection in 20 dpa trunk fragments, region in dotted rectangle is shown at higher magnification below. FISH: mat (gut), mhc-1 (pharynx), and NB.22.1e (esophagus). Bracket, pharyngeal cavity length. (D) Time-lapse images of an ndl-3; wntP-2 RNAi animal eating liver through both pharynges (yellow arrows), see Video 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12845/elife-12845-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Ectopic posterior mouths are observed in regenerating trunk pieces of ndl-3, wntP-2, and ndl-3; wntP-2 RNAi animals 7 dpa. Number of animals showing ectopic mouths are described in Figure 3A. Yellow arrows point to mouths. Anterior, left; ventral, up. Scale bar, 100 \u03bcm. (B) DAPI stainings of RNAi animals show pharynges in the different RNAi conditions. Bracket indicates pharyngeal cavity length. Anterior, up; Scale bar, 100 \u03bcm. Images are representative of n>10 animals per condition. (C) Graph shows the percentage of intact RNAi animals with a total of two or more mouths after 8 RNAi feedings. p-values, Fisher\u2019s exact test. 3 independent RNAi experiments are pooled in this analysis. Number of animals with ectopic mouths out of total animals (n) are indicated. (D) FISH using RNA probes for ndl-3 and wntP-2 show a decrease in the expression of those genes following their RNAi demonstrating the efficiency of the inhibition (total of 8 RNAi feedings). Graphs below (mean \u00b1 SD) show quantification of the mRNA levels by qRT-PCR. Student's\u00a0t-test, * p<0.05, ** p<0.01. Cartoons show the region from where the mRNA was extracted. (E) Graph shows the percentage of intact RNAi animals with a total of two or more mouths after different number of RNAi feedings. The\u00a0first five RNAi feedings were performed with only ndl-3; wntP-2 dsRNA. \u03b2-catenin-1 or control dsRNA was added in addition to ndl-3; wntP-2 starting on feeding six.\n\nThe planarian pharynx is a long muscular organ that can extend through the mouth to ingest food (Reddien and S\u00e1nchez Alvarado, 2004) and connects to the intestine through the esophagus at the medial anterior end of the pharyngeal cavity. In ndl-3 and wntP-2 RNAi animals, ectopic esophagi (NB.22.1e+) formed in variable locations, including from the side of the pharyngeal cavity wall and from a gut branch crossing the pharyngeal cavity (Figure 3C). Despite variable positioning, ectopic pharynges always integrated through an esophagus into the intestine, demonstrating remarkable plasticity in the mechanisms underlying tissue organization. Ectopic pharynges in ndl-3; wntP-2 RNAi or wntP-2 RNAi animals were also functional \u2013 animals simultaneously projected both pharynges and each pharynx displayed independent food searching behavior, such as on opposite sides of the animal or in different directions (Figure 3D, Video 1).\n\n![Video 1.](https://cdn.elifesciences.org/articles/12845/elife-12845-media1.mp4.jpg)\n\n### Inhibition of ndl-3 and wntP-2 affects the expression domains of trunk mRGs\n\nNext, we examined whether trunk expansion in ndl-3 and wntP-2 RNAi animals with ectopic pharynges and mouths affected the mRG axial expression map described above. Anterior-most mRG expression domains (sFRP-1 and ndl-5) were present and showed no overt changes following ndl-3 and wntP-2 RNAi (Figure 4A\u2013C, Figure 4\u2014figure supplement 1A). By contrast, the ndl-3 expression domain was expanded to the ectopic posterior esophagus in wntP-2 RNAi animals (Figure 4A,D). In both wntP-2 and ndl-3; wntP-2 RNAi animals, the expression domain of sFRP-2 (Figure 4\u2014figure supplement 1D) was also extended towards the animal posterior. By contrast, expression of the pre-pharyngeal mRGs wnt2 and ndl-2 was changed only slightly or not at all (Figure 4\u2014figure supplement 1B,C). Conversely, the broad posterior expression domain of wntP-2 was significantly reduced in ndl-3 RNAi animals (Figure 4B,E). Expression of other posterior mRGs such as fz4-1 and dd_13065 was still present in ndl-3, wntP-2, and ndl3; wntP-2 RNAi animals (Figure 4\u2014figure supplement 1E,F). Thus, both ndl-3 and wntP-2 are required for maintaining normal trunk tissue pattern including associated mRG expression domains, but not head or tail patterns of mRG expression. Altogether, these data suggest that the trunk patterning defects of ndl-3 and wntP-2 RNAi animals only affect local mRG expression within the axial map.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/12845/elife-12845-fig4-v2.jpg)\n\n**Figure 4.:** mRG expression analyses by FISH: (A) expanded expression of trunk mRG ndl-3, (B) reduction of the lateral expression of the posterior mRG wntP-2. Left panel, ventral view. Right panel, dorsal view. Red arrows point to the mRG expression domain boundary shifted. White arrows point to mouths. Yellow arrows indicate esophagus. Anterior, up. Scale bar, 100 \u03bcm. All FISH images are representative of n>8 animals per condition, and at least 2 independent RNAi experiments have been performed. (C\u2013E) Graphs show quantification of the shifts in expression domains for the mRGs shown in the FISH experiments (mean \u00b1 SD, at least 3 independent experiments were pooled. One-way ANOVA for sFRP-1, unpaired Student's\u00a0t-tests for ndl-3 and wntP-2). Cartoons on the left depict the expression domain in the wild-type animal and the distance that was measured in each case. Length of expression domain measured was normalized by total length of the animal. All measurements were scored blind.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12845/elife-12845-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A-D, F) FISH using RNA probes for different mRGs and the esophagus and mouth marker NB.22.1e (yellow or green). White arrows indicate mouths. (A\u2013D) Red arrows point to the posterior edge of the mRG expression gradient. (A) ndl-5 (magenta) and (B) wnt2 (magenta) expression domains do not obviously expand. (C) ndl-2 (magenta) and (D) sFRP-2 (magenta) expression domain slightly expands in some RNAi conditions. Graph on right (mean \u00b1 SD) shows quantification of gradient shifts. One-way ANOVA * p<0.05, ** p<0.01. Cartoons on the left depict the gradient in the wild-type animal and the distance that was measured in each case. All measurements were scored blindly. (E) Colorimetric whole-mount ISH using the RNA probe for the posterior mRG fz4-1. Black arrows point to fz4-1 expression. (F) Expression of the posterior mRG dd_13065 (magenta) is still present. FISH images are representative of n>8 animals, ventral view. All FISH and ISH experiments have been repeated at least twice from independent RNAi experiments. All animals were fixed 20 dpa. The screen RNAi feeding protocol was used (see Materials\u00a0and\u00a0methods). Anterior, up; scale bar, 100 \u03bcm.\n\n### ndk, fz5/8\u20134, and wntA control head patterning in planarians\n\nIn addition to trunk patterning phenotypes, we found that fz5/8\u20134 RNAi caused ectopic eye formation and expansion of the brain posteriorly in both uninjured and regenerating animals (Figure 5A,B, Figure 5\u2014figure supplement 1A,C). fz5/8\u20134 showed graded anterior expression, strongest at the head tip, and brain expression (Figure 1B). The fz5/8\u20134 RNAi phenotype was similar to that previously described for ndk and wntA RNAi (Figure 5\u2014figure supplement 1B, [Cebri\u00e0 et al., 2002; Kobayashi et al., 2007; Adell et al., 2009; Hill and Petersen, 2015]). ndk is expressed in head muscle and the brain (Figure 1B, [Cebri\u00e0 et al., 2002; Witchley et al., 2013]) and restricts brain tissues to the animal head (Cebri\u00e0 et al., 2002). wntA is expressed broadly, with strong expression at the posterior base of the brain (Figure 1\u2014figure supplement 2B, [Kobayashi et al., 2007; Adell et al., 2009; Hill and Petersen, 2015]). wntA; ndk double RNAi animals showed a stronger phenotype in homeostasis (Figure 5A,B) and regeneration (Kobayashi et al., 2007), than did single gene RNAi animals. Double RNAi of fz5/8\u20134 and either ndk or wntA also showed a synergistic effect during tissue turnover (Figure 5A,B, Figure 5\u2014figure supplement 1B, Fisher\u2019s exact test p<0.0001 for both ndk and wntA). Additionally, RNAi of four out of five other ndl (FGFRL)-family members further enhanced the fz5/8\u20134; ndk double RNAi phenotype (Figure 5\u2014figure supplement 1D, Supplementary file 1G), suggesting that multiple FGFRL genes synergize to control head pattern with ndk.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/12845/elife-12845-fig5-v2.jpg)\n\n**Figure 5.:** (A) Posterior ectopic eyes seen in uninjured RNAi animals. Black arrows, ectopic eyes. Total number of animals have been pooled from 3 independent RNAi experiments. Cartoon on left shows area imaged. Graph below shows the percentage of intact animals with ectopic posterior eyes in each RNAi condition. (B,C) Posterior expansion of neuronal markers (B) ChAT and notum and eyes (anti-ARRESTIN/VC-1 antibody, images representative of n>5) and (C) glutamic acid decarboxylase (gd, red arrows mark posterior-most cell) and photoreceptor marker opsin. Cartoon on left shows area imaged. Below, graph shows increased gd+ cell numbers, mean \u00b1 SD (n>5 animals/condition, 2 independent RNAi experiments, One-way ANOVA) normalized by the length from head tip to the esophagus.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12845/elife-12845-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Ectopic eyes are shown in 7 dpa trunk fragments of fz5/8\u20134 RNAi animals. Black arrows point to ectopic eyes. Total numbers of RNAi animals are indicated. (B) Ectopic eyes (black arrows) are shown in an intact wntA RNAi and in a fz5/8\u20134; wntA double RNAi intact animal after 6 RNAi feedings. RNAi experiments were performed three times. Total numbers of RNAi animals are indicated. (C) FISH using the RNA probe fz5/8\u20134 shows decreased expression of this gene following its RNAi demonstrating the efficiency of the inhibition (6 RNAi feedings). Graph below (mean \u00b1 SD) shows quantification of the mRNA levels by qRT-PCR in different RNAi conditions. mRNA was extracted from 6 dpa head fragments. One-way ANOVA, **** p<0.0001. (D) Synergistic RNAi effect of several members of the FGFRL family on the fz5/8\u20134; ndk RNAi phenotype. RNAi experiments have been performed twice. Total number of RNAi animals is indicated. Black arrows point to ectopic eyes. (E,F) FISH using the neuronal markers: (E) cintillo, and (F) notum, and the photoreceptor marker opsin (E). Graph shows the percentage of cintillo+ cells (mean \u00b1 SD) in intact RNAi animals normalized by the length of the animal (from the tip of the head to the esophagus), (n>8 animals per RNAi condition, two independent RNAi experiments, One-way ANOVA). Yellow dotted line shows the esophagus location, * shows pharynx. White arrows show the posterior-most cell expressing the neuronal marker analyzed. Anterior, up; dorsal view unless indicated. Scale bar, 100 \u03bcm.\n\nThe ndk RNAi phenotype is poorly understood. For instance, are mRG expression domains expanded along with the brain in ndk RNAi animals, and what diversity of cell types expands posteriorly? Following eight RNAi feedings, fz5/8\u20134; ndk, wntA; ndk, and fz5/8\u20134; wntA double RNAi intact animals showed posterior expansion of multiple neuron classes from different head regions suggesting that the entire head-restricted nervous system expanded posteriorly (Figure 5B,C, Figure 5\u2014figure supplement 1E,F). After eight RNAi feedings, a time point at which brain expansion was visible, non-neural mag-1+ adhesive gland cells (Zayas et al., 2010) showed normal distribution (Figure 6\u2014figure supplement 1A). By 12 RNAi feedings, however, mag-1+ cells were disorganized (Figure 6A, Figure 6\u2014figure supplement 1D), indicating that non-neural head cell types were eventually affected, but not visibly posteriorized, by these RNAi conditions.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/12845/elife-12845-fig6-v2.jpg)\n\n**Figure 6.:** (A,B) Expansion of mRG expression domains towards the animal posterior. White bracket marks distance between mRG posterior boundary and esophagus; red arrows mark expression domain shifts. White dotted lines outline pharynx. (A) ndl-5, and (B) ndl-2. (A) Disorganization of mag-1 expression (yellow arrows). White arrows and opsin expression mark eyes. (C) Retraction of the pre-pharyngeal mRG ndl-3. Red arrows points to the shift towards the posterior of the anterior gradient boundary. White bracket indicates distance from the tip of the head to the anterior edge of the ndl-3 gradient. In all panels, anterior is up. Scale bar, 100 \u03bcm. All FISH images are representative of n>10 animals and at least 2 independent RNAi experiments were performed. (D\u2013F) Graphs show quantification of the expression domain shifts for the mRGs shown in the FISH experiments (mean \u00b1 SD, at least 3 independent experiments were pooled, One-way ANOVA). Cartoons on the left depict the expression domain in the wild-type animal and the distance (normalized to total length) that was measured in each case. All measurements were scored blind.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12845/elife-12845-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** FISH and ISH in intact RNAi animals after 8 or 12 RNAi feedings. (A,D) FISH experiments show normal (A, after only 8 RNAi feedings) and abnormal (D, after 12 RNAi feedings) organization in the expression of the secretory cell marker mag-1 (green). (B,C) FISH experiments show expression domain shifts of prepharyngeal mRGs ndl-2 (magenta, B) and wnt2 (C). (B\u2013D) Posterior mRG expression domains (wntP-2, wnt11-1, wnt11-2, both wnt11 genes pooled in C) did not change. opsin (green or magenta) and NB.22.1e (yellow). For all FISH images, red arrows point to the posterior edge of the mRG expression domain. White arrows point to eyes. Anterior, up. Scale bar, 100 \u03bcm. FISH images are representative of n>8, FISH experiments. DAPI shows ectopic eyes in the fz5/8\u20134; ndk RNAi animal imaged (yellow arrows) in B. FISH was performed twice from independent RNAi experiments. (E) ISH using ndk RNA probe shows posterior expansion of the ndk expression domain in a fz5/8\u20134; wntA RNAi animal after 8 RNAi feedings. Images are representative of n\u22655 animals per condition. Anterior, left. Right graph shows quantification of increased ndk expression by qRT-PCR. Cartoons on top indicate the region from which mRNA was extracted.\n\nWe next examined whether the axial mRG map changed in RNAi animals with posterior ectopic eyes. Anterior-most (sFRP-1 and ndl-4) and posterior (wntP-2, wnt11-1, and wnt11-2) mRG expression domains did not visibly change in fz5/8\u20134; ndk RNAi or wntA; ndk double RNAi animals, even under strong RNAi conditions (12 RNAi feedings, multiple ectopic eyes) (Figure 6B,C, Figure 6\u2014figure supplement 1B\u2013D). By contrast, ndl-2 expression, which is normally restricted to a domain immediately posterior to the eyes, was expanded into the pre-pharyngeal region after eight RNAi feedings (Figure 6B,E), and showed a more severe posterior expansion after 12 RNAi feedings (Figure 6\u2014figure supplement 1B). Similarly, ndl-5, ndk, and wnt2 expression domains extended posteriorly into the pre-pharyngeal region in RNAi animals with strong phenotypes (Figure 6A,D, Figure 6\u2014figure supplement 1C,E). By contrast, the anterior end of the pre-pharyngeal ndl-3 expression domain was significantly posterior-shifted (Figure 6C,F). Our results indicate that ndk, wntA, and fz5/8\u20134 are required to restrict anterior tissues and associated expression domains of mRGs to the head region, while leaving the anterior tip, trunk, and tail mRG domains unaffected.\n\n## Discussion\n\nSingle-cell sequencing has recently been used to identify transcriptomes for multiple planarian cell types (Wurtzel et al., 2015). We utilized single-cell sequencing to map axial gene expression within the planarian muscle. Planarian muscle was previously found to express several genes with known roles in adult tissue patterning in planarians, raising the possibility that muscle functions to produce a body-wide coordinate system of positional information (Witchley et al., 2013). Traditional RNA sequencing approaches to identifying candidate adult positional information in planarians is limited by the diversity of gene expression in heterogeneous tissue. The identification of a particular cell type expressing genes associated with regional tissue identity allowed application of regional single-cell sequencing to surmount this challenge. We applied this approach to the AP axis, and identified mRGs that constitute an expression map of muscle cells of the planarian primary axis (Figure 7A). Coordinate systems of positional information, such as those proposed to control embryonic development (De Robertis et al., 2000; Petersen and Reddien, 2009b; Niehrs, 2010), might exist within adult tissues of many animals, including humans (Rinn et al., 2006), however there is little functional data regarding positional information and maintenance of the adult body plan. Here, we described several mRGs that work together to pattern and maintain two distinct body regions, the head and the trunk.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/12845/elife-12845-fig7-v2.jpg)\n\n**Figure 7.:** (A) Expression domains of all identified mRGs along the planarian AP axis. Wnt pathway (purple), FGFRL (orange), and Hox genes (green). In bold, genes shown here to be involved in maintaining regional identity. (B) Cartoons summarize the characterized RNAi phenotypes. ndl-3 and wntP-2 restrict the number of pharynges and mouths in the trunk region. wntP-2 RNAi animals with ectopic pharynges/mouths have an expanded ndl-3 domain whereas ndl-3 RNAi animals with ectopic pharynges/mouths have a reduced wntP-2 expression domain. fz5/8\u20134, ndk, and wntA restrict the brain tissue to the head. Inhibition of these genes results in ectopic posterior eyes, brain expansion, and expanded domains of head mRGs. (C) Expression domains of the two FGFRL-Wnt circuits are shown. Black brackets indicate the region controlled by the FGFRL-Wnt circuits.\n\nConstitutive regional expression of planarian orthologs to genes with key developmental roles in metazoans has been hypothesized to be important for multiple aspects of planarian body plan maintenance (Reddien, 2011). Here we show that both the planarian head and trunk require an FGFRL-Wnt circuit to maintain adult regional tissue identity. Different FGFRL and Wnt genes are used in the two body locations; however, in both cases, an FGFRL expression domain is juxtaposed by a posterior Wnt expression domain. Strikingly, inhibition of either gene (FGFRL or Wnt) caused posterior expansion and sequential duplications of structures normally found within the head and trunk regions, resulting in expanded brain and ectopic eyes in one case, and ectopic pharynges and mouths in the other (Figure 7B).\n\nFollowing inhibition of any of the components of these FGFRL-Wnt circuits, the axial expression map shows local shifts in expression domains coincident with the expansion of specific regionally restricted tissues such as brain and pharynx (Figure 7B). These results suggest that muscle, a tissue found uniformly throughout the animal, marks different AP regions through combinatorial expression of mRGs. This implies that communication exists between muscle cells and the underlying region-specific tissues. Understanding the coordination between muscle cells and tissues within AP regions is necessary for determining how planarians are able to robustly maintain and regenerate their entire body plan. Positional information must be integrated into the decision to generate and pattern new tissue during planarian growth and regeneration. mRGs might therefore influence the regional behavior of neoblasts and/or their division progeny.\n\nThe two FGFRL-Wnt circuits described in this work are striking examples of body plan plasticity during homeostatic tissue turnover. In both cases, inhibition by RNAi of FGFRL genes (i.e., reduction or absence of the FGFRL expression domain) and inhibition of Wnt pathway components (i.e., expansion of the FGFRL expression domain) are coincident with the same phenotype of expanded regional identity. Future characterization of the biochemical properties of FGFRLs and elucidation of the mechanisms of interaction between Wnt/Fz pathways and FGFRLs might help in understanding this property. We propose that FGFRL proteins confine the regions where specific tissues in both the head and trunk can normally form and that the Wnt gene of each circuit acts by restricting tissues at the anterior end of its expression domain (Figure 7B,C). Given the similarities of the distinct FGFRL-Wnt circuits for patterning two different body regions, FGFRL-Wnt circuits might be broadly utilized, but presently underappreciated, patterning modules of animal body plans.\n\n## Materials and methods\n\n### Animals\n\nAsexual Schmidtea mediterranea strain (CIW4) animals starved 7\u201314 days prior experiments were used.\n\n### Muscle single cell isolation and library construction\n\nAnimals were dissected into 10 adjacent regions along the AP axis, and only the midline region (i.e., in between the ventral nerve cords) of each segment was utilized, to minimize heterogeneity caused by gradients expressed along the medio-lateral axes. 10 regions were chosen to balance consistency of amputation and AP resolution. The pharynx was dissected out and discarded for the regions 5 and 6. Fragments were dissociated into single cells. Single cell suspensions for each region were stained labeled with Hoechst, and non-dividing single cells were sorted by flow cytometry into 96 well plates containing 5 ul of total cell lysis buffer (Qiagen,\u00a0Germany) with 1% \u03b2-mercaptoethanol. Subsequently, amplified cDNA libraries were made from each single cell using the SmartSeq2 method (Picelli et al., 2013; 2014; Wurtzel et al., 2015), and tested by qRT-PCR for the expression of the muscle markers collagen and troponin (collagen Fw: GGTGTACTTGGAGACGTTGGTTTA, collagen Rv: GGTCTACCTTCTCTTCCTGGAAC; troponin Fw: ACAGGGCCTTGCAACTATTTTCATC, troponin Rv: GAAGCTCGACGTCGACAGGA). Cells expressing either or both of these muscle-specific genes (~5 in 96 cells) were used to make libraries using the Nextera XT kit (Illumina, Inc). Libraries were sequenced (Illumina Hi-seq) and fastq files generated by Illumina 1.5 and examined by fastqc.\n\n### Identification of muscle cell expression profiles\n\nSequencing data was submitted to the\u00a0GEO database as GSE74360. Each cell was sequenced twice, once with 80 bp reads and once with 40 bp reads, and reads from both sequencing runs were concatenated. Reads were trimmed using cutadapt to remove Nextera transposon sequences CTGTCTCTTATA and TATAAGAGACAG (overlap 11\u00a0bp) and low quality 3\u2032 base pairs (quality score less than 30) before mapping to the dd_Smed_v4 assembly (http://planmine.mpi-cbg.de; [Liu et al., 2013]) using bowtie 1 (Langmead et al., 2009) with -best alignment parameter. Bowtie 1 was used because of its better sensitivity mapping <50\u00a0bp reads. Read counts from prominent mitochondrial and ribosomal RNAs (dd_smedV4_0_0_1, dd_Smed_v4_7_0_1, and dd_Smed_v4_4_1_1) were discarded. Reads from the same isotig were summed to generate raw read counts for each transcript (Wurtzel et al., 2015). Libraries with fewer than 1000 expressed (>2 reads) transcripts were discarded, leaving 177 cells, expressing an average of 3,253 unique transcripts with an average of 430,114 reads mapped (Supplementary file 1A, Figure 1\u2014figure supplement 1E). Counts per million reads (cpm) were log transformed after addition of a pseudocount and used as expression values for violin plots and heatmap in Figure 2B. Principal component (PC) analysis on a set of highly expressed transcripts (4 < mean expression < 8) with high variance (dispersion > 1.2) was extended to the entire set of transcripts to identify two significant PCs (Seurat [Satija et al., 2015], Supplementary file 1B). The transcripts defining PC1<0 are all found within the top 45 of the published set of muscle-enriched transcripts (Wurtzel et al., 2015). Two clear populations were separated by PC analysis, one of which included 115 cells that expressed troponin (>4 cpm) (Figure 1\u2014figure supplement 1D,F). These 115 muscle cells were used for all subsequent analysis (Supplementary file 1A). Average expression per region (Seurat) for each transcript (Figure 1D) or expression per cell (Figure 2\u2014figure supplement 1B) was centered and scaled to generate expression z-scores used for heatmap visualization. Dendrograms show complete hierarchical clustering using Euclidean distance (Figure 1D, Figure 2\u2014figure supplement 1B).\n\n### Single cell differential analysis\n\nRv3.2.2 was used for all subsequent data analysis and visualization, relying on the following packages: Seurat (Satija et al., 2015), SCDE (Kharchenko et al., 2014), matrixStats, ROCR (Sing et al., 2005), ggplot2, RColorBrewer (http://colorbrewer2.org). To determine the best differential expression analysis method to identify putative mRGs, we tested three statistical methods: SCDE (Kharchenko et al., 2014), bimod (McDavid et al., 2013),\u00a0and t-test (Student's t-test) for their ability to identify known mRGs. For each of the statistical tests, we compared cells from the head tip (region 1) versus those from the tail tip (region 10) and determined the rank and statistical significance of 10 canonical mRGs (Figure 1\u2014figure supplement 1G). Based on its ability to identify mRGs present only in a subset of cells within a region (e.g., wnt11-1, sFRP-1, notum), we chose SCDE for all further differential expression analysis. Note that SCDE explicitly accounts for drop-out rates due to single-cell sequencing by calculating a probability distribution for each transcript in each cell before calculating differential expression between groups. To identify putative mRGs, we performed three differential expression analyses: anterior (regions 1, 2, 3; n=23 cells) versus posterior (regions 8, 9, 10; n=38 cells); head (region 1; 11 cells) versus post-pharyngeal (regions 7, 8, 9; n=35 cells); pre-pharyngeal (regions 2, 3, 4; n=22 cells) versus tail (region 10; n=12 cells) (Figure 1A). All transcripts with a |Z| score greater than 2.58 (p<0.005) in any of the SCDE analyses were screened by ISH (Supplementary file 1C\u2013E). Z-scores corrected for multiple hypothesis testing are reported in Supplementary file 1C\u2013E, however we used uncorrected Z-scores due to their ability to rank many more transcripts. In addition, 168 genes below our statistical cutoff were successfully amplified from cDNA and screened by ISH (Supplementary file 1C\u2013E).\n\nTo determine if our method correctly classified transcripts as mRGs, we used a combined score from all three SCDE analyses (Figure 1\u2014figure supplement 1H, [Wan and Sun, 2012]). If there is no differential expression of a gene along the AP axis, then the minimum p-value from any of the analyses, p[1] = min(p1, \u2026, pk) where pi is the p-value from ith analysis, is expected to follow a beta distribution with parameters 1 and k (Tippett, 1931). A differential expression score was calculated based on beta distribution, Smin= -log(P(beta(1,k) < p[1])), and used to rank all transcripts. Note that this scoring system only ranks transcripts, and that statistical significance of differential expression is only interpretable within the analysis performed. We then quantified how well our analyses, as scored by Smin, classified transcripts as mRGs, as determined by ISH validation. The receiver-operator curve plots the false positive rate versus the true positive rate for each value of Smin based on ISH validation. The area under the curve (0.88, perfect classification = 1, random classification = 0.5) indicates that Smin and therefore our SCDE analyses are able to correctly classify transcripts as mRGs visible by ISH.\n\n### Gene cloning and whole-mount in situ hybridizations\n\nPrimers used to PCR amplify all planarian transcripts are listed in Supplementary file 1C\u2013E. 44 mRGs were cloned from cDNA into the pGEM vector (Promega,\u00a0Madison,\u00a0WI). RNA probes were synthesized and nitroblue tetrazolium/5-bromo-4-chloro-3-indolyl phosphate (NBT/BCIP) colorimetric whole-mount in situ hybridizations (ISH) were performed as described (Pearson et al., 2009). Fluorescence in situ hybridizations (FISH) were performed as described (King and Newmark, 2013) with minor modifications. Briefly, animals were killed in 5% NAC before fixation in 4% formaldehyde. Following treatment with proteinase K (2 \u03bcg/ml) and overnight hybridizations, samples were washed twice in pre-hyb buffer, 1:1 pre-hyb:2X SSC, 2X SSC, 0.2X SSC, PBST. Subsequently, blocking was performed in 5% casein (10X solution, Sigma,\u00a0St.\u00a0Louis,\u00a0MO) and 5% inactivated horse serum PBST solution when anti-DIG or anti-DNP antibodies were used, and in 10% casein PBST solution when an anti-FITC antibody was used. Post-antibody binding washes and tyramide development were performed as described (King and Newmark, 2013). Peroxidase inactivation with 1% sodium azide was done for 90 min at RT. Live animal images were taken with a Zeiss Discovery Microscope. Fluorescent images were taken with a Zeiss LSM700 Confocal Microscope. Co-localization analysis of FISH signals was performed using Fiji/ImageJ. For each channel, histograms of fluorescence intensity were used to determine the cut-off between signal and background. All FISH images shown are maximal intensity projections. A median filter was applied using the ImageJ Despeckle function. Images are representative of results seen in >5 animals per panel.\n\n### RNAi\n\ndsRNA was prepared from in vitro transcription reactions (Promega) using PCR-generated templates with flanking T7 promoters, followed by ethanol precipitation, and annealed after resuspension in water. dsRNA was then mixed with planarian food (liver) (Rouhana et al., 2013) and 2 ul per animal of the liver containing dsRNA was used in feedings. For the RNAi screen (Supplementary file 1G), the following feeding protocol was used: animals were fed six times in three weeks, cut in four pieces (head, pre-pharyngeal, trunk and tail pieces), allowed to regenerate for 10 days, fed all together six times in another three weeks, and cut again into the four pieces described above. Seven days following amputation (7 dpa), trunk pieces were scored (Supplementary file 1G, Figure 3A right panels, Figure 3\u2014figure supplement 1A, and Figure 5\u2014figure supplement 1A), and fixed at day 20 following amputation for further analysis (Figure 3 and Figure 4). Five to 10 trunk pieces were kept after the first regeneration cycle, and were fed once a week for another 12 weeks and were scored after that period (homeostasis, Supplementary file 1G). Animals for homeostasis RNAi experiments for trunk patterning studies (Figure 3\u2014figure supplement 1C) were fed eight times in four weeks and scored a week after the last feeding. In RNAi experiments for head patterning analysis, animals were fed eight times in four weeks, scored after the first six feedings (Figure 5A, Figure 5\u2014figure supplement 1B,D), and fixed seven days after the last feeding (without amputation). For longer time point experiments, animals were fed twelve times in six weeks and fixed seven days after the last feeding. For all RNAi conditions tested, the total amount of dsRNA per feeding per animal was kept constant. Therefore, for example, when RNAi of two or more genes was performed, dsRNA for each gene was diluted in half. For combinations of dsRNAs, synergistic effects of double RNAi were calculated using Fisher\u2019s exact test (Figure 3A, 5A, Figure 3\u2014figure supplement 1C). Minimum sample sizes were estimated using difference of proportion power calculation with h=0.4 (ectopic mouths) or h=0.8 (ectopic eyes), sig.level=0.05, and power=0.8 (n=98.1 or n=24.5). RNAi animals with ectopic pharynges/mouths were treated with 0.2% chlorotone, which results in muscle relaxation and pharynx protrusion through the mouth (Figure 3A, left panels). For RNAi enhancement experiments of ndl-3; wntP-2 RNAi with \u03b2-catenin-1, animals were fed five times with a combination of ndl-3 and wntP-2, and starting in the sixth feeding, \u03b2-catenin-1 or control dsRNA was added to the mix of ndl-3 and wntP-2 for another three, four, or five feedings (being a total of eight, nine or 10 feedings, Figure 3\u2014figure supplement 1E). For the \u03b2-catenin-1 RNAi experiment shown in Figure 2\u2014figure supplement 3, animals were fed once, twice, or four times with \u03b2-catenin-1 or control dsRNA. Animals were fixed at different days after the first RNAi feeding.\n\n### Quantitative reverse-transcriptase PCR\n\nSamples were processed and analyzed as described (Owen et al., 2015). Briefly, total RNA was isolated from fragments from individual intact worms or from individual regenerated fragments, as indicated by cartoons in figures, in 0.75mL Trizol (Life Technologies,\u00a0Carlsbad,\u00a0CA) following manufacturer's instructions. Samples were homogenized for 30s using TissueLyser II (Qiagen). Following RNA purification and resuspension in dH20, concentrations for each sample were measured by Qubit using RNA HS Assay Kit (Life Technologies). 5 ng of RNA were treated with 1U amplification-grade DNAse I (Life Technologies) for 15\u2009min at room temperature before DNAse heat-inactivation for 10\u2009min at 65\u00b0C in the presence of 2.5\u2009mM EDTA. Multiplex reverse-transcription and 15 cycles of PCR amplification were performed on DNAse-treated RNA using pooled outer primers at 50 nM each and Superscript III/Platinum Taq enzyme mix (Supplementary file 1H). Following outer primer digestion with ExoI (15U, New England Biolabs,\u00a0Ipswich,\u00a0MA), samples were diluted to 500pg/ul and checked for presence of g6pd by qRT-PCR (7500 Fast PCR System, Applied Biosystems). Samples and inner primers were loaded onto a 96.96 Dynamic Array Fast IFC chip (Fluidigm BioMark) and analyzed as described (Supplementary file 1H, [Owen et al., 2015]). Ct values from two technical replicates were averaged and normalized by the average Ct value of three housekeeping genes (g6pd, clathrin, and ubiquilin, [van Wolfswinkel et al., 2014]) to generate \u0394Ct values. Log2 fold-changes were determined by the \u0394\u0394Ct method by calculating the difference from the average \u0394Ct value of control RNAi replicates. Heatmap of average \u0394\u0394Ct values was generated by pheatmap in R. Bar graphs show mean \u0394\u0394Ct +/- standard deviation with individual \u0394\u0394Ct values. Statistical tests (unpaired Student\u2019s t-test or one-way ANOVA followed by Dunnett\u2019s multiple comparisons test) were performed between individual \u0394\u0394Ct values.\n\n### Expression domain quantification\n\nFISH of the mRG of interest was performed in control RNAi animals and RNAi animals showing phenotypes (ectopic pharynx or ectopic eyes) in at least three independent experiments, and images taken with same intensity settings within an experiment. The extent of an mRG expression domain was measured in ImageJ as depicted in cartoons by blind scoring maximal intensity projections. For ndl-2, the extent of the domain with strong expression and not total expression was measured. The length of the mRG expression domain was normalized by the length of the animal. Statistical analysis of expression domain shifts were determined by one-way ANOVA followed by Dunnett\u2019s multiple comparisons test.\n\n### Immunostainings\n\nAnimals were fixed as for in situ hybridizations and then treated as described (Newmark and S\u00e1nchez Alvarado, 2000). A mouse anti-ARRESTIN antibody (kindly provided by Kiyokazu Agata) was used in a 1:5000 dilution, and an anti-mouse-Alexa conjugated antibody was used in a 1:500 dilution.\n\n### Cell quantification and statistical analysis\n\nNumbers of cintillo+and gd+cells were counted and normalized by the length between the anterior tip of the animal and the esophagus in control, fz5/8\u20134; ndk, and wntA; ndk RNAi animals after eight RNAi feedings (Figure 5C, Figure 5\u2014figure supplement 1E). One-way ANOVA and Dunnet\u2019s post-test were used to determine significant differences between the different conditions and the control. Similarly, cells expressing the metalloproteinase mmp1 were counted in control, wntP-2, ndl-3, and ndl-3; wntP-2 RNAi trunk pieces after 12 RNAi feedings and two rounds of regeneration (20 dpa, screen RNAi protocol, Figure 3B). One-way ANOVA and Dunnet post-test were used to determine significant differences between the different conditions and the control. Minimum sample-size estimations were calculated using balanced one-way analysis of variance power calculation with k=4 (mmp1) or k=3 (cintillo and gd), f=0.8, sig.level=0.05, and power=0.8 (n=5.3 or n=6.1).\n\n### Phylogenetic analysis: accession numbers\n\nGenbank: Homo sapiens: NP_068742.2 (FGFRL1). Mus musculus: NP_473412.1 (FGFRL1). Xenopus tropicalis NP_001011189.1 (FGFRL1). Strongylocentrotus purpuratus NP_001165523.1 (FGFRL1). Dj, Dugesia japonica: BAC20953.1 (Ndk), BAP15931.1 (Ndl-2), BAQ21471.1 (Ndl-3), BAQ21471.1 (Ndl-1). Nematostella vectensis XP_001635234.1 (FGFRL-1). Uniprot: Ciona intestinalis F7BEX9 (FGFRL1). Genomic database: Capitella sp. I: CAPC1_170033 (FGFRL1). Lottia gigantean: LOTGI_167118 (FGFRL1). Schistosoma mansoni: Smp_052290 (Ndk), Smp_036020 (Ndl-5) Planmine/Genbank: Schmidtea mediterranea: dd_11285/ADD84674.1(Ndk), dd_12674/ADD84675.1 (Ndl-4), dd_5102/AFJ24803.1(Ndl-5), dd_6604/ADD84676.1 (Ndl-3), dd_8310 (Ndl-1), dd_8340 (Ndl-2).Dendrocoelum lacteum: Dlac_193209/JAA92597.1 (Ndk), Dlac_194186/JAA92596.1 (Ndl-4), Dlac_184398 (Ndl-5), Dlac_178408 (Ndl-3-2), Dlac_182339 (Ndl-3-1), Dlac_189993 (Ndl-1), Dlac_170672 (Ndl-2-1), Dlac_181923/JAA92595.1 (Ndl-2-2). Planaria torva: Ptor_24279 (Ndk-1), Ptor_18635 (Ndk-2), Ptor_24521(Ndl-4-1), Ptor_34251 (Ndl-4-2), Ptor_36400 (Ndl-5-1), Ptor_68870 (Ndl-5-2), Ptor_24828 (Ndl-3-1), Ptor_27132 (Ndl-3-2), Ptor_29905 (Ndl-1), Ptor_23702 (Ndl-2). Polycelis tenuis: Pten_63627 (Ndk-1), Pten_14428 (Ndk-2), Pten_6171 (Ndl-4), Pten_43037 (Ndl-5), Pten_46975 (Ndl-3), Pten_39799 (Ndl-1-1), Pten_47685 (Ndl-1-2), Pten_41107 (Ndl-2). Polycelis nigra: Pnig_15421 (Ndk-1), Pnig_6593 (Ndk-2), Pnig_29523 (Ndl-4-2), Pnig_3947 (Ndl-4-1), Pnig_25001 (Ndl-5), Pnig_3933 (Ndl-3), Pnig_25308 (Ndl-1), Pnig_22111 (Ndl-2).\n",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "bb7c1d38-ddab-43d7-b851-719db258f9e0",
+      "submission_id": "d6a90085-5e5d-4c32-887c-a870bead53f5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Alejandro S\u00e1nchez Alvarado, Stowers Institute for Medical Research , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.12845.024](https://doi.org/10.7554/eLife.12845.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Two FGFRL-Wnt circuits organize the planarian AP axis\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Alejandro S\u00e1nchez Alvarado as Reviewing Editor and Fiona Watt as the Senior Editor. One of the three reviewers has agreed to reveal her identity: Yukiko Yamashita.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn the manuscript by Scimone, et al., the authors build upon their previous study of spatial signaling pathways being transcribed by muscle nuclei: Witchley et al., 2013. In order to describe the heterogeneity of signals transcribed by muscles, and how those signals may change along the axis of the worm, the authors use single cell RNA deep sequencing of 115 muscle cells isolated from different axial levels. This manuscript identifies genes that are expressed regionally along the anterior/posterior axis in planarian body wall muscle, which are thought to provide a coordinate system for axial information. Trying several analysis methods, the authors settle on one and then perform an in situ hybridization screen of 252 transcripts to look for regionally restricted transcripts. The RNA sequencing of single muscle cells identified 44 new regionally-expressed genes, many of which are members of the Wnt, FGFRL, and Hox gene families. Knockdown of these genes resulted in two overall classes of phenotypes: those that affect trunk identity, with formation of ectopic mouths, and those that affect anterior identity, with formation of ectopic photoreceptors. In both cases, the genes required for head or trunk identity consist of one Wnt and one FGFRL, suggesting that these proteins may form a regulatory circuit conveying regional axial information to underlying tissues in the animal.\n\nEssential revisions:\n\nThe use of single-cell RNA-sequencing to identify transcripts expressed in particular cell types is a novel, powerful technique in planarians. The finding that signaling pathways such as Wnt and FGFRL cooperate to establish axial patterning is not altogether surprising, but understanding how this coordinate system functions is valuable. However, before publication some changes need to be made to improve the clarity of the story.\n\n1) This manuscript should be expanded into a full article due to the vast amounts of data currently buried in supplemental (Figure 1\u2014figure supplement 3 for example). Additionally, a very detailed protocol and sequence analysis accompanying this article would be helpful. Currently, sequencing depth or testing of sensitivity by mRNA spike-ins is not discussed or performed, and should be strongly considered to expand upon.\n\n2) The selection criteria for these 44 new regionally-expressed genes is not clear from the text. Additionally, in screening 252 genes by in situ hybridization, why were 166 non-statistically-significant genes in this analysis? Also, in Figure 1\u2014figure supplement 2, why are only 38 in situs instead of 44? Stating the reasons for these inclusions and omissions will improve the clarity of the manuscript.\n\n3) The claim that WntP-2 and ndl-3 only affect trunk identity and not head identity is poorly supported by the data as shown. The SFRP-1 expression patterns in Figure 2E-F seem to be moderately expanded, and it is difficult to tell how the authors determine the boundaries of these domains. Can they be quantified to show reproducibility across a population instead of in a single image? Similarly, the expression pattern boundaries shown in Figure 2\u2014figure supplement 2 are difficult to see, and quantification would help.\n\n4) The authors suggest in the conclusion that the Wnt signals form the posterior boundary for the FGFRLs. To prove that this system functions this way, does knockdown of multiple Wnts alter the FGFRL distribution? Does overall perturbation of global Wnt signaling (by knockdown of \u03b2-catenin or APC) alter patterning of these genes?\n\n5) Levels of WNTP-2, ndl-3, fz5/8-4, ndk RNAi efficacy should be quantified by qRTPCR or RNAseq, as is standard in the planarian field.\n\n6) Because the phenotype of wntA, ndk, and fz5/8-4 are all in a similar direction (head expansion), there cannot be a negative arrow from wntA to ndk in the model in Figure 4. Please modify accordingly if you propose this is a genetic arrow, or increase resolution if you propose this is a small-scale boundary restriction.\n\n7) The authors did not put the ndl's in the context of regional head/tail repression by \u03b2cat/APC. In the case of the trunk domain expanding posterior, can this be suppressed by \u03b2cat RNAi's anteriorizing effects?\n\n8) In the end, this is largely an ndl story as well as trying to get a handle on what the muscle cells are capable of in terms of signaling complexity. The authors state that 4/5 ndl's were differentially detected in muscle cells, yet it is hard to get a feeling for how they are regionally restricted, how they overlap with each other, and what how each of their phenotypes affect patterning as a whole. The authors should show the RNAi phenotypes for each of the ndl's and show the effects on the patterning of the others as well as the WNT's used in this manuscript. Secondly, they should quantify the overlap in each of the genes and support this by co-detection in single muscle cells using the data already in hand. The authors missed an opportunity here to perform some analyses on what mRGs were detected in single muscle cells \u2013 they should perform such an analysis (instead of the average expression for a region shown in Figure 1C). For example, do all ndk-expressing muscles also express wntA and/or fz5/8-4? Are there transcription factor differences that can explain the expression profile of a given muscle? This would be very informative.\n",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "31c170a2-21b7-492f-aab5-e2ecc1b44fe8",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C1",
+      "claim": "Planarians undergo whole-body regeneration and tissue turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Planarians undergo whole-body regeneration and tissue turnover, providing a model for adult positional information studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established characteristic of planarians stated in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "d09d9255-e408-4451-a12e-afa652857e6c",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C2",
+      "claim": "Genes encoding secreted and transmembrane components of multiple developmental pathways are predominantly expressed in planarian muscle cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes encoding secreted and transmembrane components of multiple developmental pathways are predominantly expressed in planarian muscle cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by prior work cited in the introduction and confirmed by the current study's findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "c67ee213-53dd-4a6f-987f-3a8697d03e9d",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C3",
+      "claim": "Single-cell RNA-sequencing of 115 muscle cells from distinct anterior-posterior regions identified 44 regionally expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, single-cell RNA-sequencing of 115 muscle cells from distinct anterior-posterior regions identified 44 regionally expressed genes, including multiple Wnt and ndk/FGF receptor-like (ndl/FGFRL) genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by the experimental data presented in Figure 1 and related supplementary materials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "412b847d-db98-42dd-80d3-cb89b6286759",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C4",
+      "claim": "The 44 identified regionally expressed genes include multiple Wnt and ndk/FGF receptor-like (ndl/FGFRL) genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, single-cell RNA-sequencing of 115 muscle cells from distinct anterior-posterior regions identified 44 regionally expressed genes, including multiple Wnt and ndk/FGF receptor-like (ndl/FGFRL) genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated in the abstract and supported by the data in Figure 1E showing the composition of the 44 genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "5be86db6-1b35-404d-a51d-73f8ff5fb877",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C5",
+      "claim": "Two distinct FGFRL-Wnt circuits control planarian head and trunk patterning.",
+      "claim_type": "EXPLICIT",
+      "source": "Two distinct FGFRL-Wnt circuits, involving juxtaposed anterior FGFRL and posterior Wnt expression domains, controlled planarian head and trunk patterning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a major conclusion of the study, supported by RNAi experiments and expression analysis shown in Figures 3-6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "af1abc77-c600-4a3d-b9c9-90378663f95f",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C6",
+      "claim": "ndl-3 and wntP-2 inhibition expanded the trunk, forming ectopic mouths and secondary pharynges.",
+      "claim_type": "EXPLICIT",
+      "source": "ndl-3 and wntP-2 inhibition expanded the trunk, forming ectopic mouths and secondary pharynges, which independently extended and ingested food.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding shown in Figure 3 and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "1c2be900-ff34-49b6-b4de-b9b845b556e1",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C7",
+      "claim": "Ectopic pharynges in ndl-3 and wntP-2 RNAi animals independently extended and ingested food.",
+      "claim_type": "EXPLICIT",
+      "source": "ndl-3 and wntP-2 inhibition expanded the trunk, forming ectopic mouths and secondary pharynges, which independently extended and ingested food.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional characteristic is demonstrated in Figure 3D and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "75185fcd-9cac-4ed4-8d3a-ab24d140e493",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C8",
+      "claim": "fz5/8-4 inhibition caused posterior brain expansion and ectopic eye formation.",
+      "claim_type": "EXPLICIT",
+      "source": "fz5/8-4 inhibition, like that of ndk and wntA, caused posterior brain expansion and ectopic eye formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "34d72178-cf16-44aa-8c49-0dd209bd47b4",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C9",
+      "claim": "ndk inhibition caused posterior brain expansion and ectopic eye formation.",
+      "claim_type": "EXPLICIT",
+      "source": "fz5/8-4 inhibition, like that of ndk and wntA, caused posterior brain expansion and ectopic eye formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data in Figure 5 and prior literature (Cebri\u00e0 et al., 2002).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "7e9416e5-f2cc-4b61-9513-68cba6647308",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C10",
+      "claim": "wntA inhibition caused posterior brain expansion and ectopic eye formation.",
+      "claim_type": "EXPLICIT",
+      "source": "fz5/8-4 inhibition, like that of ndk and wntA, caused posterior brain expansion and ectopic eye formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by data in Figure 5 and prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "761774c0-c6ec-4e40-9356-decbfebc1582",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C11",
+      "claim": "FGFRL-Wnt circuits operate within a body-wide coordinate system to control adult axial positioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that FGFRL-Wnt circuits operate within a body-wide coordinate system to control adult axial positioning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, inferred from the combined expression and functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "e6f748a6-f1f0-4a1b-89a1-af11e7bf008d",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C12",
+      "claim": "Planarians can regenerate any missing body part.",
+      "claim_type": "EXPLICIT",
+      "source": "Planarians can regenerate any missing body part and replace aged tissues during homeostasis, presenting a powerful system for identifying adult positional information mechanisms (Reddien and S\u00e1nchez Alvarado, 2004; Reddien, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact about planarians, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "9bd4f3aa-697d-45e7-93e4-8c9291334cb3",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C13",
+      "claim": "Planarians replace aged tissues during homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Planarians can regenerate any missing body part and replace aged tissues during homeostasis, presenting a powerful system for identifying adult positional information mechanisms (Reddien and S\u00e1nchez Alvarado, 2004; Reddien, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established characteristic of planarians, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "1301a731-07a1-4b2b-844c-cbfc9c044566",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C14",
+      "claim": "Planarian regeneration requires an abundant population of dividing cells called neoblasts that includes pluripotent stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Planarian regeneration requires an abundant population of dividing cells called neoblasts that includes pluripotent stem cells (Wagner et al., 2011; Rink, 2013; Reddien, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact about planarian biology, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "9ca3de15-2ab4-4538-a12e-77a8b684e8f4",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C15",
+      "claim": "Inhibition of components of the Wnt signaling pathway causes regeneration of heads in place of tails, generating two-headed animals.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, inhibition of components of the Wnt signaling pathway causes regeneration of heads in place of tails, generating two-headed animals with heads facing opposing directions (Petersen and Reddien, 2008; Gurley et al., 2008; Iglesias et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-documented phenotype in planarian research, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "13e7e556-bda2-4f4d-b3c4-2e90177aa616",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C16",
+      "claim": "Wnt-signaling inhibition causes hypercephalized planarians during tissue turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Several striking planarian phenotypes associated with altered regional tissue identity during tissue turnover have also been identified, including hypercephalized (Wnt-signaling inhibition) (Petersen and Reddien, 2008; Gurley et al., 2008; Iglesias et al., 2008) and ventralized (BMP-signaling inhibition) (Reddien et al., 2007; Molina et al., 2007; Orii and Watanabe, 2007) planarians.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known phenotype from prior studies, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "f23d2a00-2f86-4e33-bdaf-006ebfba4e48",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C17",
+      "claim": "BMP-signaling inhibition causes ventralized planarians during tissue turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Several striking planarian phenotypes associated with altered regional tissue identity during tissue turnover have also been identified, including hypercephalized (Wnt-signaling inhibition) (Petersen and Reddien, 2008; Gurley et al., 2008; Iglesias et al., 2008) and ventralized (BMP-signaling inhibition) (Reddien et al., 2007; Molina et al., 2007; Orii and Watanabe, 2007) planarians.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known phenotype from prior studies, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "7f24dbc5-1d40-4e9b-a027-e5dcac5c6610",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C18",
+      "claim": "Wnt regulates anterior-posterior axis development in many animal phyla.",
+      "claim_type": "EXPLICIT",
+      "source": "Reminiscent of the roles of Wnt and Bmp in planarian regeneration and tissue turnover, Wnt regulates anterior-posterior (AP) axis development (Petersen and Reddien, 2009b; Niehrs, 2010) and Bmp regulates dorsal-ventral (DV) axis development (De Robertis and Sasai, 1996) in many animal phyla.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in developmental biology, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "82ee35a6-95f7-42b4-8714-d8ae7acc1ff1",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C19",
+      "claim": "Bmp regulates dorsal-ventral axis development in many animal phyla.",
+      "claim_type": "EXPLICIT",
+      "source": "Reminiscent of the roles of Wnt and Bmp in planarian regeneration and tissue turnover, Wnt regulates anterior-posterior (AP) axis development (Petersen and Reddien, 2009b; Niehrs, 2010) and Bmp regulates dorsal-ventral (DV) axis development (De Robertis and Sasai, 1996) in many animal phyla.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in developmental biology, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "a0dae0eb-7cc5-432d-a361-c515a6d7059a",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C20",
+      "claim": "Receptors, ligands, and secreted inhibitors of BMP and Wnt pathways are constitutively expressed in a regionalized manner across adult planarian body axes.",
+      "claim_type": "EXPLICIT",
+      "source": "Many receptors, ligands, and secreted inhibitors belonging to key pathways that regulate development in many organisms, such as BMP and Wnt pathways are constitutively expressed in a regionalized manner across adult planarian body axes (Reddien, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "76bc1c8f-d042-4e36-b16c-06999a4fc9de",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C21",
+      "claim": "Patterning genes in planarians are predominantly expressed together in body-wall muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, these genes are predominantly expressed together in the same planarian tissue, the body-wall muscle (Witchley et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from prior work, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "16740452-b66f-4c34-93e8-ea026eb84be9",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C22",
+      "claim": "Expression patterns of patterning genes can change dynamically following injury in planarians.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression patterns of these genes can change dynamically following injury (Petersen and Reddien, 2008; Petersen and Reddien, 2009a; Gurley et al., 2010; Witchley et al., 2013), and some of these changes can occur in existing muscle cells in the absence of neoblasts (Witchley et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known phenomenon from prior studies, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "7c2ee70a-3e5a-4a45-9b84-c03408a97a1d",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C23",
+      "claim": "Some expression pattern changes in muscle can occur in existing muscle cells in the absence of neoblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression patterns of these genes can change dynamically following injury (Petersen and Reddien, 2008; Petersen and Reddien, 2009a; Gurley et al., 2010; Witchley et al., 2013), and some of these changes can occur in existing muscle cells in the absence of neoblasts (Witchley et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from prior work, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "eecfacb9-682b-47ca-bb87-ef829a03a82f",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C24",
+      "claim": "Body-wall muscle is distributed peripherally around the entire planarian body.",
+      "claim_type": "EXPLICIT",
+      "source": "Body-wall muscle is distributed peripherally around the entire planarian body, and the known expression domains of candidate patterning molecules in muscle broadly span the AP, DV, and medial-lateral (ML) body axes, raising the possibility that muscle provides a body-wide coordinate system of positional information that controls regional tissue identity in tissue turnover and regeneration (Witchley et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an anatomical fact about planarians, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "e8ff3ff7-229f-4164-acce-d86162dc9658",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C25",
+      "claim": "Expression domains of candidate patterning molecules in muscle broadly span the AP, DV, and medial-lateral body axes.",
+      "claim_type": "EXPLICIT",
+      "source": "Body-wall muscle is distributed peripherally around the entire planarian body, and the known expression domains of candidate patterning molecules in muscle broadly span the AP, DV, and medial-lateral (ML) body axes, raising the possibility that muscle provides a body-wide coordinate system of positional information that controls regional tissue identity in tissue turnover and regeneration (Witchley et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on prior work, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "5706dfdc-0a1d-4946-bd54-5b652d14b480",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C26",
+      "claim": "Muscle may provide a body-wide coordinate system of positional information that controls regional tissue identity in tissue turnover and regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Body-wall muscle is distributed peripherally around the entire planarian body, and the known expression domains of candidate patterning molecules in muscle broadly span the AP, DV, and medial-lateral (ML) body axes, raising the possibility that muscle provides a body-wide coordinate system of positional information that controls regional tissue identity in tissue turnover and regeneration (Witchley et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis raised based on prior observations, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "8d21f80c-a311-498a-bf27-2f009d58f5d8",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C27",
+      "claim": "Non-dividing single cells from 10 consecutive regions along the AP axis were isolated by fluorescence activated cell sorting (FACS).",
+      "claim_type": "EXPLICIT",
+      "source": "Non-dividing single cells from 10 consecutive regions along the AP axis (Figure 1A) were isolated by fluorescence activated cell sorting (FACS), and the resulting single-cell cDNA libraries were screened by qRT-PCR for expression of planarian muscle markers before sequencing (Methods, Figure 1\u2014figure supplement 1A\u2013C, Supplementary file 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "4d9968e3-cb17-40de-83c2-fc54bbb654c1",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C28",
+      "claim": "Single-cell cDNA libraries were screened by qRT-PCR for expression of planarian muscle markers before sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-dividing single cells from 10 consecutive regions along the AP axis (Figure 1A) were isolated by fluorescence activated cell sorting (FACS), and the resulting single-cell cDNA libraries were screened by qRT-PCR for expression of planarian muscle markers before sequencing (Methods, Figure 1\u2014figure supplement 1A\u2013C, Supplementary file 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "22e1191c-205d-44fb-93b7-a0cf53cf8862",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C29",
+      "claim": "Cells expressed an average of 3,253 transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells expressed an average of 3,253 transcripts, within the range reported for planarian single-cell libraries (Wurtzel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "df300e2b-caf1-46a9-917f-56d60106f080",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C30",
+      "claim": "The average number of transcripts expressed per cell is within the range reported for planarian single-cell libraries.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells expressed an average of 3,253 transcripts, within the range reported for planarian single-cell libraries (Wurtzel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is made to prior work, supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "5822952b-1005-4f78-80cc-2765fc557cfe",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C31",
+      "claim": "Principal component analysis identified two significant principal components that separated cells by expression of muscle markers and neoblast markers.",
+      "claim_type": "EXPLICIT",
+      "source": "Principal component analysis (PCA) on the 177 single cells sequenced was performed using highly variable transcripts. Two significant principal components that separated cells by expression of muscle markers (PC1<0) and expression of neoblast markers (PC2<0) were identified (details in Methods, Figure 1\u2014figure supplement 1D\u2013F, Supplementary file 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the results of the PCA analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "d2349588-40d4-412b-bc2a-52086c72943b",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C32",
+      "claim": "115 muscle cells were identified by PCA and troponin expression.",
+      "claim_type": "EXPLICIT",
+      "source": "PCA and troponin expression confirmed the identity of 115 muscle cells, and these 115 cells were used in all subsequent analyses (Figure 1\u2014figure supplement 1D, Supplementary file 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the cell selection process for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "2fc86a78-4456-42a4-9ce5-9d6a5f18fe95",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C33",
+      "claim": "26 of the 44 regionally expressed genes identified were previously not reported to be regionally expressed in muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "ISH analysis verified 44 of these genes as regionally expressed (35/44 with p<0.005 in any of anterior-versus-posterior SCDE analyses) from the total 256 genes tested, including 26 previously not reported to be regionally expressed in muscle (Figure 1B, Figure 1\u2014figure supplement 2, Supplementary file 1F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This quantifies the novel findings of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "960b65fe-1592-42a7-b44e-3593df7e267d",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C34",
+      "claim": "All newly identified regionally expressed genes tested were expressed at least in part in cells expressing the planarian muscle marker collagen.",
+      "claim_type": "EXPLICIT",
+      "source": "All newly identified regionally expressed genes tested were expressed at least in part in cells expressing the planarian muscle marker collagen (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by double FISH experiments shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "081a5840-39db-4ff9-aac1-42d75156d599",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C35",
+      "claim": "Hierarchical clustering of the average expression per region of the 44 mRGs recapitulates the AP order of the regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Hierarchical clustering of the average expression per region of the 44 mRGs identified recapitulates the AP order of the regions (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 1D and demonstrates the spatial coherence of the expression patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "0903782e-4283-4121-b7ee-82848b775c13",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C36",
+      "claim": "The 44 identified mRGs were comprised mainly of genes encoding Wnt-signaling components, Hox-family transcription factors, and fibroblast growth factor receptor-like (FGFRL) proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the 44 identified mRGs identified here were comprised mainly of genes encoding Wnt-signaling components, Hox-family transcription factors, and fibroblast growth factor receptor-like (FGFRL) proteins (Figure 1E), suggesting that these gene families have prominent roles in providing positional information for maintaining and regenerating the planarian primary body axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 1E and leads to an inference about their roles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "9edf8ab8-0e65-4950-9205-8ff242f78414",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C37",
+      "claim": "Wnt, Hox, and FGFRL gene families have prominent roles in providing positional information for maintaining and regenerating the planarian primary body axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the 44 identified mRGs identified here were comprised mainly of genes encoding Wnt-signaling components, Hox-family transcription factors, and fibroblast growth factor receptor-like (FGFRL) proteins (Figure 1E), suggesting that these gene families have prominent roles in providing positional information for maintaining and regenerating the planarian primary body axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the composition of the identified genes and their functional analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "d45623f9-63c7-4960-88b5-a655e430a328",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C38",
+      "claim": "Planarians have six FGFRL-encoding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Planarians have six FGFRL-encoding genes, named nou darake (ndk), the defining member of the FGFRL family (Cebri\u00e0 et al., 2002), and nou darake-like (ndl)-1 through ndl-5 (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "fd9b0742-7583-4396-a43d-021ac0baa9ca",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C39",
+      "claim": "All six planarian FGFRL genes were identified in the SCDE analyses as AP mRGs.",
+      "claim_type": "EXPLICIT",
+      "source": "All of these FGFRL genes were identified in the SCDE analyses as AP mRGs (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "b30c3967-403a-4880-a4f2-5dffad10da68",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C40",
+      "claim": "At least three of the five FGFRL genes with expression at the anterior-most region were co-expressed in all 11 muscle cells isolated from the anterior head tip.",
+      "claim_type": "EXPLICIT",
+      "source": "At least three of the five FGFRL genes with expression at the anterior-most region of the animal (ndk, ndl-1, ndl-2, ndl-4, ndl-5) were co-expressed in all 11 muscle cells isolated and sequenced from the anterior head tip (region 1); 10/11 of these cells also co-expressed ndk and frizzled5/8\u20134 (fz5/8\u20134) (Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the heatmap in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "b5e4474e-ab92-4cca-b833-0672d401576e",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C41",
+      "claim": "10 out of 11 muscle cells from the anterior head tip co-expressed ndk and frizzled5/8-4.",
+      "claim_type": "EXPLICIT",
+      "source": "At least three of the five FGFRL genes with expression at the anterior-most region of the animal (ndk, ndl-1, ndl-2, ndl-4, ndl-5) were co-expressed in all 11 muscle cells isolated and sequenced from the anterior head tip (region 1); 10/11 of these cells also co-expressed ndk and frizzled5/8\u20134 (fz5/8\u20134) (Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the heatmap in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "d9b98118-529f-4778-8e70-0dec26f3a63c",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C42",
+      "claim": "In single muscle cells from the pre-pharyngeal region, 3 out of 6 cells expressing ndl-3 also expressed wntP-2.",
+      "claim_type": "EXPLICIT",
+      "source": "In the single muscle cells sequenced from the pre-pharyngeal region (region 4), 3/6 cells expressing ndl-3 also expressed wntP-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the heatmap in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "55bd43b1-698a-4461-bea6-b85fe60619d4",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C43",
+      "claim": "FISH demonstrated co-expression of FGFRL and Wnt-pathway genes together in the same cells in regions where their expression domains overlapped.",
+      "claim_type": "EXPLICIT",
+      "source": "FISH also demonstrated co-expression of FGFRL and Wnt-pathway genes together in the same cells in regions where their expression domains overlapped (Figure 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "c9ee421f-ede2-4eb2-89e2-2d1502958caa",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C44",
+      "claim": "Extensive co-expression of multiple mRGs in single muscle cells was observed in different regions along the entire AP axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, extensive co-expression of multiple mRGs in single muscle cells was observed in different regions along the entire AP axis (Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "6a2669da-96c9-49d2-8ec9-7a998f63197e",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C45",
+      "claim": "\u03b2-catenin-1 RNAi animals develop ectopic heads around the entire body during tissue turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Wnt signaling is also required for maintenance of the AP axis, with \u03b2-catenin-1 RNAi animals developing ectopic heads around the entire body during tissue turnover (Petersen and Reddien, 2008; Gurley et al., 2008; Iglesias et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known phenotype from prior studies, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "e86e8495-4c6c-41d5-857c-ac1926f3553d",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C46",
+      "claim": "At early timepoints following \u03b2-catenin-1 RNAi, animals showed subtle posterior expansions of ndl-5 and ndl-2 expression domains.",
+      "claim_type": "EXPLICIT",
+      "source": "At early timepoints following RNAi (7\u20139 days after first RNAi feeding), \u03b2-catenin-1 RNAi animals showed subtle posterior expansions of ndl-5 and ndl-2 expression domains (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "8a8076c1-35e9-4365-8559-54c7aec704aa",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C47",
+      "claim": "Ectopic expression of ndl-5 in \u03b2-catenin-1 RNAi animals occurred in posterior and lateral locations and preceded ectopic expression of ndl-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Later, ectopic expression of ndl-5 in posterior and lateral locations occurred and preceded ectopic expression of ndl-2 (9 days after first RNAi feeding) even before the appearance of ectopic eyes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "6d34bd46-9aa4-4c2a-bc82-f333cf5dd1cd",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C48",
+      "claim": "Fully formed ectopic heads in \u03b2-catenin-1 RNAi animals showed clear ectopic expression of the pre-pharyngeal mRG ndl-3.",
+      "claim_type": "EXPLICIT",
+      "source": "Fully formed ectopic heads (21 days after first RNAi feeding) showed clear ectopic expression of the pre-pharyngeal mRG ndl-3 (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "4c02130d-3f83-4919-99ba-fa104ed1afae",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C49",
+      "claim": "Gross anatomical changes in the AP axis are accompanied by corresponding changes in FGFRL expression domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Gross anatomical changes in the AP axis are therefore accompanied by corresponding changes in FGFRL expression domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the \u03b2-catenin-1 RNAi experiments showing coordinated changes in anatomy and gene expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "230b1d04-b4ba-4ea3-b2b5-f036e5f49152",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C50",
+      "claim": "The axial expression map of genes in planarian adult muscle is reminiscent of regionalized gene expression patterns found during embryonic development in other species.",
+      "claim_type": "EXPLICIT",
+      "source": "The axial expression map of genes in planarian adult muscle is reminiscent of regionalized gene expression patterns found during embryonic development in other species (Pankratz and J\u00e4ckle, 1993; De Robertis et al., 2000; Jaeger et al., 2012) and provides a tool to dissect adult positional identity maintenance and regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to known developmental biology patterns, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "94b92368-4075-4703-8aec-5390e17a92bc",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C51",
+      "claim": "Inhibition of single or combinations of Hox genes did not result in animals with a robust abnormal phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of single or combinations of Hox genes and a subset of FGFRL genes (ndl-1, ndl-2, ndl-4, and ndl-5) did not result in animals with a robust abnormal phenotype (Supplementary file 1G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a negative result from the RNAi screen reported in Supplementary file 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "061e802b-ec27-4f01-a857-517f230448c1",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C52",
+      "claim": "Inhibition of a subset of FGFRL genes (ndl-1, ndl-2, ndl-4, and ndl-5) did not result in animals with a robust abnormal phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of single or combinations of Hox genes and a subset of FGFRL genes (ndl-1, ndl-2, ndl-4, and ndl-5) did not result in animals with a robust abnormal phenotype (Supplementary file 1G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a negative result from the RNAi screen reported in Supplementary file 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "5d17db0d-dd3e-49b0-b900-554e815a7530",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C53",
+      "claim": "Expression of other members of the FGFRL family was not affected by ndl-1, ndl-2, ndl-4, and ndl-5 RNAi at the time-point analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, expression of other members of the FGFRL family was not affected under these RNAi conditions at the time-point analyzed (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "61a6f8a2-d8e5-4f5b-826e-43baa5e54c2d",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C54",
+      "claim": "The ndl-3 gene is expressed from below the eyes to the esophagus at the anterior end of the pharynx.",
+      "claim_type": "EXPLICIT",
+      "source": "The ndl-3 gene is expressed from below the eyes to the esophagus at the anterior end of the pharynx (Figure 1B, [Rink et al., 2009]), which is located centrally in the animal trunk (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 1B and supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "fcb818bf-ad8a-4164-9d54-2ace93fe71e6",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C55",
+      "claim": "ndl-3 RNAi resulted in the formation of two or more mouths and two pharynges.",
+      "claim_type": "EXPLICIT",
+      "source": "ndl-3 RNAi resulted in a striking phenotype: the formation of two or more mouths and two pharynges (Figure 3A\u2013C, Figure 3\u2014figure supplement 1A\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary experimental finding shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "bc89ae13-dee9-46b2-afb3-5bd4c7a3d35a",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C56",
+      "claim": "The ectopic mouths and pharynges of ndl-3 RNAi animals appeared within the trunk, posterior to the original mouth/pharynx location.",
+      "claim_type": "EXPLICIT",
+      "source": "The ectopic mouths and pharynges of ndl-3 RNAi animals appeared within the trunk, posterior to the original mouth/pharynx location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the location of the ectopic structures observed in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "2b105eee-fd4d-4d4c-b057-c0d6a6e4b58b",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C57",
+      "claim": "The ectopic mouth/pharynx phenotype in ndl-3 RNAi animals emerged both during tissue turnover in uninjured animals and following regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenotype emerged both during tissue turnover in uninjured animals (Figure 3\u2014figure supplement 1C) and following regeneration (Figure 3A, Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3 and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "38beedbc-21d4-457d-851c-65a30d4256a2",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C58",
+      "claim": "In regenerating ndl-3 RNAi animals, animals initially regenerated a single mouth/pharynx, but as regenerating animals grew following feeding, ectopic mouths and pharynges emerged.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of regeneration, animals initially regenerated a single mouth/pharynx, but as regenerating animals grew following feeding, ectopic mouths and pharynges emerged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the temporal progression of the phenotype during regeneration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "9c1b5e07-9f6a-44d5-ae00-71e092ed26f3",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C59",
+      "claim": "Inhibition of wntP-2 caused ectopic mouth and pharynx formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of the posterior mRG wntP-2/wnt11-5 also caused ectopic mouth and pharynx formation (Figure 3A\u2013C, Figure 3\u2014figure supplement 1A\u2013D), in agreement with a recent report (Sureda-G\u00f3mez et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3 and supported by a citation to a recent report.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "a80fdd63-9d25-4049-a355-2d61e7e575b6",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C60",
+      "claim": "Double RNAi of ndl-3 and wntP-2 was synergistic.",
+      "claim_type": "EXPLICIT",
+      "source": "Double RNAi of ndl-3 and wntP-2 was synergistic (Figure 3A, Fisher's exact test p<0.0001 for ndl-3, p=0.0153 for wntP-2, Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by statistical analysis of the data shown in Figure 3A and Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "8624b361-9ab0-4589-a32d-b21a67a8f6d3",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C61",
+      "claim": "Inhibition of ndl-3 and wntP-2 resulted in pharyngeal cavity expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of ndl-3 and wntP-2 also resulted in pharyngeal cavity expansion (Figure 3B,C, Figure 3\u2014figure supplement 1B), and in increased numbers of para-pharyngeal cells (Figure 3B), which express the matrix metalloproteinase mmp1 (Newmark et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3B,C and Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "b128bbe9-ec89-4bf1-9d4d-6d1fc60e8090",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C62",
+      "claim": "Inhibition of ndl-3 and wntP-2 resulted in increased numbers of para-pharyngeal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of ndl-3 and wntP-2 also resulted in pharyngeal cavity expansion (Figure 3B,C, Figure 3\u2014figure supplement 1B), and in increased numbers of para-pharyngeal cells (Figure 3B), which express the matrix metalloproteinase mmp1 (Newmark et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "f2cea4f9-554f-4f43-9849-12837567a0df",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C63",
+      "claim": "Para-pharyngeal cells express the matrix metalloproteinase mmp1.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of ndl-3 and wntP-2 also resulted in pharyngeal cavity expansion (Figure 3B,C, Figure 3\u2014figure supplement 1B), and in increased numbers of para-pharyngeal cells (Figure 3B), which express the matrix metalloproteinase mmp1 (Newmark et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "793bb2ef-6c0b-4e07-b5b2-916b21a8b5a2",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C64",
+      "claim": "The planarian pharynx is a long muscular organ that can extend through the mouth to ingest food.",
+      "claim_type": "EXPLICIT",
+      "source": "The planarian pharynx is a long muscular organ that can extend through the mouth to ingest food (Reddien and S\u00e1nchez Alvarado, 2004) and connects to the intestine through the esophagus at the medial anterior end of the pharyngeal cavity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known anatomical fact about planarians, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "7b1178ee-013d-42f1-bdba-9a2f88fe8305",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C65",
+      "claim": "The planarian pharynx connects to the intestine through the esophagus at the medial anterior end of the pharyngeal cavity.",
+      "claim_type": "EXPLICIT",
+      "source": "The planarian pharynx is a long muscular organ that can extend through the mouth to ingest food (Reddien and S\u00e1nchez Alvarado, 2004) and connects to the intestine through the esophagus at the medial anterior end of the pharyngeal cavity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known anatomical fact about planarians.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "e84c42a4-6993-4227-a24b-b16d585b0c8e",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C66",
+      "claim": "In ndl-3 and wntP-2 RNAi animals, ectopic esophagi formed in variable locations.",
+      "claim_type": "EXPLICIT",
+      "source": "In ndl-3 and wntP-2 RNAi animals, ectopic esophagi (NB.22.1e+) formed in variable locations, including from the side of the pharyngeal cavity wall and from a gut branch crossing the pharyngeal cavity (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "713a4818-30dc-46ee-b32f-d5da9e5940a9",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C67",
+      "claim": "Despite variable positioning, ectopic pharynges in ndl-3 and wntP-2 RNAi animals always integrated through an esophagus into the intestine.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite variable positioning, ectopic pharynges always integrated through an esophagus into the intestine, demonstrating remarkable plasticity in the mechanisms underlying tissue organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in Figure 3C and demonstrates tissue organization plasticity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "3775552d-94cb-4e51-8004-f6f823e2cbcc",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C68",
+      "claim": "Ectopic pharynges in ndl-3; wntP-2 RNAi or wntP-2 RNAi animals were functional.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic pharynges in ndl-3; wntP-2 RNAi or wntP-2 RNAi animals were also functional \u2013 animals simultaneously projected both pharynges and each pharynx displayed independent food searching behavior, such as on opposite sides of the animal or in different directions (Figure 3D, Video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 3D and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "626f7c6e-ea86-404e-ad4d-87357c41ab4f",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C69",
+      "claim": "Animals with ectopic pharynges simultaneously projected both pharynges and each pharynx displayed independent food searching behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic pharynges in ndl-3; wntP-2 RNAi or wntP-2 RNAi animals were also functional \u2013 animals simultaneously projected both pharynges and each pharynx displayed independent food searching behavior, such as on opposite sides of the animal or in different directions (Figure 3D, Video 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in Figure 3D and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "3946ea0d-1006-4ce2-a630-73f7323acaa7",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C70",
+      "claim": "Anterior-most mRG expression domains (sFRP-1 and ndl-5) showed no overt changes following ndl-3 and wntP-2 RNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "Anterior-most mRG expression domains (sFRP-1 and ndl-5) were present and showed no overt changes following ndl-3 and wntP-2 RNAi (Figure 4A\u2013C, Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4A\u2013C and Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "0dcccb30-bd58-4f6c-9a8b-ffe229d2224c",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C71",
+      "claim": "The ndl-3 expression domain was expanded to the ectopic posterior esophagus in wntP-2 RNAi animals.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the ndl-3 expression domain was expanded to the ectopic posterior esophagus in wntP-2 RNAi animals (Figure 4A,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4A,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "672811a6-40dc-462a-8a3b-d71a77a1e931",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C72",
+      "claim": "In wntP-2 and ndl-3; wntP-2 RNAi animals, the expression domain of sFRP-2 was extended towards the animal posterior.",
+      "claim_type": "EXPLICIT",
+      "source": "In both wntP-2 and ndl-3; wntP-2 RNAi animals, the expression domain of sFRP-2 (Figure 4\u2014figure supplement 1D) was also extended towards the animal posterior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "a89cdefd-2763-47b3-aae3-9705e38c781a",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C73",
+      "claim": "Expression of the pre-pharyngeal mRGs wnt2 and ndl-2 was changed only slightly or not at all in ndl-3 and wntP-2 RNAi animals.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, expression of the pre-pharyngeal mRGs wnt2 and ndl-2 was changed only slightly or not at all (Figure 4\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "944aa648-1040-465e-a64c-7a4cc58927bf",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C74",
+      "claim": "The broad posterior expression domain of wntP-2 was significantly reduced in ndl-3 RNAi animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the broad posterior expression domain of wntP-2 was significantly reduced in ndl-3 RNAi animals (Figure 4B,E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4B,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "79341480-dfa3-4fb4-a8df-edc35dbfabba",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C75",
+      "claim": "Expression of posterior mRGs fz4-1 and dd_13065 was still present in ndl-3, wntP-2, and ndl3; wntP-2 RNAi animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of other posterior mRGs such as fz4-1 and dd_13065 was still present in ndl-3, wntP-2, and ndl3; wntP-2 RNAi animals (Figure 4\u2014figure supplement 1E,F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4\u2014figure supplement 1E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "d388468b-f432-4550-86cb-46b5c18e0708",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C76",
+      "claim": "ndl-3 and wntP-2 are required for maintaining normal trunk tissue pattern including associated mRG expression domains, but not head or tail patterns of mRG expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, both ndl-3 and wntP-2 are required for maintaining normal trunk tissue pattern including associated mRG expression domains, but not head or tail patterns of mRG expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the selective changes in mRG expression shown in Figure 4 and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "ec0ce2af-97d6-40bf-8c98-90df15605421",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C77",
+      "claim": "The trunk patterning defects of ndl-3 and wntP-2 RNAi animals only affect local mRG expression within the axial map.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these data suggest that the trunk patterning defects of ndl-3 and wntP-2 RNAi animals only affect local mRG expression within the axial map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that only trunk-region mRGs are affected, not head or tail mRGs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "190a3767-4ff5-4bf0-9d69-a0d66e0905f5",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C78",
+      "claim": "fz5/8-4 RNAi caused ectopic eye formation and expansion of the brain posteriorly in both uninjured and regenerating animals.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to trunk patterning phenotypes, we found that fz5/8\u20134 RNAi caused ectopic eye formation and expansion of the brain posteriorly in both uninjured and regenerating animals (Figure 5A,B, Figure 5\u2014figure supplement 1A,C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5A,B and Figure 5\u2014figure supplement 1A,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "4c63a858-0626-471f-8ca8-c98f70cae0b7",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C79",
+      "claim": "fz5/8-4 showed graded anterior expression, strongest at the head tip, and brain expression.",
+      "claim_type": "EXPLICIT",
+      "source": "fz5/8\u20134 showed graded anterior expression, strongest at the head tip, and brain expression (Figure 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "504e3c8a-f56d-4717-86a1-2eaa63363b80",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C80",
+      "claim": "The fz5/8-4 RNAi phenotype was similar to that previously described for ndk and wntA RNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "The fz5/8\u20134 RNAi phenotype was similar to that previously described for ndk and wntA RNAi (Figure 5\u2014figure supplement 1B, [Cebri\u00e0 et al., 2002; Kobayashi et al., 2007; Adell et al., 2009; Hill and Petersen, 2015]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is made to prior work, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "17008b42-7f1e-4196-bbba-a0829650941c",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C81",
+      "claim": "ndk is expressed in head muscle and the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "ndk is expressed in head muscle and the brain (Figure 1B, [Cebri\u00e0 et al., 2002; Witchley et al., 2013]) and restricts brain tissues to the animal head (Cebri\u00e0 et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 1B and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "918b5882-1678-4b84-a6cf-a4198e285d7e",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C82",
+      "claim": "ndk restricts brain tissues to the animal head.",
+      "claim_type": "EXPLICIT",
+      "source": "ndk is expressed in head muscle and the brain (Figure 1B, [Cebri\u00e0 et al., 2002; Witchley et al., 2013]) and restricts brain tissues to the animal head (Cebri\u00e0 et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known function from prior work, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "00a8133c-d596-483a-aca8-11cd9c91caeb",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C83",
+      "claim": "wntA is expressed broadly, with strong expression at the posterior base of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "wntA is expressed broadly, with strong expression at the posterior base of the brain (Figure 1\u2014figure supplement 2B, [Kobayashi et al., 2007; Adell et al., 2009; Hill and Petersen, 2015]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 2B and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "c085d204-b916-4158-b4eb-a33cb266268a",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C84",
+      "claim": "wntA; ndk double RNAi animals showed a stronger phenotype in homeostasis than did single gene RNAi animals.",
+      "claim_type": "EXPLICIT",
+      "source": "wntA; ndk double RNAi animals showed a stronger phenotype in homeostasis (Figure 5A,B) and regeneration (Kobayashi et al., 2007), than did single gene RNAi animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5A,B and supported by a citation for regeneration.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "b17e9e57-9b6a-4aa3-bb9a-639c97bb32a9",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C85",
+      "claim": "Double RNAi of fz5/8-4 and either ndk or wntA showed a synergistic effect during tissue turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Double RNAi of fz5/8\u20134 and either ndk or wntA also showed a synergistic effect during tissue turnover (Figure 5A,B, Figure 5\u2014figure supplement 1B, Fisher's exact test p<0.0001 for both ndk and wntA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by statistical analysis of the data shown in Figure 5A,B and Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "a8b97b3c-bec7-4b68-989d-ded95cb3f225",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C86",
+      "claim": "RNAi of four out of five other ndl (FGFRL)-family members further enhanced the fz5/8-4; ndk double RNAi phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, RNAi of four out of five other ndl (FGFRL)-family members further enhanced the fz5/8\u20134; ndk double RNAi phenotype (Figure 5\u2014figure supplement 1D, Supplementary file 1G), suggesting that multiple FGFRL genes synergize to control head pattern with ndk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5\u2014figure supplement 1D and Supplementary file 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "2d850cb9-c69a-4b33-bf76-cf42cb87a3fe",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C87",
+      "claim": "Multiple FGFRL genes synergize to control head pattern with ndk.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, RNAi of four out of five other ndl (FGFRL)-family members further enhanced the fz5/8\u20134; ndk double RNAi phenotype (Figure 5\u2014figure supplement 1D, Supplementary file 1G), suggesting that multiple FGFRL genes synergize to control head pattern with ndk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the enhancement of the phenotype by multiple FGFRL RNAi.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "644ca13b-daad-4f17-887f-9c8934d6b135",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C88",
+      "claim": "Following eight RNAi feedings, fz5/8-4; ndk, wntA; ndk, and fz5/8-4; wntA double RNAi intact animals showed posterior expansion of multiple neuron classes from different head regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Following eight RNAi feedings, fz5/8\u20134; ndk, wntA; ndk, and fz5/8\u20134; wntA double RNAi intact animals showed posterior expansion of multiple neuron classes from different head regions suggesting that the entire head-restricted nervous system expanded posteriorly (Figure 5B,C, Figure 5\u2014figure supplement 1E,F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5B,C and Figure 5\u2014figure supplement 1E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "57011d50-72bc-480d-a596-3105167439c4",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C89",
+      "claim": "The entire head-restricted nervous system expanded posteriorly in fz5/8-4; ndk, wntA; ndk, and fz5/8-4; wntA double RNAi animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Following eight RNAi feedings, fz5/8\u20134; ndk, wntA; ndk, and fz5/8\u20134; wntA double RNAi intact animals showed posterior expansion of multiple neuron classes from different head regions suggesting that the entire head-restricted nervous system expanded posteriorly (Figure 5B,C, Figure 5\u2014figure supplement 1E,F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that multiple neuron classes from different head regions expanded posteriorly.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "7fb88775-1e0d-4e47-8717-fcb0d225ef79",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C90",
+      "claim": "After eight RNAi feedings, non-neural mag-1+ adhesive gland cells showed normal distribution in fz5/8-4; ndk and wntA; ndk RNAi animals.",
+      "claim_type": "EXPLICIT",
+      "source": "After eight RNAi feedings, a time point at which brain expansion was visible, non-neural mag-1+ adhesive gland cells (Zayas et al., 2010) showed normal distribution (Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "a4ec3d2f-fa7c-4717-b688-5f302b4dc7c7",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C91",
+      "claim": "By 12 RNAi feedings, mag-1+ cells were disorganized in fz5/8-4; ndk and wntA; ndk RNAi animals.",
+      "claim_type": "EXPLICIT",
+      "source": "By 12 RNAi feedings, however, mag-1+ cells were disorganized (Figure 6A, Figure 6\u2014figure supplement 1D), indicating that non-neural head cell types were eventually affected, but not visibly posteriorized, by these RNAi conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6A and Figure 6\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "9d428b23-a8b2-462c-afc0-e0414d8d8602",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C92",
+      "claim": "Non-neural head cell types were eventually affected, but not visibly posteriorized, by fz5/8-4; ndk and wntA; ndk RNAi.",
+      "claim_type": "EXPLICIT",
+      "source": "By 12 RNAi feedings, however, mag-1+ cells were disorganized (Figure 6A, Figure 6\u2014figure supplement 1D), indicating that non-neural head cell types were eventually affected, but not visibly posteriorized, by these RNAi conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the disorganization of mag-1+ cells without obvious posteriorization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "8bc1ec0a-1587-4ced-bf0e-a1a93a5f2a4a",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C93",
+      "claim": "Anterior-most (sFRP-1 and ndl-4) and posterior (wntP-2, wnt11-1, and wnt11-2) mRG expression domains did not visibly change in fz5/8-4; ndk RNAi or wntA; ndk double RNAi animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Anterior-most (sFRP-1 and ndl-4) and posterior (wntP-2, wnt11-1, and wnt11-2) mRG expression domains did not visibly change in fz5/8\u20134; ndk RNAi or wntA; ndk double RNAi animals, even under strong RNAi conditions (12 RNAi feedings, multiple ectopic eyes) (Figure 6B,C, Figure 6\u2014figure supplement 1B\u2013D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6B,C and Figure 6\u2014figure supplement 1B\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "5567fa50-c29b-4c99-9c68-a953c80f3c92",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C94",
+      "claim": "ndl-2 expression was expanded into the pre-pharyngeal region after eight RNAi feedings in fz5/8-4; ndk and wntA; ndk RNAi animals.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, ndl-2 expression, which is normally restricted to a domain immediately posterior to the eyes, was expanded into the pre-pharyngeal region after eight RNAi feedings (Figure 6B,E), and showed a more severe posterior expansion after 12 RNAi feedings (Figure 6\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6B,E and Figure 6\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "a01efebc-d77f-4a5d-874f-80775c54d00d",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C95",
+      "claim": "ndl-5, ndk, and wnt2 expression domains extended posteriorly into the pre-pharyngeal region in RNAi animals with strong phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, ndl-5, ndk, and wnt2 expression domains extended posteriorly into the pre-pharyngeal region in RNAi animals with strong phenotypes (Figure 6A,D, Figure 6\u2014figure supplement 1C,E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6A,D and Figure 6\u2014figure supplement 1C,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "a04b021f-b9b4-47ec-857e-8884e9ec3a58",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C96",
+      "claim": "The anterior end of the pre-pharyngeal ndl-3 expression domain was significantly posterior-shifted in fz5/8-4; ndk and wntA; ndk RNAi animals.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, the anterior end of the pre-pharyngeal ndl-3 expression domain was significantly posterior-shifted (Figure 6C,F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 6C,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "21dc3644-3021-47a6-9f56-d4a741b1b9c4",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C97",
+      "claim": "ndk, wntA, and fz5/8-4 are required to restrict anterior tissues and associated expression domains of mRGs to the head region, while leaving the anterior tip, trunk, and tail mRG domains unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that ndk, wntA, and fz5/8\u20134 are required to restrict anterior tissues and associated expression domains of mRGs to the head region, while leaving the anterior tip, trunk, and tail mRG domains unaffected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the selective changes in mRG expression shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "46209dd2-29f8-4502-a643-038f60e52c8c",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C98",
+      "claim": "Planarian muscle was previously found to express several genes with known roles in adult tissue patterning in planarians.",
+      "claim_type": "EXPLICIT",
+      "source": "Planarian muscle was previously found to express several genes with known roles in adult tissue patterning in planarians, raising the possibility that muscle functions to produce a body-wide coordinate system of positional information (Witchley et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact from prior work, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "b2d28bd8-6d45-4b2b-895c-952712ab70d5",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C99",
+      "claim": "Traditional RNA sequencing approaches to identifying candidate adult positional information in planarians is limited by the diversity of gene expression in heterogeneous tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditional RNA sequencing approaches to identifying candidate adult positional information in planarians is limited by the diversity of gene expression in heterogeneous tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the limitations of traditional approaches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "357e8b34-cd0b-4356-bcbe-4ae8c2d48cf7",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C100",
+      "claim": "The identification of a particular cell type expressing genes associated with regional tissue identity allowed application of regional single-cell sequencing to surmount the challenge of tissue heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "The identification of a particular cell type expressing genes associated with regional tissue identity allowed application of regional single-cell sequencing to surmount this challenge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the rationale for the experimental approach used in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "f58b434c-09bc-4e27-a133-d2c672ae640a",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C101",
+      "claim": "Coordinate systems of positional information might exist within adult tissues of many animals, including humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Coordinate systems of positional information, such as those proposed to control embryonic development (De Robertis et al., 2000; Petersen and Reddien, 2009b; Niehrs, 2010), might exist within adult tissues of many animals, including humans (Rinn et al., 2006), however there is little functional data regarding positional information and maintenance of the adult body plan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on prior work, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "0d3221a1-9b0f-4566-a8da-38b9d591e941",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C102",
+      "claim": "There is little functional data regarding positional information and maintenance of the adult body plan.",
+      "claim_type": "EXPLICIT",
+      "source": "Coordinate systems of positional information, such as those proposed to control embryonic development (De Robertis et al., 2000; Petersen and Reddien, 2009b; Niehrs, 2010), might exist within adult tissues of many animals, including humans (Rinn et al., 2006), however there is little functional data regarding positional information and maintenance of the adult body plan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "99a72142-f666-4528-8e92-b7366da40fce",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C103",
+      "claim": "Both the planarian head and trunk require an FGFRL-Wnt circuit to maintain adult regional tissue identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that both the planarian head and trunk require an FGFRL-Wnt circuit to maintain adult regional tissue identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a major conclusion of the study, supported by the functional data in Figures 3-6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "02d6831f-bd37-4758-87f5-8a98c7c26a82",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C104",
+      "claim": "Different FGFRL and Wnt genes are used in the two body locations (head and trunk).",
+      "claim_type": "EXPLICIT",
+      "source": "Different FGFRL and Wnt genes are used in the two body locations; however, in both cases, an FGFRL expression domain is juxtaposed by a posterior Wnt expression domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by the expression analysis in Figure 2 and the functional analysis in Figures 3-6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "7eeb6287-ef53-429a-9a87-dec2ee827d32",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C105",
+      "claim": "In both head and trunk FGFRL-Wnt circuits, an FGFRL expression domain is juxtaposed by a posterior Wnt expression domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Different FGFRL and Wnt genes are used in the two body locations; however, in both cases, an FGFRL expression domain is juxtaposed by a posterior Wnt expression domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by the expression analysis in Figure 2 and Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "b3c1ffb7-a859-4111-adcb-885b182b7a11",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C106",
+      "claim": "Inhibition of either gene (FGFRL or Wnt) in the two circuits caused posterior expansion and sequential duplications of structures normally found within the head and trunk regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, inhibition of either gene (FGFRL or Wnt) caused posterior expansion and sequential duplications of structures normally found within the head and trunk regions, resulting in expanded brain and ectopic eyes in one case, and ectopic pharynges and mouths in the other (Figure 7B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figures 3 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "64459bad-d648-421b-8438-fc1ccfa7d7e0",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C107",
+      "claim": "Following inhibition of any of the components of these FGFRL-Wnt circuits, the axial expression map shows local shifts in expression domains coincident with the expansion of specific regionally restricted tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Following inhibition of any of the components of these FGFRL-Wnt circuits, the axial expression map shows local shifts in expression domains coincident with the expansion of specific regionally restricted tissues such as brain and pharynx (Figure 7B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figures 4 and 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "8ac1cd67-98f5-474c-8cba-ee36afe309ec",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C108",
+      "claim": "Muscle marks different AP regions through combinatorial expression of mRGs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that muscle, a tissue found uniformly throughout the animal, marks different AP regions through combinatorial expression of mRGs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the expression analysis in Figure 2 showing combinatorial expression of mRGs in muscle cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "4a5cc698-c41e-4cc7-b35d-aecc2cc0d18f",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C109",
+      "claim": "Communication exists between muscle cells and the underlying region-specific tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that communication exists between muscle cells and the underlying region-specific tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that muscle expresses patterning genes and regional tissues are affected by their inhibition.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "1e722755-4e78-41a9-a0e6-77281b32eca5",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C110",
+      "claim": "Positional information must be integrated into the decision to generate and pattern new tissue during planarian growth and regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Positional information must be integrated into the decision to generate and pattern new tissue during planarian growth and regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about how positional information functions in planarians.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "d8c634a6-52da-488f-b170-46ccec7546b6",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C111",
+      "claim": "mRGs might influence the regional behavior of neoblasts and/or their division progeny.",
+      "claim_type": "EXPLICIT",
+      "source": "mRGs might therefore influence the regional behavior of neoblasts and/or their division progeny.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the mechanism by which mRGs affect tissue patterning.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "750e44f7-611e-483a-8356-83abebbe9c52",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C112",
+      "claim": "The two FGFRL-Wnt circuits described in this work are striking examples of body plan plasticity during homeostatic tissue turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "The two FGFRL-Wnt circuits described in this work are striking examples of body plan plasticity during homeostatic tissue turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization of the findings based on the observation that ectopic structures form during tissue turnover.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "fc5e650e-f9aa-40fb-8910-ba3a6479b932",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C113",
+      "claim": "In both FGFRL-Wnt circuits, inhibition by RNAi of FGFRL genes and inhibition of Wnt pathway components are coincident with the same phenotype of expanded regional identity.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, inhibition by RNAi of FGFRL genes (i.e., reduction or absence of the FGFRL expression domain) and inhibition of Wnt pathway components (i.e., expansion of the FGFRL expression domain) are coincident with the same phenotype of expanded regional identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the RNAi experiments shown in Figures 3 and 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "31b2a22d-13b6-424b-830a-04bb1b178b9e",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C114",
+      "claim": "FGFRL proteins confine the regions where specific tissues in both the head and trunk can normally form.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that FGFRL proteins confine the regions where specific tissues in both the head and trunk can normally form and that the Wnt gene of each circuit acts by restricting tissues at the anterior end of its expression domain (Figure 7B,C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the expression and functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "2e14b34c-1622-484a-9195-77cf51367533",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C115",
+      "claim": "The Wnt gene of each FGFRL-Wnt circuit acts by restricting tissues at the anterior end of its expression domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that FGFRL proteins confine the regions where specific tissues in both the head and trunk can normally form and that the Wnt gene of each circuit acts by restricting tissues at the anterior end of its expression domain (Figure 7B,C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the expression and functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "6b06ce63-043a-4a08-bd6a-73c716662583",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C116",
+      "claim": "FGFRL-Wnt circuits might be broadly utilized, but presently underappreciated, patterning modules of animal body plans.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the similarities of the distinct FGFRL-Wnt circuits for patterning two different body regions, FGFRL-Wnt circuits might be broadly utilized, but presently underappreciated, patterning modules of animal body plans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the broader significance of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "06794de5-91d1-49ab-9528-1bd23697967a",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "claim_id": "C117",
+      "claim": "Asexual Schmidtea mediterranea strain (CIW4) animals starved 7\u201314 days prior to experiments were used.",
+      "claim_type": "EXPLICIT",
+      "source": "Asexual Schmidtea mediterranea strain (CIW4) animals starved 7\u201314 days prior experiments were used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental animals used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a6ed5e16-2722-49f7-9d1f-d5588de2143c",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Single-cell RNA-sequencing of 115 muscle cells from 10 AP regions identified 44 regionally expressed genes (mRGs), including multiple Wnt and FGFRL genes. The approach involved FACS isolation, qRT-PCR screening for muscle markers, PCA-based cell identification, and ISH validation, with 26 genes being newly identified as regionally expressed in muscle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C27-C35 collectively describe a well-executed experimental workflow with appropriate quality controls (C28, C29, C31, C32), validation by ISH (C33, C34), and spatial coherence demonstrated by hierarchical clustering (C35). The methodology is clearly described with sufficient detail for reproducibility, and the identification of 44 mRGs is supported by multiple lines of evidence including sequencing data, statistical analysis, and ISH validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "6e59d304-e8c2-4862-85e8-9e43d2a7b59f",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The 44 identified mRGs are predominantly Wnt-signaling components, Hox transcription factors, and FGFRL proteins. All six planarian FGFRL genes were identified as AP mRGs, with extensive co-expression of multiple mRGs observed in single muscle cells across the AP axis, including co-expression of FGFRL and Wnt-pathway genes in overlapping expression domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C44 are well-supported by the data shown in Figures 1E, 2B, and 2C. The compositional analysis (C36) is directly shown in Figure 1E, the identification of all six FGFRL genes (C38, C39) is demonstrated in the phylogenetic analysis and expression data, and co-expression patterns (C40-C44) are validated by both single-cell sequencing heatmaps and FISH experiments showing spatial overlap.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "8516f31e-3dad-4311-a4ee-c94806474c55",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "\u03b2-catenin-1 RNAi causes ectopic head formation during tissue turnover, accompanied by temporal changes in FGFRL expression domains. Early timepoints show subtle posterior expansions of ndl-5 and ndl-2, followed by ectopic ndl-5 expression preceding ndl-2, and finally ectopic ndl-3 expression in fully formed ectopic heads.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C49 describe a temporal progression of gene expression changes that correlate with anatomical changes. C45 is supported by prior literature citations, while C46-C48 are demonstrated in Figure 2\u2014figure supplement 3 showing the sequential expression changes. C49 appropriately infers coordination between anatomical and molecular changes based on the temporal data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "2b5eb76f-3fc0-48cf-8f61-b66af521de15",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "RNAi of single or combinations of Hox genes and a subset of FGFRL genes (ndl-1, ndl-2, ndl-4, ndl-5) did not produce robust abnormal phenotypes, and expression of other FGFRL family members was not affected by these RNAi conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 report negative results from the RNAi screen, which are important for understanding gene function. These are supported by Supplementary file 1G (C51, C52) and Figure 2\u2014figure supplement 4 (C53). The lack of phenotype could indicate functional redundancy, insufficient knockdown, or lack of role in the processes examined, but the data are clearly presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "631a991b-44f2-4239-ab3e-b348b34f61d4",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ndl-3 and wntP-2 inhibition causes ectopic mouth and pharynx formation in the trunk region. The phenotype emerges during both tissue turnover and regeneration, with double RNAi showing synergistic effects. Ectopic pharynges are functional, displaying independent food-searching behavior, and always integrate into the intestine through esophagi despite variable positioning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C62, C66-C69 describe a striking trunk patterning phenotype with strong experimental support. The phenotype is demonstrated in multiple figures (Figure 3A-D, Figure 3\u2014figure supplement 1), synergy is statistically validated (C60, Fisher's exact test), functionality is shown in Video 1 (C68, C69), and tissue organization plasticity is documented (C67). The convergent evidence from multiple experimental approaches strongly supports these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "296b7200-085e-4729-8bb0-0aefbc0067f3",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "ndl-3 and wntP-2 RNAi causes selective changes in trunk mRG expression domains without affecting head or tail patterns. The ndl-3 domain expands posteriorly in wntP-2 RNAi, while wntP-2 expression is reduced in ndl-3 RNAi, indicating that these genes are required for maintaining normal trunk tissue pattern but not head or tail patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C77 describe region-specific effects on the mRG expression map, supported by FISH data in Figure 4 and Figure 4\u2014figure supplement 1. The selective nature of the changes (anterior-most and posterior domains unchanged, trunk domains affected) is clearly demonstrated with quantification. The inference that effects are local to the trunk (C76, C77) is well-supported by the spatial specificity of the observed changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "20ade974-389f-4a94-b489-199069f1b95e",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "fz5/8-4, ndk, and wntA control head patterning in planarians. RNAi of these genes causes ectopic eye formation and posterior brain expansion in both uninjured and regenerating animals, with double RNAi showing synergistic effects. Multiple neuron classes from different head regions expand posteriorly, suggesting expansion of the entire head-restricted nervous system. Multiple FGFRL genes synergize with ndk to control head pattern.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C89 describe a head patterning circuit with strong experimental support. The phenotypes are demonstrated in Figure 5 with statistical validation of synergy (C85, Fisher's exact test p<0.0001). The expansion of multiple neuron classes (C88) is shown in Figure 5B,C and Figure 5\u2014figure supplement 1E,F, and the inference of whole nervous system expansion (C89) is reasonable given the diversity of affected neuron types. The synergy of multiple FGFRL genes (C86, C87) is demonstrated in Figure 5\u2014figure supplement 1D.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "be4b8309-f750-423c-8e47-01b49a8fd9dd",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Non-neural head cell types (mag-1+ adhesive gland cells) show normal distribution after 8 RNAi feedings but become disorganized by 12 feedings in fz5/8-4; ndk and wntA; ndk RNAi animals, indicating eventual effects on non-neural head cells without visible posteriorization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C92 describe temporal effects on non-neural head cells, supported by Figure 6\u2014figure supplement 1A (C90) and Figure 6A, Figure 6\u2014figure supplement 1D (C91). The inference that non-neural cells are affected but not posteriorized (C92) is reasonable based on the disorganization without obvious posterior expansion. This temporal analysis strengthens understanding of the phenotype progression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "ab512d91-fd10-44a1-9d6b-dd4e882b0eeb",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In fz5/8-4; ndk and wntA; ndk RNAi animals, anterior-most and posterior mRG domains remain unchanged, while head-region mRGs (ndl-2, ndl-5, ndk, wnt2) expand posteriorly and the pre-pharyngeal ndl-3 domain shifts posteriorly. These genes are required to restrict anterior tissues and mRG expression domains to the head region while leaving anterior tip, trunk, and tail domains unaffected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C97 describe selective regional effects on the mRG expression map in head patterning mutants, supported by FISH data in Figure 6 and Figure 6\u2014figure supplement 1. The spatial specificity (unchanged anterior-most and posterior domains, expanded head domains, shifted pre-pharyngeal domain) is clearly demonstrated with quantification. The inference about gene function (C97) is well-supported by the pattern of selective changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "e8b410e3-a561-4de6-b91e-ef1bee6f1680",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Two distinct FGFRL-Wnt circuits control planarian head and trunk patterning. Different FGFRL and Wnt genes are used in the two locations, but both involve juxtaposed anterior FGFRL and posterior Wnt expression domains. Inhibition of either component causes posterior expansion and sequential duplications of region-specific structures, with local shifts in mRG expression domains. The authors propose that FGFRL proteins confine regions where specific tissues can form, while Wnt genes restrict tissues at the anterior end of their expression domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C103-C109, C113-C115 synthesize the major findings into a coherent model. The existence of two circuits is supported by the parallel phenotypes (trunk: C55-C69; head: C78-C89), the juxtaposed expression patterns are demonstrated in Figure 2 and Figure 7C (C105), and the local shifts in expression domains are shown in Figures 4 and 6 (C107). The proposed model (C114, C115) is reasonable given the data, though marked as containing speculation in the evidence type, appropriately reflecting its interpretive nature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    },
+    {
+      "id": "32f522a3-16ee-4044-a13c-8deed265eff9",
+      "content_id": "8d17269d-1264-4a92-b5cf-04820ffc6fe4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors propose that FGFRL-Wnt circuits operate within a body-wide coordinate system to control adult axial positioning in planarians. The axial expression map in muscle is reminiscent of embryonic developmental patterns in other species. Regional single-cell sequencing overcame limitations of traditional approaches for identifying positional information genes. The findings may have broader implications for understanding adult positional information systems in other animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C11, C37, C50, C98-C102, C110-C112, C116 contain a mix of well-supported conclusions and speculative interpretations. The existence of the circuits and their roles in patterning are well-supported (C11, C37), and the methodological innovation is clear (C99, C100). However, several claims involve speculation about broader implications (C101, C116) or mechanisms (C110, C111) that require additional experimental validation. The comparison to embryonic patterns (C50) is reasonable but interpretive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:21:39.822966Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c67ee213-53dd-4a6f-987f-3a8697d03e9d",
+      "result_id": "a6ed5e16-2722-49f7-9d1f-d5588de2143c"
+    },
+    {
+      "claim_id": "412b847d-db98-42dd-80d3-cb89b6286759",
+      "result_id": "a6ed5e16-2722-49f7-9d1f-d5588de2143c"
+    },
+    {
+      "claim_id": "8d21f80c-a311-498a-bf27-2f009d58f5d8",
+      "result_id": "a6ed5e16-2722-49f7-9d1f-d5588de2143c"
+    },
+    {
+      "claim_id": "4d9968e3-cb17-40de-83c2-fc54bbb654c1",
+      "result_id": "a6ed5e16-2722-49f7-9d1f-d5588de2143c"
+    },
+    {
+      "claim_id": "22e1191c-205d-44fb-93b7-a0cf53cf8862",
+      "result_id": "a6ed5e16-2722-49f7-9d1f-d5588de2143c"
+    },
+    {
+      "claim_id": "df300e2b-caf1-46a9-917f-56d60106f080",
+      "result_id": "a6ed5e16-2722-49f7-9d1f-d5588de2143c"
+    },
+    {
+      "claim_id": "5822952b-1005-4f78-80cc-2765fc557cfe",
+      "result_id": "a6ed5e16-2722-49f7-9d1f-d5588de2143c"
+    },
+    {
+      "claim_id": "d2349588-40d4-412b-bc2a-52086c72943b",
+      "result_id": "a6ed5e16-2722-49f7-9d1f-d5588de2143c"
+    },
+    {
+      "claim_id": "2fc86a78-4456-42a4-9ce5-9d6a5f18fe95",
+      "result_id": "a6ed5e16-2722-49f7-9d1f-d5588de2143c"
+    },
+    {
+      "claim_id": "960b65fe-1592-42a7-b44e-3593df7e267d",
+      "result_id": "a6ed5e16-2722-49f7-9d1f-d5588de2143c"
+    },
+    {
+      "claim_id": "081a5840-39db-4ff9-aac1-42d75156d599",
+      "result_id": "a6ed5e16-2722-49f7-9d1f-d5588de2143c"
+    },
+    {
+      "claim_id": "0903782e-4283-4121-b7ee-82848b775c13",
+      "result_id": "6e59d304-e8c2-4862-85e8-9e43d2a7b59f"
+    },
+    {
+      "claim_id": "9edf8ab8-0e65-4950-9205-8ff242f78414",
+      "result_id": "6e59d304-e8c2-4862-85e8-9e43d2a7b59f"
+    },
+    {
+      "claim_id": "d45623f9-63c7-4960-88b5-a655e430a328",
+      "result_id": "6e59d304-e8c2-4862-85e8-9e43d2a7b59f"
+    },
+    {
+      "claim_id": "fd9b0742-7583-4396-a43d-021ac0baa9ca",
+      "result_id": "6e59d304-e8c2-4862-85e8-9e43d2a7b59f"
+    },
+    {
+      "claim_id": "b30c3967-403a-4880-a4f2-5dffad10da68",
+      "result_id": "6e59d304-e8c2-4862-85e8-9e43d2a7b59f"
+    },
+    {
+      "claim_id": "b5e4474e-ab92-4cca-b833-0672d401576e",
+      "result_id": "6e59d304-e8c2-4862-85e8-9e43d2a7b59f"
+    },
+    {
+      "claim_id": "d9b98118-529f-4778-8e70-0dec26f3a63c",
+      "result_id": "6e59d304-e8c2-4862-85e8-9e43d2a7b59f"
+    },
+    {
+      "claim_id": "55bd43b1-698a-4461-bea6-b85fe60619d4",
+      "result_id": "6e59d304-e8c2-4862-85e8-9e43d2a7b59f"
+    },
+    {
+      "claim_id": "c9ee421f-ede2-4eb2-89e2-2d1502958caa",
+      "result_id": "6e59d304-e8c2-4862-85e8-9e43d2a7b59f"
+    },
+    {
+      "claim_id": "6a2669da-96c9-49d2-8ec9-7a998f63197e",
+      "result_id": "8516f31e-3dad-4311-a4ee-c94806474c55"
+    },
+    {
+      "claim_id": "e86e8495-4c6c-41d5-857c-ac1926f3553d",
+      "result_id": "8516f31e-3dad-4311-a4ee-c94806474c55"
+    },
+    {
+      "claim_id": "8a8076c1-35e9-4365-8559-54c7aec704aa",
+      "result_id": "8516f31e-3dad-4311-a4ee-c94806474c55"
+    },
+    {
+      "claim_id": "6d34bd46-9aa4-4c2a-bc82-f333cf5dd1cd",
+      "result_id": "8516f31e-3dad-4311-a4ee-c94806474c55"
+    },
+    {
+      "claim_id": "4c02130d-3f83-4919-99ba-fa104ed1afae",
+      "result_id": "8516f31e-3dad-4311-a4ee-c94806474c55"
+    },
+    {
+      "claim_id": "94b92368-4075-4703-8aec-5390e17a92bc",
+      "result_id": "2b5eb76f-3fc0-48cf-8f61-b66af521de15"
+    },
+    {
+      "claim_id": "061e802b-ec27-4f01-a857-517f230448c1",
+      "result_id": "2b5eb76f-3fc0-48cf-8f61-b66af521de15"
+    },
+    {
+      "claim_id": "5d17db0d-dd3e-49b0-b900-554e815a7530",
+      "result_id": "2b5eb76f-3fc0-48cf-8f61-b66af521de15"
+    },
+    {
+      "claim_id": "61a6f8a2-d8e5-4f5b-826e-43baa5e54c2d",
+      "result_id": "631a991b-44f2-4239-ab3e-b348b34f61d4"
+    },
+    {
+      "claim_id": "fcb818bf-ad8a-4164-9d54-2ace93fe71e6",
+      "result_id": "631a991b-44f2-4239-ab3e-b348b34f61d4"
+    },
+    {
+      "claim_id": "bc89ae13-dee9-46b2-afb3-5bd4c7a3d35a",
+      "result_id": "631a991b-44f2-4239-ab3e-b348b34f61d4"
+    },
+    {
+      "claim_id": "2b105eee-fd4d-4d4c-b057-c0d6a6e4b58b",
+      "result_id": "631a991b-44f2-4239-ab3e-b348b34f61d4"
+    },
+    {
+      "claim_id": "38beedbc-21d4-457d-851c-65a30d4256a2",
+      "result_id": "631a991b-44f2-4239-ab3e-b348b34f61d4"
+    },
+    {
+      "claim_id": "9c1b5e07-9f6a-44d5-ae00-71e092ed26f3",
+      "result_id": "631a991b-44f2-4239-ab3e-b348b34f61d4"
+    },
+    {
+      "claim_id": "a80fdd63-9d25-4049-a355-2d61e7e575b6",
+      "result_id": "631a991b-44f2-4239-ab3e-b348b34f61d4"
+    },
+    {
+      "claim_id": "8624b361-9ab0-4589-a32d-b21a67a8f6d3",
+      "result_id": "631a991b-44f2-4239-ab3e-b348b34f61d4"
+    },
+    {
+      "claim_id": "b128bbe9-ec89-4bf1-9d4d-6d1fc60e8090",
+      "result_id": "631a991b-44f2-4239-ab3e-b348b34f61d4"
+    },
+    {
+      "claim_id": "e84c42a4-6993-4227-a24b-b16d585b0c8e",
+      "result_id": "631a991b-44f2-4239-ab3e-b348b34f61d4"
+    },
+    {
+      "claim_id": "713a4818-30dc-46ee-b32f-d5da9e5940a9",
+      "result_id": "631a991b-44f2-4239-ab3e-b348b34f61d4"
+    },
+    {
+      "claim_id": "3775552d-94cb-4e51-8004-f6f823e2cbcc",
+      "result_id": "631a991b-44f2-4239-ab3e-b348b34f61d4"
+    },
+    {
+      "claim_id": "626f7c6e-ea86-404e-ad4d-87357c41ab4f",
+      "result_id": "631a991b-44f2-4239-ab3e-b348b34f61d4"
+    },
+    {
+      "claim_id": "3946ea0d-1006-4ce2-a630-73f7323acaa7",
+      "result_id": "296b7200-085e-4729-8bb0-0aefbc0067f3"
+    },
+    {
+      "claim_id": "0dcccb30-bd58-4f6c-9a8b-ffe229d2224c",
+      "result_id": "296b7200-085e-4729-8bb0-0aefbc0067f3"
+    },
+    {
+      "claim_id": "672811a6-40dc-462a-8a3b-d71a77a1e931",
+      "result_id": "296b7200-085e-4729-8bb0-0aefbc0067f3"
+    },
+    {
+      "claim_id": "a89cdefd-2763-47b3-aae3-9705e38c781a",
+      "result_id": "296b7200-085e-4729-8bb0-0aefbc0067f3"
+    },
+    {
+      "claim_id": "944aa648-1040-465e-a64c-7a4cc58927bf",
+      "result_id": "296b7200-085e-4729-8bb0-0aefbc0067f3"
+    },
+    {
+      "claim_id": "79341480-dfa3-4fb4-a8df-edc35dbfabba",
+      "result_id": "296b7200-085e-4729-8bb0-0aefbc0067f3"
+    },
+    {
+      "claim_id": "d388468b-f432-4550-86cb-46b5c18e0708",
+      "result_id": "296b7200-085e-4729-8bb0-0aefbc0067f3"
+    },
+    {
+      "claim_id": "ec0ce2af-97d6-40bf-8c98-90df15605421",
+      "result_id": "296b7200-085e-4729-8bb0-0aefbc0067f3"
+    },
+    {
+      "claim_id": "190a3767-4ff5-4bf0-9d69-a0d66e0905f5",
+      "result_id": "20ade974-389f-4a94-b489-199069f1b95e"
+    },
+    {
+      "claim_id": "4c63a858-0626-471f-8ca8-c98f70cae0b7",
+      "result_id": "20ade974-389f-4a94-b489-199069f1b95e"
+    },
+    {
+      "claim_id": "504e3c8a-f56d-4717-86a1-2eaa63363b80",
+      "result_id": "20ade974-389f-4a94-b489-199069f1b95e"
+    },
+    {
+      "claim_id": "17008b42-7f1e-4196-bbba-a0829650941c",
+      "result_id": "20ade974-389f-4a94-b489-199069f1b95e"
+    },
+    {
+      "claim_id": "918b5882-1678-4b84-a6cf-a4198e285d7e",
+      "result_id": "20ade974-389f-4a94-b489-199069f1b95e"
+    },
+    {
+      "claim_id": "00a8133c-d596-483a-aca8-11cd9c91caeb",
+      "result_id": "20ade974-389f-4a94-b489-199069f1b95e"
+    },
+    {
+      "claim_id": "c085d204-b916-4158-b4eb-a33cb266268a",
+      "result_id": "20ade974-389f-4a94-b489-199069f1b95e"
+    },
+    {
+      "claim_id": "b17e9e57-9b6a-4aa3-bb9a-639c97bb32a9",
+      "result_id": "20ade974-389f-4a94-b489-199069f1b95e"
+    },
+    {
+      "claim_id": "a8b97b3c-bec7-4b68-989d-ded95cb3f225",
+      "result_id": "20ade974-389f-4a94-b489-199069f1b95e"
+    },
+    {
+      "claim_id": "2d850cb9-c69a-4b33-bf76-cf42cb87a3fe",
+      "result_id": "20ade974-389f-4a94-b489-199069f1b95e"
+    },
+    {
+      "claim_id": "644ca13b-daad-4f17-887f-9c8934d6b135",
+      "result_id": "20ade974-389f-4a94-b489-199069f1b95e"
+    },
+    {
+      "claim_id": "57011d50-72bc-480d-a596-3105167439c4",
+      "result_id": "20ade974-389f-4a94-b489-199069f1b95e"
+    },
+    {
+      "claim_id": "7fb88775-1e0d-4e47-8717-fcb0d225ef79",
+      "result_id": "be4b8309-f750-423c-8e47-01b49a8fd9dd"
+    },
+    {
+      "claim_id": "a4ec3d2f-fa7c-4717-b688-5f302b4dc7c7",
+      "result_id": "be4b8309-f750-423c-8e47-01b49a8fd9dd"
+    },
+    {
+      "claim_id": "9d428b23-a8b2-462c-afc0-e0414d8d8602",
+      "result_id": "be4b8309-f750-423c-8e47-01b49a8fd9dd"
+    },
+    {
+      "claim_id": "8bc1ec0a-1587-4ced-bf0e-a1a93a5f2a4a",
+      "result_id": "ab512d91-fd10-44a1-9d6b-dd4e882b0eeb"
+    },
+    {
+      "claim_id": "5567fa50-c29b-4c99-9c68-a953c80f3c92",
+      "result_id": "ab512d91-fd10-44a1-9d6b-dd4e882b0eeb"
+    },
+    {
+      "claim_id": "a01efebc-d77f-4a5d-874f-80775c54d00d",
+      "result_id": "ab512d91-fd10-44a1-9d6b-dd4e882b0eeb"
+    },
+    {
+      "claim_id": "a04b021f-b9b4-47ec-857e-8884e9ec3a58",
+      "result_id": "ab512d91-fd10-44a1-9d6b-dd4e882b0eeb"
+    },
+    {
+      "claim_id": "21dc3644-3021-47a6-9f56-d4a741b1b9c4",
+      "result_id": "ab512d91-fd10-44a1-9d6b-dd4e882b0eeb"
+    },
+    {
+      "claim_id": "5be86db6-1b35-404d-a51d-73f8ff5fb877",
+      "result_id": "e8b410e3-a561-4de6-b91e-ef1bee6f1680"
+    },
+    {
+      "claim_id": "99a72142-f666-4528-8e92-b7366da40fce",
+      "result_id": "e8b410e3-a561-4de6-b91e-ef1bee6f1680"
+    },
+    {
+      "claim_id": "02d6831f-bd37-4758-87f5-8a98c7c26a82",
+      "result_id": "e8b410e3-a561-4de6-b91e-ef1bee6f1680"
+    },
+    {
+      "claim_id": "7eeb6287-ef53-429a-9a87-dec2ee827d32",
+      "result_id": "e8b410e3-a561-4de6-b91e-ef1bee6f1680"
+    },
+    {
+      "claim_id": "b3c1ffb7-a859-4111-adcb-885b182b7a11",
+      "result_id": "e8b410e3-a561-4de6-b91e-ef1bee6f1680"
+    },
+    {
+      "claim_id": "64459bad-d648-421b-8438-fc1ccfa7d7e0",
+      "result_id": "e8b410e3-a561-4de6-b91e-ef1bee6f1680"
+    },
+    {
+      "claim_id": "8ac1cd67-98f5-474c-8cba-ee36afe309ec",
+      "result_id": "e8b410e3-a561-4de6-b91e-ef1bee6f1680"
+    },
+    {
+      "claim_id": "4a5cc698-c41e-4cc7-b35d-aecc2cc0d18f",
+      "result_id": "e8b410e3-a561-4de6-b91e-ef1bee6f1680"
+    },
+    {
+      "claim_id": "fc5e650e-f9aa-40fb-8910-ba3a6479b932",
+      "result_id": "e8b410e3-a561-4de6-b91e-ef1bee6f1680"
+    },
+    {
+      "claim_id": "31b2a22d-13b6-424b-830a-04bb1b178b9e",
+      "result_id": "e8b410e3-a561-4de6-b91e-ef1bee6f1680"
+    },
+    {
+      "claim_id": "2e14b34c-1622-484a-9195-77cf51367533",
+      "result_id": "e8b410e3-a561-4de6-b91e-ef1bee6f1680"
+    },
+    {
+      "claim_id": "761774c0-c6ec-4e40-9356-decbfebc1582",
+      "result_id": "32f522a3-16ee-4044-a13c-8deed265eff9"
+    },
+    {
+      "claim_id": "9edf8ab8-0e65-4950-9205-8ff242f78414",
+      "result_id": "32f522a3-16ee-4044-a13c-8deed265eff9"
+    },
+    {
+      "claim_id": "230b1d04-b4ba-4ea3-b2b5-f036e5f49152",
+      "result_id": "32f522a3-16ee-4044-a13c-8deed265eff9"
+    },
+    {
+      "claim_id": "46209dd2-29f8-4502-a643-038f60e52c8c",
+      "result_id": "32f522a3-16ee-4044-a13c-8deed265eff9"
+    },
+    {
+      "claim_id": "b2d28bd8-6d45-4b2b-895c-952712ab70d5",
+      "result_id": "32f522a3-16ee-4044-a13c-8deed265eff9"
+    },
+    {
+      "claim_id": "357e8b34-cd0b-4356-bcbe-4ae8c2d48cf7",
+      "result_id": "32f522a3-16ee-4044-a13c-8deed265eff9"
+    },
+    {
+      "claim_id": "f58b434c-09bc-4e27-a133-d2c672ae640a",
+      "result_id": "32f522a3-16ee-4044-a13c-8deed265eff9"
+    },
+    {
+      "claim_id": "0d3221a1-9b0f-4566-a8da-38b9d591e941",
+      "result_id": "32f522a3-16ee-4044-a13c-8deed265eff9"
+    },
+    {
+      "claim_id": "1e722755-4e78-41a9-a0e6-77281b32eca5",
+      "result_id": "32f522a3-16ee-4044-a13c-8deed265eff9"
+    },
+    {
+      "claim_id": "d8c634a6-52da-488f-b170-46ccec7546b6",
+      "result_id": "32f522a3-16ee-4044-a13c-8deed265eff9"
+    },
+    {
+      "claim_id": "750e44f7-611e-483a-8356-83abebbe9c52",
+      "result_id": "32f522a3-16ee-4044-a13c-8deed265eff9"
+    },
+    {
+      "claim_id": "6b06ce63-043a-4a08-bd6a-73c716662583",
+      "result_id": "32f522a3-16ee-4044-a13c-8deed265eff9"
+    }
+  ],
+  "comparisons": []
+}

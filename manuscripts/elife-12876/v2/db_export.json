@@ -1,0 +1,1818 @@
+{
+  "submission": {
+    "id": "389b68c7-00fd-42a4-b9d2-b7f2c956bac1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:02:14.137943Z",
+    "updated_at": "2025-11-29T23:02:14.137943Z"
+  },
+  "content": [
+    {
+      "id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "submission_id": "389b68c7-00fd-42a4-b9d2-b7f2c956bac1",
+      "content_type": "manuscript",
+      "content_text": "# Degradation of Gadd45 mRNA by nonsense-mediated decay is essential for viability\n\n## Authors\n\n- Jonathan O Nelson<sup>1</sup> ([ORCID: 0000-0001-9831-745X](https://orcid.org/0000-0001-9831-745X))\n- Kristin A Moore<sup>2</sup>\n- Alex Chapin<sup>1</sup>\n- Julie Hollien<sup>2</sup>\n- Mark M Metzstein<sup>1</sup> ([ORCID: 0000-0002-4105-2750](https://orcid.org/0000-0002-4105-2750)) \u2020\n\n### Affiliations\n\n1. Department of Human Genetics University of Utah Salt Lake City United States\n2. Department of Biology University of Utah Salt Lake City United States\n3. Center for Cell and Genome Sciences University of Utah Salt Lake City United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe nonsense-mediated mRNA decay (NMD) pathway functions to degrade both abnormal and wild-type mRNAs. NMD is essential for viability in most organisms, but the molecular basis for this requirement is unknown. Here we show that a single, conserved NMD target, the mRNA coding for the stress response factor growth arrest and DNA-damage inducible 45 (GADD45) can account for lethality in Drosophila lacking core NMD genes. Moreover, depletion of Gadd45 in mammalian cells rescues the cell survival defects associated with NMD knockdown. Our findings demonstrate that degradation of Gadd45 mRNA is the essential NMD function and, surprisingly, that the surveillance of abnormal mRNAs by this pathway is not necessarily required for viability.\n\n## Introduction\n\nMaintaining proper gene expression is critical for normal development and physiology. In addition to de novo transcription, mRNA stability substantially contributes to forming the landscape of expression in a cell. The nonsense-mediated mRNA decay (NMD) pathway is a trans-acting mechanism that destabilizes mRNAs, and is best known for its well-described role as a quality control system, degrading abnormal mRNAs containing premature termination codons (PTCs) (Celik et al., 2015). NMD also degrades many wild-type endogenous mRNAs and thus is an important aspect of their post-transcriptional (Peccarelli and Kebaara, 2014). Loss of either of the core NMD genes Upf1 (Rent1) or Upf2 causes lethality in most eukaryotes (Ker\u00e9nyi et al., 2008; Medghalchi et al., 2001; Metzstein and Krasnow, 2006; Weischenfeldt et al., 2008; Wittkopp et al., 2009), indicating regulation of mRNA stability by NMD is critical for viability. However, the relative contributions to lethality from ectopic stabilization of PTC-containing mRNAs or endogenous NMD targets in NMD mutants remains unclear (Hwang and Maquat, 2011).\n\nTo identify which ectopically stabilized mRNAs are responsible for inducing lethality in NMD mutants, we performed an unbiased genetic suppressor screen seeking to restore viability in a Drosophila NMD mutant. To detect subtle increases in survival, we screened to suppress the lethality of animals mutant for the partially viable, hypomorphic Upf225G allele, of which 10% survive to adulthood (Chapin et al., 2014; Metzstein and Krasnow, 2006). We crossed this allele to heterozygous deficiencies to simultaneously reduce the mRNA abundance of several loci (Figure 1A). Of the 376 deficiencies tested, covering more than half the genome, ~10% suppressed NMD mutant lethality (Figure 1B, Figure 1\u2014figure supplement 1A). The suppression effect could not be explained by a reduction in overall mRNA load, as there was only a weak correlation between the increase in mRNAs expressed from a genomic region upon loss of NMD function and the strength of suppression when that region was removed by a deficiency (Figure 1\u2014figure supplement 1B). Rather, deficiencies that suppressed NMD-mutant lethality clustered in three genomic regions (Figure 1\u2014figure supplement 1A). These findings suggest that NMD mutant lethality is not the result of a global excess of nonspecific mRNAs, but rather is mediated by specific genes residing within the few identified regions.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/12876/elife-12876-fig1-v2.jpg)\n\n**Figure 1.:** (A) Scheme to screen deficiencies for the\u00a0suppression of Upf225G partial lethality. The Deficiency Suppression Score (DSS) represents the relative difference in Upf225G viability when crossed to a heterozygous deficiency (Df) compared to when crossed to a balancer (Bal) (See Methods). (B) DSS from 376 screened deficiencies ranked by score. A DSS greater than 0.1 (dotted line) indicates that deficiency suppresses Upf225G lethality. (C and E) Candidate suppressing regions uncovering Gadd45 (C) and Mekk1 (E). DSSs are shown in parenthesis. Dotted lines denote extent of regions deleted by suppressing deficiencies but not non-suppressing deficiencies. Filled blocks on chromosomes indicate predicted gene spans, Gadd45 pathway genes are indicated in red; suppressing deficiencies indicated in green, sple-J1 has undefined breakpoints located within hashed regions. (D and F) NMD mutant adult viability in combination with Gadd45F17 (D) or Mekk1Ur36 (F) mutants. Upf126A and Upf27-5A are null alleles (Frizzell et al., 2012; Metzstein and Krasnow, 2006). p-value compared to controls determined by the test of equal or given proportions indicated. Error bars represent 95% confidence interval of the binomial distribution. n equals total number of animals scored in each cross.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12876/elife-12876-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Map of 376 autosomal DrosDel deficiencies with an isogenic background and molecularly defined breakpoints (Ryder et al., 2007) and eight other deficiencies used to further test candidate suppressing regions without overlapping DrosDel deficiencies. 39 total deficiencies suppress Upf225G lethality, shown in green. Regions deleted by any non-suppressing deficiencies were eliminated as candidate suppressing regions, removing false positives and reducing the size of the candidate intervals. The three candidate suppressing regions that are deleted only by suppressing deficiencies are indicated in black and labeled 1\u20133. (B) Each deficiency\u2019s Deficiency Suppression Score (DSS) compared to percent increase in RNA abundance in Upf225G compared to wild-type from loci removed by that deficiency according to RNA-seq from Chapin et al. (2014). Trend line in red; statistics calculated using Pearson correlation test.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12876/elife-12876-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Gadd45 mRNA expression in adults of the given genotypes measured by qRT-PCR. Gadd45 mRNA expression is increased 16.7-fold in Upf225G mutants, and is eliminated by Gadd45F17 mutants. p-values display one-sided Student\u2019s t-test of indicated condition compared to control. Error bars represent 2 SEM. (B) Fluorescence of GFP transgenes with SV40, Act5C, or Gadd45 3\u2019 UTRs expressed by UAS driven by Actin:GAL4 in Upf2+ or Upf225G third instar larvae. SV40 and Gadd45 3\u2019 UTR constructs show significantly increased fluorescence in Upf225G animals compared to Upf2+, indicating NMD-dependent post-transcriptional degradation of mRNAs containing these UTRs. The Act5C 3\u2019 UTR construct has similar fluorescence in both backgrounds, indicating NMD does not regulate the post-transcriptional stability of this UTR. Micrographs show dorsal views with anterior at top. (C) MAL-A2, traL, and Gadd45 5\u2019 and 3\u2019 fragment mRNA expression measured by qRT-PCR in pcm14 null mutants (Waldron et al., 2015) normalized to controls. Transcript structures of a non-NMD-target, maltase A2 (MAL-A2); a known NMD-targeted transcript, the non-sex specific isoform of transformer (traL) (Rehwinkel, 2005; Metzstein and Krasnow, 2006); and the Gadd45 transcript (note Gadd45 has no introns). Open boxes indicate UTRs; grey boxes indicate coding regions. NMD targeting initiates endonucleolytic cleavage near the stop codon (Gatfield and Izaurralde, 2004), producing 5\u2019 and 3\u2019 fragments with unprotected ends, which are then subjected to degradation by cytoplasmic 3\u2019-to-5\u2019 and 5\u2019-to-3\u2019 exonucleases, respectively. qRT-PCR primer pairs 5\u2019 (red) and 3\u2019 (blue) to the cleavage site can be used to differentially measure the quantity of these fragments. The Drosophila 5\u2019-to-3\u2019 exonuclease is encoded by the XRN1 homologue pacman (pcm), and fragments 3\u2019 to an endonucleolytic NMD cleavage accumulate in Drosophila cells with reduced XRN1 activity (Gatfield and Izaurralde, 2004). The MAL-A2 3\u2019 primers show no difference in relative expression in pcm14 mutants compared to the 5\u2019 primers, while tra and Gadd45 have relatively increased levels of a 3\u2019 fragment in pcm14 mutants, revealing endonucleolytic cleavage has occurred between the primer pairs, probably near the stop codon, indicative of NMD-initiated degradation. p-value between indicated samples using a two-sided Student\u2019s t-test are displayed. ns indicates a p-value greater than 0.05. Error bars represent 2 SEM.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/12876/elife-12876-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Gadd45F17 is an imprecise excision of the P-element P{EPg}HP20647, deleting a 894 bp region that includes the entire Gadd45 coding region. Gadd45E8 is a precise excision of the same P-element, leaving Gadd45 intact. Coding region in grey; untranslated regions in white. Arrowhead indicates direction of transcription. (B) Adult viability of control and Gadd45F17mutants. p = 0.4463 between Gadd45F17 and controls, using the test of equal or given proportions. Error bars represent 95% confidence interval of the binomial distribution. n equals total number of animals scored in each cross.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/12876/elife-12876-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Expression of the endogenous NMD target transcript traL (Rehwinkel, 2005; Metzstein and Krasnow, 2006) in control male, Upf225G/Y, and Upf225G/Y; Gadd45F17animals, measured by qRT-PCR. There is no significant difference in traL expression between Upf225G/Y and Upf225G/Y; Gadd45F17animals. p-values determined by one-sided Student\u2019s t-test between indicated conditions are displayed. ns indicates a p-value greater than 0.05. (B) Relative abundance of PTC-containing Adhn4 (Chia et al., 1987) and dHR783 (Fisk and Thummel, 1998) allele mRNAs compared to wild-type allele mRNA abundance in animals heterozygous for Adhn4or dHR783in each indicated genotype\u00a0(stabilization of dHR783 was not determined in Upf225G/Y; Gadd45F17 animals). Neither reduction nor elimination of Gadd45 restored destabilization of these alleles. p-values determined by two-sided Student\u2019s t-test between indicated conditions are displayed. ns indicates a p-value greater than 0.05. Error represents 2 SEM.\n\nWe expected that any specific genes mediating NMD-mutant lethality would have increased expression levels in an NMD mutant and be a direct NMD target. The only gene located within the suppressing regions to fit these criteria is Gadd45 (Figure 1C, Figure 1\u2014figure supplement 2A\u2013C) (Chapin et al., 2014). To determine if NMD targeting of Gadd45 mRNA is critical for viability, we generated a Gadd45 null allele, F17, which completely removes the Gadd45 coding region (Figure 1\u2014figure supplement 3A) and eliminates Gadd45 mRNA expression (Figure 1\u2014figure supplement 2A). As a heterozygote, Gadd45F17 suppressed Upf225Glethality as strongly as the corresponding deficiency identified by our screen (Figure 1D). We found that Gadd45F17 homozygous mutants are fully viable (Figure 1\u2014figure supplement 3B), allowing us to test complete loss of Gadd45 for the\u00a0suppression of NMD-mutant lethality. Homozygous Gadd45F17 restored full viability to Upf225Gmutants, and remarkably even partially suppressed the complete lethality observed in null Upf1 and Upf2 mutants (Frizzell et al., 2012; Metzstein and Krasnow, 2006) (Figure 1D). Importantly, neither reducing nor eliminating Gadd45 restored NMD function to Upf225G mutants, as measured by the expression of both an endogenous NMD target (Figure 1\u2014figure supplement 4A) and PTC-containing mRNAs (Figure 1\u2014figure supplement 4B).\n\nIn mammals, GADD45 activates the MTK1/MEKK4 kinase in a well-defined stress response pathway (Takekawa and Saito, 1998). Strikingly, the Drosophila MTK1 orthologue, Mekk1, resides within another Upf225G suppressing region (Figure 1E). Similar to Gadd45, we found that Mekk1 null mutants (Inoue et al., 2001) suppressed Upf1 and Upf2 mutant lethality (Figure 1F). This suppression was not as strong as that caused by a loss of Gadd45, revealing that although MEKK1 mediates NMD mutant lethality, it is likely that GADD45 has additional downstream effectors that influence viability. Overall, our findings reveal that increased Gadd45 mRNA stability is the major factor inducing NMD mutant lethality, primarily via increased MEKK1 activity.\n\nActivation of MTK1 in mammals triggers a MAPK signaling cascade that promotes apoptosis (Takekawa and Saito, 1998). Over-expression of Gadd45 in Drosophila also induces apoptosis (Peretz et al., 2007). Interestingly, Drosophila cells lacking NMD function show excess cell death in a variety of tissues (Avery et al., 2011; Frizzell et al., 2012; Metzstein and Krasnow, 2006). To test if increased Gadd45 contributes to this excess death, we used TUNEL staining to examine cell death in wing imaginal discs from Upf225G mutant third instar larvae. This analysis revealed elevated levels of cell death compared to controls (Figure 2A, B, E), and this defect was completely suppressed by Gadd45F17 (Figure 2C\u2013E). To confirm that, this effect was not specific to the Upf2 gene or 25G allele, we examined the wing discs in mutants of another essential NMD gene, Smg5. We found that Smg5 discs also showed elevated TUNEL signal, which was eliminated by loss of Gadd45 (Figure 2\u2014figure supplement 1A\u2013E). These results demonstrate that excess Gadd45 accounts for ectopic cell death in NMD mutant tissues.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/12876/elife-12876-fig2-v2.jpg)\n\n**Figure 2.:** (A\u00a0to D) DAPI (blue) and (A\u2019to D\u2019) TUNEL (red) staining in late 3rd instar larval wing discs from control (A); Upf225G (B); Gadd45F17 (C); and Upf225G; Gadd45F17 (D) animals. (A\u2019\u2019 to D\u2019\u2019) are 4x view of outlined section at the base of the blade of the wing disc from A\u2019-D\u2019, respectively. Scale bar represents 100 \u03bcm. (E) Relative TUNEL signal in control and mutant wing discs, normalized to control. p-value between indicated samples using a two-sided Student\u2019s t-test are displayed. ns indicates a p-value greater than 0.05. Error bars represent 2 SEM. n equals total number of discs scored. (F to I) w- eye clones in Gadd45+ and Gadd45F17 backgrounds. Dashed lines indicate clone boundaries. (J) Quantification of the fraction of the eye composed of w- cells in control and mutant eyes. p-values indicate differences between Gadd45 mutant and control in the same NMD background (indicated by horizontal bars) or NMD mutant and control in the same Gadd45 background (indicated by value above each individual bar), using a two-sided Student\u2019s t-test. ns indicates a p-value greater than 0.05. Error bars represent 2 SEM. n = 20 eyes for all conditions.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12876/elife-12876-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A to D) DAPI (blue) and (A\u2019 to D\u2019) TUNEL (red) staining in late 3rd instar larval wing discs from Smg5G115/+ (A); Smg5G115/C391 (B); Smg5G115/+ Gadd45F17 (C); and Smg5G115/C391 Gadd45F17 (D) animals. Smg5G115 and Smg5C391 are null Smg5 alleles (J.O.N. and M.M.M., unpublished). Scale bar represents 100 \u03bcm. (E) Relative TUNEL signal in wing discs, normalized to Smg5G115/+. p-values determined by two-sided Student\u2019s t-test between indicated conditions are displayed. ns indicates a p-value greater than 0.05. Error bars represent 2 SEM.\n\nTo test if Gadd45-induced cell death is the only cellular defect in NMD mutants, we examined NMD function in the developing eye. NMD is required for proper development of eye cells, as clonal patches of NMD mutant cells in eyes are reduced in size (Frizzell et al., 2012; Metzstein and Krasnow, 2006). We found that Gadd45 is partially responsible for this defect, as the size of eye-cell clones lacking NMD activity in a Gadd45F17 background was increased, although not fully restored (Figure 2F\u2013J). These results indicate that some, but not all, defects associated with loss of NMD are dependent on Gadd45.\n\nGadd45 is one of the few genes that is directly regulated by NMD in both flies and mammals (Huang et al., 2011; Tani et al., 2012; Viegas et al., 2007), raising the possibility that excess Gadd45 abundance may also contribute to the NMD-mutant lethality observed in mammalian cells (Azzalin and Lingner, 2006; Li et al., 2015; Medghalchi et al., 2001; Weischenfeldt et al., 2008). To test this hypothesis, we analyzed the effects of Gadd45 and Upf1 depletion in mouse NIH-3T3 cells. Gadd45b mRNA (also known as MyD118), which is expressed at least 10-fold higher than any other Gadd45 paralogue in these cells (Yue et al., 2014), was degraded rapidly in a partially Upf1-dependent manner after transcription was blocked with actinomycin D (Figure 3A), and had increased expression during Upf1 knockdown (Figure 3D), confirming it is sensitive to NMD. We found that transfection of 3T3 cells with siRNAs targeting Upf1 resulted in significant reduction in cell counts after 48\u2009hr (Figure 3B), but co-transfection with siRNAs targeting both Upf1 and Gadd45b largely reversed this effect (Figure 3B). The reduction in cell counts was primarily due to increased cell death, as we found that ~25% of cells transfected with Upf1 siRNA were undergoing apoptosis (Figure 3C). Co-transfection of siRNA targeting Gadd45b almost entirely eliminated this increase (Figure 3C), indicating the excess apoptosis observed in Upf1-knockdown cells was mostly due to increased Gadd45 activity. However, while Gadd45b knockdown very greatly suppresses this excess death, it does not as fully rescue cell numbers, suggesting loss of NMD may lead to both Gadd45b-dependent cell death as well as a Gadd45b-independent effect on proliferation. This mirrors the conclusions we made about the partial suppression of cell number defects in the Drosophila eye. Importantly, Upf1 mRNA expression was equivalently reduced and the\u00a0expression of the mammalian endogenous NMD targets Rassf1 and CRCP (Tani et al., 2012) was equivalently increased in both the single and double knockdown experiments (Figure 3D), indicating that the restoration of viability was not due to a recovery of NMD pathway activity.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/12876/elife-12876-fig3-v2.jpg)\n\n**Figure 3.:** (A) Relative Gadd45b mRNA expression measured by qRT-PCR in NIH-3T3 cells after 48\u2009hr of control (black) or Upf1 (red) siRNA treatment and 0 to 2\u2009hr of actinomycin D treatment, normalized to expression prior to actinomycin treatment. The half-life calculated for each decay curve is indicated. (B) Relative viable cell count of Upf1 and Gadd45b single and double siRNA treatment normalized to control siRNA. p-values display two-sided Student\u2019s t-test between indicated conditions. (C) Quantification of apoptosis as measured by annexin V staining. p-values display two-sided Student\u2019s t-test between indicated conditions. (D) Relative mRNA expression of Upf1, Gadd45b, and two mammalian endogenous NMD targets, Rassf1 and CRCP (Tani et al., 2012) measured by qRT-PCR in Gadd45b and Upf1 single and double siRNA knockdown cells, normalized to expression in the control siRNA condition. p-values display one-sided Student\u2019s t-test for each condition compared to control. Error bars represent 2 SEM.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12876/elife-12876-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Relative GADD45A mRNA expression measured by qRT-PCR in UPF1 and GADD45A single and double siRNA knockdown 72\u2009hr after siRNA transfection in HEK293 cells, normalized to expression in the control siRNA condition. p-values display one-sided Student\u2019s t-test for each condition compared to control. (B) Viable cell count of UPF1 and GADD45A single and double siRNA-treated cells normalized to control siRNA -treated cells. p-values display two-sided Student\u2019s t-test between indicated conditions. (C) Relative UPF1 mRNA expression measured by qRT-PCR in UPF1 and GADD45A single and double siRNA knockdown, normalized to expression in control siRNA condition. p-values display one-sided Student\u2019s t-test for each condition compared to control. Error bars represent 2 SEM.\n\nTo extend our analysis to other mammalian cells, we analyzed the role of Gadd45 mediating the effects of loss of NMD in HEK293 cells. We found, similarly to 3T3 cells, that siRNA knockdown of UPF1 in HEK293 cells led to increased GADD45A expression and reduced cell numbers compared to control siRNA (Figure 3\u2014figure supplement 1A,B). Although transfection of siRNA targeting GADD45A alone slightly reduced HEK293 cell numbers, co-transfection with UPF1 siRNA did not further reduce cell count (Figure 3\u2014figure supplement 1B), and UPF1 expression was equivalently reduced in the single and double knockdown conditions (Figure 3\u2014figure supplement 1C). These results suggest that UPF1 knockdown is no longer detrimental to HEK293 cell viability in the absence of GADD45A expression. We conclude that increased expression of mammalian Gadd45 genes contributes to lethality in NMD-deficient mouse and human cells, as Gadd45 does in Drosophila.\n\nDeconvoluting the contributions to organismal viability of the PTC-surveillance versus gene-regulatory functions of NMD has been historically difficult (Hwang and Maquat, 2011). Here, we show that viability can be restored to Drosophila lacking core NMD factors when a single endogenous NMD target, Gadd45, is eliminated, and that the requirement for the\u00a0regulation of Gadd45 by NMD is evolutionarily conserved from flies to mammals. Although our data suggest that up-regulation of Gadd45 is a major factor contributing to lethality when NMD activity is lost, it is likely that other NMD targets also contribute to the observed lethality. In particular, viability is not restored to 100% in null Upf1; or Upf2; Gadd45 double mutants. In addition, loss of Gadd45 suppresses programmed cell death caused by defects in NMD, but not additional cell cycle defects, as implied by the incomplete suppression in the Drosophila eye and mammalian cell culture. Such defects in the cell cycle may be particularly pronounced during the\u00a0development of certain tissue, or specific developmental stages. Indeed, NMD has been reported to have differing stage and tissue- specific activities (Bao et al., 2015; Bruno et al., 2011; Colak et al., 2013; Li et al., 2015). Whether this is due to a role in surveillance or another specific target remains unclear, but examination of the effects of loss of NMD in Gadd45 mutants should allow exploration of these possibilities.\n\nThe benefit for such a mechanism regulating Gadd45 expression may lie in a function of NMD in restricting viral growth (Balistreri et al., 2014). Because viruses encode trans-acting factors to inhibit NMD (Mocquet et al., 2012), the resulting accumulation of GADD45 in infected cells may act as a \u201cmolecular tripwire\u201d that rapidly elicits a stress response and cell death. This outcome suggests that regulating responses to infection may underlie a conserved essential function of NMD. Intriguingly, restriction of pathogens via NMD extends to plants (Garcia et al., 2014), where NMD mutant lethality in A. thaliana, which do not encode Gadd45 orthologues, may be caused by the\u00a0overexpression of a subset of immune-related intracellular nucleotide-binding leucine-rich repeat receptors, some of which are endogenous NMD targets (Gloggnitzer et al., 2014). In contrast, eukaryotes that do not rely on the\u00a0activation of programmed cell death to protect against viruses, such as S. cerevisiae, S. pombe, and C. elegans, do not require NMD for viability (Hodgkin et al., 1989; Leeds et al., 1991; Mendell et al., 2000). Together these observations suggest a potential novel role for NMD and Gadd45 in immune responses, triggering the death of infected cells during pathogenic challenges.\n\nRestoring the expression of PTC-containing alleles via NMD inhibition has been proposed as a promising therapy for a wide range of recessive genetic diseases (Keeling et al., 2014). Translation of stable PTC-containing mRNAs would produce truncated proteins that may be partially functional and alleviate disease symptoms normally caused by complete loss of the protein. However, the essential function for NMD in viability has raised the concern that these therapies may have prohibitive side effects. Our findings reveal a molecular basis for dealing with this obstacle by suggesting that inhibiting both the NMD and Gadd45 pathways (Tornatore et al., 2014) in combination could provide an effective and safe treatment for patients with debilitating genetic disorders.\n\n## Materials and methods\n\n### Fly genetics\n\nDrosophila melanogaster stocks were raised on standard cornmeal/dextrose food at 25\u00b0. The NMD mutant alleles Upf225G, Upf27-5A, and Upf126A (Frizzell et al., 2012; Metzstein and Krasnow, 2006) are on y w FRT19A chromosomes. These alleles were balanced over FM7i, P{ActGFP}JMR3 (Reichhart and Ferrandon, 1998). Smg5G115 and Smg5C391 are null alleles of Smg5 (J.O.N., D. F\u00f6rster, S. Luschnig, and M.M.M., unpublished) and will be described in detail later. The Smg5 alleles are balanced over CyO, P{Dfd:eYFP w+} (Le et al., 2006). Other alleles used were P{w[+mC]=EPg}HP20647 (Staudt et al., 2005), Mekk1Ur36 (Inoue et al., 2001) recombined on FRT82B by D. Ryoo, ey-FLP (Newsome et al., 2000), pcm14\u00a0(Waldron et al., 2015), Adhn4 (Chia et al., 1987) and DHR783 (Fisk and Thummel, 1998). Control chromosomes were y w FRT19A (for Upf1 and Upf2) and FRT82B (for Mekk1) (Xu and Rubin, 1993). For all experiments using Gadd45F17\u00a0we used the Gadd45E8 precise excision as a control.\n\nFor viability assays, we mated flies for 3 days and collected all progeny each day for 10 days, starting 10 days after the cross was initiated. The total numbers of F1 mutant and balancer males were scored, and the ratio of mutant males to balancer males was used to determine mutant animal viability. To control for balancer viability within each experiment, we normalized the ratio of mutant to balancer animals to a ratio of the appropriate control chromosome to balancer animals produced from a parallel cross.\n\n### Deficiency suppressor screen\n\nWe screened autosomal deficiencies from the DrosDel collection (Ryder et al., 2007). All deficiencies scored can be found in Supplementary file 1. Deficiencies on chromosome 2 were balanced over CyO, and deficiencies on chromosome 3 were balanced over TM6C. We mated males from each deficiency stock to y w Upf225G FRT19A/FM7i, P{ActGFP}JMR3 females and scored all F1 males for the presence or absence of each balancer. For any given deficiency tested, the percentage of Deficiency / + males that are Upf225G mutants, less the percentage of Balancer / + males that are Upf225G mutants was calculated, producing a Deficiency Suppression Score (DSS), which represents the effect of an individual deficiency on the increase or decrease in Upf225G viability, while controlling for each deficiency\u2019s general influence on viability. A DSS greater than 0.1 indicates suppression of lethality. Supplemental deficiencies used were from the Exelixis collection (Parks et al., 2004) and Df(2R)sple-J1 (Heitzler et al., 1993). Deficiency mapping to the Drosophila genome was performed using the 5.1 genome release.\n\nRNA-seq data sets were acquired from Chapin et al. (2014) (archives SRR896609, SRR896616, SRR503415, and SRR503416) and aligned using Bowtie and TopHat alignment with standard remapping parameters to the 5.1 Drosophila genome release. SAMtools accessory scripts were used to retrieve read counts for deficiency and control regions. All read counts were normalized to reads per million within each data set. Average normalized reads in Upf225G samples were normalized to the relative reads of 74 ribosomal proteins in Upf225G samples compared to control samples. Total normalized reads within the regions removed by each deficiency were averaged between biological replicates, and the difference between the Upf225Gand control samples was divided by one million to determine percent increase in genomic load across each deficiency region.\n\n### Generation of Gadd45 mutants\n\nWe produced P-element excision lines from the P{w[+mC]=EPg}HP20647 P-element insertion line crossed to a \u03942\u20133 transposase stock. We mated F1 males containing the P-element and transposase on a CyO balancer to w; Tft / CyO females. Cy+ Tft white-eyed F2 males were then individually mated to w; Tft / CyO females. We then collected Tft+, Cy males and females to create an isogenic stock from each individually mated F2 male. To identify precise excisions we used the primers Gadd45_F1 / Gadd45_R1 flanking the P-element insert site to amplify a region across the excised P-element. Lines that failed to amplify with these primers were candidate imprecise excisions, which we then tested with Gadd45_F1 / Gadd45_R3 primers for deletions. Any detected deletions were subsequently sequenced using these same primers. Primer sequences are found in Supplementary file 2.\n\n### Induction and analysis of eye clones\n\nWe generated eye clones with the FLP/FRT system using the ey-FLP driver (Newsome et al., 2000) to induce recombination. We imaged eyes on a Leica MZ125 stereo microscope with a Retiga-2000R camera (QImaging,\u00a0Canada) with QCapture 3.1.2 software (QImaging). We focused images using the ImageJ stack focuser plugin and quantified relative eye clone size using the ImageJ analyzer tools. A total of 20 eyes from 20 individual animals were scored for each condition.\n\n### Cell death assays\n\nFor TUNEL assays, third instar larval wing discs were dissected as described in Sullivan et al. (Sullivan et al., 2000). TUNEL staining was performed using the Apoptag Red in situ Apoptosis Detection Kit (Chimicon International Inc., Billerica, MA) according to Chakraborty et al. (Chakraborty et al., 2015). We DAPI stained wing discs (1:5000) for 5 min prior to mounting. Confocal images were acquired using a Zeiss LSM710 laser scanning confocal microscope (Carl Zeiss AG, Germany). 3-dimensional datasets were acquired with a Plan-Apochromat 20X/0.8 lens, 1.34\u2009\u03bcm z-step, using the Zeiss ZEN software. To measure TUNEL signal intensity z-projections images were summed with ImageJ. Background signal was removed by using the ImageJ MaxEntropy auto-threshold. Relative total TUNEL signal intensity was calculated using the ImageJ analyzer tools to measure the total pixel intensity within the wing discs of TUNEL images and normalized to the average intensity in control conditions.\n\nFor annexin V staining, we collected media (including floating cells) from siRNA treated cells. We spun down media at 950g for 4 min to pellet cells, and then aspirated remaining media. Concurrently, we trypsinized siRNA-treated cells still on plates and added them to the same respective tube as previously spun-down media. Following the Alexa Fluor 488 Annexin V/Dead Cell Apoptosis Kit (Abcam,\u00a0UK)\u00a0protocol, we stained for apoptotic cells. We visualized cells on an Olympus IX51 microscope (Olympus,\u00a0Japan)\u00a0with 20X objective. We collected bright field as well as fluorescent images using a FITC filter with a QImaging QICam Fast1394 camera and QCaptureP software\u00a0(QImaging). We analyzed cells by counting all cells within a bright field image as well as the annexin V positive cells from the same image. The number of annexin V positive cells was divided by total cell number to generate the fraction of apoptotic cells for each treatment. >3000 total cells were counted across three biological replicates for each treatment.\n\n### Cell culture experiments\n\nWe cultured mouse NIH-3T3 cells (ATCC) or HEK293 cells (ATCC) in DMEM (Thermo-Fisher,\u00a0Waltham,\u00a0MA) supplemented with 10% fetal bovine serum and glutamine. For siRNA experiments, we transfected cells using RNAiMax and 24 pmol of negative control siRNA (Qiagen,\u00a0Netherlands), Upf1 siRNA (Qiagen), or Gadd45b siRNA (Sigma-Aldrich) for 3T3 cell experiments, or negative control siRNA (Qiagen), UPF1 siRNA (Qiagen), or GADD45A siRNA (Sigma-Aldrich,\u00a0St.\u00a0Louis,\u00a0MO) for HEK293 experiments. For double siRNA-treated cells, we used 24 pmol of each Upf1 and Gadd45b siRNA for 3T3 experiments or UPF1 and GADD45A siRNA for HEK293 experiments.\n\nFor actinomycin experiments, we incubated cells with siRNA for 48\u2009hr before changing the media and then incubated with 2\u2009\u03bcg/mL actinomycin (Sigma-Aldrich) for 1 or 2\u2009hr. mRNA half-life was determined by fitting an exponential decay curve to the relative expression at each time point (Tani et al., 2012). t1/2 was calculated based on the average expression at each time point, and the mean t1/2 for each condition is represented.\n\nFor cell counting experiments, we trypsinized cells, incubated a small aliquot with Trypan Blue at a final concentration of 0.04% in complete media, and counted Trypan Blue negative cells. RNA was collected from the remaining cells, and relative mRNA levels were measured as described below.\n\n### RNA isolation and quantitative RT-PCR\n\nFor Drosophila qRT-PCR analyses, we collected 5\u201310 adult animals frozen in liquid nitrogen. We isolated total RNA using TRIzol reagent (Invitrogen) and phase-lock tubes (5-Prime), and the RNeasy mini kit (Qiagen). We used on-column RNase-free DNase treatment (Qiagen) to reduce genomic contamination. We determined RNA concentration by spectrophotometer and normalized concentration for reverse transcription. For reverse transcription, we used random decamers and MMLV8 reverse transcriptase (Retroscript Kit, Thermo-FIsher). We performed qRT-PCR analysis using the SYBR Green qPCR Supermix (Bio-Rad,\u00a0Hercules,\u00a0CA) and the Bio-Rad iCycler thermocycler. All experimental reactions were performed using three technical replicates and a minimum of three biological replicates per condition, and the expression level of all experimental assays was normalized to RpL32 mRNA expression.\n\nFor cell culture qRT-PCR analyses, we collected RNA following the Zymo Research Quick RNA MiniPrep kits protocol, and synthesized cDNA using MMLV reverse transcriptase (NEB,\u00a0Ipswich,\u00a0MA) with a template of 1 \u00b5g of total RNA and priming with a T18 oligo. We measured relative mRNA levels by qRT-PCR using the Masterplex ep realplex (Eppendorf,\u00a0Germany) with SYBR green fluorescent dye. Each sample was measured with technical triplicates and three biological replicates, and target mRNA levels were normalized to those of ribosomal protein 19 (Rpl19) mRNA.\n\nFor all qRT-PCR analyses we also measured samples that had been made without reverse transcriptase to ensure that signal was not due to genomic DNA. Primer sequences can be found in Supplementary file 2.\n\n### 3\u2019 UTR cloning and sensitivity assay\n\nWe cloned the UAS-GFP::Gadd45 3\u2019 UTR and control UAS-GFP::Act5C 3\u2019 UTR constructs using the primers G45_3U_X1_F / G45_3U_S1_R or Act5C_X1_F / Act5C_S1_R (Supplementary file 2) to amplify the Gadd45 and Act5C 3\u2019 UTRs, respectively, from genomic DNA. PCR fragments were inserted into the Zero Blunt TOPO vector (Thermo-Fisher), sequenced to assure fidelity, and digested and cloned into a pUAST-attB GFP vector using standard cloning procedures to replace the SV40 3\u2019 UTR. Plasmids were injected by BestGene (Chino Hills, CA) into a stock containing the VK00027 attP site (Venken et al., 2006) for phiC31 directed integration. We used previously described UAS-GFP::SV40 3\u2019 UTR animals (Metzstein and Krasnow, 2006). For imaging, wandering late L3 larvae were collected and examined using a Leica MZ 16F microscope and the Leica DFC340 FX camera with the Leica Application Suite v3.3.0 software.\n\n### Analysis of dHR783 and Adhn4 PTC allele stability\n\nWe collected adult F1 Upf2+; Gadd45E8/+, Upf225G; Gadd45E8/+, and Upf225G; Gadd45F17/+males that were also heterozygous for either the dHR783 or Adhn4. The Adhn4allele is a PTC-containing allele and has been demonstrated to be a direct NMD target based on cleavage by Smg6 (Gatfield and Izaurralde, 2004). The dHR783 allele is also a PTC-containing allele and thus is presumably degraded by NMD (Fisk and Thummel, 1998). At least three biological replicates were collected for each condition. We isolated RNA and generated cDNA as described in methods above and used this cDNA as a template for PCR amplification of the dHR78 transcript with the DRH78_F3 / DHR78_R3 primers and the Adh transcript with the Adh_F and Adh_R primers (Supplementary file 2), which flank the nonsense mutation in the respective transcripts. To compare the relative abundance of the dHR783 allele to the wild-type allele, PCR products were Sanger sequenced, and the relative peak intensity for a T (dHR783 allele) compared to a C (wild-type allele) at nucleotide 1063 was compared. To compare the relative abundance of the Adhn4 allele to the wild-type allele, PCR products were digested with PvuII (a site disrupted by the n4 mutation), separated on a 1% agarose gel and stained with ethidium bromide. The relative intensity of the cut and uncut bands was determined using ImageJ and normalized for fragment length. All samples were ran on the same gel and compared under identical conditions. All ratios were normalized to the ratio in the Upf225G; Gadd45E8/+condition.\n\n### Statistical analysis\n\nAll figures displaying viability assays represent a proportion of animals of the indicated genotypes that survive to adulthood; error bars for these figures represent the 95% confidence interval of the binomial distribution, and the Test of qual or Given Proportions was used to determine significance difference in these proportions between genotypes. All other figures represent the mean value of multiple replicates have error bars depicting \u00b1 2 SEM, which is a close approximation of the 95% confidence interval (Krzywinski and Altman, 2013). For tests between two variable measures, a two-sided paired Student\u2019s t-test was used to determine significance difference between mean value data. For most qPCR experiments, data was compared to a normalized control, set to a constant of 1, so these tests were performed with a one-sided Student\u2019s t-test.\n",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "4008c97c-da85-4276-8eec-47df9db1987b",
+      "submission_id": "389b68c7-00fd-42a4-b9d2-b7f2c956bac1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Torben Heick Jensen, Aarhus University , Denmark\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.12876.016](https://doi.org/10.7554/eLife.12876.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Degradation of a single mRNA by nonsense-mediated decay is essential for viability\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, with James Manley as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nA critical question in the RNA field is the functional significance of the nonsense-mediated RNA decay (NMD) pathway. NMD was originally discovered on the basis of its ability to degrade aberrant mRNAs (i.e., its RNA surveillance role) but was subsequently found to degrade many normal mRNAs (i.e., its gene expression role). Which is more important? With this elegant study, Mark Metzstein and colleagues take a great leap towards answering this question.\n\nThe authors sought to identify abnormally stabilized mRNAs that mediate lethality in NMD-defective Drosophila melanogaster. To this end, a genetic suppressor screen was performed in a Drosophila NMD mutant strain (hypomorphic Upf225G allele) and three candidate suppressing regions were identified. Two of these encompass the Gadd45 and Mekk1 genes, which operate in the same stress-response pathway. The importance of these genes for the NMD-lethality phenotype was analyzed further, and it was demonstrated that depletion of Gadd45 in the Upf225G-mutant completely restored viability, whereas it partially rescued viability in NMD null flies. Depletion of Mekk1, which acts downstream of Gadd45 in the stress response, also increased viability, but to a lesser degree. Next, it was demonstrated that Gadd45 is a direct target of NMD and that increased levels of Gadd45 can explain the increased cells death observed in the Upf225G-mutant.\n\nFinally, the authors provided evidence that Gadd45b mRNA is also a direct NMD target in mouse NIH-3T3 cells and that its increased expression can partially explain the decreased viability observed in UPF1-depleted cells.\n\nThese observations led the authors to conclude that the essentiality of NMD in Drosophila and mammals in essence resides in the down-regulation of a single gene (Gadd45), which is involved in induction of apoptosis. The presented results, coupled with the finding of others that viral infection suppresses NMD, made the authors propose an interesting model in which NMD provides defense against virus infection by killing virally infected cells.\n\nEssential revisions:\n\nOverall, this study represents an important advance for the RNA/NMD field. Publication in eLife is therefore suggested if the authors can substantiate their conclusions. In its present form, the main conclusion (including the title) appears to be going somewhat too far. Several of the authors' own observations point to additional contributions to lethality besides higher Gadd45 expression \u2013 except in the specific Upf225G-mutant.\n\n1) It is important to prove that the observed effects are coupled to increased Gadd45 protein. The authors need to show that expression of the Gadd45 protein is increased in Upf225G and perhaps also other NMD-defective cells.\n\n2) Figure 2. It is critical that the authors examine suppression of apoptosis by Gadd45 in Upf1-mutant flies (e.g., Upf126A), not just Upf2-mutant flies (as both were examined in Figure 1). Given that NMD factors can function in pathways other than NMD, it is essential to assess more than one NMD factor.\n\n3) Conservation in mammals. The results in Figure 3 are intriguing, but require some bolstering.\n\nA) The mechanism underlying the alterations in cell counts must be investigated. Is it the result of alterations in cell death, proliferation, or both? Is the Gadd45-dependent apoptosis phenotype conserved in mammals?\n\nB) At least one more cell line should be used for at least some experiments (one cell line is not enough to be convincing).\n\nC) Given that there are several Gadd45 genes in mammals, it is important that these also be investigated. While it is appreciated that Gadd45b is the most highly expressed Gadd45 gene in NIH-3T3 cells, this does not rule out the importance of the other Gadd45 genes. Perhaps try the triple knockdown of Gadd45A, B and G. GADD45A appears to be the highest expressed variant in HEK293 and HeLa cells, so one or both of these cell lines could be obvious additional cell lines to test.\n\nD) Figure 3A. One time point is not sufficient for RNA half-life analysis.\n\nE) Figure 3C. More NMD substrates besides Smg5 should be used for this analysis. Indeed, the effect on Smg5 is very modest (probably because of either insufficient NMD factor knockdown or poor transfection efficiency). A lack of an effect on some NMD substrates is ok given the heterogeneity of the NMD pathway, but at least one NMD substrate should have a greater effect than only 50%. A cell line with greater transfection efficiency than NIH-3T3 might be necessary to use. The GAS5 non-coding RNA could be a possible candidate to check since it appears to be highly responsive to NMD in both human and mouse cells.\n\n4) Although it is very clear that Gadd45 stabilization is a major determinant for the lethality phenotype of the Upf225G-mutant Drosophila strain and the decreased viability phenotype in UPF1-depleted NIH-3T3 cells, it is also clear that increased levels of Gadd45 cannot fully explain the lethality of NMD null mutant flies. Therefore, there must be other transcripts at play. One possibility is that NMD is vital for different stages of development, as e.g. indicated by several NMD knockout mouse studies. The authors should discuss more thoroughly the possibility that different stages of development may be affected by abnormal high expression of other factors than Gadd45. Generally, the conclusions (incl. the title) should be somewhat toned down, because overexpression of Gadd45 cannot fully explain lethality of all NMD-mutants. In relation to this: does the third deleted region contain genes that are related to the Gadd45 pathway or are they unrelated? In case of the latter, this also points to other contributors to lethality.\n",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "39ed3eb7-3aca-4a8f-ae8b-92eaed1ed0cc",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C1",
+      "claim": "The nonsense-mediated mRNA decay (NMD) pathway functions to degrade both abnormal and wild-type mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The nonsense-mediated mRNA decay (NMD) pathway functions to degrade both abnormal and wild-type mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established characterization of NMD function, drawing from established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "858ef6f2-606f-4e00-97a7-b35e9f31be10",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C2",
+      "claim": "NMD is essential for viability in most organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "NMD is essential for viability in most organisms, but the molecular basis for this requirement is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work in the Introduction section.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "56d6fe74-b7d0-4dff-b7d9-31bcbbb50a33",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C3",
+      "claim": "A single, conserved NMD target, the mRNA coding for GADD45, can account for lethality in Drosophila lacking core NMD genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that a single, conserved NMD target, the mRNA coding for the stress response factor growth arrest and DNA-damage inducible 45 (GADD45) can account for lethality in Drosophila lacking core NMD genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the study, supported by genetic experiments showing suppression of lethality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "a2a3c6db-5e97-4e38-b7d0-08446157ae1f",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C4",
+      "claim": "Depletion of Gadd45 in mammalian cells rescues the cell survival defects associated with NMD knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, depletion of Gadd45 in mammalian cells rescues the cell survival defects associated with NMD knockdown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cell culture experiments with siRNA knockdown shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "ff4a80ea-a6eb-4b7c-b3fc-2fc290f43f72",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C5",
+      "claim": "Degradation of Gadd45 mRNA is the essential NMD function.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings demonstrate that degradation of Gadd45 mRNA is the essential NMD function and, surprisingly, that the surveillance of abnormal mRNAs by this pathway is not necessarily required for viability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the genetic suppression experiments and the fact that NMD function is not restored.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "bddcb821-7d6f-4b51-b8b9-fb6fc1657798",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C6",
+      "claim": "The surveillance of abnormal mRNAs by NMD is not necessarily required for viability.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings demonstrate that degradation of Gadd45 mRNA is the essential NMD function and, surprisingly, that the surveillance of abnormal mRNAs by this pathway is not necessarily required for viability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that viability can be restored without restoring NMD function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "16db4399-7089-4f60-8652-90bf4a934988",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C7",
+      "claim": "NMD is best known for its role as a quality control system, degrading abnormal mRNAs containing premature termination codons (PTCs).",
+      "claim_type": "EXPLICIT",
+      "source": "The nonsense-mediated mRNA decay (NMD) pathway is a trans-acting mechanism that destabilizes mRNAs, and is best known for its well-described role as a quality control system, degrading abnormal mRNAs containing premature termination codons (PTCs) (Celik et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "2a7be49c-ddbc-49d5-bca7-c1da31b49cda",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C8",
+      "claim": "NMD degrades many wild-type endogenous mRNAs and is an important aspect of their post-transcriptional regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "NMD also degrades many wild-type endogenous mRNAs and thus is an important aspect of their post-transcriptional (Peccarelli and Kebaara, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "ebd3ed52-5e3d-4a95-85e8-a939de3db162",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C9",
+      "claim": "Loss of either of the core NMD genes Upf1 (Rent1) or Upf2 causes lethality in most eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of either of the core NMD genes Upf1 (Rent1) or Upf2 causes lethality in most eukaryotes (Ker\u00e9nyi et al., 2008; Medghalchi et al., 2001; Metzstein and Krasnow, 2006; Weischenfeldt et al., 2008; Wittkopp et al., 2009), indicating regulation of mRNA stability by NMD is critical for viability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "0b6caa17-48ca-48c7-8887-419a1610e965",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C10",
+      "claim": "Regulation of mRNA stability by NMD is critical for viability.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of either of the core NMD genes Upf1 (Rent1) or Upf2 causes lethality in most eukaryotes (Ker\u00e9nyi et al., 2008; Medghalchi et al., 2001; Metzstein and Krasnow, 2006; Weischenfeldt et al., 2008; Wittkopp et al., 2009), indicating regulation of mRNA stability by NMD is critical for viability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that loss of NMD genes causes lethality.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "b17f4f46-f111-4fff-b221-03db685622d2",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C11",
+      "claim": "The relative contributions to lethality from ectopic stabilization of PTC-containing mRNAs or endogenous NMD targets in NMD mutants remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the relative contributions to lethality from ectopic stabilization of PTC-containing mRNAs or endogenous NMD targets in NMD mutants remains unclear (Hwang and Maquat, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work discussing this open question.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "04aa491e-8426-4f29-aead-2f8402792e37",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C12",
+      "claim": "An unbiased genetic suppressor screen was performed to identify which ectopically stabilized mRNAs are responsible for inducing lethality in NMD mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify which ectopically stabilized mRNAs are responsible for inducing lethality in NMD mutants, we performed an unbiased genetic suppressor screen seeking to restore viability in a Drosophila NMD mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach taken in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "8f74d66d-40c3-42ab-9ffe-a055c70a4e8d",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C13",
+      "claim": "The Upf225G allele is a partially viable, hypomorphic allele of which 10% survive to adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "To detect subtle increases in survival, we screened to suppress the lethality of animals mutant for the partially viable, hypomorphic Upf225G allele, of which 10% survive to adulthood (Chapin et al., 2014; Metzstein and Krasnow, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work characterizing this allele.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "7fc15a95-875b-4877-afb8-96e2ac19bd53",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C14",
+      "claim": "Of the 376 deficiencies tested, covering more than half the genome, ~10% suppressed NMD mutant lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 376 deficiencies tested, covering more than half the genome, ~10% suppressed NMD mutant lethality (Figure 1B, Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1B and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "ef94ac5c-a9ae-470a-8084-507d00840a9d",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C15",
+      "claim": "The suppression effect could not be explained by a reduction in overall mRNA load.",
+      "claim_type": "EXPLICIT",
+      "source": "The suppression effect could not be explained by a reduction in overall mRNA load, as there was only a weak correlation between the increase in mRNAs expressed from a genomic region upon loss of NMD function and the strength of suppression when that region was removed by a deficiency (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by correlation analysis shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "03b8e434-0b95-43ec-a966-1ce99b148349",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C16",
+      "claim": "Deficiencies that suppressed NMD-mutant lethality clustered in three genomic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, deficiencies that suppressed NMD-mutant lethality clustered in three genomic regions (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the mapping data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "4c3de8be-21b6-4fcf-87ed-2e3c4e5418f4",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C17",
+      "claim": "NMD mutant lethality is not the result of a global excess of nonspecific mRNAs, but rather is mediated by specific genes residing within the few identified regions.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that NMD mutant lethality is not the result of a global excess of nonspecific mRNAs, but rather is mediated by specific genes residing within the few identified regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the clustering of suppressing deficiencies and lack of correlation with overall mRNA load.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "fc6b9bcd-8ad1-42b5-be9e-33303843bb59",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C18",
+      "claim": "Gadd45 is the only gene located within the suppressing regions that has increased expression levels in an NMD mutant and is a direct NMD target.",
+      "claim_type": "EXPLICIT",
+      "source": "We expected that any specific genes mediating NMD-mutant lethality would have increased expression levels in an NMD mutant and be a direct NMD target. The only gene located within the suppressing regions to fit these criteria is Gadd45 (Figure 1C, Figure 1\u2014figure supplement 2A\u2013C) (Chapin et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by expression data and NMD targeting assays shown in Figure 1\u2014figure supplement 2A\u2013C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "6c03788f-0ac0-46ea-a46a-3f9793e46e4e",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C19",
+      "claim": "Gadd45F17 is a null allele that completely removes the Gadd45 coding region.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if NMD targeting of Gadd45 mRNA is critical for viability, we generated a Gadd45 null allele, F17, which completely removes the Gadd45 coding region (Figure 1\u2014figure supplement 3A) and eliminates Gadd45 mRNA expression (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular characterization and expression data shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "77d215cc-064f-4f4e-b25b-6780fa112d1c",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C20",
+      "claim": "Gadd45F17 eliminates Gadd45 mRNA expression.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if NMD targeting of Gadd45 mRNA is critical for viability, we generated a Gadd45 null allele, F17, which completely removes the Gadd45 coding region (Figure 1\u2014figure supplement 3A) and eliminates Gadd45 mRNA expression (Figure 1\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "746dfe5d-88f4-4ead-b9bb-1f53c30ff21d",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C21",
+      "claim": "As a heterozygote, Gadd45F17 suppressed Upf225G lethality as strongly as the corresponding deficiency identified by the screen.",
+      "claim_type": "EXPLICIT",
+      "source": "As a heterozygote, Gadd45F17 suppressed Upf225Glethality as strongly as the corresponding deficiency identified by our screen (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by viability data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "7a1c8aa0-7c96-431c-9046-6a8e6fa8e5c2",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C22",
+      "claim": "Gadd45F17 homozygous mutants are fully viable.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Gadd45F17 homozygous mutants are fully viable (Figure 1\u2014figure supplement 3B), allowing us to test complete loss of Gadd45 for the suppression of NMD-mutant lethality.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by viability data shown in Figure 1\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "980bd258-1a27-4380-affc-d72f4e421c6f",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C23",
+      "claim": "Homozygous Gadd45F17 restored full viability to Upf225G mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Homozygous Gadd45F17 restored full viability to Upf225Gmutants, and remarkably even partially suppressed the complete lethality observed in null Upf1 and Upf2 mutants (Frizzell et al., 2012; Metzstein and Krasnow, 2006) (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by viability data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "40eb2f4a-61a3-4140-90f5-a75e1b57b744",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C24",
+      "claim": "Homozygous Gadd45F17 partially suppressed the complete lethality observed in null Upf1 and Upf2 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Homozygous Gadd45F17 restored full viability to Upf225Gmutants, and remarkably even partially suppressed the complete lethality observed in null Upf1 and Upf2 mutants (Frizzell et al., 2012; Metzstein and Krasnow, 2006) (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by viability data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "51cb1d00-a5eb-48e9-8053-312d7adbac42",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C25",
+      "claim": "Neither reducing nor eliminating Gadd45 restored NMD function to Upf225G mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, neither reducing nor eliminating Gadd45 restored NMD function to Upf225G mutants, as measured by the expression of both an endogenous NMD target (Figure 1\u2014figure supplement 4A) and PTC-containing mRNAs (Figure 1\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by expression data shown in Figure 1\u2014figure supplement 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "caa2445b-1eb4-4edd-9244-c9af270bb66a",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C26",
+      "claim": "In mammals, GADD45 activates the MTK1/MEKK4 kinase in a well-defined stress response pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, GADD45 activates the MTK1/MEKK4 kinase in a well-defined stress response pathway (Takekawa and Saito, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "c6dbb223-1e40-4a62-b612-f31e29662bec",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C27",
+      "claim": "The Drosophila MTK1 orthologue, Mekk1, resides within another Upf225G suppressing region.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the Drosophila MTK1 orthologue, Mekk1, resides within another Upf225G suppressing region (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the mapping data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "dbf3fafc-0bac-41cc-8ce6-f6e278e3ffe8",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C28",
+      "claim": "Mekk1 null mutants suppressed Upf1 and Upf2 mutant lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to Gadd45, we found that Mekk1 null mutants (Inoue et al., 2001) suppressed Upf1 and Upf2 mutant lethality (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by viability data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "4630b074-665c-4247-8947-79419443c709",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C29",
+      "claim": "Suppression by Mekk1 null mutants was not as strong as that caused by a loss of Gadd45.",
+      "claim_type": "EXPLICIT",
+      "source": "This suppression was not as strong as that caused by a loss of Gadd45, revealing that although MEKK1 mediates NMD mutant lethality, it is likely that GADD45 has additional downstream effectors that influence viability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing the suppression strength shown in Figure 1D and 1F.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "f732634f-8f24-4eb6-88aa-b4b18956dcd6",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C30",
+      "claim": "GADD45 likely has additional downstream effectors beyond MEKK1 that influence viability.",
+      "claim_type": "EXPLICIT",
+      "source": "This suppression was not as strong as that caused by a loss of Gadd45, revealing that although MEKK1 mediates NMD mutant lethality, it is likely that GADD45 has additional downstream effectors that influence viability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential suppression strength.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "aeb1f2d2-1cf4-42a0-941e-bf6d7769f2ce",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C31",
+      "claim": "Increased Gadd45 mRNA stability is the major factor inducing NMD mutant lethality, primarily via increased MEKK1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our findings reveal that increased Gadd45 mRNA stability is the major factor inducing NMD mutant lethality, primarily via increased MEKK1 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the genetic suppression experiments with both Gadd45 and Mekk1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "666572e1-b534-4b9b-ada2-4f1876586248",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C32",
+      "claim": "Activation of MTK1 in mammals triggers a MAPK signaling cascade that promotes apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of MTK1 in mammals triggers a MAPK signaling cascade that promotes apoptosis (Takekawa and Saito, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "475fd83c-d0ba-4e9e-b44c-cf6623f9fcb4",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C33",
+      "claim": "Over-expression of Gadd45 in Drosophila induces apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Over-expression of Gadd45 in Drosophila also induces apoptosis (Peretz et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "de2b2725-4112-42ed-966e-8cc92ca4f290",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C34",
+      "claim": "Drosophila cells lacking NMD function show excess cell death in a variety of tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Drosophila cells lacking NMD function show excess cell death in a variety of tissues (Avery et al., 2011; Frizzell et al., 2012; Metzstein and Krasnow, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "71867789-6909-4d20-9b7b-00b06b0bae9f",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C35",
+      "claim": "Wing imaginal discs from Upf225G mutant third instar larvae show elevated levels of cell death compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if increased Gadd45 contributes to this excess death, we used TUNEL staining to examine cell death in wing imaginal discs from Upf225G mutant third instar larvae. This analysis revealed elevated levels of cell death compared to controls (Figure 2A, B, E), and this defect was completely suppressed by Gadd45F17 (Figure 2C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TUNEL staining data shown in Figure 2A, B, E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "3d089c88-8c92-4ca5-adf5-2689448ac489",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C36",
+      "claim": "The elevated cell death in Upf225G mutant wing discs was completely suppressed by Gadd45F17.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if increased Gadd45 contributes to this excess death, we used TUNEL staining to examine cell death in wing imaginal discs from Upf225G mutant third instar larvae. This analysis revealed elevated levels of cell death compared to controls (Figure 2A, B, E), and this defect was completely suppressed by Gadd45F17 (Figure 2C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TUNEL staining data shown in Figure 2C\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "4a3c7d7e-dfdb-40b3-a94f-bda9105968b0",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C37",
+      "claim": "Smg5 mutant wing discs showed elevated TUNEL signal, which was eliminated by loss of Gadd45.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that, this effect was not specific to the Upf2 gene or 25G allele, we examined the wing discs in mutants of another essential NMD gene, Smg5. We found that Smg5 discs also showed elevated TUNEL signal, which was eliminated by loss of Gadd45 (Figure 2\u2014figure supplement 1A\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TUNEL staining data shown in Figure 2\u2014figure supplement 1A\u2013E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "a27a6739-ed34-4830-bcb0-4467551b0609",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C38",
+      "claim": "Excess Gadd45 accounts for ectopic cell death in NMD mutant tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that excess Gadd45 accounts for ectopic cell death in NMD mutant tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the suppression of cell death by Gadd45 loss in multiple NMD mutant backgrounds.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "ddd8e8b1-0a5c-4995-b1cf-ffb25f523932",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C39",
+      "claim": "NMD is required for proper development of eye cells, as clonal patches of NMD mutant cells in eyes are reduced in size.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if Gadd45-induced cell death is the only cellular defect in NMD mutants, we examined NMD function in the developing eye. NMD is required for proper development of eye cells, as clonal patches of NMD mutant cells in eyes are reduced in size (Frizzell et al., 2012; Metzstein and Krasnow, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "201ed811-9197-4b36-a8ec-a80cfed17e55",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C40",
+      "claim": "Gadd45 is partially responsible for the reduced size of eye-cell clones lacking NMD activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Gadd45 is partially responsible for this defect, as the size of eye-cell clones lacking NMD activity in a Gadd45F17 background was increased, although not fully restored (Figure 2F\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by eye clone size data shown in Figure 2F\u2013J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "a7d19cd6-2727-4cbf-8942-ac1e37168604",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C41",
+      "claim": "Some, but not all, defects associated with loss of NMD are dependent on Gadd45.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that some, but not all, defects associated with loss of NMD are dependent on Gadd45.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the partial suppression of eye clone size defects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "6590dedf-fea6-4e1e-ae47-ae40bb6192c6",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C42",
+      "claim": "Gadd45 is one of the few genes that is directly regulated by NMD in both flies and mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Gadd45 is one of the few genes that is directly regulated by NMD in both flies and mammals (Huang et al., 2011; Tani et al., 2012; Viegas et al., 2007), raising the possibility that excess Gadd45 abundance may also contribute to the NMD-mutant lethality observed in mammalian cells (Azzalin and Lingner, 2006; Li et al., 2015; Medghalchi et al., 2001; Weischenfeldt et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "1cc2dff2-f9be-4a84-bbb3-f9c14c172b88",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C43",
+      "claim": "Gadd45b mRNA is expressed at least 10-fold higher than any other Gadd45 paralogue in NIH-3T3 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this hypothesis, we analyzed the effects of Gadd45 and Upf1 depletion in mouse NIH-3T3 cells. Gadd45b mRNA (also known as MyD118), which is expressed at least 10-fold higher than any other Gadd45 paralogue in these cells (Yue et al., 2014), was degraded rapidly in a partially Upf1-dependent manner after transcription was blocked with actinomycin D (Figure 3A), and had increased expression during Upf1 knockdown (Figure 3D), confirming it is sensitive to NMD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "970563af-1995-4282-a248-f822df1874b2",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C44",
+      "claim": "Gadd45b mRNA was degraded rapidly in a partially Upf1-dependent manner after transcription was blocked with actinomycin D.",
+      "claim_type": "EXPLICIT",
+      "source": "Gadd45b mRNA (also known as MyD118), which is expressed at least 10-fold higher than any other Gadd45 paralogue in these cells (Yue et al., 2014), was degraded rapidly in a partially Upf1-dependent manner after transcription was blocked with actinomycin D (Figure 3A), and had increased expression during Upf1 knockdown (Figure 3D), confirming it is sensitive to NMD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by actinomycin D decay data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "2d058d61-31c6-4f11-808b-c7582e65ce98",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C45",
+      "claim": "Gadd45b had increased expression during Upf1 knockdown, confirming it is sensitive to NMD.",
+      "claim_type": "EXPLICIT",
+      "source": "Gadd45b mRNA (also known as MyD118), which is expressed at least 10-fold higher than any other Gadd45 paralogue in these cells (Yue et al., 2014), was degraded rapidly in a partially Upf1-dependent manner after transcription was blocked with actinomycin D (Figure 3A), and had increased expression during Upf1 knockdown (Figure 3D), confirming it is sensitive to NMD.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "1377e8bb-1238-4e81-9d23-fe3b15965a00",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C46",
+      "claim": "Transfection of 3T3 cells with siRNAs targeting Upf1 resulted in significant reduction in cell counts after 48 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that transfection of 3T3 cells with siRNAs targeting Upf1 resulted in significant reduction in cell counts after 48 hr (Figure 3B), but co-transfection with siRNAs targeting both Upf1 and Gadd45b largely reversed this effect (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell count data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "e4b81c15-788e-4be5-af81-63035fc6b869",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C47",
+      "claim": "Co-transfection with siRNAs targeting both Upf1 and Gadd45b largely reversed the reduction in cell counts caused by Upf1 knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that transfection of 3T3 cells with siRNAs targeting Upf1 resulted in significant reduction in cell counts after 48 hr (Figure 3B), but co-transfection with siRNAs targeting both Upf1 and Gadd45b largely reversed this effect (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell count data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "b52cc36b-951c-44f3-991c-2577bdc36710",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C48",
+      "claim": "The reduction in cell counts in Upf1 knockdown was primarily due to increased cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduction in cell counts was primarily due to increased cell death, as we found that ~25% of cells transfected with Upf1 siRNA were undergoing apoptosis (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by annexin V staining data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "7d2ab903-44c4-4263-bc0a-a878ecebcf7c",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C49",
+      "claim": "~25% of cells transfected with Upf1 siRNA were undergoing apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduction in cell counts was primarily due to increased cell death, as we found that ~25% of cells transfected with Upf1 siRNA were undergoing apoptosis (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by annexin V staining data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "eb76450f-9a2c-4805-b2ca-ea7dc14d22fb",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C50",
+      "claim": "Co-transfection of siRNA targeting Gadd45b almost entirely eliminated the increase in apoptosis in Upf1-knockdown cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-transfection of siRNA targeting Gadd45b almost entirely eliminated this increase (Figure 3C), indicating the excess apoptosis observed in Upf1-knockdown cells was mostly due to increased Gadd45 activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by annexin V staining data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "2d63c9b9-cc2f-4475-88b9-a5d87a4fc2a0",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C51",
+      "claim": "The excess apoptosis observed in Upf1-knockdown cells was mostly due to increased Gadd45 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-transfection of siRNA targeting Gadd45b almost entirely eliminated this increase (Figure 3C), indicating the excess apoptosis observed in Upf1-knockdown cells was mostly due to increased Gadd45 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the suppression of apoptosis by Gadd45b knockdown.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "ca2656a5-913d-4f0a-9bb5-7a714a3d348b",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C52",
+      "claim": "Loss of NMD may lead to both Gadd45b-dependent cell death as well as a Gadd45b-independent effect on proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while Gadd45b knockdown very greatly suppresses this excess death, it does not as fully rescue cell numbers, suggesting loss of NMD may lead to both Gadd45b-dependent cell death as well as a Gadd45b-independent effect on proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential rescue of cell death versus cell numbers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "34bb0b6b-ce79-42ed-b675-207d98a5c059",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C53",
+      "claim": "Upf1 mRNA expression was equivalently reduced in both the single and double knockdown experiments in 3T3 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Upf1 mRNA expression was equivalently reduced and the expression of the mammalian endogenous NMD targets Rassf1 and CRCP (Tani et al., 2012) was equivalently increased in both the single and double knockdown experiments (Figure 3D), indicating that the restoration of viability was not due to a recovery of NMD pathway activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "0442f4e3-482c-458c-bb11-42c59f9dd69a",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C54",
+      "claim": "The expression of the mammalian endogenous NMD targets Rassf1 and CRCP was equivalently increased in both the single and double knockdown experiments in 3T3 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Upf1 mRNA expression was equivalently reduced and the expression of the mammalian endogenous NMD targets Rassf1 and CRCP (Tani et al., 2012) was equivalently increased in both the single and double knockdown experiments (Figure 3D), indicating that the restoration of viability was not due to a recovery of NMD pathway activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "0a91f0c2-b4d0-4521-be7e-f7b492afd676",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C55",
+      "claim": "The restoration of viability in 3T3 cells was not due to a recovery of NMD pathway activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Upf1 mRNA expression was equivalently reduced and the expression of the mammalian endogenous NMD targets Rassf1 and CRCP (Tani et al., 2012) was equivalently increased in both the single and double knockdown experiments (Figure 3D), indicating that the restoration of viability was not due to a recovery of NMD pathway activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the equivalent NMD target expression in single and double knockdowns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "69a453c0-c5f8-4aa1-bb10-a9e2578abad0",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C56",
+      "claim": "siRNA knockdown of UPF1 in HEK293 cells led to increased GADD45A expression and reduced cell numbers compared to control siRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "To extend our analysis to other mammalian cells, we analyzed the role of Gadd45 mediating the effects of loss of NMD in HEK293 cells. We found, similarly to 3T3 cells, that siRNA knockdown of UPF1 in HEK293 cells led to increased GADD45A expression and reduced cell numbers compared to control siRNA (Figure 3\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "c86bf4a7-6259-4cef-8d50-1655c5bb80dd",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C57",
+      "claim": "Co-transfection with UPF1 siRNA and GADD45A siRNA did not further reduce cell count in HEK293 cells compared to GADD45A siRNA alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Although transfection of siRNA targeting GADD45A alone slightly reduced HEK293 cell numbers, co-transfection with UPF1 siRNA did not further reduce cell count (Figure 3\u2014figure supplement 1B), and UPF1 expression was equivalently reduced in the single and double knockdown conditions (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell count data shown in Figure 3\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "8cb2e70d-fe2c-43e2-bc84-21f43fcf9e45",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C58",
+      "claim": "UPF1 expression was equivalently reduced in the single and double knockdown conditions in HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although transfection of siRNA targeting GADD45A alone slightly reduced HEK293 cell numbers, co-transfection with UPF1 siRNA did not further reduce cell count (Figure 3\u2014figure supplement 1B), and UPF1 expression was equivalently reduced in the single and double knockdown conditions (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "18154296-d245-46f3-893d-3f30bf57a933",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C59",
+      "claim": "UPF1 knockdown is no longer detrimental to HEK293 cell viability in the absence of GADD45A expression.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that UPF1 knockdown is no longer detrimental to HEK293 cell viability in the absence of GADD45A expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of additional cell count reduction in the double knockdown.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "fe191a55-cb4b-4c15-95c8-69c18e78c535",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C60",
+      "claim": "Increased expression of mammalian Gadd45 genes contributes to lethality in NMD-deficient mouse and human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that increased expression of mammalian Gadd45 genes contributes to lethality in NMD-deficient mouse and human cells, as Gadd45 does in Drosophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the rescue experiments in both 3T3 and HEK293 cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "0ef9e362-9339-4b74-b191-a1edfc499381",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C61",
+      "claim": "Viability can be restored to Drosophila lacking core NMD factors when a single endogenous NMD target, Gadd45, is eliminated.",
+      "claim_type": "EXPLICIT",
+      "source": "Deconvoluting the contributions to organismal viability of the PTC-surveillance versus gene-regulatory functions of NMD has been historically difficult (Hwang and Maquat, 2011). Here, we show that viability can be restored to Drosophila lacking core NMD factors when a single endogenous NMD target, Gadd45, is eliminated, and that the requirement for the regulation of Gadd45 by NMD is evolutionarily conserved from flies to mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by the genetic experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "36ede8a9-4118-49c3-8cfc-cdf08bf460f2",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C62",
+      "claim": "The requirement for the regulation of Gadd45 by NMD is evolutionarily conserved from flies to mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that viability can be restored to Drosophila lacking core NMD factors when a single endogenous NMD target, Gadd45, is eliminated, and that the requirement for the regulation of Gadd45 by NMD is evolutionarily conserved from flies to mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experiments in both Drosophila and mammalian cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "b5c7dca9-86e2-404f-9c7e-4c17b0337627",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C63",
+      "claim": "Up-regulation of Gadd45 is a major factor contributing to lethality when NMD activity is lost.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our data suggest that up-regulation of Gadd45 is a major factor contributing to lethality when NMD activity is lost, it is likely that other NMD targets also contribute to the observed lethality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the genetic suppression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "1ae9fb2e-8199-4049-9437-a677a7d512c8",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C64",
+      "claim": "Other NMD targets likely also contribute to the observed lethality when NMD activity is lost.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our data suggest that up-regulation of Gadd45 is a major factor contributing to lethality when NMD activity is lost, it is likely that other NMD targets also contribute to the observed lethality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the incomplete suppression in null mutants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "2f6ff329-67fb-4599-9f3e-cf4c320ec52d",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C65",
+      "claim": "Viability is not restored to 100% in null Upf1; or Upf2; Gadd45 double mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, viability is not restored to 100% in null Upf1; or Upf2; Gadd45 double mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the viability data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "57e063f3-1bd6-4869-a15a-9daff0c5761d",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C66",
+      "claim": "Loss of Gadd45 suppresses programmed cell death caused by defects in NMD, but not additional cell cycle defects.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, loss of Gadd45 suppresses programmed cell death caused by defects in NMD, but not additional cell cycle defects, as implied by the incomplete suppression in the Drosophila eye and mammalian cell culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the partial suppression of eye clone size and cell proliferation defects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "f9502cf9-7716-4f95-9943-36fd0044788e",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C67",
+      "claim": "Defects in the cell cycle may be particularly pronounced during the development of certain tissue, or specific developmental stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Such defects in the cell cycle may be particularly pronounced during the development of certain tissue, or specific developmental stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observed tissue-specific effects.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "6bd2d738-2ca4-4133-91ed-87c9347cd287",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C68",
+      "claim": "NMD has been reported to have differing stage and tissue-specific activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, NMD has been reported to have differing stage and tissue- specific activities (Bao et al., 2015; Bruno et al., 2011; Colak et al., 2013; Li et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "32367664-d81d-4f2d-a488-ea4cf749623d",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C69",
+      "claim": "The benefit for a mechanism regulating Gadd45 expression may lie in a function of NMD in restricting viral growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The benefit for such a mechanism regulating Gadd45 expression may lie in a function of NMD in restricting viral growth (Balistreri et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citation to prior work on NMD and viral restriction.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "773913ca-64aa-4c13-bbdd-4c51c95fcecb",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C70",
+      "claim": "Viruses encode trans-acting factors to inhibit NMD.",
+      "claim_type": "EXPLICIT",
+      "source": "Because viruses encode trans-acting factors to inhibit NMD (Mocquet et al., 2012), the resulting accumulation of GADD45 in infected cells may act as a \"molecular tripwire\" that rapidly elicits a stress response and cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "d687531e-5bbb-4546-9a88-4f08dc5ee8cb",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C71",
+      "claim": "The accumulation of GADD45 in infected cells may act as a \"molecular tripwire\" that rapidly elicits a stress response and cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Because viruses encode trans-acting factors to inhibit NMD (Mocquet et al., 2012), the resulting accumulation of GADD45 in infected cells may act as a \"molecular tripwire\" that rapidly elicits a stress response and cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the known functions of GADD45 and NMD.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "73e96782-8b53-471c-82fe-716c9846bbca",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C72",
+      "claim": "Regulating responses to infection may underlie a conserved essential function of NMD.",
+      "claim_type": "EXPLICIT",
+      "source": "This outcome suggests that regulating responses to infection may underlie a conserved essential function of NMD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the proposed molecular tripwire mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "cd79a3a0-84cd-40a9-8128-17042d05e52d",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C73",
+      "claim": "Restriction of pathogens via NMD extends to plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, restriction of pathogens via NMD extends to plants (Garcia et al., 2014), where NMD mutant lethality in A. thaliana, which do not encode Gadd45 orthologues, may be caused by the overexpression of a subset of immune-related intracellular nucleotide-binding leucine-rich repeat receptors, some of which are endogenous NMD targets (Gloggnitzer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "a98779a5-ec0e-47b1-88ba-24d6d9d36e21",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C74",
+      "claim": "NMD mutant lethality in A. thaliana may be caused by the overexpression of a subset of immune-related intracellular nucleotide-binding leucine-rich repeat receptors, some of which are endogenous NMD targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, restriction of pathogens via NMD extends to plants (Garcia et al., 2014), where NMD mutant lethality in A. thaliana, which do not encode Gadd45 orthologues, may be caused by the overexpression of a subset of immune-related intracellular nucleotide-binding leucine-rich repeat receptors, some of which are endogenous NMD targets (Gloggnitzer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "a0976136-0141-45c7-bdf1-56b2d32515ed",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C75",
+      "claim": "A. thaliana do not encode Gadd45 orthologues.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, restriction of pathogens via NMD extends to plants (Garcia et al., 2014), where NMD mutant lethality in A. thaliana, which do not encode Gadd45 orthologues, may be caused by the overexpression of a subset of immune-related intracellular nucleotide-binding leucine-rich repeat receptors, some of which are endogenous NMD targets (Gloggnitzer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact based on genomic knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "70df1531-c08a-4484-92cf-1491f0219873",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C76",
+      "claim": "Eukaryotes that do not rely on the activation of programmed cell death to protect against viruses, such as S. cerevisiae, S. pombe, and C. elegans, do not require NMD for viability.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, eukaryotes that do not rely on the activation of programmed cell death to protect against viruses, such as S. cerevisiae, S. pombe, and C. elegans, do not require NMD for viability (Hodgkin et al., 1989; Leeds et al., 1991; Mendell et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "b856b189-438d-4988-8a98-768ce48b42b9",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C77",
+      "claim": "NMD and Gadd45 may have a novel role in immune responses, triggering the death of infected cells during pathogenic challenges.",
+      "claim_type": "EXPLICIT",
+      "source": "Together these observations suggest a potential novel role for NMD and Gadd45 in immune responses, triggering the death of infected cells during pathogenic challenges.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the various observations about NMD, Gadd45, and pathogen restriction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "5622ce33-acf7-41d7-bd52-ef235737db07",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C78",
+      "claim": "Restoring the expression of PTC-containing alleles via NMD inhibition has been proposed as a promising therapy for a wide range of recessive genetic diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Restoring the expression of PTC-containing alleles via NMD inhibition has been proposed as a promising therapy for a wide range of recessive genetic diseases (Keeling et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "7938ec26-71c8-4725-a2d2-6fdff5f97270",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C79",
+      "claim": "Translation of stable PTC-containing mRNAs would produce truncated proteins that may be partially functional and alleviate disease symptoms normally caused by complete loss of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Translation of stable PTC-containing mRNAs would produce truncated proteins that may be partially functional and alleviate disease symptoms normally caused by complete loss of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the potential therapeutic mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "82412ab6-beb5-472b-bcf2-8536b129d07e",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C80",
+      "claim": "The essential function for NMD in viability has raised the concern that NMD inhibition therapies may have prohibitive side effects.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the essential function for NMD in viability has raised the concern that these therapies may have prohibitive side effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inference based on the known essential function of NMD.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "34656f64-4ba2-448c-9875-a505a4cd9463",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C81",
+      "claim": "Inhibiting both the NMD and Gadd45 pathways in combination could provide an effective and safe treatment for patients with debilitating genetic disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings reveal a molecular basis for dealing with this obstacle by suggesting that inhibiting both the NMD and Gadd45 pathways (Tornatore et al., 2014) in combination could provide an effective and safe treatment for patients with debilitating genetic disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about therapeutic implications based on the study's findings.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "16be8eb4-4a37-4ad8-aca9-b01e3ee4d908",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C82",
+      "claim": "Gadd45 mRNA expression is increased 16.7-fold in Upf225G mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Gadd45 mRNA expression is increased 16.7-fold in Upf225G mutants, and is eliminated by Gadd45F17 mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "4fcfb80c-2b70-49f9-8dba-466e2ebf0e95",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C83",
+      "claim": "Gadd45 mRNA expression is eliminated by Gadd45F17 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Gadd45 mRNA expression is increased 16.7-fold in Upf225G mutants, and is eliminated by Gadd45F17 mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 1\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "f676bdbc-e9e0-4325-a2cb-e9cf886ba166",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C84",
+      "claim": "GFP transgenes with SV40 and Gadd45 3' UTRs show significantly increased fluorescence in Upf225G animals compared to Upf2+, indicating NMD-dependent post-transcriptional degradation of mRNAs containing these UTRs.",
+      "claim_type": "EXPLICIT",
+      "source": "SV40 and Gadd45 3' UTR constructs show significantly increased fluorescence in Upf225G animals compared to Upf2+, indicating NMD-dependent post-transcriptional degradation of mRNAs containing these UTRs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence imaging data shown in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "86e0392f-5932-4b62-af4b-995dad59a396",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C85",
+      "claim": "The Act5C 3' UTR construct has similar fluorescence in both Upf2+ and Upf225G backgrounds, indicating NMD does not regulate the post-transcriptional stability of this UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "The Act5C 3' UTR construct has similar fluorescence in both backgrounds, indicating NMD does not regulate the post-transcriptional stability of this UTR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence imaging data shown in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "905eafe2-8087-422c-af4c-eb31c8f02a63",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C86",
+      "claim": "Gadd45 has relatively increased levels of a 3' fragment in pcm14 mutants, revealing endonucleolytic cleavage has occurred between the primer pairs, probably near the stop codon, indicative of NMD-initiated degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "The MAL-A2 3' primers show no difference in relative expression in pcm14 mutants compared to the 5' primers, while tra and Gadd45 have relatively increased levels of a 3' fragment in pcm14 mutants, revealing endonucleolytic cleavage has occurred between the primer pairs, probably near the stop codon, indicative of NMD-initiated degradation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 1\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "5064bb56-19df-41b6-b5c0-2541a516055e",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C87",
+      "claim": "Gadd45F17 is an imprecise excision of the P-element P{EPg}HP20647, deleting a 894 bp region that includes the entire Gadd45 coding region.",
+      "claim_type": "EXPLICIT",
+      "source": "Gadd45F17 is an imprecise excision of the P-element P{EPg}HP20647, deleting a 894 bp region that includes the entire Gadd45 coding region.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular characterization shown in Figure 1\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "b8c24d74-9e19-437b-ab8e-c43ea6aabb62",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C88",
+      "claim": "Gadd45E8 is a precise excision of the P-element P{EPg}HP20647, leaving Gadd45 intact.",
+      "claim_type": "EXPLICIT",
+      "source": "Gadd45E8 is a precise excision of the same P-element, leaving Gadd45 intact.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by molecular characterization shown in Figure 1\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "71aab46e-cf91-481f-a7a1-8dc3e53107ca",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C89",
+      "claim": "There is no significant difference in traL expression between Upf225G/Y and Upf225G/Y; Gadd45F17 animals.",
+      "claim_type": "EXPLICIT",
+      "source": "There is no significant difference in traL expression between Upf225G/Y and Upf225G/Y; Gadd45F17animals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by qRT-PCR data shown in Figure 1\u2014figure supplement 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "a53aacda-7fdc-4147-99f7-57d38a5bf6d3",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "claim_id": "C90",
+      "claim": "Neither reduction nor elimination of Gadd45 restored destabilization of Adhn4 and dHR783 PTC-containing alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither reduction nor elimination of Gadd45 restored destabilization of these alleles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d4b20ab2-5a15-4aa4-a6e9-509f7bcdedef",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "An unbiased genetic suppressor screen of 376 deficiencies covering more than half the Drosophila genome identified that ~10% suppressed NMD mutant lethality. The suppression effect was not due to overall mRNA load reduction but rather clustered in three specific genomic regions, suggesting specific genes mediate NMD mutant lethality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C17 describe a well-designed genetic screen with appropriate controls. The screen used a hypomorphic allele (C13) to detect subtle suppression, tested a large genomic coverage (C14), and included a correlation analysis ruling out nonspecific mRNA load effects (C15). The clustering of suppressing deficiencies (C16) provides strong evidence for specific genetic mediators.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "ca462866-0151-4afb-9827-2bbd66c8ba2a",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Gadd45 was identified as the only gene within suppressing regions that is both upregulated in NMD mutants and a direct NMD target. A null allele (Gadd45F17) was generated that completely removes the Gadd45 coding region and eliminates Gadd45 mRNA expression. Multiple assays confirm Gadd45 is a direct NMD target.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C20 and C82-C88 provide converging evidence that Gadd45 is a bona fide NMD target. The 16.7-fold upregulation in NMD mutants (C82), fluorescence reporter assays (C84), endonucleolytic cleavage assays (C86), and molecular characterization of the null allele (C87) collectively demonstrate Gadd45 is directly regulated by NMD. The precise excision control (C88) strengthens the genetic analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "395aea9a-3a33-445a-bd24-ed0fe4bb2261",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Heterozygous Gadd45F17 suppressed Upf225G lethality as strongly as the corresponding deficiency. Homozygous Gadd45F17 mutants are fully viable and restored full viability to Upf225G mutants, and partially suppressed the complete lethality of null Upf1 and Upf2 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 are supported by viability data in Figure 1D showing dose-dependent suppression. The full viability of Gadd45F17 homozygotes (C22) is a critical control demonstrating Gadd45 is not essential. The partial suppression of null NMD mutants (C24) is particularly striking and well-documented with appropriate statistical tests.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "4cee30ff-ea4e-4fd1-94ce-963a9d9b62d1",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Neither reducing nor eliminating Gadd45 restored NMD function to Upf225G mutants, as measured by expression of endogenous NMD targets and PTC-containing mRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C89, and C90 are critical for establishing that suppression occurs without restoring NMD activity. The data in Figure 1\u2014figure supplement 4A and 4B show that traL and PTC-containing alleles remain stabilized in Gadd45 mutant backgrounds, demonstrating the suppression is not due to restoration of NMD function. This is essential for the paper's main conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "b12c7c3e-40e0-43f9-902b-e360e0b48a0e",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The Drosophila MTK1 orthologue Mekk1 resides within another suppressing region and Mekk1 null mutants suppressed NMD mutant lethality, though not as strongly as Gadd45 loss. This suggests GADD45 acts primarily through MEKK1 but likely has additional downstream effectors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C31 establish the GADD45-MEKK1 pathway connection. The mapping data (C27), suppression by Mekk1 mutants (C28), and differential suppression strength (C29) are well-documented in Figure 1E-F. The inference that GADD45 has additional effectors (C30) is reasonable given the incomplete suppression by Mekk1 loss. The connection to mammalian stress pathways (C26) provides evolutionary context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "f0c62bd5-3845-412f-957d-27bdcb760244",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Wing imaginal discs from Upf225G mutants show elevated cell death by TUNEL staining, which was completely suppressed by Gadd45F17. This effect was confirmed in Smg5 mutants, demonstrating that excess Gadd45 accounts for ectopic cell death in NMD mutant tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 are supported by quantitative TUNEL staining data in Figure 2A-E and Figure 2\u2014figure supplement 1. The complete suppression of cell death by Gadd45 loss (C36) and confirmation in a different NMD mutant (C37) provide strong evidence. The use of multiple NMD gene mutants strengthens the conclusion that this is a general NMD phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "b26ca899-b944-4115-b8b2-e16a4b1252fc",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Eye-cell clones lacking NMD activity are reduced in size, and Gadd45 is partially responsible for this defect. Loss of Gadd45 increased clone size but did not fully restore it, indicating some but not all NMD defects are Gadd45-dependent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 are supported by eye clone data in Figure 2F-J. The partial suppression (C40) is important for establishing that Gadd45 is not the only mediator of NMD mutant phenotypes. The quantification shows statistically significant but incomplete rescue, supporting the inference in C41. This result is consistent with the incomplete suppression of lethality in null NMD mutants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "0ced0616-377f-4388-9134-a9e614952ddb",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In mouse NIH-3T3 cells, Gadd45b is the predominant paralogue and is degraded in a Upf1-dependent manner. Upf1 knockdown reduced cell counts and increased apoptosis (~25%), which was largely reversed by co-depletion of Gadd45b. NMD function was not restored in the double knockdown, indicating suppression is independent of NMD activity restoration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C55 demonstrate evolutionary conservation of the Gadd45-NMD relationship in mammalian cells. The actinomycin D decay assay (C44), cell count data (C46-C47), and annexin V staining (C48-C50) in Figure 3 provide strong evidence. The critical control showing equivalent NMD target upregulation in single and double knockdowns (C53-C55) demonstrates suppression is not due to NMD restoration. The partial rescue of cell numbers versus complete rescue of apoptosis (C52) suggests additional Gadd45-independent effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "8b37918b-c304-496b-948a-d6e3ca159b68",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "In HEK293 cells, UPF1 knockdown increased GADD45A expression and reduced cell numbers. Co-transfection with GADD45A siRNA did not further reduce cell count compared to GADD45A siRNA alone, suggesting UPF1 knockdown is no longer detrimental in the absence of GADD45A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C60 extend the findings to human cells using data in Figure 3\u2014figure supplement 1. The epistasis experiment (C57) showing no additive effect of double knockdown is well-controlled with equivalent UPF1 knockdown (C58). However, the interpretation is somewhat complicated by the fact that GADD45A knockdown alone reduces cell numbers, making the conclusion (C59) less definitive than in the 3T3 experiments. Nevertheless, the data support conservation to human cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "d9c30059-0ae7-487a-a5b6-1fa810a2d26f",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A single conserved NMD target, Gadd45 mRNA, can account for lethality in Drosophila lacking core NMD genes, and this requirement is evolutionarily conserved from flies to mammals. Degradation of Gadd45 mRNA is the essential NMD function, and surveillance of abnormal mRNAs is not necessarily required for viability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6 and C61-C62 represent the paper's central conclusions. These are well-supported by the genetic suppression data (full restoration of viability in Upf225G mutants, partial suppression of null mutants), the demonstration that NMD function is not restored, and the conservation experiments in mammalian cells. The claim that PTC surveillance is not required for viability (C6) is strongly supported by C25, C89, C90 showing PTC-containing mRNAs remain stabilized despite viability restoration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "9d93167b-2679-4a79-94f9-e5064b8b9bf9",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "While up-regulation of Gadd45 is a major factor contributing to NMD mutant lethality, other NMD targets likely also contribute. Viability is not restored to 100% in null Upf1 or Upf2; Gadd45 double mutants, and loss of Gadd45 suppresses cell death but not all cell cycle defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 appropriately acknowledge the limitations of the findings. The incomplete suppression in null mutants (C65, documented in Figure 1D) and partial rescue of eye clone size (C40, C66) provide clear evidence that Gadd45 is not the sole mediator. This nuanced interpretation strengthens rather than weakens the paper by acknowledging complexity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "cdbdfd7d-424a-4eea-82e9-76b4cd88622a",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "NMD functions to degrade both abnormal PTC-containing mRNAs and wild-type endogenous mRNAs. Loss of core NMD genes causes lethality in most eukaryotes, but the relative contributions of PTC surveillance versus endogenous target regulation to this lethality has been unclear.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C7-C11 establish the background and motivation for the study. These are well-supported by citations to prior work and represent established knowledge in the field. Claim C11 correctly identifies the open question that the study addresses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "d4031efc-d19d-47fa-a617-ddc421efd864",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Activation of MTK1 in mammals triggers a MAPK signaling cascade promoting apoptosis. Over-expression of Gadd45 in Drosophila induces apoptosis, and Drosophila cells lacking NMD function show excess cell death in various tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 provide mechanistic context from prior work linking GADD45 to apoptosis. These are supported by appropriate citations and establish the rationale for examining cell death phenotypes in NMD mutants.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "688adefb-56a0-4632-9b54-9155e452e5a9",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Gadd45 is one of the few genes directly regulated by NMD in both flies and mammals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C42 is supported by multiple citations to prior work and provides important evolutionary context for why Gadd45 was a strong candidate for mediating conserved NMD functions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "4f65f592-3ab9-42f0-9d6a-af726ba0134a",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Cell cycle defects may be particularly pronounced during development of certain tissues or developmental stages, and NMD has been reported to have differing stage and tissue-specific activities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 provide context for the incomplete suppression observed in some tissues. C68 is supported by citations to prior work. C67 is reasonable speculation based on the observed tissue-specific differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "55392f88-5690-46f4-a3a1-2d165e79ddb9",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors speculate that NMD regulation of Gadd45 may function as a 'molecular tripwire' for viral infection, as viruses inhibit NMD and the resulting GADD45 accumulation could trigger cell death. This is supported by observations that NMD restricts pathogens in plants and that organisms not relying on programmed cell death for viral defense do not require NMD for viability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C69-C77 present an interesting hypothesis about the evolutionary function of NMD-Gadd45 regulation in immunity. While supported by citations to prior work on NMD and pathogen restriction (C69, C70, C73, C76), the 'molecular tripwire' mechanism (C71, C72, C77) is speculative and not directly tested in this study. The comparative observations across species (C73-C76) provide circumstantial support but do not constitute direct evidence for the proposed mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    },
+    {
+      "id": "0538425b-b219-4bd4-8293-aa3dc0bae812",
+      "content_id": "a2463dd1-e58f-4499-9eee-fb8e841c6e1a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The authors propose that inhibiting both NMD and Gadd45 pathways in combination could provide effective and safe treatment for genetic diseases caused by PTC-containing alleles, addressing concerns about side effects of NMD inhibition alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C81 discuss therapeutic implications. While C78 and C80 accurately describe the therapeutic rationale and concerns from prior work, the proposal for combination therapy (C81) is speculative and not tested in this study. The speculation is reasonable given the findings but would require extensive additional work including disease models and safety studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:02:14.137943Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "04aa491e-8426-4f29-aead-2f8402792e37",
+      "result_id": "d4b20ab2-5a15-4aa4-a6e9-509f7bcdedef"
+    },
+    {
+      "claim_id": "8f74d66d-40c3-42ab-9ffe-a055c70a4e8d",
+      "result_id": "d4b20ab2-5a15-4aa4-a6e9-509f7bcdedef"
+    },
+    {
+      "claim_id": "7fc15a95-875b-4877-afb8-96e2ac19bd53",
+      "result_id": "d4b20ab2-5a15-4aa4-a6e9-509f7bcdedef"
+    },
+    {
+      "claim_id": "ef94ac5c-a9ae-470a-8084-507d00840a9d",
+      "result_id": "d4b20ab2-5a15-4aa4-a6e9-509f7bcdedef"
+    },
+    {
+      "claim_id": "03b8e434-0b95-43ec-a966-1ce99b148349",
+      "result_id": "d4b20ab2-5a15-4aa4-a6e9-509f7bcdedef"
+    },
+    {
+      "claim_id": "4c3de8be-21b6-4fcf-87ed-2e3c4e5418f4",
+      "result_id": "d4b20ab2-5a15-4aa4-a6e9-509f7bcdedef"
+    },
+    {
+      "claim_id": "fc6b9bcd-8ad1-42b5-be9e-33303843bb59",
+      "result_id": "ca462866-0151-4afb-9827-2bbd66c8ba2a"
+    },
+    {
+      "claim_id": "6c03788f-0ac0-46ea-a46a-3f9793e46e4e",
+      "result_id": "ca462866-0151-4afb-9827-2bbd66c8ba2a"
+    },
+    {
+      "claim_id": "77d215cc-064f-4f4e-b25b-6780fa112d1c",
+      "result_id": "ca462866-0151-4afb-9827-2bbd66c8ba2a"
+    },
+    {
+      "claim_id": "16be8eb4-4a37-4ad8-aca9-b01e3ee4d908",
+      "result_id": "ca462866-0151-4afb-9827-2bbd66c8ba2a"
+    },
+    {
+      "claim_id": "4fcfb80c-2b70-49f9-8dba-466e2ebf0e95",
+      "result_id": "ca462866-0151-4afb-9827-2bbd66c8ba2a"
+    },
+    {
+      "claim_id": "f676bdbc-e9e0-4325-a2cb-e9cf886ba166",
+      "result_id": "ca462866-0151-4afb-9827-2bbd66c8ba2a"
+    },
+    {
+      "claim_id": "86e0392f-5932-4b62-af4b-995dad59a396",
+      "result_id": "ca462866-0151-4afb-9827-2bbd66c8ba2a"
+    },
+    {
+      "claim_id": "905eafe2-8087-422c-af4c-eb31c8f02a63",
+      "result_id": "ca462866-0151-4afb-9827-2bbd66c8ba2a"
+    },
+    {
+      "claim_id": "5064bb56-19df-41b6-b5c0-2541a516055e",
+      "result_id": "ca462866-0151-4afb-9827-2bbd66c8ba2a"
+    },
+    {
+      "claim_id": "b8c24d74-9e19-437b-ab8e-c43ea6aabb62",
+      "result_id": "ca462866-0151-4afb-9827-2bbd66c8ba2a"
+    },
+    {
+      "claim_id": "746dfe5d-88f4-4ead-b9bb-1f53c30ff21d",
+      "result_id": "395aea9a-3a33-445a-bd24-ed0fe4bb2261"
+    },
+    {
+      "claim_id": "7a1c8aa0-7c96-431c-9046-6a8e6fa8e5c2",
+      "result_id": "395aea9a-3a33-445a-bd24-ed0fe4bb2261"
+    },
+    {
+      "claim_id": "980bd258-1a27-4380-affc-d72f4e421c6f",
+      "result_id": "395aea9a-3a33-445a-bd24-ed0fe4bb2261"
+    },
+    {
+      "claim_id": "40eb2f4a-61a3-4140-90f5-a75e1b57b744",
+      "result_id": "395aea9a-3a33-445a-bd24-ed0fe4bb2261"
+    },
+    {
+      "claim_id": "51cb1d00-a5eb-48e9-8053-312d7adbac42",
+      "result_id": "4cee30ff-ea4e-4fd1-94ce-963a9d9b62d1"
+    },
+    {
+      "claim_id": "71aab46e-cf91-481f-a7a1-8dc3e53107ca",
+      "result_id": "4cee30ff-ea4e-4fd1-94ce-963a9d9b62d1"
+    },
+    {
+      "claim_id": "a53aacda-7fdc-4147-99f7-57d38a5bf6d3",
+      "result_id": "4cee30ff-ea4e-4fd1-94ce-963a9d9b62d1"
+    },
+    {
+      "claim_id": "caa2445b-1eb4-4edd-9244-c9af270bb66a",
+      "result_id": "b12c7c3e-40e0-43f9-902b-e360e0b48a0e"
+    },
+    {
+      "claim_id": "c6dbb223-1e40-4a62-b612-f31e29662bec",
+      "result_id": "b12c7c3e-40e0-43f9-902b-e360e0b48a0e"
+    },
+    {
+      "claim_id": "dbf3fafc-0bac-41cc-8ce6-f6e278e3ffe8",
+      "result_id": "b12c7c3e-40e0-43f9-902b-e360e0b48a0e"
+    },
+    {
+      "claim_id": "4630b074-665c-4247-8947-79419443c709",
+      "result_id": "b12c7c3e-40e0-43f9-902b-e360e0b48a0e"
+    },
+    {
+      "claim_id": "f732634f-8f24-4eb6-88aa-b4b18956dcd6",
+      "result_id": "b12c7c3e-40e0-43f9-902b-e360e0b48a0e"
+    },
+    {
+      "claim_id": "aeb1f2d2-1cf4-42a0-941e-bf6d7769f2ce",
+      "result_id": "b12c7c3e-40e0-43f9-902b-e360e0b48a0e"
+    },
+    {
+      "claim_id": "71867789-6909-4d20-9b7b-00b06b0bae9f",
+      "result_id": "f0c62bd5-3845-412f-957d-27bdcb760244"
+    },
+    {
+      "claim_id": "3d089c88-8c92-4ca5-adf5-2689448ac489",
+      "result_id": "f0c62bd5-3845-412f-957d-27bdcb760244"
+    },
+    {
+      "claim_id": "4a3c7d7e-dfdb-40b3-a94f-bda9105968b0",
+      "result_id": "f0c62bd5-3845-412f-957d-27bdcb760244"
+    },
+    {
+      "claim_id": "a27a6739-ed34-4830-bcb0-4467551b0609",
+      "result_id": "f0c62bd5-3845-412f-957d-27bdcb760244"
+    },
+    {
+      "claim_id": "ddd8e8b1-0a5c-4995-b1cf-ffb25f523932",
+      "result_id": "b26ca899-b944-4115-b8b2-e16a4b1252fc"
+    },
+    {
+      "claim_id": "201ed811-9197-4b36-a8ec-a80cfed17e55",
+      "result_id": "b26ca899-b944-4115-b8b2-e16a4b1252fc"
+    },
+    {
+      "claim_id": "a7d19cd6-2727-4cbf-8942-ac1e37168604",
+      "result_id": "b26ca899-b944-4115-b8b2-e16a4b1252fc"
+    },
+    {
+      "claim_id": "1cc2dff2-f9be-4a84-bbb3-f9c14c172b88",
+      "result_id": "0ced0616-377f-4388-9134-a9e614952ddb"
+    },
+    {
+      "claim_id": "970563af-1995-4282-a248-f822df1874b2",
+      "result_id": "0ced0616-377f-4388-9134-a9e614952ddb"
+    },
+    {
+      "claim_id": "2d058d61-31c6-4f11-808b-c7582e65ce98",
+      "result_id": "0ced0616-377f-4388-9134-a9e614952ddb"
+    },
+    {
+      "claim_id": "1377e8bb-1238-4e81-9d23-fe3b15965a00",
+      "result_id": "0ced0616-377f-4388-9134-a9e614952ddb"
+    },
+    {
+      "claim_id": "e4b81c15-788e-4be5-af81-63035fc6b869",
+      "result_id": "0ced0616-377f-4388-9134-a9e614952ddb"
+    },
+    {
+      "claim_id": "b52cc36b-951c-44f3-991c-2577bdc36710",
+      "result_id": "0ced0616-377f-4388-9134-a9e614952ddb"
+    },
+    {
+      "claim_id": "7d2ab903-44c4-4263-bc0a-a878ecebcf7c",
+      "result_id": "0ced0616-377f-4388-9134-a9e614952ddb"
+    },
+    {
+      "claim_id": "eb76450f-9a2c-4805-b2ca-ea7dc14d22fb",
+      "result_id": "0ced0616-377f-4388-9134-a9e614952ddb"
+    },
+    {
+      "claim_id": "2d63c9b9-cc2f-4475-88b9-a5d87a4fc2a0",
+      "result_id": "0ced0616-377f-4388-9134-a9e614952ddb"
+    },
+    {
+      "claim_id": "ca2656a5-913d-4f0a-9bb5-7a714a3d348b",
+      "result_id": "0ced0616-377f-4388-9134-a9e614952ddb"
+    },
+    {
+      "claim_id": "34bb0b6b-ce79-42ed-b675-207d98a5c059",
+      "result_id": "0ced0616-377f-4388-9134-a9e614952ddb"
+    },
+    {
+      "claim_id": "0442f4e3-482c-458c-bb11-42c59f9dd69a",
+      "result_id": "0ced0616-377f-4388-9134-a9e614952ddb"
+    },
+    {
+      "claim_id": "0a91f0c2-b4d0-4521-be7e-f7b492afd676",
+      "result_id": "0ced0616-377f-4388-9134-a9e614952ddb"
+    },
+    {
+      "claim_id": "69a453c0-c5f8-4aa1-bb10-a9e2578abad0",
+      "result_id": "8b37918b-c304-496b-948a-d6e3ca159b68"
+    },
+    {
+      "claim_id": "c86bf4a7-6259-4cef-8d50-1655c5bb80dd",
+      "result_id": "8b37918b-c304-496b-948a-d6e3ca159b68"
+    },
+    {
+      "claim_id": "8cb2e70d-fe2c-43e2-bc84-21f43fcf9e45",
+      "result_id": "8b37918b-c304-496b-948a-d6e3ca159b68"
+    },
+    {
+      "claim_id": "18154296-d245-46f3-893d-3f30bf57a933",
+      "result_id": "8b37918b-c304-496b-948a-d6e3ca159b68"
+    },
+    {
+      "claim_id": "fe191a55-cb4b-4c15-95c8-69c18e78c535",
+      "result_id": "8b37918b-c304-496b-948a-d6e3ca159b68"
+    },
+    {
+      "claim_id": "56d6fe74-b7d0-4dff-b7d9-31bcbbb50a33",
+      "result_id": "d9c30059-0ae7-487a-a5b6-1fa810a2d26f"
+    },
+    {
+      "claim_id": "a2a3c6db-5e97-4e38-b7d0-08446157ae1f",
+      "result_id": "d9c30059-0ae7-487a-a5b6-1fa810a2d26f"
+    },
+    {
+      "claim_id": "ff4a80ea-a6eb-4b7c-b3fc-2fc290f43f72",
+      "result_id": "d9c30059-0ae7-487a-a5b6-1fa810a2d26f"
+    },
+    {
+      "claim_id": "bddcb821-7d6f-4b51-b8b9-fb6fc1657798",
+      "result_id": "d9c30059-0ae7-487a-a5b6-1fa810a2d26f"
+    },
+    {
+      "claim_id": "0ef9e362-9339-4b74-b191-a1edfc499381",
+      "result_id": "d9c30059-0ae7-487a-a5b6-1fa810a2d26f"
+    },
+    {
+      "claim_id": "36ede8a9-4118-49c3-8cfc-cdf08bf460f2",
+      "result_id": "d9c30059-0ae7-487a-a5b6-1fa810a2d26f"
+    },
+    {
+      "claim_id": "b5c7dca9-86e2-404f-9c7e-4c17b0337627",
+      "result_id": "9d93167b-2679-4a79-94f9-e5064b8b9bf9"
+    },
+    {
+      "claim_id": "1ae9fb2e-8199-4049-9437-a677a7d512c8",
+      "result_id": "9d93167b-2679-4a79-94f9-e5064b8b9bf9"
+    },
+    {
+      "claim_id": "2f6ff329-67fb-4599-9f3e-cf4c320ec52d",
+      "result_id": "9d93167b-2679-4a79-94f9-e5064b8b9bf9"
+    },
+    {
+      "claim_id": "57e063f3-1bd6-4869-a15a-9daff0c5761d",
+      "result_id": "9d93167b-2679-4a79-94f9-e5064b8b9bf9"
+    },
+    {
+      "claim_id": "39ed3eb7-3aca-4a8f-ae8b-92eaed1ed0cc",
+      "result_id": "cdbdfd7d-424a-4eea-82e9-76b4cd88622a"
+    },
+    {
+      "claim_id": "858ef6f2-606f-4e00-97a7-b35e9f31be10",
+      "result_id": "cdbdfd7d-424a-4eea-82e9-76b4cd88622a"
+    },
+    {
+      "claim_id": "16db4399-7089-4f60-8652-90bf4a934988",
+      "result_id": "cdbdfd7d-424a-4eea-82e9-76b4cd88622a"
+    },
+    {
+      "claim_id": "2a7be49c-ddbc-49d5-bca7-c1da31b49cda",
+      "result_id": "cdbdfd7d-424a-4eea-82e9-76b4cd88622a"
+    },
+    {
+      "claim_id": "ebd3ed52-5e3d-4a95-85e8-a939de3db162",
+      "result_id": "cdbdfd7d-424a-4eea-82e9-76b4cd88622a"
+    },
+    {
+      "claim_id": "0b6caa17-48ca-48c7-8887-419a1610e965",
+      "result_id": "cdbdfd7d-424a-4eea-82e9-76b4cd88622a"
+    },
+    {
+      "claim_id": "b17f4f46-f111-4fff-b221-03db685622d2",
+      "result_id": "cdbdfd7d-424a-4eea-82e9-76b4cd88622a"
+    },
+    {
+      "claim_id": "666572e1-b534-4b9b-ada2-4f1876586248",
+      "result_id": "d4031efc-d19d-47fa-a617-ddc421efd864"
+    },
+    {
+      "claim_id": "475fd83c-d0ba-4e9e-b44c-cf6623f9fcb4",
+      "result_id": "d4031efc-d19d-47fa-a617-ddc421efd864"
+    },
+    {
+      "claim_id": "de2b2725-4112-42ed-966e-8cc92ca4f290",
+      "result_id": "d4031efc-d19d-47fa-a617-ddc421efd864"
+    },
+    {
+      "claim_id": "6590dedf-fea6-4e1e-ae47-ae40bb6192c6",
+      "result_id": "688adefb-56a0-4632-9b54-9155e452e5a9"
+    },
+    {
+      "claim_id": "f9502cf9-7716-4f95-9943-36fd0044788e",
+      "result_id": "4f65f592-3ab9-42f0-9d6a-af726ba0134a"
+    },
+    {
+      "claim_id": "6bd2d738-2ca4-4133-91ed-87c9347cd287",
+      "result_id": "4f65f592-3ab9-42f0-9d6a-af726ba0134a"
+    },
+    {
+      "claim_id": "32367664-d81d-4f2d-a488-ea4cf749623d",
+      "result_id": "55392f88-5690-46f4-a3a1-2d165e79ddb9"
+    },
+    {
+      "claim_id": "773913ca-64aa-4c13-bbdd-4c51c95fcecb",
+      "result_id": "55392f88-5690-46f4-a3a1-2d165e79ddb9"
+    },
+    {
+      "claim_id": "d687531e-5bbb-4546-9a88-4f08dc5ee8cb",
+      "result_id": "55392f88-5690-46f4-a3a1-2d165e79ddb9"
+    },
+    {
+      "claim_id": "73e96782-8b53-471c-82fe-716c9846bbca",
+      "result_id": "55392f88-5690-46f4-a3a1-2d165e79ddb9"
+    },
+    {
+      "claim_id": "cd79a3a0-84cd-40a9-8128-17042d05e52d",
+      "result_id": "55392f88-5690-46f4-a3a1-2d165e79ddb9"
+    },
+    {
+      "claim_id": "a98779a5-ec0e-47b1-88ba-24d6d9d36e21",
+      "result_id": "55392f88-5690-46f4-a3a1-2d165e79ddb9"
+    },
+    {
+      "claim_id": "a0976136-0141-45c7-bdf1-56b2d32515ed",
+      "result_id": "55392f88-5690-46f4-a3a1-2d165e79ddb9"
+    },
+    {
+      "claim_id": "70df1531-c08a-4484-92cf-1491f0219873",
+      "result_id": "55392f88-5690-46f4-a3a1-2d165e79ddb9"
+    },
+    {
+      "claim_id": "b856b189-438d-4988-8a98-768ce48b42b9",
+      "result_id": "55392f88-5690-46f4-a3a1-2d165e79ddb9"
+    },
+    {
+      "claim_id": "5622ce33-acf7-41d7-bd52-ef235737db07",
+      "result_id": "0538425b-b219-4bd4-8293-aa3dc0bae812"
+    },
+    {
+      "claim_id": "7938ec26-71c8-4725-a2d2-6fdff5f97270",
+      "result_id": "0538425b-b219-4bd4-8293-aa3dc0bae812"
+    },
+    {
+      "claim_id": "82412ab6-beb5-472b-bcf2-8536b129d07e",
+      "result_id": "0538425b-b219-4bd4-8293-aa3dc0bae812"
+    },
+    {
+      "claim_id": "34656f64-4ba2-448c-9875-a505a4cd9463",
+      "result_id": "0538425b-b219-4bd4-8293-aa3dc0bae812"
+    }
+  ],
+  "comparisons": []
+}

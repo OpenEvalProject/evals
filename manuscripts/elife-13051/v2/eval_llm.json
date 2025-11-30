@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C96"
+    ],
+    "result": "A one-state model with constant polymerase initiation rates can produce exponential distributions of pulse durations, challenging the interpretation that exponential pulse distributions necessarily indicate a two-state model. The pulse duration depends on initiation rate, detection threshold, frame interval, and elongation rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C35 and C96 collectively demonstrate through Monte Carlo simulations and theoretical analysis that a simple one-state (Poisson) model can generate exponential pulse duration distributions. The theory successfully predicts pulse durations incorporating multiple experimental parameters (C29), and simulations confirm these predictions (C26). This is a well-supported finding that challenges prior interpretations in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C48",
+      "C49",
+      "C50",
+      "C55"
+    ],
+    "result": "Autocorrelation analysis of act5 transcription reveals long-timescale decay (several minutes to tens of minutes) that cannot be explained by a simple one-state or two-state model, indicating multiple 'ON' states with different initiation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 describe autocorrelation analysis showing long-timescale decay beyond RNA dwell time, supported by Figure 2B. Claims C48-C49 show experimental data inconsistent with one-state or simple two-state models. The inference of multiple ON states (C40) follows logically from the persistence of slow decay when analyzing only frames with spots present. These claims are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "FRAP measurements establish RNA dwell time (~170 s for 5' insertion), elongation rate (22 nt/s), and termination time (60-70 s) for act5. Dwell time variations are not the primary source of spot intensity variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 report quantitative measurements from FRAP experiments (Figure 2C) using multiple MS2 insertion positions. The conclusion that dwell time variations don't explain intensity variability (C46-C47) is supported by Figure 2D showing no significant differences in recovery time across intensity groups. The measurements and conclusions are internally consistent and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C90",
+      "C91"
+    ],
+    "result": "Hidden Markov modeling reveals that act5 transcription is best described by a continuum or spectrum of initiation rate states rather than a small number of discrete states. The fit to experimental data continually improves as more states are added beyond 3 states, and the optimal 3-state model shows non-Poissonian polymerase distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 describe HMM analysis showing continual improvement in AIC with increasing state numbers (Figure 3D) and non-Poissonian distributions in the 3-state model (Figure 3E). Claim C62 adds supporting evidence from cumulative polymerase plots. The inference of a continuum model (C58, C90-C91) is well-justified by the data. The HMM framework was validated on simulated data (Figure 3C), strengthening confidence in the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C5",
+      "C94"
+    ],
+    "result": "The timescale of initiation rate variation through the spectrum of activity states is approximately 5-6 minutes on average, though constant initiation rates can be sustained for up to 15 minutes. This is an order of magnitude longer than elongation rate fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 report timescales from autocorrelation analysis (Figure 3F) and Gibbs sampling (Figure 3\u2014figure supplement 2). Claim C5 states initiation rate variations persist an order of magnitude longer than elongation fluctuations, consistent with the ~40s upper limit for elongation (C4) versus ~5-6 min for initiation. Claim C94 confirms these timescales were observed. The measurements are consistent across multiple analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C97",
+      "C98"
+    ],
+    "result": "The upper limit for the timescale of gene-wide elongation rate fluctuations is approximately 40 seconds. Independent polymerase-by-polymerase elongation fluctuations cannot account for spot intensity variability, but global elongation fluctuations could contribute to the continuum of transcriptional states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 describe FRAP simulations (Figure 4A-B) showing that only global elongation fluctuations with timescales up to ~40s are consistent with experimental data. The conclusion that elongation fluctuations could contribute but don't fully explain the complexity (C69, C98) is supported by the analysis in Figure 4C-D. The upper limit estimate (C4, C97) is derived from systematic comparison of simulations with experimental FRAP data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Elongation fluctuations with a 43s timescale can partially recapitulate the variability in spot intensities, but the super-Poissonian behavior of experimental data is not fully reproduced, indicating additional complexity beyond simple elongation fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 describe analysis comparing simulated elongation fluctuations with experimental data. The 43s timescale shows comparable AIC improvement (C70, Figure 4C), suggesting potential contribution (C71), but the failure to reproduce super-Poissonian behavior (C72, Figure 4D) indicates limitations. This nuanced conclusion appropriately acknowledges both the potential contribution and limitations of elongation fluctuations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "TATA box mutations reduce the accessibility of high activity states without affecting the duration or frequency of active/inactive state transitions. The mutations cause cells to spend less time at high initiation rates and more time at lower rates, while the timescale of initiation rate variability remains unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C82 describe comprehensive analysis of TATA mutants (Figure 5). The reduction in high activity state occupancy (C75, Figure 5C) without changes in switching rates (C77-C79, Figure 5E) or timescales (C76, Figure 5D) is well-documented. The conclusion that TATA mutations modulate accessible initiation rates rather than switching dynamics (C82) is well-supported by multiple lines of evidence. The slight reduction in spot intensity (C73) and similar dwell times (C74) provide additional context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C8",
+      "C58",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C92",
+      "C93",
+      "C114"
+    ],
+    "result": "The data support a continuum model of transcriptional states where the initiation rate fluctuates slowly between different levels of activity. This continuum may arise from rapid 'microbursting' behavior integrated over RNA dwell time, and is consistent with recent theoretical models of rapid state switching. When measured by steady-state methods like smFISH, this continuum appears as fewer discrete states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C58, C92-C93 articulate the continuum model as the main conclusion. Claims C83-C86 connect this to theoretical frameworks and provide mechanistic interpretation. Claims C87-C89 demonstrate through simulation (Figure 6C) that the continuum model is consistent with smFISH data when fit to a two-state model, explaining apparent discrepancies between methods. The model is well-supported by the totality of evidence, though some mechanistic details remain speculative (C92, C114).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "An MS2 array was integrated after the promoter of the endogenous actin5 locus in Dictyostelium cells. Act5 is a strongly expressed gene, and spot presence/absence durations have approximately exponential distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 describe the experimental system. The MS2 integration (C21) is documented in Methods. The characterization of act5 as strongly expressed (C22) is consistent with the observed high transcription levels. The exponential distributions (C23) are shown in Figure 1\u2014figure supplement 1. These are straightforward methodological and observational claims that are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Dictyostelium cells are almost exclusively in G2 phase, meaning most cells have two replicated act5 alleles contributing to a single transcription spot. This creates the possibility of a higher initiation rate state when both copies are simultaneously active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 describe the cell cycle properties of Dictyostelium, supported by citations to prior work. The inference that two alleles contribute to spots (C52) follows logically from the G2 predominance. The hypothesis of a potential third state from simultaneous activation (C54) is reasonable given the two-allele system, though it remains a hypothesis rather than a demonstrated finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Transcriptional bursting is a conserved phenomenon across all forms of life and is proposed to be a major driver of gene expression heterogeneity. Early models suggested bursting arises from alternating inactive and permissive states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C9-C11 provide background context from the literature. These are well-established facts in the field, supported by multiple citations. The claims accurately represent prior knowledge and set up the motivation for the current study. No original data is presented for these claims, but they are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The one-state model assumes constant transcription probability and generates Poisson-distributed RNA counts, which fits some systems like budding yeast. The two-state (random telegraph) model involves stochastic switching between active and inactive states and can predict increased variance in transcript abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 describe standard theoretical models in the field. These are accurate descriptions of established models, appropriately cited (C13, C15). The claims provide necessary theoretical background for understanding the study's contributions. No issues with the characterization of these models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C107",
+      "C108"
+    ],
+    "result": "Recent work demonstrates that burst size and frequency can be modulated by extracellular signals and cell properties such as volume and cell cycle stage, challenging the notion of fixed bursting parameters in the two-state model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 and C107-C108 cite recent literature showing modulation of bursting parameters. These claims accurately represent prior work and provide important context for why the field needs to move beyond simple two-state models. The citations appear appropriate and the characterization of prior work is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C24"
+    ],
+    "result": "The MS2 system uses stem loop arrays to visualize transcription in living cells, with spot intensity reflecting nascent RNA load. Previous work interpreted exponential ON/OFF durations as evidence for the two-state model with rate-limiting transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 and C24 describe the MS2 methodology and prior interpretations. These are accurate descriptions of established techniques and prior work, appropriately cited. The claims provide necessary methodological background and set up the contrast with the current study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Autocorrelation analysis measures the ratio of intensity fluctuations relative to mean intensity. For a Poisson gene, this ratio relates to the average number of bound polymerases, allowing initiation rate estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 describe the autocorrelation method, citing prior work (Larson et al., 2011). This is an accurate description of an established analytical approach. The claims provide necessary methodological background for understanding the autocorrelation analysis performed in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The inactive state may involve low-level basal transcription below detection threshold. The longer periods of inactivity may reflect chromatin remodeling dynamics rather than specific transcriptional regulator binding. TATA mutations in complex systems may show buffering effects compared to simpler systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C104 involve interpretations and comparisons with other systems. Claim C99 acknowledges a limitation (detection threshold). Claims C100 and C102 are speculative interpretations of the TATA mutant data. Claims C103-C104 compare with other systems but the comparison is somewhat speculative. While these interpretations are reasonable, they go beyond what the data directly demonstrate and involve significant speculation about mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C109",
+      "C110",
+      "C111",
+      "C113"
+    ],
+    "result": "The act5 gene shows some developmental regulation despite being considered 'housekeeping'. The promoter is <700 bp, the gene has no introns, and ~60% of the Dictyostelium genome encodes protein. The findings may generalize to other genes, and the complexity of eukaryotic transcription machinery is consistent with the continuum view.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105 and C109-C111 describe properties of the act5 gene and Dictyostelium genome, appropriately cited. Claim C106 is a reasonable generalization. Claim C113 is general knowledge. These claims provide important context about the experimental system and discuss generalizability. The characterizations are accurate and appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Live cell analysis of nascent RNA dynamics allows direct extraction of fluctuation timescales, which is not possible from measurements of protein abundance or steady-state transcript counts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 makes a methodological comparison between live cell and steady-state approaches. This is a valid point supported by the demonstration that the continuum model appears as fewer states in simulated smFISH data (C88). The claim accurately characterizes an advantage of the live cell approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "The cumulative polymerase plot is composed of linear segments representing periods of constant initiation rate, with diversity of gradients indicating a spectrum of initiation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 describes analysis of cumulative polymerase plots (Figure 3\u2014figure supplement 2) showing linear segments. This observation supports the continuum model by showing diverse initiation rates. The claim is supported by the data shown, though the interpretation involves some inference about what the linear segments represent.",
+    "result_type": "MINOR"
+  }
+]

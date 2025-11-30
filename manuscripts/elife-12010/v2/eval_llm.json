@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C52",
+      "C53",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C84"
+    ],
+    "result": "Loss of function mutations in pmk-1 or sek-1 cause GLR-1::GFP to accumulate in elongated endosomal structures along the ventral cord, with decreased synaptic puncta. This phenotype is cell-autonomous, rescued by cell-specific expression, and does not require the canonical MAPKKK NSY-1, suggesting a novel p38 MAPK pathway regulates GLR-1 localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C72 provide converging evidence from multiple genetic approaches (loss-of-function, rescue, double mutants, epistasis analysis) with quantitative imaging data (Figures 1, 2). The cell-autonomous rescue (C57, C64), lack of NSY-1 requirement (C68), and exclusion of other MAPKKKs (C70-C71) strongly support a novel p38 MAPK pathway. The phenotype is well-characterized with appropriate controls (SNB-1, mRNA levels).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Loss of sek-1 or pmk-1 reduces spontaneous reversal frequency similar to glr-1 mutants, and this behavioral defect is rescued by cell-specific expression of wild-type cDNA, demonstrating that SEK-1 and PMK-1 are required for GLR-1 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 show consistent behavioral phenotypes matching the GLR-1 localization defects, with appropriate controls (skn-1 mutants showing normal behavior) and cell-specific rescue experiments (Figure 1H). The behavioral assay is standardized and the results align with the trafficking data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "GLR-1 accumulations in sek-1 and pmk-1 mutants are post-endocytic, as shown by suppression with dominant-negative RAB-5 and increased colocalization with the early endosomal marker SYX-7, indicating that p38 MAPK signaling promotes GLR-1 recycling from endosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C96 use two complementary approaches (RAB-5 suppression and SYX-7 colocalization) to demonstrate the post-endocytic nature of GLR-1 accumulations (Figure 2). The ~50% increase in colocalization with SYX-7 in mutants is quantified and statistically significant. The RAB-5(GDP) suppression is a well-established approach for testing endocytic requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Loss of p38 MAPK signaling occludes the effects of hypoxia and egl-9 mutations on GLR-1 localization, and this regulation does not require HIF-1, suggesting that p38 MAPK regulates GLR-1 through an EGL-9-dependent, HIF-1-independent mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C105 demonstrate genetic epistasis through double mutant analysis showing no additive effects (Figure 3E-F). The lack of additivity between pmk-1/sek-1 mutations and either hypoxia or egl-9 mutations, combined with the lack of suppression by hif-1 mutations, provides strong evidence for pathway placement. Statistical analysis confirms no significant differences between single and double mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "PMK-1::GFP is enriched in neuronal nuclei under normoxia but decreases and becomes more diffusely distributed under hypoxia, suggesting oxygen elevates PMK-1 levels through a post-transcriptional mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 show clear changes in PMK-1::GFP localization with oxygen levels (Figure 3G-I). The inference of post-transcriptional regulation (C109) is reasonable given the use of constitutive promoter and 3'UTR sequences that don't respond to oxygen. However, the mechanism remains speculative and would benefit from additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "CDK-5 acts genetically downstream of SEK-1 and PMK-1, as cdk-5 mutations suppress both the GLR-1 localization defects and behavioral phenotypes of sek-1 and pmk-1 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 demonstrate clear genetic suppression in double mutants (Figure 4). Both GLR-1 trafficking and behavioral phenotypes are rescued by removing cdk-5, placing it downstream of p38 MAPK signaling. This is consistent with prior work on the EGL-9/LIN-10/CDK-5 pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "LIN-10::GFP is diffusely distributed in sek-1 and pmk-1 mutants, similar to egl-9 mutants, and this delocalization is completely suppressed by cdk-5 mutations, indicating that p38 MAPK signaling promotes LIN-10 localization by antagonizing CDK-5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C121 show consistent LIN-10 localization changes across multiple genetic backgrounds (Figure 5). The complete suppression by cdk-5 mutations and the quantification of both puncta number and integrated optical density provide strong evidence. The genetic logic is sound and consistent with the GLR-1 data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "EGL-9E::GFP is diffusely distributed in sek-1 and pmk-1 mutants, but this delocalization is not suppressed by cdk-5 mutations and does not require LIN-10, indicating that p38 MAPK acts upstream of EGL-9 to promote its subcellular localization independent of LIN-10 or CDK-5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C128 establish the genetic order through epistasis analysis (Figure 6). The lack of suppression by cdk-5 and independence from LIN-10 clearly place p38 MAPK upstream of EGL-9. The quantification of both puncta number and IOD strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Loss of p38 MAPK signaling activates the canonical HIF-1-dependent hypoxia response, as shown by increased expression of HIF-1 target genes (cysl-2, nhr-57) and HIF-1::GFP accumulation in pmk-1 mutants under normoxia, demonstrating that p38 MAPK inhibits HIF-1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C139 use three complementary approaches (transcriptional reporter, qRT-PCR, HIF-1::GFP visualization) to demonstrate HIF-1 activation in p38 MAPK mutants (Figure 7). The requirement for HIF-1 in nhr-57 upregulation (C134) confirms specificity. The occlusion of hypoxia effects by pmk-1 mutations (C131-C132) supports pathway placement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "PMK-1 p38 MAPK activity declines with age, as shown by decreased phospho-PMK-1 levels, reduced pmk-1 mRNA, and loss of PMK-1-dependent transcriptional reporter expression in older animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C146 use multiple approaches (Western blot, qRT-PCR, transcriptional reporter) to demonstrate age-dependent decline in PMK-1 activity (Figure 8). The 50% decrease in phospho-PMK-1 and 30% decrease in mRNA are quantified with appropriate controls. The transcriptional reporter provides functional confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "GLR-1 recycling and function decline with age due to decreased p38 MAPK signaling and CDK-5 activity. This age-dependent decline can be prevented by PMK-1 overexpression or cdk-5 removal, demonstrating that changes in p38 MAPK signaling contribute to age-associated neuronal dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C160 establish a clear link between aging, p38 MAPK decline, and GLR-1 dysfunction (Figure 9). The rescue by PMK-1 overexpression (C152-C153) and suppression by cdk-5 mutations (C154-C157) provide strong mechanistic evidence. The occlusion experiments (C149-C150) support the pathway model. However, the claim that 'additional factors contribute' (C158) acknowledges incomplete rescue, which is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "PMK-2 does not regulate GLR-1 localization either by itself or redundantly with PMK-1, as pmk-2 mutants show normal GLR-1 localization and do not enhance or suppress pmk-1 phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 test multiple pmk-2 alleles including null, gain-of-function, and double mutants with pmk-1 (Figure 1\u2014figure supplement 1). The lack of phenotype in single mutants and lack of enhancement/suppression in double mutants clearly demonstrate that PMK-2 is not involved in this process, despite its role in other neuronal functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "PMK-1 does not regulate GLR-1 through its canonical transcriptional targets SKN-1 or ATF-7, and pathogenic bacteria exposure does not affect GLR-1 localization, indicating a distinct p38 MAPK pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 systematically exclude canonical PMK-1 outputs through mutant analysis and bacterial exposure experiments (Figure 1C-D, Figure 1\u2014figure supplement 1). The negative results with skn-1 and atf-7 mutants, combined with lack of effect from PA14 bacteria, support the conclusion of a novel pathway. These are important controls for pathway specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "p38 MAPK signaling modulates both canonical (HIF-1-dependent) and non-canonical (GLR-1 trafficking) hypoxia response pathways. Under normoxia in young animals, p38 MAPK promotes EGL-9 activity, leading to HIF-1 degradation and GLR-1 recycling. Under hypoxia or in aging, decreased p38 MAPK results in HIF-1 stabilization and impaired GLR-1 recycling through CDK-5 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C172 synthesize the major findings into a comprehensive model (Figure 10). The model is well-supported by the experimental data showing p38 MAPK regulation of both HIF-1 (canonical) and GLR-1 trafficking (non-canonical) pathways. The age-dependent decline in p38 MAPK provides a mechanistic link to neuronal aging. The model is internally consistent and supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C188",
+      "C189"
+    ],
+    "result": "p38 MAPK signaling regulates HIF-1 through regulation of PHD enzymes upstream of HIF-1, which could provide a link between growth factor signaling and the hypoxia response in stem cells and cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C188 is supported by the data showing p38 MAPK regulation of EGL-9 and HIF-1. However, claim C189 is highly speculative regarding implications for stem cells and cancer, extending beyond the C. elegans data. While the speculation is reasonable, it lacks direct experimental support in the manuscript and represents future work rather than established findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C192",
+      "C194",
+      "C195"
+    ],
+    "result": "ROS may activate baseline p38 MAPK under normoxic conditions as an oxygen sensing mechanism, and PMK-1 directly silences the hypoxia response during normoxia independent of its oxidative stress response role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C192, C194, and C195 are largely speculative (marked as SPECULATION in evidence_type). While C194 is supported by the negative results with skn-1 mutants (C193), the ROS activation model (C192) and negative feedback model (C195) lack direct experimental evidence. These represent reasonable hypotheses for future testing but are not established by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C200",
+      "C201",
+      "C202"
+    ],
+    "result": "NSY-1 is not required for oxygen modulation of the hypoxia response, suggesting SEK-1 and PMK-1 are activated by a different, likely non-canonical MAPKKK. Identifying this MAPKKK is an important next step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C200 is well-supported by the negative results with nsy-1 mutants (C68). Claim C201 is a reasonable inference given NSY-1 is the sole ASK1 ortholog. Claim C202 appropriately identifies this as future work. The conclusion that a non-canonical MAPKKK is involved is supported by the systematic exclusion of canonical candidates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C207",
+      "C209"
+    ],
+    "result": "Decreased PMK-1 levels during aging might result in elevated HIF-1 activity and could impair nervous system function in ways not detected by lifespan analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C207 and C209 are speculative (marked as SPECULATION in evidence_type). While C207 is a reasonable inference from the demonstrated PMK-1 decline and HIF-1 regulation, it lacks direct measurement of HIF-1 in aged animals. Claim C209 is supported by the GLR-1 functional data but remains speculative regarding broader nervous system impacts. These represent reasonable hypotheses but require additional validation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1911 @@
+{
+  "submission": {
+    "id": "97916df4-3f37-4acc-a915-79d9b1a759da",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:28:43.549255Z",
+    "updated_at": "2025-11-29T23:28:43.549255Z"
+  },
+  "content": [
+    {
+      "id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "submission_id": "97916df4-3f37-4acc-a915-79d9b1a759da",
+      "content_type": "manuscript",
+      "content_text": "# Airflow and optic flow mediate antennal positioning in flying honeybees\n\n## Authors\n\n- Taruni Roy Khurana<sup>1</sup>\n- Sanjay P Sane<sup>1</sup> ([ORCID: 0000-0002-8274-1181](https://orcid.org/0000-0002-8274-1181)) \u2020\n\n### Affiliations\n\n1. National Centre for Biological Sciences Tata Institute of Fundamental Research Bangalore India\n\n\u2020 Corresponding author\n\n## Abstract\n\nTo maintain their speeds during navigation, insects rely on feedback from their visual and mechanosensory modalities. Although optic flow plays an essential role in speed determination, it is less reliable under conditions of low light or sparse landmarks. Under such conditions, insects rely on feedback from antennal mechanosensors but it is not clear how these inputs combine to elicit flight-related antennal behaviours. We here show that antennal movements of the honeybee, Apis mellifera, are governed by combined visual and antennal mechanosensory inputs. Frontal airflow, as experienced during forward flight, causes antennae to actively move forward as a sigmoidal function of absolute airspeed values. However, corresponding front-to-back optic flow causes antennae to move backward, as a linear function of relative optic flow, opposite the airspeed response. When combined, these inputs maintain antennal position in a state of dynamic equilibrium.\n\n## Introduction\n\nWhen flying in unpredictable conditions, sensory cues from a single modality are often unreliable measures of the ambient environmental parameters. For instance, purely optic flow-based measurements of self-motion can be misleading for insects which experience sideslip while flying in a crosswind. Moreover, reliance on optic flow may be problematic under dimly lit or overcast conditions, or when flying over lakes or deserts which present sparse visual feedback. In such situations, sampling from multiple sensory cues reduces the ambiguity arising from variability in feedback from single modalities (Wehner, 2003; Sherman and Dickinson, 2004; Wasserman et al., 2015). Hence, the integration of multimodal sensory cues is essential for most natural locomotory behaviours, including insect flight manoeuvres (Willis and Arbas, 1991; Frye et al., 2003; Verspui and Gray, 2009).\n\nFor flight control, the importance of optic flow cues detected by compound eyes is well-documented in diverse insects, including honeybees (Srinivasan et al., 1996; Baird et al., 2005), bumblebees (Baird et al., 2010; Dyhr and Higgins, 2010), Megalopta (Baird et al., 2011)\u00a0and Drosophila (David, 1982; Duistermars et al., 2009). In recent years, mechanosensory feedback from antennae has also emerged as a key sensory input for insect flight (Sane et al., 2007; Yorozu et al., 2009; Krishnan et al., 2012; Fuller et al., 2014). This feedback is transduced primarily by two sets of mechanosensors - the chordotonal Johnston\u2019s organ (JO)\u00a0(Gewecke, 1974) which senses a wide range of stimuli from high-frequency antennal vibrations to low-frequency ambient airflow or gravity (Yorozu et al., 2009; Dieudonn\u00e9 et al., 2014), and the antennal hair plates (or B\u00f6hm\u2019s bristles) which are involved in the reflexive positioning of antennae during flight (Krishnan et al., 2012).\n\nThe characteristic positioning of the antennae at the onset of flight is ubiquitous in most, if not all, flying insects underscoring the evolutionary significance of its function (Dorsett, 1962). Disruption of antennal positioning due to B\u00f6hm\u2019s bristle ablation or reduction of JO inputs severely impairs flight (Willis et al., 1995; Hinterwirth and Daniel, 2010; Sane et al., 2007). The control of antennal position is thought to be essential for the unambiguous sensing of inputs by the JO (Hinterwirth et al., 2012). However, the mechanisms underlying this behaviour are not well-understood. Here, we show that the airflow cues sensed by Johnston\u2019s organs and the optic\u00a0flow cues sensed by eyes combine to maintain and control antennal position during flight in the honeybee, Apis mellifera. Each input influences antennal position in an opposite manner; frontal airflow causes antennae to move actively forward against the aerodynamic drag, whereas front-to-back optic flow causes them to move backward. The antennal positioning response thus offers a critical readout for understanding how honeybees integrate information about their own motion from airflow and optic flow cues.\n\n## Results\n\n### Flying honeybees bring their antennae forward in response to increasing airspeed\n\nTo characterize antennal response to ambient airflow, we provided flying bees with frontal airflow cues as would be experienced by them during forward flight. We then calculated the inter-antennal angle (IAA), defined as the angle between the lines joining the base and tip of each antenna (Sane et al., 2007), as a measure of antennal position (Figure 1A). When the antennae move backwards, the IAA increases and when the antennae move forward, the IAA decreases. Of the three conventional variables used in such experiments (David, 1982), we experimentally set the windspeed (i.e. velocity of ambient airflow relative to ground) in a calibrated, laminar wind tunnel, whereas the bees controlled their own airspeed (i.e. velocity of body relative to ambient air) and therefore also their groundspeed (i.e. velocity of the body relative to ground), which is the vector sum of airspeed and windspeed (Figure 1B). As tethered bees are stationary relative to the ground, their airspeed equals windspeed. However, when freely flying in air currents, airspeed and windspeed are independent of each other. Analogous to swimmers swimming within water currents, insects control their airspeed relative to the air pocket drifting at some windspeed.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/14449/elife-14449-fig1-v2.jpg)\n\n**Figure 1.:** (A) Inter-Antennal Angle (IAA) is measured by digitizing 4 points (red circles) on the antennae in all frames. (B) Groundspeed is obtained by tracking Point#2 (from A) which is static relative to head. It is the vector sum of bee-controlled airspeed and experimenter-controlled windspeed. (C) Top panel: Response to ambient airflow in tethered bees. Tethered bees were positioned at the centre of the wind-tunnel test section, and facing upwind and the windspeed was linearly varied from 0 to 5.5 m/s. Two high-speed cameras positioned dorsally and laterally filmed the bees at 500 fps. Bottom panel: Normalised IAA response as a function of airspeed (or windspeed). We normalized IAA values between 0 (defined as the mean of values between 0 and 1.5 m/s) and 1 (defined as the mean of values between 3 and 5.5 m/s). Between 0\u20131.5 m/s and 3\u20135.5 m/s, normalized IAA did not significantly change (p>0.05, Moore\u2019s test). Between 1.5 and 3 m/s, normalized IAA sigmoidally decreased with airspeed, changing with each step (*p<0.0001, Moore\u2019s test, N=10; each colour represents one individual) relative to the preceding and succeeding values. Non-normalized data in Figure 1\u2014figure supplement 1B. Here and everywhere we have plotted the means, and the error bars indicate the standard deviation of the mean. (D) Top panel: IAA response of freely-flying bees to ambient airflow. Bees were trained to enter the wind tunnel through a side-door and fly upwind past the test section to a feeder. High-speed cameras placed and operated as in (C) filmed their IAA response. Bottom panel: Normalised IAA response as a function of airspeed in free flight. Between airspeeds of 1.5 to 3 m/s, IAA changed significantly (*p<0.0001, Moore\u2019s test, N=10) relative to the preceding and succeeding values, but saturated at airspeeds less than 1.5 m/s and greater than 3 m/s. Non-normalized data in Figure 1\u2014figure supplement 1D. (E) IAA responses to random sequence of ambient airflow in tethered bees. We presented the bees with airflow values between 0 and 5.5 m/s in a random sequence and plotted the normalised IAA response as a function of airspeed values reshuffled to lie in increasing order. As in 1C, IAA sigmoidally decreased with airspeed, significantly changing between 1.5 and 3 m/s (*p<0.0001, Moore\u2019s test, N=5; each colour represents one individual.) From 0\u20131 m/s and 3.5\u20135.5 m/s, the normalized IAA did not significantly change. For non-normalized data, see Figure 1\u2014figure supplement 1C. (F and G insets) Experiments with sham-treated and JO-restricted bees. Red crosses indicate the location of applied glue, and blue arrow the presence of airflow. (F) Normalised IAA vs. airspeed in sham-treated bees. Sham-treated bees (N=5) show responses similar to untreated bees (compare with Figure 1C). Each coloured line represents an individual\u00a0bee (Non-normalized data in Figure 1\u2014figure supplement 1H). Change in IAA (Figure 1\u2014figure supplement 1H) is in the same range as untreated bees (compare with Figure 1\u2014figure supplement 1B). (G) Bees with restricted JO do not respond to airspeed change. When the pedicel-flagellum joint is glued, IAA does not vary significantly with changing airspeed (*p>0.1, Moore\u2019s test, N=7). Each colour represents an individual (Non-normalized data in Figure 1\u2014figure supplement 1I).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14449/elife-14449-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) IAA values at 0.5 m/s airflow for a tethered (blue plot) and freely-flying honeybee (red plot).\u00a0IAA values are maintained for all 250 frames for tethered bees (Mean=96\u00b0, S.D.= 0.8\u00b0) and freely-flying bees (Mean=85\u00b0, S.D. = 3\u00b0) (B) Response of tethered flying bees to linearly changing airflow cues in the wind tunnel. The response is sigmoidal between 1.5 and 3 m/s. Each colour represents the same individual as in Figure 1C. Solid black lines represent the mean IAA at which saturation occurs. Normalized data shown in Figure 1C. (C) Response of tethered flying bees to randomly changing air flow cues in the wind tunnel. Each bee received a different sequence of random airflow value, and the x-axis was reshuffled in a linearly increasing fashion. The response is similar to that seen with linearly changing cues (Figure 1\u2014figure supplement 1B). (D) Response of freely flying bees to changing air flow cues in the wind tunnel. The response is sigmoidal between 1.5 m/s and 3 m/s. Each colour in the plot represents the same individual as in Figure 1D. (E) Comparison of antennal responses to airflow from Heran (1957) against data from Figure 1\u2014figure supplement 1B. (F) Groundspeed of a freely flying bee as it flies against increasing windspeeds, shown as notched plots. Honeybees maintained a constant groundspeed at approximately an average of 0.43 m/s with increasing windspeeds, consistent with previously reported values (Barron and Srinivasan, 2006). (G) Interantennal angle as a function of the groundspeed of the freely flying bees. Different colours indicate different individuals. (H and I) Raw data for response of sham-treated tethered bees to changing airflow and JO-glued bees to changing airflow.\n\nHoneybees modulated their antennal position as a function of their absolute airspeed. When presented with fixed airflow but no optic flow, both tethered and freely-flying bees held their antennae at constant IAA throughout a flight bout (e.g. Figure 1\u2014figure supplement\u00a01A). As frontal airflow increased, both antennae moved forward and mean IAA at each airflow value decreased as a sigmoidal function of airspeed (Figure 1C,D). The linear region of the sigmoid lay between 1.5 to 3\u2009m/s\u00a0(grey bar, Figure 1C,D), changing by approximately 35o (Figure 1\u2014figure supplement 1B) in tethered and 25\u00b0\u00a0(Figure 1\u2014figure supplement 1D) in freely-flying bees, significantly decreasing with each step change in airspeed (step change =\u00a00.5\u2009m/s; *p<0.0001; Moore\u2019s paired test; N=10). This behaviour was similar regardless of whether airspeed stimulus was presented in linearly increasing or decreasing steps (Figure 1C, Figure 1\u2014figure supplement 1B) or in random order (Figure 1E, Figure 1\u2014figure supplement 1C). Thus, antennal position is calibrated against absolute airspeeds, independent of time history. At airspeeds less than 1.5\u2009m/s or greater than 3\u2009m/s, mean IAA at each airflow plateaued in both tethered (Figure 1\u2014figure supplement 1B,C) and freely-flying bees (Figure 1\u2014figure supplement 1D).\n\nPrevious studies on antennal responses of tethered bees to changing airflow did not report a zone of saturation (Heran, 1957) perhaps due to coarser sampling of their data (Figure 1\u2014figure supplement 1E). We, however, consistently observed sigmoidal mean IAA responses, similar to locusts (Gewecke, 1974). As frontal airflow in the wind tunnel increased, freely-flying honeybees modulated their flight to maintain roughly constant groundspeed of ca. 0.4\u2009m/s (Figure 1\u2014figure supplement\u00a01F; also [Barron and Srinivasan, 2006]). In these bees, we observed no correlation between groundspeed and IAA (Figure 1\u2014figure supplement\u00a01G).\n\n### Johnston\u2019s organs mediate the antennal responses to airflow\n\nPrevious researchers have implicated the antennal mechanosensory Johnston\u2019s organs (JO) in sensing airflow cues (Gewecke, 1974; Heran, 1957; Yorozu et al., 2009). JO spans the pedicel-flagellar joint in the antennae of all Neopteran insects, and tracks the motion of the flagella relative to pedicel. In most insects, the JO consists of several hundred scolopidial units that are range-fractionated. These enable both exquisite sensitivity and narrowly-tuned sensing over\u00a0a large range of stimulus frequencies (Yorozu et al., 2009; Dieudonn\u00e9 et al., 2014). Does JO also mediate the observed antennal response to changes in airspeed? To test this hypothesis, we attenuated JO feedback by gluing the pedicel-flagellar joint (see Materials\u00a0and\u00a0methods) in tethered honeybees, and measured their antennal responses to airflow. To control for the extraneous effects of glue on the antenna (e.g. due to added weight), we glued the second annulus of the flagella from the tip (sham-treatment) in a separate group of the bees. Application of glue at the JO does not affect the movement of the antennae because the pedicellar-flagellar joints have no muscles, and hence motion around these joints are passive. Unlike sham-treated bees which showed the typical sigmoid response to frontal airflow (Figure 1F, non-normalized data in Figure 1\u2014figure supplement\u00a01H, N=5), bees with restricted JO positioned their antennae at the onset of flight (Figure 1\u2014figure supplement\u00a01I; also [Krishnan et al., 2012]) but their mean IAA at each airflow was insensitive to changing airspeeds (Figure 1G, N=7; p>0.1, Moore\u2019s paired test). These experiments established that JO input is required for antennal positioning during flight, but not at flight onset (Krishnan et al., 2012). Thus, the antennal positioning at flight onset is a separate process from the inflight modulation of IAA.\n\n### Bees\u2019 antennae move backward in response to increasing front-to-back optic flow\n\nFlying insects rely heavily on optic flow for flight control, most notably during slower flight manoeuvres such as landing or hovering (Baird et al., 2013). For example, visual feedback is critical for regulation of groundspeed and height, or in centring trajectories through narrow corridors in diverse flying insects (bees: [Srinivasan et al., 1996; Baird et al., 2005], Drosophila: [Straw et al., 2010], moths: [Kuenen and Baker, 1982], review: [Collett et al., 1993]). It also influences antennal position in insects that antennate during walking (Ye et al., 2003; Honegger, 1981).\n\nUnder natural flight conditions, front-to-back optic flow stimulus accompanies frontal airflow stimulus. Does the antennomotor system also respond to optic flow in addition to airflow? To address this question, we simulated forward flight conditions by presenting tethered flying bees with changing temporal frequency of front-to-back optic flow cues on two LED screens, and measured their IAA (Figure 2A). Note that, previous studies on optic flow dependent behaviours in honeybees have typically demonstrated that they extract angular velocity (ratio of temporal and spatial frequency) cues from the image motion, independent of spatial (Srinivasan et al., 1991) or temporal frequencies (Baird et al., 2013). In the experiments reported here, we have kept spatial frequency constant and only varied temporal frequency as the main experimental variable which means that the angular velocity is the temporal frequency times some multiplication factor.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/14449/elife-14449-fig2-v2.jpg)\n\n**Figure 2.:** (A) IAA response to optic flow in tethered bees. Bees were positioned central and at 10 cm from the two screens separated by 2 cm at the apex. (B) Sample IAA response to linearly increasing (red) or decreasing (green) optic flow stimulus. (Top panel) Stimulus comprises of a visual grating moving from front to back at temporal frequencies ranging between 0\u201325 cycles/s (cps), in steps of 1 cps. Each step lasts for 1 s (blue). The IAA response to optic flow saturates beyond the threshold of 10 cps (grey bar; also Materials and methods for threshold calculation). (C\u2013E) IAA Response to randomized optic flow values. The above honeybee (the individual shown in Figure 2B\u2013E, bee #1), was presented with randomized optic flow stimulus (C). The precise temporal sequence of randomized stimulus varied between bees. Dotted line shows the 10 cps threshold. Each 1 cps step lasts for 1\u00a0s from 1\u201325 cps. IAA response is plotted in two ways: the IAA response to the randomized stimulus (D, olive green bars), and the response reshuffled in increasing order of temporal frequencies (E; blue bars). The peak at 20 cps is due to the sharp IAA readjustment at stimulus onset. Grey lines between C and D indicate step transitions in temporal frequency values. IAA is predicted to change when stimulus changes occur below or across threshold. Predicted changes in IAA are marked by black circle and no change by white circle. IAA is predicted to decrease (down arrowhead) when optic flow changes from high-to-low under or across threshold, and increase (up arrowhead) when values change from low-to-high under or across threshold. Changes in temporal frequency above threshold (horizontal line) yield no antennal response. In both tests, correct predictions are marked by green and wrong predictions by red circles, and fraction of correct predictions vs. total number indicated beside each test. In this instance, we correctly predicted when IAA would change with 83% accuracy\u00a0(19/23=0.83), and the direction of its change with 74% accuracy. (F, G) Summary figures showing the IAA response of three individuals (shown in Figure 2B\u2013E, Figure 2\u2014figure supplement 1A\u2013D and E\u2013H) (F) IAA responses for optic flow rates increasing linearly from 0 to 25 cps. The mean response from all three bees is shown in bold red and the spread of the data is shown in the background of the plot. (G) IAA responses for optic flow rates decreasing linearly from 25 to 0 cps. The time axis is shown in the opposite manner because the first optic flow rate that is presented to the tethered bee is 25 cps. The mean of the IAA responses from all three individuals is shown in bold green and the spread of the data shown in the background. (H) IAA response to sinusoidal moving visual gratings. Sinusoidal moving grating (orange, amplitude=1.8 cps; period =10 s) stimulus elicits correlated IAA responses (blue). (I) Normalized IAA response vs. optic flow rate between 0 and 1.8 cps. Each step increase of 0.3 cps in the optic flow rate elicits significant changes in IAA (*p<0.05, Moore\u2019s test, N=9). IAA values were normalized relative to maximum and minimum values for each individual (raw data in Figure 2\u2014figure supplement\u00a02A). (J,\u00a0inset) IAA Responses of the bees with restricted Johnston\u2019s organs. Red crosses indicate glue location. To the set-up in Figure 2A, we added a ducted fan to provide collimated airflow. Red dot indicates absence of airflow, and blue arrows indicate presence of optic flow. (J) Normalized IAA response to changes in optic flow. IAA changes with change in optic flow (*p<0.0001, Moore\u2019s test, N=7). In Figure\u00a01G and 2J, the same individuals share color. Normalisation procedure is the same as in Figure 2G and the raw data has been shown in Figure 2\u2014figure supplement\u00a02B.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14449/elife-14449-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Data for two additional individuals. Figure 2\u2014figure supplement 1A\u2013D show data from one individual and Figure 2\u2014figure supplement 1E\u2013H for a second individual. (A and E) IAA responses of linearly changing optic flow rates in tethered bees. Data from two bees showing the IAA response to linearly ascending (red plot) and linearly descending (green plot) temporal frequencies between 0 and 25 cps. The step changes in optic flow rates have been shown in blue at the top. In both cases, the IAA response to changing rates of optic flow saturates after 14 cps. (B and F) Optic flow stimulus provided to the tethered bees. Each optic flow stimulus lasted for 1 s. Black dotted line indicates the threshold after which the response to changing optic flow saturates (threshold calculated from Figure 2\u2014figure supplement 1A and E). Grey lines indicate the transition from one value of temporal frequency to the next. (C and G) IAA responses of the bees to randomly changing optic flow rates between 0 and 25 cps. Olive green bar graphs show the actual response of the bees to the stimulus pattern shown in Figure 2C and Figure 2\u2014figure supplement 1H respectively. The threshold in both cases is 14 cps. Predictions and scores are described in Figure 2C,D. The score for predicting motion was 17/23=0.74\u00a0(74%\u00a0accuracy) and the score for prediction change in direction of antennal motion was 11/23=0.48\u00a0(48%\u00a0accuracy, Figure 2\u2014figure supplement 1C) and 18/23 = 0.78\u00a0(78%\u00a0accuracy) and 17/23=0.74\u00a0(74%\u00a0accuracy,Figure 2\u2014figure supplement 1G). (D and H) IAA responses to randomized optic flows between 0 and 25 cps in two bees. IAA responses of the bee (blue) are reordered and represented against optic flow. Bar graphs show the mean and standard deviation of the IAA response to each optic flow rate value. The first optic flow experienced by the bee in Figure 2\u2014figure supplement 1B was 8 cps and in Figure 2\u2014figure supplement 1F was 5 cps. In both these cases, the IAA at the first optic flow rate stands out from the rest of the dataset. No significant trend emerges from the IAA response of the bee to randomised optic flow rates.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14449/elife-14449-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Raw data for response of tethered flying bees to changes in optic flow. Each colour represents in the plot the same individual as the corresponding colour in Figure 2I. (B) Raw data for response of JO-glued bees to changing optic flow cues. Normalised data are shown in Figure 2J.\n\nIn a single flight bout (defined as an uninterrupted session between initiation and cessation of flight), tethered bees first experienced a static screen of black-and-white gratings (i.e. temporal frequency = 0) followed by a sequence of gratings moving from 0 to 25 cycle/s (cps) in discrete steps of 1 cps to simulate increasing flight speed (red curve, Figure 2B; Figure 2\u2014figure supplement\u00a01A,E; summary figure showing data from all individuals, Figure 2F). In the subsequent flight bout, the temporal frequency decreased stepwise from 25 to 0 cps (green curve, Figure 2B; Figure 2\u2014figure supplement\u00a01A,E; summary figure showing data from all individuals, Figure 2G) to simulate decreasing flight speed. Each stimulus step lasted for 1\u2009s and\u00a0the entire protocol for 26\u2009s. When temporal frequency increased from 0 to 25 cps, an initial sharp adjustment in IAA (red curve, Figure 2B, summary figure Figure 2F) was followed by a graded response between 0 to approx. 10 cps (grey bar, Figure 2B), beyond which the value reached a plateau. The response curve for linearly decreasing optic flow (25 to 0 cps, green curve, Figure 2B, summary figure Figure 2G) was similar to the increasing cues, except for the lack of initial sharp IAA adjustment from zero to non-zero optic flow (also Figure 2\u2014figure supplement\u00a01A,E).\n\nIn these experiments, the optic flow was patterned to monotonically increase or decrease. Graded IAA responses to such optic flow patterns suggested two possibilities.\n\nFirst, as in the case of airflow-based response, IAA response curve is innately calibrated against specific temporal frequency values, independent of its time history. If true, the response curve should remain invariant when the temporal frequency of the stimulus is presented in random order. This is an unlikely possibility because absolute values of optic flow are meaningless without prior knowledge of the spatial structure of the world.\n\nSecond, that bees respond to changes in temporal frequency rather than their absolute value. If true, IAA would increase (or decrease) in response to positive (or negative) changes in temporal frequency within the operating range (e.g. 0\u201310 cps for the bee in Figure 2B\u2013E) while remaining unchanged outside this range (i.e. >10 cps). The threshold value was calculated separately for each bee (see Materials and methods for details). The latter criteria lead to specific predictions of when to expect changes in IAA (filled black circle; Figure 2C,D) and in which direction (arrow; Figure 2C,D).\n\nTo test the above hypotheses, we presented tethered honeybees with grating speeds between 1 to 25 cps in randomized order (Figure 2C\u2013E and Figure 2\u2014figure supplement\u00a01B\u2013D, Figure 2\u2014figure supplement\u00a01F\u2013H) and compared the measured vs. predicted IAA response (Figure 2D; also Figure 2\u2014figure supplement\u00a01C,G). For each bee, we scored these as the fraction of correct predictions; a score of 1 corresponds to all correct, and 0 to all incorrect predictions. In all the cases, the total prediction score matched the actual observed score well above chance levels (*p<0.001; Student\u2019s T test; see Materials and methods for details). When stimulus bins were rearranged in ascending order of temporal frequency, the reshuffled mean IAA response was not graded (compare Figure 2B and E; Figure 2\u2014figure supplement\u00a01A and D; Figure 2\u2014figure supplement\u00a01E and H) ruling out the possibility of innate calibration of IAA against optic flow. Thus, our data show that antennomotor activity in honey bees tracks changes in temporal frequency, and not their absolute value.\n\nBees typically experience the steepest gradients in optic flow during landing or hovering over flowers when optic flow rates are low (Baird et al., 2013). Hence, in the follow-up experiments, we focused on the lower range of stimuli from 0\u20131.8 cps (Figure 2H\u2013J). Even in this narrow range, IAA responses tracked the magnitude and direction of grating patterns on the screen. For example, bee antennae robustly tracked simple sinusoidal stimuli that were both, cycled between front-to-back (0 to 1.8 cps), and back-to-front grating movement (0 to -1.8 to 0 cps) over the 10\u2009s duration (Figure 2H), thus verifying that the antennae move in both directions as a function of optic flow. To characterize their responses in this narrow range of temporal frequency (0\u20131.8\u00a0cps), the tethered bees initiated wing flapping in front of a blank screen, followed by a sequence of black-and-white gratings moving front-to-back from 1.8 to 0.3 cps. Each grating sequence lasted for 6 s, interspersed with a static screen (zero optic flow) for 3 s. Despite inter-animal variability in the set points for IAA at zero optic flow (Figure 2\u2014figure supplement\u00a02A), all bees increased their IAA as a function of optic flow (Figure 2I), with each step change of 0.3 cps eliciting significant increase in mean IAA (*p<0.0001; Moore\u2019s paired test, N=10) at that optic flow rate. The IAA response of tethered bees to optic flow remained intact (Figure 2J; Figure 2\u2014figure supplement\u00a02B) even when their JO were restricted by gluing the pedicel-flagellar joint, establishing that it is independent of the JO pathway. Thus, front-to-back optic flow causes antenna to move backward, opposite to frontal airflow which causes antenna to move actively forward.\n\n### Visual and airflow cues combine to influence antennal positioning\n\nThe experiments outlined above established that inputs from two sensory modalities independently helped the bees to sense airspeed and optic flow. Whereas the JO-based antennal mechanosensory feedback was calibrated against absolute values of airspeed, visual feedback was calibrated relative to changes in optic flow under or across a threshold value. These experiments required flying bees to respond to single sensory cues at a time. Hence, we next measured IAA response of tethered bees to simultaneous visual and airflow cues. The paired stimuli combinations were arbitrarily drawn from values in previous experiments, and are not naturally correlated.\n\nHow do multimodal cues affect IAA response when simultaneously presented? Optic flow (red, Figure 3A) and airflow (blue, Figure 3A) cues were presented in three combinations, represented by three regimes A, B or C (grey bars; Figure 3A). Responses of a single bee are shown in Figure 3B,C. In each trial, we started the experiment with an intermediate bimodal combination (grey bars, middle Regime B; optic flow=0.9 cps, airspeed =2.5\u2009m/s) and in random order, either decreased (to Regime A; optic flow =0.3 cps, airspeed =0.5\u2009m/s; Figure 3B) or increased these values (to Regime C, optic flow =1.8 cps, airspeed =4\u2009m/s; Figure 3C). Antennae maintained position when the cue combination changed from Regime B to Regime A (green line; Figure 3B; Pp>0.1, Moore\u2019s test), but not when only airflow or optic flow was changed. When airspeed alone (i.e. with static grating) decreased from 2.5 to 0.5\u2009m/s (blue line; Figure 3B; p<0.001, Moore\u2019s test), both antennae moved backward. However, they moved forward when optic flow alone (i.e. with fan off) decreased from 0.9 to 0.3 cps (red line; Figure 3B; p<0.001; Moore\u2019s test). Similarly, when the cue combination changed from Regime B to Regime C, antennae again maintained position (green line; Figure 3C; p>0.1, Moore\u2019s test), but moved forward when airflow alone increased from 2.5 to 4\u2009m/s\u00a0(blue line; Figure 3C) and backward when optic flow alone increased from 0.9 to 1.8 cps (red line; Figure 3C). Thus, visual and airflow cues elicit opposite IAA responses which, when acting in concert, maintain antennal position.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/14449/elife-14449-fig3-v2.jpg)\n\n**Figure 3.:** (A) IAA response curve of a tethered bee to changing airflow (blue) and optic flow (red). Regime A represents the combination of low optic flow rate and airspeed (temporal frequency=0.3 cps; airspeed=0.5 m/s); Regime B represents combination of intermediate optic flow rate and airspeed (temporal frequency =0.9 cps; airspeed=2.5 m/s), and Regime C represents high optic flow rate combined and airspeed (temporal frequency =1.8 cps, airspeed=4 m/s). The dashed line (grey) at the top of the plot indicates the IAA response at 0 optic flow. (B, C) Representative data from a single individual when values transition from Regime B\u2192 A (B) or from Regime B\u2192C (C). IAA responses to airspeed (blue), and optic flow (red), and combination of airspeed and optic flow (green) plot. (D, E) \u0394IAA response to step changes in airspeed, optic flow or combined cues. We have represented the mean \u0394IAA values as notched plots. The extent of box shows the inter-quartile range and the lower and upper bounds of the box represent the 25th and the 75th quartiles. The line in the box represents the median of the data and there is a \u2018notch\u2019 around this median for easy comparison of the notched boxes with each other. If the notches of two boxes do not overlap, their medians are statistically significantly different from each other. The red crosses indicate the outliers in the data. The whiskers extend to the most extreme data point that is not considered to be an outlier. * represents statistically significant difference (*p<0.001, Moore\u2019s test, N=8). Mean \u0394IAA is significantly different from a hypothetical mean of zero (*p<0.05, ANOVA; post hoc Tukey\u2019s HSD test, N=8) when only airspeed or optic flow are varied, but not when a stimulus combination is co-varied (*p>0.5, ANOVA; post hoc Tukey\u2019s HSD test, N=8).\n\nThis was also borne out in the pooled data over multiple trials (Figure 3D,E). Decrease of only airspeed resulted in a negative mean \u0394IAA (blue, Figure 3D; *p<0.001; Moore\u2019s test), whereas increase resulted in a positive mean \u0394IAA (blue, Figure 3E; *p<0.001; Moore\u2019s test). Similarly, a decrease in only optic flow resulted in positive mean \u0394IAA values, but its increase led to negative mean \u0394IAA (red, compare Figure 3D,E; *p<0.001; Moore\u2019s test) compared to the IAA values in Regime B. Here, mean \u0394IAA values significantly differed from a hypothetical mean of zero (one-way ANOVA with post-hoc Tukey\u2019s Honest Significant Difference test, *p<0.05). However, when both cues were co-varied, \u0394IAA did not significantly change (green, Figure 3D,E; p>0.1, Moore\u2019s test) and their means were statistically indistinguishable from zero.\n\nHow does the presence of one cue alter the antennal response curve of the other cue? We considered three possibilities. First, if the response curve of Cue A remains unaltered in presence of a constant Cue B, then it is likely that the system adapts to cue B. Second, if the response curve to Cue A is uniformly offset by the presence of constant Cue B, then the cross-modal influence is likely linear and summative. Third, if response curve to Cue A is non-uniformly offset in presence of constant Cue B, then crossmodal influences are likely to be non-linear. Testing for possibilities provides insights into how inputs from different modalities combine to determine the antennal position.\n\nWe measured IAA against optic flow in presence of two constant values (0 and 1\u2009m/s) of airspeed. The two curves were uniformly offset over the range from 0 to 1.8 cps (compare dotted and solid lines, Figure 4A,B; *p<0.05, Moore\u2019s test, N=8). Similarly, for airspeeds between 0 and 4\u2009m/s, we observed a steady offset for greater optic flow, but in the opposite direction (compare dotted and solid lines, Figure 4C,D; *p<0.05, Moore\u2019s test, N=9). In both experiments, the presence of constant optic flow (or airflow) altered the set point of the antenna to a new mean value that is greater (or less) than the original set point (Figure 4B,D) and the antenna responded to variation in airflow (or optic flow) relative to the new set point. Thus, the antennomotor system linearly combines the multimodal cues and recalibrates accordingly.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/14449/elife-14449-fig4-v2.jpg)\n\n**Figure 4.:** (A) IAA responses to optic flow rates varying from 0 to 1.8 cps in presence of still air (IAAOp; solid green line vs. steady 1 m/s airflow (IAAW+Op; dotted green line). Mean difference between IAAOp and IAAW+Op is significant at each optic flow rate value (*p<0.0001, Moore\u2019s test, N=8). (B) We have represented the mean \u0394IAA values as notched plots. The range of \u0394IAA (=IAAW+Op - IAAOp) is not significantly different over various optic flow values. Each mean \u0394IAA is significantly different from a hypothetical mean of 0 (*p<0.05, ANOVA and post hoc Tukey\u2019s HSD test, N=8). (C) IAA responses to varying airspeed at 1, 2.5 and 4 m/s in presence of no optic flow (IAAW; solid red line; top left panel) vs. steady optic flow of 1.8 cps (IAAW+Op; dotted red line; top right panel). Again, mean IAA values at each rate of optic flow are significantly different (*p<0.0001, Moore\u2019s test, N=9) for the two cases. (D) The range of \u0394IAA plotted as notched plots are again not significantly different across the various airspeeds, but each mean \u0394IAA value is significantly different from a hypothetical mean of 0 (*p<0.05, N=9, ANOVA and post hoc Tukey\u2019s HSD test). (E) A general model of the antennal positioning response to airspeed and optic flow cues, including the role of mechanosensory hair plates (B\u00f6hm\u2019s bristles) in antennal positioning response. (F) The crossmodal calibration hypothesis proposes that insects simultaneously sample airflow and optic flow, and use response characteristics of airflow sensing to calibrate optic flow. Determining how the sampled optic flow varies in the dynamic range of airspeeds enables insects to linearly extrapolate the optic flow response curve over a greater range. The grey bar represents the stimulus range in which such simultaneous airflow (blue) and optic flow (black on red) measurements are made. According to this hypothesis, once a specific airflow value is correlated against the observed optic flow, which could be slow or fast, it can then be used to make measurements over much greater range of airspeeds.\n\n## Discussion\n\n### Antennal positioning responses involve multimodal sensory integration\n\nThe above study provides us with insights into how the insect antennomotor system integrates the multiple sensory cues that it encounters during flight. This can be summarized in a general schematic of the multi-modal integration of antennal positioning behaviour in flying honeybees (Figure 4E). For the sake of completeness, this model must also include the role of the mechanosensory hair plates (or B\u00f6hm\u2019s bristles) in reflexive antennal positioning, which appears conserved across insects according to our studies in moths (Krishnan et al., 2012), bees and crickets (Sant and Sane, 2016). To summarize these studies: antennal hair plates are stimulated when the antenna undergoes a substantial movement in the scape-head capsule or pedicel-scape joints. The mechanosensory neurons underlying these bristles directly project into the Antennal Motor and Mechanosensory Center (AMMC) where they arborize on the dendritic fields of antennal motor neurons and activate them. Any gross change in antennal position thus elicits a rapid reflexive correction of the antennal position with latencies under 10 ms in hawk moths (Krishnan et al., 2012) and probably on the same order in honeybees and other insects. Based on these data, we proposed a model to describe the antennal positioning reflex loop mediated via antennal mechanosensors (Krishnan et al., 2012). Although arrangement of the hair plates in different insects varies, the underlying neural circuitry and hair plate function is conserved in moths, bees, and most other insect orders\u00a0(Krishnan and Sane, 2015). Previous studies in hawk moths have described only how the antenna, once positioned, reflexively maintains this position (Krishnan et al., 2012), and also their response to visual cues (Krishnan and Sane, 2014). However, the combinatorial role of these cues in antennal positioning behaviour during flight remained unclear.\n\nHere, we show that the reflexive maintenance of in-flight antennal positioning is simultaneously modulated by both visual (from eyes) and airflow (from JO) feedback during flight. This study also shows that their action is via multi-modal pathways which combine in a mutually antagonistic fashion; whereas frontal airflow detected by JO reduces IAA, the front-to-back optic flow detected by compound eyes increases IAA. The combination of these inputs modifies IAA to a new set point, which is then maintained by the antennal hair plates via a negative feedback loop that ensures rapid maintenance and correction of the antennal position. The block diagram in Figure 4E thus provides a model for multimodal sensory control of antennal positioning response. It is possible that other inputs, such as olfaction, also additionally modulate the antennomotor responses, which is the subject of future studies.\n\n### General relevance of antennal positioning response to mechanosensory and visual cues\n\nOur study shows that the initial positioning of antennae at the flight onset (antennal deployment) is separate from its later inflight maintenance by the multimodal inputs (inflight antennal positioning). Both behaviours require the hair plate-mediated reflex pathway but the set-point of this reflex system is under multimodal control in the latter case. In particular, restriction of the JO feedback has no effect on the antennal deployment behaviour, whereas it completely disrupts inflight antennal positioning. It has been suggested that inflight modulation of IAA maintains the scolopidial units of the JO in their operating range (Hinterwirth et al., 2012). Although this hypothesis remains unaddressed and is beyond the scope of this paper, our data clearly show that inflight antennal movements are precisely modulated, and product of both visual (from compound eyes) and mechanosensory (from the hair plates and JO) input. Visual feedback also induces directionally-sensitive antennal movements in other insects such as hawk moths\u00a0(Krishnan and Sane, 2014), Drosophila (Mamiya et al., 2011), and many orthopteran insects (Honegger, 1981; Ye et al., 2003). Unlike the hair plate reflexes which are strictly unilateral (Krishnan et al., 2012), visual feedback drives the activity of both ipsi- and contralateral antennal motor neurons in moths (Krishnan and Sane, 2014) and may therefore serve to coordinate the movements of both antennae. The mechanosensory pathways mediated by the hair plates then provide rapid reflexive, local correction of the intended position of each antenna.\n\nRecent studies have also described how the integration of antennal mechanosensory and visual inputs mediates abdominal flexion in moths (Hinterwirth and Daniel, 2010)\u00a0which in turn is relevant for flight control and balance. In honeybees too, their combined effect on the abdominal streamlining behaviour enables drag reduction during flight (Luu et al., 2011; Taylor et al., 2013). In freely-flying moths, the stimulation of antennal muscles elicits abdominal flexion accompanied by a change in flight trajectory (Hinterwirth et al., 2012). Similarly, integration of mechanosensory and visual information mediates flight control in other insects such as Drosophila (Sherman and Dickinson, 2003;\u00a0Fuller et al., 2014). Whereas the relative influence of mechanosensory input is greater during rapid turns, visual input is more important during slower rotations (Sherman and Dickinson, 2003; 2004).\n\nThe integration of these multimodal cues quite likely occurs in the Antennal Motor and Mechanosensory Centre (AMMC) region of the insect brain, which houses the soma of the antennal motor neurons. This region also receives the arbors of motion-sensitive visual interneurons (Hertel and Maronde, 1987), and likely also the inputs from cephalic hair mechano-afferents. These different modalities are known to influence diverse flight behaviours. It is thus likely that descending interneurons transduce multimodal sensory information that elicits these behaviours. In locusts, the tritocerebral commissure giant (TCG) interneurone integrates visual and airflow information (Bacon and Tyrer, 1978), while other descending interneurons in crickets integrate antennal mechanosensory and visual inputs (Gebhardt and Honegger, 2001). The importance of AMMC as the site of integration of multimodal sensory feedback is an important topic of future study.\n\n### A putative mechanism of calibration of optic\u00a0flow based speedometer in honeybees.\n\nThe data on antennal position are also relevant to studies on speedometry in honeybees. A key finding of this paper is that IAA responds to absolute airspeed values from 1.5 to 3\u2009m/s, which is narrow compared to the typical range of airspeeds (between 0 and 7\u2009m/s; [Wenner, 1963])of honeybees in free flight. IAA is also calibrated against optic flow cues, but this feedback depends on the spatial structure of the environment. As shown in studies over the past two decades, the odometer in honeybees is quite clearly visual (Srinivasan, 2014). The visual system can extract the overall image motion, which is perceived by and integrated over the motion detectors in the retina (Zanker et al., 1999). Honeybees trained to find food at a specific distance in tunnels lined with visual stripes can correctly judge distances even when the spatial frequency of the stripes is altered (Baird et al., 2005; Srinivasan et al., 1996; 1997; 2000; 2014). Moreover, they estimate distances correctly despite head or tailwinds, suggesting that parameters such as windspeed, flight duration and number of wing beats etc. play no role in the odometry. Indeed, image motion cues can also be used to estimate depth and distinguish between near and far objects independent of their size (Kirchner and Srinivasan, 1989; Srinivasan et al., 1989; Zhang et al., 1992). Thus, bees appear to be able to separately process size and velocity cues (Srinivasan et al., 1993).\n\nComplement to the visual odometer, we show here that honeybees are also able to extract information about both airspeed and groundspeed. Importantly, the airspeed calibration mediated by JO is absolute, but works over a narrow speed range, whereas the groundspeed calibration mediated by optic flow can be tuned over a broader range. We propose the hypothesis that honeybees calibrate their optic flow speedometer using their JO-based system that measures absolute airspeeds (Figure 4F). At the onset of a regular flight bout, bees simultaneously sample the optic flow (red lines) and airspeed (blue line). The three red lines correspond to temporal frequency of optic flow that is slow (i.e. if objects are far away) to fast (i.e. if objects are close). Sampling the optic flow (Figure 4F; black segments on the red lines) corresponding to the dynamic range of the JO-based airspeed sensor (e.g. between ~1.5 to 3\u2009m/s) provides bees with the means to cross-calibrate average optic flow against absolute airspeeds. As the airspeed-based estimation only works in a narrow range from 1.5 to 3\u2009m/s, the optic flow-based speedometer requires extrapolation well beyond the range of the antennal system. As shown in Figure 4A\u2013D, the presence of one cue linearly offsets the response curve for the other, analogous to using a standardized albeit narrow-ranging measure (e.g. airflow-based speedometer) to calibrate another arbitrarily scalable measure (e.g. the optic\u00a0flow based speedometer). A disadvantage of such a system is that it must be recalibrated at the beginning of each bout, or within bouts in case of sudden gusts of wind which may confound the calibration. Under such circumstances, we predict that honeybees would have to slow down to recalibrate their optic\u00a0flow based speedometer against the airspeed-based speedometer, before resuming flight.\n\nOur data throw some light on puzzling observations from previous studies. In their study on visual regulation of groundspeeds in honeybees, Barron and Srinivasan (Barron and Srinivasan, 2006) observed that honeybees freely flying within a tunnel lined with checkerboard patterns flew at speeds of approximately 0.4\u2009m/s. However, when the checkerboard pattern was replaced by an axial-stripe pattern which offered sparse optic flow cues, its groundspeed was maintained with low variance at a value of 1.4\u2009m/s. Maintenance of ground speeds (which equals airspeed in still air) requires that bees be able to \u2018sense\u2019 their speed even when optic flow cues are sparse. How is this possible if speed is maintained only via optic flow? To explain this result, we propose that, in absence of optic flow, the bees rely on their JO-based airflow sensors to both set and maintain groundspeed. It is worth noting that the value of 1.4\u2009m/s lies at the cusp of the airflow response curve (Figure 1C), and is maintained as the new reference at different wind speeds in sparse optic flow (see Figure 3 in Barron and Srinivasan [2006]).\n\nA JO-based antennal airflow sensing, can in principle offer a \u2018true\u2019 airspeed measure for odometry. It is not presently clear if the visual odometer would need such information as the current model for visual odometry is able to quite robustly explain most observations. One would expect such a speedometer system to accumulate errors as the range increases, as has also been observed with the honeybee odometer, which follows the Weber\u2019s law (Cheng et al., 1999). Future studies will be required to determine if the several predictions that emerge from this model about honeybee speed control hold true. The antennal positioning responses thus provide unique insights into how honeybees and perhaps other insects sense and combine information from multiple modalities to help reduce ambiguities arising from drift in any one modality.\n\n## Materials and methods\n\nAll experiments were performed on the European honeybees, Apis mellifera, maintained in an apiary in an outdoor insectary approximately 60 m from the lab. For laboratory-based experiments, we either captured individual forager bees or trained them to fly to the wind tunnel for a food reward. In free-flight experiments, trained bees were marked with acrylic paint on the thorax and abdomen for easy identification of individuals. In experiments involving purely airflow cues, the experimental manipulations were performed on both tethered and freely-flying bees. Experiments involving purely visual cues as well as combined visual and air flow cues were performed exclusively on tethered bees.\n\n### Tethering protocol\n\nAfter capturing individual forager bees at the hive, we cold-anaesthetized them on ice until they were inactive. The anaesthetized bees were then dorsally tethered to a bent metal rod (30\u2009mm in length and 0.2\u2009mm diameter) using a synthetic rubber based adhesive (Fevibond, Pidilite, Mumbai, India). The bee was then provided with sucrose solution and left to recover for 45 min. When performing experiments involving visual stimuli, we dark-adapted the bees in a darkened box during this recovery period. To elicit flight, we provided the bee with a piece of tissue paper to hold, and then suddenly withdrew it to elicit flight due to tarsal reflex.\n\n### Airflow stimuli\n\nWe constructed an open-circuit wind tunnel (30\u00a0cm\u00a0x\u00a030\u00a0cm cross-section and 120 cm in length, with a 40\u00a0cm x 30 cm x 30 cm test section) with a fan, driven by a motor drive at one end that drew air through the wind tunnel. The wind tunnel was calibrated using a constant temperature mini-anemometer (Kurz 490S, Kurz Instruments, Inc., Monterey, CA), which was modified to take direct voltage readings (Sane and Jacobson, 2006). The voltage readings were consistently reproducible between 0\u20136\u2009m/s\u00a0at a step size of 0.5\u2009m/s. To minimise confounding visual cues, the floor and walls of the wind tunnel were covered with white paper.\n\nTo determine how antennal position varies with ambient airflow, we provided tethered and freely flying bees with frontal airflow between 0 and 5.5\u2009m/s and between 0 and 3.5\u2009m/s in steps of 0.5\u2009m/s respectively. At their fastest, freely flying honey bees have been estimated to fly at ~7.5\u2009m/s in natural outdoor environments. Presence of headwinds or tailwinds of about 3\u2009m/s does not affect the speed of the bees (Wenner, 1963) in their natural flight. In both cases, we filmed bees from the top and side with two synchronised high-speed cameras and calculated their IAA. We performed both tethered and free flight assays in the wind tunnel to look at how the antennae respond to changes in airflow.\n\n### Visual stimulus\n\nTo investigate how visual motion influences the antennal positioning response, we modified a MATLAB demo routine from the Psychophysics toolbox (Mathworks Inc, Natick, MA) (Brainard, 1997; Kleiner and Pelli, 2007) to generate a moving visual grating pattern. The patterns were displayed on two LED monitors (Beetel 8\u201dx14\u201d, 640x480 resolution, 60\u00a0Hz refresh rate) and controlled simultaneously by a master computer equipped with a dual-VGA graphics card (nVIDIA GeForce 9800GT). These screens did not show noticeable flicker at 1000 fps, as determined by filming them with a high-speed camera. The monitors were placed in a V configuration, with a 2 cm gap between them. The tethered bee was positioned at the centre of the two monitors, facing the apex, at a linear distance of 10 cm from each monitor (Figure 2A). The floor below the screens was layered with white paper to increase the contrast of the antennae during filming.\n\nWe provided open-loop forward translational stimuli (simulating front-to-back movement of the visual field) to the tethered bees, at a spatial frequency of 0.44 cm-1 and various temporal frequencies (0 to 25 cps for the first set of the experiments and 1.8, 1.5, 1.2, 0.9 and 0.3 cps for the second set of experiments), corresponding approximately to angular speeds of 0 to 300 deg/s\u00a0and 18, 15, 12, 9, 6 and 3 deg/s respectively. Using two synchronized high-speed video cameras (Phantom v7.3, Vision Research, Inc. Wayne, NJ), we filmed tethered flying bees at 250 fps, from both a side view and an overhead view. A third camera, synchronized to the first two, filmed the visual stimulus being displayed to the bee. We provided each bee with a range of temporal frequencies over a single flight bout, and digitized and analysed the whole video, the entire flight bout of the bee in that trial for the first set of experiments. In the second set of experiments in which we gave the bees optic flow from 0 to 1.8 cps, we digitised and analysed 50 frames of video per temporal frequency for 50 wing beats. In our analysis, we discarded bees that did not fly continuously through the entire protocol.\n\n### Combination of visual and airflow stimuli\n\nTo provide both visual and airflow stimuli to the tethered bees, we placed a 4 wire DC fan in front of the bee in a 2 cm gap between the two screens in the set up described above, such that the tethered bee received frontal airflow (Figure 2A). The airflow was collimated and fairly laminar, and we ensured that there were no other sources of airflow. The speed of the fan was adjustable and we could measure the speed of the frontal airflow near the head of the bee using a hot wire anemometer. The fan was placed inside a rectangular box with a plexiglass tunnel in front of it that opened between the two screens so that the tethered bee received collimated frontal airflow.\n\n### Experiments\n\n#### Antennal responses to change in airflow or optic cues\n\n##### Response of tethered bees to changes in the speed of airflow\n\nWe suspended tethered bees from the ceiling of the wind-tunnel at the center of its test section, such that they faced upwind (Figure 1C, top). We then altered the speeds of external airflow using two protocols: a linear sequence of airflows (Figure 1C, Figure 1\u2014figure supplement\u00a01B) and a randomly generated sequence of windspeeds between 0\u2009m/s and 5.5\u2009m/s (Figure 1E, Figure 1\u2014figure supplement\u00a01C), and filmed the responses of their antennae at 500 fps\u00a0from the top and the front using two synchronized high-speed video cameras. We digitized and analyzed 500 frames of video (or 250 wing beats) for each bee at each speed of airflow.\n\n##### Responses of freely flying bees to airspeed changes\n\nUsing a 30% sugar solution in a yellow feeder as a reward, we trained foraging honey bees to fly into the laboratory from an outdoor insectary. The feeder was moved in a series of discrete steps from the insectary to the laboratory. The protocol typically took 7 days at the end of which the bees were trained to enter the wind tunnel and fly upwind to the feeder placed within the wind tunnel. To enable identification of individual bees, we marked them at the feeder with colored acrylic paint on the thorax and abdomen. A marked bee entering the wind tunnel experienced frontal external air flow at speeds ranging between 0\u2009m/s and 3.5\u2009m/s (step size of 0.5\u2009m/s). We filmed the marked bees with two synchronized high speed cameras at 500 fps (Figure 1D, top). We obtained a 1 s video of flight in a straight trajectory for each bee at each wind speed value. The marked bee was filmed at a new randomly chosen airflow speed each time it entered the wind tunnel until the dataset for each bee was complete.\n\n##### Responses of tethered bees to changes in the speed of optic flow\n\nTo determine the role of optic flow in antennal position, we placed tethered bees at the centre of a visual arena (Figure 2A) and varied the speed of the visual gratings to simulate front-to-back optic flow between 0 and 25 cps (corresponding to angular speeds, calculated as linear grating speed per unit distance from the eye of 0 to 300 deg/s). The spatial frequency of the grating was 0.44 cm-1. In the first set of experiments, the bees were provided with a linear change of temporal frequency from 0 to 25 cps in both ascending and descending manner (Figure 2F,G). We also provided the bees with this range of optic flow (between 1\u201325 cps) but in a randomized manner (Figure 2C\u2013E, Figure 2\u2014figure supplement\u00a01B\u2013D and Figure 2\u2014figure supplement\u00a01F\u2013H). In these protocols, each stimulus lasted for 1 s and the entire protocol lasted for 26 s in total. In the experiment in which we displayed sinusoidal rates of optic flow change, the optic flow was changed between 1.8 cps and -1.8 cps. Each sinewave lasted for 10 s and hence the entire trial for 6 sine waves lasted for 60 s (Figure 2H). In the second set of experiments when the optic flow changed between 0 and 1.8 cps, we displayed each grating speed for 6 s, followed by a static screen which was displayed for 3 s before the next grating speed value was displayed. The entire protocol lasted for 54 s in each experiment. We filmed the antennal positioning response of the bee with three synchronized high-speed cameras such that two of them were focused on the bee from the top and side, and a third on the computer monitor displaying the stimulus. We calculated the IAA and then determined the threshold of the IAA response for each bee separately.\n\n#### Antennal responses to diminished input from the Johnston\u2019s organs\n\nTo restrict input to the Johnston\u2019s Organs, we placed cold-anaesthetized bees on a chilled metal platform and applied cyanoacrylate adhesive to the pedicellar-flagellar joint of both antennae. After its recovery from anaesthesia, the tethered bee was placed at the centre of a visual arena comprising two monitors angled perpendicularly to each other, which displayed moving visual gratings (Figure 2A) to the bee. The bee was at a distance of 10 cm from each screen (experimental bee). We then tethered the bee and positioned it between the two monitors, with the DC fan at the apex (Figure 1F,G and 2J). To control for the effects of the glue, in some bees we applied glue on the 2nd annulus of the flagella (sham-treated bee). In both experimental and sham-treated bees, we measured the response of the antennae to airflow and optic flow, in randomized order.\n\n#### Antennal responses to changing airflow and optic flow cues\n\n##### Changing airflow and optic flow cues simultaneously\n\nTo measure the antennal response in tethered bees to co-varying optic and airflow cues, we gave the bees stimuli-combinations from three regimes in their response range (Figure 3A): Regime A (airflow= 0.5\u2009m/s; optic flow=0.3 cps); Regime B (airflow= 2.5\u2009m/s; optic flow=0.9 cps) and Regime C (airflow= 4\u2009m/s; optic flow=1.8 cps). The combination of cues was chosen from three regimes as described in the main text. The highest optic flow value was paired with the highest airflow value (Regime C), the mid-range optic flow value with the mid-range airflow value (Regime B) and the lowest optic flow with the lowest airflow (Regime A). We first filmed the antennae of bees flying at cues from Regime B and then either increased the speeds of airflow and optic flow to Regime C, or decreased the speeds to Regime A respectively. The order of these trials was randomized. The entire set of measurements was taken over a single flight bout, each pairing of stimulus lasting for 6 s with 10 s intervals in between. During this interval, a static grating was displayed on the screen while the airflow was being adjusted to the next value. As controls, we filmed the same bees under conditions of change in just one stimulus (changing airflow and not optic flow and changing optic flow but not airflow) to compare these with the responses to changes in both airflow and optic flow cues.\n\n##### Varying optic flow rates in the presence of a constant airflow\n\nThis experiment was performed on the same bees as the experiment on antennal responses to optic flow cues alone (from Figure 2G). The order in which these two experiments were carried out was randomized. In this case, optic flow was varied in the presence of a constant air flow of 1\u2009m/s (Figure 4A,B).\n\n##### Varying airflow speeds in the presence of a constant optic flow\n\nIn a separate experiment on a different set of bees, we also investigated the effects of a constant optic flow on the antennal response to changes in airflow (Figure 4C,D). Tethered flying bees were provided with air flow speeds of 1\u2009m/s, 2.5\u2009m/s and 4\u2009m/s, both in the absence and presence of a constant optic flow of 1.8 cps. The order of trials was randomized.\n\n#### Digitization of antennae and data analysis\n\nWe calibrated our high-speed cameras before and after each experiment. Using custom MATLAB software with a DLT (direct linear transformation) algorithm (details of the software can be found in [Hedrick (2008)])we digitized the antennal tips and bases of flying honey bees to reconstruct their positions in three dimensions (Figure 1A). We used these positions to calculate the IAA . The variation in antennal length in the digitized videos was used to estimate digitization error, which was within 0.5%\u20131.5% for tethered bees and 3%\u20135% for freely flying bees.\n\nWe normalized the IAA data between 0 (defined as the mean of values between 0 and 1.5\u2009m/s) and 1 (defined as the mean of values between 3 and 5\u2009m/s). Between 0\u20131.5\u2009m/s and 3\u20135\u2009m/s, the normalized IAA did not significantly change (p>0.05, Moore\u2019s test). Between 1.5 and 3\u2009m/s, normalized IAA sigmoidally decreased with airspeed significantly changing with each step (*p<0.0001, Moore\u2019s test, N=10; each colour represents one individual). This procedure constrained the normalized dataset between 1 and 0 for all bees, which enabled a ready comparison across different experiments over and above the inter-animal variability.\n\nFor freely flying bees, we estimated values of groundspeed vector (defined as the velocity of the bee relative to the fixed walls of the wind tunnel) as the rate of change of position of one of the antennal bases (point 2 from Figure 1A). Because the windspeed vector (velocity of airflow within the wind tunnel relative to the fixed walls) was under experimental control, we could calculate the airspeed vector (velocity of the bee relative to the surrounding air) as the vector difference between the groundspeed and the windspeed (Figure 1B).\n\nIn the experiments investigating the antennal response to temporal frequencies, we also analysed the IAA responses to calculate the threshold temporal frequency value for each bee after which it stops responding to any further changes in temporal frequency. We then binned the IAA values for each temporal frequency together to calculate a mean and standard deviation of the IAA response at each temporal frequency rate. We then compared these mean IAA to every other IAA value in the dataset for the bee using the paired non-parametric Moore\u2019s circular test in Oriana 4 (Kovach Computing Services, Anglesey, UK). The temporal frequency rate after which the mean IAA values are not significantly different from the rest of the IAA values is considered the threshold for that bee. The threshold for the bee shown in Figure 2B is 10 cps, for the bee in Figure 2\u2014figure supplement\u00a01A is 14 cps and for the bee shown in Figure 2\u2014figure supplement\u00a01E is 14 cps. The response to the first temporal frequency value is always distinguishable from the rest of the responses as the animal positions its antennae to changing optic flow (from zero to the first value). From the second optic flow onwards, the IAA changes as a response to the change in optic flow (from high to low or low to high) and not with the absolute value of the optic flow. Now that we know the threshold of the antennal response to optic flow, we can predict if for every change in temporal frequency value from one value to a randomly chosen value and so forth, the IAA should change significantly (*p<0.005, Moore\u2019s test, Figure 2D, Figure 2\u2014figure supplement 1C,G; predictions shown in black, tick indicating that we predict that the IAA should change and cross indicating that the IAA should not change. The green dots indicate that the prediction is correct and the score is 1 in that case. The red dots indicate that the prediction is wrong and the score is 0 in that case. The collated scores are at the end of the series).We can also predict the direction of this change i.e. for a given change from one temporal frequency value to the other, should the IAA increase or decrease given that we know that the IAA should increase for every increase in temporal frequency values up to 10 cps of optic flow (Figure 2D, Figure 2\u2014figure supplement 1C,G1; predictions shown in black, upward pointing arrow predicting that the IAA should increase and the downward pointing arrow predicting that the IAA should decrease. The green dots indicate that the prediction is correct and the score is 1 in that case. The red dots indicate that the prediction is wrong and the score is 0 in that case. The collated scores are at the end of the series). To test for the significance of this score, we scrambled the same dataset randomly so that there is no trend in the IAA values. We repeated the same process for this scrambled dataset. For all the individuals in Figure 2A and Figure 2\u2014figure supplement 1E\u00a0and\u00a0F, our scores are significantly different from their scrambled datasets (*p<0.001; Student\u2019s T test) both in terms of the threshold and the direction of change in IAA. We repeated this process with a thousand scrambled dataset comparisons and the same results hold true in each case.\n\nTo understand how optic flow and airflow cues influence antennal positioning response in bees, we compared the mean interantennal (IAA) angles at various values of air speed and optic flow stimuli using the paired non-parametric Moore\u2019s circular test. In the experiments where we combined airflow and optic flow cues to look at antennal responses, we quantified these responses as the change in IAA (\u0394IAA) from its value in Regime B, in response to step changes in speed of one or both stimulus. In these experiments, our ability to test various combinations of airflow and visual cues was restricted by two factors. First, each trial involving transition from Regime B to Regime A and Regime B to Regime C was performed within a single flight bout. Second, the on board memory of our cameras restricted our recording time to 68 s whereas each combination took a total of 60 s. This left us no more than three combinations that we could explore. In the Figure 4, we calculated the change in IAA (\u0394IAA) as difference in the IAA from when only when one cue was being varied compared to when both the cues were present. In both these experiments, we compared all \u0394IAA values with each other and with a hypothetical mean of zero using an ANOVA with a post-hoc Tukey\u2019s Honest Significant Difference test.\n\n## Acknowledgements\n\nThe authors gratefully acknowledge Anand Krishnan, Tanvi Deora, Harshada Sant and Dinesh Natesan for their comments, and Umesh Mohan for technical advice, and our three referees for their thoughtful comments.\n",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "402ddced-c006-4b99-80c5-6c3f6801449b",
+      "submission_id": "97916df4-3f37-4acc-a915-79d9b1a759da",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ronald L Calabrese, Emory University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.14449.010](https://doi.org/10.7554/eLife.14449.010)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Multimodal speedometry in flying honeybees\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Ronald L. Calabrese as the Reviewing Editor and Eve Marder as the Senior Editor.\n\nThe following individuals involved in review of your submission have agreed to reveal their identity: Vivek Jayaraman, Emily Baird, and Jack Gray (peer reviewers).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this interesting study, the authors show that a linear combination of airspeed and optic flow influences antennal positioning in the bee. These results provide an instructive example of the integration of two distinct sensory modalities (mechanosensation and vision) for what is likely a reduction in perceptual ambiguity. Previous studies from the senior author and others have shown that antennae play an important role in flight control for many insects. Based on previous evidence, mechanosensation mediated by the Johnston's organ (JO) is important for sensing airspeed. There is also evidence (e.g., from Heran et al.) that JO sensing depends on antennal positioning, and, further, that this positioning depends on flight and wind speed. Altogether, these results make the study of multimodal cues that influence antennal positioning interesting. Rather than further clarifying the precise function of antennal positioning, the authors use inter-antennal angle (IAA) as an experimental tool to infer the insect's perception of its own speed. They then dissect the role of the two modalities in shaping the percept by monitoring antennal position while manipulating the bee's access to the distinct cues. The findings are in general well supported by the data and should be of interest to biologists who study multisensory integration and multimodal perception.\n\nEssential revisions:\n\nThe reviewers were in agreement about the thoroughness and interest of the work, but request four revisions which must be addressed before this paper can be published in eLife.\n\n1) Refocus the paper from speedometry to multimodal integration. Antennal position may well be a reasonable proxy for the bee's perception of speed, but the authors shouldn't claim the paper is directly about speedometry. The paper would be better framed as a study about multimodal integration, as assessed by antennal position.\n\n2) Clarify that angular velocity is pertinent but was not analyzed. It is important to distinguish between angular velocity and temporal frequency and to make clear in the text that these were not studied independently. It is not necessary to do further experiments with different spatial frequencies.\n\n3) Add more summary data with statistics to supplement data from individual bees.\n\n4) The idea of cross-calibration of optic flow by airspeed was not convincing because of problems associated with head/tail winds.\n\nThese main points are amplified in the appended sections of the expert reviewer comments.\n\nReviewer #1:\n\nNote that even if the experimenters could deduce increases and decreases in the bee's speed based purely on antennal position, which is very unlikely, these findings are not directly about speedometry \u2013 the insect does not itself use antennal position as a readout for speed, but may use it to keep the JO in its operating range (subsection \u201cGeneral relevance of antennal positioning response to mechanosensory and visual cues\u201d, third paragraph). Thus, the strong emphasis on speedometry in the title, Abstract and Introduction is somewhat distracting and confusing.\n\nOverall, the manuscript would benefit from being about a single, well-defined and properly motivated topic, and a well-defined set of questions with logical connections to the results. The main topic is perhaps the use of two different sensory modalities for speed perception as judged by a convenient (albeit imperfect) experimental proxy \u2013 antennal position. If that is true, it should be expressed more explicitly. The connection between speed measurements and IAA should then be explained in more detail in the Introduction or at the beginning of the Results section. Perhaps some of the information of antennal positioning presented in the Discussion (e.g. subsection \u201cGeneral relevance of antennal positioning response to mechanosensory and visual cues\u201d, first and second paragraphs) could be moved to the Introduction or the Results.\n\nReviewer #2:\n\nIn general, the study approaches this topic in a very thorough manner, although I feel that there is one oversight that limits the scope of the findings. This main concern relates to the handling and interpretation of the results when the visual stimulus is presented. Previous work on honeybees has shown that they measure the angular rate of image motion independently from temporal frequency for visually-guided behaviour. The authors could have explored the respective roles of temporal frequency or angular velocity on the antennal positioning response by changing the visual stimulus from a grating pattern with a set spatial frequency to a pattern that contains a variety of frequencies (such patterns are not unusual and could have easily been used in the setup the authors used). As such, it is not clear in the data regarding the visual stimuli if the responses would be different if the angular velocity rather than the temporal frequency were varied. Although I do not think that it is necessary for the authors to do more experiments, I think that they should be more careful in their interpretation of the results and acknowledge that an analysis of the effect of angular velocity independent of temporal frequency would be informative as to the mechanism underlying the visual control of the antenna position.\n\nAnother concern that I have is that I do not understand the concluding argument that the bees use airspeed to calibrate optic flow. This is because airspeed may not provide very accurate information about the motion relative to the ground, such as in cases of tail wind or strong head winds, which honeybees do fly in. They either need to modify this statement or clarify how they predict the antennal positioning mechanism would work under these situations.\n",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d5b433c0-6e5b-49d8-b2c2-41f6a8bd7f4e",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C1",
+      "claim": "Optic flow plays an essential role in speed determination in insects.",
+      "claim_type": "EXPLICIT",
+      "source": "Although optic flow plays an essential role in speed determination, it is less reliable under conditions of low light or sparse landmarks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract without specific data in this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "2c05e842-8812-4389-a323-d260352fa17b",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C2",
+      "claim": "Optic flow is less reliable under conditions of low light or sparse landmarks.",
+      "claim_type": "EXPLICIT",
+      "source": "Although optic flow plays an essential role in speed determination, it is less reliable under conditions of low light or sparse landmarks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "06a1acf1-b38a-4163-b1e7-41d2f07c4d97",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C3",
+      "claim": "Under conditions of low light or sparse landmarks, insects rely on feedback from antennal mechanosensors.",
+      "claim_type": "EXPLICIT",
+      "source": "Under such conditions, insects rely on feedback from antennal mechanosensors but it is not clear how these inputs combine to elicit flight-related antennal behaviours.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "9768a9b7-a161-4ce3-ae7f-b0579f64c979",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C4",
+      "claim": "Antennal movements of the honeybee, Apis mellifera, are governed by combined visual and antennal mechanosensory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "We here show that antennal movements of the honeybee, Apis mellifera, are governed by combined visual and antennal mechanosensory inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the study, supported by experimental data presented in Figures 1-4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "b112740f-0bb2-40d0-b316-ccdee8202cd5",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C5",
+      "claim": "Frontal airflow causes antennae to actively move forward as a sigmoidal function of absolute airspeed values.",
+      "claim_type": "EXPLICIT",
+      "source": "Frontal airflow, as experienced during forward flight, causes antennae to actively move forward as a sigmoidal function of absolute airspeed values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C, D, E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "3a753e05-aca5-41e8-aedf-6ca3cd42c6cc",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C6",
+      "claim": "Front-to-back optic flow causes antennae to move backward as a linear function of relative optic flow.",
+      "claim_type": "EXPLICIT",
+      "source": "However, corresponding front-to-back optic flow causes antennae to move backward, as a linear function of relative optic flow, opposite the airspeed response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "210796af-5013-4e0e-a02a-b79695a0ba80",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C7",
+      "claim": "When combined, airflow and optic flow inputs maintain antennal position in a state of dynamic equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "When combined, these inputs maintain antennal position in a state of dynamic equilibrium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "3436a326-eca5-476b-ba4d-b71cccd2c1d9",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C8",
+      "claim": "Purely optic flow-based measurements of self-motion can be misleading for insects which experience sideslip while flying in a crosswind.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, purely optic flow-based measurements of self-motion can be misleading for insects which experience sideslip while flying in a crosswind.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical inference about the limitations of single-modality sensing.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "624a0e83-5596-4895-8059-9d1a0528595f",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C9",
+      "claim": "Reliance on optic flow may be problematic under dimly lit or overcast conditions, or when flying over lakes or deserts which present sparse visual feedback.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, reliance on optic flow may be problematic under dimly lit or overcast conditions, or when flying over lakes or deserts which present sparse visual feedback.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical inference about environmental conditions affecting optic flow reliability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "42d9d662-e813-4e87-9a60-358885130ec7",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C10",
+      "claim": "Sampling from multiple sensory cues reduces the ambiguity arising from variability in feedback from single modalities.",
+      "claim_type": "EXPLICIT",
+      "source": "In such situations, sampling from multiple sensory cues reduces the ambiguity arising from variability in feedback from single modalities (Wehner, 2003; Sherman and Dickinson, 2004; Wasserman et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "10a58854-bd0a-4567-8061-e57e929585b4",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C11",
+      "claim": "The integration of multimodal sensory cues is essential for most natural locomotory behaviours, including insect flight manoeuvres.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the integration of multimodal sensory cues is essential for most natural locomotory behaviours, including insect flight manoeuvres (Willis and Arbas, 1991; Frye et al., 2003; Verspui and Gray, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "b2a6ce61-e739-406d-8314-637f4ce4b202",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C12",
+      "claim": "The importance of optic flow cues detected by compound eyes is well-documented in diverse insects, including honeybees.",
+      "claim_type": "EXPLICIT",
+      "source": "For flight control, the importance of optic flow cues detected by compound eyes is well-documented in diverse insects, including honeybees (Srinivasan et al., 1996; Baird et al., 2005), bumblebees (Baird et al., 2010; Dyhr and Higgins, 2010), Megalopta (Baird et al., 2011) and Drosophila (David, 1982; Duistermars et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "c366824d-5ff9-4a16-a76c-f124060b9963",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C13",
+      "claim": "Mechanosensory feedback from antennae has emerged as a key sensory input for insect flight.",
+      "claim_type": "EXPLICIT",
+      "source": "In recent years, mechanosensory feedback from antennae has also emerged as a key sensory input for insect flight (Sane et al., 2007; Yorozu et al., 2009; Krishnan et al., 2012; Fuller et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "6f46bb58-20a5-46f7-af51-882ce8565948",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C14",
+      "claim": "Antennal mechanosensory feedback is transduced primarily by two sets of mechanosensors: the chordotonal Johnston's organ (JO) and the antennal hair plates (or B\u00f6hm's bristles).",
+      "claim_type": "EXPLICIT",
+      "source": "This feedback is transduced primarily by two sets of mechanosensors - the chordotonal Johnston's organ (JO) (Gewecke, 1974) which senses a wide range of stimuli from high-frequency antennal vibrations to low-frequency ambient airflow or gravity (Yorozu et al., 2009; Dieudonn\u00e9 et al., 2014), and the antennal hair plates (or B\u00f6hm's bristles) which are involved in the reflexive positioning of antennae during flight (Krishnan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "7c4369b7-592e-479b-a126-54960aba1948",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C15",
+      "claim": "Johnston's organ senses a wide range of stimuli from high-frequency antennal vibrations to low-frequency ambient airflow or gravity.",
+      "claim_type": "EXPLICIT",
+      "source": "This feedback is transduced primarily by two sets of mechanosensors - the chordotonal Johnston's organ (JO) (Gewecke, 1974) which senses a wide range of stimuli from high-frequency antennal vibrations to low-frequency ambient airflow or gravity (Yorozu et al., 2009; Dieudonn\u00e9 et al., 2014), and the antennal hair plates (or B\u00f6hm's bristles) which are involved in the reflexive positioning of antennae during flight (Krishnan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "434bf97a-8be9-48e9-8361-d3593ae32952",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C16",
+      "claim": "Antennal hair plates (or B\u00f6hm's bristles) are involved in the reflexive positioning of antennae during flight.",
+      "claim_type": "EXPLICIT",
+      "source": "This feedback is transduced primarily by two sets of mechanosensors - the chordotonal Johnston's organ (JO) (Gewecke, 1974) which senses a wide range of stimuli from high-frequency antennal vibrations to low-frequency ambient airflow or gravity (Yorozu et al., 2009; Dieudonn\u00e9 et al., 2014), and the antennal hair plates (or B\u00f6hm's bristles) which are involved in the reflexive positioning of antennae during flight (Krishnan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "6776f409-db9a-4c66-b4fb-296ae5570e16",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C17",
+      "claim": "The characteristic positioning of the antennae at the onset of flight is ubiquitous in most, if not all, flying insects.",
+      "claim_type": "EXPLICIT",
+      "source": "The characteristic positioning of the antennae at the onset of flight is ubiquitous in most, if not all, flying insects underscoring the evolutionary significance of its function (Dorsett, 1962).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "ac12e4b4-20c8-4653-bdbf-d59d4e858313",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C18",
+      "claim": "Disruption of antennal positioning due to B\u00f6hm's bristle ablation or reduction of JO inputs severely impairs flight.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of antennal positioning due to B\u00f6hm's bristle ablation or reduction of JO inputs severely impairs flight (Willis et al., 1995; Hinterwirth and Daniel, 2010; Sane et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "56efe009-f31d-42d5-90ec-07d930e5c1b7",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C19",
+      "claim": "The control of antennal position is thought to be essential for the unambiguous sensing of inputs by the JO.",
+      "claim_type": "EXPLICIT",
+      "source": "The control of antennal position is thought to be essential for the unambiguous sensing of inputs by the JO (Hinterwirth et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "95e5153b-77fe-4dc4-860b-7df03930cda5",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C20",
+      "claim": "When tethered bees are presented with fixed airflow but no optic flow, they hold their antennae at constant IAA throughout a flight bout.",
+      "claim_type": "EXPLICIT",
+      "source": "When presented with fixed airflow but no optic flow, both tethered and freely-flying bees held their antennae at constant IAA throughout a flight bout (e.g. Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "e41dcbf4-fb46-4b30-97f4-1ba11db3e2e0",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C21",
+      "claim": "As frontal airflow increased, both antennae moved forward and mean IAA at each airflow value decreased as a sigmoidal function of airspeed in both tethered and freely-flying bees.",
+      "claim_type": "EXPLICIT",
+      "source": "As frontal airflow increased, both antennae moved forward and mean IAA at each airflow value decreased as a sigmoidal function of airspeed (Figure 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "2f3c2936-e2e1-4654-9153-361888822ea2",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C22",
+      "claim": "The linear region of the sigmoid IAA response to airspeed lay between 1.5 to 3 m/s.",
+      "claim_type": "EXPLICIT",
+      "source": "The linear region of the sigmoid lay between 1.5 to 3 m/s (grey bar, Figure 1C,D), changing by approximately 35o (Figure 1\u2014figure supplement 1B) in tethered and 25\u00b0 (Figure 1\u2014figure supplement 1D) in freely-flying bees, significantly decreasing with each step change in airspeed (step change = 0.5 m/s; *p<0.0001; Moore's paired test; N=10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C, D and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "68322548-6000-41e9-917f-af0ad5ada5dd",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C23",
+      "claim": "IAA changed by approximately 35\u00b0 in tethered bees in the linear region of the sigmoid response.",
+      "claim_type": "EXPLICIT",
+      "source": "The linear region of the sigmoid lay between 1.5 to 3 m/s (grey bar, Figure 1C,D), changing by approximately 35o (Figure 1\u2014figure supplement 1B) in tethered and 25\u00b0 (Figure 1\u2014figure supplement 1D) in freely-flying bees, significantly decreasing with each step change in airspeed (step change = 0.5 m/s; *p<0.0001; Moore's paired test; N=10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "28bc73e8-a0d6-476b-8457-e8d8bcc96294",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C24",
+      "claim": "IAA changed by approximately 25\u00b0 in freely-flying bees in the linear region of the sigmoid response.",
+      "claim_type": "EXPLICIT",
+      "source": "The linear region of the sigmoid lay between 1.5 to 3 m/s (grey bar, Figure 1C,D), changing by approximately 35o (Figure 1\u2014figure supplement 1B) in tethered and 25\u00b0 (Figure 1\u2014figure supplement 1D) in freely-flying bees, significantly decreasing with each step change in airspeed (step change = 0.5 m/s; *p<0.0001; Moore's paired test; N=10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "d9aa59fc-528a-4496-9031-96c61152d00e",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C25",
+      "claim": "Antennal behaviour was similar regardless of whether airspeed stimulus was presented in linearly increasing or decreasing steps or in random order.",
+      "claim_type": "EXPLICIT",
+      "source": "This behaviour was similar regardless of whether airspeed stimulus was presented in linearly increasing or decreasing steps (Figure 1C, Figure 1\u2014figure supplement 1B) or in random order (Figure 1E, Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C, E and supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "2580793e-a782-4620-9ef3-24ba79ead16f",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C26",
+      "claim": "Antennal position is calibrated against absolute airspeeds, independent of time history.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, antennal position is calibrated against absolute airspeeds, independent of time history.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing similar responses to randomized and sequential airspeed presentations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "208c24a2-a11f-403a-8d10-4e0c60743c4d",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C27",
+      "claim": "At airspeeds less than 1.5 m/s or greater than 3 m/s, mean IAA at each airflow plateaued in both tethered and freely-flying bees.",
+      "claim_type": "EXPLICIT",
+      "source": "At airspeeds less than 1.5 m/s or greater than 3 m/s, mean IAA at each airflow plateaued in both tethered (Figure 1\u2014figure supplement 1B,C) and freely-flying bees (Figure 1\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1B, C, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "09f4903c-fc2a-42af-9656-ac3b0ff8f6a7",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C28",
+      "claim": "As frontal airflow in the wind tunnel increased, freely-flying honeybees modulated their flight to maintain roughly constant groundspeed of ca. 0.4 m/s.",
+      "claim_type": "EXPLICIT",
+      "source": "As frontal airflow in the wind tunnel increased, freely-flying honeybees modulated their flight to maintain roughly constant groundspeed of ca. 0.4 m/s (Figure 1\u2014figure supplement 1F; also [Barron and Srinivasan, 2006]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1F and citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "7f21923a-f25d-44a2-bb75-dd0d25975465",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C29",
+      "claim": "In freely-flying bees, there was no correlation between groundspeed and IAA.",
+      "claim_type": "EXPLICIT",
+      "source": "In these bees, we observed no correlation between groundspeed and IAA (Figure 1\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "d6566c51-4fb2-484c-8cb6-863c78218fed",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C30",
+      "claim": "Bees with restricted JO positioned their antennae at the onset of flight but their mean IAA at each airflow was insensitive to changing airspeeds.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike sham-treated bees which showed the typical sigmoid response to frontal airflow (Figure 1F, non-normalized data in Figure 1\u2014figure supplement 1H, N=5), bees with restricted JO positioned their antennae at the onset of flight (Figure 1\u2014figure supplement 1I; also [Krishnan et al., 2012]) but their mean IAA at each airflow was insensitive to changing airspeeds (Figure 1G, N=7; p>0.1, Moore's paired test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1G and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "1e6ddd6b-f149-414c-a6de-617efc98ffb9",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C31",
+      "claim": "JO input is required for antennal positioning during flight, but not at flight onset.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments established that JO input is required for antennal positioning during flight, but not at flight onset (Krishnan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on JO-restricted bees and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "549773fa-9838-4504-80a1-a1b4badcd4da",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C32",
+      "claim": "The antennal positioning at flight onset is a separate process from the inflight modulation of IAA.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the antennal positioning at flight onset is a separate process from the inflight modulation of IAA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing JO-restricted bees can position antennae at flight onset but not modulate them during flight.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "6ce485ba-9653-48d9-896b-39144a7014c8",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C33",
+      "claim": "Visual feedback is critical for regulation of groundspeed and height, or in centring trajectories through narrow corridors in diverse flying insects.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, visual feedback is critical for regulation of groundspeed and height, or in centring trajectories through narrow corridors in diverse flying insects (bees: [Srinivasan et al., 1996; Baird et al., 2005], Drosophila: [Straw et al., 2010], moths: [Kuenen and Baker, 1982], review: [Collett et al., 1993]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "61d8f5e0-a7a7-4295-9570-9f072e91c0ea",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C34",
+      "claim": "Visual feedback influences antennal position in insects that antennate during walking.",
+      "claim_type": "EXPLICIT",
+      "source": "It also influences antennal position in insects that antennate during walking (Ye et al., 2003; Honegger, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "6d712b0b-9fa8-41d0-9288-7978bfc2b735",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C35",
+      "claim": "Previous studies on optic flow dependent behaviours in honeybees have demonstrated that they extract angular velocity cues from the image motion, independent of spatial or temporal frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that, previous studies on optic flow dependent behaviours in honeybees have typically demonstrated that they extract angular velocity (ratio of temporal and spatial frequency) cues from the image motion, independent of spatial (Srinivasan et al., 1991) or temporal frequencies (Baird et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "cc2bcb27-946e-4a4d-b596-d6db1878394b",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C36",
+      "claim": "When temporal frequency increased from 0 to 25 cps, an initial sharp adjustment in IAA was followed by a graded response between 0 to approx. 10 cps, beyond which the value reached a plateau.",
+      "claim_type": "EXPLICIT",
+      "source": "When temporal frequency increased from 0 to 25 cps, an initial sharp adjustment in IAA (red curve, Figure 2B, summary figure Figure 2F) was followed by a graded response between 0 to approx. 10 cps (grey bar, Figure 2B), beyond which the value reached a plateau.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B and 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "6a8e86d5-5a44-4f01-b8b2-5cb5e0ed4e56",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C37",
+      "claim": "The response curve for linearly decreasing optic flow (25 to 0 cps) was similar to the increasing cues, except for the lack of initial sharp IAA adjustment from zero to non-zero optic flow.",
+      "claim_type": "EXPLICIT",
+      "source": "The response curve for linearly decreasing optic flow (25 to 0 cps, green curve, Figure 2B, summary figure Figure 2G) was similar to the increasing cues, except for the lack of initial sharp IAA adjustment from zero to non-zero optic flow (also Figure 2\u2014figure supplement 1A,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B, 2G and supplements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "b0c09589-49cd-42ea-8029-84d7f770ca76",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C38",
+      "claim": "Bees respond to changes in temporal frequency rather than their absolute value.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our data show that antennomotor activity in honey bees tracks changes in temporal frequency, and not their absolute value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing responses to randomized optic flow presentations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "8729d432-ebe9-45d6-ac27-aed2e6b59502",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C39",
+      "claim": "Bee antennae robustly tracked simple sinusoidal stimuli that were both, cycled between front-to-back (0 to 1.8 cps), and back-to-front grating movement (0 to -1.8 to 0 cps) over the 10 s duration.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, bee antennae robustly tracked simple sinusoidal stimuli that were both, cycled between front-to-back (0 to 1.8 cps), and back-to-front grating movement (0 to -1.8 to 0 cps) over the 10 s duration (Figure 2H), thus verifying that the antennae move in both directions as a function of optic flow.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "d9bb8924-b7d7-4fe8-bfb4-d6e4a4b5f786",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C40",
+      "claim": "All bees increased their IAA as a function of optic flow in the range 0-1.8 cps, with each step change of 0.3 cps eliciting significant increase in mean IAA.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite inter-animal variability in the set points for IAA at zero optic flow (Figure 2\u2014figure supplement 2A), all bees increased their IAA as a function of optic flow (Figure 2I), with each step change of 0.3 cps eliciting significant increase in mean IAA (*p<0.0001; Moore's paired test, N=10) at that optic flow rate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2I and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "5c15752e-b30d-4f1d-8a7d-b63357792219",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C41",
+      "claim": "The IAA response of tethered bees to optic flow remained intact even when their JO were restricted by gluing the pedicel-flagellar joint.",
+      "claim_type": "EXPLICIT",
+      "source": "The IAA response of tethered bees to optic flow remained intact (Figure 2J; Figure 2\u2014figure supplement 2B) even when their JO were restricted by gluing the pedicel-flagellar joint, establishing that it is independent of the JO pathway.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "251acc06-94e1-4236-aeef-3dc904a24282",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C42",
+      "claim": "Front-to-back optic flow causes antenna to move backward, opposite to frontal airflow which causes antenna to move actively forward.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, front-to-back optic flow causes antenna to move backward, opposite to frontal airflow which causes antenna to move actively forward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing opposite effects of airflow and optic flow on IAA.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "55c416f3-8b41-4aec-8297-f9d973344de8",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C43",
+      "claim": "The JO-based antennal mechanosensory feedback was calibrated against absolute values of airspeed.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the JO-based antennal mechanosensory feedback was calibrated against absolute values of airspeed, visual feedback was calibrated relative to changes in optic flow under or across a threshold value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing responses to airspeed and optic flow.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "d4d0bdaf-1592-4e0f-b060-c048e8a5a986",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C44",
+      "claim": "Visual feedback was calibrated relative to changes in optic flow under or across a threshold value.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the JO-based antennal mechanosensory feedback was calibrated against absolute values of airspeed, visual feedback was calibrated relative to changes in optic flow under or across a threshold value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing responses to optic flow.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "a156435b-3505-4f40-ac97-2697e825cf9b",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C45",
+      "claim": "Antennae maintained position when the cue combination changed from Regime B to Regime A.",
+      "claim_type": "EXPLICIT",
+      "source": "Antennae maintained position when the cue combination changed from Regime B to Regime A (green line; Figure 3B; Pp>0.1, Moore's test), but not when only airflow or optic flow was changed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "486a7027-cc11-475a-9e1e-c2136c9c173c",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C46",
+      "claim": "When airspeed alone decreased from 2.5 to 0.5 m/s, both antennae moved backward.",
+      "claim_type": "EXPLICIT",
+      "source": "When airspeed alone (i.e. with static grating) decreased from 2.5 to 0.5 m/s (blue line; Figure 3B; p<0.001, Moore's test), both antennae moved backward.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "7becb2f4-9853-427f-a458-18b8d6e97b09",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C47",
+      "claim": "Antennae moved forward when optic flow alone decreased from 0.9 to 0.3 cps.",
+      "claim_type": "EXPLICIT",
+      "source": "However, they moved forward when optic flow alone (i.e. with fan off) decreased from 0.9 to 0.3 cps (red line; Figure 3B; p<0.001; Moore's test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "83c8c1a8-6eb9-43c4-909c-3847c788d619",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C48",
+      "claim": "When the cue combination changed from Regime B to Regime C, antennae maintained position.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, when the cue combination changed from Regime B to Regime C, antennae again maintained position (green line; Figure 3C; p>0.1, Moore's test), but moved forward when airflow alone increased from 2.5 to 4 m/s (blue line; Figure 3C) and backward when optic flow alone increased from 0.9 to 1.8 cps (red line; Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "02b3c112-d3c9-453f-996b-e7fac9104ef7",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C49",
+      "claim": "Visual and airflow cues elicit opposite IAA responses which, when acting in concert, maintain antennal position.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, visual and airflow cues elicit opposite IAA responses which, when acting in concert, maintain antennal position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing opposite effects that cancel when combined.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "517a3ed3-bf65-4035-b4b3-362013bacdc5",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C50",
+      "claim": "When both airflow and optic flow cues were co-varied, \u0394IAA did not significantly change.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when both cues were co-varied, \u0394IAA did not significantly change (green, Figure 3D,E; p>0.1, Moore's test) and their means were statistically indistinguishable from zero.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D, E and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "9f2881fd-e57d-42b3-83f0-f64bd6461ac7",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C51",
+      "claim": "The IAA response curves to optic flow in presence of two constant values (0 and 1 m/s) of airspeed were uniformly offset over the range from 0 to 1.8 cps.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured IAA against optic flow in presence of two constant values (0 and 1 m/s) of airspeed. The two curves were uniformly offset over the range from 0 to 1.8 cps (compare dotted and solid lines, Figure 4A,B; *p<0.05, Moore's test, N=8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A, B and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "0eff1cb6-2e06-4b5d-8bc9-9a69af7dae86",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C52",
+      "claim": "For airspeeds between 0 and 4 m/s, a steady offset was observed for greater optic flow, but in the opposite direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, for airspeeds between 0 and 4 m/s, we observed a steady offset for greater optic flow, but in the opposite direction (compare dotted and solid lines, Figure 4C,D; *p<0.05, Moore's test, N=9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C, D and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "d843cbcd-f078-4467-bff5-e8e09019d02e",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C53",
+      "claim": "The antennomotor system linearly combines the multimodal cues and recalibrates accordingly.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the antennomotor system linearly combines the multimodal cues and recalibrates accordingly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing uniform offsets in response curves.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "9c0e9ce3-036b-4e59-b3a9-b4b998624055",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C54",
+      "claim": "Antennal hair plates are stimulated when the antenna undergoes a substantial movement in the scape-head capsule or pedicel-scape joints.",
+      "claim_type": "EXPLICIT",
+      "source": "To summarize these studies: antennal hair plates are stimulated when the antenna undergoes a substantial movement in the scape-head capsule or pedicel-scape joints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "20241b9f-e489-4d90-a855-9b818e7d5d5a",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C55",
+      "claim": "The mechanosensory neurons underlying antennal hair plates directly project into the Antennal Motor and Mechanosensory Center (AMMC) where they arborize on the dendritic fields of antennal motor neurons and activate them.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanosensory neurons underlying these bristles directly project into the Antennal Motor and Mechanosensory Center (AMMC) where they arborize on the dendritic fields of antennal motor neurons and activate them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a summary of previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "ce3c2230-9b7d-4890-bf82-ac9f04552565",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C56",
+      "claim": "Any gross change in antennal position elicits a rapid reflexive correction of the antennal position with latencies under 10 ms in hawk moths.",
+      "claim_type": "EXPLICIT",
+      "source": "Any gross change in antennal position thus elicits a rapid reflexive correction of the antennal position with latencies under 10 ms in hawk moths (Krishnan et al., 2012) and probably on the same order in honeybees and other insects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature and speculation about honeybees.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "be6fb242-162d-4ab2-8db6-e12abf1cdabf",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C57",
+      "claim": "The arrangement of the hair plates in different insects varies, but the underlying neural circuitry and hair plate function is conserved in moths, bees, and most other insect orders.",
+      "claim_type": "EXPLICIT",
+      "source": "Although arrangement of the hair plates in different insects varies, the underlying neural circuitry and hair plate function is conserved in moths, bees, and most other insect orders (Krishnan and Sane, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "c209bcbe-ca9f-4345-8fad-603d6a7dd102",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C58",
+      "claim": "The initial positioning of antennae at the flight onset (antennal deployment) is separate from its later inflight maintenance by the multimodal inputs (inflight antennal positioning).",
+      "claim_type": "EXPLICIT",
+      "source": "Our study shows that the initial positioning of antennae at the flight onset (antennal deployment) is separate from its later inflight maintenance by the multimodal inputs (inflight antennal positioning).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on JO-restricted bees.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "31ee0917-8fcb-4963-b259-9606860de3f4",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C59",
+      "claim": "Both antennal deployment and inflight antennal positioning behaviours require the hair plate-mediated reflex pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Both behaviours require the hair plate-mediated reflex pathway but the set-point of this reflex system is under multimodal control in the latter case.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data and previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "524cdd09-af7c-4ac0-ba7d-b3a112feb588",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C60",
+      "claim": "Restriction of the JO feedback has no effect on the antennal deployment behaviour, whereas it completely disrupts inflight antennal positioning.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, restriction of the JO feedback has no effect on the antennal deployment behaviour, whereas it completely disrupts inflight antennal positioning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data on JO-restricted bees.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "f1e85aaa-07ca-4020-8608-04d0864a2195",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C61",
+      "claim": "Visual feedback drives the activity of both ipsi- and contralateral antennal motor neurons in moths.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the hair plate reflexes which are strictly unilateral (Krishnan et al., 2012), visual feedback drives the activity of both ipsi- and contralateral antennal motor neurons in moths (Krishnan and Sane, 2014) and may therefore serve to coordinate the movements of both antennae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "ef9253ed-473b-40be-aba1-c96ccc929408",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C62",
+      "claim": "The integration of antennal mechanosensory and visual inputs mediates abdominal flexion in moths.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have also described how the integration of antennal mechanosensory and visual inputs mediates abdominal flexion in moths (Hinterwirth and Daniel, 2010) which in turn is relevant for flight control and balance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "a73c65d1-90d8-47aa-a978-8f3e61a2fd0d",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C63",
+      "claim": "In honeybees, the combined effect of antennal mechanosensory and visual inputs on the abdominal streamlining behaviour enables drag reduction during flight.",
+      "claim_type": "EXPLICIT",
+      "source": "In honeybees too, their combined effect on the abdominal streamlining behaviour enables drag reduction during flight (Luu et al., 2011; Taylor et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "5993608a-12b4-4361-a6a4-f13eccc6b667",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C64",
+      "claim": "In freely-flying moths, the stimulation of antennal muscles elicits abdominal flexion accompanied by a change in flight trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "In freely-flying moths, the stimulation of antennal muscles elicits abdominal flexion accompanied by a change in flight trajectory (Hinterwirth et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "80ac0033-9d11-4f82-8bd5-284cc5565351",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C65",
+      "claim": "Integration of mechanosensory and visual information mediates flight control in Drosophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, integration of mechanosensory and visual information mediates flight control in other insects such as Drosophila (Sherman and Dickinson, 2003; Fuller et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "5c6bbf02-c2b9-4317-b833-4019dd5073c3",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C66",
+      "claim": "The relative influence of mechanosensory input is greater during rapid turns, while visual input is more important during slower rotations.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the relative influence of mechanosensory input is greater during rapid turns, visual input is more important during slower rotations (Sherman and Dickinson, 2003; 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "4ad0fd9c-8b1f-473d-bfa8-d28944f9a6b7",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C67",
+      "claim": "The integration of multimodal cues quite likely occurs in the Antennal Motor and Mechanosensory Centre (AMMC) region of the insect brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The integration of these multimodal cues quite likely occurs in the Antennal Motor and Mechanosensory Centre (AMMC) region of the insect brain, which houses the soma of the antennal motor neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on anatomical knowledge.",
+      "evidence_type": "[\"SPECULATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "7f9511e5-5952-4173-a52a-62ab1ccdede6",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C68",
+      "claim": "The AMMC region receives the arbors of motion-sensitive visual interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "This region also receives the arbors of motion-sensitive visual interneurons (Hertel and Maronde, 1987), and likely also the inputs from cephalic hair mechano-afferents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "f77c182e-3d9f-4234-9384-ee32b42156eb",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C69",
+      "claim": "In locusts, the tritocerebral commissure giant (TCG) interneurone integrates visual and airflow information.",
+      "claim_type": "EXPLICIT",
+      "source": "In locusts, the tritocerebral commissure giant (TCG) interneurone integrates visual and airflow information (Bacon and Tyrer, 1978), while other descending interneurons in crickets integrate antennal mechanosensory and visual inputs (Gebhardt and Honegger, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "86d5b306-e6a1-425d-8d86-dd6abe51e2dc",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C70",
+      "claim": "Other descending interneurons in crickets integrate antennal mechanosensory and visual inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "In locusts, the tritocerebral commissure giant (TCG) interneurone integrates visual and airflow information (Bacon and Tyrer, 1978), while other descending interneurons in crickets integrate antennal mechanosensory and visual inputs (Gebhardt and Honegger, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "bf0ccec1-4255-4ee8-8210-5f48685ebeee",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C71",
+      "claim": "IAA responds to absolute airspeed values from 1.5 to 3 m/s, which is narrow compared to the typical range of airspeeds (between 0 and 7 m/s) of honeybees in free flight.",
+      "claim_type": "EXPLICIT",
+      "source": "A key finding of this paper is that IAA responds to absolute airspeed values from 1.5 to 3 m/s, which is narrow compared to the typical range of airspeeds (between 0 and 7 m/s; [Wenner, 1963])of honeybees in free flight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "a08328ae-3ef4-4677-b7d9-67c2583765d3",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C72",
+      "claim": "The odometer in honeybees is visual.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in studies over the past two decades, the odometer in honeybees is quite clearly visual (Srinivasan, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "9a039e6f-4e26-47a6-af10-bb7620358d61",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C73",
+      "claim": "The visual system can extract the overall image motion, which is perceived by and integrated over the motion detectors in the retina.",
+      "claim_type": "EXPLICIT",
+      "source": "The visual system can extract the overall image motion, which is perceived by and integrated over the motion detectors in the retina (Zanker et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "0bc5374c-eee5-4303-a49e-6798e6d854ba",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C74",
+      "claim": "Honeybees trained to find food at a specific distance in tunnels lined with visual stripes can correctly judge distances even when the spatial frequency of the stripes is altered.",
+      "claim_type": "EXPLICIT",
+      "source": "Honeybees trained to find food at a specific distance in tunnels lined with visual stripes can correctly judge distances even when the spatial frequency of the stripes is altered (Baird et al., 2005; Srinivasan et al., 1996; 1997; 2000; 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "6f6542d8-0c20-433a-a424-1209c4d54389",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C75",
+      "claim": "Honeybees estimate distances correctly despite head or tailwinds, suggesting that parameters such as windspeed, flight duration and number of wing beats play no role in the odometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, they estimate distances correctly despite head or tailwinds, suggesting that parameters such as windspeed, flight duration and number of wing beats etc. play no role in the odometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by inference from previous literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "c04b4e6f-32a5-443d-87bf-d0a09a4170cd",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C76",
+      "claim": "Image motion cues can be used to estimate depth and distinguish between near and far objects independent of their size.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, image motion cues can also be used to estimate depth and distinguish between near and far objects independent of their size (Kirchner and Srinivasan, 1989; Srinivasan et al., 1989; Zhang et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "cf649e4d-0439-43e4-b3e1-59985da6dfc8",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C77",
+      "claim": "Bees appear to be able to separately process size and velocity cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, bees appear to be able to separately process size and velocity cues (Srinivasan et al., 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "34a94039-85b7-47a7-9080-4b83588f3350",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C78",
+      "claim": "Honeybees are able to extract information about both airspeed and groundspeed.",
+      "claim_type": "EXPLICIT",
+      "source": "Complement to the visual odometer, we show here that honeybees are also able to extract information about both airspeed and groundspeed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "04209a20-51f9-4886-a2dd-7cb38ee65a1f",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C79",
+      "claim": "The airspeed calibration mediated by JO is absolute, but works over a narrow speed range.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the airspeed calibration mediated by JO is absolute, but works over a narrow speed range, whereas the groundspeed calibration mediated by optic flow can be tuned over a broader range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from experimental data in this study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "8e8c752d-ab33-49e8-a3f9-3faf8b22df05",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C80",
+      "claim": "The groundspeed calibration mediated by optic flow can be tuned over a broader range.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the airspeed calibration mediated by JO is absolute, but works over a narrow speed range, whereas the groundspeed calibration mediated by optic flow can be tuned over a broader range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from experimental data in this study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "53787a22-30a2-48eb-a50d-5cfee7f92417",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C81",
+      "claim": "Honeybees calibrate their optic flow speedometer using their JO-based system that measures absolute airspeeds.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose the hypothesis that honeybees calibrate their optic flow speedometer using their JO-based system that measures absolute airspeeds (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis proposed based on the experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "fa11705d-d9ff-4922-adad-d88dd0680a64",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C82",
+      "claim": "At the onset of a regular flight bout, bees simultaneously sample the optic flow and airspeed.",
+      "claim_type": "EXPLICIT",
+      "source": "At the onset of a regular flight bout, bees simultaneously sample the optic flow (red lines) and airspeed (blue line).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is part of the proposed hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "7bd1e7c7-751a-43a9-b39b-ff1334861242",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C83",
+      "claim": "Sampling the optic flow corresponding to the dynamic range of the JO-based airspeed sensor provides bees with the means to cross-calibrate average optic flow against absolute airspeeds.",
+      "claim_type": "EXPLICIT",
+      "source": "Sampling the optic flow (Figure 4F; black segments on the red lines) corresponding to the dynamic range of the JO-based airspeed sensor (e.g. between ~1.5 to 3 m/s) provides bees with the means to cross-calibrate average optic flow against absolute airspeeds.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is part of the proposed hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "784206ca-aecb-4ba1-b30e-8b5f0ff15856",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C84",
+      "claim": "The optic flow-based speedometer requires extrapolation well beyond the range of the antennal system.",
+      "claim_type": "EXPLICIT",
+      "source": "As the airspeed-based estimation only works in a narrow range from 1.5 to 3 m/s, the optic flow-based speedometer requires extrapolation well beyond the range of the antennal system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing the narrow range of airspeed sensing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "83a3a5a5-2988-4c79-9c09-40e0b7cd1b4a",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C85",
+      "claim": "A disadvantage of the proposed calibration system is that it must be recalibrated at the beginning of each bout, or within bouts in case of sudden gusts of wind which may confound the calibration.",
+      "claim_type": "EXPLICIT",
+      "source": "A disadvantage of such a system is that it must be recalibrated at the beginning of each bout, or within bouts in case of sudden gusts of wind which may confound the calibration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about the proposed hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "11e42b67-4e70-45d3-90c4-53d47f6c2ffb",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C86",
+      "claim": "Under circumstances of sudden gusts of wind, honeybees would have to slow down to recalibrate their optic flow based speedometer against the airspeed-based speedometer, before resuming flight.",
+      "claim_type": "EXPLICIT",
+      "source": "Under such circumstances, we predict that honeybees would have to slow down to recalibrate their optic flow based speedometer against the airspeed-based speedometer, before resuming flight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the proposed hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "89c8c2a1-9856-4c26-b8d9-612b38ed2392",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C87",
+      "claim": "Honeybees freely flying within a tunnel lined with checkerboard patterns flew at speeds of approximately 0.4 m/s.",
+      "claim_type": "EXPLICIT",
+      "source": "In their study on visual regulation of groundspeeds in honeybees, Barron and Srinivasan (Barron and Srinivasan, 2006) observed that honeybees freely flying within a tunnel lined with checkerboard patterns flew at speeds of approximately 0.4 m/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "b08dc1ee-50b3-476c-9843-80ba63032042",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C88",
+      "claim": "When the checkerboard pattern was replaced by an axial-stripe pattern which offered sparse optic flow cues, honeybee groundspeed was maintained with low variance at a value of 1.4 m/s.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the checkerboard pattern was replaced by an axial-stripe pattern which offered sparse optic flow cues, its groundspeed was maintained with low variance at a value of 1.4 m/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "1c635df0-27ec-4631-9b55-d42f21bec7ee",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C89",
+      "claim": "In absence of optic flow, the bees rely on their JO-based airflow sensors to both set and maintain groundspeed.",
+      "claim_type": "EXPLICIT",
+      "source": "To explain this result, we propose that, in absence of optic flow, the bees rely on their JO-based airflow sensors to both set and maintain groundspeed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed explanation for observations from previous literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "5029cec2-639a-4958-a3eb-5d8662e14a13",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C90",
+      "claim": "The value of 1.4 m/s lies at the cusp of the airflow response curve.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that the value of 1.4 m/s lies at the cusp of the airflow response curve (Figure 1C), and is maintained as the new reference at different wind speeds in sparse optic flow (see Figure 3 in Barron and Srinivasan [2006]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation connecting current data with previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "694a646f-b0d8-429c-bd65-02d193e80073",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C91",
+      "claim": "The honeybee odometer follows the Weber's law.",
+      "claim_type": "EXPLICIT",
+      "source": "One would expect such a speedometer system to accumulate errors as the range increases, as has also been observed with the honeybee odometer, which follows the Weber's law (Cheng et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "58e7c313-6d37-4600-a4dc-9d76624f01d4",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C92",
+      "claim": "All experiments were performed on the European honeybees, Apis mellifera.",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were performed on the European honeybees, Apis mellifera, maintained in an apiary in an outdoor insectary approximately 60 m from the lab.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "70b59f07-532c-4314-b92d-a85a8b439a03",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "claim_id": "C93",
+      "claim": "The digitization error was within 0.5%\u20131.5% for tethered bees and 3%\u20135% for freely flying bees.",
+      "claim_type": "EXPLICIT",
+      "source": "The variation in antennal length in the digitized videos was used to estimate digitization error, which was within 0.5%\u20131.5% for tethered bees and 3%\u20135% for freely flying bees.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about measurement accuracy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0181687e-5bd4-41f1-bfe4-3017e469cc7a",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Frontal airflow causes honeybee antennae to move forward in a sigmoidal function of absolute airspeed, with a linear response region between 1.5-3 m/s. This response is independent of stimulus presentation order (linear vs. random), indicating calibration against absolute airspeeds rather than time history.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C21-C27 provide converging evidence from both tethered and freely-flying bees showing consistent sigmoidal IAA responses to airspeed (Figures 1C-E). The statistical significance (p<0.0001, N=10) and reproducibility across different stimulus presentations strongly support this result. The digitization error (0.5-5%) is acceptable for the measured effect sizes (~25-35\u00b0).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "b56cf918-4fe0-4c05-b314-d0f028c6628e",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Johnston's organ (JO) input is required for inflight antennal positioning but not for initial antennal deployment at flight onset. JO-restricted bees position antennae normally at flight onset but show no IAA modulation in response to changing airspeeds during flight.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32, C60 demonstrate through JO-restriction experiments (gluing pedicel-flagellar joint) that JO is necessary for airspeed-dependent IAA modulation (p>0.1 for airspeed response, N=7) but not initial positioning. Sham controls (C30) appropriately control for glue effects. This establishes two distinct behavioral processes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "d56e5cfd-38be-4e8e-925c-dccf5534069d",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Front-to-back optic flow causes honeybee antennae to move backward, opposite to the airflow response. Bees respond to changes in temporal frequency rather than absolute values, with responses saturating above ~10 cps and tracking bidirectional sinusoidal stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C36-C40, C42 provide experimental evidence from multiple paradigms (linear, randomized, sinusoidal stimuli) showing consistent backward antennal movement with increasing optic flow. The randomized stimulus experiments with prediction scores significantly above chance (p<0.001) strongly support that bees track changes rather than absolute values. Statistical significance (p<0.0001, N=10) for step changes is robust.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "ecb0eda7-c158-47ca-9503-3d97cc9a9931",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The IAA response to optic flow remains intact when Johnston's organs are restricted, establishing independence from the JO pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 demonstrates through JO-restriction experiments (Figure 2J) that visual responses persist when mechanosensory input is blocked. This is a critical control establishing pathway independence and is well-supported by the experimental design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "c30cb001-c8d0-426b-8f34-987a3c43a630",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Airflow and optic flow inputs combine antagonistically to maintain antennal position in dynamic equilibrium. When both cues are co-varied proportionally, IAA remains constant, but changing either cue alone produces predictable directional changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C7, C45-C50 demonstrate through systematic manipulation of bimodal stimuli (Regimes A, B, C) that the two sensory modalities have opposite effects that cancel when combined (p>0.1 for combined changes, p<0.001 for individual changes, N=8). This is the central finding establishing multimodal integration and is well-supported by converging evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "5dca8c32-cb6a-472c-8d9c-3b1d9e404b4d",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The antennomotor system linearly combines multimodal cues. JO-based mechanosensory feedback is calibrated against absolute airspeed values, while visual feedback is calibrated relative to changes in optic flow. Response curves show uniform offsets when one cue is held constant while the other varies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44, C51-C53 demonstrate through systematic experiments (Figure 4A-D) that response curves are uniformly offset rather than nonlinearly transformed (p<0.05, N=8-9). This supports linear summation of inputs. The distinction between absolute (airspeed) and relative (optic flow) calibration is well-established by the randomized stimulus experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "784a7cf2-2f43-481e-8770-e24c1b74a066",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose a hypothesis that honeybees calibrate their optic flow speedometer using the JO-based airspeed sensor during the narrow dynamic range (1.5-3 m/s), then extrapolate for broader speed ranges. This system would require recalibration at each flight bout or after wind gusts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C81-C86 present a speculative hypothesis (explicitly stated as 'we propose') to explain how bees might integrate the two sensory modalities for speed estimation. While the hypothesis is logical and consistent with the data showing narrow airspeed range and broad optic flow range, it lacks direct experimental validation. The prediction in C86 is untested. This represents an interesting interpretive framework but requires future experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "a571ae24-2e80-4234-8c11-073e91f2b260",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Antennal deployment at flight onset is a separate process from inflight antennal positioning. Both require hair plate-mediated reflexes, but only inflight positioning is under multimodal control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 synthesize findings from JO-restriction experiments showing dissociation between initial positioning (intact) and inflight modulation (disrupted). This inference is well-supported by the experimental data (C30-C32, C60) and previous literature citations, establishing two distinct behavioral mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "45d59adb-0537-4e1e-97ab-f12b3dd7145e",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Freely-flying honeybees maintain constant groundspeed (~0.4 m/s) as airflow increases, with no correlation between groundspeed and IAA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 are supported by experimental data (Figure 1\u2014figure supplement 1F-G) and consistent with prior literature (Barron and Srinivasan, 2006). This establishes that IAA is not simply tracking groundspeed but rather airspeed, which is important for interpreting the main findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "deff9678-c4af-426b-91af-9f541276f35d",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "When presented with fixed airflow but no optic flow, bees hold their antennae at constant IAA throughout a flight bout.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C20 establishes baseline behavior showing IAA stability under constant conditions (Figure 1\u2014figure supplement 1A). This is an important control demonstrating that observed changes are stimulus-driven rather than spontaneous drift. The low variance (S.D. 0.8-3\u00b0) supports measurement reliability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "93196e35-e9bb-465b-b3fd-34239f097633",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "IAA responds to absolute airspeed values over a narrow range (1.5-3 m/s) compared to the typical honeybee flight range (0-7 m/s). Honeybees can extract information about both airspeed (via JO, narrow range) and groundspeed (via optic flow, broader range).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71, C78-C80 synthesize the key findings about the different operating ranges of the two sensory systems. This is well-supported by the experimental data showing sigmoidal saturation for airspeed and broader linear responses for optic flow. The comparison to natural flight speeds (citing Wenner, 1963) provides important ecological context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "32cf6a45-1bb0-46aa-a057-35ba07d699a1",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors propose that observations from Barron and Srinivasan (2006) showing bees maintaining 1.4 m/s groundspeed in sparse optic flow can be explained by reliance on JO-based airflow sensing, as 1.4 m/s lies at the cusp of the airflow response curve.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C87-C90 attempt to reinterpret prior findings (C87-C88 from literature) using the current study's framework (C89-C90 are speculative). While the observation that 1.4 m/s corresponds to the response curve cusp is interesting, this explanation is post-hoc and lacks direct experimental validation. The original Barron and Srinivasan study was not designed to test this hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "46577ccd-d181-463c-a865-b07c1e7db07a",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Antennal hair plates (B\u00f6hm's bristles) mediate rapid reflexive correction of antennal position through direct projections to the AMMC. This mechanism is conserved across insect orders with response latencies under 10 ms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 summarize established knowledge from prior literature (primarily Krishnan et al., 2012; Krishnan and Sane, 2015). While not new findings from this study, they provide essential context for the model in Figure 4E. The claim about honeybee latencies (C56) is speculative ('probably') but reasonable given moth data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "15fecb5c-8c9c-4790-aab7-5b6946e28255",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Multimodal integration of visual and mechanosensory inputs mediates various flight-related behaviors across insects, including abdominal flexion in moths and honeybees, and flight control in Drosophila, with different modalities dominating during different maneuvers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C66 cite extensive prior literature establishing the broader context of multimodal integration in insect flight control. These are well-established findings from other studies that provide important comparative context but are not new results from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "d67b7eb8-0264-439d-ae6f-cec13a6b8d7f",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Multimodal integration likely occurs in the AMMC region, which receives inputs from visual interneurons and mechanosensory afferents. Similar integration occurs in other insects via specific interneurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C70 propose anatomical substrates for integration. C67 is speculative ('quite likely') based on anatomical knowledge. C68 cites prior literature (Hertel and Maronde, 1987) but notes uncertainty ('likely also'). C69-C70 cite examples from other insects. While anatomically plausible, direct evidence for AMMC as the integration site in honeybees is lacking.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "5bdd0c26-e3ad-4515-b3a2-cd426c173409",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Optic flow is essential for insect speed determination but unreliable under low light or sparse landmarks, leading insects to rely on antennal mechanosensors. Multimodal integration reduces ambiguity from single-modality variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C8-C11 establish the rationale and context from prior literature. These are well-established principles in insect sensory biology supported by extensive citations. While not new findings, they provide essential motivation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "c909a119-1f30-4bc6-9220-3b23afc01163",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prior literature establishes that optic flow detection by compound eyes and mechanosensory feedback from antennae (via JO and hair plates) are key sensory inputs for insect flight, with antennal positioning being ubiquitous and functionally important across flying insects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C19 comprehensively review established literature on insect flight sensory systems. These are well-documented findings from prior studies (extensively cited) that provide necessary background. They represent accurate summaries of the field rather than new results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "399db5a5-4d67-4e70-8e94-5f5b7f207ae6",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Visual feedback is critical for various flight behaviors in insects and influences antennal position during walking. Honeybees extract angular velocity cues from optic flow independent of spatial or temporal frequencies alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 cite established literature on visual control of insect behavior. C35 is particularly important as it establishes that honeybees normally extract angular velocity (not just temporal frequency), which provides context for the experimental design choice to vary temporal frequency at constant spatial frequency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "3db0ed8a-1f46-41c5-8a04-62be2db148ab",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The honeybee odometer is visual, based on image motion integrated across retinal motion detectors. Bees can judge distances correctly despite changes in stripe spatial frequency or wind conditions, and can separately process size and velocity cues. The odometer follows Weber's law.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C77, C91 summarize extensive prior work on honeybee visual odometry (primarily from Srinivasan's group). These are well-established findings that provide important context for understanding how the current findings about airspeed and optic flow integration might relate to navigation. Not new results but accurate literature summary.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    },
+    {
+      "id": "d5200306-44c0-4084-aa2d-a80666b6b2c3",
+      "content_id": "aa27064e-6262-4524-9f96-5c2b9cc7e2cc",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Experiments were performed on Apis mellifera with digitization error of 0.5-1.5% for tethered bees and 3-5% for freely-flying bees.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C93 describe basic methodological details. The digitization error estimates are reasonable for high-speed video analysis and are appropriately reported. The error ranges are small relative to the measured effects (25-35\u00b0 changes in IAA).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:28:43.549255Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b112740f-0bb2-40d0-b316-ccdee8202cd5",
+      "result_id": "0181687e-5bd4-41f1-bfe4-3017e469cc7a"
+    },
+    {
+      "claim_id": "e41dcbf4-fb46-4b30-97f4-1ba11db3e2e0",
+      "result_id": "0181687e-5bd4-41f1-bfe4-3017e469cc7a"
+    },
+    {
+      "claim_id": "2f3c2936-e2e1-4654-9153-361888822ea2",
+      "result_id": "0181687e-5bd4-41f1-bfe4-3017e469cc7a"
+    },
+    {
+      "claim_id": "68322548-6000-41e9-917f-af0ad5ada5dd",
+      "result_id": "0181687e-5bd4-41f1-bfe4-3017e469cc7a"
+    },
+    {
+      "claim_id": "28bc73e8-a0d6-476b-8457-e8d8bcc96294",
+      "result_id": "0181687e-5bd4-41f1-bfe4-3017e469cc7a"
+    },
+    {
+      "claim_id": "d9aa59fc-528a-4496-9031-96c61152d00e",
+      "result_id": "0181687e-5bd4-41f1-bfe4-3017e469cc7a"
+    },
+    {
+      "claim_id": "2580793e-a782-4620-9ef3-24ba79ead16f",
+      "result_id": "0181687e-5bd4-41f1-bfe4-3017e469cc7a"
+    },
+    {
+      "claim_id": "208c24a2-a11f-403a-8d10-4e0c60743c4d",
+      "result_id": "0181687e-5bd4-41f1-bfe4-3017e469cc7a"
+    },
+    {
+      "claim_id": "d6566c51-4fb2-484c-8cb6-863c78218fed",
+      "result_id": "b56cf918-4fe0-4c05-b314-d0f028c6628e"
+    },
+    {
+      "claim_id": "1e6ddd6b-f149-414c-a6de-617efc98ffb9",
+      "result_id": "b56cf918-4fe0-4c05-b314-d0f028c6628e"
+    },
+    {
+      "claim_id": "549773fa-9838-4504-80a1-a1b4badcd4da",
+      "result_id": "b56cf918-4fe0-4c05-b314-d0f028c6628e"
+    },
+    {
+      "claim_id": "524cdd09-af7c-4ac0-ba7d-b3a112feb588",
+      "result_id": "b56cf918-4fe0-4c05-b314-d0f028c6628e"
+    },
+    {
+      "claim_id": "3a753e05-aca5-41e8-aedf-6ca3cd42c6cc",
+      "result_id": "d56e5cfd-38be-4e8e-925c-dccf5534069d"
+    },
+    {
+      "claim_id": "cc2bcb27-946e-4a4d-b596-d6db1878394b",
+      "result_id": "d56e5cfd-38be-4e8e-925c-dccf5534069d"
+    },
+    {
+      "claim_id": "6a8e86d5-5a44-4f01-b8b2-5cb5e0ed4e56",
+      "result_id": "d56e5cfd-38be-4e8e-925c-dccf5534069d"
+    },
+    {
+      "claim_id": "b0c09589-49cd-42ea-8029-84d7f770ca76",
+      "result_id": "d56e5cfd-38be-4e8e-925c-dccf5534069d"
+    },
+    {
+      "claim_id": "8729d432-ebe9-45d6-ac27-aed2e6b59502",
+      "result_id": "d56e5cfd-38be-4e8e-925c-dccf5534069d"
+    },
+    {
+      "claim_id": "d9bb8924-b7d7-4fe8-bfb4-d6e4a4b5f786",
+      "result_id": "d56e5cfd-38be-4e8e-925c-dccf5534069d"
+    },
+    {
+      "claim_id": "251acc06-94e1-4236-aeef-3dc904a24282",
+      "result_id": "d56e5cfd-38be-4e8e-925c-dccf5534069d"
+    },
+    {
+      "claim_id": "5c15752e-b30d-4f1d-8a7d-b63357792219",
+      "result_id": "ecb0eda7-c158-47ca-9503-3d97cc9a9931"
+    },
+    {
+      "claim_id": "9768a9b7-a161-4ce3-ae7f-b0579f64c979",
+      "result_id": "c30cb001-c8d0-426b-8f34-987a3c43a630"
+    },
+    {
+      "claim_id": "210796af-5013-4e0e-a02a-b79695a0ba80",
+      "result_id": "c30cb001-c8d0-426b-8f34-987a3c43a630"
+    },
+    {
+      "claim_id": "a156435b-3505-4f40-ac97-2697e825cf9b",
+      "result_id": "c30cb001-c8d0-426b-8f34-987a3c43a630"
+    },
+    {
+      "claim_id": "486a7027-cc11-475a-9e1e-c2136c9c173c",
+      "result_id": "c30cb001-c8d0-426b-8f34-987a3c43a630"
+    },
+    {
+      "claim_id": "7becb2f4-9853-427f-a458-18b8d6e97b09",
+      "result_id": "c30cb001-c8d0-426b-8f34-987a3c43a630"
+    },
+    {
+      "claim_id": "83c8c1a8-6eb9-43c4-909c-3847c788d619",
+      "result_id": "c30cb001-c8d0-426b-8f34-987a3c43a630"
+    },
+    {
+      "claim_id": "02b3c112-d3c9-453f-996b-e7fac9104ef7",
+      "result_id": "c30cb001-c8d0-426b-8f34-987a3c43a630"
+    },
+    {
+      "claim_id": "517a3ed3-bf65-4035-b4b3-362013bacdc5",
+      "result_id": "c30cb001-c8d0-426b-8f34-987a3c43a630"
+    },
+    {
+      "claim_id": "55c416f3-8b41-4aec-8297-f9d973344de8",
+      "result_id": "5dca8c32-cb6a-472c-8d9c-3b1d9e404b4d"
+    },
+    {
+      "claim_id": "d4d0bdaf-1592-4e0f-b060-c048e8a5a986",
+      "result_id": "5dca8c32-cb6a-472c-8d9c-3b1d9e404b4d"
+    },
+    {
+      "claim_id": "9f2881fd-e57d-42b3-83f0-f64bd6461ac7",
+      "result_id": "5dca8c32-cb6a-472c-8d9c-3b1d9e404b4d"
+    },
+    {
+      "claim_id": "0eff1cb6-2e06-4b5d-8bc9-9a69af7dae86",
+      "result_id": "5dca8c32-cb6a-472c-8d9c-3b1d9e404b4d"
+    },
+    {
+      "claim_id": "d843cbcd-f078-4467-bff5-e8e09019d02e",
+      "result_id": "5dca8c32-cb6a-472c-8d9c-3b1d9e404b4d"
+    },
+    {
+      "claim_id": "53787a22-30a2-48eb-a50d-5cfee7f92417",
+      "result_id": "784a7cf2-2f43-481e-8770-e24c1b74a066"
+    },
+    {
+      "claim_id": "fa11705d-d9ff-4922-adad-d88dd0680a64",
+      "result_id": "784a7cf2-2f43-481e-8770-e24c1b74a066"
+    },
+    {
+      "claim_id": "7bd1e7c7-751a-43a9-b39b-ff1334861242",
+      "result_id": "784a7cf2-2f43-481e-8770-e24c1b74a066"
+    },
+    {
+      "claim_id": "784206ca-aecb-4ba1-b30e-8b5f0ff15856",
+      "result_id": "784a7cf2-2f43-481e-8770-e24c1b74a066"
+    },
+    {
+      "claim_id": "83a3a5a5-2988-4c79-9c09-40e0b7cd1b4a",
+      "result_id": "784a7cf2-2f43-481e-8770-e24c1b74a066"
+    },
+    {
+      "claim_id": "11e42b67-4e70-45d3-90c4-53d47f6c2ffb",
+      "result_id": "784a7cf2-2f43-481e-8770-e24c1b74a066"
+    },
+    {
+      "claim_id": "c209bcbe-ca9f-4345-8fad-603d6a7dd102",
+      "result_id": "a571ae24-2e80-4234-8c11-073e91f2b260"
+    },
+    {
+      "claim_id": "31ee0917-8fcb-4963-b259-9606860de3f4",
+      "result_id": "a571ae24-2e80-4234-8c11-073e91f2b260"
+    },
+    {
+      "claim_id": "09f4903c-fc2a-42af-9656-ac3b0ff8f6a7",
+      "result_id": "45d59adb-0537-4e1e-97ab-f12b3dd7145e"
+    },
+    {
+      "claim_id": "7f21923a-f25d-44a2-bb75-dd0d25975465",
+      "result_id": "45d59adb-0537-4e1e-97ab-f12b3dd7145e"
+    },
+    {
+      "claim_id": "95e5153b-77fe-4dc4-860b-7df03930cda5",
+      "result_id": "deff9678-c4af-426b-91af-9f541276f35d"
+    },
+    {
+      "claim_id": "bf0ccec1-4255-4ee8-8210-5f48685ebeee",
+      "result_id": "93196e35-e9bb-465b-b3fd-34239f097633"
+    },
+    {
+      "claim_id": "34a94039-85b7-47a7-9080-4b83588f3350",
+      "result_id": "93196e35-e9bb-465b-b3fd-34239f097633"
+    },
+    {
+      "claim_id": "04209a20-51f9-4886-a2dd-7cb38ee65a1f",
+      "result_id": "93196e35-e9bb-465b-b3fd-34239f097633"
+    },
+    {
+      "claim_id": "8e8c752d-ab33-49e8-a3f9-3faf8b22df05",
+      "result_id": "93196e35-e9bb-465b-b3fd-34239f097633"
+    },
+    {
+      "claim_id": "89c8c2a1-9856-4c26-b8d9-612b38ed2392",
+      "result_id": "32cf6a45-1bb0-46aa-a057-35ba07d699a1"
+    },
+    {
+      "claim_id": "b08dc1ee-50b3-476c-9843-80ba63032042",
+      "result_id": "32cf6a45-1bb0-46aa-a057-35ba07d699a1"
+    },
+    {
+      "claim_id": "1c635df0-27ec-4631-9b55-d42f21bec7ee",
+      "result_id": "32cf6a45-1bb0-46aa-a057-35ba07d699a1"
+    },
+    {
+      "claim_id": "5029cec2-639a-4958-a3eb-5d8662e14a13",
+      "result_id": "32cf6a45-1bb0-46aa-a057-35ba07d699a1"
+    },
+    {
+      "claim_id": "9c0e9ce3-036b-4e59-b3a9-b4b998624055",
+      "result_id": "46577ccd-d181-463c-a865-b07c1e7db07a"
+    },
+    {
+      "claim_id": "20241b9f-e489-4d90-a855-9b818e7d5d5a",
+      "result_id": "46577ccd-d181-463c-a865-b07c1e7db07a"
+    },
+    {
+      "claim_id": "ce3c2230-9b7d-4890-bf82-ac9f04552565",
+      "result_id": "46577ccd-d181-463c-a865-b07c1e7db07a"
+    },
+    {
+      "claim_id": "be6fb242-162d-4ab2-8db6-e12abf1cdabf",
+      "result_id": "46577ccd-d181-463c-a865-b07c1e7db07a"
+    },
+    {
+      "claim_id": "f1e85aaa-07ca-4020-8608-04d0864a2195",
+      "result_id": "15fecb5c-8c9c-4790-aab7-5b6946e28255"
+    },
+    {
+      "claim_id": "ef9253ed-473b-40be-aba1-c96ccc929408",
+      "result_id": "15fecb5c-8c9c-4790-aab7-5b6946e28255"
+    },
+    {
+      "claim_id": "a73c65d1-90d8-47aa-a978-8f3e61a2fd0d",
+      "result_id": "15fecb5c-8c9c-4790-aab7-5b6946e28255"
+    },
+    {
+      "claim_id": "5993608a-12b4-4361-a6a4-f13eccc6b667",
+      "result_id": "15fecb5c-8c9c-4790-aab7-5b6946e28255"
+    },
+    {
+      "claim_id": "80ac0033-9d11-4f82-8bd5-284cc5565351",
+      "result_id": "15fecb5c-8c9c-4790-aab7-5b6946e28255"
+    },
+    {
+      "claim_id": "5c6bbf02-c2b9-4317-b833-4019dd5073c3",
+      "result_id": "15fecb5c-8c9c-4790-aab7-5b6946e28255"
+    },
+    {
+      "claim_id": "4ad0fd9c-8b1f-473d-bfa8-d28944f9a6b7",
+      "result_id": "d67b7eb8-0264-439d-ae6f-cec13a6b8d7f"
+    },
+    {
+      "claim_id": "7f9511e5-5952-4173-a52a-62ab1ccdede6",
+      "result_id": "d67b7eb8-0264-439d-ae6f-cec13a6b8d7f"
+    },
+    {
+      "claim_id": "f77c182e-3d9f-4234-9384-ee32b42156eb",
+      "result_id": "d67b7eb8-0264-439d-ae6f-cec13a6b8d7f"
+    },
+    {
+      "claim_id": "86d5b306-e6a1-425d-8d86-dd6abe51e2dc",
+      "result_id": "d67b7eb8-0264-439d-ae6f-cec13a6b8d7f"
+    },
+    {
+      "claim_id": "d5b433c0-6e5b-49d8-b2c2-41f6a8bd7f4e",
+      "result_id": "5bdd0c26-e3ad-4515-b3a2-cd426c173409"
+    },
+    {
+      "claim_id": "2c05e842-8812-4389-a323-d260352fa17b",
+      "result_id": "5bdd0c26-e3ad-4515-b3a2-cd426c173409"
+    },
+    {
+      "claim_id": "06a1acf1-b38a-4163-b1e7-41d2f07c4d97",
+      "result_id": "5bdd0c26-e3ad-4515-b3a2-cd426c173409"
+    },
+    {
+      "claim_id": "3436a326-eca5-476b-ba4d-b71cccd2c1d9",
+      "result_id": "5bdd0c26-e3ad-4515-b3a2-cd426c173409"
+    },
+    {
+      "claim_id": "624a0e83-5596-4895-8059-9d1a0528595f",
+      "result_id": "5bdd0c26-e3ad-4515-b3a2-cd426c173409"
+    },
+    {
+      "claim_id": "42d9d662-e813-4e87-9a60-358885130ec7",
+      "result_id": "5bdd0c26-e3ad-4515-b3a2-cd426c173409"
+    },
+    {
+      "claim_id": "10a58854-bd0a-4567-8061-e57e929585b4",
+      "result_id": "5bdd0c26-e3ad-4515-b3a2-cd426c173409"
+    },
+    {
+      "claim_id": "b2a6ce61-e739-406d-8314-637f4ce4b202",
+      "result_id": "c909a119-1f30-4bc6-9220-3b23afc01163"
+    },
+    {
+      "claim_id": "c366824d-5ff9-4a16-a76c-f124060b9963",
+      "result_id": "c909a119-1f30-4bc6-9220-3b23afc01163"
+    },
+    {
+      "claim_id": "6f46bb58-20a5-46f7-af51-882ce8565948",
+      "result_id": "c909a119-1f30-4bc6-9220-3b23afc01163"
+    },
+    {
+      "claim_id": "7c4369b7-592e-479b-a126-54960aba1948",
+      "result_id": "c909a119-1f30-4bc6-9220-3b23afc01163"
+    },
+    {
+      "claim_id": "434bf97a-8be9-48e9-8361-d3593ae32952",
+      "result_id": "c909a119-1f30-4bc6-9220-3b23afc01163"
+    },
+    {
+      "claim_id": "6776f409-db9a-4c66-b4fb-296ae5570e16",
+      "result_id": "c909a119-1f30-4bc6-9220-3b23afc01163"
+    },
+    {
+      "claim_id": "ac12e4b4-20c8-4653-bdbf-d59d4e858313",
+      "result_id": "c909a119-1f30-4bc6-9220-3b23afc01163"
+    },
+    {
+      "claim_id": "56efe009-f31d-42d5-90ec-07d930e5c1b7",
+      "result_id": "c909a119-1f30-4bc6-9220-3b23afc01163"
+    },
+    {
+      "claim_id": "6ce485ba-9653-48d9-896b-39144a7014c8",
+      "result_id": "399db5a5-4d67-4e70-8e94-5f5b7f207ae6"
+    },
+    {
+      "claim_id": "61d8f5e0-a7a7-4295-9570-9f072e91c0ea",
+      "result_id": "399db5a5-4d67-4e70-8e94-5f5b7f207ae6"
+    },
+    {
+      "claim_id": "6d712b0b-9fa8-41d0-9288-7978bfc2b735",
+      "result_id": "399db5a5-4d67-4e70-8e94-5f5b7f207ae6"
+    },
+    {
+      "claim_id": "a08328ae-3ef4-4677-b7d9-67c2583765d3",
+      "result_id": "3db0ed8a-1f46-41c5-8a04-62be2db148ab"
+    },
+    {
+      "claim_id": "9a039e6f-4e26-47a6-af10-bb7620358d61",
+      "result_id": "3db0ed8a-1f46-41c5-8a04-62be2db148ab"
+    },
+    {
+      "claim_id": "0bc5374c-eee5-4303-a49e-6798e6d854ba",
+      "result_id": "3db0ed8a-1f46-41c5-8a04-62be2db148ab"
+    },
+    {
+      "claim_id": "6f6542d8-0c20-433a-a424-1209c4d54389",
+      "result_id": "3db0ed8a-1f46-41c5-8a04-62be2db148ab"
+    },
+    {
+      "claim_id": "c04b4e6f-32a5-443d-87bf-d0a09a4170cd",
+      "result_id": "3db0ed8a-1f46-41c5-8a04-62be2db148ab"
+    },
+    {
+      "claim_id": "cf649e4d-0439-43e4-b3e1-59985da6dfc8",
+      "result_id": "3db0ed8a-1f46-41c5-8a04-62be2db148ab"
+    },
+    {
+      "claim_id": "694a646f-b0d8-429c-bd65-02d193e80073",
+      "result_id": "3db0ed8a-1f46-41c5-8a04-62be2db148ab"
+    },
+    {
+      "claim_id": "58e7c313-6d37-4600-a4dc-9d76624f01d4",
+      "result_id": "d5200306-44c0-4084-aa2d-a80666b6b2c3"
+    },
+    {
+      "claim_id": "70b59f07-532c-4314-b92d-a85a8b439a03",
+      "result_id": "d5200306-44c0-4084-aa2d-a80666b6b2c3"
+    }
+  ],
+  "comparisons": []
+}

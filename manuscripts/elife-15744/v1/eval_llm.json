@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C34",
+      "C55",
+      "C56",
+      "C57",
+      "C60",
+      "C61",
+      "C66"
+    ],
+    "result": "CaV1.3S channels, but not CaV1.3L channels, form functional clusters and undergo cooperative gating. Super-resolution imaging and photobleaching experiments show both isoforms form clusters of similar size (~2100-2500 nm\u00b2 in tsA-201 cells), but sparklet recordings reveal that CaV1.3S channels have a significantly higher coupling coefficient (\u03ba=0.21\u00b10.05) compared to CaV1.3L (\u03ba=0.08\u00b10.04), indicating cooperative gating occurs specifically in CaV1.3S channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C33-C34, C55-C57, C60-C61, and C66 are well-supported by converging evidence from multiple experimental approaches. Super-resolution imaging (C60-C61) demonstrates both isoforms cluster similarly, while sparklet recordings with coupling coefficient analysis (C55-C57) provide quantitative evidence that only CaV1.3S channels undergo cooperative gating. The photobleaching data (C62-C65) confirms multiple channels per cluster. The combination of structural (clustering) and functional (coupling coefficient) data strongly supports the conclusion that clustering is necessary but not sufficient for cooperative gating.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C74",
+      "C77",
+      "C84",
+      "C86",
+      "C87",
+      "C113",
+      "C116",
+      "C118"
+    ],
+    "result": "CaV1.3S channel coupling requires Ca\u00b2\u207a-dependent binding of calmodulin (CaM) to the pre-IQ domain of the channel C-terminus. Split Venus experiments show that channel coupling occurs only in the presence of Ca\u00b2\u207a (not Ba\u00b2\u207a), and is prevented by CaM inhibition (MLCKp) or dominant-negative CaM (CaM1234). Mutagenesis studies demonstrate that mutations in the pre-IQ domain (AAE mutant) abolish coupling, while IQ domain mutations (I1608E) do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C74, C77, C84, C86-C87, and C113-C118 are strongly supported by complementary experimental approaches. The split Venus system (C71-C74, C77) provides direct evidence of Ca\u00b2\u207a-dependent physical interactions between channel C-termini. CaM inhibition experiments (C77, C84) establish the requirement for Ca\u00b2\u207a-CaM. The mutagenesis data (C86-C87) precisely identify the pre-IQ domain as the critical binding site. The convergence of optogenetic, biochemical, and mutagenesis evidence provides robust support for this mechanistic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C47",
+      "C50",
+      "C51",
+      "C75",
+      "C76"
+    ],
+    "result": "Coupled CaV1.3S channels exhibit increased open probability (Po) and facilitate Ca\u00b2\u207a currents. NPo analysis shows Ca\u00b2\u207a increases NPo by ~1.5-fold for CaV1.3S but not CaV1.3L channels. Sparklet recordings demonstrate that after depolarization-induced coupling, CaV1.3S sparklet activity (nPs) and density increase markedly in Ca\u00b2\u207a but not Ba\u00b2\u207a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C47, C50-C51, and C75-C76 are well-supported by quantitative electrophysiological and imaging data. The NPo analysis (C50-C51) provides direct evidence that Ca\u00b2\u207a selectively increases channel activity in CaV1.3S. The sparklet recordings (C75-C76) confirm this finding using an independent approach and demonstrate the Ca\u00b2\u207a-dependence of the effect. The assumption that channel number (N) remains constant during the ~2 min recording period is reasonable and explicitly justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C108",
+      "C111"
+    ],
+    "result": "Cooperative gating of CaV1.3S channels increases neuronal firing rates. Optogenetic forced coupling of CaV1.3S-CIBN/CRY2 channels increased action potential firing rate by ~40% in hippocampal neurons, an effect abolished by the L-type channel blocker nifedipine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C108, and C111 are supported by current-clamp recordings showing a significant (~40%) increase in firing rate upon optogenetic coupling (C108). The control experiment showing no effect of light alone (C109) and the abolition of the effect by nifedipine (C110) strengthen the conclusion. However, the physiological relevance depends on whether the optogenetically-induced coupling mimics naturally occurring coupling, which is not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C64",
+      "C112"
+    ],
+    "result": "CaV1.3 channels in hippocampal neurons are organized in clusters containing approximately 8 channels per cluster. Super-resolution imaging shows clusters with an average area of 3660\u00b180 nm\u00b2, and step-wise photobleaching reveals 8\u00b11 channels per cluster (n=1105 clusters, 18 cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C64, and C112 are well-supported by complementary imaging approaches. The super-resolution data (C58) provides spatial information about cluster organization, while photobleaching (C64) provides quantitative channel counts. The consistency between cluster area measurements and channel counts, and agreement with previous literature using different methods (C64), strengthens confidence in these findings. However, the antibody specificity could not be validated in CaV1.3-KO neurons, introducing some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Optogenetic forced dimerization of CaV1.3S, but not CaV1.3L, channels increases Ca\u00b2\u207a current amplitude. Blue light-induced CIBN-CRY2 dimerization increased ICa by 35% in cells expressing CaV1.3S-CIBN/CRY2 but had no effect on CaV1.3L-CIBN/CRY2 channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by optogenetic experiments showing isoform-specific effects of forced dimerization. The 35% increase in CaV1.3S current (C68) with no change in CaV1.3L (C69) provides strong evidence that physical proximity of C-termini is sufficient to enhance CaV1.3S but not CaV1.3L function. This complements the split Venus data and supports the structural specificity of the coupling mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C78",
+      "C79"
+    ],
+    "result": "The CaM molecules mediating CDI are distinct from those mediating channel coupling. MLCKp dialysis prevented coupling without affecting CDI (r300=0.11\u00b10.03 vs control 0.14\u00b10.03), while CaM1234 expression prevented coupling and reduced CDI (r300=0.75\u00b10.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by the differential effects of MLCKp and CaM1234 on CDI versus coupling. The observation that MLCKp blocks coupling without affecting CDI (C78) while CaM1234 affects both (C79) suggests distinct CaM pools. However, this interpretation relies on assumptions about the accessibility and specificity of these inhibitors. Alternative explanations, such as differential affinity or kinetics of CaM binding to different sites, are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "L-type channels in hippocampal neurons undergo cooperative gating with properties similar to heterologously expressed CaV1.3S channels. Sparklets in neurons show multi-quantal amplitudes (~40 nM quantal unit), coupling coefficient of 0.23\u00b10.04, and depolarization increases coupling from 0.15\u00b10.04 to 0.43\u00b10.12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 and C100-C102 are supported by sparklet recordings in hippocampal neurons showing properties consistent with CaV1.3S channels in tsA-201 cells. The quantal amplitude (C93), coupling coefficient (C94), and depolarization-induced increase in coupling (C100-C101) all match the heterologous expression data. However, the attribution to CaV1.3 specifically (versus CaV1.2) relies on pharmacological sensitivity to isradipine, which is not perfectly selective, introducing some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Deletion of the distal C-terminal regulatory domain (DCRD) in CaV1.3L is not sufficient to enable channel coupling. CaV1.3L\u0394116 channels showed faster CDI than full-length CaV1.3L but failed to reconstitute Venus fluorescence even with 20 mM Ca\u00b2\u207a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 are supported by split Venus experiments showing that CaV1.3L\u0394116 channels, despite having enhanced CDI similar to CaV1.3S (C88), do not undergo coupling (C89-C90). This negative result is important for understanding the structural requirements for coupling. However, the interpretation that DCRD deletion is insufficient (C91) is limited by the fact that CaV1.3L\u0394116 still retains a much longer C-terminus (396 aa) than CaV1.3S (183 aa), leaving open the possibility that other regions prevent coupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "CaV1.3S channels undergo spontaneous coupling during normal neuronal activity. Neurons expressing CaV1.3S-VN/VC showed prominent Venus fluorescence in soma and dendrites without experimental depolarization, and overexpression increased cluster number but not size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 are supported by confocal imaging showing Venus reconstitution in neurons with spontaneous activity (C104-C105) and super-resolution analysis showing increased cluster density without size change (C106-C107). The inference that coupling occurs during normal firing (C105) is reasonable given the irreversibility of Venus reconstitution and the presence of spontaneous activity. The cluster size analysis (C106-C107) provides important control data showing overexpression does not artificially promote coupling through increased local density.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C41",
+      "C42",
+      "C44",
+      "C46"
+    ],
+    "result": "CaV1.3L and CaV1.3S channels have similar unitary current amplitudes but differ in their macroscopic current responses to Ca\u00b2\u207a versus Ba\u00b2\u207a. At -30 mV with Ca\u00b2\u207a, unitary currents were -0.48\u00b10.07 pA (CaV1.3L) and -0.49\u00b10.01 pA (CaV1.3S). CaV1.3L whole-cell current decreased ~40% when switching from Ba\u00b2\u207a to Ca\u00b2\u207a, while CaV1.3S decreased only ~15%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C41-C42, C44, and C46 are well-supported by single-channel and whole-cell recordings. The single-channel data (C42, C44) demonstrate similar unitary currents between isoforms, while whole-cell recordings (C36-C37, C41) show differential responses to Ca\u00b2\u207a versus Ba\u00b2\u207a. The conclusion that differences in macroscopic currents are not due to unitary current differences (C46) is logically sound. The measurements are consistent with previous literature (C43, C45), providing external validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Sparklets in hippocampal neurons are mediated by L-type calcium channels, likely including CaV1.3. Sparklet activity was reduced by 300 nM isradipine and eliminated by 10 \u03bcM isradipine. The remaining activity after 300 nM isradipine is consistent with CaV1.3 channels, which have reduced dihydropyridine sensitivity compared to CaV1.2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 are supported by pharmacological experiments showing dose-dependent inhibition by isradipine (C95). The interpretation that remaining sparklets after 300 nM isradipine represent CaV1.3 activity (C96, C98-C99) is reasonable based on differential sensitivity reported in the literature (C97-C98). However, this remains indirect evidence as the antibody cannot distinguish CaV1.3 from CaV1.2, and pharmacological selectivity is incomplete. The proportion of remaining activity (~25%) matches literature values for CaV1.3 contribution (C99), providing supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "CaV1.3L and CaV1.3S channels have similar activation kinetics. Activation time constants at -10 mV were 1.60\u00b10.22 ms (CaV1.3L) and 1.17\u00b10.051 ms (CaV1.3S), which were not significantly different (p=0.112).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is supported by direct measurement of activation time constants showing no significant difference between isoforms. This finding is important for the NPo analysis as it validates the assumption that differences in peak current amplitude are not due to faster activation kinetics. The sample size (n=6 for each) and statistical test are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "The CaV1.3 antibody used in this study is specific and does not recognize CaV1.2 channels. Previous studies have shown this antibody does not recognize CaV1.2 \u03b1 subunit in transfected cells or hippocampal tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C59 is based on citations to previous literature (Hell et al., 1993; 2013) rather than validation in the current study. The authors acknowledge they could not test antibody specificity on CaV1.3-KO neurons. While the cited studies provide some confidence, the lack of direct validation in this study (e.g., using CaV1.3-KO tissue or cells expressing only CaV1.2) introduces uncertainty. The antibody targets the II-III intracellular loop, which may have sequence similarity between isoforms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "CaV1.3S channels in tsA-201 cells form clusters containing an average of 5\u00b11 channels per cluster. This was determined by step-wise photobleaching of GFP-tagged channels (n=585 clusters, 11 cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by photobleaching experiments in tsA-201 cells. The smaller cluster size in tsA-201 cells (5\u00b11 channels) compared to hippocampal neurons (8\u00b11 channels, C64) is consistent with the smaller cluster area observed in tsA-201 cells by super-resolution imaging (C61). This provides internal consistency between different measurement approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "CaV1.3S channels have distinct biophysical properties compared to CaV1.3L channels, including lower voltage activation, higher open probability, and faster inactivation. These properties are established in the literature and confirmed by the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 are supported by citations to previous literature (Bock et al., 2011; Singh et al., 2008; Tan et al., 2011) and confirmed by data in the current study (particularly Figure 1). These are well-established properties of the two isoforms that result from the structural differences in their C-termini. The current study's data are consistent with these prior findings.",
+    "result_type": "MINOR"
+  }
+]

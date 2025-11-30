@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C20",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "GCC185 is shorter than predicted by coiled-coil algorithms. AFM measurements show GCC185 is ~145 nm in length, approximately 30% shorter than the >200 nm predicted by secondary structure algorithms. The N-terminus contains more coiled-coil structure than the C-terminus, and the entire protein contains less total coiled-coil structure than originally predicted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4, C20, and C23 provide converging evidence from computational prediction and direct AFM measurement. The discrepancy between predicted (>200 nm) and measured (~145 nm) length is quantified at ~30% across multiple protein fragments (C23-C25), with appropriate controls and replication indicated in the methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "GCC185 exhibits N-terminal splaying in the majority of molecules. 85% of molecules show splaying of at least one end and 38% show splaying of both ends. This splaying is dependent on reducing conditions (DTT), as molecules appear rod-like without DTT, confirming that the N-terminal GFP tag does not impede coiled-coil formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10 provide quantitative AFM data with appropriate controls. The DTT-dependence experiment (C9-C10) serves as a critical control demonstrating that splaying is a physiologically relevant feature rather than an artifact of the GFP tag or sample preparation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "GCC185 contains a central 'bubble' representing local unwinding of the coiled-coil structure, which confers flexibility. Half of wild-type molecules display this bubble (~27 nm mean size), while only 20% of \u0394hinge mutants show bubbles (~17 nm). The hinge region (residues 751-805 and 890-939) contributes to molecular flexibility, as \u0394hinge molecules are more extended and less bent than wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C18 provide quantitative AFM measurements comparing wild-type and \u0394hinge mutant proteins. The reduced bubble frequency and size in the \u0394hinge mutant (C13-C15), combined with normalized splay-to-splay distance measurements (C16-C17), provide strong evidence that specific sequences confer flexibility. Sample sizes appear adequate (262 wild-type, 204 \u0394hinge molecules).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "AFM-visualized molecules represent parallel dimers rather than end-to-end tetramers. This was confirmed by HA epitope tagging in the central hinge region, with antibody labeling detected at the expected position for a parallel dimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 is supported by epitope tagging and antibody labeling experiments (Figure 4). The antibody position corresponds to the expected location within a parallel dimer, providing direct evidence against alternative oligomeric states. This is a critical control for interpreting the AFM data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Flexibility conferred by hinge sequences is functionally required for GCC185-mediated vesicle tethering. In GCC185-depleted cells, wild-type GCC185 rescues MPR transport and Golgi morphology, but the \u0394hinge mutant shows much less rescue despite similar expression levels. Importantly, replacement of hinge sequences with unstructured gly-gly-ser repeats fully rescues function, demonstrating that flexibility rather than specific binding interactions is required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C34 describe a well-controlled rescue experiment. The key evidence is that flexible linker replacement (C31) rescues function while deletion (C30) does not, despite similar expression levels (C32). This strongly supports the conclusion that flexibility per se, not specific sequence-mediated interactions, is functionally important (C33-C34). Statistical significance is reported (p<0.05, Figure 5B).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "GCC185's N- and C-termini are in close proximity (<40 nm) on the Golgi in cells, and this proximity requires the flexible hinge region. Proximity ligation assays (PLA) show specific signal for GCC185 N- and C-termini but not for control protein pairs. The \u0394hinge mutant shows significantly weaker PLA signal at physiological expression levels, indicating that flexibility facilitates N- and C-terminal proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C43 describe PLA experiments with appropriate positive and negative controls (C35-C37). The significantly reduced signal for \u0394hinge compared to wild-type (C39) at similar expression levels supports the conclusion that flexibility is required for proximity (C40, C42-C43). The interpretation that high-expression \u0394hinge signals represent intermolecular interactions (C41) is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "GCC185's N-terminus (residues 1-358) can capture transport vesicles in vitro, with highest activity when the N-terminus is free to splay. Vesicles carrying GFP-Rab9, CI-MPR, and endogenous Rab9 are captured by the N-terminal fragment but not by an internal control fragment. The 1-358-GST construct (with free N-terminus) shows higher tethering activity than GST-1-358, suggesting that splayed N-termini represent the active form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51 describe in vitro vesicle capture assays with appropriate controls. The N-terminal fragment captures vesicles while an internal fragment does not (C44), and specificity controls exclude non-specific binding (C46). The differential activity based on GST position (C45, C48) supports the functional importance of N-terminal splaying, though the authors appropriately acknowledge the possibility of steric hindrance (C49). This represents the first direct demonstration for GRIP-domain Golgins (C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C57",
+      "C65",
+      "C77",
+      "C78"
+    ],
+    "result": "The authors propose a 'flexible collapse' model for GCC185 function, in which the tether collapses onto the Golgi surface rather than extending rigidly. This model is based on the protein's shorter-than-predicted length, central flexibility, splayed N-termini that bind vesicles, and proximity of N- and C-termini in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54, C57, C65, C77-C78 synthesize the experimental findings into a mechanistic model. The model is well-supported by the structural (AFM), functional (rescue), proximity (PLA), and biochemical (vesicle capture) data presented. However, some aspects remain speculative (C57, C65), as direct visualization of the collapsed state or dynamic measurements are not provided. The model represents a significant departure from previous 'rigid rod' models (C77-C78).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C3"
+    ],
+    "result": "GCC185 wild-type migrates at ~220 kD on SDS-PAGE, while the \u0394hinge mutant is somewhat smaller.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 report basic characterization of purified proteins by SDS-PAGE (Figure 2A). The size difference is consistent with the deletion in the \u0394hinge construct.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "GCC185 contains numerous cysteine residues, and DTT is important to mimic the reducing environment of the cytoplasm in experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 describe the rationale for including DTT in experiments. The presence of cysteines is documented (Figure 3 supplements), and the importance of DTT is demonstrated by the rod-like appearance without DTT (C10).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "The N-terminal half of GCC185 (residues 1-889) has a mean length of 91.2 nm, which is longer than half the full-length protein. The sum of fragment lengths accounts for the full-length protein length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 report AFM measurements of protein fragments. The data support the conclusion that the N-terminus contains more coiled-coil structure than the C-terminus (C24).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Background on GCC185 function and localization from prior work. GCC185 is required for MPR transport from late endosomes to the TGN, is anchored via C-terminal binding to Rab6 and Arl1 GTPases, and its depletion causes accumulation of MPRs in transport carriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56, C79-C83 summarize established findings from previous publications. These are appropriately cited and provide necessary context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C66",
+      "C72"
+    ],
+    "result": "GCC185 has multiple binding sites along its length, including sites for Rab GTPases, syntaxin16, Arl GTPases, CLASP proteins, and AP-1. The AP-1 binding site (residues 938-1032) is essential for vesicle tethering but not Golgi ribbon maintenance, while a domain between residues 1332-1438 is required for ribbon maintenance but not vesicle tethering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64, C66, C72 cite previous work characterizing GCC185 binding partners and functional domains. These findings are relevant for interpreting the current results and are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Other GRIP-domain Golgins may share structural features with GCC185. Golgin-245 may have a central bubble and splayed N-terminus; Golgin-97 likely has a splayed N-terminus; GCC88 may contain a central bubble.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C71 are speculative predictions based on sequence analysis and similarity to GCC185. No experimental data are provided for these other proteins. While the predictions are reasonable, they remain untested hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors discuss discrepancies with a previous study (Wong and Munro, 2014) and suggest that study may have assayed Golgi ribbon assembly rather than vesicle capture. They propose that GCC185 may be more potent in vesicle tethering than ribbon assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C76 provide interpretation of another study's results and speculation about GCC185's relative activities. While the authors' interpretation is plausible given that separate domains control these functions (C72, C76), this remains speculative without direct comparative measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Background on membrane trafficking, tethering, and Golgins from the literature. This includes definitions of tethering, classification of tether types, and previous models of Golgin function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 accurately summarize established concepts from the literature with appropriate citations. These provide necessary background for understanding the significance of the current work.",
+    "result_type": "MINOR"
+  }
+]

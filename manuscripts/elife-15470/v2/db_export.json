@@ -1,0 +1,1763 @@
+{
+  "submission": {
+    "id": "c60df367-5605-46ec-adec-d29d45dc20a8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:00:53.228481Z",
+    "updated_at": "2025-11-30T00:00:53.228481Z"
+  },
+  "content": [
+    {
+      "id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "submission_id": "c60df367-5605-46ec-adec-d29d45dc20a8",
+      "content_type": "manuscript",
+      "content_text": "# Multi-step coordination of telomerase recruitment in fission yeast through two coupled telomere-telomerase interfaces\n\n## Authors\n\n- Xichan Hu<sup>1</sup>\n- Jinqiang Liu<sup>1</sup>\n- Hyun-IK Jun<sup>1</sup>\n- Jin-Kwang Kim<sup>1</sup>\n- Feng Qiao<sup>1</sup> ([ORCID: 0000-0002-1704-7257](https://orcid.org/0000-0002-1704-7257)) \u2020\n\n### Affiliations\n\n1. Department of Biological Chemistry University of California, Irvine School of Medicine Irvine United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTightly controlled recruitment of telomerase, a low-abundance enzyme, to telomeres is essential for regulated telomere synthesis. Recent studies in human cells revealed that a patch of amino acids in the shelterin component TPP1, called the TEL-patch, is essential for recruiting telomerase to telomeres. However, how TEL-patch\u2014telomerase interaction integrates into the overall orchestration of telomerase regulation at telomeres is unclear. In fission yeast, Tel1ATM/Rad3ATR-mediated phosphorylation of shelterin component Ccq1 during late S phase is involved in telomerase recruitment through promoting the binding of Ccq1 to a telomerase accessory protein Est1. Here, we identify the TEL-patch in Tpz1TPP1, mutations of which lead to decreased telomeric association of telomerase, similar to the phosphorylation-defective Ccq1. Furthermore, we find that telomerase action at telomeres requires formation and resolution of an intermediate state, in which the cell cycle-dependent Ccq1-Est1 interaction is coupled to the TEL-patch\u2014Trt1 interaction, to achieve temporally regulated telomerase elongation of telomeres.\n\n## Introduction\n\nTelomeres, the physical ends of linear chromosomes, are essential for stable maintenance of chromosomes by facilitating chromosome end replication and preventing them from being degraded or fusing with each other (Artandi and Cooper, 2009; Palm and de Lange, 2008). In most eukaryotes, telomeres are comprised of short tandem DNA repeats. Rather than a blunt end, the telomere consists of a 3\u2019 single-stranded overhang called the G-tail that provides the substrate for telomerase to counteract iterative telomere shortening after\u00a0each round of DNA replication. Telomerase is a ribonucleoprotein enzyme that extends telomeres utilizing an RNA component as template for its reverse transcriptase protein subunit (named TERT in vertebrates and Trt1 in fission yeast) (Autexier and Lue, 2006; Collins, 2006). This telomerase-dependent nucleotide addition is rigorously limited to late S/G2 phase. Dysregulation of telomerase and the subsequent perturbation of telomere length homeostasis lead to severe defects in cell proliferation. As a result, a constellation of genetic diseases caused by mutations in the telomere maintenance machinery (Sarek et al., 2015), referred to as 'telomeropathies' (Holohan et al., 2014) or 'telomere syndromes' (Armanios and Blackburn, 2012), have been continuously identified, and include dyskeratosis congenita (DC), aplastic anemia, and multiple types of cancers.\n\nStudies in telomerase regulation and telomere maintenance unveiled a precisely orchestrated process of telomerase recruitment (Hockemeyer and Collins, 2015; Nandakumar and Cech, 2013; Schmidt and Cech, 2015). In budding yeast, the interaction between the telomere-binding protein Cdc13 and the telomerase holoenzyme component Est1 regulates telomerase activation and its recruitment to the telomere (Chandra et al., 2001; Evans and Lundblad, 1999; Pennock et al., 2001; Qi and Zakian, 2000). Likewise, telomere-associated proteins in humans and fission yeast, which form a highly conserved protein complex called shelterin (de Lange, 2005; Miyoshi et al., 2008), are essential to regulate telomere states, recruit telomerase, and govern its activity on telomeres. In fission yeast, the shelterin complex contains the double-stranded DNA (dsDNA) binding protein Taz1 (the homolog of TRF1/TRF2 in humans) (Cooper et al., 1997) and the single-stranded DNA (ssDNA) binding protein Pot1 (human POT1 ortholog) (Baumann and Cech, 2001), which are bridged via direct protein-protein interactions between Rap1 (Chikashige and Hiraoka, 2001; Kanoh and Ishikawa, 2001), Poz1, and Tpz1 (human RAP1, TIN2 and TPP1 orthologs, respectively) (Miyoshi et al., 2008). The human system shares a conserved shelterin arrangement by forming a similar 'shelterin bridge' architecture (Bianchi and Shore, 2008). Recent studies discovered a cluster of residues on human TPP1, collectively termed TEL-patch, which mediates TPP1-TERT interaction to recruit telomerase to telomeres (Nandakumar et al., 2012; Sexton et al., 2012; Zhong et al., 2012). TEL-patch mediated TPP1-TERT interaction also confers increased telomerase processivity in vitro\u00a0(Nandakumar et al., 2012; Schmidt et al., 2014). Moreover, a detailed genetic study of TEL-patch mutants revealed multiple functions of TPP1 in telomerase recruitment, activation, and telomere length feedback regulation (Sexton et al., 2014). Altered TEL-patch function is clinically manifested as Hoyeraal-Hreidarsson (HH) syndrome. HH patients bear extremely short telomeres, even in comparison to other DC patients. A germline mutation causing a single-amino-acid deletion (K170\u0394) in the human TPP1 TEL-patch that affects its telomerase recruitment function has been identified as the causal mutation of HH (Kocak et al., 2014). This signifies the critical telomerase recruitment function of the TEL-patch in normal stem cell development.\n\nInterestingly, fission yeast Schizosaccharomyces pombe, which has a similar shelterin architecture to mammals, contains an additional shelterin component called Ccq1 (Flory et al., 2004), the functional homolog of which has not yet been identified in mammals. Ccq1 was demonstrated to be a cell cycle-dependent telomerase recruitment factor (Miyoshi et al., 2008; Tomita and Cooper, 2008). Further investigation showed that Ccq1 is required to bring telomerase to telomeres through its Tel1ATM/Rad3ATR-mediated Thr93 phosphorylation during late S phase, which creates a binding site for the 14-3-3 domain of Est1 (Moser et al., 2011; Webb and Zakian, 2012; Yamazaki et al., 2012). Est1 is an accessory protein of telomerase holoenzyme and is linked to the telomerase protein subunit (Trt1) via their co-association with telomerase RNA (TER1) (Leonardi et al., 2008). Ccq1 also interacts with Tpz1 (Miyoshi et al., 2008), and the Ccq1-Tpz1 interaction is therefore thought to bring the telomerase complex (Est1-TER1-Trt1) to the telomere (Moser et al., 2009) via the Ccq1 Thr93-phosphorylation dependent Ccq1-Est1 interaction. However, in-depth analyses further revealed that Ccq1-Est1 and Ccq1-Tpz1 interactions seem to be mutually exclusive (Armstrong et al., 2014). Moreover, Est1-Ccq1 interaction could be disrupted by TER1 in a yeast three-hybrid analysis and Est1 mutations that affect Est1-TER1 interaction also impair Est1-Ccq1 interaction (Armstrong et al., 2014; Webb and Zakian, 2012). In addition, based on a Ccq1-centric model, it is hard to explain why the telomeric association of Est1 requires not only Ccq1, but also Trt1 and TER1, which are downstream from Ccq1-Est1 interaction (Webb and Zakian, 2012). Therefore, the hypothetical Tpz1-Ccq1-Est1-TER1-Trt1 interaction chain seems unlikely to form to mediate telomerase recruitment. These results imply that an alternative mechanism exists to directly associate telomerase to other shelterin components, such as Tpz1, to initiate telomere elongation in fission yeast in response to the cell cycle-dependent Ccq1-Thr93 phosphorylation (Chang et al., 2013).\n\nIn this study, we identified a Tpz1 mutation in the TEL-patch region that results in an ever shorter telomere (EST) phenotype, similar to the telomere phenotype of human TPP1 TEL-patch mutants. We observed decreased telomeric association of Trt1 and weakened Tpz1-Trt1 interaction in this Tpz1 TEL-patch mutant, indicating the conserved role of the TEL-patch in telomerase recruitment. Our epistasis analyses demonstrated that the Tpz1 TEL-patch functions by positively regulating Trt1. Furthermore, we found that telomerase action at telomeres requires formation and resolution of an intermediate state, formed via two cooperative telomere-telomerase interfaces involving cell cycle-regulated Ccq1-Est1 interaction and Tpz1 (TEL-patch)-Trt1 interaction. As a result, the temporal information for telomerase recruitment is endowed to the TEL-patch through the phosphorylation status of Ccq1 Thr93, thus achieving cell cycle-specific telomere elongation.\n\n## Results\n\n### Tpz1 TEL-patch mutations lead to Ever Shorter Telomere\u2014EST phenotype\n\nTelomerase exists in low abundance in the cell. Therefore, the interaction between shelterin and telomerase has been proposed to enrich telomerase at chromosome ends. Indeed, a group of surface-exposed amino acids in the human TPP1 OB-domain, termed TEL-patch, are found to be necessary for the telomerase recruitment to telomeres (Nandakumar et al., 2012; Sexton et al., 2012; Zhong et al., 2012). Although the fission yeast shelterin component Ccq1 has been connected to telomerase recruitment in this model organism, it is unlikely to be the sole factor to link Trt1 to telomeres (Armstrong et al., 2014). Additional interactions between shelterin components and Trt1 must exist to bring Trt1 directly to the telomere. Given the high conservation of the OB-fold domain arrangement in the N-terminal regions of S. pombe Tpz1 and human TPP1, we decided to test whether a Tpz1 TEL-patch functions in S. pombe as an interface between telomerase and shelterin. To identify candidate residues for such a TEL-patch in S. pombe Tpz1, we performed a sequence alignment between fission yeast Tpz1 and human TPP1 in combination with a secondary structure prediction (Figure 1A). We then identified 12 conserved Tpz1 residues in the region corresponding to the human TPP1 TEL-patch as candidate residues for fission yeast Tpz1 TEL-patch. S. pombe cells bearing individual mutations in these 12 residues of Tpz1 were tested for their telomere maintenance. tpz1-I105R and tpz1-V107R mutant strains appear to have destabilized Tpz1 protein and display a similar telomere deprotection phenotype (Figure 1\u2014figure supplement 1) to tpz1\u0394 strain. The remaining 10 tpz1 mutant strains have comparable levels of Tpz1 expression as the wild-type strain (Figure 1\u2014figure supplement 2). Strains bearing tpz1-T73A, tpz1-K75E, tpz1-R76E, tpz1-I77R, and tpz1-R81E displayed shortening telomeres (Figure 1B and Figure 1\u2014figure supplement 1), implicating positive regulatory roles of these residues in telomere length regulation. Although tpz1-T73A, tpz1-K75E, and tpz1-R76E cells all have shortened telomeres, in contrast to the tpz1-I77R and tpz1-R81E cells, their telomeres remain stably short (Figure 1B and Figure 1\u2014figure supplement 1). This telomere phenotype is similar to that of previously identified fission yeast tpz1-K75A (Armstrong et al., 2014) or human TPP1-L104A (Sexton et al., 2014), proposed to affect telomerase activation and telomere length homeostasis set point, respectively. Strikingly, tpz1-R81E cells showed the classic Ever Shorter Telomere (EST) phenotype (Lundblad and Szostak, 1989), similar to trt1\u0394 cells\u00a0(Figure 1B) (Nakamura et al., 1997). The deterioration in telomere maintenance of tpz1-R81E strain started as early as ~50 generations. Its telomeres shorten to the critical length at 75 generations, and are almost completely lost afterwards. Gradual telomere loss was also observed in tpz1-I77R cells, albeit to a much milder degree than in tpz1-R81E cells. Furthermore, Tpz1-Arg81 and Trt1 appear to have an epistatic relationship because telomere shortening in the tpz1-R81E/trt1\u0394 double mutant is not additive (Figure 1C). The similar phenotypes observed for tpz1-R81E, trt1\u0394, and tpz1-R81E/trt1\u0394 support a role of Tpz1-Arg81 in directly regulating telomerase activity on telomeres. Similar to the previously identified tpz1-K75A mutant that is defective in telomerase activation (Armstrong et al., 2014), tpz1-K75E and tpz1-R76E mutants have a milder telomere loss phenotype and their shortened telomeres are maintained for many generations. These observations clearly distinguish Tpz1-Arg 81 from telomerase activation residues in Tpz1, i.e. Lys75 or Arg76.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/15470/elife-15470-fig1-v2.jpg)\n\n**Figure 1.:** (A) A sequence alignment of OB fold-domains between fission yeast Tpz1, human TPP1 and Oxytricha nova TEBP-\u03b2, in combination with a secondary structure prediction. Twelve conserved fission yeast Tpz1 residues subjected to mutagenesis are highlighted in blue with their identities and sequence numbers indicated above the alignment. Residues colored in red are previously identified TEL-patch residues in human TPP1 and mutations of them lead to compromised TPP1-TERT interaction. Black and grey shading indicates sequence identity and similarity, respectively. If the sequence is identical among at least 50% of species, the residues will be shaded in black. The same rule applies to sequence similarity, which is shaded in grey. (B) Southern blot analysis to measure telomere lengths using EcoRI-digested genomic DNA visualized by the telomere DNA probe for the indicated tpz1 mutant strains from successive re-streaks on agar plates. tpz1-K75E, tpz1-R76E, tpz1-I77R, and tpz1-R81E strains caused telomere shortening and tpz1-R81E cells showed the classic Ever Shorter Telomere (EST) phenotype. For the telomere length analysis southern blots presented in all the figures, the 1 kb plus marker from Invitrogen is used. Wild type cells are denoted as 'WT' in the blot. pol1+ indicates the EcoRI-digested pol1+ DNA fragment used as a loading control. (C) Double-mutant strain tpz1-R81E/trt1\u0394 shows EST telomere phenotype, similar to the trt1\u0394 single-mutant strain. (D) Double-mutant strain tpz1-R81E/poz1\u0394 shows progressive telomere shortening phenotype.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15470/elife-15470-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Southern blot analysis to measure telomere lengths using EcoRI-digested genomic DNA visualized by the telomere DNA probe for the indicated tpz1 mutant strains from successive re-streaks on agar plates.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/15470/elife-15470-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Western blot showing expression levels of Tpz1 protein in indicated tpz1 mutant strains.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/15470/elife-15470-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Schematic diagram of chromosome showing sub-telomeric regions. Greek numbers indicate the locations where the PCR primers are designed. (B) tpz1-R81E/poz1\u0394 mutant lost sub-telomeric I and II regions at generation 200. The PCR products (from I to IV) are amplified from corresponding regions on chromosomes (A). For S. pombe cells carrying circularized chromosomes due to telomere loss, both sub-telomeric regions I and II are eroded from chromosome ends.\n\nWe next asked whether the requirement for TEL-patch residue Tpz1-Arg81 can be bypassed by eliminating the negative shelterin linkage, which keeps telomeres constitutively in the telomerase-extendible state (Jun et al., 2013). To this end, we constructed a double-mutant strain, tpz1-R81E/poz1\u0394, in which poz1\u0394 leads to defective shelterin linkage. As shown in Figure 1D, tpz1-R81E/poz1\u0394 cells presented EST phenotype and the cells senesced at a later generation, similar to the trt1\u0394/poz1\u0394 mutant (Miyoshi et al., 2008). A subpopulation survived at ~200 generations by circularizing their chromosomes to bypass the need for telomerase (Figure 1D and Figure 1\u2014figure supplement 3). This result clearly indicates that Tpz1-Arg81 functions downstream of telomere switching from the non-extendible to the extendible state and upstream of telomerase action, most likely to mediate telomere-telomerase interaction. Therefore, we genetically demonstrated the existence of the TEL-patch in fission yeast Tpz1 that is functionally analogous to the TEL-patch of human TPP1.\n\n### The Tpz1 TEL-patch contributes to Tpz1-Trt1 interaction\n\nMutations of the TEL-patch residues in human TPP1 disrupt the direct interaction between TPP1 and TERT. Moreover, the TEN domain of human TERT was demonstrated to mediate its interaction with TPP1 (Schmidt et al., 2014), providing an interface required for the recruitment of telomerase to telomeres. In fission yeast, both Tpz1 and Ccq1 have been found to interact with Trt1 independent of telomerase RNA (Armstrong et al., 2014; Tomita and Cooper, 2008). To directly assess the function of the putative TEL-patch residue Tpz1-Arg81, we first examined the binding efficiency between Tpz1-R81E and Trt1 utilizing co-immunoprecipitation assay. As shown in Figure 2A,B and Figure 2\u2014figure supplement 1, whereas Tpz1-E74R, Tpz1-K75A, Tpz1-K75E, and Tpz1-R76E pulled down similar amounts of Trt1 as the wild-type Tpz1, Tpz1-R81E only immunoprecipitated 30% of Trt1 compared to the wild-type Tpz1 (Figure 2B and C). Considerably reduced Tpz1-Trt1 interaction in the tpz1-R81E mutant correlates well with its progressive telomere shortening phenotype (Figure 1B), further supporting an essential role that Tpz1-Arg81 plays in mediating the interaction between telomerase and shelterin at the telomere. Interestingly, tpz1-I77R cells lost about 50% of the Tpz1-Trt1 interaction (Figure 2B and C). This observation suggests that Tpz1-Ile77 is likely to be part of the TEL-patch as well, consistent with the compromised telomere maintenance in tpz1-I77R cells, albeit milder than that of the tpz1-R81E cells (Figure 1B). The tpz1-R76E mutant retains the wild-type Tpz1-Trt1 interaction (Figure 2A) but displays stably shortened telomeres. This implies that Tpz1-Arg76 is involved in telomerase activation, similar to what was previously described for Lys75 (Figure 2\u2014figure supplement 1) (Armstrong et al., 2014).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/15470/elife-15470-fig2-v2.jpg)\n\n**Figure 2.:** (A) Co-immunoprecepitation (Co-IP) assays evaluating bindings between Trt1 and Tpz1-E74R and Tpz1-R76E. Cdc2 was shown as the loading control. Input: 1/30 of input WCE (whole cell extract). (B) Co-IP assays showing that Tpz1-I77R and Tpz1-R81E significantly decrease interaction between Tpz1 and Trt1. Cdc2 was shown as the loading control. Input: 1/30 of input WCE. (C) Quantification of the binding efficiency between Trt1 and Tpz1 mutants from (B). The interaction between Trt1 and Tpz1-WT is set to be 100%. Trt1 levels in the IP were normalized to Tpz1 bound to the beads. (D) Quantification of the binding efficiency between Ccq1 and Tpz1 mutants from (B). The interaction between Ccq1 and Tpz1-WT is set to be 100%. Ccq1 levels in the IP were normalized to Tpz1 bound to the beads. (E) Co-IP assays evaluating the binding efficiency between Trt1 and Ccq1 in various Tpz1 mutant cells. Cdc2 was shown as the loading control. Input: 1/30 of input WCE. (F) Co-IP assays evaluating the binding efficiency between Trt1 and Tpz1 in ccq1-T93A and ccq1-F157A/K174E. Cdc2 was shown as the loading control. Input: 1/30 of input WCE.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15470/elife-15470-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Co-immunoprecepitation (Co-IP) assays evaluating the binding between full-length Trt1 and Tpz1 mutants K75E and K75A. Cdc2 was shown as the loading control. Input: 1/30 of input WCE (whole cell extract).\n\nIf the Tpz1-Trt1 interaction were mediated solely via Ccq1, the reduced Tpz1-Trt1 interaction observed in tpz1-R81E cells would most likely result from reduced Tpz1-Ccq1 interaction, because other components in the proposed Tpz1-Ccq1-Est1-Trt1 interaction-chain remain intact. However, as shown in Figure 2B,D and E, all tested Tpz1 mutants, including Tpz1-R81E, interact with Ccq1 similarly to wild-type Tpz1. Moreover, the Ccq1-Trt1 interaction remains unchanged for all Tpz1 mutants as well (Figure 2E). Next, we tested whether two Ccq1 mutants, Ccq1-F157A/K174E and Ccq1-T93A, previously shown to be defective in Tpz1-Ccq1 (Liu et al., 2015) and Ccq1-Est1 (Moser et al., 2011) interactions, respectively, can completely abolish Tpz1-Trt1 interaction. As shown in Figure 2F, Tpz1-Trt1 interaction is clearly retained in both Ccq1-F157A/K174E and Ccq1-T93A mutants. This was particularly striking for the Ccq1-F157A/K174E mutant, in which Tpz1-Ccq1 interaction is completely disrupted. These data, together with previous studies (Armstrong et al., 2014; Webb and Zakian, 2012), argue against Ccq1 as the sole platform that recruits telomerase to telomeres. These results further point to the existence of the TEL-patch in fission yeast Tpz1 and indicate a conserved function in the recruitment of telomerase.\n\n### The TEL-patch mutant of Tpz1 fails to localize telomerase to telomeres\n\nTo further test whether the failure of the tpz1-R81E mutant to replenish telomeres emanates from its inability to recruit telomerase to telomeres, we directly tested the group of Tpz1 OB-fold domain mutants for in vivo localization of telomerase to telomeres using ChIP assays. As expected, tpz1-R81E, which has significantly reduced Tpz1-Trt1 interaction, exhibited a dramatic decrease in the association of Trt1 with telomeres (Figure 3A). In contrast to the tpz1-R81E mutant, a telomerase activation-defective mutant tpz1-R76E displayed wild-type telomerase localization to telomeres (Figure 3A). The latter result is consistent with the phenotype of another previously described telomerase activation mutant strain tpz1-K75A (Armstrong et al., 2014). Interestingly, the tpz1-I77R mutant strain also showed significant decreased localization of Trt1 to telomeres (Figure 3A), consistent with the decreased Tpz1-Trt1 interaction observed in the co-immunoprecipitation assay (Figure 2B). In contrast, in all the tested Tpz1 OB-fold domain mutants, little effect was observed on the telomeric association of both Tpz1 and Ccq1 (Figure 3B and C). These results directly reveal a specific role for Tpz1\u2009N-terminal OB-domain residues Ile77 and Arg81 in mediating telomere-Trt1 interaction and Trt1 recruitment. Moreover, since tpz1-I77R cells have a much more subtle telomere shortening phenotype than tpz1-R81E cells, we speculate that a threshold amount of residual telomerase interaction may be required for telomere maintenance upon disruption of the Tpz1 TEL-patch. Taken together, we redefined the TEL-patch in fission yeast Tpz1, which functions analogously to the previously characterized TEL-patch in human TPP1 (Nandakumar et al., 2012; Sexton et al., 2012; Zhong et al., 2012).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/15470/elife-15470-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013C) Enrichment of Trt1 (A), Ccq1 (B) or Tpz1 (C) at telomeres is monitored by chromatin immunoprecipitation (ChIP) assay. Slot-blot was used to visualize telomere association of Trt1, Ccq1 or Tpz1 in each indicated tpz1 mutant strains. Error bars in the quantitation of the slot-blot analysis represent standard deviations of two individual repeats.\n\n### Fusing Trt1 to Tpz1 bypasses the requirement for functional Tpz1 TEL-patch\n\nDirect fusion of telomerase to a shelterin component has been shown to rescue the telomerase recruitment defect, but not other defects, such as telomere activation or telomere length homeostasis regulation in both fission yeast (Armstrong et al., 2014) and human embryonic stem cells (hESC) (Sexton et al., 2014). We next tested whether the inability of the Tpz1 TEL-patch mutant to maintain telomere length could be rescued by forcing telomerase to physically associate with telomeres. To this end, we measured telomere lengths of strains with Trt1 fused to Tpz1 mutants as previously described (Armstrong et al., 2014). Apparently, the strain bearing fused Trt1\u2014Tpz1 TEL-patch mutant (trt1\u2014tpz1-R81E) maintained the same telomere length as the trt1\u2014tpz1 wild-type strain (Figure 4A), indicating rescue of telomere shortening. However, fusion of Trt1 with Tpz1-L449A, which disrupts the Tpz1-Ccq1 interaction, failed to restore telomere maintenance, as previously reported (Armstrong et al., 2014). The expression levels of all Trt1\u2014Tpz1 fusion proteins appear to be similar (Figure 4B). These results suggest that the Tpz1-Ccq1 interaction is required for aspects of telomere elongation besides bridging telomerase to telomeres. This interpretation is consistent with our previous genetic study implicating Ccq1 in switching telomeres from non-extendible to extendible state (Jun et al., 2013).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/15470/elife-15470-fig4-v2.jpg)\n\n**Figure 4.:** (A) Southern blot analysis to measure telomere lengths using EcoRI-digested genomic DNA visualized by the telomere DNA probe for the trt1-tpz1 fusion strains with indicated WT or mutant versions of tpz1. 9PK tags were inserted between trt1 and tpz1. (B) Western blot showing expression levels of PK-tagged Trt1 protein and the chimeric Trt1-Tpz1 fusion proteins. Cdc2 was used as a loading control for total proteins.\n\n### Est1 and Ccq1 form a stable complex through two binding sites\n\nIn fission yeast, Rad3ATR/Tel1ATM-dependent phosphorylation of Ccq1 at Thr93 promotes direct interaction between Ccq1 and Est1\u2014a subunit of the telomerase holoenzyme (Moser et al., 2011; Yamazaki et al., 2012). The 14-3-3\u2013like domain of Est1 was shown to recognize Ccq1 phosphorylated at Thr93 and was proposed to enable telomerase-telomeres association via the Ccq1-Tpz1 complex (Moser et al., 2011). Different from the proposed Tpz1-Ccq1-Est1 chain-interaction that connects telomerase to telomere shelterin, Ccq1-Est1 and Ccq1-Tpz1 interaction were demonstrated to be mutually exclusive (Armstrong et al., 2014) and the binding surfaces for Est1 and Tpz1 in Ccq1 are most likely to overlap. Our recent work utilizing a new strategy, called MICro-MS (Mapping Interfaces via Crosslinking-Mass Spectrometry), mapped the Tpz1-interacting interface on Ccq1 and isolated a group of separation-of-function mutants that specifically disrupt Ccq1-Tpz1 interaction (Liu et al., 2015). If Ccq1 interacts with Est1 via an overlapping surface that also mediates Ccq1-Tpz1 interaction, Ccq1 mutants that are defective in Ccq1-Tpz1 interaction is most likely to compromise Ccq1-Est1 interaction too. Indeed, as shown in Figure 5A, Ccq1-F157A/K174E and Ccq1-I175R, which were identified previously to be defective in Tpz1-Ccq1 interaction, both significantly diminished Ccq1-Est1 interaction in co-immunoprecipitation assays, whereas Ccq1-V152R and Ccq1-L177R still retained wild-type binding to Est1. Unexpectedly, we found that Ccq1-T93A, the Ccq1 mutant in the Rad3ATR/Tel1ATM phosphorylation site Thr93, did not completely abolish Ccq1-Est1 interaction; rather, it diminished Ccq1-Est1 interaction to a similar degree that was observed for Ccq1-F157A/K174E or Ccq1-I175R mutant.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/15470/elife-15470-fig5-v2.jpg)\n\n**Figure 5.:** (A) Ccq1-Est1 interaction is diminished but not completely disrupted in the ccq1-T93A, ccq1-F157A/K174E, and ccq1-I175R strains as evaluated by Co-IP assays. Cdc2 was shown as the loading control. Input: 1/30 of input WCE. (B) Schematic model of Est1 and Ccq1 interaction showing two binding sites for their interaction as further tested in (C). (C) Co-IP assays evaluating the contribution of two binding sites to\u00a0the binding between Est1 and Ccq1. Cdc2 was shown as the loading control. Input: 1/30 of input WCE. (D) Schematic model of Tpz1 C-terminal domain, Est1 and Ccq1 forming an intermediate Est1-Ccq1-Tpz1 complex. (E) Competitive binding assay showing that Tpz1 can partially compete with Est1 for its interaction with Ccq1; however, the Tpz1-Ccq1 interaction defective mutant Tpz1-L449A cannot.\n\nWe therefore speculated that Ccq1 and Est1 probably interact with each other via two binding sites: one provided by phosphorylated Thr93 and the other by the HDAC2/3-like domain at the N-terminus of Ccq1 (as depicted in Figure 5B). As a result, mutating either site only partially disrupts Ccq1-Est1 interaction. Indeed, as expected from the two-binding-site model, a Ccq1 mutant with both binding sites mutated\u2014Ccq1-T93A/F157A/K174E completely lost its ability to bind to Est1 (Figure 5C). Previous mutational analysis of Est1 using the yeast two-hybrid assay identified residues in the predicted Est1 phospho-binding site (R79 and R180) that mediate the interaction between Est1 and Thr93-phosphorylated Ccq1 (Moser et al., 2011). Another study found that an additional residue\u2014K252 in the 14-3-3\u2013like domain of Est1 is also important for Est1-Ccq1 interaction, besides for Est1-TER1 interaction (Webb and Zakian, 2012). In the Est1 structure model, K252 is on a different surface compared to phospho-Thr93 binding residue R79 and R180. Est1-K252 is therefore very likely to be part of the binding site for the HDAC2/3-like domain at the N-terminus of Ccq1. In fact, in ccq1-T93A/est1-K252E cells, which bear mutations on Ccq1 and Est1 that in combination disrupt both binding sites, Ccq1-Est1 interaction could not be detected (Figure 5C). However, for strains ccq1-T93A/est1-R79A/R180A and ccq1-F157A/K174E/est1-K252E, in which mutations were introduced to only one of the Ccq1-Est1 binding sites with the other site intact, Ccq1 and Est1 interaction could still be observed at similar levels to single mutants ccq1-T93A or est1-K252E (Figure 5C). Altogether, our results indicate that phospho-Thr93 in Ccq1 contributes to one of the two binding sites that mediate Ccq1-Est1 interaction. The second Est1-interacting surface resides in the HDAC2/3-like domain at the N-terminus of Ccq1, and overlaps with the Tpz1-interacting surface.\n\nTo further understand the relationship of Tpz1 and Est1 binding to the HDAC2/3-like domain in Ccq1, we performed a competitive binding assay. This evaluated the interaction between Est1 and Thr93-phosphorylated Ccq1 in the presence of Tpz1. In this assay, Flag-tagged Ccq1 was immunoprecipitated from the whole cell extract by \u03b1-Flag agarose beads. We then titrated increasing amounts of MBP-Tpz1-CTD to the Ccq1-Est1 complex. As shown in Figure 5E the addition of MBP-Tpz1-CTD partially displaced the Ccq1-bound Est1 at a high concentration of Tpz1. This did not occur when the Ccq1-binding defective mutant MBP-Tpz1-CTD L449A was added. Because of the entropic advantage provided by the phospho-Thr93-centered Est1-Ccq1 binding site, a high concentration of Tpz1 is needed to compete Est1 off the HDAC2/3-like domain of Ccq1. Taken together, the mutational analyses and the competitive binding assays indicate that Est1-Ccq1 interaction and Tpz1-Ccq1 interaction are mutually exclusive on the HDAC2/3-like domain of Ccq1 since both association events utilize the same binding surface on Ccq1 containing Phe157 and Lys174, et al. In addition, because phosphorylated Ccq1-Thr93 provides a secondary binding site for Ccq1-Est1 association, Tpz1-Ccq1-Est1 ternary complex can also form, likely in a transient manner, not as stable as Tpz1-Ccq1 or Ccq1-Est1 binary complexes. Thus, combined with our discovery of the TEL-patch in the N-terminal OB-domain of Tpz1, we suspect that the cell cycle-regulated Ccq1 (phospho-Thr93)-Est1 interaction can be coupled to the Tpz1 (TEL-patch)-Trt1 interaction via the Tpz1-Ccq1-Est1 intermediate complex to coordinate the recruitment of telomerase to telomeres.\n\n### TEL-patch function is regulated in a cell cycle-dependent manner\n\nAs shown before, Rad3ATR/Tel1ATM-dependent phosphorylation of Ccq1 at Thr93 is cell cycle-regulated and peaks during late S phase (Chang et al., 2013), correlating well with the temporal pattern of telomerase recruitment to the telomere (Moser et al., 2009; Webb and Zakian, 2012). Therefore, we asked whether the cell cycle-dependent phosphorylation of Ccq1 actually dictates the TEL-patch-mediated shelterin-telomerase interaction and thus restricts telomerase recruitment to late S phase. To test this, we incubated cdc25-22 cells at non-permissive temperature (36\u00b0C) for 3\u2009hr to arrest them in late G2 phase. Cells were then shifted to permissive temperature (25\u00b0C) and cell samples were collected every 20 min for co-IP analysis to monitor Tpz1-Trt1 interaction in a 4-hr cell cycle window. As shown in Figure 6A and C, the interaction between Tpz1 and Ccq1 remained almost unchanged throughout the cell cycle. Strikingly, Tpz1 and Trt1 association gradually increased after release from the G2 arrest, peaked during late S phase (100\u2013140\u2009min), and then decreased to the level at G2 (Figure 6A and D). This temporal pattern of the Tpz1-Trt1 interaction along cell cycle progression correlates very well with that of Ccq1 phosphorylation (Chang et al., 2013), and consequently, with that of the Ccq1-Est1 interaction promoted by Ccq1 phosphorylation, which also peaked in late S phase (Figure 6E and G). Consistent with our hypothesis, when the critical Rad3ATR/Tel1ATM phosphorylation site in Ccq1\u2014Thr93 was mutated, neither Tpz1-Trt1 interaction (Figure 6B and D) nor Ccq1-Est1 interaction (Figure 6F and G) peaked in late S phase. Therefore, we propose that through an intermediate telomerase recruitment complex formed by both Ccq1-Est1 and Tpz1-Trt1 interactions (Figure 7), the cell cycle information is delivered through Ccq1 Thr93-phosphorylation to the TEL-patch on Tpz1. This in turn enables Tpz1 to directly position telomerase onto the telomere and elongate it during late S phase, after most of the genome has been replicated.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/15470/elife-15470-fig6-v2.jpg)\n\n**Figure 6.:** (A) and (B) Co-IP assays evaluating the binding efficiency of Tpz1-Trt1 and Tpz1-Ccq1 interactions during cell cycle progression in ccq1+ (A) and ccq1-T93A (B) cells. In addition to the indication of time after release from G2 arrest, the levels of S phase cyclin Cig2, which peak at the G1/S boundary and decline to low levels in G2 and M phase, are also shown. Cdc2 was shown as the loading control. Input: 1/30 of input WCE. (C) and (D) Quantification of the binding efficiency of Tpz1-Trt1 (C) and Tpz1-Ccq1 (D) interactions during cell cycle progression as assayed in (A) and (B). The lowest level of Tpz1-Trt1 (C) or Tpz1-Ccq1 (D) interactions is set to be 1. Plots show mean values \u00b1 s.d. for two independent experiments. (E) and (F) Co-IP assays evaluating the binding efficiency of Ccq1-Est1 interaction during cell cycle progression. As in (A) and (B), in addition to the indication of time after release from G2 arrest, the levels of S phase cyclin Cig2, are also shown. Cdc2 was shown as the loading control. Input: 1/30 of input WCE. (G) Quantification of the binding efficiency of Ccq1-Est1 interaction during cell cycle progression as assayed in (E) and (F). The lowest level of Ccq1-Est1 interaction is set to be 1. Plots show mean values \u00b1 s.d. for two independent experiments.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/15470/elife-15470-fig7-v2.jpg)\n\n**Figure 7.:** A model showing telomerase recruitment in fission yeast through an intermediate state in which Trt1 and Est1 in the telomerase holoenzyme are collaboratively anchored to the telomere via Trt1-Tpz1 TEL patch and Est1-Ccq1 interactions, respectively (illustrated by two green arrows drawn in the middle panel), thereby achieving cell cycle-regulated recruitment of telomerase to telomeres.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15470/elife-15470-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** A speculative two-interface intermediate-state model for human telomerase recruitment showing that the C-terminal domain of TIN2 is likely to be the Ccq1-functional equivalent in humans and interacts either with hEST1 or the telomerase RNP directly, forming the second connection between telomeres and telomerase in addition to the TPP1 (TEL-patch)-TERT (TEN domain) interaction.\n\n## Discussion\n\n### Telomerase recruitment involving an intermediate state with two-pronged telomere-telomerase interfaces\n\nOur study demonstrates that fission yeast Tpz1 also contains a TEL-patch in its OB-fold domain, analogous to its human ortholog\u2014TPP1 (Nandakumar et al., 2012; Sexton et al., 2012; Zhong et al., 2012). A TEL-patch mutation causes drastically reduced association of telomerase with telomeres, and consequently an EST phenotype. Similar phenotypic consequences were previously reported for the Ccq1 Thr93 phosphorylation-deficient allele (Moser et al., 2011; Yamazaki et al., 2012). Moreover, our biochemical analyses reveal an unexpected complexity in the Ccq1-Est1 interaction involving two binding sites. As schematically illustrated in Figure 7, we envision that in late S phase, when the DNA replication machinery completes most of the genome, Rad3ATR/Tel1ATM are activated and phosphorylate the critical Thr93 residue in Ccq1 at telomeres, priming the telomere for telomerase recruitment. Then, telomerase holoenzyme, minimally composed of Trt1-TER1-Est1, is attracted to the telomere by the cell cycle-regulated, phospho-Thr93-mediated Ccq1-Est1 interaction. At the same time, in a collaborative manner, Trt1 interacts with Tpz1 via the respective TEN domain and the TEL-patch residues, thus forming an intermediate telomerase recruitment complex that further engages the telomerase core enzyme (Trt1-TER1) at the very 3\u2019 end of the telomere for nucleotide additions. Aided by phospho-Ccq1 Thr93, Est1-Ccq1 interaction at their second binding site takes place, resulting in dissociation of Ccq1 from Tpz1. Because Est1 may use the same surface to interact with Ccq1 as it interacts with TER1 (Webb and Zakian, 2012), Est1 is likely to depart from TER1 upon its binding to Ccq1. With phosphorylation of the critical Thr93 in Ccq1 disappearing after late S phase, Ccq1-Est1 interaction diminishes accordingly. Alignment of the very 3\u2019 end of telomeric ssDNA to the template region in TER1 might also participate in the telomerase recruitment process, and therefore, only Tpz1 on the extreme 3\u2019 end of the telomere, but not the majority of Tpz1 on the internal telomeric regions, is involved in forming the intermediate telomerase recruitment complex.\n\nEver since the very beginning of the telomere research at the molecular genetics level, the noncatalytic, accessory components of the telomerase holoenzyme, such as Est1p and Est3p in budding yeast, have been demonstrated to play equally important roles in telomere elongation as the catalytic core (telomerase reverse transcriptase and telomerase RNA) (Lundblad and Szostak, 1989). Indistinguishable progressive telomere shortening phenotypes are displayed by strains either with deletion of the telomerase RNA, the reverse transcriptase subunit, or accessory proteins (Leonardi et al., 2008; Lingner et al., 1997; Lundblad and Szostak, 1989; Webb and Zakian, 2008), suggesting that all these components work collaboratively to form a functional telomerase. Est1, whose homologs have been identified from yeasts to humans, has been proposed to recruit and activate telomerase RNP to telomeres in a cell-cycle dependent manner. Unexpectedly, a previous study discovered that the telomerase core, RNP, Trt1 and TER1 RNA, is also required for the association of Est1 with the telomere (Webb and Zakian, 2012). Our finding that telomerase holoenzyme is recruited to telomeres via an intermediate state involving two-pronged cooperative Est1-Ccq1 and Trt1-Tpz1 interactions, uncovers the active role of Trt1 itself in the recruitment process. In addition, our model explains the intricate interdependence between Trt1, TER1, and Est1 for telomeric association of the holoenzyme.\n\nWhat are the advantages of employing two cooperative telomere-telomerase interactions to recruit telomerase to telomeres? We think that this mode enables temporal and spatial regulation of telomerase recruitment. It has been shown in budding yeast that Tel1ATM prefers shorter telomeres than longer ones. We demonstrate here that the cell cycle-dependent interaction between Ccq1 and Est1 is coupled to the Tpz1 TEL patch-Trt1 interaction. Moreover, in fission yeast, strains with shorter telomeres show a higher level of Ccq1 phosphorylation (Moser et al., 2011). Therefore, shorter telomeres could have more access to telomerase due to the higher level of Thr93 phosphorylation in Ccq1. After locating which telomere to elongate, interaction between the TEL-patch of Tpz1 and the catalytic subunit Trt1 further orients the very 3\u2019 end of telomeric ssDNA via the sequence-specific Pot1/Tpz1-ssDNA interaction to the active site of Trt1. Two-interface recruitment mode has been observed in other pathways for similar purposes. For example, 53BP1, an important effector of DNA double-strand-break (DSB) response, simultaneously recognizes mononucleosomes containing dimethylated H4K20 (H4K20me2) and H2A ubiquitinated on Lys15 (H2AK15ub) (Fradet-Turcotte et al., 2013). There, it was proposed that the engagement of H4K20me2 by the Tudor domain of 53BP1 positions its ubiquitination-dependent recruitment (UDR) motif in the correct orientation to contact the epitope formed by H2AK15ub, and thus to ensure that 53BP1 responds only to bona fide DSB signaling.\n\n### Multi-functionality of Tpz1 in regulating telomerase action at telomeres\n\nWithin the fission yeast telomere shelterin complex, Tpz1 physically lies in the middle of the telomeric ssDNA and dsDNA binding proteins. Functionally, Tpz1 is positioned between the positive and negative regulators of the telomerase elongation. Tpz1 directly interacts with three other shelterin components: Poz1, Ccq1, and Pot1. This unique position of Tpz1 in the shelterin complex enables its architectural role in shelterin complex assembly and underscores its potential coordination roles in communicating the dsDNA length and/or structural information to the 3\u2019 end of ssDNA\u2014telomerase\u2019s ultimate destination. In our previous studies, utilizing biochemically identified Tpz1 separation-of-function mutants that can individually but specifically disrupt Tpz1\u2019s interactions with Poz1, Ccq1, or Pot1, we found that Tpz1-mediated complete linkage between telomere dsDNA and ssDNA binding proteins in the shelterin complex is required for defining the telomerase-nonextendible state of telomeres (Jun et al., 2013). Disruption of the linkage on either the dsDNA binder or the ssDNA binder side of Tpz1 causes unregulated elongation of telomeres. In addition to maintaining the telomerase-nonextendible state, through its interaction with Ccq1, Tpz1 may also activate the telomerase-nonextendible state of telomeres by participating in breaking down the 'shelterin bridge'. Moreover, Lys75, which is close to the TEL-patch in the OB-fold domain of Tpz1, was demonstrated to have telomerase activation function, the step that follows successful telomerase-telomere association and alters telomerase conformation to become competent for telomere synthesis (Armstrong et al., 2014). Recently, SUMOylation of Tpz1-Lys242 in late S phase was shown to enhance the Tpz1-Stn1 interaction, promote Stn1-Ten1 association with telomeres, and thus to coordinate synthesis of the telomeric lagging strand by Pol\u03b1 stimulated via Stn1-Ten1-Pol\u03b1 interaction (Hannan et al., 2015; Miyagawa et al., 2014). The TEL-patch in Tpz1 and its conserved role in telomerase recruitment characterized in this work further extend the versatility of Tpz1 in telomere length homeostasis. Evidently, the ability to regulate the telomeric state together with the role of recruiting/activating telomerase and coordinating Pol\u03b1 are integrated into one single telomeric protein\u2014Tpz1. This integration ensures timely, accurate, and efficient coupling of conformational transitions of the telomere to the engagement and activation of the telomerase RNP.\n\n### Conservation of telomerase recruitment mechanisms\n\nAlthough the TEL-patch of the shelterin component TPP1 acting as the telomere-telomerase interface was initially discovered and extensively studied in human cells (Hockemeyer and Collins, 2015; Schmidt and Cech, 2015), upstream regulatory events of TEL-patch-mediated telomerase recruitment remain to be elucidated. In contrast, regulatory pathways and factors that control telomerase recruitment have been fairly well studied in both budding and fission yeasts due to their convenient and precise genetic manipulability. For instance, in budding yeast, cell cycle-specific assembly and disassembly of active telomerase RNP at telomeres have been shown to restrict telomerase action to late S phase (Tucey and Lundblad, 2014). Moreover, telomerase tends to preferentially elongate short telomeres and Tel1ATM is enriched in short telomeres to achieve telomere length homeostasis (Bianchi and Shore, 2007; Sabourin et al., 2007). Cdk1 was also shown to control the temporal recruitment of telomerase by directing the timing of Cdc13 and Stn1 phosphorylation along cell cycle progression (Li et al., 2009; Liu et al., 2014). Two recent studies unveil the conserved regulatory role of ATM/ATR in human recruitment and telomere elongation (Lee et al., 2015; Tong et al., 2015); however, the downstream substrate is mostly unknown.\n\nIn this work, we uncovered the conservation of the TEL-patch in fission yeast Tpz1, with similar biochemical and functional roles to human TPP1. This similarity between human and fission yeast makes us speculate that the conservation could probably be extended to other aspects of the telomerase recruitment pathway. Is it possible that human telomerase recruitment also involves two coupled telomere-telomerase interactions? What is the Ccq1-Est1 interaction equivalent in human cells? In fact, human TIN2 (Poz1 homolog) has been demonstrated to be essential for telomerase recruitment (Abreu et al., 2010). DC mutations in the C-terminal region of TIN2 (not contained in Poz1) lead to defective association of TIN2 with telomerase (Frank et al., 2015; Yang et al., 2011). As illustrated in Figure 7\u2014figure supplement 1, we speculate that the C-terminal domain of TIN2 is likely to be the Ccq1-functional equivalent in humans and interacts either with hEST1 or the telomerase RNP directly, forming the second interface between telomeres and telomerase in addition to the TPP1 (TEL-patch)-TERT (TEN domain) interaction. Moreover, TIN2 may also be subject to cell cycle-controlled post-translational modifications, and thus mediate its telomerase recruitment function in a highly regulated way.\n\n## Materials and methods\n\n### Yeast strains, gene tagging, and mutagenesis\n\nFission yeast strains used in this study are listed in Supplementary file 1. Single-mutant strains were constructed by one-step gene replacement of the entire open reading frame (ORF) with the selectable marker. Double- and triple-mutant strains were produced by mating, sporulation, dissection, and selection followed by PCR verification of genotypes. Genes were fused to specific epitope-tags at the C-terminus by homologous recombination; the pFA6a plasmid modules were used as templates for PCR (B\u00e4hler et al., 1998; Sato et al., 2005). Point mutations were made by site-directed mutagenic PCR using the high fidelity polymerase Pfu (Agilent). All mutations were confirmed by DNA sequencing (Eton, San Diego, CA). The Trt1-Tpz1 fusion strains were constructed based on previously published strains (Armstrong et al., 2014).\n\n### Telomere length analysis\n\nS. pombe cells grown in 5\u2009ml YEAU overnight were harvest for genomic DNA extraction. EcoRI-digested genomic DNA was separated on 1% agarose gel at 70 V for 18.5\u2009hr, and then the gels were incubated in 0.25\u2009M hydrochloric acid for 15\u2009min followed by 0.5\u2009M sodium hydroxide and 1.5\u2009M sodium chloride buffer for 30\u2009min and 0.5\u2009M Tris-HCl (pH 7.0) and 1.5\u2009M sodium chloride for 30\u2009min. DNA was transferred to Amersham Hybond-N+ membrane (GE Healthcare Life Sciences) via capillary blotting. DNA was cross-linked to the membrane. The telomeric probe was prepared as previously described (Jun et al., 2013). The template of pol1+ was amplified with 5\u2019 primer (GGTGCAGAAGACGGTCTG CAAG) and 3\u2019 primer (CTTAGCATGCAGAAGCATGCGC), and both probes were labeled by random hexamer labeling using [\u03b1-32P]-dCTP and High Prime (Roche). Hybridizations were carried out with 6 million cpm of probe in Church-Gilbert buffer at 55\u00b0C. Blots with both telomeric and pol1+ probe were expose to PhosphorImager screens that were visualized using a Typhoon scanner (GE Healthcare).\n\n### Co-immunoprecipitation\n\nFrozen cell pellets were cryogenically disrupted with FastPrep MP with three pulses (60 s) of bead-beating in ice-cold lysis buffer (50\u2009mM HEPES at pH 7.5, 140\u2009mM NaCl, 15\u2009mM EGTA, 15\u2009mM MgCl2, 0.1% NP40, 0.5\u2009mM Na3VO4, 1\u2009mM NaF, 2\u2009mM PMSF, 2\u2009mM benzamidine, Complete proteinase inhibitor [Roche]). Centrifuge clarified whole cell extracts were adjusted to 13 mg/ml. 300\u2009\u03bcl cell extracts were incubated with either anti-Flag M2 affinity gel (Sigma), anti-Ccq1 rabbit serum plus Protein G beads (Roche), or c-myc antibody (Santa Cruz) plus Protein G beads for 2\u20134\u2009hr at 4\u00b0C. The beads were resuspended in SDS loading buffer, boiled, and subjected to western blotting. Western blot analysis was performed using monoclonal anti-Flag (M2-F1804, from Sigma), monoclonal anti-PK (from Abcam), anti-Ccq1 rabbit serum, monoclonal anti-Myc (9E10, from Covance), and anti-Cdc2 (y100.4, from Abcam). 20\u2009\u03bcg whole cell extract were used for input control.\n\n### Chromatin immunoprecipitation\n\nFresh S. pombe cells in liquid culture were fixed with\u00a01/10 (vol/vol) ratio of an 11% formaldehyde solution (11% formaldehyde, 100\u2009mM NaCl, 1\u2009mM EDTA at pH 8.0, 0.5\u2009mM EGTA, 50\u2009mM Tris-HCl at pH 8.0) for 20\u2009min, followed by the termination with 125\u2009mM glycine for 5\u2009min. Cell pellets were disrupted in 400\u2009\u03bcL of lysis buffer (50\u2009mM Hepes at pH 7.5, 140\u2009mM NaCl, 1\u2009mM EDTA, 1% Trition X-100, 0.1% sodium deoxycholate, Complete proteinase inhibitor [Roche], 1\u2009mM PMSF, 1\u2009mM benzamidine, 1\u2009mM Na3VO4, 1\u2009mM NaF) with FastPrep MP. After three pulse (1\u2009min) of beads-beating, at least 90% cells were broken. Cell extracts were sonicated one time for 30 s in 45 cycles using a Bioruptor (Diagenode). Clarified cell extracts were incubated with anti-Myc resin (9E10, Santa Cruz), anti-Flag M2 affinity gel (Sigma) or anti-Ccq1 rabbit serum followed by protein G-agarose (Roche,\u00a0Indianapolis,\u00a0IN) for 3\u2009hr at 4\u00b0C. Then, the beads were washed sequentially, each twice, with lysis buffer, lysis buffer with 500\u2009mM NaCl, wash buffer, and 1x TE buffer. Each sample was added with 100\u2009\u03bcl of 10% Chelex100 resin and boiled for 15\u2009min, followed by 20\u2009\u03bcg proteinase K treatment for 30\u2009min at 55\u00b0C. The recovered DNA were denatured with 0.4\u2009M NaOH and transferred to a Hybond-XL membrane by using a slot module. The blots were hybridized with telomeric probe; the same blot was then re-probed with rDNA probe after stripping off the telomere probe.\n\n### Competitive binding assay\n\nMyc-tagged Est1 under the nmt1 promoter was expressed in a wild-type strain or a strain expressing Flag-tagged Ccq1, these cells were harvested and cryogenically disrupted to obtain clarified extract followed by co-immunoprecipitation using anti-Flag M2 affinity gel (Sigma) as described above. After incubation, the beads were washed three times with 800\u2009\u03bcl lysis buffer. The competition assay was carried out by adding 100\u2009\u03bcl lysis buffer with increasing concentrations (5, 100, 2000 nM) of purified recombinant MBP-Tpz1 (406\u2013508) or MBP-Tpz1 (406\u2013508)-L449A to the beads. The mixture was incubated at 4\u00b0C for 2\u2009hr with the tube rotating. After extensive washing, the beads were resuspended in SDS-PAGE loading buffer, boiled, and subjected to Western blotting with anti-Flag (M2-F1804, from Sigma), anti-Myc (9E10, from Covance), or anti-MBP (N-17, from Santa Cruz) antibodies.\n\n### Cell cycle synchronization coupled with co-immunoprecipitation\n\ncdc25-22 cells bearing ccq1+ or ccq1-T93A grown in 600\u2009ml YEAU overnight at 25\u00b0C to OD ~0.3 were shifted to restrictive temperature (36\u00b0C) for 3\u2009hr to arrest cells in late G2 phase. Synchronous cultures were then generated by releasing these cdc25-22 cells to the permissive temperature (25\u00b0C). 50\u2009ml cultures were collected every 20\u2009min for 4\u2009hr and were subsequently subjected to co-immunoprecipitation analyses to evaluate Est1-Ccq1 and Tpz1-Trt1 interactions.\u00a0Anti-Cdc2 (y100.4, from Abcam) was used as a control for input.\n",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "e6a555bb-91f5-463e-bb73-be0132901b46",
+      "submission_id": "c60df367-5605-46ec-adec-d29d45dc20a8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Kathleen Collins, University of California, Berkeley , United States\n\n## Review text\n\nDOI: [10.7554/eLife.15470.016](https://doi.org/10.7554/eLife.15470.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Telomerase Recruitment is Promoted by a Bivalent Transition-State Involving both Ccq1 and the TEL-Patch of Tpz1\" for consideration by eLife. Your article has been favorably evaluated by James Manley (Senior editor) and three reviewers, one of whom, Kathleen Collins, is a member of our Board of Reviewing Editors. The reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\n(Note that the Title should be changed as part of the clarifications of essential revision point number 6.)\n\nSummary:\n\nIn this thorough and thoughtful study, the authors illuminate interaction trade-offs that unify previously puzzling requirements for telomerase action at telomeres in fission yeast. Using elegant genetic and biochemical approaches, they demonstrate a series of interactions and interaction rearrangements between telomere and telomerase proteins that load and then activate telomerase for end-elongation. Biochemical specificity of interactions accounts for how short telomeres are preferentially elongated in a cell cycle dependent manner. Results from fission yeast studied here provide ideas about telomerase-telomere interaction across species.\n\nEssential revisions:\n\n1) The Tpz1-Ccq1-Est1 ternary complex should be described as speculative in existence or it should be demonstrated directly. Is it possible to directly detect the formation of the ternary complex Est1-Tpz1-Ccq1 using a pull-down of Ccq1 to show that Est1 and Tpz1-C can be pulled down in a Ccq1-dependent manner? Alternatively, since the authors are already using radio-labeled Est1p, perhaps this reagent could be used as the basis for some form of super-shift EMSA experiment to demonstrate formation of the ternary complex?\n\n2) Figure 1D should better document the senescent phenotype that is reported. The authors should analyze the telomere length in the tpz1-R81E/poz1D strain at later generations to make certain that the strain senesces or show that the telomeres are dependent on homologous recombination. In addition, \"phenocopying\" may not be the correct word to describe similar phenotypes resulting from different mutations.\n\n3) The quantification shown in Figure 2C and D should normalize Trt1 and Ccq1 in the IP to Tpz1 bound to beads to compensate for mutant effects on protein stability and IP efficiency before making comparisons between strains.\n\n4) Figure 5C experiment should be re-run in a way that normalization with Input levels can be performed, or the statement that Ccq1-T93A and Est1-K252E do not interact should be qualified to reflect the technical limitation. Est1-K252E seems significantly reduced compared to wild type and other Est1 mutants in the ccq1-T93A background.\n\n5) In their concluding model (Figure 7) the authors speculate that Ccq1 and Est1 leave the telomere while Tpz1 stays telomere bound. This data contradicts the study's cell cycle Co-IP data (Figure 6B) that shows Tpz1 and Ccq1 are bound together throughout the cell cycle and the Est1-Ccq1 interaction data showing decreasing interaction during late S-phase (Figure 6E). In addition, data from the Nakamura lab shows Tpz1- and Ccq1-telomere interaction as co-incident with both protein telomere interaction peaking in late S-phase (Chang et al., 2013), which contradicts this model in which Ccq1 leaves the telomere while Tpz1 remains bound. These discrepancies with the model should be accounted for. Is only a minor fraction of the Tpz1-Ccq1 complex interacting with Est1 at any given time?\n\n6) With respect to the nomenclature used to describe the proposed binding intermediate complex formed between Tpz1-Ccq1-Est1 (telomerase), the reviewers should strongly consider changing the name of the model. The term transition state has a very specific meaning, and is precisely not to be considered a detectable intermediate during a given reaction pathway. In contrast the complex being proposed in the present study, while possibly transient, would be considered a bone fide intermediate complex during telomerase recruitment. In addition, since the paper describes two distinct bivalent interactions, one within the Est1-Ccq1 complex and the second within the putative ternary complex of Tpz1-Ccq1-Est1(telomerase), it is potentially confusing to the reader what exactly is meant by 'bivalent transition state'. The authors might consider revising their wording to something more typical of a transiently formed multi-protein complex (i.e. telomerase pre-priming complex, telomerase recruitment complex, etc.).\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Telomerase Recruitment is Promoted by an Intermediate-State Involving both Ccq1 and the TEL-Patch of Tpz1\" for further consideration at eLife. Your revised article has been favorably evaluated by James Manley (Senior editor) and a Reviewing editor.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nTitle:\n\nThe title \"Telomerase Recruitment is Promoted by an Intermediate-State Involving both Ccq1 and the TEL-Patch of Tpz1\" does not sufficiently communicate the import or advance of this work to a general audience. Something like \"Multi-step coordination of telomerase recruitment and activation at fission yeast telomeres\" extended by something like \"through two conformationally coupled interaction interfaces.\"\n\nAbstract:\n\nNeeds to be overhauled to communicate the actual content and importance of this work.\n\n1) \"[\u2026]how the TEL-patch communicates with other shelterin components and telomerase holoenzyme to achieve temporally and spatially regulated telomerase recruitment is unclear\"\n\nThis work is not about how the TEL-patch communicates with other shelterin components or how the TEL-patch communicates to telomerase, which is previously established. This work is about how TEL-patch interaction with telomerase integrates into the overall orchestration of telomerase regulation at chromosome ends.\n\n2) Need to introduce what Ccq1 is, since it is not a household protein name. Could include the adjective telomere-associated or telomere-interacting before first use of Ccq1 in the Abstract.\n\n3) \"we discovered that telomerase recruitment is promoted by an intermediate-state.[\u2026]\" But recruitment is not \"promoted\" by an intermediate state \u2013 intermediate to what at this point also not explained \u2013 instead it is true that 'telomerase action at telomeres requires formation and resolution of an intermediate state.' \"[\u2026]to achieve timely and legitimate telomerase engagement\" But what is legitimate? No illegitimate engagement is studied here \u2013 needs to be something like 'to achieve regulated and efficient telomerase elongation of telomeres.'\n\nRevise \"bivalent\" and \"transition-state\"\n\nDefinitions of bivalent online: \"having two combining sites\" \"a molecule formed from two or more atoms bound together as a single unitmolecule\"\n\nAs Reviewers explained previously, the use of \"bivalent\" is confusing. The revision has not make \"bivalent\" more clear. It does not make sense to readers even within the telomere field to write \"telomerase recruitment is promoted by a bivalent intermediate-state, formed via both Ccq1-Est1 and Tpz1 (TEL-patch)-Trt1 interactions.\" It would be sufficient and less confusion-inducing to say \"is promoted by an intermediate-state with both Ccq1-Est1 and Tpz1 (TEL-patch)-Trt1 interactions.\"\n\nThe Discussion still begins with \"A bivalent transition-state model for telomerase recruitment\" despite Reviewers' indication to remove \"transition-state\" and refrain from vague uses of \"bivalent.\"\n\nHyperbole and coherence\n\nLast paragraph of Intro:\n\n\"Thus, the temporal and spatial information for telomerase recruitment is endowed to the TEL-patch through the phosphorylation status of Ccq1 Thr93, thus achieving cell cycle-specific and telomere length-dependent telomere elongation.\" This work does not direct address \"spatial information\" or \"telomere length-dependent telomere elongation\" \u2013 here and elsewhere, less vague/out-of-place summary statements would be more useful to understand what this work shows directly. In the Discussion is it appropriate to speculate about how telomere length would affect the two-pronged cooperative Ccq1 and Tpz1 recruitment of telomerase by changing the efficiency of Ccq1 phosphorylation \u2013 but there are no experiments that physically dissect length-dependent versus length-independent recruitment in this work.\n\nFirst paragraph of Results, echoed in last sentence of Results:\n\n\"additional interactions between shelterin components and Trt1 must exist to engage Trt1 directly at the very 3' end of the telomere.\" \"this in turn enables Tpz1 to directly position telomerase to the very 3' end of the telomere\"\n\nThe discussion says that ssDNA might be required to engage Trt1 at the very end of a telomere \u2013 that is valid speculation as Discussion section content. But otherwise this work does not address the \"very 3' end of the telomere\" and therefore does not show a role for shelterin-Trt1 interaction in positioning telomerase at the very 3' end of a telomere. The quoted conclusions, and their like, need to be rephrased or deleted; they lack logic or fulfilment.\n\nDiscussion:\n\nStarting from around \"Tpz1 may also activate the telomerase-nonextendible state of telomeres through its interaction with Ccq1.\"\n\nThis section needs to be clarified, because return of the telomere to non-extendible state is not described anywhere else and so the ideas need to be spelled out more clearly.\n\n\"Moreover, telomerase activation function was also demonstrated for the Tpz1 OB-fold domain (Armstrong et al., 2014), which is close to the TEL-patch.\"\n\nBut the TEL patch is within the OB fold domain. Please spell out the point about activation.\n\nNext paragraph, this sentence is out of place and should be deleted \"conservation of the TEL-patch in fission yeast Tpz1 (TPP1 in humans) further supports the similarity of telomerase recruitment pathways in the human and fission yeast systems.\" The rest of the paragraph is about things other than the TEL patch.\n\nOverall:\n\nThis is not an eLife paper until it is revised with sentence-by-sentence reflection on the verity of logic and on the accuracy of presentation/typos.\n\nE.g. of just one example of the former, flip first two lines of Introduction for accuracy. \"Telomeres are essential[\u2026] In most eukaryotes, telomeres are comprised of short tandem.[\u2026]\"\n\nE.g. of just one example of the latter, Dyskeratosis congenital is not a disease.\n\nAlso fix the lack of abbreviation definitions (e.g. dsDNA, ssDNA) and noun/verb disagreement or mixed verb tenses.\n\nWould be useful to split the long run-on paragraphs, such as the final paragraph of the Introduction and the first paragraph of the subsection \u201cEst1 and Ccq1 form a stable complex through two binding sites\u201d.\n",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "31cf79f7-79b2-4929-9fe3-85e304d2c55e",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C1",
+      "claim": "A patch of amino acids in the shelterin component TPP1, called the TEL-patch, is essential for recruiting telomerase to telomeres in human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies in human cells revealed that a patch of amino acids in the shelterin component TPP1, called the TEL-patch, is essential for recruiting telomerase to telomeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by references to recent studies in human cells.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "c7f3ff67-fecf-4e67-ba6b-770fddf032ad",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C2",
+      "claim": "Tel1ATM/Rad3ATR-mediated phosphorylation of shelterin component Ccq1 during late S phase is involved in telomerase recruitment in fission yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "In fission yeast, Tel1ATM/Rad3ATR-mediated phosphorylation of shelterin component Ccq1 during late S phase is involved in telomerase recruitment through promoting the binding of Ccq1 to a telomerase accessory protein Est1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established knowledge about fission yeast telomerase regulation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "293d7c01-2440-4f92-809d-275797ea7ef0",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C3",
+      "claim": "Tel1ATM/Rad3ATR-mediated phosphorylation of Ccq1 promotes the binding of Ccq1 to telomerase accessory protein Est1.",
+      "claim_type": "EXPLICIT",
+      "source": "In fission yeast, Tel1ATM/Rad3ATR-mediated phosphorylation of shelterin component Ccq1 during late S phase is involved in telomerase recruitment through promoting the binding of Ccq1 to a telomerase accessory protein Est1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established knowledge about the mechanism of telomerase recruitment.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "2435085f-03e9-4388-af9c-94d1b3573799",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C4",
+      "claim": "Telomerase action at telomeres requires formation and resolution of an intermediate state in which the cell cycle-dependent Ccq1-Est1 interaction is coupled to the TEL-patch\u2014Trt1 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we find that telomerase action at telomeres requires formation and resolution of an intermediate state, in which the cell cycle-dependent Ccq1-Est1 interaction is coupled to the TEL-patch\u2014Trt1 interaction, to achieve temporally regulated telomerase elongation of telomeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "a8e3bd25-af12-46d2-9db3-f7065e7a4595",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C5",
+      "claim": "Telomeres are essential for stable maintenance of chromosomes by facilitating chromosome end replication and preventing them from being degraded or fusing with each other.",
+      "claim_type": "EXPLICIT",
+      "source": "Telomeres, the physical ends of linear chromosomes, are essential for stable maintenance of chromosomes by facilitating chromosome end replication and preventing them from being degraded or fusing with each other (Artandi and Cooper, 2009; Palm and de Lange, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "1c1c2e27-e94c-418b-b3a0-863755eb4ba6",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C6",
+      "claim": "In most eukaryotes, telomeres are comprised of short tandem DNA repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "In most eukaryotes, telomeres are comprised of short tandem DNA repeats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "93a612c6-d470-405f-ace0-71792fb7efb7",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C7",
+      "claim": "The telomere consists of a 3' single-stranded overhang called the G-tail that provides the substrate for telomerase.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than a blunt end, the telomere consists of a 3' single-stranded overhang called the G-tail that provides the substrate for telomerase to counteract iterative telomere shortening after each round of DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established knowledge about telomere structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "06d162f3-cf56-4327-8c2f-79b7c26b190f",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C8",
+      "claim": "Telomerase is a ribonucleoprotein enzyme that extends telomeres utilizing an RNA component as template for its reverse transcriptase protein subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Telomerase is a ribonucleoprotein enzyme that extends telomeres utilizing an RNA component as template for its reverse transcriptase protein subunit (named TERT in vertebrates and Trt1 in fission yeast) (Autexier and Lue, 2006; Collins, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "0486bbd3-32c5-45bf-9154-7863229bc8bd",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C9",
+      "claim": "Telomerase-dependent nucleotide addition is rigorously limited to late S/G2 phase.",
+      "claim_type": "EXPLICIT",
+      "source": "This telomerase-dependent nucleotide addition is rigorously limited to late S/G2 phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established knowledge about cell cycle regulation of telomerase.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "13d86f54-0137-4081-9d01-4cb9719558e3",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C10",
+      "claim": "Dysregulation of telomerase and the subsequent perturbation of telomere length homeostasis lead to severe defects in cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Dysregulation of telomerase and the subsequent perturbation of telomere length homeostasis lead to severe defects in cell proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established knowledge about telomerase function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "7f7ee5cf-2b08-4438-a968-423e1ed5e269",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C11",
+      "claim": "Mutations in the telomere maintenance machinery cause genetic diseases referred to as 'telomeropathies' or 'telomere syndromes', including dyskeratosis congenita (DC), aplastic anemia, and multiple types of cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, a constellation of genetic diseases caused by mutations in the telomere maintenance machinery (Sarek et al., 2015), referred to as 'telomeropathies' (Holohan et al., 2014) or 'telomere syndromes' (Armanios and Blackburn, 2012), have been continuously identified, and include dyskeratosis congenita (DC), aplastic anemia, and multiple types of cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "9e68053c-dca0-450e-bbc6-3dced9e77512",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C12",
+      "claim": "In budding yeast, the interaction between the telomere-binding protein Cdc13 and the telomerase holoenzyme component Est1 regulates telomerase activation and its recruitment to the telomere.",
+      "claim_type": "EXPLICIT",
+      "source": "In budding yeast, the interaction between the telomere-binding protein Cdc13 and the telomerase holoenzyme component Est1 regulates telomerase activation and its recruitment to the telomere (Chandra et al., 2001; Evans and Lundblad, 1999; Pennock et al., 2001; Qi and Zakian, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "f96ddbc4-8246-4ec8-a358-0f129e512be3",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C13",
+      "claim": "Telomere-associated proteins in humans and fission yeast form a highly conserved protein complex called shelterin.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, telomere-associated proteins in humans and fission yeast, which form a highly conserved protein complex called shelterin (de Lange, 2005; Miyoshi et al., 2008), are essential to regulate telomere states, recruit telomerase, and govern its activity on telomeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "258783b8-69c9-41bb-bcac-d00e37539ea1",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C14",
+      "claim": "In fission yeast, the shelterin complex contains the double-stranded DNA (dsDNA) binding protein Taz1 and the single-stranded DNA (ssDNA) binding protein Pot1.",
+      "claim_type": "EXPLICIT",
+      "source": "In fission yeast, the shelterin complex contains the double-stranded DNA (dsDNA) binding protein Taz1 (the homolog of TRF1/TRF2 in humans) (Cooper et al., 1997) and the single-stranded DNA (ssDNA) binding protein Pot1 (human POT1 ortholog) (Baumann and Cech, 2001), which are bridged via direct protein-protein interactions between Rap1 (Chikashige and Hiraoka, 2001; Kanoh and Ishikawa, 2001), Poz1, and Tpz1 (human RAP1, TIN2 and TPP1 orthologs, respectively) (Miyoshi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "7b05f7a2-6183-4151-a0ef-f8670f9687eb",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C15",
+      "claim": "Taz1 and Pot1 in fission yeast shelterin are bridged via direct protein-protein interactions between Rap1, Poz1, and Tpz1.",
+      "claim_type": "EXPLICIT",
+      "source": "In fission yeast, the shelterin complex contains the double-stranded DNA (dsDNA) binding protein Taz1 (the homolog of TRF1/TRF2 in humans) (Cooper et al., 1997) and the single-stranded DNA (ssDNA) binding protein Pot1 (human POT1 ortholog) (Baumann and Cech, 2001), which are bridged via direct protein-protein interactions between Rap1 (Chikashige and Hiraoka, 2001; Kanoh and Ishikawa, 2001), Poz1, and Tpz1 (human RAP1, TIN2 and TPP1 orthologs, respectively) (Miyoshi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "18e55be6-015f-4840-96ee-2b4ade5f0ffe",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C16",
+      "claim": "The human shelterin system shares a conserved arrangement with fission yeast by forming a similar 'shelterin bridge' architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "The human system shares a conserved shelterin arrangement by forming a similar 'shelterin bridge' architecture (Bianchi and Shore, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "31fe4923-f3eb-4270-8226-32c08d38b7e9",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C17",
+      "claim": "A cluster of residues on human TPP1, collectively termed TEL-patch, mediates TPP1-TERT interaction to recruit telomerase to telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies discovered a cluster of residues on human TPP1, collectively termed TEL-patch, which mediates TPP1-TERT interaction to recruit telomerase to telomeres (Nandakumar et al., 2012; Sexton et al., 2012; Zhong et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "6e34f22e-f3ac-4fa5-a421-5d2308f82c01",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C18",
+      "claim": "TEL-patch mediated TPP1-TERT interaction confers increased telomerase processivity in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "TEL-patch mediated TPP1-TERT interaction also confers increased telomerase processivity in vitro (Nandakumar et al., 2012; Schmidt et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "b5a35f28-83b3-4670-a2b5-293133957126",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C19",
+      "claim": "A germline mutation causing a single-amino-acid deletion (K170\u0394) in the human TPP1 TEL-patch has been identified as the causal mutation of Hoyeraal-Hreidarsson (HH) syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "A germline mutation causing a single-amino-acid deletion (K170\u0394) in the human TPP1 TEL-patch that affects its telomerase recruitment function has been identified as the causal mutation of HH (Kocak et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "466a39c2-7695-4a8b-b334-6587384ad71d",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C20",
+      "claim": "Fission yeast Schizosaccharomyces pombe contains an additional shelterin component called Ccq1.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, fission yeast Schizosaccharomyces pombe, which has a similar shelterin architecture to mammals, contains an additional shelterin component called Ccq1 (Flory et al., 2004), the functional homolog of which has not yet been identified in mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "04134622-97d4-4c47-b16c-37d2cab0c50f",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C21",
+      "claim": "Ccq1 was demonstrated to be a cell cycle-dependent telomerase recruitment factor.",
+      "claim_type": "EXPLICIT",
+      "source": "Ccq1 was demonstrated to be a cell cycle-dependent telomerase recruitment factor (Miyoshi et al., 2008; Tomita and Cooper, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "fd08a0b8-39ac-40ac-8753-7825e64042d7",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C22",
+      "claim": "Ccq1 is required to bring telomerase to telomeres through its Tel1ATM/Rad3ATR-mediated Thr93 phosphorylation during late S phase, which creates a binding site for the 14-3-3 domain of Est1.",
+      "claim_type": "EXPLICIT",
+      "source": "Further investigation showed that Ccq1 is required to bring telomerase to telomeres through its Tel1ATM/Rad3ATR-mediated Thr93 phosphorylation during late S phase, which creates a binding site for the 14-3-3 domain of Est1 (Moser et al., 2011; Webb and Zakian, 2012; Yamazaki et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "820797bb-cf7d-4913-9133-24b1162f7d5b",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C23",
+      "claim": "Est1 is an accessory protein of telomerase holoenzyme and is linked to the telomerase protein subunit (Trt1) via their co-association with telomerase RNA (TER1).",
+      "claim_type": "EXPLICIT",
+      "source": "Est1 is an accessory protein of telomerase holoenzyme and is linked to the telomerase protein subunit (Trt1) via their co-association with telomerase RNA (TER1) (Leonardi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "3df7af31-d50a-41db-b1e4-179d710f33da",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C24",
+      "claim": "Ccq1 interacts with Tpz1.",
+      "claim_type": "EXPLICIT",
+      "source": "Ccq1 also interacts with Tpz1 (Miyoshi et al., 2008), and the Ccq1-Tpz1 interaction is therefore thought to bring the telomerase complex (Est1-TER1-Trt1) to the telomere (Moser et al., 2009) via the Ccq1 Thr93-phosphorylation dependent Ccq1-Est1 interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "46b42994-9c41-4513-8d02-1c1432f8a49d",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C25",
+      "claim": "Ccq1-Est1 and Ccq1-Tpz1 interactions are mutually exclusive.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in-depth analyses further revealed that Ccq1-Est1 and Ccq1-Tpz1 interactions seem to be mutually exclusive (Armstrong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "4b4e8410-a645-428b-be34-ddda1ea6126d",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C26",
+      "claim": "Est1-Ccq1 interaction could be disrupted by TER1 in a yeast three-hybrid analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Est1-Ccq1 interaction could be disrupted by TER1 in a yeast three-hybrid analysis and Est1 mutations that affect Est1-TER1 interaction also impair Est1-Ccq1 interaction (Armstrong et al., 2014; Webb and Zakian, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "6eab4aee-1f15-4cac-9783-74fce737c932",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C27",
+      "claim": "Est1 mutations that affect Est1-TER1 interaction also impair Est1-Ccq1 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Est1-Ccq1 interaction could be disrupted by TER1 in a yeast three-hybrid analysis and Est1 mutations that affect Est1-TER1 interaction also impair Est1-Ccq1 interaction (Armstrong et al., 2014; Webb and Zakian, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "9a9d03f7-fdf9-4f99-a04f-92ec84d7649a",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C28",
+      "claim": "The telomeric association of Est1 requires not only Ccq1, but also Trt1 and TER1.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, based on a Ccq1-centric model, it is hard to explain why the telomeric association of Est1 requires not only Ccq1, but also Trt1 and TER1, which are downstream from Ccq1-Est1 interaction (Webb and Zakian, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "a7d143f7-b28f-406c-9c1e-d631f9704ad0",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C29",
+      "claim": "tpz1-I105R and tpz1-V107R mutant strains have destabilized Tpz1 protein and display a telomere deprotection phenotype similar to tpz1\u0394 strain.",
+      "claim_type": "EXPLICIT",
+      "source": "tpz1-I105R and tpz1-V107R mutant strains appear to have destabilized Tpz1 protein and display a similar telomere deprotection phenotype (Figure 1\u2014figure supplement 1) to tpz1\u0394 strain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "a42026b0-2e20-42b9-92ea-f08af62bb2ab",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C30",
+      "claim": "The remaining 10 tpz1 mutant strains have comparable levels of Tpz1 expression as the wild-type strain.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining 10 tpz1 mutant strains have comparable levels of Tpz1 expression as the wild-type strain (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "009c0802-d79d-4dc4-b765-aa98cd372e49",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C31",
+      "claim": "Strains bearing tpz1-T73A, tpz1-K75E, tpz1-R76E, tpz1-I77R, and tpz1-R81E displayed shortening telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Strains bearing tpz1-T73A, tpz1-K75E, tpz1-R76E, tpz1-I77R, and tpz1-R81E displayed shortening telomeres (Figure 1B and Figure 1\u2014figure supplement 1), implicating positive regulatory roles of these residues in telomere length regulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "937a2bda-c4a9-47cc-8be4-701bf32439b2",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C32",
+      "claim": "tpz1-R81E cells showed the classic Ever Shorter Telomere (EST) phenotype, similar to trt1\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, tpz1-R81E cells showed the classic Ever Shorter Telomere (EST) phenotype (Lundblad and Szostak, 1989), similar to trt1\u0394 cells (Figure 1B) (Nakamura et al., 1997).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B and citations to established literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "30f204df-5266-4cfd-bb2f-598667e7e9f9",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C33",
+      "claim": "The deterioration in telomere maintenance of tpz1-R81E strain started as early as ~50 generations.",
+      "claim_type": "EXPLICIT",
+      "source": "The deterioration in telomere maintenance of tpz1-R81E strain started as early as ~50 generations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "6c9a7ea9-5065-43c2-b16b-826a52ab81ae",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C34",
+      "claim": "Tpz1-Arg81 and Trt1 appear to have an epistatic relationship because telomere shortening in the tpz1-R81E/trt1\u0394 double mutant is not additive.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Tpz1-Arg81 and Trt1 appear to have an epistatic relationship because telomere shortening in the tpz1-R81E/trt1\u0394 double mutant is not additive (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "2a8b8925-80e4-4833-91e4-9b73084a29fe",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C35",
+      "claim": "Tpz1-R81E only immunoprecipitated 30% of Trt1 compared to the wild-type Tpz1.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2A,B and Figure 2\u2014figure supplement 1, whereas Tpz1-E74R, Tpz1-K75A, Tpz1-K75E, and Tpz1-R76E pulled down similar amounts of Trt1 as the wild-type Tpz1, Tpz1-R81E only immunoprecipitated 30% of Trt1 compared to the wild-type Tpz1 (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A, 2B, 2C, and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "4adbb65b-7812-4e1d-a84c-f2c6dcc2b9cc",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C36",
+      "claim": "tpz1-I77R cells lost about 50% of the Tpz1-Trt1 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, tpz1-I77R cells lost about 50% of the Tpz1-Trt1 interaction (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B and 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "f1a71035-b3c7-4489-9245-aa12173c2ca2",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C37",
+      "claim": "The tpz1-R76E mutant retains the wild-type Tpz1-Trt1 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The tpz1-R76E mutant retains the wild-type Tpz1-Trt1 interaction (Figure 2A) but displays stably shortened telomeres.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "9c646e00-bed4-446e-9411-e7c698520c5d",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C38",
+      "claim": "All tested Tpz1 mutants, including Tpz1-R81E, interact with Ccq1 similarly to wild-type Tpz1.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as shown in Figure 2B,D and E, all tested Tpz1 mutants, including Tpz1-R81E, interact with Ccq1 similarly to wild-type Tpz1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B, 2D, and 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "ed8079c0-41b3-41a8-af15-373a9cdd7ba9",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C39",
+      "claim": "The Ccq1-Trt1 interaction remains unchanged for all Tpz1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the Ccq1-Trt1 interaction remains unchanged for all Tpz1 mutants as well (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "c5f31908-77a7-4c8b-8fdc-7bcbf00f57a5",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C40",
+      "claim": "Tpz1-Trt1 interaction is clearly retained in both Ccq1-F157A/K174E and Ccq1-T93A mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2F, Tpz1-Trt1 interaction is clearly retained in both Ccq1-F157A/K174E and Ccq1-T93A mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "425cbee9-a7cb-43a9-98ee-c70a86ad3a23",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C41",
+      "claim": "tpz1-R81E exhibited a dramatic decrease in the association of Trt1 with telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, tpz1-R81E, which has significantly reduced Tpz1-Trt1 interaction, exhibited a dramatic decrease in the association of Trt1 with telomeres (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "7a6cdf5a-91fa-4f0a-aea7-02a564f32893",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C42",
+      "claim": "A telomerase activation-defective mutant tpz1-R76E displayed wild-type telomerase localization to telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the tpz1-R81E mutant, a telomerase activation-defective mutant tpz1-R76E displayed wild-type telomerase localization to telomeres (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "79e0cd2e-cb41-4e5c-b8ef-19fe0de0b90a",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C43",
+      "claim": "The tpz1-I77R mutant strain showed significant decreased localization of Trt1 to telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the tpz1-I77R mutant strain also showed significant decreased localization of Trt1 to telomeres (Figure 3A), consistent with the decreased Tpz1-Trt1 interaction observed in the co-immunoprecipitation assay (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3A and Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "19483da0-564e-4f11-b72d-09d9b3a3e272",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C44",
+      "claim": "In all the tested Tpz1 OB-fold domain mutants, little effect was observed on the telomeric association of both Tpz1 and Ccq1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in all the tested Tpz1 OB-fold domain mutants, little effect was observed on the telomeric association of both Tpz1 and Ccq1 (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "72545b72-a81b-4070-9e2b-f942e7164d57",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C45",
+      "claim": "The strain bearing fused Trt1\u2014Tpz1 TEL-patch mutant (trt1\u2014tpz1-R81E) maintained the same telomere length as the trt1\u2014tpz1 wild-type strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Apparently, the strain bearing fused Trt1\u2014Tpz1 TEL-patch mutant (trt1\u2014tpz1-R81E) maintained the same telomere length as the trt1\u2014tpz1 wild-type strain (Figure 4A), indicating rescue of telomere shortening.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "9054fb2d-f8fa-43cc-ad71-db5001b434f7",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C46",
+      "claim": "Fusion of Trt1 with Tpz1-L449A, which disrupts the Tpz1-Ccq1 interaction, failed to restore telomere maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, fusion of Trt1 with Tpz1-L449A, which disrupts the Tpz1-Ccq1 interaction, failed to restore telomere maintenance, as previously reported (Armstrong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations and citation to established literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "6f1dcd4a-fc45-4ab3-ba8b-114252d10884",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C47",
+      "claim": "Ccq1-F157A/K174E and Ccq1-I175R, which were identified previously to be defective in Tpz1-Ccq1 interaction, both significantly diminished Ccq1-Est1 interaction in co-immunoprecipitation assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, as shown in Figure 5A, Ccq1-F157A/K174E and Ccq1-I175R, which were identified previously to be defective in Tpz1-Ccq1 interaction, both significantly diminished Ccq1-Est1 interaction in co-immunoprecipitation assays, whereas Ccq1-V152R and Ccq1-L177R still retained wild-type binding to Est1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "3f460ff3-717c-482d-8540-815540a10c0c",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C48",
+      "claim": "Ccq1-T93A did not completely abolish Ccq1-Est1 interaction; rather, it diminished Ccq1-Est1 interaction to a similar degree that was observed for Ccq1-F157A/K174E or Ccq1-I175R mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, we found that Ccq1-T93A, the Ccq1 mutant in the Rad3ATR/Tel1ATM phosphorylation site Thr93, did not completely abolish Ccq1-Est1 interaction; rather, it diminished Ccq1-Est1 interaction to a similar degree that was observed for Ccq1-F157A/K174E or Ccq1-I175R mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "52542760-de32-4ee3-ae20-e8a30f7783f6",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C49",
+      "claim": "Ccq1 and Est1 probably interact with each other via two binding sites: one provided by phosphorylated Thr93 and the other by the HDAC2/3-like domain at the N-terminus of Ccq1.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore speculated that Ccq1 and Est1 probably interact with each other via two binding sites: one provided by phosphorylated Thr93 and the other by the HDAC2/3-like domain at the N-terminus of Ccq1 (as depicted in Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by inference from experimental data and illustrated in Figure 5B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "656a3d98-4f7c-45a7-a1ff-de18f4fc99cd",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C50",
+      "claim": "A Ccq1 mutant with both binding sites mutated\u2014Ccq1-T93A/F157A/K174E completely lost its ability to bind to Est1.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, as expected from the two-binding-site model, a Ccq1 mutant with both binding sites mutated\u2014Ccq1-T93A/F157A/K174E completely lost its ability to bind to Est1 (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "5d0a70e7-b35e-4969-bc77-b6733197fe35",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C51",
+      "claim": "In ccq1-T93A/est1-K252E cells, which bear mutations on Ccq1 and Est1 that in combination disrupt both binding sites, Ccq1-Est1 interaction could not be detected.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, in ccq1-T93A/est1-K252E cells, which bear mutations on Ccq1 and Est1 that in combination disrupt both binding sites, Ccq1-Est1 interaction could not be detected (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "c61fe96e-8dfb-4425-b558-6f28825f1702",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C52",
+      "claim": "The addition of MBP-Tpz1-CTD partially displaced the Ccq1-bound Est1 at a high concentration of Tpz1.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5E the addition of MBP-Tpz1-CTD partially displaced the Ccq1-bound Est1 at a high concentration of Tpz1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "91594af0-96d8-44dd-bcf6-3c2bef8c23aa",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C53",
+      "claim": "The Ccq1-binding defective mutant MBP-Tpz1-CTD L449A did not displace Ccq1-bound Est1.",
+      "claim_type": "EXPLICIT",
+      "source": "This did not occur when the Ccq1-binding defective mutant MBP-Tpz1-CTD L449A was added.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "67d6cb4f-ed33-42b2-8a6e-a07fc84325fb",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C54",
+      "claim": "Est1-Ccq1 interaction and Tpz1-Ccq1 interaction are mutually exclusive on the HDAC2/3-like domain of Ccq1.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the mutational analyses and the competitive binding assays indicate that Est1-Ccq1 interaction and Tpz1-Ccq1 interaction are mutually exclusive on the HDAC2/3-like domain of Ccq1 since both association events utilize the same binding surface on Ccq1 containing Phe157 and Lys174, et al.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by inference from experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "d8630bde-100e-44ee-93ac-3aa004886503",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C55",
+      "claim": "Tpz1-Ccq1-Est1 ternary complex can form, likely in a transient manner, not as stable as Tpz1-Ccq1 or Ccq1-Est1 binary complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, because phosphorylated Ccq1-Thr93 provides a secondary binding site for Ccq1-Est1 association, Tpz1-Ccq1-Est1 ternary complex can also form, likely in a transient manner, not as stable as Tpz1-Ccq1 or Ccq1-Est1 binary complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by inference from experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "114b8c8e-d3e0-4932-a5fd-b28bfc12325a",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C56",
+      "claim": "Rad3ATR/Tel1ATM-dependent phosphorylation of Ccq1 at Thr93 is cell cycle-regulated and peaks during late S phase.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown before, Rad3ATR/Tel1ATM-dependent phosphorylation of Ccq1 at Thr93 is cell cycle-regulated and peaks during late S phase (Chang et al., 2013), correlating well with the temporal pattern of telomerase recruitment to the telomere (Moser et al., 2009; Webb and Zakian, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "801f53ff-10ec-44eb-bf0f-68447c4ab2a1",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C57",
+      "claim": "The interaction between Tpz1 and Ccq1 remained almost unchanged throughout the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6A and C, the interaction between Tpz1 and Ccq1 remained almost unchanged throughout the cell cycle.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6A and 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "92513609-8536-4b69-875b-2d37ddda9f40",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C58",
+      "claim": "Tpz1 and Trt1 association gradually increased after release from the G2 arrest, peaked during late S phase (100\u2013140 min), and then decreased to the level at G2.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, Tpz1 and Trt1 association gradually increased after release from the G2 arrest, peaked during late S phase (100\u2013140 min), and then decreased to the level at G2 (Figure 6A and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6A and 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "6bcacd81-493d-460d-b37f-78b3533d285f",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C59",
+      "claim": "The temporal pattern of the Tpz1-Trt1 interaction along cell cycle progression correlates very well with that of Ccq1 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "This temporal pattern of the Tpz1-Trt1 interaction along cell cycle progression correlates very well with that of Ccq1 phosphorylation (Chang et al., 2013), and consequently, with that of the Ccq1-Est1 interaction promoted by Ccq1 phosphorylation, which also peaked in late S phase (Figure 6E and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6E and 6G and citation to established literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "972ea615-b4da-4c23-ac59-20d839451341",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C60",
+      "claim": "When the critical Rad3ATR/Tel1ATM phosphorylation site in Ccq1\u2014Thr93 was mutated, neither Tpz1-Trt1 interaction nor Ccq1-Est1 interaction peaked in late S phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our hypothesis, when the critical Rad3ATR/Tel1ATM phosphorylation site in Ccq1\u2014Thr93 was mutated, neither Tpz1-Trt1 interaction (Figure 6B and D) nor Ccq1-Est1 interaction (Figure 6F and G) peaked in late S phase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6B, 6D, 6F, and 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "1750fd15-7917-4ec7-ae17-9cfa3445e125",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C61",
+      "claim": "Through an intermediate telomerase recruitment complex formed by both Ccq1-Est1 and Tpz1-Trt1 interactions, the cell cycle information is delivered through Ccq1 Thr93-phosphorylation to the TEL-patch on Tpz1.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we propose that through an intermediate telomerase recruitment complex formed by both Ccq1-Est1 and Tpz1-Trt1 interactions (Figure 7), the cell cycle information is delivered through Ccq1 Thr93-phosphorylation to the TEL-patch on Tpz1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by inference from experimental data and illustrated in Figure 7.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "102d09ea-0561-4155-8c9b-182bc8c84ad6",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C62",
+      "claim": "Fission yeast Tpz1 contains a TEL-patch in its OB-fold domain, analogous to its human ortholog\u2014TPP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study demonstrates that fission yeast Tpz1 also contains a TEL-patch in its OB-fold domain, analogous to its human ortholog\u2014TPP1 (Nandakumar et al., 2012; Sexton et al., 2012; Zhong et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental findings and citations to established literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "2af050b7-82e4-4230-aaf0-5237e5d476cb",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C63",
+      "claim": "A TEL-patch mutation causes drastically reduced association of telomerase with telomeres, and consequently an EST phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "A TEL-patch mutation causes drastically reduced association of telomerase with telomeres, and consequently an EST phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "741e1fe8-7196-4dd1-a714-a055a10a0bdd",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C64",
+      "claim": "In late S phase, when the DNA replication machinery completes most of the genome, Rad3ATR/Tel1ATM are activated and phosphorylate the critical Thr93 residue in Ccq1 at telomeres, priming the telomere for telomerase recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "As schematically illustrated in Figure 7, we envision that in late S phase, when the DNA replication machinery completes most of the genome, Rad3ATR/Tel1ATM are activated and phosphorylate the critical Thr93 residue in Ccq1 at telomeres, priming the telomere for telomerase recruitment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by inference from experimental data and illustrated in Figure 7.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "bf8c6d3b-ab3b-49e7-9bb8-eaafdcd1070d",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C65",
+      "claim": "Telomerase holoenzyme, minimally composed of Trt1-TER1-Est1, is attracted to the telomere by the cell cycle-regulated, phospho-Thr93-mediated Ccq1-Est1 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, telomerase holoenzyme, minimally composed of Trt1-TER1-Est1, is attracted to the telomere by the cell cycle-regulated, phospho-Thr93-mediated Ccq1-Est1 interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by inference from experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "3eb01d8c-3171-41dd-9734-08b440f51419",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C66",
+      "claim": "Trt1 interacts with Tpz1 via the respective TEN domain and the TEL-patch residues, thus forming an intermediate telomerase recruitment complex.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, in a collaborative manner, Trt1 interacts with Tpz1 via the respective TEN domain and the TEL-patch residues, thus forming an intermediate telomerase recruitment complex that further engages the telomerase core enzyme (Trt1-TER1) at the very 3' end of the telomere for nucleotide additions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by inference from experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "8188aca7-d6b9-414f-9038-2767e32b0623",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C67",
+      "claim": "Est1 is likely to depart from TER1 upon its binding to Ccq1.",
+      "claim_type": "EXPLICIT",
+      "source": "Because Est1 may use the same surface to interact with Ccq1 as it interacts with TER1 (Webb and Zakian, 2012), Est1 is likely to depart from TER1 upon its binding to Ccq1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by inference from experimental data and citation to established literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "2cb36156-d905-4eef-a044-739ed97c50eb",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C68",
+      "claim": "Only Tpz1 on the extreme 3' end of the telomere, but not the majority of Tpz1 on the internal telomeric regions, is involved in forming the intermediate telomerase recruitment complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Alignment of the very 3' end of telomeric ssDNA to the template region in TER1 might also participate in the telomerase recruitment process, and therefore, only Tpz1 on the extreme 3' end of the telomere, but not the majority of Tpz1 on the internal telomeric regions, is involved in forming the intermediate telomerase recruitment complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by inference from experimental data and speculation.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "c9096acc-01a9-4689-a3ab-9e19eb18f210",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C69",
+      "claim": "Indistinguishable progressive telomere shortening phenotypes are displayed by strains either with deletion of the telomerase RNA, the reverse transcriptase subunit, or accessory proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Indistinguishable progressive telomere shortening phenotypes are displayed by strains either with deletion of the telomerase RNA, the reverse transcriptase subunit, or accessory proteins (Leonardi et al., 2008; Lingner et al., 1997; Lundblad and Szostak, 1989; Webb and Zakian, 2008), suggesting that all these components work collaboratively to form a functional telomerase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "ae8adfc0-36dd-4364-9ff1-2fb30e99a109",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C70",
+      "claim": "The telomerase core, RNP, Trt1 and TER1 RNA, is required for the association of Est1 with the telomere.",
+      "claim_type": "EXPLICIT",
+      "source": "Unexpectedly, a previous study discovered that the telomerase core, RNP, Trt1 and TER1 RNA, is also required for the association of Est1 with the telomere (Webb and Zakian, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "e679ac3d-d4b0-4751-bc97-c41c6b22450a",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C71",
+      "claim": "Telomerase holoenzyme is recruited to telomeres via an intermediate state involving two-pronged cooperative Est1-Ccq1 and Trt1-Tpz1 interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our finding that telomerase holoenzyme is recruited to telomeres via an intermediate state involving two-pronged cooperative Est1-Ccq1 and Trt1-Tpz1 interactions, uncovers the active role of Trt1 itself in the recruitment process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "8423ab0d-4b4e-4b84-aa4e-0ff411496d36",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C72",
+      "claim": "In budding yeast, Tel1ATM prefers shorter telomeres than longer ones.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown in budding yeast that Tel1ATM prefers shorter telomeres than longer ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "e6812af7-b082-43b1-bafb-45ee87278400",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C73",
+      "claim": "In fission yeast, strains with shorter telomeres show a higher level of Ccq1 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in fission yeast, strains with shorter telomeres show a higher level of Ccq1 phosphorylation (Moser et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "c7ead3cf-4b1a-454b-9828-400af87c5770",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C74",
+      "claim": "53BP1 simultaneously recognizes mononucleosomes containing dimethylated H4K20 (H4K20me2) and H2A ubiquitinated on Lys15 (H2AK15ub).",
+      "claim_type": "EXPLICIT",
+      "source": "For example, 53BP1, an important effector of DNA double-strand-break (DSB) response, simultaneously recognizes mononucleosomes containing dimethylated H4K20 (H4K20me2) and H2A ubiquitinated on Lys15 (H2AK15ub) (Fradet-Turcotte et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "1f8d937a-0f2e-4f2d-acaa-16a5fad293ac",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C75",
+      "claim": "Tpz1 directly interacts with three other shelterin components: Poz1, Ccq1, and Pot1.",
+      "claim_type": "EXPLICIT",
+      "source": "Tpz1 directly interacts with three other shelterin components: Poz1, Ccq1, and Pot1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "210d444f-34e0-4f61-8fef-5c63392fb20d",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C76",
+      "claim": "Tpz1-mediated complete linkage between telomere dsDNA and ssDNA binding proteins in the shelterin complex is required for defining the telomerase-nonextendible state of telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "In our previous studies, utilizing biochemically identified Tpz1 separation-of-function mutants that can individually but specifically disrupt Tpz1's interactions with Poz1, Ccq1, or Pot1, we found that Tpz1-mediated complete linkage between telomere dsDNA and ssDNA binding proteins in the shelterin complex is required for defining the telomerase-nonextendible state of telomeres (Jun et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "500b6b29-e6f7-4bc6-b024-d65a206ea6d1",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C77",
+      "claim": "Disruption of the linkage on either the dsDNA binder or the ssDNA binder side of Tpz1 causes unregulated elongation of telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of the linkage on either the dsDNA binder or the ssDNA binder side of Tpz1 causes unregulated elongation of telomeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by previous experimental findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "a022a72f-12a2-4be5-90a4-75ad17d606af",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C78",
+      "claim": "Lys75 in the OB-fold domain of Tpz1 was demonstrated to have telomerase activation function.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Lys75, which is close to the TEL-patch in the OB-fold domain of Tpz1, was demonstrated to have telomerase activation function, the step that follows successful telomerase-telomere association and alters telomerase conformation to become competent for telomere synthesis (Armstrong et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "0f01516b-a4f9-4109-bdd9-ec34d19bd95f",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C79",
+      "claim": "SUMOylation of Tpz1-Lys242 in late S phase enhances the Tpz1-Stn1 interaction and promotes Stn1-Ten1 association with telomeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, SUMOylation of Tpz1-Lys242 in late S phase was shown to enhance the Tpz1-Stn1 interaction, promote Stn1-Ten1 association with telomeres, and thus to coordinate synthesis of the telomeric lagging strand by Pol\u03b1 stimulated via Stn1-Ten1-Pol\u03b1 interaction (Hannan et al., 2015; Miyagawa et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "130d3ec4-0c03-493f-bdc9-fa8a3cc42968",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C80",
+      "claim": "Human TIN2 has been demonstrated to be essential for telomerase recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, human TIN2 (Poz1 homolog) has been demonstrated to be essential for telomerase recruitment (Abreu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "c41fafc5-fb14-4da3-88da-7a0477c58c68",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C81",
+      "claim": "DC mutations in the C-terminal region of TIN2 lead to defective association of TIN2 with telomerase.",
+      "claim_type": "EXPLICIT",
+      "source": "DC mutations in the C-terminal region of TIN2 (not contained in Poz1) lead to defective association of TIN2 with telomerase (Frank et al., 2015; Yang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "23d2ccf1-5b63-4841-8e9a-0bf1d2abc0ee",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C82",
+      "claim": "The C-terminal domain of TIN2 is likely to be the Ccq1-functional equivalent in humans and interacts either with hEST1 or the telomerase RNP directly.",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated in Figure 7\u2014figure supplement 1, we speculate that the C-terminal domain of TIN2 is likely to be the Ccq1-functional equivalent in humans and interacts either with hEST1 or the telomerase RNP directly, forming the second interface between telomeres and telomerase in addition to the TPP1 (TEL-patch)-TERT (TEN domain) interaction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by speculation and illustrated in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "348cb850-53f0-455f-8003-62cff79039ea",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C83",
+      "claim": "TIN2 may be subject to cell cycle-controlled post-translational modifications, and thus mediate its telomerase recruitment function in a highly regulated way.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, TIN2 may also be subject to cell cycle-controlled post-translational modifications, and thus mediate its telomerase recruitment function in a highly regulated way.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by speculation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "ee1d6a67-9be2-4eb4-9aba-8b5d5f4f2179",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C84",
+      "claim": "Cell cycle-specific assembly and disassembly of active telomerase RNP at telomeres restrict telomerase action to late S phase in budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in budding yeast, cell cycle-specific assembly and disassembly of active telomerase RNP at telomeres have been shown to restrict telomerase action to late S phase (Tucey and Lundblad, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "007dc712-e9f7-4797-93bb-9e2148095e6a",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C85",
+      "claim": "Telomerase tends to preferentially elongate short telomeres and Tel1ATM is enriched in short telomeres to achieve telomere length homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, telomerase tends to preferentially elongate short telomeres and Tel1ATM is enriched in short telomeres to achieve telomere length homeostasis (Bianchi and Shore, 2007; Sabourin et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "bd695552-1cfd-4faa-b2cf-6425f5163d95",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C86",
+      "claim": "Cdk1 controls the temporal recruitment of telomerase by directing the timing of Cdc13 and Stn1 phosphorylation along cell cycle progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Cdk1 was also shown to control the temporal recruitment of telomerase by directing the timing of Cdc13 and Stn1 phosphorylation along cell cycle progression (Li et al., 2009; Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "d4671ab5-a079-4554-8724-1ac6b5d9bef9",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "claim_id": "C87",
+      "claim": "Two recent studies unveil the conserved regulatory role of ATM/ATR in human recruitment and telomere elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Two recent studies unveil the conserved regulatory role of ATM/ATR in human recruitment and telomere elongation (Lee et al., 2015; Tong et al., 2015); however, the downstream substrate is mostly unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "135f1d29-f02b-43bf-ac9a-e7988510bd42",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors identify a TEL-patch in fission yeast Tpz1 through mutagenesis of conserved residues. Mutations in tpz1-R81E result in an Ever Shorter Telomere (EST) phenotype similar to trt1\u0394, with progressive telomere loss starting at ~50 generations. The tpz1-R81E/trt1\u0394 double mutant shows non-additive telomere shortening, indicating epistasis between Tpz1-Arg81 and Trt1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C34 provide convergent genetic evidence for the TEL-patch function. The EST phenotype of tpz1-R81E (C32), its similarity to trt1\u0394 (C32), and epistasis analysis (C34) strongly support that Tpz1-Arg81 functions in the same pathway as telomerase. Protein expression controls (C30) rule out destabilization artifacts. The phenotypic characterization is thorough and internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "d555bf30-78a6-4e6e-a13f-c67c0a45818f",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The Tpz1-R81E mutation reduces Tpz1-Trt1 interaction to 30% of wild-type levels in co-immunoprecipitation assays, while Tpz1-I77R shows ~50% reduction. Other TEL-patch mutants (E74R, K75A/E, R76E) retain wild-type Tpz1-Trt1 interaction. Importantly, all Tpz1 mutants maintain normal interactions with Ccq1, and Ccq1-Trt1 interactions remain unchanged. Tpz1-Trt1 interaction is retained in Ccq1 mutants defective for Tpz1-Ccq1 or Ccq1-Est1 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40 demonstrate through biochemical analysis that the TEL-patch mediates direct Tpz1-Trt1 interaction independent of Ccq1. The quantitative co-IP data (C35, C36) correlate well with phenotypic severity. Controls showing intact Ccq1 interactions (C38, C39) and retention of Tpz1-Trt1 binding in Ccq1 mutants (C40) argue against Ccq1 as the sole mediator of telomerase recruitment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "9e0cf5c5-6126-45aa-a369-826325dff8bd",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ChIP analysis reveals that tpz1-R81E exhibits dramatically decreased Trt1 association with telomeres, while the telomerase activation mutant tpz1-R76E shows wild-type telomerase localization. The tpz1-I77R mutant shows significantly decreased Trt1 localization. All Tpz1 OB-fold mutants maintain normal telomeric association of Tpz1 and Ccq1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 provide direct in vivo evidence that TEL-patch mutations specifically impair telomerase recruitment without affecting shelterin localization. The distinction between recruitment-defective (R81E, I77R) and activation-defective (R76E) mutants is clearly demonstrated. ChIP data correlate well with co-IP results (C35-C36) and genetic phenotypes (C31-C32).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "f57df954-5fde-434d-8564-67d2f8cb65e4",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Fusion of Trt1 to Tpz1-R81E rescues the telomere shortening phenotype and restores telomere length to wild-type levels. However, fusion of Trt1 to Tpz1-L449A (which disrupts Tpz1-Ccq1 interaction) fails to restore telomere maintenance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 demonstrate through genetic complementation that the TEL-patch defect can be bypassed by forced telomerase-shelterin association, confirming its recruitment function. The failure of Tpz1-L449A fusion to rescue indicates Ccq1 has additional roles beyond bridging. This epistasis analysis is well-controlled and supports the two-interface model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "b324d094-0095-4f1d-8784-8d0373ffca77",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors discover that Ccq1 and Est1 interact via two binding sites: one involving phosphorylated Thr93 and another involving the HDAC2/3-like domain at the N-terminus of Ccq1. Ccq1-T93A only partially reduces Ccq1-Est1 interaction, similar to Ccq1-F157A/K174E. The double mutant Ccq1-T93A/F157A/K174E completely abolishes Est1 binding, as does the ccq1-T93A/est1-K252E combination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 provide systematic mutational analysis revealing unexpected complexity in Ccq1-Est1 interaction. The two-binding-site model is well-supported by single and double mutant analysis (C50, C51). The observation that T93A mutation doesn't completely abolish binding (C48) challenges prior models and is rigorously tested through combinatorial mutations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "5b813b33-a1d0-4b5b-b766-506aad8b74c7",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Competitive binding assays show that high concentrations of MBP-Tpz1-CTD partially displace Est1 from Ccq1, while the Ccq1-binding defective mutant Tpz1-L449A does not. This demonstrates that Est1-Ccq1 and Tpz1-Ccq1 interactions are mutually exclusive on the HDAC2/3-like domain. A transient Tpz1-Ccq1-Est1 ternary complex can form via the secondary phospho-Thr93 binding site.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 provide direct biochemical evidence for competitive binding through in vitro competition assays. The requirement for high Tpz1 concentrations to compete Est1 (C52) and the specificity control with L449A (C53) support the interpretation. The ternary complex model (C55) is a reasonable inference from the two-binding-site data, though its transient nature is speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "5ea049ee-8868-4fb1-8123-5475562c21aa",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Cell cycle synchronization experiments reveal that Tpz1-Ccq1 interaction remains constant throughout the cell cycle, while Tpz1-Trt1 interaction peaks during late S phase (100-140 min), correlating with Ccq1 phosphorylation and Ccq1-Est1 interaction timing. Mutation of Ccq1-Thr93 abolishes the late S phase peak in both Tpz1-Trt1 and Ccq1-Est1 interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C60 demonstrate cell cycle regulation of TEL-patch function through synchronized co-IP experiments. The temporal correlation between Ccq1 phosphorylation and Tpz1-Trt1 interaction (C58-C59) is compelling. The loss of cell cycle regulation in ccq1-T93A (C60) provides strong evidence that phosphorylation couples the two interfaces. The use of Cig2 as a cell cycle marker strengthens the analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "aebd53d7-4d39-4f99-b517-5daf488668dd",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose a model where telomerase recruitment requires an intermediate state involving two coupled telomere-telomerase interfaces: cell cycle-regulated Ccq1-Est1 interaction and Tpz1 TEL-patch-Trt1 interaction. In late S phase, Rad3ATR/Tel1ATM phosphorylate Ccq1-Thr93, promoting Ccq1-Est1 binding. Simultaneously, Trt1 interacts with Tpz1 via the TEL-patch, forming an intermediate recruitment complex that positions telomerase for nucleotide addition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C61, C64-C66, C71 synthesize the experimental findings into a coherent mechanistic model. The two-interface intermediate state model is well-supported by the genetic (C29-C34), biochemical (C35-C40, C47-C55), and cell cycle (C57-C60) data. The model explains the interdependence of Est1, Trt1, and TER1 for telomeric association (C28, C70) and integrates cell cycle regulation through Ccq1 phosphorylation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "93165ef5-a1da-4533-8dfa-5abcc4e37823",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study demonstrates conservation of the TEL-patch between human TPP1 and fission yeast Tpz1. Like human TPP1, fission yeast Tpz1 contains a TEL-patch in its OB-fold domain that mediates telomerase recruitment. TEL-patch mutations cause drastically reduced telomerase-telomere association and EST phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C17-C19, C62-C63 establish evolutionary conservation of the TEL-patch mechanism. The functional analogy between human and yeast systems is supported by similar phenotypes (EST, reduced telomerase association) and the clinical relevance of TPP1 mutations in HH syndrome (C19). The sequence alignment and mutagenesis strategy (Figure 1A) provide rational basis for identifying conserved residues.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "92bc4c97-5065-4357-8bc8-325e1a60dc79",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background claims establishing that telomeres are essential for chromosome stability, consist of tandem repeats with 3' G-tail overhangs, and are maintained by telomerase. Dysregulation causes proliferation defects and diseases including dyskeratosis congenita, aplastic anemia, and cancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C11 provide established background knowledge supported by appropriate citations. These are standard facts in the telomere field and provide necessary context for the study. No experimental validation is needed as these are literature-based claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "486ca256-1363-4532-8030-ea01527e6ae1",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background on telomerase regulation mechanisms in budding yeast, humans, and fission yeast, including the role of Cdc13-Est1 interaction in budding yeast, shelterin complex architecture, and Ccq1 as a cell cycle-dependent telomerase recruitment factor in fission yeast through Tel1ATM/Rad3ATR-mediated Thr93 phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C16, C20-C24 summarize prior work on telomerase recruitment mechanisms across species. All claims are supported by appropriate citations to established literature. These provide essential context for understanding the novelty of the current findings regarding the two-interface model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "dacc13df-1796-4440-bc6b-497678b95a4d",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work showed that Ccq1-Est1 and Ccq1-Tpz1 interactions are mutually exclusive, Est1-Ccq1 interaction can be disrupted by TER1, Est1 mutations affecting Est1-TER1 interaction also impair Est1-Ccq1 interaction, and Est1 telomeric association requires Ccq1, Trt1, and TER1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C28 cite prior observations that motivated the current study. These are well-documented findings from cited literature that created the puzzle the authors sought to resolve. The mutual exclusivity (C25) and interdependence (C28) observations are key motivations for the two-interface model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "68d0dbff-89bb-49e6-b568-97e967e5fcf6",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors propose that Est1 likely departs from TER1 upon binding to Ccq1, and that only Tpz1 at the extreme 3' telomere end, not internal Tpz1, participates in forming the intermediate recruitment complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C67-C68 are mechanistic inferences not directly tested experimentally. While C67 is a reasonable inference based on competitive binding surfaces (C26-C27), it lacks direct evidence. C68 regarding 3' end specificity is speculative and would require additional experiments to validate, such as ChIP with higher resolution or single-molecule studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "4f50bf9a-ab85-43cc-9968-4f9eb4a0e924",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Discussion claims covering: collaborative function of telomerase components, requirement of Trt1/TER1 for Est1 telomeric association, Tel1ATM preference for short telomeres, Ccq1 phosphorylation levels in strains with short telomeres, 53BP1 as an example of two-interface recognition, Tpz1 interactions with other shelterin components, and various regulatory functions of Tpz1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C79 provide supporting context from literature and prior work by the authors. These are appropriately cited and provide relevant parallels (C74) or background (C75-C79) for interpreting the current findings. The claims about Tpz1's multiple functions (C76-C79) are from the authors' previous work and establish the multifunctional nature of Tpz1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "1d243f3d-296b-48ed-967a-a2267acab2da",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors speculate that human TIN2's C-terminal domain may be the functional equivalent of Ccq1, potentially interacting with hEST1 or telomerase RNP directly to form a second telomere-telomerase interface. TIN2 may be subject to cell cycle-controlled post-translational modifications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C80-C81 cite established literature on TIN2's role in telomerase recruitment and disease mutations. However, C82-C83 are speculative extrapolations to humans without experimental support. While the speculation is reasonable given the conservation of other shelterin components, it requires experimental validation in human cells. The model is presented as speculation (Figure 7\u2014figure supplement 1) which is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "4e8ed9dd-2631-4e0c-bd43-71401edfd42c",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Discussion of cell cycle regulation and telomere length homeostasis mechanisms in budding yeast and humans, including assembly/disassembly of telomerase RNP, preferential elongation of short telomeres, Cdk1 control of recruitment timing, and recent findings on ATM/ATR roles in human telomerase regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C87 provide relevant literature context for understanding temporal and length-dependent regulation of telomerase. All claims are appropriately cited. These comparisons across organisms help position the current findings within the broader field of telomerase regulation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    },
+    {
+      "id": "fe609370-c1e6-4e39-b4e4-7c8186f5acb2",
+      "content_id": "e49bddf6-efa3-40b0-8796-923fb0c2fd18",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background claim that Tel1ATM/Rad3ATR-mediated phosphorylation of Ccq1 during late S phase promotes Ccq1-Est1 binding and is involved in telomerase recruitment in fission yeast.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3 summarize established knowledge about Ccq1 phosphorylation and its role in telomerase recruitment, supported by citations. This provides essential background for understanding how the authors' findings extend and refine this model by revealing the two-binding-site mechanism and coupling to the TEL-patch.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:00:53.228481Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a7d143f7-b28f-406c-9c1e-d631f9704ad0",
+      "result_id": "135f1d29-f02b-43bf-ac9a-e7988510bd42"
+    },
+    {
+      "claim_id": "a42026b0-2e20-42b9-92ea-f08af62bb2ab",
+      "result_id": "135f1d29-f02b-43bf-ac9a-e7988510bd42"
+    },
+    {
+      "claim_id": "009c0802-d79d-4dc4-b765-aa98cd372e49",
+      "result_id": "135f1d29-f02b-43bf-ac9a-e7988510bd42"
+    },
+    {
+      "claim_id": "937a2bda-c4a9-47cc-8be4-701bf32439b2",
+      "result_id": "135f1d29-f02b-43bf-ac9a-e7988510bd42"
+    },
+    {
+      "claim_id": "30f204df-5266-4cfd-bb2f-598667e7e9f9",
+      "result_id": "135f1d29-f02b-43bf-ac9a-e7988510bd42"
+    },
+    {
+      "claim_id": "6c9a7ea9-5065-43c2-b16b-826a52ab81ae",
+      "result_id": "135f1d29-f02b-43bf-ac9a-e7988510bd42"
+    },
+    {
+      "claim_id": "2a8b8925-80e4-4833-91e4-9b73084a29fe",
+      "result_id": "d555bf30-78a6-4e6e-a13f-c67c0a45818f"
+    },
+    {
+      "claim_id": "4adbb65b-7812-4e1d-a84c-f2c6dcc2b9cc",
+      "result_id": "d555bf30-78a6-4e6e-a13f-c67c0a45818f"
+    },
+    {
+      "claim_id": "f1a71035-b3c7-4489-9245-aa12173c2ca2",
+      "result_id": "d555bf30-78a6-4e6e-a13f-c67c0a45818f"
+    },
+    {
+      "claim_id": "9c646e00-bed4-446e-9411-e7c698520c5d",
+      "result_id": "d555bf30-78a6-4e6e-a13f-c67c0a45818f"
+    },
+    {
+      "claim_id": "ed8079c0-41b3-41a8-af15-373a9cdd7ba9",
+      "result_id": "d555bf30-78a6-4e6e-a13f-c67c0a45818f"
+    },
+    {
+      "claim_id": "c5f31908-77a7-4c8b-8fdc-7bcbf00f57a5",
+      "result_id": "d555bf30-78a6-4e6e-a13f-c67c0a45818f"
+    },
+    {
+      "claim_id": "425cbee9-a7cb-43a9-98ee-c70a86ad3a23",
+      "result_id": "9e0cf5c5-6126-45aa-a369-826325dff8bd"
+    },
+    {
+      "claim_id": "7a6cdf5a-91fa-4f0a-aea7-02a564f32893",
+      "result_id": "9e0cf5c5-6126-45aa-a369-826325dff8bd"
+    },
+    {
+      "claim_id": "79e0cd2e-cb41-4e5c-b8ef-19fe0de0b90a",
+      "result_id": "9e0cf5c5-6126-45aa-a369-826325dff8bd"
+    },
+    {
+      "claim_id": "19483da0-564e-4f11-b72d-09d9b3a3e272",
+      "result_id": "9e0cf5c5-6126-45aa-a369-826325dff8bd"
+    },
+    {
+      "claim_id": "72545b72-a81b-4070-9e2b-f942e7164d57",
+      "result_id": "f57df954-5fde-434d-8564-67d2f8cb65e4"
+    },
+    {
+      "claim_id": "9054fb2d-f8fa-43cc-ad71-db5001b434f7",
+      "result_id": "f57df954-5fde-434d-8564-67d2f8cb65e4"
+    },
+    {
+      "claim_id": "6f1dcd4a-fc45-4ab3-ba8b-114252d10884",
+      "result_id": "b324d094-0095-4f1d-8784-8d0373ffca77"
+    },
+    {
+      "claim_id": "3f460ff3-717c-482d-8540-815540a10c0c",
+      "result_id": "b324d094-0095-4f1d-8784-8d0373ffca77"
+    },
+    {
+      "claim_id": "52542760-de32-4ee3-ae20-e8a30f7783f6",
+      "result_id": "b324d094-0095-4f1d-8784-8d0373ffca77"
+    },
+    {
+      "claim_id": "656a3d98-4f7c-45a7-a1ff-de18f4fc99cd",
+      "result_id": "b324d094-0095-4f1d-8784-8d0373ffca77"
+    },
+    {
+      "claim_id": "5d0a70e7-b35e-4969-bc77-b6733197fe35",
+      "result_id": "b324d094-0095-4f1d-8784-8d0373ffca77"
+    },
+    {
+      "claim_id": "c61fe96e-8dfb-4425-b558-6f28825f1702",
+      "result_id": "5b813b33-a1d0-4b5b-b766-506aad8b74c7"
+    },
+    {
+      "claim_id": "91594af0-96d8-44dd-bcf6-3c2bef8c23aa",
+      "result_id": "5b813b33-a1d0-4b5b-b766-506aad8b74c7"
+    },
+    {
+      "claim_id": "67d6cb4f-ed33-42b2-8a6e-a07fc84325fb",
+      "result_id": "5b813b33-a1d0-4b5b-b766-506aad8b74c7"
+    },
+    {
+      "claim_id": "d8630bde-100e-44ee-93ac-3aa004886503",
+      "result_id": "5b813b33-a1d0-4b5b-b766-506aad8b74c7"
+    },
+    {
+      "claim_id": "801f53ff-10ec-44eb-bf0f-68447c4ab2a1",
+      "result_id": "5ea049ee-8868-4fb1-8123-5475562c21aa"
+    },
+    {
+      "claim_id": "92513609-8536-4b69-875b-2d37ddda9f40",
+      "result_id": "5ea049ee-8868-4fb1-8123-5475562c21aa"
+    },
+    {
+      "claim_id": "6bcacd81-493d-460d-b37f-78b3533d285f",
+      "result_id": "5ea049ee-8868-4fb1-8123-5475562c21aa"
+    },
+    {
+      "claim_id": "972ea615-b4da-4c23-ac59-20d839451341",
+      "result_id": "5ea049ee-8868-4fb1-8123-5475562c21aa"
+    },
+    {
+      "claim_id": "2435085f-03e9-4388-af9c-94d1b3573799",
+      "result_id": "aebd53d7-4d39-4f99-b517-5daf488668dd"
+    },
+    {
+      "claim_id": "1750fd15-7917-4ec7-ae17-9cfa3445e125",
+      "result_id": "aebd53d7-4d39-4f99-b517-5daf488668dd"
+    },
+    {
+      "claim_id": "741e1fe8-7196-4dd1-a714-a055a10a0bdd",
+      "result_id": "aebd53d7-4d39-4f99-b517-5daf488668dd"
+    },
+    {
+      "claim_id": "bf8c6d3b-ab3b-49e7-9bb8-eaafdcd1070d",
+      "result_id": "aebd53d7-4d39-4f99-b517-5daf488668dd"
+    },
+    {
+      "claim_id": "3eb01d8c-3171-41dd-9734-08b440f51419",
+      "result_id": "aebd53d7-4d39-4f99-b517-5daf488668dd"
+    },
+    {
+      "claim_id": "e679ac3d-d4b0-4751-bc97-c41c6b22450a",
+      "result_id": "aebd53d7-4d39-4f99-b517-5daf488668dd"
+    },
+    {
+      "claim_id": "31cf79f7-79b2-4929-9fe3-85e304d2c55e",
+      "result_id": "93165ef5-a1da-4533-8dfa-5abcc4e37823"
+    },
+    {
+      "claim_id": "31fe4923-f3eb-4270-8226-32c08d38b7e9",
+      "result_id": "93165ef5-a1da-4533-8dfa-5abcc4e37823"
+    },
+    {
+      "claim_id": "6e34f22e-f3ac-4fa5-a421-5d2308f82c01",
+      "result_id": "93165ef5-a1da-4533-8dfa-5abcc4e37823"
+    },
+    {
+      "claim_id": "b5a35f28-83b3-4670-a2b5-293133957126",
+      "result_id": "93165ef5-a1da-4533-8dfa-5abcc4e37823"
+    },
+    {
+      "claim_id": "102d09ea-0561-4155-8c9b-182bc8c84ad6",
+      "result_id": "93165ef5-a1da-4533-8dfa-5abcc4e37823"
+    },
+    {
+      "claim_id": "2af050b7-82e4-4230-aaf0-5237e5d476cb",
+      "result_id": "93165ef5-a1da-4533-8dfa-5abcc4e37823"
+    },
+    {
+      "claim_id": "a8e3bd25-af12-46d2-9db3-f7065e7a4595",
+      "result_id": "92bc4c97-5065-4357-8bc8-325e1a60dc79"
+    },
+    {
+      "claim_id": "1c1c2e27-e94c-418b-b3a0-863755eb4ba6",
+      "result_id": "92bc4c97-5065-4357-8bc8-325e1a60dc79"
+    },
+    {
+      "claim_id": "93a612c6-d470-405f-ace0-71792fb7efb7",
+      "result_id": "92bc4c97-5065-4357-8bc8-325e1a60dc79"
+    },
+    {
+      "claim_id": "06d162f3-cf56-4327-8c2f-79b7c26b190f",
+      "result_id": "92bc4c97-5065-4357-8bc8-325e1a60dc79"
+    },
+    {
+      "claim_id": "0486bbd3-32c5-45bf-9154-7863229bc8bd",
+      "result_id": "92bc4c97-5065-4357-8bc8-325e1a60dc79"
+    },
+    {
+      "claim_id": "13d86f54-0137-4081-9d01-4cb9719558e3",
+      "result_id": "92bc4c97-5065-4357-8bc8-325e1a60dc79"
+    },
+    {
+      "claim_id": "7f7ee5cf-2b08-4438-a968-423e1ed5e269",
+      "result_id": "92bc4c97-5065-4357-8bc8-325e1a60dc79"
+    },
+    {
+      "claim_id": "9e68053c-dca0-450e-bbc6-3dced9e77512",
+      "result_id": "486ca256-1363-4532-8030-ea01527e6ae1"
+    },
+    {
+      "claim_id": "f96ddbc4-8246-4ec8-a358-0f129e512be3",
+      "result_id": "486ca256-1363-4532-8030-ea01527e6ae1"
+    },
+    {
+      "claim_id": "258783b8-69c9-41bb-bcac-d00e37539ea1",
+      "result_id": "486ca256-1363-4532-8030-ea01527e6ae1"
+    },
+    {
+      "claim_id": "7b05f7a2-6183-4151-a0ef-f8670f9687eb",
+      "result_id": "486ca256-1363-4532-8030-ea01527e6ae1"
+    },
+    {
+      "claim_id": "18e55be6-015f-4840-96ee-2b4ade5f0ffe",
+      "result_id": "486ca256-1363-4532-8030-ea01527e6ae1"
+    },
+    {
+      "claim_id": "466a39c2-7695-4a8b-b334-6587384ad71d",
+      "result_id": "486ca256-1363-4532-8030-ea01527e6ae1"
+    },
+    {
+      "claim_id": "04134622-97d4-4c47-b16c-37d2cab0c50f",
+      "result_id": "486ca256-1363-4532-8030-ea01527e6ae1"
+    },
+    {
+      "claim_id": "fd08a0b8-39ac-40ac-8753-7825e64042d7",
+      "result_id": "486ca256-1363-4532-8030-ea01527e6ae1"
+    },
+    {
+      "claim_id": "820797bb-cf7d-4913-9133-24b1162f7d5b",
+      "result_id": "486ca256-1363-4532-8030-ea01527e6ae1"
+    },
+    {
+      "claim_id": "3df7af31-d50a-41db-b1e4-179d710f33da",
+      "result_id": "486ca256-1363-4532-8030-ea01527e6ae1"
+    },
+    {
+      "claim_id": "46b42994-9c41-4513-8d02-1c1432f8a49d",
+      "result_id": "dacc13df-1796-4440-bc6b-497678b95a4d"
+    },
+    {
+      "claim_id": "4b4e8410-a645-428b-be34-ddda1ea6126d",
+      "result_id": "dacc13df-1796-4440-bc6b-497678b95a4d"
+    },
+    {
+      "claim_id": "6eab4aee-1f15-4cac-9783-74fce737c932",
+      "result_id": "dacc13df-1796-4440-bc6b-497678b95a4d"
+    },
+    {
+      "claim_id": "9a9d03f7-fdf9-4f99-a04f-92ec84d7649a",
+      "result_id": "dacc13df-1796-4440-bc6b-497678b95a4d"
+    },
+    {
+      "claim_id": "8188aca7-d6b9-414f-9038-2767e32b0623",
+      "result_id": "68d0dbff-89bb-49e6-b568-97e967e5fcf6"
+    },
+    {
+      "claim_id": "2cb36156-d905-4eef-a044-739ed97c50eb",
+      "result_id": "68d0dbff-89bb-49e6-b568-97e967e5fcf6"
+    },
+    {
+      "claim_id": "c9096acc-01a9-4689-a3ab-9e19eb18f210",
+      "result_id": "4f50bf9a-ab85-43cc-9968-4f9eb4a0e924"
+    },
+    {
+      "claim_id": "ae8adfc0-36dd-4364-9ff1-2fb30e99a109",
+      "result_id": "4f50bf9a-ab85-43cc-9968-4f9eb4a0e924"
+    },
+    {
+      "claim_id": "8423ab0d-4b4e-4b84-aa4e-0ff411496d36",
+      "result_id": "4f50bf9a-ab85-43cc-9968-4f9eb4a0e924"
+    },
+    {
+      "claim_id": "e6812af7-b082-43b1-bafb-45ee87278400",
+      "result_id": "4f50bf9a-ab85-43cc-9968-4f9eb4a0e924"
+    },
+    {
+      "claim_id": "c7ead3cf-4b1a-454b-9828-400af87c5770",
+      "result_id": "4f50bf9a-ab85-43cc-9968-4f9eb4a0e924"
+    },
+    {
+      "claim_id": "1f8d937a-0f2e-4f2d-acaa-16a5fad293ac",
+      "result_id": "4f50bf9a-ab85-43cc-9968-4f9eb4a0e924"
+    },
+    {
+      "claim_id": "210d444f-34e0-4f61-8fef-5c63392fb20d",
+      "result_id": "4f50bf9a-ab85-43cc-9968-4f9eb4a0e924"
+    },
+    {
+      "claim_id": "500b6b29-e6f7-4bc6-b024-d65a206ea6d1",
+      "result_id": "4f50bf9a-ab85-43cc-9968-4f9eb4a0e924"
+    },
+    {
+      "claim_id": "a022a72f-12a2-4be5-90a4-75ad17d606af",
+      "result_id": "4f50bf9a-ab85-43cc-9968-4f9eb4a0e924"
+    },
+    {
+      "claim_id": "0f01516b-a4f9-4109-bdd9-ec34d19bd95f",
+      "result_id": "4f50bf9a-ab85-43cc-9968-4f9eb4a0e924"
+    },
+    {
+      "claim_id": "130d3ec4-0c03-493f-bdc9-fa8a3cc42968",
+      "result_id": "1d243f3d-296b-48ed-967a-a2267acab2da"
+    },
+    {
+      "claim_id": "c41fafc5-fb14-4da3-88da-7a0477c58c68",
+      "result_id": "1d243f3d-296b-48ed-967a-a2267acab2da"
+    },
+    {
+      "claim_id": "23d2ccf1-5b63-4841-8e9a-0bf1d2abc0ee",
+      "result_id": "1d243f3d-296b-48ed-967a-a2267acab2da"
+    },
+    {
+      "claim_id": "348cb850-53f0-455f-8003-62cff79039ea",
+      "result_id": "1d243f3d-296b-48ed-967a-a2267acab2da"
+    },
+    {
+      "claim_id": "ee1d6a67-9be2-4eb4-9aba-8b5d5f4f2179",
+      "result_id": "4e8ed9dd-2631-4e0c-bd43-71401edfd42c"
+    },
+    {
+      "claim_id": "007dc712-e9f7-4797-93bb-9e2148095e6a",
+      "result_id": "4e8ed9dd-2631-4e0c-bd43-71401edfd42c"
+    },
+    {
+      "claim_id": "bd695552-1cfd-4faa-b2cf-6425f5163d95",
+      "result_id": "4e8ed9dd-2631-4e0c-bd43-71401edfd42c"
+    },
+    {
+      "claim_id": "d4671ab5-a079-4554-8724-1ac6b5d9bef9",
+      "result_id": "4e8ed9dd-2631-4e0c-bd43-71401edfd42c"
+    },
+    {
+      "claim_id": "c7f3ff67-fecf-4e67-ba6b-770fddf032ad",
+      "result_id": "fe609370-c1e6-4e39-b4e4-7c8186f5acb2"
+    },
+    {
+      "claim_id": "293d7c01-2440-4f92-809d-275797ea7ef0",
+      "result_id": "fe609370-c1e6-4e39-b4e4-7c8186f5acb2"
+    }
+  ],
+  "comparisons": []
+}

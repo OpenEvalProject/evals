@@ -1,0 +1,2185 @@
+{
+  "submission": {
+    "id": "0d556728-04e7-49dc-af58-dd46aaca3e9e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:22:12.040144Z",
+    "updated_at": "2025-11-29T21:22:12.040144Z"
+  },
+  "content": [
+    {
+      "id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "submission_id": "0d556728-04e7-49dc-af58-dd46aaca3e9e",
+      "content_type": "manuscript",
+      "content_text": "# A mutation uncouples the tubulin conformational and GTPase cycles, revealing allosteric control of microtubule dynamics\n\n## Authors\n\n- Elisabeth A Geyer<sup>1</sup>\n- Alexander Burns<sup>1</sup>\n- Beth A Lalonde<sup>2</sup>\n- Xuecheng Ye<sup>1</sup>\n- Felipe-Andres Piedra<sup>1</sup>\n- Tim C Huffaker<sup>2</sup>\n- Luke M Rice<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Departments of Biophysics and Biochemistry University of Texas Southwestern Medical Center Dallas United States\n2. Department of Molecular Biology and Genetics Cornell University Ithaca United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMicrotubule dynamic instability depends on the GTPase activity of the polymerizing \u03b1\u03b2-tubulin subunits, which cycle through at least three distinct conformations as they move into and out of microtubules. How this conformational cycle contributes to microtubule growing, shrinking, and switching remains unknown. Here, we report that a buried mutation in \u03b1\u03b2-tubulin yields microtubules with dramatically reduced shrinking rate and catastrophe frequency. The mutation causes these effects by suppressing a conformational change that normally occurs in response to GTP hydrolysis in the lattice, without detectably changing the conformation of unpolymerized \u03b1\u03b2-tubulin. Thus, the mutation weakens the coupling between the conformational and GTPase cycles of \u03b1\u03b2-tubulin. By showing that the mutation predominantly affects post-GTPase conformational and dynamic properties of microtubules, our data reveal that the strength of the allosteric response to GDP in the lattice dictates the frequency of catastrophe and the severity of rapid shrinking.\n\n## Introduction\n\nMicrotubules are dynamic polymers of \u03b1\u03b2-tubulin that undergo GTPase-dependent switching between phases of growing and rapid shrinking (reviewed in Desai and Mitchison, 1997). Microtubule growing and shrinking rates, and switching frequencies, are necessary for proper function, highly regulated by cellular factors (Howard and Hyman, 2003), and targeted by widely used anti-mitotic anticancer drugs (Jordan and Wilson, 2004; Amos, 2011). \u03b1\u03b2-tubulin also undergoes a conformational cycle during polymerization and depolymerization (Mandelkow et al., 1991a; Chr\u00e9tien et al., 1995) Unpolymerized \u03b1\u03b2-tubulin adopts a 'curved' conformation (Ravelli et al., 2004; Rice et al., 2008; Buey et al., 2006) that is not compatible with the 'straight' microtubule lattice (Nogales et al., 1998). In the body of the microtubule, \u03b1\u03b2-tubulin can adopt distinct \u2018expanded\u2019 or \u2018compacted\u2019 straight conformations depending on nucleotide state (Alushin et al., 2014; Hyman et al., 1995). Partially straightened conformations of \u03b1\u03b2-tubulin are thought to occur as polymerization intermediates on the microtubule end.\n\nRecent studies have begun to reveal how microtubule regulatory proteins take advantage of these different conformations. In one well-characterized example, end-binding proteins in the EB1 family have been shown to mark the plus-end cap of microtubules by binding preferentially to the \u2018expanded\u2019, GTP-like conformation of\u00a0\u03b1\u03b2-tubulin that only occurs near the end of the growing microtubule lattice (Maurer et al., 2011; 2012; Zanic et al., 2009; Alushin et al., 2014). Another recent example of selective interactions with specific conformations of \u03b1\u03b2-tubulin comes from work in our laboratory showing that TOG domains from the microtubule polymerase Stu2p bind preferentially to the curved conformation of \u03b1\u03b2-tubulin (Ayaz et al., 2012; 2014), and that this preference of TOG domains for curved \u03b1\u03b2-tubulin is probably what allows the polymerase to localize to the growing tip of the microtubule (Ayaz et al., 2014). These and numerous studies of other regulatory proteins (Desai et al., 1999; Gigant et al., 2000; Peters et al., 2010; Alushin et al., 2010; Bechstedt et al., 2014) contribute to the emerging view that selective binding to distinct conformations of \u03b1\u03b2-tubulin represents a common and important strategy for recognizing and controlling microtubules.\n\nHow the \u03b1\u03b2-tubulin conformational cycle contributes to microtubule dynamics is less understood. Indeed, even though structural rearrangements in \u03b1\u03b2-tubulin have long been known to occur during and after microtubule incorporation (Mandelkow et al., 1991b; Chr\u00e9tien et al., 1995; Hyman et al., 1995), actually showing that these rearrangements contribute to and are required for the dynamic properties of microtubules remains challenging (Rice et al., 2008; Wang and Nogales, 2005; Buey et al., 2006; J\u00e1nosi et al., 2002; Molodtsov et al., 2005). For example, GTP-bound \u03b1\u03b2-tubulin \u2018straightens\u2019 during the formation of longitudinal and lateral lattice contacts (Buey et al., 2006; Rice et al., 2008; Nawrotek et al., 2011), but how (or even if) the energetic cost of these assembly-dependent conformational changes affects polymerization dynamics remains debated. A similar argument can be made about the \u03b1\u03b2-tubulin conformational changes that occur as a consequence of GTP hydrolysis deeper in the microtubule lattice. One reason these questions are still debated is that to date in vitro microtubule dynamics have only been measured for a small number of \u03b1\u03b2-tubulin mutants (Gupta et al., 2002; Dougherty et al., 2001; Sage et al., 1995), and it has not yet been possible to link altered dynamics to a change in the \u03b1\u03b2-tubulin conformational cycle.\n\nIn the present study we sought to discover how multiple \u03b1\u03b2-tubulin conformations affect microtubule dynamics by identifying mutations that selectively perturb some aspect of the conformational cycle. We reasoned that mutating buried residues with different packing environments in the curved and straight conformations might provide a way to perturb the conformational cycle. We focused on helix H7 because it is an element that is positioned differently in the \u2018curved\u2019 (unpolymerized) and \u2018straight\u2019 (polymerized) conformations of \u03b1\u03b2-tubulin (Nogales et al., 1998; Ravelli et al., 2004)(Figure 1A), and it may act as a structural relay connecting the \u2018top\u2019 and \u2018bottom\u2019 of the tubulin subunits (Amos, 2004). The equivalent helix in \u03b1-tubulin was also recently observed to move in response to GTP hydrolysis in the lattice (Alushin et al., 2014). We chose to study the T238A mutation in \u03b2-tubulin because this sidechain resides on helix H7 and is buried in the core of the protein (Figure 1A), and because prior studies (Thomas et al., 1985; Machin et al., 1995) showed that the \u03b2:T238A phenotype was consistent with hyperstable microtubules. The molecular mechanism by which the \u03b2:T238A mutation affects microtubule dynamics is unknown, in part because the polymerization dynamics of \u03b2:T238A \u03b1\u03b2-tubulin have not been studied in vivo or in vitro. Our studies now reveal that the \u03b2:T238A mutation affects microtubule dynamics by dramatically reducing the frequency of catastrophe and the rate of shrinking, and that the mutation affects microtubule structure by attenuating post-GTPase conformational changes in the lattice. The effects of the mutation are reminiscent of the way the microtubule stabilizing drug taxol affects microtubule structure (Alushin et al., 2014). By showing that the \u03b2:T238A mutation weakens the coupling between the conformational and nucleotide cycles, our results demonstrate that catastrophe can occur despite diminished post-GTPase conformational changes in the microtubule lattice, and that the strength of the allosteric response to GDP dictates the rate of microtubule shrinking and the frequency of microtubule catastrophe.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/10113/elife-10113-fig1-v2.jpg)\n\n**Figure 1.:** (A)\u00a0Superposition of polymerized (\u2018straight\u2019, green, PDB 1JFF) and unpolymerized (\u2018curved\u2019, blue, PDB 4FFB) conformations of \u03b2-tubulin. T238 is solvent inaccessible and resides on a helix (H7) that undergoes a piston-like movement between the two conformations. The view of \u03b2-tubulin shown here is as if from the center of the microtubule looking out, with the plus end at the top. (B)\u00a0Time-lapse imaging of live yeast shows that cells expressing T238A\u00a0\u03b1\u03b2-tubulin make longer, less dynamic microtubules than their wild-type (WT) counterparts. N = 13, 18 for WT and T238A microtubules respectively, with t = 35, 72 min total time observed. See also Videos 1,2. Bar = 2 \u00b5m (C)\u00a0Negative stain electron micrographs (magnification: 23,000x) of wild-type (left) and \u03b2:T238A (right) microtubules. Mutant microtubules have normal structure. Bar = 100 nm. (D) In vitro, T238A and wild-type microtubules show similar concentration-dependent growth rates (slopes: 29.6 +/- 1.8 \u00b5m/hr/\u00b5M for wild-type, 25.5 +/- 0.8 \u00b5m/hr/\u00b5M for \u03b2:T238A, the differences between the slopes are not statistically significant; x-intercepts: 0.12 \u00b5M for wild-type, 0.033 \u00b5M for \u03b2:T238A, this difference is statistically significant; significance of differences in regression parameters was evaluated using GraphPad Prism). Representative kymographs are shown above the plots. (N = 12 for all points except 0.2 \u00b5M where N = 20; bars show s.e.m.) (E) T238A microtubules catastrophe less frequently than wild-type (top; N = 99, 115 for wild-type and T238A respectively, bars show s.d.) and show a\u00a0\u223chundredfold slower rate of post-catastrophe shrinking (bottom; N = 16 for wild-type and T238A, bars show s.e.m.).\n\n## Results\n\n### The buried T238A mutation in \u03b2-tubulin hyperstablizes microtubules in vivo and in vitro\n\nThe \u03b2:T238A mutation was previously identified by virtue of drug- and temperature-sensitive phenotypes that were consistent with hyperstable microtubules (Thomas et al., 1985). However, prior studies of this mutant have not directly examined its polymerization dynamics in vivo or in vitro (Machin et al., 1995; Dorn et al., 2005). To obtain insight into how the mutation affects polymerization dynamics in cells, we used time lapse imaging in GFP-Tub1p expressing strains to measure microtubule dynamics of wild-type and \u03b2:T238A-containing yeast. These measurements revealed that \u03b2:T238A-tubulin forms static microtubules (neither growing nor shrinking) that are on average over 50% longer than the dynamic microtubules that form in a strain with wild-type \u03b2-tubulin (Figure 1B and Videos 1,2). Because the mutated site is solvent inaccessible, this striking change in microtubule dynamics cannot be the result of a direct perturbation of a polymerization interface or of an interaction with one or more regulatory proteins.\n\n![Video 1.](https://cdn.elifesciences.org/articles/10113/elife-10113-media1.mp4.jpg)\n\n**Video 1.:** Time-lapse images of Tub1-GFP in TUB2 (\u03b2-tubulin) cells were taken at 15-s intervals; video plays at 4 frames/s. A frame from this video is shown in Figure 1B.\n\n![Video 2.](https://cdn.elifesciences.org/articles/10113/elife-10113-media2.mp4.jpg)\n\n**Video 2.:** Time-lapse images of Tub1-GFP in tub2-150 cells were taken at 15-s intervals; video plays at 4 frames/s. A frame from this video is shown in Figure 1B.\n\nTo determine how the buried\u00a0\u03b2:T238A mutation affected microtubule dynamics in vitro, we purified \u03b2:T238A \u03b1\u03b2-tubulin from an overexpressing strain of yeast (Johnson et al., 2011) and used time-lapse differential interference contrast\u00a0microscopy to measure its polymerization dynamics. We were unable to measure mutant and wild-type microtubule dynamics at equivalent concentrations, because \u03b2:T238A \u03b1\u03b2-tubulin showed abundant spontaneous nucleation at the higher concentrations where we measured wild-type, and wild-type \u03b1\u03b2-tubulin does not elongate measurably at the low concentrations where we were able to measure \u03b2:T238A dynamics without excessive nucleation. Mutant and wild-type microtubules nevertheless show similar concentration-dependent elongation rates: fitting lines to mutant and wild-type data reveals that the x-intercepts of the two datasets (0.12 and 0.033 \u00b5M for wild-type and \u03b2:T238A, respectively) differ by a factor of \u223c3.5 and that the difference in slope (29.6 and 25.5 \u00b5m/hr/\u00b5M for wild-type and \u03b2:T238A, respectively) is not statistically significant (Figure 1D). Because the x-intercept and slope respectively relate to the apparent affinity and association rate constant for elongation, our data indicate that the mutation has little effect on the apparent biochemistry of microtubule elongation. Consistent with this biochemical similarity, negative stain electron microscopy revealed that mutant and wild-type microtubules show similar structure (Figure 1C). In striking contrast to the shared elongation behavior, after catastrophe \u03b2:T238A microtubules shrink roughly hundredfold more slowly than wild-type (1.1 \u00b5m/min for \u03b2:T238A compared to 96 \u00b5m/min for wild-type, Figure 1E, bottom). Thus, the mutation significantly strengthens the lattice contacts that dictate the rate of microtubule shrinking. Finally, \u03b2:T238A microtubules also undergo catastrophe much less frequently than wild-type. The lower catastrophe frequency we observed is especially notable when considering that in these assays the T238A microtubules were growing much slower than wild-type because of the\u00a0\u223cthreefold lower concentration of \u03b1\u03b2-tubulin used for the mutant (Figure 1E, top).\n\n### Mutant-induced changes in polymerization dynamics do not result from defective GTPase activity\n\nThe \u03b2:T238A mutation stimulated spontaneous nucleation and reduced the frequency of catastrophe and the rate of shrinking, all without substantially affecting elongation. It seemed possible that a defective GTPase cycle might explain these observations. We reasoned that if the increased spontaneous nucleation of the \u03b2:T238A mutant resulted from slower/defective GTPase activity, then both mutant and wild-type should nucleate with similar efficiency when GTP hydrolysis cannot occur. We initially attempted to use GMPCPP, the hydrolysis-resistant nucleotide of choice for vertebrate microtubules (Hyman et al., 1992), but GMPCPP did not support elongation of yeast microtubules in our dynamics assays. Yeast microtubules polymerized readily in the presence of GTP\u03b3S, however, indicating that GTP\u03b3S better mimics GTP for yeast microtubules. We observed that even in the presence of GTP\u03b3S, wild-type microtubules show substantially less nucleation than T238A microtubules (Figure 2A,B). Thus, the abundant nucleation from the mutant cannot be ascribed to a defect in GTPase activity. Instead, the mutation must be affecting some other property that limits spontaneous nucleation in wild-type \u03b1\u03b2-tubulin.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/10113/elife-10113-fig2-v2.jpg)\n\n**Figure 2.:** (A) Fluorescent images of crosslinked microtubules from spontaneous nucleation reactions. Even at low concentrations and in the presence of GTP\u03b3S, T238A tubulin shows increased spontaneous nucleation compared to WT. GTP\u03b3S reactions are presented next to each other to facilitate a side-by-side comparison. Scale bar in top left is 5 \u00b5m. (B) Microtubule spindown reactions show that under the same concentration range, in the presence of GTP\u03b3S, T238A tubulin produces a greater proportion of microtubules which sediment into the pellet. Gel images of supernatant and pellet fractions (top). (C) T238A microtubules do not accumulate GTP or GDP.Pi compared to wild-type. Images show TLC analysis of exchangeable nucleotide content of microtubules grown with GTP or GTP\u03b3S. Microtubules were spontaneously assembled using higher concentrations than for the dynamics assays: wild-type microtubules were prepared at 2 \u00b5M with GTP and 1 \u00b5M with GTP\u03b3S. \u03b2:T238A microtubules were prepared at 1 \u00b5M with either nucleotide. (D) Quantification of TLC data, n = 3 and errors shown represent s.d. *indicates one condition where we could not detect any Pi in one of the replicates; instead of using 0 we used the lower of the two other trials.\n\nTo support the idea that the mutation-induced changes in dynamics result from something other than a defect in GTPase activity, we assayed the nucleotide content of wild-type and \u03b2:T238A microtubules. We allowed wild-type and \u03b2:T238A \u03b1\u03b2-tubulin to spontaneously polymerize at 1 or 2 \u00b5M concentration (within the range of concentrations tested in Figure 2A) in the presence of 32P-GTP. We harvested the microtubules by centrifugation, denatured them to release bound nucleotides, and analyzed the nucleotide content at the exchangeable site using thin layer chromatography (TLC) (Figure 2C,D). We probed for a GTPase defect using \u03b1-labeled nucleotide to measure the amounts of GTP and GDP in microtubules, and for a phosphate release defect using \u03b3-labeled nucleotide to measure the amounts of GTP and Pi in microtubules. To avoid possible complications that might arise from the very different catastrophe frequencies and shrinking rates, we initially performed these assays under \u2018catastrophe free\u2019 and slow shrinking conditions by using (unlabeled) GTP\u03b3S to support assembly. These experiments revealed that wild-type and mutant microtubules contain similarly low amounts of GTP (2\u20134% of total exchangeable nucleotide) and Pi (fewer than 3% of exchangeable sites) (Figure 2C,D). When we performed these assays using (unlabeled) GTP to support microtubule assembly, \u03b2:T238A microtubules contained similarly low amounts of GTP and Pi as we observed with GTP\u03b3S but wild-type microtubules appeared to contain a substantially greater amount (\u223c50%) of GTP (Figure 2C,D). Yeast microtubules have previously been reported to contain more GTP than vertebrate microtubules (Dougherty et al., 1998). In control experiments (not shown) we confirmed that vertebrate microtubules contain very little GTP and that individual heterodimers were not pelleting. Because we observed very fast shrinking (Figure 1), little 32P-GTP in microtubules grown with GTP\u03b3S (Figure 2C), and normal plus-end recognition by an EB1 family protein (see below), it seems unlikely that wild-type yeast microtubules contain substantial amounts of GTP. The GTP containing material in our assay might instead reflect oligomers that form more readily for yeast \u03b1\u03b2-tubulin. Whatever the mechanism, these experiments demonstrate that \u03b2:T238A \u03b1\u03b2-tubulin remains competent to hydrolyze GTP, and that the altered nucleation and shrinking behavior cannot be ascribed to an accumulation of GTP or GDP.Pi that might result from a defect in assembly-dependent GTPase activity or phosphate release. Some other, nonenzymatic mechanism must therefore account for the observed changes in polymerization dynamics.\n\n### The buried T238A mutation in \u03b2-tubulin does not detectably \u2018straighten\u2019 unoligomerized \u03b1\u03b2-tubulin\n\nUnoligomerized GTP-bound \u03b1\u03b2-tubulin adopts a curved conformation that is not compatible with the straight microtubule lattice (Nawrotek et al., 2011; Pecqueur et al., 2012; Ayaz et al., 2012; 2014). It seemed possible that the \u03b2:T238A mutation might stabilize microtubules by shifting the conformational preference of unpolymerized \u03b1\u03b2-tubulin to favor a straight(er) conformation that is more compatible with the microtubule lattice. We used quantitative TOG binding assays (Ayaz et al., 2014) to determine if the \u03b2:T238A mutation changed the \u2018curvature\u2019 of unpolymerized \u03b1\u03b2-tubulin. The rationale for this approach is based on the fact that TOG domains bind tightly to curved \u03b1\u03b2-tubulin but very weakly to straight (Figure 3A) (Ayaz et al., 2012; 2014 ). Accordingly, \u03b2:T238A \u03b1\u03b2-tubulin should bind less tightly to a TOG domain if the \u03b2:T238A mutation appreciably changes the conformation of \u03b1\u03b2-tubulin, for example by straightening it. TOG1 and TOG2, two different TOG domains from the yeast microtubule regulatory factor Stu2p (Wang and Huffaker, 1997), show very similar affinity (within a factor of two) for unpolymerized T238A \u03b1\u03b2-tubulin as they do for wild-type (Figure 3B). In energetic terms, this modest difference in affinity is roughly equivalent to one hydrogen bond. While we cannot state that the mutant and wild-type \u03b1\u03b2-tubulin adopt identical conformations, their very similar TOG binding properties indicate that any differences in conformation must be small. Thus, we conclude that the \u03b2:T238A mutation does not significantly change the conformation of unpolymerized \u03b1\u03b2-tubulin.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/10113/elife-10113-fig3-v2.jpg)\n\n**Figure 3.:** (A)\u00a0Cartoon schematics illustrating that TOG domains (blue) bind tightly to curved \u03b1\u03b2-tubulin (pink and green; left) but weakly to straight \u03b1\u03b2-tubulin (right). (B) Isotherms for individual Stu2 TOG domains binding to T238A \u03b1\u03b2-tubulin. Both TOG domains bind with comparable affinity to T238A and WT tubulin. 1\u00a0\u03a3\u03c3\u00a0confidence intervals for fitted affinities are provided in parentheses.\n\n### The \u03b2:T238A mutation suppresses GTPase-dependent conformational changes in the microtubule lattice\n\nRecent cryo-EM studies of microtubule structure provided atomic models for distinct microtubule lattices containing GTP, GTP\u03b3S, or GDP, with GTP favoring an \u2018expanded\u2019 form and GTP\u03b3S and GDP favoring a \u2018compacted\u2019 form (Alushin et al., 2014; Zhang et al., 2015). Plus-end tracking proteins in the EB1 family have been shown to discriminate between these GTP-like and GDP-like lattices (Maurer et al., 2011; 2012; 2014; Zanic et al., 2009). We used Bim1p (Schwartz et al., 1997), the yeast EB1 protein, to investigate if the \u03b2:T238A mutation affected \u03b1\u03b2-tubulin conformation in the lattice.\n\nControl experiments revealed that a Bim1-GFP fusion protein tracked the growing end of yeast microtubules, and that Bim1-GFP coated the entire length of GTP\u03b3S-containing yeast microtubules with cap-like intensity (Figure 4). We therefore infer that like other EB1 proteins on vertebrate microtubules (Zanic et al., 2009; Maurer et al., 2011), Bim1 discriminates between GTP and GDP forms of the yeast microtubule lattice (presumably, expanded and compacted). In marked contrast to its behavior on wild-type microtubules, at 50 nM concentration Bim1-GFP coated the entire length of \u2018dynamic\u2019 \u03b2:T238A microtubules with cap-like intensity. At lower concentrations (5 nM), the Bim1-GFP coat on the body of \u03b2:T238A microtubules is slightly weaker than at the cap but still substantially more intense than on wild-type (Figure 4B). This stronger coating reflects tighter Bim1 binding to mutant microtubules, and it occurs in spite of the fact that the mutant microtubules contain very little GTP or GDP.Pi in the exchangeable site (Figure 2). Thus, the \u03b2:T238A mutation attenuates the conformational response to GTP hydrolysis in the microtubule lattice. The structural consequence of the mutation resembles the effect of taxol binding, which also promotes an expanded conformation of \u03b1\u03b2-tubulin in a GDP lattice (Alushin et al., 2014). Simply put, the mutation appears to have substantially uncoupled the conformational cycle from the nucleotide cycle in the lattice, allowing \u03b1\u03b2-tubulin to retain GTP-lattice-like character even in a GDP lattice.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/10113/elife-10113-fig4-v2.jpg)\n\n**Figure 4.:** (A)\u00a0Cartoon schematics illustrating the basis of the assay: EB1 proteins (blue outlined ovals) bind tightly to the GTP-lattice conformation of \u03b1\u03b2-tubulin (left) but weakly to the GDP-like conformation (right). (B) Images of the distribution of Bim1-GFP (an EB1 family protein) on wild-type (left and center) or mutant microtubules (right). 4 microtubules are shown for each condition, and Bim1-GFP was present at 50 nM and 5 nM concentration for all microtubules. Plots represent average Bim1-GFP intensity on n = 9 microtubules for each condition. Error bars represent s.e.m. Cartoons illustrate the likely lattice conformation inferred from the Bim1-GFP binding. \u03b2:T238A microtubules appear GTP-like even though they contain GDP. Scale bars: 1 \u03bcm.\n\n### The\u00a0\u03b2:T238A mutation affects \u03b1\u03b2-tubulin curvature on the microtubule end\n\nThe Bim1 experiments described above do not report on the conformation of \u03b1\u03b2-tubulin at the very microtubule end because EB1 proteins do not bind there (Maurer et al., 2012; 2014). After fortuitously discovering that isolated TOG domains from the microtubule polymerase Stu2p stimulate the depolymerization of stabilized microtubules in a dose-dependent way, it seemed that TOG domains might provide an alternative way to probe the conformation of \u03b1\u03b2-tubulin on the microtubule end. In light of the fact these TOG domains bind preferentially to the curved conformation of \u03b1\u03b2-tubulin, we reasoned that the underlying cause of this induced depolymerization was TOG-mediated stabilization of the curved and faster dissociating conformation of \u03b1\u03b2-tubulin on the microtubule end (Figure 5). According to this view, TOG-induced depolymerization thus provides an assay that probes the linkage (or lack thereof) between changes in \u03b1\u03b2-tubulin conformation on the polymer end and microtubule shrinking rate.\n\nUsing drug-stabilized microtubules as a substrate, the rate of TOG-induced depolymerization increases linearly over at least a 20-fold range of TOG concentration. This linear concentration-dependence is consistent with a collisional mechanism in which the rate-limiting step is a TOG domain arriving at the microtubule end. It is not consistent with a mechanism in which the rate-limiting step is some kind of slow \u03b1\u03b2-tubulin conformational change. Drug-stabilized \u03b2:T238A microtubules depolymerize substantially slower than wild-type at the same concentration of TOG domain (Figure 5). Only at higher TOG concentrations do \u03b2:T238A microtubules show appreciable dose-dependent TOG-induced depolymerization (Figure 5). Similar results were obtained using MTs stabilized with GTP\u03b3S (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/10113/elife-10113-fig5-v2.jpg)\n\n**Figure 5.:** (A)\u00a0A time series of images of stabilized fluorescent microtubules show that under the same concentration of TOG1, T238A microtubules depolymerize substantially slower than WT microtubules. Scale bars: 1 \u00b5m. (B) Quantification of the dose-dependence of the rate of TOG-induced depolymerization. Inset: a plot showing that under higher TOG1 concentrations, T238A microtubules also undergo induced depolymerization. We observed similar rates of TOG-induced depolymerization using DIC instead of fluorescence to monitor microtubule length (black triangles), as well as using GTP\u03b3S instead of epothilone as a stabilizing reagent (orange diamonds, purple squares). Additional control experiments demonstrate that the TOG-induced depolymerization is greatly reduced when a weakly-binding TOG1 mutant (R200A) is used (green triangles). N = 30 for fluorescence measurements of wild-type TOG1-induced depolymerization of wild-type or \u03b2:T238A microtubules, N = 20 for the rest. Error bars represent s.e.m. (C)\u00a0Cartoon model illustrating the mechanism of TOG-induced depolymerization, resulting from TOG-stabilization of tubulin subunits sampling curved conformation at the end of the microtubule. T238A microtubules depolymerize slower due to a decrease in tubulin subunits sampling the curved conformation once incorporated into the polymer.\n\nTOG domains bind with comparable affinity to curved wild-type and mutant \u03b1\u03b2-tubulin, so differences in TOG affinity cannot explain the markedly slower TOG-induced shrinking of \u03b2:T238A microtubules. Differences in the amount of curved \u03b1\u03b2-tubulin at wild-type and mutant microtubule ends could explain the observed differences in TOG-induced shrinking. In principle there might be other mechanisms that strengthen association without affecting the propensity to be curved on the microtubule end. However, while such \u2018curvature invariant\u2019 mechanisms in \u03b1\u03b2-tubulin might explain the slow post-catastrophe shrinking of the mutant, the conformation-selective nature of TOG:tubulin interactions means that this alternative view is not easily reconciled with the observed differences in TOG-induced depolymerization. Thus, a mutant-induced change in the propensity to become/remain straight on the microtubule end is the simplest way to explain both the slower post-catastrophe shrinking and weaker TOG-induced depolymerization for the mutant. That the conformation of end-bound \u03b1\u03b2-tubulins is affected by the \u03b2:T238A mutation is also consistent with the Bim1 coating, which demonstrated that the mutation affected \u03b1\u03b2-tubulin conformation elsewhere in the lattice.\n\n### What is the structural origin of the \u03b2:T238A effects?\n\nTo gain insight into the local interactions responsible for the \u03b2:T238A effects on microtubule dynamics, we measured benomyl sensitivity/resistance and in vivo microtubule dynamics for serine and valine substitutions at the same position (Figure 6). Yeast expressing \u03b2:T238S \u03b1\u03b2-tubulin are comparably benomyl resistant to\u00a0\u03b2:T238A, but significantly less benomyl dependent (Figure 6A). By contrast, yeast expressing \u03b2:T238V \u03b1\u03b2-tubulin are substantially less resistant to benomyl, and show no benomyl dependence (Figure 6A). Measurements of microtubule dynamics in vivo are consistent with the benomyl phenotypes: \u03b2:T238S microtubules are \u03b2:T238A-like (static) whereas \u03b2:T238V microtubules are more wild-type-like (dynamic but with somewhat slower shrinking) (Figure 6B). The trend with sidechain size and the strong effect obtained from the Thr to Ser mutation at position 238 suggest that some form of \u2018steric overpacking\u2019, not hydrogen bonding, contributes to destabilize the straight, expanded conformation of \u03b1\u03b2-tubulin in microtubules containing GDP.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/10113/elife-10113-fig6-v2.jpg)\n\n**Figure 6.:** (A)\u00a0Yeast with different substitutions for T238 (for each mutant, strains with and without GFP-Tub1p are shown) show intermediate degrees of benomyl resistance/dependence. The volume of the packing defect may be related to the magnitude of the resulting phenotype: T238S has a phenotype closer to T238A whereas T238V has a phenotype closer to wild type. (B) In vivo microtubule dynamics of yeast containing T238S and T238V \u03b1\u03b2-tubulin. N = 24, 14 for T238S and T238V microtubules respectively, with t = 120, 43 min total time observed. (C)\u00a0The buried \u03b2:C354A mutation immediately proximal to T238 (left) has also been shown to give slowly shrinking microtubules, and also shows an expanded lattice (right). The view of the structure is as if from the center of the microtubule looking out, with the plus end at the top. Scale bar: 1 \u00b5m.\n\nReducing the size of \u03b2:C354, a buried sidechain that packs against \u03b2:T238 (Figure 6C), has also been shown to stabilize microtubules (Gupta et al., 2001; 2002). Indeed, \u03b2:C354A or \u03b2:C354S substitutions dramatically reduced the rate of microtubule shrinking and the frequency of catastrophe (Gupta et al., 2002). If these volume-reducing mutations also stabilize the expanded conformation of \u03b1\u03b2-tubulin in a GDP lattice, it would provide complementary support for our overpacking-based rationale for the \u03b2:T238(A, S, V) effects. We purified \u03b2:C354A \u03b1\u03b2-tubulin and used Bim1-GFP to probe its conformation in microtubules. \u03b2:C354A microtubules showed Bim1-GFP coating similar to what we observed for \u03b2:T238A, indicating the two mutations stabilize microtubules through a common conformational mechanism (Figure 6C). Positions 238 and 354 in \u03b2-tubulin show strong evolutionarily conservation (yeast numbering; \u03b2:238 is 65% T and 34% C whereas \u03b2:354 is 99% C), consistent with an important functional role for these residues. Together, the \u03b2:T238A and \u03b2:C354A results suggest that changes in packing volume near helix H7 can dictate the dynamic properties of microtubules by tuning an allosteric response to GDP.\n\n## Discussion\n\nWe demonstrate that relatively conservative buried mutations in \u03b2-tubulin can diminish the conformational response to GDP in the lattice, and that this altered structural response yields dramatic effects on microtubule dynamics. By discovering that mutations can uncouple the conformational and nucleotide cycles of \u03b1\u03b2-tubulin, our findings provide new insights into ways that the \u03b1\u03b2-tubulin conformational cycle dictates microtubule polymerization dynamics (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/10113/elife-10113-fig7-v2.jpg)\n\n**Figure 7.:** (A) Unoligomerized wild-type and \u03b2:T238A \u03b1\u03b2-tubulin both adopt the curved conformation. That the straight conformation is strained (flare marks) even with the mutation-induced reduction in packing volume (cartooned by larger and smaller red circles for wild-type and \u03b2:T238A, respectively) suggests that extrinsic factors like interactions with the lattice control straightening. (B) Compared to wild-type, \u03b2:T238A \u03b1\u03b2-tubulin is better able to populate a straight conformation on the end of GDP containing microtubules. \u2018D\u2019 indicates GDP underneath the bolded terminal subunit, compaction is represented as in Figure 4, and the white arrow cartoons trans-acting nucleotide (see text). The increased ability of the mutant to be straight could result from an altered response to GDP on the longitudinal interface, from more favorable interactions with the expanded lattice, or from a combination of both. (C) The schematic phase diagram illustrates that the mutation-induced changes to the \u03b1\u03b2-tubulin conformational cycle decrease the threshold concentrations for appreciable elongation against catastrophe (line 1) and for spontaneous nucleation (line 2), and also narrows the gap between them. The normal \u03b1\u03b2-tubulin conformational cycle contributes to microtubule dynamics and makes them more amenable to regulation.\n\nOur experiments using the EB1 family protein Bim1 showed that in the lattice a major effect of the \u03b2:T238A mutation is to substantially suppress conformational changes that normally occur as a consequence of GTPase activity (Hyman et al., 1995; Alushin et al., 2014; Zhang et al., 2015). The different responses of yeast and vertebrate microtubules to GMPCPP, and the lack of high-resolution structures for wild-type or mutant yeast microtubules, make it difficult to know the specific conformations involved and how they relate to the nucleotide cycle. However, the stronger binding of Bim1 to GDP-containing \u03b2:T238A microtubules indicates that the mutant microtubule lattice retains more GTP-like character than does wild-type. This observation about \u03b1\u03b2-tubulin in the body of the microtubule cannot by itself explain the slow shrinking, however, because the rate of shrinking is determined by the properties of incompletely surrounded terminal subunits, on which EB1 does not report. Indeed, understanding how different lattice structures relate to dynamic properties of microtubules remains a significant challenge. Our experiments with TOG domains indirectly probed the conformation of terminal subunits and showed that the \u03b2:T238A mutation reduces the propensity of terminal \u03b1\u03b2-tubulins to be curved. Thus, the slow shrinking and lower frequency of catastrophe in the mutant most likely result from the attenuated allosteric response to GDP; this in turn results in a straighter and more strongly associated GTP-like conformation on the microtubule end, despite having GDP at the longitudinal interface (Figure 7B).\n\nIt is remarkable that the majority of the mutation-induced effects are confined to post-GTPase conformational changes in the lattice. Not observing significant effects on elongation is somewhat surprising, because it had been anticipated that the conformational changes required to enter the lattice would contribute to polymerization dynamics by opposing incorporation into the lattice. The lack of substantial change in the observed concentration-dependence of elongation rates could indicate that the \u03b2:T238A mutations do not affect the propensity for \u03b1\u03b2-tubulin to \u2018straighten\u2019 on a GTP lattice. However, this is not consistent with increased spontaneous nucleation of \u03b2:T238A \u03b1\u03b2-tubulin in the presence of GTP\u03b3S, which indicated that the mutation did affect conformational transitions that occur in/on a GTP lattice. It could be that we did not observe substantial effects on elongation because the energetics of curved to straight transitions on the microtubule end are not rate-contributing for elongation, perhaps because these transitions occur subsequent to end binding.\n\nThe significant mutant-induced structural changes in the lattice were not accompanied by equivalent changes in the conformation of unoligomerized \u03b1\u03b2-tubulin. The differential response to the mutation inside and outside of microtubules (Figure 7A,B) is consistent with the view that the curved conformation represents the \u2018ground state\u2019 of \u03b1\u03b2-tubulin independent of nucleotide state (Rice et al., 2008; Buey et al., 2006; Nawrotek et al., 2011; Pecqueur et al., 2012; Ayaz et al., 2012), that the nucleotide acts across the longitudinal interface (Rice et al., 2008; Nawrotek et al., 2011), and that nucleotide-dependent interactions with the microtubule lattice are what drive\u00a0\u03b1\u03b2-tubulin conformational transitions (Rice et al., 2008; Buey et al., 2006; Nawrotek et al., 2011). Indeed, the changes we observed can largely be explained by an impaired allosteric response to GDP in the lattice. It will be interesting to discover in future work if other mutations in \u03b2-tubulin can straighten unpolymerized \u03b1\u03b2-tubulin or modulate the allosteric response(s) to nucleotide in the lattice, and to determine if mutations in \u03b1-tubulin can yield similar effects.\n\nIn summary, we showed that buried mutations of or near \u03b2:T238 alter the allosteric response to GDP in the microtubule lattice, with dramatic consequences for catastrophe frequency and shrinking rate. By describing microtubules with identical interface composition that nevertheless undergo strikingly different polymerization dynamics, our data demonstrate that allostery in the lattice dictates functionally important aspects of microtubule polymerization dynamics (Figure 7C). Based on the central role of allostery in controlling the frequency of catastrophe and the rate of shrinking, we speculate that cooperative conformational linkage in the lattice amplifies the individual response to nucleotide. Together, the allosteric response to GDP and the intrinsic bias of \u03b1\u03b2-tubulin toward the curved conformation elevate and separate the threshold concentrations for persistent elongation and for spontaneous nucleation (Figure 7C), and underlie the fast shrinking rate that makes catastrophe more decisive. These allosteric contributions to microtubule dynamics make microtubules more amenable to regulation by cellular factors that enhance elongation, trigger catastrophe, and promote nucleation.\n\n## Materials and methods\n\n### Protein expression and purification\n\nPlasmids to express TOG1, TOG2 and wild-type yeast \u03b1\u03b2-tubulin were previously described (Johnson et al., 2011; Ayaz et al., 2012; 2014). A Bim1-GFP construct, in pHAT vector containing C-terminal EGFP-tag followed by a Strep-tag II, was a gift from Dr. Gary Brouhard. A plasmid to express the T238A mutation of Tub2p (yeast \u03b2-tubulin) was made by QuikChange (Stratagene) mutagenesis, using an expression plasmid for wild-type Tub2 as template and with primers designed according to the manufacturer\u2019s instructions. A C-terminal FlAsH (Griffin et al., 2000) sequence was added to a Tub1 construct using polymerase chain reaction with primers designed to add the sequence WDCCPGCCK (Griffin et al., 2000). The integrity of all expression constructs was confirmed by DNA sequencing.\n\nWild-type or mutant yeast\u00a0\u03b1\u03b2-tubulin was purified from inducibly overexpressing strains of S. cerevisiae using Ni-affinity and ion exchange chromatography (Johnson et al., 2011; Ayaz et al., 2012; 2014) with the exception that T238A and wild-type FlAsH mutants were eluted from the Ni-affinity column with 200 mM NaCl. Prior to ion exchange chromatography, T238A Ni elution fractions were treated with Universal Nuclease (Pierce) at RT for 1 hr. Tubulin samples were stored in storage buffer (10 mM PIPES pH 6.9, 1 mM MgCl2, 1 mM EGTA) containing 20 or 50 \u00b5M GTP depending on the application. The TOG1(1-317) and TOG2(318-560) were expressed in E. coli with C-terminal His6 tags and purified using Ni-affinity, gel filtration (TOG1) and ion exchange chromatography (TOG2) (Ayaz et al., 2012; 2014). TOG domains were stored in RB100 (25 mM Tris pH 7.5, 100 mM NaCl, 1 mM MgCl2, 1 mM EGTA). Expression of Bim1-GFP was induced in the BL21(DE3) strain of E. coli with 0.5 mM IPTG for 15 hrs at 16C. Single pellets were resuspended in 50 mM Na2HPO4, 300 mM NaCl, 40 mM imidazole and sonicated for 30 min in the presence of PMSF. Lysates were clarified by centrifugation. Cleared lysate was loaded onto a His60 Superflow Column (Clontech) and the final sample was eluted in 200 mM imidazole. Elution fractions were loaded onto a 3 mL Strep-Tactin Superflow column (IBA, Germany) and eluted in RB100 with 5 mM desthiobiotin.\n\n### Yeast strains\n\nFor expression:\n\nJEL1 MAT\u03b1 leu2 trp1 ura3\u221252 prb1\u22121122 pep4\u22123 \u0394his3::PGAL10-GAL4\n\nFor analysis of growth phenotypes:\n\nCUY 2172 MATa TUB2::URA3 ade2-101 his3-\u2206200 leu2-1 lys2-801 ura3-52\n\nCUY 2179 MATa tub2-T238A::URA3 ade2-101 his3-\u2206200 leu2-1 lys2-801 ura3-52\n\nCUY 2198 MATa tub2-T238S::URA3 ade2-101 his3-\u2206200 leu2-1 lys2-801 ura3-52\n\nCUY 2200 MATa tub2-T238V::URA3 ade2-101 his3-\u2206200 leu2-1 lys2-801 ura3-52\n\nFor microtubule imaging:\n\nCUY 2265 MATa TUB2::URA3 GFP-TUB1::LEU2::TUB1 ade2-101 his3-\u2206200 leu2-1 lys2-801 ura3-52\n\nCUY 2238 MATa tub2-T238A::URA3 GFP-TUB1::LEU2::TUB1 ade2-101 his3-\u2206200 leu2-1 lys2-801 ura3-52\n\nCUY 2208 MATa tub2-T238S::URA3 GFP-TUB1::LEU2::TUB1 ade2-101 his3-\u2206200 leu2-1 lys2-801 ura3-52\n\nCUY 2209 MATa tub2-T238V::URA3 GFP-TUB1::LEU2::TUB1 ade2-101 his3-\u2206200 leu2-1 lys2-801 ura3-52\n\n### In vivo experiments\n\ntub2 alleles were integrated into yeast as described previously (Reijo et al., 1994) in vivo imaging of microtubule dynamics was performed as described previously (Huang and Huffaker, 2006). Note that introduction of GFP-TUB1 into strains containing the tub2-T238A mutation lessens their dependence on benomyl for growth (Figure 6) and allowed us to image these cells in the absence of benomyl.\n\n### Time-lapse measurements of microtubule dynamics\n\nFlow chambers were prepared as described previously (Gell et al., 2010), with the exception that sea urchin axonemes (Waterman-Storer, 2001) were used to template yeast MT growth. Chambers were rinsed with BRB80 (80 mM PIPES pH 6.9, 1 mM MgCl2, 1 mM EGTA), followed by 10 min incubation with sea urchin axonemes. Chambers were then blocked with 1% F-127 Pluronic in BRB80 for 5 min, and washed with 1X PEM (100 mM PIPES pH 6.9, 1 mM EGTA, 1 mM MgSO4) containing 1 mM GTP. Reaction chambers were sealed with VALAP after addition of \u03b1\u03b2-tubulin. Wild type or mutant yeast \u03b1\u03b2-tubulin (in storage buffer containing 50 \u00b5M GTP) was taken from -80\u02daC, rapidly thawed, and passed through a 0.1 \u00b5m centrifugal filter at 4\u02daC to remove aggregates. The concentration of \u03b1\u03b2-tubulin was measured by UV absorbance using an extinction coefficient of 115000 M-1cm-1. Protein was kept on wet ice for no more than 30 min before measuring MT dynamics. MT dynamics were imaged by differential interference contrast microscopy (DIC) using an Olympus IX81 microscope with a Plan Apo N 60x/1.42 NA objective lens and DIC prisms. Illumination at 550 nm was obtained by inserting a bandpass filter of 550/100 nm (Olympus) in the light path. Temperature was maintained at 30\u02daC using a WeatherStation temperature controller with enclosure fit to the microscope\u2019s body. Micro-Manager 1.4.16 (Edelstein et al., 2010) was used to control the microscope and a Hamamatsu ORCA-Flash2.8 CMOS camera used to record the reactions. MT dynamics were recorded by taking an image every 500 ms for 1 to 2 hrs. At the end of each movie, a set of 100 out-of-focus background images was taken for background subtraction (see below). To improve signal to noise, batches of 10 raw images were averaged using ImageJ (Schneider et al., 2012) and intensity normalized before background subtraction. MT length was measured manually using a PointPicker plugin for ImageJ. Rates of MT elongation and catastrophe frequencies were determined as described previously (Walker et al., 1988).\n\n### Electron microscopy\n\nTo prepare microtubules for electron microscopy, samples of wild-type (3-\u20134 \u00b5M) or \u03b2:T238A\u00a0\u03b1\u03b2-tubulin (2 \u00b5M) were prepared in 100 mM PIPES pH 6.9, 10% glycerol, 2 mM MgSO4, 0.5 mM EGTA, 1 mM GTP and incubated at 30 \u02daC for 1 hr. 5 \u00b5l of the assembly reactions were spotted onto freshly glow-discharged 400 mesh grids with a carbon coated formvar support (Ted Pella), incubated for 30 s, rinsed with water, and stained with 2% aqueous uranyl acetate. Negatively stained grids were imaged at 23,000 x magnification using a Tecnai G2 Spirit electron microscope equipped with a 2Kx2K CCD camera (Gatan).\n\n### Assays for microtubule nucleation\n\nMicrotubule sedimentation assays were performed using a range of wild-type or mutant yeast \u03b1\u03b2-tubulin concentrations (Figure 2B, 0.25 \u2013 4 \u03bcM) in assembly buffer (100 mM PIPES pH 6.9, 10% glycerol, 2 mM MgSO4, 0.5 mM EGTA) containing the indicated nucleotide. Samples were polymerized for 90 min at 30\u02daC. For SDS-PAGE analysis, microtubules were pelleted by centrifugation at 60,000 rpm (\u223c150000 x g) at 30\u02da\u00b0C for 30 min in a pre-warmed TLA-100 rotor (Beckman-Coulter), supernatant was carefully removed, and the pellet was re-suspended in an equal volume of assembly buffer such that the pellet and supernatant fractions were of equal volume. To image the products of the nucleation reactions, the reactions were cross-linked by diluting 10-fold into assembly buffer containing 1% glutaraldehyde. Cross-linking was quenched after 3 min by 5-fold dilution into assembly buffer containing 20 mM Tris pH 6.8. 150 \u03bcL of the quenched, cross-linked reactions were applied to the top of a glycerol cushion (20% glycerol in BRB80) and spun through the cushion onto poly-L-lysine coated coverslips. Coverslips were washed with BRB80, fixed with methanol and stained using FITC-DM1\u03b1 (Sigma-Aldrich) for imaging by epifluorescence, as described previously (Ayaz et al., 2012).\n\n### Determining nucleotide content\n\nWild type (2 or 1 \u00b5M respectively for GTP or GTP\u03b3S) or \u03b2:T238A tubulin (1 \u00b5M for either nucleotide) was mixed with 100 \u00b5M GTP or GTP\u03b3S (containing 33 nM [\u03b1-32P or \u03b3-32P]-GTP) in assembly buffer (see above) on ice. Microtubules were assembled and harvested by centrifugation at 80,000 rpm (\u223c268000 x g) at 30\u02daC for 10 min in a pre-warmed TLA-120 rotor (Beckman-Coulter). Supernatant was carefully removed, and the pellets were gently washed 4 times with pre-warmed assembly buffer, and then resuspended with 6 M guanidine to denature the protein and release bound nucleotide. After 10-fold dilution into water, samples were loaded onto a Cellulose PEI TLC plate (Selecto Scientific) and TLC was performed, first with water followed by buffer containing 0.75 M Tris, 0.4 M LiCl, and 0.45 M HCl. The TLC plate was exposed to X-ray film after air drying. Radiolabelled mixtures of GTP/GDP and GTP/Pi were used as markers.\n\n### Analytical ultracentrifugation\n\nSamples for analytical ultracentrifugation (TOG1, TOG2, yeast \u03b1\u03b2-tubulin, and mutant T238A polymerization-competent yeast \u03b1\u03b2-tubulin) were dialyzed into final buffer conditions of RB100 (25 mM Tris pH 7.5, 1 mM MgCl2, 1 mM EGTA, 100 mM NaCl) containing 20 \u00b5M GTP. The samples shown in Figure 3 contain 0.15 \u00b5M T238A yeast \u03b1\u03b2-tubulin and 0.015 \u00b5M, 0.03 \u00b5M, 0.15 \u00b5M, 0.3 \u00b5M, 0.6 \u00b5M, 1.2 \u00b5M, 5 \u00b5M TOG1 or 0.015 \u00b5M, 0.025 \u00b5M, 0.05 \u00b5M, 0.1 \u00b5M, 0.2 \u00b5M, 0.4 \u00b5M, 0.8 \u00b5M, 1.6 \u00b5M, and 5 \u00b5M TOG2. Samples were mixed and incubated at 4\u02daC for at least one hr prior to the experiment. All analytical ultracentrifugation experiments were carried out in an Optima XL-I centrifuge using an An50-Ti rotor (Beckman-Coulter). Approximately 390 \u00b5L of each sample were placed in charcoal-filled, dual-sector Epon centerpieces. Sedimentation (rotor speed: 50,000 rpm) was monitored using absorbance at 229 nm and centrifugation was conducted at 20\u02da\u00b0C after the centrifugation rotor and cells had equilibrated at that temperature for at least 2.5 hrs. Protein partial-specific volumes, buffer viscosities, and buffer densities were calculated using SEDNTERP (Laue et al., 1992). Data were analyzed using SEDFIT and SEDPHAT (available at http://www.analyticalultracentrifugation.com) (Schuck, 2000; Schuck et al., 2002).\n\n### Microtubule depolymerization fluorescence assays\n\nWild-type and mutant yeast \u03b1\u03b2-tubulin were labeled with 6-\u201310 \u00b5M ReAsH in DMSO (Life Technologies) and 1 mM TCEP, in tubulin storage buffer (see above) for 90 min at RT. To remove excess unbound dye, samples were exchanged into assembly buffer (100 mM PIPES pH 6.9, 10% glycerol, 2 mM MgSO4, 0.5 mM EGTA) with 2 mL, 7K MWCO Zeba spin desalting columns (Thermo Scientific). Labeled wild-type and mutant yeast \u03b1\u03b2-tubulin were polymerized in the presence of 3\u20135 \u00b5M epothilone-B in assembly buffer (see above) with 1 mM GTP or in the presence of 500 \u00b5M GTP\u03b3S in assembly buffer (see above). The mixture was incubated for 30 min at 30 \u02da\u00b0C.\n\nFlow chambers were prepared as described above. His-Tag Antibody (1:200, Gentech) was incubated in the chamber for 10 min, followed by incubation with 1% Pluronic F-127 in BRB80 for 5 min, followed by a wash with BRB80. Pre-formed, epothilone- or GTP\u03b3S-stabilized wild-type or T238A yeast MTs were then introduced into the chamber and allowed to incubate for 10 min, followed by a wash with BRB80 to remove unbound MTs. Solutions containing a range of TOG1 (0.1-\u201310 \u00b5M) or TOG1(R200A) (250, 750 nM) concentrations (Figure 5B) in imaging buffer (BRB80 + 200 nM epothilone + 0.1 mg/mL BSA + antifade reagents (glucose, glucose oxidase, catalase), without the addition of \u03b2-mercaptoethanol [Gell et al., 2010]) were introduced into the chamber immediately prior to data collection. To ensure that the TOG-induced depolymerization was not an artifact of fluorescence imaging, unlabeled wild-type microtubule were assembled as described above but without ReAsH labeling and then imaged with two concentrations of TOG1 using DIC microscopy (black points in Figure 5B). MT depolymerization reactions with fluorescent microtubules were imaged by epifluoresence microscopy using an Olympus IX81 microscope with a Plan Apo N 60x/1.42 NA objective lens and Hamamatsu ORCA-Flash2.8 CMOS camera, a mercury short arc lamp, and a Texas Red filter cube (Olympus). Reactions were temperature controlled and the microscope was controlled as described above. Images of MT shrinking were recorded every 60 s for about 10 min. MT depolymerization reactions with non-fluorescent wild-type microtubules were imaged using differential interference microscopy as described above. MT length was measured manually using ImageJ (Schneider et al., 2012). Average lengths of MT\u2019s were taken over the time course of the movie and were used to determine rate of depolymerization over an hour time span.\n\n### Dynamic assays with Bim1-GFP\n\nPreparation of flow chambers using sea urchin axonemes was followed as described above. Samples of wild-type, \u03b2:T238A, or C354A \u03b1\u03b2-tubulin with 1 mM GTP or GTP\u03b3S were prepared and incubated in flow-chambers for 30\u2013180 min and observed under DIC to evaluate presence of microtubule growth. After a given time, solutions containing desired tubulin sample and nucleotide of interest, along with 5 or 50 nM Bim1-GFP with imaging buffer described above, were flowed into the chamber. Interactions of Bim1-GFP with MTs were imaged by total internal reflection fluorescence microscopy using an Olympus IX81 microscope with a TIRF ApoN 60x/1.49 objective lens, a 491 nm 50 mW solid-state laser and Hamamatsu ORCA-Flash2.8 CMOS camera (Olympus). Reactions were temperature controlled at 30\u00b0C and the microscope was controlled as described above. Axonemes were tracked under DIC and TIRF conditions. Images of MTs were taken over several frames from 15\u201330 min. Bim1-GFP fluorescence intensity along microtubules and extending beyond their growing ends was obtained using the PlotProfile function in ImageJ (Schneider et al., 2012). These linescans were manually aligned to superimpose the sharp change in intensity at the very microtubule end, and aligned intensity values were averaged.\n\n### Analysis of sequence conservation\n\nTo collect a large number of \u03b1- and \u03b2-tubulin sequences, we performed psiblast (Altschul et al., 1997) (non-redundant (nr) database, 3 iterations) on the amino acid sequences of Tub1p and Tub2p from S. cerevisiae. The top 1000 sequences from both searches were aligned using Clustal Omega (Sievers et al., 2011) and manually pruned in Jalview (Waterhouse et al., 2009) to eliminate sequences with large insertions or deletions.\n",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "9f5cc3f4-8f9a-4438-a715-045ba1f80167",
+      "submission_id": "0d556728-04e7-49dc-af58-dd46aaca3e9e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Thomas Surrey, LRI , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.10113.016](https://doi.org/10.7554/eLife.10113.016)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"A mutation uncouples the tubulin conformational and GTPase cycles, revealing allosteric control of microtubule dynamics\" for peer review at eLife. Your submission has been favorably evaluated by Vivek Malhotra (Senior editor), a guest Reviewing editor, and three reviewers.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript describes the characterization of a T238A mutation in beta-tubulin of S. cerevisiae. In mutant cells, the microtubules are highly stabilized, and the purified mutant tubulin forms microtubules that depolymerize very slowly. The authors also determine that subsequent to polymerization, GTP is however hydrolyzed by mutant tubulin more efficiently than in microtubules polymerized from wild type tubulin. Surprisingly, EB1 decoration is not restricted to the microtubule end, suggesting that the conformational change in response to GTP hydrolysis in this mutant is different from that in normal microtubules. Similar behavior is observed for another mutation in helix 7 of beta-tubulin, consistent with prior reports (e.g. Alushin et al, 2014) that this helix is involved in the conformational changes in tubulin following hydrolysis of GTP. This is the first thorough in vitro characterization of a mutation in tubulin that uncouples GTPase cycle reactions from a conformational transition.\n\nEssential revisions:\n\nAlthough the majority of reviewers found this study very interesting and significant, some concerns were raised regarding the mechanistic insight, the way the manuscript presents its major conclusions and some technical issues of the assays as presented. These issues need to be addressed and are listed below.\n\nSpecific points of major criticism:\n\nI) Presentation of conclusions: In its generality the novelty of the observed uncoupling of GTPase transitions and allosteric conformational changes appeared somewhat exaggerated given that drugs like taxol are well known to cause such uncoupling; this should be acknowledged and the conclusions stated more precisely. At times observations were not clearly separated from interpretations (TOG binding\u2013conformational changes); more precise language is encouraged throughout. At times relevant literature was not acknowledged: high GTP content in yeast tubulin: Dougherty et al, Biochemistry 37, 1998, p. 10861; importance of the H7 helix for microtubule stability: Amos, Org Biomol Chem 2, 2004, p. 2153.\n\nII) Technical quality/support of conclusions by the data: Several technical concerns have been identified that require additional experiments:\n\n1) Figure 3 \u2013 TOG binding curves. The quality of the assay was not considered sufficient (large errors, saturation not reached) to support the strong statement that the mutant does not change TOG binding, leading to the interpretation that it does not change the conformation of unpolymerised tubulin. Additional data points need to be collected to bring the errors down to support such a strong statement convincingly.\n\n2) Figure 4 \u2013 Bim1 end tracking: More example of images or kymographs of Bim1 end tracking on wildtype and mutant microtubules should be shown to demonstrate how 'typical' behavior looks like under the conditions used. Bim1 binding to mutant microtubules is only shown for one Bim1 concentration. Therefore, it remains unclear if simply the overall affinity of Bim1 for microtubule binding is increased or if indeed the relative accumulation at microtubule ends compared to the lattice is reduced/is now absent (as the authors conclude). Experiments with different Bim1 concentrations are needed to distinguish between these two possibilities (effect on overall affinity versus end binding selectivity).\n\n3) Figure 5 \u2013 depolymerization of mutant microtubules by TOG: Technical concerns regarding the assay conditions have been raised. It was considered possible that the strong depolymerization activity of TOG could maybe be a consequence of artefacts due to singlet oxygen generation by ReAsH in the absence of reducing agents/strong oxygen scavenging system. The possibility of such effects should be excluded experimentally (changing overall fluorescence excitation conditions, adding oxygen scavengers, or changing fluorophore).\n\n4) Figure 1c \u2013 dependence of growth velocities on tubulin concentration: the data for mutant versus wildtype microtubules have been collected in very different tubulin concentration regimes (due to the strong nucleation of mutant tubulin). So the strong conclusion that this dependence is identical for both types of microtubules relies on how reliably the individual curves can be extrapolated into the other regime/how big the errors of the fits are. These errors should be examined in more detail. Ideally, an attempt should be made to collect data points for wildtype microtubules close to its critical concentration using a recently published method (Wieczorek et al., Nat Cell Biol 17, 2015, p. 907).\n\n5) One reviewer felt strongly that simple negative stain EM should be performed to demonstrate that the microtubule structure appears normal for mutant microtubules. Abnormalities not visible by fluorescence microscopy can then be excluded. This would set the standard for other future studies with mutant tubulins.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"A mutation uncouples the tubulin conformational and GTPase cycles, revealing allosteric control of microtubule dynamics\" for further consideration at eLife. Your revised article has been favorably evaluated by Vivek Malhotra (Senior editor) and a guest Reviewing editor. The manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below.\n\nMost major points of criticism have been addressed satisfactorily by additional experiments and the presentation has been improved. At several instances however the clarity of presentation would still profit from further improvement and one essential control experiment is missing:\n\nI) Missing control experiment:\n\nFigure 4: The new data clearly strengthen the manuscript. The schemes and the language used here continue to suggest that the GTPgS lattice is identical to the mutant lattice. However, the new data demonstrate that there is a difference between the mutant GDP microtubule body and the GTP end. This may well indicate that there may also be a difference between the mutant GDP body and the GTPgS body (GTPgS being potentially more similar to the end than to the mutant body). A control experiment with 5 nM Bim1 on GTPgS microtubules is missing. The result of this experiment might require the authors to modify the scheme and adopt a more differentiated view about the microtubule lattice conformations of wt, mutant and GTPgS microtubules.\n\nII) Presentation:\n\n1) Abstract and text: The language of the authors continues to imply complete uncoupling between GTPase reaction and conformational changes, although the new Bim1 data in Figure 4 demonstrate that there is clearly a conformational change in the mutant in response to GTPase, however at a reduced level as compared to wild type. It is desirable to adjust language to reflect this point. For the same reason, the claim made in the Abstract that \"post-GTPase conformational changes are not strictly required for catastrophe\" does not appear to be supported by the new data and it is recommended to adjust language.\n\n2) Yeast strains: The genotypes of the strains used for the tubulin productions and live cell microscopy experiments should be stated (Methods, Legends and/or Table).\n\n3) Figure 1: The number of observed events used for the quantifications does not appear to be stated. Please check throughout if all numbers relevant for statistical analysis are provided.\n\n4) Figure 1A, Figure 6C: Please add information to the figures to orient the reader where the inside/outside, plus/minus end of the microtubule is.\n\n5) Figure 1D: Please provide clearer examples of kymographs. Contrast is very low.\n\n6) Figure 2: The tubulin concentrations used for the data presented in Figure C,D does not seem to be provided. Please put this concentration into context of the concentrations used in A and the discussion about the oligomers that might lead to the measurement of an increased GTP level.\n\n7) Figure 4B: Please explain how alignment and averaging of the Bim1 intensity profiles was performed. Please clarify if error bars are shown (the GTPgS graph displays some fuzzy haze which might be bars) and adjust the display so that the data can be seen clearly. Please check the manuscript throughout and state which errors are shown (s.d. or s.e.m.).\n\n8) Figure 5: \"Similar results were obtained using MTs stabilized with GTPgS (not shown).\" Please show the existing data to support the claim.\n\n9) The conclusions drawn here should be discussed in light of a recent publication from the Nogales lab (Cell 162, 849, 2015) which contains relevant information about the structure of microtubules in the absence and presence of an end binding protein and different nucleotides. Some of the interpretations might need refinement.\n",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5b38dd9a-8bbb-4548-b6e4-493b6a3f2702",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C1",
+      "claim": "T238 in \u03b2-tubulin is solvent inaccessible and resides on helix H7.",
+      "claim_type": "EXPLICIT",
+      "source": "T238 is solvent inaccessible and resides on a helix (H7) that undergoes a piston-like movement between the two conformations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in Figure 1A caption and shown in structural visualization",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "880beb1a-7d09-4d35-897a-01b2ce28132b",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C2",
+      "claim": "Helix H7 undergoes a piston-like movement between curved and straight conformations of \u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "T238 is solvent inaccessible and resides on a helix (H7) that undergoes a piston-like movement between the two conformations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in structural superposition in Figure 1A",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "c572bc79-bd09-49d8-ae40-1da29901d95a",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C3",
+      "claim": "Cells expressing T238A \u03b1\u03b2-tubulin make longer, less dynamic microtubules than wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-lapse imaging of live yeast shows that cells expressing T238A \u03b1\u03b2-tubulin make longer, less dynamic microtubules than their wild-type (WT) counterparts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by time-lapse imaging data shown in Figure 1B and Videos 1,2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "888fad23-480f-45bf-b99a-91bdd37d753d",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C4",
+      "claim": "\u03b2:T238A microtubules have normal structure as observed by negative stain electron microscopy.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutant microtubules have normal structure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in electron micrographs in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "a0895bb8-3748-44a1-93d9-bdb19a99e0d3",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C5",
+      "claim": "T238A and wild-type microtubules show similar concentration-dependent growth rates.",
+      "claim_type": "EXPLICIT",
+      "source": "In vitro, T238A and wild-type microtubules show similar concentration-dependent growth rates (slopes: 29.6 +/- 1.8 \u00b5m/hr/\u00b5M for wild-type, 25.5 +/- 0.8 \u00b5m/hr/\u00b5M for \u03b2:T238A, the differences between the slopes are not statistically significant",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantified from in vitro dynamics measurements shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "8a26d1a9-1249-4044-b73c-ec4d2082d681",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C6",
+      "claim": "The x-intercepts of elongation rate plots differ between wild-type (0.12 \u00b5M) and \u03b2:T238A (0.033 \u00b5M) by a factor of approximately 3.5, and this difference is statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "x-intercepts: 0.12 \u00b5M for wild-type, 0.033 \u00b5M for \u03b2:T238A, this difference is statistically significant",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Calculated from regression analysis of data in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "930e68b0-7375-4270-a06f-2b19cab7e441",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C7",
+      "claim": "T238A microtubules catastrophe less frequently than wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "T238A microtubules catastrophe less frequently than wild-type (top; N = 99, 115 for wild-type and T238A respectively, bars show s.d.)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantified from in vitro dynamics measurements shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "5a0812d0-39bc-4f0e-9969-418d510d6011",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C8",
+      "claim": "\u03b2:T238A microtubules shrink approximately hundredfold more slowly than wild-type (1.1 \u00b5m/min for \u03b2:T238A compared to 96 \u00b5m/min for wild-type).",
+      "claim_type": "EXPLICIT",
+      "source": "after catastrophe \u03b2:T238A microtubules shrink roughly hundredfold more slowly than wild-type (1.1 \u00b5m/min for \u03b2:T238A compared to 96 \u00b5m/min for wild-type, Figure 1E, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Quantified from in vitro dynamics measurements shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "7e3b1dc1-8c12-45fc-9690-a26bf7368ef2",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C9",
+      "claim": "The \u03b2:T238A mutation significantly strengthens the lattice contacts that dictate the rate of microtubule shrinking.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the mutation significantly strengthens the lattice contacts that dictate the rate of microtubule shrinking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the hundredfold slower shrinking rate of mutant microtubules",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "04e27560-2428-41ac-ab10-779c23392720",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C10",
+      "claim": "Even in the presence of GTP\u03b3S, wild-type microtubules show substantially less nucleation than T238A microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that even in the presence of GTP\u03b3S, wild-type microtubules show substantially less nucleation than T238A microtubules (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by fluorescence imaging and spindown assays in Figure 2A,B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "81af332c-ac30-4806-b941-1311773f34ed",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C11",
+      "claim": "The abundant nucleation from the \u03b2:T238A mutant cannot be ascribed to a defect in GTPase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the abundant nucleation from the mutant cannot be ascribed to a defect in GTPase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from GTP\u03b3S nucleation experiments showing differential nucleation persists even when GTP hydrolysis cannot occur",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "03a77b24-a0f9-43cf-9431-6d60ab26fc4a",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C12",
+      "claim": "GMPCPP did not support elongation of yeast microtubules in dynamics assays.",
+      "claim_type": "EXPLICIT",
+      "source": "We initially attempted to use GMPCPP, the hydrolysis-resistant nucleotide of choice for vertebrate microtubules (Hyman et al., 1992), but GMPCPP did not support elongation of yeast microtubules in our dynamics assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed experimentally in dynamics assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "757f1df9-fd62-4f1b-b2f9-529351bc2cea",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C13",
+      "claim": "GTP\u03b3S better mimics GTP for yeast microtubules than GMPCPP.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast microtubules polymerized readily in the presence of GTP\u03b3S, however, indicating that GTP\u03b3S better mimics GTP for yeast microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from polymerization experiments comparing GMPCPP and GTP\u03b3S",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "69491dad-f9e0-457f-8792-2f9bdb24dd7e",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C14",
+      "claim": "Wild-type and \u03b2:T238A microtubules contain similarly low amounts of GTP (2\u20134% of total exchangeable nucleotide) when assembled with GTP\u03b3S.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments revealed that wild-type and mutant microtubules contain similarly low amounts of GTP (2\u20134% of total exchangeable nucleotide) and Pi (fewer than 3% of exchangeable sites) (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by TLC analysis shown in Figure 2C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "14d4b9e9-f92f-4f92-a118-ca47220ba1de",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C15",
+      "claim": "Wild-type and \u03b2:T238A microtubules contain similarly low amounts of Pi (fewer than 3% of exchangeable sites) when assembled with GTP\u03b3S.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments revealed that wild-type and mutant microtubules contain similarly low amounts of GTP (2\u20134% of total exchangeable nucleotide) and Pi (fewer than 3% of exchangeable sites) (Figure 2C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by TLC analysis shown in Figure 2C,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "4821e893-d4bf-4d64-92f0-1ea33f143db0",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C16",
+      "claim": "\u03b2:T238A \u03b1\u03b2-tubulin remains competent to hydrolyze GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "these experiments demonstrate that \u03b2:T238A \u03b1\u03b2-tubulin remains competent to hydrolyze GTP",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by TLC analysis showing GDP in mutant microtubules",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "180862ee-53a0-4c4f-8f67-24c264de0888",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C17",
+      "claim": "The altered nucleation and shrinking behavior of \u03b2:T238A cannot be ascribed to an accumulation of GTP or GDP.Pi.",
+      "claim_type": "EXPLICIT",
+      "source": "the altered nucleation and shrinking behavior cannot be ascribed to an accumulation of GTP or GDP.Pi that might result from a defect in assembly-dependent GTPase activity or phosphate release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from TLC data showing no accumulation of GTP or GDP.Pi in mutant microtubules",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "bd556426-4b9c-4975-9818-66dbef151b91",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C18",
+      "claim": "Some nonenzymatic mechanism must account for the observed changes in polymerization dynamics caused by the \u03b2:T238A mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "Some other, nonenzymatic mechanism must therefore account for the observed changes in polymerization dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from ruling out GTPase defects as the cause",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "972397fb-ac93-418e-a675-d57f3c3ba66c",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C19",
+      "claim": "TOG domains bind tightly to curved \u03b1\u03b2-tubulin but very weakly to straight \u03b1\u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "The rationale for this approach is based on the fact that TOG domains bind tightly to curved \u03b1\u03b2-tubulin but very weakly to straight (Figure 3A) (Ayaz et al., 2012; 2014 ).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to prior work and illustrated in Figure 3A",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "d44fb063-db2c-430a-ab79-779aaacc1c9c",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C20",
+      "claim": "TOG1 and TOG2 show very similar affinity (within a factor of two) for unpolymerized T238A \u03b1\u03b2-tubulin as they do for wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "TOG1 and TOG2, two different TOG domains from the yeast microtubule regulatory factor Stu2p (Wang and Huffaker, 1997), show very similar affinity (within a factor of two) for unpolymerized T238A \u03b1\u03b2-tubulin as they do for wild-type (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by analytical ultracentrifugation shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "64a799be-5c5c-4ab5-8b6f-9ad08040db8f",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C21",
+      "claim": "The \u03b2:T238A mutation does not significantly change the conformation of unpolymerized \u03b1\u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we conclude that the \u03b2:T238A mutation does not significantly change the conformation of unpolymerized \u03b1\u03b2-tubulin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from TOG binding data showing similar affinities for wild-type and mutant tubulin",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "4a5a1ef8-4ac6-4838-9beb-7d3e1a6c016e",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C22",
+      "claim": "Recent cryo-EM studies provided atomic models for distinct microtubule lattices containing GTP, GTP\u03b3S, or GDP, with GTP favoring an 'expanded' form and GTP\u03b3S and GDP favoring a 'compacted' form.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent cryo-EM studies of microtubule structure provided atomic models for distinct microtubule lattices containing GTP, GTP\u03b3S, or GDP, with GTP favoring an 'expanded' form and GTP\u03b3S and GDP favoring a 'compacted' form (Alushin et al., 2014; Zhang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior cryo-EM structural studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "4a1524a5-5b70-4669-a12b-3c0e025fd46a",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C23",
+      "claim": "Plus-end tracking proteins in the EB1 family discriminate between GTP-like and GDP-like lattices.",
+      "claim_type": "EXPLICIT",
+      "source": "Plus-end tracking proteins in the EB1 family have been shown to discriminate between these GTP-like and GDP-like lattices (Maurer et al., 2011; 2012; 2014; Zanic et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior studies of EB1 proteins",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "c3b34415-38d8-4923-af72-5304227eb537",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C24",
+      "claim": "Bim1-GFP tracks the growing end of yeast microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Control experiments revealed that a Bim1-GFP fusion protein tracked the growing end of yeast microtubules",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in control experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "faac21bd-c711-4041-aed4-ea708c5997a6",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C25",
+      "claim": "Bim1-GFP coats the entire length of GTP\u03b3S-containing yeast microtubules with cap-like intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Bim1-GFP coated the entire length of GTP\u03b3S-containing yeast microtubules with cap-like intensity (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in fluorescence microscopy experiments shown in Figure 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "58fce65c-0b43-48e6-99a6-07755361e47c",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C26",
+      "claim": "Like other EB1 proteins on vertebrate microtubules, Bim1 discriminates between GTP and GDP forms of the yeast microtubule lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore infer that like other EB1 proteins on vertebrate microtubules (Zanic et al., 2009; Maurer et al., 2011), Bim1 discriminates between GTP and GDP forms of the yeast microtubule lattice (presumably, expanded and compacted).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from Bim1 behavior on GTP\u03b3S microtubules and comparison to vertebrate EB1 proteins",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "0c031e7e-b5ca-46bf-8726-c8dd9854b36f",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C27",
+      "claim": "At 50 nM concentration, Bim1-GFP coats the entire length of 'dynamic' \u03b2:T238A microtubules with cap-like intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "In marked contrast to its behavior on wild-type microtubules, at 50 nM concentration Bim1-GFP coated the entire length of 'dynamic' \u03b2:T238A microtubules with cap-like intensity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in fluorescence microscopy experiments shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "1075fb36-bc5c-468c-a58b-ef8738b8ace3",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C28",
+      "claim": "At 5 nM concentration, the Bim1-GFP coat on the body of \u03b2:T238A microtubules is slightly weaker than at the cap but still substantially more intense than on wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "At lower concentrations (5 nM), the Bim1-GFP coat on the body of \u03b2:T238A microtubules is slightly weaker than at the cap but still substantially more intense than on wild-type (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in fluorescence microscopy experiments shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "c18ef227-b340-48d5-8740-349a02450b77",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C29",
+      "claim": "The \u03b2:T238A mutation attenuates the conformational response to GTP hydrolysis in the microtubule lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the \u03b2:T238A mutation attenuates the conformational response to GTP hydrolysis in the microtubule lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from Bim1 binding data showing GTP-like binding to GDP-containing mutant microtubules",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "93c13e25-b5d3-4bd3-bbf7-44899c6dce7b",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C30",
+      "claim": "The structural consequence of the \u03b2:T238A mutation resembles the effect of taxol binding, which also promotes an expanded conformation of \u03b1\u03b2-tubulin in a GDP lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "The structural consequence of the mutation resembles the effect of taxol binding, which also promotes an expanded conformation of \u03b1\u03b2-tubulin in a GDP lattice (Alushin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison to cited structural study of taxol effects",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "9cc66b89-2b49-4393-9b83-63fcc7345f0b",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C31",
+      "claim": "The \u03b2:T238A mutation substantially uncouples the conformational cycle from the nucleotide cycle in the lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Simply put, the mutation appears to have substantially uncoupled the conformational cycle from the nucleotide cycle in the lattice, allowing \u03b1\u03b2-tubulin to retain GTP-lattice-like character even in a GDP lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from Bim1 binding showing GTP-like conformation despite GDP nucleotide",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "8d9cd672-7c4a-4658-9d1a-b3a04a4c8223",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C32",
+      "claim": "EB1 proteins do not bind at the very microtubule end.",
+      "claim_type": "EXPLICIT",
+      "source": "The Bim1 experiments described above do not report on the conformation of \u03b1\u03b2-tubulin at the very microtubule end because EB1 proteins do not bind there (Maurer et al., 2012; 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior studies of EB1 binding",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "5303f030-360d-43d9-a21c-efae10fb14c6",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C33",
+      "claim": "Isolated TOG domains from Stu2p stimulate the depolymerization of stabilized microtubules in a dose-dependent way.",
+      "claim_type": "EXPLICIT",
+      "source": "After fortuitously discovering that isolated TOG domains from the microtubule polymerase Stu2p stimulate the depolymerization of stabilized microtubules in a dose-dependent way",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed experimentally",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "cf316232-123c-40c0-82cd-8ce195f1fe86",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C34",
+      "claim": "The underlying cause of TOG-induced depolymerization is TOG-mediated stabilization of the curved and faster dissociating conformation of \u03b1\u03b2-tubulin on the microtubule end.",
+      "claim_type": "EXPLICIT",
+      "source": "we reasoned that the underlying cause of this induced depolymerization was TOG-mediated stabilization of the curved and faster dissociating conformation of \u03b1\u03b2-tubulin on the microtubule end (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Proposed mechanism based on TOG binding preferences",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "204e2975-34f4-4ab8-bc90-ecdd00c121ba",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C35",
+      "claim": "The rate of TOG-induced depolymerization increases linearly over at least a 20-fold range of TOG concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Using drug-stabilized microtubules as a substrate, the rate of TOG-induced depolymerization increases linearly over at least a 20-fold range of TOG concentration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured in depolymerization assays shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "94baac72-737f-402c-ac99-94f4d42e32b6",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C36",
+      "claim": "The linear concentration-dependence of TOG-induced depolymerization is consistent with a collisional mechanism in which the rate-limiting step is a TOG domain arriving at the microtubule end.",
+      "claim_type": "EXPLICIT",
+      "source": "This linear concentration-dependence is consistent with a collisional mechanism in which the rate-limiting step is a TOG domain arriving at the microtubule end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the linear dose-response relationship",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "9453f67d-93c3-4155-ab2a-fe6cb37ab234",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C37",
+      "claim": "Drug-stabilized \u03b2:T238A microtubules depolymerize substantially slower than wild-type at the same concentration of TOG domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Drug-stabilized \u03b2:T238A microtubules depolymerize substantially slower than wild-type at the same concentration of TOG domain (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured in depolymerization assays shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "a9592a49-1eac-4161-918e-c0c284c697ba",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C38",
+      "claim": "Only at higher TOG concentrations do \u03b2:T238A microtubules show appreciable dose-dependent TOG-induced depolymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Only at higher TOG concentrations do \u03b2:T238A microtubules show appreciable dose-dependent TOG-induced depolymerization (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in depolymerization assays in Figure 5B inset",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "f597f3a5-5b99-4aa1-a87c-858b77415e4a",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C39",
+      "claim": "Similar TOG-induced depolymerization results were obtained using MTs stabilized with GTP\u03b3S.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained using MTs stabilized with GTP\u03b3S (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "492a444f-2158-41c3-8f75-6d51f9c30525",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C40",
+      "claim": "TOG domains bind with comparable affinity to curved wild-type and mutant \u03b1\u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "TOG domains bind with comparable affinity to curved wild-type and mutant \u03b1\u03b2-tubulin, so differences in TOG affinity cannot explain the markedly slower TOG-induced shrinking of \u03b2:T238A microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established from earlier TOG binding experiments (Figure 3B)",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "0895fe11-1423-4f7c-8848-7b5bdc3a5fdd",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C41",
+      "claim": "A mutant-induced change in the propensity to become/remain straight on the microtubule end is the simplest way to explain both the slower post-catastrophe shrinking and weaker TOG-induced depolymerization for the mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, a mutant-induced change in the propensity to become/remain straight on the microtubule end is the simplest way to explain both the slower post-catastrophe shrinking and weaker TOG-induced depolymerization for the mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from integrating TOG binding and depolymerization data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "b9c581af-920d-4410-a577-0f7299708f8d",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C42",
+      "claim": "The conformation of end-bound \u03b1\u03b2-tubulins is affected by the \u03b2:T238A mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "That the conformation of end-bound \u03b1\u03b2-tubulins is affected by the \u03b2:T238A mutation is also consistent with the Bim1 coating, which demonstrated that the mutation affected \u03b1\u03b2-tubulin conformation elsewhere in the lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from TOG-induced depolymerization and Bim1 coating data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "a1a31a0e-4873-4d08-8381-9bf7b65bcd88",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C43",
+      "claim": "Yeast expressing \u03b2:T238S \u03b1\u03b2-tubulin are comparably benomyl resistant to \u03b2:T238A.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast expressing \u03b2:T238S \u03b1\u03b2-tubulin are comparably benomyl resistant to \u03b2:T238A, but significantly less benomyl dependent (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in growth assays in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "d42e980d-44d2-4d8f-a091-9a2d330616d8",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C44",
+      "claim": "Yeast expressing \u03b2:T238V \u03b1\u03b2-tubulin are substantially less resistant to benomyl than \u03b2:T238A, and show no benomyl dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, yeast expressing \u03b2:T238V \u03b1\u03b2-tubulin are substantially less resistant to benomyl, and show no benomyl dependence (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in growth assays in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "69904adb-db21-4eb9-a034-a954b8e67345",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C45",
+      "claim": "\u03b2:T238S microtubules are \u03b2:T238A-like (static) in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurements of microtubule dynamics in vivo are consistent with the benomyl phenotypes: \u03b2:T238S microtubules are \u03b2:T238A-like (static) whereas \u03b2:T238V microtubules are more wild-type-like (dynamic but with somewhat slower shrinking) (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by in vivo imaging shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "2ba1fad1-5706-4402-9417-7b6d4a5b9f3a",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C46",
+      "claim": "\u03b2:T238V microtubules are more wild-type-like (dynamic but with somewhat slower shrinking) in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurements of microtubule dynamics in vivo are consistent with the benomyl phenotypes: \u03b2:T238S microtubules are \u03b2:T238A-like (static) whereas \u03b2:T238V microtubules are more wild-type-like (dynamic but with somewhat slower shrinking) (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured by in vivo imaging shown in Figure 6B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "ad520ca9-79cb-484f-96c8-b8d4b9670545",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C47",
+      "claim": "The trend with sidechain size and the strong effect obtained from the Thr to Ser mutation at position 238 suggest that some form of 'steric overpacking', not hydrogen bonding, contributes to destabilize the straight, expanded conformation of \u03b1\u03b2-tubulin in microtubules containing GDP.",
+      "claim_type": "EXPLICIT",
+      "source": "The trend with sidechain size and the strong effect obtained from the Thr to Ser mutation at position 238 suggest that some form of 'steric overpacking', not hydrogen bonding, contributes to destabilize the straight, expanded conformation of \u03b1\u03b2-tubulin in microtubules containing GDP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from comparing phenotypes of different substitutions at position 238",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "f4fd7e46-7caa-4e2e-888b-439c95c2174c",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C48",
+      "claim": "\u03b2:C354A or \u03b2:C354S substitutions dramatically reduced the rate of microtubule shrinking and the frequency of catastrophe.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, \u03b2:C354A or \u03b2:C354S substitutions dramatically reduced the rate of microtubule shrinking and the frequency of catastrophe (Gupta et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "2d1cacb6-db34-4adb-95d4-c45fa8abf80e",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C49",
+      "claim": "\u03b2:C354A microtubules show Bim1-GFP coating similar to \u03b2:T238A.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2:C354A microtubules showed Bim1-GFP coating similar to what we observed for \u03b2:T238A, indicating the two mutations stabilize microtubules through a common conformational mechanism (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Bim1-GFP binding experiments in Figure 6C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "3710efd4-45e0-48d6-a2bd-3cc7729e0add",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C50",
+      "claim": "The \u03b2:T238A and \u03b2:C354A mutations stabilize microtubules through a common conformational mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b2:C354A microtubules showed Bim1-GFP coating similar to what we observed for \u03b2:T238A, indicating the two mutations stabilize microtubules through a common conformational mechanism (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from similar Bim1-GFP binding patterns",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "83c887b9-5527-4ce1-9180-b3361835027f",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C51",
+      "claim": "Positions 238 and 354 in \u03b2-tubulin show strong evolutionary conservation (\u03b2:238 is 65% T and 34% C whereas \u03b2:354 is 99% C).",
+      "claim_type": "EXPLICIT",
+      "source": "Positions 238 and 354 in \u03b2-tubulin show strong evolutionarily conservation (yeast numbering; \u03b2:238 is 65% T and 34% C whereas \u03b2:354 is 99% C), consistent with an important functional role for these residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Determined from sequence conservation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "4350dc09-f0c1-4cdf-bb59-92437fc83f00",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C52",
+      "claim": "Changes in packing volume near helix H7 can dictate the dynamic properties of microtubules by tuning an allosteric response to GDP.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the \u03b2:T238A and \u03b2:C354A results suggest that changes in packing volume near helix H7 can dictate the dynamic properties of microtubules by tuning an allosteric response to GDP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from comparing effects of mutations at positions 238 and 354",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "c4fbc72e-cb63-49c5-bd02-3a5913ac51f2",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C53",
+      "claim": "Relatively conservative buried mutations in \u03b2-tubulin can diminish the conformational response to GDP in the lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that relatively conservative buried mutations in \u03b2-tubulin can diminish the conformational response to GDP in the lattice, and that this altered structural response yields dramatic effects on microtubule dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "e35da4e6-a080-43a5-a63b-83114fa9e04a",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C54",
+      "claim": "Mutations can uncouple the conformational and nucleotide cycles of \u03b1\u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "By discovering that mutations can uncouple the conformational and nucleotide cycles of \u03b1\u03b2-tubulin, our findings provide new insights into ways that the \u03b1\u03b2-tubulin conformational cycle dictates microtubule polymerization dynamics (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated through multiple experiments showing GTP-like conformation with GDP nucleotide",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "c76221a8-f408-442b-9c24-05cb4f92eba2",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C55",
+      "claim": "In the lattice, a major effect of the \u03b2:T238A mutation is to substantially suppress conformational changes that normally occur as a consequence of GTPase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experiments using the EB1 family protein Bim1 showed that in the lattice a major effect of the \u03b2:T238A mutation is to substantially suppress conformational changes that normally occur as a consequence of GTPase activity (Hyman et al., 1995; Alushin et al., 2014; Zhang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by Bim1 binding experiments showing GTP-like binding to GDP lattice",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "ba951877-93d3-4109-ae68-e608536a616f",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C56",
+      "claim": "The mutant microtubule lattice retains more GTP-like character than wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the stronger binding of Bim1 to GDP-containing \u03b2:T238A microtubules indicates that the mutant microtubule lattice retains more GTP-like character than does wild-type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from Bim1 binding data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "d20a7b69-fa4c-4b5a-b5d4-c1fd854fc037",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C57",
+      "claim": "The slow shrinking and lower frequency of catastrophe in the mutant most likely result from the attenuated allosteric response to GDP.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the slow shrinking and lower frequency of catastrophe in the mutant most likely result from the attenuated allosteric response to GDP; this in turn results in a straighter and more strongly associated GTP-like conformation on the microtubule end, despite having GDP at the longitudinal interface (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Concluded from integrating structural and dynamic data",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "02f56255-6129-4cc5-aa1d-061e8b91fa96",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C58",
+      "claim": "The majority of the mutation-induced effects are confined to post-GTPase conformational changes in the lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "It is remarkable that the majority of the mutation-induced effects are confined to post-GTPase conformational changes in the lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed from the pattern of effects across different assays",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "4d5b454a-6079-426c-aacb-46652634d013",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C59",
+      "claim": "Not observing significant effects on elongation is somewhat surprising, because it had been anticipated that the conformational changes required to enter the lattice would contribute to polymerization dynamics by opposing incorporation into the lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Not observing significant effects on elongation is somewhat surprising, because it had been anticipated that the conformational changes required to enter the lattice would contribute to polymerization dynamics by opposing incorporation into the lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Discussion of expectations versus observations",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "2db1ab7e-6294-4aac-9449-5f1806497bb3",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C60",
+      "claim": "The increased spontaneous nucleation of \u03b2:T238A \u03b1\u03b2-tubulin in the presence of GTP\u03b3S indicates that the mutation affects conformational transitions that occur in/on a GTP lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this is not consistent with increased spontaneous nucleation of \u03b2:T238A \u03b1\u03b2-tubulin in the presence of GTP\u03b3S, which indicated that the mutation did affect conformational transitions that occur in/on a GTP lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in nucleation experiments with GTP\u03b3S",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "3729fbb6-d35f-40c9-baad-97a81570ef48",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C61",
+      "claim": "The energetics of curved to straight transitions on the microtubule end may not be rate-contributing for elongation, perhaps because these transitions occur subsequent to end binding.",
+      "claim_type": "EXPLICIT",
+      "source": "It could be that we did not observe substantial effects on elongation because the energetics of curved to straight transitions on the microtubule end are not rate-contributing for elongation, perhaps because these transitions occur subsequent to end binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed explanation for lack of elongation effects",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "a240e823-e8c8-483e-9a5a-cd0a3efb936d",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C62",
+      "claim": "The differential response to the mutation inside and outside of microtubules is consistent with the view that the curved conformation represents the 'ground state' of \u03b1\u03b2-tubulin independent of nucleotide state.",
+      "claim_type": "EXPLICIT",
+      "source": "The differential response to the mutation inside and outside of microtubules (Figure 7A,B) is consistent with the view that the curved conformation represents the 'ground state' of \u03b1\u03b2-tubulin independent of nucleotide state (Rice et al., 2008; Buey et al., 2006; Nawrotek et al., 2011; Pecqueur et al., 2012; Ayaz et al., 2012)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Interpretation supported by cited prior work",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "fa6eeaf0-f514-4a56-a9fe-07807cf276a1",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C63",
+      "claim": "The nucleotide acts across the longitudinal interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The differential response to the mutation inside and outside of microtubules (Figure 7A,B) is consistent with the view that the curved conformation represents the 'ground state' of \u03b1\u03b2-tubulin independent of nucleotide state (Rice et al., 2008; Buey et al., 2006; Nawrotek et al., 2011; Pecqueur et al., 2012; Ayaz et al., 2012), that the nucleotide acts across the longitudinal interface (Rice et al., 2008; Nawrotek et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation supported by cited prior work",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "219b3f6b-0333-4fb9-85fb-d0d83a1344be",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C64",
+      "claim": "Nucleotide-dependent interactions with the microtubule lattice are what drive \u03b1\u03b2-tubulin conformational transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "that nucleotide-dependent interactions with the microtubule lattice are what drive \u03b1\u03b2-tubulin conformational transitions (Rice et al., 2008; Buey et al., 2006; Nawrotek et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation supported by cited prior work and current data",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "a98c104e-7239-41c0-9042-660c0d70d96a",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C65",
+      "claim": "The changes observed can largely be explained by an impaired allosteric response to GDP in the lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the changes we observed can largely be explained by an impaired allosteric response to GDP in the lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary interpretation of all experimental findings",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "de6e33e5-462f-4508-b830-34b7f522a8c6",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C66",
+      "claim": "Buried mutations of or near \u03b2:T238 alter the allosteric response to GDP in the microtubule lattice, with dramatic consequences for catastrophe frequency and shrinking rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we showed that buried mutations of or near \u03b2:T238 alter the allosteric response to GDP in the microtubule lattice, with dramatic consequences for catastrophe frequency and shrinking rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of main findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "3c94ee94-9825-45e1-8a49-550e1ff037f6",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C67",
+      "claim": "Allostery in the lattice dictates functionally important aspects of microtubule polymerization dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "By describing microtubules with identical interface composition that nevertheless undergo strikingly different polymerization dynamics, our data demonstrate that allostery in the lattice dictates functionally important aspects of microtubule polymerization dynamics (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Concluded from comparing wild-type and mutant microtubules with same nucleotide but different dynamics",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "93baf4fb-4224-4bb6-a48d-a77aab791fb5",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C68",
+      "claim": "Cooperative conformational linkage in the lattice amplifies the individual response to nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the central role of allostery in controlling the frequency of catastrophe and the rate of shrinking, we speculate that cooperative conformational linkage in the lattice amplifies the individual response to nucleotide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of the role of allostery",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "ccb05c7c-8a27-4cd8-875c-f1806eb64905",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C69",
+      "claim": "The allosteric response to GDP and the intrinsic bias of \u03b1\u03b2-tubulin toward the curved conformation elevate and separate the threshold concentrations for persistent elongation and for spontaneous nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the allosteric response to GDP and the intrinsic bias of \u03b1\u03b2-tubulin toward the curved conformation elevate and separate the threshold concentrations for persistent elongation and for spontaneous nucleation (Figure 7C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Concluded from comparing wild-type and mutant behavior",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "d738e05d-21e0-4e92-b703-7cb0ef7f41c4",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C70",
+      "claim": "The allosteric response to GDP and intrinsic curvature bias underlie the fast shrinking rate that makes catastrophe more decisive.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the allosteric response to GDP and the intrinsic bias of \u03b1\u03b2-tubulin toward the curved conformation elevate and separate the threshold concentrations for persistent elongation and for spontaneous nucleation (Figure 7C), and underlie the fast shrinking rate that makes catastrophe more decisive.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Concluded from comparing wild-type and mutant shrinking rates",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "40b3533c-b127-4458-948e-97494daad45e",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C71",
+      "claim": "Allosteric contributions to microtubule dynamics make microtubules more amenable to regulation by cellular factors that enhance elongation, trigger catastrophe, and promote nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "These allosteric contributions to microtubule dynamics make microtubules more amenable to regulation by cellular factors that enhance elongation, trigger catastrophe, and promote nucleation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of the functional significance of allostery",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "14ee72d2-b74e-4f8e-a67b-beaa34502863",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C72",
+      "claim": "Helix H7 is positioned differently in the 'curved' (unpolymerized) and 'straight' (polymerized) conformations of \u03b1\u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on helix H7 because it is an element that is positioned differently in the 'curved' (unpolymerized) and 'straight' (polymerized) conformations of \u03b1\u03b2-tubulin (Nogales et al., 1998; Ravelli et al., 2004)(Figure 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Cited from structural studies and shown in Figure 1A",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "18ebc3e9-8dcc-4bd9-9646-c562cd2b93f1",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C73",
+      "claim": "Helix H7 may act as a structural relay connecting the 'top' and 'bottom' of the tubulin subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "it may act as a structural relay connecting the 'top' and 'bottom' of the tubulin subunits (Amos, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior structural analysis",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "e2b5a62a-c718-4734-9ba7-edf233cf50b3",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C74",
+      "claim": "The equivalent helix in \u03b1-tubulin was recently observed to move in response to GTP hydrolysis in the lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "The equivalent helix in \u03b1-tubulin was also recently observed to move in response to GTP hydrolysis in the lattice (Alushin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from recent cryo-EM study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "28068390-5140-4792-a1eb-655357945e91",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C75",
+      "claim": "Prior studies showed that the \u03b2:T238A phenotype was consistent with hyperstable microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "because prior studies (Thomas et al., 1985; Machin et al., 1995) showed that the \u03b2:T238A phenotype was consistent with hyperstable microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior genetic studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "5ebfbedf-63cd-4c8b-af57-06e1e2d65018",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C76",
+      "claim": "The molecular mechanism by which the \u03b2:T238A mutation affects microtubule dynamics was unknown prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "The molecular mechanism by which the \u03b2:T238A mutation affects microtubule dynamics is unknown, in part because the polymerization dynamics of \u03b2:T238A \u03b1\u03b2-tubulin have not been studied in vivo or in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of knowledge gap",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "230da2ac-6df9-4165-8340-6407130a49d5",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C77",
+      "claim": "The \u03b2:T238A mutation affects microtubule dynamics by dramatically reducing the frequency of catastrophe and the rate of shrinking.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies now reveal that the \u03b2:T238A mutation affects microtubule dynamics by dramatically reducing the frequency of catastrophe and the rate of shrinking",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "1b7424b1-f48e-4420-acbc-dc57a2a6cab9",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C78",
+      "claim": "The \u03b2:T238A mutation affects microtubule structure by attenuating post-GTPase conformational changes in the lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "the mutation affects microtubule structure by attenuating post-GTPase conformational changes in the lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of structural findings from Bim1 experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "5e0555c8-441a-406c-b3fb-217b6836440e",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C79",
+      "claim": "The \u03b2:T238A mutation weakens the coupling between the conformational and GTPase cycles of \u03b1\u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "By showing that the \u03b2:T238A mutation weakens the coupling between the conformational and nucleotide cycles",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary interpretation of findings",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "695d46c7-2742-4aa2-8e71-caece2b4bcc3",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C80",
+      "claim": "Catastrophe can occur despite diminished post-GTPase conformational changes in the microtubule lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "our results demonstrate that catastrophe can occur despite diminished post-GTPase conformational changes in the microtubule lattice",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by observing catastrophe in mutant microtubules with attenuated conformational response",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "c16258eb-944c-49e3-b051-492c91bf9396",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C81",
+      "claim": "The strength of the allosteric response to GDP dictates the rate of microtubule shrinking and the frequency of microtubule catastrophe.",
+      "claim_type": "EXPLICIT",
+      "source": "the strength of the allosteric response to GDP dictates the rate of microtubule shrinking and the frequency of microtubule catastrophe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Concluded from comparing wild-type and mutant with different allosteric responses",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "279d3b38-88c7-41d9-ab24-f82e5736baf9",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C82",
+      "claim": "Microtubule dynamic instability depends on the GTPase activity of the polymerizing \u03b1\u03b2-tubulin subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubule dynamic instability depends on the GTPase activity of the polymerizing \u03b1\u03b2-tubulin subunits, which cycle through at least three distinct conformations as they move into and out of microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "2cdc59aa-867e-4373-bfb8-06c14be99f76",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C83",
+      "claim": "\u03b1\u03b2-tubulin cycles through at least three distinct conformations as they move into and out of microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubule dynamic instability depends on the GTPase activity of the polymerizing \u03b1\u03b2-tubulin subunits, which cycle through at least three distinct conformations as they move into and out of microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge from structural studies",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "45ae6134-51e1-49ba-813c-6405e09f58bd",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C84",
+      "claim": "Unpolymerized \u03b1\u03b2-tubulin adopts a 'curved' conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Unpolymerized \u03b1\u03b2-tubulin adopts a 'curved' conformation (Ravelli et al., 2004; Rice et al., 2008; Buey et al., 2006) that is not compatible with the 'straight' microtubule lattice (Nogales et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from structural studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "8e5964d5-7af5-4c76-b136-6d2d094d7d13",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C85",
+      "claim": "The curved conformation of unpolymerized \u03b1\u03b2-tubulin is not compatible with the 'straight' microtubule lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Unpolymerized \u03b1\u03b2-tubulin adopts a 'curved' conformation (Ravelli et al., 2004; Rice et al., 2008; Buey et al., 2006) that is not compatible with the 'straight' microtubule lattice (Nogales et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from structural studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "c60a2c25-4a76-4be1-b095-577470a0e6b0",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C86",
+      "claim": "In the body of the microtubule, \u03b1\u03b2-tubulin can adopt distinct 'expanded' or 'compacted' straight conformations depending on nucleotide state.",
+      "claim_type": "EXPLICIT",
+      "source": "In the body of the microtubule, \u03b1\u03b2-tubulin can adopt distinct 'expanded' or 'compacted' straight conformations depending on nucleotide state (Alushin et al., 2014; Hyman et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from structural and biochemical studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "dbbb0cb0-b9d4-4fad-834b-2d771748e7dc",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C87",
+      "claim": "EB1 family proteins mark the plus-end cap of microtubules by binding preferentially to the 'expanded', GTP-like conformation of \u03b1\u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "In one well-characterized example, end-binding proteins in the EB1 family have been shown to mark the plus-end cap of microtubules by binding preferentially to the 'expanded', GTP-like conformation of \u03b1\u03b2-tubulin that only occurs near the end of the growing microtubule lattice (Maurer et al., 2011; 2012; Zanic et al., 2009; Alushin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior studies of EB1 proteins",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "a8ab97c4-3a38-4bf3-86dc-11e9bcf02730",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C88",
+      "claim": "TOG domains from Stu2p bind preferentially to the curved conformation of \u03b1\u03b2-tubulin.",
+      "claim_type": "EXPLICIT",
+      "source": "Another recent example of selective interactions with specific conformations of \u03b1\u03b2-tubulin comes from work in our laboratory showing that TOG domains from the microtubule polymerase Stu2p bind preferentially to the curved conformation of \u03b1\u03b2-tubulin (Ayaz et al., 2012; 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work from the authors' laboratory",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "c3eacade-c52f-4429-846d-9c51ae7720e3",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C89",
+      "claim": "The preference of TOG domains for curved \u03b1\u03b2-tubulin is probably what allows the polymerase to localize to the growing tip of the microtubule.",
+      "claim_type": "EXPLICIT",
+      "source": "this preference of TOG domains for curved \u03b1\u03b2-tubulin is probably what allows the polymerase to localize to the growing tip of the microtubule (Ayaz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work with mechanistic interpretation",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "c743678c-a817-4249-931e-397fd29afd5a",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C90",
+      "claim": "Selective binding to distinct conformations of \u03b1\u03b2-tubulin represents a common and important strategy for recognizing and controlling microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "These and numerous studies of other regulatory proteins (Desai et al., 1999; Gigant et al., 2000; Peters et al., 2010; Alushin et al., 2010; Bechstedt et al., 2014) contribute to the emerging view that selective binding to distinct conformations of \u03b1\u03b2-tubulin represents a common and important strategy for recognizing and controlling microtubules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Synthesis of multiple cited studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "871cc1d9-92d5-4c9a-951a-2657404009ef",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C91",
+      "claim": "How the \u03b1\u03b2-tubulin conformational cycle contributes to microtubule dynamics is less understood.",
+      "claim_type": "EXPLICIT",
+      "source": "How the \u03b1\u03b2-tubulin conformational cycle contributes to microtubule dynamics is less understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of knowledge gap in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "f133bbfc-e1af-4240-8d29-b6c0d2f2a09b",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C92",
+      "claim": "Showing that conformational rearrangements in \u03b1\u03b2-tubulin contribute to and are required for the dynamic properties of microtubules remains challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, even though structural rearrangements in \u03b1\u03b2-tubulin have long been known to occur during and after microtubule incorporation (Mandelkow et al., 1991b; Chr\u00e9tien et al., 1995; Hyman et al., 1995), actually showing that these rearrangements contribute to and are required for the dynamic properties of microtubules remains challenging (Rice et al., 2008; Wang and Nogales, 2005; Buey et al., 2006; J\u00e1nosi et al., 2002; Molodtsov et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of ongoing challenge in the field with citations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "1aab5e36-762b-4e88-8251-466ba2a3fbc4",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C93",
+      "claim": "To date, in vitro microtubule dynamics have only been measured for a small number of \u03b1\u03b2-tubulin mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "One reason these questions are still debated is that to date in vitro microtubule dynamics have only been measured for a small number of \u03b1\u03b2-tubulin mutants (Gupta et al., 2002; Dougherty et al., 2001; Sage et al., 1995)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of limitation in the field with citations",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "24a3f9b4-63de-465c-8010-8bdb505618d1",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C94",
+      "claim": "It has not yet been possible to link altered dynamics to a change in the \u03b1\u03b2-tubulin conformational cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "it has not yet been possible to link altered dynamics to a change in the \u03b1\u03b2-tubulin conformational cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of knowledge gap",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "9ad7137c-bc65-4c42-ac49-1d325e6d36de",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C95",
+      "claim": "GTP-bound \u03b1\u03b2-tubulin 'straightens' during the formation of longitudinal and lateral lattice contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, GTP-bound \u03b1\u03b2-tubulin 'straightens' during the formation of longitudinal and lateral lattice contacts (Buey et al., 2006; Rice et al., 2008; Nawrotek et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior structural studies",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "1d980a6d-bde5-4787-b9f2-dd9bbad895a1",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C96",
+      "claim": "\u03b2:T238A microtubules were on average over 50% longer than wild-type microtubules in yeast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These measurements revealed that \u03b2:T238A-tubulin forms static microtubules (neither growing nor shrinking) that are on average over 50% longer than the dynamic microtubules that form in a strain with wild-type \u03b2-tubulin (Figure 1B and Videos 1,2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Measured from in vivo imaging data in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "b180867a-b681-4ff2-94c1-358a6e9c596a",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C97",
+      "claim": "\u03b2:T238A-tubulin forms static microtubules (neither growing nor shrinking) in yeast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These measurements revealed that \u03b2:T238A-tubulin forms static microtubules (neither growing nor shrinking) that are on average over 50% longer than the dynamic microtubules that form in a strain with wild-type \u03b2-tubulin (Figure 1B and Videos 1,2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in time-lapse imaging shown in Figure 1B and Videos 1,2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "fc5e150c-bcd4-47f1-82bd-52bc445b1228",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C98",
+      "claim": "The striking change in microtubule dynamics caused by \u03b2:T238A cannot be the result of a direct perturbation of a polymerization interface or of an interaction with regulatory proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the mutated site is solvent inaccessible, this striking change in microtubule dynamics cannot be the result of a direct perturbation of a polymerization interface or of an interaction with one or more regulatory proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the buried nature of the mutation site",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "e6df30ed-6b86-48dd-bbd8-7e3c01ad80c7",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C99",
+      "claim": "Wild-type and \u03b2:T238A \u03b1\u03b2-tubulin could not be measured at equivalent concentrations in dynamics assays.",
+      "claim_type": "EXPLICIT",
+      "source": "We were unable to measure mutant and wild-type microtubule dynamics at equivalent concentrations, because \u03b2:T238A \u03b1\u03b2-tubulin showed abundant spontaneous nucleation at the higher concentrations where we measured wild-type, and wild-type \u03b1\u03b2-tubulin does not elongate measurably at the low concentrations where we were able to measure \u03b2:T238A dynamics without excessive nucleation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Experimental observation and limitation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "6598ca7c-fa98-48bb-bb6a-df34be768065",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C100",
+      "claim": "The x-intercept and slope of elongation rate plots respectively relate to the apparent affinity and association rate constant for elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the x-intercept and slope respectively relate to the apparent affinity and association rate constant for elongation, our data indicate that the mutation has little effect on the apparent biochemistry of microtubule elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Standard interpretation of kinetic parameters",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "72fa1c84-bad0-439d-94d1-d527672d7299",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C101",
+      "claim": "The \u03b2:T238A mutation has little effect on the apparent biochemistry of microtubule elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the x-intercept and slope respectively relate to the apparent affinity and association rate constant for elongation, our data indicate that the mutation has little effect on the apparent biochemistry of microtubule elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from similar slopes of elongation rate plots",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "e4f9b979-efc1-42ce-b673-32afdfbebb93",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C102",
+      "claim": "The lower catastrophe frequency of \u03b2:T238A is especially notable considering that the mutant microtubules were growing much slower than wild-type due to lower tubulin concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "The lower catastrophe frequency we observed is especially notable when considering that in these assays the T238A microtubules were growing much slower than wild-type because of the \u223cthreefold lower concentration of \u03b1\u03b2-tubulin used for the mutant (Figure 1E, top).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from comparing experimental conditions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "9d914524-b0c7-4f7e-aa77-726dfc86860d",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C103",
+      "claim": "Yeast microtubules have previously been reported to contain more GTP than vertebrate microtubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast microtubules have previously been reported to contain more GTP than vertebrate microtubules (Dougherty et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "ede47f30-8ff7-45d2-a28d-452a5271199c",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C104",
+      "claim": "In control experiments, vertebrate microtubules contain very little GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "In control experiments (not shown) we confirmed that vertebrate microtubules contain very little GTP and that individual heterodimers were not pelleting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Performed as control experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "5d98b54c-a65b-408b-9308-78c0c963cb63",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "claim_id": "C105",
+      "claim": "It seems unlikely that wild-type yeast microtubules contain substantial amounts of GTP based on fast shrinking, little 32P-GTP in GTP\u03b3S microtubules, and normal EB1 recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "Because we observed very fast shrinking (Figure 1), little 32P-GTP in microtubules grown with GTP\u03b3S (Figure 2C), and normal plus-end recognition by an EB1 family protein (see below), it seems unlikely that wild-type yeast microtubules contain substantial amounts of GTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple lines of evidence",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8cb55c42-7226-4e98-ae82-03359d9e5026",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Helix H7 in \u03b2-tubulin, which contains the buried residue T238, undergoes conformational changes between curved and straight tubulin states and may act as a structural relay within the tubulin subunit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, and C72 are directly supported by structural data shown in Figure 1A and cited structural studies. Claims C73 and C74 provide additional context from prior literature about H7's potential functional role. Together these establish the structural basis for targeting this region.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "38ea6cec-d648-450b-9d58-d0745b26bcf3",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In vivo, yeast cells expressing \u03b2:T238A tubulin form static microtubules that are over 50% longer than wild-type microtubules.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C96, and C97 are directly supported by time-lapse imaging data presented in Figure 1B and Videos 1-2, with quantitative measurements provided. The data clearly demonstrate the hyperstable phenotype in living cells.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "1a657a11-b890-4b5a-83e5-7f20a7541e58",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "\u03b2:T238A microtubules have normal ultrastructure as assessed by negative stain electron microscopy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C4 is supported by electron micrographs in Figure 1C showing that mutant microtubules appear structurally normal. This control experiment establishes that the dynamic changes are not due to gross structural defects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "2bea6cb0-5033-4bfc-9d5f-f36aa142cd50",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In vitro, \u03b2:T238A and wild-type microtubules show similar concentration-dependent elongation rates, with statistically significant differences in x-intercepts but not slopes, indicating little effect on elongation biochemistry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C6, C100, and C101 are supported by quantitative analysis of elongation data in Figure 1D. Statistical testing confirms the slope similarity and x-intercept difference. The interpretation that elongation biochemistry is largely unaffected is reasonable given the similar slopes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "832e94f2-176e-4603-a6af-a0d68c096035",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "\u03b2:T238A microtubules undergo catastrophe less frequently than wild-type, which is particularly notable given that mutant microtubules were growing slower due to lower tubulin concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C102 are supported by catastrophe frequency measurements in Figure 1E with appropriate sample sizes (N=99, 115). The contextual observation in C102 strengthens the finding by noting the conservative nature of the comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "13ec3e33-beee-4f3f-8961-84d7f1146c13",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "\u03b2:T238A microtubules shrink approximately 100-fold more slowly than wild-type (1.1 vs 96 \u03bcm/min), indicating that the mutation significantly strengthens lattice contacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C9 are supported by shrinking rate measurements in Figure 1E. The dramatic difference in shrinking rates is well-documented with appropriate replicates (N=16). The inference about strengthened lattice contacts (C9) is reasonable given the magnitude of the effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "f720a486-4f1b-4113-a6ce-73ada00606d3",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Even with the non-hydrolyzable GTP analog GTP\u03b3S, \u03b2:T238A shows substantially more nucleation than wild-type, ruling out defective GTPase activity as the cause and establishing that GTP\u03b3S better mimics GTP than GMPCPP for yeast tubulin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 are supported by fluorescence imaging and spindown assays in Figure 2A-B. The logic is sound: if increased nucleation persists when hydrolysis cannot occur, then GTPase defects cannot explain the phenotype. The GMPCPP vs GTP\u03b3S comparison is empirically supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "e8af0fc9-b4df-4d01-956d-928da35dfff0",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "\u03b2:T238A microtubules contain similarly low amounts of GTP and Pi as wild-type when assembled with GTP\u03b3S, demonstrating that the mutant remains competent for GTP hydrolysis and that altered dynamics cannot be attributed to GTP or GDP\u00b7Pi accumulation, requiring a non-enzymatic mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C18 are supported by TLC analysis in Figure 2C-D with appropriate replicates (n=3). The data clearly show that both wild-type and mutant have low GTP and Pi content, ruling out GTPase defects. The conclusion that a non-enzymatic mechanism must be responsible (C18) follows logically.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "6a6ef23b-4a86-49e2-8a5d-c019f5c32589",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "TOG domains bind with similar affinity to unpolymerized \u03b2:T238A and wild-type tubulin (within a factor of two), indicating that the mutation does not significantly change the conformation of unpolymerized tubulin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C21 are supported by analytical ultracentrifugation data in Figure 3B. The rationale (C19) is based on established TOG binding preferences from prior work. The measured affinities are very similar, and the conclusion (C21) that unpolymerized conformation is not significantly altered is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "d5c8ef44-4abc-4d3b-9198-c136e7ca0c5d",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Bim1 (yeast EB1 protein) discriminates between GTP-like and GDP-like lattice conformations, tracking growing ends and coating GTP\u03b3S-containing microtubules, similar to vertebrate EB1 proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 establish the basis for using Bim1 as a conformational probe. C22-C23 cite prior structural and functional studies. C24-C25 present control data showing expected Bim1 behavior. C26 makes a reasonable inference by analogy to vertebrate systems, supported by the observed behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "cb9d5a62-5811-4410-befa-f96010312017",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Bim1-GFP coats the entire length of GDP-containing \u03b2:T238A microtubules with cap-like intensity, demonstrating that the mutation attenuates the conformational response to GTP hydrolysis and substantially uncouples the conformational cycle from the nucleotide cycle in the lattice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C29 and C31 are supported by fluorescence microscopy data in Figure 4B showing concentration-dependent Bim1 binding (n=9 microtubules per condition). The interpretation that the mutation attenuates conformational response to hydrolysis is well-justified given that GDP-containing mutant microtubules bind Bim1 like GTP-containing microtubules.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "5b32c8a1-58d0-4f79-a97f-3abf1effbfea",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The structural consequence of the \u03b2:T238A mutation resembles the effect of taxol, which also promotes an expanded conformation in a GDP lattice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 makes a reasonable comparison to taxol based on cited structural studies (Alushin et al., 2014) and the Bim1 binding data showing GTP-like conformation with GDP nucleotide. The analogy is appropriate and helps contextualize the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "2c8feb9d-b752-4750-be24-b2484dae6b30",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "TOG domains induce dose-dependent depolymerization of stabilized microtubules with linear kinetics, consistent with a collisional mechanism where TOG stabilizes the curved, faster-dissociating conformation at microtubule ends.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C36 are supported by depolymerization assays in Figure 5. C32 cites prior work establishing that EB1 doesn't bind at the very end. C33 and C35 present the experimental observation of dose-dependent depolymerization. C36 provides a mechanistic interpretation consistent with the linear dose-response. C34 is more speculative but reasonable given TOG binding preferences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "7c0ffea9-30ed-41da-b1cc-4bc6a9f175cb",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "\u03b2:T238A microtubules depolymerize substantially slower than wild-type in TOG-induced depolymerization assays, and since TOG domains bind similarly to wild-type and mutant curved tubulin, the simplest explanation is that the mutation changes the propensity of terminal subunits to become/remain straight.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 are supported by TOG-induced depolymerization data in Figure 5 (N=30 for main conditions, N=20 for controls). C40 references earlier binding data. C41-C42 provide logical interpretation: since TOG affinity is unchanged, the difference must reflect altered conformational propensity at the microtubule end. The reasoning is sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "1ab07548-3693-4b2e-ae95-173ec76a5ec4",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Substitutions at position 238 show a trend with sidechain size: T238S is similar to T238A (static microtubules, benomyl resistant), while T238V is more wild-type-like (dynamic microtubules, less benomyl resistant), suggesting steric overpacking rather than hydrogen bonding destabilizes the straight GDP conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 are supported by benomyl sensitivity assays (Figure 6A) and in vivo dynamics measurements (Figure 6B) with appropriate sample sizes. The interpretation (C47) that steric effects rather than hydrogen bonding are responsible is reasonable given the strong effect of the Thr\u2192Ser change and the trend with sidechain volume.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "83368f6f-bf00-4fc0-b44f-57f4adf15186",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The \u03b2:C354A mutation, which reduces packing volume near T238, also shows slow shrinking and Bim1-GFP coating similar to \u03b2:T238A, suggesting both mutations stabilize microtubules through a common conformational mechanism involving changes in packing volume near helix H7 that tune the allosteric response to GDP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 cites prior work on C354A. C49-C50 are supported by Bim1-GFP binding data in Figure 6C showing similar coating patterns. C51 provides evolutionary context from sequence analysis. C52 synthesizes these findings into a coherent mechanistic model. The convergent evidence from two independent mutations strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "336a67fb-478a-4491-bf8b-f176d00b560b",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Conservative buried mutations in \u03b2-tubulin can diminish the conformational response to GDP in the lattice and uncouple the conformational and nucleotide cycles, affecting microtubule dynamics by dramatically reducing catastrophe frequency and shrinking rate while attenuating post-GTPase conformational changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53, C54, C66, C77-C79 represent summary statements of the main findings, integrating data from multiple experiments (in vivo and in vitro dynamics, Bim1 binding, TOG depolymerization, nucleotide content analysis). These conclusions are well-supported by the collective evidence presented throughout the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "61fdf85d-2733-434b-a03c-b04c336b615c",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The \u03b2:T238A mutation substantially suppresses conformational changes normally occurring after GTP hydrolysis in the lattice, with the mutant retaining more GTP-like character than wild-type, and the majority of mutation-induced effects are confined to post-GTPase conformational changes, likely explaining the slow shrinking and lower catastrophe frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 synthesize findings from Bim1 binding experiments and dynamics measurements. The interpretation that effects are primarily post-GTPase is supported by the pattern of results: minimal elongation effects but dramatic shrinking and catastrophe effects, combined with GTP-like Bim1 binding to GDP-containing mutant microtubules.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "ad169cf5-16de-41cc-a921-a15fd7667ab3",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The lack of substantial elongation effects is somewhat surprising given expectations, but increased nucleation with GTP\u03b3S indicates the mutation does affect GTP-lattice conformational transitions; the energetics of curved-to-straight transitions may not be rate-limiting for elongation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C61 discuss unexpected aspects of the results and propose speculative explanations. C59 notes the surprise, C60 presents contradictory evidence (increased nucleation), and C61 offers a speculative resolution. While the observations are supported, the mechanistic explanation remains uncertain and requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "e7333418-57ec-438e-a566-f31cd5ed4f30",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The differential response to the mutation inside versus outside microtubules is consistent with the view that curved conformation is the ground state of tubulin independent of nucleotide, that nucleotide acts across the longitudinal interface, and that lattice interactions drive conformational transitions, with observed changes largely explained by impaired allosteric response to GDP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 integrate current findings with prior structural and mechanistic studies (extensively cited). The interpretation is consistent with the data showing no change in unpolymerized tubulin conformation but dramatic changes in the lattice. The synthesis with prior work is appropriate and well-reasoned.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "7b2cb389-b445-4cd0-943b-8263e5285a00",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "By describing microtubules with identical nucleotide composition but different dynamics, the data demonstrate that allostery in the lattice dictates catastrophe frequency and shrinking rate, showing that catastrophe can occur despite diminished post-GTPase conformational changes and that the strength of allosteric response to GDP controls these dynamic properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67, C80, and C81 represent key conceptual conclusions supported by the comparison of wild-type and mutant microtubules. The data clearly show that microtubules with the same nucleotide (GDP) but different conformational responses have dramatically different dynamics, directly demonstrating the importance of allostery.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "93ea98b2-c3e4-4310-afd8-5487030771e3",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Cooperative conformational linkage in the lattice likely amplifies individual responses to nucleotide, and together with intrinsic curvature bias, the allosteric response to GDP elevates and separates threshold concentrations for elongation and nucleation, underlies fast shrinking that makes catastrophe decisive, and makes microtubules more amenable to cellular regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C71 present speculative interpretations about the functional significance of allostery and its role in microtubule regulation. While these ideas are reasonable and consistent with the data, they represent hypotheses about broader implications rather than directly tested conclusions. The speculation is clearly identified in the text (C68: 'we speculate').",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "705dd87d-b626-4f82-9c1e-98d8bbac633a",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Prior work established that \u03b2:T238A causes hyperstable microtubules but the mechanism was unknown, that tubulin cycles through multiple conformations during polymerization, that regulatory proteins selectively bind different tubulin conformations, but linking conformational changes to dynamics has remained challenging with limited mutant studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C95 establish the background context and knowledge gaps that motivated the study. These are appropriately cited from prior literature and accurately represent the state of the field. They establish the rationale for the current investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "4a4f718f-aedd-4578-b8ee-37155b36187f",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "Because T238 is buried and solvent-inaccessible, the dramatic changes in dynamics cannot result from direct perturbation of polymerization interfaces or regulatory protein interactions; wild-type and mutant could not be measured at equivalent concentrations due to differential nucleation properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C98 makes a logical inference from the buried nature of the mutation site. C99 describes an experimental limitation that is transparently reported. Both are well-justified: C98 by structural considerations, C99 by the observed nucleation differences documented in Figure 2.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    },
+    {
+      "id": "96473c0b-0b5f-47b9-88c5-a401fc246b32",
+      "content_id": "71c5d248-5019-4ff8-8f8b-7098ccdc2480",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Although yeast microtubules have been reported to contain more GTP than vertebrate microtubules, multiple lines of evidence (fast shrinking, little GTP in GTP\u03b3S microtubules, normal EB1 recognition) suggest wild-type yeast microtubules are unlikely to contain substantial GTP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C103-C105 address a potential complication in interpreting the nucleotide content data. C103 cites prior work, C104 presents control data, and C105 synthesizes multiple observations to reach a reasonable conclusion. The logic is sound and the authors appropriately acknowledge uncertainty about the GTP-containing material observed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:12.040144Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5b38dd9a-8bbb-4548-b6e4-493b6a3f2702",
+      "result_id": "8cb55c42-7226-4e98-ae82-03359d9e5026"
+    },
+    {
+      "claim_id": "880beb1a-7d09-4d35-897a-01b2ce28132b",
+      "result_id": "8cb55c42-7226-4e98-ae82-03359d9e5026"
+    },
+    {
+      "claim_id": "14ee72d2-b74e-4f8e-a67b-beaa34502863",
+      "result_id": "8cb55c42-7226-4e98-ae82-03359d9e5026"
+    },
+    {
+      "claim_id": "18ebc3e9-8dcc-4bd9-9646-c562cd2b93f1",
+      "result_id": "8cb55c42-7226-4e98-ae82-03359d9e5026"
+    },
+    {
+      "claim_id": "e2b5a62a-c718-4734-9ba7-edf233cf50b3",
+      "result_id": "8cb55c42-7226-4e98-ae82-03359d9e5026"
+    },
+    {
+      "claim_id": "c572bc79-bd09-49d8-ae40-1da29901d95a",
+      "result_id": "38ea6cec-d648-450b-9d58-d0745b26bcf3"
+    },
+    {
+      "claim_id": "1d980a6d-bde5-4787-b9f2-dd9bbad895a1",
+      "result_id": "38ea6cec-d648-450b-9d58-d0745b26bcf3"
+    },
+    {
+      "claim_id": "b180867a-b681-4ff2-94c1-358a6e9c596a",
+      "result_id": "38ea6cec-d648-450b-9d58-d0745b26bcf3"
+    },
+    {
+      "claim_id": "888fad23-480f-45bf-b99a-91bdd37d753d",
+      "result_id": "1a657a11-b890-4b5a-83e5-7f20a7541e58"
+    },
+    {
+      "claim_id": "a0895bb8-3748-44a1-93d9-bdb19a99e0d3",
+      "result_id": "2bea6cb0-5033-4bfc-9d5f-f36aa142cd50"
+    },
+    {
+      "claim_id": "8a26d1a9-1249-4044-b73c-ec4d2082d681",
+      "result_id": "2bea6cb0-5033-4bfc-9d5f-f36aa142cd50"
+    },
+    {
+      "claim_id": "6598ca7c-fa98-48bb-bb6a-df34be768065",
+      "result_id": "2bea6cb0-5033-4bfc-9d5f-f36aa142cd50"
+    },
+    {
+      "claim_id": "72fa1c84-bad0-439d-94d1-d527672d7299",
+      "result_id": "2bea6cb0-5033-4bfc-9d5f-f36aa142cd50"
+    },
+    {
+      "claim_id": "930e68b0-7375-4270-a06f-2b19cab7e441",
+      "result_id": "832e94f2-176e-4603-a6af-a0d68c096035"
+    },
+    {
+      "claim_id": "e4f9b979-efc1-42ce-b673-32afdfbebb93",
+      "result_id": "832e94f2-176e-4603-a6af-a0d68c096035"
+    },
+    {
+      "claim_id": "5a0812d0-39bc-4f0e-9969-418d510d6011",
+      "result_id": "13ec3e33-beee-4f3f-8961-84d7f1146c13"
+    },
+    {
+      "claim_id": "7e3b1dc1-8c12-45fc-9690-a26bf7368ef2",
+      "result_id": "13ec3e33-beee-4f3f-8961-84d7f1146c13"
+    },
+    {
+      "claim_id": "04e27560-2428-41ac-ab10-779c23392720",
+      "result_id": "f720a486-4f1b-4113-a6ce-73ada00606d3"
+    },
+    {
+      "claim_id": "81af332c-ac30-4806-b941-1311773f34ed",
+      "result_id": "f720a486-4f1b-4113-a6ce-73ada00606d3"
+    },
+    {
+      "claim_id": "03a77b24-a0f9-43cf-9431-6d60ab26fc4a",
+      "result_id": "f720a486-4f1b-4113-a6ce-73ada00606d3"
+    },
+    {
+      "claim_id": "757f1df9-fd62-4f1b-b2f9-529351bc2cea",
+      "result_id": "f720a486-4f1b-4113-a6ce-73ada00606d3"
+    },
+    {
+      "claim_id": "69491dad-f9e0-457f-8792-2f9bdb24dd7e",
+      "result_id": "e8af0fc9-b4df-4d01-956d-928da35dfff0"
+    },
+    {
+      "claim_id": "14d4b9e9-f92f-4f92-a118-ca47220ba1de",
+      "result_id": "e8af0fc9-b4df-4d01-956d-928da35dfff0"
+    },
+    {
+      "claim_id": "4821e893-d4bf-4d64-92f0-1ea33f143db0",
+      "result_id": "e8af0fc9-b4df-4d01-956d-928da35dfff0"
+    },
+    {
+      "claim_id": "180862ee-53a0-4c4f-8f67-24c264de0888",
+      "result_id": "e8af0fc9-b4df-4d01-956d-928da35dfff0"
+    },
+    {
+      "claim_id": "bd556426-4b9c-4975-9818-66dbef151b91",
+      "result_id": "e8af0fc9-b4df-4d01-956d-928da35dfff0"
+    },
+    {
+      "claim_id": "972397fb-ac93-418e-a675-d57f3c3ba66c",
+      "result_id": "6a6ef23b-4a86-49e2-8a5d-c019f5c32589"
+    },
+    {
+      "claim_id": "d44fb063-db2c-430a-ab79-779aaacc1c9c",
+      "result_id": "6a6ef23b-4a86-49e2-8a5d-c019f5c32589"
+    },
+    {
+      "claim_id": "64a799be-5c5c-4ab5-8b6f-9ad08040db8f",
+      "result_id": "6a6ef23b-4a86-49e2-8a5d-c019f5c32589"
+    },
+    {
+      "claim_id": "4a5a1ef8-4ac6-4838-9beb-7d3e1a6c016e",
+      "result_id": "d5c8ef44-4abc-4d3b-9198-c136e7ca0c5d"
+    },
+    {
+      "claim_id": "4a1524a5-5b70-4669-a12b-3c0e025fd46a",
+      "result_id": "d5c8ef44-4abc-4d3b-9198-c136e7ca0c5d"
+    },
+    {
+      "claim_id": "c3b34415-38d8-4923-af72-5304227eb537",
+      "result_id": "d5c8ef44-4abc-4d3b-9198-c136e7ca0c5d"
+    },
+    {
+      "claim_id": "faac21bd-c711-4041-aed4-ea708c5997a6",
+      "result_id": "d5c8ef44-4abc-4d3b-9198-c136e7ca0c5d"
+    },
+    {
+      "claim_id": "58fce65c-0b43-48e6-99a6-07755361e47c",
+      "result_id": "d5c8ef44-4abc-4d3b-9198-c136e7ca0c5d"
+    },
+    {
+      "claim_id": "0c031e7e-b5ca-46bf-8726-c8dd9854b36f",
+      "result_id": "cb9d5a62-5811-4410-befa-f96010312017"
+    },
+    {
+      "claim_id": "1075fb36-bc5c-468c-a58b-ef8738b8ace3",
+      "result_id": "cb9d5a62-5811-4410-befa-f96010312017"
+    },
+    {
+      "claim_id": "c18ef227-b340-48d5-8740-349a02450b77",
+      "result_id": "cb9d5a62-5811-4410-befa-f96010312017"
+    },
+    {
+      "claim_id": "9cc66b89-2b49-4393-9b83-63fcc7345f0b",
+      "result_id": "cb9d5a62-5811-4410-befa-f96010312017"
+    },
+    {
+      "claim_id": "93c13e25-b5d3-4bd3-bbf7-44899c6dce7b",
+      "result_id": "5b32c8a1-58d0-4f79-a97f-3abf1effbfea"
+    },
+    {
+      "claim_id": "8d9cd672-7c4a-4658-9d1a-b3a04a4c8223",
+      "result_id": "2c8feb9d-b752-4750-be24-b2484dae6b30"
+    },
+    {
+      "claim_id": "5303f030-360d-43d9-a21c-efae10fb14c6",
+      "result_id": "2c8feb9d-b752-4750-be24-b2484dae6b30"
+    },
+    {
+      "claim_id": "cf316232-123c-40c0-82cd-8ce195f1fe86",
+      "result_id": "2c8feb9d-b752-4750-be24-b2484dae6b30"
+    },
+    {
+      "claim_id": "204e2975-34f4-4ab8-bc90-ecdd00c121ba",
+      "result_id": "2c8feb9d-b752-4750-be24-b2484dae6b30"
+    },
+    {
+      "claim_id": "94baac72-737f-402c-ac99-94f4d42e32b6",
+      "result_id": "2c8feb9d-b752-4750-be24-b2484dae6b30"
+    },
+    {
+      "claim_id": "9453f67d-93c3-4155-ab2a-fe6cb37ab234",
+      "result_id": "7c0ffea9-30ed-41da-b1cc-4bc6a9f175cb"
+    },
+    {
+      "claim_id": "a9592a49-1eac-4161-918e-c0c284c697ba",
+      "result_id": "7c0ffea9-30ed-41da-b1cc-4bc6a9f175cb"
+    },
+    {
+      "claim_id": "f597f3a5-5b99-4aa1-a87c-858b77415e4a",
+      "result_id": "7c0ffea9-30ed-41da-b1cc-4bc6a9f175cb"
+    },
+    {
+      "claim_id": "492a444f-2158-41c3-8f75-6d51f9c30525",
+      "result_id": "7c0ffea9-30ed-41da-b1cc-4bc6a9f175cb"
+    },
+    {
+      "claim_id": "0895fe11-1423-4f7c-8848-7b5bdc3a5fdd",
+      "result_id": "7c0ffea9-30ed-41da-b1cc-4bc6a9f175cb"
+    },
+    {
+      "claim_id": "b9c581af-920d-4410-a577-0f7299708f8d",
+      "result_id": "7c0ffea9-30ed-41da-b1cc-4bc6a9f175cb"
+    },
+    {
+      "claim_id": "a1a31a0e-4873-4d08-8381-9bf7b65bcd88",
+      "result_id": "1ab07548-3693-4b2e-ae95-173ec76a5ec4"
+    },
+    {
+      "claim_id": "d42e980d-44d2-4d8f-a091-9a2d330616d8",
+      "result_id": "1ab07548-3693-4b2e-ae95-173ec76a5ec4"
+    },
+    {
+      "claim_id": "69904adb-db21-4eb9-a034-a954b8e67345",
+      "result_id": "1ab07548-3693-4b2e-ae95-173ec76a5ec4"
+    },
+    {
+      "claim_id": "2ba1fad1-5706-4402-9417-7b6d4a5b9f3a",
+      "result_id": "1ab07548-3693-4b2e-ae95-173ec76a5ec4"
+    },
+    {
+      "claim_id": "ad520ca9-79cb-484f-96c8-b8d4b9670545",
+      "result_id": "1ab07548-3693-4b2e-ae95-173ec76a5ec4"
+    },
+    {
+      "claim_id": "f4fd7e46-7caa-4e2e-888b-439c95c2174c",
+      "result_id": "83368f6f-bf00-4fc0-b44f-57f4adf15186"
+    },
+    {
+      "claim_id": "2d1cacb6-db34-4adb-95d4-c45fa8abf80e",
+      "result_id": "83368f6f-bf00-4fc0-b44f-57f4adf15186"
+    },
+    {
+      "claim_id": "3710efd4-45e0-48d6-a2bd-3cc7729e0add",
+      "result_id": "83368f6f-bf00-4fc0-b44f-57f4adf15186"
+    },
+    {
+      "claim_id": "83c887b9-5527-4ce1-9180-b3361835027f",
+      "result_id": "83368f6f-bf00-4fc0-b44f-57f4adf15186"
+    },
+    {
+      "claim_id": "4350dc09-f0c1-4cdf-bb59-92437fc83f00",
+      "result_id": "83368f6f-bf00-4fc0-b44f-57f4adf15186"
+    },
+    {
+      "claim_id": "c4fbc72e-cb63-49c5-bd02-3a5913ac51f2",
+      "result_id": "336a67fb-478a-4491-bf8b-f176d00b560b"
+    },
+    {
+      "claim_id": "e35da4e6-a080-43a5-a63b-83114fa9e04a",
+      "result_id": "336a67fb-478a-4491-bf8b-f176d00b560b"
+    },
+    {
+      "claim_id": "de6e33e5-462f-4508-b830-34b7f522a8c6",
+      "result_id": "336a67fb-478a-4491-bf8b-f176d00b560b"
+    },
+    {
+      "claim_id": "230da2ac-6df9-4165-8340-6407130a49d5",
+      "result_id": "336a67fb-478a-4491-bf8b-f176d00b560b"
+    },
+    {
+      "claim_id": "1b7424b1-f48e-4420-acbc-dc57a2a6cab9",
+      "result_id": "336a67fb-478a-4491-bf8b-f176d00b560b"
+    },
+    {
+      "claim_id": "5e0555c8-441a-406c-b3fb-217b6836440e",
+      "result_id": "336a67fb-478a-4491-bf8b-f176d00b560b"
+    },
+    {
+      "claim_id": "c76221a8-f408-442b-9c24-05cb4f92eba2",
+      "result_id": "61fdf85d-2733-434b-a03c-b04c336b615c"
+    },
+    {
+      "claim_id": "ba951877-93d3-4109-ae68-e608536a616f",
+      "result_id": "61fdf85d-2733-434b-a03c-b04c336b615c"
+    },
+    {
+      "claim_id": "d20a7b69-fa4c-4b5a-b5d4-c1fd854fc037",
+      "result_id": "61fdf85d-2733-434b-a03c-b04c336b615c"
+    },
+    {
+      "claim_id": "02f56255-6129-4cc5-aa1d-061e8b91fa96",
+      "result_id": "61fdf85d-2733-434b-a03c-b04c336b615c"
+    },
+    {
+      "claim_id": "4d5b454a-6079-426c-aacb-46652634d013",
+      "result_id": "ad169cf5-16de-41cc-a921-a15fd7667ab3"
+    },
+    {
+      "claim_id": "2db1ab7e-6294-4aac-9449-5f1806497bb3",
+      "result_id": "ad169cf5-16de-41cc-a921-a15fd7667ab3"
+    },
+    {
+      "claim_id": "3729fbb6-d35f-40c9-baad-97a81570ef48",
+      "result_id": "ad169cf5-16de-41cc-a921-a15fd7667ab3"
+    },
+    {
+      "claim_id": "a240e823-e8c8-483e-9a5a-cd0a3efb936d",
+      "result_id": "e7333418-57ec-438e-a566-f31cd5ed4f30"
+    },
+    {
+      "claim_id": "fa6eeaf0-f514-4a56-a9fe-07807cf276a1",
+      "result_id": "e7333418-57ec-438e-a566-f31cd5ed4f30"
+    },
+    {
+      "claim_id": "219b3f6b-0333-4fb9-85fb-d0d83a1344be",
+      "result_id": "e7333418-57ec-438e-a566-f31cd5ed4f30"
+    },
+    {
+      "claim_id": "a98c104e-7239-41c0-9042-660c0d70d96a",
+      "result_id": "e7333418-57ec-438e-a566-f31cd5ed4f30"
+    },
+    {
+      "claim_id": "3c94ee94-9825-45e1-8a49-550e1ff037f6",
+      "result_id": "7b2cb389-b445-4cd0-943b-8263e5285a00"
+    },
+    {
+      "claim_id": "695d46c7-2742-4aa2-8e71-caece2b4bcc3",
+      "result_id": "7b2cb389-b445-4cd0-943b-8263e5285a00"
+    },
+    {
+      "claim_id": "c16258eb-944c-49e3-b051-492c91bf9396",
+      "result_id": "7b2cb389-b445-4cd0-943b-8263e5285a00"
+    },
+    {
+      "claim_id": "93baf4fb-4224-4bb6-a48d-a77aab791fb5",
+      "result_id": "93ea98b2-c3e4-4310-afd8-5487030771e3"
+    },
+    {
+      "claim_id": "ccb05c7c-8a27-4cd8-875c-f1806eb64905",
+      "result_id": "93ea98b2-c3e4-4310-afd8-5487030771e3"
+    },
+    {
+      "claim_id": "d738e05d-21e0-4e92-b703-7cb0ef7f41c4",
+      "result_id": "93ea98b2-c3e4-4310-afd8-5487030771e3"
+    },
+    {
+      "claim_id": "40b3533c-b127-4458-948e-97494daad45e",
+      "result_id": "93ea98b2-c3e4-4310-afd8-5487030771e3"
+    },
+    {
+      "claim_id": "28068390-5140-4792-a1eb-655357945e91",
+      "result_id": "705dd87d-b626-4f82-9c1e-98d8bbac633a"
+    },
+    {
+      "claim_id": "5ebfbedf-63cd-4c8b-af57-06e1e2d65018",
+      "result_id": "705dd87d-b626-4f82-9c1e-98d8bbac633a"
+    },
+    {
+      "claim_id": "279d3b38-88c7-41d9-ab24-f82e5736baf9",
+      "result_id": "705dd87d-b626-4f82-9c1e-98d8bbac633a"
+    },
+    {
+      "claim_id": "2cdc59aa-867e-4373-bfb8-06c14be99f76",
+      "result_id": "705dd87d-b626-4f82-9c1e-98d8bbac633a"
+    },
+    {
+      "claim_id": "45ae6134-51e1-49ba-813c-6405e09f58bd",
+      "result_id": "705dd87d-b626-4f82-9c1e-98d8bbac633a"
+    },
+    {
+      "claim_id": "8e5964d5-7af5-4c76-b136-6d2d094d7d13",
+      "result_id": "705dd87d-b626-4f82-9c1e-98d8bbac633a"
+    },
+    {
+      "claim_id": "c60a2c25-4a76-4be1-b095-577470a0e6b0",
+      "result_id": "705dd87d-b626-4f82-9c1e-98d8bbac633a"
+    },
+    {
+      "claim_id": "dbbb0cb0-b9d4-4fad-834b-2d771748e7dc",
+      "result_id": "705dd87d-b626-4f82-9c1e-98d8bbac633a"
+    },
+    {
+      "claim_id": "a8ab97c4-3a38-4bf3-86dc-11e9bcf02730",
+      "result_id": "705dd87d-b626-4f82-9c1e-98d8bbac633a"
+    },
+    {
+      "claim_id": "c3eacade-c52f-4429-846d-9c51ae7720e3",
+      "result_id": "705dd87d-b626-4f82-9c1e-98d8bbac633a"
+    },
+    {
+      "claim_id": "c743678c-a817-4249-931e-397fd29afd5a",
+      "result_id": "705dd87d-b626-4f82-9c1e-98d8bbac633a"
+    },
+    {
+      "claim_id": "871cc1d9-92d5-4c9a-951a-2657404009ef",
+      "result_id": "705dd87d-b626-4f82-9c1e-98d8bbac633a"
+    },
+    {
+      "claim_id": "f133bbfc-e1af-4240-8d29-b6c0d2f2a09b",
+      "result_id": "705dd87d-b626-4f82-9c1e-98d8bbac633a"
+    },
+    {
+      "claim_id": "1aab5e36-762b-4e88-8251-466ba2a3fbc4",
+      "result_id": "705dd87d-b626-4f82-9c1e-98d8bbac633a"
+    },
+    {
+      "claim_id": "24a3f9b4-63de-465c-8010-8bdb505618d1",
+      "result_id": "705dd87d-b626-4f82-9c1e-98d8bbac633a"
+    },
+    {
+      "claim_id": "9ad7137c-bc65-4c42-ac49-1d325e6d36de",
+      "result_id": "705dd87d-b626-4f82-9c1e-98d8bbac633a"
+    },
+    {
+      "claim_id": "fc5e150c-bcd4-47f1-82bd-52bc445b1228",
+      "result_id": "4a4f718f-aedd-4578-b8ee-37155b36187f"
+    },
+    {
+      "claim_id": "e6df30ed-6b86-48dd-bbd8-7e3c01ad80c7",
+      "result_id": "4a4f718f-aedd-4578-b8ee-37155b36187f"
+    },
+    {
+      "claim_id": "9d914524-b0c7-4f7e-aa77-726dfc86860d",
+      "result_id": "96473c0b-0b5f-47b9-88c5-a401fc246b32"
+    },
+    {
+      "claim_id": "ede47f30-8ff7-45d2-a28d-452a5271199c",
+      "result_id": "96473c0b-0b5f-47b9-88c5-a401fc246b32"
+    },
+    {
+      "claim_id": "5d98b54c-a65b-408b-9308-78c0c963cb63",
+      "result_id": "96473c0b-0b5f-47b9-88c5-a401fc246b32"
+    }
+  ],
+  "comparisons": []
+}

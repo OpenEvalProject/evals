@@ -1,0 +1,1566 @@
+{
+  "submission": {
+    "id": "8defe719-95a3-4362-bc5d-25a33cd96dc5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:16:46.536095Z",
+    "updated_at": "2025-11-29T22:16:46.536095Z"
+  },
+  "content": [
+    {
+      "id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "submission_id": "8defe719-95a3-4362-bc5d-25a33cd96dc5",
+      "content_type": "manuscript",
+      "content_text": "# Mapping residual transmission for malaria elimination\n\n## Authors\n\n- Robert C Reiner<sup>1</sup> \u2020\n- Arnaud Le Menach<sup>3</sup>\n- Simon Kunene<sup>4</sup>\n- Nyasatu Ntshalintshali<sup>3</sup>\n- Michelle S Hsiang<sup>5</sup>\n- T Alex Perkins<sup>1</sup>\n- Bryan Greenhouse<sup>10</sup>\n- Andrew J Tatem<sup>1</sup>\n- Justin M Cohen<sup>3</sup>\n- David L Smith<sup>1</sup>\n\n### Affiliations\n\n1. Fogarty International Center National Institutes of Health Bethesda United States\n2. Department of Epidemiology and Biostatistics Indiana University School of Public Health Bloomington United States\n3. Clinton Health Access Initiative Boston United States\n4. National Malaria Control Program Manzini Swaziland\n5. Department of Pediatrics University of Texas Southwestern Medical Center Dallas United States\n6. Malaria Elimination Initiative, Global Health Group University of California, San Francisco San Francisco United States\n7. Department of Pediatrics University of California, San Francisco Benioff Children\u2019s Hospital United States\n8. Eck Institute for Global Health University of Notre Dame Notre Dame United States\n9. Department of Biological Sciences University of Notre Dame Notre Dame United States\n10. Department of Medicine University of California, San Francisco San Francisco United States\n11. Department of Geography and Environment University of Southampton Southampton United Kingdom\n12. Spatial Ecology and Epidemiology Group, Department of Zoology University of Oxford Oxford United Kingdom\n13. Institute for Health Metrics and Evaluation University of Washington Seattle, Washington United States\n14. Sanaria Institute for Global Health and Tropical Medicine Rockville, Maryland United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nEliminating malaria from a defined region involves draining the endemic parasite reservoir and minimizing local malaria transmission around imported malaria infections. In the last phases of malaria elimination, as universal interventions reap diminishing marginal returns, national resources must become increasingly devoted to identifying where residual transmission is occurring. The needs for accurate measures of progress and practical advice about how to allocate scarce resources require new analytical methods to quantify fine-grained heterogeneity in malaria risk. Using routine national surveillance data from Swaziland (a sub-Saharan country on the verge of elimination), we estimated individual reproductive numbers. Fine-grained maps of reproductive numbers and local malaria importation rates were combined to show \u2018malariogenic potential\u2019, a first for malaria elimination. As countries approach elimination, these individual-based measures of transmission risk provide meaningful metrics for planning programmatic responses and prioritizing areas where interventions will contribute most to malaria elimination.\n\n## Introduction\n\nMalaria is a leading cause of childhood morbidity and mortality (Naghavi, 2015), and chronic malaria infections contribute to and complicate diagnosis and treatment of other diseases. Controlling malaria to reduce its burden has long been a top global health priority, and eradication became an official policy of the United Nations in 1955 (Mayo and Brady, 1955). The ensuing Global Malaria Eradication Campaign (GMEP, 1955\u20131969), directed by the World Health Organization, contributed to a massive, permanent contraction in the geographic range of malaria (Gramiccia et al., 1988; Smith, 2013), and it led to development of concepts and methods for eliminating malaria that remain useful today. A key insight was the need to use different metrics, suited to natural constraints and programmatic needs, to mark progression from endemic malaria to elimination (Hay et al., 2008). Malaria eradication is once again recognized as a global priority, and as of 2011, 36 of 99 malaria endemic countries had plans to eliminate malaria (Cotter, 2011).\n\nConcepts and methodologies developed for the GMEP are being revisited and updated today in light of contemporary challenges and new technologies. Three useful concepts were called vulnerability (i.e., the rate of malaria importation), receptivity (i.e., the potential for ongoing local transmission), and their product, which was called malariogenic potential (i.e.,\u00a0the expected number of cases that could occur as a result of vulnerability and receptivity) (Pampana, 1969). Given that GMEP was predicated on the idea of universal insecticide spraying throughout at-risk areas, these notions were used primarily to evaluate the vigilance required to prevent reestablishment of transmission post-elimination rather than to make decisions about intervention selection or targeting (World Health Organization, 2012). They thus require updating in light of the different assumptions of the present campaigns. Malaria importation rates for African malaria elimination countries are much higher than those for countries that eliminated malaria in past decades due to high mobility and\u00a0highly endemic neighbors (Tatem, 2010), and receptivity may be greater. Countries have multiple tools at their disposal but must determine how to deploy them optimally to achieve and sustain elimination given constrained resources. These challenges are now being faced by Swaziland, a sub-Saharan country that has made substantial progress towards eliminating malaria. Success would make it the first mainland sub-Saharan country to eliminate malaria, and so the lessons from its national experience will be relevant for the rest of the continent.\n\n### Residual transmission and elimination\n\nA key need is for new quantitative methods and practical operational advice to guide the final stages of malaria elimination, when few local cases remain. Elimination programs have repeatedly demonstrated the critical importance of identifying areas where transmission continues in order to make the most of limited resources. The architects of the smallpox eradication strategy, for example, credit the campaign\u2019s ultimate success to a shift from universal to targeted vaccination (Foege et al., 1971). Successful elimination of malaria during the GMEP similarly demonstrated that, in resource-constrained environments, a shift is required away from a focus on universal coverage for endemic malaria towards heightened surveillance, case investigation, identification of areas where transmission risk remains high (i.e., residual transmission foci), and highly targeted interventions (Moonen, 2010). Despite progress (Ja and Hg, 2009), little guidance is available on what specific methods to use where and which metrics are appropriate for measuring progress in today's eliminating countries.\n\nSince 1999, Swaziland\u2019s National Malaria Control Program reports that the incidence of malaria has declined from 2.9 to 0.07 malaria cases per 1,000 people per year (Roll Back Malaria, 2012). Between 2010 and June 2014, Swaziland confirmed only 2,129 malaria cases, with case investigation of 1,524 of them. Of these, 870 (57%) were classified as imported, with the proportion of cases likely having acquired their infection elsewhere increasing since 2010. At a national level, the decreasing ratio of local to imported malaria cases since 2010 is suggestive of an reproductive number under control, Rc, much less than 1 on average, which would mean that elimination of endemic transmission may have already been achieved or is imminent (Churcher et al., 2014).\n\nAnalysis of national trends in reporting data provides a useful measure of overall progress but potentially masks local spatial heterogeneity in transmission, and it leaves unanswered the question of how to stratify Swaziland to allocate resources most efficiently within the country. Ideally, programs would focus attention on places and at times where and when the risk of malaria transmission is highest. Programs might direct aggressive interventions, such as focal mass drug administration, towards residual endemic foci where transmission would persist even in the absence of importation, but might opt for less aggressive maintenance of reduced risk in places where transmission is driven only by continual replenishment from imported infections. Determining whether locally acquired malaria infections are the result of endemic transmission or result from transmission chains stemming from importation requires analyzing transmission at an individual level. National risk maps have been developed based on the household locations of local malaria cases (Cohen, 2013) but these maps do not describe how much transmission is likely occurring, only whether or not there is risk of any local infections in a given location as narrowly defined by the location of infected individuals. Furthermore, they do not explain the relative importance of importation as a driver of transmission and thus cannot inform intervention selection.\n\nImproving assessment of progress and making action maps requires developing individual-based assessment of risk to link cases together, determine the magnitude of transmission as measured by RC, and evaluate where transmission may be occurring endemically versus where it is driven only by ongoing importation. Most of the imported cases have been identified in and around the large cities of Mbabane and Manzini (Figure 1A), but proportionally fewer locally acquired cases were found in these cities (Cohen, 2013). Malaria cases imported into the major cities of Swaziland are likely only responsible for causing a few local cases (i.e., Rc in the large cities is very low). Areas outside the major cities\u2014specifically those in the east and north of Swaziland\u2014appear to have a higher ratio of local to imported cases, suggesting that though on average each malaria case generates less than one other case (i.e. Rc < 1), there are some focal areas where endemic transmission may continue to smolder. Measuring progress and achieving elimination requires properly characterizing and quantifying heterogeneity in this residual transmission. Here, to address these needs, we have defined vulnerability, receptivity, and malariogenic potential in quantitative terms based on a continuous point-process and developed fine-grained maps.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/09520/elife-09520-fig1-v2.jpg)\n\n**Figure 1.:** Panel A: Swaziland imported and local malaria cases (green squares and orange diamonds, respectively) are plotted spatially. Local case pairs identified as putative orphaned chains are indicated by red diamonds. A solitary local case also identified as an orphan is identified as a red diamond within a circle. Panel B: Swaziland imported (green line) and local (orange line) malaria cases are plotted in time, aggregated by month. Panel C: The final consensus network plot is displayed. Local cases are plotted as diamonds and imported cases as green circles. The color of each link corresponds to the \u201cstrength\u201d of the connection as measured by the number of parameter sets where that link was identified as optimal. Imported cases that were not found to be the \u201cmost likely\u201d parent of a local case are not displayed.\n\n### Mapping receptivity\n\nElimination programs in the endgame have long been advised to categorize cases as imported, introduced (the result of first degree transmission from an imported infection), or indigenous (the result of second or more degree transmission), yet no method for making this distinction has ever been formally described\u00a0(Pampana, 1969). Methods for doing so are largely based on case investigations, but such methods could be validated and augmented with genetic and computational methods for linking cases. Understanding which cases are linked to other cases is also important because it allows direct measurement of RC, an important measure of the need for additional intervention. We developed computational methods for assessing malaria transmission (see Methods) that quantifies the most likely \u201cparent\u201d of each local case. We do not distinguish between potential parents in terms of their status as \u201cimported\u201d or \u201clocal\u201d. In this, we are estimating causal links that can be counted in space-time to get measurements of receptivity. Further, these links build transmission chains that can be used to gain a deeper understanding of the spatial variation in Rc. This approach uses an understanding of malaria transmission dynamics to redefine \u201cproximity\u201d of two malaria cases as a generalized probabilistic measure based on distance and time separating two cases to evaluate potential causality. Malaria transmission directly links two individuals through two bites from the same mosquito. The time elapsed between detection of two linked cases will be bound by the serial interval (Fine, 2003) (i.e., the length of a complete malaria transmission cycle), mosquito mortality, and the timing of case detection relative to infection. These aspects of malaria ecology provide probabilistic bookends to temporal proximity, as even with detection (and assuming all detected cases are treated promptly), cases are ever more unlikely to be linked as the chance of a mosquito living long enough to link them diminishes. In space, the simple but common Gaussian diffusion-based approximation of movement approximates the combined spread of mosquitoes and humans, and is governed by a single constant. Given the use of continuous distribution functions, the algorithm was forced to always find a link even if it was inconceivable. As such, we incorporated a minimum threshold that dichotomized links into \u201cplausible\u201d (with a level of plausibility) and \u201cimplausible.\u201d\n\nBy accounting for potential differences in the distribution of the serial interval for human malaria cases and timing of case identification, multiplying the temporal processes with spatial diffusion, and finally sweeping across a suite of potential diffusion constants (see Methods) we linked local cases to a \u201cmost likely\u201d parent case. By combining \u201cmost likely\u201d links, we arrived at a single weighted network that represents the consensus linkages (Figure 1). As was suspected by visual inspection of the spatial distribution of the data, most of the imported cases within the major cities of Swaziland did not appear to be responsible for ongoing transmission. However, both imported and locally transmitted cases in the north and east did, infrequently, initiate extended transmission chains. Elsewhere, no identified case was a likely parent, so these cases are classified as \u201corphans.\u201d\n\nTaking the output of the transmission network, the number of direct \u2018offspring\u2019 arising from each case is its estimated Rc. Using zero-inflated negative binomial regression models on a set of ecological, social and demographic covariates, likely values of Rc\u00a0were extrapolated spatially from observed case locations to all of Swaziland at 100-meters squared resolution (Figure 2A). The resulting map of Rc\u00a0illustrates the estimated heterogeneous distribution of current malaria receptivity within Swaziland. To the west, Rc\u00a0is close to 0. Within Mbabane and Manzini, Rc\u00a0is estimated at 0.08 and 0.12 respectively. Conversely, in the northeast near the Mozambican border, Rc estimates increase up to 1.70. As suspected, while endemic transmission does not appear to occur within the urban centers of Swaziland, it does not yet appear eliminated from the entirety of the country. The smoothed Rc\u00a0map was found to be statistically significantly different from a flat map (p-value <2e-16) but it remained unclear the statistical significance of each pixel. Further analysis is required to assess the robustness of isolated locations where Rc appears elevated. This will be an important step to appropriately interpret these maps for the purpose of resource allocation given constraints on the number of individual locations that can be visited.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/09520/elife-09520-fig2-v2.jpg)\n\n**Figure 2.:** Panel A: Extrapolated Rc values for Swaziland using a zero-inflated negative binomial regression. Areas in orange to red indicate locations where Rc is greater than unity. The legend doubles as a histogram indicating the number of individuals (on a log10 scale) that live within each range of Rc values. Panel B: Extrapolated importation probabilities for Swaziland using a logistic regression. Panel C: Malariogenic potential for Swaziland calculated as the product of Rc and the probability of importation.\n\n### Malariogenic potential\n\nThe potential for local transmission will not result in actual transmission unless malaria parasites are present. As Swaziland successfully extirpates these final foci of endemic transmission, local transmission in the country will increasingly arise only around imported malaria cases. The total number of locally acquired malaria cases in Swaziland is the product of importation (vulnerability) and onward transmission (receptivity), with the ongoing operational challenge of maintaining gains greatest in regions with both higher receptivity (i.e. RC) and higher vulnerability (i.e., the number of malaria infections imported each year that could seed new transmission): the product of these quantities has been defined as the \u2018malariogenic potential\u2019 (Pampana, 1969). Malariogenic potential was mapped as the product of Rc and vulnerability (Figure 2c). The resulting map illustrates where locally acquired/transmitted cases are most likely to occur, and thus where resources may need to be prioritized to prevent reestablishment of malaria given the joint risks of importation and subsequent transmission.\n\nWe assessed the stability of our malariogenic potential maps as well as our other output by splitting the data into two halves (before and after July 1, 2012). The malariogenic potential maps for the two halves appear very similar (Figure 3C versus Figure 4C), as are the importation maps (Figure 3B versus 4B). There are some differences in the Rc maps (Figure 3A versus 4A), but both analyses identified regions in the northeast where Rc was larger than 1. Both analyses identified a larger \u2018max\u2019 Rc (35.36 for the first half and 3.13 for the second half) as well as a larger percent of the population living in the highest Rc category (Rc>1.4).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/09520/elife-09520-fig3-v2.jpg)\n\n**Figure 3.:** Panel A: Extrapolated Rc values for Swaziland using a zero-inflated negative binomial regression. Areas in orange to red indicate locations where Rc is greater than unity. The legend doubles as a histogram indicating the number of individuals (on a log10 scale) that live within each range of Rc values. Panel B: Extrapolated importation probabilities for Swaziland using a logistic regression. Panel C: Malariogenic potential for Swaziland calculated as the product of Rc and the probability of importation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/09520/elife-09520-fig4-v2.jpg)\n\n**Figure 4.:** Panel A: Extrapolated Rc values for Swaziland using a zero-inflated negative binomial regression. Areas in orange to red indicate locations where Rc is greater than unity. The legend doubles as a histogram indicating the number of individuals (on a log10 scale) that live within each range of Rc values. Panel B: Extrapolated importation probabilities for Swaziland using a logistic regression. Panel C: Malariogenic potential for Swaziland calculated as the product of Rc and the probability of importation.\n\n### Occult local transmission\n\nIdeally, every case of malaria in Swaziland would be detected. In reality, case detection is imperfect, and it is likely unnecessary to find every case to create circumstances that lead to elimination. In this analysis, missed cases could matter if they biased the estimates of Rc, depending on whether locally transmitted or imported cases were more likely to be missed. If a case that is missed results in local transmission and if those future cases are captured by surveillance, those future cases may appear to have no plausible cause. The identification of such \u201corphan\u201d cases can help indicate places where Swaziland must work to implement or strengthen active infection detection. Within this analysis, due to the inclusion of temporal uncertainty to account for potential differences between detection times and time of onset, rare links can be formed between a case and a second case where the second case was picked up at the same time or even later. These rare links would only form if no other case that occurred earlier were close in space-time as judged by the spatio-temporal kernels. In these circumstances, due to the flexibility of the spatio-temporal kernel, a pair of cases could be identified as being the most likely parent of each other. These \u201cloops\u201d identify two orphaned cases that were identified close in time-space to each other but whose actual parent was not captured by surveillance.\n\nWithin this analysis, there were 22 pairs of local cases that formed loops (Figure 1A, Figure 1C, red diamonds) as well as a single case that was not linked to any other case across any of the potential parameter sets (Figure 1A, circled red diamond, Figure 1C, red circle). Prioritizing enhanced surveillance in the areas surrounding these orphan chains would help narrow uncertainty about residual transmission within Swaziland.\n\nThe majority of these loops occurred during the months with the least transmission (Figure 5), which reflects the decreased chance of any cases being detected in the month prior. The method described here yields estimates of transmissibility that can guide interventions to places where occult transmission is most likely to be happening even in the absence of knowledge of specific infected individuals. Nevertheless, the more complete the surveillance effort, the more accurate these mapping efforts will become.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/09520/elife-09520-fig5-v2.jpg)\n\n**Figure 5.:** The average number of cases per month and total occurrence of looped (or \u2018orphaned\u2019 cases) are plotted against month.\n\nAsymptomatic infections are another possible explanation for the orphaned cases. Missing asymptomatic cases could either result in an overestimate or underestimate of Rc (if they are likely parents or likely offspring of other cases). For this analysis, we did not account for asymptomatic or inapparent cases. Although it was not done universally, intensive infection detection around cases resulted in very few additional infections (53/7307 between July 2014 and June 2015) consistent with the assumption that there is not a large pool of unreported infections that would\u00a0greatly\u00a0bias our results.\n\n## Discussion\n\nCommunicable disease policies require different approaches than policies for non-communicable diseases, as each case presents both medical and public health challenges (Smith et al., 2005). For infectious diseases, reproductive numbers provide a theoretical basis for strategic planning and programmatic evaluation, such as critical vaccine coverage levels and outbreak responses (Anderson and May, 1991). Estimating individual reproductive numbers by linking up malaria infections is a special case of a method that has be used more widely for other diseases (Walker et al., 2010).\n\nMalaria, like other diseases with an environmental component, represents a special challenge because of spatial heterogeneity in the risk of transmission (Bejon et al., 2010; Bousema et al., 2012; Bejon et al., 2014; Bousema et al., 2010). In the end phases of elimination, population-level measures become inefficient and inadequate, so as countries approach the goal of eliminating malaria, individual-based estimates of transmission must identify putative foci where transmission remains high and where resources should be targeted (Hay et al., 2008). Case counts alone do not necessarily convey information about transmission, since many of those cases may have been acquired far from where they were detected. Aggregate ratios of local to imported cases in time (or in space) alone, while more representative of overall progress, could obscure localized transmission if, for example, most cases failed to transmit but some pockets of transmission remained. This analysis, which identifies places and times where cases are most likely to be transmitted, confirms that there has been dramatic progress towards elimination overall, but it also identified substantial heterogeneity in progress within Swaziland.\n\nThe Swaziland National Malaria Control Program (NMCP) will need to manage imported malaria as long as endemic transmission continues in neighboring countries, so directing and optimizing limited resources is crucial. Combining assessments of receptivity with assessments of vulnerability provide actionable intelligence to support malaria programs in designing targeted intervention strategies in the most relevant places; for example, the NMCP may consider targeting travelers with prophylaxis in places with high vulnerability, while focal mass drug administration or other aggressive measures might be most appropriate in places with evidence of endemic transmission and low vulnerability. Our approach provides spatiotemporally relevant and resolved metrics of transmission that can be used to identify future cases as either critical or relatively unimportant for overall elimination efforts. Further, and perhaps most important, our approach can be used to stratify future control responses by differentiating between locations where elimination would be a consequence of merely decreasing effective importation versus where elimination of endemic transmission is needed through reduction in local receptivity. Predictions generated by our approach will also be useful as a baseline for in-development genetic testing and molecular typing models (Greenhouse and Smith, 2015), and will remain pertinent as a proxy for such methods in places where resources are limited to enable universal parasite typing. These methods can help Swaziland reassess its needs and remain malaria-free as surrounding countries control transmission and make further progress. Through regional elimination, economic growth, and efficient use of existing resources, malaria elimination can perhaps become as stable in Swaziland as it has been elsewhere (Smith, 2013; Chiyaka et al., 2013).\n\n## Methods\n\n### Surveillance data\n\nSwaziland implemented the first stage of a national malaria elimination policy in 2011, and local malaria transmission dropped to extremely low levels. There was a 25-fold decline in the average malaria case-load, from 10.0 cases per 1000 in 1995 at the peak of an epidemic to 0.4 cases per 1000 in 2010 (Roll Back Malaria, 2012). Swaziland also benefitted from a regional malaria control effort called the Lubombo Spatial Development Initiative (LSDI) established as a partnership with neighboring countries. The LSDI sharply reduced the number of malaria cases imported from its neighbors, and now most of the remaining cases appear to originate in Mozambique.\n\nAt low transmission intensity, the methods and metrics used elsewhere in Africa to assess the risk of further local transmission initiated from imported malaria become inadequate, so Swaziland adopted a surveillance system based on some combination of passive and reactive case detection. Household locations of confirmed malaria cases were identified by passive or reactive case detection and georeferenced by the NMCP. Infected individuals reporting no travel, whether abroad or within Swaziland were categorized as locally acquired cases. Infected individuals who reported travel abroad to endemic countries within biologically meaningful windows were categorized as imported cases. Initially, a travel history in the previous two weeks was collected, this was updated to four weeks in August 2012 and to eight weeks in July 2013.\n\nFrom January 2010 to June 2014, Swaziland investigated 1,524 cases collecting information about household location, case demographics (age, gender, occupation), use of malaria prevention measures, dates of symptoms and of diagnosis, treatment. Of all investigated cases, 592 (38.8%) were categorized as locally-acquired based on a lack of a recent travel history to endemic regions. This national average of 592 local cases to 870 imported cases suggests that on average, the reproductive number under present levels of control is approximately 0.4. This estimate represents a national average figure, however, and it could disguise undetected ongoing transmission in some hotspots.\n\n### Spatio-temporal associations\n\nWhat is needed is a tool that can simultaneously assess transmission dynamics in a low-transmission setting such as Swaziland, identify locations that systematically produce unobserved cases, and provide internal feedback to improve the surveillance system. As a first step towards accomplishing this larger purpose, we developed algorithms to reconstruct putative transmission chains. Using comprehensive case data from the Swaziland NMCP from 2010 through 2013, these estimated chains\u2014based on identifying likely causal links between successive cases through the use of spatio-temporal kernels\u2014provide insight on the frequency and length of chains of local transmission.\n\nTo evaluate the relative chance that one locally acquired case arose from any other case, we would optimally like to calculate the probability that an older case was fed on and initiated a transmission cycle in a mosquito that subsequently fed on and infected the second case. This measure of propensity would combine the epidemiology of malaria within a mosquito, the mosquito\u2019s lifespan as well as movement probabilities for both mosquitoes and humans. Given the complexities of both human and mosquito movement, we assessed the likelihood using a family of probability distribution functions. By varying the unknown space and time parameters for each component, we can produce a putative single space-time distribution of locally acquired cases based on the time and location of any other case.\n\nThe approximate likelihood will be a product of mosquito lifespan, mosquito movement, human movement, and malaria epidemiology. We assume that the contributions of movement act independently of the contributions of mosquito and disease ecology. Following previous approaches, we approximate movement with simple diffusion. This movement kernel aggregates both the movement of the mosquito as well as the movement of the individuals. We assess the importance of this assumption by substituting diffusion within our algorithm with a long-tailed Pareto distribution, discussed in Appendix 2. Simple diffusion assumes that there is no trend in time (i.e. the most likely outcome is that there is no movement), and that movement is Gaussian. Specifically, if we have two individuals who became infectious t days apart and x meters apart, the chance, denoted M(x,t), that the pathogen had moved so far in such a time given a specified diffusion constant, D>0, would be\n\n$$\nM(x,t)=\\frac{1}{\\sqrt{2\\piDt}}e^{\u2212\\frac{x^{2}}{2Dt}}\n$$\n\nThe mosquito and transmission dynamics component is more complex. Due to the disease ecology of malaria, incubation periods within both the mosquito (known as the extrinsic incubation period) and the second host (known as the intrinsic incubation period) definitionally separate onset of infectiousness in secondary infections from the onset of infectiousness in the initial case (the time between the onset of infectiousness in causally linked infections is known as the serial interval). The serial interval is the sum of the extrinsic incubation period, the time elapsed while infectious mosquitoes quest for blood and infect humans and the intrinsic incubation period. We estimate the intrinsic incubation period as minimally 18 days (approximately six days in the liver plus 12 days for mature gametocytes to be produced in sufficient densities) and the extrinsic incubation period as minimally 12 days.\n\nThe brief lifespan of the mosquito acts as an opposing force to the extrinsic incubation period. One increases the serial interval while the other decreases the likelihood of extended time between subsequent cases. Estimates of Anopheles mosquitos\u2019 lifespan is between 10 and 14 days. Though somewhat simplistic, the exponential distribution is frequently used for the lifespan of mosquitoes. Combining mosquito and disease ecology, if we have two individuals who became infectious t days apart and x meters apart, the chance, denoted G(x,t), that the serial interval was so long would be\n\n$$\nG(x,t)={0,\u00a0if\u00a0t<30\\frac{1}{12}e^{1\u2212\\frac{1}{12}(t\u221218)},e^{\\int^{\\sum}}o.w.\n$$\n\nNote that there is zero chance that the serial interval is less than the sum of the two incubation periods. Also, when t\u226530, the effect of mosquito mortality does not apply to the portion of the serial interval attributed to the intrinsic incubation period.\n\nAs noted above, we treat movement independently from mosquito and disease ecology, and as such, the approximate likelihood of a causal link between two cases can be broken into it constituent parts. If we have two individuals who became infectious t days apart and x meters apart, the spatio-temporal transmission distribution of malaria, denoted P(x,t), is given as:\n\n$$\nP(x,t)=M(x,t)\u2217G(x,t)\n$$\n\nIt is important to acknowledge that case data recorded are not in fact the times of onset of infectiousness within the hosts, and there is no guarantee that the time between two sequential cases being identified corresponds identically with the time between onset of infectiousness between the two individuals. To account for the non-negligible difference between the difference between two detection times and the serial interval, we add temporal noise to t. specifically, for a given level of temporal noise, denoted \u03c3t, we convolve P with Normally distributed noise. Thus, the spatio-temporal transmission distribution that we analyze the data with, denoted K(x,t), is (for a given diffusion constant D and temporal noise coefficient \u03c3t)\n\n$$\nK(x,t)=\\int\u2212\u221e\u221eP(x,t+\\epsilon_{t})\\frac{1}{\\sqrt{2\\pi\\sigma_{t}^{2}}}e^{\u2212\\frac{\\epsilon_{t^{2}}}{2\\sigma_{t}^{2}}}d\\epsilon_{t}\n$$\n\nThus, with the exception of D and \u03c3t, the entire spatio-temporal distribution of transmission is specified. Since both the movements of mosquitoes and humans is encapsulated by D, it is unclear exactly what its value should be. However, as will be discussed below, by sweeping across a variety of values, we can actually use the uncertainty in D to understand which links are relatively strong and which are relatively tenuous. Similarly, the true difference between onset and detection is unknown and we will likewise sweep across potential values of \u03c3t.\n\n### Identifying most likely chains of transmission\n\nThe model described above computes the likelihood that a mosquito infected by a putative index case at a particular point in space and time later infected an individual identified as a locally acquired case at a different point in space and time. The assumption that movement can be approximated by diffusion (and the use within the `likelihood\u2019 of the exact locations where the two cases were identified) will necessarily force the computed chance of causal infection to be extremely low. As such, any probability computed using the above spatio-temporal distribution would often yield inappropriately low values\u2014if only because every particular place and time was unlikely.\n\nWhat is more useful, given the uncertainty, is to compare likelihood measures. All locally acquired cases can be assigned to a \u201cparent\u201d that gives the highest likelihood, even though it may be only marginally more likely than some other link. We assume due to the extremely low transmission intensity of malaria in Swaziland that each infection was only caused by a single parent and superinfection did not occur. A threshold value was chosen and tested to help identify cases that were \u201corphans,\u201d or unlikely to be associated with any other identified case. The most likely parent or orphan status was computed for each combination of a mesh on the constants (i.e., D, \u03c3t and a threshold value). The aggregate data from all these assessments was used to estimate the strength of some particular connection. Links that only occur in the rarest of cases (i.e. when the diffusion constant is extremely high) are tenuous.\n\nFor the Swaziland data, we compute the set of potential links for 400 different scenarios corresponding to 20 different values of the diffusion constant and 20 different values of \u03c3t. We vary $\\sqrt{D}$ in even steps from 40 m to 1000 m and vary \u03c3t from 0 to 19 days. For display purposes we will indicate the link that occurred the most times, although in most cases the link that occurred the most frequently was the only potential link identified for a given case. Further, we vary the relative probability threshold from 1% to 50%, also investigating the intermediary value of 10%.\n\n### Modeling malaria receptivity\n\nThe number of direct offspring at each case location was explained by a set of spatial covariates, which described weather, geography, population density, and urbanicity (Figure 6). Elevation and topography have been demonstrated to influence risk through their effects on temperature and suitability for mosquito breeding (Cohen, 2008). The topographic wetness index (TWI), a measure representing the amount of water that should enter a given spatial unit divided by the rate at which the water should flow out of that unit, was calculated from elevation as a measure for suitability for mosquito breeding habitat (Cohen, 2008; Cohen, 2010a;2010b). Suitability for mosquito habitat was also described using remotely sensed imagery (Hay et al., 1998). The normalized difference vegetation index (NDVI) (Rouse Jr et al., 1974) and enhanced vegetation Index (EVI) were calculated from averaged Landsat Enhanced Thematic Mapper (ETM) images from 2010 till 2013 with spatial resolution 100 m. Densely populated areas may face substantially different malaria risks from very sparsely populated, rural areas (Hay et al., 2005).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/09520/elife-09520-fig6-v2.jpg)\n\n**Figure 6.:** The four significant covariates for the malaria receptivity regression were (A) distance from paved roads, (B) distance from unpaved roads, (C) distance from feeder roads, and (D) distance from Mozambique. All distances were in meters.\n\nWe used spatial zero-inflated negative binomial regression model to extrapolate the number of direct offspring from the cases locations to all points across Swaziland, producing a map of malaria receptivity at 100-meter resolution. For model selection purposes, due to the small total number of covariates for the zero-inflated negative binomial regression (12), we assessed the model fit through AIC for every sub-model (4095 models) and selected the one with the best AIC. The resulting model (Table 1) retained covariates that were not found to be significant, but since we were not interested in the impact of any given covariate, but rather interpolating the observed RC values across Swaziland, backwards selection would have been inappropriate. All analysis was conducted using R, version 3.1.1\u00a0(Team RDC, 2011).\u00a0It is important to note here that there are numerous other models that are \u2018almost\u2019 as good as the best. The regression algorithm is a middle step between linking cases together and making operational recommendations. We have not reported all AIC values, and there are other models that give similar AIC values and result in similar maps of receptivity. The particular parameters chosen (and their particular coefficients) are only a step of our algorithm, which would be rerun at any time-point in the future given new data and which would likely result in a different \u201cbest\u201d model linking spatial covariates to the output of the first part of our algorithm.\n\n**Table 1.**\n Zero-inflated negative binomial regression summary.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Factor (source)</th>\n      <th>Count model coefficient</th>\n      <th>Zero-inflated coefficient</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Intercept</td>\n      <td>7.686407</td>\n      <td>1642.7199</td>\n    </tr>\n    <tr>\n      <td>Elevation (m) (http://www.worldclim.org/bioclim)</td>\n      <td>\u22120.0026</td>\n      <td>\u22120.65197</td>\n    </tr>\n    <tr>\n      <td>Population (http://www.worldpop.org.uk/)</td>\n      <td>\u22120.017571</td>\n      <td>\u22120.01190</td>\n    </tr>\n    <tr>\n      <td>Annual Mean Temperature (0.1\u00b0C) (http://www.worldclim.org/bioclim)</td>\n      <td>0.141979</td>\n      <td>30.70232</td>\n    </tr>\n    <tr>\n      <td>Max Temperature of Warmest Month (0.1\u00b0C) (http://www.worldclim.org/bioclim)</td>\n      <td>\u22120.113297</td>\n      <td>\u221223.66837</td>\n    </tr>\n    <tr>\n      <td>Min Temperature of Coldest Month (0.1\u00b0C)</td>\n      <td>\u22120.029091</td>\n      <td>\u221210.04161</td>\n    </tr>\n    <tr>\n      <td>Precipitation of Wettest Month (mm) (http://www.worldclim.org/bioclim)</td>\n      <td>0.008032</td>\n      <td>0.50592</td>\n    </tr>\n    <tr>\n      <td>Precipitation of Driest Month (mm) (http://www.worldclim.org/bioclim)</td>\n      <td>\u22120.108767</td>\n      <td>12.04175</td>\n    </tr>\n    <tr>\n      <td>TWI</td>\n      <td>\u22120.024820</td>\n      <td>\u22124.02392</td>\n    </tr>\n    <tr>\n      <td>NDVI (https://landsat.usgs.gov/)</td>\n      <td>2.461314</td>\n      <td>\u2212159.39390</td>\n    </tr>\n    <tr>\n      <td>EVI (https://landsat.usgs.gov/)</td>\n      <td>\u22123.732795</td>\n      <td>82.72595</td>\n    </tr>\n    <tr>\n      <td>Log(theta)</td>\n      <td>\u22120.613861</td>\n      <td>NA</td>\n    </tr>\n  </tbody>\n</table>\n\n### Modeling malaria importation\n\nThe risk of importing malaria from endemic countries to Swaziland is assumed to be a function of population density, distance to Mozambique and distance to roads (Figure 7). Values for each of the covariates were compared between the locations of the households of patients identified with imported acquired infections and randomly selected \u201cbackground\u201d points from across Swaziland. Background points do not necessarily indicate the absence of transmission, but instead characterize the environment of the country (Anderson, 2006). A sample of 10,000 background points (Anderson, 2006; Phillips and Dud\u00edk, 2008) was selected randomly across Swaziland. The observed importation points as well as the 10,000 background points were combined in a GAM logistic regression (Table 2, Figure 7). GAMs were implemented using the \u2018mgcv\u2019 package in R (Wood, 2011) and fit by maximizing the restricted maximum likelihood to reduce bias and over-fitting of the smooth splines.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/09520/elife-09520-fig7-v2.jpg)\n\n**Figure 7.:** The ten significant covariates for the malaria importation regression were (A) elevation, (B) population, (C) annual mean temperature (bio1 - http://www.worldclim.org/bioclim), (D) maximum temperature of the warmest month (bio5 - http://www.worldclim.org/bioclim), (E) minimum temperature of coldest month (bio6 - http://www.worldclim.org/bioclim), (F) precipitation of the wettest month (bio13 - http://www.worldclim.org/bioclim), (G) precipitation of driest month (bio14 - http://www.worldclim.org/bioclim), (H) TWI, (I) normalized difference vegetation index, and (J) enhanced vegetation index.\n\n**Table 2.**\n GAM logistic regression summary.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Factor</th>\n      <th>edf</th>\n      <th>Chi.sq</th>\n      <th>p-value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Population (http://www.worldpop.org.uk/)</td>\n      <td>6.729</td>\n      <td>688.01</td>\n      <td>&lt;2e-16</td>\n    </tr>\n    <tr>\n      <td>Paved roads (source: country)</td>\n      <td>5.909</td>\n      <td>172.49</td>\n      <td>&lt;2e-16</td>\n    </tr>\n    <tr>\n      <td>Unpaved roads</td>\n      <td>1.002</td>\n      <td>15.88</td>\n      <td>6.88e-5</td>\n    </tr>\n    <tr>\n      <td>Feeders roads</td>\n      <td>6.499</td>\n      <td>50.37</td>\n      <td>3e-8</td>\n    </tr>\n    <tr>\n      <td>Distance to Mozambique (http://www.fao.org/geonetwork/srv/en/main.home)</td>\n      <td>7.516</td>\n      <td>75.27</td>\n      <td>1.04e-12</td>\n    </tr>\n  </tbody>\n</table>\n\n### Malariogenic potential\n\nThe relevant concept for malaria transmission in elimination setting was named \u201cvulnerability\u201d by the World Health Organization (WHO) and defined qualitatively as \u201cthe frequent influx of infected individuals or groups and/or infective anophelines\u201d; quantitatively, the rate of malaria importation includes all parasites that cross the border in humans and vectors. The impact of vulnerability depends on an area's \u201creceptivity\u201d to malaria which reflects the conditions of transmission \u201cthrough the abundant presence of vector anophelines and the existence of other ecological and climatic factors\u201d. Receptivity is defined quantitatively as the effective reproduction number RC, which describes the expected number of secondary human infections originating from a single, untreated infected human taking into account vector control measures.\n\nThe product of the receptivity and vulnerability was named malariogenic potential.\n",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "f0305a67-6812-4470-af74-3ea8b2f5f3a8",
+      "submission_id": "8defe719-95a3-4362-bc5d-25a33cd96dc5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mark Jit, London School of Hygiene & Tropical Medicine, and Public Health England , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.09520.012](https://doi.org/10.7554/eLife.09520.012)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Mapping residual transmission for malaria elimination\" for peer review at eLife. Your submission has been favorably evaluated by Prabhat Jha (Senior editor), Mark Jit (Reviewing editor), and two reviewers, one of whom, John Drake, has agreed to reveal his identity.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nThe reviewers and the Reviewing editor agreed that your paper takes a unique approach to modelling malaria transmission \u2013 that of linking cases with likely transmission pairs or groups. While similar approaches have been taken with viral respiratory illness (and likely other pathogens that we are not aware of) this appears to be the first application to a vector borne disease. It is sophisticated but not overly complicated and represents an important benchmark on the path to developing better analytics to guide and document the success of malaria elimination programs in sub-Saharan Africa. The analysis appears sound and internally consistent.\n\nThere are a few issues that we would like you to address, listed below. In addition, we normally require that modelling papers in eLife make their data openly accessible. Please could you tell us of your arrangements for this, or otherwise justify why you are not able to do so.\n\n1) Can any indication of the temporal stability of the map of Rc be given? It is essential to know if the apparently smoldering foci are stable and therefore targets of intervention, or variable and therefore blanket control measures are all that is tractable.\n\n2) We are not clear what view you have of the number of undetected cases or what effect that might have on their map. Presumably it is theoretically possible that all the Rcs are, in fact, several fold higher and case detection frustrates the exercise?\n\n3) How much transmission might be asymptomatic? Swaziland was previously at higher transmission intensity and therefore many adults may be able to tolerate parasitaemia without becoming unwell.\n\n4) When results on pairs of cases are presented in one figure then probabilities are assigned. However elsewhere and in the text the implication is made that a dichotomy has been made between cases that are linked and single cases \u2013 how have you moved from continuous probability to a dichotomy?\n\n5) Genetic testing would be a more definitive way of distinguishing linked from unlinked cases. Can you comment on the likely utility of their modelling approach once genetic testing is available?\n\n6) Is the \"smoldering transmission\" reflective of long-term transmission in the absence of imported cases, or does it require an imported case every so often to keep it smoldering?\n\n7) Fine-grained needs a definition (pixel size? Or is it a point-process with pixelation simply for presentation purposes?).\n\n8) There is a confluent area of high Rc in the North East. In the rest of the country there are occasional dots of high Rc scattered around. What is the possibility that these would have arisen by chance? The model implies very multiple comparisons. If a simulation was carried out where the episodes were randomly distributed through the population then how often would one see a \"spike\" of red colour in the map just due to chance?\n\n9) If immigrants tend to go to the same places and at the same time (e.g. because they are all being recruited to work in the same factory) then that would increase the likelihood that the two cases would spuriously be associated in time and place despite not having a transmission cycle. Would that source of spurious linkage be accounted for in the migration data that was used?\n\n10) Is there an issue with spatial autocorrelation (Figure 2 and zero inflated negative binomial regression)? Were the errors inspected? (In general, regression diagnostics, including differences in AIC values among models, have not been reported.)\n\n11) What are the units in Tables 1 and 2? Were data centered and scaled prior to fitting GAMs? In my experience, this sometimes improves performance.\n",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "36ad8c32-7ab3-460a-ba8f-8d8eab9fd468",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C1",
+      "claim": "Malaria is a leading cause of childhood morbidity and mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Malaria is a leading cause of childhood morbidity and mortality (Naghavi, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Naghavi, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "bcfdbae3-ce41-4ccb-8cd8-c0256c9e69c1",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C2",
+      "claim": "Chronic malaria infections contribute to and complicate diagnosis and treatment of other diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "chronic malaria infections contribute to and complicate diagnosis and treatment of other diseases",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific understanding of malaria's effects",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "f16d5d56-c6bf-472c-9f83-95255cf9ddbd",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C3",
+      "claim": "Eradication became an official policy of the United Nations in 1955.",
+      "claim_type": "EXPLICIT",
+      "source": "eradication became an official policy of the United Nations in 1955 (Mayo and Brady, 1955)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mayo and Brady, 1955",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "1a30d43e-705b-4fa8-a7de-f126bbb8d485",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C4",
+      "claim": "The Global Malaria Eradication Campaign (GMEP) occurred from 1955-1969.",
+      "claim_type": "EXPLICIT",
+      "source": "The ensuing Global Malaria Eradication Campaign (GMEP, 1955\u20131969), directed by the World Health Organization",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the text",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "eb3f1b62-f26d-430d-9102-e2f3dec06668",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C5",
+      "claim": "The GMEP contributed to a massive, permanent contraction in the geographic range of malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "The ensuing Global Malaria Eradication Campaign (GMEP, 1955\u20131969), directed by the World Health Organization, contributed to a massive, permanent contraction in the geographic range of malaria (Gramiccia et al., 1988; Smith, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Gramiccia et al., 1988 and Smith, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "c8f3f8a7-45f7-432d-8444-4c13d3d4089b",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C6",
+      "claim": "As of 2011, 36 of 99 malaria endemic countries had plans to eliminate malaria.",
+      "claim_type": "EXPLICIT",
+      "source": "as of 2011, 36 of 99 malaria endemic countries had plans to eliminate malaria (Cotter, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cotter, 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "df277203-b300-4791-98ed-0952de594451",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C7",
+      "claim": "Malaria importation rates for African malaria elimination countries are much higher than those for countries that eliminated malaria in past decades due to high mobility and highly endemic neighbors.",
+      "claim_type": "EXPLICIT",
+      "source": "Malaria importation rates for African malaria elimination countries are much higher than those for countries that eliminated malaria in past decades due to high mobility and highly endemic neighbors (Tatem, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Tatem, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "7e3fa429-8e4f-49c8-804b-6f0b9200aa1b",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C8",
+      "claim": "Swaziland would be the first mainland sub-Saharan country to eliminate malaria if successful.",
+      "claim_type": "EXPLICIT",
+      "source": "Success would make it the first mainland sub-Saharan country to eliminate malaria",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated in the text",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "1f70d5b3-4e0f-4ade-855c-09a5a7940c8d",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C9",
+      "claim": "The smallpox eradication campaign's ultimate success was credited to a shift from universal to targeted vaccination.",
+      "claim_type": "EXPLICIT",
+      "source": "The architects of the smallpox eradication strategy, for example, credit the campaign's ultimate success to a shift from universal to targeted vaccination (Foege et al., 1971)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Foege et al., 1971",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "d429537f-6c0a-431a-a096-0a1f0bb10104",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C10",
+      "claim": "Since 1999, Swaziland's National Malaria Control Program reports that the incidence of malaria has declined from 2.9 to 0.07 malaria cases per 1,000 people per year.",
+      "claim_type": "EXPLICIT",
+      "source": "Since 1999, Swaziland's National Malaria Control Program reports that the incidence of malaria has declined from 2.9 to 0.07 malaria cases per 1,000 people per year (Roll Back Malaria, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Roll Back Malaria, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "f74ebc88-a669-4225-98a4-40ebd8267709",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C11",
+      "claim": "Between 2010 and June 2014, Swaziland confirmed only 2,129 malaria cases, with case investigation of 1,524 of them.",
+      "claim_type": "EXPLICIT",
+      "source": "Between 2010 and June 2014, Swaziland confirmed only 2,129 malaria cases, with case investigation of 1,524 of them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated data from surveillance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "0dad2340-f3c6-4812-a13c-176a18287c90",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C12",
+      "claim": "Of the investigated cases, 870 (57%) were classified as imported.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, 870 (57%) were classified as imported",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated data from surveillance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "0c793dc5-decb-42c4-afdc-b87c2bffb653",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C13",
+      "claim": "The proportion of cases likely having acquired their infection elsewhere has been increasing since 2010.",
+      "claim_type": "EXPLICIT",
+      "source": "with the proportion of cases likely having acquired their infection elsewhere increasing since 2010",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated observation from surveillance data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "bd1d9db5-6c0d-4e5d-b2a1-daaec746c6a4",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C14",
+      "claim": "The decreasing ratio of local to imported malaria cases since 2010 is suggestive of a reproductive number under control (Rc) much less than 1 on average.",
+      "claim_type": "EXPLICIT",
+      "source": "At a national level, the decreasing ratio of local to imported malaria cases since 2010 is suggestive of an reproductive number under control, Rc, much less than 1 on average, which would mean that elimination of endemic transmission may have already been achieved or is imminent (Churcher et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from data supported by citation to Churcher et al., 2014",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "af8f0832-f9a7-4681-87dc-61747ba8516b",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C15",
+      "claim": "Most of the imported cases have been identified in and around the large cities of Mbabane and Manzini.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the imported cases have been identified in and around the large cities of Mbabane and Manzini (Figure 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated in text and shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "3e7c5b0b-9ada-4ee8-aa48-a79a65208ef2",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C16",
+      "claim": "Proportionally fewer locally acquired cases were found in the major cities compared to other areas.",
+      "claim_type": "EXPLICIT",
+      "source": "but proportionally fewer locally acquired cases were found in these cities (Cohen, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cohen, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "e8094407-8d5d-4b6a-bc56-3415c5e6878a",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C17",
+      "claim": "Malaria cases imported into the major cities of Swaziland are likely only responsible for causing a few local cases (i.e., Rc in the large cities is very low).",
+      "claim_type": "EXPLICIT",
+      "source": "Malaria cases imported into the major cities of Swaziland are likely only responsible for causing a few local cases (i.e., Rc in the large cities is very low)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the data on case distribution",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "379031e5-cee5-4f40-9758-18ed4d043efb",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C18",
+      "claim": "Areas outside the major cities\u2014specifically those in the east and north of Swaziland\u2014appear to have a higher ratio of local to imported cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Areas outside the major cities\u2014specifically those in the east and north of Swaziland\u2014appear to have a higher ratio of local to imported cases",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from the data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "0c2e718b-bcb3-420f-b08b-236c4c995b8e",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C19",
+      "claim": "There are some focal areas where endemic transmission may continue to smolder.",
+      "claim_type": "EXPLICIT",
+      "source": "there are some focal areas where endemic transmission may continue to smolder",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the data patterns",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "c99a19ce-7025-4100-b0a9-ed3aa3563df0",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C20",
+      "claim": "Malaria transmission directly links two individuals through two bites from the same mosquito.",
+      "claim_type": "EXPLICIT",
+      "source": "Malaria transmission directly links two individuals through two bites from the same mosquito.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of malaria transmission biology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "1c8cccba-602a-465f-ac40-0568c007a995",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C21",
+      "claim": "The time elapsed between detection of two linked cases will be bound by the serial interval, mosquito mortality, and the timing of case detection relative to infection.",
+      "claim_type": "EXPLICIT",
+      "source": "The time elapsed between detection of two linked cases will be bound by the serial interval (Fine, 2003) (i.e., the length of a complete malaria transmission cycle), mosquito mortality, and the timing of case detection relative to infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on knowledge of malaria epidemiology with citation to Fine, 2003",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "647f79c9-2860-4b13-8de7-fa6457c26804",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C22",
+      "claim": "Most of the imported cases within the major cities of Swaziland did not appear to be responsible for ongoing transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "As was suspected by visual inspection of the spatial distribution of the data, most of the imported cases within the major cities of Swaziland did not appear to be responsible for ongoing transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the transmission network analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "45cf808e-d2b2-4226-87e9-67aafcfbca52",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C23",
+      "claim": "Both imported and locally transmitted cases in the north and east did, infrequently, initiate extended transmission chains.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both imported and locally transmitted cases in the north and east did, infrequently, initiate extended transmission chains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from the transmission network analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "983c5048-9a86-49ee-a74c-daa80207b344",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C24",
+      "claim": "Within Mbabane and Manzini, Rc is estimated at 0.08 and 0.12 respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Within Mbabane and Manzini, Rc is estimated at 0.08 and 0.12 respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from the spatial extrapolation model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "760ff565-c2d9-4ff1-bfe6-3969dff41d3b",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C25",
+      "claim": "In the northeast near the Mozambican border, Rc estimates increase up to 1.70.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, in the northeast near the Mozambican border, Rc estimates increase up to 1.70.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from the spatial extrapolation model",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "459e2dfe-dc92-4d4f-8f8c-07ab603b7b47",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C26",
+      "claim": "Endemic transmission does not appear to occur within the urban centers of Swaziland.",
+      "claim_type": "EXPLICIT",
+      "source": "As suspected, while endemic transmission does not appear to occur within the urban centers of Swaziland",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the Rc estimates",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "9346d914-82f5-4ce2-919f-b21a60c795d1",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C27",
+      "claim": "Endemic transmission does not yet appear eliminated from the entirety of the country.",
+      "claim_type": "EXPLICIT",
+      "source": "it does not yet appear eliminated from the entirety of the country",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the Rc estimates",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "9dd6fc3b-35d0-4d5f-9f6f-a5d134e50306",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C28",
+      "claim": "The smoothed Rc map was found to be statistically significantly different from a flat map (p-value <2e-16).",
+      "claim_type": "EXPLICIT",
+      "source": "The smoothed Rc map was found to be statistically significantly different from a flat map (p-value <2e-16)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical test result",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "7e1c4719-98dc-4678-b917-4f18fde35de1",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C29",
+      "claim": "The malariogenic potential maps for the two halves of the data appear very similar.",
+      "claim_type": "EXPLICIT",
+      "source": "The malariogenic potential maps for the two halves appear very similar (Figure 3C versus Figure 4C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of results from split data analysis shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "e6e1a574-83f9-4444-a880-771e901e732b",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C30",
+      "claim": "The importation maps for the two halves of the data are similar.",
+      "claim_type": "EXPLICIT",
+      "source": "as are the importation maps (Figure 3B versus 4B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of results from split data analysis shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "633fe7b7-e057-4b6c-8dba-c5054a8ff637",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C31",
+      "claim": "There are some differences in the Rc maps between the two halves of the data.",
+      "claim_type": "EXPLICIT",
+      "source": "There are some differences in the Rc maps (Figure 3A versus 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of results from split data analysis shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "241fe570-ed6e-459f-a3cc-cd2856de5c52",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C32",
+      "claim": "Both analyses identified regions in the northeast where Rc was larger than 1.",
+      "claim_type": "EXPLICIT",
+      "source": "but both analyses identified regions in the northeast where Rc was larger than 1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from split data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "1826922e-59d7-4a53-9701-c0d62ec98846",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C33",
+      "claim": "Within this analysis, there were 22 pairs of local cases that formed loops.",
+      "claim_type": "EXPLICIT",
+      "source": "Within this analysis, there were 22 pairs of local cases that formed loops (Figure 1A, Figure 1C, red diamonds)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from the transmission network analysis shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "35595b52-4bbb-4be2-a792-78f35c9d8fe5",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C34",
+      "claim": "There was a single case that was not linked to any other case across any of the potential parameter sets.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as a single case that was not linked to any other case across any of the potential parameter sets (Figure 1A, circled red diamond, Figure 1C, red circle)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Result from the transmission network analysis shown in figures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "8f20c666-ff5f-4d8a-b8f7-3b8e32c4bbee",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C35",
+      "claim": "The majority of orphan loops occurred during the months with the least transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of these loops occurred during the months with the least transmission (Figure 5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from the data shown in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "7c1b3e7f-9a47-4dc7-a28c-fd063b40790b",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C36",
+      "claim": "Intensive infection detection around cases resulted in very few additional infections (53/7307 between July 2014 and June 2015).",
+      "claim_type": "EXPLICIT",
+      "source": "Although it was not done universally, intensive infection detection around cases resulted in very few additional infections (53/7307 between July 2014 and June 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from surveillance activities",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "c733ef42-51e3-42f0-a5b7-e4cd7901fd61",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C37",
+      "claim": "The low rate of additional infections from intensive detection is consistent with the assumption that there is not a large pool of unreported infections that would greatly bias the results.",
+      "claim_type": "EXPLICIT",
+      "source": "consistent with the assumption that there is not a large pool of unreported infections that would greatly bias our results",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the surveillance data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "43513e7e-cabc-45d2-8d68-2a1fc9fb1c70",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C38",
+      "claim": "Reproductive numbers provide a theoretical basis for strategic planning and programmatic evaluation for infectious diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "For infectious diseases, reproductive numbers provide a theoretical basis for strategic planning and programmatic evaluation, such as critical vaccine coverage levels and outbreak responses (Anderson and May, 1991)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Anderson and May, 1991",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "5ee75ee0-7a0f-49bc-a95e-31172e56cfa5",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C39",
+      "claim": "Estimating individual reproductive numbers by linking up malaria infections is a special case of a method that has been used more widely for other diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimating individual reproductive numbers by linking up malaria infections is a special case of a method that has be used more widely for other diseases (Walker et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Walker et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "4c44d91f-ae26-4ce2-9d23-d0c2faffc8a3",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C40",
+      "claim": "Malaria represents a special challenge because of spatial heterogeneity in the risk of transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Malaria, like other diseases with an environmental component, represents a special challenge because of spatial heterogeneity in the risk of transmission (Bejon et al., 2010; Bousema et al., 2012; Bejon et al., 2014; Bousema et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "9f2129ad-c476-49ea-a7b2-17a7754e20f0",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C41",
+      "claim": "In the end phases of elimination, population-level measures become inefficient and inadequate.",
+      "claim_type": "EXPLICIT",
+      "source": "In the end phases of elimination, population-level measures become inefficient and inadequate",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on understanding of elimination dynamics",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "3cbc8f94-74f6-4b89-8398-31a1edb32b78",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C42",
+      "claim": "As countries approach the goal of eliminating malaria, individual-based estimates of transmission must identify putative foci where transmission remains high and where resources should be targeted.",
+      "claim_type": "EXPLICIT",
+      "source": "so as countries approach the goal of eliminating malaria, individual-based estimates of transmission must identify putative foci where transmission remains high and where resources should be targeted (Hay et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hay et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "c76aaf69-9d48-494f-98cc-863c79ff796c",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C43",
+      "claim": "The analysis confirms that there has been dramatic progress towards elimination overall.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis, which identifies places and times where cases are most likely to be transmitted, confirms that there has been dramatic progress towards elimination overall",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from the analysis results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "273c0603-ce15-4b5d-837c-2e3eafce8cb0",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C44",
+      "claim": "The analysis identified substantial heterogeneity in progress within Swaziland.",
+      "claim_type": "EXPLICIT",
+      "source": "but it also identified substantial heterogeneity in progress within Swaziland",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from the analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "b099e949-b019-4429-8e6f-03d7ee1ee66f",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C45",
+      "claim": "The Swaziland National Malaria Control Program (NMCP) will need to manage imported malaria as long as endemic transmission continues in neighboring countries.",
+      "claim_type": "EXPLICIT",
+      "source": "The Swaziland National Malaria Control Program (NMCP) will need to manage imported malaria as long as endemic transmission continues in neighboring countries",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the situation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "e6712576-d431-441c-807c-89edd76df349",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C46",
+      "claim": "There was a 25-fold decline in the average malaria case-load, from 10.0 cases per 1000 in 1995 at the peak of an epidemic to 0.4 cases per 1000 in 2010.",
+      "claim_type": "EXPLICIT",
+      "source": "There was a 25-fold decline in the average malaria case-load, from 10.0 cases per 1000 in 1995 at the peak of an epidemic to 0.4 cases per 1000 in 2010 (Roll Back Malaria, 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Roll Back Malaria, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "cf25cbda-0d93-4ada-8c7a-4e1e3068455d",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C47",
+      "claim": "Swaziland benefitted from a regional malaria control effort called the Lubombo Spatial Development Initiative (LSDI) established as a partnership with neighboring countries.",
+      "claim_type": "EXPLICIT",
+      "source": "Swaziland also benefitted from a regional malaria control effort called the Lubombo Spatial Development Initiative (LSDI) established as a partnership with neighboring countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated fact",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "4d8e21a2-e35f-445d-82e7-b8c316ede9b7",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C48",
+      "claim": "The LSDI sharply reduced the number of malaria cases imported from its neighbors.",
+      "claim_type": "EXPLICIT",
+      "source": "The LSDI sharply reduced the number of malaria cases imported from its neighbors",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated outcome of the LSDI program",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "84bb1fe5-fc5d-45be-ae0e-79d50e42895d",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C49",
+      "claim": "Most of the remaining cases appear to originate in Mozambique.",
+      "claim_type": "EXPLICIT",
+      "source": "and now most of the remaining cases appear to originate in Mozambique",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from surveillance data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "dfd3cc95-99e3-4649-aa2b-498e1ea826ae",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C50",
+      "claim": "From January 2010 to June 2014, Swaziland investigated 1,524 cases collecting information about household location, case demographics, use of malaria prevention measures, dates of symptoms and of diagnosis, and treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "From January 2010 to June 2014, Swaziland investigated 1,524 cases collecting information about household location, case demographics (age, gender, occupation), use of malaria prevention measures, dates of symptoms and of diagnosis, treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of surveillance data collection",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "a819356a-e56d-4d7e-8341-cfd4d9de0777",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C51",
+      "claim": "Of all investigated cases, 592 (38.8%) were categorized as locally-acquired based on a lack of a recent travel history to endemic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Of all investigated cases, 592 (38.8%) were categorized as locally-acquired based on a lack of a recent travel history to endemic regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data from case investigations",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "abd0bfa9-426c-4fc3-9ec4-6f8c0528314c",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C52",
+      "claim": "The national average of 592 local cases to 870 imported cases suggests that on average, the reproductive number under present levels of control is approximately 0.4.",
+      "claim_type": "EXPLICIT",
+      "source": "This national average of 592 local cases to 870 imported cases suggests that on average, the reproductive number under present levels of control is approximately 0.4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculation from surveillance data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "242c67b5-c669-4414-9751-55de493bb265",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C53",
+      "claim": "The intrinsic incubation period is estimated as minimally 18 days (approximately six days in the liver plus 12 days for mature gametocytes to be produced in sufficient densities).",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate the intrinsic incubation period as minimally 18 days (approximately six days in the liver plus 12 days for mature gametocytes to be produced in sufficient densities)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on knowledge of malaria biology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "ca390dde-9189-4357-90cd-89ca0138bbc0",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C54",
+      "claim": "The extrinsic incubation period is estimated as minimally 12 days.",
+      "claim_type": "EXPLICIT",
+      "source": "and the extrinsic incubation period as minimally 12 days",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on knowledge of malaria biology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "b272e459-3728-481b-85c1-0eea8c75a323",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C55",
+      "claim": "Estimates of Anopheles mosquitos' lifespan is between 10 and 14 days.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimates of Anopheles mosquitos' lifespan is between 10 and 14 days.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of mosquito biology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "c7f22e6d-d223-46ca-8e08-62680f4d93eb",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C56",
+      "claim": "The exponential distribution is frequently used for the lifespan of mosquitoes.",
+      "claim_type": "EXPLICIT",
+      "source": "Though somewhat simplistic, the exponential distribution is frequently used for the lifespan of mosquitoes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on common modeling practice",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "79b77075-055d-48b0-8f80-9ef4b806b368",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C57",
+      "claim": "Elevation and topography have been demonstrated to influence risk through their effects on temperature and suitability for mosquito breeding.",
+      "claim_type": "EXPLICIT",
+      "source": "Elevation and topography have been demonstrated to influence risk through their effects on temperature and suitability for mosquito breeding (Cohen, 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cohen, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "b5f0cdae-7c16-4f4a-a428-c35d757895c5",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C58",
+      "claim": "Densely populated areas may face substantially different malaria risks from very sparsely populated, rural areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Densely populated areas may face substantially different malaria risks from very sparsely populated, rural areas (Hay et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hay et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "d573d725-9130-44a1-9718-c472385c2842",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C59",
+      "claim": "The normalized difference vegetation index (NDVI) and enhanced vegetation Index (EVI) were calculated from averaged Landsat Enhanced Thematic Mapper (ETM) images from 2010 till 2013 with spatial resolution 100 m.",
+      "claim_type": "EXPLICIT",
+      "source": "The normalized difference vegetation index (NDVI) (Rouse Jr et al., 1974) and enhanced vegetation Index (EVI) were calculated from averaged Landsat Enhanced Thematic Mapper (ETM) images from 2010 till 2013 with spatial resolution 100 m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data processing methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "afa1e0cd-192b-42ba-bd73-7758b49c01ae",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C60",
+      "claim": "A spatial zero-inflated negative binomial regression model was used to extrapolate the number of direct offspring from the cases locations to all points across Swaziland, producing a map of malaria receptivity at 100-meter resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We used spatial zero-inflated negative binomial regression model to extrapolate the number of direct offspring from the cases locations to all points across Swaziland, producing a map of malaria receptivity at 100-meter resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the modeling method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "9f3df83b-f441-464f-b5db-9fce98d9f511",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C61",
+      "claim": "The model selection assessed the model fit through AIC for every sub-model (4095 models) and selected the one with the best AIC.",
+      "claim_type": "EXPLICIT",
+      "source": "For model selection purposes, due to the small total number of covariates for the zero-inflated negative binomial regression (12), we assessed the model fit through AIC for every sub-model (4095 models) and selected the one with the best AIC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the model selection procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "36465c66-d710-41a5-8ef7-e55824eb8564",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C62",
+      "claim": "All analysis was conducted using R, version 3.1.1.",
+      "claim_type": "EXPLICIT",
+      "source": "All analysis was conducted using R, version 3.1.1 (Team RDC, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of software used",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "ed50dbc4-222d-42e4-9587-fd19688f494a",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C63",
+      "claim": "The risk of importing malaria from endemic countries to Swaziland is assumed to be a function of population density, distance to Mozambique and distance to roads.",
+      "claim_type": "EXPLICIT",
+      "source": "The risk of importing malaria from endemic countries to Swaziland is assumed to be a function of population density, distance to Mozambique and distance to roads (Figure 7)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Assumption of the importation model",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "0f8fd04d-37ff-48c0-98b6-00ff3e7a89f5",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C64",
+      "claim": "A sample of 10,000 background points was selected randomly across Swaziland.",
+      "claim_type": "EXPLICIT",
+      "source": "A sample of 10,000 background points (Anderson, 2006; Phillips and Dud\u00edk, 2008) was selected randomly across Swaziland.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the modeling method with citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "432f3543-1be1-46f3-88f1-acd0ebda7bbc",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C65",
+      "claim": "GAMs were implemented using the 'mgcv' package in R.",
+      "claim_type": "EXPLICIT",
+      "source": "GAMs were implemented using the 'mgcv' package in R (Wood, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of software used with citation",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "f06b7d79-5b38-4114-8f56-6a230f605299",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C66",
+      "claim": "GAMs were fit by maximizing the restricted maximum likelihood to reduce bias and over-fitting of the smooth splines.",
+      "claim_type": "EXPLICIT",
+      "source": "and fit by maximizing the restricted maximum likelihood to reduce bias and over-fitting of the smooth splines",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the fitting method",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "3ef85313-421a-4c23-a293-79e8b7fbc0f4",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C67",
+      "claim": "Vulnerability was defined qualitatively by WHO as 'the frequent influx of infected individuals or groups and/or infective anophelines'.",
+      "claim_type": "EXPLICIT",
+      "source": "The relevant concept for malaria transmission in elimination setting was named \"vulnerability\" by the World Health Organization (WHO) and defined qualitatively as \"the frequent influx of infected individuals or groups and/or infective anophelines\"",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition from WHO",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "8d0f8c87-d18f-4fba-96af-0cebf81d3135",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C68",
+      "claim": "Quantitatively, the rate of malaria importation includes all parasites that cross the border in humans and vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "quantitatively, the rate of malaria importation includes all parasites that cross the border in humans and vectors",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative definition provided by authors",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "b6c2c8b8-2dd3-4a93-9769-dfc575f71bfe",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C69",
+      "claim": "Receptivity reflects the conditions of transmission 'through the abundant presence of vector anophelines and the existence of other ecological and climatic factors'.",
+      "claim_type": "EXPLICIT",
+      "source": "The impact of vulnerability depends on an area's \"receptivity\" to malaria which reflects the conditions of transmission \"through the abundant presence of vector anophelines and the existence of other ecological and climatic factors\"",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition from WHO",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "2de070dd-96be-4fd1-8fc1-a0a28199ecf9",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C70",
+      "claim": "Receptivity is defined quantitatively as the effective reproduction number RC, which describes the expected number of secondary human infections originating from a single, untreated infected human taking into account vector control measures.",
+      "claim_type": "EXPLICIT",
+      "source": "Receptivity is defined quantitatively as the effective reproduction number RC, which describes the expected number of secondary human infections originating from a single, untreated infected human taking into account vector control measures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantitative definition provided by authors",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "bc2c5de7-0175-4655-adb8-1a82c3377944",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C71",
+      "claim": "The product of the receptivity and vulnerability was named malariogenic potential.",
+      "claim_type": "EXPLICIT",
+      "source": "The product of the receptivity and vulnerability was named malariogenic potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition from historical WHO terminology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "7422f95b-387f-4df8-a135-6dd7099d76c4",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C72",
+      "claim": "The approach provides spatiotemporally relevant and resolved metrics of transmission that can be used to identify future cases as either critical or relatively unimportant for overall elimination efforts.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach provides spatiotemporally relevant and resolved metrics of transmission that can be used to identify future cases as either critical or relatively unimportant for overall elimination efforts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Claim about the utility of the developed approach",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "8cf79fbc-0590-45f4-a53b-d17ae14e3d03",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C73",
+      "claim": "The approach can be used to stratify future control responses by differentiating between locations where elimination would be a consequence of merely decreasing effective importation versus where elimination of endemic transmission is needed through reduction in local receptivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, and perhaps most important, our approach can be used to stratify future control responses by differentiating between locations where elimination would be a consequence of merely decreasing effective importation versus where elimination of endemic transmission is needed through reduction in local receptivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Claim about the utility of the developed approach",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "0612da17-0550-4d43-b82d-c807f4d32423",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C74",
+      "claim": "Predictions generated by the approach will be useful as a baseline for in-development genetic testing and molecular typing models.",
+      "claim_type": "EXPLICIT",
+      "source": "Predictions generated by our approach will also be useful as a baseline for in-development genetic testing and molecular typing models (Greenhouse and Smith, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Claim about future utility with citation",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "8aaadd57-99f2-47c2-a896-928fb13585e8",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C75",
+      "claim": "The methods will remain pertinent as a proxy for genetic methods in places where resources are limited to enable universal parasite typing.",
+      "claim_type": "EXPLICIT",
+      "source": "and will remain pertinent as a proxy for such methods in places where resources are limited to enable universal parasite typing",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Claim about future utility",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "fca8f669-c343-441d-affb-7ca27e0a0928",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "claim_id": "C76",
+      "claim": "Through regional elimination, economic growth, and efficient use of existing resources, malaria elimination can perhaps become as stable in Swaziland as it has been elsewhere.",
+      "claim_type": "EXPLICIT",
+      "source": "Through regional elimination, economic growth, and efficient use of existing resources, malaria elimination can perhaps become as stable in Swaziland as it has been elsewhere (Smith, 2013; Chiyaka et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative claim about future outcomes with citations",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4477b7b3-b123-4a41-a620-5de07fb8eff4",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Swaziland achieved dramatic reductions in malaria incidence from 2.9 to 0.07 cases per 1,000 people per year between 1999 and the study period. Between 2010-2014, only 2,129 cases were confirmed with 1,524 investigated; of these, 870 (57%) were imported and 592 (38.8%) were locally-acquired, with the proportion of imported cases increasing over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 and C46-C51 provide consistent surveillance data from Swaziland's National Malaria Control Program showing dramatic declines in malaria incidence and a shift toward imported cases. The data are internally consistent, cite appropriate sources (Roll Back Malaria, 2012), and describe the surveillance methodology adequately.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "3251200d-ec21-459a-9f32-18db29414f75",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The national average reproductive number under control (Rc) is estimated at approximately 0.4, calculated from the ratio of 592 local to 870 imported cases, suggesting that elimination of endemic transmission may have already been achieved or is imminent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C14 and C52 calculate Rc as the simple ratio of local to imported cases (592/870 \u2248 0.4). However, this assumes each imported case has equal opportunity to transmit and that all transmission chains are captured, which may not hold given incomplete surveillance, spatial heterogeneity, and temporal dynamics. The calculation lacks uncertainty quantification and validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "68798fa8-bc30-49ee-989e-9653449c994c",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Spatial analysis reveals that imported cases concentrate in major cities (Mbabane and Manzini) with proportionally fewer local cases, suggesting very low Rc in urban areas. In contrast, areas in the east and north show higher ratios of local to imported cases, indicating potential focal areas where endemic transmission may continue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 describe spatial patterns supported by Figure 1A and citation to Cohen (2013). The observation that urban areas have many imported but few local cases while rural areas show higher local:imported ratios is consistent with differential transmission potential. However, the inference about 'smoldering' transmission (C19) is somewhat speculative without formal statistical testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "e628be55-b2ea-4349-b9a6-c305a32dda2d",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors establish the biological parameters for malaria transmission modeling: intrinsic incubation period of minimally 18 days (6 days liver stage + 12 days for gametocyte maturation), extrinsic incubation period of minimally 12 days, and Anopheles mosquito lifespan of 10-14 days, modeled using exponential distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C21 and C53-C56 describe well-established malaria transmission biology parameters. The values cited (18-day intrinsic, 12-day extrinsic incubation, 10-14 day mosquito lifespan) are consistent with malaria literature. The use of exponential distribution for mosquito mortality is acknowledged as simplistic but standard practice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "4f6287e2-74fc-480a-ac3b-7c24654e7a2d",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Transmission network analysis and spatial modeling reveal that Rc is very low in major cities (0.08 in Mbabane, 0.12 in Manzini) but increases to 1.70 in the northeast near Mozambique. Endemic transmission does not appear to occur in urban centers but has not been eliminated from the entire country. The spatial heterogeneity in Rc is statistically significant (p<2e-16).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C22-C28 present the core Rc mapping results. While the spatial pattern is plausible and statistically significant overall (C28), the authors acknowledge uncertainty about individual pixel significance and note that 'further analysis is required to assess the robustness of isolated locations.' The method relies on multiple assumptions about movement, detection, and transmission that are not fully validated. The high Rc values (up to 1.70) in some areas contrast with the overall declining trend.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "cc74f06f-dfee-4b71-befe-100dc3b2465a",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Split-data validation analysis dividing cases before and after July 1, 2012 shows that malariogenic potential and importation maps are very similar between the two time periods. While some differences exist in Rc maps, both analyses consistently identified regions in the northeast where Rc exceeds 1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 describe temporal validation shown in Figures 3 and 4. The consistency of malariogenic potential and importation maps across time periods supports robustness. The identification of northeast regions with Rc>1 in both periods strengthens confidence in this key finding, despite some differences in the Rc maps themselves.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "1ba6ad18-ed8d-45d3-b45b-525b97be7597",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The transmission network analysis identified 22 pairs of local cases forming 'loops' (cases that appear to be each other's most likely parent) and one completely unlinked case. The majority of these orphan loops occurred during months with the least transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 describe orphan cases identified by the algorithm, shown in Figures 1A, 1C, and 5. The occurrence of loops indicates limitations in surveillance or the model's ability to identify true parent cases. The temporal pattern (loops during low transmission months) is consistent with reduced probability of detecting actual parent cases when overall case numbers are low.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "120542bf-1489-4135-a845-be2e3075d9b7",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Intensive infection detection around cases between July 2014 and June 2015 identified very few additional infections (53/7,307), consistent with the assumption that there is not a large pool of unreported infections that would greatly bias the results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C36-C37 use reactive case detection data to argue against substantial underreporting. However, this data is from a later time period (2014-2015) than the main analysis (2010-2014) and was 'not done universally.' The low detection rate could reflect either truly low transmission or limitations in the detection method itself. Asymptomatic infections are acknowledged but not quantified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "e125e0ca-4869-4a3a-9c45-9f00f6ba488d",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A spatial zero-inflated negative binomial regression model was developed using ecological, social, and demographic covariates (elevation, topography, TWI, NDVI, EVI from Landsat imagery, population density) to extrapolate Rc values from case locations to all of Swaziland at 100-meter resolution. Model selection used AIC across 4,095 sub-models, implemented in R version 3.1.1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C57-C62 describe the receptivity modeling methodology. While the approach is reasonable and uses appropriate covariates (C57-C59 with citations), several concerns arise: (1) the authors acknowledge that many models have similar AIC values and the specific parameters are just 'a step of our algorithm,' (2) Table 1 shows the selected model retained non-significant covariates, (3) no validation metrics (e.g., cross-validation, out-of-sample prediction) are provided, and (4) the zero-inflated negative binomial may not be appropriate if the zeros represent true absence vs. unobserved transmission.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "720db664-96f0-4e3b-a346-d809c3df1ee7",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Malaria importation risk was modeled as a function of population density, distance to Mozambique, and distance to roads using GAM logistic regression. The model compared 870 imported case locations to 10,000 randomly selected background points, implemented using the 'mgcv' package in R with restricted maximum likelihood fitting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 describe the importation modeling methodology with appropriate citations (Anderson 2006, Phillips and Dud\u00edk 2008, Wood 2011). The use of background points and GAM logistic regression is standard for species distribution modeling adapted to disease importation. Table 2 shows all covariates were statistically significant. The approach is methodologically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "278b4bbb-63a0-48a2-ac1c-8b66a64a0227",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors operationalize WHO concepts by defining vulnerability quantitatively as the rate of malaria importation (parasites crossing borders in humans and vectors), receptivity as the effective reproduction number Rc (expected secondary infections from one untreated infected human under control measures), and malariogenic potential as their product.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C71 provide clear quantitative definitions for historical WHO concepts. The definitions are logically consistent and appropriate for the elimination context. The product of importation rate and Rc as malariogenic potential is mathematically sound for estimating expected local cases.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "059017fd-88b9-44b4-80b2-94605e22cee0",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The analysis confirms dramatic overall progress toward elimination but identifies substantial spatial heterogeneity within Swaziland. The National Malaria Control Program will need to continue managing imported malaria as long as endemic transmission persists in neighboring countries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C45 represent reasonable conclusions from the presented data. The dramatic progress is well-documented (C10-C13), spatial heterogeneity is demonstrated (C15-C19, C24-C27), and the need to manage importation given endemic neighbors is a logical inference. These conclusions appropriately synthesize the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "5b5408f3-14f4-4168-a01b-5d6604943645",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The approach provides spatiotemporally resolved metrics of transmission that can identify critical versus unimportant cases for elimination efforts and stratify control responses by differentiating locations where elimination requires reducing importation versus reducing local receptivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73 describe the operational utility of the approach. The maps do provide spatial stratification distinguishing high-importation/low-transmission areas (cities) from potential endemic foci (northeast). This differentiation could inform targeted interventions as described. The claims are supported by the demonstrated spatial heterogeneity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "3f096379-63f8-49aa-9b36-9e1946c78dc1",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors speculate that their predictions will be useful as a baseline for genetic/molecular typing models and will remain pertinent as a proxy where resources limit universal parasite typing. They suggest malaria elimination can become stable in Swaziland through regional elimination, economic growth, and efficient resource use.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C74-C76 are explicitly speculative about future applications and outcomes. While the approach could complement genetic methods (C74 with citation to Greenhouse and Smith 2015), no validation against genetic data is provided. The optimistic projection about stable elimination (C76) depends on many factors beyond the scope of this analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "b59b35d8-e4b8-4ddd-a21c-93729fb2f77d",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The introduction establishes the global malaria context: malaria is a leading cause of childhood mortality, the Global Malaria Eradication Campaign (1955-1969) achieved permanent geographic contraction, 36 of 99 endemic countries had elimination plans as of 2011, and African elimination countries face higher importation rates than historical eliminators. Swaziland would be the first mainland sub-Saharan country to eliminate malaria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 provide background context supported by appropriate citations (Naghavi 2015, Mayo and Brady 1955, Gramiccia et al. 1988, Smith 2013, Cotter 2011, Tatem 2010, Foege et al. 1971). These are well-established facts in malaria epidemiology and elimination history that appropriately frame the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    },
+    {
+      "id": "7ec451fd-45b2-4913-b3ee-5e4b5de12d05",
+      "content_id": "63e35096-0580-48a9-8c4d-8cac130082cc",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The discussion contextualizes the approach within infectious disease epidemiology: reproductive numbers provide theoretical basis for disease control planning, linking infections to estimate individual reproductive numbers has been used for other diseases, malaria presents special challenges due to spatial heterogeneity, and individual-based estimates become necessary as population-level measures become inadequate in elimination phases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 appropriately situate the work within broader epidemiological theory with relevant citations (Anderson and May 1991, Walker et al. 2010, multiple citations for spatial heterogeneity, Hay et al. 2008). The progression from population-level to individual-level metrics in elimination settings is well-reasoned.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:16:46.536095Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d429537f-6c0a-431a-a096-0a1f0bb10104",
+      "result_id": "4477b7b3-b123-4a41-a620-5de07fb8eff4"
+    },
+    {
+      "claim_id": "f74ebc88-a669-4225-98a4-40ebd8267709",
+      "result_id": "4477b7b3-b123-4a41-a620-5de07fb8eff4"
+    },
+    {
+      "claim_id": "0dad2340-f3c6-4812-a13c-176a18287c90",
+      "result_id": "4477b7b3-b123-4a41-a620-5de07fb8eff4"
+    },
+    {
+      "claim_id": "0c793dc5-decb-42c4-afdc-b87c2bffb653",
+      "result_id": "4477b7b3-b123-4a41-a620-5de07fb8eff4"
+    },
+    {
+      "claim_id": "e6712576-d431-441c-807c-89edd76df349",
+      "result_id": "4477b7b3-b123-4a41-a620-5de07fb8eff4"
+    },
+    {
+      "claim_id": "cf25cbda-0d93-4ada-8c7a-4e1e3068455d",
+      "result_id": "4477b7b3-b123-4a41-a620-5de07fb8eff4"
+    },
+    {
+      "claim_id": "4d8e21a2-e35f-445d-82e7-b8c316ede9b7",
+      "result_id": "4477b7b3-b123-4a41-a620-5de07fb8eff4"
+    },
+    {
+      "claim_id": "84bb1fe5-fc5d-45be-ae0e-79d50e42895d",
+      "result_id": "4477b7b3-b123-4a41-a620-5de07fb8eff4"
+    },
+    {
+      "claim_id": "dfd3cc95-99e3-4649-aa2b-498e1ea826ae",
+      "result_id": "4477b7b3-b123-4a41-a620-5de07fb8eff4"
+    },
+    {
+      "claim_id": "a819356a-e56d-4d7e-8341-cfd4d9de0777",
+      "result_id": "4477b7b3-b123-4a41-a620-5de07fb8eff4"
+    },
+    {
+      "claim_id": "bd1d9db5-6c0d-4e5d-b2a1-daaec746c6a4",
+      "result_id": "3251200d-ec21-459a-9f32-18db29414f75"
+    },
+    {
+      "claim_id": "abd0bfa9-426c-4fc3-9ec4-6f8c0528314c",
+      "result_id": "3251200d-ec21-459a-9f32-18db29414f75"
+    },
+    {
+      "claim_id": "af8f0832-f9a7-4681-87dc-61747ba8516b",
+      "result_id": "68798fa8-bc30-49ee-989e-9653449c994c"
+    },
+    {
+      "claim_id": "3e7c5b0b-9ada-4ee8-aa48-a79a65208ef2",
+      "result_id": "68798fa8-bc30-49ee-989e-9653449c994c"
+    },
+    {
+      "claim_id": "e8094407-8d5d-4b6a-bc56-3415c5e6878a",
+      "result_id": "68798fa8-bc30-49ee-989e-9653449c994c"
+    },
+    {
+      "claim_id": "379031e5-cee5-4f40-9758-18ed4d043efb",
+      "result_id": "68798fa8-bc30-49ee-989e-9653449c994c"
+    },
+    {
+      "claim_id": "0c2e718b-bcb3-420f-b08b-236c4c995b8e",
+      "result_id": "68798fa8-bc30-49ee-989e-9653449c994c"
+    },
+    {
+      "claim_id": "c99a19ce-7025-4100-b0a9-ed3aa3563df0",
+      "result_id": "e628be55-b2ea-4349-b9a6-c305a32dda2d"
+    },
+    {
+      "claim_id": "1c8cccba-602a-465f-ac40-0568c007a995",
+      "result_id": "e628be55-b2ea-4349-b9a6-c305a32dda2d"
+    },
+    {
+      "claim_id": "242c67b5-c669-4414-9751-55de493bb265",
+      "result_id": "e628be55-b2ea-4349-b9a6-c305a32dda2d"
+    },
+    {
+      "claim_id": "ca390dde-9189-4357-90cd-89ca0138bbc0",
+      "result_id": "e628be55-b2ea-4349-b9a6-c305a32dda2d"
+    },
+    {
+      "claim_id": "b272e459-3728-481b-85c1-0eea8c75a323",
+      "result_id": "e628be55-b2ea-4349-b9a6-c305a32dda2d"
+    },
+    {
+      "claim_id": "c7f22e6d-d223-46ca-8e08-62680f4d93eb",
+      "result_id": "e628be55-b2ea-4349-b9a6-c305a32dda2d"
+    },
+    {
+      "claim_id": "647f79c9-2860-4b13-8de7-fa6457c26804",
+      "result_id": "4f6287e2-74fc-480a-ac3b-7c24654e7a2d"
+    },
+    {
+      "claim_id": "45cf808e-d2b2-4226-87e9-67aafcfbca52",
+      "result_id": "4f6287e2-74fc-480a-ac3b-7c24654e7a2d"
+    },
+    {
+      "claim_id": "983c5048-9a86-49ee-a74c-daa80207b344",
+      "result_id": "4f6287e2-74fc-480a-ac3b-7c24654e7a2d"
+    },
+    {
+      "claim_id": "760ff565-c2d9-4ff1-bfe6-3969dff41d3b",
+      "result_id": "4f6287e2-74fc-480a-ac3b-7c24654e7a2d"
+    },
+    {
+      "claim_id": "459e2dfe-dc92-4d4f-8f8c-07ab603b7b47",
+      "result_id": "4f6287e2-74fc-480a-ac3b-7c24654e7a2d"
+    },
+    {
+      "claim_id": "9346d914-82f5-4ce2-919f-b21a60c795d1",
+      "result_id": "4f6287e2-74fc-480a-ac3b-7c24654e7a2d"
+    },
+    {
+      "claim_id": "9dd6fc3b-35d0-4d5f-9f6f-a5d134e50306",
+      "result_id": "4f6287e2-74fc-480a-ac3b-7c24654e7a2d"
+    },
+    {
+      "claim_id": "7e1c4719-98dc-4678-b917-4f18fde35de1",
+      "result_id": "cc74f06f-dfee-4b71-befe-100dc3b2465a"
+    },
+    {
+      "claim_id": "e6e1a574-83f9-4444-a880-771e901e732b",
+      "result_id": "cc74f06f-dfee-4b71-befe-100dc3b2465a"
+    },
+    {
+      "claim_id": "633fe7b7-e057-4b6c-8dba-c5054a8ff637",
+      "result_id": "cc74f06f-dfee-4b71-befe-100dc3b2465a"
+    },
+    {
+      "claim_id": "241fe570-ed6e-459f-a3cc-cd2856de5c52",
+      "result_id": "cc74f06f-dfee-4b71-befe-100dc3b2465a"
+    },
+    {
+      "claim_id": "1826922e-59d7-4a53-9701-c0d62ec98846",
+      "result_id": "1ba6ad18-ed8d-45d3-b45b-525b97be7597"
+    },
+    {
+      "claim_id": "35595b52-4bbb-4be2-a792-78f35c9d8fe5",
+      "result_id": "1ba6ad18-ed8d-45d3-b45b-525b97be7597"
+    },
+    {
+      "claim_id": "8f20c666-ff5f-4d8a-b8f7-3b8e32c4bbee",
+      "result_id": "1ba6ad18-ed8d-45d3-b45b-525b97be7597"
+    },
+    {
+      "claim_id": "7c1b3e7f-9a47-4dc7-a28c-fd063b40790b",
+      "result_id": "120542bf-1489-4135-a845-be2e3075d9b7"
+    },
+    {
+      "claim_id": "c733ef42-51e3-42f0-a5b7-e4cd7901fd61",
+      "result_id": "120542bf-1489-4135-a845-be2e3075d9b7"
+    },
+    {
+      "claim_id": "79b77075-055d-48b0-8f80-9ef4b806b368",
+      "result_id": "e125e0ca-4869-4a3a-9c45-9f00f6ba488d"
+    },
+    {
+      "claim_id": "b5f0cdae-7c16-4f4a-a428-c35d757895c5",
+      "result_id": "e125e0ca-4869-4a3a-9c45-9f00f6ba488d"
+    },
+    {
+      "claim_id": "d573d725-9130-44a1-9718-c472385c2842",
+      "result_id": "e125e0ca-4869-4a3a-9c45-9f00f6ba488d"
+    },
+    {
+      "claim_id": "afa1e0cd-192b-42ba-bd73-7758b49c01ae",
+      "result_id": "e125e0ca-4869-4a3a-9c45-9f00f6ba488d"
+    },
+    {
+      "claim_id": "9f3df83b-f441-464f-b5db-9fce98d9f511",
+      "result_id": "e125e0ca-4869-4a3a-9c45-9f00f6ba488d"
+    },
+    {
+      "claim_id": "36465c66-d710-41a5-8ef7-e55824eb8564",
+      "result_id": "e125e0ca-4869-4a3a-9c45-9f00f6ba488d"
+    },
+    {
+      "claim_id": "ed50dbc4-222d-42e4-9587-fd19688f494a",
+      "result_id": "720db664-96f0-4e3b-a346-d809c3df1ee7"
+    },
+    {
+      "claim_id": "0f8fd04d-37ff-48c0-98b6-00ff3e7a89f5",
+      "result_id": "720db664-96f0-4e3b-a346-d809c3df1ee7"
+    },
+    {
+      "claim_id": "432f3543-1be1-46f3-88f1-acd0ebda7bbc",
+      "result_id": "720db664-96f0-4e3b-a346-d809c3df1ee7"
+    },
+    {
+      "claim_id": "f06b7d79-5b38-4114-8f56-6a230f605299",
+      "result_id": "720db664-96f0-4e3b-a346-d809c3df1ee7"
+    },
+    {
+      "claim_id": "3ef85313-421a-4c23-a293-79e8b7fbc0f4",
+      "result_id": "278b4bbb-63a0-48a2-ac1c-8b66a64a0227"
+    },
+    {
+      "claim_id": "8d0f8c87-d18f-4fba-96af-0cebf81d3135",
+      "result_id": "278b4bbb-63a0-48a2-ac1c-8b66a64a0227"
+    },
+    {
+      "claim_id": "b6c2c8b8-2dd3-4a93-9769-dfc575f71bfe",
+      "result_id": "278b4bbb-63a0-48a2-ac1c-8b66a64a0227"
+    },
+    {
+      "claim_id": "2de070dd-96be-4fd1-8fc1-a0a28199ecf9",
+      "result_id": "278b4bbb-63a0-48a2-ac1c-8b66a64a0227"
+    },
+    {
+      "claim_id": "bc2c5de7-0175-4655-adb8-1a82c3377944",
+      "result_id": "278b4bbb-63a0-48a2-ac1c-8b66a64a0227"
+    },
+    {
+      "claim_id": "c76aaf69-9d48-494f-98cc-863c79ff796c",
+      "result_id": "059017fd-88b9-44b4-80b2-94605e22cee0"
+    },
+    {
+      "claim_id": "273c0603-ce15-4b5d-837c-2e3eafce8cb0",
+      "result_id": "059017fd-88b9-44b4-80b2-94605e22cee0"
+    },
+    {
+      "claim_id": "b099e949-b019-4429-8e6f-03d7ee1ee66f",
+      "result_id": "059017fd-88b9-44b4-80b2-94605e22cee0"
+    },
+    {
+      "claim_id": "7422f95b-387f-4df8-a135-6dd7099d76c4",
+      "result_id": "5b5408f3-14f4-4168-a01b-5d6604943645"
+    },
+    {
+      "claim_id": "8cf79fbc-0590-45f4-a53b-d17ae14e3d03",
+      "result_id": "5b5408f3-14f4-4168-a01b-5d6604943645"
+    },
+    {
+      "claim_id": "0612da17-0550-4d43-b82d-c807f4d32423",
+      "result_id": "3f096379-63f8-49aa-9b36-9e1946c78dc1"
+    },
+    {
+      "claim_id": "8aaadd57-99f2-47c2-a896-928fb13585e8",
+      "result_id": "3f096379-63f8-49aa-9b36-9e1946c78dc1"
+    },
+    {
+      "claim_id": "fca8f669-c343-441d-affb-7ca27e0a0928",
+      "result_id": "3f096379-63f8-49aa-9b36-9e1946c78dc1"
+    },
+    {
+      "claim_id": "36ad8c32-7ab3-460a-ba8f-8d8eab9fd468",
+      "result_id": "b59b35d8-e4b8-4ddd-a21c-93729fb2f77d"
+    },
+    {
+      "claim_id": "bcfdbae3-ce41-4ccb-8cd8-c0256c9e69c1",
+      "result_id": "b59b35d8-e4b8-4ddd-a21c-93729fb2f77d"
+    },
+    {
+      "claim_id": "f16d5d56-c6bf-472c-9f83-95255cf9ddbd",
+      "result_id": "b59b35d8-e4b8-4ddd-a21c-93729fb2f77d"
+    },
+    {
+      "claim_id": "1a30d43e-705b-4fa8-a7de-f126bbb8d485",
+      "result_id": "b59b35d8-e4b8-4ddd-a21c-93729fb2f77d"
+    },
+    {
+      "claim_id": "eb3f1b62-f26d-430d-9102-e2f3dec06668",
+      "result_id": "b59b35d8-e4b8-4ddd-a21c-93729fb2f77d"
+    },
+    {
+      "claim_id": "c8f3f8a7-45f7-432d-8444-4c13d3d4089b",
+      "result_id": "b59b35d8-e4b8-4ddd-a21c-93729fb2f77d"
+    },
+    {
+      "claim_id": "df277203-b300-4791-98ed-0952de594451",
+      "result_id": "b59b35d8-e4b8-4ddd-a21c-93729fb2f77d"
+    },
+    {
+      "claim_id": "7e3fa429-8e4f-49c8-804b-6f0b9200aa1b",
+      "result_id": "b59b35d8-e4b8-4ddd-a21c-93729fb2f77d"
+    },
+    {
+      "claim_id": "1f70d5b3-4e0f-4ade-855c-09a5a7940c8d",
+      "result_id": "b59b35d8-e4b8-4ddd-a21c-93729fb2f77d"
+    },
+    {
+      "claim_id": "43513e7e-cabc-45d2-8d68-2a1fc9fb1c70",
+      "result_id": "7ec451fd-45b2-4913-b3ee-5e4b5de12d05"
+    },
+    {
+      "claim_id": "5ee75ee0-7a0f-49bc-a95e-31172e56cfa5",
+      "result_id": "7ec451fd-45b2-4913-b3ee-5e4b5de12d05"
+    },
+    {
+      "claim_id": "4c44d91f-ae26-4ce2-9d23-d0c2faffc8a3",
+      "result_id": "7ec451fd-45b2-4913-b3ee-5e4b5de12d05"
+    },
+    {
+      "claim_id": "9f2129ad-c476-49ea-a7b2-17a7754e20f0",
+      "result_id": "7ec451fd-45b2-4913-b3ee-5e4b5de12d05"
+    },
+    {
+      "claim_id": "3cbc8f94-74f6-4b89-8398-31a1edb32b78",
+      "result_id": "7ec451fd-45b2-4913-b3ee-5e4b5de12d05"
+    }
+  ],
+  "comparisons": []
+}

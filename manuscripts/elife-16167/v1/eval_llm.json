@@ -1,0 +1,350 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C42",
+      "C43",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The study used two adult female rhesus monkeys (7 kg each) for electrophysiological recordings in area MT, recording 165 single units (2-8 cells per day) using 16-contact linear microelectrode arrays. Area MT was identified using multiple anatomical and physiological criteria, and all procedures were ethically approved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C9, C42-C43, and C109-C114 provide comprehensive methodological details about subjects, recording techniques, equipment specifications, and ethical compliance. These are standard methodological descriptions that are internally consistent and appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Monkeys exhibited spatial suppression of motion perception: at high contrast (100%), behavioral performance worsened with larger stimulus sizes (SIpsy = 0.42\u00b10.25 for monkey C, 0.54\u00b10.19 for monkey Y), while low-contrast stimuli showed improved performance with size. Performance was best at medium stimulus intensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C7 describe the core behavioral finding with quantitative measurements and statistical support (p<0.001, Wilcoxon rank sum test). The paradoxical size-dependent suppression is well-documented with specific suppression indices for both animals, and the pattern replicates previous human findings (Tadin et al., 2003).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Individual MT neurons showed substantially less surround suppression (mean SIneu = 0.27) than behavioral suppression (mean SIpsy = 0.48). Many neurons exhibited no surround suppression, and their selectivity for large stimuli often exceeded the monkeys' behavioral performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C14 establish a critical mismatch between single-neuron and behavioral suppression through direct quantitative comparison. The finding that many neurons lack surround suppression yet the behavior shows strong suppression is well-supported by the data in Figures 2B-D, indicating single-neuron properties cannot fully explain behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Choice probability analysis revealed that neurons with strong surround suppression were not more correlated with behavioral choices (r = -0.14, P = 0.04). Choice probability was significant from 100-200 ms post-stimulus and decreased with receptive field eccentricity (r = -0.48, P = 0.05), suggesting monkeys relied on neurons with central receptive fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 and C84-C86 provide converging evidence about neural-behavioral correlations using established choice probability methods. The negative correlation between suppression and choice probability (C16) is statistically significant, and the eccentricity effect (C85) provides additional support for the readout strategy hypothesis. The temporal dynamics (C84) validate the analysis window choice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Noise correlations in MT averaged 0.099\u00b10.007, consistent with previous reports. These correlations were independent of motion direction and stimulus size (P = 0.55), but noise and signal correlations were significantly correlated across the population (r = 0.32, p<0.001). Correlation magnitudes did not differ across neuron pair types (p>0.86).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 characterize basic noise correlation properties with appropriate statistical tests and comparisons to literature. The independence from stimulus parameters (C18-C19) and the relationship between noise and signal correlations (C20) are well-documented. However, C21 sets up an important contrast with C22-C25 about correlation structure differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C28"
+    ],
+    "result": "The relationship between noise and signal correlations differed substantially across neuron types: NS-NS pairs showed strong correlation between rnoise and rsignal, while SS-SS pairs showed less dependency. This difference was statistically significant (ANCOVA, P = 0.03) and robust to rate-matching (p<0.001) and continuous classification (r = -0.232, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 establish a novel finding about correlation structure dependence on surround suppression. The result is supported by multiple statistical approaches (ANCOVA, rate-matching, continuous analysis) and shown in Figure 4A-B. The control analyses (C27-C28) address potential confounds, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Differential correlations (information-limiting correlations) showed a positive relationship with noise correlations. NS-NS pairs had greater information-limiting correlations than SS-SS pairs (rNS-NS = 0.48, rSS-SS = 0.23, P = 0.08). While NS neurons are individually more informative for large stimuli, they are more limited by correlation structure as a population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C29-C31 extend the correlation analysis to information-theoretic measures. While C29 is supported, C30 shows marginal statistical significance (P = 0.08), which does not meet conventional thresholds. The inference in C31 is logical but depends on the marginally significant result in C30. The conclusion would be strengthened by additional data or analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "A computational model incorporating noise correlations, surround suppression, and their observed relationship reproduced behavioral suppression (SI = 0.48). Both components were necessary but insufficient alone; their interaction was critical. The model also predicted enhanced performance for small stimuli, suggesting a tradeoff favoring discrimination of small over large stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 describe systematic model comparisons showing that the relationship between surround suppression and correlation structure is necessary to explain behavior. The ablation studies (C33-C34) demonstrate that neither component alone suffices (SI = 0 or 0.28 vs. 0.48 observed). The prediction about small stimuli (C36-C37) is an emergent property supported by Figure 5C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Varying the integration radius in the model affected the suppression index (SI = 0.26 at 15\u00b0 radius, significantly less than behavioral SI, p<0.001) but not overall performance (P = 0.25). Larger integration radii increased performance for large stimuli while decreasing it for small stimuli, suggesting behavioral SI depends on internal readout strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 explore model parameter sensitivity. The statistical tests (C38-C39) are appropriate, and the tradeoff described in C40 is logical. However, C41 is somewhat speculative about 'internal strategies.' The analysis demonstrates that readout assumptions matter, but the specific strategy used by the animals remains uncertain despite the choice probability evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The experimental design used brief stimulus duration (50 ms) to increase task difficulty, with 20-40 repetitions per stimulus. Neural selectivity was quantified using firing rates during 100-200 ms post-stimulus, chosen because responses differed significantly between directions (p<0.05) and correlated with behavioral choices. Other time windows (60-300 ms) yielded similar results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 justify key methodological choices with appropriate rationale and validation. The time window selection (C47-C49) is well-justified by statistical tests and behavioral correlations shown in supplementary figures. The robustness analysis (C50) strengthens confidence in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Based on cortical magnification factors, the number of neurons activated should increase with stimulus size. However, human psychophysical studies show paradoxically diminished performance with larger stimuli, correlated with mental function markers. This has been hypothesized to reflect surround suppression in individual neurons. Area MT is causally involved in motion perception and contains size- and contrast-modulated neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 and C60-C63 establish the theoretical background and motivation from prior literature. These are well-cited claims about established findings (cortical magnification, psychophysical suppression in humans, MT's role). C51 involves a calculation based on cited magnification factors. The claims appropriately frame the study's context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Theoretical principles of population coding state that independent neuronal noise can be eliminated by averaging, allowing information to increase with population size. However, neuronal noise is typically correlated, which influences population code fidelity. Current theories predict information should increase or saturate with neuronal pool size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 summarize established theoretical principles with appropriate citations to foundational papers (Zohary et al., 1994; Shadlen et al., 1996; Abbott and Dayan, 1999). These are accurate representations of population coding theory that motivate the study's investigation of the paradoxical behavioral findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "TMS targeting MT reduces spatial suppression, but since TMS protocols are inhibitory, effects could reflect modulation of noise correlations rather than surround suppression. This interpretation is consistent with the current results, assuming inhibitory connectivity regulates both surround suppression and noise correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 reinterpret prior TMS findings in light of current results. C64 accurately cites previous work, C65 correctly characterizes TMS protocols, and C66-C67 offer a plausible alternative interpretation supported by theoretical citations. This is appropriate scientific reasoning connecting prior and current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Populations with reduced spatial suppression (schizophrenia, older individuals) may have GABAergic deficits. The current results suggest the connection to psychophysical suppression could be through noise correlations, as these are necessary for neural surround suppression to affect population-level coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 connect the findings to clinical populations. C68-C69 accurately cite prior work, C70 notes previous mechanistic hypotheses, and C71 offers a refined interpretation based on current findings. The reasoning is sound: if noise correlations are necessary for population-level effects (as shown in the modeling), then GABAergic effects on correlations could explain clinical findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Model simulations suggest surround suppression increases selectivity for small stimuli while worsening it for large stimuli, potentially benefiting tracking of small moving targets. Surround-suppressed neurons are causally linked to smooth pursuit and show advantageous correlation structure. The pursuit system might benefit from averaging many surround-suppressed neurons, explaining weak single-neuron correlations with pursuit and low choice probabilities of suppressed neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C79 connect findings to smooth pursuit behavior through appropriate citations and logical inference. C72 is supported by model results (Figure 5C), C74-C76 accurately cite prior work, and C77 appropriately references current findings (Figure 4A). The speculation in C73, C78-C79 is reasonable given the data, though these remain hypotheses requiring direct testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Smooth pursuit models involve motion opponency and normalization operations. Normalization computes vector averages and affects noise correlations accounting for behavioral fluctuations. The current results suggest normalization may additionally reshape MT population selectivity to favor small stimuli, as expected for a system initiating orienting responses to moving objects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 connect findings to computational models of pursuit. C80-C82 accurately describe properties of cited models (Hohl et al., 2013), and C83 offers a reasonable extension based on current findings. The speculation is appropriately qualified and grounded in both the data and ecological considerations (Lettvin et al., 1959).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "If stimulus location were unpredictable trial-to-trial, psychophysical suppression would likely be reduced, as would overall performance. This prediction is based on the principle that subjects allocate resources according to positional uncertainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 make testable predictions based on the finding that choice probability decreases with eccentricity (C85-C86) and resource allocation principles (Pelli, 1985). The prediction is logical and appropriately qualified as speculation requiring future testing. This represents good scientific practice in proposing follow-up experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Contrary to hypotheses that surround suppression reduces correlations in natural inputs, neurons with strong surround suppression can exhibit larger or smaller noise correlations depending on signal correlation strength. This relationship holds across all stimuli, even those not strongly engaging surrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 contrast current findings with prior hypotheses. C89 accurately cites previous work, while C90-C91 summarize key findings from the correlation analysis (Figure 4A). The observation that the relationship holds even for small stimuli (C91) is important for ruling out stimulus-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Noise correlation magnitude can be modulated by adaptation, learning, and attention. Attention increases effective contrast, which increases surround suppression and decreases correlations, suggesting a unified mechanism possibly implemented via divisive normalization. Attention can differentially affect positive and negative correlations, particularly important in MT where negative correlations from motion-opponent mechanisms are common and play important roles in decision-making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C103 synthesize prior literature on correlation modulation and motion opponency with appropriate citations throughout. The proposed unified mechanism (C98) is speculative but well-grounded in cited theoretical frameworks (Reynolds and Heeger, 2009; Tripp, 2012). The discussion of negative correlations (C100-C103) appropriately contextualizes MT's unique properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The model used neuron density of 20 neurons/mm\u00b2, yielding pool sizes comparable to other studies and in the regime where population sensitivity is saturated. Results were qualitatively similar with 40 neurons/mm\u00b2, demonstrating robustness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 document model parameters and robustness checks. The parameter choice (C105-C106) is justified by comparison to prior work (Shadlen et al., 1996) and analysis of saturation (C107, Figure 4\u2014figure supplement 1B). The robustness test (C108) strengthens confidence in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Paradoxical percepts reflect tradeoffs between sensitivity and noise in neuronal populations. Psychophysical suppression results from three interacting mechanisms: noise correlations preventing information growth with size, neural surround suppression decreasing sensitivity for large stimuli, and a readout strategy emphasizing central neurons. Critically, neurons with least suppression (most sensitive to large stimuli) had noise correlations most aligned with signal correlations, which damages population information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C120 synthesize the main conclusions. C116-C118 summarize the three-mechanism model supported by systematic comparisons (Figure 5). C119 restates the key novel finding about correlation structure. C120 invokes established theory (Abbott and Dayan, 1999) to explain why this matters. The integration is logical and well-supported by the presented data.",
+    "result_type": "MAJOR"
+  }
+]

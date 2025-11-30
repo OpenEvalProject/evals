@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript establishes the background that motor error detection is critical for motor control and learning, that brainstem-cerebellum mechanisms are well-established for saccades, but that the role of neocortex in saccadic error detection remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C17 collectively establish well-supported background knowledge from the field, citing appropriate prior work. The gap in knowledge regarding neocortical involvement (C3, C17) is clearly identified and provides strong motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors recorded 753 neurons from macaque posterior parietal cortex, identifying 89 PPS neurons and 27 LPS neurons, likely from the lateral intraparietal area (LIP).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 provide clear experimental details about the neuronal recordings. The anatomical localization to LIP (C22) is appropriately qualified as probable based on recording locations and physiological signatures. Sample sizes are clearly reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C23",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C44",
+      "C64",
+      "C65"
+    ],
+    "result": "PPS neurons represent the intended end-position of saccades, showing persistent activity before and after saccades that is directionally tuned but not correlated with actual saccade end-position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C23-C31, C44, C64-C65 provide converging evidence that PPS neurons encode intended rather than actual saccade endpoints. The lack of correlation with actual endpoints (C28, C29, C44) combined with directional tuning (C26) and lack of visual responses (C30, C31) strongly support this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The intended end-position signal in PPS neurons is encoded by relative change in activity rather than absolute firing rate, and is not task-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 demonstrate through cross-task comparison (SCS vs MGS) that while absolute firing rates differ, relative activity changes are similar (p=0.2887), supporting the conclusion that relative change encodes the intended position signal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C24",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C43",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "LPS neurons represent the actual end-position of saccades through extraocular proprioceptive signals, showing delayed post-saccadic activity (~70 ms) that is positively correlated with saccade end-position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C24, C35-C39, C43, C66-C70 provide strong evidence that LPS neurons encode actual saccade endpoints. The timing (~70 ms delay, C35), positive correlation with endpoints (C37, C39, C43), lack of visual responses (C68), and similarity to known proprioceptive signals (C66, C69) all support this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "LPS neuron activity is task-independent, showing similar absolute firing rates and relative changes between SCS and MGS tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 is supported by statistical comparisons showing no significant differences in either absolute firing rate (p=0.6526) or relative change (p=0.7262) between tasks, consistent with encoding of actual position rather than task-specific signals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C74"
+    ],
+    "result": "After arrival of the LPS signal, PPS neurons compute saccadic error through a subtraction-like mechanism, with post-subtraction activity correlating with the magnitude of saccadic error but not differentiating hypometric from hypermetric errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C41-C55, C74 provide strong converging evidence for error computation. The temporal overlap (C41, C42), correlation with error magnitude (C46, C47, C49, C50), match with subtraction model predictions (C48), and extended time window of correlation (C53, C54) all support the error computation mechanism. The parabolic relationship (C52) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Post-subtraction activity of PPS neurons is positively correlated with the probability of making secondary (corrective) saccades, with higher activity in trials containing secondary saccades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C56-C60 demonstrate a strong relationship between error signals and corrective behavior. The correlation between error and secondary saccade probability (C58), correlation between post-subtraction activity and secondary saccade probability (C59, r=0.8289, p=0.0001), and direct comparison of trials with/without secondary saccades (C60) provide robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "PPS and LPS neurons are anatomically intermingled in PPC, suggesting possible functional interaction between the two neuron types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by anatomical reconstruction data showing overlapping distributions. However, C63 regarding functional interaction is appropriately qualified as speculation based on anatomical proximity rather than direct functional evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The parietal error signal may function to program secondary saccades rather than control primary saccades, as the timing (~70 ms post-saccade) is too late for primary saccade control but appropriate for secondary saccade planning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C71-C77 present reasonable speculation about functional significance based on timing considerations (C75) and correlations with secondary saccades. However, these remain hypotheses (C72, C73, C76) without direct causal evidence. The contrast with brainstem-cerebellum models (C77) is noted but does not constitute positive evidence for the proposed function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The cortical error representation may contribute to long-term saccadic adaptation, meta-learning, or cognitive modulation of adaptation, processes that go beyond standard short-term adaptation explained by brainstem-cerebellum mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C83 appropriately cite prior work establishing different forms of adaptation (C79, C81, C82) and gaps in understanding (C80). However, C83 is explicitly speculative about the functional role of the observed cortical signals, lacking direct experimental evidence linking the error signals to these adaptation processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The parietal error signal may contribute to adaptation of voluntary saccades, which involves different mechanisms and partially separated neural circuitry from reactive saccade adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C87 appropriately cite prior work distinguishing reactive and voluntary saccade adaptation mechanisms. However, C88 is speculative, proposing a role for the observed parietal signals in voluntary saccade adaptation without direct experimental evidence testing this hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "This study provides neuronal evidence for motor error computation in PPC, consistent with prior work showing PPC's role in comparing motor intention with proprioception for motor learning and motor-related cognitive functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 appropriately contextualize the findings within established literature on PPC function (C89-C94) and clearly state the contribution of the current work (C95). The neuronal evidence for error computation is well-supported by the experimental data in other result groups.",
+    "result_type": "MAJOR"
+  }
+]

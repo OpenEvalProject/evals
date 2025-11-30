@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C23",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The authors used an ACME (arrayed cellular microenvironments) high-throughput screening platform to identify optimal culture conditions for deriving and expanding mesodermal progenitor cells from hPSCs. Two sequential screens identified C1 C3 C4 FN VN as the optimal extracellular matrix combination and CHR (1.0 \u00b5M) + FGF (20 ng/ml) as the optimal soluble factor combination for maintaining Brachyury-GFP expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ACME screening approach is well-documented with appropriate controls (Matrigel, sub-optimal matrices, no factor conditions). The sequential screening design is logical, and scale-up validation confirms the robustness of hits from the primary screens (C37, C38, C39). Dose-response curves for CHR and FGF provide quantitative optimization (C40, C41). The use of a Brachyury-GFP reporter line provides a direct readout for mesodermal identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C60",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "IMP cells derived under optimized conditions can be expanded for over 20 passages with doubling times of approximately 60 hours, maintaining normal karyotype (46 chromosomes) and expressing the proliferation marker Ki-67. The cells can theoretically expand from 1\u00d710\u2074 to 1\u00d710\u00b9\u00b2 cells over 10 passages and retain properties after freeze-thaw cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The expansion capacity is well-documented across multiple cell lines (H9, Hues9, BJ RiPS) with consistent doubling rates (C43). Karyotype analysis at passages 10 and 15 confirms chromosomal stability (C46, C47). Ki-67 expression and growth curves provide converging evidence for proliferative capacity. The claim of 'unlimited' or 'nearly indefinite' expansion is somewhat overstated given that only >20 passages are documented, but the data support robust long-term expansion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "During expansion, IMP cells rapidly lose expression of pluripotency markers (OCT4, NANOG, SOX2, TRA-1-81, SSEA4) while maintaining expression of mesodermal markers (MESP1, MIXL1, LHX1, MIXL1 protein) and acquiring a CD56+ CD326\u2212 cell surface signature. Expression of endoderm marker FOXA2 and ectoderm marker SOX1 is significantly reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal methods (qPCR, immunofluorescence, flow cytometry) confirm loss of pluripotency markers and maintenance of mesodermal markers across passages (C48-C52). The CD56+ CD326\u2212 signature is validated by flow cytometry and matches a previously reported mesoderm-committed population (C53, C54). Reduction of EN and EC markers provides additional evidence for lineage restriction (C55, C56). The data are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C57",
+      "C58",
+      "C59",
+      "C115"
+    ],
+    "result": "IMP cells lack tumor-forming potential in vivo. When injected subcutaneously into immunocompromised mice, 11 of 12 IMP cell injections (0.5-1 million cells) produced no tumors over 12 weeks, with only one site maintaining a small non-growing lump (~1 mm). In contrast, all 6 hPSC control injections (0.5 million cells) produced readily visible teratomas (>10 mm diameter).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The teratoma assay is the gold standard for assessing tumorigenic potential. The experimental design includes appropriate positive controls (hPSCs) and multiple injection sites across different cell doses (C58, C59). The stark contrast between IMP cells (11/12 no growth) and hPSCs (6/6 teratomas) provides strong evidence. However, the 12-week observation period, while standard, may not capture very slow-growing tumors. The single small lump that did not grow suggests possible incomplete differentiation in a subset of cells, but overall the data strongly support lack of tumorigenicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Both the defined matrix (C1 C3 C4 FN VN) and soluble factors (CHR + FGF) are required for optimal IMP cell generation and maintenance. Cells cultured without CHR and/or FGF fail to passage beyond one passage. The optimized matrix significantly increases expression of mesodermal markers (MESP1, MIXL1, LHX1) by 1.5- to 2-fold compared to Matrigel by passage 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The requirement for CHR and FGF is demonstrated through loss-of-function experiments showing failure to passage without these factors (C61, C66). The superiority of the defined matrix over Matrigel is shown through comparative qPCR analysis with statistical significance (C63, C64, C65). The experimental design appropriately tests both derivation (from ME cells) and maintenance (from established IMP cells at p6) conditions. The data support the necessity of both matrix and soluble factor components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C76",
+      "C77",
+      "C78",
+      "C110"
+    ],
+    "result": "RNA-seq analysis reveals that IMP cells are transcriptionally similar to mesoderm (ME) cells (correlation coefficient 0.9522) but have progressed beyond the early ME phenotype, showing lower expression of pluripotency regulators (POU5F1, SOX2) and early mesodermal markers (T, MIXL). Gene expression profiling indicates IMP cells most closely resemble intermediate mesoderm (IM), expressing IM markers CITED2, EYA1, GATA3, LHX1, and SALL1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq analysis is comprehensive, comparing IMP cells to hES, ME, EN, and EC populations. Hierarchical clustering and correlation analysis provide quantitative support for similarity to ME cells (C68, C69). The differential expression of pluripotency and early mesodermal markers is clearly documented (C70, C71, C72). The identification of IM identity is supported by both qPCR comparison to differentiated IM cells and detection of multiple IM markers in RNA-seq data (C76, C77). The conclusion that IMP cells are an 'in vitro counterpart to intermediate mesoderm' (C78, C110) is appropriately presented as a hypothesis/speculation based on the gene expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C107",
+      "C108"
+    ],
+    "result": "IMP cells fail to differentiate into lateral plate mesoderm (LM) derivatives. When subjected to established hematopoietic differentiation protocols, IMP cells from three independent hPSC lines fail to express hemogenic endothelium marker SOX17 or hematopoietic markers CD34 and CD45, while control hES cells readily differentiate. Similarly, IMP cells fail to express cardiac progenitor markers NKX2.5 and ISL1 or produce contractile activity when subjected to cardiomyocyte differentiation protocols, even with extended culture periods and Wnt inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differentiation restriction is tested using established, published protocols with appropriate positive controls (hES cells successfully differentiating). Multiple independent IMP cell lines were tested (H9, Hues9, BJ RiPS), strengthening the conclusion (C81). Both qPCR and flow cytometry confirm absence of hematopoietic markers (C81), and both qPCR and functional assays (contractility) confirm absence of cardiac differentiation (C84, C85). The authors tested multiple conditions including Wnt inhibition (C86), demonstrating thoroughness. The data strongly support lineage restriction away from LM derivatives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "IMP cells efficiently differentiate into intermediate mesoderm (IM) and metanephric mesenchyme (MM) when subjected to renal differentiation protocols. IMP-derived cells acquire gene expression signatures of IM and MM, with profiles strikingly similar to fetal kidney cells. By day 14, cells upregulate kidney lineage markers PAX2 and SIX2, and immunofluorescence demonstrates significant populations expressing IM/MM markers PAX2, SALL1, SIX2, WT1, and CDH1 (E-cadherin).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The renal differentiation is assessed using multiple complementary approaches: qPCR for gene expression profiling (C88, C89), comparison to fetal kidney tissue as a biological reference (C89), and immunofluorescence for protein expression with quantification (C91). The upregulation of key kidney lineage markers PAX2 and SIX2 is supported by citation to relevant literature (C90). The data are internally consistent and demonstrate efficient acquisition of renal characteristics. However, the claim that cells 'readily acquire properties of a sub-population of kidney cells' (C6) is somewhat vague about which specific sub-population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "In spinal cord co-culture assays, IMP-derived MM cells acquire expression of renal markers (LTL, CDH1, SALL1, SIX2) in response to nephrogenic inductive signals, while undifferentiated hES cells fail to express SIX2. However, IMP-derived MM cells fail to generate tubule-like structures including nephrons, suggesting differentiation into a sub-population rather than complete kidney cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spinal cord co-culture assay is an established stringent test for renal potential, with appropriate positive (IMP-MM) and negative (undifferentiated hES) controls (C93, C94). The failure of hES cells to express SIX2 supports the interpretation that MM properties are required for efficient renal differentiation (C95). The observation that IMP-derived cells express renal markers but fail to form tubule structures (C96) is an important limitation that appropriately qualifies the differentiation capacity (C97). The conclusion is measured and acknowledges incomplete differentiation to all kidney cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "In kidney organoid re-aggregation assays, IMP-derived MM cells efficiently incorporate into developing kidney structures, primarily into mesenchyme surrounding epithelial structures (marked by DBA lectin). Incorporated human cells express FOXD1 (restricted to metanephric stromal mesenchyme) and stain with LTL. In contrast, undifferentiated hES cells fail to incorporate and are found adjacent to organoid structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The re-aggregation assay provides functional evidence for renal potential through incorporation into kidney organoids. The use of human-specific nuclear antigen (HuNu) allows clear identification of human cells within rat kidney structures (C99). The preferential incorporation into mesenchyme surrounding epithelial structures is well-documented (C100), and expression of FOXD1 with appropriate citation confirms stromal mesenchyme identity (C101, C102). The negative control with undifferentiated hES cells strengthens the conclusion that renal differentiation is required for incorporation (C104, C105). The data support efficient incorporation but also reveal spatial restriction to stromal compartments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C109",
+      "C131"
+    ],
+    "result": "IMP cells exhibit exquisite lineage restriction to intermediate mesoderm despite expressing pan-mesodermal markers (LHX1, MESP1, MIXL1). This restriction is more severe than that observed in endoderm progenitor (EP) cells, as IMP cells fail to produce certain mesodermally-derived populations (blood, heart muscle) while EP cells can differentiate into multiple endodermal tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lineage restriction is demonstrated through comprehensive differentiation assays showing failure to generate LM derivatives (hematopoietic and cardiac) while successfully generating IM derivatives (renal). The observation that this restriction occurs despite expression of pan-mesodermal markers (C109) is well-documented through gene expression analysis. The comparison to EP cells (C131) provides useful context, though it relies on literature rather than direct experimental comparison. The characterization of the restriction as 'exquisite' is justified by the complete failure to generate LM derivatives under multiple tested conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "IMP cells offer several advantages over undifferentiated hPSCs for tissue engineering: (1) they lack tumor-forming potential due to nearly undetectable pluripotency marker expression, (2) they require less elaborate differentiation protocols as early mesodermal specification steps are bypassed, and (3) they provide a homogenous starting population yielding higher differentiation efficiency compared to heterogeneous hPSC-derived cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The three stated advantages are well-supported by the experimental data. Loss of pluripotency markers is documented by multiple methods (C116, C117), and lack of tumor formation is demonstrated in vivo (discussed in previous result). The practical advantage of bypassing early differentiation steps (C118, C119) is a logical inference from the established mesodermal identity. The homogeneity of IMP cultures is supported by flow cytometry and gene expression data (C120), and the inference about improved differentiation efficiency (C122) is reasonable though not directly tested through quantitative comparison. These are appropriate conclusions drawn from the data, though some are inferences rather than direct measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The optimized IMP cell culture conditions are fully defined, animal component-free, robust across multiple hPSC lines (H9, Hues9, BJ RiPS), compatible with freeze-thaw cycles without loss of proliferative or differentiation capacity, and enable expansion to quantities (~10\u00b2\u2070 cells) suitable for drug screening or regenerative medicine applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The defined, animal-free nature of the culture conditions is evident from the Materials and Methods description of purified ECM proteins and recombinant growth factors (C123). Robustness across cell lines is demonstrated experimentally (C124). Freeze-thaw compatibility is stated as an observation (C125), though supporting data are not shown. The calculation of expansion potential to ~10\u00b2\u2070 cells (C126) is based on the measured doubling rates and passage numbers, though this is a theoretical calculation rather than an actual demonstration. The citation provided (Chen et al., 2013) presumably supports the relevance of these quantities for applications. Overall, the claims are well-supported, though some aspects (freeze-thaw, ultimate expansion limits) could benefit from additional data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The authors speculate that continuous activation of WNT and FGF signaling pathways may stabilize the IMP cell state and restrict differentiation potential to IM lineage, drawing parallels to how WNT levels instruct positional identity in neural progenitors and influence mesodermal subtype specification during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly presented as speculation (C132, C138) and draws on literature precedents for WNT/FGF roles in mesoderm specification during embryogenesis (C133) and in patterning other progenitor populations (C134, C135, C136, C137). While the speculation is reasonable and grounded in developmental biology principles, it is not directly tested in this manuscript. The authors appropriately acknowledge they 'currently do not understand the mechanism' (C132). This represents a hypothesis for future investigation rather than a supported conclusion from the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The authors suggest that IMP cells may be capable of differentiating into other IM derivatives (Wolffian and M\u00fcllerian ducts) and could provide insights into mechanisms of developmental competence and lineage restriction, drawing on recent epigenetic profiling studies showing sequential opening of chromosomal regions during differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative statements about future research directions (C111, C141) and broader implications (C139). The connection to epigenetic mechanisms (C140) is based on cited literature rather than data from this study. While these are reasonable hypotheses and appropriate discussion points, they are not tested or supported by the current work. The evaluation is UNCERTAIN because these represent proposed future experiments rather than conclusions from the presented data.",
+    "result_type": "MINOR"
+  }
+]

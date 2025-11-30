@@ -1,0 +1,2005 @@
+{
+  "submission": {
+    "id": "34e6df42-3394-4177-a23e-1ed49dcf77f8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:23:04.202072Z",
+    "updated_at": "2025-11-29T21:23:04.202072Z"
+  },
+  "content": [
+    {
+      "id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "submission_id": "34e6df42-3394-4177-a23e-1ed49dcf77f8",
+      "content_type": "manuscript",
+      "content_text": "# Two-subunit DNA escort mechanism and inactive subunit bypass in an ultra-fast ring ATPase\n\n## Authors\n\n- Ninning Liu<sup>1</sup>\n- Gheorghe Chistol<sup>1</sup>\n- Carlos Bustamante<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Jason L. Choy Laboratory of Single Molecule Biophysics University of California Berkeley United States\n2. Department of Molecular and Cell Biology University of California Berkeley United States\n3. Department of Physics University of California Berkeley United States\n4. California Institute for Quantitative Biosciences Berkeley United States\n5. Department of Chemistry Howard Hughes Medical Institute, University of California Berkeley United States\n6. Physical Biosciences Division Lawrence Berkeley National Laboratory Berkeley United States\n7. Kavli Energy NanoSciences Institute at the University of California, Berkeley and the Lawrence Berkeley National Laboratory Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nSpoIIIE is a homo-hexameric dsDNA translocase responsible for completing chromosome segregation in Bacillus subtilis. Here, we use a single-molecule approach to monitor SpoIIIE translocation when challenged with neutral-backbone DNA and non-hydrolyzable ATP analogs. We show that SpoIIIE makes multiple essential contacts with phosphates on the 5'\u21923' strand in the direction of translocation. Using DNA constructs with two neutral-backbone segments separated by a single charged base pair, we deduce that SpoIIIE\u2019s step size is 2 bp. Finally, experiments with non-hydrolyzable ATP analogs suggest that SpoIIIE can operate with non-consecutive inactive subunits. We propose a two-subunit escort translocation mechanism that is strict enough to enable SpoIIIE to track one DNA strand, yet sufficiently compliant to permit the motor to bypass inactive subunits without arrest. We speculate that such a flexible mechanism arose for motors that, like SpoIIIE, constitute functional bottlenecks where the inactivation of even a single motor can be lethal for the cell.\n\n## Introduction\n\nThe ASCE [Additional Strand Conserved E (glutamate)] division of oligomeric, ring-shaped NTPases encompasses a diverse range of enzymes that function as molecular motors (Lyubimov et al., 2011). Within the ASCE division, the FtsK/SpoIIIE family of motors is involved in the fundamental process of DNA segregation prior to cell division. During the Bacillus subtilis sporulation lifecycle, an asymmetric division septum closes around one of the sister chromatids before complete chromosome segregation, trapping about two-thirds of the chromosome in the mother cell compartment (Burton et al., 2007; Wu and Errington, 1994). To complete chromosome segregation, SpoIIIE must translocate the DNA from the mother cell into the forespore. SpoIIIE and its closely related Escherichia coli homologue FtsK, contain an N-terminal transmembrane domain that anchors the protein to the division septum, a long unstructured polypeptide linker and a C-terminal-soluble motor domain consisting of subdomains \u03b1, \u03b2, and \u03b3 (Barre, 2007). Subdomains \u03b1 and \u03b2 adopt a RecA-like fold containing ATP binding and hydrolysis motifs (Massey et al., 2006), while subdomain \u03b3 imparts translocation directionality to the motor (sequence dependence) (Besprozvannaya et al., 2013; Lee et al., 2012; L\u00f6we et al., 2008; Ptacin et al., 2006; 2008). Crystallography and electron microscopy studies indicate that both FtsK and SpoIIIE form homo-hexameric rings, and that double-stranded DNA (dsDNA) is threaded through their central pore (Cattoni, et al., 2014;\u00a0Cattoni et al., 2013; Massey et al., 2006).\n\nA distinguishing characteristic of SpoIIIE/FtsK is their enormous translocation velocity (\u223c5\u00a0kbp/s) and their ability to work against high forces (Ptacin et al., 2008; Saleh et al., 2004). Previous single-molecule studies of these motors focused primarily on investigating the mechanism of sequence recognition and translocation direction reversal (Lee et al., 2012; Pease et al., 2005; Ptacin et al., 2006; 2008; Saleh et al., 2004), studying how they strip off DNA-bound proteins (Lee et al., 2014; Marquis et al., 2008), and determining the amount of supercoils introduced in the DNA during translocation (Saleh et al., 2005). However, many fundamental aspects of these motors\u2019 operation remain poorly understood: How does the motor interact with its DNA track during translocation? What is the motor step size? How does the motor coordinate the activity of its individual subunits? How is the subunit coordination mechanism optimized for the motor\u2019s specific biological task?\n\nTo answer these questions, we used single-molecule manipulation and measurement techniques. Using modified DNA with a neutral backbone, we show that SpoIIIE makes critical electrostatic contacts with the phosphate backbone on the 5'\u21923' strand in the direction of translocation. This observation indicates that the individual subunits operate in a well-defined sequential order around the ring. To determine the SpoIIIE step size, we challenged the motor to translocate a DNA molecule containing two neutral segments of variable lengths separated by a charged base pair. This hybrid construct revealed the periodicity of motor\u2013DNA interactions, suggesting that each SpoIIIE subunit takes a 2-bp step per ATP hydrolyzed. Experiments where non-hydrolyzable nucleotides were used to probe the intersubunit coordination within the motor suggest that SpoIIIE can tolerate non-consecutive inactive subunits, implying a degree of flexibility in the sequential operation of the motor. Finally, we propose a two-subunit DNA escort model that can rationalize all these data and that correctly predicts the degree of supercoiling introduced by SpoIIIE during translocation.\n\n## Results\n\nTo monitor DNA translocation by SpoIIIE, we used a single-molecule assay developed previously (Smith et al., 2003). Briefly, a DNA-coated bead was held in an optical trap while a SpoIIIE-coated bead was held on a micropipette (Figure 1a); SpoIIIE engaged the DNA when the beads were in close proximity, and translocated the DNA only in the presence of ATP. The DNA was held under constant tension by continuously adjusting the trap position as translocation proceeded. At saturating [ATP] (3 mM) and a low force (5 pN) SpoIIIE translocated DNA at \u223c4 kbp/s (Figure 6\u2014figure supplement 1), in agreement with previously reported rates in vivo (Burton et al., 2007) and in vitro (Ptacin et al., 2008). Control experiments indicate that a single SpoIIIE motor was attached to the DNA tether: (i) Protein concentration was titrated until activity was observed for only one of every \u223c5 pairs of beads tested, thus reducing the likelihood that a single bead contained multiple active SpoIIIE motors. (ii) At high forces, SpoIIIE loses its grip on DNA and slips. These slipping events occurred in one fast rip, not in several steps, indicating that a single motor\u2013 DNA interaction is disrupted in each case (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/09224/elife-09224-fig1-v3.jpg)\n\n**Figure 1.:** (a) Experimental geometry of the optical tweezers assay. Neutral MeP DNA (red) was placed roughly 4 kb away from the end of the dsDNA tether (blue) that is attached to the optically trapped bead.\u00a0(b) Sample traces of individual SpoIIIE motors translocating on DNA with a 30-bp dsMeP insert (magenta). Control experiments with DNA containing no MeP inserts are shown in green. Inset: detailed view of motor\u2019s attempts to cross the neutral insert. All experiments were conducted at 3 mM ATP and a constant force of 5 pN. Traces were offset vertically to line-up the pause-like regions. Phosphate and MeP groups are represented as blue and red circles respectively.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09224/elife-09224-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** We performed control experiments in 'passive mode' where the optical trap position is fixed. As SpoIIIE translocates the DNA tether, it pulls the bead away from the trap, causing the tension in the DNA to increase. Upon reaching a certain force, SpoIIIE loses its grip on DNA and slips (red arrows), then resumes translocation from zero force. The fact that each slip occurs in a single, nearly instantaneous step indicates that a single SpoIIIE ring is translocating the DNA. Unfiltered 1-kHz data is shown.\n\n### SpoIIIE makes critical contacts with the DNA phosphate backbone during translocation\n\nModified inserts such as ssDNA, dsDNA with interstrand cross-links, dsDNA with abasic sites, and\u00a0so\u00a0on, have been previously used in single-molecule experiments to probe how dsDNA translocases interact with their nucleic-acid track (Aathavan et al., 2009; Stanley et al., 2006). To investigate how SpoIIIE interacts with its substrate, we designed DNA constructs containing a modified insert with a methyl-phosphonate (MeP) backbone (Figure 1b), which preserves the base\u00a0pairing and overall structure of B-form DNA (Strauss and Maher, 1994). We first monitored SpoIIIE translocation along a substrate containing a 30-bp double-stranded MeP (dsMeP) insert, several times longer than the expected step size of the motor. Upon reaching the insert, SpoIIIE undergoes multiple slips followed by translocation recoveries (Figure 1b inset), revealing that it makes several attempts to cross the neutral segment. Despite these attempts, SpoIIIE failed to traverse the 30-bp dsMeP segment (Figure 1b), indicating that motor interactions with the negatively charged phosphates are critical for translocation.\n\nDepending on the step size of the motor, and the manner in which it interacts with the DNA, the motor should be able to easily traverse short dsMeP inserts up to some critical length. To determine this length, we designed dsMeP inserts of varying size and recorded the motor\u2019s ability to cross each insert (Figure 2a). We found that SpoIIIE can traverse dsMeP segments of 2 bp, 3 bp, and 4 bp with near-100% probability (Figure 2a), but the traversal probability sharply drops to \u223c50% for dsMeP inserts of 5 bp (Figure 2b). Importantly, this sharp reduction in insert crossing probability is accompanied by a dramatic increase in the average traversal time (Figure 2c). Note that further increasing the dsMeP insert length from 5 bp to 7 bp does not significantly increase the mean traversal time (Figure 2c). Taken together, these data show that 5 bp is the minimum length of dsMeP required to disrupt processive translocation by SpoIIIE, and indicate that SpoIIIE makes periodic electrostatic contacts with the DNA every 5 bp or less.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/09224/elife-09224-fig2-v3.jpg)\n\n**Figure 2.:** (a) Sample traces of SpoIIIE translocating on DNA with dsMeP inserts of 2 bp (blue), 3 bp (green), 4 bp (magenta), and 5 bp (black).\u00a0(b) Traversal probability for dsMeP inserts of various length. Note the sharp decrease in traversal probability between 4-bp and 5-bp inserts. Error-bars represent the 68% CI estimated via bootstrapping.\u00a0(c) Mean traversal time for dsMeP inserts of various length. Note the large increase in traversal time between 4-bp and 5-bp inserts. Error-bars represent the SEM. P values calculated with a two-tailed Fisher exact test.\n\nNote that in rare instances (1 out of 32 molecules, Table 1), SpoIIIE managed to traverse the 30-bp dsMeP insert, albeit after several seconds of repeated crossing attempts (Figure 1b). A slightly higher traversal probability (\u223c8%) was recorded for the 10-bp dsMeP insert (Figure 2b). The dynamics of slipping and re-translocation (Figure 1b, inset) at the neutral insert and the lengthy traversal times for dsMeP inserts of 5 bp or longer (Figure 2c) suggest that, given a sufficient number of traversal attempts, SpoIIIE can cross even relatively long stretches of dsMeP (10\u201330 bp). The drop in traversal probability for longer dsMeP inserts suggests that the motor can hold onto MeP DNA for a short amount of time during which it can either step forward, or lose its grip on the neutral DNA. In other words, forward translocation along the MeP insert is in kinetic competition with backward slipping (Aathavan et al., 2009). As a result, to traverse longer MeP inserts, the motor must execute a correspondingly larger number of consecutive productive power-strokes. We hypothesize that other types of motor\u2013DNA interactions (e.g. steric) enable the motor to traverse the neutral insert given an arbitrarily large number of crossing attempts. In support of this idea, the \u03c629 ring ATPase has been shown to require electrostatic contacts with the DNA every 10 phosphates, but relies on steric, non-specific interactions to exert force and translocate the DNA in-between those electrostatic contacts (Aathavan et al., 2009).\n\n**Table 1.**\n MeP traversal statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>DNA construct</th>\n      <th>Successful crossings</th>\n      <th>Failed crossings</th>\n      <th>Total\u00a0traces</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>ssMeP modification</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>30 base 3'\u21925' MeP</td>\n      <td>23</td>\n      <td>1</td>\n      <td>24</td>\n    </tr>\n    <tr>\n      <td>30 base 5'\u21923'\u00a0MeP</td>\n      <td>6</td>\n      <td>22</td>\n      <td>28</td>\n    </tr>\n    <tr>\n      <td>dsMeP Modification</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>2 bp dsMeP</td>\n      <td>21</td>\n      <td>1</td>\n      <td>22</td>\n    </tr>\n    <tr>\n      <td>3\u00a0bp dsMeP</td>\n      <td>16</td>\n      <td>0</td>\n      <td>16</td>\n    </tr>\n    <tr>\n      <td>4\u00a0bp dsMeP</td>\n      <td>21</td>\n      <td>3</td>\n      <td>24</td>\n    </tr>\n    <tr>\n      <td>5\u00a0bp dsMeP</td>\n      <td>13</td>\n      <td>13</td>\n      <td>26</td>\n    </tr>\n    <tr>\n      <td>7\u00a0bp dsMeP</td>\n      <td>3</td>\n      <td>9</td>\n      <td>12</td>\n    </tr>\n    <tr>\n      <td>10\u00a0bp dsMeP</td>\n      <td>1</td>\n      <td>19</td>\n      <td>20</td>\n    </tr>\n    <tr>\n      <td>30\u00a0bp dsMeP</td>\n      <td>1</td>\n      <td>31</td>\n      <td>32</td>\n    </tr>\n    <tr>\n      <td>Length of MeP Probe Segment*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>4 bp dsMeP probe</td>\n      <td>7</td>\n      <td>16</td>\n      <td>23</td>\n    </tr>\n    <tr>\n      <td>3\u00a0bp dsMeP probe</td>\n      <td>9</td>\n      <td>16</td>\n      <td>25</td>\n    </tr>\n    <tr>\n      <td>2\u00a0bp dsMeP probe</td>\n      <td>6</td>\n      <td>18</td>\n      <td>24</td>\n    </tr>\n    <tr>\n      <td>1\u00a0bp dsMeP probe</td>\n      <td>33</td>\n      <td>4</td>\n      <td>37</td>\n    </tr>\n  </tbody>\n</table>\n\n_All MeP data was gathered under 5 pN of opposing force and [ATP] = 3 mM*All MeP probe segments carry a 4 bp dsMeP modification upstream of the probe_\n\n### SpoIIIE tracks the 5\u2019\u21923\u2019 strand in the direction of translocation\n\nTo determine whether SpoIIIE tracks the phosphate backbone of one or both DNA strands, we repeated the above experiment with 30-base inserts where phosphates on either strand were selectively neutralized. 23 out of 24 SpoIIIE molecules traversed the insert containing MeP on the 3'\u21925' strand in the direction of translocation (Figure 3a, orange traces), compared to only 6 out of 28 SpoIIIE molecules that crossed the insert with a neutral backbone on the 5'\u21923' strand (Figure 3a, magenta traces). Strikingly, the traversals of the insert with a neutral 3'\u21925' strand were very fast (similar to translocation along unmodified DNA), whereas the traversals of the insert with a neutralized 5'\u21923' strand required 5\u201350 s, likely involving several crossing attempts. These results clearly indicate that SpoIIIE makes essential electrostatic contacts selectively with the charged backbone on the 5'\u21923' strand in the direction of translocation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/09224/elife-09224-fig3-v3.jpg)\n\n**Figure 3.:** (a) Sample traces of SpoIIIE translocating on DNA with 30 bp of neutral DNA on either the 3\u2019-5\u2019 strand (orange traces) or the 5\u2019-3\u2019 strand (magenta traces) in the direction of translocation. (b) Cartoon illustrating a hypothetical\u00a0sequential model in which the DNA backbone is handed off between adjacent subunits within a hexameric ring. For clarity only one strand of dsDNA is shown. A highlighted backbone phosphate (yellow) is in contact with a motor subunit (magenta). In general, the motor step size in such a model can be anything less than 10 bp. Here we illustrate the model using a 2-bp step size. After one motor subunit (magenta) executes its power-stroke, the helical backbone of the dsDNA\u2019s will be shifted, positioning the phosphate backbone in close proximity to the next subunit poised to fire. (c) Cartoon illustrating a hypothetical model in which a 10-bp burst enables a hexameric ring ATPase to maintain phosphate contacts on the same DNA strand. Initially, a single subunit (magenta) is contacting the phosphate backbone (yellow). After a 10 bp burst, the motor has traversed nearly a full helical turn on dsDNA, bringing the phosphate backbone back in register with the same ATPase subunit.\n\n### Strand tracking favors a sequential ATP hydrolysis model for SpoIIIE\n\nThe observation that SpoIIIE tracks only one of the DNA strands imposes geometric constraints on how the DNA is handed off from subunit to subunit during translocation. Strand-tracking is inconsistent with a stochastic coordination mechanism in which the six ATPase subunits execute their power-strokes at random. In such a mechanism, the subunit poised to fire is unlikely to be aligned with the tracked strand and will therefore not engage the DNA substrate. Since the DNA is held under constant tension in our experiments, a stochastically coordinated ATPase ring is expected to slip frequently, contrary to our observations.\n\nTwo possible scenarios are consistent with strand\u2013tracking: (i) Subunits hydrolyze ATP and execute their power-strokes sequentially around the ring, such that after every power-stroke the subunit scheduled to fire next is properly aligned to interact with the phosphate backbone of the tracked strand (Figure 3b). In this scenario, the SpoIIIE subunits would fire consecutively (subunit 1 fires, followed by subunit 2, followed by subunit 3, etc). After subunit 1 executes its power-stroke, the helical geometry of the DNA will position the phosphate backbone of the tracked strand in close proximity to subunit 2, depending on the step size of the motor (Massey et al., 2006; Strick and Quessada-Vial, 2006). Thus, motor-DNA contacts would proceed from one subunit to the next in an ordinal fashion. (ii) The motor translocates DNA in increments of 10\u201311 bp, which closely matches the helical periodicity of dsDNA (10.4\u201310.5 bp/pitch). This mechanism would ensure that after each translocation event, the motor contacts the same strand after traversing one full helical turn along the DNA (Figure 3c). Such a mechanism is employed by the \u03c629 ring ATPase, which translocates DNA in 10-bp bursts and contacts the DNA backbone on the same strand every 10 base\u00a0pairs\u00a0(Aathavan et al., 2009).\n\nThe data presented above indicate that SpoIIIE makes periodic contacts with the same DNA strand every five base\u00a0pairs or less and are consistent only with the sequential ATP hydrolysis mechanism outlined in scenario (i).\n\n### MeP stepping stone constructs suggest that SpoIIIE has a step size of 2 bp\n\nIn order to rationalize how SpoIIIE easily traverses 4 bp of neutral DNA, but has difficulty crossing 5 bp of neutral DNA (Figure 2b), we considered several motor-DNA contact models. To be consistent with the observation that SpoIIIE tracks only one DNA strand (Figure 3a), all potential models require that SpoIIIE subunits fire in a well-defined sequential order around the ring (Figure 4a). Furthermore, since electrostatic interactions with the backbone on one strand are critical for maintaining the motor\u2019s grip on DNA, we reason that at least one electrostatic contact between the motor and the phosphate backbone is needed for SpoIIIE to maintain a stable grip on its DNA substrate. Finally, the pool of potential models can be further narrowed by making an assumption about the state of dsDNA inside the central pore of SpoIIIE during translocation. Although no ring-shaped dsDNA translocase has been co-crystallized with its substrate, it is thought that dsDNA is not significantly distorted within the central pore of ring ATPases (Massey et al., 2006; Sun et al., 2008). For example, the central channel of the FtsK ring can fully accommodate a single, undistorted B-form dsDNA strand\u00a0(Massey et al., 2006). Therefore, we considered models where the helical pitch of dsDNA inside the SpoIIIE channel is similar to that of B-form DNA (10.5 bp/turn). Expanding our models to include a distorted helix similar to A-form DNA (11.0 bp/turn) would require only minor corrections and would not affect the overall predictions of these models.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/09224/elife-09224-fig4-v3.jpg)\n\n**Figure 4.:** (a) Cartoon illustrating the sequential firing of subunits A\u2013F of SpoIIIE as it approaches a 4 bp insert of dsMeP.\u00a0(b) Possible translocation models (i\u2013v) depicting the interaction between SpoIIIE subunits (A\u2013F) and DNA; in all models subunits fire in a sequential order (A\u2192B\u2192C\u2192D\u2192E\u2192F\u2192A etc). For clarity, we show only the backbone the DNA strand tracked by SpoIIIE. Phosphate and MeP groups are shown in blue and red, respectively. A solid line connecting a SpoIIIE subunit to the backbone represents a stable electrostatic interaction; a dashed line represents a disrupted interaction.\n\nFive models (Figure 4b i\u2013v ) are consistent with the results of the dsMeP experiments (Figure 2) and satisfy the conditions listed above: (i) At any time, only one subunit contacts one phosphate on DNA (Figure 4b i); this model requires a 5-bp step size to cross a 4-bp MeP insert. (ii) Only one subunit contacts two adjacent DNA phosphates at any time (Figure 4b ii); this model requires a 4-bp step size to clear a 4-bp MeP insert. (iii) At any time, two neighboring subunits each contact one DNA phosphate; this model requires a 3-bp step size to clear a 4-bp MeP insert (Figure 4b iii). (iv) At any time, two neighboring subunits each contact two adjacent DNA phosphates; this model requires a 2-bp step size to cross a 4-bp MeP insert (Figure 4b iv). We disfavor models where SpoIIIE subunit simultaneously contact more than two consecutive phosphate groups on the DNA backbone, and models where three or more consecutive subunits contact the DNA backbone because such models would require large motor/DNA distortions. Finally, we also considered a translocation model similar to the mechanisms proposed for the E1 and Rho helicases (Enemark and Joshua-Tor, 2006; Thomsen and Berger, 2009), (v) at any time five subunits contact five consecutive DNA phosphates; this model requires a 1-bp step size to cross a 4-bp insert (Figure 4b v). Although this E1/Rho-like model requires significant motor/DNA distortions (5 SpoIIIE subunits span an arc of 300\u00b0 while five consecutive phosphates in dsDNA span an arc of \u223c170\u00b0), it is in principle consistent with the data from Figure 2.\n\nWhile we cannot rule out more complex models that may involve non-consecutive subunits simultaneously contacting the DNA, or stochastic bursts consisting of multiple, rapid consecutive steps (Cordova et al., 2014; Sen et al., 2013), we favor the more parsimonious models presented here.\n\nTo distinguish among the models proposed above and to determine SpoIIIE\u2019s step size, we challenged the motor with inserts containing a 4-bp MeP segment ('register'), followed by 1 bp of regular DNA ('stepping-stone') that is in turn followed by a variable-length MeP segment ('probe') of 1\u20134 bp (Figure 5a). Because SpoIIIE easily crosses up to 4 bp of neutral DNA, the 4-bp register is meant to align the stepping phase of SpoIIIE with the stepping-stone segment. Motors that are not in perfect register with the stepping-stone should not establish electrostatic contacts with DNA and will either slip backward or stall. The motors that successfully traverse the entire insert should land on the stepping-stone in a 'front-foot-first' configuration\u2014wherein only the leading motor-DNA contact is securely established\u2014and should be able to cross a probe segment of length equal to the step size minus 1 bp (Figure 5b). We found that SpoIIIE traversed a 1-bp neutral probe with near-100% probability (Figure 5c orange traces), inconsistent with the 5 subunit contact model (Figure 5b v ). The crossing probability sharply drops to \u223c25% for 2-bp, 3-bp, or 4-bp neutral probes (Figure 5c, magenta traces and Figure 5d). As seen in Figure 5b, only model iv can easily cross a 1-bp probe but not probes of 2 bp or longer. In this model, two consecutive SpoIIIE subunits each contact two adjacent phosphates, and DNA is translocated in 2-bp steps (Figure 5b iv). A 2-bp step size is in good agreement with both enzymatic and structural studies of the related dsDNA translocase FtsK, which translocates 1.6\u20132.1 bp per ATP hydrolyzed (Graham et al., 2010; Massey et al., 2006).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/09224/elife-09224-fig5-v3.jpg)\n\n**Figure 5.:** (a) The design of 'stepping-stone' constructs. Each insert consists of a register segment with 4 bp of neutral DNA, followed by one regular DNA base ('stepping-stone'), and a probe segment with x bp of neutral DNA. For clarity, only the DNA strand tracked by SpoIIIE is shown.\u00a0(b) Diagrams illustrating the longest probe segment that can be traversed by the models depicted in Figure 4b. Model (i) should traverse a probe segment of at most 4 bp, whereas model (v) cannot traverse even a probe of 1 bp.\u00a0(c) Sample traces of SpoIIIE translocating on DNA with 'stepping-stone' inserts containing a 1-bp probe (orange) or a 2-bp probe (magenta).\u00a0(d) Traversal probability for stepping-stone constructs with various probe lengths. Error-bars show the 68% CI estimated via bootstrapping. p values were calculated using a two-tailed Fisher exact test.\u00a0(e) Diagram illustrating how model (iv) can successfully traverse a 'stepping-stone' insert with a probe of 1 bp. The star marks the subunit executing the power-stroke. Once a subunit fires, it cannot fire again (gray shading) and must eventually disengage from the DNA (subunit shown as making no interactions with DNA).\u00a0(f) Diagram showing why model (iv) fails to cross a 'stepping-stone' insert with a probe of 2 bp.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09224/elife-09224-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Diagram illustrating two different scenarios of how the E1/Rho-like translocation model would cope with a MeP stepping stone insert. In this model subunits fire in a well-defined sequential order (firing subunit denoted by the yellow star) and move by 1 bp on DNA, whereas the remaining subunits escort the DNA during the translocation process. If the ATPase subunits have to fire in a strictly sequential order, a subunit cannot fire multiple consecutive times, or fire out of order, and is grayed out after firing. A motor operating via a strictly sequential E1/Rho-like translocation mechanism is not capable of crossing a MeP stepping stone insert with a 1-bp probe (frame 8), contrary to our observations\u00a0(Figure 5c\u2013d). If the same ATPase subunit could fire out of order several times in a row, the motor should traverse a MeP stepping stone insert with a 4-bp probe (inset), again inconsistent with our findings\u00a0(Figure 5c\u2013d).\n\nFigure 5e illustrates how model iv enables SpoIIIE to cross the insert with a 1-bp probe. The first three frames illustrate the sequential firing of subunits A, B, and C, all of which maintain at least one anchoring contact with the phosphate backbone. Because subunit D cannot make electrostatic contacts with the backbone, it fails to propel the DNA upon firing (Figure 5e, frame 5). As a result, no other subunit can establish new contacts with the DNA backbone. After subunit E translocates the DNA by 2 bp, subunit F can now latch onto a negatively\u00a0charged phosphate and continue to translocate DNA. Figure 5f illustrates how this model copes with a 2-bp MeP probe: subunit F cannot anchor itself onto the DNA, causing the motor to pause and eventually slip (as\u00a0shown\u00a0in\u00a0Figure 5c, magenta traces). This two-subunit DNA escort model requires one subunit to execute the power stroke while an adjacent subunit maintains its phosphate contacts during this power-stroke, escorting the DNA through the ring. In this model, the ATPase subunits translocate the DNA sequentially around the ring in a highly\u00a0coordinated fashion that enables SpoIIIE to track one DNA strand. There is increasing structural evidence for this type of motor mechanism involving 'translocating' subunits and 'escorting' subunits; examples include the E.coli\u2019s Rho helicase (Thomsen and Berger, 2009) and the papillomavirus E1 helicase (Enemark and Joshua-Tor, 2006). However, unlike the E1/Rho mechanisms, which employ four escorting subunits, the SpoIIIE translocation model proposed here requires only one escorting subunit.\n\n### Nucleotides stabilize the SpoIIIE-DNA interactions\n\nTo quantify the strength of the motor\u2013DNA interaction, we measured the force at which SpoIIIE loses its grip on DNA. In a buffer lacking nucleotides, SpoIIIE could bind to DNA and form tethers between the trapped bead and the micropipette-held bead. Manual pulling experiments revealed that these tethers rupture at \u223c3 pN (Figure 7\u2014figure supplement 1, apo), suggesting that apo-SpoIIIE does not interact strongly with DNA. In buffers containing only ADP or ATP\u03b3S, SpoIIIE could bind to DNA, forming tethers that rupture at \u223c15 and \u223c25 pN, respectively (Figure 7\u2014figure supplement 1). These results indicate that nucleotides stabilize motor\u2013DNA interactions and suggest that only nucleotide-bound subunits are capable of forming stable electrostatic contacts with the DNA phosphate backbone.\n\n### The SpoIIIE ring can operate with non-consecutive inactive subunits\n\nTo further investigate how individual SpoIIIE subunits coordinate their ATP hydrolysis activity, we monitored DNA translocation in a saturating [ATP] buffer that contained ATP\u03b3S \u2013 a nucleotide analog that is hydrolyzed very slowly. Structural studies of FtsK indicate that ATP\u03b3S binds to the same catalytic pocket as ATP (Massey et al., 2006), suggesting that ATP\u03b3S should act as a competitive inhibitor to ATP binding for the SpoIIIE/FtsK family of ring ATPases. We observe that ATP\u03b3S induces SpoIIIE pausing (Figure 6a) and reduces the pause-free translocation velocity (Figure 6\u2014figure supplement 1a). This reduction in pause-free velocity is well described by a simple competitive inhibition mechanism (Figure 6\u2014figure supplement 1b). Similar results were obtained with a non-hydrolyzable ATP analog\u2013AMP-PNP (Figure 6\u2014figure supplement 1c\u2013d). Taken together, these results indicate that nucleotide analogs induce SpoIIIE pausing by binding to a subset of ring subunits and arresting them in a pre-hydrolysis state.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/09224/elife-09224-fig6-v3.jpg)\n\n**Figure 6.:** (a) Sample SpoIIIE traces acquired at different [ATP\u03b3S] and 3mM ATP. Pauses are highlighted in red.\u00a0(b) Mean duration of the ATP\u03b3S-induced pauses extracted from fitting the pause duration distribution to an exponential. Error-bars represent the 95% CI of the fit. Insert: histogram of pause durations at 750 \u03bcM ATP\u03b3S and 3 mM ATP and the exponential fit to this distribution.\u00a0(c) The density of ATP\u03b3S-induced pauses at various [ATP\u03b3S] and 3mM ATP. Error-bars represent the SEM.\u00a0(d) Pause density versus [ATP\u03b3S] corrected to account for missed pauses (black symbols). Error-bars represent the SEM. The shaded regions illustrate the predictions for a sequential hydrolysis model where SpoIIIE pauses when n consecutive subunits are bound to ATP\u03b3S.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09224/elife-09224-fig6-figsupp1-v3.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Pause-free velocity versus opposing force for various [ATP\u03b3S] and 3mM ATP. Error-bars represent the SEM. (b) Degree of pause-free velocity inhibition i = 1-v ([ATP\u03b3S])/vmax versus [ATP\u03b3S] at 3 mM [ATP] and 5 pN of opposing force. The dashed curve represents the fit to the competitive inhibition model (inset) with Ki = 124 \u00b1 20 \u00b5M. (c) Pause-free velocity versus opposing force at 3\u00a0mM [ATP] in the absence of any nucleotide analogs (black), in the presence 500 \u00b5M [ATP\u03b3S] (green), or in the presence of 500 \u00b5M [AMP-PNP] (pink). Error bars represent the SEM. (d) Pause density measured at 3 mM [ATP] and various [ATP\u03b3S] (blue symbols). Experiments were also performed with 3 mM [ATP] and 0.5 mM [AMP-PNP] (red symbol). Error bars represent the SEM. (e) Pause density versus opposing force at 3 mM [ATP] and 1 mM [ATP\u03b3S]. (f) Mean lifetime of ATP\u03b3S-induced pauses calculated from single-exponential fits to the pause duration distribution at 3 mM [ATP] and 1 mM [ATP\u03b3S]. Error bars represent the 95% CI of the fits.\n\nTo determine how many analog-bound subunits are required to arrest DNA translocation, we measured the density and duration of ATP\u03b3S-induced pauses as a function of [ATP\u03b3S]. The density and duration of analog-induced pauses does not depend on external force (Figure 6\u2014figure supplement 1e\u2013f), consequently pauses detected at all forces were pooled together. Given the spatio-temporal resolution of our experiments, we could reliably detect pauses longer than 30 ms at 125 \u2013250 \u03bcM ATP\u03b3S, 50 ms at 375\u2013500 \u03bcM ATP\u03b3S, and 75 ms at 750\u20131000 \u03bcM ATP\u03b3S. However, regardless of the shortest detectable pause duration and the ATP\u03b3S concentration, the distribution of measured pause durations was well described by a single exponential decay (Figure 6b, inset) with the same characteristic life-time of \u223c35 ms (Figure 6b). The fact that the characteristic life-time does not depend on ATP\u03b3S concentration suggests that all analog-induced pauses are drawn from the same distribution. Furthermore, the single-exponential dependence of the pause duration distribution indicates that the exit from the paused state is governed by a single rate-limiting event\u2014presumably the exchange of an ATP\u03b3S molecule with\u00a0one ATP which\u00a0is present in saturating concentrations, as proposed for other ring ATPases (Chistol et al., 2012; Sen et al., 2013). Despite the fact that we cannot detect analog-induced pauses shorter than a certain cutoff (30\u201375 ms), we can estimate the number of missed pauses\u2014and therefore the true pause density\u2014from the measured pause density (Figure 6c) and the characteristic life-time derived from the pause distribution (Figure 6b), assuming that the single-exponential distribution holds for pauses shorter than the cutoff (Hodges et al., 2009) (see\u00a0'Materials and methods').\n\nThe MeP experiments support a sequential nucleotide hydrolysis model. Therefore, to explain the density of ATP\u03b3S-induced pauses, we considered a sequentially coordinated hexameric ATPase ring that pauses whenever n consecutive subunits are bound to ATP\u03b3S (1 \u2264 n \u22646). The pause density (PD) can be analytically expressed in terms of the motor\u2019s pause-free velocity (vpf), the ATP\u03b3S dissociation rate (koff), and the probability that the motor is paused (Ppause)\u2014which is proportional to the concentrations and dissociation constants of ATP and ATP\u03b3S (Materials and methods), as follows:\n\n$$\nPD\u00a0=\u00a0\\frac{k_{off}}{v_{pf}}\u00b7\\frac{P_{pause}}{(1-\u00a0P_{Pause})}\n$$\n\nFigure 6d shows the expected pause density predicted for different n values. For example, n=1 (green shaded region) corresponds to a sequentially coordinated ring that pauses whenever a single subunit is bound to ATP\u03b3S; n=2 (blue shaded region) corresponds to a sequentially coordinated ring that pauses when two consecutive subunits are both bound to ATP\u03b3S, and\u00a0so\u00a0on. The ATP\u03b3S pause-density data corrected to account for missed pauses (Figure 6d black symbols) are best described by the model in which two (n=2) consecutive analog-bound subunits are required to induce a pause in the motor (Figure 6d, blue-shaded region). In other words, analysis of the pause density indicates that the motor can operate processively with non-consecutive inactive subunits but not with two or more consecutive subunits. This conclusion is further supported by the observation that FtsK hexamers readily bypass individual catalytically inactive ATPase subunits (Crozat et al., 2010).\n\n## Discussion\n\n### Secondary motor-DNA interactions\n\nWe have shown that SpoIIIE translocates DNA by making crucial anchoring contacts with the negatively\u00a0charged phosphate groups on one DNA strand. Although electrostatic interactions with the backbone of the 5\u2019\u21923\u2019 strand in the direction of translocation are the principal mode of motor-substrate contact, we surmise that other types of interactions (e.g. steric) play a secondary role in maintaining SpoIIIE\u2019s grip on DNA. This inference explains why we observe small but non-zero traversal probabilities for neutral inserts of 10\u201330 bp, much longer than the expected motor step size (Figure 2b). Interestingly, SpoIIIE is more likely to traverse 30-bp inserts with a neutral backbone only on the 5\u2019\u21923\u2019 strand (6 out of 28 molecules) than 30-bp inserts with a neutral backbone on both strands (1 out of 32 molecules) (Table 1). To explain this discrepancy, we speculate that during translocation, in addition to the essential electrostatic interactions with the 5\u2019\u21923\u2019 strand, the SpoIIIE ring may also interact very weakly with charges on the 3'\u21925' strand. These secondary interactions could be mediated by parts of the motor other than the pore loops which execute the power \u2013 stroke.\n\n### MeP is not expected to cause significant DNA distortions\n\nPrior experiments on MeP DNA have established that certain patterns of neutral and charged bases can introduce large DNA distortions. An asymmetric neutralization of the phosphate backbone whereby one 'face' of the dsDNA helix had its charges removed (e.g. neutralizing bases 1-3 on one strand and bases 3-6 on the other strand) results in DNA bending toward the direction of the neutralized region (Strauss and Maher, 1994). However, a symmetric neutralization of the phosphate backbone, whereby the phosphates on both strands were uniformly neutralized, resulted in no significant DNA distortions (Strauss and Maher, 1994).\n\nWe do not expect the MeP DNA constructs used in this study to introduce significant distortions on the double helix for two reasons: (1) Magnesium ions were present in the experimental buffer at a sufficiently high concentration (10 mM), which had been demonstrated to mitigate the effect of DNA distortions due to asymmetric phosphate neutralization (Strauss and Maher, 1994). (2) In designing the MeP inserts used in this study, care was taken to avoid an asymmetric neutralization of the phosphate backbone. The majority of the experiments with MeP inserts tested in this study utilized dsMeP modifications. Thus, the backbone neutralization was symmetrically distributed and therefore not expected to cause\u00a0significant DNA distortions. We tested only two single-stranded MeP/DNA hybrid constructs, with 30 consecutive neutralized bases on either strand, covering nearly three full helical turns of the DNA. Because the backbone neutralization was distributed evenly in all directions around the DNA helix, the charge neutralization should be symmetrical, and therefore, it is not expected to introduce significant DNA distortions.\n\n### DNA translocation model\n\nTo rationalize the results of the MeP experiments, we propose a minimal translocation model in which SpoIIIE subunits fire sequentially around the ring, each subunit translocates 2 bp of DNA per power-stroke, at least two consecutive ATPase subunits contact the backbone of one DNA strand, and each subunit contacts two consecutive backbone phosphates. To be consistent with the results of the stepping-stone insert experiments (Figure 5c\u2013d), our two-subunit translocation-escort model requires that subunits fire in a well- defined sequential fashion (A, B, C, D, E, F, A, B, C etc) and a subunit cannot fire multiple times in a row or out of order.\n\n### SpoIIIE does not employ the E1/Rho-like translocation model\n\nThe structures of homo-hexameric helicases E1 and Rho co-crystallized with their single-stranded nucleic acid substrates strongly support a translocation mechanism where five motor subunits contact five consecutive phosphates on the ssDNA/ssRNA backbone (Enemark and Joshua-Tor, 2006; Thomsen and Berger, 2009), and the hydrolysis of one ATP is coupled to the translocation of one nucleotide. Although an E1/Rho-like mechanism could potentially rationalize how SpoIIIE easily traverses a dsMeP insert of 4 bp but not 5 bp (Figure 2), such a model predicts that the motor would fail to traverse a stepping-stone construct with a 1-bp MeP probe (Figure 5b v). Even if the E1/Rho-like model did allow a subunit to fire several times in a row, such a model would still be inconsistent with the stepping stone data (Figure 5\u2014figure supplement 1).\n\n### Strand-tracking in a dsDNA translocase\n\nIt was previously reported that SpoIIIE supercoils plasmid DNA in vitro, and strand/groove-tracking was proposed to explain this observation (Bath et al., 2000). Magnetic tweezers measurements of DNA supercoiling during translocation ruled out a groove-tracking mechanism for FtsK (Saleh et al., 2005). Here, we show that SpoIIIE does indeed track one DNA strand by making specific electrostatic contacts with backbone phosphates on the 5'\u21923' strand in the direction of translocation, a feature reported for other RecA-like NTPases: the \u03c629 packaging motor, DnaB, and Rho (Aathavan et al., 2009; Itsathitphaisarn et al., 2012; Thomsen and Berger, 2009). Unlike the \u03c629 ATPase, which translocates dsDNA, DnaB, and Rho are single-stranded nucleic acid translocases, and therefore track one strand by default. Interestingly, both SpoIIIE and the \u03c629 ATPase encircle dsDNA, positioning multiple subunits in close proximity to the dsDNA helix, while they still possess the ability to discriminate one strand from the other. How these dsDNA translocases achieve strand discrimination remains unclear.\n\nSeveral studies have demonstrated that certain skewed sequences (i.e. sequences whose presence is biased on the leading vs. the lagging strand) impart directionality to FtsK/SpoIIIE translocation (Besprozvannaya et al., 2013; Cattoni et al., 2013; Lee et al., 2012; Levy et al., 2005; L\u00f6we et al., 2008). It is tempting to imagine that the strand tracking mechanism presented here could be used by SpoIIIE to read these skewed sequences (i.e. the SpoIIIE Recognition Sequences, SRS). However, the \u03b3 domains of SpoIIIE have been shown to be required for reading the SRS (Ptacin et al., 2008) and co-crystal structures of dsDNA with the domain \u03b3 reveals it interacting with both DNA strands at the backbone, the major and minor grooves, and individual bases (L\u00f6we et al., 2008). We consider it unlikely therefore, that SpoIIIE enlists the strand-tracking mechanism described here for SRS sequence recognition.\n\n### The motor-DNA symmetry mismatch should give rise to DNA supercoiling\n\nThe electrostatic interactions between SpoIIIE and the DNA backbone are likely to have two main purposes in vivo: (i) They serve a load-bearing function by providing SpoIIIE with the grip necessary to strip-bound proteins off the DNA at the high speeds at which the motor operates (Marquis et al., 2008); and (ii) They enable the motor to supercoil the DNA during translocation. The later arises from the symmetry mismatch between the angles spanned by two adjacent SpoIIIE subunits and the angle that separates the phosphates contacted by the motor during a 2-bp step. Figure 7a depicts the SpoIIIE-DNA complex as seen from the N\u00a0terminus of the motor; in this view, SpoIIIE translocates DNA toward the viewer (Massey et al., 2006). In the two-subunit DNA escort model, the DNA is handed over from one subunit to the next and, for each 2-bp step, the motor-DNA contacts rotate clockwise around the ring by 60\u00b0. However, since B-form DNA has a helical pitch of 10.4 bp/turn (Wang, 1979), the dsDNA backbone rotates clockwise by 69\u00b0 for every 2 bp. Therefore, after each motor step, a counter-clockwise 9\u00b0 rotation of the DNA relative to the motor is required to align the phosphate backbone with the next translocating subunit. As a result, the two-subunit escort model predicts that SpoIIIE should introduce one supercoil for every \u223c80 bp of DNA translocated. The magnitude and direction of this prediction is consistent with both in vivo measurements (Nicholson and Setlow, 1990) and in vitro single-molecule experiments. Indeed, magnetic tweezers experiments revealed that SpoIIIE supercoils DNA by one turn per 100 \u00b1 10 bp of DNA translocated (Jerod Ptacin and Marcelo Nollman, personal communication). It was previously reported that strand tracking by the \u03c629 ATPase, another ring-shaped dsDNA motor, also leads to DNA supercoiling (Liu et al., 2014). The results presented here for SpoIIIE suggest that DNA supercoiling may be a general feature of ring-shaped dsDNA motors that track one strand. The amount and direction of supercoiling should depend on the (i) the helical pitch of dsDNA, (ii) the periodicity of motor-DNA contacts (step size), and (iii) the motor\u2019s inter-subunit coordination mechanism.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/09224/elife-09224-fig7-v3.jpg)\n\n**Figure 7.:** (a) Diagram illustrating how SpoIIIE supercoils DNA while tracking the phosphate backbone of one DNA strand. Neighboring subunits in the SpoIIIE hexamer are spaced by 60\u00b0; consecutive DNA phosphates are spaced by \u223c34\u00b0; and the backbone contacts of two adjacent subunits are separated by \u223c69\u00b0. After a 2-bp translocation step, a 9-degree counter-clockwise rotation of the DNA relative to the motor is needed to align the next translocating subunit and the nearest pair of backbone phosphates.\u00a0(b) Diagram of the SpoIIIE hexamer illustrating how the two-subunit DNA escort model enables the motor to bypass an ATP\u03b3S-bound subunit (red). For simplicity, only one DNA strand is shown (orange). DNA is translocated out of the page, and each subunit interacts with two neighboring phosphates. The star marks the subunit slated to execute the power-stroke.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09224/elife-09224-fig7-figsupp1-v3.jpg)\n\n**Figure 7\u2014figure supplement 1.:** To probe the strength of the motor-DNA interaction in the presence of different nucleotides, we pulled on single SpoIIIE-DNA complexes in a nucleotide-free buffer (Apo state, green), 1mM [ATP\u03b3S] (cyan), and 1mM [ADP] (orange) and measured the mean pull force, that\u00a0is, the average force at which the tether ruptured. Error bars represent the SEM.\n\nIn vivo measurements indicate that, during B. subtilis sporulation, the DNA is negatively supercoiled by 1 turn per 97 \u00b1 6 bp in the forespore and 1 turn per 140 \u00b1 10 bp in the mother cell (Nicholson and Setlow, 1990). Since SpoIIIE is anchored at the septum during sporulation and the B. subtilis DNA is circular, the two-subunit escort model predicts that SpoIIIE translocation should introduce one negative supercoil in the forespore and one positive supercoil in the mother cell for every \u223c80 bp translocated. We surmise that the SpoIIIE mechanism is fine\u00a0tuned to deliver DNA to the forespore in the appropriate negative supercoiled state, similar to what has been proposed for FtsK (Saleh et al., 2005). This mechanism may help to conserve cellular resources by minimizing the amount of maintenance performed by topoisomerases/gyrases, a strategy that may provide a significant advantage in the harsh conditions that prompt sporulation (i.e., starvation).\n\n### SpoIIIE/FtsK rings can tolerate non-consecutive inactive subunits\n\nThe results of ATP\u03b3S experiments suggest that SpoIIIE can processively translocate DNA with non-consecutive inactive subunits. This conclusion can be rationalized by the two-subunit DNA escort model proposed above: having two adjacent ATPase subunits simultaneously contact the DNA enables the motor to continue translocating if either of the two subunits is inactive, but not when both are disabled. Figure 7b illustrates how the two-subunit DNA escort model can bypass the ATP\u03b3S-bound subunit B: (i) subunit A fires and translocates DNA while subunit B escorts the DNA, (ii) the analog-bound subunit B fails to fire while subunit C was poised to escort the DNA (iii) subunit C then fires and translocates the DNA, handing it over to subunit D. During this step, subunit B, which remains bound to ATP\u03b3S, escorts the DNA for subunit C.\n\nOur conclusions agree with the results of a single-molecule study by Crozat et al., which found that FtsK hexamers with two diametrically\u00a0opposed inactive subunits translocated DNA as fast as wildtype hexamers (Crozat et al., 2010). The authors of that study proposed a sequential DNA escort mechanism in which at least three motor subunits contact the DNA at any given time. The ATP\u03b3S experiments presented here provide additional evidence that SpoIIIE/FtsK motors can bypass individual inactive subunits. Moreover, the strand-tracking behavior reported here for SpoIIIE strongly favors a model in which ring subunits fire sequentially, a key aspect of the DNA escort mechanism proposed here and in the Crozat et al study.\n\nThis study presents evidence for a type of inter-subunit coordination in ASCE ring NTPases where subunit firing is highly\u00a0coordinated around the ring, yet the motor possesses sufficient flexibility to bypass non-consecutive inactive subunits. How is this mechanism optimized for the specific biological task of SpoIIIE? In vivo, SpoIIIE is present in low copy numbers during sporulation, with only two motors responsible for the vital task of chromosome translocation at any given time (Burton et al., 2007; Yen Shin et al., 2015). As a result, each SpoIIIE ring functions as a single-molecule bottleneck for this process, where the failure of either motor is likely to be lethal for the cell. The coordination mechanism proposed here can potentially explain how B. subtilis safeguards against the failure of individual motor subunits during sporulation. We speculate that other ASCE motors that also represent single-points of failure may have evolved into similar flexible operations.\n\n## Materials and methods\n\n### Sample preparation\n\nBiotinylated SpoIIIE constructs were generated by ligating the biotin tag sequence from plasmid Pinpoint Xa-1 (Promega,\u00a0Madison,\u00a0WI) to the N\u00a0terminus of SpoIIIE from plasmid pJB103 (Bath et al., 2000). Protein purification was conducted as described previously with the addition of 2 \u00b5M biotin in the liquid cultures (Ptacin et al., 2008). DNA tethers were generated using a 5' biotinylated primer (IDT) to PCR amplify a 21 kb region of lambda phage DNA (NEB) and gel extracted. DNA oligos containing MeP inserts (Gene Link or TriLink BioTechnologies) were ligated to gel-purified DNA fragments: a 9167-bp fragment with the ACT 3'-overhang (amplified from \u03bb DNA and digested with AlwNI), and a biotinylated 3976-bp fragment with the GAA 3'-overhang (amplified from \u03c629 DNA and digested with BglI). The final ligation product was gel-purified using the QIAEX II kit (Qiagen).\n\n### Optical tweezers experiments\n\nIn this study,\u00a02.1 \u00b5m streptavidin beads (Spherotech) were blocked for 30 min in 50 mM Tris\u2013HCl pH 7.5, 10 mM MgCl2, 4% bovine serum albumin (BSA), w/v and 0.1% Tween-20.\u00a0Then \u223c1 pmol of biotinylated SpoIIIE and \u223c1 ng of biotinylated DNA were incubated separately onto streptavidin beads and spatially separated in the fluidics chamber. DNA-bound beads and SpoIIIE-bound beads were brought in close proximity to allow SpoIIIE to engage the DNA. DNA translocation was conducted in a reaction buffer containing 50 mM Tris\u2013HCl pH 7.5, 10 mM MgCl2, and 3 mM ATP.\n\n### Data analysis\n\nPauses were detected using a modified Schwartz Information Criterion (mSIC) method (Chistol et al., 2012). The number and duration of pauses missed by this algorithm were inferred by fitting the pause durations to a single exponential with a maximum likelihood estimator. After removing the detected pauses, the translocation velocity was computed by fitting the data to a straight line. Force-velocity data (Figure 6\u2014figure supplement 1a) was gathered in 'passive-mode' (Smith et al., 2001), where the optical trap position is fixed. Single-molecule trajectories were partitioned into segments spanning 2\u20133 pN, and the velocity was computed for each segment. Tether tension and extension were converted to contour length using the Worm-Like-Chain approximation with persistence length p=30 nm, and stretch modulus S = 1200 pN\u00b7nm (Baumann et al., 1997).\n\n### Estimating the number and duration of missed pauses\n\nThe pause-detection algorithm can detect only pauses longer than tc, but it is possible to account for the duration and number of pauses missed by the algorithm. We observe that pauses are drawn from a single-exponential distribution P(t) with a mean pause-duration t.\n\n$$\nP(t)=A\u00b7e^{\u2212\\frac{t}{\\tau}}\n$$\n\nThe number of all pauses (Nall), the number of detected pauses (Ndet), and the number of missed pauses (Nmiss) are given below.\n\n$$\nN_{all}=\\int_{0}^{\\infty}\u00a0P(t)\u00b7\u00a0dt=\\int_{0}^{\\infty}A\u00b7\u00a0e^{\u2212\\frac{t}{\\tau}}\u00b7\u00a0dt\n$$\n\n$$\nN_{det}=\\int_{t_{c}}^{\\infty}\u00a0A\u00b7\u00a0e^{\u2212\\frac{t}{\\tau}}\u00b7\u00a0dt\n$$\n\n$$\nN_{miss}=\\int_{0}^{t_{c}\u00a0}A\u00b7\u00a0e^{\u2212\\frac{t}{\\tau}}\u00b7\u00a0dt\n$$\n\nThe duration of all pauses (Tall)\n\n$$\nT_{all}=\\int_{0}^{\\infty}\u00a0t\u00b7\u00a0P(t)\u00b7\u00a0dt=\\int_{0}^{\\infty}\u00a0t\u00b7\u00a0A\u00b7\u00a0e^{\u2212\\frac{t}{\\tau}}\u00b7\u00a0dt\n$$\n\nThe duration of detected pauses is Tdet:\n\n$$\nT_{det}=\\int_{t_{c}}^{\\infty}t\u00b7\u00a0A\u00b7\u00a0e^{\u2212\\frac{t}{\\tau}}\u00b7\u00a0dt\n$$\n\nThe duration of missed pauses:\n\n$$\nT_{miss}=\\int_{0}^{t_{c}}t\u00b7\u00a0A\u00b7\u00a0e^{\u2212\\frac{t}{\\tau}}\u00b7\u00a0dt\n$$\n\nGiven the number of detected pauses and the mean pause duration calculated by fitting the pause distribution to a single-exponential, it is possible to infer the number of total pauses and the number of missed pauses as follows:\n\n$$\nN_{all}=N_{det}\u00b7\u00a0e^{\\frac{t_{c}}{\\tau}}\n$$\n\n$$\nN_{miss}=N_{det}\u00b7\u00a0(e^{\\frac{t_{c}}{\\tau}}\u22121)\n$$\n\nIf the pause-detection algorithm identifies and removes only pauses longer than tc, then the measured pause-free velocity (Vmeas) is given by the following expression:\n\n$$\nV_{meas}= \\frac{D}{T_{pf}T_{miss}}\n$$\n\nHere D is the total distance translocated by the motor, Tpf is the 'pause-free' time (i.e. only the time spent translocating DNA), and Tmiss is the total duration of missed pauses. The true pause-free velocity (Vpf) is given by the following expression:\n\n$$\nV_{pf}=\\frac{D}{T_{pf}}=\\frac{D}{\\frac{D}{V_{meas}}\u2212\\int_{0}^{t_{c}}t\u00b7A\u00b7e^{\u2212\\frac{t}{\\tau}}\u00b7dt}\n$$\n\n### Predicting the density of ATP\u03b3S-induced pauses\n\nThe probability of finding the ring in a pause state Ppause\u00a0(i.e. the fraction of the time spent in the paused state) is:\n\n$$\nP_{pause}=\\frac{\\tau_{p}}{\\tau_{p}\\tau_{x}}\n$$\n\nwhere tp is the total time the motor spends in a pause state and tx is the total time the motor spends translocating DNA. The total pause time tp\u00a0and the total translocation time tx can be expressed as\n\n$$\n\\tau_{p}=<T>\u00b7\u03b7=(1/k_{off})\u00b7\u03b7\n$$\n\n$$\n\\tau_{x}= \\frac{x(t)}{v_{PF}}\n$$\n\nwhere $<T>$ is the average pause duration, \u03b7\u00a0is the number of pauses, koff is a first-order dissociation rate of ATP\u03b3S from the ring, x (t) is distance translocated over time and vPF is the pause-free velocity expressed as:\n\n$$\nv_{PF}= \\sumi= 06p_{i}v_{i}\n$$\n\nwhere pi is the probability of the ring being bound to i ATP\u03b3S molecules and vi is the pause-free velocity of the ring bound to i ATP\u03b3S molecules. Substituting Equation 14 into Equation 12, we can express the pausing probability as:\n\n$$\nP_{pause}=\\frac{\u03b7/x(t)}{\u03b7/x(t)\u00a0+\u00a0k_{off}/v_{PF}}=\\frac{PD}{PD+\u00a0k_{off}/v_{PF}}\n$$\n\nWe define the pause density (the number of pauses per distance translocated) as PD =$\u03b7$ / x (t). Thus, the PD can be expressed in terms of the pausing probability (Ppause), the ATP\u03b3S dissociation rate (koff), and the pause-free translocation velocity (vPF):\n\n$$\nPD=\\frac{k_{off}}{v_{PF}}\u00b7\\frac{P_{pause}}{(1\u2212P_{pause})}\n$$\n\nThe pausing probability (Ppause) can be expressed in terms of the probability that a single subunit is bound to ATP\u03b3S (p). p depends on the concentrations of ATP and ATP\u03b3S, as well as the dissociation constants (koff/kon) of ATP and ATP\u03b3S (KATP and K\u03b3S) for individual ATPase subunits (Sen et al., 2013):\n\n$$\np=\\frac{K_{ATP}[ATP\\gammaS]}{K_{\\gammaS}K_{ATP}K_{\\gammaS}[ATP]+\u00a0K_{ATP}[ATP\\gammaS]}\n$$\n\nTo calculate the expected pause probability, we used the measured Ki of ATP\u03b3S (124 \u00b1 20 \u00b5M) for K\u03b3S (Figure 6\u2014figure supplement 1b). For KATP, we used the measured Km of ATP (505 \u00b1 50 \u00b5M) as an upper-bound estimate. For a sequential ordinal ATP binding/hydrolysis inter-subunit coordination model (i.e. subunit 1 binds ATP, hydrolyzes ATP, releases Pi and ADP, and executes the power-stroke, followed by subunit 2, then subunit 3, etc), the pausing probability is given by Ppause = pn, were n is the number of ATP\u03b3S molecules required to induce a pause.\n",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "dce15c5f-424d-4e84-a6b3-f663b1d610c6",
+      "submission_id": "34e6df42-3394-4177-a23e-1ed49dcf77f8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Taekjip Ha, Johns Hopkins University School of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.09224.016](https://doi.org/10.7554/eLife.09224.016)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"Two-Subunit DNA Escort Mechanism and Inactive Subunit Bypass in an Ultra-Fast Ring ATPase\" for peer review at eLife. Your submission has been favorably evaluated by Richard Losick (Senior editor), a Reviewing editor, and two reviewers.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nIn this paper by Liu et al. the dsDNA translocation mechanism of the hexameric ring ATPase SpoIIIE is investigated. The authors use optical tweezers to monitor the translocation of the enzyme along DNA. In particular they study the bypass of short stretches of DNA with a neutral backbone as well as the influence of non-hydrolyzable ATP analogs. The study clearly shows that SpoIIIE contacts only one strand of the dsDNA during translocation and can traverse up to four consecutive MeP on one strand. However, five consecutive MeP hinder translocation of SpoIIIE. From this they conclude a two-subunit escort mechanism, where typically two adjacent subunits make contacts to the DNA. After stepping of one of the subunits, the DNA is moved by 2 bp providing engagement of an adjacent subunit in the translocation direction and disengagement of the trailing subunit. The experiments are well designed and carefully executed. The manuscript is clearly written and provides a consistent story. However, in contrast to previous studies where e.g. steps of the ring translocase from Phi29 were directly resolved, the present work relies on indirect evidence based on the length of backbone substitutions that can be overcome by the translocase. Though the argumentation of the authors is consistent and is further supported by the evaluation of the density of pauses originating from binding non-hydrolyzable ATP analogs, other and potentially more complex mechanisms cannot be convincingly ruled out. For example, the data does not eliminate another model where each SpoIIIE contacts one bp of dsDNA and five subunits are involved in DNA binding similar to the mechanism proposed for Rho and E1 helicases.\n\nEssential revisions:\n\n1) There is contradiction in what is said in the subsection \u201cMeP Stepping Stone Constructs Suggest that SpoIIIE Has a Step Size of 2 bp\u201d between the end of the last paragraph and the second paragraph. The authors say that the translocation/escort mechanism of Rho and E1 is similar to what they propose for SpoIIE. However, the two mechanisms are distinct. In Rho and E1, there are 5 consecutive subunits contacting the DNA and the step size is one bp whereas the proposed model of SpoIIIE has two consecutive subunits interacting with DNA. However, the data shown in this study does not eliminate that five consecutive subunits of SpoIIIE interact with the DNA and step size is one bp. The authors rule out this mechanism based on the stiffness of dsDNA (second paragraph). However, one can argue that the SpoIIIE ring can be distorted to enable interactions in a manner seen with Rho and E1.\n\n2) Because the current data do not convincingly rule out other models, further support for the model is needed by challenging the model with additional stepping stone constructs. An interesting construct would be a 2 bp stepping stone, i.e. 4bp of neutral DNA followed by 2bp stepping stone and up to 4bp probe segment of neutral DNA. For a 2 bp stepping stone, the translocase should then be able to overcome a probe segment which would be 4 bp in length. A demonstration of this would significantly strengthen the current conclusions, in particular the 2 bp stepping which is in our opinion the most novel conclusion of the paper.\n",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c76931bb-fc63-4227-8c30-e6573aef6824",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C1",
+      "claim": "SpoIIIE is a homo-hexameric dsDNA translocase responsible for completing chromosome segregation in Bacillus subtilis.",
+      "claim_type": "EXPLICIT",
+      "source": "SpoIIIE is a homo-hexameric dsDNA translocase responsible for completing chromosome segregation in Bacillus subtilis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a known characteristic of SpoIIIE, supported by established scientific knowledge about this motor protein.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "56f4e849-b58c-4f85-9c30-ebee6587475f",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C2",
+      "claim": "SpoIIIE makes multiple essential contacts with phosphates on the 5'\u21923' strand in the direction of translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that SpoIIIE makes multiple essential contacts with phosphates on the 5'\u21923' strand in the direction of translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from single-stranded MeP DNA experiments showing differential traversal rates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "030c04ff-22e4-4bfb-ab74-122a636f230f",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C3",
+      "claim": "SpoIIIE's step size is 2 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "Using DNA constructs with two neutral-backbone segments separated by a single charged base pair, we deduce that SpoIIIE's step size is 2 bp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is deduced from stepping-stone construct experiments showing traversal patterns consistent with a 2-bp step size.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "af34ad5f-def7-4e11-a290-3cbb3774fa59",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C4",
+      "claim": "SpoIIIE can operate with non-consecutive inactive subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, experiments with non-hydrolyzable ATP analogs suggest that SpoIIIE can operate with non-consecutive inactive subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ATP\u03b3S experiments showing pause density patterns consistent with tolerance of non-consecutive inactive subunits.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "b381bcfb-a53e-491e-8137-6596a7d12dcf",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C5",
+      "claim": "During B. subtilis sporulation, an asymmetric division septum closes around one of the sister chromatids before complete chromosome segregation, trapping about two-thirds of the chromosome in the mother cell compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "During the Bacillus subtilis sporulation lifecycle, an asymmetric division septum closes around one of the sister chromatids before complete chromosome segregation, trapping about two-thirds of the chromosome in the mother cell compartment (Burton et al., 2007; Wu and Errington, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies by Burton et al., 2007 and Wu and Errington, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "4efefc1a-37d2-405d-890d-f00cf495d962",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C6",
+      "claim": "SpoIIIE must translocate the DNA from the mother cell into the forespore to complete chromosome segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "To complete chromosome segregation, SpoIIIE must translocate the DNA from the mother cell into the forespore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge of SpoIIIE function during sporulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "c556d7c8-b5e6-4443-97e6-5915a973357f",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C7",
+      "claim": "SpoIIIE and FtsK contain an N-terminal transmembrane domain that anchors the protein to the division septum, a long unstructured polypeptide linker and a C-terminal-soluble motor domain consisting of subdomains \u03b1, \u03b2, and \u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "SpoIIIE and its closely related Escherichia coli homologue FtsK, contain an N-terminal transmembrane domain that anchors the protein to the division septum, a long unstructured polypeptide linker and a C-terminal-soluble motor domain consisting of subdomains \u03b1, \u03b2, and \u03b3 (Barre, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural information is supported by citation to Barre, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "9771b0c1-b714-41a8-9591-1d380aa4abd6",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C8",
+      "claim": "Subdomains \u03b1 and \u03b2 of SpoIIIE adopt a RecA-like fold containing ATP binding and hydrolysis motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "Subdomains \u03b1 and \u03b2 adopt a RecA-like fold containing ATP binding and hydrolysis motifs (Massey et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural information is supported by citation to Massey et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "74b6a5a5-edab-4f59-af83-059419b69b89",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C9",
+      "claim": "Subdomain \u03b3 imparts translocation directionality to the motor (sequence dependence).",
+      "claim_type": "EXPLICIT",
+      "source": "while subdomain \u03b3 imparts translocation directionality to the motor (sequence dependence) (Besprozvannaya et al., 2013; Lee et al., 2012; L\u00f6we et al., 2008; Ptacin et al., 2006; 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This functional information is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "f3b29513-96e7-4637-9283-9be6ad3c7ae3",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C10",
+      "claim": "Both FtsK and SpoIIIE form homo-hexameric rings.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystallography and electron microscopy studies indicate that both FtsK and SpoIIIE form homo-hexameric rings, and that double-stranded DNA (dsDNA) is threaded through their central pore (Cattoni, et al., 2014; Cattoni et al., 2013; Massey et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural information is supported by citations to crystallography and electron microscopy studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "312fcb3e-9164-437a-88bb-a72aca97bb8d",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C11",
+      "claim": "Double-stranded DNA (dsDNA) is threaded through the central pore of FtsK and SpoIIIE.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystallography and electron microscopy studies indicate that both FtsK and SpoIIIE form homo-hexameric rings, and that double-stranded DNA (dsDNA) is threaded through their central pore (Cattoni, et al., 2014; Cattoni et al., 2013; Massey et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural information is supported by citations to crystallography and electron microscopy studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "b4438425-585d-4daf-b27c-81e0443969a2",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C12",
+      "claim": "SpoIIIE/FtsK have enormous translocation velocity (\u223c5 kbp/s).",
+      "claim_type": "EXPLICIT",
+      "source": "A distinguishing characteristic of SpoIIIE/FtsK is their enormous translocation velocity (\u223c5 kbp/s) and their ability to work against high forces (Ptacin et al., 2008; Saleh et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This characteristic is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "5fee469e-4253-45a7-947d-65168c05de72",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C13",
+      "claim": "SpoIIIE/FtsK have the ability to work against high forces.",
+      "claim_type": "EXPLICIT",
+      "source": "A distinguishing characteristic of SpoIIIE/FtsK is their enormous translocation velocity (\u223c5 kbp/s) and their ability to work against high forces (Ptacin et al., 2008; Saleh et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This characteristic is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "696a4ef2-f398-45b4-bf39-1652833a6110",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C14",
+      "claim": "At saturating [ATP] (3 mM) and a low force (5 pN) SpoIIIE translocated DNA at \u223c4 kbp/s.",
+      "claim_type": "EXPLICIT",
+      "source": "At saturating [ATP] (3 mM) and a low force (5 pN) SpoIIIE translocated DNA at \u223c4 kbp/s (Figure 6\u2014figure supplement 1), in agreement with previously reported rates in vivo (Burton et al., 2007) and in vitro (Ptacin et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly measured experimental data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "d141edc5-47b0-47d9-8dea-5c1ad030dc1f",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C15",
+      "claim": "The measured translocation rate of \u223c4 kbp/s is in agreement with previously reported rates in vivo and in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "At saturating [ATP] (3 mM) and a low force (5 pN) SpoIIIE translocated DNA at \u223c4 kbp/s (Figure 6\u2014figure supplement 1), in agreement with previously reported rates in vivo (Burton et al., 2007) and in vitro (Ptacin et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is supported by citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "16840abb-cea7-4f17-926e-f2264d20e2a0",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C16",
+      "claim": "A single SpoIIIE motor was attached to the DNA tether in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Control experiments indicate that a single SpoIIIE motor was attached to the DNA tether",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by control experiments including protein titration and slipping event analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "49145c68-0b1f-4e4a-8d5f-5ce2fe64b7cd",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C17",
+      "claim": "At high forces, SpoIIIE loses its grip on DNA and slips.",
+      "claim_type": "EXPLICIT",
+      "source": "At high forces, SpoIIIE loses its grip on DNA and slips.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed experimental behavior shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "3292bfba-059e-4de2-a0f0-c9b9bd384866",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C18",
+      "claim": "Slipping events occurred in one fast rip, not in several steps, indicating that a single motor\u2013DNA interaction is disrupted in each case.",
+      "claim_type": "EXPLICIT",
+      "source": "These slipping events occurred in one fast rip, not in several steps, indicating that a single motor\u2013 DNA interaction is disrupted in each case (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed experimental data with inference about single motor attachment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "ba3907ab-ff5e-47bb-b070-f2cecd56223e",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C19",
+      "claim": "Methyl-phosphonate (MeP) backbone preserves the base pairing and overall structure of B-form DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "we designed DNA constructs containing a modified insert with a methyl-phosphonate (MeP) backbone (Figure 1b), which preserves the base pairing and overall structure of B-form DNA (Strauss and Maher, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This property of MeP DNA is supported by citation to Strauss and Maher, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "d727d472-e1b9-4bb1-ab09-7635b6cf68c8",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C20",
+      "claim": "Upon reaching a 30-bp dsMeP insert, SpoIIIE undergoes multiple slips followed by translocation recoveries.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon reaching the insert, SpoIIIE undergoes multiple slips followed by translocation recoveries (Figure 1b inset), revealing that it makes several attempts to cross the neutral segment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed experimental behavior shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "3d11fdbf-2f08-41c1-96f7-6f26335c52b0",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C21",
+      "claim": "SpoIIIE failed to traverse the 30-bp dsMeP segment.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these attempts, SpoIIIE failed to traverse the 30-bp dsMeP segment (Figure 1b), indicating that motor interactions with the negatively charged phosphates are critical for translocation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed experimental data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "a4b5a7fe-69f2-48e5-8a72-5e746514f5c4",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C22",
+      "claim": "Motor interactions with the negatively charged phosphates are critical for translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite these attempts, SpoIIIE failed to traverse the 30-bp dsMeP segment (Figure 1b), indicating that motor interactions with the negatively charged phosphates are critical for translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the failure to traverse neutral DNA segments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "625e7481-4ac5-4453-8aad-765a59111718",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C23",
+      "claim": "SpoIIIE can traverse dsMeP segments of 2 bp, 3 bp, and 4 bp with near-100% probability.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that SpoIIIE can traverse dsMeP segments of 2 bp, 3 bp, and 4 bp with near-100% probability (Figure 2a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimental data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "dc24f34a-d5b7-46eb-8f68-e917ae24d3cf",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C24",
+      "claim": "The traversal probability sharply drops to \u223c50% for dsMeP inserts of 5 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "but the traversal probability sharply drops to \u223c50% for dsMeP inserts of 5 bp (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimental data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "6feb7d9e-1001-4de8-816f-cd0c5bedc31d",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C25",
+      "claim": "The sharp reduction in insert crossing probability for 5-bp inserts is accompanied by a dramatic increase in the average traversal time.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this sharp reduction in insert crossing probability is accompanied by a dramatic increase in the average traversal time (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimental data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "646af190-a293-4d38-b915-89536e0eeac4",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C26",
+      "claim": "Increasing the dsMeP insert length from 5 bp to 7 bp does not significantly increase the mean traversal time.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that further increasing the dsMeP insert length from 5 bp to 7 bp does not significantly increase the mean traversal time (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed experimental data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "222bbacc-e782-4a1a-a710-26bdc5d0d4f7",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C27",
+      "claim": "5 bp is the minimum length of dsMeP required to disrupt processive translocation by SpoIIIE.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data show that 5 bp is the minimum length of dsMeP required to disrupt processive translocation by SpoIIIE",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on traversal probabilities and times.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "8dcf4f75-ecd1-4ec6-b5d9-ee6a70985162",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C28",
+      "claim": "SpoIIIE makes periodic electrostatic contacts with the DNA every 5 bp or less.",
+      "claim_type": "EXPLICIT",
+      "source": "and indicate that SpoIIIE makes periodic electrostatic contacts with the DNA every 5 bp or less.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data on traversal probabilities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "4993f875-3f84-4eb6-a3c2-03f25426d489",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C29",
+      "claim": "In rare instances (1 out of 32 molecules), SpoIIIE managed to traverse the 30-bp dsMeP insert after several seconds of repeated crossing attempts.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that in rare instances (1 out of 32 molecules, Table 1), SpoIIIE managed to traverse the 30-bp dsMeP insert, albeit after several seconds of repeated crossing attempts (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed experimental data shown in Table 1 and Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "1d7c7b8a-0ed8-43be-add5-9e569df7d49a",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C30",
+      "claim": "A slightly higher traversal probability (\u223c8%) was recorded for the 10-bp dsMeP insert.",
+      "claim_type": "EXPLICIT",
+      "source": "A slightly higher traversal probability (\u223c8%) was recorded for the 10-bp dsMeP insert (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimental data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "71b10a59-a337-476b-93dc-39fb4f6f7a2c",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C31",
+      "claim": "Forward translocation along the MeP insert is in kinetic competition with backward slipping.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, forward translocation along the MeP insert is in kinetic competition with backward slipping (Aathavan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed dynamics and supported by citation to similar behavior in other motors.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "ced547d0-a536-4e6d-bfe6-55e2f3faf02f",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C32",
+      "claim": "Other types of motor\u2013DNA interactions (e.g. steric) enable the motor to traverse the neutral insert given an arbitrarily large number of crossing attempts.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that other types of motor\u2013DNA interactions (e.g. steric) enable the motor to traverse the neutral insert given an arbitrarily large number of crossing attempts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed to explain the rare traversal events.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "cb9c1886-aca2-417a-b086-4895d7986a77",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C33",
+      "claim": "The \u03c629 ring ATPase requires electrostatic contacts with the DNA every 10 phosphates, but relies on steric, non-specific interactions to exert force and translocate the DNA in-between those electrostatic contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this idea, the \u03c629 ring ATPase has been shown to require electrostatic contacts with the DNA every 10 phosphates, but relies on steric, non-specific interactions to exert force and translocate the DNA in-between those electrostatic contacts (Aathavan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Aathavan et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "72de81e5-5b80-4c8a-be58-60ebe5e43ba6",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C34",
+      "claim": "23 out of 24 SpoIIIE molecules traversed the insert containing MeP on the 3'\u21925' strand in the direction of translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "23 out of 24 SpoIIIE molecules traversed the insert containing MeP on the 3'\u21925' strand in the direction of translocation (Figure 3a, orange traces)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimental data shown in Figure 3a and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "f7c89853-bfe1-42af-9be5-3c4bb47b468c",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C35",
+      "claim": "Only 6 out of 28 SpoIIIE molecules crossed the insert with a neutral backbone on the 5'\u21923' strand.",
+      "claim_type": "EXPLICIT",
+      "source": "compared to only 6 out of 28 SpoIIIE molecules that crossed the insert with a neutral backbone on the 5'\u21923' strand (Figure 3a, magenta traces).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimental data shown in Figure 3a and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "92b55d1c-24df-4c01-9a71-403315ba7f57",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C36",
+      "claim": "The traversals of the insert with a neutral 3'\u21925' strand were very fast (similar to translocation along unmodified DNA).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the traversals of the insert with a neutral 3'\u21925' strand were very fast (similar to translocation along unmodified DNA)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed experimental behavior from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "4066fa06-b833-4974-a04f-458fb6e9dbc1",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C37",
+      "claim": "The traversals of the insert with a neutralized 5'\u21923' strand required 5\u201350 s, likely involving several crossing attempts.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the traversals of the insert with a neutralized 5'\u21923' strand required 5\u201350 s, likely involving several crossing attempts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed experimental behavior with inference about crossing attempts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "a7e94836-efa6-4c92-b7c3-3d476a83095b",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C38",
+      "claim": "SpoIIIE makes essential electrostatic contacts selectively with the charged backbone on the 5'\u21923' strand in the direction of translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results clearly indicate that SpoIIIE makes essential electrostatic contacts selectively with the charged backbone on the 5'\u21923' strand in the direction of translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential traversal rates of single-stranded MeP constructs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "55f44737-4a6c-480c-9c80-959363a8f00f",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C39",
+      "claim": "Strand-tracking is inconsistent with a stochastic coordination mechanism in which the six ATPase subunits execute their power-strokes at random.",
+      "claim_type": "EXPLICIT",
+      "source": "Strand-tracking is inconsistent with a stochastic coordination mechanism in which the six ATPase subunits execute their power-strokes at random.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the strand-tracking observation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "37d8244b-e55c-4e30-8a2c-67d191c774cb",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C40",
+      "claim": "In a stochastic coordination mechanism, the subunit poised to fire is unlikely to be aligned with the tracked strand and will therefore not engage the DNA substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "In such a mechanism, the subunit poised to fire is unlikely to be aligned with the tracked strand and will therefore not engage the DNA substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the consequences of stochastic coordination.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "473fc141-37fe-4c59-8599-6894a0e73932",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C41",
+      "claim": "A stochastically coordinated ATPase ring is expected to slip frequently under constant tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the DNA is held under constant tension in our experiments, a stochastically coordinated ATPase ring is expected to slip frequently, contrary to our observations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference that is inconsistent with the observed data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "1bf4dce9-f723-4a28-8522-284d52314f4d",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C42",
+      "claim": "SpoIIIE can traverse a 1-bp neutral probe with near-100% probability.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that SpoIIIE traversed a 1-bp neutral probe with near-100% probability (Figure 5c orange traces)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimental data shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "866c0b21-e697-4fbe-888d-ca672c92e1a1",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C43",
+      "claim": "The crossing probability sharply drops to \u223c25% for 2-bp, 3-bp, or 4-bp neutral probes.",
+      "claim_type": "EXPLICIT",
+      "source": "The crossing probability sharply drops to \u223c25% for 2-bp, 3-bp, or 4-bp neutral probes (Figure 5c, magenta traces and Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimental data shown in Figure 5c and 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "fc9153eb-8297-4457-a865-5109f35db194",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C44",
+      "claim": "A 2-bp step size is in good agreement with both enzymatic and structural studies of the related dsDNA translocase FtsK, which translocates 1.6\u20132.1 bp per ATP hydrolyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "A 2-bp step size is in good agreement with both enzymatic and structural studies of the related dsDNA translocase FtsK, which translocates 1.6\u20132.1 bp per ATP hydrolyzed (Graham et al., 2010; Massey et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is supported by citations to previous studies on FtsK.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "529e2b5e-de7b-4dcf-b311-87202f1eca7d",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C45",
+      "claim": "In a buffer lacking nucleotides, SpoIIIE-DNA tethers rupture at \u223c3 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "In a buffer lacking nucleotides, SpoIIIE could bind to DNA and form tethers between the trapped bead and the micropipette-held bead. Manual pulling experiments revealed that these tethers rupture at \u223c3 pN (Figure 7\u2014figure supplement 1, apo)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimental data shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "0271862e-5cf8-44a4-971b-937acf4bedad",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C46",
+      "claim": "Apo-SpoIIIE does not interact strongly with DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that apo-SpoIIIE does not interact strongly with DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the low rupture force of \u223c3 pN.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "c1ad85ac-47ca-4b14-98f3-e139579d1837",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C47",
+      "claim": "In buffers containing only ADP, SpoIIIE-DNA tethers rupture at \u223c15 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "In buffers containing only ADP or ATP\u03b3S, SpoIIIE could bind to DNA, forming tethers that rupture at \u223c15 and \u223c25 pN, respectively (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimental data shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "9aeea04d-8a66-4f56-8fd5-b0a2761f5511",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C48",
+      "claim": "In buffers containing only ATP\u03b3S, SpoIIIE-DNA tethers rupture at \u223c25 pN.",
+      "claim_type": "EXPLICIT",
+      "source": "In buffers containing only ADP or ATP\u03b3S, SpoIIIE could bind to DNA, forming tethers that rupture at \u223c15 and \u223c25 pN, respectively (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimental data shown in Figure 7\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "a88a8272-69de-4d1b-b39d-acccbc629618",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C49",
+      "claim": "Nucleotides stabilize motor\u2013DNA interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that nucleotides stabilize motor\u2013DNA interactions",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the increased rupture forces in the presence of nucleotides.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "5293d46e-fc60-4df8-a372-7e523f9c2033",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C50",
+      "claim": "Only nucleotide-bound subunits are capable of forming stable electrostatic contacts with the DNA phosphate backbone.",
+      "claim_type": "EXPLICIT",
+      "source": "and suggest that only nucleotide-bound subunits are capable of forming stable electrostatic contacts with the DNA phosphate backbone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the nucleotide-dependent stabilization of motor-DNA interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "f85c8dfd-2323-4bda-8b97-96f6a7a9d572",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C51",
+      "claim": "ATP\u03b3S binds to the same catalytic pocket as ATP in FtsK.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural studies of FtsK indicate that ATP\u03b3S binds to the same catalytic pocket as ATP (Massey et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "8423aecf-e8a1-4161-964c-8756bcde529a",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C52",
+      "claim": "ATP\u03b3S should act as a competitive inhibitor to ATP binding for the SpoIIIE/FtsK family of ring ATPases.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that ATP\u03b3S should act as a competitive inhibitor to ATP binding for the SpoIIIE/FtsK family of ring ATPases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural similarity of ATP\u03b3S and ATP binding.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "c9621e3e-1516-4829-a824-4672360df462",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C53",
+      "claim": "ATP\u03b3S induces SpoIIIE pausing.",
+      "claim_type": "EXPLICIT",
+      "source": "We observe that ATP\u03b3S induces SpoIIIE pausing (Figure 6a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed experimental data shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "7d05d871-7cb0-4895-81f9-9934100bbb1c",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C54",
+      "claim": "ATP\u03b3S reduces the pause-free translocation velocity.",
+      "claim_type": "EXPLICIT",
+      "source": "and reduces the pause-free translocation velocity (Figure 6\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimental data shown in Figure 6\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "5c48b960-6a56-4641-a187-29b4c346e285",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C55",
+      "claim": "The reduction in pause-free velocity is well described by a simple competitive inhibition mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "This reduction in pause-free velocity is well described by a simple competitive inhibition mechanism (Figure 6\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by fitting the data to a competitive inhibition model.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "1b893d2f-b11a-40fc-a010-3968dcc58116",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C56",
+      "claim": "Similar results were obtained with a non-hydrolyzable ATP analog\u2013AMP-PNP.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were obtained with a non-hydrolyzable ATP analog\u2013AMP-PNP (Figure 6\u2014figure supplement 1c\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimental data shown in Figure 6\u2014figure supplement 1c\u2013d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "0e34becc-be57-43f6-a525-5e3bb4668325",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C57",
+      "claim": "Nucleotide analogs induce SpoIIIE pausing by binding to a subset of ring subunits and arresting them in a pre-hydrolysis state.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that nucleotide analogs induce SpoIIIE pausing by binding to a subset of ring subunits and arresting them in a pre-hydrolysis state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the pausing behavior and competitive inhibition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "c47f36a7-0ceb-4039-a331-7d12dd973fe0",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C58",
+      "claim": "The distribution of measured pause durations was well described by a single exponential decay with a characteristic life-time of \u223c35 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "However, regardless of the shortest detectable pause duration and the ATP\u03b3S concentration, the distribution of measured pause durations was well described by a single exponential decay (Figure 6b, inset) with the same characteristic life-time of \u223c35 ms (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimental data shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "b3ff4ef9-9975-4110-bbd6-e36947dd1fad",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C59",
+      "claim": "The characteristic life-time of pauses does not depend on ATP\u03b3S concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that the characteristic life-time does not depend on ATP\u03b3S concentration suggests that all analog-induced pauses are drawn from the same distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the experimental data and used to infer a common pause mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "bdc6e05d-e29f-44db-9766-20872100291a",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C60",
+      "claim": "The exit from the paused state is governed by a single rate-limiting event\u2014presumably the exchange of an ATP\u03b3S molecule with one ATP.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the single-exponential dependence of the pause duration distribution indicates that the exit from the paused state is governed by a single rate-limiting event\u2014presumably the exchange of an ATP\u03b3S molecule with one ATP which is present in saturating concentrations, as proposed for other ring ATPases (Chistol et al., 2012; Sen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the single-exponential distribution and supported by citations to similar behavior in other ring ATPases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "c5132671-7f88-4e6f-8500-0dde32d904f1",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C61",
+      "claim": "Analysis of the pause density indicates that the motor can operate processively with non-consecutive inactive subunits but not with two or more consecutive subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The ATP\u03b3S pause-density data corrected to account for missed pauses (Figure 6d black symbols) are best described by the model in which two (n=2) consecutive analog-bound subunits are required to induce a pause in the motor (Figure 6d, blue-shaded region). In other words, analysis of the pause density indicates that the motor can operate processively with non-consecutive inactive subunits but not with two or more consecutive subunits.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from fitting the pause density data to different models.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "87e8c83b-728a-42fd-8747-71794e76999c",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C62",
+      "claim": "FtsK hexamers readily bypass individual catalytically inactive ATPase subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "This conclusion is further supported by the observation that FtsK hexamers readily bypass individual catalytically inactive ATPase subunits (Crozat et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Crozat et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "40b321a7-3b2a-4e6a-bfba-4fbbac761beb",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C63",
+      "claim": "SpoIIIE is more likely to traverse 30-bp inserts with a neutral backbone only on the 5'\u21923' strand (6 out of 28 molecules) than 30-bp inserts with a neutral backbone on both strands (1 out of 32 molecules).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, SpoIIIE is more likely to traverse 30-bp inserts with a neutral backbone only on the 5'\u21923' strand (6 out of 28 molecules) than 30-bp inserts with a neutral backbone on both strands (1 out of 32 molecules) (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimental data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "0d7fd1a4-9002-4f75-9396-4c76ee48687e",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C64",
+      "claim": "During translocation, in addition to the essential electrostatic interactions with the 5'\u21923' strand, the SpoIIIE ring may also interact very weakly with charges on the 3'\u21925' strand.",
+      "claim_type": "EXPLICIT",
+      "source": "To explain this discrepancy, we speculate that during translocation, in addition to the essential electrostatic interactions with the 5'\u21923' strand, the SpoIIIE ring may also interact very weakly with charges on the 3'\u21925' strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation to explain the differential traversal probabilities.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "6bd90c9b-765d-44f6-a8ce-5cd21bba9dbf",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C65",
+      "claim": "An asymmetric neutralization of the phosphate backbone results in DNA bending toward the direction of the neutralized region.",
+      "claim_type": "EXPLICIT",
+      "source": "An asymmetric neutralization of the phosphate backbone whereby one 'face' of the dsDNA helix had its charges removed (e.g. neutralizing bases 1-3 on one strand and bases 3-6 on the other strand) results in DNA bending toward the direction of the neutralized region (Strauss and Maher, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Strauss and Maher, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "1ab4387a-3934-4493-a8b4-68f86594eb94",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C66",
+      "claim": "A symmetric neutralization of the phosphate backbone resulted in no significant DNA distortions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a symmetric neutralization of the phosphate backbone, whereby the phosphates on both strands were uniformly neutralized, resulted in no significant DNA distortions (Strauss and Maher, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Strauss and Maher, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "3e2c8725-af50-4898-84bc-4bd6ca51ba30",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C67",
+      "claim": "Magnesium ions at sufficiently high concentration (10 mM) mitigate the effect of DNA distortions due to asymmetric phosphate neutralization.",
+      "claim_type": "EXPLICIT",
+      "source": "Magnesium ions were present in the experimental buffer at a sufficiently high concentration (10 mM), which had been demonstrated to mitigate the effect of DNA distortions due to asymmetric phosphate neutralization (Strauss and Maher, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Strauss and Maher, 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "adac5f55-213e-4333-9781-3d7662bc37b9",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C68",
+      "claim": "The two-subunit translocation-escort model requires that subunits fire in a well-defined sequential fashion (A, B, C, D, E, F, A, B, C etc) and a subunit cannot fire multiple times in a row or out of order.",
+      "claim_type": "EXPLICIT",
+      "source": "To be consistent with the results of the stepping-stone insert experiments (Figure 5c\u2013d), our two-subunit translocation-escort model requires that subunits fire in a well- defined sequential fashion (A, B, C, D, E, F, A, B, C etc) and a subunit cannot fire multiple times in a row or out of order.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a requirement of the proposed model to be consistent with experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "39f1188b-9122-495a-a0ed-4e5c90025ca1",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C69",
+      "claim": "The structures of homo-hexameric helicases E1 and Rho co-crystallized with their single-stranded nucleic acid substrates strongly support a translocation mechanism where five motor subunits contact five consecutive phosphates on the ssDNA/ssRNA backbone.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures of homo-hexameric helicases E1 and Rho co-crystallized with their single-stranded nucleic acid substrates strongly support a translocation mechanism where five motor subunits contact five consecutive phosphates on the ssDNA/ssRNA backbone (Enemark and Joshua-Tor, 2006; Thomsen and Berger, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "bdd96f51-3827-42a5-ad92-f72d02120ca7",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C70",
+      "claim": "In E1 and Rho helicases, the hydrolysis of one ATP is coupled to the translocation of one nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "and the hydrolysis of one ATP is coupled to the translocation of one nucleotide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about E1 and Rho helicases.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "765d1440-2cef-47ac-8151-b010eed91739",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C71",
+      "claim": "An E1/Rho-like model predicts that the motor would fail to traverse a stepping-stone construct with a 1-bp MeP probe.",
+      "claim_type": "EXPLICIT",
+      "source": "Although an E1/Rho-like mechanism could potentially rationalize how SpoIIIE easily traverses a dsMeP insert of 4 bp but not 5 bp (Figure 2), such a model predicts that the motor would fail to traverse a stepping-stone construct with a 1-bp MeP probe (Figure 5b v).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from modeling that is inconsistent with experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "e8fcdc9d-091b-41eb-811b-d26e030d98a9",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C72",
+      "claim": "It was previously reported that SpoIIIE supercoils plasmid DNA in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously reported that SpoIIIE supercoils plasmid DNA in vitro, and strand/groove-tracking was proposed to explain this observation (Bath et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bath et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "7356a4f7-7732-4895-9b7b-7b755b18e8ce",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C73",
+      "claim": "Magnetic tweezers measurements of DNA supercoiling during translocation ruled out a groove-tracking mechanism for FtsK.",
+      "claim_type": "EXPLICIT",
+      "source": "Magnetic tweezers measurements of DNA supercoiling during translocation ruled out a groove-tracking mechanism for FtsK (Saleh et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Saleh et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "b3bb1fe9-b0fd-431c-88a6-623561d7c821",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C74",
+      "claim": "SpoIIIE tracks one DNA strand by making specific electrostatic contacts with backbone phosphates on the 5'\u21923' strand in the direction of translocation, a feature reported for other RecA-like NTPases: the \u03c629 packaging motor, DnaB, and Rho.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that SpoIIIE does indeed track one DNA strand by making specific electrostatic contacts with backbone phosphates on the 5'\u21923' strand in the direction of translocation, a feature reported for other RecA-like NTPases: the \u03c629 packaging motor, DnaB, and Rho (Aathavan et al., 2009; Itsathitphaisarn et al., 2012; Thomsen and Berger, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citations to similar behavior in other motors.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "b3f5cdfe-5dc5-4864-99b7-81ae9304299a",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C75",
+      "claim": "The \u03c629 ATPase translocates dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the \u03c629 ATPase, which translocates dsDNA, DnaB, and Rho are single-stranded nucleic acid translocases",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the \u03c629 ATPase.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "9785b2c4-59ff-49d3-b3af-27595ee08506",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C76",
+      "claim": "DnaB and Rho are single-stranded nucleic acid translocases.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the \u03c629 ATPase, which translocates dsDNA, DnaB, and Rho are single-stranded nucleic acid translocases, and therefore track one strand by default.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about DnaB and Rho.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "d4c29cb8-d194-4932-bf2b-82cedd624916",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C77",
+      "claim": "Both SpoIIIE and the \u03c629 ATPase encircle dsDNA, positioning multiple subunits in close proximity to the dsDNA helix, while they still possess the ability to discriminate one strand from the other.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, both SpoIIIE and the \u03c629 ATPase encircle dsDNA, positioning multiple subunits in close proximity to the dsDNA helix, while they still possess the ability to discriminate one strand from the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural knowledge and experimental observations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "dc7db8dc-6a64-475a-adeb-d8594a16bd40",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C78",
+      "claim": "Certain skewed sequences impart directionality to FtsK/SpoIIIE translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies have demonstrated that certain skewed sequences (i.e. sequences whose presence is biased on the leading vs. the lagging strand) impart directionality to FtsK/SpoIIIE translocation (Besprozvannaya et al., 2013; Cattoni et al., 2013; Lee et al., 2012; Levy et al., 2005; L\u00f6we et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "8ccd0290-d0bf-4921-bb99-29bf569f5f18",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C79",
+      "claim": "The \u03b3 domains of SpoIIIE are required for reading the SRS (SpoIIIE Recognition Sequences).",
+      "claim_type": "EXPLICIT",
+      "source": "However, the \u03b3 domains of SpoIIIE have been shown to be required for reading the SRS (Ptacin et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Ptacin et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "9b77cc69-a59e-4ee7-878f-cf6b79099c7a",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C80",
+      "claim": "Co-crystal structures of dsDNA with the domain \u03b3 reveal it interacting with both DNA strands at the backbone, the major and minor grooves, and individual bases.",
+      "claim_type": "EXPLICIT",
+      "source": "and co-crystal structures of dsDNA with the domain \u03b3 reveals it interacting with both DNA strands at the backbone, the major and minor grooves, and individual bases (L\u00f6we et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "e18a9853-7d74-4288-ab1d-db9c33039421",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C81",
+      "claim": "SpoIIIE does not enlist the strand-tracking mechanism for SRS sequence recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "We consider it unlikely therefore, that SpoIIIE enlists the strand-tracking mechanism described here for SRS sequence recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural data showing domain \u03b3 interactions with both strands.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "4b30c65f-c5d7-4482-9eb6-f29b4034be90",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C82",
+      "claim": "Electrostatic interactions between SpoIIIE and the DNA backbone serve a load-bearing function by providing SpoIIIE with the grip necessary to strip-bound proteins off the DNA at high speeds.",
+      "claim_type": "EXPLICIT",
+      "source": "The electrostatic interactions between SpoIIIE and the DNA backbone are likely to have two main purposes in vivo: (i) They serve a load-bearing function by providing SpoIIIE with the grip necessary to strip-bound proteins off the DNA at the high speeds at which the motor operates (Marquis et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the motor's properties and supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "af81bd4c-9b9e-468a-9fa4-bcf2105f9f65",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C83",
+      "claim": "Electrostatic interactions between SpoIIIE and the DNA backbone enable the motor to supercoil the DNA during translocation.",
+      "claim_type": "EXPLICIT",
+      "source": "and (ii) They enable the motor to supercoil the DNA during translocation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the symmetry mismatch between motor and DNA.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "4ea9c340-4767-4c3b-8465-4527f2e7d295",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C84",
+      "claim": "B-form DNA has a helical pitch of 10.4 bp/turn.",
+      "claim_type": "EXPLICIT",
+      "source": "since B-form DNA has a helical pitch of 10.4 bp/turn (Wang, 1979)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "4ea009b3-e343-4bf2-85c9-d9c6bc206586",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C85",
+      "claim": "After each motor step, a counter-clockwise 9\u00b0 rotation of the DNA relative to the motor is required to align the phosphate backbone with the next translocating subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, after each motor step, a counter-clockwise 9\u00b0 rotation of the DNA relative to the motor is required to align the phosphate backbone with the next translocating subunit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the geometry of the motor-DNA interaction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "7c97b2cf-705a-4c00-ad40-8364bf75d779",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C86",
+      "claim": "The two-subunit escort model predicts that SpoIIIE should introduce one supercoil for every \u223c80 bp of DNA translocated.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the two-subunit escort model predicts that SpoIIIE should introduce one supercoil for every \u223c80 bp of DNA translocated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the proposed model based on geometric calculations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "1ee1bb92-f8f1-44e8-945c-a6e6916b2ac4",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C87",
+      "claim": "Magnetic tweezers experiments revealed that SpoIIIE supercoils DNA by one turn per 100 \u00b1 10 bp of DNA translocated.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, magnetic tweezers experiments revealed that SpoIIIE supercoils DNA by one turn per 100 \u00b1 10 bp of DNA translocated (Jerod Ptacin and Marcelo Nollman, personal communication).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is experimental data from personal communication.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "e3f7ffc0-50f8-4ede-b5bd-d9e59ee06a1c",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C88",
+      "claim": "Strand tracking by the \u03c629 ATPase leads to DNA supercoiling.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously reported that strand tracking by the \u03c629 ATPase, another ring-shaped dsDNA motor, also leads to DNA supercoiling (Liu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Liu et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "226e8769-7c6e-450d-b65f-85b50e0ab754",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C89",
+      "claim": "DNA supercoiling may be a general feature of ring-shaped dsDNA motors that track one strand.",
+      "claim_type": "EXPLICIT",
+      "source": "The results presented here for SpoIIIE suggest that DNA supercoiling may be a general feature of ring-shaped dsDNA motors that track one strand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the results for SpoIIIE and \u03c629.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "42dc0c93-e7cb-4d0c-8f16-9275049866d0",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C90",
+      "claim": "During B. subtilis sporulation, the DNA is negatively supercoiled by 1 turn per 97 \u00b1 6 bp in the forespore and 1 turn per 140 \u00b1 10 bp in the mother cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo measurements indicate that, during B. subtilis sporulation, the DNA is negatively supercoiled by 1 turn per 97 \u00b1 6 bp in the forespore and 1 turn per 140 \u00b1 10 bp in the mother cell (Nicholson and Setlow, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to in vivo measurements.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "be0ee6cc-cb40-4078-b1f6-cf326ff58f86",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C91",
+      "claim": "The two-subunit escort model predicts that SpoIIIE translocation should introduce one negative supercoil in the forespore and one positive supercoil in the mother cell for every \u223c80 bp translocated.",
+      "claim_type": "EXPLICIT",
+      "source": "Since SpoIIIE is anchored at the septum during sporulation and the B. subtilis DNA is circular, the two-subunit escort model predicts that SpoIIIE translocation should introduce one negative supercoil in the forespore and one positive supercoil in the mother cell for every \u223c80 bp translocated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the proposed model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "236476c4-1682-4c68-b462-181cc1f2fe25",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C92",
+      "claim": "The SpoIIIE mechanism is fine tuned to deliver DNA to the forespore in the appropriate negative supercoiled state.",
+      "claim_type": "EXPLICIT",
+      "source": "We surmise that the SpoIIIE mechanism is fine tuned to deliver DNA to the forespore in the appropriate negative supercoiled state, similar to what has been proposed for FtsK (Saleh et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by comparison to FtsK.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "e2889646-32d7-491b-89b0-7963a26d972c",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C93",
+      "claim": "FtsK hexamers with two diametrically opposed inactive subunits translocated DNA as fast as wildtype hexamers.",
+      "claim_type": "EXPLICIT",
+      "source": "Our conclusions agree with the results of a single-molecule study by Crozat et al., which found that FtsK hexamers with two diametrically opposed inactive subunits translocated DNA as fast as wildtype hexamers (Crozat et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Crozat et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "b32c3152-095d-4498-bc4f-d30550495ed6",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C94",
+      "claim": "In vivo, SpoIIIE is present in low copy numbers during sporulation, with only two motors responsible for the vital task of chromosome translocation at any given time.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo, SpoIIIE is present in low copy numbers during sporulation, with only two motors responsible for the vital task of chromosome translocation at any given time (Burton et al., 2007; Yen Shin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to in vivo studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "f1731b04-950b-40b1-a905-5402bde8387e",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C95",
+      "claim": "Each SpoIIIE ring functions as a single-molecule bottleneck for chromosome translocation during sporulation, where the failure of either motor is likely to be lethal for the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, each SpoIIIE ring functions as a single-molecule bottleneck for this process, where the failure of either motor is likely to be lethal for the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the low copy number and essential function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "97979548-cfc4-473e-b2c4-27183e2faf8b",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C96",
+      "claim": "The coordination mechanism proposed can potentially explain how B. subtilis safeguards against the failure of individual motor subunits during sporulation.",
+      "claim_type": "EXPLICIT",
+      "source": "The coordination mechanism proposed here can potentially explain how B. subtilis safeguards against the failure of individual motor subunits during sporulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the biological significance of the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "0a8a94ea-5b78-43a9-866f-f046972fe5fa",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C97",
+      "claim": "Other ASCE motors that represent single-points of failure may have evolved into similar flexible operations.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that other ASCE motors that also represent single-points of failure may have evolved into similar flexible operations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about evolutionary implications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "578d2b1b-4d66-4843-81e1-28fd8f5a364f",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C98",
+      "claim": "The density of ATP\u03b3S-induced pauses does not depend on external force.",
+      "claim_type": "EXPLICIT",
+      "source": "The density and duration of analog-induced pauses does not depend on external force (Figure 6\u2014figure supplement 1e\u2013f)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimental data shown in Figure 6\u2014figure supplement 1e\u2013f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "5d71a946-a718-4137-ac9b-43fc61948d7a",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C99",
+      "claim": "The duration of ATP\u03b3S-induced pauses does not depend on external force.",
+      "claim_type": "EXPLICIT",
+      "source": "The density and duration of analog-induced pauses does not depend on external force (Figure 6\u2014figure supplement 1e\u2013f)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimental data shown in Figure 6\u2014figure supplement 1e\u2013f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "b7a08f4b-6c5d-4335-8c0a-579d6672ba79",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C100",
+      "claim": "The measured Ki of ATP\u03b3S is 124 \u00b1 20 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "To calculate the expected pause probability, we used the measured Ki of ATP\u03b3S (124 \u00b1 20 \u00b5M) for K\u03b3S (Figure 6\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimental data shown in Figure 6\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "cc1420b5-8ae2-46c0-b1c8-a2df41967ad4",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "claim_id": "C101",
+      "claim": "The measured Km of ATP is 505 \u00b1 50 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "For KATP, we used the measured Km of ATP (505 \u00b1 50 \u00b5M) as an upper-bound estimate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e7a94c0a-ed29-4bb2-8026-07f2f4f7cb02",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "SpoIIIE selectively tracks the 5'\u21923' DNA strand during translocation by making essential electrostatic contacts with phosphates on that strand. This was demonstrated using single-stranded MeP DNA constructs where neutralizing the 5'\u21923' strand severely impaired traversal (6/28 molecules, requiring 5-50s), while neutralizing the 3'\u21925' strand allowed fast traversal (23/24 molecules).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The strand-tracking result is well-supported by direct experimental evidence from single-stranded MeP constructs (C34-C38) showing dramatic differences in traversal probability and speed depending on which strand is neutralized. The data clearly demonstrate selective interaction with the 5'\u21923' strand, with appropriate statistical significance and consistent observations across multiple molecules.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "76313037-e1af-45f6-add1-b3b38f32a503",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SpoIIIE has a step size of 2 bp per ATP hydrolyzed, as determined using stepping-stone DNA constructs. The motor traversed 1-bp neutral probes with near-100% probability but failed to cross 2-bp, 3-bp, or 4-bp probes (~25% success rate), consistent with a 2-bp step size model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The 2-bp step size is well-supported by the stepping-stone experiments (C42-C43) which show a sharp transition in traversal probability between 1-bp and 2-bp probes. This is further validated by agreement with previous FtsK studies (C44) showing 1.6-2.1 bp per ATP. The experimental design appropriately tests the prediction of different mechanistic models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "b78b0854-92cb-4817-91ed-4b38b3099fe1",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SpoIIIE can operate processively with non-consecutive inactive subunits but requires two consecutive active subunits for translocation. ATP analog experiments showed that pausing occurs when n=2 consecutive subunits are bound to ATP\u03b3S, with pause durations following single-exponential kinetics (~35 ms lifetime) independent of analog concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The subunit coordination mechanism is well-supported by comprehensive ATP\u03b3S experiments (C53-C61) including pause density analysis, kinetic modeling, and comparison to competitive inhibition. The corrected pause density data best fit the n=2 model, and this conclusion is corroborated by independent FtsK studies (C62). The single-exponential pause distribution and concentration-independent lifetime provide strong mechanistic insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "4eb28ae1-c999-497c-a45b-bb840508af44",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "SpoIIIE requires electrostatic contacts with DNA phosphates every 5 bp or less for processive translocation. The motor traversed 2-4 bp dsMeP inserts with near-100% probability but showed sharp reduction to ~50% for 5 bp inserts, accompanied by dramatic increases in traversal time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The periodicity of motor-DNA contacts is well-supported by systematic variation of dsMeP insert length (C23-C26) showing a clear threshold at 5 bp. The sharp transition in both traversal probability and time (C24-C25) provides strong evidence for the 5 bp contact periodicity. However, the inference about contact periodicity (C28) could be more precisely stated as \"at least one contact every 5 bp\" rather than \"every 5 bp or less.\"",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "42627093-5af1-4f24-aee0-847221c78766",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Strand-tracking by SpoIIIE is inconsistent with stochastic subunit coordination and instead requires sequential ATP hydrolysis around the hexameric ring. A stochastic mechanism would result in frequent slipping under tension, contrary to observations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This mechanistic inference (C39-C41) is logically sound given the strand-tracking observation. The reasoning correctly identifies that stochastic firing would misalign subunits with the tracked strand and cause slipping under constant tension, which was not observed. This represents valid logical deduction from the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "5f45b37e-e858-4f81-b027-d1fe18fc93eb",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The two-subunit escort model predicts SpoIIIE introduces one supercoil per ~80 bp of DNA translocated, which agrees with magnetic tweezers measurements showing one turn per 100\u00b110 bp. During sporulation, this would introduce negative supercoils in the forespore and positive supercoils in the mother cell.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The supercoiling prediction (C86) is a logical consequence of the proposed 2-bp step size and hexameric geometry, and shows good quantitative agreement with independent experimental measurements (C87). The prediction for in vivo supercoiling (C91) follows logically from the model. The ~20% discrepancy between prediction (80 bp) and measurement (100 bp) is reasonable given experimental uncertainties and model simplifications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "11941996-ead8-47e5-99cd-e90c924a7387",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Nucleotides stabilize SpoIIIE-DNA interactions, with rupture forces increasing from ~3 pN (apo) to ~15 pN (ADP) to ~25 pN (ATP\u03b3S). This suggests only nucleotide-bound subunits form stable electrostatic contacts with DNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The nucleotide-dependent stabilization is directly measured (C45, C47-C48) and shows a clear trend of increasing interaction strength with nucleotide binding. The inference that nucleotide-bound subunits form stable contacts (C50) is reasonable given the data, though the mechanism could involve conformational changes rather than direct stabilization of electrostatic interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "6b745993-aeb4-4de0-8162-1438444ff39e",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Single SpoIIIE motors translocate DNA at ~4 kbp/s under saturating ATP (3 mM) and low force (5 pN), consistent with previous in vivo and in vitro measurements. Control experiments confirmed single-motor attachment through protein titration and single-step slipping events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The translocation rate measurement (C14) is directly observed and agrees with literature values (C15). The single-motor controls (C16-C18) are appropriate, using both dilution and analysis of slipping events. The single-step slipping provides good evidence for single-motor attachment, though additional controls (e.g., photobleaching) could strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "18b31b99-e663-4ac7-9177-2f8205adc424",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "SpoIIIE can rarely traverse long neutral DNA segments (1/32 for 30 bp, ~8% for 10 bp) through repeated crossing attempts, suggesting kinetic competition between forward translocation and backward slipping. Non-electrostatic interactions (e.g., steric) may enable eventual traversal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The rare traversal events are observed (C29-C30), and the kinetic competition model (C31) is reasonable and supported by analogy to \u03c629 (C33). However, the hypothesis about steric interactions (C32) is speculative and lacks direct experimental support. The low frequency of events makes mechanistic interpretation uncertain, and alternative explanations (e.g., DNA breathing, transient charge interactions) are not excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "5fd25536-c977-4747-99be-cd9c3d39ade5",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "SpoIIIE shows higher traversal probability for 30-bp inserts with only 5'\u21923' strand neutralized (6/28) compared to both strands neutralized (1/32), suggesting possible weak secondary interactions with the 3'\u21925' strand during translocation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The differential traversal probability is observed (C63), but the sample sizes are small and the difference, while suggestive, may not be statistically significant. The speculation about weak 3'\u21925' strand interactions (C64) is one possible explanation but lacks direct experimental support. Alternative explanations such as DNA structural differences or experimental variability are not ruled out.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "20d95fec-d425-468c-84a7-97800bb4c607",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The two-subunit escort model requires strict sequential subunit firing (A\u2192B\u2192C\u2192D\u2192E\u2192F) without out-of-order or repeated firing. This model is consistent with stepping-stone data but inconsistent with E1/Rho-like mechanisms that would fail to traverse 1-bp probes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The requirement for sequential firing (C68) is a logical necessity for the model to explain the stepping-stone data. The exclusion of E1/Rho-like mechanisms (C71) is well-reasoned based on the 1-bp probe traversal data. However, the claim that subunits \"cannot\" fire out of order is stronger than what the data strictly require\u2014the data show this doesn't happen frequently enough to affect the observed behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "fe646261-ab7c-4506-8325-1f1738b1bf41",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "ATP\u03b3S-induced pause density and duration are independent of external force (5-40 pN). The measured Ki for ATP\u03b3S is 124\u00b120 \u03bcM and Km for ATP is 505\u00b150 \u03bcM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The force-independence of pausing (C98-C99) is directly measured and supports the interpretation that pausing is governed by nucleotide exchange rather than mechanical processes. The Ki and Km values (C100-C101) are experimentally determined and used appropriately in the modeling. These are solid supporting measurements for the main mechanistic conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "5a0019e1-44ff-4ce3-aad3-421dfd84e7a7",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "MeP DNA modifications are not expected to cause significant structural distortions because symmetric neutralization doesn't distort DNA structure, and the experimental buffer contained 10 mM Mg\u00b2\u207a which mitigates distortion effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claims about MeP DNA structure are well-supported by citations to Strauss and Maher (C65-C67). The symmetric neutralization in dsMeP constructs and presence of Mg\u00b2\u207a provide reasonable assurance that structural artifacts are minimized. This is an important control consideration for interpreting the MeP experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "97a8971f-343a-49b9-8040-da9d9f6859b2",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Electrostatic interactions between SpoIIIE and DNA serve dual purposes: providing grip for protein stripping and enabling DNA supercoiling during translocation. The 9\u00b0 rotation mismatch between motor steps (60\u00b0) and DNA helical advance (69\u00b0 per 2 bp) drives supercoiling, which may be a general feature of strand-tracking ring motors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The functional roles of electrostatic interactions (C82-C83) are reasonable inferences supported by the motor's properties. The geometric calculation of rotation mismatch (C84-C85) is mathematically sound. The generalization to other motors (C89) is appropriately cautious speculation supported by \u03c629 data. The proposal about fine-tuning for forespore DNA state (C92) is speculative but plausible given the in vivo measurements (C90).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "c8260bc9-b71d-485d-bd76-c94509359b66",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "SpoIIIE operates as a single-molecule bottleneck during sporulation with only two motors responsible for chromosome translocation. The flexible coordination mechanism allowing bypass of inactive subunits may have evolved to safeguard against subunit failure in such critical single-point-of-failure motors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The low copy number and bottleneck nature of SpoIIIE are supported by citations (C94-C95). The evolutionary speculation (C96-C97) is reasonable given the experimental findings about subunit bypass capability, though it remains speculative. This represents appropriate biological contextualization of the mechanistic findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "0ab5083e-24f9-4be8-ae20-f0303cc9de35",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background information on SpoIIIE structure and function: SpoIIIE is a homo-hexameric dsDNA translocase that completes chromosome segregation during B. subtilis sporulation. It contains transmembrane, linker, and motor domains (\u03b1, \u03b2, \u03b3 subdomains), forms hexameric rings with DNA threaded through the central pore, and exhibits high translocation velocity (~5 kbp/s) and force generation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are well-established background facts about SpoIIIE supported by multiple literature citations (C5, C7-C13) and general knowledge (C1, C6). They provide necessary context but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    },
+    {
+      "id": "4b3d4c7d-5d94-4a98-9065-1645b9709e52",
+      "content_id": "82abf6af-6959-4117-92c1-27fb2ac2ea34",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Literature context and comparisons: MeP DNA preserves B-form structure; ATP\u03b3S binds competitively to ATP sites; E1/Rho helicases use different mechanisms; previous studies showed SpoIIIE supercoiling and FtsK can bypass inactive subunits; domain \u03b3 mediates sequence recognition through interactions with both DNA strands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims provide important literature context and are appropriately supported by citations. They establish the basis for experimental design choices and help interpret the current findings in light of previous work. While not novel results, they are accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:23:04.202072Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "56f4e849-b58c-4f85-9c30-ebee6587475f",
+      "result_id": "e7a94c0a-ed29-4bb2-8026-07f2f4f7cb02"
+    },
+    {
+      "claim_id": "72de81e5-5b80-4c8a-be58-60ebe5e43ba6",
+      "result_id": "e7a94c0a-ed29-4bb2-8026-07f2f4f7cb02"
+    },
+    {
+      "claim_id": "f7c89853-bfe1-42af-9be5-3c4bb47b468c",
+      "result_id": "e7a94c0a-ed29-4bb2-8026-07f2f4f7cb02"
+    },
+    {
+      "claim_id": "92b55d1c-24df-4c01-9a71-403315ba7f57",
+      "result_id": "e7a94c0a-ed29-4bb2-8026-07f2f4f7cb02"
+    },
+    {
+      "claim_id": "4066fa06-b833-4974-a04f-458fb6e9dbc1",
+      "result_id": "e7a94c0a-ed29-4bb2-8026-07f2f4f7cb02"
+    },
+    {
+      "claim_id": "a7e94836-efa6-4c92-b7c3-3d476a83095b",
+      "result_id": "e7a94c0a-ed29-4bb2-8026-07f2f4f7cb02"
+    },
+    {
+      "claim_id": "b3bb1fe9-b0fd-431c-88a6-623561d7c821",
+      "result_id": "e7a94c0a-ed29-4bb2-8026-07f2f4f7cb02"
+    },
+    {
+      "claim_id": "030c04ff-22e4-4bfb-ab74-122a636f230f",
+      "result_id": "76313037-e1af-45f6-add1-b3b38f32a503"
+    },
+    {
+      "claim_id": "1bf4dce9-f723-4a28-8522-284d52314f4d",
+      "result_id": "76313037-e1af-45f6-add1-b3b38f32a503"
+    },
+    {
+      "claim_id": "866c0b21-e697-4fbe-888d-ca672c92e1a1",
+      "result_id": "76313037-e1af-45f6-add1-b3b38f32a503"
+    },
+    {
+      "claim_id": "fc9153eb-8297-4457-a865-5109f35db194",
+      "result_id": "76313037-e1af-45f6-add1-b3b38f32a503"
+    },
+    {
+      "claim_id": "af34ad5f-def7-4e11-a290-3cbb3774fa59",
+      "result_id": "b78b0854-92cb-4817-91ed-4b38b3099fe1"
+    },
+    {
+      "claim_id": "c9621e3e-1516-4829-a824-4672360df462",
+      "result_id": "b78b0854-92cb-4817-91ed-4b38b3099fe1"
+    },
+    {
+      "claim_id": "7d05d871-7cb0-4895-81f9-9934100bbb1c",
+      "result_id": "b78b0854-92cb-4817-91ed-4b38b3099fe1"
+    },
+    {
+      "claim_id": "5c48b960-6a56-4641-a187-29b4c346e285",
+      "result_id": "b78b0854-92cb-4817-91ed-4b38b3099fe1"
+    },
+    {
+      "claim_id": "1b893d2f-b11a-40fc-a010-3968dcc58116",
+      "result_id": "b78b0854-92cb-4817-91ed-4b38b3099fe1"
+    },
+    {
+      "claim_id": "0e34becc-be57-43f6-a525-5e3bb4668325",
+      "result_id": "b78b0854-92cb-4817-91ed-4b38b3099fe1"
+    },
+    {
+      "claim_id": "c47f36a7-0ceb-4039-a331-7d12dd973fe0",
+      "result_id": "b78b0854-92cb-4817-91ed-4b38b3099fe1"
+    },
+    {
+      "claim_id": "b3ff4ef9-9975-4110-bbd6-e36947dd1fad",
+      "result_id": "b78b0854-92cb-4817-91ed-4b38b3099fe1"
+    },
+    {
+      "claim_id": "bdc6e05d-e29f-44db-9766-20872100291a",
+      "result_id": "b78b0854-92cb-4817-91ed-4b38b3099fe1"
+    },
+    {
+      "claim_id": "c5132671-7f88-4e6f-8500-0dde32d904f1",
+      "result_id": "b78b0854-92cb-4817-91ed-4b38b3099fe1"
+    },
+    {
+      "claim_id": "87e8c83b-728a-42fd-8747-71794e76999c",
+      "result_id": "b78b0854-92cb-4817-91ed-4b38b3099fe1"
+    },
+    {
+      "claim_id": "d727d472-e1b9-4bb1-ab09-7635b6cf68c8",
+      "result_id": "4eb28ae1-c999-497c-a45b-bb840508af44"
+    },
+    {
+      "claim_id": "3d11fdbf-2f08-41c1-96f7-6f26335c52b0",
+      "result_id": "4eb28ae1-c999-497c-a45b-bb840508af44"
+    },
+    {
+      "claim_id": "a4b5a7fe-69f2-48e5-8a72-5e746514f5c4",
+      "result_id": "4eb28ae1-c999-497c-a45b-bb840508af44"
+    },
+    {
+      "claim_id": "625e7481-4ac5-4453-8aad-765a59111718",
+      "result_id": "4eb28ae1-c999-497c-a45b-bb840508af44"
+    },
+    {
+      "claim_id": "dc24f34a-d5b7-46eb-8f68-e917ae24d3cf",
+      "result_id": "4eb28ae1-c999-497c-a45b-bb840508af44"
+    },
+    {
+      "claim_id": "6feb7d9e-1001-4de8-816f-cd0c5bedc31d",
+      "result_id": "4eb28ae1-c999-497c-a45b-bb840508af44"
+    },
+    {
+      "claim_id": "646af190-a293-4d38-b915-89536e0eeac4",
+      "result_id": "4eb28ae1-c999-497c-a45b-bb840508af44"
+    },
+    {
+      "claim_id": "222bbacc-e782-4a1a-a710-26bdc5d0d4f7",
+      "result_id": "4eb28ae1-c999-497c-a45b-bb840508af44"
+    },
+    {
+      "claim_id": "8dcf4f75-ecd1-4ec6-b5d9-ee6a70985162",
+      "result_id": "4eb28ae1-c999-497c-a45b-bb840508af44"
+    },
+    {
+      "claim_id": "55f44737-4a6c-480c-9c80-959363a8f00f",
+      "result_id": "42627093-5af1-4f24-aee0-847221c78766"
+    },
+    {
+      "claim_id": "37d8244b-e55c-4e30-8a2c-67d191c774cb",
+      "result_id": "42627093-5af1-4f24-aee0-847221c78766"
+    },
+    {
+      "claim_id": "473fc141-37fe-4c59-8599-6894a0e73932",
+      "result_id": "42627093-5af1-4f24-aee0-847221c78766"
+    },
+    {
+      "claim_id": "7c97b2cf-705a-4c00-ad40-8364bf75d779",
+      "result_id": "5f45b37e-e858-4f81-b027-d1fe18fc93eb"
+    },
+    {
+      "claim_id": "1ee1bb92-f8f1-44e8-945c-a6e6916b2ac4",
+      "result_id": "5f45b37e-e858-4f81-b027-d1fe18fc93eb"
+    },
+    {
+      "claim_id": "be0ee6cc-cb40-4078-b1f6-cf326ff58f86",
+      "result_id": "5f45b37e-e858-4f81-b027-d1fe18fc93eb"
+    },
+    {
+      "claim_id": "529e2b5e-de7b-4dcf-b311-87202f1eca7d",
+      "result_id": "11941996-ead8-47e5-99cd-e90c924a7387"
+    },
+    {
+      "claim_id": "0271862e-5cf8-44a4-971b-937acf4bedad",
+      "result_id": "11941996-ead8-47e5-99cd-e90c924a7387"
+    },
+    {
+      "claim_id": "c1ad85ac-47ca-4b14-98f3-e139579d1837",
+      "result_id": "11941996-ead8-47e5-99cd-e90c924a7387"
+    },
+    {
+      "claim_id": "9aeea04d-8a66-4f56-8fd5-b0a2761f5511",
+      "result_id": "11941996-ead8-47e5-99cd-e90c924a7387"
+    },
+    {
+      "claim_id": "a88a8272-69de-4d1b-b39d-acccbc629618",
+      "result_id": "11941996-ead8-47e5-99cd-e90c924a7387"
+    },
+    {
+      "claim_id": "5293d46e-fc60-4df8-a372-7e523f9c2033",
+      "result_id": "11941996-ead8-47e5-99cd-e90c924a7387"
+    },
+    {
+      "claim_id": "696a4ef2-f398-45b4-bf39-1652833a6110",
+      "result_id": "6b745993-aeb4-4de0-8162-1438444ff39e"
+    },
+    {
+      "claim_id": "d141edc5-47b0-47d9-8dea-5c1ad030dc1f",
+      "result_id": "6b745993-aeb4-4de0-8162-1438444ff39e"
+    },
+    {
+      "claim_id": "16840abb-cea7-4f17-926e-f2264d20e2a0",
+      "result_id": "6b745993-aeb4-4de0-8162-1438444ff39e"
+    },
+    {
+      "claim_id": "49145c68-0b1f-4e4a-8d5f-5ce2fe64b7cd",
+      "result_id": "6b745993-aeb4-4de0-8162-1438444ff39e"
+    },
+    {
+      "claim_id": "3292bfba-059e-4de2-a0f0-c9b9bd384866",
+      "result_id": "6b745993-aeb4-4de0-8162-1438444ff39e"
+    },
+    {
+      "claim_id": "4993f875-3f84-4eb6-a3c2-03f25426d489",
+      "result_id": "18b31b99-e663-4ac7-9177-2f8205adc424"
+    },
+    {
+      "claim_id": "1d7c7b8a-0ed8-43be-add5-9e569df7d49a",
+      "result_id": "18b31b99-e663-4ac7-9177-2f8205adc424"
+    },
+    {
+      "claim_id": "71b10a59-a337-476b-93dc-39fb4f6f7a2c",
+      "result_id": "18b31b99-e663-4ac7-9177-2f8205adc424"
+    },
+    {
+      "claim_id": "ced547d0-a536-4e6d-bfe6-55e2f3faf02f",
+      "result_id": "18b31b99-e663-4ac7-9177-2f8205adc424"
+    },
+    {
+      "claim_id": "cb9c1886-aca2-417a-b086-4895d7986a77",
+      "result_id": "18b31b99-e663-4ac7-9177-2f8205adc424"
+    },
+    {
+      "claim_id": "40b321a7-3b2a-4e6a-bfba-4fbbac761beb",
+      "result_id": "5fd25536-c977-4747-99be-cd9c3d39ade5"
+    },
+    {
+      "claim_id": "0d7fd1a4-9002-4f75-9396-4c76ee48687e",
+      "result_id": "5fd25536-c977-4747-99be-cd9c3d39ade5"
+    },
+    {
+      "claim_id": "adac5f55-213e-4333-9781-3d7662bc37b9",
+      "result_id": "20d95fec-d425-468c-84a7-97800bb4c607"
+    },
+    {
+      "claim_id": "765d1440-2cef-47ac-8151-b010eed91739",
+      "result_id": "20d95fec-d425-468c-84a7-97800bb4c607"
+    },
+    {
+      "claim_id": "578d2b1b-4d66-4843-81e1-28fd8f5a364f",
+      "result_id": "fe646261-ab7c-4506-8325-1f1738b1bf41"
+    },
+    {
+      "claim_id": "5d71a946-a718-4137-ac9b-43fc61948d7a",
+      "result_id": "fe646261-ab7c-4506-8325-1f1738b1bf41"
+    },
+    {
+      "claim_id": "b7a08f4b-6c5d-4335-8c0a-579d6672ba79",
+      "result_id": "fe646261-ab7c-4506-8325-1f1738b1bf41"
+    },
+    {
+      "claim_id": "cc1420b5-8ae2-46c0-b1c8-a2df41967ad4",
+      "result_id": "fe646261-ab7c-4506-8325-1f1738b1bf41"
+    },
+    {
+      "claim_id": "6bd90c9b-765d-44f6-a8ce-5cd21bba9dbf",
+      "result_id": "5a0019e1-44ff-4ce3-aad3-421dfd84e7a7"
+    },
+    {
+      "claim_id": "1ab4387a-3934-4493-a8b4-68f86594eb94",
+      "result_id": "5a0019e1-44ff-4ce3-aad3-421dfd84e7a7"
+    },
+    {
+      "claim_id": "3e2c8725-af50-4898-84bc-4bd6ca51ba30",
+      "result_id": "5a0019e1-44ff-4ce3-aad3-421dfd84e7a7"
+    },
+    {
+      "claim_id": "4b30c65f-c5d7-4482-9eb6-f29b4034be90",
+      "result_id": "97a8971f-343a-49b9-8040-da9d9f6859b2"
+    },
+    {
+      "claim_id": "af81bd4c-9b9e-468a-9fa4-bcf2105f9f65",
+      "result_id": "97a8971f-343a-49b9-8040-da9d9f6859b2"
+    },
+    {
+      "claim_id": "4ea9c340-4767-4c3b-8465-4527f2e7d295",
+      "result_id": "97a8971f-343a-49b9-8040-da9d9f6859b2"
+    },
+    {
+      "claim_id": "4ea009b3-e343-4bf2-85c9-d9c6bc206586",
+      "result_id": "97a8971f-343a-49b9-8040-da9d9f6859b2"
+    },
+    {
+      "claim_id": "226e8769-7c6e-450d-b65f-85b50e0ab754",
+      "result_id": "97a8971f-343a-49b9-8040-da9d9f6859b2"
+    },
+    {
+      "claim_id": "42dc0c93-e7cb-4d0c-8f16-9275049866d0",
+      "result_id": "97a8971f-343a-49b9-8040-da9d9f6859b2"
+    },
+    {
+      "claim_id": "236476c4-1682-4c68-b462-181cc1f2fe25",
+      "result_id": "97a8971f-343a-49b9-8040-da9d9f6859b2"
+    },
+    {
+      "claim_id": "b32c3152-095d-4498-bc4f-d30550495ed6",
+      "result_id": "c8260bc9-b71d-485d-bd76-c94509359b66"
+    },
+    {
+      "claim_id": "f1731b04-950b-40b1-a905-5402bde8387e",
+      "result_id": "c8260bc9-b71d-485d-bd76-c94509359b66"
+    },
+    {
+      "claim_id": "97979548-cfc4-473e-b2c4-27183e2faf8b",
+      "result_id": "c8260bc9-b71d-485d-bd76-c94509359b66"
+    },
+    {
+      "claim_id": "0a8a94ea-5b78-43a9-866f-f046972fe5fa",
+      "result_id": "c8260bc9-b71d-485d-bd76-c94509359b66"
+    },
+    {
+      "claim_id": "c76931bb-fc63-4227-8c30-e6573aef6824",
+      "result_id": "0ab5083e-24f9-4be8-ae20-f0303cc9de35"
+    },
+    {
+      "claim_id": "b381bcfb-a53e-491e-8137-6596a7d12dcf",
+      "result_id": "0ab5083e-24f9-4be8-ae20-f0303cc9de35"
+    },
+    {
+      "claim_id": "4efefc1a-37d2-405d-890d-f00cf495d962",
+      "result_id": "0ab5083e-24f9-4be8-ae20-f0303cc9de35"
+    },
+    {
+      "claim_id": "c556d7c8-b5e6-4443-97e6-5915a973357f",
+      "result_id": "0ab5083e-24f9-4be8-ae20-f0303cc9de35"
+    },
+    {
+      "claim_id": "9771b0c1-b714-41a8-9591-1d380aa4abd6",
+      "result_id": "0ab5083e-24f9-4be8-ae20-f0303cc9de35"
+    },
+    {
+      "claim_id": "74b6a5a5-edab-4f59-af83-059419b69b89",
+      "result_id": "0ab5083e-24f9-4be8-ae20-f0303cc9de35"
+    },
+    {
+      "claim_id": "f3b29513-96e7-4637-9283-9be6ad3c7ae3",
+      "result_id": "0ab5083e-24f9-4be8-ae20-f0303cc9de35"
+    },
+    {
+      "claim_id": "312fcb3e-9164-437a-88bb-a72aca97bb8d",
+      "result_id": "0ab5083e-24f9-4be8-ae20-f0303cc9de35"
+    },
+    {
+      "claim_id": "b4438425-585d-4daf-b27c-81e0443969a2",
+      "result_id": "0ab5083e-24f9-4be8-ae20-f0303cc9de35"
+    },
+    {
+      "claim_id": "5fee469e-4253-45a7-947d-65168c05de72",
+      "result_id": "0ab5083e-24f9-4be8-ae20-f0303cc9de35"
+    },
+    {
+      "claim_id": "ba3907ab-ff5e-47bb-b070-f2cecd56223e",
+      "result_id": "4b3d4c7d-5d94-4a98-9065-1645b9709e52"
+    },
+    {
+      "claim_id": "f85c8dfd-2323-4bda-8b97-96f6a7a9d572",
+      "result_id": "4b3d4c7d-5d94-4a98-9065-1645b9709e52"
+    },
+    {
+      "claim_id": "8423aecf-e8a1-4161-964c-8756bcde529a",
+      "result_id": "4b3d4c7d-5d94-4a98-9065-1645b9709e52"
+    },
+    {
+      "claim_id": "39f1188b-9122-495a-a0ed-4e5c90025ca1",
+      "result_id": "4b3d4c7d-5d94-4a98-9065-1645b9709e52"
+    },
+    {
+      "claim_id": "bdd96f51-3827-42a5-ad92-f72d02120ca7",
+      "result_id": "4b3d4c7d-5d94-4a98-9065-1645b9709e52"
+    },
+    {
+      "claim_id": "e8fcdc9d-091b-41eb-811b-d26e030d98a9",
+      "result_id": "4b3d4c7d-5d94-4a98-9065-1645b9709e52"
+    },
+    {
+      "claim_id": "7356a4f7-7732-4895-9b7b-7b755b18e8ce",
+      "result_id": "4b3d4c7d-5d94-4a98-9065-1645b9709e52"
+    },
+    {
+      "claim_id": "b3f5cdfe-5dc5-4864-99b7-81ae9304299a",
+      "result_id": "4b3d4c7d-5d94-4a98-9065-1645b9709e52"
+    },
+    {
+      "claim_id": "9785b2c4-59ff-49d3-b3af-27595ee08506",
+      "result_id": "4b3d4c7d-5d94-4a98-9065-1645b9709e52"
+    },
+    {
+      "claim_id": "d4c29cb8-d194-4932-bf2b-82cedd624916",
+      "result_id": "4b3d4c7d-5d94-4a98-9065-1645b9709e52"
+    },
+    {
+      "claim_id": "dc7db8dc-6a64-475a-adeb-d8594a16bd40",
+      "result_id": "4b3d4c7d-5d94-4a98-9065-1645b9709e52"
+    },
+    {
+      "claim_id": "8ccd0290-d0bf-4921-bb99-29bf569f5f18",
+      "result_id": "4b3d4c7d-5d94-4a98-9065-1645b9709e52"
+    },
+    {
+      "claim_id": "9b77cc69-a59e-4ee7-878f-cf6b79099c7a",
+      "result_id": "4b3d4c7d-5d94-4a98-9065-1645b9709e52"
+    },
+    {
+      "claim_id": "e18a9853-7d74-4288-ab1d-db9c33039421",
+      "result_id": "4b3d4c7d-5d94-4a98-9065-1645b9709e52"
+    },
+    {
+      "claim_id": "e3f7ffc0-50f8-4ede-b5bd-d9e59ee06a1c",
+      "result_id": "4b3d4c7d-5d94-4a98-9065-1645b9709e52"
+    },
+    {
+      "claim_id": "e2889646-32d7-491b-89b0-7963a26d972c",
+      "result_id": "4b3d4c7d-5d94-4a98-9065-1645b9709e52"
+    }
+  ],
+  "comparisons": []
+}

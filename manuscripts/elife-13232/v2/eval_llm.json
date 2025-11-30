@@ -1,0 +1,425 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C64",
+      "C66",
+      "C67"
+    ],
+    "result": "COPI subcomplexes colocalize in vivo at the early Golgi. The F and B subcomplexes (Sec26-GFP with Sec21-mCherry or Ret1-mCherry) show essentially complete colocalization at punctate structures, and COPI colocalizes strongly with the early Golgi marker GFP-Vrg4, consistent with electron tomography studies showing COPI buds on early Golgi but not TGN cisternae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are directly supported by fluorescence microscopy data in Figure 1A showing colocalization. C64 is supported by Figure 1B. C66 is a reasonable inference from the colocalization data combined with cited electron tomography studies (C67). The evidence converges to support that yeast COPI acts at the early Golgi.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C78",
+      "C79",
+      "C80",
+      "C184"
+    ],
+    "result": "Wild-type FRB is suitable for tagging COPI while the destabilized FRB(T2098L) mutant is not. Sec21-FRB grew normally but Sec21-FRB(T2098L) showed pronounced growth defects, likely due to protein degradation. Appending MBP or GFP to FRB(T2098L) rescued growth, possibly by slowing degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Growth curve data in Figure 2A clearly demonstrate the differential effects of wild-type FRB versus FRB(T2098L). The rescue by MBP/GFP fusion is documented. While the degradation mechanism (C75, C78) is speculative, the practical conclusion that wild-type FRB should be used (C79-C80, C184) is well-supported by the growth data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C90",
+      "C93",
+      "C94"
+    ],
+    "result": "Effective COPI anchoring requires optimization of tag-anchor combinations. Sec21-FRB with ribosomal Rpl13A-FKBPx2 anchor completely blocked growth with rapamycin, while Sec21-FRB with mitochondrial OM45-FKBPx2 only partially inhibited growth. Increasing to Sec21-FRBx2 with OM45-FKBPx4 achieved complete growth inhibition. The differential effectiveness likely reflects the ubiquitous distribution of ribosomes versus the restricted localization of mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Growth curve data in Figure 2B directly support claims C81, C82, and C87. The mechanistic explanation (C83-C86) is reasonable speculation based on known cellular organization. The conclusion that different components require testing of specific tag-anchor combinations (C93-C94) is supported by comparing COPI and COPII results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C120",
+      "C187",
+      "C193",
+      "C194"
+    ],
+    "result": "The anchor-away method rapidly and effectively inactivates COPI. Sec21-FRBx2-GFP redistributed to mitochondria within 10-15 minutes of rapamycin addition, reaching 75-80% colocalization. Anchoring one COPI subunit caused redistribution of other subunits (Ret1-GFP, Sec26-GFP), indicating the entire complex is redistributed. The early Golgi marker GFP-Vrg4 was also displaced, suggesting entire Golgi compartments were tethered. Despite retaining Golgi membrane association, anchored COPI was functionally inactive as judged by growth inhibition and blocked Golgi-to-ER recycling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 are directly supported by quantitative colocalization data in Figure 3A-B. C98-C99 are supported by Figure 3\u2014supplement 1. C103-C104 are supported by Figure 3C showing GFP-Vrg4 displacement. The conclusion that anchored COPI is functionally inactive (C120, C193) is supported by multiple lines of evidence including growth inhibition and Sec71TMD-GFP depletion experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C113",
+      "C114",
+      "C115",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Anchoring COPI inhibits Golgi-to-ER recycling. Sec71TMD-GFP, which requires Rer1-dependent COPI recycling for ER localization, showed bright ER signal in wild-type cells but faint signal in rer1\u0394 cells. After COPI inactivation by anchoring, Sec71TMD-GFP was progressively depleted from the ER over 60 minutes, reaching levels comparable to rer1\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The control experiments (C109-C111) validate Sec71TMD-GFP as a readout for Golgi-to-ER recycling (Figure 4A). The progressive depletion after COPI anchoring (C118-C119) is clearly documented in Figure 4B-C with quantitative data. This provides strong evidence that anchoring inactivates COPI function in Golgi-to-ER recycling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C195",
+      "C196"
+    ],
+    "result": "COPI inactivation allows general secretion to continue at a reduced level, with differential effects on different proteins. Anchoring COPII completely blocked secretion, while anchoring COPI reduced but did not abolish secretion. The magnitude of inhibition varied for different secreted proteins, ranging from mild to severe. This pattern was consistent whether COPI was inactivated by anchoring Sec21-FRBx2, Ret1-FRBx2, or both.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Pulse-chase data in Figure 5A clearly show complete block with COPII anchoring but partial inhibition with COPI anchoring. The differential effects on individual proteins (C126) are visible in the gel. Figure 5\u2014supplement 3 confirms the pattern with different tagging strategies. The conclusion of a spectrum of effects (C196) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The sec21-3 thermosensitive mutant (F720S) produces similar secretion defects as the anchor-away method. At 37\u00b0C, the sec21-3 mutation had the same effect on general secretion as anchoring Sec21-FRBx2, with varying degrees of inhibition for different proteins. Anchoring COPII completely blocked secretion, confirming that secretion has a more stringent requirement for COPII than for COPI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 6 directly compares sec21-3 and anchor-away effects, showing similar patterns. The DNA sequencing identified the F720S mutation (C130). Growth data confirm the temperature-sensitive phenotype (C131). The comparison validates the anchor-away approach and confirms the differential requirements for COPII versus COPI.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C182",
+      "C183"
+    ],
+    "result": "The sec21-3 mutant shows perturbed Golgi organization even at the permissive temperature, making the anchor-away approach preferable for microscopy. When sec21-3 cells expressing GFP-Vrg4 and Sec7-DsRed were examined at 23\u00b0C, the size of labeled puncta was more variable and a greater fraction of GFP-Vrg4 was in non-punctate structures compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 6\u2014supplement 2 clearly shows the morphological differences between wild-type and sec21-3 at the permissive temperature. This observation supports the conclusion that thermosensitive mutants have limitations (C183) and that anchor-away is preferable for microscopy studies (C138).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C144",
+      "C145",
+      "C146",
+      "C149",
+      "C205"
+    ],
+    "result": "COPI inactivation generates hybrid Golgi structures containing both early and late markers. In untreated cells, early (GFP-Vrg4) and late (Sec7-DsRed) Golgi markers appeared as distinct puncta. After 10 minutes of rapamycin treatment to anchor COPI, labeled structures became fewer and larger, with many showing colocalization of early and late markers. The fluorescence patterns were typically not identical, suggesting partial segregation. Similar results were seen with ribosomal anchors or when using Cog1-GFP as the early marker.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 7A provides clear visual evidence of the transition from separate to overlapping markers after COPI inactivation. The effect is specific to COPI inactivation, as anchoring COPII dispersed Golgi markers rather than causing colocalization (C147-C149). The consistency across different experimental conditions (C144-C145) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Electron tomography reveals that COPI inactivation converts simple curved Golgi cisternae into complex irregularly-shaped membrane compartments. In untreated cells, early and late cisternae were relatively simple curved structures that were not visibly connected. After COPI inactivation, early and late Golgi markers were present in irregularly shaped membrane compartments of various sizes, some closely apposed to mitochondria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 8 and Videos 1-2 provide direct ultrastructural evidence. The correlative fluorescence microscopy and electron tomography approach allows identification of early versus late Golgi membranes. The dramatic morphological change from simple to complex structures after COPI inactivation is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C176",
+      "C177",
+      "C221",
+      "C222",
+      "C223"
+    ],
+    "result": "COPI inactivation selectively blocks recycling of early but not late Golgi proteins. In hybrid structures after COPI inactivation, early and late markers remained associated despite rapid shape fluctuations. Critically, the late Golgi marker Sec7-DsRed disappeared and subsequently returned while GFP-Vrg4 persisted continuously. 4D microscopy confirmed that after COPI inactivation, Golgi structures acquired Sec7-DsRed while failing to lose GFP-Vrg4. This provides the first direct evidence that COPI drives cisternal maturation by recycling early Golgi proteins like Vrg4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C157 are supported by 4D microscopy data in Video 3 and Figure 9. The quantitative analysis of fluorescence dynamics clearly shows persistent Vrg4 with cycling Sec7. C221 is directly supported by the 4D data. The conclusion that this provides direct evidence for COPI's role in maturation (C222-C223) is justified, though the mechanism of Vrg4 recycling (intra-Golgi versus via ER) requires additional investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Kex2 resides primarily in the Golgi rather than cycling through prevacuolar endosomes. Kex2-GFP colocalized strongly with the late Golgi marker Sec7-mCherry but showed very little colocalization with the prevacuolar endosome marker Vps8-mCherry. While some cells showed weak Kex2-GFP signal in prevacuolar endosomes, the major pool was in the Golgi. As a control, Vps10-GFP was present in both late Golgi and prevacuolar endosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 10 provides clear colocalization data with quantification. The control with Vps10 validates that the assay can detect proteins that traffic to prevacuolar endosomes. The minimal Kex2 colocalization with Vps8 (C165) supports the conclusion that Kex2 primarily resides in the Golgi (C167), though a minor prevacuolar endosome pathway cannot be excluded (C168).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "Kex2 recycles within the Golgi with kinetics slightly offset from Sec7. Kex2-GFP both arrived and departed 5-20 seconds before Sec7-mCherry. Analysis of 26 structures that labeled strongly with Kex2-GFP and could be tracked for at least 30 seconds showed that all subsequently acquired Sec7-mCherry, indicating they are late Golgi cisternae. This demonstrates that Kex2 recycles within the Golgi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 11A and Video 6 provide quantitative kinetic data showing the temporal offset. The systematic analysis of 26 structures (C171) documented in Video 7 provides strong evidence that Kex2-labeled structures are late Golgi cisternae (C172). The conclusion that Kex2 recycles within the Golgi (C173) is well-supported, though the molecular mechanism remains to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C243",
+      "C244",
+      "C245"
+    ],
+    "result": "Late Golgi transmembrane proteins can recycle independently of COPI. After COPI inactivation, Kex2-mCherry showed dynamics similar to Sec7-DsRed, with levels alternately rising and falling in structures continuously marked by GFP-Vrg4. Combined with the finding that COPI is concentrated at the early Golgi, this suggests that intra-Golgi recycling of late Golgi transmembrane proteins is independent of COPI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Figure 11C and Video 9 clearly show continued Kex2 cycling after COPI inactivation. The conclusion that late Golgi transmembrane proteins can recycle independently of COPI (C175, C245) is supported by the data, though the identity of the COPI-independent recycling machinery remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204"
+    ],
+    "result": "The model proposes that continued secretion after COPI inactivation occurs through replenishment of ER-to-Golgi SNAREs and export receptors by new protein synthesis. Proteins severely affected by COPI inactivation (\u03b1-factor and carboxypeptidase Y precursors) rely on the ER export receptor Erv29, which recycles via COPI. The model predicts that COPI inactivation slows but does not halt COPII vesicle production, with the rate of ER export for each protein depending on how rapidly its cognate receptor is replenished.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C197-C198 are established facts from prior work. However, C201-C204 are speculative models proposed to explain the data but not directly tested. The model is plausible and consistent with the observations, but lacks direct experimental validation. Testing would require measuring SNARE and receptor synthesis rates, or blocking protein synthesis to see if secretion stops more completely.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212",
+      "C213",
+      "C214"
+    ],
+    "result": "Hybrid Golgi structures formed after COPI inactivation are dynamic and functional for membrane traffic. The structures are very dynamic, and compartments containing early and late markers may exchange material. The hybrid structures have early Golgi character (allowing COPII vesicle delivery) and show relatively normal cycling of late Golgi components (allowing departure to the cell surface). While they may yield altered glycosylation, they remain functional for membrane traffic, explaining how secretion continues after COPI inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dynamic nature (C206) is supported by 4D microscopy data. The functional capacity for secretion (C213) is supported by the pulse-chase data showing continued secretion. The inference that secretory proteins can reach and depart from these structures (C209, C211) is reasonable based on the presence of early and late markers. However, C207 about material exchange is speculative, and C212 about altered glycosylation is cited but not tested here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220",
+      "C224",
+      "C225",
+      "C226"
+    ],
+    "result": "COPI recycles Vrg4 within the Golgi to drive the transition from carbohydrate synthesis to carrier formation stages. Vrg4 marks the carbohydrate synthesis stage while Sec7 marks the carrier formation stage. As a cisterna acquires Sec7, it loses Vrg4, probably by COPI-mediated transport. When COPII was inactivated, GFP-Vrg4 showed no ER accumulation, suggesting COPI recycles Vrg4 within the Golgi rather than via the ER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model (C215-C216) is supported by prior work (citations). The observation that Vrg4 is lost as Sec7 arrives (C218) is established. The evidence that Vrg4 is recycled in COPI vesicles (C219) comes from cited prior work. The key new observation is that GFP-Vrg4 does not accumulate in the ER when COPII is inactivated (C225), supporting intra-Golgi recycling (C226). However, this is indirect evidence; direct visualization of Vrg4 in COPI vesicles would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C227",
+      "C228",
+      "C229",
+      "C230"
+    ],
+    "result": "Sec7 recycles independently of COPI, likely by dissociation and reassociation with membranes. After COPI inactivation, Sec7-DsRed frequently disappeared and reappeared from hybrid structures. The proposed mechanism is dissociation from one cisterna followed by reassociation with a younger cisterna, consistent with the known requirement for activated GTPases for Sec7 recruitment and GTP hydrolysis for release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation that Sec7 continues to cycle after COPI inactivation (C227-C228) is directly supported by 4D microscopy data. The proposed mechanism (C229) is reasonable speculation supported by established knowledge about Sec7 recruitment (C230). However, the mechanism is not directly tested; experiments blocking GTP hydrolysis or measuring Sec7 in the cytosol would provide stronger support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C231",
+      "C232",
+      "C233",
+      "C234",
+      "C235",
+      "C236",
+      "C237",
+      "C238",
+      "C239",
+      "C240",
+      "C241",
+      "C242",
+      "C246",
+      "C247",
+      "C248",
+      "C249",
+      "C250",
+      "C251",
+      "C252",
+      "C253",
+      "C254",
+      "C255",
+      "C256",
+      "C257",
+      "C258",
+      "C259",
+      "C260"
+    ],
+    "result": "The working hypothesis proposes that Golgi maturation involves distinct sequential pathways. At the early Golgi, transmembrane proteins are recycled by intra-Golgi COPI vesicles. At the late Golgi, proteins are recycled by multiple COPI-independent mechanisms: transit through the cytosol (like Sec7), traffic to prevacuolar endosomes and back via retromer (like Vps10), or retrograde transport from older to younger cisternae potentially involving AP-1/clathrin vesicles (like Kex2). Candidates for intra-Golgi recycling include Tlg1, Drs2, Chs3, Pin2, and Kex2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a comprehensive model integrating the current findings with prior literature. The early Golgi COPI recycling (C259) is supported by the data presented. The existence of multiple late Golgi recycling pathways (C260) is supported by the observation that late Golgi proteins continue to cycle after COPI inactivation. However, many specific mechanistic details (C246-C257) are speculative, based on prior literature and analogy rather than direct testing. The model is plausible and provides a framework for future experiments, but requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C261",
+      "C262",
+      "C263",
+      "C264",
+      "C265",
+      "C266",
+      "C267",
+      "C268",
+      "C269",
+      "C270"
+    ],
+    "result": "The authors propose that Golgi compartmentation and COPI-driven cisternal maturation are aspects of the same phenomenon, with Golgi-to-ER recycling as the core COPI function. When COPI is inactivated, compartmentation is lost, and COPI is no longer needed for secretion. While Golgi compartmentation is broadly conserved and thought to provide fine control of glycan assembly, some organisms like microsporidia have non-compartmentalized Golgi but retain COPI, possibly because Golgi-to-ER recycling is always required. Many eukaryotes have adapted COPI for maintaining separate compartments through cisternal maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation that COPI inactivation leads to loss of compartmentation (C261) is well-supported by the data. The inference that compartmentation and maturation are linked (C263) is reasonable. However, the evolutionary speculation (C266-C270) about core versus adapted functions is not directly tested and relies on comparative genomics and inference. The model is intellectually coherent but would require comparative functional studies across organisms to validate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C186",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "The anchor-away system provides advantages over thermosensitive mutants for studying COPI function. Thermosensitive mutants have disadvantages including unknown molecular basis of thermosensitivity, uncertainty about complete inactivation, and potential detrimental effects at permissive temperature. The optimized anchor-away system with ribosomal Rpl13A-FKBPx2 or mitochondrial OM45-FKBPx4 anchors allows rapid and reliable COPI inactivation. However, different components (COPI vs COPII) respond differently, indicating the system needs testing for each target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The limitations of thermosensitive mutants (C178-C181) are well-documented in the literature and confirmed by the sec21-3 analysis. The effectiveness of the anchor-away system (C187-C188) is demonstrated by multiple validation experiments. The observation that different components require optimization (C189-C191) is supported by comparing COPI and COPII results. The conclusion that anchor-away complements thermosensitive mutants is well-justified.",
+    "result_type": "MINOR"
+  }
+]

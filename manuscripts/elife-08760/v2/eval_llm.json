@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Tonic optogenetic activation of TRN rapidly induces local slow wave activity in cortex. Low laser power (<2 mW) produces slow waves in ipsilateral somatosensory cortex (45% of local electrodes vs 6% of distant electrodes), while high laser power (>2 mW) spreads slow waves across larger cortical areas. Delta power increased by 2.56 dB with rapid onset (evident within 1 second), and the effect was replicated in VGAT-Cre mice with viral ChR2 expression and absent in ChR2-negative controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C50 provide converging quantitative evidence from multiple experimental approaches (VGAT-ChR2 mice, viral injections, controls) with appropriate statistical testing. The spatial specificity is demonstrated through systematic electrode mapping at different laser powers, and the rapid onset is quantified with temporal precision. Negative controls (C45) rule out non-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "TRN-induced slow waves produce sleep-like cortical dynamics with phase-locked neuronal OFF periods. Cortical units from electrodes with induced slow waves became strongly phase-locked (median change = 0.044 bits), and neurons spent 13.1% of time in OFF periods (vs 7.04% at baseline), occurring predominantly during slow wave troughs. The cortical response was rapid, with significant suppression within 20 ms and LFP deflection by 35 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C75 provide comprehensive single-unit and LFP analysis demonstrating that induced slow waves have the characteristic features of natural sleep slow waves. The phase-locking analysis (C63-C66), OFF period detection (C67-C70), and temporal dynamics (C72-C74) are well-quantified with appropriate statistical comparisons to baseline and simulated data. The rapid onset (C73-C74) is precisely measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "TRN stimulation suppresses thalamic firing and induces rhythmic oscillations in thalamocortical circuits. Putative thalamocortical units (9/11, 81.8%) decreased firing rates during stimulation, while putative TRN units showed heterogeneous responses (23.5% increased, 58.8% decreased). Both TRN and TC neurons became phase-locked to slow waves, and GLM analysis revealed increased bursting in 63% of TC cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C94 provide detailed characterization of thalamic responses using waveform-based cell type classification (C77-C79), firing rate analysis (C80-C82), and phase-locking measurements (C87-C90). The GLM analysis of spike history (C91-C94) provides mechanistic insight into bursting. However, the waveform-based classification method has limitations and could benefit from additional validation (e.g., optogenetic tagging).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C27",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "TRN activation produces behavioral signs of decreased arousal. EMG power decreased significantly (mean = -0.06) within 1 second of stimulation, motion decreased in 58% of trials, and sleep scoring showed reduced awake time (median = -2.1 percentage points) with increased NREM sleep (median = 3.5 percentage points). EEG and EMG effects were significantly correlated (r = -0.43), and controls showed no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C103 demonstrate behavioral effects through multiple complementary measures (EMG, video motion tracking, sleep scoring). The correlation between EEG and EMG (C97-C98) and negative controls (C99) strengthen the conclusion. However, the behavioral effects are modest in magnitude, and the authors acknowledge this reflects TRN as one component of a redundant arousal control system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "TRN bidirectionally modulates cortical slow wave activity. Halorhodopsin-mediated inhibition of TRN during NREM sleep reduced delta power (change = -0.45 dB), while ChR2-mediated stimulation during NREM increased delta power (0.62 dB) and decreased spindle power (median = -0.80 dB), suggesting a shift toward deeper sleep stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C109 demonstrate bidirectional control through complementary optogenetic approaches. The shuffled control (C105) rules out spontaneous awakenings. However, the effect size of inhibition is modest, which the authors attribute to incomplete inhibition and redundant arousal circuits. The interpretation of deeper sleep stages (C109) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "During isoflurane anesthesia, TRN stimulation modulates existing slow waves rather than inducing new ones. Delta power and slow wave frequency did not increase, but broadband power decreased (-0.53 dB), OFF period duration increased (4.02 percentage points), cortical unit phase-locking increased (median = 0.06 bits), and firing rates decreased (median = -0.09 Hz).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C118 demonstrate state-dependent effects of TRN stimulation. The lack of delta power increase (C110-C111) contrasts with awake effects, while the increased OFF periods and phase-locking (C113-C115) show modulation of existing dynamics. The interpretation (C118) is well-supported by the data pattern. This provides important mechanistic insight into TRN's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "TRN-induced slow waves maintain similar phase relationships to baseline cortical dynamics. Phase-locking values remained significantly above chance during stimulation, mean phase offsets did not change significantly (baseline = 0.10 rad, stimulation = 0.15 rad, p=0.45), and phase lags were strongly correlated across conditions (R = 0.93).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 provide detailed phase relationship analysis demonstrating that TRN stimulation does not fundamentally alter cortical synchronization patterns. The strong correlation of phase lags (C57) and lack of significant phase offset changes (C56) are well-quantified. The comparison to anesthesia studies (C59) provides useful context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C44",
+      "C45"
+    ],
+    "result": "ChR2 expression in VGAT-ChR2 mice is preferentially localized to TRN, and the slow wave effect is specific to ChR2 expression. Histology confirmed preferential TRN expression, viral injections in VGAT-Cre mice replicated the effect, and ChR2-negative littermates showed no slow wave induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C44, C45 provide essential validation of the optogenetic approach through histology and appropriate controls. The replication in viral injection mice (C44) and negative controls (C45) rule out non-specific effects. This is critical methodological validation but not a primary scientific finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "TRN provides rapid modulation of cortical arousal state with onset within tens of milliseconds. Cortical suppression occurs within 20 ms and LFP deflection within 35 ms of laser onset, suggesting TRN can serve as a fast-acting circuit for arousal control compatible with neuromodulatory pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C135 quantify the temporal dynamics and place findings in context of known arousal circuits. The rapid onset measurements (C131) are well-supported by the data in C72-C74. The integration with neuromodulatory circuits (C134) is appropriately cited. This represents an important temporal characterization of the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Tonic versus phasic TRN activation produces qualitatively different sleep oscillations. Tonic activation induces slow waves without affecting spindle power in awake mice, while in sleeping mice it increases slow waves and decreases spindles. Previous work shows phasic activation induces spindles during NREM but not awake states, suggesting temporal dynamics of TRN input control different arousal states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C142 synthesize current findings with prior work (C138, C141) to propose a mechanistic framework. The data on tonic stimulation effects (C136-C137) are well-supported. However, the mechanistic speculation about bursting vs. hyperpolarization (C140) lacks direct experimental support in this study. The overall framework is reasonable but partially speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Slow waves may be generated through TRN-mediated inhibition of thalamic input to cortex, requiring coordinated activity of cortical, TRN, and TC neurons. The absence of slow wave induction during anesthesia (when T-type calcium channels are blocked) and evidence from thalamic anesthetic infusions suggest thalamus contributes to slow wave generation, with hyperpolarization but not complete suppression being key.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C143-C155 present a mechanistic model synthesizing current findings with prior literature. While the observation about anesthesia (C148) is data-supported, the overall mechanism remains speculative. The model is consistent with available evidence but alternative explanations (C153-C154) are acknowledged. Direct causal evidence for the proposed thalamocortical coordination mechanism is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "TRN neurons exhibit heterogeneous firing properties during sleep and optogenetic stimulation, potentially reflecting multiple cell types or microcircuit organization. Previous studies show some TRN neurons increase firing during NREM while others decrease, and most exhibit bursting locked to slow waves. The heterogeneous responses to optogenetic stimulation may reflect cell type diversity or intra-TRN inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C156-C161 discuss heterogeneity in TRN responses but are largely speculative (C159-C160). The observations of heterogeneous firing (C82) are data-supported, but the mechanistic explanations lack direct experimental evidence. The citations to prior work (C156-C158) provide context but don't resolve the underlying mechanisms. This represents an important open question requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "TRN activation may contribute to the mechanism of GABAergic anesthetics like propofol. Propofol increases low-frequency EEG power in humans, and as a GABA-A agonist, it could enhance TRN and brainstem inhibition of thalamus. Decreased thalamic activity is implicated in disorders of consciousness and may be important for general anesthesia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C162-C168 propose clinical relevance to anesthesia but are largely speculative. The citations about propofol effects (C163-C164) and thalamic involvement in consciousness (C166-C167) are from prior work. The connection to current findings is plausible but indirect. The anesthesia experiments (C110-C118) show TRN can modulate anesthetized states but don't directly test propofol mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "TRN acts as one element of a redundant arousal control circuit. The modest effect of TRN inhibition on sleep slow waves and the small behavioral arousal changes during stimulation reflect that multiple brainstem nuclei also inhibit thalamus during NREM sleep. TRN may provide spatially selective fine-tuning of local arousal while brainstem structures control global sleep-wake states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C175 provide a balanced interpretation of the modest effect sizes observed in behavioral experiments. The integration with known brainstem arousal circuits (C170) is well-cited. The proposed complementary roles of TRN (local) and brainstem (global) (C174-C175) is a reasonable synthesis of the findings, though the specific functional division remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C6",
+      "C33",
+      "C34"
+    ],
+    "result": "TRN can selectively induce slow waves in local cortical regions and control oscillatory dynamics in local thalamocortical circuits, serving as a spatially selective mechanism for rapid modulation of cortical arousal. The spatial characteristics and rapid timescale (<50 ms) demonstrate that local thalamocortical oscillations are a central mechanism for arousal modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121, C6, C33-C34 represent the main conclusions synthesizing the experimental findings. These are well-supported by the convergent evidence from spatial mapping (C46-C52), temporal dynamics (C72-C75), thalamic recordings (C76-C94), and behavioral measures (C95-C103). The conclusions appropriately acknowledge both the demonstrated effects and remaining uncertainties.",
+    "result_type": "MAJOR"
+  }
+]

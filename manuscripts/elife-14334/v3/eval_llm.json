@@ -1,0 +1,514 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C15",
+      "C16",
+      "C17",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "TissueMiner is a multiscale analysis toolkit that provides a database format for storing cellular connectivity and geometry information, along with computational tools for interrogating the database and performing multi-scale analysis of epithelial morphogenesis. The toolkit enables quantification and visualization of cell state properties and dynamics from individual cells to entire tissues in a fast, easy, and flexible manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4, C5, C15-C17, and C125-C128 collectively describe the core capabilities and design of TissueMiner. These claims are consistently supported by the detailed methodological descriptions throughout the manuscript, including the database structure (Figure 6), workflow implementation (Figure 7), and multiple demonstrations of its analytical capabilities (Figures 1-5). The toolkit's versatility and expandability are demonstrated through concrete examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The manuscript establishes the need for TissueMiner by noting that while segmentation and tracking tools have become available, methods to store and interrogate large datasets are not widely available, and recently developed methods for relating tissue shape changes to cell dynamics have not been widely applied due to technical complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C10-C14 establish the scientific context and motivation for developing TissueMiner. These claims are supported by multiple citations to existing work (C10, C13) and represent reasonable assessments of the field's state. The claims about limited availability and technical complexity (C2-C3, C14) are substantiated by the authors' subsequent development of accessible tools with extensive documentation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "TissueMiner analyzes epithelial morphogenesis in three steps: (1) cell segmentation and tracking using TissueAnalyzer, (2) automated extraction and storage of information in a relational database, and (3) querying the database using R and Python tools to visualize data and compare cell properties across movies and tissue regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C38 describe the three-step workflow of TissueMiner, which is clearly illustrated in Figure 1\u2014figure supplement 1 and detailed throughout the Materials and methods section. The integration of TissueAnalyzer (C31-C34), database creation (C35-C36), and query tools (C37-C38) is well-documented with specific examples and references to tutorials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "TissueMiner's automated workflow reads three configuration files containing user-defined ROIs, time offsets for movie synchronization, and rotation angles for tissue alignment. The toolkit provides a Fiji macro for defining ROIs that can be tracked forward and backward in time, and automatically generates 'raw' and 'whole_tissue' ROIs, with the latter filtering out margin cells to ensure consistent cell populations throughout movies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C59 describe the ROI definition and filtering methodology, which is demonstrated in Figure 1 and Videos 1-2. The filtering approach (C56-C58) is justified by the observation that segmentation quality drops near margins (C57). The ability to define ROIs at any timepoint (C49-C50) is a notable feature demonstrated with wing vein examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "TissueMiner provides tools for temporal alignment of movies through manual definition of time corrections relative to a reference movie, which can be estimated based on morphological landmarks or by aligning curves of cell state quantities. A Fiji macro assists users in finding optimal rotation angles for spatial alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 describe the movie alignment procedures, which are essential for comparing multiple datasets. The methods are clearly described and demonstrated in Video 3 (C63). The flexibility to use either morphological landmarks or quantitative features for temporal alignment (C61-C62) is appropriate for different experimental scenarios.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "TissueMiner calculates and visualizes cell area and elongation patterns. Analysis reveals that cells in the proximal hinge and wing veins have smaller cross-sectional areas at the end of pupal wing blade elongation. Cell elongation, characterized by nematic tensors, shows that inter-vein cells are more elongated than vein cells at 22 hAPF, but this pattern reverses by 31 hAPF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C71 describe cell area and elongation analysis capabilities and specific findings in the Drosophila wing. The observations are well-supported by Figure 2 and Videos 4-6, which show clear spatial and temporal patterns. The use of nematic tensors for elongation (C66) is properly cited to Aigouy et al. (2010), and both fine-grained and coarse-grained visualization methods are demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Quantitative comparison of vein and inter-vein regions reveals that vein cells contract over a longer period and have smaller cross-sectional areas at the end of morphogenesis. Vein cells also elongate and relax their elongation more slowly than inter-vein cells, suggesting different mechanical properties between these cell populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C79 present comparative analysis of cell dynamics in different wing regions, supported by Figure 2E-F. The findings build on previous work (C72-C73, C76 cite Etournay et al., 2015) and extend it with regional comparisons. The inference about different mechanical properties (C79) is reasonable given the observed differences in elongation dynamics (C77-C78).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Cell division patterns correlate with wing veins: most wing blade cells divide once during pupal morphogenesis, while cells in specific inter-vein regions (adjacent to L3, L4, L5, and posterior to L5) divide twice. The median cell-cycle length between division rounds is 5.25 \u00b1 1.50 hr. Divisions in ventral veins (L2, proximal L4) occur earlier than in dorsal veins (L3, distal L4, L5), suggesting autonomous control by vein-associated signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C88 describe detailed cell division patterns supported by Figure 3 and Videos 8-9. The quantitative measurements (C84) provide specific timing information. The spatial and temporal patterns (C85-C87) are clearly visualized, and the inference about autonomous signaling control (C88) is reasonable given the precise correlation with vein identity. However, C88 is speculative and would require additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "TissueMiner quantifies cell division orientation using unit nematic tensors defined by the line connecting daughter cell centers. For T1 transitions, the toolkit identifies gained and lost cell contacts by comparing neighbor relationships between consecutive frames, excluding changes due to division, extrusion, or cells moving in/out of view. Contact gains and losses are characterized by nematic tensors whose sum represents effective T1 transitions describing net directionality of contact assembly/disassembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C101 describe the methodology for quantifying division orientation and T1 transitions. The approach is clearly illustrated in Figures 3 and 4, with the nematic representation allowing cancellation of non-effective transitions (C100). The method appropriately handles complex scenarios including multiple rounds of contact changes (C93) and rosette formation (C94).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The rate of contact gain and loss decreases in the second half of morphogenesis in both vein and inter-vein regions. The orientation of effective T1 transitions shifts from the anterior-posterior axis early in development to the proximal-distal axis in the second half of morphogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 describe temporal dynamics of T1 transitions, supported by Figure 4C and Figure 4\u2014figure supplement 1A. The shift in T1 orientation is clearly visualized and consistent with the tissue's morphogenetic program. These findings align with previous work cited in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "TissueMiner decomposes tissue deformation into isotropic (area changes) and anisotropic (pure shear) components. Tissue area changes are calculated from cell area changes and cell number changes due to divisions and extrusions. The Triangle Method, based on triangular tiling of the junctional network, quantifies cellular contributions to anisotropic deformation, accounting for divisions, rearrangements, extrusions, cell shape changes, and correlations between elongation and both area change and rotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 describe the deformation analysis methodology, which is illustrated in Figure 5 and detailed in Materials and methods. The Triangle Method is properly cited to previous work (Etournay et al., 2015; Merkel et al., 2016). The approach provides a comprehensive decomposition of tissue deformation into cellular contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "TissueMiner captures tissue isotropic expansion and pure shear rates, along with corresponding cellular contributions, with good precision in computer-generated movies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 is validated by the analysis of computer-generated movies (Videos 12-13, Figure 5\u2014figure supplement 1) where imposed deformation rates are accurately recovered. The measured values (3.53 \u00b1 0.04 \u00d7 10\u207b\u00b2 for expansion, 1.74 \u00b1 0.02 \u00d7 10\u207b\u00b2 for shear) closely match the imposed values, demonstrating the method's precision. This validation is essential for establishing confidence in the toolkit's measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Analysis of pupal wing deformation reveals that while the blade area changes little overall, inter-vein expansion compensates for vein compression. Vein cells divide less and decrease their area more than inter-vein cells. The wing blade shears along its proximal-distal axis between 16-32 hAPF, with T1 transitions and cell elongation as major contributors. Tissue shear peaks earlier in inter-vein regions but is greater overall in veins, reflecting a different relationship between cell elongation and T1 transitions where PD-oriented T1s produce more shear but fail to relax cell elongation as effectively in veins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C124 present comprehensive analysis of wing deformation supported by Figure 5 and Figure 5\u2014figure supplements 2-3. The findings build on previous work (C112, C115-C119 reference Etournay et al., 2015) and extend it with regional comparisons. The observation about differential T1 behavior in veins versus inter-veins (C122-C124) is a novel finding supported by the data, though the mechanistic interpretation (C122) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Comparing cell dynamics in veins and inter-vein regions reveals that vein narrowing (vein refinement) results from a convergent extension-like process that is stronger in veins than in inter-vein regions, elongating and narrowing veins without reducing vein cell number. This contradicts the previous interpretation that vein refinement results from signaling-dependent reduction in cells assuming vein fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C141-C145 present a major biological finding that reinterprets vein refinement. The convergent extension mechanism (C144-C145) is well-supported by the quantitative analysis of shear (Figure 5E-F) showing greater cumulative PD shear in veins. This directly contradicts the previous model (C143, citing Blair 2007) and is supported by the observation that vein cells undergo more shear without reducing cell number. This is a significant conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The authors provide tutorials guiding users through TissueMiner's capabilities and release an automated workflow that performs most analysis and visualization tasks previously reported for Drosophila pupal wings. The tutorials operate using one small example dataset and three large wild-type datasets, and all code, tutorials, and datasets are publicly available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 describe the documentation and data resources provided with TissueMiner. The availability of tutorials, automated workflows, and example datasets is essential for tool adoption and reproducibility. The public availability (C21) is stated and referenced to Box 1, supporting the claims about accessibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The TissueMiner database format standardizes tracked cell data organization, collecting all data into a single file per movie. This standardization facilitates data sharing and cross-laboratory reproducibility. The database stores positional information about cells and cell contacts plus cell neighbor topology, potentially useful for parameterizing vertex model simulations. The relational database scheme is expandable, allowing additional properties to be appended without affecting existing relationships or query tools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C134 describe the database design and its benefits. The standardization (C129-C130) and expandability (C133-C134) are well-documented in Figure 6 and Figure 6\u2014figure supplements. The potential application to vertex models (C132) is reasonable speculation given the stored information (C131). The expandable design is a significant advantage for future development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "TissueMiner leverages R and Python's advanced graphical capabilities for visualization of deformation patterns and cell state properties. R provides a flexible grammar for manipulating database tables and plotting graphs. The toolkit offers multiple coarse-graining options through an expandable script library, giving flexibility to address both general and project-specific questions while enabling automation, parallelization, and workflow customization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C139 describe the software implementation choices and their benefits. The use of R and Python is well-justified by their capabilities (C136, citing Wickham 2009 and Francois & Wickham 2015). The flexibility and expandability (C137-C139) are demonstrated through the various analysis examples throughout the manuscript. The choice of widely-used languages enhances accessibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "TissueMiner uses TissueAnalyzer to segment and track cells, producing digital images containing cell geometry, topology, and history information. This information is extracted and converted into the TM-DB relational database format. The database stores cell histories (including appearance/disappearance reasons and lineage relationships), time information, and geometrical/topological information in tables for cells, bonds, vertices, and directed_bonds. The relational structure establishes contextual relationships between items, and the standardized format facilitates automated data mining, visualization, and data/tool exchange.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C181 provide detailed description of the database structure and implementation, thoroughly documented in Figure 6 and Figure 6\u2014figure supplements 1-2. The relational database design (C174-C177) is standard practice and well-explained. The correspondence to vertex model entities (C166) is appropriate. The benefits of standardization (C180-C181) are logical consequences of the design. The technical implementation is sound and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "TissueMiner implements an automated pipeline using the Snakemake workflow engine that builds the database and performs downstream analyses from TissueAnalyzer output. Snakemake automatically determines execution order, provides error recovery and job control, and supports HPC environments. The workflow can run on various architectures without modification. A Docker image simplifies installation, and advanced users can run analyses directly from command-line with or without Snakemake, enabling simultaneous analysis of multiple movies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C195 describe the workflow automation and deployment options. The use of Snakemake (C183-C191, citing Koster & Rahmann 2012) is well-justified and illustrated in Figure 7. The Docker deployment (C192-C193) addresses installation complexity. The flexibility for different user levels (C194-C195) enhances accessibility. The workflow design supports reproducibility and scalability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212",
+      "C213"
+    ],
+    "result": "TissueMiner provides command-line tools in R and Python for comparing results across movies. R tools are designed for use in RStudio and organized following data manipulation grammar principles. Generic 'multi-query functions' (mqf) are organized into fine-grained (cellular level, prefixed 'mqf_fg_') and coarse-grained categories (ROI and grid, prefixed 'mqf_cg_roi_' and 'mqf_cg_grid_'). A 'multi-db-query' tool streamlines mqf application across movie sets. All mqf tools generate tables for tissue visualization or graphing, are detailed in the TM R-User Manual, and can be extended for project-specific questions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C196-C213 describe the query tool library and its organization. The hierarchical organization (C199-C206) provides appropriate granularity for different analysis needs. The naming conventions (C202, C205-C206) facilitate tool discovery. The extensibility (C213) is important for adapting to new questions. The documentation (C212) and examples throughout the manuscript demonstrate the tools' capabilities. The design is well-thought-out and user-friendly.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220",
+      "C221",
+      "C222",
+      "C223",
+      "C227",
+      "C228",
+      "C229",
+      "C230",
+      "C231"
+    ],
+    "result": "TissueMiner implements methods for detecting neighbor changes by comparing cell-neighbor relationships between consecutive frames, categorizing changes as due to divisions, extrusions, or 'half-T1s' (contact gains/losses). The toolkit processes lineage information into directed graphs to infer lineage groups and generation numbers, and tracks ROIs through time by browsing lineage graphs. To improve ROI spatial continuity, lost cells within ROIs are reassigned using connected component analysis, assuming the largest non-ROI component represents surrounding tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C214-C220 and C221-C223, C227-C231 describe algorithmic details for neighbor change detection and lineage tracking. The methods are technically sound, with appropriate handling of edge cases (C218-C219). The lineage graph approach (C221, citing Nepusz 2006) is standard. The ROI continuity improvement method (C227-C231) addresses practical issues with cell tracking, though the assumption about the largest component (C231) may not always hold in complex tissue geometries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C232",
+      "C233",
+      "C234"
+    ],
+    "result": "For single cell property analysis, TissueMiner uses the cell elongation definition from Aigouy et al. (2010), which differs from the triangle-based definition also used in the toolkit. However, both definitions yield very similar results for the fruit fly wing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C232-C234 acknowledge the use of two different elongation definitions and note their consistency in the specific application. The citation to Aigouy et al. (2010) for the cell-based definition (C232) is appropriate. The observation that both methods give similar results for the wing (C234) provides confidence in the findings, though this consistency may not hold for all tissue types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Live imaging experiments used the knock-in Ecad::GFP fly line, with flies maintained at 25\u00b0C during imaging using a temperature-controlled, humidified chamber. Long-term time-lapse imaging followed previously described protocols, and flies were maintained in humid conditions post-imaging until eclosion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C150 describe the experimental methods for live imaging. The fly line (C147, citing Huang et al. 2005) is appropriate for visualizing cell boundaries. The imaging conditions (C148) are standard for Drosophila. The reference to previous protocols (C149, citing Etournay et al. 2015) is acceptable. The post-imaging care (C150) demonstrates that imaging did not prevent normal development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Wing veins are specified during larval stages but become morphologically distinct during prepupal and pupal morphogenesis. During pupal morphogenesis, dorsal and ventral wing surfaces become apposed basally except in vein regions where a lumen forms. Vein cells differ from inter-vein cells in having narrower apical cross-sections and forming corrugations. The cell dynamics underlying vein morphogenesis have never been quantitatively examined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 provide biological background on wing vein development. These are established facts about Drosophila wing development (C22-C28) that set the context for the study. The statement that vein cell dynamics have not been quantitatively examined (C29) establishes novelty and is supported by the lack of prior quantitative studies in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C140"
+    ],
+    "result": "The authors previously quantified spatial and temporal distributions of cell state properties and dynamic cellular events in pupal wings, quantitatively accounting for wing shape changes based on cellular events and developing a multiscale physical model showing how epithelial stresses and cell dynamics interact to reshape the pupal wing. The tools underlying TissueMiner were originally developed for this work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 and C140 describe the authors' previous work (Etournay et al., 2015) that motivated TissueMiner's development. These claims accurately represent the prior publication and establish the foundation for the current toolkit. The progression from project-specific tools to a generalized framework is a natural and valuable development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C146"
+    ],
+    "result": "The standardization of analysis that TissueMiner provides will facilitate comparisons critical for deciphering molecular mechanisms underlying epithelial morphogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C146 is a forward-looking statement about TissueMiner's potential impact. While the standardization provided by TissueMiner (as demonstrated throughout the manuscript) logically should facilitate comparative studies, the actual impact on the field cannot be assessed from the current manuscript alone. This is a reasonable expectation but remains to be validated by future adoption and use.",
+    "result_type": "MINOR"
+  }
+]

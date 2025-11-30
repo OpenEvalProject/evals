@@ -1,0 +1,372 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C29",
+      "C30",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C45",
+      "C46",
+      "C47",
+      "C51",
+      "C52",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The study developed and applied a novel approach using antibody repertoire sequencing with unique molecular barcodes to reconstruct clonal histories of B cell lineages in 22 healthy human twins. The method achieved deep sampling (~154,000 unique sequences per subject belonging to ~34,000 clonal lineages) with high resolution (99.2% identity between parent-child sequences), enabling direct measurement of ~142,000 class switch events without requiring ancestral inference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C26, C29-C38, C40, C45-C47, C51-C52, C58-C63 collectively describe a well-validated methodological approach. The use of unique molecular barcodes (C36), deep sequencing coverage (C37, C71-C73), multiple validation approaches (C64-C70), and biological replicates (C40-C42, C83) provide strong evidence for the technical rigor and reproducibility of the measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C31",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The study identified a two-tiered hierarchy of class switch pathways where na\u00efve classes (IgM/IgD) predominantly switch to proximal classes (IgG3, IgG1, IgA1; ~85% of switches), and these proximal classes subsequently switch to distal classes (IgG2, IgG4, IgA2). IgG1 and IgA1 serve as central intermediates, with most downstream classes produced via indirect switches rather than direct switches from IgM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C31, C74-C82, C122-C124 describe the primary finding with strong quantitative support. The hierarchical organization is supported by specific percentages (C75: ~85% of IgM switches to IgG1/IgA1/IgG2; C78: ~92% of IgG1 switches to IgA1/IgG2; C80: ~65% of IgA2 from IgA1/IgG2), reproducibility across biological replicates (C83), and consistency across subjects (C85-C88).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C108",
+      "C109",
+      "C144",
+      "C145"
+    ],
+    "result": "Closely related B cells (\u22642 mutations from common progenitor) exhibit highly concordant class switch fates, with this coordination dissipating as somatic mutations accumulate, becoming indistinguishable from unrelated cells after ~10 somatic mutations. This correlation was statistically significant (p values 6\u00d710\u207b\u2075 to 1.1\u00d710\u207b\u00b9\u2078\u2076) compared to shuffled controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C101-C109, C144-C145 describe a novel finding with strong statistical support. The use of Yule's Q to quantify concordance, comparison to shuffled controls (C102), multiple validation approaches (C105-C107), and reproducibility across biological replicates provide robust evidence. The timescale of ~10 mutations is consistently reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C146",
+      "C147",
+      "C149"
+    ],
+    "result": "In vitro culture of purified CD19+ IgM+ B cells (99.6% purity, 97% IgM/IgD) with CD40L, IL-4, and IL-10 recapitulated the concordance in class switch fates observed in vivo, with closely related sequences (\u22642 substitutions) showing highly significant tendency to switch to the same class (p values 5\u00d710\u207b\u2074 to 5\u00d710\u207b\u00b2\u2078). This demonstrates that coordination is an autonomous property of B cells independent of the in vivo environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C110-C120, C146-C147, C149 describe in vitro validation with strong experimental controls. High purity of starting populations (C111-C112), absence of class-switched pairs in starting material (C117), and statistical significance (C116) support the conclusion that correlations are cell-autonomous. However, the correlations were slightly weaker in vitro than in vivo (C151), suggesting potential enhancement by cellular interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Na\u00efve classes (IgM/IgD) accumulated significantly more mutations before CSR to activated classes (4.1\u00b16.7 mutations) compared to CSR between activated classes (2.5\u00b14.3 mutations; p=1.8\u00d710\u207b\u2074\u2075). The distributions fit exponential distributions, suggesting CSR is a memory-less process, with rate constants of ~0.37 mutation\u207b\u00b9 for na\u00efve-to-activated switches versus ~0.60 mutation\u207b\u00b9 for activated-to-activated switches (p<1.5\u00d710\u207b\u2074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C100 describe quantitative findings with strong statistical support and reproducibility across biological replicates (C98). The exponential distribution fit (C94) provides theoretical justification for rate constant estimation. The authors acknowledge potential underestimation for IgM switches (C99), which strengthens rather than weakens the conclusion about differential rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C134"
+    ],
+    "result": "The class switching landscape is highly reproducible across biological replicates separated by 28 days and broadly conserved across healthy young adult subjects, with variation between subjects similar in magnitude to variation between biological replicates of the same subject.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88, C134 demonstrate reproducibility and conservation with quantitative support from Jensen-Shannon distance measurements (C87) and visual evidence from figures. The temporal invariance (C84) is an inference supported by the 28-day replicate data but would benefit from longer time courses to fully establish.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C136",
+      "C137",
+      "C140",
+      "C141"
+    ],
+    "result": "Class switching patterns of identical twins are no better correlated than unrelated individuals, indicating that CSR regulation involves substantial environmental or stochastic influences rather than genetic predisposition. Non-heritable factors likely include exposure to pathogens or microbes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90, C136-C137, C140-C141 describe findings about heritability with appropriate statistical analysis and citation to supporting literature (C90: Brodin et al., 2015). The conclusion about environmental factors is well-supported, though the specific mechanisms (C137, C141) remain speculative as acknowledged by the use of 'likely' in the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C164"
+    ],
+    "result": "The data suggest a model where CSR is directed by a transient epigenetic state involving inheritance of germline transcripts and chromatin modifications that persists for ~10 somatic mutations. This provides a mechanism for coordinating cellular behavior through epigenetic inheritance rather than signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C153, C158, C164 are explicitly speculative models ('suggest', 'propose') based on the observed correlations. While supporting evidence exists (C154-C156: established mechanisms; C157: unpublished single-cell data; C159: demonstrated epigenetic inheritance), the direct mechanistic link between these phenomena and the observed ~10 mutation timescale (C160) requires additional experimental validation. This is appropriate speculation for a Discussion section but not yet demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Multiple validation approaches confirm the accuracy of the class switching measurements: ~35,000 sequence pairs with identical VDJ but different classes (proven not to be PCR artifacts by unique barcodes) show patterns correlating extremely well with the full repertoire (R\u00b2=0.98); rarefaction analysis shows saturation; and 99.9% consistency in ancestor class detection across biological replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C73 describe comprehensive validation with multiple independent approaches. The use of unique molecular barcodes to exclude PCR artifacts (C65), correlation analysis (C67), filtering approaches (C68-C69), shuffling controls (C70), rarefaction analysis (C71-C72), and replicate consistency (C73) provide strong evidence for measurement accuracy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The study identifies ten previously unreported class switch transitions. With possible exception of IgE, any transition permitted by immunoglobulin locus geometry is observed in healthy humans, supporting the view that CSR machinery is intrinsically stochastic with probabilistic preferences rather than strict rules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 describe novel transitions with reference to Table 4 and comparison to published literature. The conclusion about stochastic machinery (C133) is a reasonable inference from the diversity of observed transitions, though the characterization of 'probabilistic preferences' versus 'strict rules' is somewhat qualitative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The findings are consistent with previous studies in mice showing sequential switching and in humans showing increasing mutations in downstream IgG subclasses. The current study provides more direct evidence through examination of clonal histories with mixed isotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C128 appropriately contextualize the findings relative to prior work with proper citations. The statement about providing 'more direct evidence' (C128) is justified by the methodological advantages described in C56.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "Undersampling of ancestors, estimated at 0.1-5% depending on subject using Chapman estimator, is a limitation that can affect measurements of switch rates between rare classes but does not affect the study's conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 appropriately acknowledge a methodological limitation with quantitative assessment. The statement that this 'does not affect any of the conclusions' (C130) is reasonable given the focus on major pathways and the use of multiple validation approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The tree reconstruction approach enables direct measurement of class switching without inferring ancestral states, avoiding challenges associated with the complex mutational spectrum of somatic hypermutation. PCR and sequencing errors minimally affect measurements as they rarely change class and terminate tree branches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 describe methodological advantages with appropriate comparison to previous approaches (C56 cites Barak et al., 2008). The reasoning about error impact (C54-C55) is sound given that class determination depends on constant region sequences which are less affected by point mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Class distributions and V gene usage are highly similar across biological replicates separated by 28 days, demonstrating measurement reproducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 describe basic reproducibility with reference to figures showing high correlation (Figure 1\u2014figure supplement 7: R\u00b2=0.99 for V gene usage). This is essential validation but represents expected technical reproducibility rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C151",
+      "C152"
+    ],
+    "result": "In vitro correlations were slightly weaker than in vivo, suggesting cellular interactions might enhance sibling correlations. The culture experiments used heterogeneous starting populations including na\u00efve and memory B cells, leaving lineage-specific characteristics for future work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C152 appropriately acknowledge limitations and suggest interpretations. The observation of weaker in vitro correlations (C151) is a legitimate finding, though the interpretation about cellular interactions remains speculative. The acknowledgment of heterogeneous starting populations (C152) is an important caveat.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C43",
+      "C44",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Background claims establish that class switching is essential for immune function, occurs during germinal center maturation, involves genomic recombination that is irreversible and directional, and is regulated by cytokine signals and epigenetic modifications. Prior to this study, in vivo patterns in living humans remained uncharacterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C11-C25, C43-C44, C48-C50 represent established knowledge appropriately cited or describe the knowledge gap addressed by the study. These provide necessary context and are well-supported by citations to published literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C138",
+      "C139",
+      "C142",
+      "C143",
+      "C150",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "The study demonstrates how somatic mutations can serve as a molecular clock for reconstructing cell genealogies and characterizing cell state dynamics. This approach has broader implications for studying phenotypic correlations in other systems and provides a reference for comparing altered immune states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28, C138-C139, C142-C143, C150, C161-C163 discuss broader context and implications. The methodological contribution (C143) is well-demonstrated. Future applications (C142, C161, C163) are reasonable speculation. Comparisons to other systems (C150, C162) are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "The study was conducted with appropriate ethical approval on 22 healthy human twins aged 18-28 (11 males, 11 females), with zygosity determined by short tandem repeat analysis at 18 loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C169 describe study design and ethical compliance. These are straightforward methodological details that are appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Across individuals, the most abundant class was IgM (75%), followed by IgG1 (10%) and IgA1 (8%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 reports basic descriptive statistics with reference to Figure 1\u2014figure supplement 4A and Table 1. These measurements are straightforward and well-documented.",
+    "result_type": "MINOR"
+  }
+]

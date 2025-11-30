@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C63",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Optogenetic stimulation of the whisker pad in Emx1-Cre;Ai27D mice induces whisker movements through activation of ChR2 expressed in intrinsic and extrinsic muscles. Histological analysis revealed ChR2/tdTomato expression in intrinsic sling muscles and extrinsic muscles (M. nasolabialis profundus), with highest fluorescence in intrinsic muscles. Rostral pad illumination evoked protraction while caudal-inferior illumination evoked retraction, with no ChR2 expression detected in sensory nerves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C21-C30 are well-supported by converging histological (Figure 1C-D) and functional (Figure 1B, videos) evidence. The spatial mapping of movement types to stimulation locations is consistent with known muscle anatomy (C8, C27, C66-C67). The absence of sensory nerve expression (C28) is documented histologically and supports the interpretation that movements arise from direct muscle activation (C30, C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Optogenetically evoked whisker protractions show parametric relationships with stimulus intensity, duration, and frequency. Protraction amplitude increased approximately linearly with light intensity (1.3-10.3 mW) to a maximum of 11.4\u00b11.2 degrees, with a consistent latency of 13.5\u00b10.3 ms. Amplitude increased with stimulus duration, saturating beyond ~60 ms, and showed strong adaptation at frequencies above 2-28 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 are supported by systematic quantitative measurements in n=4 mice (Figure 2B-D). The linear intensity-response relationship, duration-dependent saturation, and frequency adaptation are well-documented with appropriate controls. However, the sample size is modest and two mice showed saturation at submaximal power (C32), suggesting some biological variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Peripheral optogenetic stimulation evokes robust S1 responses with longer latency than mechanical stimulation. S1 spiking and LFP amplitude increased with stimulus duration (steep 1-20 ms, moderate 20-100 ms) and were similar in magnitude to mechanical deflection responses. However, optogenetic stimulation showed 10.8\u00b10.1 ms longer latency, attributable to the delay in whisker movement initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 are supported by electrophysiological recordings from n=3 mice with statistical analysis (Figure 3). The latency difference (C41) is well-quantified (p<1\u00d710\u207b\u2075) and the interpretation (C42-C43) is reasonable given the measured whisker movement latency of 11.9\u00b10.8 ms. The consistency with histological data (C44) strengthens the conclusion that activation is via muscle rather than nerve.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Mice can learn to detect peripheral optogenetic stimulation in a behavioral task, with performance improving from d'=0.7\u00b10.1 to 2.3\u00b10.4 through maintained hit rate and decreased false alarm rate. Detection threshold was ~5 ms stimulus duration, similar to thresholds for evoked whisker movements and S1 activity in anesthetized mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are supported by behavioral data from n=4 mice with statistical analysis (Figure 4B-C). The learning curve shows significant improvement (p=0.017, paired t-test). The correspondence between behavioral, movement, and neural thresholds (C49) provides convergent validity. However, two mice required salt water punishment (C46), and overall performance remained modest due to sustained FA rate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Visual stimulation was not a salient cue for task performance, and optogenetic S1 stimulation was sufficient to substitute for peripheral stimulation in trained mice. Lick rate for visual catch trials (0.37\u00b10.07) was significantly lower than peripheral stimulation (0.87\u00b10.04), while S1 stimulation produced lick rates not significantly different from peripheral stimulation but significantly greater than false alarms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are supported by behavioral control experiments with appropriate statistics (Figure 4D). The visual control (C50-C51) rules out a confound, though sample size is small (n=2 mice, 75 trials). The S1 substitution experiment (C52-C54) uses repeated measures ANOVA with n=4 mice and shows S1 stimulation can drive detection, supporting the role of S1 in reafferent perception.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C55",
+      "C56",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Whisker protractions evoked by optogenetic muscle activation result in sensory perception through reafferent signaling. Four lines of evidence support this: (1) whiskers must move before S1 signals arrive (10 ms latency difference), (2) similar stimulus-duration dependencies across movement, neural, and behavioral measures, (3) visual stimulation insufficient for task performance, and (4) S1 stimulation sufficient to substitute for peripheral stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C55-C56, C91-C95 represent the main conclusion integrating multiple experimental findings. The four lines of evidence (C92-C94) converge to support reafferent signaling as the mechanism. The latency analysis (C92) is quantitative, the psychometric correspondence (C49) is compelling, and the control experiments (C93-C94) rule out alternative explanations. This is a well-supported integrative conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C71",
+      "C74",
+      "C79"
+    ],
+    "result": "The relative contributions of intrinsic versus extrinsic muscles to evoked protractions remain unclear, though spatial patterns may reflect muscle morphology. The restricted light spot (2-3 mm) may explain smaller amplitudes compared to artificial whisking, and differences in recruited muscle groups may explain stronger adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C69, C71, C74, C79 acknowledge limitations and offer speculative explanations. C68 explicitly states uncertainty about muscle contributions. C69, C71, C74, and C79 are plausible hypotheses but lack direct experimental support. These represent honest acknowledgments of what the current data cannot resolve and suggest directions for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C72",
+      "C73",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Optogenetically evoked protractions show smaller amplitude (11.4 vs 20 degrees) and stronger frequency adaptation than artificial whisking. This adaptation is unlikely due to ChR2 desensitization and is consistent with activation of rapidly fatiguing type 2B muscle fibers that predominate in intrinsic muscles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C78 compare optogenetic with artificial whisking using literature citations. The amplitude difference (C70, C72) is documented, and the adaptation pattern (C72-C73) is clear from Figure 2D. The mechanistic interpretation (C75-C78) is reasonable: C75 cites evidence against ChR2 desensitization, and C76-C77 cite muscle fiber composition studies. The inference (C78) connecting adaptation to fiber type is logical but indirect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Two mice required salt water punishment to reduce impulsive responding, and d' remained below other studies due to sustained FA rate (~0.2). The reason for sustained FA rate is unclear but may relate to motivation or hydration levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 honestly report behavioral training challenges. C88-C89 are factual descriptions of training outcomes with appropriate citations to similar methods. C90 acknowledges uncertainty and offers speculative explanations with citation. This transparency about methodological challenges and performance limitations is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background on active sensing, whisker system anatomy, reafferent signaling pathways, and limitations of artificial whisking paradigm. Establishes that peripheral optogenetic stimulation has not been previously used to investigate whisker movements, motivating the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C20 provide literature context with appropriate citations. These are established facts about the whisker system (C6-C13), existing methods (C14-C17), and prior optogenetic work (C18-C19). C20 establishes novelty of the approach. All claims are well-supported by citations and represent accurate characterization of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Emx1-Cre;Ai27D mice express ChR2 in both peripheral muscles and cortical neurons, enabling combined peripheral and central optogenetic experiments. Peripheral Cre expression is known in other driver lines (Chat-Cre, PV-Cre), though functional properties of peripheral expression in Emx1-Cre;Ai27D had not been previously characterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62, C99-C103 describe the mouse model and broader context of Cre driver lines. All claims are supported by appropriate citations (C60-C62, C99-C102) or by the current study's demonstration (C57). C58 notes a practical benefit. C103 establishes novelty. The characterization of other Cre lines (C59-C62) is accurate and well-cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The study provides methodological advantages over artificial whisking (non-invasive, awake animals) and enables investigation of reafferent signaling with controlled stimuli. Previous behavioral studies tested afferent input, while this task tests reafferent input from self-generated movement. Potential applications include sensorimotor integration studies and therapeutic models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C80-C87, C96-C98 discuss advantages, context, and applications. C80-C87 accurately characterize the methodological advance and distinguish reafferent from afferent studies with appropriate citations (C81). C64, C96-C98 are speculative about future applications but are reasonable extrapolations. These claims appropriately frame the significance and potential impact of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "PV-Cre;Ai27D mice show ChR2/tdTomato expression in follicular nerves, contrasting with Emx1-Cre;Ai27D mice where expression is in muscle but not nerve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 is supported by histological data in Figure 1\u2014figure supplement 2 and citation to Sakurai et al. 2013. This control demonstrates that the absence of nerve expression in Emx1-Cre;Ai27D is specific to that line and not a general property of the Ai27D reporter. This strengthens the interpretation that movements in Emx1-Cre;Ai27D arise from muscle activation.",
+    "result_type": "MINOR"
+  }
+]

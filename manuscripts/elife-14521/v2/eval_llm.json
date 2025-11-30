@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Participants showed high comprehension accuracy across all conditions, with significantly higher accuracy when visual and auditory stimuli were congruent compared to incongruent conditions. Interestingly, performance in the AV congruent condition (with interfering auditory input) was not significantly different from the All congruent condition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 report behavioral results with appropriate statistical tests (paired t-tests with multiple comparisons). The data show expected patterns of audiovisual congruence effects on comprehension, with proper reporting of means, standard errors, test statistics, and p-values. The finding that AV congruent performance matched All congruent despite interference is appropriately noted as interesting and attributed to attentional compensation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Lip movement signals during continuous speech are dominated by low-frequency components (0-7 Hz, peaking at 0-4 Hz) and show significant coherence with acoustic speech signals at syllable rate frequencies (4-8 Hz), demonstrating temporal coupling between auditory and visual speech components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 describe spectral and coherence analyses of lip signals with appropriate methodology. The power spectrum analysis (C17) and coherence analysis between lip and sound signals (C18) are standard signal processing approaches. The conclusion about temporal coupling (C19) is appropriately inferred from the coherence data shown in Figure 2B-C.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Lip movements during continuous speech entrain brain oscillations in visual, auditory, and language areas bilaterally at low frequencies (1 Hz). This entrainment is distinct from auditory speech entrainment, with significantly stronger lip entrainment in bilateral visual areas and stronger sound speech coherence in right superior temporal gyrus. Visual entrainment persists even in the absence of congruent auditory stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C20-C26 demonstrate lip movement entrainment using coherence analysis with appropriate controls (surrogate data from time-shifted signals). The statistical comparisons between lip and sound entrainment (C23) and the demonstration of visual entrainment without congruent auditory input (C25) provide strong evidence for distinct visual entrainment mechanisms. FDR correction for multiple comparisons is appropriately applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C28",
+      "C62"
+    ],
+    "result": "Attending to visual speech enhances coherence between lip movements and brain activity in left visual cortex at 4 Hz. This attention-modulated coupling is significantly stronger in the AV congruent condition compared to both All congruent condition and surrogate data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27-C28, C62 demonstrate attention modulation of lip entrainment using partial coherence analysis to remove auditory contributions. The ROI-based analysis in visual cortex (C27) with frequency-specific testing and appropriate statistical comparisons supports the conclusion. The left-lateralization (C62) is consistent with cited literature on visual speech processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Left motor cortex shows significant entrainment to lip movements that is independent of auditory speech signals (demonstrated by partial coherence analysis). This motor cortex entrainment is modulated by both attention and congruence, with systematic increases when visual speech is more informative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 demonstrate motor cortex entrainment using both coherence and partial coherence analyses. The partial coherence approach (C30) appropriately removes auditory contributions to isolate lip-specific effects. The systematic modulation by attention shown in Figure 3B-D with graded t-values (3.42 > 3.20 > 2.24) provides strong evidence for attention effects, though the All congruent comparison (C31, Figure 3D) only reaches significance at uncorrected p<0.05.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Partial coherence between left motor cortex and lip movements at 4 Hz directly predicts comprehension accuracy. Individuals with higher comprehension show higher partial coherence (Pearson R=0.38, p=0.01; Spearman R=0.32, p=0.03), and good performers show significantly higher partial coherence than poor performers (t42=2.2, p=0.03).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C42-C46 establish a brain-behavior relationship using multiple complementary analyses: regression analysis (C42), correlation across individuals (C43-C44), and group comparison (C45). The use of both parametric (Pearson) and non-parametric (Spearman) correlations on Fisher Z-transformed data is appropriate. The convergence of results across different analytical approaches strengthens the conclusion, though the modest correlation coefficients (R~0.3-0.4) suggest motor entrainment is one of multiple factors influencing comprehension.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Visual entrainment is clearly distinct from auditory entrainment based on three lines of evidence: differential regional strength (visual areas show stronger visual than auditory entrainment), persistence after removing auditory contributions via partial coherence, and presence in the absence of congruent auditory stimuli. This establishes a visual entrainment mechanism for audiovisual speech that relies on the quasi-rhythmic nature of lip movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 synthesize multiple findings to establish the distinctness of visual entrainment. The three lines of evidence cited (C52) are each supported by data presented earlier (C23, C30, C25). The conclusion about a distinct visual entrainment mechanism (C53) is appropriately conservative and well-supported. The mechanistic interpretation about quasi-rhythmic lip movements (C54) is reasonable given the spectral analysis showing dominant low-frequency components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Coherence analysis reveals an extensive network of speech processing areas showing entrainment to lip movements, including bilateral V1, A1, extended sensory areas, pSTS, and IFG. Visual areas show significantly stronger visual than auditory entrainment, while right superior temporal cortex shows stronger coupling to speech envelope than lip movements, with no significant difference in left superior temporal cortex, suggesting visual speech predominantly entrains left temporal areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 describe the spatial distribution of entrainment effects with appropriate anatomical localization. The hemispheric asymmetry findings (C57-C58) are based on statistical comparisons and are consistent with cited fMRI literature (C59). However, the inference that visual speech 'predominantly' entrains left temporal areas (C58) is somewhat speculative given that the key finding is the absence of a significant difference in left STG rather than a positive demonstration of left-lateralized visual entrainment in temporal cortex.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The observed left-lateralization of attention-modulated visual entrainment could be explained by an attentional bias to the right visual hemifield (left side of speaker's face), which is represented in left visual cortex and has been related to left hemisphere dominance for speech processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C65 propose an explanation for the left-lateralized visual entrainment based on cited literature about preferential processing of the left side of a speaker's face. While the cited studies (C63-C64) support the existence of such biases, the connection to the current findings (C65) is speculative. The study did not directly test visual field biases or manipulate which side of the face was attended, so this remains a plausible but unverified interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Temporal alignment of auditory cortex activity to lip movements is not independent of the congruent acoustic speech stimulus, as evidenced by the absence of effects in partial coherence maps. However, lip movement informativeness still modulates coherence in right temporal areas and pSTS, indicating indirect effects of visual attention. The pSTS findings are consistent with its role as a locus of multisensory integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 appropriately distinguish between coherence and partial coherence results to infer that auditory cortex entrainment to lip movements is mediated by the acoustic signal rather than being direct. The interpretation that pSTS shows multisensory integration effects (C68-C69) is well-supported by the pattern of results and consistent with cited literature. This demonstrates appropriate caution in interpreting coherence versus partial coherence findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Motor cortex entrainment establishes precise temporal coupling between audiovisual inputs and sensory/motor areas that could coordinate neuronal computations for speech processing. Motor areas may provide access to an internal forward model of speech via the dorsal auditory pathway, where sensory signals constrain the model to simulate the speaker's motor program and predict upcoming events, facilitating audiovisual speech processing through predictive control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C33-C41 present a theoretical framework for interpreting the motor cortex findings, heavily relying on cited literature about forward models, efference copy, and predictive processing. While the motor entrainment findings (C32) are well-supported, the mechanistic interpretations (C33-C36, C39-C41) are largely speculative. The cited studies (C37-C38) provide some support for motor-auditory interactions, but the specific claim that visual speech constrains a forward model (C36) goes beyond what the current data demonstrate. These are plausible interpretations but remain hypotheses requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C47",
+      "C71",
+      "C72"
+    ],
+    "result": "This study provides the first direct evidence that lip movements entrain low-frequency brain oscillations in speech processing areas, that this entrainment is modulated by attention and congruence, and that motor region entrainment correlates with comprehension. The findings support a model where rhythmic audiovisual signals entrain multisensory brain areas and interact with internal forward models to form dynamically updated predictions that improve sensory processing and support inter-human communication efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C47, C71-C72 summarize the main conclusions. The core empirical findings about lip entrainment, attention modulation, and behavioral correlations (C47) are well-supported by the data. The broader theoretical model (C71) is a reasonable synthesis of the findings with existing literature, though it remains somewhat speculative. The claim about inter-subject synchronization (C72) is highly speculative as the study only examined within-subject brain-stimulus synchronization, not between-subject synchronization. Despite the speculative elements, the core empirical contributions are solid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The study used 44 participants (after excluding 2) who were native English speakers, right-handed, aged 18-30 years. MEG data were acquired at 1017 Hz with 248 magnetometers. Stimuli were 7-9 minute audiovisual video clips of continuous speech, professionally filmed and validated for comprehension difficulty across talks, with no significant differences between groups attending to left versus right ear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C81 describe the methods with appropriate detail. The sample size (n=44) is reasonable for MEG studies. The stimulus validation procedure (C79-C80) is thorough, ensuring comparable difficulty across talks. The exclusion criteria (C74) are appropriate. The counterbalancing of attended ear (C81) with no group differences supports pooling data. However, the study could have benefited from reporting power analyses to justify sample size.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Area information (representing both horizontal and vertical lip movement) and minor axis information (vertical movement) show nearly identical coherence approaching 1.0, while major axis information (horizontal movement only) shows different patterns. Area information was therefore used for analysis as it captures both dimensions of lip movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 justify the choice of lip area as the primary measure through coherence analysis between different lip movement parameters. The finding that area and minor axis are highly coherent while major axis differs (C82-C83) supports using area as a comprehensive measure (C84). This methodological validation is appropriate, though the study could have also reported results using minor axis to confirm robustness.",
+    "result_type": "MINOR"
+  }
+]

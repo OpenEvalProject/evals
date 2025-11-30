@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "A systematic genetic screen of ~80% of the Drosophila second chromosome identified 36 chromosomal regions affecting DA3 muscle development, which were classified into generic myogenesis defects (9 genes) and muscle identity defects (15 genes). The identity class included components of EGF-R, Notch, and Robo/Slit signaling pathways, as well as seven transcriptional regulators (aop, edl, eya, noc, so, salm, tup) representing potential new muscle identity transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screen methodology is clearly described (C27, C38) with appropriate sample sizes (>100 embryos in duplicates per claim in methods). The classification into generic vs. identity defects is supported by phenotypic data (C40-C41), and validation through complementation assays confirms gene identification (C42-C49). The finding that spi/Star mutants lack DA3, DO5, DO4, and LL1 muscles (C48) validates EGF-R's central role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Mutant analysis revealed distinct muscle identity transformation phenotypes for each transcription factor: aop mutants showed DA3>DA2 transformations with malformed DT1 and LL1 muscles; edl mutants displayed DA2>DA3 transformations; eya mutants lost DA3 Col expression at the PC stage with severe DL muscle disorganization; noc mutants showed DA3>DT1 transformations with Col expression lost after the PC stage; and so mutants exhibited ectopic Col expression in DO5 with partial DO5>DA3 transformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Each mutant phenotype is supported by multiple lines of evidence including Col immunostaining, \u03b23-tubulin staining, and colLCRM-moeGFP reporter expression (C53-C67). Quantitative data are provided (e.g., 2/3 of segments for aop, n=123; 79/116 segments for so). The temporal distinction between eya (loss at PC stage, C59) and noc (loss after PC stage, C64) is particularly well-documented. \u03b2PS integrin staining confirmed these are identity rather than tendon defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "High-resolution 3-D analysis revealed previously undescribed low-level Nau/MyoD expression in 2-3 cells surrounding each PC being selected, which overlaps with dpMAPK expression indicating cells transitioning from PMC to PC fate. FISH experiments showed aop is transcribed in Col PMC cells but repressed in PCs, while edl shows the opposite pattern (expressed in PCs but not PMC cells), revealing sequential, complementary transcription patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The discovery of low-level Nau expression in PMC cells (C71) is supported by 3-D imaging and confirmed by double staining with dpMAPK (C73). The complementary expression patterns of aop and edl (C74, C77, C78) are demonstrated by FISH with intronic probes, providing temporal resolution. The interpretation that aop promotes FCM fate is supported by prior literature (C75-C76) and consistent with the expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "aop and edl have opposite effects on the timing of PC selection: aop mutants show premature, concomitant selection of multiple PCs (including DA3/DO5) at stage 10 with increased Nau-positive cells, while edl mutants show delayed DA2/AMP PC selection with no high Nau-expressing apical cell at stage 10. These timing defects prefigure the observed muscle identity transformations (DA3>DA2 in aop; DA2>DA3 in edl).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The opposing phenotypes are well-documented with quantitative 3-D reconstruction data: aop mutants show 21/27 PMCs with 2 apical PCs vs. 30/35 with 1 in wt (C81); edl mutants show 30/37 segments with no apical PC at stage 10 (C83). Col transcription patterns (C79, C84-C85) and statistical analysis of Nau domain size (C80, with p<0.0001) provide strong support. The link between timing and identity (C82) is a logical inference from the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The timing of PC selection determines Tin inheritance levels, which in turn controls muscle identity through differential activation of tup or col feed-forward loops. In aop mutants, early-selected PCs inherit Tin and transcribe tup, while in edl mutants, late-selected PCs lack Tin and do not transcribe tup. This demonstrates that timely PC selection is essential for establishing distinct DA2 vs. DA3 identities through Tin-dependent bistable switches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Tin staining directly demonstrates differential inheritance in mutants (C90-C91), and tup transcription mirrors this pattern (C94-C95). The conclusion that timing controls identity through Tin-dependent bistability (C96-C97) integrates current data with prior work on Tin regression and tup/col autoregulation. The bistable system concept is supported by citations to relevant literature (Graham et al., 2010; Park et al., 2012). However, the mechanism could benefit from additional quantitative analysis of Tin threshold levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Drosophila eya produces three isoforms through alternative transcription start sites, with eya-RA/RC expressed in PMCs and PCs, and eya-RB expressed later in the AMP, DO5 FC, and LL1/DO4 PC. eya-RA/RC is required for sustained col transcription during PC specification, and Eya and Col positively regulate each other's transcription, forming a feed-forward loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The isoform-specific expression is demonstrated by FISH with exonic (eyae) and intronic (eya-RBi) probes (C99-C100), with the complementary pattern for eya-RA/RC inferred logically (C101). Loss-of-function analysis shows premature loss of col in eya mutants at the DA3/DO5 PC stage (C104), and reciprocal loss of both eya isoforms in col mutants (C106), supporting mutual positive regulation (C107). The temporal shift in TSS (C102) correlates with RNA Pol II binding profiles from prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "so is transcribed in DA2/AMP, DA3/DO5, and LL1/DO4 PCs but maintained only in DO5 FC and muscle, where it represses col transcription. The differential phenotypes of eya and so mutants, combined with Six4 mutant analysis, demonstrate that Eya partners with Six4 to positively regulate col in PCs, but partners with So to negatively regulate col in DO5 FCs, revealing distinct roles for different Six proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The expression pattern of so is clearly documented by FISH (C108), and functional analysis shows col is normal in DL PCs of so mutants (C109) but ectopically expressed in DO5 FC (C110). The partnership model is supported by comparing eya, so, and Six4 mutant phenotypes (C112-C113), with Six4 mutants showing Col loss similar to eya mutants. The conclusion of distinct Six4 vs. So roles (C115) is well-supported, though the molecular mechanism of the Eya-So repressive interaction requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "noc is transcribed in Col PMC cells and DA2/AMP, DA3/DO5, and LL1/DO4 PCs, but not in DT1/DO3 PC. In noc mutants, col transcription is lost from DA3 FC, and S59 is ectopically expressed in DA3 FC, causing DA3>DT1 transformation. This reveals a double-negative regulatory cascade (noc represses S59, S59 represses col) that maintains col transcription and DA3 identity, distinguishing DA3 from DT1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The expression pattern is documented by FISH (C120), and the temporal loss of col in noc mutants (C121-C122) is distinct from eya mutants. The key finding of ectopic S59 in DA3 FC of noc mutants (C124) is supported by immunostaining. Gain-of-function experiments (Twi>S59) demonstrate S59 can repress col (C126), and loss-of-function shows ectopic col in DT1 of S59 mutants (C127). The double-negative cascade model (C129) integrates these data with prior work on the Col\u2192S59 incoherent feedforward loop, providing a mechanistic explanation for the DA3>DT1 transformation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C132",
+      "C131"
+    ],
+    "result": "Kr expression in the LL1/DO4 PC requires both noc and eya activity, but not aop or col, demonstrating combinatorial control of iTF expression and the intricate wiring of transcriptional networks specifying muscle identities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The requirement for noc and eya is demonstrated by loss of Kr expression in these mutants, while Kr is maintained in aop and col mutants (C132). This is supported by immunostaining data (Figure 6\u2014figure supplement 2) and prior work (C131). The result illustrates the combinatorial nature of iTF regulation, though the sample sizes and statistical analysis are not explicitly provided for this specific claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "aop and edl regulate the robustness of sequential PC selection by controlling EGF-R signaling: Aop restricts EGF-R MAPK activity to prospective PCs, preventing premature selection, while Edl ensures timely progression of primed cells to stable PC fate. Proper regulation of these EGF-R effectors is required for both the correct number and temporal sequence of PC selections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conclusion synthesizes the mutant phenotype data (C145, C147) with prior knowledge of EGF-R signaling (C146, supported by Carmena et al., 2002). The interpretation that Aop restricts signaling and Edl promotes progression is consistent with their expression patterns and the observed timing defects. The general principle (C148) is well-supported, though the molecular mechanisms by which Edl promotes PC fate stability could be further elaborated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C153",
+      "C158"
+    ],
+    "result": "The observation of increased Nau-positive cells in aop mutants reveals that Nau/MyoD is expressed in myoblasts primed to PC fate, raising the possibility that Nau could play earlier functions than previously thought in the PC specification process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation of Nau in primed cells is well-documented (C153), but the speculation about earlier Nau function (C158) is not directly tested. While the finding is novel and interesting, functional experiments (e.g., temporal manipulation of Nau activity, analysis of Nau mutants at these early stages) would be needed to determine whether Nau actually plays a functional role in PC priming vs. simply being expressed in these cells as a consequence of EGF-R signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C159",
+      "C160"
+    ],
+    "result": "EGF-R control of serial PC selection converts the temporal information encoded by Tin levels into sharp transcriptional decisions and distinct muscle identities. The positive autoregulation of tup and col after the PC stage explains how small differences in initial expression levels are transformed into stable, bistable muscle fates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion (C159) is supported by the combined data on PC selection timing, Tin inheritance, and tup/col expression patterns presented in this study, along with prior work on tup and col autoregulation (C160, citing Enriquez et al., 2010; Boukhatmi et al., 2012, 2014). The bistability model provides a mechanistic explanation for fate stability. However, the claim would be strengthened by quantitative modeling or direct measurement of the autoregulatory dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "One eya isoform (eya-RB) is transcribed later than other isoforms (eya-RA/RC) due to a TSS switch, correlating with RNA Pol II binding profiles. The authors hypothesize that Eya switches from activator to repressor by changing partners from Six4 to So, and that sequential partnering of different Eya isoforms and Six proteins contributes to the diversity of iTF codes and muscle morphologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The temporal shift in eya isoform expression is well-documented (C167), and the functional data support different roles for Six4 and So. However, the hypothesis that Eya switches from activator to repressor by changing partners (C168) and that different isoforms partner with different Six proteins (C169) is speculative. Direct biochemical evidence of isoform-specific protein-protein interactions and their functional consequences would be needed to support this model. The correlation with Pol II binding is suggestive but not definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "Distinguishing between DA3, DA2, DT1, and DO5 identities involves specific sequences of transcriptional regulations integrating temporal and positional cues through intricate positive and negative regulatory loops. The observation of incomplete transformations in iTF mutants supports a combinatorial model where stereotypy relies on multiple iTFs rather than lineage-specific 'master iTFs', with context-dependent activation of target genes through multiple cis-regulatory elements providing robustness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The integrative conclusion (C171-C172) is well-supported by the comprehensive characterization of five iTFs and their regulatory interactions presented in this study. The observation of incomplete transformations (C173) is documented in the results, and the inference that this supports combinatorial rather than master regulator control (C174) is logical. The conclusions about context-dependent gene activation (C175-C176) are supported by prior work cited. The speculation about robustness (C177) is reasonable but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "noc is required for distinguishing DA3 from DT1 identities through a double-negative loop where Noc represses S59, which in turn represses col. noc integrates multimodal signaling (EGF-R) and positional inputs (Hox), as it is transcribed in myoblasts controlled by EGF-R signaling but not in the DT1/DO3 PC specified by abdominal Hox proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The primary finding that noc distinguishes DA3 from DT1 (C135) is well-supported by the mutant phenotype and molecular analysis. The double-negative regulatory loop (C136-C138) is demonstrated by expression and functional data. The integration of multimodal inputs (C139-C141) is supported by the expression pattern and prior work on Hox control of DT1/DO3 PC (Enriquez et al., 2010). This represents a clear mechanistic advance in understanding how positional information is integrated with temporal cues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "The conserved mesodermal transcription factors identified in this study (Nkx2.5, Eya, Six1, Islet1, Col/Ebf, MyoD) are core components of networks controlling pharyngeal/facial muscle development in chordates. The authors speculate these TFs could combinatorically control muscle regional diversity in vertebrates and have been co-opted in different regulatory wirings during evolution to generate muscle lineage diversity across the animal kingdom.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The conservation of these TFs in chordate muscle development (C178) is established knowledge. However, the speculation that they combinatorically control vertebrate muscle regional diversity (C179) and have been co-opted in different wirings during evolution (C180) is not directly tested in this study. While the Drosophila data provide a proof-of-principle for combinatorial control, extending this to vertebrates and evolutionary diversification requires comparative functional studies in other organisms. The speculation is reasonable but remains a hypothesis for future work.",
+    "result_type": "MINOR"
+  }
+]

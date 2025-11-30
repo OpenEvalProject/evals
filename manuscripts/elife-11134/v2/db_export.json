@@ -1,0 +1,2305 @@
+{
+  "submission": {
+    "id": "b5145459-4f69-414a-924c-7f5a198a9604",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:33:32.607612Z",
+    "updated_at": "2025-11-29T21:33:32.607612Z"
+  },
+  "content": [
+    {
+      "id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "submission_id": "b5145459-4f69-414a-924c-7f5a198a9604",
+      "content_type": "manuscript",
+      "content_text": "# cryo-EM structures of the E. coli replicative DNA polymerase reveal its dynamic interactions with the DNA sliding clamp, exonuclease and \u03c4\n\n## Authors\n\n- Rafael Fernandez-Leiro<sup>1</sup> ([ORCID: 0000-0002-7941-0357](https://orcid.org/0000-0002-7941-0357))\n- Julian Conrad<sup>1</sup>\n- Sjors HW Scheres<sup>1</sup> ([ORCID: 0000-0002-0462-6540](https://orcid.org/0000-0002-0462-6540)) \u2020\n- Meindert H Lamers<sup>1</sup> \u2020\n\n### Affiliations\n\n1. MRC Laboratory of Molecular Biology Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe replicative DNA polymerase PolIII\u03b1 from Escherichia coli is a uniquely fast and processive enzyme. For its activity it relies on the DNA sliding clamp \u03b2, the proofreading exonuclease \u03b5 and the C-terminal domain of the clamp loader subunit \u03c4. Due to the dynamic nature of the four-protein complex it has long been refractory to structural characterization. Here we present the 8 \u00c5 resolution cryo-electron microscopy structures of DNA-bound and DNA-free states of the PolIII-clamp-exonuclease-\u03c4c complex. The structures show how the polymerase is tethered to the DNA through multiple contacts with the clamp and exonuclease. A novel contact between the polymerase and clamp is made in the DNA bound state, facilitated by a large movement of the polymerase tail domain and \u03c4c. These structures provide crucial insights into the organization of the catalytic core of the replisome and form an important step towards determining the structure of the complete holoenzyme.\n\n## Introduction\n\nIn Escherichia coli, DNA replication is highly efficient with speeds of up 600\u20131000 nucleotides per second (Mok and Marians, 1987; Mcinerney et al., 2007), >100,000 basepairs (bp) synthesized per binding event (Yao et al., 2009), and an error rate of \u223c1 per million (Bloom et al., 1997). Importantly, DNA replication is greatly complicated by the antiparallel orientation of the two DNA strands that need to be replicated simultaneously. To do so, DNA replication is performed by a large multi-protein complex termed the DNA polymerase III holoenzyme that synthesizes the leading strand in a continuous manner, while the lagging strand is synthesized in short fragments of \u223c1000 bp. The holoenzyme is composed of 10 subunits (\u03b1, \u03b2, \u03b5, \u03b8, \u03b4, \u03b4', \u03b3, \u03c4, \u03c7, \u03c8), that together with the helicase DnaB and the RNA primase DnaG form the replisome with a combined molecular weight of 1\u00a0MDa. The replisome can be divided into three functional subcomplexes that together catalyze a series of events. The helicase DnaB separates the two DNA strands (Mok and Marians, 1987) and transiently associates with the RNA primase DnaG that synthesizes short RNA primers required for DNA synthesis at the lagging strand (Wu et al., 1992). The clamp loader subcomplex (\u03b4, \u03b4', \u03b3, \u03c4, \u03c7, \u03c8) loads the DNA sliding clamp \u03b2, the processivity factor for the DNA polymerase, onto the DNA (Stukenberg et al., 1991). It furthermore connects the leading and lagging strand polymerases via its \u03c4 subunits (McHenry, 1982; Onrust et al., 1995). Finally, DNA synthesis is performed by the polymerase subcomplex that contains the DNA polymerase III \u03b1 (PolIII\u03b1), the DNA sliding clamp \u03b2, the proofreading exonuclease \u03b5, and the C-terminal domain of the clamp loader subunit \u03c4. The activity of PolIII\u03b1 is poor in isolation (Maki and Kornberg, 1985) and is greatly enhanced by its associated proteins. For error-free DNA synthesis the polymerase relies on the exonuclease \u03b5 that removes any misincorporated bases and decreases the error rate of DNA replication by 1\u20132 orders of magnitude (Scheuermann et al., 1983; Lancy et al., 1989). In addition, the exonuclease strengthens the interactions between the polymerase and clamp as it binds both proteins simultaneously (Toste R\u00eago et al., 2013; Jergic et al., 2013). For processivity, PolIII\u03b1 binds to the DNA sliding clamp (\u03b2 subunit) (Stukenberg et al., 1991). At the leading strand this interaction is stable and results in DNA segments of >100.000 bp synthesized per binding event (Yao et al., 2009). At the lagging strand in contrast, DNA synthesis is discontinuous, with an averaged length of 1000 bp synthesized per fragment, depending on the frequency of the RNA primase activity (Wu, Zechner and Marians, 1992). This therefore requires repeated binding and release of the polymerase and clamp. Finally, the C-terminal domain of \u03c4 (\u03c4c) acts as a 'processivity switch' for the polymerase to enable repeated binding and release at the lagging strand (Leu et al., 2003; Georgescu et al., 2009). How this tetrameric complex of PolIII\u03b1-clamp-exonuclease-\u03c4c assembles and how it is repeatedly loaded and released during lagging strand synthesis is poorly understood.\n\nThe structures of the helicase-primase subcomplex (Bailey et al., 2007; Wang et al., 2008) and the clamp loader subcomplex (Jeruzalmi et al., 2001; Simonetta et al., 2009) have been known for some time. The structure of the PolIII\u03b1-clamp-exonuclease-\u03c4c complex on the other hand has remained elusive due to its dynamic nature that forms a significant hurdle for structure determination. To overcome this, we have used a combination of site directed mutagenesis and computational classification of different structural states to determine the cryo-EM structures of the complex in both a DNA-bound and a DNA-free state to 8\u2009\u00c5 resolution. The well defined features of the cryo-EM maps enable the unambiguous fitting of the crystal structures of the individual proteins, revealing the unique interactions between the four proteins and DNA. In the DNA-bound complex, the polymerase is tethered to the DNA through multiple contacts with the clamp. The interaction with the clamp is further stabilized by the exonuclease that is wedged between the two proteins and forms a second, indirect interaction between polymerase and clamp. Strikingly, a large conformational change in the polymerase switches its tail domain from interacting with the clamp in the DNA-bound structure, to more than 30\u2009\u00c5 away from the clamp in the DNA-free structure. Finally, the processivity switch \u03c4c binds the tail of the polymerase and appears to sequester the polymerase tail away from the clamp in the DNA-free structure. Hence, our structures provide crucial insights into the regulation of the replicative DNA polymerase PolIII\u03b1 by its associated proteins clamp, exonuclease and \u03c4c. They furthermore form a crucial step towards determining the structure of the complete DNA polymerase III holoenzyme.\n\n## Results\n\n### Structure determination of the PolIII\u03b1-clamp-exonuclease-\u03c4500 complex\n\nThe interaction between PolIII\u03b1 and the clamp is weak, in the order of 1 \u03bcM (Toste R\u00eago et al., 2013), and is not sufficient to maintain an intact complex at the low concentrations used for cryo-EM. Therefore, to stabilize the complex we altered the sequences of the clamp binding motifs of PolIII\u03b1 and the exonuclease to increase the affinity for the clamp. For this we used sequences derived from the translesion DNA polymerase UmuC and the DNA replication initiation factor Hda that out of a panel of 15 peptide sequences were the most potent inhibitors of the interaction between the polymerase and clamp (Wijffels et al., 2004) (see Materials and methods for more details). The obtained complex is >100 fold more stable than the wild-type complex (Figure 1\u2014figure supplement 1A) This stabilized complex of PolIII\u03b1, clamp and exonuclease was used together with \u03c4500 (the polymerase-binding domain of \u03c4: residues 500\u2013643) and a 25 base pair (bp) DNA substrate to prepare samples for cryo-EM (Figure 1\u2014figure supplement 2A,B). Three structurally distinct groups of particles could be identified from a single data set (63,215 particles). Two of these represent the PolIII\u03b1-clamp-exonuclease-\u03c4500 with and without DNA bound (Figure 1, Videos 1 and 2). The third class contains DNA too, but in this complex the tail domain of the polymerase and \u03c4500 are not visible due to structural heterogeneity. The DNA-bound (5663 particles) and DNA-free (16,970 particles) structures were refined to 8.0 and 8.3\u2009\u00c5 resolution, respectively (see Figure 1\u2014figure supplement 2 for details). The remaining particles (40,582) were classified into the third class in which the tail domain is not visible. Due to the larger number of particles, this structure was refined to 7.3\u2009\u00c5 resolution. As this structure is otherwise identical to the complete DNA-bound complex, it will not be discussed further.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/11134/elife-11134-fig1-v2.jpg)\n\n**Figure 1.:** (A) Surface representation of the three structures, shown at 5 \u03c3. Left to right: DNA-free, DNA-bound, and DNA-bound without tail. Colors indicate the position of the different proteins (B) Individual structures of PolIII\u03b1, clamp, exonuclease, and \u03c4500 fitted into the cryo-EM map (shown in grey at 5 \u03c3) (C) Detailed views of the cryo-EM map (shown in grey mesh at 6 \u03c3). Left panel: exit channel of the clamp in the DNA-free structure showing the \u2018DNA-free\u2019 map. Middle panel: bottom view of the polymerase showing the \u2018DNA-free\u2019 map. Right panel: detail of the DNA showing the \u2018DNA-bound, no tail\u2019 map. See also Videos 1 and 2.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11134/elife-11134-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Gel filtration analysis of the wild-type PolIII\u03b1-clamp-exonuclease complex (top panel) and the PolIII\u03b1QLDLF-clamp-exonucleaseQLSLPL complex (lower panel). The wild-type complex dissociates at lower protein concentrations, while the stabilized complex remains intact even at 0.1 \u03bcM.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11134/elife-11134-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Typical micrograph of the PolIII\u03b1-clamp-exonuclease-\u03c4500-DNA complex. (B) 2D class averages derived from the final 63,215 particle dataset (C) Fourier shell correlation for the DNA-free and DNA-bound models. In solid lines, the correlation between two independently refined halves of the data is indicated (gold-standard FSC). Estimated resolution at a correlation of 0.143 is 8.3 \u00c5 and 8.0 \u00c5 for the DNA-free and DNA-bound complex, respectively. In dashed lines, the correlation between the rigid-body docked models and their respective maps is indicated. (D) 3D model reconstruction. An initial model was obtained using Eman2 and subsequently classified into six 3D classes. Two of the 3D classes were merged into the \u2018DNA-free\u2019 map (16,970 particles) and one of these (5663 particles) was used for the \u2018DNA-bound\u2019 map. The remaining three classes were merged into the \u2018DNA-bound, no tail\u2019 map (40,582 particles) and further refined in Relion, resulting in three structurally distinct models. (E) Orientational distribution for particles of the DNA-free complex. The circle represents a flattened sphere plotted using Lambert equal area projection with the pole at the center and the equator at the outer rim of the circle. The radius indicates the tilt angle and the azimuth indicates the rotation or direction of the tilt. (F) Same for the DNA-bound complex (G) Tilt pair validation using 267 particle pairs that were selected from 20 image pairs collected at 0 and 20\u00b0 tilt angle of the sample stage. The angular difference between the same particle collected from the two images is displayed. The black cross indicates the expected angular difference between pairs.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/11134/elife-11134-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Domain definitions used for the rigid body fitting of the PolIII\u03b1 structure into the cryo-EM maps. Domain boundaries are: PHP (residues 1\u2013280), palm-fingers (residues 281\u2013432 + 510\u2013810), thumb (residues 433\u2013509), tip-of-fingers (residues 811\u2013928) and C-terminal tail (residues 929\u20131160). (B and C) Comparison of crystal structure of E. coli PolIII\u03b1 (shown in grey) and PolIII\u03b1 as fitted into the cryo-EM maps (the tail of the polymerase is omitted for clarity).\n\n![Video 1.](https://cdn.elifesciences.org/articles/11134/elife-11134-media1.mp4.jpg)\n\n**Video 1.:** Fitting of the high-resolution structures into the cryo-EM map of the DNA-free complex.\n\n![Video 2.](https://cdn.elifesciences.org/articles/11134/elife-11134-media2.mp4.jpg)\n\n**Video 2.:** Fitting of the high-resolution structures into the cryo-EM map of the DNA-bound complex.\n\n### Overall structure of the complex\n\nThe cryo-EM maps enable the unambiguous fitting of the high-resolution structures of the individual subunitsinto the cryo-EM maps (Figure 1B,C). No conformational changes were required for the fitting of the clamp, exonuclease or \u03c4500, while the polymerase was divided into five domains that were independently fitted into density as rigid bodies (see Figure 1\u2014figure supplement 3). None of the loops were modified, with the exception of the clamp binding motifs of the polymerase and exonuclease that were modeled after existing crystal structures of clamp-bound peptides from Pol II and Pol IV (Georgescu et al., 2008a; Bunting et al., 2003). B-form DNA was used for the DNA substrate, except for the last four base pairs that deviate from B-form DNA and were modeled after the DNA substrate from the Thermus aquaticus (Taq) PolIII\u03b1 crystal structure (Wing et al., 2008).\n\nWe describe the DNA-free complex first (Figure 2). The overall conformation of PolIII\u03b1 resembles that of the X-ray structure of E. coli and Taq PolIII\u03b1 (Lamers et al., 2006; Bailey et al., 2006) and reveals only a \u223c15\u00b0 rotation of the fingers domain between the two structures (Figure 1\u2014figure supplement 3). PolIII\u03b1 interacts with the clamp through the internal clamp binding motif (residues 920\u2013924) (Dohrmann and McHenry, 2005; Toste R\u00eago et al., 2013) that binds in the canonical binding pocket of the clamp (Figure 2B). Immediately after the clamp binding motif the density for the polymerase disappears, and resumes \u223c10 residues later, just before the oligonucleotide/oligosaccharide binding (OB) domain, indicating that this region of the polymerase is flexible (Figure 2A, left and middle panel).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/11134/elife-11134-fig2-v2.jpg)\n\n**Figure 2.:** (A) Three different views of the DNA-free complex of PolIII\u03b1-clamp-exonuclease-\u03c4500 showing extensive contacts between the polymerase and other subunits. Missing loops in PolIII\u03b1 (residues 927\u2013936) and exonuclease (residues 190\u2013207) are shown in dots. Dashed boxes indicate views shown in panels B-D. (B) Modified clamp binding motif of PolIII\u03b1 (QLDLF: shown in sticks) modeled into the binding pocket of the clamp. (C) Modified clamp binding motif of the exonuclease (QLSLPL: shown in sticks) modeled into the second binding pocket of the dimeric clamp. (D) \u03c4500 simultaneously binds the fingers and tail domain of the polymerase. The C-terminal residues of \u03c4500 (residues 622\u2013643: not modeled) bind to the tail of the polymerase, while the globular domain of \u03c4500 binds to the polymerase fingers domain (see Figure 2\u2014figure supplement 2 for more details).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11134/elife-11134-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Model of the polymerase-clamp-exonuclease complex based on chemical cross-links reported in (Toste R\u00eago et al., 2013). Magenta dashed lines: polymerase-clamp cross-links. Cyan dashed lines: polymerase-exonuclease cross-links. Black dashed lines: clamp-exonuclease cross-links. (B) Same cross-links mapped onto the DNA-free cryo-EM model.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11134/elife-11134-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Three orthogonal views of the fit of \u03c4500 into the cryo-EM density. Dashed box in left panel indicates view shown in panel B. (B) Detailed view of the \u03c4500 - PolIII\u03b1 fingers domain interaction. Contact regions at the interface are indicated with thick coil in red (\u03c4500: residues 530\u2013535 and residues 562\u2013566) and blue (PolIII\u03b1: residues 657\u2013667)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/11134/elife-11134-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A,B) DNA-free and DNA-bound E. coli PolIII\u03b1-\u03c4500. The clamp and exonuclease are omitted for clarity. (C) Taq PolIII\u03b1-\u03c4c (Liu et al., 2013).\n\nOn the other side of the complex, across the opening of the clamp, the PHP domain of the polymerase comes close to, but makes no contacts with the clamp (Figure 2A, left panel). Instead, the exonuclease is wedged between the clamp and the thumb domain of PolIII\u03b1 (Figure 2A, right panel). The catalytic domain of the exonuclease is in direct contact with the polymerase thumb domain whereas the contact with the clamp is mediated via a canonical clamp binding motif that is located immediately downstream of the catalytic domain (Toste R\u00eago et al., 2013; Jergic et al., 2013). This clamp binding motif is bound to the pocket of the clamp in a manner similar to the polymerase in the other half of the clamp (cf. Figure 2B,C) and hence both pockets of the dimeric clamp are occupied in the ternary complex. Downstream of the clamp binding motif the tail of the exonuclease follows the contours of the polymerase PHP domain, where it is disordered for a stretch of \u223c15 residues that were shown to be mobile by NMR (Ozawa et al., 2013). Finally, the C-terminal helix of the exonuclease that mediates most of the binding to the polymerase (Ozawa et al., 2013) packs tightly against the PHP domain of PolIII\u03b1 (Figure 2A, left and right panel), similar to the crystal structure of the PolIII\u03b1-PHP domain and C-terminal helix of the exonuclease (Ozawa et al., 2013). Hence, in the ternary complex the exonuclease simultaneously binds the polymerase and clamp. By doing so it strengthens the association between the two proteins (Toste R\u00eago et al., 2013), which is required for processive DNA synthesis (Jergic et al., 2013). Previously, we built an approximate model for the polymerase, clamp and exonuclease complex, using distance restraints provided by chemical cross-linking coupled to mass-spectrometry (Toste R\u00eago et al., 2013). When we map the same cross-links onto the cryo-EM model we find an improved fit of the cross-links with the model, due to the conformational changes in the complex as well as the detailed information about the interactions between the proteins that could not be modeled based on the cross-links alone (Figure 2\u2014figure supplement 1).\n\nThe NMR structure of residues 500\u2013621 of \u03c4 (Su et al., 2007) can be fitted into the density between the tail and fingers domain of the polymerase (Figure 2D and Figure 2\u2014figure supplement 2A). The C-terminal end of \u03c4 is in contact with the tail of the polymerase. Unfortunately, the last 23 residues of \u03c4 that bind the polymerase (Jergic et al., 2007) are not part of the NMR structure and are therefore not present in our model. A second contact is found between the globular domain of \u03c4500 and the fingers domain of the polymerase. This contact is mediated by residues 530\u2013535 and 562\u2013566 of \u03c4500 and residues 657\u2013667 of PolIII\u03b1 (Figure 2\u2014figure supplement 2B). The position of \u03c4500 in this complex is different from the position of the C-terminal domain of \u03c4 in complex with Taq PolIII\u03b1, where it is located at the opposite side of the polymerase tail (Figure 2\u2014figure supplement 3) (Liu et al., 2013). It must be noted though that the C-terminal domain of \u03c4 from E. coli and Taq share no sequence or structural homology and therefore engage with the polymerase in different ways.\n\n### DNA binding in the PolIII\u03b1-clamp-exonuclease-\u03c4500 complex\n\nIn the DNA-bound complex (Figure 3), the entire length of the 25 base pair duplex is in contact with protein (Figure 3A). The position of the DNA is similar to that of the DNA in the crystal structure of Taq PolIII\u03b1 and Geobacillus kaustophilus PolC (Wing et al., 2008; Evans et al., 2008) (Figure 3\u2014figure supplement 1). No density is observed for the 4 nucleotide (nt) single stranded overhang on the template strand indicating that this part of the DNA is flexible. In the complex, all contacts to the DNA are mediated by the thumb, palm and fingers domains of the polymerase and the inner surface of the clamp. No contacts to the DNA are made by the polymerase OB domain, the exonuclease, or \u03c4500. The most extensive DNA contacts occur at the primer 3\u2019 end in polymerase active site where the thumb, palm and fingers domain of the polymerase contact the first 9 base pairs of the DNA duplex. It is also here that the only non-backbone contact is made by a loop of the thumb (residues 464\u2013470), which is inserted into the major groove of the DNA (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/11134/elife-11134-fig3-v2.jpg)\n\n**Figure 3.:** (A) Overview of the DNA-bound complex. The N-termini of the two helices that point at the DNA backbone are colored in blue. Potential DNA interacting side chains are shown in sticks. The tail of PolIII\u03b1, the exonuclease and \u03c4500 are omitted for clarity. Arrow indicates viewpoint in panel B (B) Polymerase active site, with the DNA held between thumb, palm and fingers domain. Polymerase active site residues are indicated with magenta spheres. Arrow indicates viewpoint in panel C (C) DNA interactions downstream of the active site. The OB domain is positioned on top of the DNA but does not make any contacts with it. (D) DNA exit channel in the clamp with positively charged residues within 10 \u00c5 of the DNA indicated in magenta sticks. Note that the positions of the side chains have not been refined and should be seen as approximate positions. (E) In the DNA-bound complex, the clamp is at a \u223c80\u00b0 angle from the DNA. A dashed line indicates the position of the clamp alone bound to a DNA substrate. (Georgescu et al., 2008a). The other subunits (PolIII\u03b1, exonuclease, \u03c4500) are shown in light grey for clarity.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11134/elife-11134-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) E. coli PolIII\u03b1, (B) T. aquaticus PolIII\u03b1 (Wing et al., 2008), (C) G. kaustophilus PolC (Evans et al., 2008).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11134/elife-11134-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Left panel: Electro-mobility shift assay with the E. coli DNA polymerases Pol I (Klenow fragment), Pol II, Pol III\u03b1, and Pol IV. At 2.5 \u03bcM Pol I, Pol II, and Pol IV retain DNA, whereas Pol III\u03b1 does not. The more intense bands for Pol I and Pol II are caused by protein induced fluoresence enhancement (PIFE) (Hwang et al., 2011). Right panel: SDS-page analysis of the same samples used for the electro-mobility shift assay (proteins stained with coomassie blue). Molecular weights: Pol I (Klenow fragment) 70 kDa, Pol II 90 kDa, Pol III\u03b1 130 kDa, Pol IV 40 kDa. (B) Structural comparison of Pol I (PDB code: 1QTM [Li et al., 1999]), Pol II (PDB code: 3K57 [Wang and Yang, 2009]), PolIII\u03b1 (this work), and Pol IV (PDB code: 4IRD [Sharma et al., 2013]). Polymerases were aligned on the 3\u2019 end of the primer, indicated by the solid line. For Pol I, Pol II, and Pol IV, the clamp was modeled based on predicted clamp interacting motifs in the respective polymerases. The distance measured in base pairs between the 3\u2019 end of the primer and the opening of the clamp is indicated on top of the structures, together with the rate of DNA synthesis of each polymerase. (C) Detailed view of the interaction of the polymerase thumb domains and the DNA. All polymerase thumb domains interact with the backbone of the minor groove. Only Pol III\u03b1 inserts a loop into the major groove of the DNA.\n\nAway from the active site, the tip of the fingers domain (i.e. little finger [Lamers et al., 2006] or \u03b2 binding domain [Bailey et al., 2006]), makes additional contacts to the DNA. Here, several positively charged residues (K831, K872, R876, R877, K881) as well as the positive charge of the helix dipole of two helices (residues 842\u2013856 and 875\u2013886) are pointed towards the DNA backbone (Figure 3A). At this position, the OB domain is in close proximity of the DNA but makes no contacts with it (Figure 3C). Instead, the OB domain forms a bridge between the PolIII\u03b1 fingers domain, thumb domain, and the exonuclease. Furthermore, while the isolated OB domain has been shown to bind to ssDNA (Georgescu et al., 2009), in this complex the OB domain is \u223c40\u2009\u00c5 away from the ssDNA template. The DNA furthermore interacts with the clamp that surrounds the DNA like a nut around a bolt (Figure 3D). Several non-specific contacts are made to the backbone of the DNA providing an electrostatic cushion for the DNA to pass through as it leaves the complex. Compared to the crystal structure of the isolated clamp bound to DNA (Georgescu et al., 2008a) the clamp is rotated by \u223c20\u00b0, resulting in an almost perpendicular orientation (\u223c80\u00b0) with respect to the DNA. In the 19\u2009\u00c5, negative stain EM structure of Pyrococcus furiosus PolB, the only other known structure of a DNA polymerase in complex with clamp and DNA, the DNA runs straight through the clamp as well (Mayanagi et al., 2011).\n\nPolIII\u03b1 is an extremely fast DNA polymerase with DNA synthesis speeds of up to 600\u20131000 nt/s (Mok and Marians, 1987; Mcinerney et al., 2007). In contrast, the E. coli DNA polymerases Pol I, Pol II, and Pol IV have synthesis speeds of 15, 10, and 1 nt/s, respectively (Schwartz and Quake, 2009; Indiani et al., 2009). Furthermore, in isolation PolIII\u03b1 has a surprisingly low affinity for DNA when compared to the other E. coli DNA polymerase (Figure 3\u2014figure supplement 2A). Because of its weak binding to DNA, PolIII\u03b1 must therefore have developed a different way to keep itself correctly positioned on the DNA during rapid DNA synthesis. To this effect, PolIII\u03b1 may have evolved its uniquely long fingers domain that is more than twice as long as the other E. coli DNA polymerases (Figure 3\u2014figure supplement 2B). These polymerases have considerably smaller fingers domains, use shorter regions of DNA contacts, and have shorter predicted distances between the polymerase active site and the clamp (Figure 3\u2014figure supplement 2B). In PolIII\u03b1, the number of base pairs between the 3\u2019 end of the primer and the opening of the clamp is 22, while the predicted number of base pairs for Pol I, Pol II, and Pol IV is \u223c15. This unusually long DNA-protein contact appears to be well suited to accurately position the DNA without requiring tight binding that could slow down the translocation of the DNA. At the same time, the sequence-independent backbone contacts and the perfectly straight B-form DNA may facilitate the rapid exit of the DNA from the active site. The active site itself is wrapped tightly around the DNA where PolIII\u03b1 is the only polymerase that inserts a loop of the thumb domain into the major groove of the DNA, while the thumb domains of Pol I, Pol II, and Pol IV only have backbone contacts with the DNA (Figure 3\u2014figure supplement 2C). Hence, it seems plausible that this combination of unique contacts with the DNA may have evolved to support the high speeds of DNA synthesis by PolIII\u03b1 without compromising accuracy.\n\n### DNA binding induces a large conformational change in the complex\n\nTo enable the many contacts with the DNA, the complex undergoes extensive conformational changes from the DNA-free to the DNA-bound state. Most prominent is a \u223c35\u00b0 rotation of the polymerase tail and \u03c4500, which move from a position over the polymerase active site to a position adjacent to the sliding clamp (Figures 1,4 and Video 3). The simultaneous movement of the polymerase tail and \u03c4c results in a 70\u2009\u00c5 displacement of the globular domain of \u03c4500. The tail of PolIII\u03b1 consists of the OB domain (residues 960\u20131071) and the C-terminal \u03c4-binding domain (residues 1079\u20131160). Together with \u03c4500 they form a rigid structure that shows few changes between the DNA free and DNA bound structure, indicating that the interaction between \u03c4500 and the tail of PolIII\u03b1 must be stable (Figure 4C). As a result of the repositioning of the polymerase tail, the contact between \u03c4500 and the fingers domain of the polymerase is broken and a new contact between the OB domain and the clamp is forged (Figure 4B and Video 3). The OB domain makes two new contacts with the clamp via a short helix (1035\u20131043) and a long protruding loop (1003\u20131013) (Figure 4D,E). These motifs contact the clamp at loops 24\u201328 and 275\u2013278, respectively. Hence in the DNA-bound complex, the polymerase has three points of contact to the clamp: one via the canonical clamp binding motif (residues 920\u2013925: Figure 2B); one indirectly via the exonuclease (Figure 2C); and one contact via the OB domain (Figure 4D,E). Previously, it has been shown that a triple mutation in OB domain result in reduced DNA synthesis (Georgescu et al., 2009) which was attributed to the loss of ssDNA binding by the OB domain. However, in our structure the OB domain is far away (\u223c40\u2009\u00c5) from the ssDNA overhang of the template strand. Instead, the mutations (R1004S, K1009S, R1010S) are located at the interface between the OB domain and the clamp (Figure 4E) and therefore could weaken the interaction between the polymerase and clamp, providing an alternative explanation for the reduced DNA synthesis.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/11134/elife-11134-fig4-v2.jpg)\n\n**Figure 4.:** (A) Clamp binding by PolIII\u03b1 in the DNA-free complex. Arrows indicate movement of the PolIII\u03b1 tail (see also Video 3). (B) Clamp binding by PolIII\u03b1 in the DNA-bound complex. Dashed boxes indicate views shown in panel D and E (C) Comparison of the PolIII\u03b1-tail - \u03c4500 interaction in the DNA-free (in grey) and DNA-bound structure. (D and E) Detailed view of the clamp - PolIII\u03b1 OB domain interaction. Interacting regions at the interface are indicated in thick coil in magenta (clamp: residues 24\u201324 and residues 275\u2013278) and red (PolIII\u03b1-OB domain: residues 1035\u20131043 and residues 1003\u20131013). Residues mutated in Georgescu et al (Georgescu et al., 2009) are shown in sticks and labeled with outlined boxes. Note that the positions of the side chains have not been refined and should be seen as approximate positions.\n\n![Video 3.](https://cdn.elifesciences.org/articles/11134/elife-11134-media3.mp4.jpg)\n\n**Video 3.:** Linear morphing of the DNA-free to DNA-bound state showing the large conformational change between the two states.\n\n## Discussion\n\nThe E. coli replisome consists of 12 different proteins that can be divided into three subcomplexes: the helicase-primase complex, the clamp loader complex, and the PolIII\u03b1-clamp-exonuclease-\u03c4c complex. The structures of two of the three subcomplexes have been determined previously: the helicase-primase complex (Bailey et al., 2007; Wang et al., 2008), and the clamp loader complex (Jeruzalmi et al., 2001; Simonetta et al., 2009). The structure of the PolIII\u03b1-clamp-exonuclease-\u03c4500 complex on the other hand has remained elusive due to its dynamic nature. The cryo-EM structures of the PolIII\u03b1-clamp-exonuclease-\u03c4500 complex presented in this work finally reveal the nature of the interactions in the ternary complex and are a crucial step forward towards determining the structure of the complete bacterial replisome.\n\nOur cryo-EM structures furthermore provide a crucial insight into the structural organization of the replicative DNA polymerase and its associated proteins clamp, exonuclease and \u03c4500. They show how the clamp and exonuclease tether the polymerase to the DNA through multiple contacts. Importantly, they also reveal a large conformational change where the tail of the polymerase moves from interacting with the clamp in the DNA-bound state, to a position 35\u2009\u00c5 away from the clamp in the DNA-free state. What may be the role for such a conformational change? On the lagging strand, the polymerase repositions to a newly primed site every \u223c1000 bp. To do so, the polymerase needs to release both clamp and DNA. We propose that the switch-like movement of the polymerase tail may play a part in the release and consequent repositioning of the polymerase at the end of the Okazaki fragment. A hypothetical model describing how this could work is presented in Figure 5. During DNA synthesis, the tail of the polymerase is bound to the clamp, stabilizing the interaction between polymerase and clamp (marked with \u20181\u2019 in Figure 5). This confirmation may be further stabilized by the presence of a DNA binding region immediately upstream of \u03c4500 (marked with \u20182\u2019) (Jergic et al., 2007). Upon encounter of a release signal, \u03c4500 rebind to the polymerase fingers domain (marked with \u20183\u2019) thus sequestering the polymerase tail away from the clamp (marked with \u20184\u2019) and initiating the dissociation of the polymerase from clamp and DNA. What could serve as the release trigger? Two non-exclusive models have been proposed (Li and Marians, 2000). In the \u2018collision' model, the encounter with the dsDNA of the previous Okazaki fragment induces the release of the polymerase. In support of this model, it has been shown that a decreasing gap size between the 3' terminus of the lagging strand and the 5' end of the previously synthesized Okazaki fragment promotes release of the polymerase (Leu et al., 2003; Georgescu et al., 2009; Dohrmann et al., 2011). Two possible sensors for the decreasing gap on the lagging strand have been suggested. The ssDNA binding properties of the OB domain in the tail of the polymerase has been proposed to play a role in the sensing of the ssDNA vs dsDNA (Georgescu et al., 2009). Yet our cryo-EM models show that the OB domain is \u223c40\u2009\u00c5 away from the ssDNA and that it is involved in binding to the sliding clamp. Alternatively, it has been proposed that the C-terminal fragment of \u03c4 may act as the sensor as it is required to release the polymerase from a decreasing gap size (Leu et al., 2003). Indeed, it was found that the region in \u03c4, immediately upstream of \u03c4500, has DNA binding affinity (Jergic et al., 2007).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/11134/elife-11134-fig5-v2.jpg)\n\n**Figure 5.:** During processive DNA synthesis, the tail of the polymerase is attached to the clamp (indicated with \u20181\u2019) and pulls \u03c4500 away from the polymerase fingers domain. This conformation may be further stabilized by the presence of a DNA binding region immediately upstream of \u03c4500 (indicated with \u20182\u2019; see text for more details).Upon encounter of a release trigger, the contact between \u03c4500 and the polymerase fingers domain is restored (indicated with \u20183\u2019), and the contact between the clamp and polymerase tail is broken (indicated with \u20184\u2019). The release trigger may either come from a collision with the previous Okazaki fragment (indicated with \u2018Collision\u2019), or a signal from other replisome components via the flexible linker of \u03c4 (indicated with \u2018Signaling\u2019). Once the polymerase-tail clamp contact has been broken, the two remaining contacts between the clamp and polymerase-exonuclease are not enough to keep the polymerase bound to the clamp. The polymerase is released from clamp and DNA and can be repositioned to a newly primed site to reinitiate DNA synthesis.\n\nContesting the collision model is the observation that the release of the polymerase by a decreasing gap size is too slow (t1/2 = 110 s) for the frequency at which the lagging strand polymerase is re-positioned (every 1\u20132 s) (Dohrmann et al., 2011), suggesting that additional or alternative release factors are required. The alternative \u2018signaling\u2019 model therefore proposes that the trigger comes from one of the other components of the replisome such as the RNA primase DnaG, based on the observation that the increased primase concentration results in shorter lagging strand fragments (Wu, Zechner and Marians, 1992; Li and Marians, 2000). However, it was recently shown that the presence of a primer alone is sufficient to induce release at the lagging strand and that activity of the primase is not required (Yuan and McHenry, 2014). How the presence of the RNA primer is signaled to the polymerase remains unclear. Yet, the fact that the \u03c4 protein is both part of the clamp loader complex that positions clamps onto the primer and simultaneously binds the polymerase makes this a suitable conveyor of the signal. While our structures do not discriminate between the type of release trigger for the lagging strand polymerase, they do now provide the means to test the precise workings of the molecular switch that enables the release of the polymerase.\n\n## Materials and methods\n\n### Materials\n\nAll chemicals and\u00a0oligonucleotides were purchased from Sigma-Aldrich (Gillingham, United\u00a0Kingdom) and chromatography columns from GE\u00a0healthcare (Little Chalfont, United Kingdom).\n\n### Protein expression and purification\n\nTo increase binding to the clamp, amino acid residues 920\u2013924 of E. coli PolIII\u03b1 were changed by site directed mutagenesis from QADMF to QLDLF, while in the exonuclease residues 182\u2013187 were changed from QTSMAF to QLSLPL, based on sequences described in (Wijffels et al., 2004). All proteins were expressed in E. coli (DE3) BL21. PolIII\u03b1, clamp and exonuclease were expressed and purified as described before (Toste R\u00eago et al., 2013). \u03c4500 was purified by Histrap HP column, Resource S column, and a Superdex 75 gel filtration column. His-tags were removed by proteolytic cleavage with human rhinovirus 3C protease. Proteins were flash frozen in liquid nitrogen and stored at -80\u00b0.\n\n### Gel filtration analysis\n\nProteins were analyzed by gel filtration using a 2.4 mL Superdex 200 Increase column (GE healthcare) in 25 mM Hepes pH 7.5, 150 mM NaCl, and 2 mM DTT. PolIII\u03b1-clamp-exonuclease complex was assembled at 10, 1, and 0.1 \u03bcM and 50 \u03bcL injected onto the column.\n\n### Electro mobility shift assay\n\nA DNA substrate identical to the substrate used for the cryo-EM samples was used, with the exception of a 6-carboxyfluorescein (6-FAM) at the 5' end of the primer strand and a phosphorothioate link at the 3' terminal bond to prevent exonuclease digestion. 5 nM DNA was incubated with 2.5 \u03bcM polymerase (E. coli Pol I (Klenow fragment), Pol II, Pol III\u03b1, or Pol IV) for 10 min at room temperature. Reaction mixtures contained 20 mM Tris pH 7.5, 4% glycerol, 5 mM DTT, 40 \u03bcg/ml BSA, and 40 mM Potassium Glutamate. Half of the sample was separated on a native 6% acrylamide gel and imaged on a Typhoon laser scanner (GE Healthcare). The remaining half of the sample was analyzed on a denaturing 4\u201312% SDS acrylamide gel and stained with Coomassie blue.\n\n### Sample preparation for cryo-EM\n\nThe PolIII\u03b1-clamp-exonuclease-\u03c4500 protein complex was assembled from the individual components to a final concentration of 15 \u03bcM and purified on a 2.4 mL Superdex 200 Increase gel filtration column (GE Healthcare) in 25 mM Hepes pH 7.5, 50 mM Potassium Glutamate, 3 mM Magnesium Acetate, and 2 mM DTT. The peak fraction (\u223c4 \u03bcM) was retrieved and incubated for 5 min with 20 \u03bcM of a 25 bp DNA substrate with a 4 nt overhang (template: 5\u2032-TCAGGAGTCCTTCGTCCTAGTACTACTCC-3\u2032, primer: 5\u2032-GGAGTAGTACTAGGACGAAGGACTC-3\u2032) for 5 min at room temperature. Subsequently, 0.1 volume of 0.05% (V/V) Tween 20 was added and incubated for another 5 min before the samples were pipetted onto glow-discharged holey carbon cryo-EM grids (Quantifoil Cu R1.2/1.3), and frozen in liquid ethane using a Vitrobot (FEI, Hillsboro, OR).\n\n### Data collection and image processing\n\nAll data was collected using a Titan Krios electron microscope (FEI) operated at 300 kV equipped with a K2 summit direct electron detector (Gatan, Pleasaston, CA). Although this detector was mounted after a Gatan Imaging Filter (GIF), the filter was not used to remove any inelastic scattering. Images were collected in single-electron counting mode at a calibrated magnification of 28.571x (1.76\u2009\u00c5/pixel), using a flux of 2 e/\u00c52/sec and a total dose of 40 e/\u00c52 over a total of 20 frames. Frames were aligned and averaged using whole-image movement correction using MOTIONCORR (Li et al., 2013). Contrast transfer function parameters were calculated using CTFFIND3 (Mindell and Grigorieff, 2003). All subsequent particle picking and data processing was performed using Relion-1.3 (Scheres, 2012), with the exception of the generation of the initial model, which was done using Eman2 (Tang et al., 2007). A total of 1350 micrographs were recorded from which >550,000 particles were picked automatically in Relion. After 2D classification, a large number of spurious particles as well as particles that show free polymerase or free clamp were removed, yielding a dataset of \u223c90,000 particles. After 3D classification a another \u223c27,000 were removed to yield a final dataset of 63,215 particles. From these, six 3D classes were calculated that were subsequently merged into the final three 3D classes of 'DNA-free' (16,970 particles), 'DNA-bound' (5663 particles) and 'DNA-bound, no tail' (40,582 particles). Particle-based movement correction and per-frame B-factor weighting to account for radiation damage and unresolved particle movement was performed in the later stages of refinement using the particle polishing option in Relion (Scheres, 2014). Reported resolutions are based on the gold-standard FSC-0.143 criterion (Scheres and Chen, 2012) and FSC-curves were corrected for the convolution effects of a soft mask using high-resolution noise-substitution (Chen et al., 2013). All density maps were sharpened by applying a negative B-factor that was estimated using automated procedures (Rosenthal and Henderson, 2003). We believe that the resolution of these reconstructions is limited by both the relatively small size of the complex (250\u2009kDa), which hampers accurate alignment and classification, and the inherent flexibility of this four-protein and DNA complex. Still, the maps are of excellent quality, with individual helices, \u03b2-sheets, and loops clearly visible in the map (Figure 1C).\n\n### Fitting of the crystal structures into the cryo-EM map\n\nIndividual crystal or NMR structures were manually placed into the cryo-EM map in PyMOL (Schr\u00f6dinger, LLC 2010) and subsequently rigid-body fitted into the density using Coot (Emsley et al., 2010). PDB codes of the fitted structures are: PolIII\u03b1: 2HNH (Lamers et al., 2006), clamp: 2POL (Kong et al., 1992), exonuclease: 1J54 (Hamdan, et al., 2002), \u03c4500: 2AYA (Su et al., 2007). The C-terminal tail of Eco PolIII\u03b1 that is lacking in the crystal structure (2HNH) was modeled as described in (Toste R\u00eago et al., 2013). The PolIII\u03b1 structure was divided into five domains that were further fitted independently into density as rigid bodies (see Figure 1\u2014figure supplement 3B,C). These domains were: PHP (residues 1\u2013280), palm-fingers (residues 281\u2013432 + 510\u2013810), thumb (residues 433\u2013509), tip-of-fingers (residues 811\u2013928) and C-terminal tail (residues 929\u20131160). Clamp binding motifs of PolIII\u03b1 and exonuclease were manually built into the clamp in Coot guided by the crystal structures of clamp-bound peptides from Pol II and Pol IV, (Bunting et al., 2003; Georgescu et al., 2008b; Jeruzalmi et al., 2001). The DNA substrate was generated with Coot, and the last four base pairs of the DNA were adjusted guided by the DNA from Taq Pol III\u03b1 (Wing et al., 2008).\n\n### Comparison of DNA polymerase structures\n\nThe following crystal structures of C family DNA polymerases were used to compare DNA binding and \u03c4 binding. DNA bound Taq PolIII\u03b1 (PDB code: 3E0D [Wing et al., 2008]), \u03c4 bound Taq PolIII\u03b1 (PDB code: 4IQJ [Liu et al., 2013]), DNA bound G. kaustophilus PolC (PDB code: 3F2B [Evans et al., 2008]). Crystal structures of bacterial DNA polymerases in complex with DNA were used to compare the distance between the polymerase active site and the opening to the clamp. The following structures were used: T. aquaticus DNA Pol I (PDB code: 1QTM [Li et al., 1999]), E. coli Pol II (PDB code: 3K57 [Wang and Yang, 2009]), E. coli PolIII\u03b1 (this work), and E. coli Pol IV (PDB code: 4IRD [Sharma et al., 2013]). For the structures of Pol I, Pol II, and Pol IV, the sliding clamp (PDB code: 2POL [Kong et al., 1992]) was manually placed close to the clamp binding sequences in the different polymerases, taking care not to cause any clashes with other parts of the polymerase.\n",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "3e592086-dc2a-4e62-8e16-a53f7476d334",
+      "submission_id": "b5145459-4f69-414a-924c-7f5a198a9604",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephen C Kowalczykowski, University of California, Davis , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.11134.019](https://doi.org/10.7554/eLife.11134.019)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"cryo-EM structures of the E. coli replicative DNA polymerase reveal dynamic interactions with clamp, exonuclease and \u03c4\" for peer review at eLife. Your submission has been favorably evaluated by Michael Marletta (Senior Editor), a Reviewing Editor, and three reviewers. One of the three reviewers, Mike O\u2019Donnell (Reviewer #3), has agreed to reveal his identity.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nUsing cryo-electron microscopy, Fernandez-Leiro et al. have determined the ~8 \u00c5 resolution structures, in a DNA-bound and DNA-free state, of the holoenzyme catalytic core comprising the E. coli DNA polymerase III \u03b1 subunit, the DNA sliding clamp \u03b2, the exonuclease \u03b5, and the C-terminal domain of the clamp loader subunit \u03c4 (\u03c4500). Interesting findings include: 1) showing that the rigid-body module composed of the C-terminal part of the clamp loader and the polymerase tail undergoes a large rearrangement upon DNA binding, and 2) that there is a new contact point between \u03c4 and the polymerase in the apo configuration, and different one, formed in the presence of DNA, between the OB-fold domain of the polymerase and the clamp. This work represents a highly significant advance in the science of sliding clamps, and the mechanism by which DNA polymerase functions on them. This structural study identifies an entirely new connection of the polymerase to the clamp. This new connection only occurs when the polymerase binds a primed template. The connection is in a new location, outside the two typical hydrophobic pockets on clamps that are the usual target of protein trafficking.\n\nIn general, the paper is reasonably well-written and its organization is easy to follow. The quality of the EM reconstructions is very good, especially considering the small size of the complex (~250 kDa), and the heterogeneity present in the sample. The newly identified contacts between the polymerase, clamp, and \u03c4 provide a logical and long-desired molecular picture of why holoenzyme formation leads to improved processivity and potentially of how PolIII alters its structural state in response to binding DNA (which may be important for polymerase recycling during lagging strand synthesis). Overall, the work provides valuable new insights into important DNA replication events and stands to have a long-lasting impact on the field.\n\nBefore publication, the authors need to make the following essential revisions:\n\n1) The authors refer to the study of Georgescu et al. (EMBO, 2009) and suggest that the observed clamp-OB CTD interaction provides \"an alternative explanation\" for the reduced DNA synthesis seen by them. However, the Discussion section remains relatively vague and does not discuss the opposing model, although it is directly relevant for Okazaki fragment sensing. While the entire mechanism of such sensing is probably beyond the experimental scope of the present manuscript, the authors need to provide a more considered discussion of \"collision\" models versus \"signaling\". Specifically, the authors need to specifically address the conclusions in Dohrmann et al. 2011, and related work.\n\n2) Lamers and colleagues identified recently domain-domain interactions within PolIII-clamp-exonuclease complex via cross-linking / mass spectrometry analysis (Toste R\u00eago et al. EMBO 2013). In the present manuscript they frequently refer to this study in order to support their conclusions. Please show whether the crosslinking data is consistent with the molecular models derived from cryo-EM by measuring respective distances. Are there many outliers that exceed the length of the crosslinking reagent and might indicate different conformations?\n\n3) The manuscript needs a final figure that proposes the obvious function of this new connection in the polymerase recycling process: a summary \"mechanism\" figure. This figure should summarize the different movements/states, and illustrate the authors' speculation as to how these changes might be involved in polymerase cycling during lagging strand synthesis. An expert in the field will connect the dots without a model figure, but for many readers, this finding deserves a figure and sufficient explanation/speculation in the text, to convey the significance of this to non-experts.\n",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "3ad582d8-7abd-4e4c-aacd-8b6a6edcfcf9",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C1",
+      "claim": "DNA replication in E. coli occurs at speeds of 600-1000 nucleotides per second.",
+      "claim_type": "EXPLICIT",
+      "source": "In Escherichia coli, DNA replication is highly efficient with speeds of up 600\u20131000 nucleotides per second (Mok and Marians, 1987; Mcinerney et al., 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mok and Marians, 1987 and Mcinerney et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "aec43531-8cdd-4f7e-a671-b5a38eef24bf",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C2",
+      "claim": "E. coli DNA replication synthesizes >100,000 basepairs per binding event.",
+      "claim_type": "EXPLICIT",
+      "source": "In Escherichia coli, DNA replication is highly efficient with speeds of up 600\u20131000 nucleotides per second (Mok and Marians, 1987; Mcinerney et al., 2007), >100,000 basepairs (bp) synthesized per binding event (Yao et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yao et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "dfb96f5f-6975-4932-bbbd-2de1ff78b147",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C3",
+      "claim": "E. coli DNA replication has an error rate of approximately 1 per million.",
+      "claim_type": "EXPLICIT",
+      "source": "In Escherichia coli, DNA replication is highly efficient with speeds of up 600\u20131000 nucleotides per second (Mok and Marians, 1987; Mcinerney et al., 2007), >100,000 basepairs (bp) synthesized per binding event (Yao et al., 2009), and an error rate of \u223c1 per million (Bloom et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bloom et al., 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "497d7fe6-07d4-4594-9f27-e6466977d912",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C4",
+      "claim": "The DNA polymerase III holoenzyme synthesizes the leading strand continuously.",
+      "claim_type": "EXPLICIT",
+      "source": "To do so, DNA replication is performed by a large multi-protein complex termed the DNA polymerase III holoenzyme that synthesizes the leading strand in a continuous manner, while the lagging strand is synthesized in short fragments of \u223c1000 bp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a known property of the holoenzyme",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "e4781f75-3748-412c-bc77-de36ccca76a8",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C5",
+      "claim": "The lagging strand is synthesized in short fragments of approximately 1000 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "To do so, DNA replication is performed by a large multi-protein complex termed the DNA polymerase III holoenzyme that synthesizes the leading strand in a continuous manner, while the lagging strand is synthesized in short fragments of \u223c1000 bp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a known property of lagging strand synthesis",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "c8b9d676-1232-4ac7-bb3a-7809f8d5e653",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C6",
+      "claim": "The holoenzyme is composed of 10 subunits (\u03b1, \u03b2, \u03b5, \u03b8, \u03b4, \u03b4', \u03b3, \u03c4, \u03c7, \u03c8).",
+      "claim_type": "EXPLICIT",
+      "source": "The holoenzyme is composed of 10 subunits (\u03b1, \u03b2, \u03b5, \u03b8, \u03b4, \u03b4', \u03b3, \u03c4, \u03c7, \u03c8), that together with the helicase DnaB and the RNA primase DnaG form the replisome with a combined molecular weight of 1 MDa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about the holoenzyme composition",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "06f17418-0add-40b1-99e5-affb334e1587",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C7",
+      "claim": "The replisome has a combined molecular weight of 1 MDa.",
+      "claim_type": "EXPLICIT",
+      "source": "The holoenzyme is composed of 10 subunits (\u03b1, \u03b2, \u03b5, \u03b8, \u03b4, \u03b4', \u03b3, \u03c4, \u03c7, \u03c8), that together with the helicase DnaB and the RNA primase DnaG form the replisome with a combined molecular weight of 1 MDa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a known property of the replisome",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "a4fbe265-bfd8-4e83-b8f3-08e102f968e7",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C8",
+      "claim": "The helicase DnaB separates the two DNA strands.",
+      "claim_type": "EXPLICIT",
+      "source": "The helicase DnaB separates the two DNA strands (Mok and Marians, 1987)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mok and Marians, 1987",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "9d7ff758-a545-413d-b17b-1fd0f1aa4060",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C9",
+      "claim": "DnaB transiently associates with the RNA primase DnaG.",
+      "claim_type": "EXPLICIT",
+      "source": "The helicase DnaB separates the two DNA strands (Mok and Marians, 1987) and transiently associates with the RNA primase DnaG that synthesizes short RNA primers required for DNA synthesis at the lagging strand (Wu et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wu et al., 1992",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "81b267d3-da8c-44dc-9a68-4a9c615940d8",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C10",
+      "claim": "DnaG synthesizes short RNA primers required for DNA synthesis at the lagging strand.",
+      "claim_type": "EXPLICIT",
+      "source": "The helicase DnaB separates the two DNA strands (Mok and Marians, 1987) and transiently associates with the RNA primase DnaG that synthesizes short RNA primers required for DNA synthesis at the lagging strand (Wu et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wu et al., 1992",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "69373e93-4487-45cf-8cdd-894404964871",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C11",
+      "claim": "The clamp loader subcomplex loads the DNA sliding clamp \u03b2 onto the DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The clamp loader subcomplex (\u03b4, \u03b4', \u03b3, \u03c4, \u03c7, \u03c8) loads the DNA sliding clamp \u03b2, the processivity factor for the DNA polymerase, onto the DNA (Stukenberg et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Stukenberg et al., 1991",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "750029c2-59c3-4578-b54d-d6efeff67446",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C12",
+      "claim": "The clamp loader connects the leading and lagging strand polymerases via its \u03c4 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "It furthermore connects the leading and lagging strand polymerases via its \u03c4 subunits (McHenry, 1982; Onrust et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to McHenry, 1982 and Onrust et al., 1995",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "e1718e66-b5b0-4441-b945-f35b95b20c36",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C13",
+      "claim": "The activity of PolIII\u03b1 is poor in isolation.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity of PolIII\u03b1 is poor in isolation (Maki and Kornberg, 1985) and is greatly enhanced by its associated proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Maki and Kornberg, 1985",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "cdd61020-9ede-49d8-9706-074496f3ca84",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C14",
+      "claim": "The exonuclease \u03b5 removes misincorporated bases.",
+      "claim_type": "EXPLICIT",
+      "source": "For error-free DNA synthesis the polymerase relies on the exonuclease \u03b5 that removes any misincorporated bases and decreases the error rate of DNA replication by 1\u20132 orders of magnitude (Scheuermann et al., 1983; Lancy et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Scheuermann et al., 1983 and Lancy et al., 1989",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "7a9d8518-6c0c-4550-9d38-4a51f6f31757",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C15",
+      "claim": "The exonuclease \u03b5 decreases the error rate of DNA replication by 1-2 orders of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "For error-free DNA synthesis the polymerase relies on the exonuclease \u03b5 that removes any misincorporated bases and decreases the error rate of DNA replication by 1\u20132 orders of magnitude (Scheuermann et al., 1983; Lancy et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Scheuermann et al., 1983 and Lancy et al., 1989",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "3d956a0e-b526-4456-b75d-4d9caccead92",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C16",
+      "claim": "The exonuclease strengthens the interactions between the polymerase and clamp by binding both proteins simultaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the exonuclease strengthens the interactions between the polymerase and clamp as it binds both proteins simultaneously (Toste R\u00eago et al., 2013; Jergic et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Toste R\u00eago et al., 2013 and Jergic et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "bbd7ae67-97e4-49a9-a063-5cb5f6143b2f",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C17",
+      "claim": "At the leading strand, the PolIII\u03b1-clamp interaction is stable and results in DNA segments of >100,000 bp synthesized per binding event.",
+      "claim_type": "EXPLICIT",
+      "source": "At the leading strand this interaction is stable and results in DNA segments of >100.000 bp synthesized per binding event (Yao et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yao et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "ea169963-ae37-466b-a121-b22c12c9bd09",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C18",
+      "claim": "At the lagging strand, DNA synthesis is discontinuous with an average length of 1000 bp synthesized per fragment.",
+      "claim_type": "EXPLICIT",
+      "source": "At the lagging strand in contrast, DNA synthesis is discontinuous, with an averaged length of 1000 bp synthesized per fragment, depending on the frequency of the RNA primase activity (Wu, Zechner and Marians, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wu, Zechner and Marians, 1992",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "22942f0b-be07-469f-b6f1-b68c0263a71a",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C19",
+      "claim": "The C-terminal domain of \u03c4 (\u03c4c) acts as a 'processivity switch' for the polymerase to enable repeated binding and release at the lagging strand.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the C-terminal domain of \u03c4 (\u03c4c) acts as a 'processivity switch' for the polymerase to enable repeated binding and release at the lagging strand (Leu et al., 2003; Georgescu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Leu et al., 2003 and Georgescu et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "99d0a2ae-c3c4-4269-a6d9-bb40ea405610",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C20",
+      "claim": "The structures of the helicase-primase subcomplex have been known for some time.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures of the helicase-primase subcomplex (Bailey et al., 2007; Wang et al., 2008) and the clamp loader subcomplex (Jeruzalmi et al., 2001; Simonetta et al., 2009) have been known for some time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bailey et al., 2007 and Wang et al., 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "f80440bd-4ed7-47c2-a3ea-c556c961368c",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C21",
+      "claim": "The structures of the clamp loader subcomplex have been known for some time.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures of the helicase-primase subcomplex (Bailey et al., 2007; Wang et al., 2008) and the clamp loader subcomplex (Jeruzalmi et al., 2001; Simonetta et al., 2009) have been known for some time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jeruzalmi et al., 2001 and Simonetta et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "6a9350fe-28bd-44fa-b6af-441980ceca31",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C22",
+      "claim": "The structure of the PolIII\u03b1-clamp-exonuclease-\u03c4c complex has remained elusive due to its dynamic nature.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the PolIII\u03b1-clamp-exonuclease-\u03c4c complex on the other hand has remained elusive due to its dynamic nature that forms a significant hurdle for structure determination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a known challenge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "246084b6-5f1f-40de-9b1f-ab121e97952b",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C23",
+      "claim": "The cryo-EM structures of the PolIII\u03b1-clamp-exonuclease-\u03c4500 complex were determined to 8 \u00c5 resolution in both DNA-bound and DNA-free states.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome this, we have used a combination of site directed mutagenesis and computational classification of different structural states to determine the cryo-EM structures of the complex in both a DNA-bound and a DNA-free state to 8 \u00c5 resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported as the primary result of this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "fc4d33d7-234d-40b4-8c0e-cee21427bd0a",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C24",
+      "claim": "The interaction between PolIII\u03b1 and the clamp is weak, in the order of 1 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction between PolIII\u03b1 and the clamp is weak, in the order of 1 \u03bcM (Toste R\u00eago et al., 2013), and is not sufficient to maintain an intact complex at the low concentrations used for cryo-EM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Toste R\u00eago et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "89eaa031-08b4-4014-92c1-7bd14f5128f4",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C25",
+      "claim": "Sequences derived from the translesion DNA polymerase UmuC and the DNA replication initiation factor Hda were the most potent inhibitors of the interaction between the polymerase and clamp out of a panel of 15 peptide sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "For this we used sequences derived from the translesion DNA polymerase UmuC and the DNA replication initiation factor Hda that out of a panel of 15 peptide sequences were the most potent inhibitors of the interaction between the polymerase and clamp (Wijffels et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wijffels et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "468a77db-dadd-490f-8d77-a9886719b31b",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C26",
+      "claim": "The stabilized complex is >100 fold more stable than the wild-type complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The obtained complex is >100 fold more stable than the wild-type complex (Figure 1\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "f8f2cc02-bf38-4e23-a4f5-8fefc3523f81",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C27",
+      "claim": "Three structurally distinct groups of particles were identified from a single data set of 63,215 particles.",
+      "claim_type": "EXPLICIT",
+      "source": "Three structurally distinct groups of particles could be identified from a single data set (63,215 particles).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported as a result of the cryo-EM data processing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "04e06190-8c61-4219-8902-7898ac4b49c1",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C28",
+      "claim": "Two of the particle groups represent the PolIII\u03b1-clamp-exonuclease-\u03c4500 with and without DNA bound.",
+      "claim_type": "EXPLICIT",
+      "source": "Two of these represent the PolIII\u03b1-clamp-exonuclease-\u03c4500 with and without DNA bound (Figure 1, Videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported as a result of the cryo-EM data processing, shown in Figure 1 and Videos 1 and 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "e9e82e2d-962f-481b-a1b8-fc2997ba19c4",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C29",
+      "claim": "The DNA-bound structure was refined to 8.0 \u00c5 resolution from 5663 particles.",
+      "claim_type": "EXPLICIT",
+      "source": "The DNA-bound (5663 particles) and DNA-free (16,970 particles) structures were refined to 8.0 and 8.3 \u00c5 resolution, respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported as a result of the cryo-EM refinement",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "e080eaa3-d760-47a4-940e-8a50a3ed5663",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C30",
+      "claim": "The DNA-free structure was refined to 8.3 \u00c5 resolution from 16,970 particles.",
+      "claim_type": "EXPLICIT",
+      "source": "The DNA-bound (5663 particles) and DNA-free (16,970 particles) structures were refined to 8.0 and 8.3 \u00c5 resolution, respectively",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported as a result of the cryo-EM refinement",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "3500c097-22e9-4514-8ba7-46bee961df44",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C31",
+      "claim": "The third class contains DNA but the tail domain of the polymerase and \u03c4500 are not visible due to structural heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "The third class contains DNA too, but in this complex the tail domain of the polymerase and \u03c4500 are not visible due to structural heterogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported as an observation from the cryo-EM data processing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "bc12c8b1-672e-4548-b733-69601c0430d3",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C32",
+      "claim": "The 'DNA-bound, no tail' structure was refined to 7.3 \u00c5 resolution from 40,582 particles.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining particles (40,582) were classified into the third class in which the tail domain is not visible. Due to the larger number of particles, this structure was refined to 7.3 \u00c5 resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reported as a result of the cryo-EM refinement",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "de803125-c35f-42de-93b1-ae502479c10a",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C33",
+      "claim": "The overall conformation of PolIII\u03b1 resembles that of the X-ray structure of E. coli and Taq PolIII\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall conformation of PolIII\u03b1 resembles that of the X-ray structure of E. coli and Taq PolIII\u03b1 (Lamers et al., 2006; Bailey et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with crystal structures cited from Lamers et al., 2006 and Bailey et al., 2006",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "b89bf17c-24c7-41b3-a5d7-8ee774090543",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C34",
+      "claim": "There is a ~15\u00b0 rotation of the fingers domain between the cryo-EM structure and the X-ray structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall conformation of PolIII\u03b1 resembles that of the X-ray structure of E. coli and Taq PolIII\u03b1 (Lamers et al., 2006; Bailey et al., 2006) and reveals only a \u223c15\u00b0 rotation of the fingers domain between the two structures (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reported as a result of structural comparison, shown in Figure 1\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "cf7c9328-9539-48e1-842b-5528d3d49187",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C35",
+      "claim": "PolIII\u03b1 interacts with the clamp through the internal clamp binding motif (residues 920-924).",
+      "claim_type": "EXPLICIT",
+      "source": "PolIII\u03b1 interacts with the clamp through the internal clamp binding motif (residues 920\u2013924) (Dohrmann and McHenry, 2005; Toste R\u00eago et al., 2013) that binds in the canonical binding pocket of the clamp (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Dohrmann and McHenry, 2005 and Toste R\u00eago et al., 2013, and shown in Figure 2B",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "3d664e99-36fa-4a25-9713-c02c558709cb",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C36",
+      "claim": "The region of the polymerase immediately after the clamp binding motif (approximately residues 927-936) is flexible.",
+      "claim_type": "IMPLICIT",
+      "source": "Immediately after the clamp binding motif the density for the polymerase disappears, and resumes \u223c10 residues later, just before the oligonucleotide/oligosaccharide binding (OB) domain, indicating that this region of the polymerase is flexible (Figure 2A, left and middle panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the absence of density in the cryo-EM map",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "6c4433d4-20c3-4b12-aaf2-36e3910d1df6",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C37",
+      "claim": "The PHP domain of the polymerase comes close to but makes no contacts with the clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other side of the complex, across the opening of the clamp, the PHP domain of the polymerase comes close to, but makes no contacts with the clamp (Figure 2A, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in the cryo-EM structure shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "b4c99e39-0908-43c8-a3b6-9328e26db23b",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C38",
+      "claim": "The exonuclease is wedged between the clamp and the thumb domain of PolIII\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the exonuclease is wedged between the clamp and the thumb domain of PolIII\u03b1 (Figure 2A, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in the cryo-EM structure shown in Figure 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "00c4406b-ac02-4828-a2e0-fd9157411766",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C39",
+      "claim": "The catalytic domain of the exonuclease is in direct contact with the polymerase thumb domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The catalytic domain of the exonuclease is in direct contact with the polymerase thumb domain whereas the contact with the clamp is mediated via a canonical clamp binding motif that is located immediately downstream of the catalytic domain (Toste R\u00eago et al., 2013; Jergic et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in the cryo-EM structure and supported by citations to Toste R\u00eago et al., 2013 and Jergic et al., 2013",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "fe13981d-a5df-4cbf-a533-867acc4a960d",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C40",
+      "claim": "Both pockets of the dimeric clamp are occupied in the ternary complex.",
+      "claim_type": "EXPLICIT",
+      "source": "This clamp binding motif is bound to the pocket of the clamp in a manner similar to the polymerase in the other half of the clamp (cf. Figure 2B,C) and hence both pockets of the dimeric clamp are occupied in the ternary complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in the cryo-EM structure shown in Figures 2B and 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "19b0652e-8a96-4256-ba5f-55f1c4318bce",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C41",
+      "claim": "A stretch of approximately 15 residues in the exonuclease tail is disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "Downstream of the clamp binding motif the tail of the exonuclease follows the contours of the polymerase PHP domain, where it is disordered for a stretch of \u223c15 residues that were shown to be mobile by NMR (Ozawa et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in the cryo-EM structure and supported by NMR data cited from Ozawa et al., 2013",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "0996997d-c7f4-4fa7-bc7a-347c54672cff",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C42",
+      "claim": "The C-terminal helix of the exonuclease packs tightly against the PHP domain of PolIII\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the C-terminal helix of the exonuclease that mediates most of the binding to the polymerase (Ozawa et al., 2013) packs tightly against the PHP domain of PolIII\u03b1 (Figure 2A, left and right panel), similar to the crystal structure of the PolIII\u03b1-PHP domain and C-terminal helix of the exonuclease (Ozawa et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in the cryo-EM structure and consistent with crystal structure cited from Ozawa et al., 2013",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "89757c8b-f8d6-4009-ac3d-3fc70b74f511",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C43",
+      "claim": "In the ternary complex the exonuclease simultaneously binds the polymerase and clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, in the ternary complex the exonuclease simultaneously binds the polymerase and clamp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observed contacts in the cryo-EM structure",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "3660684e-1cc4-4d70-b55f-5060656c2dc4",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C44",
+      "claim": "The exonuclease strengthens the association between the polymerase and clamp, which is required for processive DNA synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "By doing so it strengthens the association between the two proteins (Toste R\u00eago et al., 2013), which is required for processive DNA synthesis (Jergic et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Toste R\u00eago et al., 2013 and Jergic et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "87177ff1-47e4-4a20-9d5d-78e0adea92a0",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C45",
+      "claim": "The cryo-EM model shows an improved fit of cross-links compared to the previous model based on cross-linking data alone.",
+      "claim_type": "EXPLICIT",
+      "source": "When we map the same cross-links onto the cryo-EM model we find an improved fit of the cross-links with the model, due to the conformational changes in the complex as well as the detailed information about the interactions between the proteins that could not be modeled based on the cross-links alone (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of cross-linking data with the cryo-EM model shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "de160030-3072-424c-8a41-d46948e82fbe",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C46",
+      "claim": "The NMR structure of residues 500-621 of \u03c4 can be fitted into the density between the tail and fingers domain of the polymerase.",
+      "claim_type": "EXPLICIT",
+      "source": "The NMR structure of residues 500\u2013621 of \u03c4 (Su et al., 2007) can be fitted into the density between the tail and fingers domain of the polymerase (Figure 2D and Figure 2\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Fitting of NMR structure cited from Su et al., 2007 into the cryo-EM density",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "1b4a2cab-421d-4960-a667-792886c0e961",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C47",
+      "claim": "The C-terminal end of \u03c4 is in contact with the tail of the polymerase.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal end of \u03c4 is in contact with the tail of the polymerase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in the cryo-EM structure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "624ca635-dbeb-4083-a7a5-1126aba3a6e4",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C48",
+      "claim": "The last 23 residues of \u03c4 that bind the polymerase are not part of the NMR structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, the last 23 residues of \u03c4 that bind the polymerase (Jergic et al., 2007) are not part of the NMR structure and are therefore not present in our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated limitation of the model based on the available NMR structure",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "3c50a4c7-bc3a-4faa-a0d2-3b827f007cf5",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C49",
+      "claim": "A second contact is found between the globular domain of \u03c4500 and the fingers domain of the polymerase.",
+      "claim_type": "EXPLICIT",
+      "source": "A second contact is found between the globular domain of \u03c4500 and the fingers domain of the polymerase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in the cryo-EM structure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "3426a13d-c65e-4781-b63f-61693d9ce6fb",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C50",
+      "claim": "The contact between \u03c4500 and the polymerase fingers domain is mediated by residues 530-535 and 562-566 of \u03c4500 and residues 657-667 of PolIII\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "This contact is mediated by residues 530\u2013535 and 562\u2013566 of \u03c4500 and residues 657\u2013667 of PolIII\u03b1 (Figure 2\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in the cryo-EM structure shown in Figure 2\u2014figure supplement 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "70bee616-1630-4d0e-af12-2c00c93a022e",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C51",
+      "claim": "The position of \u03c4500 in the E. coli complex is different from the position of the C-terminal domain of \u03c4 in complex with Taq PolIII\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "The position of \u03c4500 in this complex is different from the position of the C-terminal domain of \u03c4 in complex with Taq PolIII\u03b1, where it is located at the opposite side of the polymerase tail (Figure 2\u2014figure supplement 3) (Liu et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison with structure cited from Liu et al., 2013, shown in Figure 2\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "e0903f2b-86d0-447d-9ec6-ca82ddd7ac3a",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C52",
+      "claim": "The C-terminal domain of \u03c4 from E. coli and Taq share no sequence or structural homology.",
+      "claim_type": "EXPLICIT",
+      "source": "It must be noted though that the C-terminal domain of \u03c4 from E. coli and Taq share no sequence or structural homology and therefore engage with the polymerase in different ways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "74b5349a-29ca-4d12-ae24-fa85ea2f35be",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C53",
+      "claim": "The entire length of the 25 base pair duplex is in contact with protein in the DNA-bound complex.",
+      "claim_type": "EXPLICIT",
+      "source": "In the DNA-bound complex (Figure 3), the entire length of the 25 base pair duplex is in contact with protein (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in the cryo-EM structure shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "9ab9dffd-8e44-48c0-bace-61f4436624f7",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C54",
+      "claim": "The position of the DNA is similar to that of the DNA in the crystal structure of Taq PolIII\u03b1 and Geobacillus kaustophilus PolC.",
+      "claim_type": "EXPLICIT",
+      "source": "The position of the DNA is similar to that of the DNA in the crystal structure of Taq PolIII\u03b1 and Geobacillus kaustophilus PolC (Wing et al., 2008; Evans et al., 2008) (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison with crystal structures cited from Wing et al., 2008 and Evans et al., 2008, shown in Figure 3\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "26df5ce5-3c37-4c50-a7f0-d90b2b9f8363",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C55",
+      "claim": "No density is observed for the 4 nucleotide single stranded overhang on the template strand, indicating that this part of the DNA is flexible.",
+      "claim_type": "EXPLICIT",
+      "source": "No density is observed for the 4 nucleotide (nt) single stranded overhang on the template strand indicating that this part of the DNA is flexible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the absence of density in the cryo-EM map",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "eb49f47b-c270-485b-8b0f-c836f004ceab",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C56",
+      "claim": "All contacts to the DNA are mediated by the thumb, palm and fingers domains of the polymerase and the inner surface of the clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "In the complex, all contacts to the DNA are mediated by the thumb, palm and fingers domains of the polymerase and the inner surface of the clamp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in the cryo-EM structure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "a8b6e38e-2caf-4843-90a3-ed27e4387c28",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C57",
+      "claim": "No contacts to the DNA are made by the polymerase OB domain, the exonuclease, or \u03c4500.",
+      "claim_type": "EXPLICIT",
+      "source": "No contacts to the DNA are made by the polymerase OB domain, the exonuclease, or \u03c4500.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in the cryo-EM structure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "d2bd2668-bcc5-4cc0-880f-f6112e0330fc",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C58",
+      "claim": "The most extensive DNA contacts occur at the primer 3' end in polymerase active site where the thumb, palm and fingers domain of the polymerase contact the first 9 base pairs of the DNA duplex.",
+      "claim_type": "EXPLICIT",
+      "source": "The most extensive DNA contacts occur at the primer 3' end in polymerase active site where the thumb, palm and fingers domain of the polymerase contact the first 9 base pairs of the DNA duplex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in the cryo-EM structure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "dcd29443-0621-4cf4-b660-de2f84288b97",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C59",
+      "claim": "A loop of the thumb (residues 464-470) is inserted into the major groove of the DNA, making the only non-backbone contact.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also here that the only non-backbone contact is made by a loop of the thumb (residues 464\u2013470), which is inserted into the major groove of the DNA (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in the cryo-EM structure shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "bfdb06b8-bc06-4d62-9708-8303cbcf6163",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C60",
+      "claim": "The tip of the fingers domain makes additional contacts to the DNA away from the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "Away from the active site, the tip of the fingers domain (i.e. little finger [Lamers et al., 2006] or \u03b2 binding domain [Bailey et al., 2006]), makes additional contacts to the DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in the cryo-EM structure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "adc97679-0a73-4cc4-9c30-e4006cc1f33b",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C61",
+      "claim": "Several positively charged residues (K831, K872, R876, R877, K881) and the positive charge of the helix dipole of two helices (residues 842-856 and 875-886) are pointed towards the DNA backbone at the tip of the fingers domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, several positively charged residues (K831, K872, R876, R877, K881) as well as the positive charge of the helix dipole of two helices (residues 842\u2013856 and 875\u2013886) are pointed towards the DNA backbone (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in the cryo-EM structure shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "b51e638a-5883-45be-b83d-1d0f2085c43e",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C62",
+      "claim": "The OB domain is in close proximity of the DNA but makes no contacts with it.",
+      "claim_type": "EXPLICIT",
+      "source": "At this position, the OB domain is in close proximity of the DNA but makes no contacts with it (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in the cryo-EM structure shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "f4b19f88-c711-411b-833c-c7d95aeb8a8f",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C63",
+      "claim": "The OB domain forms a bridge between the PolIII\u03b1 fingers domain, thumb domain, and the exonuclease.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the OB domain forms a bridge between the PolIII\u03b1 fingers domain, thumb domain, and the exonuclease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in the cryo-EM structure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "adcc7f9c-edc3-4345-b645-0e1b95790156",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C64",
+      "claim": "The isolated OB domain has been shown to bind to ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while the isolated OB domain has been shown to bind to ssDNA (Georgescu et al., 2009), in this complex the OB domain is \u223c40 \u00c5 away from the ssDNA template.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Georgescu et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "32c4e747-e34b-4ef9-b0ce-9d81088965d2",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C65",
+      "claim": "In the complex, the OB domain is approximately 40 \u00c5 away from the ssDNA template.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while the isolated OB domain has been shown to bind to ssDNA (Georgescu et al., 2009), in this complex the OB domain is \u223c40 \u00c5 away from the ssDNA template.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in the cryo-EM structure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "6dc47d46-ac76-40c3-b883-66ea64b2b368",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C66",
+      "claim": "The DNA interacts with the clamp that surrounds the DNA like a nut around a bolt.",
+      "claim_type": "EXPLICIT",
+      "source": "The DNA furthermore interacts with the clamp that surrounds the DNA like a nut around a bolt (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in the cryo-EM structure shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "85d734a6-5e5b-45ed-a951-2050267232ec",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C67",
+      "claim": "Several non-specific contacts are made to the backbone of the DNA providing an electrostatic cushion for the DNA to pass through.",
+      "claim_type": "EXPLICIT",
+      "source": "Several non-specific contacts are made to the backbone of the DNA providing an electrostatic cushion for the DNA to pass through as it leaves the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in the cryo-EM structure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "fb7b8cdc-1103-4f35-99d2-0ec4a9b2dbdb",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C68",
+      "claim": "Compared to the crystal structure of the isolated clamp bound to DNA, the clamp is rotated by approximately 20\u00b0, resulting in an almost perpendicular orientation (approximately 80\u00b0) with respect to the DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the crystal structure of the isolated clamp bound to DNA (Georgescu et al., 2008a) the clamp is rotated by \u223c20\u00b0, resulting in an almost perpendicular orientation (\u223c80\u00b0) with respect to the DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with crystal structure cited from Georgescu et al., 2008a",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "3b143391-64bc-4615-9fef-fdb60d03e195",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C69",
+      "claim": "In the 19 \u00c5 negative stain EM structure of Pyrococcus furiosus PolB, the DNA runs straight through the clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "In the 19 \u00c5, negative stain EM structure of Pyrococcus furiosus PolB, the only other known structure of a DNA polymerase in complex with clamp and DNA, the DNA runs straight through the clamp as well (Mayanagi et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mayanagi et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "77026190-3a67-4597-92d2-0b44c5caac3d",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C70",
+      "claim": "PolIII\u03b1 has DNA synthesis speeds of up to 600-1000 nt/s.",
+      "claim_type": "EXPLICIT",
+      "source": "PolIII\u03b1 is an extremely fast DNA polymerase with DNA synthesis speeds of up to 600\u20131000 nt/s (Mok and Marians, 1987; Mcinerney et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mok and Marians, 1987 and Mcinerney et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "977725fa-2772-4f91-a473-b70c2e17a72e",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C71",
+      "claim": "E. coli Pol I has a synthesis speed of 15 nt/s.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the E. coli DNA polymerases Pol I, Pol II, and Pol IV have synthesis speeds of 15, 10, and 1 nt/s, respectively (Schwartz and Quake, 2009; Indiani et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schwartz and Quake, 2009 and Indiani et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "8adf1008-8f70-4c57-b966-a8916b9e6e1c",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C72",
+      "claim": "E. coli Pol II has a synthesis speed of 10 nt/s.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the E. coli DNA polymerases Pol I, Pol II, and Pol IV have synthesis speeds of 15, 10, and 1 nt/s, respectively (Schwartz and Quake, 2009; Indiani et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schwartz and Quake, 2009 and Indiani et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "67bfa13d-a96e-48fc-b86e-b464f00bb577",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C73",
+      "claim": "E. coli Pol IV has a synthesis speed of 1 nt/s.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the E. coli DNA polymerases Pol I, Pol II, and Pol IV have synthesis speeds of 15, 10, and 1 nt/s, respectively (Schwartz and Quake, 2009; Indiani et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schwartz and Quake, 2009 and Indiani et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "a6b2de4d-219b-41e1-9e00-784068755179",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C74",
+      "claim": "In isolation, PolIII\u03b1 has a surprisingly low affinity for DNA when compared to the other E. coli DNA polymerases.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in isolation PolIII\u03b1 has a surprisingly low affinity for DNA when compared to the other E. coli DNA polymerase (Figure 3\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by experimental data shown in Figure 3\u2014figure supplement 2A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "c35cd56e-e9c7-4bef-80ae-878182c83593",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C75",
+      "claim": "PolIII\u03b1 has a uniquely long fingers domain that is more than twice as long as the other E. coli DNA polymerases.",
+      "claim_type": "EXPLICIT",
+      "source": "To this effect, PolIII\u03b1 may have evolved its uniquely long fingers domain that is more than twice as long as the other E. coli DNA polymerases (Figure 3\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison shown in Figure 3\u2014figure supplement 2B",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "4ca57db5-37f1-4634-91f6-45fc7e157b9e",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C76",
+      "claim": "In PolIII\u03b1, the number of base pairs between the 3' end of the primer and the opening of the clamp is 22.",
+      "claim_type": "EXPLICIT",
+      "source": "In PolIII\u03b1, the number of base pairs between the 3' end of the primer and the opening of the clamp is 22, while the predicted number of base pairs for Pol I, Pol II, and Pol IV is \u223c15.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured from the cryo-EM structure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "9c413f14-1041-4643-a3c7-2061c2f85770",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C77",
+      "claim": "The predicted number of base pairs between the 3' end of the primer and the opening of the clamp for Pol I, Pol II, and Pol IV is approximately 15.",
+      "claim_type": "EXPLICIT",
+      "source": "In PolIII\u03b1, the number of base pairs between the 3' end of the primer and the opening of the clamp is 22, while the predicted number of base pairs for Pol I, Pol II, and Pol IV is \u223c15.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Predicted from structural modeling",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "e5f4d8e9-0e5a-4c83-97b7-d51d68b8cb15",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C78",
+      "claim": "PolIII\u03b1 is the only polymerase that inserts a loop of the thumb domain into the major groove of the DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, the sequence-independent backbone contacts and the perfectly straight B-form DNA may facilitate the rapid exit of the DNA from the active site. The active site itself is wrapped tightly around the DNA where PolIII\u03b1 is the only polymerase that inserts a loop of the thumb domain into the major groove of the DNA, while the thumb domains of Pol I, Pol II, and Pol IV only have backbone contacts with the DNA (Figure 3\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison shown in Figure 3\u2014figure supplement 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "9febc0a2-023a-4c1e-8bbb-6ec15ab63dc0",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C79",
+      "claim": "The thumb domains of Pol I, Pol II, and Pol IV only have backbone contacts with the DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "At the same time, the sequence-independent backbone contacts and the perfectly straight B-form DNA may facilitate the rapid exit of the DNA from the active site. The active site itself is wrapped tightly around the DNA where PolIII\u03b1 is the only polymerase that inserts a loop of the thumb domain into the major groove of the DNA, while the thumb domains of Pol I, Pol II, and Pol IV only have backbone contacts with the DNA (Figure 3\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison shown in Figure 3\u2014figure supplement 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "487affbf-34b2-4cc6-9b61-57cb9bff4378",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C80",
+      "claim": "The combination of unique contacts with the DNA may have evolved to support the high speeds of DNA synthesis by PolIII\u03b1 without compromising accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, it seems plausible that this combination of unique contacts with the DNA may have evolved to support the high speeds of DNA synthesis by PolIII\u03b1 without compromising accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative interpretation of the structural observations",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "0780a976-86a4-445c-a78e-f1465b790654",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C81",
+      "claim": "The complex undergoes extensive conformational changes from the DNA-free to the DNA-bound state.",
+      "claim_type": "EXPLICIT",
+      "source": "To enable the many contacts with the DNA, the complex undergoes extensive conformational changes from the DNA-free to the DNA-bound state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed by comparing the two cryo-EM structures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "53cbd72c-7b2d-4725-9867-193f70f3b043",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C82",
+      "claim": "There is a ~35\u00b0 rotation of the polymerase tail and \u03c4500 from the DNA-free to the DNA-bound state.",
+      "claim_type": "EXPLICIT",
+      "source": "Most prominent is a \u223c35\u00b0 rotation of the polymerase tail and \u03c4500, which move from a position over the polymerase active site to a position adjacent to the sliding clamp (Figures 1,4 and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed by comparing the two cryo-EM structures shown in Figures 1, 4 and Video 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "01ab2faf-674f-4f73-aa5a-0a7bf7033ea2",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C84",
+      "claim": "The tail of PolIII\u03b1 consists of the OB domain (residues 960-1071) and the C-terminal \u03c4-binding domain (residues 1079-1160).",
+      "claim_type": "EXPLICIT",
+      "source": "The tail of PolIII\u03b1 consists of the OB domain (residues 960\u20131071) and the C-terminal \u03c4-binding domain (residues 1079\u20131160).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a structural definition",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "250ee7c7-6fda-4a17-95f1-9c3163bb5fad",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C85",
+      "claim": "The polymerase tail and \u03c4500 together form a rigid structure that shows few changes between the DNA free and DNA bound structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with \u03c4500 they form a rigid structure that shows few changes between the DNA free and DNA bound structure, indicating that the interaction between \u03c4500 and the tail of PolIII\u03b1 must be stable (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed by comparing the two cryo-EM structures shown in Figure 4C",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "68d38d99-c3ee-4e76-8ca5-8211a68df5bd",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C86",
+      "claim": "The interaction between \u03c4500 and the tail of PolIII\u03b1 is stable.",
+      "claim_type": "IMPLICIT",
+      "source": "Together with \u03c4500 they form a rigid structure that shows few changes between the DNA free and DNA bound structure, indicating that the interaction between \u03c4500 and the tail of PolIII\u03b1 must be stable (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the observation that the structure shows few changes between states",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "eed7f1de-910a-43e8-a6e5-2994404163d3",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C87",
+      "claim": "As a result of the repositioning of the polymerase tail, the contact between \u03c4500 and the fingers domain of the polymerase is broken.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result of the repositioning of the polymerase tail, the contact between \u03c4500 and the fingers domain of the polymerase is broken and a new contact between the OB domain and the clamp is forged (Figure 4B and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed by comparing the two cryo-EM structures shown in Figure 4B and Video 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "616145d9-3f2d-4519-abb8-0c7ea70982e1",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C88",
+      "claim": "A new contact between the OB domain and the clamp is forged in the DNA-bound state.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result of the repositioning of the polymerase tail, the contact between \u03c4500 and the fingers domain of the polymerase is broken and a new contact between the OB domain and the clamp is forged (Figure 4B and Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in the DNA-bound cryo-EM structure shown in Figure 4B and Video 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "6b3e4db2-47d5-480b-922f-147bb52a802c",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C89",
+      "claim": "The OB domain makes two new contacts with the clamp via a short helix (1035-1043) and a long protruding loop (1003-1013).",
+      "claim_type": "EXPLICIT",
+      "source": "The OB domain makes two new contacts with the clamp via a short helix (1035\u20131043) and a long protruding loop (1003\u20131013) (Figure 4D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in the DNA-bound cryo-EM structure shown in Figures 4D and 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "d7322093-a614-4a21-82a2-4b07e88daf56",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C90",
+      "claim": "The OB domain contacts the clamp at loops 24-28 and 275-278.",
+      "claim_type": "EXPLICIT",
+      "source": "These motifs contact the clamp at loops 24\u201328 and 275\u2013278, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed in the DNA-bound cryo-EM structure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "b3674556-7ea2-4eea-8517-3df22ae78425",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C91",
+      "claim": "In the DNA-bound complex, the polymerase has three points of contact to the clamp: one via the canonical clamp binding motif (residues 920-925), one indirectly via the exonuclease, and one contact via the OB domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence in the DNA-bound complex, the polymerase has three points of contact to the clamp: one via the canonical clamp binding motif (residues 920\u2013925: Figure 2B); one indirectly via the exonuclease (Figure 2C); and one contact via the OB domain (Figure 4D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in the DNA-bound cryo-EM structure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "85a245b8-07ed-4289-8ba7-d5bcf4380cfe",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C92",
+      "claim": "A triple mutation in OB domain (R1004S, K1009S, R1010S) results in reduced DNA synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, it has been shown that a triple mutation in OB domain result in reduced DNA synthesis (Georgescu et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Georgescu et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "1d1fd695-d6c1-41eb-89a8-a65529102d87",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C93",
+      "claim": "The mutations R1004S, K1009S, R1010S are located at the interface between the OB domain and the clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in our structure the OB domain is far away (\u223c40 \u00c5) from the ssDNA overhang of the template strand. Instead, the mutations (R1004S, K1009S, R1010S) are located at the interface between the OB domain and the clamp (Figure 4E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in the cryo-EM structure shown in Figure 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "d3c294d9-3411-4365-8c18-49a98e4eb0be",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C94",
+      "claim": "The mutations R1004S, K1009S, R1010S could weaken the interaction between the polymerase and clamp, providing an alternative explanation for the reduced DNA synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the mutations (R1004S, K1009S, R1010S) are located at the interface between the OB domain and the clamp (Figure 4E) and therefore could weaken the interaction between the polymerase and clamp, providing an alternative explanation for the reduced DNA synthesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from the location of the mutations in the cryo-EM structure",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "ea59ea6a-8431-4372-8092-3de93c591f80",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C95",
+      "claim": "The cryo-EM structures reveal the nature of the interactions in the ternary complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The cryo-EM structures of the PolIII\u03b1-clamp-exonuclease-\u03c4500 complex presented in this work finally reveal the nature of the interactions in the ternary complex and are a crucial step forward towards determining the structure of the complete bacterial replisome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of the main findings of the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "9c9520a2-8660-4a2a-8a84-5863aa1359ee",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C96",
+      "claim": "The structures are a crucial step forward towards determining the structure of the complete bacterial replisome.",
+      "claim_type": "EXPLICIT",
+      "source": "The cryo-EM structures of the PolIII\u03b1-clamp-exonuclease-\u03c4500 complex presented in this work finally reveal the nature of the interactions in the ternary complex and are a crucial step forward towards determining the structure of the complete bacterial replisome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as the significance of the work",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "5c9add7d-9ef3-4df9-baab-266c41268f4f",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C97",
+      "claim": "The structures show how the clamp and exonuclease tether the polymerase to the DNA through multiple contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Our cryo-EM structures furthermore provide a crucial insight into the structural organization of the replicative DNA polymerase and its associated proteins clamp, exonuclease and \u03c4500. They show how the clamp and exonuclease tether the polymerase to the DNA through multiple contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of structural observations from the cryo-EM data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "d3e23638-7c27-4dcd-b2bd-ef01b43cd470",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C98",
+      "claim": "The structures reveal a large conformational change where the tail of the polymerase moves from interacting with the clamp in the DNA-bound state, to a position 35 \u00c5 away from the clamp in the DNA-free state.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, they also reveal a large conformational change where the tail of the polymerase moves from interacting with the clamp in the DNA-bound state, to a position 35 \u00c5 away from the clamp in the DNA-free state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observed by comparing the two cryo-EM structures",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "9354b5b8-7e17-4efb-98f7-350e57aaede0",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C99",
+      "claim": "On the lagging strand, the polymerase repositions to a newly primed site every approximately 1000 bp.",
+      "claim_type": "EXPLICIT",
+      "source": "On the lagging strand, the polymerase repositions to a newly primed site every \u223c1000 bp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about lagging strand synthesis",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "ba73f448-8e02-4818-818e-fea2ad8ce670",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C100",
+      "claim": "The polymerase needs to release both clamp and DNA to reposition on the lagging strand.",
+      "claim_type": "EXPLICIT",
+      "source": "To do so, the polymerase needs to release both clamp and DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the requirement to reposition",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "5709dffd-f664-4f14-a569-d92377bc4873",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C101",
+      "claim": "The switch-like movement of the polymerase tail may play a part in the release and consequent repositioning of the polymerase at the end of the Okazaki fragment.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the switch-like movement of the polymerase tail may play a part in the release and consequent repositioning of the polymerase at the end of the Okazaki fragment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanism based on the structural observations",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "ea627eea-af2d-4158-a7ce-374eb57cee0f",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C102",
+      "claim": "During DNA synthesis, the tail of the polymerase is bound to the clamp, stabilizing the interaction between polymerase and clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "During DNA synthesis, the tail of the polymerase is bound to the clamp, stabilizing the interaction between polymerase and clamp (marked with '1' in Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Proposed model based on the DNA-bound structure shown in Figure 5",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "26ad2a54-97bf-4209-9c35-a7f2aeeee0f4",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C103",
+      "claim": "The DNA-bound conformation may be further stabilized by the presence of a DNA binding region immediately upstream of \u03c4500.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirmation may be further stabilized by the presence of a DNA binding region immediately upstream of \u03c4500 (marked with '2') (Jergic et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Proposed model based on data cited from Jergic et al., 2007",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "e29333f2-86a3-4707-9f9a-cd4b8be0c6ef",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C104",
+      "claim": "Upon encounter of a release signal, \u03c4500 rebinds to the polymerase fingers domain, sequestering the polymerase tail away from the clamp and initiating the dissociation of the polymerase from clamp and DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon encounter of a release signal, \u03c4500 rebind to the polymerase fingers domain (marked with '3') thus sequestering the polymerase tail away from the clamp (marked with '4') and initiating the dissociation of the polymerase from clamp and DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Proposed mechanism based on the structural observations",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "f5ecbecd-98f6-452c-9bdf-4e854ea18b8d",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C105",
+      "claim": "In the 'collision' model, the encounter with the dsDNA of the previous Okazaki fragment induces the release of the polymerase.",
+      "claim_type": "EXPLICIT",
+      "source": "Two non-exclusive models have been proposed (Li and Marians, 2000). In the 'collision' model, the encounter with the dsDNA of the previous Okazaki fragment induces the release of the polymerase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Li and Marians, 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "1efcde5a-843d-4fcf-b614-72b5580cd043",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C106",
+      "claim": "A decreasing gap size between the 3' terminus of the lagging strand and the 5' end of the previously synthesized Okazaki fragment promotes release of the polymerase.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this model, it has been shown that a decreasing gap size between the 3' terminus of the lagging strand and the 5' end of the previously synthesized Okazaki fragment promotes release of the polymerase (Leu et al., 2003; Georgescu et al., 2009; Dohrmann et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Leu et al., 2003, Georgescu et al., 2009, and Dohrmann et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "7a6a3db7-afd3-4a00-8e95-b4e2bf37ae5e",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C107",
+      "claim": "The ssDNA binding properties of the OB domain in the tail of the polymerase has been proposed to play a role in the sensing of the ssDNA vs dsDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The ssDNA binding properties of the OB domain in the tail of the polymerase has been proposed to play a role in the sensing of the ssDNA vs dsDNA (Georgescu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Georgescu et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "2a25010b-eac4-41ff-9f51-8d0923b77462",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C108",
+      "claim": "The C-terminal fragment of \u03c4 may act as the sensor for the decreasing gap size as it is required to release the polymerase from a decreasing gap size.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, it has been proposed that the C-terminal fragment of \u03c4 may act as the sensor as it is required to release the polymerase from a decreasing gap size (Leu et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Leu et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "c792fc8b-48db-450e-bcff-90137a586bbc",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C109",
+      "claim": "The region in \u03c4 immediately upstream of \u03c4500 has DNA binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it was found that the region in \u03c4, immediately upstream of \u03c4500, has DNA binding affinity (Jergic et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Jergic et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "5913723c-0720-44c9-b63b-ad24d3eab8b9",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C110",
+      "claim": "The release of the polymerase by a decreasing gap size is too slow (t1/2 = 110 s) for the frequency at which the lagging strand polymerase is re-positioned (every 1-2 s).",
+      "claim_type": "EXPLICIT",
+      "source": "Contesting the collision model is the observation that the release of the polymerase by a decreasing gap size is too slow (t1/2 = 110 s) for the frequency at which the lagging strand polymerase is re-positioned (every 1\u20132 s) (Dohrmann et al., 2011), suggesting that additional or alternative release factors are required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dohrmann et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "7c494f32-0d96-4706-9db2-8629dd580f7b",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C111",
+      "claim": "The 'signaling' model proposes that the trigger comes from one of the other components of the replisome such as the RNA primase DnaG.",
+      "claim_type": "EXPLICIT",
+      "source": "The alternative 'signaling' model therefore proposes that the trigger comes from one of the other components of the replisome such as the RNA primase DnaG, based on the observation that the increased primase concentration results in shorter lagging strand fragments (Wu, Zechner and Marians, 1992; Li and Marians, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wu, Zechner and Marians, 1992 and Li and Marians, 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "f35c1220-1868-4ca3-b695-2c2cd136722c",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C112",
+      "claim": "Increased primase concentration results in shorter lagging strand fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "The alternative 'signaling' model therefore proposes that the trigger comes from one of the other components of the replisome such as the RNA primase DnaG, based on the observation that the increased primase concentration results in shorter lagging strand fragments (Wu, Zechner and Marians, 1992; Li and Marians, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Wu, Zechner and Marians, 1992 and Li and Marians, 2000",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "705c7529-f710-4623-9cb9-4cf4a59ada96",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C113",
+      "claim": "The presence of a primer alone is sufficient to induce release at the lagging strand and activity of the primase is not required.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it was recently shown that the presence of a primer alone is sufficient to induce release at the lagging strand and that activity of the primase is not required (Yuan and McHenry, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yuan and McHenry, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "d668364a-33d3-4ef5-9356-91a5505ed02d",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C114",
+      "claim": "The \u03c4 protein is both part of the clamp loader complex that positions clamps onto the primer and simultaneously binds the polymerase, making it a suitable conveyor of the signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, the fact that the \u03c4 protein is both part of the clamp loader complex that positions clamps onto the primer and simultaneously binds the polymerase makes this a suitable conveyor of the signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from known properties of \u03c4",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "5c161e12-a900-4a71-8eb8-59da47367d59",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C115",
+      "claim": "Amino acid residues 920-924 of E. coli PolIII\u03b1 were changed from QADMF to QLDLF to increase binding to the clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "To increase binding to the clamp, amino acid residues 920\u2013924 of E. coli PolIII\u03b1 were changed by site directed mutagenesis from QADMF to QLDLF, while in the exonuclease residues 182\u2013187 were changed from QTSMAF to QLSLPL, based on sequences described in (Wijffels et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described as a method used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "0961f061-2e9e-4c51-882d-39a235cc3620",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C116",
+      "claim": "In the exonuclease, residues 182-187 were changed from QTSMAF to QLSLPL to increase binding to the clamp.",
+      "claim_type": "EXPLICIT",
+      "source": "To increase binding to the clamp, amino acid residues 920\u2013924 of E. coli PolIII\u03b1 were changed by site directed mutagenesis from QADMF to QLDLF, while in the exonuclease residues 182\u2013187 were changed from QTSMAF to QLSLPL, based on sequences described in (Wijffels et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described as a method used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "2ef2c5db-fb60-498c-9067-4b17590a8bb0",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C117",
+      "claim": "Data was collected using a Titan Krios electron microscope operated at 300 kV equipped with a K2 summit direct electron detector.",
+      "claim_type": "EXPLICIT",
+      "source": "All data was collected using a Titan Krios electron microscope (FEI) operated at 300 kV equipped with a K2 summit direct electron detector (Gatan, Pleasaston, CA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described as a method used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "c4d45acd-e68f-4562-a8aa-662a5ad5459c",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C118",
+      "claim": "Images were collected in single-electron counting mode at a calibrated magnification of 28.571x (1.76 \u00c5/pixel).",
+      "claim_type": "EXPLICIT",
+      "source": "Images were collected in single-electron counting mode at a calibrated magnification of 28.571x (1.76 \u00c5/pixel), using a flux of 2 e/\u00c52/sec and a total dose of 40 e/\u00c52 over a total of 20 frames.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described as a method used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "b19ba46a-0589-44b2-9627-61b0df7b26f5",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C119",
+      "claim": "A total of 1350 micrographs were recorded from which >550,000 particles were picked automatically.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 1350 micrographs were recorded from which >550,000 particles were picked automatically in Relion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described as a result of the data collection",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "0c56b49d-fd6c-4716-9cdc-3916b54314d0",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C120",
+      "claim": "After 2D classification, a dataset of approximately 90,000 particles was obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "After 2D classification, a large number of spurious particles as well as particles that show free polymerase or free clamp were removed, yielding a dataset of \u223c90,000 particles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described as a result of the data processing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "c65f5714-f5db-4d86-8191-47b31573e9d8",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C121",
+      "claim": "The resolution of these reconstructions is limited by both the relatively small size of the complex (250 kDa) and the inherent flexibility of this four-protein and DNA complex.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that the resolution of these reconstructions is limited by both the relatively small size of the complex (250 kDa), which hampers accurate alignment and classification, and the inherent flexibility of this four-protein and DNA complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of the resolution limitations",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "a06fa633-6129-4bab-8bf2-136aefeaa18a",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C122",
+      "claim": "The maps are of excellent quality, with individual helices, \u03b2-sheets, and loops clearly visible.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, the maps are of excellent quality, with individual helices, \u03b2-sheets, and loops clearly visible in the map (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Assessment of the cryo-EM map quality shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "3462b37a-7262-4080-bb92-4f81fe8ee2ae",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C123",
+      "claim": "The PolIII\u03b1 structure was divided into five domains that were fitted independently into density as rigid bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "The PolIII\u03b1 structure was divided into five domains that were further fitted independently into density as rigid bodies (see Figure 1\u2014figure supplement 3B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Described as a method used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "520cc05e-fb9c-4979-8ded-6831ae178c67",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "claim_id": "C124",
+      "claim": "The five domains of PolIII\u03b1 are: PHP (residues 1-280), palm-fingers (residues 281-432 + 510-810), thumb (residues 433-509), tip-of-fingers (residues 811-928) and C-terminal tail (residues 929-1160).",
+      "claim_type": "EXPLICIT",
+      "source": "These domains were: PHP (residues 1\u2013280), palm-fingers (residues 281\u2013432 + 510\u2013810), thumb (residues 433\u2013509), tip-of-fingers (residues 811\u2013928) and C-terminal tail (residues 929\u20131160).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Described as a method used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8e244cd3-4b99-4f6f-af63-1cda0078bcb3",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors determined cryo-EM structures of the PolIII\u03b1-clamp-exonuclease-\u03c4500 complex in DNA-bound (8.0 \u00c5) and DNA-free (8.3 \u00c5) states using site-directed mutagenesis to stabilize the complex and computational classification to resolve structural heterogeneity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23, C26-C30, C32 provide convergent evidence for successful structure determination at the reported resolutions. The methodological claims (C115-C124) describe the stabilization strategy and data processing pipeline. The resolution is modest (7.3-8.3 \u00c5) but the authors demonstrate map quality is sufficient for rigid-body fitting (C122). The use of stabilizing mutations is well-justified (C24, C26) and the particle numbers are adequate for the achieved resolutions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "fb3d28df-1e8f-4732-9522-598624a1cb99",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In the DNA-free complex, PolIII\u03b1 adopts a conformation similar to crystal structures but with the exonuclease wedged between the clamp and polymerase thumb, simultaneously binding both proteins and occupying both pockets of the dimeric clamp.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C45 collectively describe the architecture of the DNA-free complex with consistent structural observations. The exonuclease bridging function (C38-C44) is well-supported by the cryo-EM density and consistent with prior biochemical data (C16, C44). The improved fit compared to cross-linking models (C45) validates the structural interpretation. The 8 \u00c5 resolution is sufficient to identify domain positions and major contacts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "3947b20c-b392-4747-bc42-cc501a748e6a",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "\u03c4500 binds the polymerase through two contacts: the C-terminal region contacts the polymerase tail, and the globular domain contacts the fingers domain (residues 530-535, 562-566 of \u03c4500 with residues 657-667 of PolIII\u03b1), adopting a different position than in the Taq PolIII\u03b1-\u03c4c complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C52 describe the \u03c4500 binding mode with specific residue-level details. The fitting of the NMR structure (C46) is appropriate given the resolution. The limitation regarding missing C-terminal residues (C48) is acknowledged. The comparison with Taq (C51-C52) is valid and the structural differences are rationalized by lack of sequence homology. The two-contact binding mode is clearly observed in the density.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "52f1cb54-5f33-4dea-b82d-5ef0775eaf85",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In the DNA-bound complex, the 25 bp DNA duplex is contacted along its entire length by the polymerase (thumb, palm, fingers domains) and clamp, with the most extensive contacts at the active site including a unique thumb loop insertion into the major groove, while the OB domain, exonuclease, and \u03c4500 make no DNA contacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C69 provide a comprehensive description of DNA-protein interactions in the complex. The DNA positioning is validated by comparison with crystal structures (C54). The observation that the OB domain is ~40 \u00c5 from ssDNA (C65) contradicts prior models (C64, C107) but is clearly supported by the structure. The clamp orientation (~80\u00b0 to DNA, C68) is well-defined and consistent with other polymerase-clamp-DNA structures (C69). The unique thumb insertion (C59) is a specific structural feature clearly visible at 8 \u00c5 resolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "1031a191-aae2-4342-973e-560c88ec8949",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "PolIII\u03b1 has evolved unique structural features to support its exceptionally high synthesis speed (600-1000 nt/s) including an extended fingers domain that creates 22 bp of DNA contacts (vs ~15 bp for other E. coli polymerases), a unique thumb loop insertion into the DNA major groove, and surprisingly low intrinsic DNA affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70-C79 present comparative structural and biochemical data, but C80 is speculative about evolutionary adaptation. While the structural differences are well-documented (C75-C79) and the low DNA affinity is experimentally demonstrated (C74), the causal link between these features and high synthesis speed is inferential. The comparison with other polymerases (C71-C73, C77) relies partly on modeling (C77). The hypothesis is plausible but requires functional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "e73ef30e-3ac5-42bb-bfc4-2d6a6299e840",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "DNA binding induces a large conformational change involving ~35\u00b0 rotation of the polymerase tail and \u03c4500, breaking the \u03c4500-fingers contact and establishing a new OB domain-clamp interaction, resulting in three polymerase-clamp contact points in the DNA-bound state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C91 describe a major conformational transition between the two structures. The ~35\u00b0 rotation (C82) and 70 \u00c5 displacement are substantial and clearly visible in the structures. The rigid-body movement of the tail-\u03c4500 unit (C85-C86) is well-supported. The new OB domain-clamp contacts (C88-C90) are defined at the residue level and visible in the density. The three-point attachment model (C91) integrates observations from both structures. This is a key mechanistic finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "7a9a1ab7-5585-4fee-9ab4-418c627b0f81",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose that mutations R1004S, K1009S, R1010S in the OB domain reduce DNA synthesis by weakening the polymerase-clamp interaction rather than by disrupting ssDNA binding as previously proposed, based on the location of these residues at the OB domain-clamp interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C94 reinterpret prior mutational data (C92) based on the new structural information. The location of the mutated residues at the OB-clamp interface (C93) is clearly observed in the structure and contradicts the previous ssDNA binding model since the OB domain is ~40 \u00c5 from ssDNA (C65). This is a valid alternative explanation but remains a hypothesis requiring experimental validation. The structural evidence strongly supports the reinterpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "864bfc96-fad8-4e86-8c83-647a8f9310d3",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The cryo-EM structures reveal the molecular architecture of the PolIII\u03b1-clamp-exonuclease-\u03c4500 complex, showing how the polymerase is tethered to DNA through multiple protein contacts and undergoes large conformational changes, representing a crucial step toward determining the complete replisome structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C95-C98 summarize the major findings of the study. The structures do reveal the nature of interactions in the ternary complex (C95, C97) and document the large conformational change (C98). The significance claim (C96) is reasonable given this is the first structure of this complex. These are appropriate summary statements supported by the detailed structural results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "39f164a6-ca74-4cd7-bb11-d0c2ac83a04a",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose a mechanistic model where the switch-like movement of the polymerase tail, potentially stabilized by \u03c4500 DNA binding, plays a role in polymerase release and repositioning during lagging strand synthesis, with \u03c4500 sequestering the tail away from the clamp in response to a release signal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C99-C104 present a mechanistic hypothesis based on the structural observations. While the conformational change is well-documented (C81-C82, C98), the functional interpretation (C101, C104) is speculative. The model is logical and consistent with the structures, but lacks direct experimental validation. Claims C102-C103 involve additional speculation about DNA binding by \u03c4 (C103 cites prior work but applies it speculatively). This is a reasonable working model but requires functional testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "55ca9eb8-2725-42e9-826f-2c801a4fd30d",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors discuss two models for polymerase release at the lagging strand ('collision' and 'signaling'), noting that while gap size decrease promotes release, the kinetics are too slow for physiological frequency, and that \u03c4 is well-positioned to convey signals from primer binding to the polymerase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C114 review prior literature on polymerase release mechanisms. The citations support the existence of both models (C105, C111) and the kinetic mismatch problem (C110). The observation that primer presence is sufficient (C113) is from recent literature. The speculation about \u03c4 as a signal conveyor (C114) is logical given its dual binding to clamp loader and polymerase, though it remains hypothetical. This is a fair assessment of the field and how the current structures inform mechanistic understanding.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "808cb599-da33-44de-8e34-f3cf7b5c2189",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The introduction establishes that E. coli DNA replication is highly efficient (600-1000 nt/s, >100,000 bp/binding event, ~1 error per million) and performed by the DNA polymerase III holoenzyme, a 1 MDa complex whose PolIII\u03b1-clamp-exonuclease-\u03c4c subcomplex structure has remained elusive due to its dynamic nature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C22 provide background information supported by appropriate citations. These establish the biological context and justify the structural study. The efficiency parameters (C1-C3), complex composition (C4-C12), and functional roles of subunits (C13-C19) are well-established in the literature. The statement that the PolIII\u03b1-clamp-exonuclease-\u03c4c structure was unknown (C22) is accurate and motivates the study. This is standard background material.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    },
+    {
+      "id": "f623a805-13b4-43a5-acd8-b9e8925f630b",
+      "content_id": "89b95e04-6689-41f6-96df-9488a59ceb14",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The weak interaction between PolIII\u03b1 and the clamp (~1 \u03bcM) necessitated stabilization using modified clamp binding motifs derived from UmuC and Hda, which were the most potent inhibitors among 15 tested peptide sequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 describe the rationale for the stabilization strategy. The weak affinity (C24) is supported by citation and explains why stabilization was needed for cryo-EM. The choice of sequences (C25) is based on prior screening work. This methodological approach is well-justified and the >100-fold stabilization (C26) demonstrates its effectiveness.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:32.607612Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "246084b6-5f1f-40de-9b1f-ab121e97952b",
+      "result_id": "8e244cd3-4b99-4f6f-af63-1cda0078bcb3"
+    },
+    {
+      "claim_id": "468a77db-dadd-490f-8d77-a9886719b31b",
+      "result_id": "8e244cd3-4b99-4f6f-af63-1cda0078bcb3"
+    },
+    {
+      "claim_id": "f8f2cc02-bf38-4e23-a4f5-8fefc3523f81",
+      "result_id": "8e244cd3-4b99-4f6f-af63-1cda0078bcb3"
+    },
+    {
+      "claim_id": "04e06190-8c61-4219-8902-7898ac4b49c1",
+      "result_id": "8e244cd3-4b99-4f6f-af63-1cda0078bcb3"
+    },
+    {
+      "claim_id": "e9e82e2d-962f-481b-a1b8-fc2997ba19c4",
+      "result_id": "8e244cd3-4b99-4f6f-af63-1cda0078bcb3"
+    },
+    {
+      "claim_id": "e080eaa3-d760-47a4-940e-8a50a3ed5663",
+      "result_id": "8e244cd3-4b99-4f6f-af63-1cda0078bcb3"
+    },
+    {
+      "claim_id": "bc12c8b1-672e-4548-b733-69601c0430d3",
+      "result_id": "8e244cd3-4b99-4f6f-af63-1cda0078bcb3"
+    },
+    {
+      "claim_id": "5c161e12-a900-4a71-8eb8-59da47367d59",
+      "result_id": "8e244cd3-4b99-4f6f-af63-1cda0078bcb3"
+    },
+    {
+      "claim_id": "0961f061-2e9e-4c51-882d-39a235cc3620",
+      "result_id": "8e244cd3-4b99-4f6f-af63-1cda0078bcb3"
+    },
+    {
+      "claim_id": "2ef2c5db-fb60-498c-9067-4b17590a8bb0",
+      "result_id": "8e244cd3-4b99-4f6f-af63-1cda0078bcb3"
+    },
+    {
+      "claim_id": "c4d45acd-e68f-4562-a8aa-662a5ad5459c",
+      "result_id": "8e244cd3-4b99-4f6f-af63-1cda0078bcb3"
+    },
+    {
+      "claim_id": "b19ba46a-0589-44b2-9627-61b0df7b26f5",
+      "result_id": "8e244cd3-4b99-4f6f-af63-1cda0078bcb3"
+    },
+    {
+      "claim_id": "0c56b49d-fd6c-4716-9cdc-3916b54314d0",
+      "result_id": "8e244cd3-4b99-4f6f-af63-1cda0078bcb3"
+    },
+    {
+      "claim_id": "c65f5714-f5db-4d86-8191-47b31573e9d8",
+      "result_id": "8e244cd3-4b99-4f6f-af63-1cda0078bcb3"
+    },
+    {
+      "claim_id": "a06fa633-6129-4bab-8bf2-136aefeaa18a",
+      "result_id": "8e244cd3-4b99-4f6f-af63-1cda0078bcb3"
+    },
+    {
+      "claim_id": "3462b37a-7262-4080-bb92-4f81fe8ee2ae",
+      "result_id": "8e244cd3-4b99-4f6f-af63-1cda0078bcb3"
+    },
+    {
+      "claim_id": "520cc05e-fb9c-4979-8ded-6831ae178c67",
+      "result_id": "8e244cd3-4b99-4f6f-af63-1cda0078bcb3"
+    },
+    {
+      "claim_id": "de803125-c35f-42de-93b1-ae502479c10a",
+      "result_id": "fb3d28df-1e8f-4732-9522-598624a1cb99"
+    },
+    {
+      "claim_id": "b89bf17c-24c7-41b3-a5d7-8ee774090543",
+      "result_id": "fb3d28df-1e8f-4732-9522-598624a1cb99"
+    },
+    {
+      "claim_id": "cf7c9328-9539-48e1-842b-5528d3d49187",
+      "result_id": "fb3d28df-1e8f-4732-9522-598624a1cb99"
+    },
+    {
+      "claim_id": "3d664e99-36fa-4a25-9713-c02c558709cb",
+      "result_id": "fb3d28df-1e8f-4732-9522-598624a1cb99"
+    },
+    {
+      "claim_id": "6c4433d4-20c3-4b12-aaf2-36e3910d1df6",
+      "result_id": "fb3d28df-1e8f-4732-9522-598624a1cb99"
+    },
+    {
+      "claim_id": "b4c99e39-0908-43c8-a3b6-9328e26db23b",
+      "result_id": "fb3d28df-1e8f-4732-9522-598624a1cb99"
+    },
+    {
+      "claim_id": "00c4406b-ac02-4828-a2e0-fd9157411766",
+      "result_id": "fb3d28df-1e8f-4732-9522-598624a1cb99"
+    },
+    {
+      "claim_id": "fe13981d-a5df-4cbf-a533-867acc4a960d",
+      "result_id": "fb3d28df-1e8f-4732-9522-598624a1cb99"
+    },
+    {
+      "claim_id": "19b0652e-8a96-4256-ba5f-55f1c4318bce",
+      "result_id": "fb3d28df-1e8f-4732-9522-598624a1cb99"
+    },
+    {
+      "claim_id": "0996997d-c7f4-4fa7-bc7a-347c54672cff",
+      "result_id": "fb3d28df-1e8f-4732-9522-598624a1cb99"
+    },
+    {
+      "claim_id": "89757c8b-f8d6-4009-ac3d-3fc70b74f511",
+      "result_id": "fb3d28df-1e8f-4732-9522-598624a1cb99"
+    },
+    {
+      "claim_id": "3660684e-1cc4-4d70-b55f-5060656c2dc4",
+      "result_id": "fb3d28df-1e8f-4732-9522-598624a1cb99"
+    },
+    {
+      "claim_id": "87177ff1-47e4-4a20-9d5d-78e0adea92a0",
+      "result_id": "fb3d28df-1e8f-4732-9522-598624a1cb99"
+    },
+    {
+      "claim_id": "de160030-3072-424c-8a41-d46948e82fbe",
+      "result_id": "3947b20c-b392-4747-bc42-cc501a748e6a"
+    },
+    {
+      "claim_id": "1b4a2cab-421d-4960-a667-792886c0e961",
+      "result_id": "3947b20c-b392-4747-bc42-cc501a748e6a"
+    },
+    {
+      "claim_id": "624ca635-dbeb-4083-a7a5-1126aba3a6e4",
+      "result_id": "3947b20c-b392-4747-bc42-cc501a748e6a"
+    },
+    {
+      "claim_id": "3c50a4c7-bc3a-4faa-a0d2-3b827f007cf5",
+      "result_id": "3947b20c-b392-4747-bc42-cc501a748e6a"
+    },
+    {
+      "claim_id": "3426a13d-c65e-4781-b63f-61693d9ce6fb",
+      "result_id": "3947b20c-b392-4747-bc42-cc501a748e6a"
+    },
+    {
+      "claim_id": "70bee616-1630-4d0e-af12-2c00c93a022e",
+      "result_id": "3947b20c-b392-4747-bc42-cc501a748e6a"
+    },
+    {
+      "claim_id": "e0903f2b-86d0-447d-9ec6-ca82ddd7ac3a",
+      "result_id": "3947b20c-b392-4747-bc42-cc501a748e6a"
+    },
+    {
+      "claim_id": "74b5349a-29ca-4d12-ae24-fa85ea2f35be",
+      "result_id": "52f1cb54-5f33-4dea-b82d-5ef0775eaf85"
+    },
+    {
+      "claim_id": "9ab9dffd-8e44-48c0-bace-61f4436624f7",
+      "result_id": "52f1cb54-5f33-4dea-b82d-5ef0775eaf85"
+    },
+    {
+      "claim_id": "26df5ce5-3c37-4c50-a7f0-d90b2b9f8363",
+      "result_id": "52f1cb54-5f33-4dea-b82d-5ef0775eaf85"
+    },
+    {
+      "claim_id": "eb49f47b-c270-485b-8b0f-c836f004ceab",
+      "result_id": "52f1cb54-5f33-4dea-b82d-5ef0775eaf85"
+    },
+    {
+      "claim_id": "a8b6e38e-2caf-4843-90a3-ed27e4387c28",
+      "result_id": "52f1cb54-5f33-4dea-b82d-5ef0775eaf85"
+    },
+    {
+      "claim_id": "d2bd2668-bcc5-4cc0-880f-f6112e0330fc",
+      "result_id": "52f1cb54-5f33-4dea-b82d-5ef0775eaf85"
+    },
+    {
+      "claim_id": "dcd29443-0621-4cf4-b660-de2f84288b97",
+      "result_id": "52f1cb54-5f33-4dea-b82d-5ef0775eaf85"
+    },
+    {
+      "claim_id": "bfdb06b8-bc06-4d62-9708-8303cbcf6163",
+      "result_id": "52f1cb54-5f33-4dea-b82d-5ef0775eaf85"
+    },
+    {
+      "claim_id": "adc97679-0a73-4cc4-9c30-e4006cc1f33b",
+      "result_id": "52f1cb54-5f33-4dea-b82d-5ef0775eaf85"
+    },
+    {
+      "claim_id": "b51e638a-5883-45be-b83d-1d0f2085c43e",
+      "result_id": "52f1cb54-5f33-4dea-b82d-5ef0775eaf85"
+    },
+    {
+      "claim_id": "f4b19f88-c711-411b-833c-c7d95aeb8a8f",
+      "result_id": "52f1cb54-5f33-4dea-b82d-5ef0775eaf85"
+    },
+    {
+      "claim_id": "adcc7f9c-edc3-4345-b645-0e1b95790156",
+      "result_id": "52f1cb54-5f33-4dea-b82d-5ef0775eaf85"
+    },
+    {
+      "claim_id": "32c4e747-e34b-4ef9-b0ce-9d81088965d2",
+      "result_id": "52f1cb54-5f33-4dea-b82d-5ef0775eaf85"
+    },
+    {
+      "claim_id": "6dc47d46-ac76-40c3-b883-66ea64b2b368",
+      "result_id": "52f1cb54-5f33-4dea-b82d-5ef0775eaf85"
+    },
+    {
+      "claim_id": "85d734a6-5e5b-45ed-a951-2050267232ec",
+      "result_id": "52f1cb54-5f33-4dea-b82d-5ef0775eaf85"
+    },
+    {
+      "claim_id": "fb7b8cdc-1103-4f35-99d2-0ec4a9b2dbdb",
+      "result_id": "52f1cb54-5f33-4dea-b82d-5ef0775eaf85"
+    },
+    {
+      "claim_id": "3b143391-64bc-4615-9fef-fdb60d03e195",
+      "result_id": "52f1cb54-5f33-4dea-b82d-5ef0775eaf85"
+    },
+    {
+      "claim_id": "77026190-3a67-4597-92d2-0b44c5caac3d",
+      "result_id": "1031a191-aae2-4342-973e-560c88ec8949"
+    },
+    {
+      "claim_id": "977725fa-2772-4f91-a473-b70c2e17a72e",
+      "result_id": "1031a191-aae2-4342-973e-560c88ec8949"
+    },
+    {
+      "claim_id": "8adf1008-8f70-4c57-b966-a8916b9e6e1c",
+      "result_id": "1031a191-aae2-4342-973e-560c88ec8949"
+    },
+    {
+      "claim_id": "67bfa13d-a96e-48fc-b86e-b464f00bb577",
+      "result_id": "1031a191-aae2-4342-973e-560c88ec8949"
+    },
+    {
+      "claim_id": "a6b2de4d-219b-41e1-9e00-784068755179",
+      "result_id": "1031a191-aae2-4342-973e-560c88ec8949"
+    },
+    {
+      "claim_id": "c35cd56e-e9c7-4bef-80ae-878182c83593",
+      "result_id": "1031a191-aae2-4342-973e-560c88ec8949"
+    },
+    {
+      "claim_id": "4ca57db5-37f1-4634-91f6-45fc7e157b9e",
+      "result_id": "1031a191-aae2-4342-973e-560c88ec8949"
+    },
+    {
+      "claim_id": "9c413f14-1041-4643-a3c7-2061c2f85770",
+      "result_id": "1031a191-aae2-4342-973e-560c88ec8949"
+    },
+    {
+      "claim_id": "e5f4d8e9-0e5a-4c83-97b7-d51d68b8cb15",
+      "result_id": "1031a191-aae2-4342-973e-560c88ec8949"
+    },
+    {
+      "claim_id": "9febc0a2-023a-4c1e-8bbb-6ec15ab63dc0",
+      "result_id": "1031a191-aae2-4342-973e-560c88ec8949"
+    },
+    {
+      "claim_id": "487affbf-34b2-4cc6-9b61-57cb9bff4378",
+      "result_id": "1031a191-aae2-4342-973e-560c88ec8949"
+    },
+    {
+      "claim_id": "0780a976-86a4-445c-a78e-f1465b790654",
+      "result_id": "e73ef30e-3ac5-42bb-bfc4-2d6a6299e840"
+    },
+    {
+      "claim_id": "53cbd72c-7b2d-4725-9867-193f70f3b043",
+      "result_id": "e73ef30e-3ac5-42bb-bfc4-2d6a6299e840"
+    },
+    {
+      "claim_id": "01ab2faf-674f-4f73-aa5a-0a7bf7033ea2",
+      "result_id": "e73ef30e-3ac5-42bb-bfc4-2d6a6299e840"
+    },
+    {
+      "claim_id": "250ee7c7-6fda-4a17-95f1-9c3163bb5fad",
+      "result_id": "e73ef30e-3ac5-42bb-bfc4-2d6a6299e840"
+    },
+    {
+      "claim_id": "68d38d99-c3ee-4e76-8ca5-8211a68df5bd",
+      "result_id": "e73ef30e-3ac5-42bb-bfc4-2d6a6299e840"
+    },
+    {
+      "claim_id": "eed7f1de-910a-43e8-a6e5-2994404163d3",
+      "result_id": "e73ef30e-3ac5-42bb-bfc4-2d6a6299e840"
+    },
+    {
+      "claim_id": "616145d9-3f2d-4519-abb8-0c7ea70982e1",
+      "result_id": "e73ef30e-3ac5-42bb-bfc4-2d6a6299e840"
+    },
+    {
+      "claim_id": "6b3e4db2-47d5-480b-922f-147bb52a802c",
+      "result_id": "e73ef30e-3ac5-42bb-bfc4-2d6a6299e840"
+    },
+    {
+      "claim_id": "d7322093-a614-4a21-82a2-4b07e88daf56",
+      "result_id": "e73ef30e-3ac5-42bb-bfc4-2d6a6299e840"
+    },
+    {
+      "claim_id": "b3674556-7ea2-4eea-8517-3df22ae78425",
+      "result_id": "e73ef30e-3ac5-42bb-bfc4-2d6a6299e840"
+    },
+    {
+      "claim_id": "85a245b8-07ed-4289-8ba7-d5bcf4380cfe",
+      "result_id": "7a9a1ab7-5585-4fee-9ab4-418c627b0f81"
+    },
+    {
+      "claim_id": "1d1fd695-d6c1-41eb-89a8-a65529102d87",
+      "result_id": "7a9a1ab7-5585-4fee-9ab4-418c627b0f81"
+    },
+    {
+      "claim_id": "d3c294d9-3411-4365-8c18-49a98e4eb0be",
+      "result_id": "7a9a1ab7-5585-4fee-9ab4-418c627b0f81"
+    },
+    {
+      "claim_id": "ea59ea6a-8431-4372-8092-3de93c591f80",
+      "result_id": "864bfc96-fad8-4e86-8c83-647a8f9310d3"
+    },
+    {
+      "claim_id": "9c9520a2-8660-4a2a-8a84-5863aa1359ee",
+      "result_id": "864bfc96-fad8-4e86-8c83-647a8f9310d3"
+    },
+    {
+      "claim_id": "5c9add7d-9ef3-4df9-baab-266c41268f4f",
+      "result_id": "864bfc96-fad8-4e86-8c83-647a8f9310d3"
+    },
+    {
+      "claim_id": "d3e23638-7c27-4dcd-b2bd-ef01b43cd470",
+      "result_id": "864bfc96-fad8-4e86-8c83-647a8f9310d3"
+    },
+    {
+      "claim_id": "9354b5b8-7e17-4efb-98f7-350e57aaede0",
+      "result_id": "39f164a6-ca74-4cd7-bb11-d0c2ac83a04a"
+    },
+    {
+      "claim_id": "ba73f448-8e02-4818-818e-fea2ad8ce670",
+      "result_id": "39f164a6-ca74-4cd7-bb11-d0c2ac83a04a"
+    },
+    {
+      "claim_id": "5709dffd-f664-4f14-a569-d92377bc4873",
+      "result_id": "39f164a6-ca74-4cd7-bb11-d0c2ac83a04a"
+    },
+    {
+      "claim_id": "ea627eea-af2d-4158-a7ce-374eb57cee0f",
+      "result_id": "39f164a6-ca74-4cd7-bb11-d0c2ac83a04a"
+    },
+    {
+      "claim_id": "26ad2a54-97bf-4209-9c35-a7f2aeeee0f4",
+      "result_id": "39f164a6-ca74-4cd7-bb11-d0c2ac83a04a"
+    },
+    {
+      "claim_id": "e29333f2-86a3-4707-9f9a-cd4b8be0c6ef",
+      "result_id": "39f164a6-ca74-4cd7-bb11-d0c2ac83a04a"
+    },
+    {
+      "claim_id": "f5ecbecd-98f6-452c-9bdf-4e854ea18b8d",
+      "result_id": "55ca9eb8-2725-42e9-826f-2c801a4fd30d"
+    },
+    {
+      "claim_id": "1efcde5a-843d-4fcf-b614-72b5580cd043",
+      "result_id": "55ca9eb8-2725-42e9-826f-2c801a4fd30d"
+    },
+    {
+      "claim_id": "7a6a3db7-afd3-4a00-8e95-b4e2bf37ae5e",
+      "result_id": "55ca9eb8-2725-42e9-826f-2c801a4fd30d"
+    },
+    {
+      "claim_id": "2a25010b-eac4-41ff-9f51-8d0923b77462",
+      "result_id": "55ca9eb8-2725-42e9-826f-2c801a4fd30d"
+    },
+    {
+      "claim_id": "c792fc8b-48db-450e-bcff-90137a586bbc",
+      "result_id": "55ca9eb8-2725-42e9-826f-2c801a4fd30d"
+    },
+    {
+      "claim_id": "5913723c-0720-44c9-b63b-ad24d3eab8b9",
+      "result_id": "55ca9eb8-2725-42e9-826f-2c801a4fd30d"
+    },
+    {
+      "claim_id": "7c494f32-0d96-4706-9db2-8629dd580f7b",
+      "result_id": "55ca9eb8-2725-42e9-826f-2c801a4fd30d"
+    },
+    {
+      "claim_id": "f35c1220-1868-4ca3-b695-2c2cd136722c",
+      "result_id": "55ca9eb8-2725-42e9-826f-2c801a4fd30d"
+    },
+    {
+      "claim_id": "705c7529-f710-4623-9cb9-4cf4a59ada96",
+      "result_id": "55ca9eb8-2725-42e9-826f-2c801a4fd30d"
+    },
+    {
+      "claim_id": "d668364a-33d3-4ef5-9356-91a5505ed02d",
+      "result_id": "55ca9eb8-2725-42e9-826f-2c801a4fd30d"
+    },
+    {
+      "claim_id": "3ad582d8-7abd-4e4c-aacd-8b6a6edcfcf9",
+      "result_id": "808cb599-da33-44de-8e34-f3cf7b5c2189"
+    },
+    {
+      "claim_id": "aec43531-8cdd-4f7e-a671-b5a38eef24bf",
+      "result_id": "808cb599-da33-44de-8e34-f3cf7b5c2189"
+    },
+    {
+      "claim_id": "dfb96f5f-6975-4932-bbbd-2de1ff78b147",
+      "result_id": "808cb599-da33-44de-8e34-f3cf7b5c2189"
+    },
+    {
+      "claim_id": "497d7fe6-07d4-4594-9f27-e6466977d912",
+      "result_id": "808cb599-da33-44de-8e34-f3cf7b5c2189"
+    },
+    {
+      "claim_id": "e4781f75-3748-412c-bc77-de36ccca76a8",
+      "result_id": "808cb599-da33-44de-8e34-f3cf7b5c2189"
+    },
+    {
+      "claim_id": "c8b9d676-1232-4ac7-bb3a-7809f8d5e653",
+      "result_id": "808cb599-da33-44de-8e34-f3cf7b5c2189"
+    },
+    {
+      "claim_id": "06f17418-0add-40b1-99e5-affb334e1587",
+      "result_id": "808cb599-da33-44de-8e34-f3cf7b5c2189"
+    },
+    {
+      "claim_id": "a4fbe265-bfd8-4e83-b8f3-08e102f968e7",
+      "result_id": "808cb599-da33-44de-8e34-f3cf7b5c2189"
+    },
+    {
+      "claim_id": "9d7ff758-a545-413d-b17b-1fd0f1aa4060",
+      "result_id": "808cb599-da33-44de-8e34-f3cf7b5c2189"
+    },
+    {
+      "claim_id": "81b267d3-da8c-44dc-9a68-4a9c615940d8",
+      "result_id": "808cb599-da33-44de-8e34-f3cf7b5c2189"
+    },
+    {
+      "claim_id": "69373e93-4487-45cf-8cdd-894404964871",
+      "result_id": "808cb599-da33-44de-8e34-f3cf7b5c2189"
+    },
+    {
+      "claim_id": "750029c2-59c3-4578-b54d-d6efeff67446",
+      "result_id": "808cb599-da33-44de-8e34-f3cf7b5c2189"
+    },
+    {
+      "claim_id": "e1718e66-b5b0-4441-b945-f35b95b20c36",
+      "result_id": "808cb599-da33-44de-8e34-f3cf7b5c2189"
+    },
+    {
+      "claim_id": "cdd61020-9ede-49d8-9706-074496f3ca84",
+      "result_id": "808cb599-da33-44de-8e34-f3cf7b5c2189"
+    },
+    {
+      "claim_id": "7a9d8518-6c0c-4550-9d38-4a51f6f31757",
+      "result_id": "808cb599-da33-44de-8e34-f3cf7b5c2189"
+    },
+    {
+      "claim_id": "3d956a0e-b526-4456-b75d-4d9caccead92",
+      "result_id": "808cb599-da33-44de-8e34-f3cf7b5c2189"
+    },
+    {
+      "claim_id": "bbd7ae67-97e4-49a9-a063-5cb5f6143b2f",
+      "result_id": "808cb599-da33-44de-8e34-f3cf7b5c2189"
+    },
+    {
+      "claim_id": "ea169963-ae37-466b-a121-b22c12c9bd09",
+      "result_id": "808cb599-da33-44de-8e34-f3cf7b5c2189"
+    },
+    {
+      "claim_id": "22942f0b-be07-469f-b6f1-b68c0263a71a",
+      "result_id": "808cb599-da33-44de-8e34-f3cf7b5c2189"
+    },
+    {
+      "claim_id": "99d0a2ae-c3c4-4269-a6d9-bb40ea405610",
+      "result_id": "808cb599-da33-44de-8e34-f3cf7b5c2189"
+    },
+    {
+      "claim_id": "f80440bd-4ed7-47c2-a3ea-c556c961368c",
+      "result_id": "808cb599-da33-44de-8e34-f3cf7b5c2189"
+    },
+    {
+      "claim_id": "6a9350fe-28bd-44fa-b6af-441980ceca31",
+      "result_id": "808cb599-da33-44de-8e34-f3cf7b5c2189"
+    },
+    {
+      "claim_id": "fc4d33d7-234d-40b4-8c0e-cee21427bd0a",
+      "result_id": "f623a805-13b4-43a5-acd8-b9e8925f630b"
+    },
+    {
+      "claim_id": "89eaa031-08b4-4014-92c1-7bd14f5128f4",
+      "result_id": "f623a805-13b4-43a5-acd8-b9e8925f630b"
+    }
+  ],
+  "comparisons": []
+}

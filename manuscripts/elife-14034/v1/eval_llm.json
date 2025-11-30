@@ -1,0 +1,193 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Phasor-FLIM can detect endogenous RA and measure an anteriorly-declining gradient in the zebrafish hindbrain at mid-gastrula stage. The gradient is eliminated by DEAB treatment and re-established by exogenous RA, and artificial RA sources create detectable gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 and C43-C47 collectively demonstrate that phasor-FLIM detects endogenous RA gradients through multiple validation approaches: DEAB elimination (C3), RA rescue (C4), artificial sources (C5), and third harmonic analysis (C47). The methodology is well-validated with appropriate controls, though the exact gradient shape (exponential vs. linear) cannot be distinguished (C45).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C48"
+    ],
+    "result": "The RA gradient persists at 24 hpf during rhombomere establishment, and Aldh1a2 knockdown reduces RA levels in rhombomeres, which can be partially rescued by transplanting wildtype paraxial mesoderm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C48 demonstrate gradient persistence at later developmental stages with appropriate loss-of-function and rescue experiments. The partial rescue by mesoderm transplantation (C48) provides strong evidence that the measured signal reflects biologically relevant RA synthesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "RA levels exhibit high spatial noise (up to 45% of gradient magnitude) and temporal noise with a predominant frequency of ~2.7 minutes. This noise is biological in origin, not measurement artifact, and occurs at a timescale that could propagate to downstream transcriptional responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C14 provide strong evidence for biological noise through multiple controls: comparison with pure solutions (C10), photon shot noise calculations (C11), and autocorrelation analysis (C12). The comparison with Crabp2a complex half-life (C13) and inference about downstream propagation (C14) are well-reasoned, though C14 remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C27"
+    ],
+    "result": "Crabp2a modulates temporal noise in RA levels without affecting mean RA concentration, while Cyp26a1 affects mean RA levels without altering noise. This reveals a novel, distinct role for Crabp2a in noise attenuation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C19 and C27 demonstrate differential effects of Crabp2a and Cyp26a1 through loss- and gain-of-function experiments, with computational model agreement (C18). The experimental design appropriately separates effects on mean vs. variance, providing strong evidence for distinct molecular mechanisms of noise control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Altering Crabp2a or Cyp26a1 levels (either up or down) increases variance in krox20 expression and decreases boundary sharpness in rhombomeres 3 and 5, suggesting an optimal range is required for proper patterning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 and C53-C56 demonstrate downstream effects on gene expression using HCR with appropriate normalization (qPCR validation). The biphasic response (both increase and decrease are detrimental) is well-documented with quantitative sharpness metrics. Statistical significance is confirmed for all perturbations (C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C29",
+      "C32",
+      "C33"
+    ],
+    "result": "Crabp2a and Cyp26a1 function together to allow robust expression of downstream RA targets, potentially by modulating the balance between RAR-mediated activation and repression, and both must be present within narrow optimal ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C24, C29, C32, and C33 propose mechanisms for how Crabp2a and Cyp26a1 jointly regulate downstream targets. While the experimental data show both proteins affect krox20 variance, the proposed mechanism involving RAR activation/repression balance (C32) is speculative and lacks direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Phasor-FLIM measures endogenous RA directly without reporter bias and demonstrates noisy concentration gradients along the A-P axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 accurately characterize the methodological advantage of phasor-FLIM over FRET-based reporters and summarize the key finding of noisy gradients. The comparison with FRET methods is appropriate and the direct measurement claim is well-supported by the validation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C50",
+      "C51",
+      "C52",
+      "C59"
+    ],
+    "result": "Crabp2a likely controls RA noise by binding RA and facilitating cellular entry or buffering cytoplasmic availability, and cells possess mechanisms to limit noise propagation through Crabps and Cyp26s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28, C50-C52, and C59 propose mechanisms based on known Crabp2a functions and cite previous work, but the specific mechanisms by which Crabp2a reduces noise are not directly tested. These remain reasonable hypotheses requiring further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C34"
+    ],
+    "result": "Transcriptional inhibitors act as noise filters within narrow expression ranges, RARs act as repressors until binding RA, and these noise modulation mechanisms are likely conserved across signaling systems and critical for development and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C30-C31 cite established knowledge appropriately, but C34's extrapolation to other signaling systems and human disease is speculative without direct evidence. The generalization, while plausible, extends beyond the data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Background on RA as a morphogen: RA forms an anteriorly declining gradient through Cyp26-mediated degradation, excess RA causes patterning defects, RA requires binding proteins for transport, and computational models suggest noise can play positive roles in segmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C42 provide appropriate background context by citing established literature. These claims accurately represent prior knowledge about RA signaling, morphogen gradients, and noise in biological systems, with proper attribution to previous studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "The half-life of the RA-Crabp2a complex is approximately 1.7 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 cites a specific published value (Dong et al., 1999) for the RA-Crabp2a complex half-life, which is used for comparison with the measured noise frequency. The citation appears appropriate for this factual claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Unlike the Drosophila bicoid-hunchback system where transcriptional noise does not propagate, noise in the secreted RA signal in the vertebrate hindbrain influences noise in expression of transcriptional targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 appropriately contrast the findings with previous work in Drosophila. The experimental data showing effects of RA noise on krox20 expression support the conclusion that noise propagates in this system, distinguishing it from the bicoid-hunchback network.",
+    "result_type": "MAJOR"
+  }
+]

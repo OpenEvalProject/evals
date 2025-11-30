@@ -1,0 +1,2088 @@
+{
+  "submission": {
+    "id": "4c5d95dd-2d8f-4f5b-a9af-dab6539c605b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:44:28.634673Z",
+    "updated_at": "2025-11-30T00:44:28.634673Z"
+  },
+  "content": [
+    {
+      "id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "submission_id": "4c5d95dd-2d8f-4f5b-a9af-dab6539c605b",
+      "content_type": "manuscript",
+      "content_text": "# MYC activation and BCL2L11 silencing by a tumour virus through the large-scale reconfiguration of enhancer-promoter hubs\n\n## Authors\n\n- C David Wood<sup>1</sup>\n- Hildegonda Veenstra<sup>1</sup>\n- Sarika Khasnis<sup>1</sup>\n- Andrea Gunnell<sup>1</sup>\n- Helen M Webb<sup>1</sup>\n- Claire Shannon-Lowe<sup>2</sup>\n- Simon Andrews<sup>3</sup>\n- Cameron S Osborne<sup>4</sup>\n- Michelle J West<sup>1</sup> ([ORCID: 0000-0002-9497-9365](https://orcid.org/0000-0002-9497-9365)) \u2020\n\n### Affiliations\n\n1. School of Life Sciences University of Sussex Brighton United Kingdom\n2. Institute of Immunology and Immunotherapy College of Medical and Dental Sciences, University of Birmingham Birmingham United Kingdom\n3. Bioinformatics Group Babraham Institute Cambridge United Kingdom\n4. Department of Genetics and Molecular Medicine King's College London School of Medicine, Guy's Hospital London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nLymphomagenesis in the presence of deregulated MYC requires suppression of MYC-driven apoptosis, often through downregulation of the pro-apoptotic BCL2L11 gene (Bim). Transcription factors (EBNAs) encoded by the lymphoma-associated Epstein-Barr virus (EBV) activate MYC and silence BCL2L11. We show that the EBNA2 transactivator activates multiple MYC enhancers and reconfigures the MYC locus to increase upstream and decrease downstream enhancer-promoter interactions. EBNA2 recruits the BRG1 ATPase of the SWI/SNF remodeller to MYC enhancers and BRG1 is required for enhancer-promoter interactions in EBV-infected cells. At BCL2L11, we identify a haematopoietic enhancer hub that is inactivated by the EBV repressors EBNA3A and EBNA3C through recruitment of the H3K27 methyltransferase EZH2. Reversal of enhancer inactivation using an EZH2 inhibitor upregulates BCL2L11 and induces apoptosis. EBV therefore drives lymphomagenesis by hijacking long-range enhancer hubs and specific cellular co-factors. EBV-driven MYC enhancer activation may contribute to the genesis and localisation of MYC-Immunoglobulin translocation breakpoints in Burkitt's lymphoma.\n\n## Introduction\n\nEpstein-Barr virus (EBV) is associated with the development of numerous lymphomas including Burkitt's (BL), post-transplant, Hodgkin and certain NK and T-cell lymphomas. EBV was discovered in BL biopsies from sub-Saharan Africa (Epstein et al., 1964), where BL is endemic (eBL) and almost always EBV associated. BL also occurs world-wide as sporadic BL (sBL) and immunodeficiency-associated BL, where EBV positivity is approximately 20% and 60%, respectively (Mbulaiteye et al., 2014). Irrespective of origin or EBV status, the defining feature of BL is a chromosomal translocation involving MYC on chromosome 8 and an immunoglobulin (IG) gene. MYC translocations detected in BL involve either the IG heavy, or lambda or kappa light chain loci on chromosomes 14, 2 or 22 respectively. t(8:14) translocations occur in 85% of BL cases (Boerma et al., 2009). The position of the MYC/IG translocation breakpoint is usually far 5\u2019 of MYC in endemic (EBV positive) BL. In sporadic BL, breakpoints are in the first exon or intron, implicating different, but unknown, mechanisms in their generation (Neri et al., 1988; Shiramizu et al., 1991). The placement of MYC adjacent to highly active regulatory regions at these IG loci leads to constitutive high-level MYC expression and the uncontrolled proliferation of BL cells. Despite intensive study, the role of EBV in the development of BL is still unclear.\n\nThe oncogenic potential of EBV is evident from its potent transforming activity in vitro. On infection, resting B lymphocytes are growth-transformed into permanently proliferating lymphoblastoid cell-lines (LCLs). In common with other herpesviruses, EBV establishes a latent infection in infected cells. Nine viral latent proteins are expressed in EBV-immortalised LCLs; six Epstein-Barr nuclear antigens (EBNAs 1, 2, 3A, 3B, 3C and LP) and three latent membrane proteins (LMP1, 2A and 2B). EBNA2 and the EBNA3 family of distantly-related transcription factors (TF) (EBNA3A, EBNA3B and EBNA3C) play important roles in the transcriptional reprogramming of host B cells. The actions of these four EBV TFs results in the deregulation of numerous cellular genes involved in the control of B-cell growth and survival (Zhao et al., 2011a, 2006; Spender et al., 2002; Maier et al., 2006; McClellan et al., 2012; Hertle et al., 2009; White et al., 2010).\u00a0EBNA2, EBNA3A and EBNA3C are required for B-cell immortalisation and the continuous proliferation of infected cells (Cohen et al., 1989; Tomkinson et al., 1993; Maruo et al., 2003, 2006; Kempkes et al., 1995). These TFs cannot however bind DNA directly; they control gene transcription through interactions with cellular DNA-binding proteins (e.g. RBP-J\u03ba and PU.1)\u00a0(Johannsen et al., 1995; Ling et al., 1994; Waltzer et al., 1994, 1996; Robertson et al., 1995; Le Roux et al., 1994; Zhao et al., 1996; Robertson et al., 1996). Following initial B-cell transformation in vivo, EBV-infected cells sequentially reduce the number of latent genes they express to enable progression through the B-cell differentiation pathway (Thorley-Lawson and Babcock, 1999). This allows entry into the memory B-cell compartment, where the virus persists. Many EBV-associated tumour cells display restricted patterns of viral latent gene expression that may reflect the differentiation state of the neoplastic precursor cell.\n\nDuring B-cell transformation by EBV, EBNA2 plays a key role in upregulating numerous genes involved in driving cell proliferation, including the proto-oncogene MYC (Kaiser et al., 1999). Whether EBNA2 activation of MYC contributes to the genesis of the MYC translocation in BL cells however, is not known. EBNA2 contains an acidic activation domain and mediates gene activation by binding histone acetyl transferases and chromatin remodellers (reviewed in (Kempkes and Ling, 2015). EBNA3A, EBNA3B and EBNA3C individually and co-operatively activate and repress cellular gene expression (White et al., 2010; McClellan et al., 2012;\u00a0Hertle et al., 2009). EBNA3B is dispensable for B-cell immortalisation by EBV, but appears to play a role in suppressing tumour formation in vivo,\u00a0since its loss accelerates lymphoma development (Tomkinson and Kieff, 1992; White et al., 2012). The role of EBNA3A and EBNA3C as cellular gene repressors has been most extensively studied (reviewed\u00a0in\u00a0(Allday et al., 2015). These two viral TFs work cooperatively to silence key tumour suppressor gene. These include the cyclin-dependent kinase inhibitor p16INK4a and the pro-apoptotic Bcl-2 family binding protein Bim (BCL2L11)\u00a0(Skalska et al., 2010; Anderton et al., 2008). EBNA3A/EBNA3C directed silencing is associated with the recruitment of polycomb repressor complex 1 and 2 (PRC1, 2) and the deposition of the histone H3 lysine 27 trimethyl mark (H3K27me3) (McClellan et al., 2012, 2013; Paschos et al., 2012, 2009; Skalska et al., 2010; Kalchschmidt et al., 2016b) At BCL2L11, PRC-mediated repression leads to longer-term silencing through the accumulation of CpG promoter methylation (Paschos et al., 2009).\n\nBy activating MYC to drive cell proliferation and counteracting MYC-triggered apoptosis by silencing BCL2L11, EBV TFs are manipulating the same pathways that are deregulated in non-viral lymphomas. In fact,\u00a0lymphomagenesis only occurs in the presence of deregulated MYC expression when the p53-MDM2-p14ARF or BCL2L11 apoptotic axes are disabled (reviewed\u00a0in\u00a0Thorley-Lawson and Allday, 2008).\u00a0The mechanisms through which MYC and BCL2L11 are deregulated by EBV TFs however, are not fully defined. Genome-wide analyses indicate that binding of long-range regulatory elements by EBNA2 and EBNA3 proteins plays a key role in cellular gene reprogramming (McClellan et al., 2013; Zhao et al., 2011b; Schmidt et al., 2015; Jiang et al., 2014; Zhou et al., 2015; McClellan et al., 2012). Indeed, upstream MYC enhancer regions bound by EBNA2 have been identified\u00a0(Zhao et al., 2011b). MYC is one of the most commonly deregulated oncogenes in human cancers and the mapping of multiple cancer risk loci and regions of focal amplification to MYC enhancer regions provides strong evidence that inappropriate MYC expression can result from the perturbation of long-range control (Yochum, 2011; Ahmadiyeh et al., 2010; Tuupanen et al., 2009; Pomerantz et al., 2009; Shi et al., 2013; Zhang et al., 2016; Herranz et al., 2014). BCL2L11 silencing by EBV has only been studied in the context of EBNA3A and EBNA3C binding to the gene promoter (McClellan et al., 2013; Paschos et al., 2012), but interestingly, inactivation of a murine-specific BCL2L11 enhancer has recently been reported in B lymphoblastic leukaemia (Wang et al., 2015). This indicates that enhancer control of BCL2L11 may be important in other contexts and may be a target for disruption in tumour cells.\n\nHere we demonstrate that EBV EBNA2 upregulates MYC by activating specific upstream enhancers. This promotes upstream and reduces downstream enhancer-promoter interactions. These MYC enhancer interactions in EBV-infected cells are dependent on the chromatin remodelling function of SWI/SNF. At BCL2L11, we show that the EBV repressors EBNA3A and EBNA3C inactivate a newly-described enhancer-promoter hub in a manner dependent on the activity of PRC2. Lymphomagenesis by EBV therefore involves the hijack and reorganisation of large-scale enhancer hubs through the recruitment of specific cellular co-factors.\n\n## Results\n\n### The EBV TF EBNA2 targets tumour-associated superenhancers at MYC\n\nTo study the mechanism of MYC activation by the EBV TF EBNA2, we examined EBNA2 binding at the MYC locus using ChIP-sequencing data we obtained previously from two EBV-infected cell lines (Gunnell et al., 2016; McClellan et al., 2013). These included the EBV-transformed lymphoblastoid cell-line GM12878 (ENCODE Tier 1) generated by in vitro infection of resting B cells and the EBV-positive BL cell line Mutu III (Gregory et al., 1990). The Mutu III line is derived from a BL tumour cell line (Mutu I) which underwent broadening of its virus latent gene expression profile in culture. Both cell-lines therefore express the full panel of EBV latent genes, including EBNA2. We found that EBNA2 bound multiple elements both upstream (\u2212556, \u2212428, and \u2212186/168 kb) and downstream (+450, +570, +900 kb and +1.8 Mb) from MYC (Figure 1A and B). Upstream regions bound by EBNA2 in particular, have H3K27 acetylation (H3K27ac) signals characteristic of active enhancers (Figure 1C). In fact all regions bound by EBNA2, apart from the +900\u00a0kb enhancer, are classified as super-enhancers in numerous cancer cell lines and/or primary cells (dbSUPER, http://bioinfo.au.tsinghua.edu.cn/dbsuper/\u00a0[Khan and Zhang, 2016]) (Supplementary file 1). Super-enhancers (SE)\u00a0are large lineage-specific regulatory elements typically comprising multiple TF binding sites (Whyte et al., 2013). The \u2212556 and \u2212428 regions also contain susceptibility loci for chronic lymphocytic leukaemia (CLL) and prostate cancer (rs2466024, rs2466035, rs18814048, rs16902094 and rs445114) (Speedy et al., 2014; Gudmundsson et al., 2009, 2012). EBV therefore targets MYC enhancers that function in multiple cell-type specific and tumourigenic contexts.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/18270/elife-18270-fig1-v2.jpg)\n\n**Figure 1.:** (A) EBNA2 ChIP-sequencing reads in EBV-infected GM12878 cells (B) in EBV positive Mutu III BL cells (that express all latent EBV proteins). (C) H3K27ac signals in GM12878 from ENCODE. Numbering indicates the location of the major enhancer clusters relative to the MYC transcription start site. (D) Sequencing reads from circularised chromosome conformation capture-sequencing (4C-seq) using the MYC promoter as bait in ER-EB 2.5 cells expressing an EBNA2-ER fusion protein cultured in the absence of \u03b2-estradiol (-EBNA2). Reads shown are from one of two replicates. The scale bar shows reads per 10\u00a0kb window per million reads of sequencing library. (E) 4C-seq data from cells incubated in the presence of \u03b2-estradiol (+EBNA2). (F) Subtraction of -EBNA2 4C-sequence reads\u00a0from +EBNA2 4C-sequence reads. The scale bar shows the normalised interaction read count difference (see Materials and methods for more details). Asterisks indicate the positions of CTCF sites. (G) Capture Hi-C sequencing reads using a MYC promoter bait and a CD34+ haemopoietic progenitor cell Hi-C library. Arrows denote positions where statistically significant MYC interactions correspond to EBNA2 binding sites. The scale bar shows reads for five merged consecutive genome fragments per million reads of sequencing library. (H) MYC promoter Capture Hi-C reads obtained from a GM12878 CHi-C libary.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18270/elife-18270-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** RT-QPCR analysis of MYC mRNA expression in ER-EB 2.5 cell samples used for 4C-seq analysis. Cells were cultured in the absence of \u03b2-estradiol for 4 days and then for a further 17 hr with (+EBNA2) or without \u03b2-estradiol (-EBNA2). Signals were normalised to GAPDH mRNA levels. Results show the mean \u00b1 standard deviation of QPCR duplicates.\n\n### EBNA2 induces large-scale directional reorganisation of MYC promoter-enhancer interactions\n\nAlthough EBNA2 enhances the association of the \u2212428 MYC SE with the MYC promoter (Zhao et al., 2011b), there is no information on how the targeting of multiple upstream and downstream long-range MYC enhancers by EBNA2 affects enhancer-promoter interactions across the entire MYC locus. We examined this using a 4C-sequencing approach.\n\nWe used a MYC promoter fragment as bait to capture interacting regions in an EBV-transformed LCL expressing a conditionally-active oestrogen receptor-EBNA2 fusion protein (ER-EB 2.5) (Kempkes et al., 1995). In these cells, EBNA2 can be reversibly inactivated through the withdrawal and re-addition of oestrogen to the culture medium, providing a useful system in which to study the effects of EBNA2 on gene transcription. Re-addition of \u03b2-estradiol to ER-EB 2.5 cells cultured for 4 days in its absence, upregulated MYC as previously described (Kaiser et al., 1999) (Figure 1\u2014figure supplement 1) and resulted in the\u00a0substantial directional reorganisation of interactions between EBNA2-bound regions and the MYC promoter (Figure 1D\u2013F). In the presence of functional EBNA2, MYC promoter interactions with upstream elements, including the \u2212556, \u2212428, and \u2212186/168 kb regions were increased. In contrast, interactions with downstream elements, including the +450 kb, +570 kb and +1.8/1.9 Mb regions were decreased (Figure 1D\u2013F). Subtraction of 4C-sequencing reads obtained in the absence of functional EBNA2 from those obtained in its presence demonstrated the clear directionality of EBNA2-directed MYC reorganisation (Figure 1F). The high frequency of upstream enhancer interactions with the MYC promoter in EBV-infected cells was confirmed in genome-wide capture Hi-C data from GM12878 cells (Figure 1H). The GM12878 interaction profile contrasts with that obtained from CD34+ haemopoietic progenitor cells (Figure 1G) (Mifsud et al., 2015) and leukaemic cells (Shi et al., 2013), where interactions with the +1.8/1.9 Mb enhancers dominate.\n\nWe used chromosome conformation capture (3C) to verify the effects of EBNA2 on upstream MYC promoter-enhancer interactions (Figure 2). We detected 2\u20133-fold increases in promoter interaction frequency in the presence of EBNA2 for the largest EBNA2 binding peak in the \u2212556 SE and for the four EBNA2 peaks in the \u2212186/168 region (Figure 2C and D). EBNA2 effects on \u2212428 SE interactions have been documented previously (Zhao et al., 2011b). 4C-sequencing analysis also identified a distinct region within the \u2212556 SE that displayed reduced MYC promoter interactions in the presence of EBNA2 (Figure 1F). A 2.6-fold decrease in the frequency of interactions between this region and the MYC promoter was confirmed using 3C (Figure 2C). This region contains three binding sites for the chromatin boundary and looping factor CTCF (Figure 2 and Figure 2\u2014figure supplement 1). Two of these CTCF sites are located adjacent to one another and immediately upstream of the main \u2212556 SE EBNA2 binding peak that shows increased promoter interactions in the presence of EBNA2. CTCF binding may therefore delineate a chromatin interaction boundary. All three CTCF sites are bound by CTCF and components of the chromatin looping complex cohesin (SMC3 and RAD21) in GM12878 cells (Figure 2\u2014figure supplement 1). Using 3C, we investigated whether EBNA2 influenced interactions between these CTCF sites to change the three-dimensional arrangement of promoter interactions in this region. We found a four-fold increase in interactions between CTCF site-containing fragments in the presence of EBNA2 (Figure 2E). These data indicate that the process of MYC activation by EBNA2 through the\u00a0directed reorganisation of upstream MYC chromatin promotes CTCF site interactions. This results in the looping out of this specific region from the enhancer-promoter chromatin hub and presumably facilitates other upstream enhancer-promoter interactions.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/18270/elife-18270-fig2-v2.jpg)\n\n**Figure 2.:** (A) EBNA2 binding at the \u2212556 super-enhancer region. The positions of the HindIII restriction enzyme sites and the primers used for 3C are indicated. Red arrows indicate the position of the MYC enhancer primers used for promoter interaction analysis. Blue arrows indicate the position of the CTCF site primers used to analyse CTCF site interactions. Asterisks indicate the position of CTCF sites. There are two adjacent sites at the 3\u2019 end of the region (see Figure 2\u2014figure supplement 1). Primer design is unidirectional (Naumova et al., 2012). Purple and green lines indicate the regions that show reduced or increased interactions with the MYC promoter in 4C, with the transition area displaying a mix of increased and decreased interactions indicated by the checked line (see Figure 1). (B) EBNA2 binding and MYC enhancer primer positions in the \u2212186/168 enhancer region (C) 3C analysis of interactions between the indicated \u2212556 super-enhancer regions and the MYC promoter in the absence or presence of EBNA2 in ER-EB 2.5 cells. Promoter interactions with a region upstream of the \u2212556 super-enhancer not bound by EBNA2 were analysed as a control (Con). Results show the mean \u00b1 standard deviation of signals from duplicate PCRs. (D) 3C analysis of interactions between the indicated EBNA2-bound \u2212186/168 enhancer regions and the MYC promoter in the absence or presence of EBNA2. Control interaction analysis (Con) as in C. (E) 3C analysis of interactions between the CTCF sites in the \u2212556 super-enhancer region in the absence and presence of EBNA2. CTCF site 2 interactions with the upstream control region were also analysed (Con).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18270/elife-18270-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) EBNA2 ChIP-sequencing reads in the GM12878 LCL and (B) Mutu III BL cells in the \u2212556 region (as in Figure 2). ENCODE GM12878 ChIP-sequencing data for CTCF (C) and the cohesin subunits SMC3 (D) and RAD21 (E). (F) HindIII restriction enzyme sites and the location of the CTCF site primers used for 3C analysis (Figure 2). Asterisks indicate the position of three CTCF consensus binding motifs.\n\nWe conclude that EBNA2 activation of MYC is associated with the\u00a0large-scale directional reorganisation of the MYC enhancer hub. EBNA2 increases upstream enhancer interactions, reduces downstream enhancer interactions and alters interactions between CTCF sites.\n\n### MYC chromatin reorganisation on EBV infection differs to that induced by physiological B-cell activation\n\nEBV infection of na\u00efve B cells results in B-cell activation in a manner that resembles physiological B-cell activation by CD40 ligand (CD40L) and IL-4. B-cell activation by CD40L/IL-4 however results in short-term proliferation whereas EBV-infected B cells grow out into immortal cell-lines. We used 4C-sequencing to determine whether infection of resting B cells by EBV induced the same changes in MYC enhancer interactions observed in EBV-infected cell lines. We also examined whether the effects of EBV on MYC were distinct from any changes induced by B-cell activation by CD40L/IL-4. We found that in na\u00efve CD19+ B cells, the MYC promoter interacted with the \u2212556, \u2212428, +450 and +570 kb enhancer regions (Figure 3B). This is consistent with the existence of some baseline \u2018static\u2019 enhancer-promoter interactions in resting cells, and the classification of the \u2212556 region as a SE in CD19+ B cells (Supplementary file 1). MYC mRNA levels increased to maximum levels 48 hr post-EBV infection (Figure 3\u2014figure supplement 1). 4C-sequencing carried out at this time point detected increases in interactions between all upstream enhancers and intervening regions and the MYC promoter (Figure 3B,C and E). This is consistent with the effects we observed on EBNA2 activation in the LCL (Figure 1). We also observed reduced interactions between the +450, +570 kb and +900 kb enhancers and the MYC promoter on EBV infection consistent with our LCL data (Figure 3B,C and E). In contrast to our previous observations however, we detected some small localised increases in interactions with regions downstream from the MYC promoter (Figure 3B), which may reflect the low level of interactions present in this region in resting B cells (Figure 3E). In contrast, 48 hr after B-cell activation by CD40L/IL-4 we observed a reverse effect on MYC promoter-enhancer interactions (Figure 3B,D and F). Upstream interactions were reduced and downstream interactions were increased. In particular, the region +235 to +432 kb interacted with the MYC promoter at high level. This downstream region is not bound by EBNA2 and does not interact with the MYC promoter significantly in EBV-infected cells. This region does however interact at high frequency in CD34+ cells (Figure 1G). These data therefore highlight specificity in the remodelling of MYC promoter-enhancer interactions by different stimuli in B cells. This is particularly evident when the effects of EBV and CD40L/IL-4 on MYC promoter interactions are compared (Figure 3G).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/18270/elife-18270-fig3-v2.jpg)\n\n**Figure 3.:** (A) EBNA 2 ChIP-sequencing reads in Mutu III BL cells (as in Figure 1). Interactions captured by 4C-seq using the MYC promoter as bait (as in Figure 1) in uninfected na\u00efve B cells (B), B cells 48 hr post-EBV infection (C) and B cells 48 hr post-stimulation with CD40L/IL-4 (D). Subtraction of 4C-seq reads from uninfected B cells from those obtained from EBV-infected cells (E) or CD40L/IL-4 treated cells (F). Reads shown are from both replicates combined. The scale bar shows reads per 10\u00a0kb window per million reads of sequencing library. (G) Subtraction of 4C-seq reads from CD40L/IL4-treated cells from those obtained from EBV-infected cells. The scale bar shows the normalised interaction read count difference.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18270/elife-18270-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) RT-QPCR analysis of MYC mRNA expression over a B-cell infection time course to determine the optimum time for MYC induction. (B) RT-QPCR analysis of MYC mRNA expression in the na\u00efve, EBV-infected and CD40L/IL-4 B cell samples used for 4C-seq. Signals were normalised to \u03b22-microglobulin mRNA levels as GAPDH is induced on B-cell infection. Results show the mean \u00b1 standard deviation of QPCR duplicates.\n\nIn summary, EBV infection of na\u00efve B cells reconfigures MYC chromatin architecture in a manner distinct from physiological B-cell stimulation. EBV infection results in the same selective enhancement of upstream enhancer-promoter interactions observed on EBNA2 activation in EBV-infected cell-lines.\n\n### The SWI/SNF ATPase BRG1 is recruited by EBNA2 and is required for upstream enhancer-promoter interactions\n\nWe next investigated the mechanism of MYC activation by EBNA2. In the presence of EBNA2, we found increased levels of H3K27ac across EBNA2-bound enhancer regions, consistent with enhancer activation. EBNA2 increased H3K27ac levels seven-fold at the main MYC P2 promoter and 16-fold at the \u2212556 SE (Figure 4A). BRG1, the ATPase subunit of the chromatin remodeller SWI/SNF, is required for the interaction of the +1.8/1.9 Mb leukaemic-cell MYC enhancer with the MYC promoter (Shi et al., 2013), so we examined the involvement of BRG1 in EBNA2 activation of MYC enhancers. We found that BRG1 associated with specific MYC enhancers, with highest levels at the \u2212186/168 enhancer and the \u2212556 SE main peak (Figure 4B). BRG1 also bound the +1.8 Mb enhancer but at lower levels. EBNA2 increased BRG1 binding at these sites, consistent with the ability of EBNA2 to interact with BRG1 via the Snf5 subunit of SWI/SNF (Wu et al., 1996). Interestingly, EBNA2 reduced BRG1 binding to the region of the \u2212556 SE that is looped out through CTCF site association (Figure 4B). The effect of EBNA2 on BRG1 binding at upstream regions therefore correlates with the effect of EBNA2 on promoter interaction frequency. We next investigated whether BRG1 was required for the interaction of EBNA2-bound enhancers with the MYC promoter in EBV-infected cells. We found that siRNA-mediated BRG1 knockdown in GM12878 cells led to a loss of MYC promoter interactions with the \u2212556, \u2212428 and \u2212186/168 enhancers (Figure 4C and D). 3C did not detect any interactions between the +1.8 Mb region and the MYC promoter in the presence or absence of BRG1 (data not shown), consistent with its low-level interaction frequency in EBV-infected cells (Figures 1 and 3). We conclude that BRG1 is required to maintain the active upstream MYC enhancer-promoter hub in EBV-infected B cells.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/18270/elife-18270-fig4-v2.jpg)\n\n**Figure 4.:** (A) ChIP-QPCR analysis of H3 acetylation at MYC in ER-EB 2.5 cells minus or plus \u03b2-estradiol (\u00b1 EBNA2). Precipitated DNA was analysed using primer sets located at the main EBNA2-bound enhancers. For the \u2212556 SE analysis included a region where decreased interactions were observed (1) and the \u2212556 main peak where increased interactions were observed (3) (see Figure 2). The signal at a control region not bound by EBNA2 (used for 3C analysis in Figure 2) was used as a negative control for binding (Con). Mean percentage input signals, after subtraction of no antibody controls, are shown \u00b1 standard deviation for two independent ChIP experiments. (B) ChIP-QPCR analysis of BRG1 binding at MYC in ER-EB 2.5 cells minus or plus \u03b2-estradiol (\u00b1 EBNA2). (C) Western blot analysis of BRG1 expression in GM12878 transiently transfected with control or BRG1-specific siRNAs. Actin was used as a loading control. (D) Chromosome conformation capture analysis of the interaction of EBNA2-bound upstream enhancerswith the MYC promoter in control and BRG1 siRNA transfected GM12878 cells. Results show the mean \u00b1 standard deviation of signals from duplicate PCRs.\n\n### EBV EBNA 3A and 3C silence BCL2L11 by disrupting long-range enhancer interactions\n\nWe previously demonstrated that repression of BCL2L11 was associated with EBNA3A and 3C-specific binding to the BCL2L11 promoter (McClellan et al., 2013). However, ChIP-sequencing using an antibody that precipitates all EBNA3 proteins also revealed the presence long-range EBNA3 binding sites at the BCL2L11 locus (Figure 5A)\u00a0(McClellan et al., 2012, 2013). These include three major sites upstream of BCL2L11 (up to \u2212374 kb) that lie within the neighbouring acyl-CoA oxidase-like gene ACOXL and three sites 310 to 587 kb downstream of BCL2L11 (Figure 5A). These elements represent new putative BCL2L11 enhancers that we designated enhancers 1\u20136. Enhancers 1, 4, and 6 are predicted as SEs in blood-derived primary cells or cell-lines (http://bioinfo.au.tsinghua.edu.cn/dbsuper/\u00a0[Khan and Zhang, 2016]) indicative of a functional role. In fact, enhancer 4 is predicted to have SE function in 30 different cell types, 22 of which are blood-derived primary or cancer cells (Supplementary file 2). Enhancer 4 may therefore play a key role in BCL2L11 control in blood cells. EBNA3 binding sites are also present in the ACOXL promoter and the adjacent BUB1 promoter.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/18270/elife-18270-fig5-v2.jpg)\n\n**Figure 5.:** (A) ChIP-sequencing reads for EBNA3A/3B/3C at the BCL2L11 locus in Mutu III BL cells. The major EBNA3-bound sites are numbered 1\u20136 and their location relative to the transcription start site of the BCL2L11 promoter is indicated. Binding peaks at the ACOXL (Ap) and BCL2L11 promoters (Bp) are also indicated. ChIP-QPCR analysis of EBNA3A binding (B) EBNA3B binding (C) and EBNA3C binding (D) in the EBV-negative BL31 BL cell-line infected with wild-type recombinant EBV (BL31 wtBAC2). Precipitated DNA was analysed using primer sets located at EBNA3A/3B/3C binding sites (binding at the BCL2L11 promoter has been previously characterised [McClellan et al., 2013]). The signal at the transcription start site of PPIA was used as a negative control for binding (\u2212).The previously characterised CTBP2 binding site was used as a positive control for EBNA3A and EBNA3C binding (+). The RUNX3 superenhancer was used as a positive control for EBNA3B binding (Gunnell et al., 2016). Mean percentage input signals, after subtraction of no antibody controls, are shown \u00b1 standard deviation for two independent ChIP experiments. (E) Chromosome conformation capture (3C) analysis of BCL2L11 promoter interactions between enhancers 1\u20136 and the ACOXL promoter in the EBV-negative BL cell-line BL31 and in BL31 cells infected with wild-type recombinant EBV (wt BAC2), EBNA3A knock-out EBV (EBNA3AKO), EBNA3B knock-out EBV (EBNA3BKO) and EBNA3C knock-out EBV (EBNA3CKO). A control region (C) not bound by the EBNAs was also included in the analysis. Positive controls show amplification of a digested and ligated genomic PCR fragment library containing all ligation junctions. The expression status of BCL2L11 in each line is indicated on the right. The red asterisks indicates non-specific amplification products of incorrect size.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18270/elife-18270-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** LCLs expressing HT-EBNA3C were grown in the presence of HT for 25 days (EBNA3C on) and then HT was washed off and cells cultured in its absence for 21 days (EBNA3C off). Cells then either had HT re-added and were cultured for up to another 14 days to re-instate EBNA3C function or were maintained in HT for a further 10 days to maintain EBNA3C inactivity. (A) ACOXL mRNA levels were determined by RT-PCR and signals were normalised to GAPDH and expressed relative to the expression level at the start of the experiment. Results show the mean \u00b1 standard deviation for duplicate QPCR samples from a representative experiment. (B) ADAMDEC1 mRNA analysis. ADAMDEC1 (McClellan et al., 2012) is a known EBNA3C repressed gene and serves as a control for the EBNA3C-HT withdrawal and add back.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18270/elife-18270-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) EBNA3A/3B/3C binding at the BCL2L11 locus as in Figure 5 showing the locations of the primers used for 3C analysis. Primer design is unidirectional. (B) 3C analysis in BL31 cells to examine BCL2L11 promoter interactions with additional intervening control regions where there is no EBNA3A or EBNA3C binding (C2, C3, C4). (C) Control 3C analysis using BL31 cell chromatin that was digested but incubated in the absence of ligase (-ligase). Analysis was performed using primers to detect enhancer-promoter and promoter-promoter interactions as in Figure 5 and using the additional control primers. Red asterisks indicate the position of non-specific PCR products of the incorrect sizes (verified by sequencing).\n\nChIP-QPCR using specific antibodies demonstrated that only EBNA3A and EBNA3C bind to BCL2L11 long-range elements (Figure 5B\u2013D), consistent with BCL2L11 silencing through the combined actions of EBNA3A and EBNA3C, but not EBNA3B (Anderton et al., 2008). Only EBNA3C bound at significant levels to ACOXL sites, with most binding at enhancers 2 and 3 (Figure 5B\u2013D). Although ACOXL was not expressed in most B cell-lines we examined, we found that inactivation of EBNA3C in an LCL expressing a conditionally-active EBNA3C-hydroxytamoxifen fusion protein led to\u00a0increased\u00a0ACOXL expression (Figure 5\u2014figure supplement 1). This points to a role for EBNA3C as a repressor of ACOXL.\n\nTo determine whether any of the long-range EBNA3A/3C binding sites interact with the BCL2L11 promoter, we performed 3C analysis in a previously described BL cell-line series (BL31) (Anderton et al., 2008). BL31 cells derive from an EBV-negative BL and have been used to study the effects of EBV and EBNA3A, 3B and 3C on cellular gene expression by infecting them with recombinant wild-type or knock-out EBVs (Anderton et al., 2008; White et al., 2010; McClellan et al., 2013). The co-operative repression of BCL2L11 by EBNA3A and EBNA3C was first described and characterised in this cell line series (Anderton et al., 2008;\u00a0Paschos et al., 2012), providing an excellent background in which to study the effects of these EBV repressors on BCL2L11 enhancer-promoter interactions. Using the BCL2L11 promoter as bait, we found that in uninfected BL31 cells (where BCL2L11 is expressed), the ACOXL promoter and all long-range elements (apart from enhancer 1 within ACOXL) interacted with the BCL2L11 promoter (Figure 5E). An active enhancer-promoter hub encompassing ACOXL therefore directs BCL2L11 expression in these cells. 3C did not detect any interactions between the BUB1 promoter and the BCL2L11 promoter (data not shown). We detected no interactions between the BCL2L11 promoter and four intervening control regions not bound by EBNA3A or EBNA3C, indicating that the enhancer-promoter interactions we detected were specific. (Figure 5E and Figure 5\u2014figure supplement 2). In contrast to EBV-negative BL31 cells, in BL31 cells infected with either wild-type EBV or EBNA3B knock-out EBV (where BCL2L11 is repressed), we observed a loss of all promoter-enhancer interactions (Figure 5E). Accordingly, in cells infected with EBNA3A or EBNA3C knock-out viruses, BCL2L11 was expressed and all enhancer-promoter interactions were preserved. BCL2L11 silencing by EBNA3A and EBNA3C is therefore associated with the inactivation of an active enhancer-promoter hub encompassing ACOXL.\n\nWe next investigated whether the disruption of enhancer-promoter interactions by EBNA3A and EBNA3C was also associated with enhancer chromatin inactivation. Using ChIP-QPCR we examined the binding of the PRC2 H3K27 methyltransferase EZH2 across EBNA3-bound sites. Consistent with previous observations (Paschos et al., 2012), we found that EZH2 was associated with the BCL2L11 promoter in cells infected with viruses expressing EBNA3A and EBNA3C (wt BAC2 and EBNA3B KO, Figure 6A). We also detected EZH2 binding to all enhancers targeted by EBNA3A and EBNA3C and to the ACOXL promoter (Figure 6A). These results are consistent with enhancer inactivation either initiated by, or resulting in, PRC-associated chromatin silencing. EBNA3A and EBNA3C have been shown to induce the deposition of the PRC silencing mark H3K27me3 across the BCL2L11 promoter (Paschos et al., 2009).\u00a0H3K27me3 ChIP-seq data from GM12878 cells (that express EBNA3A and EBNA3C) however, also demonstrates the presence of characteristically broad domains of H3K27me3 that coincide with the locations of the EBNA3-bound BCL2L11 enhancers (Figure 6\u2014figure supplement 1). In fact a large H3K27me3 domain encompasses the entire ACOXL gene and the BCL2L11 promoter (Figure 6\u2014figure supplement 1). The corresponding absence of active H3K27ac marks in these regions is consistent with silencing of both genes.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/18270/elife-18270-fig6-v2.jpg)\n\n**Figure 6.:** (A) ChIP-QPCR analysis of EZH2 binding in the BL31 cell line series used in Figure 5. The expression status of BCL2L11 in each cell line is shown. (B) RT-QPCR analysis of BCL2L11 mRNA expression in EBV negative BL31 cells or BL31 cells infected with wild-type recombinant EBV (BL31 wtBAC2) treated with the EZH2 inhibitor UNC1999 for 8 hr. Signals were normalised to GAPDH mRNA levels and expressed as fold increase compared to untreated cells. (C) BCL2L11 mRNA expression in BL31 and BL31 wtBAC2 cells treated with UNC1999 for 18 hr. (D) Caspase 3/7 activity in BL31 or BL31 wtBAC2 cells treated with UNC1999 for 8 hr. Caspase signals shown are corrected for the number of live cells. (E) Caspase 3/7 activity in cells treated for 18 hr. (F) Chromosome conformation capture analysis of BCL2L11 promoter interactions between enhancers 1\u20136 and the ACOXL promoter in BL31 wtBAC2 cells treated with UNC1999 for 24 hr. Primers are as in Figure 5 and Figure 5\u2014figure supplement 2.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18270/elife-18270-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) EBNA3A/3B/3C ChIP-sequencing from Mutu III BL cells as in Figure 5. (B) H3K27me3 ChIP-sequencing signals in GM12878 cells (ENCODE). Boxes show the H3K27me3 domain encompassing the entire ACOXL gene and the BCL2L11 promoter (and enhancers 1\u20133) and the domains that encompass enhancers 4, 5 and 6.(C) H3K27Ac ChIP-sequencing signals in GM12878 (ENCODE).\n\nTo determine whether BCL2L11 silencing by EBV could be reversed through the loss of EZH2 activity, we treated EBV-negative BL31 cells and EBV-infected BL31 wt BAC2 cells with the EZH1/2 inhibitor UNC1999. In EBV-infected BL31 cells, BCL2L11 mRNA expression increased up to 3.6- and 5.4-fold after 8 and 18 hr treatment with UNC1999, consistent with the inhibition of PRC2-mediated gene repression (Figure 6B and C). In contrast, treatment of EBV-negative BL31 cells with UNC1999 resulted in only 1.8 to 2.7 fold increases in BCL2L11 expression after 8 and 18 hr, respectively (Figure 6B and C). Since BCL2L11 is not repressed by EBV in BL31 cells, these small increases may reflect the fact that even though the gene is expressed, further de-repression can be achieved through EZH1/2 inhibition. Consistent with increased BCL2L11 expression and the pro-apoptotic function of BCL2L11, EBV-infected BL31 cells treated with UNC1999 also displayed large increases in Caspase 3/7 activity (Figure 6D and E). Caspase 3/7 activity was very low in EBV-negative BL31 cells but increased slightly in the presence of UNC1999, consistent with the smaller increases in BCL2L11 expression. These data therefore indicate that PRC-mediated silencing of BCL2L11 by EBNA3A and EBNA3C can be reversed by EZH1/2 inhibition and results in the induction of apoptosis.\n\nTo assess the effect of EZH2 inhibition on BCL2L11 promoter interactions, we performed 3C analysis of the BCL2L11 locus in EBV-infected BL31 cells following UNC1999 treatment. We found that treatment with 5 or 10 \u00b5M UNC1999 led to increased interactions between the BCL2L11 promoter and all enhancers, and between the BCL2L11 and ACOXL promoters (Figure 6F). These data indicate that EZH1/2 activity is required for the inactivation of BCL2L11 enhancers and BCL2L11 silencing in EBV-infected cells.\n\nWe conclude that the increased cell survival that results from EBV EBNA3A and EBNA3C silencing of BCL2L11 involves\u00a0the recruitment of EZH2 and the inactivation of a long-range active enhancer hub encompassing the neighbouring ACOXL gene.\n\n## Discussion\n\nB-cell immortalisation by EBV plays a central role in the development of numerous B-cell lymphomas and is required for the persistence of EBV in infected hosts. EBNA2 is essential for B-cell immortalisation and the continuous growth of EBV-infected cells (Cohen et al., 1989; Kempkes et al., 1995). Upregulation of MYC by EBNA2 (Kaiser et al., 1999) plays a key role in stimulating B-cell proliferation early in infection, promoting immortalisation. Our data now show that EBV manipulates MYC enhancer function to drive tumourigenesis, inducing directional remodelling of enhancer-promoter interactions over 3 Mbs. EBV promotes upstream promoter-enhancer interactions and decreases downstream interactions. The MYC enhancer interaction landscape in EBV-infected cells is therefore distinct from leukaemia cells, where downstream enhancers are the major controllers of MYC transcription (Herranz et al., 2014; Shi et al., 2013).\n\nWhether MYC activation by EBNA2 also plays a role in predisposing immortalised infected cells to the MYC translocations that characterise EBV-positive BL has not been explored. In fact, the role of EBV in the pathogenesis of BL remains an enigma, since the defining feature of BL is a MYC/IG translocation rather than the presence of EBV. It has been proposed that EBV may contribute to BL simply by providing a pool of cells undergoing deregulated growth, in which a genetic accident becomes more likely. Most evidence however, now points to a role for EBV in providing a survival advantage to cells that express high-levels of MYC by repressing BCL2L11 (see below). Pro-survival events presumably arise through genetic and epigenetic changes induced by non-viral mechanisms in EBV-negative BLs. Given that the BCL2L11 repressors EBNA3A and EBNA3C are expressed initially in growth-transformed B cells, but not in BL cells (which express only EBNA1), BCL2L11 repression is likely an early event that prevents apoptosis driven by the initial activation of MYC by EBNA2. Since H3K27me3-mediated BCL2L11 repression leads to CpG methylation at the BCL2L11 promoter (Paschos et al., 2009)\u00a0this \u2018hit-and-run\u2019 silencing event would provide a long-lived survival advantage to cells in which a MYC/IG translocation may subsequently arise. EBV increases the likelihood of a translocation event through the upregulation of AID by EBNA3C (Kalchschmidt et al., 2016a). The generation of double-strand DNA breaks as a result of aberrant AID activity is strongly implicated in the genesis of MYC/IG translocations (Robbiani et al., 2008; Dorsett et al., 2007). AID preferentially targets active enhancer regions, so our data implicate the activation of upstream MYC enhancers by EBNA2 in predisposing these regions to AID-induced breakpoints in EBV-infected cells.\n\nInterestingly, MYC-IG breakpoints in EBV-positive eBL carrying the common t(8;14) translocation are predominantly located far upstream of MYC whereas breakpoints in sBL are evenly distributed between the promoter region, the first exon and the first intron (Neri et al., 1988;\u00a0Shiramizu et al., 1991; Busch et al., 2007; Joos et al., 1992; Pelicci et al., 1986). When we examined the location of MYC-IG breakpoints in eBLs in light of the EBV-induced changes we detected in the chromatin region upstream of MYC, we found that previous studies mapped the majority of EBV-positive eBL breakpoints to upstream of the EcoRI site 7 kb upstream of MYC (Neri et al., 1988;\u00a0Shiramizu et al., 1991; Pelicci et al., 1986). Only eight EBV-positive eBLs have had their 5\u2019 breakpoints further mapped or sequenced (Haluska et al., 1986; Neri et al., 1988; Joos et al., 1992). These seven eBL cell-lines and one eBL biopsy sample have translocation junctions \u2212215 to \u221246 kb upstream of MYC (Haluska et al., 1986; Neri et al., 1988; Joos et al., 1992). These upstream eBL breakpoints therefore map to the vicinity of the EBNA2-bound \u2212186/168 enhancer. This region has not previously been studied as a long-range MYC control region, but has SE properties in colorectal carcinoma and diffuse large B cell lymphoma cell-lines (Supplementary file 1). Our data therefore highlight a role for the \u2212186/168 enhancer in the remodelling of upstream MYC chromatin that may create a \u2018hotspot\u2019 for eBL breakpoints. In fact all upstream breakpoints (including those more than 7 kb upstream of MYC that have not been fully mapped) likely fall within the upstream region that displays increased promoter looping in the presence of EBV. We therefore propose that the EBNA2-directed activation and remodelling of MYC upstream chromatin may increase the susceptibility of this region to a translocation event initiated by the off-target activity of activation-induced cytidine deaminase (AID). In contrast to eBL, sporadic BL t(8:14) breakpoints cluster in two regions much further downstream that include the MYC promoter (\u2212400 bp to + 150 bp) and a region immediately downstream (+420 bp to +1.2 kb) (Busch et al., 2007). This suggests that specific chromatin changes or other factors contribute to the localisation of MYC breakpoints in different regions in the absence of EBV.\n\nOur data also demonstrate that the mechanism of MYC activation by EBNA2 through upstream enhancers involves the recruitment of the SWI/SNF ATPase BRG1. Previous studies have demonstrated that AML cell growth is dependent on MYC activation by SWI/SNF (Shi et al., 2013). This dependency appears to result from a requirement for BRG1 for the interaction of the +1.8/1.9 Mb (+1.7 Mb in mouse) MYC enhancer with the promoter (Shi et al., 2013). In AML cells, BRG1 knockdown decreased downstream enhancer interactions and increased upstream enhancer interactions, suggesting some directionality in the effects of BRG1 on enhancer looping. In EBV-infected cells however, we find that BRG1 is required for the maintenance of upstream enhancer-promoter interactions. Our data are therefore consistent with a model where BRG1-dependent chromatin remodelling is required for MYC enhancer-promoter interactions. The specificity of BRG1 dependence however, is determined by which MYC enhancers are active in a particular cell-type or context.\n\nRepression of BCL2L11 is a key strategy employed by EBV to circumvent MYC-driven apoptosis and promote survival (Thorley-Lawson and Allday, 2008). This is consistent with observations that the\u00a0loss of a single BCL2L11 allele accelerates lymphoma development in E\u00b5-MYC transgenic mice (Egle et al., 2004). The tumour suppressor role of BCL2L11 is also supported by its deletion in 40% of mantle cell lymphomas (Tagawa et al., 2005), silencing through CpG promoter methylation in natural killer cell lymphomas (K\u00fc\u00e7\u00fck et al., 2015) and its targeting by the oncogenic miR-32 and miR17-92 microRNAs (Ventura et al., 2008; Koralov et al., 2008; Ambs et al., 2008). We now show that BCL2L11 repression in B cells results from the inactivation of multiple long-range enhancers. Our previous analysis focused on the low-level binding of the EBV repressors EBNA3A and EBNA3C to the BCL2L11 promoter (McClellan et al., 2013). It is now clear that the BCL2L11 promoter is controlled through a long-range regulatory hub that is inactivated by EBNA3A and EBNA3C through a process that results in the recruitment of the PRC2 methyltransferase EZH2 and is dependent on EZH1/2 activity. No direct interaction between EBNA3A and EBNA3C and components of the PRC1 or PRC2 transcriptional repressors has been reported to date. PRC-dependent and H3K27me3-associated gene silencing by EBNA3A and EBNA3C has\u00a0however\u00a0been convincingly demonstrated at multiple gene loci (Skalska et al., 2010; Harth-Hertle et al., 2013; Kalchschmidt et al., 2016b; McClellan et al., 2012; 2013).\u00a0The mechanism of PRC recruitment by these EBV repressors remains unclear. In fact, time-course studies have shown that the loss of active chromatin marks from gene promoters and enhancers repressed by EBNA3A and EBNA3C precedes the binding of PRCs and the deposition of H3K27me3 (Harth-Hertle et al., 2013; Kalchschmidt et al., 2016b). PRC recruitment and H3K27me3 deposition may therefore be a secondary and perhaps default event.\n\nAt the BCL2L11 locus, we have identified enhancers that control BCL2L11 expression in human B cells, that are manipulated by EBV to repress BCL2L11 in infected B cells. These enhancers have potential roles in BCL2L11 control in normal and malignant cells (Supplementary file 2). Interestingly, a murine BCL2L11 enhancer located 117 kb upstream and within ACOXL (but distinct from the EBV-targeted enhancers described here) was recently shown to be disrupted by binding of the TRIM33 transcription cofactor to prevent BCL2L11-induced apoptosis in B lymphoblastic leukaemia (Wang et al., 2015). Importantly, we showed that EBV-induced repression of BCL2L11 through the disruption of enhancer-promoter interactions was reversed by EZH1/2 inhibition and resulted in increased apoptosis. This provides a therapeutic rationale for the use of EZH2 inhibitors in the treatment of EBV-positive lymphomas where BCL2L11 is repressed. Our work also revealed that the poorly characterised ACOXL gene is a target for repression by EBNA3C. Interestingly, ACOXL contains two risk loci for CLL (Di Bernardo et al., 2008; Berndt et al., 2013), one of which (rs13401811\u00a0[Berndt et al., 2013]) maps to a smaller EBNA3A/B/C binding peak between enhancers 1 and 2 that we did not characterise in this study. This raises the possibility that this polymorphism deregulates the function of a BCL2L11 enhancer. ACOXL is also downregulated in prostate cancer tissues (O'Hurley et al., 2015), but further studies are required to confirm any potential role in tumourigenesis.\n\nIn summary, we show that EBV-directed lymphomagenesis involves the hijacking of long-range enhancer hubs at MYC and BCL2L11 (Figure 7). MYC enhancer activation by EBV may contribute to the genesis of MYC translocations in BL. Enhancer-mediated control of BCL2L11 may be exploited in other tumourigenic contexts to manipulate cell survival.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/18270/elife-18270-fig7-v2.jpg)\n\n**Figure 7.:** (A) In uninfected B cells, MYC promoter interactions with downstream enhancers dominate. MYC activation on EBV infection by the EBV TF EBNA2 occurs through the activation of three major clusters of upstream enhancers at \u2212556, \u2212428 and \u2212186/168 kb (indicated by black boxes). This is associated with increased H3K27ac and BRG1 binding. EBNA2 promotes interactions between the MYC promoter and these upstream enhancers and reduces interactions with downstream enhancers. As part of this three-dimensional MYC enhancer reorganisation, EBNA2 also increases interactions between CTCF-bound regions (asterisks) in the \u2212556 kb super-enhancer. (B) BCL2L11 is repressed on EBV-infection by the EBV repressors EBNA3A and EBNA3C through the inactivation of multiple enhancers in regulatory hub encompassing the ACOXL gene. Enhancer inactivation is associated with PRC2 (EZH2) binding, increased H3K27me3 and the loss of enhancer-promoter interactions. Arrows indicate transcription start sites. Genes are indicated as expressed (+) or repressed (\u2212). ACOXL is repressed or expressed at low-level (\u00b1).\n\n## Materials and methods\n\n### Cell lines\n\nAll cell lines were routinely passaged twice-weekly in RPMI-1640 media (Invitrogen,\u00a0UK) containing 10% Foetal Bovine Serum, Penicillin and Streptomycin (Invitrogen). The EBV-positive latency III BL cell line Mutu III (clone 48) derives from the Mutu I latency I BL cell-line (Gregory et al., 1990). Mutu I cells display the \u2018latency I\u2019 restricted form of EBV gene expression characterised by the expression of only EBNA1. Mutu III cell clones arose spontaneously during culture of Mutu I cells and display an expanded latent gene expression pattern (latency III). The EBV-immortalised LCL GM12878 is an ENCODE Tier 1 cell line obtained from the Coriell Cell Repositories (Camden, New Jersey) (RRID:\u00a0CVCL_7526). The EBV-negative BL31 cell line series infected with wild-type recombinant EBV bacmids or EBNA 3A, 3B and 3C knock-out and revertant bacmids (kindly provided by Prof M. Allday) were cultured with the appropriate selection and supplements, as previously described (Anderton et al., 2008). The EBV-immortalised ER-EB 2.5 LCL, expressing a conditionally-active oestrogen receptor (ER)-EBNA2 fusion protein, was provided by Prof B. Kempkes, and was cultured in the presence of \u03b2-estradiol (Kempkes et al., 1995). For \u03b2-estradiol withdrawal and add back experiments, ER-EB 2.5 cells were incubated in the absence of \u03b2-estradiol for 4 days, and 1 \u00b5M \u03b2-estradiol was re-added for 17 hr, prior to cell harvest. The LCL expressing conditionally-active EBNA3C is infected with recombinant EBV expressing EBNA3C fused at the C terminus to a 4-hydroxytamoxifen (HT)-sensitive murine oestrogen receptor (LCL 3CHT) and was provided by Prof M. Allday (Skalska et al., 2010). For 4-hydroxytamoxifen withdrawal and add back experiments LCL 3CHT cells were initially cultured in the presence of 400 nM of 4-hydroxytamoxifen (Sigma,\u00a0UK) for 25 days, HT was then washed off and cells cultured for 21 days. HT was then either re-added or cells grown for a further 10 days in HT. For EZH1/2 inhibition, UNC1999 (Sigma) was added to BL31 wtBAC2 cells seeded at a density of 5\u00a0\u00d7\u00a0105 cells/ml, and cells harvested after 24 hr for mRNA and chromosome conformation capture. All cell-lines were verified as mycoplasma free.\n\n### Isolation, infection and CD40L-mediated activation of primary resting B cells\n\nPrimary resting B cells were isolated from blood from fresh apheresis cones obtained from the NHSBT under the ethically approved study 14/WM/0001. The Peripheral blood mononuclear cells were isolated by density centrifugation on lymphoprep (Axis Shield,\u00a0UK) and the B cells were subsequently purified by positive isolation using pan-CD19 Dynabeads (Dynal,\u00a0ThermoFisher,\u00a0UK). The Dynabeads were removed from the purified B cells by incubation with Detachabead (Dynal,\u00a0ThermoFisher). Purified B cells were incubated with 2089 EBV at an MOI of 100 for 1 hr at 37\u00b0C and the unbound virus was washed off. One million uninfected purified B cells were cultured in 4\u00a0ml of medium supplemented with 50\u00a0ng/ml soluble mega CD40L (Enzo,\u00a0UK) and 50\u00a0ng/ml IL4. The infected and CD40L-stimulated B cells were grown in RPMI, 10% FBS and supplemented with penicillin/streptomycin and glutamine.\n\n### siRNA knockdown\n\n200 nM ON-TARGETplus Human SMARCA4 (BRG1) siRNA (Dharmacon, GE Healthcare, UK; L-010431-00-0005) or ON-TARGETplus siRNA non-targeting siRNA #1 (Dharmacon,\u00a0GE\u00a0Healthcare; D-001810-01-05) were transfected into 5\u00a0\u00d7\u00a0106 GM12878 cells resuspended in buffer T cells using the Neon transfection and 1 pulse of 1300 V for 30 msec. Following transfection the cells were further incubated for 72 hr in normal media without antibiotics.\n\n### Caspase 3/7 assay\n\nBL31\u00a0and\u00a0BL31 wtBAC2 cells (100 \u00b5l) were seeded into 96 well plates at a density of 20,000 cells/well and cultured for 8 or 18 hours in the presence or absence of UNC1999. An equal volume of Caspase-Glo 3/7 Assay reagent (Promega,\u00a0UK) was added, and cells were incubated for\u00a030 min at room temperature. Luminescence was measured using a Glowmax multi detection system (Promega).\n\n### ChIP-sequencing\n\nPreviously published EBNA2 and EBNA3A/B/C Mutu III ChIP-sequencing data\u00a0(McClellan et al., 2013) are available via GEO accession number GSE47629 and EBNA2 GM12878 data via accession number GSE76869 (Gunnell et al., 2016). Note that Mutu III cells have an unmapped MYC-IG translocation, but sequence reads are mapped to the intact MYC locus. EBNA2 binding sites in Mutu III cells are also detected in GM1278 cells and/or in the IB4 EBV-infected LCL (Zhao et al., 2011b) so the integrity of binding to these sites seems to be maintained despite their translocation.\n\n### ChIP-QPCR\n\nEBNA3A, EBNA3B and EBNA3C were precipitated as described previously using antibodies specific for each EBNA\u00a0(McClellan et al., 2013). ChIP for EZH2 was carried out using 4 \u00b5g mouse monoclonal antibody (Millipore,\u00a0UK; 17\u2013662), for BRG1 using 5 \u00b5g rabbit polyclonal antibody (Santa Cruz sc-10768 (H-88 X) and for diacetylated Histone H3 using 5 \u00b5g rabbit polyclonal antibody (Millipore 06\u2013599). Quantitative real-time PCR was carried out using specific and control primers (Supplementary file 4) and the standard curve method as previously described (McClellan et al., 2013).\n\n### Immunoblotting\n\nImmunoblotting was carried out as described previously (Bark-Jones et al., 2006; Gunnell et al., 2016) using anti-BRG1 (Santa Cruz biotechnology,\u00a0Germany;\u00a0sc-17796) and anti-actin antibodies (Sigma; A-2066).\n\n### Chromosome conformation capture\n\nChromosome conformation capture assays were carried out essentially as described previously (McClellan et al., 2013) using HindIII-HF (New England Biolabs) with baits consisting of either an 11 kb fragment encompassing the MYC promoter, an 18.2 kb fragment encompassing the \u2212556 kb MYC SE 3\u2019 CTCF site or a 10.8 kb fragment encompassing the BCL2L11 promoter. Samples were then analysed by semi-quantitative PCR using unidirectional (rather than head to head) primers designed to amplify across ligation junctions (Naumova et al., 2012). Positive control PCRs across ligation junctions were carried out using libraries containing genomic DNA fragments representing expected ligation products. Positive control library fragmentswere either synthesised (Genestrings, Life Technologies) or generated from genomic PCR fragments covering the restriction sites of interest that were then digested and ligated. Titrations of positive control DNA were analysed by PCR using the same primers used for chromosome conformation capture to determine the linear range of the assay prior to analysis of the chromosome conformation capture library. Quantitation was carried out using a LiCOR imaging system following agarose gel electrophoresis and staining with GelRed (Biotium,\u00a0Fremont,\u00a0California). Interaction frequencies were determined by dividing the chromosome conformation capture chromatin library signal for each ligation junction product by the signal obtained for a positive control sample from within the linear range. Positive control and 3C PCRs were carried out and analysed in duplicate.\n\n### Circularised chromosome conformation capture (4C-seq)\n\nMYC promoter interacting fragments were captured using a 2.7 kb NlaIII fragment encompassing the MYC promoter, prior to further digestion by DpnII and 4C-seq was carried out using a previously described protocol (Splinter et al., 2012). Cells were passed through a 70 \u00b5m filter to obtain a single cell preparation. 1\u00a0\u00d7\u00a0107 cells were then fixed in 2% formaldehyde in the presence of 10% FCS for 10 min at room temperature. The reaction was quenched with 0.125\u00a0M glycine, and cells collected by centrifugation at 400 g for 8 min at 4\u00b0C. The pellet was resuspended in 0.5 ml lysis buffer (50 mM Tris-HCl, pH 7.5; 150 mM NaCl, 0.5 mM EDTA, 0.5% NP-40, 1% Triton X-100) with freshly added complete protease inhibitors (Roche,\u00a0UK), and lysed on ice for 10 min. The nuclei were collected by centrifugation at 750 g for 5 min at 4\u00b0C, then resuspended in 0.5 ml of 1.2X CutSmart Buffer (New England Biolabs) containing 0.3% SDS and incubated for 1 hr at 37\u00b0C, while shaking at 900 rpm. Triton X-100 was then added to the nuclei to give a final concentration of 3% and the samples incubated for 1 hr at 37\u00b0C, with shaking. 200 U NlaIII (New England Biolabs,\u00a0UK) were added to the nuclei and the samples incubated for 4 hr at 37\u00b0C, while shaking at 900 rpm. The reaction was supplemented with a further 200 U NlaIII and incubated overnight at 37\u00b0C with shaking at 900 rpm. A further 200 U NlaIII was added, followed by an additional 4 hr incubation at 37\u00b0C while shaking at 900 rpm. The digestion reaction was stopped by incubation at 65\u00b0C for 20 min. The sample was then diluted to 7 mls with 1X ligation buffer (Roche). 50 U DNA ligase (Roche) were added to the sample, and the reaction was incubated overnight at 16\u00b0C. 300 \u00b5g of Proteinase K (Roche) were added to the sample and the reaction incubated at 65\u00b0C overnight. RNA was removed by incubation with 300 \u00b5g of RNAse for 45 min at 37\u00b0C. Following two rounds of phenol-chloroform extraction, DNA was ethanol precipitated prior to resuspension in 150 \u00b5l of 10\u00a0mM Tris-HCL pH7.5 at 37\u00b0C. The samples were then diluted to\u00a0500\u00a0\u00b5l\u00a0with 1X DpnII buffer (New England Biolabs). 50 U DpnII (New England Biolabs) were added, followed by an overnight incubation at 37\u00b0C whilst shaking at 900 rpm. The digestion reaction was stopped by incubation at 65\u00b0C for 20 min. Samples were diluted in 14 mls 1X ligation buffer. 100 U DNA ligase were added and the reaction incubated overnight at 16\u00b0C. The samples were then ethanol precipitated in the presence of glycogen at \u221280\u00b0C, prior to purification over a QIAquick PCR purification Kit (Qiagen), and eluted in 150 \u00b5l 10\u00a0mM Tris-HCL pH7.5.\n\nFragments captured by the bait region were then amplified by inverse PCR using primers designed to amplify outwards from the bait region (Supplementary file 3). Individual forward primers included a 5\u2019 overhang of the Illumina sequence adapter P5 and a unique \u2018barcode\u2019 sequence and encompassed the primary NlaIII restriction site of the MYC promoter bait. Common reverse primers included a 5\u2019 overhang of the Illumina sequence adapter P7 and were designed to bind less than 100 bps from the secondary restriction site (DpnII) in the MYC promoter bait. PCR was performed using Expand Long Template Polymerase (Roche), with 3.2 \u00b5g of template and 1.12 nmol of the P5 and P7 primers for 2 min at 94\u00b0C, 10 s at 94\u00b0C, 1 min at 55\u00b0C, 3 min at 68\u00b0C for 29 cycles followed by 5 min at 68\u00b0C. 16 individual PCR reactions were carried out for each sample. The reactions were pooled and purified to separate the unused adapter primers from the PCR product using the High Pure PCR Product Purification Kit (Roche). Replicate chromatin samples were generated from the same cell batch and processed separately through each stage. Samples were combined for multiplex 100bp single-end Illumina HiSeq sequencing. Four ER-EB 2.5 LCL samples were sequenced in a single lane using barcodes TSBC01, TSBC02, TSBC10, and TSBC20. Six primary B cell samples were combined in a single lane using barcodes TSBC02, TSBC04, TSBC05, TSBC06, TSBC07, and TSBC12.\n\n### 4C\u2013sequencing and data analysis\n\nInitial data extraction was performed using a custom script (available as a source code file) to strip out and separate embedded barcodes, and to remove reads from the restriction fragment immediately adjacent to the bait, where no digestion had occurred. Reads were mapped to the Homo sapiens GRCh37 genome assembly using bowtie 2 v2.2.7 using default parameters, and were filtered to retain only those uniquely mapping reads with MAPQ >=42. For absolute quantitation the genome was divided into 10\u00a0kb windows and quantitated with read counts normalised to the data set with the highest read coverage. For relative quantitation the genome was divided into windows each of which contained a total of 50,000 reads across all samples. Read counts for each region were then quantitated in each individual dataset, and the raw counts were corrected for the total read count to account for differing depths of sequencing. Interaction count differences were calculated by subtracting the normalised counts for one dataset from another. 4C-sequencing data are available via GEO accession GSE82150.\n",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "9cb44c54-5413-4bdc-b649-f88ea6b5761a",
+      "submission_id": "4c5d95dd-2d8f-4f5b-a9af-dab6539c605b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nick J Proudfoot, University of Oxford , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.18270.022](https://doi.org/10.7554/eLife.18270.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"MYC activation and BCL2L11 silencing by a tumour virus through the large-scale reconfiguration of enhancer-promoter hubs\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Nick Proudfoot as the Reviewing Editor and Jessica Tyler as the Senior Editor. The other reviewers have opted to remain anonymous.\n\nYour referees have discussed their reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nEssentially your lab's study describes the analysis of conformational changes between the promoter and multiple enhancer elements of two key regulatory genes MYC and BCL2L11 following EBV viral infection (especially through expression of EBV encoded transcription factors EBNAs). Your data points to the critical role played by specific EBNAs in reconfiguring enhancer:promoter contacts resulting in MYC activation and BCL2L11 repression. You also provide some interesting mechanistic data on how this occurs mechanistically. Overall all the reviewers found your study interesting but have defined several experimental and presentation weaknesses that will need to be remedied in your revised manuscript. These are listed as follows.\n\n1) In Figure 1 it should highlighted that the -556 kb enhancer is complex. The 5' part shows reduced MYC promoter interaction following EBNA2 expression. Really, a blow up of this region should be shown in the main figure (as in Figure 1\u2014figure supplement 2). The exact positions of the primers used for Figure 1G and especially Figure 1H (showing CTCF interaction) must be shown.\n\n2) It is claimed from the data of Figure 3 that BRG1 is required for the formation of the EBNA2 induced enhancer:promoter contacts. For this they do an siRNA experiment in GM12878. It would make more sense to do the BRG1 knock-down in the +/- EBNA2 setting. This way direct or indirect effects can be distinguished.\n\n3) While the data in Figure 4 are interesting as a discussion point, there are no new experiments here to relate the EBNA2 binding sites to these breakpoints. A direct relationship can\u2019t therefore be concluded. Consequently we feel that Figure 4 should be removed and the translocation breakpoint connections be referred to in the Discussion.\n\n4) The initial conformational analysis of the MYC locus employed 4C analysis. However the subsequent data relied just on 3C analysis (e.g. Figure 3D, Figure 5E and Figure 6D). We consider that these analyses should be confirmed a more rigorous 4C approach. Also 3C controls should be included such as 3C primers outside the interaction regions as negative controls as well as minus ligase and crosslinking controls. We note that the 4C-seq and differential 4C-seq figures shown are missing y-axes which makes it very difficult to estimate the magnitude of the effect. These should be added\n\n5) In Figures 5B, C and D, none of the EBNA3 proteins (A, B or C) ChIP at enhancer 3 above background. Ap and Enhancers 1 and 2 are also very weak for all three EBNA3 factors. How do the authors account for the strong ChIP signals at these enhancers with the general EBNA3 antibody (Figure 5A)? EZH2 is also bound to these sites (Figure 5F) and so it is not clear that EBNA3 binding is in-fact responsible for the recruitment of EZH2. These issues need consideration and comment.\n\n6) In Figure 6 UNC1999 needs to be tested in the absence/presence of EBV infection to determine if the effects are dependent on the EBNA3-dependent recruitment of EZH2.\n\n7) The manuscript should be thoroughly checked for clarity with a view to making the paper understandable to non experts. In particular a clearer description of the different cell types employed would be helpful. Also a final summary figure showing the predicted effects of different EBNAs on MYC and BCL2L11 loci conformations and the key molecular players identified would be desirable.\n",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0fb76ab1-f8bd-4496-94ca-09b7bcd9d656",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C1",
+      "claim": "Epstein-Barr virus (EBV) is associated with the development of numerous lymphomas including Burkitt's (BL), post-transplant, Hodgkin and certain NK and T-cell lymphomas.",
+      "claim_type": "EXPLICIT",
+      "source": "Epstein-Barr virus (EBV) is associated with the development of numerous lymphomas including Burkitt's (BL), post-transplant, Hodgkin and certain NK and T-cell lymphomas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about EBV-associated lymphomas.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "b69d9810-80e4-403c-a2f7-0e36db28ed7a",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C2",
+      "claim": "EBV was discovered in BL biopsies from sub-Saharan Africa (Epstein et al., 1964).",
+      "claim_type": "EXPLICIT",
+      "source": "EBV was discovered in BL biopsies from sub-Saharan Africa (Epstein et al., 1964)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Epstein et al., 1964.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "82c1d70b-2ae8-4112-bf7b-2924754d8c73",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C3",
+      "claim": "Endemic BL is almost always EBV associated.",
+      "claim_type": "EXPLICIT",
+      "source": "BL is endemic (eBL) and almost always EBV associated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about endemic BL.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "0433e01d-93b1-41fc-82dd-d75cc8243dbc",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C4",
+      "claim": "EBV positivity in sporadic BL is approximately 20%.",
+      "claim_type": "EXPLICIT",
+      "source": "BL also occurs world-wide as sporadic BL (sBL) and immunodeficiency-associated BL, where EBV positivity is approximately 20% and 60%, respectively (Mbulaiteye et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Mbulaiteye et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "f75f9246-94f6-4791-9ad2-d809194f61ed",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C5",
+      "claim": "EBV positivity in immunodeficiency-associated BL is approximately 60%.",
+      "claim_type": "EXPLICIT",
+      "source": "BL also occurs world-wide as sporadic BL (sBL) and immunodeficiency-associated BL, where EBV positivity is approximately 20% and 60%, respectively (Mbulaiteye et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Mbulaiteye et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "bea7467c-c85d-4067-86d2-0c10769851c6",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C6",
+      "claim": "The defining feature of BL is a chromosomal translocation involving MYC on chromosome 8 and an immunoglobulin (IG) gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Irrespective of origin or EBV status, the defining feature of BL is a chromosomal translocation involving MYC on chromosome 8 and an immunoglobulin (IG) gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about BL.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "c4909c89-2e73-4e67-bcb2-75285c1223bd",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C7",
+      "claim": "t(8:14) translocations occur in 85% of BL cases.",
+      "claim_type": "EXPLICIT",
+      "source": "t(8:14) translocations occur in 85% of BL cases (Boerma et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Boerma et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "87d64e1a-4ece-490d-bb99-6c9371cad280",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C8",
+      "claim": "The position of the MYC/IG translocation breakpoint is usually far 5' of MYC in endemic (EBV positive) BL.",
+      "claim_type": "EXPLICIT",
+      "source": "The position of the MYC/IG translocation breakpoint is usually far 5' of MYC in endemic (EBV positive) BL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about endemic BL breakpoints.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "c5348c98-9760-440e-8b37-551ab4030cbd",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C9",
+      "claim": "In sporadic BL, MYC/IG translocation breakpoints are in the first exon or intron.",
+      "claim_type": "EXPLICIT",
+      "source": "In sporadic BL, breakpoints are in the first exon or intron, implicating different, but unknown, mechanisms in their generation (Neri et al., 1988; Shiramizu et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Neri et al., 1988 and Shiramizu et al., 1991.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "1d5521aa-5d8b-4fc1-b090-2ee0f042c81d",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C10",
+      "claim": "The placement of MYC adjacent to highly active regulatory regions at IG loci leads to constitutive high-level MYC expression and the uncontrolled proliferation of BL cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The placement of MYC adjacent to highly active regulatory regions at these IG loci leads to constitutive high-level MYC expression and the uncontrolled proliferation of BL cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the mechanism of MYC deregulation in BL.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "9257260b-faed-47fc-aa13-2a8e1b74a465",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C11",
+      "claim": "EBV infection of resting B lymphocytes results in growth-transformation into permanently proliferating lymphoblastoid cell-lines (LCLs).",
+      "claim_type": "EXPLICIT",
+      "source": "On infection, resting B lymphocytes are growth-transformed into permanently proliferating lymphoblastoid cell-lines (LCLs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about EBV's transforming activity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "57758205-584b-4137-b3ee-3421c71c85f0",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C12",
+      "claim": "Nine viral latent proteins are expressed in EBV-immortalised LCLs.",
+      "claim_type": "EXPLICIT",
+      "source": "Nine viral latent proteins are expressed in EBV-immortalised LCLs; six Epstein-Barr nuclear antigens (EBNAs 1, 2, 3A, 3B, 3C and LP) and three latent membrane proteins (LMP1, 2A and 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about EBV latent gene expression.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "409f0b12-6e2b-470c-9ac7-ee48f7004b3d",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C13",
+      "claim": "EBNA2, EBNA3A and EBNA3C are required for B-cell immortalisation.",
+      "claim_type": "EXPLICIT",
+      "source": "EBNA2, EBNA3A and EBNA3C are required for B-cell immortalisation and the continuous proliferation of infected cells (Cohen et al., 1989; Tomkinson et al., 1993; Maruo et al., 2003, 2006; Kempkes et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "5f34ddad-6b89-4b3c-a8d8-3aa0abc60e35",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C14",
+      "claim": "EBNA2, EBNA3A and EBNA3C cannot bind DNA directly.",
+      "claim_type": "EXPLICIT",
+      "source": "These TFs cannot however bind DNA directly; they control gene transcription through interactions with cellular DNA-binding proteins (e.g. RBP-J\u03ba and PU.1) (Johannsen et al., 1995; Ling et al., 1994; Waltzer et al., 1994, 1996; Robertson et al., 1995; Le Roux et al., 1994; Zhao et al., 1996; Robertson et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "c2f8f8c8-c684-4a2d-918d-ea81edd27ef3",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C15",
+      "claim": "EBNA2 upregulates MYC during B-cell transformation by EBV.",
+      "claim_type": "EXPLICIT",
+      "source": "During B-cell transformation by EBV, EBNA2 plays a key role in upregulating numerous genes involved in driving cell proliferation, including the proto-oncogene MYC (Kaiser et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kaiser et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "8e46663d-b4cd-49a1-a244-1bcb17195595",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C16",
+      "claim": "EBNA3A and EBNA3C cooperatively silence the pro-apoptotic BCL2L11 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "These include the cyclin-dependent kinase inhibitor p16INK4a and the pro-apoptotic Bcl-2 family binding protein Bim (BCL2L11) (Skalska et al., 2010; Anderton et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Skalska et al., 2010 and Anderton et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "3e00882f-aec2-40e1-94d3-20f0ad1cf5b0",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C17",
+      "claim": "EBNA3A/EBNA3C directed silencing is associated with the recruitment of polycomb repressor complex 1 and 2 (PRC1, 2) and the deposition of H3K27me3.",
+      "claim_type": "EXPLICIT",
+      "source": "EBNA3A/EBNA3C directed silencing is associated with the recruitment of polycomb repressor complex 1 and 2 (PRC1, 2) and the deposition of the histone H3 lysine 27 trimethyl mark (H3K27me3) (McClellan et al., 2012, 2013; Paschos et al., 2012, 2009; Skalska et al., 2010; Kalchschmidt et al., 2016b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "3394d268-758f-48aa-9af2-26e5596ca3fd",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C18",
+      "claim": "At BCL2L11, PRC-mediated repression leads to longer-term silencing through the accumulation of CpG promoter methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "At BCL2L11, PRC-mediated repression leads to longer-term silencing through the accumulation of CpG promoter methylation (Paschos et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Paschos et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "ff0eb9a5-8e16-4987-b594-8484e5129d75",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C19",
+      "claim": "Lymphomagenesis only occurs in the presence of deregulated MYC expression when the p53-MDM2-p14ARF or BCL2L11 apoptotic axes are disabled.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, lymphomagenesis only occurs in the presence of deregulated MYC expression when the p53-MDM2-p14ARF or BCL2L11 apoptotic axes are disabled (reviewed in Thorley-Lawson and Allday, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a review by Thorley-Lawson and Allday, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "441ef82d-3340-4a57-b32d-0bc348b64516",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C20",
+      "claim": "EBNA2 binds multiple elements both upstream (\u2212556, \u2212428, and \u2212186/168 kb) and downstream (+450, +570, +900 kb and +1.8 Mb) from MYC.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that EBNA2 bound multiple elements both upstream (\u2212556, \u2212428, and \u2212186/168 kb) and downstream (+450, +570, +900 kb and +1.8 Mb) from MYC (Figure 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP-sequencing data shown in Figure 1A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "73dc8539-65d9-4312-986b-85296d2d478e",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C21",
+      "claim": "Upstream regions bound by EBNA2 have H3K27 acetylation (H3K27ac) signals characteristic of active enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Upstream regions bound by EBNA2 in particular, have H3K27 acetylation (H3K27ac) signals characteristic of active enhancers (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by H3K27ac ChIP-seq data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "d6fe0cfe-7721-4a03-864c-3d073939e58f",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C22",
+      "claim": "All regions bound by EBNA2, apart from the +900 kb enhancer, are classified as super-enhancers in numerous cancer cell lines and/or primary cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact all regions bound by EBNA2, apart from the +900 kb enhancer, are classified as super-enhancers in numerous cancer cell lines and/or primary cells (dbSUPER, http://bioinfo.au.tsinghua.edu.cn/dbsuper/ [Khan and Zhang, 2016]) (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to the dbSUPER database and citation to Khan and Zhang, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "4b95a2dc-3f62-43ef-8876-d14a51998744",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C23",
+      "claim": "The \u2212556 and \u2212428 regions contain susceptibility loci for chronic lymphocytic leukaemia (CLL) and prostate cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u2212556 and \u2212428 regions also contain susceptibility loci for chronic lymphocytic leukaemia (CLL) and prostate cancer (rs2466024, rs2466035, rs18814048, rs16902094 and rs445114) (Speedy et al., 2014; Gudmundsson et al., 2009, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Speedy et al., 2014 and Gudmundsson et al., 2009, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "c7dc713a-5f4d-4eb9-b837-28200aa8b424",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C24",
+      "claim": "Re-addition of \u03b2-estradiol to ER-EB 2.5 cells cultured for 4 days in its absence upregulated MYC.",
+      "claim_type": "EXPLICIT",
+      "source": "Re-addition of \u03b2-estradiol to ER-EB 2.5 cells cultured for 4 days in its absence, upregulated MYC as previously described (Kaiser et al., 1999) (Figure 1\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-QPCR data shown in Figure 1\u2014figure supplement 1 and citation to Kaiser et al., 1999.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "e89a3999-12ca-4f0a-b5d9-3afaaa97ea20",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C25",
+      "claim": "In the presence of functional EBNA2, MYC promoter interactions with upstream elements (\u2212556, \u2212428, and \u2212186/168 kb) were increased.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of functional EBNA2, MYC promoter interactions with upstream elements, including the \u2212556, \u2212428, and \u2212186/168 kb regions were increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by 4C-sequencing data shown in Figure 1D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "9800119d-2cef-4fcd-9842-64916ab19ea6",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C26",
+      "claim": "In the presence of functional EBNA2, interactions with downstream elements (+450 kb, +570 kb and +1.8/1.9 Mb) were decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, interactions with downstream elements, including the +450 kb, +570 kb and +1.8/1.9 Mb regions were decreased (Figure 1D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by 4C-sequencing data shown in Figure 1D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "c9b30f17-aea1-4114-975c-da255812637d",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C27",
+      "claim": "EBNA2 activation results in 2\u20133-fold increases in promoter interaction frequency for the \u2212556 SE and the \u2212186/168 region.",
+      "claim_type": "EXPLICIT",
+      "source": "We detected 2\u20133-fold increases in promoter interaction frequency in the presence of EBNA2 for the largest EBNA2 binding peak in the \u2212556 SE and for the four EBNA2 peaks in the \u2212186/168 region (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by 3C data shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "6684425b-6225-4369-bc16-d1f0c9d5d0f5",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C28",
+      "claim": "A distinct region within the \u2212556 SE displayed reduced MYC promoter interactions in the presence of EBNA2.",
+      "claim_type": "EXPLICIT",
+      "source": "4C-sequencing analysis also identified a distinct region within the \u2212556 SE that displayed reduced MYC promoter interactions in the presence of EBNA2 (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by 4C-sequencing data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "3eb24ed6-9e03-4625-9b8d-0823558c6f5f",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C29",
+      "claim": "A 2.6-fold decrease in the frequency of interactions between the region with reduced interactions in the \u2212556 SE and the MYC promoter was confirmed using 3C.",
+      "claim_type": "EXPLICIT",
+      "source": "A 2.6-fold decrease in the frequency of interactions between this region and the MYC promoter was confirmed using 3C (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by 3C data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "8c2a1c13-efa7-4c2f-906f-60e010fd4010",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C30",
+      "claim": "The region with reduced interactions in the \u2212556 SE contains three binding sites for CTCF.",
+      "claim_type": "EXPLICIT",
+      "source": "This region contains three binding sites for the chromatin boundary and looping factor CTCF (Figure 2 and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2 and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "1e03a14e-6450-4357-a08a-2cc6f33672b1",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C31",
+      "claim": "There is a four-fold increase in interactions between CTCF site-containing fragments in the presence of EBNA2.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a four-fold increase in interactions between CTCF site-containing fragments in the presence of EBNA2 (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by 3C data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "6f641f0a-60e5-456e-a995-03fb7a267720",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C32",
+      "claim": "MYC mRNA levels increased to maximum levels 48 hr post-EBV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "MYC mRNA levels increased to maximum levels 48 hr post-EBV infection (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-QPCR data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "404dd8cd-906a-40ce-998c-1c3467bafdf0",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C33",
+      "claim": "48 hr after EBV infection, increases in interactions between all upstream enhancers and intervening regions and the MYC promoter were detected.",
+      "claim_type": "EXPLICIT",
+      "source": "4C-sequencing carried out at this time point detected increases in interactions between all upstream enhancers and intervening regions and the MYC promoter (Figure 3B,C and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by 4C-sequencing data shown in Figure 3B, C and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "d116538d-808f-437a-b4a6-ef46e6a491de",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C34",
+      "claim": "48 hr after EBV infection, reduced interactions between the +450, +570 kb and +900 kb enhancers and the MYC promoter were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed reduced interactions between the +450, +570 kb and +900 kb enhancers and the MYC promoter on EBV infection consistent with our LCL data (Figure 3B,C and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by 4C-sequencing data shown in Figure 3B, C and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "f48b282f-feb4-428b-9ecc-a74577365459",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C35",
+      "claim": "48 hr after B-cell activation by CD40L/IL-4, upstream interactions were reduced and downstream interactions were increased.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 48 hr after B-cell activation by CD40L/IL-4 we observed a reverse effect on MYC promoter-enhancer interactions (Figure 3B,D and F). Upstream interactions were reduced and downstream interactions were increased.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by 4C-sequencing data shown in Figure 3B, D and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "c674faa9-fdce-433b-b892-d26bf5f1e161",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C36",
+      "claim": "EBNA2 increased H3K27ac levels seven-fold at the main MYC P2 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "EBNA2 increased H3K27ac levels seven-fold at the main MYC P2 promoter and 16-fold at the \u2212556 SE (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP-QPCR data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "52f8bc15-c703-4113-ba27-cbf66e224cd6",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C37",
+      "claim": "EBNA2 increased H3K27ac levels 16-fold at the \u2212556 SE.",
+      "claim_type": "EXPLICIT",
+      "source": "EBNA2 increased H3K27ac levels seven-fold at the main MYC P2 promoter and 16-fold at the \u2212556 SE (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP-QPCR data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "8f1145a4-5cbe-4cc3-9eaa-17cd93e9bffc",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C38",
+      "claim": "BRG1 associated with specific MYC enhancers, with highest levels at the \u2212186/168 enhancer and the \u2212556 SE main peak.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that BRG1 associated with specific MYC enhancers, with highest levels at the \u2212186/168 enhancer and the \u2212556 SE main peak (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP-QPCR data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "6b7280e6-c210-406f-8bdf-c352be257636",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C39",
+      "claim": "EBNA2 increased BRG1 binding at the \u2212186/168 enhancer and the \u2212556 SE main peak.",
+      "claim_type": "EXPLICIT",
+      "source": "EBNA2 increased BRG1 binding at these sites, consistent with the ability of EBNA2 to interact with BRG1 via the Snf5 subunit of SWI/SNF (Wu et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ChIP-QPCR data shown in Figure 4B and citation to Wu et al., 1996.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "b2ac5b74-c9fd-437b-b90d-9d4a6118f9f7",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C40",
+      "claim": "siRNA-mediated BRG1 knockdown in GM12878 cells led to a loss of MYC promoter interactions with the \u2212556, \u2212428 and \u2212186/168 enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that siRNA-mediated BRG1 knockdown in GM12878 cells led to a loss of MYC promoter interactions with the \u2212556, \u2212428 and \u2212186/168 enhancers (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by 3C data shown in Figure 4C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "7c8fe187-c2ff-4e56-86fd-2463643f57b6",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C41",
+      "claim": "ChIP-sequencing revealed the presence of long-range EBNA3 binding sites at the BCL2L11 locus.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ChIP-sequencing using an antibody that precipitates all EBNA3 proteins also revealed the presence long-range EBNA3 binding sites at the BCL2L11 locus (Figure 5A) (McClellan et al., 2012, 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP-sequencing data shown in Figure 5A and citations to McClellan et al., 2012, 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "476417c7-159d-4ea5-9c0e-02b5795b6015",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C42",
+      "claim": "There are three major EBNA3 binding sites upstream of BCL2L11 (up to \u2212374 kb) that lie within the neighbouring acyl-CoA oxidase-like gene ACOXL.",
+      "claim_type": "EXPLICIT",
+      "source": "These include three major sites upstream of BCL2L11 (up to \u2212374 kb) that lie within the neighbouring acyl-CoA oxidase-like gene ACOXL and three sites 310 to 587 kb downstream of BCL2L11 (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP-sequencing data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "fb643579-43af-4c7d-815b-9c2aa3ba7cd9",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C43",
+      "claim": "There are three EBNA3 binding sites 310 to 587 kb downstream of BCL2L11.",
+      "claim_type": "EXPLICIT",
+      "source": "These include three major sites upstream of BCL2L11 (up to \u2212374 kb) that lie within the neighbouring acyl-CoA oxidase-like gene ACOXL and three sites 310 to 587 kb downstream of BCL2L11 (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP-sequencing data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "1307aafa-34c2-4f0d-a65e-471a5d8c04cd",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C44",
+      "claim": "Enhancers 1, 4, and 6 are predicted as super-enhancers in blood-derived primary cells or cell-lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhancers 1, 4, and 6 are predicted as SEs in blood-derived primary cells or cell-lines (http://bioinfo.au.tsinghua.edu.cn/dbsuper/ [Khan and Zhang, 2016]) indicative of a functional role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to the dbSUPER database and citation to Khan and Zhang, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "1dfcd0bf-18b7-48b4-af6e-31517af708b7",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C45",
+      "claim": "Enhancer 4 is predicted to have SE function in 30 different cell types, 22 of which are blood-derived primary or cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, enhancer 4 is predicted to have SE function in 30 different cell types, 22 of which are blood-derived primary or cancer cells (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data in Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "2c463ae8-5e87-4fd5-b71d-14b0b938963e",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C46",
+      "claim": "Only EBNA3A and EBNA3C bind to BCL2L11 long-range elements.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP-QPCR using specific antibodies demonstrated that only EBNA3A and EBNA3C bind to BCL2L11 long-range elements (Figure 5B\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP-QPCR data shown in Figure 5B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "018bc433-e369-4a34-b3a0-bfb2933e2d53",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C47",
+      "claim": "In uninfected BL31 cells (where BCL2L11 is expressed), the ACOXL promoter and all long-range elements (apart from enhancer 1 within ACOXL) interacted with the BCL2L11 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the BCL2L11 promoter as bait, we found that in uninfected BL31 cells (where BCL2L11 is expressed), the ACOXL promoter and all long-range elements (apart from enhancer 1 within ACOXL) interacted with the BCL2L11 promoter (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by 3C data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "e296524e-f2c3-454c-a9d1-52f6f91575ef",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C48",
+      "claim": "In BL31 cells infected with either wild-type EBV or EBNA3B knock-out EBV (where BCL2L11 is repressed), a loss of all promoter-enhancer interactions was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to EBV-negative BL31 cells, in BL31 cells infected with either wild-type EBV or EBNA3B knock-out EBV (where BCL2L11 is repressed), we observed a loss of all promoter-enhancer interactions (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by 3C data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "54b57aac-a7d6-42b1-922d-0bb1c44a135b",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C49",
+      "claim": "In cells infected with EBNA3A or EBNA3C knock-out viruses, BCL2L11 was expressed and all enhancer-promoter interactions were preserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, in cells infected with EBNA3A or EBNA3C knock-out viruses, BCL2L11 was expressed and all enhancer-promoter interactions were preserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by 3C data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "51f6ac57-6732-4dd5-afd4-f1cfc9f49fe1",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C50",
+      "claim": "EZH2 was associated with the BCL2L11 promoter in cells infected with viruses expressing EBNA3A and EBNA3C.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous observations (Paschos et al., 2012), we found that EZH2 was associated with the BCL2L11 promoter in cells infected with viruses expressing EBNA3A and EBNA3C (wt BAC2 and EBNA3B KO, Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP-QPCR data shown in Figure 6A and citation to Paschos et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "63dc517e-3a30-4fb9-abbc-d92a9c06cd84",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C51",
+      "claim": "EZH2 was detected binding to all enhancers targeted by EBNA3A and EBNA3C and to the ACOXL promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "We also detected EZH2 binding to all enhancers targeted by EBNA3A and EBNA3C and to the ACOXL promoter (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP-QPCR data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "8e056380-aef6-4a9f-a79f-32a9f199326c",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C52",
+      "claim": "In EBV-infected BL31 cells, BCL2L11 mRNA expression increased up to 3.6- and 5.4-fold after 8 and 18 hr treatment with UNC1999.",
+      "claim_type": "EXPLICIT",
+      "source": "In EBV-infected BL31 cells, BCL2L11 mRNA expression increased up to 3.6- and 5.4-fold after 8 and 18 hr treatment with UNC1999, consistent with the inhibition of PRC2-mediated gene repression (Figure 6B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-QPCR data shown in Figure 6B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "099c1500-9b10-48dc-bec4-5ab6cbefdc3d",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C53",
+      "claim": "EBV-infected BL31 cells treated with UNC1999 displayed large increases in Caspase 3/7 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with increased BCL2L11 expression and the pro-apoptotic function of BCL2L11, EBV-infected BL31 cells treated with UNC1999 also displayed large increases in Caspase 3/7 activity (Figure 6D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Caspase 3/7 assay data shown in Figure 6D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "b5ed63ae-cbce-4a82-bec4-8ffe06f57023",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C54",
+      "claim": "Treatment of EBV-infected BL31 cells with 5 or 10 \u00b5M UNC1999 led to increased interactions between the BCL2L11 promoter and all enhancers, and between the BCL2L11 and ACOXL promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that treatment with 5 or 10 \u00b5M UNC1999 led to increased interactions between the BCL2L11 promoter and all enhancers, and between the BCL2L11 and ACOXL promoters (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by 3C data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "eaf86a2d-accf-4909-968d-1ac1f14e2662",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C55",
+      "claim": "EBV manipulates MYC enhancer function to drive tumourigenesis, inducing directional remodelling of enhancer-promoter interactions over 3 Mbs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data now show that EBV manipulates MYC enhancer function to drive tumourigenesis, inducing directional remodelling of enhancer-promoter interactions over 3 Mbs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "e5fe5879-360e-4e44-b092-5b37fd42ea33",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C56",
+      "claim": "The MYC enhancer interaction landscape in EBV-infected cells is distinct from leukaemia cells, where downstream enhancers are the major controllers of MYC transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "The MYC enhancer interaction landscape in EBV-infected cells is therefore distinct from leukaemia cells, where downstream enhancers are the major controllers of MYC transcription (Herranz et al., 2014; Shi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of the authors' data with published data cited from Herranz et al., 2014 and Shi et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "d6463f9d-6918-4ed8-b3ca-3555da141332",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C57",
+      "claim": "The majority of EBV-positive eBL breakpoints map to upstream of the EcoRI site 7 kb upstream of MYC.",
+      "claim_type": "EXPLICIT",
+      "source": "When we examined the location of MYC-IG breakpoints in eBLs in light of the EBV-induced changes we detected in the chromatin region upstream of MYC, we found that previous studies mapped the majority of EBV-positive eBL breakpoints to upstream of the EcoRI site 7 kb upstream of MYC (Neri et al., 1988; Shiramizu et al., 1991; Pelicci et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Neri et al., 1988; Shiramizu et al., 1991; Pelicci et al., 1986.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "5ab37765-0dec-45aa-b51a-da6be3103a40",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C58",
+      "claim": "Seven eBL cell-lines and one eBL biopsy sample have translocation junctions \u2212215 to \u221246 kb upstream of MYC.",
+      "claim_type": "EXPLICIT",
+      "source": "These seven eBL cell-lines and one eBL biopsy sample have translocation junctions \u2212215 to \u221246 kb upstream of MYC (Haluska et al., 1986; Neri et al., 1988; Joos et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Haluska et al., 1986; Neri et al., 1988; Joos et al., 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "c0d87a75-b4d4-49f9-8fab-1a669dcd9074",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C59",
+      "claim": "Upstream eBL breakpoints map to the vicinity of the EBNA2-bound \u2212186/168 enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "These upstream eBL breakpoints therefore map to the vicinity of the EBNA2-bound \u2212186/168 enhancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the location of breakpoints and the location of the EBNA2-bound enhancer.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "6d33b761-1d10-4a13-a5bd-31dc2b841048",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C60",
+      "claim": "The loss of a single BCL2L11 allele accelerates lymphoma development in E\u00b5-MYC transgenic mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with observations that the loss of a single BCL2L11 allele accelerates lymphoma development in E\u00b5-MYC transgenic mice (Egle et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Egle et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "63a0d8d6-472f-4d50-8cea-83729658bb76",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C61",
+      "claim": "BCL2L11 is deleted in 40% of mantle cell lymphomas.",
+      "claim_type": "EXPLICIT",
+      "source": "The tumour suppressor role of BCL2L11 is also supported by its deletion in 40% of mantle cell lymphomas (Tagawa et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Tagawa et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "f744add9-4e56-40e2-9848-d0523bc4a2ce",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C62",
+      "claim": "BCL2L11 is silenced through CpG promoter methylation in natural killer cell lymphomas.",
+      "claim_type": "EXPLICIT",
+      "source": "The tumour suppressor role of BCL2L11 is also supported by its deletion in 40% of mantle cell lymphomas (Tagawa et al., 2005), silencing through CpG promoter methylation in natural killer cell lymphomas (K\u00fc\u00e7\u00fck et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to K\u00fc\u00e7\u00fck et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "c0c911b1-0a78-490a-bd87-649a76241915",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C63",
+      "claim": "BCL2L11 is targeted by the oncogenic miR-32 and miR17-92 microRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The tumour suppressor role of BCL2L11 is also supported by its deletion in 40% of mantle cell lymphomas (Tagawa et al., 2005), silencing through CpG promoter methylation in natural killer cell lymphomas (K\u00fc\u00e7\u00fck et al., 2015) and its targeting by the oncogenic miR-32 and miR17-92 microRNAs (Ventura et al., 2008; Koralov et al., 2008; Ambs et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ventura et al., 2008; Koralov et al., 2008; Ambs et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "6475cb96-6ca1-4329-950d-d36cd4efe354",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C64",
+      "claim": "A murine BCL2L11 enhancer located 117 kb upstream and within ACOXL was shown to be disrupted by binding of the TRIM33 transcription cofactor to prevent BCL2L11-induced apoptosis in B lymphoblastic leukaemia.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a murine BCL2L11 enhancer located 117 kb upstream and within ACOXL (but distinct from the EBV-targeted enhancers described here) was recently shown to be disrupted by binding of the TRIM33 transcription cofactor to prevent BCL2L11-induced apoptosis in B lymphoblastic leukaemia (Wang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Wang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "bb411966-d343-49a9-87d9-d26b20043809",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C65",
+      "claim": "EBV-induced repression of BCL2L11 through the disruption of enhancer-promoter interactions was reversed by EZH1/2 inhibition and resulted in increased apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we showed that EBV-induced repression of BCL2L11 through the disruption of enhancer-promoter interactions was reversed by EZH1/2 inhibition and resulted in increased apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the experimental data presented in the manuscript (Figure 6).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "ffeef92a-0cd4-467d-b5c5-22917acc7f5a",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C66",
+      "claim": "ACOXL contains two risk loci for CLL.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ACOXL contains two risk loci for CLL (Di Bernardo et al., 2008; Berndt et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Di Bernardo et al., 2008 and Berndt et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "eed575f1-1e3f-4604-b371-f9d3a0a443d7",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C67",
+      "claim": "ACOXL is downregulated in prostate cancer tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "ACOXL is also downregulated in prostate cancer tissues (O'Hurley et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to O'Hurley et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "8626a3ee-6dcc-420c-aa83-dfb53afc291f",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C68",
+      "claim": "BRG1 is required for the interaction of the +1.8/1.9 Mb (+1.7 Mb in mouse) MYC enhancer with the promoter in AML cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have demonstrated that AML cell growth is dependent on MYC activation by SWI/SNF (Shi et al., 2013). This dependency appears to result from a requirement for BRG1 for the interaction of the +1.8/1.9 Mb (+1.7 Mb in mouse) MYC enhancer with the promoter (Shi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Shi et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "48f89e25-e71f-49de-8a04-a81af77b8bfa",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C69",
+      "claim": "Inactivation of EBNA3C in an LCL expressing a conditionally-active EBNA3C-hydroxytamoxifen fusion protein led to increased ACOXL expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Although ACOXL was not expressed in most B cell-lines we examined, we found that inactivation of EBNA3C in an LCL expressing a conditionally-active EBNA3C-hydroxytamoxifen fusion protein led to increased ACOXL expression (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-PCR data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "c38ec2f3-1287-4447-b19e-87026fcd2d42",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C70",
+      "claim": "H3K27me3 ChIP-seq data from GM12878 cells demonstrates the presence of characteristically broad domains of H3K27me3 that coincide with the locations of the EBNA3-bound BCL2L11 enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "H3K27me3 ChIP-seq data from GM12878 cells (that express EBNA3A and EBNA3C) however, also demonstrates the presence of characteristically broad domains of H3K27me3 that coincide with the locations of the EBNA3-bound BCL2L11 enhancers (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by H3K27me3 ChIP-seq data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "d0a321de-cc3a-47ae-9ed9-80acfe1d6339",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C71",
+      "claim": "A large H3K27me3 domain encompasses the entire ACOXL gene and the BCL2L11 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact a large H3K27me3 domain encompasses the entire ACOXL gene and the BCL2L11 promoter (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by H3K27me3 ChIP-seq data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "60a2db3d-a9dd-40f6-a99c-1b162458f2ae",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C72",
+      "claim": "EBNA3B is dispensable for B-cell immortalisation by EBV.",
+      "claim_type": "EXPLICIT",
+      "source": "EBNA3B is dispensable for B-cell immortalisation by EBV, but appears to play a role in suppressing tumour formation in vivo, since its loss accelerates lymphoma development (Tomkinson and Kieff, 1992; White et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Tomkinson and Kieff, 1992 and White et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "9cdfce90-dfb5-49fc-bc89-9d538e3df65d",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C73",
+      "claim": "Loss of EBNA3B accelerates lymphoma development in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "EBNA3B is dispensable for B-cell immortalisation by EBV, but appears to play a role in suppressing tumour formation in vivo, since its loss accelerates lymphoma development (Tomkinson and Kieff, 1992; White et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Tomkinson and Kieff, 1992 and White et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "505b19d2-883a-4769-a04f-b60b43e36567",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C74",
+      "claim": "The \u2212186/168 region has SE properties in colorectal carcinoma and diffuse large B cell lymphoma cell-lines.",
+      "claim_type": "EXPLICIT",
+      "source": "This region has not previously been studied as a long-range MYC control region, but has SE properties in colorectal carcinoma and diffuse large B cell lymphoma cell-lines (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "be1ef1b5-176d-4b33-a2c1-3cb45343316f",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C75",
+      "claim": "Sporadic BL t(8:14) breakpoints cluster in two regions that include the MYC promoter (\u2212400 bp to + 150 bp) and a region immediately downstream (+420 bp to +1.2 kb).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to eBL, sporadic BL t(8:14) breakpoints cluster in two regions much further downstream that include the MYC promoter (\u2212400 bp to + 150 bp) and a region immediately downstream (+420 bp to +1.2 kb) (Busch et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Busch et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "bf53a458-6cc8-43aa-94dc-a26c102c3618",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C76",
+      "claim": "AML cell growth is dependent on MYC activation by SWI/SNF.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have demonstrated that AML cell growth is dependent on MYC activation by SWI/SNF (Shi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Shi et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "675b4615-ea36-4534-8376-2efc122dce77",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C77",
+      "claim": "In AML cells, BRG1 knockdown decreased downstream enhancer interactions and increased upstream enhancer interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In AML cells, BRG1 knockdown decreased downstream enhancer interactions and increased upstream enhancer interactions, suggesting some directionality in the effects of BRG1 on enhancer looping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about published data, likely from Shi et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "0a55d686-f19d-4400-bab7-ff9c6a151337",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C78",
+      "claim": "EBNA2 contains an acidic activation domain and mediates gene activation by binding histone acetyl transferases and chromatin remodellers.",
+      "claim_type": "EXPLICIT",
+      "source": "EBNA2 contains an acidic activation domain and mediates gene activation by binding histone acetyl transferases and chromatin remodellers (reviewed in (Kempkes and Ling, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a review by Kempkes and Ling, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "e5c35f8e-4958-4fe8-86ab-a2d2db3915e0",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C79",
+      "claim": "Time-course studies have shown that the loss of active chromatin marks from gene promoters and enhancers repressed by EBNA3A and EBNA3C precedes the binding of PRCs and the deposition of H3K27me3.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, time-course studies have shown that the loss of active chromatin marks from gene promoters and enhancers repressed by EBNA3A and EBNA3C precedes the binding of PRCs and the deposition of H3K27me3 (Harth-Hertle et al., 2013; Kalchschmidt et al., 2016b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Harth-Hertle et al., 2013 and Kalchschmidt et al., 2016b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "6a848999-15d8-4401-ba45-4d44a51dc31c",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C80",
+      "claim": "EBV increases the likelihood of a translocation event through the upregulation of AID by EBNA3C.",
+      "claim_type": "EXPLICIT",
+      "source": "EBV increases the likelihood of a translocation event through the upregulation of AID by EBNA3C (Kalchschmidt et al., 2016a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kalchschmidt et al., 2016a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "bd545cd2-837b-49e9-beaf-f2882033041b",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C81",
+      "claim": "The generation of double-strand DNA breaks as a result of aberrant AID activity is strongly implicated in the genesis of MYC/IG translocations.",
+      "claim_type": "EXPLICIT",
+      "source": "The generation of double-strand DNA breaks as a result of aberrant AID activity is strongly implicated in the genesis of MYC/IG translocations (Robbiani et al., 2008; Dorsett et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Robbiani et al., 2008 and Dorsett et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "f80427f5-566b-4a5e-94b3-e5362c65af80",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C82",
+      "claim": "The high frequency of upstream enhancer interactions with the MYC promoter in EBV-infected cells was confirmed in genome-wide capture Hi-C data from GM12878 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The high frequency of upstream enhancer interactions with the MYC promoter in EBV-infected cells was confirmed in genome-wide capture Hi-C data from GM12878 cells (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Capture Hi-C data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "1e6d7856-e995-4c76-8d9f-8927dce74cd9",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C83",
+      "claim": "The GM12878 interaction profile contrasts with that obtained from CD34+ haemopoietic progenitor cells where interactions with the +1.8/1.9 Mb enhancers dominate.",
+      "claim_type": "EXPLICIT",
+      "source": "The GM12878 interaction profile contrasts with that obtained from CD34+ haemopoietic progenitor cells (Figure 1G) (Mifsud et al., 2015) and leukaemic cells (Shi et al., 2013), where interactions with the +1.8/1.9 Mb enhancers dominate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of data in Figure 1G and 1H and citations to Mifsud et al., 2015 and Shi et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "9e8bb88a-dea2-401d-b2ac-79afdc8289fe",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C84",
+      "claim": "All three CTCF sites in the \u2212556 SE region are bound by CTCF and components of the chromatin looping complex cohesin (SMC3 and RAD21) in GM12878 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "All three CTCF sites are bound by CTCF and components of the chromatin looping complex cohesin (SMC3 and RAD21) in GM12878 cells (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP-seq data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "a2435de0-f8a5-4f28-845d-6d779f66ff78",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C85",
+      "claim": "The region +235 to +432 kb downstream of MYC interacted with the MYC promoter at high level 48 hr after B-cell activation by CD40L/IL-4.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the region +235 to +432 kb interacted with the MYC promoter at high level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by 4C-sequencing data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "59434567-0e32-4de4-b6ec-8a57da3ac27c",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C86",
+      "claim": "The region +235 to +432 kb downstream of MYC is not bound by EBNA2 and does not interact with the MYC promoter significantly in EBV-infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This downstream region is not bound by EBNA2 and does not interact with the MYC promoter significantly in EBV-infected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the 4C-seq and ChIP-seq data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "308e5c27-9fb4-4766-a8ce-0aeb75a4839f",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C87",
+      "claim": "The region +235 to +432 kb downstream of MYC interacts at high frequency in CD34+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This region does however interact at high frequency in CD34+ cells (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by Capture Hi-C data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "0e9b2890-8f13-47ec-a2d4-68f8bd06be9d",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C88",
+      "claim": "EBNA2 reduced BRG1 binding to the region of the \u2212556 SE that is looped out through CTCF site association.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, EBNA2 reduced BRG1 binding to the region of the \u2212556 SE that is looped out through CTCF site association (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP-QPCR data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "bdfb59f0-c520-4f4a-a124-2e40c7bc49a5",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C89",
+      "claim": "3C did not detect any interactions between the +1.8 Mb region and the MYC promoter in the presence or absence of BRG1.",
+      "claim_type": "EXPLICIT",
+      "source": "3C did not detect any interactions between the +1.8 Mb region and the MYC promoter in the presence or absence of BRG1 (data not shown)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about negative experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "c3264bf7-4ef5-4feb-b77c-5101550312a7",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C90",
+      "claim": "3C did not detect any interactions between the BUB1 promoter and the BCL2L11 promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "3C did not detect any interactions between the BUB1 promoter and the BCL2L11 promoter (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about negative experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "281df41d-8101-4d1d-9306-e8c5879afa98",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C91",
+      "claim": "Treatment of EBV-negative BL31 cells with UNC1999 resulted in only 1.8 to 2.7 fold increases in BCL2L11 expression after 8 and 18 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, treatment of EBV-negative BL31 cells with UNC1999 resulted in only 1.8 to 2.7 fold increases in BCL2L11 expression after 8 and 18 hr, respectively (Figure 6B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RT-QPCR data shown in Figure 6B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "cb711bb8-8d5b-4cc3-b6b6-d70bf78d89f9",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C92",
+      "claim": "Caspase 3/7 activity was very low in EBV-negative BL31 cells but increased slightly in the presence of UNC1999.",
+      "claim_type": "EXPLICIT",
+      "source": "Caspase 3/7 activity was very low in EBV-negative BL31 cells but increased slightly in the presence of UNC1999, consistent with the smaller increases in BCL2L11 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Caspase 3/7 assay data shown in Figure 6D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "b9712123-6016-4b56-9a8a-95d364ccc885",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C93",
+      "claim": "Only EBNA3C bound at significant levels to ACOXL sites, with most binding at enhancers 2 and 3.",
+      "claim_type": "EXPLICIT",
+      "source": "Only EBNA3C bound at significant levels to ACOXL sites, with most binding at enhancers 2 and 3 (Figure 5B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by ChIP-QPCR data shown in Figure 5B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "cc7679df-469f-4edb-9a35-6d7625859952",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C94",
+      "claim": "The \u2212556 region is classified as a SE in CD19+ B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the existence of some baseline 'static' enhancer-promoter interactions in resting cells, and the classification of the \u2212556 region as a SE in CD19+ B cells (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by data in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "432083c7-eb55-44ee-8595-d29fc967145d",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C95",
+      "claim": "EBV infection of na\u00efve B cells reconfigures MYC chromatin architecture in a manner distinct from physiological B-cell stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, EBV infection of na\u00efve B cells reconfigures MYC chromatin architecture in a manner distinct from physiological B-cell stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "12617951-b2a7-4b8a-837b-80e5ebec1dea",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C96",
+      "claim": "EBV infection results in the same selective enhancement of upstream enhancer-promoter interactions observed on EBNA2 activation in EBV-infected cell-lines.",
+      "claim_type": "EXPLICIT",
+      "source": "EBV infection results in the same selective enhancement of upstream enhancer-promoter interactions observed on EBNA2 activation in EBV-infected cell-lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "73095e19-6c07-4ddb-8aac-f5e50bfb5d65",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C97",
+      "claim": "BRG1 is required to maintain the active upstream MYC enhancer-promoter hub in EBV-infected B cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that BRG1 is required to maintain the active upstream MYC enhancer-promoter hub in EBV-infected B cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "157cdce8-b9d8-40f9-a0ed-89ab31b435c3",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C98",
+      "claim": "BCL2L11 silencing by EBNA3A and EBNA3C is associated with the inactivation of an active enhancer-promoter hub encompassing ACOXL.",
+      "claim_type": "EXPLICIT",
+      "source": "BCL2L11 silencing by EBNA3A and EBNA3C is therefore associated with the inactivation of an active enhancer-promoter hub encompassing ACOXL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "baeb43e2-e9df-4763-a909-643924d2e093",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C99",
+      "claim": "EZH1/2 activity is required for the inactivation of BCL2L11 enhancers and BCL2L11 silencing in EBV-infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicate that EZH1/2 activity is required for the inactivation of BCL2L11 enhancers and BCL2L11 silencing in EBV-infected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "a07adfe6-91ff-4e74-91cf-0423bb809fe4",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C100",
+      "claim": "The increased cell survival that results from EBV EBNA3A and EBNA3C silencing of BCL2L11 involves the recruitment of EZH2 and the inactivation of a long-range active enhancer hub encompassing the neighbouring ACOXL gene.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the increased cell survival that results from EBV EBNA3A and EBNA3C silencing of BCL2L11 involves the recruitment of EZH2 and the inactivation of a long-range active enhancer hub encompassing the neighbouring ACOXL gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "988ccc34-a1cc-4250-ad29-370ddbfe906a",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C101",
+      "claim": "EBV promotes upstream promoter-enhancer interactions and decreases downstream interactions at the MYC locus.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data now show that EBV manipulates MYC enhancer function to drive tumourigenesis, inducing directional remodelling of enhancer-promoter interactions over 3 Mbs. EBV promotes upstream promoter-enhancer interactions and decreases downstream interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "2eba57ad-379b-44d6-8dcd-41fb142e65db",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C102",
+      "claim": "EBNA2-directed activation and remodelling of MYC upstream chromatin may increase the susceptibility of this region to a translocation event initiated by the off-target activity of activation-induced cytidine deaminase (AID).",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore propose that the EBNA2-directed activation and remodelling of MYC upstream chromatin may increase the susceptibility of this region to a translocation event initiated by the off-target activity of activation-induced cytidine deaminase (AID).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative proposal based on the authors' data and published knowledge.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "4de3e9da-175c-431c-aa07-8cf51418612c",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C103",
+      "claim": "BRG1-dependent chromatin remodelling is required for MYC enhancer-promoter interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data are therefore consistent with a model where BRG1-dependent chromatin remodelling is required for MYC enhancer-promoter interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "468688d6-8000-490f-8319-ebd48b5aada5",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C104",
+      "claim": "The specificity of BRG1 dependence is determined by which MYC enhancers are active in a particular cell-type or context.",
+      "claim_type": "EXPLICIT",
+      "source": "The specificity of BRG1 dependence however, is determined by which MYC enhancers are active in a particular cell-type or context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of the authors' data with published data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "033ae32b-81e3-4d89-af3d-6bc24afc575a",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C105",
+      "claim": "PRC recruitment and H3K27me3 deposition may be a secondary and perhaps default event in EBNA3A/EBNA3C-mediated gene repression.",
+      "claim_type": "EXPLICIT",
+      "source": "PRC recruitment and H3K27me3 deposition may therefore be a secondary and perhaps default event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on published time-course studies.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "2dff5c0f-ef4b-4305-8e4c-75be3ba835df",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C106",
+      "claim": "EBV-driven MYC enhancer activation may contribute to the genesis and localisation of MYC-Immunoglobulin translocation breakpoints in Burkitt's lymphoma.",
+      "claim_type": "EXPLICIT",
+      "source": "EBV-driven MYC enhancer activation may contribute to the genesis and localisation of MYC-Immunoglobulin translocation breakpoints in Burkitt's lymphoma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim stated in the abstract based on the data and discussion in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "ad8439c6-e83c-4fa3-b147-00de97b60ddb",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C107",
+      "claim": "The EBNA2 transactivator activates multiple MYC enhancers and reconfigures the MYC locus to increase upstream and decrease downstream enhancer-promoter interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that the EBNA2 transactivator activates multiple MYC enhancers and reconfigures the MYC locus to increase upstream and decrease downstream enhancer-promoter interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim stated in the abstract based on the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "54e92b53-9b1a-4ee6-ae6f-c23ae2d3ffaf",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C108",
+      "claim": "EBNA2 recruits the BRG1 ATPase of the SWI/SNF remodeller to MYC enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "EBNA2 recruits the BRG1 ATPase of the SWI/SNF remodeller to MYC enhancers and BRG1 is required for enhancer-promoter interactions in EBV-infected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim stated in the abstract based on the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "662cce9b-d774-48dc-877a-66a8df7be603",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C109",
+      "claim": "BRG1 is required for enhancer-promoter interactions in EBV-infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "EBNA2 recruits the BRG1 ATPase of the SWI/SNF remodeller to MYC enhancers and BRG1 is required for enhancer-promoter interactions in EBV-infected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim stated in the abstract based on the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "8b6e5fdb-16f0-40f0-8cf4-53631e1df13c",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C110",
+      "claim": "At BCL2L11, there is a haematopoietic enhancer hub that is inactivated by the EBV repressors EBNA3A and EBNA3C through recruitment of the H3K27 methyltransferase EZH2.",
+      "claim_type": "EXPLICIT",
+      "source": "At BCL2L11, we identify a haematopoietic enhancer hub that is inactivated by the EBV repressors EBNA3A and EBNA3C through recruitment of the H3K27 methyltransferase EZH2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim stated in the abstract based on the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "edd48158-6a66-45d7-b599-289da2935733",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C111",
+      "claim": "Reversal of enhancer inactivation using an EZH2 inhibitor upregulates BCL2L11 and induces apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Reversal of enhancer inactivation using an EZH2 inhibitor upregulates BCL2L11 and induces apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim stated in the abstract based on the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "3a81088b-437b-40cb-99fa-142b09530f1d",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "claim_id": "C112",
+      "claim": "EBV drives lymphomagenesis by hijacking long-range enhancer hubs and specific cellular co-factors.",
+      "claim_type": "EXPLICIT",
+      "source": "EBV therefore drives lymphomagenesis by hijacking long-range enhancer hubs and specific cellular co-factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim stated in the abstract based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f4c404ad-833e-47e6-b59a-7180ba5ad802",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "EBNA2 binds to multiple upstream and downstream MYC enhancers (including super-enhancers at -556, -428, and -186/168 kb) and induces directional chromatin reorganization, increasing upstream enhancer-promoter interactions while decreasing downstream interactions. This reorganization involves CTCF-mediated looping that excludes specific regions from the enhancer hub.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C31 are well-supported by converging evidence from ChIP-seq (C20-C22), 4C-seq (C25-C26, C28), 3C validation (C27, C29, C31), and Capture Hi-C (C82). The CTCF looping mechanism (C30-C31, C84) is supported by both interaction data and ChIP-seq for CTCF/cohesin components. The use of the conditional ER-EBNA2 system provides appropriate controls, and the directional nature of reorganization is clearly demonstrated through subtraction analysis (Figure 1F). Replication in multiple cell lines (GM12878, Mutu III, ER-EB 2.5) strengthens the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "7fde1b8b-9599-4c2a-86fe-4e47a1b919f5",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "EBNA2 recruits the BRG1 chromatin remodeling ATPase to MYC enhancers, increasing H3K27ac levels and BRG1 binding at key upstream enhancers (-556 SE and -186/168 kb). BRG1 is required for maintaining upstream enhancer-promoter interactions in EBV-infected cells, as demonstrated by siRNA knockdown experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C40 are supported by ChIP-QPCR data showing EBNA2-dependent increases in H3K27ac (7-fold at promoter, 16-fold at -556 SE) and BRG1 binding, followed by functional validation via siRNA knockdown demonstrating loss of enhancer-promoter interactions. The mechanistic link to EBNA2's known interaction with BRG1 (C39, citing Wu et al., 1996) provides biological plausibility. However, the model claims (C103-C104) about cell-type specificity of BRG1 dependence are somewhat speculative, extrapolating from comparison with AML data. The negative result for +1.8 Mb interactions (C89) is appropriately noted but weakens the comprehensiveness of the BRG1 requirement claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "37dc9541-f41a-4e72-a78a-e65756d49bc9",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "EBV infection of primary na\u00efve B cells reconfigures MYC chromatin architecture in a manner distinct from physiological B-cell activation by CD40L/IL-4. EBV infection increases upstream enhancer interactions (consistent with EBNA2 effects in cell lines), while CD40L/IL-4 stimulation increases downstream interactions, particularly in the +235 to +432 kb region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 are supported by 4C-seq data from primary B cells at 48 hr post-infection/stimulation, showing opposite directional effects of EBV vs. CD40L/IL-4 on enhancer-promoter interactions. The timing (48 hr) was validated by RT-QPCR showing maximal MYC induction (C32). The specificity of EBV-induced changes is convincingly demonstrated by direct comparison (Figure 3G). However, the study examines only a single time point, and the biological significance of the distinct interaction patterns for cell fate decisions could be explored further. The baseline interactions in resting cells (C94) provide important context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "3ca42164-3636-4782-8236-5ed077fd9708",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "EBNA3A and EBNA3C (but not EBNA3B) bind to long-range enhancers at the BCL2L11 locus, including three upstream sites within ACOXL and three downstream sites. In uninfected cells, these enhancers form an active hub interacting with the BCL2L11 promoter. EBV infection with wild-type or EBNA3B-KO virus disrupts all enhancer-promoter interactions, while EBNA3A-KO or EBNA3C-KO viruses preserve these interactions, demonstrating cooperative repression by EBNA3A and EBNA3C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C49 are well-supported by ChIP-seq identifying EBNA3 binding sites (C41-C43), database predictions of super-enhancer function (C44-C45), ChIP-QPCR confirming EBNA3A/3C-specific binding (C46, C93), and 3C analysis in the BL31 knockout virus series (C47-C49). The genetic dissection using knockout viruses provides strong evidence for the cooperative requirement of EBNA3A and EBNA3C. The correlation between BCL2L11 expression status and enhancer-promoter interaction patterns is consistent across all cell lines tested. Control regions showing no interactions (C90, Figure 5\u2014figure supplement 2) strengthen specificity claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "92f9fbd4-1c3b-43b9-8bc2-68f3044ab6cb",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "EBNA3A/3C-mediated BCL2L11 repression involves recruitment of the H3K27 methyltransferase EZH2 to both the BCL2L11 promoter and long-range enhancers, with broad H3K27me3 domains encompassing ACOXL and BCL2L11. Inhibition of EZH1/2 with UNC1999 reverses enhancer inactivation, restoring enhancer-promoter interactions, upregulating BCL2L11 expression (3.6-5.4-fold), and inducing apoptosis in EBV-infected cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 are supported by ChIP-QPCR showing EZH2 binding (C50-C51), H3K27me3 ChIP-seq data (C70-C71), RT-QPCR showing BCL2L11 upregulation with UNC1999 treatment (C52), Caspase 3/7 assays demonstrating apoptosis (C53), and 3C showing restored enhancer-promoter interactions (C54). The dose-response with UNC1999 (5-10 \u00b5M) and time-course (8-18 hr) are appropriate. The differential response between EBV-infected (3.6-5.4-fold increase) and uninfected cells (1.8-2.7-fold increase) (C91-C92) demonstrates EBV-specific repression. However, the mechanism of EZH2 recruitment by EBNA3A/3C remains unclear, as noted in the discussion (C105), limiting mechanistic understanding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "e5031d79-62a8-4c05-abd5-6916b8193511",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "EBV manipulates MYC enhancer function through directional remodeling of enhancer-promoter interactions over 3 Mb, creating an enhancer interaction landscape distinct from leukemia cells where downstream enhancers (+1.8/1.9 Mb) dominate MYC control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 are summary statements supported by the collective data from Results 1-3. The comparison with leukemia cells (C56, C83) is supported by citations to published Capture Hi-C data from CD34+ cells and AML cells (Herranz et al., 2014; Shi et al., 2013) and direct visualization in Figure 1G-H. The cell-type specificity of enhancer usage is a well-established concept, and the data clearly show that EBV-infected B cells preferentially use upstream enhancers while CD34+ and leukemic cells use downstream enhancers. This represents a valid comparative analysis strengthening the biological significance of the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "ef98960a-499c-4288-b806-f3f4fadb4a1b",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "EBV-positive endemic Burkitt's lymphoma (eBL) MYC-IG translocation breakpoints map to the vicinity of the EBNA2-activated -186/168 kb enhancer region, distinct from sporadic BL breakpoints near the promoter. The authors propose that EBNA2-driven activation and chromatin remodeling of upstream MYC enhancers may increase susceptibility to AID-mediated translocation events in this region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C57-C59 accurately cite published breakpoint mapping data showing eBL breakpoints cluster upstream of MYC (7 cell lines + 1 biopsy at -215 to -46 kb), near the -186/168 enhancer. The contrast with sporadic BL breakpoints (C75) is well-established. However, the mechanistic proposal (C102, C106) that EBNA2-mediated enhancer activation increases translocation susceptibility is speculative. While the correlation between EBNA2 binding, enhancer activation, and breakpoint location is suggestive, and the role of AID in generating MYC translocations is established (C80-C81), direct evidence linking EBNA2-induced chromatin changes to increased breakpoint frequency is lacking. This would require functional studies showing that EBNA2 activation increases translocation frequency in the -186/168 region, which are not presented. The proposal is biologically plausible but remains a hypothesis requiring further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "95070d8e-ec9a-4831-a082-9b2528f72f1e",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "EBNA3C represses ACOXL expression, as demonstrated by increased ACOXL mRNA upon EBNA3C inactivation in a conditional system. ACOXL contains CLL risk loci and is downregulated in prostate cancer, suggesting potential tumor suppressor functions. A distinct murine BCL2L11 enhancer within ACOXL is disrupted in B lymphoblastic leukemia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C69 is supported by RT-PCR data from the EBNA3C-HT conditional system showing ACOXL upregulation upon EBNA3C withdrawal (Figure 5\u2014figure supplement 1). Claims C66-C67 are supported by appropriate citations to GWAS and expression studies. Claim C64 cites a relevant murine study (Wang et al., 2015) showing enhancer disruption in leukemia. However, these observations are somewhat tangential to the main BCL2L11 story and represent exploratory findings. The functional significance of ACOXL repression by EBNA3C and its role in lymphomagenesis remain unclear. The data suggest ACOXL may be a secondary target of the EBNA3C repression machinery, but this is not fully developed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "44c95f8d-af2a-4429-813d-dbff91a80a4c",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background knowledge claims establishing the context for EBV-associated lymphomas, BL characteristics, EBV latent gene expression, EBNA protein functions, and the importance of MYC and BCL2L11 in lymphomagenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C19 and C60-C63, C72-C73, C76-C79 represent established knowledge supported by appropriate citations to the literature. These provide essential context for interpreting the experimental findings. The citations appear accurate and relevant, covering EBV biology, BL genetics, EBNA protein functions, and the roles of MYC and BCL2L11 in cancer. These are not novel findings but rather necessary background establishing the biological significance of the experimental work. The claim about PRC recruitment timing (C79) is particularly important for interpreting the BCL2L11 repression mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "758bc655-7f4f-4fba-9119-5ad2318b1bc9",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mechanistic interpretations about BRG1 function in AML cells and the temporal sequence of PRC recruitment in EBNA3-mediated repression, based on published studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C68 accurately cites published work (Shi et al., 2013) showing BRG1 requirement for +1.8 Mb enhancer function in AML. Claim C105 is a speculative interpretation based on published time-course studies (Harth-Hertle et al., 2013; Kalchschmidt et al., 2016b) suggesting PRC recruitment is secondary to loss of active chromatin marks. These claims provide important mechanistic context for interpreting the current findings but do not represent new experimental results from this study. The speculation in C105 is appropriately qualified and acknowledges uncertainty about the mechanism of PRC recruitment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    },
+    {
+      "id": "ddb117f8-1277-4dd5-8d81-6f9fb494417a",
+      "content_id": "1979c829-a8a7-4cab-8e59-75af503326c4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Summary claim that EBV drives lymphomagenesis by hijacking long-range enhancer hubs and specific cellular co-factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C112 is a high-level summary statement that accurately captures the main findings of the manuscript. It is supported by the collective evidence showing EBNA2-mediated MYC enhancer activation via BRG1 recruitment (Results 1-2) and EBNA3A/3C-mediated BCL2L11 enhancer inactivation via EZH2 recruitment (Results 4-5). The term 'hijacking' appropriately conveys that EBV co-opts normal cellular regulatory mechanisms. This represents a valid synthesis of the experimental findings into a coherent model of EBV-driven lymphomagenesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:44:28.634673Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "441ef82d-3340-4a57-b32d-0bc348b64516",
+      "result_id": "f4c404ad-833e-47e6-b59a-7180ba5ad802"
+    },
+    {
+      "claim_id": "73dc8539-65d9-4312-986b-85296d2d478e",
+      "result_id": "f4c404ad-833e-47e6-b59a-7180ba5ad802"
+    },
+    {
+      "claim_id": "d6fe0cfe-7721-4a03-864c-3d073939e58f",
+      "result_id": "f4c404ad-833e-47e6-b59a-7180ba5ad802"
+    },
+    {
+      "claim_id": "4b95a2dc-3f62-43ef-8876-d14a51998744",
+      "result_id": "f4c404ad-833e-47e6-b59a-7180ba5ad802"
+    },
+    {
+      "claim_id": "c7dc713a-5f4d-4eb9-b837-28200aa8b424",
+      "result_id": "f4c404ad-833e-47e6-b59a-7180ba5ad802"
+    },
+    {
+      "claim_id": "e89a3999-12ca-4f0a-b5d9-3afaaa97ea20",
+      "result_id": "f4c404ad-833e-47e6-b59a-7180ba5ad802"
+    },
+    {
+      "claim_id": "9800119d-2cef-4fcd-9842-64916ab19ea6",
+      "result_id": "f4c404ad-833e-47e6-b59a-7180ba5ad802"
+    },
+    {
+      "claim_id": "c9b30f17-aea1-4114-975c-da255812637d",
+      "result_id": "f4c404ad-833e-47e6-b59a-7180ba5ad802"
+    },
+    {
+      "claim_id": "6684425b-6225-4369-bc16-d1f0c9d5d0f5",
+      "result_id": "f4c404ad-833e-47e6-b59a-7180ba5ad802"
+    },
+    {
+      "claim_id": "3eb24ed6-9e03-4625-9b8d-0823558c6f5f",
+      "result_id": "f4c404ad-833e-47e6-b59a-7180ba5ad802"
+    },
+    {
+      "claim_id": "8c2a1c13-efa7-4c2f-906f-60e010fd4010",
+      "result_id": "f4c404ad-833e-47e6-b59a-7180ba5ad802"
+    },
+    {
+      "claim_id": "1e03a14e-6450-4357-a08a-2cc6f33672b1",
+      "result_id": "f4c404ad-833e-47e6-b59a-7180ba5ad802"
+    },
+    {
+      "claim_id": "f80427f5-566b-4a5e-94b3-e5362c65af80",
+      "result_id": "f4c404ad-833e-47e6-b59a-7180ba5ad802"
+    },
+    {
+      "claim_id": "9e8bb88a-dea2-401d-b2ac-79afdc8289fe",
+      "result_id": "f4c404ad-833e-47e6-b59a-7180ba5ad802"
+    },
+    {
+      "claim_id": "ad8439c6-e83c-4fa3-b147-00de97b60ddb",
+      "result_id": "f4c404ad-833e-47e6-b59a-7180ba5ad802"
+    },
+    {
+      "claim_id": "c674faa9-fdce-433b-b892-d26bf5f1e161",
+      "result_id": "7fde1b8b-9599-4c2a-86fe-4e47a1b919f5"
+    },
+    {
+      "claim_id": "52f8bc15-c703-4113-ba27-cbf66e224cd6",
+      "result_id": "7fde1b8b-9599-4c2a-86fe-4e47a1b919f5"
+    },
+    {
+      "claim_id": "8f1145a4-5cbe-4cc3-9eaa-17cd93e9bffc",
+      "result_id": "7fde1b8b-9599-4c2a-86fe-4e47a1b919f5"
+    },
+    {
+      "claim_id": "6b7280e6-c210-406f-8bdf-c352be257636",
+      "result_id": "7fde1b8b-9599-4c2a-86fe-4e47a1b919f5"
+    },
+    {
+      "claim_id": "b2ac5b74-c9fd-437b-b90d-9d4a6118f9f7",
+      "result_id": "7fde1b8b-9599-4c2a-86fe-4e47a1b919f5"
+    },
+    {
+      "claim_id": "0e9b2890-8f13-47ec-a2d4-68f8bd06be9d",
+      "result_id": "7fde1b8b-9599-4c2a-86fe-4e47a1b919f5"
+    },
+    {
+      "claim_id": "73095e19-6c07-4ddb-8aac-f5e50bfb5d65",
+      "result_id": "7fde1b8b-9599-4c2a-86fe-4e47a1b919f5"
+    },
+    {
+      "claim_id": "4de3e9da-175c-431c-aa07-8cf51418612c",
+      "result_id": "7fde1b8b-9599-4c2a-86fe-4e47a1b919f5"
+    },
+    {
+      "claim_id": "468688d6-8000-490f-8319-ebd48b5aada5",
+      "result_id": "7fde1b8b-9599-4c2a-86fe-4e47a1b919f5"
+    },
+    {
+      "claim_id": "54e92b53-9b1a-4ee6-ae6f-c23ae2d3ffaf",
+      "result_id": "7fde1b8b-9599-4c2a-86fe-4e47a1b919f5"
+    },
+    {
+      "claim_id": "662cce9b-d774-48dc-877a-66a8df7be603",
+      "result_id": "7fde1b8b-9599-4c2a-86fe-4e47a1b919f5"
+    },
+    {
+      "claim_id": "6f641f0a-60e5-456e-a995-03fb7a267720",
+      "result_id": "37dc9541-f41a-4e72-a78a-e65756d49bc9"
+    },
+    {
+      "claim_id": "404dd8cd-906a-40ce-998c-1c3467bafdf0",
+      "result_id": "37dc9541-f41a-4e72-a78a-e65756d49bc9"
+    },
+    {
+      "claim_id": "d116538d-808f-437a-b4a6-ef46e6a491de",
+      "result_id": "37dc9541-f41a-4e72-a78a-e65756d49bc9"
+    },
+    {
+      "claim_id": "f48b282f-feb4-428b-9ecc-a74577365459",
+      "result_id": "37dc9541-f41a-4e72-a78a-e65756d49bc9"
+    },
+    {
+      "claim_id": "a2435de0-f8a5-4f28-845d-6d779f66ff78",
+      "result_id": "37dc9541-f41a-4e72-a78a-e65756d49bc9"
+    },
+    {
+      "claim_id": "59434567-0e32-4de4-b6ec-8a57da3ac27c",
+      "result_id": "37dc9541-f41a-4e72-a78a-e65756d49bc9"
+    },
+    {
+      "claim_id": "308e5c27-9fb4-4766-a8ce-0aeb75a4839f",
+      "result_id": "37dc9541-f41a-4e72-a78a-e65756d49bc9"
+    },
+    {
+      "claim_id": "cc7679df-469f-4edb-9a35-6d7625859952",
+      "result_id": "37dc9541-f41a-4e72-a78a-e65756d49bc9"
+    },
+    {
+      "claim_id": "432083c7-eb55-44ee-8595-d29fc967145d",
+      "result_id": "37dc9541-f41a-4e72-a78a-e65756d49bc9"
+    },
+    {
+      "claim_id": "12617951-b2a7-4b8a-837b-80e5ebec1dea",
+      "result_id": "37dc9541-f41a-4e72-a78a-e65756d49bc9"
+    },
+    {
+      "claim_id": "7c8fe187-c2ff-4e56-86fd-2463643f57b6",
+      "result_id": "3ca42164-3636-4782-8236-5ed077fd9708"
+    },
+    {
+      "claim_id": "476417c7-159d-4ea5-9c0e-02b5795b6015",
+      "result_id": "3ca42164-3636-4782-8236-5ed077fd9708"
+    },
+    {
+      "claim_id": "fb643579-43af-4c7d-815b-9c2aa3ba7cd9",
+      "result_id": "3ca42164-3636-4782-8236-5ed077fd9708"
+    },
+    {
+      "claim_id": "1307aafa-34c2-4f0d-a65e-471a5d8c04cd",
+      "result_id": "3ca42164-3636-4782-8236-5ed077fd9708"
+    },
+    {
+      "claim_id": "1dfcd0bf-18b7-48b4-af6e-31517af708b7",
+      "result_id": "3ca42164-3636-4782-8236-5ed077fd9708"
+    },
+    {
+      "claim_id": "2c463ae8-5e87-4fd5-b71d-14b0b938963e",
+      "result_id": "3ca42164-3636-4782-8236-5ed077fd9708"
+    },
+    {
+      "claim_id": "018bc433-e369-4a34-b3a0-bfb2933e2d53",
+      "result_id": "3ca42164-3636-4782-8236-5ed077fd9708"
+    },
+    {
+      "claim_id": "e296524e-f2c3-454c-a9d1-52f6f91575ef",
+      "result_id": "3ca42164-3636-4782-8236-5ed077fd9708"
+    },
+    {
+      "claim_id": "54b57aac-a7d6-42b1-922d-0bb1c44a135b",
+      "result_id": "3ca42164-3636-4782-8236-5ed077fd9708"
+    },
+    {
+      "claim_id": "b9712123-6016-4b56-9a8a-95d364ccc885",
+      "result_id": "3ca42164-3636-4782-8236-5ed077fd9708"
+    },
+    {
+      "claim_id": "157cdce8-b9d8-40f9-a0ed-89ab31b435c3",
+      "result_id": "3ca42164-3636-4782-8236-5ed077fd9708"
+    },
+    {
+      "claim_id": "8b6e5fdb-16f0-40f0-8cf4-53631e1df13c",
+      "result_id": "3ca42164-3636-4782-8236-5ed077fd9708"
+    },
+    {
+      "claim_id": "51f6ac57-6732-4dd5-afd4-f1cfc9f49fe1",
+      "result_id": "92f9fbd4-1c3b-43b9-8bc2-68f3044ab6cb"
+    },
+    {
+      "claim_id": "63dc517e-3a30-4fb9-abbc-d92a9c06cd84",
+      "result_id": "92f9fbd4-1c3b-43b9-8bc2-68f3044ab6cb"
+    },
+    {
+      "claim_id": "8e056380-aef6-4a9f-a79f-32a9f199326c",
+      "result_id": "92f9fbd4-1c3b-43b9-8bc2-68f3044ab6cb"
+    },
+    {
+      "claim_id": "099c1500-9b10-48dc-bec4-5ab6cbefdc3d",
+      "result_id": "92f9fbd4-1c3b-43b9-8bc2-68f3044ab6cb"
+    },
+    {
+      "claim_id": "b5ed63ae-cbce-4a82-bec4-8ffe06f57023",
+      "result_id": "92f9fbd4-1c3b-43b9-8bc2-68f3044ab6cb"
+    },
+    {
+      "claim_id": "c38ec2f3-1287-4447-b19e-87026fcd2d42",
+      "result_id": "92f9fbd4-1c3b-43b9-8bc2-68f3044ab6cb"
+    },
+    {
+      "claim_id": "d0a321de-cc3a-47ae-9ed9-80acfe1d6339",
+      "result_id": "92f9fbd4-1c3b-43b9-8bc2-68f3044ab6cb"
+    },
+    {
+      "claim_id": "baeb43e2-e9df-4763-a909-643924d2e093",
+      "result_id": "92f9fbd4-1c3b-43b9-8bc2-68f3044ab6cb"
+    },
+    {
+      "claim_id": "a07adfe6-91ff-4e74-91cf-0423bb809fe4",
+      "result_id": "92f9fbd4-1c3b-43b9-8bc2-68f3044ab6cb"
+    },
+    {
+      "claim_id": "edd48158-6a66-45d7-b599-289da2935733",
+      "result_id": "92f9fbd4-1c3b-43b9-8bc2-68f3044ab6cb"
+    },
+    {
+      "claim_id": "eaf86a2d-accf-4909-968d-1ac1f14e2662",
+      "result_id": "e5031d79-62a8-4c05-abd5-6916b8193511"
+    },
+    {
+      "claim_id": "e5fe5879-360e-4e44-b092-5b37fd42ea33",
+      "result_id": "e5031d79-62a8-4c05-abd5-6916b8193511"
+    },
+    {
+      "claim_id": "1e6d7856-e995-4c76-8d9f-8927dce74cd9",
+      "result_id": "e5031d79-62a8-4c05-abd5-6916b8193511"
+    },
+    {
+      "claim_id": "988ccc34-a1cc-4250-ad29-370ddbfe906a",
+      "result_id": "e5031d79-62a8-4c05-abd5-6916b8193511"
+    },
+    {
+      "claim_id": "d6463f9d-6918-4ed8-b3ca-3555da141332",
+      "result_id": "ef98960a-499c-4288-b806-f3f4fadb4a1b"
+    },
+    {
+      "claim_id": "5ab37765-0dec-45aa-b51a-da6be3103a40",
+      "result_id": "ef98960a-499c-4288-b806-f3f4fadb4a1b"
+    },
+    {
+      "claim_id": "c0d87a75-b4d4-49f9-8fab-1a669dcd9074",
+      "result_id": "ef98960a-499c-4288-b806-f3f4fadb4a1b"
+    },
+    {
+      "claim_id": "505b19d2-883a-4769-a04f-b60b43e36567",
+      "result_id": "ef98960a-499c-4288-b806-f3f4fadb4a1b"
+    },
+    {
+      "claim_id": "be1ef1b5-176d-4b33-a2c1-3cb45343316f",
+      "result_id": "ef98960a-499c-4288-b806-f3f4fadb4a1b"
+    },
+    {
+      "claim_id": "6a848999-15d8-4401-ba45-4d44a51dc31c",
+      "result_id": "ef98960a-499c-4288-b806-f3f4fadb4a1b"
+    },
+    {
+      "claim_id": "bd545cd2-837b-49e9-beaf-f2882033041b",
+      "result_id": "ef98960a-499c-4288-b806-f3f4fadb4a1b"
+    },
+    {
+      "claim_id": "2eba57ad-379b-44d6-8dcd-41fb142e65db",
+      "result_id": "ef98960a-499c-4288-b806-f3f4fadb4a1b"
+    },
+    {
+      "claim_id": "2dff5c0f-ef4b-4305-8e4c-75be3ba835df",
+      "result_id": "ef98960a-499c-4288-b806-f3f4fadb4a1b"
+    },
+    {
+      "claim_id": "48f89e25-e71f-49de-8a04-a81af77b8bfa",
+      "result_id": "95070d8e-ec9a-4831-a082-9b2528f72f1e"
+    },
+    {
+      "claim_id": "ffeef92a-0cd4-467d-b5c5-22917acc7f5a",
+      "result_id": "95070d8e-ec9a-4831-a082-9b2528f72f1e"
+    },
+    {
+      "claim_id": "eed575f1-1e3f-4604-b371-f9d3a0a443d7",
+      "result_id": "95070d8e-ec9a-4831-a082-9b2528f72f1e"
+    },
+    {
+      "claim_id": "6475cb96-6ca1-4329-950d-d36cd4efe354",
+      "result_id": "95070d8e-ec9a-4831-a082-9b2528f72f1e"
+    },
+    {
+      "claim_id": "0fb76ab1-f8bd-4496-94ca-09b7bcd9d656",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "b69d9810-80e4-403c-a2f7-0e36db28ed7a",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "82c1d70b-2ae8-4112-bf7b-2924754d8c73",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "0433e01d-93b1-41fc-82dd-d75cc8243dbc",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "f75f9246-94f6-4791-9ad2-d809194f61ed",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "bea7467c-c85d-4067-86d2-0c10769851c6",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "c4909c89-2e73-4e67-bcb2-75285c1223bd",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "87d64e1a-4ece-490d-bb99-6c9371cad280",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "c5348c98-9760-440e-8b37-551ab4030cbd",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "1d5521aa-5d8b-4fc1-b090-2ee0f042c81d",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "9257260b-faed-47fc-aa13-2a8e1b74a465",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "57758205-584b-4137-b3ee-3421c71c85f0",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "409f0b12-6e2b-470c-9ac7-ee48f7004b3d",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "5f34ddad-6b89-4b3c-a8d8-3aa0abc60e35",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "c2f8f8c8-c684-4a2d-918d-ea81edd27ef3",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "8e46663d-b4cd-49a1-a244-1bcb17195595",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "3e00882f-aec2-40e1-94d3-20f0ad1cf5b0",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "3394d268-758f-48aa-9af2-26e5596ca3fd",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "ff0eb9a5-8e16-4987-b594-8484e5129d75",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "6d33b761-1d10-4a13-a5bd-31dc2b841048",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "63a0d8d6-472f-4d50-8cea-83729658bb76",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "f744add9-4e56-40e2-9848-d0523bc4a2ce",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "c0c911b1-0a78-490a-bd87-649a76241915",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "60a2db3d-a9dd-40f6-a99c-1b162458f2ae",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "9cdfce90-dfb5-49fc-bc89-9d538e3df65d",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "bf53a458-6cc8-43aa-94dc-a26c102c3618",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "675b4615-ea36-4534-8376-2efc122dce77",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "0a55d686-f19d-4400-bab7-ff9c6a151337",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "e5c35f8e-4958-4fe8-86ab-a2d2db3915e0",
+      "result_id": "44c95f8d-af2a-4429-813d-dbff91a80a4c"
+    },
+    {
+      "claim_id": "8626a3ee-6dcc-420c-aa83-dfb53afc291f",
+      "result_id": "758bc655-7f4f-4fba-9119-5ad2318b1bc9"
+    },
+    {
+      "claim_id": "033ae32b-81e3-4d89-af3d-6bc24afc575a",
+      "result_id": "758bc655-7f4f-4fba-9119-5ad2318b1bc9"
+    },
+    {
+      "claim_id": "3a81088b-437b-40cb-99fa-142b09530f1d",
+      "result_id": "ddb117f8-1277-4dd5-8d81-6f9fb494417a"
+    }
+  ],
+  "comparisons": []
+}

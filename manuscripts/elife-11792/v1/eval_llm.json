@@ -1,0 +1,411 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C34",
+      "C35"
+    ],
+    "result": "IB formation of mHtt103QP in yeast is a factor-dependent process that declines with age. Young cells form large single IBs (Class 1), while aged mother cells accumulate multiple smaller aggregates (Class 3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C34, and C35 are directly supported by experimental data shown in Figure 1b, which demonstrates age-dependent changes in aggregate morphology. The observation that young cells (1.6 bud scars) predominantly form single large IBs while old cells (12.6 bud scars) form multiple smaller aggregates is clearly documented with quantification and microscopy images.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "A genome-wide HCM screen identified Ltn1 (E3 ubiquitin ligase of the RQC) as a key factor required for mHtt103QP IB formation, ubiquitination, and detoxification. The screen also revealed that IB formation requires proteasome/chaperone functions, ubiquitination, Golgi-vesicle trafficking, mRNA transport/metabolism, and cell cycle control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 and C38-C41 are supported by the genome-wide screen data presented in Figures 1c-g. The HCM approach systematically identified mutants with altered aggregate morphology, and functional categorization of hits is shown. However, the claim that Ltn1 is required for 'detoxification' (C7) is somewhat circular as it's inferred from the same screen rather than independently validated at this stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The E3 ligase activity of Ltn1 is required for both mHtt103QP IB formation and ubiquitination. Both Ltn1 and Rqc1 deficiency result in failure to properly ubiquitinate mHtt103QP and form IBs, though rqc1\u0394 has a smaller effect than ltn1\u0394 on IB formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 and C48-C50 are supported by complementation analysis shown in Figure 2a-b. The W1542E catalytically inactive mutant fails to rescue the phenotype, demonstrating requirement for E3 ligase activity. The differential effects of ltn1\u0394 vs rqc1\u0394 are quantified and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Both soluble and aggregated mHtt103QP are stable in the presence and absence of Ltn1, with somewhat lower levels in ltn1\u0394 cells. This suggests Ltn1 is involved in mHtt103QP sequestration into IBs rather than its degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by stability assays shown in Figure 2c and supplements. The FRAP data (Figure 2\u2014figure supplement 2) and cycloheximide chase experiments demonstrate that mHtt103QP aggregates are stable structures. The conclusion that Ltn1 functions in sequestration rather than degradation is a reasonable inference from the stability data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The failure of ltn1\u0394 cells to manage mHtt was traced to Tae2-mediated hyperactivation of Hsf1. Deleting TAE2 in ltn1\u0394 or rqc1\u0394 cells restored IB formation but not ubiquitination, demonstrating that ubiquitination is not an absolute requirement for IB formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C54-C58 are well-supported by genetic epistasis experiments shown in Figure 2a-b. The tae2\u0394 suppression of the ltn1\u0394 IB formation defect without restoring ubiquitination is a key finding that separates these two processes. The mechanistic link through Hsf1 is supported by prior literature (Brandman et al., 2012) and the current genetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Both hyperactive Hsf1 (HSF1-R206S) and reduced Hsf1 activity (hsf1-848(ts) or HSF1\u0394CAD) reduce IB formation. Maintaining an intermediate range of Hsf1 activity is required to efficiently sequester mHtt103QP into IBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by data in Figure 2d showing that both increased and decreased Hsf1 activity lead to multiple aggregates (Class 3 phenotype). The epistasis experiment showing that HSF1\u0394CAD cannot be further affected by ltn1\u0394 supports the model that they act in the same pathway. This is a well-controlled set of experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "mHtt103QP, normally non-toxic, becomes detrimental in the absence of Ltn1 or Rqc1. A tae2\u0394 mutation completely suppresses toxicity in ltn1\u0394 cells. Since TAE2 deletion restores IB formation but not ubiquitination, IB formation is more important than ubiquitination for detoxification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by fitness assays in Figure 2e showing that mHtt103QP becomes toxic in RQC mutants and that tae2\u0394 suppresses this toxicity. The logic connecting IB formation (restored by tae2\u0394) to detoxification while ubiquitination remains absent is sound. However, the fitness assay methodology could be better described\u2014the 'doubling time ratios' and confidence intervals suggest proper statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "Small mHtt103QP aggregates/conformers are toxic. Both overactive and diminished Hsf1 activity render mHtt103QP toxic. Unlike mHtt103Q, the toxicity of mHtt103QP in Ltn1-deficient cells does not require the prion protein Rnq1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 and C74 are supported by toxicity data in Figure 2e-g. The inference that small aggregates are toxic (C71) is reasonable given that conditions promoting multiple small aggregates (altered Hsf1 activity) correlate with toxicity. The Rnq1-independence (C74) distinguishes the mechanism from mHtt103Q toxicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C76",
+      "C77",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Super-resolution microscopy revealed that mHtt103QP IBs in wild-type cells and multiple aggregates in RQC-deficient cells are associated with dense actin cytoskeletal structures. In ltn1\u0394 cells, actin-mHtt103QP structures are more abundant while aggregate-free actin structures are reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 and C76-C77, C80-C82 are supported by 3D-SIM microscopy data in Figure 3a-c and quantification in Figure 3f. The super-resolution imaging clearly shows co-localization of mHtt aggregates with actin structures. The quantification of actin-associated vs. free actin structures provides statistical support. The IPOD co-localization (C76) is also well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The actin cytoskeleton harnesses latent mHtt103QP toxicity. A synthetic lethality screen revealed that ts mutations in genes encoding actin cytoskeleton components (act1, pfy1, cof1, Arp3, Las17, Mss4) drastically sensitize cells to mHtt103QP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by the SGA synthetic lethality screen data shown in Figure 3d-e. The functional enrichment analysis clearly shows overrepresentation of actin cytoskeleton genes. The conclusion that the actin cytoskeleton 'harnesses' toxicity is a reasonable interpretation of the genetic interaction data, though the mechanism remains to be fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "mHtt103QP retards endocytosis, with more pronounced effects in ltn1\u0394 cells. Ltn1 deficiency alone does not cause actin cytoskeleton defects or endocytosis retardation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 are supported by FM4-64 endocytosis assays shown in Figure 3g and supplements. The time-course data clearly shows delayed endocytosis in mHtt103QP-expressing cells, with enhanced effects in ltn1\u0394. The control showing that ltn1\u0394 alone doesn't affect endocytosis (Figure 3\u2014figure supplement 2) is important for establishing that the effect requires mHtt103QP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C92",
+      "C93"
+    ],
+    "result": "Spatial sequestration of mHtt into IBs is policed by the RQC-Hsf1 regulatory system, with Ltn1 acting through Tae2 to control Hsf1 activity. Compartmentalization into IBs, rather than ubiquitination, is key to mHtt detoxification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 and C92-C93 represent the main conclusions of the paper, synthesizing multiple lines of evidence. The model is well-supported by: (1) genetic epistasis showing Ltn1\u2192Tae2\u2192Hsf1 pathway, (2) separation of ubiquitination from IB formation via tae2\u0394 rescue, (3) correlation of IB formation with detoxification, and (4) demonstration that proper Hsf1 activity levels are required. The model in Figure 3h integrates these findings coherently.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The absence of TAE2 fails to fully suppress toxicity in rqc1\u0394 cells, indicating that the roles of Ltn1 and Rqc1 in RQC are overlapping but not identical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by the differential genetic interactions shown in Figure 2e. The incomplete suppression of rqc1\u0394 toxicity by tae2\u0394, contrasting with complete suppression in ltn1\u0394, suggests distinct functions. This is consistent with prior work (Brandman et al., 2012) showing overlapping but non-identical roles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Both Hsf1 elevation and Hsf1 deficiency in cells expressing mHtt103QP are detrimental, suggesting that a fine balance of Hsf1 activity must be maintained to reduce proteotoxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 are supported by the aggregate morphology and toxicity data in Figure 2d, f-g. The U-shaped relationship between Hsf1 activity and cellular health is clearly demonstrated. This contrasts with simpler models from C. elegans where Hsf1 elevation is generally protective, highlighting context-dependent effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors speculate that age-dependent HD penetrance could result from either reduced Hsf1 activity or malignant Hsf1 hyperactivation due to age-dependent increases in translational errors that titrate the RQC complex, possibly through Tae2-directed tagging of incomplete translation products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C107 are explicitly speculative (using 'could be' language) and represent hypotheses for future testing rather than demonstrated results. While the speculation is reasonable given the data showing Hsf1 activity must be balanced and the known age-related decline in IB formation (C34-C35), no direct evidence for age-dependent translational errors or their effects on RQC/Hsf1 is provided in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors speculate that Hsf1 may regulate mHtt IB formation through actin cytoskeleton dynamics, and that mHtt expression may generally raise proteostasis stress leading to Hsf1 activation that epistatically affects Ltn1-deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C112 are explicitly presented as speculative possibilities. While C110 is supported by the observation that mHtt associates with actin and that actin genes are required to manage mHtt toxicity, the direct mechanistic link through Hsf1 regulation of actin dynamics is not demonstrated. Claims C111-C112 acknowledge alternative explanations that cannot be ruled out by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C20"
+    ],
+    "result": "Background claims about Huntington's disease: HD is caused by polyglutamine expansions in mHtt that promote IB formation; HD is inherited and linked to the HTT gene; mHtt causes disease through toxic gain-of-function mechanisms typically manifested in aged individuals; IB formation correlates with toxicity and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C15-C17, C19-C20 represent established background knowledge about HD, supported by appropriate citations to MacDonald (1993), Ross and Tabrizi (2011), and Arrasate et al. (2004). These are not novel findings of this study but provide necessary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background on mHtt aggregation in model systems: IB formation might be protective; IB formation predicts improved neuronal survival; mHtt103QP forms non-toxic IBs while mHtt103Q forms toxic small aggregates associated with actin that interfere with UPS; various factors can suppress mHtt103Q toxicity by preventing oligomers or converting them to IBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 represent prior work from the literature, appropriately cited (Arrasate et al., 2004; Dehay and Bertolotti, 2006; Duennwald et al., 2006; Meriin et al., 2002; Song et al., 2014; Park et al., 2013; and others). These establish the rationale for the current study's focus on IB formation as a protective mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Background on ubiquitination in HD: Ubiquitination is suggested to prevent mHtt toxicity in mammals and yeast; mHtt IBs contain ubiquitin; mHtt is ubiquitinated in humans and flies; however, no E3 ligase directly responsible for mHtt ubiquitination, IB formation, and detoxification had been identified prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 establish the gap in knowledge that this study addresses. The citations to prior work (Steffan, 2004; Willingham et al., 2003; Davies et al., 1997; Kalchman et al., 1996) support the background, and C33 correctly identifies the missing link that Ltn1 fills.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C42",
+      "C44",
+      "C47",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Background on RQC and Ltn1 function: Ltn1 and Rqc1 are RQC partners; Listerin deficiency causes neurodegeneration in mice; Ltn1 targets products of defective translation for proteasomal degradation; the RQC recognizes stalled translation complexes; Ltn1 ubiquitinates nascent chains and arrested polypeptides for degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C44, C47, C87-C91 provide essential background on RQC function, appropriately cited to Brandman et al. (2012), Bengtson and Joazeiro (2010), Chu et al. (2009), and others. This context is necessary to understand the novelty of finding that Ltn1 also functions in mHtt sequestration rather than just degradation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C94",
+      "C95"
+    ],
+    "result": "Background on Tae2-Hsf1 regulation: Ltn1/Rqc1 deficiency causes Tae2-mediated Hsf1 hyperactivation that can be suppressed by deleting TAE2; Tae2 negatively controls Hsf1 activity; Tae2 presence causes Hsf1 hyperactivation when LTN1 is deleted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55, C94-C95 cite prior work (Brandman et al., 2012) establishing the RQC-Tae2-Hsf1 regulatory axis. This background is essential for interpreting the current findings that this pathway controls mHtt aggregation. The authors appropriately build on this established framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C73",
+      "C75"
+    ],
+    "result": "Background on mHtt103Q and Rnq1: The proline-less mHtt103Q requires the prion protein Rnq1 to display cytotoxicity in yeast; small cytotoxic mHtt103Q aggregates associate with actin cytoskeleton.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73 and C75 cite prior work (Meriin et al., 2002; Song et al., 2014) that provides important context for distinguishing mHtt103QP from mHtt103Q toxicity mechanisms. The finding that mHtt103QP toxicity in ltn1\u0394 is Rnq1-independent (C74) contrasts with this background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C102"
+    ],
+    "result": "Background on Hsf1 in aging and proteostasis: In worms, elevated Hsf1 activity delays polyQ aggregation and extends lifespan, while reduced hsf-1 accelerates aging; in mammalian cells, altered Hsf1 levels either inhibit mHtt IB formation or lower the threshold for IB formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 and C102 cite prior work (Hsu, 2003; Morley and Morimoto, 2004; Baird et al., 2014; Fujimoto et al., 2005; Bersuker et al., 2013) showing context-dependent effects of Hsf1 on proteostasis. This background helps explain why the current finding of a U-shaped Hsf1 activity optimum is significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Background on Hsf1 and actin in C. elegans: hsf-1 overexpression elevates pat-10 (troponin-like protein) levels, increasing actin cytoskeleton integrity and leading to lifespan extension and proteotoxic stress resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 cite work from Baird et al. (2014) showing that Hsf1 can regulate actin cytoskeleton integrity in worms. This provides a potential mechanistic link for how Hsf1 might regulate mHtt IB formation through actin dynamics, though this remains speculative in the yeast system (C110).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Upon galactose induction, mHtt103QP forms aggregates in about 50% of cells within 180 minutes, with 70% of aggregate-containing cells having one large IB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 describe the kinetics and morphology of mHtt103QP aggregation in the experimental system, shown in Figure 1d. This establishes the baseline for the screen and provides quantitative parameters for the system. The data are clearly presented with appropriate time-course imaging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "Background speculation: mHtt possibly causes HD by dominant-negative mechanisms in addition to toxic gain-of-function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C18 cites Ross and Tabrizi (2011) but presents dominant-negative mechanisms as a possibility ('possibly') rather than established fact. This represents ongoing uncertainty in the field about all mechanisms contributing to HD pathogenesis. The claim appropriately reflects this uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "Speculation that Hsf1 hyperactivation when LTN1 is deleted could be sufficient to inhibit IB formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C96 is explicitly speculative ('could be enough'). While the data show that Hsf1 hyperactivation does inhibit IB formation (C59) and that Ltn1 deletion causes Hsf1 hyperactivation via Tae2 (C54-C55), the claim that this is 'enough' to explain the phenotype is an inference. The tae2\u0394 rescue experiments (C56-C57) support this model but don't definitively prove sufficiency.",
+    "result_type": "MINOR"
+  }
+]

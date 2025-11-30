@@ -1,0 +1,423 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C44",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C76"
+    ],
+    "result": "The authors isolated native Mediator-pol II holoenzyme from yeast using a double affinity-tagging strategy, achieving 20-fold higher yield than previous methods. Cross-linking with BS3 reagent followed by mass spectrometry identified 402 unique cross-links (260 within Mediator, 124 within pol II, 18 between Mediator and pol II) at 4.1% FDR. The dataset was augmented with 38 Middle module cross-links from prior work, yielding 294 inter-subunit cross-links covering 19 of 21 Mediator subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C63 and C71-C76 describe a well-documented experimental workflow with quantitative metrics (20-fold improvement, 402 cross-links, 4.1% FDR). The use of native holoenzyme, double affinity tagging, and BS3 cross-linking are standard approaches. The FDR estimation using decoy databases and the validation against known structures (C64-C65) provide internal quality controls. The modest overlap with prior data (C72-C73) is reasonably explained by methodological differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Validation of the cross-link dataset was performed by comparing cross-link distances to known crystal structures of pol II and the Head module. Only 5 of 130 cross-links violated the 35 \u00c5 threshold, consistent with the 4.1% FDR. An integrative model of pol II built from cross-links and EM density recapitulated the known pol II architecture with 14 \u00c5 RMSD, correctly placing all subunits except Rpb8 and Rpb9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C70 provide strong internal validation. The 5/130 violation rate (3.8%) aligns well with the estimated 4.1% FDR (C65), demonstrating consistency. The pol II reconstruction (C66-C70) serves as a positive control, showing that the integrative modeling approach can recover known structures. The 14 \u00c5 RMSD is reasonable given the 20.9 \u00c5 EM map resolution. The failure to place Rpb8/Rpb9 is appropriately attributed to lack of restraints rather than method failure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Cross-linking data revealed that the N-terminal domains of Med17 (residues 1-122) and Med14 (residues 1-711) form extensive cross-links with Middle module subunits rather than their traditionally assigned Head and Tail modules, respectively. Based on this evidence, the authors redefined these N-terminal domains as components of the Middle module.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 present a data-driven reclassification of module boundaries. The cross-linking patterns are clearly described: Med17 NTD cross-links to Med7/Med21 (C79), Med14 NTD cross-links to Med4/Med9/Med10/Med21 (C81), and the two NTDs cross-link to each other (C82). This is consistent with the principle that cross-links reflect spatial proximity. The redefinition (C83) is a logical inference from the data, though it represents a reinterpretation rather than a direct measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "A 3-D model of the entire Mediator complex was determined using a four-step integrative modeling procedure combining cross-links, X-ray structures, homology models, and cryo-EM density. The Head module was docked into the EM map with 40% better cross-correlation than the next best solution. Subunits were represented as rigid bodies (for structured regions) or flexible bead strings (for unmodeled regions). A total of 165,523 model configurations were generated using Monte Carlo sampling with Bayesian scoring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C105 describe a comprehensive and well-documented modeling protocol. The four-step procedure (C86) follows established integrative modeling practices. The exhaustive docking calculation (C93-C94) provides objective support for Head module placement, with the 40% improvement suggesting a clear optimal solution. The multi-scale representation (C88-C90) balances computational efficiency with structural detail. The large number of configurations (C105) and use of Bayesian scoring (C102) indicate thorough conformational sampling. The approach is validated by the pol II reconstruction (C66-C70).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The 500 best-scoring models clustered into four groups. Cluster 3 (~8% of models) showed inverted Middle module orientation and was rejected based on inconsistency with prior EM data and worse cross-link statistics. Clusters 1, 2, and 4 differed only in Tail module subunit arrangements. Cluster 1 showed the best agreement with prior EM localization and cross-link satisfaction, and was selected as the final model. Intra-module cross-links were satisfied at ~95%, while inter-module cross-links were satisfied at only ~10%, suggesting conformational differences between free Mediator and holoenzyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C122 describe a rigorous model selection process. The clustering analysis (C106-C107) and convergence testing (C107) demonstrate adequate sampling. The rejection of Cluster 3 (C117-C118) is justified by both internal (cross-link violations) and external (EM localization) criteria. The selection of Cluster 1 (C120-C122) is based on multiple independent lines of evidence. The differential satisfaction of intra- vs inter-module cross-links (C109-C113) is a key observation that is appropriately interpreted as evidence for conformational change, consistent with prior EM studies (C114).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The final Mediator model shows locations and orientations of all subunits, subunit interfaces, and some secondary structure. The overall precision is 19 \u00c5 (24 \u00c5 for Middle, 33 \u00c5 for Tail module). Segments of 20-40 residues are localized with 10-50 \u00c5 precision depending on cross-link density. The model depicts contact surfaces between subunits with residue-level resolution at cross-link sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 and C123-C131 provide quantitative assessments of model quality and information content. The precision values (C123-C124, C128) are appropriately calculated as RMSD within the cluster and are reasonable given the input data resolution (18 \u00c5 EM map). The clarification that precision differs from EM resolution (C125) shows appropriate understanding of the metrics. The variable precision depending on restraint density (C128, C131) is expected and honestly reported. The model provides meaningful structural information despite modest precision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C46",
+      "C47",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The Mediator model was validated by multiple approaches: jackknifing with random cross-link subsets, consistency with the EM map, satisfaction of cross-link restraints, and comparison with prior protein interaction and localization data. The model explains most prior yeast two-hybrid, co-expression, and immunoprecipitation data, with only three discrepancies (Med3-Med21, Med1-Med5, Med1-Med7). The model is consistent with all prior 2-D EM mapping results and confirms the proposed Med7C-Med21-Med4-Med9 tetrameric backbone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C46-C47 describe validation strategies, while C133-C148 report validation results. The jackknifing approach (C46) is a standard cross-validation method. The consistency with prior interaction data (C136) is strong, with only 3/many interactions unexplained. The discrepancies are thoughtfully analyzed: Med3-Med21 is deemed spurious based on distance (C138), Med1-Med5 may reflect alternative states (C139-C143), and Med1-Med7 cannot be ruled out due to missing structure (C144-C145). The consistency with EM localization (C146-C147) and confirmation of prior proposals (C148) provide external validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C179",
+      "C181"
+    ],
+    "result": "The model reveals that the Med17 N-terminal domain (residues 1-122), which is disordered in Head module crystals and essential for viability, plays a central architectural role connecting the Head and Middle modules. The Med17 NTD is localized between the Med7-Med21-Med4-Med9 backbone and Med14, and its path from the Middle module to the Head module is clearly resolved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C154, C179, and C181 describe a key structural insight enabled by the integrative model. The essentiality of Med17 NTD (C149-C150) and its absence from crystal structures (C151) establish biological importance and a knowledge gap. The model's localization of this domain (C152-C153) and resolution of its path (C154, C181) represent new structural information. The bridging role (C179) is supported by the cross-linking data showing interactions with both modules (C79, C82). This is a clear example of integrative modeling revealing structure invisible to crystallography.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C180"
+    ],
+    "result": "The model reveals that Med14 is the only Mediator subunit making extensive contacts with all three modules, spanning ~220 \u00c5 from N-terminal interactions with Med10-Med19 to C-terminal interactions at the Middle-Tail junction. Med14 residues 264-600 interact with the Med4-Med9 bundle, residues 247-350 bridge Head and Middle modules via Med17 NTD, and residues 601-1082 contact Med20 and Med17 C-terminus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C165 and C180 describe Med14's unique architectural role. The prior contradictory reports (C156-C158) establish a problem that the model resolves. The model's finding that Med14 contacts all three modules (C161) and spans 220 \u00c5 (C162) is supported by the cross-linking data (C80-C82) and explains the prior genetic observations (C157-C159). The specific interaction regions (C163-C165) are mapped with residue-level detail. This represents a major structural insight that unifies prior conflicting data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "The model reveals the complete 3-D arrangement of the Middle module, with a Med7-Med21-Med4-Med9 tetrameric core capped by Med10-Med19 at one end and Med1 at the other. In the Tail module, the NTDs of Med2 and Med3 and CTDs of Med15 and Med16 form extensive interactions at the Middle-Tail junction, a region important for activator protein binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C184 describe the overall architecture of Middle and Tail modules. The Middle module architecture (C182) is supported by cross-linking data (Figure 4) and confirms prior proposals (C148). The Tail module architecture (C183) is supported by cross-linking and localization data. The functional interpretation that this region is important for activator binding (C184) is supported by prior studies (C185-C186) showing that Med2-Med3-Med15 bind activators and that Med3\u0394 Med15\u0394 mutants have reduced PIC levels. This represents integration of structural and functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C187",
+      "C188"
+    ],
+    "result": "The model predicts secondary structural features in Tail module proteins: Med2 and Med3 NTDs interact in a coiled-coil motif at the Middle-Tail junction, and a 7-bladed \u03b2-propeller in the Med16 N-terminus (residues 8-538) interacts extensively with Med5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-C188 describe predicted secondary structures. The coiled-coil prediction (C187) is supported by sequence analysis showing similarity to coiled-coil proteins and high coiled-coil prediction scores (Figure 5D), plus co-localization in the model and prior isolation as a heterodimer. The \u03b2-propeller prediction (C188) is supported by identification of 7 WD repeats, homology to Sec31, and consistency with intra-protein cross-links. Both predictions are reasonable inferences from sequence and structural data, though they remain predictions pending experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199"
+    ],
+    "result": "The Mediator model was docked into the EM map of the core initiation complex from Plaschka et al. (2015), which contains Head and Middle modules but lacks the Tail module and Med1. Cross-links within Head (30) and Middle (71) modules from Plaschka et al. are in complete agreement with the free Mediator model. The docked model is largely consistent with 12 Mediator-pol II cross-links from Plaschka et al. and provides a more detailed map of Middle module subunit locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C170 and C195-C199 describe validation against an independent structural study. The complete agreement of intra-module cross-links (C169, C199) provides strong external validation. The consistency with Mediator-pol II cross-links (C170, C198) further supports the model. The ability to dock the model (C195) and the observation of little structural change in Head/Middle modules (C196) are consistent with the high satisfaction of intra-module cross-links. The enhanced interpretation of the Plaschka map (C197) demonstrates added value of the detailed model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C200",
+      "C201",
+      "C202",
+      "C203"
+    ],
+    "result": "Cross-links from the current holoenzyme study show limited agreement with the Plaschka et al. core initiation complex structure. Only Head-Rpb4/7 contacts agree; Tail and Middle module cross-links to pol II are inconsistent with the Plaschka map. Multiple cross-links place the Tail module near the pol II active site cleft, opposite to its position when docking into the Plaschka map. These findings suggest conformational differences between holoenzyme (with Tail, without DNA/GTFs) and the core initiation complex (without Tail, with DNA/GTFs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C176 and C200-C203 describe important discrepancies that are appropriately interpreted as evidence for conformational heterogeneity. The limited agreement of holoenzyme cross-links with the Plaschka structure (C171-C172) is clearly documented. The inconsistency is not dismissed but rather explained by compositional and functional differences between the two complexes (C174). The inference of conformational change (C175, C203) is supported by preliminary EM data (C175) and is consistent with prior observations of Mediator flexibility (C176). This represents honest reporting of data that don't fit a single static model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C177",
+      "C178"
+    ],
+    "result": "The definition of Mediator modules is refined: Med17 and Med14 N-terminal domains are reclassified as Middle module components. These NTDs interact with Middle module core components and with each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C178 summarize the module redefinition described in C77-C83. This is a major conceptual result supported by extensive cross-linking data. The reclassification is data-driven and resolves prior ambiguities about Med14 localization (C156-C158). This represents a refinement of the field's understanding of Mediator organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C189",
+      "C190"
+    ],
+    "result": "Med16 and Med5 both play roles in transcriptional repression, and expression analysis in yeast Tail mutants has established a functional link between them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C189-C190 cite prior functional studies to provide biological context for the structural finding that Med16 and Med5 interact extensively (C188). This is appropriate use of literature to interpret structural results. The claims are supported by the cited reference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C185",
+      "C186"
+    ],
+    "result": "The Med2-Med3-Med15 triad binds multiple transcriptional activators including Gcn4 and Gal4. Yeast with Med3\u0394 Med15\u0394 double knockout show decreased Mediator and PIC levels at inducible promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C185-C186 cite prior functional studies to provide biological context for the structural finding that Med2-Med3-Med15 form an interaction hub at the Middle-Tail junction (C183-C184). This is appropriate use of literature to interpret structural results. The claims are supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C204"
+    ],
+    "result": "Tail module interactions with pol II near the active site cleft may be relevant to the role of Med14, Med15, and Med16 in transcriptional repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C204 is a speculation connecting structural observations (Tail-pol II cross-links near active site) to prior functional data (role in repression). While the speculation is reasonable and appropriately hedged ('may be relevant'), it remains untested. The structural observation (C201) is supported, but the functional connection is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C48",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C205",
+      "C206",
+      "C207"
+    ],
+    "result": "The Mediator model will serve as a basis for future studies of Mediator interactions with pol II, transcription factors, and regulatory proteins. The integrative modeling approach can be applied to other challenging structural problems, including the complete pol II pre-initiation complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48 and C191-C207 describe anticipated future applications and utility of the model and method. These are reasonable projections but represent speculation about future work rather than current results. They cannot be evaluated as supported or unsupported as they are statements of intent and possibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Background claims about Mediator function, composition, structure, and prior structural studies establish the context and motivation for the current work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C13-C43 provide background information from the literature. These claims are appropriately cited and represent established knowledge in the field. They set up the problem that the current study addresses: the lack of high-resolution structural information for two-thirds of the Mediator complex (C3, C34).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "Prior to this study, structural information on two-thirds of the Mediator complex was limited to coarse subunit mapping onto 2-D EM images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 accurately describes the state of the field prior to this work, as supported by the background claims C34-C37 describing limited high-resolution structures and low-resolution EM studies. This establishes the knowledge gap that motivates the study.",
+    "result_type": "MINOR"
+  }
+]

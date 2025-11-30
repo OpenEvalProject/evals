@@ -1,0 +1,395 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C58",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors performed large-scale structure-guided mutagenesis and neuron-based screening to develop improved red GECIs. Starting with RCaMP1h and R-GECO1, they mutated 78/442 and 87/451 amino acid positions respectively to near saturation, focusing on interfaces between RFP and CaM, CaM and M13, and within CaM. Single-mutation variants (934 RCaMP1h; 689 R-GECO1) were tested in an automated neuronal assay, with 353/934 RCaMP1h and 187/689 R-GECO1 mutations showing improved sensitivity. Beneficial mutations were combined in a second round (136 RCaMP1h and 166 R-GECO1 variants).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C68 provide comprehensive documentation of the mutagenesis strategy, including specific numbers of positions mutated, variants tested, and improvements observed. The approach is well-described with appropriate controls (parent proteins) and statistical analysis (p<0.01, Wilcoxon rank sum test). The methodology follows established precedent (C47, C51) and is supported by supplementary data files.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C40",
+      "C41",
+      "C42",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The new red GECIs (jRCaMP1a, jRCaMP1b based on mRuby; jRGECO1a based on mApple) show several-fold improved sensitivity compared to parent indicators. jRGECO1a is the most sensitive with 8.5-fold larger \u0394F/F0 for 1AP than R-GECO1, faster rise time, and performance comparable to GCaMP6f. jRCaMP1a and jRCaMP1b show 24-fold and 13-fold improved sensitivity over RCaMP1h respectively. The sensors differ in kinetics, dynamic range, calcium affinity, and photoswitching properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C89 are well-supported by extensive experimental data from cultured neurons (Figure 2), including quantitative measurements of sensitivity, kinetics, calcium affinity, brightness, and photoswitching. The comparisons to parent indicators and GCaMP6 variants are appropriately controlled and statistically analyzed. Spectroscopy data (Figure 2 supplements) support the biophysical characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Red GECIs were characterized in mouse V1 in vivo using two-photon imaging at 1040-1100 nm. Visual stimulus-evoked fluorescence transients were stable across trials and tuned to orientation. For jRCaMP1a/b, the fraction of responsive neurons was 8- and 6-fold higher than RCaMP1h and comparable to GCaMP6f. For jRGECO1a, the fraction was 60% higher than R-GECO1, 40% higher than R-CaMP2, 30% higher than GCaMP6f, but 40% lower than GCaMP6s. mApple-based indicators tracked stimuli more faithfully due to faster kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C111 are supported by comprehensive in vivo imaging data (Figure 3) with appropriate experimental design (AAV delivery, visual stimuli, multiple time points). Statistical comparisons use Wilcoxon rank-sum tests with reported p-values. Sample sizes are adequate (175-395 cells per indicator, 3-4 mice). Kinetics measurements are quantified with error estimates. The comparison to GCaMP6 variants provides important benchmarking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Red GECIs showed stable long-term expression (>130 days) in mouse V1 without nuclear filling, presumably due to the NES sequence. Performance remained stable over time, though jRCaMP1b showed a small decrease in orientation selectivity after 180 days. Long-term expression with red GECIs appears more stable than with GCaMP6s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C119 are supported by longitudinal imaging data (Figure 3 supplement 2) spanning 16-180 days. The absence of nuclear filling is documented by imaging and attributed to NES design. The comparison to GCaMP6s is based on published data (Chen et al., 2013b). However, the claim about superior stability (C119) is somewhat tentative ('seems to be') and would benefit from direct side-by-side comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "In vivo responses of jRGECO1a and jRCaMP1a in visual cortex were smaller than expected from cultured neuron data and lower than GCaMP6s. High-resolution microscopy revealed bright fluorescent punctae in jRGECO1a-expressing neurons (but not jRCaMP1a/b) that co-localized with LAMP-1 (lysosome marker). Punctae were less numerous in cultured neurons than in vivo. ROIs containing punctae had 90% higher baseline fluorescence but 20% lower peak \u0394F/F0, suggesting accumulation of non-responsive jRGECO1a in lysosomes reduces signal-to-noise ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C126 are supported by multiple lines of evidence: comparison of in vivo and in vitro data, high-resolution microscopy of fixed tissue, LAMP-1 immunostaining (Figure 4 supplement 1), and quantitative analysis of punctae properties. The inference about reduced SNR (C126) is logical given the measured properties. Statistical analysis (Wilcoxon rank sum test, p<0.001) supports the difference between cultured and in vivo neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Green fluorescence (500-550 nm) was detected in all red GECIs in V1, visible with 900 nm but not 1040 nm excitation, suggesting red GECIs partition into at least two species. The green fluorescence was distributed unevenly and does not report calcium. jRGECO1a neurons with larger fractional fluorescence at 900 nm showed lower response amplitudes. Longer expression times increased relative intensity at 900 nm and correlated with lower peak \u0394F/F0, suggesting long-term expression degrades sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C133 are supported by wavelength-dependent imaging (Figure 4 supplements 2-3), emission spectra from fixed tissue, and correlation analysis between 900 nm fluorescence and response amplitude. The statistical analysis (F test, p<0.002) supports the correlation with expression time. The inference about protein species (C129) and degraded sensitivity (C133) are reasonable given the data, though the underlying mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Red GECIs enable deeper imaging than GFP-based sensors. Red GECI fluorescence decayed more slowly with depth (130\u00b130 \u03bcm) than GCaMP6 (75\u00b115 \u03bcm, p<0.0001). This enhanced imaging depth enabled detection of orientation-tuned responses in L6 neurons down to 900 \u03bcm below the pia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C136 are supported by systematic depth measurements (Figure 5) with appropriate statistical analysis (Wilcoxon rank sum test, p<0.0001). Sample sizes are adequate (19 dendrites for red GECIs, 14 for GCaMP6, from 3 and 2 mice respectively). The demonstration of L6 imaging at 900 \u03bcm depth provides functional validation. The physical basis (reduced scattering/absorption) is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Red GECIs enable dual-color imaging with green GCaMP6 indicators. A single 1000 nm excitation source was used to image jRGECO1a-labeled L5 dendrites and GCaMP6s-labeled LM axons simultaneously in L1 of V1. Bleaching was low for large compartments (cell bodies, apical dendrites) but significant for thin axons, likely due to the balance between bleaching and diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C141 are supported by dual-color imaging experiments (Figure 6, Video 2) demonstrating simultaneous detection of two neuronal populations. The spectral separation is documented (Figure 6a). The observation about compartment-size-dependent bleaching (C139-C141) is empirical and the mechanistic explanation (C141) is reasonable based on diffusion principles, though not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Simultaneous electrophysiology and imaging in mouse V1 showed jRGECO1a detected single spikes with 82% accuracy (5% false-positive rate) and 2 APs with 96% accuracy. jRCaMP1a had lower detection rates (65% for 1AP, 80% for 2AP). jRGECO1a showed higher \u0394F/F0 amplitudes and faster kinetics than jRCaMP1a. Rise and decay times were similar to GCaMP6f and GCaMP6s respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C147 are supported by rigorous simultaneous recording and imaging experiments (Figure 4) with ROC analysis. Sample sizes are adequate (11 cells, 199 spikes for jRGECO1a; 10 cells, 135 spikes for jRCaMP1a from 6 and 5 mice respectively). The comparison to GCaMP6 variants (C147) is based on published data. The detection accuracy metrics are appropriate for evaluating sensor performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "In Drosophila NMJ, jRGECO1a and jRCaMP1a response amplitudes were 2-3 fold higher than GCaMP6s/f for 1 Hz stimulation (p<0.001) but lower for frequencies \u226520 Hz. jRGECO1a decay kinetics (half-decay time 0.42\u00b10.02 s at 160 Hz) were similar to GCaMP6f (0.43\u00b10.01 s). The combination of high sensitivity and fast kinetics allowed detection of individual spikes up to 10 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C148-C151 are supported by comprehensive NMJ imaging data (Figure 7) with multiple stimulation frequencies. Sample sizes are adequate (12 FOVs for jRGECO1a, 11 for jRCaMP1a, 12 for GCaMP6f, from 7 flies each). Statistical analysis (Wilcoxon rank sum test) supports the comparisons. The frequency-dependent performance is well-characterized and the ability to resolve individual spikes is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C12",
+      "C152",
+      "C153"
+    ],
+    "result": "In zebrafish trigeminal neurons, jRCaMP1a and jRCaMP1b showed 7- and 8-fold higher response amplitudes than RCaMP1h, and jRGECO1a showed 4-fold higher amplitudes than R-CaMP2 (p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C152-C153 are supported by zebrafish imaging data (Figure 8) with appropriate statistical analysis (Wilcoxon rank-sum test, p<0.01). Sample sizes are adequate (5-7 fish per indicator). The experimental design (electrical stimulation, known to elicit responses) is appropriate. The fold-improvements are consistent with observations in other systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "In C. elegans AWC neurons, jRGECO1a and jRCaMP1b robustly detected all three components of odor response (calcium decrease, overshoot on removal, return to baseline). R-GECO1 and RCaMP1h (weaker calcium affinity) did not detect the decrease well, while jRCaMP1a truncated the overshoot and had slowest kinetics. jRCaMP1b performed best for graded signals while jRGECO1a had advantages in response speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C154-C159 are supported by C. elegans imaging data (Figure 9) showing differential performance across indicators. Sample sizes are adequate (6-19 worms per indicator). The relationship between calcium affinity and detection of decreases (C155) is mechanistically reasonable. The summary statements (C158-C159) are supported by the comparative data, though 'best' is somewhat subjective without quantitative metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C162",
+      "C163"
+    ],
+    "result": "jRCaMP1a and jRCaMP1b do not exhibit photoswitching, allowing independent photostimulation and imaging in neurons co-expressing ChR2. This makes them suitable for experiments combining calcium imaging and optogenetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90, C162-C163 are supported by photoswitching experiments on purified protein (Figure 2 supplement 3) and cultured neurons co-expressing ChR2 (Figure 2 supplement 4). The lack of photoswitching in mRuby-based indicators contrasts with mApple-based indicators. The suitability for optogenetics (C163) is a logical inference from the lack of photoswitching, though more extensive validation would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "The new red GECIs show several-fold improvement over parent indicators, with jRGECO1a exhibiting performance similar to GCaMP6. jRCaMP1a/b are slightly redder than jRGECO1a. Red GECIs are useful for all-optical neurophysiology, especially with spatial overlap between stimulated and imaged regions. The large spectral separation from ChR2 and two-photon absorption peak at 1040 nm (overlapping with fiber lasers) provide practical advantages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C167 are summary statements supported by the collective experimental data. The performance improvements are documented across multiple systems. The spectral properties (C164, C167) are measured. The utility for all-optical neurophysiology (C165-C166) is demonstrated experimentally and supported by citations. These are appropriate concluding statements synthesizing the major findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "Red GECIs face several challenges: 3-4 fold smaller maximal fluorescence changes than GCaMP6 (limiting dynamic range), relatively low absorption cross-section (reducing SNR), complex intracellular behavior including lysosomal accumulation (jRGECO1a), and presence of green fluorescence suggesting multiple protein species. These issues appear related to the RFP component and may require re-engineering the RFP itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C174 accurately summarize limitations documented throughout the manuscript. The reduced dynamic range (C168-C169) and low absorption (C170) are measured. Lysosomal accumulation (C171) and green fluorescence (C172) are demonstrated. The attribution to RFP (C173) is supported by citation and reasonable given the shared architecture. The suggestion for future work (C174) is appropriately speculative and cites relevant prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Background and motivation: GFP-based GECIs (particularly GCaMP6) are widely used and can detect single APs, but have limitations including spectral overlap with optogenetic tools, high tissue scattering/absorption, and incompatibility with GFP-expressing transgenic animals. Red-shifted GECIs promise advantages (deeper imaging, reduced photodamage, compatibility with optogenetics) but current red GECIs are inferior to GCaMP6. Existing red GECIs (RCaMP1, R-GECO, R-CaMP2) share architecture with GCaMPs but have limitations including photoswitching in mApple-based variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C37 provide appropriate background context supported by citations to prior work. The limitations of GFP-based indicators (C19-C25) are well-established. The advantages of red-shifted indicators (C3-C4, C26-C28) are based on known optical properties. The characterization of existing red GECIs (C29-C37) is supported by citations. This background appropriately motivates the development of improved red GECIs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Methodological details: R-GECO1 and RCaMP1 are based on circularly permuted mApple and mRuby fused to calmodulin and M13 peptide. Calcium binding causes conformational change, forming a complex near the chromophore that modulates its environment and increases brightness. A nuclear export sequence (NES) was added to restrict expression to cytoplasm, which was confirmed by imaging. R-CaMP2 was excluded from nucleus without NES.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47, C56-C59 describe the protein architecture and experimental design. The structural basis (C43-C46) is supported by citations and understanding of GECI mechanisms. The NES addition (C57-C58) is a methodological detail confirmed by imaging (Figure 1b). The observation about R-CaMP2 (C59) is a useful control. These are appropriate methodological descriptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Summary claims: The new red GECIs have sensitivity comparable to GCaMP6 and facilitate deep-tissue imaging, dual-color imaging with GFP-based reporters, and use of optogenetics with calcium imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C14-C16 are high-level summary statements supported by the detailed experimental results. The comparable sensitivity to GCaMP6 (C8) is demonstrated for jRGECO1a specifically. The three applications (C14-C16) are all experimentally demonstrated in the manuscript. These are appropriate summary claims for the abstract/introduction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C76",
+      "C77",
+      "C78",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Biophysical characterization: The new sensors have similar absorption/emission spectra to parent constructs but differ in sensitivity, kinetics, and other properties. Improved performance is associated with tighter calcium affinity. jRGECO1a is comparable to GCaMP6f for 1-10 APs and exhibits photoswitching. jRCaMP1a/b have higher calcium affinity than RCaMP1h, with jRCaMP1a having limited dynamic range (160\u00b125% in neurons, 320\u00b110% in solution). jRCaMP1a/b are two-fold brighter than jRGECO1a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70, C76-C78, C85-C88 provide detailed biophysical characterization supported by spectroscopy, calcium titrations, and functional measurements (Figure 2 and supplements). The measurements include appropriate error estimates. The relationship between calcium affinity and performance (C76) is mechanistically reasonable. The limited dynamic range of jRCaMP1a (C86-C87) is an important limitation that is clearly documented.",
+    "result_type": "MINOR"
+  }
+]

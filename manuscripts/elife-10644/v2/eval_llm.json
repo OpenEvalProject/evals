@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C46"
+    ],
+    "result": "Concentrating Aurora B at centromeres through rapamycin-induced recruitment is necessary and sufficient to phosphorylate distant chromatin substrates in mammalian cells. When Aurora B-INbox is diffuse in the cytosol, phosphorylation is uniformly low, but recruitment to centromeres leads to phosphorylation throughout chromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 and C46 are well-supported by the rapamycin recruitment experiments using FRET sensors (Figure 1B). The experimental design with temporal control and immediate effects provides strong evidence that centromeric localization is both necessary and sufficient for long-range Aurora B activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C64"
+    ],
+    "result": "Aurora B can autoactivate via phosphorylation of its activation loop and the INCENP TSS motif, and can be inactivated by phosphatase. Phosphorylated Aurora B has KM = 320 \u03bcM and kcat = 19 s\u207b\u00b9 for chemosensor substrate, while dephosphorylated Aurora B is two orders of magnitude less active.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 and C64 are supported by multiple citations and experimental measurements using purified Aurora B kinase with the INbox fragment. The kinetic parameters were determined through standard Michaelis-Menten analysis (Figure 2\u2014figure supplement 2), providing quantitative biochemical characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Aurora B autoactivation involves both cis and trans components. At low kinase concentrations (0.16-1.5 \u03bcM), the measured slope of 1.23 \u00b1 0.02 indicates cis autoactivation dominates initially, while only active Aurora B can activate in trans. This differs from previous reports suggesting purely trans activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 and C68-C71 are supported by experimental data (Figure 2A-D) showing nonlinear chemosensor phosphorylation and slope analysis. The discovery of cis autoactivation is novel and well-documented, though the molecular mechanism (C71) remains speculative based on analogy to Aurora A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Computational modeling predicts that the coupled Aurora B kinase-phosphatase system exhibits bistability when Aurora B concentration exceeds 4 \u03bcM, with three steady-state solutions coexisting. The system shows hysteresis, and these nonlinear regimes depend primarily on Aurora B autoactivation parameters rather than phosphatase kinetic constants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 are supported by computational modeling (Figure 3) using experimentally determined kinetic constants. The mathematical analysis is rigorous, showing bistability regions and hysteresis loops. The robustness analysis (C28, Figure 3\u2014figure supplement 1) strengthens the conclusions by demonstrating independence from specific phosphatase parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C73"
+    ],
+    "result": "The reconstituted in vitro Aurora B kinase-phosphatase system exhibits bistability and hysteresis in quantitative agreement with theoretical predictions. At intermediate phosphatase concentration (0.45 \u03bcM), kinase retains its initial state (high or low) depending on starting conditions. This is the first reconstitution of bistability and hysteresis for any kinase-phosphatase pair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 and C73 are strongly supported by in vitro experiments (Figure 4) showing bistable behavior matching model predictions. The experimental design with two different initial conditions and steady-state measurements provides convincing evidence. The novelty claim (C73) is stated cautiously ('to the best of our knowledge').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The endogenous Aurora B-phosphatase system in mitotic cells exhibits bistability and hysteresis. FRET sensor analysis shows bimodal distributions of phosphorylation states, and kinase activity depends on prior history when cells are exposed to intermediate inhibitor concentrations. Aurora B and PP1\u03b3 localization are unaffected by inhibitor treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are well-supported by cellular experiments using FRET sensors (Figure 5). The bimodal distributions, history-dependent responses, and control experiments showing unchanged localization provide strong evidence for bistability in cells. Multiple experimental conditions (different sensors, arrest methods) yield consistent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "A spatial reaction-diffusion model incorporating bistability can reproduce Aurora B hysteresis observed in mitotic cells. The model uses estimated Aurora B concentrations (10 \u03bcM at centromeres, 1.5 \u03bcM on chromosome arms) and published parameters for binding dynamics. Bistability is required to explain cellular hysteresis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 and C48-C54 are supported by computational modeling (Figure 6) that matches experimental data. The model parameters are based on published measurements (C48-C54) or reasonable estimates (C37). The comparison with a non-bistable model (C40) strengthens the conclusion that bistability is necessary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Aurora B phosphorylation along chromatin propagates as a trigger wave at constant speed. The linear relationship between time and distance of phosphorylation indicates a reaction-diffusion mechanism in a bistable system, distinct from simple diffusion. A model lacking bistability fails to reproduce these trigger waves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41 and C79-C81 are supported by experimental measurements (Figure 7C) showing linear propagation kinetics and computational modeling. The constant speed is characteristic of trigger waves and distinguishes this from simple diffusion (C79). The comparison with a non-bistable model (C81) provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C56",
+      "C91",
+      "C92"
+    ],
+    "result": "Computational modeling predicts that bistability creates steep Aurora B activity gradients at kinetochores upon stretching. In prometaphase, most centromere-bound Aurora B is active, but stretching in metaphase creates a bistable region at the outer kinetochore, producing a sharp gradient. Models without bistability show gradual gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45, C56, C91-C92 are supported by computational modeling (Figure 8 and supplements). The predictions are internally consistent and explain how mechanical stretching interacts with biochemical bistability to create sharp gradients. However, these remain model predictions without direct experimental validation in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C77",
+      "C78",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The authors propose that bistability of the Aurora B-phosphatase system underlies formation of spatial phosphorylation patterns in cell division. Centromeric chromatin acts as a mechanical medium sustaining biochemical reactions, with Aurora B activity in each area depending on both local and distant kinase concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C77-C90 represent the integrated mechanistic model combining in vitro, cellular, and computational results. The proposal is well-supported by the convergence of multiple lines of evidence (C78), though some aspects remain conceptual frameworks (C86) requiring future validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Aurora B localizes to specific cellular locations and phosphorylates substrates at significant distances from its binding sites. Long-range phosphorylation gradients exist in anaphase and metaphase, with spatial regulation precise to 30-50 nm scales at kinetochores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 establish the biological context and are supported by citations to published work and Figure 1A. These claims summarize established knowledge in the field and provide the motivation for the study. The precision of spatial regulation (C8-C9) is well-documented in cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C93"
+    ],
+    "result": "Additional mechanisms may regulate Aurora B spatial patterns, including changes in centromeric enrichment and localized phosphatase activity. Nonlinear mechanisms in excitable media play important roles in various biological systems. Steep gradients are thought essential for kinetochore-microtubule regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C57-C60, C82-C85, C93 acknowledge additional regulatory mechanisms and broader biological context. These are supported by citations and represent appropriate discussion of alternative mechanisms (C58-C60) and speculation about future directions (C57). The claims are appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Methodological details including cell line sources, quality control procedures, and reagent characterization. HeLa cells were from ATCC and tested for Mycoplasma. Lambda phage phosphatase dephosphorylates INCENP and is inhibited by phosphonoacetic acid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 and C65-C67 describe experimental procedures and quality controls. These are straightforward methodological statements supported by the Materials and Methods section and citations. The characterization of reagents (C63, C65) is appropriate for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The rate of cis autoactivation has a large impact on the bistable region of the Aurora B-phosphatase system. Bistability depends strongly on Aurora B autoactivation mechanism rather than phosphatase kinetic constants, suggesting nonlinear regimes could exist with native phosphatase partners despite using \u03bb phosphatase in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72 and C74-C76 are supported by computational modeling (Figure 3\u2014figure supplement 1 and Figure 6D-E). The analysis showing independence from phosphatase parameters (C74-C75) is important for generalizing from the in vitro \u03bb phosphatase system to physiological conditions (C76).",
+    "result_type": "MINOR"
+  }
+]

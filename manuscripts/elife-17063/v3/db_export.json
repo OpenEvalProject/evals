@@ -1,0 +1,2068 @@
+{
+  "submission": {
+    "id": "81f14d16-7d4a-4bc1-be72-810a45d1a17f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:25:56.820793Z",
+    "updated_at": "2025-11-30T00:25:56.820793Z"
+  },
+  "content": [
+    {
+      "id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "submission_id": "81f14d16-7d4a-4bc1-be72-810a45d1a17f",
+      "content_type": "manuscript",
+      "content_text": "# Crystal structure of an HIV assembly and maturation switch\n\n## Authors\n\n- Jonathan M Wagner<sup>1</sup>\n- Kaneil K Zadrozny<sup>1</sup>\n- Jakub Chrustowicz<sup>1</sup>\n- Michael D Purdy<sup>1</sup>\n- Mark Yeager<sup>1</sup> \u2020\n- Barbie K Ganser-Pornillos<sup>1</sup> \u2020\n- Owen Pornillos<sup>1</sup> ([ORCID: 0000-0001-9056-5002](https://orcid.org/0000-0001-9056-5002)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Physiology and Biological Physics University of Virginia Charlottesville United States\n2. Department of Medicine, Division of Cardiovascular Medicine University of Virginia Health System Charlottesville United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nVirus assembly and maturation proceed through the programmed operation of molecular switches, which trigger both local and global structural rearrangements to produce infectious particles. HIV-1 contains an assembly and maturation switch that spans the C-terminal domain (CTD) of the capsid (CA) region and the first spacer peptide (SP1) of the precursor structural protein, Gag. The crystal structure of the CTD-SP1 Gag fragment is a goblet-shaped hexamer in which the cup comprises the CTD and an ensuing type II \u03b2-turn, and the stem comprises a 6-helix bundle. The \u03b2-turn is critical for immature virus assembly and the 6-helix bundle regulates proteolysis during maturation. This bipartite character explains why the SP1 spacer is a critical element of HIV-1 Gag but is not a universal property of retroviruses. Our results also indicate that HIV-1 maturation inhibitors suppress unfolding of the CA-SP1 junction and thereby delay access of the viral protease to its substrate.\n\n## Introduction\n\nAssembly and maturation of HIV-1 and other retroviruses is driven by the viral structural polyprotein, Gag, which consists of a series of independently folding domains, called MA (matrix), CA (capsid), and NC (nucleocapsid) (reviewed in Bush and Vogt, 2014; Ganser-Pornillos et al., 2012; Lingappa et al., 2014). During assembly, Gag makes a spherical, immature capsid shell that packages the viral genome, directs interactions with the plasma membrane to promote envelopment, and recruits cellular machinery to release the new virus particle from the host cell. The Gag shell has hexagonal paracrystalline lattice symmetry, wherein the central CA region makes two layers of interactions through its two domains (NTD and CTD, for N-terminal and C-terminal domain). During maturation, Gag is cleaved by the viral protease at specific sites. This results in disassembly of the Gag shell and release of new structural proteins, which then rearrange into the mature, infectious virion. In the mature virion, the genome is repackaged inside a cone-shaped capsid made up of the CA protein, with the NTD forming hexameric or pentameric rings that are connected by the CTD.\n\nAs with other animal viruses, the large-scale capsid rearrangements that occur during retroviral maturation are associated with the operation of structural switches that undergo dramatic conformational changes. In HIV-1, two such putative switches flank the CA region of Gag. One switch spans the MA-CA junction, which is in an extended configuration in the immature virion (Kelly et al., 2006; Tang et al., 2002). Upon proteolysis, the new CA N-terminus folds into a \u03b2-hairpin stabilized by a buried salt bridge between the new N-terminal proline and a conserved aspartate residue and promotes assembly of the mature capsid (Gitti et al., 1996; von Schwedler et al., 1998). A second putative switch spans the junction between CA and the first spacer peptide (SP1) (Gross et al., 2000). The CA-SP1 junction is predicted to fold into an \u03b1-helix (Accola et al., 1998; Liang et al., 2002), and forms the binding site of so-called 'maturation inhibitors,' as exemplified by 3-O-(3\u2019,3\u2019-dimethylsuccinyl)betulinic acid (bevirimat) (reviewed in Adamson et al., 2009). These inhibitors delay proteolysis of the CA-SP1 junction and induce aberrant maturation. The importance of the CA-SP1 junction as a regulator of proteolysis during maturation is well established (Kr\u00e4usslich et al., 1995; Pettit et al., 1994; Wiegers et al., 1998), but the molecular basis of this function has been unknown.\n\nMutagenesis studies also indicate that the CA-SP1 junction is important for assembly of the immature HIV-1 Gag shell (Accola et al., 1998; Al-Mawsawi et al., 2014; Datta et al., 2011; Guo et al., 2005; Kr\u00e4usslich et al., 1995; Liang et al., 2002; Liang et al., 2003; Melamed et al., 2004; Pettit et al., 1994; Rihn et al., 2013; von Schwedler et al., 2003). Low resolution electron microscopy studies indicate that the junction forms what appears to be a pillar of density or helical bundle, and so is likely to stabilize the Gag lattice (Schur et al., 2015a; Schur et al., 2015b; Wright et al., 2007). However, neither the SP1 spacer nor the putative helical bundle is a universal feature of retroviral Gag shells (Bharat et al., 2012). This suggests that the SP1 spacer is not generally important for Gag assembly, or that perhaps the CA-SP1 junction has another, as yet structurally undefined assembly determinant.\n\nStructural studies of the HIV-1 CA-SP1 junction in context of longer Gag fragments (CTD-SP1 and CTD-SP1-NC) have shown that the junction is primarily disordered (Newman et al., 2004; Worthylake et al., 1999). Nevertheless, the backbone NMR chemical shifts of junction residues deviate from expected random coil values, indicating a small propensity towards an \u03b1-helical conformation (Newman et al., 2004). Indeed, the isolated SP1 peptide displays concentration dependent secondary structure in aqueous solution, and folds into an \u03b1-helix at the millimolar protein concentrations found in virions (Datta et al., 2011). Nucleic acids (both RNA and DNA) can promote Gag assembly in vitro, presumably because of proximity-induced interactions between multiple copies of Gag that bind to the same nucleic acid molecule (Campbell and Rein, 1999; Campbell and Vogt, 1995; Gross et al., 2000). It therefore seems that nucleic acid-induced Gag clustering might also promote folding of the SP1 helix.\n\nTo learn how the CA-SP1 junction functions as a molecular switch during HIV-1 assembly and maturation, we determined the structure of its immature, assembled form by X-ray crystallography at a resolution of 3.27\u2009\u00c5. Our analysis elucidates how local conformational changes in the CA-SP1 switch promote Gag assembly, drive large-scale capsid rearrangements, and regulate proteolysis during maturation. We also gained new insights on the mechanism of action of maturation inhibitors.\n\n## Results\n\n### HIV-1 CA CTD-SP1 recapitulates the immature Gag lattice\n\nIn the immature HIV-1 Gag shell, the NTD, CTD, and SP1 regions form three layers of lattice-stabilizing interactions (Schur et al., 2015b; Wright et al., 2007). The CTD-SP1 fragment of HIV-1 Gag contains the minimal information required to assemble the immature lattice, whereas the NTD is dispensable (Accola et al., 2000). Accordingly, we found that purified CTD-SP1 protein assembled\u00a0in vitro into flat sheets with the subunits organized into a hexagonal lattice with the expected unit cell spacing of the CTD layer of the immature Gag lattice (~74\u2009\u00c5)\u00a0(Wright et al., 2007\u00a0)\u00a0(Figure 1\u2014figure\u00a0supplement 1). We then performed crystallization screens using a large number of commercial and in-house precipitants. We obtained many crystal hits, but invariably these were of the mature-like dimer form of the CTD with disordered SP1 tails, as observed previously (Worthylake et al., 1999). Using electron diffraction, we identified small and scarce plate crystals that gave a hexagonal diffraction pattern and unit cell spacing close to 70\u2009\u00c5 (not shown). Upon optimization, these crystals diffracted X-rays to about 3.27\u2009\u00c5 resolution (mean I/\u03c3I \u2265 1), and we determined the crystal structure to R/Rfree values of 0.246/0.278 (Table 1 and Figure 1\u2014figure\u00a0supplement 2). Our post hoc analysis is that these crystals were rare because the CA-SP1 junction residues had to fold and become ordered during crystallization. We speculate that this rate limiting step of crystallization reflects the behavior of the junction during assembly of HIV-1 Gag.\n\n**Table 1.**\n Structure statistics for HIV-1 Gag CTD-SP1.\n\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=\"2\">Diffraction</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Beamline</td>\n      <td>APS 22ID</td>\n    </tr>\n    <tr>\n      <td>Wavelength (\u00c5)</td>\n      <td>1.0</td>\n    </tr>\n    <tr>\n      <td>Processing program</td>\n      <td>HKL2000</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>C2</td>\n    </tr>\n    <tr>\n      <td>Cell dimensions</td>\n      <td>a = 70.96 \u00c5</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>b = 122.73 \u00c5</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>c = 85.41 \u00c5</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>\u03b1 = \u03b3 = 90\u00b0, \u03b2 = 94.3\u00b0</td>\n    </tr>\n    <tr>\n      <td>Resolution range, \u00c5</td>\n      <td>50-3.27 (3.42-3.27)</td>\n    </tr>\n    <tr>\n      <td>Rmerge / Rpim</td>\n      <td>0.22 (0.74) / 0.11 (0.47)</td>\n    </tr>\n    <tr>\n      <td>Mean I/\u03c3&lt;I&gt;</td>\n      <td>5.99 (1.28)</td>\n    </tr>\n    <tr>\n      <td>Completeness,%</td>\n      <td>87.0 (66.4)</td>\n    </tr>\n    <tr>\n      <td>Average redundancy</td>\n      <td>3.7 (2.5)</td>\n    </tr>\n    <tr>\n      <td>Wilson B-factor, \u00c52</td>\n      <td>85.21</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Refinement</td>\n    </tr>\n    <tr>\n      <td>Refinement program</td>\n      <td>PHENIX</td>\n    </tr>\n    <tr>\n      <td>Resolution range</td>\n      <td>42.59-3.27 (3.45-3.27)</td>\n    </tr>\n    <tr>\n      <td>No. of unique reflections</td>\n      <td>9,710 (908)</td>\n    </tr>\n    <tr>\n      <td>Reflections in free set</td>\n      <td>1,009 (88)</td>\n    </tr>\n    <tr>\n      <td>Rwork</td>\n      <td>0.246 (0.369)</td>\n    </tr>\n    <tr>\n      <td>Rfree</td>\n      <td>0.278 (0.408)</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">No. of nonhydrogen atoms</td>\n    </tr>\n    <tr>\n      <td>protein</td>\n      <td>3,865</td>\n    </tr>\n    <tr>\n      <td>solvent</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Average B-factor, \u00c52</td>\n    </tr>\n    <tr>\n      <td>protein</td>\n      <td>84.09</td>\n    </tr>\n    <tr>\n      <td>solvent</td>\n      <td>n/a</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Coordinate deviations</td>\n    </tr>\n    <tr>\n      <td>bond lengths, \u00c5</td>\n      <td>0.003</td>\n    </tr>\n    <tr>\n      <td>bond angles, \u00b0</td>\n      <td>0.513</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Validation and Deposition</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Ramachandran plot</td>\n    </tr>\n    <tr>\n      <td>favored,%</td>\n      <td>98.9</td>\n    </tr>\n    <tr>\n      <td>outliers,%</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>MolProbity clash score</td>\n      <td>0.13</td>\n    </tr>\n    <tr>\n      <td>PDB ID</td>\n      <td>5I4T</td>\n    </tr>\n  </tbody>\n</table>\n\n_Values in parenthesis are for the highest resolution shell._\n\nThe CTD-SP1 plate crystals were made up of stacked sheets of flat hexagonal lattices, with each sheet consisting of CTD-SP1 hexamers connected by CTD dimer linkages (Figure 1A). Our structure therefore represents a flattened version of the immature HIV-1 Gag lattice. The entire CTD-SP1 hexamer \u2013 including both the main CTD fold and ordered SP1 residues \u2013 gave an excellent fit to an 8.8\u2009\u00c5 resolution cryoEM map of the immature HIV-1 Gag lattice (Schur et al., 2015b) (Figure 1\u2014figure supplement 3A). The dimer also gave a good fit (Figure 1\u2014figure\u00a0supplement 3B), but in this case the SP1 helix was more laterally displaced from its corresponding density in the cryoEM map (asterisk in Figure 1\u2014figure\u00a0supplement 3B). This is likely because the cryoEM structure is of a curved Gag lattice, whereas our crystal structure is of a flat lattice. To gain insight on how loss of curvature in our crystal lattice is accommodated by the subunits, we superimposed the crystal structure with the model reported by Schur et al., which was created by flexible fitting of the main CTD fold (but not the CA-SP1 junction) into the cryoEM map (PDB 4USN) (Schur et al., 2015b). We found that superposition of the hexamer units resulted in an average root mean square displacement of 1.92\u2009\u00c5 over equivalent C\u03b1 atoms, whereas superposition of the dimers resulted in a comparable displacement of 1.93\u2009\u00c5. We therefore surmise that any changes in tertiary or quaternary structure that were caused by flattening of the lattice in our crystals have been dispersed across the subunits. Unlike the mature capsid, which contains sharp pentameric declinations and a variably curving lattice (Ganser et al., 1999; Pornillos et al., 2011; Zhao et al., 2013), the immature HIV-1 Gag shell is a more smoothly curving sphere that is interrupted by large discontinuities (Briggs et al., 2009; Keller et al., 2011; Wright et al., 2007). It therefore seems that generation of Gag curvature does not necessarily require the kinds of conformational variations observed in the mature capsid subunits.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/17063/elife-17063-fig1-v3.jpg)\n\n**Figure 1.:** (A) Top view of the lattice, with symmetry equivalent subunits in the same color. A hexameric unit is outlined in red, and a dimeric unit is outlined in blue. (B,C) Side views of the hexamer. The structural elements that make intermolecular contacts are colored and labeled: MHR (red), helix 9/10 loop (orange), GVGGP \u03b2-turn motif (yellow), and junction helix (blue/magenta).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17063/elife-17063-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic diagram of the HIV-1 Gag protein, with the different domains indicated. The polyhistidine-tagged CTD-SP1 construct used in these studies is indicated beneath. (B) Merged projection map of two-dimensional CTD-SP1 crystals at about 9 \u00c5 resolution. Density features consistent with a 6-helix bundle are encircled in red.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17063/elife-17063-fig1-figsupp2-v3.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Initial maps (mesh) calculated after molecular replacement with the CTD and rigid body refinement in PHENIX. The maps are of high quality, as evidenced by the appearance of unbiased densities for the 6-helix bundle (indicated in left) and sidechains (encircled in right). (B) Initial unbiased 6-fold NCS map (blue mesh) of the junction helix region, which was used to build a polyalanine model (sticks). (C) After several rounds of refinement and rebuilding, a feature-enhanced map (FEM, magenta mesh) was calculated with model phases (Afonine et al., 2015). Sidechains densities are evident in the FEM map (encircled), which provided a unique solution to the helix registry. (D) The model (sticks) was rebuilt into the FEM map, with the helical registry assigned. (E) Validation of the final model (yellow) with a composite simulated annealing (SA) omit map (blue mesh, 1\u03c3) shown in stereoview. Close-up views of the SA omit map are also shown in Figure 3D and Figure 4A.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/17063/elife-17063-fig1-figsupp3-v3.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Fitting of the CTD-SP1 hexamer as a single unit into the 8.8 \u00c5 resolution cryoEM map of the immature HIV-1 lattice (Schur et al., 2015b). (B) Fitting of the CTD-SP1 dimer. Asterisk indicates the CA-SP1 junction helix that is laterally displaced from its corresponding density in the cryoEM map.\n\n### The CA-SP1 junction is structurally bipartite\n\nIn our crystal structure, each subunit contains the main CTD fold (amino acids 281\u2013351 in the HIV-1 Gag numbering scheme) and the CA-SP1 switch region (residues 352\u2013370). The CTD adopts the canonical fold: a short 310 helix, followed by a strand/turn element called the major homology region (MHR), and then four \u03b1-helices (helices 8\u201311) (Gamble et al., 1997; Worthylake et al., 1999) (Figure 2A). The switch region immediately follows the main CTD fold, and consists of two parts: a type II \u03b2-turn (residues 352\u2013355) and an \u03b1-helix that spans the CA-SP1 junction (residues 356\u2013370). This bipartite character was not anticipated but could explain the apparent structural variability in the C-terminal switch regions of immature retroviral capsids, which were discerned from subnanometer resolution cryoEM maps (Bharat et al., 2012; Schur et al., 2015a; 2015b).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/17063/elife-17063-fig2-v3.jpg)\n\n**Figure 2.:** (A) The immature CTD-SP1 subunit. Helices are shown as colored ribbons. Absolutely conserved MHR residues that mediate a salt bridge/hydrogen bond network are shown as yellow sticks, as are contributing residues from the helix 9/10 loop. (B) Equivalent view of the mature CTD (PDB 1A43) (Worthylake et al., 1999). Disordered residues at the C-terminus are in dashes. A pronounced kink in the dimerization helix (H9, pink) is absent in the immature form (black arrows). (C) Sequence conservation in the CTD-SP1 junction, derived from the curated Los Alamos HIV sequence database (Kuiken et al., 2003) (6824 sequences). Secondary structure of the immature and mature forms are shown above, with dashes indicating disordered regions. Proteolytic processing sites are marked by red arrowheads.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17063/elife-17063-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A, B) Top views of the CTD-SP1 dimer in context of: (A) the planar immature lattice from this study and (B) the CTD dimer in context of the planar mature lattice (PDB 4XFX) (Gres et al., 2015). The interfacial Trp316 sidechains (Trp184 in mature) are encircled for reference. (C) Superposition of the two structures as dimeric units emphasizes the different configurations of the subunits across the same interface.\n\nComparison of the immature CTD-SP1 subunit with the mature CTD subunit reveals a local conformational change (presence or absence of a kink) in the dimerization helix, as noted previously (Bartonova et al., 2008) (arrows in Figure 2A,B). This correlates with the different orientations of the subunits across the immature and mature dimer interfaces (Figure 2\u2014figure\u00a0supplement 1) (Bartonova et al., 2008; Gres et al., 2015). Another difference is that, in the mature CTD, residues downstream of helix 11 are disordered (Bartonova et al., 2008; Gamble et al., 1997; Worthylake et al., 1999) (Figure 2B,C). These observations provide further support for the presumption that the C-terminal tail of CA becomes unfolded upon maturation and has no apparent role in assembly of the mature capsid.\n\nThe CTD-SP1 hexamer looks like a goblet, with the main CTD fold forming the cup and the CA-SP1 junction forming the stem (Figure 1B,C). Lateral packing between the subunits is quite loose along the body of the cup, and close contacts involving the main CTD fold occur only where the cup meets the stem. In this region, the MHR loops line the bottom inner surface of the cup (Figure 1B,C, colored in red), whereas the loops connecting helices 9 and 10 (9/10 loop, orange) line the outer surface of the cup and contact the tops of the junction helices in the stem (blue/magenta). Underneath the cup, the junction helices form a 6-helix bundle as predicted (Accola et al., 1998; Wright et al., 2007). All of the aliphatic sidechains in the junction helix make 'knobs-in-holes' interactions similar to classical coiled-coils (Figure 3A\u2013C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/17063/elife-17063-fig3-v3.jpg)\n\n**Figure 3.:** (A) Top view of the 6-helix bundle. The helical backbone is in ribbons, and sidechains that mediate 'knobs-in-holes' type packing are shown as sticks. Yellow spheres indicate the scissile peptide bond between Leu363 and Ala364 (CA residue Leu231 and SP1 residue Ala1). (B) Same top view, with the subunits rendered in surface representation. (C) Side view, with alternating subunits rendered as ribbons or surfaces. 'Knobs-in-holes' sidechains are shown as orange sticks and labeled. (D) Close-up of the scissile bond, which is sequestered at the bottom of a pocket occupied by the Met367 sidechain. Mesh shows a composite simulated annealing omit map (1\u03c3). (E) Comparison of the CA-SP1 junction in context of the 6-helix bundle (left) and bound to the viral protease active site (right) (PDB 1\u00a0KJH) (Prabu-Jeyabalan et al., 2000). Sidechains that mediate both types of interactions are encircled, with equivalent residues in the same color.\n\n### The CA-SP1 junction helix regulates proteolysis by sequestering the scissile bond\n\nDuring HIV-1 maturation, the CA-SP1 junction is one of ten cleavage sites in the precursor Gag and Gag-Pol polyproteins that are cleaved by the viral protease (PR). Proteolytic processing occurs at different rates, with the CTD-SP1 junction processed with the slowest rate, and the downstream SP1-NC junction the fastest (reviewed in Lee et al., 2012). The C-terminal boundary of the junction helix tracks precisely with sequence conservation; downstream residues that are disordered in our crystal structure are not conserved (Figure 2C). This is consistent with the notion that the downstream SP1-NC junction has the fastest rate of processing because it is disordered in the immature virion.\n\nIn our structure, the scissile bond (between Leu363 and Ala364) is located inside the helical barrel (yellow spheres in Figure 3A), where it is sequestered within a pocket covered by a methionine sidechain (Met367) (Figure 3D). When the CA-SP1 junction binds to PR, it adopts a fully extended, \u03b2-strand configuration wherein sidechains on either side of the scissile bond occupy sub-pockets within the enzyme active site (Prabu-Jeyabalan et al., 2000) (Figure 3E, right). In the CTD-SP1 hexamer, these same sidechains mediate the 'knobs-in-holes' interactions of the 6-helix bundle (Figure 3E, left). Therefore, for PR to gain access to its substrate, the 6-helix bundle must unfold. Since proteolysis rates for the different cleavage sites are comparable when measured with peptide substrates (Lee et al., 2012), the rate limiting step for the CA-SP1 site is unfolding of the 6-helix bundle. This explains why the CA-SP1 junction displays the slowest rate of proteolysis and is the final trigger that elicits HIV-1 maturation.\n\n### The \u03b2-turn organizes multiple hexamer-stabilizing elements\n\nOur structure revealed a second structural component of the CA-SP1 switch, which consists of five amino acid residues that connect the main fold of the CTD and the junction helix (352GVGGP356) (Figure 4A). This motif makes a right-handed type II \u03b2-turn that buries the Val353 sidechain within a shallow sub-pocket at the bottom of the CTD, which is made of the MHR and 9/10 loops. In context of the hexamer, the entire \u03b2-turn is almost completely buried within a larger pocket made up of two MHR loops, two 9/10 loops, and the junction helices from three adjacent subunits (Figure 4B,C). Thus, the \u03b2-turn brings together multiple structural elements to generate the Gag hexamer. This key structural role indicates that the \u03b2-turn is a critical Gag assembly determinant.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/17063/elife-17063-fig4-v3.jpg)\n\n**Figure 4.:** (A) Close-up view of the GVGGP motif in context of a single subunit. An i,i+3 hydrogen bond characteristic of a right-handed \u03b2-turn is indicated, as is the sub-pocket occupied by the Val353 sidechain. Mesh shows a composite simulated annealing omit map (1\u03c3). (B) Stereo\u00a0view of the \u03b2-turn and its surrounding pocket, which is made up of two MHR loops (red), two helix 9/10 loops (orange), and the N-terminal ends of three junction helices (blue). The hexamer is rendered as a translucent surface. (C) The six \u03b2-turns (yellow sticks) in context of the hexamer. The surrounding MHR, 9/10 loops, and junction helices are colored as in (B).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17063/elife-17063-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The sequence alignment spans the CTD-SP1 fragment of HIV-1 Gag and CTD of MPMV Gag. Unlike HIV-1, MPMV does not have a spacer peptide in between its CA and NC domains. Despite the absence of a junction helix, the MHR, helix 9/10 loop, and putative 'clasp' motif of MPMV are highly similar in sequence to HIV-1.\n\n### The entire CA-SP1 junction is required for immature Gag assembly\u00a0in vitro\n\nNumerous mutagenesis studies have established the importance of the CA-SP1 switch in assembly of the HIV-1 Gag protein (Accola et al., 1998; Datta et al., 2011; Guo et al., 2005; Kr\u00e4usslich et al., 1995; Liang et al., 2002; Liang et al., 2003; Melamed et al., 2004; Pettit et al., 1994). Assembly defects in previous studies were assessed in different ways, however, so we performed our own alanine scan to obtain a uniform dataset. Mutations were made in context of the previously described \u25b3MA-CA-SP1-NC HIV-1 Gag construct, which displays pH-dependent assembly behavior upon dialysis with a single-stranded DNA template (Gross et al., 2000). At high pH, \u25b3MA-CA-SP1-NC assembles into thick-walled immature virus-like particles, whereas at low pH, it assembles mature-like tubes, cones, and spheres. The immature \u25b3MA-CA-SP1-NC VLPs are nearly identical to the immature Gag shell of authentic virions (Briggs et al., 2009; Gross et al., 2000).\n\nWhen we dialyzed 2 mg/mL of wildtype (WT) \u25b3MA-CA-SP1-NC with a 26-mer DNA oligonucleotide at pH 8, we obtained immature VLPs as expected, with little evidence of off-pathway assemblies or aggregation (Figure 5B and Figure 5\u2014figure\u00a0supplement 1). Under the same conditions, we obtained three mutant phenotypes (which are color coded in Figure 5A and summarized in Table 2; a representative image of each mutant is shown in Figure 5\u2014figure\u00a0supplement 1): WT-like mutants assembled immature VLPs (green, +) (Figure 5B), 'non-assembling' mutants primarily produced aberrant particles or aggregates (magenta, \u2013) (Figure 5C), and intermediate mutants formed both immature VLPs and aberrant particles/aggregates (yellow, +/\u2013) (Figure 5D). We also observed mature-like tubes for some of the mutants, but these were relatively rare (indicated by asterisks in Table 2; representative images in Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/17063/elife-17063-fig5-v3.jpg)\n\n**Figure 5.:** (A\u2013D) Phenotypes of HIV-1 Gag \u25b3MA-CA-SP1-NC assembled with DNA. The ribbon diagram is of two opposing subunits in the hexamer with C\u03b1 atoms shown as spheres and color-coded according to assembly phenotypes as shown in panels B, C, and D. (E\u2013H) Phenotypes of \u25b3MA-CA-SP1-NC assembled with tartrate. Scale bars = 150 nm.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17063/elife-17063-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Shown are representative images of \u25b3MA-CA-SP1-NC proteins assembled in vitro through dialysis with a single-stranded DNA template. Boxes are colored according to assembly phenotypes as indicated in Figure 5A\u2013D and Table 2. Insets show a representative immature particle for each particular mutant, if observed. Scale bars = 150 nm.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17063/elife-17063-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Shown are representative images of \u25b3MA-CA-SP1-NC proteins assembled in vitro by incubating with tartrate. Boxes are colored according to assembly phenotypes as indicated in Figure 5E\u2013H and Table 2. Scale bars = 150 nm.\n\n**Table 2.**\n In vitro assembly phenotypes of HIV-1 \u25b3MA-CA-SP1-NC Gag.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Mutation</th>\n      <th>Location</th>\n      <th>DNA template1</th>\n      <th>Tartrate2</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Wildtype</td>\n      <td></td>\n      <td>+</td>\n      <td>+</td>\n    </tr>\n    <tr>\n      <td>R286A</td>\n      <td>MHR strand</td>\n      <td>+</td>\n      <td>+/m</td>\n    </tr>\n    <tr>\n      <td>P289A</td>\n      <td>MHR loop</td>\n      <td>\u2013</td>\n      <td>m</td>\n    </tr>\n    <tr>\n      <td>K290A</td>\n      <td>MHR loop</td>\n      <td>\u2013</td>\n      <td>m</td>\n    </tr>\n    <tr>\n      <td>R294A</td>\n      <td>MHR helix</td>\n      <td>+</td>\n      <td>+</td>\n    </tr>\n    <tr>\n      <td>P328A</td>\n      <td>9/10 loop</td>\n      <td>\u2013</td>\n      <td>m</td>\n    </tr>\n    <tr>\n      <td>D329A</td>\n      <td>9/10 loop</td>\n      <td>\u2013</td>\n      <td>m</td>\n    </tr>\n    <tr>\n      <td>M347A</td>\n      <td>Helix 11</td>\n      <td>+/\u2013</td>\n      <td>+</td>\n    </tr>\n    <tr>\n      <td>Q351A</td>\n      <td>Helix 11</td>\n      <td>\u2013</td>\n      <td>m</td>\n    </tr>\n    <tr>\n      <td>G352A</td>\n      <td>\u03b2-turn</td>\n      <td>\u2013</td>\n      <td>m</td>\n    </tr>\n    <tr>\n      <td>V353A</td>\n      <td>\u03b2-turn</td>\n      <td>\u2013</td>\n      <td>m</td>\n    </tr>\n    <tr>\n      <td>G354A</td>\n      <td>\u03b2-turn</td>\n      <td>\u2013</td>\n      <td>m</td>\n    </tr>\n    <tr>\n      <td>G355A</td>\n      <td>\u03b2-turn</td>\n      <td>\u2013</td>\n      <td>m</td>\n    </tr>\n    <tr>\n      <td>P356A</td>\n      <td>\u03b2-turn /Junction helix</td>\n      <td>\u2013</td>\n      <td>m</td>\n    </tr>\n    <tr>\n      <td>G357A</td>\n      <td>Junction helix</td>\n      <td>+/\u2013</td>\n      <td>+/m</td>\n    </tr>\n    <tr>\n      <td>H358A</td>\n      <td>Junction helix</td>\n      <td>\u2013</td>\n      <td>m</td>\n    </tr>\n    <tr>\n      <td>K359A</td>\n      <td>Junction helix</td>\n      <td>+</td>\n      <td>+/m</td>\n    </tr>\n    <tr>\n      <td>A360V</td>\n      <td>Junction helix</td>\n      <td>\u2013</td>\n      <td>m</td>\n    </tr>\n    <tr>\n      <td>R361A</td>\n      <td>Junction helix</td>\n      <td>\u2013</td>\n      <td>+/m</td>\n    </tr>\n    <tr>\n      <td>V362A</td>\n      <td>Junction helix</td>\n      <td>\u2013</td>\n      <td>m</td>\n    </tr>\n    <tr>\n      <td>L363A</td>\n      <td>Junction helix</td>\n      <td>\u2013</td>\n      <td>m</td>\n    </tr>\n    <tr>\n      <td>A364V</td>\n      <td>Junction helix</td>\n      <td>\u2013</td>\n      <td>m</td>\n    </tr>\n    <tr>\n      <td>E365A</td>\n      <td>Junction helix</td>\n      <td>\u2013*</td>\n      <td>m</td>\n    </tr>\n    <tr>\n      <td>A366V</td>\n      <td>Junction helix</td>\n      <td>\u2013</td>\n      <td>m</td>\n    </tr>\n    <tr>\n      <td>M367A</td>\n      <td>Junction helix</td>\n      <td>\u2013</td>\n      <td>m</td>\n    </tr>\n    <tr>\n      <td>S368A</td>\n      <td>Junction helix</td>\n      <td>+/\u2013</td>\n      <td>m</td>\n    </tr>\n    <tr>\n      <td>Q369A</td>\n      <td>Junction helix</td>\n      <td>\u2013</td>\n      <td>m</td>\n    </tr>\n    <tr>\n      <td>V370A</td>\n      <td>Junction helix</td>\n      <td>\u2013*</td>\n      <td>m</td>\n    </tr>\n    <tr>\n      <td>T371A</td>\n      <td>Disordered</td>\n      <td>+/\u2013*</td>\n      <td>+/m</td>\n    </tr>\n    <tr>\n      <td>N372A</td>\n      <td>Disordered</td>\n      <td>+/\u2013</td>\n      <td>+/m</td>\n    </tr>\n    <tr>\n      <td>P373A</td>\n      <td>Disordered</td>\n      <td>+/\u2013*</td>\n      <td>m</td>\n    </tr>\n    <tr>\n      <td>A374V</td>\n      <td>Disordered</td>\n      <td>+/\u2013</td>\n      <td>+/m</td>\n    </tr>\n    <tr>\n      <td>T375A</td>\n      <td>Disordered</td>\n      <td>+/\u2013</td>\n      <td>+/m</td>\n    </tr>\n    <tr>\n      <td>I376A</td>\n      <td>Disordered</td>\n      <td>+/\u2013</td>\n      <td>+/m</td>\n    </tr>\n    <tr>\n      <td>M377A</td>\n      <td>Disordered</td>\n      <td>+/\u2013</td>\n      <td>+/m</td>\n    </tr>\n  </tbody>\n</table>\n\n_1 +, as in Figure 5B; \u2013, as in Figure 5C; +/\u2013, as in Figure 5D2 +, as in Figure 5F; m, as in Figure 5G; +/m, as in Figure 5H* rare mature tubes_\n\nAs expected from the structure, mutations in the main fold of the CTD that are located within the loosely packed cup region of the hexamer (R286A and R294A) were WT-like, whereas CTD mutations closer to the tightly packed junction region (M347A and Q351A) were more disruptive of assembly (Table 2 and Figure 5\u2014figure supplement 1). In contrast, virtually all of the 19 single-point mutations in the structured region of the CA-SP1 switch (residues 352\u2013370) resulted in aberrantly assembled particles and/or protein aggregates (Figure 5A, Table 2, and Figure 5\u2014figure supplement 1). Two exceptions were G357A and K359A, both of which are located near the N-terminal end of the junction helix. The G357A phenotype was not unexpected because this is a polymorphic position (Figure 2C). K359A, on the other hand, replaced a lysine residue lining the inside of the helical barrel with a hydrophobic residue, and the substitution may have eliminated clashes between like charges inside the 6-helix bundle. Thick-walled immature VLPs were also obtained with the S368A mutation near the C-terminal end of the junction helix.\n\nApart from residues close to the C-terminal end of the junction helix, many of the switch mutants appeared to behave in an 'all-or-none' manner (i.e., they either assembled immature VLPs or aberrantly), indicating that both the \u03b2-turn and junction helix must be functional for assembly to occur in vitro. Such a behavior was unexpected because in high-order assembly systems, local defects in protein-protein interactions are typically buffered by cooperativity. Therefore, the 'all-or-none' behavior must be due to a defect in nucleation. To test this idea more rigorously, we used tartrate salts to induce assembly of the \u25b3MA-CA-SP1-NC VLPs (Figure 5E). The absence of nucleic acids ensured that nucleation was triggered only by protein-protein interactions. In this format, most of the CA-SP1 switch mutants again failed to form immature VLPs, but now instead assembled efficiently into thin-walled mature-like particles (Figure\u00a05E\u2013H, Table 2, and Figure 5\u2014figure\u00a0supplement 2). The same phenotype is observed when the entire SP1 spacer is deleted (Gross et al., 2000). Since junction residues downstream of the main CTD fold are not required for assembly of the mature lattice and are almost certainly unfolded in the thin-walled particles, these results further indicate that nucleation of the immature particles requires folding of both the \u03b2-turn and junction helix.\n\nSome of the mutants formed both immature VLPs and mature particles in the presence of tartrate, in similar proportions (R286A, G357A, K359A, R361A) (Figure 5H and Figure 5\u2014figure\u00a0supplement 2). Examination of well-separated particles indicated that each particle was either immature-like or mature-like, i.e., we did not observe ones that were partly thin-walled and partly thick-walled. We believe that this is an important observation, because it indicates that the identity of the particle is established at nucleation (Gross et al., 2000), and is more supportive of a disassembly/reassembly pathway of HIV-1 capsid maturation than a displacive or condensation mechanism (Keller et al., 2013). Another notable mutant was K359A, which assembled into immature VLPs in the presence of DNA (Figure 5\u2014figure\u00a0supplement 1), but assembled into predominantly mature-like particles by the tartrate method (Figure 5\u2014figure\u00a0supplement 2). These results indicate that, although the HIV-1 Gag protein does not require nucleic acid to assemble into immature particles\u00a0in vitro, folding of the CA-SP1 switch can be promoted by nucleic acid, likely due to clustering.\n\nWe then extended our alanine scan to include SP1 residues downstream of the junction helix (residues 371\u2013377). As expected, all of these mutants were competent to form immature VLPs in the presence of DNA, but surprisingly, were still significantly impaired in assembly efficiency (Table 2 and Figure 5\u2014figure\u00a0supplement 1). By the tartrate method, the mutants formed both mature and immature VLPs, with the exception of P373A, which was predominantly mature (Table 2 and Figure 5\u2014 figure\u00a0supplement 2). Our interpretation of these results is that, even though the C-terminal end of SP1 is not highly conserved in sequence (Figure 2C), the mutants were still defective in folding of the CA-SP1 junction, and again, nucleic acid (DNA) can partially compensate for the folding defect. Alternatively, it is possible that the helical character of SP1 extends downstream all the way to the NC domain, as previously proposed (Morellet et al., 2005). However, our crystal structure, the cryoEM reconstruction (Figure 1\u00a0\u2014figure supplement 3) (Schur et al., 2015a), and sequence conservation (Figure 2C) appear to be in good agreement as to the boundaries of the junction helix. We therefore conclude that our structure defines the core helical bundle, although an extended helix may occur in a fraction of Gag molecules, for example the ones that nucleate assembly.\n\nFinally, we tested mutations at the MHR loop (P289A, K290A) and the 9/10 loop (P328A, D329A) that surround the Val353 pocket at the bottom of the CTD. These mutants behaved in a similar way as the \u03b2-turn and junction helix mutations (Figure 5\u2014figure\u00a0supplement 1, Figure 5\u2014figure\u00a0supplement 2, and Table 2). These results confirm that binding of Val353 to the bottom of the CTD \u2013 and by inference, proper folding of the \u03b2-turn \u2013 is a critical step in nucleation of the immature VLPs. We speculate that the valine pocket at the bottom of the CTD functions as a folding chamber or 'chaperone' for the \u03b2-turn.\n\n## Discussion\n\nOur crystal structure of CTD-SP1 represents the highest resolution structure of the immature HIV-1 Gag lattice to date, and confirms prediction that the CA-SP1 junction forms a 6-helix bundle to sequester the PR cleavage site. The CA-SP1 junction elicits the slowest rate of proteolysis during maturation because the 6-helix bundle must unfold to bind PR. Binding energy might be sufficient to induce unfolding, but this may be unlikely since PR has low intrinsic affinity for its substrates (mM range\u00a0in vitro\u00a0(Pettit et al., 1994)). Another attractive possibility is that PR gains substrate access by transient, cooperative unfolding and refolding of the 6-helix bundle (Bush and Vogt, 2014). Our proposed mechanism is analogous to the predicted\u00a0transient unfolding of the collagen triple helix that permits cleavage by matrix metalloproteases (Lu and Stultz, 2013). In non-enveloped viruses, such a mechanism allows surface exposure of otherwise internal and structured capsid protein segments, which then permits access to antibodies and exogenously added proteases (Bothner et al., 1998; Lin et al., 2012).\n\nOur analysis also supports a model wherein maturation inhibitors like bevirimat deny PR access, not by sequestering the scissile bond (the 6-helix bundle already does this), but rather by stabilizing the 6-helix bundle and inhibiting its unfolding. This model predicts that resistance can develop by means of mutations that destabilize the junction. Such mutations would enhance proteolysis in the absence of the maturation inhibitor, and indeed this seems to be a general property of well-characterized escape mutations (Adamson et al., 2006; Li et al., 2006; Sakalian et al., 2006; Zhou et al., 2004). In fact, some escape mutations that have been selected for in tissue culture appear to destabilize the Gag hexamer altogether, and the mutant viruses become dependent on the inhibitor to assemble (Waki et al., 2012). Conversely, mutations that stabilize the 6-helix bundle would be expected to inhibit proteolysis even in the absence of inhibitor. One such mutation is T371I (Fontana et al., 2015). This residue immediately follows the junction helix, and we speculate that the isoleucine substitution stabilizes and extends the helix. Extending the helix will place this sidechain inside the barrel underneath a ring of methionine residues, where it can provide additional non-native hydrophobic contacts. We have not yet been able to determine whether bevirimat binds outside or inside the bundle, but the compound has been crosslinked to both the junction helix and the MHR (Nguyen et al., 2011), which seems consistent with the second possibility.\n\nAnother important finding in this study is that the HIV-1 CA-SP1 switch has a second structural component: a \u03b2-turn that connects the junction helix to the main CTD fold. The \u03b2-turn is almost completely buried within an assembly-induced pocket surrounded by three adjacent subunits. Both its location and the fact that it interacts with 7 other hexamer-stabilizing structural elements indicate that the \u03b2-turn is a critical Gag assembly determinant, and may act as a 'clasp' that locks the interactions.\n\nAlthough our in vitro assembly experiments indicated that virtually the entire CA-SP1 switch region is intolerant of mutations, we did observe that assembly defects were graded \u2013 the most severe mutations mapped to the \u03b2-turn and severity fell off towards the C-terminus of the junction helix (i.e., the SP1 spacer). A similar trend has been observed in previous studies, and indeed, the gradation in assembly defect is significantly more pronounced in cells (Accola et al., 1998; Al-Mawsawi et al., 2014; Datta et al., 2011; Guo et al., 2005; Kr\u00e4usslich et al., 1995; Liang et al., 2002; Liang et al., 2003; Melamed et al., 2004; Rihn et al., 2013; von Schwedler et al., 2003). For example, HIV-1 Gag that completely lacks the SP1 spacer can still assemble into large, membrane-associated patches (Kr\u00e4usslich et al., 1995), whereas \u03b2-turn mutants do not form plasma membrane-associated patches and remain diffusely\u00a0distributed throughout the cytosol (Liang et al., 2003). These observations\u00a0indicate that SP1 is not strictly required for the fundamental higher-order self-association property\u00a0of HIV-1\u00a0Gag. On the other hand, the \u03b2-turn is required very early in assembly, perhaps during nucleation of the viral particle.\n\nIn context of full-length HIV-1 Gag, the entire CA-SP1 switch region was suggested to be unstructured but with weak helical propensity (Newman et al., 2004; Worthylake et al., 1999). A fully folded \u03b2-turn (but not junction helix) was also observed in the crystal structure of the immature-like dimer form of the CTD (Bartonova et al., 2008). We therefore speculate that in the unassembled, soluble Gag protein, the \u03b2-turn fluctuates between folded and unfolded states, and that the entire CA-SP1 junction folds only upon assembly of the immature lattice. Since we found that an intact \u03b2-turn sequence cannot rescue a defective junction helix and vice versa (at least in vitro), we propose that folding of the CA-SP1 switch, and in particular the \u03b2-turn, is a critical step in nucleation of the immature Gag lattice.\n\nAssembly of retroviral particles is thought to initiate when the viral RNA genome dimerizes and exposes high-affinity binding sites for the Gag C-terminal NC domain (D'Souza and Summers, 2004; Keane et al., 2015). The resulting ribonucleoprotein complex, containing several Gag molecules, is reasonably assumed to nucleate assembly of the immature viral particle. RNA-mediated Gag clustering has been proposed to nucleate assembly by promoting the CTD dimerization interaction (Amarasinghe et al., 2000; Bush and Vogt, 2014; Ma and Vogt, 2004). Since the isolated SP1 peptide folds into a helix in a concentration dependent manner (Datta et al., 2011), we suggest instead that RNA-mediated clustering directly promotes folding of the CA-SP1 junction and the 6-helix bundle and, thereby, formation of Gag hexamers. Compared to a dimer, a hexamer is more intuitively appealing as the nucleator of the spherical Gag shell, since it is the smallest unit comprising the set of protein-protein interactions that are exclusive to the immature lattice and not found in the mature capsid or other functional states of the protein. We further speculate that folding of the junction will have the additional role of reeling in the NC domain and its bound genome, increasing the probability that the accumulating Gag molecules will bind to the same RNA. It is likely that the RNA, in turn, exerts some corresponding pulling force on the assembling Gag lattice, helping to promote its encapsidation. Our analysis therefore supports the proposal that the CA-SP1 junction allosterically communicates the status of downstream NC/RNA events to the upstream assembly domains of Gag (Bush and Vogt, 2014).\n\nIn summary, our studies reveal the molecular details of a bipartite HIV-1 CA-SP1 switch with critical functions in both virus particle assembly and proteolytic maturation. Retroviruses that do not contain a spacer between their CA and NC domains might have eschewed sophisticated protease regulation but have retained the more fundamental assembly determinant at the C-terminal end of CA. An example is Mason-Pfizer monkey virus (MPMV), whose immature capsid structure does not contain a 6-helix bundle (Bharat et al., 2012). Sequence comparison confirms that MPMV does not have a spacer element, but does appear to have a 'clasp' motif that is similar to that of HIV-1 (Figure 4\u2014figure\u00a0supplement 1). Rous sarcoma virus (RSV) appears to be a contrasting example \u2013 it has a well-characterized spacer (Bush et al., 2014; Keller et al., 2008; Schur et al., 2015a), but does not have a recognizable turn motif. The RSV junction helix is longer and more stable than that of HIV-1 (Bush et al., 2014; Keller et al., 2008), and we surmise that the RSV spacer confers both the assembly and regulatory functions that are mediated by two distinct parts in HIV.\n\n### Note added in proof\n\nIn a concurrent publication, Schur et al. report a cryoEM structure of the immature HIV-1 Gag lattice at near-atomic resolution (Schur et al., 2016). They also conclude that the CA-SP1 boundary folds into a 6-helix bundle that is important for assembly of Gag and its proteolytic maturation.\n\n## Materials\u00a0and\u00a0methods\n\n### Protein expression and purification\n\nCTD-SP1 (residues 281\u2013377 of HIV-1 NL4-3 Gag) was cloned with a non-cleavable His-tag (His6-Gly2) into pET30a (Novagen/EMD\u00a0Millipore,\u00a0Germany). The construct also contained the P373T substitution, which is a natural sequence variant (Kuiken et al., 2003). Protein was expressed in E. coli BL21(DE3) cells by induction with 1\u2009mM IPTG for 4\u2009hr at 25\u00b0C in shake cultures. Bacteria were harvested by centrifugation and resuspended in 50\u2009mM Tris, pH 8.3, 1\u2009M LiCl, 10\u2009mM \u03b2-mercaptoethanol (\u03b2ME) supplemented with 0.3% (w/v) deoxycholate and protease inhibitor tablets (Roche). Cells were lysed by incubation with lysozyme and sonication. Lysates were clarified by centrifugation and then incubated with Ni-agarose resin (Qiagen,\u00a0Germany) for 30\u2009min at 4\u00b0C. Bound fractions were washed and eluted with a step gradient of 15\u2013300\u00a0mM imidazole. The protein was purified to homogeneity using anion exchange and size exclusion chromatography\u00a0in 20\u2009mM Tris, pH 8.0, 0.5\u2009M NaCl, 20\u2009mM \u03b2ME. Pure proteins were concentrated to 15\u201320 mg/mL.\n\n### Two-dimensional crystallography\n\nScreening for 2D crystals was performed as described (Yeager et al., 2013). CTD-SP1 (1\u2009mM) was mixed with an equal volume of 0.4\u2009M sodium-potassium tartrate and incubated overnight at room temperature. Samples were placed on a carbon-coated grid, washed with 0.1\u2009M KCl, and preserved with 2% glucose in 0.1\u2009M KCl. Low-dose images of vitrified samples were recorded with a Titan Krios transmission electron microscope (Philips/FEI,\u00a0Hillsboro,\u00a0OR) operating at 120 kV. A merged projection map (Figure 1\u2014figure\u00a0supplement 1) was calculated from 7 images, using the program 2dx (Gipson et al., 2007). A B-factor of -500 \u00c52 was imposed to sharpen the map.\n\n### X-ray crystallography\n\nScreening for three-dimensional crystals was performed using a large number of commercial and in-house precipitants. Plate crystals that formed in 0.1\u2009M Bis-Tris propane, pH 7\u20138, 0.8\u20131.0\u2009M LiSO4 were initially identified by electron diffraction as being composed of stacked hexagonal sheets. Crystals for X-ray diffraction experiments were optimized in sitting drops, which were set up at a 1:2 protein:precipitant ratio. We found that the best diffracting crystals formed when drops were made with freshly purified protein. Ethylene glycol (25%) in mother liquor was used as cryoprotectant. Diffraction data were collected from a single crystal at beamline 22-ID at the Advanced Photon Source, and processed with HKL2000 (Otwinowski and Minor, 1997). The phase problem was solved by molecular replacement with an immature CTD hexamer model (PDB 4USN) (Schur et al., 2015b). Upon rigid body refinement, unbiased densities for the 6-helix bundle were readily observed in model-phased maps (Figure 1\u2014figure\u00a0supplement 2A). Multiple rounds of iterative model building and refinement were performed with the programs PHENIX (version 1.9\u20131692) (Adams et al., 2010) and Coot (Emsley et al., 2010). Due to the small size of the crystal (~20 microns in the longest dimension), the diffraction data were weak (mean I/\u03c3<I> = 6 and completeness = 87%; Table 1). Nevertheless, we obtained very high quality maps for model building due to the fortuitous existence of 6-fold non-crystallographic symmetry (NCS), and through the use of modern density modification techniques implemented in PHENIX. To obtain the best unbiased map for building the CTD-SP1 junction, we first extensively refined the main CTD fold using reference model restraints (to PDB 3DS2) (Bartonova et al., 2008). A 6-fold NCS averaged map was then calculated, which clearly revealed helical densities (unbiased) for the junction (Figure 1 \u2014 figure\u00a0supplement 2B). The junction helix was built into these densities as a polyalanine model using the 'Place Helix Here' command in Coot. After additional rounds of building and refinement, a feature-enhanced map was calculated with PHENIX (Afonine et al., 2015), which gave a unique solution to the helical registry (Figure 1 \u2014figure\u00a0supplement 2C,D). At low contour levels (~0.5\u00a0\u03c3), residual densities that appeared to correspond to N-terminal His-tag residues were also observed, but these were left unmodeled. Secondary structure hydrogen bonding restraints, riding hydrogens, and local (torsion angle) 6-fold NCS restraints were used throughout the refinement process, as were structure validation tools implemented in both PHENIX and Coot. The current model was also validated with a composite simulated annealing omit map, shown in Figure 3D, Figure 4A, and Figure 1\u2014figure\u00a0supplement 2E. Structure statistics are summarized in Table 1.\n\n### Alanine-scanning mutagenesis and in vitro assembly assays\n\nFor in vitro assembly assays, we used the \u25b3MA-CA-SP1-NC construct, which is a well-validated model system for the immature HIV-1 Gag shell (Briggs et al., 2009; Gross et al., 2000). WT and mutant proteins were expressed and purified as described (Gross et al., 2000). Assembly reactions were set up as follows. DNA templated assembly: Purified protein (148\u2009\u03bcL at 2 mg/mL) was mixed with 26-mer single-stranded DNA oligonucleotide (5\u2019-GGGAGTGGGGGGACTGAAGCAATGAG-3\u2019) (2\u2009\u03bcL at 1\u2009mM) and dialyzed for 2\u2009hr at 4\u00b0C into 1\u2009L of 50\u2009mM Tris, pH 8.0, 0.1\u2009M NaCl, 1\u2009mM EDTA, 2\u2009mM \u03b2ME. Particles were concentrated by centrifugation in a microcentrifuge at maximum speed for 10\u2009min at 4\u00b0C, and resuspended in 15\u2009\u03bcL of dialysis buffer. Tartrate-induced assembly: Protein (50\u2009\u03bcL at 10\u201315 mg/mL) was mixed with 19.25\u2009\u03bcL of 1.5\u2009M tartrate and 7.7\u2009\u03bcL of 1\u2009M Tris, pH 7.5 and incubated for 2\u2009hr at 37\u00b0C. This second approach was more efficient at promoting assembly, and so the centrifugation step was omitted.\n\nFor electron microscopy, each sample (3\u2009\u03bcL) was applied to a glow-discharged, continuous carbon-coated grid for 2\u2009min. Excess liquid was blotted off by touching the edge of the grid with filter paper. The grid was washed with distilled water, blotted, stained with 2% (w/v) uranyl acetate for 2\u2009min, and blotted again. Images of the negatively stained samples were recorded\u00a0using a Tecnai F20 transmission electron microscope (Philips/FEI) operating at 120 kV.\n\nThe assembly experiments were performed with two independent protein preparations for each mutant. In the second set of experiments, the grids were randomized so that the individual who acquired the images was unaware of the identity of the samples.\n\n### Accession codes\n\nCoordinates and structure factors are deposited in the Protein Data Bank under accession number 5I4T.\n",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "f2b41ddc-9216-4900-836a-9dcee46f4bb1",
+      "submission_id": "81f14d16-7d4a-4bc1-be72-810a45d1a17f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, Goethe University , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.17063.019](https://doi.org/10.7554/eLife.17063.019)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Crystal structure of an HIV assembly and maturation switch\" for consideration by eLife. Your article has been favorably evaluated by John Kuriyan (Senior editor) and three reviewers, one of whom, Volker D\u00f6tsch (Reviewer #1), is a member of our Board of Reviewing Editors.\n\nThe following individual involved in review of your submission has agreed to reveal their identity: Michael Summers (Reviewer #2).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is a very nice report of the first direct crystallographic visualization of the HIV-1 Gag CA-SP1 junction. This confirms the long-standing but unproven prediction that the region is a helix, and reveals details of its packing in the immature lattice. The crystallization apparently required heroic efforts. The study is nicely complementary to the Schur et al. cryo-EM study of the immature HIV-1 CA lattice, as the fits shown in Figure 1\u2014figure supplement 3 look quite reasonable. The functional studies using in vitro reconstitution are quite thorough.\n\nEssential revisions:\n\nThe following concerns should be addressed in a revised manuscript:\n\n1) The crystals of CTD-SP1 were made up of flat hexagonal lattice (subsection \u201cHIV-1 CA CTD-SP1 recapitulates the immature Gag lattice\u201d), and thus \"represents a flattened version of the immature HIV-1 Gag lattice\". Considering this, it may not be appropriate to say CTD-SP1 hexamer and dimer give \"excellent\" fits to the cyroEM map of the immature HIV-1 Gag lattice (aforementioned subsection), which is a spherical shell. These Gag lattices are both made up by hexameric and dimeric interfaces, so which interface is different between the curved and flat Gag lattice? Or both of them are slightly different?\n\n2) Related to this, do the authors have any idea of what determines the curvature of Gag lattice? Does the N-terminal domain of CA contribute to this? However, as the authors noticed, \"The CTD-SP1 fragment of HIV-1 Gag contains the minimal information required to assemble the immature lattice, whereas the NTD is dispensable\" (subsection \u201cHIV-1 CA CTD-SP1 recapitulates the immature Gag lattice\u201d). Does that mean there is certain artifact in the reported structure due to crystallization?\n\n3) The helical structure of single SP1 was previously determined in 30% trifluoroethanol (TFE) using solution NMR (Morellet et al., Protein Sci,14:375-86, 2005), in which the helix is further extended toward the C-terminal of SP1. Do the authors know any data that support that these residues in the disordered region of the authors' crystal structure do not contribute to the assembly of immature virion? For the in vitro assembly experiment, the authors only showed the data for the residues from the half beginning of SP1 peptide (Table 2). Mutation of T371 (the first residue form the disordered region) does interfere with in vitro assembly (Table 2). Such kind of data will further validate the authors' crystal structure and their interpretations.\n\n4) It seems pertinent to give a brief description of the helical propensity of SP1 in solution (Newman et al., Protein Sci,13:2101-7, 2004; Datta et al., J Virol, 90:1773-87, 2015) in the Introduction section, which may help to understand how the junction region is folded upon binding with RNA.\n\n5) The file is 41 pages long, and the scientific scope seems appropriate for a full article, not a short report.\n\n6) What was the crystallization trick that took three years to figure out?\n",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ed6b8a61-d387-4724-ae39-0596fbe3c46d",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C1",
+      "claim": "The crystal structure of the CTD-SP1 Gag fragment is a goblet-shaped hexamer in which the cup comprises the CTD and an ensuing type II \u03b2-turn, and the stem comprises a 6-helix bundle.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of the CTD-SP1 Gag fragment is a goblet-shaped hexamer in which the cup comprises the CTD and an ensuing type II \u03b2-turn, and the stem comprises a 6-helix bundle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the crystal structure data presented in the manuscript, including structural coordinates and electron density maps.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "6dd6a34c-9293-417f-9cb5-5c056a89fdb2",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C2",
+      "claim": "The \u03b2-turn is critical for immature virus assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b2-turn is critical for immature virus assembly and the 6-helix bundle regulates proteolysis during maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by mutagenesis experiments showing that \u03b2-turn mutations disrupt assembly, and by structural analysis showing the \u03b2-turn's role in organizing hexamer-stabilizing elements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "7964478c-0157-48cc-94c3-0e50f5fa1db2",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C3",
+      "claim": "The 6-helix bundle regulates proteolysis during maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b2-turn is critical for immature virus assembly and the 6-helix bundle regulates proteolysis during maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by structural data showing the scissile bond is sequestered within the 6-helix bundle, and by inference about the need for unfolding to allow protease access.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "98f0a42a-cacc-4339-aff8-0af94864f8e9",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C4",
+      "claim": "HIV-1 maturation inhibitors suppress unfolding of the CA-SP1 junction and thereby delay access of the viral protease to its substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results also indicate that HIV-1 maturation inhibitors suppress unfolding of the CA-SP1 junction and thereby delay access of the viral protease to its substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the structural data showing the 6-helix bundle sequesters the scissile bond, combined with knowledge about maturation inhibitor function.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "4c3bd537-0737-4733-8f40-84873296cf16",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C5",
+      "claim": "During assembly, Gag makes a spherical, immature capsid shell that packages the viral genome, directs interactions with the plasma membrane to promote envelopment, and recruits cellular machinery to release the new virus particle from the host cell.",
+      "claim_type": "EXPLICIT",
+      "source": "During assembly, Gag makes a spherical, immature capsid shell that packages the viral genome, directs interactions with the plasma membrane to promote envelopment, and recruits cellular machinery to release the new virus particle from the host cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about HIV-1 assembly that is cited in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "ba49630e-c623-4cbd-b61f-ee38613aae33",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C6",
+      "claim": "The Gag shell has hexagonal paracrystalline lattice symmetry, wherein the central CA region makes two layers of interactions through its two domains (NTD and CTD).",
+      "claim_type": "EXPLICIT",
+      "source": "The Gag shell has hexagonal paracrystalline lattice symmetry, wherein the central CA region makes two layers of interactions through its two domains (NTD and CTD, for N-terminal and C-terminal domain).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the immature Gag lattice structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "d8aa0e20-1cb1-454e-bfb4-77002c13506c",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C7",
+      "claim": "During maturation, Gag is cleaved by the viral protease at specific sites, resulting in disassembly of the Gag shell and release of new structural proteins, which then rearrange into the mature, infectious virion.",
+      "claim_type": "EXPLICIT",
+      "source": "During maturation, Gag is cleaved by the viral protease at specific sites. This results in disassembly of the Gag shell and release of new structural proteins, which then rearrange into the mature, infectious virion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about HIV-1 maturation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "269050a6-c593-4979-a07e-b9c449ed8d18",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C8",
+      "claim": "In the mature virion, the genome is repackaged inside a cone-shaped capsid made up of the CA protein, with the NTD forming hexameric or pentameric rings that are connected by the CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mature virion, the genome is repackaged inside a cone-shaped capsid made up of the CA protein, with the NTD forming hexameric or pentameric rings that are connected by the CTD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the mature HIV-1 capsid structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "5a134dde-4bc0-4914-9fd5-f797febbdf5d",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C9",
+      "claim": "The MA-CA junction is in an extended configuration in the immature virion.",
+      "claim_type": "EXPLICIT",
+      "source": "One switch spans the MA-CA junction, which is in an extended configuration in the immature virion (Kelly et al., 2006; Tang et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "ab287c79-6e89-47a7-b0f9-a420c712412e",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C10",
+      "claim": "Upon proteolysis, the new CA N-terminus folds into a \u03b2-hairpin stabilized by a buried salt bridge between the new N-terminal proline and a conserved aspartate residue and promotes assembly of the mature capsid.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon proteolysis, the new CA N-terminus folds into a \u03b2-hairpin stabilized by a buried salt bridge between the new N-terminal proline and a conserved aspartate residue and promotes assembly of the mature capsid (Gitti et al., 1996; von Schwedler et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous structural and functional studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "b95cb71f-626c-4e14-9047-2fa22530c5bd",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C11",
+      "claim": "The CA-SP1 junction is predicted to fold into an \u03b1-helix.",
+      "claim_type": "EXPLICIT",
+      "source": "The CA-SP1 junction is predicted to fold into an \u03b1-helix (Accola et al., 1998; Liang et al., 2002), and forms the binding site of so-called 'maturation inhibitors,' as exemplified by 3-O-(3',3'-dimethylsuccinyl)betulinic acid (bevirimat) (reviewed in Adamson et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "f714939b-dce0-4f0c-9a0d-5e3cd67fb36f",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C12",
+      "claim": "The CA-SP1 junction forms the binding site of maturation inhibitors such as bevirimat.",
+      "claim_type": "EXPLICIT",
+      "source": "The CA-SP1 junction is predicted to fold into an \u03b1-helix (Accola et al., 1998; Liang et al., 2002), and forms the binding site of so-called 'maturation inhibitors,' as exemplified by 3-O-(3',3'-dimethylsuccinyl)betulinic acid (bevirimat) (reviewed in Adamson et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "b69ce36f-fb39-44e9-807f-6cf4bd3737b9",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C13",
+      "claim": "Maturation inhibitors delay proteolysis of the CA-SP1 junction and induce aberrant maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "These inhibitors delay proteolysis of the CA-SP1 junction and induce aberrant maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about maturation inhibitor function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "4c442e96-1bbc-4267-885c-eb2c77caa753",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C14",
+      "claim": "The importance of the CA-SP1 junction as a regulator of proteolysis during maturation is well established.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of the CA-SP1 junction as a regulator of proteolysis during maturation is well established (Kr\u00e4usslich et al., 1995; Pettit et al., 1994; Wiegers et al., 1998), but the molecular basis of this function has been unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "5a0e6dac-998b-42cd-9096-c968306096d1",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C15",
+      "claim": "The CA-SP1 junction is important for assembly of the immature HIV-1 Gag shell.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutagenesis studies also indicate that the CA-SP1 junction is important for assembly of the immature HIV-1 Gag shell (Accola et al., 1998; Al-Mawsawi et al., 2014; Datta et al., 2011; Guo et al., 2005; Kr\u00e4usslich et al., 1995; Liang et al., 2002; Liang et al., 2003; Melamed et al., 2004; Pettit et al., 1994; Rihn et al., 2013; von Schwedler et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple mutagenesis studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "e3e5dcc3-9feb-4b25-8ad7-00c29bcee701",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C16",
+      "claim": "Low resolution electron microscopy studies indicate that the CA-SP1 junction forms what appears to be a pillar of density or helical bundle.",
+      "claim_type": "EXPLICIT",
+      "source": "Low resolution electron microscopy studies indicate that the junction forms what appears to be a pillar of density or helical bundle, and so is likely to stabilize the Gag lattice (Schur et al., 2015a; Schur et al., 2015b; Wright et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous electron microscopy studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "a170b8bb-305c-496d-aed5-adc4c13112b1",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C17",
+      "claim": "Neither the SP1 spacer nor the putative helical bundle is a universal feature of retroviral Gag shells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, neither the SP1 spacer nor the putative helical bundle is a universal feature of retroviral Gag shells (Bharat et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a comparative structural study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "5fb5cf46-95e8-4f23-99a9-53c3a446ce8a",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C18",
+      "claim": "Structural studies of the HIV-1 CA-SP1 junction in context of longer Gag fragments (CTD-SP1 and CTD-SP1-NC) have shown that the junction is primarily disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural studies of the HIV-1 CA-SP1 junction in context of longer Gag fragments (CTD-SP1 and CTD-SP1-NC) have shown that the junction is primarily disordered (Newman et al., 2004; Worthylake et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous NMR studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "3d95e41b-be77-477b-8266-42eb4e7a4a82",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C19",
+      "claim": "The backbone NMR chemical shifts of CA-SP1 junction residues deviate from expected random coil values, indicating a small propensity towards an \u03b1-helical conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the backbone NMR chemical shifts of junction residues deviate from expected random coil values, indicating a small propensity towards an \u03b1-helical conformation (Newman et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to an NMR study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "7174d65d-5b9f-4d1e-8337-19111d99b1d5",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C20",
+      "claim": "The isolated SP1 peptide displays concentration dependent secondary structure in aqueous solution, and folds into an \u03b1-helix at the millimolar protein concentrations found in virions.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the isolated SP1 peptide displays concentration dependent secondary structure in aqueous solution, and folds into an \u03b1-helix at the millimolar protein concentrations found in virions (Datta et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a biophysical study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "b753642c-843c-4261-ae55-8c410d879347",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C21",
+      "claim": "Nucleic acids (both RNA and DNA) can promote Gag assembly in vitro, presumably because of proximity-induced interactions between multiple copies of Gag that bind to the same nucleic acid molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleic acids (both RNA and DNA) can promote Gag assembly in vitro, presumably because of proximity-induced interactions between multiple copies of Gag that bind to the same nucleic acid molecule (Campbell and Rein, 1999; Campbell and Vogt, 1995; Gross et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous in vitro assembly studies, with a speculative explanation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "53608e29-7acc-41a6-b5d1-b7bdecea9027",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C22",
+      "claim": "The CTD-SP1 fragment of HIV-1 Gag contains the minimal information required to assemble the immature lattice, whereas the NTD is dispensable.",
+      "claim_type": "EXPLICIT",
+      "source": "The CTD-SP1 fragment of HIV-1 Gag contains the minimal information required to assemble the immature lattice, whereas the NTD is dispensable (Accola et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "6f1bd4c9-ec50-473a-84c7-63df6fa8ee48",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C23",
+      "claim": "Purified CTD-SP1 protein assembled in vitro into flat sheets with the subunits organized into a hexagonal lattice with the expected unit cell spacing of the CTD layer of the immature Gag lattice (~74 \u00c5).",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, we found that purified CTD-SP1 protein assembled in vitro into flat sheets with the subunits organized into a hexagonal lattice with the expected unit cell spacing of the CTD layer of the immature Gag lattice (~74 \u00c5) (Wright et al., 2007 ) (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data from 2D crystallography shown in Figure 1\u2014figure supplement 1, and comparison to a cited reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "a041ea71-ebf7-497e-ba15-3b274e19b11a",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C24",
+      "claim": "The crystal structure was determined to R/Rfree values of 0.246/0.278.",
+      "claim_type": "EXPLICIT",
+      "source": "Diffraction data were collected from a single crystal at beamline 22-ID at the Advanced Photon Source, and processed with HKL2000 (Otwinowski and Minor, 1997). The phase problem was solved by molecular replacement with an immature CTD hexamer model (PDB 4USN) (Schur et al., 2015b). Upon rigid body refinement, unbiased densities for the 6-helix bundle were readily observed in model-phased maps (Figure 1\u2014figure supplement 2A). Multiple rounds of iterative model building and refinement were performed with the programs PHENIX (version 1.9\u20131692) (Adams et al., 2010) and Coot (Emsley et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by crystallographic data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "dc07ebd8-c624-451f-8f5c-f60bf7701b7b",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C25",
+      "claim": "The entire CTD-SP1 hexamer gave an excellent fit to an 8.8 \u00c5 resolution cryoEM map of the immature HIV-1 Gag lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "The entire CTD-SP1 hexamer \u2013 including both the main CTD fold and ordered SP1 residues \u2013 gave an excellent fit to an 8.8 \u00c5 resolution cryoEM map of the immature HIV-1 Gag lattice (Schur et al., 2015b) (Figure 1\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fitting analysis shown in Figure 1\u2014figure supplement 3A and comparison to a cited cryoEM structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "09cddef7-a6d2-46b0-90dd-ca5ee215aba5",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C26",
+      "claim": "The CTD-SP1 plate crystals were made up of stacked sheets of flat hexagonal lattices, with each sheet consisting of CTD-SP1 hexamers connected by CTD dimer linkages.",
+      "claim_type": "EXPLICIT",
+      "source": "The CTD-SP1 plate crystals were made up of stacked sheets of flat hexagonal lattices, with each sheet consisting of CTD-SP1 hexamers connected by CTD dimer linkages (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the crystal structure data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "4d516dc4-1e85-457e-9d89-e36708647936",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C27",
+      "claim": "The crystal structure represents a flattened version of the immature HIV-1 Gag lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structure therefore represents a flattened version of the immature HIV-1 Gag lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from comparison of the crystal structure to the curved cryoEM structure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "deb86a94-709f-459f-9d34-0804909f4d98",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C28",
+      "claim": "Generation of Gag curvature does not necessarily require the kinds of conformational variations observed in the mature capsid subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "It therefore seems that generation of Gag curvature does not necessarily require the kinds of conformational variations observed in the mature capsid subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that flattening of the lattice results in minimal structural changes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "b41e8c00-4421-4cbf-88c8-79a56369834e",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C29",
+      "claim": "Each CTD-SP1 subunit contains the main CTD fold (amino acids 281\u2013351) and the CA-SP1 switch region (residues 352\u2013370).",
+      "claim_type": "EXPLICIT",
+      "source": "In our crystal structure, each subunit contains the main CTD fold (amino acids 281\u2013351 in the HIV-1 Gag numbering scheme) and the CA-SP1 switch region (residues 352\u2013370).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "3f677885-2329-40d3-9234-68d279fe4833",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C30",
+      "claim": "The CTD adopts the canonical fold: a short 310 helix, followed by a strand/turn element called the major homology region (MHR), and then four \u03b1-helices (helices 8\u201311).",
+      "claim_type": "EXPLICIT",
+      "source": "The CTD adopts the canonical fold: a short 310 helix, followed by a strand/turn element called the major homology region (MHR), and then four \u03b1-helices (helices 8\u201311) (Gamble et al., 1997; Worthylake et al., 1999) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the crystal structure data shown in Figure 2A and citations to previous structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "75e900d0-be15-47c4-919e-b7be93039ed3",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C31",
+      "claim": "The CA-SP1 switch region consists of two parts: a type II \u03b2-turn (residues 352\u2013355) and an \u03b1-helix that spans the CA-SP1 junction (residues 356\u2013370).",
+      "claim_type": "EXPLICIT",
+      "source": "The switch region immediately follows the main CTD fold, and consists of two parts: a type II \u03b2-turn (residues 352\u2013355) and an \u03b1-helix that spans the CA-SP1 junction (residues 356\u2013370).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "7c8534f2-85ba-4813-be1c-24cabef829f2",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C32",
+      "claim": "The bipartite character of the CA-SP1 switch region could explain the apparent structural variability in the C-terminal switch regions of immature retroviral capsids.",
+      "claim_type": "EXPLICIT",
+      "source": "This bipartite character was not anticipated but could explain the apparent structural variability in the C-terminal switch regions of immature retroviral capsids, which were discerned from subnanometer resolution cryoEM maps (Bharat et al., 2012; Schur et al., 2015a; 2015b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference from the structure and comparison to cited cryoEM studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "60535a5c-4444-4fb8-bca9-e83122e69906",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C33",
+      "claim": "Comparison of the immature CTD-SP1 subunit with the mature CTD subunit reveals a local conformational change (presence or absence of a kink) in the dimerization helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the immature CTD-SP1 subunit with the mature CTD subunit reveals a local conformational change (presence or absence of a kink) in the dimerization helix, as noted previously (Bartonova et al., 2008) (arrows in Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural comparison shown in Figure 2A,B and citation to a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "457f6ed9-52c1-485e-9bba-fa7a00c612b4",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C34",
+      "claim": "In the mature CTD, residues downstream of helix 11 are disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "Another difference is that, in the mature CTD, residues downstream of helix 11 are disordered (Bartonova et al., 2008; Gamble et al., 1997; Worthylake et al., 1999) (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to previous structural studies and shown in Figure 2B,C.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "58b071bb-6a1a-4076-bbd2-c94260e003f0",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C35",
+      "claim": "The C-terminal tail of CA becomes unfolded upon maturation and has no apparent role in assembly of the mature capsid.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations provide further support for the presumption that the C-terminal tail of CA becomes unfolded upon maturation and has no apparent role in assembly of the mature capsid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the structural comparison showing disorder in the mature form.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "8d79ee35-39f5-4dcf-9402-925aa9fe2c90",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C36",
+      "claim": "The CTD-SP1 hexamer looks like a goblet, with the main CTD fold forming the cup and the CA-SP1 junction forming the stem.",
+      "claim_type": "EXPLICIT",
+      "source": "The CTD-SP1 hexamer looks like a goblet, with the main CTD fold forming the cup and the CA-SP1 junction forming the stem (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the crystal structure shown in Figure 1B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "0abf36a2-9df1-4a1d-8d30-8a9c9f172dc0",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C37",
+      "claim": "Lateral packing between the CTD-SP1 subunits is quite loose along the body of the cup, and close contacts involving the main CTD fold occur only where the cup meets the stem.",
+      "claim_type": "EXPLICIT",
+      "source": "Lateral packing between the subunits is quite loose along the body of the cup, and close contacts involving the main CTD fold occur only where the cup meets the stem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by analysis of the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "880319ed-8663-413c-aa68-8e210cdcb828",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C38",
+      "claim": "The junction helices form a 6-helix bundle as predicted.",
+      "claim_type": "EXPLICIT",
+      "source": "Underneath the cup, the junction helices form a 6-helix bundle as predicted (Accola et al., 1998; Wright et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the crystal structure data and citations to previous predictions.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "2203471c-afe5-4490-b6c7-642fe8d0d1df",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C39",
+      "claim": "All of the aliphatic sidechains in the junction helix make 'knobs-in-holes' interactions similar to classical coiled-coils.",
+      "claim_type": "EXPLICIT",
+      "source": "All of the aliphatic sidechains in the junction helix make 'knobs-in-holes' interactions similar to classical coiled-coils (Figure 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the crystal structure shown in Figure 3A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "45d74ee7-b1b3-4df0-be09-11dc69cc9345",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C40",
+      "claim": "During HIV-1 maturation, the CA-SP1 junction is one of ten cleavage sites in the precursor Gag and Gag-Pol polyproteins that are cleaved by the viral protease.",
+      "claim_type": "EXPLICIT",
+      "source": "During HIV-1 maturation, the CA-SP1 junction is one of ten cleavage sites in the precursor Gag and Gag-Pol polyproteins that are cleaved by the viral protease (PR).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about HIV-1 maturation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "61746392-9b96-4e9e-b1af-605edb198a0e",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C41",
+      "claim": "Proteolytic processing occurs at different rates, with the CTD-SP1 junction processed with the slowest rate, and the downstream SP1-NC junction the fastest.",
+      "claim_type": "EXPLICIT",
+      "source": "Proteolytic processing occurs at different rates, with the CTD-SP1 junction processed with the slowest rate, and the downstream SP1-NC junction the fastest (reviewed in Lee et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a review article.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "b2d3300c-6624-4687-81c2-0addee99b903",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C42",
+      "claim": "The C-terminal boundary of the junction helix tracks precisely with sequence conservation; downstream residues that are disordered in the crystal structure are not conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal boundary of the junction helix tracks precisely with sequence conservation; downstream residues that are disordered in our crystal structure are not conserved (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequence analysis shown in Figure 2C and the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "02f654bb-5022-4b8f-9bd4-9d3b19a128f9",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C43",
+      "claim": "The downstream SP1-NC junction has the fastest rate of processing because it is disordered in the immature virion.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the notion that the downstream SP1-NC junction has the fastest rate of processing because it is disordered in the immature virion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the correlation between disorder and processing rate.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "796f12ef-b057-463b-af20-1559929e2721",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C44",
+      "claim": "In the CTD-SP1 structure, the scissile bond (between Leu363 and Ala364) is located inside the helical barrel, where it is sequestered within a pocket covered by a methionine sidechain (Met367).",
+      "claim_type": "EXPLICIT",
+      "source": "In our structure, the scissile bond (between Leu363 and Ala364) is located inside the helical barrel (yellow spheres in Figure 3A), where it is sequestered within a pocket covered by a methionine sidechain (Met367) (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the crystal structure shown in Figure 3A and 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "37b2d6ae-8008-4af9-b105-4e3109a4856e",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C45",
+      "claim": "When the CA-SP1 junction binds to PR, it adopts a fully extended, \u03b2-strand configuration wherein sidechains on either side of the scissile bond occupy sub-pockets within the enzyme active site.",
+      "claim_type": "EXPLICIT",
+      "source": "When the CA-SP1 junction binds to PR, it adopts a fully extended, \u03b2-strand configuration wherein sidechains on either side of the scissile bond occupy sub-pockets within the enzyme active site (Prabu-Jeyabalan et al., 2000) (Figure 3E, right).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citation to a previous structure and shown in Figure 3E.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "d03503c5-9c56-4a0e-8830-0b7c8cdebb6c",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C46",
+      "claim": "In the CTD-SP1 hexamer, the sidechains that occupy PR sub-pockets mediate the 'knobs-in-holes' interactions of the 6-helix bundle.",
+      "claim_type": "EXPLICIT",
+      "source": "In the CTD-SP1 hexamer, these same sidechains mediate the 'knobs-in-holes' interactions of the 6-helix bundle (Figure 3E, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the crystal structure shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "d3de1d42-3a0d-4f0f-8461-443c96e53797",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C47",
+      "claim": "For PR to gain access to its substrate, the 6-helix bundle must unfold.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, for PR to gain access to its substrate, the 6-helix bundle must unfold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the structural observation that the scissile bond is sequestered in the bundle.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "7c0b442e-ec96-41ed-832d-da287b295861",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C48",
+      "claim": "The rate limiting step for proteolysis at the CA-SP1 site is unfolding of the 6-helix bundle.",
+      "claim_type": "EXPLICIT",
+      "source": "Since proteolysis rates for the different cleavage sites are comparable when measured with peptide substrates (Lee et al., 2012), the rate limiting step for the CA-SP1 site is unfolding of the 6-helix bundle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the structural data and cited kinetic data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "daf3f8f4-699d-4603-9375-9289d82ef1c2",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C49",
+      "claim": "The CA-SP1 junction displays the slowest rate of proteolysis and is the final trigger that elicits HIV-1 maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "This explains why the CA-SP1 junction displays the slowest rate of proteolysis and is the final trigger that elicits HIV-1 maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the structural and kinetic data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "6cd566da-f769-4c94-9dc3-b0ea0586952a",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C50",
+      "claim": "The \u03b2-turn motif (352GVGGP356) makes a right-handed type II \u03b2-turn that buries the Val353 sidechain within a shallow sub-pocket at the bottom of the CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "This motif makes a right-handed type II \u03b2-turn that buries the Val353 sidechain within a shallow sub-pocket at the bottom of the CTD, which is made of the MHR and 9/10 loops.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the crystal structure shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "3f2f3de2-6cfa-4b26-a818-4296b23e6cce",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C51",
+      "claim": "In context of the hexamer, the entire \u03b2-turn is almost completely buried within a larger pocket made up of two MHR loops, two 9/10 loops, and the junction helices from three adjacent subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "In context of the hexamer, the entire \u03b2-turn is almost completely buried within a larger pocket made up of two MHR loops, two 9/10 loops, and the junction helices from three adjacent subunits (Figure 4B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by the crystal structure shown in Figure 4B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "69c3f71c-969b-4499-a1af-4a395bcbbde9",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C52",
+      "claim": "The \u03b2-turn brings together multiple structural elements to generate the Gag hexamer.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the \u03b2-turn brings together multiple structural elements to generate the Gag hexamer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the structural observation of the \u03b2-turn's interactions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "7fca2888-3a2a-4583-aa3b-788f1d5c0d15",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C53",
+      "claim": "The \u03b2-turn is a critical Gag assembly determinant.",
+      "claim_type": "EXPLICIT",
+      "source": "This key structural role indicates that the \u03b2-turn is a critical Gag assembly determinant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the structural role of the \u03b2-turn.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "3ffcd91b-4c2a-4927-968a-85f0995d18d5",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C54",
+      "claim": "Virtually all of the 19 single-point mutations in the structured region of the CA-SP1 switch (residues 352\u2013370) resulted in aberrantly assembled particles and/or protein aggregates.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, virtually all of the 19 single-point mutations in the structured region of the CA-SP1 switch (residues 352\u2013370) resulted in aberrantly assembled particles and/or protein aggregates (Figure 5A, Table 2, and Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mutagenesis data shown in Figure 5, Table 2, and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "991f4205-df24-4321-ab0a-15fbf6ff8862",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C55",
+      "claim": "Many of the CA-SP1 switch mutants appeared to behave in an 'all-or-none' manner, indicating that both the \u03b2-turn and junction helix must be functional for assembly to occur in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Apart from residues close to the C-terminal end of the junction helix, many of the switch mutants appeared to behave in an 'all-or-none' manner (i.e., they either assembled immature VLPs or aberrantly), indicating that both the \u03b2-turn and junction helix must be functional for assembly to occur in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "1dc390e7-7c6a-499a-ac8e-e364e95e7b43",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C56",
+      "claim": "The 'all-or-none' behavior of CA-SP1 switch mutants must be due to a defect in nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a behavior was unexpected because in high-order assembly systems, local defects in protein-protein interactions are typically buffered by cooperativity. Therefore, the 'all-or-none' behavior must be due to a defect in nucleation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the mutagenesis data and knowledge of assembly systems.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "c0e25902-3db5-4290-bb87-d57d5fe61683",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C57",
+      "claim": "In the presence of tartrate, most of the CA-SP1 switch mutants failed to form immature VLPs, but instead assembled efficiently into thin-walled mature-like particles.",
+      "claim_type": "EXPLICIT",
+      "source": "In this format, most of the CA-SP1 switch mutants again failed to form immature VLPs, but now instead assembled efficiently into thin-walled mature-like particles (Figure 5E\u2013H, Table 2, and Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mutagenesis data shown in Figure 5E\u2013H, Table 2, and Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "3fe97d6b-e06c-47a8-985b-c1f082a7390c",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C58",
+      "claim": "Nucleation of the immature particles requires folding of both the \u03b2-turn and junction helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Since junction residues downstream of the main CTD fold are not required for assembly of the mature lattice and are almost certainly unfolded in the thin-walled particles, these results further indicate that nucleation of the immature particles requires folding of both the \u03b2-turn and junction helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the mutagenesis data comparing immature and mature assembly.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "e4c9998c-72a4-45e6-a935-2a746f874e27",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C59",
+      "claim": "The identity of the particle (immature-like or mature-like) is established at nucleation.",
+      "claim_type": "EXPLICIT",
+      "source": "We believe that this is an important observation, because it indicates that the identity of the particle is established at nucleation (Gross et al., 2000), and is more supportive of a disassembly/reassembly pathway of HIV-1 capsid maturation than a displacive or condensation mechanism (Keller et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that particles are either immature or mature, not mixed, and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "1e17041a-6666-4e03-92b0-6d646da4e8cd",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C60",
+      "claim": "Although the HIV-1 Gag protein does not require nucleic acid to assemble into immature particles in vitro, folding of the CA-SP1 switch can be promoted by nucleic acid, likely due to clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that, although the HIV-1 Gag protein does not require nucleic acid to assemble into immature particles in vitro, folding of the CA-SP1 switch can be promoted by nucleic acid, likely due to clustering.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the differential behavior of mutants in DNA vs. tartrate assembly conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "283d14ba-230a-4fa0-a1cd-c3b2ce3181a9",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C61",
+      "claim": "Mutations at the MHR loop (P289A, K290A) and the 9/10 loop (P328A, D329A) that surround the Val353 pocket behaved similarly to the \u03b2-turn and junction helix mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we tested mutations at the MHR loop (P289A, K290A) and the 9/10 loop (P328A, D329A) that surround the Val353 pocket at the bottom of the CTD. These mutants behaved in a similar way as the \u03b2-turn and junction helix mutations (Figure 5\u2014figure supplement 1, Figure 5\u2014figure supplement 2, and Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mutagenesis data shown in Figure 5\u2014figure supplement 1, Figure 5\u2014figure supplement 2, and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "4ada7c07-dea5-4380-8385-b71b241f09a9",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C62",
+      "claim": "Binding of Val353 to the bottom of the CTD, and proper folding of the \u03b2-turn, is a critical step in nucleation of the immature VLPs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm that binding of Val353 to the bottom of the CTD \u2013 and by inference, proper folding of the \u03b2-turn \u2013 is a critical step in nucleation of the immature VLPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the mutagenesis data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "a15a3539-3917-4c09-be83-75d565ff820e",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C63",
+      "claim": "The valine pocket at the bottom of the CTD functions as a folding chamber or 'chaperone' for the \u03b2-turn.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that the valine pocket at the bottom of the CTD functions as a folding chamber or 'chaperone' for the \u03b2-turn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on the structural and mutagenesis data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "1a4f7516-5ffa-41fa-a0d1-819e0ec5f9c4",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C64",
+      "claim": "The crystal structure of CTD-SP1 confirms prediction that the CA-SP1 junction forms a 6-helix bundle to sequester the PR cleavage site.",
+      "claim_type": "EXPLICIT",
+      "source": "Our crystal structure of CTD-SP1 represents the highest resolution structure of the immature HIV-1 Gag lattice to date, and confirms prediction that the CA-SP1 junction forms a 6-helix bundle to sequester the PR cleavage site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the crystal structure data and comparison to previous predictions.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "83a7ec2d-e465-4856-8d35-bca154543f5f",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C65",
+      "claim": "The CA-SP1 junction elicits the slowest rate of proteolysis during maturation because the 6-helix bundle must unfold to bind PR.",
+      "claim_type": "EXPLICIT",
+      "source": "The CA-SP1 junction elicits the slowest rate of proteolysis during maturation because the 6-helix bundle must unfold to bind PR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the structural data showing sequestration of the scissile bond.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "1981cd96-19c9-4217-b079-282980779fdb",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C66",
+      "claim": "PR gains substrate access by transient, cooperative unfolding and refolding of the 6-helix bundle.",
+      "claim_type": "EXPLICIT",
+      "source": "Another attractive possibility is that PR gains substrate access by transient, cooperative unfolding and refolding of the 6-helix bundle (Bush and Vogt, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference and citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "8b4e8113-c2d7-441f-ab4f-b7ed0393b2fd",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C67",
+      "claim": "The proposed mechanism for PR access is analogous to the predicted transient unfolding of the collagen triple helix that permits cleavage by matrix metalloproteases.",
+      "claim_type": "EXPLICIT",
+      "source": "Our proposed mechanism is analogous to the predicted transient unfolding of the collagen triple helix that permits cleavage by matrix metalloproteases (Lu and Stultz, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim draws an analogy to a cited mechanism in another system.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "e1755d54-875c-404a-af15-01b1a52496b9",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C68",
+      "claim": "Maturation inhibitors like bevirimat deny PR access by stabilizing the 6-helix bundle and inhibiting its unfolding.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis also supports a model wherein maturation inhibitors like bevirimat deny PR access, not by sequestering the scissile bond (the 6-helix bundle already does this), but rather by stabilizing the 6-helix bundle and inhibiting its unfolding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the structural data and knowledge of maturation inhibitor function.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "cb93e24c-5546-4042-a2b4-0bf652a91441",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C69",
+      "claim": "Resistance to maturation inhibitors can develop by means of mutations that destabilize the junction helix.",
+      "claim_type": "EXPLICIT",
+      "source": "This model predicts that resistance can develop by means of mutations that destabilize the junction. Such mutations would enhance proteolysis in the absence of the maturation inhibitor, and indeed this seems to be a general property of well-characterized escape mutations (Adamson et al., 2006; Li et al., 2006; Sakalian et al., 2006; Zhou et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the structural model and supported by citations to resistance studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "713ff52d-ea73-40ac-8f01-9bd5d319048d",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C70",
+      "claim": "Some escape mutations that have been selected for in tissue culture appear to destabilize the Gag hexamer altogether, and the mutant viruses become dependent on the inhibitor to assemble.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, some escape mutations that have been selected for in tissue culture appear to destabilize the Gag hexamer altogether, and the mutant viruses become dependent on the inhibitor to assemble (Waki et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "b60d8aca-0e01-4f7b-a88b-07086edb251b",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C71",
+      "claim": "The T371I mutation stabilizes the 6-helix bundle and inhibits proteolysis even in the absence of inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, mutations that stabilize the 6-helix bundle would be expected to inhibit proteolysis even in the absence of inhibitor. One such mutation is T371I (Fontana et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the structural model and supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "980db072-0be5-47e3-b647-a6615d613ab5",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C72",
+      "claim": "The isoleucine substitution at position 371 stabilizes and extends the junction helix.",
+      "claim_type": "EXPLICIT",
+      "source": "This residue immediately follows the junction helix, and we speculate that the isoleucine substitution stabilizes and extends the helix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on structural reasoning.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "59e7e668-8ed2-43c1-bf9e-281f6159068e",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C73",
+      "claim": "Bevirimat has been crosslinked to both the junction helix and the MHR.",
+      "claim_type": "EXPLICIT",
+      "source": "We have not yet been able to determine whether bevirimat binds outside or inside the bundle, but the compound has been crosslinked to both the junction helix and the MHR (Nguyen et al., 2011), which seems consistent with the second possibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a crosslinking study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "34eddd3a-fd56-4e99-bf75-b77c8dca4640",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C74",
+      "claim": "The \u03b2-turn is almost completely buried within an assembly-induced pocket surrounded by three adjacent subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b2-turn is almost completely buried within an assembly-induced pocket surrounded by three adjacent subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "30082f1b-f73a-4d44-95ad-3435afb163ba",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C75",
+      "claim": "The \u03b2-turn interacts with 7 other hexamer-stabilizing structural elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Both its location and the fact that it interacts with 7 other hexamer-stabilizing structural elements indicate that the \u03b2-turn is a critical Gag assembly determinant, and may act as a 'clasp' that locks the interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by analysis of the crystal structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "84d48aab-4a81-4fa0-bd02-efdccff052c5",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C76",
+      "claim": "The \u03b2-turn may act as a 'clasp' that locks the hexamer interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Both its location and the fact that it interacts with 7 other hexamer-stabilizing structural elements indicate that the \u03b2-turn is a critical Gag assembly determinant, and may act as a 'clasp' that locks the interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference from the structural data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "87dea876-d102-43c1-9236-c58c736db43a",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C77",
+      "claim": "Assembly defects in the CA-SP1 switch region were graded, with the most severe mutations mapping to the \u03b2-turn and severity falling off towards the C-terminus of the junction helix.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our in vitro assembly experiments indicated that virtually the entire CA-SP1 switch region is intolerant of mutations, we did observe that assembly defects were graded \u2013 the most severe mutations mapped to the \u03b2-turn and severity fell off towards the C-terminus of the junction helix (i.e., the SP1 spacer).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the mutagenesis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "c06a6209-608a-4a9e-9855-6d46bb2769f0",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C78",
+      "claim": "A similar trend in assembly defect severity has been observed in previous studies, and the gradation is significantly more pronounced in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar trend has been observed in previous studies, and indeed, the gradation in assembly defect is significantly more pronounced in cells (Accola et al., 1998; Al-Mawsawi et al., 2014; Datta et al., 2011; Guo et al., 2005; Kr\u00e4usslich et al., 1995; Liang et al., 2002; Liang et al., 2003; Melamed et al., 2004; Rihn et al., 2013; von Schwedler et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous mutagenesis studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "7c06690e-995a-45b8-b88b-e35a6f0d1ebb",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C79",
+      "claim": "HIV-1 Gag that completely lacks the SP1 spacer can still assemble into large, membrane-associated patches.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, HIV-1 Gag that completely lacks the SP1 spacer can still assemble into large, membrane-associated patches (Kr\u00e4usslich et al., 1995), whereas \u03b2-turn mutants do not form plasma membrane-associated patches and remain diffusely distributed throughout the cytosol (Liang et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "da46172b-412a-4f2d-8b68-023b689e0fcf",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C80",
+      "claim": "\u03b2-turn mutants do not form plasma membrane-associated patches and remain diffusely distributed throughout the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, HIV-1 Gag that completely lacks the SP1 spacer can still assemble into large, membrane-associated patches (Kr\u00e4usslich et al., 1995), whereas \u03b2-turn mutants do not form plasma membrane-associated patches and remain diffusely distributed throughout the cytosol (Liang et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "0a5f760d-dbe0-4d18-b219-5fd3b3828e61",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C81",
+      "claim": "SP1 is not strictly required for the fundamental higher-order self-association property of HIV-1 Gag.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations indicate that SP1 is not strictly required for the fundamental higher-order self-association property of HIV-1 Gag.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that Gag lacking SP1 can still form membrane patches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "7e074252-0269-4659-95b7-22e4ecb5adae",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C82",
+      "claim": "The \u03b2-turn is required very early in assembly, perhaps during nucleation of the viral particle.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the \u03b2-turn is required very early in assembly, perhaps during nucleation of the viral particle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that \u03b2-turn mutants fail to form membrane patches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "2683f2b0-0680-424b-b616-094fb4d46e5b",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C83",
+      "claim": "In context of full-length HIV-1 Gag, the entire CA-SP1 switch region was suggested to be unstructured but with weak helical propensity.",
+      "claim_type": "EXPLICIT",
+      "source": "In context of full-length HIV-1 Gag, the entire CA-SP1 switch region was suggested to be unstructured but with weak helical propensity (Newman et al., 2004; Worthylake et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous NMR studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "77213767-2248-45bf-a164-4353bbe0ea54",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C84",
+      "claim": "A fully folded \u03b2-turn (but not junction helix) was observed in the crystal structure of the immature-like dimer form of the CTD.",
+      "claim_type": "EXPLICIT",
+      "source": "A fully folded \u03b2-turn (but not junction helix) was also observed in the crystal structure of the immature-like dimer form of the CTD (Bartonova et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous crystal structure.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "4c099823-76ef-4ded-a6d6-cbed9ffc2b00",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C85",
+      "claim": "In the unassembled, soluble Gag protein, the \u03b2-turn fluctuates between folded and unfolded states, and the entire CA-SP1 junction folds only upon assembly of the immature lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore speculate that in the unassembled, soluble Gag protein, the \u03b2-turn fluctuates between folded and unfolded states, and that the entire CA-SP1 junction folds only upon assembly of the immature lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference from the structural and mutagenesis data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "6dbc2512-a4e4-4caa-b2ca-7ee068b94e7f",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C86",
+      "claim": "Folding of the CA-SP1 switch, and in particular the \u03b2-turn, is a critical step in nucleation of the immature Gag lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Since we found that an intact \u03b2-turn sequence cannot rescue a defective junction helix and vice versa (at least in vitro), we propose that folding of the CA-SP1 switch, and in particular the \u03b2-turn, is a critical step in nucleation of the immature Gag lattice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the mutagenesis data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "b1326697-0cf7-420a-bfc4-aaf482049958",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C87",
+      "claim": "Assembly of retroviral particles is thought to initiate when the viral RNA genome dimerizes and exposes high-affinity binding sites for the Gag C-terminal NC domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Assembly of retroviral particles is thought to initiate when the viral RNA genome dimerizes and exposes high-affinity binding sites for the Gag C-terminal NC domain (D'Souza and Summers, 2004; Keane et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "b2a9395a-52a6-4893-a7ca-d437f15d5be7",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C88",
+      "claim": "The resulting ribonucleoprotein complex, containing several Gag molecules, is reasonably assumed to nucleate assembly of the immature viral particle.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting ribonucleoprotein complex, containing several Gag molecules, is reasonably assumed to nucleate assembly of the immature viral particle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reasonable assumption based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "646ed6c5-aa66-4a36-9e28-552861e21dfc",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C89",
+      "claim": "RNA-mediated Gag clustering has been proposed to nucleate assembly by promoting the CTD dimerization interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-mediated Gag clustering has been proposed to nucleate assembly by promoting the CTD dimerization interaction (Amarasinghe et al., 2000; Bush and Vogt, 2014; Ma and Vogt, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "9ee28407-7741-4a33-8432-abd403a46c71",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C90",
+      "claim": "RNA-mediated clustering directly promotes folding of the CA-SP1 junction and the 6-helix bundle and, thereby, formation of Gag hexamers.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the isolated SP1 peptide folds into a helix in a concentration dependent manner (Datta et al., 2011), we suggest instead that RNA-mediated clustering directly promotes folding of the CA-SP1 junction and the 6-helix bundle and, thereby, formation of Gag hexamers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference from cited data and the current structural findings.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "3c31ada6-b26e-42f3-bdfb-24cccfb1f580",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C91",
+      "claim": "A hexamer is more intuitively appealing as the nucleator of the spherical Gag shell than a dimer, since it is the smallest unit comprising the set of protein-protein interactions that are exclusive to the immature lattice.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to a dimer, a hexamer is more intuitively appealing as the nucleator of the spherical Gag shell, since it is the smallest unit comprising the set of protein-protein interactions that are exclusive to the immature lattice and not found in the mature capsid or other functional states of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning based on structural analysis.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "ae2f5071-47e3-4249-b9d2-7cecd357b31c",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C92",
+      "claim": "Folding of the junction will have the additional role of reeling in the NC domain and its bound genome, increasing the probability that the accumulating Gag molecules will bind to the same RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We further speculate that folding of the junction will have the additional role of reeling in the NC domain and its bound genome, increasing the probability that the accumulating Gag molecules will bind to the same RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference from the structural model.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "1a08e1b0-2061-4f53-9f8e-9e915e0e13e3",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C93",
+      "claim": "The RNA exerts some corresponding pulling force on the assembling Gag lattice, helping to promote its encapsidation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that the RNA, in turn, exerts some corresponding pulling force on the assembling Gag lattice, helping to promote its encapsidation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "95e432fa-3247-42c6-a76f-11694f1e617e",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C94",
+      "claim": "The CA-SP1 junction allosterically communicates the status of downstream NC/RNA events to the upstream assembly domains of Gag.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis therefore supports the proposal that the CA-SP1 junction allosterically communicates the status of downstream NC/RNA events to the upstream assembly domains of Gag (Bush and Vogt, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the structural and functional data, and supported by citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "d43d44fd-ef09-4f47-bef8-93288a7ae507",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C95",
+      "claim": "Retroviruses that do not contain a spacer between their CA and NC domains might have eschewed sophisticated protease regulation but have retained the more fundamental assembly determinant at the C-terminal end of CA.",
+      "claim_type": "EXPLICIT",
+      "source": "Retroviruses that do not contain a spacer between their CA and NC domains might have eschewed sophisticated protease regulation but have retained the more fundamental assembly determinant at the C-terminal end of CA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference from the structural findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "16d2b66a-41b1-4d57-8e86-d8c7c042c558",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C96",
+      "claim": "MPMV does not have a spacer element, but does appear to have a 'clasp' motif that is similar to that of HIV-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence comparison confirms that MPMV does not have a spacer element, but does appear to have a 'clasp' motif that is similar to that of HIV-1 (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequence analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "e124652a-b51e-4c97-adb8-2bff9a89c5fd",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C97",
+      "claim": "MPMV's immature capsid structure does not contain a 6-helix bundle.",
+      "claim_type": "EXPLICIT",
+      "source": "An example is Mason-Pfizer monkey virus (MPMV), whose immature capsid structure does not contain a 6-helix bundle (Bharat et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous structural study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "b9285cac-9f5c-4f67-bed3-7e523bc4e9ba",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C98",
+      "claim": "RSV has a well-characterized spacer but does not have a recognizable turn motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Rous sarcoma virus (RSV) appears to be a contrasting example \u2013 it has a well-characterized spacer (Bush et al., 2014; Keller et al., 2008; Schur et al., 2015a), but does not have a recognizable turn motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "ceab97f9-893f-4a7c-9229-22a9b799ba93",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C99",
+      "claim": "The RSV junction helix is longer and more stable than that of HIV-1.",
+      "claim_type": "EXPLICIT",
+      "source": "The RSV junction helix is longer and more stable than that of HIV-1 (Bush et al., 2014; Keller et al., 2008), and we surmise that the RSV spacer confers both the assembly and regulatory functions that are mediated by two distinct parts in HIV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "a95cfb12-d1dc-42cf-b927-e8bc19215efb",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C100",
+      "claim": "The RSV spacer confers both the assembly and regulatory functions that are mediated by two distinct parts in HIV.",
+      "claim_type": "EXPLICIT",
+      "source": "The RSV junction helix is longer and more stable than that of HIV-1 (Bush et al., 2014; Keller et al., 2008), and we surmise that the RSV spacer confers both the assembly and regulatory functions that are mediated by two distinct parts in HIV.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on inference from comparative analysis.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "700438e0-8932-4a48-b77e-f7a1556819d0",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C101",
+      "claim": "Schur et al. report a cryoEM structure of the immature HIV-1 Gag lattice at near-atomic resolution in a concurrent publication.",
+      "claim_type": "EXPLICIT",
+      "source": "In a concurrent publication, Schur et al. report a cryoEM structure of the immature HIV-1 Gag lattice at near-atomic resolution (Schur et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a concurrent publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "3e0f9526-20b9-4897-b36b-20813d133348",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C102",
+      "claim": "Schur et al. also conclude that the CA-SP1 boundary folds into a 6-helix bundle that is important for assembly of Gag and its proteolytic maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "They also conclude that the CA-SP1 boundary folds into a 6-helix bundle that is important for assembly of Gag and its proteolytic maturation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a concurrent publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "fe256b09-cd70-49ec-a1d2-0a5a0fc7b4d4",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C103",
+      "claim": "The CTD-SP1 construct used in these studies contained the P373T substitution, which is a natural sequence variant.",
+      "claim_type": "EXPLICIT",
+      "source": "The construct also contained the P373T substitution, which is a natural sequence variant (Kuiken et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a sequence database.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "3d6be367-ecee-4e1e-836c-1ac5c4878ccd",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C104",
+      "claim": "The diffraction data were weak (mean I/\u03c3<I> = 6 and completeness = 87%) due to the small size of the crystal (~20 microns in the longest dimension).",
+      "claim_type": "EXPLICIT",
+      "source": "Due to the small size of the crystal (~20 microns in the longest dimension), the diffraction data were weak (mean I/\u03c3<I> = 6 and completeness = 87%; Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the crystallographic data in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "f80ab46f-eab2-419b-9a6e-9600d61265fe",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C105",
+      "claim": "Very high quality maps for model building were obtained due to the fortuitous existence of 6-fold non-crystallographic symmetry (NCS), and through the use of modern density modification techniques implemented in PHENIX.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, we obtained very high quality maps for model building due to the fortuitous existence of 6-fold non-crystallographic symmetry (NCS), and through the use of modern density modification techniques implemented in PHENIX.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the crystallographic methods and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "d7386de5-4ada-4a72-8155-990fd666371f",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "claim_id": "C106",
+      "claim": "The immature \u25b3MA-CA-SP1-NC VLPs are nearly identical to the immature Gag shell of authentic virions.",
+      "claim_type": "EXPLICIT",
+      "source": "The immature \u25b3MA-CA-SP1-NC VLPs are nearly identical to the immature Gag shell of authentic virions (Briggs et al., 2009; Gross et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5373ecd0-ec3b-42df-b77b-0de42eba49a7",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The crystal structure of the HIV-1 CTD-SP1 fragment reveals a goblet-shaped hexamer with the CTD forming the cup and a 6-helix bundle forming the stem, connected by a type II \u03b2-turn. The structure was determined at 3.27 \u00c5 resolution (R/Rfree = 0.246/0.278) and represents a flattened version of the immature Gag lattice that fits well to cryoEM data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C23-C27, C29-C31, C36-C39 are directly supported by crystallographic data (Table 1, Figures 1-3) showing the hexameric structure with \u03b2-turn and 6-helix bundle. The structure determination is well-documented (C24, C104, C105) with appropriate validation. The fit to cryoEM data (C25) provides independent validation. Despite weak diffraction data due to small crystal size (C104), high-quality maps were obtained through NCS averaging and modern density modification (C105).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "c8e5198f-91f5-4dff-82d1-31fae458caec",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The \u03b2-turn (residues 352-355, GVGGP motif) is critical for immature virus assembly, acting as a structural clasp that organizes multiple hexamer-stabilizing elements. Mutagenesis shows that virtually all mutations in the \u03b2-turn and CA-SP1 switch region disrupt assembly in an 'all-or-none' manner, indicating the \u03b2-turn is required for nucleation of immature particles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural data (C50-C52, C74-C75) clearly shows the \u03b2-turn buried in a pocket formed by multiple structural elements from adjacent subunits. The comprehensive mutagenesis data (C54, C61, Table 2, Figure 5) demonstrates that \u03b2-turn mutations severely disrupt assembly, with the most severe defects mapping to this region (C77). The 'all-or-none' behavior (C55-C56) and differential assembly in DNA vs. tartrate conditions (C57-C58) support the inference that the \u03b2-turn is critical for nucleation (C62, C82, C86). The 'clasp' function (C76) is speculative but well-supported by structural analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "5c6e431a-395f-4df4-b625-5857bebfa7c2",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The 6-helix bundle regulates proteolysis during maturation by sequestering the scissile bond (Leu363-Ala364) inside the helical barrel. The same sidechains that mediate bundle packing occupy protease sub-pockets when bound to PR, indicating the bundle must unfold for proteolysis. This explains why the CA-SP1 junction has the slowest processing rate during maturation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The crystal structure clearly shows the scissile bond sequestered within the 6-helix bundle (C44, Figure 3D), with sidechains mediating coiled-coil interactions (C39, C46). Comparison with the PR-bound structure (C45) demonstrates that the same residues must adopt an extended \u03b2-strand configuration for cleavage. The inference that unfolding is required for PR access (C47) is well-supported. The correlation with slow processing rates (C41, C48-C49) is supported by cited kinetic data, though the rate-limiting step inference (C48) could benefit from direct experimental validation. The structural conservation boundary (C42-C43) provides additional support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "d42e4976-db4a-4219-bc6d-c1e04329d7b0",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "HIV-1 maturation inhibitors like bevirimat suppress unfolding of the CA-SP1 junction, thereby delaying protease access to the scissile bond. Resistance mutations destabilize the junction to enhance proteolysis, while stabilizing mutations (e.g., T371I) inhibit proteolysis even without inhibitor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The mechanism proposed for maturation inhibitor action (C4, C68) is a reasonable inference from the structural data showing scissile bond sequestration, but lacks direct experimental validation in this study. The resistance mutation analysis (C69-C71) relies on cited literature rather than new data. The T371I stabilization mechanism (C72) is speculative. The crosslinking data for bevirimat (C73) is cited but does not definitively establish binding location. While the model is plausible and consistent with existing data, it requires experimental validation through binding studies, unfolding kinetics, or resistance profiling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "f59e227b-d734-4d7b-b303-98ed980a7539",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "CA-SP1 switch mutants that fail to form immature VLPs in tartrate conditions instead assemble into mature-like particles, with particle identity established at nucleation. Nucleic acid (DNA) can partially rescue assembly defects by promoting folding of the CA-SP1 junction through clustering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The mutagenesis data (C57, Table 2, Figure 5E-H) clearly shows that most CA-SP1 mutants form mature-like particles in tartrate but can form immature VLPs with DNA. The observation that individual particles are either immature or mature, not mixed (C59), supports the nucleation model. The inference that DNA promotes junction folding through clustering (C60) is reasonable given the concentration-dependent helical propensity of SP1 (C20) and the differential mutant behavior in DNA vs. tartrate conditions. However, direct evidence for DNA-induced folding would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "76ffb779-b47a-49bb-a0fd-c0ec5c855a66",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Comparison of immature CTD-SP1 and mature CTD structures reveals conformational changes including a kink in the dimerization helix and disorder of C-terminal residues in the mature form, indicating the C-terminal tail unfolds upon maturation and has no role in mature capsid assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The structural comparison (C33, Figure 2A-B) clearly shows the presence/absence of a helix kink, consistent with previous observations (cited). The disorder of downstream residues in mature CTD (C34) is well-documented in cited structures. The inference that the C-terminal tail unfolds and is not involved in mature assembly (C35) is reasonable based on the structural data, though it could be strengthened by functional studies of C-terminal deletions in mature capsid assembly.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "a876f1ec-591c-45b6-a81b-d7c82b3b482f",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The CTD-SP1 fragment contains minimal information required to assemble the immature lattice, and the \u0394MA-CA-SP1-NC VLPs used for mutagenesis are nearly identical to authentic immature virions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22 and C106 are supported by citations to previous validation studies. The 2D crystallography data (C23, Figure 1\u2014figure supplement 1) confirms that purified CTD-SP1 assembles into hexagonal lattices with the expected unit cell spacing, providing experimental validation in this study. These are well-established findings that provide appropriate context for the structural and mutagenesis studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "2821f29a-c4e7-4425-8062-21289d0ed1e4",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Generation of Gag curvature does not necessarily require the conformational variations observed in mature capsid subunits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The inference (C28) is supported by the observation that flattening the lattice in crystals results in minimal structural changes (average RMSD ~1.9 \u00c5). The comparison between flat crystal lattice and curved cryoEM structure shows the changes are dispersed across subunits rather than localized. This is a reasonable conclusion, though it's worth noting that the immature lattice may have different curvature requirements than the mature capsid.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "2222f069-1410-4d91-ae22-6441b5c003c7",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Assembly defects show a gradient with most severe mutations in the \u03b2-turn and decreasing severity toward the C-terminus. SP1 is not strictly required for Gag self-association (deletion mutants form membrane patches), but the \u03b2-turn is required very early in assembly, likely during nucleation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The graded severity of assembly defects (C77) is evident in the mutagenesis data (Table 2). The comparison with previous cellular studies (C78-C80) is well-supported by citations showing that SP1 deletion mutants form membrane patches while \u03b2-turn mutants remain cytosolic. The inference that SP1 is not strictly required for self-association but the \u03b2-turn is required for nucleation (C81-C82) is logical based on these observations, though direct nucleation assays would provide stronger evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "393adc11-c35c-4bba-acd0-0d6fab696973",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In unassembled Gag, the \u03b2-turn fluctuates between folded and unfolded states, with the entire CA-SP1 junction folding only upon assembly. Folding of the CA-SP1 switch, particularly the \u03b2-turn, is a critical step in nucleation of the immature lattice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The speculation about \u03b2-turn dynamics in unassembled Gag (C85) is based on previous NMR data (C83-C84) showing disorder with weak helical propensity, but lacks direct experimental evidence in this study. The proposal that folding occurs upon assembly (C86) is inferred from mutagenesis showing that intact \u03b2-turn cannot rescue defective junction helix and vice versa, but this could also reflect interdependent stability rather than coupled folding. Direct biophysical studies (e.g., NMR, hydrogen-deuterium exchange) would be needed to validate the folding mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "1f4c47b5-826d-4ec1-8374-f48f1b5e16ab",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "RNA-mediated Gag clustering promotes folding of the CA-SP1 junction and 6-helix bundle, leading to hexamer formation as the nucleation unit. The CA-SP1 junction allosterically communicates NC/RNA binding status to upstream assembly domains, with junction folding 'reeling in' the NC domain and genome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The model for RNA-mediated assembly nucleation (C87-C94) is largely speculative, though based on reasonable inferences from the structural data and cited literature. The proposal that RNA clustering promotes junction folding (C90) is supported by the concentration-dependent helical propensity of SP1 (C20) and the DNA rescue of mutant assembly (C60), but lacks direct evidence. The hexamer as nucleation unit (C91) is intuitive but not experimentally demonstrated. The 'reeling in' mechanism (C92-C93) and allosteric communication model (C94) are plausible but speculative. These hypotheses would benefit from experimental validation through assembly kinetics, RNA binding studies, or structural studies of Gag-RNA complexes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "3e3818f6-7d2b-4232-ba17-e1b7a8e27bbd",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Comparative analysis suggests retroviruses without spacers (e.g., MPMV) retain the \u03b2-turn 'clasp' assembly determinant but lack the 6-helix bundle for protease regulation, while RSV has a longer, more stable junction helix that may serve both functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The comparative analysis provides interesting evolutionary context, but the conclusions are largely speculative. The MPMV sequence analysis (C96, Figure 4\u2014figure supplement 1) shows similarity in the 'clasp' region, and the absence of a 6-helix bundle is supported by cited cryoEM data (C97). However, the functional interpretation (C95) is speculative. The RSV comparison (C98-C100) is based on cited structural data showing a longer helix, but the proposal that it serves dual functions is inference rather than demonstrated fact. These comparative analyses would benefit from functional studies in the respective viral systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "cab6523f-e3af-44e5-86ea-d4d0aa3787ec",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "A concurrent cryoEM study by Schur et al. independently confirms that the CA-SP1 boundary forms a 6-helix bundle important for Gag assembly and proteolytic maturation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The note about the concurrent publication (C101-C102) provides important context showing independent validation of the key findings. This strengthens confidence in the major conclusions about the 6-helix bundle structure and function. The convergence of crystallographic and cryoEM approaches on the same structural model is significant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    },
+    {
+      "id": "d0d274c7-8679-46cb-b879-8defca636690",
+      "content_id": "082290f4-6f87-431c-821d-309ba9b7b329",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims establishing prior knowledge about HIV-1 assembly, maturation, structural switches, and the CA-SP1 junction, including its predicted helical structure, role in assembly and maturation, and binding site for maturation inhibitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C5-C21, C40-C41, C103) provide essential background context and are appropriately supported by citations to established literature. They accurately represent prior knowledge in the field and set up the rationale for the current structural study. The P373T substitution note (C103) is a minor methodological detail appropriately documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:25:56.820793Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ed6b8a61-d387-4724-ae39-0596fbe3c46d",
+      "result_id": "5373ecd0-ec3b-42df-b77b-0de42eba49a7"
+    },
+    {
+      "claim_id": "6f1bd4c9-ec50-473a-84c7-63df6fa8ee48",
+      "result_id": "5373ecd0-ec3b-42df-b77b-0de42eba49a7"
+    },
+    {
+      "claim_id": "a041ea71-ebf7-497e-ba15-3b274e19b11a",
+      "result_id": "5373ecd0-ec3b-42df-b77b-0de42eba49a7"
+    },
+    {
+      "claim_id": "dc07ebd8-c624-451f-8f5c-f60bf7701b7b",
+      "result_id": "5373ecd0-ec3b-42df-b77b-0de42eba49a7"
+    },
+    {
+      "claim_id": "09cddef7-a6d2-46b0-90dd-ca5ee215aba5",
+      "result_id": "5373ecd0-ec3b-42df-b77b-0de42eba49a7"
+    },
+    {
+      "claim_id": "4d516dc4-1e85-457e-9d89-e36708647936",
+      "result_id": "5373ecd0-ec3b-42df-b77b-0de42eba49a7"
+    },
+    {
+      "claim_id": "b41e8c00-4421-4cbf-88c8-79a56369834e",
+      "result_id": "5373ecd0-ec3b-42df-b77b-0de42eba49a7"
+    },
+    {
+      "claim_id": "3f677885-2329-40d3-9234-68d279fe4833",
+      "result_id": "5373ecd0-ec3b-42df-b77b-0de42eba49a7"
+    },
+    {
+      "claim_id": "75e900d0-be15-47c4-919e-b7be93039ed3",
+      "result_id": "5373ecd0-ec3b-42df-b77b-0de42eba49a7"
+    },
+    {
+      "claim_id": "8d79ee35-39f5-4dcf-9402-925aa9fe2c90",
+      "result_id": "5373ecd0-ec3b-42df-b77b-0de42eba49a7"
+    },
+    {
+      "claim_id": "0abf36a2-9df1-4a1d-8d30-8a9c9f172dc0",
+      "result_id": "5373ecd0-ec3b-42df-b77b-0de42eba49a7"
+    },
+    {
+      "claim_id": "880319ed-8663-413c-aa68-8e210cdcb828",
+      "result_id": "5373ecd0-ec3b-42df-b77b-0de42eba49a7"
+    },
+    {
+      "claim_id": "2203471c-afe5-4490-b6c7-642fe8d0d1df",
+      "result_id": "5373ecd0-ec3b-42df-b77b-0de42eba49a7"
+    },
+    {
+      "claim_id": "3d6be367-ecee-4e1e-836c-1ac5c4878ccd",
+      "result_id": "5373ecd0-ec3b-42df-b77b-0de42eba49a7"
+    },
+    {
+      "claim_id": "f80ab46f-eab2-419b-9a6e-9600d61265fe",
+      "result_id": "5373ecd0-ec3b-42df-b77b-0de42eba49a7"
+    },
+    {
+      "claim_id": "6dd6a34c-9293-417f-9cb5-5c056a89fdb2",
+      "result_id": "c8e5198f-91f5-4dff-82d1-31fae458caec"
+    },
+    {
+      "claim_id": "6cd566da-f769-4c94-9dc3-b0ea0586952a",
+      "result_id": "c8e5198f-91f5-4dff-82d1-31fae458caec"
+    },
+    {
+      "claim_id": "3f2f3de2-6cfa-4b26-a818-4296b23e6cce",
+      "result_id": "c8e5198f-91f5-4dff-82d1-31fae458caec"
+    },
+    {
+      "claim_id": "69c3f71c-969b-4499-a1af-4a395bcbbde9",
+      "result_id": "c8e5198f-91f5-4dff-82d1-31fae458caec"
+    },
+    {
+      "claim_id": "7fca2888-3a2a-4583-aa3b-788f1d5c0d15",
+      "result_id": "c8e5198f-91f5-4dff-82d1-31fae458caec"
+    },
+    {
+      "claim_id": "3ffcd91b-4c2a-4927-968a-85f0995d18d5",
+      "result_id": "c8e5198f-91f5-4dff-82d1-31fae458caec"
+    },
+    {
+      "claim_id": "991f4205-df24-4321-ab0a-15fbf6ff8862",
+      "result_id": "c8e5198f-91f5-4dff-82d1-31fae458caec"
+    },
+    {
+      "claim_id": "1dc390e7-7c6a-499a-ac8e-e364e95e7b43",
+      "result_id": "c8e5198f-91f5-4dff-82d1-31fae458caec"
+    },
+    {
+      "claim_id": "3fe97d6b-e06c-47a8-985b-c1f082a7390c",
+      "result_id": "c8e5198f-91f5-4dff-82d1-31fae458caec"
+    },
+    {
+      "claim_id": "283d14ba-230a-4fa0-a1cd-c3b2ce3181a9",
+      "result_id": "c8e5198f-91f5-4dff-82d1-31fae458caec"
+    },
+    {
+      "claim_id": "4ada7c07-dea5-4380-8385-b71b241f09a9",
+      "result_id": "c8e5198f-91f5-4dff-82d1-31fae458caec"
+    },
+    {
+      "claim_id": "34eddd3a-fd56-4e99-bf75-b77c8dca4640",
+      "result_id": "c8e5198f-91f5-4dff-82d1-31fae458caec"
+    },
+    {
+      "claim_id": "30082f1b-f73a-4d44-95ad-3435afb163ba",
+      "result_id": "c8e5198f-91f5-4dff-82d1-31fae458caec"
+    },
+    {
+      "claim_id": "84d48aab-4a81-4fa0-bd02-efdccff052c5",
+      "result_id": "c8e5198f-91f5-4dff-82d1-31fae458caec"
+    },
+    {
+      "claim_id": "87dea876-d102-43c1-9236-c58c736db43a",
+      "result_id": "c8e5198f-91f5-4dff-82d1-31fae458caec"
+    },
+    {
+      "claim_id": "7e074252-0269-4659-95b7-22e4ecb5adae",
+      "result_id": "c8e5198f-91f5-4dff-82d1-31fae458caec"
+    },
+    {
+      "claim_id": "6dbc2512-a4e4-4caa-b2ca-7ee068b94e7f",
+      "result_id": "c8e5198f-91f5-4dff-82d1-31fae458caec"
+    },
+    {
+      "claim_id": "7964478c-0157-48cc-94c3-0e50f5fa1db2",
+      "result_id": "5c6e431a-395f-4df4-b625-5857bebfa7c2"
+    },
+    {
+      "claim_id": "880319ed-8663-413c-aa68-8e210cdcb828",
+      "result_id": "5c6e431a-395f-4df4-b625-5857bebfa7c2"
+    },
+    {
+      "claim_id": "2203471c-afe5-4490-b6c7-642fe8d0d1df",
+      "result_id": "5c6e431a-395f-4df4-b625-5857bebfa7c2"
+    },
+    {
+      "claim_id": "45d74ee7-b1b3-4df0-be09-11dc69cc9345",
+      "result_id": "5c6e431a-395f-4df4-b625-5857bebfa7c2"
+    },
+    {
+      "claim_id": "61746392-9b96-4e9e-b1af-605edb198a0e",
+      "result_id": "5c6e431a-395f-4df4-b625-5857bebfa7c2"
+    },
+    {
+      "claim_id": "b2d3300c-6624-4687-81c2-0addee99b903",
+      "result_id": "5c6e431a-395f-4df4-b625-5857bebfa7c2"
+    },
+    {
+      "claim_id": "02f654bb-5022-4b8f-9bd4-9d3b19a128f9",
+      "result_id": "5c6e431a-395f-4df4-b625-5857bebfa7c2"
+    },
+    {
+      "claim_id": "796f12ef-b057-463b-af20-1559929e2721",
+      "result_id": "5c6e431a-395f-4df4-b625-5857bebfa7c2"
+    },
+    {
+      "claim_id": "37b2d6ae-8008-4af9-b105-4e3109a4856e",
+      "result_id": "5c6e431a-395f-4df4-b625-5857bebfa7c2"
+    },
+    {
+      "claim_id": "d03503c5-9c56-4a0e-8830-0b7c8cdebb6c",
+      "result_id": "5c6e431a-395f-4df4-b625-5857bebfa7c2"
+    },
+    {
+      "claim_id": "d3de1d42-3a0d-4f0f-8461-443c96e53797",
+      "result_id": "5c6e431a-395f-4df4-b625-5857bebfa7c2"
+    },
+    {
+      "claim_id": "7c0b442e-ec96-41ed-832d-da287b295861",
+      "result_id": "5c6e431a-395f-4df4-b625-5857bebfa7c2"
+    },
+    {
+      "claim_id": "daf3f8f4-699d-4603-9375-9289d82ef1c2",
+      "result_id": "5c6e431a-395f-4df4-b625-5857bebfa7c2"
+    },
+    {
+      "claim_id": "1a4f7516-5ffa-41fa-a0d1-819e0ec5f9c4",
+      "result_id": "5c6e431a-395f-4df4-b625-5857bebfa7c2"
+    },
+    {
+      "claim_id": "83a7ec2d-e465-4856-8d35-bca154543f5f",
+      "result_id": "5c6e431a-395f-4df4-b625-5857bebfa7c2"
+    },
+    {
+      "claim_id": "98f0a42a-cacc-4339-aff8-0af94864f8e9",
+      "result_id": "d42e4976-db4a-4219-bc6d-c1e04329d7b0"
+    },
+    {
+      "claim_id": "e1755d54-875c-404a-af15-01b1a52496b9",
+      "result_id": "d42e4976-db4a-4219-bc6d-c1e04329d7b0"
+    },
+    {
+      "claim_id": "cb93e24c-5546-4042-a2b4-0bf652a91441",
+      "result_id": "d42e4976-db4a-4219-bc6d-c1e04329d7b0"
+    },
+    {
+      "claim_id": "713ff52d-ea73-40ac-8f01-9bd5d319048d",
+      "result_id": "d42e4976-db4a-4219-bc6d-c1e04329d7b0"
+    },
+    {
+      "claim_id": "b60d8aca-0e01-4f7b-a88b-07086edb251b",
+      "result_id": "d42e4976-db4a-4219-bc6d-c1e04329d7b0"
+    },
+    {
+      "claim_id": "980db072-0be5-47e3-b647-a6615d613ab5",
+      "result_id": "d42e4976-db4a-4219-bc6d-c1e04329d7b0"
+    },
+    {
+      "claim_id": "59e7e668-8ed2-43c1-bf9e-281f6159068e",
+      "result_id": "d42e4976-db4a-4219-bc6d-c1e04329d7b0"
+    },
+    {
+      "claim_id": "c0e25902-3db5-4290-bb87-d57d5fe61683",
+      "result_id": "f59e227b-d734-4d7b-b303-98ed980a7539"
+    },
+    {
+      "claim_id": "3fe97d6b-e06c-47a8-985b-c1f082a7390c",
+      "result_id": "f59e227b-d734-4d7b-b303-98ed980a7539"
+    },
+    {
+      "claim_id": "e4c9998c-72a4-45e6-a935-2a746f874e27",
+      "result_id": "f59e227b-d734-4d7b-b303-98ed980a7539"
+    },
+    {
+      "claim_id": "1e17041a-6666-4e03-92b0-6d646da4e8cd",
+      "result_id": "f59e227b-d734-4d7b-b303-98ed980a7539"
+    },
+    {
+      "claim_id": "60535a5c-4444-4fb8-bca9-e83122e69906",
+      "result_id": "76ffb779-b47a-49bb-a0fd-c0ec5c855a66"
+    },
+    {
+      "claim_id": "457f6ed9-52c1-485e-9bba-fa7a00c612b4",
+      "result_id": "76ffb779-b47a-49bb-a0fd-c0ec5c855a66"
+    },
+    {
+      "claim_id": "58b071bb-6a1a-4076-bbd2-c94260e003f0",
+      "result_id": "76ffb779-b47a-49bb-a0fd-c0ec5c855a66"
+    },
+    {
+      "claim_id": "53608e29-7acc-41a6-b5d1-b7bdecea9027",
+      "result_id": "a876f1ec-591c-45b6-a81b-d7c82b3b482f"
+    },
+    {
+      "claim_id": "6f1bd4c9-ec50-473a-84c7-63df6fa8ee48",
+      "result_id": "a876f1ec-591c-45b6-a81b-d7c82b3b482f"
+    },
+    {
+      "claim_id": "d7386de5-4ada-4a72-8155-990fd666371f",
+      "result_id": "a876f1ec-591c-45b6-a81b-d7c82b3b482f"
+    },
+    {
+      "claim_id": "deb86a94-709f-459f-9d34-0804909f4d98",
+      "result_id": "2821f29a-c4e7-4425-8062-21289d0ed1e4"
+    },
+    {
+      "claim_id": "87dea876-d102-43c1-9236-c58c736db43a",
+      "result_id": "2222f069-1410-4d91-ae22-6441b5c003c7"
+    },
+    {
+      "claim_id": "c06a6209-608a-4a9e-9855-6d46bb2769f0",
+      "result_id": "2222f069-1410-4d91-ae22-6441b5c003c7"
+    },
+    {
+      "claim_id": "7c06690e-995a-45b8-b88b-e35a6f0d1ebb",
+      "result_id": "2222f069-1410-4d91-ae22-6441b5c003c7"
+    },
+    {
+      "claim_id": "da46172b-412a-4f2d-8b68-023b689e0fcf",
+      "result_id": "2222f069-1410-4d91-ae22-6441b5c003c7"
+    },
+    {
+      "claim_id": "0a5f760d-dbe0-4d18-b219-5fd3b3828e61",
+      "result_id": "2222f069-1410-4d91-ae22-6441b5c003c7"
+    },
+    {
+      "claim_id": "7e074252-0269-4659-95b7-22e4ecb5adae",
+      "result_id": "2222f069-1410-4d91-ae22-6441b5c003c7"
+    },
+    {
+      "claim_id": "2683f2b0-0680-424b-b616-094fb4d46e5b",
+      "result_id": "393adc11-c35c-4bba-acd0-0d6fab696973"
+    },
+    {
+      "claim_id": "77213767-2248-45bf-a164-4353bbe0ea54",
+      "result_id": "393adc11-c35c-4bba-acd0-0d6fab696973"
+    },
+    {
+      "claim_id": "4c099823-76ef-4ded-a6d6-cbed9ffc2b00",
+      "result_id": "393adc11-c35c-4bba-acd0-0d6fab696973"
+    },
+    {
+      "claim_id": "6dbc2512-a4e4-4caa-b2ca-7ee068b94e7f",
+      "result_id": "393adc11-c35c-4bba-acd0-0d6fab696973"
+    },
+    {
+      "claim_id": "b1326697-0cf7-420a-bfc4-aaf482049958",
+      "result_id": "1f4c47b5-826d-4ec1-8374-f48f1b5e16ab"
+    },
+    {
+      "claim_id": "b2a9395a-52a6-4893-a7ca-d437f15d5be7",
+      "result_id": "1f4c47b5-826d-4ec1-8374-f48f1b5e16ab"
+    },
+    {
+      "claim_id": "646ed6c5-aa66-4a36-9e28-552861e21dfc",
+      "result_id": "1f4c47b5-826d-4ec1-8374-f48f1b5e16ab"
+    },
+    {
+      "claim_id": "9ee28407-7741-4a33-8432-abd403a46c71",
+      "result_id": "1f4c47b5-826d-4ec1-8374-f48f1b5e16ab"
+    },
+    {
+      "claim_id": "3c31ada6-b26e-42f3-bdfb-24cccfb1f580",
+      "result_id": "1f4c47b5-826d-4ec1-8374-f48f1b5e16ab"
+    },
+    {
+      "claim_id": "ae2f5071-47e3-4249-b9d2-7cecd357b31c",
+      "result_id": "1f4c47b5-826d-4ec1-8374-f48f1b5e16ab"
+    },
+    {
+      "claim_id": "1a08e1b0-2061-4f53-9f8e-9e915e0e13e3",
+      "result_id": "1f4c47b5-826d-4ec1-8374-f48f1b5e16ab"
+    },
+    {
+      "claim_id": "95e432fa-3247-42c6-a76f-11694f1e617e",
+      "result_id": "1f4c47b5-826d-4ec1-8374-f48f1b5e16ab"
+    },
+    {
+      "claim_id": "d43d44fd-ef09-4f47-bef8-93288a7ae507",
+      "result_id": "3e3818f6-7d2b-4232-ba17-e1b7a8e27bbd"
+    },
+    {
+      "claim_id": "16d2b66a-41b1-4d57-8e86-d8c7c042c558",
+      "result_id": "3e3818f6-7d2b-4232-ba17-e1b7a8e27bbd"
+    },
+    {
+      "claim_id": "e124652a-b51e-4c97-adb8-2bff9a89c5fd",
+      "result_id": "3e3818f6-7d2b-4232-ba17-e1b7a8e27bbd"
+    },
+    {
+      "claim_id": "b9285cac-9f5c-4f67-bed3-7e523bc4e9ba",
+      "result_id": "3e3818f6-7d2b-4232-ba17-e1b7a8e27bbd"
+    },
+    {
+      "claim_id": "ceab97f9-893f-4a7c-9229-22a9b799ba93",
+      "result_id": "3e3818f6-7d2b-4232-ba17-e1b7a8e27bbd"
+    },
+    {
+      "claim_id": "a95cfb12-d1dc-42cf-b927-e8bc19215efb",
+      "result_id": "3e3818f6-7d2b-4232-ba17-e1b7a8e27bbd"
+    },
+    {
+      "claim_id": "700438e0-8932-4a48-b77e-f7a1556819d0",
+      "result_id": "cab6523f-e3af-44e5-86ea-d4d0aa3787ec"
+    },
+    {
+      "claim_id": "3e0f9526-20b9-4897-b36b-20813d133348",
+      "result_id": "cab6523f-e3af-44e5-86ea-d4d0aa3787ec"
+    },
+    {
+      "claim_id": "4c3bd537-0737-4733-8f40-84873296cf16",
+      "result_id": "d0d274c7-8679-46cb-b879-8defca636690"
+    },
+    {
+      "claim_id": "ba49630e-c623-4cbd-b61f-ee38613aae33",
+      "result_id": "d0d274c7-8679-46cb-b879-8defca636690"
+    },
+    {
+      "claim_id": "d8aa0e20-1cb1-454e-bfb4-77002c13506c",
+      "result_id": "d0d274c7-8679-46cb-b879-8defca636690"
+    },
+    {
+      "claim_id": "269050a6-c593-4979-a07e-b9c449ed8d18",
+      "result_id": "d0d274c7-8679-46cb-b879-8defca636690"
+    },
+    {
+      "claim_id": "5a134dde-4bc0-4914-9fd5-f797febbdf5d",
+      "result_id": "d0d274c7-8679-46cb-b879-8defca636690"
+    },
+    {
+      "claim_id": "ab287c79-6e89-47a7-b0f9-a420c712412e",
+      "result_id": "d0d274c7-8679-46cb-b879-8defca636690"
+    },
+    {
+      "claim_id": "b95cb71f-626c-4e14-9047-2fa22530c5bd",
+      "result_id": "d0d274c7-8679-46cb-b879-8defca636690"
+    },
+    {
+      "claim_id": "f714939b-dce0-4f0c-9a0d-5e3cd67fb36f",
+      "result_id": "d0d274c7-8679-46cb-b879-8defca636690"
+    },
+    {
+      "claim_id": "b69ce36f-fb39-44e9-807f-6cf4bd3737b9",
+      "result_id": "d0d274c7-8679-46cb-b879-8defca636690"
+    },
+    {
+      "claim_id": "4c442e96-1bbc-4267-885c-eb2c77caa753",
+      "result_id": "d0d274c7-8679-46cb-b879-8defca636690"
+    },
+    {
+      "claim_id": "5a0e6dac-998b-42cd-9096-c968306096d1",
+      "result_id": "d0d274c7-8679-46cb-b879-8defca636690"
+    },
+    {
+      "claim_id": "e3e5dcc3-9feb-4b25-8ad7-00c29bcee701",
+      "result_id": "d0d274c7-8679-46cb-b879-8defca636690"
+    },
+    {
+      "claim_id": "a170b8bb-305c-496d-aed5-adc4c13112b1",
+      "result_id": "d0d274c7-8679-46cb-b879-8defca636690"
+    },
+    {
+      "claim_id": "5fb5cf46-95e8-4f23-99a9-53c3a446ce8a",
+      "result_id": "d0d274c7-8679-46cb-b879-8defca636690"
+    },
+    {
+      "claim_id": "3d95e41b-be77-477b-8266-42eb4e7a4a82",
+      "result_id": "d0d274c7-8679-46cb-b879-8defca636690"
+    },
+    {
+      "claim_id": "7174d65d-5b9f-4d1e-8337-19111d99b1d5",
+      "result_id": "d0d274c7-8679-46cb-b879-8defca636690"
+    },
+    {
+      "claim_id": "b753642c-843c-4261-ae55-8c410d879347",
+      "result_id": "d0d274c7-8679-46cb-b879-8defca636690"
+    },
+    {
+      "claim_id": "45d74ee7-b1b3-4df0-be09-11dc69cc9345",
+      "result_id": "d0d274c7-8679-46cb-b879-8defca636690"
+    },
+    {
+      "claim_id": "61746392-9b96-4e9e-b1af-605edb198a0e",
+      "result_id": "d0d274c7-8679-46cb-b879-8defca636690"
+    },
+    {
+      "claim_id": "fe256b09-cd70-49ec-a1d2-0a5a0fc7b4d4",
+      "result_id": "d0d274c7-8679-46cb-b879-8defca636690"
+    }
+  ],
+  "comparisons": []
+}

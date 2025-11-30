@@ -1,0 +1,1353 @@
+{
+  "submission": {
+    "id": "1162b95b-2050-4777-816c-7e731e0fcb99",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:47:30.724878Z",
+    "updated_at": "2025-11-29T22:47:30.724878Z"
+  },
+  "content": [
+    {
+      "id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "submission_id": "1162b95b-2050-4777-816c-7e731e0fcb99",
+      "content_type": "manuscript",
+      "content_text": "# NIH peer review percentile scores are poorly predictive of grant productivity\n\n## Authors\n\n- Ferric C Fang<sup>1</sup> \u2020\n- Anthony Bowen<sup>2</sup> ([ORCID: 0000-0003-1064-8372](https://orcid.org/0000-0003-1064-8372)) \u2020\n- Arturo Casadevall<sup>3</sup> \u2020\n\n### Affiliations\n\n1. Departments of Laboratory Medicine and Microbiology University of Washington School of Medicine Seattle United States\n2. Department of Microbiology and Immunology Albert Einstein College of Medicine New York United States\n3. Department of Molecular Microbiology and Immunology Johns Hopkins Bloomberg School of Public Health Baltimore United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nPeer review is widely used to assess grant applications so that the highest ranked applications can be funded. A number of studies have questioned the ability of peer review panels to predict the productivity of applications, but a recent analysis of grants funded by the National Institutes of Health (NIH) in the US found that the percentile scores awarded by peer review panels correlated with productivity as measured by citations of grant-supported publications. Here, based on a re-analysis of these data for the 102,740 funded grants with percentile scores of 20 or better, we report that these percentile scores are a poor discriminator of productivity. This underscores the limitations of peer review as a means of assessing grant applications in an era when typical success rates are often as low as about 10%.\n\n## Introduction\n\nMost funding agencies employ panels in which experts review proposals and assign scores to them based on a number of factors (such as expected impact and scientific quality). However, several studies have suggested significant problems with the current system of grant peer review. One problem is that the number of reviewers is typically inadequate to provide statistical precision (Kaplan et al., 2008). Researchers have also found considerable variation among scores and disagreement regarding review criteria (Mayo et al., 2006; Graves et al., 2011; Abdoul et al., 2012), and a Bayesian hierarchical statistical model of 18,959 applications to the NIH found evidence of reviewer bias that influenced as much as a quarter of funding decisions (Johnson, 2008).\n\nAlthough there is general agreement that peer review can discriminate sound grant applications from those containing serious flaws, it is uncertain whether peer review can accurately predict those meritorious applications that are most likely to be productive. An analysis of over 400 competing renewal grant applications at one NIH institute (the National Institute of General Medical Sciences) found no correlation between percentile score and publication productivity of funded grants (Berg, 2013). A subsequent study of 1492 grants at another NIH institute (the National Heart, Lung and Blood Institute) similarly found no correlation between the percentile score and publication or citation productivity, even after correction for numerous variables (Danthi et al., 2014). These observations suggest that once grant applications have been determined to be meritorious, expert reviewers cannot accurately predict their productivity.\n\nIn contrast, a recent analysis of over 130,000 grant applications funded by the NIH between 1980 and 2008 concluded that better percentile scores consistently correlate with greater productivity (Li and Agha, 2015). Although the limitations of using retrospective publication/citation productivity to validate peer review are acknowledged (Lindner et al., 2015; Lauer and Nakamura, 2015), this large study has been interpreted as vindicating grant peer review (Mervis, 2015; Williams, 2015). However, the relevance of those findings for the current situation is questionable since the analysis included many funded grants with poor percentile scores (>40th percentile) that would not be considered competitive today. Moreover, this study did not examine the important question of whether percentile scores can accurately stratify meritorious applications to identify those most likely to be productive.\n\nWe therefore performed a re-analysis of the same dataset to specifically address this question. Our analysis focused on subset of grants in the earlier study (Li and Agha, 2015) that were awarded a percentile score of 20 or better: this subset contained 102,740 grants. This percentile range is most relevant because NIH paylines (that is, the lowest percentile score that is funded) seldom exceed the 20th percentile and have hovered around the 10th percentile for some institutes in recent years.\n\n## Results\n\n### Publication and citation productivity in relation to percentile score\n\nA median of 6 publications was supported per grant. A plot of publication productivity versus percentile score (Figure 1A) shows a wide range of publication productivity at any given percentile score with no significant difference in productivity between any adjacent cohorts. A plot of citation productivity versus percentile score (Figure 1B) shows similar variability in productivity. Applications with percentile scores of 2 or better generated significantly more citations than applications receiving poorer scores; however, this was not true for applications receiving scores of 3 or higher. Although it was not possible to adjust citation numbers according to the year of award, a previous analysis of the dataset found that cohort effects relating to fiscal year did not influence the relationship between percentile score and productivity (Li and Agha, 2015). While our re-analysis confirms that there is a correlation between percentile score and publication or citation productivity for applications with scores in the top 20 percentiles, the correlation is quite modest (slope = \u22120.132 \u00b1 0.005 publications and \u22129.6 \u00b1 0.337 citations for each percentile score increment, r2 = 0.0078), suggesting that the overall ability of review groups to predict application success is weak at best. A random forest model indicated that only ~1% of the variance in productivity could be accounted for by percentile ranking (Figure 1\u2014figure supplement 1), suggesting that all of the effort currently spent in peer review has a minimal impact in stratifying meritorious applications relative to what would be expected from a random ranking.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/13323/elife-13323-fig1-v1.jpg)\n\n**Figure 1.:** (A) The number of publications acknowledging support from grants within five years of grant approval (from PubMed) versus the percentile score: the bar shows the mean number of publications for all grants with that percentile score. (B) The number of citations that the papers in (A) received until the end of 2013 (data from Web of Science) versus the percentile score: the bar shows the mean number of citations for all grants with that percentile score. The lowest percentile scores are the most favorable. n = 102,740. Error bars = SDM. *Pink bars indicate significantly different from all cohorts of grants receiving poorer scores by one-way ANOVA. Black and gray bars do not differ significantly from their neighbors and are shown in different shades to allow easier visualization.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13323/elife-13323-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** A non-parametric model was constructed with 500 trees to measure grant percentile score as a predictor of citation productivity. The results indicate that 0.98% of variance in productivity can be accounted for by percentile score. The mean of squared residuals converges to 366,620.\n\n### Percentile scores of grants stratified on the basis of citation and publication productivity\n\nThis preceding analysis shows that percentile scores cannot accurately predict the subsequent productivity of a research grant in the critical 3\u201320 percentile range. This can be demonstrated by dividing the sample into equal halves based on publication productivity (the top 50.8% had \u22656 publications) and citation productivity (the top 49.99% had \u2265128 citations). Substantial overlap is evident between percentile scores for grants in the upper and lower halves based upon both publication productivity (Figure 2A) and citation productivity (Figure 2B): for example, if only half of applications could be funded, a grant in the top half of applications based on citations would only have a 58% chance of being funded if decisions were based on percentile scores.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/13323/elife-13323-fig2-v1.jpg)\n\n**Figure 2.:** Graphs showing, for percentile scores of 20 or better, the number of grants in the top half (left bar) and bottom half (right right) of grants on the basis of publications (A) and citations (B). Grants in the top half on the basis of publication productivity (A) had \u2265 6 publications: mean percentile score of top half 9.244 \u00b1 5.583, median 9; mean percentile score of bottom half 9.947 \u00b1 5.612, median 10. Grants in the top half on the basis of citation productivity (B) had \u2265 128 citations: mean percentile score of top half 9.242 \u00b1 5.625, median 9; mean percentile score of bottom half 9.939 \u00b1 5.571, median 10. Fewer grants received a percentile score of zero as a result of rounding to the nearest whole number, as well as a change in the NIH percentiling algorithm since 2009.\n\n### Receiver operating characteristic (ROC) curve of grant peer review\n\nAn ROC curve (Figure 3) confirms the very poor discriminatory ability of percentile score for grants receiving scores in the 20th percentile or better, with an AUC (area under the curve) of only 0.54. Even an outstanding percentile score is no guarantor of project success, as 17% (334 of 1987) of grants with a percentile score of zero failed to produce any citations.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/13323/elife-13323-fig3-v1.jpg)\n\n**Figure 3.:** Area under the curve (AUC) = 0.54 (95% confidence interval: 0.53\u20130.54) for citation productivity greater than the median. An AUC of 1.0 corresponds to a perfect test; an AUC of 0.5 indicates performance equivalent to random chance alone.\n\n## Discussion\n\nThese observations suggest that despite the overall ability of reviewers to discriminate between extremely strong grant applications and the remainder, they have limited ability to accurately predict future productivity of meritorious applications in the range relevant to current paylines. This may contribute to a pervasive sense of arbitrariness with regard to funding decisions and dissatisfaction with the peer review system (Pagano, 2006; Fang and Casadevall, 2009; Costello, 2010; Germain, 2015). Perhaps most importantly, these findings contradict the notion that peer review can determine which applications are most likely to be productive. The excellent productivity exhibited by many projects with relatively poor scores and the poor productivity exhibited by some projects with outstanding scores demonstrate the inherent unpredictability of scientific research. The data also suggest that current paylines are inadequate to fund the most productive applications and that considerable potential productivity is being left on the table at current funding levels (Berg, 2011).\n\nIt should be noted that percentile scores and publication/citation productivity are not necessarily independent. Citation practices have evolved over time, and citations per paper approximately doubled between 1980 and 2004 (Wallace et al., 2009). This may have contributed to greater citation productivity for more recent grants, which would tend to have more favorable percentile scores than older ones, as paylines have declined over time, resulting in a correlation between percentile score and citation productivity that is unrelated to the discriminatory ability of the peer review process. In addition, applications that are funded despite scoring worse than the payline tend to be funded later in the fiscal year and are often subject to budgetary reductions that could adversely impact their future productivity. According to a report from the US Government Accountability Office (GAO), 13% of R01 applications funded in fiscal years 2003\u20132007 were exceptions with scores worse than the payline (GAO, 2009). This may be an additional contributing factor to the correlation between percentile score and publication and citation productivity that is not indicative of peer review discrimination.\n\nThese observations have important implications for the grant peer review system. If reviewers are unable to reliably predict which meritorious applications are most likely to be productive, then reviewers might save time and resources by simply identifying the top 20% and awarding funding within this group on a random basis or according to programmatic priorities. In this regard, we refer to our recent suggestion that the NIH consider a modified lottery system (Fang and Casadevall, 2014) and note that the New Zealand Health Research Council has already moved to a lottery system to select proposals for funding in its Explorer Grants program (Health Research Council of New Zealand, 2015).\n\nIn summary, while our analysis confirms that peer review has some ability to discriminate between the quality of proposals based on citation productivity over the entire range of percentile\u00a0scores (Li and Agha, 2015), this does not extend to the critical range of percentile scores between 3 and 20, which\u00a0is\u00a0the most relevant subset of applications at current paylines. Furthermore, the best science is not necessarily receiving support under the present system since most applications in this percentile range, whether above or below current paylines, are indistinguishable with regard to citation productivity. The manner in which scarce research funds are allocated deserves greater attention.\n\n## Methods\n\nA database derived from 102,740 research project (R01) grants funded by the NIH from 1980 through 2008 was obtained from Danielle Li (Harvard University) and Richard Nakamura (NIH Center for Scientific Review). The data included the number of publications acknowledging grant support within 5 years of grant approval (from PubMed), the number of citations of those publications through 2013 (Web of Science) and the percentile score of the application (rounded to the nearest whole number). Parametric statistical analyses were performed in Prism (GraphPad Software, San Diego, CA). The receiver operating characteristic (ROC) and random forest analyses were performed using R (Vienna, Austria) and the pROC (Robin et al., 2011) and randomForest (Liaw and Wiener, 2002) packages.\n",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0312cac7-ef00-42c2-8918-02e684895812",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C1",
+      "claim": "Peer review is widely used to assess grant applications so that the highest ranked applications can be funded.",
+      "claim_type": "EXPLICIT",
+      "source": "Peer review is widely used to assess grant applications so that the highest ranked applications can be funded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established practice in scientific funding and represents general knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "ef173633-f260-48f9-8e95-c25268adffb2",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C2",
+      "claim": "A number of studies have questioned the ability of peer review panels to predict the productivity of applications.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of studies have questioned the ability of peer review panels to predict the productivity of applications",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "References to prior studies questioning peer review effectiveness.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "daee66a1-19d2-4d1b-bd19-b0dc7513e316",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C3",
+      "claim": "A recent analysis of grants funded by the National Institutes of Health (NIH) in the US found that the percentile scores awarded by peer review panels correlated with productivity as measured by citations of grant-supported publications.",
+      "claim_type": "EXPLICIT",
+      "source": "a recent analysis of grants funded by the National Institutes of Health (NIH) in the US found that the percentile scores awarded by peer review panels correlated with productivity as measured by citations of grant-supported publications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "References a prior analysis showing correlation between percentile scores and productivity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "c3f8195a-1f6a-408f-b399-f2419cc2e404",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C4",
+      "claim": "Based on a re-analysis of data for 102,740 funded grants with percentile scores of 20 or better, percentile scores are a poor discriminator of productivity.",
+      "claim_type": "EXPLICIT",
+      "source": "based on a re-analysis of these data for the 102,740 funded grants with percentile scores of 20 or better, we report that these percentile scores are a poor discriminator of productivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the study based on re-analysis of the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "9b8ab707-83de-4300-acc4-33394f512c37",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C5",
+      "claim": "The number of reviewers is typically inadequate to provide statistical precision.",
+      "claim_type": "EXPLICIT",
+      "source": "One problem is that the number of reviewers is typically inadequate to provide statistical precision (Kaplan et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Kaplan et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "a56800da-4475-465b-9c3a-b918c261ee7a",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C6",
+      "claim": "Researchers have found considerable variation among scores and disagreement regarding review criteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Researchers have also found considerable variation among scores and disagreement regarding review criteria (Mayo et al., 2006; Graves et al., 2011; Abdoul et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "537d8e50-3925-4bec-bd63-35aa197b5c1c",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C7",
+      "claim": "A Bayesian hierarchical statistical model of 18,959 applications to the NIH found evidence of reviewer bias that influenced as much as a quarter of funding decisions.",
+      "claim_type": "EXPLICIT",
+      "source": "a Bayesian hierarchical statistical model of 18,959 applications to the NIH found evidence of reviewer bias that influenced as much as a quarter of funding decisions (Johnson, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Johnson, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "59fa46b6-fe8f-4251-9824-0427700157fd",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C8",
+      "claim": "There is general agreement that peer review can discriminate sound grant applications from those containing serious flaws.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there is general agreement that peer review can discriminate sound grant applications from those containing serious flaws",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Represents consensus view in the scientific community.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "42f6ba5c-8422-4423-bb95-7922d6caeab4",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C9",
+      "claim": "It is uncertain whether peer review can accurately predict those meritorious applications that are most likely to be productive.",
+      "claim_type": "EXPLICIT",
+      "source": "it is uncertain whether peer review can accurately predict those meritorious applications that are most likely to be productive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge in the field, supported by subsequent citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "34c55399-61da-49b0-8799-206a65a9ce21",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C10",
+      "claim": "An analysis of over 400 competing renewal grant applications at the National Institute of General Medical Sciences found no correlation between percentile score and publication productivity of funded grants.",
+      "claim_type": "EXPLICIT",
+      "source": "An analysis of over 400 competing renewal grant applications at one NIH institute (the National Institute of General Medical Sciences) found no correlation between percentile score and publication productivity of funded grants (Berg, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Berg, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "1027c56f-c342-43d4-9645-2e4ce63ccb60",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C11",
+      "claim": "A study of 1492 grants at the National Heart, Lung and Blood Institute found no correlation between the percentile score and publication or citation productivity, even after correction for numerous variables.",
+      "claim_type": "EXPLICIT",
+      "source": "A subsequent study of 1492 grants at another NIH institute (the National Heart, Lung and Blood Institute) similarly found no correlation between the percentile score and publication or citation productivity, even after correction for numerous variables (Danthi et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Danthi et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "abc9cdde-10dd-47d1-ada2-2d9c634858d5",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C12",
+      "claim": "Once grant applications have been determined to be meritorious, expert reviewers cannot accurately predict their productivity.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that once grant applications have been determined to be meritorious, expert reviewers cannot accurately predict their productivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the cited studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "5766a050-c547-4e06-b9f2-b98919a508a4",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C13",
+      "claim": "A recent analysis of over 130,000 grant applications funded by the NIH between 1980 and 2008 concluded that better percentile scores consistently correlate with greater productivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a recent analysis of over 130,000 grant applications funded by the NIH between 1980 and 2008 concluded that better percentile scores consistently correlate with greater productivity (Li and Agha, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Li and Agha, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "444c8bc2-8bab-4078-a8a0-45e7c64ac40e",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C14",
+      "claim": "The large study by Li and Agha has been interpreted as vindicating grant peer review.",
+      "claim_type": "EXPLICIT",
+      "source": "this large study has been interpreted as vindicating grant peer review (Mervis, 2015; Williams, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mervis, 2015 and Williams, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "38ad7273-1b49-4d7a-8bc7-ed3bc9a6d6f6",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C15",
+      "claim": "The relevance of the Li and Agha findings for the current situation is questionable since the analysis included many funded grants with poor percentile scores (>40th percentile) that would not be considered competitive today.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the relevance of those findings for the current situation is questionable since the analysis included many funded grants with poor percentile scores (>40th percentile) that would not be considered competitive today.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on knowledge of current funding practices and the composition of the Li and Agha dataset.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "a56d433a-5521-4b5f-84be-8bc8031d066e",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C16",
+      "claim": "The Li and Agha study did not examine whether percentile scores can accurately stratify meritorious applications to identify those most likely to be productive.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this study did not examine the important question of whether percentile scores can accurately stratify meritorious applications to identify those most likely to be productive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about what was not examined in the prior study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "b8e7c050-2590-4902-ae1a-28d73c2adad1",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C17",
+      "claim": "The analysis focused on 102,740 grants that were awarded a percentile score of 20 or better.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis focused on subset of grants in the earlier study (Li and Agha, 2015) that were awarded a percentile score of 20 or better: this subset contained 102,740 grants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset used in the current study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "c5a487e5-9be4-4ccb-a7cb-48209e002853",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C18",
+      "claim": "The percentile range of 20 or better is most relevant because NIH paylines seldom exceed the 20th percentile and have hovered around the 10th percentile for some institutes in recent years.",
+      "claim_type": "EXPLICIT",
+      "source": "This percentile range is most relevant because NIH paylines (that is, the lowest percentile score that is funded) seldom exceed the 20th percentile and have hovered around the 10th percentile for some institutes in recent years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of current NIH funding practices.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "aaab636a-e674-4eef-816d-20b801e2dda3",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C19",
+      "claim": "A median of 6 publications was supported per grant.",
+      "claim_type": "EXPLICIT",
+      "source": "A median of 6 publications was supported per grant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "39ad79d2-a4dd-4101-9aea-49be15b35acb",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C20",
+      "claim": "A plot of publication productivity versus percentile score shows a wide range of publication productivity at any given percentile score with no significant difference in productivity between any adjacent cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "A plot of publication productivity versus percentile score (Figure 1A) shows a wide range of publication productivity at any given percentile score with no significant difference in productivity between any adjacent cohorts.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of the data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "ccce8209-75ac-4aec-b745-4b4ae823fc84",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C21",
+      "claim": "A plot of citation productivity versus percentile score shows similar variability in productivity.",
+      "claim_type": "EXPLICIT",
+      "source": "A plot of citation productivity versus percentile score (Figure 1B) shows similar variability in productivity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of the data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "26d564bb-256b-4b8e-b229-fb2e3ed479f9",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C22",
+      "claim": "Applications with percentile scores of 2 or better generated significantly more citations than applications receiving poorer scores.",
+      "claim_type": "EXPLICIT",
+      "source": "Applications with percentile scores of 2 or better generated significantly more citations than applications receiving poorer scores",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis of the data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "df820af0-2370-47a7-a751-e1318e992489",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C23",
+      "claim": "Applications receiving scores of 3 or higher did not generate significantly more citations than applications with poorer scores.",
+      "claim_type": "EXPLICIT",
+      "source": "however, this was not true for applications receiving scores of 3 or higher.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis of the data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "78439566-20e3-4fdd-9f23-03f448d1145e",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C24",
+      "claim": "A previous analysis of the dataset found that cohort effects relating to fiscal year did not influence the relationship between percentile score and productivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it was not possible to adjust citation numbers according to the year of award, a previous analysis of the dataset found that cohort effects relating to fiscal year did not influence the relationship between percentile score and productivity (Li and Agha, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Li and Agha, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "780c5214-3bfa-4938-86dd-3666621af83f",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C25",
+      "claim": "There is a correlation between percentile score and publication or citation productivity for applications with scores in the top 20 percentiles.",
+      "claim_type": "EXPLICIT",
+      "source": "While our re-analysis confirms that there is a correlation between percentile score and publication or citation productivity for applications with scores in the top 20 percentiles",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the re-analysis of the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "dfbe4291-ff06-4b2b-b665-8537e5e7596b",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C26",
+      "claim": "The correlation between percentile score and productivity is quite modest (slope = \u22120.132 \u00b1 0.005 publications and \u22129.6 \u00b1 0.337 citations for each percentile score increment, r2 = 0.0078).",
+      "claim_type": "EXPLICIT",
+      "source": "the correlation is quite modest (slope = \u22120.132 \u00b1 0.005 publications and \u22129.6 \u00b1 0.337 citations for each percentile score increment, r2 = 0.0078)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "022b75ef-4e16-499a-8161-389c7abc1c18",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C27",
+      "claim": "The overall ability of review groups to predict application success is weak at best.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the overall ability of review groups to predict application success is weak at best.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the modest correlation observed.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "8c03be24-f4c0-4929-98b4-adf671233c22",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C28",
+      "claim": "A random forest model indicated that only ~1% of the variance in productivity could be accounted for by percentile ranking.",
+      "claim_type": "EXPLICIT",
+      "source": "A random forest model indicated that only ~1% of the variance in productivity could be accounted for by percentile ranking (Figure 1\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on random forest analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "1d1301cb-74bc-4d62-b670-d6cd58a418e2",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C29",
+      "claim": "All of the effort currently spent in peer review has a minimal impact in stratifying meritorious applications relative to what would be expected from a random ranking.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that all of the effort currently spent in peer review has a minimal impact in stratifying meritorious applications relative to what would be expected from a random ranking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the random forest model results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "3262b4f0-4ecb-4d4a-9025-79ca04597916",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C30",
+      "claim": "Percentile scores cannot accurately predict the subsequent productivity of a research grant in the critical 3\u201320 percentile range.",
+      "claim_type": "EXPLICIT",
+      "source": "This preceding analysis shows that percentile scores cannot accurately predict the subsequent productivity of a research grant in the critical 3\u201320 percentile range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "ef4404a1-8a13-41f5-bc7a-49378a40619e",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C31",
+      "claim": "The top 50.8% of grants had \u22656 publications.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be demonstrated by dividing the sample into equal halves based on publication productivity (the top 50.8% had \u22656 publications)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "2aa3c18f-ff68-4a76-9c49-c4e92bda66bf",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C32",
+      "claim": "The top 49.99% of grants had \u2265128 citations.",
+      "claim_type": "EXPLICIT",
+      "source": "and citation productivity (the top 49.99% had \u2265128 citations).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "6192344c-d770-4b20-bd64-5f8382e77a53",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C33",
+      "claim": "Substantial overlap is evident between percentile scores for grants in the upper and lower halves based upon both publication productivity and citation productivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Substantial overlap is evident between percentile scores for grants in the upper and lower halves based upon both publication productivity (Figure 2A) and citation productivity (Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of the data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "0fd65983-071e-40a7-b150-3e531941248c",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C34",
+      "claim": "If only half of applications could be funded, a grant in the top half of applications based on citations would only have a 58% chance of being funded if decisions were based on percentile scores.",
+      "claim_type": "EXPLICIT",
+      "source": "for example, if only half of applications could be funded, a grant in the top half of applications based on citations would only have a 58% chance of being funded if decisions were based on percentile scores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the overlap shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "9995e951-c345-461d-b0a6-ebda733707e3",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C35",
+      "claim": "An ROC curve confirms the very poor discriminatory ability of percentile score for grants receiving scores in the 20th percentile or better, with an AUC of only 0.54.",
+      "claim_type": "EXPLICIT",
+      "source": "An ROC curve (Figure 3) confirms the very poor discriminatory ability of percentile score for grants receiving scores in the 20th percentile or better, with an AUC (area under the curve) of only 0.54.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on ROC analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "0089ddad-a2e1-46d2-81ba-5a3451521bd3",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C36",
+      "claim": "17% (334 of 1987) of grants with a percentile score of zero failed to produce any citations.",
+      "claim_type": "EXPLICIT",
+      "source": "Even an outstanding percentile score is no guarantor of project success, as 17% (334 of 1987) of grants with a percentile score of zero failed to produce any citations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a descriptive statistic from the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "c42f76fb-eaec-4847-b16b-8f9f7bae69cf",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C37",
+      "claim": "Despite the overall ability of reviewers to discriminate between extremely strong grant applications and the remainder, they have limited ability to accurately predict future productivity of meritorious applications in the range relevant to current paylines.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that despite the overall ability of reviewers to discriminate between extremely strong grant applications and the remainder, they have limited ability to accurately predict future productivity of meritorious applications in the range relevant to current paylines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "133d687f-1a99-403e-8189-32a2284be47a",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C38",
+      "claim": "Limited ability of reviewers to predict productivity may contribute to a pervasive sense of arbitrariness with regard to funding decisions and dissatisfaction with the peer review system.",
+      "claim_type": "EXPLICIT",
+      "source": "This may contribute to a pervasive sense of arbitrariness with regard to funding decisions and dissatisfaction with the peer review system (Pagano, 2006; Fang and Casadevall, 2009; Costello, 2010; Germain, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citations to prior literature on dissatisfaction with peer review.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "1fab85c4-5942-474e-bf56-889c21280a1b",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C39",
+      "claim": "These findings contradict the notion that peer review can determine which applications are most likely to be productive.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps most importantly, these findings contradict the notion that peer review can determine which applications are most likely to be productive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "29df4293-fc53-4803-97c3-998b0ec1f720",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C40",
+      "claim": "The excellent productivity exhibited by many projects with relatively poor scores and the poor productivity exhibited by some projects with outstanding scores demonstrate the inherent unpredictability of scientific research.",
+      "claim_type": "EXPLICIT",
+      "source": "The excellent productivity exhibited by many projects with relatively poor scores and the poor productivity exhibited by some projects with outstanding scores demonstrate the inherent unpredictability of scientific research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the data showing wide variability in productivity at all percentile scores.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "34849209-b981-483c-a684-053e0a934c6f",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C41",
+      "claim": "The data suggest that current paylines are inadequate to fund the most productive applications and that considerable potential productivity is being left on the table at current funding levels.",
+      "claim_type": "EXPLICIT",
+      "source": "The data also suggest that current paylines are inadequate to fund the most productive applications and that considerable potential productivity is being left on the table at current funding levels (Berg, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the data, supported by citation to Berg, 2011.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "19dda311-1d9b-4751-8180-e08221ef79d0",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C42",
+      "claim": "Percentile scores and publication/citation productivity are not necessarily independent.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that percentile scores and publication/citation productivity are not necessarily independent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a caveat about potential confounding factors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "81ad8e59-319f-4d67-863d-b1d1ef60f3e1",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C43",
+      "claim": "Citation practices have evolved over time, and citations per paper approximately doubled between 1980 and 2004.",
+      "claim_type": "EXPLICIT",
+      "source": "Citation practices have evolved over time, and citations per paper approximately doubled between 1980 and 2004 (Wallace et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wallace et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "2b8da83e-75a0-4475-9d4f-c7ec3729848d",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C44",
+      "claim": "Greater citation productivity for more recent grants may have contributed to a correlation between percentile score and citation productivity that is unrelated to the discriminatory ability of the peer review process.",
+      "claim_type": "EXPLICIT",
+      "source": "This may have contributed to greater citation productivity for more recent grants, which would tend to have more favorable percentile scores than older ones, as paylines have declined over time, resulting in a correlation between percentile score and citation productivity that is unrelated to the discriminatory ability of the peer review process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about a potential confounding factor.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "1168915e-da79-4a14-af91-14660ff6e759",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C45",
+      "claim": "Applications that are funded despite scoring worse than the payline tend to be funded later in the fiscal year and are often subject to budgetary reductions that could adversely impact their future productivity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, applications that are funded despite scoring worse than the payline tend to be funded later in the fiscal year and are often subject to budgetary reductions that could adversely impact their future productivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of NIH funding practices.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "f666993f-78ac-454c-af22-cbc0acb70f3c",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C46",
+      "claim": "According to a report from the US Government Accountability Office, 13% of R01 applications funded in fiscal years 2003\u20132007 were exceptions with scores worse than the payline.",
+      "claim_type": "EXPLICIT",
+      "source": "According to a report from the US Government Accountability Office (GAO), 13% of R01 applications funded in fiscal years 2003\u20132007 were exceptions with scores worse than the payline (GAO, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to GAO, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "9b6b0d2f-b139-4f20-92db-2820cea12dee",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C47",
+      "claim": "Funding exceptions with scores worse than the payline may be an additional contributing factor to the correlation between percentile score and publication and citation productivity that is not indicative of peer review discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be an additional contributing factor to the correlation between percentile score and publication and citation productivity that is not indicative of peer review discrimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about a potential confounding factor.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "0adb0b17-30e7-45b7-8d74-df98d6a23ef5",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C48",
+      "claim": "If reviewers are unable to reliably predict which meritorious applications are most likely to be productive, then reviewers might save time and resources by simply identifying the top 20% and awarding funding within this group on a random basis or according to programmatic priorities.",
+      "claim_type": "EXPLICIT",
+      "source": "If reviewers are unable to reliably predict which meritorious applications are most likely to be productive, then reviewers might save time and resources by simply identifying the top 20% and awarding funding within this group on a random basis or according to programmatic priorities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative recommendation based on the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "fd4447b5-c845-4a25-bc6a-c8143a402515",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C49",
+      "claim": "The authors previously suggested that the NIH consider a modified lottery system.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, we refer to our recent suggestion that the NIH consider a modified lottery system (Fang and Casadevall, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fang and Casadevall, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "65305850-ec06-4eb2-860e-edde51e53cca",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C50",
+      "claim": "The New Zealand Health Research Council has already moved to a lottery system to select proposals for funding in its Explorer Grants program.",
+      "claim_type": "EXPLICIT",
+      "source": "and note that the New Zealand Health Research Council has already moved to a lottery system to select proposals for funding in its Explorer Grants program (Health Research Council of New Zealand, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Health Research Council of New Zealand, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "2cc75d6e-904e-481f-95c3-57aacbf2df10",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C51",
+      "claim": "Peer review has some ability to discriminate between the quality of proposals based on citation productivity over the entire range of percentile scores.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, while our analysis confirms that peer review has some ability to discriminate between the quality of proposals based on citation productivity over the entire range of percentile scores (Li and Agha, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the analysis, supported by citation to Li and Agha, 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "1f233098-2f51-4863-b7bd-3d8e278c1132",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C52",
+      "claim": "The ability of peer review to discriminate does not extend to the critical range of percentile scores between 3 and 20, which is the most relevant subset of applications at current paylines.",
+      "claim_type": "EXPLICIT",
+      "source": "this does not extend to the critical range of percentile scores between 3 and 20, which is the most relevant subset of applications at current paylines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "7af73d42-2eaa-4e22-b358-96f1e44e5e7c",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C53",
+      "claim": "The best science is not necessarily receiving support under the present system since most applications in the 3-20 percentile range, whether above or below current paylines, are indistinguishable with regard to citation productivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the best science is not necessarily receiving support under the present system since most applications in this percentile range, whether above or below current paylines, are indistinguishable with regard to citation productivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "302e49b6-9170-4e36-8b54-45c1e9551044",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C54",
+      "claim": "The manner in which scarce research funds are allocated deserves greater attention.",
+      "claim_type": "EXPLICIT",
+      "source": "The manner in which scarce research funds are allocated deserves greater attention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "e8fa292e-e209-4f21-846a-e8e96bb95035",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C55",
+      "claim": "A database derived from 102,740 research project (R01) grants funded by the NIH from 1980 through 2008 was obtained from Danielle Li and Richard Nakamura.",
+      "claim_type": "EXPLICIT",
+      "source": "A database derived from 102,740 research project (R01) grants funded by the NIH from 1980 through 2008 was obtained from Danielle Li (Harvard University) and Richard Nakamura (NIH Center for Scientific Review).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "01a67d14-7642-475d-860d-d75c3c5aad16",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C56",
+      "claim": "The data included the number of publications acknowledging grant support within 5 years of grant approval (from PubMed), the number of citations of those publications through 2013 (Web of Science) and the percentile score of the application (rounded to the nearest whole number).",
+      "claim_type": "EXPLICIT",
+      "source": "The data included the number of publications acknowledging grant support within 5 years of grant approval (from PubMed), the number of citations of those publications through 2013 (Web of Science) and the percentile score of the application (rounded to the nearest whole number).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the variables in the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "a6b5d7ad-ffd2-4ff8-b052-3ce345ae76be",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C57",
+      "claim": "Parametric statistical analyses were performed in Prism (GraphPad Software, San Diego, CA).",
+      "claim_type": "EXPLICIT",
+      "source": "Parametric statistical analyses were performed in Prism (GraphPad Software, San Diego, CA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used for statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "ba38ac96-04a5-4cde-9023-54348f4474eb",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C58",
+      "claim": "The receiver operating characteristic (ROC) and random forest analyses were performed using R and the pROC and randomForest packages.",
+      "claim_type": "EXPLICIT",
+      "source": "The receiver operating characteristic (ROC) and random forest analyses were performed using R (Vienna, Austria) and the pROC (Robin et al., 2011) and randomForest (Liaw and Wiener, 2002) packages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used for ROC and random forest analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "a115a6db-24ef-4c06-aef4-90e7113b63a2",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C59",
+      "claim": "Grants in the top half on the basis of publication productivity had a mean percentile score of 9.244 \u00b1 5.583 and median of 9.",
+      "claim_type": "EXPLICIT",
+      "source": "Grants in the top half on the basis of publication productivity (A) had \u2265 6 publications: mean percentile score of top half 9.244 \u00b1 5.583, median 9",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a descriptive statistic from the dataset shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "9e47ac01-1493-4d71-88d1-f4bfeca7241a",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C60",
+      "claim": "Grants in the bottom half on the basis of publication productivity had a mean percentile score of 9.947 \u00b1 5.612 and median of 10.",
+      "claim_type": "EXPLICIT",
+      "source": "mean percentile score of bottom half 9.947 \u00b1 5.612, median 10.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a descriptive statistic from the dataset shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "e9c844a2-f88c-46aa-adb7-0e10a5fdbd30",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C61",
+      "claim": "Grants in the top half on the basis of citation productivity had a mean percentile score of 9.242 \u00b1 5.625 and median of 9.",
+      "claim_type": "EXPLICIT",
+      "source": "Grants in the top half on the basis of citation productivity (B) had \u2265 128 citations: mean percentile score of top half 9.242 \u00b1 5.625, median 9",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a descriptive statistic from the dataset shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "769e0633-30bd-430c-b02f-cac3705babac",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C62",
+      "claim": "Grants in the bottom half on the basis of citation productivity had a mean percentile score of 9.939 \u00b1 5.571 and median of 10.",
+      "claim_type": "EXPLICIT",
+      "source": "mean percentile score of bottom half 9.939 \u00b1 5.571, median 10.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a descriptive statistic from the dataset shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "3f0534e3-86f8-4b5f-a957-7b7d96c820eb",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C63",
+      "claim": "Fewer grants received a percentile score of zero as a result of rounding to the nearest whole number, as well as a change in the NIH percentiling algorithm since 2009.",
+      "claim_type": "EXPLICIT",
+      "source": "Fewer grants received a percentile score of zero as a result of rounding to the nearest whole number, as well as a change in the NIH percentiling algorithm since 2009.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This explains an observation in Figure 2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "65b570b5-b6d2-42f1-b554-c3080ae31361",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C64",
+      "claim": "The AUC for citation productivity greater than the median is 0.54 with a 95% confidence interval of 0.53\u20130.54.",
+      "claim_type": "EXPLICIT",
+      "source": "Area under the curve (AUC) = 0.54 (95% confidence interval: 0.53\u20130.54) for citation productivity greater than the median.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the ROC analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "d7467eb2-9d91-4ac0-b0c7-56fe572fc88c",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C65",
+      "claim": "An AUC of 1.0 corresponds to a perfect test.",
+      "claim_type": "EXPLICIT",
+      "source": "An AUC of 1.0 corresponds to a perfect test",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about ROC curve interpretation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "a2cffa90-c0af-4709-b7fb-714b43b844ce",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C66",
+      "claim": "An AUC of 0.5 indicates performance equivalent to random chance alone.",
+      "claim_type": "EXPLICIT",
+      "source": "an AUC of 0.5 indicates performance equivalent to random chance alone.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about ROC curve interpretation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "4f72b4a1-8d55-4688-8020-b023c0394818",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C67",
+      "claim": "The mean of squared residuals in the random forest model converges to 366,620.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean of squared residuals converges to 366,620.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the random forest analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "40cf0cfc-8829-4355-ad8e-b98605e8a668",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "claim_id": "C68",
+      "claim": "0.98% of variance in productivity can be accounted for by percentile score according to the random forest model.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate that 0.98% of variance in productivity can be accounted for by percentile score.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the random forest analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5d15c860-e415-44ea-85e4-06083a6470c0",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study analyzed 102,740 NIH R01 grants with percentile scores \u226420 from 1980-2008, focusing on the most relevant range for current paylines (which hover around the 10th percentile). Data included publications within 5 years and citations through 2013, analyzed using parametric statistics, ROC curves, and random forest models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18 and C55-C58 provide clear methodological details about the dataset selection, rationale, and analytical approaches. The focus on percentile scores \u226420 is well-justified based on current NIH funding practices, and the methods are adequately described for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "6e7bd369-11ee-488d-947b-74bcfa4313b5",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Publication and citation productivity show wide variability across percentile scores in the 0-20 range. While a statistically significant correlation exists (r\u00b2=0.0078, slope=-0.132\u00b10.005 publications and -9.6\u00b10.337 citations per percentile increment), the correlation is very modest. Only grants with percentile scores \u22642 showed significantly higher citations than those with poorer scores; scores \u22653 showed no significant differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C27 are well-supported by the data presented in Figures 1A and 1B. The statistical analyses demonstrate both the existence of a weak correlation and its limited practical significance. The r\u00b2 value of 0.0078 indicates that percentile scores explain less than 1% of variance in productivity, supporting the conclusion of weak predictive ability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "c158c6d4-dc6e-4769-913f-3c7079136027",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Random forest modeling demonstrates that percentile ranking accounts for only ~1% (0.98%) of variance in grant productivity, suggesting that peer review has minimal impact in stratifying meritorious applications beyond what would be expected from random ranking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 and C67-C68 are supported by the random forest analysis shown in Figure 1\u2014figure supplement 1. The convergence of mean squared residuals and the variance explained (~1%) provide quantitative evidence for the limited predictive power of percentile scores. However, the interpretation that this is equivalent to 'random ranking' may be slightly overstated without direct comparison to actual random assignment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "fc26f491-a19d-470a-ad40-7a3d39cf95bd",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "When grants are divided into top and bottom halves based on productivity (\u22656 publications or \u2265128 citations), substantial overlap exists in percentile scores between high and low performers. A grant in the top half by citations would have only a 58% chance of being funded if only half of applications could be funded based on percentile scores.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C34 and C59-C62 are well-supported by Figure 2 data showing overlapping distributions of percentile scores for high and low productivity grants. The mean percentile scores differ by less than 1 point between top and bottom halves (9.2 vs 9.9), demonstrating poor discrimination. The 58% probability calculation is a reasonable inference from the overlap data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "0b00567e-a7f5-4580-b614-6268b3b541ea",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ROC curve analysis confirms poor discriminatory ability of percentile scores for grants in the \u226420th percentile range, with an AUC of only 0.54 (95% CI: 0.53-0.54), barely better than random chance (AUC=0.5). Even grants with perfect percentile scores (0) showed 17% failure rate in producing citations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 and C64-C66 are strongly supported by Figure 3 and the ROC analysis. An AUC of 0.54 is only marginally better than random chance, providing robust evidence for poor predictive validity. The 17% failure rate for top-scored grants (C36) further demonstrates the unpredictability of research outcomes even for highly-rated proposals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "cd097eb5-b1b5-4192-9212-9a2bfeb3b988",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Despite reviewers' ability to discriminate extremely strong applications from the rest across the full percentile range, they have limited ability to predict productivity within the critical 3-20 percentile range relevant to current paylines. This means the best science is not necessarily being funded, as applications above and below current paylines are indistinguishable in citation productivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37, C39-C40, and C51-C53 represent well-supported conclusions synthesizing the empirical findings. The data consistently show that while peer review has some discriminatory ability overall (C51), this does not extend to the critical 3-20 percentile range (C52). The conclusion that 'best science is not necessarily receiving support' (C53) follows logically from the demonstrated overlap in productivity between funded and unfunded applications in this range.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "c1ff2183-8b38-492c-ae57-0d5ae442eb6f",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Several confounding factors may artificially inflate the observed correlation between percentile scores and productivity: (1) citation practices doubled between 1980-2004, favoring more recent grants with better percentile scores due to declining paylines; (2) 13% of funded grants were exceptions scoring worse than paylines, often receiving reduced budgets and later funding that could adversely impact productivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C42-C47 identify important potential confounders but are largely speculative (C44, C47). While C43 and C46 cite supporting evidence for the existence of these factors, the actual magnitude of their impact on the observed correlations is not quantified. These represent plausible alternative explanations that weaken causal interpretations but require additional analysis to confirm their contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "e956fa91-2a35-4a1c-a765-0bd52493b67f",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The findings suggest current paylines are inadequate to fund the most productive applications, leaving considerable productivity 'on the table.' The authors propose that reviewers might save resources by identifying the top 20% and then awarding funding randomly or by programmatic priorities, noting that New Zealand has already implemented a lottery system for some grants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C41 and C48-C50 represent policy recommendations and speculative proposals rather than empirical findings. While C41 is a reasonable inference from the data showing productive grants below paylines, the lottery proposal (C48-C49) is speculative and not directly tested. C50 provides an example of lottery implementation but doesn't evaluate its effectiveness. These are discussion points rather than supported results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "116943ad-ead7-48e4-a9a1-fec9f5cd728f",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior literature presents conflicting evidence on peer review effectiveness: some studies found no correlation between percentile scores and productivity at individual NIH institutes (Berg 2013, Danthi et al. 2014), while Li and Agha (2015) found correlation across 130,000+ grants. However, the Li and Agha study included many grants with poor percentile scores (>40th) not competitive today and didn't examine stratification within meritorious applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C16 and C24 accurately summarize prior work and identify the gap this study addresses. The citations appear appropriate and the critique of Li and Agha's relevance (C15-C16) is reasonable given the changing funding landscape. This provides proper context for the current re-analysis focusing on the \u226420th percentile range.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "ded6ead5-7315-4103-bd52-23b6e8fcd78c",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Peer review is widely used to fund the highest-ranked grant applications, but this re-analysis of 102,740 NIH grants with percentile scores \u226420 demonstrates that percentile scores are poor discriminators of productivity. This may contribute to pervasive dissatisfaction with the peer review system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C4 frame the study's main finding, which is well-supported by the comprehensive analyses presented. C38 is more speculative about the connection to dissatisfaction but is supported by citations to prior literature documenting such dissatisfaction. Together these claims accurately represent the study's core contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    },
+    {
+      "id": "2b9500e0-e298-4215-bfd9-4709dca3efa5",
+      "content_id": "57384b0e-8618-4a59-9c70-7ee6a5c26e17",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Fewer grants received a percentile score of zero due to rounding to the nearest whole number and changes in the NIH percentiling algorithm since 2009.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 provides a methodological explanation for an observation in Figure 2. This is supported by knowledge of NIH practices and explains the distribution pattern observed in the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:47:30.724878Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b8e7c050-2590-4902-ae1a-28d73c2adad1",
+      "result_id": "5d15c860-e415-44ea-85e4-06083a6470c0"
+    },
+    {
+      "claim_id": "c5a487e5-9be4-4ccb-a7cb-48209e002853",
+      "result_id": "5d15c860-e415-44ea-85e4-06083a6470c0"
+    },
+    {
+      "claim_id": "e8fa292e-e209-4f21-846a-e8e96bb95035",
+      "result_id": "5d15c860-e415-44ea-85e4-06083a6470c0"
+    },
+    {
+      "claim_id": "01a67d14-7642-475d-860d-d75c3c5aad16",
+      "result_id": "5d15c860-e415-44ea-85e4-06083a6470c0"
+    },
+    {
+      "claim_id": "a6b5d7ad-ffd2-4ff8-b052-3ce345ae76be",
+      "result_id": "5d15c860-e415-44ea-85e4-06083a6470c0"
+    },
+    {
+      "claim_id": "ba38ac96-04a5-4cde-9023-54348f4474eb",
+      "result_id": "5d15c860-e415-44ea-85e4-06083a6470c0"
+    },
+    {
+      "claim_id": "aaab636a-e674-4eef-816d-20b801e2dda3",
+      "result_id": "6e7bd369-11ee-488d-947b-74bcfa4313b5"
+    },
+    {
+      "claim_id": "39ad79d2-a4dd-4101-9aea-49be15b35acb",
+      "result_id": "6e7bd369-11ee-488d-947b-74bcfa4313b5"
+    },
+    {
+      "claim_id": "ccce8209-75ac-4aec-b745-4b4ae823fc84",
+      "result_id": "6e7bd369-11ee-488d-947b-74bcfa4313b5"
+    },
+    {
+      "claim_id": "26d564bb-256b-4b8e-b229-fb2e3ed479f9",
+      "result_id": "6e7bd369-11ee-488d-947b-74bcfa4313b5"
+    },
+    {
+      "claim_id": "df820af0-2370-47a7-a751-e1318e992489",
+      "result_id": "6e7bd369-11ee-488d-947b-74bcfa4313b5"
+    },
+    {
+      "claim_id": "780c5214-3bfa-4938-86dd-3666621af83f",
+      "result_id": "6e7bd369-11ee-488d-947b-74bcfa4313b5"
+    },
+    {
+      "claim_id": "dfbe4291-ff06-4b2b-b665-8537e5e7596b",
+      "result_id": "6e7bd369-11ee-488d-947b-74bcfa4313b5"
+    },
+    {
+      "claim_id": "022b75ef-4e16-499a-8161-389c7abc1c18",
+      "result_id": "6e7bd369-11ee-488d-947b-74bcfa4313b5"
+    },
+    {
+      "claim_id": "8c03be24-f4c0-4929-98b4-adf671233c22",
+      "result_id": "c158c6d4-dc6e-4769-913f-3c7079136027"
+    },
+    {
+      "claim_id": "1d1301cb-74bc-4d62-b670-d6cd58a418e2",
+      "result_id": "c158c6d4-dc6e-4769-913f-3c7079136027"
+    },
+    {
+      "claim_id": "4f72b4a1-8d55-4688-8020-b023c0394818",
+      "result_id": "c158c6d4-dc6e-4769-913f-3c7079136027"
+    },
+    {
+      "claim_id": "40cf0cfc-8829-4355-ad8e-b98605e8a668",
+      "result_id": "c158c6d4-dc6e-4769-913f-3c7079136027"
+    },
+    {
+      "claim_id": "3262b4f0-4ecb-4d4a-9025-79ca04597916",
+      "result_id": "fc26f491-a19d-470a-ad40-7a3d39cf95bd"
+    },
+    {
+      "claim_id": "ef4404a1-8a13-41f5-bc7a-49378a40619e",
+      "result_id": "fc26f491-a19d-470a-ad40-7a3d39cf95bd"
+    },
+    {
+      "claim_id": "2aa3c18f-ff68-4a76-9c49-c4e92bda66bf",
+      "result_id": "fc26f491-a19d-470a-ad40-7a3d39cf95bd"
+    },
+    {
+      "claim_id": "6192344c-d770-4b20-bd64-5f8382e77a53",
+      "result_id": "fc26f491-a19d-470a-ad40-7a3d39cf95bd"
+    },
+    {
+      "claim_id": "0fd65983-071e-40a7-b150-3e531941248c",
+      "result_id": "fc26f491-a19d-470a-ad40-7a3d39cf95bd"
+    },
+    {
+      "claim_id": "a115a6db-24ef-4c06-aef4-90e7113b63a2",
+      "result_id": "fc26f491-a19d-470a-ad40-7a3d39cf95bd"
+    },
+    {
+      "claim_id": "9e47ac01-1493-4d71-88d1-f4bfeca7241a",
+      "result_id": "fc26f491-a19d-470a-ad40-7a3d39cf95bd"
+    },
+    {
+      "claim_id": "e9c844a2-f88c-46aa-adb7-0e10a5fdbd30",
+      "result_id": "fc26f491-a19d-470a-ad40-7a3d39cf95bd"
+    },
+    {
+      "claim_id": "769e0633-30bd-430c-b02f-cac3705babac",
+      "result_id": "fc26f491-a19d-470a-ad40-7a3d39cf95bd"
+    },
+    {
+      "claim_id": "9995e951-c345-461d-b0a6-ebda733707e3",
+      "result_id": "0b00567e-a7f5-4580-b614-6268b3b541ea"
+    },
+    {
+      "claim_id": "0089ddad-a2e1-46d2-81ba-5a3451521bd3",
+      "result_id": "0b00567e-a7f5-4580-b614-6268b3b541ea"
+    },
+    {
+      "claim_id": "65b570b5-b6d2-42f1-b554-c3080ae31361",
+      "result_id": "0b00567e-a7f5-4580-b614-6268b3b541ea"
+    },
+    {
+      "claim_id": "d7467eb2-9d91-4ac0-b0c7-56fe572fc88c",
+      "result_id": "0b00567e-a7f5-4580-b614-6268b3b541ea"
+    },
+    {
+      "claim_id": "a2cffa90-c0af-4709-b7fb-714b43b844ce",
+      "result_id": "0b00567e-a7f5-4580-b614-6268b3b541ea"
+    },
+    {
+      "claim_id": "c42f76fb-eaec-4847-b16b-8f9f7bae69cf",
+      "result_id": "cd097eb5-b1b5-4192-9212-9a2bfeb3b988"
+    },
+    {
+      "claim_id": "1fab85c4-5942-474e-bf56-889c21280a1b",
+      "result_id": "cd097eb5-b1b5-4192-9212-9a2bfeb3b988"
+    },
+    {
+      "claim_id": "29df4293-fc53-4803-97c3-998b0ec1f720",
+      "result_id": "cd097eb5-b1b5-4192-9212-9a2bfeb3b988"
+    },
+    {
+      "claim_id": "2cc75d6e-904e-481f-95c3-57aacbf2df10",
+      "result_id": "cd097eb5-b1b5-4192-9212-9a2bfeb3b988"
+    },
+    {
+      "claim_id": "1f233098-2f51-4863-b7bd-3d8e278c1132",
+      "result_id": "cd097eb5-b1b5-4192-9212-9a2bfeb3b988"
+    },
+    {
+      "claim_id": "7af73d42-2eaa-4e22-b358-96f1e44e5e7c",
+      "result_id": "cd097eb5-b1b5-4192-9212-9a2bfeb3b988"
+    },
+    {
+      "claim_id": "19dda311-1d9b-4751-8180-e08221ef79d0",
+      "result_id": "c1ff2183-8b38-492c-ae57-0d5ae442eb6f"
+    },
+    {
+      "claim_id": "81ad8e59-319f-4d67-863d-b1d1ef60f3e1",
+      "result_id": "c1ff2183-8b38-492c-ae57-0d5ae442eb6f"
+    },
+    {
+      "claim_id": "2b8da83e-75a0-4475-9d4f-c7ec3729848d",
+      "result_id": "c1ff2183-8b38-492c-ae57-0d5ae442eb6f"
+    },
+    {
+      "claim_id": "1168915e-da79-4a14-af91-14660ff6e759",
+      "result_id": "c1ff2183-8b38-492c-ae57-0d5ae442eb6f"
+    },
+    {
+      "claim_id": "f666993f-78ac-454c-af22-cbc0acb70f3c",
+      "result_id": "c1ff2183-8b38-492c-ae57-0d5ae442eb6f"
+    },
+    {
+      "claim_id": "9b6b0d2f-b139-4f20-92db-2820cea12dee",
+      "result_id": "c1ff2183-8b38-492c-ae57-0d5ae442eb6f"
+    },
+    {
+      "claim_id": "34849209-b981-483c-a684-053e0a934c6f",
+      "result_id": "e956fa91-2a35-4a1c-a765-0bd52493b67f"
+    },
+    {
+      "claim_id": "0adb0b17-30e7-45b7-8d74-df98d6a23ef5",
+      "result_id": "e956fa91-2a35-4a1c-a765-0bd52493b67f"
+    },
+    {
+      "claim_id": "fd4447b5-c845-4a25-bc6a-c8143a402515",
+      "result_id": "e956fa91-2a35-4a1c-a765-0bd52493b67f"
+    },
+    {
+      "claim_id": "65305850-ec06-4eb2-860e-edde51e53cca",
+      "result_id": "e956fa91-2a35-4a1c-a765-0bd52493b67f"
+    },
+    {
+      "claim_id": "302e49b6-9170-4e36-8b54-45c1e9551044",
+      "result_id": "e956fa91-2a35-4a1c-a765-0bd52493b67f"
+    },
+    {
+      "claim_id": "ef173633-f260-48f9-8e95-c25268adffb2",
+      "result_id": "116943ad-ead7-48e4-a9a1-fec9f5cd728f"
+    },
+    {
+      "claim_id": "daee66a1-19d2-4d1b-bd19-b0dc7513e316",
+      "result_id": "116943ad-ead7-48e4-a9a1-fec9f5cd728f"
+    },
+    {
+      "claim_id": "9b8ab707-83de-4300-acc4-33394f512c37",
+      "result_id": "116943ad-ead7-48e4-a9a1-fec9f5cd728f"
+    },
+    {
+      "claim_id": "a56800da-4475-465b-9c3a-b918c261ee7a",
+      "result_id": "116943ad-ead7-48e4-a9a1-fec9f5cd728f"
+    },
+    {
+      "claim_id": "537d8e50-3925-4bec-bd63-35aa197b5c1c",
+      "result_id": "116943ad-ead7-48e4-a9a1-fec9f5cd728f"
+    },
+    {
+      "claim_id": "59fa46b6-fe8f-4251-9824-0427700157fd",
+      "result_id": "116943ad-ead7-48e4-a9a1-fec9f5cd728f"
+    },
+    {
+      "claim_id": "42f6ba5c-8422-4423-bb95-7922d6caeab4",
+      "result_id": "116943ad-ead7-48e4-a9a1-fec9f5cd728f"
+    },
+    {
+      "claim_id": "34c55399-61da-49b0-8799-206a65a9ce21",
+      "result_id": "116943ad-ead7-48e4-a9a1-fec9f5cd728f"
+    },
+    {
+      "claim_id": "1027c56f-c342-43d4-9645-2e4ce63ccb60",
+      "result_id": "116943ad-ead7-48e4-a9a1-fec9f5cd728f"
+    },
+    {
+      "claim_id": "abc9cdde-10dd-47d1-ada2-2d9c634858d5",
+      "result_id": "116943ad-ead7-48e4-a9a1-fec9f5cd728f"
+    },
+    {
+      "claim_id": "5766a050-c547-4e06-b9f2-b98919a508a4",
+      "result_id": "116943ad-ead7-48e4-a9a1-fec9f5cd728f"
+    },
+    {
+      "claim_id": "444c8bc2-8bab-4078-a8a0-45e7c64ac40e",
+      "result_id": "116943ad-ead7-48e4-a9a1-fec9f5cd728f"
+    },
+    {
+      "claim_id": "38ad7273-1b49-4d7a-8bc7-ed3bc9a6d6f6",
+      "result_id": "116943ad-ead7-48e4-a9a1-fec9f5cd728f"
+    },
+    {
+      "claim_id": "a56d433a-5521-4b5f-84be-8bc8031d066e",
+      "result_id": "116943ad-ead7-48e4-a9a1-fec9f5cd728f"
+    },
+    {
+      "claim_id": "78439566-20e3-4fdd-9f23-03f448d1145e",
+      "result_id": "116943ad-ead7-48e4-a9a1-fec9f5cd728f"
+    },
+    {
+      "claim_id": "0312cac7-ef00-42c2-8918-02e684895812",
+      "result_id": "ded6ead5-7315-4103-bd52-23b6e8fcd78c"
+    },
+    {
+      "claim_id": "c3f8195a-1f6a-408f-b399-f2419cc2e404",
+      "result_id": "ded6ead5-7315-4103-bd52-23b6e8fcd78c"
+    },
+    {
+      "claim_id": "133d687f-1a99-403e-8189-32a2284be47a",
+      "result_id": "ded6ead5-7315-4103-bd52-23b6e8fcd78c"
+    },
+    {
+      "claim_id": "3f0534e3-86f8-4b5f-a957-7b7d96c820eb",
+      "result_id": "2b9500e0-e298-4215-bfd9-4709dca3efa5"
+    }
+  ],
+  "comparisons": []
+}

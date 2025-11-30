@@ -1,0 +1,253 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The dorsal trunk (DT) of Tr2 undergoes synchronous cell proliferation during L3, starting with 16-18 cells at early L3 and expanding to ~360 cells by late L3. Clonal analysis revealed that cells re-enter the cell cycle synchronously at 18-20 hours post-molt with a cycle time of 10-12 hours, allowing five divisions that are sufficient to account for all DT cells. Clones formed contiguous patches indicating cells do not migrate or intermix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C22 provide a coherent picture of DT proliferation dynamics supported by quantitative clonal analysis data (Figure 1). The synchronous re-entry, cycle time measurements, and calculation that five divisions suffice to generate the final cell number are internally consistent and well-documented. The contiguous clone morphology supports the non-migratory behavior claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Distinct gene expression domains define the DT, DB, and TC branches of Tr2. The DT expresses Sal, Serrate, and Delta but not Kni, while the DB expresses Kni and Vein but not Sal/Serrate/Delta. The TC expresses Cut and Vein. Sharp boundaries separate these domains at branch junctions, with no cells co-expressing markers from different domains (e.g., no Kni+Sal+ cells detected).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C34 describe complementary gene expression patterns documented by immunohistochemistry (Figure 2). The mutual exclusivity of domain markers (C34) and sharp boundaries at junctions provide strong evidence for distinct molecular territories. Multiple independent markers define each domain, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Notch signaling is activated at the DT/DB and DT/TC junctions, as shown by NRE-lacZ reporter expression. Notch activation is polarized, occurring specifically on the DB side (Kni+ cells) at the DT/DB border and on the TC side (Cut+ cells) at the DT/TC border. Expression is highest at the border and decreases with distance, correlating with vein expression but not with all Notch targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C44 demonstrate polarized Notch activation at compartment boundaries using the NRE-lacZ reporter (Figure 3). The precise coincidence with gene expression boundaries (C37) and graded expression patterns (C40-C41) are well-documented. The differential correlation with downstream targets (C42-C43) adds nuance to the signaling model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C45",
+      "C46",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Clonal analysis reveals lineage restriction boundaries at the DT/DB and DT/TC junctions. 79 marked patches lined the DT/DB border and 87 lined the DT/TC border, all from one side only. Clone borders at these junctions appeared straighter than elsewhere and coincided precisely with gene expression domain boundaries, indicating these are lines of clonal restriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C45-C46, C73-C76 present extensive clonal analysis data (Figure 4 and supplements) showing that clones respect boundaries at branch junctions. The large number of clones analyzed (166 total at borders), their consistent behavior, and correlation with molecular boundaries provide strong evidence for lineage restriction. The statistical argument in C74 regarding independent clones is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C77",
+      "C78"
+    ],
+    "result": "sal function is both necessary and sufficient for DT cell identity. Loss of sal in DT cells causes them to express DB markers (Kni, vein) and lose DT markers (Delta, Cut), while ectopic sal expression in DB or TC cells induces DT markers. sal mutant clones sort out from wild-type neighbors and activate Notch signaling, as do clones ectopically expressing kni.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52, C77-C78 demonstrate sal's selector gene function through loss-of-function and gain-of-function experiments (Figure 5). The reciprocal transformations (DT\u2192DB without sal; DB/TC\u2192DT with sal) and complete marker switching provide strong evidence. The sorting-out phenotype and Notch activation in mutant clones support the identity transformation interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Ectopic sal expression in DB and TC cells transforms them to DT identity. Sal-expressing clones in the DB induce vein expression in adjacent cells, express Delta cell-autonomously, and alter branch morphology. Similar transformations occur in the TC where sal overexpression upregulates Delta and downregulates Cut.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 describe gain-of-function phenotypes (Figure 5H-K) that complement the loss-of-function data. The non-autonomous induction of vein (C53), autonomous Delta expression (C54), and morphological changes (C55) are well-documented. The TC phenotypes (C56) provide independent confirmation of sal's sufficiency for DT identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Delta-activated Notch signaling at the DT/DB junction induces vein expression and morphological specialization. Ectopic Delta expression in the DB activates Notch signaling and vein expression in adjacent cells and increases branch diameter. Activated Notch in DB clones produces similar effects. The proximal DB normally has a branched lumen structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 demonstrate Notch's role in junction morphogenesis through gain-of-function experiments (Figure 6A-F). The non-autonomous activation of vein and Notch signaling (C58), morphological changes (C59), and consistency between Delta and NotchACT phenotypes (C60) support the model. The branched lumen observation (C63) provides additional morphological detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C82"
+    ],
+    "result": "Notch signaling is required for border cell identity, specialization, and segregation. Notch RNAi eliminates NRE-lacZ expression at junctions, prevents proximal DB expansion, and allows kni-expressing clones to cross the DT/DB border without sorting out. This demonstrates Notch's essential role in maintaining compartment boundaries and border cell properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C64-C67, C82 demonstrate Notch's requirement through loss-of-function analysis (Figure 6G-I). The elimination of reporter expression (C65), morphological defects (C66), and loss of lineage restriction when Notch is removed (C68-C69) provide strong evidence. The rescue of sorting-out by removing Notch (C68) is particularly compelling for Notch's role in boundary maintenance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Clones expressing both kni and Notch-RNAi in the DT integrate with neighbors without sorting out and can cross into the DB, unlike kni-expressing clones with normal Notch function that sort out. This demonstrates that Notch signaling is required for the segregation of cells with different identities at compartment borders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 describe a critical experiment (Figure 6I) showing that removing Notch function eliminates the sorting-out behavior of kni-expressing clones. This directly tests Notch's role in boundary maintenance and provides strong evidence that Notch is required for segregation, not just identity specification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C7",
+      "C70",
+      "C71",
+      "C72",
+      "C79",
+      "C80",
+      "C81",
+      "C84"
+    ],
+    "result": "Tr2 is comprised of developmental compartments defined by lineage restriction, selector gene expression, and Notch signaling centers at borders. The DT, DB, and TC represent distinct compartments with cells regulated by selector genes (sal, kni). The compartment borders show polarity reversal and situate Notch signaling centers. This represents the first identification of developmental compartments in an internal tubular organ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C7, C70-C72, C79-C81, C84 synthesize the major findings into the compartment model. The integration of lineage restriction (clonal analysis), selector gene function (sal/kni), Notch signaling at borders, and morphological specialization satisfies classical compartment criteria. The conclusion that these are bona fide developmental compartments (C84) is justified by the comprehensive evidence, though the polarity reversal claim (C81) is more speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The Drosophila tracheal system forms in the embryo by post-mitotic morphogenesis from ~10 blastoderm cells that undergo three divisions by stage 11, with no further mitoses until L3 when Tr2 cells re-enter the cell cycle. This establishes the developmental context for the L3 proliferation studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C11 provide background information supported by citations to established literature. These claims accurately represent prior knowledge about tracheal development and set up the rationale for studying L3 proliferation. The claims are well-supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "Developmental compartments are an organizational feature relevant to branched tubular networks, extrapolating from the Tr2 findings to suggest broader applicability of compartment organization beyond insect epithelia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C8 is a speculative extrapolation from the Tr2 findings. While the identification of compartments in Tr2 is well-supported, the generalization to other branched tubular networks lacks direct evidence. This is acknowledged as a suggestion in the abstract and represents a hypothesis for future testing rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "Notch signaling may pattern the proximal DB based on the correlation between Notch activation levels and expression of vein and other genes in a graded manner from the border.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C44 is explicitly stated as a suggestion based on correlative data (C40-C43). While the correlation between Notch activation and gene expression is documented, causality has not been established through functional experiments. This represents a reasonable hypothesis requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "The DT/DB border may be a site of polarity reversal, analogous to the A/P compartment border of the wing disc, based on the polarization of gene expression and morphology relative to the border.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C81 proposes polarity reversal by analogy to wing disc compartments. While gene expression and morphology show polarization relative to the border, direct evidence for polarity reversal (e.g., through polarity markers or functional tests) is not provided. This remains a plausible but undemonstrated hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "Notch signaling is active on both sides of the wing disc D/V border, contrasting with the polarized Notch activation in Tr2 where signaling is specific to one side of the border.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 accurately represents established knowledge about wing disc D/V border Notch signaling from cited literature and correctly contrasts it with the Tr2 findings. This comparison highlights a mechanistic difference between compartment types.",
+    "result_type": "MINOR"
+  }
+]

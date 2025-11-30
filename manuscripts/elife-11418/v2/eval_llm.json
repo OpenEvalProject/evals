@@ -1,0 +1,521 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Serum to 2i+vitC conversion induces rapid and extensive DNA demethylation in ES cells. CpG methylation decreased from 77% to 13% in 6 days and reached 6% after 14 days, which is significantly lower than serum+vitC (56%) or 2i-only (22%) conditions. This rapid demethylation requires synergistic action of 2i-dependent passive demethylation and vitC-dependent active demethylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are well-supported by LUMA assay data (Figure 1A) and comparison with control conditions (Figure 1\u2014figure supplement 1A). The quantitative measurements are consistent across technical approaches and the synergistic effect is demonstrated by comparing different culture conditions. The inference about synergistic mechanisms (C36) is reasonable given the comparative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Whole-genome bisulfite sequencing reveals that 2i+vitC-cultured ES cells are almost completely unmethylated (4.6% average CpG methylation), with low methylation homogeneously distributed across all genomic compartments including all transposon families. Only 4,100 Residually Methylated Regions (RMRs) with 26% average methylation were identified, 75% of which overlap with repeats (half ERVK class). Even imprinting control regions, typically protected in 2i-only conditions, were devoid of residual methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 are strongly supported by WGBS data (Figures 1C-G). The genome-wide methylation quantification is consistent with LUMA data, and the distribution analysis across genomic compartments is comprehensive. The identification and characterization of RMRs is methodologically sound, and the finding about ICR demethylation is notable and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Transposons (LINE1, IAPEz, MERVL) undergo biphasic regulation during serum to 2i+vitC conversion: initial up-regulation peaking at day 6, followed by re-silencing in the absence of DNA methylation. This pattern was confirmed by multiple methods (RT-qPCR, Nanostring) and reproduced in E14 ES cells. The burst did not occur in Dnmt-tKO cells, suggesting rapid transition from methylated to unmethylated state provides a window for reactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 are well-supported by RT-qPCR (Figure 2A) and Nanostring data (Figure 2\u2014figure supplement 1A,B). The biphasic pattern is reproducible across cell lines and measurement methods. The absence of the burst in Dnmt-tKO cells (C53) provides important mechanistic insight. The inference about the reactivation window (C54) is reasonable given the comparative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The transposon expression burst occurs at the protein level, with LINE1-ORF1 and IAP-gag proteins peaking at D6. LINE1 protein shows great inter-cellular variability throughout conversion, which is not linked to pluripotency levels as assessed by NANOG co-staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by western blot (Figure 2B) and immunofluorescence quantification (Figure 2C, Figure 2\u2014figure supplement 2A,B). The heterogeneity observation for LINE1 is well-documented, and the lack of correlation with NANOG provides evidence against pluripotency-linked regulation. The data quality appears sufficient for these conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Despite transient transposon de-repression at D6, cellular viability and genome integrity remain intact during 2i+vitC conversion. Cell proliferation, apoptosis, transposon copy number, and karyotypes remain stable throughout the 14-day conversion period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are supported by multiple assays (Figure 2\u2014figure supplement 3A-E) measuring proliferation, cell death, transposon copy number, and karyotype. The comprehensive assessment across multiple parameters provides strong evidence that the transposon burst does not compromise cellular fitness or genome integrity. This is an important control result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "RNA-seq analysis reveals 58 transposon families differentially expressed during conversion. Almost all families underwent significant up-regulation from D0 to D6, followed by global silencing restoration between D6 and D13. Some families (MERVL, SINEs B2, LINE1) were more strongly repressed at D13 than at D0, while others (MMERGLN, ETnERV3, IAPEz) showed incomplete repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are well-supported by RNA-seq data (Figure 2D,E). The volcano plots clearly show the biphasic regulation pattern across transposon families. The differential behavior of specific families at D13 is documented and provides important detail about heterogeneous silencing restoration. The statistical analysis appears appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Unique mapping RNA-seq analysis reveals 7,163 LINEs and 2,372 ERVs with detectable activity (representing 19.3% and 15.2% of intact elements). More elements were active at D6 than D0 or D13. Expression was most homogeneous at D6, while D13 showed heterogeneous regulation with family-specific patterns. IAPEz elements split into two categories at D13: high expression or complete silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C76 are supported by unique mapping RNA-seq analysis (Figure 2F, Figure 2\u2014figure supplement 4C-F). The quantification of active elements is methodologically sound, though the authors acknowledge underestimation due to identical copies. The observation of homogeneous D6 expression versus heterogeneous D13 regulation is well-documented and provides important mechanistic insight into individual element behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Protein-coding genes follow different dynamics than transposons during 2i+vitC conversion. Most genes show stable expression, with 3,301 genes differentially regulated displaying monotonic rather than biphasic patterns. Dazl is continuously up-regulated while ZSCAN4 family genes progressively decrease, suggesting 2-cell-like cells disappear in 2i+vitC medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 are supported by RNA-seq data (Figure 3A,B, Figure 3\u2014figure supplement 1A). The contrast between gene and transposon dynamics is clear. The inference about 2-cell-like cells (C82) is reasonable given the ZSCAN4 expression pattern and citation to Macfarlan et al., 2012, though it remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "156 genes adopt a transposon-type expression pattern with a D6 peak. These genes are enriched for transcription factors related to pluripotency, including Nanog, Klf4, Tbx3, and Prdm14, which peak at D6 at both transcript and protein levels. The peak of transposon transcription coincides with maximum availability of pluripotency regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 are supported by RNA-seq (Figure 3A,C, Supplementary file 1) and western blot data (Figure 3D). The gene ontology analysis is appropriate, and the temporal correlation between pluripotency factor expression and transposon de-repression is well-documented. The inference about coincidence (C87) is reasonable given the temporal data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "LTR sequences of ERVs can direct transcription of nearby genes forming chimeric transcripts. Several dozen genes use transposon promoters, with Mep1b showing transposon-coordinated expression (10-fold induction at D6 driven by RLTR9E). However, genome-wide transposon relaxation has minimal effect on protein-coding gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 are supported by RNA-seq data (Figure 3E, Supplementary file 2C) and citations to prior work. The Mep1b example is well-documented. The conclusion about minimal genome-wide effect (C91) is a reasonable inference from the limited number of affected genes relative to the extensive transposon de-repression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Large-scale reorganization of repressive histone modifications occurs during serum to 2i+vitC conversion. H3K9me3 levels remain globally constant, H3K9me2 levels are strongly reduced, and H3K27me3 levels increase from the first days of conversion. These global dynamics are not correlated with changes in expression of H3K9me2 modifiers or polycomb machinery components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 are well-supported by western blot and immunostaining data (Figure 4A, Figure 4\u2014figure supplement 1A,B). The observation of differential histone mark dynamics is clear and reproducible. The lack of correlation with enzyme expression (C95) is an important finding suggesting post-transcriptional regulation or other mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "H3K9me2 is constitutively absent or rapidly removed at several transposon types upon 2i+vitC conversion. Ehmt2-KO cells show enhanced IAPEz and MERVL expression at D6 but still exhibit transposon re-silencing after D6, excluding a role for H3K9me2 in compensating DNA methylation loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 are supported by ChIP-qPCR (Figure 4B) and Nanostring data in Ehmt2-KO cells (Figure 4\u2014figure supplement 1C). The genetic evidence from Ehmt2-KO cells is particularly strong for excluding H3K9me2's role in long-term silencing. The inference (C99) is well-justified by the re-silencing observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "ChIP-seq reveals stable H3K9me3 peak numbers (~39,000) throughout conversion, while H3K27me3-enriched regions increase four-fold (9,663 to 40,098). Newly gained H3K27me3 peaks localize to ERV and LINE1 repeats rather than gene promoters, with gradual relocalization to pericentric heterochromatin. This H3K27me3 accumulation at transposons is specific to hypomethylated genomes (2i+vitC and Dnmt-tKO cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C106 are strongly supported by ChIP-seq data (Figure 4C,D, Figure 4\u2014figure supplement 1A, 2B,C). The quantitative peak calling is appropriate, and the redistribution pattern is well-documented. The comparison with Dnmt-tKO cells (C106) provides important validation that the H3K27me3 pattern is linked to DNA methylation loss rather than culture conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "At D0 in serum, most transposon families are occupied by H3K9me3 but lack H3K27me3, with RLTR4 as a notable exception showing strong H3K27me3 (90% identical to MuLV). Upon 2i+vitC conversion, H3K9me3 patterns are exacerbated while H3K27me3 progressively accumulates at most transposons with variable gain among families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 are supported by ChIP-seq data (Figure 4E, Figure 4\u2014figure supplement 3A). The baseline characterization and dynamic changes are well-documented. The RLTR4/MuLV connection (C110-C111) is interesting and supported by citation. The variable H3K27me3 gain among families is clearly shown in the heatmap.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "High levels of H3K9me3 and H3K27me3 in ERV elements are restricted to full-length intact elements, with solo-LTRs lacking these marks (except IAP solo-LTRs enriched for H3K9me3). H3K9me3 changes occur rapidly (D0-D6) while H3K27me3 gain lags behind (D6-D15). Three chromatin categories emerge: A) co-occupancy of H3K9me3 and H3K27me3, B) exclusive H3K9me3, and C) switch from H3K9me2/3 to H3K27me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 are well-supported by ChIP-seq data (Figure 4E,F, Figure 4\u2014figure supplement 3B,C). The observation about intact elements versus solo-LTRs (C114-C116) is important for understanding targeting mechanisms. The temporal separation of H3K9me3 and H3K27me3 dynamics (C117) is clearly documented. The three-category classification (C118) is a major organizational finding well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Individual element analysis reveals family-specific chromatin patterns. Category B (IAPEz) and C (MERVL, MURVY) elements show compact, homogeneous patterns. Category A families show variable behavior: MMERGLN, RLTR6, RLTR10 elements uniformly gain H3K27me3 while maintaining H3K9me3, while L1-T and IAPEy families show intra-familial heterogeneity with subsets maintaining H3K9me3 without acquiring H3K27me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C122 are supported by ChIP-seq analysis of individual elements (Figure 5A, Figure 5\u2014figure supplement 1A,C). The scatter plots clearly show the different patterns of homogeneity versus heterogeneity. This individual element analysis provides important detail beyond family-level averages and reveals the complexity of chromatin regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "H3K9me3 domains spread to adjacent genomic regions while H3K27me3 is confined to transposon sequences. H3K9me3 enrichment is restricted to 5' UTR of LINEs and evenly distributed along specific ERVK elements (IAPEz, IAPEy, MMERVK10C). Strikingly, category A transposons show spatial separation: H3K9me3 occupies the 5' end while H3K27me3 targets the 3' end in LINEs and several ERV1/K classes, though some families (VL30, IAPEy, ETnERV) show 5' co-localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128 are strongly supported by ChIP-seq metaplot analysis (Figure 5B,C, Figure 5\u2014figure supplement 2A). The spatial separation of H3K9me3 and H3K27me3 within transposon sequences (C127) is a novel and striking finding. The refinement of prior observations about H3K9me3 distribution (C125-C126) is important. The metaplot data clearly shows the spatial patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Analysis of Dnmt-tKO ES cells shows concordant H3K27me3 patterns with 2i+vitC-grown cells, supporting that H3K27me3 distribution corresponds to adaptation to DNA methylation loss. Upon 2i+vitC-induced demethylation, H3K27me3 and H3K9me3 can converge on category A sequences but occupy different territories. IAPEz (category B) and MERVL (category C) represent extremes of exclusivity. H3K27me3 deposition at transposons is a default response to absence of both DNA and H3K9 methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C133 are supported by analysis of published ChIP-seq data (Figure 5\u2014figure supplement 2B) and the comprehensive ChIP-seq analysis. The concordance between culture-induced and genetically-induced demethylation (C129-C130) is important validation. The summary conclusions (C131-C133) are well-justified by the extensive chromatin profiling data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Genetic analysis reveals differential roles of chromatin pathways. L1 repression in serum relies on SUV39H-dependent H3K9me3 for L1-A and modestly for L1-T. LINE1 expression is upregulated in Setdb1+/- cells at conversion end. Polycomb absence has little effect on transposons in methylated ES cells (D0), but many transposon families including young LINE1 subtypes are strongly activated in fully converted Eed-KO cells, demonstrating polycomb-mediated silencing specifically in absence of DNA methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C138 are supported by Nanostring data in genetic mutants (Figure 6A, Figure 6\u2014figure supplement 2A) and RNA-seq in Eed-KO cells (Figure 7A,B, Figure 7\u2014figure supplement 1). The genetic evidence is strong, with appropriate controls. The temporal specificity of polycomb's role (C136-C138) is an important finding well-supported by the D0 versus D13 comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C139",
+      "C140"
+    ],
+    "result": "ERV families gaining H3K27me3 uniquely in their 3' end (MMERGLN, RLTR6, RLTR10) are not misregulated in Eed-KO cells, suggesting 3' end H3K27me3 deposition does not drive transcriptional repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C140 are supported by RNA-seq data in Eed-KO cells. The lack of misregulation for these specific families provides important functional insight into the role of 3' H3K27me3. The inference (C140) is reasonable, though the mechanism remains unclear. This is an important negative result that helps define functional versus non-functional H3K27me3 deposition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "IAPEz elements (category B) show complex genetic regulation. Trim28+/- and Setdb1+/- cells show enhanced IAPEz up-regulation and repression failure after D6, consistent with SETDB1-related H3K9me3 control. However, Suv39h-dKO cells show unexpected IAPEz suppression, possibly due to long-term compensatory mechanisms. IAPEz elements are more strongly expressed in Eed-KO cells during conversion despite apparent lack of H3K27me3 enrichment, representing a general trend across individual elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C141-C145 are supported by Nanostring and RNA-seq data (Figures 6B, 7A-C), but the results are complex and somewhat contradictory. The Suv39h-dKO suppression (C142) is unexpected and the explanation (C143) is speculative. The IAPEz activation in Eed-KO cells (C144-C145) is at odds with ChIP-seq data showing lack of H3K27me3, suggesting indirect effects or technical limitations. Additional experiments would be needed to resolve these inconsistencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "MERVL elements represent a striking model of epigenetic switch from H3K9 to H3K27 methylation-based repression. MERVL silencing relies on EHMT1/EHMT2-dependent H3K9me2 and SUV39H-dependent H3K9me3 in serum. SUV39H-dependent H3K9me3 becomes dispensable upon 2i+vitC conversion, with switch to H3K27me3 control correlated with 15-fold expression increase in Eed-KO cells. MERVL is the most highly activated transposon in Eed-KO cells, with collective upregulation of all individual elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C150 are strongly supported by Nanostring data in genetic mutants (Figure 6C) and RNA-seq in Eed-KO cells (Figure 7A-C). The genetic evidence clearly demonstrates the epigenetic switch from H3K9me3 to H3K27me3 control. The collective upregulation in Eed-KO cells provides strong functional validation. This is one of the clearest examples of the chromatin switch mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Polycomb-dependent control can be implemented in absence of SUV39H even in cells with high DNA methylation. MERVL upregulation in Suv39h-dKO cells (5-fold) is further enhanced in Suv39h-Eed-tKO cells (20-fold). MERVL silencing also relies on histone deacetylases (HDACs), with TSA treatment causing strong upregulation in both serum and 2i+vitC conditions, suggesting histone deacetylation is required for efficient silencing regardless of DNA methylation status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C154 are supported by Nanostring data in double mutants (Figure 6C) and TSA treatment experiments (Figure 6\u2014figure supplement 2B). The genetic evidence for polycomb compensation (C151) is strong. The HDAC requirement (C152-C154) is well-documented and adds another layer to the silencing mechanisms. The TSA experiments are appropriately controlled.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Various transposon families adopt a common regulatory fate: after initial transcriptional burst, repression is re-established in a DNA methylation-independent manner. Distinct combinations of H3K9me2/3 and H3K27me3 define three functional categories: joint H3K9me3 and H3K27me3 (A), H3K9me3-exclusive (B), and H3K27me3-exclusive (C). Dnmt-tKO cells display similar transposon-specific chromatin patterns when grown in serum, excluding medium-related effects. Various histone-based repression strategies are implemented upon DNA methylation loss, safeguarding pluripotent cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C155-C158 represent the main conclusions of the study, well-supported by the comprehensive DNA methylation, chromatin, transcriptional, and genetic data presented throughout. The three-category classification (C156) is a major organizational finding. The validation in Dnmt-tKO cells (C157) is important for excluding culture artifacts. The overall conclusion (C158) is well-justified by the extensive evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "DNA methylation does not exert significant control over H3K9me3-targeting of transposons in ES cells, as evidenced by H3K9me3 persistence upon DNA methylation loss. Regions of persistent DNA methylation (RMRs) coincide with high H3K9me3 enrichment on transposon sequences in 2i+vitC-converted cells, supporting that H3K9me3 can confer protection against DNA demethylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C164 are supported by comparison of WGBS and ChIP-seq data. The observation that H3K9me3 remains stable despite DNA methylation loss (C162) is clear from the ChIP-seq time course. The correlation between RMRs and H3K9me3 (C163) is well-documented. The conclusion about H3K9me3 protecting against demethylation (C164) is supported by citation to Leung et al., 2014 and the correlative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "The rapid disappearance of H3K9me2 upon serum to 2i+vitC conversion could reflect a direct role of DNA methylation in maintaining these marks. H3K9me2 reduction is also observed in Dnmt-tKO ES cells grown in serum. Coupled losses of DNA methylation and H3K9me2 have been reported in vivo during PGC development and in DNA methylation-deficient spermatocytes. A mechanism of H3K9me2 methyltransferase recruitment via DNA methylation has been resolved in plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C168 are supported by the H3K9me2 dynamics data, observations in Dnmt-tKO cells (though unpublished), and citations to prior work. The speculation about DNA methylation's role in H3K9me2 maintenance (C165) is reasonable given the temporal correlation. The in vivo parallels (C167) and plant mechanism (C168) provide broader context, though the mammalian mechanism remains to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "H3K27me3 is barely detectable at transposons in DNA hypermethylated WT ES cells but accumulates in both 2i+vitC-converted and Dnmt-tKO cells, consistent with DNA methylation and H3K27me3 being mutually exclusive genome-wide. Transposon sequences have GC content superior to genome average, which could be sufficient to attract polycomb-mediated H3K27me3 deposition in absence of DNA methylation, as polycomb typically targets unmethylated GC-rich gene promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C174 are supported by ChIP-seq data and GC content analysis (Figure 5\u2014figure supplement 2B). The mutual exclusivity observation (C169-C171) is well-documented and supported by citations. The GC content observation (C173) is data-driven. The speculation about GC content driving H3K27me3 recruitment (C174) is reasonable given the polycomb targeting preferences (C172), though mechanistic validation would be needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179"
+    ],
+    "result": "Potential mechanisms for H3K27me3 recruitment at hypomethylated transposons include methyl-sensitive DNA binding proteins. BEND3 was identified as a sensor of DNA methylation states at pericentromeric repeats recruiting H3K27me3 in Dnmt-tKO cells, and H3K27me3 relocalization to pericentromeric repeats is observed in 2i+vitC cells. KDM2B, targeting unmethylated CpG-rich sequences, recruits PRC1 potentially leading to H3K27me3 deposition. H3K27me3 invades the transposon space left unmarked by DNA methylation upon 2i+vitC conversion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C179 are supported by ChIP-seq/ChIP-qPCR data showing H3K27me3 at pericentromeric repeats (C176) and citations to prior work on BEND3 (C175) and KDM2B (C177). The speculation about comparable mechanisms at transposons (C178) is reasonable given the parallels. The summary statement (C179) is a reasonable hypothesis based on the data, though the specific recruitment mechanisms remain to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "The three chromatin configurations adopted by transposon families are determined by H3K9me3 occupancy. Mutual exclusion between H3K9me3 and H3K27me3 has been documented at gene promoters and pericentromeric repeats. Category B transposons maintaining H3K9me3 throughout their length do not acquire H3K27me3 despite DNA methylation loss. Category C transposons become strongly enriched for H3K27me3 as H3K9me2/3 depletes. Category A elements show physical segregation: H3K9me3 constitutively marks the 5' end, leaving only the 3' end accessible to H3K27me3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C180-C184 are strongly supported by the comprehensive ChIP-seq analysis (Figure 8B). The inference about H3K9me3 determining chromatin configuration (C180) is well-justified by the data. The mutual exclusivity observation (C181) is supported by citations. The category-specific behaviors (C182-C184) are clearly documented in the ChIP-seq data and represent a major mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C186",
+      "C187"
+    ],
+    "result": "3' end enrichment of H3K27me3 does not confer transcriptional repression of category A transposons, as revealed by transcriptome analysis of 2i+vitC-converted Eed-KO cells. It may rather represent a passive response to lack of DNA methylation and H3K9me3 at this position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C186-C187 are supported by RNA-seq data in Eed-KO cells showing lack of misregulation for category A transposons with 3' H3K27me3. The inference about passive response (C187) is reasonable given the functional data, though speculative. This is an important finding that distinguishes functional from non-functional H3K27me3 deposition patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193"
+    ],
+    "result": "The epigenetic switch from DNA methylation-dependent to -independent transposon silencing is not perfectly synchronized. At D6, DNA methylation is mostly erased but H3K27me3 patterns are not yet established. The stability of H3K9me3 marks at category A and B transposons is insufficient to ensure continuous silencing, possibly due to transiently deficient H3K9me3 readers. The lag between DNA methylation loss and histone-based repression implementation could create an opportunistic window for transposon reactivation when adequate transcription factors are available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C189-C193 are supported by the temporal analysis of DNA methylation, chromatin, and expression data. The observation of imperfect synchronization (C189-C190) is clear from the time course data. The inference about H3K9me3 reader deficiency (C192) is speculative but reasonable. The proposed model about the reactivation window (C193) is well-justified by the temporal dynamics and provides a mechanistic explanation for the D6 burst.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C194",
+      "C195",
+      "C196",
+      "C197"
+    ],
+    "result": "Transposons are enriched in pluripotency transcription factor binding motifs (particularly NANOG and OCT4), and upregulation of these factors is sufficient to promote transposon expression. The simultaneous disappearance of DNA methylation marks and increased availability of pluripotency activators create favorable conditions for transposon expression at D6. After brief silencing release, functional repressive chromatin is recovered in an H3K9me3 and/or H3K27me3-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C194-C197 are supported by citations to prior work on transcription factor binding motifs and the temporal correlation between pluripotency factor expression and transposon de-repression shown in this study. The proposed model (C196) is well-justified by the data (Figure 8B). The summary statement (C197) accurately reflects the study findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C198",
+      "C199",
+      "C200"
+    ],
+    "result": "A peak of massive cell death of Eed-KO ES cells is observed between D6 and D10 of medium conversion when DNA methylation has mostly disappeared. This phenotype is exacerbated in Suv39h-Eed-tKO cells, which do not survive after a week of conversion. These observations support the critical role for H3K27me3 in supplementing DNA methylation-based control in ES cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C198-C200 are supported by observations during cell culture experiments. The cell death phenotype in Eed-KO cells and its exacerbation in double mutants provides strong functional evidence for the importance of H3K27me3 in the absence of DNA methylation. This is an important validation of the chromatin profiling results, though the specific mechanism of cell death is not determined.",
+    "result_type": "MAJOR"
+  }
+]

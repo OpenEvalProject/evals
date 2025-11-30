@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "ERG and PRMT5 physically interact in multiple cell contexts. The interaction was validated through co-immunoprecipitation in VCaP cells (C15), 22Rv1 cells expressing ERG (C16), and AR-negative cells (C19). The interaction does not require DNA binding (C17, C18) but requires the ETS DNA binding domain of ERG (C20).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent co-immunoprecipitation experiments across different cell lines consistently demonstrate the ERG-PRMT5 interaction. Domain mapping experiments provide mechanistic insight. The data converge to support a direct or stable indirect protein-protein interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27",
+      "C28"
+    ],
+    "result": "PRMT5 knockdown selectively inhibits proliferation of ERG-positive VCaP cells but not ERG-negative 22Rv1 or LNCaP cells, and this effect requires PRMT5 catalytic activity. The sensitivity is independent of MTAP status (C24, C25).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Proliferation data with multiple shRNAs show consistent ERG-dependent sensitivity to PRMT5 knockdown (C21-C23). Rescue experiments with catalytically inactive PRMT5 confirm the requirement for enzymatic activity (C27, C28). Controls for MTAP status strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37"
+    ],
+    "result": "PRMT5 represses AR target gene expression in an ERG-dependent manner. PRMT5 knockdown increases expression of AR target genes (PSA, NKX3-1, SLC45A3) in ERG-positive cells (C30) but not in ERG-negative cells (C34). This effect requires PRMT5 catalytic activity (C31, C32) and is restricted to genes co-regulated by AR and ERG (C33).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence including qRT-PCR, pathway analysis, and rescue experiments with catalytically inactive PRMT5 consistently support ERG-dependent AR repression by PRMT5. The specificity for AR/ERG co-regulated genes (C33) and lack of effect in ERG-negative cells (C34) strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "ERG recruits PRMT5 to AR target genes, where PRMT5 modulates AR recruitment. ChIP experiments show ERG-dependent PRMT5 recruitment to PSA and NKX3-1 (C39, C40, C41). PRMT5 knockdown increases AR recruitment to these genes (C45) without affecting ERG binding (C42, C47). ChIP-seq confirms this at a genome-wide level (C46).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Directed ChIP experiments at specific loci and genome-wide ChIP-seq data consistently demonstrate ERG-dependent PRMT5 recruitment and PRMT5-dependent AR repression. The lack of effect on ERG binding upon PRMT5 knockdown supports a model where PRMT5 acts downstream of ERG recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C63",
+      "C64"
+    ],
+    "result": "PRMT5 methylates AR at arginine 761 in an ERG-dependent manner. Methylation (MMA and SDMA) was detected on AR in VCaP cells and TMPRSS2:ERG mouse prostates (C49, C50, C51) but not in ETV1-positive LNCaP cells (C52, C53). The methylation occurs on the AR ligand binding domain (C54, C55). Mutagenesis identified R761 as the specific methylation site (C63, C64).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches including immunoprecipitation with methylation-specific antibodies, comparison across cell lines with different ETS factors, domain mapping, and systematic mutagenesis converge on R761 as the PRMT5 methylation site. The data are internally consistent and mechanistically coherent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "PRMT5 directly methylates AR ligand binding domain in vitro, and ERG ETS domain enhances this activity. In vitro methyltransferase assays show PRMT5 activity on AR LBD (C56) but not on ERG domains (C57). ERG ETS domain increases PRMT5 activity on AR (C58, C62). PRMT1 shows no activity on AR LBD (C59), and PRMT5 activity is inhibited by AMI-1 (C60).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Biochemical assays with purified proteins demonstrate direct PRMT5 activity on AR and enhancement by ERG. Controls with PRMT1 and inhibitor AMI-1 support specificity. The in vitro data complement the cellular observations and support a direct enzymatic mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Proximity ligation assays confirm AR methylation at R761 in cells. Strong AR/SDMA proximity signals were detected with wild-type AR in the presence of ERG and R1881 (C65) but not with the R761K mutant (C66).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Proximity ligation assays provide orthogonal validation of AR methylation at R761 in intact cells. The loss of signal with R761K mutation confirms specificity. This complements the biochemical data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C6",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C75"
+    ],
+    "result": "Methylation of AR at R761 attenuates AR transcriptional activity. The R761K mutant shows enhanced AR recruitment to PSA (C68) and increased PSA expression (C69, C6). The R761K mutation prevents ERG-dependent attenuation of AR activity (C70, C71). These results indicate R761 methylation attenuates ligand-dependent AR activation (C75).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Functional studies with the R761K mutant consistently show increased AR activity compared to wild-type, and resistance to ERG-mediated repression. ChIP and gene expression data support the conclusion that R761 methylation attenuates AR function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The R761K mutation does not affect AR protein levels, nuclear localization, or ERG/PRMT5 recruitment to target genes. These controls demonstrate that the functional effects of R761K are not due to altered AR expression, localization, or complex formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple control experiments rule out trivial explanations for the R761K phenotype. Western blots, immunofluorescence, and ChIP data show that the mutation specifically affects AR transcriptional activity without altering protein levels, localization, or cofactor recruitment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Despite increased transcriptional activity, the AR R761K mutant impairs proliferation. RWPE-1 cells expressing R761K are more prone to androgen-induced growth arrest (C76), and VCaP cells expressing R761K proliferate poorly despite increased PSA expression (C77, C78).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Proliferation assays in two different cell lines consistently show that hyperactive AR (R761K) impairs rather than promotes proliferation. This paradoxical result is well-documented with appropriate controls (R789K mutant) and supports the model that R761 methylation fine-tunes AR activity to promote proliferation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors propose that ERG modulates AR function through PRMT5-dependent R761 methylation to balance proliferation and differentiation. R761 methylation reduces AR recruitment to differentiation genes while maintaining sufficient AR activity for proliferation (C80, C81). This mechanism is restricted to ERG-positive cells (C5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the data support ERG-dependent PRMT5 recruitment, AR methylation at R761, and functional consequences, the proposed model about balancing proliferation versus differentiation is largely inferential. The claim that R761 methylation \"allows sufficient AR function to promote proliferation\" (C81) is speculative and not directly tested. Additional experiments examining differentiation markers and dose-response relationships would strengthen this model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "ERG expression does not alter H4R3me2s levels at AR target genes. This suggests PRMT5 does not repress AR through histone methylation at these loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP data directly test and rule out the histone methylation mechanism. This negative result is important for establishing that PRMT5 acts through AR methylation rather than chromatin modification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Structural modeling suggests R761 methylation may affect interactions between the AR ligand binding domain and DNA binding domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This claim is based on computational modeling using structures from related nuclear receptors, not direct structural determination of AR. While the modeling is reasonable and cited appropriately, it remains speculative without experimental validation of the proposed LBD-DBD interface or the effect of methylation on this interface.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C14",
+      "C26",
+      "C35"
+    ],
+    "result": "Background claims about prostate cancer biology, AR function, TMPRSS2:ERG fusion, and PRMT5 function are established knowledge supported by citations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide context and are appropriately supported by citations to the literature. They represent established knowledge in the field rather than novel findings from this study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1945 @@
+{
+  "submission": {
+    "id": "f45711aa-09af-4d35-a096-0b1be4b6db3a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:34:38.157800Z",
+    "updated_at": "2025-11-30T00:34:38.157800Z"
+  },
+  "content": [
+    {
+      "id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "submission_id": "f45711aa-09af-4d35-a096-0b1be4b6db3a",
+      "content_type": "manuscript",
+      "content_text": "# Definition of two agonist types at the mammalian cold-activated channel TRPM8\n\n## Authors\n\n- Annelies Janssens<sup>1</sup>\n- Maarten Gees<sup>1</sup>\n- Balazs Istvan Toth<sup>1</sup>\n- Debapriya Ghosh<sup>1</sup>\n- Marie Mulier<sup>1</sup>\n- Rudi Vennekens<sup>1</sup>\n- Joris Vriens<sup>1</sup>\n- Karel Talavera<sup>1</sup>\n- Thomas Voets<sup>1</sup> ([ORCID: 0000-0001-5526-5821](https://orcid.org/0000-0001-5526-5821)) \u2020\n\n### Affiliations\n\n1. Laboratory of Ion Channel Research and TRP channel Research Platform Leuven, Department of Cellular and Molecular Medicine University of Leuven Leuven Belgium\n2. Laboratory of Experimental Gynaecology University of Leuven Leuven Belgium\n\n\u2020 Corresponding author\n\n## Abstract\n\nVarious TRP channels act as polymodal sensors of thermal and chemical stimuli, but the mechanisms whereby chemical ligands impact on TRP channel gating are poorly understood. Here we show that AITC (allyl isothiocyanate; mustard oil) and menthol represent two distinct types of ligands at the mammalian cold sensor TRPM8. Kinetic analysis of channel gating revealed that AITC acts by destabilizing the closed channel, whereas menthol stabilizes the open channel, relative to the transition state. Based on these differences, we classify agonists as either type I (menthol-like) or type II (AITC-like), and provide a kinetic model that faithfully reproduces their differential effects. We further demonstrate that type I and type II agonists have a distinct impact on TRPM8 currents and TRPM8-mediated calcium signals in excitable cells. These findings provide a theoretical framework for understanding the differential actions of TRP channel ligands, with important ramifications for TRP channel structure-function analysis and pharmacology.\n\n## Introduction\n\nNeurons of the somatosensory system act as individually tuned sensory cells that convert specific thermal, mechanical and/or chemical stimuli into electrical signals, which are then conveyed to the central nervous system (Vriens et al., 2014). Within the somatosensory system, several members of the TRP superfamily of cation channels act as polymodal molecular sensors of both temperature, and a variety of endogenous and exogenous chemicals, including a plethora of plant-derived compounds (Clapham, 2003; Tominaga et al., 1998; Voets et al., 2005; Vriens et al., 2014). Chemical activation of TRP channels in nerve endings of trigeminal or dorsal root ganglion neurons is generally believed to underlie typical chemesthetic sensations evoked by such plant-derived substances (Bandell et al., 2007), such as the burning heat evoked by capsaicin (the pungent substance in hot peppers), which acts as a selective agonist of the heat-activated TRPV1 (Caterina et al., 1997), and the cool sensation evoked by menthol (the cooling compound in mint plants), due to activation of the cold sensor TRPM8 (McKemy et al., 2002; Peier et al., 2002). Such TRP channel ligands are present in widely used foodstuffs and drugs (Nilius and Appendino, 2013), and are extensively used as pharmacological tools to study somatosensation and/or TRP channel function in vitro and in vivo (Julius, 2013). Yet, very little is known about the molecular and biophysical mechanisms of action of the various TRP channel ligands.\n\nWe studied the agonist effects of AITC, also known as mustard oil, a pungent organosulphur compound derived from Brassica plants. AITC is responsible for the characteristic oral sensations that one experiences upon eating Dijon mustard or wasabi, which contain between 5\u201330\u2009mM of AITC (Uematsu et al., 2002). Whereas earlier work has firmly established that AITC activates TRPA1 and TRPV1 in nociceptor neurons, approximately 10% of dorsal root ganglion neurons remained AITC-responsive after combined genetic deletion these two TRP channels (Bandell et al., 2004; Bautista et al., 2006; Everaerts et al., 2011; Jordt et al., 2004). In this work we show that AITC excites this subset of somatosensory neurons via direct activation of TRPM8. Interestingly, a detailed biophysical analysis revealed that AITC activates TRPM8 by inducing a relative destabilization of the closed conformation relative to the transition state. This mode of action is fundamentally different from that of other known TRPM8 agonists such as menthol, which stabilize the open conformation relative to the transition state. Based on these results, we propose to classify TRPM8 agonists as either type I (menthol-like) or type II (AITC-like), and provide a kinetic model that accurately describes the differential actions of the two agonist types on channel gating kinetics. Finally, we illustrate that the two agonist types have a\u00a0distinct impact on TRPM8-mediated currents and calcium signals in excitable cells.\n\n## Results\n\n### TRPM8-dependent responses to AITC in sensory neurons\n\nTo investigate the origin of TRPV1- and TRPA1-independent AITC responses, we performed Ca2+ imaging experiments on dorsal root ganglion (DRG) neurons isolated from TRPV1/TRPA1 double knockout mice. In line with previous work (Everaerts et al., 2011), we found that a small fraction of these TRPV1/TRPA1-deficient neurons (55 out of 578; 9% ) showed a rapid and reversible increase in intracellular Ca2+ in response to 3\u2009mM AITC (Figure 1A). These AITC-responsive cells consistently responded to menthol (54 out of 55; 98%) (Figure 1A,B). In these cells, the responses to both AITC and menthol were fully inhibited by the TRPM8 antagonist AMTB, and recovered partially upon AMTB washout (Figure 1C). Taken together, these results indicate that TRPV1- and TRPA1-independent AITC responses in DRG neurons depend on the cold- and menthol-sensitive channel TRPM8.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/17240/elife-17240-fig1-v3.jpg)\n\n**Figure 1.:** (A) Examples of fura-2-based intracellular calcium measurements in trigeminal neurons from TRPV1/TRPA1 double knockout mice. The red trace represents a neuron that shows responses to AITC (3 mM) and menthol (50 \u00b5M), which can be reversible inhibited by AMTB (2 \u00b5M). The black trace represents a non-responder. A high K+-solution (50 mM K+) was used at the end of the experiments to identify neurons from non-neuronal cells. In total, 578 neurons from 6 different mice were analyzed. (B) Percentage of AITC-responsive neurons in menthol-sensitive (n\u00a0=\u00a055) and menthol-insensitive (n\u00a0=\u00a0523) neurons. (C) Quantification of the reversible inhibition by AMTB of responses to AITC and menthol (n\u00a0=\u00a054).\n\n### AITC activates heterologously expressed TRPM8\n\nTo investigate the mechanisms underlying TRPM8-dependent AITC sensitivity in sensory neurons, we tested the effect of acute application of AITC on whole-cell currents in HEK293 cells heterologously expressing human TRPM8. At room temperature, TRPM8 exhibits substantial activity, which can be recorded as an outwardly rectifying current (Figure 2A,B). Application of AITC at concentrations \u2265300\u2009\u03bcM caused a rapid and reversible increase in TRPM8 current (Figure 2A). The amplitude of the response increased with AITC concentration, with relatively stronger effects at negative voltages, but did not saturate at the highest concentration tested (10\u2009mM; Figure 2C). At 3 and 10\u2009mM AITC, activation was followed by a gradual decay of TRPM8 current, reducing current amplitude to levels below the basal level (Figure 2A,B). Following washout of 3 or 10\u2009mM AITC after prolonged exposure, we observed a rapid initial decrease in current followed by a gradual restoration of the current to the basal level (Figure 2A), suggesting that the agonistic effect of AITC reverses more rapidly than the inhibitory effect. Rapid and reversible current responses to AITC were also observed in cell-free inside-out patches from human TRPM8-expressing HEK293 cells, indicating that the effect of AITC on TRPM8 is membrane-delimited (Figure 2D,E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/17240/elife-17240-fig2-v3.jpg)\n\n**Figure 2.:** (A) Time course of whole-cell currents at +100 and \u221280 mV in HEK293 cells expressing human TRPM8, upon stimulation with the indicated concentrations of AITC. (B) Current-voltage relations recorded at the time points indicated in (A). (C) Relative AITC-induced current increase at +100 and \u221280 mV (n\u00a0=\u00a09). (D) Menthol (50 \u00b5M) and AITC (3 mM) activate TRPM8 in cell-free inside-out patches during repetitive 100-ms voltage steps to +100 mV. Comparable current activation was measured in 5 out of 5 inside-out patches. (E) Current traces recorded at the time points indicated in (D). (F) TIRF images showing mCherry-tagged human TRPM8 in the perimembrane region before and during stimulation with 3 mM AITC. Micrographs are 20 \u00d7 20 \u03bcm. (G) Lack of change in perimembrane mCherry-fluorescence during stimulation with AITC (n\u00a0=\u00a06). Fluorescence was normalized to the total fluorescence before adding AITC to the bath solution.\n\nIt has been put forward that AITC induces trafficking of TRPA1 to the plasma membrane (Schmidt et al., 2009). To test whether AITC-induced activation of TRPM8 also involves rapid translocation of the channel towards the plasma membrane, we expressed human TRPM8 coupled with mCherry at its C terminus (TRPM8-mCherry), and performed total internal reflection fluorescence (TIRF) microscopy to monitor potential AITC-induced transport of TRPM8 towards the plasma membrane. We have recently shown that TRPM8-mCherry is fully functional, and can be used to track cellular TRPM8 transport (Ghosh et al., 2016). As shown in Figure 2F,G, application of 3\u2009mM AITC had no detectable effect on the TRPM8-mCherry fluorescence in the close vicinity of the plasma membrane. mCherry fluorescence amounted to 99 \u00b1 1% and 102 \u00b1 2% of the pre-AITC level after 5 and 50\u2009s of AITC application, respectively. Since the onset of current activation by AITC was very rapid, with maximal current achieved within ~2\u2009s (Figure 2A,D), we can exclude a significant contribution of trafficking to the acute agonistic effect of AITC on TRPM8.\n\n### Distinct effects of AITC and menthol on gating kinetics\n\nTo investigate the mechanism of the agonistic effect of AITC in more detail, we recorded TRPM8 currents during voltage steps ranging from \u2212140 to +220 mV, both in control conditions and immediately upon application of AITC (Figure 3A). Analysis of the steady-state conductances revealed that AITC has little or no effect on the maximal conductance at strongly depolarizing potentials, but shifts the voltage-dependent activation curves towards more negative voltages in a concentration-dependent manner (Figure 3B,C). Such ligand-induced shifts in the voltage-dependent activation curve have been shown earlier to describe the effects of agonists on TRP channels, including the effect of menthol on TRPM8 (Voets et al., 2004; Voets et al., 2007) (Janssens and Voets, 2011).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/17240/elife-17240-fig3-v3.jpg)\n\n**Figure 3.:** (A) TRPM8 currents in response to the indicated voltage step protocol in the absence and presence of AITC (1 mM). (B) Voltage-dependent activation curves in control and in the presence of the indicated AITC concentrations, for the cell shown in (A). Steady-state conductance (G) was determined as steady-state current divided by test voltage, and normalized to the estimated maximal conductance (Gmax), which was obtained by fitting a Boltzmann function to the curve in the presence of 10 mM AITC. (C)\u00a0Concentration dependence of the shift of voltage-dependent activation curves (n\u00a0=\u00a07).\n\nHowever, when analyzing the kinetics of TRPM8 current activation/deactivation during voltage steps in more detail, we observed a remarkable difference between the effects of menthol and AITC. This is illustrated in Figure 4A, which provides a comparison of currents in the absence of ligands and in the presence of either 3\u2009mM AITC or 30\u2009\u03bcM menthol, concentrations that provoke similar steady-state TRPM8 current amplitudes at the end of the voltage steps. In the presence of AITC we observed a clear acceleration of the gating kinetics upon depolarization to +120 mV, whereas the current relaxation kinetics upon repolarization to \u221280 mV were not markedly altered. In stark contrast, in the presence of menthol we found a pronounced slowing of the kinetics of current relaxation, most noticeable upon repolarization to \u221280 mV (Figure 4A,B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/17240/elife-17240-fig4-v3.jpg)\n\n**Figure 4.:** (A) Current traces in response to the indicate voltage protocol in control condition and in the presence of menthol (30 \u03bcM) and AITC (3 mM). The dashed lines overlaying the control and AITC traces represent single exponential fits, the dotted line overlaying the menthol trace represents a double exponential fit. (B) Scaled and expanded currents corresponding to the boxed areas in (A). (C,D) Current traces in response to the voltage protocol from (A) in control condition and the indicated concentrations (in \u03bcM) of AITC and menthol. (E) Mono-exponential time constants for current relaxation at +120 and \u221280 mV in the presence of indicated concentrations of AITC (n = 8). Solid lines represent model predictions, obtained by fitting a mono-exponential function to simulated currents like those shown in Figure 5D. (F) Fast and slow exponential time constants for current relaxation at +120 mV and \u221280 mV in the presence of indicated concentrations of menthol (n = 5). Solid lines represent model predictions, obtained by fitting a double exponential function to simulated currents like those shown in Figure 5E. See Figure 4\u2014figure supplement 1\u00a0for more details on the curve fitting.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17240/elife-17240-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A,B)\u00a0Examples of mono-exponential (A) and bi-exponential (B) fits to experimental relaxation time courses in the presence of different concentrations of menthol (left), along with the corresponding residual plots (right). The data are from Figure 4D, relaxation time course at +120 mV. (C) Mono-exponential and bi-exponential fits to modeled relaxation time courses at +120 mV as in Figure 5E (left). Bi-exponential fits virtually overlap with the modeled data, as can be appreciated from the corresponding residual plots (right). (D) Comparison of mono-exponential time constants at \u221280 mV (red) and =120 mV (black) obtained from fits to experimental (symbols) and modeled (lines) relaxation time courses.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17240/elife-17240-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A\u2013C) Same approach as in Figure 4, showing the effects of thymol (A; 500 \u03bcM), icilin (B; 10 \u03bcM) and linalool (C; 500 \u03bcM). (D) Effect of thymol, icilin and linalool on the time constant of current relaxation at +120 and \u221280 mV; n\u00a0=\u00a05 for each ligand, obtained by fitting a monoexponential function to the data.\n\nTo quantify the differences in gating kinetics in more detail, we fitted exponential functions to the current time courses during voltage steps. In line with earlier work, we found that in the absence of ligands the time courses at +120 and \u221280 mV were generally well fitted by a mono-exponential function (Figure 4A,B; Figure 4\u2014figure supplement 1), yielding the time constants of current relaxation at both potentials (\u03c4+120\u00a0mV and \u03c4\u221280\u00a0mV). In the presence of 3\u2009mM AITC, the time courses remained well fitted by a mono-exponential function, and the accelerated kinetics were reflected in a reduction of \u03c4+120\u00a0mV compared to control, whereas \u03c4\u221280\u00a0mV was unaltered (Figure 4A,B,E). In contrast, the relaxation kinetics in the presence of 30\u2009\u03bcM menthol were consistently slower than in control and were no longer mono-exponential: at least two exponential terms were required to accurately describe the current time course at +120 (\u03c4+120\u00a0mV,fast and \u03c4+120\u00a0mV,slow) and \u221280 mV (\u03c4\u221280\u00a0mV,fast and \u03c4\u221280\u00a0mV,slow) (Figure 4A,B,F). These distinct effects of AITC and menthol on the current relaxation kinetics of TRPM8 were observed over a broad concentration range (Figure 4C\u2013F). Other known TRPM8 agonists, including thymol, icilin, and linalool, act in a similar manner as menthol, slowing down the kinetics of activation and deactivation, albeit less pronounced (Figure 4\u2014figure supplement 2).\n\n### Defining Type I and Type II agonists\n\nBased on these results, we propose that TRPM8 agonists be classified into two types based on their effect on the gating kinetics: Type I (menthol-like) agonists induce a slowing of the gating kinetics, which is most prominently observed as slowly deactivating tail currents following repolarization, whereas Type II (AITC-like) agonists cause an acceleration of the kinetics of channel activation upon depolarization, with little or no effect on the kinetics of deactivating tail currents (Figure 4). The differential effects of the two ligand types on the gating kinetics suggest that they act on different conformational states of the channel during the gating process. In particular, the characteristic slowly decaying tail currents upon repolarization in the presence of menthol indicate that menthol impedes voltage-dependent channel deactivation, which points at a stabilization of the channel in an open conformation. Oppositely, the faster current relaxation upon depolarization in the presence of AITC indicates that AITC accelerates voltage-dependent channel activation, which points at a destabilization of the channel in a closed conformation.\n\nTo further pinpoint the mechanistic basis of different effects of Type I and Type II agonists on channel gating kinetics, we built on a previously described voltage-dependent Monod-Wyman-Changeux (MWC) model that was initially developed to describe the concerted actions of Ca2+ and voltage on the gating of large conductance Ca2+-activated potassium (BK) channels (Cox et al., 1997). We have shown earlier that this model can accurately describe the effect of menthol, voltage and temperature on steady-state TRPM8 currents (Janssens and Voets, 2011). Moreover, based on analysis of channel chimeras with different combinations of wild type and mutated menthol binding sites, it was found that a single TRPM8 channel can bind up to four ligand molecules, each subunit having and ligand binding site with an affinity Kd (in the closed state), and that every bound ligand shifts the equilibrium between the closed and open channel by a similar extent (Janssens and Voets, 2011). The energetic effect of ligand binding can be quantified as \u0394\u0394Gligand, which represents the change of the difference in Gibbs free energy between the closed and open state of the channel (\u0394G) upon binding of one ligand molecule to one of the four subunits. In the case of an agonist, \u0394\u0394Gligand < 0, which implies that the open state becomes more stable relative to the closed state. As illustrated by the energy diagrams in Figure 5A,\u00a0a negative \u0394\u0394Gligand can be the result of a ligand-induced relative stabilization of the open state, destabilization of the closed state, or a combination of both, taking the transition state as the reference. In the case of a relative stabilization of the open state, the energy barrier for the transition from open to closed will become higher, which would lead to slower closing rates, as seen with the Type I agonists (Figure 5A). Oppositely, relative destabilization of the closed state will reduce the energy barrier for the transition from closed to open, which would be reflected in faster opening rates, as seen with the Type II agonist AITC (Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/17240/elife-17240-fig5-v3.jpg)\n\n**Figure 5.:** (A) (left) Energy diagram for the transition between the closed and open channel conformation in a non-liganded channel. Steady-state equilibrium is determined by \u0394G0, whereas Eopen and Eclose determine the opening and closing rates, respectively. (right) Alteration in the energy profile upon binding of Type I and Type II ligands. The black line represents the non-liganded channel, whereas the green lines represent channels with 1\u20134 bound ligands. The corresponding kinetic schemes are provided in Supplementary Figure 2. (B,C) Activation (B) and deactivation (C) time courses in the absence and presence of the indicated concentrations of menthol or AITC. Overlaid dashed lines represent global fits to the control and ligand-activated current traces. (D,E) Model predictions corresponding to the experimental data shown in Figure 4C,D.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17240/elife-17240-fig5-figsupp1-v3.jpg)\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17240/elife-17240-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Combined effect of menthol and AITC on TRPM8 gating kinetics, using the voltage protocol shown in Figure 4A. (B) Model simulation of the combined effect menthol and AITC. To obtain these traces, the effect of AITC was modeled as a fixed decrease of \u0394G0mV\u03b1\u2020. (C) Energy profiles upon simultaneous binding of Type I (top) and Type II (bottom) ligands.\n\nWe performed global fits of the MWC model to the experimental current time courses obtained in individual cells during voltage steps in both the absence and presence of different concentrations of AITC or menthol. Values for Kd,menthol, \u0394\u0394Gmenthol, Kd,AITC and \u0394\u0394GAITC were obtained from shifts in the steady-state voltage-dependent activation curves (Janssens and Voets, 2011). Note that values for the on rates for ligand binding (kon) were determined from the fits, in contrast to earlier work in BK channels were Ca2+ binding rates were assumed to be diffusion-limited (Cox et al., 1997). Off rates (koff) were constrained by the Kd and on rates. Importantly, we obtained excellent fits to the experimental data when we set fixed that menthol binding acts exclusively by stabilization the open state, while AITC acts by destabilization of the closed state (Figure 5B,C). Model parameters obtained from the fits are listed in Table 1. Gratifyingly, the model accurately predicts the concentration-dependent effects of AITC and menthol on TRPM8, including the mono-exponential time constants in the presence of different AITC concentrations, as well as the bi-exponential relaxation kinetics in the presence of menthol, respectively (Figure 5D,E; Figure 4E,F; Figure 4\u2014figure supplement 1). Based on these results, we propose that AITC represents the first example of a type II TRPM8 agonist, acting primarily by destabilizing the closed channel, which contrasts to the Type I agonists, such as menthol, icilin, thymol and linalool, which primarily stabilize the open channel.\n\n**Table 1.**\n Experimentally derived model parameters describing the action of menthol and AITC on TRPM8 gating.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Parameter</th>\n      <th>Value</th>\n      <th>Source</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>z</td>\n      <td>0.82</td>\n      <td>(Voets et al., 2007)</td>\n    </tr>\n    <tr>\n      <td>\u0394\u0394GAITC</td>\n      <td>\u22122.7 \u00b1 0.4 kJ mol\u22121</td>\n      <td>Steady-state activation curves (n\u00a0=\u00a07)</td>\n    </tr>\n    <tr>\n      <td>\u0394\u0394Gmenthol</td>\n      <td>\u22124.5 \u00b1 0.4 kJ mol\u22121</td>\n      <td>Steady-state activation curves (n\u00a0=\u00a06)</td>\n    </tr>\n    <tr>\n      <td>Kd,AITC</td>\n      <td>2.9 \u00b1 0.6 mM</td>\n      <td>Steady-state activation curves (n\u00a0=\u00a07)</td>\n    </tr>\n    <tr>\n      <td>Kd,menthol</td>\n      <td>21 \u00b1 4 \u03bcM</td>\n      <td>Steady-state activation curves (n\u00a0=\u00a06)</td>\n    </tr>\n    <tr>\n      <td>\u03b10(0)</td>\n      <td>10.4 \u00b1 1.2 s\u22121</td>\n      <td>Global kinetic fit (n\u00a0=\u00a014)</td>\n    </tr>\n    <tr>\n      <td>\u03b20(0)</td>\n      <td>1.11 \u00b1 0.15 \u00d7103 s\u22121</td>\n      <td>Global kinetic fit (n\u00a0=\u00a014)</td>\n    </tr>\n    <tr>\n      <td>kon,AITC</td>\n      <td>95 \u00b1 35 \u00d7103 M\u22121 s\u22121</td>\n      <td>Global kinetic fit (n\u00a0=\u00a07)</td>\n    </tr>\n    <tr>\n      <td>kon,menthol</td>\n      <td>551 \u00b1 210 \u00d7103 M\u22121 s\u22121</td>\n      <td>Global kinetic fit (n\u00a0=\u00a07)</td>\n    </tr>\n  </tbody>\n</table>\n\n_Displayed are values for the different parameters that determine the MWC model. For the global kinetic fits, cells were included for which current traces were fit at minimally tree ligand concentrations and two voltages. More details are provided in the text._\n\nWe also tested the combined effect of AITC and menthol on the kinetics of TRPM8 activation and deactivation. In line with the above, application of 50\u2009\u03bcM menthol results in slower activation and deactivation kinetics, due to the stabilization of the open state (Figure 5\u2014figure supplement 2). Addition of 3\u2009mM AITC in the continued presence of menthol resulted in faster activation kinetics, without affecting the time course of deactivation (Figure 5\u2014figure supplement 2). These results are in line with the predictions of the MWC model, assuming that Type I and Type II agonists can act simultaneously and independently, resulting in both stabilization of the open and destabilization of the closed state (Figure 5\u2014figure supplement 2).\n\n### Type I versus Type II agonists: effect during action potentials\n\nIn the context of a sensory neuron, activation of ion channels such as TRPM8 causes influx of Na+ and Ca2+, which depolarizes the membrane and, when the threshold is reached, causes action potential generation (Vriens et al., 2014). The differential effects of Type I and Type II agonists on the gating kinetics of TRPM8 suggest that they may have distinct effects on TRPM8-mediated currents and calcium signals during rapid neuronal action potentials. To investigate this possibility, we measured TRPM8 currents evoked by voltage waveforms mimicking action potentials in sensory neurons in the presence of AITC (3\u2009mM) or menthol (30 \u00b5M). Note that, at a physiological holding potential of \u221260 mV, these concentrations resulted in comparable steady-state inward current amplitudes (Figure 6A). In response to the action potential waveforms, the current in the presence of AITC mainly manifested during the upstroke phase, and rapidly deactivates upon action potential repolarization. In comparison, in the presence of menthol, the peak outward current is smaller but a more prominent inward TRPM8 current is observed during the repolarization phase of the action potential (Figure 6A\u2013C). These differential effects of AITC and menthol on TRPM8 currents during an action potential are fully in line with the predictions of the MWC model for type I versus Type II agonists (Figure 6A). We also compared the cumulative influx and efflux of charge during a 1-s train of action potential waveforms at 8\u2009Hz, a typical firing rate of cold-sensitive neurons (Orio et al., 2012). As illustrated in Figure 6D,E, net charge influx is larger in the presence of menthol, whereas net charge efflux is larger in the presence of AITC.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/17240/elife-17240-fig6-v3.jpg)\n\n**Figure 6.:** (A) Voltage protocol simulating a sensory neuron action potential (left); TRPM8 currents in HEK293 cells in response to the action potential waveform in control condition and during application of menthol (30 \u03bcM) and AITC (3 mM) (middle); and corresponding model simulation (right). Boxed areas are expanded in the inset. (B) Peak outward and inward currents during the action potential waveform in the presence of menthol (cyan) and AITC (magenta; n\u00a0=\u00a06). (C) Ratio between peak inward and peak outward current in the presence of menthol or AITC. ***p<0.001. (D) TRPM8 current responses during a train of action potentials (1 s; 8Hz) in control condition and during application of menthol and AITC (top); outward (middle) and inward (bottom) charge displacement during the action potential train, determined as the integrated current after subtraction of the holding current. (E) Mean inward and outward charge displacement for the two ligands (n\u00a0=\u00a05). *p<0.05; **p<0.01.\n\nUnder normal physiological conditions, inward TRPM8 current is partially carried by Ca2+ ions (McKemy et al., 2002; Peier et al., 2002). Since our results indicated substantial differences in charge influx during action potentials between Type I and Type II agonists, we expected that menthol and AITC may show differential efficacy in evoking Ca2+ transients in excitable versus non-excitable cells. To test this, we compared the relative responses to menthol and AITC in TRPM8-expressing mouse sensory neurons versus (non-excitable) HEK293 cells heterologously expressing TRPM8. For these latter experiments, we used HEK293 cells transiently expressing the mouse TRPM8 orthologue, and first tested current responses to AITC. Like its human orthologue, mouse TRPM8 was rapidly activated by AITC, and the difference in gating kinetics in the presence of AITC versus menthol was also observed (Figure 7\u2014figure supplement 1). However, interestingly, AITC-induced current inhibition was much less pronounced in mouse TRPM8 compared to the human orthologue (Figure 7\u2014figure supplement 2): at the end of a 60-s application of 3\u2009mM AITC, mouse TRPM8 current amounted to 88 \u00b1 6% (n\u00a0=\u00a08) of the peak current, compared to 21 \u00b1 5% in the case of human TRPM8 (n\u00a0=\u00a07; p=0.00004). A further analysis of this species difference in AITC-induced inhibition is provided in Figure 7\u2014figure supplement 2.\n\nTo specifically analyze TRPM8-mediated responses to AITC and menthol in mouse sensory neurons, we used TRPA1/TRPV1 double knockout mice, only examined cells that showed robust responses to both agonists, and controlled that these responses were fully inhibited in the presence of AMTB, as outlined in Figure 1. In these cells, we found that the amplitudes of Ca2+ transients evoked by a 60-s-long applications of 3\u2009mM AITC were on average ~30% smaller than those evoked by 30 \u00b5M menthol (Figure 7A,D). Likewise, the peak rate of calcium rise, which represents a measure for the maximal inward calcium current, was consistently smaller in response to AITC than to menthol in neurons (Figure 7A,D). Interestingly, we observed an opposite potency of the same concentrations of menthol and AITC in HEK cells expressing mouse TRPM8: AITC evoked larger calcium increases and with a higher peak rate of calcium rise than did menthol (Figure 7B,D). Moreover, if action potential firing in the TRPA1/TRPV1-deficient sensory neurons was blocked using tetrodotoxin (TTX; 1\u2009\u03bcM), we found a similar ratio of AITC versus menthol responses as in HEK cells (Figure 7C,D), with AITC being slightly more potent than menthol. Taken together, these data provide further support for the notion that, compared to Type II agonists (e.g. AITC), Type I agonists (e.g. menthol) are more potent in evoking calcium influx in excitable cells, due to enhanced calcium influx during the prolonged inward tail currents following action potentials. In cells that do not fire action potentials, rapid changes in membrane potential are not expected, and hence the kinetic differences between the two types of agonists will not affect calcium signals.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/17240/elife-17240-fig7-v3.jpg)\n\n**Figure 7.:** (A) Fura-2-based intracellular calcium measurements in mouse trigeminal neurons from TRPV1/TRPA1 double knockout mice showing increases in intracellular calcium in response to AITC (3 mM) and menthol (30 \u00b5M). The upper trace shows the time differential of the intracellular calcium concentration, which represents a measure of net calcium influx/extrusion mechanisms. The TRPM8-dependence of the responses was ensured based on full block by AMTB (as in Figure 1; not shown). (B) Same as (A), but in the presence of TTX (1 \u03bcM) to block neuronal action potentials. (C) Same as (A), but in a HEK293 cell expressing mouse TRPM8. Non-transfected cells did not show any detectable response to AITC or menthol. (C) Relative stimulatory effect of menthol and AITC in control trigeminal neurons (n\u00a0=\u00a081 from 9 different mice), trigeminal neurons treated with 1 \u03bcM TTX (n\u00a0=\u00a03 from 3 different mice) and HEK293 cells (n\u00a0=\u00a0448). *, **, ***: p<0.05, 0.01 and 0.001, respectively, in paired t-test comparing the response to AITC and menthol within individual cells. ###: P<0.001 in unpaired t-tests comparing TG neurons and HEK293 cells.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17240/elife-17240-fig7-figsupp1-v3.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) TRPM8 currents in response to the voltage step protocol shown in Figure 3A in the absence and presence of AITC (3 mM). (B) Voltage-dependent activation curves corresponding to the currents shown in (A).\u00a0(C) Current traces in response to the voltage protocol shown in Figure 4A, in control condition and in the presence of menthol (30 \u03bcM) and AITC (3 mM). (right) Scaled and expanded currents corresponding to the boxed areas.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17240/elife-17240-fig7-figsupp2-v3.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A,B) Time courses of whole-cell currents at +100 and \u221280 mV in HEK293 cells expressing human (left) or mouse (right) TRPM8, upon sequential (A) or simultaneous (B) stimulation with menthol (50 \u00b5M) and AITC (3 mM). (C,D) Quantification of the AITC-induced current inhibition in mouse and human TRPM8, as well as in the depicted chimeric channels containing all possible combinations of transmembrane region and N and C termini of both orthologues. In (C) inhibition was quantified as I60s/Ipeak, which represents the remaining current after a 60-s application of 3 mM AITC divided by the peak AITC-induced current. In (D) inhibition was quantified as I60s/Imenthol, which represents the remaining current after a 60-s application of 3 mM AITC divided by the peak current induced by menthol (50 \u00b5M). Mean \u00b1 SEM for 5\u20138 cells for each chimeric channel.\n\n## Discussion\n\nWhile there are already numerous natural and synthetic agonists known for TRPM8 (Almaraz et al., 2014), our results demonstrate that AITC is an atypical agonist, with a mode of action that is fundamentally different from that of all other known TRPM8-activating stimuli. Activation of TRPM8 by cooling or by known agonists such as the natural compounds menthol, thymol and linalool, and the synthetic agonists such as icilin and halothane, is associated with a slowing of the kinetics of voltage-dependent channel gating (Vanden Abeele et al., 2013; Voets et al., 2004; Voets et al., 2007). This slowing of the gating kinetics can be directly explained by a stabilization of the open channel relative to the transition state, as we illustrated in this work for menthol and elsewhere for cooling (Voets et al., 2004). In clear contrast, activation of TRPM8 by AITC resulted in an acceleration of the kinetics of voltage-dependent gating, and we show here that this can be fully explained by a mechanism where AITC leads to a relative destabilization of the closed conformation relative to the transition state. Based thereon, we propose that TRPM8 agonists can be classified as either Type I, causing a relative stabilization the open state, or Type II, causing a relative destabilization the closed state, and we provide a kinetic voltage-dependent Monod-Wyman-Changeux-type model that faithfully reproduces their differential agonist effects. Such classification may also be extended to activating ligands of other voltage- and ligand-sensitive TRP channels. For instance, published current traces suggest that activation of TRPV1 by capsaicin or low pH is associated with faster activation time courses upon depolarization (Aneiros et al., 2011; Voets et al., 2004), classifying them as Type II ligands, whereas the activating effects of phosphatidylinositol-4,5-bisphosphate (PIP2) or lysophosphatidic acid are associated with slower activation and longer deactivating tails upon repolarization, classifying them a Type I agonists (Nieto-Posadas et al., 2012; Ufret-Vincenty et al., 2015).\n\nThe classification of activating ligands as either Type I or Type II is useful for several purposes. First, this information can provide important insights into ligand-induced structural rearrangements during channel gating, and may help interpreting ligand-bound channel structures. Indeed, our results indicate that Type II ligands such as AITC reduce the difference Gibbs free energy between the closed state and the transition state (\u0394G\u03b1\u2020), without affecting the difference Gibbs free energy between the open state and the transition state (\u0394G\u03b2\u2020). This suggests that the AITC-induced conformational change at its binding site occurs early in the gating process, prior to the main close-open transition. Oppositely, Type I ligands such as menthol cause an increase in \u0394G\u03b2\u2020, without affecting \u0394G\u03b1\u2020. This indicates that the menthol-induced conformational change at its binding sites occurs later than the main close-open transition. This analysis and interpretation is reminiscent of the rate-equilibrium free-energy relationship (REFER) approach, which has used to evaluate the effects of perturbations (e.g. ligands or mutations) on the equilibrium of reactions, including the gating of ion channels such as the nicotinic acetylcholine receptor and CFTR (Grosman et al., 2000; Sorum et al., 2015). In REFER, the effect of a family of perturbations on channel gating is quantified using the \u03c6-value, which is the slope of a plot of the logarithm of the opening rate (log \u03b1) versus the log of the gating equilibrium constant (log Keq), where Keq is the ratio of the opening (\u03b1) and closing (\u03b2) rate (Keq = \u03b1/\u03b2) (Auerbach, 2007). In the case of type I ligands, ligand binding affects the equilibrium solely by decreasing \u03b2, yielding \u03c6 = 0. Following the REFER theorem, this indicates late movement (Auerbach, 2007). Type II ligands affect the equilibrium entirely by affecting \u03b1, yielding \u03c6 = 1, indicating early movement. We also found that the effects of simultaneously applied menthol and AITC on channel gating are well described assuming independent binding and additive effects on the gating equilibria, which further supports the notion that type I and type II ligands act at distant binding sites with different timing for conformational changes.\n\nSecond, based on our kinetic fits, we obtained estimates for the on rates for ligand binding to TRPM8. For example, for menthol binding we obtained a kon of 0.55\u2009\u03bcM\u22121s\u22121, which is well below the diffusion-limited rate (>100\u2009\u03bcM\u22121s\u22121), and also one order of magnitude or more lower than binding rates for ligands to synaptic ligand-gated channels, such as the ionotropic receptors for glutamate (kon\u2248 5\u2009\u03bcM\u22121s\u22121) (Clements and Westbrook, 1991), ATP (kon\u2248 12\u2009\u03bcM\u22121s\u22121) (Bean, 1990) or acetylcholine (kon\u2248 60\u2009\u03bcM\u22121s\u22121) (Sine et al., 1990). The relatively slow ligand equilibration kinetics for menthol are in line with the distinct structural properties of ligand binding sites in TRP channels compared to these classical ionotropic receptors. Indeed, whereas binding sites for glutamate, ATP and acetylcholine are located extracellularly (Hille, 2001), directly accessible from the aqueous phase, the binding site for menthol is located in a hydrophobic domain in between the transmembrane helices (Bandell et al., 2006; Voets et al., 2007). The observation that current relaxation time courses of TRPM8 in the presence of menthol become multi-exponential is then a direct consequence of the slow equilibration rate of menthol with its binding site in comparison to the transition rates between closed and open channel conformations.\n\nFinally, we showed that differential effect on voltage-dependent gating of Type I and II agonists is reflected in distinctive TRP channel-mediated currents during rapid changes in membrane voltage, for instance during an action potential in a sensory neuron. Indeed, as predicted by our model, the AITC-induced TRPM8 current during a typical action potential waveform mainly manifest during the upstroke phase, and rapidly deactivates upon action potential repolarization. In contrast, an equipotent concentration of menthol (i.e. a concentration of menthol provoking a similar steady-state current) results in a less outward current but more prominent activation of inward TRPM8 current during the repolarization phase following an action potential, and thus leads to more Ca2+ influx via TRPM8. In line herewith, we found that inhibiting action potential firing using TTX has a more profound effect on menthol-induced responses than on AITC-induced responses in sensory neurons. These findings illustrate the importance of evaluating the mode of action of ligands on voltage-dependent TRP channels, especially when extrapolating results from non-excitable heterologous expression systems to physiological effects in excitable cells such as neurons, cardiomyocytes or pancreatic beta cells.\n\nUsing the voltage-dependent Monod-Wyman-Changeux-type model, we assumed that for any number of bound ligands the transition between closed and open channel conformation is a one-step process, determined by forward and backward rates \u03b1i and \u03b2i. Whereas this assumption is in line with the mono-exponential kinetics we generally observed in our experiments in the absence of ligands (Voets et al., 2004), it is probably a simplification of the full gating intricacies of TRPM8, and models with one or more closed-closed transitions preceding channel opening have been proposed (Fernandez et al., 2011; Raddatz et al., 2014). Nevertheless, even when using such more complex models, the ligands\u2019 effects on TRPM8 gating kinetics can only be explained assuming that Type II ligands cause acceleration of the gating transition(s) towards the open state, whereas Type I ligands slow down the backward rate(s) from the open state.\n\nOur results demonstrate that TRPM8 underlies the residual TRPA1- and TRPV1-independent responses to AITC in mouse sensory neurons. Under our experimental conditions, activation of TRPM8 by AITC only occurred in the high micromolar to millimolar concentration range. As such, TRPM8 is about two orders of magnitude less sensitive to AITC than TRPA1, for which concentrations for half-maximal activation of 5\u201350 \u00b5M have been reported (Bandell et al., 2004; Everaerts et al., 2011; Jordt et al., 2004), but comparable to TRPV1, for which a concentration for half-maximal activation of 3\u2009mM was found at room temperature (Everaerts et al., 2011). These findings are in line with in vitro experiments in sensory neurons, showing that AITC concentrations \u2264100 \u00b5M evoke responses that are strictly TRPA1-dependent (Bautista et al., 2006; Everaerts et al., 2011), whereas higher concentrations can also evoke TRPA1-independent responses mediated by TRPV1 or TRPM8. AITC is extensively used in in vivo experiments to induce pain and inflammation (Julius, 2013). In such assays, experimental solutions that are injected or topically applied typically contain AITC at concentrations between 10 and 100\u2009mM (Bautista et al., 2006; Caterina et al., 2000). Whereas earlier studies have clearly shown that pain and inflammatory responses under such experimental conditions are largely mediated by TRPA1 and TRPV1 (Bautista et al., 2006; Everaerts et al., 2011; Kwan et al., 2006), our present results suggest that also TRPM8-positive sensory nerve endings may become activated at these AITC doses. Since activation of TRPM8-expressing neurons can cause analgesia in animal models of acute and chronic pain (Liu et al., 2013; Proudfoot et al., 2006), the effects of AITC on TRPM8 that we describe here need to be taken into account when using AITC as a proalgesic and/or proinflammatory agent. TRPM8 may contribute to the complex psychophysical effects that one experiences upon eating spices containing millimolar concentrations of AITC such as mustard or wasabi (Nilius and Appendino, 2013). In line herewith, a transient increase in cold sensitivity was observed upon application of 100\u2009mM AITC on the tongue of human volunteers (Albin et al., 2008). Although speculative, this may correlate with the transient activation followed by channel inhibition that we observed in human TRPM8.\n\nIn voltage-gated ion Na+, K+ and Ca2+ channels, ligand modulators have since decades been classified based on their distinct state-dependent effects on channel gating (Hille, 2001), and this mechanistic insight has been key to understanding their physiological impact in for instance neurons and cardiac cells (Sack and Sum, 2015). In this study, we demonstrate for the first time the existence of two types of agonists with distinct state-dependent effects for a member of the TRP superfamily, the cold-sensitive TRPM8, and provide a paradigm for their differential effects in sensory neurons. We argue that establishing the state-dependent mode of action of (ant)agonists of this and other TRP channels will be essential to clarify their physiological actions as well as to understand their impact on conformational changes in the channel molecule.\n\n## Materials and methods\n\n### Cells and transfection\n\nHEK293 were grown in DMEM containing 10% (v/v) fetal calf serum, 4\u2009mM L-alanyl-L-glutamine, 100 U ml\u20131 penicillin and 100\u2009\u03bcg ml\u20131 streptomycin at 37\u00b0C in a humidity controlled incubator with 10% CO2. For patch-clamp and calcium imaging, cells were transiently transfected with different human (NM024080) or mouse (NM134252) TRPM8 constructs cloned in the bicistronic pCAGGSM2-IRES-GFP vector using TransIT-293 transfection reagent (Mirus, Madison, WI). Mutations and chimeras were made using the PCR-overlap technique, and verified by Sanger sequencing (LGC-genomics, Germany). Chimeras were made by swapping the N termini (amino acids 1\u2013336) or C termini (amino acids 993\u20131004) between the orthologues. For TIRF imaging, we used human TRPM8 linked to mCherry at its C-terminal end (Ghosh et al., 2016).\n\nTrigeminal ganglia (TGs) of 10-16-week-old female Trpv1-/-/Trpa1-/- mice were isolated after CO2 euthanasia. Bilateral TGs were collected and digested with 1 mg/ml collagenase and 2.5 mg/ml dispase dissolved in \u2018basal medium\u2019 (Neurobasal A medium supplemented with 10% FCS) (all from Gibco/Life Technologies, Belgium) at 37\u00b0C for ca. 45\u201360\u2009min. Digested ganglia were gently washed once in \u2018basal medium\u2019 and twice in \u2018complete medium\u2019 (Neurobasal A medium supplemented with 2% B27 [Invitrogene/Life Technologies, Belgium], 2 ng/ml GDNF [Invitrogen/Life Technologies] and 10 ng/ml NT4 [Peprotech, UK]) and mechanically dissociated by mixing with syringes fitted with increasing needle gauges. Neurons were seeded on poly-L-ornithine/laminin-coated glass bottom chambers (Fluorodish WPI, UK) and cultured at 37\u00b0C in complete medium overnight. These experiments were approved by the KU Leuven Ethical Committee Laboratory Animals under project number P192/2014.\n\n### Patch-clamp\n\nBetween 16 and 24\u2009hr after transfection, currents were recorded in the whole-cell or inside-out configurations of the patch-clamp technique using an EPC-9 amplifier and PULSE software (HEKA Elektronik, Germany). Data were sampled at 5\u201320 kHz and digitally filtered off-line at 1\u20135 kHz. In the whole-cell mode, between 70 and 90% of the series resistance was compensated, and recordings where the estimated voltage error due to uncompensated series resistance exceeded 10 mV were excluded from analysis. Whole-cell recordings were performed using an intracellular solution containing (in mM) 150 NaCl, 5 MgCl2, 5 EGTA and 10 HEPES, pH 7.4. The extracellular solution contained (in mM) 150 NaCl, 1 MgCl2 and 10 HEPES, pH 7.4. In inside-out recordings, the extracellular solution was used as pipette solution, and ligands were included in the intracellular bath solution.\n\n### Calcium imaging\n\nFor intracellular Ca2+ measurements, cells were incubated with 2 \u00b5M Fura-2 acetoxymethyl ester for 30 min at 37\u00b0C. The fluorescent signal was measured during alternating illumination at 340 and 380 nm using either an CellM(Olympus,\u00a0Belgium)\u00a0or Eclipse Ti (Nikon,\u00a0Belgium)\u00a0fluorescence microscopy system. The standard extracellular solution used in ratiometric [Ca2+]i measurements contained (in mM) 150 NaCl, 5 KCl, 2 CaCl2, 1.5 MgCl2, and 10 HEPES, pH 7.4.\n\n### TIRF imaging\n\nTIRF images were acquired using a through-the-lens TIRF system that was built around an inverted Axio Observer.Z1 microscope equipped with a X-100 oil objective numerical aperture (NA)=1.45 (Zeiss, Germany), a Orca-R2 camera (Hamamatsu, Japan), and using a 561-nm laser. Time series of images at 1-s intervals were recorded. Constant focus was maintained using the Definite Focus module (Zeiss). The TIRF angle was set to achieve an evanescent field with a characteristic penetration depth (i.e., the distance in the z direction over which the intensity declines e-fold) of 90 nm. Cells on 25-mm glass coverslips were placed in a custom-made chamber and imaged at 25\u00b0C.\n\n### Chemicals\n\nChemicals were obtained from Sigma (Belgium), unless indicated otherwise. AITC, menthol, thymol, linalool were dissolved in ethanol to obtain 1-M stock solutions. Icilin was dissolved in DMSO to obtain a 50-mM stock solution. Tetrodotoxin (TTX; from Alomone labs, Israel) was dissolved in acetate buffer at a concentration of 31\u2009mM.\n\n### Modeling and fitting\n\nAs a starting point to model the gating of TRPM8 in the absence and presence of ligands, we built on our earlier work describing the effects of temperature and menthol on steady-state TRPM8 currents (Janssens and Voets, 2011; Voets, 2012; Voets et al., 2004, 2007). In the absence of ligands, the transition between the closed and open conformation of the channel is determined by the opening and closing rates:\n\n$$\n\\alpha_{0}=\u03ba\\frac{k_{b}T}{h}e^{\u2212\\frac{\u0394G_{}^{\\alpha\u2020}}{RT}}\n$$\n\nand\n\n$$\n\\beta_{0}=\u03ba\\frac{k_{b}T}{h}e^{\u2212\\frac{\u0394G_{}^{\\beta\u2020}}{RT}},\n$$\n\nwhere kb is the Boltzmann constant (1.38 \u00d7 10\u221223\u2009J K\u22121), T the absolute temperature, h the Planck constant (6.63 \u00d7 10\u221234\u2009J s), R the universal gas constant (8.314 \u00d7 J K\u22121\u2009mol\u22121) and \u03ba the transmission coefficient, whose value for the studied processes is unknown. $\u0394G_{0}^{\\alpha\u2020}$ ($\u0394G_{0}^{\\beta\u2020}$) represents the difference in free energy between closed (open) state and the transition state of the non-liganded channel (see Figure 5), and depend on temperature and voltage (V) according to:\n\n$$\n\u0394G^{\\alpha\u2020}=\u0394H^{\\alpha\u2020}\u2212T\u0394S^{\\alpha\u2020}\u22120.5zFV\n$$\n\nand\n\n$$\n\u0394G^{\\beta\u2020}=\u0394H^{\\beta\u2020}\u2212T\u0394S^{\\beta\u2020}+0.5zFV.\n$$\n\n$\u0394H_{0}^{\\alpha\u2020}$ and $\u0394H_{0}^{\\beta\u2020}$ represent the differences in enthalpy and $\u0394S_{0}^{\\alpha\u2020}$ and $\u0394S_{0}^{\\beta\u2020}$ the differences in entropy between, respectively, the closed and open state and the transition state, z the gating charge, and F the Faraday constant (96485 C mol\u22121). In our experiments, temperature was kept constant at 23\u00b0C, yielding:\n\n$$\n\u0394G_{}^{\\alpha\u2020}=\u0394G_{0\u00a0mV}^{\\alpha\u2020}\u22120.5zFV\n$$\n\nand\n\n$$\n\u0394G_{}^{\\beta\u2020}=\u0394G_{0\u00a0mV}^{\\beta\u2020}+0.5zFV.\n$$\n\nIn the absence of ligands, the voltage-dependent opening and closing rates are then given by:\n\n$$\n\\alpha_{0}(V)=\\alpha_{0}(0)\\timese^{\\frac{0.5zFV}{RT}}\n$$\n\nand\n\n$$\n\\beta_{0}(V)=\\beta_{0}(0)\\timese^{\\frac{\u22120.5zFV}{RT}},\n$$\n\nwhere $\\alpha_{0}(0)$ and $\\beta_{0}(0)$ represent the opening and closing rates at 0 mV.\n\nAs evidenced in earlier work (Janssens and Voets, 2011), we consider that TRPM8 has 4 independent and energetically equivalent ligand binding sites (i.e. one per subunit), with an affinity Kd of the open channel determined by ligand-channel association and dissociation rates kon and koff (Kd = koff/kon). The energetic effect of ligand binding on steady-state channel equilibrium can be quantified as \u0394\u0394Gligand, which represents the change of the difference in Gibbs free energy between the closed and open state of the channel (\u0394G) upon binding of one ligand molecule to one of the four subunits. Values for Kd,menthol, \u0394\u0394Gmenthol, Kd,AITC and \u0394\u0394GAITC were obtained from concentration-dependent changes in the midpoint of the steady-state voltage-dependent activation curves (\u0394V1/2), according to:\n\n$$\n\u0394V_{1/2}=\u2212\\frac{RT}{zF}ln\\frac{(1+\\frac{[L]}{K_{d}})^{4}}{(1+\\frac{[L]}{K_{d}}\\timesexp\u2061\\frac{\u0394\u0394G}{RT})^{4}}.\n$$\n\nSince saturating effects of AITC could not be obtained at the highest concentration tested (10\u2009mM; on the limits of solubility), values for Kd,AITC and \u0394\u0394GAITC should be considered as approximative.\n\nIn the presence of a Type I agonist such as menthol, ligand binding stabilizes the open state, without affecting the closed or transition states (Figure 5 and Figure 5\u2014figure supplement 1). Therefore, the opening rate of a channel with i bound ligands remains unaltered\n\n$$\n\\alpha_{i}(V)=\\alpha_{0}(V),\n$$\n\nwhere\u00a0as the closing rate becomes slower for each bound ligand\n\n$$\n\\beta_{i}(V)=\\beta_{0}(V)\\timese^{\u2212\\frac{i\\times\u0394\u0394G_{ligand}}{RT}}.\n$$\n\nIn the presence of a Type II agonist such as AITC, ligand binding destabilizes the closed state, without affecting the open or transition states (Figure 5\u2014figure supplement 2). Therefore, the closing rate of the channel remains unaltered\n\n$$\n\\beta_{i}(V)=\\beta_{0}(V),\n$$\n\nwhere\u00a0as the opening rate becomes faster for each bound ligand\n\n$$\n\\alpha_{i}(V)=\\alpha_{0}(V)\\timese^{\\frac{i\\times\u0394\u0394G_{ligand}}{RT}}.\n$$\n\nProcedures were written in Igor Pro 6.22 (Wavemetrics, Lake Oswego, OR) to numerically solve the set of 10 differential equations describing the transitions between the 10 states of the model at different voltages and in the presence of different ligand concentrations. Briefly, to fit the gating behavior during voltage steps, eigenvalues and corresponding eigenvectors of the transition matrix were numerically solved using the MatrixEigenV operation, and used to calculate the sums of exponential terms describing the time-dependent changes of the probabilities that the channel is in one of the 10 states. The FuncFit and DoNewGlobalFit procedures were then used to find the model parameters that yield the best global fit to current relaxation time courses measured within one cell in the absence and presence of ligand (Table 1). The global kinetic fit included three free parameters: $\\alpha_{0}(0)$, $\\beta_{0}(0)$ and kon. Prior to the kinetic fit, Kd,ligand and \u0394\u0394Gligand were determined from steady-state currents, according to Equation 9; koff was set as Kd\u00d7 kon; z was fixed at a value of 0.82, based on earlier work (Voets et al., 2007). We further assumed that the rate of ligand binding to the open and closed state of the channel were identical, whereas the rate of ligand unbinding from the closed state was constrained by detailed balance. The integrateODE operation was used to model TRPM8 currents during voltage steps or action potential waveforms, using mean parameters obtained from the fits (Table 1).\n\n### Statistics\n\nData analysis was performed using Origin 9.0 (OriginLab Corporation, Northampton, MA). Group data are presented as mean \u00b1 SEM from n cells. Comparison between two groups was done using Student\u2019s unpaired or paired test, as indicated. No explicit power analysis was performed prior to the experiments to determine sample size, since we had no means to reliably estimate the size and variability of the effects of the ligands on parameters of TRPM8 gating. For patch-clamp experiments on HEK cells, typically 5\u201310 cells were measured for each condition, thereby limiting the SEM to \u226420% of the mean value for the relevant parameters. For the calcium imaging experiments on mouse TG neurons, a maximal number of neurons from nine mice isolated on 5 independent days were analyzed. Since highly significant results were obtained from this set of experiments, no further animals were sacrificed.\n",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "3c1e29e9-55a9-4f0e-b985-212d4417ae63",
+      "submission_id": "f45711aa-09af-4d35-a096-0b1be4b6db3a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Kenton J Swartz, National Institutes of Health , United States\n\n## Review text\n\nDOI: [10.7554/eLife.17240.017](https://doi.org/10.7554/eLife.17240.017)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Definition of two agonist types at the cold-activated channel TRPM8\" for consideration by eLife. Your article has been reviewed by three peer reviewers, Kenton J Swartz (Reviewer #1), Jorg Grandl (Reviewer #2) and L\u00e1szl\u00f3 Csan\u00e1dy (Reviewer #3), and the evaluation has been overseen by Kenton Swartz as Reviewing Editor and Richard Aldrich as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis comprehensive study compares the effects of menthol and allyl isothiocyanate (AITC) on gating of TRPM8 channels. The effects of the two agonists are compared using a broad range of experimental approaches, including kinetic analysis of current responses to voltage steps, analysis of charge flow during action potentials evoked by voltage clamp, and observation of time courses of intracellular [Ca2+] in excitable and non-excitable cells. The key findings are that (i) AITC and menthol responses are strictly correlated in TRPV1/TRPA1-deficient neurons suggesting TRPM8 as a novel AITC target, (ii) AITC induces rapid activation followed by slow inactivation of heterologously overexpressed TRPM8, (iii) AITC-induced activation is rapidly, whereas inactivation is slowly reversible, (iv) menthol and AITC activate TRPM8 through distinct kinetic mechanisms, (v) these differential kinetic mechanisms of the two agonists result in differential rates of Ca2+ entry, depending on the cell type (excitable vs. non-excitable).\n\nThe most important novel aspect of the study is the detailed analysis of the kinetic mechanisms of menthol and AITC, interpreted in the framework of a Monod-Wyman-Changeux (MWC) type mechanism, which integrates voltage-, and agonist-dependence of the channel. Exposure to AITC is shown to accelerate current relaxations in response to depolarizing, but not repolarizing, voltage steps. In contrast, menthol exposure slows current relaxations in response to voltage steps in both directions. Moreover, whereas current relaxation time courses in the presence of AITC remain reasonably monoexponential, they become multiexponential in the presence of menthol. The differential effects on relaxation rates are fully explained by assuming that AITC destabilizes the closed state, whereas menthol stabilizes the open state, with respect to the transition state. On the other hand, the mono- vs. multiexponential nature of the relaxation time courses are fully explained by assuming that the rates for binding/unbinding are rapid for AITC, but slow for menthol. These kinetic features allow the authors to define two classes (class I and II) of TRPM8 agonists.\n\nOverall this is a beautiful study that promotes our understanding of the mechanisms of TRPM8 agonists. The experiments are well performed, and the analysis mostly adequate. The following requests aim to improve the clarity of the presentation.\n\nRequested revisions:\n\n1) It is stated several times that \"AITC acts by destabilizing the closed channel, whereas menthol stabilizes the open channel\" (Abstract; subsection \u201cDefining Type I and Type II agonists\u201d, first and second paragraphs; Discussion, second paragraph). It would be important to emphasize that these effects are understood by taking the transition state as a reference. E.g.: \"AITC destabilizes the closed state, whereas menthol stabilizes the open state, relative to the transition state\". This clarification is essential, because it is much more common to take the closed state as a reference, and both ligands act by stabilizing the open state relative to the closed state.\n\n2) Along the same lines, we don't think the following argument is valid: \"Type I ligands reduce the Gibbs free energy of the open state, which may facilitate obtaining stable channel protein in the open state for crystallography [\u2026]\u201d In contrast, Type II ligands, which provoke a destabilization of the closed state, may be less prone to induce the formation of stable open channel-ligand complexes.\" Both types of ligands stabilize the open state relative to the closed state, i.e., they both increase the fraction of time the protein spends in the open state and so should similarly affect crystallography studies.\n\n3) The finding that AITC binding selectively affects opening, while menthol binding selectively affects closing rate is interesting, and could be interpreted in terms of different \u03c6 values for the two binding sites. The \u03c6 value of a protein position reflects the relative timing of its movement upon pore opening, with large values reflecting early, small values late movement (Auerbach, 2007, J. Gen. Physiol. 13:543-546). The fact that AITC affects \u0394G(T-C) but not \u0394G(T-O) suggests that the AITC binding site has already reached its open-like conformation in the transition state, i.e., this region moves early during the opening conformational change (\u03c6 is large). In contrast, the fact that menthol affects \u0394G(T-O) but not \u0394G(T-C) suggests that the menthol binding site is still in its closed-like conformation in the transition state, i.e., this region moves late during opening (\u03c6 is small). By the way, relatively distant binding sites are also supported by the finding that the effects of simultaneously applied AITC and menthol are well described assuming independent binding and energetically additive effects.\n\n4) The presentation of the modeling/fitting could be improved.\n\n4.1) Using the Eyring prefactor kBT/h to compute \u0394G\u03b1\u2020 and \u0394G\u03b2\u2020 from the rates \u03b10 and \u03b20 is not adequate: it is generally believed that the prefactor for protein conformational transitions is much smaller than kBT/h (Auerbach, 2005; PNAS 102:87-92). In fact, computing the absolute values of these barrier heights is also not necessary: \u0394\u0394G\u03b1\u2020 and \u0394\u0394G\u03b2\u2020 values would suffice.\n\n4.2) Table I should provide the full set of kinetic parameters, not (or not only) thermodynamic parameters: \u0394\u0394G values could be expressed as fold changes in Keq, and \u03b10 and \u03b20 should be given instead of \u0394G\u03b1\u2020 and \u0394G\u03b2\u2020. This would make it easier for the reader to follow the discussion on the models shown in Figure 5\u2014figure supplement 1 (or maybe print the rates onto those models?). Also, please specify how the rates for binding/unbinding in the closed state were handled during fitting: was kon,c assumed identical to kon,o with koff,c constrained by detailed balance, or was the ratio kon,c/koff,c constrained but the absolute values for both left free? In the latter case, please provide the fitted values in Table I.\n\n4.3) For the global fitting please provide a concise summary with (i) a listing of all the parameters in the fit, (ii) the numbers and identities of fixed vs. free parameters, and (iii) the typical number of current traces fitted simultaneously.\n\n5) The meaning of the slow and fast time constants plotted in Figure 4F are unclear to us. The symbols we expect represent fit parameters obtained by fitting a double-exponential function to the current time courses. But we don't understand the statement (Figure 4 legend): \"Solid lines in (E) and (F) represent model predictions\". The model predicts \u2013 for both types of ligand \u2013 9 exponential components for each current relaxation. Which of those 9 time constants are plotted? The ones with the largest fractional amplitudes? But those fractional amplitudes will depend on ligand concentration, so different components will become dominant at different ligand concentrations. All in all, it might be better to plot a single empirical parameter here (as in E), instead of two arbitrary time constants. E.g., the time constant of the best monoexponential fit (even if that fit is bad)? Or the half-time of the relaxations?\n\n6) The differential calcium entry in sensory neurons and HEK cells shown in Figure 7 is framed as arising from the ability of sensory neurons to fire action potentials. It would be cool to actually show this by blocking Nav channels with TTx and showing that they then behave like HEK cells. We leave it to the discretion of the authors because it would require a new experiment.\n",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "84e817cf-d6db-4a8b-ae15-e3b9a483961b",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C1",
+      "claim": "AITC (allyl isothiocyanate; mustard oil) and menthol represent two distinct types of ligands at the mammalian cold sensor TRPM8.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that AITC (allyl isothiocyanate; mustard oil) and menthol represent two distinct types of ligands at the mammalian cold sensor TRPM8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this as a main finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "10070ec1-c669-4b01-b173-b45629bd4046",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C2",
+      "claim": "AITC acts by destabilizing the closed channel relative to the transition state.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetic analysis of channel gating revealed that AITC acts by destabilizing the closed channel, whereas menthol stabilizes the open channel, relative to the transition state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from kinetic analysis of channel gating.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "92d091ee-8d38-4830-a7a7-11d39313363f",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C3",
+      "claim": "Menthol stabilizes the open channel relative to the transition state.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetic analysis of channel gating revealed that AITC acts by destabilizing the closed channel, whereas menthol stabilizes the open channel, relative to the transition state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from kinetic analysis of channel gating.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "1551e225-1258-41ae-b487-0f8650d68d1d",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C4",
+      "claim": "Type I agonists (menthol-like) stabilize the open channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these differences, we classify agonists as either type I (menthol-like) or type II (AITC-like), and provide a kinetic model that faithfully reproduces their differential effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The classification is based on kinetic analysis and modeling of agonist effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "93af7484-4a6a-4488-abe3-db0a4788f642",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C5",
+      "claim": "Type II agonists (AITC-like) destabilize the closed channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these differences, we classify agonists as either type I (menthol-like) or type II (AITC-like), and provide a kinetic model that faithfully reproduces their differential effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The classification is based on kinetic analysis and modeling of agonist effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "730d2f62-d035-4bed-9781-5646ecb81b6f",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C6",
+      "claim": "Type I and type II agonists have a distinct impact on TRPM8 currents in excitable cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrate that type I and type II agonists have a distinct impact on TRPM8 currents and TRPM8-mediated calcium signals in excitable cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a demonstrated finding in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "7916fbc2-6489-4dc7-8351-3a68dffa188c",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C7",
+      "claim": "Type I and type II agonists have a distinct impact on TRPM8-mediated calcium signals in excitable cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We further demonstrate that type I and type II agonists have a distinct impact on TRPM8 currents and TRPM8-mediated calcium signals in excitable cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a demonstrated finding in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "5b1c44a4-72ab-4e18-933e-eab54baffabf",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C8",
+      "claim": "Several members of the TRP superfamily of cation channels act as polymodal molecular sensors of both temperature and a variety of endogenous and exogenous chemicals.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the somatosensory system, several members of the TRP superfamily of cation channels act as polymodal molecular sensors of both temperature, and a variety of endogenous and exogenous chemicals, including a plethora of plant-derived compounds (Clapham, 2003; Tominaga et al., 1998; Voets et al., 2005; Vriens et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "8286efef-607c-4404-a0e0-7321d80e8d43",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C9",
+      "claim": "Capsaicin acts as a selective agonist of the heat-activated TRPV1.",
+      "claim_type": "EXPLICIT",
+      "source": "such as the burning heat evoked by capsaicin (the pungent substance in hot peppers), which acts as a selective agonist of the heat-activated TRPV1 (Caterina et al., 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "a7810f23-7e62-4db2-afc1-70366e4a3b8b",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C10",
+      "claim": "Menthol activates the cold sensor TRPM8.",
+      "claim_type": "EXPLICIT",
+      "source": "and the cool sensation evoked by menthol (the cooling compound in mint plants), due to activation of the cold sensor TRPM8 (McKemy et al., 2002; Peier et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "9b80c468-5ca9-4732-8c9c-065694a383e4",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C11",
+      "claim": "AITC is responsible for the characteristic oral sensations experienced upon eating Dijon mustard or wasabi.",
+      "claim_type": "EXPLICIT",
+      "source": "AITC is responsible for the characteristic oral sensations that one experiences upon eating Dijon mustard or wasabi, which contain between 5\u201330 mM of AITC (Uematsu et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "8322a0f1-4491-4b3d-9803-f4a4ebdc534e",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C12",
+      "claim": "Dijon mustard and wasabi contain between 5\u201330 mM of AITC.",
+      "claim_type": "EXPLICIT",
+      "source": "AITC is responsible for the characteristic oral sensations that one experiences upon eating Dijon mustard or wasabi, which contain between 5\u201330 mM of AITC (Uematsu et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "663534e0-ba68-4603-93e4-b774a50f41ec",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C13",
+      "claim": "AITC activates TRPA1 in nociceptor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas earlier work has firmly established that AITC activates TRPA1 and TRPV1 in nociceptor neurons, approximately 10% of dorsal root ganglion neurons remained AITC-responsive after combined genetic deletion these two TRP channels (Bandell et al., 2004; Bautista et al., 2006; Everaerts et al., 2011; Jordt et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established by earlier work with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "22b8673f-9e05-4dec-bca1-cf3490a8b536",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C14",
+      "claim": "AITC activates TRPV1 in nociceptor neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas earlier work has firmly established that AITC activates TRPA1 and TRPV1 in nociceptor neurons, approximately 10% of dorsal root ganglion neurons remained AITC-responsive after combined genetic deletion these two TRP channels (Bandell et al., 2004; Bautista et al., 2006; Everaerts et al., 2011; Jordt et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established by earlier work with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "5cfa1020-7c20-4028-92d7-87e93ec16583",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C15",
+      "claim": "Approximately 10% of dorsal root ganglion neurons remained AITC-responsive after combined genetic deletion of TRPA1 and TRPV1.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas earlier work has firmly established that AITC activates TRPA1 and TRPV1 in nociceptor neurons, approximately 10% of dorsal root ganglion neurons remained AITC-responsive after combined genetic deletion these two TRP channels (Bandell et al., 2004; Bautista et al., 2006; Everaerts et al., 2011; Jordt et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "369c9750-1e55-4123-9a2a-550b7b71f18c",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C16",
+      "claim": "AITC excites a subset of somatosensory neurons via direct activation of TRPM8.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work we show that AITC excites this subset of somatosensory neurons via direct activation of TRPM8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding of the current work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "f6e0aed5-bb07-48fb-b38c-bc6696855d4c",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C17",
+      "claim": "A small fraction (9%) of TRPV1/TRPA1-deficient DRG neurons showed a rapid and reversible increase in intracellular Ca2+ in response to 3 mM AITC.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous work (Everaerts et al., 2011), we found that a small fraction of these TRPV1/TRPA1-deficient neurons (55 out of 578; 9% ) showed a rapid and reversible increase in intracellular Ca2+ in response to 3 mM AITC (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental finding with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "07500aaf-2a76-432e-9edc-7d7e28a835c8",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C18",
+      "claim": "98% of AITC-responsive TRPV1/TRPA1-deficient neurons responded to menthol.",
+      "claim_type": "EXPLICIT",
+      "source": "These AITC-responsive cells consistently responded to menthol (54 out of 55; 98%) (Figure 1A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "1cd84e69-cda8-449d-ba9c-2a400cc9fbc7",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C19",
+      "claim": "Responses to both AITC and menthol in TRPV1/TRPA1-deficient neurons were fully inhibited by the TRPM8 antagonist AMTB.",
+      "claim_type": "EXPLICIT",
+      "source": "In these cells, the responses to both AITC and menthol were fully inhibited by the TRPM8 antagonist AMTB, and recovered partially upon AMTB washout (Figure 1C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental finding with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "749dd46b-1e7d-4375-90c6-09963bd5dcdc",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C20",
+      "claim": "TRPV1- and TRPA1-independent AITC responses in DRG neurons depend on TRPM8.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that TRPV1- and TRPA1-independent AITC responses in DRG neurons depend on the cold- and menthol-sensitive channel TRPM8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "7192420c-46d1-4e4f-8377-95bb8ad42d52",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C21",
+      "claim": "Application of AITC at concentrations \u2265300 \u03bcM caused a rapid and reversible increase in TRPM8 current.",
+      "claim_type": "EXPLICIT",
+      "source": "Application of AITC at concentrations \u2265300 \u03bcM caused a rapid and reversible increase in TRPM8 current (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "c200e07c-b8f4-450c-a037-e8968aacdb47",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C22",
+      "claim": "The amplitude of AITC-induced TRPM8 response increased with AITC concentration but did not saturate at the highest concentration tested (10 mM).",
+      "claim_type": "EXPLICIT",
+      "source": "The amplitude of the response increased with AITC concentration, with relatively stronger effects at negative voltages, but did not saturate at the highest concentration tested (10 mM; Figure 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "d6f7fbcd-4d1e-4078-9c21-981f9f681c42",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C23",
+      "claim": "At 3 and 10 mM AITC, activation was followed by a gradual decay of TRPM8 current, reducing current amplitude to levels below the basal level.",
+      "claim_type": "EXPLICIT",
+      "source": "At 3 and 10 mM AITC, activation was followed by a gradual decay of TRPM8 current, reducing current amplitude to levels below the basal level (Figure 2A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "f4034961-77a8-4b03-ab58-133b8d12d62b",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C24",
+      "claim": "Rapid and reversible current responses to AITC were observed in cell-free inside-out patches from human TRPM8-expressing HEK293 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid and reversible current responses to AITC were also observed in cell-free inside-out patches from human TRPM8-expressing HEK293 cells, indicating that the effect of AITC on TRPM8 is membrane-delimited (Figure 2D,E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "c6b1aec0-6e7e-4a69-a9f5-30fa47125523",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C25",
+      "claim": "The effect of AITC on TRPM8 is membrane-delimited.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid and reversible current responses to AITC were also observed in cell-free inside-out patches from human TRPM8-expressing HEK293 cells, indicating that the effect of AITC on TRPM8 is membrane-delimited (Figure 2D,E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the inside-out patch experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "5850a68a-128f-443f-9ba9-9087b009247f",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C26",
+      "claim": "Application of 3 mM AITC had no detectable effect on TRPM8-mCherry fluorescence in the close vicinity of the plasma membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 2F,G, application of 3 mM AITC had no detectable effect on the TRPM8-mCherry fluorescence in the close vicinity of the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "48194cc4-5143-4a5a-9d77-9029af758809",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C27",
+      "claim": "Trafficking does not significantly contribute to the acute agonistic effect of AITC on TRPM8.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the onset of current activation by AITC was very rapid, with maximal current achieved within ~2 s (Figure 2A,D), we can exclude a significant contribution of trafficking to the acute agonistic effect of AITC on TRPM8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the TIRF imaging and electrophysiology experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "1d1022d5-816d-4457-8b04-197a7a35bca0",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C28",
+      "claim": "AITC has little or no effect on the maximal conductance of TRPM8 at strongly depolarizing potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the steady-state conductances revealed that AITC has little or no effect on the maximal conductance at strongly depolarizing potentials, but shifts the voltage-dependent activation curves towards more negative voltages in a concentration-dependent manner (Figure 3B,C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "44daf18e-b23e-4361-9e42-6cdecf952134",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C29",
+      "claim": "AITC shifts the voltage-dependent activation curves of TRPM8 towards more negative voltages in a concentration-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the steady-state conductances revealed that AITC has little or no effect on the maximal conductance at strongly depolarizing potentials, but shifts the voltage-dependent activation curves towards more negative voltages in a concentration-dependent manner (Figure 3B,C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "9e7f284c-cfeb-47ad-888d-417b46868cb7",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C30",
+      "claim": "In the presence of AITC, there is a clear acceleration of the gating kinetics upon depolarization to +120 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of AITC we observed a clear acceleration of the gating kinetics upon depolarization to +120 mV, whereas the current relaxation kinetics upon repolarization to \u221280 mV were not markedly altered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "9d03fe7e-4e52-4dc8-8f76-4bc558810be2",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C31",
+      "claim": "In the presence of menthol, there is a pronounced slowing of the kinetics of current relaxation, most noticeable upon repolarization to \u221280 mV.",
+      "claim_type": "EXPLICIT",
+      "source": "In stark contrast, in the presence of menthol we found a pronounced slowing of the kinetics of current relaxation, most noticeable upon repolarization to \u221280 mV (Figure 4A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "ae06568e-fda5-457e-aa5f-02be19be043b",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C32",
+      "claim": "In the absence of ligands, the time courses of TRPM8 currents at +120 and \u221280 mV were generally well fitted by a mono-exponential function.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with earlier work, we found that in the absence of ligands the time courses at +120 and \u221280 mV were generally well fitted by a mono-exponential function (Figure 4A,B; Figure 4\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental finding with reference to figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "c467c3f6-cbc7-4d75-b7e2-51e371cb7b5e",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C33",
+      "claim": "In the presence of 3 mM AITC, the time courses of TRPM8 currents remained well fitted by a mono-exponential function.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of 3 mM AITC, the time courses remained well fitted by a mono-exponential function, and the accelerated kinetics were reflected in a reduction of \u03c4+120 mV compared to control, whereas \u03c4\u221280 mV was unaltered (Figure 4A,B,E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "0d7ce72d-0746-4523-ae69-2dca3dea6504",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C34",
+      "claim": "The relaxation kinetics of TRPM8 in the presence of 30 \u03bcM menthol were consistently slower than in control and were no longer mono-exponential.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the relaxation kinetics in the presence of 30 \u03bcM menthol were consistently slower than in control and were no longer mono-exponential: at least two exponential terms were required to accurately describe the current time course at +120 (\u03c4+120 mV,fast and \u03c4+120 mV,slow) and \u221280 mV (\u03c4\u221280 mV,fast and \u03c4\u221280 mV,slow) (Figure 4A,B,F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental finding with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "581d341c-6736-4b79-b522-23f3b79c22cd",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C35",
+      "claim": "Other known TRPM8 agonists, including thymol, icilin, and linalool, act in a similar manner as menthol, slowing down the kinetics of activation and deactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Other known TRPM8 agonists, including thymol, icilin, and linalool, act in a similar manner as menthol, slowing down the kinetics of activation and deactivation, albeit less pronounced (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental finding with reference to a figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "066a8d88-4bad-405d-9819-d68cd18cf105",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C36",
+      "claim": "Type I (menthol-like) agonists induce a slowing of the gating kinetics, most prominently observed as slowly deactivating tail currents following repolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "Type I (menthol-like) agonists induce a slowing of the gating kinetics, which is most prominently observed as slowly deactivating tail currents following repolarization",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a classification based on experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "0395c1fd-0a36-4d38-aa76-0e75dd4f7b5a",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C37",
+      "claim": "Type II (AITC-like) agonists cause an acceleration of the kinetics of channel activation upon depolarization, with little or no effect on the kinetics of deactivating tail currents.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas Type II (AITC-like) agonists cause an acceleration of the kinetics of channel activation upon depolarization, with little or no effect on the kinetics of deactivating tail currents (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a classification based on experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "f9e55c02-35aa-4b9c-ae1b-77faaca69e3f",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C38",
+      "claim": "The characteristic slowly decaying tail currents upon repolarization in the presence of menthol indicate that menthol impedes voltage-dependent channel deactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the characteristic slowly decaying tail currents upon repolarization in the presence of menthol indicate that menthol impedes voltage-dependent channel deactivation, which points at a stabilization of the channel in an open conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "ad57169d-5a90-4bad-8091-c432f85e0f0f",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C39",
+      "claim": "Menthol stabilizes the channel in an open conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the characteristic slowly decaying tail currents upon repolarization in the presence of menthol indicate that menthol impedes voltage-dependent channel deactivation, which points at a stabilization of the channel in an open conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "25624083-7174-47f7-84f3-1eaf30965c82",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C40",
+      "claim": "The faster current relaxation upon depolarization in the presence of AITC indicates that AITC accelerates voltage-dependent channel activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Oppositely, the faster current relaxation upon depolarization in the presence of AITC indicates that AITC accelerates voltage-dependent channel activation, which points at a destabilization of the channel in a closed conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "f3580499-412b-486c-b35b-7482da078e76",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C41",
+      "claim": "AITC destabilizes the channel in a closed conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Oppositely, the faster current relaxation upon depolarization in the presence of AITC indicates that AITC accelerates voltage-dependent channel activation, which points at a destabilization of the channel in a closed conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "18db365e-2b23-4aed-bb75-26ace3ef1546",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C42",
+      "claim": "A single TRPM8 channel can bind up to four ligand molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, based on analysis of channel chimeras with different combinations of wild type and mutated menthol binding sites, it was found that a single TRPM8 channel can bind up to four ligand molecules, each subunit having and ligand binding site with an affinity Kd (in the closed state), and that every bound ligand shifts the equilibrium between the closed and open channel by a similar extent (Janssens and Voets, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "b1d71021-00f0-4871-9b6e-7b9928d273bd",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C43",
+      "claim": "Each TRPM8 subunit has a ligand binding site with an affinity Kd in the closed state.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, based on analysis of channel chimeras with different combinations of wild type and mutated menthol binding sites, it was found that a single TRPM8 channel can bind up to four ligand molecules, each subunit having and ligand binding site with an affinity Kd (in the closed state), and that every bound ligand shifts the equilibrium between the closed and open channel by a similar extent (Janssens and Voets, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "25c32b58-797d-4e41-9451-82a1bdcc381f",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C44",
+      "claim": "Every bound ligand shifts the equilibrium between the closed and open TRPM8 channel by a similar extent.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, based on analysis of channel chimeras with different combinations of wild type and mutated menthol binding sites, it was found that a single TRPM8 channel can bind up to four ligand molecules, each subunit having and ligand binding site with an affinity Kd (in the closed state), and that every bound ligand shifts the equilibrium between the closed and open channel by a similar extent (Janssens and Voets, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "10173662-a16b-480f-be7e-6bbe72ceb209",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C45",
+      "claim": "Excellent fits to the experimental data were obtained when menthol binding acts exclusively by stabilization the open state, while AITC acts by destabilization of the closed state.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we obtained excellent fits to the experimental data when we set fixed that menthol binding acts exclusively by stabilization the open state, while AITC acts by destabilization of the closed state (Figure 5B,C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from model fitting with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "2e0458c4-6aa7-40b4-8b6a-bdda4cd63537",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C46",
+      "claim": "The model accurately predicts the concentration-dependent effects of AITC and menthol on TRPM8.",
+      "claim_type": "EXPLICIT",
+      "source": "Gratifyingly, the model accurately predicts the concentration-dependent effects of AITC and menthol on TRPM8, including the mono-exponential time constants in the presence of different AITC concentrations, as well as the bi-exponential relaxation kinetics in the presence of menthol, respectively (Figure 5D,E; Figure 4E,F; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from model predictions with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "42488a8b-ceea-424c-8557-ded1ed3e35a4",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C47",
+      "claim": "AITC represents the first example of a type II TRPM8 agonist.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results, we propose that AITC represents the first example of a type II TRPM8 agonist, acting primarily by destabilizing the closed channel, which contrasts to the Type I agonists, such as menthol, icilin, thymol and linalool, which primarily stabilize the open channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a proposal based on the experimental and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "66491536-9bd6-422c-b8e5-71e0127f2f7c",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C48",
+      "claim": "Type I agonists such as menthol, icilin, thymol and linalool primarily stabilize the open channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results, we propose that AITC represents the first example of a type II TRPM8 agonist, acting primarily by destabilizing the closed channel, which contrasts to the Type I agonists, such as menthol, icilin, thymol and linalool, which primarily stabilize the open channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a proposal based on the experimental and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "c8fd45d1-bee7-4ad7-80c3-848c76363921",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C49",
+      "claim": "Application of 50 \u03bcM menthol results in slower activation and deactivation kinetics of TRPM8.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with the above, application of 50 \u03bcM menthol results in slower activation and deactivation kinetics, due to the stabilization of the open state (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation with reference to a figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "42e70c95-dc29-4978-a20e-6ddda68d2e92",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C50",
+      "claim": "Addition of 3 mM AITC in the continued presence of menthol resulted in faster activation kinetics, without affecting the time course of deactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Addition of 3 mM AITC in the continued presence of menthol resulted in faster activation kinetics, without affecting the time course of deactivation (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation with reference to a figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "26982702-fa88-47e6-a9b2-56a65a120ddf",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C51",
+      "claim": "The combined effects of AITC and menthol are in line with the predictions of the MWC model, assuming that Type I and Type II agonists can act simultaneously and independently.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are in line with the predictions of the MWC model, assuming that Type I and Type II agonists can act simultaneously and independently, resulting in both stabilization of the open and destabilization of the closed state (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison between experimental results and model predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "e69b8940-6e8a-499f-96b6-5ad7148dfe62",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C52",
+      "claim": "At a physiological holding potential of \u221260 mV, 3 mM AITC and 30 \u00b5M menthol resulted in comparable steady-state inward current amplitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that, at a physiological holding potential of \u221260 mV, these concentrations resulted in comparable steady-state inward current amplitudes (Figure 6A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation with reference to a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "a2e16263-8871-4d3d-8fb4-74311989bd06",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C53",
+      "claim": "In response to action potential waveforms, the current in the presence of AITC mainly manifested during the upstroke phase and rapidly deactivates upon action potential repolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "In response to the action potential waveforms, the current in the presence of AITC mainly manifested during the upstroke phase, and rapidly deactivates upon action potential repolarization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "7dd1e8cf-d17d-4365-b759-2c8fe03ceb12",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C54",
+      "claim": "In the presence of menthol, the peak outward current during action potentials is smaller but a more prominent inward TRPM8 current is observed during the repolarization phase.",
+      "claim_type": "EXPLICIT",
+      "source": "In comparison, in the presence of menthol, the peak outward current is smaller but a more prominent inward TRPM8 current is observed during the repolarization phase of the action potential (Figure 6A\u2013C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "881299b2-b9a5-4920-9005-89e3e3001942",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C55",
+      "claim": "Net charge influx during a 1-s train of action potential waveforms at 8 Hz is larger in the presence of menthol.",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated in Figure 6D,E, net charge influx is larger in the presence of menthol, whereas net charge efflux is larger in the presence of AITC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "a61322a8-88be-4c41-b3fe-b17f7a3e3230",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C56",
+      "claim": "Net charge efflux during a 1-s train of action potential waveforms at 8 Hz is larger in the presence of AITC.",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated in Figure 6D,E, net charge influx is larger in the presence of menthol, whereas net charge efflux is larger in the presence of AITC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "5b48d433-8250-4a79-8067-bf1dd6f99372",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C57",
+      "claim": "Mouse TRPM8 was rapidly activated by AITC.",
+      "claim_type": "EXPLICIT",
+      "source": "Like its human orthologue, mouse TRPM8 was rapidly activated by AITC, and the difference in gating kinetics in the presence of AITC versus menthol was also observed (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation with reference to a figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "f7a7c0e5-8599-4c79-b6b3-3689abd0c833",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C58",
+      "claim": "AITC-induced current inhibition was much less pronounced in mouse TRPM8 compared to the human orthologue.",
+      "claim_type": "EXPLICIT",
+      "source": "However, interestingly, AITC-induced current inhibition was much less pronounced in mouse TRPM8 compared to the human orthologue (Figure 7\u2014figure supplement 2): at the end of a 60-s application of 3 mM AITC, mouse TRPM8 current amounted to 88 \u00b1 6% (n = 8) of the peak current, compared to 21 \u00b1 5% in the case of human TRPM8 (n = 7; p=0.00004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation with reference to a figure supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "8d884404-638b-4971-9200-f3ba3899f8b8",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C59",
+      "claim": "The amplitudes of Ca2+ transients evoked by 60-s-long applications of 3 mM AITC were on average ~30% smaller than those evoked by 30 \u00b5M menthol in TRPA1/TRPV1-deficient mouse sensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In these cells, we found that the amplitudes of Ca2+ transients evoked by a 60-s-long applications of 3 mM AITC were on average ~30% smaller than those evoked by 30 \u00b5M menthol (Figure 7A,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "809579f4-3a1b-47b7-9d09-15aaec1e12fb",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C60",
+      "claim": "The peak rate of calcium rise was consistently smaller in response to AITC than to menthol in TRPA1/TRPV1-deficient neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the peak rate of calcium rise, which represents a measure for the maximal inward calcium current, was consistently smaller in response to AITC than to menthol in neurons (Figure 7A,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "5652a2c8-ecf3-4538-ae28-6ae619ba71ff",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C61",
+      "claim": "AITC evoked larger calcium increases and with a higher peak rate of calcium rise than menthol in HEK cells expressing mouse TRPM8.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed an opposite potency of the same concentrations of menthol and AITC in HEK cells expressing mouse TRPM8: AITC evoked larger calcium increases and with a higher peak rate of calcium rise than did menthol (Figure 7B,D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "e66eb646-a467-4347-97f9-6bc58c28b6ce",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C62",
+      "claim": "When action potential firing in TRPA1/TRPV1-deficient sensory neurons was blocked using TTX, a similar ratio of AITC versus menthol responses as in HEK cells was found.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, if action potential firing in the TRPA1/TRPV1-deficient sensory neurons was blocked using tetrodotoxin (TTX; 1 \u03bcM), we found a similar ratio of AITC versus menthol responses as in HEK cells (Figure 7C,D), with AITC being slightly more potent than menthol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation with reference to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "8518677e-e7be-4d60-bacd-d17118eae16e",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C63",
+      "claim": "Compared to Type II agonists (e.g. AITC), Type I agonists (e.g. menthol) are more potent in evoking calcium influx in excitable cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data provide further support for the notion that, compared to Type II agonists (e.g. AITC), Type I agonists (e.g. menthol) are more potent in evoking calcium influx in excitable cells, due to enhanced calcium influx during the prolonged inward tail currents following action potentials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "bc40b295-abc5-4022-a395-a9fc929e8c52",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C64",
+      "claim": "AITC is an atypical agonist of TRPM8, with a mode of action that is fundamentally different from that of all other known TRPM8-activating stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "While there are already numerous natural and synthetic agonists known for TRPM8 (Almaraz et al., 2014), our results demonstrate that AITC is an atypical agonist, with a mode of action that is fundamentally different from that of all other known TRPM8-activating stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the study with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "fc18c599-ae15-4e66-b7b6-3b2f2cfccf0d",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C65",
+      "claim": "Activation of TRPM8 by cooling or by known agonists such as menthol, thymol, linalool, icilin and halothane is associated with a slowing of the kinetics of voltage-dependent channel gating.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of TRPM8 by cooling or by known agonists such as the natural compounds menthol, thymol and linalool, and the synthetic agonists such as icilin and halothane, is associated with a slowing of the kinetics of voltage-dependent channel gating (Vanden Abeele et al., 2013; Voets et al., 2004; Voets et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "5d3fda83-16a8-4004-8282-cc28882b9a35",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C66",
+      "claim": "The slowing of the gating kinetics by cooling and known agonists can be explained by a stabilization of the open channel relative to the transition state.",
+      "claim_type": "EXPLICIT",
+      "source": "This slowing of the gating kinetics can be directly explained by a stabilization of the open channel relative to the transition state, as we illustrated in this work for menthol and elsewhere for cooling (Voets et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "1d59458a-6d50-4ca5-b390-0d9c4d47a5c4",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C67",
+      "claim": "Activation of TRPM8 by AITC resulted in an acceleration of the kinetics of voltage-dependent gating.",
+      "claim_type": "EXPLICIT",
+      "source": "In clear contrast, activation of TRPM8 by AITC resulted in an acceleration of the kinetics of voltage-dependent gating, and we show here that this can be fully explained by a mechanism where AITC leads to a relative destabilization of the closed conformation relative to the transition state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding of the current work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "3669a72f-b2b7-48a6-ae28-378a069e48d5",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C68",
+      "claim": "The classification of activating ligands as either Type I or Type II may be extended to activating ligands of other voltage- and ligand-sensitive TRP channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Such classification may also be extended to activating ligands of other voltage- and ligand-sensitive TRP channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation about broader applicability.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "1671aa31-a8b9-4bbe-bbfb-cf8ebb24ed96",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C69",
+      "claim": "Activation of TRPV1 by capsaicin or low pH is associated with faster activation time courses upon depolarization, classifying them as Type II ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, published current traces suggest that activation of TRPV1 by capsaicin or low pH is associated with faster activation time courses upon depolarization (Aneiros et al., 2011; Voets et al., 2004), classifying them as Type II ligands",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from published data with citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "043a9973-0016-4382-be28-f55a4132c6d9",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C70",
+      "claim": "The activating effects of PIP2 or lysophosphatidic acid on TRPV1 are associated with slower activation and longer deactivating tails upon repolarization, classifying them as Type I agonists.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the activating effects of phosphatidylinositol-4,5-bisphosphate (PIP2) or lysophosphatidic acid are associated with slower activation and longer deactivating tails upon repolarization, classifying them a Type I agonists (Nieto-Posadas et al., 2012; Ufret-Vincenty et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from published data with citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "a10d1a21-f875-4c25-95e3-d209dc822fa7",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C71",
+      "claim": "Type II ligands such as AITC reduce the difference Gibbs free energy between the closed state and the transition state (\u0394G\u03b1\u2020), without affecting the difference Gibbs free energy between the open state and the transition state (\u0394G\u03b2\u2020).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, our results indicate that Type II ligands such as AITC reduce the difference Gibbs free energy between the closed state and the transition state (\u0394G\u03b1\u2020), without affecting the difference Gibbs free energy between the open state and the transition state (\u0394G\u03b2\u2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "b474fcfa-9341-4536-84c4-15a48cabf082",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C72",
+      "claim": "The AITC-induced conformational change at its binding site occurs early in the gating process, prior to the main close-open transition.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the AITC-induced conformational change at its binding site occurs early in the gating process, prior to the main close-open transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the thermodynamic analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "1ae8aa80-7962-4892-8598-74e3d872a7f7",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C73",
+      "claim": "Type I ligands such as menthol cause an increase in \u0394G\u03b2\u2020, without affecting \u0394G\u03b1\u2020.",
+      "claim_type": "EXPLICIT",
+      "source": "Oppositely, Type I ligands such as menthol cause an increase in \u0394G\u03b2\u2020, without affecting \u0394G\u03b1\u2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "09bca7ba-22ee-41c8-8053-50fa161456f2",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C74",
+      "claim": "The menthol-induced conformational change at its binding sites occurs later than the main close-open transition.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the menthol-induced conformational change at its binding sites occurs later than the main close-open transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an inference from the thermodynamic analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "9a1c1dc6-0a88-4dbf-85fb-353ed441e30b",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C75",
+      "claim": "For menthol binding to TRPM8, a kon of 0.55 \u03bcM\u22121s\u22121 was obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, for menthol binding we obtained a kon of 0.55 \u03bcM\u22121s\u22121, which is well below the diffusion-limited rate (>100 \u03bcM\u22121s\u22121), and also one order of magnitude or more lower than binding rates for ligands to synaptic ligand-gated channels, such as the ionotropic receptors for glutamate (kon\u2248 5 \u03bcM\u22121s\u22121) (Clements and Westbrook, 1991), ATP (kon\u2248 12 \u03bcM\u22121s\u22121) (Bean, 1990) or acetylcholine (kon\u2248 60 \u03bcM\u22121s\u22121) (Sine et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result from kinetic fits with citations for comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "ebda1b37-6231-4a2e-ac14-f05ce868cc0d",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C76",
+      "claim": "The binding site for menthol is located in a hydrophobic domain in between the transmembrane helices.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, whereas binding sites for glutamate, ATP and acetylcholine are located extracellularly (Hille, 2001), directly accessible from the aqueous phase, the binding site for menthol is located in a hydrophobic domain in between the transmembrane helices (Bandell et al., 2006; Voets et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "fbc3899c-dac2-4f75-94e8-713efa29cc6f",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C77",
+      "claim": "The observation that current relaxation time courses of TRPM8 in the presence of menthol become multi-exponential is a direct consequence of the slow equilibration rate of menthol with its binding site in comparison to the transition rates between closed and open channel conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that current relaxation time courses of TRPM8 in the presence of menthol become multi-exponential is then a direct consequence of the slow equilibration rate of menthol with its binding site in comparison to the transition rates between closed and open channel conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an interpretation of the experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "591f0882-ab53-4fb7-b6fe-51e0771c9fb7",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C78",
+      "claim": "The AITC-induced TRPM8 current during a typical action potential waveform mainly manifests during the upstroke phase and rapidly deactivates upon action potential repolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, as predicted by our model, the AITC-induced TRPM8 current during a typical action potential waveform mainly manifest during the upstroke phase, and rapidly deactivates upon action potential repolarization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation that matches model predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "b3bd2a01-b709-4cb0-9d82-b55b7fda8aa2",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C79",
+      "claim": "An equipotent concentration of menthol results in less outward current but more prominent activation of inward TRPM8 current during the repolarization phase following an action potential.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, an equipotent concentration of menthol (i.e. a concentration of menthol provoking a similar steady-state current) results in a less outward current but more prominent activation of inward TRPM8 current during the repolarization phase following an action potential, and thus leads to more Ca2+ influx via TRPM8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "e6523ee7-30ca-4a0c-81a0-2a79567be02d",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C80",
+      "claim": "Inhibiting action potential firing using TTX has a more profound effect on menthol-induced responses than on AITC-induced responses in sensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In line herewith, we found that inhibiting action potential firing using TTX has a more profound effect on menthol-induced responses than on AITC-induced responses in sensory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "71741f28-7a4a-497d-ad07-ea5f5eaea7a9",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C81",
+      "claim": "TRPM8 underlies the residual TRPA1- and TRPV1-independent responses to AITC in mouse sensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that TRPM8 underlies the residual TRPA1- and TRPV1-independent responses to AITC in mouse sensory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "23d1af7b-b0f3-4967-9726-94eaab1cf959",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C82",
+      "claim": "Activation of TRPM8 by AITC only occurred in the high micromolar to millimolar concentration range under experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Under our experimental conditions, activation of TRPM8 by AITC only occurred in the high micromolar to millimolar concentration range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "ece794db-c8f9-49c4-ac4c-cb1cfe8e03a6",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C83",
+      "claim": "TRPM8 is about two orders of magnitude less sensitive to AITC than TRPA1.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, TRPM8 is about two orders of magnitude less sensitive to AITC than TRPA1, for which concentrations for half-maximal activation of 5\u201350 \u00b5M have been reported (Bandell et al., 2004; Everaerts et al., 2011; Jordt et al., 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison with citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "ca89ee3b-36e8-4889-8a69-07604a4dd9ac",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C84",
+      "claim": "TRPM8 sensitivity to AITC is comparable to TRPV1, for which a concentration for half-maximal activation of 3 mM was found at room temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "but comparable to TRPV1, for which a concentration for half-maximal activation of 3 mM was found at room temperature (Everaerts et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "3c324d27-033d-430b-8008-6becc46f2675",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C85",
+      "claim": "AITC concentrations \u2264100 \u00b5M evoke responses that are strictly TRPA1-dependent in sensory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings are in line with in vitro experiments in sensory neurons, showing that AITC concentrations \u2264100 \u00b5M evoke responses that are strictly TRPA1-dependent (Bautista et al., 2006; Everaerts et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "f2746aa3-32ee-487a-832a-2f1060367eb4",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C86",
+      "claim": "Higher concentrations of AITC can evoke TRPA1-independent responses mediated by TRPV1 or TRPM8.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas higher concentrations can also evoke TRPA1-independent responses mediated by TRPV1 or TRPM8.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "62a1eebb-3421-44b9-bec1-2ce8648029de",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C87",
+      "claim": "Experimental solutions used in in vivo AITC experiments typically contain AITC at concentrations between 10 and 100 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "In such assays, experimental solutions that are injected or topically applied typically contain AITC at concentrations between 10 and 100 mM (Bautista et al., 2006; Caterina et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "bd940b97-eb50-4352-92a4-b76cd420c590",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C88",
+      "claim": "Pain and inflammatory responses to AITC under experimental conditions are largely mediated by TRPA1 and TRPV1.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas earlier studies have clearly shown that pain and inflammatory responses under such experimental conditions are largely mediated by TRPA1 and TRPV1 (Bautista et al., 2006; Everaerts et al., 2011; Kwan et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "017e00b8-3f61-4cc9-a37b-f8bc271038aa",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C89",
+      "claim": "TRPM8-positive sensory nerve endings may become activated at AITC doses used in in vivo experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "our present results suggest that also TRPM8-positive sensory nerve endings may become activated at these AITC doses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a speculation based on the current results.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "4fd9b24f-d6ee-4c93-acb3-78815cd0d535",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C90",
+      "claim": "Activation of TRPM8-expressing neurons can cause analgesia in animal models of acute and chronic pain.",
+      "claim_type": "EXPLICIT",
+      "source": "Since activation of TRPM8-expressing neurons can cause analgesia in animal models of acute and chronic pain (Liu et al., 2013; Proudfoot et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "b9d243b8-dbf6-4bde-bccb-b9678f9c5ca9",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C91",
+      "claim": "A transient increase in cold sensitivity was observed upon application of 100 mM AITC on the tongue of human volunteers.",
+      "claim_type": "EXPLICIT",
+      "source": "In line herewith, a transient increase in cold sensitivity was observed upon application of 100 mM AITC on the tongue of human volunteers (Albin et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "42c7aec6-2aba-4c20-b03b-93fc780a7811",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C92",
+      "claim": "In voltage-gated Na+, K+ and Ca2+ channels, ligand modulators have been classified based on their distinct state-dependent effects on channel gating.",
+      "claim_type": "EXPLICIT",
+      "source": "In voltage-gated ion Na+, K+ and Ca2+ channels, ligand modulators have since decades been classified based on their distinct state-dependent effects on channel gating (Hille, 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "7730b280-da9e-4baa-9466-199e43db2267",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C93",
+      "claim": "Mechanistic insight into state-dependent effects of ligands has been key to understanding their physiological impact in neurons and cardiac cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and this mechanistic insight has been key to understanding their physiological impact in for instance neurons and cardiac cells (Sack and Sum, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "31402cf3-f6b5-4c35-bbc4-8ebb0d838822",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C94",
+      "claim": "This study demonstrates for the first time the existence of two types of agonists with distinct state-dependent effects for a member of the TRP superfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we demonstrate for the first time the existence of two types of agonists with distinct state-dependent effects for a member of the TRP superfamily, the cold-sensitive TRPM8, and provide a paradigm for their differential effects in sensory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a main conclusion of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "8bc8764b-cdbc-446e-b585-d8278160a883",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "claim_id": "C95",
+      "claim": "Establishing the state-dependent mode of action of (ant)agonists of TRP channels will be essential to clarify their physiological actions.",
+      "claim_type": "EXPLICIT",
+      "source": "We argue that establishing the state-dependent mode of action of (ant)agonists of this and other TRP channels will be essential to clarify their physiological actions as well as to understand their impact on conformational changes in the channel molecule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an argument based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a6bdda57-87ab-4464-b189-3e9be46c0153",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "AITC activates TRPM8 in a subset of TRPV1/TRPA1-deficient DRG neurons. Approximately 9% of TRPV1/TRPA1-deficient neurons responded to 3 mM AITC, and 98% of these AITC-responsive neurons also responded to menthol. Both responses were fully inhibited by the TRPM8 antagonist AMTB, demonstrating that TRPV1- and TRPA1-independent AITC responses depend on TRPM8.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C20 provide converging evidence from calcium imaging experiments in knockout neurons showing AITC responses that are menthol-sensitive and AMTB-inhibitable. The use of genetic deletion controls (TRPV1/TRPA1 knockout) and pharmacological antagonism (AMTB) provides strong support for TRPM8-mediated AITC responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "32d6d380-c050-4cc9-88f2-50d8916807f2",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "AITC directly activates heterologously expressed human TRPM8 in a membrane-delimited manner. AITC at concentrations \u2265300 \u03bcM caused rapid and reversible increases in TRPM8 current in whole-cell recordings and inside-out patches. The effect was concentration-dependent but did not saturate at 10 mM. TIRF imaging showed no detectable change in membrane TRPM8 levels, and the rapid onset (~2 s) excludes trafficking as a mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C27 provide multiple lines of evidence including whole-cell electrophysiology, inside-out patch recordings, and TIRF imaging. The inside-out patch data (C24-C25) definitively establish membrane-delimited action, and TIRF imaging (C26-C27) rules out trafficking. The rapid kinetics and concentration-dependence are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "895079ff-c961-4254-afbd-1abdf43a95ad",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "AITC shifts the voltage-dependent activation of TRPM8 toward more negative voltages in a concentration-dependent manner without affecting maximal conductance at strongly depolarizing potentials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C29 describe steady-state conductance analysis from voltage-step protocols (Figure 3). The leftward shift in activation curves is a standard measure of agonist effect on voltage-gated channels and is clearly demonstrated with appropriate controls and concentration-dependence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "cb970470-bcb7-47df-86ed-ff79ae9c97c4",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "AITC and menthol have opposite effects on TRPM8 gating kinetics. AITC accelerates activation kinetics upon depolarization while maintaining mono-exponential relaxation, whereas menthol slows both activation and deactivation kinetics, producing bi-exponential relaxation. Other known agonists (thymol, icilin, linalool) act similarly to menthol.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C35 describe detailed kinetic analysis with exponential fitting to current traces. The differential effects are clearly shown in Figure 4 with appropriate quantification. The mono- vs bi-exponential distinction is rigorously demonstrated with residual analysis (Figure 4\u2014figure supplement 1). The extension to other agonists (C35) provides additional support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "9331c55b-9148-40fd-a7cb-a5487f5d7e3c",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "AITC and menthol represent two distinct types of TRPM8 agonists with fundamentally different mechanisms. Type I agonists (menthol-like) stabilize the open channel, producing slowly deactivating tail currents. Type II agonists (AITC-like) destabilize the closed channel, accelerating activation without affecting deactivation kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 and C36-C41 establish the classification framework based on the kinetic data. The mechanistic interpretations (C38-C41) logically follow from the observed kinetic effects: slow tail currents indicate impeded deactivation (open state stabilization), while faster activation indicates facilitated opening (closed state destabilization). This is a major conceptual contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "52fde846-1a00-46b4-a9c7-6088cfd89266",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A voltage-dependent MWC model accurately reproduces the differential effects of Type I and Type II agonists when menthol acts exclusively by stabilizing the open state and AITC acts by destabilizing the closed state. The model predicts concentration-dependent effects including mono-exponential kinetics for AITC and bi-exponential kinetics for menthol.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 describe model fitting results shown in Figure 5. The excellent fits to experimental data (C45) and accurate predictions of concentration-dependent effects (C46) provide strong quantitative support. The model parameters are provided in Table 1. This represents rigorous biophysical modeling that validates the mechanistic framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "3c078f35-582b-4a31-8662-96f2a580a8c4",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Type I and Type II agonists can act simultaneously and independently on TRPM8. Application of AITC in the presence of menthol produces faster activation kinetics without affecting deactivation, consistent with MWC model predictions for simultaneous stabilization of the open state and destabilization of the closed state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 describe experiments testing combined agonist effects (Figure 5\u2014figure supplement 2). The results match model predictions for independent action, providing additional validation of the mechanistic framework. This demonstrates that the two agonist types act at distinct sites or through distinct mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "6ac968f9-1be0-42fb-96b1-bb1637912223",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Type I and Type II agonists have distinct impacts on TRPM8 currents during action potentials. At equipotent concentrations, AITC produces larger outward currents during depolarization with rapid deactivation, while menthol produces smaller outward currents but larger inward currents during repolarization. Net charge influx is larger with menthol, while net charge efflux is larger with AITC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 and C52-C56 describe action potential clamp experiments (Figure 6). The differential effects on charge movement are clearly demonstrated and quantified. This extends the kinetic findings to physiologically relevant voltage waveforms, showing functional consequences of the different agonist mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "027967f8-eb0a-4852-904e-fbbeec374c50",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mouse TRPM8 is rapidly activated by AITC with similar kinetic differences between AITC and menthol as human TRPM8, but AITC-induced current inhibition is much less pronounced in mouse TRPM8 (88% remaining current) compared to human TRPM8 (21% remaining current) after 60 s exposure to 3 mM AITC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 describe species differences in AITC responses (Figure 7\u2014figure supplement 1-2). The data clearly show conserved activation mechanisms but different inhibition profiles. Sample sizes are adequate (n=7-8) and statistical significance is reported (p=0.00004). This is an important observation for interpreting in vivo mouse studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "1d7e985c-cea1-4aa5-bcf0-dc986c00ebb5",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Type I agonists are more potent than Type II agonists in evoking calcium influx in excitable cells. In TRPA1/TRPV1-deficient neurons, menthol evoked larger Ca2+ transients and higher peak rates of calcium rise than AITC. This difference was abolished by TTX, and the opposite pattern was observed in non-excitable HEK cells, demonstrating that Type I agonists are more effective due to enhanced calcium influx during prolonged inward tail currents following action potentials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C63 describe calcium imaging experiments comparing neurons and HEK cells with and without TTX (Figure 7). The reversal of relative potency by TTX provides strong evidence that the differential effects depend on action potential firing. This is a key physiological consequence of the different agonist mechanisms and is well-controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "77e0ba68-178d-440b-ab76-f9a750dc6b07",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "AITC is an atypical TRPM8 agonist with a fundamentally different mode of action from all other known TRPM8-activating stimuli. While cooling and known agonists (menthol, thymol, linalool, icilin, halothane) slow gating kinetics through open state stabilization, AITC accelerates gating kinetics through closed state destabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C67 synthesize the findings and place them in context of prior work on TRPM8 activation. The contrast with all previously characterized agonists is clearly established through both current data and citations. This represents a major conceptual advance in understanding TRPM8 pharmacology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "b83c586f-094f-44b5-9175-8dd82e3c3897",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Type II ligands reduce the Gibbs free energy difference between closed state and transition state (\u0394G\u03b1\u2020) without affecting \u0394G\u03b2\u2020, suggesting AITC-induced conformational changes occur early in gating before the main close-open transition. Type I ligands increase \u0394G\u03b2\u2020 without affecting \u0394G\u03b1\u2020, suggesting menthol-induced conformational changes occur after the main close-open transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C74 provide thermodynamic interpretation of the kinetic data. The reasoning follows standard transition state theory and is consistent with the observed effects on opening vs closing rates. This provides mechanistic insight into the timing of ligand-induced conformational changes during the gating cycle.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "5b2705ac-e8cc-490f-8bf8-46bfff3fff65",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Menthol binding to TRPM8 has a kon of 0.55 \u03bcM\u207b\u00b9s\u207b\u00b9, which is well below diffusion-limited rates and slower than ligand binding to synaptic receptors. This slow equilibration rate, attributed to the hydrophobic transmembrane location of the menthol binding site, explains the multi-exponential relaxation kinetics observed in the presence of menthol.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 describe kinetic parameters obtained from model fitting (Table 1) and provide mechanistic interpretation. The comparison to other receptors (with citations) contextualizes the findings. The explanation for multi-exponential kinetics based on slow ligand equilibration is mechanistically sound and consistent with the structural location of the binding site.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "e9489b0d-259f-4562-8c59-9e8cc3e32d13",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "During action potentials, AITC-induced TRPM8 current manifests mainly during the upstroke phase with rapid deactivation, while menthol produces less outward current but more prominent inward current during repolarization, leading to more Ca2+ influx. Inhibiting action potential firing with TTX has a more profound effect on menthol-induced responses than AITC-induced responses in sensory neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 describe the physiological consequences of differential gating kinetics. The action potential clamp data (Figure 6) and TTX experiments (Figure 7) provide direct experimental support. This demonstrates the functional importance of the mechanistic differences between agonist types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "7a451d31-8b7b-4c15-94d7-7b5fa584c492",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "TRPM8 mediates residual TRPA1- and TRPV1-independent AITC responses in mouse sensory neurons, but only at high concentrations (\u2265300 \u03bcM). TRPM8 is ~100-fold less sensitive to AITC than TRPA1 but comparable to TRPV1. AITC concentrations \u2264100 \u03bcM evoke strictly TRPA1-dependent responses, while higher concentrations can activate TRPV1 or TRPM8.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C86 establish the concentration-dependence and relative potency of AITC at different TRP channels. The data are consistent with prior literature (cited) and explain the residual responses in knockout neurons. This provides important context for interpreting AITC experiments in vivo.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "77fb4889-d83c-4cac-9315-497586819321",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "In vivo AITC experiments typically use 10-100 mM concentrations, which may activate TRPM8-positive sensory nerve endings in addition to TRPA1 and TRPV1. Since TRPM8 activation can cause analgesia, this may complicate interpretation of AITC pain studies. Consistent with this, 100 mM AITC transiently increased cold sensitivity in human volunteers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C91 discuss implications for in vivo studies with appropriate citations. The speculation about TRPM8 involvement (C89) is reasonable given the concentration-response data. The human volunteer data (C91, cited) provides supporting evidence. This is important for the field but represents interpretation rather than new experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "73a4a094-f099-458c-a057-318880bcebc1",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The Type I/Type II classification may extend to other voltage- and ligand-sensitive TRP channels. Published data suggest capsaicin and low pH act as Type II ligands on TRPV1 (faster activation), while PIP2 and lysophosphatidic acid act as Type I agonists (slower activation, longer tails).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C70 propose extension of the classification framework to other TRP channels based on published current traces. While the reasoning is sound and citations are provided, this represents reinterpretation of prior data rather than new experiments. The classification would require systematic kinetic analysis similar to that performed here for TRPM8 to be definitively established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "a01cf05a-dd09-42e8-bd9b-85fe91cf2dfd",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "A single TRPM8 channel can bind up to four ligand molecules (one per subunit), each with affinity Kd in the closed state, and every bound ligand shifts the closed-open equilibrium by a similar extent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C42-C44 cite prior work (Janssens and Voets, 2011) establishing these properties through chimera analysis. This is background information used to build the MWC model and is appropriately attributed to prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "d0b5c388-abd0-4c9b-ab61-8cd091fdb118",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "This study demonstrates for the first time the existence of two types of agonists with distinct state-dependent effects for a TRP channel. Similar classification has been used for decades in voltage-gated Na+, K+, and Ca2+ channels, where mechanistic insight has been key to understanding physiological impact. Establishing state-dependent modes of action will be essential for understanding TRP channel pharmacology and conformational changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C94 place the work in broader context with appropriate citations. Claim C94 accurately states this is the first such demonstration for TRP channels. Claim C95 is a forward-looking statement about the importance of this approach, which is reasonable given the demonstrated utility in other channel families.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    },
+    {
+      "id": "38a88e04-5770-41c0-83c7-f1c9b029199d",
+      "content_id": "d4959993-61ef-4882-8eae-619372f5577d",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Background on TRP channels and AITC: TRP channels act as polymodal sensors of temperature and chemicals. Capsaicin activates TRPV1, menthol activates TRPM8, and AITC (found in mustard/wasabi at 5-30 mM) activates TRPA1 and TRPV1. Approximately 10% of DRG neurons remain AITC-responsive after TRPA1/TRPV1 deletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C15 provide background information with appropriate citations to prior literature. These establish the context and motivation for the study. The information is accurately represented and properly attributed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:38.157800Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "369c9750-1e55-4123-9a2a-550b7b71f18c",
+      "result_id": "a6bdda57-87ab-4464-b189-3e9be46c0153"
+    },
+    {
+      "claim_id": "f6e0aed5-bb07-48fb-b38c-bc6696855d4c",
+      "result_id": "a6bdda57-87ab-4464-b189-3e9be46c0153"
+    },
+    {
+      "claim_id": "07500aaf-2a76-432e-9edc-7d7e28a835c8",
+      "result_id": "a6bdda57-87ab-4464-b189-3e9be46c0153"
+    },
+    {
+      "claim_id": "1cd84e69-cda8-449d-ba9c-2a400cc9fbc7",
+      "result_id": "a6bdda57-87ab-4464-b189-3e9be46c0153"
+    },
+    {
+      "claim_id": "749dd46b-1e7d-4375-90c6-09963bd5dcdc",
+      "result_id": "a6bdda57-87ab-4464-b189-3e9be46c0153"
+    },
+    {
+      "claim_id": "7192420c-46d1-4e4f-8377-95bb8ad42d52",
+      "result_id": "32d6d380-c050-4cc9-88f2-50d8916807f2"
+    },
+    {
+      "claim_id": "c200e07c-b8f4-450c-a037-e8968aacdb47",
+      "result_id": "32d6d380-c050-4cc9-88f2-50d8916807f2"
+    },
+    {
+      "claim_id": "d6f7fbcd-4d1e-4078-9c21-981f9f681c42",
+      "result_id": "32d6d380-c050-4cc9-88f2-50d8916807f2"
+    },
+    {
+      "claim_id": "f4034961-77a8-4b03-ab58-133b8d12d62b",
+      "result_id": "32d6d380-c050-4cc9-88f2-50d8916807f2"
+    },
+    {
+      "claim_id": "c6b1aec0-6e7e-4a69-a9f5-30fa47125523",
+      "result_id": "32d6d380-c050-4cc9-88f2-50d8916807f2"
+    },
+    {
+      "claim_id": "5850a68a-128f-443f-9ba9-9087b009247f",
+      "result_id": "32d6d380-c050-4cc9-88f2-50d8916807f2"
+    },
+    {
+      "claim_id": "48194cc4-5143-4a5a-9d77-9029af758809",
+      "result_id": "32d6d380-c050-4cc9-88f2-50d8916807f2"
+    },
+    {
+      "claim_id": "1d1022d5-816d-4457-8b04-197a7a35bca0",
+      "result_id": "895079ff-c961-4254-afbd-1abdf43a95ad"
+    },
+    {
+      "claim_id": "44daf18e-b23e-4361-9e42-6cdecf952134",
+      "result_id": "895079ff-c961-4254-afbd-1abdf43a95ad"
+    },
+    {
+      "claim_id": "9e7f284c-cfeb-47ad-888d-417b46868cb7",
+      "result_id": "cb970470-bcb7-47df-86ed-ff79ae9c97c4"
+    },
+    {
+      "claim_id": "9d03fe7e-4e52-4dc8-8f76-4bc558810be2",
+      "result_id": "cb970470-bcb7-47df-86ed-ff79ae9c97c4"
+    },
+    {
+      "claim_id": "ae06568e-fda5-457e-aa5f-02be19be043b",
+      "result_id": "cb970470-bcb7-47df-86ed-ff79ae9c97c4"
+    },
+    {
+      "claim_id": "c467c3f6-cbc7-4d75-b7e2-51e371cb7b5e",
+      "result_id": "cb970470-bcb7-47df-86ed-ff79ae9c97c4"
+    },
+    {
+      "claim_id": "0d7ce72d-0746-4523-ae69-2dca3dea6504",
+      "result_id": "cb970470-bcb7-47df-86ed-ff79ae9c97c4"
+    },
+    {
+      "claim_id": "581d341c-6736-4b79-b522-23f3b79c22cd",
+      "result_id": "cb970470-bcb7-47df-86ed-ff79ae9c97c4"
+    },
+    {
+      "claim_id": "84e817cf-d6db-4a8b-ae15-e3b9a483961b",
+      "result_id": "9331c55b-9148-40fd-a7cb-a5487f5d7e3c"
+    },
+    {
+      "claim_id": "10070ec1-c669-4b01-b173-b45629bd4046",
+      "result_id": "9331c55b-9148-40fd-a7cb-a5487f5d7e3c"
+    },
+    {
+      "claim_id": "92d091ee-8d38-4830-a7a7-11d39313363f",
+      "result_id": "9331c55b-9148-40fd-a7cb-a5487f5d7e3c"
+    },
+    {
+      "claim_id": "1551e225-1258-41ae-b487-0f8650d68d1d",
+      "result_id": "9331c55b-9148-40fd-a7cb-a5487f5d7e3c"
+    },
+    {
+      "claim_id": "93af7484-4a6a-4488-abe3-db0a4788f642",
+      "result_id": "9331c55b-9148-40fd-a7cb-a5487f5d7e3c"
+    },
+    {
+      "claim_id": "066a8d88-4bad-405d-9819-d68cd18cf105",
+      "result_id": "9331c55b-9148-40fd-a7cb-a5487f5d7e3c"
+    },
+    {
+      "claim_id": "0395c1fd-0a36-4d38-aa76-0e75dd4f7b5a",
+      "result_id": "9331c55b-9148-40fd-a7cb-a5487f5d7e3c"
+    },
+    {
+      "claim_id": "f9e55c02-35aa-4b9c-ae1b-77faaca69e3f",
+      "result_id": "9331c55b-9148-40fd-a7cb-a5487f5d7e3c"
+    },
+    {
+      "claim_id": "ad57169d-5a90-4bad-8091-c432f85e0f0f",
+      "result_id": "9331c55b-9148-40fd-a7cb-a5487f5d7e3c"
+    },
+    {
+      "claim_id": "25624083-7174-47f7-84f3-1eaf30965c82",
+      "result_id": "9331c55b-9148-40fd-a7cb-a5487f5d7e3c"
+    },
+    {
+      "claim_id": "f3580499-412b-486c-b35b-7482da078e76",
+      "result_id": "9331c55b-9148-40fd-a7cb-a5487f5d7e3c"
+    },
+    {
+      "claim_id": "10173662-a16b-480f-be7e-6bbe72ceb209",
+      "result_id": "52fde846-1a00-46b4-a9c7-6088cfd89266"
+    },
+    {
+      "claim_id": "2e0458c4-6aa7-40b4-8b6a-bdda4cd63537",
+      "result_id": "52fde846-1a00-46b4-a9c7-6088cfd89266"
+    },
+    {
+      "claim_id": "42488a8b-ceea-424c-8557-ded1ed3e35a4",
+      "result_id": "52fde846-1a00-46b4-a9c7-6088cfd89266"
+    },
+    {
+      "claim_id": "66491536-9bd6-422c-b8e5-71e0127f2f7c",
+      "result_id": "52fde846-1a00-46b4-a9c7-6088cfd89266"
+    },
+    {
+      "claim_id": "c8fd45d1-bee7-4ad7-80c3-848c76363921",
+      "result_id": "3c078f35-582b-4a31-8662-96f2a580a8c4"
+    },
+    {
+      "claim_id": "42e70c95-dc29-4978-a20e-6ddda68d2e92",
+      "result_id": "3c078f35-582b-4a31-8662-96f2a580a8c4"
+    },
+    {
+      "claim_id": "26982702-fa88-47e6-a9b2-56a65a120ddf",
+      "result_id": "3c078f35-582b-4a31-8662-96f2a580a8c4"
+    },
+    {
+      "claim_id": "730d2f62-d035-4bed-9781-5646ecb81b6f",
+      "result_id": "6ac968f9-1be0-42fb-96b1-bb1637912223"
+    },
+    {
+      "claim_id": "7916fbc2-6489-4dc7-8351-3a68dffa188c",
+      "result_id": "6ac968f9-1be0-42fb-96b1-bb1637912223"
+    },
+    {
+      "claim_id": "e69b8940-6e8a-499f-96b6-5ad7148dfe62",
+      "result_id": "6ac968f9-1be0-42fb-96b1-bb1637912223"
+    },
+    {
+      "claim_id": "a2e16263-8871-4d3d-8fb4-74311989bd06",
+      "result_id": "6ac968f9-1be0-42fb-96b1-bb1637912223"
+    },
+    {
+      "claim_id": "7dd1e8cf-d17d-4365-b759-2c8fe03ceb12",
+      "result_id": "6ac968f9-1be0-42fb-96b1-bb1637912223"
+    },
+    {
+      "claim_id": "881299b2-b9a5-4920-9005-89e3e3001942",
+      "result_id": "6ac968f9-1be0-42fb-96b1-bb1637912223"
+    },
+    {
+      "claim_id": "a61322a8-88be-4c41-b3fe-b17f7a3e3230",
+      "result_id": "6ac968f9-1be0-42fb-96b1-bb1637912223"
+    },
+    {
+      "claim_id": "5b48d433-8250-4a79-8067-bf1dd6f99372",
+      "result_id": "027967f8-eb0a-4852-904e-fbbeec374c50"
+    },
+    {
+      "claim_id": "f7a7c0e5-8599-4c79-b6b3-3689abd0c833",
+      "result_id": "027967f8-eb0a-4852-904e-fbbeec374c50"
+    },
+    {
+      "claim_id": "8d884404-638b-4971-9200-f3ba3899f8b8",
+      "result_id": "1d7e985c-cea1-4aa5-bcf0-dc986c00ebb5"
+    },
+    {
+      "claim_id": "809579f4-3a1b-47b7-9d09-15aaec1e12fb",
+      "result_id": "1d7e985c-cea1-4aa5-bcf0-dc986c00ebb5"
+    },
+    {
+      "claim_id": "5652a2c8-ecf3-4538-ae28-6ae619ba71ff",
+      "result_id": "1d7e985c-cea1-4aa5-bcf0-dc986c00ebb5"
+    },
+    {
+      "claim_id": "e66eb646-a467-4347-97f9-6bc58c28b6ce",
+      "result_id": "1d7e985c-cea1-4aa5-bcf0-dc986c00ebb5"
+    },
+    {
+      "claim_id": "8518677e-e7be-4d60-bacd-d17118eae16e",
+      "result_id": "1d7e985c-cea1-4aa5-bcf0-dc986c00ebb5"
+    },
+    {
+      "claim_id": "bc40b295-abc5-4022-a395-a9fc929e8c52",
+      "result_id": "77e0ba68-178d-440b-ab76-f9a750dc6b07"
+    },
+    {
+      "claim_id": "fc18c599-ae15-4e66-b7b6-3b2f2cfccf0d",
+      "result_id": "77e0ba68-178d-440b-ab76-f9a750dc6b07"
+    },
+    {
+      "claim_id": "5d3fda83-16a8-4004-8282-cc28882b9a35",
+      "result_id": "77e0ba68-178d-440b-ab76-f9a750dc6b07"
+    },
+    {
+      "claim_id": "1d59458a-6d50-4ca5-b390-0d9c4d47a5c4",
+      "result_id": "77e0ba68-178d-440b-ab76-f9a750dc6b07"
+    },
+    {
+      "claim_id": "a10d1a21-f875-4c25-95e3-d209dc822fa7",
+      "result_id": "b83c586f-094f-44b5-9175-8dd82e3c3897"
+    },
+    {
+      "claim_id": "b474fcfa-9341-4536-84c4-15a48cabf082",
+      "result_id": "b83c586f-094f-44b5-9175-8dd82e3c3897"
+    },
+    {
+      "claim_id": "1ae8aa80-7962-4892-8598-74e3d872a7f7",
+      "result_id": "b83c586f-094f-44b5-9175-8dd82e3c3897"
+    },
+    {
+      "claim_id": "09bca7ba-22ee-41c8-8053-50fa161456f2",
+      "result_id": "b83c586f-094f-44b5-9175-8dd82e3c3897"
+    },
+    {
+      "claim_id": "9a1c1dc6-0a88-4dbf-85fb-353ed441e30b",
+      "result_id": "5b2705ac-e8cc-490f-8bf8-46bfff3fff65"
+    },
+    {
+      "claim_id": "ebda1b37-6231-4a2e-ac14-f05ce868cc0d",
+      "result_id": "5b2705ac-e8cc-490f-8bf8-46bfff3fff65"
+    },
+    {
+      "claim_id": "fbc3899c-dac2-4f75-94e8-713efa29cc6f",
+      "result_id": "5b2705ac-e8cc-490f-8bf8-46bfff3fff65"
+    },
+    {
+      "claim_id": "591f0882-ab53-4fb7-b6fe-51e0771c9fb7",
+      "result_id": "e9489b0d-259f-4562-8c59-9e8cc3e32d13"
+    },
+    {
+      "claim_id": "b3bd2a01-b709-4cb0-9d82-b55b7fda8aa2",
+      "result_id": "e9489b0d-259f-4562-8c59-9e8cc3e32d13"
+    },
+    {
+      "claim_id": "e6523ee7-30ca-4a0c-81a0-2a79567be02d",
+      "result_id": "e9489b0d-259f-4562-8c59-9e8cc3e32d13"
+    },
+    {
+      "claim_id": "71741f28-7a4a-497d-ad07-ea5f5eaea7a9",
+      "result_id": "7a451d31-8b7b-4c15-94d7-7b5fa584c492"
+    },
+    {
+      "claim_id": "23d1af7b-b0f3-4967-9726-94eaab1cf959",
+      "result_id": "7a451d31-8b7b-4c15-94d7-7b5fa584c492"
+    },
+    {
+      "claim_id": "ece794db-c8f9-49c4-ac4c-cb1cfe8e03a6",
+      "result_id": "7a451d31-8b7b-4c15-94d7-7b5fa584c492"
+    },
+    {
+      "claim_id": "ca89ee3b-36e8-4889-8a69-07604a4dd9ac",
+      "result_id": "7a451d31-8b7b-4c15-94d7-7b5fa584c492"
+    },
+    {
+      "claim_id": "3c324d27-033d-430b-8008-6becc46f2675",
+      "result_id": "7a451d31-8b7b-4c15-94d7-7b5fa584c492"
+    },
+    {
+      "claim_id": "f2746aa3-32ee-487a-832a-2f1060367eb4",
+      "result_id": "7a451d31-8b7b-4c15-94d7-7b5fa584c492"
+    },
+    {
+      "claim_id": "62a1eebb-3421-44b9-bec1-2ce8648029de",
+      "result_id": "77fb4889-d83c-4cac-9315-497586819321"
+    },
+    {
+      "claim_id": "bd940b97-eb50-4352-92a4-b76cd420c590",
+      "result_id": "77fb4889-d83c-4cac-9315-497586819321"
+    },
+    {
+      "claim_id": "017e00b8-3f61-4cc9-a37b-f8bc271038aa",
+      "result_id": "77fb4889-d83c-4cac-9315-497586819321"
+    },
+    {
+      "claim_id": "4fd9b24f-d6ee-4c93-acb3-78815cd0d535",
+      "result_id": "77fb4889-d83c-4cac-9315-497586819321"
+    },
+    {
+      "claim_id": "b9d243b8-dbf6-4bde-bccb-b9678f9c5ca9",
+      "result_id": "77fb4889-d83c-4cac-9315-497586819321"
+    },
+    {
+      "claim_id": "3669a72f-b2b7-48a6-ae28-378a069e48d5",
+      "result_id": "73a4a094-f099-458c-a057-318880bcebc1"
+    },
+    {
+      "claim_id": "1671aa31-a8b9-4bbe-bbfb-cf8ebb24ed96",
+      "result_id": "73a4a094-f099-458c-a057-318880bcebc1"
+    },
+    {
+      "claim_id": "043a9973-0016-4382-be28-f55a4132c6d9",
+      "result_id": "73a4a094-f099-458c-a057-318880bcebc1"
+    },
+    {
+      "claim_id": "18db365e-2b23-4aed-bb75-26ace3ef1546",
+      "result_id": "a01cf05a-dd09-42e8-bd9b-85fe91cf2dfd"
+    },
+    {
+      "claim_id": "b1d71021-00f0-4871-9b6e-7b9928d273bd",
+      "result_id": "a01cf05a-dd09-42e8-bd9b-85fe91cf2dfd"
+    },
+    {
+      "claim_id": "25c32b58-797d-4e41-9451-82a1bdcc381f",
+      "result_id": "a01cf05a-dd09-42e8-bd9b-85fe91cf2dfd"
+    },
+    {
+      "claim_id": "42c7aec6-2aba-4c20-b03b-93fc780a7811",
+      "result_id": "d0b5c388-abd0-4c9b-ab61-8cd091fdb118"
+    },
+    {
+      "claim_id": "7730b280-da9e-4baa-9466-199e43db2267",
+      "result_id": "d0b5c388-abd0-4c9b-ab61-8cd091fdb118"
+    },
+    {
+      "claim_id": "31402cf3-f6b5-4c35-bbc4-8ebb0d838822",
+      "result_id": "d0b5c388-abd0-4c9b-ab61-8cd091fdb118"
+    },
+    {
+      "claim_id": "8bc8764b-cdbc-446e-b585-d8278160a883",
+      "result_id": "d0b5c388-abd0-4c9b-ab61-8cd091fdb118"
+    },
+    {
+      "claim_id": "5b1c44a4-72ab-4e18-933e-eab54baffabf",
+      "result_id": "38a88e04-5770-41c0-83c7-f1c9b029199d"
+    },
+    {
+      "claim_id": "8286efef-607c-4404-a0e0-7321d80e8d43",
+      "result_id": "38a88e04-5770-41c0-83c7-f1c9b029199d"
+    },
+    {
+      "claim_id": "a7810f23-7e62-4db2-afc1-70366e4a3b8b",
+      "result_id": "38a88e04-5770-41c0-83c7-f1c9b029199d"
+    },
+    {
+      "claim_id": "9b80c468-5ca9-4732-8c9c-065694a383e4",
+      "result_id": "38a88e04-5770-41c0-83c7-f1c9b029199d"
+    },
+    {
+      "claim_id": "8322a0f1-4491-4b3d-9803-f4a4ebdc534e",
+      "result_id": "38a88e04-5770-41c0-83c7-f1c9b029199d"
+    },
+    {
+      "claim_id": "663534e0-ba68-4603-93e4-b774a50f41ec",
+      "result_id": "38a88e04-5770-41c0-83c7-f1c9b029199d"
+    },
+    {
+      "claim_id": "22b8673f-9e05-4dec-bca1-cf3490a8b536",
+      "result_id": "38a88e04-5770-41c0-83c7-f1c9b029199d"
+    },
+    {
+      "claim_id": "5cfa1020-7c20-4028-92d7-87e93ec16583",
+      "result_id": "38a88e04-5770-41c0-83c7-f1c9b029199d"
+    }
+  ],
+  "comparisons": []
+}

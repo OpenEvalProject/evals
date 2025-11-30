@@ -1,0 +1,323 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C33",
+      "C63",
+      "C64",
+      "C66"
+    ],
+    "result": "High-frequency (40 and 100 Hz) optogenetic stimulation of central thalamus excitatory neurons causes widespread forebrain activation and behavioral arousal. fMRI shows significantly greater activation volumes in frontal cortex, motor cortex, sensory cortex, and striatum at 40/100 Hz compared to 10 Hz, with activation primarily ipsilateral but some contralateral recruitment at 100 Hz. Electrophysiology confirms increased local thalamic firing at all frequencies. Behavioral experiments show that 40/100 Hz stimulation transitions asleep rats to wakefulness with low-voltage fast EEG patterns indicative of arousal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C26-C30, C32-C33, C63-C64, C66 provide converging evidence from fMRI (Figure 2B-H), electrophysiology (Figure 1G), and behavioral/EEG data (Figure 6) demonstrating that high-frequency stimulation drives widespread forebrain activation and arousal. The quantification shows statistically significant differences between frequencies with appropriate statistical tests (Wilcoxon signed-rank, p<0.05). Sample sizes are adequate (n=10-16 animals for fMRI, n=4-6 for behavior).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C61",
+      "C62",
+      "C67"
+    ],
+    "result": "Low-frequency (10 Hz) stimulation of central thalamus causes limited forebrain activation, inhibition of somatosensory cortex, and behavioral arrest. fMRI shows significantly smaller activation volumes and negative BOLD signals in somatosensory cortex at 10 Hz. Electrophysiology confirms decreased neuronal firing in somatosensory cortex during 10 Hz stimulation (10/11 neurons), contrasting with increased firing at 40/100 Hz (11/11 neurons). Behavioral experiments show absence seizure-like freezing in 4/7 animals with spike-wave EEG patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C34-C38, C61-C62, C67 provide strong converging evidence from fMRI (Figures 2A, 3A-B), electrophysiology (Figure 3D-E, Table 1), and behavioral/EEG data (Figure 6) demonstrating frequency-dependent inhibition. The negative BOLD signal is validated by decreased neuronal firing with appropriate statistics (p<0.05, Wilcoxon tests). The opposite cortical responses at different frequencies from the same excitatory population represent a key mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C68"
+    ],
+    "result": "Low-frequency (10 Hz) but not high-frequency (40 Hz) central thalamus stimulation evokes spindle-like oscillations in zona incerta. Field potential recordings show significantly more spindle-like oscillations during 10 Hz stimulation (11/12 channels, p<0.01), with inter-event intervals of 6.6\u00b10.2 s similar to sleep-onset oscillations. Simultaneous EEG shows spike-wave modulation at 10 Hz versus low-voltage fast oscillations at 40 Hz, suggesting engagement of sleep-related thalamocortical networks at low frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C45-C49, C68 are supported by field potential recordings (Figure 4D-F) and simultaneous EEG (Figure 4G) with appropriate statistical analysis (Wilcoxon rank sum test, p<0.01). The spindle-like oscillations are well-characterized with quantified inter-event intervals. The link to sleep networks is supported by citation to prior literature and the observed EEG patterns. Sample size (n=2 animals, 28 neurons, 12 channels) is modest but adequate for this mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C60",
+      "C75",
+      "C76"
+    ],
+    "result": "Suppressing zona incerta activity with halorhodopsin during 10 Hz central thalamus stimulation reduces cortical inhibition, demonstrating a causal role for ZI in frequency-dependent cortical suppression. Optogenetic inhibition of ZI successfully suppressed firing in 62/70 neurons and disrupted the increase in ZI firing evoked by central thalamus stimulation (60/70 neurons, p<0.05). Critically, this ZI suppression reduced cortical inhibition in 50/76 somatosensory cortex neurons (66%, p<0.05), with some cells switching from inhibitory to excitatory responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C52-C57, C60, C75-C76 provide strong causal evidence through combined optogenetic manipulation (Figure 5). The dual-opsin approach (ChR2 in central thalamus, eNpHR in ZI) with simultaneous electrophysiology demonstrates that ZI mediates cortical inhibition. Statistics are appropriate (Wilcoxon tests, p<0.05) with adequate sample sizes (n=4 animals, 70 ZI neurons, 76 cortex neurons). This represents a novel mechanistic finding linking central thalamus arousal circuits to ZI.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C59",
+      "C69",
+      "C70",
+      "C73"
+    ],
+    "result": "Anatomical evidence supports direct connections between central thalamus and zona incerta, and between ZI and sensory cortex. EYFP-expressing axons from central thalamus were observed in ZI (Figure 4H), and mCherry-positive axons from ZI were observed in sensory cortex (Figure 5I). Prior literature establishes that ZI sends GABAergic projections to somatosensory thalamus and cortex and gates sensory information processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51, C59, C69-C70, C73 are supported by fluorescence imaging (Figures 4H, 5I) and citations to anatomical literature. The observed axonal projections provide anatomical substrate for the functional effects. However, the claim of direct connections from central thalamus to ZI (C51) is somewhat tentative as prior tracing studies failed to identify such connections (C74), though the fluorescence data suggests they exist. The anatomical evidence supports but does not fully prove monosynaptic connectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Optogenetic targeting achieved specific stimulation of excitatory relay neurons in central thalamus with appropriate spatial restriction. Immunohistochemistry shows 35% of cells in the injection area were EYFP-positive, and 97% of EYFP-positive cells co-expressed CaMKIIa (n=2 rats, 831 cells). Optical parameters indicate stimulation volume of 0.08 mm\u00b3. Fluorescence imaging confirms projections to frontal cortex and striatum, primarily ipsilateral, with superficial layer convergence in cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25, C102-C106 provide methodological validation of the optogenetic approach. The immunohistochemistry data (Figure 1\u2014figure supplement 1) confirms specificity for excitatory neurons. The optical calculations are based on cited assumptions (Aravanis et al., 2007) and are reasonable. The anatomical projections (Figure 2\u2014figure supplement 1) match known central thalamus connectivity. This validation is essential for interpreting the functional results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The temporal dynamics of cortical responses differ across stimulation frequencies. During 10 Hz stimulation, decreased firing occurred primarily 5-15 s after onset, while 40 Hz-induced increases occurred in the first 10 s, and 100 Hz increases were maintained throughout the 20 s period. Peri-stimulus time histograms show that during 10 Hz stimulation, spike events peaked 6-34 ms after light onset, suggesting some thalamocortical inputs generated action potentials despite net inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 are supported by temporal analysis in Table 1 and Figure 3\u2014figure supplement 1. The temporal differences suggest frequency-dependent short-term plasticity. The peri-stimulus analysis reveals that not every 10 Hz pulse evokes spikes, indicating complex integration. Statistics are appropriate (Wilcoxon tests, uncorrected p<0.05). This provides mechanistic insight into how frequency modulates cortical responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C83"
+    ],
+    "result": "Direct stimulation of central thalamus excitatory neurons at different frequencies leads to opposite BOLD signals (positive at 40/100 Hz, negative at 10 Hz) that are coupled with corresponding changes in neuronal activity (increased vs. decreased firing). This validates that negative BOLD signals reflect decreases in neuronal activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are supported by combined fMRI and electrophysiology (Figure 3) showing tight coupling between BOLD signals and neuronal firing. This addresses an important question about the neural basis of negative BOLD signals. The finding is consistent with prior literature (cited Shmuel et al., 2006; Huttunen et al., 2008) and extends it by using optogenetic stimulation of a defined population.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C108",
+      "C109"
+    ],
+    "result": "Control experiments with constant 3 ms pulse width across frequencies (10, 40, 100 Hz) preserved the frequency-dependent increase in cortical and striatal activation, demonstrating that stimulation frequency rather than pulse width is the primary factor modulating forebrain fMRI activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 are supported by control experiments (Figure 2\u2014figure supplement 3A-B) with n=3 animals. The preserved frequency effects when pulse width is held constant rule out pulse width as a confound. This control is important because the main experiments used different pulse widths (30, 7.5, 3 ms) to maintain constant 30% duty cycle. The control validates the interpretation that frequency is the key parameter.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The frequency-dependent forebrain activation pattern is specific to central thalamus. Stimulation of other thalamic nuclei (ventral posteromedial, anterior, posterior) failed to evoke similarly widespread striatal and cortical activity. Stimulation of intermediate hippocampus also did not show large differences in forebrain activation between 10 and 40 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 are supported by control experiments (Figure 2\u2014figure supplement 2A-B) comparing central thalamus to other targets. This demonstrates regional specificity and strengthens the conclusion that the observed effects are not simply due to any subcortical stimulation. However, sample sizes for control targets are not specified, which is a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C117"
+    ],
+    "result": "EEG patterns evoked during behavioral experiments (spike-wave at 10 Hz, low-voltage fast at 40/100 Hz) match those recorded under anesthetized conditions, linking the fMRI activation patterns to arousal responses. Pre-stimulus EEG band power was consistent across frequencies, confirming similar baseline states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C117 are supported by comparing EEG patterns in Figures 6C-D with Figure 4G, and by band power analysis (Figure 6\u2014figure supplement 1). This validates that the anesthetized fMRI experiments are relevant to awake behavior. The consistent baseline EEG across frequencies is important for ruling out pre-existing state differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Feedforward thalamocortical inhibition via cortical interneurons may contribute to cortical suppression during 10 Hz stimulation, in addition to the demonstrated role of ZI. Prior literature shows that low-frequency stimulation of thalamic nuclei causes cortical hyperpolarization, and that matrix thalamocortical neurons preferentially drive layer I interneurons with sustained IPSPs during repeated stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C82 are based on citations to prior literature (Agmon and Connors, 1991; Castro-Alamancos and Connors, 1996a/c; Cruikshank et al., 2012) and speculation (C82). While the authors acknowledge this as a possible mechanism, they provide no direct experimental evidence for interneuron-mediated inhibition in their study. The peri-stimulus data (Figure 3\u2014figure supplement 1) is consistent with this mechanism but does not prove it. This remains a hypothesis requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The current study's results are partially consistent with prior work by Logothetis et al. showing frequency-dependent BOLD responses in thalamic stimulation, but differ in that no significant negative BOLD signals were observed in polysynaptically connected cortical regions during high-frequency stimulation. Corticocortical disynaptic inhibition is unlikely to drive the observed 10 Hz cortical suppression given its bias toward higher frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 appropriately contextualize the findings relative to prior work (Logothetis et al., 2010; Silberberg and Markram, 2007). The comparison is supported by the data (Figure 2B-C showing predominantly positive BOLD at high frequencies). The reasoning about corticocortical inhibition being unlikely at 10 Hz is logical given the cited frequency bias. This discussion appropriately identifies similarities and differences with prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C93"
+    ],
+    "result": "Optogenetic stimulation allowed selective excitation of a single group of excitatory neurons and identification of their frequency-dependent role in network function, overcoming limitations of electrical stimulation which cannot dissociate effects of stimulation frequency from preferential recruitment of different neuronal populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 are supported by the experimental design and results throughout the manuscript. The optogenetic approach (CaMKIIa promoter for excitatory neurons) provides cell-type specificity that electrical stimulation lacks (cited McIntyre and Grill, 2002). The frequency-dependent effects observed (Figures 2-6) demonstrate the value of this approach. This is a valid methodological advantage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The ofMRI approach reveals dramatic frequency-dependent differences in global brain dynamics and supports central thalamus as a target for remediating cognitive disabilities via forebrain recruitment. The ofMRI techniques are generalizable to study DBS mechanisms for other targets and disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are supported by the dramatic differences in activation patterns shown in Figure 2 and the widespread forebrain recruitment at high frequencies. The translational relevance to DBS is reasonable given the clinical context discussed. The generalizability of ofMRI methods (C98) is a valid statement about the technique's applicability, though it is somewhat speculative regarding future applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Prior literature establishes that central thalamus and intralaminar nuclei play critical roles in arousal, attention, and goal-directed behavior, with anatomical connections from brainstem arousal systems and widespread projections to cortex and striatum. Physiological studies link intralaminar activity to behavioral alertness, while lesions cause cognitive impairments, hypersomnolence, or coma. Low-frequency electrical stimulation is associated with absence seizures in animals and humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C22 are all supported by citations to prior literature and provide appropriate background context. These claims accurately represent the cited work and establish the scientific foundation for the current study. They are not novel findings but rather a synthesis of established knowledge that motivates the experimental questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "Previous tracing studies failed to identify thalamic input specifically from intralaminar nuclei to zona incerta, creating some uncertainty about the anatomical pathway despite the observed EYFP-expressing axons in ZI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 is supported by citation to Shammah-Lagnado et al., 1985. This creates a tension with the observed EYFP axons in ZI (C50), which the authors acknowledge. The discrepancy could reflect limitations of prior tracing methods, viral spread to adjacent nuclei, or polysynaptic connections. The authors appropriately note this uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C115",
+      "C116"
+    ],
+    "result": "Methodological details include use of female Sprague-Dawley rats, challenges in targeting small intralaminar nuclei leading to exclusion of animals with inaccurate implants (2/18 excluded for lack of fMRI activity), identification of ZI based on depth, spike latencies, and whisker receptive fields, and 24% eNpHR transfection efficiency in ZI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101, C115-C116 are methodological details stated in the Materials and methods section. The exclusion criteria (C101) are clearly stated and appropriate. The ZI identification criteria (C115) are reasonable and supported by citation (Nicolelis et al., 1992). The transfection efficiency (C116) is directly measured. These details are important for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C107"
+    ],
+    "result": "fMRI acquisition used 23 coronal slices with 0.5\u00d70.5 mm\u00b2 in-plane resolution, 0.5 mm thickness, and 750 ms frame rate using spiral k-space trajectories and sliding window reconstruction for high spatiotemporal resolution with whole-brain coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C107 is a methodological detail about fMRI parameters stated in Materials and methods and supported by citation (Fang and Lee, 2013). These parameters are appropriate for whole-brain rodent fMRI and represent good spatiotemporal resolution. This is important for understanding the quality and coverage of the imaging data.",
+    "result_type": "MINOR"
+  }
+]

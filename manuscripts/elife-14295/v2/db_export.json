@@ -1,0 +1,2144 @@
+{
+  "submission": {
+    "id": "a00ae084-e82d-46a4-a220-efc5c64801ab",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:27:46.567555Z",
+    "updated_at": "2025-11-29T23:27:46.567555Z"
+  },
+  "content": [
+    {
+      "id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "submission_id": "a00ae084-e82d-46a4-a220-efc5c64801ab",
+      "content_type": "manuscript",
+      "content_text": "# Activation of GCN2 kinase by ribosome stalling links translation elongation with translation initiation\n\n## Authors\n\n- Ryuta Ishimura<sup>1</sup>\n- Gabor Nagy<sup>1</sup>\n- Ivan Dotu<sup>2</sup>\n- Jeffrey H Chuang<sup>3</sup>\n- Susan L Ackerman<sup>1</sup> ([ORCID: 0000-0002-6740-593X](https://orcid.org/0000-0002-6740-593X)) \u2020\n\n### Affiliations\n\n1. Howard Hughes Medical Institute, The Jackson Laboratory for Mammalian Genetics Bar Harbor United States\n2. Research Programme on Biomedical Informatics, Department of Experimental and Health Sciences Universitat Pompeu Fabra Barcelona Spain\n3. The Jackson Laboratory for Genomic Medicine Farmington United States\n4. Department of Genetics and Genome Sciences University of Connecticut Health Center Farmington United States\n5. Department of Cell and Molecular Medicine University of California, San Diego School of Medicine La Jolla United States\n6. Section of Neurobiology University of California La Jolla United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nRibosome stalling during translation has recently been shown to cause neurodegeneration, yet the signaling pathways triggered by stalled elongation complexes are unknown. To investigate these pathways we analyzed the brain of C57BL/6J-Gtpbp2nmf205-/- mice in which neuronal elongation complexes are stalled at AGA codons due to deficiencies in a tRNAArgUCU tRNA and GTPBP2, a mammalian ribosome rescue factor. Increased levels of phosphorylation of eIF2\u03b1 (Ser51) were detected prior to neurodegeneration in these mice and transcriptome analysis demonstrated activation of ATF4, a key transcription factor in the integrated stress response (ISR) pathway. Genetic experiments showed that this pathway was activated by the eIF2\u03b1 kinase, GCN2, in an apparent deacylated tRNA-independent fashion. Further we found that the ISR attenuates neurodegeneration in C57BL/6J-Gtpbp2nmf205-/- mice, underscoring the importance of cellular and stress context on the outcome of activation of this pathway. These results demonstrate the critical interplay between translation elongation and initiation in regulating neuron survival during cellular stress.\n\n## Introduction\n\nProtein translation cycles through the phases of initiation, elongation, termination, and ribosome recycling. Translation has been thought to be predominantly regulated at the initiation step in which the 40S small ribosome subunit, preloaded with Met-tRNAi, binds to the 5\u2019 end of mRNA. This complex then scans the mRNA for the AUG initiation codon where the 60S large ribosome subunit joins to form the 80S monosome (Aitken and Lorsch, 2012; Hinnebusch, 2014). A major control point of initiation is the reversible phosphorylation of the eukaryotic initiation factor 2 (eIF2), which in its active form binds GTP and Met-tRNAiMet and delivers the initiator tRNA to the 40S subunit of the ribosome (Baird and Wek, 2012; Donnelly et al., 2013). A variety of stress responses regulate translation initiation by converging on phosphorylation of Ser51 of the \u03b1 subunit of eIF2, which prevents formation of the ternary complex and thus translation initiation (Dalton et al., 2012). In addition to globally repressing translation, phosphorylation of eIF2\u03b1 also enhances translation of specific mRNAs with open reading frames in their 5\u2019 leaders, such as ATF4 (Lu et al., 2004; Vattem and Wek, 2004). This transcription factor promotes transcription of genes involved in a wide range of adaptive functions including amino acid metabolism, redox control, and translational control (Harding et al., 2003; Huang et al., 2009; Kilberg et al., 2012).\n\nThe eIF2\u03b1 subunit is the common target of four protein kinases, the activation of which is induced by distinct and specific extracellular and intracellular stresses. PKR-like ER kinase (PERK, EIF2AK3) is generally activated by the accumulation of misfolded proteins in the endoplasmic reticulum (Ron and Harding, 2012; Zhao and Ackerman, 2006). Heme-regulated inhibitor (HRI, EIF2AK1) and protein kinase R (PKR, EIF2AK2) are activated in erythroid cells by heme deprivation and viral infections, respectively (Chen, 2014; Marchal et al., 2014). Finally, GCN2 (General Control Non-derepressible 2, EIF2AK4) is activated by low intracellular levels of amino acids (Castilho et al., 2014). Amino acid deficiency results in an increase of deacylated tRNA species, which bind the histidyl-tRNA synthetase-related domain of GCN2 and the C-terminus, domains that are essential for GCN2 activation (Dong et al., 2000; Wek et al., 1995; Zhu et al., 1996).\n\nElongation has recently emerged as a translation phase that is also subject to elaborate regulatory and surveillance mechanisms (Richter and Coller, 2015). During elongation the ribosome moves in a codon-dependent fashion down the mRNA while amino acids are cyclically presented to the A site of ribosomes by EF-1/EF-T-bound aminoacylated tRNAs and added to the nascent peptide chain by the formation of peptide bonds. The rate of elongation is a function of ribosome transit rate, i.e. the time the translating ribosome spends on each codon, which is influenced by the secondary structure of the mRNA, nascent peptide:ribosome interactions, as well as codon identity and the availability of properly modified, cognate tRNAs for these codons (Chen et al., 2013; Ishimura et al., 2014; Ito and Chiba, 2013; Koutmou et al., 2015; Lu and Deutsch, 2008; Nedialkova and Leidel, 2015; Quax et al., 2015; Wen et al., 2008). Elongation rates are now considered important factors in gene expression that determine the fate of mRNA undergoing translation and the functioning of the nascent proteins (Elvekrog and Walter, 2015; Inada, 2013; Pelechano et al., 2015; Presnyak et al., 2015; Quax et al., 2015; Sherman and Qian, 2013). Pausing of translating ribosomes can be induced by cellular stress including temperature and oxidative stress (Knight et al., 2015; Liu et al., 2013; Shalgi et al., 2013; Zhong et al., 2015). Furthermore, misregulation of elongation may contribute to disease pathology resulting in neurological dysfunction such as observed in Fragile X syndrome (Chen et al., 2014; Darnell et al., 2011; Udagawa et al., 2013).\n\nRecently we reported that ribosome stalling is intimately associated with cerebellar and retinal degeneration in the C57BL6/J (B6J)-nmf205 mutant mouse (Ishimura et al., 2014). In this mouse model, two mutations are necessary to induce neuron loss: a loss of function mutation (Gtpbp2nmf205-/-) in a translational GTPase GTPBP2 (guanosine triphosphate-binding protein 2) and a hypomorphic mutation in the nervous system-specific n-Tr20 (nTRtct5) tRNAArgUCU gene. Ribosomal profiling of cerebella from mice with the n-Tr20 mutation revealed an increase in ribosome occupancy at AGA codons that dramatically increased in the absence of GTPBP2. These studies demonstrated that GTPBP2 likely functions as a ribosome rescue factor and that ribosome stalling, i.e. abnormally long ribosome transit rates, could lead to neuron death. Recently, a mutation in the GTPBP2 gene was suggested to underlie cerebellar and retinal degeneration and intellectual disability in humans, supporting an essential role of GTPBP2 in neuronal homeostasis (Jaberi et al., 2015).\n\nHere, we take advantage of unique mouse models with the Gtpbp2nmf205-/- mutation to assess the signaling events that are triggered by ribosome stalling. We show that GCN2 is activated in the B6J-Gtpbp2nmf205-/-\u00a0mutant brain in a tRNAdeacyl-independent manner prior to the onset of neurodegeneration. Activation of this kinase results in eIF2\u03b1 phosphorylation and induction of ATF4-target genes in the cerebellum and hippocampus of B6J-Gtpbp2nmf205-/- mice. Further, our genetic studies demonstrate that GCN2 activation functions to attenuate neurodegeneration in the B6J-Gtpbp2nmf205-/- brain. These results suggest that ribosome stalling activates GCN2 as a previously unknown regulatory mechanism that links the elongation and initiation steps of translation.\n\n## Results\n\n### ATF4 target genes are induced in the B6J-Gtpbp2nmf205-/- brain\n\nTo begin to elucidate the molecular pathways activated by ribosome stalling, we performed gene expression studies on cerebella isolated from B6J (n-Tr20, also known as nTRtct5, mutant) and B6J-Gtpbp2nmf205-/- (n-Tr20 mutant; Gtpbp2nmf205-/- )\u00a0mice at 5 weeks of age, a time when many granule cells are undergoing apoptosis in mutant mice (Figure 1A and Figure 1\u2014figure supplement 1). To separate changes in gene expression caused by ribosome stalling from more general changes caused by neuron damage, gene expression analysis was also performed on the hippocampus of 5-week-old mutant mice (which has low numbers of apoptotic neurons relative to the mutant cerebellum) and from both brain regions in 3-week-old mice (a time when no neuron death is observed) (Figure 1A and Figure 1\u2014figure\u00a0supplements 1 and 2). Gene Chip expression arrays (Affymetrix Mouse Gene 1.0\u2009ST Arrays) were performed with three biological replicates for each age, genotype, and tissue. Genes whose expression differed between B6J and B6J-Gtpbp2nmf205-/- by at least 1.5 fold with a q-value < 0.05 were selected for further analysis (Figure 1\u2014figure supplement 3 and Figure 1\u2014source data 1). Using these criteria, 583 genes were upregulated and 327 genes were downregulated in the cerebellum from 5-week-old mutant mice. Fewer genes in the hippocampus of 5-week-old mutant mice exhibited altered expression (78, upregulated; 26, downregulated). In the cerebellum of 3-week-old B6J-Gtpbp2nmf205-/- mice 225 genes were upregulated and 100 downregulated, while only 10 genes were upregulated and 1 downregulated in the hippocampus of mutant mice at this age.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/14295/elife-14295-fig1-v2.jpg)\n\n**Figure 1.:** (A) To segregate genes associated with ribosome stalling from genes nonspecifically induced during neurodegeneration, microarray analysis was performed on the cerebellum (Cb) and hippocampus (Hp) from B6J and B6J-Gtpbp2nmf205-/- (B6J-nmf205-/-) mice at 3-weeks (3W) and 5-weeks (5W) of age. (B) Enriched pathways among genes that were up or downregulated in the B6J-Gtpbp2nmf205-/- brain were obtained by Kegg pathway analysis. Note that upregulated gene pathways exhibited more robust p-values. (C) Ingenuity Pathway Analysis (IPA) upstream regulator analysis of B6J-Gtpbp2nmf205-/- upregulated genes demonstrates ATF4 and EIF2AK3 activation in the 3- and 5-week hippocampus and cerebellum. Inflammatory-related upstream regulators are also strongly activated of in the 5-week-old mutant cerebellum. (D) Volcano plots of \u2013log10q-values and relative fold changes of all genes. Genes previously shown to be expressed in microglia (red), astrocytes (green), or in both microglia and astrocytes (blue) are indicated, with all other genes shown in gray. Genes with very high levels of induction are shown in boxes to fit on the scale. The horizontal dashed lines indicate a false discovery rate of 0.1. Note the strong induction of genes activated in both microglia and astrocytes in the 5-week-old B6-Gtpbp2nmf205-/- cerebellum. (E) Immunofluorescence using antibodies to Iba1 (microglia) and GFAP (astrocytes) was performed on sections of B6J and B6J-Gtpbp2nmf205-/- cerebellum at indicated ages. Microglia and astrocytes were activated in the mutant cerebellum with highest levels of activation at 5 weeks of age. Sections were counterstained with Hoechst 33342 to visualize nuclei as shown in merged. Scale bar, 50 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14295/elife-14295-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Hematoxylin and eosin-stained sagittal sections of the B6J-Gtpbp2nmf205-/- (B6J-nmf205-/-) and B6J cerebellum at the ages shown. Higher-magnification images of cerebellar lobule IX are shown. Scale bars, 1 mm (upper row), and 50 \u03bcm (lower row).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14295/elife-14295-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Hematoxylin and eosin-stained sagittal sections of hippocampus (HP) in B6J-Gtpbp2nmf205-/- (B6J-nmf205-/-) at 3- and 5-weeks of age and B6J (wild type) at 5-weeks of age. Higher-magnification images of the dentate gyrus (DG) are shown. Scale bars, 500 \u03bcm (top row), and 50 \u03bcm (bottom row).\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/14295/elife-14295-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Volcano plots of microarray results of cerebellar and hippocampal transcripts from 3- and 5-week-old B6J and B6J-Gtpbp2nmf205-/- (B6J-nmf205-/-) mice. Thresholds of a relative fold change of 1.5 fold (vertical lines) and a q-value of 0.05 (horizontal lines) were adopted for this study.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/14295/elife-14295-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Antibodies against Iba1 and GFAP assessed activation of microglia and astrocyte, respectively in CA1 (A) and dentate gyrus (B) of B6J and B6J-Gtpbp2nmf205-/- (B6J-nmf205-/-). Sections were counterstained with Hoechst 33,342 to visualize nuclei as shown in merged images. For comparative purposes, images were taken with an identical exposure time as those in Figure 1E. Scale bar, 50 \u03bcm.\n\nNeuron damage induces activation of microglia and astrocytes and these inflammatory reactions are commonly observed in acute and chronic neurodegeneration. Indeed, Kegg pathway analysis and upstream regulator pathway analysis (Ingenuity Pathway Analysis) on differentially expressed genes in the B6J-Gtpbp2nmf205-/- brain revealed enrichment of inflammation/immune pathways (e.g., hematopoietic cell lineage and cytokine-cytokine receptor interactions) (Figure 1B,C and Figure 1\u2014source data 2). We compared our differentially regulated gene set to genes that were activated in microglia and/or astrocytes in the spinal cord of transgenic mice for mutant G93A SOD1, a model of amyotrophic lateral sclerosis (Chiu et al., 2013), or the cortex of mice transgenic for both the APPSwe and PS1dE9 genes, a commonly used Alzheimer\u2019s Disease model (Orre et al., 2014) (Glia Open Access Database) (Holtman et al., 2015). Overlap in our gene set was observed with genes expressed in activated microglia or astrocytes (150 and 60 genes, respectively) or both cell types (39 genes) (Figure 1D and Figure 1\u2014source data 3). Upregulation of these genes was highest in the 5-week-old B6J-Gtpbp2nmf205-/- cerebellum consistent with the robust signal from immunofluorescence on mutant and wild type brains with antibodies to Iba1 and GFAP, markers for activated microglial and astrocytes, respectively (Figure 1E and Figure 1\u2014figure supplement 4).\n\nIn addition to upregulation of inflammation/immune genes, Gene Ontology and Kegg analysis of upregulated genes identified enrichment of genes in aminoacyl-tRNA biosynthesis and amino acid metabolic pathways in the mutant cerebellum and hippocampus from 3- and 5-week-old mice (Figure 1B and Figure 1\u2014source data 2). Consistent with this result, upstream regulator analysis of differentially expressed genes in the mutant brain demonstrated enrichment for EIF2AK3 (PERK), an eIF2\u03b1 kinase, and its downstream effector, activating transcription factor 4 (ATF4), a key component of the integrated stress response and activator of aminoacyl-tRNA synthetases and amino acid metabolic pathways (Figure 1C and Figure 1\u2014source data 2). P-values for pathways that were enriched in downregulated genes in the mutant brain tended to be lower, but were consistent with dysfunction of terminally differentiated neurons (e.g., calcium signaling and amyotrophic lateral sclerosis pathways).\n\nTo further investigate ATF4 activation in the B6J-Gtpbp2nmf205-/- cerebellum we compared our differentially expressed gene sets to 472 ATF4 target genes identified by chromatin immunoprecipitation sequencing (ChIP-seq) from tunicamycin-treated mouse embryonic fibroblasts (Han et al., 2013). Ninety-nine of these known target genes were upregulated in the cerebellum and/or hippocampus of mutant mice (Figure 2A and Figure 2\u2014source data 1). ATF4 target genes were upregulated in both the cerebellum and hippocampus; of the 56 genes that were upregulated in both the 3- and 5-week mutant cerebellum and in the 5-week mutant hippocampus, 73% of genes were known ATF4 target genes (Figure 2B and Figure 2\u2014source data 2). Although fewer genes were significantly upregulated in the 3-week mutant hippocampus, 6 of 10 of these genes were known ATF4 targets (Figure 2C). ATF4 target genes were among the most highly upregulated genes in the cerebellum and hippocampus (Figure 2D and Figure 2\u2014source data 1). Together, these data suggested that ATF4 activation is an early and robust event in both the hippocampus and cerebellum of B6J-Gtpbp2nmf205-/- mice.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/14295/elife-14295-fig2-v2.jpg)\n\n**Figure 2.:** (A) Volcano plots of ATF4 downstream genes demonstrating activation of the ATF4 pathway in the B6J- Gtpbp2nmf205-/- (B6J-nmf205-/-) brain. Fold change and q values of all genes are shown and ATF4 target genes, obtained from previous ChIP-Seq studies as described in the text, are red. Genes with very high levels of induction are shown in boxes to fit on the scale. Note that although induction of ATF4 downstream genes is observed in all groups, upregulation of these genes occurs earlier and is most robust in the cerebellum. (B) Venn diagram of differentially expressed genes between B6J and B6J-Gtpbp2nmf205-/- 3-and 5-week cerebellum and 5-week hippocampus. Note that a large number of genes (56 genes) are consistently upregulated between cerebellum and hippocampus and that most of these genes are known ATF4 target genes. (C) The distribution of ATF4 target genes in the upregulated gene set from the B6J-Gtpbp2nmf205-/- 3-week hippocampus. (D) The relative fold change (RFC) of the top ten upregulated genes in the 3-week-old B6J- Gtpbp2nmf205-/- cerebellum for each time point and brain region. RFCs depicted with solid bars were significant changes (p<0.05) and those depicted by hatched bars were not.\n\n### Activation of the eIF2\u03b1 kinase GCN2 in the B6J-Gtpbp2nmf205-/- brain\n\nPreferential translation of ATF4 and activation of the integrated stress response is initiated by phosphorylation of Ser51 of eIF2\u03b1. Thus, we examined the eIF2\u03b1 phosphorylation status in the cerebellar extracts of 3-week-old B6J, B6J.B6Nn-Tr20 (B6J mice in which the wild-type n-Tr20 gene was transferred to B6J by repeated backcrossing), and B6J-Gtpbp2nmf205-/- mice by Western blot analysis (Figure 3A). Consistent with our ribosome occupancy studies at AGA codons (Ishimura et al., 2014), the ratio of p-eIF2\u03b1 to total eIF2\u03b1 was significantly higher in the B6J cerebellum relative to the B6J.B6Nn-Tr20 cerebellum, and the level of phosphorylated eIF2\u03b1 further increased in the cerebellum of B6J-Gtpbp2nmf205-/- mice. Levels of total eIF2\u03b1 did not differ significantly between genotypes.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/14295/elife-14295-fig3-v2.jpg)\n\n**Figure 3.:** (A) Western blot analysis of cerebellar extracts from 3-week-old mice incubated with the antibodies shown (left panel). The relative abundance of phospho-eIF2\u03b1 (Ser51) to total eIF2\u03b1 was averaged for three biological replicates (right panel). Values are shown relative to B6J. (B) The effect of Gcn2 deletion on the 146 genes upregulated or the 191 genes downregulated by 1.5 fold (padj < 0.01) in the cerebellum of B6J-Gtpbp2nmf205-/- (B6J-nmf205-/-) relative to that of B6J (left and right diagram, respectively). ATF4 target status of the 83 genes that are upregulated in the B6J-Gtpbp2nmf205-/- cerebellum relative to B6J and that also have a significant decrease in expression in the B6J-Gtpbp2nmf205-/-; Gcn2-/- cerebellum relative to B6J- Gtpbp2nmf205-/- (middle diagram). (C) Fold change of upregulated ATF4 downstream genes from B6J-Gcn2-/-, B6J-Gtpbp2nmf205-/-, and B6J-Gtpbp2nmf205-/-; Gcn2-/-mice\u00a0relative to B6J expression. The 10 most upregulated genes in cerebellum of B6J-Gtpbp2nmf205-/-mice\u00a0relative to that B6J are shown. Note that the increased expression of these GCN2-ATF4 downstream genes in the B6J-Gtpbp2nmf205-/- cerebellum was completely suppressed by deletion of Gcn2. Error bars = SEM. *p<0.05, **p<0.01, and ***p<0.001\u00a0(one-way ANOVA, A, C).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14295/elife-14295-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** RT-PCR was performed to assess splicing of the Xbp1 mRNA in 3-week-old cerebellum (A), and 4-week-old cerebellum and hippocampus (B) in B6J-Gtpbp2nmf205-/- (B6J-nmf205-/-) mice. NIH3T3 cells were untreated or treated with thapsigargin (Thaps.) as a negative and positive control, respectively, for Xbp1 splicing.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14295/elife-14295-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** RT-qPCR was performed on the cerebellar transcripts from B6J, B6J.Gcn2-/-, B6J-Gtpbp2nmf205-/- (B6J-nmf205-/-), and B6J- Gtpbp2nmf205-/- (B6J-nmf205-/-); Gcn2-/- 3-week-old mice for the top 5 ATF4 downstream genes that had the highest relative fold change in the 3-week-old B6J-Gtpbp2nmf205-/- cerebellum in the microarray study. Expression levels were normalized by Gapdh expression, and relative fold change was calculated relative to the expression of the B6J cerebellum. Three mice from each genotype were analyzed and error bars indicate SEMs. ***p<0.001.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/14295/elife-14295-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Volcano plots of pairwise genotype comparisons of transcripts from RNA-SEQ analysis performed on the cerebellum of 3-week-old B6J, B6J.\u00a0Gcn2-/-, B6J-Gtpbp2nmf205-/- (B6J-nmf205-/-), and B6J-Gtpbp2nmf205-/- (B6J-nmf205-/-); Gcn2-/- mice. Thresholds of a relative fold change of 1.5 fold (vertical lines) and a p-value of 0.05 (horizontal lines) were adopted for this study.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/14295/elife-14295-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** RT-qPCR analysis was performed on ATF4 target genes in the cerebellum from 2-month-old B6J, B6J.B6Nn-Tr20 and B6J.\u00a0Gcn2-/- mice. Expression levels were normalized to Gapdh expression (n=4 mice per genotype). Error bars = SEM. *p<0.05 (Student's t tests).\n\nPathway analysis suggested activation of PERK, the kinase coupling eIF2\u03b1 phosphorylation and ATF4 translation during the unfolded protein response (UPR). To determine if the UPR is activated in the B6J-Gtpbp2nmf205-/- cerebellum, we examined transcripts of Hspa5, also known as BiP/GRP78, and Xbp1, genes that are sensitive markers of the UPR and not under ATF4 regulation (Kozutsumi et al., 1988; Yoshida et al., 2001). During UPR activation, an intron in Xbp1 is removed by the serine/threonine kinase/endoribonuclease, IRE1. This splicing, and activation of the ATF6 transcription factor lead to transcriptional upregulation of the ER chaperone BiP. Neither Xbp1 splicing nor BiP levels were upregulated in the B6J-Gtpbp2nmf205-/- cerebellum (Figure 3\u2014figure supplement 1, and data not shown) suggesting eIF2\u03b1 phosphorylation and ATF4 activation was regulated by a eIF2\u03b1 kinase other than PERK.\n\nThe eIF2\u03b1 kinase GCN2 is activated by amino acid deprivation and other conditions that increase levels of uncharged tRNAs. Amino acid deprivation would be expected to also result in ribosome stalling. Thus we hypothesized that GCN2 is the primary effector of eIF2\u03b1 phosphorylation in the B6J-Gtpbp2nmf205-/- brain. To test this, B6J.Gcn2-/- and B6J-Gtpbp2nmf205-/- mice were crossed to generate B6J-Gtpbp2nmf205-/-; Gcn2-/- mice and phosphorylation of eIF2\u03b1 in cerebellar extracts from these mice and B6J.Gcn2-/- mice was examined. Levels of p-eIF2\u03b1 (Ser51) in the cerebellum from B6J-Gtpbp2nmf205-/-; Gcn2-/- mice were similar to those observed in the cerebellum of B6J.B6Nn-Tr20 and B6J.Gcn2-/- mice demonstrating that GCN2 is the kinase responsible for the increase in p-eIF2\u03b1 levels (Figure 3A).\n\nTo determine if loss of Gcn2 also impacts ATF4 activation in the B6J-Gtpbp2nmf205-/- cerebellum, we first analyzed several known ATF4-target genes that were highly induced in the B6J-Gtpbp2nmf205-/- cerebellum. RT-qPCR was performed on cerebellar cDNA generated from 3-week-old B6J, B6J-Gtpbp2nmf205-/-, B6J.Gcn2-/-, and B6J-Gtpbp2nmf205-/-; Gcn2-/- mice (Figure 3\u2014figure supplement 2). As expected, we observed significant induction of these genes in B6J-Gtpbp2nmf205-/- relative to levels in the B6J cerebellum. However, in the absence of GCN2, upregulation of these genes was dramatically attenuated suggesting ATF4 activation was also regulated by GCN2 in the B6J-Gtpbp2nmf205-/- cerebellum.\n\nTo further define GCN2-dependent changes in gene expression, we performed RNA-Seq analysis from cerebella isolated from 3-week-old B6J, B6J-Gtpbp2nmf205-/-, B6J.Gcn2-/-, and B6J-Gtpbp2nmf205-/-; Gcn2-/- mice. Three biological replicates were analyzed for each genotype and genes with expression differences \u2265 1.5 fold (padj < 0.01) were chosen for further analysis (Figure 3\u2014figure supplement 3). Significant upregulation of 146 genes, many (57%) of which were also found to be upregulated by our microarray studies, was observed in B6J-Gtpbp2nmf205-/- cerebellum relative to the B6J cerebellum (Figure 3B). RNA-Seq also identified 191 genes that were significantly downregulated in B6J-Gtpbp2nmf205-/- mice, many (45%) of which were also identified by microarray (Figure 3B).\n\nLoss of GCN2 reverted the expression of 83 of the 146 genes upregulated in the B6J-Gtpbp2nmf205-/- cerebellum to B6J levels, or near-B6J levels, including those genes with the highest fold induction in the B6J-Gtpbp2nmf205-/- cerebellum (Figures 3B, Figure 3\u2014source data 1). Kegg pathway analysis of the 83 genes that reverted to wild type levels revealed enrichment for aminoacyl tRNA biosynthesis. IPA analysis also yielded several upstream regulators indicative of ATF4 activation including PERK and GCN2, compounds that induce the UPR (thapsigargin, tunicamycin) or cause amino acid deprivation (histidinol) (Figure 3\u2014source data 2). Of these 83 genes, 48 genes had been previously shown to be ATF4 target genes by ChIP-Seq analysis (Figure 3B and Figure 3\u2014source data 2) (Han et al., 2013). Eight additional genes had been previously shown to be downregulated in Atf4-/- cells suggesting that they may also be under ATF4 control (Ebert et al., 2012; Harding et al., 2003; Lange et al., 2008). Analysis of the remaining 27 genes, which may be direct or indirect targets of ATF4 genes, failed to reveal enriched pathways, perhaps due to the small sample size (Figure 3B, and Figure 3\u2014source data 2). Of the genes that were downregulated in the B6J-Gtpbp2nmf205-/- cerebellum relative to B6J, the majority were not affected by Gcn2 loss, and Kegg pathway analysis of those that did change also failed to reveal enriched pathways (Figure 3B, Figure 3\u2014source data 3).\n\nIn the Gtpbp2nmf205-/-;\u00a0B6J.Gcn2-/-; cerebellum, we also observed a further increase in expression of 21 genes that were upregulated in the B6J-Gtpbp2nmf205-/- cerebellum. GO and Kegg Pathway analysis revealed this gene set was enriched in inflammatory response genes and also contained genes targeted to the nucleolus that were involved in ribosome and ribonucleoprotein biogenesis (Figure 3\u2014source data 3). Similarly, nucleolar genes, RNA processing genes and ribosome biogenesis genes were enriched in the 580 genes that were upregulated in the B6J-Gtpbp2nmf205-/-; Gcn2-/- cerebellum, but not in the B6J-Gtpbp2nmf205-/- cerebellum. A number (547) of genes were also uniquely downregulated in the B6J-Gtpbp2nmf205-/-; Gcn2-/- cerebellum. GO analysis of this gene set revealed moderate enrichment for neuronal and synaptic genes. Together these data suggest that in addition to attenuating the ISR, loss of Gcn2 in the B6J-Gtpbp2nmf205-/- cerebellum results in upregulation of genes involved in nucleolar function and downregulation of neuron specific genes suggestive of nucleolar dysfunction and neuronal damage, respectively.\n\nAlthough there was a difference in levels of p-eIF2\u03b1, our RNA-Seq experiments showed no significant changes in gene expression between the cerebellum of B6J and B6J.Gcn2-/- mice (Figure 3\u2014source data 1). We suspected these changes may be subtle and below the detection limits of these experiments. To test this idea, we used RT-qPCR to determine the relative expression of the top 10 ATF4 targets that were upregulated in the B6J-Gtpbp2nmf205-/- cerebellum in the cerebellum of B6J, B6J.B6Nn-Tr20, and B6J.Gcn2-/-mice (Figure 3\u2014figure supplement 4). Indeed, we found that six of these genes were upregulated in the B6J cerebellum relative to expression levels in the B6J.B6Nn-Tr20 cerebellum, demonstrating that loss of n-Tr20 function leads to minor changes in the expression of ATF4-target genes. In agreement with our results from analysis of B6-Gtpbp2nmf205-/- mice, deletion of Gcn2 reduced the expression of these genes back to B6J.B6Nn-Tr20 levels.\n\nActivation of GCN2 under conditions of nutrient deficiency has been attributed in part to binding of uncharged tRNAs to a histidyl-tRNA synthetase (HisRS)-like domain in the carboxyl (C)-terminus. Ribosome footprinting of the 3-week-old B6J-Gtpbp2nmf205-/- cerebellum revealed ribosome stalling only at AGA codons, as predicted by the decrease in processed n-Tr20 (Ishimura et al., 2014). Levels of tRNAArgUCU in the cerebellum of 3-week-old B6J-Gtpbp2nmf205-/- were 40% lower than in B6J mice (Figure 4A; n=3, p<0.05). However, the ratio of uncharged to charged tRNAArgUCU did not differ between the B6J and B6J-Gtpbp2nmf205-/- cerebellum (Figure 4B; n=3, p>0.5).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/14295/elife-14295-fig4-v2.jpg)\n\n**Figure 4.:** (A) Northern blot analysis of cerebellar RNA from 3-week-old B6J and B6J-Gtpbp2nmf205-/- (B6J-nmf205-/-) mice using pooled probes to n-Tr21/22/23/25 tRNAs to assess the expression levels of the tRNAArgUCU isodecoder family. 5S was used as internal control. (B) Charged (pH 5) and uncharged (pH 9) tRNAArgUCU levels in the 3-week-old B6J and B6J-Gtpbp2nmf205-/- cerebellum. Note that the levels of uncharged tRNAArgUCU are negligible in both the B6J-Gtpbp2nmf205-/- and B6J cerebellum. A short (right) and a longer (left) exposure are shown. (C\u2013E) RT-qPCR analysis of expression of ATF4 target genes. (C) Overexpression of the mutant n-Tr20 tRNA does not change expression of ATF4 targets in the 3-week-old cerebellum although increased levels of unprocessed n-Tr20 are present. (n=3 mice per genotype) (D) Overexpression of the mutant n-Tr20 tRNA does not change expression of ATF4 targets even in the Gtpbp2nmf205-/- mutant cerebellum at 3 weeks of age. (n=3) (E) ATF4 targets are significantly upregulated in the P0 brain of B6J-n-Tr20-/-; Gtpbp2nmf205-/- mice, although no unprocessed or uncharged forms of n-Tr20 are present. (n=4 mice per genotype) Error bars = SEM. *p<0.05, **p<0.01, and ***p<0.001 (Student's unpaired two-tailed t tests, C, E; one-way ANOVA, D).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14295/elife-14295-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Schematic showing 1.2-kb long genomic region around n-Tr20 containing the B6J SNP (indicated with an asterisk) that was used to produce transgenic mice. (B) Northern blot analysis using whole brain RNA comparing the expression pattern of n-Tr20 in B6N and B6J and the transgenic founder lines. Based on the amount of the 115-nt unprocessed form, line Tg681 has the highest expression of the mutant transgene and hence was chosen for the further experiments described in this paper.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14295/elife-14295-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) LoxP sites were introduced flanking the n-Tr20 locus were introduced by homologous recombination as shown in the schematic. n-Tr20 was deleted in the germline by crossing B6J mice carrying the floxed allele to B6J-EIIa-Cre mice. (B) PCR analysis of genomic DNA using the indicated primers confirmed Cre-excision of n-Tr20. (C) Northern blot analysis showing complete loss of n-Tr20 expression in B6J-n-Tr20-/- brain. For comparison, levels of n-Tr20 are shown in the B6J and B6N brain.\n\nDisruption of 5\u2019 tRNA processing has previously been shown to stimulate translation of GCN4, the yeast equivalent of ATF4, although in a p-eIF2\u03b1-independent manner (Qiu et al., 2000). To explore whether ATF4 activation may be induced by unprocessed n-Tr20 generated from the B6J allele, we generated transgenic B6N mice that expressed the mutant n-Tr20 gene (B6N-Tg-nTr20mut) at levels 6-fold above that observed in B6J brain (Figure 4\u2014figure supplement 1). Quantitative PCR using cerebellar cDNA from B6N and B6N-Tg-nTr20mut mice was performed for the ATF4 target genes that showed highest fold expression changes between the B6J and B6J-Gtpbp2nmf205-/- cerebellum. As shown in Figure 4C, overexpression of the unprocessed n-Tr20 did not result in upregulation of these genes.\n\nTo determine if ATF4 activation was influenced by interaction between overexpression of the unprocessed tRNA and loss of Gtpbp2, we crossed B6N mice (wild type for n-Tr20) that transgenically overexpress mutant n-Tr20 (B6N-Tg-n-Tr20mut) mice to B6J.B6Nn-Tr20-Gtpbp2nmf205-/- mice (wildtype for n-Tr20, mutant for Gtpbp2). RT-qPCR for the ATF4-target genes analyzed above was performed on cerebella from 3-week-old B6J.B6Nn-Tr20-Gtpbp2nmf205-/- with, and without, the mutant transgene, and B6J.B6Nn-Tr20 (n-Tr20 wild type), B6J (n-Tr20 mutant) and B6J-Gtpbp2nmf205-/- (mutant for n-Tr20; Gtpbp2-/-) mice. As expected, the expression of ATF4 target genes was dramatically upregulated in the B6J-Gtpbp2nmf205-/- cerebellum relative to the other strains. However, the expression of the mutant n-Tr20 transgene, even in the presence of the Gtpbp2 mutation, did not alter expression of ATF4 target genes (Figure 4D). Together, these results suggest that the induction of ATF4 target gene expression in B6J-Gtpbp2nmf205-/- is not due to expression of the unprocessed n-Tr20 tRNA.\n\nFor further evidence that loss of mature n-Tr20 causes GCN2 activation in the absence of Gtpbp2, we generated B6J mice in which the n-Tr20 gene was deleted by homologous recombination (B6J-n-Tr20-/-; Figure 4\u2014figure supplement 2). Mice heterozygous or homozygous for this deletion were born at expected Mendelian ratios. However when these mice were crossed with Gtpbp2nmf205-/- mice, mice that were homozygous for both the n-Tr20 deletion and the nmf205 mutation died shortly after birth, demonstrating that residual levels of aminoacylated n-Tr20 in the B6J brain allows postnatal survival of B6J-Gtpbp2nmf205-/- mice.\n\nRT-qPCR for the 10 most highly induced ATF4-target genes were performed on cDNA generated from the brain of P0 B6J, B6J-Gtpbp2nmf205-/-, B6J-n-Tr20-/-, and B6J-n-Tr20-/-; Gtpbp2nmf205-/- mice (Figure 4E). Overall, these genes were expressed at higher levels in the B6J-Gtpbp2nmf205-/- brain relative to that of B6J mice (p<0.002; Student\u2019s pairwise t test), however expression differences for individual genes were not significant between these genotypes. This result correlates with higher levels of mature n-Tr20 in the brains of B6J P0 mice relative to brains of P30 B6J mice (Ishimura et al., 2014). However in the P0 B6J-n-Tr20-/-; Gtpbp2nmf205-/- brain, 6 of these 10 genes were significantly upregulated relative to the B6J-n-Tr20-/- brain. These results demonstrate that complete loss of n-Tr20 on the Gtpbp2-deficient background results in ATF4 activation.\n\n### GCN2-ATF4 signaling pathway promotes survival for B6J-Gtpbp2nmf205-/- neurons\n\nThe effects of GCN2-ATF4 pathway on cell survival vary in an apparently context-dependent manner. To determine the effect of GCN2-ATF4 pathway on the progression of neurodegeneration induced by ribosome stalling, we compared locomotion and cerebellar pathology in B6J-Gtpbp2nmf205-/-; Gcn2-/- and B6J-Gtpbp2nmf205-/- mice. As expected, B6J-Gtpbp2nmf205-/- mice exhibited mild ataxia and tremors at 45 days of age, and no motor defects were observed in B6J.Gcn2-/- or B6J mice. However, ataxia and tremors were much more profound in B6J-Gtpbp2nmf205-/-; Gcn2-/- mice than in B6J-Gtpbp2nmf205-/- mice (data not shown). Consistent with the increased severity of the locomotor phenotype, histological examination showed an increase in loss of granule cells in the B6J-Gtpbp2nmf205-/-; Gcn2-/- cerebellum relative to the degeneration of these neurons in the B6J-Gtpbp2nmf205-/- mice (Figure 5). No neuropathology was observed in B6J.Gcn2-/- or B6J mice as expected. Furthermore, like B6J-Gtpbp2nmf205-/- mice, neurodegeneration was not observed in the cerebellum of B6J-Gtpbp2nmf205-/-; Gcn2-/- mice at 3-weeks of age (data not shown), suggesting that the accelerated neurodegeneration in B6J-Gtpbp2nmf205-/-; Gcn2-/- was not due to a change in the onset of neurodegeneration but due to acceleration in progression of cerebellar granule cell loss.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/14295/elife-14295-fig5-v2.jpg)\n\n**Figure 5.:** (A) Hematoxylin and eosin- stained sagittal sections of B6J.Gcn2-/-, B6J-Gtpbp2nmf205-/- (B6J-nmf205-/-), B6J-Gtpbp2nmf205-/-; Gcn2-/- and B6J cerebella. Higher-magnification images of cerebellar lobule IX and lobule VI are shown on lower panels. Scale bars, 1 mm (top row), and 50 \u03bcm (bottom two rows). (B) Numbers of granule cells (n=3 mice/genotype). Means \u00b1 SEM are shown. *p<0.05, **p<0.01, and ***p< 0.001 (one-way ANOVA).\n\nIn addition to accelerating cerebellar neuron loss, loss of GCN2 in B6J-Gtpbp2nmf205-/- mice leads to novel sites of neuron loss. Degeneration of CA1 pyramidal neurons does not occur in B6J-Gtpbp2nmf205-/- mice. However extensive death of these neurons was observed in the B6J-Gtpbp2nmf205-/-; Gcn2-/- hippocampus further supporting that activation of GCN2 is protective against neuron death in B6J-Gtpbp2nmf205-/- mice (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/14295/elife-14295-fig6-v2.jpg)\n\n**Figure 6.:** (A) Hematoxylin and eosin stained sagittal sections of 6-week-old B6J.Gcn2-/-, B6J-Gtpbp2nmf205-/- (B6J-nmf205-/-), B6J- Gtpbp2nmf205-/-; Gcn2-/-, and B6J hippocampi. Higher magnification images of hippocampal CA1 are also\u00a0shown. Scale bars, 250 \u03bcm (left panels), 100 \u03bcm (middle panels), and 20 \u03bcm (right panels).\n\n## Discussion\n\nFailure to resolve stalled elongation complexes in mammalian neurons results in degeneration of these cells, but the signaling pathways evoked by these complexes are unknown. Here we show that GCN2 activates the integrated stress response in the brain of mice with stalled ribosomes, clearly demonstrating an important feedback loop between elongation defects, in particular ribosome stalling, and translation initiation. A recent study demonstrated that ribosomes bound to rare and thus slowly decoded codons near the initiation codon of yeast reporter genes prevent the binding of subsequent initiation complexes and decrease protein production (Chu et al., 2014). Our studies further connect translation elongation and translation initiation by showing that stalled ribosomes can be sensed by GCN2 leading to reprogramming of initiation.\n\nBoth mouse and yeast GCN2 are activated by deprivation of any amino acid or by conditions that mimic low amino acid availability such as aminoacyl-tRNA synthetase inhibitors and amino acid analogs, demonstrating that GCN2 is an important monitor of cellular amino acid levels. GCN2 is also activated by glucose deprivation, proteasome inhibition, and other conditions, many of which also decrease the amino acid pool, though in less obvious ways (Castilho et al., 2014; Deng et al., 2002; Jiang and Wek, 2005; Yang et al., 2000). A decrease in the intracellular amino acid pool in turn can lead to increased levels of deacylated tRNA. Competition assays have indicated that aminoacylated tRNAPhe binds the enzymatically inactive HisRS-like domain of GCN2 less efficiently than deacylated tRNAPhe, suggesting GCN2 preferentially binds uncharged tRNAs (Dong et al., 2000). While not as efficient as acylated tRNAs, deacylated tRNA has been demonstrated to enter the A-site of the ribosome (Murchie and Leader, 1978) where models of GCN2 activation suggest that it is transferred to GCN2, possibly with the assistance of the GCN2 effector protein GCN1 to activate the kinase activity of GCN2 (Marton et al., 1997; Ramirez et al., 1991; Wek et al., 1989).\n\nInterestingly, our results suggest that ribosome stalling, in the absence of changes in levels of deacylated tRNAs, is sufficient to activate GCN2. We examined tRNAArgUCU (the corresponding isoacceptor for AGA, the only codon at which we observe stalled ribosomes upon ribosome profiling) and failed to detect changes in uncharged levels of n-Tr20 isodecoders in B6J-Gtpbp2nmf205-/- mutant cerebellum compared with that of B6J. Unprocessed tRNAs have also been shown to activate yeast ATF4, although this appears to occur independently of GCN2 (Qiu et al., 2000). Thus we tested if ATF4 activation is modulated by cerebellar overexpression of the unprocessed B6J-associated n-Tr20 tRNA with or without the Gtpbp2 mutation and found no change in ATF4 activation. Finally, ATF4 activation also occurs in the brains of B6J-Gtpbp2nmf205-/- mice in which the n-Tr20 is entirely deleted and thus no unprocessed tRNA is produced. These results raise the intriguing possibility that ribosome stalling may also contribute to GCN2 activation in other conditions, such as amino acid deprivation, in which like B6J-Gtpbp2nmf205-/- neurons, lower levels of acylated tRNA are present.\n\nThe exact mechanism for GCN2 activation by ribosome stalling remains unclear. Yeast GCN2 loosely binds to ribosomes via its C-terminus and ribosome association is required for GCN2 activation during amino acid deprivation (Narasimhan et al., 2004; Ramirez et al., 1991; Zhu and Wek, 1998). Thus GCN2 activation may occur upon association with stalled ribosomes. However, multiple reports have failed to detect changes in the steady state ribosome association of yeast GCN2 during amino acid starvation (Castilho et al., 2014). Further, studies suggest that association of mouse GCN2 with ribosomes is lower, perhaps due to differences in the structures of yeast and mammalian GCN2 (He et al., 2014). In agreement, we failed to observe changes in the low levels of ribosome-associated GCN2 in the mouse brain of wild type or B6J-Gtpbp2nmf205-/- mice (Ishimura, unpublished). As an alternative to alterations in ribosome binding, ribosome stalling may activate either cytoplasmic or ribosome-associated positive (e.g., GCN1 or GCN20) or inactivate negative (e.g., Yih1/IMPACT or eEF1A) regulators of GCN2 (Castilho et al., 2014). Lastly, ribosome stalling could alter cellular amino acid pools via unknown feedback mechanisms that in turn lead to GCN2 activation. Indeed, amino acid scarcity has been reported in cells during proteasome inhibition or after UV treatment, both of which have been shown to activate GCN2 (Siegel and Swenson, 1964; Suraweera et al., 2012).\n\nTranslational reprogramming mediated by the eIF2\u03b1 kinases is thought to be adaptive during stress by transiently shutting protein synthesis to prevent waste of cellular resources until management of stress has occurred. However recent evidence suggests that under several stress conditions, phospho-eIF2\u03b1/ATF4 may facilitate apoptosis. For example, Atf4-deficiency reduced oxidative stress-induced neuron death and death of ER-stressed mouse embryonic fibroblasts and \u03b2-cells (Han et al., 2013; Krokowski et al., 2013; Lange et al., 2008). Knockdown of Atf4 also attenuated neuronal loss induced by locally applied A\u03b2 peptide (Baleriola et al., 2014). Recently, reports suggest that increased levels of eIF2\u03b1 phosphorylation observed in transgenic mouse models of Alzheimer\u2019s disease and frontotemporal dementia and mice with prion disease amplifies neurodegeneration and defects in synaptic function (Devi and Ohno, 2014; Ma et al., 2013; Moreno et al., 2012; Radford et al., 2015; Segev et al., 2015), although other studies have failed to confirm some of these findings (Devi and Ohno, 2013; Paesler et al., 2015; Sadleir et al., 2014).\n\nIn contrast, we show that GCN2 activation protects neurons against death mediated by ribosome stalling. Deletion of Gcn2 in B6J-Gtpbp2nmf205-/- mice resulted in accelerated progression of cerebellar granule cell death. Furthermore in the hippocampus of B6J-Gtpbp2nmf205-/-; Gcn2-/-mice, we observed degeneration of CA1 pyramidal cells that is not observed in B6J-Gtpbp2nmf205-/-, suggesting the eIF2\u03b1/ATF4 pathway is vital for survival of these neurons during ribosome stalling. Our findings are similar to those found by Harding et al in which induction of ATF4 downstream genes, particularly genes encoding various antioxidant enzymes, attenuated death of mouse embryonic fibroblast cells during amino acid starvation (Harding et al., 2003). Similarly this pathway was shown to be critical for survival of tumor cells under nutrient deprivation conditions and in cultured dopaminergic neurons against toxin-induced cell death. (Sun et al., 2013; Ye et al., 2010). These results suggest that the type of stress may influence the response of cells to reduction in initiation. Indeed, under mild amino acid stress conditions (two\u2013five fold decrease in tRNAs) a decrease in initiation has been predicted to also decrease protein production via yeast whole-cell modeling simulations in which ribosomes have been suggested to be rate limiting for protein production (Shah et al., 2013). However, under severe amino acid stress, reducing initiation is predicted to have the opposite effect and significantly increase protein production. This latter model suggests that under severe stress, cellular protein production is limited by elongation rather than initiation rates, and reducing the rate of initiation increases the pools of free ribosomes and free tRNAs that correspond to the depleted amino acid. While it is not clear if this model also applies to mammalian cells (and/or neurons) or other types of proteotoxic stress, such alternative consequences on protein production in different stress conditions may account for differential responses upon loss of the eIF2a/ATF pathway. It is tempting to suggest that protection by GCN2 is conferred by phosphorylation of eIF2\u03b1 and the resulting decrease in the translational burden. However, recent findings have shown that cellular stress can cause downregulation of global translation during cellular stress independently of eIF2\u03b1 phosphorylation\u00a0(Knutsen et al., 2015), raising the possibility that eIF2\u03b1 is not necessarily directly causative in ameliorating neuron death in the B6J- Gtpbp2nmf205-/- brain.\n\nLoss of Gcn2 in the B6J-Gtpbp2nmf205-/- cerebellum not only resulted in reduction of eIF2\u03b1 phosphorylation and attenuated upregulation of ATF4 target genes, but also caused increased expression of genes that regulate nucleolar function, including those involved in ribosome biogenesis and processing of non-coding RNAs. Several of these genes were also upregulated, albeit at lower levels, in the B6J-Gtpbp2nmf205-/- cerebellum suggesting that neurons may sense a deficiency of functional ribosomes and correspondingly activate genes involved in ribosome biogenesis. The failure to decrease protein synthesis via GCN2-mediated eIF2\u03b1 phosphorylation may result in a further depletion of functional ribosomes necessitating additional compensatory increases in expression of genes controlling nucleolar function. Interestingly, human mutations in genes that control ribosome biogenesis have been shown to induce nucleolar stress and a variety of pathologies (Armistead and Triggs-Raine, 2014; Danilova and Gazda, 2015; Yelick and Trainor, 2015). More experiments are necessary to test whether nucleolar stress contributes to death of neurons during conditions of ribosome stalling.\n\n## Materials and methods\n\n### Mouse strains\n\nThe Gtpbp2nmf205-/- mutant strain was generated by ENU-treatment of C57BL/6J (B6J) mice as described previously (Ishimura et al., 2014). B6J.B6Nn-Tr20 mice and B6J.B6Nn-Tr20; Gtpbp2nmf205-/- were described previously (Ishimura et al., 2014). B6J.Gcn2-/- mice (Eif2ak4tm1.2Dron) were obtained from The Jackson Laboratory. To generate Tg(n-Tr20B6J) transgenic mice a 1.2-kb PCR fragment containing the mutant n-Tr20 gene was amplified from B6J genomic DNA and injected into the pronuclei of B6N zygotes. Founders were identified by PCR using primers specific for the B6J n-Tr20 allele (mutant tRNA forward, 5\u2019ggacttctaatccagaggttgt3\u2019; common reverse, 5\u2019tatcccatcacgaagcaaaac3\u2019).\n\nTo generate a targeting construct for the deletion of the n-Tr20 gene, a 251-bp DNA fragment consisting of the wild-type n-Tr20 gene and 80-bp upstream and a 21-bp downstream genomic sequence followed by a loxP site was PCR amplified. This amplicon was cloned into a vector containing a loxP-FRT-neo-FRT cassette, downstream of the second FRT site. For recombineering the tRNA locus, this construct was amplified with overhangs and electroporated into E. coli SW105 cells carrying a BAC (RP24-205L18). The modified BAC was then linearized at BsiWI sites in the BAC backbone and electroporated into C57BL/6J ES cells. Southern blot and loss-of-allele (LOA) analysis were performed to identify clones with the targeted allele, and clones were injected into C57BL/6J Perfect Host blastocysts (Taft et al., 2013). For germline transmission of the mutant alleles, male chimeras were mated to C57BL/6J females. The floxed n-Tr20 tRNA locus was deleted by mating heterozygous mice mice with B6J.EIIa-Cre mice obtained from The Jackson Laboratory. Deletion of the n-Tr20 locus was confirmed by PCR analysis of tail genomic DNA using primers flanking the locus forward 1, 5\u2019ggcgcgcctagtcgacataact3\u2019; forward 2, 5\u2019gcaggatgctgagatggctc3\u2019; common reverse, 5\u2019tatcccatcacgaagcaaaac3\u2019). The Jackson Laboratory Animal Care and Use Committee approved all animal protocols.\n\n### Microarray analysis\n\nThe cerebellum and hippocampus were collected from B6J and B6J- Gtpbp2nmf205-/- mice at 3 weeks and 5 weeks of age and RNA extraction was performed with Trizol (Invitrogen). cRNA was prepared from each sample and hybridized to Affymetrix Mouse Gene 1.0\u2009ST Arrays using standard methods. Three biological replicates were performed for each time point and genotype. Average signal intensities for each probe set were calculated using Expression Console software (Version 1.1, Affymetrix) using the average (RMA) method. Fs, a modified F-statistic incorporating shrinkage estimates of variance components from within the R/-MAANOVA package was used to determine differentially expressed genes by one pairwise comparisons (Cui et al., 2005; Wu et al., 2003). Permutations analysis was used to calculate the levels of statistical significance of pairwise comparisons and these were adjusted for multiple testing using the false discovery rate, q-value method (Storey, 2002). Differentially expressed genes are declared at an FDR q-value threshold of 0.05.\n\n### RNA-Seq\n\nLibrary preparation for gene expression comparison among B6J, B6J-Gcn2-/-, B6J- Gtpbp2nmf205-/-, and B6J-Gtpbp2nmf205-/-; Gcn2-/- was performed based using Illumina TruSeq methodology. Cerebellum at 3 weeks of age from each genotype was isolated and immediately frozen in liquid nitrogen. Total RNA was extracted using Trizol reagent (Life Technologies). RNA were further purified using the Qiagen RNeasy MinElute Cleanup Kit per manufacturer's instructions (Qiagen) and the quality of the purified RNA was assessed using an Agilent 2100 Bioanalyzer instrument and RNA 6000 Nano LabChip assay. Messenger RNA was purified using biotin-tagged poly dT oligonucleotides and streptavidin-coated magnetic beads. After fragmentation of mRNA, libraries were prepared using TruSeq RNA Sample Prep Kit v2 (Illumina). Quality of libraries was assessed on Agilent 2100 Bioanalyzer. Paired-end reads (2X100bp) were obtained using the HiSeq2500 (Illumina). The sequence reads were processed to a set of comprehensive QC metrics and then FASTQ data file of nucleotide sequences.\n\nEach library was split into two lanes for sequencing, yielding two FASTQ files that were then merged. Read mapping and quality control, read clipping and trimming were performed at the command line with options: 1) fastx_clipper -Q33 -a CTGTAGGCACCATCAAT -l 25 -c -n -v -i $fastqfile\u00a0-o temp_clipped.fastq and 2) fastx_trimmer -Q33 -f 2 -l 100 -i temp_clipped.fastq -o temp_trimmed.fastq. The resulting reads were mapped to a fasta file containing all coding transcripts plus the last 18nts of the 5\u2019UTR and the first 18nts of the 3\u2019UTR downloaded from Ensembl Biomart (http://www.ensembl.org/biomart/martview/) using bowtie: bowtie -S -p 16 -n 1 -m 1 -l 23 --norc $fastafile temp_trimmed.fastq where only reads uniquely matching to the sense strand and containing not more than one mismatch were considered.\n\nAfter mapping, read counts were calculated with an ad-hoc script, and then genes with significant up and down-regulation were calculated using DESeq2 (Love et al., 2014). We applied DESeq2 to detect differentially expressed genes at the default stringency, i.e. p-value of 0.1 (multiple-testing adjusted) or lower. Genes with low read counts were removed from the analysis using the independent filtering option in DESeq2 as determined by the p-value=0.1 threshold. We note that this results in genes with low read counts being given an adjusted p value of NA, and therefore they are not plotted in our volcano plots.\n\n### Gene ontology\n\nUpstream regulator analysis was performed with IPA (Ingenuity Pathway Analysis) browser (http://pages.ingenuity.com/Ingenuity_Login.html). Gene Ontology (GO) and Kegg pathway analysis was performed using the DAVID bioinformatics web server (http://david.abcc.ncifcrf.gov/) by uploading the gene lists from microarray analysis that were significantly upregulated or downregulated in B6J- Gtpbp2nmf205-/- compared to B6J brains or gene lists from RNAseq analysis (Huang da et al., 2009). The functional annotation chart and clustering analysis modules were employed for gene-term enrichment analysis. GO terms and Kegg pathway terms with a p-value < 0.05 were considered enriched.\n\nActivated microglia and astrocyte gene lists were obtained from Glia Open Access Database (GOAD, http://bioinf.nl:8080/GOAD/databaseSelectServlet) (Holtman et al., 2015). Microglia related genes were obtained from the studies of Alzheimer\u2019s disease model (APPSwe; PS1dE9) (Orre et al., 2014) and of ALS disease model (Sod1, Endpoint) (Chiu et al., 2013). Astrocyte related genes were obtained from the study of Alzheimer\u2019s disease model (App-Ps1) (Orre et al., 2014). Differentially expressed >1.5 fold genes with a p value < 0.05 were analyzed.\n\n### Histology and immunofluorescence\n\nMice were transcardically perfused with Bouin\u2019s fixative and brains were embedded in paraffin. Sections were stained with hematoxylin and eosin according to standard protocols. For immunofluorescence, mice were perfused with 4% paraformaldehyde (PFA) and brains were paraffin embedded. Sections were stained with rabbit anti-Iba1 (Wako, Richmond, VA) or a mouse anti-GFAP (Sigma Aldrich, St. Louis, MO). Signal was visualized with Alexa Fluor 488-congugated or 555-conjugated donkey secondary antibodies (Invitrogen).\n\n### Cell counts\n\nGranule cells, identified by their distinct nuclei were counted in a 50 \u00d7 50\u2009\u03bcm area from lobule VI and IX in hematoxylin and eosin stained sections that were taken at midline from three mice of each genotype.\n\n### Northern blot and tRNA aminoacylation analysis\n\nRNA extraction, Northern blot analysis, and tRNA aminoacylation analysis were performed as described previously (Ishimura et al., 2014). Blots were hybridized with a 32P-labeled oligo probe (TCT_nonchromosome1; [Ishimura et al., 2014]) recognizing the common sequence among tRNAArgUCU\u00a0isodecoders n-Tr21, n-Tr22, n-Tr23, and n-Tr25. Northern blot analysis of brain RNA from the B6J-n-Tr20-/- mice and B6N-Tg(n-Tr20B6J) mice was performed using a 32P-labeled oligo probe specific to n-Tr20 as described previously (Ishimura et al., 2014).\n\n### Western blotting\n\nProteins were extracted from cerebellum at three weeks of age as described previously (Carnevalli et al., 2004) and were resolved on SDS-PAGE gels prior to transfer to PVDF membranes. Membranes were blocked with 5% bovine serum albumin prior to incubations with primary antibodies. Total eIF2\u03b1 and phosphorylated eIF2\u03b1 (Ser51) were detected using anti-human rabbit polyclonal antibodies (Cell Signaling Technology, Danvars, MA) and anti-human rabbit polyclonal antibody (Invitrogen), respectively. Glyceraldehyde-3-phosphate dehydrogenase (GAPDH) was detected using anti-human mouse monoclonal antibody (clone 3C2, Sigma Aldrich). Membranes were subsequently incubated with HRP-conjugated anti-rabbit or anti-mouse IgG (1:5,000; Bio-Rad Life Science, Hercules, CA). Signals were detected with ECL Plus (GE Healthcare Life Sciences) and band intensities were quantified using ImageJ software (NIH).\n\n### RT-qPCR and Xbp1 analysis\n\nCerebella were isolated and immediately frozen in liquid nitrogen. Total RNA was extracted with Trizol reagent (Life Technologies). 1.3\u2009\u03bcg of total RNA was treated with DNAse I (Sigma) and then used for cDNA synthesis with oligo(dT)20 primers and the SuperScript III First-Strand Synthesis System (Invitrogen). PCR were performed using iQ SYBR Green Supermix (Bio-Rad) using a iQ5 Multicolor Real-Time PCR Detection System (Bio-Rad). Primers were as follows: Sesn2-forward, 5\u2019ccttctccacacccagacat3\u2019; Sesn2-reverse, 5\u2019agcctctggatcagcgagta3\u2019; Mthfd2-forward, 5\u2019ccgccagtcactcctatgtt3\u2019; Mthfd2-reverse, 5\u2019ggaggccatctacgttctca3\u2019; Ddr2-forward, 5\u2019tgatggagctgttgggtaca3\u2019; Ddr2-reverse, 5\u2019ccgttggtagcactttcgtt3\u2019; Aldh1l2-forward, 5\u2019gaggagcttctgccatcaac3\u2019; Aldh1l2-reverse, 5\u2019gcgagtccactgtgtcattg3\u2019; Chac1-forward, 5\u2019gtacggctccctagtgtgga3\u2019; Chac1-reverse, 5\u2019tcttcaaggagggtcaccac3\u2019, Asns-forward, 5\u2019aagatgggtttctggctgtg3\u2019; Asns-reverse, 5\u2019gcaactttgccatttggttt3\u2019; Stc2-forward, 5\u2019gattcatttcaaggatctcc3\u2019; Stc2-reverse, 5\u2019ggttcacaaggtccacatag3\u2019; Atf5-forward, 5\u2019cctgtggattaaagggggta3\u2019; Atf5-reverse, 5\u2019agcgtggaagattgttcagc3\u2019; Eif4ebp1-forward, 5\u2019ctagccctaccagcgatgag3\u2019; Eif4ebp1-reverse, 5\u2019cttgggggacatagaagcat3\u2019; Cyb5r1-forward, 5\u2019gctttctgctttttgccaac3\u2019; Cyb5r1-reverse, 5\u2019caaagcccttgctgtaggtc3\u2019 Gapdh-forward, 5\u2019cattgtcataccaggaaatg3\u2019, Gapdh-reverse, ggagaaacctgccaagtatg3\u2019. Expression of each gene of interest is normalized to Gapdh using the 2-\u0394\u0394CT method (Livek and Schimittgen, 2001). Primers used for Xbp1 splicing analysis were Xbp1-forward, 5\u2019gaaccaggagttaagaacacg3\u2019, Xbp1-reverse, 5\u2019aggcaacagtgtcagagtcc3\u2019.\n\n### Statistics\n\nAll data are presented as means \u00b1 SEM. Data were analyzed by one-way ANOVA or Student\u2019s t-test. p<0.05 was considered statistically significant.\n",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "3ec0e23d-8316-4ca7-9a85-0835198c8402",
+      "submission_id": "a00ae084-e82d-46a4-a220-efc5c64801ab",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David Ron, University of Cambridge , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.14295.029](https://doi.org/10.7554/eLife.14295.029)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Activation of GCN2 by Ribosome Stalling Links Translation Elongation with Translation Initiation\" for consideration by eLife. Your article has been favorably evaluated by a Senior editor and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nAll three reviewers recognized the significance of your paper's conclusions in regards to GCN2 activation by mechanism(s) that do not entail uncharged tRNAs and that ribosome stalling activates the ISR via GCN2 to limit neurodegeneration in a mouse model of ribosome stalling. Their views diverged initially in regards to the extent that the genetic arguments put forth in support of the conclusion were sufficient. However, in the consultation that followed the reviewers agreed that a suitably revised paper would be acceptable for publication even without further mechanistic insight into the links between ribosome stalling and GCN2 activation.\n\nEssential revisions:\n\n1) Given that the papers central conclusions rest on analysis of an imaginatively curated collection of mutant mice, it is important to qualify the conclusions and consider alternative mechanisms by which the combination of the rare allele of tRNA_ARG and the deficiency in GTPBP2 might lead indirectly to canonical activation of GCN2. Of particular note are linkages between GCN2 and stresses that interfere with proteasomes. This could involve recycling of amino acids, and another means of indirect activation of GCN2.\n\n2) As the role of eIF2\u03b1 phosphorylation in limiting neurodegeneration is inferred from the phenotype of the GCN2 knockout (but not confirmed by further genetic manipulation of levels of eIF2\u03b1 phosphorylation), the conclusion relating to the protective role of the ISR should be qualified.\n\n3) Figure 3A shows that the effect of GCN2 deletion on levels of eIF2\u03b1 phosphorylation is more evident in the B6J reference background than in the B6J-nmf205-/- background. This raises several questions: (a) Why then did the mRNA expression profiling show no differences between these two genotypes? (b) Figure 3A suggests involvement of other eIF2\u03b1 kinases in the B6J-nmf205-/-. Has the status of the UPR been examined experimentally in the B6J-nmf205-/ mice (XBP1 splicing, BiP expression)? The latter concern is further accentuated by the finding that EIF2AK3/PERK mRNA is elevated in the mutant mice (Figure 1C).\n\n4) Figure 4A and 4B are central to the paper's conclusion that tRNA uncharging does not correlate with GCN2 activation in the mutant mice. It would important to provide careful quantification (including shorter exposures) and statistical analysis of this key experiment. Extending the study to older mice (5 weeks old) would be very helpful.\n",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "302ef1c1-472d-4979-ae9a-d91709b359d5",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C1",
+      "claim": "Ribosome stalling during translation causes neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribosome stalling during translation has recently been shown to cause neurodegeneration, yet the signaling pathways triggered by stalled elongation complexes are unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the abstract as a known fact from recent research",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "a62f519e-a5db-4cd4-8978-9433d1b567ca",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C2",
+      "claim": "Increased levels of phosphorylation of eIF2\u03b1 (Ser51) were detected prior to neurodegeneration in C57BL/6J-Gtpbp2nmf205-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased levels of phosphorylation of eIF2\u03b1 (Ser51) were detected prior to neurodegeneration in these mice and transcriptome analysis demonstrated activation of ATF4, a key transcription factor in the integrated stress response (ISR) pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated finding from the study's experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "0420ab34-3987-4bb9-ae8c-3e894a0a5893",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C3",
+      "claim": "Transcriptome analysis demonstrated activation of ATF4 in C57BL/6J-Gtpbp2nmf205-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased levels of phosphorylation of eIF2\u03b1 (Ser51) were detected prior to neurodegeneration in these mice and transcriptome analysis demonstrated activation of ATF4, a key transcription factor in the integrated stress response (ISR) pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated finding from transcriptome analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "5d75f53a-041d-4f67-816f-80a15315c52d",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C4",
+      "claim": "ATF4 is a key transcription factor in the integrated stress response (ISR) pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased levels of phosphorylation of eIF2\u03b1 (Ser51) were detected prior to neurodegeneration in these mice and transcriptome analysis demonstrated activation of ATF4, a key transcription factor in the integrated stress response (ISR) pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about ATF4's role",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "c3b88546-12e2-48f2-8722-f94956f4c33e",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C5",
+      "claim": "The ISR pathway was activated by the eIF2\u03b1 kinase GCN2 in C57BL/6J-Gtpbp2nmf205-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic experiments showed that this pathway was activated by the eIF2\u03b1 kinase, GCN2, in an apparent deacylated tRNA-independent fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from genetic experiments conducted in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "c9b5ed15-2973-47c5-a91f-fcdeaae09541",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C6",
+      "claim": "GCN2 activation in C57BL/6J-Gtpbp2nmf205-/- mice occurs in a deacylated tRNA-independent fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic experiments showed that this pathway was activated by the eIF2\u03b1 kinase, GCN2, in an apparent deacylated tRNA-independent fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from genetic experiments, though qualified as 'apparent'",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "ea900041-8ba2-4e95-8167-686338a3c139",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C7",
+      "claim": "The ISR attenuates neurodegeneration in C57BL/6J-Gtpbp2nmf205-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Further we found that the ISR attenuates neurodegeneration in C57BL/6J-Gtpbp2nmf205-/- mice, underscoring the importance of cellular and stress context on the outcome of activation of this pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Directly stated finding from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "2ec7003e-650a-43e0-9779-a2727e4bf866",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C8",
+      "claim": "The outcome of ISR pathway activation depends on cellular and stress context.",
+      "claim_type": "EXPLICIT",
+      "source": "Further we found that the ISR attenuates neurodegeneration in C57BL/6J-Gtpbp2nmf205-/- mice, underscoring the importance of cellular and stress context on the outcome of activation of this pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of the study's findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "1d576d99-c1d2-4de0-b175-8fcce049845d",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C9",
+      "claim": "There is critical interplay between translation elongation and initiation in regulating neuron survival during cellular stress.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate the critical interplay between translation elongation and initiation in regulating neuron survival during cellular stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the study's results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "56d91caf-d185-4059-ac88-42f93e3cbf76",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C10",
+      "claim": "Translation is predominantly regulated at the initiation step.",
+      "claim_type": "EXPLICIT",
+      "source": "Translation has been thought to be predominantly regulated at the initiation step in which the 40S small ribosome subunit, preloaded with Met-tRNAi, binds to the 5' end of mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "01d3ae37-662c-473b-a695-e9352aa1a8b5",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C11",
+      "claim": "The 40S small ribosome subunit, preloaded with Met-tRNAi, binds to the 5' end of mRNA during translation initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Translation has been thought to be predominantly regulated at the initiation step in which the 40S small ribosome subunit, preloaded with Met-tRNAi, binds to the 5' end of mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about translation initiation mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "935a8f78-ccba-4a9c-b8e4-83b3322a73a5",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C12",
+      "claim": "The ribosome complex scans the mRNA for the AUG initiation codon.",
+      "claim_type": "EXPLICIT",
+      "source": "This complex then scans the mRNA for the AUG initiation codon where the 60S large ribosome subunit joins to form the 80S monosome (Aitken and Lorsch, 2012; Hinnebusch, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "c4a26c67-b6bf-4654-87be-f2bf3733913c",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C13",
+      "claim": "The 60S large ribosome subunit joins at the AUG initiation codon to form the 80S monosome.",
+      "claim_type": "EXPLICIT",
+      "source": "This complex then scans the mRNA for the AUG initiation codon where the 60S large ribosome subunit joins to form the 80S monosome (Aitken and Lorsch, 2012; Hinnebusch, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "a98afdbb-abe6-4d92-b8ba-2eda1fdee8f1",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C14",
+      "claim": "Reversible phosphorylation of eIF2 is a major control point of translation initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "A major control point of initiation is the reversible phosphorylation of the eukaryotic initiation factor 2 (eIF2), which in its active form binds GTP and Met-tRNAiMet and delivers the initiator tRNA to the 40S subunit of the ribosome (Baird and Wek, 2012; Donnelly et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "9f5fcb1f-f50f-42e6-9657-e520903d67ed",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C15",
+      "claim": "Active eIF2 binds GTP and Met-tRNAiMet and delivers the initiator tRNA to the 40S subunit of the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "A major control point of initiation is the reversible phosphorylation of the eukaryotic initiation factor 2 (eIF2), which in its active form binds GTP and Met-tRNAiMet and delivers the initiator tRNA to the 40S subunit of the ribosome (Baird and Wek, 2012; Donnelly et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "ee68d7ee-99a3-4333-bd91-0766bb802e2b",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C16",
+      "claim": "Stress responses regulate translation initiation by converging on phosphorylation of Ser51 of the \u03b1 subunit of eIF2.",
+      "claim_type": "EXPLICIT",
+      "source": "A variety of stress responses regulate translation initiation by converging on phosphorylation of Ser51 of the \u03b1 subunit of eIF2, which prevents formation of the ternary complex and thus translation initiation (Dalton et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "3ea276c0-743f-43d7-a764-02157163d2b1",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C17",
+      "claim": "Phosphorylation of Ser51 of eIF2\u03b1 prevents formation of the ternary complex and thus translation initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "A variety of stress responses regulate translation initiation by converging on phosphorylation of Ser51 of the \u03b1 subunit of eIF2, which prevents formation of the ternary complex and thus translation initiation (Dalton et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "35b5ce8a-f0eb-4251-a47d-ef4f5c21455d",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C18",
+      "claim": "Phosphorylation of eIF2\u03b1 globally represses translation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to globally repressing translation, phosphorylation of eIF2\u03b1 also enhances translation of specific mRNAs with open reading frames in their 5' leaders, such as ATF4 (Lu et al., 2004; Vattem and Wek, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "c2f25651-bafa-4a76-9eca-e3f08234f69d",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C19",
+      "claim": "Phosphorylation of eIF2\u03b1 enhances translation of specific mRNAs with open reading frames in their 5' leaders, such as ATF4.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to globally repressing translation, phosphorylation of eIF2\u03b1 also enhances translation of specific mRNAs with open reading frames in their 5' leaders, such as ATF4 (Lu et al., 2004; Vattem and Wek, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "70f8213e-6036-4edc-9865-eb721092718a",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C20",
+      "claim": "ATF4 promotes transcription of genes involved in amino acid metabolism, redox control, and translational control.",
+      "claim_type": "EXPLICIT",
+      "source": "This transcription factor promotes transcription of genes involved in a wide range of adaptive functions including amino acid metabolism, redox control, and translational control (Harding et al., 2003; Huang et al., 2009; Kilberg et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "38d782c4-026f-4f4d-81b6-48c836ab8c98",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C21",
+      "claim": "The eIF2\u03b1 subunit is the common target of four protein kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "The eIF2\u03b1 subunit is the common target of four protein kinases, the activation of which is induced by distinct and specific extracellular and intracellular stresses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "2cbf86c1-29c0-4641-ad66-b5d74aeac411",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C22",
+      "claim": "PERK is generally activated by the accumulation of misfolded proteins in the endoplasmic reticulum.",
+      "claim_type": "EXPLICIT",
+      "source": "PKR-like ER kinase (PERK, EIF2AK3) is generally activated by the accumulation of misfolded proteins in the endoplasmic reticulum (Ron and Harding, 2012; Zhao and Ackerman, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "6216c47c-0e18-4e8d-863d-48e50bc3c1c4",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C23",
+      "claim": "HRI is activated in erythroid cells by heme deprivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Heme-regulated inhibitor (HRI, EIF2AK1) and protein kinase R (PKR, EIF2AK2) are activated in erythroid cells by heme deprivation and viral infections, respectively (Chen, 2014; Marchal et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "f38a27b2-8df0-4306-9b36-cc166adcc368",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C24",
+      "claim": "PKR is activated by viral infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Heme-regulated inhibitor (HRI, EIF2AK1) and protein kinase R (PKR, EIF2AK2) are activated in erythroid cells by heme deprivation and viral infections, respectively (Chen, 2014; Marchal et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "aa2e46a7-14f6-4818-9eb1-ba7b80c00174",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C25",
+      "claim": "GCN2 is activated by low intracellular levels of amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, GCN2 (General Control Non-derepressible 2, EIF2AK4) is activated by low intracellular levels of amino acids (Castilho et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "d57a109e-658b-4c8e-842f-799ef9397dc6",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C26",
+      "claim": "Amino acid deficiency results in an increase of deacylated tRNA species.",
+      "claim_type": "EXPLICIT",
+      "source": "Amino acid deficiency results in an increase of deacylated tRNA species, which bind the histidyl-tRNA synthetase-related domain of GCN2 and the C-terminus, domains that are essential for GCN2 activation (Dong et al., 2000; Wek et al., 1995; Zhu et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "950d4410-38cb-47d6-8832-3f8f8f5dbeec",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C27",
+      "claim": "Deacylated tRNAs bind the histidyl-tRNA synthetase-related domain of GCN2 and the C-terminus, domains that are essential for GCN2 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Amino acid deficiency results in an increase of deacylated tRNA species, which bind the histidyl-tRNA synthetase-related domain of GCN2 and the C-terminus, domains that are essential for GCN2 activation (Dong et al., 2000; Wek et al., 1995; Zhu et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "149c745d-c446-4355-8deb-5b08accd3334",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C28",
+      "claim": "Elongation has recently emerged as a translation phase that is subject to elaborate regulatory and surveillance mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Elongation has recently emerged as a translation phase that is also subject to elaborate regulatory and surveillance mechanisms (Richter and Coller, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as recent knowledge with supporting citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "3def1000-c3c4-4d4a-ad86-e4f7e02896a1",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C29",
+      "claim": "During elongation the ribosome moves in a codon-dependent fashion down the mRNA while amino acids are cyclically presented to the A site of ribosomes by EF-1/EF-T-bound aminoacylated tRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "During elongation the ribosome moves in a codon-dependent fashion down the mRNA while amino acids are cyclically presented to the A site of ribosomes by EF-1/EF-T-bound aminoacylated tRNAs and added to the nascent peptide chain by the formation of peptide bonds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge about translation elongation mechanism",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "9d54c81c-cde6-4227-b46c-85257ca0f653",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C30",
+      "claim": "The rate of elongation is influenced by the secondary structure of the mRNA, nascent peptide:ribosome interactions, codon identity and the availability of properly modified, cognate tRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of elongation is a function of ribosome transit rate, i.e. the time the translating ribosome spends on each codon, which is influenced by the secondary structure of the mRNA, nascent peptide:ribosome interactions, as well as codon identity and the availability of properly modified, cognate tRNAs for these codons (Chen et al., 2013; Ishimura et al., 2014; Ito and Chiba, 2013; Koutmou et al., 2015; Lu and Deutsch, 2008; Nedialkova and Leidel, 2015; Quax et al., 2015; Wen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "f2f9fefd-023a-48c7-ba44-e3311265aa4c",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C31",
+      "claim": "Elongation rates determine the fate of mRNA undergoing translation and the functioning of the nascent proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Elongation rates are now considered important factors in gene expression that determine the fate of mRNA undergoing translation and the functioning of the nascent proteins (Elvekrog and Walter, 2015; Inada, 2013; Pelechano et al., 2015; Presnyak et al., 2015; Quax et al., 2015; Sherman and Qian, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as current knowledge with supporting citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "31eacc17-fe39-47db-ac9a-75207a7c04bd",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C32",
+      "claim": "Pausing of translating ribosomes can be induced by cellular stress including temperature and oxidative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Pausing of translating ribosomes can be induced by cellular stress including temperature and oxidative stress (Knight et al., 2015; Liu et al., 2013; Shalgi et al., 2013; Zhong et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "9ad172e7-0156-4946-b3d6-f56e79a1b6c6",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C33",
+      "claim": "Misregulation of elongation may contribute to disease pathology resulting in neurological dysfunction such as observed in Fragile X syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, misregulation of elongation may contribute to disease pathology resulting in neurological dysfunction such as observed in Fragile X syndrome (Chen et al., 2014; Darnell et al., 2011; Udagawa et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "eea4421f-678a-4a76-84aa-f189e4d25401",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C34",
+      "claim": "Ribosome stalling is intimately associated with cerebellar and retinal degeneration in the C57BL6/J (B6J)-nmf205 mutant mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently we reported that ribosome stalling is intimately associated with cerebellar and retinal degeneration in the C57BL6/J (B6J)-nmf205 mutant mouse (Ishimura et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from previous research by the authors",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "4f616685-8a81-476b-9441-cd8128272b3f",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C35",
+      "claim": "Two mutations are necessary to induce neuron loss in the B6J-nmf205 mouse model: a loss of function mutation in Gtpbp2 and a hypomorphic mutation in the n-Tr20 tRNAArgUCU gene.",
+      "claim_type": "EXPLICIT",
+      "source": "In this mouse model, two mutations are necessary to induce neuron loss: a loss of function mutation (Gtpbp2nmf205-/-) in a translational GTPase GTPBP2 (guanosine triphosphate-binding protein 2) and a hypomorphic mutation in the nervous system-specific n-Tr20 (nTRtct5) tRNAArgUCU gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge from previous research",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "f1819477-ca41-4922-b00c-c8d672d83f9d",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C36",
+      "claim": "Ribosomal profiling of cerebella from mice with the n-Tr20 mutation revealed an increase in ribosome occupancy at AGA codons that dramatically increased in the absence of GTPBP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribosomal profiling of cerebella from mice with the n-Tr20 mutation revealed an increase in ribosome occupancy at AGA codons that dramatically increased in the absence of GTPBP2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from previous research",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "763e19a7-f4b1-43f4-bbc2-54e1603e7d8d",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C37",
+      "claim": "GTPBP2 likely functions as a ribosome rescue factor.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies demonstrated that GTPBP2 likely functions as a ribosome rescue factor and that ribosome stalling, i.e. abnormally long ribosome transit rates, could lead to neuron death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation from previous studies",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "18394750-a7cd-444e-9d5c-9a8d928b4612",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C38",
+      "claim": "Ribosome stalling could lead to neuron death.",
+      "claim_type": "EXPLICIT",
+      "source": "These studies demonstrated that GTPBP2 likely functions as a ribosome rescue factor and that ribosome stalling, i.e. abnormally long ribosome transit rates, could lead to neuron death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation from previous studies",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "b99048fb-6c7b-43cc-9815-fa33bddd8873",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C39",
+      "claim": "A mutation in the GTPBP2 gene was suggested to underlie cerebellar and retinal degeneration and intellectual disability in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a mutation in the GTPBP2 gene was suggested to underlie cerebellar and retinal degeneration and intellectual disability in humans, supporting an essential role of GTPBP2 in neuronal homeostasis (Jaberi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as recent finding with supporting citation",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "48e8d196-2ad0-4d0a-be2d-555412967b85",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C40",
+      "claim": "GTPBP2 has an essential role in neuronal homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a mutation in the GTPBP2 gene was suggested to underlie cerebellar and retinal degeneration and intellectual disability in humans, supporting an essential role of GTPBP2 in neuronal homeostasis (Jaberi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation supported by citation",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "2699aeed-207e-418a-96a6-043d5c2d7163",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C41",
+      "claim": "GCN2 is activated in the B6J-Gtpbp2nmf205-/- mutant brain prior to the onset of neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that GCN2 is activated in the B6J-Gtpbp2nmf205-/- mutant brain in a tRNAdeacyl-independent manner prior to the onset of neurodegeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "013ea5a4-eda5-45f1-949b-1a14143fc52f",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C42",
+      "claim": "Activation of GCN2 results in eIF2\u03b1 phosphorylation in the cerebellum and hippocampus of B6J-Gtpbp2nmf205-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of this kinase results in eIF2\u03b1 phosphorylation and induction of ATF4-target genes in the cerebellum and hippocampus of B6J-Gtpbp2nmf205-/- mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "5009dfdd-1d74-4acd-9c91-9c20ce35b7d4",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C43",
+      "claim": "Activation of GCN2 results in induction of ATF4-target genes in the cerebellum and hippocampus of B6J-Gtpbp2nmf205-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Activation of this kinase results in eIF2\u03b1 phosphorylation and induction of ATF4-target genes in the cerebellum and hippocampus of B6J-Gtpbp2nmf205-/- mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "cd61e4e7-d658-4438-b0ce-3bdacbe579da",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C44",
+      "claim": "GCN2 activation functions to attenuate neurodegeneration in the B6J-Gtpbp2nmf205-/- brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, our genetic studies demonstrate that GCN2 activation functions to attenuate neurodegeneration in the B6J-Gtpbp2nmf205-/- brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from genetic studies",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "52cb517d-6593-4075-b32e-fc94bbfd96c8",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C45",
+      "claim": "Ribosome stalling activates GCN2 as a regulatory mechanism that links the elongation and initiation steps of translation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that ribosome stalling activates GCN2 as a previously unknown regulatory mechanism that links the elongation and initiation steps of translation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of the study's results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "4a13366c-39d2-4520-8042-36e02b5a44db",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C46",
+      "claim": "583 genes were upregulated in the cerebellum from 5-week-old B6J-Gtpbp2nmf205-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these criteria, 583 genes were upregulated and 327 genes were downregulated in the cerebellum from 5-week-old mutant mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result from microarray analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "e7d8c057-fd80-45f0-a608-73023b4b746a",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C47",
+      "claim": "327 genes were downregulated in the cerebellum from 5-week-old B6J-Gtpbp2nmf205-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these criteria, 583 genes were upregulated and 327 genes were downregulated in the cerebellum from 5-week-old mutant mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result from microarray analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "f3ae943a-1448-4357-845e-a0605e0ce5c8",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C48",
+      "claim": "78 genes were upregulated in the hippocampus of 5-week-old B6J-Gtpbp2nmf205-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Fewer genes in the hippocampus of 5-week-old mutant mice exhibited altered expression (78, upregulated; 26, downregulated).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result from microarray analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "67b9fc51-4847-4053-b352-d6413923e233",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C49",
+      "claim": "26 genes were downregulated in the hippocampus of 5-week-old B6J-Gtpbp2nmf205-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Fewer genes in the hippocampus of 5-week-old mutant mice exhibited altered expression (78, upregulated; 26, downregulated).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result from microarray analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "6e4f265f-5016-47f3-92fe-01a3d30ff545",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C50",
+      "claim": "225 genes were upregulated in the cerebellum of 3-week-old B6J-Gtpbp2nmf205-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cerebellum of 3-week-old B6J-Gtpbp2nmf205-/- mice 225 genes were upregulated and 100 downregulated, while only 10 genes were upregulated and 1 downregulated in the hippocampus of mutant mice at this age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result from microarray analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "b93c2008-939c-4119-b806-5ae052cb695d",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C51",
+      "claim": "100 genes were downregulated in the cerebellum of 3-week-old B6J-Gtpbp2nmf205-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cerebellum of 3-week-old B6J-Gtpbp2nmf205-/- mice 225 genes were upregulated and 100 downregulated, while only 10 genes were upregulated and 1 downregulated in the hippocampus of mutant mice at this age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result from microarray analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "3c1c8d88-b77a-419e-bc38-1adf888372f6",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C52",
+      "claim": "10 genes were upregulated in the hippocampus of 3-week-old B6J-Gtpbp2nmf205-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cerebellum of 3-week-old B6J-Gtpbp2nmf205-/- mice 225 genes were upregulated and 100 downregulated, while only 10 genes were upregulated and 1 downregulated in the hippocampus of mutant mice at this age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result from microarray analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "a7c293a1-4be7-4fe3-ac21-bdc6ae93bb29",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C53",
+      "claim": "1 gene was downregulated in the hippocampus of 3-week-old B6J-Gtpbp2nmf205-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cerebellum of 3-week-old B6J-Gtpbp2nmf205-/- mice 225 genes were upregulated and 100 downregulated, while only 10 genes were upregulated and 1 downregulated in the hippocampus of mutant mice at this age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a result from microarray analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "e31ac042-be64-4550-9406-034c1b75d5cc",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C54",
+      "claim": "Upregulated gene pathways in B6J-Gtpbp2nmf205-/- brain exhibited more robust p-values than downregulated gene pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that upregulated gene pathways exhibited more robust p-values.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as an observation from pathway analysis shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "b96e4440-362e-4723-8de8-9449c660e8c7",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C55",
+      "claim": "Microglia and astrocytes were activated in the B6J-Gtpbp2nmf205-/- cerebellum with highest levels of activation at 5 weeks of age.",
+      "claim_type": "EXPLICIT",
+      "source": "Microglia and astrocytes were activated in the mutant cerebellum with highest levels of activation at 5 weeks of age.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated as a finding from immunofluorescence shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "a65ba80c-ef0d-4e7d-b413-57d2506f8ba2",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C56",
+      "claim": "Neither Xbp1 splicing nor BiP levels were upregulated in the B6J-Gtpbp2nmf205-/- cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither Xbp1 splicing nor BiP levels were upregulated in the B6J-Gtpbp2nmf205-/- cerebellum (Figure 3\u2014figure supplement 1, and data not shown) suggesting eIF2\u03b1 phosphorylation and ATF4 activation was regulated by a eIF2\u03b1 kinase other than PERK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from experimental analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "e7a8e4ce-fb8a-45b2-8e59-7ab2344a4d41",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C57",
+      "claim": "eIF2\u03b1 phosphorylation and ATF4 activation in B6J-Gtpbp2nmf205-/- cerebellum was regulated by a eIF2\u03b1 kinase other than PERK.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither Xbp1 splicing nor BiP levels were upregulated in the B6J-Gtpbp2nmf205-/- cerebellum (Figure 3\u2014figure supplement 1, and data not shown) suggesting eIF2\u03b1 phosphorylation and ATF4 activation was regulated by a eIF2\u03b1 kinase other than PERK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an inference from experimental data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "0c0d2190-e8b5-4ed0-a0bc-c0e205bb4c66",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C58",
+      "claim": "Levels of p-eIF2\u03b1 (Ser51) in the cerebellum from B6J-Gtpbp2nmf205-/-; Gcn2-/- mice were similar to those observed in the cerebellum of B6J.B6Nn-Tr20 and B6J.Gcn2-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Levels of p-eIF2\u03b1 (Ser51) in the cerebellum from B6J-Gtpbp2nmf205-/-; Gcn2-/- mice were similar to those observed in the cerebellum of B6J.B6Nn-Tr20 and B6J.Gcn2-/- mice demonstrating that GCN2 is the kinase responsible for the increase in p-eIF2\u03b1 levels (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from Western blot analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "2c9d55e1-bba2-4dcb-a7c2-93c88a5fd294",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C59",
+      "claim": "GCN2 is the kinase responsible for the increase in p-eIF2\u03b1 levels in B6J-Gtpbp2nmf205-/- cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "Levels of p-eIF2\u03b1 (Ser51) in the cerebellum from B6J-Gtpbp2nmf205-/-; Gcn2-/- mice were similar to those observed in the cerebellum of B6J.B6Nn-Tr20 and B6J.Gcn2-/- mice demonstrating that GCN2 is the kinase responsible for the increase in p-eIF2\u03b1 levels (Figure 3A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "3850b9df-53e3-4a1a-aa86-e5a744fa52d7",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C60",
+      "claim": "In the absence of GCN2, upregulation of ATF4 target genes in B6J-Gtpbp2nmf205-/- cerebellum was dramatically attenuated.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the absence of GCN2, upregulation of these genes was dramatically attenuated suggesting ATF4 activation was also regulated by GCN2 in the B6J-Gtpbp2nmf205-/- cerebellum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from RT-qPCR analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "f380e692-c465-4611-ab57-1cd36cdba815",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C61",
+      "claim": "ATF4 activation was regulated by GCN2 in the B6J-Gtpbp2nmf205-/- cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the absence of GCN2, upregulation of these genes was dramatically attenuated suggesting ATF4 activation was also regulated by GCN2 in the B6J-Gtpbp2nmf205-/- cerebellum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an inference from RT-qPCR data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "0dcfd06f-5aef-462f-8edb-e8fa5ead2ba7",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C62",
+      "claim": "146 genes were significantly upregulated in B6J-Gtpbp2nmf205-/- cerebellum relative to the B6J cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant upregulation of 146 genes, many (57%) of which were also found to be upregulated by our microarray studies, was observed in B6J-Gtpbp2nmf205-/- cerebellum relative to the B6J cerebellum (Figure 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from RNA-Seq analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "7291818d-fe81-4b54-94fc-6e4c31ab1b0a",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C63",
+      "claim": "191 genes were significantly downregulated in B6J-Gtpbp2nmf205-/- cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-Seq also identified 191 genes that were significantly downregulated in B6J-Gtpbp2nmf205-/- mice, many (45%) of which were also identified by microarray (Figure 3B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from RNA-Seq analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "e4732de5-adc0-47cc-8a48-56e8b7667646",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C64",
+      "claim": "Loss of GCN2 reverted the expression of 83 of the 146 genes upregulated in the B6J-Gtpbp2nmf205-/- cerebellum to B6J levels or near-B6J levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of GCN2 reverted the expression of 83 of the 146 genes upregulated in the B6J-Gtpbp2nmf205-/- cerebellum to B6J levels, or near-B6J levels, including those genes with the highest fold induction in the B6J-Gtpbp2nmf205-/- cerebellum (Figures 3B, Figure 3\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from RNA-Seq analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "16a22ce3-cf25-4c33-8680-b36e780a0fba",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C65",
+      "claim": "48 of the 83 genes that reverted to wild type levels upon Gcn2 deletion had been previously shown to be ATF4 target genes by ChIP-Seq analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these 83 genes, 48 genes had been previously shown to be ATF4 target genes by ChIP-Seq analysis (Figure 3B and Figure 3\u2014source data 2) (Han et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from comparison with published ChIP-Seq data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "94917abb-4f60-48eb-839d-7174b51b1fbb",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C66",
+      "claim": "Levels of tRNAArgUCU in the cerebellum of 3-week-old B6J-Gtpbp2nmf205-/- were 40% lower than in B6J mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Levels of tRNAArgUCU in the cerebellum of 3-week-old B6J-Gtpbp2nmf205-/- were 40% lower than in B6J mice (Figure 4A; n=3, p<0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from Northern blot analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "96e3ea63-98f8-4334-a2b6-472fddc66435",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C67",
+      "claim": "The ratio of uncharged to charged tRNAArgUCU did not differ between the B6J and B6J-Gtpbp2nmf205-/- cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the ratio of uncharged to charged tRNAArgUCU did not differ between the B6J and B6J-Gtpbp2nmf205-/- cerebellum (Figure 4B; n=3, p>0.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from tRNA aminoacylation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "982e980d-0ccc-45f9-b133-6853911eea7d",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C68",
+      "claim": "Overexpression of the mutant n-Tr20 tRNA does not change expression of ATF4 targets in the 3-week-old cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4C, overexpression of the unprocessed n-Tr20 did not result in upregulation of these genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from RT-qPCR analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "d0cdac94-8984-4bb0-9ded-71c864251fbb",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C69",
+      "claim": "Overexpression of the mutant n-Tr20 tRNA does not change expression of ATF4 targets even in the Gtpbp2nmf205-/- mutant cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the expression of the mutant n-Tr20 transgene, even in the presence of the Gtpbp2 mutation, did not alter expression of ATF4 target genes (Figure 4D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from RT-qPCR analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "f4b450cd-c3e5-4c1c-a03d-a9a64bbc64f9",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C70",
+      "claim": "The induction of ATF4 target gene expression in B6J-Gtpbp2nmf205-/- is not due to expression of the unprocessed n-Tr20 tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that the induction of ATF4 target gene expression in B6J-Gtpbp2nmf205-/- is not due to expression of the unprocessed n-Tr20 tRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of experimental results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "aecbb1c7-0667-4e4b-8143-a6750fd376f0",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C71",
+      "claim": "Mice homozygous for both the n-Tr20 deletion and the nmf205 mutation died shortly after birth.",
+      "claim_type": "EXPLICIT",
+      "source": "However when these mice were crossed with Gtpbp2nmf205-/- mice, mice that were homozygous for both the n-Tr20 deletion and the nmf205 mutation died shortly after birth, demonstrating that residual levels of aminoacylated n-Tr20 in the B6J brain allows postnatal survival of B6J-Gtpbp2nmf205-/- mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from breeding experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "8ccab216-51b4-4421-9d38-97d44886c03d",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C72",
+      "claim": "Residual levels of aminoacylated n-Tr20 in the B6J brain allows postnatal survival of B6J-Gtpbp2nmf205-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However when these mice were crossed with Gtpbp2nmf205-/- mice, mice that were homozygous for both the n-Tr20 deletion and the nmf205 mutation died shortly after birth, demonstrating that residual levels of aminoacylated n-Tr20 in the B6J brain allows postnatal survival of B6J-Gtpbp2nmf205-/- mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of breeding experiment results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "618f54ca-0ae2-4f6d-917c-5ca3d429304d",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C73",
+      "claim": "Complete loss of n-Tr20 on the Gtpbp2-deficient background results in ATF4 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that complete loss of n-Tr20 on the Gtpbp2-deficient background results in ATF4 activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from RT-qPCR analysis of P0 brains",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "d53e96ff-22f3-4f08-a819-ebfdf41cd351",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C74",
+      "claim": "B6J-Gtpbp2nmf205-/- mice exhibited mild ataxia and tremors at 45 days of age.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, B6J-Gtpbp2nmf205-/- mice exhibited mild ataxia and tremors at 45 days of age, and no motor defects were observed in B6J.Gcn2-/- or B6J mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from behavioral assessment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "d3073b2a-c603-4ed6-9a3f-b298ba1f02df",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C75",
+      "claim": "No motor defects were observed in B6J.Gcn2-/- or B6J mice at 45 days of age.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, B6J-Gtpbp2nmf205-/- mice exhibited mild ataxia and tremors at 45 days of age, and no motor defects were observed in B6J.Gcn2-/- or B6J mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from behavioral assessment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "a9335947-868a-473d-a921-773820666173",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C76",
+      "claim": "Ataxia and tremors were much more profound in B6J-Gtpbp2nmf205-/-; Gcn2-/- mice than in B6J-Gtpbp2nmf205-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, ataxia and tremors were much more profound in B6J-Gtpbp2nmf205-/-; Gcn2-/- mice than in B6J-Gtpbp2nmf205-/- mice (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from behavioral assessment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "edbf7973-051a-46b4-bb7f-02699db4d25d",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C77",
+      "claim": "There was an increase in loss of granule cells in the B6J-Gtpbp2nmf205-/-; Gcn2-/- cerebellum relative to the degeneration of these neurons in the B6J-Gtpbp2nmf205-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the increased severity of the locomotor phenotype, histological examination showed an increase in loss of granule cells in the B6J-Gtpbp2nmf205-/-; Gcn2-/- cerebellum relative to the degeneration of these neurons in the B6J-Gtpbp2nmf205-/- mice (Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from histological examination",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "69920af9-2626-4442-a924-ac3fbade1a6a",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C78",
+      "claim": "Neurodegeneration was not observed in the cerebellum of B6J-Gtpbp2nmf205-/-; Gcn2-/- mice at 3-weeks of age.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, like B6J-Gtpbp2nmf205-/- mice, neurodegeneration was not observed in the cerebellum of B6J-Gtpbp2nmf205-/-; Gcn2-/- mice at 3-weeks of age (data not shown), suggesting that the accelerated neurodegeneration in B6J-Gtpbp2nmf205-/-; Gcn2-/- was not due to a change in the onset of neurodegeneration but due to acceleration in progression of cerebellar granule cell loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from histological examination",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "65b4a29d-5111-4ab6-b046-b5bec352e036",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C79",
+      "claim": "The accelerated neurodegeneration in B6J-Gtpbp2nmf205-/-; Gcn2-/- was due to acceleration in progression of cerebellar granule cell loss rather than a change in the onset of neurodegeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, like B6J-Gtpbp2nmf205-/- mice, neurodegeneration was not observed in the cerebellum of B6J-Gtpbp2nmf205-/-; Gcn2-/- mice at 3-weeks of age (data not shown), suggesting that the accelerated neurodegeneration in B6J-Gtpbp2nmf205-/-; Gcn2-/- was not due to a change in the onset of neurodegeneration but due to acceleration in progression of cerebellar granule cell loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of histological data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "e8fdc1a9-ab03-4bd5-b812-df927ce88f98",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C80",
+      "claim": "Degeneration of CA1 pyramidal neurons does not occur in B6J-Gtpbp2nmf205-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Degeneration of CA1 pyramidal neurons does not occur in B6J-Gtpbp2nmf205-/- mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an observation from histological examination",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "e87a64ba-6d4e-47b2-b0b0-4df67fe94dfb",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C81",
+      "claim": "Extensive death of CA1 pyramidal neurons was observed in the B6J-Gtpbp2nmf205-/-; Gcn2-/- hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "However extensive death of these neurons was observed in the B6J-Gtpbp2nmf205-/-; Gcn2-/- hippocampus further supporting that activation of GCN2 is protective against neuron death in B6J-Gtpbp2nmf205-/- mice (Figure 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from histological examination",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "c867d01f-5c8b-4e9f-960d-c0ca4457ad16",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C82",
+      "claim": "Activation of GCN2 is protective against neuron death in B6J-Gtpbp2nmf205-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However extensive death of these neurons was observed in the B6J-Gtpbp2nmf205-/-; Gcn2-/- hippocampus further supporting that activation of GCN2 is protective against neuron death in B6J-Gtpbp2nmf205-/- mice (Figure 6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of histological data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "9f146fec-b5c6-4e6c-b1a5-b479b44e599b",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C83",
+      "claim": "GCN2 activates the integrated stress response in the brain of mice with stalled ribosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that GCN2 activates the integrated stress response in the brain of mice with stalled ribosomes, clearly demonstrating an important feedback loop between elongation defects, in particular ribosome stalling, and translation initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the study's findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "24fcd9d1-2bc5-4ab4-908b-ecc20f1d82be",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C84",
+      "claim": "There is an important feedback loop between elongation defects, in particular ribosome stalling, and translation initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that GCN2 activates the integrated stress response in the brain of mice with stalled ribosomes, clearly demonstrating an important feedback loop between elongation defects, in particular ribosome stalling, and translation initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the study's findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "ce148ef3-42ec-4c0b-9ffd-c3851d913c16",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C85",
+      "claim": "Ribosomes bound to rare and thus slowly decoded codons near the initiation codon of yeast reporter genes prevent the binding of subsequent initiation complexes and decrease protein production.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study demonstrated that ribosomes bound to rare and thus slowly decoded codons near the initiation codon of yeast reporter genes prevent the binding of subsequent initiation complexes and decrease protein production (Chu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from a cited study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "90701b44-c7af-4e00-9bf3-e02262ce1144",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C86",
+      "claim": "Stalled ribosomes can be sensed by GCN2 leading to reprogramming of initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies further connect translation elongation and translation initiation by showing that stalled ribosomes can be sensed by GCN2 leading to reprogramming of initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a conclusion from the study's findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "e766fab3-2c4c-4f97-b6ba-824fef5c8f9d",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C87",
+      "claim": "Mouse and yeast GCN2 are activated by deprivation of any amino acid or by conditions that mimic low amino acid availability.",
+      "claim_type": "EXPLICIT",
+      "source": "Both mouse and yeast GCN2 are activated by deprivation of any amino acid or by conditions that mimic low amino acid availability such as aminoacyl-tRNA synthetase inhibitors and amino acid analogs, demonstrating that GCN2 is an important monitor of cellular amino acid levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "9aae804c-1d6d-43ad-bf57-1b695654add8",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C88",
+      "claim": "GCN2 is an important monitor of cellular amino acid levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Both mouse and yeast GCN2 are activated by deprivation of any amino acid or by conditions that mimic low amino acid availability such as aminoacyl-tRNA synthetase inhibitors and amino acid analogs, demonstrating that GCN2 is an important monitor of cellular amino acid levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "a5ecd91d-c661-4bd6-9203-09c3abf2e029",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C89",
+      "claim": "GCN2 is activated by glucose deprivation, proteasome inhibition, and other conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "GCN2 is also activated by glucose deprivation, proteasome inhibition, and other conditions, many of which also decrease the amino acid pool, though in less obvious ways (Castilho et al., 2014; Deng et al., 2002; Jiang and Wek, 2005; Yang et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "22b4c27a-fe6e-4ae5-ab99-3df1a5ea8226",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C90",
+      "claim": "Aminoacylated tRNAPhe binds the enzymatically inactive HisRS-like domain of GCN2 less efficiently than deacylated tRNAPhe.",
+      "claim_type": "EXPLICIT",
+      "source": "Competition assays have indicated that aminoacylated tRNAPhe binds the enzymatically inactive HisRS-like domain of GCN2 less efficiently than deacylated tRNAPhe, suggesting GCN2 preferentially binds uncharged tRNAs (Dong et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from cited competition assays",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "139bf791-3bf7-4adf-9b1a-a7924512dff9",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C91",
+      "claim": "GCN2 preferentially binds uncharged tRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Competition assays have indicated that aminoacylated tRNAPhe binds the enzymatically inactive HisRS-like domain of GCN2 less efficiently than deacylated tRNAPhe, suggesting GCN2 preferentially binds uncharged tRNAs (Dong et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of cited competition assays",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "5d2ed9e5-1e59-469e-a7ae-bdb31ad97127",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C92",
+      "claim": "Deacylated tRNA has been demonstrated to enter the A-site of the ribosome.",
+      "claim_type": "EXPLICIT",
+      "source": "While not as efficient as acylated tRNAs, deacylated tRNA has been demonstrated to enter the A-site of the ribosome (Murchie and Leader, 1978) where models of GCN2 activation suggest that it is transferred to GCN2, possibly with the assistance of the GCN2 effector protein GCN1 to activate the kinase activity of GCN2 (Marton et al., 1997; Ramirez et al., 1991; Wek et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "264b6c9d-a736-4a34-8869-95d05f348dcc",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C93",
+      "claim": "Ribosome stalling, in the absence of changes in levels of deacylated tRNAs, is sufficient to activate GCN2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, our results suggest that ribosome stalling, in the absence of changes in levels of deacylated tRNAs, is sufficient to activate GCN2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of the study's results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "40c28d87-eee8-4f7f-9832-f32beb4b3bf4",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C94",
+      "claim": "No changes in uncharged levels of n-Tr20 isodecoders were detected in B6J-Gtpbp2nmf205-/- mutant cerebellum compared with that of B6J.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined tRNAArgUCU (the corresponding isoacceptor for AGA, the only codon at which we observe stalled ribosomes upon ribosome profiling) and failed to detect changes in uncharged levels of n-Tr20 isodecoders in B6J-Gtpbp2nmf205-/- mutant cerebellum compared with that of B6J.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from tRNA analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "10640bbc-cb17-43c6-a68d-cd2eb2829b8e",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C95",
+      "claim": "Ribosome stalling may contribute to GCN2 activation in other conditions, such as amino acid deprivation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results raise the intriguing possibility that ribosome stalling may also contribute to GCN2 activation in other conditions, such as amino acid deprivation, in which like B6J-Gtpbp2nmf205-/- neurons, lower levels of acylated tRNA are present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a speculation based on the study's findings",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "46dd50ad-3db3-41b5-847b-a206b1527413",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C96",
+      "claim": "Yeast GCN2 loosely binds to ribosomes via its C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast GCN2 loosely binds to ribosomes via its C-terminus and ribosome association is required for GCN2 activation during amino acid deprivation (Narasimhan et al., 2004; Ramirez et al., 1991; Zhu and Wek, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "6e561dd0-7214-4256-9592-b90712bb380d",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C97",
+      "claim": "Ribosome association is required for GCN2 activation during amino acid deprivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast GCN2 loosely binds to ribosomes via its C-terminus and ribosome association is required for GCN2 activation during amino acid deprivation (Narasimhan et al., 2004; Ramirez et al., 1991; Zhu and Wek, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "7467f38e-6da7-44fc-852f-983ab7e81460",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C98",
+      "claim": "Multiple reports have failed to detect changes in the steady state ribosome association of yeast GCN2 during amino acid starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, multiple reports have failed to detect changes in the steady state ribosome association of yeast GCN2 during amino acid starvation (Castilho et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "e7aa727d-73ff-4265-b19f-ec145f940083",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C99",
+      "claim": "Association of mouse GCN2 with ribosomes is lower than yeast GCN2, perhaps due to differences in the structures of yeast and mammalian GCN2.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, studies suggest that association of mouse GCN2 with ribosomes is lower, perhaps due to differences in the structures of yeast and mammalian GCN2 (He et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citation and speculation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "ecca3f4d-e052-41b2-8978-e270a7c0d9b5",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C100",
+      "claim": "Translational reprogramming mediated by the eIF2\u03b1 kinases is thought to be adaptive during stress by transiently shutting protein synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Translational reprogramming mediated by the eIF2\u03b1 kinases is thought to be adaptive during stress by transiently shutting protein synthesis to prevent waste of cellular resources until management of stress has occurred.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "da7f2410-6b7a-477e-a0cc-8084b7a2c081",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C101",
+      "claim": "Under several stress conditions, phospho-eIF2\u03b1/ATF4 may facilitate apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "However recent evidence suggests that under several stress conditions, phospho-eIF2\u03b1/ATF4 may facilitate apoptosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as recent knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "49dd5044-c311-46bd-a55b-a9f235f625e3",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C102",
+      "claim": "Atf4-deficiency reduced oxidative stress-induced neuron death and death of ER-stressed mouse embryonic fibroblasts and \u03b2-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Atf4-deficiency reduced oxidative stress-induced neuron death and death of ER-stressed mouse embryonic fibroblasts and \u03b2-cells (Han et al., 2013; Krokowski et al., 2013; Lange et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "035b7926-47db-4773-bea1-30a74b8bd09b",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C103",
+      "claim": "Knockdown of Atf4 attenuated neuronal loss induced by locally applied A\u03b2 peptide.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of Atf4 also attenuated neuronal loss induced by locally applied A\u03b2 peptide (Baleriola et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "86257fe2-3319-4145-907c-453d1bfdf2b9",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C104",
+      "claim": "Increased levels of eIF2\u03b1 phosphorylation observed in transgenic mouse models of Alzheimer's disease and frontotemporal dementia and mice with prion disease amplifies neurodegeneration and defects in synaptic function.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, reports suggest that increased levels of eIF2\u03b1 phosphorylation observed in transgenic mouse models of Alzheimer's disease and frontotemporal dementia and mice with prion disease amplifies neurodegeneration and defects in synaptic function (Devi and Ohno, 2014; Ma et al., 2013; Moreno et al., 2012; Radford et al., 2015; Segev et al., 2015), although other studies have failed to confirm some of these findings (Devi and Ohno, 2013; Paesler et al., 2015; Sadleir et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as recent knowledge with supporting citations, though qualified by conflicting reports",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "9b8c1c93-e1a3-4f51-ae7b-b78560bc9971",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C105",
+      "claim": "Deletion of Gcn2 in B6J-Gtpbp2nmf205-/- mice resulted in accelerated progression of cerebellar granule cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we show that GCN2 activation protects neurons against death mediated by ribosome stalling. Deletion of Gcn2 in B6J-Gtpbp2nmf205-/- mice resulted in accelerated progression of cerebellar granule cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "4d5162c1-f051-4252-9b3a-9f6fd13b273b",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C106",
+      "claim": "In the hippocampus of B6J-Gtpbp2nmf205-/-; Gcn2-/- mice, degeneration of CA1 pyramidal cells was observed that is not observed in B6J-Gtpbp2nmf205-/-.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore in the hippocampus of B6J-Gtpbp2nmf205-/-; Gcn2-/-mice, we observed degeneration of CA1 pyramidal cells that is not observed in B6J-Gtpbp2nmf205-/-, suggesting the eIF2\u03b1/ATF4 pathway is vital for survival of these neurons during ribosome stalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "bc2b7e76-5a95-48b3-8d95-da96bca2aa46",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C107",
+      "claim": "The eIF2\u03b1/ATF4 pathway is vital for survival of CA1 pyramidal neurons during ribosome stalling.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore in the hippocampus of B6J-Gtpbp2nmf205-/-; Gcn2-/-mice, we observed degeneration of CA1 pyramidal cells that is not observed in B6J-Gtpbp2nmf205-/-, suggesting the eIF2\u03b1/ATF4 pathway is vital for survival of these neurons during ribosome stalling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of the study's findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "0f1138cd-e210-4a76-a03e-06531c35faad",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C108",
+      "claim": "Induction of ATF4 downstream genes, particularly genes encoding various antioxidant enzymes, attenuated death of mouse embryonic fibroblast cells during amino acid starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings are similar to those found by Harding et al in which induction of ATF4 downstream genes, particularly genes encoding various antioxidant enzymes, attenuated death of mouse embryonic fibroblast cells during amino acid starvation (Harding et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "2c904620-034f-4523-95b7-a4fdc84bc62c",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C109",
+      "claim": "The eIF2\u03b1/ATF4 pathway was shown to be critical for survival of tumor cells under nutrient deprivation conditions and in cultured dopaminergic neurons against toxin-induced cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly this pathway was shown to be critical for survival of tumor cells under nutrient deprivation conditions and in cultured dopaminergic neurons against toxin-induced cell death. (Sun et al., 2013; Ye et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "b4d587d3-644f-4aa1-ad96-82e29c4e0154",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C110",
+      "claim": "The type of stress may influence the response of cells to reduction in initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the type of stress may influence the response of cells to reduction in initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of the study's findings and cited literature",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "c3ded66f-31fb-4581-a0c4-26e8193c37c5",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C111",
+      "claim": "Under mild amino acid stress conditions, a decrease in initiation has been predicted to also decrease protein production.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, under mild amino acid stress conditions (two\u2013five fold decrease in tRNAs) a decrease in initiation has been predicted to also decrease protein production via yeast whole-cell modeling simulations in which ribosomes have been suggested to be rate limiting for protein production (Shah et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a prediction from cited modeling simulations",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "a10a4df0-ed5e-49cd-b0f7-53ac6b3a3a1a",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C113",
+      "claim": "Under severe stress, cellular protein production is limited by elongation rather than initiation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "This latter model suggests that under severe stress, cellular protein production is limited by elongation rather than initiation rates, and reducing the rate of initiation increases the pools of free ribosomes and free tRNAs that correspond to the depleted amino acid.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation from modeling simulations",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "c22a809d-2242-4a1b-86d8-33ac15242613",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C114",
+      "claim": "Cellular stress can cause downregulation of global translation during cellular stress independently of eIF2\u03b1 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent findings have shown that cellular stress can cause downregulation of global translation during cellular stress independently of eIF2\u03b1 phosphorylation (Knutsen et al., 2015), raising the possibility that eIF2\u03b1 is not necessarily directly causative in ameliorating neuron death in the B6J- Gtpbp2nmf205-/- brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as recent knowledge with supporting citation",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "1c717600-033f-4038-bcc1-4f2dcf5b44c5",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C115",
+      "claim": "eIF2\u03b1 may not be directly causative in ameliorating neuron death in the B6J-Gtpbp2nmf205-/- brain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent findings have shown that cellular stress can cause downregulation of global translation during cellular stress independently of eIF2\u03b1 phosphorylation (Knutsen et al., 2015), raising the possibility that eIF2\u03b1 is not necessarily directly causative in ameliorating neuron death in the B6J- Gtpbp2nmf205-/- brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a speculation based on recent findings",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "68859105-ec81-4466-b07a-ccdcb0f1d66f",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C116",
+      "claim": "Loss of Gcn2 in the B6J-Gtpbp2nmf205-/- cerebellum caused increased expression of genes that regulate nucleolar function, including those involved in ribosome biogenesis and processing of non-coding RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of Gcn2 in the B6J-Gtpbp2nmf205-/- cerebellum not only resulted in reduction of eIF2\u03b1 phosphorylation and attenuated upregulation of ATF4 target genes, but also caused increased expression of genes that regulate nucleolar function, including those involved in ribosome biogenesis and processing of non-coding RNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from RNA-Seq analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "2b529f51-2b47-4e04-b20e-b1cff9a2bb20",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C117",
+      "claim": "Neurons may sense a deficiency of functional ribosomes and correspondingly activate genes involved in ribosome biogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Several of these genes were also upregulated, albeit at lower levels, in the B6J-Gtpbp2nmf205-/- cerebellum suggesting that neurons may sense a deficiency of functional ribosomes and correspondingly activate genes involved in ribosome biogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of RNA-Seq data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "fb5e4109-051b-4bc5-b6d1-81e23eebc3a6",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C118",
+      "claim": "The failure to decrease protein synthesis via GCN2-mediated eIF2\u03b1 phosphorylation may result in a further depletion of functional ribosomes necessitating additional compensatory increases in expression of genes controlling nucleolar function.",
+      "claim_type": "EXPLICIT",
+      "source": "The failure to decrease protein synthesis via GCN2-mediated eIF2\u03b1 phosphorylation may result in a further depletion of functional ribosomes necessitating additional compensatory increases in expression of genes controlling nucleolar function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a speculation based on the study's findings",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "7c0967cb-217b-4ffc-8f8e-f76f80874db8",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C119",
+      "claim": "Human mutations in genes that control ribosome biogenesis have been shown to induce nucleolar stress and a variety of pathologies.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, human mutations in genes that control ribosome biogenesis have been shown to induce nucleolar stress and a variety of pathologies (Armistead and Triggs-Raine, 2014; Danilova and Gazda, 2015; Yelick and Trainor, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as established knowledge with supporting citations",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "00cd2f3d-c03e-4ef8-9517-91b1f4835aca",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C120",
+      "claim": "The ratio of p-eIF2\u03b1 to total eIF2\u03b1 was significantly higher in the B6J cerebellum relative to the B6J.B6Nn-Tr20 cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our ribosome occupancy studies at AGA codons (Ishimura et al., 2014), the ratio of p-eIF2\u03b1 to total eIF2\u03b1 was significantly higher in the B6J cerebellum relative to the B6J.B6Nn-Tr20 cerebellum, and the level of phosphorylated eIF2\u03b1 further increased in the cerebellum of B6J-Gtpbp2nmf205-/- mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from Western blot analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "af592d26-fec7-4010-8302-3e5a24c701a1",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C121",
+      "claim": "The level of phosphorylated eIF2\u03b1 further increased in the cerebellum of B6J-Gtpbp2nmf205-/- mice compared to B6J.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our ribosome occupancy studies at AGA codons (Ishimura et al., 2014), the ratio of p-eIF2\u03b1 to total eIF2\u03b1 was significantly higher in the B6J cerebellum relative to the B6J.B6Nn-Tr20 cerebellum, and the level of phosphorylated eIF2\u03b1 further increased in the cerebellum of B6J-Gtpbp2nmf205-/- mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from Western blot analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "7e09cf81-bdce-4dcd-be14-b5636e2685f1",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C122",
+      "claim": "Levels of total eIF2\u03b1 did not differ significantly between genotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Levels of total eIF2\u03b1 did not differ significantly between genotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from Western blot analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "e275dd8e-1868-4856-a404-44fa59c63a30",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C123",
+      "claim": "99 known ATF4 target genes were upregulated in the cerebellum and/or hippocampus of B6J-Gtpbp2nmf205-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "To further investigate ATF4 activation in the B6J-Gtpbp2nmf205-/- cerebellum we compared our differentially expressed gene sets to 472 ATF4 target genes identified by chromatin immunoprecipitation sequencing (ChIP-seq) from tunicamycin-treated mouse embryonic fibroblasts (Han et al., 2013). Ninety-nine of these known target genes were upregulated in the cerebellum and/or hippocampus of mutant mice (Figure 2A and Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from comparison with published ChIP-seq data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "9ebba7ec-e6e1-4019-a055-f21b49528fd6",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C124",
+      "claim": "73% of the 56 genes that were upregulated in both the 3- and 5-week mutant cerebellum and in the 5-week mutant hippocampus were known ATF4 target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "ATF4 target genes were upregulated in both the cerebellum and hippocampus; of the 56 genes that were upregulated in both the 3- and 5-week mutant cerebellum and in the 5-week mutant hippocampus, 73% of genes were known ATF4 target genes (Figure 2B and Figure 2\u2014source data 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from comparison with published ChIP-seq data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "0737391a-813c-4572-9694-9c83be1e1ec5",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C125",
+      "claim": "6 of 10 genes significantly upregulated in the 3-week mutant hippocampus were known ATF4 targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Although fewer genes were significantly upregulated in the 3-week mutant hippocampus, 6 of 10 of these genes were known ATF4 targets (Figure 2C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from comparison with published ChIP-seq data",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "35213278-282c-4708-bd4c-b680c6a64da6",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C126",
+      "claim": "ATF4 target genes were among the most highly upregulated genes in the cerebellum and hippocampus of B6J-Gtpbp2nmf205-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "ATF4 target genes were among the most highly upregulated genes in the cerebellum and hippocampus (Figure 2D and Figure 2\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as a finding from microarray analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "9f92db54-ab44-4e5c-bc92-ec2ef616a772",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "claim_id": "C127",
+      "claim": "ATF4 activation is an early and robust event in both the hippocampus and cerebellum of B6J-Gtpbp2nmf205-/- mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data suggested that ATF4 activation is an early and robust event in both the hippocampus and cerebellum of B6J-Gtpbp2nmf205-/- mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated as an interpretation of microarray and ChIP-seq comparison data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ff7f2c4f-897a-4b33-8b25-6cb37d8b58f0",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ATF4 target genes are robustly upregulated in the cerebellum and hippocampus of B6J-Gtpbp2nmf205-/- mice prior to neurodegeneration, accompanied by increased eIF2\u03b1 phosphorylation at Ser51.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C120-C127 collectively demonstrate ATF4 activation through multiple lines of evidence: Western blot showing increased p-eIF2\u03b1 (C2, C120-C122), microarray analysis identifying upregulated ATF4 target genes (C46-C53, C123-C126), and comparison with published ChIP-seq data confirming these are bona fide ATF4 targets (C123-C125). The temporal analysis at 3 and 5 weeks, before and during neurodegeneration, supports the claim that this occurs prior to neuron death (C127).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "e9f30ce2-e3ec-4de0-aea8-b831de623cc5",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "GCN2 is the eIF2\u03b1 kinase responsible for ISR activation in B6J-Gtpbp2nmf205-/- mice, as demonstrated by genetic deletion experiments showing loss of eIF2\u03b1 phosphorylation and ATF4 target gene expression in Gcn2-/- mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C41-C43, C56-C61 provide strong genetic evidence that GCN2 is the responsible kinase. Western blot analysis shows p-eIF2\u03b1 levels return to baseline in double mutants (C58-C59), RT-qPCR demonstrates loss of ATF4 target gene upregulation without GCN2 (C60-C61), and exclusion of PERK through lack of UPR markers (C56-C57) strengthens the conclusion. The genetic approach is appropriate and the controls are adequate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "7edd11ca-0413-4229-8f58-60dd2665a7c2",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "GCN2 activation in B6J-Gtpbp2nmf205-/- mice occurs independently of changes in deacylated tRNA levels, representing a novel mechanism of GCN2 activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C66-C67, C93-C94 demonstrate that the ratio of uncharged to charged tRNAArgUCU does not differ between mutant and control cerebellum (C67, p>0.5), despite GCN2 activation. Claims C68-C70 show that overexpression of unprocessed tRNA does not activate ATF4 targets, ruling out this alternative mechanism. The tRNA aminoacylation assay is appropriate for detecting uncharged tRNAs, and the negative result is convincing given the sensitivity of the method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "5ccdf50e-1d09-4e2f-9329-00efad7b8ddd",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "GCN2-mediated ISR activation is neuroprotective in B6J-Gtpbp2nmf205-/- mice, as deletion of Gcn2 accelerates cerebellar granule cell death and causes novel CA1 pyramidal neuron degeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C44, C74-C82, C105-C107 provide compelling evidence through behavioral assessment (C74-C76) and histological quantification (C77, Figure 5B) showing accelerated neurodegeneration in double mutants. The appearance of CA1 degeneration in double mutants but not single mutants (C80-C81) provides strong evidence for a protective role. The temporal analysis showing no change in onset but accelerated progression (C78-C79) is well-reasoned. Sample sizes (n=3) and statistical analysis (p<0.05-0.001) are adequate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "1a1089f5-7a5f-4d49-a2f7-0a70667e78e8",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "RNA-Seq analysis reveals that loss of GCN2 in B6J-Gtpbp2nmf205-/- mice reverts expression of 83 genes (including 48 known ATF4 targets) to wild-type levels, and causes upregulation of genes involved in nucleolar function and ribosome biogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65, C116 are supported by RNA-Seq data with appropriate statistical thresholds (\u22651.5 fold, padj<0.01) and three biological replicates. The overlap with published ChIP-seq data (C65) validates that these are genuine ATF4 targets. The identification of nucleolar genes (C116) is supported by pathway analysis. However, the functional significance of nucleolar gene upregulation remains speculative and would benefit from additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "e78901a5-86d3-4349-a309-3acbabbc6b1d",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Complete deletion of n-Tr20 on the Gtpbp2-deficient background results in perinatal lethality and ATF4 activation at P0, demonstrating that residual aminoacylated n-Tr20 in B6J mice allows postnatal survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 provide genetic evidence through breeding experiments showing perinatal lethality in double homozygous mice (C71) and ATF4 activation at P0 (C73). The interpretation that residual n-Tr20 allows survival (C72) is logical given the phenotypic differences. However, the RT-qPCR data at P0 shows variable significance for individual genes, and the authors note that differences between B6J and B6J-Gtpbp2nmf205-/- at P0 are not individually significant, which somewhat weakens the strength of the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "17cb17ef-d028-4e11-992c-c657c9cc86bd",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Microarray analysis identifies differential gene expression in B6J-Gtpbp2nmf205-/- brain at 3 and 5 weeks, with more robust changes in cerebellum than hippocampus, and activation of microglia and astrocytes at 5 weeks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C55 report microarray results with appropriate statistical criteria (1.5 fold, q<0.05) and three biological replicates per condition. The temporal and regional differences are clearly documented (C46-C53). Immunofluorescence confirms glial activation (C55, Figure 1E). The observation that upregulated pathways show more robust p-values (C54) is noted but not deeply explored. The experimental design appropriately separates changes due to ribosome stalling from secondary effects of neurodegeneration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "10b9e75d-9e7d-43ad-9c6d-9b9ccddc8451",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Neurons may sense ribosome deficiency and activate compensatory ribosome biogenesis genes, with failure of GCN2-mediated translational repression potentially exacerbating this response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C117-C118 are explicitly speculative (\"may sense,\" \"may result\") and represent interpretations of the nucleolar gene expression data. While the observation of increased nucleolar gene expression is supported by RNA-Seq (C116), the mechanistic interpretation lacks direct experimental validation. Additional experiments measuring ribosome levels, ribosome function, or nucleolar stress markers would be needed to support these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "f5563fd2-8448-43df-96b1-186a1f2c8c6a",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Ribosome stalling activates GCN2, establishing a feedback loop between translation elongation and initiation that represents a novel regulatory mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C84, C86, C45 represent the central conclusion of the study, synthesizing the experimental findings. The conclusion is well-supported by the collective evidence: GCN2 activation occurs during ribosome stalling (C41-C43), this activation is independent of deacylated tRNA (C93-C94), and it has functional consequences for neuronal survival (C44, C82). The claim of a \"feedback loop\" is justified by the demonstration that elongation defects trigger changes in initiation through GCN2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "7009526d-ace4-4a45-877d-c8e1609b705b",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Ribosome stalling may contribute to GCN2 activation in other stress conditions such as amino acid deprivation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C95 is explicitly speculative (\"may also contribute\") and extends beyond the experimental data. While the authors demonstrate GCN2 activation by ribosome stalling in their model, they have not tested whether ribosome stalling contributes to GCN2 activation during amino acid deprivation or other stress conditions. This represents a reasonable hypothesis for future work but is not supported by the current data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "461f5792-da09-4a6c-8f07-7682c30c7e27",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The type of stress may influence cellular responses to reduced translation initiation, with modeling suggesting different outcomes under mild versus severe stress conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C110-C111, C113 rely heavily on cited modeling studies (Shah et al., 2013) rather than experimental data from this manuscript. While C110 is presented as an interpretation of the authors' findings combined with literature, the mechanistic predictions about protein production under different stress severities (C111, C113) are not directly tested. The authors use these models to contextualize their findings but do not provide experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    },
+    {
+      "id": "af2734b0-57b0-4015-b84a-69b1835ca5d8",
+      "content_id": "420a476d-b537-41dc-8df4-6fc179b43984",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "eIF2\u03b1 phosphorylation may not be directly causative in ameliorating neuron death, as global translation can be downregulated independently of eIF2\u03b1 phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C114-C115 are speculative and based on a single citation (Knutsen et al., 2015). The authors raise this as a caveat to their interpretation but do not experimentally test whether eIF2\u03b1 phosphorylation per se is protective or whether other GCN2-dependent mechanisms are responsible. Experiments directly manipulating eIF2\u03b1 phosphorylation (e.g., using non-phosphorylatable eIF2\u03b1 mutants) would be needed to resolve this question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:27:46.567555Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a62f519e-a5db-4cd4-8978-9433d1b567ca",
+      "result_id": "ff7f2c4f-897a-4b33-8b25-6cb37d8b58f0"
+    },
+    {
+      "claim_id": "0420ab34-3987-4bb9-ae8c-3e894a0a5893",
+      "result_id": "ff7f2c4f-897a-4b33-8b25-6cb37d8b58f0"
+    },
+    {
+      "claim_id": "00cd2f3d-c03e-4ef8-9517-91b1f4835aca",
+      "result_id": "ff7f2c4f-897a-4b33-8b25-6cb37d8b58f0"
+    },
+    {
+      "claim_id": "af592d26-fec7-4010-8302-3e5a24c701a1",
+      "result_id": "ff7f2c4f-897a-4b33-8b25-6cb37d8b58f0"
+    },
+    {
+      "claim_id": "7e09cf81-bdce-4dcd-be14-b5636e2685f1",
+      "result_id": "ff7f2c4f-897a-4b33-8b25-6cb37d8b58f0"
+    },
+    {
+      "claim_id": "e275dd8e-1868-4856-a404-44fa59c63a30",
+      "result_id": "ff7f2c4f-897a-4b33-8b25-6cb37d8b58f0"
+    },
+    {
+      "claim_id": "9ebba7ec-e6e1-4019-a055-f21b49528fd6",
+      "result_id": "ff7f2c4f-897a-4b33-8b25-6cb37d8b58f0"
+    },
+    {
+      "claim_id": "0737391a-813c-4572-9694-9c83be1e1ec5",
+      "result_id": "ff7f2c4f-897a-4b33-8b25-6cb37d8b58f0"
+    },
+    {
+      "claim_id": "35213278-282c-4708-bd4c-b680c6a64da6",
+      "result_id": "ff7f2c4f-897a-4b33-8b25-6cb37d8b58f0"
+    },
+    {
+      "claim_id": "9f92db54-ab44-4e5c-bc92-ec2ef616a772",
+      "result_id": "ff7f2c4f-897a-4b33-8b25-6cb37d8b58f0"
+    },
+    {
+      "claim_id": "c3b88546-12e2-48f2-8722-f94956f4c33e",
+      "result_id": "e9f30ce2-e3ec-4de0-aea8-b831de623cc5"
+    },
+    {
+      "claim_id": "2699aeed-207e-418a-96a6-043d5c2d7163",
+      "result_id": "e9f30ce2-e3ec-4de0-aea8-b831de623cc5"
+    },
+    {
+      "claim_id": "013ea5a4-eda5-45f1-949b-1a14143fc52f",
+      "result_id": "e9f30ce2-e3ec-4de0-aea8-b831de623cc5"
+    },
+    {
+      "claim_id": "5009dfdd-1d74-4acd-9c91-9c20ce35b7d4",
+      "result_id": "e9f30ce2-e3ec-4de0-aea8-b831de623cc5"
+    },
+    {
+      "claim_id": "a65ba80c-ef0d-4e7d-b413-57d2506f8ba2",
+      "result_id": "e9f30ce2-e3ec-4de0-aea8-b831de623cc5"
+    },
+    {
+      "claim_id": "e7a8e4ce-fb8a-45b2-8e59-7ab2344a4d41",
+      "result_id": "e9f30ce2-e3ec-4de0-aea8-b831de623cc5"
+    },
+    {
+      "claim_id": "0c0d2190-e8b5-4ed0-a0bc-c0e205bb4c66",
+      "result_id": "e9f30ce2-e3ec-4de0-aea8-b831de623cc5"
+    },
+    {
+      "claim_id": "2c9d55e1-bba2-4dcb-a7c2-93c88a5fd294",
+      "result_id": "e9f30ce2-e3ec-4de0-aea8-b831de623cc5"
+    },
+    {
+      "claim_id": "3850b9df-53e3-4a1a-aa86-e5a744fa52d7",
+      "result_id": "e9f30ce2-e3ec-4de0-aea8-b831de623cc5"
+    },
+    {
+      "claim_id": "f380e692-c465-4611-ab57-1cd36cdba815",
+      "result_id": "e9f30ce2-e3ec-4de0-aea8-b831de623cc5"
+    },
+    {
+      "claim_id": "c9b5ed15-2973-47c5-a91f-fcdeaae09541",
+      "result_id": "7edd11ca-0413-4229-8f58-60dd2665a7c2"
+    },
+    {
+      "claim_id": "94917abb-4f60-48eb-839d-7174b51b1fbb",
+      "result_id": "7edd11ca-0413-4229-8f58-60dd2665a7c2"
+    },
+    {
+      "claim_id": "96e3ea63-98f8-4334-a2b6-472fddc66435",
+      "result_id": "7edd11ca-0413-4229-8f58-60dd2665a7c2"
+    },
+    {
+      "claim_id": "982e980d-0ccc-45f9-b133-6853911eea7d",
+      "result_id": "7edd11ca-0413-4229-8f58-60dd2665a7c2"
+    },
+    {
+      "claim_id": "d0cdac94-8984-4bb0-9ded-71c864251fbb",
+      "result_id": "7edd11ca-0413-4229-8f58-60dd2665a7c2"
+    },
+    {
+      "claim_id": "f4b450cd-c3e5-4c1c-a03d-a9a64bbc64f9",
+      "result_id": "7edd11ca-0413-4229-8f58-60dd2665a7c2"
+    },
+    {
+      "claim_id": "264b6c9d-a736-4a34-8869-95d05f348dcc",
+      "result_id": "7edd11ca-0413-4229-8f58-60dd2665a7c2"
+    },
+    {
+      "claim_id": "40c28d87-eee8-4f7f-9832-f32beb4b3bf4",
+      "result_id": "7edd11ca-0413-4229-8f58-60dd2665a7c2"
+    },
+    {
+      "claim_id": "ea900041-8ba2-4e95-8167-686338a3c139",
+      "result_id": "5ccdf50e-1d09-4e2f-9329-00efad7b8ddd"
+    },
+    {
+      "claim_id": "cd61e4e7-d658-4438-b0ce-3bdacbe579da",
+      "result_id": "5ccdf50e-1d09-4e2f-9329-00efad7b8ddd"
+    },
+    {
+      "claim_id": "d53e96ff-22f3-4f08-a819-ebfdf41cd351",
+      "result_id": "5ccdf50e-1d09-4e2f-9329-00efad7b8ddd"
+    },
+    {
+      "claim_id": "d3073b2a-c603-4ed6-9a3f-b298ba1f02df",
+      "result_id": "5ccdf50e-1d09-4e2f-9329-00efad7b8ddd"
+    },
+    {
+      "claim_id": "a9335947-868a-473d-a921-773820666173",
+      "result_id": "5ccdf50e-1d09-4e2f-9329-00efad7b8ddd"
+    },
+    {
+      "claim_id": "edbf7973-051a-46b4-bb7f-02699db4d25d",
+      "result_id": "5ccdf50e-1d09-4e2f-9329-00efad7b8ddd"
+    },
+    {
+      "claim_id": "69920af9-2626-4442-a924-ac3fbade1a6a",
+      "result_id": "5ccdf50e-1d09-4e2f-9329-00efad7b8ddd"
+    },
+    {
+      "claim_id": "65b4a29d-5111-4ab6-b046-b5bec352e036",
+      "result_id": "5ccdf50e-1d09-4e2f-9329-00efad7b8ddd"
+    },
+    {
+      "claim_id": "e8fdc1a9-ab03-4bd5-b812-df927ce88f98",
+      "result_id": "5ccdf50e-1d09-4e2f-9329-00efad7b8ddd"
+    },
+    {
+      "claim_id": "e87a64ba-6d4e-47b2-b0b0-4df67fe94dfb",
+      "result_id": "5ccdf50e-1d09-4e2f-9329-00efad7b8ddd"
+    },
+    {
+      "claim_id": "c867d01f-5c8b-4e9f-960d-c0ca4457ad16",
+      "result_id": "5ccdf50e-1d09-4e2f-9329-00efad7b8ddd"
+    },
+    {
+      "claim_id": "9b8c1c93-e1a3-4f51-ae7b-b78560bc9971",
+      "result_id": "5ccdf50e-1d09-4e2f-9329-00efad7b8ddd"
+    },
+    {
+      "claim_id": "4d5162c1-f051-4252-9b3a-9f6fd13b273b",
+      "result_id": "5ccdf50e-1d09-4e2f-9329-00efad7b8ddd"
+    },
+    {
+      "claim_id": "bc2b7e76-5a95-48b3-8d95-da96bca2aa46",
+      "result_id": "5ccdf50e-1d09-4e2f-9329-00efad7b8ddd"
+    },
+    {
+      "claim_id": "0dcfd06f-5aef-462f-8edb-e8fa5ead2ba7",
+      "result_id": "1a1089f5-7a5f-4d49-a2f7-0a70667e78e8"
+    },
+    {
+      "claim_id": "7291818d-fe81-4b54-94fc-6e4c31ab1b0a",
+      "result_id": "1a1089f5-7a5f-4d49-a2f7-0a70667e78e8"
+    },
+    {
+      "claim_id": "e4732de5-adc0-47cc-8a48-56e8b7667646",
+      "result_id": "1a1089f5-7a5f-4d49-a2f7-0a70667e78e8"
+    },
+    {
+      "claim_id": "16a22ce3-cf25-4c33-8680-b36e780a0fba",
+      "result_id": "1a1089f5-7a5f-4d49-a2f7-0a70667e78e8"
+    },
+    {
+      "claim_id": "68859105-ec81-4466-b07a-ccdcb0f1d66f",
+      "result_id": "1a1089f5-7a5f-4d49-a2f7-0a70667e78e8"
+    },
+    {
+      "claim_id": "aecbb1c7-0667-4e4b-8143-a6750fd376f0",
+      "result_id": "e78901a5-86d3-4349-a309-3acbabbc6b1d"
+    },
+    {
+      "claim_id": "8ccab216-51b4-4421-9d38-97d44886c03d",
+      "result_id": "e78901a5-86d3-4349-a309-3acbabbc6b1d"
+    },
+    {
+      "claim_id": "618f54ca-0ae2-4f6d-917c-5ca3d429304d",
+      "result_id": "e78901a5-86d3-4349-a309-3acbabbc6b1d"
+    },
+    {
+      "claim_id": "4a13366c-39d2-4520-8042-36e02b5a44db",
+      "result_id": "17cb17ef-d028-4e11-992c-c657c9cc86bd"
+    },
+    {
+      "claim_id": "e7d8c057-fd80-45f0-a608-73023b4b746a",
+      "result_id": "17cb17ef-d028-4e11-992c-c657c9cc86bd"
+    },
+    {
+      "claim_id": "f3ae943a-1448-4357-845e-a0605e0ce5c8",
+      "result_id": "17cb17ef-d028-4e11-992c-c657c9cc86bd"
+    },
+    {
+      "claim_id": "67b9fc51-4847-4053-b352-d6413923e233",
+      "result_id": "17cb17ef-d028-4e11-992c-c657c9cc86bd"
+    },
+    {
+      "claim_id": "6e4f265f-5016-47f3-92fe-01a3d30ff545",
+      "result_id": "17cb17ef-d028-4e11-992c-c657c9cc86bd"
+    },
+    {
+      "claim_id": "b93c2008-939c-4119-b806-5ae052cb695d",
+      "result_id": "17cb17ef-d028-4e11-992c-c657c9cc86bd"
+    },
+    {
+      "claim_id": "3c1c8d88-b77a-419e-bc38-1adf888372f6",
+      "result_id": "17cb17ef-d028-4e11-992c-c657c9cc86bd"
+    },
+    {
+      "claim_id": "a7c293a1-4be7-4fe3-ac21-bdc6ae93bb29",
+      "result_id": "17cb17ef-d028-4e11-992c-c657c9cc86bd"
+    },
+    {
+      "claim_id": "e31ac042-be64-4550-9406-034c1b75d5cc",
+      "result_id": "17cb17ef-d028-4e11-992c-c657c9cc86bd"
+    },
+    {
+      "claim_id": "b96e4440-362e-4723-8de8-9449c660e8c7",
+      "result_id": "17cb17ef-d028-4e11-992c-c657c9cc86bd"
+    },
+    {
+      "claim_id": "2b529f51-2b47-4e04-b20e-b1cff9a2bb20",
+      "result_id": "10b9e75d-9e7d-43ad-9c6d-9b9ccddc8451"
+    },
+    {
+      "claim_id": "fb5e4109-051b-4bc5-b6d1-81e23eebc3a6",
+      "result_id": "10b9e75d-9e7d-43ad-9c6d-9b9ccddc8451"
+    },
+    {
+      "claim_id": "9f146fec-b5c6-4e6c-b1a5-b479b44e599b",
+      "result_id": "f5563fd2-8448-43df-96b1-186a1f2c8c6a"
+    },
+    {
+      "claim_id": "24fcd9d1-2bc5-4ab4-908b-ecc20f1d82be",
+      "result_id": "f5563fd2-8448-43df-96b1-186a1f2c8c6a"
+    },
+    {
+      "claim_id": "90701b44-c7af-4e00-9bf3-e02262ce1144",
+      "result_id": "f5563fd2-8448-43df-96b1-186a1f2c8c6a"
+    },
+    {
+      "claim_id": "52cb517d-6593-4075-b32e-fc94bbfd96c8",
+      "result_id": "f5563fd2-8448-43df-96b1-186a1f2c8c6a"
+    },
+    {
+      "claim_id": "10640bbc-cb17-43c6-a68d-cd2eb2829b8e",
+      "result_id": "7009526d-ace4-4a45-877d-c8e1609b705b"
+    },
+    {
+      "claim_id": "b4d587d3-644f-4aa1-ad96-82e29c4e0154",
+      "result_id": "461f5792-da09-4a6c-8f07-7682c30c7e27"
+    },
+    {
+      "claim_id": "c3ded66f-31fb-4581-a0c4-26e8193c37c5",
+      "result_id": "461f5792-da09-4a6c-8f07-7682c30c7e27"
+    },
+    {
+      "claim_id": "a10a4df0-ed5e-49cd-b0f7-53ac6b3a3a1a",
+      "result_id": "461f5792-da09-4a6c-8f07-7682c30c7e27"
+    },
+    {
+      "claim_id": "c22a809d-2242-4a1b-86d8-33ac15242613",
+      "result_id": "af2734b0-57b0-4015-b84a-69b1835ca5d8"
+    },
+    {
+      "claim_id": "1c717600-033f-4038-bcc1-4f2dcf5b44c5",
+      "result_id": "af2734b0-57b0-4015-b84a-69b1835ca5d8"
+    }
+  ],
+  "comparisons": []
+}

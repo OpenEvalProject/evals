@@ -1,0 +1,232 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C85"
+    ],
+    "result": "Arl13b-EGFP successfully labels motile cilia in cultured ependymal cells, with approximately 88% of multiciliated cells showing GFP-labeled cilia at DIV10. Spag6 immunoreactivity confirmed the 9+2 microtubular structure in 89% of recorded sparsely ciliated cells, validating that these are motile cilia with central pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C29, and C85 provide quantitative immunostaining data confirming ciliary localization of markers. The Spag6 staining (C29-C31) validates the 9+2 structure characteristic of motile cilia. The control experiment with primary cilia (C31) strengthens the specificity of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C86",
+      "C87",
+      "C92",
+      "C93"
+    ],
+    "result": "Motile cilia are electrically coupled to the cell body via a high-resistance cable. Whole-cilium recordings showed ~5-fold higher input resistance (~180 M\u03a9) than whole-cell recordings (~36 M\u03a9), with 8-10 times slower capacitive current relaxation. The estimated cable resistance is ~350 M\u03a9, and resting membrane potentials were similar between cilia (-77 mV) and cell bodies (-88 mV).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 provide comprehensive electrophysiological measurements demonstrating electrical coupling. The use of flufenamic acid to uncouple gap junctions (C86-C87, C92) and the theoretical cable resistance calculation (C93) support the conclusion. The data are internally consistent and methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C88"
+    ],
+    "result": "CaV1 voltage-gated calcium channels are present in ependymal cells but are not enriched in motile cilia. RT-PCR detected CaV1.2 and CaV1.3 transcripts, and pharmacological characterization confirmed L-type channel properties. Single-channel recordings showed BayK-induced openings in 6/8 cell-attached patches but only 1/29 cilium-attached patches, with an estimated ~3 channels per cilium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C42 establish channel presence via RT-PCR and electrophysiology. Claims C39-C41 provide pharmacological validation. The critical finding is the low abundance in cilia (C6, C44, C88), supported by quantitative single-channel recordings. The calculation in C88 relies on assumptions about uniform channel density, which is acknowledged as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C71"
+    ],
+    "result": "Resting motile cilia [Ca2+] is approximately 165-170 nM, only slightly elevated above cytoplasmic [Ca2+] (~100 nM). This contrasts with primary cilia, which have resting [Ca2+] of ~500 nM. The measurements were obtained using a calibrated ratiometric calcium sensor (mSSTR3-mCherry-GCaMP6s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C47, C48 provide consistent quantitative measurements using calibrated sensors. The comparison to cytoplasmic [Ca2+] (C3) and primary cilia (C49) contextualizes the finding. The validation with immobilized cilia (C48) controls for motion artifacts. The sensor calibration methodology appears rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C50",
+      "C51",
+      "C73",
+      "C89"
+    ],
+    "result": "Ca2+ rapidly equilibrates between the cytoplasm and motile cilia. Upon uncaging at the ciliary base, Ca2+ diffused to the tip with an apparent velocity of 22 \u00b1 3 \u03bcm/s, reaching the tip in 593 \u00b1 86 ms. This indicates that fluctuations in cytoplasmic [Ca2+] can readily modify motile cilia [Ca2+].",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C50, C89 provide quantitative measurements from calcium uncaging experiments. The rapid diffusion time supports the conclusion that ciliary [Ca2+] follows cytoplasmic [Ca2+] (C51, C73). The methodology using immobilized cilia to enable side-view imaging is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C72"
+    ],
+    "result": "Membrane depolarization increases ciliary [Ca2+] through CaV channel activation. High K+ solutions (>40 mM) depolarized cells and robustly increased both cytoplasmic and ciliary [Ca2+]. The response was greatly reduced by nimodipine and absent in Ca2+-chelated solution, confirming CaV channel involvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 establish the depolarization and calcium response. Claims C54-C56 provide pharmacological and ionic controls that convincingly demonstrate CaV channel involvement. The data are consistent with the electrical coupling demonstrated in the earlier result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C57",
+      "C58",
+      "C77"
+    ],
+    "result": "Membrane depolarization does not significantly alter cilia beating frequency or fluid velocity within short (~1 min) time frames. Beat frequency remained unchanged during perfusion with high K+ solutions (9.7 \u00b1 1 Hz initially vs. 9.3 \u00b1 0.8 Hz at 29-30 s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 provide quantitative measurements showing no significant change in beat frequency. Claim C77 extends this to ATP application. The high-speed imaging and kymograph analysis methodology is appropriate. However, the short time frame (~1 min) is a limitation that should be noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C61",
+      "C62",
+      "C78"
+    ],
+    "result": "Bead velocity in acute brain slices showed only slight, variable changes in response to depolarization. Average velocity was 86 \u00b1 5 \u03bcm/s in control conditions, with modest reductions in high K+ (67 \u00b1 5.5 \u03bcm/s in 70 mM K+) that were partially reversed by nimodipine. Individual bead velocities varied considerably.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59, C61 provide quantitative measurements, but the high variability (C62) and modest effect size raise questions about physiological significance. The authors themselves note this variability and question the relevance. The nimodipine effect (C61) suggests some CaV involvement, but the inconsistency weakens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Beating of ependymal motile cilia is not tightly regulated by voltage-gated calcium channels, unlike protist cilia. Motile cilia membrane potential and [Ca2+] closely follow the cytoplasm due to a relative paucity of ion channels in cilia compared to primary cilia. CaV channels in the cell body primarily determine changes in motile cilia [Ca2+].",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion integrates multiple findings: low CaV channel abundance in cilia (C67, C82), electrical coupling (C81), minimal functional effects (C66, C83), and contrast with protists (C11, C65) and primary cilia (C67, C80). The evidence from electrophysiology, calcium imaging, and motility assays converges to support this major conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C84"
+    ],
+    "result": "The authors hypothesize that the motile cilium compartment is passively coupled and primarily controlled by channel activity and [Ca2+] in the cell body. This would promote simultaneous signaling to all cilia, potentially entraining them and enabling signal propagation. CaV channels may primarily serve other secretory or differentiation roles in the cell body.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69, C70, C84 are explicitly speculative (marked as SPECULATION in evidence_type). While the hypothesis is reasonable given the data, it lacks direct experimental support. The proposed functions of CaV channels (C84) and intercellular signaling (C70) require additional investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C63",
+      "C74",
+      "C75",
+      "C76",
+      "C79",
+      "C90",
+      "C91",
+      "C94",
+      "C95",
+      "C97"
+    ],
+    "result": "Background knowledge claims about cilia structure, function, and calcium regulation in various systems. These include the 9+2 structure of motile cilia, calcium regulation in protists and sperm, primary ciliary dyskinesia, and various technical parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge in the field, supported by appropriate citations. They provide necessary context for the experimental findings but are not novel results of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C98",
+      "C93"
+    ],
+    "result": "Calculated parameters for motile cilium dimensions and electrical properties: surface area ~9.1 \u03bcm\u00b2, capacitance ~0.091 pF, and cable resistance ~350 M\u03a9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These calculations (C96, C98, C93) are based on established physical principles and cited dimensional parameters (C94, C95, C97). The calculations are mathematically sound and provide theoretical support for the experimental observations of electrical coupling.",
+    "result_type": "MINOR"
+  }
+]

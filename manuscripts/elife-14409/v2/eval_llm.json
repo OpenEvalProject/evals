@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The authors defend their prior work (Hose et al.) showing that aneuploidy is frequently observed in wild S. cerevisiae strains, with 10-30% of amplified genes showing lower-than-expected expression, and that this gene group is enriched for dosage compensation mechanisms and displays unique evolutionary signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This result summarizes the context and main claims from prior work being defended. While the authors cite their published work, this manuscript is a rebuttal rather than presenting new primary data. The validity depends on the original Hose et al. study and the response to Torres et al.'s criticisms, which are addressed in subsequent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The authors argue that technical limitations of Illumina sequencing and incomplete amplification near telomeres explain why mean chromosome copy numbers are not precise integers, and that the vast majority of cells in analyzed cultures were aneuploid despite Torres et al.'s criticisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 correctly identify known technical limitations of sequencing technology. C15 is a reasonable inference from Torres et al.'s own data. C17-C20 acknowledge variability in some strains while documenting stability in most cases. The reasoning is sound and addresses Torres et al.'s specific criticisms appropriately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Wild yeast strains tolerate aneuploidy well (30% prevalence, minimal growth defects, stable chromosomes >200 generations, no stress response activation), while the laboratory W303 strain shows severe aneuploidy intolerance (70% growth reduction, rapid chromosome loss in ~20 generations, strong stress response activation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is well-supported by multiple converging lines of evidence from the original Hose et al. study: prevalence data (C21), growth measurements (C23, C25), chromosome stability data (C27-C28), and stress response profiling (C30-C32). The contrast between wild and lab strains is documented with specific quantitative measurements and appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The prevalence of aneuploidy in wild yeast is consistent with multiple independent studies, and the W303 laboratory strain should not be used as the sole representative of S. cerevisiae due to its atypical characteristics including six auxotrophies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are well-supported by multiple independent citations to other studies reporting aneuploidy in wild and industrial strains. C37 acknowledges unpublished data as a limitation. C38 is a reasonable inference given the documented differences between W303 and wild strains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Three complementary analyses identified genes with lower-than-expected expression in aneuploid strains: a survey analysis (838/2204 genes, 38%), an isogenic strain pairs analysis (163/882 genes, 18%), and an MLR analysis (172/773 genes, 22%), yielding a combined set of 245 genes (15% of 1655 assessed genes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The three analytical approaches are clearly described with specific numbers and percentages. C44 acknowledges an error in the original abstract. The combination of multiple independent methods strengthening confidence in the gene set is appropriate, though the FDR estimates and potential confounders are addressed in later results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Multiple normalization methods were compared (RPKM, RPKM excluding amplified chromosomes, spike-in normalization), showing that RPKM is valid and that identical normalization procedures for DNA and RNA produced comparable data centers, with no evidence of systematic misnormalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison of normalization methods is well-documented in Table 1 (C48, C62). The spike-in approach is methodologically sound (C46-C47), and the authors appropriately acknowledge when it failed (C49). The similar global data centers for DNA and RNA (C51) provide evidence against systematic bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The thresholding method for identifying genes with lower-than-expected expression used gene-specific cutoffs based on measured DNA ratios minus 1 SD, required genes to meet criteria in both biological replicates and in non-isogenic strain pairs (4 biological replicates total), with an estimated FDR below 15%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodology is clearly described with appropriate statistical reasoning (C54-C57). The requirement for consistency across 4 biological replicates (C58-C59) is stringent. The SD values for mRNA ratios (0.12-0.3) and DNA ratios (0.17-0.24) are in similar ranges (C61-C62), supporting the validity of the threshold approach. FDR estimation by permutation (C60) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The MLR analysis used all replicate measurements simultaneously (not averaged), classified genes by maximum posterior probability, and identified genes with FDRs of 5-17%. Independent validation using q-value methods yielded remarkably similar null proportion estimates (14% vs 15% for YPS1009; 7% vs 8% for NCYC110).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MLR methodology is appropriate (C63-C64), and the classification approach is clearly described (C65). The FDR estimates (C67-C68) are reasonable. The independent validation using q-value methods (C69-C71) provides strong support for the MLR results, with remarkably close agreement between two different statistical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Both amplified and unamplified genes show expression changes in aneuploid strains, with similar numbers of genes showing higher versus lower expression. However, the two groups are enriched for different functional categories: genes with lower expression are enriched for toxic-when-overexpressed genes, while genes with higher expression are enriched for membrane/cell-surface proteins, likely reflecting indirect ploidy effects on cell morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation of bidirectional expression changes (C73-C74) is well-documented. The differential functional enrichments (C75-C76) are supported by data. The interpretation that higher expression reflects indirect ploidy effects on cell morphology (C77) is reasonable and supported by citation to Wu et al. 2010.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Genes with lower-than-expected expression show non-random enrichments for specific functional groups (genes with feedback regulation, toxic when overexpressed, high CNV with expression constraint). After filtering to remove potential indirect chromosome-specific responses (~30% of genes, mostly mitochondrial), the enrichments remain significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The non-random functional enrichments (C78) are statistically significant and unlikely to occur by chance (C79). The authors appropriately acknowledge potential confounding by indirect responses (C81) and implement filtering to address this (C84-C85). The persistence of enrichments after filtering (addressed in subsequent claims) supports the validity of the gene set.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "After filtering for indirect responses, the revised gene set remains significantly enriched for cytosolic ribosomal proteins (p=6e-7), ribosome biogenesis proteins (p=5e-4), translation-related genes (p=3e-6), and DNA binding proteins (p=0.006). These enrichments are robust to leave-one-chromosome-out analysis and are not found in unamplified genes affected by common aneuploidy responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional enrichments are highly statistically significant (C87-C89, C92) with appropriate p-values. The biological relevance is supported by known feedback mechanisms for ribosomal proteins (C90-C91) and transcription factors (C93). The leave-one-out analysis (C94) demonstrates robustness. The negative control using unamplified genes (C95) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The revised gene set shows statistically significant evolutionary signatures: higher CNV levels, higher CNV buffering scores (indicating CNV despite expression constraint), with stronger patterns for genes with larger compensation effect sizes. These signatures are robust to multiple sensitivity analyses and are not observed in unamplified genes with reduced expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The evolutionary signatures (C97-C99) are supported by data in Figure 1. The negative control using unamplified genes (C100) is critical and shows the signatures are specific to the identified gene set. Multiple sensitivity analyses (C101-C103) demonstrate robustness. The dose-response relationship between effect size and evolutionary signatures (C104) provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The identified gene set is legitimately enriched for dosage-compensated genes and cannot be explained by secondary transcriptional responses to chromosome amplification. Dosage compensation has important effects on genome evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion (C105-C107) is well-supported by the convergence of multiple lines of evidence: functional enrichments, evolutionary signatures, negative controls with unamplified genes, robustness to filtering and sensitivity analyses, and dose-response relationships. The inference is logical given the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The revised analysis identifies 157 genes (13% of 1243 interrogated) as dosage-compensated at high confidence. This is consistent with independent estimates (14% by Springer et al. 2010) and the lower end of the original 10-30% range. Individual gene calls may include false positives and require orthogonal validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The revised estimate (C112) is clearly stated. The acknowledgment of false positives (C113) and need for orthogonal validation (C111) is appropriate scientific caution. The consistency with independent estimates (C114) and the original range (C115) supports the validity of the approach. The clarification of goals (C108, C110) appropriately frames the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "Future work is needed to clarify the precise number and identity of dosage-compensated genes and the genetic basis for aneuploidy tolerance differences between laboratory and wild strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are reasonable statements about future research directions (C116-C117) that acknowledge limitations of the current work and identify important open questions. This is appropriate for a scientific manuscript.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2122 @@
+{
+  "submission": {
+    "id": "8d7fa4b8-f60a-4b15-b562-82c851e02311",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:33:44.794471Z",
+    "updated_at": "2025-11-29T23:33:44.794471Z"
+  },
+  "content": [
+    {
+      "id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "submission_id": "8d7fa4b8-f60a-4b15-b562-82c851e02311",
+      "content_type": "manuscript",
+      "content_text": "# Hipposeq: a comprehensive RNA-seq database of gene expression in hippocampal principal neurons\n\n## Authors\n\n- Mark S Cembrowski<sup>1</sup>\n- Lihua Wang<sup>1</sup>\n- Ken Sugino<sup>1</sup>\n- Brenda C Shields<sup>1</sup>\n- Nelson Spruston<sup>1</sup> ([ORCID: 0000-0003-3118-1636](https://orcid.org/0000-0003-3118-1636)) \u2020\n\n### Affiliations\n\n1. Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nClarifying gene expression in narrowly defined neuronal populations can provide insight into cellular identity, computation, and functionality. Here, we used next-generation RNA sequencing (RNA-seq) to produce a quantitative, whole genome characterization of gene expression for the major excitatory neuronal classes of the hippocampus; namely, granule cells and mossy cells of the dentate gyrus, and pyramidal cells of areas CA3, CA2, and CA1. Moreover, for the canonical cell classes of the trisynaptic loop, we profiled transcriptomes at both dorsal and ventral poles, producing a cell-class- and region-specific transcriptional description for these populations. This dataset clarifies the transcriptional properties and identities of lesser-known cell classes, and moreover reveals unexpected variation in the trisynaptic loop across the dorsal-ventral axis. We have created a public resource, Hipposeq (http://hipposeq.janelia.org), which provides analysis and visualization of these data and will act as a roadmap relating molecules to cells, circuits, and computation in the hippocampus.\n\n## Introduction\n\nGene expression profiling can be a powerful tool to understand the functionality and organization of cells and networks. For example, by relating the specific enriched or depleted genes to their corresponding ontologies in a given population, functional hypotheses can be generated at the intrinsic level (e.g., voltage-gated channel subunits) and network level (e.g., ligand-receptor interactions). A different approach, agnostic to functional correlates of genes, can be taken by using gene expression profiles as a means to genetically delineate different populations of cells, either across classes or within a given class. In this way, gene expression profiling simultaneously clarifies complementary aspects of molecular, cellular, and circuit properties of cells.\n\nTranscriptional profiling in the mouse brain is becoming a powerful tool in neuroscience, owing to a host of complementary innovations and technologies. A variety of transgenic mice have emerged over the last decade (Gong et al., 2003; 2007; Taniguchi et al., 2011), which enables access to genetically defined populations of neurons, and a variety of techniques now exist for purifying labeled cells from surrounding tissue (Okaty et al., 2011a) to obtain cell-class-specific transcriptomes (Okaty et al., 2011b). Although large-scale, quantitative gene expression profiling across neurons has typically been performed by microarray (Belgard et al., 2011; Siegert et al., 2012; Sugino et al., 2006), more recently the technically superior RNA-seq (Shin et al., 2014) is finding application in the neurosciences (Cembrowski et al., 2016; Zeisel et al., 2015; Zhang et al., 2014). Complementing these quantitative profiling methods is the mouse Allen Brain Atlas (ABA) (Lein et al., 2007), providing histological information from in situ hybridization (ISH) assays.\n\nA combination of these techniques has been previously applied to study principal cells in the hippocampus. Microarray work has been used to study CA1 pyramidal cells\u00a0(Kamme et al., 2003;\u00a0Sugino et al., 2006) as well as cells\u00a0of\u00a0the trisynaptic loop (Deguchi et al., 2011; Greene et al., 2009; Lein et al., 2004; Nakamura et al., 2011; Zhao et al., 2001). Mining of the ABA has revealed molecularly defined subregions in multiple principal cell classes (Dong et al., 2009; Fanselow and Dong, 2010; Thompson et al., 2008). Most recently, RNA-seq work has been used to study CA1 pyramidal cells (Cembrowski et al., 2016; Zeisel et al., 2015). This work has helped to identify genetic differences within and across regions and as well revealed differences within canonical neuronal populations.\n\nDespite this extensive investigation, many aspects of the hippocampal transcriptome remain unresolved or warrant further investigation. Previous transcriptional profiling has predominantly focused on CA1 and CA3 pyramidal cells; markedly less work has examined DG granule cells and CA2 pyramidal cells (but see Fanselow and Dong, 2010; Lein et al., 2004; 2005) and no profiling has been performed for DG mossy cells. Additionally, recent work has suggested that DG granule cells may be a heterogeneous population along the dorsal-ventral axis (Fanselow and Dong, 2010), but this has not been systematically investigated. Perhaps most importantly, the technical superiority of RNA-seq may reveal governing organizational rules that may have not been resolved with ISH or microarray (Cembrowski et al., 2016), suggesting that a systematic RNA-seq based approach may provide unparalleled insight into the transcriptional organization of the hippocampus.\n\nHere, we manually purified labeled excitatory cell populations from microdissected hippocampal regions, and used RNA-seq in combination with histological information from ABA to characterize gene expression quantitatively and histologically. This approach enabled analysis of hippocampal gene expression in a cell-class- and region-specific manner. We use this approach to examine both previously characterized and novel transcriptomes, and to understand the organizational schemes of gene expression within and across neuronal populations. These data and analysis tools are publicly available (http://hipposeq.janelia.org), enabling users to examine gene expression at multiple levels of granularity in the hippocampus\u00a0and providing a molecular blueprint to predict and investigate phenotypes at cellular, systems, and behavioral levels.\n\n## Results\n\n### Generating a cell-class- and region-specific RNA-seq database for the hippocampus\n\nThe hippocampus is grossly comprised of five excitatory cell populations; namely, granule and mossy cells of the dentate gyrus (DG), and pyramidal cells of CA3, CA2, and CA1. We sought to obtain and analyze transcriptomes for each of these five excitatory populations, which we operationally refer to as five distinct cell 'classes' for the remainder of the manuscript. Additionally, following recent work illustrating prominent dorsal-ventral differences within multiple canonical cell classes in the hippocampus (Cembrowski et al., 2016; Dong et al., 2009; Fanselow and Dong, 2010; Thompson et al., 2008), we endeavored to profile the excitatory cells comprising the trisynaptic loop at the dorsal and ventral poles of the hippocampus; operationally, hereafter we will refer to cell classes at opposite poles to be from distinct 'regions'. Thus, in total, we aimed to profile eight distinct excitatory neuronal populations based upon cell-class and region specificity (Figure 1a).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/14997/elife-14997-fig1-v1.jpg)\n\n**Figure 1.:** (a) Datasets included in the hippocampal RNA-seq characterization. Note, operationally, cell 'class' refers to gross cell type and 'region' refers to dorsal vs. ventral location. (b) Protocol underlying the generation of raw RNA-seq data. In a transgenic line in which cells of interest were fluorescently labeled (left), the region of interest was microdissected (dashed box). The isolated region was then dissociated, and labeled neurons were manually purified (middle). RNA-seq data was generated from the purified cells. (c) Protocol underlying the processing of RNA-seq data. Raw reads were aligned, and then expression was quantified and statistically analyzed.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14997/elife-14997-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** For each RNA-seq dataset, the corresponding transgenic expression pattern and approximate microdissected region is shown. Scale bar: overview: 500 \u03bcm; inset: 200 \u03bcm. Images of trisynaptic loop and CA2 expression patterns reprinted from Neuron, 89(2), Cembrowski et al., Spatial Gene-Expression Gradients Underlie Prominent Heterogeneity of CA1 Pyramidal Neurons, 351\u2013368, 2016, with permission from Elsevier.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14997/elife-14997-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Representative scatterplot of FPKM values for all genes for two replicates of dorsal CA3, with a Pearson correlation coefficient r = 0.98. (b) Correlation coefficients across replicates for each cell population. (c) Representative FPKM values corresponding to ERCC spike-in controls. Red points indicate undetected spike-in control; i.e., FPKM=0. Here, the Pearson correlation coefficient r = 0.94; for all replicates, r = 0.94 \u00b1 0.01 (n = 24 replicates). (d) FPKM values for genes corresponding to interneurons and non-neuronal cells.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/14997/elife-14997-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (a) Comparison of FPKM- vs. CPM-based enrichment for CA2 marker genes in Figure 3b. (b,c) As in Figure 3c,d, but for CPM-based analysis. (d) As in a, but for mossy cell marker genes of Figure 4b. (e,f) as in Figure 5b,c, but for CPM-based analysis. Insert: comparison of the number of differentially expressed genes for FPKM- vs. CPM-based approaches. (g) As in Figure 6c, but for CPM-based analysis. (h) Representative example of FPKM values for datasets obtained with TopHat and STAR alignment (dorsal CA1 correlation r = 0.98; all datasets r = 0.98 \u00b1 0.00, Pearson correlation, mean \u00b1 SD, n = 8 datasets). (i) Representative example of differential expression results obtained from Tophat and STAR alignment (dorsal vs. ventral CA1: 1015 genes identified using Tophat alignment, 1072 genes identified using STAR alignment). Colored points denote differentially expressed genes, with green color used here to better visualize data points. (j) Overlap in differentially expressed genes from the representative example in i. Here, 955/1015 = 94.1% of genes found using TopHat alignment were also identified with STAR. Across entire dataset, 95.0 \u00b1 1.3% of differentially expressed genes found by TopHat approach were shared with STAR, with STAR identifying 6.8 \u00b1 1.3% more genes than TopHat on average (mean \u00b1 SD, n = 28 pairwise comparisons for each).\n\nTo transcriptionally profile each of the eight populations (Figure 1b,c), we first identified transgenic mouse lines that would allow for class and region specificity when combining local microdissections with fluorescence-based purification (see Materials\u00a0and\u00a0methods; Figure 1\u2014figure supplement 1). We then microdissected the region of interest from the corresponding transgenic animal; this tissue was subsequently dissociated and the fluorescently labeled cells were purified by manual selection (112 \u00b1 6 cells per biological replicate, mean \u00b1 SEM, n = 24 replicates) (Hempel et al., 2007). The sorted sample underwent library preparation and sequencing, the resulting raw RNA-seq reads were aligned, and expression was quantified and analyzed across samples (see Materials\u00a0and\u00a0methods).\n\nTo assess reproducibility, three biological replicates were ascertained for each dataset. Replicate datasets, corresponding to the same class-region pair, were well correlated with each other (r = 0.98 \u00b1 0.02, mean \u00b1 SD, Pearson\u2019s correlation coefficient; Figure 1\u2014figure supplement 2a,b), and each replicate was devoid of marker gene cohorts associated with interneurons and non-neuronal cells (Figure 1\u2014figure supplement 2d). Thus, our obtained transcriptomes were internally consistent and cell-class specific, ensuring the integrity of our dataset.\n\n### A quantitative overview of hippocampal gene expression\n\nWe began by exploring the gross relationships of hippocampal transcriptomes. Using hierarchical clustering (see Materials\u00a0and\u00a0methods; Figure 2a) we found the initial bifurcation corresponded to a divide between granule cells and non-granule cells, consistent with previous microarray (Greene et al., 2009) and ISH work (Thompson et al., 2008). The second broad division of the dendrogram partitioned mossy cells from pyramidal cells and the final bifurcation in each limb corresponded to dorsal-ventral differences in each cell class, although the degree of within-class similarity was frequently comparable to across-class similarity (Cembrowski et al., 2016).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/14997/elife-14997-fig2-v1.jpg)\n\n**Figure 2.:** (a) Left: the hierarchical structure of gene expression in the hippocampus calculated by agglomerative clustering. Middle and right: Expression across replicates for marker genes associated with broad hippocampal populations (middle) or specific cell classes and regions (right). Marker genes were selected based upon two-fold enrichment in all replicates in the target population(s) relative to all other replicates (see Materials\u00a0and\u00a0methods). FPKM values displayed in the heat map were normalized on a gene-by-gene (i.e., column-by-column) basis by the highest expressing sample for each gene. (b) Confirmation of gene expression profiles by ISH. In corresponding bar plots, RNA-seq FPKM values for each class/region dataset are displayed, with coloring adhering to the conventions of Figure 1a and fill vs. crosshatch indicating dorsal vs. ventral datasets. Scale bar: 500 \u03bcm.\n\nWe next cross-validated our RNA-seq hits with ABA ISH data (see Materials\u00a0and\u00a0methods). From RNA-seq, many marker genes could be identified that corresponded to specific dendrogram bifurcations, both across broad hippocampal populations (Figure 2a, left) as well as within cell classes across regions (Figure 2a, right). Importantly, these RNA-seq hits gave good agreement with ABA histological data, correctly predicting the enriched populations in ~81% of cases (124/153 genes where coronal ISH images were available, Figure 2b, Supplementary file 1; see Materials\u00a0and\u00a0methods).\n\nThe consistency of RNA-seq with existing ISH data indicates that the two datasets can be used in conjunction to study spatial patterns of gene expression and delineate genetic boundaries across excitatory cell classes in the hippocampus. Complementing this, the quantitative whole-genome nature of RNA-seq enables well-principled numerical insight into the extent and properties of gene enrichment. For the remainder of the manuscript, we leverage these advantages to first examine individual cell classes, and then subsequently elucidate transcriptomes across cell classes and regions of the hippocampus.\n\n### CA2 transcriptional identity\n\nTo examine the extent to which our RNA-seq dataset both recapitulated and expanded upon previous work, we searched for CA2-specific marker genes in our RNA-seq dataset. This search identified 41 genes with >3-fold enrichment in CA2 relative to all other populations, using relatively conservative search parameters (Figure 3a,b; see Materials\u00a0and\u00a0methods). We compared these genes against previously known CA2-enriched genes from both literature (Dudek et al., 2016) and ABA mining (Lein et al., 2007). Notably, although some of our retrieved genes were previously identified as enriched in CA2 (Figure 3a), the majority of discovered genes were novel hits (66%, n=27/41; Figure 3b). Thus, our dataset recapitulated previous findings, but moreover revealed a host of previously unidentified genes with greater CA2 specificity (Figure 3\u2014figure supplement 1), directly demonstrating the utility of RNA-seq relative to previous methodologies. Many novel genes were associated with functionally relevant neuronal ontologies, including cell adhesion and axon guidance (Srgap2, Vcan), neuropeptide signaling (Ntsr2), and calcium binding (Scgn) (genes highlighted in orange, Figure 3b).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/14997/elife-14997-fig3-v1.jpg)\n\n**Figure 3.:** (a) Heat map of replicate FPKM values for previously identified CA2 marker genes. (b) Heat map of replicate FPKM values for novel CA2 marker genes identified by RNA-seq. Orange indicates genes with previously characterized neuronal relevance. (c) The number of CA3-, CA2-, and CA1-specific genes, when restricting comparisons to solely these three cell populations in the dorsal hippocampus. A gene is denoted as X-fold enriched in a given CA region if it the average FPKM value is at least X-fold greater than the other CA regions. (d) Multidimensional scaling demonstrating the distance between CA3, CA2, and CA1 pyramidal cells.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14997/elife-14997-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Normalized FPKM values for CA2 marker genes identified in previous literature. Note that many previous marker genes have relatively high expression in non-CA2 populations. (b) As in (a), but for all CA2 marker genes identified through ABA ISH CA2 Fine Structure Search. (c) As in (a) and (b), but for RNA-seq-identified marker genes, to compare specificity relative to previous marker genes. (d) Quantitative comparison of the number of marker genes as a function of fold change identified from previous literature (green), ABA ISH fine structure search (blue), the union of previous literature and Fine Structure Search results (teal), and RNA-seq (black). Circular data point illustrates 3-fold enrichment criterion used to obtain RNA-seq marker genes shown in (c).\n\nAlthough area CA2 shares some similarities with neighboring CA3 and CA1 regions, CA2 also exhibits features unique among these principal cells. Consequently, the extent to which CA2 pyramidal cells embody their own unique characteristics versus sharing properties with CA1 and/or CA3 is a subject of ongoing research (Dudek et al., 2016), which can be directly and comprehensively addressed by transcriptome comparisons. Analyzing gene expression in dorsal CA3, CA2, and CA1, we found each cell population had a similar number of enriched genes (Figure 3c). Complementing this, applying multidimensional scaling to visualize the distances between CA3, CA2, and CA1 (see Materials\u00a0and\u00a0methods), we found that the three regions were approximately equidistant (Figure 3d). These results illustrated that CA2 is largely its own distinct region, rather than being a weighted combination of CA3 and CA1 features; i.e., the physical intermediacy of CA2 did not correlate with transcriptional intermediacy.\n\n### Mossy cell transcriptional identity and variability\n\nWe also investigated mossy cells, a relatively uncharacterized excitatory cell population found within the hilus of the dentate gyrus. As with CA2, we first investigated the extent to which mossy cells exhibited enriched genes relative to all other hippocampal excitatory neurons. Previous work has found one gene enriched in mossy cells (Calb2) (Fujise et al., 1998), which was recapitulated by our analysis (Figure 4a); in addition we identified 59 mossy cell-enriched genes in the hippocampus (Figure 4b). Many of these genes play roles in neuronally relevant ontologies (genes highlighted in orange, Figure 4b), including cellular adhesion and axon guidance (Cntn6, Ephb6), calcium signaling (Hpcal1), ligand-receptor signaling (Drd2, Gal, Glp1r, Grm8, Nmb), and regulation of transcription (Prrx1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/14997/elife-14997-fig4-v1.jpg)\n\n**Figure 4.:** (a) Heat map of replicate FPKM values for the previously identified mossy cell marker gene Calb2. (b) Heat map of replicate FPKM values for novel mossy cell marker genes identified by RNA-seq. Orange indicates genes with previously characterized neuronal relevance. (c) ISH profiles (bottom) for marker genes identified by RNA-seq (top). Scale bar, overview: 500 \u03bcm; expanded: 100 \u03bcm.\n\nCross-validating these genes in the ABA, we found excellent agreement between mossy cell-enriched genes from RNA-seq and expression in the hilar cells (95%; n=36/38 agreement where coronal images available, Supplementary file 2; see Materials\u00a0and\u00a0methods). Interestingly, although some genes seemed to be expressed relatively uniformly across the long axis (e.g., Csf2rb2, Figure 4c), many genes seemed to be enriched at specific locations along the long axis. For example, Nmb and Thbs2 exhibited expression near the dorsal pole of the hippocampus but lacked expression at the ventral horn of the hippocampus. Conversely, Calb2 and Tm4sf1 exhibited expression concentrated near the ventral pole of the hippocampus. In addition to this differential labeling across the hippocampus, differences were also seen in the labeling density at corresponding enriched regions (e.g., cf. Nmb with Thbs2 dorsally and Calb2 with Csf2rb2 ventrally), suggesting that mossy cells are a transcriptionally heterogeneous population of cells.\n\n### Granule cell transcriptional identity and variability\n\nAlthough significant work has been done examining dorsal-ventral differences in CA3 and CA1 (Cembrowski et al., 2016; Thompson et al., 2008), differences in dentate gyrus granule cells have received relatively little attention. Previous work (Fanselow and Dong, 2010) has suggested that domains specified by the dorsal marker gene Lct and the ventral marker Trhr may correspond to tripartite molecular divisions of the dentate gyrus (Figure 5a): here, Lct and Trhr expression respectively represent the dorsal and ventral divisions, whereas the intermediate domain is characterized by weak expression of both genes. Importantly, our RNA-seq work recapitulated both of these marker genes, suggesting that our data could be used to quantitatively explore the degree and patterns of granule cell heterogeneity.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/14997/elife-14997-fig5-v1.jpg)\n\n**Figure 5.:** (a) RNA-seq (top) and ISH (bottom) profiles of Lct and Trhr, two previously identified marker genes respectively enriched in dorsal and ventral granule cells. Scale bar: 500 \u03bcm. (b) FPKM scatterplot of average dorsal and ventral GC transcriptomes. Data points represent individual genes, with genes highlighted in red indicating differential expression. (c) Number of genes enriched at the poles of DG as a function of fold change. (d) Example ISH profiles (bottom) of dorsal GC marker genes obtained by RNA-seq (top). (e) As in (d) but for ventral GC marker genes.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14997/elife-14997-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Examples of regionally enriched marker genes with neuronally relevant functionality. (b) RNA-seq and ISH profiles of representative novel dorsal marker genes. Scale bar, overview: 500 \u03bcm; expanded: 100 \u03bcm. (c) As in b, but for novel ventral marker genes.\n\nWe first used our RNA-seq dataset to examine gene expression for granule cells at the two poles of the dentate gyrus. Notably, hundreds of genes were differentially expressed between these two poles (Figure 5b), and corresponded to large fold changes (Figure 5c). Many of these genes were involved in neuronally relevant functions and were cross-validated by ISH (58%, n=33/57 agreement where coronal images available, Figure 5\u2014figure supplement 1, Supplementary file 3; see Materials\u00a0and\u00a0methods).\n\nGiven the agreement between RNA-seq and ISH, we used the\u00a0ABA to investigate genetic domains in granule cells. The genetic domain specified by Lct was recapitulated by multiple dorsal marker genes (Figure 5\u2014figure supplement 1b), including Gsg1l, Spata13, and Stra6 (Figure 5d). Conversely, little agreement was seen between ventral marker genes: the domain specified by Trhr was found to differ from the patterns observed for other markers (e.g., Cpne7, Grp, and Nr2f2; Figure 5e, Figure 5\u2014figure supplement 1c). These findings indicate that the genetic boundary defined by Lct may correspond to a transcriptionally well-defined subpopulation, but an equally well-defined ventral subpopulation does not appear to be present. Despite this, all novel marker genes validated by ISH appeared to be expressed in gradients across the long axis (Figure 5\u2014figure supplement 1b,c; we did not find genes that were selectively expressed in either the upper or lower blades of DG granule cells), suggesting that granule cell transcriptional identity exists in a continuous spectrum in this axis.\n\n### Dorsal-ventral differences independent of cell class\n\nThe granule cell marker genes Lct and Trhr were previously shown to be enriched in other class-region\u00a0populations; namely, Lct is expressed in dorsal CA1 and Trhr is expressed in ventral CA3 (Cembrowski et al., 2016; Dong et al., 2009; Thompson et al., 2008) (see also Figure 5a). This raises the intriguing possibility that there exist genes that are enriched in a region- but not class-specific manner; i.e., genes enriched dorsally or ventrally across multiple cell classes. We next analyzed this the context of the dorsal versus ventral cell classes of the trisynaptic loop.\n\nWe first identified the number of expressed genes that were >2 fold enriched between poles on a class-by-class basis (top values, Figure 6a). From here, we searched for genes that were associated with enrichment at the same pole across multiple class comparisons; e.g., the genes Cadm2 and Mgll were found to be >2 fold dorsally enriched in every dorsal-ventral comparison, whereas Resp18 and Efnb2 were found to be ventrally enriched (Figure 6b; corroborated by ABA, Figure 6d). In general, many genes were found that obeyed region-specific enrichment across multiple cell classes (Figure 6c). To compare this empirically determined number of region-enriched genes relative to the number expected by chance, we calculated the total number of genes that were expressed in each cell class/region combination (defined as the number of genes with FPKMavg>10; Figure 6a), and compared this experimental data to a null model where gene names were drawn at random from the list of expressed genes (see Materials\u00a0and\u00a0methods) (Figure 6c). Interestingly, in almost every possible comparison (n=5/6 pairwise enrichment combinations and 2/2 triplicate enrichment combinations), the number of enriched genes that were shared across cell classes in a region-specific manner were significantly greater than that expected by chance.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/14997/elife-14997-fig6-v1.jpg)\n\n**Figure 6.:** (a) For each trisynaptic loop dataset, the number of enriched genes when comparing to the same cell class at the opposite pole (>2-fold difference), as well as the total number of expressed genes for each dataset (FPKMMIN>10), are shown (top and bottom values respectively). (b) Example genes enriched in a region-, but not cell-class-, specific manner. (c) The number of dorsally and ventrally enriched genes shared across cell classes. Both the observed RNA-seq data (horizontal\u00a0lines)\u00a0and null distribution (mean\u00a0\u00b1 2SD)\u00a0are shown. (d) Sagittal ISH profiles of the example region-enriched genes. Scale bar: 500 \u03bcm. (e) Heat map of all genes found enriched in a region-specific manner across the trisynaptic loop (n=37; null distribution predicts 6.0 \u00b1 7.1 (mean \u00b1 2SD), p<1e-6). Orange text: genes also identified as differentially expressed in medial entorhinal cortex (MEC) (Ramsden et al., 2015).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14997/elife-14997-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Left: atlas showing dorsal-ventral extent of MEC in sagittal section. Middle, right: example ISH profiles of dorsally- and ventrally-enriched genes identified by RNA-seq and found to be predictive of MEC enrichment (Ramsden et al., 2015). Scale bar: 500 \u03bcm.\n\nWe examined the ontologies associated with the 37 genes that were enriched across all dorsal-ventral comparisons (i.e., the n=12 dorsally and 25 ventrally enriched genes from the triplicate comparisons of Figure 6c). Although the enriched genes spanned a variety of ontologies, many genes that emerged as being region- but not class-enriched corresponded to cellular adhesion and axon guidance; for example, the cellular adhesion molecules Cadm1, Cadm2, the ephrins/receptors Epha5, Epha7, Efnb2, as well as Dagla, Odz4, Timp2 and Negr1 (Figure 6e).\n\nGiven the abundance of genes expressed in a region-specific manner in the hippocampus, we next examined whether these region-specific genes would predict similar patterning outside of the hippocampus. Recently, RNA-seq has been conducted on the dorsal and ventral poles of the medial entorhinal cortex (MEC) (Ramsden et al., 2015), providing a direct comparison with our data. Strikingly, of the 37 genes identified as regionally enriched in all principal cells of the trisynaptic loop, 43% (n=16/37) were identified as differentially expressed in the dorsal-ventral axis of MEC with an identical directionality (Figure 6e, orange text). Examining the spatial patterns of gene expression in the MEC in sagittal sections, we found that these regional-specific genes exhibited a broad range of expression profiles across the dorsal-ventral axis, attenuating in labeling density and/or intensity on a gene-by-gene basis (Figure 6\u2014figure supplement 1). Attenuation was also generally not constrained to a fixed cell class: although some genes exhibited expression restricted to single lamina (e.g., Inf2, Etv1), other genes were more broadly expressed (e.g., Efnb2 across two laminae; Cadm2, Crym, Hap1, and Odz4 across 3+ laminae).\n\n### Enriched gene modules in hippocampal subpopulations\n\nThe preceding work considered cell classes and regions determined a priori to analysis. To complement this, we next used a wholly data-driven approach to analyze the hippocampal transcriptome through Weighted Gene Co-expression Network Analysis (WGCNA; see Materials\u00a0and\u00a0methods) (Zhang and Horvath, 2005). This method identifies highly correlated expression of gene modules across subsets of samples. We used the top 1000 most variable genes from the full hippocampal dataset, and using WGCNA, identified eight gene modules that were enriched in various subpopulations of hippocampal excitatory neurons (Figure 7a,b; see Materials\u00a0and\u00a0methods).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/14997/elife-14997-fig7-v1.jpg)\n\n**Figure 7.:** (a) Top and middle: hierarchical clustering and normalized expression of the 1000 most variable genes, respectively. Bottom: colors denoting the modules obtained from WGCNA. (b) Six modules obtained from a, with the average expression shown and significantly enriched terms highlighted. Each module is named according to the gross overall expression profile across datasets. (c) Genes associated with long-term potentiation significantly enriched in modules. (d) As in c, but with genes associated with Parkinson\u2019s disease.\n\nThe functional implications of these modules were then examined by using DAVID (Huang et al., 2009a; 2009b) (see Materials\u00a0and\u00a0methods) to identify statistically significant Gene Ontology and KEGG Pathway terms (Kanehisa and Goto, 2000; Kanehisa et al., 2014). Interestingly, although by definition the genes present within a given module were not shared across modules, many associated ontologies and pathways were common between modules. For example, the KEGG annotation 'Long Term Potentiation' was enriched for distinct modules associated with DG granule cells, CA1 pyramidal cells, and CA2/3 pyramidal cells (Figure 7c), illustrating that specific genes that underlie LTP vary between cell classes despite all cell classes expressing genes related to LTP. Similarly, this approach also enabled us to identify specific modules with disease annotations; for example, both mossy cells and dorsal dentate gyrus granule cells were enriched for genes associated with disease terms (e.g., Parkinson\u2019s; Figure 7d).\n\n## Discussion\n\nHere, we have used RNA-seq in conjunction with ABA in situ\u00a0hybridization to transcriptionally profile populations of excitatory neurons in the hippocampus. Employing a combination of fluorescent cell sorting and regional microdissection, we obtained cell-class- and region-specific transcriptomes from eight distinct populations of hippocampal neurons. The transcriptional data obtained here provide insight into multiple complementary properties of the hippocampus. For example, the greatly expanded number of marker genes fosters predictions for the role of genes and cell classes in physiology and disease, the complement of RNA-seq and ISH reveals the spatial relationships within and across cell classes of the hippocampus, and the dorsal versus ventral profiling demonstrates the surprising finding that gene expression can be regionally enriched invariant to distinct cell classes. We have made these data publicly available, augmented with user-friendly interactive analysis and visualization tools (http://hipposeq.janelia.org), providing readily available and customizable RNA-seq exploration to the hippocampal community.\n\n### Identification and utility of novel marker genes\n\nA major result of our RNA-seq analysis was the identification of region- and/or class-specific marker genes. Our profiling recapitulated many marker genes known a priori, but in addition, demonstrated an abundance of previously unappreciated marker genes. Consequently, our work greatly expands the total number of marker genes and enables several complementary lines of inquiry based upon these findings. First, the marker genes uncovered here serve as candidates for obtaining genetic access to well-defined populations of neurons. Due to the inherently quantitative nature of RNA-seq, the strength and specificity of candidate genes can be evaluated by examining expression in both on-target and off-target populations; promoters associated with genes that are sufficiently restricted in expression can be employed for designing transgenic animals or viruses to enable genetic access. We emphasize that the Cre lines used here for labeling cells for transcriptional profiling (Figure 1\u2014figure supplement 1) may already provide sufficient genetic access to many excitatory subpopulations of the hippocampus; thus, this work offers both existing and new ways to selectively target and manipulate specific populations of neurons. Second, many of the marker genes identified here can be tied to specific functionality (e.g., Figure 3b, 4b, Figure 5\u2014figure supplement 1a), allowing novel marker genes to be used for hypothesis generation. These hypotheses can be investigated through a variety of perturbations (e.g., siRNA, knockouts, or CRISPR-Cas gene editing) combined with other experiments (e.g., physiology, behavior). Similarly, many marker genes identified here are annotated as specific disease-related genes (e.g., Figure 7b,d), which can help to reveal both the molecules and cell classes to examine in pathological conditions and disease models.\n\n### Cell-class- and region-specific gene expression in the trisynaptic loop\n\nOur work here identified two components of transcriptional variability in the cells of the trisynaptic loop; namely, differences across different neuronal populations (across-class) and differences across the dorsal-ventral axis (across-region). On a gene-by-gene basis, these two organizational principles could be observed either individually or simultaneously (Figure 8). Transcriptional differences across classes of the trisynaptic loop have been identified and appreciated for some time (e.g., Greene et al., 2009; Lein et al., 2004). Indeed, it is likely that these transcriptional differences are fundamental in producing across-class variability in morphology, physiology, and connectivity, ultimately underlying the diverse and distinct roles that the different cell classes are believed to play in hippocampal processing (Mizuseki et al., 2012; Neunuebel and Knierim, 2014). Across-region differences, at a cell-class-specific level, have recently been identified to be present in CA3 and CA1 pyramidal cell populations (Cembrowski et al., 2016; Thompson et al., 2008). Here, we show that granule cells of the dentate gyrus also adhere to this rule, with marked differences present in the transcriptomes between dorsal and ventral poles (Figure 5b,c). Indeed, the transcriptional distance between dorsal and ventral granule cells is similar to that between different populations of cells (Figure 2a), a finding similar to that found between CA3 and CA1 pyramidal cells (Figure 2a) (Cembrowski et al., 2016).\n\n![Figure 8.](https://cdn.elifesciences.org/articles/14997/elife-14997-fig8-v1.jpg)\n\n**Figure 8.:** Genes can be expressed in relatively similar abundances across the hippocampus (Slc17a7; upper left), vary in a cell-class-specific (Fibcd1; upper right) or region-specific manner (Cadm2; lower left), or vary in both cell-class- and region-specific manners simultaneously (Wfs1; lower right). In each panel, light magenta denotes the spatial extent of the hippocampus, dark magenta illustrates the CA1 region in particular, and the dots indicate the location and intensity of labeling from ISH. RNA-seq profiling results are provided for each gene. Images from the Allen Brain Explorer v2.\n\nFinding genes that are regionally enriched across cell classes (Figure 6) is surprising and warrants further investigation. The fact that many of these genes are involved in cell adhesion and axon guidance, in conjunction with the observation that they are enriched along the dorsal-ventral axis in multiple areas of the brain, suggests that they may generally be used for maintaining polarity in the mature brain. During development, gradients of gene expression are used for proper patterning of neural circuits (Sansom and Livesey, 2009); in a similar fashion, these genes may reflect the mature counterpart that actively maintains spatial identity.\n\n### Transcriptional variability in excitatory cells of the hippocampus\n\nA central goal of neuroscience is to disentangle and understand the vast complexity of neuronal populations, both within and between cell classes. Next-generation RNA-seq provides a comprehensive means of clarifying cellular identities in the hippocampus and complements other gene expression analyses (Dong et al., 2009; Fanselow and Dong, 2010; Lein et al., 2007; Thompson et al., 2008). Our work here furthers understanding of across-class differences, but also emphasizes the high degree of transcriptional variability that can be present within a given population (e.g., across the dorsal-ventral axis of the hippocampus). Pyramidal cells in CA1 and CA3 (Cembrowski et al., 2016; Thompson et al., 2008), as well as both mossy cells (Figure 4) and granule cells (Figure 5) of the dentate gyrus, appear to exhibit a high degree of heterogeneity across the long axis. Notably, this within-class, dorsal-ventral heterogeneity can exhibit different organizational principles; for example, CA3 pyramidal cells have been shown to conform to discrete subpopulations (Thompson et al., 2008), whereas CA1 pyramidal\u00a0cells\u00a0(Cembrowski et al., 2016), DG mossy cells (Figure 4),\u00a0and DG\u00a0granule cells\u00a0(Figure 5)\u00a0do\u00a0not exhibit clear subdomain organization.\n\nIt is important to emphasize that our results, although illustrating a high degree of transcriptional heterogeneity in principal cells of the hippocampus, likely underestimate the total amount of variability for several reasons. First, comparing the dorsal and ventral poles may miss differences present along other dimensions, as well as differences present at spatially intermediate locations. Second, our population-level approach may miss heterogeneity that is present at a subpopulation or single-cell level, including transcriptional signatures associated with specialized but sparse excitatory cell classes (e.g., radiatum giant cells (Gulyas et al., 1998), semilunar granule cells (Williams et al., 2007), and CA3 granule cells (Szabadics et al., 2010)). Finally, transcriptional properties may vary in ways other than geographical location; for example, differential gene expression for cells of the same region that target different downstream locations (Cembrowski et al., 2016; Sorensen et al., 2015).\n\n### Hipposeq, a publicly available resource for hippocampal transcriptomics\n\nAll data presented here are accessible on the Hipposeq website (http://hipposeq.janelia.org), an interactive database that allows user-friendly analysis and visualization of gene expression data for individual genes, cohorts of genes, and entire transcriptomes. Through this site, data can be mined for a priori genes of interest, or alternatively investigated with discovery-based analysis tools. Raw and processed data are also available for download, enabling the user to export data into their own environment for more specialized analyses. This website and associated dataset expand upon and complement other existing publicly available gene expression databases, mostly notably the ABA (Lein et al., 2007). Our RNA-seq approach offers advantages that circumvent traditional issues associated with ISH; namely, providing class-specific data with a large dynamic range, helping to circumvent confounds associated with image-based analyses of gene expression that can be limited by changes in cell density and/or labeling across sections. Of course, RNA-seq also has limitations relative to ISH, including an inherent lack of spatial information. In this way, the combination of Hipposeq and the ABA ISH atlas provides a powerful set of tools that enables quantitative and histological whole genome insight into gene expression in the hippocampus.\n\n## Materials and methods\n\nMice were housed on a 12-hr light/dark cycle with ad libitum food and water access. Experimental procedures were approved by the Institutional Animal Care and Use Committee at the Janelia Research Campus (protocol #14\u2013118).\n\n### Manual sorting, library preparation, and sequencing\n\nAll transgenic mice used (namely, granule cells from both blades of the DG: Rbp4-Cre KL100, mossy cells of the hilus: Lypd1-Cre NR151, CA3 and CA2 pyramidal cells: Mpp3-Cre KG118, CA1 pyramidal cells: Vipr2-Cre KE2) were generated by the Gene Expression Nervous System Atlas\u00a0(GENSAT) project (Gong et al., 2003; Gong et al., 2007). Transgenic lines were maintained on a C57bl/6J background, with each line backcrossed at least one generation prior to use (note that strain-specific gene expression differences are likely minor [Sandberg et al., 2000]). Cre expression was reported by an Ai9 (tdTomato) mouse cross (Madisen et al., 2010), and double-positive mice of either sex were sacrificed (age P26-P35, either single- or group-housed) within a 3\u2009hr time window approximately midway through the light cycle, with microdissection locations shown in Figure 1\u2014figure supplement 1. In all cases, manual sorting to purify for fluorescent neurons from microdissected slices was performed according to previous methods (Hempel et al., 2007). For each cell class/region combination, three biological replicates (i.e., cell class/region from a different animal of the same genotype) with sufficient reproducibility (within-class Pearson correlation coefficient >0.90, a criterion determined after analysis) were obtained; biological replicates were re-obtained for datasets for correlations <0.90. This was the only exclusion criterion for datasets. No technical replicates were used in this study. Three biological replicates have been previously shown to be sufficient in detecting differences in gene expression known a priori (Cembrowski et al., 2016). On average, 112 \u00b1 6 cells (mean \u00b1 SEM, n = 24 replicates) were recovered in the final purified pool for library preparation and sequencing.\n\nTotal RNA was isolated from each sample using PicoPure RNA Isolation kit (Life Technologies, Frederick, MD) including the on-column RNase-free DNase\u00a0I treatment (Qiagen, Hilden, Germany) following the manufacturers\u2019 recommendations. Eluted RNA (11 ul) was dried in a speed vac to approximately 2\u20134 ul. ERCC control RNAs (Life Technologies) were added using 1 ul of 1:100,000 dilution for every 50 cells. cDNA was amplified from this input material using Ovation RNA-seq v2 kit (NuGEN, San Carlos, CA). Approximately half of the resulting cDNA was used to make the sequencing libraries using the Ovation Rapid DR Multiplexing kit (NuGEN). Four barcoded libraries were pooled per sequencing lane on a HiSeq 2500 (Illumina, San Diego, CA) and single-end 100 bp reads were generated. No randomization or blinding was used for sorting, library preparation, or sequencing.\n\n### RNA-seq read alignment, quantification, differential expression, and analysis\n\nReads for each library (37.9 \u00b1 1.3 million per replicate, n = 24 replicates) were mapped using TopHat v2.0.6 (http://ccb.jhu.edu/software/tophat/index.shtml) (Trapnell et al., 2009) against the mouse genome build NCBIM37 (mm9) combined with sequences corresponding to ERCC spike-in controls. The following options were used: '--num-threads 8 --GTF mouseGtf.gtf', where mouseGtf.gtf reflects the concatenated Ensembl NCBIM37 transcript annotation file and the annotated ERCC spike-in controls. With these settings, 77.5 \u00b1 1.0% (29.6 \u00b1 2.0 million per replicate, n = 24) of all reads aligned at least once to either the annotated transcriptome or genome.\n\nAfter mapping, quantification and differential expression of the annotated mouseGtf.gtf was performed using Cuffdiff v2.1.1 (http://cole-trapnell-lab.github.io/cufflinks/) (Trapnell et al., 2010) using the accepted_hits.bam files for all replicates, with three biological replicates used for each dataset. The following options were used: \u201c--frag-bias-correct mouseFa.fa --mask-file mouseMask.gtf --max-bundle-frags 10000000 --num-threads 8 --multi-read-correct --no-effective-length-correction\u201d, where mouseFa.fa is the Ensembl NCBIM37 reference FASTA and mouseMask.gtf is a mask file that ignores all alignments corresponding to genes annotated in mouseGtf.gtf annotated as tRNA, rRNA, or snRNA. In addition, from inspecting gene tracks we also noticed that a few loci (namely, Nat8l, Psd2, Xist, Gm15459, and Gm10335) would occasionally produce many identical reads to one specific sequence with few or no alignment reads found elsewhere; these loci were also masked. Finally, when not explicitly examining ERCC controls (Figure 1\u2014figure supplement 2c), ERCC 'loci' were also included in the mask. When considering spike-in controls, FPKM values were found to be highly reproducible across replicates (r = 0.94 \u00b1 0.01, n = 24 replicates, Pearson correlation coefficient).\n\nThe resulting data were analyzed in the R environment using a combination of cummeRbund v3.0 (http://compbio.mit.edu/cummeRbund/) (Goff et al., 2013) and custom scripts. General analysis conventions were as follows: a conventional threshold of FDR <0.05 was used for differential expression, allowing both under- and overexpressed genes to be identified (i.e., two-sided); a gene was considered $X$-fold enriched in a given region, relative to other regions, when the mean FPKM value was at least $X$-fold greater for all corresponding pairwise comparisons (e.g., for gene A to be $X$-fold enriched in\u00a0dorsal\u00a0CA1 relative to dorsal\u00a0CA2 and dorsal CA3, FPKMA,CA1dorsal > $X$\u2219FPKMA,CA2dorsal and FPKMA,CA1dorsal > $X$\u2219FPKMA,CA3dorsal); Pearson correlation coefficients were used to compare across datasets; error bars for FPKM values were taken from Cuffdiff\u2019s 95% CI model; and gene expression was required to obey FPKM>10 in at least one population to be included in differential expression or enriched population analyses. No randomization or blinding was used for computational handling of data. Raw and processed RNA-seq datasets were deposited in the National Center for Biotechnology Information (NCBI) Gene Expression Omnibus (GEO), accession number GSE74985, and analysis scripts can be downloaded from Github (https://github.com/cembrowskim/hipposeq.git).\n\nFor hierarchical clustering of datasets (Figure 2a), whole-transcriptome averaged FPKM values were processed by adding a pseudocount of 1 to all values, log10 transformed, and normalized on a sample-by-sample basis by the sample sum of the transformed FPKM value. The pairwise Jensen-Shannon distance was calculated across samples, and agglomerative clustering was performed on the distance matrix using complete linkage.\n\nWhen plotting normalized FPKM heat maps (Figures 2a, 3a,b, 4a,b, 6e, 7a,c,d; Figure Supplements 1-2d, 3-1a,b,c, 5-1a), each gene (i.e., column) was normalized by dividing the expression values by the highest FPKM value across samples. When visualizing expression in single-gene bar plots (Figures 2b, 4c, 5a,d,e, 6b; Figure Supplements 5-1b,c, 6\u20131), x-axis values are individual class/region datasets, such that filled bars represent dorsal samples, cross-hatched bars represented ventral samples, and coloring adheres to the convention of Figure 1a; y-axis values are gene expression values in FPKM.\n\nFor identifying marker genes corresponding to the clusters of Figure 2a, we searched for genes that were more than two\u00a0fold enriched in every replicate of the desired sample(s) relative to the remaining sample(s). For identifying cell class-specific genes (Figure 3a,b; Figure 4a,b), we searched for genes that were more than 3-fold enriched on average in the desired population, relative to all other populations. For identifying regionally enriched granule cell marker genes with neuronal relevance (Figure 5\u2014figure supplement 1a), we searched for genes that were more than 3-fold enriched at either of the two poles relative to the opposite pole.\n\nFor multidimensional scaling (MDS) of CA3, CA2, and CA1 dorsal datasets (Figure 3d), replicate FPKM values were processed by adding a pseudocount of 1 to all values, log10 transformed, and normalized on a sample-by-sample basis by the sample sum of the transformed FPKM value. The pairwise Jensen-Shannon distance was calculated across samples, and agglomerative clustering was performed on the distance matrix using complete linkage. Two-dimensional classical MDS was performed by using cmdscale in R with default arguments.\n\nWhen examining the number of regionally enriched genes invariant to principal cell class (Figure 6), genes obeying FPKM>10 for each class/region combination were obtained ('expressed genes'), and from this list, for each dorsal-ventral comparison genes also being >2 fold enriched at either pole were identified ('enriched genes', Figure 6a). The overlap in enriched genes across respective regions was then determined (horizontal lines, Figure 6c). To derive chance levels for overlap, Monte Carlo simulations were performed. Here, genes were drawn at random without replacement from the expressed genes list from each dataset, with the total number of genes drawn equal to the number of enriched genes for each pairwise comparison. The ensuing results were analyzed analogously to empirical data. This process was repeated 1000 times to characterize the chance distributions for all comparisons.\n\nFor comparing to MEC RNA-seq (Figure 6\u2014figure supplement 1), we first identified all genes that were >2 enriched in each dorsal-ventral comparison for cell class in the trisynaptic loop (n=37). Next, we compared this list to those identified as differentially expressed (FDR < 5%) from RNA-seq on microdissected dorsal and ventral poles of the MEC (S7 Dataset, Ramsden et al., 2015). Genes present in this list that obeyed the same directionality of enrichment are highlighted in Figure 6e (dorsal: 6/12; ventral: 10/27).\n\nWGCNA analysis (Zhang and Horvath, 2005) was performed (Figure 7) by first identifying the 1000 most variable genes across datasets (FPKMMIN=5). The correlation matrix $C$ of these genes was subsequently obtained according to $C_{ij}=r_{ij}$, where $r_{ij}$ was the Pearson correlation coefficient of genes $i$ and $j$ across datasets. The dissimilarity matrix $D$ was then calculated by taking $D_{ij}=1\u2212(\\frac{C_{ij}+1}{2})$. Divisive hierarchical clustering was then performed on $D$ by the diana method in R with default parameters, and modules were obtained by choosing a cut height of 10 on the computed dendrogram. Genes associated with each cohort were analyzed by DAVID (Database for Annotation, Visualization and Integrated Discovery) (Huang et al., 2009a, 2009b). The default Gene Ontology terms (GOTERM_BP_FAT, GOTERM_CC_FAT, GOTERM_MF_FAT) (Ashburner et al., 2000) and KEGG (Kyoto Encyclopedia of Genes and Genomes) pathways (Kanehisa and Goto, 2000; Kanehisa et al., 2014) were analyzed by the Functional Annotation Chart, and terms that obeyed a Benjamini (adjusted) p-value <0.05 were considered for further analysis.\n\n### Cross-validation of alignment, quantification, and differential expression of RNA-seq data\n\nFirst, to cross validate results of the TuxedoSuite pipeline with alternative quantification and differential expression software, we used HTSeq to quantify expression in a count-based fashion (Figure 1\u2014figure supplement 3a\u2013g). For each sample, the mapped reads from TopHat were quantified by HTSeq using htseq-count with the previous mouseGtf.gtf and the following options: \u201c--format=bam --stranded=no\u201d. After quantification, the count data for individual samples were merged into one file, and analyzed by DESeq2 and custom scripts in the R environment. Values are reported in counts per million (CPM), and a CPM cutoff of 20 was used for fold change analysis, which retained a similar number of genes to FPKM=10 threshold used elsewhere.\n\nTo examine the choice of alignment software on quantification and differential expression (Figure 1\u2014figure supplement 3h\u2013j), in a second set of analysis we first aligned reads with STAR v2.5.1a (Dobin et al., 2013) rather than TopHat. For each sample, reads were mapped according to \u201c--runThreadN 8 --genomeDir starGenomeDir --outSAMtype BAM SortedByCoordinate\u201d, where starGenomeDir was the directory containing the STAR genome index files. Output BAM files were then processed for quantification and differential expression according to the Cuffdiff approach described above.\n\n### Analysis of ABA ISH database\n\nWhen cross-validating the results of RNA-seq, we examined coronal ISH images from the ABA (Lein et al., 2007) (except for Figure 6d, where sagittal sections were used to visualize dorsal and ventral trisynaptic loops in the same section). To validate genes identified by RNA-seq as enriched in hierarchical clustering subgroups (Figure 2a), ISH expression profiles at the corresponding dorsal or ventral section were examined, and the validation was counted as a success if there was obvious expression by eye in the enriched subgroup (occurring in ~81% of cases; 124/153 genes, Supplementary file 1). Similar approaches were used for mossy cell marker genes (Figures 3b and 4b, Supplementary file 2). Expression in all representative ISH images shown in the text was consistent with other sections near the same anterior-posterior location in the same animal, as well as with at least one additional animal in the ABA (with the exception of Nr2f2 (Figure 5e), which had ubiquitous labeling in sagittal sections, inconsistent with the coronal expression pattern employing a different animal and probe, as well as Inf2 (Figure 6\u2014figure supplement 1), which had only one animal).\n\nTo examine reproducibility of RNA-seq vs. ISH cross-validation, two additional observers were independently shown a randomly chosen subset of images corresponding to enriched genes of Figure 2a and asked to identify the cell class(es) that exhibited expression. This scoring was performed blind to the RNA-seq result and incorporated negative control images wherein RNA-seq expression was not cell class-specific. This blind, outside-observer assessment correctly identified the enriched populations at a similar success rate (77% and 88% of genes for two independent observers, with n = 20/26 and 23/26 randomly selected genes correctly identified respectively).\n\n### Fluorescence imaging\n\nImages of large regions of tissue (i.e., complete dorsal and ventral CA1) were acquired on a whole-slide digital scanner (Pannoramic 250 Flash, Perkin Elmer, Waltham, PA) using a 20x objective. Cellular resolution images were acquired with a confocal microscope (LSM 710 Carl Zeiss Microscopy, Jena, Germany) using a 20x objective. Some images were post-processed in Fiji, including pseudocoloring to adhere to the coloring conventions of different cell classes.\n",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "dd8f5f7c-d7fd-4f48-b4f3-b1ae55ddca6b",
+      "submission_id": "8d7fa4b8-f60a-4b15-b562-82c851e02311",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Eve Marder, Brandeis University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.14997.027](https://doi.org/10.7554/eLife.14997.027)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Hipposeq: a comprehensive RNA-seq database of gene expression in hippocampal principal neurons\" for consideration by eLife. Your article has been reviewed by 2 peer reviewers, and the evaluation has been overseen by Eve Marder as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\n1) Please note that the most important issue that arose during the review is that the reviewers did not have access to the web site with the actual data nor to the analysis code. As you know, eLife will expect you to make both of these public, and it seems reasonable that the reviewers should have access to these in order to make their final judgments of the work. Consequently, along with preparing a revision to be responsive to the issues raised below, please ensure that these are available to us at the next submission. One of the reviewers requested that you use GitHub (or equivalent) rather than FigShare.\n\nSummary:\n\nThis manuscript describes gene expression datasets for several classes of excitatory hippocampal neuron: CA1 (dorsal and ventral), CA2 (dorsal) and CA3 pyramidal cells (dorsal and ventral), DG granule cells (dorsal and ventral) and DG mossy cells (dorsal). The datasets appear to have been carefully generated and analysed, and the results and methods are clearly described. It is likely the datasets will be useful as a \"ground truth\" of population level gene expression profiles of each of the investigated cell types.\n\nPoints for revision:\n\n1) The study claims to have characterised gene expression for every excitatory neuronal class in the hippocampus. While we agree the major classes have been characterised, there are additional excitatory cell classes that were not investigated, e.g. semilunar granule cells in the dentate gyrus (Williams et al., J. Neurosci. 2007; Larimer and Strowbridge, Nature Neuroscience 2010), radiatum giant cells in CA1 (Gulyas et al., Eur. J. Neurosci. 1998; Bullis et al., J. Physiol. 2007), and CA3 granule cells (Szabadics et al., J. Neurosci. 2010). These classes have distinct morphology and biophysical properties. It would not be surprising if their gene expression profiles are also distinct. Given the good evidence for these additional excitatory cell classes, the claims for completeness should be qualified and the excitatory cell classes not characterised should be acknowledged.\n\n2) The replicate correlation score is much lower for granule cells. Is there a known reason for this? Were granule cells sampled from upper or lower blade of the DG? Or both? Is there a difference?\n\n3) Mapping of reads used TopHat. For many applications this has been superseded by STAR (Dobin et al., Bioinformatics 2013) which has been suggested to map more accurately. It might be worth checking whether this gives improvements sufficient to reveal any additional differentially expressed genes.\n\n4) The Hipposeq resource is referred to multiple times in the manuscript, but is not accessible so it is not possible to comment on the \"resource\" aspect of the manuscript. It's also not clear what the resource provides that could not be achieved by downloading the data via GEO and using standard analysis tools. Ease of use? Novel analyses?\n\n5) Materials and methods. '12-hour light/dark cycle'. At what time were the animals sacrificed? If the time differed between animals, does this contribute to any variance in the data?\n\n6) In the last paragraph of the subsection \u201cGenerating a cell- and region-specific RNA-seq database for the hippocampus\u201d. How many cells (mean \u00b1 SD)? I think this is in the Methods, but would be helpful to make clear in the Results section.\n\n7) In the first paragraph of the subsection \u201cManual sorting, library preparation, and sequencing\u201d. Which C57bl/6 strain? If not generated on this background, for how many generations are the lines back-crossed?\n\n8) How was the integrity of the RNA assessed? E.g. was there a threshold RIN value?\n\n9) There is increasing evidence for diversity of CA1 along the radial (deep vs. superficial) axis. Please consider.\n\n10) The figure legends are a bit sparse and could benefit from adding a more detailed description of the data.\n\n11) Figure 1\u2014figure supplement 1. Please label the various panels with the identity of the transgenic line.\n\n12) Although some mouse lines do show fairly specific expression limited to specific subregions, other lines show very broad patterns of expression, particularly for CA2 (Figure 1\u2014figure supplement 1). How did the authors manage to get a CA2-specific population to examine?\n\n13) Did the authors look for inhibitory specific cell markers (e.g. GAD65,67) to judge the level of contamination from inhibitory neurons?\n\n14) Please give a better description of the bar graphs in Figure 2B, 4C, etc. Is the x-axis the cell type? If so, it would be helpful to indicate this on the panels and in the legend. Also, what is the y-axis? FPKM? Please define. The normalized color plots of FPKM are hard to understand, and the description in the Methods are obscure for a non-expert. What is the being normalized? The bar-graph quantification much more useful than the normalized color plots. Perhaps the authors may wish to include a table in the supplemental material listing actual fold differences in expression of various genes?\n",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5fc6144b-8bca-473b-8b88-4fe858a2fd79",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C1",
+      "claim": "The hippocampus is grossly comprised of five excitatory cell populations: granule and mossy cells of the dentate gyrus (DG), and pyramidal cells of CA3, CA2, and CA1.",
+      "claim_type": "EXPLICIT",
+      "source": "The hippocampus is grossly comprised of five excitatory cell populations; namely, granule and mossy cells of the dentate gyrus (DG), and pyramidal cells of CA3, CA2, and CA1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement in the manuscript describing the composition of the hippocampus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "1a7ba5e5-59d1-4c89-b525-2e90a2ef142d",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C2",
+      "claim": "Replicate datasets corresponding to the same class-region pair were well correlated with each other (r = 0.98 \u00b1 0.02, mean \u00b1 SD, Pearson's correlation coefficient).",
+      "claim_type": "EXPLICIT",
+      "source": "Replicate datasets, corresponding to the same class-region pair, were well correlated with each other (r = 0.98 \u00b1 0.02, mean \u00b1 SD, Pearson's correlation coefficient; Figure 1\u2014figure supplement 2a,b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports quantitative correlation coefficients from the RNA-seq data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "3fb7cddb-faf2-4c3a-81e1-e30fa61bee97",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C3",
+      "claim": "Each replicate was devoid of marker gene cohorts associated with interneurons and non-neuronal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "each replicate was devoid of marker gene cohorts associated with interneurons and non-neuronal cells (Figure 1\u2014figure supplement 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports analysis of marker genes showing absence of contaminating cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "d9eee2a3-e84a-44dd-9678-4a13cde24ecb",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C4",
+      "claim": "The initial bifurcation in hierarchical clustering corresponded to a divide between granule cells and non-granule cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using hierarchical clustering (see Materials and methods; Figure 2a) we found the initial bifurcation corresponded to a divide between granule cells and non-granule cells, consistent with previous microarray (Greene et al., 2009) and ISH work (Thompson et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results from hierarchical clustering analysis and cites previous work supporting this finding.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "560fcef8-00d1-47de-97b0-26c4ab57ad40",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C5",
+      "claim": "The second broad division of the dendrogram partitioned mossy cells from pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The second broad division of the dendrogram partitioned mossy cells from pyramidal cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the hierarchical clustering results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "1f1d6f88-475a-46f0-a7d9-cdcba14acedd",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C6",
+      "claim": "The final bifurcation in each limb corresponded to dorsal-ventral differences in each cell class.",
+      "claim_type": "EXPLICIT",
+      "source": "the final bifurcation in each limb corresponded to dorsal-ventral differences in each cell class",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the hierarchical clustering results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "072ddbdb-82ee-434b-ab04-06e21e57832d",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C7",
+      "claim": "RNA-seq marker genes gave good agreement with ABA histological data, correctly predicting the enriched populations in ~81% of cases (124/153 genes where coronal ISH images were available).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, these RNA-seq hits gave good agreement with ABA histological data, correctly predicting the enriched populations in ~81% of cases (124/153 genes where coronal ISH images were available, Figure 2b, Supplementary file 1; see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports quantitative validation of RNA-seq results against ISH data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "75af2d50-6b9c-429c-bf88-a2ce518c6d84",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C8",
+      "claim": "41 genes were identified with >3-fold enrichment in CA2 relative to all other populations.",
+      "claim_type": "EXPLICIT",
+      "source": "This search identified 41 genes with >3-fold enrichment in CA2 relative to all other populations, using relatively conservative search parameters (Figure 3a,b; see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the number of CA2-enriched genes identified from RNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "30e9cbc9-4c11-4b4a-ac58-d09e62733428",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C9",
+      "claim": "66% (n=27/41) of CA2-enriched genes discovered were novel hits not previously identified.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, although some of our retrieved genes were previously identified as enriched in CA2 (Figure 3a), the majority of discovered genes were novel hits (66%, n=27/41; Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports quantitative comparison of newly identified genes versus previously known genes.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "fbf3fff5-27fd-47cb-8e72-9ac092fc8cba",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C10",
+      "claim": "CA3, CA2, and CA1 each had a similar number of enriched genes when restricting comparisons to solely these three cell populations in the dorsal hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing gene expression in dorsal CA3, CA2, and CA1, we found each cell population had a similar number of enriched genes (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results from differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "313c402e-bd9f-4586-a81b-6297053ea908",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C11",
+      "claim": "CA3, CA2, and CA1 regions were approximately equidistant in multidimensional scaling analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Complementing this, applying multidimensional scaling to visualize the distances between CA3, CA2, and CA1 (see Materials and methods), we found that the three regions were approximately equidistant (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results from multidimensional scaling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "764dc1c2-8a17-44f6-9b47-8c4b1dfcdff2",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C12",
+      "claim": "CA2 is largely its own distinct region, rather than being a weighted combination of CA3 and CA1 features.",
+      "claim_type": "EXPLICIT",
+      "source": "These results illustrated that CA2 is largely its own distinct region, rather than being a weighted combination of CA3 and CA1 features; i.e., the physical intermediacy of CA2 did not correlate with transcriptional intermediacy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the multidimensional scaling and enrichment analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "543e50c6-2245-41db-ab08-15e6adbf34fd",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C13",
+      "claim": "Previous work has found one gene enriched in mossy cells (Calb2).",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has found one gene enriched in mossy cells (Calb2) (Fujise et al., 1998), which was recapitulated by our analysis (Figure 4a)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript cites previous literature and confirms the finding with their data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "f2bdba94-0047-4c4a-bb6e-e1f20838f1c0",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C14",
+      "claim": "59 mossy cell-enriched genes in the hippocampus were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "in addition we identified 59 mossy cell-enriched genes in the hippocampus (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the number of mossy cell-enriched genes identified from RNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "d145ca03-6e57-4bc9-a0c6-dff2ab271f8d",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C15",
+      "claim": "95% (n=36/38) of mossy cell-enriched genes from RNA-seq showed agreement with expression in hilar cells in the ABA where coronal images were available.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-validating these genes in the ABA, we found excellent agreement between mossy cell-enriched genes from RNA-seq and expression in the hilar cells (95%; n=36/38 agreement where coronal images available, Supplementary file 2; see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports quantitative validation of RNA-seq results against ISH data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "7a2edc89-4105-4faa-b7ec-939fde571adc",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C16",
+      "claim": "Mossy cells are a transcriptionally heterogeneous population of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to this differential labeling across the hippocampus, differences were also seen in the labeling density at corresponding enriched regions (e.g., cf. Nmb with Thbs2 dorsally and Calb2 with Csf2rb2 ventrally), suggesting that mossy cells are a transcriptionally heterogeneous population of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers heterogeneity from observed differential gene expression patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "3cfe404d-e1a0-4742-a2ac-8653dcdf250d",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C17",
+      "claim": "The dorsal marker gene Lct and the ventral marker Trhr may correspond to tripartite molecular divisions of the dentate gyrus.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work (Fanselow and Dong, 2010) has suggested that domains specified by the dorsal marker gene Lct and the ventral marker Trhr may correspond to tripartite molecular divisions of the dentate gyrus (Figure 5a): here, Lct and Trhr expression respectively represent the dorsal and ventral divisions, whereas the intermediate domain is characterized by weak expression of both genes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript cites previous work proposing this organization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "439d95cf-efe3-4c58-9a10-64261e40dd5d",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C18",
+      "claim": "RNA-seq work recapitulated both Lct and Trhr as marker genes for dorsal and ventral granule cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, our RNA-seq work recapitulated both of these marker genes, suggesting that our data could be used to quantitatively explore the degree and patterns of granule cell heterogeneity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports that their data confirmed previously identified markers.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "a9dc8346-1110-41f0-a8ca-3b2289cd1e6a",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C19",
+      "claim": "Hundreds of genes were differentially expressed between dorsal and ventral poles of dentate gyrus granule cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, hundreds of genes were differentially expressed between these two poles (Figure 5b), and corresponded to large fold changes (Figure 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results from differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "ec2c18ec-3574-47a6-85b2-e2292b858a73",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C20",
+      "claim": "58% (n=33/57) of differentially expressed granule cell genes showed agreement with ISH where coronal images were available.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of these genes were involved in neuronally relevant functions and were cross-validated by ISH (58%, n=33/57 agreement where coronal images available, Figure 5\u2014figure supplement 1, Supplementary file 3; see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports quantitative validation of RNA-seq results against ISH data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "2055e548-c2aa-477f-83e5-345921453398",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C21",
+      "claim": "The genetic domain specified by Lct was recapitulated by multiple dorsal marker genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The genetic domain specified by Lct was recapitulated by multiple dorsal marker genes (Figure 5\u2014figure supplement 1b), including Gsg1l, Spata13, and Stra6 (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports ISH validation showing consistent spatial patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "8151d663-e61f-4125-b386-a9cb95de8a7d",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C22",
+      "claim": "Little agreement was seen between ventral marker genes in terms of spatial domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, little agreement was seen between ventral marker genes: the domain specified by Trhr was found to differ from the patterns observed for other markers (e.g., Cpne7, Grp, and Nr2f2; Figure 5e, Figure 5\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports ISH validation showing inconsistent spatial patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "459cd29d-827e-4c37-8878-8fe54c56b8ce",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C23",
+      "claim": "The genetic boundary defined by Lct may correspond to a transcriptionally well-defined subpopulation, but an equally well-defined ventral subpopulation does not appear to be present.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that the genetic boundary defined by Lct may correspond to a transcriptionally well-defined subpopulation, but an equally well-defined ventral subpopulation does not appear to be present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers this conclusion from the differential spatial patterns observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "4adbee3a-c9bd-4763-87db-3b84b3e34eeb",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C24",
+      "claim": "All novel granule cell marker genes validated by ISH appeared to be expressed in gradients across the long axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, all novel marker genes validated by ISH appeared to be expressed in gradients across the long axis (Figure 5\u2014figure supplement 1b,c; we did not find genes that were selectively expressed in either the upper or lower blades of DG granule cells), suggesting that granule cell transcriptional identity exists in a continuous spectrum in this axis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports ISH observations and infers continuous variation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "6d3de387-6558-4275-85fe-40bd5268365e",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C25",
+      "claim": "Lct is expressed in dorsal CA1 and Trhr is expressed in ventral CA3.",
+      "claim_type": "EXPLICIT",
+      "source": "The granule cell marker genes Lct and Trhr were previously shown to be enriched in other class-region populations; namely, Lct is expressed in dorsal CA1 and Trhr is expressed in ventral CA3 (Cembrowski et al., 2016; Dong et al., 2009; Thompson et al., 2008) (see also Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript cites previous work showing expression patterns.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "2935b7a5-014a-4b47-b99e-a7686ceacbbd",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C26",
+      "claim": "Cadm2 and Mgll were found to be >2 fold dorsally enriched in every dorsal-ventral comparison.",
+      "claim_type": "EXPLICIT",
+      "source": "e.g., the genes Cadm2 and Mgll were found to be >2 fold dorsally enriched in every dorsal-ventral comparison, whereas Resp18 and Efnb2 were found to be ventrally enriched (Figure 6b; corroborated by ABA, Figure 6d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results from differential expression analysis across multiple cell classes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "5fdccff1-99e7-4884-b7e9-4bed2620e14d",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C27",
+      "claim": "Resp18 and Efnb2 were found to be ventrally enriched in every dorsal-ventral comparison.",
+      "claim_type": "EXPLICIT",
+      "source": "e.g., the genes Cadm2 and Mgll were found to be >2 fold dorsally enriched in every dorsal-ventral comparison, whereas Resp18 and Efnb2 were found to be ventrally enriched (Figure 6b; corroborated by ABA, Figure 6d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results from differential expression analysis across multiple cell classes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "73f65cd3-9eab-4b73-97cc-7179145497bb",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C28",
+      "claim": "In almost every possible comparison (n=5/6 pairwise enrichment combinations and 2/2 triplicate enrichment combinations), the number of enriched genes that were shared across cell classes in a region-specific manner were significantly greater than that expected by chance.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in almost every possible comparison (n=5/6 pairwise enrichment combinations and 2/2 triplicate enrichment combinations), the number of enriched genes that were shared across cell classes in a region-specific manner were significantly greater than that expected by chance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports statistical comparison to a null model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "15c94899-fcb0-4409-bae3-951b7e0a4867",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C29",
+      "claim": "37 genes were found enriched in a region-specific manner across all principal cells of the trisynaptic loop.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined the ontologies associated with the 37 genes that were enriched across all dorsal-ventral comparisons (i.e., the n=12 dorsally and 25 ventrally enriched genes from the triplicate comparisons of Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the number of genes identified from differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "621410ed-c111-473c-8718-c87c3e58a55b",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C30",
+      "claim": "Many genes that emerged as being region- but not class-enriched corresponded to cellular adhesion and axon guidance.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the enriched genes spanned a variety of ontologies, many genes that emerged as being region- but not class-enriched corresponded to cellular adhesion and axon guidance; for example, the cellular adhesion molecules Cadm1, Cadm2, the ephrins/receptors Epha5, Epha7, Efnb2, as well as Dagla, Odz4, Timp2 and Negr1 (Figure 6e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports ontology analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "e157fbbb-0423-4815-bc0a-73325fccdc49",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C31",
+      "claim": "43% (n=16/37) of genes identified as regionally enriched in all principal cells of the trisynaptic loop were identified as differentially expressed in the dorsal-ventral axis of MEC with an identical directionality.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, of the 37 genes identified as regionally enriched in all principal cells of the trisynaptic loop, 43% (n=16/37) were identified as differentially expressed in the dorsal-ventral axis of MEC with an identical directionality (Figure 6e, orange text).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports comparison with published MEC RNA-seq data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "888e9134-3f45-40ab-b9e3-64f93b7b45ce",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C32",
+      "claim": "WGCNA identified eight gene modules that were enriched in various subpopulations of hippocampal excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the top 1000 most variable genes from the full hippocampal dataset, and using WGCNA, identified eight gene modules that were enriched in various subpopulations of hippocampal excitatory neurons (Figure 7a,b; see Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results from WGCNA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "61491c42-9592-42fe-a470-8aba9667fdf5",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C33",
+      "claim": "The KEGG annotation 'Long Term Potentiation' was enriched for distinct modules associated with DG granule cells, CA1 pyramidal cells, and CA2/3 pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the KEGG annotation 'Long Term Potentiation' was enriched for distinct modules associated with DG granule cells, CA1 pyramidal cells, and CA2/3 pyramidal cells (Figure 7c), illustrating that specific genes that underlie LTP vary between cell classes despite all cell classes expressing genes related to LTP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results from ontology enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "128e43c6-43de-412c-840d-773a6b4c70a3",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C34",
+      "claim": "Both mossy cells and dorsal dentate gyrus granule cells were enriched for genes associated with Parkinson's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, this approach also enabled us to identify specific modules with disease annotations; for example, both mossy cells and dorsal dentate gyrus granule cells were enriched for genes associated with disease terms (e.g., Parkinson's; Figure 7d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports results from disease ontology enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "371aebf1-77c0-4ff5-b4b8-08816505a156",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C35",
+      "claim": "On average, 112 \u00b1 6 cells per biological replicate were purified by manual selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The sorted sample underwent library preparation and sequencing, the resulting raw RNA-seq reads were aligned, and expression was quantified and analyzed across samples (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports the number of cells used in the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "9037d6cd-bd07-4afe-bde5-d40530aee11c",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C36",
+      "claim": "Three biological replicates were ascertained for each dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess reproducibility, three biological replicates were ascertained for each dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "be98630d-6496-4650-8aca-eff061911a01",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C37",
+      "claim": "77.5 \u00b1 1.0% (29.6 \u00b1 2.0 million per replicate) of all reads aligned at least once to either the annotated transcriptome or genome.",
+      "claim_type": "EXPLICIT",
+      "source": "With these settings, 77.5 \u00b1 1.0% (29.6 \u00b1 2.0 million per replicate, n = 24) of all reads aligned at least once to either the annotated transcriptome or genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports alignment statistics from RNA-seq data processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "5da05c83-c42e-4366-a2ed-ac0950513324",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C38",
+      "claim": "FPKM values for ERCC spike-in controls were highly reproducible across replicates (r = 0.94 \u00b1 0.01, n = 24 replicates).",
+      "claim_type": "EXPLICIT",
+      "source": "When considering spike-in controls, FPKM values were found to be highly reproducible across replicates (r = 0.94 \u00b1 0.01, n = 24 replicates, Pearson correlation coefficient).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports correlation analysis of spike-in controls.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "576ff3c6-1338-4f55-bf28-f27f936d7908",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C39",
+      "claim": "A conventional threshold of FDR <0.05 was used for differential expression.",
+      "claim_type": "EXPLICIT",
+      "source": "General analysis conventions were as follows: a conventional threshold of FDR <0.05 was used for differential expression, allowing both under- and overexpressed genes to be identified (i.e., two-sided)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the statistical threshold used in analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "2804c68c-5b76-4687-9936-6aee3f37cfbe",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C40",
+      "claim": "Gene expression was required to obey FPKM>10 in at least one population to be included in differential expression or enriched population analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "gene expression was required to obey FPKM>10 in at least one population to be included in differential expression or enriched population analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the filtering criteria used in analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "9dbb3a18-dcb5-4d3f-b2ac-b6fe28220e94",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C41",
+      "claim": "Raw and processed RNA-seq datasets were deposited in the National Center for Biotechnology Information (NCBI) Gene Expression Omnibus (GEO), accession number GSE74985.",
+      "claim_type": "EXPLICIT",
+      "source": "Raw and processed RNA-seq datasets were deposited in the National Center for Biotechnology Information (NCBI) Gene Expression Omnibus (GEO), accession number GSE74985",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states where the data were deposited.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "78929aac-fc18-4c38-94e0-8ced8094a2c2",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C42",
+      "claim": "The transcriptional distance between dorsal and ventral granule cells is similar to that between different populations of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the transcriptional distance between dorsal and ventral granule cells is similar to that between different populations of cells (Figure 2a), a finding similar to that found between CA3 and CA1 pyramidal cells (Figure 2a) (Cembrowski et al., 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript interprets hierarchical clustering results and cites previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "f88c16b2-c764-4823-a709-c8b8536e2482",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C43",
+      "claim": "Many region-enriched genes are involved in cell adhesion and axon guidance.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that many of these genes are involved in cell adhesion and axon guidance, in conjunction with the observation that they are enriched along the dorsal-ventral axis in multiple areas of the brain, suggests that they may generally be used for maintaining polarity in the mature brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers functional implications from gene ontology analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "06be2398-56d1-4a68-a0b2-89291287a536",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C44",
+      "claim": "Region-enriched genes may be used for maintaining polarity in the mature brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that many of these genes are involved in cell adhesion and axon guidance, in conjunction with the observation that they are enriched along the dorsal-ventral axis in multiple areas of the brain, suggests that they may generally be used for maintaining polarity in the mature brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates on the functional role of region-enriched genes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "a36129fd-5f90-4686-9756-cf30547747e7",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C45",
+      "claim": "During development, gradients of gene expression are used for proper patterning of neural circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "During development, gradients of gene expression are used for proper patterning of neural circuits (Sansom and Livesey, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites established knowledge from previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "b9e1d253-354e-43e5-9938-63fb0c9b87bc",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C46",
+      "claim": "Region-enriched genes may reflect the mature counterpart that actively maintains spatial identity.",
+      "claim_type": "EXPLICIT",
+      "source": "in a similar fashion, these genes may reflect the mature counterpart that actively maintains spatial identity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates on the functional role of region-enriched genes by analogy to developmental processes.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "d6126843-9fc2-4108-8930-84d771e10fd1",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C47",
+      "claim": "CA3 pyramidal cells have been shown to conform to discrete subpopulations.",
+      "claim_type": "EXPLICIT",
+      "source": "for example, CA3 pyramidal cells have been shown to conform to discrete subpopulations (Thompson et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous work on CA3 organization.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "569ca4a9-f960-426f-bb4f-146527fd0d61",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C48",
+      "claim": "CA1 pyramidal cells, DG mossy cells, and DG granule cells do not exhibit clear subdomain organization.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas CA1 pyramidal cells (Cembrowski et al., 2016), DG mossy cells (Figure 4), and DG granule cells (Figure 5) do not exhibit clear subdomain organization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript cites previous work and their own data showing lack of discrete subdomains.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "13a01708-0c7e-4d15-89ca-06ac4b0051a8",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C49",
+      "claim": "The results likely underestimate the total amount of variability in principal cells of the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to emphasize that our results, although illustrating a high degree of transcriptional heterogeneity in principal cells of the hippocampus, likely underestimate the total amount of variability for several reasons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript acknowledges limitations of their approach.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "dbdf0cea-b6bf-45f4-8fbe-56447dc3b64e",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C50",
+      "claim": "Comparing the dorsal and ventral poles may miss differences present along other dimensions, as well as differences present at spatially intermediate locations.",
+      "claim_type": "EXPLICIT",
+      "source": "First, comparing the dorsal and ventral poles may miss differences present along other dimensions, as well as differences present at spatially intermediate locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript discusses limitations of their sampling approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "5d57f97c-8d58-49ec-a1ed-c667b4a7048a",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C51",
+      "claim": "The population-level approach may miss heterogeneity that is present at a subpopulation or single-cell level.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, our population-level approach may miss heterogeneity that is present at a subpopulation or single-cell level, including transcriptional signatures associated with specialized but sparse excitatory cell classes (e.g., radiatum giant cells (Gulyas et al., 1998), semilunar granule cells (Williams et al., 2007), and CA3 granule cells (Szabadics et al., 2010)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript discusses limitations of bulk RNA-seq and cites examples of sparse cell types.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "68ff1dc1-2ba9-474b-ad84-737556562012",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C52",
+      "claim": "Transcriptional properties may vary in ways other than geographical location, such as differential gene expression for cells of the same region that target different downstream locations.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, transcriptional properties may vary in ways other than geographical location; for example, differential gene expression for cells of the same region that target different downstream locations (Cembrowski et al., 2016; Sorensen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript discusses additional sources of variability and cites previous work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "842a29ab-375f-4d19-b61e-ad77c5699c78",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C53",
+      "claim": "All data presented are accessible on the Hipposeq website (http://hipposeq.janelia.org).",
+      "claim_type": "EXPLICIT",
+      "source": "All data presented here are accessible on the Hipposeq website (http://hipposeq.janelia.org), an interactive database that allows user-friendly analysis and visualization of gene expression data for individual genes, cohorts of genes, and entire transcriptomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the availability of their data resource.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "80c695cb-af09-4967-b84c-3fc3884fe703",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C54",
+      "claim": "RNA-seq offers advantages that circumvent traditional issues associated with ISH, including providing class-specific data with a large dynamic range.",
+      "claim_type": "EXPLICIT",
+      "source": "Our RNA-seq approach offers advantages that circumvent traditional issues associated with ISH; namely, providing class-specific data with a large dynamic range, helping to circumvent confounds associated with image-based analyses of gene expression that can be limited by changes in cell density and/or labeling across sections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript discusses advantages of their RNA-seq approach.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "90c8da96-bdd3-4f16-8f3c-53a5b1de7423",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C55",
+      "claim": "RNA-seq has limitations relative to ISH, including an inherent lack of spatial information.",
+      "claim_type": "EXPLICIT",
+      "source": "Of course, RNA-seq also has limitations relative to ISH, including an inherent lack of spatial information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript acknowledges limitations of RNA-seq.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "480524ce-7d9d-4c3f-adca-20ad8ac4979a",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C56",
+      "claim": "The combination of Hipposeq and the ABA ISH atlas provides a powerful set of tools that enables quantitative and histological whole genome insight into gene expression in the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, the combination of Hipposeq and the ABA ISH atlas provides a powerful set of tools that enables quantitative and histological whole genome insight into gene expression in the hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript discusses the complementary nature of their resource with existing resources.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "a3fc78cf-c8ab-4bb9-8bc5-5f5b06524821",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C57",
+      "claim": "Mice were housed on a 12-hr light/dark cycle with ad libitum food and water access.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice were housed on a 12-hr light/dark cycle with ad libitum food and water access.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes animal housing conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "5e883cd1-e7ed-474a-ba66-654a8b828073",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C58",
+      "claim": "Experimental procedures were approved by the Institutional Animal Care and Use Committee at the Janelia Research Campus (protocol #14\u2013118).",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental procedures were approved by the Institutional Animal Care and Use Committee at the Janelia Research Campus (protocol #14\u2013118).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states ethical approval for experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "a7fa59dc-597f-474b-acb5-3ec51066f70c",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C59",
+      "claim": "All transgenic mice used were generated by the Gene Expression Nervous System Atlas (GENSAT) project.",
+      "claim_type": "EXPLICIT",
+      "source": "All transgenic mice used (namely, granule cells from both blades of the DG: Rbp4-Cre KL100, mossy cells of the hilus: Lypd1-Cre NR151, CA3 and CA2 pyramidal cells: Mpp3-Cre KG118, CA1 pyramidal cells: Vipr2-Cre KE2) were generated by the Gene Expression Nervous System Atlas (GENSAT) project (Gong et al., 2003; Gong et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the source of transgenic lines and cites the GENSAT project.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "64b58dbf-6025-46a5-a451-0d060bfe7821",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C60",
+      "claim": "Transgenic lines were maintained on a C57bl/6J background, with each line backcrossed at least one generation prior to use.",
+      "claim_type": "EXPLICIT",
+      "source": "Transgenic lines were maintained on a C57bl/6J background, with each line backcrossed at least one generation prior to use (note that strain-specific gene expression differences are likely minor [Sandberg et al., 2000]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the genetic background of mice and cites work on strain differences.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "448711a8-646f-4473-be81-4bd8e91f89f7",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C61",
+      "claim": "Cre expression was reported by an Ai9 (tdTomato) mouse cross.",
+      "claim_type": "EXPLICIT",
+      "source": "Cre expression was reported by an Ai9 (tdTomato) mouse cross (Madisen et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the reporter line used and cites the source.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "74e5e473-abac-4d31-8639-c56227151f8f",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C62",
+      "claim": "Double-positive mice of either sex were sacrificed at age P26-P35.",
+      "claim_type": "EXPLICIT",
+      "source": "double-positive mice of either sex were sacrificed (age P26-P35, either single- or group-housed) within a 3 hr time window approximately midway through the light cycle",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "27503f22-5940-4f61-90fb-ddeeea34f4f3",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C63",
+      "claim": "Manual sorting to purify for fluorescent neurons from microdissected slices was performed according to previous methods.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, manual sorting to purify for fluorescent neurons from microdissected slices was performed according to previous methods (Hempel et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the cell purification method and cites the source protocol.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "31600341-aed3-42d0-8bc6-0dd1a03d981b",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C64",
+      "claim": "Biological replicates with within-class Pearson correlation coefficient >0.90 were retained.",
+      "claim_type": "EXPLICIT",
+      "source": "For each cell class/region combination, three biological replicates (i.e., cell class/region from a different animal of the same genotype) with sufficient reproducibility (within-class Pearson correlation coefficient >0.90, a criterion determined after analysis) were obtained; biological replicates were re-obtained for datasets for correlations <0.90.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the quality control criteria for datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "b3177d92-a2c3-40f0-99ad-b55f42be4b6a",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C65",
+      "claim": "Within-class Pearson correlation coefficient >0.90 was the only exclusion criterion for datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "This was the only exclusion criterion for datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the exclusion criteria used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "e1099a80-3696-478b-9c33-212277c83d4a",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C66",
+      "claim": "No technical replicates were used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "No technical replicates were used in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "52b70726-13fd-4fd4-8f18-8320827f0d36",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C67",
+      "claim": "Three biological replicates have been previously shown to be sufficient in detecting differences in gene expression known a priori.",
+      "claim_type": "EXPLICIT",
+      "source": "Three biological replicates have been previously shown to be sufficient in detecting differences in gene expression known a priori (Cembrowski et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous work justifying the number of replicates.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "077bf15d-f51f-461b-98c7-41af88764625",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C68",
+      "claim": "37.9 \u00b1 1.3 million reads per replicate were generated (n = 24 replicates).",
+      "claim_type": "EXPLICIT",
+      "source": "Reads for each library (37.9 \u00b1 1.3 million per replicate, n = 24 replicates) were mapped using TopHat v2.0.6",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports sequencing depth.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "46859388-53d0-4979-ae69-2228a97c3f58",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C69",
+      "claim": "Reads were mapped using TopHat v2.0.6 against the mouse genome build NCBIM37 (mm9) combined with sequences corresponding to ERCC spike-in controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Reads for each library (37.9 \u00b1 1.3 million per replicate, n = 24 replicates) were mapped using TopHat v2.0.6 (http://ccb.jhu.edu/software/tophat/index.shtml) (Trapnell et al., 2009) against the mouse genome build NCBIM37 (mm9) combined with sequences corresponding to ERCC spike-in controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the alignment method and reference genome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "95ea7b43-681e-429a-8326-ea647fb9e29e",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C70",
+      "claim": "Quantification and differential expression of the annotated transcriptome was performed using Cuffdiff v2.1.1.",
+      "claim_type": "EXPLICIT",
+      "source": "After mapping, quantification and differential expression of the annotated mouseGtf.gtf was performed using Cuffdiff v2.1.1 (http://cole-trapnell-lab.github.io/cufflinks/) (Trapnell et al., 2010) using the accepted_hits.bam files for all replicates, with three biological replicates used for each dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the quantification and differential expression method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "7dfe1675-4c98-4187-b8e7-0900d788fdf6",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C71",
+      "claim": "The resulting data were analyzed in the R environment using a combination of cummeRbund v3.0 and custom scripts.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting data were analyzed in the R environment using a combination of cummeRbund v3.0 (http://compbio.mit.edu/cummeRbund/) (Goff et al., 2013) and custom scripts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the analysis software used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "b6c91b63-4a18-44e4-a61d-0d33d00108e7",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C72",
+      "claim": "Analysis scripts can be downloaded from Github (https://github.com/cembrowskim/hipposeq.git).",
+      "claim_type": "EXPLICIT",
+      "source": "analysis scripts can be downloaded from Github (https://github.com/cembrowskim/hipposeq.git).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states where analysis code is available.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "20ed00db-e213-41fc-86ff-4c4adb357146",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C73",
+      "claim": "For hierarchical clustering of datasets, whole-transcriptome averaged FPKM values were processed by adding a pseudocount of 1 to all values, log10 transformed, and normalized on a sample-by-sample basis by the sample sum of the transformed FPKM value.",
+      "claim_type": "EXPLICIT",
+      "source": "For hierarchical clustering of datasets (Figure 2a), whole-transcriptome averaged FPKM values were processed by adding a pseudocount of 1 to all values, log10 transformed, and normalized on a sample-by-sample basis by the sample sum of the transformed FPKM value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the data processing for hierarchical clustering.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "90b0df86-8892-4075-bbce-e7d9e0a2f198",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C74",
+      "claim": "The pairwise Jensen-Shannon distance was calculated across samples, and agglomerative clustering was performed on the distance matrix using complete linkage.",
+      "claim_type": "EXPLICIT",
+      "source": "The pairwise Jensen-Shannon distance was calculated across samples, and agglomerative clustering was performed on the distance matrix using complete linkage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the clustering method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "081f69b9-d518-4e55-bcb3-4e63451fd0ac",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C75",
+      "claim": "To validate genes identified by RNA-seq as enriched in hierarchical clustering subgroups, ISH expression profiles at the corresponding dorsal or ventral section were examined, and the validation was counted as a success if there was obvious expression by eye in the enriched subgroup.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate genes identified by RNA-seq as enriched in hierarchical clustering subgroups (Figure 2a), ISH expression profiles at the corresponding dorsal or ventral section were examined, and the validation was counted as a success if there was obvious expression by eye in the enriched subgroup (occurring in ~81% of cases; 124/153 genes, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the validation method for RNA-seq results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "7eaf9214-f8ce-4218-bc6a-81f4cc5f92ff",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C76",
+      "claim": "Blind, outside-observer assessment correctly identified the enriched populations at a similar success rate (77% and 88% of genes for two independent observers).",
+      "claim_type": "EXPLICIT",
+      "source": "This blind, outside-observer assessment correctly identified the enriched populations at a similar success rate (77% and 88% of genes for two independent observers, with n = 20/26 and 23/26 randomly selected genes correctly identified respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports independent validation of their ISH assessment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "a5976762-3b6c-443e-beed-e453dd40e41a",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C77",
+      "claim": "Images of large regions of tissue were acquired on a whole-slide digital scanner (Pannoramic 250 Flash, Perkin Elmer) using a 20x objective.",
+      "claim_type": "EXPLICIT",
+      "source": "Images of large regions of tissue (i.e., complete dorsal and ventral CA1) were acquired on a whole-slide digital scanner (Pannoramic 250 Flash, Perkin Elmer, Waltham, PA) using a 20x objective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the imaging method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "2b91cd32-e38f-44d1-a1e8-e0659207e5a5",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C78",
+      "claim": "Cellular resolution images were acquired with a confocal microscope (LSM 710 Carl Zeiss Microscopy) using a 20x objective.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular resolution images were acquired with a confocal microscope (LSM 710 Carl Zeiss Microscopy, Jena, Germany) using a 20x objective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the imaging method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "e2db2c5b-c743-4a39-b825-c71bc8a84d0d",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C79",
+      "claim": "The initial bifurcation in hierarchical clustering corresponded to a divide between granule cells and non-granule cells, consistent with previous microarray and ISH work.",
+      "claim_type": "EXPLICIT",
+      "source": "Using hierarchical clustering (see Materials and methods; Figure 2a) we found the initial bifurcation corresponded to a divide between granule cells and non-granule cells, consistent with previous microarray (Greene et al., 2009) and ISH work (Thompson et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports hierarchical clustering results and cites previous work showing similar findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "cc18ae9c-e9b0-436f-bf0d-708d383197ce",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C80",
+      "claim": "The degree of within-class similarity was frequently comparable to across-class similarity.",
+      "claim_type": "EXPLICIT",
+      "source": "although the degree of within-class similarity was frequently comparable to across-class similarity (Cembrowski et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports observation from hierarchical clustering and cites previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "032876aa-bdab-4fbb-add8-3cbaaa503f91",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C81",
+      "claim": "RNA-seq provides a quantitative, whole genome characterization of gene expression for the major excitatory neuronal classes of the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we used next-generation RNA sequencing (RNA-seq) to produce a quantitative, whole genome characterization of gene expression for the major excitatory neuronal classes of the hippocampus; namely, granule cells and mossy cells of the dentate gyrus, and pyramidal cells of areas CA3, CA2, and CA1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the scope and approach of their study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "b1ebe5b0-d673-4828-832f-cfac3a8621c9",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C82",
+      "claim": "For the canonical cell classes of the trisynaptic loop, transcriptomes were profiled at both dorsal and ventral poles.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, for the canonical cell classes of the trisynaptic loop, we profiled transcriptomes at both dorsal and ventral poles, producing a cell-class- and region-specific transcriptional description for these populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "308737b9-d88f-4dc0-991a-78bdeac61c1d",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C83",
+      "claim": "This dataset clarifies the transcriptional properties and identities of lesser-known cell classes.",
+      "claim_type": "EXPLICIT",
+      "source": "This dataset clarifies the transcriptional properties and identities of lesser-known cell classes, and moreover reveals unexpected variation in the trisynaptic loop across the dorsal-ventral axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the findings of their study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "0f58525f-a40d-498a-8263-1d70dc0ff5d2",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C84",
+      "claim": "This dataset reveals unexpected variation in the trisynaptic loop across the dorsal-ventral axis.",
+      "claim_type": "EXPLICIT",
+      "source": "This dataset clarifies the transcriptional properties and identities of lesser-known cell classes, and moreover reveals unexpected variation in the trisynaptic loop across the dorsal-ventral axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the findings of their study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "893852b2-959a-4ec7-9ff0-1ec24d448603",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C85",
+      "claim": "Hipposeq provides analysis and visualization of hippocampal RNA-seq data and will act as a roadmap relating molecules to cells, circuits, and computation in the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "We have created a public resource, Hipposeq (http://hipposeq.janelia.org), which provides analysis and visualization of these data and will act as a roadmap relating molecules to cells, circuits, and computation in the hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the purpose and utility of their public resource.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "115ee1dc-b6d5-480e-9bc7-5db0be450e84",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C86",
+      "claim": "Gene expression profiling can be a powerful tool to understand the functionality and organization of cells and networks.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene expression profiling can be a powerful tool to understand the functionality and organization of cells and networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states general knowledge about gene expression profiling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "f469d3f5-4637-44ca-83b2-3fcd67da7473",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C87",
+      "claim": "By relating specific enriched or depleted genes to their corresponding ontologies in a given population, functional hypotheses can be generated at the intrinsic level and network level.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, by relating the specific enriched or depleted genes to their corresponding ontologies in a given population, functional hypotheses can be generated at the intrinsic level (e.g., voltage-gated channel subunits) and network level (e.g., ligand-receptor interactions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes how gene expression profiling can be used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "70d04d7d-63b0-46db-9e87-9c2192ec97d1",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C88",
+      "claim": "Gene expression profiles can be used as a means to genetically delineate different populations of cells, either across classes or within a given class.",
+      "claim_type": "EXPLICIT",
+      "source": "A different approach, agnostic to functional correlates of genes, can be taken by using gene expression profiles as a means to genetically delineate different populations of cells, either across classes or within a given class.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes how gene expression profiling can be used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "04eb4617-70cb-4038-a2b6-f03ba8b5b98b",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C89",
+      "claim": "Gene expression profiling simultaneously clarifies complementary aspects of molecular, cellular, and circuit properties of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, gene expression profiling simultaneously clarifies complementary aspects of molecular, cellular, and circuit properties of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the utility of gene expression profiling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "75e8197b-eba9-4648-92f2-d8583891e1c8",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C90",
+      "claim": "A variety of transgenic mice have emerged over the last decade, which enables access to genetically defined populations of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "A variety of transgenic mice have emerged over the last decade (Gong et al., 2003; 2007; Taniguchi et al., 2011), which enables access to genetically defined populations of neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous work on transgenic mouse development.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "ffb8dfea-29c7-4ec1-9c4e-a2b481f18939",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C91",
+      "claim": "A variety of techniques now exist for purifying labeled cells from surrounding tissue to obtain cell-class-specific transcriptomes.",
+      "claim_type": "EXPLICIT",
+      "source": "a variety of techniques now exist for purifying labeled cells from surrounding tissue (Okaty et al., 2011a) to obtain cell-class-specific transcriptomes (Okaty et al., 2011b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous work on cell purification techniques.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "ce5ace8f-aea7-4dba-ae6e-2bd9fdf7d0de",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C92",
+      "claim": "Large-scale, quantitative gene expression profiling across neurons has typically been performed by microarray.",
+      "claim_type": "EXPLICIT",
+      "source": "Although large-scale, quantitative gene expression profiling across neurons has typically been performed by microarray (Belgard et al., 2011; Siegert et al., 2012; Sugino et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous work using microarray technology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "253869cb-4161-4450-b6cb-344f90de39ba",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C93",
+      "claim": "RNA-seq is technically superior to microarray and is finding application in the neurosciences.",
+      "claim_type": "EXPLICIT",
+      "source": "more recently the technically superior RNA-seq (Shin et al., 2014) is finding application in the neurosciences (Cembrowski et al., 2016; Zeisel et al., 2015; Zhang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous work on RNA-seq applications.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "6dfe9a17-493c-4317-9bb3-02830a74be1f",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C94",
+      "claim": "The mouse Allen Brain Atlas provides histological information from in situ hybridization assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Complementing these quantitative profiling methods is the mouse Allen Brain Atlas (ABA) (Lein et al., 2007), providing histological information from in situ hybridization (ISH) assays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites the Allen Brain Atlas as a complementary resource.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "01147c85-b063-4ab3-b949-1dd752566fa3",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C95",
+      "claim": "Microarray work has been used to study CA1 pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Microarray work has been used to study CA1 pyramidal cells (Kamme et al., 2003; Sugino et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous microarray studies on CA1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "3e904186-74fd-4079-9f1d-393818249b06",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C96",
+      "claim": "Microarray work has been used to study cells of the trisynaptic loop.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as cells of the trisynaptic loop (Deguchi et al., 2011; Greene et al., 2009; Lein et al., 2004; Nakamura et al., 2011; Zhao et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous microarray studies on the trisynaptic loop.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "b82f6023-d9c2-4af8-a66e-a8e6f76c55a2",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C97",
+      "claim": "Mining of the ABA has revealed molecularly defined subregions in multiple principal cell classes.",
+      "claim_type": "EXPLICIT",
+      "source": "Mining of the ABA has revealed molecularly defined subregions in multiple principal cell classes (Dong et al., 2009; Fanselow and Dong, 2010; Thompson et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous work mining the Allen Brain Atlas.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "4b8a028a-42e3-4cb5-826b-7ce8e7ca4480",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C98",
+      "claim": "RNA-seq work has been used to study CA1 pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Most recently, RNA-seq work has been used to study CA1 pyramidal cells (Cembrowski et al., 2016; Zeisel et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous RNA-seq studies on CA1.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "d72378d2-fde7-45bf-ada9-03d3e7daeeb0",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C99",
+      "claim": "Previous work has helped to identify genetic differences within and across regions and revealed differences within canonical neuronal populations.",
+      "claim_type": "EXPLICIT",
+      "source": "This work has helped to identify genetic differences within and across regions and as well revealed differences within canonical neuronal populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes findings from previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "3a467a7c-f2f7-4c1c-bf4f-dfea1376c375",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C100",
+      "claim": "Previous transcriptional profiling has predominantly focused on CA1 and CA3 pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous transcriptional profiling has predominantly focused on CA1 and CA3 pyramidal cells",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the focus of previous work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "482dcaf7-2e2e-4fb6-a479-96e8bc079ea9",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C101",
+      "claim": "Markedly less work has examined DG granule cells and CA2 pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "markedly less work has examined DG granule cells and CA2 pyramidal cells (but see Fanselow and Dong, 2010; Lein et al., 2004; 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes gaps in previous work and cites limited studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "6cdc4553-0472-4d0c-bfac-32c58e5c95d6",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C102",
+      "claim": "No profiling has been performed for DG mossy cells.",
+      "claim_type": "EXPLICIT",
+      "source": "and no profiling has been performed for DG mossy cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies a gap in previous work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "19ebade4-4e03-4cc1-8ab8-d229e612dd1a",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C103",
+      "claim": "Recent work has suggested that DG granule cells may be a heterogeneous population along the dorsal-ventral axis, but this has not been systematically investigated.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, recent work has suggested that DG granule cells may be a heterogeneous population along the dorsal-ventral axis (Fanselow and Dong, 2010), but this has not been systematically investigated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous work and identifies a gap in systematic investigation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "aa4409a1-25e5-4ccb-8020-4aedc0509e6b",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C104",
+      "claim": "The technical superiority of RNA-seq may reveal governing organizational rules that may have not been resolved with ISH or microarray.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps most importantly, the technical superiority of RNA-seq may reveal governing organizational rules that may have not been resolved with ISH or microarray (Cembrowski et al., 2016), suggesting that a systematic RNA-seq based approach may provide unparalleled insight into the transcriptional organization of the hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous work and speculates on the advantages of RNA-seq.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "ae15b7d6-a085-4390-9961-38607b6aa414",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C105",
+      "claim": "A systematic RNA-seq based approach may provide unparalleled insight into the transcriptional organization of the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that a systematic RNA-seq based approach may provide unparalleled insight into the transcriptional organization of the hippocampus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates on the potential of their approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "4ceb6eb5-a453-4fc6-97f8-d12eec660999",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C106",
+      "claim": "The marker genes uncovered serve as candidates for obtaining genetic access to well-defined populations of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the marker genes uncovered here serve as candidates for obtaining genetic access to well-defined populations of neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript discusses the utility of identified marker genes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "ffe1a1d6-cd28-4ed2-ba0b-47a9e9bdb65b",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C107",
+      "claim": "The Cre lines used for labeling cells for transcriptional profiling may already provide sufficient genetic access to many excitatory subpopulations of the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "We emphasize that the Cre lines used here for labeling cells for transcriptional profiling (Figure 1\u2014figure supplement 1) may already provide sufficient genetic access to many excitatory subpopulations of the hippocampus",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript discusses the utility of existing Cre lines.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "0136e962-d7fa-471b-a195-58233952428b",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C108",
+      "claim": "This work offers both existing and new ways to selectively target and manipulate specific populations of neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "thus, this work offers both existing and new ways to selectively target and manipulate specific populations of neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript discusses the utility of their work for future experiments.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "766212ea-a668-4117-9e53-ef171267cc13",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C109",
+      "claim": "Novel marker genes can be used for hypothesis generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, many of the marker genes identified here can be tied to specific functionality (e.g., Figure 3b, 4b, Figure 5\u2014figure supplement 1a), allowing novel marker genes to be used for hypothesis generation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript discusses the utility of identified marker genes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "282f7144-e9ec-4a34-abc8-7050aa5e98ba",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C110",
+      "claim": "Hypotheses generated from marker genes can be investigated through a variety of perturbations combined with other experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "These hypotheses can be investigated through a variety of perturbations (e.g., siRNA, knockouts, or CRISPR-Cas gene editing) combined with other experiments (e.g., physiology, behavior).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript discusses potential experimental approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "6f0ba638-2af3-481b-b95e-23d419b13d7f",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C111",
+      "claim": "Many marker genes identified are annotated as specific disease-related genes, which can help to reveal both the molecules and cell classes to examine in pathological conditions and disease models.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, many marker genes identified here are annotated as specific disease-related genes (e.g., Figure 7b,d), which can help to reveal both the molecules and cell classes to examine in pathological conditions and disease models.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript discusses the utility of identified marker genes for disease research.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "e99cc42e-6e11-46c6-94eb-82230bc3efa7",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C112",
+      "claim": "Transcriptional differences across classes of the trisynaptic loop have been identified and appreciated for some time.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcriptional differences across classes of the trisynaptic loop have been identified and appreciated for some time (e.g., Greene et al., 2009; Lein et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous work on transcriptional differences.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "54839ff9-cdb7-4ba5-9a81-57983dd235f5",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C113",
+      "claim": "Transcriptional differences across classes are likely fundamental in producing across-class variability in morphology, physiology, and connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it is likely that these transcriptional differences are fundamental in producing across-class variability in morphology, physiology, and connectivity, ultimately underlying the diverse and distinct roles that the different cell classes are believed to play in hippocampal processing (Mizuseki et al., 2012; Neunuebel and Knierim, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript infers functional implications and cites previous work on hippocampal processing.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "f5d3634b-e6e2-4557-979b-b205fc8be01c",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "claim_id": "C114",
+      "claim": "Across-region differences at a cell-class-specific level have recently been identified to be present in CA3 and CA1 pyramidal cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Across-region differences, at a cell-class-specific level, have recently been identified to be present in CA3 and CA1 pyramidal cell populations (Cembrowski et al., 2016; Thompson et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous work on regional differences.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "167d3384-61b5-4380-aa37-b57812c0d614",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "RNA-seq data generation and quality control demonstrated high reproducibility and cell-type specificity. Biological replicates showed high correlation (r=0.98\u00b10.02), ERCC spike-in controls were reproducible (r=0.94\u00b10.01), samples were devoid of interneuron and non-neuronal markers, and ~112 cells per replicate were used with three biological replicates per dataset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C35-C38, C64-C70 collectively demonstrate rigorous quality control and reproducibility. The high correlation coefficients, absence of contaminating cell types, and consistent methodology across replicates provide strong evidence for data quality. The use of ERCC spike-ins and multiple biological replicates follows best practices for RNA-seq experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "a9b6799f-3083-4f49-9e75-448e29627a96",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Hierarchical clustering revealed the transcriptional organization of hippocampal excitatory neurons, with the initial bifurcation separating granule cells from non-granule cells, followed by separation of mossy cells from pyramidal cells, and final bifurcations corresponding to dorsal-ventral differences. RNA-seq marker genes showed ~81% agreement with ISH validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C7, C79-C80 are well-supported by hierarchical clustering analysis and cross-validation with ISH data. The 81% validation rate (124/153 genes) is substantial, and independent observers achieved similar validation rates (77% and 88%), confirming the robustness of the findings. The clustering results are consistent with previous microarray and ISH work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "485c09bd-80df-4088-86cc-631e37e68853",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CA2 is a transcriptionally distinct hippocampal region with 41 enriched genes (66% novel), and shows approximately equal transcriptional distance from CA3 and CA1 rather than being a transcriptional intermediate between them.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12 demonstrate CA2 distinctiveness through multiple complementary analyses: identification of enriched genes with conservative parameters, multidimensional scaling showing equidistance from CA3 and CA1, and similar numbers of enriched genes across CA regions. The finding that CA2 is not transcriptionally intermediate despite physical intermediacy is a novel and well-supported conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "65823932-8af9-4eb2-9fb2-25a286366ce7",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Mossy cells exhibit 59 enriched genes (including the previously known Calb2) with 95% ISH validation rate, and show transcriptional heterogeneity along the dorsal-ventral axis based on differential spatial expression patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 are supported by RNA-seq identification of enriched genes and high ISH validation rate (95%, 36/38 genes). The inference of heterogeneity (C16) is based on observed differential spatial patterns of gene expression, though this is an interpretation rather than direct measurement of subpopulations. The evidence is strong but the heterogeneity claim would benefit from additional single-cell or spatial transcriptomics validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "a34981a5-6d7a-44a5-8bf4-f5b5bdae028d",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Dentate gyrus granule cells show extensive dorsal-ventral transcriptional heterogeneity with hundreds of differentially expressed genes. Dorsal marker genes define a consistent spatial domain (recapitulating Lct), while ventral markers show inconsistent spatial patterns, suggesting a well-defined dorsal but not ventral subpopulation. All validated markers show gradient expression patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C24 are well-supported by differential expression analysis (hundreds of genes, 58% ISH validation) and spatial pattern analysis. The asymmetry between dorsal and ventral organization is a novel finding supported by ISH validation showing consistent dorsal but inconsistent ventral spatial domains. The conclusion of gradient rather than discrete expression (C24) is supported by ISH observations, though the sample size for validation is moderate (33/57 genes).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "bed6b1c1-1c4e-4141-be91-a5f4fc729dc4",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "37 genes show region-specific (dorsal vs. ventral) enrichment across all principal cells of the trisynaptic loop, significantly more than expected by chance. Many of these genes are involved in cell adhesion and axon guidance, and 43% (16/37) show identical directional enrichment in the medial entorhinal cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C31 demonstrate region-specific gene expression through systematic analysis across cell classes with statistical validation against a null model (C28). The finding that 43% of hippocampal region-enriched genes also show directional enrichment in MEC (C31) provides strong evidence for conserved regional patterning mechanisms. The ontology enrichment for cell adhesion and axon guidance genes is data-driven and well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "bd13e547-bf81-46cb-9814-9a75d9cc9362",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "WGCNA identified eight gene modules enriched in hippocampal subpopulations, revealing that different cell classes express distinct gene sets for common functions (e.g., long-term potentiation) and identifying disease-associated gene modules in specific cell types (e.g., Parkinson's disease genes in mossy cells and dorsal granule cells).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 are supported by WGCNA analysis and ontology enrichment. The finding that LTP-related genes are organized into distinct modules across cell classes (C33) demonstrates cell-type-specific molecular implementations of common functions. The disease associations (C34) are based on established gene annotations, though functional validation would strengthen these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "e190ee6c-23ab-4441-9e33-6ef3aef16ba9",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "RNA-seq analysis used standard statistical thresholds (FDR<0.05) and filtering criteria (FPKM>10), with hierarchical clustering based on Jensen-Shannon distance and complete linkage. ISH validation showed ~81% agreement with RNA-seq predictions, confirmed by independent observers (77% and 88% agreement).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40, C73-C76 describe the analytical methods and validation approach. The statistical thresholds and methods are standard and appropriate. The ISH validation methodology (C75) relies on visual assessment, which is subjective but was validated by independent observers (C76) with similar success rates, supporting the robustness of the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "aafab209-6049-4909-a47b-b7de3bb7992c",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The transcriptional distance between dorsal and ventral granule cells is similar to that between different cell populations, indicating substantial within-class heterogeneity comparable to across-class differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42 and C80 are supported by hierarchical clustering analysis showing that within-class (dorsal-ventral) similarity is frequently comparable to across-class similarity. This finding is consistent with previous work on CA1 and CA3 pyramidal cells (cited in C42), providing convergent evidence for the principle.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "b1a6d0f8-e612-4eb2-8900-c12a5a34f4dc",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Region-enriched genes involved in cell adhesion and axon guidance may function to maintain polarity in the mature brain, analogous to their developmental role in circuit patterning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C43-C46 present a speculative functional interpretation of the ontology enrichment results. While the observation that many region-enriched genes are involved in cell adhesion and axon guidance is data-supported (C43), the proposed function in maintaining polarity (C44, C46) is speculative and lacks direct experimental evidence. The analogy to developmental processes (C45, C46) is reasonable but requires functional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "1b37416a-d73e-40f8-ade5-597311c78571",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Different hippocampal cell classes exhibit different organizational principles: CA3 pyramidal cells conform to discrete subpopulations, while CA1 pyramidal cells, DG mossy cells, and DG granule cells do not show clear subdomain organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 synthesize findings from current data (for mossy cells and granule cells) and previous work (for CA1 and CA3). The evidence for gradient vs. discrete organization is supported by ISH spatial patterns and differential expression analysis. The claim appropriately distinguishes between different organizational principles across cell classes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "84894326-4eff-4332-b3ad-a108f869810b",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study likely underestimates total hippocampal transcriptional variability due to limitations including: sampling only dorsal and ventral poles, using bulk rather than single-cell approaches, and not capturing variability based on projection targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 appropriately acknowledge methodological limitations. The identified limitations are valid: bulk RNA-seq cannot capture single-cell heterogeneity (C51), sampling only two poles misses intermediate and other dimensional variation (C50), and projection-based variability is not captured (C52). This represents good scientific practice in acknowledging study limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "7e036369-3bf7-4836-b4a3-92cec65eac02",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The Hipposeq database (http://hipposeq.janelia.org) provides public access to hippocampal RNA-seq data with interactive analysis and visualization tools, with analysis scripts available on Github.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53, C72, C85 describe the data availability and resource. These are factual statements about resource availability that can be verified. The creation of a public resource with interactive tools represents an important contribution to the field beyond the primary findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "34608dc5-0b82-41a8-8f23-efb2d6c3d5cf",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "RNA-seq offers advantages over ISH including class-specific data with large dynamic range, but lacks spatial information. The combination of Hipposeq and the Allen Brain Atlas provides complementary quantitative and histological whole-genome insight.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 accurately describe the complementary strengths and limitations of RNA-seq and ISH. The advantages of RNA-seq (class-specificity, dynamic range) and limitations (lack of spatial information) are well-established. The claim that the two resources are complementary (C56) is supported by the extensive cross-validation performed in the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "b30411a7-0f12-4d1c-a97a-4319d3d90f8b",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The identified marker genes enable multiple applications: genetic access to defined neuronal populations, hypothesis generation for functional studies through gene ontology associations, and identification of disease-relevant genes and cell classes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C111 describe potential applications of the marker gene discoveries. These are reasonable inferences about utility based on the data generated. The claims appropriately distinguish between existing tools (C107) and new opportunities (C106, C108-C111). The disease associations (C111) are based on established gene annotations from the WGCNA analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "379fd18c-387d-405a-bdf7-b581acd09d46",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "RNA-seq provided quantitative, whole-genome characterization of major hippocampal excitatory cell classes at both dorsal and ventral poles, clarifying transcriptional properties of lesser-known cell classes and revealing unexpected dorsal-ventral variation in the trisynaptic loop.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C84 summarize the overall scope and findings of the study. These summary claims are supported by the comprehensive data presented throughout the manuscript, including novel findings for CA2, mossy cells, and dorsal-ventral organization across cell classes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    },
+    {
+      "id": "6362927b-860e-42ca-8206-0fc525ad6f1a",
+      "content_id": "8766127e-f422-4cd7-9c2b-071563146f50",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Experimental procedures followed standard protocols including IACUC approval, use of GENSAT transgenic lines on C57BL/6J background, Ai9 reporter crosses, manual cell sorting of P26-P35 mice, and imaging with whole-slide scanner and confocal microscopy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C63, C77-C78 describe standard experimental procedures and ethical compliance. These methodological details are clearly stated and follow established protocols. The use of validated transgenic lines and reporter systems is appropriate for the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:33:44.794471Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1a7ba5e5-59d1-4c89-b525-2e90a2ef142d",
+      "result_id": "167d3384-61b5-4380-aa37-b57812c0d614"
+    },
+    {
+      "claim_id": "3fb7cddb-faf2-4c3a-81e1-e30fa61bee97",
+      "result_id": "167d3384-61b5-4380-aa37-b57812c0d614"
+    },
+    {
+      "claim_id": "371aebf1-77c0-4ff5-b4b8-08816505a156",
+      "result_id": "167d3384-61b5-4380-aa37-b57812c0d614"
+    },
+    {
+      "claim_id": "9037d6cd-bd07-4afe-bde5-d40530aee11c",
+      "result_id": "167d3384-61b5-4380-aa37-b57812c0d614"
+    },
+    {
+      "claim_id": "be98630d-6496-4650-8aca-eff061911a01",
+      "result_id": "167d3384-61b5-4380-aa37-b57812c0d614"
+    },
+    {
+      "claim_id": "5da05c83-c42e-4366-a2ed-ac0950513324",
+      "result_id": "167d3384-61b5-4380-aa37-b57812c0d614"
+    },
+    {
+      "claim_id": "31600341-aed3-42d0-8bc6-0dd1a03d981b",
+      "result_id": "167d3384-61b5-4380-aa37-b57812c0d614"
+    },
+    {
+      "claim_id": "b3177d92-a2c3-40f0-99ad-b55f42be4b6a",
+      "result_id": "167d3384-61b5-4380-aa37-b57812c0d614"
+    },
+    {
+      "claim_id": "e1099a80-3696-478b-9c33-212277c83d4a",
+      "result_id": "167d3384-61b5-4380-aa37-b57812c0d614"
+    },
+    {
+      "claim_id": "52b70726-13fd-4fd4-8f18-8320827f0d36",
+      "result_id": "167d3384-61b5-4380-aa37-b57812c0d614"
+    },
+    {
+      "claim_id": "077bf15d-f51f-461b-98c7-41af88764625",
+      "result_id": "167d3384-61b5-4380-aa37-b57812c0d614"
+    },
+    {
+      "claim_id": "46859388-53d0-4979-ae69-2228a97c3f58",
+      "result_id": "167d3384-61b5-4380-aa37-b57812c0d614"
+    },
+    {
+      "claim_id": "95ea7b43-681e-429a-8326-ea647fb9e29e",
+      "result_id": "167d3384-61b5-4380-aa37-b57812c0d614"
+    },
+    {
+      "claim_id": "d9eee2a3-e84a-44dd-9678-4a13cde24ecb",
+      "result_id": "a9b6799f-3083-4f49-9e75-448e29627a96"
+    },
+    {
+      "claim_id": "560fcef8-00d1-47de-97b0-26c4ab57ad40",
+      "result_id": "a9b6799f-3083-4f49-9e75-448e29627a96"
+    },
+    {
+      "claim_id": "1f1d6f88-475a-46f0-a7d9-cdcba14acedd",
+      "result_id": "a9b6799f-3083-4f49-9e75-448e29627a96"
+    },
+    {
+      "claim_id": "072ddbdb-82ee-434b-ab04-06e21e57832d",
+      "result_id": "a9b6799f-3083-4f49-9e75-448e29627a96"
+    },
+    {
+      "claim_id": "e2db2c5b-c743-4a39-b825-c71bc8a84d0d",
+      "result_id": "a9b6799f-3083-4f49-9e75-448e29627a96"
+    },
+    {
+      "claim_id": "cc18ae9c-e9b0-436f-bf0d-708d383197ce",
+      "result_id": "a9b6799f-3083-4f49-9e75-448e29627a96"
+    },
+    {
+      "claim_id": "75af2d50-6b9c-429c-bf88-a2ce518c6d84",
+      "result_id": "485c09bd-80df-4088-86cc-631e37e68853"
+    },
+    {
+      "claim_id": "30e9cbc9-4c11-4b4a-ac58-d09e62733428",
+      "result_id": "485c09bd-80df-4088-86cc-631e37e68853"
+    },
+    {
+      "claim_id": "fbf3fff5-27fd-47cb-8e72-9ac092fc8cba",
+      "result_id": "485c09bd-80df-4088-86cc-631e37e68853"
+    },
+    {
+      "claim_id": "313c402e-bd9f-4586-a81b-6297053ea908",
+      "result_id": "485c09bd-80df-4088-86cc-631e37e68853"
+    },
+    {
+      "claim_id": "764dc1c2-8a17-44f6-9b47-8c4b1dfcdff2",
+      "result_id": "485c09bd-80df-4088-86cc-631e37e68853"
+    },
+    {
+      "claim_id": "543e50c6-2245-41db-ab08-15e6adbf34fd",
+      "result_id": "65823932-8af9-4eb2-9fb2-25a286366ce7"
+    },
+    {
+      "claim_id": "f2bdba94-0047-4c4a-bb6e-e1f20838f1c0",
+      "result_id": "65823932-8af9-4eb2-9fb2-25a286366ce7"
+    },
+    {
+      "claim_id": "d145ca03-6e57-4bc9-a0c6-dff2ab271f8d",
+      "result_id": "65823932-8af9-4eb2-9fb2-25a286366ce7"
+    },
+    {
+      "claim_id": "7a2edc89-4105-4faa-b7ec-939fde571adc",
+      "result_id": "65823932-8af9-4eb2-9fb2-25a286366ce7"
+    },
+    {
+      "claim_id": "3cfe404d-e1a0-4742-a2ac-8653dcdf250d",
+      "result_id": "a34981a5-6d7a-44a5-8bf4-f5b5bdae028d"
+    },
+    {
+      "claim_id": "439d95cf-efe3-4c58-9a10-64261e40dd5d",
+      "result_id": "a34981a5-6d7a-44a5-8bf4-f5b5bdae028d"
+    },
+    {
+      "claim_id": "a9dc8346-1110-41f0-a8ca-3b2289cd1e6a",
+      "result_id": "a34981a5-6d7a-44a5-8bf4-f5b5bdae028d"
+    },
+    {
+      "claim_id": "ec2c18ec-3574-47a6-85b2-e2292b858a73",
+      "result_id": "a34981a5-6d7a-44a5-8bf4-f5b5bdae028d"
+    },
+    {
+      "claim_id": "2055e548-c2aa-477f-83e5-345921453398",
+      "result_id": "a34981a5-6d7a-44a5-8bf4-f5b5bdae028d"
+    },
+    {
+      "claim_id": "8151d663-e61f-4125-b386-a9cb95de8a7d",
+      "result_id": "a34981a5-6d7a-44a5-8bf4-f5b5bdae028d"
+    },
+    {
+      "claim_id": "459cd29d-827e-4c37-8878-8fe54c56b8ce",
+      "result_id": "a34981a5-6d7a-44a5-8bf4-f5b5bdae028d"
+    },
+    {
+      "claim_id": "4adbee3a-c9bd-4763-87db-3b84b3e34eeb",
+      "result_id": "a34981a5-6d7a-44a5-8bf4-f5b5bdae028d"
+    },
+    {
+      "claim_id": "2935b7a5-014a-4b47-b99e-a7686ceacbbd",
+      "result_id": "bed6b1c1-1c4e-4141-be91-a5f4fc729dc4"
+    },
+    {
+      "claim_id": "5fdccff1-99e7-4884-b7e9-4bed2620e14d",
+      "result_id": "bed6b1c1-1c4e-4141-be91-a5f4fc729dc4"
+    },
+    {
+      "claim_id": "73f65cd3-9eab-4b73-97cc-7179145497bb",
+      "result_id": "bed6b1c1-1c4e-4141-be91-a5f4fc729dc4"
+    },
+    {
+      "claim_id": "15c94899-fcb0-4409-bae3-951b7e0a4867",
+      "result_id": "bed6b1c1-1c4e-4141-be91-a5f4fc729dc4"
+    },
+    {
+      "claim_id": "621410ed-c111-473c-8718-c87c3e58a55b",
+      "result_id": "bed6b1c1-1c4e-4141-be91-a5f4fc729dc4"
+    },
+    {
+      "claim_id": "e157fbbb-0423-4815-bc0a-73325fccdc49",
+      "result_id": "bed6b1c1-1c4e-4141-be91-a5f4fc729dc4"
+    },
+    {
+      "claim_id": "888e9134-3f45-40ab-b9e3-64f93b7b45ce",
+      "result_id": "bd13e547-bf81-46cb-9814-9a75d9cc9362"
+    },
+    {
+      "claim_id": "61491c42-9592-42fe-a470-8aba9667fdf5",
+      "result_id": "bd13e547-bf81-46cb-9814-9a75d9cc9362"
+    },
+    {
+      "claim_id": "128e43c6-43de-412c-840d-773a6b4c70a3",
+      "result_id": "bd13e547-bf81-46cb-9814-9a75d9cc9362"
+    },
+    {
+      "claim_id": "576ff3c6-1338-4f55-bf28-f27f936d7908",
+      "result_id": "e190ee6c-23ab-4441-9e33-6ef3aef16ba9"
+    },
+    {
+      "claim_id": "2804c68c-5b76-4687-9936-6aee3f37cfbe",
+      "result_id": "e190ee6c-23ab-4441-9e33-6ef3aef16ba9"
+    },
+    {
+      "claim_id": "20ed00db-e213-41fc-86ff-4c4adb357146",
+      "result_id": "e190ee6c-23ab-4441-9e33-6ef3aef16ba9"
+    },
+    {
+      "claim_id": "90b0df86-8892-4075-bbce-e7d9e0a2f198",
+      "result_id": "e190ee6c-23ab-4441-9e33-6ef3aef16ba9"
+    },
+    {
+      "claim_id": "081f69b9-d518-4e55-bcb3-4e63451fd0ac",
+      "result_id": "e190ee6c-23ab-4441-9e33-6ef3aef16ba9"
+    },
+    {
+      "claim_id": "7eaf9214-f8ce-4218-bc6a-81f4cc5f92ff",
+      "result_id": "e190ee6c-23ab-4441-9e33-6ef3aef16ba9"
+    },
+    {
+      "claim_id": "78929aac-fc18-4c38-94e0-8ced8094a2c2",
+      "result_id": "aafab209-6049-4909-a47b-b7de3bb7992c"
+    },
+    {
+      "claim_id": "cc18ae9c-e9b0-436f-bf0d-708d383197ce",
+      "result_id": "aafab209-6049-4909-a47b-b7de3bb7992c"
+    },
+    {
+      "claim_id": "f88c16b2-c764-4823-a709-c8b8536e2482",
+      "result_id": "b1a6d0f8-e612-4eb2-8900-c12a5a34f4dc"
+    },
+    {
+      "claim_id": "06be2398-56d1-4a68-a0b2-89291287a536",
+      "result_id": "b1a6d0f8-e612-4eb2-8900-c12a5a34f4dc"
+    },
+    {
+      "claim_id": "a36129fd-5f90-4686-9756-cf30547747e7",
+      "result_id": "b1a6d0f8-e612-4eb2-8900-c12a5a34f4dc"
+    },
+    {
+      "claim_id": "b9e1d253-354e-43e5-9938-63fb0c9b87bc",
+      "result_id": "b1a6d0f8-e612-4eb2-8900-c12a5a34f4dc"
+    },
+    {
+      "claim_id": "d6126843-9fc2-4108-8930-84d771e10fd1",
+      "result_id": "1b37416a-d73e-40f8-ade5-597311c78571"
+    },
+    {
+      "claim_id": "569ca4a9-f960-426f-bb4f-146527fd0d61",
+      "result_id": "1b37416a-d73e-40f8-ade5-597311c78571"
+    },
+    {
+      "claim_id": "13a01708-0c7e-4d15-89ca-06ac4b0051a8",
+      "result_id": "84894326-4eff-4332-b3ad-a108f869810b"
+    },
+    {
+      "claim_id": "dbdf0cea-b6bf-45f4-8fbe-56447dc3b64e",
+      "result_id": "84894326-4eff-4332-b3ad-a108f869810b"
+    },
+    {
+      "claim_id": "5d57f97c-8d58-49ec-a1ed-c667b4a7048a",
+      "result_id": "84894326-4eff-4332-b3ad-a108f869810b"
+    },
+    {
+      "claim_id": "68ff1dc1-2ba9-474b-ad84-737556562012",
+      "result_id": "84894326-4eff-4332-b3ad-a108f869810b"
+    },
+    {
+      "claim_id": "842a29ab-375f-4d19-b61e-ad77c5699c78",
+      "result_id": "7e036369-3bf7-4836-b4a3-92cec65eac02"
+    },
+    {
+      "claim_id": "b6c91b63-4a18-44e4-a61d-0d33d00108e7",
+      "result_id": "7e036369-3bf7-4836-b4a3-92cec65eac02"
+    },
+    {
+      "claim_id": "893852b2-959a-4ec7-9ff0-1ec24d448603",
+      "result_id": "7e036369-3bf7-4836-b4a3-92cec65eac02"
+    },
+    {
+      "claim_id": "80c695cb-af09-4967-b84c-3fc3884fe703",
+      "result_id": "34608dc5-0b82-41a8-8f23-efb2d6c3d5cf"
+    },
+    {
+      "claim_id": "90c8da96-bdd3-4f16-8f3c-53a5b1de7423",
+      "result_id": "34608dc5-0b82-41a8-8f23-efb2d6c3d5cf"
+    },
+    {
+      "claim_id": "480524ce-7d9d-4c3f-adca-20ad8ac4979a",
+      "result_id": "34608dc5-0b82-41a8-8f23-efb2d6c3d5cf"
+    },
+    {
+      "claim_id": "4ceb6eb5-a453-4fc6-97f8-d12eec660999",
+      "result_id": "b30411a7-0f12-4d1c-a97a-4319d3d90f8b"
+    },
+    {
+      "claim_id": "ffe1a1d6-cd28-4ed2-ba0b-47a9e9bdb65b",
+      "result_id": "b30411a7-0f12-4d1c-a97a-4319d3d90f8b"
+    },
+    {
+      "claim_id": "0136e962-d7fa-471b-a195-58233952428b",
+      "result_id": "b30411a7-0f12-4d1c-a97a-4319d3d90f8b"
+    },
+    {
+      "claim_id": "766212ea-a668-4117-9e53-ef171267cc13",
+      "result_id": "b30411a7-0f12-4d1c-a97a-4319d3d90f8b"
+    },
+    {
+      "claim_id": "282f7144-e9ec-4a34-abc8-7050aa5e98ba",
+      "result_id": "b30411a7-0f12-4d1c-a97a-4319d3d90f8b"
+    },
+    {
+      "claim_id": "6f0ba638-2af3-481b-b95e-23d419b13d7f",
+      "result_id": "b30411a7-0f12-4d1c-a97a-4319d3d90f8b"
+    },
+    {
+      "claim_id": "032876aa-bdab-4fbb-add8-3cbaaa503f91",
+      "result_id": "379fd18c-387d-405a-bdf7-b581acd09d46"
+    },
+    {
+      "claim_id": "b1ebe5b0-d673-4828-832f-cfac3a8621c9",
+      "result_id": "379fd18c-387d-405a-bdf7-b581acd09d46"
+    },
+    {
+      "claim_id": "308737b9-d88f-4dc0-991a-78bdeac61c1d",
+      "result_id": "379fd18c-387d-405a-bdf7-b581acd09d46"
+    },
+    {
+      "claim_id": "0f58525f-a40d-498a-8263-1d70dc0ff5d2",
+      "result_id": "379fd18c-387d-405a-bdf7-b581acd09d46"
+    },
+    {
+      "claim_id": "a3fc78cf-c8ab-4bb9-8bc5-5f5b06524821",
+      "result_id": "6362927b-860e-42ca-8206-0fc525ad6f1a"
+    },
+    {
+      "claim_id": "5e883cd1-e7ed-474a-ba66-654a8b828073",
+      "result_id": "6362927b-860e-42ca-8206-0fc525ad6f1a"
+    },
+    {
+      "claim_id": "a7fa59dc-597f-474b-acb5-3ec51066f70c",
+      "result_id": "6362927b-860e-42ca-8206-0fc525ad6f1a"
+    },
+    {
+      "claim_id": "64b58dbf-6025-46a5-a451-0d060bfe7821",
+      "result_id": "6362927b-860e-42ca-8206-0fc525ad6f1a"
+    },
+    {
+      "claim_id": "448711a8-646f-4473-be81-4bd8e91f89f7",
+      "result_id": "6362927b-860e-42ca-8206-0fc525ad6f1a"
+    },
+    {
+      "claim_id": "74e5e473-abac-4d31-8639-c56227151f8f",
+      "result_id": "6362927b-860e-42ca-8206-0fc525ad6f1a"
+    },
+    {
+      "claim_id": "27503f22-5940-4f61-90fb-ddeeea34f4f3",
+      "result_id": "6362927b-860e-42ca-8206-0fc525ad6f1a"
+    },
+    {
+      "claim_id": "a5976762-3b6c-443e-beed-e453dd40e41a",
+      "result_id": "6362927b-860e-42ca-8206-0fc525ad6f1a"
+    },
+    {
+      "claim_id": "2b91cd32-e38f-44d1-a1e8-e0659207e5a5",
+      "result_id": "6362927b-860e-42ca-8206-0fc525ad6f1a"
+    }
+  ],
+  "comparisons": []
+}

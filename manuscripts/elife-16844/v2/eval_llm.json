@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "A genome-wide RNAi screen in MCF10A breast epithelial cells identified KDM3A as a top candidate gene whose knockdown confers anoikis resistance. The screen used ~62,400 shRNAs targeting ~28,000 genes, identified 26 shRNAs enriched >500-fold in detached cells, and validated 5 of 20 tested candidates including KDM3A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 describe a well-designed RNAi screen with appropriate controls (BIM knockdown as positive control, C5), validation with independent shRNAs (Figure 1\u2014figure supplement 2), and confirmation of knockdown efficiency (Figure 1\u2014figure supplement 3). The screen methodology is clearly described with deep sequencing readout and bioinformatic analysis. The identification of KDM3A as a validated hit is supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C67",
+      "C68"
+    ],
+    "result": "KDM3A is necessary and sufficient for anoikis induction in breast epithelial cells. KDM3A is a histone demethylase that removes repressive H3K9me1/2 marks. Knockdown reduces apoptosis following detachment while ectopic expression of wild-type but not catalytically inactive KDM3A induces cell death in attached cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 demonstrate sufficiency through gain-of-function experiments with appropriate catalytically inactive mutant control (C10). Claims C5-C6 from the screen establish necessity. The enzymatic function (C8-C9) is established by citation to prior work. The use of the catalytically inactive mutant KDM3A(H1120G/D1122N) as a control strengthens the conclusion that demethylase activity is required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C65",
+      "C66"
+    ],
+    "result": "KDM3A expression is induced following detachment at both protein and mRNA levels. In attached cells, KDM3A levels are low but increase robustly in a time-dependent manner following detachment, with integrin signaling maintaining low KDM3A expression in attached cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 provide direct evidence from immunoblot (Figure 2A) and qRT-PCR (Figure 2B) showing time-dependent induction of KDM3A following detachment. The data show clear increases at both protein and mRNA levels with appropriate loading controls. Multiple time points (4, 8, 24 hr) strengthen the temporal relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Loss of integrin/FAK signaling upon detachment leads to increased KDM3A expression. Restoration of integrin signaling with Matrigel blocks KDM3A induction, while FAK inhibitor treatment increases KDM3A levels in attached cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 provide complementary gain-of-function (Matrigel rescue) and loss-of-function (FAK inhibitor) experiments demonstrating the role of integrin/FAK signaling. The Matrigel experiment (C16, Figure 2C) shows that restoring integrin signaling blocks KDM3A induction. FAK inhibitor experiments (C17, Figure 2D and supplement) show increased KDM3A at both protein and mRNA levels. BIM is used as a positive control throughout.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "EGFR and MEK signaling negatively regulate KDM3A expression. Ectopic expression of EGFR or constitutively active MEK2DD decreases KDM3A levels in detached cells, while EGFR inhibitor gefitinib and MEK inhibitor U0126 increase KDM3A levels in attached cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 provide bidirectional evidence linking EGFR/MEK signaling to KDM3A regulation. Gain-of-function (EGFR/MEK2DD overexpression, C19-C20, Figure 2E) and loss-of-function (gefitinib/U0126 treatment, C21-C22, Figures 2F-G) experiments are complementary and internally consistent. Both protein and mRNA levels are assessed. BIM serves as a positive control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C52"
+    ],
+    "result": "BNIP3 and BNIP3L are specifically regulated by KDM3A following detachment, while BIM and BMF are not. Among pro-apoptotic BCL2 family members, only BNIP3 and BNIP3L expression increased upon detachment and was diminished >2-fold by KDM3A knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 describe a candidate gene screen of BCL2 family members (Figure 3A) showing specific regulation of BNIP3/BNIP3L but not BIM/BMF by KDM3A. The screen was comprehensive, testing multiple pro-apoptotic genes. Results were confirmed with a second independent shRNA (Figure 3\u2014figure supplement 1). Protein level confirmation (C26, Figure 3B) supports the mRNA data. The specificity strengthens the mechanistic conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C48"
+    ],
+    "result": "KDM3A directly regulates BNIP3 and BNIP3L through promoter binding and H3K9 demethylation. KDM3A binds to BNIP3/BNIP3L promoters in detached cells, H3K9me1/2 levels decrease upon detachment in a KDM3A-dependent manner, and KDM3A overexpression reduces H3K9 methylation and increases BNIP3/BNIP3L expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 provide direct mechanistic evidence through ChIP experiments showing KDM3A recruitment (C27, Figure 3C), decreased H3K9me1/2 marks that are rescued by KDM3A knockdown (C28, Figures 3D and supplement 2), and gain-of-function experiments with wild-type vs catalytically inactive mutant (C29, Figure 3\u2014figure supplement 3). The use of the catalytic mutant as a control is critical for establishing that demethylase activity is required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C69"
+    ],
+    "result": "BNIP3 and BNIP3L are critical mediators of KDM3A-induced anoikis. Knockdown of either BNIP3 or BNIP3L reduces detachment-induced apoptosis, and ectopic co-expression of both proteins causes substantial cell death in attached cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 provide loss-of-function (knockdown reduces apoptosis, Figure 3E) and gain-of-function (overexpression induces death, Figure 3F) evidence. The observation that co-expression of both BNIP3 and BNIP3L causes more cell death than either alone (C31) suggests cooperative or additive effects. Independent shRNAs were tested (Figure 3\u2014figure supplement 4-5). Knockdown efficiency was confirmed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C50",
+      "C71"
+    ],
+    "result": "Anoikis-resistant breast cancer cell lines show defective KDM3A induction following detachment. Five breast cancer cell lines (BT549, MDA-MB-231, MCF7, SUM149, T47D) exhibit reduced detachment-induced apoptosis and much lower KDM3A induction compared to MCF10A cells, but ectopic KDM3A expression is sufficient to induce apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 provide systematic analysis across five breast cancer cell lines showing reduced anoikis (Figure 4A), impaired KDM3A induction at protein and mRNA levels (Figures 4B-C), but retained sensitivity to ectopic KDM3A (Figure 4D). The use of multiple cell lines and both protein/mRNA measurements strengthens the conclusion. The sufficiency experiment (C35) demonstrates that the defect is upstream of KDM3A function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "KDM3A expression is decreased in human breast cancer patient samples and cell lines. Analysis of Oncomine datasets and qRT-PCR of patient samples show significantly decreased KDM3A expression in breast cancers compared to normal tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 provide convergent evidence from database analysis (C37, Figure 4\u2014figure supplement 2 showing multiple datasets), patient sample qRT-PCR (C38, Figure 4E with n=24 tumors and n=5 normal), and cell line analysis (C39, Figure 4\u2014figure supplement 3). Statistical significance is reported. However, the patient sample size is relatively small (n=24 tumors, n=5 normal) and no information about tumor subtypes or clinical correlations is provided beyond Figure 4E.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C70"
+    ],
+    "result": "KDM3A functions to prevent metastasis in mouse models. Kdm3a knockdown increases survival of cells in mouse lungs (CLS1 cells), enables non-metastatic 67NR cells to form pulmonary metastases, and increases metastatic burden of 4T07 cells without affecting primary tumor growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 describe three complementary in vivo experiments: pulmonary survival assay (C40, Figure 4F), tail vein injection of 67NR cells (C42-C43, Figure 4G), and orthotopic 4T07 model (C44-C45, Figures 4H-I). The 4T07 experiment is particularly strong as it shows increased metastasis without effects on primary tumor growth, suggesting specific effects on metastatic colonization. However, sample sizes are small (n=3 for 67NR, n=7-8 for 4T07) and only one shRNA is shown in main figures, though supplements show replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C51",
+      "C53"
+    ],
+    "result": "The authors propose a model where detachment-induced loss of integrin signaling leads to KDM3A transcriptional induction, which promotes H3K9me1/2 demethylation at BNIP3/BNIP3L promoters, activating these pro-apoptotic genes to induce anoikis. This represents a novel transcriptional regulatory program distinct from BIM/BMF regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 and C51 synthesize the experimental findings into a coherent model supported by the data in previous result groups. The model is supported by: (1) detachment-induced KDM3A expression via loss of integrin signaling, (2) direct KDM3A binding and demethylation at BNIP3/BNIP3L promoters, (3) functional requirement for BNIP3/BNIP3L in anoikis, and (4) independence from BIM/BMF regulation (C53). The model is internally consistent with all experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Background claims about anoikis biology establish the context for the study. These include the definition of anoikis, its role in preventing metastasis, resistance in breast cancer, regulation by integrin/FAK/EGFR signaling, and the known but incomplete role of BIM/BMF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C63 are background knowledge claims properly cited to prior literature. These establish the rationale for the study by noting that BIM/BMF depletion only partially prevents anoikis (C62) and that the basis of anoikis resistance is unknown (C63). The citations appear appropriate and the claims are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C64"
+    ],
+    "result": "The findings are consistent with prior work showing that hypoxia induces KDM3A, BNIP3, and BNIP3L, and that Bnip3 knockdown increases metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C64 cite prior literature that supports the plausibility of the current findings. The consistency with hypoxia studies (C49) suggests KDM3A-BNIP3/BNIP3L may be a general stress response pathway. The prior Bnip3 metastasis study (C64) independently validates the functional importance of this pathway. These claims appropriately contextualize the current work.",
+    "result_type": "MINOR"
+  }
+]

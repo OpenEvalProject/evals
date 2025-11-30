@@ -1,0 +1,1965 @@
+{
+  "submission": {
+    "id": "bdd35a9e-214f-42b8-aaae-cdf3a6205aa7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:06:25.848775Z",
+    "updated_at": "2025-11-29T23:06:25.848775Z"
+  },
+  "content": [
+    {
+      "id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "submission_id": "bdd35a9e-214f-42b8-aaae-cdf3a6205aa7",
+      "content_type": "manuscript",
+      "content_text": "# A simple generative model of the mouse mesoscale connectome\n\n## Authors\n\n- Sid Henriksen<sup>1</sup> ([ORCID: 0000-0002-4335-4218](https://orcid.org/0000-0002-4335-4218)) \u2020\n- Rich Pang<sup>3</sup> ([ORCID: 0000-0002-2644-6110](https://orcid.org/0000-0002-2644-6110)) \u2020\n- Mark Wronkiewicz<sup>3</sup> ([ORCID: 0000-0002-6521-3256](https://orcid.org/0000-0002-6521-3256)) \u2020\n\n### Affiliations\n\n1. Laboratory of Sensorimotor Research, National Eye Institute National Institutes of Health Bethesda United States\n2. Institute of Neuroscience Newcastle University Newcastle upon Tyne United Kingdom\n3. Graduate Program in Neuroscience University of Washington Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nRecent technological advances now allow for the collection of vast data sets detailing the intricate neural connectivity patterns of various organisms. Oh et al. (2014) recently published the most complete description of the mouse mesoscale connectome acquired to date. Here we give an in-depth characterization of this connectome and propose a generative network model which utilizes two elemental organizational principles: proximal attachment \u2012 outgoing connections are more likely to attach to nearby nodes than to distant ones, and source growth \u2012 nodes with many outgoing connections are likely to form new outgoing connections. We show that this model captures essential principles governing network organization at the mesoscale level in the mouse brain and is consistent with biologically plausible developmental processes.\n\n## Introduction\n\nThe network of physical connections among neurons in the brain provides the medium for neural communication. Investigations of these anatomical networks are typically categorized as macro-, meso-, or microscale, depending on the spatial resolution of the techniques used. The mesoscale, which describes the connectivity among local populations (hundreds to thousands) of neurons, is an attractive intermediate between the two more extreme scales: it has higher granularity than macroscale data, which details connectivity between large anatomically defined brain areas, but it has a broader lens than the microscale, which is concerned with synaptic level connections, often in relatively small volumes of tissue (see (Sporns et al., 2005) for review). These properties make the mesoscale tractable enough for whole-brain (i.e. connectomic) studies with current technological and analytical tools.\n\nThe Allen Institute for Brain Science recently constructed a mesoscale connectome for the mouse (the Allen Mouse Brain Connectivity Atlas), which was the first complete connectivity dataset of a mammalian brain at the mesoscale (Oh et al., 2014). Using injections of an anterograde fluorescent viral tracer and serial two-photon microscopy, Oh et al. (2014) comprehensively mapped both intra- and interhemispheric axonal tracts and estimated the directed connectivity structure among 213 non-overlapping anatomical regions. The authors also conducted a preliminary graph theoretic analysis and showed that basic network properties of the mouse connectome could not be explained by any one standard network model (Oh et al., 2014). Rubinov et al. (2015) extended this analysis by identifying small-worldness, a hierarchical modular structure, and non-optimal wiring in the connectome (Rubinov et al., 2015). As the mouse is one of the most pervasive model organisms in biomedical science, a deeper characterization of its connectome is likely to provide pertinent groundwork for future studies of brain development and function as well as yield insights into the broader organizational principles of the mammalian brain.\n\nGraph theory provides a mathematical framework for investigating the organization of networks and has been increasingly applied in neuroscience over the last 15 years. Graphs are mathematical objects that consist of nodes and connections between the nodes, called edges (Bullmore and Sporns, 2009; Rubinov and Sporns, 2010). Edges can be either directed or undirected, as well as binary or weighted. In the Allen mouse connectome, nodes and edges correspond to brain regions and axonal tracts, respectively. Conventionally, real-world networks (such as the World Wide Web or social networks) are compared to binary undirected graphs such as small-world (Watts and Strogatz, 1998) and scale-free graphs (Barabasi and Albert, 1999). These models have been critical for understanding the conditions under which various network properties, such as small-worldness (high clustering among nodes combined with short average path lengths between node pairs) and scale-freeness (defined by power-law degree distributions), emerge in the brain and other systems.\n\nModeling brain networks with these standard graphs, however, requires some limiting simplifications. First, because they are not embedded in physical space, these networks ignore the biological cost of constructing physical fiber tracts, as well as spatial constraints imposed by the surrounding tissue. Second, small-world and scale-free models ignore directionality, intrinsically discarding information about differences in incoming and outgoing connection patterns. Both properties are crucial considerations when modeling the brain (Laughlin and Sejnowski, 2003; Song et al., 2014; Kaiser et al., 2009; Ercsey-Ravasz et al., 2013). Third, these models were either not developed with neural data (Barabasi and Albert, 1999) or used data from simple model organisms, such as Caenorhabditis elegans, at a particular spatial scale (Watts and Strogatz, 1998), which constrains their relevance to understanding connectomes of other organisms. For these reasons, the field has recently turned to exploring non-standard network models to elucidate generative principles of real\u00a0brain networks.\n\nRecent work in developing plausible generative network models for the brain has primarily addressed spatial embedding (Song et al., 2014; Kaiser et al., 2009; Ercsey-Ravasz et al., 2013; Klimm et al., 2014; Kaiser and Hilgetag, 2004). While the exact approaches differ in their implementation and scale of the networks being modeled, a common theme is that a node is more likely to connect to nearby nodes than distal ones. This organizational principle has been able to\u00a0capture a range of properties observed in the\u00a0cortex, including the distribution of connection lengths (Song et al., 2014; Kaiser et al., 2009; Ercsey-Ravasz et al., 2013), the inverse relationship between degree and clustering coefficient (Watts and Strogatz, 1998; Song et al., 2014; Betzel et al., 2015; Mitra, 2014), and the relative frequency of three-node motifs (Ercsey-Ravasz et al., 2013). Additional generative rules have been explored by Klimm et al. (2014), and while the resulting models have captured many properties of cortical networks, the authors note that these rules likely do not reflect the underlying generative principles of cortical networks. Similarly, Betzel et al., (2015), recently reported that individual human macroscale connectomes are well-fitted by generative network models, which use both spatial proximity and homophilic attraction (i.e. nodes with similar graph theoretic properties are more likely to form connections). However, the homophilic rules employed by Betzel et al. also do not lend themselves to straightforward biophysical interpretations. Indeed, the difficulty of developing biophysically interpretable rules is a recurring challenge in generative network models (Watts and Strogatz, 1998; Song et al., 2014; Klimm et al., 2014; Betzel et al., 2015; V\u00e9rtes et al., 2012).\n\nHere, we provide an in-depth analysis of the mouse connectome\u2019s properties and use the findings to develop a generative network model of the mesoscale connectome. We characterized the directed and undirected degree distributions, clustering coefficient distribution, reciprocity, global efficiency, physical edge length distribution, nodal efficiency, and the characteristic path length of the connectome (Table 2 in 'Materials and methods' for definitions or Bullmore and Sporns, 2009\u00a0and Rubinov and Sporns, 2010 for review). Informed by these data, we developed a spatially embedded directed network model. This model uses two simple generative principles: proximal attachment\u00a0(PA)\u00a0\u2012 outgoing connections are more likely to attach to nearby nodes than distal ones, and source growth (SG)\u00a0\u2012 nodes with many outgoing connections are more likely to develop new outgoing connections. We show that this simple model, parameterized only by a length constant and the number of nodes and edges, can capture directed, undirected, and spatial properties of the mouse connectome. This work supports the existing literature on the importance of spatial embedding and provides strong evidence that SG is a major phenomenological rule that shapes connectivity patterns in the mouse brain. Lastly, we propose biological mechanisms that might account for these two generative principles.\n\n## Results\n\nWe analyzed the Allen Mouse Connectivity Atlas (Oh et al., 2014), which is the most comprehensive mesoscale connectome collected to date. We used the linear model from Oh et al. (2014) to build an adjacency matrix containing connections between 213 symmetric pairs of nodes (426 total) and 8820 directed edges (7804 undirected).\n\n### Comparison of the connectome to undirected graph models\n\nWe first compared the undirected structure of the mouse connectome with that of three well-characterized standard graphs commonly used in the literature: a degree-controlled random network (Maslov and Sneppen, 2002), a small world network (Watts and Strogatz, 1998), and a scale-free network (Barabasi and Albert, 1999). The mouse connectome is characterized by a degree distribution with many low-degree nodes and a long tail of high-degree nodes (Figure 1a; (Oh et al., 2014)). The degree distribution was not well replicated by any standard graph (Figure 1a and b), nor was the clustering coefficient distribution \u2012 a finding also shown in Oh et al. (2014). Although the scale-free network\u2019s degree distribution most closely resembles that of the connectome, by construction, it cannot capture the distribution of low-degree nodes (as all nodes are instantiated with a minimum number of edges).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/12366/elife-12366-fig1-v1.jpg)\n\n**Figure 1.:** (a-b) Probability density of degree distributions for the mouse connectome, and an average over 100 repeats of scale-free, small-world, and (degree-controlled) random networks plotted with (a) linear and (b) log-linear scales. (c-f) Clustering coefficient as a function of degree for each node in (c) the mouse connectome, (d) a degree-controlled random network, (e) a small-world network, and (f) a scale-free network. Each plot shows data from 426 nodes and the best fitting power law function (dashed line). (a) is similar to Figure 3c from Oh et al. (2014).\n\nThe structural discrepancy between the mouse connectome and standard networks was further exposed by examining the relationship between degree and clustering coefficient (Figure 1c\u2013f). In the connectome, nodes with lower degree tend to be more clustered. This relationship was well-fitted with a power law: $C_{i}\u221dk_{i}^{\\gamma}$, where $C_{i}$ and $k_{i}$ denote clustering coefficient and degree, respectively, and with the best-fit $\\gamma=\u22120.44$. Previous studies have shown that such a relationship (with varying $\\gamma$ < 0) is common to many real-world networks (Ravasz and Barab\u00e1si, 2003), including the human connectome (Klimm et al., 2014). While the small-world network exhibits a clustering coefficient distribution similar to that of the connectome (Oh et al., 2014), as well as an inverse relationship between clustering coefficient and degree, these similarities are superficial: inspecting Figure 1e reveals that the small-world network\u2019s degree distribution is much more homogeneous. While the scale-free network partly captures the connectome\u2019s degree distribution, its nodes have a much lower clustering coefficient, and there is a weaker relation between these two metrics (Figure 1f). The degree-controlled random model shows that shuffling the connectome\u2019s edges yields a graph resembling the scale-free network (Figure 1d). Thus, these graphs fail to capture key aspects of the connectome\u2019s undirected structure.\n\nPrevious modeling efforts have shown that several properties of brain networks can be captured by simple models, which assume that spatially nearby nodes are more likely to connect than distal ones (Song et al., 2014; Kaiser et al., 2009; Ercsey-Ravasz et al., 2013; Kaiser and Hilgetag, 2004). Therefore, we explored an undirected spatially embedded network model. We first assigned to each node a spatial position randomly sampled from a 7\u00a0mm x 7\u00a0mm x 7\u00a0mm cube, which gave an inter-nodal distance distribution similar to the connectome (Figure 5\u2014figure supplement 1). Edges were then added between pairs of nodes $i$ and $j$ by choosing node $i$ at random and node $j$ with probability $P_{ij}\u221dexp(\u2212d_{ij}/L)$. That is, the probability of choosing a target node $j$ decayed with the Euclidean distance $d_{ij}$ between nodes $i$ and $j$ according to length constant L (see 'Materials\u00a0and\u00a0methods'). We call this rule proximal\u00a0attachment\u00a0(PA).\n\nRelative to the connectome, the purely geometric model exhibited relatively narrow Gaussian-like degree distributions across several values of L (Figure 2a). Thus, the PA rule fails to generate low- and high-degree nodes. This geometric model does, however, exhibit an inverse relationship between degree and clustering (Figure 2b) as in the connectome. However, Figure 2b demonstrates that there is no value of L for which this model adequately captures the joint degree-clustering distribution seen in the connectome; the PA model misses both low-degree nodes with high clustering and high-degree nodes with low clustering. This suggests that the purely geometric rules explored in previous studies (Song et al., 2014; Kaiser et al., 2009; Ercsey-Ravasz et al., 2013; Kaiser and Hilgetag, 2004) are not sufficient to recreate the mouse connectome\u2019s properties. Therefore, we explored the hypothesis that topological rules, which are based on properties of individual nodes, play an important role in forming the connectivity patterns of the mouse connectome.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/12366/elife-12366-fig2-v1.jpg)\n\n**Figure 2.:** (a) The degree distribution for networks grown with three values of L (in mm), each averaged across 100 repeats. The mouse connectome is shown for comparison. (b) Clustering coefficient as a function of degree for representative networks grown with the same values of L used in (a).\n\n### The directed perspective and novel random graphs\n\nConventionally, topological rules in generative network models have been applied to undirected networks. However, the mouse connectome contains directed edges, allowing us to probe whether the directionality of connections in the mouse connectome plays a role in shaping connectivity patterns. In a directed graph, edges point from source nodes to target nodes, so one can consider each node\u2019s in-degree and out-degree (i.e. the total number of incoming and outgoing connections for a node, respectively). We found a surprisingly asymmetric relationship between these distributions in the connectome \u2012 while the in-degree of the network was approximately normally distributed, the out-degree distribution exhibited a peak near zero and a long tail (Figure 3a), much like an exponential distribution. There was no significant correlation between in- and out-degree (\u03c1\u00a0=\u00a00.127,\u00a0p\u00a0=\u00a00.065, Spearman rank correlation). Figure 3b shows the proportion of incoming edges as a function of total degree for all nodes in the mouse connectome. As the total degree of a node increases, the proportion of incoming edges decreases.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/12366/elife-12366-fig3-v1.jpg)\n\n**Figure 3.:** (a) Out-degree as a function of in-degree for all nodes in the mouse connectome. Margins show in- and out-degree distributions with the blue lines and axis labels corresponding to a logarithmic scale. In-degree is approximately normally distributed while the out-degree approximately follows an exponential distribution. (b) Proportion in-degree as a function of total degree (i.e. in-degree divided by the sum of incoming and outgoing edges). Low-degree nodes tend to have mostly incoming edges, whereas\u00a0high-degree nodes are characterized by mostly outgoing edges.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12366/elife-12366-fig3-figsupp1-v1.jpg)\n\nTo model the directed mouse connectome, we extended the purely geometric PA model by considering two mathematically symmetrical, yet phenomenologically distinct frameworks: target attraction and source\u00a0growth (TAPA and SGPA). When adding an edge in the TAPA model, a target node is chosen with a probability proportional to its in-degree, while the source node is chosen with a probability that decreases with its distance from the target node (Figure 4, top). In the SGPA model, a source node is chosen with a probability proportional to its out-degree, while the target node is chosen with a probability that decreases with its distance from the source node (Figure 4, bottom). The TAPA and SGPA models can be considered directed spatial variants of the preferential attachment algorithm introduced by Barabasi and Albert (1999) and lead to \u201crich-get-richer\u201d patterns of either incoming or outgoing connection formation. In both cases, all nodes were initialized upon network instantiation (unlike in the preferential attachment algorithm where nodes are added iteratively), and directed edges were added iteratively until the number of edges matched the mouse connectome. Since these models also incorporated the geometric PA property, both models were parameterized by a single free parameter L exactly as in the PA model.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/12366/elife-12366-fig4-v1.jpg)\n\n**Figure 4.:** The numbers inside each node indicate the probability of growth or attachment. For illustration, the most probable node (dashed) is selected in both diagrams (T and S, corresponding to target and source, respectively). Top row: target attraction proximal attachment (TAPA) model. A target node is selected with a probability proportional to its in-degree (left), while the source node is chosen with a probability that decreases exponentially with the node\u2019s Euclidean distance from the target (right). Two nodes have zero probability of forming an edge since the target is already receiving projections from these nodes. The dashed red line shows the most probable edge. Bottom row: source\u00a0growth proximal attachment (SGPA) model. A source node is selected with a probability proportional to its out-degree (left), while the target node is chosen with a probability that decreases exponentially with the node\u2019s Euclidean distance from the source (right). The dashed cyan line shows the most probable edge. In both algorithms, we assume that each node begins with a self-connection (corresponding to an outgoing and incoming edge) to avoid zero-valued probabilities, though self-connections are not shown here or included when calculating any metrics.\n\n### Comparison of the connectome to the directed graph models\n\nThe SGPA model exhibits an in-degree distribution that is approximately normal and an out-degree distribution that is approximately exponential (Figure 5a, cyan). This is matches the mouse connectome (Figure 3a) but is exactly opposite for the TAPA model (Figure 5a, red). Figure 5b shows proportion in-degree as a function of total degree (in-degree + out-degree) for both network models. In the SGPA model (and the mouse connectome; Figure 3b), high-degree nodes tend to have a large proportion of outgoing connections. Again, this is opposite of the TAPA model, where high-degree nodes tend to have a large proportion of incoming connections. These results suggest that the directed graph theoretic properties of the mouse connectome are best captured by a SG model of network generation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/12366/elife-12366-fig5-v1.jpg)\n\n**Figure 5.:** (a) Out-degree as a function of in-degree for both algorithms with L = 0.725\u2009mm, which was chosen to match the connectome\u2019s reciprocity \u2012 see e). Margins show in- and out-degree distributions. (b) Proportion in-degree as a function of total degree for both algorithms. The SGPA model qualitatively captures the connectome\u2019s directed degree distributions and proportion in-degree (cf. Figure 2). (c) Edge length distribution for the connectome, shown for both reciprocal (blue) and non-reciprocal edges (black). (d) Same as (c) but for the SGPA model. (e) Reciprocity coefficient as a function of the length parameter for both TAPA (red) and SGPA (cyan), with shading indicating standard deviation over 100 repeats. Both models intersect the connectome at L = 0.725\u2009mm. For reference, the reciprocity coefficient for the connectome (magenta) and a corresponding degree-controlled random graph (gold) are also shown. SGPA and TAPA models overlap.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12366/elife-12366-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) In- and out-degree are independent and both are approximately normally distributed. (b) Proportion in-degree is independent of total degree.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12366/elife-12366-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The qualitative properties of the in- and out-degree distributions are the same as in SGPA and TAPA with L = 0.725.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/12366/elife-12366-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** Hotter colors indicate more recently added nodes. (a) Out- and in-degree relationships for one representative model instantiation with L = 0.725 mm. (b) Proportion in-degree as a function of total degree.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/12366/elife-12366-fig5-figsupp4-v1.jpg)\n\n**Figure 5\u2014figure supplement 4.:** The use of a 7\u00a0mm x 7\u00a0mm x 7\u00a0mm cube was justified on the basis that its inter-nodal distance distribution closely mimicked that of the connectome. The results did not change considerably when coordinates from the mouse brain were used instead of the 7\u00a0mm\u00b3 cube.\n\n![Figure 5\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/12366/elife-12366-fig5-figsupp5-v1.jpg)\n\n**Figure 5\u2014figure supplement 5.:** In both (a) and (c), there are significant correlations between the in- and out-degrees (\u03c1\u00a0= 0.45, p< 10-10\u00a0and\u00a0\u03c1\u00a0= 0.60, p < 10-10\u00a0for (a) and (b), respectively; Spearman rank correlation). In all graphs, L = 0.725 mm.\n\nPrevious work has shown that both the reciprocity coefficient and average clustering coefficient of the brain are well above chance (Oh et al., 2014; Rubinov and Sporns, 2010; Felleman and Van Essen, 1991; Kaiser and Varier, 2011). We found that the mouse connectome has a reciprocity coefficient of 0.13, which is high compared to that expected from chance (0.03). Reciprocal edges in the connectome are on average shorter than nonreciprocal edges (Figure 5c; t(8818) = 13.25, p << 10-10, independent samples t-test; Cohen\u2019s d = 0.47). As shown in Figure 5e, the reciprocity coefficient of our model networks decreases with increasing length constant, approximately matching that of the mouse connectome (0.13) when L = 0.725\u2009mm for both the SGPA and TAPA models. However, fitting the length constant to reciprocity (e.g. in the SGPA model) underestimates the physical edge lengths of the connectome (compare Figure 5c to d). Using a larger length constant improved the fit to the reciprocal and nonreciprocal edge length distributions (not shown), but reduced the model\u2019s reciprocity.\n\nIncorporating SG into the PA model increases the width of the degree distribution, allowing the model to also capture the joint clustering-degree distribution seen in the connectome (Figure 6a). A network grown solely with the PA rule and a random degree-controlled network both showed a joint clustering-degree distribution that differed from the connectome\u2019s, again suggesting that both topological and geometric rules are important when modeling the connectome. The inset in Figure 6a quantifies this by showing that the SGPA model\u2019s fitted power law relationship between clustering coefficient and degree is the most similar to the connectome. Additionally, this increased clustering is spatially localized: In the connectome, there is a negative correlation between a node\u2019s clustering coefficient and its mean edge length. That is, nodes with short average edge lengths tend to be highly clustered (\u03c1\u00a0= -0.238, p < 10-6, Spearman rank correlation). A similar, but stronger relationship occurs in the SGPA model (median \u03c1\u00a0= -0.482, p < 10-10, Spearman rank correlation).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/12366/elife-12366-fig6-v1.jpg)\n\n**Figure 6.:** (a) Clustering-degree joint distribution for connectome and one representative instantiation of each model graph. Inset: best-fit power-law exponent $\\gamma$ (see 'Materials\u00a0and\u00a0methods') for the connectome ($\\gamma$ = -0.44, $R^{2}=0.58$) and random (mean $\\gamma$ \u00b1 std. = -0.17 \u00b1 0.02, median $R^{2}=0.16$), SGPA (mean $\\gamma$ \u00b1 std. = -0.48 \u00b1 0.04, median $R^{2}=0.59$), and geometric PA (mean $\\gamma$ \u00b1 std. = -0.80 \u00b1 0.06, median $R^{2}=0.42$) models. (b) Distributions of nodal efficiencies (see 'Materials\u00a0and\u00a0methods') with mean \u00b1 standard deviation (line and shaded regions, respectively) for model networks. Mean \u00b1 standard deviation of mean nodal efficiency (averaged over nodes) is 0.409 \u00b1 0.001 for the random model, 0.393 \u00b1 0.004 for the SGPA model, and 0.426 \u00b1. 001 for the pure geometric model. The connectome\u2019s average nodal efficiency is 0.375. The PA model\u2019s histogram peaks at 279 at a nodal efficiency of 0.44. (b) and the inset in a) both used 100 sample instantiations of each model.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12366/elife-12366-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Clustering-degree joint distribution for connectome and one representative instantiation of each model graph. The inset shows best-fit power-law exponents, as in Figure 6 (ER: mean $\\gamma$ \u00b1 std. = -0.01 \u00b1 0.04, median R2 = 0.00; TAPA: mean $\\gamma$ \u00b1 std. = -0.47 \u00b1 0.035, median R2 = 0.60). (b) Distributions of nodal efficiencies (see 'Materials\u00a0and\u00a0methods'). Solid lines are means and shaded regions are standard deviations. (b) and the inset in (a) both used 100 sample instantiations of each model. Mean \u00b1 standard deviation (taken over 100 graph instantiations) of mean nodal efficiency (averaged over nodes) is 0.467 \u00b1 0.002 for ER, 0.395 \u00b1 0.003 for TAPA.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12366/elife-12366-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** For the SGPA model, the line and shaded region represent the mean and standard deviation across 100 graph instantiations.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/12366/elife-12366-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Hotter colors indicate more recently added nodes.\n\n### Higher order connectivity statistics\n\nOur previous analyses of degree, in-degree, out-degree, and clustering coefficient distributions describe the connectivity patterns of a node in the context of its immediate neighbors. To examine the role played by each node in the context of the entire network, we calculated distributions of nodal efficiency. A node\u2019s nodal efficiency is defined as the mean inverse directed shortest path length between itself and all other nodes in the network and quantifies the ease with which that node can theoretically transmit information to all other nodes (see 'Materials and methods'). As shown in Figure 6b, there was a close match between the nodal efficiency distributions for the connectome and the SGPA model (with L = 0.725\u2009mm): both exhibited an approximately normal distribution, save for a small selection of nodes with zero-valued nodal efficiency (corresponding to nodes with no outgoing connections). A degree-controlled random graph also showed approximately normally distributed nodal efficiency distributions, but the mean of the distribution was slightly higher than either the SGPA model or the mouse connectome. In contrast, the purely geometric PA model showed a sharply peaked nodal efficiency distribution, similar to what one would expect for a directed Erdos-Renyi graph (Figure 5\u2014figure supplement 1, Figure 6\u2014figure supplement 1). This analysis suggests that the SGPA model captures the statistical connectivity patterns of individual nodes in relation to the whole network.\n\nPrior work has shown that a network\u2019s resilience to the removal of nodes can provide insight into its structural composition (Newman, 2010; Kaiser et al., 2007). These studies typically explore the structure of undirected networks, so for our analyses we converted the directed SGPA model to an undirected one by ignoring directionality of edges (see 'Materials\u00a0and\u00a0methods'). We then simulated a lesioning (or percolation) process to compare the undirected SGPA model and other standard undirected models to the mouse connectome. When nodes (and the edges connected to them) were removed in order of decreasing degree (i.e. targeted attack), the SGPA model\u2019s global efficiency (akin to nodal efficiency; see 'Materials\u00a0and\u00a0methods') and largest (giant) component size both decreased in a manner more similar to the mouse connectome than any standard graph (Figure 7). However, Figure 7a shows that the mouse connectome disintegrates the fastest, and Figure 7b shows that the global efficiency falls more rapidly in the connectome than any model. Thus, the connectome appears more vulnerable to targeted attack than the model networks explored here.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/12366/elife-12366-fig7-v1.jpg)\n\n**Figure 7.:** Mean values (lines) \u00b1 standard deviations (shaded regions) are plotted for each model after 100 repeats. (a) Size of the largest (giant) connected component in response to targeted attack. The randomly shuffled connectome (Random) is obscured by the scale-free graph. (b) Global efficiency for the mouse connectome and network models in response to targeted attack.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12366/elife-12366-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (a) Connection density as a function of nodes removed (for comparison with Figure 7). Except for the small-world network, the connection density was changed similarly throughout the lesioning process. Mean values (lines) \u00b1 standard deviations (shaded regions) are plotted for each model after 100 repeats. (b) Global efficiency and connection density at each point during the lesioning process for representative networks grown in the same manner as Figure 7. Note that global efficiency varies across graphs even at similar connection densities.\n\nThe density of edges can influence some metrics (like global efficiency). To test if our lesioning results were a product of connection density (which is itself determined by degree distribution), rather than connectivity patterns specific to each model, we also investigated the connection density throughout the lesioning process (Figure 7\u2014figure supplement 1a). We found that, throughout the lesioning process, the connectome\u2019s connection density was similar to that of all models except the small world network (and necessarily matched the degree-controlled random graph). We also found that while global efficiency and connection density were correlated, their specific relationship depended on the model (Figure 7\u2014figure supplement 1b). Interestingly, the way these two variables were related in the connectome most resembled how they were related in the SGPA model, relative to all the others. This shows that the results in Figure 7 are not simply due to differences in degree distribution and the dependence of global efficiency on connection density. Therefore, we propose that these lesioning results expose differences in higher order connectivity structure between the connectome and the examined models. Average global efficiency and other undirected metrics are shown in Table 1.\n\n**Table 1.**\n Average undirected metrics for the connectome, standard, and model networks. For the random, small-world, scale-free, and SGPA models, the standard deviation for 100 repeats is also shown. See\u00a0Table 2 for metric definitions. Note that properties for the original (single-hemisphere) connectome are presented in Oh et al. (2014).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Clustering</th>\n      <th>Characteristic path length</th>\n      <th>Global efficiency</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Connectome</td>\n      <td>0.361</td>\n      <td>2.226</td>\n      <td>0.492</td>\n    </tr>\n    <tr>\n      <td>Random</td>\n      <td>0.140 \u00b1 0.0013</td>\n      <td>2.002 \u00b1 0.0020</td>\n      <td>0.528 \u00b1 0.0003</td>\n    </tr>\n    <tr>\n      <td>Small-world</td>\n      <td>0.359 \u00b1 0.0058</td>\n      <td>2.129 \u00b1 0.0058</td>\n      <td>0.507 \u00b1 0.0010</td>\n    </tr>\n    <tr>\n      <td>Scale-free</td>\n      <td>0.159 \u00b1 0.0037</td>\n      <td>1.998 \u00b1 0.0026</td>\n      <td>0.527 \u00b1 0.0004</td>\n    </tr>\n    <tr>\n      <td>SGPA</td>\n      <td>0.343 \u00b1 0.0094</td>\n      <td>2.166 \u00b1 0.0159</td>\n      <td>0.501 \u00b1 0.0027</td>\n    </tr>\n  </tbody>\n</table>\n\n## Discussion\n\nThe Allen Mouse Brain Connectivity Atlas (Oh et al., 2014) provides a unique view into the mesoscale structure of the mammalian brain. Through anatomical tracing experiments using genetically identical mice registered to a common reference frame, this dataset permitted a graph theoretic analysis of whole-brain connectivity. We first showed that the connectome\u2019s lower degree nodes are more clustered \u2012 a relationship absent in the standard random graphs used in the literature. We then demonstrated that in-degree is approximately normally distributed and out-degree is approximately exponentially distributed in the connectome; because in- and out-degree were uncorrelated, this meant that nodes with more total connections tended to have a higher percentage of outgoing connections. Additionally, we found that reciprocal edges were shorter than nonreciprocal edges on average and that the proportion of reciprocal edges was substantially higher in the connectome than that expected by chance. Finally, we developed a directed generative network model based on two simple rules: SG and PA. This directed model captures many (but not all) spatial and graph theoretic properties of the mouse connectome and provides important biological insights into the organizational principles governing neural connectivity at the mesoscale, which we discuss later.\n\n### The importance of directed analysis\n\nThe fact that in- and out-degree were differentially distributed in the connectome highlights an important limitation of undirected graphs: they do not discriminate between in- and out-degree distributions and may therefore fail to reveal key connectivity properties arising from such directed structure. Interestingly, the in- and out-degree relationships observed at other scales and in other organisms differ from our findings here. For instance, the C. elegans connectome (for the full nervous system) (White, 1985) has nearly identical in- and out-degree (exponential) distributions (Amaral et al., 2000). While numerous studies have found common properties across scales (e.g. small-worldness), more pronounced differences in network structure, such as different in- and out-degree distributions, suggest that a single set of generative rules cannot capture the brain\u2019s network structure across different scales and/or organisms.\n\n### Indications of functional segregation and integration in the connectome\n\nFunctional segregation and integration comprise two components of a framework commonly used to interpret brain network architecture (Rubinov and Sporns, 2010; Tononi et al., 1994). Functional segregation asserts that the brain carries out specialized computations in anatomically localized and highly interconnected regions. As high clustering coefficient is thought to indicate potential for participation in this sort of computational unit (Rubinov and Sporns, 2010), our finding that nodes with a small number of neighbors tend to be highly clustered suggests that these nodes are candidates for specialized processing. However, functional data would be required to validate this conjecture since high clustering coefficient does not necessarily imply grouping of nodes into specialized clusters. Functional integration predicts that some high-degree \u201chub\u201d brain regions consolidate the results of these specialized computations for higher function (e.g. as in behavior and perception) (Friston, 2002). Surprisingly, connections associated with such hub nodes were primarily outgoing in the directed connectome (Figure 3b). Assuming again that anatomical connectivity is indicative of functional relationships, our results suggest that hubs play a stronger role in distribution, rather than integration, of information. However, these ideas are not necessarily contradictory \u2012 it is possible that many brain regions are involved in both integration and distribution to varying extents. In fact, the proportion in-degree distribution roughly resembles a uniform distribution (Figure 3\u2014figure supplement 1) suggesting a continuum of these properties rather than discrete categories.\n\nAbove-chance reciprocity, as we found in the mouse connectome, is also hypothesized to be important for functional integration and segregation (Tononi et al., 1994). Previous work has suggested that bidirectional connections between brain regions constrain the dynamics in such a way that a balance arises between the two (Tononi et al., 1992; Sporns et al., 1991). Considering the propensity for feedback within the brain, however, perhaps the relatively high reciprocity is not surprising. Like the asymmetric degree distributions, the connectome\u2019s high reciprocity also highlights the importance of using directed graph models (as opposed to undirected ones) when analyzing brain networks.\n\n### Organizational principles of the mouse connectome\n\nThe generative rules explored here follow from a series of recent publications attempting to develop generative network models of animal connectomes (Song et al., 2014; Kaiser et al., 2009; Ercsey-Ravasz et al., 2013; Klimm et al., 2014; Betzel et al., 2015; Lim and Kaiser, 2015). Several papers have documented the importance of PA in generative network models of animal connectomes (Song et al., 2014; Kaiser et al., 2009; Ercsey-Ravasz et al., 2013; Klimm et al., 2014; Kaiser and Hilgetag, 2004). For example, Kaiser et al. (2009) noted that if axonal outgrowth occurs in a straight line and the axon attaches to the first node it physically encounters, then the probability of connecting to a target neuron depends exponentially on the target\u2019s distance from the source neuron (Kaiser et al., 2009). Previous research has also shown that some chemical gradients responsible for axon guidance decay exponentially with distance (Murray, 1993; Isbister et al., 2003) and have been modeled as such (Mortimer et al., 2009). Similarly, Rubinov et al. (2015), recently reported that distance-dependent inter-areal connection strengths in the mouse connectome were best captured by a power law. We explored a purely geometric model based on PA and found that while this model induces clustering between low-degree nodes, it fails to account for the broad degree distribution of the connectome. This motivated the exploration of two mathematically symmetric generative models that included an additional topological rule: target attraction proximal attachment (TAPA) and source growth proximal attachment (SGPA).\n\nOnly when incorporating the source-growth rule could we capture the in- and out-degree distributions of the mouse connectome. Note that these distributions arise independently of the PA rule, but other characteristics require it, as discussed previously (see Figure 5\u2014figure supplement 2 for the in- and out-degree distributions of a graph with source-growth but not PA). To explore whether source selection based specifically on out-degree was a necessary property, we also examined a network grown with source selection probability proportional to the total degree raised to a power. While this model also exhibited many of the connectome\u2019s properties, it makes predictions that are not observed in the connectome (e.g. it predicts that the number of incoming and outgoing connections should be correlated; Figure 5\u2014figure supplement 5); the model itself also requires an additional parameter. This indicates that a SG rule specifically depending on out-degree is a better candidate mechanism for generating the properties of mouse connectome.\n\nOur results indicate that much of the organizational structure of the mouse connectome is captured by the geometric and topological generative rules employed by the SGPA model. The ability of these simple rules to closely capture the mouse connectome\u2019s network structure raises the possibility that brain organization at the mesoscopic scale does not require precise specification of connectivity (e.g. through genetic or transcriptional factors), but might instead be largely based on a set of relatively simple instructions. Many generative schemes proposed previously, such as the homophilic rules by Betzel et al. (2015)\u00a0(nodes with similar graph theoretic properties are more likely to connect), or the minimal wiring length networks by Klimm et al. (2014), are also based on simple connectivity rules, but these rules are not readily interpretable in terms of biophysical processes. We previously discussed possible biological underpinnings of the geometric PA rule, but the topological SG rule also lends itself to speculation on a set of possible biological mechanisms.\n\n### A biophysical interpretation of source growth\n\nThe source growth rule might be realized during brain development by the actions of a family of proteins known as neurotrophins, which play a major role in promoting the survival of innervating neurons (Huang and Reichardt, 2001; Chao, 2003) and the growth and branching of their axons (Tessier-Lavigne and Goodman, 1996). Found throughout both the central and peripheral nervous systems, these proteins are typically secreted by a target (postsynaptic) neuron at functional synapses, endocytosed by a source (presynaptic) neuron, and retrogradely transported to the source neuron\u2019s soma, where they trigger the above-mentioned processes (Huang and Reichardt, 2001; Korsching, 1993). Because neurotrophins are available in limited quantities, they are hypothesized to cause competitive interactions among growing neuronal populations (van Ooyen and Willshaw, 1999). Indeed, such an interaction resembles the way in which a single source node is probabilistically selected for each edge addition in the SGPA model (as opposed to allowing all nodes to generate outgoing connections simultaneously). Most importantly, since populations that maintain many functional outgoing connections will tend to receive more neurotrophins, they should on average be more fit for survival and new connection generation, and their existing connections should be more likely to branch. This would in turn increase their probability of establishing new connections to novel targets. Such a biological mechanism would lead to the \u201crich-get-richer\u201d phenomenon for outgoing connections that was fundamental in modeling the network properties of the mouse connectome.\n\n### A non-power law explanation of the connectome\u2019s undirected degree distribution\n\nA final insight provided by the SGPA model concerns the undirected degree distribution in the mouse connectome. Degree distributions in the brain have often been characterized by power laws, where $p(k)\u221dk^{\\gamma}$ for some $\\gamma<0$ (Bullmore and Sporns, 2009; Kaiser et al., 2007). The SGPA model provides an alternative because the in- and out-degree distributions are driven by different rules. In-degree is approximately Gaussian because of the central limit theorem (connections are random in the sense that they only depend on distance and not degree or other topological properties), and out-degree is approximately exponential, owing to the SG process. If in- and out-degree are independent, as they are in our model and seem to be in the connectome, the distribution of their sum (i.e. of total degree) will be the convolution of the two individual distributions. Thus, we would expect the distribution over undirected degree (which is approximately the sum of in- and out-degree, the approximation arising since we do not count reciprocal edges twice) to approach the convolution of a Gaussian and an exponential, that\u00a0is, an exponentially modified Gaussian (Figure 6\u2014figure supplement 2). Additionally, the SGPA model is able to capture the low-degree portion of the distribution (Figure 1b) unlike the scale-free graph. This serves as a more biologically motivated alternative to the power-law degree distribution often used to describe the brain\u2019s network properties.\n\n### Limitations of the SGPA model\n\nWhile the SGPA model captured a number of the connectome\u2019s characteristics, there are also limitations worth highlighting. Our choice to instantiate all the nodes at the start of the network\u2019s generation is somewhat biologically implausible. This is different from the Barabasi-Albert algorithm used to generate scale-free graphs where, aside from an initial group of nodes, all the nodes are added sequentially over time. However, a version of our SPGA model in which nodes are added one-by-one (see 'Materials and methods') yielded a qualitatively similar network (see Figure 5\u2014figure supplement 3 and Figure 6\u2014figure supplement 3). The only notable differences were that the youngest nodes had an extremely low degree and a clustering coefficient of either zero or one, and that there was a positive correlation between in- and out-degree. This deviation from the properties observed in the mouse connectome could potentially be corrected by \u201cpruning\u201d the final network or by modifying the probability of generating new connections as the final nodes are added.\n\nIn our simulations, we chose to randomly draw node positions from a 7 mm\u00b3 cube to spatially embed our model. The dimensions of this cube were chosen to match the inter-nodal distance distribution of the connectome (Figure 5\u2014figure supplement 4). All the simulations we explored, however, yielded comparable results when run with node coordinates determined by the centroids of brain regions in the connectome. One interesting feature of the SGPA model is that it predicts that edge lengths should be significantly shorter than those observed in the connectome. This is a consequence of fitting the length constant to the connectome\u2019s reciprocity. A more satisfactory fit to the edge length distribution can be obtained by using a larger length constant, but this substantially reduces the reciprocity and degrades the inverse relationship observed between clustering and degree (Figure 6a). Equivalently, we can scale the dimensions of the model, which allows us to match the reciprocity and the edge length distribution but not the inter-nodal distance distribution. Thus, our model is unable to account for both the edge length distribution and the reciprocity of the connectome while also maintaining the appropriate dimensionality.\n\nWithin the lesioning analysis, we found that the connectome is more susceptible to targeted attack than our generative SGPA model network (or any other model). This suggests that the mouse connectome is less resilient than the synthetic networks explored here. More broadly, addressing whether the SGPA model can reproduce the macroscale hierarchical modularity recently reported by Rubinov et al. (2015) is also a target for future research. Previous work on targeted attacks on the macaque and cat macroscale connectome has shown different patterns of results (Kaiser et al., 2007), but it is difficult to assess whether this is due to differences in the organism (mouse vs. monkey or cat), scale (meso vs. macro), or both.\n\nLastly, we treated the entire connectome as a network grown with homogeneous growth rules. The success of our approach lends some merit to this assumption, but it is nevertheless likely that cortico-subcortical connections follow different generative rules than cortico-cortical ones, for example. A similar point was raised by Kaiser and Varier (2011) and Oh et al. (2014) \u2012 both noted that cortico-cortical projections have higher reciprocity than cortico-subcortical ones in macaque macroscale and mouse mesoscale connectomes, respectively. Uncovering the differences in generative rules employed by subnetworks in the brain, as well as those at different scales or time points, is a target for future research. Dynamically changing the physical scale of the model (e.g. to simulate physical growth) is another promising avenue for future work which some have begun to explore (Ozik et al., 2004), and may account for our inability to capture the edge length distribution in the connectome. Here, our network was embedded within a physical space that maintained a constant size. We did find that a node\u2019s age affected its final properties (Figure 5\u2014figure supplement 3, Figure 6\u2014figure supplement 3), but the growth of neural tissue typically occurs in an expanding physical space which may stretch or alter the oldest connections as development proceeds. Continued use of real data to both inspire and evaluate network models will be crucial for elucidating the principles that govern the network organization of connectomes.\n\n### Conclusions\n\nWe have characterized the network properties of the mouse mesoscale connectome, a system that highlights the importance of using spatial, directed graphs when modeling brain networks. A model that uses two simple organizational principles \u2012 source growth and proximal attachment \u2012 can capture a large number of directed, undirected and spatial network properties of the mouse connectome. Importantly, these rules have biologically plausible connections to developmental mechanisms and wiring properties in real brains. This model not only serves as a simple mathematical tool that can be used to model and understand mesoscopic brain organization, but also provides a parsimonious framework for informing future investigations of brain network formation.\n\n## Materials and methods\n\nAll code used in this analysis is available at https://github.com/neofunkatron/neofunkatron\n\n### Empirical connectivity graph\n\nTo generate a connectivity graph from empirical data, we used the mouse connectome developed by the Allen Brain Institute. To compile this dataset, anterograde tracers were injected in a single hemisphere and the authors traced projections into both hemispheres. Thus, the connectome probed connections originating in the right hemisphere and terminating in either the right or left hemisphere. The original work computed projection strengths and associated p-values (the probability that the observed projection would arise by chance) between 213 pairs of ipsi- and contralateral anatomically defined brain regions (Oh et al., 2014). To generate a binary adjacency matrix, we set all connection strengths with p<0.01 to one and all other elements to zero. This yielded a graph with a reasonable connection density for analysis. We then assumed that all connectivity projections were bilaterally symmetric in order to construct a 426 x 426 binary adjacency matrix, which completely defines a (single component) graph. The results remained qualitatively the same for alternative connection thresholds (p<0.05 and p<0.001).\n\n### Random graphs\n\nThe following sections describe the random graphs we included in our analysis. For each random graph, the number of nodes was set to 426, and the number of edges to 7804 (for undirected models) or 8820 (for directed models).\n\n### Standard random graphs\n\nStandard random graphs were generated in Python using the NetworkX module (https://networkx.github.io) (Hagberg et al., undefined). The small-world graph (Watts and Strogatz, 1998) is parameterized by the number of nodes n, the number of initial connections for each node $k_{SW}$, and the probability of rewiring, p. Here, we used $k_{SW}$\u00a0= 18 to match the mean degree of the connectome, and p=0.23 to approximately match the mean clustering coefficient of the connectome. The scale-free graph (Barabasi and Albert, 1999) is parameterized by the number of nodes n and the number of connections $k_{SF}$ formed by each node as it is added to the network. We used $k_{SF}$\u00a0= 18 to match the number of edges in the connectome. We generated the undirected degree-controlled random network by shuffling the mouse connectome\u2019s edges while holding the degree distribution constant (similar to Maslov and Sneppen, 2002); this generates a control graph with random connectivity but identical degree distribution. The directed degree-controlled random was generated in a similar way, except both the in- and out-degree distributions were held nearly fixed (\u201cnearly\u201d because the algorithm often converts a small number of edges to self- or double-connections, which are ignored in our analysis; however, these only represent about 5% of all connections). These standard graphs are similar to those used in Oh et al. (2014). The directed Erdos-Renyi graph was generated using NetworkX, with an edge probability of 0.0487, which on average yielded the number of directed edges present in the mouse connectome.\n\n### Custom random graphs\n\nThe following sections describe the algorithms used to generate the custom random graphs examined in this study.\n\n### Purely geometric models\n\nFor the purely geometric PA graph, 426 nodes were randomly assigned centroids within a 7\u00a0mm x 7\u00a0mm x 7\u00a0mm cube, with no edges connecting the nodes. We then generated each undirected edge by first selecting a source node $i$ at random and subsequently selecting a target node $j$ with probability $P_{ij}\u221dexp(\u2212d_{ij}/L)$, where $d_{ij}$ denotes the distance between node $i$ and node $j$. If an undirected edge already existed between the source and target, the probability of selecting that target was set to zero. Edges were added until the number of (undirected) edges matched that of the connectome (K=7804). The directed PA algorithm was identical, except that directionality of edges was retained. For the graphs incorporating topological rules (i.e. SGPA and TAPA), the growth algorithm was initialized by instantiating n nodes with no edges connecting them, except for one self-connection per node to prevent zero-valued connection probabilities for nodes with no outgoing or incoming edges (for SGPA and TAPA, respectively). However, these self-connections were ignored when calculating all metrics for the final graph. In all the graphs we generated (except for node-by-node SGPA), we matched n and K to the number of nodes and directed edges, respectively, in the empirical connectome (n = 426, K\u00a0= 8820).\n\n### TAPA random graph\n\nAt each step in the growth process an edge is added by (1) selecting the target node $j$ from all nodes without maximum in-degree according to the in-degree of $j$: , and (2) selecting the source node $i$ with a probability that decreases with distance from the target: $P(source=i|target=j)\u221dexp(\u2212d_{ij}/L)$. If a connection already existed from node $i$\u00a0to $j,$ this probability was set to zero to avoid a duplicate edge. $d_{ij}$ is the Euclidean distance between nodes $i$ and $j$, and L is a parameter governing the strength of distance-dependence. For the nonspatial TA graph (Figure 5\u2014figure supplement 2), the algorithm was as the TAPA algorithm, except the source was chosen with a uniform probability for all nodes (i.e. no distance-dependence).\n\n### SGPA random graph\n\nAt each step in the growth process an edge is added by (1) selecting the source node $i$\u00a0according to its out-degree as $P(source=i)\u221dk_{i}^{out}$ from all nodes that do not have maximal out-degree, and (2) selecting the target node $j$ with a probability that decreases with distance from the source: $P(target=j|source=i)\u221dexp(\u2212d_{ij}/L)$. If a connection already existed from node $i$\u00a0to $j,$ this probability was set to zero to avoid a duplicate edge. For the nonspatial SG graph (Figure 5\u2014figure supplement 2), the algorithm was as the SGPA algorithm, except the target was chosen with a uniform probability for all nodes (i.e. no distance-dependence).\n\nBoth the target attraction and source growth rules can be conceptualized as directed spatial variants of the preferential attachment rule introduced by Barabasi and Albert (1999).\n\n### Total-degree SGPA random graphs\n\nThis graph was identical to the SGPA graph mentioned above, except that probability of selecting the source node $i$ was proportional to its total degree (in-degree + out-degree) raised to a power $\\gamma$: $P(source=i)\u221d(k_{i}^{out}+k_{i}^{in})^{\\gamma}$. Target selection was as in the SGPA model.\n\n### Node-by-node SGPA random graph\n\nIn this algorithm, nodes are added one at a time with positions sampled uniformly from within a 7\u00a0mm x 7\u00a0mm x 7\u00a0mm cube until the graph contains 426 nodes. Upon each node addition (starting with the second node addition), each existing edge \u201cbranches\u201d with a probability p=0.016 (which was chosen so as to yield approximately the same number of edges as in the connectome). When an edge \u201cbranches\u201d a new edge is formed that has the same source node and whose target node is chosen with probability $P(target=j|source=i)\u221dexp(\u2212d_{ij}/L)$ (i.e. in the same way as in the standard SGPA model). If an edge already exists between the source node and the selected target node, no new edge is added. When all the edges and nodes have been added, any nodes that are not connected to the largest (giant) graph component (typically only three or four, representing <\u00a01% of the network) are removed from the graph.\n\n### Undirected metrics and lesioning of directed graphs\n\nSee Table 2 for metric definitions. We calculated undirected metrics (e.g. clustering coefficients and undirected degree) and carried out a lesioning study for directed graphs by first casting the directed graph to an undirected one. This yielded a graph which contained an undirected edge between every pair of nodes that had been connected by at least one directed edge in the directed graph.\n\n**Table 2.**\n Graph theoretical metrics used for analysis.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Metric</th>\n      <th>Brief interpretation</th>\n      <th>Definition</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Degree</td>\n      <td>Number of edges connected to a node. This generalizes to in- or out-degree in directed graphs, describing the number of incoming or outgoing connections for a node, respectively.</td>\n      <td>ki=\u2211j\u2208naij N=set\u00a0of\u00a0all\u00a0nodes aij=1,if\u00a0edge\u00a0from\u00a0node\u00a0i\u00a0to\u00a0j\u00a0exists0,otherwise Directed versions: kiin=\u2211j\u2208Naji\u200d \u200d \u200d \u200d \u200d\u200d \u200d \u200d \u200d \u200d \u200d kiout=\u2211j\u2208Naij aij=1,if\u00a0directed\u00a0edge\u00a0from\u00a0node\u00a0i\u00a0to\u00a0j\u00a0exists0,otherwise</td>\n    </tr>\n    <tr>\n      <td>Clustering coefficient (Watts and Strogatz, 1998)</td>\n      <td>Level of connectivity among nearest neighbors of node i</td>\n      <td>2tiki(ki-1) ti\u00a0=\u00a0number\u00a0of\u00a0triangles\u00a0that\u00a0include\u00a0node\u00a0i</td>\n    </tr>\n    <tr>\n      <td>Characteristic path length (Watts and Strogatz, 1998)</td>\n      <td>Mean shortest undirected path length over all pairs of nodes</td>\n      <td>1n(n\u22121)\u2211i,j\u2208N,j\u2260idij n\u00a0=\u00a0number\u00a0of\u00a0nodes dij\u00a0=\u00a0shortest\u00a0undirected\u00a0path\u00a0from\u00a0i\u00a0to\u00a0j</td>\n    </tr>\n    <tr>\n      <td>Global efficiency (Latora and Marchiori, 2001)</td>\n      <td>Mean inverse shortest undirected path length over all pairs of nodes</td>\n      <td>1n(n\u22121)\u2211i,j\u00a0\u2208N,j\u2260i1dij dij=\u00a0shortest\u00a0undirected\u00a0path\u00a0from\u00a0i\u00a0to\u00a0j</td>\n    </tr>\n    <tr>\n      <td>Nodal efficiency (generalized from [Achard and Bullmore, 2007])</td>\n      <td>Mean inverse shortest directed path length from a single node to all other nodes</td>\n      <td>1(n\u22121)\u2211j\u2208N,j\u2260i1dij dij\u00a0=\u00a0shortest\u00a0directed\u00a0path\u00a0from\u00a0i\u00a0to\u00a0j</td>\n    </tr>\n    <tr>\n      <td>Reciprocity coefficient</td>\n      <td>Proportion of edges from node i to node j that have a reciprocal connection from node j to node i (when i\u2260j)</td>\n      <td>1Ne\u2211i,j\u2208N,j\u2260iaijaji aij\u00a0=1,if\u00a0directed\u00a0edge\u00a0from\u00a0i\u00a0to\u00a0j\u00a0exists0,otherwise Ne\u00a0=\u00a0total\u00a0number\u00a0of\u00a0undirected\u00a0edges</td>\n    </tr>\n  </tbody>\n</table>\n",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "8c251ef7-50c1-4c2f-a6cc-4e6e012049de",
+      "submission_id": "bdd35a9e-214f-42b8-aaae-cdf3a6205aa7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Heidi Johansen-Berg, University of Oxford , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.12366.024](https://doi.org/10.7554/eLife.12366.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"A simple generative model of the mouse mesoscale connectome\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by Heidi Johansen-Berg as the Reviewing Editor and David Van Essen as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this submission the authors tackle the important topic of generative models for neural systems. Novel features, compared to previous models for mouse and human connectome, are: (a) mechanisms for connection establishment that do not rely on any topological information about the target node, (b) mechanisms that can reproduce the distribution of uni-directional vs. bi-directional connections (reciprocity), and (c) a better link to the underlying biological mechanisms that could implement the observed connection establishment rules.\n\nWe recognize that the manuscript provides many significant novel advances but we highlight two key issues that need to be addressed in a revision.\n\nEssential revisions:\n\n1) As the authors note, a number of recent studies have also made contributions to this area. The take-home message from these studies has been that including geometric (spatial) information about a network's embedding in a generative model will tend to result in better-fitting synthetic networks. This highlights a weak point of the submission. The authors initially propose two growth mechanisms (\"source growth\" and \"target attraction\"), both of which form links according to topological relationships only rather than geometric or geometric + topological relationships. When the authors add geometric information to the model they observe that the synthetic networks generated by the model more closely resemble the mouse connectome. This is hardly a surprising result.\n\nAs an improvement, we recommend that the authors test at least one purely geometric generative model. This is an essential step, because there is an expectation that geometry plays an important role in shaping connectomes and the authors should assess whether geometry, alone, can generate realistic-looking synthetic networks. Next, the authors should test more complicated wiring rules, similar to the one \u201cSGPA\u201d model that combine geometry + topology to generate links. Any contribution above and beyond that of the purely geometric model could be attributed to the topological component of the wiring rule. This is an approach similar to the references (Betzel et al., Neuroimage, 2015, Vertes et al., PNAS, 2012).\n\n2) There is one difference between the mouse connectome and the generated networks that might explain some of the observed differences. From the methods, it seems that there are no connections between the two hemispheres in the mouse connectome, that means there are two components with 213 nodes each (subheading \u201cEmpirical connectivity graph\u201d). For the generated networks, on the other hand, the there is a giant component that contains almost all of the 426 network nodes. This difference will influence the calculation of the characteristic path length and of the global efficiency and might therefore influence the robustness results presented in Figure 7. Moreover, they will also affect the higher modularity in the mouse connectome as the relative proportion of edges that exists within each hemisphere (component) will be higher than the edge density with the giant component of the generated networks. There are several ways how this could be fixed: one might assume connections between hemispheres within the mouse connectome but this is difficult if there is no experimental data to back this up. Or one might use generated networks that consists of 213 nodes and then duplicate that network (like the mirroring for the mouse) to generate a network with 426 nodes and two dis-connected components. In that way, both types of networks would have the same starting configuration.\n",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "21602f53-1177-4fa4-b21b-a571c20da7bb",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C1",
+      "claim": "Oh et al. (2014) recently published the most complete description of the mouse mesoscale connectome acquired to date.",
+      "claim_type": "EXPLICIT",
+      "source": "Oh et al. (2014) recently published the most complete description of the mouse mesoscale connectome acquired to date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Oh et al. (2014), indicating it is based on prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "55e8607f-3b5b-4b9f-a019-12f387252baf",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C4",
+      "claim": "The model captures essential principles governing network organization at the mesoscale level in the mouse brain.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that this model captures essential principles governing network organization at the mesoscale level in the mouse brain",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the data and analyses presented throughout the manuscript showing model fits to connectome properties.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "ba98d3c2-eca6-47d8-9ca6-4c4b8279e1b5",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C5",
+      "claim": "The model is consistent with biologically plausible developmental processes.",
+      "claim_type": "EXPLICIT",
+      "source": "is consistent with biologically plausible developmental processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the discussion of neurotrophins and developmental mechanisms in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "0b51073d-d417-41f5-95e1-3aab44018dfd",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C6",
+      "claim": "The Allen Institute for Brain Science constructed a mesoscale connectome for the mouse (the Allen Mouse Brain Connectivity Atlas).",
+      "claim_type": "EXPLICIT",
+      "source": "The Allen Institute for Brain Science recently constructed a mesoscale connectome for the mouse (the Allen Mouse Brain Connectivity Atlas), which was the first complete connectivity dataset of a mammalian brain at the mesoscale (Oh et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Oh et al. (2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "0fc78948-2d19-4c2c-baea-56f5d9b62a8e",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C7",
+      "claim": "The Allen Mouse Brain Connectivity Atlas was the first complete connectivity dataset of a mammalian brain at the mesoscale.",
+      "claim_type": "EXPLICIT",
+      "source": "which was the first complete connectivity dataset of a mammalian brain at the mesoscale (Oh et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Oh et al. (2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "3667fb00-0754-4e3e-850a-02289bb8d970",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C8",
+      "claim": "Oh et al. (2014) used injections of an anterograde fluorescent viral tracer and serial two-photon microscopy to map axonal tracts.",
+      "claim_type": "EXPLICIT",
+      "source": "Using injections of an anterograde fluorescent viral tracer and serial two-photon microscopy, Oh et al. (2014) comprehensively mapped both intra- and interhemispheric axonal tracts",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Oh et al. (2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "e1f74498-d411-4f5d-aaad-0777921cf389",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C9",
+      "claim": "Oh et al. (2014) estimated the directed connectivity structure among 213 non-overlapping anatomical regions.",
+      "claim_type": "EXPLICIT",
+      "source": "estimated the directed connectivity structure among 213 non-overlapping anatomical regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Oh et al. (2014) in the preceding sentence.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "9652b5eb-95b7-474e-984f-44b4473795e1",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C10",
+      "claim": "Basic network properties of the mouse connectome could not be explained by any one standard network model.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors also conducted a preliminary graph theoretic analysis and showed that basic network properties of the mouse connectome could not be explained by any one standard network model (Oh et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Oh et al. (2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "8c9f4211-f91d-4cb0-ab8e-a9b59e97b9af",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C11",
+      "claim": "Rubinov et al. (2015) identified small-worldness in the mouse connectome.",
+      "claim_type": "EXPLICIT",
+      "source": "Rubinov et al. (2015) extended this analysis by identifying small-worldness, a hierarchical modular structure, and non-optimal wiring in the connectome (Rubinov et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rubinov et al. (2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "f2c93b2f-b1a0-4447-942a-fb846296c967",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C12",
+      "claim": "Rubinov et al. (2015) identified a hierarchical modular structure in the mouse connectome.",
+      "claim_type": "EXPLICIT",
+      "source": "Rubinov et al. (2015) extended this analysis by identifying small-worldness, a hierarchical modular structure, and non-optimal wiring in the connectome (Rubinov et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rubinov et al. (2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "bcd2a681-5bc4-4d9e-9821-c9e6ed3199e4",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C13",
+      "claim": "Rubinov et al. (2015) identified non-optimal wiring in the mouse connectome.",
+      "claim_type": "EXPLICIT",
+      "source": "Rubinov et al. (2015) extended this analysis by identifying small-worldness, a hierarchical modular structure, and non-optimal wiring in the connectome (Rubinov et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rubinov et al. (2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "5eafb75b-1237-4d63-806e-62eecbe76952",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C14",
+      "claim": "Small-world networks are characterized by high clustering among nodes combined with short average path lengths between node pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "small-worldness (high clustering among nodes combined with short average path lengths between node pairs)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of small-worldness based on established knowledge in network science.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "67a6bc10-be8f-4e50-9124-07c64dd96c83",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C15",
+      "claim": "Scale-freeness is defined by power-law degree distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "scale-freeness (defined by power-law degree distributions)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of scale-freeness based on established knowledge in network science.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "ee64b0ee-2925-4818-a839-ed12d42421d7",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C16",
+      "claim": "Standard small-world and scale-free models ignore directionality, discarding information about differences in incoming and outgoing connection patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, small-world and scale-free models ignore directionality, intrinsically discarding information about differences in incoming and outgoing connection patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on knowledge of how these standard models are constructed.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "e0b4ef47-c003-4c21-8b2f-2728ada8d0d4",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C17",
+      "claim": "Directionality and spatial embedding are crucial considerations when modeling the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Both properties are crucial considerations when modeling the brain (Laughlin and Sejnowski, 2003; Song et al., 2014; Kaiser et al., 2009; Ercsey-Ravasz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "acf2c5c0-1b8f-4695-8c05-5d9ef32183a6",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C18",
+      "claim": "Recent work in developing plausible generative network models for the brain has primarily addressed spatial embedding.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work in developing plausible generative network models for the brain has primarily addressed spatial embedding (Song et al., 2014; Kaiser et al., 2009; Ercsey-Ravasz et al., 2013; Klimm et al., 2014; Kaiser and Hilgetag, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "1e8aae0e-8acf-4a4e-802a-629d21770064",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C19",
+      "claim": "A common theme in spatially embedded network models is that a node is more likely to connect to nearby nodes than distal ones.",
+      "claim_type": "EXPLICIT",
+      "source": "a common theme is that a node is more likely to connect to nearby nodes than distal ones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the cited literature on spatially embedded models.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "f5028744-4084-4ac1-b510-f8953bd2bc26",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C20",
+      "claim": "Spatial proximity organizational principle has been able to capture the distribution of connection lengths.",
+      "claim_type": "EXPLICIT",
+      "source": "This organizational principle has been able to capture a range of properties observed in the cortex, including the distribution of connection lengths (Song et al., 2014; Kaiser et al., 2009; Ercsey-Ravasz et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "23a0a099-e443-4d9c-b80f-ebac498fdb88",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C21",
+      "claim": "Spatial proximity organizational principle has been able to capture the inverse relationship between degree and clustering coefficient.",
+      "claim_type": "EXPLICIT",
+      "source": "the inverse relationship between degree and clustering coefficient (Watts and Strogatz, 1998; Song et al., 2014; Betzel et al., 2015; Mitra, 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "11291857-b75f-4179-ad4b-c4ddeace84d4",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C22",
+      "claim": "Spatial proximity organizational principle has been able to capture the relative frequency of three-node motifs.",
+      "claim_type": "EXPLICIT",
+      "source": "and the relative frequency of three-node motifs (Ercsey-Ravasz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "feb15853-9c7b-4eeb-97e4-84c99d750246",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C23",
+      "claim": "Betzel et al. (2015) reported that individual human macroscale connectomes are well-fitted by generative network models using both spatial proximity and homophilic attraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Betzel et al., (2015), recently reported that individual human macroscale connectomes are well-fitted by generative network models, which use both spatial proximity and homophilic attraction (i.e. nodes with similar graph theoretic properties are more likely to form connections).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Betzel et al. (2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "03bd98ec-b25c-46ba-9559-335961353c30",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C24",
+      "claim": "The homophilic rules employed by Betzel et al. do not lend themselves to straightforward biophysical interpretations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the homophilic rules employed by Betzel et al. also do not lend themselves to straightforward biophysical interpretations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the nature of the homophilic rules.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "450a9a01-9afc-4dbb-9a44-50178b7a4c2b",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C25",
+      "claim": "The difficulty of developing biophysically interpretable rules is a recurring challenge in generative network models.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the difficulty of developing biophysically interpretable rules is a recurring challenge in generative network models (Watts and Strogatz, 1998; Song et al., 2014; Klimm et al., 2014; Betzel et al., 2015; V\u00e9rtes et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "d5eac6a1-d768-487c-9bc7-5612f6d7fb22",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C26",
+      "claim": "The authors used the linear model from Oh et al. (2014) to build an adjacency matrix containing connections between 213 symmetric pairs of nodes (426 total) and 8820 directed edges (7804 undirected).",
+      "claim_type": "EXPLICIT",
+      "source": "We used the linear model from Oh et al. (2014) to build an adjacency matrix containing connections between 213 symmetric pairs of nodes (426 total) and 8820 directed edges (7804 undirected).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "8d9ddf0c-3263-4864-9114-af93f1d1ce41",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C27",
+      "claim": "The mouse connectome is characterized by a degree distribution with many low-degree nodes and a long tail of high-degree nodes.",
+      "claim_type": "EXPLICIT",
+      "source": "The mouse connectome is characterized by a degree distribution with many low-degree nodes and a long tail of high-degree nodes (Figure 1a; (Oh et al., 2014)).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 1a and citation to Oh et al. (2014).",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "8c698f01-7bc5-4209-9667-4168b5a15272",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C28",
+      "claim": "The degree distribution of the mouse connectome was not well replicated by any standard graph.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree distribution was not well replicated by any standard graph (Figure 1a and b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 1a and b showing comparisons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "e39a3cd4-051b-4bea-a220-f79379b1ea78",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C29",
+      "claim": "The clustering coefficient distribution of the mouse connectome was not well replicated by any standard graph.",
+      "claim_type": "EXPLICIT",
+      "source": "nor was the clustering coefficient distribution \u2012 a finding also shown in Oh et al. (2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Oh et al. (2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "902087ca-db4d-497a-853c-6cf54773bd0a",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C30",
+      "claim": "In the mouse connectome, nodes with lower degree tend to be more clustered.",
+      "claim_type": "EXPLICIT",
+      "source": "In the connectome, nodes with lower degree tend to be more clustered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data analysis presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "0b292765-6c19-4cbc-84c9-8503a0a35a3b",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C33",
+      "claim": "The purely geometric PA model exhibited relatively narrow Gaussian-like degree distributions across several values of L.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to the connectome, the purely geometric model exhibited relatively narrow Gaussian-like degree distributions across several values of L (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 2a showing model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "d584928f-edb0-4840-b3b6-6d51b7f61cd7",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C34",
+      "claim": "The PA rule fails to generate low- and high-degree nodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the PA rule fails to generate low- and high-degree nodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model results shown in Figure 2a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "271211fc-cfd8-452c-95a2-78049fc8e230",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C35",
+      "claim": "The geometric PA model exhibits an inverse relationship between degree and clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "This geometric model does, however, exhibit an inverse relationship between degree and clustering (Figure 2b) as in the connectome.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 2b showing model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "917ee237-a72f-4668-8f74-45e3dc9cfb90",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C36",
+      "claim": "There is no value of L for which the PA model adequately captures the joint degree-clustering distribution seen in the connectome.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Figure 2b demonstrates that there is no value of L for which this model adequately captures the joint degree-clustering distribution seen in the connectome",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 2b showing model results across different L values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "75c0c831-d077-4748-8b67-0156bf5a5721",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C37",
+      "claim": "The purely geometric rules explored in previous studies are not sufficient to recreate the mouse connectome's properties.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the purely geometric rules explored in previous studies (Song et al., 2014; Kaiser et al., 2009; Ercsey-Ravasz et al., 2013; Kaiser and Hilgetag, 2004) are not sufficient to recreate the mouse connectome's properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model results and comparison to prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "5c5b2ffa-2243-431d-8922-c08e2445ed8a",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C38",
+      "claim": "In the mouse connectome, the in-degree is approximately normally distributed.",
+      "claim_type": "EXPLICIT",
+      "source": "while the in-degree of the network was approximately normally distributed",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data analysis shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "6fa98ea3-3220-48f2-ac58-49324fdb6a50",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C39",
+      "claim": "In the mouse connectome, the out-degree distribution exhibited a peak near zero and a long tail, much like an exponential distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "the out-degree distribution exhibited a peak near zero and a long tail (Figure 3a), much like an exponential distribution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data analysis shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "006d8ace-4eb7-4ac6-a8f8-120f3993e0f9",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C40",
+      "claim": "There was no significant correlation between in- and out-degree in the mouse connectome (\u03c1 = 0.127, p = 0.065, Spearman rank correlation).",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant correlation between in- and out-degree (\u03c1 = 0.127, p = 0.065, Spearman rank correlation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of the connectome data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "7870f2f6-be19-4d09-bd66-fd09261d5745",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C41",
+      "claim": "As the total degree of a node increases in the mouse connectome, the proportion of incoming edges decreases.",
+      "claim_type": "EXPLICIT",
+      "source": "As the total degree of a node increases, the proportion of incoming edges decreases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "377cc628-1a1a-448e-b23a-cf2f9b4d3109",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C42",
+      "claim": "The SGPA model exhibits an in-degree distribution that is approximately normal and an out-degree distribution that is approximately exponential.",
+      "claim_type": "EXPLICIT",
+      "source": "The SGPA model exhibits an in-degree distribution that is approximately normal and an out-degree distribution that is approximately exponential (Figure 5a, cyan).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 5a showing model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "f56beef3-d8ce-4c42-a625-f3acadfa15ab",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C43",
+      "claim": "The SGPA model's degree distributions match the mouse connectome but are exactly opposite for the TAPA model.",
+      "claim_type": "EXPLICIT",
+      "source": "This is matches the mouse connectome (Figure 3a) but is exactly opposite for the TAPA model (Figure 5a, red).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparing Figure 5a to Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "73377d83-4a0b-4381-a0d3-e0c066ede208",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C44",
+      "claim": "In the SGPA model, high-degree nodes tend to have a large proportion of outgoing connections.",
+      "claim_type": "EXPLICIT",
+      "source": "In the SGPA model (and the mouse connectome; Figure 3b), high-degree nodes tend to have a large proportion of outgoing connections.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 5b showing model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "405e66d7-cdd4-4c4b-a3dc-9e3a4dd950f4",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C45",
+      "claim": "The directed graph theoretic properties of the mouse connectome are best captured by a SG model of network generation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the directed graph theoretic properties of the mouse connectome are best captured by a SG model of network generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the comparison of SGPA and TAPA models to the connectome.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "44763134-c3a8-4b5e-998a-0384c8ee379e",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C46",
+      "claim": "The mouse connectome has a reciprocity coefficient of 0.13.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the mouse connectome has a reciprocity coefficient of 0.13",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on calculation from the connectome data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "98973647-edac-41f1-a4dd-a3169b79a3d3",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C47",
+      "claim": "The reciprocity coefficient of the mouse connectome (0.13) is high compared to that expected from chance (0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "which is high compared to that expected from chance (0.03).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison to a random model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "d65c00fb-371b-4573-bbc2-65c6cdc693ac",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C48",
+      "claim": "Reciprocal edges in the mouse connectome are on average shorter than nonreciprocal edges (t(8818) = 13.25, p << 10-10, independent samples t-test; Cohen's d = 0.47).",
+      "claim_type": "EXPLICIT",
+      "source": "Reciprocal edges in the connectome are on average shorter than nonreciprocal edges (Figure 5c; t(8818) = 13.25, p << 10-10, independent samples t-test; Cohen's d = 0.47).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis of the connectome data shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "b0cde273-c38d-4345-9a7b-8ddb766dc5e7",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C49",
+      "claim": "The reciprocity coefficient of model networks decreases with increasing length constant.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5e, the reciprocity coefficient of our model networks decreases with increasing length constant",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 5e showing model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "152be57a-fee9-4f2a-98cf-b61759fdf69d",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C50",
+      "claim": "The reciprocity coefficient approximately matches that of the mouse connectome (0.13) when L = 0.725 mm for both the SGPA and TAPA models.",
+      "claim_type": "EXPLICIT",
+      "source": "approximately matching that of the mouse connectome (0.13) when L = 0.725 mm for both the SGPA and TAPA models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on model fitting shown in Figure 5e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "23ce41cc-0cd6-4e79-aad6-d6a0557733c1",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C51",
+      "claim": "Fitting the length constant to reciprocity in the SGPA model underestimates the physical edge lengths of the connectome.",
+      "claim_type": "EXPLICIT",
+      "source": "However, fitting the length constant to reciprocity (e.g. in the SGPA model) underestimates the physical edge lengths of the connectome (compare Figure 5c to d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of Figure 5c and 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "2c3d74b7-2e3e-4f57-a511-276077625fef",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C52",
+      "claim": "Incorporating SG into the PA model increases the width of the degree distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Incorporating SG into the PA model increases the width of the degree distribution, allowing the model to also capture the joint clustering-degree distribution seen in the connectome (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 6a showing model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "8e9a14e8-fa2e-4e02-b09f-fd18ac8076c4",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C53",
+      "claim": "In the connectome, there is a negative correlation between a node's clustering coefficient and its mean edge length (\u03c1 = -0.238, p < 10-6, Spearman rank correlation).",
+      "claim_type": "EXPLICIT",
+      "source": "In the connectome, there is a negative correlation between a node's clustering coefficient and its mean edge length. That is, nodes with short average edge lengths tend to be highly clustered (\u03c1 = -0.238, p < 10-6, Spearman rank correlation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of the connectome data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "0199c605-d696-4817-a790-b0895e75b148",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C54",
+      "claim": "A similar, but stronger relationship between clustering coefficient and mean edge length occurs in the SGPA model (median \u03c1 = -0.482, p < 10-10, Spearman rank correlation).",
+      "claim_type": "EXPLICIT",
+      "source": "A similar, but stronger relationship occurs in the SGPA model (median \u03c1 = -0.482, p < 10-10, Spearman rank correlation).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of the SGPA model results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "380ce7be-a67a-4532-9425-860954f4c9ab",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C55",
+      "claim": "There was a close match between the nodal efficiency distributions for the connectome and the SGPA model (with L = 0.725 mm).",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 6b, there was a close match between the nodal efficiency distributions for the connectome and the SGPA model (with L = 0.725 mm)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 6b showing the comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "38a012ac-7eb2-4ee5-a622-23035395441a",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C56",
+      "claim": "When nodes were removed in order of decreasing degree (targeted attack), the SGPA model's global efficiency and largest component size both decreased in a manner more similar to the mouse connectome than any standard graph.",
+      "claim_type": "EXPLICIT",
+      "source": "When nodes (and the edges connected to them) were removed in order of decreasing degree (i.e. targeted attack), the SGPA model's global efficiency (akin to nodal efficiency; see 'Materials and methods') and largest (giant) component size both decreased in a manner more similar to the mouse connectome than any standard graph (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 7 showing lesioning results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "2a081ca0-9909-49f3-ac2a-4456a834748f",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C57",
+      "claim": "The mouse connectome disintegrates the fastest under targeted attack compared to model networks.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Figure 7a shows that the mouse connectome disintegrates the fastest",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 7a showing lesioning results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "08027a28-0d4f-44b2-99bc-f9658359c9b7",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C58",
+      "claim": "The global efficiency falls more rapidly in the connectome than any model under targeted attack.",
+      "claim_type": "EXPLICIT",
+      "source": "and Figure 7b shows that the global efficiency falls more rapidly in the connectome than any model.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 7b showing lesioning results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "b3b299ab-c7dc-4e9d-a9b2-dc820d701e9f",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C59",
+      "claim": "The connectome appears more vulnerable to targeted attack than the model networks explored.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the connectome appears more vulnerable to targeted attack than the model networks explored here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the lesioning results shown in Figure 7.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "93cad00f-c219-4786-bbb8-9f5425bc74b7",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C60",
+      "claim": "In- and out-degree were differentially distributed in the connectome.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that in- and out-degree were differentially distributed in the connectome highlights an important limitation of undirected graphs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the data analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "f44988a7-bf36-44a3-8302-9adedad53b0d",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C61",
+      "claim": "Undirected graphs do not discriminate between in- and out-degree distributions and may fail to reveal key connectivity properties arising from directed structure.",
+      "claim_type": "EXPLICIT",
+      "source": "they do not discriminate between in- and out-degree distributions and may therefore fail to reveal key connectivity properties arising from such directed structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the properties of undirected graphs.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "95fb9b1c-1f99-4bce-a15a-f289f6bfcf93",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C62",
+      "claim": "The C. elegans connectome has nearly identical in- and out-degree (exponential) distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the C. elegans connectome (for the full nervous system) (White, 1985) has nearly identical in- and out-degree (exponential) distributions (Amaral et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to White (1985) and Amaral et al. (2000).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "252ebf2f-cd43-4689-8756-5f4a4e788599",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C63",
+      "claim": "High clustering coefficient is thought to indicate potential for participation in specialized computational units.",
+      "claim_type": "EXPLICIT",
+      "source": "As high clustering coefficient is thought to indicate potential for participation in this sort of computational unit (Rubinov and Sporns, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rubinov and Sporns (2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "1cb69e4f-5dd3-4f0b-94d7-550d71e03704",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C64",
+      "claim": "Nodes with a small number of neighbors tend to be highly clustered in the mouse connectome, suggesting they are candidates for specialized processing.",
+      "claim_type": "EXPLICIT",
+      "source": "our finding that nodes with a small number of neighbors tend to be highly clustered suggests that these nodes are candidates for specialized processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data analysis and established knowledge about clustering.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "e74a0f33-e2b9-495f-aaac-29a0a82cab6b",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C65",
+      "claim": "Connections associated with hub nodes were primarily outgoing in the directed connectome.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, connections associated with such hub nodes were primarily outgoing in the directed connectome (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "bf788c8c-1d76-4e53-9c24-a8879542e1ff",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C66",
+      "claim": "Hubs play a stronger role in distribution, rather than integration, of information in the mouse connectome.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming again that anatomical connectivity is indicative of functional relationships, our results suggest that hubs play a stronger role in distribution, rather than integration, of information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the data on hub connectivity patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "f3ceb53c-2230-449e-b747-28cf5666d27f",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C67",
+      "claim": "Above-chance reciprocity is hypothesized to be important for functional integration and segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Above-chance reciprocity, as we found in the mouse connectome, is also hypothesized to be important for functional integration and segregation (Tononi et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tononi et al. (1994).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "cda0fb85-0945-4951-a52d-210e5f49f0f2",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C68",
+      "claim": "Bidirectional connections between brain regions constrain dynamics such that a balance arises between functional integration and segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has suggested that bidirectional connections between brain regions constrain the dynamics in such a way that a balance arises between the two (Tononi et al., 1992; Sporns et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Tononi et al. (1992) and Sporns et al. (1991).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "739db37e-476f-4e4d-a062-f910fbb27fb2",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C69",
+      "claim": "If axonal outgrowth occurs in a straight line and the axon attaches to the first node it physically encounters, then the probability of connecting to a target neuron depends exponentially on the target's distance from the source neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Kaiser et al. (2009) noted that if axonal outgrowth occurs in a straight line and the axon attaches to the first node it physically encounters, then the probability of connecting to a target neuron depends exponentially on the target's distance from the source neuron (Kaiser et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Kaiser et al. (2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "06cc4656-68eb-4a95-be36-9110b2edbac8",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C70",
+      "claim": "Some chemical gradients responsible for axon guidance decay exponentially with distance.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous research has also shown that some chemical gradients responsible for axon guidance decay exponentially with distance (Murray, 1993; Isbister et al., 2003) and have been modeled as such (Mortimer et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Murray (1993), Isbister et al. (2003), and Mortimer et al. (2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "ad2669b7-c446-4031-918b-2fb31c54a055",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C71",
+      "claim": "Rubinov et al. (2015) reported that distance-dependent inter-areal connection strengths in the mouse connectome were best captured by a power law.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, Rubinov et al. (2015), recently reported that distance-dependent inter-areal connection strengths in the mouse connectome were best captured by a power law.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rubinov et al. (2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "81d982ed-c1aa-481c-a361-275f637f2561",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C72",
+      "claim": "The purely geometric PA model fails to account for the broad degree distribution of the connectome.",
+      "claim_type": "EXPLICIT",
+      "source": "We explored a purely geometric model based on PA and found that while this model induces clustering between low-degree nodes, it fails to account for the broad degree distribution of the connectome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the model results shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "b3352307-97ac-40d1-91c2-06d200f91f2d",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C73",
+      "claim": "Only when incorporating the source-growth rule could the authors capture the in- and out-degree distributions of the mouse connectome.",
+      "claim_type": "EXPLICIT",
+      "source": "Only when incorporating the source-growth rule could we capture the in- and out-degree distributions of the mouse connectome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the model results shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "998ca4e0-f640-4968-be50-cc534e0ac9a7",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C74",
+      "claim": "The in- and out-degree distributions arise independently of the PA rule in the SGPA model.",
+      "claim_type": "EXPLICIT",
+      "source": "Note that these distributions arise independently of the PA rule, but other characteristics require it, as discussed previously (see Figure 5\u2014figure supplement 2 for the in- and out-degree distributions of a graph with source-growth but not PA).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 5\u2014figure supplement 2 showing model results without PA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "c8387cd7-c8b7-4fa9-901d-dc2e5fde7f63",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C75",
+      "claim": "A SG rule specifically depending on out-degree is a better candidate mechanism for generating the properties of mouse connectome than total degree.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that a SG rule specifically depending on out-degree is a better candidate mechanism for generating the properties of mouse connectome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from comparing different model variants shown in Figure 5\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "0033ebd1-bd47-4401-b720-264098248a66",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C76",
+      "claim": "Much of the organizational structure of the mouse connectome is captured by the geometric and topological generative rules employed by the SGPA model.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that much of the organizational structure of the mouse connectome is captured by the geometric and topological generative rules employed by the SGPA model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the comprehensive model results presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "f22f4465-0373-4ea5-82e8-b0bbfcb37054",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C77",
+      "claim": "Brain organization at the mesoscopic scale might not require precise specification of connectivity but might instead be largely based on a set of relatively simple instructions.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of these simple rules to closely capture the mouse connectome's network structure raises the possibility that brain organization at the mesoscopic scale does not require precise specification of connectivity (e.g. through genetic or transcriptional factors), but might instead be largely based on a set of relatively simple instructions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the success of the simple model.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "61182c4b-9ba4-4ee2-b989-f6556580bac6",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C78",
+      "claim": "Neurotrophins play a major role in promoting the survival of innervating neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The source growth rule might be realized during brain development by the actions of a family of proteins known as neurotrophins, which play a major role in promoting the survival of innervating neurons (Huang and Reichardt, 2001; Chao, 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Huang and Reichardt (2001) and Chao (2003).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "7a6bd719-5b42-43c5-ae23-b204c7500718",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C79",
+      "claim": "Neurotrophins play a major role in the growth and branching of axons.",
+      "claim_type": "EXPLICIT",
+      "source": "and the growth and branching of their axons (Tessier-Lavigne and Goodman, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tessier-Lavigne and Goodman (1996).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "e59a08a8-035a-41d7-a1f2-90714ca0906b",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C80",
+      "claim": "Neurotrophins are typically secreted by a target (postsynaptic) neuron at functional synapses, endocytosed by a source (presynaptic) neuron, and retrogradely transported to the source neuron's soma.",
+      "claim_type": "EXPLICIT",
+      "source": "these proteins are typically secreted by a target (postsynaptic) neuron at functional synapses, endocytosed by a source (presynaptic) neuron, and retrogradely transported to the source neuron's soma, where they trigger the above-mentioned processes (Huang and Reichardt, 2001; Korsching, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Huang and Reichardt (2001) and Korsching (1993).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "87b0bd97-335e-4336-bf84-9032282c5f42",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C81",
+      "claim": "Neurotrophins are available in limited quantities and are hypothesized to cause competitive interactions among growing neuronal populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Because neurotrophins are available in limited quantities, they are hypothesized to cause competitive interactions among growing neuronal populations (van Ooyen and Willshaw, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to van Ooyen and Willshaw (1999).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "792cdc34-f8ed-48e4-bc24-420e2c2bca2a",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C82",
+      "claim": "Populations that maintain many functional outgoing connections will tend to receive more neurotrophins and should on average be more fit for survival and new connection generation.",
+      "claim_type": "EXPLICIT",
+      "source": "Most importantly, since populations that maintain many functional outgoing connections will tend to receive more neurotrophins, they should on average be more fit for survival and new connection generation, and their existing connections should be more likely to branch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the biology of neurotrophins.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "ed8098a5-8504-4ba4-a813-462a1734e799",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C83",
+      "claim": "The neurotrophin mechanism would lead to the 'rich-get-richer' phenomenon for outgoing connections that was fundamental in modeling the network properties of the mouse connectome.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a biological mechanism would lead to the \"rich-get-richer\" phenomenon for outgoing connections that was fundamental in modeling the network properties of the mouse connectome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting the biological mechanism to the model.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "8d17922c-93d6-4ad4-8971-6a7d03f789ef",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C84",
+      "claim": "The SGPA model provides an alternative to power-law degree distributions for describing the brain's undirected degree distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "The SGPA model provides an alternative because the in- and out-degree distributions are driven by different rules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model structure and results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "1c32847d-05bf-433c-aad5-b4d0f9a08688",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C85",
+      "claim": "The distribution over undirected degree is expected to approach the convolution of a Gaussian and an exponential, that is, an exponentially modified Gaussian.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we would expect the distribution over undirected degree (which is approximately the sum of in- and out-degree, the approximation arising since we do not count reciprocal edges twice) to approach the convolution of a Gaussian and an exponential, that is, an exponentially modified Gaussian (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on mathematical reasoning about the combination of distributions.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "56f8cb5c-6601-4b8e-b31b-ee1fe2d00c25",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C86",
+      "claim": "The SGPA model is able to capture the low-degree portion of the distribution unlike the scale-free graph.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the SGPA model is able to capture the low-degree portion of the distribution (Figure 1b) unlike the scale-free graph.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 1b showing the comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "64556df4-4fc0-497c-9ec7-67265215d62b",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C87",
+      "claim": "The choice to instantiate all the nodes at the start of the network's generation is somewhat biologically implausible.",
+      "claim_type": "EXPLICIT",
+      "source": "Our choice to instantiate all the nodes at the start of the network's generation is somewhat biologically implausible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a model limitation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "7be13860-7d14-4f85-81af-58a7aa061af2",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C88",
+      "claim": "A version of the SPGA model in which nodes are added one-by-one yielded a qualitatively similar network.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a version of our SPGA model in which nodes are added one-by-one (see 'Materials and methods') yielded a qualitatively similar network (see Figure 5\u2014figure supplement 3 and Figure 6\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Figure 5\u2014figure supplement 3 and Figure 6\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "d10343aa-074d-4a1b-8118-be1d1a5947ca",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C89",
+      "claim": "In the node-by-node SGPA model, the youngest nodes had an extremely low degree and a clustering coefficient of either zero or one.",
+      "claim_type": "EXPLICIT",
+      "source": "The only notable differences were that the youngest nodes had an extremely low degree and a clustering coefficient of either zero or one",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the node-by-node model variant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "61a964a6-ef04-45d4-92a6-9072dac809de",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C90",
+      "claim": "In the node-by-node SGPA model, there was a positive correlation between in- and out-degree.",
+      "claim_type": "EXPLICIT",
+      "source": "and that there was a positive correlation between in- and out-degree.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the node-by-node model variant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "f153479a-f785-4a04-b7db-970b15ce49dd",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C91",
+      "claim": "The SGPA model predicts that edge lengths should be significantly shorter than those observed in the connectome.",
+      "claim_type": "EXPLICIT",
+      "source": "One interesting feature of the SGPA model is that it predicts that edge lengths should be significantly shorter than those observed in the connectome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of model results to connectome data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "0ab5ac44-08a8-4969-b6e4-70ec47c14f81",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C92",
+      "claim": "The SGPA model is unable to account for both the edge length distribution and the reciprocity of the connectome while also maintaining the appropriate dimensionality.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our model is unable to account for both the edge length distribution and the reciprocity of the connectome while also maintaining the appropriate dimensionality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a model limitation based on the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "cf73dded-d394-49e5-a8b8-d961f8567383",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C93",
+      "claim": "Within the lesioning analysis, the connectome is more susceptible to targeted attack than the generative SGPA model network (or any other model).",
+      "claim_type": "EXPLICIT",
+      "source": "Within the lesioning analysis, we found that the connectome is more susceptible to targeted attack than our generative SGPA model network (or any other model).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the lesioning results shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "e3a0f5fb-afa5-4a1f-bceb-a67b1c262697",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C94",
+      "claim": "The mouse connectome is less resilient than the synthetic networks explored.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the mouse connectome is less resilient than the synthetic networks explored here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the lesioning results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "79b46f52-dfcb-4f23-a59c-c0cf8282421e",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C95",
+      "claim": "Cortico-cortical projections have higher reciprocity than cortico-subcortical ones in macaque macroscale and mouse mesoscale connectomes.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar point was raised by Kaiser and Varier (2011) and Oh et al. (2014) \u2012 both noted that cortico-cortical projections have higher reciprocity than cortico-subcortical ones in macaque macroscale and mouse mesoscale connectomes, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kaiser and Varier (2011) and Oh et al. (2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "a7ddb176-b2d2-4467-9983-057a65d271d4",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C96",
+      "claim": "To generate a connectivity graph from empirical data, the authors used the mouse connectome developed by the Allen Brain Institute.",
+      "claim_type": "EXPLICIT",
+      "source": "To generate a connectivity graph from empirical data, we used the mouse connectome developed by the Allen Brain Institute.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data source used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "bcb3fc59-1438-4025-920c-9f4de7fa5792",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C97",
+      "claim": "To compile the Allen dataset, anterograde tracers were injected in a single hemisphere and the authors traced projections into both hemispheres.",
+      "claim_type": "EXPLICIT",
+      "source": "To compile this dataset, anterograde tracers were injected in a single hemisphere and the authors traced projections into both hemispheres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental method used to generate the data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "73fb8cb2-b4f0-432a-a5a0-ec030e728bb9",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C98",
+      "claim": "The original work computed projection strengths and associated p-values between 213 pairs of ipsi- and contralateral anatomically defined brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The original work computed projection strengths and associated p-values (the probability that the observed projection would arise by chance) between 213 pairs of ipsi- and contralateral anatomically defined brain regions (Oh et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Oh et al. (2014).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "4e8b2046-9873-496e-a35e-d3cd027b0920",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C99",
+      "claim": "To generate a binary adjacency matrix, the authors set all connection strengths with p<0.01 to one and all other elements to zero.",
+      "claim_type": "EXPLICIT",
+      "source": "To generate a binary adjacency matrix, we set all connection strengths with p<0.01 to one and all other elements to zero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "d7ee71da-1186-451b-81d3-88e539d11ccb",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C100",
+      "claim": "The authors assumed that all connectivity projections were bilaterally symmetric in order to construct a 426 x 426 binary adjacency matrix.",
+      "claim_type": "EXPLICIT",
+      "source": "We then assumed that all connectivity projections were bilaterally symmetric in order to construct a 426 x 426 binary adjacency matrix, which completely defines a (single component) graph.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data processing method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "e95c0245-4632-4590-a73d-b153d667de8a",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "claim_id": "C101",
+      "claim": "The results remained qualitatively the same for alternative connection thresholds (p<0.05 and p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The results remained qualitatively the same for alternative connection thresholds (p<0.05 and p<0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a robustness check performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ac9c1cd9-3c86-4323-9c1d-5c51d6949695",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors used the Allen Mouse Brain Connectivity Atlas (Oh et al., 2014) to construct a binary adjacency matrix representing 426 nodes (213 symmetric pairs) and 8820 directed edges (7804 undirected), assuming bilateral symmetry and applying a p<0.01 threshold for connection significance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C9, C26, and C96-C101 collectively describe the data source and processing methodology. The use of the Allen dataset is well-documented through citations, and the data processing steps (thresholding, bilateral symmetry assumption) are clearly stated with robustness checks at alternative thresholds.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "fc3a697a-309f-4183-80cf-8585a4665067",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The mouse connectome exhibits a degree distribution with many low-degree nodes and a long tail of high-degree nodes, with an inverse relationship between degree and clustering coefficient (power law fit \u03b3=-0.44). Standard network models (random, small-world, scale-free) fail to replicate these properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 and C27-C30 are supported by Figure 1 showing degree and clustering distributions, with statistical fits provided. The comparison to standard models demonstrates clear differences in network topology, consistent with prior work (Oh et al., 2014).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "d67b9a49-aab8-45ae-9419-a096d0071160",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A purely geometric proximal attachment (PA) model with exponentially decaying connection probability fails to capture the broad degree distribution of the mouse connectome, producing narrow Gaussian-like distributions instead, though it does exhibit an inverse relationship between degree and clustering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37 and C72 are supported by Figure 2 showing model results across different length constants L. The PA model's failure to generate the full range of degree values is clearly demonstrated, motivating the need for additional topological rules.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "19bae5e8-d5c2-4455-9636-8974fc21e18b",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The mouse connectome exhibits asymmetric directed degree distributions: in-degree is approximately normally distributed while out-degree is approximately exponential, with no significant correlation between them (\u03c1=0.127, p=0.065). High-degree nodes have predominantly outgoing connections.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C41 and C60 are supported by Figure 3 showing the directed degree analysis with statistical tests. The lack of correlation between in- and out-degree is properly tested, and the asymmetry in degree distributions is clearly visualized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "f7194c7a-18e6-4741-8dbd-c5cca4fe6424",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The Source Growth Proximal Attachment (SGPA) model, where source nodes are selected proportional to out-degree and targets by distance, successfully captures the directed degree distributions of the mouse connectome (normal in-degree, exponential out-degree), while the Target Attraction PA (TAPA) model produces opposite patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45, C73-C75 are supported by Figure 5 comparing SGPA and TAPA models to the connectome. The SGPA model's match to directed degree distributions is clearly demonstrated, and supplementary figures show that out-degree specifically (not total degree) is the critical factor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "8636d067-efe0-45e4-92f7-7b8c57a6f4f1",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The mouse connectome has a reciprocity coefficient of 0.13 (vs. 0.03 expected by chance), with reciprocal edges significantly shorter than non-reciprocal edges (t(8818)=13.25, p<<10^-10, Cohen's d=0.47). The SGPA model matches this reciprocity at L=0.725 mm but underestimates physical edge lengths.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 are supported by statistical analysis and Figure 5c-e. The reciprocity analysis includes proper statistical testing, and the model limitation regarding edge length distribution is acknowledged with visual evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "db176f23-1b8b-49ec-a660-ffc7761bb041",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The SGPA model captures the joint clustering-degree distribution of the connectome (power law \u03b3=-0.48 vs. \u03b3=-0.44 for connectome), the negative correlation between clustering and mean edge length (\u03c1=-0.482 vs. \u03c1=-0.238 for connectome), and the nodal efficiency distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 are supported by Figure 6 showing quantitative comparisons. The power law fits are provided with R\u00b2 values, correlations include statistical significance, and the nodal efficiency distributions show close visual agreement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "c89c8667-9ea8-4c5f-a9cb-a9a591b3dbca",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Under targeted attack (node removal by decreasing degree), the SGPA model's response is more similar to the mouse connectome than standard models, but the connectome disintegrates faster and shows more rapid decline in global efficiency, suggesting greater vulnerability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 and C93-C94 are supported by Figure 7 showing lesioning analysis. The comparison includes both giant component size and global efficiency metrics, with proper controls for connection density effects shown in supplementary figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "0e764bdb-aabe-4f09-8f1f-e92dabf8ecef",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Undirected graph representations fail to capture key connectivity properties arising from directed structure, as different organisms show different in/out-degree relationships (e.g., C. elegans has identical exponential in- and out-degree distributions unlike the mouse).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 are supported by citations and logical inference from the directed analysis. The comparison to C. elegans (White, 1985; Amaral et al., 2000) demonstrates that directed properties vary across organisms and scales.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "57ff81b4-df72-4361-987d-40245b84651c",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Low-degree nodes with high clustering coefficients are candidates for specialized processing, while hub nodes with predominantly outgoing connections suggest a role in information distribution rather than integration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C66 involve functional interpretations of anatomical connectivity patterns. While the anatomical observations (C65) are data-supported, the functional implications (C64, C66) are speculative and explicitly conditional on assumptions about structure-function relationships that are not tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "492f2ddd-521a-410f-9056-310ccd081aa4",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Above-chance reciprocity in the mouse connectome is hypothesized to be important for balancing functional integration and segregation through bidirectional connections between brain regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 are supported by citations to prior theoretical work (Tononi et al., 1992, 1994; Sporns et al., 1991). These represent established hypotheses in the field rather than new claims from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "5fea9e6d-b044-45c3-8661-80953c9e6c94",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work on brain network models has primarily addressed spatial embedding with proximity-based connection rules, capturing properties like connection length distributions and degree-clustering relationships, but existing models (including homophilic rules) lack straightforward biophysical interpretations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C25 summarize prior literature with appropriate citations. These are background claims establishing context and motivation for the current work, accurately representing the state of the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "7f7318fc-6155-4b60-b66a-f90a6a61f00c",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Biological mechanisms supporting exponential distance-dependence include axonal outgrowth models where connection probability depends exponentially on distance, and chemical gradients for axon guidance that decay exponentially with distance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C71 are supported by citations to prior work (Kaiser et al., 2009; Murray, 1993; Isbister et al., 2003; Mortimer et al., 2009; Rubinov et al., 2015). These represent established biological knowledge used to justify model design choices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "5a2049a2-f2e2-41fe-8e02-68dcfb475e37",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The SGPA model captures much of the organizational structure of the mouse connectome using simple geometric and topological rules, suggesting that mesoscale brain organization may not require precise connectivity specification but could be based on relatively simple developmental instructions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C76-C77, C4-C5 represent the main interpretive conclusion. While C76 is supported by the comprehensive model results, C77 is speculative about developmental mechanisms. The model's success is demonstrated, but the claim about not requiring precise specification is an inference that would require additional developmental or genetic evidence to fully support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "7b9feb3e-036b-4a52-9e03-c391936ef72b",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The source growth rule could be biologically realized through neurotrophin signaling, where target neurons secrete limited neurotrophins that are retrogradely transported to source neurons, promoting survival and axon branching in populations with many outgoing connections, creating a 'rich-get-richer' phenomenon.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C78-C81 are supported by citations establishing neurotrophin biology. However, C82-C83 are speculative connections between this biology and the model's source growth rule. While biologically plausible, this mechanism is proposed as a hypothesis rather than demonstrated, and alternative mechanisms are not ruled out.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "5f6b5fec-9fdd-4075-9c76-c30423b4feb0",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The SGPA model provides an alternative to power-law degree distributions: the undirected degree distribution should approach an exponentially modified Gaussian (convolution of normal in-degree and exponential out-degree), better capturing the low-degree portion than scale-free models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C86 are supported by mathematical reasoning and Figure 6\u2014figure supplement 2, with empirical validation in Figure 1b. The mathematical derivation of the expected distribution is sound given the independence of in- and out-degree.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "826189c4-fb60-4bfd-b0f3-a85477468569",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "While instantiating all nodes at network initialization is biologically implausible, a node-by-node variant of the SGPA model yields qualitatively similar results, with differences being that youngest nodes have extremely low degree and clustering of 0 or 1, and positive correlation between in- and out-degree.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C90 are supported by Figure 5\u2014figure supplement 3 and Figure 6\u2014figure supplement 3. The limitation is acknowledged and tested with an alternative implementation, though the deviations from connectome properties are noted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "9a85e0d9-30a7-4318-91fc-02dcec2ac09b",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The SGPA model cannot simultaneously account for edge length distribution, reciprocity, and appropriate dimensionality when fitted to reciprocity (L=0.725 mm), as it predicts significantly shorter edge lengths than observed in the connectome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C92 are supported by comparison of Figure 5c and 5d, with explicit acknowledgment in the text. This is a clearly stated limitation of the model with visual evidence of the discrepancy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    },
+    {
+      "id": "64a2da72-8b5b-47f0-8fb3-a0185c9d6440",
+      "content_id": "b1dcca5f-7e1d-4eca-8e6c-4c338ef06611",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Cortico-cortical projections have higher reciprocity than cortico-subcortical projections in both macaque macroscale and mouse mesoscale connectomes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C95 is supported by citations to Kaiser and Varier (2011) and Oh et al. (2014). This represents prior knowledge used to discuss model limitations regarding heterogeneous connectivity rules.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:06:25.848775Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "21602f53-1177-4fa4-b21b-a571c20da7bb",
+      "result_id": "ac9c1cd9-3c86-4323-9c1d-5c51d6949695"
+    },
+    {
+      "claim_id": "0b51073d-d417-41f5-95e1-3aab44018dfd",
+      "result_id": "ac9c1cd9-3c86-4323-9c1d-5c51d6949695"
+    },
+    {
+      "claim_id": "0fc78948-2d19-4c2c-baea-56f5d9b62a8e",
+      "result_id": "ac9c1cd9-3c86-4323-9c1d-5c51d6949695"
+    },
+    {
+      "claim_id": "3667fb00-0754-4e3e-850a-02289bb8d970",
+      "result_id": "ac9c1cd9-3c86-4323-9c1d-5c51d6949695"
+    },
+    {
+      "claim_id": "e1f74498-d411-4f5d-aaad-0777921cf389",
+      "result_id": "ac9c1cd9-3c86-4323-9c1d-5c51d6949695"
+    },
+    {
+      "claim_id": "d5eac6a1-d768-487c-9bc7-5612f6d7fb22",
+      "result_id": "ac9c1cd9-3c86-4323-9c1d-5c51d6949695"
+    },
+    {
+      "claim_id": "a7ddb176-b2d2-4467-9983-057a65d271d4",
+      "result_id": "ac9c1cd9-3c86-4323-9c1d-5c51d6949695"
+    },
+    {
+      "claim_id": "bcb3fc59-1438-4025-920c-9f4de7fa5792",
+      "result_id": "ac9c1cd9-3c86-4323-9c1d-5c51d6949695"
+    },
+    {
+      "claim_id": "73fb8cb2-b4f0-432a-a5a0-ec030e728bb9",
+      "result_id": "ac9c1cd9-3c86-4323-9c1d-5c51d6949695"
+    },
+    {
+      "claim_id": "4e8b2046-9873-496e-a35e-d3cd027b0920",
+      "result_id": "ac9c1cd9-3c86-4323-9c1d-5c51d6949695"
+    },
+    {
+      "claim_id": "d7ee71da-1186-451b-81d3-88e539d11ccb",
+      "result_id": "ac9c1cd9-3c86-4323-9c1d-5c51d6949695"
+    },
+    {
+      "claim_id": "e95c0245-4632-4590-a73d-b153d667de8a",
+      "result_id": "ac9c1cd9-3c86-4323-9c1d-5c51d6949695"
+    },
+    {
+      "claim_id": "9652b5eb-95b7-474e-984f-44b4473795e1",
+      "result_id": "fc3a697a-309f-4183-80cf-8585a4665067"
+    },
+    {
+      "claim_id": "8c9f4211-f91d-4cb0-ab8e-a9b59e97b9af",
+      "result_id": "fc3a697a-309f-4183-80cf-8585a4665067"
+    },
+    {
+      "claim_id": "f2c93b2f-b1a0-4447-942a-fb846296c967",
+      "result_id": "fc3a697a-309f-4183-80cf-8585a4665067"
+    },
+    {
+      "claim_id": "bcd2a681-5bc4-4d9e-9821-c9e6ed3199e4",
+      "result_id": "fc3a697a-309f-4183-80cf-8585a4665067"
+    },
+    {
+      "claim_id": "8d9ddf0c-3263-4864-9114-af93f1d1ce41",
+      "result_id": "fc3a697a-309f-4183-80cf-8585a4665067"
+    },
+    {
+      "claim_id": "8c698f01-7bc5-4209-9667-4168b5a15272",
+      "result_id": "fc3a697a-309f-4183-80cf-8585a4665067"
+    },
+    {
+      "claim_id": "e39a3cd4-051b-4bea-a220-f79379b1ea78",
+      "result_id": "fc3a697a-309f-4183-80cf-8585a4665067"
+    },
+    {
+      "claim_id": "902087ca-db4d-497a-853c-6cf54773bd0a",
+      "result_id": "fc3a697a-309f-4183-80cf-8585a4665067"
+    },
+    {
+      "claim_id": "0b292765-6c19-4cbc-84c9-8503a0a35a3b",
+      "result_id": "d67b9a49-aab8-45ae-9419-a096d0071160"
+    },
+    {
+      "claim_id": "d584928f-edb0-4840-b3b6-6d51b7f61cd7",
+      "result_id": "d67b9a49-aab8-45ae-9419-a096d0071160"
+    },
+    {
+      "claim_id": "271211fc-cfd8-452c-95a2-78049fc8e230",
+      "result_id": "d67b9a49-aab8-45ae-9419-a096d0071160"
+    },
+    {
+      "claim_id": "917ee237-a72f-4668-8f74-45e3dc9cfb90",
+      "result_id": "d67b9a49-aab8-45ae-9419-a096d0071160"
+    },
+    {
+      "claim_id": "75c0c831-d077-4748-8b67-0156bf5a5721",
+      "result_id": "d67b9a49-aab8-45ae-9419-a096d0071160"
+    },
+    {
+      "claim_id": "81d982ed-c1aa-481c-a361-275f637f2561",
+      "result_id": "d67b9a49-aab8-45ae-9419-a096d0071160"
+    },
+    {
+      "claim_id": "5c5b2ffa-2243-431d-8922-c08e2445ed8a",
+      "result_id": "19bae5e8-d5c2-4455-9636-8974fc21e18b"
+    },
+    {
+      "claim_id": "6fa98ea3-3220-48f2-ac58-49324fdb6a50",
+      "result_id": "19bae5e8-d5c2-4455-9636-8974fc21e18b"
+    },
+    {
+      "claim_id": "006d8ace-4eb7-4ac6-a8f8-120f3993e0f9",
+      "result_id": "19bae5e8-d5c2-4455-9636-8974fc21e18b"
+    },
+    {
+      "claim_id": "7870f2f6-be19-4d09-bd66-fd09261d5745",
+      "result_id": "19bae5e8-d5c2-4455-9636-8974fc21e18b"
+    },
+    {
+      "claim_id": "93cad00f-c219-4786-bbb8-9f5425bc74b7",
+      "result_id": "19bae5e8-d5c2-4455-9636-8974fc21e18b"
+    },
+    {
+      "claim_id": "377cc628-1a1a-448e-b23a-cf2f9b4d3109",
+      "result_id": "f7194c7a-18e6-4741-8dbd-c5cca4fe6424"
+    },
+    {
+      "claim_id": "f56beef3-d8ce-4c42-a625-f3acadfa15ab",
+      "result_id": "f7194c7a-18e6-4741-8dbd-c5cca4fe6424"
+    },
+    {
+      "claim_id": "73377d83-4a0b-4381-a0d3-e0c066ede208",
+      "result_id": "f7194c7a-18e6-4741-8dbd-c5cca4fe6424"
+    },
+    {
+      "claim_id": "405e66d7-cdd4-4c4b-a3dc-9e3a4dd950f4",
+      "result_id": "f7194c7a-18e6-4741-8dbd-c5cca4fe6424"
+    },
+    {
+      "claim_id": "b3352307-97ac-40d1-91c2-06d200f91f2d",
+      "result_id": "f7194c7a-18e6-4741-8dbd-c5cca4fe6424"
+    },
+    {
+      "claim_id": "998ca4e0-f640-4968-be50-cc534e0ac9a7",
+      "result_id": "f7194c7a-18e6-4741-8dbd-c5cca4fe6424"
+    },
+    {
+      "claim_id": "c8387cd7-c8b7-4fa9-901d-dc2e5fde7f63",
+      "result_id": "f7194c7a-18e6-4741-8dbd-c5cca4fe6424"
+    },
+    {
+      "claim_id": "44763134-c3a8-4b5e-998a-0384c8ee379e",
+      "result_id": "8636d067-efe0-45e4-92f7-7b8c57a6f4f1"
+    },
+    {
+      "claim_id": "98973647-edac-41f1-a4dd-a3169b79a3d3",
+      "result_id": "8636d067-efe0-45e4-92f7-7b8c57a6f4f1"
+    },
+    {
+      "claim_id": "d65c00fb-371b-4573-bbc2-65c6cdc693ac",
+      "result_id": "8636d067-efe0-45e4-92f7-7b8c57a6f4f1"
+    },
+    {
+      "claim_id": "b0cde273-c38d-4345-9a7b-8ddb766dc5e7",
+      "result_id": "8636d067-efe0-45e4-92f7-7b8c57a6f4f1"
+    },
+    {
+      "claim_id": "152be57a-fee9-4f2a-98cf-b61759fdf69d",
+      "result_id": "8636d067-efe0-45e4-92f7-7b8c57a6f4f1"
+    },
+    {
+      "claim_id": "23ce41cc-0cd6-4e79-aad6-d6a0557733c1",
+      "result_id": "8636d067-efe0-45e4-92f7-7b8c57a6f4f1"
+    },
+    {
+      "claim_id": "2c3d74b7-2e3e-4f57-a511-276077625fef",
+      "result_id": "db176f23-1b8b-49ec-a660-ffc7761bb041"
+    },
+    {
+      "claim_id": "8e9a14e8-fa2e-4e02-b09f-fd18ac8076c4",
+      "result_id": "db176f23-1b8b-49ec-a660-ffc7761bb041"
+    },
+    {
+      "claim_id": "0199c605-d696-4817-a790-b0895e75b148",
+      "result_id": "db176f23-1b8b-49ec-a660-ffc7761bb041"
+    },
+    {
+      "claim_id": "380ce7be-a67a-4532-9425-860954f4c9ab",
+      "result_id": "db176f23-1b8b-49ec-a660-ffc7761bb041"
+    },
+    {
+      "claim_id": "38a012ac-7eb2-4ee5-a622-23035395441a",
+      "result_id": "c89c8667-9ea8-4c5f-a9cb-a9a591b3dbca"
+    },
+    {
+      "claim_id": "2a081ca0-9909-49f3-ac2a-4456a834748f",
+      "result_id": "c89c8667-9ea8-4c5f-a9cb-a9a591b3dbca"
+    },
+    {
+      "claim_id": "08027a28-0d4f-44b2-99bc-f9658359c9b7",
+      "result_id": "c89c8667-9ea8-4c5f-a9cb-a9a591b3dbca"
+    },
+    {
+      "claim_id": "b3b299ab-c7dc-4e9d-a9b2-dc820d701e9f",
+      "result_id": "c89c8667-9ea8-4c5f-a9cb-a9a591b3dbca"
+    },
+    {
+      "claim_id": "cf73dded-d394-49e5-a8b8-d961f8567383",
+      "result_id": "c89c8667-9ea8-4c5f-a9cb-a9a591b3dbca"
+    },
+    {
+      "claim_id": "e3a0f5fb-afa5-4a1f-bceb-a67b1c262697",
+      "result_id": "c89c8667-9ea8-4c5f-a9cb-a9a591b3dbca"
+    },
+    {
+      "claim_id": "f44988a7-bf36-44a3-8302-9adedad53b0d",
+      "result_id": "0e764bdb-aabe-4f09-8f1f-e92dabf8ecef"
+    },
+    {
+      "claim_id": "95fb9b1c-1f99-4bce-a15a-f289f6bfcf93",
+      "result_id": "0e764bdb-aabe-4f09-8f1f-e92dabf8ecef"
+    },
+    {
+      "claim_id": "252ebf2f-cd43-4689-8756-5f4a4e788599",
+      "result_id": "57ff81b4-df72-4361-987d-40245b84651c"
+    },
+    {
+      "claim_id": "1cb69e4f-5dd3-4f0b-94d7-550d71e03704",
+      "result_id": "57ff81b4-df72-4361-987d-40245b84651c"
+    },
+    {
+      "claim_id": "e74a0f33-e2b9-495f-aaac-29a0a82cab6b",
+      "result_id": "57ff81b4-df72-4361-987d-40245b84651c"
+    },
+    {
+      "claim_id": "bf788c8c-1d76-4e53-9c24-a8879542e1ff",
+      "result_id": "57ff81b4-df72-4361-987d-40245b84651c"
+    },
+    {
+      "claim_id": "f3ceb53c-2230-449e-b747-28cf5666d27f",
+      "result_id": "492f2ddd-521a-410f-9056-310ccd081aa4"
+    },
+    {
+      "claim_id": "cda0fb85-0945-4951-a52d-210e5f49f0f2",
+      "result_id": "492f2ddd-521a-410f-9056-310ccd081aa4"
+    },
+    {
+      "claim_id": "5eafb75b-1237-4d63-806e-62eecbe76952",
+      "result_id": "5fea9e6d-b044-45c3-8661-80953c9e6c94"
+    },
+    {
+      "claim_id": "67a6bc10-be8f-4e50-9124-07c64dd96c83",
+      "result_id": "5fea9e6d-b044-45c3-8661-80953c9e6c94"
+    },
+    {
+      "claim_id": "ee64b0ee-2925-4818-a839-ed12d42421d7",
+      "result_id": "5fea9e6d-b044-45c3-8661-80953c9e6c94"
+    },
+    {
+      "claim_id": "e0b4ef47-c003-4c21-8b2f-2728ada8d0d4",
+      "result_id": "5fea9e6d-b044-45c3-8661-80953c9e6c94"
+    },
+    {
+      "claim_id": "acf2c5c0-1b8f-4695-8c05-5d9ef32183a6",
+      "result_id": "5fea9e6d-b044-45c3-8661-80953c9e6c94"
+    },
+    {
+      "claim_id": "1e8aae0e-8acf-4a4e-802a-629d21770064",
+      "result_id": "5fea9e6d-b044-45c3-8661-80953c9e6c94"
+    },
+    {
+      "claim_id": "f5028744-4084-4ac1-b510-f8953bd2bc26",
+      "result_id": "5fea9e6d-b044-45c3-8661-80953c9e6c94"
+    },
+    {
+      "claim_id": "23a0a099-e443-4d9c-b80f-ebac498fdb88",
+      "result_id": "5fea9e6d-b044-45c3-8661-80953c9e6c94"
+    },
+    {
+      "claim_id": "11291857-b75f-4179-ad4b-c4ddeace84d4",
+      "result_id": "5fea9e6d-b044-45c3-8661-80953c9e6c94"
+    },
+    {
+      "claim_id": "feb15853-9c7b-4eeb-97e4-84c99d750246",
+      "result_id": "5fea9e6d-b044-45c3-8661-80953c9e6c94"
+    },
+    {
+      "claim_id": "03bd98ec-b25c-46ba-9559-335961353c30",
+      "result_id": "5fea9e6d-b044-45c3-8661-80953c9e6c94"
+    },
+    {
+      "claim_id": "450a9a01-9afc-4dbb-9a44-50178b7a4c2b",
+      "result_id": "5fea9e6d-b044-45c3-8661-80953c9e6c94"
+    },
+    {
+      "claim_id": "739db37e-476f-4e4d-a062-f910fbb27fb2",
+      "result_id": "7f7318fc-6155-4b60-b66a-f90a6a61f00c"
+    },
+    {
+      "claim_id": "06cc4656-68eb-4a95-be36-9110b2edbac8",
+      "result_id": "7f7318fc-6155-4b60-b66a-f90a6a61f00c"
+    },
+    {
+      "claim_id": "ad2669b7-c446-4031-918b-2fb31c54a055",
+      "result_id": "7f7318fc-6155-4b60-b66a-f90a6a61f00c"
+    },
+    {
+      "claim_id": "0033ebd1-bd47-4401-b720-264098248a66",
+      "result_id": "5a2049a2-f2e2-41fe-8e02-68dcfb475e37"
+    },
+    {
+      "claim_id": "f22f4465-0373-4ea5-82e8-b0bbfcb37054",
+      "result_id": "5a2049a2-f2e2-41fe-8e02-68dcfb475e37"
+    },
+    {
+      "claim_id": "55e8607f-3b5b-4b9f-a019-12f387252baf",
+      "result_id": "5a2049a2-f2e2-41fe-8e02-68dcfb475e37"
+    },
+    {
+      "claim_id": "ba98d3c2-eca6-47d8-9ca6-4c4b8279e1b5",
+      "result_id": "5a2049a2-f2e2-41fe-8e02-68dcfb475e37"
+    },
+    {
+      "claim_id": "61182c4b-9ba4-4ee2-b989-f6556580bac6",
+      "result_id": "7b9feb3e-036b-4a52-9e03-c391936ef72b"
+    },
+    {
+      "claim_id": "7a6bd719-5b42-43c5-ae23-b204c7500718",
+      "result_id": "7b9feb3e-036b-4a52-9e03-c391936ef72b"
+    },
+    {
+      "claim_id": "e59a08a8-035a-41d7-a1f2-90714ca0906b",
+      "result_id": "7b9feb3e-036b-4a52-9e03-c391936ef72b"
+    },
+    {
+      "claim_id": "87b0bd97-335e-4336-bf84-9032282c5f42",
+      "result_id": "7b9feb3e-036b-4a52-9e03-c391936ef72b"
+    },
+    {
+      "claim_id": "792cdc34-f8ed-48e4-bc24-420e2c2bca2a",
+      "result_id": "7b9feb3e-036b-4a52-9e03-c391936ef72b"
+    },
+    {
+      "claim_id": "ed8098a5-8504-4ba4-a813-462a1734e799",
+      "result_id": "7b9feb3e-036b-4a52-9e03-c391936ef72b"
+    },
+    {
+      "claim_id": "8d17922c-93d6-4ad4-8971-6a7d03f789ef",
+      "result_id": "5f6b5fec-9fdd-4075-9c76-c30423b4feb0"
+    },
+    {
+      "claim_id": "1c32847d-05bf-433c-aad5-b4d0f9a08688",
+      "result_id": "5f6b5fec-9fdd-4075-9c76-c30423b4feb0"
+    },
+    {
+      "claim_id": "56f8cb5c-6601-4b8e-b31b-ee1fe2d00c25",
+      "result_id": "5f6b5fec-9fdd-4075-9c76-c30423b4feb0"
+    },
+    {
+      "claim_id": "64556df4-4fc0-497c-9ec7-67265215d62b",
+      "result_id": "826189c4-fb60-4bfd-b0f3-a85477468569"
+    },
+    {
+      "claim_id": "7be13860-7d14-4f85-81af-58a7aa061af2",
+      "result_id": "826189c4-fb60-4bfd-b0f3-a85477468569"
+    },
+    {
+      "claim_id": "d10343aa-074d-4a1b-8118-be1d1a5947ca",
+      "result_id": "826189c4-fb60-4bfd-b0f3-a85477468569"
+    },
+    {
+      "claim_id": "61a964a6-ef04-45d4-92a6-9072dac809de",
+      "result_id": "826189c4-fb60-4bfd-b0f3-a85477468569"
+    },
+    {
+      "claim_id": "f153479a-f785-4a04-b7db-970b15ce49dd",
+      "result_id": "9a85e0d9-30a7-4318-91fc-02dcec2ac09b"
+    },
+    {
+      "claim_id": "0ab5ac44-08a8-4969-b6e4-70ec47c14f81",
+      "result_id": "9a85e0d9-30a7-4318-91fc-02dcec2ac09b"
+    },
+    {
+      "claim_id": "79b46f52-dfcb-4f23-a59c-c0cf8282421e",
+      "result_id": "64a2da72-8b5b-47f0-8fb3-a0185c9d6440"
+    }
+  ],
+  "comparisons": []
+}

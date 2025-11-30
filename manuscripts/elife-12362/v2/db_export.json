@@ -1,0 +1,1900 @@
+{
+  "submission": {
+    "id": "ddf93458-e648-4fc1-91e8-9c5a1498d3f1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:17:04.873884Z",
+    "updated_at": "2025-11-29T22:17:04.873884Z"
+  },
+  "content": [
+    {
+      "id": "14622690-8407-4664-9792-372852a794e2",
+      "submission_id": "ddf93458-e648-4fc1-91e8-9c5a1498d3f1",
+      "content_type": "manuscript",
+      "content_text": "# Observation of long-range tertiary interactions during ligand binding by the TPP riboswitch aptamer\n\n## Authors\n\n- Van K Duesterberg<sup>1</sup> ([ORCID: 0000-0002-6036-5453](https://orcid.org/0000-0002-6036-5453))\n- Irena T Fischer-Hwang<sup>2</sup>\n- Christian F Perez<sup>3</sup>\n- Daniel W Hogan<sup>4</sup>\n- Steven M Block<sup>4</sup> \u2020\n\n### Affiliations\n\n1. Biophysics Program Stanford University Stanford United States\n2. Department of Electrical Engineering Stanford University Stanford United States\n3. Department of Physics Stanford University Stanford United States\n4. Department of Applied Physics Stanford University Stanford United States\n5. Department of Biology Stanford University Stanford United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe thiamine pyrophosphate (TPP) riboswitch is a cis-regulatory element in mRNA that modifies gene expression in response to TPP concentration. Its specificity is dependent upon conformational changes that take place within its aptamer domain. Here, the role of tertiary interactions in ligand binding was studied at the single-molecule level by combined force spectroscopy and F\u00f6rster resonance energy transfer (smFRET), using an optical trap equipped for simultaneous smFRET. The \u2018Force-FRET\u2019 approach directly probes secondary and tertiary structural changes during folding, including events associated with binding. Concurrent transitions observed in smFRET signals and RNA extension revealed differences in helix-arm orientation between two previously-identified ligand-binding states that had been undetectable by spectroscopy alone. Our results show that the weaker binding state is able to bind to TPP, but is unable to form a tertiary docking interaction that completes the binding process. Long-range tertiary interactions stabilize global riboswitch structure and confer increased ligand specificity.\n\n## Introduction\n\nThe gene-regulatory activity of a riboswitch is mediated by its ability to form a substructure, called the aptamer domain, that binds\u2014and thereby senses\u2014a ligand, which is generally a small metabolite (Roth and Breaker, 2009; Serganov and Nudler, 2013; Serganov and Patel, 2012). Riboswitch aptamers fold and then bind their cognate ligands in a highly specific manner, and as they do so, they compete with alternative RNA structures that can form in conjunction with other domains of the riboswitch, which function either to permit, or to prevent, downstream gene expression. The aptamer of the TPP riboswitch senses the abundance of the coenzyme thiamine pyrophosphate, and in response, reduces the uptake of the vitamin thiamine. Versions of the TPP riboswitch have been discovered in all three kingdoms of life (Cheah et al., 2007; Sudarsan et al., 2003; Winkler et al., 2002). In Arabidopsis thaliana, the TPP aptamer is located upstream of the 3\u2032 untranslated intron region of the thiC gene, and it contains a complementary sequence that, in the absence of TPP, acts to sequester a downstream splice site: it therefore functions by modulating alternative gene splicing (Wachter et al., 2007).\n\nCrystal studies have identified striking similarities between the structures of the ligand-bound forms of a truncated TPP aptamer from A. thaliana and the thiM aptamer from Escherichia coli (Edwards and Ferre-D'Amare, 2006; Serganov et al., 2006; Thore et al., 2006). Specifically, both eukaryotic and prokaryotic aptamers share a common binding conformation (Figure 1), characterized by contacts formed by (1) the TPP pyrimidine ring and the \u2018sensor\u2019 helix arm P2/3, (2) the TPP pyrophosphate and \u2018sensor\u2019 helix arm P4/5, and (3) a long-range tertiary rearrangement that brings together, and stabilizes, an interaction between the two arms carrying the L5 loop and the P3 stem (Noeske et al., 2006).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/12362/elife-12362-fig1-v2.jpg)\n\n**Figure 1.:** (A) Experimental geometry of the dumbbell optical-trapping assay with simultaneous FRET monitoring, with key components labeled (not to scale). (B) Crystal structure of the truncated TPP riboswitch aptamer with a shortened P3 stem (PDB entry 3D2G). Dye-labeling sites for ATTO550 and ATTO647N are indicated, at nucleotides G88 (green) and U25 (red), respectively. (C) Secondary structure of the TPP riboswitch, with structural components indicated in color. Sequences surrounding the amino-modified uracil bases in the sensor helix arms (5-N-U and 5-LC-N-U; Integrated DNA Technologies,\u00a0Coralville,\u00a0IA) are shown, with the modified bases colored (P3, red; L5, green).\n\nResults from single-molecule force spectroscopy experiments have suggested that TPP binding is modeled kinetically by two sequential states: initial weak binding, followed by strong binding (Anthony et al., 2012),\n\n$$\nUF\u2192F\u21c4-TPP+TPP\u00a0F'\u00b7TPP\u00a0\u21ccF''\u00b7TPP\n$$\n\nwhere UF refers to the unfolded form, and F, F\u2032 and F\u2033 refer to folded forms. The existence of the folded states was inferred from measurements of the molecular extension of the aptamer as a function of the external force applied (force-extension curves, or FECs) during mechanically-induced unfolding. FECs obtained for the binding of TPP in the weakly bound, intermediate F\u2032 state were strikingly similar to FECs measured for the complete binding of two TPP analogs, thiamine monophosphate (TMP) or thiamine (T). These analogs lack one or both phosphate groups, respectively, resulting in incomplete binding to the bipartite ligand-binding site, which normally forms contacts with both the thiamine and phosphate moieties. Similar FECs were also measured for TPP binding by a mutant aptamer (Anthony et al., 2012) that is unable to form tertiary contacts between the two arms carrying L5 and P3. Taken together, these observations are consistent with two nonexclusive possibilities for the structure of the F\u2032\u2022TPP intermediate: (1) TPP may be incompletely coordinated at the binding site in this aptamer form, or (2) the aptamer structure may not have brought together its L5 and P3 arms, whose docking may be required for strong binding and the transition to the F\u2033\u2022TPP state.\n\nHere, we address the structural ambiguity posed by the F\u2032\u2022TPP state by simultaneously monitoring fluorescent probes attached to the arms carrying L5 and P3, and aptamer folding, using an optical trap augmented with smFRET capabilities (Figure 2). By studying folding in the presence of TPP and its analogs, we can explore the roles of long-range tertiary rearrangements and phosphate binding in ligand recognition.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/12362/elife-12362-fig2-v2.jpg)\n\n**Figure 2.:** Solid lines indicate lasers and light sources: 830 nm detection laser (orange), 1,064 nm trapping laser (red), 532 nm excitation laser (green), and 470 nm illuminating LED (blue).\u00a0Filled bars are emissions received by these detectors: position sensitive detector (PSD), electron multiplying charge coupled device (EMCCD) camera, and a video camera. Lasers are maneuvered and modified in intensity using acousto-optic deflectors (AOD) and acousto-optic modulators (AOM), respectively. The dual beam trapping laser is expanded using a beam expander (BE) and split with a beam splitter. The excitation laser emission goes through a dichroic mirror (D5, T640LP; Chroma,\u00a0Brattleboro, VT) to split the acceptor and donor emissions. Filters (F), Wollaston prisms (W), pinholes (P), dichroic mirrors (D), mirrors (M), and telescopes (T) are labeled.\n\nInstruments that combine the capabilities of single-molecule fluorescence and optical trapping represent a comparatively new development (Candelli et al., 2011; Comstock et al., 2011; Harada et al., 1999; Lang et al., 2004; Mameren et al., 2006; Sirinakis et al., 2012; van Mameren et al., 2009), and these continue to present significant technical challenges (Lang et al., 2004; van Mameren et al., 2008). Recently, novel findings have begun to emerge using optical trapping and smFRET (Comstock et al., 2015; Ngo et al., 2015; Suksombat et al., 2015).\n\n## Results\n\n### Direct correspondence between P3-L5 configuration and secondary structural conformation\n\nUsing a dual-beam optical trap, we applied controlled loads to each end of an individual TPP aptamer RNA (3\u2032 and 5\u2032), and measured the end-to-end extension during mechanical unfolding (Figure 1A). Tertiary interactions were simultaneously scored by a FRET readout between donor and acceptor fluorescent dyes, ATTO550 and ATTO647N (Figure 1B), which were covalently attached to the L5 and P3 helix arms, respectively. Aptamers were subjected to repeated cycles of unfolding and refolding. After a preliminary unfolding of the RNA, the optical traps were brought into close proximity, which reduced the applied load below 5.0 pN for a time of 0.5\u201330\u2009s, allowing the aptamer to refold under low force (the refolding step). The force was subsequently ramped up by increasing the trap separation linearly at 200 nm/s (Figure 3, Figure 3\u2014figure supplement 1, 2), as both molecular extension and fluorescence signals were acquired. After full extension, the refolding/unfolding cycle was repeated, until either a dye photobleached or the RNA tether broke. As reported previously, FECs could be categorized into one of three distinct forms (Figures 3A,B,C) (Anthony et al., 2012), each corresponding to a different folded conformation, as follows. In the absence of TPP, FECs for the folded aptamer (F) displayed three opening transitions, or rips, corresponding to the sequential rupture of the secondary structural elements (P1 + P2), P4/5 and the P3 stem, respectively. In the presence of TPP, two additional FEC forms were observed: (1) an FEC with a single opening transition at low force (<20 pN),\u00a0sometimes followed by an\u00a0additional opening transition, that corresponds to the weakly bound state, F\u2032\u2022TPP, and (2) an FEC with a single, high-force\u00a0(>20\u00a0pN) transition, that corresponds to the tightly bound, fully folded state, F\u2033\u2022TPP. FRET signals acquired during force ramps could be categorized into three groups, with characteristics that were attributable to each of the three established aptamer conformations, F, F\u2032\u2022TPP, and F\u2033\u2022TPP. In the absence of TPP (Figure 3A), the FRET efficiency of the F state remained stable near a low value under reduced loads, and then dropped abruptly to near zero upon the first opening transition, as the duplex elements P1 and P2 unfolded. In the presence of TPP (Figure 3B), the FRET efficiency of F\u2032\u2022TPP started out with a similar low value, but then transitioned to an intermediate level which was not observed in the absence of ligand, until the elements P1, P2 and P4/5 unfolded together, resulting in an abrupt drop to near zero. This transition was followed by a very tiny rip, barely\u00a0detectable in the FEC, but not producing any further change in FRET, that corresponded to the unfolding of P3 (Anthony et al., 2012). By contrast, FRET signals for F\u2033\u2022TPP (Figure 3C) first jumped from a low to an intermediate FRET level (the same two levels, on average, displayed by F\u2032\u2022TPP), but later transitioned to a high FRET level, characterized by a comparatively low variance, until the final opening transition, corresponding to the unfolding of the entire aptamer, which returned the FRET level to the baseline.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/12362/elife-12362-fig3-v2.jpg)\n\n**Figure 3.:** Representative traces of unfolding for the aptamer conformations\u00a0(A) F, (B) F\u2032\u2022TPP, and (C) F\u2033\u2022TPP. Simultaneous force-extension curves (FECs; black lines) and FRET trajectories (black circles, gray lines) are parametrized by time. Colored boxes indicate the APO (blue), WB (green), and SB (yellow) FRET states. Open arrowheads mark the end of the refolding period and the start of the force ramp. Small, filled arrowheads mark the location of opening transitions.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12362/elife-12362-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Force curves (black lines) and FRET trajectories (black circles, gray lines) are shown parametrized by time for the following aptamer conformations:\u00a0(A) F\u2033\u2022TPP in the presence of 5 \u03bcM TPP, (B) F\u2032\u2022TPP in the presence of 5 \u03bcM TPP, (C) F\u2032\u2022TPP in the presence of 2 mM TMP, (D) F\u2032\u2022TPP in the presence of 2 mM T, (E) F in the presence of 50 \u03bcM TPP, (F-H) in the absence of TPP (panel (E) is the same as Figure 3, panel A), (I) F\u2033\u2022TPP in the presence of 5 \u03bcM TPP. Here, we observe loss and rebinding of ligand.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12362/elife-12362-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Representative traces show FRET signatures indicative of a particular helix arm configuration at the end of a refolding period that is maintained throughout the force ramp. Colored boxes, lines, open and filled arrowheads are as described in Figure 3. (A) The aptamer transitions from an unbound configuration to a weakly bound configuration, and then to a strongly bound configuration, which is held up until the catastrophic rip. (B) The aptamer transitions from an unbound configuration to a weakly bound configuration prior to the end of the refolding period, and remains in the weakly bound configuration until the catastrophic rip.\n\n### Cluster analysis establishes thresholds for the three FRET states\n\nIn both force and FRET channels, unfolding events produced abrupt drops in signal levels. We recorded the FRET efficiencies prior to such events (defined as the opening FRET values) along with the associated forces (defined as the opening force values). A plot of opening FRET versus opening force revealed sub-populations that were binned by k-means cluster analysis (Figure 4A); setting k = 3 selected distinct clusters and established threshold values for each coordinate axis (Figure 4B). Vertical (force) thresholds demark the three conformational forms, based chiefly on their secondary structures: FECs with an opening force lower than 11.5 pN were assigned to aptamers unfolded when not bound to TPP; opening forces between 11.5 pN and 21.0 pN were assigned to aptamers that unfolded in the F\u2032\u2022TPP state; and opening forces above 21.0 pN were assigned to aptamers that unfolded from the F\u2033\u2022TPP state. The mean opening forces computed for each of the three clusters (C1, C2, and C3) matched, within error, the force values that had been estimated in a previous study using other methods (Anthony et al., 2012), validating the choice of k.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/12362/elife-12362-fig4-v2.jpg)\n\n**Figure 4.:** (A) k-means clustering for opening FRET and opening force values. Filled diamonds mark the mean opening force and opening FRET values for each of the k = 3 populations; dashed vertical and horizontal lines indicate the thresholds for force and FRET states, respectively. (B) Table summarizing opening force and FRET centroids, and thresholds for the clusters C1, C2 and C3. (C) Global fit (red) of all data (black histogram, with error bars) to a sum of four Gaussians. Individual Gaussian fits are shown as colored lines, with the mean values indicated (vertical dashed lines). (D) Table of fit parameters for G1, G2 and G3 (N = 435).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12362/elife-12362-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** k-means clustering results and summary tables shown for (A) k = 2, (B) k = 3, and (C) k = 4.\n\nHorizontal (FRET) thresholds, 0.57 and 0.74, demark the FRET cutoffs for the clusters. The corresponding FRET sub-populations were then compared to a global histogram of all single-molecule records fitted to a sum of four Gaussians (Figure 4C). Mean values returned from the Gaussian fits, G1, G2 and G3, were statistically consistent with mean values for opening FRET computed for the C1, C2 and C3 clusters. By matching the FRET sub-populations against conformations previously characterized by force assignment, we could infer the P3-L5 arm configurations, independent of force. The lowest-valued FRET sub-population, corresponding to the APO state, reflects a significant physical separation between the P3 stem and L5 loop, which remain consistently apart. The intermediate-value FRET sub-population, corresponding to the WB (weakly bound) state, reflects more proximal stem-loop interactions. The highest-value FRET population, corresponding to the SB (strongly bound) state, reflects the close apposition of P3 and L5. To characterize further P3-L5 arm behavior, we used the cluster thresholds established for refolding to categorize segments of FEC records obtained at forces up to 10 pN (i.e., prior to the first opening transition), including the refolding portion, as follows. Segments of FRET trajectories below 0.57, or above 0.74, which tended to exhibit comparatively lower variance, were assigned to the APO or SB states, respectively. FRET trajectories between these values were assigned to the higher-variance, WB state (such trajectories included short intervals where the FRET value made brief excursions above or below the threshold levels, but never remained consistently out-of-range for more than one or two consecutive time points). Thus separated, the individual FRET data were binned into histograms for the corresponding APO, WB, and SB states (Figure 5A).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/12362/elife-12362-fig5-v2.jpg)\n\n**Figure 5.:** (A) Segmented FRET data in the presence of saturating TPP (2 mM). After segmenting, FRET records were categorized into APO (blue), WB (green), and SB (yellow) FRET states. (B) Table summarizing FRET efficiency statistics. (C) FRET data from aptamers in the absence of TPP (purple), and in the presence of saturating (2 mM) T (pink) and TMP (orange), displayed together with data for the SB state in the presence of TPP (yellow) for comparison. (D) Table summarizing FRET efficiency statistics for the TPP, T, and TMP conditions indicated.\n\n### TPP analogs reveal differences in helix-arm configuration during ligand binding\n\nTPP analog ligands that are missing the terminal phosphate group, such as TMP (thiamine monophosphate) and T (thiamine), are thought to be able to form contacts with only one half of the bipartite binding site of the aptamer. In support of this notion, force spectroscopy has previously established that FECs of the aptamer bound by such analogs closely resemble those corresponding to the weakly bound, F\u2032\u2022TPP conformation (Anthony et al., 2012). We collected data for both FECs and FRET trajectories for aptamer binding in the presence of TMP, T, and in the absence of ligand, and applied the same clustering formalism as for aptamer binding in the presence of TPP (Figure 5C). FRET trajectories acquired in the absence of ligand exhibited a low efficiency (mean = 0.46), and closely matched those assigned earlier to the APO state, which had been observed in the presence of TPP, but prior to presumed ligand binding, lending additional experimental support to that assignment. Aptamers bound to either TMP or T generated FECs similar to those previously observed, and closely resembled the weakly bound conformation in the presence of TPP, as anticipated. The FRET efficiencies were similar for both T and TMP ligands (means = 0.64 and 0.69, respectively). However, both these values are significantly lower than the efficiency of the WB state obtained in the presence of TPP (mean = 0.73). Because the opening transitions in FECs tend to be dominated by secondary structure, whereas the FRET signal reports a tertiary rearrangement, we conclude that aptamers bound to TMP or T share a similar secondary structure with the aptamer weakly bound to TPP, but differ in tertiary structure: specifically, the analogs TMP and T fail to bring the helix arms together as closely as TPP.\n\n### Hidden Markov modeling of FRET refolding trajectories reveals rates of aptamer helix arm dynamics\n\nTo quantify the helix arm dynamics, we fitted a sequential, four-state hidden Markov model (HMM) to refolding portions of the FRET trajectories (obtained under negligible loads that permit structure formation, <5 pN) (Figure 6A). FRET values and directional transition rates were obtained at TPP concentrations of both 5 \u00b5M and 50 \u00b5M (Figures 6B,C). The corresponding values for FRET states identified by hidden Markov modeling were identical, within statistical error, at both TPP concentrations, and notably, also within statistical error for the corresponding states identified using k-means cluster analysis (Figure 6B and Figure 5B). We were therefore able to make a direct correspondence between the HMM-identified states (called A, B, and C) and the clustered FRET states (Apo, WB, and SB, respectively). At the higher TPP concentration, all transition rates except for the A \u2192 B rate remained the same within error, implying that only this transition, corresponding to the Apo \u2192 WB transition, is TPP-dependent (Figure 6C). The inferred dependence is also consistent with the kinetic model proposed on the basis of force spectroscopy, where only the transition between states F\u2032 and F\u2032\u2032\u2022TPP is TPP-dependent (Figure 7A and 7B) (Anthony et al., 2012). Therefore, both FRET and force data support a sequential, four-state kinetic model. However, the transition rates obtained using the HMM approach are consistently faster than the rates previously derived from force spectroscopy alone. Specifically, at the high TPP concentration, the lifetime in the A state was vanishingly short, and only a single dwell interval was scored by the HMM procedure. Instead, the vast majority of records (N = 52 of 53) started out in state B, and thereafter made subsequent transitions between B and C states. We conclude that the A \u2192 B transition rate at the higher TPP concentration is likely faster than our detection capability, and that the apparent 4-fold increase in this transition rate should be taken as a lower bound.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/12362/elife-12362-fig6-v2.jpg)\n\n**Figure 6.:** (A) Four-state HMM fit to a 30-second portion of concatenated refolding FRET trajectories in the presence of 5 \u00b5M TPP. (B) Top: Reaction diagram for the four-state, sequential HMM model, with states UF and A (donor-fluorescing), and B and C (acceptor-fluorescing). Bottom: table summarizing FRET values obtained 5 \u00b5M and 50 \u00b5M TPP concentrations for each state. (C) Table summarizing directional rates for transitions between HMM states A, B, and C. The yellow icon indicates the TPP-dependent transition rate.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/12362/elife-12362-fig7-v2.jpg)\n\n**Figure 7.:** (A) Cartoon summarizing the correspondence between analysis and data collection methodologies. The corresponding states and reaction schemes obtained from HMM analysis (top line; pink circles), helix-arm configuration states obtained from FRET signals (middle line; blue circles), and secondary structural states inferred from force spectroscopy (lower line; green ellipses) are shown. (B) Model for ligand binding and associated conformational changes. Colored labels indicate states based on aptamer secondary structure (green circles and ellipses; derived from force data) and sensor-helix arm configuration (blue circles; derived from FRET data). Prior to TPP binding, the sensor arms are apart. Subsequent to TPP binding, the arms remain mobile but begin to move closer together in the weakly-bound, liganded state. This mobility may reflect a type of conformational heterogeneity that is either dynamic (top), with flexible arms, or static (bottom), with rapid interconversions between transient states (square brackets; see text). The system subsequently transitions, on a timescale of around a second, to a strongly bound state, with the sensor arms fully docked and largely immobilized.\n\n## Discussion\n\nThe concurrent use of force spectroscopy, which primarily monitors secondary structural states, and FRET, which can probe tertiary structural rearrangements, has helped to reveal new details of the interaction between ligand binding and conformational change in the TPP riboswitch (Anthony et al., 2012). The eukaryotic aptamer folds quickly into a stable form, where the P3-L5 arm configuration remains open, as indicated by the stable, low FRET trajectories recorded in the absence of ligand (Figure 3A, Figure 3\u2014figure supplement 2F\u2013H). By contrast, Haller et al. (2013) reported that, in the absence of ligand, the arms of the bacterial form of the TPP aptamer interchange rapidly among three FRET states, as fit by a hidden Markov model, with dwell times around 100 ms (Haller et al., 2013). The slightly slower imaging rate employed here (20 frames/s, vs. ~50\u2013100 frames/s) should still have been adequate to detect any comparable flickering, in principle, but none was evident in our records. The eukaryotic aptamer is therefore structurally more stable in its unbound form (or conceivably, it switches among configurations, but at a significantly faster rate). We note that the two TPP aptamers differ primarily in their P3 stem regions: the bacterial form lacks a distal P3 extension that is present in the eukaryotic form, and this longer element may exert a stabilizing role on the unbound aptamer.\n\nUpon ligand binding, the P3 and L5 arms underwent a rapid conformational change, as manifested by the FRET signal, corresponding to the transition from the APO to the WB state (Figures 3B,C; blue to green boxes). The FRET levels in the WB state exhibited comparatively high variance (Figure 5B), and appeared to flicker between intermediate and high FRET values. Transitions out of the WB state were generally irreversible, and these led directly to the SB state, which was characterized by a stable, high FRET level with significantly lower variance. We therefore interpret the SB configuration as one where the two helix arms are fully docked, forming a tight, stable P3-L5 tertiary interaction. Based upon the data, the WB state can be interpreted as one where the P3 and L5 arms are partially docked, that is, they remain mobile but closer, on average, than in the APO state. Alternatively, the WB state might represent a superposition of (less individually flexible) docked and undocked conformations that interchange rapidly on the timescale of our data acquisition, at rates >>20\u2009s-1 (Figure 6C). Put another way, the WB state must be mobile, and consistent with either dynamic conformational flexibility or with static conformational heterogeneity (Torella et al., 2011).\n\nHelix arm behavior was examined further by exploring the effects of aptamer binding by the TPP analogs, thiamine (T) and thiamine monophosphate (TMP). The binding site of the aptamer, located at the central junction of the arms, is bipartite, and is able to bind to the thiamine moiety of TPP on one side, and to phosphate groups on the other. One previous study of T and TMP, which lack one and two phosphate groups, respectively, and therefore bind to only one side of the site, concluded that the lack of phosphates prevents proper alignment of the P3-L5 arms and ultimately, docking (Noeske et al., 2006). For both bound analogs, the mean FRET efficiencies were smaller than the corresponding FRET efficiency of the SB state (Figure 5D). These results imply that the sensor helix arms spend most of their time farther apart when bound to TMP or T than when bound to TPP in the F\u2033\u2022TPP conformation. We surmise that each additional phosphate group serves to draw the arms closer together during ligand binding, and is responsible for the observed increase in FRET. Perhaps more surprisingly, the FRET trajectories for the aptamer after binding onto TMP and T are stable and low in variance, suggesting that although the P3-L5 structures are unable to dock, they remain in a stable configuration (Figures 5C and 5D). This trend is reflected in the FRET variance obtained during force ramp, which is low at 0.005 and 0.003 for T and TMP, respectively, but significantly larger at 0.010 for the WB FRET state (Figures 5B and 5D). This result implies that when the aptamer is bound to T or TMP, the arms are less dynamic than when the aptamer is bound to TPP in the F\u2032\u2022TPP conformation. Taken together, these data suggest that aptamer binding of TPP in the F\u2032\u2022TPP conformation is a state in which the helix arms are in close proximity due to the presence of two phosphate groups, yet exhibit significant flexibility. This flexibility appears to be essential for proper orientation of the helix arms, which primes the arms to dock and the aptamer to adopt the F\u2033\u2022TPP conformation.\n\nOur studies of the complete eukaryotic TPP riboswitch reveal a ligand binding process distinct from that of the bacterial TPP riboswitch. We observed a rather rigid helix arm configuration during the fully folded, APO state, in contrast to the dynamic helix arm behavior reported for the E. coli TPP riboswitch in the absence of TPP. Upon TPP binding, we observed an increase in helix arm dynamics in the WB state, which is also in contrast to bacterial studies that observed a reduction of arm dynamics upon ligand binding. Our observations of FRET trajectories suggest that helix-arm fluctuations occur at significantly faster rates than any secondary structural changes. Based on our data, we conclude that both secondary and tertiary interactions are vital to tight TPP binding. We speculate that in the eukaryotic aptamer, ligand binding first anchors the lower regions of the helix arms, inducing strains that lead to fluctuations in the more distal regions. Such fluctuations increase the frequency of contact between the P3-L5 arms, and thereby increase the probability of docking, lowering the binding energy further. Future studies using additional FRET probes, and conducted at even higher time resolution, should be able to probe independently the motions of the lower aptamer regions.\n\nThe bacterial and eukaryotic forms of the TPP riboswitch share a similar core structure, bind identical ligands, and regulate thiamine pyrophosphate synthesis (albeit in rather different ways). However, it has become clear that even minor structural differences between forms can yield distinct properties. For example, the comparatively longer and more stable P3 stem found in the eukaryotic riboswitch leads to slower arm dynamics, as expected, with wide-ranging consequences. But piecing together a more detailed, quantitative picture of the folding landscape, which includes strain-dependent ligand binding and the formation of tertiary contacts during helix-arm docking, requires special methodology, such as the combination of fluorescence and force spectroscopy pursued here. It is still early days, but we anticipate that the combined force-FRET technique will be a powerful tool for elucidating riboswitch function across all kingdoms of life.\n\n## Materials and methods\n\n### Sequences used\n\n#### wtAtRs21\u00a0(64 nt) U88U (P3)\n\nAUC GAG AGG GAC ACG GGG AAA CAC CAC CAU AUA U GCA CCA GGG GUG CUU GAA CCA GGA (5-N-U)AG CCU\n\n#### wtAtRs2 (Long Chain 64 nt) U25U (P4/5)\n\n/5Phos/ GCG AAA AGG CGG GCU AUC CGG GAC CAG GCU GAG AAA GUC CCU UUG AAC CUG AAC AGG G(5-LC-N-U)A AUG C\n\n#### wtAtRs3 (53 nt)\n\n/5Phos/ CUG CGC AGG GAG UGU GCU AAC AAG GUC ACC AUC AUC CUG ACU AGA GUC CUU GG\n\n### DNA splints\n\n#### P45_splint_60\n\nCTCTAGTCAGGATGATGGTGACCTTGTTAGCACACTCCCTGCGCAGGCATTACCCTGTTC\n\n#### P3_splint_41\n\nGCCCGCCTTTTCGCAGGCTATCCTGGTTCAAGCACCCCTGG\n\n### Nucleic acid labeling\n\nAn instrument characterization/calibration was performed using DNA hairpins with short tetraloops as controls. We examined two hairpins: one with a 15-bp stem (15R50/T4) and one with a 20-bp stem (20R25/T4). The nanomechanical properties of both hairpins have been extensively characterized in a previous force-spectroscopy study (Woodside et al., 2006). Hairpins were constructed by ligating separately prepared 5\u2032 and 3\u2032 fragments (Figure 8A); in each of the fragments, a single amino-modified thymidine residue was introduced near the base of the hairpin (Integrated DNA Technologies). The modified bases were labeled with the fluorescent dyes, ATTO550 and ATTO647N (ATTO-TEC), using an amine-labeling chemistry (Kricka, 2002; Solomatin and Herschlag, 2009). The dye-labeled fragments were annealed using a temperature ramp protocol, from 95\u00b0C to 4\u00b0C in 40\u2009min, and ligated with T4 DNA ligase (Invitrogen,\u00a0Carlsbad,\u00a0CA) for 30\u2009min at 37\u00b0C (Akiyama and Stone, 2009). Proteins were removed by phenol-chloroform extraction, and the ligated hairpins were ethanol-extracted. Doubly\u00a0labeled hairpins were separated from incomplete hairpin species on a 10% PAGE gel, then electro-eluted, followed by ethanol precipitation.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/12362/elife-12362-fig8-v2.jpg)\n\n**Figure 8.:** (A) Opening distances (F1/2) and forces (\u0394x) of DNA hairpins SJ1 and SJ2 were measured at non-equilibrium and compared to previous measurements at equilibrium. (B) FRET trajectories and FECs are shown. (C) k-means clustering for SJ1 and SJ2 FRET trajectories. Cluster means are indicated with filled\u00a0diamonds. (D) Table summarizing opening force and FRET statistics, force ramp FRET statistics, plus predicted FRET efficiency. (E) Donor and acceptor traces (top) in the presence of 20 and 30% TQ (left and right, respectively).\n\nThe TPP riboswitch was split into three fragments: wtAtRs1, wtAtRs2, and wtAtRs3 (Dharmacon,\u00a0Lafayette,\u00a0CO). Fluorescent dyes were attached via amino-modified uracil bases at G88 (5-N-U) and U25 (5-LC-N-U). G88 is found in the P3 stem structure of fragment wtAtRs1, and was labeled with ATTO550 dye; U25 is found in the L5 loop of fragment wtAtRs3 and was labeled with ATTO647N dye. Labeled fragments were splint-ligated using T4 RNA ligase 2, assisted by complimentary DNA oligomers that bridged the fragments. Labeled and ligated riboswitches were gel extracted and eluted, as described (Anthony et al., 2012), for the DNA hairpins.\n\n### Dye characterization\n\n#### Base modifications and dye labeling do not interfere with opening force and opening distance in DNA hairpins\n\nFor calibration and confirmation purposes, we conducted a preliminary optical trapping-smFRET study using dye-modified versions of a\u00a0DNA hairpin which has been extensively characterized, 15R50T4 (here, called SJ1) (Blakely, et al., 2014; Woodside et al., 2006). Opening force (F1/2) and opening distance (\u0394x) values obtained during pulling experiments were compared to those obtained at equilibrium under constant force (Figure 8A). The F1/2 and \u0394x values were also measured for SJ1 hairpins with internal amino-modified thymine base dye labeling sites (Integrated DNA Technologies), and ATTO550-ATTO647N dye-labeled hairpins. Comparisons of F1/2 and \u0394x values between unmodified and amino-modified, but unlabeled, SJ1 hairpins confirmed that nucleotide modification and fluorescent labeling have minimal effects on the measured mechanical properties. The minor differences that were observed may be attributable to the fact that comparatively rapid force ramps may slightly overstretch a DNA hairpin just prior to duplex opening, resulting in a small force overshoot, and consequent overestimation of the extension, as noted (Li et al., 2006; Liphardt et al., 2001).\n\nPrevious studies have shown that fluorescent dye labels that get placed very close to neighboring nucleotides can become quenched, especially near guanine (Di Fiori and Meller, 2010). To test this observation, we designed DNA hairpin 20R25/4T (SJ2). On SJ2, amino-modified thymine labeling sites were situated three nucleotides from either side of the base of the hairpin stem, and G:C base pairs located near the base, and guanine residues in the adjacent single-stranded regions, were replaced with adenine or thymine. Again, fluorescently-labeled and base-modified SJ2 hairpins reported F1/2 and \u0394x values comparable to those of base-modified and unlabeled SJ2 hairpins, confirming that base modification and fluorescent labeling did not perturb DNA hairpin structure nor folding dynamics (Figure 8A).\n\n#### FRET measurements agree with predicted FRET values\n\nThe FRET readout of the ATTO550-ATTO647N dye pair during non-equilibrium pulling experiments of DNA hairpins was measured with an exposure time of 50 ms. For both SJ1 and SJ2, FRET transitions from high to low FRET efficiency were temporally coincident with hairpin rupture events (Figure 8B). FRET values recorded at the time of hairpin opening matched theoretical FRET efficiency (E) calculated from the dipole-dipole coupling mechanism expression $E=1/[1+(R/R_{0})^{6}]$, where R is the inter-dye distance and R0 is the F\u00f6rster radius of the ATTO550-ATTO647N dye pair. Opening FRET was plotted against opening force, and k-means clustering with k = 2 was applied to identify the centroids of each hairpin cluster (Figure 8C). The clustering FRET mean for SJ1 (0.89) was significantly lower than the predicted value (0.98) (Figure 8D). However, since SJ2 reports a clustering FRET mean (0.86) consistent with predicted FRET (0.87), we believe that the FRET discrepancy for SJ1 can be explained by dye interactions with pyrimidine nucleotides located at the base of the hairpin. The RNA aptamer construct was designed accordingly to avoid such interactions.\n\n### Trolox\n\nTrolox (TX), a soluble analog of vitamin E, has been shown to reduce triplet-state quenching and blinking, especially when combined with Trolox-quinone (TQ) (Cordes et al., 2009; 2011). TX was dissolved in DMSO to 100 mM and exposed to UV light, yielding 20\u201328% TQ in 3 mM TX. The TQ concentration was determined by diluting UV-exposed TX to 3 mM in PHC buffer (50 mM HEPES pH 7.5, 130 mM KCl, 4 mM Mg2+, 1 mM EDTA) and measuring the absorbance at 255 nm, according to:\n\n$$\n[TQ]=\\frac{A_{\\gamma}/d\u2212\\epsilon_{\\gammaTX}[TX]_{0}}{\\epsilon_{\\gammaTQ}\u2212\\epsilon_{\\gammaTX}}\n$$\n\nwhere \u03b3 is the wavelength (255 nm), d is the distance (1 cm), and the extinction coefficients for TX (\u03b5\u03b3TX) and TQ (\u03b5\u03b3TQ) are 400 and 11,600\u2009l\u00b7mol-1\u00b7cm-1, respectively. Lower percentages of TQ were obtained by diluting TQ in 100 mM unexposed TX. A stock was stored at 4\u00b0C, and was diluted to 3 mM in SCAV prior to experiments. DNA hairpins held under low load showed reduced blinking in the presence of TQ (Figure 8E).\n\n### Simultaneous single-molecule F\u00f6rster resonance energy transfer optical trapping instrumentation and data collection\n\nWe incorporated fluorescence excitation and detection capabilities into an existing dual-beam optical trapping apparatus, as described (Greenleaf et al., 2008; Lang et al., 2002). Briefly, the setup (schematic; Figure 2) is based on a Nikon TE2000 inverted light microscope\u00a0(Nikon Instruments, Melville, NY), and utilizes three lasers: one for optical trapping (10W; 1,064 nm; diode-pumped Nd:YVO4 laser; Spectra-Physics Lasers, Mountain View, CA), one for position detection (20 mW; 830 nm; single-mode diode laser; Qioptiq,\u00a0Waltham,\u00a0MA), and one for fluorescence excitation (1 W; 532 nm; diode-pumped, frequency-doubled YAG; CrystaLaser,\u00a0Reno,\u00a0NV). Fluorescence emission was detected by an electron-multiplying CCD (EMCCD) camera used for imaging (iXon 897; Andor,\u00a0United\u00a0Kingdom). Fluorescence excitation light was coupled into, and focused through, the microscope objective to a ~1 \u03bcm spot in the specimen plane, confocal with the fluorescently-labeled RNA construct. Dichroic filters were installed upstream of the EMCCD to split the emission spectra of the donor and acceptor fluorophores into spatially separate channels at the image plane; the emission image was passed through a rectangular slit to allow simultaneous collection from both acceptor and the donor fluorophores.\n\nThe fluorescence sub-image size was ~43 x 283 pixels (pixel size, 0.16 x 0.16 \u03bcm). Each region of interest (ROI) subtended 7 x 10 pixels for both the donor and acceptor channels. The EMCCD output counts for ATTO550 and -647N dyes were typically around 16,000 and 7,000 photons per second, respectively. Successive frame exposure times were 50 ms, and about 800 frames were collected per single-molecule record.\n\n### Dumbbell assay\n\nPolystyrene beads, 0.6 and 0.8 \u03bcm in diameter, were functionalized with streptavidin and anti-digoxigenin and coupled to 1 kb and 2 kb DNA handles, respectively, via single-stranded overhangs, as described (Anthony et al., 2012; Greenleaf et al., 2008). Handle lengths were chosen to provide adequate spatial separation (approximately 1 \u00b5m) between the optical trapping beams and the fluorophore-labeled constructs. Constructs for study (DNA hairpins or RNA aptamers) were first annealed to the handles, and then conjugated to beads by incubation for 1\u2009hr at room temperature. The bead incubation was diluted in oxygen-scavenging buffer (SCAV; 50 mM HEPES pH 7.5, 130 mM KCl, 4 mM Mg2+, 1 mM EDTA, 160 Units/ml glucose oxidase, 100 Units/ml catalase, 0.8% beta-glucose, and 3 mM UV-treated Trolox (Sigma-Aldrich,\u00a0Germany) with 10\u201314% Trolox-quinone). Both glucose oxidase and catalase were further purified from manufacturer\u2019s stocks by ultrafiltration. Samples were then introduced into flow cells for optical trapping experiments.\n\n### Data acquisition and analysis\n\nFECs were obtained by servoing the steerable optical trap at a constant rate (~90 nm s-1; stiffness 0.25\u20130.3 pN nm-1) relative to the fixed trap, using an acousto-optic deflector. Opening forces and extensions were measured by first identifying transitions in the FECs, then fitting the regions before and after these to a double wormlike chain model (WLC), as described (Greenleaf et al., 2008). For smFRET traces, correction factors for the leakage of donor emission into the acceptor channel (\u03b2) and differences between the donor and acceptor in efficiency and quantum yield (\u03b3) were calculated as described (McCann et al., 2010). The \u03b2 value was calculated to be 0.13 for the ATTO550-ATTO647N dye pair. The \u03b3 corrections varied among traces, and were determined by subtracting counts before and after the FRET transition for both donor and acceptor signals. After suitable \u03b2, \u03b3, and background corrections, the FRET efficiencies were calculated from E = IA /(IA + ID).\n\nk-means clustering for opening forces and FRET values was performed using Python libraries. The clustering parameter, k, was varied from 2\u20134 with default settings (Figure 4\u2014figure supplement 1), with optimal results obtained for k = 3. FRET data were binned using a bin size of 0.025. The global histogram of FRET data was fit to a sum of four Gaussians using a conventional nonlinear least-squares algorithm.\n\nRefolding FRET traces were concatenated and analyzed using the MSMBuilder HMM Python package (Beauchamp et al., 2011). FRET values and inter-state transition times were calculated for HMM states A, B and C using averaging. Transition rates were calculated from the reciprocals of the directional transition times.\n",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "7ec75444-699c-43eb-8152-c6a50efc236f",
+      "submission_id": "ddf93458-e648-4fc1-91e8-9c5a1498d3f1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Antoine M van Oijen, University of Groningen , Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.12362.014](https://doi.org/10.7554/eLife.12362.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Observation of long-range tertiary interactions during ligand binding by the TPP riboswitch aptamer\" for consideration by eLife. Your article has been reviewed by three reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen John Kuriyan as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nBy combining optical tweezers with FRET, the authors visualize the different conformational transitions that take place when the A. thaliana thiamine pyrophosphate (TPP) riboswitch unfolds. Single-molecule measurements can reveal hidden details \u2013 especially transient dynamics and rarely populated states \u2013 and previous single-molecule studies of TPP and other riboswitch aptamers using either optical trap or single-molecule FRET have already provided novel insights. Optical traps allow the application of mechanical forces to the ends of the aptamer and measure the forces at which unfolding and folding occur. Based on the extension change during such 'rips', the local structures that are being altered can be characterized and assigned. But because the optical trap alone reports only on the end-to-end distance of the aptamer, the internal degrees of freedom cannot be examined, at least not directly. In smFRET, different parts of the molecule can be labeled so that docking and undocking of part of the molecule that is important for the ligand-specific structural organization and is distant from the primary stem can be studied. By adding the smFRET capability to the optical trap setup, they are able to ask whether FRET changes can occur coincident or independent of major rips detected by optical trap.\n\nUsing optical tweezers to pull apart the riboswitch, the authors demonstrate the presence of a number of distinct conformations (in line with their previous 2012 PNAS paper). A simultaneous observation of distinct FRET levels indicates that three conformers exist, corresponding to the apo state, a weakly bound form, and a tightly bound one. The use of TPP analogs lacking the terminal phosphate suggests that these ligands only support the weak-binding configuration and that the terminal phosphate is required to bring the two helix arms of the switch together.\n\nOverall, the manuscript describes a well-executed and thoughtful analysis of the function of a eukaryotic TPP riboswitch. This work has been conducted by a top laboratory; the results and conclusions are both sound and compelling. The strength of this manuscript is that it is a wonderfully written description of the function of a TPP riboswitch that likely constitutes the most detailed understanding of these RNAs that has been published to date. The methods used by the authors have revealed information on how ligand binding affects key tertiary interactions, which would be difficult to do by using any other methods.\n\nEssential revisions:\n\nAll three reviewers express excitement about the technical tour de force that enabled the work and about the level of detail that is obtained from the simultaneous observation of the dynamics of secondary and tertiary structure formation. However, they raise substantial issues that should be addressed before a revised manuscript can be considered. In particular, a revised manuscript will need to include FRET experiments at zero force to address points number 1 and 2 in the list below. While no additional experiments are required to address the remaining points 3-10, a number of them relate to the need for additional clarification, analyses, and experimental detail. These issues should all be addressed in a revised manuscript and detailed in your rebuttal.\n\n1) The authors claim that their eukaryotic riboswitch behaves differently from the bacterial TPP riboswitch studied by the Blanchard laboratory using smFRET. They, however, do not provide data equivalent to the Blanchard study, that is, no smFRET data at zero force. TIRF-based smFRET analysis is easy to perform and in fact there are several labs at Stanford who can run such an experiment as a control.\n\n2) The authors should present donor and acceptor time traces for at least a couple of traces. The correction factor attributed to the difference in quantum yield is 0.17, suggesting about a factor of six difference. That's surprisingly large. The reference for the correction factor must be incorrect because I could not find the definitions of \u03b2 and \u03b3 in McKinney et al. cited. It is also known that ATTO647N undergoes spectral fluctuations, giving rise to intensity fluctuations on its own, and this can give rise to apparent FRET changes. Extended FRET trajectories at zero force can reassure the readers if this is not a problem.\n\n3) The mechanistic details of one riboswitch example might not be relevant to the mechanistic details of another. Therefore, it is not certain that the knowledge gained from such a detailed study of this TPP riboswitch construct will serve as universal truths and teach us about the function of other members of the same class. Specifically, the authors contrast their findings on a eukaryotic RNA with the previous findings from a bacterial RNA. Unfortunately, their data do not reveal whether these differences are inherent to these divisions of life, or if these differences are just individual characteristics that might vary between any two riboswitches. The authors are well aware of this concern based on some of their comments in the Discussion section. They, however, should discuss the issue of generalizable differences and/or similarities between the classes of riboswitches more explicitly.\n\n4) Hidden-Markov modeling was used to fit their data at forces below 10 pN but the force will certainly influence the observed kinetics. The authors need to show smFRET traces at defined forces and HMM fit overlaid over the raw data. In the current manuscript, they do not show any smFRET data used for HMM analysis and as a consequence, the readers cannot get a feel for how noisy the data is and how reasonable those fits are. In fact, from the current manuscript, I cannot tell whether the smFRET traces used for HMM analysis were obtained at a constant force or during the force ramp.\n\n5) The authors write that the rates determined using HMM analysis of smFRET data are higher than what they saw using optical trap data previously. There are a couple of peculiarities in their presentation. First, in the Discussion section, they say that one is faster than the other but the difference is within error. Well, if the difference is within error, that means the difference is not big enough to be considered significant. Then, why mention it at all? Second, because they acquired optical trap data simultaneously, they should analyze the mechanical data for the transition kinetics and make a direct comparison to rule out the possibility the aptamer modification and fluorescent labeling affect the kinetics even though they do not seem to affect the forces at which the major rips occur.\n\n6) The section \u201cTPP analogs reveal differences in helix-arm configuration during ligand binding\u201dpage describing the different FRET levels for different ligands is puzzling. The authors claim that the difference in FRET levels between the WB state for TPP (0.73) and that for TMP or T (0.64 and 0.69, respectively) is significant. However, earlier in the same section, the authors state that a FRET level of 0.46 for traces in the absence of ligand 'closely matches' the 0.41 level observed for the apo state. Why is the one difference relevant and the other not? From the reported SEM's and \u03c3^2 values it is not clear to me why these differences are interpreted differently.\n\n7) The section describing the unfolding features in the FEC's (Figure 2) is very unclear. In the section \u201cDirect correspondence between P3-L5 configuration and secondary structural conformation\u201d, the authors describe the observation of three opening transitions in the absence of TPP and one or two additional features in the presence of ligand. From the data represented in Figures 2 and Figure 2\u2014figure supplement 1, it is not clear to me where these transitions are and how frequently they occur. Reading back the 2012 Anthony et al. paper, I see where they are supposed to occur (for example, Figure 1C in the PNAS paper), but in the current manuscript these observations are poorly detailed. Also confusing is that the assignment of the 'rips' is different in the current manuscript than those in the PNAS paper: the authors attribute the transitions to the structural elements P1, (P2+P4/P5), and P3, while in the PNAS manuscript, these transitions are interpreted as corresponding to the elements (P1+P2), P4/P5, and P3.\n\n8) I do not understand why a single step or two-step FRET increase occurs as the force is ramped up. Are these increases caused by force increase? It must be the case because they do not see such FRET increases during the refolding phase when the force was kept low (~2.5 pN). But I do not understand why higher forces applied would induce L5 and P3 to approach each other. If this can be shown to be the case, I think that is quite surprising and significant. Or perhaps the ligand simply does not bind at 2.5 pN? What happens if they keep the force near zero for an extended period? Would they not see such FRET increases?\n\n9) The authors report a very short lifetime of state A in the presence of high concentration of TPP (50 \u00b5M) and state that only one very short-lived event was observed. However, panel F in Figure 2\u2014figure supplement 1 clearly shows the molecule in the low FRET state for almost a second after refolding. The authors should clarify.\n\n10) Figure 4B reports on the \u03c3^2 values of the different FRET states, suggesting that the \u03c3 between the apo and SB state only differs by 20-30%. However, visual inspection of the traces in Figure 2 suggests a much more marked difference. Are the values in Figure 4 obtained from a distribution containing the distributions of FRET values for all molecules, or are the \u03c3's obtained at level of individual traces?\n",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a373300f-576f-4b99-a73b-f04bdd0b4ec9",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C1",
+      "claim": "The thiamine pyrophosphate (TPP) riboswitch is a cis-regulatory element in mRNA that modifies gene expression in response to TPP concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "The thiamine pyrophosphate (TPP) riboswitch is a cis-regulatory element in mRNA that modifies gene expression in response to TPP concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about TPP riboswitches in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "df3a051d-3e81-4b27-b031-89bde4eba133",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C2",
+      "claim": "The specificity of the TPP riboswitch is dependent upon conformational changes that take place within its aptamer domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Its specificity is dependent upon conformational changes that take place within its aptamer domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "dc79d41a-0274-4ca4-bfba-7d1b56f726a6",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C3",
+      "claim": "Concurrent transitions observed in smFRET signals and RNA extension revealed differences in helix-arm orientation between two previously-identified ligand-binding states that had been undetectable by spectroscopy alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Concurrent transitions observed in smFRET signals and RNA extension revealed differences in helix-arm orientation between two previously-identified ligand-binding states that had been undetectable by spectroscopy alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the combined Force-FRET experiments reported in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "524d5c4f-1fe7-4296-a23b-5d3421be851e",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C4",
+      "claim": "The weaker binding state is able to bind to TPP, but is unable to form a tertiary docking interaction that completes the binding process.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that the weaker binding state is able to bind to TPP, but is unable to form a tertiary docking interaction that completes the binding process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "940e945c-67dc-4515-ad65-5e3f10613317",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C5",
+      "claim": "Long-range tertiary interactions stabilize global riboswitch structure and confer increased ligand specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Long-range tertiary interactions stabilize global riboswitch structure and confer increased ligand specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental observations in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "aee5088c-cdbb-4cec-af81-5a881b51589c",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C6",
+      "claim": "Riboswitch aptamers fold and then bind their cognate ligands in a highly specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Riboswitch aptamers fold and then bind their cognate ligands in a highly specific manner, and as they do so, they compete with alternative RNA structures that can form in conjunction with other domains of the riboswitch, which function either to permit, or to prevent, downstream gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about riboswitch function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "14143935-2201-4ef9-9b63-b8db69c19c1d",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C7",
+      "claim": "The aptamer of the TPP riboswitch senses the abundance of the coenzyme thiamine pyrophosphate, and in response, reduces the uptake of the vitamin thiamine.",
+      "claim_type": "EXPLICIT",
+      "source": "The aptamer of the TPP riboswitch senses the abundance of the coenzyme thiamine pyrophosphate, and in response, reduces the uptake of the vitamin thiamine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about TPP riboswitch function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "6b541dc0-9dc8-4a1b-b03b-307156533778",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C8",
+      "claim": "Versions of the TPP riboswitch have been discovered in all three kingdoms of life.",
+      "claim_type": "EXPLICIT",
+      "source": "Versions of the TPP riboswitch have been discovered in all three kingdoms of life (Cheah et al., 2007; Sudarsan et al., 2003; Winkler et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "2b4ff1ac-48ec-46bd-bab4-c5d963306bb3",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C9",
+      "claim": "In Arabidopsis thaliana, the TPP aptamer is located upstream of the 3\u2032 untranslated intron region of the thiC gene.",
+      "claim_type": "EXPLICIT",
+      "source": "In Arabidopsis thaliana, the TPP aptamer is located upstream of the 3\u2032 untranslated intron region of the thiC gene, and it contains a complementary sequence that, in the absence of TPP, acts to sequester a downstream splice site: it therefore functions by modulating alternative gene splicing (Wachter et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "a70faf7e-bae9-44b4-b43d-e86a94296932",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C10",
+      "claim": "The TPP aptamer in Arabidopsis thaliana functions by modulating alternative gene splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "In Arabidopsis thaliana, the TPP aptamer is located upstream of the 3\u2032 untranslated intron region of the thiC gene, and it contains a complementary sequence that, in the absence of TPP, acts to sequester a downstream splice site: it therefore functions by modulating alternative gene splicing (Wachter et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "c9914e1a-a245-4112-8d48-5675050bf644",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C11",
+      "claim": "Crystal studies have identified striking similarities between the structures of the ligand-bound forms of a truncated TPP aptamer from A. thaliana and the thiM aptamer from Escherichia coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystal studies have identified striking similarities between the structures of the ligand-bound forms of a truncated TPP aptamer from A. thaliana and the thiM aptamer from Escherichia coli (Edwards and Ferre-D'Amare, 2006; Serganov et al., 2006; Thore et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous crystallographic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "6d607f9a-f705-4650-a14e-b7f380eaa498",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C12",
+      "claim": "Both eukaryotic and prokaryotic TPP aptamers share a common binding conformation characterized by contacts formed by the TPP pyrimidine ring and the 'sensor' helix arm P2/3, the TPP pyrophosphate and 'sensor' helix arm P4/5, and a long-range tertiary rearrangement that brings together the L5 loop and the P3 stem.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, both eukaryotic and prokaryotic aptamers share a common binding conformation (Figure 1), characterized by contacts formed by (1) the TPP pyrimidine ring and the 'sensor' helix arm P2/3, (2) the TPP pyrophosphate and 'sensor' helix arm P4/5, and (3) a long-range tertiary rearrangement that brings together, and stabilizes, an interaction between the two arms carrying the L5 loop and the P3 stem (Noeske et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by a citation and reference to Figure 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "e7befb29-41b2-4526-b71d-6d7bb1ac5a02",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C13",
+      "claim": "Results from single-molecule force spectroscopy experiments have suggested that TPP binding is modeled kinetically by two sequential states: initial weak binding, followed by strong binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Results from single-molecule force spectroscopy experiments have suggested that TPP binding is modeled kinetically by two sequential states: initial weak binding, followed by strong binding (Anthony et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "418aad35-5e73-412a-acbf-d01315d04de6",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C14",
+      "claim": "FECs obtained for the binding of TPP in the weakly bound, intermediate F\u2032 state were strikingly similar to FECs measured for the complete binding of two TPP analogs, thiamine monophosphate (TMP) or thiamine (T).",
+      "claim_type": "EXPLICIT",
+      "source": "FECs obtained for the binding of TPP in the weakly bound, intermediate F\u2032 state were strikingly similar to FECs measured for the complete binding of two TPP analogs, thiamine monophosphate (TMP) or thiamine (T).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous force spectroscopy observations cited in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "ce2e5364-c156-426e-9968-6d6c4dc68ac5",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C15",
+      "claim": "TPP analogs TMP and T lack one or both phosphate groups, respectively, resulting in incomplete binding to the bipartite ligand-binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "These analogs lack one or both phosphate groups, respectively, resulting in incomplete binding to the bipartite ligand-binding site, which normally forms contacts with both the thiamine and phosphate moieties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the structure of TPP analogs and their binding properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "1e427b4d-8cd3-4d73-aee2-d0b87d33fbb3",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C16",
+      "claim": "Similar FECs were measured for TPP binding by a mutant aptamer that is unable to form tertiary contacts between the two arms carrying L5 and P3.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar FECs were also measured for TPP binding by a mutant aptamer (Anthony et al., 2012) that is unable to form tertiary contacts between the two arms carrying L5 and P3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "bba68f23-9d31-4a21-a675-be4236eb3ed2",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C17",
+      "claim": "In the absence of TPP, FECs for the folded aptamer (F) displayed three opening transitions, or rips, corresponding to the sequential rupture of the secondary structural elements (P1 + P2), P4/5 and the P3 stem, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of TPP, FECs for the folded aptamer (F) displayed three opening transitions, or rips, corresponding to the sequential rupture of the secondary structural elements (P1 + P2), P4/5 and the P3 stem, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the force spectroscopy experiments reported in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "363aae93-3265-4e3f-b840-366b8c40844a",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C18",
+      "claim": "In the presence of TPP, an FEC with a single opening transition at low force (<20 pN), sometimes followed by an additional opening transition, corresponds to the weakly bound state, F\u2032\u2022TPP.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of TPP, two additional FEC forms were observed: (1) an FEC with a single opening transition at low force (<20 pN), sometimes followed by an additional opening transition, that corresponds to the weakly bound state, F\u2032\u2022TPP",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the force spectroscopy experiments reported in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "85a84b65-361c-4bda-83c8-44dbab6ae8b3",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C19",
+      "claim": "In the presence of TPP, an FEC with a single, high-force (>20 pN) transition corresponds to the tightly bound, fully folded state, F\u2033\u2022TPP.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of TPP, two additional FEC forms were observed: (1) an FEC with a single opening transition at low force (<20 pN), sometimes followed by an additional opening transition, that corresponds to the weakly bound state, F\u2032\u2022TPP, and (2) an FEC with a single, high-force (>20 pN) transition, that corresponds to the tightly bound, fully folded state, F\u2033\u2022TPP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the force spectroscopy experiments reported in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "78b2975c-4240-41d2-a488-d0cc1987eb90",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C20",
+      "claim": "In the absence of TPP, the FRET efficiency of the F state remained stable near a low value under reduced loads, and then dropped abruptly to near zero upon the first opening transition, as the duplex elements P1 and P2 unfolded.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of TPP (Figure 3A), the FRET efficiency of the F state remained stable near a low value under reduced loads, and then dropped abruptly to near zero upon the first opening transition, as the duplex elements P1 and P2 unfolded.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the combined Force-FRET experiments, with reference to Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "922ca6c5-1ffc-4919-b3db-e902f2876495",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C21",
+      "claim": "In the presence of TPP, the FRET efficiency of F\u2032\u2022TPP started out with a similar low value, but then transitioned to an intermediate level which was not observed in the absence of ligand, until the elements P1, P2 and P4/5 unfolded together.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of TPP (Figure 3B), the FRET efficiency of F\u2032\u2022TPP started out with a similar low value, but then transitioned to an intermediate level which was not observed in the absence of ligand, until the elements P1, P2 and P4/5 unfolded together, resulting in an abrupt drop to near zero.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the combined Force-FRET experiments, with reference to Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "ac3f67da-83ed-4913-8a92-5bab6b12cd89",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C22",
+      "claim": "FRET signals for F\u2033\u2022TPP first jumped from a low to an intermediate FRET level, but later transitioned to a high FRET level, characterized by a comparatively low variance, until the final opening transition.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, FRET signals for F\u2033\u2022TPP (Figure 3C) first jumped from a low to an intermediate FRET level (the same two levels, on average, displayed by F\u2032\u2022TPP), but later transitioned to a high FRET level, characterized by a comparatively low variance, until the final opening transition, corresponding to the unfolding of the entire aptamer, which returned the FRET level to the baseline.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the combined Force-FRET experiments, with reference to Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "ab0ac7ca-f61f-4860-a77c-6e50425a32c8",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C23",
+      "claim": "k-means cluster analysis with k = 3 selected distinct clusters and established threshold values for force and FRET coordinates.",
+      "claim_type": "EXPLICIT",
+      "source": "A plot of opening FRET versus opening force revealed sub-populations that were binned by k-means cluster analysis (Figure 4A); setting k = 3 selected distinct clusters and established threshold values for each coordinate axis (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the analytical method used and references Figure 4A and 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "59afc025-47d3-40ef-8cd6-b8a0ad398427",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C24",
+      "claim": "FECs with an opening force lower than 11.5 pN were assigned to aptamers unfolded when not bound to TPP.",
+      "claim_type": "EXPLICIT",
+      "source": "FECs with an opening force lower than 11.5 pN were assigned to aptamers unfolded when not bound to TPP",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a threshold established from cluster analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "f020c823-dfd1-400d-9133-b1fba75e316b",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C25",
+      "claim": "Opening forces between 11.5 pN and 21.0 pN were assigned to aptamers that unfolded in the F\u2032\u2022TPP state.",
+      "claim_type": "EXPLICIT",
+      "source": "opening forces between 11.5 pN and 21.0 pN were assigned to aptamers that unfolded in the F\u2032\u2022TPP state",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a threshold established from cluster analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "30907b32-71b0-419a-97f6-dcf664a4286e",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C26",
+      "claim": "Opening forces above 21.0 pN were assigned to aptamers that unfolded from the F\u2033\u2022TPP state.",
+      "claim_type": "EXPLICIT",
+      "source": "opening forces above 21.0 pN were assigned to aptamers that unfolded from the F\u2033\u2022TPP state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a threshold established from cluster analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "1c11f7e8-f121-4328-b000-0459d8f2e5b3",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C27",
+      "claim": "The mean opening forces computed for each of the three clusters (C1, C2, and C3) matched, within error, the force values that had been estimated in a previous study using other methods.",
+      "claim_type": "EXPLICIT",
+      "source": "The mean opening forces computed for each of the three clusters (C1, C2, and C3) matched, within error, the force values that had been estimated in a previous study using other methods (Anthony et al., 2012), validating the choice of k.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares current results to previous findings cited in the text.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "5b9781fb-7cf6-49a6-868d-9011d1a5c279",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C28",
+      "claim": "The lowest-valued FRET sub-population, corresponding to the APO state, reflects a significant physical separation between the P3 stem and L5 loop, which remain consistently apart.",
+      "claim_type": "EXPLICIT",
+      "source": "The lowest-valued FRET sub-population, corresponding to the APO state, reflects a significant physical separation between the P3 stem and L5 loop, which remain consistently apart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the FRET data based on the relationship between FRET efficiency and distance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "267155e9-fd28-4a1d-b2ee-891cbd937d59",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C29",
+      "claim": "The intermediate-value FRET sub-population, corresponding to the WB (weakly bound) state, reflects more proximal stem-loop interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "The intermediate-value FRET sub-population, corresponding to the WB (weakly bound) state, reflects more proximal stem-loop interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the FRET data based on the relationship between FRET efficiency and distance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "6529f51a-786a-49fb-a23b-034b1304e775",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C30",
+      "claim": "The highest-value FRET population, corresponding to the SB (strongly bound) state, reflects the close apposition of P3 and L5.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest-value FRET population, corresponding to the SB (strongly bound) state, reflects the close apposition of P3 and L5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the FRET data based on the relationship between FRET efficiency and distance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "ded6456c-d254-4776-891d-87de7dac5a73",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C31",
+      "claim": "FRET trajectories acquired in the absence of ligand exhibited a low efficiency (mean = 0.46), and closely matched those assigned earlier to the APO state.",
+      "claim_type": "EXPLICIT",
+      "source": "FRET trajectories acquired in the absence of ligand exhibited a low efficiency (mean = 0.46), and closely matched those assigned earlier to the APO state, which had been observed in the presence of TPP, but prior to presumed ligand binding, lending additional experimental support to that assignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the FRET experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "698bf895-4a58-4c9d-809e-e9ad3dae3e7d",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C32",
+      "claim": "Aptamers bound to either TMP or T generated FECs similar to those previously observed, and closely resembled the weakly bound conformation in the presence of TPP.",
+      "claim_type": "EXPLICIT",
+      "source": "Aptamers bound to either TMP or T generated FECs similar to those previously observed, and closely resembled the weakly bound conformation in the presence of TPP, as anticipated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the force spectroscopy experiments with TPP analogs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "734d8d6d-ed05-4e98-90fa-c4f2c4838b9c",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C33",
+      "claim": "The FRET efficiencies were similar for both T and TMP ligands (means = 0.64 and 0.69, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "The FRET efficiencies were similar for both T and TMP ligands (means = 0.64 and 0.69, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the FRET experiments with TPP analogs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "748915e5-9b00-4a8b-923b-f721f4a5d62a",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C34",
+      "claim": "Both FRET efficiency values for T and TMP are significantly lower than the efficiency of the WB state obtained in the presence of TPP (mean = 0.73).",
+      "claim_type": "EXPLICIT",
+      "source": "However, both these values are significantly lower than the efficiency of the WB state obtained in the presence of TPP (mean = 0.73).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of quantitative FRET data between different ligand conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "0de318b1-3b7b-453c-bf08-6ea28c9bcab6",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C35",
+      "claim": "Aptamers bound to TMP or T share a similar secondary structure with the aptamer weakly bound to TPP, but differ in tertiary structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the opening transitions in FECs tend to be dominated by secondary structure, whereas the FRET signal reports a tertiary rearrangement, we conclude that aptamers bound to TMP or T share a similar secondary structure with the aptamer weakly bound to TPP, but differ in tertiary structure",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing force and FRET data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "420f9e5c-c300-4981-b4f3-d618a36cb2bd",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C36",
+      "claim": "The analogs TMP and T fail to bring the helix arms together as closely as TPP.",
+      "claim_type": "EXPLICIT",
+      "source": "specifically, the analogs TMP and T fail to bring the helix arms together as closely as TPP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the FRET efficiency differences observed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "d3f3c9dc-f216-4935-a28f-b13d3f5cc978",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C37",
+      "claim": "FRET values identified by hidden Markov modeling were identical, within statistical error, at both 5 \u00b5M and 50 \u00b5M TPP concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding values for FRET states identified by hidden Markov modeling were identical, within statistical error, at both TPP concentrations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the HMM analysis of FRET data at different TPP concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "a6004f47-5dac-4da8-974c-d6ef997256fe",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C38",
+      "claim": "FRET values identified by HMM were within statistical error for the corresponding states identified using k-means cluster analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "The corresponding values for FRET states identified by hidden Markov modeling were identical, within statistical error, at both TPP concentrations, and notably, also within statistical error for the corresponding states identified using k-means cluster analysis (Figure 6B and Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This compares results from two different analytical methods, referencing Figures 6B and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "35ffaf52-2ed9-42c9-aaff-adb6d6faed9f",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C39",
+      "claim": "At the higher TPP concentration, all transition rates except for the A \u2192 B rate remained the same within error.",
+      "claim_type": "EXPLICIT",
+      "source": "At the higher TPP concentration, all transition rates except for the A \u2192 B rate remained the same within error, implying that only this transition, corresponding to the Apo \u2192 WB transition, is TPP-dependent (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the HMM analysis comparing transition rates at different TPP concentrations, with reference to Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "31ad4b27-0176-4926-995f-d7edab628a1d",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C40",
+      "claim": "Only the transition between states A and B (Apo \u2192 WB) is TPP-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "At the higher TPP concentration, all transition rates except for the A \u2192 B rate remained the same within error, implying that only this transition, corresponding to the Apo \u2192 WB transition, is TPP-dependent (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the HMM analysis of transition rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "febd4d94-9529-49e9-b66a-486acad6adc2",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C41",
+      "claim": "Both FRET and force data support a sequential, four-state kinetic model.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, both FRET and force data support a sequential, four-state kinetic model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing FRET and force spectroscopy results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "1273a5f9-f135-4b72-8960-2240ccf88748",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C42",
+      "claim": "The transition rates obtained using the HMM approach are consistently faster than the rates previously derived from force spectroscopy alone.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the transition rates obtained using the HMM approach are consistently faster than the rates previously derived from force spectroscopy alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares current HMM results to previous force spectroscopy findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "9e405af2-0d00-4592-aaf4-6fc9f25a77e0",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C43",
+      "claim": "At the high TPP concentration, the lifetime in the A state was vanishingly short, and only a single dwell interval was scored by the HMM procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, at the high TPP concentration, the lifetime in the A state was vanishingly short, and only a single dwell interval was scored by the HMM procedure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the HMM analysis at high TPP concentration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "66f9ef5e-44c5-45ad-982d-f2a13a74b4ea",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C44",
+      "claim": "The vast majority of records (N = 52 of 53) started out in state B at high TPP concentration, and thereafter made subsequent transitions between B and C states.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the vast majority of records (N = 52 of 53) started out in state B, and thereafter made subsequent transitions between B and C states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the HMM analysis at high TPP concentration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "f372985c-cf6c-4f5c-93e3-046c798472d3",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C45",
+      "claim": "The A \u2192 B transition rate at the higher TPP concentration is likely faster than the detection capability of the experimental setup.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the A \u2192 B transition rate at the higher TPP concentration is likely faster than our detection capability, and that the apparent 4-fold increase in this transition rate should be taken as a lower bound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the HMM analysis results and experimental limitations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "f575aa32-c3c1-4014-8845-222d0556acf6",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C46",
+      "claim": "The eukaryotic aptamer folds quickly into a stable form, where the P3-L5 arm configuration remains open, as indicated by the stable, low FRET trajectories recorded in the absence of ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "The eukaryotic aptamer folds quickly into a stable form, where the P3-L5 arm configuration remains open, as indicated by the stable, low FRET trajectories recorded in the absence of ligand (Figure 3A, Figure 3\u2014figure supplement 2F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the FRET data in the absence of ligand, with references to figures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "b6b4308a-bd7e-471f-bee1-a012207635f8",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C47",
+      "claim": "In the absence of ligand, the arms of the bacterial form of the TPP aptamer interchange rapidly among three FRET states, with dwell times around 100 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, Haller et al. (2013) reported that, in the absence of ligand, the arms of the bacterial form of the TPP aptamer interchange rapidly among three FRET states, as fit by a hidden Markov model, with dwell times around 100 ms (Haller et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a previous study, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "94ebab62-cab7-45fa-a083-af3ffd018625",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C48",
+      "claim": "The eukaryotic aptamer is structurally more stable in its unbound form than the bacterial aptamer.",
+      "claim_type": "EXPLICIT",
+      "source": "The eukaryotic aptamer is therefore structurally more stable in its unbound form (or conceivably, it switches among configurations, but at a significantly faster rate).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing the current results to previous bacterial aptamer studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "911c6964-1649-47a0-8e90-cf83ba2845b4",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C49",
+      "claim": "The two TPP aptamers differ primarily in their P3 stem regions: the bacterial form lacks a distal P3 extension that is present in the eukaryotic form.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the two TPP aptamers differ primarily in their P3 stem regions: the bacterial form lacks a distal P3 extension that is present in the eukaryotic form, and this longer element may exert a stabilizing role on the unbound aptamer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural comparison between bacterial and eukaryotic aptamers based on known structures.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "5a00c8f6-1439-4c8d-a0c5-870b199914eb",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C50",
+      "claim": "The longer P3 extension in the eukaryotic form may exert a stabilizing role on the unbound aptamer.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the two TPP aptamers differ primarily in their P3 stem regions: the bacterial form lacks a distal P3 extension that is present in the eukaryotic form, and this longer element may exert a stabilizing role on the unbound aptamer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the structural differences.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "aa0b8459-13a9-470b-87ab-d1c135b264f9",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C51",
+      "claim": "Upon ligand binding, the P3 and L5 arms underwent a rapid conformational change, as manifested by the FRET signal, corresponding to the transition from the APO to the WB state.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon ligand binding, the P3 and L5 arms underwent a rapid conformational change, as manifested by the FRET signal, corresponding to the transition from the APO to the WB state (Figures 3B,C; blue to green boxes).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the FRET experiments, with reference to Figures 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "95910adb-c29e-4bad-9fbe-075752d0d827",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C52",
+      "claim": "The FRET levels in the WB state exhibited comparatively high variance.",
+      "claim_type": "EXPLICIT",
+      "source": "The FRET levels in the WB state exhibited comparatively high variance (Figure 5B), and appeared to flicker between intermediate and high FRET values.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation from the FRET data, with reference to Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "db141a84-accd-456d-aadb-1fc6473cf5f6",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C53",
+      "claim": "Transitions out of the WB state were generally irreversible, and these led directly to the SB state.",
+      "claim_type": "EXPLICIT",
+      "source": "Transitions out of the WB state were generally irreversible, and these led directly to the SB state, which was characterized by a stable, high FRET level with significantly lower variance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the FRET trajectories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "d45d4056-2fa1-42db-8a89-da09aa9ffcee",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C54",
+      "claim": "The SB configuration is one where the two helix arms are fully docked, forming a tight, stable P3-L5 tertiary interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore interpret the SB configuration as one where the two helix arms are fully docked, forming a tight, stable P3-L5 tertiary interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the FRET data based on the high FRET efficiency and low variance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "20e17a6e-2bf7-4198-811e-4db9f81d46ff",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C55",
+      "claim": "The WB state can be interpreted as one where the P3 and L5 arms are partially docked, that is, they remain mobile but closer, on average, than in the APO state.",
+      "claim_type": "EXPLICIT",
+      "source": "Based upon the data, the WB state can be interpreted as one where the P3 and L5 arms are partially docked, that is, they remain mobile but closer, on average, than in the APO state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the FRET data based on the intermediate FRET efficiency and high variance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "bb79a01e-32f0-4c7d-aa24-a115e9fc60c4",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C56",
+      "claim": "The WB state might represent a superposition of docked and undocked conformations that interchange rapidly on the timescale of data acquisition, at rates >>20 s-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the WB state might represent a superposition of (less individually flexible) docked and undocked conformations that interchange rapidly on the timescale of our data acquisition, at rates >>20 s-1 (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an alternative interpretation of the WB state based on the data, with reference to Figure 6C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "9b568e22-79d9-4753-a28d-d4592e449b8a",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C57",
+      "claim": "The WB state must be mobile, and consistent with either dynamic conformational flexibility or with static conformational heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "Put another way, the WB state must be mobile, and consistent with either dynamic conformational flexibility or with static conformational heterogeneity (Torella et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the nature of the WB state, with a citation to a relevant concept.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "f39f0916-f37e-485c-9228-410d29376719",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C58",
+      "claim": "The binding site of the aptamer, located at the central junction of the arms, is bipartite, and is able to bind to the thiamine moiety of TPP on one side, and to phosphate groups on the other.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding site of the aptamer, located at the central junction of the arms, is bipartite, and is able to bind to the thiamine moiety of TPP on one side, and to phosphate groups on the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about the TPP aptamer binding site structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "12ad7453-b716-4fb5-9b0c-da16e077f92d",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C59",
+      "claim": "One previous study of T and TMP concluded that the lack of phosphates prevents proper alignment of the P3-L5 arms and ultimately, docking.",
+      "claim_type": "EXPLICIT",
+      "source": "One previous study of T and TMP, which lack one and two phosphate groups, respectively, and therefore bind to only one side of the site, concluded that the lack of phosphates prevents proper alignment of the P3-L5 arms and ultimately, docking (Noeske et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a previous study, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "5a5e127e-27a4-4ae2-9a18-12a176a24941",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C60",
+      "claim": "For both bound analogs TMP and T, the mean FRET efficiencies were smaller than the corresponding FRET efficiency of the SB state.",
+      "claim_type": "EXPLICIT",
+      "source": "For both bound analogs, the mean FRET efficiencies were smaller than the corresponding FRET efficiency of the SB state (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison of FRET data, with reference to Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "a6a24d00-9a68-44bb-a177-98147df9bbf4",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C61",
+      "claim": "The sensor helix arms spend most of their time farther apart when bound to TMP or T than when bound to TPP in the F\u2033\u2022TPP conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results imply that the sensor helix arms spend most of their time farther apart when bound to TMP or T than when bound to TPP in the F\u2033\u2022TPP conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the FRET efficiency differences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "18e0497a-8b02-4b32-8a56-6a0fbe00dc2d",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C62",
+      "claim": "Each additional phosphate group serves to draw the arms closer together during ligand binding, and is responsible for the observed increase in FRET.",
+      "claim_type": "EXPLICIT",
+      "source": "We surmise that each additional phosphate group serves to draw the arms closer together during ligand binding, and is responsible for the observed increase in FRET.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the FRET data comparing TPP to its analogs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "4a3a8182-4b4b-4f8c-80a8-45f22b97db4b",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C63",
+      "claim": "The FRET trajectories for the aptamer after binding onto TMP and T are stable and low in variance, suggesting that although the P3-L5 structures are unable to dock, they remain in a stable configuration.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps more surprisingly, the FRET trajectories for the aptamer after binding onto TMP and T are stable and low in variance, suggesting that although the P3-L5 structures are unable to dock, they remain in a stable configuration (Figures 5C and 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation and interpretation from the FRET data, with references to Figures 5C and 5D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "2dbdcb97-2a5c-437f-96df-7f3174447abb",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C64",
+      "claim": "The FRET variance obtained during force ramp is low at 0.005 and 0.003 for T and TMP, respectively, but significantly larger at 0.010 for the WB FRET state.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend is reflected in the FRET variance obtained during force ramp, which is low at 0.005 and 0.003 for T and TMP, respectively, but significantly larger at 0.010 for the WB FRET state (Figures 5B and 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison of FRET variance, with references to Figures 5B and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "17287d04-3edc-4e61-b6b5-e5a3405a8800",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C65",
+      "claim": "When the aptamer is bound to T or TMP, the arms are less dynamic than when the aptamer is bound to TPP in the F\u2032\u2022TPP conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "This result implies that when the aptamer is bound to T or TMP, the arms are less dynamic than when the aptamer is bound to TPP in the F\u2032\u2022TPP conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing FRET variance values.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "2e05b43c-d4db-4dda-9db9-02ee10840685",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C66",
+      "claim": "Aptamer binding of TPP in the F\u2032\u2022TPP conformation is a state in which the helix arms are in close proximity due to the presence of two phosphate groups, yet exhibit significant flexibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data suggest that aptamer binding of TPP in the F\u2032\u2022TPP conformation is a state in which the helix arms are in close proximity due to the presence of two phosphate groups, yet exhibit significant flexibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined FRET and force data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "c611db4e-d252-4729-a62c-8807590eff8e",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C67",
+      "claim": "The flexibility of the helix arms in the F\u2032\u2022TPP state appears to be essential for proper orientation of the helix arms, which primes the arms to dock and the aptamer to adopt the F\u2033\u2022TPP conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "This flexibility appears to be essential for proper orientation of the helix arms, which primes the arms to dock and the aptamer to adopt the F\u2033\u2022TPP conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic interpretation of the role of flexibility in the binding process.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "a3206010-a105-4f87-8364-664e7c3575a5",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C68",
+      "claim": "Studies of the complete eukaryotic TPP riboswitch reveal a ligand binding process distinct from that of the bacterial TPP riboswitch.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies of the complete eukaryotic TPP riboswitch reveal a ligand binding process distinct from that of the bacterial TPP riboswitch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from comparing the current results to previous bacterial studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "f9e44ec9-e084-4bd8-90fe-455390dfa08b",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C69",
+      "claim": "A rather rigid helix arm configuration was observed during the fully folded, APO state, in contrast to the dynamic helix arm behavior reported for the E. coli TPP riboswitch in the absence of TPP.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a rather rigid helix arm configuration during the fully folded, APO state, in contrast to the dynamic helix arm behavior reported for the E. coli TPP riboswitch in the absence of TPP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the current observations to previous findings on the bacterial riboswitch.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "4ba5b7f3-59dc-4905-adb6-229960c7c35d",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C70",
+      "claim": "Upon TPP binding, an increase in helix arm dynamics was observed in the WB state, which is in contrast to bacterial studies that observed a reduction of arm dynamics upon ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon TPP binding, we observed an increase in helix arm dynamics in the WB state, which is also in contrast to bacterial studies that observed a reduction of arm dynamics upon ligand binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares the current observations to previous findings on the bacterial riboswitch.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "728e97b9-aa14-4b52-b7ad-725eaa5e0b92",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C71",
+      "claim": "FRET trajectories suggest that helix-arm fluctuations occur at significantly faster rates than any secondary structural changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our observations of FRET trajectories suggest that helix-arm fluctuations occur at significantly faster rates than any secondary structural changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the FRET data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "0900a03c-6db1-4711-8cbe-4f818b708db0",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C72",
+      "claim": "Both secondary and tertiary interactions are vital to tight TPP binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our data, we conclude that both secondary and tertiary interactions are vital to tight TPP binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the combined force and FRET data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "3b3a1f33-cdfb-46c5-8fd9-f011373f302f",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C73",
+      "claim": "In the eukaryotic aptamer, ligand binding first anchors the lower regions of the helix arms, inducing strains that lead to fluctuations in the more distal regions.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that in the eukaryotic aptamer, ligand binding first anchors the lower regions of the helix arms, inducing strains that lead to fluctuations in the more distal regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanistic model based on the data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "37835734-e469-41eb-91fe-f607b93736ac",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C74",
+      "claim": "Fluctuations in the distal regions of the helix arms increase the frequency of contact between the P3-L5 arms, and thereby increase the probability of docking, lowering the binding energy further.",
+      "claim_type": "EXPLICIT",
+      "source": "Such fluctuations increase the frequency of contact between the P3-L5 arms, and thereby increase the probability of docking, lowering the binding energy further.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanistic explanation based on the data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "41cf4b6c-b9d7-49d8-833f-2639fb8f8a07",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C75",
+      "claim": "The bacterial and eukaryotic forms of the TPP riboswitch share a similar core structure, bind identical ligands, and regulate thiamine pyrophosphate synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The bacterial and eukaryotic forms of the TPP riboswitch share a similar core structure, bind identical ligands, and regulate thiamine pyrophosphate synthesis (albeit in rather different ways).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about TPP riboswitches.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "5ac46dbe-1042-445f-ac8d-d4c6f1de6780",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C76",
+      "claim": "Minor structural differences between bacterial and eukaryotic TPP riboswitch forms can yield distinct properties.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it has become clear that even minor structural differences between forms can yield distinct properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion drawn from the comparison of bacterial and eukaryotic forms.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "ba917612-7eac-45c7-b23e-2bec73730348",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C77",
+      "claim": "The comparatively longer and more stable P3 stem found in the eukaryotic riboswitch leads to slower arm dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the comparatively longer and more stable P3 stem found in the eukaryotic riboswitch leads to slower arm dynamics, as expected, with wide-ranging consequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural differences and observed dynamics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "e726f773-a501-4c0f-8b31-81c0f8772f0e",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C78",
+      "claim": "The combined force-FRET technique will be a powerful tool for elucidating riboswitch function across all kingdoms of life.",
+      "claim_type": "EXPLICIT",
+      "source": "It is still early days, but we anticipate that the combined force-FRET technique will be a powerful tool for elucidating riboswitch function across all kingdoms of life.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a forward-looking statement about the utility of the technique.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "7ef3ae5e-1d26-4a44-9c34-3423da38e2e1",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C79",
+      "claim": "Fluorescent dyes ATTO550 and ATTO647N were covalently attached to the L5 and P3 helix arms, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Tertiary interactions were simultaneously scored by a FRET readout between donor and acceptor fluorescent dyes, ATTO550 and ATTO647N (Figure 1B), which were covalently attached to the L5 and P3 helix arms, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental labeling strategy, with reference to Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "bca0b1f1-7c9b-4d57-96f5-d8a0c05adddc",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C80",
+      "claim": "Aptamers were subjected to repeated cycles of unfolding and refolding.",
+      "claim_type": "EXPLICIT",
+      "source": "Aptamers were subjected to repeated cycles of unfolding and refolding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "dfda7c94-f3a2-4d4b-909f-f7e235800d16",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C81",
+      "claim": "The optical traps were brought into close proximity to reduce the applied load below 5.0 pN for a time of 0.5\u201330 s, allowing the aptamer to refold under low force.",
+      "claim_type": "EXPLICIT",
+      "source": "After a preliminary unfolding of the RNA, the optical traps were brought into close proximity, which reduced the applied load below 5.0 pN for a time of 0.5\u201330 s, allowing the aptamer to refold under low force (the refolding step).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol for the refolding step.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "91138e36-d20d-47ce-b2d0-4e3f4944999a",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C82",
+      "claim": "The force was ramped up by increasing the trap separation linearly at 200 nm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "The force was subsequently ramped up by increasing the trap separation linearly at 200 nm/s (Figure 3, Figure 3\u2014figure supplement 1, 2), as both molecular extension and fluorescence signals were acquired.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental protocol for the force ramp, with references to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "d8af4e4e-954c-47d2-952f-c34cf6b49df8",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C83",
+      "claim": "Refolding/unfolding cycles were repeated until either a dye photobleached or the RNA tether broke.",
+      "claim_type": "EXPLICIT",
+      "source": "After full extension, the refolding/unfolding cycle was repeated, until either a dye photobleached or the RNA tether broke.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "0c47ac6e-e0dd-4148-a990-910cab4c9608",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C84",
+      "claim": "FECs could be categorized into one of three distinct forms, each corresponding to a different folded conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported previously, FECs could be categorized into one of three distinct forms (Figures 3A,B,C) (Anthony et al., 2012), each corresponding to a different folded conformation, as follows.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the categorization of FECs, with references to figures and a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "3bdee1b5-8084-4a6d-bd33-1deccca17d96",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C85",
+      "claim": "Instruments that combine the capabilities of single-molecule fluorescence and optical trapping represent a comparatively new development.",
+      "claim_type": "EXPLICIT",
+      "source": "Instruments that combine the capabilities of single-molecule fluorescence and optical trapping represent a comparatively new development (Candelli et al., 2011; Comstock et al., 2011; Harada et al., 1999; Lang et al., 2004; Mameren et al., 2006; Sirinakis et al., 2012; van Mameren et al., 2009), and these continue to present significant technical challenges (Lang et al., 2004; van Mameren et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge with multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "aa3cbf6b-fe05-4780-a5b7-8b5ffdc7c849",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C86",
+      "claim": "Novel findings have begun to emerge using optical trapping and smFRET.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, novel findings have begun to emerge using optical trapping and smFRET (Comstock et al., 2015; Ngo et al., 2015; Suksombat et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as recent developments with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "d9817ce0-caa6-40e6-961f-7d06a2f553e9",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C87",
+      "claim": "Base modifications and dye labeling have minimal effects on the measured mechanical properties of DNA hairpins.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparisons of F1/2 and \u0394x values between unmodified and amino-modified, but unlabeled, SJ1 hairpins confirmed that nucleotide modification and fluorescent labeling have minimal effects on the measured mechanical properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from control experiments with DNA hairpins.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "b91a4b41-efb2-45b0-9ab2-e5f844f933de",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C88",
+      "claim": "Comparatively rapid force ramps may slightly overstretch a DNA hairpin just prior to duplex opening, resulting in a small force overshoot, and consequent overestimation of the extension.",
+      "claim_type": "EXPLICIT",
+      "source": "The minor differences that were observed may be attributable to the fact that comparatively rapid force ramps may slightly overstretch a DNA hairpin just prior to duplex opening, resulting in a small force overshoot, and consequent overestimation of the extension, as noted (Li et al., 2006; Liphardt et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for observed differences, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "bc21bedd-c5e8-4000-a407-736923b9f07b",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C89",
+      "claim": "Fluorescent dye labels that get placed very close to neighboring nucleotides can become quenched, especially near guanine.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that fluorescent dye labels that get placed very close to neighboring nucleotides can become quenched, especially near guanine (Di Fiori and Meller, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from previous studies, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "bdbac130-63ba-422d-9da8-f8c7f39da95f",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C90",
+      "claim": "The FRET readout of the ATTO550-ATTO647N dye pair during non-equilibrium pulling experiments of DNA hairpins was measured with an exposure time of 50 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "The FRET readout of the ATTO550-ATTO647N dye pair during non-equilibrium pulling experiments of DNA hairpins was measured with an exposure time of 50 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "84a61c0d-d343-4790-b05b-1a9294a8cbe1",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C91",
+      "claim": "For both SJ1 and SJ2 DNA hairpins, FRET transitions from high to low FRET efficiency were temporally coincident with hairpin rupture events.",
+      "claim_type": "EXPLICIT",
+      "source": "For both SJ1 and SJ2, FRET transitions from high to low FRET efficiency were temporally coincident with hairpin rupture events (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the DNA hairpin control experiments, with reference to Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "c7cf6962-0000-4ca7-bad6-ea8266acac98",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C93",
+      "claim": "The clustering FRET mean for SJ2 (0.86) was consistent with predicted FRET (0.87).",
+      "claim_type": "EXPLICIT",
+      "source": "However, since SJ2 reports a clustering FRET mean (0.86) consistent with predicted FRET (0.87), we believe that the FRET discrepancy for SJ1 can be explained by dye interactions with pyrimidine nucleotides located at the base of the hairpin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison between experimental and predicted FRET values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "3e332f67-803e-4abd-9c14-28640e16df24",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C94",
+      "claim": "The FRET discrepancy for SJ1 can be explained by dye interactions with pyrimidine nucleotides located at the base of the hairpin.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since SJ2 reports a clustering FRET mean (0.86) consistent with predicted FRET (0.87), we believe that the FRET discrepancy for SJ1 can be explained by dye interactions with pyrimidine nucleotides located at the base of the hairpin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the FRET discrepancy observed for SJ1.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "4ec2dd75-ee43-4320-b9bb-64ee50609eb3",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C95",
+      "claim": "The RNA aptamer construct was designed to avoid dye interactions with pyrimidine nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "The RNA aptamer construct was designed accordingly to avoid such interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a design consideration for the RNA construct based on the DNA hairpin results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "37a17145-fab8-4237-af3b-19906d1e969b",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C96",
+      "claim": "Trolox (TX), a soluble analog of vitamin E, has been shown to reduce triplet-state quenching and blinking, especially when combined with Trolox-quinone (TQ).",
+      "claim_type": "EXPLICIT",
+      "source": "Trolox (TX), a soluble analog of vitamin E, has been shown to reduce triplet-state quenching and blinking, especially when combined with Trolox-quinone (TQ) (Cordes et al., 2009; 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "ac9c97aa-5431-4836-b4b2-4cc7be33ae8b",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "claim_id": "C97",
+      "claim": "DNA hairpins held under low load showed reduced blinking in the presence of TQ.",
+      "claim_type": "EXPLICIT",
+      "source": "DNA hairpins held under low load showed reduced blinking in the presence of TQ (Figure 8E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from control experiments, with reference to Figure 8E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d9cce96b-3ac2-4dd0-9d9c-65ce90da6c4a",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Combined force-FRET measurements reveal that the weakly bound TPP state (F\u2032\u2022TPP) exhibits intermediate FRET efficiency distinct from the strongly bound state (F\u2033\u2022TPP), indicating that the weaker binding state binds TPP but fails to form the tertiary P3-L5 docking interaction required for complete binding. This tertiary interaction stabilizes the riboswitch structure and confers ligand specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C5, and C17-C22 collectively demonstrate the main finding using concurrent force and FRET measurements. The data show distinct FRET signatures for three states (APO, WB, SB) that correlate with force-extension curves, directly revealing differences in helix-arm orientation. The experimental approach is sound, with appropriate controls and multiple lines of converging evidence supporting the interpretation that tertiary docking is incomplete in the weakly bound state.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "6b581940-d9c9-46e5-bba0-47e7c77fe8d4",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "k-means cluster analysis (k=3) of opening force versus opening FRET values established quantitative thresholds that distinguish three conformational states: APO (low FRET, <11.5 pN), weakly bound WB (intermediate FRET, 11.5-21.0 pN), and strongly bound SB (high FRET, >21.0 pN). These thresholds match previous force spectroscopy estimates and correspond to distinct P3-L5 arm configurations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C30 describe a systematic analytical approach validated by comparison to prior work (C27). The k-means clustering provides objective thresholds, and the correspondence between FRET efficiency and inter-dye distance is well-established. The validation against previous force spectroscopy results strengthens confidence in the assignments. However, the choice of k=3 could benefit from more rigorous statistical justification beyond visual inspection.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "050cea00-7721-4d2a-9c66-b9f0b3339c6a",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Experiments with TPP analogs (TMP and T) lacking phosphate groups show that these analogs produce FECs similar to the weakly bound TPP state but exhibit significantly lower FRET efficiencies (0.64-0.69) compared to TPP-bound WB state (0.73), indicating that phosphate groups are required to bring helix arms into close proximity for proper docking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C36 provide strong evidence through systematic comparison of TPP with its analogs. The observation that FECs are similar (secondary structure) while FRET differs (tertiary structure) is internally consistent and supports the interpretation. The quantitative FRET differences are statistically significant and the conclusion that phosphates are required for proper arm positioning is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "73776113-1858-413a-ae82-02d651233f3b",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Hidden Markov modeling of FRET refolding trajectories at two TPP concentrations (5 \u00b5M and 50 \u00b5M) reveals that only the Apo\u2192WB transition is TPP-dependent, with transition rates faster than previously measured by force spectroscopy alone. At high TPP concentration, the APO state lifetime is vanishingly short, suggesting the A\u2192B transition rate exceeds detection capability (>20 s\u207b\u00b9).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C45 describe HMM analysis that provides kinetic information complementary to the force-FRET measurements. The consistency between HMM-derived FRET values and k-means clustering (C38) validates both approaches. The identification of the TPP-dependent step (C39-C40) is logical and well-supported. The acknowledgment of temporal resolution limits (C45) is appropriate. However, the faster rates compared to previous work (C42) warrant discussion of potential methodological differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "bf730b7e-d65d-4a57-b78b-b7ec2d3567cb",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The eukaryotic TPP aptamer exhibits a stable, rigid helix-arm configuration in the unbound APO state, contrasting with the dynamic behavior of the bacterial aptamer. This difference may be attributable to the longer P3 stem extension present in the eukaryotic form.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 compare eukaryotic and bacterial aptamers, drawing on both current data (C46) and prior literature (C47). The observation of stability in the eukaryotic form is well-supported by the low-variance FRET trajectories. The structural comparison (C49) is factual, but the mechanistic explanation (C50) is speculative. The conclusion is reasonable but would benefit from direct experimental testing of the P3 extension's role.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "0a213f40-d2d6-45a3-a909-197caad56e1c",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Upon TPP binding, the aptamer transitions from APO to WB state with increased FRET and high variance, indicating mobile, partially docked helix arms. The WB state then transitions irreversibly to the SB state characterized by stable, high FRET and low variance, representing fully docked P3-L5 arms. The WB state exhibits conformational heterogeneity, either dynamic flexibility or rapid interconversion between states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C57 describe the binding pathway with strong support from FRET variance analysis. The high variance in WB (C52) versus low variance in SB (C53) provides quantitative evidence for different degrees of mobility. The interpretation of WB as partially docked (C55) is consistent with intermediate FRET. The alternative explanations for WB heterogeneity (C56-C57) appropriately acknowledge uncertainty, though distinguishing between them would require higher temporal resolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "e66de7d7-b245-4628-aadb-bc986d888ffd",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The bipartite binding site coordinates both thiamine and phosphate moieties of TPP. Analogs lacking phosphates (TMP, T) produce stable, low-variance FRET trajectories with arms farther apart than in TPP-bound states, suggesting that phosphate groups draw arms together while maintaining flexibility essential for proper orientation and subsequent docking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C67 integrate structural knowledge with experimental observations to propose a mechanistic model. The comparison of FRET variance between analogs (low) and TPP-WB (high) is quantitatively supported (C64). The interpretation that flexibility is essential for docking (C67) is logical but somewhat speculative. The model is consistent with all data presented, though direct observation of arm orientation would strengthen the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "2ab71a13-9e03-42fa-a590-7955f53a89dd",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The eukaryotic TPP riboswitch exhibits a ligand binding process distinct from the bacterial form, with rigid arms in the APO state and increased dynamics upon TPP binding (opposite to bacterial behavior). Both secondary and tertiary interactions are vital for tight TPP binding, with helix-arm fluctuations occurring faster than secondary structural changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C72 synthesize comparisons between eukaryotic and bacterial systems. The contrasts in arm dynamics (C69-C70) are well-documented through comparison with cited literature. The conclusion about the importance of both interaction types (C72) is supported by the combined force-FRET data. The inference about relative timescales (C71) is reasonable given the FRET observations, though direct kinetic measurements would be more definitive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "eea8b063-964a-494b-8c44-992695b9e2f0",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "A speculative mechanistic model proposes that ligand binding anchors the lower helix arm regions, inducing strains that cause fluctuations in distal regions, thereby increasing P3-L5 contact frequency and docking probability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C74 present a mechanistic hypothesis that is explicitly speculative. While consistent with the data showing increased dynamics upon binding, this model lacks direct experimental support. The proposal would require additional experiments, such as site-specific labeling at different positions along the arms or molecular dynamics simulations, to test the strain-induced fluctuation mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "04515901-8bf1-4fbf-bd14-dea4e64b3119",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Despite sharing core structure and ligand, bacterial and eukaryotic TPP riboswitches exhibit distinct properties due to minor structural differences. The longer P3 stem in the eukaryotic form leads to slower arm dynamics with wide-ranging consequences. The combined force-FRET technique is anticipated to be valuable for studying riboswitches across kingdoms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C77 summarize comparative findings with appropriate support from the data. The connection between P3 stem length and dynamics (C77) is a reasonable inference from structural differences and observed behavior. Claim C78 is forward-looking and speculative about future applications, but the demonstrated utility in this study provides some support for this optimism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "cf7b3c45-6b1d-4027-876a-555ead9b35e8",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The experimental approach involved fluorescently labeling the L5 and P3 helix arms with ATTO550 and ATTO647N dyes, then subjecting aptamers to repeated unfolding/refolding cycles under controlled force while simultaneously measuring extension and FRET. FECs were categorized into three distinct forms corresponding to different conformational states.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C84 describe the core experimental methodology. The approach is clearly documented with appropriate references to figures and prior work. The labeling strategy (C79) is well-designed to probe tertiary interactions. The cycling protocol (C80-C83) is standard for optical trapping experiments. The categorization of FECs (C84) is validated by comparison to previous work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "413795c0-d97e-4838-a97b-81de0ae01791",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Combined single-molecule fluorescence and optical trapping instruments represent a comparatively new development with significant technical challenges, but novel findings have recently begun to emerge from such approaches.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C86 provide context about the methodology, supported by multiple citations. These are accurate statements about the state of the field and appropriately position the current work within the broader technical landscape.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "7d929d76-f394-45bf-9110-59627fd27567",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Control experiments with DNA hairpins (SJ1 and SJ2) validated that base modifications and dye labeling have minimal effects on mechanical properties, though rapid force ramps may cause slight overstretching. FRET measurements were temporally coincident with hairpin rupture, and predicted FRET values matched experimental values for SJ2. Discrepancies for SJ1 were attributed to dye-nucleotide interactions, informing RNA construct design.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C95 describe thorough control experiments that validate the experimental approach. The DNA hairpin controls are appropriate, and the identification of potential dye-quenching issues (C89, C94) demonstrates careful experimental design. The use of these findings to inform RNA construct design (C95) shows proper application of controls. Minor force differences (C88) are appropriately explained with citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "bce93309-268d-4f5a-9de0-c90d80a07824",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Trolox-quinone (TQ) was used to reduce triplet-state quenching and blinking of fluorescent dyes, with DNA hairpins showing reduced blinking in the presence of TQ.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C97 describe a standard approach to improve fluorescence imaging, supported by citations and experimental validation. This is a methodological detail that enhances data quality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    },
+    {
+      "id": "2e455914-2994-49a0-a40e-82e23d48c3eb",
+      "content_id": "14622690-8407-4664-9792-372852a794e2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background knowledge establishes that TPP riboswitches are cis-regulatory elements that modify gene expression through conformational changes in their aptamer domains. They are found across all kingdoms of life, share common binding conformations involving bipartite ligand binding sites, and previous force spectroscopy suggested a two-state binding model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C16, C58, and C75 present established background knowledge appropriately supported by citations to prior literature. These claims provide necessary context for interpreting the current findings and are accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:17:04.873884Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dc79d41a-0274-4ca4-bfba-7d1b56f726a6",
+      "result_id": "d9cce96b-3ac2-4dd0-9d9c-65ce90da6c4a"
+    },
+    {
+      "claim_id": "524d5c4f-1fe7-4296-a23b-5d3421be851e",
+      "result_id": "d9cce96b-3ac2-4dd0-9d9c-65ce90da6c4a"
+    },
+    {
+      "claim_id": "940e945c-67dc-4515-ad65-5e3f10613317",
+      "result_id": "d9cce96b-3ac2-4dd0-9d9c-65ce90da6c4a"
+    },
+    {
+      "claim_id": "bba68f23-9d31-4a21-a675-be4236eb3ed2",
+      "result_id": "d9cce96b-3ac2-4dd0-9d9c-65ce90da6c4a"
+    },
+    {
+      "claim_id": "363aae93-3265-4e3f-b840-366b8c40844a",
+      "result_id": "d9cce96b-3ac2-4dd0-9d9c-65ce90da6c4a"
+    },
+    {
+      "claim_id": "85a84b65-361c-4bda-83c8-44dbab6ae8b3",
+      "result_id": "d9cce96b-3ac2-4dd0-9d9c-65ce90da6c4a"
+    },
+    {
+      "claim_id": "78b2975c-4240-41d2-a488-d0cc1987eb90",
+      "result_id": "d9cce96b-3ac2-4dd0-9d9c-65ce90da6c4a"
+    },
+    {
+      "claim_id": "922ca6c5-1ffc-4919-b3db-e902f2876495",
+      "result_id": "d9cce96b-3ac2-4dd0-9d9c-65ce90da6c4a"
+    },
+    {
+      "claim_id": "ac3f67da-83ed-4913-8a92-5bab6b12cd89",
+      "result_id": "d9cce96b-3ac2-4dd0-9d9c-65ce90da6c4a"
+    },
+    {
+      "claim_id": "ab0ac7ca-f61f-4860-a77c-6e50425a32c8",
+      "result_id": "6b581940-d9c9-46e5-bba0-47e7c77fe8d4"
+    },
+    {
+      "claim_id": "59afc025-47d3-40ef-8cd6-b8a0ad398427",
+      "result_id": "6b581940-d9c9-46e5-bba0-47e7c77fe8d4"
+    },
+    {
+      "claim_id": "f020c823-dfd1-400d-9133-b1fba75e316b",
+      "result_id": "6b581940-d9c9-46e5-bba0-47e7c77fe8d4"
+    },
+    {
+      "claim_id": "30907b32-71b0-419a-97f6-dcf664a4286e",
+      "result_id": "6b581940-d9c9-46e5-bba0-47e7c77fe8d4"
+    },
+    {
+      "claim_id": "1c11f7e8-f121-4328-b000-0459d8f2e5b3",
+      "result_id": "6b581940-d9c9-46e5-bba0-47e7c77fe8d4"
+    },
+    {
+      "claim_id": "5b9781fb-7cf6-49a6-868d-9011d1a5c279",
+      "result_id": "6b581940-d9c9-46e5-bba0-47e7c77fe8d4"
+    },
+    {
+      "claim_id": "267155e9-fd28-4a1d-b2ee-891cbd937d59",
+      "result_id": "6b581940-d9c9-46e5-bba0-47e7c77fe8d4"
+    },
+    {
+      "claim_id": "6529f51a-786a-49fb-a23b-034b1304e775",
+      "result_id": "6b581940-d9c9-46e5-bba0-47e7c77fe8d4"
+    },
+    {
+      "claim_id": "ded6456c-d254-4776-891d-87de7dac5a73",
+      "result_id": "050cea00-7721-4d2a-9c66-b9f0b3339c6a"
+    },
+    {
+      "claim_id": "698bf895-4a58-4c9d-809e-e9ad3dae3e7d",
+      "result_id": "050cea00-7721-4d2a-9c66-b9f0b3339c6a"
+    },
+    {
+      "claim_id": "734d8d6d-ed05-4e98-90fa-c4f2c4838b9c",
+      "result_id": "050cea00-7721-4d2a-9c66-b9f0b3339c6a"
+    },
+    {
+      "claim_id": "748915e5-9b00-4a8b-923b-f721f4a5d62a",
+      "result_id": "050cea00-7721-4d2a-9c66-b9f0b3339c6a"
+    },
+    {
+      "claim_id": "0de318b1-3b7b-453c-bf08-6ea28c9bcab6",
+      "result_id": "050cea00-7721-4d2a-9c66-b9f0b3339c6a"
+    },
+    {
+      "claim_id": "420f9e5c-c300-4981-b4f3-d618a36cb2bd",
+      "result_id": "050cea00-7721-4d2a-9c66-b9f0b3339c6a"
+    },
+    {
+      "claim_id": "d3f3c9dc-f216-4935-a28f-b13d3f5cc978",
+      "result_id": "73776113-1858-413a-ae82-02d651233f3b"
+    },
+    {
+      "claim_id": "a6004f47-5dac-4da8-974c-d6ef997256fe",
+      "result_id": "73776113-1858-413a-ae82-02d651233f3b"
+    },
+    {
+      "claim_id": "35ffaf52-2ed9-42c9-aaff-adb6d6faed9f",
+      "result_id": "73776113-1858-413a-ae82-02d651233f3b"
+    },
+    {
+      "claim_id": "31ad4b27-0176-4926-995f-d7edab628a1d",
+      "result_id": "73776113-1858-413a-ae82-02d651233f3b"
+    },
+    {
+      "claim_id": "febd4d94-9529-49e9-b66a-486acad6adc2",
+      "result_id": "73776113-1858-413a-ae82-02d651233f3b"
+    },
+    {
+      "claim_id": "1273a5f9-f135-4b72-8960-2240ccf88748",
+      "result_id": "73776113-1858-413a-ae82-02d651233f3b"
+    },
+    {
+      "claim_id": "9e405af2-0d00-4592-aaf4-6fc9f25a77e0",
+      "result_id": "73776113-1858-413a-ae82-02d651233f3b"
+    },
+    {
+      "claim_id": "66f9ef5e-44c5-45ad-982d-f2a13a74b4ea",
+      "result_id": "73776113-1858-413a-ae82-02d651233f3b"
+    },
+    {
+      "claim_id": "f372985c-cf6c-4f5c-93e3-046c798472d3",
+      "result_id": "73776113-1858-413a-ae82-02d651233f3b"
+    },
+    {
+      "claim_id": "f575aa32-c3c1-4014-8845-222d0556acf6",
+      "result_id": "bf730b7e-d65d-4a57-b78b-b7ec2d3567cb"
+    },
+    {
+      "claim_id": "b6b4308a-bd7e-471f-bee1-a012207635f8",
+      "result_id": "bf730b7e-d65d-4a57-b78b-b7ec2d3567cb"
+    },
+    {
+      "claim_id": "94ebab62-cab7-45fa-a083-af3ffd018625",
+      "result_id": "bf730b7e-d65d-4a57-b78b-b7ec2d3567cb"
+    },
+    {
+      "claim_id": "911c6964-1649-47a0-8e90-cf83ba2845b4",
+      "result_id": "bf730b7e-d65d-4a57-b78b-b7ec2d3567cb"
+    },
+    {
+      "claim_id": "5a00c8f6-1439-4c8d-a0c5-870b199914eb",
+      "result_id": "bf730b7e-d65d-4a57-b78b-b7ec2d3567cb"
+    },
+    {
+      "claim_id": "aa0b8459-13a9-470b-87ab-d1c135b264f9",
+      "result_id": "0a213f40-d2d6-45a3-a909-197caad56e1c"
+    },
+    {
+      "claim_id": "95910adb-c29e-4bad-9fbe-075752d0d827",
+      "result_id": "0a213f40-d2d6-45a3-a909-197caad56e1c"
+    },
+    {
+      "claim_id": "db141a84-accd-456d-aadb-1fc6473cf5f6",
+      "result_id": "0a213f40-d2d6-45a3-a909-197caad56e1c"
+    },
+    {
+      "claim_id": "d45d4056-2fa1-42db-8a89-da09aa9ffcee",
+      "result_id": "0a213f40-d2d6-45a3-a909-197caad56e1c"
+    },
+    {
+      "claim_id": "20e17a6e-2bf7-4198-811e-4db9f81d46ff",
+      "result_id": "0a213f40-d2d6-45a3-a909-197caad56e1c"
+    },
+    {
+      "claim_id": "bb79a01e-32f0-4c7d-aa24-a115e9fc60c4",
+      "result_id": "0a213f40-d2d6-45a3-a909-197caad56e1c"
+    },
+    {
+      "claim_id": "9b568e22-79d9-4753-a28d-d4592e449b8a",
+      "result_id": "0a213f40-d2d6-45a3-a909-197caad56e1c"
+    },
+    {
+      "claim_id": "f39f0916-f37e-485c-9228-410d29376719",
+      "result_id": "e66de7d7-b245-4628-aadb-bc986d888ffd"
+    },
+    {
+      "claim_id": "12ad7453-b716-4fb5-9b0c-da16e077f92d",
+      "result_id": "e66de7d7-b245-4628-aadb-bc986d888ffd"
+    },
+    {
+      "claim_id": "5a5e127e-27a4-4ae2-9a18-12a176a24941",
+      "result_id": "e66de7d7-b245-4628-aadb-bc986d888ffd"
+    },
+    {
+      "claim_id": "a6a24d00-9a68-44bb-a177-98147df9bbf4",
+      "result_id": "e66de7d7-b245-4628-aadb-bc986d888ffd"
+    },
+    {
+      "claim_id": "18e0497a-8b02-4b32-8a56-6a0fbe00dc2d",
+      "result_id": "e66de7d7-b245-4628-aadb-bc986d888ffd"
+    },
+    {
+      "claim_id": "4a3a8182-4b4b-4f8c-80a8-45f22b97db4b",
+      "result_id": "e66de7d7-b245-4628-aadb-bc986d888ffd"
+    },
+    {
+      "claim_id": "2dbdcb97-2a5c-437f-96df-7f3174447abb",
+      "result_id": "e66de7d7-b245-4628-aadb-bc986d888ffd"
+    },
+    {
+      "claim_id": "17287d04-3edc-4e61-b6b5-e5a3405a8800",
+      "result_id": "e66de7d7-b245-4628-aadb-bc986d888ffd"
+    },
+    {
+      "claim_id": "2e05b43c-d4db-4dda-9db9-02ee10840685",
+      "result_id": "e66de7d7-b245-4628-aadb-bc986d888ffd"
+    },
+    {
+      "claim_id": "c611db4e-d252-4729-a62c-8807590eff8e",
+      "result_id": "e66de7d7-b245-4628-aadb-bc986d888ffd"
+    },
+    {
+      "claim_id": "a3206010-a105-4f87-8364-664e7c3575a5",
+      "result_id": "2ab71a13-9e03-42fa-a590-7955f53a89dd"
+    },
+    {
+      "claim_id": "f9e44ec9-e084-4bd8-90fe-455390dfa08b",
+      "result_id": "2ab71a13-9e03-42fa-a590-7955f53a89dd"
+    },
+    {
+      "claim_id": "4ba5b7f3-59dc-4905-adb6-229960c7c35d",
+      "result_id": "2ab71a13-9e03-42fa-a590-7955f53a89dd"
+    },
+    {
+      "claim_id": "728e97b9-aa14-4b52-b7ad-725eaa5e0b92",
+      "result_id": "2ab71a13-9e03-42fa-a590-7955f53a89dd"
+    },
+    {
+      "claim_id": "0900a03c-6db1-4711-8cbe-4f818b708db0",
+      "result_id": "2ab71a13-9e03-42fa-a590-7955f53a89dd"
+    },
+    {
+      "claim_id": "3b3a1f33-cdfb-46c5-8fd9-f011373f302f",
+      "result_id": "eea8b063-964a-494b-8c44-992695b9e2f0"
+    },
+    {
+      "claim_id": "37835734-e469-41eb-91fe-f607b93736ac",
+      "result_id": "eea8b063-964a-494b-8c44-992695b9e2f0"
+    },
+    {
+      "claim_id": "41cf4b6c-b9d7-49d8-833f-2639fb8f8a07",
+      "result_id": "04515901-8bf1-4fbf-bd14-dea4e64b3119"
+    },
+    {
+      "claim_id": "5ac46dbe-1042-445f-ac8d-d4c6f1de6780",
+      "result_id": "04515901-8bf1-4fbf-bd14-dea4e64b3119"
+    },
+    {
+      "claim_id": "ba917612-7eac-45c7-b23e-2bec73730348",
+      "result_id": "04515901-8bf1-4fbf-bd14-dea4e64b3119"
+    },
+    {
+      "claim_id": "e726f773-a501-4c0f-8b31-81c0f8772f0e",
+      "result_id": "04515901-8bf1-4fbf-bd14-dea4e64b3119"
+    },
+    {
+      "claim_id": "7ef3ae5e-1d26-4a44-9c34-3423da38e2e1",
+      "result_id": "cf7b3c45-6b1d-4027-876a-555ead9b35e8"
+    },
+    {
+      "claim_id": "bca0b1f1-7c9b-4d57-96f5-d8a0c05adddc",
+      "result_id": "cf7b3c45-6b1d-4027-876a-555ead9b35e8"
+    },
+    {
+      "claim_id": "dfda7c94-f3a2-4d4b-909f-f7e235800d16",
+      "result_id": "cf7b3c45-6b1d-4027-876a-555ead9b35e8"
+    },
+    {
+      "claim_id": "91138e36-d20d-47ce-b2d0-4e3f4944999a",
+      "result_id": "cf7b3c45-6b1d-4027-876a-555ead9b35e8"
+    },
+    {
+      "claim_id": "d8af4e4e-954c-47d2-952f-c34cf6b49df8",
+      "result_id": "cf7b3c45-6b1d-4027-876a-555ead9b35e8"
+    },
+    {
+      "claim_id": "0c47ac6e-e0dd-4148-a990-910cab4c9608",
+      "result_id": "cf7b3c45-6b1d-4027-876a-555ead9b35e8"
+    },
+    {
+      "claim_id": "3bdee1b5-8084-4a6d-bd33-1deccca17d96",
+      "result_id": "413795c0-d97e-4838-a97b-81de0ae01791"
+    },
+    {
+      "claim_id": "aa3cbf6b-fe05-4780-a5b7-8b5ffdc7c849",
+      "result_id": "413795c0-d97e-4838-a97b-81de0ae01791"
+    },
+    {
+      "claim_id": "d9817ce0-caa6-40e6-961f-7d06a2f553e9",
+      "result_id": "7d929d76-f394-45bf-9110-59627fd27567"
+    },
+    {
+      "claim_id": "b91a4b41-efb2-45b0-9ab2-e5f844f933de",
+      "result_id": "7d929d76-f394-45bf-9110-59627fd27567"
+    },
+    {
+      "claim_id": "bc21bedd-c5e8-4000-a407-736923b9f07b",
+      "result_id": "7d929d76-f394-45bf-9110-59627fd27567"
+    },
+    {
+      "claim_id": "bdbac130-63ba-422d-9da8-f8c7f39da95f",
+      "result_id": "7d929d76-f394-45bf-9110-59627fd27567"
+    },
+    {
+      "claim_id": "84a61c0d-d343-4790-b05b-1a9294a8cbe1",
+      "result_id": "7d929d76-f394-45bf-9110-59627fd27567"
+    },
+    {
+      "claim_id": "c7cf6962-0000-4ca7-bad6-ea8266acac98",
+      "result_id": "7d929d76-f394-45bf-9110-59627fd27567"
+    },
+    {
+      "claim_id": "3e332f67-803e-4abd-9c14-28640e16df24",
+      "result_id": "7d929d76-f394-45bf-9110-59627fd27567"
+    },
+    {
+      "claim_id": "4ec2dd75-ee43-4320-b9bb-64ee50609eb3",
+      "result_id": "7d929d76-f394-45bf-9110-59627fd27567"
+    },
+    {
+      "claim_id": "37a17145-fab8-4237-af3b-19906d1e969b",
+      "result_id": "bce93309-268d-4f5a-9de0-c90d80a07824"
+    },
+    {
+      "claim_id": "ac9c97aa-5431-4836-b4b2-4cc7be33ae8b",
+      "result_id": "bce93309-268d-4f5a-9de0-c90d80a07824"
+    },
+    {
+      "claim_id": "a373300f-576f-4b99-a73b-f04bdd0b4ec9",
+      "result_id": "2e455914-2994-49a0-a40e-82e23d48c3eb"
+    },
+    {
+      "claim_id": "df3a051d-3e81-4b27-b031-89bde4eba133",
+      "result_id": "2e455914-2994-49a0-a40e-82e23d48c3eb"
+    },
+    {
+      "claim_id": "aee5088c-cdbb-4cec-af81-5a881b51589c",
+      "result_id": "2e455914-2994-49a0-a40e-82e23d48c3eb"
+    },
+    {
+      "claim_id": "14143935-2201-4ef9-9b63-b8db69c19c1d",
+      "result_id": "2e455914-2994-49a0-a40e-82e23d48c3eb"
+    },
+    {
+      "claim_id": "6b541dc0-9dc8-4a1b-b03b-307156533778",
+      "result_id": "2e455914-2994-49a0-a40e-82e23d48c3eb"
+    },
+    {
+      "claim_id": "2b4ff1ac-48ec-46bd-bab4-c5d963306bb3",
+      "result_id": "2e455914-2994-49a0-a40e-82e23d48c3eb"
+    },
+    {
+      "claim_id": "a70faf7e-bae9-44b4-b43d-e86a94296932",
+      "result_id": "2e455914-2994-49a0-a40e-82e23d48c3eb"
+    },
+    {
+      "claim_id": "c9914e1a-a245-4112-8d48-5675050bf644",
+      "result_id": "2e455914-2994-49a0-a40e-82e23d48c3eb"
+    },
+    {
+      "claim_id": "6d607f9a-f705-4650-a14e-b7f380eaa498",
+      "result_id": "2e455914-2994-49a0-a40e-82e23d48c3eb"
+    },
+    {
+      "claim_id": "e7befb29-41b2-4526-b71d-6d7bb1ac5a02",
+      "result_id": "2e455914-2994-49a0-a40e-82e23d48c3eb"
+    },
+    {
+      "claim_id": "418aad35-5e73-412a-acbf-d01315d04de6",
+      "result_id": "2e455914-2994-49a0-a40e-82e23d48c3eb"
+    },
+    {
+      "claim_id": "ce2e5364-c156-426e-9968-6d6c4dc68ac5",
+      "result_id": "2e455914-2994-49a0-a40e-82e23d48c3eb"
+    },
+    {
+      "claim_id": "1e427b4d-8cd3-4d73-aee2-d0b87d33fbb3",
+      "result_id": "2e455914-2994-49a0-a40e-82e23d48c3eb"
+    },
+    {
+      "claim_id": "f39f0916-f37e-485c-9228-410d29376719",
+      "result_id": "2e455914-2994-49a0-a40e-82e23d48c3eb"
+    },
+    {
+      "claim_id": "41cf4b6c-b9d7-49d8-833f-2639fb8f8a07",
+      "result_id": "2e455914-2994-49a0-a40e-82e23d48c3eb"
+    }
+  ],
+  "comparisons": []
+}

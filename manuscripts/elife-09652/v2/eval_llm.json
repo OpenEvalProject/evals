@@ -1,0 +1,339 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "ATP activates ERK in MCF-10A cells through a paracrine mechanism dependent on EGFR. Extracellular ATP increases ERK kinase activity in an EGFR-dependent manner, and inhibiting EGFR with tryphostin AG1478 prevents ERK activation upon ATP addition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 provide converging experimental evidence from FRET-based ERK measurements and pharmacological inhibition studies (Figure 1B). The EGFR dependency is demonstrated through specific inhibitor experiments, establishing the paracrine signaling pathway from ATP to ERK via EGF/EGFR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C38"
+    ],
+    "result": "Paracrine communication reduces ERK response variability in a density-dependent manner. ERK response variability within cell clusters decreases with increasing cluster density (p<0.05), an effect not observed for Ca2+ responses and lost upon partial Src inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 and C38 are supported by spatial clustering analysis (Figure 1D, supplements) with appropriate statistical testing (Pearson correlation, p<0.05). The negative control (Ca2+) and perturbation experiment (Src inhibition) strengthen the conclusion that paracrine communication specifically reduces ERK variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Computational modeling predicts that paracrine averaging with a PCD of 100 \u03bcm increases response SNR from 0.9 to 20.2 by reducing noise in the predicted ERK response. The SNR benefit increases with PCD up to 80-fold at 500 \u03bcm under non-limiting diffusion conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C39-C42 are supported by computational analysis using experimental Ca2+ data as input (Figure 1E-G). The model appropriately uses Gaussian convolution to simulate local averaging. However, the model assumes no additional noise in the paracrine pathway, which may overestimate benefits. The analysis is internally consistent but represents an upper bound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C43",
+      "C44"
+    ],
+    "result": "ATP released from wounded cells acts as a DAMP to create spatial gradients of Ca2+ and ERK responses. Cells closer to wounds show larger responses, and apyrase treatment (ATP scavenger) inhibits both Ca2+ and ERK responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 and C43-C44 are supported by wound response experiments in the microfluidics device (Figure 2D-E). The apyrase control directly demonstrates ATP's role. The spatial gradient data provide clear evidence for positional information encoding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Ca2+ wound response shows statistically higher variability (CV) than ERK wound response, indicating that paracrine communication reduces response variability during initial wound response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 is supported by coefficient of variation analysis (Figure 2F) with appropriate statistical testing. The comparison between pre-paracrine (Ca2+) and post-paracrine (ERK) responses provides direct evidence for noise reduction through paracrine communication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C22",
+      "C23",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Paracrine communication reduces gradient noise but also reduces gradient magnitude, resulting in a maximum gradient SNR at a PCD of approximately 91.0\u00b16.3 \u03bcm. Local averaging decreases both response variability and the overall response gradient magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C22-C23 with supporting claims C45-C48 are well-supported by computational analysis of wound response data (Figure 3). The analysis demonstrates the trade-off between noise reduction and signal preservation, with appropriate quantification of both signal and noise components. The existence of an optimal PCD is a logical consequence of opposing trends.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "The predicted optimal PCD remains unchanged when diffusion limitations are considered, and mutual information analysis confirms a similar optimal PCD at the distance showing maximal SNR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by extended modeling (Figure 3F) and alternative statistical analysis (mutual information, Figure 3\u2014figure supplement 1B). The consistency across different analytical approaches and model assumptions strengthens confidence in the ~100 \u03bcm optimal PCD prediction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The DREADD system enables selective activation of Ca2+ in expressing cells while ERK is activated in both expressing and non-expressing cells through paracrine EGF signaling. CNO selectively activates Ca2+ in DREADD cells, while ERK activation occurs paracrinally and is EGFR-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 and C51-C55 are supported by co-culture experiments with appropriate controls (Figure 4A-C). The DREADD system effectively separates autocrine from paracrine signaling. EGFR inhibitor experiments confirm the paracrine mechanism. The dose-response relationship (C55) further validates the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C27",
+      "C28",
+      "C56",
+      "C57"
+    ],
+    "result": "Direct measurement of paracrine communication reveals a PCD of 99.5\u00b119.6 \u03bcm, which matches the predicted optimal PCD (91.0\u00b16.3 \u03bcm) that maximizes wound response SNR. ERK response follows a Gaussian distribution with distance, consistent with diffusion-based paracrine signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C26-C28 with supporting claims C56-C57 provide the key experimental validation (Figure 4E-F). The measured PCD is statistically similar to the predicted optimal value (p>0.5), supporting the optimization hypothesis. The Gaussian fit is theoretically justified and well-executed. This is the central result linking prediction to measurement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C61",
+      "C66"
+    ],
+    "result": "Intercellular communication during initial wound response is optimized to increase overall response fidelity. Empirical measurements match the physiologically relevant optimal communication distance, and this optimization is critical for matching wound response to wound damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 and C61, C66 synthesize the main findings with supporting evidence from in vivo literature (C29). The agreement between predicted optimal and measured PCD across multiple experimental systems (in vitro wound, DREADD, and cited in vivo work) provides strong support for the optimization hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C67",
+      "C70"
+    ],
+    "result": "Paracrine communication increases single-cell response fidelity through local averaging, which is mechanistically distinct from global population averaging. Each cell integrates information from its local neighborhood to increase individual response fidelity when single-cell action is required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 and C67, C70 present a mechanistic interpretation supported by the experimental data and modeling. The distinction between local and global averaging is conceptually sound and supported by the spatial analysis. The mechanism is consistent with all experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C82",
+      "C83"
+    ],
+    "result": "PCD depends on diffusion coefficient, signal strength, and receiver sensitivity. For diffusion coefficients of 10-100 \u03bcm\u00b2/s and PCD of 100 \u03bcm, integration times range from 0.5-5 min, which is compatible with the observed 5 min delay before ERK activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C82-C83 are supported by theoretical analysis in Materials and methods. The integration time calculations are based on sound diffusion theory, and the compatibility with experimental ERK timing (C83) validates the biological relevance of the predicted parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The extracellular environment has a low Reynolds number with no turbulent mixing. For paracrine ligands with diffusion coefficient >40 \u03bcm\u00b2/s, advection has little effect on positional accuracy of initial wound response signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 are supported by fluid dynamics analysis (Figure 1\u2014figure supplement 8) using appropriate dimensionless numbers (P\u00e9clet number). The analysis correctly applies low Reynolds number physics and provides quantitative thresholds for when advection can be neglected.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C58",
+      "C59"
+    ],
+    "result": "Under spatially uniform input conditions, paracrine communication could arbitrarily reduce cellular response variability and cells could take advantage of large PCDs to substantially mitigate biochemical noise. However, spatially uniform inputs are likely inadequate representations of physiological conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C58-C59 present theoretical predictions for uniform inputs (Figure 1G) with appropriate caveats about physiological relevance. The analysis is mathematically sound but the authors correctly note that uniform inputs are not physiologically representative, which is why the wound experiments are critical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C76"
+    ],
+    "result": "The optimal PCD is not universal and depends on the spatial pattern of the activating ligand and noise pattern of the primary response. PCD can be regulated by multiple factors including diffusion coefficient, signal strength, and receptor sensitivity, which vary by orders of magnitude across paracrine systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 and C76 are supported by the theoretical framework and cited literature. The context-dependence is a logical consequence of the optimization framework. The claim about variability in diffusion coefficients (C37) is well-cited. This appropriately qualifies the generalizability of the specific 100 \u03bcm value.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "In vivo ERK response in mammary tumor cells shows high variability that may lead to cancer cell survival. One possible mechanism for this heterogeneity may be breakdown of paracrine communication between cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C33 is supported by citation, but C34 is explicitly speculative. While the hypothesis is plausible given the experimental results showing loss of variability reduction with disrupted paracrine communication (Figure 1\u2014figure supplement 4), no direct evidence is provided linking tumor heterogeneity to paracrine communication breakdown. This remains an interesting but untested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C72",
+      "C75",
+      "C78",
+      "C79"
+    ],
+    "result": "Paracrine information sharing may be more prevalent in signaling networks supporting individual cellular decisions. The extent of paracrine ligand secretion is likely adjusted to optimize cellular information sharing, and evolutionary pressures may tune paracrine communication for optimal benefit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72, C75, C78-C79 are explicitly speculative (marked as SPECULATION in evidence_type). While these hypotheses are logical extensions of the findings and consistent with the data, they represent untested predictions about broader biological principles and evolutionary optimization. No direct evidence is provided for these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C10"
+    ],
+    "result": "Cellular variability is substantial and functionally significant. Protein concentrations vary by ~25% (CV), gene expression is stochastic, and response variability can degrade information transmission. However, variability can also be beneficial, and paracrine communication has been shown to increase response fidelity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 and C10 establish background knowledge through appropriate citations to prior work. These claims provide context for the study but are not novel findings. The citations appear appropriate and the claims accurately represent the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "Paracrine signaling averaging functions such that the local concentration of paracrine ligand is the average ligand concentration secreted by local cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 describes the conceptual model (Figure 1A) that underlies the computational analysis. This is a reasonable simplification of paracrine communication supported by the mathematical framework in Materials and methods. The Gaussian averaging model is justified by diffusion physics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C60",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Extracellular ligands convey positional information in wound response similar to developmental systems. Initial wound healing responses propagate information appropriate to damage magnitude, and inflammatory/fibrotic processes are damaging when dysregulated. The mechanistic details of how tissues match response to damage remain unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60 and C62-C65 provide context from wound healing biology, supported by appropriate citations (C60). These are background claims that frame the study's significance. Claim C65 identifies the knowledge gap that the study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Without paracrine communication, population response reliability increases with population size according to the central limit theorem, but this benefit applies only to the population average, not individual cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 correctly describe statistical principles (central limit theorem) that distinguish population-level from single-cell benefits. This is established statistical theory appropriately applied to provide conceptual contrast with local paracrine averaging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C71",
+      "C73",
+      "C74"
+    ],
+    "result": "Whether paracrine communication is required is context-dependent. Paracrine communication is abundant in mammals, and work in humans and animal collectives shows that collective decision-making benefits depend on group size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C73-C74 synthesize the findings with broader biological context, supported by appropriate citations (C73-C74). These claims appropriately qualify the generalizability of the findings and connect to collective behavior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "H2O2 has a diffusion coefficient of approximately 2000 \u03bcm\u00b2/s, and a larger diffusion coefficient could allow for much longer PCD with reasonable biological integration times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 provide an example of how different paracrine molecules might achieve different PCDs. The diffusion coefficient value appears to be factual knowledge (C80), and the inference about longer PCD (C81) follows logically from the theoretical framework developed in the paper.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,194 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C78",
+      "C80",
+      "C86"
+    ],
+    "result": "Set7 specifically methylates Gli3 full-length at K436 and K595 residues in vitro and in vivo, but not the truncated Gli3 repressor form. Mass spectrometry identified these methylation sites, which are evolutionarily conserved and show sequence similarity to known Set7 substrates. In vitro methylation assays, immunoprecipitation experiments, and GST pull-down assays confirmed Set7-mediated methylation at these sites, with arginine substitution mutants (K436R, K595R) abolishing methylation signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is well-supported by multiple complementary experimental approaches including mass spectrometry (C19, C21), in vitro methylation assays (C23, C24), immunoprecipitation with site-specific antibodies (C26-C32), and GST pull-down assays (C25, C34). The use of arginine substitution mutants as negative controls strengthens the specificity claims. The evolutionary conservation (C22) and sequence similarity to known Set7 substrates (C20) provide additional supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C79",
+      "C81"
+    ],
+    "result": "Set7 positively regulates Shh signaling activation through Gli3 methylation. Set7 knockdown decreases luciferase activity and expression of Shh target genes (Gli1, Ptch1) in the presence of Shh, while Set7 overexpression enhances signaling in a dose-dependent manner requiring its methyltransferase activity. The effect requires Gli3 but not Gli1/Gli2, and unmethylatable Gli3 mutants (K436R, K595R) show reduced Shh signaling activation. A positive feedback loop exists where Shh/SAG upregulates Set7 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is strongly supported by multiple luciferase reporter assays (C36-C39, C48, C50), qPCR measurements of target genes (C40, C48), and genetic epistasis experiments (C46, C47) demonstrating Gli3-dependence. The requirement for Set7's methyltransferase activity is shown by the inactive mutant control (C38). The dose-dependent effect (C39) and rescue experiments with unmethylatable mutants (C48-C50) provide strong mechanistic evidence. The positive feedback loop (C42, C43) is supported by qPCR data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C82"
+    ],
+    "result": "Set7-mediated methylation at K436 increases Gli3 protein stability. Set7 knockdown reduces Gli3 protein levels while overexpression increases them, without affecting Gli3 mRNA levels. The Gli3K436R mutant shows reduced protein stability and half-life compared to wild-type Gli3 or Gli3K595R, as demonstrated by cycloheximide chase experiments. The Gli3K436R mutant protein levels do not respond to Set7 modulation, while Gli3K595R levels remain responsive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is well-supported by western blot analysis showing protein level changes (C53, C54), qPCR showing no mRNA changes (C55), differential responses of mutants to Set7 modulation (C56), and cycloheximide chase experiments demonstrating reduced half-life of Gli3K436R (C58). The specificity for K436 versus K595 in stability regulation (C57) is clearly demonstrated through mutant analysis. The combination of gain-of-function, loss-of-function, and protein half-life measurements provides strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C82",
+      "C98"
+    ],
+    "result": "Set7-mediated methylation at K595 enhances Gli3 DNA binding ability. ChIP assays show that Set7 knockdown markedly reduces Gli3 binding to promoter regions of target genes (Gli1, Ptch1, Hhip). The Gli3K595R mutant shows dramatically impaired DNA binding compared to wild-type Gli3, while Gli3K436R maintains similar DNA binding ability. K595 is located in the zinc finger domain important for DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is strongly supported by ChIP-qPCR experiments at multiple target gene promoters (C60, C61, C64) and comparison of mutants showing specific impairment of K595R but not K436R in DNA binding (C62). The structural context provided by K595's location in the zinc finger domain (C98) supports the mechanistic interpretation. Multiple independent ChIP experiments with different antibodies strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Set7-mediated effects on Shh signaling are not due to altered Gli3 ciliary translocation. Gli3 accumulation at cilia tips was comparable among cells with Set7 knockdown, Set7 overexpression, or catalytically inactive Set7H297A overexpression, despite these conditions showing different Shh signaling activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is supported by immunofluorescence quantification showing no significant differences in Gli3 ciliary localization across different Set7 conditions (C52). This negative result is important for ruling out an alternative mechanism and is appropriately controlled with both knockdown and overexpression conditions, as well as the catalytically inactive mutant. The statistical analysis showing no significant differences strengthens this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C83",
+      "C93"
+    ],
+    "result": "Gli3 methylation by Set7 contributes to tumor growth and metastasis in non-small cell lung cancer (NSCLC). Set7 and Gli1 are highly expressed in A549 NSCLC cells and show positive correlation in NSCLC tumor samples. A549 cells expressing unmethylatable Gli3 mutants (K436R, K595R, or double mutant KRKR) show reduced Shh signaling, decreased cell proliferation (MTT, soft agar assays), retarded tumor growth in xenograft models, and impaired migration and invasion abilities compared to wild-type Gli3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is comprehensively supported by multiple in vitro functional assays (C71, C72, C74, C75), in vivo xenograft experiments (C73), correlation analysis in patient samples (C67), and validation with Gli3PA mutants (C76). The use of single and double mutants (C69, C70) demonstrates both individual and synergistic effects of the two methylation sites. The consistency across multiple assay types (proliferation, colony formation, migration, invasion, tumor growth) strengthens the conclusion about the oncogenic role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Gli3 methylation signals were detected specifically in embryonic lung tissues among multiple mouse embryonic tissues examined (brain, lung, skin, skeleton, gut) at 14.5 days post coitum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the western blot data shows methylation signals in lung tissue (C33), the result is limited by the lack of quantification, unclear sample sizes, and no discussion of why methylation is tissue-specific or what this means functionally. The biological significance of this tissue-specific pattern is not explored, and it's unclear whether this represents true tissue specificity or differences in Gli3 expression levels or Shh pathway activity across tissues.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C91"
+    ],
+    "result": "The authors propose that Lsd1 demethylase may remove Gli3 methylation in the nucleus, and that increased Set7 levels in response to Shh signaling could compensate for Lsd1-mediated demethylation. They also speculate that Set7 may be a key regulator of WNT-Shh pathway crosstalk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "These claims are purely speculative (C87, C88, C91) without any experimental evidence. No experiments with Lsd1 knockdown, overexpression, or inhibition are presented. No direct evidence of WNT-Shh crosstalk regulation by Set7 is provided. While the speculation is reasonable based on prior literature about Lsd1 and Set7's role in WNT signaling (C90, C96), these remain untested hypotheses that require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "The two methylation sites (K436 and K595) on Gli3 are functionally non-redundant, as arginine substitution at either site severely impairs Shh signaling activation, suggesting Set7 fine-tunes Gli3 transactivity through both modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is well-supported by the data showing that single mutations at either K436 or K595 each significantly reduce Shh signaling (C48, C62), and that the double mutant shows even greater effects on some readouts (C70). The distinct mechanisms (stability vs. DNA binding) by which each site functions (C3, C4, C57, C63) support the non-redundancy claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "The authors suggest that Set7 has therapeutic value in targeting Shh-dependent tumors such as basal cell carcinoma (BCC), medulloblastoma (MB), and lung cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "While the NSCLC data (C5, C73, C83) supports a role in lung cancer, the claim about therapeutic value in BCC and MB is purely speculative without any experimental evidence in these cancer types. The therapeutic potential claim requires additional validation including specificity studies, off-target effects analysis, and demonstration that Set7 inhibition would be effective and safe. The leap from mechanistic studies to therapeutic value is not sufficiently supported.",
+    "result_type": "MINOR"
+  }
+]

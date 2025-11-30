@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "FeatureREDUCE is a computational framework for building sequence-to-affinity models from PBM data that uses a biophysical feature-based model, robust regression, and can account for nucleotide dependencies and multiple binding modes. The algorithm follows an iterative procedure involving K-mer seed selection, PSAM inference, positional bias estimation, optional free protein concentration estimation, and higher-order feature estimation until convergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C51 collectively describe the FeatureREDUCE framework and its algorithmic steps, which are clearly documented in the manuscript text and Figure 1. The methodological description is internally consistent and the capabilities are demonstrated through application to specific transcription factors in subsequent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "FeatureREDUCE models positional bias in PBM experiments by introducing position-specific multiplicative correction factors. For Cbf1p, positional bias can cause binding site contributions to vary by an order of magnitude, with preference for binding away from the substrate. Accounting for positional bias dramatically improves model fit (R\u00b2 from 48% to 71% for Cbf1p).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 and C109-C111 are well-supported by Figure 2 and quantitative R\u00b2 values. The positional bias profiles are shown for multiple TFs (Cbf1p, Pho4p, Zif268) with consistent methodology. The biophysical explanations (C109, C110) are marked as speculative but reasonable. The dramatic improvement in variance explained validates the importance of this correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "FeatureREDUCE can detect orientation preference for monomeric transcription factors binding to dsDNA probes. Zif268 exhibits strong bias for binding the negative strand, consistent with known requirements for non-specific DNA backbone contacts. BEEML-PBM models positional bias but does not account for orientation preference or overhang binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 are supported by Figure 2c showing Zif268 orientation bias and citation C66 to prior structural knowledge. The comparison to BEEML-PBM capabilities (C67-C69) is appropriately cited. This represents a methodological advance over existing tools.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "FeatureREDUCE models nucleotide dependencies by including dinucleotide features in the free energy model. For Cbf1p, accounting for dependencies increased variance explained from 71% to 96% when training on PBM intensities, though controversy exists about whether such dependencies reflect structural mechanisms or technical biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C74 shows dramatic improvement in training set fit (71% to 96% R\u00b2), this alone is insufficient to establish that dependencies are correctly modeled, as acknowledged by C72. The key validation comes from independent data (addressed in subsequent claims), making this result incomplete without that context. The improvement could reflect overfitting rather than true biological dependencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Robust regression is crucial for accurate parameter estimation in FeatureREDUCE. When validated against gold-standard MITOMI measurements for Cbf1p, robust regression improved RMSE from 0.071 to 0.035 for PSAM models. Critically, FSAM models with dependencies only outperformed PSAM models when using robust regression (otherwise they performed worse), demonstrating that dependencies exist but can be modeled incorrectly with standard least-squares.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 are strongly supported by Figure 3\u2014figure supplement 1 showing quantitative validation against independent MITOMI data (R\u00b2=0.95 agreement with SPR per C76). The comparison between robust and non-robust regression for both PSAM and FSAM models provides compelling evidence that robust regression prevents overfitting to noise while capturing true dependencies. This is a key methodological finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Including nucleotide dependencies when predicting yeast promoter affinities improves Gene Ontology enrichment for Cbf1p-regulated categories, but only when robust inference techniques are used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by Figure 3B and Figure 3\u2014figure supplement 2. This provides functional validation that the dependency parameters learned by FeatureREDUCE with robust regression capture biologically meaningful information about in vivo TF function, not just technical artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "FeatureREDUCE accurately predicts in vivo Cbf1p occupancy at genomic E-box sites measured by ChIP-seq (RMSE = 0.075), performing significantly better than BEEML-PBM (RMSE = 0.156).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 are supported by Figure 4 showing quantitative comparison to ChIP-seq data. The ~2-fold improvement in RMSE over BEEML-PBM provides strong validation of FeatureREDUCE's approach. The use of a simple equilibrium model with single free protein concentration parameter is appropriate for this comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "FeatureREDUCE emerged as the top-performing algorithm in a benchmark of 26 PBM analysis algorithms according to both in vitro (cross-PBM-design) and in vivo (ChIP-seq) metrics. Some algorithms perform well on PBM cross-validation but poorly on ChIP-seq prediction, presumably due to overfitting to PBM-specific biases. FeatureREDUCE is concluded to be the only algorithm that successfully parameterizes dependencies within binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 are supported by citation to the Weirauch 2013 benchmark study. The claim that FeatureREDUCE is the 'only' algorithm succeeding at parameterizing dependencies (C92) is a strong conclusion but is supported by the benchmark results and the specific examples of other algorithms failing (C89-C91). The explanations for poor performance (C88, C91) are appropriately marked as speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "FeatureREDUCE can model multiple binding modes by forward selection of distinct PSAMs and quantify their relative thermodynamic stability. For bZIP proteins Yap1p and Gcn4p, FeatureREDUCE correctly captures known half-site preferences (TTAC for Yap1p, TGAC for Gcn4p) and identifies different preferred binding modes (adjacent half-sites for Yap1p with Ka_rel=1.0 vs 0.52; overlapping half-sites for Gcn4p with Ka_rel=1.0 vs 0.28). Predictions agree well with independent HiTS-FLIP measurements and improve accuracy for weaker binding modes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C105 and C112-C114 are well-supported by Figure 5 and validation against known subfamily preferences (C97, C99) and independent HiTS-FLIP measurements (C103). The quantitative improvement for the weaker Gcn4p motif (R\u00b2 from 69% to 80%, C104) demonstrates that the multi-PSAM approach captures real biological variation in binding mode usage, not just fits more parameters. This addresses a previously unresolved question in the field (C38, C93).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "While feature-based approaches have been used previously for modeling protein-DNA binding, the FeatureREDUCE approach to estimating model coefficients is claimed to be different and optimal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by the validation results throughout the manuscript. The 'different' aspect (C53) is demonstrated by the use of robust regression and specific bias modeling. The 'optimal' claim (C54) is supported by benchmark performance (C86), validation against gold-standard data (C77-C79), and superior in vivo prediction (C84-C85). While 'optimal' is a strong claim, it is justified by the comprehensive validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "FeatureREDUCE yields accurate and interpretable biophysical affinity models that provide clues about structural mechanisms of protein-DNA recognition and allow optimal use of high-throughput PBM data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 are summary conclusions supported by the collective validation results. The accuracy is demonstrated through multiple validation datasets (MITOMI, ChIP-seq, HiTS-FLIP, benchmark). The interpretability is shown through identification of dependencies (Figure 3a) and multiple binding modes (Figure 5). The structural insights (C107) are supported by examples of dependencies and binding mode modulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Transcription factors are crucial regulators of gene expression, and accurate quantitative definition of their DNA binding preferences is critical for understanding gene regulatory circuits. High-throughput in vitro technologies have been developed to measure TF binding specificity, but computational methods for analyzing such data have not fully matured.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C11-C15 provide established background knowledge supported by appropriate citations. These claims accurately represent the state of the field and motivation for the work. They are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The tabular approach to representing TF specificity (complete oligomer affinity tables) is limited by exponential parameter growth, restricting it to 8 bp in practice (shorter than most TF footprints). The large parameter-to-data ratio limits precision and necessitates non-parametric methods, resulting in loss of quantitative information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C25 accurately describe limitations of the tabular approach with appropriate citations (C18). The mathematical reasoning about exponential growth (C19) and parameter-to-data ratios (C22) is sound. The inferences about practical limitations (C20, C23-C25) are logical consequences of the parameter explosion problem.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Alternative approaches to the tabular method include PWM (position weight matrix) and PSAM (position-specific affinity matrix) representations that assume positional independence. PWMs maximize information content, while PSAMs optimize quantitative explanation of variation. MatrixREDUCE and PREGO were first implementations of the PSAM approach for PBM data, with BEEML-PBM as a more recent extension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C35 provide accurate background on alternative modeling approaches with appropriate citations. The distinctions between PWM and PSAM philosophies (C30-C31) are clearly explained. The historical context (C33-C35) is properly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Whether dependencies between nucleotide positions can be accurately estimated from PBM data remains an open question. While alternative binding modes are widely recognized, accurate quantification of their relative usage has not been attempted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 accurately characterize open questions in the field with appropriate citations (C36). These claims establish the motivation for the FeatureREDUCE capabilities demonstrated in the results. The manuscript subsequently addresses both questions (dependencies and multiple binding modes).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "FeatureREDUCE infers specificity models of unprecedented accuracy and precision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 is a strong claim that is validated by the benchmark results (C86), gold-standard comparisons (C77, C79), and in vivo predictions (C84-C85). The term 'unprecedented' is justified by the top performance in the 26-algorithm benchmark and improvements over existing methods like BEEML-PBM.",
+    "result_type": "MAJOR"
+  }
+]

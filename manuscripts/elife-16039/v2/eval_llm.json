@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Optogenetic activation of a single M72 glomerulus elicits larger and more asynchronous lateral inhibitory currents in mitral cells compared to tufted cells. The peak amplitude of early inhibition was larger in MCs, while both peak amplitude and charge transferred of late phase inhibition were significantly larger in MCs. MCs received a smaller proportion of total inhibition during the early phase than TCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C16 provide converging experimental evidence from voltage clamp recordings showing differential lateral inhibitory currents between MCs and TCs. The data include measurements of peak amplitude, charge transfer, and temporal dynamics across early and late phases, with appropriate statistical comparisons shown in Figure 1. The findings are internally consistent and replicated across M72-ChR2-YFP and OMP-ChR2-YFP mice.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Similar proportions of mitral cells and tufted cells received lateral inhibitory currents following glomerular activation, and granule cells contribute similar proportions of lateral inhibition to both cell types. Glomerular layer circuits make small and uniform contributions and are not the primary source of differences in lateral inhibition between MCs and TCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C17-C19 are supported by experimental data using pharmacological manipulations (APV and LY36785) and analysis of cells with intact versus truncated apical dendrites. The finding that ~60% of both MCs and TCs receive inhibition, combined with the pharmacological dissection showing similar GC contributions, provides strong evidence that differences arise from mechanisms other than glomerular layer circuits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Lateral inhibition affects mitral cells and tufted cells at different firing rate ranges. MCs are affected at intermediate rates (34\u00b111 to 79\u00b122 Hz) while TCs are affected at low rates (10\u00b14 to 43\u00b18 Hz). Both the lower and upper bounds of the effective activity range were significantly lower in TCs than MCs, though the absolute firing rate decrease was similar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 are supported by systematic current-clamp experiments measuring firing rates with and without M72 photostimulation across populations of cells (n=16 MCs, n=12 TCs). The data in Figures 2-3 show clear differences in the activity-dependence of lateral inhibition, with appropriate statistical tests demonstrating significant differences in the bounds of the effective range. The finding that fractional but not absolute reduction differs is internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C66"
+    ],
+    "result": "Granule cells form two distinct morphological subclasses\u2014superficial GCs (sGCs) and deep GCs (dGCs)\u2014rather than a continuum. sGCs preferentially innervate the superficial EPL while dGCs innervate the deep EPL. Unbiased clustering analysis of gemmule distributions yielded 3 distinct clusters, confirming the morphological subdivision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35, C66 are supported by quantitative morphological reconstructions and unbiased clustering analysis (Ward's method with gap statistic) of 30 GCs. The clustering correctly assigned 19/19 sGCs and 9/11 dGCs, providing strong quantitative evidence for discrete subtypes. The gemmule distribution analysis (Figure 4g) directly demonstrates differential innervation patterns. This represents the first quantitative confirmation of classical morphological observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Superficial granule cells are more strongly recruited than deep granule cells following activation of a single glomerulus. A higher percentage of sGCs fired in response to glomerular activation due to stronger excitatory synaptic input, more hyperpolarized action potential threshold, and greater intrinsic excitability, despite equivalent somatodendritic sizes and passive membrane properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are supported by comprehensive electrophysiological characterization of sGCs (n=19) and dGCs (n=11) including measurements of spiking responses, synaptic currents, intrinsic excitability (FI curves), action potential properties, and morphological analysis. The data in Figure 4 show consistent differences across multiple measures with appropriate statistical tests. The finding that sGCs and dGCs have equivalent passive properties but different active properties strengthens the conclusion that differences reflect intrinsic excitability rather than morphological artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C44"
+    ],
+    "result": "Pharmacologically increasing granule cell excitability with the mGluR agonist DHPG shifts the effective activity range of lateral inhibition in mitral cells to lower firing rates. The range fell from 31\u00b19\u201373\u00b110 Hz to 16\u00b112\u201349\u00b123 Hz, with both lower and upper bounds significantly reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by paired recordings from 6 MCs before and after DHPG application, with appropriate controls showing DHPG selectively affects GCs but not MCs (Figure 5\u2014figure supplement 1). The shift in the effective range provides functional evidence supporting the hypothesis that GC excitability differences contribute to MC/TC differences in ADLI. However, the authors appropriately note that DHPG may have additional effects beyond GC excitability (e.g., on external tufted cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Computational modeling shows that activity-dependent lateral inhibition enables mitral cells and tufted cells to discriminate odors best at different concentration ranges. TCs outperformed MCs at low concentrations (90% vs 70% accuracy at 30% max concentration) while MCs outperformed TCs at high concentrations (91% vs 73% at 60% max). Models combining MCs and TCs performed significantly better than single-cell-type models when averaging across all concentrations. Subtractive or divisive inhibition provided no benefit over no inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 are supported by systematic computational modeling using linear discriminant analysis on simulated MC and TC populations with experimentally-derived ADLI parameters. The modeling appropriately tests multiple conditions (8 vs 32 odors, different inhibition types, different cell combinations) with 100 odor panels per concentration to assess variability. The finding that ADLI but not other inhibition forms improves discrimination is consistent with prior theoretical work (Arevian et al., 2008). Statistical tests appropriately correct for multiple comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C60",
+      "C61"
+    ],
+    "result": "Differences in activity-dependent lateral inhibition between mitral and tufted cells likely reflect differences in the activation of deep and superficial granule cells. Preferential connectivity of TCs with sGCs and MCs with dGCs can explain the observed differences, though higher firing rates in M72 TCs alone is insufficient to explain differences in both bounds of the effective activity range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C60-C61 represent the authors' mechanistic interpretation integrating multiple lines of evidence: (1) morphological data showing sGC/dGC innervation patterns, (2) functional data showing differential GC recruitment, (3) pharmacological data showing GC excitability effects, and (4) the finding that apical dendrite truncation doesn't affect results. The logic is sound and the interpretation is appropriately cautious, acknowledging that other mechanisms may contribute. The inference is well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Circuit-level differences between mitral and tufted cells allow them to best discriminate odors in separate concentration ranges, indicating that segregating information about different ranges of stimulus intensity may be an important function of these parallel sensory pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by the computational modeling results (C47-C51) combined with the experimental characterization of circuit differences. The modeling demonstrates that the experimentally-observed differences in ADLI, intrinsic excitability, and glomerular input enable concentration-dependent discrimination. The broader functional interpretation about parallel pathways is appropriately framed as a hypothesis ('may be') supported by the modeling results and analogies to other sensory systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Prior work has established that mitral cells and tufted cells exhibit distinct activity in vivo, with TCs responding to lower odor concentrations, projecting to non-overlapping regions, being more intrinsically excitable, and receiving stronger OSN-mediated excitation than MCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 accurately summarize prior published work with appropriate citations. These claims establish the context and motivation for the current study. The citations are to peer-reviewed publications and the characterizations are consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Prior work has established that lateral inhibitory circuits enhance contrast and facilitate discrimination throughout the brain. In the olfactory bulb, lateral inhibition occurs via reciprocal dendrodendritic synapses with granule cells and most strongly affects mitral cells firing at intermediate rates, with activity-dependent regulation decorrelating responses more effectively than subtractive or divisive inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 accurately summarize prior published work including the authors' own previous findings (Arevian et al., 2008). These claims establish the theoretical framework for understanding activity-dependent lateral inhibition. The citations are appropriate and the characterizations are accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Classical morphological studies suggest that granule cells are subdivided into superficial and deep subtypes based on their innervation patterns in the EPL, with GC soma position correlating with subtype and odor-evoked activity in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31 accurately summarize prior morphological and functional studies with appropriate citations. These claims establish the historical context for the authors' quantitative morphological analysis. The characterizations are consistent with the cited classical literature (Mori et al., 1983; Orona et al., 1983; Wellis and Scott, 1990).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "There is no difference in spontaneous synaptic event frequency or amplitude between superficial and deep granule cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by experimental data presented in source data tables. The authors use this finding to argue that presynaptic circuits are comparably intact for both GC subtypes, addressing potential concerns about slice preparation artifacts. This is an important control supporting the validity of the differential recruitment findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "Similar proportions of mitral cells (64%) and tufted cells (67%) were affected by lateral inhibition in spiking experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 is supported by experimental data from current-clamp experiments. This finding establishes that the differences in ADLI between MCs and TCs reflect differences in the firing rate ranges affected rather than differences in the proportion of cells receiving inhibition. This is an important control for interpreting the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C76",
+      "C77"
+    ],
+    "result": "Parallel sensory pathways are a common feature across sensory systems, with examples including motion/color segregation in vision, sound location/tonal pattern in audition, pain/itch in somatosensation, and rods/cones in the retina. In the retina, feature selectivity emerges through connectivity to specific bipolar and amacrine cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58, C76-C77 accurately summarize established knowledge about parallel processing in sensory systems with appropriate citations. These claims provide comparative context for understanding the olfactory system findings. The characterizations are accurate and the analogies are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "External plexiform layer interneurons can mediate inhibition onto mitral/tufted cells but mediate linear (divisive) rather than activity-dependent inhibition. Glomerular layer circuits play a role in lateral inhibition but likely do not contribute to the differences in ADLI between MCs and TCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 appropriately discuss alternative circuit mechanisms and explain why they are unlikely to account for the observed MC/TC differences. The reasoning is based on prior literature (EPL-INs mediate divisive inhibition) and the authors' own data (apical dendrite truncation doesn't affect results). This represents appropriate consideration of alternative explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The circuit-level differences described can account for several in vivo observations: weaker lateral inhibitory currents may explain why TCs are less frequently inhibited by odors; the finding that intermediate/high firing rates are unaffected by lateral inhibition in TCs may explain why TCs show responses more correlated to OSN input and less dependent on concentration; and these differences may explain why MCs but not TCs are decorrelated by cortical feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 represent reasonable inferences connecting the in vitro findings to prior in vivo observations. The logic is sound: if TCs receive weaker inhibition and are only affected at low firing rates, this would explain several in vivo phenomena. However, these remain hypotheses requiring direct in vivo testing. The authors appropriately use cautious language ('may contribute,' 'may help explain').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Prior work has shown that mitral/tufted cell activity becomes decorrelated over time through granule cell-mediated mechanisms, improving odor discrimination. Activity-dependent lateral inhibition likely improves discrimination by driving decorrelation in ranges that engage lateral inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 accurately summarize prior work on decorrelation and discrimination with appropriate citations, and make a reasonable inference about the mechanism by which ADLI improves discrimination. The inference is consistent with both the prior literature and the current modeling results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Differences in odor-evoked responses in mitral and tufted cells emerge due to differences in connectivity to olfactory sensory neurons, external tufted cells, and granule cells. If higher-order neurons integrate inputs from parallel channels and perform simple computations like averaging, new features may emerge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C78 represents a reasonable synthesis of the current findings with prior work on MC/TC connectivity. Claim C79 is appropriately speculative, supported by the image processing analogy in Figure 6\u2014figure supplement 3. The speculation is clearly framed as hypothetical and represents an interesting direction for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Tufted cells are involved in processing near-threshold stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is a reasonable inference from prior work (C2) showing TCs respond to lower odor concentrations. This interpretation is consistent with the cited literature and provides motivation for the current study.",
+    "result_type": "MINOR"
+  }
+]

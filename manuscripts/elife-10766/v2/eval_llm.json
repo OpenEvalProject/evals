@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C73",
+      "C74"
+    ],
+    "result": "CyaA binds CR3 outside of the I-domain, specifically recognizing the segment containing residues 614-682 of CD11b that encompasses the C-terminal end of the \u03b2-propeller domain and the N-terminal portion of the thigh domain. This binding is independent of the I-domain and requires CD11b to be associated with CD18.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28, C32-C38, and C73-C74 provide converging evidence from domain swapping experiments (Figure 1), antibody competition assays (Figure 2), and chimeric integrin studies (Figure 3) that consistently demonstrate CyaA binds residues 614-682 of CD11b outside the I-domain. The experimental approaches are complementary and the results are internally consistent across multiple independent assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The interaction between CyaA and CR3 involves electrostatic interactions between negatively charged residues (D1193, D1194, E1195, E1232, D1234) in the 1166-1287 segment of CyaA and positively charged arginine residues (R662, R664, R666) in the 614-682 segment of CD11b.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 are supported by computational predictions of isoelectric points and mutagenesis experiments shown in Figure 4. Alanine substitutions of predicted charged residues on both CyaA and CD11b significantly reduced binding and cell intoxication, providing direct experimental validation of the predicted electrostatic interaction mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "CyaA preferentially binds the inactive (bent) conformation of CR3 over the active (extended) conformation. PMA or Mn2+ activation of CR3 reduces CyaA binding and cellular intoxication, and SPR measurements show the bent CR3 conformer has higher affinity (Kd = 2.1\u00d710\u207b\u2077 M) than the extended conformer (Kd = 6.4\u00d710\u207b\u2077 M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C45-C49 are supported by multiple complementary approaches: flow cytometry on PMA/Mn2+-treated monocytes (Figure 5A-C, Figure 5\u2014supplement 1), and direct SPR measurements of purified bent and extended sCR3 conformers (Figure 5F-G, Table 1). The ~3-fold difference in Kd values is consistent with the functional binding differences observed in cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "CyaA binding to CR3 does not trigger downstream signaling through Syk activation in human monocytes. Neither active CyaA nor the enzymatically inactive CyaA-AC- toxoid induced Syk phosphorylation at physiological or supraphysiological concentrations, in contrast to iC3b-opsonized zymosan which efficiently activated Syk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C50-C54 are supported by immunoprecipitation and Western blot experiments in THP-1 cells (Figure 6). The negative results with both active and inactive toxin across a wide concentration range, contrasted with positive controls using iC3b-opsonized zymosan, provide strong evidence that CyaA binding does not activate the CR3-Syk pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "CyaA-catalyzed elevation of cAMP blocks CR3 signaling initiated by iC3b. CyaA pretreatment prevents iC3b-induced Syk activation, reduces iC3b binding to CR3, and can inactivate already-activated Syk. These effects are dependent on the enzymatic activity of CyaA and are not due to altered CR3 expression or cell viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C55-C67 are supported by comprehensive experiments in Figure 7 and supplements showing: (1) CyaA but not CyaA-AC- blocks iC3b-induced Syk activation, (2) CyaA reduces iC3b-zymosan binding, (3) CyaA inactivates pre-activated Syk, and (4) appropriate controls rule out artifacts. The enzymatic dependence and multiple complementary readouts strongly support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "CyaA binds CR3 through a multivalent, two-step interaction mechanism. Initial low-affinity binding to N-linked glycans on CD11b concentrates the toxin at the cell surface, followed by high-affinity interaction with specific amino acid residues in the 614-682 segment. This is supported by SPR data fitting a bivalent analyte model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C86-C92 integrate prior findings (C89 citing Hasan et al., 2015; Morova et al., 2008) with current SPR data (Figure 5, Table 1) showing bivalent binding kinetics. The domain swapping data (C25) showing partial reduction with multiple segments supports multivalent binding. The two-step model is mechanistically plausible and consistent with all experimental observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "CyaA does not specifically bind LFA-1 (CD11a/CD18). Cells expressing LFA-1 show minimal CyaA binding and intoxication comparable to cells lacking \u03b22 integrins, approximately two orders of magnitude lower than CR3-expressing cells. This was confirmed with both YFP-tagged and untagged LFA-1, and by SPR measurements showing no binding to purified LFA-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C103 provide multiple lines of evidence from flow cytometry (Figure 9A), cAMP assays (Figure 9B), controls for YFP tag effects (Figure 9\u2014supplement 2), and SPR with purified LFA-1 (Figure 9\u2014supplement 3). The consistency across methods and the large magnitude of difference (~100-fold) between LFA-1 and CR3 binding strongly support the conclusion that LFA-1 is not a specific CyaA receptor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C107",
+      "C122"
+    ],
+    "result": "CyaA represents an unprecedented mode of integrin-ligand interaction by preferentially binding the inactive conformation of CR3 outside the I-domain, enabling toxin penetration and cAMP elevation that ablates CR3-Syk signaling. This distinguishes CyaA from all other known ligands of I-domain-containing integrins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70, C107, and C122 represent integrative conclusions supported by the collective evidence from all major experimental findings: I-domain-independent binding (C3, C24-C28), preferential binding to inactive CR3 (C2, C45-C49), lack of Syk activation by CyaA binding (C4, C50-C54), and blocking of iC3b-induced signaling (C5, C55-C67). The novelty claim is justified by the unique combination of properties not observed with other integrin ligands.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C71",
+      "C72",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C104",
+      "C105",
+      "C106",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C118",
+      "C119",
+      "C120",
+      "C123",
+      "C125"
+    ],
+    "result": "Background knowledge and prior work establishing: integrin structure and function, \u03b22 integrin signaling through Src and Syk, CyaA as a virulence factor of B. pertussis, CR3 as the CyaA receptor, and the role of Syk in immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C20, C71-C81, C104-C106, C108-C115, C118-C120, C123, and C125 represent established knowledge from the literature, appropriately cited throughout. These provide necessary context for interpreting the novel findings but are not original results of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "CHO cells expressing human CR3 serve as a suitable model system for studying CyaA-CR3 interactions, with CR3 allowing CyaA binding and intoxication while the homologous CR4 does not bind CyaA despite sharing the CD18 subunit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 cite prior work (Guermonprez et al., 2001) establishing the CHO cell model system. The current study validates and extends this model through extensive use in Figures 1-4, demonstrating its utility for mechanistic studies. The differential binding to CR3 vs CR4 is a key observation that enabled the domain mapping experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "The 614-682 segments of CD11b and CD11c share only 41% amino acid sequence identity, compared to 61% overall identity between the full-length CD11b and CD11c subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by sequence alignment analysis performed by the authors using the Jotun Hein method. The lower sequence identity in the 614-682 region compared to overall identity is consistent with this region conferring specificity for CyaA binding to CD11b but not CD11c.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The CyaA-binding site within segment 614-682 of CD11b requires CD11b to be in complex with CD18 for proper folding or function, as CyaA does not bind isolated CD11b despite the OKM1 antibody recognizing this segment on isolated CD11b.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by data in Figure 1\u2014supplement 3 showing OKM1 binds isolated CD11b but CyaA does not. Claim C85 is appropriately labeled as speculative. The requirement for CD18 association could reflect either structural requirements for the CyaA binding site or direct CD18 contacts, which cannot be distinguished with current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "A sequential two-step binding mechanism lowers affinity constraints compared to direct single-step binding, and membrane insertion of CyaA's hydrophobic domain may further stabilize the CyaA-CR3 complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C94 represent mechanistic inferences about binding thermodynamics and the role of membrane insertion. While plausible and consistent with the bivalent binding model (C92), these claims lack direct experimental validation. The contribution of membrane insertion to apparent affinity is cited to prior work (Guermonprez et al., 2001) but not directly tested here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Prior conflicting reports exist regarding whether CyaA can bind LFA-1, with Paccani et al. (2011) proposing LFA-1 as a CyaA receptor while Guermonprez et al. (2001) found minimal binding to LFA-1-expressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 accurately represent the conflicting literature, with appropriate citations. This provides context for the current study's resolution of this controversy (C97-C103), which definitively shows CyaA does not specifically bind LFA-1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C121",
+      "C124",
+      "C126"
+    ],
+    "result": "Speculative conclusions about the biological significance of CyaA's mechanism: synergistic inhibition of phagocytosis through Syk and RhoA targeting, subversion of innate immunity in naive hosts, impairment of broad immune processes, importance of anti-CyaA antibodies for vaccine protection, and potential contribution to pertussis resurgence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C117, C121, C124, and C126 represent reasonable inferences from the experimental data but extend beyond what is directly demonstrated. While the Syk inhibition is well-established (C4-C5, C50-C67) and RhoA effects are cited to prior work (C114), the in vivo significance, vaccine implications, and epidemiological connections require additional validation beyond the scope of this study.",
+    "result_type": "MINOR"
+  }
+]

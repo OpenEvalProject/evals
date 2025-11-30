@@ -1,0 +1,206 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "ATF4 target genes are robustly upregulated in the cerebellum and hippocampus of B6J-Gtpbp2nmf205-/- mice prior to neurodegeneration, accompanied by increased eIF2\u03b1 phosphorylation at Ser51.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C120-C127 collectively demonstrate ATF4 activation through multiple lines of evidence: Western blot showing increased p-eIF2\u03b1 (C2, C120-C122), microarray analysis identifying upregulated ATF4 target genes (C46-C53, C123-C126), and comparison with published ChIP-seq data confirming these are bona fide ATF4 targets (C123-C125). The temporal analysis at 3 and 5 weeks, before and during neurodegeneration, supports the claim that this occurs prior to neuron death (C127).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C41",
+      "C42",
+      "C43",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "GCN2 is the eIF2\u03b1 kinase responsible for ISR activation in B6J-Gtpbp2nmf205-/- mice, as demonstrated by genetic deletion experiments showing loss of eIF2\u03b1 phosphorylation and ATF4 target gene expression in Gcn2-/- mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C41-C43, C56-C61 provide strong genetic evidence that GCN2 is the responsible kinase. Western blot analysis shows p-eIF2\u03b1 levels return to baseline in double mutants (C58-C59), RT-qPCR demonstrates loss of ATF4 target gene upregulation without GCN2 (C60-C61), and exclusion of PERK through lack of UPR markers (C56-C57) strengthens the conclusion. The genetic approach is appropriate and the controls are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C93",
+      "C94"
+    ],
+    "result": "GCN2 activation in B6J-Gtpbp2nmf205-/- mice occurs independently of changes in deacylated tRNA levels, representing a novel mechanism of GCN2 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C66-C67, C93-C94 demonstrate that the ratio of uncharged to charged tRNAArgUCU does not differ between mutant and control cerebellum (C67, p>0.5), despite GCN2 activation. Claims C68-C70 show that overexpression of unprocessed tRNA does not activate ATF4 targets, ruling out this alternative mechanism. The tRNA aminoacylation assay is appropriate for detecting uncharged tRNAs, and the negative result is convincing given the sensitivity of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C44",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "GCN2-mediated ISR activation is neuroprotective in B6J-Gtpbp2nmf205-/- mice, as deletion of Gcn2 accelerates cerebellar granule cell death and causes novel CA1 pyramidal neuron degeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C44, C74-C82, C105-C107 provide compelling evidence through behavioral assessment (C74-C76) and histological quantification (C77, Figure 5B) showing accelerated neurodegeneration in double mutants. The appearance of CA1 degeneration in double mutants but not single mutants (C80-C81) provides strong evidence for a protective role. The temporal analysis showing no change in onset but accelerated progression (C78-C79) is well-reasoned. Sample sizes (n=3) and statistical analysis (p<0.05-0.001) are adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C116"
+    ],
+    "result": "RNA-Seq analysis reveals that loss of GCN2 in B6J-Gtpbp2nmf205-/- mice reverts expression of 83 genes (including 48 known ATF4 targets) to wild-type levels, and causes upregulation of genes involved in nucleolar function and ribosome biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65, C116 are supported by RNA-Seq data with appropriate statistical thresholds (\u22651.5 fold, padj<0.01) and three biological replicates. The overlap with published ChIP-seq data (C65) validates that these are genuine ATF4 targets. The identification of nucleolar genes (C116) is supported by pathway analysis. However, the functional significance of nucleolar gene upregulation remains speculative and would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Complete deletion of n-Tr20 on the Gtpbp2-deficient background results in perinatal lethality and ATF4 activation at P0, demonstrating that residual aminoacylated n-Tr20 in B6J mice allows postnatal survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 provide genetic evidence through breeding experiments showing perinatal lethality in double homozygous mice (C71) and ATF4 activation at P0 (C73). The interpretation that residual n-Tr20 allows survival (C72) is logical given the phenotypic differences. However, the RT-qPCR data at P0 shows variable significance for individual genes, and the authors note that differences between B6J and B6J-Gtpbp2nmf205-/- at P0 are not individually significant, which somewhat weakens the strength of the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Microarray analysis identifies differential gene expression in B6J-Gtpbp2nmf205-/- brain at 3 and 5 weeks, with more robust changes in cerebellum than hippocampus, and activation of microglia and astrocytes at 5 weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C55 report microarray results with appropriate statistical criteria (1.5 fold, q<0.05) and three biological replicates per condition. The temporal and regional differences are clearly documented (C46-C53). Immunofluorescence confirms glial activation (C55, Figure 1E). The observation that upregulated pathways show more robust p-values (C54) is noted but not deeply explored. The experimental design appropriately separates changes due to ribosome stalling from secondary effects of neurodegeneration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "Neurons may sense ribosome deficiency and activate compensatory ribosome biogenesis genes, with failure of GCN2-mediated translational repression potentially exacerbating this response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C118 are explicitly speculative (\"may sense,\" \"may result\") and represent interpretations of the nucleolar gene expression data. While the observation of increased nucleolar gene expression is supported by RNA-Seq (C116), the mechanistic interpretation lacks direct experimental validation. Additional experiments measuring ribosome levels, ribosome function, or nucleolar stress markers would be needed to support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C86",
+      "C45"
+    ],
+    "result": "Ribosome stalling activates GCN2, establishing a feedback loop between translation elongation and initiation that represents a novel regulatory mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84, C86, C45 represent the central conclusion of the study, synthesizing the experimental findings. The conclusion is well-supported by the collective evidence: GCN2 activation occurs during ribosome stalling (C41-C43), this activation is independent of deacylated tRNA (C93-C94), and it has functional consequences for neuronal survival (C44, C82). The claim of a \"feedback loop\" is justified by the demonstration that elongation defects trigger changes in initiation through GCN2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Ribosome stalling may contribute to GCN2 activation in other stress conditions such as amino acid deprivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C95 is explicitly speculative (\"may also contribute\") and extends beyond the experimental data. While the authors demonstrate GCN2 activation by ribosome stalling in their model, they have not tested whether ribosome stalling contributes to GCN2 activation during amino acid deprivation or other stress conditions. This represents a reasonable hypothesis for future work but is not supported by the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C113"
+    ],
+    "result": "The type of stress may influence cellular responses to reduced translation initiation, with modeling suggesting different outcomes under mild versus severe stress conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C111, C113 rely heavily on cited modeling studies (Shah et al., 2013) rather than experimental data from this manuscript. While C110 is presented as an interpretation of the authors' findings combined with literature, the mechanistic predictions about protein production under different stress severities (C111, C113) are not directly tested. The authors use these models to contextualize their findings but do not provide experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "eIF2\u03b1 phosphorylation may not be directly causative in ameliorating neuron death, as global translation can be downregulated independently of eIF2\u03b1 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C115 are speculative and based on a single citation (Knutsen et al., 2015). The authors raise this as a caveat to their interpretation but do not experimentally test whether eIF2\u03b1 phosphorylation per se is protective or whether other GCN2-dependent mechanisms are responsible. Experiments directly manipulating eIF2\u03b1 phosphorylation (e.g., using non-phosphorylatable eIF2\u03b1 mutants) would be needed to resolve this question.",
+    "result_type": "MINOR"
+  }
+]

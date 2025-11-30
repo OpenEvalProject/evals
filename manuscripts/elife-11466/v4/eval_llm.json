@@ -1,0 +1,366 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "The authors quantified nucleocytoplasmic partitioning of ~5000 unique proteins in Xenopus laevis oocytes using manual microdissection and mass spectrometry. Stage VI oocytes (~1.3 mm diameter with ~450 \u00b5m nuclei) were manually dissected into nuclear and cytoplasmic fractions, volume-normalized, and analyzed by mass spectrometry with three biological replicates. A total of 9573 proteoforms were identified (7015 nuclear, 7036 cytoplasmic, 4478 in both), which after filtering for contaminants yielded 5006 unique proteins (1126 nuclear-only, 1059 cytoplasmic-only, 2821 in both compartments).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C55 and C166-C168 collectively describe a well-designed experimental approach with appropriate controls and replication. The use of Xenopus oocytes for manual dissection minimizes cross-contamination (C46, C62), the volume normalization accounts for size differences (C168), and the identification numbers are clearly stated with supporting figures (Figure 1C-D). The experimental design with three biological replicates and technical replicates (C167) provides adequate statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C169"
+    ],
+    "result": "The authors validated the quality of nuclear and cytoplasmic fractions using marker proteins nucleophosmin and gelsolin, measuring extreme partition coefficients (300:1 nuclear for nucleophosmin, 1:400 nuclear for gelsolin). Absolute protein concentrations were estimated using UPS2 standards spiked at 1:10 ratio, with quantification reliable over 5 orders of magnitude and accurate within a factor of 2.3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 and C169 demonstrate appropriate validation of the fractionation quality using well-established marker proteins with known localizations. The extreme partition coefficients (C58, C61) support minimal cross-contamination (C62). The use of UPS2 standards (C169) and validation shown in Figure 1\u2014figure supplement 1 provide confidence in the quantification accuracy, though the 2.3-fold accuracy represents a moderate level of precision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors propose that Xenopus oocyte nuclei have local ATP production capacity through glycolysis and a creatine phosphate energy shuttle. Nuclear fractions contain all glycolytic enzymes except hexokinase and phosphofructokinase (PFK, N:C ~1:2000), predicting directed flux of fructose 1,6-bisphosphate into nuclei for local ATP synthesis. Creatine kinase is maintained at high concentrations in both cytoplasm (3 \u00b5M) and nucleus (1.5 \u00b5M) to enable a CP shuttle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 present a logical inference from the measured enzyme distributions. The absence of ATP-consuming preparatory enzymes (C63-C64) combined with presence of downstream glycolytic enzymes (C63) supports the predicted metabolic flux (C65-C66). The measured creatine kinase concentrations (C67) are consistent with an energy shuttle mechanism. However, these remain inferences from protein distribution data without direct metabolic flux measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors identified large numbers of CRM1 export substrates across three species using affinity chromatography: >700 from yeast, ~1000 from Xenopus oocytes, and >1050 from human cells. Starting extracts contained ~2800 (Xenopus), ~3900 (human), and ~2600 (yeast) proteins, while CRM1+RanGTP samples yielded ~2300, 3000, and ~2000 proteins respectively. About 14% of proteins in CRM1+RanGTP samples were not detected in starting extracts, likely representing enriched low-abundance proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4 and C68-C74 describe the large-scale identification of CRM1 cargoes with appropriate experimental design (Figure 2A shows RanGTP-dependent binding). The numbers are clearly stated and supported by mass spectrometry data. The observation that 14% of CRM1-bound proteins were not detected in starting extracts (C74) demonstrates effective enrichment. However, the final cargo numbers depend on classification criteria that are described but involve some subjective thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C82",
+      "C83",
+      "C158"
+    ],
+    "result": "The authors demonstrate that CRM1 cargoes represent approximately 1/4 of all detectable cytoplasmic and nuclear proteins, with the majority showing strong cytoplasmic bias. Nearly all translation factors and ribosomal maturation factors are CRM1 cargoes, as are vesicle coat proteins with perfect nuclear exclusion. Validation experiments confirmed 23 of 29 tested candidates (79% success rate) as true CRM1 cargoes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C83 and C158 are well-supported by the combined mass spectrometry and validation data. The high validation rate (23/29, C82) strongly supports that the majority of identified hits are genuine CRM1 cargoes (C83). The functional enrichment for translation factors (C77) and vesicle coat proteins (C80) is supported by both binding data and nucleocytoplasmic partitioning measurements (Figure 9). The estimate of ~1/4 of all proteins (C158) is a straightforward calculation from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C118",
+      "C119",
+      "C120",
+      "C133",
+      "C134",
+      "C135",
+      "C139"
+    ],
+    "result": "The authors validated specific CRM1 cargoes through transfection assays and direct binding experiments. eRF3a contains an NES in its N-terminal region and binds purified CRM1 in a RanGTP-dependent manner. The Arp2/3 1b subunit has an NES at its C-terminus. Multiple tRNA ligases (Asn, Ser, Phe-\u03b1) show CRM1-dependent nuclear exclusion. Peroxisome biogenesis factors Pex5 and PEX19 are CRM1 cargoes. Septin-2 shifts from cytoplasmic to nuclear upon leptomycin B treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86, C118-C120, C133-C135, and C139 describe individual cargo validations with multiple lines of evidence. The transfection assays (Figures 4-8) demonstrate leptomycin B-sensitive nuclear exclusion, while direct binding assays (Figure 5) confirm RanGTP-dependent CRM1 interaction. NES sequences are identified and validated for several cargoes (Figure 4). The combination of localization and binding data provides strong support for these specific cargo identifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The authors propose new CRM1 functions in spatial control of multiple cellular processes including vesicle coat-assembly, centrosomes, autophagy, peroxisome biogenesis, cytoskeleton, ribosome maturation, translation, and mRNA degradation. More generally, CRM1 precludes potentially detrimental action of cytoplasmic pathways within the nuclear interior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C14 represent interpretations of the cargo identification data. Each proposed function (C6-C13) is supported by identification of relevant proteins as CRM1 cargoes (e.g., vesicle coat proteins C127-C128, autophagy factors C130-C132, peroxisome factors C133-C135, translation factors C77, C89-C90). The general principle (C14) is a reasonable synthesis of the data showing CRM1 exports many cytoplasmic proteins. However, these remain functional inferences rather than direct demonstrations of these roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C91",
+      "C93",
+      "C100",
+      "C105",
+      "C108",
+      "C113"
+    ],
+    "result": "The authors speculate on several mechanistic roles for CRM1-mediated export: preventing premature ribosome maturation in the nucleus, suppressing intranuclear translation, and avoiding interference with ribosome biogenesis. They suggest that even slow leakage of large cytoplasmic assemblies into nuclei requires countermeasures, and that specific factors like MetAP2 and rpS3 may be prevented from binding ribosomal subunits prematurely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79, C91, C93, C100, C105, C108, and C113 are explicitly speculative interpretations (using terms like 'might', 'possibly', 'perhaps'). While these hypotheses are reasonable given the cargo identifications, they lack direct experimental validation. For example, C100 suggests MetAP2 'can bind to assembling ribosomal subunits prematurely' based only on nucleolar accumulation upon leptomycin B treatment. These mechanistic proposals would require additional functional experiments to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C114",
+      "C115",
+      "C116",
+      "C121"
+    ],
+    "result": "The authors show that many highly abundant metabolic enzymes and large complexes equilibrate between nucleus and cytoplasm without detectable NLS, demonstrating that large size alone cannot guarantee cytoplasmic confinement. Aminoacyl tRNA ligases show strong cytoplasmic bias (>100-fold in most cases), making nuclear aminoacylation as a general tRNA export checkpoint unlikely. Multiple tRNA ligases are CRM1 cargoes, suggesting cells actively maintain cytoplasmic tRNA aminoacylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 and C114-C116, C121 are supported by the nucleocytoplasmic partitioning data (Figure 9C, Supplementary file 2). The observation that large complexes can equilibrate (C87) challenges assumptions about size-based exclusion (C88). The strong cytoplasmic bias of tRNA ligases (C115) with >100-fold enrichment provides quantitative support for the conclusion about nuclear aminoacylation (C116). The validation of specific tRNA ligases as CRM1 cargoes (C118-C120) supports the inference about active maintenance (C121).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "The authors identified human Cys tRNA ligase as a CRM1 non-binder that nevertheless shows perfect nuclear exclusion independent of leptomycin B treatment, indicating CRM1-independent cytoplasmic confinement mechanisms exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 provide an important negative control demonstrating that not all cytoplasmically-confined proteins use CRM1. The lack of CRM1 binding (C122, Supplementary file 3) combined with leptomycin B-insensitive nuclear exclusion (C123, Figure 7B) clearly indicates an alternative mechanism. This strengthens confidence in the CRM1-dependent cases by showing the authors can distinguish different export pathways.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The authors identified mRNA degradation factors (Upf1, Upf2, Upf3, DCP1, DCP2, EDC proteins) and vesicle coat proteins (COPI, COPII, AP-1, AP-2, AP180) as CRM1 cargoes. Vesicle coat proteins show extreme nuclear exclusion in oocytes. This suggests CRM1 enables independent control of nuclear and cytoplasmic RNA turnover and explains the absence of intranuclear vesicles through active depletion of budding machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C129 are supported by the CRM1 binding data (Supplementary files 2-3, Figures 4-6) and nucleocytoplasmic partitioning measurements (Figure 9E). The identification of these functional groups as CRM1 cargoes is data-driven. The interpretations about RNA turnover control (C126) and vesicle budding prevention (C129) are reasonable inferences from the cargo identities, though they remain indirect evidence for these functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The authors identified autophagy factors (Atg1, Atg13, Atg17, Vps30 in yeast; ATG3 in human) as high-scoring CRM1 cargoes, suggesting CRM1 counteracts initiation of autophagy from the nuclear interior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C132 are supported by the CRM1 binding data (Supplementary file 4 for yeast, Figure 7 for human ATG3). The identification of multiple autophagy factors as CRM1 cargoes (C130) provides evidence for this connection. The interpretation that CRM1 'counteracts' nuclear autophagy initiation (C131) is a reasonable inference, though it remains an indirect conclusion without functional validation of this specific role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "The authors note that mis-targeting PEX19 to nuclei by a fused NLS causes nuclear accumulation of peroxisomal membrane proteins (from prior literature), and infer that loss of CRM1-mediated export would likely have the same effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C137 appropriately cite prior work (Sacksteder et al., 2000) for the NLS-PEX19 phenotype (C136) and make a logical inference (C137) based on their identification of PEX19 as a CRM1 cargo (C135). This represents appropriate integration of their findings with existing literature to generate a testable prediction, though the prediction itself is not experimentally validated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The authors identified centrosomal proteins (HAUS augmin complex, \u03b3-tubulin, \u03b3-tubulin complex components, CEP41, CEP55, CEP170) as CRM1 cargoes. Xenopus and human septins are highly abundant in CRM1-bound fractions, with Septin-2 validated by transfection. This suggests CRM1 may suppress microtubule nucleation in metazoan interphase nuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C142 are supported by the CRM1 binding data (Figure 9F, Supplementary files 2-3) and validation of Septin-2 (C139, Figure 5). The identification of multiple centrosomal components as CRM1 cargoes (C140-C141) is data-driven. The speculation about microtubule nucleation suppression (C142) is a reasonable hypothesis but remains unvalidated. The connection to mitotic CRM1 function references prior work (Arnaoutov et al., 2005).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The authors identified ~70 kinases, 22 phosphatases, and 57 ubiquitin system components as high-scoring CRM1 cargoes in HeLa cells. New cargo kinases include PKA, IRAK1, STK3, TBK1, Raf-1, and casein kinases I/II. Kinase regulators like PKA regulatory subunit (PRKAr2a) and TSC1\u2022TSC2 complex are also CRM1 cargoes. This suggests CRM1 contributes to compartment-specific phosphorylation patterns and regulatory control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C148 are supported by the mass spectrometry data (Supplementary file 3) and validation of specific examples like PRKAr2a (Figures 4-5). The large numbers of regulatory proteins identified (C143, C147-C148) demonstrate broad CRM1 involvement in signaling. The interpretation about compartment-specific regulation (C146) is a reasonable inference from the cargo identities, though direct functional validation of these regulatory roles is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The authors successfully identified NESs in six validated CRM1 cargoes but failed for others (Pex5, rpS3, Haus1, Cop beta', MetAP2, CDC37L, Enp1, Phe tRNA ligase \u03b1). They provide ~1300 'category A cargoes' as a positive test set and ~2200 non-binders as a negative control set for benchmarking NES prediction algorithms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C153 honestly report both successes and failures in NES identification (Figure 5). The provision of large positive (C152) and negative (C153) test sets represents a valuable resource for the field. The failures (C151) highlight current limitations in NES prediction and suggest existence of unrecognized NES patterns. This transparent reporting of limitations strengthens confidence in the overall dataset quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C154"
+    ],
+    "result": "The authors re-tested seven proteins listed in NESdb as CRM1 cargoes but classified as non-binders in their dataset. All seven showed considerable nuclear signal in untreated cells that did not increase upon leptomycin B treatment, confirming their classification as CRM1 non-binders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C154 describes validation experiments (Figure 7\u2014figure supplement 1) that resolve conflicts between this study and prior NESdb annotations. The leptomycin B-insensitive nuclear localization provides clear evidence these proteins are not CRM1 cargoes under the tested conditions. This addresses potential false-negatives in their dataset and demonstrates quality control, though it also highlights that cargo status may be context-dependent (cell type, isoform, conditions).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "The authors conclude that CRM1 cargoes represent ~1/4 of all detectable proteins, with the majority being exclusively cytoplasmic. They argue that perfect nuclear exclusion is impossible due to multiple leakage routes (imperfect NPC barrier, open mitosis in metazoans, NPC assembly, nuclear envelope damage). Therefore, robust compartmentalization requires active corrective mechanisms, with CRM1 playing a central role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C165 synthesize the study's findings into a coherent model. The quantification of cargo numbers (C157-C158) is data-driven. The arguments about leakage routes (C159-C163) appropriately cite supporting literature (Schmidt and G\u00f6rlich 2015; Hatch et al. 2013) and represent established knowledge. The conclusion that active export is necessary (C164-C165) is a logical synthesis supported by the large number of cytoplasmic CRM1 cargoes identified. This represents appropriate interpretation of the data in biological context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors describe CRM1's role in ribosome biogenesis, including export of pre-60S via Nmd3 and pre-40S via Ltv1/Rio2 (established knowledge). They identify yeast Enp1 as a new autonomous CRM1 substrate that may act as another 40S export adapter. Additional ribosomal biogenesis factors (Brx1, Pno1, Tsr1, etc.) and cytoplasmic maturation factors (Drg1, Rei1, Reh1, Lsg1, Ria1) show RanGTP-dependent CRM1 binding. Lsg1 and Rei1 are validated as true cargoes. The authors suggest CRM1 keeps maturation factors cytoplasmic to prevent premature displacement of export mediators and avoid translation-competent ribosomes in nuclei.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C113 combine established knowledge (C101-C103, appropriately cited) with new findings. The identification of Enp1 as a CRM1 substrate (C104, Figure 8) is well-supported, though its proposed role as an export adapter (C105) is speculative. The identification of multiple biogenesis and maturation factors as CRM1 binders (C106-C107) is data-driven (Supplementary file 4). Validation of Lsg1 and Rei1 (C109, Figure 8) strengthens confidence. The mechanistic interpretations (C108, C111, C113) are reasonable but remain speculative without functional validation. The citation of Loibl et al. 2014 (C110) appropriately supports the displacement mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C92"
+    ],
+    "result": "The authors show that translation initiation factors (eIF2, eIF2B, eIF4B, eIF4G, eIF5, eIF5B) behave as high-scoring CRM1 cargoes and show complete nuclear exclusion in Xenopus oocytes. Even very large translation factor complexes (125 kDa eIF2\u03b1\u03b2\u03b3, 270 kDa eIF2B\u03b1\u03b2\u03b3\u03b4\u03b5) are nuclear export substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 are supported by both CRM1 binding data (Supplementary files 2-4) and nucleocytoplasmic partitioning measurements (C90). The observation that even large complexes are CRM1 substrates (C92) is particularly notable and well-documented. This demonstrates that size-based exclusion is insufficient and active export is required even for large assemblies, supporting the study's central thesis about the importance of active sorting mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C170",
+      "C171"
+    ],
+    "result": "The authors deposited mass spectrometry proteomics data to ProteomeXchange/PRIDE (PXD002899) and high-confidence CRM1 interactions to IntAct (IM-24624).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C171 describe appropriate data deposition in public repositories with specific accession numbers. This enables reproducibility and allows other researchers to access and reanalyze the data. The deposition of both raw proteomics data and curated interaction data represents good scientific practice.",
+    "result_type": "MINOR"
+  }
+]

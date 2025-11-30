@@ -1,0 +1,256 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The authors establish the scientific context that transcription is stochastic and that traditional methods of inferring transcription kinetics from mRNA distributions have limitations due to mRNA lifetime integration, multiple gene copies, and cell cycle heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C27 collectively establish well-accepted background knowledge supported by appropriate citations. These claims accurately describe the field's understanding of stochastic transcription and identify genuine limitations in existing methodologies. The logic connecting mRNA lifetime, gene copy number, and cell cycle effects to measurement challenges is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Oct4 and Nanog are key pluripotency genes in mouse embryonic stem cells, with Nanog exhibiting high cell-to-cell variability that may be important for differentiation, though the sources and consequences remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 are well-supported by multiple citations to prior literature. These establish the biological importance of the genes studied and justify the research focus. The acknowledgment of uncertainty (C31) is appropriate and honest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors developed a methodological approach to address limitations in transcription kinetics inference by simultaneously measuring nascent and mature mRNA using dual-color smFISH, which provides better constraint on theoretical models due to the different timescales of nascent (minutes) versus mature (hours) mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C33-C37 describe a sound methodological innovation. The logic that measuring both nascent and mature mRNA improves parameter estimation is supported by Figure 1\u2014figure supplement 1 (C35), which demonstrates reduced parameter space uncertainty. The expected labeling patterns (C36-C37) follow logically from mRNA biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "smFISH labeling of Oct4 and Nanog in mouse ES cells revealed numerous exon-only spots (mature mRNA) and fewer intron-exon colocalized spots (nascent mRNA), with no spots in fibroblast controls. Measured mRNA distributions agree well with literature for Nanog (mean 126\u00b124, CV 0.80\u00b10.05) and for Oct4 CV (0.34\u00b10.01), though Oct4 mean (477\u00b167) is higher than previous reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C48 present experimental validation data. The negative control (C40-C41) is appropriate. Agreement with literature (C44, C48) validates the method. The discrepancy in Oct4 mean (C46) is acknowledged with reasonable speculation (C49). Sample sizes are adequate (>600-700 cells, 3 experiments). The measurements appear technically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In G1 phase cells with two gene copies, Oct4 and Nanog show no significant correlation between nascent mRNA levels at the two alleles (r\u22480.05-0.07, p>0.05), and the distribution of active transcription sites follows a binomial distribution, indicating independent stochastic activity of each gene copy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 provide statistical evidence for allelic independence. The correlation analysis (C50) uses appropriate statistics (Pearson r, p-values). The binomial distribution fit (C51-C52) with \u03c7\u00b2 goodness-of-fit test (p>0.05) is the correct statistical approach. Sample sizes (>200 cells, 3 experiments) are adequate. The inference of independence (C53-C54) is justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Oct4 and Nanog exhibit dosage compensation after gene replication, with nascent mRNA increasing only 1.28\u00b10.09-fold and 1.51\u00b10.15-fold (significantly less than 2-fold) between G1 and G2 phases. This is achieved through increased transcription site numbers without change in nascent mRNA per site. A synthetic reporter (CAG-lacZ) showed no compensation (1.97\u00b10.07-fold increase).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C62 demonstrate dosage compensation with appropriate measurements and controls. The fold-changes are significantly different from 2 based on error bars. The mechanistic insight (C59-C60) that compensation occurs via site number rather than intensity is valuable. The negative control with CAG-lacZ (C61-C62) strengthens the conclusion that compensation is specific to endogenous genes. Sample sizes are adequate (>200 cells per phase, 2-3 experiments).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors developed a stochastic two-state model incorporating cell cycle effects, where genes switch between ON/OFF states (rates kON, kOFF), transcription initiates in the ON state (rate kINI), nascent mRNA has finite residence time \u03c4RES, mature mRNA degrades (rate kD), gene copies double at \u03c4REP with activation rate changing by factor \u03b1 for dosage compensation, and mRNA partition binomially at division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 describe a comprehensive theoretical model. The model appropriately extends standard two-state models to include nascent mRNA dynamics and cell cycle effects. The mathematical formulation appears sound based on the detailed methods section. The inclusion of dosage compensation through kON modulation (C69) is justified by experimental observations. Citations support key assumptions (C65, C70).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Model fitting reveals that Oct4 and Nanog spend comparable time in the active state (34% and 22% respectively) and produce similar burst sizes (110 and 120 mRNA per ON period), but differ significantly in switching rates: Nanog has ~5-fold slower kON (2\u00d710\u207b\u00b3 vs 9\u00d710\u207b\u00b3 min\u207b\u00b9) and slower kOFF (7\u00d710\u207b\u00b3 vs 2\u00d710\u207b\u00b2 min\u207b\u00b9), resulting in longer average OFF duration for Nanog (8.9 hr vs 1.8 hr in G1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C82 present key kinetic parameters from model fitting. The parameter values are internally consistent (e.g., C80-C82 correctly calculate \u03c4OFF=1/kON). The ~5-fold difference in kON is clearly shown in Figure 3D. The model fits the data well (Figure 3C). However, uncertainty estimates and confidence intervals for individual parameters are not prominently displayed, which would strengthen confidence in the specific values. The qualitative conclusions about slower Nanog switching are robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The higher coefficient of variation for Nanog (0.80) compared to Oct4 (0.34) is directly explained by Nanog's lower kON value, demonstrating that Nanog's large heterogeneity does not require more complex kinetics but merely a difference in a single parameter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 provide important mechanistic insight connecting kinetic parameters to observed variability. The relationship between kON and CV is theoretically established (cited Raj et al., 2006). This is a parsimonious explanation that avoids invoking additional complexity. The conclusion is well-supported by the model fitting and theoretical understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Oct4 and Nanog follow similar two-state kinetics, but Nanog exhibits slower ON/OFF switching, resulting in increased cell-to-cell variability in mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 summarize major findings. These are well-supported by the detailed kinetic analysis (C71-C84) and experimental measurements (C42-C48). The causal link between slower switching and increased variability (C10) is supported by both theory (C83) and data. This represents a key biological insight of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Early in the cell cycle, the two copies of Oct4 and Nanog exhibit independent activity, but after gene replication, the probability of each gene copy being active diminishes, resulting in dosage compensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 summarize key cell cycle findings. Independence (C11-C12) is supported by C50-C54. Dosage compensation (C13-C15) is supported by C55-C62 and C85-C88. The causal inference that diminished activation probability causes compensation (C15) is supported by modeling (C69, C88). This is a major finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Following gene replication, Oct4 and Nanog show decreased transcriptional activity per gene copy (0.72-0.76 fold), which equalizes expression along the cell cycle and reduces variability\u2014potentially physiologically significant given Oct4's sensitivity to 2-fold changes. This compensation, similar to recent reports in other mammalian genes, was absent in the synthetic CAG-lacZ reporter, possibly due to viral enhancer resistance to regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C92 integrate dosage compensation findings with broader context. The fold-changes (C88) are consistent with measured values (C55-C56). The functional significance argument (C87) is appropriately cited. Comparison to other systems (C89-C90) provides context. The CAG-lacZ control (C91) is important, though the mechanistic speculation (C92) is appropriately tentative. Overall well-supported with appropriate caveats.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The kinetic parameter that varies most between Oct4 and Nanog is kON (with kOFF and kINI being more similar), and dosage compensation is also consistent with changes in kON. This extends recent findings across multiple systems suggesting that varying expression levels\u2014whether across cell cycle, growth conditions, or transcription factor regulation\u2014is achieved by modulating kON, though the mechanistic basis remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 synthesize findings into a broader principle. The observation about kON variation (C93-C94) is clearly shown in Figure 3D. The connection to dosage compensation (C95) is supported by modeling. The extension to other systems (C96) is appropriately cited. The acknowledgment of mechanistic uncertainty (C97) is honest and appropriate. This represents an important conceptual contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Using the Fried/Baisch cell cycle model fitted to DNA content distributions, the authors estimated cell cycle phase fractions as 43\u00b12% (G1), 29\u00b14% (S), and 28\u00b14% (G2/M) from 6 experiments with >600 cells each.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 describe cell cycle phase determination. The Fried/Baisch model is appropriate for this purpose. Sample sizes are large (>600 cells, 6 experiments). The phase fractions are reasonable for ES cells. Error estimates are provided. The method is adequately described in Materials and Methods. This is a solid technical result supporting the main analyses.",
+    "result_type": "MINOR"
+  }
+]

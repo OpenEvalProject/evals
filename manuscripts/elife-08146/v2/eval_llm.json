@@ -1,0 +1,455 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C34",
+      "C35"
+    ],
+    "result": "The manuscript establishes background knowledge about IGR IRESs from the Dicistroviridae family, describing them as structured RNAs that bind directly to ribosomes, eliminate the need for initiation factors, and initiate translation by co-opting the elongation cycle through two eEF-dependent pseudotranslocation events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent well-established prior knowledge about IGR IRES structure and mechanism, supported by extensive citations throughout the manuscript (C2-C28). The consistency of the mechanism across diverse experimental systems (C24-C26) is documented in the literature and provides the foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Loop 3 in domain III of IGR IRESs is conformationally dynamic, as evidenced by X-ray crystallography, chemical probing, and cryo-EM studies showing weak or discontinuous electron density. The loop shows conservation in length and high adenosine content across viral species, yet lacks the stable tertiary contacts typical of H-type pseudoknot loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conformational dynamics of loop 3 are well-supported by multiple structural approaches (C29-C33) shown in Figure 1C-E, chemical probing data (C30), and sequence conservation analysis (C36) in Figure 1 supplements. The observation that loop 3 lacks typical pseudoknot tertiary contacts (C37-C38) despite high adenosine content is a valid structural characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Both the length and sequence of loop 3 are essential for translation activity across diverse IGR IRESs from both Class I and Class II viruses. Shortening loop 3 by three nucleotides or replacing adenosines with guanosines substantially reduces IRES translation activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The translation assays in Figure 2 clearly demonstrate that mutations to loop 3 length (\u03943) and sequence (G-rich, GGC) substantially reduce IRES activity across multiple viral IRESs from both classes (C45-C47). The data show consistent effects across diverse viruses (C48), with appropriate controls including mRNA stability measurements (Figure 2 supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Loop 3 mutations do not affect initial 80S ribosome binding to the IRES. All loop 3 mutants robustly assemble 80S complexes in RRL and show similar on- and off-rates to wild-type IRES when measured with purified ribosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sucrose gradient data (Figure 3 supplement 1A) and filter binding kinetics (Figure 3 supplement 1B) demonstrate that loop 3 mutations do not impair initial ribosome binding (C52-C54). While there is some variability in 80S complex amounts, these do not correlate with translation activity (C53), supporting the conclusion that loop 3 functions downstream of initial ribosome recruitment (C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Loop 3 length mutants are correctly positioned in the ribosome decoding groove but show progressively impaired pseudotranslocation. The \u03943 mutant completely lacks the +20/21 toeprint indicating two rounds of translocation, while \u03942 shows decreased translocation, correlating with their translation activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The toeprinting data in Figure 3A clearly show that length mutants bind correctly (+14/15 toeprint with yeast ribosomes, C59-C60) but fail to pseudotranslocate in RRL in a length-dependent manner (C61-C64). The quantification in Figure 3B demonstrates strong correlation between pseudotranslocation efficiency and translation activity (C65). The use of yeast ribosomes as a control for proper positioning is well-justified (C56).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Loop 3 sequence mutants (G-rich and GGC) are properly positioned in the ribosome and can generate the +20/21 toeprint in RRL with cycloheximide, indicating they can undergo two rounds of pseudotranslocation. However, in hygromycin B, length mutants show decreased ability to execute the first pseudotranslocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The toeprinting data in Figures 3A and 4A demonstrate that sequence mutants behave differently from length mutants (C66-C68). The hygromycin B experiments (C69-C70) provide additional evidence that loop 3 affects the first pseudotranslocation event. The conclusion that loop 3 affects multiple pseudotranslocation steps (C71) is well-supported by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "When hygromycin B is added after IRES addition to RRL, wild-type and \u03941 IRESs show 4-5 rounds of translocation, while \u03942 and \u03943 do not proceed past initial binding. Sequence mutants (G-rich and GGC) show translocation patterns similar to wild-type but with less intense early bands, indicating loop 3 has two independent roles in translation initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The toeprinting data in Figure 4B clearly demonstrate differential effects of length versus sequence mutations (C72-C75). The observation that sequence mutants can translocate multiple times but still show reduced translation activity (C76) is well-documented. The conclusion that loop 3 has two independent roles (C78) is a logical inference from the distinct phenotypes of length versus sequence mutants (C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Loop 3 sequence mutants (G-rich and GGC) do not induce out-of-frame translation initiation, as neither +1 nor +2 reading frame constructs rescue IRES activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reading frame assay in Figure 3C clearly shows that alternate reading frames do not rescue activity of sequence mutants (C79), ruling out frameshifting as the mechanism of reduced activity (C80). This is an important control that strengthens the mechanistic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Loop 3 sequence mutants (G-rich and GGC) show substantially decreased rates of tetrapeptide formation compared to wild-type, indicating defects in elongation steps at or before tetrapeptide synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The tetrapeptide formation kinetics in Figure 5A clearly demonstrate reduced rates for sequence mutants (C81). The interpretation that this reflects defects in early elongation steps (C82) is reasonable given the assay design, though the exact step affected requires additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Loop 3 mutations decrease stable P-site ac-tRNA association with IRES-80S complexes. Length mutants (\u03941, \u03942, \u03943) show progressive decreases in P-site tRNA binding, and sequence mutants (G-rich, GGC) also show reduced P-site association correlating with their translation activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The P-site tRNA binding assay (Figure 5B) is well-controlled, with appropriate validation that the assay measures P-site binding (C83-C85, Figure 5 supplement 2) and measures completion of all three eEF-dependent steps (C86). The progressive decrease in P-site binding for length mutants (C88) and reduced binding for sequence mutants (C89) correlate well with translation activities, supporting the conclusion (C90).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Fluorescence anisotropy measurements show that loop 3 length mutants have progressively decreased A-site ac-tRNA binding in the absence of eEF2. The \u03943 mutant shows lower anisotropy than even a non-cognate codon control, indicating severe defects in initial ac-tRNA association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The anisotropy experiments (Figure 5C) are well-controlled with appropriate negative controls (no IRES, non-cognate codon) and show clear progressive decreases for length mutants (C97). The interpretation that this reflects defects in A-site tRNA binding (C98) is supported by the data. The observation that eEF2-independent binding requires a cognate codon (C95) supports spontaneous movement of domain III (C96), though this inference is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "By normalizing P-site to A-site tRNA binding levels, approximately 80% of A-site tRNAs successfully translocate to the P site for \u03941, while only ~25% do so for \u03942. This indicates length mutants have defects in both pseudotranslocation events that worsen as loop 3 is shortened.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The translocation efficiency analysis (Figure 5D) provides a quantitative assessment of the two pseudotranslocation steps by comparing A-site and P-site binding (C99-C100). The interpretation that both pseudotranslocation events are affected (C101) is a reasonable inference from combining the two datasets, though the calculation method assumes certain mechanistic features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Loop 3 sequence mutants (G-rich and GGC) show A-site ac-tRNA binding similar to wild-type but reduced P-site binding, indicating their defect is restricted to the second pseudotranslocation event that moves ac-tRNA from A to P site. This demonstrates loop 3 has two independent functions depending on length and sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential behavior of sequence mutants in A-site (Figure 5C, C102) versus P-site (Figure 5B, C89) binding assays clearly demonstrates a specific defect in the second pseudotranslocation (C103). The conclusion that loop 3 has two independent functions (C104) is well-supported by the distinct phenotypes of length versus sequence mutations across multiple assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Single-molecule colocalization experiments show that eEF2-dependent but eEF1A-independent ac-tRNA occupancy is higher for wild-type (9.7%) than \u03943 (1.5%) IRES complexes, suggesting the \u03943 mutant's main defect is in the first pseudotranslocation rather than A-site binding itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The single-molecule data (Figure 6) provide direct visualization of tRNA occupancy under different conditions (C105-C106). The interpretation that differences between WT and \u03943 reflect defects in clearing the A site rather than eEF1A function (C107-C108) is reasonable, though the distinction between these possibilities is subtle and relies on comparing equilibrium (anisotropy) versus stable binding (single-molecule) measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "When ternary complex is delivered without eEF2, both wild-type and \u03943 IRESs show similar ac-tRNA occupancies (~18-21%). The apparent discrepancy with anisotropy data is explained by anisotropy detecting transient interactions under equilibrium while single-molecule fluorescence detects only stable long-lived associations after washing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The single-molecule data (C109) combined with the methodological explanation (C110) provide a reasonable reconciliation of apparently conflicting results. The conclusion that eEF2-independent ac-tRNA association to WT is transient and inhibited by \u03943 (C111) integrates both datasets appropriately, though the interpretation requires accepting the methodological differences between assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "When both eEF2 and ternary complex are present, ac-tRNA occupancy increases dramatically for wild-type (82.8%) but not for \u03943 (26.6%), demonstrating that the \u03943 mutation inhibits the IRES-ribosome complex from using eEF2 to facilitate stable ac-tRNA delivery. Overall, loop 3 is important for eEF2's ability to catalyze both pseudotranslocations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The single-molecule data (Figure 6) clearly show the dramatic difference between WT and \u03943 when both factors are present (C112-C113). The interpretation that \u03943 inhibits eEF2-facilitated tRNA delivery (C114) is well-supported. The overall conclusion about loop 3's role in both pseudotranslocations (C115) integrates data from multiple assays appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "There are discrepancies between RRL and reconstituted systems: sequence mutants show at least two rounds of translocation in RRL but fail before two rounds in reconstituted assays. This likely reflects differences in component concentrations or antibiotic effects rather than ribosome species differences, but clearly identifies loop 3 as important in multiple pseudotranslocation rounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge discrepancies between experimental systems (C116-C117) and provide reasonable explanations (C118-C120). The speculation about concentration differences and antibiotic effects (C119-C120) is plausible. The conclusion that loop 3 is important in multiple translocation rounds (C121) is supported despite the system-dependent differences, and the acknowledgment of these limitations strengthens rather than weakens the overall conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C122",
+      "C123"
+    ],
+    "result": "The study demonstrates that conformationally dynamic loop 3 operates within the structured IRES RNA to influence elongation factor activity, controlling two independent non-canonical translocation events. This supports the model that structured regions provide IRES architecture while dynamic regions drive the IRES through the ribosome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are the primary conclusions of the study (C40-C41, C122), well-supported by the comprehensive set of experiments showing loop 3's dual roles in both pseudotranslocation events. The broader conclusion about structured versus dynamic regions (C123) builds appropriately on both current and previous work (Pfingsten et al., 2010).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors propose a hypothesis that loop 3 affects ribosome conformations to assist in non-canonical translocation, since loop 3 is unlikely to interact directly with elongation factors and translocation depends on ribosome conformational dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly presented as a hypothesis (C44) based on inference (C42) and established knowledge about translocation (C43). While the hypothesis is reasonable given the data, it remains speculative and would require additional structural and biophysical experiments to test directly. The authors appropriately present this as a suggested mechanism rather than a demonstrated result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The current mechanistic model places domain III initially in the A site, requiring eEF2-catalyzed pseudotranslocation to clear the A site before ac-tRNA binding. The model includes transient reverse-translocation, validated by hygromycin B experiments. The authors' data support this model and demonstrate loop 3's involvement in these non-canonical pseudotranslocation events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic model (C129-C134) is based on recent structural and biochemical studies and is supported by the hygromycin B data in Figure 4A (C135-C136). The authors' data (C128, C131) are consistent with this model. The speculation about why transient states are not detected (C137-C138) is reasonable. The statement that the model agrees with all published data (C139) may be somewhat strong but is generally supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Based on structural positioning near ribosomal protein uS13 and the data showing length mutants fail to execute the first pseudotranslocation, the authors propose that loop 3 length mutants block A-site access by failing to move domain III from the A to P site. The \u03943 mutant shows even lower anisotropy than non-cognate RNA, suggesting domain III remains in the A site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic interpretation (C140-C141) is based on structural information and the experimental data. The detailed analysis of anisotropy data with non-cognate controls (C142-C143) supports the interpretation that \u03943 prevents even transient TC binding (C144). The conclusion that loop 3 is key for translocation through all three sites (C145) integrates the data appropriately, though some aspects remain inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Loop 3 has no obvious tRNA analog, raising questions about its mechanism. Cryo-EM structures show loop 3 in different positions in Class I versus Class II IRESs, potentially interacting with the decoding groove, rRNA helix 24 (a P/E site constriction), or ribosomal protein uS7 (a translocation regulator also targeted by HCV IRES).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural observations from cryo-EM (C148-C153, C157) are well-documented in cited studies and Figure 1C-E. The speculation about functional implications (C156) is reasonable given the known roles of these ribosomal elements (C154-C155, C158). The connection to HCV IRES and uS7 (C159-C160) provides interesting context, though the functional significance remains to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Despite high adenosine content (>40% in most IGR IRES loop 3s), no minor groove interactions are observed in domain III. Mutations reducing adenosine content decrease activity. Loop 3 may undergo transient interactions with domain III or may need to remain unstructured; structural probing shows decreased accessibility in mutants, potentially indicating reduced flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The sequence analysis (C163) and activity data (C164) are solid, but the mechanistic interpretations are speculative (C165, C167-C168, C171). The structural probing data (C169, Figure 4 supplement 1) show changes in RNase accessibility, but the authors appropriately acknowledge uncertainty about the relevance of these changes within the ribosome (C170). Multiple possible mechanisms are proposed but not distinguished experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "The findings suggest that viral molecular mimicry extends beyond structural similarity to include conformational dynamics. The flexible elements of IGR IRES facilitate aspects of mimicry that remain understudied. This is particularly relevant given that the ribosome acts as a Brownian machine responsive to ligand dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The broader implications about molecular mimicry (C172-C175) are reasonable extensions of the findings, supported by citations about tRNA mimicry in other viruses (C173). The connection to the ribosome as a Brownian machine (C176-C177) provides appropriate theoretical context for why RNA flexibility would be functionally important, though this remains somewhat speculative as a general principle.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C7",
+      "C104",
+      "C78"
+    ],
+    "result": "The central finding is that loop 3 affects two discrete elongation factor-dependent steps in the IRES initiation mechanism, with length controlling the first pseudotranslocation and sequence controlling the second, representing two independent functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the core result of the paper, supported by the differential phenotypes of length versus sequence mutants across multiple complementary assays (toeprinting, peptide synthesis, tRNA binding, single-molecule). The conclusion of two independent functions (C78, C104) is well-justified by the data showing that length and sequence mutations affect different steps (C7).",
+    "result_type": "MAJOR"
+  }
+]

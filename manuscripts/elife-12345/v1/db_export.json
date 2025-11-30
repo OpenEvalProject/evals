@@ -1,0 +1,2082 @@
+{
+  "submission": {
+    "id": "9eb3fd94-e3fc-4e11-aacc-6b6d544647b0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:29:00.700533Z",
+    "updated_at": "2025-11-29T22:29:00.700533Z"
+  },
+  "content": [
+    {
+      "id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "submission_id": "9eb3fd94-e3fc-4e11-aacc-6b6d544647b0",
+      "content_type": "manuscript",
+      "content_text": "# A chemical proteomic atlas of brain serine hydrolases identifies cell type-specific pathways regulating neuroinflammation\n\n## Authors\n\n- Andreu Viader<sup>1</sup> \u2020\n- Daisuke Ogasawara<sup>1</sup>\n- Christopher M Joslyn<sup>1</sup>\n- Manuel Sanchez-Alavez<sup>1</sup>\n- Simone Mori<sup>1</sup>\n- William Nguyen<sup>1</sup>\n- Bruno Conti<sup>1</sup>\n- Benjamin F Cravatt<sup>1</sup> \u2020\n\n### Affiliations\n\n1. The Skaggs Institute for Chemical Biology The Scripps Research Institute La Jolla United States\n2. Department of Chemical Physiology The Scripps Research Institute La Jolla United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMetabolic specialization among major brain cell types is central to nervous system function and determined in large part by the cellular distribution of enzymes. Serine hydrolases are a diverse enzyme class that plays fundamental roles in CNS metabolism and signaling. Here, we perform an activity-based proteomic analysis of primary mouse neurons, astrocytes, and microglia to furnish a global portrait of the cellular anatomy of serine hydrolases in the brain. We uncover compelling evidence for the cellular compartmentalization of key chemical transmission pathways, including the functional segregation of endocannabinoid (eCB) biosynthetic enzymes diacylglycerol lipase-alpha (DAGL\u03b1) and \u2013beta (DAGL\u03b2) to neurons and microglia, respectively. Disruption of DAGL\u03b2 perturbed eCB-eicosanoid crosstalk specifically in microglia and suppressed neuroinflammatory events in vivo independently of broader effects on eCB content. Mapping the cellular distribution of metabolic enzymes thus identifies pathways for regulating specialized inflammatory responses in the brain while avoiding global alterations in CNS function.\n\n## Introduction\n\nThe brain is a highly heterogeneous organ composed of diverse cell types with distinct structures, molecular compositions, and complementary functions (Zhang et al., 2014). Major brain cell classes include neurons, which are the principal cells responsible for directing and transmitting information in the nervous system in the form of chemical and electrical signals, and glia, which are often referred to as support cells, but are now recognized to play critical roles in regulating neurotransmission, synaptic activity, and higher-order neurophysiological, behavioral, and disease processes (Barres, 2008, Gundersen et al., 2015). Understanding the biochemical pathways that furnish neurons and glia with different properties and functions requires knowledge of the content, activity, and regulation of proteins within these cells.\n\nGlobal gene expression studies have provided valuable insights into the molecular composition of different brain cell types (Cahoy et al., 2008, Doyle et al., 2008, Beutner et al., 2013, Chiu et al., 2013, Zhang et al., 2014). In particular, a recent study using deep RNA sequencing generated a quantitative, high-resolution map of transcript abundances for major mouse brain cell types, including neurons, astrocytes, and microglia, among others (Zhang et al., 2014). Thousands of cell type-enriched transcripts and splicing isoforms were identified, underscoring the unique molecular composition of different brain cell classes (Zhang et al., 2014). How these transcriptional signatures relate to the protein content of brain cell types, however, remains mostly unknown.\n\nSeveral proteomic studies have been performed on isolated brain cells, in particular,\u00a0neurons and astrocytes, using approaches that include two-dimensional gel electrophoresis and shotgun liquid chromatography-mass spectrometry (LC-MS) (Yu et al., 2004, Yang et al., 2005, Glanzer et al., 2007, Liao et al., 2008, Bell-Temin et al., 2012). Many proteins, however, are regulated in their function by post-translational mechanisms (Kobe and Kemp, 1999) that are difficult to discern with conventional expression-based proteomic methods. Activity-based protein profiling (ABPP) is a chemical proteomic method that uses active site-directed chemical probes to selectively target subsets of proteins in the proteome based on shared mechanistic and/or structural features (Cravatt et al., 2008). Because ABPP probes modify protein targets based on conserved functional features, these reagents can detect, enrich, and identify many members of a class of proteins and illuminate changes in protein activity that are not reflected in transcript or protein abundance (Jessani et al., 2004). ABPP has been used to map deregulated enzyme activities in a variety of physiological and pathological processes, including cancer (Jessani et al., 2004, Nomura et al., 2010, Kohnz et al., 2015), metabolic disorders (Dominguez et al., 2014), and infectious diseases (Greenbaum et al., 2002, Bottcher and Sieber, 2008, Heal and Tate, 2012, Nasheri et al., 2013).\n\nAmong the classes of proteins that have been addressed by ABPP, the serine hydrolases are a particularly large and diverse enzyme family that plays many key roles in the nervous system (Simon and Cravatt, 2010, Long and Cravatt, 2011). Serine hydrolases regulate proteolysis at the synapse to modulate neuronal plasticity (Melchor and Strickland, 2005), the post-translational modification state of key brain signaling proteins (Sontag et al., 2007, Siegel et al., 2009), and, perhaps most notably, the metabolism of a wide range of chemical messengers, including neurotransmitters (e.g., acetylcholine [Phillis, 2005], neuropeptides (e.g., \u03b1-melanocyte-stimulating hormone [Wallingford et al., 2009]), and lipid messengers (e.g., endocannabinoids; eCBs [Blankman and Cravatt, 2013]).\n\nHere we use ABPP combined with shotgun LC-MS (Washburn et al., 2001) to generate an in-depth portrait of serine hydrolase activities across three major mouse brain cell types\u2014neurons, astrocytes, and microglia. We show that the output of this functional proteomic analysis correlates well with published RNA-seq data (Zhang et al., 2014), although there are clear exceptions of enzymes where transcript and activity are un- and even anti-correlated. We also uncover strong evidence for the compartmentalization of functionally related serine hydrolases into distinct cell types, suggesting that their respective activities are anatomically segregated in the brain. A principal example was the selective enrichment of different sets of eCB biosynthetic and degradative enzymes in neurons versus microglia. We show that these activity patterns have functional relevance and mark pathways that regulate immunomodulatory eCB/eicosanoid signals without globally perturbing brain eCB content.\n\n## Results\n\n### Serine hydrolase activity profiles of mouse brain cell types\n\nWe globally assessed serine hydrolase activities in cultured mouse neurons, astrocytes, and microglia by treating proteomes from these cells with serine hydrolase-directed fluorophosphonate (FP) probes (Figure 1A) (Simon and Cravatt, 2010). Treatment with a rhodamine-coupled FP probe (Patricelli et al., 2001) followed by SDS-PAGE and in-gel fluorescence scanning revealed that the brain cell types express overlapping, but distinct sets of serine hydrolase activities (Figure 1B). We then identified these serine hydrolases by treating brain cell proteomes with a biotin-coupled FP probe (Liu et al., 1999), followed by enrichment with avidin chromatography, and multidimensional LC-MS (MudPIT) analysis (Figure 1A) (Washburn et al., 2001, Jessani et al., 2005), which detected, in total, over 70 serine hydrolase activities across neuron, astrocyte, and microglia proteomes (Figure 1\u2014source data 1). We assessed the relative amount of each serine hydrolase activity across brain cell types by the semi-quantitative method of spectral counting (Jessani et al., 2005, Nahnsen et al., 2013). We found that the serine hydrolase activity profiles measured by ABPP-MudPIT showed excellent reproducibility across the four biological replicates performed for each cell type, with high correlations for replicates from the same cell type (Pearson\u2019s correlation, mean r = 0.91 \u00b1 0.01) and much lower correlations for serine hydrolase activity profiles across differing cell types (Pearson\u2019s correlation, mean r = 0.62 \u00b1 0.02) (Figure 1\u2014figure supplement 1A). Microglia and astrocytes displayed the highest pairwise correlation across the brain cell types examined, suggesting greater similarity of serine hydrolase metabolic activities among glia than between neurons and glia (Figure 1\u2014figure supplement 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/12345/elife-12345-fig1-v1.jpg)\n\n**Figure 1.:** (A) Cartoon scheme of gel- and MS-based activity-based protein profiling (ABPP) methods used to measure serine hydrolase activities in primary mouse neurons, astrocytes, and microglia. For gel-based ABPP, a fluorophosphonate (FP) reactive group conjugated to a rhodamine reporter tag (red oval; FP-Rh) is used (Patricelli et al., 2001). For MS-based ABPP (ABPP-MudPIT), an FP reactive group conjugated to a biotin reporter tag (purple diamond; FP-biotin) is used (Liu et al., 1999).\u00a0(B) Gel-based ABPP of membrane proteomes from different brain cell types.\u00a0(C) Hierarchically clustered heatmap of ABPP-MudPIT data (left) for serine hydrolases detected in neurons (N), astrocytes (A) and microglia (M). Data represent the mean spectral count values for each serine hydrolase (from four independent experiments) expressed as\u00a0% of cell type with maximum number of spectral counts (right heatmap shows the maximum spectral counts among\u00a0cell types\u00a0for each serine hydrolase).\u00a0(D) Relationship between serine hydrolase activities, as measured by ABPP-MudPIT, and previously reported mRNA expression for these enzymes, as measured by RNA-Seq (Zhang et al., 2014), in neurons, astrocytes, and microglia. Serine hydrolases showing \u2265 three-fold enrichment in activity in a specific cell type as measured by ABPP-MudPIT are shown as filled colored circles and a Pearson\u2019s correlation reported for the aggregate correlation between their ABPP and RNAseq profiles (r = 0.54; p < 0.01).\u00a0(E) Examples of serine hydrolases where activity and mRNA expression measurements were uncorrelated (ABHD16A, HTRA1) or anti-correlated (MGLL).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12345/elife-12345-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Heat map of Pearson\u2019s correlation between spectral count values for serine hydrolases in biologically independent replicates of ABPP-MudPIT experiments performed on mouse primary neurons, astrocytes, and microglia. Each replicate consists of cells derived from 5-10 pooled brains.\u00a0(B) Cell type enriched serine hydrolases displaying at least two-fold greater number of spectral counts in one cell type compared to the other two. Average spectral counts for neurons, astrocytes, and microglia, as well as fold-enrichment are reported from left to right in the table.\u00a0(C) Relationship between fold-enrichment and average activity measurements for serine hydrolases in specific cell types. Fold-enrichment values were defined as spectral counts for a serine hydrolase in a given cell type divided by the average spectral count number for that serine hydrolase in all three cell types. Average activity measurements correspond to the mean spectral count for each serine hydrolase within a given cell type (from four replicates). Enzymes that did not meet a two-fold enrichment cutoff for cell type-specific expression are shown in grey.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12345/elife-12345-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Gel-based ABPP analysis of membrane proteomes from different brain cell types using a DAGL-directed probe (HT01) (Hsu et al., 2012) shows enriched DAGL\u03b2 activity in microglia.\u00a0(B) 2-AG hydrolytic activities of neuron, astrocyte, and microglia membrane proteomes derived from Abhd12+/+ and Abhd12\u2013/\u2013 mice basally or following pre-treatment with the MGLL inhibitor KML29 (250 nM, 1 hr). While MGLL was found to be the major 2-AG hydrolase in all three brain cell types, the proportion of ABHD12-dependent 2-AG hydrolysis was greater in astrocytes and, in particular, microglia compared to neurons. Data represent average values \u00b1 SEM; N = 5 per cell type, genotype, and treatment. *p < 0.05 and **p < 0.01 for Abhd12\u2013/\u2013 groups vs corresponding Abhd12+/+ groups.\n\nUnsupervised hierarchical clustering of the ABPP-MudPIT data highlighted distinct groups of serine hydrolases that were enriched in specific brain cell types (Figure 1C; Figure 1\u2014figure supplement 1B). These enrichment profiles included some enzymes with established neuronal expression, such as acetylcholine esterase (ACHE) (Hicks et al., 2011) and fatty acid amide hydrolase (FAAH) (Egertova et al., 1998, Tsou et al., 1998), which catalyze the hydrolysis of the neurotransmitter acetylcholine and eCB anandamide, respectively (Figure 1C; Figure 1\u2014figure supplement 1B), as well as many less well characterized enzymes with strong preferential activity in astrocytes (e.g., ABHD2, ABHD16A) and microglia (e.g. DAGL\u03b2, AOAH) (Figure 1C; Figure 1\u2014figure supplement 1B). Brain cell type-enriched serine hydrolases spanned a wide range of spectral count values (Figure 1\u2014figure supplement 1C), indicating that restricted cellular distribution was not correlated with the abundance of detected enzyme activities.\n\nComparison of our ABPP data with recently reported mRNA expression results generated by RNA-seq (Zhang et al., 2014) revealed a good overall correlation across mouse brain cell types (Pearson\u2019s correlation r = 0.33, ****p < 0.0001), particularly for those serine hydrolases displaying prominent cell type-specific enrichment (Pearson\u2019s correlation r = 0.54, **p < 0.01; Figure 1D). We also observed, however, a few notable exceptions of enzymes where transcript and activity were poorly correlated, including enzymes that showed i) near-equivalent RNA-seq signals across all three brain cell types, but predominant activity signals in one cell type (e.g., ABHD16A); ii) strong RNA-seq and activity signals in distinct cell types (e.g., HTRA1), and iii) strong RNA-seq and activity signals that were anti-correlated across all three cell types (e.g. MGLL) (Figure 1E).\n\nThese data, taken together, demonstrate that ABPP furnishes an in-depth portrait of serine hydrolase activities across neurons, astrocytes, and microglia that complements and bolsters the information afforded by expression-based analytical platforms (e.g. RNA-seq) and illuminates candidate enzymes that contribute to the metabolic specialization of major brain cell types.\n\n### Microglia express a distinct complement of 2-AG metabolic enzymes\n\nProminent among serine hydrolases displaying strong brain cell-enriched profiles were multiple biosynthetic and degradative enzymes of the eCB 2-arachidonoyl glycerol (2-AG) (Mechoulam et al., 1995, Sugiura et al., 1995). This arachidonic acid (AA)-derived retrograde lipid messenger broadly modulates synaptic function, neurophysiology, and behavior (Fowler et al., 2005, Pacher et al., 2006, Kano et al., 2009) by binding to G protein-coupled cannabinoid receptors CB1 (CB1R) and CB2 (CB2R), which are also targets of the primary psychoactive component of marijuana \u03949-tetrahydrocannabinol (Mechoulam and Hanus, 2000). Enzymatic hydrolysis of 2-AG also serves as a major source of AA for the synthesis of brain eicosanoids that regulate neuroinflammatory processes (Nomura et al., 2011, Chen et al., 2012, Piro et al., 2012). Previous studies have demonstrated that diacylglycerol lipase-\u03b1 (DAGL\u03b1) (Bisogno et al., 2003) and monoacylglycerol lipase (MGLL) (Karlsson et al., 1997) are the principal 2-AG biosynthetic and degradative enzymes, respectively, in the brain (Long et al., 2009, Chanda et al., 2010, Gao et al., 2010, Schlosburg et al., 2010, Tanimura et al., 2010). Our ABPP data revealed that both of these enzymes are preferentially expressed in neurons compared to astrocytes or microglia (Figure 1C). On the other hand, microglia expressed high levels of the alternative 2-AG biosynthetic and degradative enzymes DAGL\u03b2 (Bisogno et al., 2003) and ABHD12 (Blankman et al., 2007), respectively (Figures 1C). Previous RNA-seq measurements also supported the enriched expression of DAGL\u03b2 and ABHD12 in microglia compared to neurons or astrocytes (Zhang et al., 2014). We verified strong DAGL\u03b2 activity in microglia using the tailored activity-based probe HT-01 (Hsu et al., 2012) (Figure 1\u2014figure supplement 2A) and confirmed that ABHD12 substantially contributed to 2-AG hydrolysis in microglia (and astrocytes), but not neurons using cells isolated from Abhd12\u2013/\u2013 mice (Blankman et al., 2013) (Figure 1\u2014figure supplement 2B).\n\nThese data pointed to a potential anatomical demarcation of enzyme function within the eCB system where individual brain cell types would use distinct sets of enzymes to control 2-AG metabolism and signaling, including crosstalk with other lipid networks. We next set out to test this premise by evaluating the contributions of ABHD12 and DAGL\u03b2 to regulating 2-AG metabolism in microglia.\n\n### ABHD12 functions as a 2-AG hydrolase in microglia\n\nABHD12 exhibits 2-AG hydrolase activity in vitro (Blankman et al., 2007, Navia-Paldanius et al., 2012), but Abhd12\u2013/\u2013 mice have normal brain 2-AG content (Blankman et al., 2013), and therefore the potential physiological relevance of ABHD12 as a regulator of 2-AG metabolism remains unclear. Having found that microglia from Abhd12\u2013/\u2013 mice show ~40% reductions in 2-AG hydrolytic activity (Figure 1\u2014figure supplement 2B), we next examined 2-AG content in these cells. Abhd12\u2013/\u2013 microglia displayed a modest, but significant increase in cellular 2-AG compared to Abhd12+/+ microglia (Figure 2A); in contrast, 2-AG content in Abhd12\u2013/\u2013 neurons and astrocytes was unaltered and instead elevated in Mgll\u2013/\u2013 neurons and astrocytes (Figure 2A). Mgll\u2013/\u2013 microglia also showed a strong elevation in cellular 2-AG that was much greater in magnitude compared to that observed in Abhd12\u2013/\u2013 microglia (Figure 2A). Notably, however, secreted 2-AG content was much higher from Abhd12\u2013/\u2013 microglia and unaltered from Mgll\u2013/\u2013 microglia compared to wild type microglia (Figure 2B). These data suggested that ABHD12 primarily regulates extracellular pools of 2-AG in microglia (Figure 2B), which is consistent with the enzyme\u2019s luminal/extracellular orientation (Blankman et al., 2007). Secreted 2-AG was unaltered in Abhd12\u2013/\u2013 neurons and astrocytes (but elevated in Mgll\u2013/\u2013 neurons) (Figure 2B), indicating that ABHD12 specifically regulates extracellular 2-AG content in microglia. Consistent with this extracellular pool of 2-AG being competent for signaling, we observed tonically increased CBR-dependent ERK1/2 phosphorylation in Abhd12\u2013/\u2013 microglia (Figure 2C and D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/12345/elife-12345-fig2-v1.jpg)\n\n**Figure 2.:** (A,B) Intracellular (A) and secreted (B) 2-AG content in cultured wild type, Abhd12\u2013/\u2013 and Mgll\u2013/\u2013 neurons, astrocytes, and microglia. Data represent average values \u00b1 SEM; N = 4-6 per genotype. **p < 0.01 for Abhd12\u2013/\u2013 or Mgll\u2013/\u2013 cells vs corresponding wild-type cells.\u00a0(C,D) Immunoblot (C) and quantification of band density (D) for Erk1/2 phosphorylation, which increases upon 2-AG-mediated activation of CBRs (Walter et al., 2003), in wild-type and Abhd12\u2013/\u2013 microglia. Abhd12\u2013/\u2013 microglia display hyperphosphorylation of Erk1/2 (lanes 1-4), which can be partially mimicked in Abhd12+/+ cells by addition of exogenous 2-AG (1 \u03bcM, 15 min; lanes 9\u201312) and fully blocked by pre-treatment with CBR1 and CBR2 antagonists (rimonabant and AM630, respectively) (5 \u00b5M each, 1 hr pre-treatment; lanes 5-8 and 13-16). N\u00a0=\u00a04 per genotype and treatment. Immunoblot shows two representative replicate experiments for each group. Data represent average values \u00b1 SEM; N = 4 per genotype and treatment; *p < 0.05 and **p < 0.01 for vehicle-treated Abhd12\u2013/\u2013 group and 2-AG-treated Abhd12+/+ group vs vehicle-treated Abhd12+/+ group; #p < 0.05 for CBR antagonist-treated Abhd12\u2013/\u2013 group vs vehicle-treated Abhd12\u2013/\u2013 group; &p < 0.05 and &&p < 0.01 for 2-AG-treated Abhd12\u2013/\u2013 or 2-AG/CBR antagonist-treated Abhd12+/+ groups vs 2-AG-treated Abhd12+/+ group; ^p < 0.05 for 2-AG/CBR antagonist-treated Abhd12\u2013/\u2013 group vs 2-AG-treated Abhd12\u2013/\u2013 group.\u00a0(E,G) 2-AG, AA, and PGE2/D2 content basally and following exposure to the pro-inflammatory agent LPS (100 ng/mL for 4 hr) in Abhd12\u2013/\u2013 and Abhd12+/+ microglia (E) or in wild-type microglia pre-treated with the MGLL inhibitor KML29 (250 nM, 3 hr prior to LPS; G). Data represent average values \u00b1 SEM; N = 5 per genotype and treatment. *p < 0.05 and **p < 0.01 for vehicle-treated Abhd12\u2013/\u2013 microglia and LPS-treated Abhd12+/+ microglia groups (E) or KML29-treated wild-type microglia and LPS-treated wild type microglia groups (G) vs vehicle-treated Abhd12+/+ microglia or vehicle-treated wild-type microglia groups, respectively; #p < 0.05 and ##p < 0.01 for LPS-treated Abhd12\u2013/\u2013 microglia (E) or KML29-treated, LPS-treated wild-type microglia (G) groups vs vehicle-treated Abhd12+/+ microglia or KML29-treated wild-type microglia groups, respectively; &&p < 0.01 for KML29-treated, LPS-treated wild-type microglia group vs LPS-treated wild-type microglia group.\u00a0(F,H) Cytokine production basally and following exposure to LPS (100 ng/mL for 4 hr) as measured by ELISA in Abhd12\u2013/\u2013 and Abhd12+/+ microglia (F) or in wild-type microglia pre-treated with KML29 (250 nM, 3 hr prior to LPS; H). Data represent average values \u00b1 SEM; N = 5 per genotype and treatment; **p < 0.01 for LPS-treated Abhd12+/+ microglia (F) or LPS-treated wild-type microglia (H) groups vs vehicle-treated Abhd12+/+ microglia or vehicle-treated wild-type microglia groups, respectively; ##p < 0.01 for LPS-treated Abhd12\u2013/\u2013 microglia (F) or KML29-treated, LPS-treated wild-type microglia (G) groups vs vehicle-treated Abhd12\u2013/\u2013 or KML29-treated wild-type microglia groups, respectively; &&p < 0.01 for KML29-treated, LPS-treated wild-type microglia group vs LPS-treated wild-type microglia group.\n\nWe next evaluated whether ABHD12-mediated 2-AG hydrolysis provided an AA source for prostaglandin production in microglia. We found that Abhd12+/+ and Abhd12\u2013/\u2013 microglia exhibited similar concentrations of prostaglandins, either basally or after stimulation with bacteria-derived lipopolysaccharide (LPS; 100 ng/mL, 4 hr) (Figure 2E) and did not show differences in LPS-induced cytokine production (Figure 2F). In contrast, treatment of microglia with the MGLL inhibitor KML29 (Chang et al., 2012) significantly lowered basal and LPS-induced prostaglandins (Figure 2G), as well as LPS-induced cytokine production (Figure 2H). These data are consistent with recent reports showing that MGLL-inactivated microglia are impaired in LPS-induced prostaglandin production and inflammatory responses (Pihlaja et al., 2015, Viader et al., 2015).\n\nOur results thus indicate that ABHD12 is a major regulator of secreted 2-AG and CBR activation in microglia, while MGLL is the primary intracellular 2-AG hydrolase in these cells. Considering that the prostaglandin biosynthetic enzymes PTGS1 and PTGS2 are also localized intracellularly (Soberman and Christmas, 2003), it is perhaps not surprising that eCB-eicosanoid crosstalk was also found to be governed by MGLL rather than ABHD12 in microglia.\n\n### DAGL\u03b2 is a principal 2-AG biosynthetic enzyme in microglia\n\nWe next examined the respective roles of DAGL\u03b1 and DAGL\u03b2 in modulating eCB signaling pathways in brain cell types. Neurons and astrocytes from Dagla\u2013/\u2013 mice displayed much lower 2-AG content compared to neurons and astrocytes from wild type or Daglb\u2013/\u2013 mice, indicating that DAGL\u03b1 is responsible for the bulk of 2-AG biosynthesis in these brain cell types (Figure 3A and B). In contrast, microglia from Daglb\u2013/\u2013, but not Dagla\u2013/\u2013 mice showed substantial reductions in 2-AG (Figure 3C). A similar profile was observed for AA, which was lower in neurons and astrocytes from Dagla\u2013/\u2013 mice and microglia from Daglb\u2013/\u2013 mice (Figure 3A\u2013C), as well as for prostaglandins, with the exception that we did not detect prostaglandins in neurons (Figure 3A\u2013C). We also observed comparable lipid changes in wild-type microglia treated with two DAGL inhibitors (KT109 and KT172), but not with a structurally related inactive control compound (KT195) (Hsu et al., 2012) (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/12345/elife-12345-fig3-v1.jpg)\n\n**Figure 3.:** (A\u2013C) 2-AG, AA, and PGE2/D2 content in primary neurons (A), astrocytes (B), and microglia (C) derived from Dagla\u2013/\u2013, Daglb\u2013/\u2013 and corresponding wild-type mice. Data represent average values \u00b1 SEM; N = 5\u20138 per genotype. **p < 0.01 for Dagla\u2013/\u2013 or Daglb\u2013/\u2013 groups vs corresponding wild-type groups.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12345/elife-12345-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A\u2013C) 2-AG (A), AA (B), and PGE2/D2 (C) content in wild-type microglia treated with vehicle, the DAGL\u03b2 inhibitors KT109 (500 nM, 4 hr) or KT172 (500 nM, 4 hr), or the inactive control compound (KT195, 500 nM, 4 hr). Data represent average values \u00b1 SEM; N = 5 per treatment. **p < 0.01 for inhibitor-treated groups vs corresponding vehicle-treated groups.\n\nWe next assessed the lipid profiles of Daglb+/+ and \u2013/\u2013 microglia following LPS stimulation (100 ng/mL, for 4 hr) and found that DAGL\u03b2 inactivation resulted in the coordinated decreases in intracellular 2-AG, AA, and prostaglandins (Figure 4A\u2013C). No changes in these lipids were observed in Dagla\u2013/\u2013 microglia. Daglb\u2013/\u2013 microglia, but not Dagla\u2013/\u2013 microglia also displayed marked reductions in LPS-induced inflammatory cytokine production compared to wild type microglia (Figure 4D\u2013J). Similar lipid and cytokine reductions were observed in LPS-stimulated wild type microglia that were pre-treated (3 hr) with KT172, but not KT195 (Figure 4K\u2013U).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/12345/elife-12345-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013C, F\u2013H, K\u2013M, Q\u2013S) 2-AG, AA, and PGE2/D2 content basally and following exposure to LPS (100 ng/mL for 4 hr) in Daglb\u2013/\u2013 (A-C), Dagla\u2013/\u2013 (F\u2013H) and corresponding wild-type microglia, or in wild-type microglia treated with the DAGL inhibitor-treated KT172 (500 nM, 3 hr prior to LPS; K\u2013M) or an inactive control compound (KT195, 500 nM, 3 hr prior to LPS; Q\u2013S). Data represent average values \u00b1 SEM; N = 5 per genotype and treatment.\u00a0(D,E,I,J,N,O,T,U) Cytokine production basally and following exposure to LPS (100 ng/mL for 4 hr) as measured by ELISA in Daglb\u2013/\u2013 (D,E), Dagla\u2013/\u2013 (I,J) and corresponding wild-type microglia, or in wild-type microglia treated with KT172 (500 nM, 3 hr prior to LPS; N, O) or a KT195 (500 nM, 3 hr prior to LPS; T, U). Data represent average values \u00b1 SEM; N = 5 per genotype and treatment.\u00a0For A\u2013U, **p < 0.01 for Daglb\u2013/\u2013 or KT172-treated wild-type microglia or LPS-treated Daglb+/+, Dagla+/+, and wild-type microglia groups vs corresponding vehicle-treated wild-type microglia groups; #p < 0.05 and ##p < 0.01 for LPS-treated Dagl\u2013/\u2013 or inhibitor (KT172 or KT195)-treated groups vs corresponding vehicle-treated Dagl\u2013/\u2013 or inhibitor (KT172 or KT195)-treated groups; &&p < 0.01 for LPS-treated Daglb\u2013/\u2013 or LPS-treated, KT172-treated groups vs corresponding LPS-treated Daglb+/+ or LPS-treated, vehicle-treated groups.\n\nThese results, taken together, demonstrate that distinct DAGL enzymes are responsible for controlling eCB and eicosanoid metabolism in astrocytes and neurons (DAGL\u03b1) versus microglia (DAGL\u03b2), and that blocking DAGL\u03b2 genetically or pharmacologically attenuates LPS-induced inflammatory responses in microglia.\n\n### Effects of disrupting DAGL\u03b2 on brain lipid metabolism and inflammatory responses in vivo\n\nDagla\u2013/\u2013 mice have been shown to display dramatic reductions in brain 2-AG (~80-90%), demonstrating that DAGL\u03b1 is responsible for the bulk of 2-AG biosynthesis in the CNS (Gao et al., 2010, Tanimura et al., 2010). The contribution of DAGL\u03b2 is less clear, as Daglb\u2013/\u2013 mice have been reported to show either no changes (Hsu et al., 2012, Tanimura et al., 2012) or modest decreases (Gao et al., 2010) in brain 2-AG. Our data generally matched these previous studies, as we observed severely depleted brain 2-AG (~90%, Figure 5A) in Dagla\u2013/\u2013 mice, which was accompanied by a substantial increase in 1-stearoyl-2-arachidonoyl-sn-glycerol (SAG) (Figure 5B), a main precursor of 2-AG (Shonesy et al., 2014, Ogasawara et al., 2015), and corresponding reductions in brain AA (Figure 5C) and prostaglandins (Figure 5D). In contrast, brain 2-AG, SAG, and AA content were unaltered in Daglb\u2013/\u2013 mice (Figure 5A\u2013C), although these animals did exhibit a significant reduction in brain PGE2 (Figure 5D), perhaps owing to the modulation of 2-AG and related lipids selectively in microglia, which, despite representing only 10% of all brain cells (Aguzzi et al., 2013), display enriched expression of the prostaglandin synthase PTGS1 (or cyclooxygenase-1 (COX-1)) (Hoozemans et al., 2001, Font-Nieves et al., 2012, Zhang et al., 2014).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/12345/elife-12345-fig5-v1.jpg)\n\n**Figure 5.:** (A\u2013D) 2-AG (A), SAG (B), AA (C), and PGE2 (D) content in brain tissue from Dagla\u2013/\u2013, Daglb\u2013/\u2013 mice and their corresponding wild-type littermates. Data represent average values \u00b1 SEM; N = 6-8 mice per genotype. **p < 0.01 for Dagla\u2013/\u2013 or Daglb\u2013/\u2013 mice vs corresponding wild-type mice.\u00a0(E) Gel-based ABPP analysis of brain membrane proteomes from Dagla\u2013/\u2013 mice following treatment with the MGLL inhibitor MJN110 (i.p. 10 mg/kg, 3 hr) the DAGL inhibitor DO34 (i.p. 100 mg/kg, 2 hr), or sequentially with both inhibitors (DO34, 2 hr; followed by MJN110, 3 hr) using a DAGL-directed probe (HT-01, left) (Hsu et al., 2012) or the broad-spectrum serine hydrolase probe FP-Rh (E, right) (Patricelli et al., 2001). Fluorescent gels are shown in grayscale and 2-AG metabolic enzymes are labeled.\u00a0(F) Brain 2-AG content from Dagla\u2013/\u2013 mice following treatment with the MGLL inhibitor MJN110 (i.p. 10 mg/kg, 3 hr) or sequentially with\u00a0the DAGL inhibitor DO34 (i.p. 100 mg/kg, 2 hr) and MJN110 (DO34, 2 hr; followed by MJN110, 3 hr). Data represent average values \u00b1 SEM; N = 5 per genotype and treatment. **p<0.01 for Dagla\u2013/\u2013 groups vs vehicle-treated Dagla+/+ group; ##p < 0.01 for MJN110-treated for Dagla\u2013/\u2013 group vs vehicle-treated Dagla\u2013/\u2013 group; &&p < 0.01 for DO34 + MJN110-treated Dagla\u2013/\u2013 group vs MJN100-treated Dagla\u2013/\u2013 group.\n\nTo more directly address whether a DAGL\u03b2-dependent pool of 2-AG exists in the brain, we evaluated the inhibition of DAGL\u03b2 in the context of Dagla\u2013/\u2013 mice. We first found that the pharmacological blockade of 2-AG hydrolysis with the MGLL inhibitor MJN110 (Niphakis et al., 2013) promoted a significant recovery of brain 2-AG content in Dagla\u2013/\u2013 mice (Figure 5E and F), consistent with a previous report (Shonesy et al., 2014). We then tested inhibition of DAGL\u03b2 using a recently described CNS-active DAGL inhibitor DO34 (Ogasawara et al., 2015) and found that a high dose of this compound (100 mg/kg, i.p.) near-completely blocked DAGL\u03b2 activity in brain (Figure 5E) and suppressed the MJN110-induced rescue of brain 2-AG in Dagla\u2013/\u2013 mice (Figure 5F). These data thus indicate that DAGL\u03b2 can contribute to bulk 2-AG content in the CNS, in particular, in the absence of DAGL\u03b1.\n\nMGLL blockade has been shown to lower prostaglandins and attenuate neuroinflammation in the brain (Nomura et al., 2011, Chen et al., 2012, Piro et al., 2012). These previous findings, combined with the dramatic reductions in brain 2-AG, AA, and prostaglandins observed in Dagla\u2013/\u2013mice (Figure 5A\u2013D) and the substantial suppression of inflammatory responses in Daglb\u2013/\u2013microglia (Figure 4), motivated us to test whether microglial activation, a common feature of diverse nervous system diseases (Aguzzi et al., 2013), was regulated by DAGL enzymes in vivo.\n\nWild type and DAGL-disrupted mice were treated with LPS (1 mg/kg, once per day for four days) and then sacrificed and their lipid profiles and microglial activation state analyzed. This LPS treatment paradigm resulted in a significant increase in brain PGE2, but other measured lipids (2-AG, SAG, AA, PGD2) were unaltered. As anticipated, Dagla\u2013/\u2013\u00a0mice showed substantial reductions in brain 2-AG, AA, and prostaglandins, along with elevations in SAG, in both control and LPS-treated mice (Figure 6A). Along with these lipids changes, Dagla\u2013/\u2013\u00a0mice also displayed attenuated LPS-induced microglial activation in the brain (Figure 6B and Figure 6\u2014figure supplement 1). In contrast, Daglb\u2013/\u2013\u00a0mice challenged with LPS did not show changes in the measured brain lipids, including PGE2, for which an LPS-stimulated increase appeared to override the basal reduction observed in Daglb\u2013/\u2013\u00a0mice (Figure 6C). Yet, LPS-treated Daglb\u2013/\u2013\u00a0mice still exhibited reduced activation of brain microglia (Figure 6D and Figure 6\u2014figure supplement 1). No obvious differences in basal cell morphology of microglia were observed between wild-type and Dagla\u2013/\u2013\u00a0or\u00a0Daglb\u2013/\u2013 mice (Figure 6 B,D, and Figure 6\u2014figure supplement 1). LPS-induced anapyrexia, a profound reduction in core body temperature mediated largely by central inflammatory processes (Romanovsky, 2004), which we have found to be sensitive to DAGLa disruption (Ogasawara et al., 2015), was also greatly attenuated in Daglb\u2013/\u2013 mice (Figure 6E). These results indicate that disruption of either DAGL\u03b1 or DAGL\u03b2 curbs neuroinflammatory responses in the brain, with blockade of the latter enzyme doing so while avoiding bulk changes in eCBs and eicosanoids.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/12345/elife-12345-fig6-v1.jpg)\n\n**Figure 6.:** (A) SAG, 2-AG, AA, PGE2, PGD2 and AEA content in brain tissue from Dagla\u2013/\u2013 mice and wild-type littermates basally and following exposure to LPS (i.p., 1 mg/kg once per day for 4 days). Data represent average values \u00b1 SEM; N = 5-6 per genotype and treatment. *p < 0.05 and **p < 0.01 for vehicle-treated Dagla\u2013/\u2013 group or LPS-treated Dagla+/+ group vs vehicle-treated Dagla+/+ group; &&p < 0.01 LPS-treated Dagla\u2013/\u2013 group vs LPS-treated Dagla+/+ group.\u00a0(B) Representative pictures and quantification of microglial activation assessed by Iba-1 staining (a microglia marker that becomes upregulated during inflammatory activation of these cells) in hippocampal regions from Dagla\u2013/\u2013 mice and wild-type littermates basally and following exposure to LPS (i.p., 1\u00a0mg/kg once per day for 4 days). Scale bar, 50 \u00b5m. Data represent average values \u00b1 SEM; N = 6 per genotype and treatment. **p < 0.01 for LPS-treated Dagla+/+ group vs vehicle-treated Dagla+/+ group; ##p < 0.01 for LPS-treated Dagla\u2013/\u2013 group vs vehicle-treated Dagla\u2013/\u2013 group; &&p < 0.01 for LPS-treated Dagla\u2013/\u2013 group vs LPS-treated Dagla+/+ group.\u00a0(C) SAG, 2-AG, AA, PGE2, PGD2 and AEA content in brain tissue from Daglb\u2013/\u2013 mice and wild-type littermates basally and following exposure to LPS (i.p., 1 mg/kg once per day for 4 days). Data represent average values \u00b1 SEM; N = 5-6 per genotype and treatment. *p < 0.05 for vehicle-treated Daglb\u2013/\u2013 group or LPS-treated Daglb+/+ group vs vehicle-treated Daglb+/+ group; ##p < 0.01 for LPS-treated Daglb\u2013/\u2013 group vs vehicle-treated Daglb\u2013/\u2013 group.\u00a0(D) Representative pictures and quantification of microglial activation assessed by Iba-1 staining (a microglia marker that becomes upregulated during inflammatory activation of these cells) in hippocampal regions from Daglb\u2013/\u2013 mice and wild-type littermates basally and following exposure to LPS (i.p., 1\u00a0mg/kg once per day for 4 days). Scale bar, 50 \u00b5m. Data represent average values \u00b1 SEM; N = 6 per genotype and treatment. **p < 0.01 for LPS-treated Daglb+/+ group vs vehicle-treated Daglb+/+ group; ##p < 0.01 for LPS-treated Daglb\u2013/\u2013 group vs vehicle-treated Daglb\u2013/\u2013 group; &&p < 0.01 for LPS-treated Daglb\u2013/\u2013 group vs LPS-treated Daglb+/+ group.\u00a0(E) Time course of body temperature changes in Daglb+/+ and Daglb\u2013/\u2013 mice following LPS (10 mg/kg, i.p.)-induced anapyrexia. Data represent average values \u00b1 SEM; N = 6 mice per genotype and treatment. *p < 0.05 for Daglb+/+ + Veh vs Daglb+/+ + LPS groups; #p < 0.05 for Daglb\u2013/\u2013 + Veh vs Daglb\u2013/\u2013 + LPS groups; &p < 0.05 for Daglb+/+ + LPS vs Daglb\u2013/\u2013 + LPS groups.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12345/elife-12345-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Representative pictures of microglial activation assessed by Iba-1 staining (a microglia marker that becomes upregulated during inflammatory activation of these cells) in hippocampal regions from Dagla\u2013/\u2013, Daglb\u2013/\u2013 and wild-type mice basally and following exposure to LPS (i.p., 1\u00a0mg/kg once per day for 4 days). Scale bar, 20 \u00b5m.\n\n## Discussion\n\nUnderstanding the metabolic and signaling pathways expressed by major brain cell types should help to illuminate key features of nervous system physiology and disease (Kreft et al., 2012, Kettenmann et al., 2013, Morrison et al., 2013). Gene expression profiling (Cahoy et al., 2008, Doyle et al., 2008, Beutner et al., 2013, Chiu et al., 2013, Zhang et al., 2014) and proteomic studies (Yu et al., 2004, Yang et al., 2005, Glanzer et al., 2007, Liao et al., 2008, Bell-Temin et al., 2012, Sharma et al., 2015) performed on isolated brain cells have provided valuable insights into the unique molecular makeup of different brain cell types, but the assessment of the functional state of proteins, and not just their abundance, is also needed to dissect the cellular distribution of signaling and metabolic pathways that regulate nervous system (patho)physiology. We have herein used ABPP to provide a global portrait of serine hydrolase activities in neurons, astrocytes, and microglia, and, through doing so, identified cell type-specific regulation of key chemical transmission pathways, in particular eCBs and eicosanoids, that exert differential impact on global versus inflammation-induced processes in the mouse brain.\n\nPrevious studies have found that a substantial portion (~40%) of the variance in protein content can be explained by differences in mRNA expression (Schwanhausser et al., 2011). Consistent with this conclusion, we found that our activity-based proteomic data displayed good overall correlation with previously reported mRNA expression data obtained by deep RNA-sequencing (Zhang et al., 2014). A few notable exceptions of enzymes where transcript and activity were un- or even anti-correlated were, however, identified, and it would be interesting, in future studies, to understand the basis for these differences. One anti-correlated protein \u2013 HTRA1 \u2013 for instance, is known to be regulated at the level of secretion from cells (Skorko-Glonek et al., 2013), and it is possible that individual brain cell types differentially export this enzyme to create discordant measures of mRNA and cellular protein content. Other posttranslational events, such as phosphorylation, could regulate serine hydrolase activity and/or stability. Some of the discrepancies between our chemical proteomic results and previously reported mRNA expression datasets (Zhang et al., 2014) may also arise from differences in methodology, given that our studies used primary brain cell cultures instead of acutely isolated neurons and glia. Cells in culture are known to only partially model cells from an in vivo environment, and future ABPP studies using freshly isolated neurons and glia should help to further enrich our understanding of serine hydrolase activities in specific brain cell types.\n\nWe were struck by the remarkable number of serine hydrolases that showed differential activity across neurons, astrocytes, and microglia (Figure 1C). This observation supports the emerging recognition that neurons and glia are endowed with complementary enzymatic pathways to meet the overall metabolic needs of the nervous system (Belanger et al., 2011). Among the most prominently compartmentalized serine hydrolases were those that regulate the eCB 2-AG. This lipid messenger, known to be biosynthesized by two different enzymes\u2014DAGL\u03b1 and DAGL\u03b2 (Bisogno et al., 2003)\u2014and with the potential to be degraded by several enzymes\u2014MGLL, ABHD6, ABHD12, and FAAH (Blankman et al., 2007, Marrs et al., 2011)\u2014 is an important regulator of inter-neuronal and neuron-glia interactions (Navarrete and Araque, 2008, 2010, Martin et al., 2015, Viader et al., 2015). 2-AG signaling also impacts diverse neurophysiological processes, including pain, mood, and neuroinflammation (Blankman and Cravatt, 2013, Murataeva et al., 2014). Considering the widespread functions of 2-AG, the\u00a0identification of mechanisms that allow for the selective modulation of specific aspects of this lipid transmitter\u2019s action in the nervous system stands as an important objective. Toward this end, our work establishes that individual cell types in the brain control 2-AG metabolism and signaling by different enzymatic pathways.\n\nWe found that microglia, in particular, are equipped with a distinct complement of 2-AG metabolic enzymes \u2013\u00a0ABHD12 and DAGL\u03b2\u00a0\u2013\u00a0the inactivation of which perturbs eCB signaling and crosstalk with eicosanoids specifically in this cell type. ABHD12 plays additional important roles in lipid metabolism in the brain, where the enzyme serves as a major lyso-PS hydrolase (Blankman et al., 2013) that is part of an immunomodulatory pathway (Kamat et al., 2015) linked to the human neurological disease PHARC (Fiskerstrand et al., 2010). It will thus be important, in the future, to dissect in what physiological and disease contexts ABHD12 acts as a 2-AG versus lyso-PS hydrolase. Note also that, while our results indicate a role for ABHD12 in the modulation of microglia endocannabinoid signaling, our experiments do not discriminate the precise identity of the receptors involved. Whether CB1R, CB2R, or even other closely related receptors, mediate\u00a0the observed ABHD12-regulated 2-AG effect on microglial ERK phosphorylation can be addressed in future studies using lower concentrations of selective CB1R and CB2R antagonists or microglia derived from knockout mice lacking these receptors.\n\nDAGL\u03b1\u00a0has been shown to be the principal source for 2-AG production in the nervous system, and disruption of this enzyme impairs many forms of CB1R-dependent synaptic plasticity (Gao et al., 2010, Tanimura et al., 2010). Our results extend these findings in an important way by demonstrating that DAGL\u03b1\u00a0also regulates neuroinflammatory responses in the brain, in particular, LPS-induced microglial activation. The reductions in LPS-stimulated neuroinflammation observed in Dagla\u2013/\u2013 mice may reflect, at least in part, crosstalk between eCB and eicosanoid pathways, since basal and LPS-induced prostaglandin synthesis were decreased in these animals. By also identifying DAGL\u03b2 as a principal 2-AG synthase in microglia, our work establishes a previously underappreciated and specialized role for this enzyme in 2-AG biosynthesis in the nervous system (Reisenberg et al., 2012, Murataeva et al., 2014). Our results also do not rule out the presence of DAGL\u03b2-regulated pools of 2-AG in other brain cell types, as might be supported by the significant reductions in this eCB observed in brain tissue from Dagla\u2013/\u2013 mice treated with MGLL and DAGL inhibitors (Figure 4F). Also potentially consistent with a role for DAGL\u03b2 in regulating bulk brain 2-AG in the absence of DAGL\u03b1, we have been unable to generate viable Dagla/b double-knockout mice. Nonetheless, most of the major forms of eCB-dependent synaptic plasticity have been shown to be regulated by DAGL\u03b1 rather than DAGL\u03b2 (Gao et al., 2010, Tanimura et al., 2010), underscoring the broad role that the former enzyme plays in eCB signaling throughout the nervous system.\n\nThat Daglb deletion attenuates LPS-induced microglial activation in vivo without altering bulk eCB or eicosanoid content in the brain suggests modulation of restricted pools of 2-AG can impact neuroinflammatory processes while avoiding global effects on eCB signaling. This finding adds to a growing body of work implicating glial proteins and pathways as potential targets for nervous system disease that may have fewer neuron-related adverse side effects (Barres, 2008, Ilieva et al., 2009, Milligan and Watkins, 2009, Sheridan, 2009). The remarkable cell\u00a0type-specific compartmentalization of 2-AG metabolic enzymes, and more broadly of serine hydrolases, may thus prove to be fertile ground for the identification of targets that can safely reverse or slow the course of diverse pathologies of the nervous system.\n\n## Materials and methods\n\n### Materials\n\nFP-rhodamine, FP-biotin, HT-01, KML29, MJN110, KT172, KT195, and DO34 were synthesized in-house as previously described (Patricelli et al., 2001, Chang et al., 2012, Hsu et al., 2012, Niphakis et al., 2013, Ogasawara et al., 2015). All deuterated lipid standards and substrates were purchased from Cayman Chemicals. Lipopolysaccharide from E. coli was purchased from Sigma (0111:B4).\n\n### Primary neuron, astrocyte, and microglia cultures\n\nThe primary cell culture protocols used in this study were approved by the Scripps Research Institute Institutional Animal Care and Use Committee (IACUC #09-0041-03). Cortico-hippocampal neurons were prepared from embryonic day 18 mice from transgenic or wild-type mice as needed. Cortices/hippocampi were dissected, freed of meninges, and dissociated by incubation in Papain/DNase for 20 min at 37\u00b0C followed by trituration. Dissociated cortico-hippocampal neurons were then washed with DMEM media supplemented with 10% FBS and 2 mM glutamine, prior to seeding them onto poly-D-lysine coated 10 cm culture dishes in neurobasal medium containing 2% B27 supplement, 2 mM glutamine, and 5 \u03bcM 5-fluoro-2\u2032-deoxyuridine at a density of 8 \u00d7 106 cells/dish. A third of the media was exchanged twice per week. Neurons were harvested for proteome isolation after 16 days in vitro in the presence of antimitotics, thus ensuring high neuronal enrichment as confirmed by western blot using neuron-, astrocyte- and microglia-specific markers (Tuj1, GFAP and Iba-1, respectively; data not shown).\n\nMicroglia were derived from mixed glial cultures prepared from postnatal day 2-3 mouse forebrains from transgenic or wild-type mice as needed. Briefly, forebrains were dissected, stripped of meninges, and digested in papain/DNAse (20 min at 37\u00b0C) followed by 0.25% trypsin (15 min at 37\u00b0C) and trituration. Dissociated cells were then cultured for 10 days in poly-D-lysine coated T75 tissue culture flasks in DMEM media supplemented with 10% FBS, 2 mM glutamine, and 5 ng/mL of granulocyte macrophage-colony stimulating factor. After establishment of the astrocyte monolayer, the flasks were shaken for 2 hr at 180 rpm to obtain the loosely attached microglia. Microglia were subsequently plated onto 10 cm dishes at a density of 2-3 \u00d7 106 cells/dish in Macrophage-SFM media (Gibco) supplemented with 1% FBS and 0.5 ng/mL of granulocyte macrophage-colony stimulating factor. The purity of these microglia cultures was >99% as determined by immunohistochemical quantification of the proportion of Iba-1 positive cells (total cell number determined by DAPI nuclear staining) in six different fields from two separate cultures. Cells were allowed to sit for at least 72 hr prior to harvesting them for proteome isolation.\n\nFollowing isolation of microglia, established mixed glial cultures were treated with 8 \u03bcM cytosine-arabinoside for 3\u20135 days to kill actively dividing cells (e.g. microglia, fibroblast), and generate an astrocyte monolayer with >85% purity, as determined by immunohistochemical quantification of the proportion of GFAP positive cells (total cell number determined by DAPI nuclear staining) in six different fields from two separate cultures. These astrocytes were subsequently plated onto poly-D-lysine coated 10 cm dishes in DMEM media supplemented with 10% FBS and 2 mM glutamine, and allowed to become confluent. Upon reaching confluence, astrocytes were harvested for subsequent proteome isolation.\n\n### Matings and genotyping of transgenic animals\n\nAll animal experiments were carried out in compliance with institutional animal protocols (IACUC #09-0041-03), and mice were housed on a normal 6AM/6PM light/dark phase with ad libitum access to water and food. All mice used in this study were generated by heterozygous matings. Mgll\u2013/\u2013 (Viader et al., 2015), Abhd12\u2013/\u2013 (Blankman et al., 2013), Dagla\u2013/\u2013 (Hsu et al., 2012), and Daglb\u2013/\u2013 mice (Hsu et al., 2012) as well as their wild-type littermates were all in a homogeneous C57Bl/6 background. PCR genotyping of genomic tail DNA was performed using the following primers: Mgll 5\u2019- cacctgtctttggagctc ccacc-3\u2019, 5\u2019-cctttctttagggagagtccactgaatgtg-3\u2019, and 5\u2019-ggcagcactgacaaatgtgtctgag-3\u2019 (415-bp product in wild-type mice, 598-bp product in mice with the Mgll null allele); Abhd12 5\u2019- cagtgctggcctgtcagtcg-3\u2019, 5\u2019-ggtgcccagtgaatggcc-3\u2019, and 5\u2019-taaagcgcatgctccagactgcc-3\u2019 (500-bp product in wild-type mice, 300-bp product in mice with the Abhd12 null allele); Dagla 5\u2019-tgagattggtatcaagacctttg-3\u2019, 5\u2019-ccttgctcctgccgagaaagtatcc-3\u2019, and 5\u2019- gaagaacaggtaaccaggaccat-3\u2019 (300-bp product in wild-type mice, 600-bp product in mice with the Dagla null allele); Daglb 5\u2019-aaggaggcaaagacagcaaagtgc-3\u2019, 5\u2019-tatcctaggtgcagacagattgtgc-3\u2019, and 5\u2019-aaatggcgttacttaagctagcttgc-3\u2019 (390-bp product in wild-type mice, 195-bp product in mice with the Daglb null allele).\n\n### Preparation of mouse tissue and cell proteomes\n\n8-week-old mice were anaesthetized with isofluorane, killed by cervical dislocation, and tissues harvested, immediately flash frozen in liquid nitrogen and kept frozen at \u221280\u00b0C until use. For preparation of proteomes, tissues were homogenized in cold PBS using a bullet blender (Next Advance, Inc.) as per the manufacturer\u2019s instructions, or dounced homogenized in an isotonic buffer consisting of 20 mM Hepes, 2 mM DTT, 0.25 M sucrose, and 1\u00a0mM MgCl2, pH 7.2 for improved DAGL visualization. Lysed proteomes were then subjected to a low-speed spin (1400 \u00d7\u00a0g, 5 min) to remove debris, and ultracentrifugation (100,000 \u00d7\u00a0g, 45 min) to separate membrane and cytosolic fractions. The supernatant was removed and saved as the soluble proteome, while the pellet was washed and resuspended in cold PBS by sonication or in isotonic resuspension solution (20\u00a0mM Hepes, 2\u00a0mM DTT) by pipetting and saved as the membrane proteome. Total protein concentration for each proteome was determined using a Bio-Rad Dc Protein Assay kit, and proteomes were kept at -80\u00b0C until further use. Cultured cell proteomes were prepared in an analogous manner after scraping cells from culture dishes with 1 mL of cold PBS.\n\n### Activity-based protein profiling analysis\n\n50\u00a0\u03bcL of 1\u00a0mg/mL cell or tissue membrane proteome were incubated with the broad-spectrum serine hydrolase probe FP-rhodamine (1 \u03bcM final concentration) for 30 min at room temperature or with the DAGL-directed probe HT-01 (1 \u03bcM final concentration) for 30 min at 37\u00b0C. When necessary, proteomes were pre-treated with inhibitors for 1 hr at 37\u00b0C prior to addition of ABPP probes. Probe labeling was terminated by quenching with 4x SDS/PAGE loading buffer, and labeled proteome samples were separated by SDS-PAGE (10% [wt/vol] acrylamide) and visualized by in-gel fluorescence scanning using a flatbed fluorescence scanner (Hitachi FMBio IIe). Gel fluorescence is shown in grayscale, and optical density of the signals was determined using Image-J.\n\n### ABPP-MudPIT sample preparation, MS, and analysis\n\nFor the ABPP-MudPIT samples, whole cell proteomes (500 \u03bcg/mL in 500 \u03bcl of PBS) were labeled with FP-biotin (10 \u03bcM) for 2 hr at room temperature. After labeling, the proteomes were precipitated using cold MeOH (2 mL), CHCl3 (0.5 mL) and PBS (1 mL). The resulting cloudy mixture was vortexed and then centrifuged (5000\u00a0\u00d7\u00a0g, 15 min, 4\u00b0C). The organic and aqueous layers were aspirated leaving a protein disc which had formed between phases. The protein disc was washed with cold 1:1 MeOH:CHCl3 (3 \u00d7 1 mL) while intact and then probe sonicated in cold 4:1 MeOH:CHCl3 (2.5 mL). Insoluble proteins were pelleted via centrifugation (5000\u00a0\u00d7 g, 15 min, 4\u00b0C) and the supernatant was removed. The remaining pellet was redissolved in 500 \u00b5L of 6 M urea in PBS, reduced using Tris(2-carboxyethyl)phosphine (TCEP, 10 mM) for 30 min at 37\u00b0C, and then alkylated using \u200biodoacetamide (40 mM) for 30 min at 25\u00b0C in the dark. The biotinylated proteins were then enriched by addition of 10% (w/v) SDS (140 \u00b5L), followed by 5.5 mL of PBS and 100 \u00b5L of PBS pre-washed avidin-agarose beads (100 \u00b5L, 1, Sigma-Aldrich) and shaking at 25\u00b0C for 1.5 hr. Beads were pelleted by centrifugation (1000\u00a0\u00d7\u00a0g, 2 min) and sequentially washed with 0.25% SDS (3 \u00d7 10 mL), DPBS (3 \u00d7 10 mL) and ddH2O (3 \u00d7 10 mL). The beads were transferred to a Protein LoBind tube (Eppendorf) and on-bead digestion was performed using sequence-grade trypsin (2 \u03bcg; Promega) in 2 M \u200burea in PBS with 2 mM \u200bCaCl2\u00a0for 12\u201314 hr at 37\u00b0C (200 \u03bcl). Peptides obtained from this procedure were acidified using \u200bformic acid (5%) and stored at \u201380\u00b0C before analysis.\n\nMS analysis was performed using a LTQ following previously described protocols (Jessani et al., 2005). Peptides were eluted using a five-step multidimensional LC/MS protocol in which increasing concentrations of \u200bammonium acetate are injected followed by a gradient of increasing \u200bacetonitrile, as previously described (Washburn et al., 2001). For all samples, data were collected in data-dependent acquisition mode over a range from 400\u20131800 m/z. Each full scan was followed by up to 7 fragmentation events. Dynamic exclusion was enabled (repeat count of 1, exclusion duration of 20 s) for all experiments. The data were searched using the ProLuCID algorithm against a mouse reverse-concatenated, non-redundant (gene-centric) FASTA database that was assembled from the Uniprot database. ProLuCID searches allowed for variable oxidation of methionine (+15.9949 m/z), static modification of cysteine residues (+57.0215 m/z; iodoacetamide alkylation) and accepted only half- or fully-tryptic peptides. The resulting peptide spectral matches were filtered using DTASelect (version 2.0.47), and only half-tryptic or fully tryptic peptides were accepted for identification. Peptides were restricted to a specified false positive rate of <1%. Only proteins detected in at least two out of four replicates for any one cell type preparation, with \u2265 5 spectral counts were used for downstream analysis. Hierarchical clustering analysis shown in Figure 1C was performed using CIMminer.\n\n### 2-AG substrate hydrolysis assay\n\nIn vitro 2-AG hydrolysis was determined by liquid chromatography-mass spectrometry (LC-MS) monitoring of the generation of AA product. Briefly, 10 \u03bcg of primary cell proteomes from Abhd12+/+ and Abhd12\u2013/\u2013 mice (N\u00a0=\u00a05 per genotype) were treated with vehicle or 250\u00a0nM KML29 prior to incubation with 100 \u03bcM 2-AG in PBS (100\u00a0\u03bcL final volume) for 10 min. Reactions were quenched by addition of 300 \u03bcL of 2:1 (vol/vol) CHCl3:MeOH doped with 0.5 nmol of AA-d8 lipid standard, vortexed to mix, and spun at 2000 rpm \u00d7 5 min to separate phases. The bottom organic phase was extracted and 20 \u03bcL were injected onto an Agilent 6460 triple quadrupole (QQQ) MS. Chromatography was performed on a 50 \u00d7 4.60 mm 5-\u03bcm Gemini C18 column (Phenomenex) coupled to a guard column (Gemini; C18; 4 \u00d7 3.0 mm; Phenomenex SecurityGuard cartridge). The LC method consisted of 0.5 mL/min of 100% buffer A [95:5 (vol/vol) H2O:MeOH plus 0.1% (vol/vol) ammonium hydroxide] for 1.5 min, 0.5 mL/min linear gradient to 100% buffer B [65:35:5 (vol/vol) iPrOH:MeOH:H2O plus 0.1% (vol/vol) ammonium hydroxide] over 5 min, 0.5 mL/min 100% buffer B for 3 min, and equilibration with 0.5 mL/min 100% buffer A for 1 min (10.5 min total run time). MS analysis was performed in negative scanning mode with an electrospray ionization (ESI) source using the precursor to product ion transition and collision energies for AA (303, 303, 0, negative) and AA-d8 (311, 311, 0, negative). Dwell times for each lipid were set to 100 ms, and the following MS parameters were used: capillary voltage = 3.5 kV, drying gas temperature = 350\u00b0C, drying gas flow rate = 9 L/min, and nebulizer pressure\u00a0= 50 psi, sheath gas temperature = 375\u00b0C, and sheath gas flow rate = 12 L/min. AA release was quantified by measuring the area under the peak in comparison with the AA-d8 internal standard and correcting for non-enzymatically formed AA present in heat inactivated (10 min at 90\u00b0C) control reactions, and relative 2-AG hydrolytic activity for conditional Abhd12\u2013/\u2013 proteomes was calculated by comparing to activity of wild-type proteomes.\n\n### Lipid measurements\n\nMetabolite levels were quantified by multiple reaction monitoring (MRM) of each lipid species using and Agilent 6460 QQQ instrument. For cultured cells, lipids were extracted from each cell type by scraping cells from dish in 1.1 mL of cold PBS, of which 100 \u03bcL were saved to measure protein concentration for normalization, prior to re-scraping with 1 mL of cold MeOH. The 2 mL of cell lysate were then transferred to 2 mL of CHCl3 with 20\u00a0\u03bcL of formic acid and the following lipid standards: 1 nmol of 2-AG-d5, 0.5 nmol of AEA-d4, 1\u00a0nmol\u00a0of\u00a0AA-d8, and 0.5 nmol of PGE2-d9. After centrifugation at 2000 rpm for 5 min, the organic bottom fraction was carefully collected and dried under a nitrogen stream. Lipids were resolubilized in 140\u00a0\u03bcL of 1:1 (v/v) CHCl3:MeOH, 20 \u03bcL of which were injected for mass spectrometry analysis. When necessary, 5 mL of media were also extracted in an analogous manner by combining with 5 mL of MeOH and 10 mL of CHCl3. For LPS studies, lipids were similarly extracted from 2-3 \u00d7 106 microglia pre-treated with inhibitors as needed for 3 hr prior to addition of 100 ng/mL of LPS for 4 hr.\n\nFor brains, 2 month-old Dagla\u2013/\u2013, Daglb\u2013/\u2013, or corresponding wild-type littermates were injected with LPS in PBS (1 mg/kg, once a day for 4 days, i.p.) or with PBS vehicle alone. On day 5, mice were sacrificed by cervical dislocation, and their brains rapidly removed and immediately flash frozen in liquid nitrogen. One brain hemisphere was then weighted and dounce homogenized in 8 ml of cold 2:1:1 (v/v/v) CHCl3:MeOH:PBS doped with the following lipid standards: 1 nmol of 2-AG-d5, 0.5 nmol of AEA-d4, 1 nmol of AA-d8, 1 nmol of SAG-d8, and 0.5 nmol of PGE2-d9. Note that brains were not allowed to thaw prior to contact with organic solvents. Brain homogenates were vortexed and centrifuged at 2000 rpm for 5 min. The organic bottom fraction was carefully collected, and the remaining solution was re-extracted by adding another 2 mL of CHCl3 with 20\u00a0\u03bcL of formic. The organic fractions from both extractions were combined, and dried under a nitrogen stream. Lipids were resolubilized in 200\u00a0\u03bcL of 1:1 (v/v) CHCl3:MeOH, 10 \u03bcL of which were injected for mass spectrometry analysis.\n\nLC separation of lipid metabolites was performed on a 50 \u00d7 4.60 mm 5\u00a0\u03bcm Gemini C18 column (Phenomenex) coupled to a guard column (Gemini; C18; 4 \u00d7 3.0 mm; Phenomenex SecurityGuard cartridge). Mobile phase A consisted of 95:5 (vol/vol) H2O:MeOH and mobile phase B consisted of 60:35:5 (vol/vol) iPrOH:MeOH:H2O, with 0.1% formic acid or ammonium hydroxide added to both mobile phases to assist in ion formation in positive and negative ionization modes, respectively. For the targeted detection of MAGs, NAEs, and DAGs in positive mode, each run started at 0.1 mL/min of 100% A. At 5 min, the solvent was immediately changed to 60% B with a flow rate of 0.4 mL/min and increased linearly to 100% B over 15 min. 100% B was allowed to flow at 0.5 mL/min for an additional 8 min prior to equilibrating for 3 min with 100% A at 0.5 mL/min. For targeted detection of eicosanoids and fatty acids in negative mode, each run started at 0.1 mL/min of 100% A. At 3 min, the flow rate was increased to 0.4 mL/min with a linear increase of solvent B to 100% over 17 min. 100% B was allowed to flow at 0.5\u00a0mL/min for 7 min prior to equilibrating for 3 min with 100% A at 0.5 mL/min. MS analysis was performed in either positive or negative scanning mode with an electrospray ionization (ESI) source, and the following parameters were used to measure the indicated metabolites by SRM (precursor ion, product ion, collision energy in V, polarity): 2-AG (379, 287, 8, positive); 2-AG-d5 (384, 287, 8, positive); AEA (348, 62, 11, positive); AEA-d4 (352, 66, 11, positive); SAG (662.5, 341, 40, positive); SAG-d8 (670.5, 341, 40, positive); AA (303, 303, 0, negative); AA-d8 (311, 311, 0, negative); PGE2/D2 (351, 271, 4, negative); PGE2/D2-d9 (360.5, 280, 4, negative). Dwell times for each lipid were set to 100 ms, and the following MS parameters were used: capillary voltage = 3.5 kV, drying gas temperature = 350\u00b0C, drying gas flow rate = 9 L/min, and nebulizer pressure= 50 psi, sheath gas temperature = 375\u00b0C, and sheath gas flow rate = 12 L/min. Metabolite species were quantified by measuring the area under the peak in comparison with the appropriate unnatural internal standard and normalizing for wet tissue weight or protein concentration for cultured cells.\n\n### Cytokine analysis\n\nCytokines were measured using a DuoSet ELISA kit (R&D systems) as per the manufacturer's instructions. For cultured cells, 100 \u03bcL of media were used.\n\n### Western blotting\n\nFor western blotting, samples (30 \u03bcg protein) were separated by SDS-PAGE [10% (wt/vol) acrylamide] then transferred to a nitrocellulose membrane. The membrane was then blocked in 5% milk in 0.5% TBS-Tween and incubated overnight with P-Erk1/2 (1:1000, rabbit, Cell Signaling) and Erk 1/2 (1:1000, rabbit, cell signaling) primary antibodies. Following incubation with IRdye680 secondary antibody (1:5000, Licor Biosciences), membranes were visualized with a Licor Odyssey CLx near-infrared imager.\n\n### Immunohistochemistry\n\nMice were deeply anesthetized using isofluorane and perfused with PBS followed by 4% (wt/vol) paraformaldehyde. Brains were then carefully dissected, postfixed in 4% paraformaldehyde overnight, cryoprotected in 30% (wt/vol) sucrose, and rapidly frozen on dry ice. Free floating coronal sections 40 \u03bcm in thickness were cut on a Leica CM1850 cryostat. Frozen, free-floating sections were blocked with Bloxall (Vector labs, 10 min) and 0.2% Triton-X100 and 3% goat serum in PBS (blocking solution, 1 hr) prior to O/N incubation at 4\u00b0C with a rabbit anti-ionized calcium-binding adaptor molecule (Iba)1 primary antibody (1:500 dilution in blocking solution; Wako). Sections were then incubated with secondary antibody (anti-rabbit biotin; Vector Laboratories; 1:300 dilution of 1.5 mg/mL stock) in 0.5% (wt/vol) BSA in 0.1 M PB for 1 hr at room temperature and developed with ABC Elite Vectastain (Vector Laboratories). After staining, sections were mounted in Permount and imaged using a Leica SCN400 whole slide scanner. Images were processed using ImageJ and Photoshop using global adjustments in brightness and contrast. Iba1-positive microglia were quantified in matching sections from at least 5 mice per genotype using ImageJ by first converting images to be counted to 8 bit greyscale and applying global adjustments in brightness and contrast in the same way to the whole set of images being analyzed. The area for all cells being quantified was then highlighted using ImageJ\u2019s Threshold macro, setting the same range of pixel intensities for the entire set of images being processed. Total microglia area in the resulting binary image was determined using ImageJ\u2019s Particle Analyzer macro. Area for all particles larger than 10 pixels was included in the quantification.\n\n### Anapyrexia and core body temperature measurements\n\nCore body temperature was measured by radiotelemetry as previously described (Sanchez-Alavez et al., 2015). Briefly, mice were anesthetized with isofluorane (induction 3\u20135%, maintenance 1\u20131.5%) and surgically implanted with radiotelemetry devices (TA-F20, Data Sciences, St. Paul, MN) into the peritoneal cavity for core body temperature (CBT) and locomotor activity (LA) evaluation. Following surgical implantation and appropriate wound closure, the animals were allowed to recover for 2 weeks and then subjected to telemetry recordings. Mice were individually housed in a Plexiglas cage in a room maintained at 25 \u00b1 0.5\u00b0C. The cages were positioned onto the receiver plates (RPC-1; Data Sciences) and radio signal reporting CBT and LA information from the implanted transmitter was recorded continuously with a fully automated data acquisition system (Dataquest ART, Data Sciences, St. Paul, MN). Access to food and water was ad libitum and the light:dark cycle was of 12\u00a0hr:12\u00a0hr. Anapyrexia was induced by intraperitoneal injection of Bacterial lipopolysaccharides (LPS) (0127:B8, Sigma, St. Louis, MO) at a dose of 10 mg/kg in saline.\n\n### Data analysis and statistics\n\nData are shown as the mean \u00b1 SEM. A Student\u2019s t test (unpaired, two-tailed) was used to determine differences between two groups. Data that included more than two groups were analyzed by one-way ANOVA, with post hoc Sidak\u2019s multiple comparisons test. Correlations were determined by two-tailed Perason\u2019s correlation. All statistical analyses were conducted using Excel or GraphPad Prism version 6, and a p value <0.05 was considered significant throughout. No statistical methods were used to predetermine sample sizes, which were comparable to those in previous publications (Viader et al., 2015) and based on previous knowledge of the variability associated with the different experiments and the expected differences.\n",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "9cc0bed1-c20a-416b-a3f8-3c798bd65638",
+      "submission_id": "9eb3fd94-e3fc-4e11-aacc-6b6d544647b0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ben Barres, Stanford School of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.12345.016](https://doi.org/10.7554/eLife.12345.016)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"A chemoproteomic atlas of brain serine hydrolases identifies cell type-specific pathways regulating neuroinflammation\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Aviv Regev as the Senior Editor. One of the two reviewers, Nephi Stella, has agreed to reveal his identity.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this interesting study, Viader et al. assess the distribution of serine hydrolases in cultured mouse neurons, astrocytes and microglia. They use activity-based protein profiling combined with multidimensional LC-MS and find that distinct groups of serine hydrolases are enriched in specific neural cell types. Comparison of serine hydrolase expression profiles in neural cell types correlates well with the recently reported RNA-seq database from the Barres lab (Zheng et al., 2014), with some noticeable exceptions.\n\nOf particular interest are results showing the clear compartmentalization in the functionality of the endocannabinoid/eicosanoid signaling between neurons and microglia. Furthermore, the in vivo testing of these particular signaling pathways using selective inhibitor and knockout technology provides a convincing validation.\n\nHowever, there are a few textual changes that will need to be made before the manuscript is ready for acceptance.\n\nEssential revisions:\n\n1) With regards your cell culture preparations, please provide more specifics and the actual data of their characterization. What were the readouts (specific antibodies) and the sampling approach used to determine cell numbers? What non-neuronal cells?\n\n2) Microglial cells were cultured in the presence GMCSF, which induces a dendritic-like phenotype in these cells. Please comment on how this influences the interpretation of these results.\n\n3) Add to the Discussion something on the limitation of this study. Specifically, the initial profiling was performed on cells in culture, which are known to only partially model in situ CNS cells. Several key validation steps of these results will have to be performed in future studies, including confirming key cell culture results using freshly isolated CNS cells, for example using FACS. Further studies using cell specific genetic alteration will also provide further validation of the results.\n\n4) Regarding IHC analysis, please provide methodological specifics: were masks generated to outline each cell or the number of positive pixels counted? How were the background signal and global adjustments set?\n\n5) In Figure 2C, involvement of CB1 and CB2 receptors is tested with antagonists applied at 5 \u00b5M, which is 2 orders of magnitude higher than their respective potency at these target (and thus too high to leverage their selectivity). Testing the response obtained with lower concentrations of these antagonists would be more convincing and informative.\n",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "976e507d-e1d7-424b-a80b-fb7e93cf5d46",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C1",
+      "claim": "Serine hydrolases play fundamental roles in CNS metabolism and signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Serine hydrolases are a diverse enzyme class that plays fundamental roles in CNS metabolism and signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about serine hydrolases in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "de0228ab-c2ba-40de-8a96-9c10e3125340",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C2",
+      "claim": "Activity-based proteomic analysis detected over 70 serine hydrolase activities across neuron, astrocyte, and microglia proteomes.",
+      "claim_type": "EXPLICIT",
+      "source": "We then identified these serine hydrolases by treating brain cell proteomes with a biotin-coupled FP probe (Liu et al., 1999), followed by enrichment with avidin chromatography, and multidimensional LC-MS (MudPIT) analysis (Figure 1A) (Washburn et al., 2001, Jessani et al., 2005), which detected, in total, over 70 serine hydrolase activities across neuron, astrocyte, and microglia proteomes (Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from ABPP-MudPIT analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "4e13e9b0-fe57-4545-8d48-7323bd52ff2d",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C3",
+      "claim": "Serine hydrolase activity profiles showed high correlations for replicates from the same cell type (mean r = 0.91 \u00b1 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the serine hydrolase activity profiles measured by ABPP-MudPIT showed excellent reproducibility across the four biological replicates performed for each cell type, with high correlations for replicates from the same cell type (Pearson's correlation, mean r = 0.91 \u00b1 0.01) and much lower correlations for serine hydrolase activity profiles across differing cell types (Pearson's correlation, mean r = 0.62 \u00b1 0.02) (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis of experimental replicates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "d0916f80-f20b-4da7-8376-f025900a3976",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C4",
+      "claim": "Microglia and astrocytes displayed the highest pairwise correlation across the brain cell types examined.",
+      "claim_type": "EXPLICIT",
+      "source": "Microglia and astrocytes displayed the highest pairwise correlation across the brain cell types examined, suggesting greater similarity of serine hydrolase metabolic activities among glia than between neurons and glia (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by correlation analysis of ABPP data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "97de79ac-cc2a-414f-b155-90a87b0e21b7",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C5",
+      "claim": "Greater similarity of serine hydrolase metabolic activities exists among glia than between neurons and glia.",
+      "claim_type": "EXPLICIT",
+      "source": "Microglia and astrocytes displayed the highest pairwise correlation across the brain cell types examined, suggesting greater similarity of serine hydrolase metabolic activities among glia than between neurons and glia (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation data showing higher similarity between microglia and astrocytes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "3c573ccf-7bf1-49d8-ac98-c8ccb71b0c57",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C6",
+      "claim": "ABPP data showed good overall correlation with RNA-seq data across mouse brain cell types (Pearson's correlation r = 0.33, p < 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of our ABPP data with recently reported mRNA expression results generated by RNA-seq (Zhang et al., 2014) revealed a good overall correlation across mouse brain cell types (Pearson's correlation r = 0.33, ****p < 0.0001), particularly for those serine hydrolases displaying prominent cell type-specific enrichment (Pearson's correlation r = 0.54, **p < 0.01; Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical comparison with published RNA-seq data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "8477a1f9-1c1b-428e-a38b-eef1ffb56d7a",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C7",
+      "claim": "Serine hydrolases displaying prominent cell type-specific enrichment showed particularly good correlation between ABPP and RNA-seq data (Pearson's correlation r = 0.54, p < 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of our ABPP data with recently reported mRNA expression results generated by RNA-seq (Zhang et al., 2014) revealed a good overall correlation across mouse brain cell types (Pearson's correlation r = 0.33, ****p < 0.0001), particularly for those serine hydrolases displaying prominent cell type-specific enrichment (Pearson's correlation r = 0.54, **p < 0.01; Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical analysis comparing ABPP and RNA-seq data for cell type-enriched enzymes.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "d879178d-9cd3-4b21-b35a-26d776c12a4f",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C8",
+      "claim": "ABHD16A shows near-equivalent RNA-seq signals across all three brain cell types but predominant activity signals in one cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed, however, a few notable exceptions of enzymes where transcript and activity were poorly correlated, including enzymes that showed i) near-equivalent RNA-seq signals across all three brain cell types, but predominant activity signals in one cell type (e.g., ABHD16A); ii) strong RNA-seq and activity signals in distinct cell types (e.g., HTRA1), and iii) strong RNA-seq and activity signals that were anti-correlated across all three cell types (e.g. MGLL) (Figure 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of ABPP and RNA-seq data for specific enzymes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "5e1602ea-42f4-4835-8856-0383148f6419",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C9",
+      "claim": "HTRA1 shows strong RNA-seq and activity signals in distinct cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed, however, a few notable exceptions of enzymes where transcript and activity were poorly correlated, including enzymes that showed i) near-equivalent RNA-seq signals across all three brain cell types, but predominant activity signals in one cell type (e.g., ABHD16A); ii) strong RNA-seq and activity signals in distinct cell types (e.g., HTRA1), and iii) strong RNA-seq and activity signals that were anti-correlated across all three cell types (e.g. MGLL) (Figure 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of ABPP and RNA-seq data for HTRA1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "98f3904d-d4a4-43b8-9b35-f0a05e7e31fa",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C10",
+      "claim": "MGLL shows strong RNA-seq and activity signals that are anti-correlated across all three cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed, however, a few notable exceptions of enzymes where transcript and activity were poorly correlated, including enzymes that showed i) near-equivalent RNA-seq signals across all three brain cell types, but predominant activity signals in one cell type (e.g., ABHD16A); ii) strong RNA-seq and activity signals in distinct cell types (e.g., HTRA1), and iii) strong RNA-seq and activity signals that were anti-correlated across all three cell types (e.g. MGLL) (Figure 1E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of ABPP and RNA-seq data for MGLL.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "9394642e-68ac-4d44-ab05-7f83e942c558",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C11",
+      "claim": "DAGL\u03b1 is the principal 2-AG biosynthetic enzyme in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have demonstrated that diacylglycerol lipase-\u03b1 (DAGL\u03b1) (Bisogno et al., 2003) and monoacylglycerol lipase (MGLL) (Karlsson et al., 1997) are the principal 2-AG biosynthetic and degradative enzymes, respectively, in the brain (Long et al., 2009, Chanda et al., 2010, Gao et al., 2010, Schlosburg et al., 2010, Tanimura et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "de6d5203-c1c5-4a82-bb4e-8c9b5c33aee1",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C12",
+      "claim": "MGLL is the principal 2-AG degradative enzyme in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have demonstrated that diacylglycerol lipase-\u03b1 (DAGL\u03b1) (Bisogno et al., 2003) and monoacylglycerol lipase (MGLL) (Karlsson et al., 1997) are the principal 2-AG biosynthetic and degradative enzymes, respectively, in the brain (Long et al., 2009, Chanda et al., 2010, Gao et al., 2010, Schlosburg et al., 2010, Tanimura et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "d007858c-53b0-4e52-8353-f948953fd44e",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C13",
+      "claim": "DAGL\u03b1 and MGLL are preferentially expressed in neurons compared to astrocytes or microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "Our ABPP data revealed that both of these enzymes are preferentially expressed in neurons compared to astrocytes or microglia (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ABPP experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "df55fd42-034f-4090-9061-f1d2a7c91432",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C14",
+      "claim": "Microglia express high levels of DAGL\u03b2 and ABHD12.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, microglia expressed high levels of the alternative 2-AG biosynthetic and degradative enzymes DAGL\u03b2 (Bisogno et al., 2003) and ABHD12 (Blankman et al., 2007), respectively (Figures 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ABPP data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "e0e0ebb9-7cf6-4226-abac-7b7068d05fcf",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C15",
+      "claim": "RNA-seq measurements support the enriched expression of DAGL\u03b2 and ABHD12 in microglia compared to neurons or astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous RNA-seq measurements also supported the enriched expression of DAGL\u03b2 and ABHD12 in microglia compared to neurons or astrocytes (Zhang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published RNA-seq data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "98bd4ed4-938c-41c6-b7df-6068a1243b9a",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C16",
+      "claim": "ABHD12 substantially contributes to 2-AG hydrolysis in microglia and astrocytes, but not neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "We verified strong DAGL\u03b2 activity in microglia using the tailored activity-based probe HT-01 (Hsu et al., 2012) (Figure 1\u2014figure supplement 2A) and confirmed that ABHD12 substantially contributed to 2-AG hydrolysis in microglia (and astrocytes), but not neurons using cells isolated from Abhd12\u2013/\u2013 mice (Blankman et al., 2013) (Figure 1\u2014figure supplement 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data using Abhd12 knockout mice shown in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "66479e0c-e1f5-4de1-addd-7c86472c6e64",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C17",
+      "claim": "Abhd12\u2013/\u2013 mice have normal brain 2-AG content.",
+      "claim_type": "EXPLICIT",
+      "source": "ABHD12 exhibits 2-AG hydrolase activity in vitro (Blankman et al., 2007, Navia-Paldanius et al., 2012), but Abhd12\u2013/\u2013 mice have normal brain 2-AG content (Blankman et al., 2013), and therefore the potential physiological relevance of ABHD12 as a regulator of 2-AG metabolism remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "38a80622-ec89-4191-bd75-cd79f944b4e7",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C18",
+      "claim": "Microglia from Abhd12\u2013/\u2013 mice show ~40% reductions in 2-AG hydrolytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Having found that microglia from Abhd12\u2013/\u2013 mice show ~40% reductions in 2-AG hydrolytic activity (Figure 1\u2014figure supplement 2B), we next examined 2-AG content in these cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "242e7579-ac9f-48c5-8d9a-2e3ba1230f58",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C19",
+      "claim": "Abhd12\u2013/\u2013 microglia display a modest but significant increase in cellular 2-AG compared to Abhd12+/+ microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "Abhd12\u2013/\u2013 microglia displayed a modest, but significant increase in cellular 2-AG compared to Abhd12+/+ microglia (Figure 2A); in contrast, 2-AG content in Abhd12\u2013/\u2013 neurons and astrocytes was unaltered and instead elevated in Mgll\u2013/\u2013 neurons and astrocytes (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "7ab2dca1-b3e9-4770-9898-5ff491660dd3",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C20",
+      "claim": "2-AG content in Abhd12\u2013/\u2013 neurons and astrocytes is unaltered.",
+      "claim_type": "EXPLICIT",
+      "source": "Abhd12\u2013/\u2013 microglia displayed a modest, but significant increase in cellular 2-AG compared to Abhd12+/+ microglia (Figure 2A); in contrast, 2-AG content in Abhd12\u2013/\u2013 neurons and astrocytes was unaltered and instead elevated in Mgll\u2013/\u2013 neurons and astrocytes (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "7ec2b125-7c40-4a15-a00e-66b783a2b5c9",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C21",
+      "claim": "2-AG content is elevated in Mgll\u2013/\u2013 neurons and astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Abhd12\u2013/\u2013 microglia displayed a modest, but significant increase in cellular 2-AG compared to Abhd12+/+ microglia (Figure 2A); in contrast, 2-AG content in Abhd12\u2013/\u2013 neurons and astrocytes was unaltered and instead elevated in Mgll\u2013/\u2013 neurons and astrocytes (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "f762c2d7-6cbf-4bf3-a2a4-1df0c5a98142",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C22",
+      "claim": "Mgll\u2013/\u2013 microglia show a strong elevation in cellular 2-AG that is much greater in magnitude compared to Abhd12\u2013/\u2013 microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "Mgll\u2013/\u2013 microglia also showed a strong elevation in cellular 2-AG that was much greater in magnitude compared to that observed in Abhd12\u2013/\u2013 microglia (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "585bf1d3-ee6e-438d-ab9b-1aeb0d983c12",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C23",
+      "claim": "Secreted 2-AG content is much higher from Abhd12\u2013/\u2013 microglia compared to wild type microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, however, secreted 2-AG content was much higher from Abhd12\u2013/\u2013 microglia and unaltered from Mgll\u2013/\u2013 microglia compared to wild type microglia (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "4630c0d7-9a87-4e7d-bb3d-977e1c4b4bd1",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C24",
+      "claim": "Secreted 2-AG content is unaltered from Mgll\u2013/\u2013 microglia compared to wild type microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, however, secreted 2-AG content was much higher from Abhd12\u2013/\u2013 microglia and unaltered from Mgll\u2013/\u2013 microglia compared to wild type microglia (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "6b3e5e03-9a82-4155-a2ab-f8410f3935da",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C25",
+      "claim": "ABHD12 primarily regulates extracellular pools of 2-AG in microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggested that ABHD12 primarily regulates extracellular pools of 2-AG in microglia (Figure 2B), which is consistent with the enzyme's luminal/extracellular orientation (Blankman et al., 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from experimental data on secreted 2-AG and supported by citation about enzyme orientation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "49bc9ff1-a8a5-4fde-90db-91c4ea673f3f",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C26",
+      "claim": "ABHD12 has a luminal/extracellular orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggested that ABHD12 primarily regulates extracellular pools of 2-AG in microglia (Figure 2B), which is consistent with the enzyme's luminal/extracellular orientation (Blankman et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "c122336d-0f49-4653-ad4e-ebff43f10519",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C27",
+      "claim": "Secreted 2-AG is unaltered in Abhd12\u2013/\u2013 neurons and astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Secreted 2-AG was unaltered in Abhd12\u2013/\u2013 neurons and astrocytes (but elevated in Mgll\u2013/\u2013 neurons) (Figure 2B), indicating that ABHD12 specifically regulates extracellular 2-AG content in microglia.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "26c8f69c-491b-4268-a8ab-dbd4145b3087",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C28",
+      "claim": "Secreted 2-AG is elevated in Mgll\u2013/\u2013 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Secreted 2-AG was unaltered in Abhd12\u2013/\u2013 neurons and astrocytes (but elevated in Mgll\u2013/\u2013 neurons) (Figure 2B), indicating that ABHD12 specifically regulates extracellular 2-AG content in microglia.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "8323e1aa-8b1c-45cd-a06d-41c19fff42fb",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C29",
+      "claim": "ABHD12 specifically regulates extracellular 2-AG content in microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "Secreted 2-AG was unaltered in Abhd12\u2013/\u2013 neurons and astrocytes (but elevated in Mgll\u2013/\u2013 neurons) (Figure 2B), indicating that ABHD12 specifically regulates extracellular 2-AG content in microglia.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from experimental data comparing different cell types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "e6d1e8da-9e3b-4181-8deb-0a9a8a705e80",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C30",
+      "claim": "Abhd12\u2013/\u2013 microglia show tonically increased CBR-dependent ERK1/2 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this extracellular pool of 2-AG being competent for signaling, we observed tonically increased CBR-dependent ERK1/2 phosphorylation in Abhd12\u2013/\u2013 microglia (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 2C and 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "b959464e-887a-4998-8e23-53971213ed61",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C31",
+      "claim": "Abhd12+/+ and Abhd12\u2013/\u2013 microglia exhibit similar concentrations of prostaglandins basally and after LPS stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Abhd12+/+ and Abhd12\u2013/\u2013 microglia exhibited similar concentrations of prostaglandins, either basally or after stimulation with bacteria-derived lipopolysaccharide (LPS; 100 ng/mL, 4 hr) (Figure 2E) and did not show differences in LPS-induced cytokine production (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "4f0aca06-cd4f-4734-9042-4d23546761be",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C32",
+      "claim": "Abhd12+/+ and Abhd12\u2013/\u2013 microglia do not show differences in LPS-induced cytokine production.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Abhd12+/+ and Abhd12\u2013/\u2013 microglia exhibited similar concentrations of prostaglandins, either basally or after stimulation with bacteria-derived lipopolysaccharide (LPS; 100 ng/mL, 4 hr) (Figure 2E) and did not show differences in LPS-induced cytokine production (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "644e8530-3c82-4481-8d47-d446b2deb307",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C33",
+      "claim": "Treatment of microglia with the MGLL inhibitor KML29 significantly lowers basal and LPS-induced prostaglandins.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, treatment of microglia with the MGLL inhibitor KML29 (Chang et al., 2012) significantly lowered basal and LPS-induced prostaglandins (Figure 2G), as well as LPS-induced cytokine production (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "71a6ff47-ac60-4298-a64b-c3b071bbc4bb",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C34",
+      "claim": "Treatment of microglia with the MGLL inhibitor KML29 lowers LPS-induced cytokine production.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, treatment of microglia with the MGLL inhibitor KML29 (Chang et al., 2012) significantly lowered basal and LPS-induced prostaglandins (Figure 2G), as well as LPS-induced cytokine production (Figure 2H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "547ae279-0901-4cb0-b236-a518f6defb5c",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C35",
+      "claim": "MGLL-inactivated microglia are impaired in LPS-induced prostaglandin production and inflammatory responses.",
+      "claim_type": "EXPLICIT",
+      "source": "These data are consistent with recent reports showing that MGLL-inactivated microglia are impaired in LPS-induced prostaglandin production and inflammatory responses (Pihlaja et al., 2015, Viader et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to recent studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "ca8e4aa2-4ca3-46e3-8acd-f689f221e353",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C36",
+      "claim": "ABHD12 is a major regulator of secreted 2-AG and CBR activation in microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results thus indicate that ABHD12 is a major regulator of secreted 2-AG and CBR activation in microglia, while MGLL is the primary intracellular 2-AG hydrolase in these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental results on secreted 2-AG and ERK phosphorylation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "d12f112e-8fdf-49ae-b28a-e83e669649cd",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C37",
+      "claim": "MGLL is the primary intracellular 2-AG hydrolase in microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results thus indicate that ABHD12 is a major regulator of secreted 2-AG and CBR activation in microglia, while MGLL is the primary intracellular 2-AG hydrolase in these cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental results on intracellular 2-AG content.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "8e510f63-bfde-4d4b-9913-4658266b9503",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C38",
+      "claim": "Prostaglandin biosynthetic enzymes PTGS1 and PTGS2 are localized intracellularly.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that the prostaglandin biosynthetic enzymes PTGS1 and PTGS2 are also localized intracellularly (Soberman and Christmas, 2003), it is perhaps not surprising that eCB-eicosanoid crosstalk was also found to be governed by MGLL rather than ABHD12 in microglia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "39b907c4-86cf-4211-a89b-9a078d78fc98",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C39",
+      "claim": "eCB-eicosanoid crosstalk is governed by MGLL rather than ABHD12 in microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that the prostaglandin biosynthetic enzymes PTGS1 and PTGS2 are also localized intracellularly (Soberman and Christmas, 2003), it is perhaps not surprising that eCB-eicosanoid crosstalk was also found to be governed by MGLL rather than ABHD12 in microglia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from experimental data on prostaglandin production and the intracellular localization of biosynthetic enzymes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "274a0946-350d-489c-af0e-eb5c9630eaf6",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C40",
+      "claim": "Neurons and astrocytes from Dagla\u2013/\u2013 mice display much lower 2-AG content compared to neurons and astrocytes from wild type or Daglb\u2013/\u2013 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons and astrocytes from Dagla\u2013/\u2013 mice displayed much lower 2-AG content compared to neurons and astrocytes from wild type or Daglb\u2013/\u2013 mice, indicating that DAGL\u03b1 is responsible for the bulk of 2-AG biosynthesis in these brain cell types (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 3A and 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "b517e370-f9aa-4a05-b17f-5984a2b9c134",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C41",
+      "claim": "DAGL\u03b1 is responsible for the bulk of 2-AG biosynthesis in neurons and astrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons and astrocytes from Dagla\u2013/\u2013 mice displayed much lower 2-AG content compared to neurons and astrocytes from wild type or Daglb\u2013/\u2013 mice, indicating that DAGL\u03b1 is responsible for the bulk of 2-AG biosynthesis in these brain cell types (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is inferred from experimental data comparing Dagla and Daglb knockout mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "15222e3a-58cf-4a4b-a394-1b465e84f909",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C42",
+      "claim": "Microglia from Daglb\u2013/\u2013, but not Dagla\u2013/\u2013 mice show substantial reductions in 2-AG.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, microglia from Daglb\u2013/\u2013, but not Dagla\u2013/\u2013 mice showed substantial reductions in 2-AG (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "043cfc47-be1d-4586-b8cf-6f062d9f6461",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C43",
+      "claim": "AA is lower in neurons and astrocytes from Dagla\u2013/\u2013 mice and microglia from Daglb\u2013/\u2013 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar profile was observed for AA, which was lower in neurons and astrocytes from Dagla\u2013/\u2013 mice and microglia from Daglb\u2013/\u2013 mice (Figure 3A\u2013C), as well as for prostaglandins, with the exception that we did not detect prostaglandins in neurons (Figure 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 3A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "517a25e3-abc0-47f3-b23c-76287e84ff6b",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C44",
+      "claim": "Prostaglandins are lower in astrocytes from Dagla\u2013/\u2013 mice and microglia from Daglb\u2013/\u2013 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar profile was observed for AA, which was lower in neurons and astrocytes from Dagla\u2013/\u2013 mice and microglia from Daglb\u2013/\u2013 mice (Figure 3A\u2013C), as well as for prostaglandins, with the exception that we did not detect prostaglandins in neurons (Figure 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 3A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "27ab7ef6-9087-42e3-82d0-5f500650af95",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C45",
+      "claim": "Prostaglandins were not detected in neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar profile was observed for AA, which was lower in neurons and astrocytes from Dagla\u2013/\u2013 mice and microglia from Daglb\u2013/\u2013 mice (Figure 3A\u2013C), as well as for prostaglandins, with the exception that we did not detect prostaglandins in neurons (Figure 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 3A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "9f5e0d76-e4e4-4b22-bba4-09e71dca2176",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C46",
+      "claim": "Wild-type microglia treated with DAGL inhibitors KT109 and KT172 show comparable lipid changes to Daglb\u2013/\u2013 microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed comparable lipid changes in wild-type microglia treated with two DAGL inhibitors (KT109 and KT172), but not with a structurally related inactive control compound (KT195) (Hsu et al., 2012) (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "19a7cb67-827d-4385-8f39-f2fd4298f91d",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C47",
+      "claim": "Wild-type microglia treated with the inactive control compound KT195 do not show lipid changes.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed comparable lipid changes in wild-type microglia treated with two DAGL inhibitors (KT109 and KT172), but not with a structurally related inactive control compound (KT195) (Hsu et al., 2012) (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "0e4824f7-646c-41a7-9589-c0b5e412c14e",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C48",
+      "claim": "DAGL\u03b2 inactivation results in coordinated decreases in intracellular 2-AG, AA, and prostaglandins in LPS-stimulated microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "We next assessed the lipid profiles of Daglb+/+ and \u2013/\u2013 microglia following LPS stimulation (100 ng/mL, for 4 hr) and found that DAGL\u03b2 inactivation resulted in the coordinated decreases in intracellular 2-AG, AA, and prostaglandins (Figure 4A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "5f672057-9344-44ad-bdf7-32c35e4c6033",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C49",
+      "claim": "No changes in 2-AG, AA, and prostaglandins are observed in Dagla\u2013/\u2013 microglia following LPS stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We next assessed the lipid profiles of Daglb+/+ and \u2013/\u2013 microglia following LPS stimulation (100 ng/mL, for 4 hr) and found that DAGL\u03b2 inactivation resulted in the coordinated decreases in intracellular 2-AG, AA, and prostaglandins (Figure 4A\u2013C). No changes in these lipids were observed in Dagla\u2013/\u2013 microglia.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "c88d4f32-1d96-4a0f-b757-6935365a72e1",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C50",
+      "claim": "Daglb\u2013/\u2013 microglia, but not Dagla\u2013/\u2013 microglia, display marked reductions in LPS-induced inflammatory cytokine production compared to wild type microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "Daglb\u2013/\u2013 microglia, but not Dagla\u2013/\u2013 microglia also displayed marked reductions in LPS-induced inflammatory cytokine production compared to wild type microglia (Figure 4D\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 4D-J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "8042a01b-44a3-41f5-a7c4-95b6e2445384",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C51",
+      "claim": "LPS-stimulated wild type microglia pre-treated with KT172 show similar lipid and cytokine reductions as Daglb\u2013/\u2013 microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar lipid and cytokine reductions were observed in LPS-stimulated wild type microglia that were pre-treated (3 hr) with KT172, but not KT195 (Figure 4K\u2013U).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 4K-U.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "53a47823-fe09-4e65-9a9b-f294b65b9a60",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C52",
+      "claim": "LPS-stimulated wild type microglia pre-treated with KT195 do not show lipid and cytokine reductions.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar lipid and cytokine reductions were observed in LPS-stimulated wild type microglia that were pre-treated (3 hr) with KT172, but not KT195 (Figure 4K\u2013U).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 4K-U.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "a5db209c-346b-408e-b445-9b7cbbbd64a8",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C53",
+      "claim": "Distinct DAGL enzymes control eCB and eicosanoid metabolism in astrocytes and neurons (DAGL\u03b1) versus microglia (DAGL\u03b2).",
+      "claim_type": "EXPLICIT",
+      "source": "These results, taken together, demonstrate that distinct DAGL enzymes are responsible for controlling eCB and eicosanoid metabolism in astrocytes and neurons (DAGL\u03b1) versus microglia (DAGL\u03b2), and that blocking DAGL\u03b2 genetically or pharmacologically attenuates LPS-induced inflammatory responses in microglia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental results comparing different cell types and knockout mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "dfeadd18-2263-4151-81dc-fb13da3f7e1b",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C54",
+      "claim": "Blocking DAGL\u03b2 genetically or pharmacologically attenuates LPS-induced inflammatory responses in microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "These results, taken together, demonstrate that distinct DAGL enzymes are responsible for controlling eCB and eicosanoid metabolism in astrocytes and neurons (DAGL\u03b1) versus microglia (DAGL\u03b2), and that blocking DAGL\u03b2 genetically or pharmacologically attenuates LPS-induced inflammatory responses in microglia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from genetic knockout and pharmacological inhibition studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "5ea4080a-92b1-46a3-aa98-e62920b5be86",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C55",
+      "claim": "Dagla\u2013/\u2013 mice have been shown to display dramatic reductions in brain 2-AG (~80-90%).",
+      "claim_type": "EXPLICIT",
+      "source": "Dagla\u2013/\u2013 mice have been shown to display dramatic reductions in brain 2-AG (~80-90%), demonstrating that DAGL\u03b1 is responsible for the bulk of 2-AG biosynthesis in the CNS (Gao et al., 2010, Tanimura et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "96390c95-2d6e-4d95-a584-e7ee65b8be5a",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C56",
+      "claim": "DAGL\u03b1 is responsible for the bulk of 2-AG biosynthesis in the CNS.",
+      "claim_type": "EXPLICIT",
+      "source": "Dagla\u2013/\u2013 mice have been shown to display dramatic reductions in brain 2-AG (~80-90%), demonstrating that DAGL\u03b1 is responsible for the bulk of 2-AG biosynthesis in the CNS (Gao et al., 2010, Tanimura et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies showing dramatic 2-AG reductions in Dagla knockout mice.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "892106e8-2b5f-43b9-a41b-97420d485ea1",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C57",
+      "claim": "Daglb\u2013/\u2013 mice have been reported to show either no changes or modest decreases in brain 2-AG.",
+      "claim_type": "EXPLICIT",
+      "source": "The contribution of DAGL\u03b2 is less clear, as Daglb\u2013/\u2013 mice have been reported to show either no changes (Hsu et al., 2012, Tanimura et al., 2012) or modest decreases (Gao et al., 2010) in brain 2-AG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies with conflicting results.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "5f7aeb6d-a4f5-4483-8f83-b262f09e7a04",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C58",
+      "claim": "Brain 2-AG is severely depleted (~90%) in Dagla\u2013/\u2013 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data generally matched these previous studies, as we observed severely depleted brain 2-AG (~90%, Figure 5A) in Dagla\u2013/\u2013 mice, which was accompanied by a substantial increase in 1-stearoyl-2-arachidonoyl-sn-glycerol (SAG) (Figure 5B), a main precursor of 2-AG (Shonesy et al., 2014, Ogasawara et al., 2015), and corresponding reductions in brain AA (Figure 5C) and prostaglandins (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "9ae8ebb1-c41b-405f-9e1f-b84ee9c399e3",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C59",
+      "claim": "Dagla\u2013/\u2013 mice show a substantial increase in brain SAG.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data generally matched these previous studies, as we observed severely depleted brain 2-AG (~90%, Figure 5A) in Dagla\u2013/\u2013 mice, which was accompanied by a substantial increase in 1-stearoyl-2-arachidonoyl-sn-glycerol (SAG) (Figure 5B), a main precursor of 2-AG (Shonesy et al., 2014, Ogasawara et al., 2015), and corresponding reductions in brain AA (Figure 5C) and prostaglandins (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "74aa394d-d9bd-4f4f-82bc-2e1da702590c",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C60",
+      "claim": "SAG is a main precursor of 2-AG.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data generally matched these previous studies, as we observed severely depleted brain 2-AG (~90%, Figure 5A) in Dagla\u2013/\u2013 mice, which was accompanied by a substantial increase in 1-stearoyl-2-arachidonoyl-sn-glycerol (SAG) (Figure 5B), a main precursor of 2-AG (Shonesy et al., 2014, Ogasawara et al., 2015), and corresponding reductions in brain AA (Figure 5C) and prostaglandins (Figure 5D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "8df9f440-88ed-4de8-8694-9129a1e383e7",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C61",
+      "claim": "Dagla\u2013/\u2013 mice show reductions in brain AA and prostaglandins.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data generally matched these previous studies, as we observed severely depleted brain 2-AG (~90%, Figure 5A) in Dagla\u2013/\u2013 mice, which was accompanied by a substantial increase in 1-stearoyl-2-arachidonoyl-sn-glycerol (SAG) (Figure 5B), a main precursor of 2-AG (Shonesy et al., 2014, Ogasawara et al., 2015), and corresponding reductions in brain AA (Figure 5C) and prostaglandins (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "d8bb6c20-06b6-4830-bf5d-5aabe1ee498f",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C62",
+      "claim": "Brain 2-AG, SAG, and AA content are unaltered in Daglb\u2013/\u2013 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, brain 2-AG, SAG, and AA content were unaltered in Daglb\u2013/\u2013 mice (Figure 5A\u2013C), although these animals did exhibit a significant reduction in brain PGE2 (Figure 5D), perhaps owing to the modulation of 2-AG and related lipids selectively in microglia, which, despite representing only 10% of all brain cells (Aguzzi et al., 2013), display enriched expression of the prostaglandin synthase PTGS1 (or cyclooxygenase-1 (COX-1)) (Hoozemans et al., 2001, Font-Nieves et al., 2012, Zhang et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 5A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "20a72822-e6e6-40a3-bfd1-1f968da964b5",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C63",
+      "claim": "Daglb\u2013/\u2013 mice exhibit a significant reduction in brain PGE2.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, brain 2-AG, SAG, and AA content were unaltered in Daglb\u2013/\u2013 mice (Figure 5A\u2013C), although these animals did exhibit a significant reduction in brain PGE2 (Figure 5D), perhaps owing to the modulation of 2-AG and related lipids selectively in microglia, which, despite representing only 10% of all brain cells (Aguzzi et al., 2013), display enriched expression of the prostaglandin synthase PTGS1 (or cyclooxygenase-1 (COX-1)) (Hoozemans et al., 2001, Font-Nieves et al., 2012, Zhang et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "7fb53892-e015-48b6-858e-4fdf9c2a7e09",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C64",
+      "claim": "Microglia represent only 10% of all brain cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, brain 2-AG, SAG, and AA content were unaltered in Daglb\u2013/\u2013 mice (Figure 5A\u2013C), although these animals did exhibit a significant reduction in brain PGE2 (Figure 5D), perhaps owing to the modulation of 2-AG and related lipids selectively in microglia, which, despite representing only 10% of all brain cells (Aguzzi et al., 2013), display enriched expression of the prostaglandin synthase PTGS1 (or cyclooxygenase-1 (COX-1)) (Hoozemans et al., 2001, Font-Nieves et al., 2012, Zhang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "919882a4-b3d5-4558-9b6b-4a22d2df61ca",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C65",
+      "claim": "Microglia display enriched expression of the prostaglandin synthase PTGS1 (or cyclooxygenase-1 (COX-1)).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, brain 2-AG, SAG, and AA content were unaltered in Daglb\u2013/\u2013 mice (Figure 5A\u2013C), although these animals did exhibit a significant reduction in brain PGE2 (Figure 5D), perhaps owing to the modulation of 2-AG and related lipids selectively in microglia, which, despite representing only 10% of all brain cells (Aguzzi et al., 2013), display enriched expression of the prostaglandin synthase PTGS1 (or cyclooxygenase-1 (COX-1)) (Hoozemans et al., 2001, Font-Nieves et al., 2012, Zhang et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "4f024a71-d7fd-422a-87cc-2322178dbb32",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C66",
+      "claim": "Pharmacological blockade of 2-AG hydrolysis with the MGLL inhibitor MJN110 promotes a significant recovery of brain 2-AG content in Dagla\u2013/\u2013 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We first found that the pharmacological blockade of 2-AG hydrolysis with the MGLL inhibitor MJN110 (Niphakis et al., 2013) promoted a significant recovery of brain 2-AG content in Dagla\u2013/\u2013 mice (Figure 5E and F), consistent with a previous report (Shonesy et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 5E and 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "4feafc78-fb16-450e-ae7d-06048fdcf5c2",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C67",
+      "claim": "A high dose of DO34 (100 mg/kg, i.p.) near-completely blocks DAGL\u03b2 activity in brain.",
+      "claim_type": "EXPLICIT",
+      "source": "We then tested inhibition of DAGL\u03b2 using a recently described CNS-active DAGL inhibitor DO34 (Ogasawara et al., 2015) and found that a high dose of this compound (100 mg/kg, i.p.) near-completely blocked DAGL\u03b2 activity in brain (Figure 5E) and suppressed the MJN110-induced rescue of brain 2-AG in Dagla\u2013/\u2013 mice (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "bde839d4-ccfc-4aba-938b-6f019c4d137c",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C68",
+      "claim": "DO34 suppresses the MJN110-induced rescue of brain 2-AG in Dagla\u2013/\u2013 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We then tested inhibition of DAGL\u03b2 using a recently described CNS-active DAGL inhibitor DO34 (Ogasawara et al., 2015) and found that a high dose of this compound (100 mg/kg, i.p.) near-completely blocked DAGL\u03b2 activity in brain (Figure 5E) and suppressed the MJN110-induced rescue of brain 2-AG in Dagla\u2013/\u2013 mice (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "8b2f50cb-2bbd-44d9-bd4f-1b32e79ce659",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C69",
+      "claim": "DAGL\u03b2 can contribute to bulk 2-AG content in the CNS, particularly in the absence of DAGL\u03b1.",
+      "claim_type": "EXPLICIT",
+      "source": "These data thus indicate that DAGL\u03b2 can contribute to bulk 2-AG content in the CNS, in particular, in the absence of DAGL\u03b1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from experimental data showing DAGL\u03b2 inhibition blocks 2-AG recovery in Dagla knockout mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "7d7e1a3b-9d08-4037-957b-28885412d981",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C70",
+      "claim": "MGLL blockade lowers prostaglandins and attenuates neuroinflammation in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "MGLL blockade has been shown to lower prostaglandins and attenuate neuroinflammation in the brain (Nomura et al., 2011, Chen et al., 2012, Piro et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "c6bf05d2-c281-4f77-ace1-9160969841d2",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C71",
+      "claim": "LPS treatment (1 mg/kg, once per day for four days) results in a significant increase in brain PGE2.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild type and DAGL-disrupted mice were treated with LPS (1 mg/kg, once per day for four days) and then sacrificed and their lipid profiles and microglial activation state analyzed. This LPS treatment paradigm resulted in a significant increase in brain PGE2, but other measured lipids (2-AG, SAG, AA, PGD2) were unaltered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from LPS-treated mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "82805204-3322-4948-a42a-6dbdd52dde65",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C72",
+      "claim": "LPS treatment (1 mg/kg, once per day for four days) does not alter brain 2-AG, SAG, AA, or PGD2 in wild type mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild type and DAGL-disrupted mice were treated with LPS (1 mg/kg, once per day for four days) and then sacrificed and their lipid profiles and microglial activation state analyzed. This LPS treatment paradigm resulted in a significant increase in brain PGE2, but other measured lipids (2-AG, SAG, AA, PGD2) were unaltered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from LPS-treated mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "51883e4b-05d2-46bf-865e-8cb27f82ce26",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C73",
+      "claim": "Dagla\u2013/\u2013 mice show substantial reductions in brain 2-AG, AA, and prostaglandins, along with elevations in SAG, in both control and LPS-treated conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, Dagla\u2013/\u2013 mice showed substantial reductions in brain 2-AG, AA, and prostaglandins, along with elevations in SAG, in both control and LPS-treated mice (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "7a9c6d40-602f-4d84-b27f-f093bb5d4fcc",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C74",
+      "claim": "Dagla\u2013/\u2013 mice display attenuated LPS-induced microglial activation in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Along with these lipids changes, Dagla\u2013/\u2013 mice also displayed attenuated LPS-induced microglial activation in the brain (Figure 6B and Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6B and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "a5572db0-9b1e-46e8-bb8f-3e2d85ec70a8",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C75",
+      "claim": "Daglb\u2013/\u2013 mice challenged with LPS do not show changes in measured brain lipids, including PGE2.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Daglb\u2013/\u2013 mice challenged with LPS did not show changes in the measured brain lipids, including PGE2, for which an LPS-stimulated increase appeared to override the basal reduction observed in Daglb\u2013/\u2013 mice (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "055e79aa-33ce-4cdd-aaa0-ec622bd746fd",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C76",
+      "claim": "LPS-treated Daglb\u2013/\u2013 mice exhibit reduced activation of brain microglia.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, LPS-treated Daglb\u2013/\u2013 mice still exhibited reduced activation of brain microglia (Figure 6D and Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6D and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "576ebde6-859a-46db-8610-8415b926cfb6",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C77",
+      "claim": "No obvious differences in basal cell morphology of microglia are observed between wild-type and Dagla\u2013/\u2013 or Daglb\u2013/\u2013 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "No obvious differences in basal cell morphology of microglia were observed between wild-type and Dagla\u2013/\u2013 or Daglb\u2013/\u2013 mice (Figure 6 B,D, and Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental observations shown in Figure 6 B,D, and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "1ae9f7c5-1013-4b34-bf71-7387baf20f4b",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C78",
+      "claim": "LPS-induced anapyrexia is greatly attenuated in Daglb\u2013/\u2013 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "LPS-induced anapyrexia, a profound reduction in core body temperature mediated largely by central inflammatory processes (Romanovsky, 2004), which we have found to be sensitive to DAGLa disruption (Ogasawara et al., 2015), was also greatly attenuated in Daglb\u2013/\u2013 mice (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "cbd02e87-551c-45b7-acde-83b0a03ec576",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C79",
+      "claim": "LPS-induced anapyrexia is a profound reduction in core body temperature mediated largely by central inflammatory processes.",
+      "claim_type": "EXPLICIT",
+      "source": "LPS-induced anapyrexia, a profound reduction in core body temperature mediated largely by central inflammatory processes (Romanovsky, 2004), which we have found to be sensitive to DAGLa disruption (Ogasawara et al., 2015), was also greatly attenuated in Daglb\u2013/\u2013 mice (Figure 6E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "9fbff2ef-2ef2-47bc-94f0-5a2d70b97dde",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C80",
+      "claim": "Disruption of either DAGL\u03b1 or DAGL\u03b2 curbs neuroinflammatory responses in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that disruption of either DAGL\u03b1 or DAGL\u03b2 curbs neuroinflammatory responses in the brain, with blockade of the latter enzyme doing so while avoiding bulk changes in eCBs and eicosanoids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from experimental data showing reduced microglial activation in both Dagla and Daglb knockout mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "83397c9b-38db-4660-a781-0eb8ce4beafe",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C81",
+      "claim": "Blockade of DAGL\u03b2 curbs neuroinflammatory responses while avoiding bulk changes in eCBs and eicosanoids.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that disruption of either DAGL\u03b1 or DAGL\u03b2 curbs neuroinflammatory responses in the brain, with blockade of the latter enzyme doing so while avoiding bulk changes in eCBs and eicosanoids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from experimental data showing reduced microglial activation without changes in bulk brain lipids in Daglb knockout mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "7a8ea83b-bd89-4c12-8b42-2e35140a7dfe",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C82",
+      "claim": "Approximately 40% of the variance in protein content can be explained by differences in mRNA expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have found that a substantial portion (~40%) of the variance in protein content can be explained by differences in mRNA expression (Schwanhausser et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "806edd90-d3d5-4572-a095-4bd4d7342065",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C83",
+      "claim": "HTRA1 is regulated at the level of secretion from cells.",
+      "claim_type": "EXPLICIT",
+      "source": "One anti-correlated protein \u2013 HTRA1 \u2013 for instance, is known to be regulated at the level of secretion from cells (Skorko-Glonek et al., 2013), and it is possible that individual brain cell types differentially export this enzyme to create discordant measures of mRNA and cellular protein content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "6a553ba0-419e-4d82-bad2-8c08b1a1c3ab",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C84",
+      "claim": "Individual brain cell types may differentially export HTRA1 to create discordant measures of mRNA and cellular protein content.",
+      "claim_type": "EXPLICIT",
+      "source": "One anti-correlated protein \u2013 HTRA1 \u2013 for instance, is known to be regulated at the level of secretion from cells (Skorko-Glonek et al., 2013), and it is possible that individual brain cell types differentially export this enzyme to create discordant measures of mRNA and cellular protein content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on known secretion regulation and observed discordance.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "ad22d5a0-bcab-4360-852e-3dc44fc8349e",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C85",
+      "claim": "Posttranslational events, such as phosphorylation, could regulate serine hydrolase activity and/or stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Other posttranslational events, such as phosphorylation, could regulate serine hydrolase activity and/or stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated as a potential mechanism for discordance between mRNA and activity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "83fdef49-0ffc-4965-b182-6ddcbc71e965",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C86",
+      "claim": "Discrepancies between chemical proteomic results and mRNA expression datasets may arise from differences in methodology (primary cell cultures vs. acutely isolated cells).",
+      "claim_type": "EXPLICIT",
+      "source": "Some of the discrepancies between our chemical proteomic results and previously reported mRNA expression datasets (Zhang et al., 2014) may also arise from differences in methodology, given that our studies used primary brain cell cultures instead of acutely isolated neurons and glia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated as a potential source of discrepancy.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "1e5bde57-3835-41fa-a21c-d2a0db8098e7",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C87",
+      "claim": "Cells in culture only partially model cells from an in vivo environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells in culture are known to only partially model cells from an in vivo environment, and future ABPP studies using freshly isolated neurons and glia should help to further enrich our understanding of serine hydrolase activities in specific brain cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about cell culture limitations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "17d97a60-9efd-4d80-a463-ddb10657851b",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C88",
+      "claim": "Neurons and glia are endowed with complementary enzymatic pathways to meet the overall metabolic needs of the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "We were struck by the remarkable number of serine hydrolases that showed differential activity across neurons, astrocytes, and microglia (Figure 1C). This observation supports the emerging recognition that neurons and glia are endowed with complementary enzymatic pathways to meet the overall metabolic needs of the nervous system (Belanger et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed differential activity patterns and supported by citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "5e49304f-8c30-4f22-89b1-79a05ce3c9c9",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C89",
+      "claim": "2-AG is biosynthesized by two different enzymes\u2014DAGL\u03b1 and DAGL\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the most prominently compartmentalized serine hydrolases were those that regulate the eCB 2-AG. This lipid messenger, known to be biosynthesized by two different enzymes\u2014DAGL\u03b1 and DAGL\u03b2 (Bisogno et al., 2003)\u2014and with the potential to be degraded by several enzymes\u2014MGLL, ABHD6, ABHD12, and FAAH (Blankman et al., 2007, Marrs et al., 2011)\u2014 is an important regulator of inter-neuronal and neuron-glia interactions (Navarrete and Araque, 2008, 2010, Martin et al., 2015, Viader et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "0722e4ea-5ee7-48fc-9f2e-7a3069663273",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C90",
+      "claim": "2-AG has the potential to be degraded by several enzymes\u2014MGLL, ABHD6, ABHD12, and FAAH.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the most prominently compartmentalized serine hydrolases were those that regulate the eCB 2-AG. This lipid messenger, known to be biosynthesized by two different enzymes\u2014DAGL\u03b1 and DAGL\u03b2 (Bisogno et al., 2003)\u2014and with the potential to be degraded by several enzymes\u2014MGLL, ABHD6, ABHD12, and FAAH (Blankman et al., 2007, Marrs et al., 2011)\u2014 is an important regulator of inter-neuronal and neuron-glia interactions (Navarrete and Araque, 2008, 2010, Martin et al., 2015, Viader et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "df6e45a9-0a14-4bbb-b33b-6f3a3bc3e97a",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C91",
+      "claim": "2-AG is an important regulator of inter-neuronal and neuron-glia interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the most prominently compartmentalized serine hydrolases were those that regulate the eCB 2-AG. This lipid messenger, known to be biosynthesized by two different enzymes\u2014DAGL\u03b1 and DAGL\u03b2 (Bisogno et al., 2003)\u2014and with the potential to be degraded by several enzymes\u2014MGLL, ABHD6, ABHD12, and FAAH (Blankman et al., 2007, Marrs et al., 2011)\u2014 is an important regulator of inter-neuronal and neuron-glia interactions (Navarrete and Araque, 2008, 2010, Martin et al., 2015, Viader et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "261062f5-9404-49bc-8d64-6ee3c6869492",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C92",
+      "claim": "2-AG signaling impacts diverse neurophysiological processes, including pain, mood, and neuroinflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "2-AG signaling also impacts diverse neurophysiological processes, including pain, mood, and neuroinflammation (Blankman and Cravatt, 2013, Murataeva et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "f4654f8e-3a89-4829-b1ee-665612013a8d",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C93",
+      "claim": "Individual cell types in the brain control 2-AG metabolism and signaling by different enzymatic pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Toward this end, our work establishes that individual cell types in the brain control 2-AG metabolism and signaling by different enzymatic pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental results showing cell type-specific enzyme expression and function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "b6b07e36-2196-4685-bba6-e021b2e4a04f",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C94",
+      "claim": "ABHD12 serves as a major lyso-PS hydrolase in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "ABHD12 plays additional important roles in lipid metabolism in the brain, where the enzyme serves as a major lyso-PS hydrolase (Blankman et al., 2013) that is part of an immunomodulatory pathway (Kamat et al., 2015) linked to the human neurological disease PHARC (Fiskerstrand et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "5c1c01fb-e6b1-4d7b-a2d2-5a2567949e1c",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C95",
+      "claim": "ABHD12 is part of an immunomodulatory pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "ABHD12 plays additional important roles in lipid metabolism in the brain, where the enzyme serves as a major lyso-PS hydrolase (Blankman et al., 2013) that is part of an immunomodulatory pathway (Kamat et al., 2015) linked to the human neurological disease PHARC (Fiskerstrand et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "486cd37b-7db9-4ad0-85a3-f19529f44f4b",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C96",
+      "claim": "ABHD12 is linked to the human neurological disease PHARC.",
+      "claim_type": "EXPLICIT",
+      "source": "ABHD12 plays additional important roles in lipid metabolism in the brain, where the enzyme serves as a major lyso-PS hydrolase (Blankman et al., 2013) that is part of an immunomodulatory pathway (Kamat et al., 2015) linked to the human neurological disease PHARC (Fiskerstrand et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "c6b5d8bf-fea8-4325-8060-91d92e50792a",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C97",
+      "claim": "DAGL\u03b1 disruption impairs many forms of CB1R-dependent synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "DAGL\u03b1 has been shown to be the principal source for 2-AG production in the nervous system, and disruption of this enzyme impairs many forms of CB1R-dependent synaptic plasticity (Gao et al., 2010, Tanimura et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "bfcc94f8-5a63-4095-a2a0-8f98804f8e78",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C98",
+      "claim": "DAGL\u03b1 regulates neuroinflammatory responses in the brain, in particular, LPS-induced microglial activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results extend these findings in an important way by demonstrating that DAGL\u03b1 also regulates neuroinflammatory responses in the brain, in particular, LPS-induced microglial activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data showing reduced microglial activation in Dagla knockout mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "8a100ae9-3b64-4cb5-b0b8-134777e253da",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C99",
+      "claim": "Reductions in LPS-stimulated neuroinflammation in Dagla\u2013/\u2013 mice may reflect crosstalk between eCB and eicosanoid pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The reductions in LPS-stimulated neuroinflammation observed in Dagla\u2013/\u2013 mice may reflect, at least in part, crosstalk between eCB and eicosanoid pathways, since basal and LPS-induced prostaglandin synthesis were decreased in these animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on observed reductions in prostaglandins.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "deb6cafa-2162-4011-ab98-554c1bb7d213",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C100",
+      "claim": "Most major forms of eCB-dependent synaptic plasticity are regulated by DAGL\u03b1 rather than DAGL\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, most of the major forms of eCB-dependent synaptic plasticity have been shown to be regulated by DAGL\u03b1 rather than DAGL\u03b2 (Gao et al., 2010, Tanimura et al., 2010), underscoring the broad role that the former enzyme plays in eCB signaling throughout the nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "f3ac89a5-8d2d-4633-a221-a926ed96206d",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C101",
+      "claim": "Daglb deletion attenuates LPS-induced microglial activation in vivo without altering bulk eCB or eicosanoid content in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "That Daglb deletion attenuates LPS-induced microglial activation in vivo without altering bulk eCB or eicosanoid content in the brain suggests modulation of restricted pools of 2-AG can impact neuroinflammatory processes while avoiding global effects on eCB signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from Daglb knockout mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "9b0a619d-5f87-4491-9001-5d027402a81a",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C102",
+      "claim": "Modulation of restricted pools of 2-AG can impact neuroinflammatory processes while avoiding global effects on eCB signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "That Daglb deletion attenuates LPS-induced microglial activation in vivo without altering bulk eCB or eicosanoid content in the brain suggests modulation of restricted pools of 2-AG can impact neuroinflammatory processes while avoiding global effects on eCB signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental results showing reduced inflammation without bulk lipid changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "349cff1d-02cc-49b8-98d6-17ab5db4de6a",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C103",
+      "claim": "Glial proteins and pathways are potential targets for nervous system disease that may have fewer neuron-related adverse side effects.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding adds to a growing body of work implicating glial proteins and pathways as potential targets for nervous system disease that may have fewer neuron-related adverse side effects (Barres, 2008, Ilieva et al., 2009, Milligan and Watkins, 2009, Sheridan, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "b87ec606-2349-4831-b1ec-bc56c22d2793",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "claim_id": "C104",
+      "claim": "Cell type-specific compartmentalization of 2-AG metabolic enzymes may be fertile ground for identifying targets that can safely reverse or slow the course of diverse pathologies of the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "The remarkable cell type-specific compartmentalization of 2-AG metabolic enzymes, and more broadly of serine hydrolases, may thus prove to be fertile ground for the identification of targets that can safely reverse or slow the course of diverse pathologies of the nervous system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the findings of cell type-specific enzyme distribution.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0c6b7776-f033-4c55-8f19-9fe72959c5c2",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "ABPP-MudPIT analysis detected over 70 serine hydrolase activities across neurons, astrocytes, and microglia with high reproducibility within cell types (r=0.91\u00b10.01) and lower correlation across cell types (r=0.62\u00b10.02). Microglia and astrocytes showed the highest pairwise correlation, suggesting greater similarity of serine hydrolase activities among glia than between neurons and glia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C5 are well-supported by experimental ABPP-MudPIT data with appropriate statistical analysis (Pearson correlation). The methodology is clearly described, includes biological replicates (n=4), and the correlation values support the interpretation of cell type-specific enzyme profiles.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "11467f70-68a2-4da5-b7a5-f0d073fcccff",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "ABPP activity data showed good overall correlation with RNA-seq data (r=0.33, p<0.0001), particularly for cell type-enriched enzymes (r=0.54, p<0.01). However, notable exceptions were identified where transcript and activity were poorly correlated or anti-correlated (ABHD16A, HTRA1, MGLL).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C10 are supported by statistical comparison with published RNA-seq data. The correlation analysis is appropriate and the identification of exceptions (uncorrelated/anti-correlated enzymes) is valuable. However, the overall correlation (r=0.33) is modest, suggesting substantial post-transcriptional regulation, which the authors acknowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "82325c7f-e041-4344-a0b4-3be12a173d40",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "DAGL\u03b1 and MGLL are preferentially expressed in neurons, while microglia express high levels of DAGL\u03b2 and ABHD12. ABHD12 substantially contributes to 2-AG hydrolysis in microglia and astrocytes but not neurons, as demonstrated using Abhd12-/- mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C16 are well-supported by ABPP data, RNA-seq comparisons, and functional validation using knockout mice. The use of activity-based probes (HT-01) and genetic models provides strong converging evidence for cell type-specific expression patterns of 2-AG metabolic enzymes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "113c8862-b9f7-44f0-ab1b-5923963e2bd1",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Abhd12-/- microglia show ~40% reduction in 2-AG hydrolytic activity and modest increase in cellular 2-AG, but much higher secreted 2-AG compared to wild-type. In contrast, Mgll-/- microglia show strong elevation in cellular 2-AG but unaltered secreted 2-AG. Abhd12-/- neurons and astrocytes show no changes in 2-AG content.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C24 are supported by experimental data from knockout mice with appropriate controls. The differential effects on intracellular vs. secreted 2-AG pools are well-documented and statistically significant. Sample sizes appear adequate (N=4-6) and the cell type-specific effects strengthen the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "7d882672-dc04-418a-847a-be6c6a90ed44",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ABHD12 primarily regulates extracellular pools of 2-AG in microglia, consistent with its luminal/extracellular orientation, while MGLL is the primary intracellular 2-AG hydrolase. ABHD12 is a major regulator of secreted 2-AG and CBR activation specifically in microglia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C26, C29, C36, C37 are supported by experimental data on secreted vs. intracellular 2-AG and are consistent with prior knowledge of enzyme localization. The cell type-specific regulation is well-demonstrated through comparison across neurons, astrocytes, and microglia from knockout mice.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "fe932980-2c6a-4166-9b94-bede4cff37bb",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Abhd12-/- microglia show tonically increased CBR-dependent ERK1/2 phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 is supported by Western blot data showing increased ERK1/2 phosphorylation in Abhd12-/- microglia that can be blocked by CBR antagonists. The use of pharmacological controls (CBR antagonists, exogenous 2-AG) strengthens the conclusion that elevated extracellular 2-AG drives CBR signaling. Sample size (N=4) is adequate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "911bfd7f-3abc-4cd4-a652-7de4fe242594",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Abhd12-/- microglia show similar prostaglandin and cytokine levels as wild-type basally and after LPS stimulation. In contrast, MGLL inhibition (KML29) significantly lowers prostaglandins and cytokines, indicating that eCB-eicosanoid crosstalk is governed by MGLL rather than ABHD12 in microglia, consistent with intracellular localization of prostaglandin biosynthetic enzymes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C35, C38-C39 are supported by experimental data comparing genetic and pharmacological approaches. The differential effects of ABHD12 vs. MGLL on prostaglandin production are well-documented and consistent with enzyme localization. The interpretation is logical given that prostaglandin synthesis occurs intracellularly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "c6b1c635-ba66-4a1e-94ef-96edb2ea9d5f",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "DAGL\u03b1 is responsible for bulk 2-AG biosynthesis in neurons and astrocytes, as Dagla-/- cells show much lower 2-AG, AA, and prostaglandins. In contrast, microglia from Daglb-/- but not Dagla-/- mice show substantial reductions in these lipids. Prostaglandins were not detected in neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45 are well-supported by experimental data from knockout mice across multiple cell types. The cell type-specific roles of DAGL\u03b1 vs. DAGL\u03b2 are clearly demonstrated. Sample sizes (N=5-8) are adequate and the complementary patterns across cell types strengthen the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "23bce5d9-824f-4c50-b7be-00b574b7d227",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Wild-type microglia treated with DAGL inhibitors KT109 and KT172 show comparable lipid changes to Daglb-/- microglia, while the inactive control compound KT195 does not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C47 are supported by pharmacological validation using structurally related active and inactive compounds. The use of an inactive control (KT195) is a critical control that strengthens the conclusion that the effects are due to DAGL inhibition rather than off-target effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "e6b28b65-2a93-42c6-a8f2-ca5bf1ff3eb6",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "DAGL\u03b2 inactivation (genetic or pharmacological) results in coordinated decreases in 2-AG, AA, and prostaglandins in LPS-stimulated microglia, along with marked reductions in inflammatory cytokine production. Dagla-/- microglia show no such changes. These results demonstrate that distinct DAGL enzymes control eCB and eicosanoid metabolism in different cell types, and that blocking DAGL\u03b2 attenuates LPS-induced inflammatory responses in microglia.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C54 are well-supported by converging genetic and pharmacological evidence with appropriate controls. The cell type-specific effects are clearly demonstrated and the functional consequences (reduced inflammation) are well-documented. Sample sizes (N=5) are adequate for the observed effect sizes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "bb3a01fe-aff0-4d62-b29c-13b0dedd34bf",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Dagla-/- mice show severely depleted brain 2-AG (~90%), substantial increase in SAG (a 2-AG precursor), and reductions in AA and prostaglandins. In contrast, Daglb-/- mice show unaltered brain 2-AG, SAG, and AA, but significant reduction in PGE2, possibly due to selective effects in microglia which express high levels of PTGS1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C63 are supported by in vivo lipid measurements with adequate sample sizes (N=6-8). The differential effects of Dagla vs. Daglb deletion on whole brain lipids are consistent with cell type-specific expression patterns. The interpretation regarding PGE2 reduction in Daglb-/- mice is reasonable given microglial PTGS1 expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "b80bad79-db11-4a8f-9c5a-bc3b1a479271",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Pharmacological blockade of 2-AG hydrolysis with MGLL inhibitor MJN110 promotes significant recovery of brain 2-AG in Dagla-/- mice. High-dose DAGL inhibitor DO34 near-completely blocks DAGL\u03b2 activity and suppresses this MJN110-induced 2-AG rescue, indicating that DAGL\u03b2 can contribute to bulk brain 2-AG content, particularly in the absence of DAGL\u03b1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69 are supported by pharmacological experiments using selective inhibitors with appropriate controls. The experimental design (combining MGLL and DAGL inhibition in Dagla-/- mice) cleverly reveals DAGL\u03b2's contribution to 2-AG synthesis. Sample sizes (N=5) are adequate and the activity-based profiling confirms target engagement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "9d886012-6652-4cc0-bd54-1db6f76c3441",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "LPS treatment (1 mg/kg/day for 4 days) increases brain PGE2 but not other lipids in wild-type mice. Dagla-/- mice show substantial reductions in brain 2-AG, AA, and prostaglandins along with attenuated LPS-induced microglial activation in both control and LPS-treated conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C74 are supported by in vivo experiments with adequate sample sizes (N=5-6). The lipid measurements and immunohistochemical quantification of microglial activation provide converging evidence. The experimental design appropriately includes both basal and LPS-stimulated conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "c400b3e8-4cc5-4a03-ab54-b1428643195f",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Daglb-/- mice challenged with LPS show no changes in measured brain lipids (including PGE2), yet still exhibit reduced microglial activation and attenuated LPS-induced anapyrexia. No differences in basal microglial morphology are observed. These results indicate that disruption of either DAGL\u03b1 or DAGL\u03b2 curbs neuroinflammatory responses, with DAGL\u03b2 blockade doing so while avoiding bulk changes in eCBs and eicosanoids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C78, C80-C81 are supported by in vivo experiments with adequate sample sizes (N=6). The key finding that Daglb deletion reduces neuroinflammation without altering bulk brain lipids is well-documented through multiple measures (microglial activation, anapyrexia). This represents a major advance in understanding cell type-specific regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "959014bd-611f-4969-b0fb-e736ceba3ceb",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Approximately 40% of variance in protein content can be explained by mRNA expression. Discrepancies between ABPP and RNA-seq data may arise from post-translational regulation (e.g., secretion, phosphorylation) or methodological differences (cultured cells vs. acutely isolated cells). Cells in culture only partially model in vivo environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C87 provide appropriate discussion of study limitations and potential mechanisms for observed discrepancies. C82 is supported by citation, while C83-C87 represent reasonable speculation about sources of mRNA-protein discordance. The acknowledgment of cell culture limitations is important for interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "bc1d4e16-f63d-4ad0-a6b6-57879caa2198",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The differential activity of serine hydrolases across neurons, astrocytes, and microglia supports the concept that neurons and glia are endowed with complementary enzymatic pathways to meet nervous system metabolic needs. Individual cell types control 2-AG metabolism and signaling by different enzymatic pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88 and C93 represent well-supported interpretations of the experimental data showing cell type-specific enzyme expression and function. The conclusions are appropriately supported by citations to prior work and the extensive experimental evidence presented in the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "aadd973c-e246-45a8-9c68-f823ef072696",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Reductions in LPS-stimulated neuroinflammation in Dagla-/- mice may reflect eCB-eicosanoid crosstalk. Modulation of restricted pools of 2-AG can impact neuroinflammatory processes while avoiding global effects on eCB signaling. Cell type-specific compartmentalization of 2-AG metabolic enzymes may be fertile ground for identifying therapeutic targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C99, C102, and C104 represent speculative interpretations and future directions. While C102 is reasonably supported by the Daglb-/- data showing reduced inflammation without bulk lipid changes, C99 and C104 are more speculative. The mechanistic basis for reduced inflammation in Daglb-/- mice without lipid changes requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    },
+    {
+      "id": "e77ec0de-cf93-49cb-8b38-1656f51561e3",
+      "content_id": "70ad8fbe-d376-4d6f-8e84-5b3aa740a4cb",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background claims establishing prior knowledge about serine hydrolases, 2-AG metabolism, ABHD12, DAGL\u03b1/\u03b2, and related pathways based on published literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C11-C12, C17, C26, C38, C55-C57, C60, C64-C65, C70, C79, C82-C83, C89-C92, C94-C97, C100, C103 are appropriately cited background claims that establish the context for the current work. These are supported by appropriate citations to prior literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:29:00.700533Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "de0228ab-c2ba-40de-8a96-9c10e3125340",
+      "result_id": "0c6b7776-f033-4c55-8f19-9fe72959c5c2"
+    },
+    {
+      "claim_id": "4e13e9b0-fe57-4545-8d48-7323bd52ff2d",
+      "result_id": "0c6b7776-f033-4c55-8f19-9fe72959c5c2"
+    },
+    {
+      "claim_id": "d0916f80-f20b-4da7-8376-f025900a3976",
+      "result_id": "0c6b7776-f033-4c55-8f19-9fe72959c5c2"
+    },
+    {
+      "claim_id": "97de79ac-cc2a-414f-b155-90a87b0e21b7",
+      "result_id": "0c6b7776-f033-4c55-8f19-9fe72959c5c2"
+    },
+    {
+      "claim_id": "3c573ccf-7bf1-49d8-ac98-c8ccb71b0c57",
+      "result_id": "11467f70-68a2-4da5-b7a5-f0d073fcccff"
+    },
+    {
+      "claim_id": "8477a1f9-1c1b-428e-a38b-eef1ffb56d7a",
+      "result_id": "11467f70-68a2-4da5-b7a5-f0d073fcccff"
+    },
+    {
+      "claim_id": "d879178d-9cd3-4b21-b35a-26d776c12a4f",
+      "result_id": "11467f70-68a2-4da5-b7a5-f0d073fcccff"
+    },
+    {
+      "claim_id": "5e1602ea-42f4-4835-8856-0383148f6419",
+      "result_id": "11467f70-68a2-4da5-b7a5-f0d073fcccff"
+    },
+    {
+      "claim_id": "98f3904d-d4a4-43b8-9b35-f0a05e7e31fa",
+      "result_id": "11467f70-68a2-4da5-b7a5-f0d073fcccff"
+    },
+    {
+      "claim_id": "9394642e-68ac-4d44-ab05-7f83e942c558",
+      "result_id": "82325c7f-e041-4344-a0b4-3be12a173d40"
+    },
+    {
+      "claim_id": "de6d5203-c1c5-4a82-bb4e-8c9b5c33aee1",
+      "result_id": "82325c7f-e041-4344-a0b4-3be12a173d40"
+    },
+    {
+      "claim_id": "d007858c-53b0-4e52-8353-f948953fd44e",
+      "result_id": "82325c7f-e041-4344-a0b4-3be12a173d40"
+    },
+    {
+      "claim_id": "df55fd42-034f-4090-9061-f1d2a7c91432",
+      "result_id": "82325c7f-e041-4344-a0b4-3be12a173d40"
+    },
+    {
+      "claim_id": "e0e0ebb9-7cf6-4226-abac-7b7068d05fcf",
+      "result_id": "82325c7f-e041-4344-a0b4-3be12a173d40"
+    },
+    {
+      "claim_id": "98bd4ed4-938c-41c6-b7df-6068a1243b9a",
+      "result_id": "82325c7f-e041-4344-a0b4-3be12a173d40"
+    },
+    {
+      "claim_id": "38a80622-ec89-4191-bd75-cd79f944b4e7",
+      "result_id": "113c8862-b9f7-44f0-ab1b-5923963e2bd1"
+    },
+    {
+      "claim_id": "242e7579-ac9f-48c5-8d9a-2e3ba1230f58",
+      "result_id": "113c8862-b9f7-44f0-ab1b-5923963e2bd1"
+    },
+    {
+      "claim_id": "7ab2dca1-b3e9-4770-9898-5ff491660dd3",
+      "result_id": "113c8862-b9f7-44f0-ab1b-5923963e2bd1"
+    },
+    {
+      "claim_id": "7ec2b125-7c40-4a15-a00e-66b783a2b5c9",
+      "result_id": "113c8862-b9f7-44f0-ab1b-5923963e2bd1"
+    },
+    {
+      "claim_id": "f762c2d7-6cbf-4bf3-a2a4-1df0c5a98142",
+      "result_id": "113c8862-b9f7-44f0-ab1b-5923963e2bd1"
+    },
+    {
+      "claim_id": "585bf1d3-ee6e-438d-ab9b-1aeb0d983c12",
+      "result_id": "113c8862-b9f7-44f0-ab1b-5923963e2bd1"
+    },
+    {
+      "claim_id": "4630c0d7-9a87-4e7d-bb3d-977e1c4b4bd1",
+      "result_id": "113c8862-b9f7-44f0-ab1b-5923963e2bd1"
+    },
+    {
+      "claim_id": "6b3e5e03-9a82-4155-a2ab-f8410f3935da",
+      "result_id": "7d882672-dc04-418a-847a-be6c6a90ed44"
+    },
+    {
+      "claim_id": "49bc9ff1-a8a5-4fde-90db-91c4ea673f3f",
+      "result_id": "7d882672-dc04-418a-847a-be6c6a90ed44"
+    },
+    {
+      "claim_id": "8323e1aa-8b1c-45cd-a06d-41c19fff42fb",
+      "result_id": "7d882672-dc04-418a-847a-be6c6a90ed44"
+    },
+    {
+      "claim_id": "ca8e4aa2-4ca3-46e3-8acd-f689f221e353",
+      "result_id": "7d882672-dc04-418a-847a-be6c6a90ed44"
+    },
+    {
+      "claim_id": "d12f112e-8fdf-49ae-b28a-e83e669649cd",
+      "result_id": "7d882672-dc04-418a-847a-be6c6a90ed44"
+    },
+    {
+      "claim_id": "e6d1e8da-9e3b-4181-8deb-0a9a8a705e80",
+      "result_id": "fe932980-2c6a-4166-9b94-bede4cff37bb"
+    },
+    {
+      "claim_id": "b959464e-887a-4998-8e23-53971213ed61",
+      "result_id": "911bfd7f-3abc-4cd4-a652-7de4fe242594"
+    },
+    {
+      "claim_id": "4f0aca06-cd4f-4734-9042-4d23546761be",
+      "result_id": "911bfd7f-3abc-4cd4-a652-7de4fe242594"
+    },
+    {
+      "claim_id": "644e8530-3c82-4481-8d47-d446b2deb307",
+      "result_id": "911bfd7f-3abc-4cd4-a652-7de4fe242594"
+    },
+    {
+      "claim_id": "71a6ff47-ac60-4298-a64b-c3b071bbc4bb",
+      "result_id": "911bfd7f-3abc-4cd4-a652-7de4fe242594"
+    },
+    {
+      "claim_id": "547ae279-0901-4cb0-b236-a518f6defb5c",
+      "result_id": "911bfd7f-3abc-4cd4-a652-7de4fe242594"
+    },
+    {
+      "claim_id": "8e510f63-bfde-4d4b-9913-4658266b9503",
+      "result_id": "911bfd7f-3abc-4cd4-a652-7de4fe242594"
+    },
+    {
+      "claim_id": "39b907c4-86cf-4211-a89b-9a078d78fc98",
+      "result_id": "911bfd7f-3abc-4cd4-a652-7de4fe242594"
+    },
+    {
+      "claim_id": "274a0946-350d-489c-af0e-eb5c9630eaf6",
+      "result_id": "c6b1c635-ba66-4a1e-94ef-96edb2ea9d5f"
+    },
+    {
+      "claim_id": "b517e370-f9aa-4a05-b17f-5984a2b9c134",
+      "result_id": "c6b1c635-ba66-4a1e-94ef-96edb2ea9d5f"
+    },
+    {
+      "claim_id": "15222e3a-58cf-4a4b-a394-1b465e84f909",
+      "result_id": "c6b1c635-ba66-4a1e-94ef-96edb2ea9d5f"
+    },
+    {
+      "claim_id": "043cfc47-be1d-4586-b8cf-6f062d9f6461",
+      "result_id": "c6b1c635-ba66-4a1e-94ef-96edb2ea9d5f"
+    },
+    {
+      "claim_id": "517a25e3-abc0-47f3-b23c-76287e84ff6b",
+      "result_id": "c6b1c635-ba66-4a1e-94ef-96edb2ea9d5f"
+    },
+    {
+      "claim_id": "27ab7ef6-9087-42e3-82d0-5f500650af95",
+      "result_id": "c6b1c635-ba66-4a1e-94ef-96edb2ea9d5f"
+    },
+    {
+      "claim_id": "9f5e0d76-e4e4-4b22-bba4-09e71dca2176",
+      "result_id": "23bce5d9-824f-4c50-b7be-00b574b7d227"
+    },
+    {
+      "claim_id": "19a7cb67-827d-4385-8f39-f2fd4298f91d",
+      "result_id": "23bce5d9-824f-4c50-b7be-00b574b7d227"
+    },
+    {
+      "claim_id": "0e4824f7-646c-41a7-9589-c0b5e412c14e",
+      "result_id": "e6b28b65-2a93-42c6-a8f2-ca5bf1ff3eb6"
+    },
+    {
+      "claim_id": "5f672057-9344-44ad-bdf7-32c35e4c6033",
+      "result_id": "e6b28b65-2a93-42c6-a8f2-ca5bf1ff3eb6"
+    },
+    {
+      "claim_id": "c88d4f32-1d96-4a0f-b757-6935365a72e1",
+      "result_id": "e6b28b65-2a93-42c6-a8f2-ca5bf1ff3eb6"
+    },
+    {
+      "claim_id": "8042a01b-44a3-41f5-a7c4-95b6e2445384",
+      "result_id": "e6b28b65-2a93-42c6-a8f2-ca5bf1ff3eb6"
+    },
+    {
+      "claim_id": "53a47823-fe09-4e65-9a9b-f294b65b9a60",
+      "result_id": "e6b28b65-2a93-42c6-a8f2-ca5bf1ff3eb6"
+    },
+    {
+      "claim_id": "a5db209c-346b-408e-b445-9b7cbbbd64a8",
+      "result_id": "e6b28b65-2a93-42c6-a8f2-ca5bf1ff3eb6"
+    },
+    {
+      "claim_id": "dfeadd18-2263-4151-81dc-fb13da3f7e1b",
+      "result_id": "e6b28b65-2a93-42c6-a8f2-ca5bf1ff3eb6"
+    },
+    {
+      "claim_id": "5f7aeb6d-a4f5-4483-8f83-b262f09e7a04",
+      "result_id": "bb3a01fe-aff0-4d62-b29c-13b0dedd34bf"
+    },
+    {
+      "claim_id": "9ae8ebb1-c41b-405f-9e1f-b84ee9c399e3",
+      "result_id": "bb3a01fe-aff0-4d62-b29c-13b0dedd34bf"
+    },
+    {
+      "claim_id": "74aa394d-d9bd-4f4f-82bc-2e1da702590c",
+      "result_id": "bb3a01fe-aff0-4d62-b29c-13b0dedd34bf"
+    },
+    {
+      "claim_id": "8df9f440-88ed-4de8-8694-9129a1e383e7",
+      "result_id": "bb3a01fe-aff0-4d62-b29c-13b0dedd34bf"
+    },
+    {
+      "claim_id": "d8bb6c20-06b6-4830-bf5d-5aabe1ee498f",
+      "result_id": "bb3a01fe-aff0-4d62-b29c-13b0dedd34bf"
+    },
+    {
+      "claim_id": "20a72822-e6e6-40a3-bfd1-1f968da964b5",
+      "result_id": "bb3a01fe-aff0-4d62-b29c-13b0dedd34bf"
+    },
+    {
+      "claim_id": "4f024a71-d7fd-422a-87cc-2322178dbb32",
+      "result_id": "b80bad79-db11-4a8f-9c5a-bc3b1a479271"
+    },
+    {
+      "claim_id": "4feafc78-fb16-450e-ae7d-06048fdcf5c2",
+      "result_id": "b80bad79-db11-4a8f-9c5a-bc3b1a479271"
+    },
+    {
+      "claim_id": "bde839d4-ccfc-4aba-938b-6f019c4d137c",
+      "result_id": "b80bad79-db11-4a8f-9c5a-bc3b1a479271"
+    },
+    {
+      "claim_id": "8b2f50cb-2bbd-44d9-bd4f-1b32e79ce659",
+      "result_id": "b80bad79-db11-4a8f-9c5a-bc3b1a479271"
+    },
+    {
+      "claim_id": "c6bf05d2-c281-4f77-ace1-9160969841d2",
+      "result_id": "9d886012-6652-4cc0-bd54-1db6f76c3441"
+    },
+    {
+      "claim_id": "82805204-3322-4948-a42a-6dbdd52dde65",
+      "result_id": "9d886012-6652-4cc0-bd54-1db6f76c3441"
+    },
+    {
+      "claim_id": "51883e4b-05d2-46bf-865e-8cb27f82ce26",
+      "result_id": "9d886012-6652-4cc0-bd54-1db6f76c3441"
+    },
+    {
+      "claim_id": "7a9c6d40-602f-4d84-b27f-f093bb5d4fcc",
+      "result_id": "9d886012-6652-4cc0-bd54-1db6f76c3441"
+    },
+    {
+      "claim_id": "a5572db0-9b1e-46e8-bb8f-3e2d85ec70a8",
+      "result_id": "c400b3e8-4cc5-4a03-ab54-b1428643195f"
+    },
+    {
+      "claim_id": "055e79aa-33ce-4cdd-aaa0-ec622bd746fd",
+      "result_id": "c400b3e8-4cc5-4a03-ab54-b1428643195f"
+    },
+    {
+      "claim_id": "576ebde6-859a-46db-8610-8415b926cfb6",
+      "result_id": "c400b3e8-4cc5-4a03-ab54-b1428643195f"
+    },
+    {
+      "claim_id": "1ae9f7c5-1013-4b34-bf71-7387baf20f4b",
+      "result_id": "c400b3e8-4cc5-4a03-ab54-b1428643195f"
+    },
+    {
+      "claim_id": "9fbff2ef-2ef2-47bc-94f0-5a2d70b97dde",
+      "result_id": "c400b3e8-4cc5-4a03-ab54-b1428643195f"
+    },
+    {
+      "claim_id": "83397c9b-38db-4660-a781-0eb8ce4beafe",
+      "result_id": "c400b3e8-4cc5-4a03-ab54-b1428643195f"
+    },
+    {
+      "claim_id": "7a8ea83b-bd89-4c12-8b42-2e35140a7dfe",
+      "result_id": "959014bd-611f-4969-b0fb-e736ceba3ceb"
+    },
+    {
+      "claim_id": "806edd90-d3d5-4572-a095-4bd4d7342065",
+      "result_id": "959014bd-611f-4969-b0fb-e736ceba3ceb"
+    },
+    {
+      "claim_id": "6a553ba0-419e-4d82-bad2-8c08b1a1c3ab",
+      "result_id": "959014bd-611f-4969-b0fb-e736ceba3ceb"
+    },
+    {
+      "claim_id": "ad22d5a0-bcab-4360-852e-3dc44fc8349e",
+      "result_id": "959014bd-611f-4969-b0fb-e736ceba3ceb"
+    },
+    {
+      "claim_id": "83fdef49-0ffc-4965-b182-6ddcbc71e965",
+      "result_id": "959014bd-611f-4969-b0fb-e736ceba3ceb"
+    },
+    {
+      "claim_id": "1e5bde57-3835-41fa-a21c-d2a0db8098e7",
+      "result_id": "959014bd-611f-4969-b0fb-e736ceba3ceb"
+    },
+    {
+      "claim_id": "17d97a60-9efd-4d80-a463-ddb10657851b",
+      "result_id": "bc1d4e16-f63d-4ad0-a6b6-57879caa2198"
+    },
+    {
+      "claim_id": "f4654f8e-3a89-4829-b1ee-665612013a8d",
+      "result_id": "bc1d4e16-f63d-4ad0-a6b6-57879caa2198"
+    },
+    {
+      "claim_id": "8a100ae9-3b64-4cb5-b0b8-134777e253da",
+      "result_id": "aadd973c-e246-45a8-9c68-f823ef072696"
+    },
+    {
+      "claim_id": "9b0a619d-5f87-4491-9001-5d027402a81a",
+      "result_id": "aadd973c-e246-45a8-9c68-f823ef072696"
+    },
+    {
+      "claim_id": "b87ec606-2349-4831-b1ec-bc56c22d2793",
+      "result_id": "aadd973c-e246-45a8-9c68-f823ef072696"
+    },
+    {
+      "claim_id": "976e507d-e1d7-424b-a80b-fb7e93cf5d46",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    },
+    {
+      "claim_id": "9394642e-68ac-4d44-ab05-7f83e942c558",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    },
+    {
+      "claim_id": "de6d5203-c1c5-4a82-bb4e-8c9b5c33aee1",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    },
+    {
+      "claim_id": "66479e0c-e1f5-4de1-addd-7c86472c6e64",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    },
+    {
+      "claim_id": "49bc9ff1-a8a5-4fde-90db-91c4ea673f3f",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    },
+    {
+      "claim_id": "8e510f63-bfde-4d4b-9913-4658266b9503",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    },
+    {
+      "claim_id": "5ea4080a-92b1-46a3-aa98-e62920b5be86",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    },
+    {
+      "claim_id": "96390c95-2d6e-4d95-a584-e7ee65b8be5a",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    },
+    {
+      "claim_id": "892106e8-2b5f-43b9-a41b-97420d485ea1",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    },
+    {
+      "claim_id": "74aa394d-d9bd-4f4f-82bc-2e1da702590c",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    },
+    {
+      "claim_id": "7fb53892-e015-48b6-858e-4fdf9c2a7e09",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    },
+    {
+      "claim_id": "919882a4-b3d5-4558-9b6b-4a22d2df61ca",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    },
+    {
+      "claim_id": "7d7e1a3b-9d08-4037-957b-28885412d981",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    },
+    {
+      "claim_id": "cbd02e87-551c-45b7-acde-83b0a03ec576",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    },
+    {
+      "claim_id": "7a8ea83b-bd89-4c12-8b42-2e35140a7dfe",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    },
+    {
+      "claim_id": "806edd90-d3d5-4572-a095-4bd4d7342065",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    },
+    {
+      "claim_id": "5e49304f-8c30-4f22-89b1-79a05ce3c9c9",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    },
+    {
+      "claim_id": "0722e4ea-5ee7-48fc-9f2e-7a3069663273",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    },
+    {
+      "claim_id": "df6e45a9-0a14-4bbb-b33b-6f3a3bc3e97a",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    },
+    {
+      "claim_id": "261062f5-9404-49bc-8d64-6ee3c6869492",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    },
+    {
+      "claim_id": "b6b07e36-2196-4685-bba6-e021b2e4a04f",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    },
+    {
+      "claim_id": "5c1c01fb-e6b1-4d7b-a2d2-5a2567949e1c",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    },
+    {
+      "claim_id": "486cd37b-7db9-4ad0-85a3-f19529f44f4b",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    },
+    {
+      "claim_id": "c6b5d8bf-fea8-4325-8060-91d92e50792a",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    },
+    {
+      "claim_id": "deb6cafa-2162-4011-ab98-554c1bb7d213",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    },
+    {
+      "claim_id": "349cff1d-02cc-49b8-98d6-17ab5db4de6a",
+      "result_id": "e77ec0de-cf93-49cb-8b38-1656f51561e3"
+    }
+  ],
+  "comparisons": []
+}

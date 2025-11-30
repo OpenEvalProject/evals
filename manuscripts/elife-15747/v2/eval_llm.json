@@ -1,0 +1,196 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript establishes the biological and ecological context for studying community coalescence, citing prior work showing that microbial communities are complex, species-variable but functionally stable, and that community-level states (healthy/diseased, lean/obese) can compete as units.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C21 are all citation-based claims that accurately represent established findings from prior literature (Human Microbiome Project, studies on obesity, fecal transplants, etc.). These provide appropriate context and motivation for the theoretical work, though they represent background rather than novel findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The manuscript positions its work relative to multi-level selection theory, noting that established criteria for multicellularity require cooperation, which most natural communities (including gut microbiota) do not satisfy, and that species performance is context-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 accurately cite and interpret established theory from multi-level selection and community ecology. These claims appropriately frame the theoretical gap the manuscript aims to address: community-level behavior without requiring cooperation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C32",
+      "C34"
+    ],
+    "result": "The model is based on MacArthur's competitive coexistence framework and purposefully excludes trophic interactions and cooperation to demonstrate that community cohesion arises from resource partitioning alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C32, and C34 accurately describe the model's theoretical foundation and intentional simplifications. The purely competitive framework (verified by the negative interaction matrix in Equation 4) is essential to the manuscript's argument that cohesion requires no cooperation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C38",
+      "C39",
+      "C41",
+      "C42"
+    ],
+    "result": "In the model, the equilibrium community composition depends only on which species are initially present (not their abundances), and simulations show that surviving species tend to have high intrinsic performance but this correlation is imperfect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 are supported by the mathematical properties of the model (convexity of F) and simulation data in Figure 2. The observation that species ranked #4 went extinct while species ranked #29 survived (C42) effectively demonstrates the context-dependence that motivates the community-level perspective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C43",
+      "C45",
+      "C46",
+      "C47",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The model possesses a Lyapunov function F that monotonically increases toward equilibrium, representing a generalization of Tilman's R* rule where communities optimize collective substrate depletion rather than individual species performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C58 describe the central mathematical result. The derivation of F (Equation 6-7) and proof of dF/dt > 0 (Equation 8) are mathematically sound. Figure 3 provides empirical support showing F increases monotonically while individual performance becomes less predictive near equilibrium. This establishes the theoretical foundation for community-level fitness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "In community coalescence simulations, the collective fitness F of a species' native community is a much stronger predictor of post-coalescence survival than the species' individual performance, with species from high-F communities persisting even when they have lower intrinsic performance than competitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C63-C70 represent the manuscript's primary empirical finding, supported by elimination assays in Figure 4B-D. The contrast between quadrants I vs. III (where both predictors agree) and II vs. IV (where they disagree, with F winning) is compelling. Figure 4D quantitatively shows community fitness strongly predicts outcomes while individual performance does not. This is the key result supporting community-level cohesion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C28",
+      "C71",
+      "C76",
+      "C78",
+      "C79",
+      "C89"
+    ],
+    "result": "The model establishes a mathematically exact analogy between communities with variable species abundances and organisms with variable gene expression, where community fitness F reduces to individual performance for single-species communities, though this analogy concerns ecological interactions not reproduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27-C28, C71, C76, C78-C79, and C89 describe the theoretical interpretation. The mathematical derivation showing F equals individual performance for single-species communities (Equation 9) is correct. The analogy is carefully qualified as not constituting true multicellularity (C28), which is appropriate. The interpretation is internally consistent with the model structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C83",
+      "C84"
+    ],
+    "result": "Community cohesion arises generically from context-dependent fitness and niche construction, with the parameter \u03b5 tuning the relative importance of intrinsic versus environmental factors in determining species success.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 provide mechanistic interpretation supported by the model structure and Figure 5, which shows that increasing cost scatter \u03b5 reduces community cohesion by making intrinsic performance more dominant. The explanation that small environmental changes can reorder fitness rankings at small \u03b5 is consistent with the model dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C29",
+      "C34",
+      "C99",
+      "C100"
+    ],
+    "result": "The effective cohesion demonstrated requires no cooperative interactions and is conceptually distinct from multi-level selection theory, arising instead from resource partitioning and indirect facilitation in purely competitive dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C29, C34, C99-C100 articulate the manuscript's key conceptual contribution: demonstrating community-level behavior without cooperation. The purely competitive model structure (negative interaction matrix) directly supports this. The distinction from MLS theory is appropriately drawn, though the claim that this is 'generic' (C5) is somewhat overstated given the model's specific assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C93",
+      "C94"
+    ],
+    "result": "Community coalescence can be viewed as analogous to genetic recombination, potentially allowing pre-sexual communities to fix evolutionary novelty more efficiently than clonal generalists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90, C93-C94 present an interesting theoretical perspective linking community coalescence to recombination. While the analogy is creative and the model does show 'recombination' of species between communities, the claim about pre-sexual evolution (C94) is highly speculative with no empirical or detailed theoretical support provided. This remains an intriguing hypothesis requiring further development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors speculate that community cohesion should be widespread in microbial ecosystems and persist in more general models beyond the specific optimization framework used here, though quantifying it may require more complex approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C95-C98, C101-C102 are explicitly speculative about generalization beyond the model. While the authors appropriately acknowledge that most ecological dynamics don't reduce to optimization (C95) and that their model has special properties (C97), the prediction that qualitative results will persist (C98) lacks rigorous justification. These are reasonable hypotheses for future work but remain undemonstrated.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2330 @@
+{
+  "submission": {
+    "id": "28624b7d-b4a2-4ad9-90e5-cf76099d9423",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:05:45.558354Z",
+    "updated_at": "2025-11-29T23:05:45.558354Z"
+  },
+  "content": [
+    {
+      "id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "submission_id": "28624b7d-b4a2-4ad9-90e5-cf76099d9423",
+      "content_type": "manuscript",
+      "content_text": "# Localized JNK signaling regulates organ size during development\n\n## Authors\n\n- Helen Rankin Willsey<sup>1</sup>\n- Xiaoyan Zheng<sup>2</sup>\n- Jos\u00e9 Carlos Pastor-Pareja<sup>1</sup> ([ORCID: 0000-0002-3823-4473](https://orcid.org/0000-0002-3823-4473))\n- A Jeremy Willsey<sup>3</sup>\n- Philip A Beachy<sup>2</sup>\n- Tian Xu<sup>1</sup> ([ORCID: 0000-0002-2160-0027](https://orcid.org/0000-0002-2160-0027)) \u2020\n\n### Affiliations\n\n1. Department of Genetics Howard Hughes Medical Institute, Yale University School of Medicine New Haven United States\n2. Departments of Biochemistry and Developmental Biology Institute for Stem Cell Biology and Regenerative Medicine, Howard Hughes Medical Institute, Stanford University School of Medicine Stanford United States\n3. Department of Psychiatry University of California, San Francisco San Francisco United States\n4. State Key Laboratory of Genetic Engineering and National Center for International Research, Fudan-Yale Biomedical Research Center, Institute of Developmental Biology and Molecular Medicine, School of Life Sciences Fudan University Shanghai China\n\n\u2020 Corresponding author\n\n## Abstract\n\nA fundamental question of biology is what determines organ size. Despite demonstrations that factors within organs determine their sizes, intrinsic size control mechanisms remain elusive. Here we show that Drosophila wing size is regulated by JNK signaling during development. JNK is active in a stripe along the center of developing wings, and modulating JNK signaling within this stripe changes organ size. This JNK stripe influences proliferation in a non-canonical, Jun-independent manner by inhibiting the Hippo pathway. Localized JNK activity is established by Hedgehog signaling, where Ci elevates dTRAF1 expression. As the dTRAF1 homolog, TRAF4, is amplified in numerous cancers, these findings provide a new mechanism for how the Hedgehog pathway could contribute to tumorigenesis, and, more importantly, provides a new strategy for cancer therapies. Finally, modulation of JNK signaling centers in developing antennae and legs changes their sizes, suggesting a more generalizable role for JNK signaling in developmental organ size control.\n\n## Introduction\n\nWithin a species, organ size is remarkably reproducible. While extrinsic factors like hormones are required for growth, classic transplantation experiments indicate that intrinsic factors within organs determine size (Bryant and Simpson, 1984). For example, embryonic limb buds transplanted from a large species of salamander onto a small species grow to the size characteristic of the donor (Twitty and Schwind, 1931). Similar findings have been made in quail and chick limbs (Iten and Murphy, 1980; Wolpert, 1978), rat hearts and kidneys (Dittmer et al., 1974; Silber, 1976), and mouse thymuses (Metcalf, 1963). Consistently, developing Drosophila wings transplanted into adult abdomens grow to the proper size, indicating that the information determining size is located within the developing organ (Garc\u00eda-Bellido, 1965). Indeed, the Drosophila wing is a classic model system for studying organ size, as its size is highly replicable (Garc\u00eda-Bellido and Merriam, 1971; Garc\u00eda-Bellido, 1965), and all adult precursor cells are located within the pouch region of the developing larval imaginal disc (Garc\u00eda-Bellido et al., 1973) (Figure 1A, grey). Despite extensive work, the molecular mechanisms underlying intrinsic organ size control remain unclear (Vogel, 2013). While morphogens direct both patterning and growth of developing organs (Tabata and Takei, 2004), a link between patterning molecules and growth control pathways has not been established (Schwank et al., 2011).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/11491/elife-11491-fig1-v3.jpg)\n\n**Figure 1.:** (A) Schematic of wing precursor cells (grey) in the developing disc (A, anterior; P, posterior). (B-F) Antibody staining against active, phosphorylated JNK (pJNK, green; DAPI, blue) labels a stripe in wildtype (B-C) but not JNKK mutant (D-E, hepr75/Y) third instar discs. Boxed region in (B) and (D) is magnified in (C) and (E), respectively. Weak pJNK signal is also detected along the dorsal/ventral boundary. pJNK stripe staining is lost in JNKK mutant clones (F, hepr75, clone is negatively marked in F\u2019). (G-I) pJNK localizes to the same cells in which ptc is expressed (G, ptc>RFP, red) along the A/P boundary, and is lost following JNK phosphatase expression (H, ptc>puc, RFP, red) or RNAi-mediated knockdown of bsk within the ptc domain (I, ptc>bskRNAi, RFP, red). Bar: 50\u00a0um (B-F, H-I) and 25\u00a0um (G). See also Figure 1\u2014figure supplement 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11491/elife-11491-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Related to Figure 1. (A-C) Wildtype Canton-S wing discs stained for DAPI (blue) and pJNK (green) during (A) early third instar (L3), (B) mid-third instar, and (C) late third instar. (D) Wing disc stained for DAPI (blue), pJNK (green), and puc-lacZ (red). Boxes indicate areas enlarged in E and F. (E) Notum cells are positive for pJNK and puc-lacZ. (F) Blade cells show a stripe of pJNK staining but no detectable puc-lacZ. (G-H) A second, independently generated antibody against pJNK from Promega shows a similar pattern in third instar discs. (G) Whole wing disc and (H) wing blade. (I) Inhibition of JNK signaling in the dorsal compartment reduces pJNK staining (green) (ap>puc). (J) ptc-Gal4 expresses in a stripe in early L3 stage. (K) Inhibition of JNK in all wing blade cells (rn>bskRNAi#1, RFP) or (L) in ptc cells (ptc>bskRNAi#2, RFP) eliminates pJNK (green) signal. (M) Western blot analysis of larval extracts from Canton-S (Lane 1) and hepr75/Y (Lane 2) animals. pJNK is predicted to be ~43kD. Loading control (bottom) is alpha-tubulin. Bar: 50\u00a0um.\n\nThe Jun N-terminal Kinase (JNK) pathway promotes proliferation during regeneration and tumor growth (Bosch et al., 2005; Igaki et al., 2006; Ryoo et al., 2004; Srivastava et al., 2007; Wu et al., 2010). In fact, JNK-induced proliferation is often non-autonomous (Enomoto and Igaki, 2012; Pastor-Pareja et al., 2008; Ryoo et al., 2004; Sun and Irvine, 2011; Wu et al., 2010). Basket (Bsk) is the singular Drosophila JNK and is activated by phosphorylation by the JNKK Hemipterous (Hep) (Glise et al., 1995; Stronach, 2005). Canonical JNK signaling acts through the transcription co-factor Jun, which regulates migration and apoptosis (Stronach, 2005). Although the role of JNK in activating Yorkie signaling and growth during regeneration and tumorigenesis is clear (Enomoto and Igaki, 2012; Sun and Irvine, 2011; Sun and Irvine 2013), it is not known to regulate proliferation and growth during developmental size control.\n\nHere we show that localized JNK activity in the developing wing is established by Hedgehog (Hh) signaling and controls wing size through a non-canonical, Jun-independent signaling mechanism that inhibits the Hippo pathway.\n\n## Results and discussion\n\n### JNK is active in the developing Drosophila wing pouch\n\nTwo independently generated antibodies that recognize the phosphorylated, active form of JNK (pJNK) specifically label a stripe in the pouch of developing wildtype third instar wing discs (Figure 1B\u2013C and Figure 1\u2014figure supplement 1G\u2013H). Importantly, localized pJNK staining is not detected in hemizygous JNKK mutant discs (Figure 1D\u2013E; hepr75/Y), in clones of JNKK mutant cells within the stripe (Figure 1F; hepr75, FRT10/Ubi-GFP, FRT10;; MKRS, hs-FLP/+), following over-expression of\u00a0the JNK phosphatase puckered (puc) (Figure 1\u2014figure supplement 1I; ap-Gal4, UAS-puc), or following RNAi-mediated knockdown of bsk using two independent, functionally validated RNAi lines (Figure 1\u2014figure supplement 1K\u2013L; rn-Gal4, UAS-bskRNAi#1 or ptc-Gal4, UAS-bskRNAi#2; see Experimental Genotypes for full genotypes and conditions) (Glise et al., 1995; MacDonald et al., 2013; Mart\u00edn-Blanco et al., 1998; P\u00e9rez-Garijo et al., 2013; Weber et al., 2000; Xu and Rubin, 1993).\n\nThe stripe of localized pJNK staining appeared to be adjacent to the anterior-posterior (A/P) compartment boundary, a location known to play a key role in organizing wing growth, and a site of active Hedgehog (Hh) signaling (Basler and Struhl, 1994; Tabata and Kornberg, 1994; Zecca et al., 1995). Indeed, pJNK co-localizes with the Hh target gene patched (ptc) (Figure 1G; ptc-Gal4, UAS-RFP). Expression of the JNK phosphatase puc in these cells specifically abrogated pJNK staining (Figure 1H; ptc-Gal4, UAS-puc), as did RNAi-mediated knockdown of bsk (Figure 1I and Figure 1\u2014figure supplement 1L; ptc-Gal4, UAS-bskRNA#i1or2). Together, these data indicate that the detected pJNK signal reflects endogenous JNK signaling activity in the ptc domain, a region of great importance to growth control. Indeed, while at earlier developmental stages pJNK staining is detected in all wing pouch cells (Figure 1\u2014figure supplement 1A), the presence of a localized stripe of pJNK correlates with the time when the majority of wing disc growth occurs (1000 cells/disc at mid-L3 stage to 50,000 cells/disc at 20\u2009hr after pupation, (Garcia-Bellido, 2009), so we hypothesize that localized pJNK plays a role in regulating growth.\n\n### Localized JNK activity regulates global wing size\n\nInhibition of JNK signaling in the posterior compartment previously led to the conclusion that JNK does not play a role in wing development (McEwen and Peifer, 2005). The discovery of an anterior stripe of JNK activity spurred us to re-examine the issue. Since bsk null mutant animals are embryonic lethal, we thus conditionally inhibited JNK signaling in three independent ways in the developing wing disc. JNK inhibition was achieved by RNAi-mediated knockdown of bsk (bskRNAi#1or2), by expression of JNK phosphatase (puc), or by expression of a dominant negative bsk (bskDN). These lines have been independently validated as JNK inhibitors (MacDonald et al., 2013; Mart\u00edn-Blanco et al., 1998; Perez-Garijo et al., 2013; Weber et al., 2000). Inhibition of JNK in all wing blade cells (rotund-Gal4, rn-Gal4) or specifically in ptc-expressing cells (ptc-Gal4) resulted in smaller adult wings in all cases, up to 40% reduced in the strongest cases (Figures 2A\u2013F, 2J\u2013K, and Figure 2\u2014figure supplement 1D). Importantly, expression of a control transgene (UAS-GFP) did not affect wing size (Figure 2\u2014figure supplement 1B\u2013C; ptc-Gal4, UAS-GFP). This contribution of JNK signaling to size control is likely an underestimate, as the embryonic lethality of bsk mutations necessitates conditional, hypomorphic analysis. Nevertheless, hypomorphic hepr75/Y animals, while pupal lethal, also have smaller wing discs (Figure 2\u2014figure supplement 1G), as do animals with reduced JNK signaling due to bskDN expression (Figure 2\u2014figure supplement 1H\u2013I; ap-Gal4, UAS-bskDN). Importantly, total body size is not affected by inhibiting JNK in the wing. Even for the smallest wings generated (rn-Gal4, UAS-bskDN), total animal body size is not altered (Figure 2\u2014figure supplement 1A,E).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/11491/elife-11491-fig2-v3.jpg)\n\n**Figure 2.:** Inhibition of JNK in all wing blade cells (B-E, J) or within the ptc domain (F, K) decreases adult wing size compared to controls (A, C-E, J, rn>) or (F, K, ptc>). Note that autonomous reduction between longitudinal veins 3 and 4 accounts for a small portion of the global reduction. Apoptosis inhibition does not rescue the small wing phenotype (red, G, rn>p35, bskDN). (H-I, L) Increased JNK signaling within the ptc domain following eiger expression causes an increase in disc size (I, ptc>egr, RFP, red; DAPI, blue) compared to controls (H, ptc>RFP, red). (L) This is increase is dependent on bsk (ptc>egr, bskDN) but not affected by diap1 or p35 expression (ptc>egr, diap1 or ptc>egr, p35). Due to high pupal lethality, disc size was analyzed when animals reached the wandering third instar stage. (M-O) JNK inhibition does not affect cell size (N-O, rn>bskDN). (P-Q) Increased JNK signaling within the ptc domain causes an increase in proliferation (Q, ptc>egr, RFP, red; EdU, green) compared to controls (P, ptc>RFP, red; EdU, green). EdU of boxed region in (P) and (Q) is shown in (R) and (S), respectively. (T) Quantification of mean EdU signal in wing pouch regions between ptc>RFP and ptc>egr animals. Whiskers are SD. For box plots of area quantifications, whiskers represent maximum and minimum values (J-L, O). *-****=p<0.05\u20130.0001.\u00a0n.s.=\u00a0not\u00a0significant.\u00a0Bar: 50\u00a0um. See also Figure 2\u2014figure supplements 1\u20134.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11491/elife-11491-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Related to Figure 2. (A) Control rotund-Gal4 (rn>) alone female fly (left). Inhibiting JNK in the entire wing (rn>bskDN) leads to a female fly with smaller, well-patterned wings (right). Black bars highlight difference in wing size. (B-C) Expression of a control transgene (UAS-GFP) does not affect wing size (ptc>GFP). (D) Quantification of relative wing size for knockdown of bsk with a second RNAi line (bskRNAi#2). (E) Adult body length is not affected by inhibiting JNK by rn-Gal4. (F) Inhibition of JNK with rn-GAL4 delays development. (G) hepr75/Y animals have smaller wing discs than controls (Canton-S or hepr75/+), even when adjusted for delayed developmental time (7d AEL). (H-I) JNK inhibition (red, dorsal half) causes a reduction in wing pouch size compared to its matched control (blue, ventral half) (ap>bskDN, red). (J) JNK inhibition (dorsal half) reduces cell proliferation by phosphorylated histone 3 (PH3) staining (green) compared to its matched control (ventral half) (ap>bskDN). (K) Control discs (ap>RFP, blue) do not show a difference in PH3 staining between dorsal and ventral halves (ratio = 1.04), while JNK inhibited ones do (Ratio = 0.86, red). (L) Control wing pouch (rn>RFP, red) stained for cleaved Caspase 3 (CCP3, green). (M) Inhibition of JNK in all pouch cells (rn>bskDN, RFP, red) does not induce apoptosis as assayed by CCP3 staining (green). (N) Positive control expression of wildtype JNK (bskAY) causes apoptosis and CCP3 staining (green). Two-sided student\u2019s t-test: *-***p<0.05\u20130.001. Bar: 50\u00a0um.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11491/elife-11491-fig2-figsupp2-v3.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Related to Figure 2. (A-C) Age-matched wing discs expressing RFP by ptc-GAL4 (control, A) or RFP and egr by ptc-GAL4 (B). (C) Wing disc area quantification for A-B. (D-F) Induction of apoptosis in the ptc domain reduces wing disc size. (D) Control ptc>RFP wing. (E) Expression of UAS-hid (ptc>hid) decreases wing size. (F) Quantification of D-E. (G) Size increase due to egr expression depends on bsk activity (ptc>egr, bskDN), but is not affected by expression of diap1 (G, ptc>egr, diap1) or p35 (I, ptc>egr, p35). Quantification of G-I is presented in Figure 2L. Two-sided student\u2019s t-test: *-**p<0.05\u20130.01. Bar: 100\u00a0um.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/11491/elife-11491-fig2-figsupp3-v3.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Related to Figure 2. (A-C) Wing discs stained for the EGFR reporter pERK (green). (A) Control wing disc (ap>RFP, red). (B) Inhibition of EGFR signaling in the dorsal half of the disc (ap>EGFRRNAi, RFP, red) decreases dorsal pERK (green) staining, while (C) inhibition ofJNK signaling (ap>bskDN, RFP, red) does not. (D-F) Wing discs stained for the Dpp reporter pSMAD (green). (D) Control (ap>RFP, red). (E) Inhibition of Dpp signaling in the dorsal half of the disc (ap>dppRNAi, RFP, red) abolishes dorsal pSMAD (green) staining, while (F) inhibition of JNK signaling (ap>bskDN, RFP, red) does not. (G) Quantification of pSMAD fluorescence, as a ratio of dorsal to ventral staining. ap>dppRNAi causes a dramatic decrease in the ratio, while JNK inhibition (ap>bskDN) does not produce a statistically significant change (p=0.17). (H) pSMAD gradient fluorescence plot by distance along the A-P axis. Ventral (blue) is control, while dorsal (red) is knockdown of dpp. (I) pSMAD gradient fluorescence plot by distance along the A-P axis. Inhibiting JNK signaling (dorsal, red) does not affect pSMAD gradient formation (compare blue to red). (J) Control rn-Gal4 alone control. (K) RNAi-mediated knockdown of dpp causes a reduction in wing veins and a more pronounced effect on AP than PD length. (L) Inhibition of JNK does not cause wing vein loss, but does cause a global reduction in size. AFU.: arbitrary fluorescence units. Bar: 50\u00a0um.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/11491/elife-11491-fig2-figsupp4-v3.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Related to Figure 2. Inhibition of EGFR (A) or Dpp (B) by RNAi does not have an effect on pJNK (green). Bar: 50\u00a0um.\n\nTo test whether elevation of this signal can increase organ size, we expressed eiger (egr), a potent JNK activator (Igaki et al., 2002), within the ptc domain (ptc-Gal4, UAS-egr). Despite induction of cell death as previously reported (Igaki et al., 2002) and late larval lethality, we observed a dramatic increase in wing disc size without apparent duplications or changes in the shape of the disc (Figures 2H\u2013I and 2L; ptc-Gal4, UAS-egr). While changes in organ size could be due to changing developmental time, wing discs with elevated JNK signaling were already larger than controls assayed at the same time point (Figure 2\u2014figure supplement 2A\u2013C; ptc-Gal4 and ptc-Gal4, UAS-egr). Similarly, inhibition of JNK did not shorten developmental time (Figure 2\u2014figure supplement 1F; rn-Gal4, UAS-bskDN). Thus, changes in organ size by modulating JNK activity do not directly result from altering developmental time. Finally, the observed increase in organ size is not due to induction of apoptosis, as expression of the pro-apoptotic gene hid does not increase organ size (Figure 2\u2014figure supplement 2D\u2013F). In contrast, it causes a decrease in wing size (Figure 2\u2014figure supplement 2D\u2013F). Furthermore, co-expression of diap1 or p35 did not significantly affect the growth effect of egr expression (p>0.05; Figure 2L and Figure 2\u2014figure supplement 2H\u2013I; ptc-Gal4, UAS-egr, UAS-diap1 and ptc-Gal4, UAS-egr, UAS-p35), while the effect was dependent on Bsk activity (p<0.05; Figure 2L and Figure 2\u2014figure supplement 2G; ptc-Gal4, UAS-egr, UAS-bskDN).\n\nIn stark contrast to known developmental morphogens, we did not observe any obvious defects in wing venation pattern following JNK inhibition (Figure 2A\u2013B), suggesting that localized pJNK may control growth in a pattern formation-independent manner. Indeed, even a slight reduction in Dpp signaling results in dramatic wing vein patterning defects (Figure 2\u2014figure supplement 3K). Second, inhibiting Dpp signaling causes a reduction in wing size along the A-P axis, while JNK inhibition causes a global reduction (Figure 2\u2014figure supplement 3J\u2013L). Furthermore, ectopic Dpp expression increases growth in the form of duplicated structures (Zecca et al., 1995), while increased JNK signaling results in a global increase in size (Figure 2H\u2013I). Molecularly, we confirm that reducing Dpp signaling abolishes pSMAD staining, while quantitative data shows that inhibiting JNK signaling does not (Figure 2\u2014figure supplement 3D\u2013I). Furthermore, we also find that Dpp is not upstream of pJNK, as reduction in Dpp signaling does not affect pJNK (Figure 2\u2014figure supplement 4B). Together, the molecular data are consistent with the phenotypic results indicating that pJNK and Dpp are separate programs in regulating growth. Consistent with our findings, during the revision of this manuscript, it has been suggested that Dpp does not play a primary role in later larval wing growth control (Akiyama and Gibson, 2015). Finally, we found that inhibition of JNK does not affect EGFR signaling (pERK) and that inhibition of EGFR does not affect the establishment of pJNK (Figure 2\u2014figure supplement 3A\u2013C and 4A).\n\nA difference in size could be due to changes in cell size and/or number. We examined wings with reduced size due to JNK inhibition and did not detect changes in cell size or apoptosis (Figure 2M\u2013O and Figure 2\u2014figure supplement 1L\u2013N; rn-Gal4, UAS-bskDN), suggesting that pJNK controls organ size by regulating cell number. Consistently, the cell death inhibitor p35 was unable to rescue the decreased size following JNK inhibition (Figure 2G; rn-Gal4, UAS-p35, UAS-bskDN). Indeed, inhibition of JNK signaling resulted in a decrease in proliferation (Figure 2\u2014figure supplement 1J\u2013K; ap-Gal4, UAS-bskDN), while elevation of JNK signaling in the ptc domain resulted in an increase in cell proliferation in the enlarged wing disc (Figure 2P\u2013T; ptc-Gal4, UAS-egr). Importantly, this increased proliferation is not restricted to the ptc domain, consistent with previous reports that JNK can promote proliferation non-autonomously (Enomoto and Igaki, 2012; Pastor-Pareja et al., 2008; Ryoo et al., 2004; Sun and Irvine, 2011; Wu et al., 2010).\n\n### Non-canonical JNK signaling regulates size\n\nTo determine the mechanism by which pJNK controls organ size, we first considered canonical JNK signaling through its target Jun (Ip and Davis, 1998). Interestingly, RNAi-mediated knockdown of jun in ptc cells does not change wing size (Figure 3A\u2013B and Figure 3\u2014figure supplement 1C\u2013F; ptc-Gal4, UAS-junRNAi#1or2; Both RNAi lines can effectively inhibit jun activity, Figure 3\u2014figure supplement 1A\u2013B), which is consistent with previous analysis of jun mutant clones in the wing disc (Kockel et al., 1997). Furthermore, in agreement with this, a reporter of canonical JNK signaling downstream of jun (puc-lacZ [Ring and Martinez Arias, 1993]) is not expressed in the pJNK stripe (Figure 1\u2014figure supplement 1F). Finally, knockdown of fos (kayak, kay) alone or with junRNAi did not affect wing size (Figure 3\u2014figure supplement 1G\u2013H; rn-Gal4, UAS-kayRNiA#1or2 and rn-Gal4, UAS-junRNAi#1, UAS-kayRNiA#1or2). Together, these data indicate that canonical JNK signaling through jun does not function in the pJNK stripe to regulate wing size.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/11491/elife-11491-fig3-v3.jpg)\n\n**Figure 3.:** RNAi-mediated knockdown of Jun within the ptc stripe does not change adult wing size (A-B, red, ptc>junRNAi compared to blue, ptc>). RNAi-mediated knockdown of jub does change global wing size (C-D, red, ptc>jubRNAi compared to blue, ptc>). Expression of yki in all wing cells (E-F, red, rn>yki, bskDN compared to blue, rn>) or within the ptc stripe (G-H, red, ptc>bskDN, yki compared to blue, ptc>) rescues wing size following JNK inhibition. RNAi-mediated knockdown or overexpression of yki in ptc cells decreases or enlarges wing size, respectively (I-J, red, ptc>ykiRNAi, blue, ptc>, and K-L, red, ptc>yki, blue, ptc>). (M-N) Inhibition of JNK signaling does not enhance the phenotype of Yki inhibition alone (M, red, ptc>bskDN, ykiRNAi; blue, ptc>ykiRNAi). (O-P) RNAi-mediated knockdown of fj modifies the Yki growth phenotype (O, red, ptc>yki, fjRNAi; blue, ptc>yki). For box plots, whiskers represent maximum and minimum values. ****=p<0.0001. See also Figure 3\u2014figure supplements 1\u20132.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11491/elife-11491-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Related to Figure 3. RNAi-mediated knockdown of Jun in ap domain cells decreases puc expression (puc-lacZ, green) (B) compared to controls (A). Dotted line indicates puc+ cells that co-localize with ap-Gal4. Note decreased puc-lacZ staining in this domain following Jun inhibition. However, (C-D) inhibition of Jun in all wing cells by RNAi-mediated knockdown does not show a phenotype. (E-F) A second Jun RNAi line does not show a phenotype when expressed in ptc-expressing cells. (G-H) Inhibition of kayak/fos (red, rn>kayRNAi) does not affect wing size, nor does inhibiting jun and kay together (green, rn>kayRNAi, junRNAi). Individually, kayRNAi lines induced a thorax closure defect when driven by ap-Gal4. For box plots, whiskers represent maximum and minimum values. Bar: 5\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11491/elife-11491-fig3-figsupp2-v3.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Related to Figure 3. (A) Schematic for measuring the ratio of anterior to posterior wing area. (B) Local (ptc-driven) inhibition of JNK or increased Yki expression affects the anterior and posterior compartments equally. (C-D) The effect of inhibiting JNK signaling can be partially suppressed in a lats heterozygous mutant background (C, red, rn>bskDN; latse26-1/+). (G-H) Inhibition of fj alone does not change wing size (G, red, ptc>fjRNAi, blue, ptc>), albeit it slightly changes wing shape, likely due to its effect on polarity. (I-J) Over-expression of fj causes a decrease in wing size (I, red, ptc>fj). For box plots, whiskers are maximum and minimum values. Two-sided student\u2019s t-test: *-****p<0.05\u20130.0001.\n\nIn search of such a non-canonical mechanism of JNK-mediated size control, we considered the Hippo pathway. JNK signaling regulates the Hippo pathway to induce autonomous and non-autonomous proliferation during tumorigenesis and regeneration via activation of the transcriptional regulator Yorkie (Yki) (Bakal et al., 2008; Enomoto and Igaki, 2012; Sun and Irvine, 2011). Recently it has been shown that JNK activates Yki via direct phosphorylation of Jub (Sun and Irvine, 2013). To test whether this link between JNK and Jub could account for the role of localized pJNK in organ size control during development, we performed RNAi-mediated knockdown of jub in the ptc stripe, and observed adults with smaller wings (Figure 3C\u2013D; ptc-Gal4, UAS-jubRNAi#1or2). Indeed, the effect of JNK loss on wing size can be partially suppressed in a heterozygous lats mutant background (Figure 3\u2014figure supplement 2C\u2013D; rn-Gal4, UAS-bskDN, latse26-1/+) and increasing downstream yki expression in all wing cells (Figure 3E\u2013F; rn-Gal4, UAS-yki, UAS-bskDN) or just within the ptc domain (Figure 3G\u2013H; ptc-Gal4, UAS-yki, UAS-bskDN) can rescue wing size following JNK inhibition. These results suggest that pJNK controls Yki activity autonomously within the ptc stripe, leading to a global change in cell proliferation. This hypothesis predicts that the Yki activity level within the ptc stripe influences overall wing size. Consistently, inhibition of JNK in the ptc stripe translates to homogeneous changes in anterior and posterior wing growth (Figure 3\u2014figure supplement 2A\u2013B). Similarly, overexpression or inhibition of Yki signaling in the ptc stripe also results in a global change in wing size (Figure 3I\u2013L and Figure 3\u2014figure supplement 2A\u2013B; ptc-Gal4, UAS-yki; ptc-Gal4, UAS-ykiRNAi).\n\nIt is important to note that the yki expression line used is wild-type Yki, which is still affected by JNK signaling. For this reason, the epistasis experiment was also performed with activated Yki, which is independent of JNK signaling (UAS-ykiS111A,S168A,S250A.V5; (Oh and Irvine, 2009). Expression of this activated Yki in the ptc stripe caused very large tumors and lethality (data not shown). Importantly, inhibiting JNK in this context did not affect the formation of these tumors or the lethality (data not shown; ptc-Gal4, UAS-ykiS111A,S168A,S250A.V5, UAS-bskDN). Furthermore, inhibiting both JNK and Yki together does not enhance the phenotype of Yki inhibition alone (Figure 3M\u2013N and Figure 3\u2014figure supplement 2E\u2013F; ptc-Gal4, UAS-ykiRNAi, UAS-bskDN and ptc-Gal4, UAS-ykiRNAi, UAS-puc), further supporting the idea that Yki is epistatic to JNK, instead of acting in parallel processes.\n\nMutants of the Yki downstream target four-jointed (fj) have small wings with normal patterning, and fj is known to propagate Hippo signaling and affect proliferation non-autonomously (Ambegaonkar et al., 2012; Harvey and Tapon, 2007; Strutt et al., 2004; Villano and Katz, 1995; Willecke et al., 2008). Although RNAi-mediated knockdown of fj in ptc cells does not cause an obvious change in wing size, it is sufficient to block the Yki-induced effect on increasing wing size (Figure 3O\u2013P and Figure 3\u2014figure supplement 2G\u2013H; ptc-Gal4, UAS-yki, UAS-fjRNAiand\u00a0ptc-Gal4, UAS-fjRNAi). However, overexpression of fj also reduces wing size, which makes it not possible to test for a simple epistatic relationship (ptc-Gal4, UAS-fj; Figure 3\u2014figure supplement 2I\u2013J). Overall, these data are consistent with the notion that localized pJNK regulates wing size not by Jun-dependent canonical JNK signaling, but rather by Jun-independent non-canonical JNK signaling involving the Hippo pathway.\n\n### Hh sets up pJNK by elevating dTRAF1 expression\n\nWhile morphogens direct both patterning and growth of developing organs (Tabata and Takei, 2004), a link between patterning molecules and growth control pathways has not been established (Schwank et al., 2011). pJNK staining is coincident with ptc expression (Figure 1G), suggesting it could be established by Hh signaling. During development, posterior Hh protein travels across the A/P boundary, leading to activation of the transcription factor Cubitus interruptus (Ci) in the stripe of anterior cells (Dom\u00ednguez et al., 1996; Schwartz et al., 1995). To test whether localized activation of JNK is a consequence of Hh signaling through Ci, we performed RNAi-mediated knockdown of ci and found that the pJNK stripe is eliminated (Figure 4A\u2013B; ptc-Gal4,\u00a0UAS-ciRNAi#1or2). Consistently, adult wing size is globally reduced (Figures 4D and 4G). In contrast, we do not observe a change in pJNK stripe staining following RNAi-mediated knockdown of dpp or EGFR (Figure 2\u2014figure supplement 4A\u2013B). Expression of non-processable Ci leads to increased Hh signaling (Price and Kalderon, 1999). Expression of this active Ci in ptc cells leads to an increase in pJNK signal and larger, well-patterned adult wings (Figures 4C,E, and 4G; ptc-Gal4, UAS-CiACT). The modest size increase shown for ptc>CiACT is likely due to the fact that higher expression of this transgene (at 25\u00b0C) leads to such large wings that pupae cannot emerge from their cases. For measuring wing size, this experiment was performed at a lower temperature (20\u00b0C, see Experimental Genotypes) so that the animals were still viable. Furthermore, inhibition of JNK in wings expressing active Ci blocks Ci\u2019s effects, and resulting wings are similar in size to JNK inhibition alone (Figure 4F\u2013G; ptc-Gal4, UAS-CiACT, UAS-bskDN). Together, these data indicate that Hh signaling through Ci is responsible for establishing the pJNK stripe.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/11491/elife-11491-fig4-v3.jpg)\n\n**Figure 4.:** RNAi-mediated knockdown of Ci in ptc cells abrogates pJNK (green) staining (A-B, ptc>CiRNAi, RFP compared to ptc>RFP) and results in smaller adult wings (D, red, ptc>CiRNAi compared to blue, ptc>). Expression of activated Ci in the ptc domain leads to increased pJNK staining (green) (C, ptc>CiACT, RFP) and a larger wing (E, red, ptc>CiACT compared to blue, ptc>). Inhibition of JNK signaling in these cells blocks the effect of activated Ci (red, F, ptc>CiACT, bskDN). For the box plot (G), whiskers represent maximum and minimum values. ***-****=p<0.001\u20130.0001.\u00a0Bar: 50\u00a0um.\n\nTo determine the mechanism by which Ci activates the JNK pathway, we compared transcriptional profiles of posterior (red, hh+) and ptc domain cells (green, ptc+) isolated by FACS from third instar wing discs (Figure 5A; Materials and methods). Of the total 12,676 unique genes represented on the microarray, 50.4% (6,397) are expressed in ptc domain cells, posterior cells, or both (log2 normalized expression \u22656.5; Figure 5\u2014figure supplement 1A\u2013D; Supplementary file 1; Materials and methods). We thresholded on a false discovery rate <0.01 and fold change \u22651.5 and found that 5.7% (363) of expressed genes were upregulated in ptc cells and 3.8% (242) were downregulated (Figure 5\u2014figure supplement 1D; Supplementary file 2; Materials and\u00a0methods). Hh pathway genes known to be differentially expressed are identified (Figure 5B). We next asked whether any JNK pathway genes are differentially expressed and found that dTRAF1 expression is more than five-fold increased in ptc cells (Figure 5C), while other JNK pathway members are not differentially expressed (Figure 5C; Supplementary file 1; Supplementary file 2).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/11491/elife-11491-fig5-v3.jpg)\n\n**Figure 5.:** (A) ptc cells (green, ptc+) and posterior cells (red, hh+) from third instar wing discs were dissociated and sorted by FACS. RNA was isolated and hybridized to microarrays. Differentially expressed genes were identified. (B) Hedgehog pathway genes known to be differentially expressed are identified. Genes upregulated in ptc cells (ptc+) compared to posterior (hh+) cells are highlighted in green and downregulated in red. Genes with log2 normalized expression \u22656.5 are considered expressed. (C) JNK pathway gene dTRAF1 is >5-fold upregulated in ptc cells. (D-I) RNAi-mediated knockdown of dTRAF1 eliminates pJNK (green) staining (E, ptc>dTRAFRNAi#1, RFP, red) and leads to smaller adult wings (F-I, rn>dTRAFRNAi#1 or ptc>dTRAFRNAi#1). (J) Ci inhibition causes a ~30% decrease in dTRAF1 expression in 3rd instar wing discs, relative to endogenous control Rp49. Whiskers are SD. For box plots, whiskers are maximum and minimum values (H-I). *-****=p<0.05\u20130.0001. Bar: 50\u00a0um. See also Figure 5\u2014figure supplement 1\u20132.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11491/elife-11491-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Related to Figure 5. Quality assessment analyses were conducted with post-normalized data. (A) Microarrays cluster by condition, indicating that biological effects are driving variability. (B) Principle components analysis similarly groups biological replicates. Outliers were not detected in (A) or (B). (C) Density plots of the log2 normalized expression in ptc domain (ptc+) or posterior (hh+) samples are very similar in shape and range, further suggesting comparable signal quality between the two arrays. Probe sets with a median log2 normalized expression \u22656.5 in ptc+ samples, hh+ cells, or both, were considered expressed (Supplementary file 1; Materials and methods). This corresponds to 6854 genic probe sets (47.3%). (D) Quantile-quantile plot for the differential expression analysis. Based on a criteria of minimum fold change \u22651.5 and false discovery rate (FDR) \u22640.01, 624 of 6,854 genic probe sets (9.1%) are differentially expressed, with 376 (5.5%) upregulated in ptc+ samples (green) and 248 (3.6%) downregulated in ptc+ samples (red, Supplementary file 2; Materials and methods). The dashed line indicates the tuning parameter, delta, which is chosen according to the specified FDR (\u22640.01). Inhibition of dTRAF1 expression by a second RNAi line also abolishes pJNK staining (E, ptc>dTRAFRNAi#2, and (F) leads to a smaller adult wing (red) compared to control (blue). (G) Quantification of adult wing size. (H) Multiple Ci binding sites (red lines) are identified within the dTRAF1 gene region (green). Height of red line indicates significance of the binding site. Boxes indicate exons, and arrowed lines indicate introns in the direction of transcription. For box plot, whiskers represent maximum and minimum values. ****=p<0.0001.\u00a0Bar: 50\u00a0um.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11491/elife-11491-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Related to Figure 5. (A) Compared to control wings (blue, ptc>), inhibiting dTRAF1 while activating Ci still leads to a dTRAF1 phenotype of a smaller wing (red, ptc>CiACT, dTRAF1RNAi). Compare to Figure 4E,G. For box plot, whiskers represent maximum and minimum values. ***=p<0.001.\n\ndTRAF1 is expressed along the A/P boundary (Preiss et al., 2001) and ectopic expression of dTRAF1 activates JNK signaling (Cha et al., 2003). Thus, positive regulation of dTRAF1 expression by Ci could establish a stripe of pJNK that regulates wing size. Indeed, we identified Ci binding motifs in the dTRAF1 gene (Figure 5\u2014figure supplement 1H), and a previous large-scale ChIP study confirms a Ci binding site within the dTRAF1 gene (Chr2L: 4367100- 4371393; [Biehs et al., 2010]). Consistently, a reduction in Ci led to a 29% reduction in dTRAF1 expression in wing discs (Figure 5J; ptc-Gal4, UAS-CiRNAi). Given that the reduction of dTRAF1 expression in the ptc stripe is buffered by Hh-independent dTRAF1 expression elsewhere in the disc (Preiss et al., 2001), this 29% reduction is significant. Furthermore, inhibition of dTRAF1 by RNAi knockdown abolished pJNK staining (Figure 5D\u2013E and Figure 5\u2014figure supplement 1E; ptc-Gal4, UAS-dTRAF1RNAi#1or2). Finally, these animals have smaller wings without obvious pattern defects (Figure 5F\u2013I and Figure 5\u2014figure supplement 1F\u2013G). Conversely, overexpression of dTRAF1 causes embryonic lethality (ptc-Gal4, UAS-dTRAF1), making it not possible to attempt to rescue a dTRAF1 overexpression wing phenotype by knockdown of bsk. Nevertheless, it has been shown that dTRAF1 function in the eye is Bsk-dependent (Cha et al., 2003). Finally, inhibition of dTRAF1 modulates the phenotype of activated Ci signaling (ptc-Gal4, UAS-dTRAF1RNAi, UAS-CiACT; Figure 5\u2014figure supplement 2). Together, these data reveal that the pJNK stripe in the developing wing is established by Hh signaling through Ci-mediated induction of dTRAF1 expression.\n\n### Localized pJNK controls antenna and leg size\n\nFinally, we detected localized centers of pJNK activity during the development of other imaginal discs including the eye/antenna and leg (Figures 6A and 6G). Inhibition of localized JNK signaling during development caused a decrease in adult antenna size (Figures 6B\u2013C and 6F; dll-Gal4, UAS-bskDN) and leg size (Figures 6H\u2013I and 6L; dll-Gal4, UAS-bskDN). Conversely, increasing JNK signaling during development resulted in pupal lethality; nevertheless, overall sizes of antenna and leg discs were increased (Figures 6D\u2013E and 6J\u2013K; dll-Gal4, UAS-egr). Together, these data indicate that localized JNK signaling regulates size in other organs in addition to the wing, suggesting a more universal effect of JNK on size control.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/11491/elife-11491-fig6-v3.jpg)\n\n**Figure 6.:** pJNK (green) staining of wildtype antenna/eye (A) and leg (G) third instar discs. Inhibition of JNK in the developing antenna (B-C, F, dll>bskDN) or leg (H-I, L, dll>bskDN) leads to a smaller adult organ. Increased JNK activation within the antenna (D-E, dll>egr, RFP, red) or leg disc (J-K, dll>egr, RFP, red) causes an increase in disc size. (M) Model of how localized JNK signaling regulates wing size during development. Engrailed (En) controls Hh signaling, leading to a stripe of active Ci along the A/P boundary. Ci increases transcription of dTRAF1, activating JNK (pJNK, green). JNK acts in a non-canonical, Jun-independent manner to regulate Yki or Yki-dependent signaling. As the human dTRAF1 homolog, TRAF4, and Hippo components are amplified in numerous cancers, these findings provide a new mechanism for how the Hh pathway could contribute to tumorigenesis (Camilleri-Bro\u00ebt et al., 2006; Harvey et al., 2013). For box plots, whiskers represent maximum and minimum values (F, L). ****=p<0.0001.\u00a0Bar: 100\u00a0um\n\nIntrinsic mechanisms of organ size control have long been proposed and sought after (Bryant and Simpson, 1984; Vogel, 2013). Our study reveals that in developing Drosophila tissues, localized, organ-specific centers of JNK signaling contribute to organ size in an activity level-dependent manner. Such a size control mechanism is qualitatively distinct from developmental morphogen mechanisms, which affect both patterning and growth (Zecca et al., 1995). Aptly, this mechanism is still integrated in the overall framework of developmental regulation, as it is established in the wing by the Hh pathway (Figure 6M). Our data indicate that localized JNK signaling is activated by Ci-mediated induction of dTRAF1 expression. Furthermore, we discovered that it is not canonical Jun-dependent JNK signaling, but rather non-canonical JNK signaling that regulates size, possibly through Jub-dependent regulation of Yki signaling, as described for regeneration (Sun & Irvine, 2013) (Figure 6M). As the human dTRAF1 homolog, TRAF4, and Hippo components are amplified in numerous cancers (Camilleri-Bro\u00ebt et al., 2006; Harvey et al., 2013), these findings provide a new mechanism for how the Hh pathway could contribute to tumorigenesis. More importantly, these findings offer a new strategy for potential cancer therapies, as reactivating Jun in Hh-driven tumors could lead tumor cells towards an apoptotic fate.\n\n## Materials and methods\n\n### Drosophila stocks and husbandry\n\nFly crosses were maintained at 25\u00b0C on standard cornmeal-molasses media unless otherwise indicated (see Experimental Genotypes). When possible, crosses were established so that every experimental animal had an in-vial Gal4 alone control. For experiments that necessitated precise developmental staging, 2\u2009hr egg lays were conducted on apple juice agar plates with yeast paste. For all other experiments, females were allowed to lay eggs on standard media for 24\u2009hr, after which they were removed and progeny were considered as 12 +/- 12\u2009hr after egg lay. The following stocks were utilized: (1) Canton-S (02) y, hepr75, FRT10.1/FM7iGFP (Glise et al., 1995) (2) Ubi-GFP, FRT10.1;; hs-FLP, MKRS/TM6B (3) UAS-puc (III) (Mart\u00edn-Blanco et al., 1998) (4) w; ap-GAL4, UAS-src-RFP; Sb/TM6B (5) w; ptc-GAL4, UAS-src-RFP; Sb/TM6B (6) UAS-bskRNAi(II and III) VDRC 34138 (Perez-Garijo et al., 2013) and BDSC 32977 (7) w, UAS-bskDN (X) (8) w;; UAS-bskDN/TM6B (9) w;; rn-GAL4/TM6B (10) y, UAS-p35; Adv/CyO; Sb/TM6B (11) w; Sp/CyO; UAS-egr/MKRS (12) UAS-diap1 (III) BDSC 6657 (13) UAS-bskAY (II) BDSC: 6407 (14) UAS-CiRNAi(II and III) BDSC 31236 and 31236 (15) UAS-Ci5m/TK-GFP (\u201cUAS-CiACT\u201d) (Price and Kalderon, 1999) (16) pucE69/TM6B (\u201cpuc-lacZ\u201d) (Ring and Martinez Arias, 1993) (17) UAS-dTRAF1RNAi(X and III) VDRC 21213 and 21214 (18) UAS-junRNAi (III) BDSC 31595 and VDRC 10835 (19) UAS-kayRNAi#1 (III) BDSC 33379 and 31322 (20) UAS-jubRNAi(III and II) BDSC 32923 and 41938 (21) y,w;; latse26-1/TM6B (22) yw; UAS-yki.GFP; Sb/TM6B BDSC 28815 (Oh and Irvine, 2008) (23) UAS-ykiRNAi/TM3 BDSC 31965 (24) UAS-fjRNAi/TM3 BDSC 28009 (25) UAS-fj.V5 (III) BDSC 44252 (26) w; dll-Gal4, UAS-src.RFP/CyO (27) UAS-dppRNAi(III) BDSC 25782 (28) UAS-EGFRRNAi(III) BDSC 25781 (29) UAS-ykiS111A.S168A.S250A.V5 (III) BDSC 28817\n\n### Imaginal disc staining\n\nAntibody staining was performed according to standard procedures for imaginal discs. The following antibodies were used: rabbit PhosphoDetectTM anti-SAPK/JNK (pThr183, pTyr185) (1:100, Calbiochem, immunogenic sequence is 100% identical to D. melanogaster bsk/JNK), rabbit anti-ACTIVE\u00ae JNK (1:100, Promega, immunogenic sequence is 100% identical to D. melanogaster bsk/JNK), rabbit anti-cleaved-caspase 3 (1:250, Cell Signaling), mouse anti-betagalactosidase (1:500, Sigma), rabbit anti-pERK (1:75, Cell Signaling), rabbit anti-pSMAD (1:75, Cell Signaling), rabbit anti-phosphorylated histone 3 (1:250, Cell Signaling), goat Alexa-488-conjugated anti-rabbit IgG (1:250, Invitrogen), goat Alexa-488-conjugated anti-mouse IgG (1:250, Invitrogen), goat Alexa-555-conjugated anti-rabbit IgG (1:250, Invitrogen). EdU staining was performed according to established protocol (Gouge and Christensen, 2010) using the Click-iT EdU cell proliferation assay kit (Invitrogen), Grace\u2019s Media (Invitrogen) and a 10 min EdU incubation.\n\n### Imaginal disc imaging\n\nImaginal discs to be imaged by confocal microscopy were mounted in Vectashield mounting media with DAPI (Vector Labs). Confocal images were taken with a Zeiss LSM510 Meta confocal microscope or a Leica TCS SP8 STEAD 3X confocal microscope with 405nm, 488nm, 561nm, and 633nm lasers. Both microscopes gave similar results. Measurements of disc size were performed from images of at least fifteen discs using NIH Image-J software.\n\n### Western blot analysis\n\nWhole Canton-S and hepr75/Y larvae were lysed in standard RIPA buffer with protease and phosphatase inhibitors. Proteins were separated by SDS-PAGE using a 4\u201315% acrylamide gel (BioRad), transferred for 1\u2009hr at 4\u00b0C, and probed with primary antibodies: rabbit anti-pJNK (Calbiochem, 1:1000) and mouse anti-alpha tubulin (Sigma, 1:4000). HRP-conjugated secondary antibodies (anti-rabbit and anti-mouse) were used at 1:5000. ECL (Pierce) was used for detection with film.\n\n### Adult organ imaging\n\nAdult wings, legs, or antenna were dissected in 70% ethanol, mounted in Permount mounting media (Fisher Scientific), and imaged with a Leica DFC300FX camera on a Leica MZ FLIII stereomicroscope. Measurements of wing size were performed from images of twenty to sixty female flies using NIH Image-J software. Wing images were false-colored and overlayed to scale using Adobe Photoshop CS3 software. Cell size was measured by dividing the number of hairs (1 hair/cell) by a set area using Adobe Photoshop CS3 software. Mean EdU signal was measured in Adobe Photoshop CS3. Measurements of antenna or leg size were performed from images of at least twenty male flies for each genotype using NIH Image-J software.\n\n### Statistical analysis\n\nTo determine whether differences in area were statistically significant, two-sided student\u2019s t-tests were performed using raw data values, matched for temperature and sex. Box plots were generated where whiskers represent maximum and minimum, a plus sign indicates the mean, a horizontal line within the box indicates the median, and the box represents the 25\u201375% quartile range. Both parametric and non-parametric analyses were performed, and p-values less than 0.05 were considered significant. Data are presented as relative to the mean of the matched Gal4-alone control.\n\n### Gene expression profiling\n\nFor each of three biological replicates, 200 pairs of wing imaginal discs were dissected from third instar larvae of the genotypes hh-Gal4; UAS-mCD8GFP or ptc-Gal4; UAS-mCD8GFP. Discs were stored in Schneider's Drosophila Media (21720, Invitrogen) plus 10% FBS (10438, Invitrogen) on ice for less than two hours prior to cell dissociation. Discs were washed twice with 1\u2009ml cell dissociation buffer (Sigma, C-1544). Elastase (Sigma, E-0258) was diluted to 0.4 mg/ml in fresh cell dissociation buffer once discs were ready. Discs were incubated for 20\u2009min at room temperature in 0.4 mg/ml elastase with stirring by a magnetic micro stirring bar. Undissociated tissue was spun out, cell viability was measured using the Beckman Vi-CELL Cell Viability Analyzer (>80%), and cells were immediately isolated using the BD FACSAria II system within the Stanford FACS facility. Dead cells labeled with propidium iodide (P3566, Invitrogen) were excluded during FACS, and purity of sorted cells was greater than 99% by post-sorting FACS analysis. Total RNA was extracted from sorted cells (RNeasy, Qiagen), quality was assessed with the Agilent Bioanalyzer 2100 (RIN > 7.0), and microarray analysis was performed in the Stanford Protein and Nucleic Acid Facility (Affymetrix D. mel GeneChip Genome 2.0 microarrays).\n\n### Identification of differentially expressed genes\n\nAll analyses were conducted in R version 3.1.1 (2014-07-10). Expression values were determined using the affy package (Gautier et al., 2004), available from BioConductor (http://bioconductor.org). The automatically downloaded Drosophila 2.0 CDF environment was utilized. Probe level data from the CEL files were imported using the function ReadAffy and converted to expression values using the function rma with default settings. This method implements robust multi-array average (RMA) for background correction followed by quantile normalization. PM correction was not performed. Probe level expression values were combined into probe set expression measures using medianpolish, the standard summary method employed in RMA (Irizarry et al., 2003). Expression values are log2 transformed.\n\nPost-normalization microarray quality assessment was conducted using the arrayQualityMetrics package (Kauffmann et al., 2009), available from BioConductor. Default settings were used, with ptc domain (ptc+) versus posterior (hh+) as the covariate in intgroup. Biological replicates cluster together in a dendrogram of inter-array difference, estimated as the mean absolute difference between the data of the arrays (Figure 5\u2014figure supplement 1A), indicating that biological effects are stronger than any batch effects. Similarly, principle components analysis also separates biological replicates into two clusters (Figure 5\u2014figure supplement 1B). Outliers were not detected by either of these methods.\n\nProbe sets were mapped to genes using the drosophila2.db annotation package (version 3.0.0), available from BioConductor. 14,481 of 18,952 (76.4%) probe sets map to gene isoforms\u201412,676 (87.5%) of which correspond to unique genes (some genes are mapped by \u22651 probe set). In order to minimize technical artifacts, probe sets mapping to the same gene were not combined.\n\nBased on the distribution observed in the density plot of normalized probe set expression values, probe sets (genes) with median log2 expression value \u22656.5 in at least one condition (ptc+ and/or hh+) were considered to be expressed (Figure 5\u2014figure supplement 1C). According to these criteria, 7,228 of 18,952 probe sets (38.1%) are expressed. This corresponds to 6,854 of 14,481 gene isoforms (47.3%), which corresponds to 6,397 of 12,676 unique genes (50.4%, Figure 5\u2014figure supplement 1D, Supplementary file 1).\n\nTo identify probe sets (genes) differentially expressed between ptc+ and posterior (hh+) samples, we used the samr package, an R implementation of significance analysis of microarrays (Tusher et al., 2001). This package is available from CRAN (http://cran.r-project.org/). Only expressed probe sets mapping to genes (6,854) were considered in this analysis. Differentially expressed probe sets were identified with the function SAM, using a two class unpaired response type, the t-statistic as the test statistic, and a false discovery rate (FDR) threshold of 0.01. The maximum number of possible permutations (720) was used. To ensure these results are biologically meaningful, we further trimmed this list to probe sets with a minimum 1.5 fold change between ptc+ and hh+ cells. Based on these criteria, 624 of 6,854 probe sets (9.1%) are differentially expressed, with 376 (5.5%) upregulated in ptc+ samples and 248 (3.6%) downregulated in ptc+ samples (Figure 5\u2014figure supplement 1D, Supplementary file 2). A gene was considered differentially expressed if any mapped probe set was differentially expressed. Therefore, of the 6,397 unique expressed genes, 604 (9.4%) are differentially expressed, 363 (5.7%) upregulated and 242 (3.8%) downregulated. One gene, Tie, was mapped by probe sets both up- and down-regulated. The quantile-quantile plot in Figure 5\u2014figure supplement 1D was prepared using the samr.plot function.\n\n### Real-time polymerase chain reaction\n\nTotal RNA was extracted from third instar wing discs from ptc-Gal4 or ptc-Gal4, UAS-CiRNAi\u00a0animals using a standard TriZol extraction. RNA was reverse transcribed using the iScript cDNA Synthesis Kit (Bio-Rad) according to manufacturer\u2019s instructions. dTRAF1 expression was quantified relative to Rp49 (RpL32- FlyBase, endogenous control) by real-time PCR performed in triplicate using the SYBR Green fast kit (Applied Biosystems) and an Applied Biosystems machine according to the manufacturer\u2019s instructions. The following primers were used: dTRAF1, 5\u2019-GCACTCCATCACCTTCACAC-3\u2019 and 5\u2019-TAGCTGATCTGGTTCGTTGG-3\u2019; Rp49, 5\u2032-GGCCCAAGATCGTGAAGAAG-3\u2032 and 5\u2032-ATTTGTGCGACAGCTTAGCATATC-3\u2032.\n\n### Transcription factor binding site analysis\n\nThe Drosophila Ci positional weight matrix from the BioBase TRANSFAC database was queried against the Drosophila melanogaster genome with a p-value <0.0001 (chosen based on known Ci binding sites within ptc) using FIMO (MEME) and aligned back to the UCSC genome browser.\n\n### Experimental genotypes\n\n#### Crosses were maintained at 25\u00b0C unless otherwise indicated\n\nFigure 1: (B-C) Canton-S (D-E) y, hepr75, FRT10.1 /Y (F) y, hepr75, FRT10.1/Ubi-GFP, FRT10.1;; hs-FLP, MKRS/+ (G) w/+; ptc-GAL4, UAS-src.RFP/+ (H) w; ptc-GAL4, UAS-src.RFP; UAS-puc 29\u00b0C\u00a0(I) w; ptc-GAL4, UAS-src.RFP/UAS-bskRNAi 29\u00b0C\n\nFigure 1\u2014figure supplement 1: (A-C, G-H) Canton-S,\u00a0(D-F) pucE69/+\u00a0(I) w; ap-Gal4/+; UAS-puc/+ (J) w; ptc-Gal4, UAS-src.RFP/+ (K) w/yv, UAS-bskRNAi#1/UAS-src.RFP; rn-Gal4/+ 29\u00b0C (L) w/yv; ptc-Gal4, UAS-src.RFP/+; UAS-bskRNAi#2/+\n\nFigure 2: (A) w/+;; rn-Gal4/+ (B) w/w, UAS-bskDN;; rn-Gal4/UAS-bskDN (C) Blue: w/+;; rn-Gal4/+ Red: w/w, UAS-bskDN;; rn-Gal4/UAS-bskDN (D) Blue: w/+;; rn-Gal4/+ 29\u00b0C Red: w; UAS-bskRNAi#1/+; rn-Gal4/+ 29\u00b0C (E) Blue: w/+;; rn-Gal4/+ 29\u00b0C Red: w;; rn-Gal4, UAS-puc/UAS-puc 29\u00b0C (F) Blue: w/+; ptc-Gal4, UAS-src.RFP/+; Sb/+ Red: w, UAS-bskDN/w; ptc-GAL4, UAS-src.RFP/Sp; UAS-bskDN/Sb (G) w, UAS-bskDN/w, UAS-p35;; rn-GAL4/UAS-bskDN 29\u00b0C (H, P, R)\u00a0w/+; ptc-GAL4, UAS-src.RFP/+ (I, Q, S)\u00a0w; ptc-GAL4, UAS-src.RFP/+, UAS-egr/+ (M) w/+;; rn-Gal4/+ (N)\u00a0w/w, UAS-bskDN; Sp/+; rn-Gal4/UAS-bskDN\n\nFigure 2\u2014figure supplement 1: (A) Left: w/+;; rn-Gal4/+ 25\u00b0C Right: w/w, UAS-bskDN;; rn-Gal4/UAS-bskDN25\u00b0C (B) Blue: w/+; ptc-Gal4, UAS-src.RFP/+; Sb/+ Red: w/+; ptc-Gal4, UAS-src.RFP/+; Sb/UAS-GFP (H, J) w, UAS-bskDN/w; ap-Gal4, UAS-src.RFP/+; UAS-bskDN/+ 29\u00b0C (L) w/+;; rn-Gal4/+ 29\u00b0C (M) w/w, UAS-bskDN;; rn-Gal4/UAS-bskDN\u00a029\u00b0C (N) w/+; UAS-bskAY/+; rn-Gal4/+\n\nFigure 2- figure supplement 2: (A) w/+; ptc-Gal4, UAS-src.RFP/+ 6 days AEL (B) w/+; ptc-Gal4, UAS-src.RFP/+; UAS-egr/Sb 6 days AEL (D) w/+; ptc-Gal4, UAS-src.RFP/+ (E) w/UAS-hid; ptc-Gal4, UAS-src.RFP/+ (G) w, UAS-bskDN/w; ptc-Gal4, UAS-src.RFP/+; UAS-egr/UAS-bskDN (H) w/+; ptc-Gal4, UAS-src.RFP/UAS-diap1; UAS-egr/Sb (I) w/w, UAS-p35; ptc-Gal4, UAS-src.RFP/+; UAS-egr/Sb\n\nFigure 2\u2014figure supplement 3: (A, D) w; ap-GAL4/UAS-src.RFP (B) w; ap-GAL4/UAS-src.RFP; UAS-EGFRRNAi/+ (C, F) w/w, UAS-bskDN; ap-GAL4/UAS-src.RFP; UAS-bskDN/+ (E) w; ap-GAL4/UAS-src.RFP; UAS-dppRNAi/+ (J) w/+;; rn-Gal4/+ (K) w;; UAS-dppRNAi/rn-Gal4 (L) w/w, UAS-bskDN;; rn-Gal4/UAS-bskDN\n\nFigure 2\u2014figure supplement 4: (A) w/yv; ptc-Gal4, UAS-src.RFP/+; UAS-EGFRRNAi/+ (B) w/yv; ptc-Gal4, UAS-src.RFP/+; UAS-dppRNAi/+\n\nFigure 3: (A) Blue: w/+; ptc-Gal4, UAS-src.RFP/+ Red: w/+; ptc-Gal4, UAS-src.RFP/+ UAS-junRNAi#1/+ (C) Blue: w/+; ptc-Gal4, UAS-src.RFP/+ 29\u00b0C Red: w/+; ptc-Gal4, UAS-src.RFP/+; UAS-jubRNAi#1/+ 29\u00b0C (E) Blue: w/+;; rn-GAL4/+ 29\u00b0C Red: w/w, UAS-bskDN; UAS-yki.GFP/+; rn-GAL4/UAS-bskDN\u00a029\u00b0C (G) Blue: w/+; ptc-Gal4, UAS-src.RFP/+ 29\u00b0C Red: w/w, UAS-bskDN; ptc-Gal4, UAS-src.RFP/UAS-yki.GFP; UAS-bskDN/+ 29\u00b0C (I) Blue: w/+; ptc-Gal4, UAS-src.RFP/+ Red: w/+; ptc-Gal4, UAS-src.RFP/+; UAS-ykiRNAi#1/+ (K) Blue: w/+; ptc-Gal4, UAS-src.RFP/+ 29\u00b0C\u00a0Red: w/+; ptc-Gal4, UAS-src.RFP/UAS-yki.GFP 29\u00b0C (M) Blue: w/+; ptc-Gal4, UAS-src.RFP/+; UAS-ykiRNAi#1/+ Red: w/ UAS-bskDN; ptc-Gal4, UAS-src.RFP/+; UAS-ykiRNAi#1/ UAS-bskDN (O) Blue: w/+; ptc-Gal4, UAS-src.RFP/UAS-yki.GFP 29\u00b0C\u00a0Red: w/+; ptc-Gal4, UAS-src.RFP/UAS-yki.GFP; UAS-fjRNAi/+ 29\u00b0C\n\nFigure 3\u2014figure supplement 1: (A) w/+; ap-Gal4, UAS-src.RFP/+; pucE69/+ (B) w/+; ap-Gal4, UAS-src.RFP/UAS-junRNA#1i; pucE69/+ (C) Blue: w/+;; rn-Gal4/+ Red: w/+; UAS-junRNAi#1/+; rn-Gal4/+ (E) Blue: w/+; ptc-Gal4, UAS-src.RFP/+ Red: w/+; ptc-Gal4, UAS-src.RFP/UAS-junRNAi#2\u00a0(G) Blue: w/+;; rn-Gal4/+ Red: w/+;; rn-Gal4/UAS-kayRNAi\u00a0Green: w/+; UAS-junRNAi/+; rn-Gal4/UAS-kayRNAi\n\nFigure 3\u2014figure supplement 2: (C) Blue: w/+;; rn-Gal4/+ Red: w/w, UAS-bskDN; UAS-bskDN/+; rn-Gal4/latse26-1\u00a0(E) w; ptc-Gal4, UAS-src.RFP/+; UAS-ykiRNAi#1/UAS-puc (G) Blue: w/+; ptc-Gal4, UAS-src.RFP/+ 29\u00b0C Red: w/+; ptc-Gal4, UAS-src.RFP/+; UAS-fjRNAi/+ 29\u00b0C (I) Blue: w/+; ptc-Gal4, UAS-src.RFP/+ Red: w/+; ptc-Gal4, UAS-src.RFP/UAS-fj; Sb/+\n\nFigure 4:(A) w/+; ptc-Gal4, UAS-src.RFP/+ (B) w/yv; ptc-Gal4, UAS-src.RFP/+; UAS-CiRNAi/+ (C) w/+; ptc-Gal4, UAS-src.RFP/+; UAS-CiACT/+ (D) Blue: w/+; ptc-Gal4, UAS-src.RFP/+ 20\u00b0C Red: w/yv; ptc-Gal4, UAS-src.RFP/+; UAS-CiRNAi/+ 20\u00b0C (E) Blue: w/+; ptc-Gal4, UAS-src.RFP/+ 20\u00b0C Red: w/+; ptc-Gal4, UAS-src.RFP/+; UAS-CiACT/+ 20\u00b0C (F) Blue: w/+; ptc-Gal4, UAS-src.RFP/+; UAS-CiACT/+ 20\u00b0C Red: w/UAS-bskDN; ptc-Gal4, UAS-src.RFP/+; UAS-CiACT/UAS-bskDN 20\u00b0C\n\nFigure 5: (D) w/+; ptc-Gal4, UAS-src.RFP/+ 29\u00b0C\u00a0(E) w/+; ptc-Gal4, UAS-src.RFP/+; UAS-dTRAF1RNAi#1/+ 29\u00b0C (F) Blue: w/+;; rn-Gal4/+ 29\u00b0CRed: w/+;; UAS-dTRAF1RNAi#1/rn-Gal4 29\u00b0C (G) Blue: w/+; ptc-Gal4, UAS-src.RFP/+ 29\u00b0C Red: w/+; ptc-Gal4, UAS-src.RFP/+; UAS-dTRAF1RNAi#1/+ 29\u00b0C\n\nFigure 5\u2014figure supplement 1: (E) UAS-dTRAF1RNAi#2/Y; ptc-Gal4, UAS-src.RFP/+; Sb/+ 29\u00b0C (F) Blue: w/+; ptc-Gal4, UAS-src.RFP/+ 29\u00b0C\u00a0Red: w/UAS-dTRAF1RNAi#2; ptc-Gal4, UAS-src.RFP/+ 29\u00b0C\n\nFigure 5\u2014figure supplement 2: (A) Blue: w/+; ptc-Gal4, UAS-src.RFP/+ 20\u00b0C Red: w/+; ptc-Gal4, UAS-src.RFP/+; UAS-CiACT/UAS-dTRAF1RNAi#1 20\u00b0C\n\nFigure 6: (A, G) Canton-S (B, D, H, J) w; dll-Gal4, UAS-src.RFP/+ (C, I) UAS-bskDN/Y; dll-Gal4, UAS-src.RFP/+; UAS-bskDN/+ (E, K) w; dll-Gal4, UAS-src.RFP/+; UAS-egr/+\n",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "38bf544c-8aa6-4910-b8fe-ffee4dbe642c",
+      "submission_id": "28624b7d-b4a2-4ad9-90e5-cf76099d9423",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Helen McNeill, The Samuel Lunenfeld Research Institute , Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.11491.020](https://doi.org/10.7554/eLife.11491.020)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Localized JNK Signaling Regulates Organ Size During Development\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors and the evaluation has been overseen by the Reviewing Editor and Fiona Watt as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this manuscript, Willsey et al. report a role for localized JNK signaling in regulating Drosophila organ size, particularly the developing wing. Mechanistically, Hh signaling from the posterior compartment activates JNK signaling in the A/P boundary by Ci-mediated transcriptional up-regulation of dTRAF1. The activated JNK signaling promotes cell proliferation and wing growth through Jun-independent, Jub-dependent Yki activation. While the connection between JNK and Yki has been previously reported, the findings of localized JNK signaling in organ size control and activation of JNK by Hh-Ci pathway are novel and important. However, there are concerns that should be addressed before this manuscript is considered for publication.\n\nEssential revisions:\n\n1) To verify the specificity of antibody, the authors used rn-Gal4 and ptc-Gal4 to knock down bsk (Figure 1I, Figure 1\u2014figure supplement 1K\u2013L). Actually ap-Gal4 should be used in this situation, as it is expressed only in the dorsal compartment, and the ventral part could serve as an internal control. Similarly, ap-Gal4 should be used to knock down hep, since some p-JNK staining still presents in the hep mutant clone (Figure 1F').\n\n2) A control UAS line (e.g. UAS-LacZ or UAS -GFP) should be included to exclude the possibility that expression of any protein by ptc- or rn-Gal4 may disturb wing development and affect wing size.\n\n3) Is there any effect on wing disc size by blocking JNK activity?\n\n4) Does ptc>egr-induced wing disc enlargement depends on Bsk?\n\n5) Does ptc>egr increases the adult wing size?\n\n6) To show the increased ptc>egr wing disc size is not a consequence of apoptosis, authors should block apoptosis by expressing p35.\n\n7) A positive control should be included to validate CCP3 staining (Figure 2\u2014figure supplement 1H, I).\n\n8) There is no evidence that the endogenous JNK signaling regulates cell proliferation. The authors should check cell proliferation (Edu staining) in rn- or ptc>bskDN discs. The non-cell autonomous increase of cell proliferation in ptc>egr discs could be triggered by caspase activation, rather than a direct outcome of JNK activation. To discriminate the two possibilities, diap1 should be added to block caspase activation.\n\n9) Though Jun is not required by JNK to regulate wing size, what about Fos?\n\n10) The effect of UAS-Yki on UAS-bskDN could be additive effect, but not rescue. The authors should check whether ptc> or rn>bskDN-induced small wing phenotype could be suppressed in heterozygous lats mutants.\n\n11) UAS-bskDN is probably not strong enough to enhance the ptc>ykiRNAiphenotype, what about UAS-puc?\n\n12) Though fj appears to be involved in ectopic Yki-triggered wing growth, is it required by endogenous bsk and yki to regulate wing growth? How do the authors explain this? Is fj acting via control of Ft or Ds in this process? To prove this point more clearly, the authors should overexpress fj with PtcGal4. Also, does the fj-lacZ reporter show a stripe pattern similar to pJNK in the 3rd instar larval wing disc?\n\n13) Does dTRAF1RNAi block CiACT-triggered wing growth?\n\n14) Does expression of dTRAF1 increase wing size in a Bsk-dependent manner?\n\n15) Surprisingly, knockdown of Jun did not affect wing size-the authors invoke a non-canonical pathway, but could the knockdown have been incomplete? Also, is there redundancy with Kayak? Similarly, the argument that this signaling is non-canonical is based on the puc-lacZ reporter- could this instead be due to delayed reporter activity, or reduced sensitivity?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Localized JNK Signaling Regulates Organ Size During Development\" for further consideration at eLife. Your revised article has been favorably evaluated by Fiona Watt (Senior editor), a Reviewing editor, and two reviewers, one of whom is a member of our Board of Reviewing Editors. The manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nThe authors have addressed all the concerns well, except two below.\n\n1) Does expression of dTRAF1 increase wing size in a Bsk-dependent manner?\n\nThe authors responded that ptc>dTRAF1 is lethal. What about other Gal4 drivers, e.g. rn-Gal4, ap-Gal4? What Cha et al. showed is that dTRAF1-induced cell death depends on JNK. It remains unknown whether dTRAF1 regulates JNK-dependent cell proliferation and growth. The question is quite crucial for this manuscript.\n\n2) Redundancy of Kayak. Can the authors provide evidence of the efficacy of their Kayak knockdown. The provided experiment showing that double knockdown of Kayak and Jun has no effect on growth is only worthwhile if the knockdowns are effective.\n",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c5f9c791-546c-4f6f-96c2-9e6eb8b8b890",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C1",
+      "claim": "Drosophila wing size is regulated by JNK signaling during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that Drosophila wing size is regulated by JNK signaling during development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding stated in the abstract and supported by multiple experiments throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "077497d1-76a7-48cd-8c7d-1dc432312441",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C2",
+      "claim": "JNK is active in a stripe along the center of developing wings.",
+      "claim_type": "EXPLICIT",
+      "source": "JNK is active in a stripe along the center of developing wings",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by pJNK antibody staining shown in Figure 1B-C and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "13abc2c6-93a9-4bac-82f3-e2e4cf58c0b8",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C3",
+      "claim": "Modulating JNK signaling within the pJNK stripe changes organ size.",
+      "claim_type": "EXPLICIT",
+      "source": "modulating JNK signaling within this stripe changes organ size",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experiments showing that inhibition or activation of JNK in the ptc domain affects wing size (Figures 2A-L).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "5f912ba9-b6e5-4673-93bc-49655002034e",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C4",
+      "claim": "The JNK stripe influences proliferation in a non-canonical, Jun-independent manner by inhibiting the Hippo pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "This JNK stripe influences proliferation in a non-canonical, Jun-independent manner by inhibiting the Hippo pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experiments showing that jun knockdown does not affect wing size (Figure 3A-B) while jub and yki manipulations do (Figure 3C-P).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "0d2ea491-0aad-46ac-8b01-fc819486ce2b",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C5",
+      "claim": "Localized JNK activity is established by Hedgehog signaling, where Ci elevates dTRAF1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Localized JNK activity is established by Hedgehog signaling, where Ci elevates dTRAF1 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experiments showing that Ci knockdown eliminates pJNK (Figure 4A-B) and that dTRAF1 is upregulated in ptc cells (Figure 5C).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "ec93f729-8a95-4218-ac78-a72df9b9b0df",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C6",
+      "claim": "The dTRAF1 homolog, TRAF4, is amplified in numerous cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "As the dTRAF1 homolog, TRAF4, is amplified in numerous cancers",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and discussion with citation support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "7a97e68c-7162-430c-8487-8fde11628ca8",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C7",
+      "claim": "These findings provide a new mechanism for how the Hedgehog pathway could contribute to tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "these findings provide a new mechanism for how the Hedgehog pathway could contribute to tumorigenesis",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings connecting Hh signaling to JNK activation and cancer.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "742971fe-8acc-47d0-932a-2dc04ed9a030",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C8",
+      "claim": "Modulation of JNK signaling centers in developing antennae and legs changes their sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, modulation of JNK signaling centers in developing antennae and legs changes their sizes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Demonstrated by experiments shown in Figure 6 where JNK inhibition or activation in antenna and leg discs affects their size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "dd881e93-7712-4677-ac71-a97344b15762",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C9",
+      "claim": "JNK has a more generalizable role in developmental organ size control.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting a more generalizable role for JNK signaling in developmental organ size control",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that JNK affects size in multiple organs (wing, antenna, leg).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "f5603518-c480-4879-83ac-ea5106dc62e1",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C10",
+      "claim": "Two independently generated antibodies that recognize phosphorylated, active JNK specifically label a stripe in the pouch of developing wildtype third instar wing discs.",
+      "claim_type": "EXPLICIT",
+      "source": "Two independently generated antibodies that recognize the phosphorylated, active form of JNK (pJNK) specifically label a stripe in the pouch of developing wildtype third instar wing discs (Figure 1B\u2013C and Figure 1\u2014figure supplement 1G\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Directly stated and shown in Figure 1B-C and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "9d8ff7ee-999e-4595-a3a7-385e52ee7ebf",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C11",
+      "claim": "Localized pJNK staining is not detected in hemizygous JNKK mutant discs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, localized pJNK staining is not detected in hemizygous JNKK mutant discs (Figure 1D\u2013E; hepr75/Y)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 1D-E with genetic mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "bec73c78-6c4a-4e65-ad96-7fbb97e9eab1",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C12",
+      "claim": "pJNK staining is lost in clones of JNKK mutant cells within the stripe.",
+      "claim_type": "EXPLICIT",
+      "source": "in clones of JNKK mutant cells within the stripe (Figure 1F; hepr75, FRT10/Ubi-GFP, FRT10;; MKRS, hs-FLP/+)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by clonal analysis shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "f4d883d6-7721-48e9-9f36-016de2aabc41",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C13",
+      "claim": "pJNK staining is lost following over-expression of the JNK phosphatase puckered.",
+      "claim_type": "EXPLICIT",
+      "source": "following over-expression of the JNK phosphatase puckered (puc) (Figure 1\u2014figure supplement 1I; ap-Gal4, UAS-puc)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in supplementary figure with genetic manipulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "b5f404ad-ef1b-4818-87c6-7b2bb8b657cf",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C14",
+      "claim": "pJNK staining is lost following RNAi-mediated knockdown of bsk using two independent RNAi lines.",
+      "claim_type": "EXPLICIT",
+      "source": "following RNAi-mediated knockdown of bsk using two independent, functionally validated RNAi lines (Figure 1\u2014figure supplement 1K\u2013L; rn-Gal4, UAS-bskRNAi#1 or ptc-Gal4, UAS-bskRNAi#2; see Experimental Genotypes for full genotypes and conditions) (Glise et al., 1995; MacDonald et al., 2013; Mart\u00edn-Blanco et al., 1998; P\u00e9rez-Garijo et al., 2013; Weber et al., 2000; Xu and Rubin, 1993).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated with RNAi experiments shown in supplementary figures and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "67f2803a-9c2b-4564-a33f-61886a46ee06",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C15",
+      "claim": "The stripe of localized pJNK staining is adjacent to the anterior-posterior compartment boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "The stripe of localized pJNK staining appeared to be adjacent to the anterior-posterior (A/P) compartment boundary, a location known to play a key role in organizing wing growth, and a site of active Hedgehog (Hh) signaling (Basler and Struhl, 1994; Tabata and Kornberg, 1994; Zecca et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated in the text with citation support for the role of the A/P boundary.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "e0f49b23-c0c5-4963-a82c-6001445dfbbf",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C16",
+      "claim": "pJNK co-localizes with the Hh target gene patched (ptc).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, pJNK co-localizes with the Hh target gene patched (ptc) (Figure 1G; ptc-Gal4, UAS-RFP).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 1G with co-localization imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "fbb9fb2f-8f8f-4bf4-9d5e-d70e7e9b92fa",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C17",
+      "claim": "Expression of the JNK phosphatase puc in ptc cells specifically abrogates pJNK staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of the JNK phosphatase puc in these cells specifically abrogated pJNK staining (Figure 1H; ptc-Gal4, UAS-puc)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated in Figure 1H with genetic manipulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "04e2efe8-3910-4686-b25f-a537257611f7",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C18",
+      "claim": "RNAi-mediated knockdown of bsk in ptc cells abrogates pJNK staining.",
+      "claim_type": "EXPLICIT",
+      "source": "as did RNAi-mediated knockdown of bsk (Figure 1I and Figure 1\u2014figure supplement 1L; ptc-Gal4, UAS-bskRNA#i1or2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 1I and supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "092f30a7-abbe-43bf-950e-53d5a73ef94e",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C19",
+      "claim": "At earlier developmental stages pJNK staining is detected in all wing pouch cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while at earlier developmental stages pJNK staining is detected in all wing pouch cells (Figure 1\u2014figure supplement 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in supplementary figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "f60bd002-3c90-4974-914e-ee2cf4d34e44",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C20",
+      "claim": "The presence of a localized stripe of pJNK correlates with the time when the majority of wing disc growth occurs.",
+      "claim_type": "EXPLICIT",
+      "source": "the presence of a localized stripe of pJNK correlates with the time when the majority of wing disc growth occurs (1000 cells/disc at mid-L3 stage to 50,000 cells/disc at 20 hr after pupation, (Garcia-Bellido, 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citation to support the timing of wing disc growth.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "941450e9-7dbb-4dde-aa92-351999df69ec",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C21",
+      "claim": "Inhibition of JNK signaling in the posterior compartment previously led to the conclusion that JNK does not play a role in wing development.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of JNK signaling in the posterior compartment previously led to the conclusion that JNK does not play a role in wing development (McEwen and Peifer, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "544737ae-bc12-42e3-ad5c-2ab5fef8dab3",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C22",
+      "claim": "Inhibition of JNK in all wing blade cells or specifically in ptc-expressing cells results in smaller adult wings.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of JNK in all wing blade cells (rotund-Gal4, rn-Gal4) or specifically in ptc-expressing cells (ptc-Gal4) resulted in smaller adult wings in all cases, up to 40% reduced in the strongest cases (Figures 2A\u2013F, 2J\u2013K, and Figure 2\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated by multiple genetic manipulations shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "0ed58500-d919-49b2-a42a-91be81153856",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C23",
+      "claim": "Expression of a control transgene (UAS-GFP) does not affect wing size.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, expression of a control transgene (UAS-GFP) did not affect wing size (Figure 2\u2014figure supplement 1B\u2013C; ptc-Gal4, UAS-GFP).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Control experiment shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "68be8c98-2bda-4986-9683-226eedbb00e8",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C24",
+      "claim": "Hypomorphic hepr75/Y animals have smaller wing discs.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, hypomorphic hepr75/Y animals, while pupal lethal, also have smaller wing discs (Figure 2\u2014figure supplement 1G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in supplementary figure with mutant analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "9ff1bbb8-8e38-4b17-ba91-d8183d355b36",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C25",
+      "claim": "Animals with reduced JNK signaling due to bskDN expression have smaller wing discs.",
+      "claim_type": "EXPLICIT",
+      "source": "as do animals with reduced JNK signaling due to bskDN expression (Figure 2\u2014figure supplement 1H\u2013I; ap-Gal4, UAS-bskDN).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "8cc819a7-ba25-4245-984c-f433f0c0d988",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C26",
+      "claim": "Total body size is not affected by inhibiting JNK in the wing.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, total body size is not affected by inhibiting JNK in the wing. Even for the smallest wings generated (rn-Gal4, UAS-bskDN), total animal body size is not altered (Figure 2\u2014figure supplement 1A,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated in supplementary figure showing body length measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "2149e683-aaad-4fe8-a7ff-85ad6b37917e",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C27",
+      "claim": "Expression of eiger in the ptc domain causes a dramatic increase in wing disc size without apparent duplications or changes in disc shape.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite induction of cell death as previously reported (Igaki et al., 2002) and late larval lethality, we observed a dramatic increase in wing disc size without apparent duplications or changes in the shape of the disc (Figures 2H\u2013I and 2L; ptc-Gal4, UAS-egr).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 2H-I and 2L with citation to prior work on eiger.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "d2ad444f-3b97-41c5-9b77-126be8f77c78",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C28",
+      "claim": "Wing discs with elevated JNK signaling are larger than controls assayed at the same time point.",
+      "claim_type": "EXPLICIT",
+      "source": "While changes in organ size could be due to changing developmental time, wing discs with elevated JNK signaling were already larger than controls assayed at the same time point (Figure 2\u2014figure supplement 2A\u2013C; ptc-Gal4 and ptc-Gal4, UAS-egr).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated in supplementary figure with time-matched controls.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "649762af-423a-4ce8-b2fb-2e22d99af44e",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C29",
+      "claim": "Inhibition of JNK does not shorten developmental time.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, inhibition of JNK did not shorten developmental time (Figure 2\u2014figure supplement 1F; rn-Gal4, UAS-bskDN).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "45aa1402-3776-468d-9672-3ac109b2d764",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C30",
+      "claim": "Expression of the pro-apoptotic gene hid causes a decrease in wing size.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the observed increase in organ size is not due to induction of apoptosis, as expression of the pro-apoptotic gene hid does not increase organ size (Figure 2\u2014figure supplement 2D\u2013F). In contrast, it causes a decrease in wing size (Figure 2\u2014figure supplement 2D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "768f26f5-28ca-43d8-b6ab-e0562b0594a6",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C31",
+      "claim": "Co-expression of diap1 or p35 does not significantly affect the growth effect of egr expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, co-expression of diap1 or p35 did not significantly affect the growth effect of egr expression (p>0.05; Figure 2L and Figure 2\u2014figure supplement 2H\u2013I; ptc-Gal4, UAS-egr, UAS-diap1 and ptc-Gal4, UAS-egr, UAS-p35)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 2L and supplementary figures with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "a58de9e2-9397-48d8-8ffb-d778f7956e88",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C32",
+      "claim": "The growth effect of egr expression is dependent on Bsk activity.",
+      "claim_type": "EXPLICIT",
+      "source": "while the effect was dependent on Bsk activity (p<0.05; Figure 2L and Figure 2\u2014figure supplement 2G; ptc-Gal4, UAS-egr, UAS-bskDN).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Demonstrated in Figure 2L and supplementary figure with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "b1c7eedd-2b53-482d-b1b0-0cb9c2df658c",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C33",
+      "claim": "No obvious defects in wing venation pattern are observed following JNK inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "In stark contrast to known developmental morphogens, we did not observe any obvious defects in wing venation pattern following JNK inhibition (Figure 2A\u2013B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observed in Figure 2A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "d103f0c5-95bd-44b3-a8c4-43832efeff78",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C34",
+      "claim": "Even a slight reduction in Dpp signaling results in dramatic wing vein patterning defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, even a slight reduction in Dpp signaling results in dramatic wing vein patterning defects (Figure 2\u2014figure supplement 3K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "4b911257-aeb4-4370-8c5e-c3da7dc34f70",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C35",
+      "claim": "Inhibiting Dpp signaling causes a reduction in wing size along the A-P axis, while JNK inhibition causes a global reduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, inhibiting Dpp signaling causes a reduction in wing size along the A-P axis, while JNK inhibition causes a global reduction (Figure 2\u2014figure supplement 3J\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in supplementary figure comparing Dpp and JNK effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "2fc79fe4-855d-4719-9f4f-734f902a2a64",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C36",
+      "claim": "Ectopic Dpp expression increases growth in the form of duplicated structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, ectopic Dpp expression increases growth in the form of duplicated structures (Zecca et al., 1995)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "d9693d9a-a610-4cb6-98ac-222ace8a96e2",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C37",
+      "claim": "Increased JNK signaling results in a global increase in size without duplications.",
+      "claim_type": "EXPLICIT",
+      "source": "while increased JNK signaling results in a global increase in size (Figure 2H\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 2H-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "86da4589-f4e0-4ccc-b5e0-7349427afe22",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C38",
+      "claim": "Reducing Dpp signaling abolishes pSMAD staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecularly, we confirm that reducing Dpp signaling abolishes pSMAD staining",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in supplementary figure 3D-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "c99ffb3c-0066-4b74-a9bc-95dbe9b9a6fe",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C39",
+      "claim": "Inhibiting JNK signaling does not affect pSMAD staining.",
+      "claim_type": "EXPLICIT",
+      "source": "while quantitative data shows that inhibiting JNK signaling does not (Figure 2\u2014figure supplement 3D\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in supplementary figure with quantitative analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "aa9c0816-b242-4f4b-bdc1-a7d07f53a652",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C40",
+      "claim": "Dpp is not upstream of pJNK, as reduction in Dpp signaling does not affect pJNK.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we also find that Dpp is not upstream of pJNK, as reduction in Dpp signaling does not affect pJNK (Figure 2\u2014figure supplement 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "113eac79-f023-4822-b8a7-82c845d003b8",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C41",
+      "claim": "Inhibition of JNK does not affect EGFR signaling (pERK).",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we found that inhibition of JNK does not affect EGFR signaling (pERK) and that inhibition of EGFR does not affect the establishment of pJNK (Figure 2\u2014figure supplement 3A\u2013C and 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "3904e241-6446-4921-8314-b17082bae1d3",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C42",
+      "claim": "Inhibition of EGFR does not affect the establishment of pJNK.",
+      "claim_type": "EXPLICIT",
+      "source": "inhibition of EGFR does not affect the establishment of pJNK (Figure 2\u2014figure supplement 3A\u2013C and 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "ce1f2ae0-b299-462e-b78d-4d81125f7686",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C43",
+      "claim": "Wings with reduced size due to JNK inhibition do not show changes in cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined wings with reduced size due to JNK inhibition and did not detect changes in cell size or apoptosis (Figure 2M\u2013O and Figure 2\u2014figure supplement 1L\u2013N; rn-Gal4, UAS-bskDN)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 2M-O and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "29cc2922-3ac1-4c62-b03b-f3dab05a47b4",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C44",
+      "claim": "Wings with reduced size due to JNK inhibition do not show changes in apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined wings with reduced size due to JNK inhibition and did not detect changes in cell size or apoptosis (Figure 2M\u2013O and Figure 2\u2014figure supplement 1L\u2013N; rn-Gal4, UAS-bskDN)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 2M-O and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "508e45e6-de34-40a7-a44a-7db0ba5276e3",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C45",
+      "claim": "pJNK controls organ size by regulating cell number.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that pJNK controls organ size by regulating cell number.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that cell size and apoptosis are not affected.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "c748715d-4ca7-4e4b-9851-10add03e2e1d",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C46",
+      "claim": "The cell death inhibitor p35 is unable to rescue the decreased size following JNK inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the cell death inhibitor p35 was unable to rescue the decreased size following JNK inhibition (Figure 2G; rn-Gal4, UAS-p35, UAS-bskDN).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "33b54ec7-0dff-460b-891b-b5e4e04c6e0c",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C47",
+      "claim": "Inhibition of JNK signaling results in a decrease in proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, inhibition of JNK signaling resulted in a decrease in proliferation (Figure 2\u2014figure supplement 1J\u2013K; ap-Gal4, UAS-bskDN)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in supplementary figure with PH3 staining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "097f4c26-9ab0-4c94-9ae0-1f82600750a5",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C48",
+      "claim": "Elevation of JNK signaling in the ptc domain results in an increase in cell proliferation in the enlarged wing disc.",
+      "claim_type": "EXPLICIT",
+      "source": "while elevation of JNK signaling in the ptc domain resulted in an increase in cell proliferation in the enlarged wing disc (Figure 2P\u2013T; ptc-Gal4, UAS-egr).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 2P-T with EdU staining.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "50af3bd3-b564-4e2c-b1fb-08e92dafa674",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C49",
+      "claim": "Increased proliferation following JNK elevation is not restricted to the ptc domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, this increased proliferation is not restricted to the ptc domain, consistent with previous reports that JNK can promote proliferation non-autonomously (Enomoto and Igaki, 2012; Pastor-Pareja et al., 2008; Ryoo et al., 2004; Sun and Irvine, 2011; Wu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated with citation support for non-autonomous JNK effects.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "85a3f99a-507e-454f-a507-7f36042c902f",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C50",
+      "claim": "RNAi-mediated knockdown of jun in ptc cells does not change wing size.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, RNAi-mediated knockdown of jun in ptc cells does not change wing size (Figure 3A\u2013B and Figure 3\u2014figure supplement 1C\u2013F; ptc-Gal4, UAS-junRNAi#1or2; Both RNAi lines can effectively inhibit jun activity, Figure 3\u2014figure supplement 1A\u2013B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 3A-B and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "5006b7a1-b1de-4cc6-94ff-216c3c3dc806",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C51",
+      "claim": "Analysis of jun mutant clones in the wing disc shows no effect on wing size.",
+      "claim_type": "EXPLICIT",
+      "source": "which is consistent with previous analysis of jun mutant clones in the wing disc (Kockel et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "e4b19f4f-ffd8-4a99-846c-fbe2a72fd464",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C52",
+      "claim": "A reporter of canonical JNK signaling downstream of jun (puc-lacZ) is not expressed in the pJNK stripe.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in agreement with this, a reporter of canonical JNK signaling downstream of jun (puc-lacZ [Ring and Martinez Arias, 1993]) is not expressed in the pJNK stripe (Figure 1\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in supplementary figure with citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "ba85507e-53af-45e0-85dc-e7a677864d93",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C53",
+      "claim": "Knockdown of fos (kayak, kay) alone or with junRNAi does not affect wing size.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, knockdown of fos (kayak, kay) alone or with junRNAi did not affect wing size (Figure 3\u2014figure supplement 1G\u2013H; rn-Gal4, UAS-kayRNiA#1or2 and rn-Gal4, UAS-junRNAi#1, UAS-kayRNiA#1or2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "50b17931-9094-46d7-99d7-1c9a7ef37a96",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C54",
+      "claim": "Canonical JNK signaling through jun does not function in the pJNK stripe to regulate wing size.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that canonical JNK signaling through jun does not function in the pJNK stripe to regulate wing size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple experiments showing jun independence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "81ed5b53-24d5-4c56-bd81-da562f19c222",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C55",
+      "claim": "JNK signaling regulates the Hippo pathway to induce autonomous and non-autonomous proliferation during tumorigenesis and regeneration via activation of Yorkie.",
+      "claim_type": "EXPLICIT",
+      "source": "JNK signaling regulates the Hippo pathway to induce autonomous and non-autonomous proliferation during tumorigenesis and regeneration via activation of the transcriptional regulator Yorkie (Yki) (Bakal et al., 2008; Enomoto and Igaki, 2012; Sun and Irvine, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "da02000a-19a3-4e0c-b354-adf78cbf64f7",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C56",
+      "claim": "JNK activates Yki via direct phosphorylation of Jub.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently it has been shown that JNK activates Yki via direct phosphorylation of Jub (Sun and Irvine, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "9969a0df-e116-4f21-ae03-8e1bb7912bed",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C57",
+      "claim": "RNAi-mediated knockdown of jub in the ptc stripe results in adults with smaller wings.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether this link between JNK and Jub could account for the role of localized pJNK in organ size control during development, we performed RNAi-mediated knockdown of jub in the ptc stripe, and observed adults with smaller wings (Figure 3C\u2013D; ptc-Gal4, UAS-jubRNAi#1or2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 3C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "73406ce8-d2dc-46a4-b672-83f524bebc6b",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C58",
+      "claim": "The effect of JNK loss on wing size can be partially suppressed in a heterozygous lats mutant background.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the effect of JNK loss on wing size can be partially suppressed in a heterozygous lats mutant background (Figure 3\u2014figure supplement 2C\u2013D; rn-Gal4, UAS-bskDN, latse26-1/+)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "e85efcd5-6e00-4f14-9583-10d2cc55562b",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C59",
+      "claim": "Increasing downstream yki expression in all wing cells can rescue wing size following JNK inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "and increasing downstream yki expression in all wing cells (Figure 3E\u2013F; rn-Gal4, UAS-yki, UAS-bskDN) or just within the ptc domain (Figure 3G\u2013H; ptc-Gal4, UAS-yki, UAS-bskDN) can rescue wing size following JNK inhibition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 3E-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "b8e573ff-f82a-4eeb-a41c-2c295cf64e14",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C60",
+      "claim": "Increasing downstream yki expression within the ptc domain can rescue wing size following JNK inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "or just within the ptc domain (Figure 3G\u2013H; ptc-Gal4, UAS-yki, UAS-bskDN) can rescue wing size following JNK inhibition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 3G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "0184f7b8-86a0-4ed8-b640-61f2b8bdcb8d",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C61",
+      "claim": "pJNK controls Yki activity autonomously within the ptc stripe, leading to a global change in cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that pJNK controls Yki activity autonomously within the ptc stripe, leading to a global change in cell proliferation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from rescue experiments and proliferation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "2005133d-5402-4fa8-a3bc-742b6e0e25e3",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C62",
+      "claim": "Inhibition of JNK in the ptc stripe translates to homogeneous changes in anterior and posterior wing growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, inhibition of JNK in the ptc stripe translates to homogeneous changes in anterior and posterior wing growth (Figure 3\u2014figure supplement 2A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "f544bcde-df68-4008-9e46-f8f1ed5b8342",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C63",
+      "claim": "Overexpression or inhibition of Yki signaling in the ptc stripe results in a global change in wing size.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, overexpression or inhibition of Yki signaling in the ptc stripe also results in a global change in wing size (Figure 3I\u2013L and Figure 3\u2014figure supplement 2A\u2013B; ptc-Gal4, UAS-yki; ptc-Gal4, UAS-ykiRNAi).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 3I-L and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "91c571a6-d827-4245-82bb-11df8e907f37",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C64",
+      "claim": "Expression of activated Yki in the ptc stripe causes very large tumors and lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of this activated Yki in the ptc stripe caused very large tumors and lethality (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated but data not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "b824b257-13cf-417d-9eed-d83425954304",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C65",
+      "claim": "Inhibiting JNK in the context of activated Yki expression does not affect tumor formation or lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, inhibiting JNK in this context did not affect the formation of these tumors or the lethality (data not shown; ptc-Gal4, UAS-ykiS111A,S168A,S250A.V5, UAS-bskDN).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated but data not shown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "ceef0516-cfff-4e16-b2e6-14a549f6f098",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C66",
+      "claim": "Inhibiting both JNK and Yki together does not enhance the phenotype of Yki inhibition alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, inhibiting both JNK and Yki together does not enhance the phenotype of Yki inhibition alone (Figure 3M\u2013N and Figure 3\u2014figure supplement 2E\u2013F; ptc-Gal4, UAS-ykiRNAi, UAS-bskDN and ptc-Gal4, UAS-ykiRNAi, UAS-puc)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 3M-N and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "d9287ce3-9b6e-47b0-98bd-bb2aece3e668",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C67",
+      "claim": "Yki is epistatic to JNK, instead of acting in parallel processes.",
+      "claim_type": "EXPLICIT",
+      "source": "further supporting the idea that Yki is epistatic to JNK, instead of acting in parallel processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from epistasis experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "b6bcdff6-bf56-4e7b-ae3f-9f991b32ae7d",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C68",
+      "claim": "Mutants of the Yki downstream target four-jointed (fj) have small wings with normal patterning.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutants of the Yki downstream target four-jointed (fj) have small wings with normal patterning, and fj is known to propagate Hippo signaling and affect proliferation non-autonomously (Ambegaonkar et al., 2012; Harvey and Tapon, 2007; Strutt et al., 2004; Villano and Katz, 1995; Willecke et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "bddbba77-47f2-4c45-bc45-c02995362160",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C69",
+      "claim": "fj is known to propagate Hippo signaling and affect proliferation non-autonomously.",
+      "claim_type": "EXPLICIT",
+      "source": "and fj is known to propagate Hippo signaling and affect proliferation non-autonomously (Ambegaonkar et al., 2012; Harvey and Tapon, 2007; Strutt et al., 2004; Villano and Katz, 1995; Willecke et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "82d20838-a22c-4047-8b1e-dcb0a5a2a8e5",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C70",
+      "claim": "RNAi-mediated knockdown of fj in ptc cells does not cause an obvious change in wing size.",
+      "claim_type": "EXPLICIT",
+      "source": "Although RNAi-mediated knockdown of fj in ptc cells does not cause an obvious change in wing size, it is sufficient to block the Yki-induced effect on increasing wing size (Figure 3O\u2013P and Figure 3\u2014figure supplement 2G\u2013H; ptc-Gal4, UAS-yki, UAS-fjRNAiand ptc-Gal4, UAS-fjRNAi).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 3O-P and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "b89e1336-35c7-496b-a015-f2378ac11288",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C71",
+      "claim": "RNAi-mediated knockdown of fj is sufficient to block the Yki-induced effect on increasing wing size.",
+      "claim_type": "EXPLICIT",
+      "source": "it is sufficient to block the Yki-induced effect on increasing wing size (Figure 3O\u2013P and Figure 3\u2014figure supplement 2G\u2013H; ptc-Gal4, UAS-yki, UAS-fjRNAiand ptc-Gal4, UAS-fjRNAi).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 3O-P and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "7797d328-00f2-46ec-85a0-bf60a36fe854",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C72",
+      "claim": "Overexpression of fj reduces wing size.",
+      "claim_type": "EXPLICIT",
+      "source": "However, overexpression of fj also reduces wing size, which makes it not possible to test for a simple epistatic relationship (ptc-Gal4, UAS-fj; Figure 3\u2014figure supplement 2I\u2013J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "09b1fcad-4a74-45eb-a1ff-85b4fcb58fd9",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C73",
+      "claim": "Localized pJNK regulates wing size not by Jun-dependent canonical JNK signaling, but rather by Jun-independent non-canonical JNK signaling involving the Hippo pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these data are consistent with the notion that localized pJNK regulates wing size not by Jun-dependent canonical JNK signaling, but rather by Jun-independent non-canonical JNK signaling involving the Hippo pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple experiments showing jun independence and Hippo pathway involvement.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "450e01c3-ed8e-42a3-b4d5-82e65c10975d",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C74",
+      "claim": "pJNK staining is coincident with ptc expression.",
+      "claim_type": "EXPLICIT",
+      "source": "pJNK staining is coincident with ptc expression (Figure 1G), suggesting it could be established by Hh signaling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "a6635b8a-7f41-40b9-8a3e-39f1612bdba3",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C75",
+      "claim": "During development, posterior Hh protein travels across the A/P boundary, leading to activation of Ci in the stripe of anterior cells.",
+      "claim_type": "EXPLICIT",
+      "source": "During development, posterior Hh protein travels across the A/P boundary, leading to activation of the transcription factor Cubitus interruptus (Ci) in the stripe of anterior cells (Dom\u00ednguez et al., 1996; Schwartz et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "ea5a1f6a-c856-4f53-9705-2dfd47736def",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C76",
+      "claim": "RNAi-mediated knockdown of ci eliminates the pJNK stripe.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether localized activation of JNK is a consequence of Hh signaling through Ci, we performed RNAi-mediated knockdown of ci and found that the pJNK stripe is eliminated (Figure 4A\u2013B; ptc-Gal4, UAS-ciRNAi#1or2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 4A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "ec01913a-013e-425e-a5d1-f97f8d3c0c42",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C77",
+      "claim": "RNAi-mediated knockdown of ci results in globally reduced adult wing size.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, adult wing size is globally reduced (Figures 4D and 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 4D and 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "c0b3df88-debf-42b9-bd77-8c4fa48bf766",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C78",
+      "claim": "A change in pJNK stripe staining is not observed following RNAi-mediated knockdown of dpp or EGFR.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we do not observe a change in pJNK stripe staining following RNAi-mediated knockdown of dpp or EGFR (Figure 2\u2014figure supplement 4A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "dab0c4a3-4141-4444-9bd4-76a14e6bb71c",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C79",
+      "claim": "Expression of non-processable Ci leads to increased Hh signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of non-processable Ci leads to increased Hh signaling (Price and Kalderon, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "50066877-3482-47ca-8a78-3f27f433485d",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C80",
+      "claim": "Expression of active Ci in ptc cells leads to an increase in pJNK signal and larger, well-patterned adult wings.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of this active Ci in ptc cells leads to an increase in pJNK signal and larger, well-patterned adult wings (Figures 4C,E, and 4G; ptc-Gal4, UAS-CiACT).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 4C, E, and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "09f30e61-a51b-4e28-b271-1b3a62bad459",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C81",
+      "claim": "Inhibition of JNK in wings expressing active Ci blocks Ci's effects, and resulting wings are similar in size to JNK inhibition alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, inhibition of JNK in wings expressing active Ci blocks Ci's effects, and resulting wings are similar in size to JNK inhibition alone (Figure 4F\u2013G; ptc-Gal4, UAS-CiACT, UAS-bskDN).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 4F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "da19a366-10cf-4b20-86cc-9150870b1200",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C82",
+      "claim": "Hh signaling through Ci is responsible for establishing the pJNK stripe.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that Hh signaling through Ci is responsible for establishing the pJNK stripe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from Ci manipulation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "2186ffa3-1f57-4a7e-ac74-bec00e3bc32d",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C83",
+      "claim": "Of the total 12,676 unique genes represented on the microarray, 50.4% (6,397) are expressed in ptc domain cells, posterior cells, or both.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the total 12,676 unique genes represented on the microarray, 50.4% (6,397) are expressed in ptc domain cells, posterior cells, or both (log2 normalized expression \u22656.5; Figure 5\u2014figure supplement 1A\u2013D; Supplementary file 1; Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated with reference to supplementary data and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "92632748-fa22-487e-aa00-e8f6e0886eef",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C84",
+      "claim": "5.7% (363) of expressed genes are upregulated in ptc cells and 3.8% (242) are downregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "We thresholded on a false discovery rate <0.01 and fold change \u22651.5 and found that 5.7% (363) of expressed genes were upregulated in ptc cells and 3.8% (242) were downregulated (Figure 5\u2014figure supplement 1D; Supplementary file 2; Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Stated with reference to supplementary data and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "d3809e34-9629-4243-b86d-bdbead04511c",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C85",
+      "claim": "Hh pathway genes known to be differentially expressed are identified in the microarray analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Hh pathway genes known to be differentially expressed are identified (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "ba963d38-c8b7-4917-a322-c37fff6b6ebb",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C86",
+      "claim": "dTRAF1 expression is more than five-fold increased in ptc cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We next asked whether any JNK pathway genes are differentially expressed and found that dTRAF1 expression is more than five-fold increased in ptc cells (Figure 5C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 5C from microarray data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "98ab25d9-ff0b-4821-90a5-832fefe18dbb",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C87",
+      "claim": "Other JNK pathway members are not differentially expressed in ptc cells.",
+      "claim_type": "EXPLICIT",
+      "source": "while other JNK pathway members are not differentially expressed (Figure 5C; Supplementary file 1; Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 5C and supplementary files.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "4b05fe07-5a89-4b93-b393-0062b26d1c9f",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C88",
+      "claim": "dTRAF1 is expressed along the A/P boundary.",
+      "claim_type": "EXPLICIT",
+      "source": "dTRAF1 is expressed along the A/P boundary (Preiss et al., 2001)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "f9fe921f-ac3e-4037-82ae-ad2c3853f890",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C89",
+      "claim": "Ectopic expression of dTRAF1 activates JNK signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "and ectopic expression of dTRAF1 activates JNK signaling (Cha et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "e17dc615-19a7-4591-932b-8586351916f7",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C90",
+      "claim": "Ci binding motifs are identified in the dTRAF1 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we identified Ci binding motifs in the dTRAF1 gene (Figure 5\u2014figure supplement 1H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "ede8e489-20c5-4b09-a072-991577a375d5",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C91",
+      "claim": "A previous large-scale ChIP study confirms a Ci binding site within the dTRAF1 gene.",
+      "claim_type": "EXPLICIT",
+      "source": "and a previous large-scale ChIP study confirms a Ci binding site within the dTRAF1 gene (Chr2L: 4367100- 4371393; [Biehs et al., 2010]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "742ab40d-5254-4e89-b25f-ed1d6fc35db7",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C92",
+      "claim": "A reduction in Ci leads to a 29% reduction in dTRAF1 expression in wing discs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, a reduction in Ci led to a 29% reduction in dTRAF1 expression in wing discs (Figure 5J; ptc-Gal4, UAS-CiRNAi).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 5J with qPCR data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "27e03132-1c59-4a93-adf8-81d6cbfde310",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C93",
+      "claim": "Inhibition of dTRAF1 by RNAi knockdown abolishes pJNK staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, inhibition of dTRAF1 by RNAi knockdown abolished pJNK staining (Figure 5D\u2013E and Figure 5\u2014figure supplement 1E; ptc-Gal4, UAS-dTRAF1RNAi#1or2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 5D-E and supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "9dac489b-ec33-4d52-b3c7-130d5c1327dd",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C94",
+      "claim": "Animals with dTRAF1 knockdown have smaller wings without obvious pattern defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, these animals have smaller wings without obvious pattern defects (Figure 5F\u2013I and Figure 5\u2014figure supplement 1F\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 5F-I and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "930e141f-bcd6-44a1-93d9-55f10b8ae2b0",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C95",
+      "claim": "Overexpression of dTRAF1 causes embryonic lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, overexpression of dTRAF1 causes embryonic lethality (ptc-Gal4, UAS-dTRAF1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Stated from experimental observation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "5b24ef0b-3d54-4bb6-a875-583031ace2f8",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C96",
+      "claim": "dTRAF1 function in the eye is Bsk-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, it has been shown that dTRAF1 function in the eye is Bsk-dependent (Cha et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "8128c1b0-cc31-4ac5-b335-5b38771dc174",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C97",
+      "claim": "Inhibition of dTRAF1 modulates the phenotype of activated Ci signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, inhibition of dTRAF1 modulates the phenotype of activated Ci signaling (ptc-Gal4, UAS-dTRAF1RNAi, UAS-CiACT; Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "527094bd-0086-4ec9-8a5e-48c3cd3d9567",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C98",
+      "claim": "The pJNK stripe in the developing wing is established by Hh signaling through Ci-mediated induction of dTRAF1 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data reveal that the pJNK stripe in the developing wing is established by Hh signaling through Ci-mediated induction of dTRAF1 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple experiments linking Hh, Ci, dTRAF1, and pJNK.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "b91ba71a-6be0-4f96-9ecc-46e380faefda",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C99",
+      "claim": "Localized centers of pJNK activity are detected during the development of eye/antenna and leg imaginal discs.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we detected localized centers of pJNK activity during the development of other imaginal discs including the eye/antenna and leg (Figures 6A and 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 6A and 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "d5eee840-b299-477c-9b0d-90554c1ded10",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C100",
+      "claim": "Inhibition of localized JNK signaling during development causes a decrease in adult antenna size.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of localized JNK signaling during development caused a decrease in adult antenna size (Figures 6B\u2013C and 6F; dll-Gal4, UAS-bskDN)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 6B-C and 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "405beae7-dc72-4c0d-a887-55c1de5a7194",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C101",
+      "claim": "Inhibition of localized JNK signaling during development causes a decrease in adult leg size.",
+      "claim_type": "EXPLICIT",
+      "source": "and leg size (Figures 6H\u2013I and 6L; dll-Gal4, UAS-bskDN).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 6H-I and 6L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "e25789c5-25f3-4db3-9841-1c1b200e22d6",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C102",
+      "claim": "Increasing JNK signaling during development results in increased overall sizes of antenna and leg discs.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, increasing JNK signaling during development resulted in pupal lethality; nevertheless, overall sizes of antenna and leg discs were increased (Figures 6D\u2013E and 6J\u2013K; dll-Gal4, UAS-egr).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Shown in Figure 6D-E and 6J-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "abb6289c-e05e-48a3-ac99-3e425dcb7587",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C103",
+      "claim": "Localized JNK signaling regulates size in organs other than the wing, suggesting a more universal effect of JNK on size control.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data indicate that localized JNK signaling regulates size in other organs in addition to the wing, suggesting a more universal effect of JNK on size control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from observations in multiple organs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "1d398182-b060-486b-93a3-42025cc67b83",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C104",
+      "claim": "Classic transplantation experiments indicate that intrinsic factors within organs determine size.",
+      "claim_type": "EXPLICIT",
+      "source": "While extrinsic factors like hormones are required for growth, classic transplantation experiments indicate that intrinsic factors within organs determine size (Bryant and Simpson, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "94306dfc-8a2d-408f-b1f1-d4ca3fd01abd",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C105",
+      "claim": "Embryonic limb buds transplanted from a large species of salamander onto a small species grow to the size characteristic of the donor.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, embryonic limb buds transplanted from a large species of salamander onto a small species grow to the size characteristic of the donor (Twitty and Schwind, 1931).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "42307e16-4eeb-4f82-b138-85a1ad3c9e5a",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C106",
+      "claim": "Similar findings have been made in quail and chick limbs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar findings have been made in quail and chick limbs (Iten and Murphy, 1980; Wolpert, 1978)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "589e3cf3-ee56-4887-a270-d638851649d3",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C107",
+      "claim": "Similar findings have been made in rat hearts and kidneys.",
+      "claim_type": "EXPLICIT",
+      "source": "rat hearts and kidneys (Dittmer et al., 1974; Silber, 1976)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "801516f9-f0b4-4235-9c89-c7d527156181",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C108",
+      "claim": "Similar findings have been made in mouse thymuses.",
+      "claim_type": "EXPLICIT",
+      "source": "and mouse thymuses (Metcalf, 1963).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "d98ff718-65c9-4696-b79a-78116e3848c7",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C109",
+      "claim": "Developing Drosophila wings transplanted into adult abdomens grow to the proper size, indicating that the information determining size is located within the developing organ.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, developing Drosophila wings transplanted into adult abdomens grow to the proper size, indicating that the information determining size is located within the developing organ (Garc\u00eda-Bellido, 1965).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "bdefed92-57be-436f-af1b-c2f8afd21ee7",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C110",
+      "claim": "The Drosophila wing is a classic model system for studying organ size, as its size is highly replicable.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the Drosophila wing is a classic model system for studying organ size, as its size is highly replicable (Garc\u00eda-Bellido and Merriam, 1971; Garc\u00eda-Bellido, 1965)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "e60abc1d-39c5-490f-867f-56c7a2c32330",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C111",
+      "claim": "All adult wing precursor cells are located within the pouch region of the developing larval imaginal disc.",
+      "claim_type": "EXPLICIT",
+      "source": "and all adult precursor cells are located within the pouch region of the developing larval imaginal disc (Garc\u00eda-Bellido et al., 1973) (Figure 1A, grey).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Cited from prior work and shown in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "67f390bd-d7ac-49b2-a9a8-b72fcf51ba53",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C112",
+      "claim": "The molecular mechanisms underlying intrinsic organ size control remain unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite extensive work, the molecular mechanisms underlying intrinsic organ size control remain unclear (Vogel, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "e9f5e51c-9737-4bfe-80aa-61927a4b59a3",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C113",
+      "claim": "Morphogens direct both patterning and growth of developing organs.",
+      "claim_type": "EXPLICIT",
+      "source": "While morphogens direct both patterning and growth of developing organs (Tabata and Takei, 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "3fbb5c08-9ed7-4739-be79-629a421cd0f6",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C114",
+      "claim": "A link between patterning molecules and growth control pathways has not been established.",
+      "claim_type": "EXPLICIT",
+      "source": "a link between patterning molecules and growth control pathways has not been established (Schwank et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "4415d041-848d-4ac2-927e-b5c840854650",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C115",
+      "claim": "The JNK pathway promotes proliferation during regeneration and tumor growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The Jun N-terminal Kinase (JNK) pathway promotes proliferation during regeneration and tumor growth (Bosch et al., 2005; Igaki et al., 2006; Ryoo et al., 2004; Srivastava et al., 2007; Wu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "17a9ef11-2f2d-4336-94ce-126a4b03c98e",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C116",
+      "claim": "JNK-induced proliferation is often non-autonomous.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, JNK-induced proliferation is often non-autonomous (Enomoto and Igaki, 2012; Pastor-Pareja et al., 2008; Ryoo et al., 2004; Sun and Irvine, 2011; Wu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "081f711e-af06-41fb-98a1-9c60207d8366",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C117",
+      "claim": "Basket (Bsk) is the singular Drosophila JNK and is activated by phosphorylation by the JNKK Hemipterous (Hep).",
+      "claim_type": "EXPLICIT",
+      "source": "Basket (Bsk) is the singular Drosophila JNK and is activated by phosphorylation by the JNKK Hemipterous (Hep) (Glise et al., 1995; Stronach, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "d36150d4-0aa1-4076-8eb8-de33419abfc5",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C118",
+      "claim": "Canonical JNK signaling acts through the transcription co-factor Jun, which regulates migration and apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Canonical JNK signaling acts through the transcription co-factor Jun, which regulates migration and apoptosis (Stronach, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "158ecd08-1714-40d2-89ec-9b77d9b73dea",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C119",
+      "claim": "The role of JNK in activating Yorkie signaling and growth during regeneration and tumorigenesis is clear.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the role of JNK in activating Yorkie signaling and growth during regeneration and tumorigenesis is clear (Enomoto and Igaki, 2012; Sun and Irvine, 2011; Sun and Irvine 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "283939be-8150-4c8b-8528-5ad3103cbd02",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C120",
+      "claim": "JNK is not known to regulate proliferation and growth during developmental size control.",
+      "claim_type": "EXPLICIT",
+      "source": "it is not known to regulate proliferation and growth during developmental size control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of knowledge prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "b9108589-e420-462d-9476-01eee871d9bb",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C121",
+      "claim": "Hippo components are amplified in numerous cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "As the human dTRAF1 homolog, TRAF4, and Hippo components are amplified in numerous cancers (Camilleri-Bro\u00ebt et al., 2006; Harvey et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "f7e058b9-465c-4710-ad4a-247896d684af",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "claim_id": "C122",
+      "claim": "Reactivating Jun in Hh-driven tumors could lead tumor cells towards an apoptotic fate.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, these findings offer a new strategy for potential cancer therapies, as reactivating Jun in Hh-driven tumors could lead tumor cells towards an apoptotic fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative therapeutic implication of the findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e3971f1b-1f45-43df-860a-84ff16e3d57f",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A localized stripe of phosphorylated JNK (pJNK) is detected in developing wing discs, co-localizing with the Hedgehog target gene patched (ptc) along the anterior-posterior boundary. This pJNK stripe is specifically dependent on JNK signaling, as demonstrated by loss of staining in JNKK mutants, clonal analysis, phosphatase overexpression, and RNAi knockdown experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C10-C18, C74 collectively demonstrate the presence and specificity of the pJNK stripe through multiple independent validation approaches including two different antibodies (C10), genetic mutants (C11-C12), phosphatase manipulation (C13, C17), and RNAi knockdown with multiple lines (C14, C18). The co-localization with ptc (C16, C74) is directly shown in imaging data. The convergence of evidence from multiple experimental approaches strongly supports this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "1be62e9f-2053-47fc-b1ee-36e4fa7b12cf",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Modulation of JNK signaling within the pJNK stripe changes wing size in a dose-dependent manner. Inhibition of JNK results in smaller wings (up to 40% reduction), while activation via eiger expression causes dramatic increases in wing disc size. These size changes are organ-specific (not affecting body size), independent of developmental timing, and occur without obvious patterning defects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C22-C29, C32-C33, C37 demonstrate the effect of JNK modulation on wing size through multiple genetic manipulations (RNAi, dominant negative, phosphatase, eiger expression) with appropriate controls (C23). The experiments include time-matched controls (C28-C29), body size measurements (C26), and comparisons to morphogens showing distinct phenotypes (C33, C37). Statistical significance is reported (C32) and the effects are consistent across multiple experimental approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "b7f41e66-8c67-4376-a25e-7c3b6c16b536",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "JNK signaling controls wing size by regulating cell proliferation rather than cell size or apoptosis. Inhibition of JNK decreases proliferation while activation increases it, and the proliferative effects extend beyond the ptc domain in a non-autonomous manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C49 provide converging evidence that JNK affects cell number through proliferation. Cell size measurements show no change (C43), apoptosis is not detected (C44) and cannot rescue the phenotype (C46), while proliferation markers (PH3, EdU) show clear changes correlating with JNK activity (C47-C48). The non-autonomous proliferation (C49) is supported by imaging data and consistent with cited literature. The mechanistic conclusion (C45) is well-supported by the elimination of alternative explanations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "ed23533d-4e6c-4d37-b002-f847ba0465e2",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "JNK regulates wing size through a non-canonical, Jun-independent mechanism rather than through canonical JNK-Jun signaling. RNAi knockdown of jun and fos does not affect wing size, and the canonical JNK reporter puc-lacZ is not expressed in the pJNK stripe.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 demonstrate Jun independence through multiple RNAi lines (C50, C53), consistency with prior mutant analysis (C51), and reporter gene expression (C52). The conclusion (C54, C73) that canonical signaling is not involved is well-supported by the negative results with appropriate validation that the RNAi lines are functional. This is a critical mechanistic distinction that redirects understanding of the pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "4f327a33-6482-409c-8d40-bf2d9daf6684",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "JNK regulates wing size through the Hippo pathway via Jub and Yorkie (Yki). Knockdown of jub reduces wing size, yki overexpression rescues JNK inhibition phenotypes, and epistasis experiments demonstrate that Yki acts downstream of JNK. Manipulation of Yki in the ptc stripe results in global changes in wing size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C67 establish the JNK-Hippo connection through genetic epistasis experiments including rescue (C59-C60), suppression (C58), and double manipulation experiments (C64-C66). The epistatic relationship (C67) is supported by multiple lines of evidence. The global effects from local manipulation (C61-C63) are demonstrated with appropriate measurements. While some data are not shown (C64-C65), the overall conclusion is supported by the shown experiments and consistency with cited literature (C55-C56).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "513396a1-ef90-4f07-b600-ed0301271b80",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Hedgehog signaling through Cubitus interruptus (Ci) establishes the pJNK stripe. Ci knockdown eliminates pJNK staining and reduces wing size, while activated Ci increases pJNK and wing size. This effect is specific to Hh signaling, as Dpp and EGFR manipulations do not affect pJNK.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C82 demonstrate the Hh-Ci-pJNK connection through loss-of-function (C76-C77) and gain-of-function (C80) experiments with appropriate epistasis analysis (C81). The specificity is established by testing alternative pathways (C78). The conclusion (C82) is well-supported by the genetic data and consistent with the known biology of Hh signaling (C75, C79). The spatial correlation (C74) provides additional support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "193710d3-1b83-483a-9780-d26cc24e74d8",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Ci elevates dTRAF1 expression to establish the pJNK stripe. Microarray analysis shows dTRAF1 is >5-fold upregulated in ptc cells, Ci binding sites are present in the dTRAF1 gene, Ci knockdown reduces dTRAF1 expression, and dTRAF1 knockdown eliminates pJNK staining and reduces wing size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C98 establish the Ci-dTRAF1-pJNK pathway through transcriptional profiling (C83-C87), bioinformatic analysis (C90-C91), qPCR validation (C92), and functional genetics (C93-C94, C97). The microarray methods are described in detail with appropriate quality controls. The convergence of transcriptional, bioinformatic, and functional evidence strongly supports this mechanism. The connection to prior literature (C88-C89, C96) provides additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "671675f9-050d-4ef5-b01a-9ac9fc0a4ff7",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Localized JNK signaling regulates size in multiple organs beyond the wing, including antenna and leg. Inhibition of JNK reduces antenna and leg size, while activation increases disc size, suggesting a generalizable role for JNK in developmental organ size control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C103 extend the wing findings to other organs through parallel experiments showing pJNK localization (C99) and bidirectional size effects (C100-C102). The conclusion of generalizability (C103, C9) is appropriately cautious given the limited number of organs tested, but is supported by the consistent phenotypes across multiple tissue types. This represents an important extension of the main findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "228b5863-0f04-4600-a03c-39ceff56991e",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The increase in organ size following JNK activation is not due to induction of apoptosis. Expression of the pro-apoptotic gene hid decreases rather than increases wing size, and co-expression of apoptosis inhibitors diap1 or p35 does not significantly affect the growth effect of eiger expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 rule out apoptosis as the mechanism for JNK-induced growth through appropriate control experiments. The hid experiment (C30) provides a direct test, while the rescue experiments (C31) with statistical analysis (p>0.05) demonstrate that blocking apoptosis does not prevent the growth effect. This is an important control given that eiger is known to induce apoptosis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "d4eb8092-c15e-4652-bfa1-2f8df169fbd2",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "JNK signaling is distinct from Dpp and EGFR signaling pathways. JNK inhibition does not affect pSMAD or pERK staining, Dpp/EGFR inhibition does not affect pJNK, and the phenotypic effects differ (JNK causes global size changes without patterning defects, while Dpp causes axis-specific changes with patterning defects).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C42 establish pathway independence through molecular markers (C38-C42) and phenotypic comparisons (C34-C36). The quantitative analysis of pSMAD (C39) and the distinct phenotypes provide strong evidence for separate pathways. This is important for establishing JNK as a novel size control mechanism distinct from known morphogens.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "ca8bbf4b-893c-4a44-8597-5b74899540c7",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The temporal pattern of pJNK localization correlates with the major period of wing disc growth. Early in development pJNK is detected throughout the wing pouch, but becomes localized to a stripe that coincides with the period when wing disc cell number increases from 1,000 to 50,000 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C20 establish the temporal correlation through imaging at different developmental stages (C19) and comparison to known growth kinetics from the literature (C20). This correlation supports the functional relevance of the pJNK stripe to growth control, though it does not establish causation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "141b7346-d762-43ab-b014-042e0dd93c24",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The Yki downstream target four-jointed (fj) is involved in propagating the size control signal. RNAi knockdown of fj blocks the Yki-induced increase in wing size, though fj knockdown alone does not obviously change wing size and overexpression reduces size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68-C72 provide evidence for fj involvement through the blocking experiment (C71), supported by prior literature (C68-C69). However, the complex phenotypes (C70, C72) prevent simple epistasis analysis, and the mechanism remains unclear. The result suggests fj involvement but does not definitively establish its role or position in the pathway.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "2ed52b78-d338-4707-9ac8-9e51823e78ec",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "These findings provide a new mechanism for how the Hedgehog pathway could contribute to tumorigenesis, as TRAF4 (the dTRAF1 homolog) and Hippo components are amplified in numerous cancers. The findings suggest a potential therapeutic strategy of reactivating Jun in Hh-driven tumors to induce apoptosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C6, C121 about cancer gene amplification are supported by citations, but claims C7 and C122 about therapeutic implications are speculative. The connection between the developmental findings and cancer is logical but not experimentally tested in this manuscript. The therapeutic proposal (C122) is particularly speculative as it is not tested and relies on switching from non-canonical to canonical JNK signaling in a disease context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "f27017ca-20e1-4a70-98f9-62fbd5bb1164",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior work concluded that JNK does not play a role in wing development based on inhibition in the posterior compartment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C21 accurately cites prior work (McEwen and Peifer, 2005) that reached a different conclusion. This provides important context for why the current findings are novel - the pJNK stripe is in the anterior compartment, explaining why posterior inhibition did not reveal a phenotype.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    },
+    {
+      "id": "1dd3b362-db1c-4c81-af8a-1195461cfe83",
+      "content_id": "d0893383-fa3f-4c76-89fb-41aabdf09612",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background knowledge claims about organ size control, transplantation experiments, morphogens, and JNK signaling establish the context and significance of the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C104-C120 are appropriately cited from the literature and provide accurate background context. These establish that intrinsic organ size control mechanisms are known to exist but remain molecularly unclear (C112), that morphogens control both patterning and growth (C113), and that JNK's role in developmental size control was previously unknown (C120). The citations appear appropriate and the knowledge claims are consistent with the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:05:45.558354Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "077497d1-76a7-48cd-8c7d-1dc432312441",
+      "result_id": "e3971f1b-1f45-43df-860a-84ff16e3d57f"
+    },
+    {
+      "claim_id": "f5603518-c480-4879-83ac-ea5106dc62e1",
+      "result_id": "e3971f1b-1f45-43df-860a-84ff16e3d57f"
+    },
+    {
+      "claim_id": "9d8ff7ee-999e-4595-a3a7-385e52ee7ebf",
+      "result_id": "e3971f1b-1f45-43df-860a-84ff16e3d57f"
+    },
+    {
+      "claim_id": "bec73c78-6c4a-4e65-ad96-7fbb97e9eab1",
+      "result_id": "e3971f1b-1f45-43df-860a-84ff16e3d57f"
+    },
+    {
+      "claim_id": "f4d883d6-7721-48e9-9f36-016de2aabc41",
+      "result_id": "e3971f1b-1f45-43df-860a-84ff16e3d57f"
+    },
+    {
+      "claim_id": "b5f404ad-ef1b-4818-87c6-7b2bb8b657cf",
+      "result_id": "e3971f1b-1f45-43df-860a-84ff16e3d57f"
+    },
+    {
+      "claim_id": "e0f49b23-c0c5-4963-a82c-6001445dfbbf",
+      "result_id": "e3971f1b-1f45-43df-860a-84ff16e3d57f"
+    },
+    {
+      "claim_id": "fbb9fb2f-8f8f-4bf4-9d5e-d70e7e9b92fa",
+      "result_id": "e3971f1b-1f45-43df-860a-84ff16e3d57f"
+    },
+    {
+      "claim_id": "04e2efe8-3910-4686-b25f-a537257611f7",
+      "result_id": "e3971f1b-1f45-43df-860a-84ff16e3d57f"
+    },
+    {
+      "claim_id": "450e01c3-ed8e-42a3-b4d5-82e65c10975d",
+      "result_id": "e3971f1b-1f45-43df-860a-84ff16e3d57f"
+    },
+    {
+      "claim_id": "13abc2c6-93a9-4bac-82f3-e2e4cf58c0b8",
+      "result_id": "1be62e9f-2053-47fc-b1ee-36e4fa7b12cf"
+    },
+    {
+      "claim_id": "544737ae-bc12-42e3-ad5c-2ab5fef8dab3",
+      "result_id": "1be62e9f-2053-47fc-b1ee-36e4fa7b12cf"
+    },
+    {
+      "claim_id": "0ed58500-d919-49b2-a42a-91be81153856",
+      "result_id": "1be62e9f-2053-47fc-b1ee-36e4fa7b12cf"
+    },
+    {
+      "claim_id": "68be8c98-2bda-4986-9683-226eedbb00e8",
+      "result_id": "1be62e9f-2053-47fc-b1ee-36e4fa7b12cf"
+    },
+    {
+      "claim_id": "9ff1bbb8-8e38-4b17-ba91-d8183d355b36",
+      "result_id": "1be62e9f-2053-47fc-b1ee-36e4fa7b12cf"
+    },
+    {
+      "claim_id": "8cc819a7-ba25-4245-984c-f433f0c0d988",
+      "result_id": "1be62e9f-2053-47fc-b1ee-36e4fa7b12cf"
+    },
+    {
+      "claim_id": "2149e683-aaad-4fe8-a7ff-85ad6b37917e",
+      "result_id": "1be62e9f-2053-47fc-b1ee-36e4fa7b12cf"
+    },
+    {
+      "claim_id": "d2ad444f-3b97-41c5-9b77-126be8f77c78",
+      "result_id": "1be62e9f-2053-47fc-b1ee-36e4fa7b12cf"
+    },
+    {
+      "claim_id": "649762af-423a-4ce8-b2fb-2e22d99af44e",
+      "result_id": "1be62e9f-2053-47fc-b1ee-36e4fa7b12cf"
+    },
+    {
+      "claim_id": "a58de9e2-9397-48d8-8ffb-d778f7956e88",
+      "result_id": "1be62e9f-2053-47fc-b1ee-36e4fa7b12cf"
+    },
+    {
+      "claim_id": "b1c7eedd-2b53-482d-b1b0-0cb9c2df658c",
+      "result_id": "1be62e9f-2053-47fc-b1ee-36e4fa7b12cf"
+    },
+    {
+      "claim_id": "d9693d9a-a610-4cb6-98ac-222ace8a96e2",
+      "result_id": "1be62e9f-2053-47fc-b1ee-36e4fa7b12cf"
+    },
+    {
+      "claim_id": "ce1f2ae0-b299-462e-b78d-4d81125f7686",
+      "result_id": "b7f41e66-8c67-4376-a25e-7c3b6c16b536"
+    },
+    {
+      "claim_id": "29cc2922-3ac1-4c62-b03b-f3dab05a47b4",
+      "result_id": "b7f41e66-8c67-4376-a25e-7c3b6c16b536"
+    },
+    {
+      "claim_id": "508e45e6-de34-40a7-a44a-7db0ba5276e3",
+      "result_id": "b7f41e66-8c67-4376-a25e-7c3b6c16b536"
+    },
+    {
+      "claim_id": "c748715d-4ca7-4e4b-9851-10add03e2e1d",
+      "result_id": "b7f41e66-8c67-4376-a25e-7c3b6c16b536"
+    },
+    {
+      "claim_id": "33b54ec7-0dff-460b-891b-b5e4e04c6e0c",
+      "result_id": "b7f41e66-8c67-4376-a25e-7c3b6c16b536"
+    },
+    {
+      "claim_id": "097f4c26-9ab0-4c94-9ae0-1f82600750a5",
+      "result_id": "b7f41e66-8c67-4376-a25e-7c3b6c16b536"
+    },
+    {
+      "claim_id": "50af3bd3-b564-4e2c-b1fb-08e92dafa674",
+      "result_id": "b7f41e66-8c67-4376-a25e-7c3b6c16b536"
+    },
+    {
+      "claim_id": "5f912ba9-b6e5-4673-93bc-49655002034e",
+      "result_id": "ed23533d-4e6c-4d37-b002-f847ba0465e2"
+    },
+    {
+      "claim_id": "85a3f99a-507e-454f-a507-7f36042c902f",
+      "result_id": "ed23533d-4e6c-4d37-b002-f847ba0465e2"
+    },
+    {
+      "claim_id": "5006b7a1-b1de-4cc6-94ff-216c3c3dc806",
+      "result_id": "ed23533d-4e6c-4d37-b002-f847ba0465e2"
+    },
+    {
+      "claim_id": "e4b19f4f-ffd8-4a99-846c-fbe2a72fd464",
+      "result_id": "ed23533d-4e6c-4d37-b002-f847ba0465e2"
+    },
+    {
+      "claim_id": "ba85507e-53af-45e0-85dc-e7a677864d93",
+      "result_id": "ed23533d-4e6c-4d37-b002-f847ba0465e2"
+    },
+    {
+      "claim_id": "50b17931-9094-46d7-99d7-1c9a7ef37a96",
+      "result_id": "ed23533d-4e6c-4d37-b002-f847ba0465e2"
+    },
+    {
+      "claim_id": "09b1fcad-4a74-45eb-a1ff-85b4fcb58fd9",
+      "result_id": "ed23533d-4e6c-4d37-b002-f847ba0465e2"
+    },
+    {
+      "claim_id": "81ed5b53-24d5-4c56-bd81-da562f19c222",
+      "result_id": "4f327a33-6482-409c-8d40-bf2d9daf6684"
+    },
+    {
+      "claim_id": "da02000a-19a3-4e0c-b354-adf78cbf64f7",
+      "result_id": "4f327a33-6482-409c-8d40-bf2d9daf6684"
+    },
+    {
+      "claim_id": "9969a0df-e116-4f21-ae03-8e1bb7912bed",
+      "result_id": "4f327a33-6482-409c-8d40-bf2d9daf6684"
+    },
+    {
+      "claim_id": "73406ce8-d2dc-46a4-b672-83f524bebc6b",
+      "result_id": "4f327a33-6482-409c-8d40-bf2d9daf6684"
+    },
+    {
+      "claim_id": "e85efcd5-6e00-4f14-9583-10d2cc55562b",
+      "result_id": "4f327a33-6482-409c-8d40-bf2d9daf6684"
+    },
+    {
+      "claim_id": "b8e573ff-f82a-4eeb-a41c-2c295cf64e14",
+      "result_id": "4f327a33-6482-409c-8d40-bf2d9daf6684"
+    },
+    {
+      "claim_id": "0184f7b8-86a0-4ed8-b640-61f2b8bdcb8d",
+      "result_id": "4f327a33-6482-409c-8d40-bf2d9daf6684"
+    },
+    {
+      "claim_id": "2005133d-5402-4fa8-a3bc-742b6e0e25e3",
+      "result_id": "4f327a33-6482-409c-8d40-bf2d9daf6684"
+    },
+    {
+      "claim_id": "f544bcde-df68-4008-9e46-f8f1ed5b8342",
+      "result_id": "4f327a33-6482-409c-8d40-bf2d9daf6684"
+    },
+    {
+      "claim_id": "91c571a6-d827-4245-82bb-11df8e907f37",
+      "result_id": "4f327a33-6482-409c-8d40-bf2d9daf6684"
+    },
+    {
+      "claim_id": "b824b257-13cf-417d-9eed-d83425954304",
+      "result_id": "4f327a33-6482-409c-8d40-bf2d9daf6684"
+    },
+    {
+      "claim_id": "ceef0516-cfff-4e16-b2e6-14a549f6f098",
+      "result_id": "4f327a33-6482-409c-8d40-bf2d9daf6684"
+    },
+    {
+      "claim_id": "d9287ce3-9b6e-47b0-98bd-bb2aece3e668",
+      "result_id": "4f327a33-6482-409c-8d40-bf2d9daf6684"
+    },
+    {
+      "claim_id": "0d2ea491-0aad-46ac-8b01-fc819486ce2b",
+      "result_id": "513396a1-ef90-4f07-b600-ed0301271b80"
+    },
+    {
+      "claim_id": "450e01c3-ed8e-42a3-b4d5-82e65c10975d",
+      "result_id": "513396a1-ef90-4f07-b600-ed0301271b80"
+    },
+    {
+      "claim_id": "a6635b8a-7f41-40b9-8a3e-39f1612bdba3",
+      "result_id": "513396a1-ef90-4f07-b600-ed0301271b80"
+    },
+    {
+      "claim_id": "ea5a1f6a-c856-4f53-9705-2dfd47736def",
+      "result_id": "513396a1-ef90-4f07-b600-ed0301271b80"
+    },
+    {
+      "claim_id": "ec01913a-013e-425e-a5d1-f97f8d3c0c42",
+      "result_id": "513396a1-ef90-4f07-b600-ed0301271b80"
+    },
+    {
+      "claim_id": "c0b3df88-debf-42b9-bd77-8c4fa48bf766",
+      "result_id": "513396a1-ef90-4f07-b600-ed0301271b80"
+    },
+    {
+      "claim_id": "dab0c4a3-4141-4444-9bd4-76a14e6bb71c",
+      "result_id": "513396a1-ef90-4f07-b600-ed0301271b80"
+    },
+    {
+      "claim_id": "50066877-3482-47ca-8a78-3f27f433485d",
+      "result_id": "513396a1-ef90-4f07-b600-ed0301271b80"
+    },
+    {
+      "claim_id": "09f30e61-a51b-4e28-b271-1b3a62bad459",
+      "result_id": "513396a1-ef90-4f07-b600-ed0301271b80"
+    },
+    {
+      "claim_id": "da19a366-10cf-4b20-86cc-9150870b1200",
+      "result_id": "513396a1-ef90-4f07-b600-ed0301271b80"
+    },
+    {
+      "claim_id": "2186ffa3-1f57-4a7e-ac74-bec00e3bc32d",
+      "result_id": "193710d3-1b83-483a-9780-d26cc24e74d8"
+    },
+    {
+      "claim_id": "92632748-fa22-487e-aa00-e8f6e0886eef",
+      "result_id": "193710d3-1b83-483a-9780-d26cc24e74d8"
+    },
+    {
+      "claim_id": "d3809e34-9629-4243-b86d-bdbead04511c",
+      "result_id": "193710d3-1b83-483a-9780-d26cc24e74d8"
+    },
+    {
+      "claim_id": "ba963d38-c8b7-4917-a322-c37fff6b6ebb",
+      "result_id": "193710d3-1b83-483a-9780-d26cc24e74d8"
+    },
+    {
+      "claim_id": "98ab25d9-ff0b-4821-90a5-832fefe18dbb",
+      "result_id": "193710d3-1b83-483a-9780-d26cc24e74d8"
+    },
+    {
+      "claim_id": "4b05fe07-5a89-4b93-b393-0062b26d1c9f",
+      "result_id": "193710d3-1b83-483a-9780-d26cc24e74d8"
+    },
+    {
+      "claim_id": "f9fe921f-ac3e-4037-82ae-ad2c3853f890",
+      "result_id": "193710d3-1b83-483a-9780-d26cc24e74d8"
+    },
+    {
+      "claim_id": "e17dc615-19a7-4591-932b-8586351916f7",
+      "result_id": "193710d3-1b83-483a-9780-d26cc24e74d8"
+    },
+    {
+      "claim_id": "ede8e489-20c5-4b09-a072-991577a375d5",
+      "result_id": "193710d3-1b83-483a-9780-d26cc24e74d8"
+    },
+    {
+      "claim_id": "742ab40d-5254-4e89-b25f-ed1d6fc35db7",
+      "result_id": "193710d3-1b83-483a-9780-d26cc24e74d8"
+    },
+    {
+      "claim_id": "27e03132-1c59-4a93-adf8-81d6cbfde310",
+      "result_id": "193710d3-1b83-483a-9780-d26cc24e74d8"
+    },
+    {
+      "claim_id": "9dac489b-ec33-4d52-b3c7-130d5c1327dd",
+      "result_id": "193710d3-1b83-483a-9780-d26cc24e74d8"
+    },
+    {
+      "claim_id": "930e141f-bcd6-44a1-93d9-55f10b8ae2b0",
+      "result_id": "193710d3-1b83-483a-9780-d26cc24e74d8"
+    },
+    {
+      "claim_id": "5b24ef0b-3d54-4bb6-a875-583031ace2f8",
+      "result_id": "193710d3-1b83-483a-9780-d26cc24e74d8"
+    },
+    {
+      "claim_id": "8128c1b0-cc31-4ac5-b335-5b38771dc174",
+      "result_id": "193710d3-1b83-483a-9780-d26cc24e74d8"
+    },
+    {
+      "claim_id": "527094bd-0086-4ec9-8a5e-48c3cd3d9567",
+      "result_id": "193710d3-1b83-483a-9780-d26cc24e74d8"
+    },
+    {
+      "claim_id": "742971fe-8acc-47d0-932a-2dc04ed9a030",
+      "result_id": "671675f9-050d-4ef5-b01a-9ac9fc0a4ff7"
+    },
+    {
+      "claim_id": "dd881e93-7712-4677-ac71-a97344b15762",
+      "result_id": "671675f9-050d-4ef5-b01a-9ac9fc0a4ff7"
+    },
+    {
+      "claim_id": "b91ba71a-6be0-4f96-9ecc-46e380faefda",
+      "result_id": "671675f9-050d-4ef5-b01a-9ac9fc0a4ff7"
+    },
+    {
+      "claim_id": "d5eee840-b299-477c-9b0d-90554c1ded10",
+      "result_id": "671675f9-050d-4ef5-b01a-9ac9fc0a4ff7"
+    },
+    {
+      "claim_id": "405beae7-dc72-4c0d-a887-55c1de5a7194",
+      "result_id": "671675f9-050d-4ef5-b01a-9ac9fc0a4ff7"
+    },
+    {
+      "claim_id": "e25789c5-25f3-4db3-9841-1c1b200e22d6",
+      "result_id": "671675f9-050d-4ef5-b01a-9ac9fc0a4ff7"
+    },
+    {
+      "claim_id": "abb6289c-e05e-48a3-ac99-3e425dcb7587",
+      "result_id": "671675f9-050d-4ef5-b01a-9ac9fc0a4ff7"
+    },
+    {
+      "claim_id": "45aa1402-3776-468d-9672-3ac109b2d764",
+      "result_id": "228b5863-0f04-4600-a03c-39ceff56991e"
+    },
+    {
+      "claim_id": "768f26f5-28ca-43d8-b6ab-e0562b0594a6",
+      "result_id": "228b5863-0f04-4600-a03c-39ceff56991e"
+    },
+    {
+      "claim_id": "d103f0c5-95bd-44b3-a8c4-43832efeff78",
+      "result_id": "d4eb8092-c15e-4652-bfa1-2f8df169fbd2"
+    },
+    {
+      "claim_id": "4b911257-aeb4-4370-8c5e-c3da7dc34f70",
+      "result_id": "d4eb8092-c15e-4652-bfa1-2f8df169fbd2"
+    },
+    {
+      "claim_id": "2fc79fe4-855d-4719-9f4f-734f902a2a64",
+      "result_id": "d4eb8092-c15e-4652-bfa1-2f8df169fbd2"
+    },
+    {
+      "claim_id": "86da4589-f4e0-4ccc-b5e0-7349427afe22",
+      "result_id": "d4eb8092-c15e-4652-bfa1-2f8df169fbd2"
+    },
+    {
+      "claim_id": "c99ffb3c-0066-4b74-a9bc-95dbe9b9a6fe",
+      "result_id": "d4eb8092-c15e-4652-bfa1-2f8df169fbd2"
+    },
+    {
+      "claim_id": "aa9c0816-b242-4f4b-bdc1-a7d07f53a652",
+      "result_id": "d4eb8092-c15e-4652-bfa1-2f8df169fbd2"
+    },
+    {
+      "claim_id": "113eac79-f023-4822-b8a7-82c845d003b8",
+      "result_id": "d4eb8092-c15e-4652-bfa1-2f8df169fbd2"
+    },
+    {
+      "claim_id": "3904e241-6446-4921-8314-b17082bae1d3",
+      "result_id": "d4eb8092-c15e-4652-bfa1-2f8df169fbd2"
+    },
+    {
+      "claim_id": "092f30a7-abbe-43bf-950e-53d5a73ef94e",
+      "result_id": "ca8bbf4b-893c-4a44-8597-5b74899540c7"
+    },
+    {
+      "claim_id": "f60bd002-3c90-4974-914e-ee2cf4d34e44",
+      "result_id": "ca8bbf4b-893c-4a44-8597-5b74899540c7"
+    },
+    {
+      "claim_id": "b6bcdff6-bf56-4e7b-ae3f-9f991b32ae7d",
+      "result_id": "141b7346-d762-43ab-b014-042e0dd93c24"
+    },
+    {
+      "claim_id": "bddbba77-47f2-4c45-bc45-c02995362160",
+      "result_id": "141b7346-d762-43ab-b014-042e0dd93c24"
+    },
+    {
+      "claim_id": "82d20838-a22c-4047-8b1e-dcb0a5a2a8e5",
+      "result_id": "141b7346-d762-43ab-b014-042e0dd93c24"
+    },
+    {
+      "claim_id": "b89e1336-35c7-496b-a015-f2378ac11288",
+      "result_id": "141b7346-d762-43ab-b014-042e0dd93c24"
+    },
+    {
+      "claim_id": "7797d328-00f2-46ec-85a0-bf60a36fe854",
+      "result_id": "141b7346-d762-43ab-b014-042e0dd93c24"
+    },
+    {
+      "claim_id": "ec93f729-8a95-4218-ac78-a72df9b9b0df",
+      "result_id": "2ed52b78-d338-4707-9ac8-9e51823e78ec"
+    },
+    {
+      "claim_id": "7a97e68c-7162-430c-8487-8fde11628ca8",
+      "result_id": "2ed52b78-d338-4707-9ac8-9e51823e78ec"
+    },
+    {
+      "claim_id": "b9108589-e420-462d-9476-01eee871d9bb",
+      "result_id": "2ed52b78-d338-4707-9ac8-9e51823e78ec"
+    },
+    {
+      "claim_id": "f7e058b9-465c-4710-ad4a-247896d684af",
+      "result_id": "2ed52b78-d338-4707-9ac8-9e51823e78ec"
+    },
+    {
+      "claim_id": "941450e9-7dbb-4dde-aa92-351999df69ec",
+      "result_id": "f27017ca-20e1-4a70-98f9-62fbd5bb1164"
+    },
+    {
+      "claim_id": "1d398182-b060-486b-93a3-42025cc67b83",
+      "result_id": "1dd3b362-db1c-4c81-af8a-1195461cfe83"
+    },
+    {
+      "claim_id": "94306dfc-8a2d-408f-b1f1-d4ca3fd01abd",
+      "result_id": "1dd3b362-db1c-4c81-af8a-1195461cfe83"
+    },
+    {
+      "claim_id": "42307e16-4eeb-4f82-b138-85a1ad3c9e5a",
+      "result_id": "1dd3b362-db1c-4c81-af8a-1195461cfe83"
+    },
+    {
+      "claim_id": "589e3cf3-ee56-4887-a270-d638851649d3",
+      "result_id": "1dd3b362-db1c-4c81-af8a-1195461cfe83"
+    },
+    {
+      "claim_id": "801516f9-f0b4-4235-9c89-c7d527156181",
+      "result_id": "1dd3b362-db1c-4c81-af8a-1195461cfe83"
+    },
+    {
+      "claim_id": "d98ff718-65c9-4696-b79a-78116e3848c7",
+      "result_id": "1dd3b362-db1c-4c81-af8a-1195461cfe83"
+    },
+    {
+      "claim_id": "bdefed92-57be-436f-af1b-c2f8afd21ee7",
+      "result_id": "1dd3b362-db1c-4c81-af8a-1195461cfe83"
+    },
+    {
+      "claim_id": "e60abc1d-39c5-490f-867f-56c7a2c32330",
+      "result_id": "1dd3b362-db1c-4c81-af8a-1195461cfe83"
+    },
+    {
+      "claim_id": "67f390bd-d7ac-49b2-a9a8-b72fcf51ba53",
+      "result_id": "1dd3b362-db1c-4c81-af8a-1195461cfe83"
+    },
+    {
+      "claim_id": "e9f5e51c-9737-4bfe-80aa-61927a4b59a3",
+      "result_id": "1dd3b362-db1c-4c81-af8a-1195461cfe83"
+    },
+    {
+      "claim_id": "3fbb5c08-9ed7-4739-be79-629a421cd0f6",
+      "result_id": "1dd3b362-db1c-4c81-af8a-1195461cfe83"
+    },
+    {
+      "claim_id": "4415d041-848d-4ac2-927e-b5c840854650",
+      "result_id": "1dd3b362-db1c-4c81-af8a-1195461cfe83"
+    },
+    {
+      "claim_id": "17a9ef11-2f2d-4336-94ce-126a4b03c98e",
+      "result_id": "1dd3b362-db1c-4c81-af8a-1195461cfe83"
+    },
+    {
+      "claim_id": "081f711e-af06-41fb-98a1-9c60207d8366",
+      "result_id": "1dd3b362-db1c-4c81-af8a-1195461cfe83"
+    },
+    {
+      "claim_id": "d36150d4-0aa1-4076-8eb8-de33419abfc5",
+      "result_id": "1dd3b362-db1c-4c81-af8a-1195461cfe83"
+    },
+    {
+      "claim_id": "158ecd08-1714-40d2-89ec-9b77d9b73dea",
+      "result_id": "1dd3b362-db1c-4c81-af8a-1195461cfe83"
+    },
+    {
+      "claim_id": "283939be-8150-4c8b-8528-5ad3103cbd02",
+      "result_id": "1dd3b362-db1c-4c81-af8a-1195461cfe83"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,422 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C22",
+      "C23"
+    ],
+    "result": "Rapamycin treatment preserves neuronal ATP levels when oxidative phosphorylation is impaired by mitochondrial inhibitors (oligomycin, rotenone/antimycin-A), but not by the uncoupler CCCP. Rapamycin increased ATP by ~13% in wild-type neurons and maintained ATP at ~86% when co-treated with oligomycin (vs. ~64% with oligomycin alone). This effect was specific to mTOR inhibition (FK-506 had no effect), did not involve increased glycolysis or oxidative phosphorylation, and was not replicated by the antioxidant NAC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C11, C22-C23 provide converging evidence from ATP measurements (Figure 1A), AMPK phosphorylation (Figure 1B), and control experiments with FK-506 and NAC. The specificity of the effect (works with oligomycin/rotenone but not CCCP) is mechanistically consistent with the different modes of action of these inhibitors (C12-C13). The lack of effect on glucose consumption (C22) and OCR (implicit from text) rules out alternative mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Neurons treated with mitochondrial inhibitors (oligomycin or rotenone/antimycin-A) for 6 hours show paradoxically increased S6 and S6K phosphorylation (~2-fold) despite AMPK activation, a neuron-specific response not observed in NPCs or with short-term (20 min) treatment. This increase is mTORC1-dependent (abolished by rapamycin) and not due to AMPK activation itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C14-C20 are supported by immunoblot data (Figures 1B, 1E-I) showing time-dependent and cell-type-specific changes in S6/S6K phosphorylation. The control experiments with AICAR (C16) and comparison with NPCs (C18) strengthen the conclusion. This finding is paradoxical given established AMPK-mTOR relationships (C17) but is well-documented experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Protein synthesis inhibition by cycloheximide (~9% of control) or 4E1RCat (~55% of control) increases neuronal ATP levels by ~26% and ~14% respectively, and preserves ATP in neurons treated with mitochondrial inhibitors, similar to rapamycin. This suggests that reduced protein synthesis, a major energy-consuming process, is an important mechanism for rapamycin's ATP-preserving effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C24-C30 are supported by protein synthesis measurements (Figure 1\u2014figure supplement 1) and ATP measurements (Figure 1J). The dose-response relationship between protein synthesis inhibition and ATP preservation, combined with the similar effects of different protein synthesis inhibitors and rapamycin, provides strong mechanistic evidence. The inference (C30) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "In neurons treated with rotenone/antimycin-A, protein synthesis initially drops to ~36% but recovers to ~80% by 4-6 hours despite sustained ATP depletion. Rapamycin prevents this recovery, maintaining protein synthesis at ~38% (vs. ~62% with rotenone/antimycin-A alone). This recovery does not occur in NPCs, consistent with the neuron-specific increase in S6/S6K phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C37 are supported by time-course protein synthesis measurements (Figures 1K-M). The temporal correlation between protein synthesis recovery and S6/S6K phosphorylation, along with the cell-type specificity, strengthens the mechanistic link. The data clearly show that rapamycin prevents the maladaptive recovery of protein synthesis during energy stress.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Three iPSC lines were successfully established from GM13411 MILS patient fibroblasts carrying the T8993G mtDNA mutation. The derived iPSCs, NPCs, and neurons all retained the T8993G mutation at extremely high mutation load, had normal karyotypes, and showed no additional pathogenic mtDNA mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 are supported by multiple validation methods: reprogramming protocol (C38, citation to Takahashi et al. 2007), karyotype analysis (C39, Figure 2\u2014figure supplement 2), mtDNA sequencing (C40, Figure 2\u2014figure supplement 3), and PCR/restriction digestion (C41-C42, Figures 2B, 2\u2014figure supplements 5-6). This comprehensive characterization validates the disease model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "T8993G iPSCs, NPCs, and neurons exhibit increased mitochondrial membrane potential and cellular ROS levels compared to controls, with upregulation of ROS-responsive genes (SOD1, GPX1, GSS). These findings are consistent with previous cybrid studies showing that the T8993G mutation impairs proton passage through ATP synthase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by FACS analysis (Figures 2C-D) and qRT-PCR (Figure 2E). The consistency with prior cybrid studies (C46, multiple citations) validates the disease model and confirms that the iPSC-derived cells recapitulate known biochemical phenotypes of the T8993G mutation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "T8993G iPSCs, NPCs, and neurons show lower basal OCR but similar maximum OCR compared to controls, consistent with ATP synthase deficiency. T8993G iPSCs and NPCs secrete significantly more lactate than controls, indicating enhanced aerobic glycolysis, while T8993G neurons show only a small increase. These findings are consistent with a recent independent study (Ma et al. 2015) using the same patient line.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by Seahorse OCR measurements (Figures 2F, H, J) and lactate measurements (Figures 2G, I, K). The differential lactate secretion between proliferating cells and neurons is mechanistically important and well-documented. Independent validation by Ma et al. 2015 (C51-C52) strengthens confidence in the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Only T8993G neurons (not iPSCs or NPCs) show significant ATP shortage (~73% of controls) with increased AMPK T172 and ACC phosphorylation. Similarly, oligomycin dramatically reduces ATP in wild-type neurons but less so in NPCs, with lactate increasing in NPCs but not neurons. This is consistent with neurons relying primarily on mitochondria for energy production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 are supported by ATP measurements and immunoblots (Figure 3A-B). The cell-type-specific ATP deficiency and differential response to oligomycin provide strong evidence that neurons are uniquely vulnerable to mitochondrial dysfunction. The inference about neuronal reliance on mitochondria (C58) is well-established and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Neurons lack detectable expression of HK2 and LDHA, key enzymes for aerobic glycolysis, and produce ~10-fold less lactate than NPCs. T8993G neurons show no increase in mitochondrial mass, indicating that neither aerobic glycolysis nor mitochondrial biogenesis is deployed to compensate for ATP deficiency in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 are supported by immunoblot data (Figure 3C) and lactate measurements (Figure 3D). The absence of HK2 and LDHA provides a mechanistic explanation for why neurons cannot compensate through glycolysis. The lack of mitochondrial biogenesis (C63-C64) is clearly shown by immunoblot. These findings explain the unique vulnerability of neurons to mitochondrial dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "T8993G neurons show finer neuronal fibers and more frequent bead-like structures (neuritic beading) along axons compared to controls. Neurons at 3 and 8 weeks retain the homoplasmic T8993G mutation. Neuritic beading is a known consequence of ATP depletion and mitochondrial dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are supported by microscopy images and quantification (Figures 4A-B), PCR data (Figure 4C), and citations to prior literature (C68-C69). The morphological abnormalities are consistent with the ATP deficiency and provide a cellular phenotype relevant to neurodegeneration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "T8993G neurons are hypersensitive to glutamate toxicity: 100 \u00b5M glutamate abolishes neuronal processes in T8993G neurons within 6 hours, while control neurons tolerate up to 300 \u00b5M. Neuritic beading appears after 3 hours, and ATP levels drop during treatment. Wild-type neurons treated with 40 nM oligomycin show similar glutamate sensitivity, confirming that ATP deficiency underlies the vulnerability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 are supported by glutamate toxicity assays with microscopy and quantification (Figures 4D-J). The dose-response relationship, time course, and validation with oligomycin-treated wild-type neurons provide strong evidence that ATP deficiency causes glutamate hypersensitivity. This is a disease-relevant phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "AICAR treatment to activate AMPK causes collapse of neuronal extensions when applied during differentiation, and significant cell death when applied to differentiated neurons. This is consistent with prior findings that AMPK activation suppresses axon initiation and neuronal polarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by microscopy data (Figure 4\u2014figure supplements 2-3) and citation to Amato et al. 2011. While these experiments are presented as supplementary observations, they provide important context for understanding the role of AMPK in neuronal development and survival.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "T8993G neurons show significantly increased S6 and S6K phosphorylation compared to controls, while T8993G NPCs do not. Rapamycin treatment (6 hours) increases ATP by ~23% and decreases AMPK T172 phosphorylation in T8993G neurons. Despite lower ATP and activated AMPK, T8993G neurons maintain protein synthesis at ~92% of controls. Rapamycin treatment improves T8993G neuronal resistance to glutamate toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 are supported by immunoblots (Figure 5A-B), ATP measurements (Figure 5B), protein synthesis measurements (Figure 5C), and glutamate toxicity assays (Figure 5D). These data demonstrate that rapamycin has therapeutic effects in the MILS disease model, addressing both the ATP deficiency and the functional consequence (glutamate sensitivity).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "ATP5A1-depleted neurons (but not NPCs) show increased S6/S6K phosphorylation similar to T8993G neurons. At 3 weeks, ATP5A1-depleted neurons show significant neuritic beading and ATP levels at ~60% of controls. Rapamycin treatment (12 hours) increases ATP by ~26% and greatly reduces beading. Cycloheximide has comparable effects, suggesting therapeutic potential for Leigh/NARP syndrome patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 are supported by immunoblots (Figure 5E), microscopy and ATP measurements (Figure 5F-I). The ATP5A1 knockdown model provides independent validation of the findings in T8993G neurons and confirms that ATP synthase deficiency is sufficient to cause the observed phenotypes. The therapeutic effects of rapamycin and cycloheximide are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "MILS neurons show increased levels of amino acids (14 amino acids increased 40-340%, with glycine showing the largest increase at 340%), pyruvate, lactate, and TCA intermediates (citrate ~200%, \u03b1-ketoglutarate ~180%, succinate ~140%) compared to controls. These metabolic changes are consistent with impaired mitochondrial function and may activate mTORC1, as amino acids are known mTORC1 activators. Similar changes occur in neurons treated with oligomycin or rotenone/antimycin-A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C102 are supported by GC-MS metabolite analysis (Figures 6A-E). The comprehensive metabolic profiling provides mechanistic insight into how mitochondrial dysfunction leads to mTORC1 activation in neurons. The inference about amino acid-mediated mTORC1 activation (C100-C101) is reasonable given established mTORC1 regulation mechanisms (citation to Bar-Peled and Sabatini 2014).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Prior work (Johnson et al. 2013b) showed that rapamycin has dramatic therapeutic effects in a mouse model of Leigh syndrome with Ndufs4 deficiency (complex I), significantly extending lifespan and attenuating neuronal degeneration. The mechanism was unclear but autophagy and mitochondrial biogenesis were excluded. It was unknown whether rapamycin would benefit mutations in other respiratory complexes, and rapamycin's effects on neuronal bioenergetics had not been explored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C109 accurately summarize prior literature (Johnson et al. 2013b, Vafai and Mootha 2013) and identify knowledge gaps that motivate the current study. These claims provide important context for the significance of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Background on mTOR and neurodegeneration: mTOR coordinates nutrient availability with cell growth and protein synthesis. Protein homeostasis is disrupted in neurodegenerative diseases (Parkinson's, Alzheimer's, PolyQ diseases). Rapamycin has shown benefits in various disease models through different proposed mechanisms (DDIT4 reduction, GSTS1 production, enhanced autophagy). Mitochondrial dysfunction is frequently observed in neurodegenerative diseases and may be a critical step toward neuronal death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C123 accurately summarize established literature with appropriate citations (Laplante and Sabatini 2012, Bov\u00e9 et al. 2011, Malagelada et al. 2010, Tain et al. 2009, Caccamo et al. 2014, Lin and Beal 2006, and others). These claims provide essential background for understanding the significance of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Background on MILS: T8993G in MT-ATP6 is the most common MILS mutation. Disease severity correlates with mutation load: >90% causes MILS, 70-90% causes NARP syndrome. In cybrid studies, ATP synthesis was negatively correlated with mutation load, indicating that moderate differences in ATP level can dictate disease severity and neuronal death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C129 accurately summarize established knowledge about MILS with appropriate citations (Finsterer 2008, Taylor and Turnbull 2005, Mattiazzi et al. 2004). This background is essential for understanding the disease model and the significance of ATP preservation by rapamycin.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Discussion of paradoxical mTORC1 activation: The observation that mTORC1 activity increases (rather than decreases) in mitochondrially-defective neurons despite AMPK activation is contrary to previous reports. Possible explanations include differences in AKT/PRAS40 signaling between neurons and NPCs, and activation by accumulated amino acids. Prior work (Hara et al. 1998) showed that S6 kinase activity increases linearly with amino acid concentration and becomes maximal at 2-fold increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C137 are supported by immunoblot data (Figure 6\u2014figure supplement 1) and appropriate citations (Johnson et al. 2013b, Zoncu et al. 2011, Sancak et al. 2007, Vander Haar et al. 2007, Hara et al. 1998). The discussion appropriately acknowledges the paradoxical nature of the findings and proposes mechanistic explanations supported by the metabolite data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Comparison to prior work (Ng et al. 2012): In an extracellular matrix detachment model, AMPK is activated in both transformed and non-transformed fibroblasts, but mTORC1 activity only decreases in transformed cells. AMPK-mediated mTORC1 inhibition preserved ATP and delayed cell death in transformed cells. Rapamycin or cycloheximide had significant survival effects, similar to the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C141 accurately summarize prior work (Ng et al. 2012) and draw appropriate parallels to the current findings. This comparison strengthens the interpretation that protein synthesis reduction is a key mechanism for ATP preservation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "Additional evidence for protein synthesis reduction as a therapeutic mechanism: Overexpression of 4E-BP rescues neuronal degeneration in Pink1/Parkin fly mutants (Tain et al. 2009). Pathogenic LRRK2 mutation increases protein synthesis in Drosophila, and low-dose anisomycin rescues locomotor deficits and dopamine neuron loss (Martin et al. 2014). A yeast genetic screen showed that downregulation of protein synthesis rescues growth of cells with mitochondrial defects (Wang and Chen 2015).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C146 accurately cite relevant literature (Tain et al. 2009, Martin et al. 2014, Wang and Chen 2015) that supports the therapeutic potential of protein synthesis reduction in mitochondrial dysfunction. These examples from diverse model systems strengthen the generalizability of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Discussion of clinical significance: The correlation between mutation load and disease severity (>90% causes Leigh syndrome, 70-90% causes NARP, ~50% causes late-onset cone-rod dystrophy) and the nearly linear relationship between mutation load and ATP production in cybrids suggest that the ~20% ATP increase achieved by rapamycin could have significant effects on neuronal survival in Leigh or NARP patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C150 are supported by citations (Porto et al. 2001, Mattiazzi et al. 2004) and logical inference from the dose-response relationship between ATP levels and disease severity. The argument that a 20% ATP increase could be clinically meaningful is reasonable given the steep relationship between mutation load and phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Therapeutic considerations: Leigh syndrome affects 1 in 40,000 newborns in the US, with 25% due to mtDNA mutations. No effective therapy currently exists. Rapamycin blocks axon sprouting in hippocampus (Buckmaster et al. 2009), suggesting caution for long-term use in newborns. The authors suggest rapamycin could be tried in older NARP patients or for short-term use in younger Leigh patients during emergencies (e.g., fever, which worsens symptoms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C151-C159 are supported by appropriate citations (Darin et al. 2001, Finsterer 2008, Pinto and Moraes 2014, Buckmaster et al. 2009, Uziel et al. 1997). However, the therapeutic recommendations (C156-C158) are speculative and not directly tested. The caution about developmental effects is appropriate given the cited literature, but the specific recommendations for clinical use go beyond what the data support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C160",
+      "C161"
+    ],
+    "result": "Broader therapeutic implications: Elevated p70 S6 kinase activity has been documented in Alzheimer's disease brain tissue (An et al. 2003). A mild reduction in protein synthesis may be useful in other neurodegenerative diseases by increasing ATP and decreasing the workload of protein folding systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C160-C161 are partially supported. C160 is supported by citation to An et al. 2003. However, C161 is speculative and extends beyond the data presented. While the logic is reasonable, the claim about broader therapeutic utility requires additional experimental validation in other disease models.",
+    "result_type": "MINOR"
+  }
+]

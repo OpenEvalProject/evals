@@ -1,0 +1,1670 @@
+{
+  "submission": {
+    "id": "b15f682f-61ae-424d-86c3-bdf927308efe",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:24:31.409428Z",
+    "updated_at": "2025-11-29T23:24:31.409428Z"
+  },
+  "content": [
+    {
+      "id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "submission_id": "b15f682f-61ae-424d-86c3-bdf927308efe",
+      "content_type": "manuscript",
+      "content_text": "# A long non-coding RNA targets microRNA miR-34a to regulate colon cancer stem cell asymmetric division\n\n## Authors\n\n- Lihua Wang<sup>1</sup>\n- Pengcheng Bu<sup>2</sup>\n- Yiwei Ai<sup>2</sup>\n- Tara Srinivasan<sup>3</sup>\n- Huanhuan Joyce Chen<sup>5</sup>\n- Kun Xiang<sup>3</sup>\n- Steven M Lipkin<sup>6</sup> \u2020\n- Xiling Shen<sup>1</sup> ([ORCID: 0000-0002-4978-3531](https://orcid.org/0000-0002-4978-3531)) \u2020\n\n### Affiliations\n\n1. Department of Biological and Environmental Engineering Cornell University Ithaca United States\n2. School of Electrical and Computer Engineering Cornell University Ithaca United States\n3. Department of Biomedical Engineering Cornell University Ithaca United States\n4. Department of Biomedical Engineering Duke University Durham United States\n5. Meyer Cancer Center Weill Corenll Medical College New York United States\n6. Deparments of Medicine, Genetic Medicine and Surgery Weill Cornell Medical College New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe roles of long non-coding RNAs (lncRNAs) in regulating cancer and stem cells are being increasingly appreciated. Its diverse mechanisms provide the regulatory network with a bigger repertoire to increase complexity. Here we report a novel LncRNA, Lnc34a, that is enriched in colon cancer stem cells (CCSCs) and initiates asymmetric division by directly targeting the microRNA miR-34a to cause its spatial imbalance. Lnc34a recruits Dnmt3a via PHB2 and HDAC1 to methylate and deacetylate the miR-34a promoter simultaneously, hence epigenetically silencing miR-34a expression independent of its upstream regulator, p53. Lnc34a levels affect CCSC self-renewal and colorectal cancer (CRC) growth in xenograft models. Lnc34a is upregulated in late-stage CRCs, contributing to epigenetic miR-34a silencing and CRC proliferation. The fact that lncRNA targets microRNA highlights the regulatory complexity of non-coding RNAs (ncRNAs), which occupy the bulk of the genome.\n\n## Introduction\n\nA downstream target of p53, the microRNA miR-34a is a well-known tumor suppressor in various types of cancers (Chang et al., 2007; He et al., 2007). Among its many functions, miR-34a has been shown to limit self-renewal of cancer stem cells (Bu et al., 2013; Liu et al., 2011). miR-34a mimics such as MRX34 are among the first microRNA mimics to reach clinical trial for cancer therapy (Bader, 2012; Bouchie, 2013). Besides cancer, miR-34a has been shown to regulate stem cell differentiation, somatic stem cell reprogramming, cardiac ageing, neurodegeneration, ciliogenesis, bone resorption, and metabolism (Aranha et al., 2011; Boon et al., 2013; Choi et al., 2011; Krzeszinski et al., 2014; Liu et al., 2012; Song et al., 2014; Xu et al., 2015).\n\nLoss of p53 function can lead to downregulation of miR-34a; however, miR-34a expression also tends to be silenced due to aberrant CpG methylation of its promoter in many types of cancer, including breast, prostate, lung, colon, kidney, bladder, pancreatic, and ovarian cancer (Corney et al., 2010; Kong et al., 2012; Lodygin et al., 2008). Methylation of the miR-34a promoter is positively correlated with and miR-34a expression is inversely correlated with progression of colorectal cancer (CRC) (Siemens et al., 2013). However it is completely unclear how miR-34a was silenced by epigenetic modification.\n\nNormal stem cells often divide asymmetrically to produce one daughter cell like itself for self-renewal and another daughter cell unlike itself to go down a path of differentiation (Neumuller and Knoblich, 2009). Asymmetric division allows stem cells to maintain self-renewal while generating a heterogeneous population for cellular diversity (Reya et al., 2001). Tumor cells are usually heterogeneous and have a wide range of potential for tumorigenesis, proliferation, and metastasis. Recent studies have reported that cancer cells, including colorectal, glioma, lung and breast cancer cells, could also divide asymmetrically, generating progenies with different proliferation capabilities (Bu et al., 2013; Dey-Guha et al., 2011; Lathia et al., 2011; O'Brien et al., 2012; Pece et al., 2010; Pine et al., 2010; Sugiarto et al., 2011). The frequencies of symmetric vs. asymmetric divisions are associated with cancer proliferation and progression. Disruption to asymmetric division in favor of symmetric self-renewal alters the balance between self-renewal and differentiation, which has been linked to neoplastic transformation and tumor growth (Cicalese et al., 2009; Sugiarto et al., 2011).\n\nHere, we discovered that a novel lncRNA, Lnc34a, directly targets the miR-34a promoter for epigenetic silencing by recruiting the DNA methyltransferase Dnmt3a via Prohibitin-2 (PHB2) and Histone Deacetylase 1 (HDAC1). Asymmetric distribution of Lnc34a during colon cancer stem cell (CCSC) division leads to asymmetric daughter cell fate. Its suppression leads to differentiation while its abundance leads to CCSC proliferation via symmetric self-renewal. Lnc34a tends to be upregulated in late-stage CRC, associated with miR-34a silencing. The ability of lncRNA to target microRNA provides RNA circuitry more ways to increases the complexity of the regulatory network.\n\n## Results\n\n### A lncRNA overlapping with miR-34a promoter\n\nWe performed RT-PCR with 10 pairs of primers to scan for potential transcripts overlapping the miR-34a promoter and its downstream sequence. A 293 base pair (bp) transcript fragment was amplified. Rapid amplification of cDNA ends (RACE) further identified a full-length, 693\u00a0bp transcript (Figure 1\u2014figure supplement 1A,B). Northern blot confirmed the existence and size of the transcript in seven CRC cell lines and two colon cancer stem cell (CCSC) lines (Figure 1A,B, Figure 1\u2014figure supplement 1D). The CCSCs were isolated from two early-stage CRC specimen, and were functionally validated by serial sphere formation, tumor initiation, and marker staining (Bu et al., 2013). The original frozen stocks from the first passage were used in the study. The transcript is composed of two exons, spanning nearly 15.3 kilobases (kb), and does not contain a valid Kozak sequence. The full-length transcript has no protein coding potential according to the Coding Potential Calculator (CPC) and Coding Potential Assessment Tool (CPAT) (Kong et al., 2007; Wang et al., 2013). We named the transcript Lnc34a.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/14620/elife-14620-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic illustration of Lnc34a (shown in black) and miR-34a (shown in blue) gene structure. Lnc34a and miR-34a contain two exons and are transcribed in different directions. P, probe for Northern blot in (B). (B) Northern blot detection of Lnc34a with the probe shown in (A), quantified by Image J. (C) RT-qPCR detection of Lnc34a expression in colon cancer stem cells (CCSC1 and CCSC2) and well-established colon cancer cell lines (HT29 and Caco-2). (D, E) RT-qPCR detection of Lnc34A level in cellular fractions from CCSC1 (D) and CCSC2 (E) sphere cells. U6 and actin are the nuclear and cytoplasm controls, respectively. (F) Lnc34a expression in CCSC sphere cells detected by RNA-FISH. Scale bar, 20\u00a0\u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14620/elife-14620-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic illustration of Lnc34a and miR-34a gene structures. Primers for RT-PCR and rapid amplification of cDNA ends (RACE) were shown. (B) RT-qPCR and RACE that amplified Lnc34a. (C) RT-qPCR detection of Lnc34a expression in CRC cell lines. (D) Northern blot detection of Lnc34a in CRC cell lines and CCSCs. The quantification of each band was carried out using Image J.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14620/elife-14620-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Knockdown of Lnc34a abolished RNA FISH signals. (B) RT-qPCR showing Lnc34a knockdown efficiencies by shLnc34a1 and shLnc34a2. (C) RT-qPCR detection of Lnc34a level in cellular fractions from CCSC1with Lnc34a ectopic expression.\n\nTo analyze Lnc34a expression in CRC cells, RT-qPCR was performed in 9 commonly used CRC cell and the two CCSC lines. Consistent with the Northern blot measurement, Lnc34a levels were significantly higher in the CCSC sphere cells (Figure 1C, Figure 1\u2014figure supplement 1C). Cellular fractionation assays show enrichment of Lnc34a in the nuclear fraction (Figure 1D,E), and RNA fluorescence in situ hybridization (RNA FISH) indicates that Lnc34a is mainly in the nucleus (Figure 1F). RNA FISH specificity was validated when the same RNA-FISH probe did not detect Lnc34a after Lnc34a was knocked down by lentiviral short-hairpin RNA (shRNA) vectors in CCSC spheres (Figure 1\u2014figure supplement 2A).\n\n### Lnc34a asymmetry\n\nNotably, RNA-FISH showed that a small population among the CCSC sphere cells did not express Lnc34a, although the majority did (Figure 1F). We then separated the sphere cells into two populations based on the expression levels of ALDH1, a CCSC marker (Huang et al., 2009). Flow analysis confirmed that ALDH1+ cells also express high levels of CD133, another CCSC marker (Figure 2\u2014figure supplement 1A). RT-qPCR showed that, in both sphere cultures (CCSC1 and CCSC2), ALDH1+ cells have much higher Lnc34a expression levels than the ALDH1- cells (Figure 2A,B). We then performed the pair-cell assay by plating single cells and allowing them to progress through one cell division (Bultje et al., 2009). \u03b1-tubulin staining was used to identify dividing cells (Figure 2C). Co-staining revealed that Lnc34a was asymmetrically distributed and enriched in the ALDH1+ (CCSC) daughter cells, which were also CD133+ (Figure 2C,D, Figure 2\u2014figure supplement 1B,C).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/14620/elife-14620-fig2-v2.jpg)\n\n**Figure 2.:** (A, B) RT-qPCR detection of lnc34a in ALDH1+ and ALDH1- populations isolated from spheres of two independent patient-derived lines, CCSC1 (A) and CCSC2 (B). Lnc34a is high in ALDH1+ (CCSC) but low in ALDH1- (non-CCSC) cells. (C) Representative images of Lnc34a distribution in dividing pairs. \u03b1-tubulin staining is consistent with the telophase (final phase of mitosis) configuration of microtubules \u2013 the midbody at the division plane during cytokinesis and asters at the poles. ALDH1 identifies the CCSC daughter. (D) Quantification of Lnc34a/ALDH1 co-expression (C.E.) in daughter compartments of dividing pairs as shown in (C). (E) Representative images of Lnc34a asymmetry in dividing pairs in xenograft tumors derived from CCSC1 and CCSC2. Dividing pairs are identified by tubulin staining. (F) Percentage of Lnc34a asymmetry in dividing pairs in CCSC xenografts as shown in (E). (G) Representative images of asymmetric and symmetric Lnc34a distribution in dividing pairs in early- and late-stage human CRC specimens. (H) Percentage of Lnc34a asymmetry in dividing pairs in human CRC specimens. (I) Effect of Lnc34a knockdown on mode of division based on ALDH1 staining of dividing cell pairs. Lnc34a knockdown decreased asymmetric (ALDH1+/ALDH1-) division and symmetric self-renewal (ALDH1+/ALDH1+), and increased differentiation (ALDH1-/ALDH-). (J) Effect of ectopic Lnc34a expression on mode of division. Ectopic Lnc34a increased symmetric self-renewal (ALDH1+/ALDH+), and reduced asymmetric division (ALDH1+/ALDH1-) and differentiation (ALDH1-/ALDH1-). The effect of ectopic Lnc34a expression was abrogated by ectopic miR-34a expression. (K) Pair-cell BrdU incorporation assay showing asymmetric proliferative potential. Left, schematic representation of the experimental approach. Single sphere cells were allowed to divide once (1st division). Cells were then treated with BrdU for 3\u2009hr to label cells that were re-entering the 2nd division. Right, representative images showing that the Lnc34a+ cells were more proliferative and incorporated BrdU. Scale bar, 8\u00a0\u03bcm. Error bars denote s.d. of triplicates. *p<0.05; **p<0.01; ***p<0.001. p-value was calculated based on Student\u2019s t-test.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14620/elife-14620-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) FACS showing ALDH1+ sphere cells are CD133+. (B) Co-immunofluorescence of ALDH1 and CD133 showing ALDH1 and CD133 are expressed in the same daughter cell during CCSC division. (C) Percentages of CCSC divisions wherein miR-34a and ALDH1 are coexpressed (C.E.) or mutually exclusive (M.E.). (D, E) Effect of Lnc34a knockdown (D) and ectopic Lnc34a and miR-34a expression (E) on mode of division based on CD133 staining of dividing cell pairs.\n\nLnc34a asymmetry in dividing cell pairs was confirmed in vivo by RNA-FISH and tubulin staining of xenograft tumors derived from subcutaneously injected CCSCs (Figure 2E,F). We investigated Lnc34a asymmetry in 23 early-stage (stage I/II) and 22 late-stage (stage III/IV) human CRC specimens (Figure 1\u2014source data 1). Lnc34a asymmetry in dividing cell pairs is more strongly associated with early-stage CRC, while late-stage CRC mostly has symmetric Lnc34a levels in dividing pairs (Figure 2G,H).\n\nTo investigate whether Lnc34a regulates CCSC division symmetry, we first knocked down Lnc34a using lentiviral shRNAs, which have been reported to knock down certain nuclear lncRNAs efficiently (Castel and Martienssen, 2013; Di Ruscio et al., 2013; Wang et al., 2015; Xing et al., 2014). Among the five tested shRNAs against Lnc34a, two showed efficient suppression of Lnc34a (shLnc34a1 and shLnc34a2; Figure 1\u2014figure supplement 2B). Lnc34a knockdown decreased asymmetric division while increasing symmetric, ALDH1-/ALDH1- division (Figure 2I). We then ectopically expressed Lnc34a using lentiviral vectors. Higher level of ectopic Lnc34a was detected in the nucleus than in the cytoplasm (Figure 1\u2014figure supplement 2C). Ectopic Lnc34a expression also decreased asymmetric division, but increased symmetric, ALDH1+/ALDH1+ division instead (Figure 2J). The phenotype was rescued by ectopic miR-34a expression, suggesting that Lnc34a regulates symmetry through miR-34a (Figure 2J). The same trend was observed with CD133 staining (Figure 2\u2014figure supplement 1C,D). Therefore, ectopic Lnc34a seems to promote symmetric CCSC self-renewal, while Lnc34a silencing promotes differentiation.\n\nPair-cell BrdU incorporation assay showed that, when cultured in proliferative medium (DMEM with 10% FBS), the Lnc34a+ daughter cell starts incorporating BrdU and enters into the next division immediately, whereas the Lnc34a- daughter cells does not incorporate BrdU (Figure 2K). Therefore, the Lnc34a+ daughter cell has higher proliferative capacity.\n\n### Lnc34a enhances CCSC self-renewal and tumorigenesis\n\nSerial sphere propagation assays were performed to evaluate the effect of Lnc34a on CCSC self-renewal. CCSCs containing a control vector exhibited stable sphere formation capability through 3 generations of sphere propagation. Lnc34a knockdown strongly suppressed sphere formation capability, which was completely lost after 3 generations of passage (Figure 3A,B). In contrast, ectopic Lnc34a expression increased sphere numbers and sizes significantly. Ectopic miR-34a abrogated the effect of Lnc34a on sphere formation regulation, suggesting that Lnc34a promotes CCSC self-renewal by targeting miR-34a (Figure 3A,C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/14620/elife-14620-fig3-v2.jpg)\n\n**Figure 3.:** (A)\u00a0Representative images of CCSC spheres with Lnc34a knockdown (shLnc34a1 and shLnc34a2), ectopic Lnc34a expression (Lnc34a), and ectopic Lnc34a/miR-34a expression. (B, C) Sphere formation during serial passages after Lnc34a knockdown (B) and ectopic Lnc34a and miR-34a expression (C). Equal number of cells was passaged for 3 generations to form spheres. (D, E) Knockdown of Lnc34a (shLnc34a1 and shLnc34a2) reduced tumorigenicity, shown by images (D) and weights of xenograft tumors (E). (F, G) Ectopic Lnc34a expression (Lnc34a) enhances tumorigenicity, which can be abrogated by ectopic miR-34a expression. (H, I) FACS plots identifying ALDH1+ (CCSC) populations in xenograft tumors with Lnc34a knockdown (H) or ectopic Lnc34a expression (I). Scale bar, 50\u00a0\u03bcm. Error bars denote s.d. of triplicates. **p<0.01; ***p<0.001. p-value was calculated based on Student\u2019s t-test.\n\nNext, we used the mouse xenograft model to examine whether Lnc34a influences tumor growth. All five mice in the control group (injected with sphere cells containing the control vector) developed tumors. However, only three mice injected with sphere cells expressing shLnc34a1 and two mice injected with sphere cells expressing shLnc34a2 formed tumors, which are smaller than those of the control group (Figure 3D,E). All 5 mice injected with sphere cells ectopically expressing Lnc34a developed tumors, which are notably bigger than those in the control group. Ectopic miR-34a expression abrogates the effect of ectopic Lnc34a on tumor growth, resulting in similar tumor sizes as the control group (Figure 3F,G). Furthermore, we performed FACS on disassociated xenograft tumor cells. Lnc34a knockdown decreased the ALDH1+ CCSC population in the xenograft tumors (Figure 3H), while ectopic Lnc34a enriched the ALDH1+ CCSC population in the tumors (Figure 3I). Taken together, Lnc34a contributes to CCSC self-renewal and tumorigenesis.\n\n### Lnc34a suppresses miR-34a expression\n\nOpposite to Lnc34a, miR-34a is downregulated in ALDH1+ CCSCs and upregulated in ALDH1- non-CCSCs (Figure 4A,B). Knockdown of Lnc34a significantly increased miR-34a expression levels, while ectopic Lnc34a expression decreased miR-34a levels (Figure 4C,D). Therefore, Lnc34a suppresses miR-34a expression. RNA FISH showed that Lnc34a and miR-34a are mutually exclusive in the same daughter compartment and are present in opposite daughter compartments in more than 70% of CCSC1 and around 80% of CCSC2 dividing pairs (Figure 4E,F). On the other hand, we only observed symmetric distribution of p53, the other miR-34a upstream regulator (Figure 4\u2014figure supplement 1). Therefore, Lnc34a provides a potential mechanism that accounts for asymmetric miR-34a levels in daughter pairs.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/14620/elife-14620-fig4-v2.jpg)\n\n**Figure 4.:** (A, B) RT-qPCR of miR-34a levels in CCSC1 (A) and CCSC2 (B). (C, D) RT-qPCR of miR-34a levels in CCSC1 (C) and CCSC2 (D) spheres with Lnc34a knockdown (shLnc34a1 and shLnc34a2) or ectopic expression (Lnc34a). NC is the control vector. (E) Representative images of Lnc34a and miR-34a asymmetry in CCSC1 and CCSC2 sphere cells. (F) Quantification of (E). Lnc34a and miR-34a distributions are mutually exclusive (M.E.) during most CCSC divisions. (G) Bisulfite sequencing analysis showing miR-34a promoter methylation status in ALDH1+ (CCSC) and ALDH1- (non-CCSC) cells isolated from sphere cells. PCR products amplified from bisulfite-treated genomic DNA were cloned and sequenced to reveal the methylation status of individual CpG sites. Percentages of the methylated CpG sites (filled circles) among all scored sites are indicated. (H) Lnc34a knockdown decreased miR-34a promoter methylation in sphere cells. (I) Ectopic Lnc34a expression increased miR-34a promoter methylation in sphere cells. (J, K) ChIP-qPCR with antibodies against acetylated histones H3 and H4. Lnc34a knockdown decreased miR-34a promoter acetylation (J), while ectopic Lnc34a expression increased acetylation (K). (L) RT-qPCR measurements of Lnc34a expression in early- and late-stage CRC specimens. (M) RT-qPCR measurements of miR-34a expression in early- and late-stage CRC specimens. (N) Bisulfite sequencing analysis of miR-34a promoter methylation status in early- and late-stage CRC specimens. Scale bar, 8\u00a0\u03bcm. Error bars denote s.d. of triplicates. **p<0.01; ***p<0.001. p-value was calculated based on Student\u2019s t-test.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14620/elife-14620-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) (A) Representative immunofluorescence images showing symmetric distribution of p53 during CCSC division. (B) Percentage of p53 division type. (C) Representative immunofluorescence images showing symmetric distribution of p21 during CCSC division. (D) Percentage of p21 division type. Sym, symmetric segregation; Asym, asymmetric segregation; Am, ambiguous.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14620/elife-14620-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A, B) RT-qPCR of miR-34a levels in CRC lines Caco-2 (A) and HT29 (B). Ectopic Lnc34a expression suppressed miR-34a expression. (C, D) Bisulfite sequencing analysis showing ectopic Lnc34a expression increased miR-34a promoter methylation in Caco-2 (C) and HT29 (D). (E, F) ChIP-qPCR with antibodies against acetylated histones H3 and H4. Ectopic Lnc34a expression decreased miR-34a promoter acetylation in Caco-2 (E) and HT29 (F).\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/14620/elife-14620-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) RT-qPCR showing Lnc34a and miR-34a expression in individual CRC specimens. Levels are normalized to corresponding actin levels. (B) Bisulfite sequencing analysis of miR-34a promoter methylation in the same CRC specimens shown in (A).\n\nBisulfite sequencing was then performed to evaluate miR-34a promoter methylation in ALDH1+ CCSCs and ALDH1- non-CCSCs isolated from spheres. 93.3% of tested CpG islands were methylated in CCSCs; in contrast, methylation rate was as low as 2.2% in non-CCSCs (Figure 4G). Knockdown of Lnc34a diminished overall miR-34a promoter methylation in sphere cells (Figure 4H), whereas ectopic Lnc34a expression significantly enhanced miR-34a promoter methylation, compared with the control vector (Figure 4I). Besides methylation, ChIP-qPCR showed that Lnc34a knockdown increases acetylated histones H3 and H4 associated with the miR-34a promoter (Figure 4J), whereas ectopic Lnc34a expression decreased acetylated histones H3 and H4 (Figure 4K). Taken together, the data suggests that Lnc34a silences miR-34a expression in CCSCs by promoting methylation and histone deacetylation of the miR-34a promoter. The effect of ectopic Lnc34a suggests that Lnc34a might act both in cis and in trans, as have been observed for various lncRNAs such as Evf-2 and the capacity of ectopically supplied cis-acting lncRNAs to act in trans (Di Ruscio et al., 2013; Feng et al., 2006; Gomez et al., 2013; Jeon and Lee, 2011; Martianov et al., 2007; Rinn and Chang, 2012; Schmitz et al., 2010).\n\nLnc34a also silences miR-34a in common CRC cell lines. Ectopic Lnc34a expression suppressed miR-34a expression, and promoted methylation and deacetylation of the miR-34a promoter in CRC cell lines Caco-2 and HT29 (Figure 4\u2014figure supplement 2).\n\n### Lnc34a, miR-34a, and promoter methylation are correlated with CRC progression\n\nRT-qPCR performed in 23 early-stage (stage I/II) and 22 late-stage (stage III/IV) CRC specimens showed that Lnc34a expression is correlated with CRC progression. Overall, Lnc34a expression is lower in early-stage CRC and increases in late-stage CRC (Figure 4L, Figure 4\u2014figure supplement 3A). miR-34a expression follows a reverse trend (Figure 4M, Figure 4\u2014figure supplement 3A). Consistent with Lnc34a methylation of the miR-34a promoter, bisulfite sequencing revealed that the miR-34a promoter is more methylated in late-stage CRC than in early-stage CRC (Figure 4N, Figure 4\u2014figure supplement 3B).\n\n### Lnc34a interacts with epigenetic regulators\n\nTo understand the mechanisms via which Lnc34a regulates miR-34a expression, we performed an RNA pull-down assay with biotin-labeled Lnc34a, followed by mass spectrometry (MS), to search for potential Lnc34a-associated proteins. The DNA methyltransferase Dnmt3a, Histone Deacetylase 1 (HDAC1), and Prohibitin 2 (PHB2) were identified to be associated with Lnc34a (Figure 5A and Figure 5\u2014source data 1). RNA immunoprecipitation (RIP) using specific antibodies against Dnmt3a, HDAC1 and PHB2 further confirmed the interactions (Figure 5B). In contrast, RNA pulldown and RIP did not detect any interaction between Lnc34a and Dnmt1, an enzyme that plays important roles in maintaining methylation during DNA replication (data not shown).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/14620/elife-14620-fig5-v2.jpg)\n\n**Figure 5.:** (A) Western blot following RNA-pull down showing Lnc34a interaction with PHB2, Dnmt3a and HDAC1 in CCSC1 (left) and CCSC2 (right) sphere cells. RNA-pull down was performed using CCSC lysates with biotin-labeled Lnc34a, antisense and tRNA. Actin was used for input control. (B) RNA immunoprecipitation (RIP) showing Lnc34a interaction with PHB2, Dnmt3a and HDAC1 in CCSC1 (left) and CCSC2 (right) sphere cells. (C) RIP showing PHB2 knockdown disrupts Lnc34a interaction with Dnmt3a, but has no effect on Lnc34a interaction with HDAC1. (D) RIP showing Dnmt3a knockdown does not affect Lnc34a interaction with PHB2 or HDAC1. (E) RIP showing HDAC1 knockdown has limited effect on Lnc34a interaction with PHB2 or Dnmt3a. (F) Mapping PHB2 and HDAC1 interaction domains on Lnc34a. Upper panel, schematic illustration of full-length Lnc34a and the truncated fragments for RNA put-down. Lower panel, Western blot of PHB2 and HDAC1 from RNA put-down of the fragments. (G) EMSA showing Lnc34a/PHB2 (left) and Lnc34a/HDAC1 (right) interactions. (H) RT-qPCR of miR-34a levels after expressing full-length or truncated fragments of Lnc34a. (I) In vitro\u00a0interaction assay binding of the truncated fragment (267\u2013560\u00a0bp) to the DNA containing the miR-34a promoter sequence. (J) Schematic illustration of Lnc34a interaction with PHB2, Dnmt3a and HDAC1. (K, L, M) RT-qPCR showing knockdown of Dnmt3a (K), HDAC1 (L), and PHB2 (M) increased miR-34a expression in sphere cells. (N, O) RT-qPCR showing treatments with HDAC inhibitor SAHA (N) or TSA (O) increased miR-34a expression in sphere cells. Error bars denote s.d. of triplicates. ***p<0.001. p-value was calculated based on Student\u2019s t-test.\n\nTo investigate how Lnc34a interacts with Dnmt3a, HDAC1 and PHB2, we performed RIP while knocking down each of the proteins. Knockdown of PHB2 abolished the interaction between Lnc34a and Dnmt3a, but had no effect on the interaction between Lnc34a and HDAC1 (Figure 5C). Knockdown of Dnmt3a did not affect the interaction of Lnc34a with either PHB2 or HDAC1 (Figure 5D). Knockdown of HDAC1 did not interrupt Lnc34a and Dnmt3a interaction, and only had limited effect on Lnc34a and PHB2 interaction (Figure 5E). These data suggest that Lnc34a interacts with PHB2 and HDAC1, and recruits Dnmt3a through PHB2.\n\nWe then serially truncated Lnc34a and performed RNA pull-down assays to map HDAC1 and PHB2 binding to Lnc34a. The 1\u2013267\u00a0bp fragment is sufficient to bind HDAC1, and the 560\u2013693\u00a0bp fragment is sufficient to bind PHB2 (Figure 5F). Interaction between the fragments and their cognate proteins were further validated by the electrophoretic mobility shift assay (EMSA). Incubation of labeled RNA probes Lnc34a:1\u2013267\u00a0bp with recombinant HDAC1 and Lnc34a:560\u2013690\u00a0bp with recombinant PHB2 resulted in specific gel retardation, while unlabeled RNA probes of the same fragments competitively disrupted those binding (Figure 5G). All three fragments are needed for full suppression of miR-34a expression (Figure 5H). Although the 267\u2013560\u00a0bp fragment does not interact with either HDAC1 or PHB2, the in vitro interaction assay shows that it directly binds to the miR-34a promoter (Figure 5I). Therefore, Lnc34a binds to the miR-34a promoter via the 267\u2013560\u00a0bp sequence, and recruits HDAC1 and Dnmt3a/PHB2 via the two flanking (1\u2013267\u00a0bp and 560\u2013690) sequences (Figure 5J).\n\nWe then knocked down PHB2, Dnmt3a and HDAC1 respectively, followed by RT-qPCR measurements of miR-34a expression. Knockdown of PHB2, Dnmt3a or HDAC1 upregulated miR-34a expression (Figure 5I\u2013K). Inhibition of HDAC activity by SAHA and TSA also increased miR-34a expression (Figure 5L,M). The data suggest that these epigenetic regulators influence miR-34a expression levels.\n\n## Discussion\n\nThe abundance of lncRNA in the human genome is being increasingly appreciated, but our understanding of their diverse functions is still lagging (Mercer et al., 2009; Rinn and Chang, 2012). We demonstrate that a lncRNA, Lnc34a, can initiate CCSC asymmetric division by targeting miR-34a. Previously, lncRNAs like HOTAIR and Xist have been shown to cause histone H3 lysine 27 methylation or lysine 4 demethylation (Gupta et al., 2010; Tsai et al., 2010; Zhao et al., 2008). Here, Lnc34a binds to the miR-34a promoter via its middle fragment, and recruits PHB2/Dnmt3a and HDAC1 via its flanking sequences to methylate and deacetylate the promoter, silencing miR-34a expression. This process reminds us of the ordered steps of protein-mediated DNA methylation\u2014a DNA binding protein first interacts with the promoter, via which DNA methyltransferases are further recruited (Chu et al., 2015; Serra et al., 2014; Wajapeyee et al., 2013).\n\nLnc34a promotes CCSC self-renewal, and Lnc34a asymmetry leads to cell fate asymmetry in CCSC division. This effect is mediated by miR-34a, which has been shown to target factors of Notch and Wnt signaling pathways, both of which are essential for CCSC self-renewal (Bu et al., 2013; Chen et al., 2015; Vermeulen et al., 2010). In late-stage CRC, Lnc34a expression and miR-34a promoter methylation is upregulated, while miR-34a expression is downregulated. Lnc34a demonstrates that lncRNA can target microRNA for cellular control. Given that lncRNAs occupy the majority of the genome (Mattick and Rinn, 2015), lncRNA/microRNA circuitry can potentially increase the complexity of regulatory networks.\n\np53 is a well-known upstream regulator of miR-34a, and loss of p53 function certainly downregulates miR-34a. However, the discovery of Lnc34a demonstrates an alternative, epigenetic mechanism that cancer cells can utilize to silence miR-34a without having to mutate p53. Although p53 knockout has been reported to reduce asymmetric division in mammary stem cells (Cicalese et al., 2009), p53 is not known to be a major regulator of differentiation and is symmetric during CCSC division. Lnc34a provides normal and cancer cells a way to decouple mir-34a mediated cell fate decisions from p53, which may be present in both undifferentiated and differentiated cells.\n\n## Materials and methods\n\n### CCSC culture and sphere formation analysis\n\nHuman CRC cell lines Colo205, SW480, HT29, SW620, LS174T, DLD1, Caco-2 were purchased from ATCC and cultured in RPMI-1640 medium. No mycoplasma contamination was detected. Human CCSCs were isolated and cultured as described previously (Bu et al., 2013). Briefly, CCSCs were isolated from patient tumors by FACS based on markers CD44, CD133 and ALDH1 and functionally validated by serial sphere formation, tumor initiation, and self-renewal assays. For this study, original frozen stocks for the first passage were used. The CCSCs have not been authenticated by STR profiling. No mycoplasma contamination was detected. CCSCs were cultured as spheres in ultralow-attachment flasks (Corning,\u00a0Tewksgury,\u00a0MA) in DMEM/F12 (Invitrogen,\u00a0Pittsburgh,\u00a0PA), supplemented with nonessential amino acids (Fisher,\u00a0Pittsburgh,\u00a0PA), sodium pyruvate (Fisher), Penicillin-streptomycin (Fisher), N2 supplement (Invitrogen), B27 supplement (Invitrogen), 4\u2009\u03bcg/mL heparin (Sigma, Mendota Heights, MN), 40 ng/mL epidermal growth factor (Invitrogen), and 20 ng/mL basic fibroblast growth factor (Invitrogen) at 37\u00b0C and 5% CO2.\n\nTo measure tumor sphere formation, single CCSCs were plated in 24-well ultra-low attachment plates (Corning) at 1,000 cells per well. Tumor spheres were counted after 2 weeks in culture by an inverted microscope (Olympus).\n\n### Clinical specimens\n\n45 frozen CRC specimens of different clinical stages were acquired from Weill Cornell Medical College (WCMC) Colon Cancer Biobank. The CRC stage was determined according to the TNM staging system. The clinical data for the patients are summarized in Figure 1\u2014source data 1. The studies followed informed consent and approval of the IRB committee at Weill Cornell Medical College.\n\n### Immunofluorescence\n\nPair-cell assay for CCSC division were performed as described previously (Bultje et al., 2009). Briefly, spheres were dissociated and the single cells were plated on an uncoated glass culture slide (Corning) and allowed to divide once. After being fixed and blocked, the cells were incubated with anti-ALDH1 (clone H-4, 1:100, Santa Cruz,\u00a0Dallas,\u00a0TX), anti-CD133 (1:200, Abcam,\u00a0Cambridge,\u00a0MA) and anti-\u03b1-tubulin (1:500, Abcam) antibodies overnight at 4\u00b0C. For the BrdU incorporation assay, sphere cells were cultured in proliferative medium (DMEM with 10% FBS) for 24\u2009hr. Single cells were then plated and allowed to divide once in proliferative medium (1st division). After treatment with BrdU (Sigma) for 3\u2009hr, the cells were fixed in cold 70% ethanol, incubated in 2\u2009M HCl for 1\u2009hr, washed, and switched to 100\u2009mM Na2B4O7 for 2 min. After being blocked in 10% normal goat serum for 1\u2009hr, the cells were then incubated with anti-BrdU (1:200, Sigma) antibody at 4\u00b0C overnight. The cells were then incubated with fluorescence-conjugated secondary antibody or streptavidin (Invitrogen) for 1\u2009hr at room temperature. After counterstained with DAPI (Invitrogen), the slides were observed under a fluorescent microscope (Olympus,\u00a0Jupiter,\u00a0FL).\n\n### RNA FISH\n\nRNA FISH was performed as described previously (Lu and Tsourkas, 2009). In this study, Digoxigenin (DIG)\u2013labeled locked nucleic acid (LNA) probe (Exiqon,\u00a0Woburn,\u00a0MA) against miR-34a or Biotin-labeled LNA probe against Lnc34a (Exiqon) were used for RNA FISH. RNA expression was detected by Rhodamine Red labeled secondary antibody or Alexa Fluor 488 conjugated streptavidin (Invitrogen). Anti-\u03b1-tubulin was used to identify dividing cells and DAPI (Invitrogen) was used for nucleic counterstaining.\n\n### Lnc34a cloning, shRNAs, northern blot and bisulfite sequencing\n\nA 293 bp fragment was amplified using primers: 5`-GGTGGAGGAGATGCCGC-3` and 5`-ACCTGGGTGCATGCTGGGACG-3`. To identify the full length of Lnc34a, 3`RACE and 5`RACE was performed using kit with the primers: 5`- GCAGGACTCCCGCAAAATCTC-3` and 5`- CTCAGTCCGTGCGAAAGTTTG-5` respectively. The full length of Lnc34a was then amplified using the primers: 5`-TTAACCAGTCGGCCTTCCTCGCC-3` and 5`-TGAGATTAACCGACTTTCCCAAG-3`, then cloned into pGEM-T (Promega,\u00a0Durham,\u00a0NC) for sequencing. The full length of Lnc34a was cloned into pMSCV PIG vector (Addgene,\u00a0Cambridge,\u00a0MA) for ectopic Lnc34a expression study. shRNAs against Lnc34a were designed using Invitrogen online tool and cloned in pMSCV PIG vector. shRNAs against PHB2, Dnmt2a and HDAC1 were purchased from Sigma. The knockdown efficiency was validated by RT-qPCR. Northern blot was performed using NorthernMax Kit (Invitrogen) according to the manufacturer\u2019s instructions. The probes were generated using PCR DIG Probe Synthesis Kit (Roche,\u00a0Indianapolis,\u00a0IN) with the primers: 5`- TAGCCGAGCAAAACCCC-3` and 5`- ATGTGGGACACGGATGAGA-3`. Bisulfite sequencing was performed using EZ DNA methylation kit (Zymo,\u00a0Irvine,\u00a0CA). 9 sequencing runs were carried out for each condition.\n\n### Flow cytometry\n\nFlow cytometry were performed as described previously (4). CD133 expression was detected using anti-CD133 (clone C24B9, 1:50, Cell Signaling,\u00a0Beverly,\u00a0MA) and ALDH1 levels were analyzed using the Aldeflour kit. The samples were analyzed using a BD LSR II flow cytometer. The raw FACS data were analyzed with the FlowJo software to gate cells according to their forward (FSC) and side (SSC) scatter profiles.\n\n### Quantitative real-time RT-PCR analysis\n\nTotal RNA was extracted from the cells using the TRIzol Reagent (Invitrogen). cDNA was synthesized using the High Capacity cDNA Archive Kit (Applied Biosystems, Foster city, CA). Quantitative PCR was carried out using the TaqMan MicroRNA Assay (Applied Biosystems) to detect miR-34a levels and the SYBR Green System (Applied Biosystems) to detect other gene expression. The miR-34a primer and U6 primer were purchased from Applied Biosystems. Other primer sequences include: Lnc34a, 5'-GGAGGCTACACAATTGAACAGG-3' and 5`-AGTCCGTGCGAAAGTTTGC-3`; actin, 5`-CGCGAGAAGATGACCCAGAT-3` and 5`-ACAGCCTGGATAGCAACGTACAT-3`;. The expression of each gene was defined from the threshold cycle (Ct), and the relative expression levels were calculated using the 2-\u25b3\u25b3Ct method after normalization to the actin expression level.\n\n### RNA pull-down assay, mass spectrometry, and electrophoretic mobility shift assay (EMSA)\n\nFull length of Lnc34a cDNA and it truncations were cloned into pGEM-3ZF(+). Biotin-labeled RNAs were transcribed from the linearized pGEM-3ZF plasmid\u00a0in vitrousing a biotin labeling mix (Roche) and T7 polymerase (Promega). The biotinylated RNA was heated to 90\u00b0C for 2 min, incubated on ice for 2 min, and then shifted to RT for 20\u00a0min with RNA renature buffer (10\u00a0mM tris-HCL pH7.0, 0.1M KCL, 10\u00a0mM MgCl2 to allow proper secondary structure formation. The cell lysates were freshly prepared using RIPA buffer (Millipore,\u00a0Billerica,\u00a0MA) with proteinase inhibitor (Roche). After precleared using Dynabeads M-270 streptavidin (Invitrogen), the cell lysates were diluted in binding buffer and incubated with the folded RNA for 2\u2009hr at 4\u00b0C. Dynabeads M-270 streptavidin were then added into the mixture and incubated for 1\u2009hr at 4\u00b0C. After washing, the RNA-binding protein complexes were released from the Dynabeads. The retrieved proteins were collected for Mass Spec and Western blotting validation. RNA-EMSA was performed using a LightShift Chemiluminescent RNA EMSA Kit (Thermo Scientific,\u00a0Pittsbrugh,\u00a0PA) according to the manufacturer\u2019s instructions.\n\n### RNA immunoprecipitation (RIP) and chromatin immunoprecipitation (ChIP) assays\n\nRIP assays were performed using a RIP RNA-binding protein immunoprecipitation kit (Millipore) according to the manufacturer\u2019s instructions. Antibodies against PHB2 (Bethl,\u00a0Montgomery,\u00a0TX), HDAC1 (Bethl) and Dnmt3a (Abcam) were added into the cell lysates. Lnc34a was retrieved from the complexes and evaluated by RT-qPCR. ChIP was performed using a ChIP assay kit (Millipore) as described previously (4). Antibodies against acetylated histones H3 and H4 (Millipore) were used to evaluate histone modifications associated with the miR-34a promoter. Enrichment of miR-34a promoter fragments was quantified by RT-qPCR with the primers: 5'-CACCTGGTCCTCTTTCCTTT-3' and 5'- TCCTCCTTCCTGCTCGT -3'.\n\n### Western blot\n\nCells were lysed in RIPA lysis buffer supplemented with cocktail protease inhibitor (Roche). Proteins were separated by SDS-PAGE and transferred onto a Hybond membrane (Amersham). The membranes were incubated with primary antibodies either anti-PHB2 (1:1000, Bethl), anti-Dnmt3a (1:500, Abcam), anti-HDAC1(1:1000, Bethl) or anti-Actin (1:1000, Abcam) in 5% milk/TBST buffer (25\u2009mM Tris pH 7.4, 150\u2009mM NaCl, 2.5\u2009mM KCl, 0.1% Triton-X100) overnight, followed by incubation with horseradish peroxidase (HRP)-conjugated anti-mouse or anti-rabbit IgG (Santa Cruz) for 1\u2009hr. The target proteins were detected on membrane by enhanced chemiluminescence (Pierce,\u00a0).\n\n### Statistical analysis\n\nData were expressed as mean \u00b1 standard deviation of three biological repeats. Student t-tests were used for comparisons, with p<0.05 considered significant.\n\n### Acknowledgements\n\nThis work was supported by NIGMS R01GM95990, R01GM114254, NSF 1350659, R01 Ca098626, NSF 1137269, DARPA 19\u20131091726, and NYSTEM C029543.\n",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "ed364aa4-aeb7-4396-bf9d-e861d32e491d",
+      "submission_id": "b15f682f-61ae-424d-86c3-bdf927308efe",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael R Green, Howard Hughes Medical Institute, University of Massachusetts Medical School , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.14620.018](https://doi.org/10.7554/eLife.14620.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"A Long Non-Coding RNA Targets MicroRNA miR-34a to Regulate Colon Cancer Stem Cell Asymmetric Division\" for consideration by eLife. Your article has been favorably evaluated by Kevin Struhl (Senior editor) and three reviewers, one of whom, Michael Green, is a member of our Board of Reviewing Editors, and another is Narendra Wajapeyee.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn this study, Wang et al. report that a novel lncRNA, lnc34a, mediates epigenetic silencing of the microRNA, mir-34a, in colorectal cancer stem cells (CCSCs). Epigenetic silencing is due to the ability of lnc34a to recruit PHB2, HDAC1 and DNMT3a. The authors show that Lnc34a levels affect CCSC self-renewal and colorectal cancer (CRC) growth in xenograft models. In addition, Lnc34a is upregulated in late-stage CRCs, contributing to epigenetic miR-34a silencing and CRC proliferation. Finally, the authors report that Lnc34a is initiates asymmetric cell division of CCSCs and is asymmetrically distributed.\n\nGeneral Assessment:\n\nIn general, this is a very interesting study whose conclusions are supported by the presented results. However, as described below, there are several additional experiments and analyses that could be performed to strengthen the main conclusions.\n\nEssential revisions:\n\nThe authors are encouraged to directly address as many of the following points as possible.\n\n1) Figure 1. The increased levels of lnc34a in CCSCs appear to be greater when by qRT-PCR than by northern blotting. If this is correct, the authors should comment on this difference. In any case, the authors should provide quantification of the northern blots.\n\nIn Figure 1\u2014figure supplement 1C, can the authors provide northern blots for lnc34a in the other 8 CRC cell lines?\n\n2) RNA FISH experiments. For all RNA FISH experiments, some type of quantification similar to that in Figure 1D, E needs to be provided. Showing a representative example is not sufficient.\n\n3) In bisulfite sequencing experiments it is typical to show 6-10 independent sequences, whereas in this study only 3 sequences are provided.\n\n4) The authors can substantially strengthen their main conclusions by performing a rescue experiment to confirm that mir34a is the critical target of lnc34a. For example, ectopically express lnc34a in an appropriate cell type and show that the phenotype can be reversed by ectopically expressing mir34a. For example, this could be done using the cell type and readout in Figure 3J. How do the authors envision that lnc34a is targeted to mir34a? Do they think this is by base-pairing or RNA loop formation? Any experimental results on this question would provide deeper understanding of how lncRNAs mediate epigenetic silencing. An initial experiment might be to ectopically express lnc34a truncation derivatives (see Figure 5F) to identify the region(s) of lnc34a required for silencing.\n\nOptional actions and minor points:\n\n1) Do the authors think that mir34a is the sole target that is epigenetically silenced by lnc34a or might other genes be epigenetically silenced by lnc34a. The authors could address this question by ectopically expressing lnc34a in an appropriate cell type followed by RNA-Seq analysis.\n\n2) What do the authors think is the mechanistic basis for the asymmetric distribution of lnc34a following cell division (see Figure 2K).\n\n3) Can the authors comment on which mRNA miR-34a is antagonizing in the CCSC? For example, are there mRNAs that decreased when mir-34a is present?\n\n4) It was surprising that the authors did not discuss or present evidence for WNT signaling activity and its role in potentially mediating the effects of Lnc34a. A very important previous study has shown that WNT activity defines colon cancer cell stems and shows that in part it was a paracrine effect (Vermeulen et al., Nature Cell Biology, 12, 468-476, 2010). It will be important to put the current study in the context of previous observations and it will be important to measure the WNT signaling markers after altering the expression of Lnc34a and miR-34a.\n\n5) Does miR-34a induction by p53 modulate the expression level of Lnc34a (e.g., repression of Lnc34a by promoter interference)?\n\n6) Ectopic expression of Lnc34a is used in several key experiments. The authors need to confirm nuclear localization of ectopic Lnc34a.\n\n7) Can the authors please comment on whether or not there are previous examples of lncRNAs that mediate epigenetic silencing.\n\n8) The authors provided solid evidence for a model of ordered recruitment of epigenetic regulators in which the final step is recruitment of a DNA methyltransferase. Work from Michael Green's laboratory has also shown that epigenetic silencing occurs by an ordered pathway of recruitment on the promoter and the final step is recruitment of a DNA methyltransferase (see for example Wajapeyee, G&D, 2013; Serra et al., eLife, 2014; Fang et al., Mol Cell, 2014). It would be useful to mention the similar findings in very different experimental systems in the Discussion.\n\n9) It is also notable that the authors find that DNMT3a is the DNA methyltransferase involved in mir34a silencing. It has been generally believed that only DNMT1 can carry out maintenance methylation, which is required for the maintenance of epigenetic silencing. However, here it appears that DNMT3a is functioning as a maintenance DNA methyltransferase. The authors may want to strengthen this conclusion by showing that DNMT1 knockdown doesn't reactivate mir34a and/or the DNMT1 is not recruited by lnc34a. If true, the authors should point this out in the Discussion section. Again, similar findings on the role of maintenance DNA methyltransferases other than DNMT1 have been reported by the Green lab (see, for example, Fang et al., Mol Cell, 2014).\n\n10) In the subsection \u201cQuantitative real-time RT-PCR analysis\u201d: Ln34a should be Lnc34a.\n\n11) In the subsection \u201cWestern blot\u201d: anti-Action should be anti-Actin.\n\n12) Can Lnc34a be detected in publicly available RNA-Seq dataset in human cell lines?\n",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b406a4f3-52d2-4697-8e9a-33466a0b5536",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C1",
+      "claim": "Lnc34a is a 693 base pair transcript composed of two exons, spanning nearly 15.3 kilobases.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapid amplification of cDNA ends (RACE) further identified a full-length, 693 bp transcript (Figure 1\u2014figure supplement 1A,B). Northern blot confirmed the existence and size of the transcript in seven CRC cell lines and two colon cancer stem cell (CCSC) lines (Figure 1A,B, Figure 1\u2014figure supplement 1D). The CCSCs were isolated from two early-stage CRC specimen, and were functionally validated by serial sphere formation, tumor initiation, and marker staining (Bu et al., 2013). The original frozen stocks from the first passage were used in the study. The transcript is composed of two exons, spanning nearly 15.3 kilobases (kb), and does not contain a valid Kozak sequence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The transcript length and structure were determined by RACE experiments and confirmed by Northern blot analysis shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "d646583e-653b-495b-be63-eaaf5e1ad4bd",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C2",
+      "claim": "Lnc34a has no protein coding potential according to the Coding Potential Calculator (CPC) and Coding Potential Assessment Tool (CPAT).",
+      "claim_type": "EXPLICIT",
+      "source": "The full-length transcript has no protein coding potential according to the Coding Potential Calculator (CPC) and Coding Potential Assessment Tool (CPAT) (Kong et al., 2007; Wang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Computational analysis using established tools (CPC and CPAT) was performed, with citations to the methods.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "48e4b964-8b05-445b-b278-311b1ea59bcb",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C3",
+      "claim": "Lnc34a levels are significantly higher in colon cancer stem cells (CCSCs) compared to well-established CRC cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the Northern blot measurement, Lnc34a levels were significantly higher in the CCSC sphere cells (Figure 1C, Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RT-qPCR and Northern blot measurements shown in Figure 1C and Figure 1\u2014figure supplement 1C demonstrate higher Lnc34a levels in CCSCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "d6cd7f83-269b-4b60-b344-01ce8e25ab73",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C4",
+      "claim": "Lnc34a is enriched in the nuclear fraction of CCSC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular fractionation assays show enrichment of Lnc34a in the nuclear fraction (Figure 1D,E), and RNA fluorescence in situ hybridization (RNA FISH) indicates that Lnc34a is mainly in the nucleus (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Cellular fractionation assays and RNA FISH experiments demonstrate nuclear localization, as shown in Figures 1D, E, and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "0f1f763a-281a-487a-b674-5db426381ac3",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C5",
+      "claim": "ALDH1+ cells express high levels of CD133, another CCSC marker.",
+      "claim_type": "EXPLICIT",
+      "source": "Flow analysis confirmed that ALDH1+ cells also express high levels of CD133, another CCSC marker (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry analysis shown in Figure 2\u2014figure supplement 1A demonstrates co-expression of ALDH1 and CD133.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "7016ba95-3440-410d-b5f7-18fa6fdcf18c",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C6",
+      "claim": "ALDH1+ cells have much higher Lnc34a expression levels than ALDH1- cells in both CCSC1 and CCSC2 sphere cultures.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-qPCR showed that, in both sphere cultures (CCSC1 and CCSC2), ALDH1+ cells have much higher Lnc34a expression levels than the ALDH1- cells (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RT-qPCR measurements shown in Figure 2A and 2B demonstrate differential Lnc34a expression between ALDH1+ and ALDH1- cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "dcdcc92c-1564-4260-892e-ba482d8d99a3",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C7",
+      "claim": "Lnc34a is asymmetrically distributed and enriched in the ALDH1+ (CCSC) daughter cells during cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-staining revealed that Lnc34a was asymmetrically distributed and enriched in the ALDH1+ (CCSC) daughter cells, which were also CD133+ (Figure 2C,D, Figure 2\u2014figure supplement 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Immunofluorescence co-staining experiments shown in Figure 2C, D and Figure 2\u2014figure supplement 1B, C demonstrate asymmetric Lnc34a distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "f6ab3d6a-0113-433d-8286-6e6034a4d62c",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C8",
+      "claim": "Lnc34a asymmetry in dividing cell pairs was confirmed in vivo in xenograft tumors derived from subcutaneously injected CCSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Lnc34a asymmetry in dividing cell pairs was confirmed in vivo by RNA-FISH and tubulin staining of xenograft tumors derived from subcutaneously injected CCSCs (Figure 2E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RNA-FISH and tubulin staining in xenograft tumors shown in Figure 2E and F demonstrate Lnc34a asymmetry in vivo.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "65ee99a1-41b0-4827-93c6-c1adc1790ccb",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C9",
+      "claim": "Lnc34a asymmetry in dividing cell pairs is more strongly associated with early-stage CRC, while late-stage CRC mostly has symmetric Lnc34a levels in dividing pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Lnc34a asymmetry in dividing cell pairs is more strongly associated with early-stage CRC, while late-stage CRC mostly has symmetric Lnc34a levels in dividing pairs (Figure 2G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of 23 early-stage and 22 late-stage human CRC specimens shown in Figure 2G and H demonstrates differential Lnc34a asymmetry patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "4e582170-ec65-43e3-9044-66f105c41518",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C10",
+      "claim": "Lnc34a knockdown decreased asymmetric division while increasing symmetric, ALDH1-/ALDH1- division.",
+      "claim_type": "EXPLICIT",
+      "source": "Lnc34a knockdown decreased asymmetric division while increasing symmetric, ALDH1-/ALDH1- division (Figure 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Pair-cell assays with Lnc34a knockdown shown in Figure 2I demonstrate changes in division symmetry patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "a70dc5f0-1df2-411f-842e-eebfdec864c2",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C11",
+      "claim": "Ectopic Lnc34a expression decreased asymmetric division but increased symmetric, ALDH1+/ALDH1+ division.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic Lnc34a expression also decreased asymmetric division, but increased symmetric, ALDH1+/ALDH1+ division instead (Figure 2J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Pair-cell assays with ectopic Lnc34a expression shown in Figure 2J demonstrate changes in division symmetry patterns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "dfd04bc7-c63a-422e-bfe5-d02915302208",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C12",
+      "claim": "The effect of ectopic Lnc34a on division symmetry was rescued by ectopic miR-34a expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenotype was rescued by ectopic miR-34a expression, suggesting that Lnc34a regulates symmetry through miR-34a (Figure 2J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Rescue experiments with ectopic miR-34a shown in Figure 2J demonstrate that Lnc34a effects are mediated through miR-34a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "c242f964-0d04-4574-b458-13e388de518f",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C13",
+      "claim": "The Lnc34a+ daughter cell has higher proliferative capacity and starts incorporating BrdU immediately when cultured in proliferative medium.",
+      "claim_type": "EXPLICIT",
+      "source": "Pair-cell BrdU incorporation assay showed that, when cultured in proliferative medium (DMEM with 10% FBS), the Lnc34a+ daughter cell starts incorporating BrdU and enters into the next division immediately, whereas the Lnc34a- daughter cells does not incorporate BrdU (Figure 2K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "BrdU incorporation assays shown in Figure 2K demonstrate differential proliferative capacity between Lnc34a+ and Lnc34a- daughter cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "2e6086f6-6bcd-44da-a6c3-8a24145c48db",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C14",
+      "claim": "Lnc34a knockdown strongly suppressed sphere formation capability, which was completely lost after 3 generations of passage.",
+      "claim_type": "EXPLICIT",
+      "source": "Lnc34a knockdown strongly suppressed sphere formation capability, which was completely lost after 3 generations of passage (Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Serial sphere propagation assays shown in Figure 3A and B demonstrate loss of sphere formation with Lnc34a knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "a7f0d258-d214-4128-a9f4-3edc34fc8fb5",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C15",
+      "claim": "Ectopic Lnc34a expression increased sphere numbers and sizes significantly.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ectopic Lnc34a expression increased sphere numbers and sizes significantly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Serial sphere propagation assays demonstrate increased sphere formation with ectopic Lnc34a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "24dba1ea-f514-47eb-9b71-260ef2acb0ae",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C16",
+      "claim": "Ectopic miR-34a abrogated the effect of Lnc34a on sphere formation regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic miR-34a abrogated the effect of Lnc34a on sphere formation regulation, suggesting that Lnc34a promotes CCSC self-renewal by targeting miR-34a (Figure 3A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Sphere formation assays with ectopic miR-34a shown in Figure 3A and C demonstrate rescue of Lnc34a effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "3a37db1d-8647-49cb-bcb0-8fa668f5f3af",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C17",
+      "claim": "Lnc34a knockdown reduced tumorigenicity in mouse xenograft models.",
+      "claim_type": "EXPLICIT",
+      "source": "All five mice in the control group (injected with sphere cells containing the control vector) developed tumors. However, only three mice injected with sphere cells expressing shLnc34a1 and two mice injected with sphere cells expressing shLnc34a2 formed tumors, which are smaller than those of the control group (Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Xenograft tumor formation data shown in Figure 3D and E demonstrate reduced tumorigenicity with Lnc34a knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "26702f04-5f62-4c4b-b303-2a94f4550329",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C18",
+      "claim": "Ectopic Lnc34a expression enhanced tumorigenicity in mouse xenograft models.",
+      "claim_type": "EXPLICIT",
+      "source": "All 5 mice injected with sphere cells ectopically expressing Lnc34a developed tumors, which are notably bigger than those in the control group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Xenograft tumor formation data demonstrate increased tumor size with ectopic Lnc34a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "301aa97b-1072-47d1-af56-52e9c3a887a4",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C19",
+      "claim": "Ectopic miR-34a expression abrogates the effect of ectopic Lnc34a on tumor growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Ectopic miR-34a expression abrogates the effect of ectopic Lnc34a on tumor growth, resulting in similar tumor sizes as the control group (Figure 3F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Xenograft tumor data shown in Figure 3F and G demonstrate rescue of Lnc34a effects by miR-34a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "2dd1fd8c-66ba-4716-8807-6e220a9e05da",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C20",
+      "claim": "Lnc34a knockdown decreased the ALDH1+ CCSC population in xenograft tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we performed FACS on disassociated xenograft tumor cells. Lnc34a knockdown decreased the ALDH1+ CCSC population in the xenograft tumors (Figure 3H), while ectopic Lnc34a enriched the ALDH1+ CCSC population in the tumors (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "FACS analysis of xenograft tumor cells shown in Figure 3H demonstrates decreased ALDH1+ population with Lnc34a knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "182cb009-e513-4dc7-9b50-0c2ddef3d70f",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C21",
+      "claim": "Ectopic Lnc34a enriched the ALDH1+ CCSC population in xenograft tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we performed FACS on disassociated xenograft tumor cells. Lnc34a knockdown decreased the ALDH1+ CCSC population in the xenograft tumors (Figure 3H), while ectopic Lnc34a enriched the ALDH1+ CCSC population in the tumors (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "FACS analysis of xenograft tumor cells shown in Figure 3I demonstrates increased ALDH1+ population with ectopic Lnc34a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "6b173cc9-bb84-4698-876a-893435e7643c",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C22",
+      "claim": "miR-34a is downregulated in ALDH1+ CCSCs and upregulated in ALDH1- non-CCSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Opposite to Lnc34a, miR-34a is downregulated in ALDH1+ CCSCs and upregulated in ALDH1- non-CCSCs (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RT-qPCR measurements shown in Figure 4A and B demonstrate differential miR-34a expression between ALDH1+ and ALDH1- cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "04bcaf09-91a0-4592-b847-5d8275284102",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C23",
+      "claim": "Knockdown of Lnc34a significantly increased miR-34a expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of Lnc34a significantly increased miR-34a expression levels, while ectopic Lnc34a expression decreased miR-34a levels (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RT-qPCR measurements shown in Figure 4C and D demonstrate inverse relationship between Lnc34a and miR-34a levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "65ca501d-b84c-4cda-98a6-7cc0ea4e90e8",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C24",
+      "claim": "Ectopic Lnc34a expression decreased miR-34a levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of Lnc34a significantly increased miR-34a expression levels, while ectopic Lnc34a expression decreased miR-34a levels (Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RT-qPCR measurements shown in Figure 4C and D demonstrate inverse relationship between Lnc34a and miR-34a levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "48e99f39-6d35-4466-b0db-e39b67b3987f",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C25",
+      "claim": "Lnc34a and miR-34a are mutually exclusive in the same daughter compartment and are present in opposite daughter compartments in more than 70% of CCSC1 and around 80% of CCSC2 dividing pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA FISH showed that Lnc34a and miR-34a are mutually exclusive in the same daughter compartment and are present in opposite daughter compartments in more than 70% of CCSC1 and around 80% of CCSC2 dividing pairs (Figure 4E,F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RNA FISH experiments shown in Figure 4E and F demonstrate asymmetric and mutually exclusive distribution of Lnc34a and miR-34a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "31497c8e-cb72-415f-88f5-c6ac2a668120",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C26",
+      "claim": "p53 distribution is symmetric during CCSC division.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, we only observed symmetric distribution of p53, the other miR-34a upstream regulator (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Immunofluorescence imaging shown in Figure 4\u2014figure supplement 1 demonstrates symmetric p53 distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "46d113ec-5153-4c1e-a411-e3bcd21823cb",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C27",
+      "claim": "93.3% of tested CpG islands were methylated in ALDH1+ CCSCs, while methylation rate was as low as 2.2% in ALDH1- non-CCSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Bisulfite sequencing was then performed to evaluate miR-34a promoter methylation in ALDH1+ CCSCs and ALDH1- non-CCSCs isolated from spheres. 93.3% of tested CpG islands were methylated in CCSCs; in contrast, methylation rate was as low as 2.2% in non-CCSCs (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Bisulfite sequencing analysis shown in Figure 4G demonstrates differential methylation patterns between CCSCs and non-CCSCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "31b6aa96-416a-45ac-aaa3-c765516babfe",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C28",
+      "claim": "Knockdown of Lnc34a diminished overall miR-34a promoter methylation in sphere cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of Lnc34a diminished overall miR-34a promoter methylation in sphere cells (Figure 4H), whereas ectopic Lnc34a expression significantly enhanced miR-34a promoter methylation, compared with the control vector (Figure 4I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Bisulfite sequencing analysis shown in Figure 4H demonstrates decreased methylation with Lnc34a knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "52b9f4f7-daa6-401b-ad00-2ef174b73be9",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C29",
+      "claim": "Ectopic Lnc34a expression significantly enhanced miR-34a promoter methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of Lnc34a diminished overall miR-34a promoter methylation in sphere cells (Figure 4H), whereas ectopic Lnc34a expression significantly enhanced miR-34a promoter methylation, compared with the control vector (Figure 4I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Bisulfite sequencing analysis shown in Figure 4I demonstrates increased methylation with ectopic Lnc34a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "52ab1947-1075-402f-8fbb-2eb7ad2db429",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C30",
+      "claim": "Lnc34a knockdown increases acetylated histones H3 and H4 associated with the miR-34a promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides methylation, ChIP-qPCR showed that Lnc34a knockdown increases acetylated histones H3 and H4 associated with the miR-34a promoter (Figure 4J), whereas ectopic Lnc34a expression decreased acetylated histones H3 and H4 (Figure 4K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP-qPCR analysis shown in Figure 4J demonstrates increased histone acetylation with Lnc34a knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "57d8fdab-d91c-4e17-943e-0205b9114494",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C31",
+      "claim": "Ectopic Lnc34a expression decreased acetylated histones H3 and H4 associated with the miR-34a promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides methylation, ChIP-qPCR showed that Lnc34a knockdown increases acetylated histones H3 and H4 associated with the miR-34a promoter (Figure 4J), whereas ectopic Lnc34a expression decreased acetylated histones H3 and H4 (Figure 4K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "ChIP-qPCR analysis shown in Figure 4K demonstrates decreased histone acetylation with ectopic Lnc34a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "f61fe83f-3968-485e-aeaa-9eb34c0da512",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C32",
+      "claim": "Ectopic Lnc34a expression suppressed miR-34a expression in CRC cell lines Caco-2 and HT29.",
+      "claim_type": "EXPLICIT",
+      "source": "Lnc34a also silences miR-34a in common CRC cell lines. Ectopic Lnc34a expression suppressed miR-34a expression, and promoted methylation and deacetylation of the miR-34a promoter in CRC cell lines Caco-2 and HT29 (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RT-qPCR measurements shown in Figure 4\u2014figure supplement 2 demonstrate miR-34a suppression in CRC cell lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "eed951f9-550e-4520-b65b-c4cc8ae67b2b",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C33",
+      "claim": "Ectopic Lnc34a expression promoted methylation and deacetylation of the miR-34a promoter in CRC cell lines Caco-2 and HT29.",
+      "claim_type": "EXPLICIT",
+      "source": "Lnc34a also silences miR-34a in common CRC cell lines. Ectopic Lnc34a expression suppressed miR-34a expression, and promoted methylation and deacetylation of the miR-34a promoter in CRC cell lines Caco-2 and HT29 (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Bisulfite sequencing and ChIP-qPCR shown in Figure 4\u2014figure supplement 2 demonstrate increased methylation and decreased acetylation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "10165dc2-558f-4e62-9149-948379646823",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C34",
+      "claim": "Lnc34a expression is lower in early-stage CRC and increases in late-stage CRC.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-qPCR performed in 23 early-stage (stage I/II) and 22 late-stage (stage III/IV) CRC specimens showed that Lnc34a expression is correlated with CRC progression. Overall, Lnc34a expression is lower in early-stage CRC and increases in late-stage CRC (Figure 4L, Figure 4\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RT-qPCR analysis of 45 CRC specimens shown in Figure 4L demonstrates correlation between Lnc34a expression and CRC stage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "c758fe49-bc54-4ded-a5d4-a7bcdbbd4063",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C35",
+      "claim": "miR-34a expression is higher in early-stage CRC and decreases in late-stage CRC.",
+      "claim_type": "EXPLICIT",
+      "source": "miR-34a expression follows a reverse trend (Figure 4M, Figure 4\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RT-qPCR analysis shown in Figure 4M demonstrates inverse correlation between miR-34a expression and CRC stage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "2dcb7e7d-9e7d-4c84-8208-1de934a27319",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C36",
+      "claim": "The miR-34a promoter is more methylated in late-stage CRC than in early-stage CRC.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with Lnc34a methylation of the miR-34a promoter, bisulfite sequencing revealed that the miR-34a promoter is more methylated in late-stage CRC than in early-stage CRC (Figure 4N, Figure 4\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Bisulfite sequencing analysis shown in Figure 4N demonstrates increased promoter methylation in late-stage CRC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "10a0b367-164a-48f0-b587-d0bfdc8e1cfa",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C37",
+      "claim": "Lnc34a interacts with DNA methyltransferase Dnmt3a, Histone Deacetylase 1 (HDAC1), and Prohibitin 2 (PHB2).",
+      "claim_type": "EXPLICIT",
+      "source": "To understand the mechanisms via which Lnc34a regulates miR-34a expression, we performed an RNA pull-down assay with biotin-labeled Lnc34a, followed by mass spectrometry (MS), to search for potential Lnc34a-associated proteins. The DNA methyltransferase Dnmt3a, Histone Deacetylase 1 (HDAC1), and Prohibitin 2 (PHB2) were identified to be associated with Lnc34a (Figure 5A and Figure 5\u2014source data 1). RNA immunoprecipitation (RIP) using specific antibodies against Dnmt3a, HDAC1 and PHB2 further confirmed the interactions (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RNA pull-down followed by mass spectrometry and RIP experiments shown in Figure 5A and B demonstrate protein interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "706a6c06-acd2-42bf-a06a-099cf187d973",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C38",
+      "claim": "Knockdown of PHB2 abolished the interaction between Lnc34a and Dnmt3a, but had no effect on the interaction between Lnc34a and HDAC1.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of PHB2 abolished the interaction between Lnc34a and Dnmt3a, but had no effect on the interaction between Lnc34a and HDAC1 (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RIP experiments with PHB2 knockdown shown in Figure 5C demonstrate that PHB2 mediates Lnc34a-Dnmt3a interaction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "f01d944f-b3a1-4d9f-a723-422ce93c921b",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C39",
+      "claim": "Knockdown of Dnmt3a did not affect the interaction of Lnc34a with either PHB2 or HDAC1.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of Dnmt3a did not affect the interaction of Lnc34a with either PHB2 or HDAC1 (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RIP experiments with Dnmt3a knockdown shown in Figure 5D demonstrate that Dnmt3a is not required for Lnc34a interactions with PHB2 or HDAC1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "e85c05ca-85d6-450a-aade-9de0fe73d8b5",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C40",
+      "claim": "Knockdown of HDAC1 did not interrupt Lnc34a and Dnmt3a interaction, and only had limited effect on Lnc34a and PHB2 interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown of HDAC1 did not interrupt Lnc34a and Dnmt3a interaction, and only had limited effect on Lnc34a and PHB2 interaction (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RIP experiments with HDAC1 knockdown shown in Figure 5E demonstrate that HDAC1 is not required for Lnc34a interactions with Dnmt3a or PHB2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "89085c4b-eb63-4282-bcb3-f964bfc173d1",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C41",
+      "claim": "Lnc34a recruits Dnmt3a through PHB2.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest that Lnc34a interacts with PHB2 and HDAC1, and recruits Dnmt3a through PHB2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The pattern of interactions observed in knockdown experiments (Figures 5C-E) supports this mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "85816c75-3302-4fe2-b3d6-4aed3d1c6ab9",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C42",
+      "claim": "The 1\u2013267 bp fragment of Lnc34a is sufficient to bind HDAC1.",
+      "claim_type": "EXPLICIT",
+      "source": "We then serially truncated Lnc34a and performed RNA pull-down assays to map HDAC1 and PHB2 binding to Lnc34a. The 1\u2013267 bp fragment is sufficient to bind HDAC1, and the 560\u2013693 bp fragment is sufficient to bind PHB2 (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RNA pull-down assays with truncated Lnc34a fragments shown in Figure 5F demonstrate domain-specific binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "9dfc81ba-1efb-4f89-9fdd-a89236b51b5e",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C43",
+      "claim": "The 560\u2013693 bp fragment of Lnc34a is sufficient to bind PHB2.",
+      "claim_type": "EXPLICIT",
+      "source": "We then serially truncated Lnc34a and performed RNA pull-down assays to map HDAC1 and PHB2 binding to Lnc34a. The 1\u2013267 bp fragment is sufficient to bind HDAC1, and the 560\u2013693 bp fragment is sufficient to bind PHB2 (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RNA pull-down assays with truncated Lnc34a fragments shown in Figure 5F demonstrate domain-specific binding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "ee22b50b-f163-4875-9070-4bd3fc8ed0db",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C44",
+      "claim": "The 267\u2013560 bp fragment of Lnc34a directly binds to the miR-34a promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the 267\u2013560 bp fragment does not interact with either HDAC1 or PHB2, the in vitro interaction assay shows that it directly binds to the miR-34a promoter (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "In vitro interaction assay shown in Figure 5I demonstrates direct binding of the 267\u2013560 bp fragment to the miR-34a promoter.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "f323bcfd-1ca8-489f-a46e-c78f5c8f70bf",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C45",
+      "claim": "All three fragments of Lnc34a are needed for full suppression of miR-34a expression.",
+      "claim_type": "EXPLICIT",
+      "source": "All three fragments are needed for full suppression of miR-34a expression (Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RT-qPCR measurements shown in Figure 5H demonstrate that full-length Lnc34a is required for complete miR-34a suppression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "30f8b3d7-22cd-404e-b5a6-5fff788b2058",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C46",
+      "claim": "Knockdown of PHB2 upregulated miR-34a expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We then knocked down PHB2, Dnmt3a and HDAC1 respectively, followed by RT-qPCR measurements of miR-34a expression. Knockdown of PHB2, Dnmt3a or HDAC1 upregulated miR-34a expression (Figure 5I\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RT-qPCR measurements shown in Figure 5M demonstrate increased miR-34a expression with PHB2 knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "629e4aef-74dc-4a70-90fb-baf883ff16dc",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C47",
+      "claim": "Knockdown of Dnmt3a upregulated miR-34a expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We then knocked down PHB2, Dnmt3a and HDAC1 respectively, followed by RT-qPCR measurements of miR-34a expression. Knockdown of PHB2, Dnmt3a or HDAC1 upregulated miR-34a expression (Figure 5I\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RT-qPCR measurements shown in Figure 5K demonstrate increased miR-34a expression with Dnmt3a knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "6169b98b-c014-4c79-9775-663ee1e32e28",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C48",
+      "claim": "Knockdown of HDAC1 upregulated miR-34a expression.",
+      "claim_type": "EXPLICIT",
+      "source": "We then knocked down PHB2, Dnmt3a and HDAC1 respectively, followed by RT-qPCR measurements of miR-34a expression. Knockdown of PHB2, Dnmt3a or HDAC1 upregulated miR-34a expression (Figure 5I\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RT-qPCR measurements shown in Figure 5L demonstrate increased miR-34a expression with HDAC1 knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "d07105ed-21e9-4fa9-b107-f728d80b3167",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C49",
+      "claim": "Inhibition of HDAC activity by SAHA increased miR-34a expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of HDAC activity by SAHA and TSA also increased miR-34a expression (Figure 5L,M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RT-qPCR measurements shown in Figure 5N demonstrate increased miR-34a expression with SAHA treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "7c67a469-f882-4b1c-89ae-49ff40dec7ae",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C50",
+      "claim": "Inhibition of HDAC activity by TSA increased miR-34a expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of HDAC activity by SAHA and TSA also increased miR-34a expression (Figure 5L,M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "RT-qPCR measurements shown in Figure 5O demonstrate increased miR-34a expression with TSA treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "f6b35f1c-73c5-47c6-affe-acc1daf93a94",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C51",
+      "claim": "Lnc34a binds to the miR-34a promoter via its middle fragment (267\u2013560 bp), and recruits HDAC1 and Dnmt3a/PHB2 via its flanking sequences (1\u2013267 bp and 560\u2013690 bp) to methylate and deacetylate the promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, Lnc34a binds to the miR-34a promoter via the 267\u2013560 bp sequence, and recruits HDAC1 and Dnmt3a/PHB2 via the two flanking (1\u2013267 bp and 560\u2013690) sequences (Figure 5J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The mapping experiments shown in Figures 5F, H, and I demonstrate the functional domains of Lnc34a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "ae20f079-e5ff-4f66-8175-5fda604f0d91",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C52",
+      "claim": "miR-34a is a well-known tumor suppressor in various types of cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "A downstream target of p53, the microRNA miR-34a is a well-known tumor suppressor in various types of cancers (Chang et al., 2007; He et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies (Chang et al., 2007; He et al., 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "caf7a12c-fbce-42df-b4dc-10fea91cd4c5",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C53",
+      "claim": "miR-34a has been shown to limit self-renewal of cancer stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Among its many functions, miR-34a has been shown to limit self-renewal of cancer stem cells (Bu et al., 2013; Liu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies (Bu et al., 2013; Liu et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "cc1930ac-3d08-4701-bbce-aeead5062b38",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C54",
+      "claim": "miR-34a mimics such as MRX34 are among the first microRNA mimics to reach clinical trial for cancer therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "miR-34a mimics such as MRX34 are among the first microRNA mimics to reach clinical trial for cancer therapy (Bader, 2012; Bouchie, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous reports (Bader, 2012; Bouchie, 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "3ccb2320-14f5-4643-bb3d-5a85e71d91af",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C55",
+      "claim": "miR-34a expression tends to be silenced due to aberrant CpG methylation of its promoter in many types of cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of p53 function can lead to downregulation of miR-34a; however, miR-34a expression also tends to be silenced due to aberrant CpG methylation of its promoter in many types of cancer, including breast, prostate, lung, colon, kidney, bladder, pancreatic, and ovarian cancer (Corney et al., 2010; Kong et al., 2012; Lodygin et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies (Corney et al., 2010; Kong et al., 2012; Lodygin et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "457fb126-cb1c-4413-be76-98445f360abe",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C56",
+      "claim": "Methylation of the miR-34a promoter is positively correlated with progression of colorectal cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Methylation of the miR-34a promoter is positively correlated with and miR-34a expression is inversely correlated with progression of colorectal cancer (CRC) (Siemens et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study (Siemens et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "d52acafd-0c77-4dfa-af68-369dbc45e7c2",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C57",
+      "claim": "miR-34a expression is inversely correlated with progression of colorectal cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Methylation of the miR-34a promoter is positively correlated with and miR-34a expression is inversely correlated with progression of colorectal cancer (CRC) (Siemens et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study (Siemens et al., 2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "c3a36322-752c-4890-838d-46cc99bdd352",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C58",
+      "claim": "Normal stem cells often divide asymmetrically to produce one daughter cell like itself for self-renewal and another daughter cell unlike itself to go down a path of differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Normal stem cells often divide asymmetrically to produce one daughter cell like itself for self-renewal and another daughter cell unlike itself to go down a path of differentiation (Neumuller and Knoblich, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study (Neumuller and Knoblich, 2009).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "71eb1b16-a7b2-4019-b0de-6d418247066b",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C59",
+      "claim": "Cancer cells, including colorectal, glioma, lung and breast cancer cells, could divide asymmetrically, generating progenies with different proliferation capabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have reported that cancer cells, including colorectal, glioma, lung and breast cancer cells, could also divide asymmetrically, generating progenies with different proliferation capabilities (Bu et al., 2013; Dey-Guha et al., 2011; Lathia et al., 2011; O'Brien et al., 2012; Pece et al., 2010; Pine et al., 2010; Sugiarto et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "7407ca8d-4c62-4785-91cb-3798170cf2df",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C60",
+      "claim": "Disruption to asymmetric division in favor of symmetric self-renewal alters the balance between self-renewal and differentiation, which has been linked to neoplastic transformation and tumor growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption to asymmetric division in favor of symmetric self-renewal alters the balance between self-renewal and differentiation, which has been linked to neoplastic transformation and tumor growth (Cicalese et al., 2009; Sugiarto et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies (Cicalese et al., 2009; Sugiarto et al., 2011).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "b1b547f9-9cdf-4b57-857f-8e767edfba77",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C61",
+      "claim": "Lnc34a directly targets the miR-34a promoter for epigenetic silencing by recruiting the DNA methyltransferase Dnmt3a via Prohibitin-2 (PHB2) and Histone Deacetylase 1 (HDAC1).",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we discovered that a novel lncRNA, Lnc34a, directly targets the miR-34a promoter for epigenetic silencing by recruiting the DNA methyltransferase Dnmt3a via Prohibitin-2 (PHB2) and Histone Deacetylase 1 (HDAC1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim supported by multiple experiments shown in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "8ce0860b-12e7-47da-8ff6-861140d00e68",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C62",
+      "claim": "Asymmetric distribution of Lnc34a during colon cancer stem cell division leads to asymmetric daughter cell fate.",
+      "claim_type": "EXPLICIT",
+      "source": "Asymmetric distribution of Lnc34a during colon cancer stem cell (CCSC) division leads to asymmetric daughter cell fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim supported by experiments shown in Figures 2 and 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "3f4598e0-fd5a-4de2-966b-801bbe1a74f2",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C63",
+      "claim": "Lnc34a suppression leads to differentiation while its abundance leads to CCSC proliferation via symmetric self-renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "Its suppression leads to differentiation while its abundance leads to CCSC proliferation via symmetric self-renewal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim supported by experiments shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "9e752c3f-5091-4923-a62a-8f6ecb1d956b",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C64",
+      "claim": "Lnc34a tends to be upregulated in late-stage CRC, associated with miR-34a silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Lnc34a tends to be upregulated in late-stage CRC, associated with miR-34a silencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim supported by experiments shown in Figure 4L-N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "2f0dde32-591e-4fc8-a734-f781fab3b765",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C65",
+      "claim": "lncRNAs like HOTAIR and Xist have been shown to cause histone H3 lysine 27 methylation or lysine 4 demethylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, lncRNAs like HOTAIR and Xist have been shown to cause histone H3 lysine 27 methylation or lysine 4 demethylation (Gupta et al., 2010; Tsai et al., 2010; Zhao et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies (Gupta et al., 2010; Tsai et al., 2010; Zhao et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "dc2927d6-e96d-4b35-8bb8-15d0ba742ecf",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C66",
+      "claim": "miR-34a targets factors of Notch and Wnt signaling pathways, both of which are essential for CCSC self-renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect is mediated by miR-34a, which has been shown to target factors of Notch and Wnt signaling pathways, both of which are essential for CCSC self-renewal (Bu et al., 2013; Chen et al., 2015; Vermeulen et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies (Bu et al., 2013; Chen et al., 2015; Vermeulen et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "b6af5536-01f5-4a6c-9c7a-f0db66f678b6",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C67",
+      "claim": "p53 knockout has been reported to reduce asymmetric division in mammary stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although p53 knockout has been reported to reduce asymmetric division in mammary stem cells (Cicalese et al., 2009), p53 is not known to be a major regulator of differentiation and is symmetric during CCSC division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study (Cicalese et al., 2009).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "a4e4966b-2964-489e-9902-98de22165f31",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C68",
+      "claim": "Lnc34a provides an alternative, epigenetic mechanism that cancer cells can utilize to silence miR-34a without having to mutate p53.",
+      "claim_type": "EXPLICIT",
+      "source": "p53 is a well-known upstream regulator of miR-34a, and loss of p53 function certainly downregulates miR-34a. However, the discovery of Lnc34a demonstrates an alternative, epigenetic mechanism that cancer cells can utilize to silence miR-34a without having to mutate p53.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive claim based on the experimental findings showing Lnc34a-mediated epigenetic silencing of miR-34a.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "55109314-d02f-4c75-a3b2-be03c4307206",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C69",
+      "claim": "Lnc34a provides normal and cancer cells a way to decouple mir-34a mediated cell fate decisions from p53.",
+      "claim_type": "EXPLICIT",
+      "source": "Lnc34a provides normal and cancer cells a way to decouple mir-34a mediated cell fate decisions from p53, which may be present in both undifferentiated and differentiated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive claim based on the observation that Lnc34a regulates miR-34a independently of p53.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "101ea849-1532-49ad-837f-5add51ca5d38",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C70",
+      "claim": "Ectopic Lnc34a can act both in cis and in trans.",
+      "claim_type": "IMPLICIT",
+      "source": "The effect of ectopic Lnc34a suggests that Lnc34a might act both in cis and in trans, as have been observed for various lncRNAs such as Evf-2 and the capacity of ectopically supplied cis-acting lncRNAs to act in trans (Di Ruscio et al., 2013; Feng et al., 2006; Gomez et al., 2013; Jeon and Lee, 2011; Martianov et al., 2007; Rinn and Chang, 2012; Schmitz et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the effects of ectopic Lnc34a expression and comparison to other lncRNAs, supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "bf824c8e-ec92-42fd-933d-e551331f5699",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C71",
+      "claim": "The CCSCs were isolated from two early-stage CRC specimens and were functionally validated by serial sphere formation, tumor initiation, and marker staining.",
+      "claim_type": "EXPLICIT",
+      "source": "The CCSCs were isolated from two early-stage CRC specimen, and were functionally validated by serial sphere formation, tumor initiation, and marker staining (Bu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methods used to isolate and validate CCSCs, with citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "860ea14e-88cf-480f-9496-a41b572003a0",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C72",
+      "claim": "Lentiviral shRNAs have been reported to knock down certain nuclear lncRNAs efficiently.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate whether Lnc34a regulates CCSC division symmetry, we first knocked down Lnc34a using lentiviral shRNAs, which have been reported to knock down certain nuclear lncRNAs efficiently (Castel and Martienssen, 2013; Di Ruscio et al., 2013; Wang et al., 2015; Xing et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous studies demonstrating the efficacy of lentiviral shRNAs for nuclear lncRNA knockdown.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "d69c615f-b512-49ac-b63a-4ea2c3b62705",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C73",
+      "claim": "The ability of lncRNA to target microRNA provides RNA circuitry more ways to increase the complexity of the regulatory network.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of lncRNA to target microRNA provides RNA circuitry more ways to increases the complexity of the regulatory network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretive claim based on the discovery that Lnc34a targets miR-34a.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "ec8a294f-3d2e-47d1-a1b1-e6dc6cebe101",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C74",
+      "claim": "lncRNAs occupy the majority of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that lncRNAs occupy the majority of the genome (Mattick and Rinn, 2015), lncRNA/microRNA circuitry can potentially increase the complexity of regulatory networks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a previous study (Mattick and Rinn, 2015).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "f0b3056c-7104-4362-803a-935708e5838c",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C75",
+      "claim": "Lnc34a contributes to CCSC self-renewal and tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, Lnc34a contributes to CCSC self-renewal and tumorigenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the sphere formation and xenograft experiments shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "9b808d6e-d8be-49e3-9a87-576fbed6760d",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C76",
+      "claim": "Lnc34a silences miR-34a expression in CCSCs by promoting methylation and histone deacetylation of the miR-34a promoter.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, the data suggests that Lnc34a silences miR-34a expression in CCSCs by promoting methylation and histone deacetylation of the miR-34a promoter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the bisulfite sequencing and ChIP-qPCR experiments shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "3c802f3c-a87a-4cda-be09-454594114c33",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C77",
+      "claim": "Lnc34a promotes CCSC self-renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "Lnc34a promotes CCSC self-renewal, and Lnc34a asymmetry leads to cell fate asymmetry in CCSC division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the sphere formation and division symmetry experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "f9acea11-4ac2-4ea6-aa02-b25de4c5d5bb",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "claim_id": "C78",
+      "claim": "Lnc34a asymmetry leads to cell fate asymmetry in CCSC division.",
+      "claim_type": "EXPLICIT",
+      "source": "Lnc34a promotes CCSC self-renewal, and Lnc34a asymmetry leads to cell fate asymmetry in CCSC division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim based on the pair-cell assays and RNA FISH experiments shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1ad77c61-dbdd-4356-a567-0c563e15f1b5",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Lnc34a is a 693 bp, two-exon, nuclear-enriched long non-coding RNA that is highly expressed in colon cancer stem cells (CCSCs) compared to differentiated CRC cell lines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 are well-supported by multiple complementary techniques including RACE, Northern blot, RT-qPCR, cellular fractionation, and RNA FISH (Figures 1A-F). The characterization is thorough with appropriate controls (U6 for nuclear, actin for cytoplasm) and computational validation of non-coding potential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "5a025001-c951-49b3-bd0d-6b6cb75cfbe5",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Lnc34a is asymmetrically distributed during CCSC division, enriching in ALDH1+/CD133+ daughter cells in vitro and in vivo, with asymmetry more prevalent in early-stage versus late-stage CRC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C9 demonstrate asymmetric Lnc34a distribution through multiple approaches: FACS validation of CCSC markers (C5), RT-qPCR of sorted populations (C6), immunofluorescence co-staining (C7), in vivo xenograft validation (C8), and clinical specimen analysis (C9, n=23 early-stage, n=22 late-stage). The convergent evidence from in vitro, in vivo, and clinical samples strongly supports asymmetric distribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "2f02ee5a-9209-40aa-9922-1f13327f0c53",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Lnc34a regulates CCSC division symmetry through miR-34a: knockdown promotes differentiation (symmetric ALDH1-/ALDH1- division), while overexpression promotes symmetric self-renewal (ALDH1+/ALDH1+ division), with Lnc34a+ daughters showing higher proliferative capacity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 are supported by pair-cell assays showing altered division patterns with Lnc34a manipulation (Figures 2I-J), rescue experiments with miR-34a (C12), and BrdU incorporation demonstrating differential proliferation (C13). The rescue experiment (C12) provides strong evidence for mechanism through miR-34a. However, the manuscript lacks quantification of statistical significance for some division pattern changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "cdcfd6fa-4439-43af-b982-aa45dac3ddcb",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Lnc34a promotes CCSC self-renewal capacity as measured by sphere formation assays, with effects mediated through miR-34a.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16 demonstrate functional effects on self-renewal through serial sphere propagation assays over 3 generations (Figures 3A-C). The rescue experiment with miR-34a (C16) provides mechanistic support. The complete loss of sphere formation after 3 passages with knockdown is a strong phenotype, though the manuscript would benefit from reporting sphere formation efficiency at limiting dilution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "2c727529-a5f8-46e5-aaa0-f88886e57552",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Lnc34a regulates tumorigenicity and CCSC population maintenance in xenograft models, with effects rescued by miR-34a overexpression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 are supported by xenograft experiments showing reduced tumor formation/size with knockdown (C17, 3/5 and 2/5 mice formed tumors vs 5/5 controls) and increased tumor size with overexpression (C18), with miR-34a rescue (C19). FACS analysis of dissociated tumors confirms effects on ALDH1+ populations (C20-C21). However, the sample size is small (n=5 mice/group) and no statistical analysis is provided for tumor incidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "27a8a22f-dee5-4137-8e2e-e9727d198a41",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Lnc34a and miR-34a show inverse expression patterns in CCSCs versus non-CCSCs and are asymmetrically distributed to opposite daughter cells during division, while p53 is symmetrically distributed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 demonstrate inverse Lnc34a/miR-34a relationship through RT-qPCR (C22-C24) and RNA FISH showing mutually exclusive distribution in >70-80% of dividing pairs (C25). The symmetric p53 distribution (C26) is important for ruling out p53 as the driver of asymmetry. The high percentage of mutually exclusive distribution provides strong support, though ~20-30% of cells show other patterns that are not fully explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "cb3a934f-e9cf-4e0c-ba07-fcaf433c86b4",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Lnc34a epigenetically silences miR-34a through promoter methylation and histone deacetylation, with differential methylation between ALDH1+ CCSCs (93.3%) and ALDH1- cells (2.2%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 are well-supported by bisulfite sequencing showing dramatic methylation differences (C27) and changes with Lnc34a manipulation (C28-C29), plus ChIP-qPCR demonstrating histone acetylation changes (C30-C31). The 93.3% vs 2.2% methylation difference is striking. However, the manuscript does not report how many CpG sites were analyzed or provide statistical analysis of the bisulfite sequencing data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "3db8657c-5606-4760-af51-46944ee9e300",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Lnc34a-mediated miR-34a silencing through promoter methylation and deacetylation also occurs in differentiated CRC cell lines (Caco-2 and HT29).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 extend the epigenetic mechanism to non-stem CRC cell lines using RT-qPCR, bisulfite sequencing, and ChIP-qPCR (Figure 4\u2014figure supplement 2). This demonstrates the mechanism is not restricted to CCSCs, though the functional consequences in these cells are not explored.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "aa8eb1cc-043d-42bd-93f3-6f4e63221243",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Lnc34a expression and miR-34a promoter methylation increase with CRC progression from early-stage (I/II) to late-stage (III/IV), while miR-34a expression decreases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 are supported by RT-qPCR and bisulfite sequencing analysis of 45 clinical specimens (23 early-stage, 22 late-stage) showing correlated changes in Lnc34a, miR-34a, and promoter methylation (Figures 4L-N). However, the manuscript does not provide statistical analysis (e.g., correlation coefficients, p-values) or control for potential confounders like patient demographics or treatment history.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "1adffa03-8065-443d-ab2f-eeac854575c1",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Lnc34a interacts with HDAC1 and PHB2, and recruits Dnmt3a through PHB2, forming a complex that mediates epigenetic silencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C41 are supported by RNA pull-down/mass spectrometry identifying binding partners (C37) and RIP experiments with sequential knockdowns defining the interaction hierarchy (C38-C40). The knockdown experiments logically support that PHB2 mediates Dnmt3a recruitment (C41). However, the manuscript does not show whether all three proteins can simultaneously bind Lnc34a or if they form a stable complex.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "1331226e-683d-4c6e-8163-fb130b97f998",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Lnc34a contains three functional domains: 1-267 bp binds HDAC1, 267-560 bp binds the miR-34a promoter, and 560-693 bp binds PHB2, with all three required for full miR-34a suppression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C45 and C51 are supported by systematic truncation analysis using RNA pull-down (C42-C43), in vitro binding assays (C44), EMSA validation (Figure 5G), and functional rescue experiments (C45). The domain mapping is thorough and the requirement for all three fragments provides strong mechanistic insight. However, the in vitro promoter binding assay (C44) may not fully recapitulate chromatin context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "d3232ca5-e3e4-4575-be75-862217a92761",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Knockdown of PHB2, Dnmt3a, or HDAC1, or pharmacological HDAC inhibition with SAHA or TSA, upregulates miR-34a expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C50 are supported by RT-qPCR measurements showing increased miR-34a with individual protein knockdowns (C46-C48) or HDAC inhibitor treatment (C49-C50, Figure 5K-O). These experiments validate the functional importance of each component. However, the manuscript does not show whether these manipulations affect Lnc34a levels or binding to the promoter.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "30f08861-08f9-4e12-93bf-5c5fffe65cd7",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior literature establishes miR-34a as a tumor suppressor that limits cancer stem cell self-renewal, is silenced by promoter methylation in multiple cancers, and correlates with CRC progression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C57 are background claims supported by appropriate citations to prior literature. These establish the biological context and significance of miR-34a regulation. The citations appear appropriate and the claims are consistent with established knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "92b05d17-2162-41fa-8043-fa0f4cbc0530",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior literature establishes that normal stem cells divide asymmetrically, cancer cells can also divide asymmetrically, and disruption of asymmetric division promotes tumor growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60 are background claims establishing the biological context of asymmetric division, supported by appropriate citations. These provide the conceptual framework for understanding the significance of Lnc34a-mediated regulation of division symmetry.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "77e4a757-139d-40dc-bafe-46a7f6f1b485",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Lnc34a directly targets the miR-34a promoter for epigenetic silencing by recruiting Dnmt3a via PHB2 and HDAC1, with asymmetric distribution leading to asymmetric daughter cell fate, and upregulation in late-stage CRC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64 are high-level summary claims that integrate multiple experimental findings. These are well-supported by the collective evidence from molecular characterization (C61), division studies (C62), functional assays (C63), and clinical correlation (C64). These represent the main conclusions of the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "8ee8cb2c-756b-477d-b04d-ade397c6f328",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior literature shows other lncRNAs cause histone modifications, miR-34a targets Notch/Wnt pathways essential for CCSC self-renewal, and p53 knockout reduces asymmetric division in mammary stem cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 are contextual claims supported by appropriate citations that help position the current findings within existing knowledge. These establish precedent for lncRNA-mediated epigenetic regulation (C65), the downstream mechanism of miR-34a action (C66), and the role of p53 in asymmetric division (C67).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "c91210c5-a871-41f6-ab69-11f079adcba3",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Lnc34a provides an alternative epigenetic mechanism for miR-34a silencing independent of p53 mutation, allowing decoupling of miR-34a-mediated cell fate decisions from p53 status.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 are interpretive conclusions supported by the demonstration of Lnc34a-mediated miR-34a silencing and symmetric p53 distribution (C26). These represent important conceptual advances, though direct testing in p53 wild-type versus mutant contexts would strengthen the claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "b34bf05e-bdb3-4859-b0b1-4150bd0dffec",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Ectopic Lnc34a can act both in cis and in trans, similar to other lncRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C70 is speculative, based on the observation that ectopically expressed Lnc34a has functional effects. While the authors cite precedent from other lncRNAs, they do not directly test whether ectopic Lnc34a acts in cis (on the same chromosome) or trans (on other chromosomes). The claim is reasonable but requires additional experiments such as chromosome-specific analysis or allele-specific expression studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "9372a74f-363d-438d-b910-371e537d7324",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "CCSCs were isolated from early-stage CRC specimens and validated by established methods, and lentiviral shRNAs can efficiently knock down nuclear lncRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 describe methodological approaches. C71 references prior validation work (Bu et al., 2013) for CCSC isolation, though the manuscript notes cells were not authenticated by STR profiling. C72 is supported by multiple citations demonstrating shRNA efficacy for nuclear lncRNAs. These are appropriate methodological choices, though STR authentication would strengthen C71.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "2dcb2470-1171-4ea7-9fe1-11d86d8bfaf5",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The ability of lncRNA to target microRNA increases regulatory network complexity, with lncRNAs occupying the majority of the genome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C74 are interpretive claims about the broader significance of the findings. C74 is supported by citation (Mattick and Rinn, 2015), while C73 is a logical inference from the demonstration of lncRNA-microRNA interaction. These represent appropriate contextualization of the work's significance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    },
+    {
+      "id": "05ce5a44-c61e-4a22-8f36-e0bc156cd7b6",
+      "content_id": "2460cb4d-0270-45bc-96e8-90b50cd1809b",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Lnc34a contributes to CCSC self-renewal and tumorigenesis by silencing miR-34a through promoter methylation and deacetylation, with asymmetric Lnc34a distribution leading to asymmetric cell fate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C78 are summary conclusions integrating sphere formation (C75, C77), epigenetic mechanism (C76), and division asymmetry (C78) data. These are well-supported by the collective experimental evidence, though the causal chain from asymmetry to cell fate could be strengthened with lineage tracing experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:24:31.409428Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b406a4f3-52d2-4697-8e9a-33466a0b5536",
+      "result_id": "1ad77c61-dbdd-4356-a567-0c563e15f1b5"
+    },
+    {
+      "claim_id": "d646583e-653b-495b-be63-eaaf5e1ad4bd",
+      "result_id": "1ad77c61-dbdd-4356-a567-0c563e15f1b5"
+    },
+    {
+      "claim_id": "48e4b964-8b05-445b-b278-311b1ea59bcb",
+      "result_id": "1ad77c61-dbdd-4356-a567-0c563e15f1b5"
+    },
+    {
+      "claim_id": "d6cd7f83-269b-4b60-b344-01ce8e25ab73",
+      "result_id": "1ad77c61-dbdd-4356-a567-0c563e15f1b5"
+    },
+    {
+      "claim_id": "0f1f763a-281a-487a-b674-5db426381ac3",
+      "result_id": "5a025001-c951-49b3-bd0d-6b6cb75cfbe5"
+    },
+    {
+      "claim_id": "7016ba95-3440-410d-b5f7-18fa6fdcf18c",
+      "result_id": "5a025001-c951-49b3-bd0d-6b6cb75cfbe5"
+    },
+    {
+      "claim_id": "dcdcc92c-1564-4260-892e-ba482d8d99a3",
+      "result_id": "5a025001-c951-49b3-bd0d-6b6cb75cfbe5"
+    },
+    {
+      "claim_id": "f6ab3d6a-0113-433d-8286-6e6034a4d62c",
+      "result_id": "5a025001-c951-49b3-bd0d-6b6cb75cfbe5"
+    },
+    {
+      "claim_id": "65ee99a1-41b0-4827-93c6-c1adc1790ccb",
+      "result_id": "5a025001-c951-49b3-bd0d-6b6cb75cfbe5"
+    },
+    {
+      "claim_id": "4e582170-ec65-43e3-9044-66f105c41518",
+      "result_id": "2f02ee5a-9209-40aa-9922-1f13327f0c53"
+    },
+    {
+      "claim_id": "a70dc5f0-1df2-411f-842e-eebfdec864c2",
+      "result_id": "2f02ee5a-9209-40aa-9922-1f13327f0c53"
+    },
+    {
+      "claim_id": "dfd04bc7-c63a-422e-bfe5-d02915302208",
+      "result_id": "2f02ee5a-9209-40aa-9922-1f13327f0c53"
+    },
+    {
+      "claim_id": "c242f964-0d04-4574-b458-13e388de518f",
+      "result_id": "2f02ee5a-9209-40aa-9922-1f13327f0c53"
+    },
+    {
+      "claim_id": "2e6086f6-6bcd-44da-a6c3-8a24145c48db",
+      "result_id": "cdcfd6fa-4439-43af-b982-aa45dac3ddcb"
+    },
+    {
+      "claim_id": "a7f0d258-d214-4128-a9f4-3edc34fc8fb5",
+      "result_id": "cdcfd6fa-4439-43af-b982-aa45dac3ddcb"
+    },
+    {
+      "claim_id": "24dba1ea-f514-47eb-9b71-260ef2acb0ae",
+      "result_id": "cdcfd6fa-4439-43af-b982-aa45dac3ddcb"
+    },
+    {
+      "claim_id": "3a37db1d-8647-49cb-bcb0-8fa668f5f3af",
+      "result_id": "2c727529-a5f8-46e5-aaa0-f88886e57552"
+    },
+    {
+      "claim_id": "26702f04-5f62-4c4b-b303-2a94f4550329",
+      "result_id": "2c727529-a5f8-46e5-aaa0-f88886e57552"
+    },
+    {
+      "claim_id": "301aa97b-1072-47d1-af56-52e9c3a887a4",
+      "result_id": "2c727529-a5f8-46e5-aaa0-f88886e57552"
+    },
+    {
+      "claim_id": "2dd1fd8c-66ba-4716-8807-6e220a9e05da",
+      "result_id": "2c727529-a5f8-46e5-aaa0-f88886e57552"
+    },
+    {
+      "claim_id": "182cb009-e513-4dc7-9b50-0c2ddef3d70f",
+      "result_id": "2c727529-a5f8-46e5-aaa0-f88886e57552"
+    },
+    {
+      "claim_id": "6b173cc9-bb84-4698-876a-893435e7643c",
+      "result_id": "27a8a22f-dee5-4137-8e2e-e9727d198a41"
+    },
+    {
+      "claim_id": "04bcaf09-91a0-4592-b847-5d8275284102",
+      "result_id": "27a8a22f-dee5-4137-8e2e-e9727d198a41"
+    },
+    {
+      "claim_id": "65ca501d-b84c-4cda-98a6-7cc0ea4e90e8",
+      "result_id": "27a8a22f-dee5-4137-8e2e-e9727d198a41"
+    },
+    {
+      "claim_id": "48e99f39-6d35-4466-b0db-e39b67b3987f",
+      "result_id": "27a8a22f-dee5-4137-8e2e-e9727d198a41"
+    },
+    {
+      "claim_id": "31497c8e-cb72-415f-88f5-c6ac2a668120",
+      "result_id": "27a8a22f-dee5-4137-8e2e-e9727d198a41"
+    },
+    {
+      "claim_id": "46d113ec-5153-4c1e-a411-e3bcd21823cb",
+      "result_id": "cb3a934f-e9cf-4e0c-ba07-fcaf433c86b4"
+    },
+    {
+      "claim_id": "31b6aa96-416a-45ac-aaa3-c765516babfe",
+      "result_id": "cb3a934f-e9cf-4e0c-ba07-fcaf433c86b4"
+    },
+    {
+      "claim_id": "52b9f4f7-daa6-401b-ad00-2ef174b73be9",
+      "result_id": "cb3a934f-e9cf-4e0c-ba07-fcaf433c86b4"
+    },
+    {
+      "claim_id": "52ab1947-1075-402f-8fbb-2eb7ad2db429",
+      "result_id": "cb3a934f-e9cf-4e0c-ba07-fcaf433c86b4"
+    },
+    {
+      "claim_id": "57d8fdab-d91c-4e17-943e-0205b9114494",
+      "result_id": "cb3a934f-e9cf-4e0c-ba07-fcaf433c86b4"
+    },
+    {
+      "claim_id": "f61fe83f-3968-485e-aeaa-9eb34c0da512",
+      "result_id": "3db8657c-5606-4760-af51-46944ee9e300"
+    },
+    {
+      "claim_id": "eed951f9-550e-4520-b65b-c4cc8ae67b2b",
+      "result_id": "3db8657c-5606-4760-af51-46944ee9e300"
+    },
+    {
+      "claim_id": "10165dc2-558f-4e62-9149-948379646823",
+      "result_id": "aa8eb1cc-043d-42bd-93f3-6f4e63221243"
+    },
+    {
+      "claim_id": "c758fe49-bc54-4ded-a5d4-a7bcdbbd4063",
+      "result_id": "aa8eb1cc-043d-42bd-93f3-6f4e63221243"
+    },
+    {
+      "claim_id": "2dcb7e7d-9e7d-4c84-8208-1de934a27319",
+      "result_id": "aa8eb1cc-043d-42bd-93f3-6f4e63221243"
+    },
+    {
+      "claim_id": "10a0b367-164a-48f0-b587-d0bfdc8e1cfa",
+      "result_id": "1adffa03-8065-443d-ab2f-eeac854575c1"
+    },
+    {
+      "claim_id": "706a6c06-acd2-42bf-a06a-099cf187d973",
+      "result_id": "1adffa03-8065-443d-ab2f-eeac854575c1"
+    },
+    {
+      "claim_id": "f01d944f-b3a1-4d9f-a723-422ce93c921b",
+      "result_id": "1adffa03-8065-443d-ab2f-eeac854575c1"
+    },
+    {
+      "claim_id": "e85c05ca-85d6-450a-aade-9de0fe73d8b5",
+      "result_id": "1adffa03-8065-443d-ab2f-eeac854575c1"
+    },
+    {
+      "claim_id": "89085c4b-eb63-4282-bcb3-f964bfc173d1",
+      "result_id": "1adffa03-8065-443d-ab2f-eeac854575c1"
+    },
+    {
+      "claim_id": "85816c75-3302-4fe2-b3d6-4aed3d1c6ab9",
+      "result_id": "1331226e-683d-4c6e-8163-fb130b97f998"
+    },
+    {
+      "claim_id": "9dfc81ba-1efb-4f89-9fdd-a89236b51b5e",
+      "result_id": "1331226e-683d-4c6e-8163-fb130b97f998"
+    },
+    {
+      "claim_id": "ee22b50b-f163-4875-9070-4bd3fc8ed0db",
+      "result_id": "1331226e-683d-4c6e-8163-fb130b97f998"
+    },
+    {
+      "claim_id": "f323bcfd-1ca8-489f-a46e-c78f5c8f70bf",
+      "result_id": "1331226e-683d-4c6e-8163-fb130b97f998"
+    },
+    {
+      "claim_id": "f6b35f1c-73c5-47c6-affe-acc1daf93a94",
+      "result_id": "1331226e-683d-4c6e-8163-fb130b97f998"
+    },
+    {
+      "claim_id": "30f8b3d7-22cd-404e-b5a6-5fff788b2058",
+      "result_id": "d3232ca5-e3e4-4575-be75-862217a92761"
+    },
+    {
+      "claim_id": "629e4aef-74dc-4a70-90fb-baf883ff16dc",
+      "result_id": "d3232ca5-e3e4-4575-be75-862217a92761"
+    },
+    {
+      "claim_id": "6169b98b-c014-4c79-9775-663ee1e32e28",
+      "result_id": "d3232ca5-e3e4-4575-be75-862217a92761"
+    },
+    {
+      "claim_id": "d07105ed-21e9-4fa9-b107-f728d80b3167",
+      "result_id": "d3232ca5-e3e4-4575-be75-862217a92761"
+    },
+    {
+      "claim_id": "7c67a469-f882-4b1c-89ae-49ff40dec7ae",
+      "result_id": "d3232ca5-e3e4-4575-be75-862217a92761"
+    },
+    {
+      "claim_id": "ae20f079-e5ff-4f66-8175-5fda604f0d91",
+      "result_id": "30f08861-08f9-4e12-93bf-5c5fffe65cd7"
+    },
+    {
+      "claim_id": "caf7a12c-fbce-42df-b4dc-10fea91cd4c5",
+      "result_id": "30f08861-08f9-4e12-93bf-5c5fffe65cd7"
+    },
+    {
+      "claim_id": "cc1930ac-3d08-4701-bbce-aeead5062b38",
+      "result_id": "30f08861-08f9-4e12-93bf-5c5fffe65cd7"
+    },
+    {
+      "claim_id": "3ccb2320-14f5-4643-bb3d-5a85e71d91af",
+      "result_id": "30f08861-08f9-4e12-93bf-5c5fffe65cd7"
+    },
+    {
+      "claim_id": "457fb126-cb1c-4413-be76-98445f360abe",
+      "result_id": "30f08861-08f9-4e12-93bf-5c5fffe65cd7"
+    },
+    {
+      "claim_id": "d52acafd-0c77-4dfa-af68-369dbc45e7c2",
+      "result_id": "30f08861-08f9-4e12-93bf-5c5fffe65cd7"
+    },
+    {
+      "claim_id": "c3a36322-752c-4890-838d-46cc99bdd352",
+      "result_id": "92b05d17-2162-41fa-8043-fa0f4cbc0530"
+    },
+    {
+      "claim_id": "71eb1b16-a7b2-4019-b0de-6d418247066b",
+      "result_id": "92b05d17-2162-41fa-8043-fa0f4cbc0530"
+    },
+    {
+      "claim_id": "7407ca8d-4c62-4785-91cb-3798170cf2df",
+      "result_id": "92b05d17-2162-41fa-8043-fa0f4cbc0530"
+    },
+    {
+      "claim_id": "b1b547f9-9cdf-4b57-857f-8e767edfba77",
+      "result_id": "77e4a757-139d-40dc-bafe-46a7f6f1b485"
+    },
+    {
+      "claim_id": "8ce0860b-12e7-47da-8ff6-861140d00e68",
+      "result_id": "77e4a757-139d-40dc-bafe-46a7f6f1b485"
+    },
+    {
+      "claim_id": "3f4598e0-fd5a-4de2-966b-801bbe1a74f2",
+      "result_id": "77e4a757-139d-40dc-bafe-46a7f6f1b485"
+    },
+    {
+      "claim_id": "9e752c3f-5091-4923-a62a-8f6ecb1d956b",
+      "result_id": "77e4a757-139d-40dc-bafe-46a7f6f1b485"
+    },
+    {
+      "claim_id": "2f0dde32-591e-4fc8-a734-f781fab3b765",
+      "result_id": "8ee8cb2c-756b-477d-b04d-ade397c6f328"
+    },
+    {
+      "claim_id": "dc2927d6-e96d-4b35-8bb8-15d0ba742ecf",
+      "result_id": "8ee8cb2c-756b-477d-b04d-ade397c6f328"
+    },
+    {
+      "claim_id": "b6af5536-01f5-4a6c-9c7a-f0db66f678b6",
+      "result_id": "8ee8cb2c-756b-477d-b04d-ade397c6f328"
+    },
+    {
+      "claim_id": "a4e4966b-2964-489e-9902-98de22165f31",
+      "result_id": "c91210c5-a871-41f6-ab69-11f079adcba3"
+    },
+    {
+      "claim_id": "55109314-d02f-4c75-a3b2-be03c4307206",
+      "result_id": "c91210c5-a871-41f6-ab69-11f079adcba3"
+    },
+    {
+      "claim_id": "101ea849-1532-49ad-837f-5add51ca5d38",
+      "result_id": "b34bf05e-bdb3-4859-b0b1-4150bd0dffec"
+    },
+    {
+      "claim_id": "bf824c8e-ec92-42fd-933d-e551331f5699",
+      "result_id": "9372a74f-363d-438d-b910-371e537d7324"
+    },
+    {
+      "claim_id": "860ea14e-88cf-480f-9496-a41b572003a0",
+      "result_id": "9372a74f-363d-438d-b910-371e537d7324"
+    },
+    {
+      "claim_id": "d69c615f-b512-49ac-b63a-4ea2c3b62705",
+      "result_id": "2dcb2470-1171-4ea7-9fe1-11d86d8bfaf5"
+    },
+    {
+      "claim_id": "ec8a294f-3d2e-47d1-a1b1-e6dc6cebe101",
+      "result_id": "2dcb2470-1171-4ea7-9fe1-11d86d8bfaf5"
+    },
+    {
+      "claim_id": "f0b3056c-7104-4362-803a-935708e5838c",
+      "result_id": "05ce5a44-c61e-4a22-8f36-e0bc156cd7b6"
+    },
+    {
+      "claim_id": "9b808d6e-d8be-49e3-9a87-576fbed6760d",
+      "result_id": "05ce5a44-c61e-4a22-8f36-e0bc156cd7b6"
+    },
+    {
+      "claim_id": "3c802f3c-a87a-4cda-be09-454594114c33",
+      "result_id": "05ce5a44-c61e-4a22-8f36-e0bc156cd7b6"
+    },
+    {
+      "claim_id": "f9acea11-4ac2-4ea6-aa02-b25de4c5d5bb",
+      "result_id": "05ce5a44-c61e-4a22-8f36-e0bc156cd7b6"
+    }
+  ],
+  "comparisons": []
+}

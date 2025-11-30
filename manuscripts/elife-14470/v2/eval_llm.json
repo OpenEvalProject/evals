@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C14",
+      "C15"
+    ],
+    "result": "PROP1 and SOX2 are transiently co-expressed in embryonic pituitary stem cells. At e12.5, PROP1-expressing cells largely overlap with SOX2-expressing progenitors, but by e14.5, PROP1 expression decreases in the dorsal region and becomes concentrated in the transitional zone where cells migrate ventrally. This co-localization is transient and ceases as cells migrate and differentiate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11, C14-C15 are supported by immunofluorescence data in Figure 1A showing temporal and spatial overlap of PROP1 and SOX2 at e12.5 and their separation by e14.5. The data directly demonstrate the transient nature of co-expression during the transition from stem cell to differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "POU1F1 and SOX2 show mutually exclusive expression patterns during development and after birth, suggesting POU1F1 regulates a later stage of differentiation and any effect on stem cells would be indirect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 are supported by immunofluorescence data in Figure 1A showing no co-localization of POU1F1 and SOX2 at e14.5 and P7. The inference that POU1F1 acts at a later differentiation stage is reasonable given the mutually exclusive expression pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "PROP1 is necessary for multiple aspects of cell cycle regulation during embryogenesis. Prop1 mutants show absence of CYCLIN E expression, increased double-positive p27kip1/p57kip2 cells, and reduced CYCLIN D1-positive cells at e13.5, indicating PROP1 is required for promoting progenitor proliferation, transitioning cells out of the cell cycle to express Cyclin E, and progressing from p57kip2-positive transitional cells to p27kip1-positive differentiating cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 are well-supported by immunofluorescence data in Figure 1B-C showing altered expression of cell cycle markers in Prop1 mutants. The data demonstrate clear differences in CYCLIN E (absent in mutants), p27kip1/p57kip2 (increased double-positive cells), and CYCLIN D1 (reduced at e13.5) between mutants and controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "PROP1 has distinct effects on stem cell markers during postnatal pituitary expansion. High Prop1 mRNA levels are present at P3 and P7, coincident with the second wave of proliferation. Prop1 mutants show elevated Sox2 mRNA and increased SOX2-positive cells in the marginal zone at P7, while Sox9 and Gfra2 levels are unchanged. Both Prop1 and Pou1f1 mutants show decreased CyclinE mRNA at P7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 are supported by qRT-PCR data (Figure 2\u2014figure supplement 1, Figure 2A, 2C) and immunofluorescence quantification (Figure 2B). The data show specific effects of Prop1 deficiency on Sox2 but not other stem cell markers, and shared effects with Pou1f1 mutants on CyclinE.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "At P3, the expansion of SOX2-positive cells in Prop1 mutant pituitaries correlates with expansion of Prop1-expressing cells in the marginal zone, but these SOX2-expressing cells show reduced co-localization with SOX9 compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by double immunofluorescence data and quantification in Figure 3A-D. The data demonstrate both the expansion of SOX2+/PROP1+ cells and the reduced SOX2+/SOX9+ co-localization in mutants, suggesting altered stem cell properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C76",
+      "C77"
+    ],
+    "result": "Prop1 mutants show reduced colony-forming capacity and altered colony morphology compared to wild-type, while Pou1f1 mutants show normal colony formation. At P7, P13, and P38, Prop1 mutants have fewer CFCs per pituitary, and 100% of Prop1 mutant colonies are flat cells rather than the compact, piled-up morphology typical of undifferentiated progenitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34, C76-C77 are supported by colony-forming assay data in Figure 4A-D. The quantitative data show significant reductions in CFC numbers in Prop1 mutants across multiple time points, and morphological analysis clearly demonstrates the difference in colony types between genotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "RNA-Seq analysis of stem cell colonies reveals that Prop1 deficiency causes extensive gene expression changes consistent with failure of EMT. 2035 genes were differentially expressed in Prop1 mutant colonies (vs. 752 in Pou1f1 mutants), with unique upregulation of epithelial markers (Cdh1, Claudin 23, miR-200a) and downregulation of EMT markers (Zeb2, Mmp2, Mmp3, Mmp16, Gli2) in Prop1 mutants. These changes were validated by qRT-PCR and immunostaining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C44 are supported by RNA-Seq data (Figure 5A), qRT-PCR validation (Figure 5B), and immunostaining (Figure 5B). The comprehensive genomic analysis with independent validation provides strong evidence for the EMT-related gene expression changes specific to Prop1 deficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C5",
+      "C84"
+    ],
+    "result": "Zeb2 is a key mediator of the EMT-like process in pituitary stem cells. siRNA knockdown of Zeb2 in wild-type colonies was sufficient to reduce Gli2 expression, increase Cdh1 expression, and block formation of tightly packed colonies, mimicking the Prop1 mutant phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C5, C84 are supported by siRNA knockdown experiments in Figure 6 showing that Zeb2 reduction recapitulates key aspects of Prop1 deficiency. This functional validation demonstrates Zeb2 is a critical downstream effector of PROP1 in the EMT-like process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C80",
+      "C83"
+    ],
+    "result": "Zeb2 and CDH1 expression patterns are altered in Prop1 mutant pituitaries during development and postnatally. At e14.5, Zeb2 expression in the ventral Rathke's pouch is nearly absent in mutants, while CDH1 staining is stronger in the ventral region and marginal zone. At P13, Prop1 mutants show abnormal CDH1 expression distant from the marginal zone. Cdh1 is increased in both CFCs and tissues, while Cdh2 is unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49, C80, C83 are supported by in situ hybridization (Figure 7A), immunohistochemistry (Figure 7A-B), and RNA-Seq data (Figure 5). The consistent pattern of reduced Zeb2 and increased Cdh1 across multiple time points and experimental approaches provides strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "ChIP-Seq analysis identified genome-wide PROP1 binding sites and a consensus binding motif. The known PROP1 binding site in Pou1f1 was highly enriched, and a novel binding site at -6 kb was identified. HOMER analysis identified the consensus sequence TAATNNNATTA in 60% of peaks (p=1e-1599), consistent with the paired homeodomain core consensus. Additional enriched motifs were found in 30-38% of peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 are supported by ChIP-Seq data (Figure 8C-E) and motif analysis (Figure 9A). The validation of known binding sites and identification of novel sites with appropriate motifs demonstrates the technical success of the ChIP-Seq approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C3",
+      "C4",
+      "C82"
+    ],
+    "result": "PROP1 directly binds to genes involved in EMT regulation. Pathway analysis showed most ChIP-Seq identified genes were involved in EMT pathway regulation. PROP1 binding to Gli2, Notch2, Zeb2, and Claudin 23 was validated by quantitative ChIP-PCR, confirming PROP1-specific enrichment at these loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57, C3-C4, C82 are supported by ChIP-Seq data (Figure 9B-E) with pathway analysis and independent validation by quantitative ChIP-PCR. The convergence of genomic binding data with the EMT gene expression phenotype provides strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C73",
+      "C79",
+      "C95",
+      "C96"
+    ],
+    "result": "PROP1 has two major roles in pituitary development: regulating stem cell populations and triggering an EMT-like process necessary for cell migration and differentiation. PROP1 is required to maintain normal stem cell pools during embryogenesis and postnatal expansion, and promotes progenitor transition to differentiation by inducing expression of EMT drivers like Zeb2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62, C73, C79, C95-C96 represent the major conclusions supported by multiple converging lines of evidence: altered Sox2 expression, colony-forming defects, EMT gene expression changes, ChIP-Seq showing PROP1 binding to EMT genes, and functional validation with Zeb2 knockdown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C66",
+      "C78"
+    ],
+    "result": "PROP1 regulation of Sox2 and cell cycle genes (Cyclin D1, D2, E) appears to be indirect, as PROP1 did not bind to the promoters of these genes in ChIP-Seq experiments despite their altered expression in Prop1 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C66, C78 are supported by the absence of PROP1 binding sites near these genes in ChIP-Seq data, combined with the observed changes in their expression in mutants. The inference of indirect regulation is reasonable given this evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Gli2 expression is reduced in Prop1 mutant colonies and PROP1 binds to the 5' region of Gli2, but Gli2 expression is not strictly Prop1-dependent as it is expressed in surrounding mesenchyme at e12.5 and in pituitary tissue after Prop1 expression wanes at e15.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by RNA-Seq data (Figure 5), ChIP-Seq data (Figure 9C-D), and temporal expression analysis. The nuanced conclusion that PROP1 influences but does not strictly control Gli2 expression is appropriate given the evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "The EMT-like process in pituitary stem cells is likely a partial EMT, where cells do not display all characteristics of typical EMT, as evidenced by increased Cdh1 without changes in Cdh2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is supported by the observation that Cdh1 increases while Cdh2 remains unchanged (C80), which differs from classical EMT. The inference of partial EMT is reasonable and supported by citation to prior work on this phenomenon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "Both Prop1 and Pou1f1 mutants can generate progenitor colony-forming cells in culture that express stem cell markers SOX2, SOX9, GFRA2, and CYCLIN D2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is supported by immunostaining data in Figure 4\u2014figure supplement 1 showing expression of these markers in colonies from both mutant genotypes. This establishes that the colonies used for subsequent analysis retain stem cell characteristics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C97"
+    ],
+    "result": "PROP1 mediates progenitor cell proliferation by driving cell cycle progression and activates expression of Cyclin E, a marker of the transition state. In the absence of Prop1, embryonic progenitors fail to maintain Cyclin D1/D2 expression and fail to initiate Cyclin E expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65, C97 are supported by cell cycle marker data in Figure 1B-C and Figure 5B. The data consistently show altered expression of these markers in Prop1 mutants across multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Prop1 mutants have more SOX2-positive cells in the marginal zone and fewer in the parenchyma compared to both Pou1f1 mutants and controls. These SOX2-expressing cells in Prop1 mutants lack SOX9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by immunofluorescence data in Figure 2B and Figure 3B,D. The spatial distribution differences and lack of SOX9 co-localization are clearly demonstrated with quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "PROP1 activates expression of Pou1f1, a marker of the differentiation state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is supported by ChIP-Seq data showing PROP1 binding to Pou1f1 (Figure 8) and prior knowledge of this regulatory relationship. This is a well-established function of PROP1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Mutations in PROP1 are the most common cause of hypopituitarism in humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is presented as established knowledge from the field without experimental validation in this manuscript. This is appropriate for background information and is consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "Individuals with Mowat Wilson Syndrome (caused by ZEB2 mutations) could have pituitary defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C88 is explicitly stated as speculation by the authors. While the role of Zeb2 in pituitary development discovered in this study makes this hypothesis reasonable, there is no direct evidence presented to support this claim. This would require clinical investigation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2110 @@
+{
+  "submission": {
+    "id": "e54afc69-05d5-42d5-ab69-e083badd5e83",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:22:05.034761Z",
+    "updated_at": "2025-11-29T21:22:05.034761Z"
+  },
+  "content": [
+    {
+      "id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "submission_id": "e54afc69-05d5-42d5-ab69-e083badd5e83",
+      "content_type": "manuscript",
+      "content_text": "# Roles of the membrane-reentrant \u03b2-hairpin-like loop of RseP protease in selective substrate cleavage\n\n## Authors\n\n- Koichiro Akiyama<sup>1</sup>\n- Shinya Mizuno<sup>1</sup>\n- Yohei Hizukuri<sup>1</sup>\n- Hiroyuki Mori<sup>1</sup>\n- Terukazu Nogi<sup>2</sup>\n- Yoshinori Akiyama<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Institute for Virus Research Kyoto University Kyoto Japan\n2. Graduate School of Medical Life Science Yokohama City University Yokohama Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nMolecular mechanisms underlying substrate recognition and cleavage by Escherichia coli RseP, which belongs to S2P family of intramembrane-cleaving proteases, remain unclear. We examined the function of a conserved region looped into the membrane domain of RseP to form a \u03b2-hairpin-like structure near its active site in substrate recognition and cleavage. We observed that mutations disturbing the possible \u03b2-strand conformation of the loop impaired RseP proteolytic activity and that some of these mutations resulted in the differential cleavage of different substrates. Co-immunoprecipitation and crosslinking experiments suggest that the loop directly interacts with the transmembrane segments of substrates. Helix-destabilising mutations in the transmembrane segments of substrates suppressed the effect of loop mutations in an allele-specific manner. These results suggest that the loop promotes substrate cleavage by selectively recognising the transmembrane segments of substrates in an extended conformation and by presenting them to the proteolytic active site, which contributes to substrate discrimination.\n\n## Introduction\n\nRegulated intramembrane proteolysis (RIP) is a common mechanism for transmembrane signalling and is a part of many important cellular processes in both prokaryotes and eukaryotes (Ha, 2009; Wolfe, 2009; Urban, 2013). Proteases involved in RIP are called intramembrane-cleaving proteases (I-CLiPs) and catalyse the proteolytic cleavage of transmembrane segments (TMs) of target membrane proteins within the lipid bilayer. Escherichia coli RseP belongs to S2P zinc metalloproteinase family of I-CLiPs. It plays a key role in regulating the \u03c3E extracytoplasmic stress response (Hizukuri et al., 2013; Kroos and Akiyama, 2013), in which the dedicated sigma factor \u03c3E is activated through the successive cleavage of a single membrane-spanning anti-\u03c3E RseA in response to cell surface stresses. The first cleavage catalysed by DegS (site-1 cleavage) on the periplasmic side triggers the intramembrane cleavage by RseP (site-2 cleavage) (Alba et al., 2002; Kanehara et al., 2002). Recent studies suggest that in addition to being involved in RseA cleavage, RseP acts in the proteolytic removal of remnant signal peptides from the membrane (Saito et al., 2011). RseP spans the membrane 4 times, with both the termini facing the periplasm. Its central periplasmic region contains tandem PDZ domains (PDZ-N and PDZ-C; Figure 1A) (Kanehara et al., 2001; Kinch et al., 2006; Inaba et al., 2008). The S2P family proteases share a conserved core domain containing 3 TMs. In RseP, these correspond to TM1\u2013TM3 (Figure 1A,B) (Kinch et al., 2006). The first and the third TM contain HExxH and LDG active site motifs, respectively. Disulfide crosslinking and co-immunoprecipitation experiments suggest that TM3 plays a critical role in binding of a substrate TM (Koide et al., 2008). Helix destabilisation of substrate TMs promotes their binding to and cleavage by RseP (Akiyama et al., 2004; Koide et al., 2008).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/08928/elife-08928-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic representation of RseP. (B) Crystal structure of mjS2P (PDB code: 3B4R A). The secondary structure was analysed using STRIDE (Frishman and Argos, 1995), and the image was generated using PyMOL (https://www.pymol.org) (Schr\u00f6dinger, 2010). In A and B, the 3 TM helices composing the core membrane domain are shown in light green; the MRE \u03b2-loop, HExxH motif and LDG motif are shown in red, yellow and orange, respectively, and the coordinated zinc atom is shown in blue. (C) The structure of the mjS2P MRE \u03b2-loop. The polypeptide backbone is extracted from the model in Figure 1B and shown as sticks. C, O and N atoms are shown in pink, red and blue, respectively. The amino acid residues of the corresponding region of RseP are assigned on the model. (D) Sequences of the MRE \u03b2-loop of RseP (E. coli), SpoIVFB (B. subtilis) and mjS2P (M. jannaschii). The regions predicted to form \u03b2-strands are boxed. The secondary structure is assigned based on the analysis of amino acid sequences by PsiPred (http://bioinf.cs.ucl.ac.uk/psipred) (for RseP and SpoIVFB) or the analysis of the crystal structure by STRIDE (for mjS2P). The sequence alignment and secondary structure prediction suggest that this region of RseP also assumes the \u03b2-hairpin-like structure. The conserved PxGG motif is boldfaced. (E) Schematic representation of the model substrates and their amino acid sequences. RseA- and LacY-TM1 (LY1)-derived regions are shown as white and hatched rectangles, respectively. YqfG- or YoaJ-derived region is shown as a gray rectangle. Amino acid sequences of RseA and LY1 TMs and the entire region of YqfG and YoaJ are shown. The possible TMs of YqfG and YoaJ are underlined.\n\nRseP-catalysed site-2 cleavage of RseA depends on site-1 cleavage (Alba et al., 2002; Kanehara et al., 2002), which results in stress-dependent \u03c3E activation, because site-1 cleavage is induced by stress signals (Walsh et al., 2003; Kulp and Kuehn, 2011; Lima et al., 2013). Previous studies suggest that RseP PDZ domains are involved in the site-1 cleavage-dependence of the site-2 cleavage by RseP (Kanehara et al., 2003; Bohn et al., 2004; Grigorova et al., 2004; Inaba et al., 2008; Hizukuri and Akiyama, 2012). Although the crystal structure of an S2P homolog (mjS2P) from Methanocaldococcus jannaschii (Feng et al., 2007) has been reported, it does not have a PDZ domain, and the three-dimensional structure of an S2P homolog with PDZ domain(s) is not available. We recently reported the crystal structure of the PDZ tandem of an Aquifex aeolicus RseP homolog. The structure suggests that the 2 PDZ domains create a single pocket-like structure that covers the core membrane domain on the membrane surface (Hizukuri et al., 2014). Structural models and biochemical and genetic results suggest that the PDZ tandem acts as a size-exclusion filter to allow only the periplasmically truncated form of RseA to enter the recessed active site in the membrane domain of RseP (Kroos and Akiyama, 2013; Hizukuri et al., 2014). However, mechanisms underlying substrate proteolysis by RseP remains elusive. It is unclear whether the size-exclusion function of the PDZ tandem is sufficient to discriminate between substrates and non-substrates and how a substrate TM, which assumes an \u03b1-helical conformation that needs to be unwound for proteolysis, is recognised and presented to the proteolytic active site. The mechanism of substrate discrimination and specific cleavage in RIP is one of the major problems to be solved (Langosch et al., 2015). Detailed knowledge of mechanisms underlying substrate discrimination and cleavage would help in controlling the cleavage of membrane proteins by I-CLiPs including S2P proteases.\n\nThe structure of mjS2P indicates that it contains a region, located close to the active site, that is looped into the membrane domain from the cytoplasmic side (Figure 1B,C). This membrane-reentrant loop is unique because it is in an extended or \u03b2-strand conformation, whereas a membrane-embedded polypeptide is generally in an \u03b1-helical conformation. Therefore, we have named this region membrane-reentrant \u03b2-loop (MRE \u03b2-loop). The MRE \u03b2-loop is conserved in proteins belonging to groups I and III of S2P subfamilies, including RseP (group I), Bacillus subtilis SpoIVFB (group III) and mjS2P (group III; Figure 1D) (Ha, 2009; Kroos and Akiyama, 2013; Zhang et al., 2013). A recent study showed that the MRE \u03b2-loop of SpoIVFB can be crosslinked with a substrate through disulfide bonds, suggesting its possible involvement in substrate interaction (Zhang et al., 2013). However, functional roles of the MRE \u03b2-loop remain largely unknown. Here, we analysed the function of the RseP MRE \u03b2-loop and found that it could directly bind to and promotes selective cleavage of RseP substrates. Therefore, we propose that the MRE \u03b2-loop stabilises substrate TMs in an extended conformation and presents them to the proteolytic active site.\n\n## Results\n\n### Importance of the MRE \u03b2-loop in the proteolytic function of RseP\n\nWe performed systematic mutational analysis to investigate the possible role of the MRE \u03b2-loop in RseP function. We constructed an MRE \u03b2-loop deletion mutant (\u0394loop mutant) containing a short linker (Gly\u2013Gly) in place of residues Ile-61 to Glu-75. Accumulation level of the \u0394loop mutant of RseP-HM (RseP with a C-terminal His-Myc bipartite tag) was comparable to that of wild-type RseP-HM (Figure 2), suggesting that the \u0394loop mutation did not cause global structural changes in RseP. The \u0394loop mutant did not exhibit complementation activity against a \u0394rseP mutation (Figure 2A). Its protease activity was examined using model substrates HA-MBP-RseA148 and HA-MBP-RseA(LY1)148 (Figure 2C,D). HA-MBP-RseA148 is a derivative of the DegS-cleaved form of RseA (RseA148) and contains a maltose-binding protein (MBP) domain with an N-terminal haemagglutinin (HA) tag in place of the cytoplasmic region of RseA (Figure 1E) (Hizukuri and Akiyama, 2012). HA-MBP-RseA(LY1)148 is essentially similar to HA-MBP-RseA148, except that it has the first TM (LY1) of lactose permease (LacY) instead of the RseA TM (Figure 1E) (Hizukuri and Akiyama, 2012). Our previous studies showed that an N-terminally-attached tag has little effect on substrate cleavage by RseP (Akiyama et al., 2004; Saito et al., 2011). The model substrates were co-expressed with RseP-HM or its derivatives in a \u0394rseA/\u0394rseP strain. The substrates were converted from the full-length form (FL) to a cleaved form (CL) after co-expression with wild-type RseP but not with its proteolytically inactive mutant having an amino acid alteration (E23Q) in the H22ExxH active site motif, indicating that these substrates underwent RseP-mediated proteolysis, as described previously (Hizukuri and Akiyama, 2012). Co-expression of the substrates with the \u0394loop mutant did not convert them from FL to CL, indicating that the mutant was proteolytically inactive.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/08928/elife-08928-fig2-v1.jpg)\n\n**Figure 2.:** (A and B) Complementation assay. Strain KK31 [rseP::kan/pKK6 (Para-rseP)] harbouring a plasmid encoding the indicated mutant form of RseP-His6-Myc (RseP-HM) under the lac promoter or the corresponding vector was grown in L medium containing 0.02% arabinose. The cultures were serially diluted with saline, and 4 \u03bcl of the diluted cultures were spotted on L agar plates containing 0.02% arabinose or 1 mM IPTG. The plates were incubated at 30\u00b0C for 20 hr. (C\u2013F) Immunoblotting analysis of substrate cleavage. KA306 (\u0394rseA/\u0394rseP/\u0394clpP) cells harbouring a plasmid encoding the indicated model substrate was transformed with plasmids encoding the indicated mutant forms of RseP-HM and were grown at 30\u00b0C in M9-based medium containing 1 mM IPTG and 1 mM cAMP for 3 hr. Proteins were precipitated using TCA, solubilised in 1% SDS and analysed by 10% Laemmli\u2013SDS-PAGE and immunoblotting with anti-HA or anti-Myc antibody. FL and CL indicate full-length and RseP-cleaved forms, respectively, of each model substrate. (G\u2013I) Pulse-chase analysis of substrate cleavage. KA306 cells harbouring an appropriate combination of plasmids encoding the indicated RseP-HM mutant and the model substrate were grown in M9-based medium containing 1 mM IPTG at 30\u00b0C. The cells were labelled with [35S]-methionine for 30 s and were chased with unlabelled methionine as indicated. Proteins were immunoprecipitated using agarose-conjugated anti-HA antibody and were analysed by 10% Laemmli\u2013SDS-PAGE. Cleavage (%) was calculated using the following equation: cleavage (%) = 100 \u00d7 (CL)/[(FL) + (CL)], where FL and CL are the intensities of the respective bands that were corrected for methionine content. Two independent experiments were performed, and mean values are shown along with standard deviations. See Figure 2\u2014source data 1 for gel images and quantitated band intensities data for Figure 2G\u2013I. See Figure 2\u2014figure supplement 1 for integral association of HA-MBP-YqfG and HA-MBP-YoaJ with membrane. See Figure 2\u2014figure supplement 2 for complementation and model substrate cleavage activity of the RseP derivatives with a Cys substitution in the MRE \u03b2-loop.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08928/elife-08928-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Strain KK374/pKH441(hflD) was further transformed with the plasmids encoding the indicated model substrate. Cells were grown in the M9-based medium containing 1 mM IPTG and 1 mM cAMP at 30\u00b0C. An aliquot of the cells were sonically disrupted and fractionated into the soluble (S) and membrane (P) fractions (\u2018sonic\u2019 samples). Another aliquot was treated with 0.1 N NaOH and fractionated into the supernatant (S) and pellet (P) fractions (\u2018NaOH\u2019 samples). W indicates unfractionated whole cell samples. Proteins were analyzed by 12.5% SDS-PAGE and immunoblotting using anti-HA, anti-HflD, anti-FtsH, and anti-SecB antibodies. HflD, FtsH and SecB are peripheral membrane, integral membrane and cytosolic proteins, respectively, and served as controls for the fractionation. Because the chromosomally-encoded HflD is expressed at a very low level and hard to detect, we expressed HflD from a multicopy plasmid. The majority of the model substrates, HA-MBP-RseA(LY1)148, HA-MBP-YqfG and HA-MBP-YoaJ, was associated with the membrane both after sonical disruption and after alkali extraction, although higher proportions of HA-MBP-YoaJ was recovered in the soluble fractions as compared with the other two model substrates, indicating that most of the SMP-derived model proteins are integrally associated with the membrane.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08928/elife-08928-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Assay of substrate cleavage by immunoblotting. Strain KA306 (\u0394rseA/\u0394rseP/\u0394clpP) harboring pYH124 (HA-MBP-RseA(LY1)148) was further transformed with a plasmid encoding the indicated single Cys mutant form of RseP-HM. Cells were grown at 30\u00b0C in M9-based medium containing 1 mM IPTG and 1 mM cAMP for 3 hr. Proteins were acid-precipitated, solubilized in 1% SDS and analyzed by 10% SDS-PAGE and anti-HA or anti-Myc immunoblotting as indicated. (B) Complementation assay. Strain KK31 (rseP::kan/pKK6 (Para-rseP)) was further transformed with a plasmid encoding the indicated mutant form of RseP-HM under the lac promoter, or the corresponding vector. Cells were grown in L-0.02% arabinose, serially diluted with saline and a 4 \u00b5l each of the diluted culture was spotted on an L-0.02% arabinose or L-1 mM IPTG agar plate. The plates were incubated at 30\u00b0C for 20 hr.\n\nWe next examined the effects of MRE \u03b2-loop mutations on the cleavage of other substrates. Recent studies have shown that some small membrane proteins are encoded by the E. coli genome and expressed as functional proteins (Hemm et al., 2008; Alix and Blanc-Potard, 2009; Fontaine et al., 2011). YqfG and YoaJ, small membrane proteins with unknown functions, are predicted to have type II (NIN-COUT) membrane orientation according to the TMHMM program (Krogh et al., 2001). Membrane topology of YoaJ was confirmed experimentally (Fontaine et al., 2011). We examined the cleavage of these proteins by RseP because their structural features were analogous to those of signal peptides that were recently identified as RseP substrates (Saito et al., 2011).\n\nTo facilitate detection, we attached an HA-MBP domain to the N-termini of YqfG and YoaJ (Figure 1E) and expressed them in \u0394rseA/\u0394rseP strain (Figure 2E,F). Anti-HA immunoblotting showed the accumulation of a protein of the expected size (approximately 46 kDa) when HA-MBP-YqfG was expressed alone (Figure 2E). The protein was converted to a slightly smaller fragment upon co-expression with wild-type RseP-HM but not with RseP-HM E23Q mutant, indicating that HA-MBP-YqfG was cleaved by RseP presumably within its TM. As expected, the \u0394loop mutant did not cleave HA-MBP-YqfG. In contrast, HA-MBP-YoaJ did not undergo any cleavage (Figure 2F). Cell fractionation and alkali extraction showed that most HA-MBP-YoaJ was integrally associated with the membrane (Figure 2\u2014figure supplement 1), suggesting that its inability to undergo cleavage was not because of defective membrane localisation. These results show that the MRE \u03b2-loop plays a critical role in the proteolytic function of RseP and that RseP selectively cleaves type II membrane proteins, even those with a small periplasmic domain.\n\n### Pro substitutions in the MRE \u03b2-loop lead to the differential cleavage of the model substrates\n\nCys-scanning mutagenesis was performed to identify functionally important residues in the MRE \u03b2-loop. We constructed single Cys RseP derivatives by substituting Cys residues in place of the 15 residues in the MRE \u03b2-loop of Cys-less RseP-HM, which contained Ala residues in place of the 2 original Cys residues (Cys-33 and Cys-427). Complementation and model substrate cleavage assays showed that all the single Cys mutants, except G68C supported normal cell growth and cleaved HA-MBP-RseA(LY1)148 (Figure 2\u2014figure supplement 2). Although the G68C mutant was inactive in complementation, it cleaved the model substrate with a slightly lower but significant efficiency. These results indicate that no residue in the MRE \u03b2-loop is specifically required for the proteolytic function of RseP. It is unclear why the G68C mutant failed to complement the \u0394rseP mutation despite its substantial protease activity against the model substrate. G68C mutation might destabilise or inactivate the mutant protein under conditions employed in the complementation assay or might impair the cleavage of certain substrates that affect cell viability (see below).\n\nWe then performed a Pro-scanning experiment to test whether the secondary or tertiary structure of the MRE \u03b2-loop affects RseP function. Introduction of a Pro residue would disturb the higher-order structures of the MRE \u03b2-loop because Pro lacks the amide proton unlike other amino acids. Because the MRE \u03b2-loop originally had 1 Pro residue at position 65, we replaced other residues with Pro individually. In contrast to the results for Cys mutants, Pro substitution at positions 67, 68, 69 and 70, which are thought to be located in the distal part (Leu-66 to Glu-75) of the MRE \u03b2-loop, abolished complementation (Figure 2B). Consistently, the cleavage of HA-MBP-RseA148 was impaired moderately (G67P) or severely (G68P, Y69P and V70P) by these mutations (Figure 2C). Similar cleavage defects were observed with HA-MBP-RseA(LY1)148 for G67P, Y69P and V70P mutants (Figure 2D). Interestingly, the G68P mutant, which was almost completely defective in cleaving HA-MBP-RseA148, efficiently cleaved HA-MBP-RseA(LY1)148.\n\nPro mutations in the MRE \u03b2-loop exerted more profound effects on the cleavage of HA-MBP-YqfG than on the cleavage of the other 2 model substrates. Cleavage was severely impaired by G67P, G68P, Y69P and V70P mutations and was moderately impaired by I61P, L66P and K71P mutations. However, the latter 3 mutations did not inhibit the cleavage of the other 2 model substrates to detectable levels.\n\nSubstrate cleavage kinetics was investigated by pulse-chase experiments (Figure 2G\u2013I and Figure 2\u2014source data 1). We found that the initial rates of HA-MBP-RseA(LY1)148 and HA-MBP-YqfG cleavage by co-expressed RseP-HM were slightly lower than that of HA-MBP-RseA148 cleavage (Figure 2G). During the 15 min chase period, the G68P mutant significantly cleaved HA-MBP-RseA(LY1)148 (Figure 2H) while the K71P mutant efficiently cleaved HA-MBP-RseA148 and HA-MBP-RseA(LY1)148 but only slightly cleaved HA-MBP-YqfG, which was consistent with immunoblotting results (Figure 2I). Thus, the intrinsic susceptibility of each model substrate to wild-type RseP was not correlated with its susceptibility to MRE \u03b2-loop mutants, indicating that the MRE \u03b2-loop mutations resulted in the differential cleavage of different model substrates.\n\n### The MRE \u03b2-loop is important for stable substrate\u2013RseP interaction\n\nWe investigated the possible role of the MRE \u03b2-loop in RseP\u2013substrate interaction by co-immunoprecipitation experiments (Figure 3). Inverted membrane vesicles (IMVs) were prepared from \u0394rseA/\u0394rseP strain expressing HA-MBP-RseA and RseP-HM derivatives, solubilised with n-dodecyl-\u03b2-d-maltoside (DDM) and were subjected to immunoprecipitation with agarose-conjugated anti-Myc or anti-HA antibody. The precipitated proteins were analysed by anti-HA or anti-Myc immunoblotting. In all the following co-immunoprecipitation/crosslinking experiments, RseP derivatives carried a mutation (E23Q) in the active site motif to prevent substrate cleavage during expression and immunoprecipitation/crosslinking. We previously used a similar approach to show that several residues in TM3, including Asn-389, play important roles in substrate binding (Koide et al., 2008). Consistent with the previous results, wild-type RseP-HM was co-immunoprecipitated with HA-MBP-RseA and HA-MBP-RseA was co-immunoprecipitated with RseP-HM, but no co-immunoprecipitation was observed with RseP-HM having an N389L mutation (Figure 3A). Deletion of the MRE \u03b2-loop almost completely abolished co-immunoprecipitation, suggesting its importance in RseP\u2013substrate interaction (Figure 3B). We found that all the MRE \u03b2-loop Pro mutants, except D74P located in the C-terminus of the loop, significantly decreased co-immunoprecipitation efficiency, indicating that the Pro mutations compromised the interaction between RseP-HM and model substrates (Figure 3A). The result that absence of or mutations in the MRE \u03b2-loop interfered with RseP\u2013substrate interaction suggests that the MRE \u03b2-loop is required for stable substrate binding by RseP. Pro substitutions in the proximal part (Ile-61 to Ile-64) of the MRE \u03b2-loop had little effect on substrate proteolysis (Figure 2) and decreased co-immunoprecipitation. These mutants would exhibit weak but sufficient interaction with substrates to promote cleavage in a membrane-integrated state.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/08928/elife-08928-fig3-v1.jpg)\n\n**Figure 3.:** (A and B) Co-immunoprecipitation assays of RseP\u2013substrate interaction. IMVs were prepared from KK211 (\u0394rseA/\u0394rseP) cells harbouring a plasmid encoding the indicated mutant of RseP-HM and pSTD881 (HA-MBP-RseA140). The IMVs were solubilised with DDM and were subjected to immunoprecipitation with anti-HA or anti-Myc antibody. The immunoprecipitates and the DDM-solubilised proteins (input) were analysed by 12.5% Laemmli\u2013SDS-PAGE and immunoblotting with anti-HA and anti-Myc antibodies. Proteins form approximately fourfold more number of cells were loaded on the gel for the immunoprecipitated samples as compared with the input samples. All the RseP-HM derivatives carried the E23Q mutation. See Figure 3\u2014figure supplement 1 for interaction between RseP-HM and HA-MBP-YoaJ.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08928/elife-08928-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Co-immunoprecipitation assay of RseP\u2013YoaJ interaction. IMVs were prepared from cells of KK211 (\u0394rseA/\u0394rseP) carrying a plasmid encoding the indicated mutant form of RseP-HM in addition to pSTD881 (HA-MBP-RseA140) or pKA210 (HA-MBP-YoaJ), solubilized with DDM and were subjected to immunoprecipitation with anti-HA. Immunoprecipitates and the DDM-solubilized proteins (input) were analyzed by 12.5% Laemmli\u2013SDS-PAGE and anti-HA and anti-Myc immunoblotting. For the immunoprecipitated samples, proteins were loaded onto the gel in an amount corresponding to approximately fourfold more cells than were used for the input samples. All the RseP-HM derivatives carried the E23Q mutation. (B) Effect of YoaJ overproduction on cleavage of HA-RseA148. Cells of AD1811 (\u0394rseA)/pKA195 (HA-RseA148)/pKA268 (HA-MBP-YoaJ) or KK211 (\u0394rseA/\u0394rseP)/pKA195/pKA268 were grown at 30\u00b0C in M9-based medium containing 1 mM IPTG and 1 mM cAMP for 3 hr. Proteins were acid-precipitated, solubilized in 1% SDS and analyzed by 10% Laemmli\u2013SDS-PAGE and anti-HA, anti-RseA and anti-RseP immunoblotting as indicated.\n\nWe then examined the interaction of RseP with YoaJ (Figure 3\u2014figure supplement 1). Anti-HA co-immunoprecipitation showed that RseP-HM was pulled down with HA-MBP-YoaJ in an MRE \u03b2-loop-dependent manner, indicating that YoaJ can interact with RseP although it is not cleaved by RseP and that the MRE \u03b2-loop can affect this interaction. However, overexpression of HA-MBP-YoaJ little affected the cleavage of co-expressed HA-RseA148 by RseP. It would be possible that YoaJ interacts with the MRE \u03b2-loop with much lower affinity than RseA does in the membrane, although similar amounts of RseP-HM were co-immunoprecipitated with HA-MBP-YoaJ and HA-MBP-RseA148 after membrane solubilisation. Alternatively, YoaJ might bind to RseP at a site different from that for RseA and other substrate proteins. In this case, deletion of the MRE \u03b2-loop might have indirectly disturbed the former site. The nature of the RseP\u2013YoaJ interaction should be clarified in future study.\n\n### In vivo photo-crosslinking between RseP and RseA\n\nThe above results and the presumed location of the MRE \u03b2-loop near the proteolytic active site suggest that the loop is directly involved in substrate binding by RseP. This was examined by site-directed in vivo photo-crosslinking experiments (Figure 4). Amber suppression-mediated incorporation of p-benzoylphenylalanine (pBPA), a non-natural photoreactive amino acid (Young et al., 2010), allowed the expression of RseP-HM derivatives with pBPA in the MRE \u03b2-loop. We examined the crosslinking of plasmid-expressed RseP-HM with chromosomally encoded RseA. We used \u0394rseP/\u0394ompA/\u0394ompC strain as the host strain because rseP can be deleted in rseA+ background when genes encoding outer membrane proteins OmpA and OmpC are deleted (Douchin et al., 2006). The host strain expressed DegS, which cleaved some amount of RseA to RseA148. Expression of pBPA-containing RseP-HM proteins decreased the accumulation of RseA148, indicating the functionality of these proteins, although some exhibited lower proteolytic activity against RseA (Figure 4\u2014figure supplement 1A). After the exposure of cells to UV irradiation, the proteins were analysed by SDS-PAGE and immunoblotting. Anti-RseA immunoblotting showed UV irradiation produced bands of approximately 71 kDa (XL) when pBPA was incorporated at position 69, 71 or 74, suggesting that these bands represented photo-crosslinked products between RseP-HM and RseA (Figure 4A, upper panels). However, these bands were not detected by anti-Myc immunoblotting (Figure 4A, lower panels). As the expression level of plasmid-expressed RseP-HM was much higher than that of chromosomally encoded RseA, it seemed likely that only a small portion of RseP-HM was crosslinked with RseA. The over-expression of RseP-HM caused an increased background, making it difficult to detect weak bands of crosslinked products by anti-Myc immunoblotting. To confirm whether the 71 kDa band represented an RseP\u2013RseA crosslinked product, we conducted immunoprecipitation experiments by using total proteins obtained from UV-irradiated RseP(Y69pBPA)-HM-expressing cells (Figure 4\u2014figure supplement 1B). Anti-RseA antibody precipitated a predominant 71 kDa band that reacted with both anti-RseA and anti-RseP antibodies (upper panels). Anti-Myc antibody also precipitated a single anti-RseA-reactive protein of 71 kDa (lower left panel). Although no clear band of the corresponding size was obtained after anti-RseP immunoblotting (lower right panel), this may be due to increased background disturbance because of the high expression of RseP-HM. These results further support the notion that the 71 kDa band was the RseP\u2013RseA crosslinked product.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/08928/elife-08928-fig4-v1.jpg)\n\n**Figure 4.:** (A) Analysis of the MRE \u03b2-loop/RseA crosslinking. KA418 (\u0394ompA/\u0394ompC/\u0394rseP)/pEVOL-pBpF cells were transformed with a plasmid encoding an RseP derivative with an amber mutation at the indicated position. The cells were grown at 30\u00b0C in M9-based medium containing 0.02% arabinose and 1 mM pBPA for 6 hr and were irradiated with UV light for 0 or 10 min. Proteins were precipitated using TCA and were analysed by SDS-PAGE with a 10% wide-range gel (Nacalai Tesque, Inc. Kyoto, Japan) containing 1% SDS and immunoblotting with anti-RseA antibody or by SDS-PAGE with a 10% Laemmli gel and immunoblotting with anti-Myc antibody. XL indicates crosslinked products. (B) Effect of the N389L mutation on photo-crosslinking. KA418/pEVOL-pBpF strain was transformed with a plasmid encoding an RseP derivative with an amber mutation at the indicated position with or without the N389L mutation. The cells were subjected to photo-crosslinking analysis, as indicated in A. (C) Effect of periplasmic truncation of RseA on photo-crosslinking. KA418/pEVOL-pBpF or KA438 (KA418, \u0394degS)/pEVOL-pBpF cells were transformed with a plasmid encoding an RseP derivative with an amber mutation at the indicated position. The cells were subjected to photo-crosslinking analysis, as indicated in A. All the RseP-HM derivatives in A\u2013C carried the E23Q mutation. See Figure 4\u2014figure supplement 1 for proteolytic activity of the pBPA-containing RseP derivatives and verification of RseP\u2013RseA photo-crosslinking.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08928/elife-08928-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Proteolytic activities of the RseP-HM derivatives having pBPA in the MRE \u03b2-loop. Strain KA418 (\u0394rseP/\u0394ompA/\u0394ompC)/pEVOL-pBpF was further transformed with a plasmid encoding an RseP-derivative with an amber mutation at the indicated positions. Cells were grown at 30\u00b0C in the M9-based medium containing 0.02% arabinose and 1 mM pBPA for 6 hr. Proteins were acid-precipitated, solubilized in SDS sample buffer and analyzed by 10% SDS-PAGE and anti-RseA or anti-Myc immunoblotting as indicated. (B) Identification of the photo-crosslinked proteins by immunoprecipitation. The UV-irradiated, acid-precipitated proteins from cells of KA429 or KA436 carrying a plasmid encoding the indicated RseP-HM derivatives in addition to pEVOL-pBpF were solubilized in 1% SDS and subjected to immunoprecipitation with agarose-conjugated anti-RseA (upper panels) or anti-Myc (lower panels) antibodies. Immunocomplexes were dissolved in SDS-sample buffer and analyzed by 10% SDS-PAGE and anti-RseA or anti-Myc immunoblotting as indicated. For the immunoprecipitated samples, proteins were loaded onto the gel in an amount corresponding to approximately 70-fold more cells than was used for the input samples.\n\nThe N389L mutation that destabilised the RseP\u2013substrate interaction considerably decreased RseA crosslinking at the 3 positions (Figure 4B), suggesting that the photo-crosslinking reflected the functional interaction between RseP and RseA. We examined the effect of the cleavage by DegS (Figure 4C). Periplasmic truncation of RseA was suppressed in the absence of DegS, thus increasing the accumulation of intact RseA, although few non-specific cleavages by other cellular proteases still occurred under this condition. RseP(Y69pBPA)-HM generated a significantly lower amount of the crosslinked product in the \u0394degS strain than in the degS+ strain, indicating that the MRE \u03b2-loop mainly interacts with the DegS-cleaved form of RseA.\n\n### Disulfide crosslinking of the MRE \u03b2-loop with RseA\n\nTo determine whether the MRE \u03b2-loop directly interact with RseA TM, we examined disulfide crosslinking between RseP-HM and HA-RseA140 mimicking the DegS-cleaved form of RseA (Kanehara et al., 2002). An RseP-HM variant having a unique Cys residue at position 69, 70 or 71 was co-expressed with HA-RseA140, which has a unique Cys at position 109, or with its variant HA-RseA(A108C/C109A)140, which has a unique Cys in place of Ala-108 (Cys-109 was replaced with Ala), in a \u0394rseA/\u0394rseP/\u0394degS strain. Ala-108 and Cys-109 are located in the middle of the RseA TM, and RseP-catalysed cleavage occurs between these residues (Akiyama et al., 2004; Flynn et al., 2004). Cells expressing these proteins were treated with Cu2+(phenanthroline)3 to induce disulfide bond formation. After quenching the oxidant, proteins were acid-denatured and solubilised in SDS. The samples were analysed directly by SDS-PAGE or after 2-mercaptoethanol treatment to cleave the disulfide bonds. The oxidant treatment generated a \u223c75 kDa band that reacted with both anti-HA and anti-Myc antibodies when Y69C and K71C variants but not Cys-less and V70C variants of RseP-HM were co-expressed with HA-RseA(A108C/C109A)140 (Figure 5A). This band disappeared when the samples were treated with 2-mercaptoethanol before SDS-PAGE (Figure 5B). The same results were obtained when the single Cys RseP-HM variants were co-expressed with HA-RseA140(C109). These results were consistent with those of photo-crosslinking experiments because pBPA at positions 69 and 71 but not at position 70 was crosslinked with RseA, indicating that the MRE \u03b2-loop was near the RseP cleavage site. Together, our results strongly suggest that the MRE \u03b2-loop can directly bind to substrate TMs.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/08928/elife-08928-fig5-v1.jpg)\n\n**Figure 5.:** AD1840 (\u0394rseA/\u0394rseP/\u0394degS) cells harbouring a combination of plasmids encoding Cys-less or the indicated single Cys derivative of RseP-HM and HA-RseA140 were treated with Cu2+(phenanthroline (PT))3 at 37\u00b0C for 5 min. After quenching the oxidant, proteins were precipitated using TCA and free thiol groups were blocked by treatment with N-ethylmaleimide (NEM). The samples were analysed by 10% Laemmli\u2013SDS-PAGE and immunoblotting with anti-HA (upper panels) or anti-Myc (lower panels) antibody, followed by treatment without (A) or with (B) 10% 2-mercaptoethanol (ME). All the RseP-HM derivatives carried the E23Q mutation. Asterisk indicates a possible dimer of RseP-HM (Koide et al., 2008) that was not characterised further.\n\n### Suppression of MRE \u03b2-loop mutations by destabilising substrate TM helices\n\nWe previously showed that helix-destabilising residues in substrate TMs promote the binding and cleavage of a substrate by RseP (Akiyama et al., 2004; Koide et al., 2008). Our current results showed that several Pro substitutions in the MRE \u03b2-loop exerted opposite effects, that is, they compromised substrate binding and cleavage. Therefore, we examined whether destabilisation of a substrate TM helix improves its cleavage by RseP MRE \u03b2-loop mutants. Because the MRE \u03b2-loop was inserted halfway into the membrane from the cytoplasmic side, we replaced each residue in the N-terminal region (Ile-8 to Phe-15) of the presumed YqfG TM by a Pro residue, a strong helix destabiliser, and investigated its cleavage by RseP G67P and K71P mutants, which showed severe and moderate defects, respectively, in cleaving HA-MBP-YqfG (Figure 6). Wild-type RseP-HM cleaved all the HA-MBP-YqfG mutants almost as efficiently as it cleaved the original HA-MBP-YqfG (Figure 6A). L11P and L12P mutations but not other mutations appreciably increased the cleavage by RseP(G67P)-HM (Figure 6B). In contrast, cleavage by RseP(K71P)-HM was markedly improved by mutations other than L12P and L13P. L12P and L13P also improved cleavage, but their effects were much lower (Figure 6C). We focused on 2 YqfG TM mutations I8P and L12P that resulted in differential cleavage by RseP(G67P)-HM and RseP(K71P)-HM and confirmed their effects by pulse-chase experiments (Figure 6D\u2013F and Figure 6\u2014source data 1). RseP(WT)-HM efficiently cleaved wild-type HA-MBP-YqfG and its I8P and L12P mutants (Figure 6D). G67P mutation in the RseP MRE \u03b2-loop severely impaired its ability to cleave wild-type HA-MBP-YqfG. Only some cleavage was observed after the 60 min chase period (Figure 6E). K71P mutation, which had a weaker effect on immunoblotting, also impaired the ability of RseP to cleave wild-type HA-MBP-YqfG during the 15 min chase period (Figure 6F). RseP(G67P)-HM significantly cleaved HA-MBP-YqfG(L12P) but not HA-MBP-YqfG(I8P) (Figure 6E) and RseP(K71P)-HM efficiently cleaved HA-MBP-YqfG(I8P) but not HA-MBP-YqfG(L12P) (Figure 6F), which was consistent with the immunoblotting results. Replacement of Leu-12 in YqfG by Asn, another strong helix-destabilising amino acid, also promoted cleavage by the RseP MRE \u03b2-loop Pro mutants. However, replacement of the same residue by a helix-forming Trp residue resulted in no increase in cleavage (Figure 6A\u2013C), suggesting that helix destabilisation is important for improving substrate cleavage. The I8P or L12P mutation did not promote cleavage by the RseP \u0394loop variant, indicating that these mutations did not bypass the RseP MRE \u03b2-loop function for substrate cleavage (Figure 6\u2014figure supplement 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/08928/elife-08928-fig6-v1.jpg)\n\n**Figure 6.:** (A\u2013C) Immunoblotting analysis of YqfG cleavage. KA306 cells carrying a combination of plasmids encoding the indicated RseP-HM mutants and HA-MBP-YqfG mutants were grown and were subjected to immunoblotting analysis, as described in Figure 2. (D\u2013F) Pulse-chase analysis of YqfG cleavage. KA306 cells harbouring a combination of plasmids encoding the indicated RseP-HM mutants and HA-MBP-YqfG mutants were grown and subjected to pulse-chase analysis, as described in Figure 2. Two independent experiments were performed, and mean values are shown along with standard deviations. See Figure 6\u2014source data 1 for gel images and quantitated band intensities data for Figure 6D\u2013F. (G) Immunoblotting analysis of LY1 cleavage. KA306 cells carrying a combination of plasmids encoding the indicated RseP-HM mutants and HA-MBP-RseA(LY1)148 mutants were grown and were subjected to immunoblotting analysis, as above.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08928/elife-08928-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** KA306 cells harbouring a combination of plasmids encoding the indicated RseP-HM mutants and HA-MBP-YqfG mutants were grown and total proteins were subjected to immunoblotting analysis, as described in Figure 2.\n\nSimilar effects of a Pro substitution was also observed for LY1, another substrate TM (Figure 6G); the F21P mutation in LY1 significantly improved the cleavage of this TM by RseP(V70P)-HM that was almost inactive in cleavage of wild type LY1, but the Pro substitution of the neighbouring residue, Phe-20, did not.\n\nThe results that helix-destabilising mutations in substrate TMs at least partially suppress the defects in substrate cleavage induced by Pro substitutions in the RseP MRE \u03b2-loop in an allele-specific manner suggests a specific interaction between substrate TMs and the RseP MRE \u03b2-loop.\n\n## Discussion\n\nRseP is one of the most extensively characterised proteins among the S2P family of I-CLiPs. However, detailed mechanisms underlying its substrate recognition and cleavage are not completely understood. We focused on the MRE \u03b2-loop, a conserved intramembrane \u03b2-hairpin-like structure, and investigated its role in substrate proteolysis by RseP. Deletion or Pro substitution in the MRE \u03b2-loop impaired substrate cleavage, indicating its critical role in the proteolytic function of RseP. Crosslinking and co-immunoprecipitation experiments showed that the MRE \u03b2-loop was directly involved in substrate binding. Several Pro substitutions differentially affected RseP-catalysed proteolysis of substrates. Helix-destabilising mutations in substrate TMs suppressed the defects caused by mutations in the MRE \u03b2-loop in an allele-specific manner. These results collectively suggest that the MRE \u03b2-loop specifically recognises substrate TMs.\n\nThe proximal part of the MRE \u03b2-loop has a short \u03b2-strand (Ile72-Leu-Leu) in the reported crystal structure of mjS2P (Feng et al., 2007). However, no secondary structure is assigned for the distal part of the MRE \u03b2-loop. Analysis of the secondary structure with STRIDE (Frishman and Argos, 1995) suggested that Val80-Ala-Met in the distal part forms a \u03b2-strand (Figure 1B\u2013D). This region is in an extended conformation with the side chains facing the opposite sides in an alternate manner (as expected for a \u03b2-strand) suggesting that this region forms a \u03b2-strand. Sequence-based prediction suggested that the MRE \u03b2-loops of RseP and SpoIVFB also have \u03b2-strands in the corresponding regions (Figure 1D), suggesting that the MRE \u03b2-loop commonly assumes a \u03b2-hairpin-like structure.\n\nCys-scanning mutagenesis suggest that no specific residue in the MRE \u03b2-loop is essential for the proteolytic function of RseP because the Cys substitutions had little or only slight effect on the substrate cleavage. In contrast, substrate cleavage was severely impaired by Pro substitutions. These observations suggest that a higher-order structure of the MRE \u03b2-loop is important for the proteolytic function of RseP. Interestingly, some Pro substitutions in the MRE \u03b2-loop resulted in the differential cleavage of the 3 model substrates. Pulse-chase experiments showed that RseP(G68P)-HM significantly cleaved LY1 but only slightly cleaved RseA TM and YqfG TM. In contrast, RseP(K71P)-HM efficiently cleaved RseA TM and LY1 but only slightly cleaved YqfG TM. These 3 substrates were rapidly cleaved by wild-type RseP-HM. Therefore, the effects of MRE \u03b2-loop mutations cannot be simply explained by the intrinsic susceptibility of these substrates to RseP. In addition, some mutations in YqfG TM suppressed G67P and K71P mutations of the RseP MRE \u03b2-loop in an allele-specific manner. The I8P mutation improved the proteolysis by RseP(K71P)-HM but not by RseP(G67P)-HM, whereas the L12P mutation improved the proteolysis by RseP(G67P)-HM compared with that of RseP(K71P)-HM. Similarly the F21P, but not F20P, mutation in the LacY TM1 region (LY1) partially suppressed the V70P mutation of the RseP MRE \u03b2-loop. These results suggest that the MRE \u03b2-loop specifically recognises substrate TMs.\n\nDirect evidence of MRE \u03b2-loop\u2013substrate interaction was obtained by co-immunoprecipitation and crosslinking experiments. Pro substitutions in the MRE \u03b2-loop markedly decreased the co-immunoprecipitation of RseP-HM with HA-MBP-RseA after membrane solubilisation, suggesting that the integrity of the MRE \u03b2-loop is required for stable RseP\u2013substrate interaction. Disulfide- and photo-crosslinking experiments showed that residues at positions 69 and 71 of the MRE \u03b2-loop contact with substrates. Cys residues at these positions disulfide-bonded with Cys residues on either side of the scissile bond in RseA. A similar result was reported recently for SpoIVFB and its substrate Pro-\u03c3K (Zhang et al., 2013). A Cys residue in place of Val-70 in the MRE \u03b2-loop of SpoIVFB formed disulfide bonds with Cys residues at several positions around the cleavage site in Pro-\u03c3K, suggesting that the MRE \u03b2-loop of SpoIVFB directly interacts with Pro-\u03c3K. However, the role of the MRE \u03b2-loop in SpoIVFB function has not been investigated experimentally. Although RseP also has a Val residue at the position corresponding to Val-70 in SpoIVFB (Figure 1D), we did not observe any substrate crosslinking at this position. This might be due to differences in the mode of enzyme\u2013substrate interaction between RseP and SpoIVFB. Indeed, the substrates of these enzymes show some differences. In contrast to RseA, which is a single-spanning membrane protein with type II orientation, Pro-\u03c3K is suggested to be peripherally associated with the membrane (Zhou et al., 2013). In addition, although helix-destabilising residues in substrate TMs are important for their efficient cleavage by RseP, these residues are not required for the cleavage of Pro-\u03c3K by SpoIVFB (Zhou et al., 2013). Thus, the role of the MRE \u03b2-loop in substrate binding and cleavage might slightly differ between RseP and SpoIVFB.\n\nThe N389L mutation in RseP TM3, which was previously shown to weaken the RseP-substrate interaction (Koide et al., 2008), inhibited the in vivo photo-crosslinking of the MRE \u03b2-loop with RseA, suggesting that the observed crosslinking reflected a functional RseP\u2013substrate interaction. The TM4 (corresponding to RseP TM3) of mjS2P that contains one of the active site residues (corresponding to Asp-402 in RseP TM3) can be located in the vicinity of the proteolytic active site and the MRE \u03b2-loop (Feng et al., 2007). We previously showed that Cys introduced at the positions of Pro-397 and Pro-399 in RseP TM3 can form a disulfide bond with Cys at multiple positions of RseA TM. In mjS2P, the residues corresponding to Pro-397 and Pro-399 of RseP reside in a loop-like structure. The region containing residues 397 and 399 might be flexible and act with the MRE \u03b2-loop in stable binding of a substrate.\n\nAn \u03b1-helix is generally not amenable to proteolysis and unwinds to an extended structure to undergo cleavage (Wolfe, 2009). Many zinc metalloproteinases have a \u03b2-strand (edge strand) close to their proteolytic active site that binds to substrates in an extended conformation through \u03b2-strand addition and presents them to catalytic residues (Stocker and Bode, 1995; Langklotz et al., 2012). Our results suggest that the MRE \u03b2-loop stabilises the extended conformation of a substrate by directly binding to it through \u03b2-strand addition, thus promoting substrate cleavage in a manner similar to the edge strand (Figure 7). Crosslinking at alternate positions in the Tyr69-Val-Lys region supports the idea that this region is in a \u03b2-strand conformation during its interaction with a substrate. According to this model, mutations that disrupt the secondary structure of the distal part of the MRE \u03b2-loop would compromise its interaction with a substrate. Introduction of a Pro residue will disturb substrate accommodation through \u03b2-strand addition or interstrand interaction because Pro residues cannot serve as hydrogen bond donors because of the absence of the amide proton. Moreover, if the compromised interaction of the MRE \u03b2-loop with a substrate prevents efficient conformational conversion of the substrate TM and decreases its cleavage efficiency, destabilisation of the \u03b1-helical structure of the substrate TM might improve its cleavage by RseP MRE \u03b2-loop mutants, which is consistent with our results. A recent structural study of E. coli GlpG that belongs to the rhomboid family of I-CLiPs revealed that the P1\u2013P4 region of a substrate forms a \u03b2-sheet with the GlpG loop 3 located near the active site (Zoll et al., 2014). Mutations in loop 3 severely compromise the GlpG activity, suggesting the interaction between the substrate and loop 3 is functionally important (Baker and Urban, 2012). Although the loop 3 of GlpG and the MRE \u03b2-loop of RseP differ in that the former is located near the periplasmic surface of the membrane and forms a parallel \u03b2-sheet with a substrate whereas the latter is located near the cytoplasmic surface and forms a anti-parallel \u03b2-sheet, they might have a similar role in stabilising an extended substrate structure and promoting its cleavage.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/08928/elife-08928-fig7-v1.jpg)\n\n**Figure 7.:** (A) The periplasmic PDZ tandem of RseP acts as a size-exclusion filter to discriminate between substrates based on the size of their periplasmic region. (B) The binding of the MRE \u03b2-loop serves as an additional checkpoint for substrates with a small periplasmic region and contributes to selective substrate cleavage. (C) The MRE \u03b2-loop binds to substrate TMs with some specificity because of \u03b2-strand addition, stabilises its extended conformation and presents the substrate to the recessed proteolytic active site of RseP.\n\nDifferential effects of Pro substitutions in the MRE \u03b2-loop on the cleavage of the model substrates and allele-specific suppression of these mutations by helix-destabilising mutations in substrate TMs suggest that the MRE \u03b2-loop\u2013substrate interaction occurs with some specificity. MRE \u03b2-loop-assisted cleavage of a substrate may be affected by helix stability and amino acid sequence of substrate TMs. We recently suggested that the periplasmic PDZ tandem of RseP acts as a size-exclusion filter to prevent the cleavage of substrates with bulky periplasmic domains (Figure 7A) (Hizukuri et al., 2014). In this study, we observed that RseP did not cleave YoaJ, a type II membrane protein with a very small periplasmic domain, suggesting the presence of additional mechanism(s) for substrate discrimination. In vivo photo-crosslinking experiments suggest that the MRE \u03b2-loop interacts with RseA after site 1 cleavage (Figure 7B) and that it acts as the second checkpoint for membrane proteins that passed the first check by the PDZ filter and contributes to their selective proteolysis. It should be noted that mjS2P does not have PDZ domains. Thus, the MRE \u03b2-loop could play a central role in cleaving specific substrates in this enzyme.\n\nAlthough the MRE \u03b2-loop may not interact with intact RseA, our previous chemical crosslinking and co-immunoprecipitation experiments showed that RseP directly interacted with intact RseA in the membrane (Kanehara et al., 2003), suggesting that RseP has a separate binding site (exosite) for intact RseA. Because the PDZ filter excludes intact RseA from the intramolecular active site, the presumed exosite may exist on the external surface of the enzyme. Other families of I-CLiPs such as rhomboid and \u03b3-secretase have also been suggested to have an exosite (Kornilova et al., 2005; Strisovsky et al., 2009; Watanabe et al., 2010; Arutyunova et al., 2014). A systematic in vivo crosslinking approach would help in identifying binding sites for intact RseA. This along with the structural analysis of RseP, especially in complex with a substrate, would be essential for verifying our model and for understanding molecular mechanisms underlying substrate recognition and intramembrane proteolysis by RseP. Further, we would like to study the physiological significance of RseP-catalysed cleavage of YqfG and identify additional substrates of RseP to elucidate all the cellular roles of RseP.\n\n## Materials and methods\n\n### Bacterial strains\n\nAll the bacterial strains used in this study are derivatives of E. coli K12 and are listed in Supplementary file 1. KA306 was constructed by transferring the clpP::cat marker derived from MC4100 clpP::cat (provided by M. Kitagawa) into AD2328. The clpP::cat marker was introduced to stabilise the RseP-cleaved fragment of HA-MBP-RseA148. KA418 was constructed as follows. First, \u0394ompA::kan from JW0940 (Baba et al., 2006) was introduced into CU141 by P1 transduction, and the kan cassette of the resulting strain was deleted using pCP20, as described previously (Datsenko and Wanner, 2000). Introduction of \u0394ompC::kan from JW2203 (Baba et al., 2006) and deletion of the kan cassette were performed in a similar manner to yield YH426. KA363 was constructed by introducing rseP::kan from KK211 into YH426. We found that KA363 had spontaneously lost F\u2032lac+ lacIq. We thus constructed KA418 by re-introducing F\u2032lac+ lacIq into KA363 by conjugation. KA438 was constructed by transferring degS::tet from AD1839 (Kanehara et al., 2002) to KA418 by P1 transduction.\n\n### Plasmids\n\nPlasmids used in this study are listed in Supplementary file 2. pKA1 and pKA117 were constructed by replacing the region encoding the MRE \u03b2-loop (Ile61 to Glu75) in rseP-his6-myc on pKK49 or a corresponding region in rseP(Cys-less)-his6-myc on pSTD892 with GGCGGT (encoding Gly\u2013Gly) by site-directed mutagenesis. pKA19 was constructed by introducing the E23Q mutation into pSTD892. pKA52 was constructed by replacing a 1.5 kb BamHI\u2013SacI fragment of pKA1 with a corresponding fragment of pKK34. pKA65 was constructed by cloning a 1.4 kb EcoRI\u2013HindIII fragment of pYH19 in the same site of pSTD689. Other plasmids were constructed by site-directed mutagenesis by using appropriate combinations of primers and template plasmids. Mutations were confirmed by DNA sequencing. pMZ14 was constructed by cloning a PCR-amplified fragment encoding YqfG into the SalI\u2013PstI site of pSTD835 and by ligating an EcoRI\u2013HindIII fragment of the resulting plasmid with EcoRI-/HindIII-digested pSTD689. pKA195 was constructed by cloning a 0.6 kb EcoRI\u2013HindIII fragment of pYH18 in the same site of pSTD689. For construction of pKA210, first, a PCR-amplified fragment encoding YoaJ was cloned in the SalI\u2013PstI site of pSTD835, and then an EcoRI\u2013HindIII fragment of the resulting plasmid was ligated with EcoRI-/HindIII-digested pSTD689. pKA268 was constructed by cloning a 1.4 kb EcoRI\u2013HindIII fragment of pMZ14 in the same site of pUC118.\n\n### Media\n\nL medium (10 g/l bactotryptone, 5 g/l yeast extract and 5 g/l NaCl; pH adjusted to 7.2 by using NaOH) and M9 medium (without CaCl2) (Miller, 1972) were used for bacterial cultivation. Ampicillin (50 \u03bcg/ml), chloramphenicol (20 \u03bcg/ml), spectinomycin (50 \u03bcg/ml), kanamycin (25 or 12.5 \u03bcg/ml) and/or tetracycline (25 \u03bcg/ml) were added for selecting transformants and transductants and for growing plasmid-harbouring strains.\n\n### Cell fractionation and alkali extraction\n\nCells were grown at 30\u00b0C in L medium containing 1 mM isopropyl-\u03b2-d-thiogalactopyranoside (IPTG) and cAMP and were suspended in 50 mM HEPES-KOH (pH 8.0) containing 50 mM KCl, 10% glycerol and 1 mM dithiothreitol (DTT). The cells were then fractionated after sonication or subjected to alkali extraction. For cell fractionation (Kihara et al., 2001), the cells were mixed with 1/10 vol of 1 mg/ml lysozyme in 100 mM EDTA (pH 8.0) and were incubated at 0\u00b0C for 30 min. The cells were then disrupted by sonication and ultracentrifuged (99,000\u00d7g for 1 hr at 4\u00b0C). The pellet was suspended in 50 mM HEPES-KOH (pH 8.0) containing 50 mM KCl, 10% glycerol and 1 mM DTT. Proteins were precipitated using 5% (final concentration) trichloroacetic acid (TCA). Alkali fractionation was performed as described previously (Ito and Akiyama, 1991). The cells were suspended in 50 mM HEPES-KOH (pH 8.0) containing 50 mM KCl, 10% glycerol and 1 mM DTT. After addition of 1/10 vol of 10 mg/ml lysozyme in 50 mM EDTA (pH 8.0), the cells were incubated at 0\u00b0C for 5 min and were disrupted by freezing-thawing. The samples were then mixed with an equal volume of cold 0.2 N NaOH, vortexed vigorously for approximately 10 s and ultracentrifuged in a microfuge (99,000\u00d7g for 1 hr at 4\u00b0C). The supernatant was mixed with 1/10 vol of 100% (wt/vol) TCA. Acid denatured protein precipitates were collected by centrifugation, washed with acetone, and analysed by 12.5% SDS-PAGE and immunoblotting. Because the chromosomally encoded HflD was expressed at a very low level and was difficult to detect, we expressed HflD from a multicopy plasmid.\n\n### In vivo protease activity of RseP\n\nCells harbouring an appropriate combination of plasmids encoding an RseP derivative and a model substrate were grown at 30\u00b0C in M9 medium supplemented with 20 \u03bcg/ml of each of the 20 amino acids, 2 \u03bcg/ml thiamine, 0.4% glucose, 1 mM IPTG and 1 mM cAMP for 3 hr. A part of the culture was mixed with an equal volume of 10% TCA (Hizukuri and Akiyama, 2012). Protein precipitates were recovered by centrifugation, washed with acetone and dissolved in 1\u00d7 SDS sample buffer. Proteins were analysed by 10% Laemmli\u2013SDS-PAGE and immunoblotting with anti-Myc and anti-HA antibodies, as described previously (Inaba et al., 2008). The blotted proteins were visualised and quantified using ECL or ECL Prime Western Blotting Detection Reagent (GE Healthcare, Waukesha, WI) and LAS-3000 Mini Lumino-Image Analyzer (Fujifilm, Tokyo, Japan).\n\n### Pulse-chase experiments\n\nCells harbouring an appropriate combination of plasmids encoding an RseP derivative and a model substrate were grown at 30\u00b0C in M9 medium supplemented with 20 \u03bcg/ml of each of 18 amino acids (except Met and Cys), 2 \u03bcg/ml thiamine and 0.4% glucose to a mid-log phase and were induced with 1 mM IPTG and 5 mM cAMP for 10 min. The cells were then labelled with 370 kBq/ml [35S]-methionine (American Radiolabeled Chemicals, St. Louis, MO) for 30 s. Chasing was performed using 200 \u03bcg/ml unlabelled methionine for the indicated periods. Proteins were precipitated using 5% (final concentration) TCA, washed with acetone, dissolved in 50 mM Tris\u2013HCl (pH 8.1) containing 1 mM EDTA and 1% SDS and immunoprecipitated with anti-HA antibody, as described previously (Akiyama et al., 2004). Labelled proteins were separated by SDS-PAGE and were visualised and quantified using a phosphor imager (BAS1800) (Fujifilm).\n\n### Co-immunoprecipitation assay\n\nCo-immunoprecipitation experiments were performed as described previously (Koide et al., 2008). Total membranes were suspended in 50 mM HEPES-KOH (pH 7.5) containing 50 mM KCl and 20% glycerol, diluted 10-fold with 50 mM HEPES-KOH (pH 7.5) containing 300 mM KCl and 10% glycerol and solubilised with 1% DDM on ice for 1 hr. After clarification, the supernatant was incubated with agarose-conjugated mouse monoclonal anti-HA (F-7) or anti-Myc (9E10) antibody (Santa Cruz Biotechnology, Inc. Santa Cruz, CA) at 4\u00b0C for 3.5 hr with rotation. Immunocomplexes were collected, washed 3 times with 50 mM HEPES-KOH (pH 7.5) containing 300 mM KCl, 10% glycerol and 0.1% DDM and dissolved in 1\u00d7 SDS sample buffer. The samples were analysed by 12.5% Laemmli\u2013SDS-PAGE and by immunoblotting with rabbit polyclonal anti-Myc and anti-HA antibodies (Santa Cruz Biotechnology, Inc.).\n\n### In vivo crosslinking experiments\n\nCells harbouring a plasmid encoding an RseP derivative with an amber mutation in the MRE \u03b2-loop region and pEVOL-pBpF (Addgene, Inc., Cambridge, MA) were grown at 30\u00b0C in M9 medium supplemented with 2 \u03bcg/ml thiamine, 0.4% glucose, 0.02% l-arabinose and 1 mM pBPA for 6 hr. After adding 100 \u03bcg/ml (final concentration) spectinomycin to halt protein synthesis, the cells were irradiated with UV light (365 nm) at 4\u00b0C for 10 min, as described previously (Narita et al., 2013). Proteins were precipitated by mixing the UV-irradiated cells with 1/20 vol of 100% TCA, washed with acetone, dissolved in 1\u00d7 SDS sample buffer and analysed by 10% Laemmli\u2013SDS-PAGE and immunoblotting with anti-RseA and anti-Myc antibodies.\n\nFor verifying the in vivo crosslinked products, TCA-precipitated proteins were dissolved in 50 mM Tris\u2013HCl (pH 8.1) containing 1% SDS and 1 mM EDTA, diluted 33-fold with 50 mM Tris\u2013HCl (pH 8.1) containing 150 mM NaCl and 1% NP-40 and immunoprecipitated with TrueBlot Anti-Rabbit IgG IP Beads (eBioscience, Inc., San Diego, CA) plus anti-RseA antibody or agarose-conjugated anti-Myc antibody (Akiyama et al., 2004). The proteins were separated by SDS-PAGE on a 10% wide-range gel (Nacalai Tesque, Inc., Japan) and by immunoblotting with anti-RseA and anti-RseP antibodies by using Can Get Signal Immunostain Enhancer Solution (Toyobo, Co., Ltd, Osaka, Japan) and TrueBlot Anti-Rabbit IgG.\n\n### Disulfide crosslinking\n\nCells harbouring an appropriate combination of plasmids encoding an RseP derivative and a model substrate were grown at 30\u00b0C in L medium containing 1 mM IPTG and 1 mM cAMP for 3.5 hr. Disulfide bond formation was induced as described previously (Koide et al., 2008). Briefly, the cells were treated with 0.1 mM Cu2+(phenanthroline)3 or 3 mM 2-phenanthroline at 37\u00b0C for 5 min. Oxidation was terminated by incubating the cells with 12.5 mM neocuproine. Proteins were precipitated using TCA and dissolved in 100 mM Tris\u2013HCl (pH 7.5) containing 1.5% SDS, 5 mM EDTA and 25 mM NEM. The samples were mixed with an equal volume of SDS sample buffer containing no or 10% 2-mercaptoethanol, boiled at 98\u00b0C for 5 min and analysed by 10% Laemmli\u2013SDS-PAGE and immunoblotting with anti-Myc and anti-HA antibodies.\n",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "69f2757d-caca-4a01-b7a8-a9eef4cc252b",
+      "submission_id": "e54afc69-05d5-42d5-ab69-e083badd5e83",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Matthew Freeman, University of Oxford , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.08928.019](https://doi.org/10.7554/eLife.08928.019)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cRoles of the membrane-reentrant \u03b2-hairpin-like loop of RseP protease in selective substrate cleavage\u201d for peer review at eLife. Your submission has been favorably evaluated by Vivek Malhotra (Senior Editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nThe reviewers agree that this manuscript is broadly suitable for publication in eLife. It addresses a fundamental issue of high significance and broad interest. The issues that all agree need addressing before it could be accepted are as follows:\n\n1) How general is the compensatory effect of the helix-destabilizing mutations in the substrate? Do they have a similar effect when introduced into YqfG or RseA? Testing the effect of helix destabilizing mutants would shed further light on the mechanism.\n\n2) Does RseP interact with YoaJ, a non-substrate? If it does, can YoaJ inhibit cleavage of RseA or YqfG? In other words, is the binding site in the MRE \u03b2-loop separated from another binding site for the rest of the transmembrane domain, in a mechanistic analogy to what was proposed for rhomboids (Strisovsky et al., Mol Cell 2009)?\n\n3) Comparisons with rhomboid mechanisms should be discussed in more detail. The first evidence for an exosite was published by Strisovsky et al., and a recent paper with a structure of a rhomboid in complex with a peptide substrate has suggested that the L3 loop might have a similar role.\n\n4) In Figure 1C we are presented with a model of the MRE \u03b2\u2212loop. The structure of this region is important since residues along on face of the strand 68-71 appear to be involved in substrate recognition, as depicted in Figure 7C. According to the Methods, secondary structure was determined using STRIDE but the figure legend states this model is based on the crystal structure of mjS2P (Figure 1B). In the manuscript, the Methods section needs to be adjusted to precisely reflect how this model was generated. What software was used to generate this model? Please clarify the section of the manuscript where the model is discussed.\n\n5) Previous work in the lab has identified helix 3 of RseP as important in substrate recognition. This should be brought into the Discussion and placed in context of where TM3 resides in relation to the MRE \u03b2\u2212loop.\n",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b1041f54-d407-4273-91f2-02c1c0acf810",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C1",
+      "claim": "RseP belongs to the S2P family of intramembrane-cleaving proteases.",
+      "claim_type": "EXPLICIT",
+      "source": "Escherichia coli RseP belongs to S2P zinc metalloproteinase family of I-CLiPs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the introduction and is established knowledge about RseP classification.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "b15983f0-cc49-4e57-ba01-efe69d126e33",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C2",
+      "claim": "RseP plays a key role in regulating the \u03c3E extracytoplasmic stress response.",
+      "claim_type": "EXPLICIT",
+      "source": "It plays a key role in regulating the \u03c3E extracytoplasmic stress response (Hizukuri et al., 2013; Kroos and Akiyama, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "65c50825-0dee-4c1c-9447-25d7ebc1c814",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C3",
+      "claim": "RseP catalyzes site-2 cleavage of RseA after DegS-mediated site-1 cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "The first cleavage catalysed by DegS (site-1 cleavage) on the periplasmic side triggers the intramembrane cleavage by RseP (site-2 cleavage) (Alba et al., 2002; Kanehara et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "0a13fac0-b476-41df-a10c-a0045382b1eb",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C4",
+      "claim": "RseP acts in the proteolytic removal of remnant signal peptides from the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies suggest that in addition to being involved in RseA cleavage, RseP acts in the proteolytic removal of remnant signal peptides from the membrane (Saito et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "7ad23a30-5798-49d5-b04f-dac2cc04b37d",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C5",
+      "claim": "RseP spans the membrane 4 times with both termini facing the periplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "RseP spans the membrane 4 times, with both the termini facing the periplasm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural description of RseP based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "43e7f996-8fad-4ddf-8668-746bd01df352",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C6",
+      "claim": "RseP contains tandem PDZ domains (PDZ-N and PDZ-C) in its central periplasmic region.",
+      "claim_type": "EXPLICIT",
+      "source": "Its central periplasmic region contains tandem PDZ domains (PDZ-N and PDZ-C; Figure 1A) (Kanehara et al., 2001; Kinch et al., 2006; Inaba et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations and reference to Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "253bbe52-1b4d-4620-a751-422744281c6f",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C7",
+      "claim": "S2P family proteases share a conserved core domain containing 3 transmembrane segments.",
+      "claim_type": "EXPLICIT",
+      "source": "The S2P family proteases share a conserved core domain containing 3 TMs. In RseP, these correspond to TM1\u2013TM3 (Figure 1A,B) (Kinch et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation and reference to figures.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "1a86f818-d93e-4dd2-aa1d-df53f1124ca9",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C8",
+      "claim": "The first and third transmembrane segments of RseP contain HExxH and LDG active site motifs, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The first and the third TM contain HExxH and LDG active site motifs, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural description of RseP's active site.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "c928751f-984d-4a6c-af47-f47e4962c253",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C9",
+      "claim": "TM3 of RseP plays a critical role in binding of a substrate TM.",
+      "claim_type": "EXPLICIT",
+      "source": "Disulfide crosslinking and co-immunoprecipitation experiments suggest that TM3 plays a critical role in binding of a substrate TM (Koide et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "f720c39d-a62e-40ab-985e-c6579aaba0ff",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C10",
+      "claim": "Helix destabilisation of substrate TMs promotes their binding to and cleavage by RseP.",
+      "claim_type": "EXPLICIT",
+      "source": "Helix destabilisation of substrate TMs promotes their binding to and cleavage by RseP (Akiyama et al., 2004; Koide et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "5e4407df-427f-4e65-be31-22217251b0b4",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C11",
+      "claim": "RseP-catalysed site-2 cleavage of RseA depends on site-1 cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "RseP-catalysed site-2 cleavage of RseA depends on site-1 cleavage (Alba et al., 2002; Kanehara et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "ab5f9e77-c0a2-4924-b8d5-dfa59fcabb56",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C12",
+      "claim": "Site-1 cleavage is induced by stress signals.",
+      "claim_type": "EXPLICIT",
+      "source": "site-1 cleavage is induced by stress signals (Walsh et al., 2003; Kulp and Kuehn, 2011; Lima et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "ba7407b8-9d2f-44f0-9f98-521d0ba2ce89",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C13",
+      "claim": "RseP PDZ domains are involved in the site-1 cleavage-dependence of the site-2 cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies suggest that RseP PDZ domains are involved in the site-1 cleavage-dependence of the site-2 cleavage by RseP (Kanehara et al., 2003; Bohn et al., 2004; Grigorova et al., 2004; Inaba et al., 2008; Hizukuri and Akiyama, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "89b7a8b0-a64c-4f9b-b538-b5f6a94e2925",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C14",
+      "claim": "The crystal structure of mjS2P from Methanocaldococcus jannaschii has been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the crystal structure of an S2P homolog (mjS2P) from Methanocaldococcus jannaschii (Feng et al., 2007) has been reported",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous structural study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "cb99e1e7-ee18-402f-8716-904fb22194d5",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C15",
+      "claim": "mjS2P does not have a PDZ domain.",
+      "claim_type": "EXPLICIT",
+      "source": "it does not have a PDZ domain",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation about mjS2P.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "152d070b-53d4-4c59-ae78-8d4f837a06ee",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C16",
+      "claim": "The crystal structure of the PDZ tandem of an Aquifex aeolicus RseP homolog has been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently reported the crystal structure of the PDZ tandem of an Aquifex aeolicus RseP homolog.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "51686cce-432e-4779-8e6a-8d38136e2eaf",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C17",
+      "claim": "The 2 PDZ domains create a single pocket-like structure that covers the core membrane domain on the membrane surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure suggests that the 2 PDZ domains create a single pocket-like structure that covers the core membrane domain on the membrane surface (Hizukuri et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the authors' previous structural work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "07fb8aa9-ef93-4dfa-97b4-6928db9c2d72",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C18",
+      "claim": "The PDZ tandem acts as a size-exclusion filter to allow only the periplasmically truncated form of RseA to enter the recessed active site.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural models and biochemical and genetic results suggest that the PDZ tandem acts as a size-exclusion filter to allow only the periplasmically truncated form of RseA to enter the recessed active site in the membrane domain of RseP (Kroos and Akiyama, 2013; Hizukuri et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "4b7c94e5-2273-4e6b-a885-62b1620791db",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C19",
+      "claim": "mjS2P contains a region that is looped into the membrane domain from the cytoplasmic side.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of mjS2P indicates that it contains a region, located close to the active site, that is looped into the membrane domain from the cytoplasmic side (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis of mjS2P crystal structure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "1e0c36a8-f59e-4e60-8979-c82e56e8cf95",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C20",
+      "claim": "The membrane-reentrant loop is in an extended or \u03b2-strand conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "This membrane-reentrant loop is unique because it is in an extended or \u03b2-strand conformation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "4cc65d2b-4cb5-4e63-9e85-ae7fca808fdf",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C21",
+      "claim": "The membrane-reentrant loop has been named MRE \u03b2-loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we have named this region membrane-reentrant \u03b2-loop (MRE \u03b2-loop).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a nomenclature decision by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "bcea6cb4-2035-49e7-b74e-a46d3396682a",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C22",
+      "claim": "The MRE \u03b2-loop is conserved in proteins belonging to groups I and III of S2P subfamilies.",
+      "claim_type": "EXPLICIT",
+      "source": "The MRE \u03b2-loop is conserved in proteins belonging to groups I and III of S2P subfamilies, including RseP (group I), Bacillus subtilis SpoIVFB (group III) and mjS2P (group III; Figure 1D) (Ha, 2009; Kroos and Akiyama, 2013; Zhang et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence analysis and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "1e75da31-0509-4623-aa3a-80d2c1f75360",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C23",
+      "claim": "The MRE \u03b2-loop of SpoIVFB can be crosslinked with a substrate through disulfide bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study showed that the MRE \u03b2-loop of SpoIVFB can be crosslinked with a substrate through disulfide bonds, suggesting its possible involvement in substrate interaction (Zhang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "409c543a-06df-4fa8-a7ae-c75d601ebb21",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C24",
+      "claim": "Deletion of the MRE \u03b2-loop (\u0394loop mutant) did not cause global structural changes in RseP.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulation level of the \u0394loop mutant of RseP-HM (RseP with a C-terminal His-Myc bipartite tag) was comparable to that of wild-type RseP-HM (Figure 2), suggesting that the \u0394loop mutation did not cause global structural changes in RseP.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from comparable protein accumulation levels shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "dd2ba392-9c3b-4f8b-9eb0-29dfb948dfd7",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C25",
+      "claim": "The \u0394loop mutant did not exhibit complementation activity against a \u0394rseP mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u0394loop mutant did not exhibit complementation activity against a \u0394rseP mutation (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by experimental data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "436cc18e-54ce-42a0-8bfa-66070c7e03d4",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C26",
+      "claim": "The \u0394loop mutant was proteolytically inactive against HA-MBP-RseA148 and HA-MBP-RseA(LY1)148.",
+      "claim_type": "EXPLICIT",
+      "source": "Co-expression of the substrates with the \u0394loop mutant did not convert them from FL to CL, indicating that the mutant was proteolytically inactive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data showing no substrate cleavage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "774966d1-442b-4d99-8084-c53901e2a44e",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C27",
+      "claim": "HA-MBP-YqfG was cleaved by wild-type RseP-HM but not by RseP-HM E23Q mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "The protein was converted to a slightly smaller fragment upon co-expression with wild-type RseP-HM but not with RseP-HM E23Q mutant, indicating that HA-MBP-YqfG was cleaved by RseP presumably within its TM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data showing substrate cleavage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "5d966add-f011-426b-a19d-90ff9c918089",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C28",
+      "claim": "The \u0394loop mutant did not cleave HA-MBP-YqfG.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the \u0394loop mutant did not cleave HA-MBP-YqfG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "8458e577-0ddb-482b-84e4-447252d64abd",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C29",
+      "claim": "HA-MBP-YoaJ did not undergo any cleavage by RseP.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, HA-MBP-YoaJ did not undergo any cleavage (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by experimental data in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "f9cbe4e3-3f74-4de5-a3e9-8df8d2f6bc63",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C30",
+      "claim": "Most HA-MBP-YoaJ was integrally associated with the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell fractionation and alkali extraction showed that most HA-MBP-YoaJ was integrally associated with the membrane (Figure 2\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by cell fractionation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "a876527b-177d-4bf4-925c-d73acc21f376",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C31",
+      "claim": "RseP selectively cleaves type II membrane proteins, even those with a small periplasmic domain.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that the MRE \u03b2-loop plays a critical role in the proteolytic function of RseP and that RseP selectively cleaves type II membrane proteins, even those with a small periplasmic domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential cleavage of YqfG (cleaved) and YoaJ (not cleaved).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "a04784d8-a947-4f9e-a089-22140c475c5f",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C32",
+      "claim": "All single Cys mutants of RseP, except G68C, supported normal cell growth and cleaved HA-MBP-RseA(LY1)148.",
+      "claim_type": "EXPLICIT",
+      "source": "Complementation and model substrate cleavage assays showed that all the single Cys mutants, except G68C supported normal cell growth and cleaved HA-MBP-RseA(LY1)148 (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from complementation and cleavage assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "63c437c7-b956-4a04-9b6d-2fd7810999c5",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C33",
+      "claim": "The G68C mutant cleaved the model substrate with slightly lower but significant efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the G68C mutant was inactive in complementation, it cleaved the model substrate with a slightly lower but significant efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "bf8f6a12-d3a2-4479-9e19-27ab31946609",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C34",
+      "claim": "No residue in the MRE \u03b2-loop is specifically required for the proteolytic function of RseP.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that no residue in the MRE \u03b2-loop is specifically required for the proteolytic function of RseP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the Cys-scanning mutagenesis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "842f5ce0-073c-42ea-970e-4bb6deb6a71e",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C35",
+      "claim": "Pro substitution at positions 67, 68, 69 and 70 abolished complementation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the results for Cys mutants, Pro substitution at positions 67, 68, 69 and 70, which are thought to be located in the distal part (Leu-66 to Glu-75) of the MRE \u03b2-loop, abolished complementation (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data from complementation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "d5a34b07-0741-4a62-ad9d-ab4ffdda375b",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C36",
+      "claim": "The G68P mutant efficiently cleaved HA-MBP-RseA(LY1)148 but was almost completely defective in cleaving HA-MBP-RseA148.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the G68P mutant, which was almost completely defective in cleaving HA-MBP-RseA148, efficiently cleaved HA-MBP-RseA(LY1)148.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data showing differential substrate cleavage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "871162fa-6219-413e-9d9e-921e654750f2",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C37",
+      "claim": "Pro mutations in the MRE \u03b2-loop exerted more profound effects on the cleavage of HA-MBP-YqfG than on the cleavage of the other 2 model substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Pro mutations in the MRE \u03b2-loop exerted more profound effects on the cleavage of HA-MBP-YqfG than on the cleavage of the other 2 model substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data comparing cleavage of different substrates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "23f37de8-f16e-4a6a-aaa1-edcfc8070688",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C38",
+      "claim": "The initial rates of HA-MBP-RseA(LY1)148 and HA-MBP-YqfG cleavage by RseP-HM were slightly lower than that of HA-MBP-RseA148 cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the initial rates of HA-MBP-RseA(LY1)148 and HA-MBP-YqfG cleavage by co-expressed RseP-HM were slightly lower than that of HA-MBP-RseA148 cleavage (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on pulse-chase experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "fa90527e-abe0-4981-8f80-487eff7f0468",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C39",
+      "claim": "The G68P mutant significantly cleaved HA-MBP-RseA(LY1)148 during the 15 min chase period.",
+      "claim_type": "EXPLICIT",
+      "source": "During the 15 min chase period, the G68P mutant significantly cleaved HA-MBP-RseA(LY1)148 (Figure 2H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on pulse-chase experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "e0da0c05-8164-4526-972e-02e7086b8eb8",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C40",
+      "claim": "The K71P mutant efficiently cleaved HA-MBP-RseA148 and HA-MBP-RseA(LY1)148 but only slightly cleaved HA-MBP-YqfG.",
+      "claim_type": "EXPLICIT",
+      "source": "while the K71P mutant efficiently cleaved HA-MBP-RseA148 and HA-MBP-RseA(LY1)148 but only slightly cleaved HA-MBP-YqfG, which was consistent with immunoblotting results (Figure 2I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on pulse-chase experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "c4987fd4-3738-4676-bc4f-04fe8f151e53",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C41",
+      "claim": "The MRE \u03b2-loop mutations resulted in the differential cleavage of different model substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the intrinsic susceptibility of each model substrate to wild-type RseP was not correlated with its susceptibility to MRE \u03b2-loop mutants, indicating that the MRE \u03b2-loop mutations resulted in the differential cleavage of different model substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects of mutations on different substrates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "e864fa27-94c0-4758-b022-0e9a5e79867e",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C42",
+      "claim": "Wild-type RseP-HM was co-immunoprecipitated with HA-MBP-RseA and vice versa.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the previous results, wild-type RseP-HM was co-immunoprecipitated with HA-MBP-RseA and HA-MBP-RseA was co-immunoprecipitated with RseP-HM",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on co-immunoprecipitation experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "cc82d7aa-5501-44ff-833b-1c5a3eb0ede2",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C43",
+      "claim": "No co-immunoprecipitation was observed with RseP-HM having an N389L mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "but no co-immunoprecipitation was observed with RseP-HM having an N389L mutation (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on co-immunoprecipitation experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "d2fa3bd5-267b-4c9e-be80-7d6c01bad48d",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C44",
+      "claim": "Deletion of the MRE \u03b2-loop almost completely abolished co-immunoprecipitation.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of the MRE \u03b2-loop almost completely abolished co-immunoprecipitation, suggesting its importance in RseP\u2013substrate interaction (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on co-immunoprecipitation experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "e526fa72-8876-4842-af52-f34d712a919d",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C45",
+      "claim": "All the MRE \u03b2-loop Pro mutants, except D74P, significantly decreased co-immunoprecipitation efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that all the MRE \u03b2-loop Pro mutants, except D74P located in the C-terminus of the loop, significantly decreased co-immunoprecipitation efficiency, indicating that the Pro mutations compromised the interaction between RseP-HM and model substrates (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on co-immunoprecipitation experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "f051925a-d3e0-4e67-b322-27cb08a44dc7",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C46",
+      "claim": "The MRE \u03b2-loop is required for stable substrate binding by RseP.",
+      "claim_type": "EXPLICIT",
+      "source": "The result that absence of or mutations in the MRE \u03b2-loop interfered with RseP\u2013substrate interaction suggests that the MRE \u03b2-loop is required for stable substrate binding by RseP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from co-immunoprecipitation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "4877b017-a187-439e-819d-ea29b7a038a9",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C47",
+      "claim": "RseP-HM was co-immunoprecipitated with HA-MBP-YoaJ in an MRE \u03b2-loop-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Anti-HA co-immunoprecipitation showed that RseP-HM was pulled down with HA-MBP-YoaJ in an MRE \u03b2-loop-dependent manner",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on co-immunoprecipitation experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "419a04e4-736a-417d-b3a6-ebad06cc12bc",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C48",
+      "claim": "YoaJ can interact with RseP although it is not cleaved by RseP.",
+      "claim_type": "EXPLICIT",
+      "source": "indicating that YoaJ can interact with RseP although it is not cleaved by RseP",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from co-immunoprecipitation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "e130b4e2-e929-4014-a361-b133f725d484",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C49",
+      "claim": "Overexpression of HA-MBP-YoaJ little affected the cleavage of co-expressed HA-RseA148 by RseP.",
+      "claim_type": "EXPLICIT",
+      "source": "However, overexpression of HA-MBP-YoaJ little affected the cleavage of co-expressed HA-RseA148 by RseP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "97f1e4f5-5c1f-4f08-8ec8-4abe57481ff5",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C50",
+      "claim": "pBPA-containing RseP-HM proteins decreased the accumulation of RseA148, indicating their functionality.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of pBPA-containing RseP-HM proteins decreased the accumulation of RseA148, indicating the functionality of these proteins, although some exhibited lower proteolytic activity against RseA (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data showing substrate cleavage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "8251d558-9d53-4312-b6b3-36321f0bac2b",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C51",
+      "claim": "UV irradiation produced bands of approximately 71 kDa when pBPA was incorporated at position 69, 71 or 74.",
+      "claim_type": "EXPLICIT",
+      "source": "Anti-RseA immunoblotting showed UV irradiation produced bands of approximately 71 kDa (XL) when pBPA was incorporated at position 69, 71 or 74, suggesting that these bands represented photo-crosslinked products between RseP-HM and RseA (Figure 4A, upper panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on photo-crosslinking experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "d479b5c9-2a78-44c9-ae89-ec661ea9b6ee",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C52",
+      "claim": "The 71 kDa band represented an RseP\u2013RseA crosslinked product.",
+      "claim_type": "EXPLICIT",
+      "source": "These results further support the notion that the 71 kDa band was the RseP\u2013RseA crosslinked product.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on immunoprecipitation experiments confirming the crosslinked product.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "30007689-1a3f-45e1-8452-5b1ce1cc72ce",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C53",
+      "claim": "The N389L mutation considerably decreased RseA crosslinking at the 3 positions.",
+      "claim_type": "EXPLICIT",
+      "source": "The N389L mutation that destabilised the RseP\u2013substrate interaction considerably decreased RseA crosslinking at the 3 positions (Figure 4B), suggesting that the photo-crosslinking reflected the functional interaction between RseP and RseA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on photo-crosslinking experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "d16afe60-d991-4645-aa9e-a6adcb223fd9",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C54",
+      "claim": "RseP(Y69pBPA)-HM generated a significantly lower amount of the crosslinked product in the \u0394degS strain than in the degS+ strain.",
+      "claim_type": "EXPLICIT",
+      "source": "RseP(Y69pBPA)-HM generated a significantly lower amount of the crosslinked product in the \u0394degS strain than in the degS+ strain, indicating that the MRE \u03b2-loop mainly interacts with the DegS-cleaved form of RseA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on photo-crosslinking experimental data comparing degS+ and \u0394degS strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "de9829c1-fe2b-4786-90dc-009e5337de0a",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C55",
+      "claim": "The oxidant treatment generated a \u223c75 kDa band that reacted with both anti-HA and anti-Myc antibodies when Y69C and K71C variants but not Cys-less and V70C variants of RseP-HM were co-expressed with HA-RseA(A108C/C109A)140.",
+      "claim_type": "EXPLICIT",
+      "source": "The oxidant treatment generated a \u223c75 kDa band that reacted with both anti-HA and anti-Myc antibodies when Y69C and K71C variants but not Cys-less and V70C variants of RseP-HM were co-expressed with HA-RseA(A108C/C109A)140 (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on disulfide crosslinking experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "29790c11-51a0-4884-b64f-dd1997c0c27f",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C56",
+      "claim": "The crosslinked band disappeared when the samples were treated with 2-mercaptoethanol before SDS-PAGE.",
+      "claim_type": "EXPLICIT",
+      "source": "This band disappeared when the samples were treated with 2-mercaptoethanol before SDS-PAGE (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data showing disulfide bond cleavage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "41b46d4e-4516-4691-be8b-e5366aac9c30",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C57",
+      "claim": "The MRE \u03b2-loop was near the RseP cleavage site.",
+      "claim_type": "EXPLICIT",
+      "source": "These results were consistent with those of photo-crosslinking experiments because pBPA at positions 69 and 71 but not at position 70 was crosslinked with RseA, indicating that the MRE \u03b2-loop was near the RseP cleavage site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from crosslinking data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "6d072b20-85f3-4396-a954-65a8c86ab0be",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C58",
+      "claim": "The MRE \u03b2-loop can directly bind to substrate TMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results strongly suggest that the MRE \u03b2-loop can directly bind to substrate TMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from crosslinking and co-immunoprecipitation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "1503e670-398b-42a8-ada6-c03460920e9b",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C59",
+      "claim": "Wild-type RseP-HM cleaved all the HA-MBP-YqfG mutants almost as efficiently as it cleaved the original HA-MBP-YqfG.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type RseP-HM cleaved all the HA-MBP-YqfG mutants almost as efficiently as it cleaved the original HA-MBP-YqfG (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "b6558944-b43d-4970-a094-93b4ea67aec8",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C60",
+      "claim": "L11P and L12P mutations but not other mutations appreciably increased the cleavage by RseP(G67P)-HM.",
+      "claim_type": "EXPLICIT",
+      "source": "L11P and L12P mutations but not other mutations appreciably increased the cleavage by RseP(G67P)-HM (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data showing suppression of MRE \u03b2-loop mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "e2e5fd1a-4b53-4943-8939-2834387766e0",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C61",
+      "claim": "Cleavage by RseP(K71P)-HM was markedly improved by mutations other than L12P and L13P.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, cleavage by RseP(K71P)-HM was markedly improved by mutations other than L12P and L13P.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data showing suppression of MRE \u03b2-loop mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "dbbb669a-119d-40ae-b1c5-50f060460cbf",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C62",
+      "claim": "RseP(G67P)-HM significantly cleaved HA-MBP-YqfG(L12P) but not HA-MBP-YqfG(I8P).",
+      "claim_type": "EXPLICIT",
+      "source": "RseP(G67P)-HM significantly cleaved HA-MBP-YqfG(L12P) but not HA-MBP-YqfG(I8P) (Figure 6E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on pulse-chase experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "7982f796-62e7-43ac-952a-b7dcec7ffcee",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C63",
+      "claim": "RseP(K71P)-HM efficiently cleaved HA-MBP-YqfG(I8P) but not HA-MBP-YqfG(L12P).",
+      "claim_type": "EXPLICIT",
+      "source": "and RseP(K71P)-HM efficiently cleaved HA-MBP-YqfG(I8P) but not HA-MBP-YqfG(L12P) (Figure 6F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on pulse-chase experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "0f225c2a-9155-4a22-87fc-4c772e1b5fbd",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C64",
+      "claim": "Replacement of Leu-12 in YqfG by Asn also promoted cleavage by the RseP MRE \u03b2-loop Pro mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Replacement of Leu-12 in YqfG by Asn, another strong helix-destabilising amino acid, also promoted cleavage by the RseP MRE \u03b2-loop Pro mutants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "7850b020-1487-4033-8f0b-7e0430e9f9ce",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C65",
+      "claim": "Replacement of Leu-12 by a helix-forming Trp residue resulted in no increase in cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "However, replacement of the same residue by a helix-forming Trp residue resulted in no increase in cleavage (Figure 6A\u2013C), suggesting that helix destabilisation is important for improving substrate cleavage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "fa1aab3c-53cf-44c7-a76b-17e23de15c42",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C66",
+      "claim": "Helix destabilisation is important for improving substrate cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that helix destabilisation is important for improving substrate cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects of helix-destabilizing vs. helix-forming mutations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "abc46fff-a9fc-466a-939a-45b91d3da95b",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C67",
+      "claim": "The I8P or L12P mutation did not promote cleavage by the RseP \u0394loop variant.",
+      "claim_type": "EXPLICIT",
+      "source": "The I8P or L12P mutation did not promote cleavage by the RseP \u0394loop variant, indicating that these mutations did not bypass the RseP MRE \u03b2-loop function for substrate cleavage (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "3b975985-27d3-41cd-9a41-577119df4442",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C68",
+      "claim": "The F21P mutation in LY1 significantly improved the cleavage of this TM by RseP(V70P)-HM.",
+      "claim_type": "EXPLICIT",
+      "source": "the F21P mutation in LY1 significantly improved the cleavage of this TM by RseP(V70P)-HM that was almost inactive in cleavage of wild type LY1, but the Pro substitution of the neighbouring residue, Phe-20, did not.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "1de7ff38-7f67-490b-8f52-5367322ac26b",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C69",
+      "claim": "Helix-destabilising mutations in substrate TMs at least partially suppress the defects in substrate cleavage induced by Pro substitutions in the RseP MRE \u03b2-loop in an allele-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The results that helix-destabilising mutations in substrate TMs at least partially suppress the defects in substrate cleavage induced by Pro substitutions in the RseP MRE \u03b2-loop in an allele-specific manner suggests a specific interaction between substrate TMs and the RseP MRE \u03b2-loop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the allele-specific suppression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "e1a1513c-72c6-4b35-a86a-89d83cfc60e4",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C70",
+      "claim": "Deletion or Pro substitution in the MRE \u03b2-loop impaired substrate cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion or Pro substitution in the MRE \u03b2-loop impaired substrate cleavage, indicating its critical role in the proteolytic function of RseP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data showing impaired cleavage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "019decb0-a2b2-43b1-9397-eedc32eeef63",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C71",
+      "claim": "The MRE \u03b2-loop was directly involved in substrate binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Crosslinking and co-immunoprecipitation experiments showed that the MRE \u03b2-loop was directly involved in substrate binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on crosslinking and co-immunoprecipitation experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "75389c67-c007-4c42-b1db-8743c96c3da4",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C72",
+      "claim": "Several Pro substitutions differentially affected RseP-catalysed proteolysis of substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Several Pro substitutions differentially affected RseP-catalysed proteolysis of substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data showing differential substrate cleavage.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "fc3c6906-4d9e-4153-9b96-21a60db601b3",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C73",
+      "claim": "Helix-destabilising mutations in substrate TMs suppressed the defects caused by mutations in the MRE \u03b2-loop in an allele-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Helix-destabilising mutations in substrate TMs suppressed the defects caused by mutations in the MRE \u03b2-loop in an allele-specific manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data showing allele-specific suppression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "b4549473-c4ad-485e-a02e-1cbe7d57169a",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C74",
+      "claim": "The MRE \u03b2-loop specifically recognises substrate TMs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results collectively suggest that the MRE \u03b2-loop specifically recognises substrate TMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects and allele-specific suppression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "df18ea4e-5597-4769-86ab-7557c6c045c1",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C75",
+      "claim": "The proximal part of the MRE \u03b2-loop has a short \u03b2-strand (Ile72-Leu-Leu) in the reported crystal structure of mjS2P.",
+      "claim_type": "EXPLICIT",
+      "source": "The proximal part of the MRE \u03b2-loop has a short \u03b2-strand (Ile72-Leu-Leu) in the reported crystal structure of mjS2P (Feng et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of the mjS2P crystal structure.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "df7cf8e3-115f-4cc8-a486-6f8944833342",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C76",
+      "claim": "Val80-Ala-Met in the distal part of the MRE \u03b2-loop forms a \u03b2-strand.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the secondary structure with STRIDE (Frishman and Argos, 1995) suggested that Val80-Ala-Met in the distal part forms a \u03b2-strand (Figure 1B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on secondary structure analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "4fafb61f-2aa5-4aa0-96cd-f351e7a4814a",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C77",
+      "claim": "The MRE \u03b2-loops of RseP and SpoIVFB also have \u03b2-strands in the corresponding regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence-based prediction suggested that the MRE \u03b2-loops of RseP and SpoIVFB also have \u03b2-strands in the corresponding regions (Figure 1D), suggesting that the MRE \u03b2-loop commonly assumes a \u03b2-hairpin-like structure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence-based secondary structure prediction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "cb54ecfe-0d9a-49d1-a07c-c58ac79d7070",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C78",
+      "claim": "The MRE \u03b2-loop commonly assumes a \u03b2-hairpin-like structure.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the MRE \u03b2-loop commonly assumes a \u03b2-hairpin-like structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural and sequence analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "34e8b446-47ac-4556-8e41-150fcf3762db",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C79",
+      "claim": "A higher-order structure of the MRE \u03b2-loop is important for the proteolytic function of RseP.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that a higher-order structure of the MRE \u03b2-loop is important for the proteolytic function of RseP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects of Cys vs. Pro substitutions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "51b2540b-fbec-44b6-9adf-8a9daa393495",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C80",
+      "claim": "RseP(G68P)-HM significantly cleaved LY1 but only slightly cleaved RseA TM and YqfG TM.",
+      "claim_type": "EXPLICIT",
+      "source": "Pulse-chase experiments showed that RseP(G68P)-HM significantly cleaved LY1 but only slightly cleaved RseA TM and YqfG TM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on pulse-chase experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "7d6a2878-e079-41dd-8120-6ce7c998e3e8",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C81",
+      "claim": "RseP(K71P)-HM efficiently cleaved RseA TM and LY1 but only slightly cleaved YqfG TM.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, RseP(K71P)-HM efficiently cleaved RseA TM and LY1 but only slightly cleaved YqfG TM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on pulse-chase experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "4ca5b4c0-22f1-490c-9e79-4cabe0afe3b2",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C82",
+      "claim": "The effects of MRE \u03b2-loop mutations cannot be simply explained by the intrinsic susceptibility of substrates to RseP.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the effects of MRE \u03b2-loop mutations cannot be simply explained by the intrinsic susceptibility of these substrates to RseP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential effects of mutations on different substrates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "9468ebf9-a9c4-44cc-b96f-c90b5306568c",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C83",
+      "claim": "The MRE \u03b2-loop specifically recognises substrate TMs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the MRE \u03b2-loop specifically recognises substrate TMs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the allele-specific suppression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "8a4ee981-7a4f-4034-8fd9-1a6ab48393c2",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C84",
+      "claim": "Cys residues at positions 69 and 71 of the MRE \u03b2-loop disulfide-bonded with Cys residues on either side of the scissile bond in RseA.",
+      "claim_type": "EXPLICIT",
+      "source": "Cys residues at these positions disulfide-bonded with Cys residues on either side of the scissile bond in RseA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on disulfide crosslinking experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "4b63b6ee-bfd0-4727-978a-5d1ed8c370a4",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C85",
+      "claim": "A Cys residue in place of Val-70 in the MRE \u03b2-loop of SpoIVFB formed disulfide bonds with Cys residues at several positions around the cleavage site in Pro-\u03c3K.",
+      "claim_type": "EXPLICIT",
+      "source": "A Cys residue in place of Val-70 in the MRE \u03b2-loop of SpoIVFB formed disulfide bonds with Cys residues at several positions around the cleavage site in Pro-\u03c3K, suggesting that the MRE \u03b2-loop of SpoIVFB directly interacts with Pro-\u03c3K.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "056a4e28-a850-48d6-a75f-fb7c33a59a11",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C86",
+      "claim": "Pro-\u03c3K is suggested to be peripherally associated with the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to RseA, which is a single-spanning membrane protein with type II orientation, Pro-\u03c3K is suggested to be peripherally associated with the membrane (Zhou et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "57392fe4-4e4f-4788-a779-961aa3bdb1ea",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C87",
+      "claim": "Helix-destabilising residues in substrate TMs are not required for the cleavage of Pro-\u03c3K by SpoIVFB.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, although helix-destabilising residues in substrate TMs are important for their efficient cleavage by RseP, these residues are not required for the cleavage of Pro-\u03c3K by SpoIVFB (Zhou et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "e3c52d2f-1221-4610-b84e-1e2b5e491963",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C88",
+      "claim": "The role of the MRE \u03b2-loop in substrate binding and cleavage might slightly differ between RseP and SpoIVFB.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the role of the MRE \u03b2-loop in substrate binding and cleavage might slightly differ between RseP and SpoIVFB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from differences in substrate properties and requirements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "a771ef4e-3a10-4683-be99-d086a3d0b887",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C89",
+      "claim": "The N389L mutation in RseP TM3 weakens the RseP-substrate interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The N389L mutation in RseP TM3, which was previously shown to weaken the RseP-substrate interaction (Koide et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "664be17c-0a34-4959-8c4e-1289d5831bf9",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C90",
+      "claim": "The TM4 of mjS2P can be located in the vicinity of the proteolytic active site and the MRE \u03b2-loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The TM4 (corresponding to RseP TM3) of mjS2P that contains one of the active site residues (corresponding to Asp-402 in RseP TM3) can be located in the vicinity of the proteolytic active site and the MRE \u03b2-loop (Feng et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis and citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "5ddab41e-8ec9-4aef-9f77-2d8105cc611c",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C91",
+      "claim": "Cys introduced at the positions of Pro-397 and Pro-399 in RseP TM3 can form a disulfide bond with Cys at multiple positions of RseA TM.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously showed that Cys introduced at the positions of Pro-397 and Pro-399 in RseP TM3 can form a disulfide bond with Cys at multiple positions of RseA TM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "0856aa33-44ba-4c5c-938c-a1d006e65403",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C92",
+      "claim": "The region containing residues 397 and 399 might be flexible and act with the MRE \u03b2-loop in stable binding of a substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "The region containing residues 397 and 399 might be flexible and act with the MRE \u03b2-loop in stable binding of a substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on structural and experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "7e95826c-190a-4893-a885-243652af848c",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C93",
+      "claim": "Many zinc metalloproteinases have a \u03b2-strand (edge strand) close to their proteolytic active site that binds to substrates in an extended conformation through \u03b2-strand addition.",
+      "claim_type": "EXPLICIT",
+      "source": "Many zinc metalloproteinases have a \u03b2-strand (edge strand) close to their proteolytic active site that binds to substrates in an extended conformation through \u03b2-strand addition and presents them to catalytic residues (Stocker and Bode, 1995; Langklotz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "b106d410-5567-4ad6-b80c-c5f8b9afa6f3",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C94",
+      "claim": "The MRE \u03b2-loop stabilises the extended conformation of a substrate by directly binding to it through \u03b2-strand addition.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that the MRE \u03b2-loop stabilises the extended conformation of a substrate by directly binding to it through \u03b2-strand addition, thus promoting substrate cleavage in a manner similar to the edge strand (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "2886cfa8-d93d-462c-a57d-78498644f0a8",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C95",
+      "claim": "Crosslinking at alternate positions in the Tyr69-Val-Lys region supports the idea that this region is in a \u03b2-strand conformation during its interaction with a substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Crosslinking at alternate positions in the Tyr69-Val-Lys region supports the idea that this region is in a \u03b2-strand conformation during its interaction with a substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from crosslinking data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "a74e3b1c-6b44-458d-af66-9cbb5fd6d56b",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C96",
+      "claim": "The loop 3 of GlpG and the MRE \u03b2-loop of RseP might have a similar role in stabilising an extended substrate structure and promoting its cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the loop 3 of GlpG and the MRE \u03b2-loop of RseP differ in that the former is located near the periplasmic surface of the membrane and forms a parallel \u03b2-sheet with a substrate whereas the latter is located near the cytoplasmic surface and forms a anti-parallel \u03b2-sheet, they might have a similar role in stabilising an extended substrate structure and promoting its cleavage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on comparison with another protease.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "e950e678-95aa-47fc-aa24-3e2b7bc75f07",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C97",
+      "claim": "The periplasmic PDZ tandem of RseP acts as a size-exclusion filter to prevent the cleavage of substrates with bulky periplasmic domains.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently suggested that the periplasmic PDZ tandem of RseP acts as a size-exclusion filter to prevent the cleavage of substrates with bulky periplasmic domains (Figure 7A) (Hizukuri et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on the authors' previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "f99531fd-b030-4269-8e03-3fe450808392",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C98",
+      "claim": "RseP did not cleave YoaJ, a type II membrane protein with a very small periplasmic domain.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we observed that RseP did not cleave YoaJ, a type II membrane protein with a very small periplasmic domain, suggesting the presence of additional mechanism(s) for substrate discrimination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "7d5dc6f1-fed8-44fe-b57c-4822195117f1",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C99",
+      "claim": "The MRE \u03b2-loop interacts with RseA after site 1 cleavage.",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo photo-crosslinking experiments suggest that the MRE \u03b2-loop interacts with RseA after site 1 cleavage (Figure 7B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on photo-crosslinking experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "724b1922-6a73-485e-b67a-357d723bad59",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C100",
+      "claim": "The MRE \u03b2-loop acts as the second checkpoint for membrane proteins that passed the first check by the PDZ filter.",
+      "claim_type": "EXPLICIT",
+      "source": "and that it acts as the second checkpoint for membrane proteins that passed the first check by the PDZ filter and contributes to their selective proteolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "72123e23-5862-4bc4-90a7-46b14d642b86",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C101",
+      "claim": "mjS2P does not have PDZ domains.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that mjS2P does not have PDZ domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about mjS2P structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "46b82317-78da-4440-b900-6c01e3bd19c0",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C102",
+      "claim": "The MRE \u03b2-loop could play a central role in cleaving specific substrates in mjS2P.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the MRE \u03b2-loop could play a central role in cleaving specific substrates in this enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the absence of PDZ domains in mjS2P.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "67adbb2e-82a7-4cbe-acb4-6b9ccb257013",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C103",
+      "claim": "RseP directly interacted with intact RseA in the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the MRE \u03b2-loop may not interact with intact RseA, our previous chemical crosslinking and co-immunoprecipitation experiments showed that RseP directly interacted with intact RseA in the membrane (Kanehara et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "56ca9ae9-bdb5-4c41-a2ee-ede94193322b",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C104",
+      "claim": "RseP has a separate binding site (exosite) for intact RseA.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that RseP has a separate binding site (exosite) for intact RseA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the interaction with intact RseA despite PDZ filter exclusion.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "f0766d42-1364-4b7f-9a56-be598de70b44",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C105",
+      "claim": "The presumed exosite may exist on the external surface of the enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the PDZ filter excludes intact RseA from the intramolecular active site, the presumed exosite may exist on the external surface of the enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the PDZ filter model.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "9df79180-5ff1-4ed1-8e59-0f0bc9abc9dc",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "claim_id": "C106",
+      "claim": "Other families of I-CLiPs such as rhomboid and \u03b3-secretase have also been suggested to have an exosite.",
+      "claim_type": "EXPLICIT",
+      "source": "Other families of I-CLiPs such as rhomboid and \u03b3-secretase have also been suggested to have an exosite (Kornilova et al., 2005; Strisovsky et al., 2009; Watanabe et al., 2010; Arutyunova et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "193b7e01-212e-4b05-a68e-8bdfbb649023",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Deletion of the MRE \u03b2-loop (\u0394loop mutant) abolishes RseP proteolytic activity. The \u0394loop mutant did not complement a \u0394rseP mutation and was proteolytically inactive against model substrates HA-MBP-RseA148, HA-MBP-RseA(LY1)148, and HA-MBP-YqfG, despite comparable protein accumulation levels suggesting no global structural changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C26, C28, and C70 collectively demonstrate that deletion of the MRE \u03b2-loop abolishes RseP function. The comparable protein accumulation (C24) indicates the mutation does not cause misfolding, while loss of complementation (C25) and substrate cleavage (C26, C28) directly demonstrate loss of function. The data are internally consistent and support the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "3861d813-46a4-4a41-98c1-38223f1e5d1f",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Cys-scanning mutagenesis of the MRE \u03b2-loop shows that no specific residue is essential for RseP function. All single Cys mutants except G68C supported normal cell growth and cleaved model substrates, and even G68C retained significant proteolytic activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 are supported by complementation and substrate cleavage assays (Figure 2\u2014figure supplement 2). The data show that individual residues can be replaced by Cys without loss of function, supporting the inference that no specific residue is essential. However, the discrepancy between G68C complementation and cleavage activity is noted but not fully explained.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "c10486a1-a0f4-48b1-8aa6-5a27fe83047e",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Pro substitutions in the distal part of the MRE \u03b2-loop impair RseP function and cause differential substrate cleavage. Pro mutations at positions 67-70 abolished complementation and differentially affected cleavage of different model substrates, suggesting that the higher-order structure of the MRE \u03b2-loop is important for function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C41, C72, and C79 are supported by complementation assays (Figure 2B), immunoblotting (Figure 2C-F), and pulse-chase experiments (Figure 2G-I). The differential effects on different substrates (e.g., G68P efficiently cleaves LY1 but not RseA148) cannot be explained by intrinsic substrate susceptibility alone, supporting the conclusion that MRE \u03b2-loop structure is functionally important. The contrast with Cys-scanning results strengthens this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "8148fca7-3b9f-4905-8d26-f6671dcac1a4",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The MRE \u03b2-loop is required for stable RseP-substrate interaction. Co-immunoprecipitation experiments show that deletion or Pro mutations in the MRE \u03b2-loop significantly reduce interaction between RseP and model substrates, while the N389L mutation in TM3 abolishes interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C46 are supported by co-immunoprecipitation data (Figure 3A-B). The experiments use appropriate controls (N389L mutation, E23Q to prevent cleavage) and show consistent results across multiple MRE \u03b2-loop mutants. The inference that the MRE \u03b2-loop is required for stable substrate binding is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "494978a6-21f5-4469-a733-aafb2a6856d1",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "RseP selectively cleaves type II membrane proteins based on additional criteria beyond periplasmic domain size. YoaJ, a type II membrane protein with a small periplasmic domain, interacts with RseP in an MRE \u03b2-loop-dependent manner but is not cleaved, while YqfG is cleaved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49, C29-C31, and C98 are supported by co-immunoprecipitation (Figure 3\u2014figure supplement 1A), cleavage assays (Figure 2F), and membrane fractionation (Figure 2\u2014figure supplement 1). The data demonstrate that RseP can interact with but not cleave YoaJ, suggesting additional substrate discrimination mechanisms beyond the PDZ filter. However, the nature of the RseP-YoaJ interaction remains unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "3b732694-cced-4962-83e2-dcdb321ea5a4",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "In vivo photo-crosslinking demonstrates that the MRE \u03b2-loop directly interacts with RseA after site-1 cleavage. pBPA incorporation at positions 69, 71, and 74 produced UV-dependent crosslinked products with RseA that were reduced by the N389L mutation and by absence of DegS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 and C99 are supported by photo-crosslinking experiments (Figure 4). The crosslinked products were verified by immunoprecipitation (Figure 4\u2014figure supplement 1B), and controls (N389L mutation, \u0394degS strain) support the functional relevance of the interaction. The data provide direct evidence for MRE \u03b2-loop-substrate interaction and its dependence on site-1 cleavage.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "f3c8e506-0aef-44e2-83d9-ff7eb176b70f",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Disulfide crosslinking confirms direct interaction between the MRE \u03b2-loop and substrate TMs near the cleavage site. Cys residues at positions 69 and 71 of the MRE \u03b2-loop formed disulfide bonds with Cys residues on either side of the scissile bond in RseA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C58 and C84 are supported by disulfide crosslinking experiments (Figure 5). The crosslinked products were sensitive to reducing agents (C56) and consistent with photo-crosslinking results (C57). The data provide strong evidence for direct MRE \u03b2-loop-substrate TM interaction near the cleavage site.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "2fdef0fd-98a6-40cf-a6c1-b7f05549b6a5",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Helix-destabilizing mutations in substrate TMs suppress MRE \u03b2-loop mutations in an allele-specific manner. Pro mutations at specific positions in YqfG and LY1 TMs differentially suppressed defects caused by different Pro mutations in the RseP MRE \u03b2-loop, while helix-stabilizing mutations did not, suggesting specific recognition of substrate TMs by the MRE \u03b2-loop.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C69, C73-C74, and C83 are supported by immunoblotting (Figure 6A-C, G) and pulse-chase experiments (Figure 6D-F). The allele-specific suppression pattern (e.g., L12P suppresses G67P but not K71P, while I8P suppresses K71P but not G67P) provides strong evidence for specific MRE \u03b2-loop-substrate TM interactions. The requirement for helix-destabilizing (not helix-forming) mutations supports the proposed mechanism. Control experiments (Figure 6\u2014figure supplement 1) confirm that suppression requires the MRE \u03b2-loop.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "03d6165b-0678-4f34-965b-74fed6a6b80f",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The MRE \u03b2-loop assumes a \u03b2-hairpin-like structure. Structural analysis of mjS2P and sequence-based predictions for RseP and SpoIVFB suggest that the MRE \u03b2-loop contains \u03b2-strands in both proximal and distal regions, forming a \u03b2-hairpin-like structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C78 are supported by structural analysis of the mjS2P crystal structure using STRIDE (C75-C76) and sequence-based secondary structure predictions for RseP and SpoIVFB (C77, Figure 1D). The inference of a common \u03b2-hairpin structure is reasonable based on the data, though direct structural evidence for RseP is lacking.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "e2508780-e969-4e3a-845d-daca625e4d0f",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The effects of MRE \u03b2-loop mutations on substrate cleavage cannot be explained solely by intrinsic substrate susceptibility. Different Pro mutations in the MRE \u03b2-loop differentially affect cleavage of different substrates in patterns that do not correlate with the substrates' intrinsic susceptibility to wild-type RseP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C82 are supported by pulse-chase data showing that G68P and K71P mutations have different effects on different substrates. The observation that the pattern of effects does not match the intrinsic cleavage rates by wild-type RseP supports the inference of specific MRE \u03b2-loop-substrate interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "39d3019c-3d5e-4e7c-9d3d-9c33fe2a23f6",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The MRE \u03b2-loop stabilizes substrate TMs in an extended conformation through \u03b2-strand addition, similar to edge strands in other zinc metalloproteinases. Crosslinking at alternate positions (69 and 71 but not 70) supports \u03b2-strand conformation during substrate interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C94-C96 propose a mechanistic model based on experimental data and analogy to other proteases. While the crosslinking pattern (C95) supports \u03b2-strand conformation, the model of \u03b2-strand addition and substrate stabilization (C94) is largely inferential. The comparison to GlpG loop 3 (C96) is speculative. The model is plausible and consistent with the data but lacks direct structural or mechanistic evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "0caf5c0b-88cf-4318-8b68-347e96fe0860",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The MRE \u03b2-loop acts as a second checkpoint for substrate discrimination after the PDZ filter. The PDZ tandem acts as a size-exclusion filter based on periplasmic domain size, while the MRE \u03b2-loop provides additional substrate selectivity through specific TM recognition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97 and C100 integrate previous work on the PDZ filter with current findings on the MRE \u03b2-loop. The model is supported by the observation that YoaJ (small periplasmic domain) is not cleaved despite passing the PDZ filter, and by the demonstrated role of the MRE \u03b2-loop in substrate binding and cleavage. The two-checkpoint model is a reasonable synthesis of the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "331de86f-c1f8-4f0f-a641-9890e48936dd",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The role of the MRE \u03b2-loop may differ between RseP and SpoIVFB due to differences in their substrates. SpoIVFB's substrate Pro-\u03c3K is peripherally membrane-associated and does not require helix-destabilizing residues for cleavage, unlike RseP substrates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C88 are based on citations to previous work on SpoIVFB (Zhang et al., 2013; Zhou et al., 2013). The comparison is appropriate and the inference that the MRE \u03b2-loop may function differently in the two enzymes is reasonable given the substrate differences. However, this is largely speculative and would require direct experimental comparison.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "097a9e8f-f6b4-496e-b86e-39f1d7e762f6",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "RseP likely has an exosite for binding intact RseA on its external surface. Previous work showed RseP interacts with intact RseA despite the PDZ filter excluding it from the active site, suggesting a separate binding site that may be analogous to exosites in other I-CLiPs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C103-C106 are based on previous work (C103, citation to Kanehara et al., 2003) and analogy to other proteases (C106). The inference of an exosite (C104) and its location (C105) are speculative. While the model is plausible and consistent with the PDZ filter mechanism, direct evidence for an exosite is lacking. This represents a hypothesis for future investigation rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "918b3385-96d1-4c11-bcf2-d9ca6d2d2a7a",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background on RseP structure and function. RseP is an S2P family protease with 4 transmembrane segments, tandem PDZ domains, and conserved active site motifs. It regulates \u03c3E stress response through site-2 cleavage of RseA after DegS-mediated site-1 cleavage and also cleaves signal peptides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13 provide established background information supported by multiple citations to previous work. These are well-established facts about RseP structure and function that provide context for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "edac87be-e104-4fc3-a3a0-ea198b64087d",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background on S2P family structures and the MRE \u03b2-loop. The mjS2P crystal structure revealed a membrane-reentrant \u03b2-loop near the active site. This MRE \u03b2-loop is conserved in groups I and III S2P subfamilies and can be crosslinked with substrates in SpoIVFB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C23 provide background on S2P structures and the MRE \u03b2-loop based on previous structural and biochemical studies. The information is well-supported by citations and provides the rationale for investigating the MRE \u03b2-loop function in RseP.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "4f61ef13-48be-4dcd-8289-83a04b7c426c",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "TM3 and the MRE \u03b2-loop may cooperate in substrate binding. The N389L mutation in TM3 weakens substrate interaction, and TM3 can be crosslinked with substrate TMs. A flexible region in TM3 may act with the MRE \u03b2-loop in substrate binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C89-C91 are based on previous work (citations to Koide et al., 2008 and Feng et al., 2007). Claim C92 is speculative reasoning about TM3 flexibility and cooperation with the MRE \u03b2-loop. While plausible, this model lacks direct experimental support in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "ef241b5c-530a-4a90-91f9-6c3fb7e4aaaf",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Many zinc metalloproteinases use edge strands for substrate binding. This is established knowledge about zinc metalloproteinase mechanisms that provides context for the proposed MRE \u03b2-loop function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C93 is supported by citations to previous reviews (Stocker and Bode, 1995; Langklotz et al., 2012) and represents established knowledge about protease mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    },
+    {
+      "id": "6b38f4de-9be9-4f46-959a-b9b53deedc65",
+      "content_id": "fa31b581-8207-400c-8e2c-0c9a2822be87",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The MRE \u03b2-loop may play a central role in substrate selection in mjS2P, which lacks PDZ domains. This is speculative reasoning based on the absence of PDZ domains in mjS2P.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C101-C102 are speculative. While C101 is an established fact about mjS2P structure, C102 is inference without direct experimental support. The hypothesis is reasonable but requires experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:05.034761Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "409c543a-06df-4fa8-a7ae-c75d601ebb21",
+      "result_id": "193b7e01-212e-4b05-a68e-8bdfbb649023"
+    },
+    {
+      "claim_id": "dd2ba392-9c3b-4f8b-9eb0-29dfb948dfd7",
+      "result_id": "193b7e01-212e-4b05-a68e-8bdfbb649023"
+    },
+    {
+      "claim_id": "436cc18e-54ce-42a0-8bfa-66070c7e03d4",
+      "result_id": "193b7e01-212e-4b05-a68e-8bdfbb649023"
+    },
+    {
+      "claim_id": "5d966add-f011-426b-a19d-90ff9c918089",
+      "result_id": "193b7e01-212e-4b05-a68e-8bdfbb649023"
+    },
+    {
+      "claim_id": "e1a1513c-72c6-4b35-a86a-89d83cfc60e4",
+      "result_id": "193b7e01-212e-4b05-a68e-8bdfbb649023"
+    },
+    {
+      "claim_id": "a04784d8-a947-4f9e-a089-22140c475c5f",
+      "result_id": "3861d813-46a4-4a41-98c1-38223f1e5d1f"
+    },
+    {
+      "claim_id": "63c437c7-b956-4a04-9b6d-2fd7810999c5",
+      "result_id": "3861d813-46a4-4a41-98c1-38223f1e5d1f"
+    },
+    {
+      "claim_id": "bf8f6a12-d3a2-4479-9e19-27ab31946609",
+      "result_id": "3861d813-46a4-4a41-98c1-38223f1e5d1f"
+    },
+    {
+      "claim_id": "842f5ce0-073c-42ea-970e-4bb6deb6a71e",
+      "result_id": "c10486a1-a0f4-48b1-8aa6-5a27fe83047e"
+    },
+    {
+      "claim_id": "d5a34b07-0741-4a62-ad9d-ab4ffdda375b",
+      "result_id": "c10486a1-a0f4-48b1-8aa6-5a27fe83047e"
+    },
+    {
+      "claim_id": "871162fa-6219-413e-9d9e-921e654750f2",
+      "result_id": "c10486a1-a0f4-48b1-8aa6-5a27fe83047e"
+    },
+    {
+      "claim_id": "23f37de8-f16e-4a6a-aaa1-edcfc8070688",
+      "result_id": "c10486a1-a0f4-48b1-8aa6-5a27fe83047e"
+    },
+    {
+      "claim_id": "fa90527e-abe0-4981-8f80-487eff7f0468",
+      "result_id": "c10486a1-a0f4-48b1-8aa6-5a27fe83047e"
+    },
+    {
+      "claim_id": "e0da0c05-8164-4526-972e-02e7086b8eb8",
+      "result_id": "c10486a1-a0f4-48b1-8aa6-5a27fe83047e"
+    },
+    {
+      "claim_id": "c4987fd4-3738-4676-bc4f-04fe8f151e53",
+      "result_id": "c10486a1-a0f4-48b1-8aa6-5a27fe83047e"
+    },
+    {
+      "claim_id": "75389c67-c007-4c42-b1db-8743c96c3da4",
+      "result_id": "c10486a1-a0f4-48b1-8aa6-5a27fe83047e"
+    },
+    {
+      "claim_id": "34e8b446-47ac-4556-8e41-150fcf3762db",
+      "result_id": "c10486a1-a0f4-48b1-8aa6-5a27fe83047e"
+    },
+    {
+      "claim_id": "e864fa27-94c0-4758-b022-0e9a5e79867e",
+      "result_id": "8148fca7-3b9f-4905-8d26-f6671dcac1a4"
+    },
+    {
+      "claim_id": "cc82d7aa-5501-44ff-833b-1c5a3eb0ede2",
+      "result_id": "8148fca7-3b9f-4905-8d26-f6671dcac1a4"
+    },
+    {
+      "claim_id": "d2fa3bd5-267b-4c9e-be80-7d6c01bad48d",
+      "result_id": "8148fca7-3b9f-4905-8d26-f6671dcac1a4"
+    },
+    {
+      "claim_id": "e526fa72-8876-4842-af52-f34d712a919d",
+      "result_id": "8148fca7-3b9f-4905-8d26-f6671dcac1a4"
+    },
+    {
+      "claim_id": "f051925a-d3e0-4e67-b322-27cb08a44dc7",
+      "result_id": "8148fca7-3b9f-4905-8d26-f6671dcac1a4"
+    },
+    {
+      "claim_id": "4877b017-a187-439e-819d-ea29b7a038a9",
+      "result_id": "494978a6-21f5-4469-a733-aafb2a6856d1"
+    },
+    {
+      "claim_id": "419a04e4-736a-417d-b3a6-ebad06cc12bc",
+      "result_id": "494978a6-21f5-4469-a733-aafb2a6856d1"
+    },
+    {
+      "claim_id": "e130b4e2-e929-4014-a361-b133f725d484",
+      "result_id": "494978a6-21f5-4469-a733-aafb2a6856d1"
+    },
+    {
+      "claim_id": "8458e577-0ddb-482b-84e4-447252d64abd",
+      "result_id": "494978a6-21f5-4469-a733-aafb2a6856d1"
+    },
+    {
+      "claim_id": "f9cbe4e3-3f74-4de5-a3e9-8df8d2f6bc63",
+      "result_id": "494978a6-21f5-4469-a733-aafb2a6856d1"
+    },
+    {
+      "claim_id": "a876527b-177d-4bf4-925c-d73acc21f376",
+      "result_id": "494978a6-21f5-4469-a733-aafb2a6856d1"
+    },
+    {
+      "claim_id": "f99531fd-b030-4269-8e03-3fe450808392",
+      "result_id": "494978a6-21f5-4469-a733-aafb2a6856d1"
+    },
+    {
+      "claim_id": "97f1e4f5-5c1f-4f08-8ec8-4abe57481ff5",
+      "result_id": "3b732694-cced-4962-83e2-dcdb321ea5a4"
+    },
+    {
+      "claim_id": "8251d558-9d53-4312-b6b3-36321f0bac2b",
+      "result_id": "3b732694-cced-4962-83e2-dcdb321ea5a4"
+    },
+    {
+      "claim_id": "d479b5c9-2a78-44c9-ae89-ec661ea9b6ee",
+      "result_id": "3b732694-cced-4962-83e2-dcdb321ea5a4"
+    },
+    {
+      "claim_id": "30007689-1a3f-45e1-8452-5b1ce1cc72ce",
+      "result_id": "3b732694-cced-4962-83e2-dcdb321ea5a4"
+    },
+    {
+      "claim_id": "d16afe60-d991-4645-aa9e-a6adcb223fd9",
+      "result_id": "3b732694-cced-4962-83e2-dcdb321ea5a4"
+    },
+    {
+      "claim_id": "7d5dc6f1-fed8-44fe-b57c-4822195117f1",
+      "result_id": "3b732694-cced-4962-83e2-dcdb321ea5a4"
+    },
+    {
+      "claim_id": "de9829c1-fe2b-4786-90dc-009e5337de0a",
+      "result_id": "f3c8e506-0aef-44e2-83d9-ff7eb176b70f"
+    },
+    {
+      "claim_id": "29790c11-51a0-4884-b64f-dd1997c0c27f",
+      "result_id": "f3c8e506-0aef-44e2-83d9-ff7eb176b70f"
+    },
+    {
+      "claim_id": "41b46d4e-4516-4691-be8b-e5366aac9c30",
+      "result_id": "f3c8e506-0aef-44e2-83d9-ff7eb176b70f"
+    },
+    {
+      "claim_id": "6d072b20-85f3-4396-a954-65a8c86ab0be",
+      "result_id": "f3c8e506-0aef-44e2-83d9-ff7eb176b70f"
+    },
+    {
+      "claim_id": "8a4ee981-7a4f-4034-8fd9-1a6ab48393c2",
+      "result_id": "f3c8e506-0aef-44e2-83d9-ff7eb176b70f"
+    },
+    {
+      "claim_id": "1503e670-398b-42a8-ada6-c03460920e9b",
+      "result_id": "2fdef0fd-98a6-40cf-a6c1-b7f05549b6a5"
+    },
+    {
+      "claim_id": "b6558944-b43d-4970-a094-93b4ea67aec8",
+      "result_id": "2fdef0fd-98a6-40cf-a6c1-b7f05549b6a5"
+    },
+    {
+      "claim_id": "e2e5fd1a-4b53-4943-8939-2834387766e0",
+      "result_id": "2fdef0fd-98a6-40cf-a6c1-b7f05549b6a5"
+    },
+    {
+      "claim_id": "dbbb669a-119d-40ae-b1c5-50f060460cbf",
+      "result_id": "2fdef0fd-98a6-40cf-a6c1-b7f05549b6a5"
+    },
+    {
+      "claim_id": "7982f796-62e7-43ac-952a-b7dcec7ffcee",
+      "result_id": "2fdef0fd-98a6-40cf-a6c1-b7f05549b6a5"
+    },
+    {
+      "claim_id": "0f225c2a-9155-4a22-87fc-4c772e1b5fbd",
+      "result_id": "2fdef0fd-98a6-40cf-a6c1-b7f05549b6a5"
+    },
+    {
+      "claim_id": "7850b020-1487-4033-8f0b-7e0430e9f9ce",
+      "result_id": "2fdef0fd-98a6-40cf-a6c1-b7f05549b6a5"
+    },
+    {
+      "claim_id": "fa1aab3c-53cf-44c7-a76b-17e23de15c42",
+      "result_id": "2fdef0fd-98a6-40cf-a6c1-b7f05549b6a5"
+    },
+    {
+      "claim_id": "abc46fff-a9fc-466a-939a-45b91d3da95b",
+      "result_id": "2fdef0fd-98a6-40cf-a6c1-b7f05549b6a5"
+    },
+    {
+      "claim_id": "3b975985-27d3-41cd-9a41-577119df4442",
+      "result_id": "2fdef0fd-98a6-40cf-a6c1-b7f05549b6a5"
+    },
+    {
+      "claim_id": "1de7ff38-7f67-490b-8f52-5367322ac26b",
+      "result_id": "2fdef0fd-98a6-40cf-a6c1-b7f05549b6a5"
+    },
+    {
+      "claim_id": "fc3c6906-4d9e-4153-9b96-21a60db601b3",
+      "result_id": "2fdef0fd-98a6-40cf-a6c1-b7f05549b6a5"
+    },
+    {
+      "claim_id": "b4549473-c4ad-485e-a02e-1cbe7d57169a",
+      "result_id": "2fdef0fd-98a6-40cf-a6c1-b7f05549b6a5"
+    },
+    {
+      "claim_id": "9468ebf9-a9c4-44cc-b96f-c90b5306568c",
+      "result_id": "2fdef0fd-98a6-40cf-a6c1-b7f05549b6a5"
+    },
+    {
+      "claim_id": "df18ea4e-5597-4769-86ab-7557c6c045c1",
+      "result_id": "03d6165b-0678-4f34-965b-74fed6a6b80f"
+    },
+    {
+      "claim_id": "df7cf8e3-115f-4cc8-a486-6f8944833342",
+      "result_id": "03d6165b-0678-4f34-965b-74fed6a6b80f"
+    },
+    {
+      "claim_id": "4fafb61f-2aa5-4aa0-96cd-f351e7a4814a",
+      "result_id": "03d6165b-0678-4f34-965b-74fed6a6b80f"
+    },
+    {
+      "claim_id": "cb54ecfe-0d9a-49d1-a07c-c58ac79d7070",
+      "result_id": "03d6165b-0678-4f34-965b-74fed6a6b80f"
+    },
+    {
+      "claim_id": "51b2540b-fbec-44b6-9adf-8a9daa393495",
+      "result_id": "e2508780-e969-4e3a-845d-daca625e4d0f"
+    },
+    {
+      "claim_id": "7d6a2878-e079-41dd-8120-6ce7c998e3e8",
+      "result_id": "e2508780-e969-4e3a-845d-daca625e4d0f"
+    },
+    {
+      "claim_id": "4ca5b4c0-22f1-490c-9e79-4cabe0afe3b2",
+      "result_id": "e2508780-e969-4e3a-845d-daca625e4d0f"
+    },
+    {
+      "claim_id": "b106d410-5567-4ad6-b80c-c5f8b9afa6f3",
+      "result_id": "39d3019c-3d5e-4e7c-9d3d-9c33fe2a23f6"
+    },
+    {
+      "claim_id": "2886cfa8-d93d-462c-a57d-78498644f0a8",
+      "result_id": "39d3019c-3d5e-4e7c-9d3d-9c33fe2a23f6"
+    },
+    {
+      "claim_id": "a74e3b1c-6b44-458d-af66-9cbb5fd6d56b",
+      "result_id": "39d3019c-3d5e-4e7c-9d3d-9c33fe2a23f6"
+    },
+    {
+      "claim_id": "e950e678-95aa-47fc-aa24-3e2b7bc75f07",
+      "result_id": "0caf5c0b-88cf-4318-8b68-347e96fe0860"
+    },
+    {
+      "claim_id": "724b1922-6a73-485e-b67a-357d723bad59",
+      "result_id": "0caf5c0b-88cf-4318-8b68-347e96fe0860"
+    },
+    {
+      "claim_id": "4b63b6ee-bfd0-4727-978a-5d1ed8c370a4",
+      "result_id": "331de86f-c1f8-4f0f-a641-9890e48936dd"
+    },
+    {
+      "claim_id": "056a4e28-a850-48d6-a75f-fb7c33a59a11",
+      "result_id": "331de86f-c1f8-4f0f-a641-9890e48936dd"
+    },
+    {
+      "claim_id": "57392fe4-4e4f-4788-a779-961aa3bdb1ea",
+      "result_id": "331de86f-c1f8-4f0f-a641-9890e48936dd"
+    },
+    {
+      "claim_id": "e3c52d2f-1221-4610-b84e-1e2b5e491963",
+      "result_id": "331de86f-c1f8-4f0f-a641-9890e48936dd"
+    },
+    {
+      "claim_id": "67adbb2e-82a7-4cbe-acb4-6b9ccb257013",
+      "result_id": "097a9e8f-f6b4-496e-b86e-39f1d7e762f6"
+    },
+    {
+      "claim_id": "56ca9ae9-bdb5-4c41-a2ee-ede94193322b",
+      "result_id": "097a9e8f-f6b4-496e-b86e-39f1d7e762f6"
+    },
+    {
+      "claim_id": "f0766d42-1364-4b7f-9a56-be598de70b44",
+      "result_id": "097a9e8f-f6b4-496e-b86e-39f1d7e762f6"
+    },
+    {
+      "claim_id": "9df79180-5ff1-4ed1-8e59-0f0bc9abc9dc",
+      "result_id": "097a9e8f-f6b4-496e-b86e-39f1d7e762f6"
+    },
+    {
+      "claim_id": "b1041f54-d407-4273-91f2-02c1c0acf810",
+      "result_id": "918b3385-96d1-4c11-bcf2-d9ca6d2d2a7a"
+    },
+    {
+      "claim_id": "b15983f0-cc49-4e57-ba01-efe69d126e33",
+      "result_id": "918b3385-96d1-4c11-bcf2-d9ca6d2d2a7a"
+    },
+    {
+      "claim_id": "65c50825-0dee-4c1c-9447-25d7ebc1c814",
+      "result_id": "918b3385-96d1-4c11-bcf2-d9ca6d2d2a7a"
+    },
+    {
+      "claim_id": "0a13fac0-b476-41df-a10c-a0045382b1eb",
+      "result_id": "918b3385-96d1-4c11-bcf2-d9ca6d2d2a7a"
+    },
+    {
+      "claim_id": "7ad23a30-5798-49d5-b04f-dac2cc04b37d",
+      "result_id": "918b3385-96d1-4c11-bcf2-d9ca6d2d2a7a"
+    },
+    {
+      "claim_id": "43e7f996-8fad-4ddf-8668-746bd01df352",
+      "result_id": "918b3385-96d1-4c11-bcf2-d9ca6d2d2a7a"
+    },
+    {
+      "claim_id": "253bbe52-1b4d-4620-a751-422744281c6f",
+      "result_id": "918b3385-96d1-4c11-bcf2-d9ca6d2d2a7a"
+    },
+    {
+      "claim_id": "1a86f818-d93e-4dd2-aa1d-df53f1124ca9",
+      "result_id": "918b3385-96d1-4c11-bcf2-d9ca6d2d2a7a"
+    },
+    {
+      "claim_id": "c928751f-984d-4a6c-af47-f47e4962c253",
+      "result_id": "918b3385-96d1-4c11-bcf2-d9ca6d2d2a7a"
+    },
+    {
+      "claim_id": "f720c39d-a62e-40ab-985e-c6579aaba0ff",
+      "result_id": "918b3385-96d1-4c11-bcf2-d9ca6d2d2a7a"
+    },
+    {
+      "claim_id": "5e4407df-427f-4e65-be31-22217251b0b4",
+      "result_id": "918b3385-96d1-4c11-bcf2-d9ca6d2d2a7a"
+    },
+    {
+      "claim_id": "ab5f9e77-c0a2-4924-b8d5-dfa59fcabb56",
+      "result_id": "918b3385-96d1-4c11-bcf2-d9ca6d2d2a7a"
+    },
+    {
+      "claim_id": "ba7407b8-9d2f-44f0-9f98-521d0ba2ce89",
+      "result_id": "918b3385-96d1-4c11-bcf2-d9ca6d2d2a7a"
+    },
+    {
+      "claim_id": "89b7a8b0-a64c-4f9b-b538-b5f6a94e2925",
+      "result_id": "edac87be-e104-4fc3-a3a0-ea198b64087d"
+    },
+    {
+      "claim_id": "cb99e1e7-ee18-402f-8716-904fb22194d5",
+      "result_id": "edac87be-e104-4fc3-a3a0-ea198b64087d"
+    },
+    {
+      "claim_id": "152d070b-53d4-4c59-ae78-8d4f837a06ee",
+      "result_id": "edac87be-e104-4fc3-a3a0-ea198b64087d"
+    },
+    {
+      "claim_id": "51686cce-432e-4779-8e6a-8d38136e2eaf",
+      "result_id": "edac87be-e104-4fc3-a3a0-ea198b64087d"
+    },
+    {
+      "claim_id": "07fb8aa9-ef93-4dfa-97b4-6928db9c2d72",
+      "result_id": "edac87be-e104-4fc3-a3a0-ea198b64087d"
+    },
+    {
+      "claim_id": "4b7c94e5-2273-4e6b-a885-62b1620791db",
+      "result_id": "edac87be-e104-4fc3-a3a0-ea198b64087d"
+    },
+    {
+      "claim_id": "1e0c36a8-f59e-4e60-8979-c82e56e8cf95",
+      "result_id": "edac87be-e104-4fc3-a3a0-ea198b64087d"
+    },
+    {
+      "claim_id": "4cc65d2b-4cb5-4e63-9e85-ae7fca808fdf",
+      "result_id": "edac87be-e104-4fc3-a3a0-ea198b64087d"
+    },
+    {
+      "claim_id": "bcea6cb4-2035-49e7-b74e-a46d3396682a",
+      "result_id": "edac87be-e104-4fc3-a3a0-ea198b64087d"
+    },
+    {
+      "claim_id": "1e75da31-0509-4623-aa3a-80d2c1f75360",
+      "result_id": "edac87be-e104-4fc3-a3a0-ea198b64087d"
+    },
+    {
+      "claim_id": "a771ef4e-3a10-4683-be99-d086a3d0b887",
+      "result_id": "4f61ef13-48be-4dcd-8289-83a04b7c426c"
+    },
+    {
+      "claim_id": "664be17c-0a34-4959-8c4e-1289d5831bf9",
+      "result_id": "4f61ef13-48be-4dcd-8289-83a04b7c426c"
+    },
+    {
+      "claim_id": "5ddab41e-8ec9-4aef-9f77-2d8105cc611c",
+      "result_id": "4f61ef13-48be-4dcd-8289-83a04b7c426c"
+    },
+    {
+      "claim_id": "0856aa33-44ba-4c5c-938c-a1d006e65403",
+      "result_id": "4f61ef13-48be-4dcd-8289-83a04b7c426c"
+    },
+    {
+      "claim_id": "7e95826c-190a-4893-a885-243652af848c",
+      "result_id": "ef241b5c-530a-4a90-91f9-6c3fb7e4aaaf"
+    },
+    {
+      "claim_id": "72123e23-5862-4bc4-90a7-46b14d642b86",
+      "result_id": "6b38f4de-9be9-4f46-959a-b9b53deedc65"
+    },
+    {
+      "claim_id": "46b82317-78da-4440-b900-6c01e3bd19c0",
+      "result_id": "6b38f4de-9be9-4f46-959a-b9b53deedc65"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The authors establish a cellular model of mitochondrial dysfunction by depleting mtDNA in T-REx-293 cells using doxycycline-inducible POLGdn expression or ethidium bromide treatment. Both methods lead to depletion of OXPHOS complex components, compromised respiratory capacity, and slowed cell growth that is reversible upon removal of the inducing agent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C9 collectively establish the experimental model with data from Figure 1a and Figure 1\u2014figure supplement 1-2. The model shows expected phenotypes of mtDNA depletion including loss of OXPHOS components, reduced respiration, and growth defects. Two independent methods (POLGdn and EtBr) give similar results, strengthening the findings. However, the authors note potential selection against POLGdn expression during recovery, which is a limitation but does not undermine the core model validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C48",
+      "C121",
+      "C122"
+    ],
+    "result": "Integrated metabolite, protein, and transcriptional profiling reveals that mtDNA depletion leads to activation of serine biosynthesis and transsulfuration pathways. Serine is the most strongly increased metabolite, serine biosynthesis enzymes are among the most upregulated proteins, and the entire serine biosynthetic pathway plus serine transporters are transcriptionally elevated. Conversely, homocysteine is the most strongly decreased metabolite, while transsulfuration pathway components and byproducts (taurine, \u03b1-hydroxybutyrate) are increased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The profiling data (C10-C18) are hypothesis-generating with limited replicates (n=1 for transcripts and proteins, n=2 for metabolites), as the authors explicitly acknowledge. While the confirmation experiments (C48, C121, C122) with EtBr treatment validate some findings, the initial profiling lacks statistical power for definitive conclusions. The convergence across multiple profiling modalities is suggestive but requires more rigorous validation beyond what is presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Transcriptional changes upon mtDNA depletion are mediated by ATF4 activation. motifADE analysis identifies an ATF4-C/EBP binding site (5'-TGATGCAA-3') as the highest-scoring motif, which is enriched in the promoters of upregulated genes (52% of top 50 vs. 14% genome-wide). Overexpression of GADD34\u0394N, an ATF4 inhibitor, blocks the upregulation of serine and cysteine biosynthesis genes in response to mtDNA depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C28 provide converging evidence for ATF4 involvement through computational motif analysis (with appropriate statistical testing, p\u22481.8\u00d710^4 adjusted), enrichment analysis (p<10^-9), functional validation with GADD34\u0394N (Figure 2b,d), and literature support for ATF4's known roles. The motifADE analysis is appropriately corrected for multiple testing, and the GADD34\u0394N experiments provide functional validation. However, the transcriptional profiling underlying the motif analysis has n=1, which limits confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "ATF4 activation arises from redox stress due to a stalled respiratory chain rather than from ATP depletion or membrane depolarization. Complex III and V inhibitors (antimycin, oligomycin) strongly activate ATF4 targets, complex I inhibition (rotenone) gives subtle activation, while the uncoupler CCCP fails to activate and partially reverses mtDNA depletion-induced activation. Altered NAD+/NADH ratios (lactate vs. pyruvate) contribute to but do not fully explain ATF4 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C37 use a systematic pharmacological approach to dissect the mechanism of ATF4 activation (Figure 2e,f). The pattern of responses across different mitochondrial inhibitors logically supports the conclusion about redox stress vs. bioenergetic defects. The lactate/pyruvate experiments (C35-C36) provide additional mechanistic insight, though the authors appropriately note the magnitude is modest compared to direct RC inhibition. The inference (C34) is well-supported by the data pattern, though alternative explanations are not exhaustively ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The transcriptional effects observed are due to mtDNA depletion rather than doxycycline toxicity. Doxycycline treatment of T-REx-293 cells without POLGdn expression shows much lower activation of ATF4 target genes, and the ATF4 motif is not significant in motifADE analysis of doxycycline control data when using Bonferroni-corrected p-values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 address an important control for the experimental system. The comparison between doxycycline with and without POLGdn expression (Figure 2\u2014figure supplement 1) demonstrates that the observed effects are primarily due to mtDNA depletion rather than drug toxicity. This control is essential given the known effects of doxycycline on mitochondrial translation (C38). The motifADE analysis with appropriate multiple testing correction strengthens this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "mtDNA depletion increases cellular H2S production. Homocysteine levels decrease with mtDNA depletion, and H2S accumulation increases as measured by two independent methods (MBB-HPLC and SSP4 fluorescent probe). The increase in H2S is greater than that induced by acute antimycin treatment, suggesting increased production rather than just decreased degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 provide a logical progression from decreased homocysteine (C43, confirmed in Figure 3a) to increased H2S (C45-C46, measured by two independent methods in Figure 3b, n=6). The comparison to acute antimycin treatment (C46) is a good control for distinguishing increased production from decreased degradation. The inference (C47) is reasonable given the transcriptional activation of transsulfuration genes. However, direct measurement of H2S production rates would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "In response to mtDNA depletion, cells both produce more serine from glucose and consume less serine overall. Isotopic tracer analysis with 13C-glucose shows increased serine synthesis and decreased serine uptake from media. The decreased uptake reflects decreased overall consumption rather than cytoplasmic accumulation, based on cell volume to media volume ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 use isotopic tracer methodology (Figure 4b, n=3) to distinguish between synthesis and consumption, addressing the ambiguity in endpoint measurements. The reasoning about cell volume vs. media volume (C50) is sound and supports the interpretation of decreased consumption. However, the use of 50 \u03bcM serine (lower than the 400 \u03bcM in standard DMEM) to avoid product inhibition is appropriate but means the results may not fully reflect behavior under standard culture conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C123"
+    ],
+    "result": "Respiratory chain dysfunction impairs mitochondrial one-carbon metabolism by affecting NAD+ reoxidation. The NAD+-dependent step (MTHFD2 oxidation of methylene-THF to formyl-THF) is predicted to be impaired. Serine isotope scrambling experiments in SHMT1 KO cells show increased 13C1-serine emergence with mtDNA depletion and rotenone treatment, indicating accumulation of methylene-THF. NAD+:NADH ratios are altered by both treatments. Direct measurement in isolated mitochondria shows rotenone and antimycin partially inhibit formate synthesis from serine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C66 and C123 build a mechanistic model linking respiratory chain function to 1C metabolism through NAD+ redox state. The serine scrambling assay (C61-C62, Figure 4c) is an elegant indirect readout of methylene-THF accumulation, though n=2 is limiting. The NAD+:NADH measurements (C63) support the model. The direct formate synthesis assays in isolated mitochondria (C65, Figure 4d, n=3) provide strong validation, and the consistency with prior work (C66) strengthens confidence. The model is biochemically sound and well-supported experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Remethylation is not a major fate for homocysteine in T-REx-293 cells. Deuterium tracer experiments show homocysteine remethylation using exogenous formate is nearly 1000-fold slower than serine synthesis from formate. Therefore, decreased homocysteine levels are compatible with impaired mitochondrial 1C metabolism, as the decreased homocysteine is attributed to increased transsulfuration rather than decreased remethylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 address a potential contradiction between decreased homocysteine and impaired 1C metabolism. The deuterium tracer experiments (C69, Figure 4\u2014figure supplement 4, n=3) directly measure remethylation flux and show it is negligible in these cells. This cell-type-specific finding (C70) reconciles the observations and supports the overall model (C71). The logic is sound, though the generalizability to other cell types or in vivo contexts is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C124"
+    ],
+    "result": "Mitochondrial dysfunction induces serine dependency in some cell lines. Antimycin- or rotenone-treated T-REx-293 cells show strongly impaired growth when serine is withdrawn, while DMSO controls do not. Similar effects occur with EtBr-induced mtDNA depletion and oligomycin treatment. CCCP does not induce serine dependency and can rescue oligomycin-induced dependency, suggesting the dependency relates to NAD cofactor redox state rather than energy impairment. Optimal growth requires >100 \u03bcM serine in the presence of antimycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C81 and C124 demonstrate serine dependency with multiple mitochondrial inhibitors and mtDNA depletion (Figures 5a-b, n=3). The CCCP rescue experiments (C79-C80) elegantly distinguish redox effects from bioenergetic effects, supporting the mechanistic model. The dose-response (C75) provides quantitative insight. However, the authors appropriately note this is not a true auxotrophy (C76 is speculation), and the phenomenon is cell-type specific (see C113-C116), limiting generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Serine dependency upon mitochondrial dysfunction is related to one-carbon metabolism and can be rescued with formate or hypoxanthine supplementation. In OXPHOS-inhibited T-REx-293 cells with serine withdrawal, 30 \u03bcM hypoxanthine or 3 mM formate give near-complete rescue of growth. Similar rescue occurs in mtDNA-depleted cells. This parallels findings in MTHFD2/MTHFD1L knockout models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C90 provide strong functional validation that the serine dependency is due to impaired 1C metabolism (Figures 5a-b, n=3). The rescue with both formate (bypassing mitochondrial synthesis) and hypoxanthine (bypassing purine synthesis) is logically consistent with the model. The parallel to genetic knockouts of 1C enzymes (C82-C83) strengthens the interpretation. The concentrations used are reasonable based on prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Compartment-specific analysis using SHMT knockouts reveals that mitochondrial 1C metabolism is preferentially required when serine is limiting. SHMT2 KO (mitochondrial) but not SHMT1 KO (cytoplasmic) cells show growth defects without serine that are rescuable with formate. In the presence of serine, both knockouts grow normally, indicating serine can generate 1C units in either compartment. High exogenous serine levels may be required to drive cytoplasmic 1C generation via SHMT1 because MTHFD1 favors formyl-THF consumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C101 use genetic knockouts to dissect compartment-specific contributions (Figure 5c, Figure 5\u2014figure supplement 2). The differential phenotypes of SHMT1 vs. SHMT2 KO (C95, C98-C99) clearly demonstrate the importance of mitochondrial 1C metabolism. The formate synthesis assay in isolated mitochondria (C95) validates the knockouts. The hypothesis about MTHFD1 directionality (C100-C101) is reasonable and supported by literature, though it remains speculative without direct testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "SHMT1/SHMT2 double knockout cells require exogenous 1C sources for growth, demonstrating that serine-derived 1C units cannot be fully replaced by other sources (choline, glycine). DKO cells cannot grow on unsupplemented media but can be rescued with formate or hypoxanthine+thymidine. Interestingly, hypoxanthine alone provides partial rescue. When rescued with formate or hypoxanthine, DKO cells are no longer serine dependent even with antimycin treatment, indicating no other serine functions account for the requirement during RC inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C111 use double knockouts to definitively demonstrate the importance of serine-derived 1C units (Figure 5\u2014figure supplement 2, n=3). The inability to grow without HT or formate (C105-C106) and the partial rescue with hypoxanthine alone (C108) provide important insights into 1C metabolism. The final experiment (C110-C111) elegantly demonstrates that serine's role in RC-inhibited cells is specifically for 1C metabolism, not other functions. The logic is sound and the experiments are well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The impairment of 1C metabolism upon respiratory chain dysfunction appears general across cell types, but serine dependency is cell-type specific. Increased serine scrambling (indicating 1C impairment) was observed in T-Rex293, 293T, HeLa, and C2C12 cells. However, serine dependency upon RC inhibition was only observed in T-Rex293, 293MSR, U251, and HCT116 cells. The phenomenon also occurs in S. cerevisiae grown in nonfermentable media with antimycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C117 appropriately assess generalizability across cell types and species. The serine scrambling data (C112, Figure 4\u2014figure supplement 3) suggest 1C impairment is general, while growth dependency (C113-C115, Figure 5\u2014figure supplement 3, n=3) is cell-type specific. The speculation about T antigen expression (C116) is reasonable but untested. The yeast data (C117, Figure 5d, n=4) suggest evolutionary conservation. The authors are appropriately cautious about the limited generalizability of the serine dependency phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The findings on ATF4 activation, serine metabolism alterations, and transsulfuration are supported by multiple prior studies of mitochondrial disease in various model systems and human patients. ATF4 activation has been observed in cell lines, rodent models, and humans with mitochondrial dysfunction. Increased transsulfuration and its byproduct \u03b1-hydroxybutyrate have been identified as biomarkers. Serine alterations have been reported in some but not all mitochondrial disease contexts. Evidence from differentiated myotubes and mouse models suggests 1C compromise is not limited to proliferating cells and may be generalizable to whole body metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C140 provide extensive literature context (multiple citations) showing the findings are consistent with prior work across diverse systems. The authors appropriately note inconsistencies in serine measurements across studies (C131-C135), which may reflect tissue-specific differences. The evidence from non-proliferating cells (C136-C137) and mouse models (C138) supports broader relevance. The inference about generalizability (C139-C140) is reasonable but appropriately cautious (C140 is speculation).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The findings have potential therapeutic implications for mitochondrial disease. ATF4 activation may be adaptive by supporting serine synthesis and glutathione production, though it may also have maladaptive components. The connection to cerebral folate deficiency (CFD) in mitochondrial disease patients suggests impaired mitochondrial formate synthesis as a mechanism, given low brain SHMT1 expression. Current folic acid supplementation may be ineffective because patients lack 1C units rather than folate cofactors. Formate or nucleotide supplementation may be beneficial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C141-C152 discuss therapeutic implications but are largely speculative (C147, C151, C152 are explicitly speculation). The hypothesis about CFD (C147) is plausible given the data and brain SHMT1 expression (C146), but lacks direct testing. The critique of current folic acid supplementation (C150-C151) is logical but not validated. The supporting evidence from prior studies (C141, C143, C148-C149) strengthens the rationale, but clinical validation is needed. These are reasonable hypotheses for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Tissue-specific variations in one-carbon metabolism may contribute to the phenotypic heterogeneity of mitochondrial disease. Different organs differ in their 1C donors, metabolic capacity, and transsulfuration activity. Because these pathways are coupled to the respiratory chain, a mitochondrial lesion could manifest differently depending on tissue and cell state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C153-C157 propose an interesting hypothesis about disease heterogeneity based on tissue-specific 1C metabolism differences (C153-C155 supported by citations). However, the connection to mitochondrial disease heterogeneity (C156-C157) is speculative and not directly tested. While the hypothesis is plausible and could explain some phenotypic variation, it requires experimental validation in relevant tissue contexts. This represents a reasonable direction for future investigation rather than a supported conclusion.",
+    "result_type": "MINOR"
+  }
+]

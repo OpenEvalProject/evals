@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "STM promoter activity is enhanced in the boundary domain of the shoot apical meristem and quantitatively correlates with Gaussian curvature, showing a negative correlation between CFP signal intensity and curvature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are well-supported by experimental data. C1 demonstrates enhanced STM promoter activity in boundaries through pSTM::CFP-N7 expression patterns (Figure 1A) with n>20 and literature support. C2 provides quantitative correlation through novel image analysis methods (level set method and MorphoGraphX) with statistical validation shown in Figures 1C-E and Figure 1\u2014figure supplement 2. The methodology is clearly described and appropriate for the measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "The correlation between STM promoter activity and tissue folding is maintained in the bot1-7 mutant background, although the mutant exhibits delayed tissue folding at the boundary compared to wild type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C4 are supported by quantitative data from bot1-7 mutant analysis. C4 demonstrates reduced folding angle for given primordium size (Figure 2A-C), while C3 shows maintained correlation between pBOUND>>GFP expression and tissue folding despite altered timing (Figure 2D, WT: n=154, bot1-7: n=79). This demonstrates that STM expression scales with curvature even when the relationship between organ size and boundary shape is perturbed, strengthening the correlation claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The pSTM::STM-Venus translational fusion fully complements the stm-dgh6 mutation, and STM expression at the boundary is required for organ separation, as demonstrated by fusion defects in STM knockdown lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 are well-supported. C7 establishes the stm-dgh6 phenotype (Figure 3B). C5 demonstrates full complementation through phenotypic rescue (Figures 3D-F, Figure 3\u2014figure supplement 1, n=96 plants genotyped) with STM-Venus expression confirmed at boundaries (Figure 3G). C6 shows fusion defects in pSTM::STMamiRNA lines (Figure 3K), though the authors acknowledge some uncertainty about whether effects are solely due to boundary expression. The complementation validates that reporter lines reflect endogenous STM expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "While DII-Venus signal (indicating auxin depletion) correlates with pSTM::CFP-N7 expression in boundaries, particularly in the L1 layer, STM expression and auxin depletion can be uncoupled, as demonstrated by 2,4-D treatment experiments where STM expression persists despite high auxin levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 are supported by experimental data. C8 and C9 demonstrate correlation between DII-Venus and STM expression with layer-specific differences (Figure 4A-B). C10-C11 show that 2,4-D treatment dramatically decreases DII-Venus (confirming auxin presence, Figure 4D, n=12) but does not inhibit STM expression at boundaries (Figure 4C, n=3). C12's inference that STM and auxin can be uncoupled is justified by these observations. However, sample sizes for the 2,4-D experiments are relatively small (n=3 for STM), which could be noted as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C20"
+    ],
+    "result": "Mechanical perturbations (compression and ablation) induce STM expression in the shoot apical meristem, with induction occurring 8-18 hours after perturbation, showing dose-dependence with ablation size, and confirmed by in situ hybridization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 and C20 are well-supported by time-lapse imaging data. C13-C14 show compression induces pSTM::CFP-N7 (n=8) and pBOUND>>GFP (n=11) around 8h (Figures 5B-C, Videos 1-2). C15-C17 demonstrate ablation induces local STM expression from 18h onwards (pSTM::CFP-N7: n=16, pBOUND>>GFP: n=12, Figures 5E-F, Videos 3-4) with dose-dependence (C16, Figure 5\u2014figure supplement 1). C20 confirms induction with in situ hybridization (n=9, Figure 5\u2014figure supplement 2). The temporal kinetics and spatial patterns are consistent across multiple reporter lines and methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "STM induction after mechanical perturbations is spatially restricted to meristematic cells and is never induced at the base of the meristem in differentiating cells, indicating that mechanical perturbations cannot override the developmental prepattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C19 are supported by observations from ablation experiments showing spatial restriction of STM induction. C18 documents that STM is never induced in differentiating cells at the meristem base. C19's inference that competence to express STM is limited to meristematic cells and cannot be overridden by mechanical signals is consistent with established literature and the observed spatial patterns. This is further supported by C25 showing pBOUND>>GFP was not induced throughout the meristem after isoxaben treatment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "Wound-induced jasmonate is not the primary secondary messenger between mechanical stress and STM induction, as jasmonate treatment does not consistently induce STM expression despite robust induction of jasmonate-responsive reporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C22 are supported by experimental comparisons. C21 shows that 100 \u03bcM jasmonate treatment does not induce significant pSTM::CFP-N7 signal in most plants (10/14 showed no induction, 4/14 showed slight fluctuations, Figures 5J-K). C22's inference is justified by comparing this weak/inconsistent response to the systematic STM induction after ablation and the robust induction of pJAZ10::GUS by jasmonate (Figures 5L-O). The authors appropriately note they cannot completely rule out jasmonate involvement, showing appropriate caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Isoxaben treatment (which increases mechanical stress by weakening cell walls) induces STM expression globally in the meristem, but not throughout the entire meristem, demonstrating that STM expression can be modulated by mechanical stress while respecting developmental constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are supported by isoxaben treatment experiments. C23 shows global increase in pSTM-CFP-N7 signal intensity (control: n=6, isoxaben: n=7, Figures 5G-H with statistical comparison). C24 confirms induction in pBOUND>>GFP line (control: n=10, isoxaben: n=20, Figure 5I). C25 notes spatial restriction (pBOUND>>GFP not induced throughout entire meristem). C26's inference that STM can be modulated by mechanical stress is justified by convergent evidence from multiple perturbation types (compression, ablation, isoxaben) that share mechanical stress as a common feature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "PID promoter activity is enhanced in the boundary domain but is not affected by mechanical perturbations (ablation or isoxaben treatment), serving as a negative control and demonstrating specificity of the mechanical induction of STM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 are supported by PID reporter experiments. C27 shows PID expression at boundaries (Figure 6A). C28-C29 demonstrate lack of response to ablation (pPID::CFP-N7: n=13, pPID>>GFP: n=7, Figures 6E-G) and isoxaben (n=11, Figure 6\u2014figure supplement 1). C30-C31's inferences about PID not depending on mechanical signals and STM induction retaining specificity are justified. This negative control strengthens the claim that STM induction is not a general stress response but shows specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Boundary-expressed transcription factors show differential responses to wounding: CUC1 is not induced by ablation, while CUC3 is strongly induced (earlier than STM), demonstrating that boundary genes are not systematically induced by wounding and that mechanical induction shows specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by ablation experiments on CUC reporter lines. C32-C33 show CUC1 is not induced by ablation (n=11, Figure 6\u2014figure supplement 2) with pattern following organogenesis rather than wound position. C34-C35 show CUC3 is strongly induced after ablation (n=20, Figure 6\u2014figure supplement 3) as early as 6h. C36's inference about differential responses is justified. However, the authors appropriately note that CUC3 induction alone is insufficient to conclude mechanical control without further tests, showing appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "The relatively long time responses (8-24 hours) for STM induction after mechanical perturbations strongly suggests the induction is indirect and could involve secondary signals such as hormones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is a reasonable inference supported by temporal kinetics data from multiple experiments (compression: 8h, ablation: 18h) and comparison with cited literature on meristem dynamics. The timing is consistent with indirect effects requiring intermediate steps. This interpretation is appropriately presented as a suggestion rather than definitive conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Mechanical stress affects auxin distribution in the SAM, as demonstrated by DII-Venus induction around ablation sites (4-8h) and after compression, suggesting that auxin patterns and mechanical stress fields act synergistically to control STM expression at the boundary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 are supported by DII-Venus sensor experiments. C39 shows consistent DII-Venus induction after ablation (n=21, Figure 7B, Video 5). C40 documents timing (4-8h) consistent with PIN1 response from literature and subsequent STM response. C41 shows DII-Venus induction after compression (Figure 7C). C42's inference about synergistic action is justified by the coordinated temporal responses, though the authors appropriately note this is a suggestion. The experiments effectively address the question posed in C38.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "In the pin1-6 mutant, STM expression at pseudo-boundaries and STM induction after ablation occur independently of PIN1-mediated auxin depletion, demonstrating that STM expression and auxin distribution can be partially uncoupled while the correlation between tissue folding and STM expression remains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 are well-supported by pin1-6 experiments. C43 shows no DII-Venus signal in pin1-6 pseudo-boundaries (n=6, Figure 7D). C44 shows STM reporters present in pseudo-boundaries (Figures 7D-E). C45 shows no DII-Venus induction after ablation in pin1-6 (n=11, Figure 7G, Figure 7\u2014figure supplement 1). C46 shows STM reporters are induced after ablation in pin1-6 (Figures 7F-G, Figure 7\u2014figure supplements 1-2). C47's inference is justified. C48-C49 appropriately note the lack of clear correlation between STM and DII-Venus in pin1-6 and conclude partial uncoupling. The authors acknowledge the caveat that other auxin carriers might substitute for PIN1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Oryzalin-triggered tissue folding in the presence of NPA (auxin transport inhibitor) leads to increased STM expression at boundaries, further supporting that mechanical stress can promote STM expression relatively independently of auxin distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C51 are supported by oryzalin application experiments (Figure 7\u2014figure supplement 3). C50 shows slight increase in both pBOUND>>GFP and pSTM::CFP-N7 signals at young boundaries. C51's inference is justified because the induction occurs in the presence of NPA (blocking auxin transport) and oryzalin indirectly modifies mechanical status of cell walls. This provides additional evidence for auxin-independent mechanical induction, though the effect is described as 'slight' suggesting it may be weaker than other perturbations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The study demonstrates that STM expression at the boundary correlates with tissue folding and is increased by mechanical stress, providing a scenario where biochemical factors promote shape changes that generate mechanical signals impacting gene expression, with mechanical stress contributing to STM expression necessary for organ separation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 represent summary statements and proposed models integrating the study's findings. C52 provides context from animal development literature. C53 summarizes the main findings supported by multiple experiments throughout the study. C54 proposes an integrative model supported by the data showing coordination between auxin, mechanical stress, and STM expression. C55 integrates mechanical perturbation experiments with STM knockdown phenotypes. These are appropriately presented as interpretive frameworks rather than direct experimental claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Background knowledge claims about mechanical stress patterns, KNOX gene functions, and boundary roles in plant architecture are established from literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are statements of established knowledge from cited literature. C56 describes mechanical stress patterns in growing tissues. C57 cites evidence for KNOX gene function in meristem formation. C58 describes auxin dynamics at the boundary from multiple cited sources. These provide appropriate context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The study demonstrates that mechanical stress can uncouple STM expression from auxin depletion, with mechanical perturbations inducing STM even when auxin transport or levels are affected, and mechanical stress not impacting PINOID expression, suggesting this uncoupling adds robustness to meristem boundary functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 are summary statements integrating findings from multiple experiments. C59-C60 summarize findings from 2,4-D treatment, pin1 mutant, and NPA+oryzalin experiments. C61 summarizes PID reporter experiments. C62 proposes an interpretation about robustness, appropriately presented as a proposal rather than proven fact. These claims effectively synthesize the experimental evidence, though C62 is speculative about the evolutionary/functional significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Literature-based claims about interactions between STM/KNOX genes and various hormones (cytokinins, gibberellins, ethylene, jasmonate) provide context for potential mechanotransduction pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 are all based on cited literature and provide context for the Discussion. They describe established interactions between KNOX genes and various hormones (C63-C67 on cytokinins and gibberellins, C68-C69 on ethylene and jasmonate). These are appropriately cited and provide relevant background for discussing potential mechanisms, but are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "The authors propose that robustness of morphogenetic regulation may rely on a dialog between gene and form where shape constrains possible outputs of the gene regulatory network, potentially explaining how reproducible shapes emerge from complex, noise-susceptible networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C70 is a speculative proposal about broader implications of the work. While it represents an interesting hypothesis that integrates the study's findings with developmental biology concepts, it is explicitly presented as speculation ('may rely', 'could help us understand', 'If generalized'). The claim goes beyond what the data directly demonstrate and would require additional work to validate. The authors appropriately present this as a hypothesis rather than a conclusion.",
+    "result_type": "MINOR"
+  }
+]

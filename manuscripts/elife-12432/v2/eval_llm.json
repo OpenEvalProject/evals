@@ -1,0 +1,656 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Acetylcholine (ACh) is the most broadly used neurotransmitter in C. elegans, expressed in 52 of 118 neuron classes (159 of 302 neurons) in hermaphrodites, and 85% of all neuron classes are innervated by cholinergic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7, C8, C9, C10, and C11 collectively demonstrate that ACh is the predominant neurotransmitter system. The data showing 52/118 neuron classes express unc-17/VAChT (C8), that 85% of neurons receive cholinergic input (C9), and that all but one neuron class (CAN) are connected to the cholinergic system (C10, C11) provide strong, converging evidence from fosmid reporter expression and connectome analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The hermaphrodite nervous system contains 6 GABAergic neuron classes (26 neurons), 38 glutamatergic classes (78 neurons), and 13 aminergic classes (26 neurons).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, and C4 are supported by citations to prior published work (McIntire et al., 1993; Serrano-Saiz et al., 2013; Chase and Koelle, 2007). These claims provide context for comparing ACh usage to other neurotransmitter systems and are well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "Previous antibody staining methods for VAChT and ChAT could only unambiguously assign cholinergic identity to about one dozen neuron classes due to synaptic localization of these proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C6 accurately describe limitations of prior work (Alfonso et al., 1993; Duerr et al., 2008). The authors' interpretation that synaptic localization limited cell identification is consistent with the cited literature and provides justification for their fosmid-based approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The choline transporter cho-1/ChT expression extensively correlates with unc-17/VAChT expression, with all cho-1-expressing neurons also expressing unc-17, but 11 of 52 unc-17(+) classes do not express cho-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C13, and C14 are supported by fosmid reporter expression data presented in Figure 1 and Table 1. The asymmetric overlap pattern (all cho-1+ are unc-17+, but not vice versa) is clearly documented and provides insight into cholinergic pathway gene regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Acetylcholinesterase (ace) gene expression does not correlate with unc-17 expression; only one-third of cholinergic neurons express ace genes, and ace expression is also observed in body wall muscle and non-cholinergic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C16, and C17 are supported by data in Table 1 and Figure 1H, consistent with prior work (Combes et al., 2003). The lack of correlation between AChE and cholinergic identity is expected given that secreted AChE acts in the synaptic cleft and need not be synthesized in the same cells that release ACh.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "There are no overlaps in usage of the main neurotransmitter systems (glutamate, GABA, ACh) in the core nervous system of the hermaphrodite, except for the pharyngeal M5 neuron which expresses both cholinergic and glutamatergic markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C19 are supported by the authors' systematic analysis of neurotransmitter marker expression (Figure 1G, Figure 1\u2014figure supplement 2). The single exception (M5) is clearly documented, and the general lack of overlap is consistent with the mutually exclusive expression patterns observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Some neurons exhibit co-transmission of ACh with aminergic neurotransmitters: ADF, HSN, RIH, and VC4/5 are both cholinergic and serotonergic, with VC4/5 notably lacking cho-1 expression despite expressing unc-17.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 are supported by citations to prior work (Duerr et al., 2001; Sze et al., 2000; Duerr et al., 1999) and the authors' own observations (Figure 1\u2014figure supplement 1, Figure 5C). The correlation between serotonergic identity and absence of cho-1 in VC4/5 is an interesting observation that suggests differential regulation of cholinergic pathway genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "ACh is used by sensory neurons, interneurons, and motor neurons, with motor neurons showing a preference for ACh (17/24 classes), while sensory neurons are predominantly glutamatergic (22/38) but include an appreciable number of cholinergic classes (9/38).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 are supported by data in Figure 2A and Table 2. The quantitative breakdown by neuron type provides important functional context for understanding ACh usage patterns across different neuronal classes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Most cholinergic sensory neurons have shallow processing depth (close to motor output), with some directly synapsing onto muscle or motor neurons, and URX/AWB forming the only all-cholinergic multi-neuron pathways from sensory to motor neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 are supported by connectome analysis presented in Figure 2B. The observation that cholinergic sensory neurons are positioned close to motor output, in contrast to glutamatergic sensory neurons, is a novel finding that suggests functional specialization of cholinergic sensory pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "ACh is the most broadly used neurotransmitter of interneurons (19 classes vs. 11 glutamatergic), while GABA is sparsely used by interneurons (1 class), though both ACh and Glu can act as inhibitory neurotransmitters via chloride channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by data in Figure 2A and Table 1, with C36 citing McIntire et al., 1993. Claim C37 is based on established knowledge about ACh- and Glu-gated chloride channels and is elaborated later in the manuscript with expression data for acc genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The command interneurons (AVA, AVB, AVD, AVE, PVC) are cholinergic, as confirmed by expression of unc-17 and cho-1 fosmid reporters and co-expression with glutamate receptor markers (glr-1, nmr-1) or ACh receptor markers (sra-11, acr-15).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by fosmid reporter expression data and co-staining experiments (Figure 1\u2014figure supplement 1). The identification of command interneurons as cholinergic is a novel finding of major importance, as these neurons are central integrators of information flow, as established by prior work (Chalfie et al., 1985; Von Stetina et al., 2006).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Cholinergic neurotransmitter identity does not correlate with neuronal position (except for VNC motor neurons) or developmental lineage history.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C43 are supported by data in Figure 2C and 2D. The lack of spatial or lineage clustering of cholinergic neurons (with the noted exception) suggests that cholinergic identity is specified by cell-type-specific transcriptional programs rather than by position or lineage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "With the complete cholinergic map, neurotransmitter identity can now be assigned to ~90% of all neuron classes (102/118), with about half of the remaining 'orphan' neurons showing a paucity of synaptic vesicles, suggesting they may signal via electrical synapses or neuropeptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by data in Table 2 and EM analysis from White et al., 1986. The high percentage of neurons with assigned neurotransmitter identity represents a major advance. Claim C46 is speculative but reasonable given the EM observations of vesicle paucity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The ventral nerve cord motor circuit is predominantly cholinergic, with all motor neurons (SAB, DA, DB, VA, VB, AS) and all innervating command interneurons (AVA, AVB, AVE, AVD, PVC, DVA) using ACh, forming a 'rich club' of interconnected neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by data in Figure 3B and citation to Towlson et al., 2013. The finding that an entire functional circuit uses a single neurotransmitter system is striking and suggests coordinated regulation of circuit identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Genetic silencing of the nervous system via snb-1/synaptobrevin elimination does not affect cholinergic identity marker expression in arrested L1 larvae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 is based on the authors' experimental observations (data not shown). While the data are not presented, this control experiment addresses whether neural activity is required for cholinergic identity expression, which is relevant to understanding the developmental program.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Compared to glutamate, ACh is enriched but not exclusively located at lower levels of information processing (closer to motor output).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by processing depth analysis in Figure 3C and 3D. This finding is consistent with the observation that cholinergic sensory neurons have shallow processing depth and that motor neurons preferentially use ACh.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53",
+      "C55",
+      "C56"
+    ],
+    "result": "Five 3-neuron and fourteen 4-neuron motifs are significantly enriched in the C. elegans connectome, with ACh enriched at specific positions in 11 of 19 motifs, showing a trend of ACh at downstream positions and Glu at upstream positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C55, and C56 are supported by network motif analysis in Figure 3E using methods from Milo et al., 2002. The positional enrichment of neurotransmitters within motifs provides insight into how neurotransmitter identity relates to circuit architecture and information flow.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The 'regulated mutual motif' (224 occurrences) is significantly enriched for cholinergic neurons in positions 2 and 3 and glutamatergic neurons in position 1, with two main types: (1) glutamatergic sensory neurons innervating reciprocally connected cholinergic command interneurons controlling opposite movement directions, and (2) sensory neurons innervating reciprocally connected cholinergic head motor neurons (SMD/RMD).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C65 are supported by network motif analysis and connectome data presented in Table 4 and Figure 3E, citing Milo et al., 2004. The detailed characterization of neurotransmitter usage within this specific motif type reveals organizational principles of circuit architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The C. elegans genome encodes at least four ACh-gated anion channels (acc-1 through acc-4), with acc-1 and acc-2 electrophysiologically validated as inhibitory receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by citations to Hobert, 2013 and Putrenko et al., 2005. These claims provide essential background for interpreting the expression patterns of acc genes examined in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "acc-3 shows no appreciable expression, while acc-1 and acc-2 show restricted, non-overlapping expression in subsets of cholinergic and glutamatergic neurons, with acc-1 in VNC neurons, head motor neurons, and command interneurons, and acc-2 in distinct glutamatergic (RIA, RIG, PHA, AIZ) and cholinergic (URX, RIH) neurons plus male-specific MCM neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 are supported by fosmid reporter expression data in Figure 4. The restricted expression patterns of acc-1 and acc-2 suggest specific roles in inhibitory cholinergic signaling in particular circuits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The acc-4 fosmid reporter is expressed almost exclusively in almost all 52 classes of cholinergic neurons (except ASJ and RIB), with the only non-cholinergic expression in AVF neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by fosmid reporter expression data in Figure 4 showing extensive co-expression of acc-4 with cho-1. The nearly complete overlap with cholinergic neurons is striking and suggests a broad role for acc-4 in cholinergic signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "If acc-4 operates as an inhibitory receptor, most cholinergic neurons can be silenced by presynaptically released ACh, consistent with more than half of cholinergic neurons being innervated by other cholinergic neurons, including cross-inhibitory command interneurons that can function as toggle switches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C81 combine expression data (C79, supported by connectome analysis) with functional speculation (C78, C81). While the expression pattern and connectivity are well-documented, the functional role of acc-4 as an inhibitory receptor remains conditional ('if acc-4 indeed is able to operate as inhibitory receptor'). Electrophysiological validation of acc-4 function is needed. The toggle switch model (C81) is based on general knowledge but requires experimental validation in this specific context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Many cholinergic neurons also express excitatory ACh-gated ion channels (acr genes), and a substantial number of acc-4-expressing cholinergic neurons are not innervated by other cholinergic neurons, raising the possibility that ACC-4 may act as an inhibitory autoreceptor, which could provide circuit speed-up and noise reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C82 is supported by WormBase data. Claim C83 is supported by connectome analysis. However, claims C84 and C85 are speculative. The autoreceptor hypothesis is intriguing but requires experimental validation. The functional benefits cited in C85 (Hart and Alon, 2013) are from gene regulatory networks, not synaptic signaling, so the analogy may not hold.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The C. elegans male contains 91 sex-specific neurons (24 classes), with 16 classes being cholinergic, including the CEM head sensory neurons and CA ventral nerve cord motor neurons, showing the same themes as hermaphrodites: ACh is the most broadly used neurotransmitter, used in sensory/inter/motor neurons, with cholinergic sensory neurons close to motor circuitry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 are supported by data in Figure 5A, Figure 1\u2014figure supplement 3, and Table 5. The extension of the cholinergic map to male-specific neurons demonstrates that the organizational principles observed in hermaphrodites also apply to the male nervous system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "The male-specific PVV and R6A neurons express both unc-17/VAChT and eat-4/VGLUT, similar to the pharyngeal M5 neuron, representing potential ACh/Glu co-transmission as observed in vertebrate CNS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is based on the authors' observations (data not shown). Claim C94 provides vertebrate precedent (Nishimaru et al., 2005; Ren et al., 2011). While the data are not shown, the observation is consistent with the M5 finding and vertebrate examples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Sex-specific cholinergic neurons (male CEM, hermaphrodite HSN and VC) are generated early in development but only express cholinergic identity features at the L4 larval stage during sexual maturation, contrasting with other motor neurons (VA, VB, AS) that express cholinergic markers in late L1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 are supported by developmental time course data in Figure 5A-C and citation to Sulston et al., 1983. The late onset of cholinergic identity in sex-specific neurons, despite early birth, suggests that sexual maturation signals trigger neurotransmitter specification in these neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The AIM interneuron pair exhibits sexually dimorphic neurotransmitter identity: glutamatergic (eat-4/VGLUT+) in hermaphrodites, but undergoing a neurotransmitter switch in males from glutamatergic (L1-L3) to cholinergic (L4 onwards, with eat-4 downregulation and unc-17/cho-1 induction).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 are supported by expression data in Figure 5D-E showing the temporal dynamics of the neurotransmitter switch. This is a novel finding demonstrating that neurotransmitter identity can be sexually dimorphic and developmentally regulated in the same neuron type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The neurotransmitter switch in AIM neurons is programmed cell-autonomously, as demonstrated by masculinization of AIM in hermaphrodites (eat-4prom11::fem-3) causing eat-4 downregulation and cho-1 upregulation, while feminization of AIM in males (tra-2ic expression) maintains eat-4 and prevents cho-1 induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 are supported by cell-specific sex-reversal experiments in Figure 5F. The reciprocal effects of masculinization and feminization provide strong evidence for cell-autonomous control of the neurotransmitter switch by the sex determination pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Previous work identified transcriptional regulators of cholinergic identity: unc-86 (POU homeobox) controls IL2, URA, URB sensory neurons; ttx-3 (LIM homeobox) controls AIY and AIA interneurons; and unc-3 (COE Zn-finger) controls VNC motor neurons and SAB head motor neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 summarize prior work from the authors' lab (Zhang et al., 2014; Altun-Gultekin et al., 2001; Kratsios et al., 2011, 2015). These claims provide context for the new regulatory factors identified in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "Seven transcriptional regulators control cholinergic identity of 20 of 52 cholinergic neuron types, with a striking preponderance of homeodomain-containing proteins among the newly identified regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110 and C111 are supported by data in Table 6 and Figure 6. The preponderance of homeodomain proteins is consistent with prior observations for glutamatergic identity (Serrano-Saiz et al., 2013) and suggests a general principle of neurotransmitter identity specification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "Three LIM homeobox genes (lim-4, lin-11, ceh-14) control cholinergic identity of six distinct neuron types across sensory, inter-, and motor neurons, but lim-7 (C. elegans Islet homolog) is not required for cholinergic identity despite its role in vertebrate cholinergic specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 is supported by data in Table 6 and Figure 6. Claim C113 is supported by the authors' observations (data not shown) and citation to Cho et al., 2014. The finding that different LIM homeobox family members are used in C. elegans vs. vertebrates suggests evolutionary divergence in the specific factors used, despite conservation of the gene family's role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Additional homeodomain transcription factors control cholinergic identity: unc-30 (Pitx) controls PVP (with lin-11); unc-86 (POU) controls URX, RIH, and male CEM neurons; unc-86 and ceh-14 together control male AIM cholinergic identity and hermaphrodite/early male AIM glutamatergic identity; all factors are continuously expressed, suggesting roles in both initiation and maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 are supported by expression and mutant analysis data in Figure 6 and Figure 6\u2014figure supplement 1. The continuous expression pattern (C118) supports the inference that these factors maintain as well as initiate cholinergic identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "unc-42 (Prox-type homeobox), identified from an EMS genetic screen, regulates cholinergic identity in RMD motor neurons and four additional cholinergic head neuron types, and is continuously expressed in all regulated neuron types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 are supported by genetic screen results and expression/mutant analysis in Figure 6 and Figure 6\u2014figure supplement 1. The identification of unc-42 through an unbiased genetic screen validates the approach and identifies a new regulator of cholinergic identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "unc-3 regulates cholinergic identity genes (cho-1 and unc-17) in all command interneurons (AVA, AVB, AVD, AVE, PVC) and tail neurons (PDA, PDB, PVN, DVA), as confirmed by fosmid reporter and CRISPR-Cas9 gfp knock-in showing unc-3 expression in all these neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C124 are supported by mutant analysis in Figure 7 and Table 6, and expression analysis in Figure 7A. The extension of unc-3 function beyond motor neurons to command interneurons is a major new finding that reveals unc-3's role in circuit-level identity specification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Most transcriptional regulators of cholinergic identity also control other identity features: unc-3 affects PDA identity markers (exp-1, ace-3/4, cog-1); unc-42 affects RMD mgl-1 expression; ceh-14 affects AIM neuropeptide (flp-10), serotonergic identity, and PVC glutamate receptors (nmr-1, glr-1); lin-11 and unc-30 control many PVP features; lim-4 controls multiple AWB features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C130 are supported by mutant analysis data in Figure 8 and citations to prior work (Hutter, 2003; Alqadah et al., 2015; Sagasti et al., 1999). The pleiotropic effects of these transcription factors indicate they are terminal selectors that coordinate multiple aspects of neuronal identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C131",
+      "C132"
+    ],
+    "result": "The serotonergic identity of HSN motor neurons is controlled by unc-86, but unc-86 does not affect unc-17/VAChT expression in HSN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131 and C132 are supported by citation to Sze et al., 2002 and the authors' observations (data not shown). This represents an exception to the general pattern of transcription factors controlling multiple identity features, suggesting that cholinergic and serotonergic identities in HSN are independently regulated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "unc-3 shows differential activity in different neuron types: in motor neurons (SAB, A-, B-, AS-type VNC MNs), unc-3 controls cholinergic identity and many other markers; in command interneurons (AVA, AVB, AVD, AVE, PVC) and DVA, unc-3 activity is restricted to cholinergic identity, with no effect on >10 other identity markers (glutamate receptors, neuropeptides, ion channels), while other transcription factors (unc-42, fax-1, cfi-1) control subsets of these unc-3-independent markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C136 are supported by prior work (Kratsios et al., 2015, 2011) and extensive marker analysis in Figure 7\u2014figure supplement 1 and Table 7-8. The cell-type-specific activity of unc-3 represents a remarkable departure from the typical pattern of terminal selectors and suggests modular control of neuronal identity features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "unc-3 is expressed and required for cholinergic identity in all neurons of the ventral nerve cord motor circuit, making it a circuit-associated transcription factor that defines the ability of neurons in the circuit to communicate with each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137 and C138 are supported by expression and mutant data in Figure 9A and Figure 7B. The pan-circuit expression and function of unc-3 represents a novel organizational principle where a single transcription factor coordinates neurotransmitter identity across an entire functional circuit.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "In unc-3 mutants, UNC-7::GFP puncta (electrical synapses) are severely reduced, but transcriptional unc-7 reporter expression is unaffected, indicating that unc-3 affects electrical synapse formation at a post-transcriptional step independent of innexin expression regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C141 are supported by data in Figure 7C. The differential effect on translational vs. transcriptional reporters provides strong evidence for a post-transcriptional mechanism. However, the specific step affected remains to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "In unc-3 null mutants, AVA shows connectivity defects at all levels: reduced chemical synaptic input from other command interneurons and reduced output to motor neurons and command interneurons, with overall axonal process disorganization in the VNC, though AVA still neighbors its normal synaptic partners, indicating connectivity defects are not secondary to placement defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C144 are supported by EM reconstruction data in Figure 7D. The detailed connectivity analysis demonstrates that unc-3 is required not only for neurotransmitter identity but also for proper synapse formation within the motor circuit. The observation that AVA remains adjacent to its partners (C144) strengthens the conclusion that connectivity defects are primary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C145",
+      "C146"
+    ],
+    "result": "Non-cholinergic synaptic inputs from sensory neurons into the motor circuit are not affected by unc-3, as demonstrated by unaffected GRASP signals for the glutamatergic PHB to AVA connection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145 and C146 are supported by GRASP analysis (data not shown) and citations to White et al., 1986 and Park et al., 2011. This control experiment demonstrates specificity of unc-3's effects to cholinergic circuit components.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R42",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Pan-circuit control of cholinergic identity by unc-3 is mediated via a single UNC-3 binding site (COE motif); deletion of this motif in the cho-1 fosmid eliminates expression in all unc-3-dependent neurons, but a 280bp cho-1 or 250bp unc-17 fragment containing the COE motif only drives expression in motor neurons, not interneurons, suggesting unc-3 cooperates with distinct cofactors in different neuron types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C150 are supported by fosmid reporter and minimal promoter analysis in Figure 10A-E. The requirement for a single COE motif is striking, but the differential activity of minimal promoters (C149) suggests additional regulatory elements are needed for interneuron expression, supporting the cofactor hypothesis (C150).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R43",
+    "claim_ids": [
+      "C151",
+      "C152"
+    ],
+    "result": "unc-3 activity is required for both neurotransmitter identity and synaptic connectivity throughout the VNC motor circuit (motor neurons and command interneurons), but is not required for expression of other command interneuron identity features such as glutamate receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151 and C152 are supported by the combined data from neurotransmitter marker analysis (Figure 7B), connectivity analysis (Figure 7C-D), and other marker analysis (Figure 7\u2014figure supplement 1). This summary accurately captures the dual role of unc-3 in neurotransmitter specification and circuit assembly, while highlighting its restricted activity in command interneurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R44",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "unc-42 is frequently employed in 'regulated mutual' 3-neuron network motifs, specifying cholinergic identity of cross-connected head motor neurons (RMDs, SMDs) and the RIV interneuron that innervates them, but in cross-connected command interneurons, unc-42 does not affect cholinergic identity, instead affecting expression of multiple ionotropic glutamate receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C155 are supported by network motif analysis, expression data, and citation to Brockie et al., 2001. The differential activity of unc-42 in different motif contexts parallels the cell-type-specific activity of unc-3 and suggests modular circuit assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R45",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "unc-42 controls and coordinates presynaptic neurotransmitter identity and postsynaptic receptor expression in a repulsive reflex circuit: glutamatergic identity of ASH sensory neurons, cholinergic identity of cross-connected head motor neurons coupled by electrical synapses, glutamate receptor expression in command interneurons, and glutamatergic identity of AIB interneurons, forming an interconnected network in the head.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C160 are supported by prior work (Serrano-Saiz et al., 2013), current data, and unpublished data (C159). The comprehensive role of unc-42 in coordinating multiple aspects of circuit function across different neurotransmitter systems is well-documented in Figure 9B, though claim C159 relies on unpublished data.",
+    "result_type": "MAJOR"
+  }
+]

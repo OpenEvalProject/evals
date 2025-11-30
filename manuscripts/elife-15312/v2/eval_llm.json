@@ -1,0 +1,399 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Nanobodies (Nbs) are single-chain antibody fragments from camelids and cartilaginous fishes that bind antigens with high affinity and specificity, are stable intracellularly, and have enabled various applications in living cells when fused to functional proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 establish the background on nanobodies through citations to established literature (Hamers-Casterman et al., 1993; Greenberg et al., 1995; Caussinus et al., 2012; Irannejad et al., 2013; Kirchhofer et al., 2010; Rothbauer et al., 2006; Tang et al., 2013, 2015). These are well-documented properties of Nbs supported by prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "Genetically expressed Nb-fusion proteins remain stable and active even in cells lacking cognate antigens, limiting their use for cell-specific applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 identifies the key problem motivating this work. This is supported by inference from the introduction and is consistent with the general properties of stable protein expression. The entire manuscript is designed to address this limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "A destabilized GBP1 variant (dGBP1) with 6 mutations (A25V, E63V, S73R, S98Y, Q109H, S117F) was isolated through MMLV library screening that shows antigen-dependent stability: dGBP1-TagBFP exhibits strong fluorescence when co-expressed with GFP/YFP but becomes undetectable without antigen, while unmodified GBP1-TagBFP remains stable regardless of antigen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 and C7-C10 describe the screening strategy and characterization of dGBP1. The experimental approach is well-documented with appropriate controls (unmodified GBP1), multiple readouts (fluorescence and western blot in Figure 1D-E), and the use of spectrally distinct fluorescent proteins (TagBFP, t-HcRed) to avoid cross-reactivity (C70). The data clearly demonstrate antigen-dependent stabilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "Wildtype GBP1-TagBFP protein levels increase in the presence of YFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 is supported by western blot data in Figure 1\u2014figure supplement 1C showing increased GBP1-TagBFP levels with YFP co-expression. This interesting observation suggests that even unmodified Nbs may be partially stabilized by antigen binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C51"
+    ],
+    "result": "dGBP1-TagBFP shows antigen-dependent stabilization in vivo with nearly 100% efficiency in electroporated mouse retinal cells, where almost every GFP+ cell was TagBFP+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C13, and C51 demonstrate in vivo functionality with quantification shown in Figure 1F-H and Figure 1\u2014figure supplement 2. The nearly 100% efficiency is rigorously quantified and represents a significant improvement over prior systems. The use of appropriate controls (DsRed, different promoters) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "The efficiency of the TDDOG and CRE-DOG systems was approximately 60% in similarly designed electroporation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 is supported by citations to prior work (Tang et al., 2013, 2015) and provides important context for evaluating the improvement achieved with the dGBP1 system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C52"
+    ],
+    "result": "YFP promotes dGBP1-TagBFP stability in a dose-dependent manner without adverse effects even at 10-fold excess, and Flp-DOG activity continues to rise with increasing GFP levels unlike previous dimerizer-based systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C52 are supported by dose-response data in Figure 1I and Figure 3\u2014figure supplement 1, with comparison to prior work (Tang et al., 2015, 2013). This demonstrates an important advantage of the single-polypeptide approach over multi-component systems that can be inhibited by excess antigen.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C16"
+    ],
+    "result": "dGBP1-TagBFP protein is degraded by the ubiquitin proteasome system (UPS).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 is supported by proteasome inhibitor experiments (Figure 1J) showing that dGBP1-TagBFP becomes detectable upon treatment with MG132 or Bortezomib. This establishes the mechanism of destabilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Specific mutations in GBP1 have destabilizing effects: C/S98Y and S117F show strong destabilizing effects, S73R and Q109H show destabilizing effects in single mutant analyses, and GFP rescues the destabilization phenotype of all mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 are supported by mutational analysis data shown in Figure 2\u2014figure supplements 1-2 using mCherry fusions as a sensitized reporter. The systematic analysis of individual mutations and their rescue by GFP provides mechanistic insight into the destabilization strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The dGBP1 mutations map to structurally conserved framework regions of Nbs, with 99-100% of Nbs sharing the same residue at the 3 most destabilizing positions (S73R, C/S98Y, S117F), and these positions are located outside Nb-antigen interfaces in 76 crystal structures analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 are supported by comprehensive structural analysis of 76 Nb-antigen complexes from 102 crystal structures (C64) using PDBePISA. The conservation analysis (Figure 2A, Figure 2\u2014figure supplement 3A) and interface mapping (Figure 2\u2014figure supplement 3B) provide strong evidence for the generalizability of the mutation transfer strategy. The methods describe appropriate validation approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "dNbs created by transferring dGBP1 mutations to \u03b1CA and \u03b1DHFR Nbs show antigen-dependent TagBFP fusion fluorescence and protein levels, with destabilization dependent on UPS degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are supported by experimental data in Figure 2B-F showing both fluorescence and western blot evidence for antigen-dependent stabilization, plus proteasome inhibitor experiments confirming UPS-mediated degradation. This demonstrates proof-of-principle for mutation transfer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "dGBP1-TagBFP does not have an obvious effect on YFP protein levels compared to negative controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by western blot data in Figure 2\u2014figure supplement 3C. This important control demonstrates that the dNb-fusion protein does not significantly deplete or destabilize the antigen, which could confound interpretation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C50"
+    ],
+    "result": "89% (8 of 9) of dNbs generated by mutation transfer showed >2-fold increase in TagBFP fluorescence in response to antigen, and mutations that destabilized GBP1 from Camelus dromedarius had similar effects on Nbs from Vicugna pacos and Llama glama.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C29, and C50 are supported by quantitative fluorescence data in Figure 2G and Table 1. The high success rate (89%) and cross-species transferability demonstrate the generalizability of the approach. The use of >2-fold induction as a threshold is reasonable, though somewhat arbitrary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Cre and Flpo recombinases were rendered GFP-dependent by fusion to dGBP1, and increasing the number of dGBP1 domains decreased background recombination without affecting GFP-dependent activity, with dGBP1x2-Flpo (Flp-DOG) showing insignificant background and >600-fold induction by GFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by luciferase reporter assays in Figure 3A-B and Figure 3\u2014figure supplement 1A-B. The systematic optimization by adding tandem dNbs is well-documented, and the >600-fold induction with low background demonstrates excellent performance for a conditional recombinase.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "An Flpo fusion protein dependent on HIV-1 C-CA was functional in vitro and in vivo and responded to antigen in a dose-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by data in Figure 3C and Figure 3\u2014figure supplement 1D showing functionality in retinal electroporation and dose-response experiments. This demonstrates rapid generation of new conditional tools by mutation transfer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "Flpo fused to dGBP1 and \u03b1CA dNb6mut (dGC-Flpo) or dGBP1 and \u03b1DHFR dNb3maj (dGD-Flpo) showed strong recombination only when both antigens were present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is supported by dual antigen experiments in Figure 3D-E showing that both antigens are required for recombinase activity. This demonstrates the feasibility of AND-gate logic for intersectional targeting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Co-expression of C-CA with dCC-Cas9 and loxPgRNA triggered genome-editing events in a human cell line with efficiency approaching that of control Cas9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by genome editing assay data in Figure 4D using a \u03b2-galactosidase reporter system. The efficiency approaching control Cas9 demonstrates that the dNb fusion does not severely impair Cas9 function. However, the manuscript notes this is a proof-of-concept and additional optimization may be needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C75",
+      "C76"
+    ],
+    "result": "Robust Flpo recombination was detected in GFP+ but not GFP-negative tissues of Tg(CRX-GFP) and Tg(GAD67-GFP) mice after delivery of Flp-DOG, demonstrating that dNb-fusion proteins enable functional manipulation of antigen-expressing cells in vivo and provide a simpler approach than pre-existing methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C39, C75, and C76 are supported by in vivo recombination data in Figure 5A-C and supplementary figures. The use of two different transgenic lines, multiple delivery methods (electroporation, rAAV), and appropriate controls (GFP-negative tissues, wildtype animals) provides strong evidence for in vivo functionality and specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Excitatory photocurrents and synaptic inhibitory currents were evoked in ChR2-mCherry+ Purkinje cells of Tg(GAD67-GFP) cerebella, while GFP+ neurons without ChR2-mCherry and control ZsGreen+ neurons in GFP-negative animals never showed light-evoked photocurrents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by electrophysiology data in Figure 5D and Figure 5\u2014figure supplement 2F-G. The functional demonstration of optogenetic control with appropriate negative controls (GFP+/mCherry- cells, ZsGreen+ cells in wildtype) and verification that infection did not alter baseline properties provides strong evidence for antigen-specific functional manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C77",
+      "C78"
+    ],
+    "result": "Destabilized \u03b1CA-TagBFP/TagRFP fusions selectively detected HIV-1 CA in reactivated ACH-2 cells but not CEM cells by flow cytometry, while unmodified \u03b1CA Nb-TagBFP could not distinguish between cell lines, demonstrating that dNbs enable detection of intracellular viral epitopes in live cells without fixation or permeabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47, C77-C78 are supported by flow cytometry data in Figure 6B-C and supplementary figures, with appropriate controls including unmodified Nb, dGBP1-TagBFP negative control, and immunofluorescence confirmation of CA expression. The statistical significance (P=0.0009) and use of authenticated cell lines (C86-C89) strengthen the conclusions. However, the efficiency of detection (1/3 to 1/2 of antibody detection) suggests room for optimization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Removal of WPRE from rAAV expression cassettes was necessary to avoid background Flp-DOG activity, tandemly repeated dGBP1s were fused to Flpo to obtain tight GFP-dependent recombination, and Flp-DOG had adequate activity for targeting GFP cell types in two different transgenic lines tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 describe optimization steps and practical considerations for in vivo use. These are supported by the experimental observations and successful in vivo results. The need to remove WPRE highlights the sensitivity of the system to expression levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Background signals of dNb fusion proteins can be addressed by increasing the number of dNbs fused to the protein partner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by experimental results showing reduced background with tandem dNbs (Figure 3A-B, Figure 3\u2014figure supplement 1A-B). This provides a practical solution for optimizing different fusion proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "A dNb-TagBFP construct became strictly localized to the nucleus upon co-expression with its NLS-tagged antigen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C61 mentions experimental observations but notes 'data not shown.' Without the actual data, this result cannot be fully evaluated, though it is plausible based on the mechanism of antigen-dependent stabilization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C56",
+      "C57",
+      "C59",
+      "C62",
+      "C63",
+      "C66"
+    ],
+    "result": "The screening strategy and mutation transfer approach should enable creation of additional protein-responsive reagents, can be extended to other protein scaffolds, and endogenous proteins could be used as driver molecules for cell-specific targeting without requiring knowledge of cell-specific promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48, C49, C56, C57, C59, C62, C63, and C66 are forward-looking statements about potential applications and extensions. While these are reasonable extrapolations based on the demonstrated principles, they represent speculation rather than demonstrated results. The claims are appropriately qualified with language like 'should enable' and 'may enable.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "Fusion of protein binders to fluorescent proteins enables visualization of antigen localization in living cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is supported by established knowledge about protein binder-fluorescent protein fusions and is demonstrated throughout the manuscript with dNb-TagBFP constructs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Over the past 20 years, approximately 100 crystal structures featuring Nb-antigen complexes have been solved, and multiple classes of artificially derived binding proteins amenable to expression in living cells are being developed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 provide context from the literature. C64 is supported by the structural database analysis described in methods, and C65 is supported by citations (Helma et al., 2015; Wurch et al., 2012).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "Virtually all MMLV-infected cells in culture can be super-infected by rAAV, and the cells remain viable for subsequent culture expansion and FACS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C74 describes a key technical feature of the screening strategy. This is supported by the experimental observations during screening and is consistent with known properties of these viral vectors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The manuscript describes appropriate animal care approvals, mouse strains, library generation statistics, viral preparations, and cell line authentication procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C89 describe methodological details, regulatory compliance, and authentication procedures. These are well-documented in the methods section and represent appropriate experimental practices.",
+    "result_type": "MINOR"
+  }
+]

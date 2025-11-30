@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C20",
+      "C21",
+      "C22",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The fitted model reveals 2-4 shared modulatory signals, with the two dominant modulators each operating primarily within one hemisphere and preferentially targeting task-relevant neurons. Model predictions improved substantially with inclusion of modulators, which were twice as important as the cue signal for predicting held-out data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C45 collectively demonstrate the anatomical and functional structure of the modulators through cross-validated model fitting (Figure 2a), hemispheric specificity of coupling weights (Figure 2b-c), and correlation with task informativeness (Figure 2d-e). The results are robust to firing rate controls and show clear statistical significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C23",
+      "C24",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Under cued attention, the variance of the corresponding hemispheric modulator decreases by 23% on average, while mean values remain unchanged. This demonstrates that attention both increases (via cue weights) and stabilizes (via reduced modulator variance) the time-varying gain of the neural population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C23-C24, C46-C50 provide converging evidence from model fitting showing attention-dependent changes in modulator statistics (Figure 3). The 23% reduction in variance is quantified across all recording days, and the separation of mean vs. variance effects through different model components is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C25",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C85"
+    ],
+    "result": "The decrease in modulator variance under attention accounts for 62% of the reduction in Fano factor and 71% of the reduction in noise correlations. This provides a parsimonious explanation for previously observed attention effects on neural variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C25, C51-C56 demonstrate through simulation (Figure 4) and data analysis (Figure 5) that modulator variance changes predict observed changes in spike count statistics. The model predictions match data trends, though C85 acknowledges the model doesn't capture all variability, suggesting additional mechanisms may be involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C90"
+    ],
+    "result": "The coupling weights to cue and modulator signals are partially correlated (\u03c1=0.26) but not identical. A restricted model forcing identical weights reduced predictive performance by 20%, suggesting attention-mediated increases and stabilization of gain arise from distinct mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61, C90 demonstrate through correlation analysis (Figure 5c) and model comparison that cue and modulator effects overlap but are distinguishable. The 20% reduction in performance for the restricted model and differential predictive power for Fano factors provide strong evidence for separate mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C26",
+      "C27",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C93"
+    ],
+    "result": "The inferred modulatory signals predict behavioral performance on each trial and are influenced by previous reward. However, V4 modulators account for only 5-10% of total serial dependence, indicating additional biases must exist in downstream decision-making neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C26-C27, C66-C79, C93 demonstrate through GLM analysis (Figure 7) that modulators correlate with both previous reward and subsequent behavior. The quantification that only 5-10% of serial dependence is explained (C77) appropriately limits the interpretation and suggests additional mechanisms (C78), making this a well-supported but appropriately qualified result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The two hemispheric modulators are nearly uncorrelated (r=0.03), exhibit temporal autocorrelation over seconds, and primarily affect neural gain during sustained response periods rather than onset transients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 characterize the temporal properties of modulators through direct measurement (Figure 6a-c). The near-zero correlation between hemispheres, temporal autocorrelation structure, and sustained-period effects are clearly demonstrated and consistent with previous literature (C65).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Gain fluctuations specifically target task-relevant neurons and remain larger for these neurons even under attention, challenging the interpretation of modulators as simple noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 demonstrate through data analysis (Figure 8b) that gain variability is selectively higher for task-relevant neurons in both attention conditions. This pattern contradicts the simple noise hypothesis and is appropriately presented as puzzling, suggesting modulators may reflect meaningful computational signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C94",
+      "C95"
+    ],
+    "result": "The study developed a functional model with stochastic modulatory signals and fit it to ~3000 V4 units recorded over 36 days (~10^5 stimulus presentations) using cross-validation with 20% held-out data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19, C28-C32, C94-C95 describe the methodological approach. The model structure (Equation 1), dataset size, and cross-validation procedure are clearly specified. The methods are standard and appropriate for the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Prior work has established that attention increases firing rates of visual neurons, reduces spike count variance and noise correlations, and that these effects may arise from variability in shared modulatory signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C17 summarize established knowledge from the literature with appropriate citations. These provide context for the current work and accurately represent the state of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The model's predictions are consistent with previous observations that attention reduces spike-LFP correlations and LFP power, and that response variability shows signatures of multiplicative rather than additive noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 connect model predictions to previous findings. C80-C81 are supported by citations, while C82-C83 provide additional evidence from the current dataset (Figure 1\u2014figure supplement 2) supporting the multiplicative noise assumption underlying the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Units with higher mean firing rates have stronger coupling to modulators, but the relationship between task informativeness and modulator coupling remains robust when controlling for firing rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 address a potential confound. The relationship with firing rate is acknowledged (Figure 2\u2014figure supplement 4) but the key finding persists in firing-rate-matched analyses (Figure 2e), demonstrating appropriate control for this variable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The findings relate to previous work on attention-dependent noise correlations and cholinergic mechanisms, though the model's dimensionality is limited by the experimental design and cannot provide a complete account of V4 modulatory activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84, C86-C89 appropriately contextualize the findings within the broader literature and acknowledge limitations. C86 correctly notes that experimental constraints limit what can be inferred about modulatory structure, and C87 appropriately frames the main contribution.",
+    "result_type": "MINOR"
+  }
+]

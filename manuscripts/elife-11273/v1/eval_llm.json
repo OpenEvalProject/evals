@@ -1,0 +1,348 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The NMR structures of K1 and K2 lobes of DkTx were determined, revealing that each lobe consists of two anti-parallel beta-strands stabilized by three disulfide bonds, with a backbone RMSD of 0.4 \u00c5 for the most ordered regions. The structures of isolated K1 and K2 are highly similar to those in full-length DkTx, with notable differences in loop 3 length and tryptophan configuration in loop 2. Both lobes feature large clusters of exposed hydrophobic residues surrounded by basic and acidic residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C19 are well-supported by NMR data (Figure 1 and supplements), including chemical shift analysis, NOE restraints, and structural statistics. The RMSD values, structural features, and surface properties are directly derived from experimental NMR measurements and structure calculations using established protocols (Xplor-NIH). The comparison between isolated lobes and full-length DkTx is validated by chemical shift data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "The amphipathic character of DkTx is reminiscent of voltage-sensor toxins such as hanatoxin, SGTx1, VSTx1, and GxTx-1E, which interact with voltage-sensing domains of Kv channels within a membrane environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 is supported by structural comparison and multiple citations to prior work on voltage-sensor toxins. The amphipathic surface features (hydrophobic clusters surrounded by charged residues) are demonstrated in the NMR structures (C18-C19), and the comparison to voltage-sensor toxins is well-established in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The published structural models of TRPV1 (PDB entries 3J5Q and 3J5P) show significant stereochemical violations and steric overlaps, with MolProbity scores ranking in the 29th and 36th percentile. The TRPV1/DkTx/RTx complex model was based on a fourfold symmetric map despite non-identical DkTx lobes, and the toxin was modeled as poly-alanine based on hanatoxin structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 are supported by quantitative MolProbity analysis (Tables 1-2) and critical assessment of the published structures. The stereochemical violations, symmetry issues, and poly-alanine modeling are documented limitations that justify the need for improved models. The evaluation is objective and based on standard structural quality metrics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "The improved ROSETTA models of apo TRPV1 and the TRPV1-DkTx complex have MolProbity scores that rank in the 92nd and 80th percentile, respectively, while maintaining the original quality of fit to experimental cryo-EM maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by quantitative data in Tables 1-2 showing improved MolProbity scores and maintained correlation coefficients with cryo-EM maps. The ROSETTA refinement protocol is well-described in Methods, and the improvements are substantial (from 29th/36th to 92nd/80th percentile) while preserving fit quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "DkTx binds to the outer pore of TRPV1 in a counter-clockwise (CCW) configuration, as determined by ROSETTA modeling and NOE restraint analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 is strongly supported by multiple lines of evidence: ROSETTA scoring showing CCW models fit better to cryo-EM maps (Figure 2E), fewer NOE violations in CCW configuration (Figure 2\u2014supplement 1), and consistency between computational and experimental restraints. The conclusion is unambiguous based on the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C32",
+      "C33"
+    ],
+    "result": "K1 and K2 engage the outer pore of TRPV1 using loop 2 and loop 4, which straddle the interface between TRPV1 subunits. The structural model indicates that only F649, A657, T650, and Y631 could interact directly with the toxin, while both lobes position conserved hydrophobic residues to interact with lipids in the bilayer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28, C32-C33 are supported by the refined structural model (Figure 3A-B) and are consistent with prior mutagenesis data (C29-C31). The identification of direct vs. indirect interactions is based on structural proximity in the model, which is reasonable given the improved model quality. The positioning of hydrophobic residues at the membrane interface is structurally plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Bivalent K1K1 produced comparable activation to DkTx or K2K2 at 1 \u00b5M, suggesting that K1 and K2 have comparable efficacy but K1 has much lower affinity than K2. K1K1 showed considerably more rapid dissociation than DkTx or K2K2, confirming lower binding affinity even in bivalent form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by electrophysiological data (Figure 3C-D) showing comparable maximal activation but different dissociation kinetics. The inference about affinity vs. efficacy is logical: if K1K1 achieves similar maximal activation to K2K2 at the same concentration, efficacy is comparable, but faster dissociation indicates lower affinity. The experimental design appropriately tests this hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Chimeras transferring loop 2, loop 4, or C-terminus of K2 into K1-\u0394L exhibited enhanced activation compared to K1-\u0394L, while N-terminal or loop 3 transfers showed no change. These results support that loops 2 and 4 engage directly with TRPV1, and the C-termini likely interact with the pore turret.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by functional data (Figure 3F) showing gain-of-function for specific chimeras. The experimental design is appropriate for testing the structural model, and the results are consistent with the predicted interaction surfaces. The inference about C-terminal interaction with the pore turret is reasonable given the structural context, though this region is absent from the cryo-EM model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "MD simulations identified persistent contacts between DkTx and TRPV1, primarily involving the N-terminus of the pore-helix (Y631) and the pore-loop/S6 region (N652, D654, F655, K656, A657, V658), with additional interactions via K535 and E536 in S4. Computational alanine-scanning predicted that conserved residues (W11/W53, F27/F67, K14/K56, G12/G54) and K2-specific residues (S55, L65, R75) are energetically important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 are supported by MD simulation data (Figure 4D, supplements) and computational alanine-scanning (Figure 4\u2014supplement 2). The accelerated MD approach with enhanced side-chain sampling is appropriate for exploring interaction patterns. The correlation between predicted important residues and functional data (C47) strengthens confidence. However, MD simulations have inherent limitations (force field accuracy, sampling), so predictions should be validated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "MD simulations reveal that interactions between DkTx and the membrane occur concurrently with toxin-channel interactions. Hydrophobic residues in loop 2 and loop 4 (W11, F27, I28 in K1; W53, F67, I68 in K2) form long-lived interactions with lipids, along with unique lipid head-group interactions (Y70 in K2, H30 in K1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by MD simulation analysis (Figure 4B-C, E) showing concurrent toxin-channel and toxin-lipid contacts. The identification of specific residues forming persistent lipid interactions is consistent with the amphipathic surface features observed in NMR structures. The MD methodology is appropriate for studying membrane interactions, though experimental validation would strengthen these computational predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "DkTx partitions into membranes with a mole-fraction partition coefficient (Kx) of (2.3 \u00b1 0.7) \u00d7 10^6, indicating energetically favorable interaction. This strong membrane interaction would facilitate toxin binding to the channel by increasing local concentration and reducing diffusion dimensionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is directly supported by tryptophan fluorescence spectroscopy data (Figure 5A) with appropriate fitting to a partition function. The Kx value indicates strong membrane partitioning. Claim C53 is a reasonable inference supported by citation to Axelrod and Wang, 1994, though the mechanistic contribution to channel binding is not directly measured. The interpretation is plausible but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "K1 exhibits stronger membrane partitioning than K2, with Kx values of (3.9 \u00b1 1.1) \u00d7 10^5 for K1 and (2.0 \u00b1 0.2) \u00d7 10^4 for K2. Bivalent constructs K1K1 and K2K2 showed increased Kx values compared to monomeric forms, with K1K1 exhibiting higher Kx than K2K2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by tryptophan fluorescence data (Figure 5B-E) showing differential membrane partitioning. The ~20-fold difference in Kx between K1 and K2 is substantial and reproducible. The increased Kx for bivalent constructs is consistent with avidity effects. The experimental approach is appropriate, though the smaller blue shift for K2 (noted in text) suggests weaker signal and potentially larger uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "A model is proposed whereby DkTx partitioning into membranes would be disproportionately mediated by K1, leaving K2 available to engage TRPV1 and initiate formation of the toxin-channel complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C56 is explicitly labeled as a proposed model (speculation) based on the differential membrane partitioning (C54-C55) and channel binding affinities (C35-C37). While the model is logical and consistent with the data, it is not directly tested. The mechanism of how K1 membrane partitioning leaves K2 available for channel binding is not demonstrated experimentally. This remains a hypothesis requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The measured free energies of membrane partitioning reveal a systematic energetic penalty for bivalency (4.8-6.3 kcal/mol). A DkTx variant with a flexible 7-Gly linker showed Kx indistinguishable from wild-type, suggesting the penalty is due to direct interactions between lobes rather than linker constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by thermodynamic analysis of partitioning data and experimental testing with 7G-DkTx (Figure 5F). The calculation of energetic penalty assumes additivity, which is a reasonable null hypothesis. The 7G-DkTx experiment appropriately tests whether linker flexibility affects partitioning. The inference that lobe-lobe interactions cause the penalty (C59) is logical given the 7G-DkTx result, though direct evidence of lobe interactions is lacking (no NOEs observed).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "DkTx binding promotes structural changes in TRPV1 including dilation of the selectivity filter and opening of the intracellular gate. These changes involve displacements of the pore helix (P) and S6 relative to S1-S4 and S5, with propagation of changes between adjacent subunits affecting the crossing angle of S5 and S6 helices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 are supported by systematic structural comparison of apo and DkTx-bound TRPV1 (Figure 6A-F). The analysis shows that individual structural units (S1-S5, P-S6) are largely unchanged (RMSD ~0.7-0.8 \u00c5), but their relative arrangements differ. The propagation of changes through subunit interfaces is a logical structural mechanism. The analysis is consistent with prior observations (C60 cites Cao et al., 2013) and provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "DkTx binding correlates with disruption of a hydrophobic cluster behind the selectivity filter involving residues I599, F659, V595, F649, and T650. MD simulations show reduced contacts in this cluster upon DkTx binding. Toxin residues M25 (K1) and L65 (K2) are near this cluster, and L65A mutation dramatically reduced K2 activation and increased dissociation rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 are supported by structural analysis (Figure 6G-H), MD simulations (Figure 6I), computational alanine-scanning (Figure 4\u2014supplement 2), and experimental validation (Figure 7A-B). The correlation between structural changes and prior mutagenesis data (C69, citing Bohlen et al., 2010) strengthens the interpretation. The L65A functional data (C73) provides direct experimental support for the predicted importance of this residue. This is a well-supported mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "DkTx interacts with TRPV1 within the lipid membrane, providing the first example of a toxin-channel complex structure in a membrane environment. Each lobe has relatively small protein-protein interfaces with TRPV1 (655 \u00c5\u00b2 for K1, 556 \u00c5\u00b2 for K2), suggesting membrane interactions are important for stabilizing the complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by the structural model showing concurrent toxin-channel and toxin-lipid interactions (Figures 3-4), MD simulations (C49-C51), and membrane partitioning data (C52-C55). The small protein-protein interface areas are calculated from the structural model. The novelty claim (C75) is reasonable given the unique features of this complex. The inference about membrane stabilization (C77) is logical but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Structural comparison reveals that DkTx, PcTx1, and voltage-sensor toxins (hanatoxin, GxTx-1E) adopt similar folds with amphipathic surfaces enabling membrane interactions. However, they use different loop combinations to engage their target channels: DkTx uses loops 2 and 4, while PcTx1 and GxTx-1E use loops 1 and 4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 are supported by structural comparison (Figure 8) and citations to prior work on PcTx1 (Baconguis and Gouaux, 2012; Dawson et al., 2012) and GxTx-1E (Gupta et al., 2015). The comparison is appropriate and reveals interesting functional diversity within a conserved structural scaffold. The inference that the common fold provides multiple binding surfaces (C82) is reasonable based on the structural evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "K2 is a more effective activator of TRPV1 than K1, and tethering the lobes enhances complex lifetime. The two lobes have different energetics for membrane partitioning (K1 stronger) and channel binding (K2 stronger), suggesting bivalency enables separate tuning for optimal membrane partitioning and channel affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 integrate findings from prior work (C83-C84, citing Bae et al., 2012; Bohlen et al., 2010) with new data on membrane partitioning (C85, Figure 5) and binding affinity (C86, Figure 3D). The inference about separate tuning (C87) is logical and supported by the differential properties of K1 and K2. This represents a novel mechanistic insight into bivalent toxin function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "A model is proposed whereby DkTx preferentially uses K1 to interact with membranes, raising the local concentration of K2 at the membrane surface to promote initial toxin-channel complex formation using K2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C88 is explicitly a proposed model (Figure 9) based on the differential properties of K1 and K2. While the model is consistent with the data (stronger K1 membrane partitioning, stronger K2 channel binding), the specific mechanism is not directly tested. The model assumes K1 membrane binding leaves K2 available for channel binding, but this sequential mechanism is not demonstrated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Speculation that disruption of the hydrophobic cluster behind the selectivity filter may lead to increased heat capacity of TRPV1, potentially explaining temperature sensing. This is supported by prior mutagenesis showing mutations in this cluster (T633, F640, Y653) alter temperature sensitivity without affecting capsaicin activation, and that DkTx renders TRPV1 temperature-insensitive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C89-C90 are explicitly speculative (\"tantalizing to speculate\"). While the hypothesis is interesting and supported by prior mutagenesis data (C91, citing Grandl et al., 2010; Myers et al., 2008; Ryu et al., 2007) and observations about Na+ binding and DkTx effects (C92-C93, citing Jara-Oseguera, 2016), the connection to heat capacity and temperature sensing is not directly tested. This remains a hypothesis requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Background claims establishing that DkTx is a tarantula toxin that activates TRPV1, has a bivalent architecture with K1 and K2 lobes that can fold and activate the channel independently, and that prior cryo-EM structures of TRPV1 with DkTx bound lacked atomic detail for the toxin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 are background information supported by citations to prior work (Bae et al., 2012; Bohlen et al., 2010; Julius, 2013; Cao et al., 2013; Liao et al., 2013). These claims establish the context and motivation for the current study. The assessment of insufficient resolution in prior structures (C9) is reasonable and motivates the structural refinement efforts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Prior mutagenesis identified TRPV1 residues where mutations affect DkTx activation: I599A, F649A, A657P, and F659A disrupt activation; V595A and T650A diminish activation; Y631A enhances DkTx effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by citation to Bohlen et al., 2010, which reported these mutagenesis results. These prior findings are used to validate the structural model (C32) and interpret the mechanism (C67-C69). The citation is appropriate and the claims accurately represent prior work.",
+    "result_type": "MINOR"
+  }
+]

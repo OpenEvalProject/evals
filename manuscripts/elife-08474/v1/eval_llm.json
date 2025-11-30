@@ -1,0 +1,330 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "A genome-wide retroviral gene-trap mutagenesis screen in HAP1 cells identified ATF4, RBM4, HSPA13, SPCS1, and SPCS2 as novel regulators of ULBP1 expression. The screen selected for ULBP1-low/CD55+ cells and identified ULBP1 itself as a highly significant hit, validating the approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 describe the screening methodology and initial hits. The screen design is appropriate, with proper controls (CD55 selection to exclude general GPI-anchor defects). The identification of ULBP1 itself as a top hit (C24) provides internal validation. The statistical analysis and hit selection criteria are described, and the hits were subsequently validated by independent methods (CRISPR/Cas9).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "CRISPR/Cas9-mediated knockout of ATF4, RBM4, HSPA13, SPCS1, or SPCS2 each resulted in 2-3 fold reductions in ULBP1 cell surface expression that were specific to ULBP1 among tested NKG2D ligands and could be rescued by gene re-expression. ATF4 and RBM4 KO reduced ULBP1 mRNA levels, while HSPA13, SPCS1, and SPCS2 KO did not affect mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 are well-supported by flow cytometry data (Figure 2A-C), RT-qPCR (Figure 2E), and rescue experiments (Figure 2D). The specificity for ULBP1 is demonstrated across multiple surface proteins. The distinction between transcriptional/post-transcriptional regulators (ATF4/RBM4) versus post-translational regulators (HSPA13/SPCS1/SPCS2) is consistent with their known functions and supported by mRNA measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Double and triple mutant cell lines showed stepwise, additive decreases in ULBP1 expression, with triple mutants showing up to 20-fold reduction. ATF4/RBM4 double mutants showed additive effects on ULBP1 mRNA levels, suggesting these regulators act largely independently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by flow cytometry (Figure 3A) and RT-qPCR data (Figure 3B) showing additive effects. The stepwise reduction pattern strongly supports independent regulation. However, the inference of independence (C35, C37) is based on additivity, which while suggestive, does not definitively prove independence\u2014parallel pathways could still have some crosstalk. The conclusion is reasonable but slightly overstated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "ATF4 knockout had variable effects across cell lines: complete loss of ULBP1 in K-562 cells (with 11-fold mRNA reduction), intermediate effects in HAP1 cells, and modest effects in Jurkat cells, suggesting ATF4 drives basal ULBP1 expression in multiple tumor cell lines with context-dependent importance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by flow cytometry (Figure 4A) and RT-qPCR data (Figure 4B) across three cell lines. The variable dependence on ATF4 is clearly demonstrated. The inference that this reflects constitutive stress pathway activation (C41) is reasonable but speculative. One concern: the Jurkat data showed inconsistency across replicates (noted in figure legend), slightly weakening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "ATF4 is induced by various cellular stresses (amino acid starvation, UPR, oxidative stress, dsRNA) through eIF2\u03b1 phosphorylation, regulates genes involved in stress adaptation and apoptosis (including CHOP), and is overexpressed in some tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are background knowledge claims supported by appropriate citations to established literature. These provide context for the experimental findings but are not novel results from this study. The citations appear appropriate and the claims are consistent with established ATF4 biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Histidinol or thapsigargin treatment induced ULBP1 mRNA in an ATF4-dependent manner across three cell lines, while MG132 induced ULBP1 independently of ATF4. The ATF4-mediated stress response specifically induced ULBP1 and partially induced ULBP2, but not ULBP3, MICB, or other tested NKG2D ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C53 are supported by RT-qPCR data (Figure 5A, Figure 5\u2014figure supplement 2) and RNA-Seq (Figure 5\u2014figure supplement 1). The specificity for ULBP1 (and partial effect on ULBP2) is clearly demonstrated. One concern: the Jurkat histidinol data showed inconsistency in one of three experiments (noted in legend), and the MG132 data are not shown. Despite these minor issues, the overall conclusion is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Histidinol treatment had cell-type-specific effects on ULBP1 protein: dramatic ATF4-dependent induction in K-562 cells, but modest increases in WT HAP1/Jurkat cells with decreases in ATF4-KO cells. This occurred despite global protein synthesis inhibition (evidenced by decreased HLA expression), indicating ATF4 maintains ULBP1 expression during stress-induced translational suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 are supported by flow cytometry data (Figure 5B-E). The differential effects across cell lines are clearly shown. The use of HLA as a control for global translation inhibition is appropriate. The inference that ATF4 maintains ULBP1 expression despite translational suppression (C57) is well-reasoned and supported by the data showing opposite effects in WT versus KO cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "ChIP-Seq analysis revealed ATF4 binds to the ULBP1 promoter and a site ~27 kb downstream, but not to other NKG2D ligand genes (ULBP2-6, MICA, MICB). ATF4 binding at the ULBP1 locus occurs under steady-state conditions and is enhanced by histidinol treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63 are supported by ChIP-Seq data (Figure 6A) using three independent antibodies and validated by ChIP-qPCR (Figure 6D-E). The specificity for ULBP1 among NKG2D ligands is clearly demonstrated. The use of multiple antibodies strengthens confidence in the binding sites. The comparison to ASNS (a known ATF4 target) provides appropriate positive control data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Luciferase reporter assays demonstrated that ATF4 overexpression activates the ULBP1 promoter, and mutation of a single ATF4 motif (138-147 bp upstream of TSS) completely abolished this activation, while CRE site mutations had no effect. This demonstrates ATF4 directly transactivates ULBP1 through a single critical binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 are supported by luciferase reporter data (Figure 6\u2014figure supplement 2). The mutagenesis approach clearly identifies the critical ATF4 binding site. The experiments were performed in ATF4-KO cells, providing a clean background. The conclusion of direct transactivation (C67-C68) is well-supported by the combination of ChIP and functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "RNA-Seq analysis revealed that RBM4 suppresses a novel alternative splicing event in ULBP1 where ~60% of transcripts in RBM4-KO cells use an alternative 5' splice site 1.3 kb downstream in intron 1, producing a transcript with a premature stop codon. RBM4 deficiency decreased canonical ULBP1 mRNA while increasing the alternative isoform, with no change in total ULBP1 transcript levels. This effect was specific to ULBP1 among tested NKG2D ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C79 are supported by RNA-Seq data (Figure 7A-B, Figure 7\u2014figure supplement 1) and validated by RT-qPCR (Figure 7C-F). The discovery of the novel isoform is well-documented, and the sequence has been deposited (GenBank KT591165). The specificity for ULBP1 is demonstrated. The inference that RBM4 impacts surface expression primarily through splicing regulation (C79) is supported by the correlation between canonical mRNA and protein levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The identified regulators control different steps in ULBP1 biogenesis: ATF4 controls transcription, RBM4 regulates splicing, and HSPA13/SPCS1/SPCS2 regulate post-translational steps. Each regulator contributes incrementally to ULBP1 expression, with combined mutations producing much larger effects than individual mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 synthesize the findings from multiple experiments. The assignment of regulators to different biogenesis steps is supported by mRNA versus protein data. The incremental contribution model is supported by the additive effects in multiple mutants. This represents a well-supported mechanistic framework integrating the various findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The identified regulators showed specificity for ULBP1 among NKG2D ligands in HAP1 cells (except HSPA13 affecting MICB), supporting the hypothesis that different NKG2D ligands are regulated by distinct mechanisms. In contrast, some pathways like DNA damage response regulate multiple ligands similarly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 are supported by the specificity data across Figures 2, 5, and 7. The observation of ligand-specific regulation is consistent and well-documented. The comparison to DNA damage response (C87) is appropriately cited. This represents an important conceptual advance in understanding NKG2D ligand regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The modest ATF4-dependent induction of ULBP2 may occur through an ATF4-induced transcription factor or through ATF4 binding at ULBP1 affecting the neighboring ULBP2 gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C92 are explicitly speculative (\"we speculate\") and lack direct experimental support. While the observation of ULBP2 induction without direct ATF4 binding is documented, the proposed mechanisms are hypothetical. These represent reasonable hypotheses for future investigation but are not demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "UPR component overexpression occurs in various cancers (breast, hepatocellular, multiple myeloma), ATF4 is highest in hypoxic tumor regions, and ATF4-mediated ULBP1 upregulation may mark dangerous cells for immune elimination. Viral infection can induce ATF4 through PERK/PKR activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 and C98 are background knowledge supported by appropriate citations. Claim C97 is an inference about the biological significance of the findings. While reasonable, this represents interpretation rather than demonstrated fact. The connection between ATF4 in tumors and ULBP1 expression is implied but not directly tested in primary tumors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "RBM4 regulates alternative splicing of cancer-related genes and promotes tumor-suppressive splicing patterns (including Bcl-xS over Bcl-xL). RBM4 expression is decreased in various cancers and correlates with patient survival. The current findings suggest RBM4 also promotes tumor suppression through ULBP1 splicing, and tumors may be under selective pressure to downregulate RBM4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102, C104-C105 are background knowledge appropriately cited. Claim C103 is a reasonable inference connecting the current findings to RBM4's tumor suppressor role. Claim C106 is speculative (\"we speculate\") but represents a logical hypothesis. The integration of the ULBP1 findings with established RBM4 biology is appropriate, though the selective pressure hypothesis is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "HSPA13 is an Hsp70 family chaperone associated with microsomes with ATPase activity. It binds ion transporters NBCe1 and NHE1 and increases their protein levels and activity, but its role in stress responses and mechanism of ULBP1 regulation remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 provide background on HSPA13 with appropriate citations. These are established facts about HSPA13 but do not represent novel findings from this study. The acknowledgment that HSPA13's mechanism in ULBP1 regulation is unknown is appropriate given the limited mechanistic data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "SPCS1 and SPCS2 are non-catalytic subunits of the signal peptidase complex. In yeast, they are required for maximal signal peptidase activity under certain conditions, and in mammalian cells, SPCS1 supports HCV NS2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 provide background on SPCS1/SPCS2 with appropriate citations. These represent established knowledge rather than novel findings. The limited understanding of these proteins' functions is appropriately acknowledged, and the surprising specificity for ULBP1 is noted in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Other transcription factors (Sp1, Sp3, p53) are known to regulate ULBP1, and may contribute to residual ULBP1 expression observed in ATF4-KO HAP1 and Jurkat cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 is appropriately cited background knowledge. Claim C116 is a reasonable inference based on the observation of residual ULBP1 expression in ATF4-KO cells. However, this is speculative (\"it is possible\") and not directly tested. The inference is logical but represents a hypothesis rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "HAP1 cells may represent a high 'threat level' with multiple activated ULBP1 drivers and other NKG2D ligand drivers, plus NK-activating properties independent of NKG2D. Loss of ULBP1 drivers had minimal effect on NK stimulation capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C119-C121 are based on data \"not shown\" in the manuscript. While the inference about high threat level (C119) is reasonable based on the multiple activated pathways documented, the claims about NK activation (C120-C121) cannot be evaluated without access to the supporting data. These represent interesting observations but lack sufficient documentation for full evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "The multiple layers of ULBP1 regulation could allow fine-tuning of expression to reflect cellular 'threat level.' Ubiquitous RBM4 expression is safe for normal cells since ULBP1 must first be transcribed before it can be spliced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C122 is a reasonable inference from the demonstrated multi-layered regulation, though it represents interpretation rather than direct demonstration. Claim C123 is a logical inference about the sequential nature of transcription and splicing. Both represent reasonable conceptual frameworks for understanding the biological significance of the findings, though they are not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "The identified regulators (ATF4, RBM4, HSPA13, SPCS1, SPCS2) are novel and unrelated to previously known drivers of ULBP1 or other NKG2D ligands, and their effects are generally specific to ULBP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 are supported by the novelty of the findings and the demonstrated specificity across multiple experiments. The statement \"to the best of our knowledge\" appropriately qualifies the novelty claim. The specificity is well-documented in Figures 2 and related data. This represents an important contribution identifying new regulatory mechanisms.",
+    "result_type": "MAJOR"
+  }
+]

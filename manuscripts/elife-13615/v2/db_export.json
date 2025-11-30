@@ -1,0 +1,1775 @@
+{
+  "submission": {
+    "id": "f869e42a-6c8b-4997-b0e0-ba25c0ac2245",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:57:12.622313Z",
+    "updated_at": "2025-11-29T22:57:12.622313Z"
+  },
+  "content": [
+    {
+      "id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "submission_id": "f869e42a-6c8b-4997-b0e0-ba25c0ac2245",
+      "content_type": "manuscript",
+      "content_text": "# Bias in the reporting of sex and age in biomedical research on mouse models\n\n## Authors\n\n- Oscar Fl\u00f3rez-Vargas<sup>1</sup> \u2020\n- Andy Brass<sup>1</sup> \u2020\n- George Karystianis<sup>2</sup>\n- Michael Bramhall<sup>1</sup> ([ORCID: 0000-0001-5938-158X](https://orcid.org/0000-0001-5938-158X))\n- Robert Stevens<sup>1</sup>\n- Sheena Cruickshank<sup>3</sup>\n- Goran Nenadic<sup>2</sup>\n\n### Affiliations\n\n1. Bio-health Informatics Group, School of Computer Science The University of Manchester Manchester United Kingdom\n2. Text Mining Group, School of Computer Science The University of Manchester Manchester United Kingdom\n3. Manchester Immunology Group, Faculty of Life Science The University of Manchester Manchester United Kingdom\n4. Manchester Institute of Biotechnology University of Manchester Manchester United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn animal-based biomedical research, both the sex and the age of the animals studied affect disease phenotypes by modifying their susceptibility, presentation and response to treatment. The accurate reporting of experimental methods and materials, including the sex and age of animals, is essential so that other researchers can build on the results of such studies. Here we use text mining to study 15,311 research papers in which mice were the focus of the study. We find that the percentage of papers reporting the sex and age of mice has increased over the past two decades: however, only about 50% of the papers published in 2014 reported these two variables. We also compared the quality of reporting in six preclinical research areas and found evidence for different levels of sex-bias in these areas: the strongest male-bias was observed in cardiovascular disease models and the strongest female-bias was found in infectious disease models. These results demonstrate the ability of text mining to contribute to the ongoing debate about the reproducibility of research, and confirm the need to continue efforts to improve the reporting of experimental methods and materials.\n\n## Introduction\n\nStudies using animal models are important for understanding the physiopathological and therapeutic basis of human diseases. However, the translation of scientific findings from animal models to humans is far from straightforward, and more than 80% of potential therapeutics fail in human clinical trials after being successful in animal models (Perrin, 2014). There is a clear need, therefore, for animal research to become more reliable and reproducible (van der Worp et al., 2010).\n\nThe failure to translate from animal models to humans stems from various factors, and in recent years there have been growing concerns over the lack of reproducibility of results in certain areas of biomedical research (Begley and Ellis, 2012; Prinz et al., 2011; Collins and Tabak, 2014). One factor contributing to this observed lack of reproducibility may be inadequate reporting of experimental methods and materials (Landis et al., 2012; Moher et al., 2008; van der Worp and Macleod, 2011). It has been estimated that spending on preclinical research that is not reproducible amounts to $28 billion per year in the United States (Freedman et al., 2015).\n\nGuidelines from the International Committee of Medical Journal Editors (ICMJE) state that the methods section of a paper \"should aim to be sufficiently detailed such that others with access to the data would be able to reproduce the results\" (ICMJE, 2013). In experiments using animals, for instance, the sex and age of the mice should be reported because they affect morphological, physiological, immunological and behavioral parameters and, hence, they influence the outcomes of experiments (Diedrich et al., 2007; Wizemann and Pardue, 2001). Sex and age are inextricably linked: it has been proposed that under natural conditions sexual selection has profound effects on the lifespan of organisms (Bale and Epperson, 2015; Maklakov and Lummaa, 2013). Considering some taxa exceptions, the general conclusion is that in many animals (including humans), males have shorter lifespans than females (Clutton-Brock and Isvaran, 2007). Furthermore, from an evolutionary standpoint, these sex differences in lifespan depends to a great extent on sexually dimorphic life-history strategies (such as mating systems; Maklakov and Lummaa, 2013), and on genetic architecture, including both the sex chromosomes (Nguyen and Disteche, 2006) and the mitochondrial DNA (Gemmell et al., 2004).\n\nRegarding preclinical and clinical studies, sex and age play key roles in disease phenotypes, modifying their susceptibility, presentation and response to treatment (Arnold, 2010). Some pathologies exhibit a clear sexual dimorphism (Ober et al., 2008). Using stroke as an example, it is known that its incidence is higher in men than women during their lifespan (Mozaffarian et al., 2015). However, recent evidence suggests that after the age of 60 years and thus post-menopause, women have more severe strokes than men (Dehlendorff et al., 2015). In the case of animal models, sex- and age-dependent differences in protein expression profiles were observed in the heart proteome of female and male C57BL/6 mice of two distinct age groups (14 and 100 weeks) (Diedrich et al., 2007). This evidence implies that sex differences must be studied across the entire lifespan in order to bring new insights into the pathogenesis of the diseases and identify targets for new drugs for both sexes and different times of life.\n\nGuidelines, such as ARRIVE (Animal Research: Reporting In Vivo Experiments; Kilkenny et al., 2010), have been developed to improve the reporting of animal-based research. However, although these guidelines have been endorsed by many journals, not all papers in these journals comply with the ARRIVE guidelines (Baker et al., 2014). Recent years have also seen more emphasis being placed on the need for animal-based experiments to comply with the principles of the 3Rs (Replacement, Reduction and Refinement; Burden et al., 2015).\n\nIn this study, we have used large-scale text mining to evaluate the reporting of information about the sex and age of the mice used in a set of over 15,000 articles. In the last decade, there has been a significant amount of research in the identification of targeted biomedical information in the scientific literature via text mining (Cohen and Hersh, 2005; Fleuren and Alkema, 2015). In particular, efforts have been made to recognize protein and gene names in text (Settles, 2005) or other biomedical entities of interest such as electronic health records (Meystre et al., 2008). Our approach differs from this work in that it addresses a significantly more diverse literature space while focusing on what should be the\u00a0standard information in a paper about animal-based biomedical research.\n\nPreviously we have shown that important experimental details are repeatedly omitted from papers in parasitology (Florez-Vargas et al., 2014) and in studies of colitis (Bramhall et al., 2015). Here we use syntactic rules and simple dictionary matching to extract key characteristics (such as sex and age) from papers reporting the results of experiments on mice. We investigate questions of whether the sex and age of mice are reported, the use of animals of each sex in six different areas of preclinical research, and the use of animals of each sex in four subgroups (genetics, immunology, physiopathology and therapy) for these six areas.\n\n## Results\n\n### System evaluation and data\n\nWe evaluated the text mining system on a set of 50 full-text articles randomly selected from our corpus of study (Supplementary file 1) by comparing\u00a0its performance with the manual annotations\u00a0of the same papers performed by two biomedical experts. The F-scores that resulted from this evaluation were around 92% for both sex and age (Table 1), which indicates good quality of the results (Ananiadou et al., 2006).\n\n**Table 1.**\n Evaluation of the performance of the text mining system.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Characteristics</th>\n      <th>True- positives</th>\n      <th>True- negatives</th>\n      <th>False- positives</th>\n      <th>False- negatives</th>\n      <th>Precision (%)</th>\n      <th>Recall (%)</th>\n      <th>F-score (%)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Sex</td>\n      <td>29</td>\n      <td>16</td>\n      <td>3</td>\n      <td>2</td>\n      <td>90.6</td>\n      <td>93.5</td>\n      <td>92.0</td>\n    </tr>\n    <tr>\n      <td>Age</td>\n      <td>31</td>\n      <td>14</td>\n      <td>1</td>\n      <td>4</td>\n      <td>96.8</td>\n      <td>88.5</td>\n      <td>92.4</td>\n    </tr>\n  </tbody>\n</table>\n\n_A total of 50 articles were used as the data set to evaluate the performance of the text mining system (Supplementary file 2D). The precision (P), calculated as TP/(TP+FP), determines the accuracy of the system in recognizing desirable terms. The recall (R), calculated as TP/(TP+FN), produces the coverage of the system. F-score is the harmonic mean of precision and recall and it is calculated as 2*P*R/(P+R)._\n\nA total of 15,311 full-text articles from the PubMed Central Open Access subset as of February 2015 were processed in this study. These articles correspond to 7.15% and 27.85% of mouse experimentation articles retrieved by the same query in PubMed and PubMed Central, respectively. This corpus of documents were published between 1994 and 2014, of which 50.1% were published after 2011 (n= 7,671) (Figure 1). Seventy journals out of the 628 analyzed covered 30 or more articles of the corpus (Figure 1\u2014figure supplement 1), which corresponds to 81.05% of papers retrieved. PLOS ONE contained the highest number of articles (n= 5,574; 36.41%), followed by Journal of Experimental Medicine (n= 931; 6.08%), and Journal of Cell Biology (n= 363; 2.37%).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/13615/elife-13615-fig1-v2.jpg)\n\n**Figure 1.:** Pie-chart (a) showing an overview of the reporting and non-reporting (none) of sex only, age, or both sex and age in a set of 15,311 studies published between 1994 and 2014 by stating the number and percentage of articles in each portion. The chronological change of the reporting and non-reporting is displayed both in a stacked area plot (b) and a scatter plot after normalization [per articles/year] (c). The chronological changes show that most of the articles assessed were published during the last decade (b), and that the improvement of reporting of these two biological factors started before, and not after, the US Institute of Medicine report in 2001 (Wizemann and Pardue, 2001) [indicated with a vertical red line] or the introduction of ARRIVE guideline (Kilkenny et al., 2010) [indicated with a vertical black dashed line] (c). Bar-chart (d) showing the number and percentage of articles reporting/not reporting of sex by sex [females only, males only, or both sexes either by mixing or separating them] or age. The chronological change of the reporting and non-reporting of sex by sex (e), and age (f), is displayed in scatter plots after normalization [per articles/year].\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13615/elife-13615-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The figure shows the top 70 journals from a total of 628 journals in which were published 30 or more articles of the corpus; corresponding to 81.05% of papers assessed. The journals are organised in descending order of the reporting of sex or age (i.e. at least one) as experimental variables. *Journals that endorsed ARRIVE and ~Journals that stated the reporting of sex and age in the author guidelines.\n\n### Reporting of sex and age\n\nThe general and historical reporting of sex and age as experimental variables in mouse models is presented in Figure 1. Overall, from 1994 to 2014, about a fifth of papers did not report either the sex or the age of the mouse used in the study (Figure 1a and 1b). Figure 1c shows that the frequency of articles reporting sex and/or age in mice models has increased steadily during the last two decades, whereas missing information about these two experimental variables showed an important drop from 100% (no papers reported the sex and age of the mice in 1994 and 1995) to about 15% following a slope of approximately -0.045. Nevertheless, since 2012, the percentage of articles reporting both factors had reached only about 50% of the papers published in those years.\n\nWhen the sex of the mouse model is stated in the article, experiments performed with female mice were more frequently reported than experiments performed with male mice (31.84% vs. 23.38%, Binomial test p< 0.001; 95% IC: 56.60 \u2013 58.71) (Figure 1d). Our results showed that, historically, female mice have been reported more often than male mice, reaching a plateau of about 33% since the last decade (2004 \u2013 2014) (Figure 1e). In addition, the use of both sexes in mice experiments stratified by sex showed the lowest improvement over time (Figure 1e); with a maximum of about 10% of the articles since 2006. Reporting of mouse age improved steadily from 1999 to 2006 (Figure 1f), at which point age is reported more than 50% of the time; since 2010 age reporting has plateaued, with between 65 and 70% of articles each year mentioning the age of mice.\n\nIn order to identify whether there are general features common on reporting sex and age as experimental variables to any biomedical field, we assessed six main preclinical research topics as defined by their impact on human health (WHO, 2014), including: cardiovascular diseases; cancer; diabetes mellitus; lung diseases; infectious diseases; and neurological disorders. A two-way ANOVA without replication was performed to assess the difference in reporting sex and age for each field. Our results showed statistically significant differences, p < 0.05, indicating that the reporting of these experimental factors varies across biomedical fields (Figure 2). In identifying the sex and age of the mouse, for instance, studies on diabetes showed the highest frequency (68%), whereas studies on cancer showed the lowest frequency (48%) (Figure 2a). Studies on cancer reported the worst results regarding missing information about sex (33%) or age (37%) of the mice used (Figure 2b and 2c). Overall, the best results in reporting sex and age were achieved by the studies on neurological disorders (Figure 2a, 2b and 2c).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/13615/elife-13615-fig2-v2.jpg)\n\n**Figure 2.:** The reporting of these variables was assessed for six groups of diseases from the top 10 causes of death according to the W.H.O. This analysis was performed in the set of 14,225 articles published from 2001, when the US Institute of Medicine report was published (Wizemann and Pardue, 2001) and when the non-reporting of sex and age together dropped about 50% \u2013avoiding misinterpretations [Figure 1c], to 2014. The distribution is presented in stacked bar charts that illustrate the percentage of the reporting and non-reporting for both biological variables overall (a) and discriminated by variable: sex (b) and age (c); stating the number of articles corresponding to each percentage inside the stacks. A two-way ANOVA without replication was performed to assess the difference in reporting of the sex [p = 0.005] and age [p = 0.028] for each disease, indicating that the reporting and non-reporting of these biological factors varies across these diseases.\n\nFor a more detailed analysis of sex-based reporting, the six groups of diseases were divided into four subgroups according to the characterization of the disease models via genetics, immunology, physiopathology and therapy. Our results suggest that there is a preference for studying the immunology of these diseases by using female mouse models, whereas there is a tendency to use male mouse models for studying their genetic basis (Figure 3a and 3b). Both in physiopathology and in therapy subgroups, male mice were more frequently studied in models of cardiovascular diseases, diabetes and neurological disorders, and female mice in models of cancer, lung diseases and infectious diseases (Figure 3c and 3d).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/13615/elife-13615-fig3-v2.jpg)\n\n**Figure 3.:** The reporting of sex was assessed for each disease by the topic of research whether genetics (a), immunology (b), physiopathology (c), or therapy (d). This analysis was performed in the set of 14,225 articles published from 2001, when the US Institute of Medicine report was published (Wizemann and Pardue, 2001) [Figure 1c], to 2014. The distribution is presented in stacked bar charts that illustrate the percentage of the reporting and non-reporting for the sex; stating the number of articles corresponding to each percentage inside the stacks. A two-way ANOVA without replication was performed to assess the difference in reporting of the sex for genetics [p = 0.0009], immunology [p = 0.0074], physiopathology [p < 0.0001], and therapy [p = 0.1165], indicating that the reporting and non-reporting of these biological factors varies across most of these biomedical approaches.\n\nIn order to further test whether the observations about the reporting of sex in the experimental mouse models were conserved even in specific cases, we focused the analysis on one particular disease per group as follows: myocardial ischemia (cardiovascular disease); diabetes mellitus type 2 (diabetes); chronic obstructive pulmonary disease (lung disease); Alzheimer's (neurological disorder). Three diseases were included in the case of infectious diseases that are among the most frequently reported causes of death world-wide (WHO, 2014), i.e. tuberculosis, HIV and malaria. Melanoma was included for the cancer group since it is a highly aggressive and notoriously chemoresistant form of cancer; making it a widely used tumor model (Herlyn and Fukunaga-Kalabis, 2010). Overall, our results suggest that in most cases there is a similar pattern of reporting as that found for the biomedical fields assessed to which these diseases belong (Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/13615/elife-13615-fig4-v2.jpg)\n\n**Figure 4.:** The graph shows the reporting in particular diseases. All these diseases that are among the most frequently reported causes of death world-wide or commonly used models. The distribution is presented in stacked bar charts that illustrate the percentage of the reporting and non-reporting for the sex; stating the number of articles corresponding to each percentage inside the stacks. This analysis was performed in a set of 791 articles; see Figure 1\u2014source data 1.\n\nBibliometric parameters were used to determine if they were associated with the quality of method reporting. We used as journal metrics both the journal impact factor from the Institute for Scientific Information (ISI) Web of Knowledge\u2019s Journal Citation Report (2014), and h-index from the SCImago Journal and Country Rank (2014). No correlation was observed between the reporting of sex or age as experimental variables and the journal impact factor and h-index of the 70 journals that covered 30 or more articles of the corpus (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/13615/elife-13615-fig5-v2.jpg)\n\n**Figure 5.:** Journal impact factor in which the papers were published (a) and h-index of journals (b). Spearman\u2019s rank correlation coefficient r square is shown alongside the regression lines. The scatter plots show that there is no correlation between the reporting and impact factor [r =0.002, p = 0.984] data from the Journal Citation Report (year 2014) and journal h-index [r =-0.215, p = 0.073] data from the SCImago Journal and Country Rank (year 2014). Analysis conducted on the 70 journals that published 30 or more articles of the 15,311 studies returned by searching the PubMed Central Open Access subset as of February 2015.\n\n## Discussion\n\nWhilst this work constitutes the largest analysis of the reporting of sex and age data for mouse-based research to date, our sample does not represent the entire biomedical literature: not all journals are found in the PubMed Central Open Access subset, and some of the journals that deposit their contents into PubMed Central include only some of their articles in the Open Access subset. This is undoubtedly a limitation of our study.\n\nWe selected the mouse as a model because it is probably the most comprehensive and well-characterized model in the life sciences. Researchers rely on mouse models to mimic human disease conditions for several reasons. One of the main reasons is that mouse and human genomes are genetically similar \u2013 about 90% of human genes have direct orthologues with mice (Yue et al., 2014). Moreover, as animal models, mice are convenient due to their small size, short lifespan (up to two years), and quick generation time; three weeks for gestation and from 6 to 8 weeks to reach sexual maturity. Therefore, they can be easily housed and maintained, can be genetically manipulated to define gene function in a whole body system and a large number of mice can be studied in a relatively short period of time. This, for instance, allows scientists to study cell/cell interactions in the tissue environment and thus cause and effect relationships in a controlled situation.\n\nDespite the implications for interpretation and reproducibility of experimental findings, the sex and age of the experimental subjects are often not recorded in scientific reports (Kilkenny et al., 2009). In agreement with previous reports, the evidence presented in this study showed that the lack of reporting of key methodological parameters in mouse experiments is still a cause of concern; only about half of the papers published in 2014 stated both sex and age of the mice as experimental variables (Figure 1c). The reason why these variables are not described is unclear, since this simple information is always available to researchers. We do not believe it is a space issue, because it is possible to describe them, including mice number and mouse strain, in about 40 characters of text (e.g. ten C57BL/6 female mice (6-8-weeks old)). Whilst an improvement in the reporting of mouse sex and age has been observed over time, this is not solely attributable to the introduction of journal guidelines, because this improvement started before the publication of the ARRIVE guidelines in 2010 (Kilkenny et al., 2010). In fact, a follow-up study in 2012 showed that while sex and age reporting had improved post-ARRIVE, journals that enforced the ARRIVE guidelines as a condition of publication still failed to publish sex and age in all cases (Baker et al., 2014). The observed improvements may also therefore be a result of a growing recognition of the importance of sex and age as experimental factors that may affect study outcomes.\n\nAn analysis of the scientific literature leads to the general conclusion that the males in both human and other animals are studied much more than their female counterparts. This conclusion is based mainly on the results of two studies that manually surveyed a set of biomedical articles (Beery and Zucker, 2011; Taylor et al., 2011). However, our results showed otherwise in mouse-based models: 31.84% and 23.38% of all papers assessed were on studies performed on female and male mice, respectively (Figure 1d). This could be explained by some practical advantages of using female rather than male mice: they are cheaper to house; they are less aggressive to each other and to experimenters; and they are smaller, requiring less weight-administered drug. In addition, the apparent contradiction between this observation and the previous reports might be related to the sample size and study design; our sample size was larger and we surveyed a much broader range of disciplines. In addition, although rodent models (that is, mouse and rat models) accounted for, respectively, 50% and 80% of the papers considered in these other studies (Beery and Zucker, 2011; Taylor et al., 2011), they also included other species, such as cat, dog and monkey models: moreover, these two studies did not explore sex bias by species.\n\nIn preclinical studies, furthermore, we noted an important sex- and age-bias in mouse-based disease models (Figure 2b and 2c). Among the main preclinical research topics assessed, we observed the strongest male-bias in cardiovascular disease models (2.25:1) and the strongest female-bias in infectious disease models (3.54:1) (Figure 2b). This situation still persists: between 2012 and 2014, about 70% and 77% of research articles assessed on these two disease models are still biased towards male and female mice, respectively. These pathologies and many others, exhibit important sexual dimorphisms, which are not only inherent to genetic differences, but also to hormonal influence (Case et al., 2013; Gilks et al., 2014). For example, in the study of hypertension, one of the major risk factors for cardiovascular disease, a greater increase in blood pressure was reported in gonad-intact XY males than XX females using the four core genotype in the MF1 mouse model. However, the mean arterial pressure was greater in gonadectomized XX mice compared with XY mice regardless of whether the mice were born with testes or with ovaries (Ji et al., 2010). On the other hand, in the case of infectious diseases, females have a more robust immune system than males \u2013 both the innate and adaptive immune responses, which makes them less susceptible to developing many infections (mainly Th1-type infections), although it increases the risk of developing autoimmune diseases due to their trend to develop a stronger pro-inflammatory response (Pennell et al., 2012). Interestingly, we also observed that the sex-bias could change in a particular disease mouse model according to the biomedical study. Diabetes disease mouse models exemplified this situation. From a global point of view, this disease was found to be male-biased (1.57:1) (Figure 2b). However, in studies related with the immunology of diabetes, there was a strong female-bias (7.87:1) (Figure 3b); a change that remains in the study of diabetes mellitus type 2 (Figure 4).\n\nIn order to balance sex of animals and cells in preclinical studies, the National Institutes of Health (NIH) have proposed a multi-dimensional initiative, which includes, among other things, extramural training on experimental design and data analysis by sex (Clayton and Collins, 2014). Regarding this initiative, new ideas have been proposed to achieve, and sustain, the sex balance in biomedical research (McCullough et al., 2014). In this context, our study provides an implementation of text mining to assess reporting of experimental factors. By knowing where there is imbalance for a particular variable, it is possible to address it in a cost-effective manner. This not only directly contributes to the comparability of experimental work, but also to the reproducibility of findings. To address this problem some journals are already introducing editorial measures and methods checklists in order to improve the quality of scientific reporting (Nature, 2013). Nevertheless, whilst journal checklists may make reference to species strain, sex and age of animals, the main focus is on statistical issues to ensure repeatability, rather than biological factors that modify the outcomes.\n\nWe hope that our text mining strategy can be used to explore other aspects of how experimental methods and materials are reported in the literature, and thus contribute to efforts to improve the reproducibility of biomedical research. It might also be possible to employ text mining to pre-screen manuscripts when they are submitted to journals.\n\n## Methods\n\n### Search strategy and data\n\nA literature search was carried out in Medline via PubMed in order to identify research articles that deal with mouse experimentation. The database was searched in March 2015 for articles that were published between 1st\u00a0January, 1994 and 31st\u00a0December, 2014 using the terms as they appear in Figure 1\u2014source data 1. To ensure maximum specificity in the search, searching was limited to articles where the MeSH (Medical Subject Headings) \u201cMouse\u201d term indicated the major focus of the article; moreover the keywords \u201cMouse\u201d or \u201cMice\u201d had to be stated in the title. This also prevented articles that made only passing references to mouse work from entering the dataset and ensured a high quality corpus for analysis. The search was restricted to English language papers and to research articles (excluding review articles). In addition, to obtain full text articles, we restricted the PubMed search to include only those in PubMed Central by adding the special term \u201cpubmed pmc[sb]\u201d in the query. The PubMed Identifiers (PMID) were then converted to the respective PubMed Central (PMC) reference numbers which were acquired by querying the PubMed Central Open Access subset as of February 2015, which contains over one million full-text articles to date.\n\nIn order to assess particular areas in which there is strong scientific interest world-wide, we analyzed experiments performed in mouse models for six groups of diseases from the top 10 causes of death according to the W.H.O. in high, low and middle income countries (WHO, 2014). The six disease groups were as follows: cardiovascular diseases; cancer; diabetes mellitus; lung diseases; infectious diseases; and neurological disorders. Some causes of death did not apply for our study, e.g. road injury. HIV/AIDS, tuberculosis and other infections, for instance, were included in the infectious diseases group. A group for cancer was created in a similar way. An example disease for each of the six disease groups was also included. In addition, as there are different approaches to assess disease models according to the research field, e.g. immunology, genetics etc., each of these areas were divided into a series of subgroups by using the Subheading MeSH terms \u201cgenetics\u201d, \u201cimmunology\u201d, \u201cphysiopathology\u201d and \u201ctherapy\u201d (Figure 1\u2014source data 1). These four approaches were chosen because of their importance for understanding the molecular and physiological basis of diseases, as well as for developing novel therapeutic agents for their treatment. These subjects were used to find if these disease models are being assessed consistently by sex and age.\n\nIn 2001 the US Institute of Medicine report (Wizemann and Pardue, 2001) concluded that sex matters in diseases and response to therapy; we therefore decided to explore any changes before and after the report by selecting articles between 1994 and 2014. This time span allows us to assess the impact of this report on the reporting of this experimental factor. In order to avoid misinterpretation due to low number of papers prior to 2001, the analysis for groups and subgroups was applied to articles published after 1st\u00a0January 2001.\n\n### Sex and Age identification: data sets\n\nThe text mining approach involved the design and implementation of generic rule-based patterns, which identify age and sex mentions in text. The rules were based on lexical patterns engineered from a sample of 40 full-text articles manually selected from PubMed through a thematic query of interest as follows: \"Mice\"[Mesh] AND (mouse[ti] OR mice[ti]) AND \"animals\"[MeSH Terms:noexp] AND Journal Article[ptyp] AND English[lang]. The first 40 papers that mentioned the sex and/or age of the mice were selected (Supplementary file 2A).\n\nThe age rules were based on lexical patterns mentioning age clues, e.g. \u201caged 3 to 8 weeks old\u201d. Similarly, the sex rules were designed around word matching aiming to identify male, female or both sexes in mice, e.g. \u201cmice of either sex were used\u201d.\n\nThe rules were created and applied via GATE (Cunningham et al., 2013) for Windows version 8.1; an open source free software enabling the design and implementation of information extraction systems in unstructured text with the crafted rules following its notation (https://gate.ac.uk/). The number of crafted rules was 12 for sex and 18 for age. Figure 1\u2014source data 2 presents examples of rules for both the sex and age whereas Supplementary file 3 displays all the utilized rules for the two characteristics.\n\nThe results generated by text mining were then integrated at the document level. In cases where several different candidate mentions for a single characteristic, i.e. sex or age, are recognized in a given document, we \u2018unified\u2019 them to get document level annotations using the following approach: if multiple mentions of different lengths occur, the longest is selected (usually the most informative) aiming to have one mention for both the sex and age per document, and where mentions are of the same length, the first one is chosen.\n\nSince our method focuses on the recognition of age and sex at the mention level per document, we hypothesize that it is highly unlikely for researchers to report key information about animal models that they did not use. In order to further support this hypothesis, 40 full-text articles were randomly selected from our corpus and through manual inspection, we concluded that indeed, if there are mentions in text (particularly in the Method section) of specific age and sex (together) these are attributed to the mice used in the animal experiments and no further mentions were reported (Supplementary file 2B). The randomness was modelled by using the \u201c=RANDBETWEEN()\u201d function in Microsoft Office Excel for Windows version 2013 as follows: according to the text mining results, each paper of the corpus of articles with a positive mention of the sex and/or age of the mice was assign a random number from 1 to 40. The first 40 papers identified with the random number 1 were selected.\n\nFinally, to further enhance the performance of the rules, we applied this strategy to a development set of 70 full-text documents (Supplementary file 3C). These articles were randomly selected from our corpus by using the \u201c=RANDBETWEEN()\u201d function in Microsoft Office Excel for Windows version 2013; assigning to each paper a random number from 1 to 5. After sorting by the \u201cYear\u201d column, the first five papers identified with the random number 1 were selected by each year group. The mentions of age and sex in both corpus were manually identified and reviewed by the first author, who has a background in the field of biomedical research. A summary of the data sets used in this study is presented in Table 2.\n\n**Table 2.**\n Summary of the data sets used in this study.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Sets of articles</th>\n      <th>Number of articles</th>\n      <th>Task</th>\n      <th>File</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data 1</td>\n      <td>15,311</td>\n      <td>Corpus for assessing reporting of the sex and age of the mice</td>\n      <td>Supplementary file 1*</td>\n    </tr>\n    <tr>\n      <td>Data 2</td>\n      <td>40</td>\n      <td>Creating the text-mining rules</td>\n      <td>Supplementary file 2A</td>\n    </tr>\n    <tr>\n      <td>Data 3</td>\n      <td>40</td>\n      <td>Manual inspection for finding the location of the mention of the sex and age of the mice</td>\n      <td>Supplementary file 2B</td>\n    </tr>\n    <tr>\n      <td>Data 4</td>\n      <td>70</td>\n      <td>Enhancing the performance of the text-mining rules</td>\n      <td>Supplementary file 2C</td>\n    </tr>\n    <tr>\n      <td>Data 5</td>\n      <td>50</td>\n      <td>Evaluating the text-mining system</td>\n      <td>Supplementary file 2D</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Supplementary file 1 also contains data sets of the six groups of diseases analyzed (cardiovascular diseases; cancer; diabetes mellitus; lung diseases; infectious diseases; and neurological disorders), as well as of the different approaches to assess the disease models (i.e. genetics, immunology, physiopathology and therapy), and the disease example for each of the six disease groups._\n\n### System evaluation\n\nThe performance of the text mining system was evaluated at the document level by considering whether the returned mentions were correctly the sex and age of the mice studied. In order to create an evaluation dataset, 50 full-text articles were randomly selected from our corpus of study (Supplementary file 3D) and were manually double-annotated for both the age and the sex by the first and fourth authors due to their biomedical expertise. There was no disagreement between the manual annotations performed by two biomedical experts. The randomness was modelled by using the \u201c=RANDBETWEEN()\u201d function in Microsoft Office Excel for Windows version 2013 as follows: a random number from 1 to 50 was assigned to each paper. The first 50 papers identified with the random number 1 were selected.\n\nPrecision (P), Recall (R) and F-score were calculated for both the age and the sex using the standard metrics (Ananiadou et al., 2006; Hotho et al., 2005), which rely on the number of true- and false-positive (TP and FP), and true- and false-negative (TN and FN) cases. The precision (P), calculated as TP/(TP+FP), determines the accuracy of the system in recognizing desirable terms. The recall (R), calculated as TP/(TP+FN), produces the coverage of the system. Often, there is an inverse relationship between precision and recall; when an increase occurs in precision, a simultaneous decrease is observed in recall and vice versa. Therefore, the F-score was also used for evaluating the performance of information extraction systems due to its harmonic mean of precision and recall and it is calculated as 2*P*R/(P+R). Table 1 shows the results of the evaluation set at the document level.\n\nDespite the overall positive performance of our text mining system, there were some results that lead to false-positive and false-negative results due to the relatively complex expressions. False-negative results regarding age mentions occurred because the rules are based on syntactical patterns that require a numeric range between specific time units, i.e., days, weeks and months. For example, in the sentence \u201cNineteen animals, including males and females, of ages from postnatal day (P) 7 to several months were deeply anesthetized by isoflurane and decapitated\u201d (Arbogast et al., 2013), age is not mentioned as a range concept of days (or weeks or months) but as \u201cpostnatal days to several months\u201d without indicating the exact number of months. Cases like this suggest that an extension of the current rule set could lead to an improvement towards the system\u2019s performance. False-negative results regarding sex mentions occurred because the rules for the sex recognition is rather straightforward with a simple dictionary matching (minimal), which, as a consequence, does not enable the identification of the sex through inference, e.g. when sex-specific proxy elements are mentioned, such as pregnancy. For example, in the sentence \u201cPrimary mouse mammary epithelial (PMME) cells were isolated from 15-d timed-pregnant CD-1 mice\u201d (Lin et al., 1995) are expected to be missed since the sex of the mice used in this experiment is female and is being inferred by the word \u201cpregnant\u201d.\n\nOn the other hand, the application of a dictionary approach generated interestingly few false-positives in the sex recognition. This is because the system identified words like \u201cmale\u201d or \u201cfemale\u201d early in text, whereas in the actual experiment the scientists did not report any specific sex for the selected model. For example, in the sentence \u201cThe colony of animals carrying the Pak1ip1mray allele is maintained by crossing male carriers with FVB/NJ females. All embryos presented in the phenotypic analysis of this study were produced from carriers crossed for at least four generations onto an FVB/NJ background\u201d (Ross et al., 2013), the sex of the embryos was not established even though the findings relied on them. Other cases were: \u201cEpithelial cells were derived from tracheas of 3-weeks old Gprc5a mice\u201d and \u201cby peritoneal into 8\u201312 weeks old C56Bl/6 mice\u201d. Cases like these suggest that the implementation of a more sophisticated system that could target common syntactical patterns observed in text (similar to those for the characteristic of age) will contribute to an improvement of the precision and performance of the system. This could explain why sex had the lower precision (90.6%) of the two analyzed factors (Table 1). On the contrary, there was only one false positive (referring to the embryonic stage of the mice) although the real age could not be recognized directly due to not being explicitly expressed; \u201cGenomic DNA and pooled total RNAs were isolated from CRL2196 cells and from various tissues, ages and lineages of mice as indicated, using standard methods and Trizol (Invitrogen), respectively\u201d (Li et al., 2014). The more refined rules led to an increased precision of 96.8% (Table 1).\n\nAlthough our text mining protocol does produce reliable results, the returned results are merely an indication of how text mining can be used to improve issues such as the under-reporting of key information in mouse based studies. There is room to improve the applied text mining strategy. Crafting more flexible rules for the capture of age and including more specific ones for the recognition of sex could improve the generated results and reveal a clearer picture of the reporting of these variables in the biomedical field. While the variety of the observed common lexical patterns was not wide in the training and development sets (Supplementary files 2A and 2C), a larger set could reveal other patterns that could help increase the recall. Nevertheless, the F-measure of 92% (Table 1) gives enough confidence in using this automated method to assess the incidence of reporting sex and age in biomedical articles.\n\n### Statistical analysis\n\nThe frequencies of reporting of sex and age by articles were determined in Microsoft Office Excel 2013 for Windows. Differences in reporting of sex and age of mice in multiple models of diseases, as well as the use of each sex by the topic of research for each disease were assessed by two-way ANOVA without replication. An index of the reporting for each journal was calculated by dividing the number of articles that report the sex and/or age of the mouse by the number of articles that do not report any of these biological variables. Spearman\u2019s rank correlations were calculated between the reporting index and impact factor from the Journal Citation Report, and h-index journal from the SCImago Journal and Country Rank. All statistical analysis was performed by using the GraphPad Prism software for Windows version 6.05, La Jolla CA, (www.graphpad.com). Graphical representation of the data was performed using Microsoft Office Excel for Windows version 2013.\n",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "f479269c-e2b7-4883-898e-3b5b87ac1bb3",
+      "submission_id": "f869e42a-6c8b-4997-b0e0-ba25c0ac2245",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Chris Mungall, Lawrence Berkeley National Laboratory , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.13615.015](https://doi.org/10.7554/eLife.13615.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Bias in the reporting of sex and age as experimental factors across biomedical research on mouse models\" to eLife for consideration as a Feature Article. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a guest Reviewing Editor (Chris Mungall), a Senior Editor (Fiona Watt) and the Features Editor (Peter Rodgers).\n\nThe following individuals involved in review of your submission have agreed to reveal their identity: Terry Meehan (peer reviewer) and Nicole Vasilevsky (peer reviewer).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe Features Editor will also contact you separately about some editorial issues that you will need to address.\n\nSummary:\n\nThe authors have developed a text mining approach to assess bias in the reporting of sex and age of mouse model experiments reported in the scientific literature over the last two decades. The manuscript provides sufficient background as to why reporting this information is important. The methods and results are sound. The authors find while there is general improvement in reporting these variables, about half of the papers published in 2014 still lack these variables. An interesting gender-bias is noted in different fields of study.\n\nQuantifying the problem will, it is hoped, drive journals and authors to include this information in the biomedical literature. This work could also be used by journals to help standardize descriptions of age and sex in the literature. It would also be good if the authors could rerun this analysis five years from now to see if the situation has changed.\n\nBefore publication, the following comments should be addressed.\n\nEssential revisions:\n\n1) In this analysis, you examined approximately 600 journals and 70 of those journals covered 30 or more articles of the corpus. In those 70 journals, do the instructions to authors require or request that sex and age are reported in the manuscripts? Are the authors complying with the journal reporting requirements?\n\n2) I like how you show that there is an increase in the reporting of sex and age over time. In the Discussion, can you speculate as to why this is? Did journal reporting requirements get stricter, or did the ARRIVE guidelines come out at the time point when we started to see an increase?\n\n3) Please explain why text mined articles were restricted to those with \"Mice/Mouse\" in the title. This eliminates many research articles. (For example, Nature is included in Figure 1\u2014figure supplement 1, but Science is not: I suspect this is because of editorial differences in title rules, which may bias conclusions from this study). There is probably a compelling reason (e.g. automated sex and age detection breaks down when humans and mice data are described in the same article) but please tell the reader why, and note this as a limitation in the discussion.\n\n4) In the Discussion, conjecture on why there is gender bias for females in many mouse studies. There are a number of references on mouse housing density \u2013 is gender assessed in these (e.g. some strains of male mice fight each other when caged, necessitating separate cages and driving up costs)?\n",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "cfddefe7-70a5-4250-bba4-cd320d171f17",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C1",
+      "claim": "The text mining system achieved F-scores of around 92% for both sex and age when evaluated on 50 randomly selected full-text articles.",
+      "claim_type": "EXPLICIT",
+      "source": "The F-scores that resulted from this evaluation were around 92% for both sex and age (Table 1), which indicates good quality of the results (Ananiadou et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental evaluation data presented in Table 1, showing precision, recall, and F-scores for the text mining system, and is compared against established quality standards cited from Ananiadou et al., 2006.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "9a0638b8-97a2-4418-8802-f78a7c173ca9",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C2",
+      "claim": "A total of 15,311 full-text articles from the PubMed Central Open Access subset as of February 2015 were processed in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 15,311 full-text articles from the PubMed Central Open Access subset as of February 2015 were processed in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement about the dataset size used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "45c9e663-5b66-4068-8724-1a58c6f4938d",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C3",
+      "claim": "The corpus of 15,311 documents corresponds to 7.15% of mouse experimentation articles retrieved by the same query in PubMed and 27.85% in PubMed Central.",
+      "claim_type": "EXPLICIT",
+      "source": "These articles correspond to 7.15% and 27.85% of mouse experimentation articles retrieved by the same query in PubMed and PubMed Central, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim presents calculated percentages based on the dataset retrieved compared to total available articles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "a7731050-80f3-433e-834a-9291c5f2acca",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C4",
+      "claim": "50.1% of the corpus articles (n=7,671) were published after 2011.",
+      "claim_type": "EXPLICIT",
+      "source": "This corpus of documents were published between 1994 and 2014, of which 50.1% were published after 2011 (n= 7,671) (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical summary of the temporal distribution of the corpus, supported by data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "290cb137-3084-42fc-af91-df9c9a905f14",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C5",
+      "claim": "PLOS ONE contained the highest number of articles in the corpus (n=5,574; 36.41%).",
+      "claim_type": "EXPLICIT",
+      "source": "PLOS ONE contained the highest number of articles (n= 5,574; 36.41%), followed by Journal of Experimental Medicine (n= 931; 6.08%), and Journal of Cell Biology (n= 363; 2.37%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This presents descriptive statistics about the distribution of articles across journals in the corpus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "4f25e811-8100-4e63-8420-54e0e507d30d",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C6",
+      "claim": "About a fifth of papers from 1994 to 2014 did not report either the sex or the age of the mouse used in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, from 1994 to 2014, about a fifth of papers did not report either the sex or the age of the mouse used in the study (Figure 1a and 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim summarizes the overall reporting rate across the entire time period, supported by data visualized in Figure 1a and 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "9b6ca7a0-e5db-49a5-94f1-a630f6bb9337",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C7",
+      "claim": "The frequency of articles reporting sex and/or age in mice models has increased steadily during the last two decades.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1c shows that the frequency of articles reporting sex and/or age in mice models has increased steadily during the last two decades, whereas missing information about these two experimental variables showed an important drop from 100% (no papers reported the sex and age of the mice in 1994 and 1995) to about 15% following a slope of approximately -0.045.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim describes a temporal trend observed in the data, with specific quantitative details about the rate of change.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "95a6df38-a446-455e-ae99-edcd03346f62",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C8",
+      "claim": "Since 2012, the percentage of articles reporting both sex and age had reached only about 50% of the papers published in those years.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, since 2012, the percentage of articles reporting both factors had reached only about 50% of the papers published in those years.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This presents a specific finding about reporting rates in recent years based on the analyzed data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "d626ea9e-ffc9-4879-acd4-7a4325b95fcb",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C9",
+      "claim": "Experiments performed with female mice were more frequently reported than experiments performed with male mice (31.84% vs. 23.38%, Binomial test p< 0.001; 95% IC: 56.60 \u2013 58.71).",
+      "claim_type": "EXPLICIT",
+      "source": "When the sex of the mouse model is stated in the article, experiments performed with female mice were more frequently reported than experiments performed with male mice (31.84% vs. 23.38%, Binomial test p< 0.001; 95% IC: 56.60 \u2013 58.71) (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis (binomial test) of the data, with specific percentages and confidence intervals provided.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "b07286c3-4717-4303-8322-121d75ed021c",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C10",
+      "claim": "Female mice have been reported more often than male mice historically, reaching a plateau of about 33% since the last decade (2004-2014).",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed that, historically, female mice have been reported more often than male mice, reaching a plateau of about 33% since the last decade (2004 \u2013 2014) (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a temporal trend in sex reporting observed in the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "25cd3097-6713-47c7-9b28-b7c87b8529f0",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C11",
+      "claim": "The use of both sexes in mice experiments stratified by sex showed the lowest improvement over time, with a maximum of about 10% of the articles since 2006.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the use of both sexes in mice experiments stratified by sex showed the lowest improvement over time (Figure 1e); with a maximum of about 10% of the articles since 2006.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents a specific finding about the reporting of both sexes over time based on data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "ffe520ad-ddbc-41d0-b694-ac82e93d4296",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C12",
+      "claim": "Reporting of mouse age improved steadily from 1999 to 2006, at which point age is reported more than 50% of the time.",
+      "claim_type": "EXPLICIT",
+      "source": "Reporting of mouse age improved steadily from 1999 to 2006 (Figure 1f), at which point age is reported more than 50% of the time; since 2010 age reporting has plateaued, with between 65 and 70% of articles each year mentioning the age of mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes temporal trends in age reporting based on the analyzed data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "08d665ad-76e7-4c6c-9aba-27d8d60e306a",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C13",
+      "claim": "Since 2010, age reporting has plateaued, with between 65 and 70% of articles each year mentioning the age of mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Reporting of mouse age improved steadily from 1999 to 2006 (Figure 1f), at which point age is reported more than 50% of the time; since 2010 age reporting has plateaued, with between 65 and 70% of articles each year mentioning the age of mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents a specific finding about recent age reporting rates based on data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "8f964583-c454-459f-bd92-1c91cda06ec4",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C14",
+      "claim": "The reporting of sex and age as experimental variables varies across biomedical fields (p < 0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "A two-way ANOVA without replication was performed to assess the difference in reporting sex and age for each field. Our results showed statistically significant differences, p < 0.05, indicating that the reporting of these experimental factors varies across biomedical fields (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis (two-way ANOVA) showing significant differences across fields.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "fb17ad0c-70d5-45e8-b8d2-ad1da67c8b28",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C15",
+      "claim": "Studies on diabetes showed the highest frequency (68%) of reporting both sex and age of mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In identifying the sex and age of the mouse, for instance, studies on diabetes showed the highest frequency (68%), whereas studies on cancer showed the lowest frequency (48%) (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents a specific finding comparing reporting rates across disease categories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "f3ace5f6-acf7-49b0-9347-0b724f9d5c5e",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C16",
+      "claim": "Studies on cancer showed the lowest frequency (48%) of reporting both sex and age of mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In identifying the sex and age of the mouse, for instance, studies on diabetes showed the highest frequency (68%), whereas studies on cancer showed the lowest frequency (48%) (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents a specific finding comparing reporting rates across disease categories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "fa767255-ae30-45dd-9a65-7317397d9e13",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C17",
+      "claim": "Studies on cancer reported the worst results regarding missing information about sex (33%) or age (37%) of the mice used.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies on cancer reported the worst results regarding missing information about sex (33%) or age (37%) of the mice used (Figure 2b and 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents specific percentages of missing information for cancer studies based on data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "a8a58733-ad9e-4fb2-b187-df04bc1875f0",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C18",
+      "claim": "The best results in reporting sex and age were achieved by studies on neurological disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the best results in reporting sex and age were achieved by the studies on neurological disorders (Figure 2a, 2b and 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparative finding based on analysis of reporting rates across disease categories.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "21efd48e-ee4f-4304-a21a-ac71eefdaf95",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C19",
+      "claim": "There is a preference for studying the immunology of diseases by using female mouse models.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that there is a preference for studying the immunology of these diseases by using female mouse models, whereas there is a tendency to use male mouse models for studying their genetic basis (Figure 3a and 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of patterns observed in the data analysis across different research approaches.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "58488534-ed3f-4681-bcab-7c9c889e1786",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C20",
+      "claim": "There is a tendency to use male mouse models for studying the genetic basis of diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that there is a preference for studying the immunology of these diseases by using female mouse models, whereas there is a tendency to use male mouse models for studying their genetic basis (Figure 3a and 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of patterns observed in the data analysis across different research approaches.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "0084c3b6-ae4c-4cbf-aced-688efa76c853",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C21",
+      "claim": "In physiopathology and therapy subgroups, male mice were more frequently studied in models of cardiovascular diseases, diabetes and neurological disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Both in physiopathology and in therapy subgroups, male mice were more frequently studied in models of cardiovascular diseases, diabetes and neurological disorders, and female mice in models of cancer, lung diseases and infectious diseases (Figure 3c and 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes patterns observed in the data analysis for specific disease categories and research approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "f98efb6f-1154-420b-9d01-369206270dfa",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C22",
+      "claim": "In physiopathology and therapy subgroups, female mice were more frequently studied in models of cancer, lung diseases and infectious diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Both in physiopathology and in therapy subgroups, male mice were more frequently studied in models of cardiovascular diseases, diabetes and neurological disorders, and female mice in models of cancer, lung diseases and infectious diseases (Figure 3c and 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes patterns observed in the data analysis for specific disease categories and research approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "1bddaf84-4363-4e43-aee6-1aa846207e60",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C23",
+      "claim": "No correlation was observed between the reporting of sex or age as experimental variables and the journal impact factor of the 70 journals that covered 30 or more articles of the corpus.",
+      "claim_type": "EXPLICIT",
+      "source": "No correlation was observed between the reporting of sex or age as experimental variables and the journal impact factor and h-index of the 70 journals that covered 30 or more articles of the corpus (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents the results of correlation analysis between reporting quality and journal metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "0f729004-04c4-4a99-8fa1-2121b6784a3d",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C24",
+      "claim": "No correlation was observed between the reporting of sex or age as experimental variables and the h-index of the 70 journals that covered 30 or more articles of the corpus.",
+      "claim_type": "EXPLICIT",
+      "source": "No correlation was observed between the reporting of sex or age as experimental variables and the journal impact factor and h-index of the 70 journals that covered 30 or more articles of the corpus (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents the results of correlation analysis between reporting quality and journal metrics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "c279c10e-be40-474b-a715-2ba472452d5f",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C25",
+      "claim": "More than 80% of potential therapeutics fail in human clinical trials after being successful in animal models.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the translation of scientific findings from animal models to humans is far from straightforward, and more than 80% of potential therapeutics fail in human clinical trials after being successful in animal models (Perrin, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Perrin, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "00677827-0d4a-41db-a6ef-a5ffcac3a110",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C26",
+      "claim": "Spending on preclinical research that is not reproducible amounts to $28 billion per year in the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been estimated that spending on preclinical research that is not reproducible amounts to $28 billion per year in the United States (Freedman et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Freedman et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "2750224f-d883-4081-b8cf-1d08fd7e5ebd",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C27",
+      "claim": "The sex and age of mice affect morphological, physiological, immunological and behavioral parameters and influence the outcomes of experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In experiments using animals, for instance, the sex and age of the mice should be reported because they affect morphological, physiological, immunological and behavioral parameters and, hence, they influence the outcomes of experiments (Diedrich et al., 2007; Wizemann and Pardue, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Diedrich et al., 2007 and Wizemann and Pardue, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "e3e169d6-7e6a-4907-aafd-b6a5058b60b7",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C28",
+      "claim": "In many animals (including humans), males have shorter lifespans than females.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering some taxa exceptions, the general conclusion is that in many animals (including humans), males have shorter lifespans than females (Clutton-Brock and Isvaran, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Clutton-Brock and Isvaran, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "0a1b9434-e33d-47b8-a162-a88e381b3a8a",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C29",
+      "claim": "Sex differences in lifespan depend to a great extent on sexually dimorphic life-history strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, from an evolutionary standpoint, these sex differences in lifespan depends to a great extent on sexually dimorphic life-history strategies (such as mating systems; Maklakov and Lummaa, 2013), and on genetic architecture, including both the sex chromosomes (Nguyen and Disteche, 2006) and the mitochondrial DNA (Gemmell et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Maklakov and Lummaa, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "5cbcb91a-ed0a-4314-ba28-50590ad7760a",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C30",
+      "claim": "Sex differences in lifespan depend on genetic architecture, including both the sex chromosomes and the mitochondrial DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, from an evolutionary standpoint, these sex differences in lifespan depends to a great extent on sexually dimorphic life-history strategies (such as mating systems; Maklakov and Lummaa, 2013), and on genetic architecture, including both the sex chromosomes (Nguyen and Disteche, 2006) and the mitochondrial DNA (Gemmell et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Nguyen and Disteche, 2006 and Gemmell et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "2712470b-4f86-4a5b-8c11-daf54036049e",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C31",
+      "claim": "Sex and age play key roles in disease phenotypes, modifying their susceptibility, presentation and response to treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding preclinical and clinical studies, sex and age play key roles in disease phenotypes, modifying their susceptibility, presentation and response to treatment (Arnold, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Arnold, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "cdb0817d-c69a-4b92-bf9e-c68beb6e9a89",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C32",
+      "claim": "Some pathologies exhibit a clear sexual dimorphism.",
+      "claim_type": "EXPLICIT",
+      "source": "Some pathologies exhibit a clear sexual dimorphism (Ober et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ober et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "8f528dae-e994-4294-9c19-a8cafc18276b",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C33",
+      "claim": "The incidence of stroke is higher in men than women during their lifespan.",
+      "claim_type": "EXPLICIT",
+      "source": "Using stroke as an example, it is known that its incidence is higher in men than women during their lifespan (Mozaffarian et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Mozaffarian et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "10483452-4013-426d-9385-687ea959ec56",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C34",
+      "claim": "After the age of 60 years and thus post-menopause, women have more severe strokes than men.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent evidence suggests that after the age of 60 years and thus post-menopause, women have more severe strokes than men (Dehlendorff et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Dehlendorff et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "3ab2c68a-4ebe-46f5-a78d-1b4b29c5cad1",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C35",
+      "claim": "Sex- and age-dependent differences in protein expression profiles were observed in the heart proteome of female and male C57BL/6 mice of two distinct age groups (14 and 100 weeks).",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of animal models, sex- and age-dependent differences in protein expression profiles were observed in the heart proteome of female and male C57BL/6 mice of two distinct age groups (14 and 100 weeks) (Diedrich et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Diedrich et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "ba1d3445-5e69-432d-92a4-9b73bee32c7b",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C36",
+      "claim": "Not all papers in journals that endorsed ARRIVE guidelines comply with the ARRIVE guidelines.",
+      "claim_type": "EXPLICIT",
+      "source": "However, although these guidelines have been endorsed by many journals, not all papers in these journals comply with the ARRIVE guidelines (Baker et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Baker et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "d7d27672-6258-4bd1-9660-82323d5035fe",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C37",
+      "claim": "The mouse is probably the most comprehensive and well-characterized model in the life sciences.",
+      "claim_type": "EXPLICIT",
+      "source": "We selected the mouse as a model because it is probably the most comprehensive and well-characterized model in the life sciences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on general scientific knowledge about the use of mouse models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "6a1554ef-88f2-4a90-b908-7017caf2af74",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C38",
+      "claim": "About 90% of human genes have direct orthologues with mice.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the main reasons is that mouse and human genomes are genetically similar \u2013 about 90% of human genes have direct orthologues with mice (Yue et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Yue et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "b323f653-e098-4b73-807f-1bb4325ac915",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C39",
+      "claim": "Mice have a short lifespan of up to two years.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as animal models, mice are convenient due to their small size, short lifespan (up to two years), and quick generation time; three weeks for gestation and from 6 to 8 weeks to reach sexual maturity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established biological knowledge about mice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "df858b9a-5f3c-498d-8dd7-f11e1ca3ab64",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C40",
+      "claim": "Mice have a gestation period of three weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as animal models, mice are convenient due to their small size, short lifespan (up to two years), and quick generation time; three weeks for gestation and from 6 to 8 weeks to reach sexual maturity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established biological knowledge about mice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "bd7d1965-8d36-41d0-9cd9-36b47f085e40",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C41",
+      "claim": "Mice reach sexual maturity from 6 to 8 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, as animal models, mice are convenient due to their small size, short lifespan (up to two years), and quick generation time; three weeks for gestation and from 6 to 8 weeks to reach sexual maturity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established biological knowledge about mice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "661c6e46-14d8-418e-8472-437fcec4eaaf",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C42",
+      "claim": "The improvement in reporting of sex and age started before the publication of the ARRIVE guidelines in 2010.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst an improvement in the reporting of mouse sex and age has been observed over time, this is not solely attributable to the introduction of journal guidelines, because this improvement started before the publication of the ARRIVE guidelines in 2010 (Kilkenny et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the temporal analysis of reporting trends in relation to the publication date of ARRIVE guidelines.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "881a6e6a-7809-4967-bab3-987532457383",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C43",
+      "claim": "A follow-up study in 2012 showed that journals that enforced the ARRIVE guidelines as a condition of publication still failed to publish sex and age in all cases.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, a follow-up study in 2012 showed that while sex and age reporting had improved post-ARRIVE, journals that enforced the ARRIVE guidelines as a condition of publication still failed to publish sex and age in all cases (Baker et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Baker et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "2dd5ea63-1357-41a2-bcaf-61fdfc634000",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C44",
+      "claim": "The observed improvements in reporting may be a result of a growing recognition of the importance of sex and age as experimental factors that may affect study outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed improvements may also therefore be a result of a growing recognition of the importance of sex and age as experimental factors that may affect study outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed trends in reporting.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "4e29d892-d49b-4d39-b51b-11435c6a254b",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C45",
+      "claim": "Previous studies concluded that males in both human and other animals are studied much more than their female counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "An analysis of the scientific literature leads to the general conclusion that the males in both human and other animals are studied much more than their female counterparts. This conclusion is based mainly on the results of two studies that manually surveyed a set of biomedical articles (Beery and Zucker, 2011; Taylor et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim summarizes findings from previous studies cited as Beery and Zucker, 2011 and Taylor et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "ef34d83a-409a-4b52-bb3f-9929ef2bccdf",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C46",
+      "claim": "Female mice are cheaper to house than male mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be explained by some practical advantages of using female rather than male mice: they are cheaper to house; they are less aggressive to each other and to experimenters; and they are smaller, requiring less weight-administered drug.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on practical knowledge about housing mice.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "cf532b00-41f4-4fd1-8d49-c3dc9073324c",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C47",
+      "claim": "Female mice are less aggressive to each other and to experimenters than male mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be explained by some practical advantages of using female rather than male mice: they are cheaper to house; they are less aggressive to each other and to experimenters; and they are smaller, requiring less weight-administered drug.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on practical knowledge about mouse behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "39ffe041-07e1-4cd2-94b9-e9df26f87e17",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C48",
+      "claim": "Female mice are smaller than male mice, requiring less weight-administered drug.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be explained by some practical advantages of using female rather than male mice: they are cheaper to house; they are less aggressive to each other and to experimenters; and they are smaller, requiring less weight-administered drug.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on practical knowledge about mouse physiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "8c5ca74e-500a-4d58-90e7-c5b57ac0030b",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C49",
+      "claim": "The strongest male-bias was observed in cardiovascular disease models (2.25:1).",
+      "claim_type": "EXPLICIT",
+      "source": "Among the main preclinical research topics assessed, we observed the strongest male-bias in cardiovascular disease models (2.25:1) and the strongest female-bias in infectious disease models (3.54:1) (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents a specific quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "e20de72e-9f04-4501-afb9-b94dcee70a08",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C50",
+      "claim": "The strongest female-bias was found in infectious disease models (3.54:1).",
+      "claim_type": "EXPLICIT",
+      "source": "Among the main preclinical research topics assessed, we observed the strongest male-bias in cardiovascular disease models (2.25:1) and the strongest female-bias in infectious disease models (3.54:1) (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents a specific quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "da7a1d94-ae8a-403f-9408-2f13733c9720",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C51",
+      "claim": "Between 2012 and 2014, about 70% of research articles assessed on cardiovascular disease models are still biased towards male mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This situation still persists: between 2012 and 2014, about 70% and 77% of research articles assessed on these two disease models are still biased towards male and female mice, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This presents a specific finding about recent trends in sex bias for cardiovascular disease models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "a42494e1-2a2d-4bd4-91cc-03aef3eea207",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C52",
+      "claim": "Between 2012 and 2014, about 77% of research articles assessed on infectious disease models are still biased towards female mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This situation still persists: between 2012 and 2014, about 70% and 77% of research articles assessed on these two disease models are still biased towards male and female mice, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This presents a specific finding about recent trends in sex bias for infectious disease models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "ec3df1ac-fefb-42b7-84a7-f9a0aae97cad",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C53",
+      "claim": "In the study of hypertension, a greater increase in blood pressure was reported in gonad-intact XY males than XX females using the four core genotype in the MF1 mouse model.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the study of hypertension, one of the major risk factors for cardiovascular disease, a greater increase in blood pressure was reported in gonad-intact XY males than XX females using the four core genotype in the MF1 mouse model. However, the mean arterial pressure was greater in gonadectomized XX mice compared with XY mice regardless of whether the mice were born with testes or with ovaries (Ji et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ji et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "eea50152-c3bf-475b-9fd2-e045474493ce",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C54",
+      "claim": "The mean arterial pressure was greater in gonadectomized XX mice compared with XY mice regardless of whether the mice were born with testes or with ovaries.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the study of hypertension, one of the major risk factors for cardiovascular disease, a greater increase in blood pressure was reported in gonad-intact XY males than XX females using the four core genotype in the MF1 mouse model. However, the mean arterial pressure was greater in gonadectomized XX mice compared with XY mice regardless of whether the mice were born with testes or with ovaries (Ji et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Ji et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "4517b0d7-74df-4996-ab3a-3f9da5b88311",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C55",
+      "claim": "Females have a more robust immune system than males \u2013 both the innate and adaptive immune responses.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, in the case of infectious diseases, females have a more robust immune system than males \u2013 both the innate and adaptive immune responses, which makes them less susceptible to developing many infections (mainly Th1-type infections), although it increases the risk of developing autoimmune diseases due to their trend to develop a stronger pro-inflammatory response (Pennell et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Pennell et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "e65dfb45-1699-4913-a891-2f3305daa414",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C56",
+      "claim": "Females are less susceptible to developing many infections (mainly Th1-type infections).",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, in the case of infectious diseases, females have a more robust immune system than males \u2013 both the innate and adaptive immune responses, which makes them less susceptible to developing many infections (mainly Th1-type infections), although it increases the risk of developing autoimmune diseases due to their trend to develop a stronger pro-inflammatory response (Pennell et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Pennell et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "4783f2af-e255-4a25-89ff-e1d8f8da0468",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C57",
+      "claim": "Females have an increased risk of developing autoimmune diseases due to their trend to develop a stronger pro-inflammatory response.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, in the case of infectious diseases, females have a more robust immune system than males \u2013 both the innate and adaptive immune responses, which makes them less susceptible to developing many infections (mainly Th1-type infections), although it increases the risk of developing autoimmune diseases due to their trend to develop a stronger pro-inflammatory response (Pennell et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Pennell et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "2119eba8-5279-4748-9397-bb8af4e63dce",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C58",
+      "claim": "Diabetes disease mouse models were found to be male-biased (1.57:1) from a global point of view.",
+      "claim_type": "EXPLICIT",
+      "source": "Diabetes disease mouse models exemplified this situation. From a global point of view, this disease was found to be male-biased (1.57:1) (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents a specific quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "78389a14-3ee2-4894-a6d7-29c10df4c6a2",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C59",
+      "claim": "In studies related with the immunology of diabetes, there was a strong female-bias (7.87:1).",
+      "claim_type": "EXPLICIT",
+      "source": "However, in studies related with the immunology of diabetes, there was a strong female-bias (7.87:1) (Figure 3b); a change that remains in the study of diabetes mellitus type 2 (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents a specific quantitative finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "8bb5488f-8449-4f5b-82e4-6a2d673145cc",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C60",
+      "claim": "The National Institutes of Health (NIH) have proposed a multi-dimensional initiative to balance sex of animals and cells in preclinical studies, which includes extramural training on experimental design and data analysis by sex.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to balance sex of animals and cells in preclinical studies, the National Institutes of Health (NIH) have proposed a multi-dimensional initiative, which includes, among other things, extramural training on experimental design and data analysis by sex (Clayton and Collins, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Clayton and Collins, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "f458c744-2c3f-4ee2-9af9-1d4c3fa541b8",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C61",
+      "claim": "Text mining can be used to assess reporting of experimental factors in a cost-effective manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, our study provides an implementation of text mining to assess reporting of experimental factors. By knowing where there is imbalance for a particular variable, it is possible to address it in a cost-effective manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the utility of the text mining approach demonstrated in the study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "97469f8f-697c-4b55-a302-5850ea0daa11",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C62",
+      "claim": "Knowing where there is imbalance for a particular variable directly contributes to the comparability of experimental work and to the reproducibility of findings.",
+      "claim_type": "EXPLICIT",
+      "source": "By knowing where there is imbalance for a particular variable, it is possible to address it in a cost-effective manner. This not only directly contributes to the comparability of experimental work, but also to the reproducibility of findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the implications of identifying reporting imbalances.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "6232ff2d-515e-43f6-b90a-4765f52f075b",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C63",
+      "claim": "Some journals are introducing editorial measures and methods checklists in order to improve the quality of scientific reporting.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this problem some journals are already introducing editorial measures and methods checklists in order to improve the quality of scientific reporting (Nature, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Nature, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "c4319673-e685-4c66-8265-6f7830910bb5",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C64",
+      "claim": "Journal checklists may make reference to species strain, sex and age of animals, but the main focus is on statistical issues to ensure repeatability, rather than biological factors that modify the outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, whilst journal checklists may make reference to species strain, sex and age of animals, the main focus is on statistical issues to ensure repeatability, rather than biological factors that modify the outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the current focus of journal checklists based on the authors' assessment.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "572f4328-e57e-4bf9-b4db-96b02898d0e3",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C65",
+      "claim": "The sample does not represent the entire biomedical literature because not all journals are found in the PubMed Central Open Access subset.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst this work constitutes the largest analysis of the reporting of sex and age data for mouse-based research to date, our sample does not represent the entire biomedical literature: not all journals are found in the PubMed Central Open Access subset, and some of the journals that deposit their contents into PubMed Central include only some of their articles in the Open Access subset. This is undoubtedly a limitation of our study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation based on the data source used.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "b011947b-f8fa-4c3c-a971-45511765fa97",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C66",
+      "claim": "Some journals that deposit their contents into PubMed Central include only some of their articles in the Open Access subset.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst this work constitutes the largest analysis of the reporting of sex and age data for mouse-based research to date, our sample does not represent the entire biomedical literature: not all journals are found in the PubMed Central Open Access subset, and some of the journals that deposit their contents into PubMed Central include only some of their articles in the Open Access subset. This is undoubtedly a limitation of our study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an acknowledgment of a limitation based on the data source used.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "74aedd38-1900-4ce3-9e11-7f709659e3cc",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C67",
+      "claim": "This work constitutes the largest analysis of the reporting of sex and age data for mouse-based research to date.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst this work constitutes the largest analysis of the reporting of sex and age data for mouse-based research to date, our sample does not represent the entire biomedical literature: not all journals are found in the PubMed Central Open Access subset, and some of the journals that deposit their contents into PubMed Central include only some of their articles in the Open Access subset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the scope of the current study relative to previous work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "a6601dcc-e977-4ad9-85c8-bd81624ce245",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C68",
+      "claim": "The reason why sex and age variables are not described is unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "The reason why these variables are not described is unclear, since this simple information is always available to researchers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the lack of clear explanation for non-reporting.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "0fb092d4-0408-4bc4-aac5-ff0ca85a0c7b",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C69",
+      "claim": "It is possible to describe sex, age, mice number and mouse strain in about 40 characters of text.",
+      "claim_type": "EXPLICIT",
+      "source": "We do not believe it is a space issue, because it is possible to describe them, including mice number and mouse strain, in about 40 characters of text (e.g. ten C57BL/6 female mice (6-8-weeks old)).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a demonstration based on an example provided.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "02c51323-c299-4577-b1b0-d69337b29057",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C70",
+      "claim": "The apparent contradiction between the finding that female mice are reported more often and previous reports of male bias might be related to the sample size and study design.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the apparent contradiction between this observation and the previous reports might be related to the sample size and study design; our sample size was larger and we surveyed a much broader range of disciplines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for differences between current and previous findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "a51ccb45-860d-4830-9ce2-757f4bd7600f",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C71",
+      "claim": "Previous studies on sex bias included other species such as cat, dog and monkey models, not just rodent models.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, although rodent models (that is, mouse and rat models) accounted for, respectively, 50% and 80% of the papers considered in these other studies (Beery and Zucker, 2011; Taylor et al., 2011), they also included other species, such as cat, dog and monkey models: moreover, these two studies did not explore sex bias by species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology of previous studies cited.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "1a774ccf-911d-45f0-b307-8f67cdc4b29a",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C72",
+      "claim": "Previous studies did not explore sex bias by species.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, although rodent models (that is, mouse and rat models) accounted for, respectively, 50% and 80% of the papers considered in these other studies (Beery and Zucker, 2011; Taylor et al., 2011), they also included other species, such as cat, dog and monkey models: moreover, these two studies did not explore sex bias by species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the methodology of previous studies cited.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "c5c2c0f3-08f0-49eb-a467-b73978942423",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C73",
+      "claim": "Cardiovascular diseases, cancer, diabetes mellitus, lung diseases, infectious diseases, and neurological disorders are among the top 10 causes of death according to the W.H.O.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to identify whether there are general features common on reporting sex and age as experimental variables to any biomedical field, we assessed six main preclinical research topics as defined by their impact on human health (WHO, 2014), including: cardiovascular diseases; cancer; diabetes mellitus; lung diseases; infectious diseases; and neurological disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to WHO, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "838ee7c6-7ce2-4e72-abc9-91bb391244b9",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C74",
+      "claim": "Melanoma is a highly aggressive and notoriously chemoresistant form of cancer, making it a widely used tumor model.",
+      "claim_type": "EXPLICIT",
+      "source": "Melanoma was included for the cancer group since it is a highly aggressive and notoriously chemoresistant form of cancer; making it a widely used tumor model (Herlyn and Fukunaga-Kalabis, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Herlyn and Fukunaga-Kalabis, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "7c984a59-2dce-4ac8-89fe-e0ea02d1665a",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C75",
+      "claim": "In most specific disease cases, there is a similar pattern of reporting as that found for the biomedical fields assessed to which these diseases belong.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results suggest that in most cases there is a similar pattern of reporting as that found for the biomedical fields assessed to which these diseases belong (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from comparing specific disease reporting patterns to broader field patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "c983bb93-2f55-4aa2-bed6-bf4f481c162e",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C76",
+      "claim": "The number of crafted rules was 12 for sex and 18 for age.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of crafted rules was 12 for sex and 18 for age.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the text mining methodology used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "8f8dd45a-66a7-402b-be86-cd9f358531e6",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C77",
+      "claim": "It is highly unlikely for researchers to report key information about animal models that they did not use.",
+      "claim_type": "EXPLICIT",
+      "source": "Since our method focuses on the recognition of age and sex at the mention level per document, we hypothesize that it is highly unlikely for researchers to report key information about animal models that they did not use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis underlying the text mining approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "cd35519b-0d65-403f-8a45-b4e92189ce44",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C78",
+      "claim": "Through manual inspection of 40 randomly selected articles, if there are mentions in text (particularly in the Method section) of specific age and sex (together) these are attributed to the mice used in the animal experiments and no further mentions were reported.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to further support this hypothesis, 40 full-text articles were randomly selected from our corpus and through manual inspection, we concluded that indeed, if there are mentions in text (particularly in the Method section) of specific age and sex (together) these are attributed to the mice used in the animal experiments and no further mentions were reported (Supplementary file 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from manual validation of the text mining approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "489b336c-6203-41bb-a4f2-b88bbd585ba4",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C79",
+      "claim": "There was no disagreement between the manual annotations performed by two biomedical experts.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to create an evaluation dataset, 50 full-text articles were randomly selected from our corpus of study (Supplementary file 3D) and were manually double-annotated for both the age and the sex by the first and fourth authors due to their biomedical expertise. There was no disagreement between the manual annotations performed by two biomedical experts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the inter-annotator agreement in the evaluation process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "2f8355f1-14da-4c7d-8391-a0b764f1f1f6",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C80",
+      "claim": "False-negative results regarding age mentions occurred because the rules are based on syntactical patterns that require a numeric range between specific time units.",
+      "claim_type": "EXPLICIT",
+      "source": "False-negative results regarding age mentions occurred because the rules are based on syntactical patterns that require a numeric range between specific time units, i.e., days, weeks and months.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for a limitation of the text mining system based on its design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "f69a97a2-0d9f-45d0-b6cd-f66550b3f551",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C81",
+      "claim": "False-negative results regarding sex mentions occurred because the rules for sex recognition do not enable the identification of sex through inference, such as when sex-specific proxy elements like pregnancy are mentioned.",
+      "claim_type": "EXPLICIT",
+      "source": "False-negative results regarding sex mentions occurred because the rules for the sex recognition is rather straightforward with a simple dictionary matching (minimal), which, as a consequence, does not enable the identification of the sex through inference, e.g. when sex-specific proxy elements are mentioned, such as pregnancy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for a limitation of the text mining system based on its design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "ffd21c6e-38f1-4275-bc9e-d4e32b732b35",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C82",
+      "claim": "The F-measure of 92% gives enough confidence in using this automated method to assess the incidence of reporting sex and age in biomedical articles.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the F-measure of 92% (Table 1) gives enough confidence in using this automated method to assess the incidence of reporting sex and age in biomedical articles.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an assessment of the reliability of the text mining method based on its performance metrics.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "4bd6c6ae-b45a-4366-a82d-d35f52c02d4a",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C83",
+      "claim": "Seventy journals out of the 628 analyzed covered 30 or more articles of the corpus, which corresponds to 81.05% of papers retrieved.",
+      "claim_type": "EXPLICIT",
+      "source": "Seventy journals out of the 628 analyzed covered 30 or more articles of the corpus (Figure 1\u2014figure supplement 1), which corresponds to 81.05% of papers retrieved.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This presents descriptive statistics about the distribution of articles across journals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "0b702db7-f4be-4592-b848-ceb87544eb02",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C84",
+      "claim": "The analysis for disease groups and subgroups was applied to articles published after 1st January 2001 to avoid misinterpretation due to low number of papers prior to 2001.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2001 the US Institute of Medicine report (Wizemann and Pardue, 2001) concluded that sex matters in diseases and response to therapy; we therefore decided to explore any changes before and after the report by selecting articles between 1994 and 2014. This time span allows us to assess the impact of this report on the reporting of this experimental factor. In order to avoid misinterpretation due to low number of papers prior to 2001, the analysis for groups and subgroups was applied to articles published after 1st January 2001.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains a methodological decision based on data distribution considerations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "766d3e94-6848-4b7c-b8e2-450590e250db",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "claim_id": "C85",
+      "claim": "The 2001 US Institute of Medicine report concluded that sex matters in diseases and response to therapy.",
+      "claim_type": "EXPLICIT",
+      "source": "In 2001 the US Institute of Medicine report (Wizemann and Pardue, 2001) concluded that sex matters in diseases and response to therapy; we therefore decided to explore any changes before and after the report by selecting articles between 1994 and 2014.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Wizemann and Pardue, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "02f4482e-e5ed-467b-a042-a8f9467cff50",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A text mining system using 12 rules for sex and 18 rules for age achieved F-scores of approximately 92% for both variables when evaluated on 50 randomly selected articles with perfect inter-annotator agreement. The system's limitations include false negatives due to syntactic pattern requirements for age and inability to infer sex from proxy elements like pregnancy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C76, C79-C82 collectively demonstrate that the text mining system was rigorously evaluated with appropriate validation methodology. The 92% F-score (C1, C82), perfect inter-annotator agreement (C79), and transparent discussion of limitations (C80, C81) provide strong evidence for the system's reliability and appropriate application to the corpus analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "00033e87-2cd9-4c13-b55b-edc0460ab18c",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study analyzed 15,311 full-text articles from PubMed Central Open Access (February 2015), representing 7.15% of PubMed and 27.85% of PubMed Central mouse experimentation articles, with 50.1% published after 2011. PLOS ONE contributed the most articles (36.41%), and 70 journals covering \u226530 articles represented 81.05% of the corpus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C5 and C83 provide clear descriptive statistics about the corpus composition. These are straightforward data summaries that are internally consistent and appropriately contextualized within the available literature databases.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "9b5ae330-d4bb-411f-8833-864165c5fe35",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Overall reporting of sex and/or age improved from 1994-2014, with missing information dropping from 100% (1994-1995) to about 15% following a slope of approximately -0.045. However, only about 50% of papers published since 2012 reported both sex and age, and approximately one-fifth of all papers (1994-2014) reported neither variable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 describe temporal trends in reporting quality supported by data in Figure 1. The quantitative metrics (slope, percentages) are specific and the plateau effect since 2012 (C8) indicates persistent reporting gaps despite overall improvement.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "fd152573-8670-478f-bf7c-67e6d93e1e5f",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "When sex was reported, female mice were significantly more frequently studied than males (31.84% vs. 23.38%, p<0.001), reaching a plateau of about 33% since 2004-2014. The use of both sexes stratified by sex showed minimal improvement, reaching only about 10% of articles since 2006.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11 present statistically significant findings (C9 includes binomial test with p-value and confidence intervals) and describe temporal patterns. The finding contradicts previous literature assumptions about male bias, which the authors appropriately address in claims C45 and C70-C72.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "f0679056-2ae6-4b83-acb3-aa98d3e0e34e",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Age reporting improved steadily from 1999-2006, exceeding 50% by 2006, but plateaued since 2010 at 65-70% of articles annually.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13 describe clear temporal trends in age reporting with specific quantitative benchmarks. The plateau effect is consistent with the overall pattern of incomplete reporting improvement described in C8.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "36d2f8f5-466b-4a98-99c1-40c13cc724b7",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Reporting quality varies significantly across biomedical fields (p<0.05, two-way ANOVA). Diabetes studies showed the highest reporting of both sex and age (68%), while cancer studies showed the lowest (48%) and worst missing information rates (33% for sex, 37% for age). Neurological disorder studies achieved the best overall reporting.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C18 present statistically significant differences across disease categories with appropriate statistical testing (two-way ANOVA). The specific percentages and comparative findings are supported by Figure 2 data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "e6ab2084-f1d0-41b5-b9b7-dba4f8e839af",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Sex bias patterns vary by research approach: immunology studies preferentially use female mice, while genetics studies tend toward male mice. In physiopathology and therapy, male mice dominate cardiovascular, diabetes, and neurological disorder models, while female mice dominate cancer, lung disease, and infectious disease models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22 describe patterns observed in Figure 3 data across different research approaches and disease categories. The patterns are internally consistent and supported by the two-way ANOVA results showing significant differences (p<0.05) for most subgroups.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "88cc4e6a-d7b4-423c-80cb-8aad55e2b7c6",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The strongest male bias was observed in cardiovascular disease models (2.25:1) and the strongest female bias in infectious disease models (3.54:1). These biases persist: between 2012-2014, approximately 70% of cardiovascular disease articles and 77% of infectious disease articles remained sex-biased.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52 present specific quantitative sex bias ratios and demonstrate persistence of these biases in recent years. The findings are supported by Figure 2b data and are biologically contextualized by claims C53-C57 citing relevant literature.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "3097db57-8e60-43f1-9e00-21f5f5403019",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Diabetes models show context-dependent sex bias: globally male-biased (1.57:1), but strongly female-biased (7.87:1) in immunology studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 demonstrate that sex bias can vary within a single disease category depending on research approach. This is supported by Figures 2b and 3b and illustrates the complexity of reporting patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "a01c7f1c-5565-416e-aae7-196ec767a8b5",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "No correlation was observed between reporting quality (sex or age) and journal impact factor (r\u00b2=6E-06, p=0.984) or h-index (r\u00b2=0.0463, p=0.073) among 70 journals with \u226530 articles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 present correlation analyses with appropriate statistical metrics (Spearman's correlation, p-values) shown in Figure 5. The lack of correlation suggests journal prestige does not predict reporting quality, which is an important negative finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "164cbc77-5211-402e-9f68-4df8a27749ed",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Specific disease examples generally follow the reporting patterns of their broader disease categories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 summarizes findings from Figure 4 comparing specific diseases to their parent categories. This is a reasonable inference supported by the visual data, though the claim acknowledges this is true \"in most cases,\" appropriately noting exceptions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "58d1a1a3-0fc6-4254-ae3e-0a4e4ad74822",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Improvement in sex and age reporting began before the 2010 ARRIVE guidelines publication. A 2012 follow-up study showed journals enforcing ARRIVE still failed to publish sex and age in all cases. The improvements may result from growing recognition of these factors' importance rather than guideline enforcement alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C44 are supported by temporal analysis in Figure 1c showing improvement trends predating ARRIVE (C42) and citation to Baker et al. 2014 (C43). Claim C44 is appropriately presented as speculative (\"may be\") and represents a reasonable interpretation of the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "acc5e135-86d2-4a5a-b05c-61ce4ce2e5dc",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The text mining approach assumes researchers are unlikely to report sex/age information for mice they did not use. Manual inspection of 40 randomly selected articles confirmed that mentions of specific age and sex together in Methods sections correspond to mice actually used, with no extraneous mentions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 describe a key methodological assumption and its validation. The manual inspection of 40 articles (C78) provides empirical support for the assumption stated in C77, strengthening confidence in the document-level annotation approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "8de71270-acb6-4313-bba3-9fb9d1c9ad09",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "This represents the largest analysis of sex and age reporting in mouse-based research to date, though it does not represent the entire biomedical literature because not all journals are in PubMed Central Open Access and some journals only deposit selected articles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 appropriately acknowledge both the study's scope (largest to date, C67) and its limitations (incomplete coverage, C65-C66). This transparent discussion of sampling limitations is methodologically sound.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "74980e79-027e-4e94-9ad2-65b08c130cfd",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The reason for non-reporting of sex and age is unclear since this information is always available to researchers and can be described in approximately 40 characters (e.g., \"ten C57BL/6 female mice (6-8-weeks old)\").",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 present a logical argument against space constraints as an explanation for non-reporting. The concrete example in C69 effectively demonstrates the minimal text required, though the actual reasons for non-reporting remain speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "7098bef5-9f94-468c-950a-e473177a98c8",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The finding that female mice are reported more often than males contradicts previous studies (Beery and Zucker 2011; Taylor et al. 2011) that concluded males are studied more. This discrepancy may relate to differences in sample size, disciplinary breadth, species inclusion (previous studies included cats, dogs, monkeys), and lack of species-specific analysis in prior work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C72 and C45 appropriately contextualize the current findings against prior literature and offer plausible methodological explanations for the discrepancy. The authors correctly identify that previous studies had different scope and did not analyze by species, which could explain different conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "709276e8-0f99-452b-8965-c906b32e00d8",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Text mining can cost-effectively assess reporting of experimental factors, and identifying imbalances directly contributes to comparability of experimental work and reproducibility of findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 present reasonable inferences about the utility of the demonstrated text mining approach. The study successfully demonstrates large-scale assessment capability (C2), and the logical connection to reproducibility is well-established in the broader literature context (C25-C27).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "a6089e17-69dc-44b4-ab4d-3525aabc00d9",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The analysis of disease groups and subgroups was restricted to articles published after January 1, 2001 to avoid misinterpretation due to low paper counts before 2001. This date corresponds to the US Institute of Medicine report concluding that sex matters in diseases and treatment response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 explain a methodological decision with appropriate justification. The 2001 cutoff is both practically justified (avoiding low-n bias) and conceptually meaningful (aligning with an important policy milestone), as supported by citation to Wizemann and Pardue 2001.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The manuscript provides extensive background context from prior literature on: translational failure rates (C25), costs of irreproducibility (C26), biological importance of sex and age (C27-C35), guideline compliance issues (C36), mouse model advantages (C37-C41), disease-specific sex differences (C53-C57), NIH initiatives (C60), journal policies (C63-C64), and disease selection rationale (C73-C74).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C41, C53-C57, C60, C63-C64, C73-C74 are all supported by appropriate citations to peer-reviewed literature or established biological knowledge. These claims provide necessary context for interpreting the study's findings but are not original results of this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    },
+    {
+      "id": "897ab33e-3c36-471a-95cd-6d921da86770",
+      "content_id": "9be5b9a8-e6c6-4a28-b0e8-9aff747648f9",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Female mice offer practical advantages over males: they are cheaper to house, less aggressive to each other and experimenters, and smaller (requiring less drug per weight).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C48 present established practical knowledge about mouse husbandry that helps explain the observed female bias (C9-C10). While not cited, these are well-known facts in the research community and provide plausible explanations for the observed patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:57:12.622313Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cfddefe7-70a5-4250-bba4-cd320d171f17",
+      "result_id": "02f4482e-e5ed-467b-a042-a8f9467cff50"
+    },
+    {
+      "claim_id": "c983bb93-2f55-4aa2-bed6-bf4f481c162e",
+      "result_id": "02f4482e-e5ed-467b-a042-a8f9467cff50"
+    },
+    {
+      "claim_id": "489b336c-6203-41bb-a4f2-b88bbd585ba4",
+      "result_id": "02f4482e-e5ed-467b-a042-a8f9467cff50"
+    },
+    {
+      "claim_id": "2f8355f1-14da-4c7d-8391-a0b764f1f1f6",
+      "result_id": "02f4482e-e5ed-467b-a042-a8f9467cff50"
+    },
+    {
+      "claim_id": "f69a97a2-0d9f-45d0-b6cd-f66550b3f551",
+      "result_id": "02f4482e-e5ed-467b-a042-a8f9467cff50"
+    },
+    {
+      "claim_id": "ffd21c6e-38f1-4275-bc9e-d4e32b732b35",
+      "result_id": "02f4482e-e5ed-467b-a042-a8f9467cff50"
+    },
+    {
+      "claim_id": "9a0638b8-97a2-4418-8802-f78a7c173ca9",
+      "result_id": "00033e87-2cd9-4c13-b55b-edc0460ab18c"
+    },
+    {
+      "claim_id": "45c9e663-5b66-4068-8724-1a58c6f4938d",
+      "result_id": "00033e87-2cd9-4c13-b55b-edc0460ab18c"
+    },
+    {
+      "claim_id": "a7731050-80f3-433e-834a-9291c5f2acca",
+      "result_id": "00033e87-2cd9-4c13-b55b-edc0460ab18c"
+    },
+    {
+      "claim_id": "290cb137-3084-42fc-af91-df9c9a905f14",
+      "result_id": "00033e87-2cd9-4c13-b55b-edc0460ab18c"
+    },
+    {
+      "claim_id": "4bd6c6ae-b45a-4366-a82d-d35f52c02d4a",
+      "result_id": "00033e87-2cd9-4c13-b55b-edc0460ab18c"
+    },
+    {
+      "claim_id": "4f25e811-8100-4e63-8420-54e0e507d30d",
+      "result_id": "9b5ae330-d4bb-411f-8833-864165c5fe35"
+    },
+    {
+      "claim_id": "9b6ca7a0-e5db-49a5-94f1-a630f6bb9337",
+      "result_id": "9b5ae330-d4bb-411f-8833-864165c5fe35"
+    },
+    {
+      "claim_id": "95a6df38-a446-455e-ae99-edcd03346f62",
+      "result_id": "9b5ae330-d4bb-411f-8833-864165c5fe35"
+    },
+    {
+      "claim_id": "d626ea9e-ffc9-4879-acd4-7a4325b95fcb",
+      "result_id": "fd152573-8670-478f-bf7c-67e6d93e1e5f"
+    },
+    {
+      "claim_id": "b07286c3-4717-4303-8322-121d75ed021c",
+      "result_id": "fd152573-8670-478f-bf7c-67e6d93e1e5f"
+    },
+    {
+      "claim_id": "25cd3097-6713-47c7-9b28-b7c87b8529f0",
+      "result_id": "fd152573-8670-478f-bf7c-67e6d93e1e5f"
+    },
+    {
+      "claim_id": "ffe520ad-ddbc-41d0-b694-ac82e93d4296",
+      "result_id": "f0679056-2ae6-4b83-acb3-aa98d3e0e34e"
+    },
+    {
+      "claim_id": "08d665ad-76e7-4c6c-9aba-27d8d60e306a",
+      "result_id": "f0679056-2ae6-4b83-acb3-aa98d3e0e34e"
+    },
+    {
+      "claim_id": "8f964583-c454-459f-bd92-1c91cda06ec4",
+      "result_id": "36d2f8f5-466b-4a98-99c1-40c13cc724b7"
+    },
+    {
+      "claim_id": "fb17ad0c-70d5-45e8-b8d2-ad1da67c8b28",
+      "result_id": "36d2f8f5-466b-4a98-99c1-40c13cc724b7"
+    },
+    {
+      "claim_id": "f3ace5f6-acf7-49b0-9347-0b724f9d5c5e",
+      "result_id": "36d2f8f5-466b-4a98-99c1-40c13cc724b7"
+    },
+    {
+      "claim_id": "fa767255-ae30-45dd-9a65-7317397d9e13",
+      "result_id": "36d2f8f5-466b-4a98-99c1-40c13cc724b7"
+    },
+    {
+      "claim_id": "a8a58733-ad9e-4fb2-b187-df04bc1875f0",
+      "result_id": "36d2f8f5-466b-4a98-99c1-40c13cc724b7"
+    },
+    {
+      "claim_id": "21efd48e-ee4f-4304-a21a-ac71eefdaf95",
+      "result_id": "e6ab2084-f1d0-41b5-b9b7-dba4f8e839af"
+    },
+    {
+      "claim_id": "58488534-ed3f-4681-bcab-7c9c889e1786",
+      "result_id": "e6ab2084-f1d0-41b5-b9b7-dba4f8e839af"
+    },
+    {
+      "claim_id": "0084c3b6-ae4c-4cbf-aced-688efa76c853",
+      "result_id": "e6ab2084-f1d0-41b5-b9b7-dba4f8e839af"
+    },
+    {
+      "claim_id": "f98efb6f-1154-420b-9d01-369206270dfa",
+      "result_id": "e6ab2084-f1d0-41b5-b9b7-dba4f8e839af"
+    },
+    {
+      "claim_id": "8c5ca74e-500a-4d58-90e7-c5b57ac0030b",
+      "result_id": "88cc4e6a-d7b4-423c-80cb-8aad55e2b7c6"
+    },
+    {
+      "claim_id": "e20de72e-9f04-4501-afb9-b94dcee70a08",
+      "result_id": "88cc4e6a-d7b4-423c-80cb-8aad55e2b7c6"
+    },
+    {
+      "claim_id": "da7a1d94-ae8a-403f-9408-2f13733c9720",
+      "result_id": "88cc4e6a-d7b4-423c-80cb-8aad55e2b7c6"
+    },
+    {
+      "claim_id": "a42494e1-2a2d-4bd4-91cc-03aef3eea207",
+      "result_id": "88cc4e6a-d7b4-423c-80cb-8aad55e2b7c6"
+    },
+    {
+      "claim_id": "2119eba8-5279-4748-9397-bb8af4e63dce",
+      "result_id": "3097db57-8e60-43f1-9e00-21f5f5403019"
+    },
+    {
+      "claim_id": "78389a14-3ee2-4894-a6d7-29c10df4c6a2",
+      "result_id": "3097db57-8e60-43f1-9e00-21f5f5403019"
+    },
+    {
+      "claim_id": "1bddaf84-4363-4e43-aee6-1aa846207e60",
+      "result_id": "a01c7f1c-5565-416e-aae7-196ec767a8b5"
+    },
+    {
+      "claim_id": "0f729004-04c4-4a99-8fa1-2121b6784a3d",
+      "result_id": "a01c7f1c-5565-416e-aae7-196ec767a8b5"
+    },
+    {
+      "claim_id": "7c984a59-2dce-4ac8-89fe-e0ea02d1665a",
+      "result_id": "164cbc77-5211-402e-9f68-4df8a27749ed"
+    },
+    {
+      "claim_id": "661c6e46-14d8-418e-8472-437fcec4eaaf",
+      "result_id": "58d1a1a3-0fc6-4254-ae3e-0a4e4ad74822"
+    },
+    {
+      "claim_id": "881a6e6a-7809-4967-bab3-987532457383",
+      "result_id": "58d1a1a3-0fc6-4254-ae3e-0a4e4ad74822"
+    },
+    {
+      "claim_id": "2dd5ea63-1357-41a2-bcaf-61fdfc634000",
+      "result_id": "58d1a1a3-0fc6-4254-ae3e-0a4e4ad74822"
+    },
+    {
+      "claim_id": "8f8dd45a-66a7-402b-be86-cd9f358531e6",
+      "result_id": "acc5e135-86d2-4a5a-b05c-61ce4ce2e5dc"
+    },
+    {
+      "claim_id": "cd35519b-0d65-403f-8a45-b4e92189ce44",
+      "result_id": "acc5e135-86d2-4a5a-b05c-61ce4ce2e5dc"
+    },
+    {
+      "claim_id": "572f4328-e57e-4bf9-b4db-96b02898d0e3",
+      "result_id": "8de71270-acb6-4313-bba3-9fb9d1c9ad09"
+    },
+    {
+      "claim_id": "b011947b-f8fa-4c3c-a971-45511765fa97",
+      "result_id": "8de71270-acb6-4313-bba3-9fb9d1c9ad09"
+    },
+    {
+      "claim_id": "74aedd38-1900-4ce3-9e11-7f709659e3cc",
+      "result_id": "8de71270-acb6-4313-bba3-9fb9d1c9ad09"
+    },
+    {
+      "claim_id": "a6601dcc-e977-4ad9-85c8-bd81624ce245",
+      "result_id": "74980e79-027e-4e94-9ad2-65b08c130cfd"
+    },
+    {
+      "claim_id": "0fb092d4-0408-4bc4-aac5-ff0ca85a0c7b",
+      "result_id": "74980e79-027e-4e94-9ad2-65b08c130cfd"
+    },
+    {
+      "claim_id": "02c51323-c299-4577-b1b0-d69337b29057",
+      "result_id": "7098bef5-9f94-468c-950a-e473177a98c8"
+    },
+    {
+      "claim_id": "a51ccb45-860d-4830-9ce2-757f4bd7600f",
+      "result_id": "7098bef5-9f94-468c-950a-e473177a98c8"
+    },
+    {
+      "claim_id": "1a774ccf-911d-45f0-b307-8f67cdc4b29a",
+      "result_id": "7098bef5-9f94-468c-950a-e473177a98c8"
+    },
+    {
+      "claim_id": "4e29d892-d49b-4d39-b51b-11435c6a254b",
+      "result_id": "7098bef5-9f94-468c-950a-e473177a98c8"
+    },
+    {
+      "claim_id": "f458c744-2c3f-4ee2-9af9-1d4c3fa541b8",
+      "result_id": "709276e8-0f99-452b-8965-c906b32e00d8"
+    },
+    {
+      "claim_id": "97469f8f-697c-4b55-a302-5850ea0daa11",
+      "result_id": "709276e8-0f99-452b-8965-c906b32e00d8"
+    },
+    {
+      "claim_id": "0b702db7-f4be-4592-b848-ceb87544eb02",
+      "result_id": "a6089e17-69dc-44b4-ab4d-3525aabc00d9"
+    },
+    {
+      "claim_id": "766d3e94-6848-4b7c-b8e2-450590e250db",
+      "result_id": "a6089e17-69dc-44b4-ab4d-3525aabc00d9"
+    },
+    {
+      "claim_id": "c279c10e-be40-474b-a715-2ba472452d5f",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "00677827-0d4a-41db-a6ef-a5ffcac3a110",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "2750224f-d883-4081-b8cf-1d08fd7e5ebd",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "e3e169d6-7e6a-4907-aafd-b6a5058b60b7",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "0a1b9434-e33d-47b8-a162-a88e381b3a8a",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "5cbcb91a-ed0a-4314-ba28-50590ad7760a",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "2712470b-4f86-4a5b-8c11-daf54036049e",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "cdb0817d-c69a-4b92-bf9e-c68beb6e9a89",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "8f528dae-e994-4294-9c19-a8cafc18276b",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "10483452-4013-426d-9385-687ea959ec56",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "3ab2c68a-4ebe-46f5-a78d-1b4b29c5cad1",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "ba1d3445-5e69-432d-92a4-9b73bee32c7b",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "d7d27672-6258-4bd1-9660-82323d5035fe",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "6a1554ef-88f2-4a90-b908-7017caf2af74",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "b323f653-e098-4b73-807f-1bb4325ac915",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "df858b9a-5f3c-498d-8dd7-f11e1ca3ab64",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "bd7d1965-8d36-41d0-9cd9-36b47f085e40",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "ec3df1ac-fefb-42b7-84a7-f9a0aae97cad",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "eea50152-c3bf-475b-9fd2-e045474493ce",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "4517b0d7-74df-4996-ab3a-3f9da5b88311",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "e65dfb45-1699-4913-a891-2f3305daa414",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "4783f2af-e255-4a25-89ff-e1d8f8da0468",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "8bb5488f-8449-4f5b-82e4-6a2d673145cc",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "6232ff2d-515e-43f6-b90a-4765f52f075b",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "c4319673-e685-4c66-8265-6f7830910bb5",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "c5c2c0f3-08f0-49eb-a467-b73978942423",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "838ee7c6-7ce2-4e72-abc9-91bb391244b9",
+      "result_id": "e3f29340-d7bd-40d4-8d5c-946d8dc717ed"
+    },
+    {
+      "claim_id": "ef34d83a-409a-4b52-bb3f-9929ef2bccdf",
+      "result_id": "897ab33e-3c36-471a-95cd-6d921da86770"
+    },
+    {
+      "claim_id": "cf532b00-41f4-4fd1-8d49-c3dc9073324c",
+      "result_id": "897ab33e-3c36-471a-95cd-6d921da86770"
+    },
+    {
+      "claim_id": "39ffe041-07e1-4cd2-94b9-e9df26f87e17",
+      "result_id": "897ab33e-3c36-471a-95cd-6d921da86770"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,213 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "NPE efficiently recapitulates gap-directed, bidirectional MMR that is dependent on MutS\u03b1/\u03b2 and MutL\u03b1/\u03b2/\u03b3. DNA synthesis at the gap site precedes mismatch correction, with gap filling completed within 30 seconds while MMR progresses over ~30 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 and C90-C92 are well-supported by experimental data in Figure 1, showing efficient MMR in NPE with appropriate controls (depletion of MutS and MutL complexes abolishes repair). The kinetic data clearly demonstrates temporal separation between gap filling and mismatch correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C57"
+    ],
+    "result": "Strand information derived from a gap is 'memorized' on DNA to induce subsequent MMR even after gap sealing. In MutS-depleted NPE, ~40% MMR was observed at 2 min when only ~14% strand discontinuities remained, demonstrating strand memory exceeds physical gap presence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 and C57 are supported by the stepwise incubation experiments in Figure 2 and Figure 7, showing MMR efficiency exceeding remaining strand discontinuities. The experimental design appropriately separates gap filling from mismatch recognition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "DNA-bound PCNA induces strand-specific MMR in the absence of strand discontinuities. Directional loading of 4-10 hPCNA trimers onto DNA via in vitro PCNA-loading reaction directed ~60-75% strand-specific MMR in NPE, dependent on MutS\u03b1/\u03b2 and MutL\u03b1/\u03b2/\u03b3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C40-C49 are strongly supported by Figures 3 and 4, demonstrating that directionally loaded PCNA can direct strand-specific MMR without strand discontinuities. Controls show requirement for both PCNA and RFC, and dependence on MutS and MutL complexes. The orientation-specific repair (A-nick vs C-nick) provides compelling evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "PCNA is removed from DNA through an active Rfc3-dependent unloading process. In MutS-depleted NPE, hPCNA was quickly unloaded and MMR capability dropped to ~10% at 5 min, while in MutL-depleted NPE (containing MutS\u03b1/\u03b2), >1 PCNA trimer remained at 30 min with ~20% mismatches still repairable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 are supported by Figures 5 and 6, showing differential PCNA retention in presence vs absence of MutS complexes. The correlation between PCNA retention and MMR capability is well-demonstrated. However, the specific Rfc3-containing complex responsible could not be identified due to antibody limitations (acknowledged by authors).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C60",
+      "C61",
+      "C62",
+      "C58",
+      "C59"
+    ],
+    "result": "MutS\u03b1/\u03b2 extends the temporal window for strand-specific MMR by inhibiting PCNA unloading. The half-life of strand memory is ~2 min without MutS\u03b1/\u03b2 but ~40 min with MutS\u03b1/\u03b2 present, with >60% mismatches repairable at 10 min and ~35% at 30 min in MutL-depleted NPE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C58-C62 are supported by Figure 7 and Table 1, showing dramatic extension of strand memory half-life from ~2 min to ~40 min in presence of MutS\u03b1/\u03b2. The exponential decay fitting is appropriate (R\u00b2 > 0.8) and the experimental design properly controls for gap filling kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The PIP motif in MutS\u03b1 is required for inhibition of PCNA unloading and largely responsible for strand memory retention. xMutS\u03b1WT restored strand memory with t1/2=25.5 min, while xMutS\u03b1PIP showed only modest restoration (t1/2=12.5 min). xMutS\u03b1\u0394N also partially restored strand memory (t1/2=12.3 min), indicating a PIP-independent mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C75 are supported by Figures 8 and 9 and Table 2. The mutant analysis appropriately demonstrates PIP motif requirement while revealing PIP-independent contribution. Controls show mutants retain mismatch binding and gap-directed MMR activity. Surface plasmon resonance data (Figure 8 supplement) confirms mismatch binding is not compromised.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C76",
+      "C77",
+      "C79",
+      "C85",
+      "C86",
+      "C89",
+      "C93",
+      "C96",
+      "C100"
+    ],
+    "result": "Background knowledge claims about MMR mechanisms, PCNA function, and prior literature findings establish the context for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C6-C28, C76-C77, C79, C85-C86, C89, C93, C96, and C100 are appropriately cited background knowledge from established literature. These provide necessary context but are not novel findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "PIP-deficient MutS\u03b1 complexes are proficient in simple gap-directed MMR reactions but the PIP motif becomes important when stepwise incubation (mimicking transient arrest) is involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C81-C83 are supported by Figure 8 supplement 1 and Figure 9, showing context-dependent importance of PIP motif. This reconciles apparent discrepancy with prior literature and explains when PIP function is critical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C80",
+      "C84",
+      "C87",
+      "C88",
+      "C94",
+      "C95",
+      "C97",
+      "C98",
+      "C99",
+      "C101"
+    ],
+    "result": "Speculative mechanistic proposals about how MutS\u03b1 inhibits PCNA unloading, potential roles of MutS\u03b2, and the two-mode strand memory model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78, C80, C84, C87-C88, C94-C95, C97-C99, and C101 are explicitly speculative proposals for future investigation. While reasonable hypotheses based on the data, they lack direct experimental support in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "GenBank accession numbers for Xenopus msh2, msh6, and mlh1 mRNA sequences are provided.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is a straightforward data deposition statement that is verifiable through GenBank.",
+    "result_type": "MINOR"
+  }
+]

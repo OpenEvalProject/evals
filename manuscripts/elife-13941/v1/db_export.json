@@ -1,0 +1,2200 @@
+{
+  "submission": {
+    "id": "bb7c7a9e-fb4d-4f6e-94bb-dbb9fc3c2ab7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:29:51.047152Z",
+    "updated_at": "2025-11-29T23:29:51.047152Z"
+  },
+  "content": [
+    {
+      "id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "submission_id": "bb7c7a9e-fb4d-4f6e-94bb-dbb9fc3c2ab7",
+      "content_type": "manuscript",
+      "content_text": "# The structure of the core NuRD repression complex provides insights into its interaction with chromatin\n\n## Authors\n\n- Christopher J Millard<sup>1</sup> ([ORCID: 0000-0002-1012-0829](https://orcid.org/0000-0002-1012-0829))\n- Niranjan Varma<sup>1</sup>\n- Almutasem Saleh<sup>1</sup> ([ORCID: 0000-0002-0156-4508](https://orcid.org/0000-0002-0156-4508))\n- Kyle Morris<sup>2</sup>\n- Peter J Watson<sup>1</sup>\n- Andrew R Bottrill<sup>3</sup> ([ORCID: 0000-0002-5182-3643](https://orcid.org/0000-0002-5182-3643))\n- Louise Fairall<sup>1</sup>\n- Corinne J Smith<sup>2</sup>\n- John WR Schwabe<sup>1</sup> ([ORCID: 0000-0003-2865-4383](https://orcid.org/0000-0003-2865-4383)) \u2020\n\n### Affiliations\n\n1. Henry Wellcome Laboratories of Structural Biology, Department of Molecular and Cell Biology University of Leicester Leicester United Kingdom\n2. School of Life Sciences University of Warwick Coventry United Kingdom\n3. Protein and Nucleic Acid Chemistry Laboratory, Core Biotechnology Services University of Leicester Leicester United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe NuRD complex is a multi-protein transcriptional corepressor that couples histone deacetylase and ATP-dependent chromatin remodelling activities. The complex regulates the higher-order structure of chromatin, and has important roles in the regulation of gene expression, DNA damage repair and cell differentiation. HDACs 1 and 2 are recruited by the MTA1 corepressor to form the catalytic core of the complex. The histone chaperone protein RBBP4, has previously been shown to bind to the carboxy-terminal tail of MTA1. We show that MTA1 recruits a second copy of RBBP4. The crystal structure reveals an extensive interface between MTA1 and RBBP4. An EM structure, supported by SAXS and crosslinking, reveals the architecture of the dimeric HDAC1:MTA1:RBBP4 assembly which forms the core of the NuRD complex. We find evidence that in this complex RBBP4 mediates interaction with histone H3 tails, but not histone H4, suggesting a mechanism for recruitment of the NuRD complex to chromatin.\n\n## Introduction\n\nThe nucleosome remodelling and deacetylase (NuRD) complex is one of at least five corepressor complexes that recruits and activates class I histone deacetylase (HDACs) enzymes and directs their activity to chromatin (Bantscheff et al., 2011; Guenther et al., 2000; Humphrey et al., 2001; Itoh et al., 2015; Kelly and Cowley, 2013; Laherty et al., 1997; Oberoi et al., 2011; Vermaak et al., 1999; Watson et al., 2012; Wen et al., 2000; Xue et al., 1998; Zhang et al., 1999). The NuRD complex plays a major role in the regulation of gene expression as well as being involved in chromatin organization, DNA damage repair, and genomic stability (Denslow and Wade, 2007; Lai and Wade, 2011). The NuRD complex is composed of six proteins, each with several isoforms: HDAC1/2, MTA1/2/3, RBBP4/7, P66\u03b1/\u03b2, MBD2/3, and CHD3/4 (Allen et al., 2013). The complex is special in its ability to exhibit dual enzymatic functionality through its HDAC (protein deacetylation) and ATPase (chromatin remodelling) domains.\n\nHistone Deacetylases (HDACs) are important regulators of transcription that are involved in silencing genes and/or priming them for successive rounds of transcription (Micelli and Rastelli, 2015; Verdin and Ott, 2014; Wang et al., 2009). HDACs act by removing the acetyl groups from modified lysine residues on histone tails and other non-histone proteins. These enzymes have been shown to be overexpressed in various cancer tissues and several inhibitors against these enzymes are currently used in the clinic as anti-cancer therapeutics (Falkenberg and Johnstone, 2014; Marks and Xu, 2009).\n\nMetastasis-associated protein 1 (MTA1) (and its closely related homologues MTA2 and 3) are up-regulated in various cancer tissues (Fujita et al., 2003; Li et al., 2012; Sen et al., 2014; Toh et al., 1994). They serve as scaffold proteins for the assembly of the NuRD complex. The amino-terminal region contains four established domains: an amino-terminal BAH domain, followed by ELM2 and SANT domains, and a GATA-like zinc finger domain towards the centre of the protein (Manavathi and Kumar, 2007; Millard et al., 2014). The ELM2 domain has been shown by X-ray crystallography to mediate dimerization of the complex and, in conjunction with the SANT domain, recruits HDAC1 & 2 (Millard et al., 2013). The structure and function of the MTA-BAH and zinc finger domains remain to be determined. The carboxy-termini of the MTA proteins are much more diverse and structure predictions suggest that much of the protein is intrinsically disordered. The exception is at the very carboxy-terminus of MTA1 and MTA2 where a short helix has been shown to mediate interaction with RBBP4/7 (Alqarni et al., 2014). A binding site for CHD4 has also been identified in this region, but has not been structurally characterised (Nair et al., 2013).\n\nRBBP4 and RBBP7 are homologous (92% identical) histone binding proteins (also known as RbAp48 and RbAp46) that have been shown to be core components of the NuRD complex. These proteins are unusual in that they are present in multiple complexes including other class I HDAC corepressors such as the Sin3A and PRC2 complexes (Ciferri et al., 2012; Kuzmichev, 2002; Zhang et al., 1997). These proteins have also been reported to have roles in nucleosome assembly: RBBP4, along with sNASP and Asf1 forms a multi chaperone complex whose function is to maintain a supply of newly synthesized histone H3 and H4 proteins under replicative stress (Groth et al., 2005). RBBP4 has also been found to be a subunit of the chromatin-assembly factor-1 (CAF-1) complex whose function is to initiate nucleosome assembly by assembling histones H3 and H4 onto newly synthesized DNA (Parthun et al., 1996; Verreault et al., 1996). In addition, RBBP7 has been found to be an essential subunit of the HAT1 histone-acetyltransferase complex, which acetylates newly synthesized histone proteins (Verreault et al., 1998). RBBP4 and RBBP7 have been shown to interact directly with histone H3 and H4 tails through two distinct binding sites and therefore have the potential to act as chromatin recruitment modules (Murzina et al., 2008; Nowak et al., 2011; Schmitges et al., 2011; Song et al., 2008; Zhang et al., 2013).\n\nRBBP4 and RBBP7 are WD40 domain proteins with a characteristic seven bladed \u03b2-propeller structure (Xu and Min, 2011). RBBP4/7 interacts with histone H3 through a binding site on the \u2018top\u2019 face of the protein (Schmitges et al., 2011). A particular feature of the RBBP4/7 WD40 domain is an amino-terminal helix of 30 residues that forms an extension to the \u03b2-propeller domain. A groove that is formed adjacent to this helix mediates interaction with the amino-terminus of histone H4 (Murzina et al., 2008). Interestingly, the extreme carboxy-terminus of MTA1 (residues 671\u2013690) has been shown to interact with RBBP4/7 in this groove, making very similar contacts to those made by histone H4 (Alqarni et al., 2014).\n\nIn this study, we have identified a second RBBP4 recruitment site within MTA1 that is positioned near the centre of the corepressor. This site shows some sequence homology to the previously characterised carboxy-terminal recruitment site, but is considerably more extensive. We show that both sites within the MTA1 monomer are capable of independently recruiting RBBP4 proteins such that the HDAC1:MTA1 dimer recruits four molecules of RBBP4 to the NuRD complex. The crystal structure of this central recruitment site reveals an extensive interface that requires some structural rearrangement within RBBP4. Small angle X-ray scattering (SAXS) and single-particle negative-stain electron microscopy (EM) reveal the architecture of the core NuRD complex. RBBP4 proteins are tethered to the HDAC1 dimer by MTA1 forming an elongated zig-zag conformation. We show that when in complex with MTA1, RBBP4 is able to interact with histone H3, but not histone H4 suggesting a mechanism for recruitment of the NuRD complex to chromatin.\n\n## Results\n\n### The MTA1 dimer recruits four RBBP4 subunits to the NuRD complex\n\nDuring purifications of various HDAC1:MTA1 complexes expressed in mammalian cells, we observed an endogenous protein of c. 50kDa co-purifying with these complexes. Peptide mass spectrometry identified this protein as being the WD40 protein RBBP4 and/or RBBP7. The interaction between RBBP4/7 and the carboxy-terminus of MTA1 (residues 670\u2013691) is well characterised and an atomic resolution structure of a 22 residue MTA1 peptide bound to RBBP4 has been previously solved by X-ray crystallography (Alqarni et al., 2014). However, we were intrigued to find that RBBP4/7 was recruited to constructs that lacked this well-characterised interaction domain. This appears to fit with previous findings that indicated that RBBP4/7 may interact with a region containing the MTA1 zinc finger domain and adjacent sequences (Roche et al., 2008).\n\nThese findings suggested that two regions of MTA1 are able to mediate interaction with RBBP4. What remained unclear was whether these two regions collaborate to bind to a single RBBP4 protein or whether there are two separate binding sites that result in two RBBP4 proteins binding to MTA1.\n\nTo define the biologically relevant regions of MTA1 that recruit RBBP4/7, various fragments of MTA1, and full-length HDAC1, were co-transfected into mammalian cells (Figures 1a and 1b). These complexes were purified utilising a FLAG tag on MTA1 and we examined the apparent stoichiometry for the recruitment of endogenous RBBP4/7 to these complexes using gel densitometry (Figure 1c). Importantly, the MTA1-B construct spanning residues 162\u2013546 appears to pull down a stoichiometric 1:1 ratio of HDAC1:RBBP4/7 suggesting that this region is sufficient to form a bona fide interface with RBBP4/7. Interesting a construct spanning residues 162\u2013715 (MTA1-C) pulls down a supra-stoichiometric ratio of 1:1.5 of HDAC1:RBBP4/7. This implies that there may be two RBBP4/7 proteins associated with MTA1 (Figure 1c).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/13941/elife-13941-fig1-v1.jpg)\n\n**Figure 1.:** (a) Schematic representation of the domain structure of MTA1, with the R1 and R2 RBBP4 recruitment domains shown in purple. A summary of fragments used in the interaction studies is shown below. (b) MTA1-B and MTA1-C co-purify with endogenous RBBP4/7, as identified by mass spectrometry, in a stoichiometric and a supra-stoichiometric ratio respectively. (c) The ratio of endogenous RBBP4/7 to co-transfected HDAC1 is quantified from the SDS-PAGE gel by densitometry. (d) and (e) Co-expression of the MTA1-D:RBBP4 and MTA1-R1:RBBP4 complexes. (f) and (g) Co-expressed MTA1-D:RBBP4 and MTA1-R1:RBBP4 are shown to form complexes of 1:2 and 1:1 stoichiometry, respectively, as determined by size exclusion chromatography coupled to multi-angle light scattering (MALS). See Figure 1\u2014figure supplement 1 for information about expression, purification and crystallisation.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13941/elife-13941-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) SDS-PAGE gel showing purification of the co-transfected MTA1-D (390\u2013715):RBBP4 complex by gel filtration. Peak elution of the complex is in lane 9. (b) and (c) SDS-PAGE gel and Superdex S200 gel filtration profile of the co-transfected MTA1-R1 (464\u2013546):RBBP4 complex. Peak elution of the complex is in lane 6. (d) Crystals of the MTA1-R1:RBBP4 complex. (e) Electron density (2Fo-Fc) contoured at 1\u03c3 showing the interface between MTA1-R1 domain (blue) and RBBP4 (green).\n\nTo confirm the stoichiometry of the complex we co-expressed RBBP4 with different length MTA1 fragments extending from the zinc finger domain. The resulting complexes were purified by gel filtration and analysed with Multi-Angle Light Scattering (MALS) to determine the overall molecular weight. The longer fragment of MTA1-D (residues 390\u2013715) in complex with RBBP4 was shown to have a molecular weight of 130\u2009kDa (Figures 1d and 1f; see also Figure 1\u2014figure supplement 1). This closely fits with the predicted molecular weight (131\u2009kDa) of a 1:2 stoichiometry of one MTA1 fragment bound to two RBBP4 proteins. The shorter MTA1-R1 fragment (residues 464\u2013546) in complex with RBBP4 was determined to have a molecular weight of 54\u2009kDa which is close to the predicted molecular weight of 58\u2009kDa for the 1:1 complex (Figures 1e and 1g; see also Figure 1\u2014figure supplement 1).\n\nIt is clear that these experiments support a model in which two RBBP4 proteins are recruited by MTA1 to the NuRD complex. Since there are two recruitment sites for RBBP4 we have called these R1 (residues 464\u2013546) and R2 (residues 670\u2013691).\n\n### An extensive interface is formed between RBBP4 and the R1 domain of MTA1\n\nTo understand the nature of the interface between the R1 domain from MTA1 and RBBP4 we co-expressed and purified a complex between MTA1-R1 (residues 464\u2013546) and full-length RBBP4. The complex was affinity purified on Flag resin using an amino-terminal tag on MTA1 before being cleaved from the resin and gel filtrated. The complex was concentrated to 10 mg/ml and small crystals were obtained. X-ray diffraction data were collected to 3.2\u2009\u00c5 and the structure solved by molecular replacement using the structure of RBBP4 (pdb code: 4PC0). The density for MTA1 was remarkably clear and the structure of the complex was built through multiple rounds of refinement (Figure 1\u2014figure supplement 1).\n\nThe seven bladed beta-propeller fold of RBBP4 is largely unchanged by the binding of MTA1-R1. The first 10 residues of RBBP4 are unstructured, and similar to previous structures of RBBP4/7, the 14 carboxy-terminal residues are not observed. A notable difference in this structure is the stabilisation of a loop that supports binding of MTA1 (see below).\n\nThe interface between MTA1-R1 and RBBP4 is extensive with a buried surface area of 2,837 \u00c52 (Figures 2a and 2b, Table 1 and Video 1). MTA1 interacts on the side of the WD40 beta-propeller domain making interactions in three adjacent grooves. Two of these grooves lie on either side of the long amino-terminal helix that forms an extension to the WD40 domain. The contacts made by MTA1 on the surface of RBBP4 can be rationalised into three regions hereafter termed interaction regions A, B and C (Figure 2c). The residues involved in all three interaction regions are conserved in both MTA2 and MTA3 (Figure 2a).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/13941/elife-13941-fig2-v1.jpg)\n\n**Figure 2.:** (a) Schematic representation of the domain structure of MTA1. The secondary structure of MTA1-R1 (464\u2013546), corresponding to the R1 domain, is shown. Those residues of MTA1 that form an interface with RBBP4 in the crystal structure are indicated. Below is the sequence alignment of the R1 domains from MTA1, 2 and 3. Residues coloured red are identical and residues coloured orange are conserved. (b) Cartoon representation of the MTA1-R1:RBBP4 complex with MTA1 in purple and RBBP4 in grey. (c) The structure is rotated by 90\u00b0 and the surface of RBBP4 is shown. The dotted white line indicates the part of MTA1 that is disordered. The 5G loop in RBBP4 is shown as sticks with grey coloured carbon atoms. MTA1-R1 is rationalised into three interaction regions A, B and C and these are shown in more detail in (d), (e) and (g). MTA1 is shown as a cartoon and RBBP4 as a grey surface. (f) Electrostatic surface view of RBBP4 with MTA1 shown in yellow. See Video 1 for a 3D view of the MTA1-R1:RBBP4 complex and Table 1 for the crystallographic data collection and refinement statistics.\n\n![Video 1.](https://cdn.elifesciences.org/articles/13941/elife-13941-media1.mp4.jpg)\n\n**Video 1.:** RBBP4 is shown as surface (grey) and MTA1 as cartoon (purple). This video relates to Figure 2.\n\n**Table 1.**\n Crystallographic data collection and refinement statistics.\n\n\n<table>\n  <tbody>\n    <tr>\n      <td>Data Collection</td>\n      <td>MTA1-R1:RBBP4 complex</td>\n    </tr>\n    <tr>\n      <td>Beamline</td>\n      <td>Diamond I24</td>\n    </tr>\n    <tr>\n      <td>Space group</td>\n      <td>P1 21 1</td>\n    </tr>\n    <tr>\n      <td>Wavelength, \u00c5</td>\n      <td>0.96861</td>\n    </tr>\n    <tr>\n      <td>Cell dimensions</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>a, b, c, \u00c5</td>\n      <td>81.29, 150.07, 95.59</td>\n    </tr>\n    <tr>\n      <td>\u03b1,\u00a0\u03b2, \u03b3, \u00b0</td>\n      <td>90, 94.54, 90</td>\n    </tr>\n    <tr>\n      <td>Resolution range, \u00c5*</td>\n      <td>95.29\u20133.2 (3.34\u20133.2)</td>\n    </tr>\n    <tr>\n      <td>Rmerge*</td>\n      <td>0.165 (0.805)</td>\n    </tr>\n    <tr>\n      <td>Rmeas*</td>\n      <td>0.176 (0.872)</td>\n    </tr>\n    <tr>\n      <td>CC1/2*</td>\n      <td>0.975 (0.552)</td>\n    </tr>\n    <tr>\n      <td>Mean I/\u03c3I*</td>\n      <td>5.3 (2.0)</td>\n    </tr>\n    <tr>\n      <td>Completeness,\u00a0%*</td>\n      <td>97.7 (98.0)</td>\n    </tr>\n    <tr>\n      <td>Multiplicity*</td>\n      <td>4.2 (4.2)</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Resolution range, \u00c5</td>\n      <td>95.29\u20133.2</td>\n    </tr>\n    <tr>\n      <td>No. of reflections</td>\n      <td>35,054</td>\n    </tr>\n    <tr>\n      <td>Rwork/Rfree</td>\n      <td>0.249/0.291</td>\n    </tr>\n    <tr>\n      <td>Number of atoms</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>14345</td>\n    </tr>\n    <tr>\n      <td>Water</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <td>B-factors, \u00c52</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>90.7</td>\n    </tr>\n    <tr>\n      <td>Rmsd from ideal values</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths, \u00c5</td>\n      <td>0.007</td>\n    </tr>\n    <tr>\n      <td>Bond angles, \u00b0</td>\n      <td>1.053</td>\n    </tr>\n    <tr>\n      <td>Ramachandran plot</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Favoured, %</td>\n      <td>94.7</td>\n    </tr>\n    <tr>\n      <td>Allowed, %</td>\n      <td>4.6</td>\n    </tr>\n    <tr>\n      <td>Outliers, %</td>\n      <td>0.7</td>\n    </tr>\n    <tr>\n      <td>Missing residues</td>\n      <td>MTA1, 464\u2013467, 519\u2013528</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td>RBBP4, 1\u201310, 90\u2013103, 176\u2013179, 412\u2013425</td>\n    </tr>\n  </tbody>\n</table>\n\n_*The highest resolution shell is shown in parentheses._\n\nThe interaction region A of MTA1 takes the form of an extended strand followed by a short helix (H1) (Figure 2d). The extended strand positions a number of non-polar sidechains into a groove formed between the amino-terminal helix and adjacent strand of RBBP4 that forms part of the \u2018linking\u2019 blade of the WD40 domain. This region of MTA1 is held in place by a loop within RBBP4 that is an insert in blade one (residues 104\u2013113) of the WD40 domain. This loop contains five glycine residues and is referred to as the 5G-loop. The 5G-loop adopts an ordered structure on MTA1 binding such that several non-polar residues form an additional interface with MTA1.\n\nHelix H1 of interaction region A is immediately carboxy-terminal to the extended strand and is oriented perpendicularly to it. The helix lies across the base of the long amino-terminal helix of RBBP4 (Figure 2d). The interaction involves four arginine residues forming a zipper-like series of salt bridges with three interdigitating acidic residues on the surface of RBBP4.\n\nThe central interaction region B of MTA1 consists of a short helix H2, a structured PYxPI loop and a longer helix H3 (Figure 2e). The helix H2 and PYxPI loop lie in a deep groove between the amino-terminal helix of RBBP4 and the so-called PP-loop (which contains two adjacent prolines). The groove is largely non-polar in character, but the periphery is strongly acidic (Figure 2f). This complements the interacting amino acids in helix H2 and the PYxPI loop of MTA1. Helix H3 interacts with two phenylalanines on RBBP4; F30 on the surface of the amino-terminal helix and F105 with the 5G-loop.\n\nThe final interaction region C is composed primarily of helix H4 which binds in a third groove on the surface of RBBP4 on the far side of the PP-loop (Figure 2g). The interaction is primarily non-polar in character.\n\n### Architecture of the core NuRD complex\n\nBioinformatic analysis of MTA1 indicates that there are only short regions of predicted disorder between the ELM2-SANT domain and the R1 domain. This suggested that the MTA1:HDAC1:RBBP4 proteins might form a structural core to the NuRD complex with a fixed arrangement of subunits. We have used a combination of small angle X-ray scattering (SAXS), single-particle negative-stain electron microscopy (EM) and chemical crosslinking to determine the architecture of this core complex. For the SAXS analysis, we compared the scattering profile and the calculated envelope of the HDAC1:MTA1-A (residues 162\u2013354) complex with that of the MTA1-B (residues 162\u2013546):HDAC1:RBBP4 complex.\n\nMulti-Angle-Light-Scattering (MALS) confirmed that, as expected from the crystal structure, the HDAC1:MTA1 complex is dimeric, containing two copies of each protein (Figure 3\u2014figure supplement 1). The SAXS data for the complex are consistent with minimal aggregation (linear I(q) at low q). A theoretical scattering profile was calculated from the crystal structure of HDAC1:MTA1 (Millard et al., 2013) and this was in good agreement with the experimental data with a \u03c72 function of 1.54. Furthermore, the crystal structure of the HDAC1:MTA1 dimer was a convincing fit to the averaged ab initio molecular envelope generated from the SAXS curve (Figures 3a, 3b and 3c).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/13941/elife-13941-fig3-v1.jpg)\n\n**Figure 3.:** (a) Co-expression of the HDAC1:MTA1-A (162\u2013354) complex. (b) SAXS data of HDAC1:MTA1-A with the theoretical scattering curve from the HDAC1:MTA1 dimer (pdb code: 4BKX) superimposed in red and the fit residuals are shown. (c) The HDAC1:MTA1 crystal structure is fitted into the ab initio molecular envelope derived from the SAXS curve. MTA1 is coloured purple and HDAC1 is shown in grey. (d) Co-expression of the MTA1-B (162\u2013546):HDAC1:RBBP4 complex. (e) SAXS data of MTA1-B:HDAC1:RBBP4 with the theoretical scattering curve from the MTA1:HDAC1:RBBP4 model superimposed in red and the fit residuals are shown. (f) The model of MTA1:HDAC1:RBBP4 is fitted into the ab initio molecular envelope derived from the SAXS curve. MTA1 is shown in purple, HDAC1 in grey and RBBP4 in green. The MTA1-R1:RBBP4 crystal structure is orientated based on crosslinks identified on surface of HDAC1 and RBBP4 and these are coloured red. (g) Isotopic crosslinking of MTA1-B:HDAC1:RBBP4. Black dotted lines indicate crosslinks that could be mapped onto the model of MTA1:HDAC1:RBBP4 and those that could not be mapped are shown in grey. The HDAC1 carboxy-terminus is predicted highly disordered and the large number of crosslinks seen to this region suggest it is highly mobile. These crosslinks are not shown for simplicity. See Figure 3\u2014figure supplement 1 and Figure 3\u2014figure supplement 2 for information about purification and SAXS measurements, and Figure 3\u2014source data 1 for crosslinks between MTA1, HDAC1 and RBBP4.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13941/elife-13941-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) SDS-PAGE gel showing the purification of HDAC1:MTA1-A by gel filtration. Peak elution of the complex is in lane 8. (b) The light scattering profile (MALS) and calculated molecular weight of HDAC1:MTA1-A. (c) SAXS data of HDAC1:MTA1-A with a line of best fit to the scattering superimposed in black. (d) P(r) distribution for HDAC1:MTA1-A used to determine Dmax. (e) Guinier plot calculated from the scattering data for HDAC1:MTA1-A.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/13941/elife-13941-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) SDS-PAGE gel showing the purification of MTA1-B:HDAC1:RBBP4 by gel filtration. Peak elution of the complex is in lane 7. (b) The light scattering profile (MALS) and calculated molecular weight of MTA1-B:HDAC1:RBBP4. (c) SAXS data of MTA1-B:HDAC1:RBBP4 with a line of best fit to the scattering superimposed in black. (d) P(r) distribution for MTA1-B:HDAC1:RBBP4 used to determine Dmax. (e) Guinier plot calculated from the scattering data for MTA1-B:HDAC1:RBBP4.\n\nMALS analysis of the MTA1:HDAC1:RBBP4 complex showed that this ensemble is also dimeric, with the experimental mass of 300\u2009kDa closely matching the theoretical mass (294\u2009kDa) (Figure 3\u2014figure supplement 2). The ab initio molecular envelope generated from the SAXS curve in the lowest symmetry mode (P1) suggests that the core NuRD complex has an elongated architecture (Figures 3d,e and f). Although no symmetry was imposed, the envelope has an approximate two-fold symmetry consistent with a dimeric complex. We fitted the HDAC1:MTA1 dimer in the centre of the envelope such that the two-fold axis of symmetry matched the approximate symmetry of the envelope (Figure 3f). This left two 'lobes' to the envelope that were of sufficient volume to contain the structure of the MTA1-R1:RBBP4 complex and additional volume for the zinc-finger domain that forms a link between the two X-ray structures.\n\nOur crosslinking data indicated that one face of HDAC1 could readily form crosslinks with one face of RBBP4, suggesting a particular relative orientation of the two proteins in the core complex. We orientated the MTA1-R1:RBBP4 structure within the two 'lobes' so as to satisfy the largest number of crosslinks (Figure 3g and Figure 3\u2014source data 1). The crosslinks that could not be satisfied are likely to derive from higher order oligomers of the core complex. A theoretical scattering profile was calculated from the docked model of the MTA1:HDAC1:RBBP4 complex. This showed reasonable agreement with the experimental data with a \u03c72 function of 2.16.\n\nTo further investigate the architecture of the MTA1:HDAC1:RBBP4 ensemble we used negative stain EM to determine a low resolution structure of the core NuRD complex, crosslinked with glutaraldehyde to maintain integrity. A 60\u2009\u00c5 Gaussian low-pass-filtered, initial model was generated based on the model derived from the SAXS, crosslinking and crystal structure data. This initial model was refined against 17,841 semi-automatically picked particles (Figure 4a). The resulting EM envelope showed that RBBP4 and HDAC1 form a closer association than predicted in the SAXS model. The HDAC1:MTA1 and MTA1-R1:RBBP4 structures fitted well within this envelope. In their new position the RBBP4 domains are tipped by 30\u00b0 such that they are approximately parallel to each other and propagate the symmetry of the HDAC1:MTA1 dimer. This position fits well with the cross-linking data. A 30\u2009\u00c5 filtered model was then generated, based on the new position of RBBP4, and refined further to produce a 19\u2009\u00c5 EM structure using the FSC criterion with a cutoff of 0.143 (Figure 4b,c).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/13941/elife-13941-fig4-v1.jpg)\n\n**Figure 4.:** (a) 60 \u00c5 filtered initial model of the MTA1-B (162\u2013546):HDAC1:RBBP4 complex generated from the SAXS and crosslinking data. (b) The resolution of the final EM model was estimated to be 19 \u00c5 using the Fourier shell correlation criterion with a cutoff of 0.143 (26 \u00c5 using a cutoff of 0.5). (c) Final EM model and fitting after refinement against 17,841 particles. (d) Comparison of different views of the MTA1-B:HDAC1:RBBP4 complex, generated after EM model fitting, with the reference-free 2D class averages. MTA1 is shown in blue, HDAC1 in grey and RBBP4 in green. See Video 2 for a 3D view of the MTA1-B (162\u2013546):HDAC1:RBBP4 complex and Figure 4\u2014figure supplement 1 for class averaged particles and re-projections of the EM model.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13941/elife-13941-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Subset of (a) class averaged particles and (b) matching re-projections of the MTA1-B:HDAC1:RBBP4 complex.\n\nThe resulting EM envelope, along with the fitted crystal structures, clearly shows the HDAC1:MTA1 central dimer and a detailed outline of the RBBP4 lobes (Figure 4c and Video 2). The model suggests a number of contacts between RBBP4 and HDAC1 that determine the relative orientation. The active sites of both HDACs are on the convex side of the complex and are exposed to enable substrate binding. Extra density surrounding the dimerization domain of MTA1 may indicate the position of the MTA1 zinc finger domains and/or the tails of HDAC1 and RBBP4. The reference-free 2D class averages fit well with the model of the MTA1:HDAC1:RBBP4 complex and with the re-projections of the EM class averages (Figure 4d and Figure 4\u2014figure supplement 1).\n\n![Video 2.](https://cdn.elifesciences.org/articles/13941/elife-13941-media2.mp4.jpg)\n\n**Video 2.:** Low resolution EM structure (19\u00a0\u00c5) of the core NuRD complex is shown contoured at 1. Structures of the dimeric HDAC1:MTA1 (pdb code: 4BKX) and MTA1:RBBP4 (pdb code: 5FXY) are fitted. HDAC1 is shown in grey, RBBP4 in green and MTA1 in blue. This video relates to Figure 4.\n\n### Comparison with other RBBP4 complexes\n\nSince we have established that two copies of the RBBP4 protein are recruited to MTA1, we compared the amino-terminal recruitment domain, R1, with the previously identified carboxy-terminal domain, R2. Sequence alignment show that a stretch of c.35 residues is highly similar between the two recruitment regions (Figure 5a). These include the amino terminal strand, helices H1 & H2 and the PYxPI loop. A previous structure of the R2 domain in complex with RBBP4 included helix H2 and the PYxPI loop (22 residues) (Alqarni et al., 2014). Comparison of this structure with that of the equivalent region of the R1 domain (region B in the description above) shows a highly similar mode of binding to RBBP4 (Figure 5b). Indeed, the path of the mainchain from P492 to I503 is essentially identical. The sidechains A495, A496 and R497 in helix H2 and P499, Y500, P502 and I503 in the PYxPI loop mediate key interactions with RBBP4 and are identical in the R2 domain.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/13941/elife-13941-fig5-v1.jpg)\n\n**Figure 5.:** (a) The domain structure of MTA1 highlighting the R1 and R2 domains. Below is a sequence alignment of the R1 domains of MTA1/2/3, R2 domains of MTA1/2 and histone H4. Boxes highlight the residues that have been crystallised in complex with RBBP4. Residues coloured red are identical and residues coloured orange are conserved. (b) Overlay of crystal structures of MTA1-R1 domain with a peptide corresponding to the MTA1-R2 domain (671\u2013690) in complex with RBBP4. (c) Overlay of crystal structures of the MTA1-R1 domain with a histone H4 peptide (27\u201341) in complex with RBBP4.\n\nThe sequence alignment also indicates that the 15 residues preceding helix 2 in the R2 domain have significant sequence similarity to the R1 domain suggesting that the interface between RBBP4 and the R2 domain is likely to be rather more extensive than was observed in the previously reported crystal structure (Figure 5a). We would expect these residues to adopt a structure similar to that seen in interaction region A of the complex between RBBP4 and the R1 domain. An important part of this interface is the 5G-loop that wraps over the top of the amino-terminal strand in the R1 domain. Interestingly this loop adopts a very different conformation in the structure of the MTA1-R2:RBBP4 complex. This alternative orientation may be the consequence of crystal packing interactions.\n\nThe surface of RBBP4 that mediates interactions with helix H2 of the R1 and R2 domains of MTA1 has also been shown to mediate interactions with the amino-terminal region of histone H4. Sequence alignment of the MTA1-R1 and -R2 domains with histone H4 shows that there is considerable sequence similarity between these proteins. The structure of histone H4 (residues 27\u201341) in complex with RBBP4 shows a similar mode of binding to the structure of the bound MTA1-R1 and -R2 domains (Figure 5c) (Murzina et al., 2008). All three proteins bind in the same groove and make similar sidechain contacts with an Alanine-Arginine dipeptide making identical contacts in all three structures (Figures 5b and 5c). Again, sequence comparison suggests that the interface between histone H4 and RBBP4 may be more extensive than seen in the previously reported structure, since the sequence similarity extends at the amino-terminus, into the region corresponding to helix H1 of MTA1-R1.\n\nInterestingly, a fragment of the Polycomb protein Su(z)12 has also been crystallised bound to the central groove of RBBP4. There is little structural or sequence similarity to either the histone H4, MTA1-R1 or MTA1-R2 complexes.\n\n### RBBP4 in the NuRD complex binds histone H3 but not histone H4\n\nThe previous observation that RBBP4 is able to bind to both histones H3 and H4 suggests that RBBP4 may serve as a common chromatin recruitment module in several chromatin modifying complexes. However, given that the extensive interface between RBBP4 and the R1 domain of MTA1 (and by inference the R2 domain) occludes the binding site for histone H4, we would predict that RBBP4 is no longer able to bind histone H4 in the NuRD complex. However, the histone H3 interaction on RBBP4 is exposed in both the MTA1:RBBP4 binary complex and in the dimeric MTA1:HDAC1:RBBP4 complex. This implies that RBBP4 is likely to play a role in recruiting the NuRD complex to histone H3 tails, but not to histone H4.\n\nTo test this, we compared RBBP4 and the MTA1-R1 (residues 464\u2013546):RBBP4 complex in their ability to bind to a peptide array of histone tails, bearing various post-translation modifications. As predicted, we observed that both RBBP4 and the MTA1-R1:RBBP4 complex showed an identical pattern of binding to histone H3 peptides. However, there were significant differences between the binding profiles to histone H4 modified peptides (Figure 6a). The free RBBP4 bound multiple histone H4 tails. In contrast, the MTA1-R1:RBBP4 complex showed only binding to two histone H4 peptides and this was not reproduced in the duplicate arrays (Figure 6\u2014figure supplement 1 and Figure 6\u2014source data 1). Taken together this suggests that when bound to MTA1, RBBP4 binds to histone H3 and not histone H4.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/13941/elife-13941-fig6-v1.jpg)\n\n**Figure 6.:** (a) RBBP4 binds to both histone H3 and histone H4 tail peptides on the MODified histone peptide array whereas the complex of MTA1-R1:RBBP4 is unable to bind to histone H4 tail peptides. MODified histone peptides J1 to P24 are shown. The five negative control peptides (non-histone sequences) are boxed in the right-hand corner. (b) Schematic model for the recruitment of the core NuRD complex to chromatin. Two HDAC1/2 molcules (grey) and four RBBP4/7 molcules (green) are tethered by the ELM2/SANT and R1/R2 domains of MTA1 respectively. MTA1 is coloured according to the schematic representation below. The RBBP4/7 proteins recruit the complex to chromatin through histone H3 tails (orange) on the same or adjacent nucleosomes (purple). The other histone tails would be available for deacetylation by HDAC1/2. The BAH domain of MTA1 is omitted from the model for clarity. See Figure 6\u2014figure supplement 1 for the MODified and duplicate histone peptide arrays and Figure 6\u2014source data 1 for a key to the array.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13941/elife-13941-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Expanded view of the MODified histone peptide array and duplicate array for both (a) RBBP4 alone and (b) the MTA1-R1:RBBP4 complex.\n\n## Discussion\n\nHere we have investigated the architecture of the core NuRD complex and derived the first model of the arrangement of three major components MTA1/2, HDAC1/2 and RBBP4/7 (Figure 6b). This core complex forms an elongated zig-zag structure as visualised by SAXS and EM, centred around the HDAC1:MTA1 dimerization domain, with RBBP4 \u2018lobes\u2019 symmetrically bound to the dimer. We have established that a central section of MTA1 directly recruits RBBP4/7 and brings this subunit into close proximity to HDAC1/2. It is possible that the relative arrangement of HDAC1, MTA1 and RBBP4 may be somewhat different in the holo-NuRD complex. However, the relatively close interaction between HDAC1 and RBBP4, seen in the EM structure, suggests to us that this interface is likely to\u00a0be present in the full complex.\n\nWe have shown that each MTA1 protein recruits two RBBP4/7 molcules to the NuRD complex through the R1 and R2 interaction domains. Since MTA1 is itself a dimer in the complex (Millard et al., 2013) this means that the NuRD complex contains four copies of the RBBP4/7 proteins, which we have confirmed experimentally. Recognisable R1 and R2 interaction domains are present in MTA1 and 2 proteins from fly to man suggesting that the stoichiometry of the NuRD complex is evolutionarily conserved. Our findings fit partially with a previous study of the NuRD complex using label-free mass spectrometry. In this study they also report a 1:2 MTA1:RBBP4/7 stoichiometry, but in contrast to our previous crystal structure of the MTA1:HDAC1 complex, they find a 1:3 HDAC:MTA stoichiometry (Smits et al., 2012).\n\nAlqarni et al. used isothermal titration calorimetry (ITC) to compare the affinity of interaction of the helical region of the R2 domain from MTA1 (656\u2013686) with that of histone H4, which they observed bound in the same groove of RBBP4. The similarity in affinity led them to suggest that there may be competition between MTA1 and histone H4 for binding to RBBP4 (Alqarni et al., 2014). Our findings suggest that there is likely to be a more extensive interface between MTA1-R2 and RBBP4 with an additional helix and beta-strand contributing to the interaction. This is in fact supported by cross-linking data (Kloet et al., 2015). Given this extended interface we suggest that histone H4 is unlikely to be able to compete with either MTA1-R1 or R2 for binding to RBBP4. Indeed, the MTA1-R1:RBBP4 complex appeared highly stable since the resin-bound complex could be washed with 2\u2009M NaCl and 5% triton-X-100 without significant dissociation (data not shown). Taken together our data suggest that once bound to MTA1, the two RBBP4 molcules would remain permanently assembled as a complex.\n\nSince it appears that the histone H4 binding site on RBBP4 is blocked when associated with MTA1 (either R1 or R2) this raises the question as to the role of RBBP4 in the NuRD complex. Importantly, the crystal structure of RBBP4 bound to a histone H3 tail peptide shows that the interaction surface lies on the \u2018top\u2019 of the WD40 domain (Schmitges et al., 2011). This site is not blocked by binding to MTA1-R1. Thus RBBP4 would theoretically remain able to bind to histone H3 tails whilst assembled into the NuRD complex. This fits with our experimental data which confirm that the core NuRD complex can bind histone H3 tails but not H4.\n\nSuch a model of recruitment to histone H3 is consistent with the architecture of the MTA1:HDAC1:RBBP4 complex since the orientation of RBBP4 relative to the HDAC1:MTA1 dimer means that the histone H3 binding surface of RBBP4 is exposed, albeit close to the interface between HDAC1 and RBBP4, and therefore able to bind the tail of histone H3. Furthermore, the histone recruitment site is sufficiently close to the catalytic site of HDAC1 to allow other histone tails to access the active site.\n\nInterestingly, both RBBP4 and the RBBP4:MTA1 complex show enhanced binding to modified tails of histone H3 lysine 27 (H3K27) (Figure 6a). In particular, H3K27 acetylation and H3K27 methylation appear to promote binding. This would correlate with previous studies that have observed association of the NuRD complex with a specific subset of gene promoters enriched with H3K27me3 (Reynolds et al., 2012). In addition, MBD3, a component of the NuRD complex has been reported to localise at H3K27ac and H3K27me3 enriched sites (Shimbo et al., 2013). RBBP4 may therefore have an important role in directing the NuRD complex to chromatin bearing these modifications.\n\nA number of studies have suggested that RBBP4 and RBBP7 have different functions. Indeed, it has been suggested that they are associated with different complexes. Our structural data suggest that the residues important for mediating interaction with MTA1 are 100% identical and therefore we would expect both RBBP4 and RBBP7 to be associated with the NuRD complex depending upon relative abundance.\n\nInterestingly, in MTA3 the recruitment domain R2 is not present in any species. This suggests that MTA3 only recruits a single RBBP4/7 molcule. Furthermore, a splice variant of MTA1 (MTA1S) does not contain either R1 or R2 domains (Yaguchi et al., 2005). It is intriguing to speculate that these variant NuRD complexes will exhibit different specificities due to different modes of chromatin recruitment. Presumably the presence of four RBBP4 molcules in the NuRD complex increases the avidity for chromatin.\n\nOverall this study provides significant novel insights into the assembly and chromatin recruitment of the core NuRD complex. It establishes the architectural relationship between the histone deacetylase and the RBBP4 chromatin-binding module. Further studies will be required to explore the relative organisation between the HDAC and the CHD3/4 chromatin remodeller.\n\n## Materials and methods\n\n### Mammalian protein expression\n\nMTA1-A, -B, -C, -D and -E (residues 162\u2013335, 162\u2013546, 162\u2013715, 390\u2013715 and 464\u2013546) were cloned into pcDNA3 vectors containing an amino terminal His10-Flag3 purification tag followed by a TEV protease cleavage site. RBBP4 (residues 1\u2013425) and HDAC1 (residues 1\u2013482) were cloned without affinity tags into the same vectors. Protein constructs were co-transfected into HEK293F suspension-grown cells (Invitrogen) with polyethylenimine (PEI; Sigma) and the cells were harvested after 48\u2009hr as previously described (Nettleship et al., 2014; Portolano et al., 2014; Watson et al., 2012). Cells were lysed in 50\u2009mM Tris-HCl (pH 7.5), 100\u2009mM potassium acetate, 10% v/v glycerol, 0.3% v/v Triton X-100 and Roche Complete Protease Inhibitor (buffer A). The clarified lysate was applied to FLAG resin (Sigma) for 2\u2009hr at 4\u00b0C. The resin was washed three times with 50\u2009mM Tris-HCl (pH 7.5), 100\u2009mM potassium acetate and 5% v/v glycerol (buffer B), three times with buffer B containing 200\u2009mM potassium acetate and a further three times with buffer B. The protein was treated with RNase A in buffer B for 1\u2009hr at 4\u00b0C before being eluted with TEV overnight into buffer B containing 50\u2009mM potassium acetate. The protein complexes were purified further by gel filtration using a Superdex S200 column into 25\u2009mM Tris-HCl (pH 7.5), 50\u2009mM potassium acetate and 0.5\u2009mM TCEP (GE Healthcare,\u00a0UK). The purified complex was concentrated to 10 mg/ml.\n\n### Gel densitometry\n\nThe intensity of protein bands was determined with ImageJ and the ratio of HDAC1:RBBP4 was plotted using GraphPad Prism.\n\n### Size exclusion chromatography with Multi-Angle Light Scattering (MALS)\n\nPurified MTA1:RBBP4, HDAC1:MTA1 and MTA1:HDAC1:RBBP4 complexes that had been gel filtrated were concentrated to 1 mg/ml and reapplied to the Superdex S200 column (GE Healthcare,\u00a0UK). The mass of each protein complex was calculated immediately on elution with an Optilab T-rEX differential Refractive Index detector coupled to a DAWN HELEOS MALS detector (Wyatt Technology).\n\n### Protein crystallisation\n\nDiffracting crystals (25\u2009\u03bcm) of MTA1-R1:RBBP4 were grown at 10\u00b0C by sitting-drop vapour diffusion against 0.21\u2009M ammonium citrate and 19% PEG 3350. Crystals were frozen in liquid nitrogen using 30% glycerol as a cryoprotectant, initial screening was performed at the Swiss Light Source PX1 (Switzerland), and data were collected at the Diamond microfocus beamline I24 (UK). Data from two crystals were processed with iMOSFLM (Leslie, 2005) and merged using AIMLESS (Evans and Murshudov, 2013) to produce a complete dataset. A unique phase solution was found with RBBP4 (pdb code: 4PC0) (Alqarni et al., 2014) as a search model using PHASER (McCoy et al., 2007) and MTA1 was manually built using multiple rounds of refinement using REFMAC (Murshudov et al., 2011) and COOT (Emsley et al., 2010). The final model contains four copies of residues 9-411 of RBBP4 (chains A, C, E, G) and residues 468-546 of MTA1 (chains B, D, F, H).\n\n### Small Angle X-ray Scattering (SAXS)\n\nFor the SAXS experiments HDAC1:MTA1-A and MTA1-B:HDAC1:RBBP4 were concentrated (1 to 5 mg/ml) in buffer E immediately before analysis. Data were collected on the samples using a Pilatus2M detector (Dectris, CH) at a sample-detector distance of 4014\u2009mm at 12.4 keV at the Diamond B21 beamline (UK). The scattering data was collected to provide a q range of 0.0038-0.42\u2009\u00c5-1, where q is the magnitude of the scattering vector, using a flux of c.1011 photons per second. The samples and matching buffer solutions were exposed to X-rays 30 times in 5s bursts at 25\u00b0C. Examination of the data suggested there was no evidence of radiation damage. The lowest concentration datasets (1 mg/ml) were used for analysis using the ATSAS suite of software (Petoukhov et al., 2012) and Sc\u00c5tter for basic analysis of the SAXS datasets\u00a0(BioIsis.net). The radius-of-gyration (Rg) was calculated from Guinier plots and these values were in good agreement with the Rg calculated from the second moment of the P(r) function. The maximum dimension of the scattering molecular species (Dmax) was estimated from the P(r) curve and again these values were favourable comparable to those calculated using the program GNOM (Svergun, 1992). Theoretical scattering profiles were calculated from the crystal structure of HDAC1:MTA1 (Millard et al., 2013) and combined crystal structures of HDAC1:MTA1 and MTA1-R1:RBBP4 and compared to the experimental data using FoXS (Schneidman-Duhovny et al., 2010). Thirteen ab initio dummy atom models were generated using the programme DAMMIF (Franke and Svergun, 2009) and were superposed, merged and filtered using the programme DAMAVER (Volkov and Svergun, 2003).\n\n### Chemical crosslinking\n\nGel filtrated MTA1-B:HDAC1:RBBP4 complex was buffer exchanged into 50\u2009mM HEPES (pH 7.5), 50\u2009mM potassium acetate, diluted to 0.5 mg/ml, and the isotopically labelled crosslinker CBDPSS-H8/D8 (CyanurBiotinDimercaptoPropionylSulfoSuccinimide, Creative Molecules Inc.) (Petrotchenko et al., 2011) was added to a final concentration of 0.7\u2009mM. After incubation at 30\u00b0C for 30\u2009min the reaction was stopped by addition of 0.5\u2009M NH4HCO3 to a final concentration of 40\u2009mM. The protein was analysed by SDS-PAGE and protein bands corresponding to the crosslinked-dimeric complex were excised from the gel. The sample was reduced with 10\u2009mM DTT, alkylated with 100\u2009mM iodoacetamide and digested with trypsin.\n\nLC-MS/MS was carried out as described previously (Alam et al., 2015). Raw data files were converted to. mzXML format using the ProteoWizard msconvert toolkit (Chambers et al., 2012) and cross-linked peptides were identified using the xQuest/xProphet (Leitner et al., 2014) pipeline with appropriate parameters defined for the CBDPSS isotopically labelled crosslinker. For crosslinks to be considered valid the xQuest Id-Score was required to exceed 14.5, and on inspection of the MS/MS spectra a minimum of either four fragment ions per peptide or three consecutive fragment ions per peptide were required to match.\n\n### EM sample preparation\n\nGel filtrated MTA1-B (162-546):HDAC1:RBBP4 was prepared for EM analysis by using GraFIX (Kastner et al., 2007). A 5-25% sucrose gradient with 0-1% glutaraldehyde in 20\u2009mM HEPES/KOH (pH 7.5), 40\u2009mM NaCl was prepared using a Gradient Master IP (BIOCOMP) with a SW60 rotor. The protein complex was added directly on top of the gradient and centrifuged for 15\u2009hr at 166400g in a swing-out rotor. The gradient was manually fractionated into 175\u2009\u03bcl fractions and fractions containing monodisperse complex were pooled. The sucrose was removed and cross linking stopped by buffer exchange in a centrifugal filter concentrator (Millipore, Amicon, Ultra-0.5, 10\u2009kDa cut-off) using 20\u2009mM Tris/HCl (pH 7.5), 40\u2009mM NaCl.\n\n### EM data collection\n\nNegative stain grids were prepared by glow-discharging carbon coated copper 300 mesh grids (Agar Scientific) at 10 mA for 30 s. The protein complex was diluted to 0.1 mg/ml and 5\u2009\u03bcl was applied to the grid. The protein was allowed to absorb for 1\u2009min and blotted to remove excess liquid. The grid was then stained with 2% w/v uranyl acetate. Grids were imaged using a Jeol 2010F\u00a0TEM operating at 200 kV fitted with a Gatan UltraScan\u2122 4000 CCD camera with a 15\u2009\u03bcm pixel size. 308 micrographs were collected at various defocus values between 0.5 \u00b5m and 5 \u00b5m, each micrograph contained 20 \u2013 90 particles.\n\n### EM image processing\n\n17,841 particles were semi-automatically picked using the EMAN2 e2boxer.py swarm function and extracted using a 224 \u00d7 224 pixel box size. Reference-free 2D class averages were generated, with c.100 \u2013 200 particles per class average using e2refine2d.py (Tang et al., 2007). A 60\u2009\u00c5 filtered model of the complex was generated based on the crystal structures of HDAC1:MTA1 and MTA1:RBBP4 fitted to the SAXS and crosslinking data, refined against the 17,841 particle dataset, and a model was generated with C1 symmetry using e2refine_easy.py. Resolution of refined model was 19\u2009\u00c5 using a FSC criterion cutoff of 0.143.\n\n### Peptide binding assays\n\nGel filtrated Flag-RBBP4 and Flag-MTA1-R1-:RBBP4 proteins were diluted to 200 nM in 5\u2009ml TTBS (10\u2009mM Tris-HCl (pH 7.4), 0.05% Tween 20 and 150\u2009mM NaCl) and applied to separate MODified histone peptide arrays (Active Motif) containing 384 unique histone modification combinations. The arrays were washed and protein detected using an anti-Flag antibody according to the manufacture\u2019s protocol. Data from each array was analysed using the commercially available software (Active Motif).\n",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "a5443fbc-2a48-4dfb-910e-abd1e3cd99b9",
+      "submission_id": "bb7c7a9e-fb4d-4f6e-94bb-dbb9fc3c2ab7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jerry L Workman, Stowers Institute for Medical Research , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.13941.025](https://doi.org/10.7554/eLife.13941.025)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"The structure and stoichiometry of RBBP4 in the NuRD complex suggests a mechanism of recruitment of HDAC1/2 to chromatin\" for consideration by eLife. Your article has been favorably evaluated by Kevin Struhl (Senior Editor) and three reviewers, one of whom, Jerry Workman, is a member of our Board of Reviewing Editors, and another is Paul Wade.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript reports on the stoichiometry and structure of the MTA1:RPBB4 interaction and its implications for the organization and chromatin interaction of the NuRD complex. The authors convincingly confirm previous reports of a possible second RPBB4 interaction site in MTA1 and of a 1:2 stoichiometry for the MTA1:RBBP4 complex (both of these previous reports are appropriately referenced). An X-ray structure of RBBP4 interacting with a ~80 amino acid segment of MTA1 containing the novel/previously suspected binding site provides an improved understanding of a possibly conserved MTA1:RBBP4 interaction mode. The experiments to test interaction of RBBP4 with various MAT1 segments are convincing and the implications from analysis of the X-ray structure showing the \"new\" interaction with MAT1 are interesting.\n\nEssential revisions:\n\nOverall the reviewers support the study and its eventual publication. However, there were two major issues that were deemed important to address. These major issues are numbered below and discussed in some detail. The first issue will require some additional analysis of your EM data and perhaps some new EM data. The second can be addressed by editing the Results and Discussion.\n\n1) Based on the observations above, their published X-ray structure of the MTA1 dimer, and sequence analysis of MTA1, the authors propose that the MTA1:HDAC1:RBBP4 proteins could form the structural core of the NuRD complex and set out to determine the structural organization of that core. MALS was used to analyze the stoichiometry and SAXS to investigate the core's overall structure. These results were complemented by cross-linking/mass spectrometry and analysis of single particle electron microscopy (EM) images of the core. The MALS results to test complex stoichiometry, and the SAXS results to evaluate overall complex structure are sound. However, the cross-linking/MS and EM results used to derive a structure for the MTA1:HDAC1:RBBP4 are not as convincing. The SAXS envelope is, as expected very low resolution and cannot determine more than the overall position of RBBP4. The authors relied on the MS analysis to orient RBBP4 in the complex and then compared views of their cross-linking based model with class-averages obtained from EM images. About two third of crosslinks are consistent with the proposed model and the authors highlight a number of EM class averages that also appear consistent with the model. This seems sufficient to validate the proposed model, but actually calculating a low-resolution structure from the EM images would have provide more definite evidence. Since the EM class averages seem to show various views of the complex, it is conceivable that those averages contain enough information to calculate a 3D map. There are also other simple approaches that could have been used to obtain an actual structure from EM images of stained particles.\n\nA second issue worth considering is the possibility that, even if the interpretation of the current data is entirely correct, in a larger complex (e.g., a full complement of RBBP4s, other NuRD components), additional interactions between subunits could result in an organization of MAT1:HDAC1:RBBP4 entirely different from the one depicted in the final model. If NuRD can be purified to reasonable homogeneity, it would be worth collecting some EM images in stain and rule out the possibility that the structure of the complete NuRD, and therefore its integration with chromatin, are different from what is proposed here. If it is not possible to record images of NuRD and confirm that part of NuRD indeed looks like the averages in Figure 4A, maybe a reasonable compromise would be to indicate in the Discussion the possible limitations of the model for core organization and chromatin interaction shown in Figure 6B.\n\n2) While I applaud the dataset, the text, as written, fails to discuss critical features revealed in the data.\n\nFirst, could the authors please discuss whether the RBBP4/7 structure in the complex with MTA1/HDAC1 differs from the published structure? This is an important detail.\n\nSecond, the binding pattern depicted in the peptide array indicates a degree of specificity that would make the manuscript more interesting to a general audience. If I am not mistaken, the array indicates complex interaction with H3 amino acids 16-35 that appears to require modification of lysine 27. I had to look up the positions of peptides on the array to discover that (please correct me if I am wrong). Given the biology around K27 Ac/Me choice and NuRD complex as described by Brian Hendrich, this finding is quite interesting. I am perplexed as to why this is not discussed in the current manuscript.\n\nFinally, it is not clear how the binding pattern would differ if the authors included both R1 and R2 in the construct. Has this experiment been done?\n",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c43ee741-c3fb-452f-9110-9a47c275c5da",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C1",
+      "claim": "The NuRD complex is a multi-protein transcriptional corepressor that couples histone deacetylase and ATP-dependent chromatin remodelling activities.",
+      "claim_type": "EXPLICIT",
+      "source": "The NuRD complex is a multi-protein transcriptional corepressor that couples histone deacetylase and ATP-dependent chromatin remodelling activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about the NuRD complex that draws from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "816fc07d-fbcd-4846-85e4-f94ba97c5a17",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C2",
+      "claim": "The NuRD complex regulates the higher-order structure of chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "The complex regulates the higher-order structure of chromatin, and has important roles in the regulation of gene expression, DNA damage repair and cell differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge about NuRD complex function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "cd81e51f-d351-47b8-b147-b6ec7e4282c2",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C3",
+      "claim": "The NuRD complex has important roles in the regulation of gene expression, DNA damage repair and cell differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "The complex regulates the higher-order structure of chromatin, and has important roles in the regulation of gene expression, DNA damage repair and cell differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge about NuRD complex function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "def20265-c08c-41ce-9dfa-469a2b1b106a",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C4",
+      "claim": "HDACs 1 and 2 are recruited by the MTA1 corepressor to form the catalytic core of the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "HDACs 1 and 2 are recruited by the MTA1 corepressor to form the catalytic core of the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge about NuRD complex assembly.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "398d0ea5-f780-49b4-8fdb-8fe3c0e276a6",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C5",
+      "claim": "The histone chaperone protein RBBP4 has previously been shown to bind to the carboxy-terminal tail of MTA1.",
+      "claim_type": "EXPLICIT",
+      "source": "The histone chaperone protein RBBP4, has previously been shown to bind to the carboxy-terminal tail of MTA1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior published work on RBBP4-MTA1 interaction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "df749d46-68d4-4b80-8b03-7dff8174eb63",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C6",
+      "claim": "MTA1 recruits a second copy of RBBP4.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that MTA1 recruits a second copy of RBBP4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data including MALS and crystallography.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "fa8f2a0b-0915-443f-aa5c-5e9a501aae14",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C7",
+      "claim": "The crystal structure reveals an extensive interface between MTA1 and RBBP4.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure reveals an extensive interface between MTA1 and RBBP4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the crystal structure data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "2168d414-47a4-48c5-a81f-7de056b0e9ab",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C8",
+      "claim": "An EM structure, supported by SAXS and crosslinking, reveals the architecture of the dimeric HDAC1:MTA1:RBBP4 assembly which forms the core of the NuRD complex.",
+      "claim_type": "EXPLICIT",
+      "source": "An EM structure, supported by SAXS and crosslinking, reveals the architecture of the dimeric HDAC1:MTA1:RBBP4 assembly which forms the core of the NuRD complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple experimental techniques (EM, SAXS, crosslinking) presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "e89f2a16-d76d-43b5-be19-be3453ac07d1",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C9",
+      "claim": "In the NuRD complex, RBBP4 mediates interaction with histone H3 tails, but not histone H4.",
+      "claim_type": "EXPLICIT",
+      "source": "We find evidence that in this complex RBBP4 mediates interaction with histone H3 tails, but not histone H4, suggesting a mechanism for recruitment of the NuRD complex to chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by peptide array binding data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "eb1d19a6-8a63-4401-b44d-008ed490935c",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C10",
+      "claim": "The NuRD complex is one of at least five corepressor complexes that recruits and activates class I histone deacetylase (HDACs) enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "The nucleosome remodelling and deacetylase (NuRD) complex is one of at least five corepressor complexes that recruits and activates class I histone deacetylase (HDACs) enzymes and directs their activity to chromatin (Bantscheff et al., 2011; Guenther et al., 2000; Humphrey et al., 2001; Itoh et al., 2015; Kelly and Cowley, 2013; Laherty et al., 1997; Oberoi et al., 2011; Vermaak et al., 1999; Watson et al., 2012; Wen et al., 2000; Xue et al., 1998; Zhang et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "bc3e5320-6e3a-42fe-824e-2200149b1e8f",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C11",
+      "claim": "The NuRD complex plays a major role in the regulation of gene expression as well as being involved in chromatin organization, DNA damage repair, and genomic stability.",
+      "claim_type": "EXPLICIT",
+      "source": "The NuRD complex plays a major role in the regulation of gene expression as well as being involved in chromatin organization, DNA damage repair, and genomic stability (Denslow and Wade, 2007; Lai and Wade, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "14413251-46d7-49ab-bc70-c53b0e355f99",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C12",
+      "claim": "The NuRD complex is composed of six proteins, each with several isoforms: HDAC1/2, MTA1/2/3, RBBP4/7, P66\u03b1/\u03b2, MBD2/3, and CHD3/4.",
+      "claim_type": "EXPLICIT",
+      "source": "The NuRD complex is composed of six proteins, each with several isoforms: HDAC1/2, MTA1/2/3, RBBP4/7, P66\u03b1/\u03b2, MBD2/3, and CHD3/4 (Allen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "f8942987-c88e-4ab6-a47a-f7652ed81b5f",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C13",
+      "claim": "The NuRD complex exhibits dual enzymatic functionality through its HDAC (protein deacetylation) and ATPase (chromatin remodelling) domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The complex is special in its ability to exhibit dual enzymatic functionality through its HDAC (protein deacetylation) and ATPase (chromatin remodelling) domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on established knowledge about NuRD complex function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "919625d2-c4c7-48da-bdab-8d5728f60b16",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C14",
+      "claim": "Histone Deacetylases (HDACs) are important regulators of transcription that are involved in silencing genes and/or priming them for successive rounds of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "Histone Deacetylases (HDACs) are important regulators of transcription that are involved in silencing genes and/or priming them for successive rounds of transcription (Micelli and Rastelli, 2015; Verdin and Ott, 2014; Wang et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "75d783b4-839b-48e3-8e46-364f27889f62",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C15",
+      "claim": "HDACs act by removing the acetyl groups from modified lysine residues on histone tails and other non-histone proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "HDACs act by removing the acetyl groups from modified lysine residues on histone tails and other non-histone proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on established knowledge about HDAC enzymatic function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "5d4c6111-4c51-45a8-9401-10ae531f7860",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C16",
+      "claim": "HDACs have been shown to be overexpressed in various cancer tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "These enzymes have been shown to be overexpressed in various cancer tissues and several inhibitors against these enzymes are currently used in the clinic as anti-cancer therapeutics (Falkenberg and Johnstone, 2014; Marks and Xu, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "d8a507b7-627f-4524-9a72-52ba0d407578",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C17",
+      "claim": "Several HDAC inhibitors are currently used in the clinic as anti-cancer therapeutics.",
+      "claim_type": "EXPLICIT",
+      "source": "These enzymes have been shown to be overexpressed in various cancer tissues and several inhibitors against these enzymes are currently used in the clinic as anti-cancer therapeutics (Falkenberg and Johnstone, 2014; Marks and Xu, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "324efac7-967c-485f-96d5-c921640520e5",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C18",
+      "claim": "Metastasis-associated protein 1 (MTA1) and its closely related homologues MTA2 and 3 are up-regulated in various cancer tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Metastasis-associated protein 1 (MTA1) (and its closely related homologues MTA2 and 3) are up-regulated in various cancer tissues (Fujita et al., 2003; Li et al., 2012; Sen et al., 2014; Toh et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "ad44c9ec-f017-4cb1-86e0-4d2d253f3c02",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C19",
+      "claim": "MTA proteins serve as scaffold proteins for the assembly of the NuRD complex.",
+      "claim_type": "EXPLICIT",
+      "source": "They serve as scaffold proteins for the assembly of the NuRD complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on established knowledge about MTA protein function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "c6c60844-97fb-4baa-a964-1bd55f385ba1",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C20",
+      "claim": "The amino-terminal region of MTA proteins contains four established domains: an amino-terminal BAH domain, followed by ELM2 and SANT domains, and a GATA-like zinc finger domain towards the centre of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The amino-terminal region contains four established domains: an amino-terminal BAH domain, followed by ELM2 and SANT domains, and a GATA-like zinc finger domain towards the centre of the protein (Manavathi and Kumar, 2007; Millard et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "44b60b24-acec-4914-ae7c-148c1aefc52b",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C21",
+      "claim": "The ELM2 domain has been shown by X-ray crystallography to mediate dimerization of the complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The ELM2 domain has been shown by X-ray crystallography to mediate dimerization of the complex and, in conjunction with the SANT domain, recruits HDAC1 & 2 (Millard et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior crystallographic work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "3f1a2279-eeb4-4b1c-b5d0-250995024b11",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C22",
+      "claim": "The ELM2 domain, in conjunction with the SANT domain, recruits HDAC1 & 2.",
+      "claim_type": "EXPLICIT",
+      "source": "The ELM2 domain has been shown by X-ray crystallography to mediate dimerization of the complex and, in conjunction with the SANT domain, recruits HDAC1 & 2 (Millard et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior crystallographic work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "8fb2d873-897f-470c-be34-a9428c693db1",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C23",
+      "claim": "A short helix at the very carboxy-terminus of MTA1 and MTA2 has been shown to mediate interaction with RBBP4/7.",
+      "claim_type": "EXPLICIT",
+      "source": "The exception is at the very carboxy-terminus of MTA1 and MTA2 where a short helix has been shown to mediate interaction with RBBP4/7 (Alqarni et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "62a1a7ac-6665-40b3-9600-2dc0a9461d41",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C24",
+      "claim": "A binding site for CHD4 has been identified in the carboxy-terminal region of MTA proteins, but has not been structurally characterised.",
+      "claim_type": "EXPLICIT",
+      "source": "A binding site for CHD4 has also been identified in this region, but has not been structurally characterised (Nair et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "d7c77e58-76fc-4560-bf3e-c6a771d9b1fa",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C25",
+      "claim": "RBBP4 and RBBP7 are homologous (92% identical) histone binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "RBBP4 and RBBP7 are homologous (92% identical) histone binding proteins (also known as RbAp48 and RbAp46) that have been shown to be core components of the NuRD complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on established knowledge about RBBP4/7 sequence similarity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "ae5f092f-276e-49be-8059-f64f6fab888a",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C26",
+      "claim": "RBBP4 and RBBP7 have been shown to be core components of the NuRD complex.",
+      "claim_type": "EXPLICIT",
+      "source": "RBBP4 and RBBP7 are homologous (92% identical) histone binding proteins (also known as RbAp48 and RbAp46) that have been shown to be core components of the NuRD complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on established knowledge about NuRD complex composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "51f0cb99-01a5-41b1-8ae5-652ef8ea10d5",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C27",
+      "claim": "RBBP4 and RBBP7 are present in multiple complexes including other class I HDAC corepressors such as the Sin3A and PRC2 complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "These proteins are unusual in that they are present in multiple complexes including other class I HDAC corepressors such as the Sin3A and PRC2 complexes (Ciferri et al., 2012; Kuzmichev, 2002; Zhang et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "d9b9af93-4721-47d2-830c-6ccd145555d6",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C28",
+      "claim": "RBBP4, along with sNASP and Asf1 forms a multi chaperone complex whose function is to maintain a supply of newly synthesized histone H3 and H4 proteins under replicative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "RBBP4, along with sNASP and Asf1 forms a multi chaperone complex whose function is to maintain a supply of newly synthesized histone H3 and H4 proteins under replicative stress (Groth et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "c4f91307-7ed8-43cd-a6a8-72d8a4e28a81",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C29",
+      "claim": "RBBP4 has been found to be a subunit of the chromatin-assembly factor-1 (CAF-1) complex whose function is to initiate nucleosome assembly by assembling histones H3 and H4 onto newly synthesized DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "RBBP4 has also been found to be a subunit of the chromatin-assembly factor-1 (CAF-1) complex whose function is to initiate nucleosome assembly by assembling histones H3 and H4 onto newly synthesized DNA (Parthun et al., 1996; Verreault et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "eef06d82-6982-4959-ab50-6aba0b93e7be",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C30",
+      "claim": "RBBP7 has been found to be an essential subunit of the HAT1 histone-acetyltransferase complex, which acetylates newly synthesized histone proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, RBBP7 has been found to be an essential subunit of the HAT1 histone-acetyltransferase complex, which acetylates newly synthesized histone proteins (Verreault et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "7aaa3371-2634-4b3e-a4dd-5c7951808074",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C31",
+      "claim": "RBBP4 and RBBP7 have been shown to interact directly with histone H3 and H4 tails through two distinct binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "RBBP4 and RBBP7 have been shown to interact directly with histone H3 and H4 tails through two distinct binding sites and therefore have the potential to act as chromatin recruitment modules (Murzina et al., 2008; Nowak et al., 2011; Schmitges et al., 2011; Song et al., 2008; Zhang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "8855733b-7501-4832-89b6-ca1e85122de0",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C32",
+      "claim": "RBBP4 and RBBP7 have the potential to act as chromatin recruitment modules.",
+      "claim_type": "EXPLICIT",
+      "source": "RBBP4 and RBBP7 have been shown to interact directly with histone H3 and H4 tails through two distinct binding sites and therefore have the potential to act as chromatin recruitment modules (Murzina et al., 2008; Nowak et al., 2011; Schmitges et al., 2011; Song et al., 2008; Zhang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature and logical inference from the histone binding capability.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "a12e526d-7ba3-4339-8bef-b9b073326b51",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C33",
+      "claim": "RBBP4 and RBBP7 are WD40 domain proteins with a characteristic seven bladed \u03b2-propeller structure.",
+      "claim_type": "EXPLICIT",
+      "source": "RBBP4 and RBBP7 are WD40 domain proteins with a characteristic seven bladed \u03b2-propeller structure (Xu and Min, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "04313d33-a87f-4651-9b3d-2bedf53044fd",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C34",
+      "claim": "RBBP4/7 interacts with histone H3 through a binding site on the 'top' face of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "RBBP4/7 interacts with histone H3 through a binding site on the 'top' face of the protein (Schmitges et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "e21de498-67ec-488f-bd5b-c07a06f5b944",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C35",
+      "claim": "The RBBP4/7 WD40 domain has an amino-terminal helix of 30 residues that forms an extension to the \u03b2-propeller domain.",
+      "claim_type": "EXPLICIT",
+      "source": "A particular feature of the RBBP4/7 WD40 domain is an amino-terminal helix of 30 residues that forms an extension to the \u03b2-propeller domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on established structural knowledge about RBBP4/7.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "788b464c-5d2d-4a80-a9ef-5741eda0b50b",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C36",
+      "claim": "A groove formed adjacent to the amino-terminal helix of RBBP4/7 mediates interaction with the amino-terminus of histone H4.",
+      "claim_type": "EXPLICIT",
+      "source": "A groove that is formed adjacent to this helix mediates interaction with the amino-terminus of histone H4 (Murzina et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "6b826a5d-2111-421e-abaf-8b4c57cba788",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C37",
+      "claim": "The extreme carboxy-terminus of MTA1 (residues 671\u2013690) has been shown to interact with RBBP4/7 in the groove adjacent to the amino-terminal helix, making very similar contacts to those made by histone H4.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the extreme carboxy-terminus of MTA1 (residues 671\u2013690) has been shown to interact with RBBP4/7 in this groove, making very similar contacts to those made by histone H4 (Alqarni et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "62840ab7-1567-4373-b567-7d183732796c",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C38",
+      "claim": "A second RBBP4 recruitment site has been identified within MTA1 that is positioned near the centre of the corepressor.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we have identified a second RBBP4 recruitment site within MTA1 that is positioned near the centre of the corepressor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "786bad87-4cc6-4b21-af89-2afdf760dff0",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C39",
+      "claim": "The second RBBP4 recruitment site shows some sequence homology to the previously characterised carboxy-terminal recruitment site, but is considerably more extensive.",
+      "claim_type": "EXPLICIT",
+      "source": "This site shows some sequence homology to the previously characterised carboxy-terminal recruitment site, but is considerably more extensive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence analysis and structural data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "d9ed46ac-0ebd-4118-b1f2-7aa852d660c0",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C40",
+      "claim": "Both RBBP4 recruitment sites within the MTA1 monomer are capable of independently recruiting RBBP4 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that both sites within the MTA1 monomer are capable of independently recruiting RBBP4 proteins such that the HDAC1:MTA1 dimer recruits four molecules of RBBP4 to the NuRD complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data including MALS and binding studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "851d999f-3a33-4adf-b1fd-463b94ef6884",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C41",
+      "claim": "The HDAC1:MTA1 dimer recruits four molecules of RBBP4 to the NuRD complex.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that both sites within the MTA1 monomer are capable of independently recruiting RBBP4 proteins such that the HDAC1:MTA1 dimer recruits four molecules of RBBP4 to the NuRD complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data including MALS and stoichiometry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "16537c44-1c9f-44c6-b52c-298295cae51f",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C42",
+      "claim": "The crystal structure of the central recruitment site reveals an extensive interface that requires some structural rearrangement within RBBP4.",
+      "claim_type": "EXPLICIT",
+      "source": "The crystal structure of this central recruitment site reveals an extensive interface that requires some structural rearrangement within RBBP4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the crystal structure data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "bb37e980-e00f-4fe9-963a-0f63a9db52aa",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C43",
+      "claim": "RBBP4 proteins are tethered to the HDAC1 dimer by MTA1 forming an elongated zig-zag conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "RBBP4 proteins are tethered to the HDAC1 dimer by MTA1 forming an elongated zig-zag conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SAXS and EM data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "3ef4a3b9-e1d4-464d-bc92-c0fcd7ab5275",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C44",
+      "claim": "When in complex with MTA1, RBBP4 is able to interact with histone H3, but not histone H4.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that when in complex with MTA1, RBBP4 is able to interact with histone H3, but not histone H4 suggesting a mechanism for recruitment of the NuRD complex to chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by peptide array binding data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "0f13243c-79ff-407f-98f0-90642bfcab43",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C45",
+      "claim": "An endogenous protein of c. 50kDa co-purified with HDAC1:MTA1 complexes expressed in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "During purifications of various HDAC1:MTA1 complexes expressed in mammalian cells, we observed an endogenous protein of c. 50kDa co-purifying with these complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "323be836-62d4-48ae-b333-c63991f70040",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C46",
+      "claim": "Peptide mass spectrometry identified the c. 50kDa co-purifying protein as being the WD40 protein RBBP4 and/or RBBP7.",
+      "claim_type": "EXPLICIT",
+      "source": "Peptide mass spectrometry identified this protein as being the WD40 protein RBBP4 and/or RBBP7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry data from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "704c5e19-f7a0-4cfc-bfbd-c4ab348f39ce",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C47",
+      "claim": "RBBP4/7 was recruited to MTA1 constructs that lacked the well-characterised carboxy-terminal interaction domain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we were intrigued to find that RBBP4/7 was recruited to constructs that lacked this well-characterised interaction domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "6d2b9aea-f7bd-4081-9980-99a0f172b920",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C48",
+      "claim": "Previous findings indicated that RBBP4/7 may interact with a region containing the MTA1 zinc finger domain and adjacent sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "This appears to fit with previous findings that indicated that RBBP4/7 may interact with a region containing the MTA1 zinc finger domain and adjacent sequences (Roche et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "116814d5-9951-42d6-b06a-00a5d08d0d69",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C49",
+      "claim": "The MTA1-B construct spanning residues 162\u2013546 pulls down a stoichiometric 1:1 ratio of HDAC1:RBBP4/7.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the MTA1-B construct spanning residues 162\u2013546 appears to pull down a stoichiometric 1:1 ratio of HDAC1:RBBP4/7 suggesting that this region is sufficient to form a bona fide interface with RBBP4/7.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gel densitometry data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "4ea9da23-c4b0-40dd-abde-901644088d20",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C50",
+      "claim": "The MTA1 construct spanning residues 162\u2013715 (MTA1-C) pulls down a supra-stoichiometric ratio of 1:1.5 of HDAC1:RBBP4/7.",
+      "claim_type": "EXPLICIT",
+      "source": "Interesting a construct spanning residues 162\u2013715 (MTA1-C) pulls down a supra-stoichiometric ratio of 1:1.5 of HDAC1:RBBP4/7.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by gel densitometry data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "6ac8cac7-02d1-4644-9733-c6f37e84b880",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C51",
+      "claim": "The MTA1-D:RBBP4 complex (MTA1 residues 390\u2013715) has a molecular weight of 130 kDa as determined by MALS.",
+      "claim_type": "EXPLICIT",
+      "source": "The longer fragment of MTA1-D (residues 390\u2013715) in complex with RBBP4 was shown to have a molecular weight of 130 kDa (Figures 1d and 1f; see also Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MALS data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "d900c16b-a1cd-47c2-9802-f78363d494d2",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C52",
+      "claim": "The molecular weight of 130 kDa for the MTA1-D:RBBP4 complex closely fits with the predicted molecular weight (131 kDa) of a 1:2 stoichiometry of one MTA1 fragment bound to two RBBP4 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This closely fits with the predicted molecular weight (131 kDa) of a 1:2 stoichiometry of one MTA1 fragment bound to two RBBP4 proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the MALS data and theoretical molecular weight calculation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "ad14b038-f64c-463e-bae3-b624a40afb50",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C53",
+      "claim": "The MTA1-R1:RBBP4 complex (MTA1 residues 464\u2013546) has a molecular weight of 54 kDa as determined by MALS.",
+      "claim_type": "EXPLICIT",
+      "source": "The shorter MTA1-R1 fragment (residues 464\u2013546) in complex with RBBP4 was determined to have a molecular weight of 54 kDa which is close to the predicted molecular weight of 58 kDa for the 1:1 complex (Figures 1e and 1g; see also Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MALS data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "1f1251eb-5759-4d21-be6b-a996d3ac2b3d",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C54",
+      "claim": "Two RBBP4 proteins are recruited by MTA1 to the NuRD complex.",
+      "claim_type": "EXPLICIT",
+      "source": "It is clear that these experiments support a model in which two RBBP4 proteins are recruited by MTA1 to the NuRD complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "b2ed2787-6921-4273-bf7b-b0ba2da4362f",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C55",
+      "claim": "The interface between MTA1-R1 and RBBP4 is extensive with a buried surface area of 2,837 \u00c52.",
+      "claim_type": "EXPLICIT",
+      "source": "The interface between MTA1-R1 and RBBP4 is extensive with a buried surface area of 2,837 \u00c52 (Figures 2a and 2b, Table 1 and Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the crystal structure data presented in Figure 2 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "b7149df5-4dbb-4303-bfc2-f203be82d0c6",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C56",
+      "claim": "MTA1 interacts on the side of the WD40 beta-propeller domain making interactions in three adjacent grooves.",
+      "claim_type": "EXPLICIT",
+      "source": "MTA1 interacts on the side of the WD40 beta-propeller domain making interactions in three adjacent grooves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "f5f67107-b529-41ef-98bd-317c4fb54226",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C57",
+      "claim": "The residues involved in all three interaction regions between MTA1-R1 and RBBP4 are conserved in both MTA2 and MTA3.",
+      "claim_type": "EXPLICIT",
+      "source": "The residues involved in all three interaction regions are conserved in both MTA2 and MTA3 (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "7d9cc373-66b6-4d3d-a6bf-9608cde31588",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C58",
+      "claim": "The 5G-loop in RBBP4 adopts an ordered structure on MTA1 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The 5G-loop adopts an ordered structure on MTA1 binding such that several non-polar residues form an additional interface with MTA1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the crystal structure data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "1f0fc51a-189a-49b3-8c70-3d50f8d16f09",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C59",
+      "claim": "The HDAC1:MTA1 complex is dimeric, containing two copies of each protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Multi-Angle-Light-Scattering (MALS) confirmed that, as expected from the crystal structure, the HDAC1:MTA1 complex is dimeric, containing two copies of each protein (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MALS data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "afaa3134-240a-4dae-a9d0-e68d8a6a5cc2",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C60",
+      "claim": "The theoretical scattering profile calculated from the crystal structure of HDAC1:MTA1 was in good agreement with the experimental SAXS data with a \u03c72 function of 1.54.",
+      "claim_type": "EXPLICIT",
+      "source": "A theoretical scattering profile was calculated from the crystal structure of HDAC1:MTA1 (Millard et al., 2013) and this was in good agreement with the experimental data with a \u03c72 function of 1.54.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SAXS data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "ea551c7f-a52a-43b0-bfe6-cc78cee9dc3d",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C61",
+      "claim": "The crystal structure of the HDAC1:MTA1 dimer was a convincing fit to the averaged ab initio molecular envelope generated from the SAXS curve.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the crystal structure of the HDAC1:MTA1 dimer was a convincing fit to the averaged ab initio molecular envelope generated from the SAXS curve (Figures 3a, 3b and 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SAXS data and modeling shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "19471e93-9f24-4d8c-96d6-ab696f733daa",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C62",
+      "claim": "MALS analysis of the MTA1:HDAC1:RBBP4 complex showed that this ensemble is dimeric, with the experimental mass of 300 kDa closely matching the theoretical mass (294 kDa).",
+      "claim_type": "EXPLICIT",
+      "source": "MALS analysis of the MTA1:HDAC1:RBBP4 complex showed that this ensemble is also dimeric, with the experimental mass of 300 kDa closely matching the theoretical mass (294 kDa) (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by MALS data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "c0c8f094-4072-41d8-85d3-8baade103013",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C63",
+      "claim": "The ab initio molecular envelope generated from the SAXS curve suggests that the core NuRD complex has an elongated architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "The ab initio molecular envelope generated from the SAXS curve in the lowest symmetry mode (P1) suggests that the core NuRD complex has an elongated architecture (Figures 3d,e and f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SAXS data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "1bad6e2a-a4f2-4301-bcc4-8782bcbb561e",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C64",
+      "claim": "The SAXS envelope has an approximate two-fold symmetry consistent with a dimeric complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Although no symmetry was imposed, the envelope has an approximate two-fold symmetry consistent with a dimeric complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the SAXS data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "74014095-5741-4261-a3df-c7bfbae84724",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C65",
+      "claim": "Crosslinking data indicated that one face of HDAC1 could readily form crosslinks with one face of RBBP4.",
+      "claim_type": "EXPLICIT",
+      "source": "Our crosslinking data indicated that one face of HDAC1 could readily form crosslinks with one face of RBBP4, suggesting a particular relative orientation of the two proteins in the core complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by chemical crosslinking data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "31937079-3e09-46da-9ac7-885e671c797b",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C66",
+      "claim": "A theoretical scattering profile calculated from the docked model of the MTA1:HDAC1:RBBP4 complex showed reasonable agreement with the experimental SAXS data with a \u03c72 function of 2.16.",
+      "claim_type": "EXPLICIT",
+      "source": "A theoretical scattering profile was calculated from the docked model of the MTA1:HDAC1:RBBP4 complex. This showed reasonable agreement with the experimental data with a \u03c72 function of 2.16.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SAXS data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "4f15b9d7-a74e-4326-b78d-d8b1f43f62f0",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C67",
+      "claim": "The EM structure of the core NuRD complex was determined to 19 \u00c5 resolution using the FSC criterion with a cutoff of 0.143.",
+      "claim_type": "EXPLICIT",
+      "source": "A 30 \u00c5 filtered model was then generated, based on the new position of RBBP4, and refined further to produce a 19 \u00c5 EM structure using the FSC criterion with a cutoff of 0.143 (Figure 4b,c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by EM data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "890924b1-9e8f-4654-9bd1-759e44b3329b",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C68",
+      "claim": "The EM envelope showed that RBBP4 and HDAC1 form a closer association than predicted in the SAXS model.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting EM envelope showed that RBBP4 and HDAC1 form a closer association than predicted in the SAXS model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from comparing EM and SAXS models.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "a9e74408-66e8-41b6-b07a-91c3231a32ee",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C69",
+      "claim": "In the EM structure, the RBBP4 domains are tipped by 30\u00b0 such that they are approximately parallel to each other and propagate the symmetry of the HDAC1:MTA1 dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "In their new position the RBBP4 domains are tipped by 30\u00b0 such that they are approximately parallel to each other and propagate the symmetry of the HDAC1:MTA1 dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "363baf27-3025-458c-b945-f992b4e01540",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C70",
+      "claim": "The active sites of both HDACs are on the convex side of the complex and are exposed to enable substrate binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The active sites of both HDACs are on the convex side of the complex and are exposed to enable substrate binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the EM structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "94809cb9-7b48-4b4a-aee4-56f15497ec29",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C71",
+      "claim": "A stretch of c.35 residues is highly similar between the R1 and R2 recruitment regions of MTA1.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence alignment show that a stretch of c.35 residues is highly similar between the two recruitment regions (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "a5f75675-334e-4ebe-b833-b7dfe5b3be65",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C72",
+      "claim": "The path of the mainchain from P492 to I503 in the R1 domain is essentially identical to the equivalent region of the R2 domain when bound to RBBP4.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of this structure with that of the equivalent region of the R1 domain (region B in the description above) shows a highly similar mode of binding to RBBP4 (Figure 5b). Indeed, the path of the mainchain from P492 to I503 is essentially identical.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "602315a5-7560-4ceb-a1be-1213f3320852",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C73",
+      "claim": "The sidechains A495, A496 and R497 in helix H2 and P499, Y500, P502 and I503 in the PYxPI loop mediate key interactions with RBBP4 and are identical in the R2 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The sidechains A495, A496 and R497 in helix H2 and P499, Y500, P502 and I503 in the PYxPI loop mediate key interactions with RBBP4 and are identical in the R2 domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural and sequence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "f166a17d-6234-4cbd-ad3e-05b3ed4686a6",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C74",
+      "claim": "The interface between RBBP4 and the R2 domain is likely to be rather more extensive than was observed in the previously reported crystal structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequence alignment also indicates that the 15 residues preceding helix 2 in the R2 domain have significant sequence similarity to the R1 domain suggesting that the interface between RBBP4 and the R2 domain is likely to be rather more extensive than was observed in the previously reported crystal structure (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on sequence alignment data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "006fc050-afbd-4da1-abf8-13f7191c67da",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C75",
+      "claim": "The surface of RBBP4 that mediates interactions with helix H2 of the R1 and R2 domains of MTA1 has also been shown to mediate interactions with the amino-terminal region of histone H4.",
+      "claim_type": "EXPLICIT",
+      "source": "The surface of RBBP4 that mediates interactions with helix H2 of the R1 and R2 domains of MTA1 has also been shown to mediate interactions with the amino-terminal region of histone H4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge from prior structural studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "1b8a2bc0-f784-47a1-93f8-7da31010c440",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C76",
+      "claim": "There is considerable sequence similarity between the MTA1-R1 and -R2 domains and histone H4.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence alignment of the MTA1-R1 and -R2 domains with histone H4 shows that there is considerable sequence similarity between these proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence alignment data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "df0f61b3-0610-4629-80b1-0f124a6194c6",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C77",
+      "claim": "The structure of histone H4 (residues 27\u201341) in complex with RBBP4 shows a similar mode of binding to the structure of the bound MTA1-R1 and -R2 domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of histone H4 (residues 27\u201341) in complex with RBBP4 shows a similar mode of binding to the structure of the bound MTA1-R1 and -R2 domains (Figure 5c) (Murzina et al., 2008).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 5c and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "daebb33f-4442-4290-91ae-311664d853b9",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C78",
+      "claim": "All three proteins (MTA1-R1, MTA1-R2, and histone H4) bind in the same groove on RBBP4 and make similar sidechain contacts with an Alanine-Arginine dipeptide making identical contacts in all three structures.",
+      "claim_type": "EXPLICIT",
+      "source": "All three proteins bind in the same groove and make similar sidechain contacts with an Alanine-Arginine dipeptide making identical contacts in all three structures (Figures 5b and 5c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figures 5b and 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "71f39b00-5766-40b2-a410-9a5a36b1098e",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C79",
+      "claim": "The extensive interface between RBBP4 and the R1 domain of MTA1 occludes the binding site for histone H4.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given that the extensive interface between RBBP4 and the R1 domain of MTA1 (and by inference the R2 domain) occludes the binding site for histone H4, we would predict that RBBP4 is no longer able to bind histone H4 in the NuRD complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "2bae1159-d051-4636-974c-db50f2c24046",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C80",
+      "claim": "The histone H3 interaction site on RBBP4 is exposed in both the MTA1:RBBP4 binary complex and in the dimeric MTA1:HDAC1:RBBP4 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the histone H3 interaction on RBBP4 is exposed in both the MTA1:RBBP4 binary complex and in the dimeric MTA1:HDAC1:RBBP4 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "ddf98ffb-f4fe-4a60-b2f6-521c4d821677",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C81",
+      "claim": "RBBP4 is likely to play a role in recruiting the NuRD complex to histone H3 tails, but not to histone H4.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that RBBP4 is likely to play a role in recruiting the NuRD complex to histone H3 tails, but not to histone H4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural data showing H3 binding site is exposed while H4 binding site is occluded.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "03017efb-64d9-45cb-9c53-1d4486f83bea",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C82",
+      "claim": "Both RBBP4 and the MTA1-R1:RBBP4 complex showed an identical pattern of binding to histone H3 peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, we observed that both RBBP4 and the MTA1-R1:RBBP4 complex showed an identical pattern of binding to histone H3 peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by peptide array binding data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "d0f46ac8-af8b-4d07-9a93-76ed39861c98",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C83",
+      "claim": "Free RBBP4 bound multiple histone H4 tails.",
+      "claim_type": "EXPLICIT",
+      "source": "The free RBBP4 bound multiple histone H4 tails.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by peptide array binding data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "6d315859-8044-4649-b3ce-bf9bb6585530",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C84",
+      "claim": "The MTA1-R1:RBBP4 complex showed only binding to two histone H4 peptides and this was not reproduced in the duplicate arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the MTA1-R1:RBBP4 complex showed only binding to two histone H4 peptides and this was not reproduced in the duplicate arrays (Figure 6\u2014figure supplement 1 and Figure 6\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by peptide array binding data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "3660d9d9-dcaa-49d0-a44f-c1b44807b707",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C85",
+      "claim": "When bound to MTA1, RBBP4 binds to histone H3 and not histone H4.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together this suggests that when bound to MTA1, RBBP4 binds to histone H3 and not histone H4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the peptide array binding data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "5f30e4ed-eebe-4269-989a-5ef8c8e45ac2",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C86",
+      "claim": "The core NuRD complex forms an elongated zig-zag structure centred around the HDAC1:MTA1 dimerization domain, with RBBP4 'lobes' symmetrically bound to the dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "This core complex forms an elongated zig-zag structure as visualised by SAXS and EM, centred around the HDAC1:MTA1 dimerization domain, with RBBP4 'lobes' symmetrically bound to the dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SAXS and EM data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "86fc8f06-7493-4e9e-b354-a0c4eec8650a",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C87",
+      "claim": "A central section of MTA1 directly recruits RBBP4/7 and brings this subunit into close proximity to HDAC1/2.",
+      "claim_type": "EXPLICIT",
+      "source": "We have established that a central section of MTA1 directly recruits RBBP4/7 and brings this subunit into close proximity to HDAC1/2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural and biochemical data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "ff2c3761-bc47-4d9a-8b16-535b0c463646",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C88",
+      "claim": "Each MTA1 protein recruits two RBBP4/7 molecules to the NuRD complex through the R1 and R2 interaction domains.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that each MTA1 protein recruits two RBBP4/7 molcules to the NuRD complex through the R1 and R2 interaction domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data including MALS and stoichiometry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "9eb7bd03-8561-4814-8047-c7a5e370b3e0",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C89",
+      "claim": "Since MTA1 is a dimer in the complex, the NuRD complex contains four copies of the RBBP4/7 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Since MTA1 is itself a dimer in the complex (Millard et al., 2013) this means that the NuRD complex contains four copies of the RBBP4/7 proteins, which we have confirmed experimentally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the dimeric nature of MTA1 and the experimental data showing two RBBP4 per MTA1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "c16a377a-81b7-4aed-8612-365ed8988e26",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C90",
+      "claim": "Recognisable R1 and R2 interaction domains are present in MTA1 and 2 proteins from fly to man suggesting that the stoichiometry of the NuRD complex is evolutionarily conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "Recognisable R1 and R2 interaction domains are present in MTA1 and 2 proteins from fly to man suggesting that the stoichiometry of the NuRD complex is evolutionarily conserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on sequence conservation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "9300fe94-f8df-4cb1-9536-45aff82f4ada",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C91",
+      "claim": "A previous study using label-free mass spectrometry reported a 1:2 MTA1:RBBP4/7 stoichiometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings fit partially with a previous study of the NuRD complex using label-free mass spectrometry. In this study they also report a 1:2 MTA1:RBBP4/7 stoichiometry, but in contrast to our previous crystal structure of the MTA1:HDAC1 complex, they find a 1:3 HDAC:MTA stoichiometry (Smits et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "ceecde74-4408-4c76-97a5-adab93fd0622",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C92",
+      "claim": "A previous study using label-free mass spectrometry found a 1:3 HDAC:MTA stoichiometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings fit partially with a previous study of the NuRD complex using label-free mass spectrometry. In this study they also report a 1:2 MTA1:RBBP4/7 stoichiometry, but in contrast to our previous crystal structure of the MTA1:HDAC1 complex, they find a 1:3 HDAC:MTA stoichiometry (Smits et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "0cbd5940-36e9-49e6-b8ec-d1067d2e470b",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C93",
+      "claim": "Alqarni et al. used isothermal titration calorimetry (ITC) to compare the affinity of interaction of the helical region of the R2 domain from MTA1 (656\u2013686) with that of histone H4.",
+      "claim_type": "EXPLICIT",
+      "source": "Alqarni et al. used isothermal titration calorimetry (ITC) to compare the affinity of interaction of the helical region of the R2 domain from MTA1 (656\u2013686) with that of histone H4, which they observed bound in the same groove of RBBP4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "948ed890-ab0a-4bb0-a684-d17be13a10ec",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C94",
+      "claim": "The similarity in affinity between MTA1-R2 and histone H4 for RBBP4 led to the suggestion that there may be competition between MTA1 and histone H4 for binding to RBBP4.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity in affinity led them to suggest that there may be competition between MTA1 and histone H4 for binding to RBBP4 (Alqarni et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement references a suggestion from prior published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "6d2dd177-6d18-491e-a031-5f9101b92125",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C95",
+      "claim": "There is likely to be a more extensive interface between MTA1-R2 and RBBP4 with an additional helix and beta-strand contributing to the interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that there is likely to be a more extensive interface between MTA1-R2 and RBBP4 with an additional helix and beta-strand contributing to the interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural data from the R1 domain and sequence similarity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "403f2ed6-3393-4aa9-8bf8-80b170c10d9f",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C96",
+      "claim": "Cross-linking data supports a more extensive interface between MTA1-R2 and RBBP4.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in fact supported by cross-linking data (Kloet et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "542f95c2-c53a-40c7-93e1-81b8d0998d79",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C97",
+      "claim": "Histone H4 is unlikely to be able to compete with either MTA1-R1 or R2 for binding to RBBP4.",
+      "claim_type": "EXPLICIT",
+      "source": "Given this extended interface we suggest that histone H4 is unlikely to be able to compete with either MTA1-R1 or R2 for binding to RBBP4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural data showing the extensive interface.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "d70099df-bd6d-448f-bf37-84b69d6d15f8",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C98",
+      "claim": "The MTA1-R1:RBBP4 complex appeared highly stable since the resin-bound complex could be washed with 2 M NaCl and 5% triton-X-100 without significant dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the MTA1-R1:RBBP4 complex appeared highly stable since the resin-bound complex could be washed with 2 M NaCl and 5% triton-X-100 without significant dissociation (data not shown).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations (though data not shown).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "75c47f6b-03a1-4a9a-bf21-5131dd578efd",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C99",
+      "claim": "Once bound to MTA1, the two RBBP4 molecules would remain permanently assembled as a complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together our data suggest that once bound to MTA1, the two RBBP4 molcules would remain permanently assembled as a complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the stability data and structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "aaf12562-692f-46d7-8067-09b89ad2ef34",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C100",
+      "claim": "The crystal structure of RBBP4 bound to a histone H3 tail peptide shows that the interaction surface lies on the 'top' of the WD40 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the crystal structure of RBBP4 bound to a histone H3 tail peptide shows that the interaction surface lies on the 'top' of the WD40 domain (Schmitges et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior structural work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "f661e12d-39ad-48ea-a237-0f4777d3b4c8",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C101",
+      "claim": "The histone H3 binding site on RBBP4 is not blocked by binding to MTA1-R1.",
+      "claim_type": "EXPLICIT",
+      "source": "This site is not blocked by binding to MTA1-R1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "ff84e8e6-9c15-4bbd-8aa8-d94f757a4bad",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C102",
+      "claim": "RBBP4 would theoretically remain able to bind to histone H3 tails whilst assembled into the NuRD complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus RBBP4 would theoretically remain able to bind to histone H3 tails whilst assembled into the NuRD complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural data showing the H3 binding site is exposed.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "9ee5eaf4-fba1-42c4-a3d6-2d7bc72b81f2",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C103",
+      "claim": "The model of recruitment to histone H3 is consistent with the architecture of the MTA1:HDAC1:RBBP4 complex since the orientation of RBBP4 relative to the HDAC1:MTA1 dimer means that the histone H3 binding surface of RBBP4 is exposed.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a model of recruitment to histone H3 is consistent with the architecture of the MTA1:HDAC1:RBBP4 complex since the orientation of RBBP4 relative to the HDAC1:MTA1 dimer means that the histone H3 binding surface of RBBP4 is exposed, albeit close to the interface between HDAC1 and RBBP4, and therefore able to bind the tail of histone H3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "9867c95f-7308-432d-809b-531812274c73",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C104",
+      "claim": "The histone recruitment site on RBBP4 is sufficiently close to the catalytic site of HDAC1 to allow other histone tails to access the active site.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the histone recruitment site is sufficiently close to the catalytic site of HDAC1 to allow other histone tails to access the active site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "8fe52fd7-fbde-4558-b079-eae3f38aeb46",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C105",
+      "claim": "Both RBBP4 and the RBBP4:MTA1 complex show enhanced binding to modified tails of histone H3 lysine 27 (H3K27).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, both RBBP4 and the RBBP4:MTA1 complex show enhanced binding to modified tails of histone H3 lysine 27 (H3K27) (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by peptide array binding data shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "68d3afff-89f1-40b8-a079-4441a0d6c874",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C106",
+      "claim": "H3K27 acetylation and H3K27 methylation appear to promote RBBP4 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, H3K27 acetylation and H3K27 methylation appear to promote binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by peptide array binding data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "9b115231-5458-4c18-aa53-947fe583bed6",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C107",
+      "claim": "Previous studies have observed association of the NuRD complex with a specific subset of gene promoters enriched with H3K27me3.",
+      "claim_type": "EXPLICIT",
+      "source": "This would correlate with previous studies that have observed association of the NuRD complex with a specific subset of gene promoters enriched with H3K27me3 (Reynolds et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "1d9f6d95-7c8f-4f73-a81c-ac6cb419b435",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C108",
+      "claim": "MBD3, a component of the NuRD complex has been reported to localise at H3K27ac and H3K27me3 enriched sites.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, MBD3, a component of the NuRD complex has been reported to localise at H3K27ac and H3K27me3 enriched sites (Shimbo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "b6585113-6b86-4f2f-af29-9335794a5bf9",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C109",
+      "claim": "RBBP4 may have an important role in directing the NuRD complex to chromatin bearing H3K27 modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "RBBP4 may therefore have an important role in directing the NuRD complex to chromatin bearing these modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the binding data showing preference for H3K27 modifications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "48c0b58f-7025-4888-a6d4-4193b2ab1f16",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C110",
+      "claim": "The residues important for mediating interaction with MTA1 are 100% identical between RBBP4 and RBBP7.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structural data suggest that the residues important for mediating interaction with MTA1 are 100% identical and therefore we would expect both RBBP4 and RBBP7 to be associated with the NuRD complex depending upon relative abundance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis of RBBP4 and RBBP7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "db8fdea4-593b-4675-9aed-2246ea37524b",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C111",
+      "claim": "Both RBBP4 and RBBP7 would be expected to be associated with the NuRD complex depending upon relative abundance.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structural data suggest that the residues important for mediating interaction with MTA1 are 100% identical and therefore we would expect both RBBP4 and RBBP7 to be associated with the NuRD complex depending upon relative abundance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the sequence identity data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "1b5511df-d2c4-4897-bcea-1279653b54ef",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C112",
+      "claim": "In MTA3 the recruitment domain R2 is not present in any species.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, in MTA3 the recruitment domain R2 is not present in any species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis of MTA3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "a5f791b2-2a53-4632-b158-9321b5ea4c39",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C113",
+      "claim": "MTA3 only recruits a single RBBP4/7 molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that MTA3 only recruits a single RBBP4/7 molcule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the absence of the R2 domain in MTA3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "df99124a-fa16-4d25-bcd6-567e3da28db5",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C114",
+      "claim": "A splice variant of MTA1 (MTA1S) does not contain either R1 or R2 domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a splice variant of MTA1 (MTA1S) does not contain either R1 or R2 domains (Yaguchi et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "9bbdc36c-ebc4-40f2-b37b-4d84892f2d69",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C115",
+      "claim": "Variant NuRD complexes containing MTA3 or MTA1S will exhibit different specificities due to different modes of chromatin recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "It is intriguing to speculate that these variant NuRD complexes will exhibit different specificities due to different modes of chromatin recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the structural and sequence data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "b45e8dfe-56a0-4039-9e84-b23a500b4d51",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "claim_id": "C116",
+      "claim": "The presence of four RBBP4 molecules in the NuRD complex increases the avidity for chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Presumably the presence of four RBBP4 molcules in the NuRD complex increases the avidity for chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the stoichiometry data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "01dd99f9-415c-4faf-bab1-686a094292a0",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MTA1 recruits two RBBP4 molecules through two distinct recruitment sites (R1 and R2), resulting in four RBBP4 molecules per dimeric NuRD complex. The MTA1-B construct (residues 162-546) containing the R1 domain recruits RBBP4 in a 1:1 stoichiometry, while the MTA1-D construct (residues 390-715) containing both R1 and R2 domains recruits RBBP4 in a 1:2 stoichiometry, as determined by MALS and gel densitometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C38-C41, C49-C54, C88-C89 are strongly supported by multiple complementary experimental approaches including MALS (C51-C53), gel densitometry (C49-C50), and stoichiometry analysis. The data consistently demonstrate that MTA1 contains two independent RBBP4 recruitment sites, and since MTA1 is dimeric, the complex contains four RBBP4 molecules. The molecular weight measurements closely match theoretical predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "b902297d-d262-46ee-a942-17b27375862d",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The crystal structure of the MTA1-R1:RBBP4 complex reveals an extensive interface with a buried surface area of 2,837 \u00c5\u00b2. MTA1 interacts with RBBP4 on the side of the WD40 beta-propeller domain through three adjacent grooves, with residues conserved in MTA2 and MTA3. The 5G-loop in RBBP4 adopts an ordered structure upon MTA1 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C42, C55-C58 are well-supported by crystallographic data presented in Figure 2 and Table 1. The structure was solved to 3.2 \u00c5 resolution with clear electron density. The buried surface area calculation, structural features, and sequence conservation analysis are all directly derived from the crystal structure data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "32aa0892-2eb4-45b1-bdc3-980f88abdec0",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The architecture of the core NuRD complex was determined using EM (19 \u00c5 resolution), SAXS, and chemical crosslinking. The complex forms an elongated zig-zag structure with the HDAC1:MTA1 dimer at the center and RBBP4 lobes symmetrically positioned. RBBP4 and HDAC1 form a closer association than predicted by SAXS alone, with RBBP4 domains tipped by 30\u00b0 and approximately parallel to each other.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C43, C59-C70, C86-C87 are supported by multiple complementary structural techniques. The EM structure at 19 \u00c5 resolution (FSC criterion 0.143) is consistent with SAXS data (\u03c7\u00b2 = 2.16 for the full complex) and chemical crosslinking constraints. The integration of multiple methods provides strong support for the overall architecture, though the resolution is modest.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "0dfe3171-a83a-4d17-9d87-22bb02f4e94c",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "When bound to MTA1, RBBP4 retains the ability to bind histone H3 tails but loses the ability to bind histone H4 tails. The extensive MTA1-R1:RBBP4 interface occludes the H4 binding site, while the H3 binding site on the top face of RBBP4 remains exposed. Peptide array data confirm that the MTA1-R1:RBBP4 complex binds H3 peptides identically to free RBBP4, but shows no reproducible binding to H4 peptides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9, C44, C79-C85, C97, C101-C104 are well-supported by both structural analysis and peptide array binding data (Figure 6). The structural data clearly show that the H4 binding groove is occupied by MTA1, while the H3 binding site is exposed. The peptide array experiments provide direct experimental validation, showing identical H3 binding patterns but loss of H4 binding when RBBP4 is complexed with MTA1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "3afca97d-8a53-4e1a-b1d1-97f090ec389f",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The R1 and R2 recruitment domains of MTA1 show significant sequence similarity (c.35 residues) and bind RBBP4 in a highly similar manner. The mainchain path from P492 to I503 in R1 is essentially identical to the equivalent region in R2, with key interacting residues conserved. Both domains bind in the same groove as histone H4, making similar contacts including an identical Alanine-Arginine dipeptide interaction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C74, C76-C78 are supported by sequence alignment data (Figure 5a) and structural comparison (Figure 5b,c). The structural overlay demonstrates the similarity in binding mode between R1 and R2 domains, and with histone H4. However, C74 is an inference about the R2 interface being more extensive than previously reported, which is reasonable but not directly demonstrated by new structural data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "9c0ff62b-441f-4bac-99a5-7c4950307b81",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Both RBBP4 alone and the RBBP4:MTA1 complex show enhanced binding to histone H3 tails modified at lysine 27 (H3K27), particularly H3K27 acetylation and methylation. This suggests RBBP4 may have an important role in directing the NuRD complex to chromatin bearing H3K27 modifications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C105-C106, C109 are supported by peptide array binding data shown in Figure 6a. The enhanced binding to H3K27-modified peptides is clearly demonstrated. However, C109 is an inference about the biological role, which is reasonable given the data and correlation with prior studies (C107-C108), but represents a mechanistic interpretation rather than direct demonstration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "406b3ef7-8240-4af9-9bff-d6b71b271f0c",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The R1 and R2 recruitment domains are evolutionarily conserved in MTA1 and MTA2 from fly to man, suggesting conserved stoichiometry. However, MTA3 lacks the R2 domain in all species, suggesting it recruits only a single RBBP4/7 molecule per monomer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90, C112-C113 are supported by sequence conservation analysis across species. The presence of R1 and R2 in MTA1/2 and absence of R2 in MTA3 is clearly demonstrated. The inference about MTA3 recruiting only one RBBP4 (C113) is logical based on the structural and biochemical data for MTA1, though not directly tested experimentally.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "f721926d-9e89-4b36-994d-00c05a6bca67",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The interface between MTA1-R2 and RBBP4 is likely more extensive than previously reported, with additional helix and beta-strand contributions. The MTA1-R1:RBBP4 complex is highly stable, withstanding washes with 2 M NaCl and 5% Triton X-100, suggesting RBBP4 molecules remain permanently assembled once bound to MTA1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C95-C96 are inferences based on sequence similarity to R1 and supported by crosslinking data from prior literature (C96). Claims C98-C99 about stability are based on experimental observations, but the data are not shown (C98 states 'data not shown'). While the inference about permanent assembly (C99) is reasonable, it lacks direct experimental validation and represents speculation about the biological state.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "96d0159a-ee79-45ae-b532-754ebca6433e",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The residues important for mediating interaction with MTA1 are 100% identical between RBBP4 and RBBP7, suggesting both proteins would be associated with the NuRD complex depending on relative abundance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C110-C111 are supported by sequence analysis showing 100% identity at the MTA1-interacting residues. The inference that both RBBP4 and RBBP7 can associate with NuRD (C111) is reasonable given the structural data and known 92% overall sequence identity between the proteins.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "b328be6a-84fd-49ed-a4d3-12b86af3129f",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "During purification of HDAC1:MTA1 complexes from mammalian cells, an endogenous ~50 kDa protein co-purified and was identified by mass spectrometry as RBBP4/7. Notably, RBBP4/7 was recruited to MTA1 constructs lacking the previously characterized C-terminal interaction domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 describe the initial experimental observations that led to the discovery of the R1 domain. These are straightforward experimental observations supported by mass spectrometry identification and co-purification data shown in Figure 1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "81cb4d1b-0417-4cf2-9da0-c748a695a546",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "A previous mass spectrometry study reported a 1:2 MTA1:RBBP4/7 stoichiometry (consistent with current findings) but found a 1:3 HDAC:MTA stoichiometry (inconsistent with the authors' previous crystal structure showing 1:1 HDAC:MTA).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C92 accurately report findings from prior literature (Smits et al., 2012). This represents a fair assessment of how the current work relates to previous studies, noting both agreement and disagreement.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "e64d7be7-4fe6-4e1c-b9df-a14b9ce838c8",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Variant NuRD complexes containing MTA3 or the MTA1S splice variant (which lacks both R1 and R2 domains) may exhibit different specificities due to different modes of chromatin recruitment. The presence of four RBBP4 molecules in the standard NuRD complex presumably increases avidity for chromatin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C115-C116 are explicitly speculative (C115 states 'intriguing to speculate' and C116 states 'presumably'). While these are reasonable hypotheses based on the structural and biochemical data, they represent future directions rather than demonstrated results. No experimental data are provided to test these predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    },
+    {
+      "id": "3d1f354e-1907-4c81-bbb5-20128976673b",
+      "content_id": "7a2b2c26-adac-4e7e-ace7-739d51b2edbd",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background information about the NuRD complex, its components (HDAC1/2, MTA1/2/3, RBBP4/7), their known functions, domain structures, and previously characterized interactions. This includes established knowledge about HDAC function, MTA protein domains, RBBP4/7 structure and histone binding properties, and prior structural studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C37, C48, C75, C93-C94, C100, C107-C108, C114 represent background information drawn from established knowledge and prior literature. These are appropriately cited and provide necessary context for the current work. They are not novel findings of this study but are accurately presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:29:51.047152Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "df749d46-68d4-4b80-8b03-7dff8174eb63",
+      "result_id": "01dd99f9-415c-4faf-bab1-686a094292a0"
+    },
+    {
+      "claim_id": "62840ab7-1567-4373-b567-7d183732796c",
+      "result_id": "01dd99f9-415c-4faf-bab1-686a094292a0"
+    },
+    {
+      "claim_id": "786bad87-4cc6-4b21-af89-2afdf760dff0",
+      "result_id": "01dd99f9-415c-4faf-bab1-686a094292a0"
+    },
+    {
+      "claim_id": "d9ed46ac-0ebd-4118-b1f2-7aa852d660c0",
+      "result_id": "01dd99f9-415c-4faf-bab1-686a094292a0"
+    },
+    {
+      "claim_id": "851d999f-3a33-4adf-b1fd-463b94ef6884",
+      "result_id": "01dd99f9-415c-4faf-bab1-686a094292a0"
+    },
+    {
+      "claim_id": "116814d5-9951-42d6-b06a-00a5d08d0d69",
+      "result_id": "01dd99f9-415c-4faf-bab1-686a094292a0"
+    },
+    {
+      "claim_id": "4ea9da23-c4b0-40dd-abde-901644088d20",
+      "result_id": "01dd99f9-415c-4faf-bab1-686a094292a0"
+    },
+    {
+      "claim_id": "6ac8cac7-02d1-4644-9733-c6f37e84b880",
+      "result_id": "01dd99f9-415c-4faf-bab1-686a094292a0"
+    },
+    {
+      "claim_id": "d900c16b-a1cd-47c2-9802-f78363d494d2",
+      "result_id": "01dd99f9-415c-4faf-bab1-686a094292a0"
+    },
+    {
+      "claim_id": "ad14b038-f64c-463e-bae3-b624a40afb50",
+      "result_id": "01dd99f9-415c-4faf-bab1-686a094292a0"
+    },
+    {
+      "claim_id": "1f1251eb-5759-4d21-be6b-a996d3ac2b3d",
+      "result_id": "01dd99f9-415c-4faf-bab1-686a094292a0"
+    },
+    {
+      "claim_id": "ff2c3761-bc47-4d9a-8b16-535b0c463646",
+      "result_id": "01dd99f9-415c-4faf-bab1-686a094292a0"
+    },
+    {
+      "claim_id": "9eb7bd03-8561-4814-8047-c7a5e370b3e0",
+      "result_id": "01dd99f9-415c-4faf-bab1-686a094292a0"
+    },
+    {
+      "claim_id": "fa8f2a0b-0915-443f-aa5c-5e9a501aae14",
+      "result_id": "b902297d-d262-46ee-a942-17b27375862d"
+    },
+    {
+      "claim_id": "16537c44-1c9f-44c6-b52c-298295cae51f",
+      "result_id": "b902297d-d262-46ee-a942-17b27375862d"
+    },
+    {
+      "claim_id": "b2ed2787-6921-4273-bf7b-b0ba2da4362f",
+      "result_id": "b902297d-d262-46ee-a942-17b27375862d"
+    },
+    {
+      "claim_id": "b7149df5-4dbb-4303-bfc2-f203be82d0c6",
+      "result_id": "b902297d-d262-46ee-a942-17b27375862d"
+    },
+    {
+      "claim_id": "f5f67107-b529-41ef-98bd-317c4fb54226",
+      "result_id": "b902297d-d262-46ee-a942-17b27375862d"
+    },
+    {
+      "claim_id": "7d9cc373-66b6-4d3d-a6bf-9608cde31588",
+      "result_id": "b902297d-d262-46ee-a942-17b27375862d"
+    },
+    {
+      "claim_id": "2168d414-47a4-48c5-a81f-7de056b0e9ab",
+      "result_id": "32aa0892-2eb4-45b1-bdc3-980f88abdec0"
+    },
+    {
+      "claim_id": "bb37e980-e00f-4fe9-963a-0f63a9db52aa",
+      "result_id": "32aa0892-2eb4-45b1-bdc3-980f88abdec0"
+    },
+    {
+      "claim_id": "1f0fc51a-189a-49b3-8c70-3d50f8d16f09",
+      "result_id": "32aa0892-2eb4-45b1-bdc3-980f88abdec0"
+    },
+    {
+      "claim_id": "afaa3134-240a-4dae-a9d0-e68d8a6a5cc2",
+      "result_id": "32aa0892-2eb4-45b1-bdc3-980f88abdec0"
+    },
+    {
+      "claim_id": "ea551c7f-a52a-43b0-bfe6-cc78cee9dc3d",
+      "result_id": "32aa0892-2eb4-45b1-bdc3-980f88abdec0"
+    },
+    {
+      "claim_id": "19471e93-9f24-4d8c-96d6-ab696f733daa",
+      "result_id": "32aa0892-2eb4-45b1-bdc3-980f88abdec0"
+    },
+    {
+      "claim_id": "c0c8f094-4072-41d8-85d3-8baade103013",
+      "result_id": "32aa0892-2eb4-45b1-bdc3-980f88abdec0"
+    },
+    {
+      "claim_id": "1bad6e2a-a4f2-4301-bcc4-8782bcbb561e",
+      "result_id": "32aa0892-2eb4-45b1-bdc3-980f88abdec0"
+    },
+    {
+      "claim_id": "74014095-5741-4261-a3df-c7bfbae84724",
+      "result_id": "32aa0892-2eb4-45b1-bdc3-980f88abdec0"
+    },
+    {
+      "claim_id": "31937079-3e09-46da-9ac7-885e671c797b",
+      "result_id": "32aa0892-2eb4-45b1-bdc3-980f88abdec0"
+    },
+    {
+      "claim_id": "4f15b9d7-a74e-4326-b78d-d8b1f43f62f0",
+      "result_id": "32aa0892-2eb4-45b1-bdc3-980f88abdec0"
+    },
+    {
+      "claim_id": "890924b1-9e8f-4654-9bd1-759e44b3329b",
+      "result_id": "32aa0892-2eb4-45b1-bdc3-980f88abdec0"
+    },
+    {
+      "claim_id": "a9e74408-66e8-41b6-b07a-91c3231a32ee",
+      "result_id": "32aa0892-2eb4-45b1-bdc3-980f88abdec0"
+    },
+    {
+      "claim_id": "363baf27-3025-458c-b945-f992b4e01540",
+      "result_id": "32aa0892-2eb4-45b1-bdc3-980f88abdec0"
+    },
+    {
+      "claim_id": "5f30e4ed-eebe-4269-989a-5ef8c8e45ac2",
+      "result_id": "32aa0892-2eb4-45b1-bdc3-980f88abdec0"
+    },
+    {
+      "claim_id": "86fc8f06-7493-4e9e-b354-a0c4eec8650a",
+      "result_id": "32aa0892-2eb4-45b1-bdc3-980f88abdec0"
+    },
+    {
+      "claim_id": "e89f2a16-d76d-43b5-be19-be3453ac07d1",
+      "result_id": "0dfe3171-a83a-4d17-9d87-22bb02f4e94c"
+    },
+    {
+      "claim_id": "3ef4a3b9-e1d4-464d-bc92-c0fcd7ab5275",
+      "result_id": "0dfe3171-a83a-4d17-9d87-22bb02f4e94c"
+    },
+    {
+      "claim_id": "71f39b00-5766-40b2-a410-9a5a36b1098e",
+      "result_id": "0dfe3171-a83a-4d17-9d87-22bb02f4e94c"
+    },
+    {
+      "claim_id": "2bae1159-d051-4636-974c-db50f2c24046",
+      "result_id": "0dfe3171-a83a-4d17-9d87-22bb02f4e94c"
+    },
+    {
+      "claim_id": "ddf98ffb-f4fe-4a60-b2f6-521c4d821677",
+      "result_id": "0dfe3171-a83a-4d17-9d87-22bb02f4e94c"
+    },
+    {
+      "claim_id": "03017efb-64d9-45cb-9c53-1d4486f83bea",
+      "result_id": "0dfe3171-a83a-4d17-9d87-22bb02f4e94c"
+    },
+    {
+      "claim_id": "d0f46ac8-af8b-4d07-9a93-76ed39861c98",
+      "result_id": "0dfe3171-a83a-4d17-9d87-22bb02f4e94c"
+    },
+    {
+      "claim_id": "6d315859-8044-4649-b3ce-bf9bb6585530",
+      "result_id": "0dfe3171-a83a-4d17-9d87-22bb02f4e94c"
+    },
+    {
+      "claim_id": "3660d9d9-dcaa-49d0-a44f-c1b44807b707",
+      "result_id": "0dfe3171-a83a-4d17-9d87-22bb02f4e94c"
+    },
+    {
+      "claim_id": "542f95c2-c53a-40c7-93e1-81b8d0998d79",
+      "result_id": "0dfe3171-a83a-4d17-9d87-22bb02f4e94c"
+    },
+    {
+      "claim_id": "f661e12d-39ad-48ea-a237-0f4777d3b4c8",
+      "result_id": "0dfe3171-a83a-4d17-9d87-22bb02f4e94c"
+    },
+    {
+      "claim_id": "ff84e8e6-9c15-4bbd-8aa8-d94f757a4bad",
+      "result_id": "0dfe3171-a83a-4d17-9d87-22bb02f4e94c"
+    },
+    {
+      "claim_id": "9ee5eaf4-fba1-42c4-a3d6-2d7bc72b81f2",
+      "result_id": "0dfe3171-a83a-4d17-9d87-22bb02f4e94c"
+    },
+    {
+      "claim_id": "9867c95f-7308-432d-809b-531812274c73",
+      "result_id": "0dfe3171-a83a-4d17-9d87-22bb02f4e94c"
+    },
+    {
+      "claim_id": "94809cb9-7b48-4b4a-aee4-56f15497ec29",
+      "result_id": "3afca97d-8a53-4e1a-b1d1-97f090ec389f"
+    },
+    {
+      "claim_id": "a5f75675-334e-4ebe-b833-b7dfe5b3be65",
+      "result_id": "3afca97d-8a53-4e1a-b1d1-97f090ec389f"
+    },
+    {
+      "claim_id": "602315a5-7560-4ceb-a1be-1213f3320852",
+      "result_id": "3afca97d-8a53-4e1a-b1d1-97f090ec389f"
+    },
+    {
+      "claim_id": "f166a17d-6234-4cbd-ad3e-05b3ed4686a6",
+      "result_id": "3afca97d-8a53-4e1a-b1d1-97f090ec389f"
+    },
+    {
+      "claim_id": "1b8a2bc0-f784-47a1-93f8-7da31010c440",
+      "result_id": "3afca97d-8a53-4e1a-b1d1-97f090ec389f"
+    },
+    {
+      "claim_id": "df0f61b3-0610-4629-80b1-0f124a6194c6",
+      "result_id": "3afca97d-8a53-4e1a-b1d1-97f090ec389f"
+    },
+    {
+      "claim_id": "daebb33f-4442-4290-91ae-311664d853b9",
+      "result_id": "3afca97d-8a53-4e1a-b1d1-97f090ec389f"
+    },
+    {
+      "claim_id": "8fe52fd7-fbde-4558-b079-eae3f38aeb46",
+      "result_id": "9c0ff62b-441f-4bac-99a5-7c4950307b81"
+    },
+    {
+      "claim_id": "68d3afff-89f1-40b8-a079-4441a0d6c874",
+      "result_id": "9c0ff62b-441f-4bac-99a5-7c4950307b81"
+    },
+    {
+      "claim_id": "b6585113-6b86-4f2f-af29-9335794a5bf9",
+      "result_id": "9c0ff62b-441f-4bac-99a5-7c4950307b81"
+    },
+    {
+      "claim_id": "c16a377a-81b7-4aed-8612-365ed8988e26",
+      "result_id": "406b3ef7-8240-4af9-9bff-d6b71b271f0c"
+    },
+    {
+      "claim_id": "1b5511df-d2c4-4897-bcea-1279653b54ef",
+      "result_id": "406b3ef7-8240-4af9-9bff-d6b71b271f0c"
+    },
+    {
+      "claim_id": "a5f791b2-2a53-4632-b158-9321b5ea4c39",
+      "result_id": "406b3ef7-8240-4af9-9bff-d6b71b271f0c"
+    },
+    {
+      "claim_id": "6d2dd177-6d18-491e-a031-5f9101b92125",
+      "result_id": "f721926d-9e89-4b36-994d-00c05a6bca67"
+    },
+    {
+      "claim_id": "403f2ed6-3393-4aa9-8bf8-80b170c10d9f",
+      "result_id": "f721926d-9e89-4b36-994d-00c05a6bca67"
+    },
+    {
+      "claim_id": "d70099df-bd6d-448f-bf37-84b69d6d15f8",
+      "result_id": "f721926d-9e89-4b36-994d-00c05a6bca67"
+    },
+    {
+      "claim_id": "75c47f6b-03a1-4a9a-bf21-5131dd578efd",
+      "result_id": "f721926d-9e89-4b36-994d-00c05a6bca67"
+    },
+    {
+      "claim_id": "48c0b58f-7025-4888-a6d4-4193b2ab1f16",
+      "result_id": "96d0159a-ee79-45ae-b532-754ebca6433e"
+    },
+    {
+      "claim_id": "db8fdea4-593b-4675-9aed-2246ea37524b",
+      "result_id": "96d0159a-ee79-45ae-b532-754ebca6433e"
+    },
+    {
+      "claim_id": "0f13243c-79ff-407f-98f0-90642bfcab43",
+      "result_id": "b328be6a-84fd-49ed-a4d3-12b86af3129f"
+    },
+    {
+      "claim_id": "323be836-62d4-48ae-b333-c63991f70040",
+      "result_id": "b328be6a-84fd-49ed-a4d3-12b86af3129f"
+    },
+    {
+      "claim_id": "704c5e19-f7a0-4cfc-bfbd-c4ab348f39ce",
+      "result_id": "b328be6a-84fd-49ed-a4d3-12b86af3129f"
+    },
+    {
+      "claim_id": "9300fe94-f8df-4cb1-9536-45aff82f4ada",
+      "result_id": "81cb4d1b-0417-4cf2-9da0-c748a695a546"
+    },
+    {
+      "claim_id": "ceecde74-4408-4c76-97a5-adab93fd0622",
+      "result_id": "81cb4d1b-0417-4cf2-9da0-c748a695a546"
+    },
+    {
+      "claim_id": "9bbdc36c-ebc4-40f2-b37b-4d84892f2d69",
+      "result_id": "e64d7be7-4fe6-4e1c-b9df-a14b9ce838c8"
+    },
+    {
+      "claim_id": "b45e8dfe-56a0-4039-9e84-b23a500b4d51",
+      "result_id": "e64d7be7-4fe6-4e1c-b9df-a14b9ce838c8"
+    },
+    {
+      "claim_id": "c43ee741-c3fb-452f-9110-9a47c275c5da",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "816fc07d-fbcd-4846-85e4-f94ba97c5a17",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "cd81e51f-d351-47b8-b147-b6ec7e4282c2",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "def20265-c08c-41ce-9dfa-469a2b1b106a",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "eb1d19a6-8a63-4401-b44d-008ed490935c",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "bc3e5320-6e3a-42fe-824e-2200149b1e8f",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "14413251-46d7-49ab-bc70-c53b0e355f99",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "f8942987-c88e-4ab6-a47a-f7652ed81b5f",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "919625d2-c4c7-48da-bdab-8d5728f60b16",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "75d783b4-839b-48e3-8e46-364f27889f62",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "5d4c6111-4c51-45a8-9401-10ae531f7860",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "d8a507b7-627f-4524-9a72-52ba0d407578",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "324efac7-967c-485f-96d5-c921640520e5",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "ad44c9ec-f017-4cb1-86e0-4d2d253f3c02",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "c6c60844-97fb-4baa-a964-1bd55f385ba1",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "44b60b24-acec-4914-ae7c-148c1aefc52b",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "3f1a2279-eeb4-4b1c-b5d0-250995024b11",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "8fb2d873-897f-470c-be34-a9428c693db1",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "62a1a7ac-6665-40b3-9600-2dc0a9461d41",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "d7c77e58-76fc-4560-bf3e-c6a771d9b1fa",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "ae5f092f-276e-49be-8059-f64f6fab888a",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "51f0cb99-01a5-41b1-8ae5-652ef8ea10d5",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "d9b9af93-4721-47d2-830c-6ccd145555d6",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "c4f91307-7ed8-43cd-a6a8-72d8a4e28a81",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "eef06d82-6982-4959-ab50-6aba0b93e7be",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "7aaa3371-2634-4b3e-a4dd-5c7951808074",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "8855733b-7501-4832-89b6-ca1e85122de0",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "a12e526d-7ba3-4339-8bef-b9b073326b51",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "04313d33-a87f-4651-9b3d-2bedf53044fd",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "e21de498-67ec-488f-bd5b-c07a06f5b944",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "788b464c-5d2d-4a80-a9ef-5741eda0b50b",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "6b826a5d-2111-421e-abaf-8b4c57cba788",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "6d2b9aea-f7bd-4081-9980-99a0f172b920",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "006fc050-afbd-4da1-abf8-13f7191c67da",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "0cbd5940-36e9-49e6-b8ec-d1067d2e470b",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "948ed890-ab0a-4bb0-a684-d17be13a10ec",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "aaf12562-692f-46d7-8067-09b89ad2ef34",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "9b115231-5458-4c18-aa53-947fe583bed6",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "1d9f6d95-7c8f-4f73-a81c-ac6cb419b435",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    },
+    {
+      "claim_id": "df99124a-fa16-4d25-bcd6-567e3da28db5",
+      "result_id": "3d1f354e-1907-4c81-bbb5-20128976673b"
+    }
+  ],
+  "comparisons": []
+}

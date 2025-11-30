@@ -1,0 +1,1282 @@
+{
+  "submission": {
+    "id": "8755f1a9-7c84-4e5a-9e49-081d5d993ece",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:23:56.244181Z",
+    "updated_at": "2025-11-29T22:23:56.244181Z"
+  },
+  "content": [
+    {
+      "id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "submission_id": "8755f1a9-7c84-4e5a-9e49-081d5d993ece",
+      "content_type": "manuscript",
+      "content_text": "# Evaluation of predictions of the stochastic model of organelle production based on exact distributions\n\n## Authors\n\n- C Jeremy Craven<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Molecular Biology and Biotechnology University of Sheffield Sheffield United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe present a reanalysis of the stochastic model of organelle production and show that the equilibrium distributions for the organelle numbers predicted by this model can be readily calculated in three different scenarios. These three distributions can be identified as standard distributions, and the corresponding exact formulae for their mean and variance can therefore be used in further analysis. This removes the need to rely on stochastic simulations or approximate formulae (derived using the fluctuation dissipation theorem). These calculations allow for further analysis of the predictions of the model. On the basis of this we question the extent to which the model can be used to conclude that peroxisome biogenesis is dominated by de novo production when Saccharomyces cerevisiae cells are grown on glucose medium.\n\n## Introduction\n\nRecently a model was presented in which the variation of numbers of a particular type of organelle (Golgi apparatus, vacuoles or peroxisomes) observed in cells was proposed as a diagnostic indicator of the relative importance of different processes by which organelles can be formed and destroyed (Mukherji and O\u2019Shea, 2014; see Mukherji and O\u2019Shea, 2015 for a correction). Here we re-examine the mathematical analysis of this model and show that further insight can be gained from considering exact calculations of the equilibrium distributions. For conciseness we will refer to the model, and the analysis in the associated paper (Mukherji and O\u2019Shea, 2014), by the abbreviation SMOP (stochastic model of organelle production).\n\n## Analysis\n\n### The SMOP model in the context of \u201cbirth and death\u201d models\n\nIn the SMOP model, four processes are envisaged for the production and destruction of organelles: de novo synthesis, fission, fusion and decay. These four processes are characterised by one rate constant each, defined in the SMOP paper as kde novo, kfission, kfusion, and \u03b3. Following the definitions in the SMOP paper, the probabilities of each of the four processes occurring in the next small time period \u03b4t are given in Table 1. We also include in this table the total rate of each process that would be observed instantaneously in a large population of N cells.\n\n**Table 1.**\n Definition of terms in the SMOP model\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Process</th>\n      <th>Probability of process occurring\u00a0in next \u03b4t in a particular cell containing n organelles1</th>\n      <th>Process changes n by</th>\n      <th>Rate of process in sample of N cells2</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>De novo</td>\n      <td>kde\u00a0novo\u03b4t</td>\n      <td>1</td>\n      <td>kde novofnN</td>\n    </tr>\n    <tr>\n      <td>Fission</td>\n      <td>kfissionn\u03b4t</td>\n      <td>1</td>\n      <td>kfissionnfnN</td>\n    </tr>\n    <tr>\n      <td>Decay</td>\n      <td>\u03b3n\u03b4t</td>\n      <td>-1</td>\n      <td>\u03b3nfnN</td>\n    </tr>\n    <tr>\n      <td>Fusion</td>\n      <td>kfusionn(n-1)\u03b4t</td>\n      <td>-1</td>\n      <td>kfusionn(n-1)fnN</td>\n    </tr>\n  </tbody>\n</table>\n\n_1For example, if kfission\u00a0=\u00a00.02 then the probability of a cell with n\u00a0=\u00a02 organelles undergoing a fission event in the next 0.1 time units = 0.02x2x0.1 = 0.004.2fn is the fraction of cells having n organelles. For example, if 23% of the cells have 2 organelles then f2\u00a0=\u00a00.23. If, in a population of 1000 cells, f2\u00a0=\u00a00.23 and kfission\u00a0=\u00a00.02\u00a0then the rate of cells changing from having n\u00a0=\u00a02 to n\u00a0=\u00a03 organelles at any one moment due to fission would be 0.02x2x0.23x1000 = 9.2 cells per time unit._\n\nModels involving processes of this type are generically termed \u201cbirth and death\u201d processes and have a very long history of analysis in the context both of the life sciences (e.g. evolution; Yule, 1924) and in the context of physical processes (e.g. detection of cosmic rays; Furry, 1937). Accessible discussions can be found in several books (Bailey, 1990, which is a reissue of the classic text from 1964; Taylor and Karlin, 1998). In such analyses, the three processes of de novo production, production by fission, and loss by first order decay are often termed immigration, birth and death, respectively. Immigration is used for a process that increases the number of individuals but does not require any other individuals already to be present. Birth is the process by which one individual gives rise to a second individual. Death is a process by which a particular individual is lost from a population with a probability that is independent of any other members of the population. Analyses including a fusion term are much less common.\n\nAs there are a considerable number of possible combinations of the four processes that might be active, we will use a notation here to define a model by listing in curly brackets the active production processes, followed by the active destruction processes, separated by a semi-colon. Any process that is not mentioned has a rate constant of zero. Thus the model with de novo, fission and decay terms would be denoted {de novo, fission; decay}.\n\nDuring single cell simulations based upon the equations in Table 1 the number of organelles will fluctuate (Figure 1A) and one can ask what fraction of time, fn, does a cell spend having n\u00a0=\u00a00, n\u00a0=\u00a01, n\u00a0=\u00a02, etc. organelles. This is equivalent to asking what fraction of a large ensemble of cells have n\u00a0=\u00a00, n\u00a0=\u00a01, n\u00a0=\u00a02, etc. organelles at one moment in time. In treatments of stochastic systems, the values of fn would normally be described as the probability distribution for a cell having n organelles. In terms of a population of cells it can be described as a population distribution.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/10167/elife-10167-fig1-v1.jpg)\n\n**Figure 1.:** (A) The traces show simulations run with the parameters {kde novo\u00a0=\u00a02.0, kfission\u00a0=\u00a00.9; \u03b3\u00a0=\u00a01.0, kfusion\u00a0=\u00a00.02}, starting from n\u00a0=\u00a00 (black trace) and n\u00a0=\u00a050 (green trace). Both simulations \u201csettle down\u201d to stochastic fluctuations about a mean value of <n>\u00a0=\u00a07.1 (B) Schematic representation of a set of cells that are all initialised to n\u00a0=\u00a01 at time t\u00a0=\u00a00, and are observed at a time t\u00a0=\u00a0\u03c4. (C) Distributions calculated with the same parameters as in (A) for a set of 1000 cells as in (B), calculated for \u03c4\u00a0=\u00a00.2 (magenta), 0.4 (yellow), 1.0 (green), 2.0 (blue), 5.0 (black), 10.0 (cyan), 15.0 (red). The curves for \u03c4 = 10.0 and \u03c4 =\u00a015.0 become very similar as they approach the limiting distribution. These two curves match closely the result (filled black circles) of applying the recurrence relation (Equation 2; Appendix 2). (D) The red trace is a time course for parameters {kde novo\u00a0=\u00a02.0, kfission\u00a0=\u00a01.1; \u03b3\u00a0=\u00a01.0, kfusion\u00a0=\u00a00}. Since kfission\u00a0>\u00a0\u03b3, and kfusion\u00a0=\u00a00, then n diverges; in such a case there is no limiting distribution.\n\nThe simulations in Figure 1A illustrate the important point that a simulation is always started from some arbitrary starting point, and that a period of time must elapse before the simulations can be considered to be independent of this starting point. If the distribution fn is evaluated at different times after the starting point of simulations (Figure 1C) then different distributions are obtained; hence the distribution is \u201ctime dependent\u201d. As the probability (or population) distribution varies in time (and since the system can in principle be started from any state) then it is not strictly possible to talk of \u201cthe distribution\u201d for a stochastic system. However in many birth and death models the system will settle down to a limiting distribution, independent of the starting states of the cell(s) as in the cyan and red curves in Figure 1C. Such a situation corresponds to a state of dynamic equilibrium that is familiar from chemical kinetics. Thus the terms limiting, equilibrium (or steady state) distributions can be used in this context interchangeably. The conditions for the models studied here to have limiting distributions is discussed further below; an example of a set of parameters for which a SMOP model does not yield a limiting distribution is shown in Figure 1D.\n\nAssuming that a limiting probability distribution does exist there are two basic sampling methods by which it can be measured, irrespective of whether one is making experimental observations or performing simulations. One method is to note n at a set of time points for a single cell (such as points drawn from the trajectories in Figure 1A), and the other is to take a large number of cells at one point in time, and measure n across this ensemble of cells (Figure 1B,C). The former would require a time dependent set of observations that may be difficult to obtain experimentally. The latter approach is equivalent to making experimental observations on a large field of view of cells, or of making repeated simulations. However there is a large caveat that when the measurements are made one must be convinced that the cells have had \u201clong enough to reach equilibrium\u201d since the last significant perturbation to the system. If this is not the case then the distribution measured will be contaminated with contributions from non-equilibrium distributions (such as from the magenta, yellow, green and blue curves in Figure 1C). Perturbations include the choice of an arbitrary starting point in simulations, and effects such as cell division and change of growth conditions in experimental data.\n\n### Does the SMOP analysis imply equilibrium distributions?\n\nIt is implicitly assumed in the SMOP paper that the populations are to be considered to be at equilibrium (or that the probability distributions are in their limiting form) for all three cases of the analysis via simulations, from experimental data, or via the fluctuation dissipation theorem; a comment has been added to the original articles to clarify this assumption for the simulations (see the comment dated November 23, 2015 on Mukherji and O'Shea, 2014). For the experimental data this seems a reasonable assumption, although dynamic population data are really required to fully settle this issue. The fluctuation dissipation theorem method implicitly assumes a steady state (Paulsson, 2005).\n\n### Derivation of recurrence relation for the distribution of organelles in the {de novo, fission; decay, fusion} model\n\nBy applying an equilibrium condition it is straightforward to derive precise relations for the distributions in the three scenarios considered in the original SMOP paper, and hence avoid the approximations introduced by the use of the fluctuation dissipation theorem.\n\nAt equilibrium, the rate at which the population gains cells with n\u00a0+\u00a01\u00a0organelles due to cells with n organelles gaining one organelle must equal the rate at which the cells with n\u00a0+ 1\u00a0organelles lose one organelle. The reasoning is the same as for standard treatments of dynamic equilibrium between two states (as in a chemical reaction), and the complete justification of this when there are multiple states (i.e. cells with n\u00a0=\u00a00, n\u00a0=\u00a01, n\u00a0=\u00a02, etc., organelles) is given in Appendix 1.\n\nThus at equilibrium\n\n$$\n(k_{de\u00a0novo}+\u00a0k_{fission}n)f_{n}N\u00a0=\u00a0(\\gamma+\u00a0k_{fusion}n)(n\u00a0+\u00a01)f_{n+1}N\n$$\n\nwhich gives\n\n$$\nf_{n+1}\u00a0=\u00a0\\frac{(k_{de\u00a0novo}+\u00a0k_{fission}n)}{(\\gamma+\u00a0k_{fusion}n)n+\u00a01}f_{n}\n$$\n\nFrom Equation 2 the exact distribution of organelle numbers at equilibrium can be calculated for a model involving any combination of the four processes, without recourse to random number based simulations and the attendant issues of ensuring adequate sampling precision.\n\nAn explicit numerical example of the use of Equation 2 to generate a distribution is given in Appendix 2. Briefly, an arbitrary value for f0 is chosen; f1 is then calculated from f0;\u00a0f2 is calculated from f1; f3 is calculated from f2; etc. Finally the entire distribution is normalised, which removes any dependence on the initial choice for f0. Equation 2 is often termed a recurrence relation (or sometimes recursion relation or difference equation) as it allows successive terms in a distribution to be calculated from earlier terms.\n\n### Application of recurrence method to Golgi and vacuole models\n\nThe recurrence relation readily allows the derivation of precise distributions for the case of the model applied to Golgi ({de novo; decay}, Appendix 3) and vacuoles ({fission; fusion}, Appendix 4). For the Golgi, a Poisson distribution is obtained as the limiting distribution in accord with the SMOP analysis. However for vacuoles a truncated Poisson distribution is obtained, and not the shifted Poisson distribution that is reported in the SMOP analysis. Although the difference between these distributions is quite subtle (Appendix 4), the variation of Fano factor with <n> is significantly different: the Fano factor for the truncated Poisson approaches 1 much more rapidly (Figure 2, green curve) than for the shifted Poisson (Figure 2, black curve).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/10167/elife-10167-fig2-v1.jpg)\n\n**Figure 2.:** Three data points quoted in the SMOP paper are plotted: \u25a1 Haploid (glucose); \u25cb Diploid (glucose); \u2206 Haploid (oleate). The solid black curve is the expectation from the shifted Poisson distribution (which is the incorrect distribution given the {fission; fusion} model) and the solid green curve is the expectation from the truncated Poisson distribution (which is the correct distribution given the model). The dashed line is for a Fano factor of 1. The solid curves were constructed by calculating a family of distributions and evaluating the mean and Fano factor.\n\nIn Figure 2, it can be seen that the experimental values quoted in the SMOP analysis are in excellent agreement with the incorrect prediction, whilst the agreement with the corrected theoretical prediction is much less good. This greatly weakens the argument that the SMOP model makes \u201cquantitatively accurate predictions\u201d or that it therefore correctly accounts for the behaviour of the vacuole population.\n\n### Application of recurrence method to peroxisome models\n\nHaving established the value of analysing the SMOP model with the recurrence method, we move on to the case of peroxisomes.\n\n#### Recurrence relation demonstrates that {de novo, fission; decay} yields a negative binomial distribution\n\nFor peroxisomes, the primary model discussed in the SMOP analysis is a model in which peroxisomes can potentially form both de novo and by fission, and fusion is considered to be negligible. We show in Appendix 5 that such a {de novo, fission; decay} model has a limiting distribution that is a negative binomial distribution.\n\nAs a result, exact expressions (for all parameter values) are readily obtained (Appendix 5) for the mean and Fano factor for this model,\n\n$$\nn\u00a0=\u00a0\\frac{k_{de\u00a0novo}}{\\gamma\u2212k_{fission}}\n$$\n\n$$\n\\frac{\\sigma^{2}}{n}\u00a0=\u00a0\\frac{\\gamma}{\\gamma\u2212k_{fission}}\n$$\n\nCombining Equations 3,4 gives an alternative form for the Fano factor\n\n$$\n\\frac{\\sigma^{2}}{n}\u00a0=\u00a01+\\frac{k_{fission}n}{k_{de\u00a0novo}}\n$$\n\nThis latter equation is the form given in the SMOP analysis as the kfusion\u00a0=\u00a00 limit of the approximate Equation 1 of the SMOP paper. By explicitly applying the equilibrium assumption we have therefore shown that this expression is exact in this case for all values of the parameters.\n\n#### Evaluation of Fano factor for the boundary marking equal de novo and fission rates\n\nAn attractive claim made for the SMOP analysis is that the value for the Fano factor can be used to distinguish between different modes of organelle production.\n\nIn Figure 3D of the original SMOP paper, a green dashed line was placed at \u03c32/n=1 and stated as \u201cmarking the boundary between de novo synthesis and fission dominated organelle production\u201d. Thus, as presented in Figure 3D of the original version of the SMOP paper, the Fano factor for cells grown on oleate (\u03c32/n=2.4\u00b10.2)\u00a0appears to lie significantly above the line where the rates are equal, and thus terms such as \u201cfission dominated biogenesis\u201d are used widely in the SMOP paper.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/10167/elife-10167-fig3-v1.jpg)\n\n**Figure 3.:** For each value of the Fano factor shown, a bar is drawn to represent the total production rate. The filled part of the bar represents the contribution from de novo production inferred from the model and the open part of the bar represents the inferred rate from fission. Bars are shown for Fano factors of: 1.0 (100% de novo); 1.1 (experimentally observed for glucose growth (G) in SMOP paper; 9% de novo, 91% fission); 2.0 (boundary value, where de novo and fission contributions are equal); 2.4 (experimentally reported value for oleate growth (O) in SMOP paper; 42% de novo, 58% fission); 3.0 (value required for fission rate to be double the de novo rate). The total production rate from de novo processes is simply kde novo. The total rate from fission processes is kfission<n>. The relative proportions of the two processes were calculated using Equation 5.\n\nHowever, according to Equation 5 the correct value with equal contributions from the two processes is $\\sigma^{2}/n=2$. A correction to this effect has now been issued. The value of $\\sigma^{2}/n=1$ corresponds to the extreme case of zero fission and production solely by de novo production (Figure 3). In the corrected version of Figure 3D in the SMOP paper it is clear that the inferred fission rate for growth on oleate is only barely greater than the de novo synthesis rate and the term \u201cdominance\u201d does not seem to be appropriate. It is clear from Figure 3 that the inferred contribution from fission grows only rather slowly as the Fano factor increases above a value of two. In other words, for fission to be truly dominant a Fano factor would have to be observed that was far greater than any reported in the SMOP paper.\n\n#### Restrictions on the relationships between parameters in order for limiting distributions to exist\n\nSince it is inherent in the SMOP analysis that the distributions are limiting/equilibrium distributions, it is important to consider whether a limiting distribution will ever be reached.\n\nIn the case of the peroxisome model, {de novo, fission; decay}, for the system to have a limiting or equilibrium distribution there is a strong restriction on parameters, namely that kfission <\u00a0\u03b3. To see why this restriction exists, consider first the more simple {de novo; decay} model. Considering a single cell, the number of organelles will be limited by the fact that as n grows larger then the decay process (whose rate increases proportionally to n) will become increasingly more likely than the de novo formation process (which is independent of n). If the fission process is introduced then there is now a production term that also increases proportionally to n. If kfission exceeds \u03b3 then the fission process will always exceed the decay process and the number of organelles will grow without limit.\n\nThe behaviour as kfission becomes similar to \u03b3 can also be seen from Equations 3,4 since if kfission is increased from zero until it becomes equal to \u03b3 then <n> and $\\sigma^{2}/n$ both diverge. Thus at first sight there appear to be two different ways in which the Fano factor can become very large. One way, as extensively discussed in the SMOP analysis and above, is if the mean rate kfission<n> becomes large compared to the mean rate kde novo. The other way, that becomes clear from our analysis, is if the rate constant kfission becomes similar to the rate constant \u03b3. The connection between these two relations is that <n> is a function of all three rate constants. This emphasises the hidden complexity of the interplay of the parameters in this model.\n\n## Discussion\n\nOur motivation for this in depth analysis of the SMOP method was sparked by the claim that it could differentiate between fission and fusion dominated mechanisms of peroxisome biogenesis. That the distribution of numbers of organelles can give a clue to the mechanisms by which organelles are formed is a very elegant idea, and the SMOP analysis combines this idea with a very simple kinetic model. As we explored the system further we realised that the fluctuation dissipation theorem result was not necessary for analysis of the system, and that enforcing the equilibrium condition, that was implicit in the work already, greatly simplified the analysis.\n\nThere are a number of factors that cause us to question the utility of the SMOP model. A main piece of evidence for the correctness of the model was the agreement of the experimentally observed Fano factors for the vacuole data with those from the model. We have shown this agreement to be much less perfect than originally demonstrated. We have also shown that there is a strong interplay between different parameters in the model. This means that the agreement of experimental data with the model is not as compelling as originally presented and that the interpretation of experimental observations back to mechanistic conclusions is open to question. We hope that our analysis will stimulate discussion as to whether, for instance, the SMOP model captures the key features of the underlying processes and is just lacking some details; or whether the model fundamentally lacks key aspects of feedback. The assumption that observations of cells grown in batch culture faithfully report equilibrium distributions also requires further verification.\n\nA key conclusion of the SMOP analysis is that the contribution of fission to peroxisome biogenesis is negligible (<10%) when yeast cells are grown on glucose, but \"dominant\" when they are grown on oleate. This is an area of some contention (Hoepfner et al, 2005; Motley and Hettema, 2007), and a recent model relied on fission of peroxisomes during organelle inheritance as the proliferation mechanism (Knoblach et al, 2013). Our analysis has shown that the term \u201cdominant\u201d is misleading, and that the data reported for haploid cells grown on oleate indicates approximately equal contributions from the two processes.\n\nNevertheless the model does suggest that the proportion of production by fission increases by about a factor of five on switching to oleate growth. Supporting evidence for this was provided by the observation of the reduction in the inferred fission contribution in cells grown on oleate in which the fission factors Vps1 or Dnm1 (or Fis1, an accessory factor of Dnm1) were deleted. On the other hand, no data were shown for glucose grown cells harbouring the same deletions. On glucose the Fano factor is reported in the SMOP analysis as 1.1, with <n>\u00a0=\u00a03, and from Equations 3,4 one obtains kde\u00a0novo\u00a0=\u00a02.7\u03b3 and kfission\u00a0=\u00a00.1\u03b3. The model then implies that on deletion of the fission pathway (i.e. setting kfission\u00a0=\u00a00) then <n> would only drop by 10%. Peroxisome count data has been reported recently (Fig S4, Motley et al., 2015), with values of <n>\u00a0=\u00a04.9 in WT cells, <n>\u00a0=\u00a01.5 in vps1\u0394 cells and <n>\u00a0=\u00a01.2 in vps1\u0394dnm1\u0394 cells. The drops in peroxisome numbers in vps1\u0394 and vps1\u0394dnm1\u0394 cells are much greater than the 10% estimated above from the SMOP model. There is also peroxisome count data in Kuravi et al. (2006), which gives <n>\u00a0=\u00a01.6 (WT), <n>\u00a0=\u00a01.2 (vps1\u0394), <n>\u00a0=\u00a01.7 (dnm1\u0394), <n>\u00a0=\u00a00.9 (dnm1\u0394vps1\u0394). The drop in <n> for the dnm1\u0394vps1\u0394 again conflicts with the idea that fission is such a small contributor to the biogenesis process. The discrepancies between these various data possibly arise from difficulties in quantifying peroxisome numbers, especially when cells contain a large number of small (and therefore low fluorescence) peroxisomes as may be the case when fission is a strong contributor to biogenesis. The problem of peroxisome counts depending on the brightness of fluorescent markers has been commented on by Jung et al. (2010).\n\nThere is a continuing push for cell biology to become more quantitative, and to be subject to the use of rigorous models as are common in the physical sciences. Such a push raises significant challenges not only in terms of developing tractable models and justifying the underlying assumptions, but also in terms of the application of the model to complex experimental data. In particular this work highlights the need for greater accounting for detection limits and intensity distributions, as well of time dependent issues, in the reporting and analysis of organelle count data, if these are to be used to infer details of organelle biogenesis mechanisms.\n\n## Materials and methods\n\nAll calculations were performed in python 2.7, running either via Cygwin under Windows 8.1, or Linux Mint 17.0. The code used for running stochastic simulations and for calculating distributions via Equation 2 is given in Source code 1,2. Time units are arbitrary. The time step for the simulations in Figure 1 was 0.0001 units. Equation 2 can be reformulated in terms of three parameters, e.g. kde novo/\u03b3, kfission/\u03b3, kfusion/\u03b3; thus for example the parameters {kde novo\u00a0=\u00a02.0, kfission\u00a0= 0.9; \u03b3\u00a0=\u00a01.0, kfusion\u00a0=\u00a00.02} and any uniformly scaled set of parameters (e.g. {kde novo\u00a0=\u00a04.0, kfission\u00a0= 1.8; \u03b3\u00a0=\u00a02.0, kfusion\u00a0=\u00a00.04}) yield the same limiting distribution. As in the SMOP paper, the Fano factor is defined here as $\\frac{\\sigma^{2}}{n}$.\n",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "a2e85c65-cc23-4130-a4f1-cde60632d595",
+      "submission_id": "8755f1a9-7c84-4e5a-9e49-081d5d993ece",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Vivek Malhotra, The Barcelona Institute of Science and Technology , Spain\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.10167.010](https://doi.org/10.7554/eLife.10167.010)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"A reanalysis of the stochastic model of organelle production\" for peer review at eLife. Your submission has been favorably evaluated by Vivek Malhotra (Senior Editor) and two reviewers.\n\nThe reviewers have discussed the reviews with one another and the Senior Editor has drafted this decision to help you prepare a revised submission.\n\nSpecifically, the reviewers have raised a concern that your arguments are too aggressive and it would be best to tone down your statements. For example, you refer to \"a number of errors\" in the previous paper. The reviewers feel that this is incorrect or at least overstates the case. The reviewers agree that there was a major error in the O'Shea paper, namely the use of the shifted rather than the truncated Poisson distribution. Other than this, the mathematical results reported in the previous paper are correct as far as they go. Your manuscript shows that certain expressions in the Mukherji and O'Shea paper are exact, even though O'Shea and colleagues had reported them as approximate. This cannot be considered an error. The use of the word \"dominant\" is misleading, but is not a mathematical error. An abbreviated summary of the reviews follows.\n\nA) Assessment of the manuscript:\n\nFirst, I can find nothing mathematically incorrect about the present manuscript. The arguments are sound. Unlike the Mukherji and O'Shea paper, results are explicitly derived and all steps are detailed so readers are convinced of the correctness of these results. The paper is written in a rather pedagogical manner, the various results presented here are basically textbook material. For instance, deriving the detailed balance condition, explaining the stochastic simulation code, deriving the Poisson distribution, etc. would be standard graduate-level material typically not reported in a physics paper.\n\nI do think a good point made in the present manuscript is the issue of identifiability, i.e. is it possible to identify an underlying microscopic model based on certain macroscopic measurements? It is clear from the new analysis that many combinations of parameter values can \"mix together\" to produce indistinguishable Fano factors, etc. However, on its own I don't think this analysis would have been considered a strong contribution. It is only as a critique of the Mukherji and O'Shea paper that this manuscript might be considered.\n\nB) The contribution of the Mukherji and O'Shea paper:\n\nThe Mukherji and O'Shea paper made three major contributions:\n\n1) It put forward the idea that heterogeneity in organelle number could be used to distinguish competing models of organelle biogenesis.\n\n2) It made predictions from different models of biogenesis.\n\n3) It reported experiments and compared them with predictions.\n\nC) The critique of the Mukherji and O'Shea paper:\n\nThere are two major concerns raised about the Mukherji and O'Shea paper:\n\n1) Were the simulations and the experiments truly done so the equilibrium assumption is correct?\n\n2) The use of the shifted rather than the truncated Poisson distribution.\n\nThere are also two minor concerns:\n\n3) What is the basis for various approximate Fano factors reported in the Mukherji and O'Shea paper?\n\n4) The use of the term \"dominance\" in many places gives the reader the wrong impression.\n\nLet's analyse each of these in turn.\n\n1) During the review of the Mukherji and O'Shea paper, the issue of cell division as a confounding factor was explicitly raised. The authors' response was to provide more detailed simulations in which they showed that the Fano factors did not vary greatly when partitioning of organelles during division was taken into account, and was approximately as observed when the only mode of organelle reduction was a first-order decay term. This argument was convincing, assuming that equilibrium had truly been reached. I will add that the idea mentioned in the present manuscript (subsection \u201cDoes the SMOP analysis imply equilibrium distributions?\u201d) that only if the time to equilibrium is short compared to the cell cycle time will the limiting distribution be valid, is a matter of scope. If the model explicitly includes cell division as one of the processes, that larger model will itself reach a limiting distribution. I agree that Mukherji and O'Shea provided no evidence that equilibrium had been reached, either in the simulations or the experiments, and were not requested to by the reviewers. This condition is typically assumed to be correct, and rarely are authors asked for evidence.\n\n2) Is there any evidence that the simulations of the Mukherji and O'Shea paper had not reached equilibrium? I would assume that Mukherji and O'Shea would have done the correct validation steps, and there is some evidence of that in their Figure 1 for example. However, it is then difficult to understand how the error about the truncated vs. the shifted Poisson distribution could have arisen. I admit that this point could have been discovered by the reviewers if they had explicitly repeated some of the reported calculations in the Mukherji and O'Shea paper, and I for one overlooked it. It is unclear how the exact stochastic simulations could be in agreement with an incorrect shifted Poisson prediction. In the Mukherji and O'Shea paper no simulation matching the shifted Poisson prediction is given. Perhaps this simulation was never done, otherwise Mukherji and O'Shea would have discovered the discrepancy.\n\n3) For certain expressions in the Mukherji and O'Shea paper, which arise out of an approximate calculation using the fluctuation-dissipation theorem (subsection \u201cIncorrect analysis of cases with kfusion \u2260 0\u201d of this manuscript), it is not explained how they were derived. This is a valid but minor concern; Mukherji and O'Shea would likely be able to provide the derivation. The point that the approximations were not necessary given the existence of an exact result is worth reporting but does not on its own detract from the original findings. In particular, many expressions derived in the Mukherji and O'Shea paper are correct, as shown in the present manuscript.\n\n4) The misleading use of the word \"dominant\". There are scientific contexts where \"dominance\" is interchangeable with \"greater than\". E.g. in game theory, the word \"dominance\" is applied when the payoff from one strategy is just greater than from other strategy. Mukherji and O'Shea used the word \"dominance\" or \"dominates\" throughout their paper, but \"contributed greater than\" or some such term might have been more appropriate. I agree that this gives the reader the wrong impression, but does not, on its own, invalidate the results of Mukherji and O'Shea.\n\nD) Is the critique valid?\n\nI had said in my original review and I reiterate there: the ideas in the Mukherji and O'Shea paper were worth reporting, and I had hoped the original Mukherji and O'Shea paper would stimulate discussion and be improved upon with new analyses and measurements. The present manuscript in a sense validates this hope: discussion has indeed been stimulated. However, it is true that the original paper contained one major error not caught in the review process: use of the shifted rather than the truncated Poisson distribution. The present author argues that this weakens the central attraction of the previous paper, which was the strong agreement of theory and experiment. I would argue that the agreement itself, which was admittedly a striking feature, was not the central point on which the Mukherji and O'Shea paper stood. If the original paper had reported the correct distribution and highlighted the discrepancy with measured data, that would have also been food for thought.\n\nOverall, I feel this is a more accessible and comprehensive theoretical analysis than the Mukherji and O'Shea paper provided, and serves to continue the original discussion.\n",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a207eb78-06c2-43be-8fc3-f3fab51fdb47",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C1",
+      "claim": "The equilibrium distributions for organelle numbers predicted by the stochastic model of organelle production can be readily calculated in three different scenarios.",
+      "claim_type": "EXPLICIT",
+      "source": "We present a reanalysis of the stochastic model of organelle production and show that the equilibrium distributions for the organelle numbers predicted by this model can be readily calculated in three different scenarios.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the mathematical derivations and calculations presented throughout the manuscript, including recurrence relations and exact formulae.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "9ba66d04-c3e7-4616-b056-5d30aaf91388",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C2",
+      "claim": "The three equilibrium distributions can be identified as standard distributions.",
+      "claim_type": "EXPLICIT",
+      "source": "These three distributions can be identified as standard distributions, and the corresponding exact formulae for their mean and variance can therefore be used in further analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies the distributions as Poisson (for Golgi), truncated Poisson (for vacuoles), and negative binomial (for peroxisomes).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "c003d1f6-b179-4763-a564-0522a94505a8",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C3",
+      "claim": "Using exact distributions removes the need to rely on stochastic simulations or approximate formulae derived using the fluctuation dissipation theorem.",
+      "claim_type": "EXPLICIT",
+      "source": "This removes the need to rely on stochastic simulations or approximate formulae (derived using the fluctuation dissipation theorem).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript demonstrates that exact calculations can be performed using recurrence relations instead of simulations or approximations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "03497c84-a08d-439b-adf3-0802bff3f3e6",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C4",
+      "claim": "The extent to which the model can conclude that peroxisome biogenesis is dominated by de novo production when Saccharomyces cerevisiae cells are grown on glucose medium is questionable.",
+      "claim_type": "EXPLICIT",
+      "source": "On the basis of this we question the extent to which the model can be used to conclude that peroxisome biogenesis is dominated by de novo production when Saccharomyces cerevisiae cells are grown on glucose medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents analysis showing that the interpretation of the original SMOP model regarding dominance of de novo production is misleading.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "f986cedf-7447-461b-9c26-eec022c28d73",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C5",
+      "claim": "A model was presented in which the variation of numbers of a particular type of organelle observed in cells was proposed as a diagnostic indicator of the relative importance of different processes by which organelles can be formed and destroyed.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently a model was presented in which the variation of numbers of a particular type of organelle (Golgi apparatus, vacuoles or peroxisomes) observed in cells was proposed as a diagnostic indicator of the relative importance of different processes by which organelles can be formed and destroyed (Mukherji and O'Shea, 2014; see Mukherji and O'Shea, 2015 for a correction).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to the original SMOP paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "41906441-b888-4f89-a89c-6e4418904b56",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C6",
+      "claim": "In the SMOP model, four processes are envisaged for the production and destruction of organelles: de novo synthesis, fission, fusion and decay.",
+      "claim_type": "EXPLICIT",
+      "source": "In the SMOP model, four processes are envisaged for the production and destruction of organelles: de novo synthesis, fission, fusion and decay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure as presented in the original SMOP paper.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "833ca337-58a7-48a0-b9cc-c1818b858c33",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C7",
+      "claim": "Models involving birth and death processes have a very long history of analysis in the context of life sciences and physical processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Models involving processes of this type are generically termed \"birth and death\" processes and have a very long history of analysis in the context both of the life sciences (e.g. evolution; Yule, 1924) and in the context of physical processes (e.g. detection of cosmic rays; Furry, 1937).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to historical work by Yule (1924) and Furry (1937).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "2eaafb0f-7b2c-48c5-8853-aa398c7784b7",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C8",
+      "claim": "In birth and death analyses, de novo production, production by fission, and loss by first order decay are often termed immigration, birth and death, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In such analyses, the three processes of de novo production, production by fission, and loss by first order decay are often termed immigration, birth and death, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established terminology in the field of birth and death processes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "79aa334f-0c54-4e8e-983a-62b065b8cd14",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C9",
+      "claim": "Immigration is used for a process that increases the number of individuals but does not require any other individuals already to be present.",
+      "claim_type": "EXPLICIT",
+      "source": "Immigration is used for a process that increases the number of individuals but does not require any other individuals already to be present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard definition in birth and death process theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "0919988b-87ff-4b08-983b-b614bccd7f90",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C10",
+      "claim": "Birth is the process by which one individual gives rise to a second individual.",
+      "claim_type": "EXPLICIT",
+      "source": "Birth is the process by which one individual gives rise to a second individual.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard definition in birth and death process theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "60eed78f-cf50-4b74-a650-24865533a635",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C11",
+      "claim": "Death is a process by which a particular individual is lost from a population with a probability that is independent of any other members of the population.",
+      "claim_type": "EXPLICIT",
+      "source": "Death is a process by which a particular individual is lost from a population with a probability that is independent of any other members of the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a standard definition in birth and death process theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "8b9bba7c-8e0c-4377-9e58-d8c0aaf7a9b9",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C12",
+      "claim": "Analyses including a fusion term are much less common in birth and death models.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses including a fusion term are much less common.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the literature on birth and death processes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "97552657-3760-4b0a-b6cf-926a6982869d",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C13",
+      "claim": "In many birth and death models the system will settle down to a limiting distribution, independent of the starting states of the cell(s).",
+      "claim_type": "EXPLICIT",
+      "source": "However in many birth and death models the system will settle down to a limiting distribution, independent of the starting states of the cell(s) as in the cyan and red curves in Figure 1C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by both theoretical knowledge and the simulation results shown in Figure 1C.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "41adc4cb-97b0-4761-acb8-cff3d354bdc0",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C14",
+      "claim": "A limiting distribution corresponds to a state of dynamic equilibrium that is familiar from chemical kinetics.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a situation corresponds to a state of dynamic equilibrium that is familiar from chemical kinetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This draws on established knowledge from chemical kinetics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "5b47211c-5c74-4130-8eaa-1f7d08e1048a",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C15",
+      "claim": "The terms limiting, equilibrium, and steady state distributions can be used interchangeably in this context.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the terms limiting, equilibrium (or steady state) distributions can be used in this context interchangeably.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about terminology in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "30a777fe-d058-4755-9471-632f782769d7",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C16",
+      "claim": "It is implicitly assumed in the SMOP paper that the populations are to be considered to be at equilibrium for all three cases of the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "It is implicitly assumed in the SMOP paper that the populations are to be considered to be at equilibrium (or that the probability distributions are in their limiting form) for all three cases of the analysis via simulations, from experimental data, or via the fluctuation dissipation theorem; a comment has been added to the original articles to clarify this assumption for the simulations (see the comment dated November 23, 2015 on Mukherji and O'Shea, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by reference to a comment added to the original SMOP paper.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "e6f5af56-1990-44ad-83b2-a3f1d9444efa",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C17",
+      "claim": "The fluctuation dissipation theorem method implicitly assumes a steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "The fluctuation dissipation theorem method implicitly assumes a steady state (Paulsson, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Paulsson (2005).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "f782c874-06e3-45bf-90a5-e90f3bce0fa9",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C18",
+      "claim": "At equilibrium, the rate at which the population gains cells with n + 1 organelles due to cells with n organelles gaining one organelle must equal the rate at which the cells with n + 1 organelles lose one organelle.",
+      "claim_type": "EXPLICIT",
+      "source": "At equilibrium, the rate at which the population gains cells with n + 1 organelles due to cells with n organelles gaining one organelle must equal the rate at which the cells with n + 1 organelles lose one organelle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental principle of dynamic equilibrium applied to this system.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "f4189d25-72a3-4493-93ff-faa7b3315bcf",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C19",
+      "claim": "The recurrence relation allows the exact distribution of organelle numbers at equilibrium to be calculated for a model involving any combination of the four processes, without recourse to random number based simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "From Equation 2 the exact distribution of organelle numbers at equilibrium can be calculated for a model involving any combination of the four processes, without recourse to random number based simulations and the attendant issues of ensuring adequate sampling precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the mathematical derivation and application of Equation 2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "4c04b2ac-ebca-40c5-98b4-1c5c80783af1",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C20",
+      "claim": "For the Golgi model ({de novo; decay}), a Poisson distribution is obtained as the limiting distribution in accord with the SMOP analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "For the Golgi, a Poisson distribution is obtained as the limiting distribution in accord with the SMOP analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived in Appendix 3 and agrees with the original SMOP analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "6c5e3767-5f10-4356-b2a4-d6811df1e31b",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C21",
+      "claim": "For vacuoles, a truncated Poisson distribution is obtained, and not the shifted Poisson distribution that is reported in the SMOP analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "However for vacuoles a truncated Poisson distribution is obtained, and not the shifted Poisson distribution that is reported in the SMOP analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived in Appendix 4 and contradicts the original SMOP analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "a20ca27c-218b-407d-9780-26da827a2a86",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C22",
+      "claim": "The Fano factor for the truncated Poisson approaches 1 much more rapidly than for the shifted Poisson.",
+      "claim_type": "EXPLICIT",
+      "source": "the Fano factor for the truncated Poisson approaches 1 much more rapidly (Figure 2, green curve) than for the shifted Poisson (Figure 2, black curve).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the curves shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "eb348da6-136d-4479-a1e0-77e64c61675b",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C23",
+      "claim": "The experimental values for vacuoles quoted in the SMOP analysis are in excellent agreement with the incorrect prediction (shifted Poisson), whilst the agreement with the corrected theoretical prediction (truncated Poisson) is much less good.",
+      "claim_type": "EXPLICIT",
+      "source": "In Figure 2, it can be seen that the experimental values quoted in the SMOP analysis are in excellent agreement with the incorrect prediction, whilst the agreement with the corrected theoretical prediction is much less good.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing the experimental data points with the theoretical curves in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "9122aad4-2b82-4936-ade2-a51d2a8da616",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C24",
+      "claim": "The corrected analysis greatly weakens the argument that the SMOP model makes quantitatively accurate predictions for vacuoles.",
+      "claim_type": "EXPLICIT",
+      "source": "This greatly weakens the argument that the SMOP model makes \"quantitatively accurate predictions\" or that it therefore correctly accounts for the behaviour of the vacuole population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the poor agreement between corrected predictions and experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "1233318a-388b-4aac-9c2c-c93ead1f43bd",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C25",
+      "claim": "The {de novo, fission; decay} model has a limiting distribution that is a negative binomial distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "We show in Appendix 5 that such a {de novo, fission; decay} model has a limiting distribution that is a negative binomial distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived mathematically in Appendix 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "8c39f80a-16ec-4569-b59b-c27fc9f17c0a",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C29",
+      "claim": "The expression \u03c3\u00b2/n = 1 + kfission<n>/kde novo is exact for all values of the parameters when kfusion = 0.",
+      "claim_type": "EXPLICIT",
+      "source": "By explicitly applying the equilibrium assumption we have therefore shown that this expression is exact in this case for all values of the parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the mathematical derivation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "ce5781ff-f8e7-4d9e-9836-c213e3575af1",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C32",
+      "claim": "The inferred fission rate for growth on oleate is only barely greater than the de novo synthesis rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In the corrected version of Figure 3D in the SMOP paper it is clear that the inferred fission rate for growth on oleate is only barely greater than the de novo synthesis rate and the term \"dominance\" does not seem to be appropriate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the corrected analysis of the Fano factor data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "e0b92a25-a758-4ff5-a0f9-6cb4eb2c73c4",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C33",
+      "claim": "The inferred contribution from fission grows only rather slowly as the Fano factor increases above a value of two.",
+      "claim_type": "EXPLICIT",
+      "source": "It is clear from Figure 3 that the inferred contribution from fission grows only rather slowly as the Fano factor increases above a value of two.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "fedaa053-82a7-4de5-aa61-9ab35d70134c",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C34",
+      "claim": "For fission to be truly dominant, a Fano factor would have to be observed that was far greater than any reported in the SMOP paper.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, for fission to be truly dominant a Fano factor would have to be observed that was far greater than any reported in the SMOP paper.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the analysis of how the Fano factor relates to the relative contributions of fission and de novo production.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "299ba96c-ae85-4721-9374-3bd552793e8e",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C35",
+      "claim": "For the {de novo, fission; decay} model to have a limiting or equilibrium distribution, kfission must be less than \u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of the peroxisome model, {de novo, fission; decay}, for the system to have a limiting or equilibrium distribution there is a strong restriction on parameters, namely that kfission < \u03b3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from analysis of the conditions for convergence of the distribution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "20b49634-6956-4766-ae5d-e11834b78dca",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C36",
+      "claim": "If kfission exceeds \u03b3 then the fission process will always exceed the decay process and the number of organelles will grow without limit.",
+      "claim_type": "EXPLICIT",
+      "source": "If kfission exceeds \u03b3 then the fission process will always exceed the decay process and the number of organelles will grow without limit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical consequence of the rate equations and is demonstrated in Figure 1D.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "ae3b8d9e-0ba4-4fb1-b906-31fb211c9492",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C38",
+      "claim": "The agreement of experimental data with the SMOP model is not as compelling as originally presented.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that the agreement of experimental data with the model is not as compelling as originally presented and that the interpretation of experimental observations back to mechanistic conclusions is open to question.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the corrected analysis showing poorer agreement with experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "fa68c57b-8572-4d82-8c0c-19e2026f0a27",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C39",
+      "claim": "A key conclusion of the SMOP analysis is that the contribution of fission to peroxisome biogenesis is negligible (<10%) when yeast cells are grown on glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "A key conclusion of the SMOP analysis is that the contribution of fission to peroxisome biogenesis is negligible (<10%) when yeast cells are grown on glucose, but \"dominant\" when they are grown on oleate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes a conclusion from the original SMOP paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "1d3a9b90-12ca-4624-ae0f-dc2f7bc8481a",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C40",
+      "claim": "The contribution of fission to peroxisome biogenesis is dominant when yeast cells are grown on oleate according to the SMOP analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "A key conclusion of the SMOP analysis is that the contribution of fission to peroxisome biogenesis is negligible (<10%) when yeast cells are grown on glucose, but \"dominant\" when they are grown on oleate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes a conclusion from the original SMOP paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "5400a36e-b03d-4eda-a39e-4e3c701895f4",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C41",
+      "claim": "The mechanism of peroxisome biogenesis is an area of some contention.",
+      "claim_type": "EXPLICIT",
+      "source": "This is an area of some contention (Hoepfner et al, 2005; Motley and Hettema, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to papers with differing views.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "da60b27b-8bc6-4249-b560-f5d62205a031",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C42",
+      "claim": "A recent model relied on fission of peroxisomes during organelle inheritance as the proliferation mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "and a recent model relied on fission of peroxisomes during organelle inheritance as the proliferation mechanism (Knoblach et al, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Knoblach et al. (2013).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "ae1176eb-a448-4c50-814f-2932f270f1fb",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C43",
+      "claim": "The term 'dominant' is misleading when describing the contribution of fission to peroxisome biogenesis on oleate.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis has shown that the term \"dominant\" is misleading, and that the data reported for haploid cells grown on oleate indicates approximately equal contributions from the two processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the corrected analysis of the Fano factor.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "5399ff10-632e-4f9d-9f0a-798832ec711a",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C44",
+      "claim": "The data reported for haploid cells grown on oleate indicates approximately equal contributions from de novo and fission processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis has shown that the term \"dominant\" is misleading, and that the data reported for haploid cells grown on oleate indicates approximately equal contributions from the two processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the corrected analysis using the exact formulae.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "7145fa67-facb-4f24-8ada-656c5b062137",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C45",
+      "claim": "The model suggests that the proportion of production by fission increases by about a factor of five on switching to oleate growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless the model does suggest that the proportion of production by fission increases by about a factor of five on switching to oleate growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing the model predictions for glucose and oleate conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "331453f2-7d98-4b37-a529-bfab89685d91",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C46",
+      "claim": "Supporting evidence for increased fission on oleate was provided by the observation of the reduction in the inferred fission contribution in cells grown on oleate in which the fission factors Vps1 or Dnm1 (or Fis1) were deleted.",
+      "claim_type": "EXPLICIT",
+      "source": "Supporting evidence for this was provided by the observation of the reduction in the inferred fission contribution in cells grown on oleate in which the fission factors Vps1 or Dnm1 (or Fis1, an accessory factor of Dnm1) were deleted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to experimental data from the original SMOP paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "db61c089-97ca-40a8-8b9f-e25f3a78e8d5",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C47",
+      "claim": "No data were shown for glucose grown cells harbouring deletions of Vps1, Dnm1, or Fis1 in the SMOP paper.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, no data were shown for glucose grown cells harbouring the same deletions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about what was reported in the original SMOP paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "a9768840-3b7b-4aa2-9400-29136306c03b",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C48",
+      "claim": "On glucose, the Fano factor is reported in the SMOP analysis as 1.1, with <n> = 3.",
+      "claim_type": "EXPLICIT",
+      "source": "On glucose the Fano factor is reported in the SMOP analysis as 1.1, with <n> = 3",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites data from the original SMOP paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "a659d785-5738-4a44-b05f-e60eed154f87",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C49",
+      "claim": "From the SMOP model parameters for glucose growth, kde novo = 2.7\u03b3 and kfission = 0.1\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "and from Equations 3,4 one obtains kde novo = 2.7\u03b3 and kfission = 0.1\u03b3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from Equations 3 and 4 using the reported Fano factor and mean.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "b683ba6a-7202-4621-9057-447eebbb3f03",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C50",
+      "claim": "The SMOP model implies that on deletion of the fission pathway (setting kfission = 0) on glucose, <n> would only drop by 10%.",
+      "claim_type": "EXPLICIT",
+      "source": "The model then implies that on deletion of the fission pathway (i.e. setting kfission = 0) then <n> would only drop by 10%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the model equations with the inferred parameters.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "4c834ca2-29ae-437c-8ac8-999f8f60dd34",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C51",
+      "claim": "Peroxisome count data reported by Motley et al. (2015) shows <n> = 4.9 in WT cells, <n> = 1.5 in vps1\u0394 cells and <n> = 1.2 in vps1\u0394dnm1\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Peroxisome count data has been reported recently (Fig S4, Motley et al., 2015), with values of <n> = 4.9 in WT cells, <n> = 1.5 in vps1\u0394 cells and <n> = 1.2 in vps1\u0394dnm1\u0394 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites experimental data from Motley et al. (2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "fda1b19c-838b-410d-9a3e-1a8eb0f6b05b",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C52",
+      "claim": "The drops in peroxisome numbers in vps1\u0394 and vps1\u0394dnm1\u0394 cells are much greater than the 10% estimated from the SMOP model.",
+      "claim_type": "EXPLICIT",
+      "source": "The drops in peroxisome numbers in vps1\u0394 and vps1\u0394dnm1\u0394 cells are much greater than the 10% estimated above from the SMOP model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred by comparing the experimental data from Motley et al. (2015) with the model prediction.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "e167b590-4fe8-4dc2-8bc1-299fdd196cf0",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C53",
+      "claim": "Peroxisome count data from Kuravi et al. (2006) gives <n> = 1.6 (WT), <n> = 1.2 (vps1\u0394), <n> = 1.7 (dnm1\u0394), <n> = 0.9 (dnm1\u0394vps1\u0394).",
+      "claim_type": "EXPLICIT",
+      "source": "There is also peroxisome count data in Kuravi et al. (2006), which gives <n> = 1.6 (WT), <n> = 1.2 (vps1\u0394), <n> = 1.7 (dnm1\u0394), <n> = 0.9 (dnm1\u0394vps1\u0394).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites experimental data from Kuravi et al. (2006).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "de7e6a04-8c9b-4d74-ab53-7de67ae6c664",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C54",
+      "claim": "The drop in <n> for the dnm1\u0394vps1\u0394 strain conflicts with the idea that fission is such a small contributor to the biogenesis process on glucose.",
+      "claim_type": "EXPLICIT",
+      "source": "The drop in <n> for the dnm1\u0394vps1\u0394 again conflicts with the idea that fission is such a small contributor to the biogenesis process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred by comparing experimental data with model predictions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "4c800ba4-6aaf-4deb-b4c8-01bda66f0ec0",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C55",
+      "claim": "The discrepancies between various peroxisome count data possibly arise from difficulties in quantifying peroxisome numbers, especially when cells contain a large number of small peroxisomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The discrepancies between these various data possibly arise from difficulties in quantifying peroxisome numbers, especially when cells contain a large number of small (and therefore low fluorescence) peroxisomes as may be the case when fission is a strong contributor to biogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the source of discrepancies in the data.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "809e4319-e844-47b4-9d3c-75e3066d507a",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C56",
+      "claim": "The problem of peroxisome counts depending on the brightness of fluorescent markers has been commented on by Jung et al. (2010).",
+      "claim_type": "EXPLICIT",
+      "source": "The problem of peroxisome counts depending on the brightness of fluorescent markers has been commented on by Jung et al. (2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Jung et al. (2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "79748680-a9fa-4452-8ace-51b0b438a64b",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C57",
+      "claim": "This work highlights the need for greater accounting for detection limits and intensity distributions in the reporting and analysis of organelle count data.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular this work highlights the need for greater accounting for detection limits and intensity distributions, as well of time dependent issues, in the reporting and analysis of organelle count data, if these are to be used to infer details of organelle biogenesis mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analysis presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "da764645-f104-452d-a0e8-45d376295128",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C58",
+      "claim": "Time dependent issues need to be accounted for in the reporting and analysis of organelle count data if these are to be used to infer details of organelle biogenesis mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular this work highlights the need for greater accounting for detection limits and intensity distributions, as well of time dependent issues, in the reporting and analysis of organelle count data, if these are to be used to infer details of organelle biogenesis mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the analysis presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "dd95a815-6671-4a79-9107-2dba4a4181d6",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C59",
+      "claim": "Simulations starting from different initial conditions (n=0 and n=50) both settle down to stochastic fluctuations about a mean value of <n> = 7.1.",
+      "claim_type": "EXPLICIT",
+      "source": "(A) The traces show simulations run with the parameters {kde novo = 2.0, kfission = 0.9; \u03b3 = 1.0, kfusion = 0.02}, starting from n = 0 (black trace) and n = 50 (green trace). Both simulations \"settle down\" to stochastic fluctuations about a mean value of <n> = 7.1",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the simulation results shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "a7f08c14-2902-43af-94ce-3c2e6e1d20e7",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C60",
+      "claim": "When kfission > \u03b3 and kfusion = 0, then n diverges and there is no limiting distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "(D) The red trace is a time course for parameters {kde novo = 2.0, kfission = 1.1; \u03b3 = 1.0, kfusion = 0}. Since kfission > \u03b3, and kfusion = 0, then n diverges; in such a case there is no limiting distribution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the simulation shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "770041ef-ca50-42b9-99d3-7148103aa5f3",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C61",
+      "claim": "Distributions calculated at different times after initialization (\u03c4 = 0.2, 0.4, 1.0, 2.0, 5.0, 10.0, 15.0) show convergence to a limiting distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "(C) Distributions calculated with the same parameters as in (A) for a set of 1000 cells as in (B), calculated for \u03c4 = 0.2 (magenta), 0.4 (yellow), 1.0 (green), 2.0 (blue), 5.0 (black), 10.0 (cyan), 15.0 (red). The curves for \u03c4 = 10.0 and \u03c4 = 15.0 become very similar as they approach the limiting distribution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the distributions shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "a31aa030-3d74-4c5e-bf5b-6da15ea47d58",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C62",
+      "claim": "The curves for \u03c4 = 10.0 and \u03c4 = 15.0 match closely the result of applying the recurrence relation (Equation 2).",
+      "claim_type": "EXPLICIT",
+      "source": "These two curves match closely the result (filled black circles) of applying the recurrence relation (Equation 2; Appendix 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by comparison in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "2b47c5e8-431c-4b52-8935-2cb3926f7c39",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C63",
+      "claim": "The experimental values for vacuoles from haploid cells grown on glucose have a Fano factor around 0.52 and <n> around 2.0.",
+      "claim_type": "IMPLICIT",
+      "source": "Three data points quoted in the SMOP paper are plotted: \u25a1 Haploid (glucose); \u25cb Diploid (glucose); \u2206 Haploid (oleate).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This can be read from the position of the square symbol in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "dd368b86-cb39-4092-a8b0-6c8655b00ad7",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C64",
+      "claim": "The experimental values for vacuoles from diploid cells grown on glucose have a Fano factor around 0.70 and <n> around 3.0.",
+      "claim_type": "IMPLICIT",
+      "source": "Three data points quoted in the SMOP paper are plotted: \u25a1 Haploid (glucose); \u25cb Diploid (glucose); \u2206 Haploid (oleate).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This can be read from the position of the circle symbol in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "c4640e39-abfd-4a68-af60-d91c9b384547",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C65",
+      "claim": "The experimental values for vacuoles from haploid cells grown on oleate have a Fano factor around 0.80 and <n> around 4.0.",
+      "claim_type": "IMPLICIT",
+      "source": "Three data points quoted in the SMOP paper are plotted: \u25a1 Haploid (glucose); \u25cb Diploid (glucose); \u2206 Haploid (oleate).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This can be read from the position of the triangle symbol in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "3dcaed5b-a24f-433d-8aa4-a7da1b7cae94",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C66",
+      "claim": "For a Fano factor of 1.1 (experimentally observed for glucose growth), the model predicts 9% de novo and 91% fission contribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Bars are shown for Fano factors of: 1.0 (100% de novo); 1.1 (experimentally observed for glucose growth (G) in SMOP paper; 9% de novo, 91% fission)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated using Equation 5 and shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "0ff57bc1-e079-4497-8a27-2569724281d8",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C67",
+      "claim": "For a Fano factor of 2.4 (experimentally reported value for oleate growth), the model predicts 42% de novo and 58% fission contribution.",
+      "claim_type": "EXPLICIT",
+      "source": "2.4 (experimentally reported value for oleate growth (O) in SMOP paper; 42% de novo, 58% fission)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated using Equation 5 and shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "f7a73941-e508-407b-b79a-e7ce6999f2bd",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "claim_id": "C68",
+      "claim": "A Fano factor of 3.0 would be required for the fission rate to be double the de novo rate.",
+      "claim_type": "EXPLICIT",
+      "source": "3.0 (value required for fission rate to be double the de novo rate)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated using Equation 5 and shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e358c9f5-acb9-4666-8012-d36f0c624f63",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors demonstrate that equilibrium distributions for organelle numbers in the SMOP model can be calculated exactly using recurrence relations for three scenarios (Golgi, vacuoles, peroxisomes), identifying them as standard distributions (Poisson, truncated Poisson, and negative binomial respectively). This approach eliminates the need for stochastic simulations or approximate formulae derived from the fluctuation dissipation theorem.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C19 are well-supported by the mathematical derivations presented throughout the manuscript. The recurrence relation (Equation 2) is rigorously derived from equilibrium conditions (C18), and the identification of standard distributions is demonstrated in the appendices. The simulation results in Figure 1C validate that the recurrence method produces distributions matching long-time simulations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "a540c140-07b4-4cb7-9573-4f834345e1f5",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "For the Golgi model ({de novo; decay}), the equilibrium distribution is Poisson, consistent with the original SMOP analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C20 is supported by the mathematical derivation in Appendix 3 and agrees with the original SMOP analysis. This represents a validation of one aspect of the original model using the exact recurrence method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "0f3cece3-862a-4986-ba80-c873560f742a",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "For vacuoles, the correct equilibrium distribution is truncated Poisson, not the shifted Poisson reported in the SMOP analysis. The Fano factor for truncated Poisson approaches 1 much more rapidly than for shifted Poisson, and experimental data that appeared to agree well with the incorrect prediction shows much poorer agreement with the corrected prediction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24 are strongly supported by the mathematical derivation in Appendix 4 and visual evidence in Figure 2. The figure clearly shows that experimental data points (C63-C65) align well with the incorrect shifted Poisson curve but poorly with the correct truncated Poisson curve. This represents a significant correction to the original SMOP analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "10e668e4-056a-4c03-8a18-072c7dcd8145",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The {de novo, fission; decay} model for peroxisomes has a negative binomial equilibrium distribution, and the expression \u03c3\u00b2/n = 1 + kfission<n>/kde novo is exact for all parameter values when kfusion = 0.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25 and C29 are supported by rigorous mathematical derivation in Appendix 5. The identification of the negative binomial distribution and the exact formula for the Fano factor represent important theoretical advances over the approximate treatment in the original SMOP paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "9a90dabf-053c-4efd-8998-33ec16c1d28f",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The corrected analysis shows that for oleate growth conditions, the contributions from fission and de novo production are approximately equal (42% de novo, 58% fission for Fano factor 2.4), not fission-dominated as claimed in the original SMOP paper. The boundary for equal contributions is at Fano factor = 2.0, not 1.0 as originally stated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 and C43-C44 are well-supported by the corrected mathematical analysis using exact formulae (Equations 3-5) and illustrated in Figure 3. The calculations in C66-C68 demonstrate that the term 'dominant' is misleading for the oleate condition. This represents a major reinterpretation of the original SMOP conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "6d7f1521-4868-44e1-ba9f-8021f7ebd20f",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "For the {de novo, fission; decay} model to have a limiting equilibrium distribution, kfission must be less than \u03b3. If kfission exceeds \u03b3, the number of organelles grows without limit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 are supported by mathematical reasoning from the rate equations and demonstrated empirically in Figure 1D (C60), which shows divergence when kfission > \u03b3. This identifies an important constraint on the model parameters that was not explicitly discussed in the original SMOP analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "c60e0916-bb79-411f-9919-f0a2a042006c",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The SMOP model's conclusion that fission contributes negligibly (<10%) to peroxisome biogenesis on glucose is questioned. The model predicts only a 10% drop in peroxisome number upon fission pathway deletion, but experimental data from Motley et al. (2015) and Kuravi et al. (2006) show much larger drops (70% and 44% respectively in double deletion mutants).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C4 and C48-C54 identify a significant discrepancy between model predictions and experimental data for glucose conditions. However, the authors acknowledge potential experimental issues with peroxisome counting (C55-C56), particularly for small, low-fluorescence peroxisomes. The discrepancy raises valid concerns about the model's applicability, but the uncertainty in experimental measurements prevents a definitive conclusion. Additional controlled experiments with validated counting methods would be needed to resolve this issue.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "501523a0-e303-48dd-bfc6-8267f2b670cf",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The agreement between experimental data and the SMOP model is less compelling than originally presented, and interpretation of experimental observations to mechanistic conclusions is questionable. Difficulties in quantifying peroxisome numbers, especially small peroxisomes, may contribute to discrepancies. The work highlights the need for better accounting of detection limits, intensity distributions, and time-dependent issues in organelle count data analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38 and C55-C58 are supported by the cumulative evidence presented in the manuscript, including the corrected vacuole analysis showing poor agreement (C23-C24) and the discrepancies with deletion mutant data (C52, C54). The citation to Jung et al. (2010) regarding fluorescence marker brightness issues (C56) provides external support. These represent important methodological considerations for the field.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "def489b5-aef8-4523-a367-893f9a88ecd2",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Stochastic simulations demonstrate that birth-death systems settle to limiting distributions independent of initial conditions, and distributions calculated at different times show convergence. The recurrence relation method produces results matching long-time simulation distributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13 and C59-C62 are directly supported by the simulation data shown in Figure 1A and 1C. The visual evidence clearly demonstrates convergence to equilibrium distributions and validates the recurrence relation approach. This provides important empirical validation of the theoretical framework.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "eeebe9dd-66b6-436e-9332-fb12bb80d4d7",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The SMOP analysis implicitly assumes populations are at equilibrium for all three cases (simulations, experimental data, fluctuation dissipation theorem), though this was not originally made explicit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17 are supported by reference to a clarifying comment added to the original SMOP paper and citation to Paulsson (2005) regarding the fluctuation dissipation theorem. This represents an important clarification of assumptions underlying the original analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "55ebc3fe-b212-41f8-9fd1-04505413c36b",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The model suggests fission contribution increases approximately five-fold when switching from glucose to oleate growth. Supporting evidence from deletion of fission factors (Vps1, Dnm1, Fis1) was provided for oleate conditions, but no corresponding data for glucose conditions was shown in the SMOP paper.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 are supported by the model calculations and accurate description of what was reported in the original SMOP paper. The observation that glucose deletion data were not shown (C47) is a factual statement about the original publication and represents an important gap in the experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "de7ee3b3-74da-475c-9b38-ae86e25d2762",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript provides background on the SMOP model structure and birth-death process theory, including standard terminology and the principle of detailed balance at equilibrium.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C12, C14-C15, and C18 represent accurate descriptions of the SMOP model, established birth-death process theory, and fundamental equilibrium principles. These are well-supported by appropriate citations and represent standard knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    },
+    {
+      "id": "226549d2-488b-4c66-ba34-386a712367c0",
+      "content_id": "33466f3c-af06-4eba-96f0-97359dcbc801",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The mechanism of peroxisome biogenesis is contentious, with recent models relying on fission during organelle inheritance as the proliferation mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 are supported by appropriate citations to papers with differing views (Hoepfner et al. 2005, Motley and Hettema 2007, Knoblach et al. 2013). This provides important biological context for why the SMOP model analysis matters.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:23:56.244181Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a207eb78-06c2-43be-8fc3-f3fab51fdb47",
+      "result_id": "e358c9f5-acb9-4666-8012-d36f0c624f63"
+    },
+    {
+      "claim_id": "9ba66d04-c3e7-4616-b056-5d30aaf91388",
+      "result_id": "e358c9f5-acb9-4666-8012-d36f0c624f63"
+    },
+    {
+      "claim_id": "c003d1f6-b179-4763-a564-0522a94505a8",
+      "result_id": "e358c9f5-acb9-4666-8012-d36f0c624f63"
+    },
+    {
+      "claim_id": "f4189d25-72a3-4493-93ff-faa7b3315bcf",
+      "result_id": "e358c9f5-acb9-4666-8012-d36f0c624f63"
+    },
+    {
+      "claim_id": "4c04b2ac-ebca-40c5-98b4-1c5c80783af1",
+      "result_id": "a540c140-07b4-4cb7-9573-4f834345e1f5"
+    },
+    {
+      "claim_id": "6c5e3767-5f10-4356-b2a4-d6811df1e31b",
+      "result_id": "0f3cece3-862a-4986-ba80-c873560f742a"
+    },
+    {
+      "claim_id": "a20ca27c-218b-407d-9780-26da827a2a86",
+      "result_id": "0f3cece3-862a-4986-ba80-c873560f742a"
+    },
+    {
+      "claim_id": "eb348da6-136d-4479-a1e0-77e64c61675b",
+      "result_id": "0f3cece3-862a-4986-ba80-c873560f742a"
+    },
+    {
+      "claim_id": "9122aad4-2b82-4936-ade2-a51d2a8da616",
+      "result_id": "0f3cece3-862a-4986-ba80-c873560f742a"
+    },
+    {
+      "claim_id": "2b47c5e8-431c-4b52-8935-2cb3926f7c39",
+      "result_id": "0f3cece3-862a-4986-ba80-c873560f742a"
+    },
+    {
+      "claim_id": "dd368b86-cb39-4092-a8b0-6c8655b00ad7",
+      "result_id": "0f3cece3-862a-4986-ba80-c873560f742a"
+    },
+    {
+      "claim_id": "c4640e39-abfd-4a68-af60-d91c9b384547",
+      "result_id": "0f3cece3-862a-4986-ba80-c873560f742a"
+    },
+    {
+      "claim_id": "1233318a-388b-4aac-9c2c-c93ead1f43bd",
+      "result_id": "10e668e4-056a-4c03-8a18-072c7dcd8145"
+    },
+    {
+      "claim_id": "8c39f80a-16ec-4569-b59b-c27fc9f17c0a",
+      "result_id": "10e668e4-056a-4c03-8a18-072c7dcd8145"
+    },
+    {
+      "claim_id": "ce5781ff-f8e7-4d9e-9836-c213e3575af1",
+      "result_id": "9a90dabf-053c-4efd-8998-33ec16c1d28f"
+    },
+    {
+      "claim_id": "e0b92a25-a758-4ff5-a0f9-6cb4eb2c73c4",
+      "result_id": "9a90dabf-053c-4efd-8998-33ec16c1d28f"
+    },
+    {
+      "claim_id": "fedaa053-82a7-4de5-aa61-9ab35d70134c",
+      "result_id": "9a90dabf-053c-4efd-8998-33ec16c1d28f"
+    },
+    {
+      "claim_id": "ae1176eb-a448-4c50-814f-2932f270f1fb",
+      "result_id": "9a90dabf-053c-4efd-8998-33ec16c1d28f"
+    },
+    {
+      "claim_id": "5399ff10-632e-4f9d-9f0a-798832ec711a",
+      "result_id": "9a90dabf-053c-4efd-8998-33ec16c1d28f"
+    },
+    {
+      "claim_id": "3dcaed5b-a24f-433d-8aa4-a7da1b7cae94",
+      "result_id": "9a90dabf-053c-4efd-8998-33ec16c1d28f"
+    },
+    {
+      "claim_id": "0ff57bc1-e079-4497-8a27-2569724281d8",
+      "result_id": "9a90dabf-053c-4efd-8998-33ec16c1d28f"
+    },
+    {
+      "claim_id": "f7a73941-e508-407b-b79a-e7ce6999f2bd",
+      "result_id": "9a90dabf-053c-4efd-8998-33ec16c1d28f"
+    },
+    {
+      "claim_id": "299ba96c-ae85-4721-9374-3bd552793e8e",
+      "result_id": "6d7f1521-4868-44e1-ba9f-8021f7ebd20f"
+    },
+    {
+      "claim_id": "20b49634-6956-4766-ae5d-e11834b78dca",
+      "result_id": "6d7f1521-4868-44e1-ba9f-8021f7ebd20f"
+    },
+    {
+      "claim_id": "a7f08c14-2902-43af-94ce-3c2e6e1d20e7",
+      "result_id": "6d7f1521-4868-44e1-ba9f-8021f7ebd20f"
+    },
+    {
+      "claim_id": "03497c84-a08d-439b-adf3-0802bff3f3e6",
+      "result_id": "c60e0916-bb79-411f-9919-f0a2a042006c"
+    },
+    {
+      "claim_id": "fa68c57b-8572-4d82-8c0c-19e2026f0a27",
+      "result_id": "c60e0916-bb79-411f-9919-f0a2a042006c"
+    },
+    {
+      "claim_id": "a9768840-3b7b-4aa2-9400-29136306c03b",
+      "result_id": "c60e0916-bb79-411f-9919-f0a2a042006c"
+    },
+    {
+      "claim_id": "a659d785-5738-4a44-b05f-e60eed154f87",
+      "result_id": "c60e0916-bb79-411f-9919-f0a2a042006c"
+    },
+    {
+      "claim_id": "b683ba6a-7202-4621-9057-447eebbb3f03",
+      "result_id": "c60e0916-bb79-411f-9919-f0a2a042006c"
+    },
+    {
+      "claim_id": "4c834ca2-29ae-437c-8ac8-999f8f60dd34",
+      "result_id": "c60e0916-bb79-411f-9919-f0a2a042006c"
+    },
+    {
+      "claim_id": "fda1b19c-838b-410d-9a3e-1a8eb0f6b05b",
+      "result_id": "c60e0916-bb79-411f-9919-f0a2a042006c"
+    },
+    {
+      "claim_id": "e167b590-4fe8-4dc2-8bc1-299fdd196cf0",
+      "result_id": "c60e0916-bb79-411f-9919-f0a2a042006c"
+    },
+    {
+      "claim_id": "de7e6a04-8c9b-4d74-ab53-7de67ae6c664",
+      "result_id": "c60e0916-bb79-411f-9919-f0a2a042006c"
+    },
+    {
+      "claim_id": "ae3b8d9e-0ba4-4fb1-b906-31fb211c9492",
+      "result_id": "501523a0-e303-48dd-bfc6-8267f2b670cf"
+    },
+    {
+      "claim_id": "4c800ba4-6aaf-4deb-b4c8-01bda66f0ec0",
+      "result_id": "501523a0-e303-48dd-bfc6-8267f2b670cf"
+    },
+    {
+      "claim_id": "809e4319-e844-47b4-9d3c-75e3066d507a",
+      "result_id": "501523a0-e303-48dd-bfc6-8267f2b670cf"
+    },
+    {
+      "claim_id": "79748680-a9fa-4452-8ace-51b0b438a64b",
+      "result_id": "501523a0-e303-48dd-bfc6-8267f2b670cf"
+    },
+    {
+      "claim_id": "da764645-f104-452d-a0e8-45d376295128",
+      "result_id": "501523a0-e303-48dd-bfc6-8267f2b670cf"
+    },
+    {
+      "claim_id": "97552657-3760-4b0a-b6cf-926a6982869d",
+      "result_id": "def489b5-aef8-4523-a367-893f9a88ecd2"
+    },
+    {
+      "claim_id": "dd95a815-6671-4a79-9107-2dba4a4181d6",
+      "result_id": "def489b5-aef8-4523-a367-893f9a88ecd2"
+    },
+    {
+      "claim_id": "770041ef-ca50-42b9-99d3-7148103aa5f3",
+      "result_id": "def489b5-aef8-4523-a367-893f9a88ecd2"
+    },
+    {
+      "claim_id": "a31aa030-3d74-4c5e-bf5b-6da15ea47d58",
+      "result_id": "def489b5-aef8-4523-a367-893f9a88ecd2"
+    },
+    {
+      "claim_id": "30a777fe-d058-4755-9471-632f782769d7",
+      "result_id": "eeebe9dd-66b6-436e-9332-fb12bb80d4d7"
+    },
+    {
+      "claim_id": "e6f5af56-1990-44ad-83b2-a3f1d9444efa",
+      "result_id": "eeebe9dd-66b6-436e-9332-fb12bb80d4d7"
+    },
+    {
+      "claim_id": "7145fa67-facb-4f24-8ada-656c5b062137",
+      "result_id": "55ebc3fe-b212-41f8-9fd1-04505413c36b"
+    },
+    {
+      "claim_id": "331453f2-7d98-4b37-a529-bfab89685d91",
+      "result_id": "55ebc3fe-b212-41f8-9fd1-04505413c36b"
+    },
+    {
+      "claim_id": "db61c089-97ca-40a8-8b9f-e25f3a78e8d5",
+      "result_id": "55ebc3fe-b212-41f8-9fd1-04505413c36b"
+    },
+    {
+      "claim_id": "f986cedf-7447-461b-9c26-eec022c28d73",
+      "result_id": "de7ee3b3-74da-475c-9b38-ae86e25d2762"
+    },
+    {
+      "claim_id": "41906441-b888-4f89-a89c-6e4418904b56",
+      "result_id": "de7ee3b3-74da-475c-9b38-ae86e25d2762"
+    },
+    {
+      "claim_id": "833ca337-58a7-48a0-b9cc-c1818b858c33",
+      "result_id": "de7ee3b3-74da-475c-9b38-ae86e25d2762"
+    },
+    {
+      "claim_id": "2eaafb0f-7b2c-48c5-8853-aa398c7784b7",
+      "result_id": "de7ee3b3-74da-475c-9b38-ae86e25d2762"
+    },
+    {
+      "claim_id": "79aa334f-0c54-4e8e-983a-62b065b8cd14",
+      "result_id": "de7ee3b3-74da-475c-9b38-ae86e25d2762"
+    },
+    {
+      "claim_id": "0919988b-87ff-4b08-983b-b614bccd7f90",
+      "result_id": "de7ee3b3-74da-475c-9b38-ae86e25d2762"
+    },
+    {
+      "claim_id": "60eed78f-cf50-4b74-a650-24865533a635",
+      "result_id": "de7ee3b3-74da-475c-9b38-ae86e25d2762"
+    },
+    {
+      "claim_id": "8b9bba7c-8e0c-4377-9e58-d8c0aaf7a9b9",
+      "result_id": "de7ee3b3-74da-475c-9b38-ae86e25d2762"
+    },
+    {
+      "claim_id": "41adc4cb-97b0-4761-acb8-cff3d354bdc0",
+      "result_id": "de7ee3b3-74da-475c-9b38-ae86e25d2762"
+    },
+    {
+      "claim_id": "5b47211c-5c74-4130-8eaa-1f7d08e1048a",
+      "result_id": "de7ee3b3-74da-475c-9b38-ae86e25d2762"
+    },
+    {
+      "claim_id": "f782c874-06e3-45bf-90a5-e90f3bce0fa9",
+      "result_id": "de7ee3b3-74da-475c-9b38-ae86e25d2762"
+    },
+    {
+      "claim_id": "5400a36e-b03d-4eda-a39e-4e3c701895f4",
+      "result_id": "226549d2-488b-4c66-ba34-386a712367c0"
+    },
+    {
+      "claim_id": "da60b27b-8bc6-4249-b560-f5d62205a031",
+      "result_id": "226549d2-488b-4c66-ba34-386a712367c0"
+    }
+  ],
+  "comparisons": []
+}

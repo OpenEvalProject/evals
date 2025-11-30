@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "A novel column-based cultivation method was developed and validated for aging yeast cells. The method maintained constant environmental conditions (oxygen, glucose, pH), retained up to 10^9 mother cells per column, and produced cells with aging phenotypes (increased cell size, bud scar accumulation) consistent with microfluidic-based lifespan measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide converging evidence for successful method development. The viability curve matches independent microfluidic data (C4), environmental parameters are controlled (C2), and known aging markers are observed (C5, C6). The method is well-validated through multiple orthogonal measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "A mathematical un-mixing method was developed and validated to determine the molecular phenotype of aging mother cells from mixed populations. The method achieved <16% average error across multiple omics platforms and yielded profiles for 1494 proteins and 4904 transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 demonstrate rigorous validation of the un-mixing approach. The <16% error rate (C8) was established using samples with known compositions, and the method was successfully applied to generate comprehensive datasets (C9). The validation experiments provide strong support for the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Aging mother cells show gradual, unidirectional molecular changes starting early in life. The proteome diverges from the youthful state over time, with 64% of proteins showing twofold changes also changing significantly at earlier time points. Changes agree with literature observations for specific proteins and pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 are well-supported by the data and literature comparisons. The gradual nature of aging (C14, C15) is quantitatively demonstrated, and agreement with prior single-cell studies (C13) and pathway-level changes (C12) validates the population-level approach. The daughter cell data (C11) provides additional confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C53",
+      "C54"
+    ],
+    "result": "The correlation between proteome and transcriptome declined steadily with age from 0.75 to 0.70, indicating increasing uncoupling of protein levels from transcript levels during aging. This trend is not an experimental artifact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17, C53-C54 demonstrate a robust finding. The starting correlation (0.75) agrees with literature values (C53), the decline is consistent across multiple correlation methods (Figure 5\u2014supplement 1), and experimental controls rule out artifacts (C54). The modest magnitude of change (0.05 correlation units) is statistically supported but biologically significant given the dataset size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "38.4% of transcript-protein pairs showed protein overabundance relative to transcripts (quadrant 2), with strong enrichment for translation regulation genes (ribosome and protein biogenesis machinery). This overabundance increased progressively with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 identify a key molecular signature of aging. The quantification of Q2 enrichment (38.4%) and the GO term analysis showing translation regulation enrichment are well-supported by the data. Figure 5\u2014supplement 2,3 demonstrate the progressive nature of this uncoupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Network inference analysis identified protein biogenesis genes (ribosome biogenesis, tRNA processing) as the most causally-ranked cluster in the transcriptome network. These genes were enriched in the uncoupled expression quadrant (Q2), suggesting a central role in aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 present a sophisticated computational analysis. The network reconstruction method is described and validated (supplemental note 4), and the convergence of network causality ranking with the co-expression uncoupling pattern provides strong support for the central role of biogenesis genes. However, the causal interpretation relies on computational inference rather than experimental manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Protein complex stoichiometry is progressively lost during aging, with greater loss at the proteome level than transcriptome level. This loss is greater in aged mothers than daughters, confirming it as an aging-related phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 demonstrate a clear consequence of molecular aging. The use of curated protein complex lists (C24), validation with known aging-affected complexes (C25), mother-daughter comparison (C26), and proteome-transcriptome comparison (C27) provide multiple lines of evidence. The interquartile range metric for stoichiometry loss is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors propose a model where uncoupling of biogenesis-related protein levels from transcript levels is causal for aging changes. This uncoupling leads to protein accumulation, further proteome-transcriptome uncoupling, and degenerative effects including cell size increase, protein aggregation, and loss of complex stoichiometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28-C31 present the central model but rely heavily on inference from correlative data. While the network analysis suggests causality (C23), no experimental perturbations directly test whether biogenesis gene uncoupling causes downstream effects. The model is plausible and integrates multiple observations, but causality remains to be experimentally validated. Claims C30-C31 are logical inferences but lack direct experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Ribosomal proteins are highly translated and stable (based on literature), and show low loss of stoichiometry at the complex level, suggesting they remain active during aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 combine literature evidence with the current dataset. The citations to ribosome footprinting and turnover studies (C32) are appropriate, and the observation of maintained ribosome stoichiometry (C33, Figure 7C) supports the interpretation that these proteins remain functional.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The model proposes that protein overproduction increases cell size and causes metabolic changes, while differential protein production rates alter complex stoichiometry, leading to documented aging phenotypes including protein aggregates, ROS formation, and loss of gene silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34-C36 propose mechanistic connections between observations but lack direct experimental validation. The links between protein overproduction and cell size (C34), differential production and stoichiometry loss (C35), and stoichiometry loss and specific phenotypes (C36) are logical inferences supported by literature citations but not directly tested in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The model explains why interventions targeting protein synthesis (TOR, S6 kinase, ribosomal deletions) extend lifespan across multiple organisms, as documented in literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 effectively integrate the current findings with extensive literature on lifespan interventions. The citations span multiple organisms and intervention types (C37-C39), providing strong support that the proposed model has explanatory power for existing observations. However, this is interpretive rather than providing new experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Background claims establishing aging as a risk factor for disease, influenced by multiple factors including protein translation, and that S. cerevisiae undergoes replicative aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are well-established background knowledge supported by appropriate literature citations. These provide context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Methodological details: YSBN6 strain was used, cells were grown in YNB with 2% glucose at 30\u00b0C, and biotinylated cells were labeled with streptavidin-iron beads that are not inherited by daughters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 describe standard methodological details that are adequately documented. The bead labeling approach is adapted from established methods (Smeal et al., 1996) and the mechanism of mother-specific retention is well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The age distribution broadened over time due to cell-to-cell variation, leading to exponentially-spaced sampling to maximize information content. Two replicate campaigns generated 16 unique time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 describe thoughtful experimental design. The computer simulations (C48) justified the exponential sampling strategy (C49), and the replicate structure (C50) is clearly documented. This demonstrates rigorous experimental planning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Replicate proteome and transcriptome data showed excellent agreement (Spearman >0.85), and filtering retained ~90.9% of proteome and ~84.4% of transcriptome data with coefficient of variation <0.3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 demonstrate high data quality. The correlation values (C51) and the retention of >84% of data after quality filtering (C52) indicate robust and reproducible measurements. The coefficient of variation cutoff is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Metabolic signatures related to starvation and oxidative stress were identified as consequences of aging in both network analysis and proteome data, potentially linked to increased cell size and reduced glucose influx.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 connect observations across datasets. The metabolic changes are documented in Figures 6B and 3B (C56), and the mechanistic link to cell size is supported by literature (C55, Huberts et al., 2012). The interpretation is reasonable though not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "The proteome network's most causal cluster was enriched for chaperones, while causal clusters showed coupled expression and responsive clusters showed uncoupled expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 describe additional network analysis results. The chaperone enrichment (C57) suggests cellular stress responses, and the pattern of coupled vs. uncoupled expression across network clusters (C58, Figure 6\u2014supplement 2C) provides additional support for the progressive nature of uncoupling.",
+    "result_type": "MINOR"
+  }
+]

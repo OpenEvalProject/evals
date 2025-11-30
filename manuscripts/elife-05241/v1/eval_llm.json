@@ -1,0 +1,299 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "OFF midget RGCs exhibit nonlinear spatial integration as demonstrated by paired cone stimulation experiments. When opposite polarity stimuli were presented to cone pairs, 73/78 pairs showed failure of cancellation (response \u226550% of single cone response), while only 5/78 pairs showed cancellation, indicating significant spatial nonlinearities within receptive fields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C16-C19 provide converging experimental evidence from paired cone stimulation showing nonlinear spatial integration. The quantitative results (73/78 vs 5/78) are clearly stated with specific experimental conditions, and the inference that failures of cancellation indicate nonlinearities is logically sound given the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C25",
+      "C26",
+      "C27",
+      "C30",
+      "C31"
+    ],
+    "result": "A hierarchical cascade model with two stages of linear integration and an intervening static nonlinearity was developed and fitted to responses from hundreds of OFF midget RGCs. The model assumes non-overlapping subunits (justified by anatomical evidence) and was fitted using maximum likelihood methods to high-resolution spatiotemporal noise stimuli from 15 retinas. Most cells showed subunit nonlinearities approximating half-wave rectification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13, C25-C27, C30-C31 describe a coherent methodological approach with clear biological justification. The model structure is well-defined, the fitting procedure is described, and the recovered nonlinearities are consistent with the paired stimulation results (C31 consistent with C16-C18). The anatomical justification for non-overlapping subunits (C27-C29) strengthens the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C35",
+      "C37",
+      "C38"
+    ],
+    "result": "The subunit model explains light responses more accurately than a linear-nonlinear (LN) model across multiple stimulus types. On random noise stimuli, the subunit model showed 18\u00b13% improvement across 15 retinas, with 92\u00b126% improvement on maximally differentiating stimuli. On repeated noise sequences, the subunit model achieved 51\u00b11% R\u00b2 with 40% improvement over the LN model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34-C35, C37-C38 provide quantitative comparisons with appropriate error estimates across multiple retinas and stimulus conditions. The use of cross-validation (models fitted to 80% of data, tested on 20%) and multiple evaluation metrics (R\u00b2, maximally differentiating stimuli) strengthens the conclusions. Statistical rigor is evident.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The subunit model accurately predicts frequency doubling responses to contrast-reversing gratings. At low spatial frequencies, responses modulated at stimulus frequency, while at high frequencies they modulated at twice the frequency. The subunit model achieved 83\u00b11% R\u00b2 on grating stimuli with 28\u00b12% improvement over LN model, with improvement ranging from 10\u00b11% at low frequencies to 50\u00b16% at high frequencies (p<0.0001 at all frequencies).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 provide a comprehensive validation using grating stimuli with clear frequency-dependent effects. The quantitative results include appropriate error estimates and statistical testing (paired t-test, p<0.0001). The frequency doubling phenomenon is a well-established test of nonlinear integration, and the model's ability to predict this behavior provides strong validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C14",
+      "C48",
+      "C49"
+    ],
+    "result": "The recovered model components are consistent with known anatomical organization of midget bipolar interneurons. At small eccentricities, the fraction of subunits with 1-2 cones matched anatomical observations, and at larger eccentricities the model recovered larger subunits, generally in agreement with anatomical data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C14, C48-C49 demonstrate anatomical validation by comparing functional model fits with independent morphological data from W\u00e4ssle et al., 1994. The eccentricity-dependent pattern of subunit sizes matches anatomical expectations, providing biological plausibility. However, the authors acknowledge some inconsistencies (unexpectedly large subunits at high eccentricities, one surprising distribution), which are appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "Closed-loop validation experiments confirmed model predictions. For cones within subunits, opposite polarity inputs showed cancellation, while cones in separate subunits showed little cancellation. Across 252 cone pairs from 21 RGCs, the full subunit model (r\u00b2=0.24) significantly outperformed both single-cone subunit (r\u00b2=0.11) and LN models (r\u00b2=0.10) (both p<0.005, bootstrap test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 provide independent validation using targeted stimuli selected based on model predictions. The use of closed-loop experiments where model fits guided stimulus selection is methodologically sound. Statistical testing with bootstrap methods and significant p-values support the conclusions. The qualitative and quantitative agreement between predictions and observations is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Analysis of subunit composition across OFF midget RGCs revealed that 48\u00b110% had only single-cone subunits, while 27\u00b16% had two-cone subunits and 13\u00b14% had three-cone subunits (percentages \u00b1s.e.m. across retinas).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 provide clear quantitative characterization of subunit sizes with appropriate error estimates across multiple retinas. These results are consistent with the anatomical validation (C48-C49) and provide important descriptive information about the population.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The improvement of the full fitted subunit model over a simpler single-cone subunit model was small (0-10% across RGCs), likely due to the small size and number of multi-cone subunits per RGC and the simplistic spatial structure of stimuli used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 acknowledge a limitation in model performance and provide a reasonable explanation. The small improvement is consistent with the finding that most cells have predominantly single-cone subunits (C32-C33). The interpretation (C47) is logical given the experimental design, though it remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The experimental results are interpreted as showing that OFF midget bipolar cells linearly combine convergent cone input but introduce a rectifying nonlinearity at the synapse with RGCs. Cancellation of opposing signals indicates cones converge on a single bipolar cell, while failure of cancellation indicates distinct bipolar cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 provide a mechanistic interpretation supported by citations to previous work in other species (Demb et al., 2001; B\u00f6linger and Gollisch, 2012; Schwartz et al., 2012) and consistent with the current experimental observations. The interpretation is logical and biologically plausible, though it remains an inference rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C63",
+      "C65"
+    ],
+    "result": "The nonlinearities revealed in OFF midget RGCs are inconsistent with the traditional interpretation that midget RGCs are linear X cells, but they also differ from Y cells. While midget cells exhibited frequency doubling, the magnitude was phase dependent, unlike the phase-independent frequency doubling characteristic of Y cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57, C63, C65 provide important context by comparing current results with previous literature and established cell classifications. The distinction from both X and Y cells is supported by the data (frequency doubling with phase dependence) and citations to previous studies showing similar findings. This represents a significant reinterpretation of midget cell properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Discrepancies with previous literature suggesting linear summation in midget cells may arise from two factors: (1) many in vivo studies examined central retina where receptive fields consist of single cones/subunits, which would exhibit linear summation; (2) in vivo studies used anesthetics that could raise basal neurotransmitter release, while low basal release rates are thought to underlie the rectifying nonlinearity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 provide reasonable explanations for discrepancies with prior work, supported by citations and logical reasoning. The explanation about single-cone receptive fields in central retina (C58-C59) is particularly compelling. The anesthesia explanation (C60-C61) is supported by citations but remains somewhat speculative (C62).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C68",
+      "C69"
+    ],
+    "result": "Phase dependence in midget cells may arise from low occurrence of multi-cone subunits and the fact that midget cells receive input from only one bipolar cell type forming a single mosaic with minimal dendritic overlap. In contrast, parasol RGCs receive input from two bipolar cell types that overlap in space. Differences in inhibitory circuitry may also contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C68-C69 provide mechanistic explanations for observed differences between cell types, supported by anatomical citations. The reasoning is logical and consistent with known anatomy, though the contribution of inhibitory differences (C69) remains more speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The modeling approach has several advantages over previous methods: (1) it expresses subunit computations directly in terms of circuit components (photoreceptors, bipolar cells, ganglion cells); (2) all components were fitted simultaneously to a single stimulus ensemble rather than separately; (3) it recovers a unique solution for subunit spatial structure, unlike some previous approaches that recover features only up to arbitrary linear transformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 clearly articulate methodological advantages with appropriate citations to previous work. The advantages are well-justified: biological interpretability (C75), simultaneous optimization (C76-C77), and uniqueness of solutions (C78). These represent genuine improvements over previous approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The model does not account for electrical coupling between photoreceptors, which could produce cancellation. While one study suggested modest coupling in primate retina, many cone pairs showed little cancellation, suggesting weak or sporadic coupling effects. However, connexin-36 immunolabeling showed ubiquitous expression at cone junctions, and the eccentricity dependence of cancellation would require coupling to increase substantially with eccentricity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C87 acknowledge a potential confound (cone coupling) and attempt to address it, but the evidence is mixed. Some observations argue against strong coupling effects (C84-C85), while anatomical data suggest widespread coupling (C86). The eccentricity argument (C87) is logical but indirect. This remains an unresolved issue that could affect interpretation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Firing rates in ex vivo recordings were somewhat lower than in vivo anesthetized recordings, though nonlinear spatial summation was observed across a range of spontaneous firing rates (0-10 spikes/s). It remains uncertain whether ex vivo or anesthetized in vivo recordings better reflect natural states, and confirmation of biological relevance awaits testing in awake behaving animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 appropriately acknowledge limitations and uncertainties regarding the physiological relevance of the preparation. The observation that nonlinearities occur across a range of firing rates (C71) partially addresses concerns, but the authors correctly note that definitive validation requires awake recordings (C73).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The model could potentially be applied to other RGC types but would require modifications. For parasol RGCs, which receive input from multiple overlapping bipolar cell types, preliminary fits produce subunits smaller than expected from anatomy, consistent with overlapping populations. Subunit overlap may underlie Y-cell phase invariance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C91 discuss potential extensions and limitations. The preliminary parasol data (C90) supports the need for model modifications, but these are preliminary observations. The speculation about phase invariance (C91) is reasonable but unproven. This represents future work rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The current model does not include receptive field surrounds. Incorporating surrounds could capture contributions of horizontal and amacrine cells and potentially improve subunit estimation accuracy if other model components are indirectly absorbing their effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 acknowledge a clear limitation and discuss potential improvements. The limitation is explicitly stated (C92), and the potential benefits of incorporating surrounds are reasonable (C93-C94), though they remain speculative about actual improvements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "The model assumes linearity of cone signals, which is reasonable for weak stimuli but fails for stronger stimuli. This may account for moderately lower predictive accuracy when the model is fit to noise and tested on stronger increment-decrement stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 acknowledge a model assumption and its limitations, with support from citations and personal communication. The explanation for reduced accuracy on stronger stimuli (C96) is reasonable, though it remains somewhat speculative. This is an appropriate acknowledgment of model limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C15"
+    ],
+    "result": "OFF midget cells exhibited the largest signal-to-noise ratios and response stability over recordings, justifying the focus on this cell type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 provides a clear methodological justification for focusing on OFF midget cells. This is a straightforward observation from the data that explains the experimental design choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Experiments used retinas from 15 terminally anesthetized macaque monkeys, with recordings from peripheral retina (5.5-13.8 mm eccentricity) using a 512-electrode array. No systematic differences in physiology were observed between animal categories. Photoisomerization rates were approximately 29,120, 9440, 9270, and 2320 per second for rods, L, M, and S cones respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 provide essential methodological details about subjects, tissue preparation, recording methods, and stimulus calibration. These are clearly stated and provide necessary information for evaluating and reproducing the work.",
+    "result_type": "MINOR"
+  }
+]

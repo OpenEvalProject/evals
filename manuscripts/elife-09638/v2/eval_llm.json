@@ -1,0 +1,347 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Deletion of BEM1 severely impairs yeast cell polarization and viability. bem1\u2206 spores form colonies at a frequency of 6\u00b10.4\u00d710\u207b\u2075 compared to 0.95 for wild-type. The majority of bem1\u2206 cells (28/35) fail to polarize within 500 min, grow isotropically to very large sizes, and often lyse (16/35). Those that do polarize (probability 0.23) do so rapidly, contrasting with wild-type cells that always polarize (probability 1.0) but show wider timing distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C31 provide converging quantitative evidence from colony formation assays (C23-C24), microscopy observations (C25-C27), and polarization probability measurements (C28-C31) that collectively demonstrate the severe polarization defect caused by BEM1 deletion. The data are internally consistent and supported by multiple experimental approaches including time-lapse microscopy and quantitative measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "bem1\u2206 yeast cells evolved for 1000 generations recover fitness through rapid initial adaptation followed by slower improvement. Ten bem1\u2206 and ten wild-type cultures were evolved by serial dilution, with nine bem1\u2206 and seven wild-type lineages surviving. The initial growth rate of bem1\u2206 lineages was ~12-fold lower than wild-type, but by 1000 generations, bem1\u2206 cells reached >90% of wild-type fitness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C32-C35 describe the experimental evolution design and fitness recovery trajectory, supported by growth rate measurements in Figure 2B. The biphasic recovery pattern (rapid then slow) is clearly documented with quantitative data. Sample sizes are adequate (9-10 lineages per condition) and measurements were replicated at multiple timepoints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C36"
+    ],
+    "result": "Cell size distributions of bem1\u2206 lineages normalize during evolution, serving as a proxy for polarization dynamics. Initially, bem1\u2206 cells were larger with wider size distributions than wild-type. By 1000 generations, both the mode and standard deviation of bem1\u2206 cell sizes adapted to wild-type values, suggesting restoration of proper polarization machinery function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 are supported by cell size measurements (Figure 2C-F) and the established relationship between polarization time and cell size (C36, supported by citation and Figure 2\u2014figure supplement 1E). The inference that normalized cell size indicates proper polarization function (C39) is reasonable given the mechanistic link, though somewhat indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Whole genome sequencing reveals reproducible mutations specific to BEM1 deletion. Five wild-type and ten bem1\u2206 lines were sequenced. Wild-type lines showed diverse mutations with only ECM21 mutated twice (also found in other evolution studies). In contrast, bem1\u2206 lines showed highly reproducible mutations: BEM3 (10/10), NRP1 (5/10), and BEM2 (3/10). These mutations were not reported in other yeast evolution experiments, suggesting specificity for BEM1 deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C49 are strongly supported by whole genome sequencing data. The striking reproducibility of mutations in bem1\u2206 lines (especially BEM3 at 10/10) contrasts sharply with the diversity in wild-type controls. The comparison with published evolution experiments (C43, C48) strengthens the conclusion of BEM1-specific adaptation. The sequencing coverage and analysis methods are adequately described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Mutations in BEM3, NRP1, and BEM2 occurred in a fixed temporal sequence. All A-lines shared the same BEM3 early stop mutation (Q61*), while T2 and T3 independently acquired different BEM3 stop mutations. The BEM3 mutation in A-lines was acquired after spore germination. All five NRP1 mutations were independent early stop mutations. BEM2 showed a promoter mutation (T2) and two radical amino acid substitutions at conserved positions (A1, A2). Sanger sequencing of lines A1 and A2 revealed sequential mutation order: BEM3, then NRP1, then BEM2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 are supported by whole genome sequencing and temporal Sanger sequencing (Figure 3B). The inference that BEM3 mutation occurred post-germination (C53) is supported by phenotypic comparison of original colonies with engineered mutants. The sequential order in A1 and A2 is clearly demonstrated by allele frequency tracking over time. The characterization of mutation types (nonsense, promoter, amino acid substitutions) is straightforward from sequence data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Reconstruction of mutant combinations reveals epistatic interactions explaining the evolutionary trajectory. bem1\u2206 spores have the lowest colony formation frequency, while bem1\u2206 bem2\u2206 bem3\u2206 nrp1\u2206 quadruple mutants closely resemble wild-type, confirming substantial suppression of the polarization defect. The bem2\u2206 mutation increases fitness only in the bem1\u2206 bem3\u2206 nrp1\u2206 background (sign epistasis), reducing or having no effect in other genotypes. The polarization module evolves from requiring Bem1 in wild-type to being slightly impaired by Bem1 presence in bem2\u2206 bem3\u2206 nrp1\u2206 mutants. Line A2 growth rate matches the reconstructed quadruple mutant, while A1 grows slightly faster, suggesting additional adaptive mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 are supported by systematic reconstruction experiments (Figure 3C-E) measuring colony formation, colony size, and growth rates across all genotype combinations. The epistatic interactions are clearly demonstrated, particularly the sign epistasis of bem2\u2206 (C63-C64). The comparison of evolved lines with reconstructed strains (C61-C62) validates that the identified mutations account for most fitness recovery. The changing BEM1 dependence (C65) is directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C73",
+      "C74",
+      "C75",
+      "C80",
+      "C82",
+      "C83"
+    ],
+    "result": "Sequential mutations progressively improve polarization dynamics through distinct mechanisms. bem1\u2206 cells show long delays before polarization, frequent abortive polarization events, and multiple simultaneous polarity sites, suggesting weaker Cdc42 activation and positive feedback. Adding bem3\u2206 accelerates budding but cells still show multiple polarity sites, indicating increased Cdc42 activity alone is insufficient. Adding nrp1\u2206 decreases time between cytokinesis and first polarity site appearance. Adding bem2\u2206 further reduces unpolarized time, also suggesting increased Cdc42 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C75, C80, C82-C83 are supported by quantitative microscopy analysis of Spa2-Citrine localization (Figure 4, Videos 5-8). The progressive improvement in polarization dynamics with each mutation is clearly documented. The inferences about Cdc42 activity (C68, C75, C83) are reasonable given the known GAP functions of Bem2 and Bem3, though somewhat indirect. The measurements are quantitative (time between events, number of polarity sites) with adequate sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C87",
+      "C88"
+    ],
+    "result": "bem1\u2206 lineages follow a common evolutionary trajectory with adaptive mutations that improve polarization by protein inactivation. The trajectory is reproducible across independent lineages, can be largely explained by epistatic interactions among mutated genes, and leads to substantial recovery in speed and accuracy of cell polarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C87-C88 synthesize the major findings. The common trajectory is demonstrated by reproducible mutations (C45-C47), fixed temporal order (C57), and epistatic interactions (C63-C65). The improvement mechanism via protein inactivation is shown by mutation types (nonsense, deletions) and functional analysis. Recovery of polarization is documented by growth rates (C35) and cell size normalization (C38). This represents a well-supported integration of multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The adaptive mutations restore Cdc42 activity without restoring Bem1's scaffolding function, shifting reliance to actin-based positive feedback. BEM3 and BEM2 encode GAPs that inactivate Cdc42, so their inactivation should increase Cdc42 activity. Multiple mutations restore Cdc42 activity without restoring Bem1's ability to physically connect Cdc24 and Cdc42. Consequently, actin-based positive feedback becomes critical, which when acting alone creates multiple simultaneous polarity sites, as observed in the mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72, C84-C86 present a mechanistic model supported by known protein functions (C71, cited), observed phenotypes (multiple polarity sites), and previous work on actin-based feedback (C86, cited). The inference that mutations increase Cdc42 activity (C72) is reasonable given GAP function. The model that actin-based feedback becomes critical (C85) logically follows from loss of Bem1's scaffolding role and is consistent with the multiple polarity site phenotype matching previous observations (C86).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Organisms can be evolutionarily robust to physiologically destructive perturbations through gene inactivation, which may lead to rapid divergence in molecular components. The multiple regulatory layers enabling rapid polarization also enable evolutionary adaptation to strong perturbations. Under strong selection, the larger mutational target size for protein inactivation favors removing components over quantitatively altering properties. Removing regulators like Bem2 and Bem3 is functionally equivalent to rarer mutations altering biochemical parameters of central pathway components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C93-C95 present interpretations of the experimental results. The evolutionary robustness (C9) is demonstrated by fitness recovery from a severe perturbation. The interpretation about regulatory complexity enabling adaptation (C93) is reasonable given the successful recovery through multiple mutations. The argument about mutational target size (C94) is logical and consistent with the predominance of loss-of-function mutations. However, C10 about rapid divergence is more speculative, extrapolating beyond the experimental timeframe.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C115",
+      "C116"
+    ],
+    "result": "NRP1, an RNA-binding protein not previously linked to polarity, plays a role in polarization initiation. NRP1 localizes to stress granules and has seven suggested RNA targets, none with obvious polarity links. High-throughput studies show no interactions between NRP1 and known polarity genes. The lack of NRP1 information made it impossible to predict the positive effect of BEM2 deletion in the bem1\u2206 bem3\u2206 background. The authors speculate NRP1 may regulate polarization initiation triggered by Cdc28 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C79, C81, C115-C116 identify NRP1 as a novel polarity regulator based on its repeated mutation and phenotypic effects (C80). However, the mechanistic understanding is limited. The speculation about Cdc28-triggered initiation (C81) is reasonable given the phenotype but lacks direct evidence. The claim about unpredictability (C116) is more about limitations of prior knowledge than a testable result. This represents an important discovery but with incomplete mechanistic characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "This work represents the first example of reproducible evolutionary trajectories adapting to mutations that severely compromise cellular function. Previous experimental evolution has shown varying degrees of repeatability, from diverse mutations to same genes in same order. Strong epistasis can render most trajectories impossible for multiple substitutions in the same protein. In Pseudomonas fluorescens, loss-of-function mutations dominate and alternative pathways emerge only when the dominant pathway is blocked.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 about novelty is supported by the authors' literature knowledge and the unique combination of severe functional perturbation with reproducible recovery trajectory. Claims C89-C91 accurately summarize prior work (supported by citations) providing context. However, the novelty claim (C92) depends on the authors' assessment of the literature and could be challenged if similar examples exist. The claim is reasonable but inherently difficult to prove definitively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C101"
+    ],
+    "result": "The findings are consistent with previous work showing loss-of-function mutations enable adaptation in bacteria and yeast, and have been observed in natural populations. The selected mutations do not alter existing proteins to replace Bem1's scaffolding function; instead, mutations increasing Cdc42-GTP half-life remove the need for physical proximity of Cdc24 and Cdc42. When removing inhibitors increases fitness, point mutations inactivating inhibitors will be selected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 accurately cite previous work on loss-of-function adaptation. Claim C98 is supported by the mutation types identified (nonsense, deletions). Claim C99 presents a reasonable mechanistic interpretation of how GAP inactivation compensates for Bem1 loss, though the increased Cdc42-GTP half-life is inferred rather than directly measured. Claim C101 is a logical interpretation of the selection process observed. These claims appropriately contextualize the findings within existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The results may explain why certain eukaryotic lineages lack conserved pathways (e.g., anaphase promoting complex in Giardia, kinetochore proteins in kinetoplasids). In filamentous fungi, Cdc42 function is shared with Rac1, but deployment of these modules differs between closely related species. This study shows removing one pathway component selects for inactivation of others, which if accompanied by novel protein recruitment could lead to evolutionary replacement of entire functional modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C107 present evolutionary speculation extending beyond the experimental data. The cited examples of pathway loss (C102-C103) and functional variation (C104-C105) are from the literature. The demonstration that removing one component selects for inactivating others (C106) is supported by the data. However, the extrapolation to long-term module replacement (C107) is highly speculative, requiring recruitment of novel proteins not observed in this study. This represents interesting speculation but lacks direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Several mechanisms could allow fixation of severely deleterious mutations in natural populations: population bottlenecks during speciation, pleiotropic advantages in novel environments offsetting costs to core functions, or prior mutations reducing severity of component removal. Evidence exists for loss of conserved genes in evolutionary lineages, including 88 genes lost during S. cerevisiae descent from a 100 Mya ancestor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C108-C110 present speculative mechanisms for how deleterious mutations could be fixed in nature, addressing a potential objection to the evolutionary relevance of the findings. These are reasonable hypotheses but lack direct evidence. Claims C111-C112 cite literature examples of gene loss, providing some support that such events occur naturally. However, whether the specific mechanisms proposed (C108-C110) explain these natural examples remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "If increasing gene dosage can reverse perturbation effects, cells may recover by becoming aneuploid, as observed when chromosome XVI duplication increases MKK2 and RLM1 dosage to compensate for type II myosin absence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 presents a speculation about alternative recovery mechanisms supported by a cited example. This represents a reasonable contrast to the gene inactivation mechanism observed in this study. The speculation is appropriately qualified and supported by precedent, though it was not the mechanism observed in the current experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C117"
+    ],
+    "result": "Future mechanistic analysis of polarization in different mutant combinations will reveal insights about both functional module evolution and cell biology of polarization. It may be more important to alter quantitative parameters of the overall polarization process than to alter specific protein behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C114 and C117 present forward-looking statements about future research directions and general principles. These are reasonable perspectives but represent speculation about future work rather than current results. Claim C117 about the importance of quantitative parameters is an interesting hypothesis suggested by the findings but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background on functional modules and experimental evolution approaches. Cells are organized by functional modules with important but not absolutely conserved components, suggesting cells can evolve to perform functions with different proteins. Complex modules reorganize during evolution. Experimental microbial evolution allows identification of adaptive mutations and their temporal order, though selections typically produce mutations in multiple modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C11-C15 present established background knowledge supported by citations. These accurately summarize the state of the field and provide appropriate context for the study. The claims are well-supported by the cited literature and represent accepted knowledge rather than novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background on yeast cell polarization mechanisms. Yeast cells polarize by localizing and activating Cdc42 at a single site, directed by a historical mark in haploid cells, though cells can polarize randomly without the mark. Symmetry breaking depends on actin-based positive feedback and actin-independent Turing-type mechanisms. Bem1 recruits GEF Cdc24 and Cdc42 to the membrane and is a relatively young component that had different roles in ancestral fungi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 present established background on yeast polarization mechanisms, all supported by citations to previous work. These accurately describe the known biology and provide essential context for understanding why BEM1 was chosen for deletion and how the polarization system functions. This represents appropriate citation of prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Methods and technical observations. W303 strain background and YPD media were used. Riboflavin and folic acid were omitted from YNB to minimize autofluorescence. Approximately 20% of selection plate colonies were bem1\u2206, with others likely aneuploid for chromosome II. One bem1\u2206 and three wild-type cultures were lost to contamination; line A2 was restarted and evolved for 820 generations. Spa2-Citrine localizes to polarity sites and cytokinetic rings. All surviving bem1\u2206 colonies in the spore plotting assay contained Spa2-Citrine despite heterozygosity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C126 describe methodological details and technical observations. These are straightforward descriptions of experimental procedures and observations. The inference about aneuploid colonies (C122) is reasonable given the selection scheme. The observation about Spa2-Citrine enrichment (C126) is interesting but represents a technical detail rather than a major finding. These claims are adequately supported but represent methodological rather than conceptual contributions.",
+    "result_type": "MINOR"
+  }
+]

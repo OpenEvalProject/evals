@@ -1,0 +1,2212 @@
+{
+  "submission": {
+    "id": "b188e785-ea0c-49bd-a67f-3f2f8dd9f2a1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:14:04.125887Z",
+    "updated_at": "2025-11-29T22:14:04.125887Z"
+  },
+  "content": [
+    {
+      "id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "submission_id": "b188e785-ea0c-49bd-a67f-3f2f8dd9f2a1",
+      "content_type": "manuscript",
+      "content_text": "# Building accurate sequence-to-affinity models from high-throughput in vitro protein-DNA binding data using FeatureREDUCE\n\n## Authors\n\n- Todd R Riley<sup>1</sup>\n- Allan Lazarovici<sup>1</sup>\n- Richard S Mann<sup>2</sup>\n- Harmen J Bussemaker<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Biological Sciences Columbia University New York United States\n2. Department of Systems Biology Columbia University New York United States\n3. Department of Biology University of Massachusetts Boston Boston United States\n4. Department of Electrical Engineering Columbia University New York United States\n5. Department of Biochemistry and Molecular Biophysics Columbia University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nTranscription factors are crucial regulators of gene expression. Accurate quantitative definition of their intrinsic DNA binding preferences is critical to understanding their biological function. High-throughput in vitro technology has recently been used to deeply probe the DNA binding specificity of hundreds of eukaryotic transcription factors, yet algorithms for analyzing such data have not yet fully matured. Here, we present a general framework (FeatureREDUCE) for building sequence-to-affinity models based on a biophysically interpretable and extensible model of protein-DNA interaction that can account for dependencies between nucleotides within the binding interface or multiple modes of binding. When training on protein binding microarray (PBM) data, we use robust regression and modeling of technology-specific biases to infer specificity models of unprecedented accuracy and precision. We provide quantitative validation of our results by comparing to gold-standard data when available.\n\n## Introduction\n\nTranscription factors (TFs) play a central role in the regulation of gene expression. To be able to understand and predict the behavior of the gene regulatory circuitry in any given organism, we need to know the in vivo DNA binding preferences of the TFs that its genome encodes. In recent years, a number of high-throughput in vitro technologies have been introduced that can provide such information (Berger and Bulyk, 2009; Warren et al., 2006; Maerkl and Quake, 2007; Zhao et al., 2009; Slattery et al., 2011; Berger et al., 2006). However, while the volume of the data generated using these assays dwarfs that of more traditional measurements of protein-DNA interaction strength, the available computational methodology for analyzing them has not fully matured (Weirauch, 2013).\n\nThe number of base pairs that constitute the DNA 'footprint' within which base identity can influence binding affinity depends strongly on the three-dimensional structure of the DNA-binding domain (DBD) of the TF. In theory, as long as thermodynamic equilibrium can be assumed, sequence specificity is completely defined by a table containing the (relative) affinity with which the DBD binds to each possible oligonucleotide within the footprint. This tabular approach has been widely used to analyze Protein Binding Microarray (PBM) data (Berger and Bulyk, 2009). It comes with significant challenges, however. First, the size of the oligomer table grows exponentially with footprint size, which in practice limits it to eight base pairs, shorter than the footprint of most TFs. Even for octamer tables, the number of affinity parameters to be estimated is on the same order as the number of PBM data points. This limits precision and necessitates the use of non-parametric methods (as opposed to parameterized biophysical methods), resulting in an associated loss of quantitative information.\n\nA long-standing alternative has been to assume that each nucleotide position within the footprint contributes independently to the overall binding affinity. The most commonly used representation of sequence specificity that makes this independence assumption is the position weight matrix (PWM) (Berg and von Hippel, 1987; Stormo and Fields, 1998; Stormo, 2000; Djordjevic et al., 2003), which defines position-specific base frequencies. Algorithms for inferring the PWM coefficients traditionally aim to maximize its information content relative to a random background model (Lawrence et al., 1993; Frech et al., 1997; Bailey, 1995; Roth et al., 1998). In an alternative approach, sequence specificity is represented in terms of the relative affinity (or, equivalently, the difference, \u25b3\u25b3G, in binding free energy) associated with each possible point mutation of the optimal sequence (Stormo and Yoshioka, 1991; Stormo et al., 1993), and summarized in the form of a position-specific affinity matrix (PSAM) (Foat et al., 2006; Bussemaker et al., 2007). The difference in philosophy between the PWM and PSAM representations also leads to a different approach to estimating their coefficients. It is no longer the information content (i.e. the height of the letters in the standard sequence logo) that is being optimized, but rather the ability of the PSAM to quantitatively explain the variation in a measurable quantity in terms of variation in the nucleotide sequence associated with each quantity (for instance, the expression level of a gene in terms of its upstream promoter sequence). In the case of PBM data, the PSAM parameters are inferred by performing a nonlinear fit of a sequence-based model that predicts the signal intensity for each probe. The first implementations of this idea were the MatrixREDUCE (Foat et al., 2006; Foat et al., 2005) and PREGO (Tanay, 2006) algorithms; a more recent extension is BEEML-PBM (Zhao and Stormo, 2011).\n\nWhether dependencies between nucleotide positions can be accurately estimated from PBM data and used to refine models of binding specificity remains an open question (Weirauch, 2013; Zhao and Stormo, 2011; Benos et al., 2002). Furthermore, while the existence of alternative binding modes is now widely recognized, accurate quantification of their relative usage has not yet been attempted. To address these needs, we developed our FeatureREDUCE software. It provides a flexible framework for building sequence-to-affinity models from PBM data (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/06397/elife-06397-fig1-v2.jpg)\n\n**Figure 1.:** (1) A robust method is used to estimate relative affinities for each K-mer of a given length. The K-mer with the highest affinity is chosen as the seed. (2) Using the seed as a reference, robust linear regression is used to estimate the relative affinity parameters in each column of the position-specific affinity matrix (PSAM). (3) With the current affinity model, linear regression is used to estimate the positional bias profile across the probe. (4) An optional step uses nonlinear regression to solve for the free protein concentration. (5) Robust regression is used to estimate free energy contributions associated with higher-order sequence features such as dinucleotides. (6) Steps 2 through 5 are repeated until convergence. (7) The procedure results in a feature-specific affinity model (FSAM) that can be used to predict the relative affinity for any DNA sequence.\n\n## Results and discussion\n\nFeatureREDUCE is based on an extensible biophysical model in which the binding free energy difference \u25b3\u25b3G(Sref\u2192S) between an arbitrary nucleotide sequence S and a reference sequence Sref (usually taken as the highest-affinity sequence) is defined as a sum of parameters \u25b3\u25b3G\u03c6 over all nucleotide sequence 'features' \u03c6\u00a0that distinguish S from Sref\u00a0(see Materials\u00a0and\u00a0methods). The full set of possible features in which S and Sref differ includes all possible single-base substitutions by default, but can be supplemented with dinucleotides that model dependencies and/or insertions at specific positions within the binding site that model variation in binding mode. Such a feature-based approach has been used previously (Sharon et al., 2008; Gord\u00e2n et al., 2013; Zhou et al., 2015), but, as we will argue below, our approach to estimating the coefficients of the model is different and optimal.\n\nThe contribution of a binding site to the PBM intensity depends on its position within the probe, as was previously demonstrated by planting the same motif at different offsets (Berger et al., 2006). This may preclude accurate model estimation unless it is dealt with explicitly. Moreover, whenever the TF binds near the free end of a probe, loss of contacts with the DNA backbone can reduce binding affinity. FeatureREDUCE captures such spatial bias by introducing an independent multiplicative correction factor for the ratio [TF]/Kd at each offset within the probe (Figure 2a). These coefficients are estimated from the PBM intensities in parallel with the \u25b3\u25b3G parameters (see Materials\u00a0and\u00a0methods). The positional bias profile inferred by FeatureREDUCE for the homo-dimer Cbf1p is shown in Figure 2b. It indicates that the magnitude of the contribution of an individual binding site to the PBM intensity can vary by an order of magnitude depending on its offset within the probe, and that there is preference for Cbf1p binding away from the substrate. For Pho4p, binding near the free end of the probe shows an opposite trend (Figure 2\u2014figure supplement 1). The fraction of the variance (R2) in PBM intensity explained by a 10-bp independent-nucleotide model increases dramatically, from 48% to 71%, after accounting for the positional bias. FeatureREDUCE can also detect any preference for monomeric TFs to bind in one of the two possible orientations on the dsDNA probes. For example, Zif268 exhibits a strong bias for binding to the negative strand over the positive strand (Figure 2c). Indeed, it is known that Zif268 requires non-specific contacts with the DNA backbone on the 5'-end of the motif (Berger et al., 2006). BEEML-PBM (Zhao and Stormo, 2011) also models positional biases along the probes, but it does not account for orientation preference, or for overhang binding at the free end of the probe.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/06397/elife-06397-fig2-v2.jpg)\n\n**Figure 2.:** (a) Accounting for biases related to the position of the binding site within the probe. The effective protein concentration is lower closer to the substrate, presumably due to steric hindrance. Furthermore, binding near the free end of probe is associated with loss of contacts with the DNA backbone. (b) Positional bias profile for the homo-dimeric bHLH transcription factor Cbf1p, as inferred by a model fit to the PBM intensities. (c) Idem, for the monomeric zinc finger transcription factor Zif268. Figure 2\u2014figure supplement 1 shows how positional bias can be used as an indicator of data quality.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06397/elife-06397-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) The positional bias profile for Cbf1p exhibits a strong preference for binding far from the substrate. The negative slope of the dashed red line is an indicator of high data quality. (b) The same plot for Pho4p. Here, the quality of the data is questionable. The sign of the slope from a linear regression over the range denoted by the solid red line is a useful data quality indicator.\n\nThe readout of base identity at different nucleotide positions is only approximately independent. Indeed, various studies have analyzed whether representations of sequence specificity that account for nucleotide dependencies are more accurate than those that do not (Sharon et al., 2008; Agius et al., 2010; Lee et al., 2002; Stormo et al., 1986; Zhou and Liu, 2004). Controversy, however, remains about whether the additional parameters associated with such dependencies reflect structural mechanisms or technology-specific biases (Weirauch, 2013). In the biophysical model that underlies FeatureREDUCE, we model dependencies by simply including additional DNA sequence features \u03c6\u00a0that define base identity at two (or more) nucleotide positions, and estimating the corresponding free energy parameters \u25b3\u25b3G\u03c6\u00a0along with those for single nucleotides (see Materials\u00a0and\u00a0methods). The nucleotide dependencies discovered by FeatureREDUCE for Cbf1p are shown in Figure 3a. As expected for a model with additional parameters, accounting for dependencies significantly increased the fraction of the variance that could be explained when training on PBM intensities (R2 improved from 71% to 96%). The real question, however, is how well the inferred model parameters perform on independent validation data.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/06397/elife-06397-fig3-v2.jpg)\n\n**Figure 3.:** (a) Overview of the dependencies between pairs of neighboring nucleotides positions identified by FeatureREDUCE for homodimers of the basic helix-loop-helix (bHLH) factor Cbf1p. (b) Including dinucleotide dependencies in the sequence-to-affinity model, in combination with the use of robust regression, improves the ability to delineate Gene Ontology associations with Cbf1p targets predicted from the genome sequence. Figure 3\u2014figure supplement 1 shows the crucial importance of using robust inference methods for estimating the binding free energy correction terms associated with dinucleotide features. Figure 3\u2014figure supplement 2 shows the underlying cumulative distributions of yeast promoter affinities for 'sulfur compound metabolic process', the GO category with the most statistically significant association with Cbf1p.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/06397/elife-06397-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Shown is comparison between relative affinities inferred by FeatureREDUCE from PBM data for the transcription factor Cbf1p (horizontal axis) and the gold-standard measurement of the same affinity obtained using MITOMI (vertical axis). When the independent-nucleotide model (PSAM) is augmented with nearest-neighbor dinucleotide dependencies (FSAM), the agreement with the gold standard improves significantly, as indicated by the root-mean-square error (RMSE) and corresponding 100,000-iteration permutation p-value of 2.7e-5. The lower plots show that using robust regression techniques is essential for capturing the effect of dinucleotide features.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/06397/elife-06397-fig3-figsupp2-v2.jpg)\n\nA unique aspect of FeatureREDUCE is the use of robust inference techniques (Huber and Ronchetti, 2009), which, as it turns out, is crucial for obtaining accurate estimates of the various contributions to the binding free energy. To demonstrate this, we compared our results to measurements of binding affinity for Cbf1p obtained using the orginal version of the MITOMI technology (Maerkl and Quake, 2007), which are in excellent (R2 = 0.95) agreement with similar measurements obtained using surface plasmon resonance (Berger et al., 2006; Teh et al., 2007). We used these 'gold-standard' binding affinity measurements to assess the quality of the sequence-to-affinity models inferred from PBM data by FeatureREDUCE. When we fit a position-specific affinity matrix (PSAM) based model that ignores dependencies between nucleotides, the root-mean-square error (RMSE) between FeatureREDUCE model predictions and gold-standard MITOMI 1.0 measurements improved from 0.071 to 0.035 when standard least-squares fitting was replaced by robust iteratively re-weighted least-squares (Figure 3\u2014figure supplement 1, left panels). When positional dependencies were added to the model (feature-specific affinity model; FSAM), it actually performed worse than the model assuming independence between nucleotides (position-specific affinity matrix; PSAM) when we used standard least-squares fitting, indicative of over-fitting to noise in the training data. When we used robust regression, however, the RMSE for the FSAM-based model was significantly better than for the PSAM-based model (Figure 3\u2014figure supplement 1, right panels). These results indicate that dependencies within the binding interface indeed exist, and that they can be modeled incorrectly when non-robust regression techniques are used.\n\nWe also assessed the ability of our models to make predictions regarding in vivo TF function. First, we found that the inclusion of nucleotide dependencies when predicting aggregated yeast promoter affinities improves the ability to delineate Gene Ontology categories associated with regulation by Cbf1p (see Materials\u00a0and\u00a0methods), but again only when robust inference techniques are used (Figure 3B; see also Figure 3\u2014figure supplement 2). Second, to assess the extent to which we can quantitatively predict in vivo binding, we considered the degree of occupancy by Cbf1p at 955 potential genomic binding sites of type NNCACGTGNN (E-box) in yeast cells growing in rich media as measured by ChIP-seq (Zhou and O'Shea, 2011). Using a simple thermodynamic equilibrium model with a single free protein concentration parameter to account for binding saturation in the ChIP-seq experiment, we found that by this in vivo measure, FeatureREDUCE performs well (RMSE = 0.075), and significantly better than BEEML-PBM (Zhao and Stormo, 2011) (RMSE = 0.156); full data are shown in Figure 4.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/06397/elife-06397-fig4-v2.jpg)\n\n**Figure 4.:** (a) Direct comparison between relative affinities for 10-mers inferred from PBM intensities by FeatureREDUCE and relative in vivo occupancy at 955 genomic locations of type NNCACGTGNN (E-box with flanks) as measured by ChIP-seq (Zhou and O'Shea, 2011). Trimmed-mean (trim = 10%) ChIP-seq fold-enrichments were computed for all unique 10-mer sequences that occur at least three times in the genome. To account for saturation of higher-affinity binding sites, a basic equilibrium model (green curve) was fit with a single free-protein parameter. Red lines indicate the error between the observed and predicted relative ChIP enrichments. (b) The same plot for the BEEML-PBM algorithm (Zhao and Stormo, 2011). The same equilibrium model (green curve) was fit, but the optimal free protein concentration parameter was much lower than in (a), so the saturation is not apparent in this case.\n\nThe accuracy of FeatureREDUCE was demonstrated more broadly in a recent benchmark comparison between 26 different PBM data analysis algorithms (Weirauch, 2013). This study employed two distinct performance metrics. The in vitro metric quantified the accuracy with which probe intensities were predicted in a test PBM experiment using a model trained on independent training data from a PBM experiment for the same TF but with a different probe design; this was done for 66 different TFs from various structural families. The in vivo metric used a non-parametric score to quantify accuracy in ranking sequences in terms of their local ChIP-seq enrichment, for nine different TFs. FeatureREDUCE emerged as the top-performing algorithm according to both criteria.\n\nWeirauch et al. (Weirauch, 2013) first assessed algorithm performance across a large dataset by using cross-validation between two different PBM designs. However, one of their surprising findings was that some algorithms generate models that perform well across different PBM designs but poorly when predicting in vivo binding, presumably due to over-fitting to PBM-specific biases. For example, the performance of one of the algorithms went from second-best in the PBM cross-validation test to worst in\u00a0the ChIP-seq prediction\u00a0test (Weirauch, 2013). Likewise, an extension of BEEML-PBM that adds dinucleotide parameters (Zhao et al., 2012) did not perform well on ChIP-seq data (Weirauch, 2013), presumably because it does not employ robust inference techniques. We conclude that FeatureREDUCE is currently the only algorithm that succeeds in parameterizing dependencies within the binding site.\n\nAnother current debate in the field is whether or not PBM data can provide evidence of alternative DNA binding modes employed by the same TF (Zhao and Stormo, 2011; Badis et al., 2009; Morris et al., 2011; Gord\u00e2n et al., 2011). Oligomeric TF complexes can often bind DNA using different relative orientations of and/or spacing between their subunits (Gord\u00e2n et al., 2011). The modeling framework employed by FeatureREDUCE provides a natural opportunity to perform forward selection of multiple binding modes, represented by distinct PSAMs, which can subsequently be combined into a single predictive model and refined in an iterative manner (see Materials\u00a0and\u00a0methods). We applied this procedure for the basic leucine zipper (bZIP) proteins Yap1p and Gcn4p. FeatureREDUCE accurately captures the known intrinsic differences in half-site preference of Yap1p (which prefers TTAC, typical for the C/EBP subfamily (Warren et al., 2012); Figure 5a) and Gcn4p (which prefers TGAC, typical for the CREB subfamily; Figure 5b). It is well known that each protein, when binding DNA as a homo-dimer, can do so with or without a 1-bp overlap between the half-sites. What is unique about our approach is that the multi-PSAM model captures fold-differences in thermodynamic stability between the binding modes by estimating an overall relative affinity coefficient for the secondary PSAM. For instance, the binding affinity of Gcn4p for TGACGTCA is predicted to be 24% of that of TGASTCA (cf. Figure 5b). This is in good agreement with recent high-throughput measurements of Gcn4 binding constants for all 12-mers using HiTS-FLIP (Nutiu et al., 2011), specifically, Kd = 65 nM and 15 nM for the respective sequences. In addition, while the accuracy of the dominant TGASTCA motif essentially does not change, the accuracy of the weaker TGACGTCA motif increases significantly when using our multi-PSAM model compared to the single-fit model (R2 improved from 69% to 80% for sites with relative affinity > 0.1). We note that the results of our analysis can be used in a straightforward manner to predict which binding mode is dominant for a particular DNA sequence.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/06397/elife-06397-fig5-v2.jpg)\n\n**Figure 5.:** The transcription factors Yap1p (a) and Gcn4p (b) can each bind in two distinct modes, in which the two half-sites respectively do (top) and do not (bottom) overlap. Not only is the sequence of preferred half-site different between the two factors, the preferred binding mode is different too, as indicated by the relative association constant (Ka) inferred from the PBM data by FeatureREDUCE.\n\nIn conclusion, FeatureREDUCE analysis yields an accurate and interpretable biophysical affinity model that can provide detailed clues about the structural mechanisms that underlie protein-DNA recognition (Roider et al., 2007; Kinney et al., 2007), such as dependencies between nucleotide positions and the modulation of binding mode by variation in the underlying DNA sequence. Our algorithm allows one to make optimal use of the large volume of data that has been generated using microarray-based protein-nucleotide interaction profiling technology.\n\n## Materials and methods\n\n### Equilibrium model for TF-DNA interaction\n\nFeatureREDUCE builds upon the biophysical model for protein-DNA interaction on which Matrix-REDUCE (Foat et al., 2006) is based. A transcription factor P binds to DNA sequence S to form a TF-DNA complex PS, with forward and backward rate constants kon\u00a0and\u00a0koff, respectively:\n\n$$\nP+S\u00a0\u21c4k_{off}k_{on}\u00a0PS\n$$\n\nThe affinity of P for S can be expressed in terms of an equilibrium association constant\u00a0Ka(S) or dissociation constant\u00a0Kd(S):\n\n$$\nK_{a}(S)=\\frac{1}{K_{d}(S)}=\\frac{k_{on}}{k_{off}}=\\frac{[PS]}{[P][S]}\n$$\n\nThe Gibbs free energy of binding per mole (relative to a 1M reference concentration) is given by \u2206G = RT ln(Kd /1M) is, where R is the universal gas constant and T the absolute temperature. The fractional occupancy, N(S), defined as the probability that S is bound by P, can be expressed as:\n\n$$\nN(S)=\\frac{[PS]}{[PS]+[S]}=\\frac{[P]}{[P]+K_{d}(S)}=\\frac{[P]K_{a}(S)}{[P]K_{a}(S)+1}\n$$\n\nIf we assume a low-concentration regime where $[P]\u226aK_{d}(S)$ where no saturation occurs, the expression for the occupancy simplifies to:\n\n$$\nN(S)\u00a0\u2248\u00a0\\frac{[P]}{K_{d}(S)}=[P]K_{a}(S)\n$$\n\nRelative to a reference sequence\u00a0Sref (typically chosen to be the highest-affinity sequence), there will be multiplicative change in the affinity\u00a0Ka, or, equivalently, an additive change \u2206\u2206G in the free energy of binding, for any other sequence\u00a0S:\n\n$$\n\\frac{K_{a}(S)}{K_{a}(S_{ref})}\u00a0=\u00a0exp-\\frac{\\Delta\\DeltaG(S)}{RT}\n$$\n\nwhere\n\n$$\n\\Delta\\DeltaG(S)=\\DeltaG(S)-\\DeltaG(S_{ref})\n$$\n\n### Feature-based model of sequence specificity\n\nFeatureREDUCE models the relative binding free energy for sequence S as a sum of parameters associated with the DNA sequence features $\\phi\\in\u03a6(S)$ that characterize S:\n\n$$\n\\Delta\\DeltaG(S)=\\sum\\phi\\in\u03a6(S)\\Delta\\DeltaG_{\\phi}\n$$\n\nIn this study, we considered both single-nucleotide features (e.g. \u03c6\u00a0=\u00a0A1, denoting the presence of an A at position 1 within the binding site window) and adjacent-dinucleotide ones (e.g.,\u00a0\u03c6\u00a0=\u00a0C3G4, denoting the presence of a CpG dinucleotide starting at position 3). At a given position, exactly one of a set of 4 single-nucleotide features (A, C, G, or T) will be present in any particular sequence. We refer to such a set of mutually exclusive and jointly exhaustive features as a 'block'. Each sequence has exactly one feature from each block. A binding window of length L contains L mononucleotide blocks. There is a one-to-one correspondence between the (exponentiated)\u00a0\u2206\u2206G\u03c6/RT values in a mononucleotide block and a column in a position-specific affinity matrix (PSAM). Together, the dinucleotide features constitute\u00a0L\u00a0\u2212\u00a01 dinucleotide blocks, each consisting of 16 features. Within each block, the 4 or 16\u00a0\u2206\u2206G\u03c6 values are only defined up to a common additive constant. The convention we use for mononucleotide blocks is that\u00a0\u2206\u2206G\u03c6\u00a0=\u00a00 for the feature that occurs in the reference sequence. For dinucleotide blocks, however, we use a different convention intended to minimize the number of\u00a0\u2206\u2206G\u03c6 values that are significantly different from zero (see below for details).\n\n### Modeling PBM intensity\n\nThe model on which MatrixREDUCE (Foat et al., 2006) was based assumes that the measured fluorescence intensity\u00a0y(S) for probe\u00a0S is given by a sum over all possible ways in which the TF can bind to the probe (all possible offsets in either the forward or the reverse direction), which we will here refer to as partial 'views'\u00a0Sv on the full probe sequence S:\n\n$$\ny(S)\u00a0=\u00a0\\beta_{0}+\\beta_{1}\\sumve^{\u2212\u0394\u0394G(S_{v})/RT}\n$$\n\nIn FeatureREDUCE, to account for positional and directional biases in the extent to which binding affinity in a particular view contributes to the probe intensity, we introduce coefficients\u00a0\u03b3\u03bd that are shared across all probes:\n\n$$\ny(S)\u00a0=\u00a0\\beta_{0}+\\beta_{1}\\sumv\\gamma_{v}e^{\u2212\u0394\u0394G(S_{v})/RT}\n$$\n\nWe do not necessarily assume a low TF concentration (cf. Equation 4). Moreover, we include a term\u00a0\u2206\u2206Gns that accounts for non-specific binding, which helps capture the DNA binding characteristics of the protein succinctly and has a positive effect on numerical convergence when estimating the model parameters. Together, this leads to the following model:\n\n$$\ny(S)\u00a0=\u00a0\\beta_{0}+\\beta_{1}\\sum\u03bd\\frac{1}{1+\\gamma_{v}e^{\u2212\u0394\u0394G(S_{v})/RT}+e^{\u2212\u0394\u0394G_{ns}/RT}^{\u22121}}\n$$\n\n### Robust model parameter estimation\n\nFeatureREDUCE estimates the parameters in Equation 9 using iteratively reweighted least squares (IRLS). This procedure down-weights data points that have high residuals compared to the fitted model. However, the weights depend on the residuals and the residuals depend on the weights. This dependency is broken by first choosing uniform initial weights, then iteratively refitting the model and re-calculating new residuals and weights, until convergence. IRLS prevents over-fitting and thereby allows for improved parameter estimation. FeatureREDUCE uses the 'rlm' function in the MASS package for R to perform the robust regression. We set the trimmed probes hyperparameter to 20%, as we previously found this value to be optimal during cross-validation on the DREAM5 dataset (Weirauch, 2013). Repeated rounds of parameter re-estimation that cycle over feature 'blocks' are performed until convergence, first for mononucleotide blocks (resulting in a converged PSAM), and subsequently for dinucleotide blocks. Specifically, when estimating the free energy parameters for a given block\u00a0B, the following model is fit:\n\n$$\ny(S)\u00a0=\u00a0\\beta_{0}+\\sum\\phi\\inB\\beta_{\\phi}\\sumv\\inV_{\\phi}(S)e^{-(\\Delta\\DeltaG(S_{v})-\\Delta\\DeltaG_{\\phi})/RT}\n$$\n\nHere\u00a0V\u03c6(S) denotes the subset of views on\u00a0S\u00a0 that contain feature\u00a0\u03c6. Note that only the \u03b2\u03c6 coefficients are treated as fit parameters here. The\u00a0\u2206\u2206G\u03c6 values come from the previous iteration. However, they are re-estimated as:\n\n$$\n\\frac{\u0394\u0394G_{\\phi}}{RT}=\u2212log\\frac{\\beta_{\\phi}}{\\beta_{PSAM}}\n$$\n\nHere\u00a0\u03b2PSAM stands for the value of\u00a0\u03b21 in Equation 12 when only mononucleotide features are fit. With this normalization,\u00a0\u2206\u2206G\u03c6 is no longer equal to zero for dinucleotide features occurring in the reference sequence. However, most of the \u2206\u2206G\u03c6\u00a0values for dinucleotide features now tend to be close to zero, which is desirable. In each round, the spatial bias parameters\u00a0\u03b3\u03bd are also re-estimated using robust regression. After iteration and convergence over multiple such rounds, FeatureREDUCE fits the additional parameters in the non-linear model in Equation 10 using the Levenberg-Marquardt nonlinear least-squares algorithm.\n\n### Seed discovery\n\nFinding a good seed for the feature-based regression procedure is a crucial first step in our algorithm. To select the seed from the set of all oligomers of length\u00a0K, we developed a dedicated robust iterative algorithm based on trimmed means designed to deal with the sparseness of the design matrix. We fit probe intensities as a weighted sum of the number of occurrences of each of the\u00a04K oligomers:\n\n$$\ny(S)=\\summ\\beta_{m}X_{m}(S)\n$$\n\nHere\u00a0Xm(S) denotes the number of occurrences of oligomer\u00a0m in sequence S. Regression coefficients\u00a0\u03b2m were initialized to a small value (10\u22124) representative of non-specific binding. Next, for each individual probe\u00a0S, we determined the coefficient value\u00a0\u03b2\u2019m(S) that exactly predicts the intensity:\n\n$$\n\\beta_{m}^{'}(S)\u00a0=\u00a0\\frac{1}{X_{m}}y(S)\u2212\\summ^{'}\\neqm\u00a0\\beta_{m^{'}}X_{m^{'}}(S)\n$$\n\nWe then computed the trimmed mean $\\beta_{m}^{'}$ (removing the top and bottom 15% values) of all\u00a0\u03b2\u2019m(S) values across all probes for which\u00a0Xm\u00a0>\u00a00. Finally, we updated the coefficient according to:\n\n$$\n\\beta_{m}\u2192(1\u2212\\alpha)\\beta_{m}+\\alpha\\beta_{m}^{'}\n$$\n\nusing a step size\u00a0\u03b1\u00a0=\u00a00.1. This was done for all oligomers in parallel. After iteration and convergence, the oligomer with the highest regression coefficient value was chosen as the seed.\n\n### Palindromic symmetry\n\nThis step in the algorithm starts by separately fitting and then comparing positive and negative strand PSAMs. If these are similar according to the L1-norm (within a small tolerance) then the motif is flagged as symmetric. The PSAM is then rebuilt using the highest-affinity symmetric seed. The symmetric version of the binding motif tends to be more accurate while using half the number of parameters.\n\n### Motif length\n\nWe determine the length of the binding site by adding columns to either side of the PSAM until the coefficient of determination (R2) decreases. An increase indicates that there are direct or indirect protein-DNA contacts being made at the additional positions, while a decrease indicates that we have increased the length of the motif past the effective range of specificity and inadvertently excluded valid binding sites at the end of the PBM probe.\n\n### Testing for gene ontology association\n\nFollowing (Ward and Bussemaker, 2008), we first predict the total affinity of each gene\u2019s upstream region, as a sum over a sliding window of binding affinities computed using our model. Next, all genes were ranked by this total promoter affinity and the Wilcoxon-Mann-Whitney rank-sum test was used to score association with each Gene Ontology category (Gene Ontology and Consortium, 2015). P-values were corrected for multiple testing using a Bonferroni correction based on the total number of GO categories tested in parallel.\n\n### Alternative binding modes\n\nTo infer multiple-binding models for a single TF, the following procedure was used: (i) Fit a single-binding-model using the standard algorithm. (ii) Fit additional binding-mode model(s) to the residuals of the previous model. (iii) Iteratively update each binding mode as a weighted mean between a newly fit model and the model from the previous iteration, until convergence. (iv) Perform a final multiple regression to determine the relative preference for (and statistical significance of) each binding mode.\n\n### Motifs containing poly-G/C stretches\n\nStretches of four or more guanines affect the efficiency of PBM probe synthesis and were replaced by their reverse complement in some PBM designs (Berger et al., 2008). Therefore, if the highest-affinity motif contains four or more consecutive cytosines, FeatureREDUCE uses only the positive strand to generate the biophysical model; conversely, if the highest-affinity motif contains a poly-G stretch, only the negative strand is used.\n\n### Software availability\n\nhttp://bussemakerlab.org/software/FeatureREDUCE/\n",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "1f3d22cf-bf34-4242-b131-61b5b8210896",
+      "submission_id": "b188e785-ea0c-49bd-a67f-3f2f8dd9f2a1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nir Friedman, The Hebrew University of Jerusalem , Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.06397.029](https://doi.org/10.7554/eLife.06397.029)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \"Building accurate sequence-to-affinity models from high-throughput in vitro protein-DNA binding data using FeatureREDUCE\" for consideration at eLife. Your article has been favorably evaluated by Aviv Regev (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe Reviewing editor and the other reviewers discussed their comments before we reached this decision, and the Reviewing editor has assembled the following comments to help you prepare a revised submission.\n\nThe main concerns raised by the reviewers were:\n\n1) Lack of details about the methods, and in particular how dinucleotide interactions are incorporated and their impact on the quality of predictions, and the use of robust regression.\n\n2) More thorough and detailed evaluation of the performance of the method compared to others (the reviews provide specific suggestions).\n\nReviewer #1:\n\nDuring recent years there has been a wealth of information gathered about the DNA-binding specificity of proteins using microarrays and sequencing methods. A challenge posed by this data is how to generalize from experimental results to a model of the DNA-binding preferences (or affinities) of the protein. The authors describe a computational tool (FeatureREDUCE) for dealing with these challenges. They evaluate their tool on a few in vitro and in vivo datasets and compare it to recent state of the art tools.\n\nI agree with the authors\u2019 description of a shift in the field from data-poor regime (where only a few binding sets per protein were known) to a data-rich regime where high-throughput methods assigning affinity/preference of the protein to thousands sequences. Yet, the methodology for representing these affinities has been lagging behind the experimental advances. I also agree with their goal of finding such a representation to generalize (i.e., extrapolate) from the results of PBMs (which list affinity value for all possible 8-mers).\n\nTo the best of my understanding the new contributions here involve the following:\n\n1) The use of feature-based \"free-energy\" based method combined with specific robust estimation methods. These extend previous methods of the authors by using published methods.\n\n2) Estimating position-bias in PBM data in parallel to estimating sequence preferences.\n\n3) The use of Poisson regression for SELEX-seq data.\n\nThe authors evaluate their claims by using existing datasets to evaluate the results of their method compared to few recent ones in the literature.\n\nI list comments on these aspects of the paper, especially the first, below. These describe what I view as major problems in the current manuscript, but I believe they are all addressable.\n\nThe manuscript is, above all, a methods paper. It seems to be carefully designed method to solve a well-established and important problem and it definitely would be suitable for a specialized journal. For a wider audience, I would have expected a much more significant innovation that provided new and useful insights about the general computational problem and the underlying biological reality.\n\nMajor concerns:\n\nThe authors discuss at length the importance of their free-energy view of the problem. Frankly, the discussion relating free energy representation that defines a Gibbs distribution and probabilistic models (especially exponential models) has been hashed thoroughly in multiple venues and communities. In terms of representation, there is no difference between the representational powers of position-specific Affinity and position specific Probability matrix. I agree that affinities allow an elegant way to adjust the probability due to changes in protein concentration (if you believe the system is in equilibrium). However, this is a much more minute difference than the authors' presentation makes it seem. I would tone down the \"sale pitch\" on this view. It is a useful one to have (and has been discussed since early days, e.g., Berg and von Hippel, 1987), but it is not inherently superior.\n\nSimilarly, the introduction of feature-based representations of free-energy differences (\u0394\u0394G) is mathematically similar or identical to previous methods (e.g., Sharon, Lubliner and Segal, 2008).\n\nThere is a great discrepancy between the main text and figures and the Materials and methods regarding the use of features (one of the novelties of the current manuscript). The discussion in the Materials and methods mentions only position-specific mutation and do not mention any higher-order feature, which ones are searched, and how. From Figure 3 I assume these are strings of mutations. However, the way the method generates candidate features (all the ones I see in the figure involve pairs of adjacent positions) or search/decide among them is not specified.\n\nAnother discrepancy between the main text and the Materials and methods is the issue of robust estimation. The authors view the use of robust estimation as one of their main contributions (reference in the Abstract, dedicated supplemental figures, etc.). Yet, the Methods are vague about the details. The main text provides a reference for a book about robust statistics, which while surely a useful text, is not helpful for the reader who attempts to understand what actually happens in the estimation procedure.\n\nMuch of the evaluation of the method is based on its performance in a published comparison of many computational methods. It is surprising that one of the best performing methods in that comparison has been unpublished in the two years since the comparison was performed (the program has been available for download apparently).\n\nThe evaluation carried out in this manuscript is limited for cases where there is external information to compare against. I found the evaluation of GO enrichment p-value of Figure 3 as a very indirect (and inaccurate) indicator of quality (the difference between p-value of 10-8 to 10-7 are not that dramatic and can be driven by changes in the status of few genes). Similarly, the differences in RMSE in Figure 4 are not convincing me that the model is substantially different or better. First of all, ChIP signal (enrichment over background) is often not a reliable quantitative signal. Second, it is unclear how differences in low affinity sequences change actual predictions made with these models. I would expect an evaluation to provide the reader with a sense as to when the precise details do matter. I suspect they do, but the current presentation is focused on various summaries that are not transparent nor reflect actual differences in predictions.\n\nReviewer #2:\n\nThe manuscript describes FeatureREDUCE, a successor to the very successful MatrixREDUCE method for inferring TF binding preferences/(relative affinity) from in vitro binding data. FeatureREDUCE adds robust regression, dinucleotide affinity models, and various features specific for recent large-scale in vitro assays of TF binding (location models for PBMs, Poisson regression for sequencing-based approaches, etc.). Results are presented on a handful of TFs, so these examples simply illustrate the advantages of the new features rather than to extensively test them.\n\nAlthough it seems iterative, and the validation is limited, this is very important work. The software package would be immediately useful to a large group of researchers. Despite the abundance of work in this area, there's really nothing as comprehensive (and correct) as the described software available. BEEML and BEEML-PBM come close but the manuscript nicely illustrates the advantages of FeatureREDUCE. The fact that this software works well was already illustrated in a previous study (Weirauch et al.) and all the important conceptual and engineering advances over the past few years are implemented in this package. I think eLife would be a great spot for this manuscript to end up.\n\nA few things need to be fixed though. First, there are a number of missing details about the methodology that need to be filled in. Also, the manuscript is a little grandiose and needs to be toned down. Finally, and very importantly, the software needs to be open source and freely available. The value of this manuscript is the associated software; if that software isn't freely available, then there's no point in publishing this manuscript.\n\nMajor concerns:\n\n1) It looks like in Figure 4 that you didn't permit BEEML to fit a protein concentration parameter as well, so this isn't a fair comparison. To make it fair, you could i) not fit a protein concentration parameter for FeatureREDUCE or ii) fit one for BEEML. Actually, you should do both, just to be sure.\n\n2) Please provide more details in the \"Robust Regression\" about the MM-estimator. This technique will be new to most readers. How was it implemented? Are there any other free parameters besides the number of trimmed probes?\n\n3) From Equation 11, it looks like BiasREDUCE requires non-linear regression. If so, then Figure 1 caption #3 is wrong.\n\n4) How do you go from a seed k-mer to an initial PSAM? Presumably, you can't start with any zeros in the PSAM or you will get zero partial derivatives.\n\n5) What is your tolerance for the L1-norm for the palindromes?\n\n6) You need to provide more details about the multi-PSAM mode and experiments. Do you fit an initial PSAM and then fit a second one to the residuals using the entire pipeline (starting with #1)? Do you then re-fit the first PSAM? How do you decide whether or not a second PSAM is necessary?\n\nReviewer #3:\n\nRiley and colleagues describe the development and application of a computational regression algorithm (FeatureREDUCE) to build more accurate affinity models from PBM or SELEX-seq datasets. This new method relies on iterative regression steps and the incorporation of dinucleotide dependencies to train improved affinity models for transcription factor binding. The utility of these affinity models is demonstrated on transcription factors with simple and complex binding modes.\n\nOverall, this computational approach appears to display improved performance over other existing methods for building affinity models, and consequently will be of value to the broader scientific community. However, the current manuscript does not describe for the end-user the type of models that are generated for use in other applications \u2013 in particular how weights for the dinucleotide dependencies in the FSAM can be represented and readily displayed for interpretation. One subset of dinucleotide dependencies is displayed in Figure 3A, where surprisingly (if this reviewer is interpreting the data correctly) the strongest dinucleotide contributions to the model are substantial penalties against the consensus sequence. To this reviewer, this result is counter-intuitive, and deserves comment, as it does not mesh with a simplistic view of dinucleotide effects in protein-DNA recognition (e.g. a single amino acid simultaneously and synergistically contacting neighboring base pairs in the preferred binding site). Moreover, since the authors are claiming the demonstration of the existence of dinucleotide dependencies based on their analysis, which has been a contentious point in the field, further explanation is warranted.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Building accurate sequence-to-affinity models from high-throughput in vitro protein-DNA binding data using FeatureREDUCE\" for further consideration at eLife. Your revised article has been favorably evaluated by Aviv Regev (Senior editor), a Reviewing editor, and two reviewers.\n\nThe authors responded to the issues raised. However, the reviewers\u2019 opinion was that this response is too terse/unsatisfactory in places. We strongly recommend that the authors attempt to provide a clear understandable description of the methods, to the extent that someone with reasonable knowledge in the field but not in this project can understand what is being done in each step.\n\nEssential revisions:\n\n1) The software must be deposited to a public repository (GitHub or similar). Or at the very least, the open source version of FeatureREDUCE used in this manuscript should be made available through the supplement for this journal article. Published software should have an additional guarantee of availability though the journal and/or an outside authority like GitHub (or BitBucket, or similar; we do not wish to proscribe the channel for release).\n\n2) Clarify the methods description of discrimination from reference sequence. Reviewer comment (following the authors' response):\n\nAgain, if this reviewer is interpreting the data correctly from Figure 3A, there is a penalty against CG dinucleotides at positions -1 and 1. (Likewise CA at -3,-2 and TG at 2,3) Based on the description in the Methods:\n\n\"FeatureREDUCE models the binding free energy for sequence S as a sum of coefficients associated with all the \"features\" that discriminate S from the reference sequence Sref (usually the DNA sequence with the highest affinity). In this study, we considered single-nucleotide features (\"A at position 1\") and adjacent dinucleotide features (\"CG at positions 3 and 4\").\"\n\nThe authors describe the utilization of these features to discriminate S from Sref. The strongest (negative) dinucleotide features in Figure 3A are for dinucleotides that are in Sref, as presumably the highest affinity sequence is the reference sequence. Again, this reviewer may be missing some critical understanding of the algorithm, but based on the methods description the result does not fit with expectation. (Why would dinucleotide dependencies be discovered that apply to Sref?) Consequently, a more adequate description is required in the Materials and methods.\n\n3) \u201cFeature-based modeling of intensities\u201d. This paragraph is hard to make sense of, and uses too many ill-defined terms. Please include what the features are, the coefficient (what are \"columns of features\"?), and how are defined (as you did for position-specific case).\n\n4) The \"Seed detection\" paragraph is similarly obscure.\n\n5) Probe-position effects \u2013 what is \u03b1? Are the \u03b3 coefficients shared among all probes? When/how are they estimated?\n\n6) The authors use rlm (from MASS package) to estimate the \"parameters in Equation 11\". Up to now the authors discussed coefficients (are these parameters?). As far as I can tell, these do not appear in a linear form in Equation 11. How do you resolve that?\n",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1ce7d26c-ac43-4c82-9a31-c72ed26d5fd5",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C1",
+      "claim": "Transcription factors are crucial regulators of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription factors are crucial regulators of gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific consensus about the role of transcription factors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "0ab14844-ac45-4c3f-a7aa-479ff540140c",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C2",
+      "claim": "Accurate quantitative definition of transcription factor DNA binding preferences is critical to understanding their biological function.",
+      "claim_type": "EXPLICIT",
+      "source": "Accurate quantitative definition of their intrinsic DNA binding preferences is critical to understanding their biological function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents a general principle in the field based on established understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "8f5d33ad-5b3c-4ea0-9063-b033632811de",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C3",
+      "claim": "High-throughput in vitro technology has been used to probe the DNA binding specificity of hundreds of eukaryotic transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "High-throughput in vitro technology has recently been used to deeply probe the DNA binding specificity of hundreds of eukaryotic transcription factors, yet algorithms for analyzing such data have not yet fully matured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement refers to the current state of the field and available technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "6f906603-3f93-420e-89a0-78ef86e36e2e",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C4",
+      "claim": "Algorithms for analyzing high-throughput in vitro protein-DNA binding data have not yet fully matured.",
+      "claim_type": "EXPLICIT",
+      "source": "High-throughput in vitro technology has recently been used to deeply probe the DNA binding specificity of hundreds of eukaryotic transcription factors, yet algorithms for analyzing such data have not yet fully matured.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the current state of computational methods in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "56d431ec-918c-4726-bb99-946aa4c71f1a",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C5",
+      "claim": "FeatureREDUCE is a general framework for building sequence-to-affinity models based on a biophysically interpretable model of protein-DNA interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present a general framework (FeatureREDUCE) for building sequence-to-affinity models based on a biophysically interpretable and extensible model of protein-DNA interaction that can account for dependencies between nucleotides within the binding interface or multiple modes of binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the nature and capabilities of the FeatureREDUCE framework presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "3697fc6d-d0e0-4d46-9c86-b97d0cc23c31",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C6",
+      "claim": "FeatureREDUCE can account for dependencies between nucleotides within the binding interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present a general framework (FeatureREDUCE) for building sequence-to-affinity models based on a biophysically interpretable and extensible model of protein-DNA interaction that can account for dependencies between nucleotides within the binding interface or multiple modes of binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated capability of the FeatureREDUCE method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "6170a308-aee0-43ad-b638-2ba9e1895a6e",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C7",
+      "claim": "FeatureREDUCE can account for multiple modes of binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present a general framework (FeatureREDUCE) for building sequence-to-affinity models based on a biophysically interpretable and extensible model of protein-DNA interaction that can account for dependencies between nucleotides within the binding interface or multiple modes of binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated capability of the FeatureREDUCE method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "064da30a-173c-4cc2-8f22-2c7fdfdf156d",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C8",
+      "claim": "FeatureREDUCE uses robust regression when training on PBM data.",
+      "claim_type": "EXPLICIT",
+      "source": "When training on protein binding microarray (PBM) data, we use robust regression and modeling of technology-specific biases to infer specificity models of unprecedented accuracy and precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological approach used in FeatureREDUCE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "3ef9ea20-129c-4b9d-a604-7e43ea07b64f",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C9",
+      "claim": "FeatureREDUCE models technology-specific biases when training on PBM data.",
+      "claim_type": "EXPLICIT",
+      "source": "When training on protein binding microarray (PBM) data, we use robust regression and modeling of technology-specific biases to infer specificity models of unprecedented accuracy and precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological approach used in FeatureREDUCE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "0218e79c-82aa-47eb-a820-41793751f71a",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C10",
+      "claim": "FeatureREDUCE infers specificity models of unprecedented accuracy and precision.",
+      "claim_type": "EXPLICIT",
+      "source": "When training on protein binding microarray (PBM) data, we use robust regression and modeling of technology-specific biases to infer specificity models of unprecedented accuracy and precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the performance of FeatureREDUCE supported by validation data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "9e0f0510-6274-4652-ab43-7d563274c37f",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C11",
+      "claim": "Transcription factors play a central role in the regulation of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription factors (TFs) play a central role in the regulation of gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about transcription factors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "39c1e9e7-b3f2-462c-8f29-6de46b797fc7",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C12",
+      "claim": "Understanding in vivo DNA binding preferences of transcription factors is necessary to understand and predict gene regulatory circuitry behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "To be able to understand and predict the behavior of the gene regulatory circuitry in any given organism, we need to know the in vivo DNA binding preferences of the TFs that its genome encodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the role of TFs in gene regulation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "abdd1763-463e-4253-9b09-73e036dd6eb3",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C13",
+      "claim": "A number of high-throughput in vitro technologies have been introduced in recent years to measure TF DNA binding preferences.",
+      "claim_type": "EXPLICIT",
+      "source": "In recent years, a number of high-throughput in vitro technologies have been introduced that can provide such information (Berger and Bulyk, 2009; Warren et al., 2006; Maerkl and Quake, 2007; Zhao et al., 2009; Slattery et al., 2011; Berger et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to published work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "214b801b-9808-48ff-a9be-ae0746d099c8",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C14",
+      "claim": "The volume of data generated using high-throughput assays dwarfs that of traditional measurements of protein-DNA interaction strength.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while the volume of the data generated using these assays dwarfs that of more traditional measurements of protein-DNA interaction strength, the available computational methodology for analyzing them has not fully matured (Weirauch, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of data volumes between different measurement approaches.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "0ebc3796-eea5-4d60-a26c-a7c5181ff27f",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C15",
+      "claim": "The available computational methodology for analyzing high-throughput protein-DNA binding data has not fully matured.",
+      "claim_type": "EXPLICIT",
+      "source": "However, while the volume of the data generated using these assays dwarfs that of more traditional measurements of protein-DNA interaction strength, the available computational methodology for analyzing them has not fully matured (Weirauch, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This assessment is supported by a citation to Weirauch 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "6823e414-49e1-4095-95c2-9f2c20bb7b64",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C16",
+      "claim": "The number of base pairs that constitute the DNA footprint depends strongly on the three-dimensional structure of the DNA-binding domain of the transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of base pairs that constitute the DNA 'footprint' within which base identity can influence binding affinity depends strongly on the three-dimensional structure of the DNA-binding domain (DBD) of the TF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the relationship between protein structure and DNA binding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "0b116dd4-f635-4c0b-b36a-5f799074cfcf",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C17",
+      "claim": "Under thermodynamic equilibrium, sequence specificity is completely defined by a table containing the relative affinity for each possible oligonucleotide within the footprint.",
+      "claim_type": "EXPLICIT",
+      "source": "In theory, as long as thermodynamic equilibrium can be assumed, sequence specificity is completely defined by a table containing the (relative) affinity with which the DBD binds to each possible oligonucleotide within the footprint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical principle based on thermodynamic equilibrium.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "c1da1995-8024-43ac-b6ce-7168523ae721",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C18",
+      "claim": "The tabular approach has been widely used to analyze Protein Binding Microarray (PBM) data.",
+      "claim_type": "EXPLICIT",
+      "source": "This tabular approach has been widely used to analyze Protein Binding Microarray (PBM) data (Berger and Bulyk, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Berger and Bulyk 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "fffdaff3-c408-4923-ba4b-0e1baa4c624d",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C19",
+      "claim": "The size of the oligomer table grows exponentially with footprint size.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the size of the oligomer table grows exponentially with footprint size, which in practice limits it to eight base pairs, shorter than the footprint of most TFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical property of the tabular approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "9ee55c45-8d01-4b9b-b5ee-a784fc15f75e",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C20",
+      "claim": "The tabular approach is in practice limited to eight base pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the size of the oligomer table grows exponentially with footprint size, which in practice limits it to eight base pairs, shorter than the footprint of most TFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a practical limitation inferred from the exponential growth of parameters.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "ff264a65-6825-4a62-a995-0e04dddd53d0",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C21",
+      "claim": "Eight base pairs is shorter than the footprint of most transcription factors.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the size of the oligomer table grows exponentially with footprint size, which in practice limits it to eight base pairs, shorter than the footprint of most TFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about typical TF footprint sizes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "2cc8fb11-a126-494e-a2d6-2aa72f328443",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C22",
+      "claim": "For octamer tables, the number of affinity parameters to be estimated is on the same order as the number of PBM data points.",
+      "claim_type": "EXPLICIT",
+      "source": "Even for octamer tables, the number of affinity parameters to be estimated is on the same order as the number of PBM data points.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the relationship between parameters and data points in the tabular approach.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "0a002f28-7de7-4030-a007-110295feb8c9",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C23",
+      "claim": "The large number of parameters relative to data points limits precision in the tabular approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Even for octamer tables, the number of affinity parameters to be estimated is on the same order as the number of PBM data points. This limits precision and necessitates the use of non-parametric methods (as opposed to parameterized biophysical methods), resulting in an associated loss of quantitative information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the consequences of having many parameters relative to data points.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "ee225752-f9a3-4c5f-9dbc-5ab4e63de4e4",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C24",
+      "claim": "The large number of parameters necessitates the use of non-parametric methods in the tabular approach.",
+      "claim_type": "EXPLICIT",
+      "source": "Even for octamer tables, the number of affinity parameters to be estimated is on the same order as the number of PBM data points. This limits precision and necessitates the use of non-parametric methods (as opposed to parameterized biophysical methods), resulting in an associated loss of quantitative information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about methodological requirements given the parameter-to-data ratio.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "4600c11f-89b2-40ef-813f-84a6cdacfc46",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C25",
+      "claim": "Using non-parametric methods results in a loss of quantitative information.",
+      "claim_type": "EXPLICIT",
+      "source": "Even for octamer tables, the number of affinity parameters to be estimated is on the same order as the number of PBM data points. This limits precision and necessitates the use of non-parametric methods (as opposed to parameterized biophysical methods), resulting in an associated loss of quantitative information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the consequences of using non-parametric methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "a91faed8-56a6-4bf0-b0ba-78ea87b25a5a",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C26",
+      "claim": "An alternative to the tabular approach is to assume that each nucleotide position within the footprint contributes independently to overall binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "A long-standing alternative has been to assume that each nucleotide position within the footprint contributes independently to the overall binding affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an alternative modeling approach in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "2dbbdedc-01e8-4817-9ad0-760abc1f817b",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C27",
+      "claim": "The position weight matrix (PWM) is the most commonly used representation of sequence specificity that makes the independence assumption.",
+      "claim_type": "EXPLICIT",
+      "source": "The most commonly used representation of sequence specificity that makes this independence assumption is the position weight matrix (PWM) (Berg and von Hippel, 1987; Stormo and Fields, 1998; Stormo, 2000; Djordjevic et al., 2003), which defines position-specific base frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "1d398834-f32c-4f85-887b-991b73561cb4",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C28",
+      "claim": "PWM algorithms traditionally aim to maximize information content relative to a random background model.",
+      "claim_type": "EXPLICIT",
+      "source": "Algorithms for inferring the PWM coefficients traditionally aim to maximize its information content relative to a random background model (Lawrence et al., 1993; Frech et al., 1997; Bailey, 1995; Roth et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations describing PWM inference methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "2c323fe2-62bb-4f0f-8a00-3cc042c5c00f",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C29",
+      "claim": "Sequence specificity can be represented in terms of relative affinity associated with each possible point mutation of the optimal sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "In an alternative approach, sequence specificity is represented in terms of the relative affinity (or, equivalently, the difference, \u25b3\u25b3G, in binding free energy) associated with each possible point mutation of the optimal sequence (Stormo and Yoshioka, 1991; Stormo et al., 1993), and summarized in the form of a position-specific affinity matrix (PSAM) (Foat et al., 2006; Bussemaker et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations describing the PSAM approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "14e4c941-dfce-4b31-87c6-9e194546b5f2",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C30",
+      "claim": "The difference in philosophy between PWM and PSAM representations leads to different approaches to estimating their coefficients.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in philosophy between the PWM and PSAM representations also leads to a different approach to estimating their coefficients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the methodological consequences of different representations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "e6ac47fd-6eac-4527-a4e2-ec1aac077477",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C31",
+      "claim": "In the PSAM approach, the ability to quantitatively explain variation in a measurable quantity is optimized rather than information content.",
+      "claim_type": "EXPLICIT",
+      "source": "It is no longer the information content (i.e. the height of the letters in the standard sequence logo) that is being optimized, but rather the ability of the PSAM to quantitatively explain the variation in a measurable quantity in terms of variation in the nucleotide sequence associated with each quantity (for instance, the expression level of a gene in terms of its upstream promoter sequence).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the optimization objective in the PSAM approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "e23701ee-360e-4c03-a9d7-e58a697c60bd",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C32",
+      "claim": "For PBM data, PSAM parameters are inferred by performing a nonlinear fit of a sequence-based model that predicts signal intensity for each probe.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of PBM data, the PSAM parameters are inferred by performing a nonlinear fit of a sequence-based model that predicts the signal intensity for each probe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for inferring PSAM parameters from PBM data.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "200ad2e1-b65b-4ee9-9dd4-d5441386138b",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C33",
+      "claim": "MatrixREDUCE was the first implementation of the PSAM approach for PBM data.",
+      "claim_type": "EXPLICIT",
+      "source": "The first implementations of this idea were the MatrixREDUCE (Foat et al., 2006; Foat et al., 2005) and PREGO (Tanay, 2006) algorithms; a more recent extension is BEEML-PBM (Zhao and Stormo, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to the original MatrixREDUCE papers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "b3d9db0d-4d9b-4fa0-adef-fafb44b0ef61",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C34",
+      "claim": "PREGO was one of the first implementations of the PSAM approach for PBM data.",
+      "claim_type": "EXPLICIT",
+      "source": "The first implementations of this idea were the MatrixREDUCE (Foat et al., 2006; Foat et al., 2005) and PREGO (Tanay, 2006) algorithms; a more recent extension is BEEML-PBM (Zhao and Stormo, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to the PREGO paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "7b86dfdf-05ee-4181-86b9-42125d63e209",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C35",
+      "claim": "BEEML-PBM is a more recent extension of the PSAM approach.",
+      "claim_type": "EXPLICIT",
+      "source": "The first implementations of this idea were the MatrixREDUCE (Foat et al., 2006; Foat et al., 2005) and PREGO (Tanay, 2006) algorithms; a more recent extension is BEEML-PBM (Zhao and Stormo, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to the BEEML-PBM paper.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "97bb28da-1d5c-4114-b6bf-38267c3b20c7",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C36",
+      "claim": "Whether dependencies between nucleotide positions can be accurately estimated from PBM data and used to refine binding specificity models remains an open question.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether dependencies between nucleotide positions can be accurately estimated from PBM data and used to refine models of binding specificity remains an open question (Weirauch, 2013; Zhao and Stormo, 2011; Benos et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations indicating ongoing debate in the field.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "30051d2a-2720-40eb-8bb6-0184bede413c",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C37",
+      "claim": "The existence of alternative binding modes is now widely recognized.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while the existence of alternative binding modes is now widely recognized, accurate quantification of their relative usage has not yet been attempted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "9df10140-2eea-4cbf-b5ff-7625074d94b2",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C38",
+      "claim": "Accurate quantification of relative usage of alternative binding modes has not yet been attempted.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, while the existence of alternative binding modes is now widely recognized, accurate quantification of their relative usage has not yet been attempted.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about what has not been done in the field prior to this work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "8958af38-9667-45a7-8a4e-545914d7e194",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C39",
+      "claim": "FeatureREDUCE provides a flexible framework for building sequence-to-affinity models from PBM data.",
+      "claim_type": "EXPLICIT",
+      "source": "To address these needs, we developed our FeatureREDUCE software. It provides a flexible framework for building sequence-to-affinity models from PBM data (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the purpose and capabilities of FeatureREDUCE, with reference to Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "86082b76-d725-4763-8574-91ba56b5b1a3",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C40",
+      "claim": "FeatureREDUCE uses a robust method to estimate relative affinities for each K-mer of a given length.",
+      "claim_type": "EXPLICIT",
+      "source": "(1) A robust method is used to estimate relative affinities for each K-mer of a given length. The K-mer with the highest affinity is chosen as the seed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes step 1 of the FeatureREDUCE algorithm as shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "71c72bc1-e815-446f-8fc2-46b40520e63a",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C41",
+      "claim": "FeatureREDUCE chooses the K-mer with the highest affinity as the seed.",
+      "claim_type": "EXPLICIT",
+      "source": "(1) A robust method is used to estimate relative affinities for each K-mer of a given length. The K-mer with the highest affinity is chosen as the seed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the seed selection step in the FeatureREDUCE algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "f7f8bb00-4db8-49df-8b96-870d7f1bd56f",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C42",
+      "claim": "FeatureREDUCE uses robust linear regression to estimate relative affinity parameters in each column of the PSAM.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) Using the seed as a reference, robust linear regression is used to estimate the relative affinity parameters in each column of the position-specific affinity matrix (PSAM).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes step 2 of the FeatureREDUCE algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "99bc387d-d731-4f44-9639-966d6b9352fc",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C43",
+      "claim": "FeatureREDUCE uses linear regression to estimate the positional bias profile across the probe.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) With the current affinity model, linear regression is used to estimate the positional bias profile across the probe.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes step 3 of the FeatureREDUCE algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "8e1fb1a8-ee2b-4eda-869e-a33f83773b37",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C44",
+      "claim": "FeatureREDUCE optionally uses nonlinear regression to solve for the free protein concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "(4) An optional step uses nonlinear regression to solve for the free protein concentration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an optional step 4 in the FeatureREDUCE algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "70c207c5-acb5-4fb1-9a7b-9d26967fedd0",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C45",
+      "claim": "FeatureREDUCE uses robust regression to estimate free energy contributions associated with higher-order sequence features such as dinucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "(5) Robust regression is used to estimate free energy contributions associated with higher-order sequence features such as dinucleotides.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes step 5 of the FeatureREDUCE algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "18d52b5b-90fd-4b1e-bbc7-76fc4001f65e",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C46",
+      "claim": "FeatureREDUCE repeats steps 2 through 5 until convergence.",
+      "claim_type": "EXPLICIT",
+      "source": "(6) Steps 2 through 5 are repeated until convergence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the iterative nature of the FeatureREDUCE algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "02a4b46e-dbbb-4435-896c-6a9df109012e",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C47",
+      "claim": "FeatureREDUCE produces a feature-specific affinity model (FSAM) that can predict relative affinity for any DNA sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "(7) The procedure results in a feature-specific affinity model (FSAM) that can be used to predict the relative affinity for any DNA sequence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the output of the FeatureREDUCE algorithm.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "c3076373-6a03-4006-bfd2-b2cbb7e83615",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C48",
+      "claim": "FeatureREDUCE is based on an extensible biophysical model where binding free energy difference is defined as a sum of parameters over all nucleotide sequence features.",
+      "claim_type": "EXPLICIT",
+      "source": "FeatureREDUCE is based on an extensible biophysical model in which the binding free energy difference \u25b3\u25b3G(Sref\u2192S) between an arbitrary nucleotide sequence S and a reference sequence Sref (usually taken as the highest-affinity sequence) is defined as a sum of parameters \u25b3\u25b3G\u03c6 over all nucleotide sequence 'features' \u03c6 that distinguish S from Sref (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the theoretical foundation of FeatureREDUCE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "5bf20e5f-89ae-4403-941a-b87ef88b5cd0",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C49",
+      "claim": "The full set of possible features in FeatureREDUCE includes all possible single-base substitutions by default.",
+      "claim_type": "EXPLICIT",
+      "source": "The full set of possible features in which S and Sref differ includes all possible single-base substitutions by default, but can be supplemented with dinucleotides that model dependencies and/or insertions at specific positions within the binding site that model variation in binding mode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the default feature set in FeatureREDUCE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "ada7d019-e231-4bed-b241-b0a14d6c59a5",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C50",
+      "claim": "FeatureREDUCE features can be supplemented with dinucleotides that model dependencies.",
+      "claim_type": "EXPLICIT",
+      "source": "The full set of possible features in which S and Sref differ includes all possible single-base substitutions by default, but can be supplemented with dinucleotides that model dependencies and/or insertions at specific positions within the binding site that model variation in binding mode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an extension capability of FeatureREDUCE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "2cf43cda-ad54-4c0b-a8d1-dc0c6294a2e9",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C51",
+      "claim": "FeatureREDUCE features can be supplemented with insertions at specific positions that model variation in binding mode.",
+      "claim_type": "EXPLICIT",
+      "source": "The full set of possible features in which S and Sref differ includes all possible single-base substitutions by default, but can be supplemented with dinucleotides that model dependencies and/or insertions at specific positions within the binding site that model variation in binding mode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an extension capability of FeatureREDUCE for modeling multiple binding modes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "16108a73-7427-4e7f-b117-0d63037d93db",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C52",
+      "claim": "A feature-based approach has been used previously for modeling protein-DNA binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a feature-based approach has been used previously (Sharon et al., 2008; Gord\u00e2n et al., 2013; Zhou et al., 2015), but, as we will argue below, our approach to estimating the coefficients of the model is different and optimal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "bb6c6e3b-de0c-4768-8eea-ab3e9e348251",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C53",
+      "claim": "The FeatureREDUCE approach to estimating model coefficients is different from previous feature-based approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a feature-based approach has been used previously (Sharon et al., 2008; Gord\u00e2n et al., 2013; Zhou et al., 2015), but, as we will argue below, our approach to estimating the coefficients of the model is different and optimal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim that will be supported by data presented later in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "57e47f07-62fc-408d-9b4a-193c9f7bff77",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C54",
+      "claim": "The FeatureREDUCE approach to estimating model coefficients is optimal.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a feature-based approach has been used previously (Sharon et al., 2008; Gord\u00e2n et al., 2013; Zhou et al., 2015), but, as we will argue below, our approach to estimating the coefficients of the model is different and optimal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim that will be supported by validation data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "c6dd03c5-05cb-4ebd-bea2-5f54618f4ee7",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C55",
+      "claim": "The contribution of a binding site to PBM intensity depends on its position within the probe.",
+      "claim_type": "EXPLICIT",
+      "source": "The contribution of a binding site to the PBM intensity depends on its position within the probe, as was previously demonstrated by planting the same motif at different offsets (Berger et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Berger et al. 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "690fe9f5-a4a2-43ca-8073-109f59dc9bf4",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C56",
+      "claim": "Positional dependence of binding site contribution may preclude accurate model estimation unless dealt with explicitly.",
+      "claim_type": "EXPLICIT",
+      "source": "The contribution of a binding site to the PBM intensity depends on its position within the probe, as was previously demonstrated by planting the same motif at different offsets (Berger et al., 2006). This may preclude accurate model estimation unless it is dealt with explicitly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the consequences of positional bias for model estimation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "61d7e4a1-96b7-41f7-a3be-8c3abd1c5fda",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C57",
+      "claim": "When a transcription factor binds near the free end of a probe, loss of contacts with the DNA backbone can reduce binding affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, whenever the TF binds near the free end of a probe, loss of contacts with the DNA backbone can reduce binding affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a biophysical explanation for reduced binding affinity at probe ends.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "b4be6fa8-b4c2-4b96-b56b-b91366c3213e",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C58",
+      "claim": "FeatureREDUCE captures spatial bias by introducing an independent multiplicative correction factor for the ratio [TF]/Kd at each offset within the probe.",
+      "claim_type": "EXPLICIT",
+      "source": "FeatureREDUCE captures such spatial bias by introducing an independent multiplicative correction factor for the ratio [TF]/Kd at each offset within the probe (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes how FeatureREDUCE models positional bias, with reference to Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "10de8cfc-075f-4656-9e9d-a72425269541",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C59",
+      "claim": "The positional bias coefficients in FeatureREDUCE are estimated from PBM intensities in parallel with the \u25b3\u25b3G parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "FeatureREDUCE captures such spatial bias by introducing an independent multiplicative correction factor for the ratio [TF]/Kd at each offset within the probe (Figure 2a). These coefficients are estimated from the PBM intensities in parallel with the \u25b3\u25b3G parameters (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the parameter estimation procedure in FeatureREDUCE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "00e1a062-7737-46fb-8064-afe61dd2d95b",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C60",
+      "claim": "The magnitude of the contribution of an individual Cbf1p binding site to PBM intensity can vary by an order of magnitude depending on its offset within the probe.",
+      "claim_type": "EXPLICIT",
+      "source": "The positional bias profile inferred by FeatureREDUCE for the homo-dimer Cbf1p is shown in Figure 2b. It indicates that the magnitude of the contribution of an individual binding site to the PBM intensity can vary by an order of magnitude depending on its offset within the probe, and that there is preference for Cbf1p binding away from the substrate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the positional bias analysis shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "48d8802f-14a9-47f9-9349-9dc0b33c0094",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C61",
+      "claim": "Cbf1p has a preference for binding away from the substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "The positional bias profile inferred by FeatureREDUCE for the homo-dimer Cbf1p is shown in Figure 2b. It indicates that the magnitude of the contribution of an individual binding site to the PBM intensity can vary by an order of magnitude depending on its offset within the probe, and that there is preference for Cbf1p binding away from the substrate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the positional bias analysis shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "8504458b-2334-4f02-9642-614f8b6b50ba",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C62",
+      "claim": "Pho4p binding near the free end of the probe shows an opposite trend compared to Cbf1p.",
+      "claim_type": "EXPLICIT",
+      "source": "For Pho4p, binding near the free end of the probe shows an opposite trend (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the positional bias analysis shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "779bbae0-81ea-464e-b44e-65d9fc4f4aa7",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C63",
+      "claim": "The fraction of variance in PBM intensity explained by a 10-bp independent-nucleotide model for Cbf1p increases from 48% to 71% after accounting for positional bias.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of the variance (R2) in PBM intensity explained by a 10-bp independent-nucleotide model increases dramatically, from 48% to 71%, after accounting for the positional bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result demonstrating the importance of modeling positional bias.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "2d9e853c-a2e3-4c49-957a-a011bcebdc28",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C64",
+      "claim": "FeatureREDUCE can detect preference for monomeric transcription factors to bind in one of two possible orientations on dsDNA probes.",
+      "claim_type": "EXPLICIT",
+      "source": "FeatureREDUCE can also detect any preference for monomeric TFs to bind in one of the two possible orientations on the dsDNA probes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of FeatureREDUCE.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "316f04b5-e477-4fc9-a5a6-f9d08e4c7211",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C65",
+      "claim": "Zif268 exhibits a strong bias for binding to the negative strand over the positive strand.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Zif268 exhibits a strong bias for binding to the negative strand over the positive strand (Figure 2c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the orientation bias analysis shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "4593160c-3771-4d6c-a255-eddf8dacb851",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C66",
+      "claim": "Zif268 requires non-specific contacts with the DNA backbone on the 5'-end of the motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it is known that Zif268 requires non-specific contacts with the DNA backbone on the 5'-end of the motif (Berger et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Berger et al. 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "cd2843a8-64c0-41ed-9e31-605815000c47",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C67",
+      "claim": "BEEML-PBM models positional biases along the probes.",
+      "claim_type": "EXPLICIT",
+      "source": "BEEML-PBM (Zhao and Stormo, 2011) also models positional biases along the probes, but it does not account for orientation preference, or for overhang binding at the free end of the probe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the capabilities of BEEML-PBM supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "5175acb0-aa0f-4b5a-9cd4-202f1980a8ab",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C68",
+      "claim": "BEEML-PBM does not account for orientation preference.",
+      "claim_type": "EXPLICIT",
+      "source": "BEEML-PBM (Zhao and Stormo, 2011) also models positional biases along the probes, but it does not account for orientation preference, or for overhang binding at the free end of the probe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about limitations of BEEML-PBM.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "9ec54600-1c73-4a7c-a7b0-68b98ace6c1b",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C69",
+      "claim": "BEEML-PBM does not account for overhang binding at the free end of the probe.",
+      "claim_type": "EXPLICIT",
+      "source": "BEEML-PBM (Zhao and Stormo, 2011) also models positional biases along the probes, but it does not account for orientation preference, or for overhang binding at the free end of the probe.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about limitations of BEEML-PBM.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "6c76a624-29ac-4b0c-8108-8565e85c5de4",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C70",
+      "claim": "The readout of base identity at different nucleotide positions is only approximately independent.",
+      "claim_type": "EXPLICIT",
+      "source": "The readout of base identity at different nucleotide positions is only approximately independent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the nature of protein-DNA recognition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "958f4e2a-6840-44c7-8020-521a810219ea",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C71",
+      "claim": "Various studies have analyzed whether representations of sequence specificity that account for nucleotide dependencies are more accurate than those that do not.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, various studies have analyzed whether representations of sequence specificity that account for nucleotide dependencies are more accurate than those that do not (Sharon et al., 2008; Agius et al., 2010; Lee et al., 2002; Stormo et al., 1986; Zhou and Liu, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "134a6cb7-92cd-4ad4-ac55-794bc0b0240f",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C72",
+      "claim": "Controversy remains about whether additional parameters associated with dependencies reflect structural mechanisms or technology-specific biases.",
+      "claim_type": "EXPLICIT",
+      "source": "Controversy, however, remains about whether the additional parameters associated with such dependencies reflect structural mechanisms or technology-specific biases (Weirauch, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation indicating ongoing debate.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "a822c228-7559-4769-9c64-1c8439883868",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C73",
+      "claim": "In FeatureREDUCE, dependencies are modeled by including additional DNA sequence features that define base identity at two or more nucleotide positions.",
+      "claim_type": "EXPLICIT",
+      "source": "In the biophysical model that underlies FeatureREDUCE, we model dependencies by simply including additional DNA sequence features \u03c6 that define base identity at two (or more) nucleotide positions, and estimating the corresponding free energy parameters \u25b3\u25b3G\u03c6 along with those for single nucleotides (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how FeatureREDUCE models nucleotide dependencies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "fcffd8e4-7676-476a-8e1b-d309ade7e1c0",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C74",
+      "claim": "Accounting for dependencies in the Cbf1p model significantly increased the fraction of variance explained when training on PBM intensities from 71% to 96%.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected for a model with additional parameters, accounting for dependencies significantly increased the fraction of the variance that could be explained when training on PBM intensities (R2 improved from 71% to 96%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from fitting models to PBM data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "a0009ef2-09fa-4272-8853-a828bfc052a6",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C75",
+      "claim": "Using robust regression is crucial for obtaining accurate estimates of contributions to binding free energy.",
+      "claim_type": "EXPLICIT",
+      "source": "A unique aspect of FeatureREDUCE is the use of robust inference techniques (Huber and Ronchetti, 2009), which, as it turns out, is crucial for obtaining accurate estimates of the various contributions to the binding free energy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding about the importance of robust regression, supported by validation data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "6e47dbc8-ef12-4e8f-a659-ad25bc6bfca3",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C76",
+      "claim": "MITOMI measurements of Cbf1p binding affinity are in excellent agreement (R2 = 0.95) with surface plasmon resonance measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "To demonstrate this, we compared our results to measurements of binding affinity for Cbf1p obtained using the orginal version of the MITOMI technology (Maerkl and Quake, 2007), which are in excellent (R2 = 0.95) agreement with similar measurements obtained using surface plasmon resonance (Berger et al., 2006; Teh et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to the relevant measurement papers.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "d5cbf5e5-ac72-4d0c-96e4-cab360324e18",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C77",
+      "claim": "For Cbf1p PSAM model, RMSE between FeatureREDUCE predictions and MITOMI measurements improved from 0.071 to 0.035 when standard least-squares was replaced by robust regression.",
+      "claim_type": "EXPLICIT",
+      "source": "When we fit a position-specific affinity matrix (PSAM) based model that ignores dependencies between nucleotides, the root-mean-square error (RMSE) between FeatureREDUCE model predictions and gold-standard MITOMI 1.0 measurements improved from 0.071 to 0.035 when standard least-squares fitting was replaced by robust iteratively re-weighted least-squares (Figure 3\u2014figure supplement 1, left panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative validation result shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "cde68391-80a6-484f-8a1a-328cf31fa225",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C78",
+      "claim": "When using standard least-squares fitting, the FSAM model with dependencies performed worse than the PSAM model without dependencies for Cbf1p.",
+      "claim_type": "EXPLICIT",
+      "source": "When positional dependencies were added to the model (feature-specific affinity model; FSAM), it actually performed worse than the model assuming independence between nucleotides (position-specific affinity matrix; PSAM) when we used standard least-squares fitting, indicative of over-fitting to noise in the training data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding demonstrating over-fitting when not using robust regression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "c7248890-0e8f-440c-8e2a-abb488c35686",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C79",
+      "claim": "When using robust regression, the FSAM model for Cbf1p was significantly better than the PSAM model.",
+      "claim_type": "EXPLICIT",
+      "source": "When we used robust regression, however, the RMSE for the FSAM-based model was significantly better than for the PSAM-based model (Figure 3\u2014figure supplement 1, right panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative validation result shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "52d55a6e-16f2-48d8-b46f-612fd84c126e",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C80",
+      "claim": "Dependencies within the binding interface exist and can be modeled correctly using robust regression.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that dependencies within the binding interface indeed exist, and that they can be modeled incorrectly when non-robust regression techniques are used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the validation results comparing robust and non-robust regression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "99f4a4c2-04d1-4f88-80d9-b3335a2bd7cb",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C81",
+      "claim": "Dependencies can be modeled incorrectly when non-robust regression techniques are used.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that dependencies within the binding interface indeed exist, and that they can be modeled incorrectly when non-robust regression techniques are used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the validation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "cf97260f-e056-469c-adfc-64d8441dff3e",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C82",
+      "claim": "Including nucleotide dependencies when predicting yeast promoter affinities improves the ability to delineate Gene Ontology categories associated with Cbf1p regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we found that the inclusion of nucleotide dependencies when predicting aggregated yeast promoter affinities improves the ability to delineate Gene Ontology categories associated with regulation by Cbf1p (see Materials and methods), but again only when robust inference techniques are used (Figure 3B; see also Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from Gene Ontology enrichment analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "5e2327cb-dc3c-4530-aec8-03ca2f2c86c8",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C83",
+      "claim": "The improvement in Gene Ontology delineation from including dependencies only occurs when robust inference techniques are used.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we found that the inclusion of nucleotide dependencies when predicting aggregated yeast promoter affinities improves the ability to delineate Gene Ontology categories associated with regulation by Cbf1p (see Materials and methods), but again only when robust inference techniques are used (Figure 3B; see also Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from Gene Ontology enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "45edd40d-4f8c-400f-889e-24db9d29476c",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C84",
+      "claim": "FeatureREDUCE performs well (RMSE = 0.075) at predicting in vivo Cbf1p occupancy at genomic E-box sites measured by ChIP-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a simple thermodynamic equilibrium model with a single free protein concentration parameter to account for binding saturation in the ChIP-seq experiment, we found that by this in vivo measure, FeatureREDUCE performs well (RMSE = 0.075), and significantly better than BEEML-PBM (Zhao and Stormo, 2011) (RMSE = 0.156); full data are shown in Figure 4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative validation result comparing predictions to ChIP-seq data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "3d4e8540-ba84-49f5-850c-717e98d66f04",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C85",
+      "claim": "FeatureREDUCE performs significantly better than BEEML-PBM at predicting in vivo Cbf1p occupancy (RMSE = 0.075 vs 0.156).",
+      "claim_type": "EXPLICIT",
+      "source": "Using a simple thermodynamic equilibrium model with a single free protein concentration parameter to account for binding saturation in the ChIP-seq experiment, we found that by this in vivo measure, FeatureREDUCE performs well (RMSE = 0.075), and significantly better than BEEML-PBM (Zhao and Stormo, 2011) (RMSE = 0.156); full data are shown in Figure 4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative comparison between FeatureREDUCE and BEEML-PBM shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "82356606-61b2-4f73-85ad-7dd99f468a68",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C86",
+      "claim": "FeatureREDUCE emerged as the top-performing algorithm in a benchmark comparison of 26 PBM data analysis algorithms according to both in vitro and in vivo metrics.",
+      "claim_type": "EXPLICIT",
+      "source": "The accuracy of FeatureREDUCE was demonstrated more broadly in a recent benchmark comparison between 26 different PBM data analysis algorithms (Weirauch, 2013). This study employed two distinct performance metrics. The in vitro metric quantified the accuracy with which probe intensities were predicted in a test PBM experiment using a model trained on independent training data from a PBM experiment for the same TF but with a different probe design; this was done for 66 different TFs from various structural families. The in vivo metric used a non-parametric score to quantify accuracy in ranking sequences in terms of their local ChIP-seq enrichment, for nine different TFs. FeatureREDUCE emerged as the top-performing algorithm according to both criteria.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citation to the Weirauch 2013 benchmark study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "128cc558-bebd-4427-ad7e-815b6f994dfa",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C87",
+      "claim": "Some algorithms generate models that perform well across different PBM designs but poorly when predicting in vivo binding.",
+      "claim_type": "EXPLICIT",
+      "source": "However, one of their surprising findings was that some algorithms generate models that perform well across different PBM designs but poorly when predicting in vivo binding, presumably due to over-fitting to PBM-specific biases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the Weirauch 2013 benchmark study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "897b8e67-bcbb-472f-9059-99dd9d428725",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C88",
+      "claim": "Poor in vivo prediction despite good PBM cross-validation is presumably due to over-fitting to PBM-specific biases.",
+      "claim_type": "EXPLICIT",
+      "source": "However, one of their surprising findings was that some algorithms generate models that perform well across different PBM designs but poorly when predicting in vivo binding, presumably due to over-fitting to PBM-specific biases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed discrepancy.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "da749461-2f43-477b-ad08-0363f73d8237",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C89",
+      "claim": "One algorithm went from second-best in PBM cross-validation to worst in ChIP-seq prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the performance of one of the algorithms went from second-best in the PBM cross-validation test to worst in the ChIP-seq prediction test (Weirauch, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the Weirauch 2013 benchmark study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "9bc59fd1-546c-4de1-a6d8-6c2fda686238",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C90",
+      "claim": "An extension of BEEML-PBM that adds dinucleotide parameters did not perform well on ChIP-seq data.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, an extension of BEEML-PBM that adds dinucleotide parameters (Zhao et al., 2012) did not perform well on ChIP-seq data (Weirauch, 2013), presumably because it does not employ robust inference techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Zhao et al. 2012 and Weirauch 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "3d59bb63-b8aa-47d1-b89c-39cba9f841b1",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C91",
+      "claim": "The poor ChIP-seq performance of BEEML-PBM with dinucleotides is presumably because it does not employ robust inference techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, an extension of BEEML-PBM that adds dinucleotide parameters (Zhao et al., 2012) did not perform well on ChIP-seq data (Weirauch, 2013), presumably because it does not employ robust inference techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed poor performance.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "cfb78ef7-fe05-469f-9331-50ef12101155",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C92",
+      "claim": "FeatureREDUCE is currently the only algorithm that succeeds in parameterizing dependencies within the binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that FeatureREDUCE is currently the only algorithm that succeeds in parameterizing dependencies within the binding site.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the benchmark comparisons and validation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "ae1d0378-3b22-43ee-ad48-4e354ec5b78a",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C93",
+      "claim": "There is current debate about whether PBM data can provide evidence of alternative DNA binding modes employed by the same transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source": "Another current debate in the field is whether or not PBM data can provide evidence of alternative DNA binding modes employed by the same TF (Zhao and Stormo, 2011; Badis et al., 2009; Morris et al., 2011; Gord\u00e2n et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations indicating ongoing debate.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "64df60c9-1505-47c8-863b-9bda61749fc5",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C94",
+      "claim": "Oligomeric transcription factor complexes can often bind DNA using different relative orientations of and/or spacing between their subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Oligomeric TF complexes can often bind DNA using different relative orientations of and/or spacing between their subunits (Gord\u00e2n et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Gord\u00e2n et al. 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "5e46b6f0-039d-422a-8216-b6d69ff7522c",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C95",
+      "claim": "FeatureREDUCE can perform forward selection of multiple binding modes represented by distinct PSAMs.",
+      "claim_type": "EXPLICIT",
+      "source": "The modeling framework employed by FeatureREDUCE provides a natural opportunity to perform forward selection of multiple binding modes, represented by distinct PSAMs, which can subsequently be combined into a single predictive model and refined in an iterative manner (see Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of FeatureREDUCE for modeling multiple binding modes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "23e08ac8-7402-4e1f-aab7-f93fe967cb84",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C96",
+      "claim": "FeatureREDUCE accurately captures the known intrinsic half-site preference of Yap1p for TTAC.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied this procedure for the basic leucine zipper (bZIP) proteins Yap1p and Gcn4p. FeatureREDUCE accurately captures the known intrinsic differences in half-site preference of Yap1p (which prefers TTAC, typical for the C/EBP subfamily (Warren et al., 2012); Figure 5a) and Gcn4p (which prefers TGAC, typical for the CREB subfamily; Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from multi-PSAM modeling shown in Figure 5a, validated against known preferences.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "04daa5af-1756-4a6d-ad73-720ecdedee05",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C97",
+      "claim": "TTAC half-site preference is typical for the C/EBP subfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied this procedure for the basic leucine zipper (bZIP) proteins Yap1p and Gcn4p. FeatureREDUCE accurately captures the known intrinsic differences in half-site preference of Yap1p (which prefers TTAC, typical for the C/EBP subfamily (Warren et al., 2012); Figure 5a) and Gcn4p (which prefers TGAC, typical for the CREB subfamily; Figure 5b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Warren et al. 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "c7a65c3f-c74f-4054-a032-23c018507b3e",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C98",
+      "claim": "FeatureREDUCE accurately captures the known intrinsic half-site preference of Gcn4p for TGAC.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied this procedure for the basic leucine zipper (bZIP) proteins Yap1p and Gcn4p. FeatureREDUCE accurately captures the known intrinsic differences in half-site preference of Yap1p (which prefers TTAC, typical for the C/EBP subfamily (Warren et al., 2012); Figure 5a) and Gcn4p (which prefers TGAC, typical for the CREB subfamily; Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from multi-PSAM modeling shown in Figure 5b, validated against known preferences.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "903e2117-00c6-4dbd-8473-db2d5e9264db",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C99",
+      "claim": "TGAC half-site preference is typical for the CREB subfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "We applied this procedure for the basic leucine zipper (bZIP) proteins Yap1p and Gcn4p. FeatureREDUCE accurately captures the known intrinsic differences in half-site preference of Yap1p (which prefers TTAC, typical for the C/EBP subfamily (Warren et al., 2012); Figure 5a) and Gcn4p (which prefers TGAC, typical for the CREB subfamily; Figure 5b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CREB subfamily preferences.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "4a76f6f6-a97c-4a33-a6c9-eac16a37d66f",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C100",
+      "claim": "Yap1p and Gcn4p, when binding DNA as homo-dimers, can do so with or without a 1-bp overlap between half-sites.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known that each protein, when binding DNA as a homo-dimer, can do so with or without a 1-bp overlap between the half-sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about bZIP binding modes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "6a81a023-6e39-4e44-825c-99994fd74d2a",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C101",
+      "claim": "The multi-PSAM model captures fold-differences in thermodynamic stability between binding modes by estimating an overall relative affinity coefficient for the secondary PSAM.",
+      "claim_type": "EXPLICIT",
+      "source": "What is unique about our approach is that the multi-PSAM model captures fold-differences in thermodynamic stability between the binding modes by estimating an overall relative affinity coefficient for the secondary PSAM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a unique capability of the FeatureREDUCE multi-PSAM approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "1bca80e1-9c29-4c03-9c01-0d588d4ad0b9",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C102",
+      "claim": "The binding affinity of Gcn4p for TGACGTCA is predicted to be 24% of that of TGASTCA.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the binding affinity of Gcn4p for TGACGTCA is predicted to be 24% of that of TGASTCA (cf. Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the FeatureREDUCE multi-PSAM model shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "5f21fef4-b2a7-4b30-a758-b4f5c7558426",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C103",
+      "claim": "The FeatureREDUCE prediction of relative Gcn4p affinity is in good agreement with HiTS-FLIP measurements (Kd = 65 nM for TGACGTCA vs 15 nM for TGASTCA).",
+      "claim_type": "EXPLICIT",
+      "source": "This is in good agreement with recent high-throughput measurements of Gcn4 binding constants for all 12-mers using HiTS-FLIP (Nutiu et al., 2011), specifically, Kd = 65 nM and 15 nM for the respective sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation of FeatureREDUCE predictions against independent measurements cited from Nutiu et al. 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "109b1df4-2b23-47f5-a59a-d259ae0b7b75",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C104",
+      "claim": "The accuracy of the TGACGTCA motif for Gcn4p increases significantly (R2 from 69% to 80%) when using the multi-PSAM model compared to single-fit model for sites with relative affinity > 0.1.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, while the accuracy of the dominant TGASTCA motif essentially does not change, the accuracy of the weaker TGACGTCA motif increases significantly when using our multi-PSAM model compared to the single-fit model (R2 improved from 69% to 80% for sites with relative affinity > 0.1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result demonstrating improved accuracy with the multi-PSAM model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "638bf70b-0baf-41b3-b9ad-f51834b397b2",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C105",
+      "claim": "The results of FeatureREDUCE multi-PSAM analysis can be used to predict which binding mode is dominant for a particular DNA sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the results of our analysis can be used in a straightforward manner to predict which binding mode is dominant for a particular DNA sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a practical application of the multi-PSAM model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "1ab68617-71a4-4990-8032-de20d25d129e",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C106",
+      "claim": "FeatureREDUCE analysis yields an accurate and interpretable biophysical affinity model.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, FeatureREDUCE analysis yields an accurate and interpretable biophysical affinity model that can provide detailed clues about the structural mechanisms that underlie protein-DNA recognition (Roider et al., 2007; Kinney et al., 2007), such as dependencies between nucleotide positions and the modulation of binding mode by variation in the underlying DNA sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion supported by the validation results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "3b639ddf-e593-4cb8-b58f-5b26900d534f",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C107",
+      "claim": "FeatureREDUCE models can provide detailed clues about structural mechanisms underlying protein-DNA recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, FeatureREDUCE analysis yields an accurate and interpretable biophysical affinity model that can provide detailed clues about the structural mechanisms that underlie protein-DNA recognition (Roider et al., 2007; Kinney et al., 2007), such as dependencies between nucleotide positions and the modulation of binding mode by variation in the underlying DNA sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations and by the examples of dependencies and multiple binding modes presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "66b9b9e6-5117-4b2f-9b5f-53b7856b56b4",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C108",
+      "claim": "FeatureREDUCE allows optimal use of the large volume of data generated using microarray-based protein-nucleotide interaction profiling technology.",
+      "claim_type": "EXPLICIT",
+      "source": "Our algorithm allows one to make optimal use of the large volume of data that has been generated using microarray-based protein-nucleotide interaction profiling technology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding statement about the utility of FeatureREDUCE supported by the performance results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "9896b026-1190-40a5-96eb-44f485fbcb65",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C109",
+      "claim": "The effective protein concentration is lower closer to the substrate in PBM experiments, presumably due to steric hindrance.",
+      "claim_type": "EXPLICIT",
+      "source": "The effective protein concentration is lower closer to the substrate, presumably due to steric hindrance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative explanation for observed positional bias shown in Figure 2a.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "aac8f3b3-6ea4-4f55-8ef1-c3572769bcc9",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C110",
+      "claim": "Binding near the free end of probe is associated with loss of contacts with the DNA backbone.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, binding near the free end of probe is associated with loss of contacts with the DNA backbone.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an explanation for reduced binding at probe ends shown in Figure 2a.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "fda4302c-85df-46d6-9f7d-de23f01d7d00",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C111",
+      "claim": "The sign of the slope of positional bias profile is a useful data quality indicator.",
+      "claim_type": "IMPLICIT",
+      "source": "The sign of the slope from a linear regression over the range denoted by the solid red line is a useful data quality indicator.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 2\u2014figure supplement 1 comparing Cbf1 and Pho4 data quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "3953ff8d-ba37-41b8-887c-798bdb2892c2",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C112",
+      "claim": "Yap1p prefers the adjacent half-sites binding mode (Ka_rel = 1.0) over the overlapping half-sites mode (Ka_rel = 0.52).",
+      "claim_type": "EXPLICIT",
+      "source": "The transcription factors Yap1p (a) and Gcn4p (b) can each bind in two distinct modes, in which the two half-sites respectively do (top) and do not (bottom) overlap. Not only is the sequence of preferred half-site different between the two factors, the preferred binding mode is different too, as indicated by the relative association constant (Ka) inferred from the PBM data by FeatureREDUCE.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5a with the relative Ka values for each binding mode.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "f8752a4a-23d6-4ab0-bb14-bde451383ba6",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C113",
+      "claim": "Gcn4p prefers the overlapping half-sites binding mode (Ka_rel = 1.0) over the adjacent half-sites mode (Ka_rel = 0.28).",
+      "claim_type": "EXPLICIT",
+      "source": "The transcription factors Yap1p (a) and Gcn4p (b) can each bind in two distinct modes, in which the two half-sites respectively do (top) and do not (bottom) overlap. Not only is the sequence of preferred half-site different between the two factors, the preferred binding mode is different too, as indicated by the relative association constant (Ka) inferred from the PBM data by FeatureREDUCE.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 5b with the relative Ka values for each binding mode.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "1687a13f-f58c-4fd8-b47a-f082c50f088d",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "claim_id": "C114",
+      "claim": "The preferred binding mode differs between Yap1p and Gcn4p.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcription factors Yap1p (a) and Gcn4p (b) can each bind in two distinct modes, in which the two half-sites respectively do (top) and do not (bottom) overlap. Not only is the sequence of preferred half-site different between the two factors, the preferred binding mode is different too, as indicated by the relative association constant (Ka) inferred from the PBM data by FeatureREDUCE.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in Figure 5 showing different relative Ka values for the two binding modes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f49d445f-ab99-422c-8e59-2fa5623f7cdc",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "FeatureREDUCE is a computational framework for building sequence-to-affinity models from PBM data that uses a biophysical feature-based model, robust regression, and can account for nucleotide dependencies and multiple binding modes. The algorithm follows an iterative procedure involving K-mer seed selection, PSAM inference, positional bias estimation, optional free protein concentration estimation, and higher-order feature estimation until convergence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C51 collectively describe the FeatureREDUCE framework and its algorithmic steps, which are clearly documented in the manuscript text and Figure 1. The methodological description is internally consistent and the capabilities are demonstrated through application to specific transcription factors in subsequent results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "0f0190e6-b43b-4df8-9403-1eca0a6edabe",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "FeatureREDUCE models positional bias in PBM experiments by introducing position-specific multiplicative correction factors. For Cbf1p, positional bias can cause binding site contributions to vary by an order of magnitude, with preference for binding away from the substrate. Accounting for positional bias dramatically improves model fit (R\u00b2 from 48% to 71% for Cbf1p).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C63 and C109-C111 are well-supported by Figure 2 and quantitative R\u00b2 values. The positional bias profiles are shown for multiple TFs (Cbf1p, Pho4p, Zif268) with consistent methodology. The biophysical explanations (C109, C110) are marked as speculative but reasonable. The dramatic improvement in variance explained validates the importance of this correction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "e3f0767b-eca9-42e8-badb-9b909907046d",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "FeatureREDUCE can detect orientation preference for monomeric transcription factors binding to dsDNA probes. Zif268 exhibits strong bias for binding the negative strand, consistent with known requirements for non-specific DNA backbone contacts. BEEML-PBM models positional bias but does not account for orientation preference or overhang binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C69 are supported by Figure 2c showing Zif268 orientation bias and citation C66 to prior structural knowledge. The comparison to BEEML-PBM capabilities (C67-C69) is appropriately cited. This represents a methodological advance over existing tools.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "a2e9ffbe-3db1-461f-8ab7-631f4a245806",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "FeatureREDUCE models nucleotide dependencies by including dinucleotide features in the free energy model. For Cbf1p, accounting for dependencies increased variance explained from 71% to 96% when training on PBM intensities, though controversy exists about whether such dependencies reflect structural mechanisms or technical biases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While C74 shows dramatic improvement in training set fit (71% to 96% R\u00b2), this alone is insufficient to establish that dependencies are correctly modeled, as acknowledged by C72. The key validation comes from independent data (addressed in subsequent claims), making this result incomplete without that context. The improvement could reflect overfitting rather than true biological dependencies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "96d235e8-90b2-4a99-8fed-cbcc86f0f5c6",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Robust regression is crucial for accurate parameter estimation in FeatureREDUCE. When validated against gold-standard MITOMI measurements for Cbf1p, robust regression improved RMSE from 0.071 to 0.035 for PSAM models. Critically, FSAM models with dependencies only outperformed PSAM models when using robust regression (otherwise they performed worse), demonstrating that dependencies exist but can be modeled incorrectly with standard least-squares.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C81 are strongly supported by Figure 3\u2014figure supplement 1 showing quantitative validation against independent MITOMI data (R\u00b2=0.95 agreement with SPR per C76). The comparison between robust and non-robust regression for both PSAM and FSAM models provides compelling evidence that robust regression prevents overfitting to noise while capturing true dependencies. This is a key methodological finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "63499f78-0131-4ad9-a0a1-ef50aeb2a8ad",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Including nucleotide dependencies when predicting yeast promoter affinities improves Gene Ontology enrichment for Cbf1p-regulated categories, but only when robust inference techniques are used.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C83 are supported by Figure 3B and Figure 3\u2014figure supplement 2. This provides functional validation that the dependency parameters learned by FeatureREDUCE with robust regression capture biologically meaningful information about in vivo TF function, not just technical artifacts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "562f52b1-27e3-44f7-8df2-cf735bab3ffb",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "FeatureREDUCE accurately predicts in vivo Cbf1p occupancy at genomic E-box sites measured by ChIP-seq (RMSE = 0.075), performing significantly better than BEEML-PBM (RMSE = 0.156).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C85 are supported by Figure 4 showing quantitative comparison to ChIP-seq data. The ~2-fold improvement in RMSE over BEEML-PBM provides strong validation of FeatureREDUCE's approach. The use of a simple equilibrium model with single free protein concentration parameter is appropriate for this comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "2cf2a4e2-32e7-436d-b831-00b98b983872",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "FeatureREDUCE emerged as the top-performing algorithm in a benchmark of 26 PBM analysis algorithms according to both in vitro (cross-PBM-design) and in vivo (ChIP-seq) metrics. Some algorithms perform well on PBM cross-validation but poorly on ChIP-seq prediction, presumably due to overfitting to PBM-specific biases. FeatureREDUCE is concluded to be the only algorithm that successfully parameterizes dependencies within binding sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C92 are supported by citation to the Weirauch 2013 benchmark study. The claim that FeatureREDUCE is the 'only' algorithm succeeding at parameterizing dependencies (C92) is a strong conclusion but is supported by the benchmark results and the specific examples of other algorithms failing (C89-C91). The explanations for poor performance (C88, C91) are appropriately marked as speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "7de5e46a-f6fc-4dad-9ecd-2bd3b74f3ce1",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "FeatureREDUCE can model multiple binding modes by forward selection of distinct PSAMs and quantify their relative thermodynamic stability. For bZIP proteins Yap1p and Gcn4p, FeatureREDUCE correctly captures known half-site preferences (TTAC for Yap1p, TGAC for Gcn4p) and identifies different preferred binding modes (adjacent half-sites for Yap1p with Ka_rel=1.0 vs 0.52; overlapping half-sites for Gcn4p with Ka_rel=1.0 vs 0.28). Predictions agree well with independent HiTS-FLIP measurements and improve accuracy for weaker binding modes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C93-C105 and C112-C114 are well-supported by Figure 5 and validation against known subfamily preferences (C97, C99) and independent HiTS-FLIP measurements (C103). The quantitative improvement for the weaker Gcn4p motif (R\u00b2 from 69% to 80%, C104) demonstrates that the multi-PSAM approach captures real biological variation in binding mode usage, not just fits more parameters. This addresses a previously unresolved question in the field (C38, C93).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "c1fb30e7-72a1-4b82-b54c-577907127fc2",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "While feature-based approaches have been used previously for modeling protein-DNA binding, the FeatureREDUCE approach to estimating model coefficients is claimed to be different and optimal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 are supported by the validation results throughout the manuscript. The 'different' aspect (C53) is demonstrated by the use of robust regression and specific bias modeling. The 'optimal' claim (C54) is supported by benchmark performance (C86), validation against gold-standard data (C77-C79), and superior in vivo prediction (C84-C85). While 'optimal' is a strong claim, it is justified by the comprehensive validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "21fa741a-fae9-4fc0-97d7-c40d096ec92c",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "FeatureREDUCE yields accurate and interpretable biophysical affinity models that provide clues about structural mechanisms of protein-DNA recognition and allow optimal use of high-throughput PBM data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C108 are summary conclusions supported by the collective validation results. The accuracy is demonstrated through multiple validation datasets (MITOMI, ChIP-seq, HiTS-FLIP, benchmark). The interpretability is shown through identification of dependencies (Figure 3a) and multiple binding modes (Figure 5). The structural insights (C107) are supported by examples of dependencies and binding mode modulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "4fc580a3-5a44-4c81-8541-6652e55a2fb9",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Transcription factors are crucial regulators of gene expression, and accurate quantitative definition of their DNA binding preferences is critical for understanding gene regulatory circuits. High-throughput in vitro technologies have been developed to measure TF binding specificity, but computational methods for analyzing such data have not fully matured.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 and C11-C15 provide established background knowledge supported by appropriate citations. These claims accurately represent the state of the field and motivation for the work. They are well-supported by the cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "67956d76-22c5-462a-a95b-ecec23f8cf62",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The tabular approach to representing TF specificity (complete oligomer affinity tables) is limited by exponential parameter growth, restricting it to 8 bp in practice (shorter than most TF footprints). The large parameter-to-data ratio limits precision and necessitates non-parametric methods, resulting in loss of quantitative information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C25 accurately describe limitations of the tabular approach with appropriate citations (C18). The mathematical reasoning about exponential growth (C19) and parameter-to-data ratios (C22) is sound. The inferences about practical limitations (C20, C23-C25) are logical consequences of the parameter explosion problem.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "b016bbe0-9c9f-43be-a933-5179cdd870c8",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Alternative approaches to the tabular method include PWM (position weight matrix) and PSAM (position-specific affinity matrix) representations that assume positional independence. PWMs maximize information content, while PSAMs optimize quantitative explanation of variation. MatrixREDUCE and PREGO were first implementations of the PSAM approach for PBM data, with BEEML-PBM as a more recent extension.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C35 provide accurate background on alternative modeling approaches with appropriate citations. The distinctions between PWM and PSAM philosophies (C30-C31) are clearly explained. The historical context (C33-C35) is properly cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "806f2814-ea38-4c65-8e0c-e4d56e1f05a9",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Whether dependencies between nucleotide positions can be accurately estimated from PBM data remains an open question. While alternative binding modes are widely recognized, accurate quantification of their relative usage has not been attempted.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38 accurately characterize open questions in the field with appropriate citations (C36). These claims establish the motivation for the FeatureREDUCE capabilities demonstrated in the results. The manuscript subsequently addresses both questions (dependencies and multiple binding modes).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    },
+    {
+      "id": "1f6d7139-fc07-492c-81f6-82c0977ce925",
+      "content_id": "748340d1-706b-4163-a852-1094f467b5b4",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "FeatureREDUCE infers specificity models of unprecedented accuracy and precision.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C10 is a strong claim that is validated by the benchmark results (C86), gold-standard comparisons (C77, C79), and in vivo predictions (C84-C85). The term 'unprecedented' is justified by the top performance in the 26-algorithm benchmark and improvements over existing methods like BEEML-PBM.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:14:04.125887Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "56d431ec-918c-4726-bb99-946aa4c71f1a",
+      "result_id": "f49d445f-ab99-422c-8e59-2fa5623f7cdc"
+    },
+    {
+      "claim_id": "3697fc6d-d0e0-4d46-9c86-b97d0cc23c31",
+      "result_id": "f49d445f-ab99-422c-8e59-2fa5623f7cdc"
+    },
+    {
+      "claim_id": "6170a308-aee0-43ad-b638-2ba9e1895a6e",
+      "result_id": "f49d445f-ab99-422c-8e59-2fa5623f7cdc"
+    },
+    {
+      "claim_id": "064da30a-173c-4cc2-8f22-2c7fdfdf156d",
+      "result_id": "f49d445f-ab99-422c-8e59-2fa5623f7cdc"
+    },
+    {
+      "claim_id": "3ef9ea20-129c-4b9d-a604-7e43ea07b64f",
+      "result_id": "f49d445f-ab99-422c-8e59-2fa5623f7cdc"
+    },
+    {
+      "claim_id": "8958af38-9667-45a7-8a4e-545914d7e194",
+      "result_id": "f49d445f-ab99-422c-8e59-2fa5623f7cdc"
+    },
+    {
+      "claim_id": "86082b76-d725-4763-8574-91ba56b5b1a3",
+      "result_id": "f49d445f-ab99-422c-8e59-2fa5623f7cdc"
+    },
+    {
+      "claim_id": "71c72bc1-e815-446f-8fc2-46b40520e63a",
+      "result_id": "f49d445f-ab99-422c-8e59-2fa5623f7cdc"
+    },
+    {
+      "claim_id": "f7f8bb00-4db8-49df-8b96-870d7f1bd56f",
+      "result_id": "f49d445f-ab99-422c-8e59-2fa5623f7cdc"
+    },
+    {
+      "claim_id": "99bc387d-d731-4f44-9639-966d6b9352fc",
+      "result_id": "f49d445f-ab99-422c-8e59-2fa5623f7cdc"
+    },
+    {
+      "claim_id": "8e1fb1a8-ee2b-4eda-869e-a33f83773b37",
+      "result_id": "f49d445f-ab99-422c-8e59-2fa5623f7cdc"
+    },
+    {
+      "claim_id": "70c207c5-acb5-4fb1-9a7b-9d26967fedd0",
+      "result_id": "f49d445f-ab99-422c-8e59-2fa5623f7cdc"
+    },
+    {
+      "claim_id": "18d52b5b-90fd-4b1e-bbc7-76fc4001f65e",
+      "result_id": "f49d445f-ab99-422c-8e59-2fa5623f7cdc"
+    },
+    {
+      "claim_id": "02a4b46e-dbbb-4435-896c-6a9df109012e",
+      "result_id": "f49d445f-ab99-422c-8e59-2fa5623f7cdc"
+    },
+    {
+      "claim_id": "c3076373-6a03-4006-bfd2-b2cbb7e83615",
+      "result_id": "f49d445f-ab99-422c-8e59-2fa5623f7cdc"
+    },
+    {
+      "claim_id": "5bf20e5f-89ae-4403-941a-b87ef88b5cd0",
+      "result_id": "f49d445f-ab99-422c-8e59-2fa5623f7cdc"
+    },
+    {
+      "claim_id": "ada7d019-e231-4bed-b241-b0a14d6c59a5",
+      "result_id": "f49d445f-ab99-422c-8e59-2fa5623f7cdc"
+    },
+    {
+      "claim_id": "2cf43cda-ad54-4c0b-a8d1-dc0c6294a2e9",
+      "result_id": "f49d445f-ab99-422c-8e59-2fa5623f7cdc"
+    },
+    {
+      "claim_id": "c6dd03c5-05cb-4ebd-bea2-5f54618f4ee7",
+      "result_id": "0f0190e6-b43b-4df8-9403-1eca0a6edabe"
+    },
+    {
+      "claim_id": "690fe9f5-a4a2-43ca-8073-109f59dc9bf4",
+      "result_id": "0f0190e6-b43b-4df8-9403-1eca0a6edabe"
+    },
+    {
+      "claim_id": "61d7e4a1-96b7-41f7-a3be-8c3abd1c5fda",
+      "result_id": "0f0190e6-b43b-4df8-9403-1eca0a6edabe"
+    },
+    {
+      "claim_id": "b4be6fa8-b4c2-4b96-b56b-b91366c3213e",
+      "result_id": "0f0190e6-b43b-4df8-9403-1eca0a6edabe"
+    },
+    {
+      "claim_id": "10de8cfc-075f-4656-9e9d-a72425269541",
+      "result_id": "0f0190e6-b43b-4df8-9403-1eca0a6edabe"
+    },
+    {
+      "claim_id": "00e1a062-7737-46fb-8064-afe61dd2d95b",
+      "result_id": "0f0190e6-b43b-4df8-9403-1eca0a6edabe"
+    },
+    {
+      "claim_id": "48d8802f-14a9-47f9-9349-9dc0b33c0094",
+      "result_id": "0f0190e6-b43b-4df8-9403-1eca0a6edabe"
+    },
+    {
+      "claim_id": "8504458b-2334-4f02-9642-614f8b6b50ba",
+      "result_id": "0f0190e6-b43b-4df8-9403-1eca0a6edabe"
+    },
+    {
+      "claim_id": "779bbae0-81ea-464e-b44e-65d9fc4f4aa7",
+      "result_id": "0f0190e6-b43b-4df8-9403-1eca0a6edabe"
+    },
+    {
+      "claim_id": "9896b026-1190-40a5-96eb-44f485fbcb65",
+      "result_id": "0f0190e6-b43b-4df8-9403-1eca0a6edabe"
+    },
+    {
+      "claim_id": "aac8f3b3-6ea4-4f55-8ef1-c3572769bcc9",
+      "result_id": "0f0190e6-b43b-4df8-9403-1eca0a6edabe"
+    },
+    {
+      "claim_id": "fda4302c-85df-46d6-9f7d-de23f01d7d00",
+      "result_id": "0f0190e6-b43b-4df8-9403-1eca0a6edabe"
+    },
+    {
+      "claim_id": "2d9e853c-a2e3-4c49-957a-a011bcebdc28",
+      "result_id": "e3f0767b-eca9-42e8-badb-9b909907046d"
+    },
+    {
+      "claim_id": "316f04b5-e477-4fc9-a5a6-f9d08e4c7211",
+      "result_id": "e3f0767b-eca9-42e8-badb-9b909907046d"
+    },
+    {
+      "claim_id": "4593160c-3771-4d6c-a255-eddf8dacb851",
+      "result_id": "e3f0767b-eca9-42e8-badb-9b909907046d"
+    },
+    {
+      "claim_id": "cd2843a8-64c0-41ed-9e31-605815000c47",
+      "result_id": "e3f0767b-eca9-42e8-badb-9b909907046d"
+    },
+    {
+      "claim_id": "5175acb0-aa0f-4b5a-9cd4-202f1980a8ab",
+      "result_id": "e3f0767b-eca9-42e8-badb-9b909907046d"
+    },
+    {
+      "claim_id": "9ec54600-1c73-4a7c-a7b0-68b98ace6c1b",
+      "result_id": "e3f0767b-eca9-42e8-badb-9b909907046d"
+    },
+    {
+      "claim_id": "6c76a624-29ac-4b0c-8108-8565e85c5de4",
+      "result_id": "a2e9ffbe-3db1-461f-8ab7-631f4a245806"
+    },
+    {
+      "claim_id": "958f4e2a-6840-44c7-8020-521a810219ea",
+      "result_id": "a2e9ffbe-3db1-461f-8ab7-631f4a245806"
+    },
+    {
+      "claim_id": "134a6cb7-92cd-4ad4-ac55-794bc0b0240f",
+      "result_id": "a2e9ffbe-3db1-461f-8ab7-631f4a245806"
+    },
+    {
+      "claim_id": "a822c228-7559-4769-9c64-1c8439883868",
+      "result_id": "a2e9ffbe-3db1-461f-8ab7-631f4a245806"
+    },
+    {
+      "claim_id": "fcffd8e4-7676-476a-8e1b-d309ade7e1c0",
+      "result_id": "a2e9ffbe-3db1-461f-8ab7-631f4a245806"
+    },
+    {
+      "claim_id": "a0009ef2-09fa-4272-8853-a828bfc052a6",
+      "result_id": "96d235e8-90b2-4a99-8fed-cbcc86f0f5c6"
+    },
+    {
+      "claim_id": "6e47dbc8-ef12-4e8f-a659-ad25bc6bfca3",
+      "result_id": "96d235e8-90b2-4a99-8fed-cbcc86f0f5c6"
+    },
+    {
+      "claim_id": "d5cbf5e5-ac72-4d0c-96e4-cab360324e18",
+      "result_id": "96d235e8-90b2-4a99-8fed-cbcc86f0f5c6"
+    },
+    {
+      "claim_id": "cde68391-80a6-484f-8a1a-328cf31fa225",
+      "result_id": "96d235e8-90b2-4a99-8fed-cbcc86f0f5c6"
+    },
+    {
+      "claim_id": "c7248890-0e8f-440c-8e2a-abb488c35686",
+      "result_id": "96d235e8-90b2-4a99-8fed-cbcc86f0f5c6"
+    },
+    {
+      "claim_id": "52d55a6e-16f2-48d8-b46f-612fd84c126e",
+      "result_id": "96d235e8-90b2-4a99-8fed-cbcc86f0f5c6"
+    },
+    {
+      "claim_id": "99f4a4c2-04d1-4f88-80d9-b3335a2bd7cb",
+      "result_id": "96d235e8-90b2-4a99-8fed-cbcc86f0f5c6"
+    },
+    {
+      "claim_id": "cf97260f-e056-469c-adfc-64d8441dff3e",
+      "result_id": "63499f78-0131-4ad9-a0a1-ef50aeb2a8ad"
+    },
+    {
+      "claim_id": "5e2327cb-dc3c-4530-aec8-03ca2f2c86c8",
+      "result_id": "63499f78-0131-4ad9-a0a1-ef50aeb2a8ad"
+    },
+    {
+      "claim_id": "45edd40d-4f8c-400f-889e-24db9d29476c",
+      "result_id": "562f52b1-27e3-44f7-8df2-cf735bab3ffb"
+    },
+    {
+      "claim_id": "3d4e8540-ba84-49f5-850c-717e98d66f04",
+      "result_id": "562f52b1-27e3-44f7-8df2-cf735bab3ffb"
+    },
+    {
+      "claim_id": "82356606-61b2-4f73-85ad-7dd99f468a68",
+      "result_id": "2cf2a4e2-32e7-436d-b831-00b98b983872"
+    },
+    {
+      "claim_id": "128cc558-bebd-4427-ad7e-815b6f994dfa",
+      "result_id": "2cf2a4e2-32e7-436d-b831-00b98b983872"
+    },
+    {
+      "claim_id": "897b8e67-bcbb-472f-9059-99dd9d428725",
+      "result_id": "2cf2a4e2-32e7-436d-b831-00b98b983872"
+    },
+    {
+      "claim_id": "da749461-2f43-477b-ad08-0363f73d8237",
+      "result_id": "2cf2a4e2-32e7-436d-b831-00b98b983872"
+    },
+    {
+      "claim_id": "9bc59fd1-546c-4de1-a6d8-6c2fda686238",
+      "result_id": "2cf2a4e2-32e7-436d-b831-00b98b983872"
+    },
+    {
+      "claim_id": "3d59bb63-b8aa-47d1-b89c-39cba9f841b1",
+      "result_id": "2cf2a4e2-32e7-436d-b831-00b98b983872"
+    },
+    {
+      "claim_id": "cfb78ef7-fe05-469f-9331-50ef12101155",
+      "result_id": "2cf2a4e2-32e7-436d-b831-00b98b983872"
+    },
+    {
+      "claim_id": "ae1d0378-3b22-43ee-ad48-4e354ec5b78a",
+      "result_id": "7de5e46a-f6fc-4dad-9ecd-2bd3b74f3ce1"
+    },
+    {
+      "claim_id": "64df60c9-1505-47c8-863b-9bda61749fc5",
+      "result_id": "7de5e46a-f6fc-4dad-9ecd-2bd3b74f3ce1"
+    },
+    {
+      "claim_id": "5e46b6f0-039d-422a-8216-b6d69ff7522c",
+      "result_id": "7de5e46a-f6fc-4dad-9ecd-2bd3b74f3ce1"
+    },
+    {
+      "claim_id": "23e08ac8-7402-4e1f-aab7-f93fe967cb84",
+      "result_id": "7de5e46a-f6fc-4dad-9ecd-2bd3b74f3ce1"
+    },
+    {
+      "claim_id": "04daa5af-1756-4a6d-ad73-720ecdedee05",
+      "result_id": "7de5e46a-f6fc-4dad-9ecd-2bd3b74f3ce1"
+    },
+    {
+      "claim_id": "c7a65c3f-c74f-4054-a032-23c018507b3e",
+      "result_id": "7de5e46a-f6fc-4dad-9ecd-2bd3b74f3ce1"
+    },
+    {
+      "claim_id": "903e2117-00c6-4dbd-8473-db2d5e9264db",
+      "result_id": "7de5e46a-f6fc-4dad-9ecd-2bd3b74f3ce1"
+    },
+    {
+      "claim_id": "4a76f6f6-a97c-4a33-a6c9-eac16a37d66f",
+      "result_id": "7de5e46a-f6fc-4dad-9ecd-2bd3b74f3ce1"
+    },
+    {
+      "claim_id": "6a81a023-6e39-4e44-825c-99994fd74d2a",
+      "result_id": "7de5e46a-f6fc-4dad-9ecd-2bd3b74f3ce1"
+    },
+    {
+      "claim_id": "1bca80e1-9c29-4c03-9c01-0d588d4ad0b9",
+      "result_id": "7de5e46a-f6fc-4dad-9ecd-2bd3b74f3ce1"
+    },
+    {
+      "claim_id": "5f21fef4-b2a7-4b30-a758-b4f5c7558426",
+      "result_id": "7de5e46a-f6fc-4dad-9ecd-2bd3b74f3ce1"
+    },
+    {
+      "claim_id": "109b1df4-2b23-47f5-a59a-d259ae0b7b75",
+      "result_id": "7de5e46a-f6fc-4dad-9ecd-2bd3b74f3ce1"
+    },
+    {
+      "claim_id": "638bf70b-0baf-41b3-b9ad-f51834b397b2",
+      "result_id": "7de5e46a-f6fc-4dad-9ecd-2bd3b74f3ce1"
+    },
+    {
+      "claim_id": "3953ff8d-ba37-41b8-887c-798bdb2892c2",
+      "result_id": "7de5e46a-f6fc-4dad-9ecd-2bd3b74f3ce1"
+    },
+    {
+      "claim_id": "f8752a4a-23d6-4ab0-bb14-bde451383ba6",
+      "result_id": "7de5e46a-f6fc-4dad-9ecd-2bd3b74f3ce1"
+    },
+    {
+      "claim_id": "1687a13f-f58c-4fd8-b47a-f082c50f088d",
+      "result_id": "7de5e46a-f6fc-4dad-9ecd-2bd3b74f3ce1"
+    },
+    {
+      "claim_id": "16108a73-7427-4e7f-b117-0d63037d93db",
+      "result_id": "c1fb30e7-72a1-4b82-b54c-577907127fc2"
+    },
+    {
+      "claim_id": "bb6c6e3b-de0c-4768-8eea-ab3e9e348251",
+      "result_id": "c1fb30e7-72a1-4b82-b54c-577907127fc2"
+    },
+    {
+      "claim_id": "57e47f07-62fc-408d-9b4a-193c9f7bff77",
+      "result_id": "c1fb30e7-72a1-4b82-b54c-577907127fc2"
+    },
+    {
+      "claim_id": "1ab68617-71a4-4990-8032-de20d25d129e",
+      "result_id": "21fa741a-fae9-4fc0-97d7-c40d096ec92c"
+    },
+    {
+      "claim_id": "3b639ddf-e593-4cb8-b58f-5b26900d534f",
+      "result_id": "21fa741a-fae9-4fc0-97d7-c40d096ec92c"
+    },
+    {
+      "claim_id": "66b9b9e6-5117-4b2f-9b5f-53b7856b56b4",
+      "result_id": "21fa741a-fae9-4fc0-97d7-c40d096ec92c"
+    },
+    {
+      "claim_id": "1ce7d26c-ac43-4c82-9a31-c72ed26d5fd5",
+      "result_id": "4fc580a3-5a44-4c81-8541-6652e55a2fb9"
+    },
+    {
+      "claim_id": "0ab14844-ac45-4c3f-a7aa-479ff540140c",
+      "result_id": "4fc580a3-5a44-4c81-8541-6652e55a2fb9"
+    },
+    {
+      "claim_id": "8f5d33ad-5b3c-4ea0-9063-b033632811de",
+      "result_id": "4fc580a3-5a44-4c81-8541-6652e55a2fb9"
+    },
+    {
+      "claim_id": "6f906603-3f93-420e-89a0-78ef86e36e2e",
+      "result_id": "4fc580a3-5a44-4c81-8541-6652e55a2fb9"
+    },
+    {
+      "claim_id": "9e0f0510-6274-4652-ab43-7d563274c37f",
+      "result_id": "4fc580a3-5a44-4c81-8541-6652e55a2fb9"
+    },
+    {
+      "claim_id": "39c1e9e7-b3f2-462c-8f29-6de46b797fc7",
+      "result_id": "4fc580a3-5a44-4c81-8541-6652e55a2fb9"
+    },
+    {
+      "claim_id": "abdd1763-463e-4253-9b09-73e036dd6eb3",
+      "result_id": "4fc580a3-5a44-4c81-8541-6652e55a2fb9"
+    },
+    {
+      "claim_id": "214b801b-9808-48ff-a9be-ae0746d099c8",
+      "result_id": "4fc580a3-5a44-4c81-8541-6652e55a2fb9"
+    },
+    {
+      "claim_id": "0ebc3796-eea5-4d60-a26c-a7c5181ff27f",
+      "result_id": "4fc580a3-5a44-4c81-8541-6652e55a2fb9"
+    },
+    {
+      "claim_id": "6823e414-49e1-4095-95c2-9f2c20bb7b64",
+      "result_id": "67956d76-22c5-462a-a95b-ecec23f8cf62"
+    },
+    {
+      "claim_id": "0b116dd4-f635-4c0b-b36a-5f799074cfcf",
+      "result_id": "67956d76-22c5-462a-a95b-ecec23f8cf62"
+    },
+    {
+      "claim_id": "c1da1995-8024-43ac-b6ce-7168523ae721",
+      "result_id": "67956d76-22c5-462a-a95b-ecec23f8cf62"
+    },
+    {
+      "claim_id": "fffdaff3-c408-4923-ba4b-0e1baa4c624d",
+      "result_id": "67956d76-22c5-462a-a95b-ecec23f8cf62"
+    },
+    {
+      "claim_id": "9ee55c45-8d01-4b9b-b5ee-a784fc15f75e",
+      "result_id": "67956d76-22c5-462a-a95b-ecec23f8cf62"
+    },
+    {
+      "claim_id": "ff264a65-6825-4a62-a995-0e04dddd53d0",
+      "result_id": "67956d76-22c5-462a-a95b-ecec23f8cf62"
+    },
+    {
+      "claim_id": "2cc8fb11-a126-494e-a2d6-2aa72f328443",
+      "result_id": "67956d76-22c5-462a-a95b-ecec23f8cf62"
+    },
+    {
+      "claim_id": "0a002f28-7de7-4030-a007-110295feb8c9",
+      "result_id": "67956d76-22c5-462a-a95b-ecec23f8cf62"
+    },
+    {
+      "claim_id": "ee225752-f9a3-4c5f-9dbc-5ab4e63de4e4",
+      "result_id": "67956d76-22c5-462a-a95b-ecec23f8cf62"
+    },
+    {
+      "claim_id": "4600c11f-89b2-40ef-813f-84a6cdacfc46",
+      "result_id": "67956d76-22c5-462a-a95b-ecec23f8cf62"
+    },
+    {
+      "claim_id": "a91faed8-56a6-4bf0-b0ba-78ea87b25a5a",
+      "result_id": "b016bbe0-9c9f-43be-a933-5179cdd870c8"
+    },
+    {
+      "claim_id": "2dbbdedc-01e8-4817-9ad0-760abc1f817b",
+      "result_id": "b016bbe0-9c9f-43be-a933-5179cdd870c8"
+    },
+    {
+      "claim_id": "1d398834-f32c-4f85-887b-991b73561cb4",
+      "result_id": "b016bbe0-9c9f-43be-a933-5179cdd870c8"
+    },
+    {
+      "claim_id": "2c323fe2-62bb-4f0f-8a00-3cc042c5c00f",
+      "result_id": "b016bbe0-9c9f-43be-a933-5179cdd870c8"
+    },
+    {
+      "claim_id": "14e4c941-dfce-4b31-87c6-9e194546b5f2",
+      "result_id": "b016bbe0-9c9f-43be-a933-5179cdd870c8"
+    },
+    {
+      "claim_id": "e6ac47fd-6eac-4527-a4e2-ec1aac077477",
+      "result_id": "b016bbe0-9c9f-43be-a933-5179cdd870c8"
+    },
+    {
+      "claim_id": "e23701ee-360e-4c03-a9d7-e58a697c60bd",
+      "result_id": "b016bbe0-9c9f-43be-a933-5179cdd870c8"
+    },
+    {
+      "claim_id": "200ad2e1-b65b-4ee9-9dd4-d5441386138b",
+      "result_id": "b016bbe0-9c9f-43be-a933-5179cdd870c8"
+    },
+    {
+      "claim_id": "b3d9db0d-4d9b-4fa0-adef-fafb44b0ef61",
+      "result_id": "b016bbe0-9c9f-43be-a933-5179cdd870c8"
+    },
+    {
+      "claim_id": "7b86dfdf-05ee-4181-86b9-42125d63e209",
+      "result_id": "b016bbe0-9c9f-43be-a933-5179cdd870c8"
+    },
+    {
+      "claim_id": "97bb28da-1d5c-4114-b6bf-38267c3b20c7",
+      "result_id": "806f2814-ea38-4c65-8e0c-e4d56e1f05a9"
+    },
+    {
+      "claim_id": "30051d2a-2720-40eb-8bb6-0184bede413c",
+      "result_id": "806f2814-ea38-4c65-8e0c-e4d56e1f05a9"
+    },
+    {
+      "claim_id": "9df10140-2eea-4cbf-b5ff-7625074d94b2",
+      "result_id": "806f2814-ea38-4c65-8e0c-e4d56e1f05a9"
+    },
+    {
+      "claim_id": "0218e79c-82aa-47eb-a820-41793751f71a",
+      "result_id": "1f6d7139-fc07-492c-81f6-82c0977ce925"
+    }
+  ],
+  "comparisons": []
+}

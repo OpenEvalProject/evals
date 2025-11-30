@@ -1,0 +1,415 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The study used an automated tracking system with 4-5 cameras at 200 fps to record flight sequences from 20 male Anna's hummingbirds in a 3\u00d71.5\u00d71.5 m chamber. Birds were housed individually and fed ad libitum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C125-C130 provide clear methodological details about the experimental setup, sample size, and tracking system. These are straightforward descriptive claims about the study design that are internally consistent and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C131",
+      "C132"
+    ],
+    "result": "The study developed a method to extract 10 stereotyped maneuvers from flight trajectories using velocity, acceleration, and orientation data derived from smoothed position and orientation measurements. The maneuvers were not mutually exclusive but served as performance assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51, C131-C132 describe the data processing pipeline and maneuver classification approach. The methods are clearly documented with specific details about coordinate systems, smoothing parameters, and validation procedures (e.g., calibrating to gravity). The acknowledgment that maneuvers are not mutually exclusive (C51) shows appropriate methodological transparency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C80"
+    ],
+    "result": "Most maneuvering performance metrics were highly repeatable (>80% of variation among individuals) for linear accelerations and complex turns, moderately repeatable (40-70%) for rotational metrics, but vertical accelerations were not repeatable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55, C80 are supported by repeatability analysis presented in Figure 3 with confidence intervals. The statistical approach (ICC from mixed models with bootstrapping) is appropriate. The finding that vertical accelerations were not repeatable is honestly reported with overlapping confidence intervals with zero.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C60",
+      "C63",
+      "C65",
+      "C67",
+      "C81",
+      "C94"
+    ],
+    "result": "Burst muscle capacity (measured by load lifting) predicted most maneuvering performance metrics including velocity, horizontal accelerations, pitch rotations, arcing turn characteristics, and pitch-roll turn duration, independent of wing morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58, C60, C63, C65, C67, C81, C94 are supported by model selection analysis (Table 4) and visualizations (Figure 4). The statistical approach using AICc model selection and reporting effect sizes with confidence intervals is rigorous. The claim of independence from wing morphology is supported by the use of residual burst performance controlling for aspect ratio (C137).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C61",
+      "C62",
+      "C64",
+      "C66",
+      "C102"
+    ],
+    "result": "Burst muscle capacity did not predict vertical accelerations, yaw performance, centripetal acceleration of arcing turns, or heading change during pitch-roll turns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C61-C62, C64, C66, C102 report null or weak associations based on model selection where candidate models with burst capacity were not well supported. The statistical evidence (confidence intervals overlapping zero, lack of model support) appropriately justifies these negative findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C82",
+      "C92"
+    ],
+    "result": "Wing aspect ratio predicted only two performance metrics: birds with higher aspect ratio wings performed arcing turns with higher centripetal accelerations and used proportionately more arcing turns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70, C82, C92 are supported by model analysis (Table 4) and visualizations (Figure 5). The limited predictive role of aspect ratio is clearly documented, with strong effects where present but no effects on most metrics. This finding is appropriately characterized as showing a limited role for aerodynamic efficiency in maneuvering (C93).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C71",
+      "C87"
+    ],
+    "result": "Body mass did not predict variation in any maneuvering performance metric, and the hypothesis that wing size and body mass together determine performance was not supported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C71, C87 report that body mass coefficient estimates had confidence intervals broadly overlapping zero for all metrics (Table 4), and wing loading models were not supported (Supplementary file 1). This negative finding is appropriately documented with statistical evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C83",
+      "C84"
+    ],
+    "result": "Competitor presence had limited effects on maneuvering: birds used lower horizontal accelerations and decelerations but faster pitch-down velocities and proportionately more arcing turns (35% vs 23%) during competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78, C83-C84 are supported by model analysis (Table 4) and visualizations (Figure 6). The mixed pattern of effects (some metrics affected, others not; some in unexpected directions) is honestly reported. The statistical evidence for the detected effects appears sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "The relative use of arcing versus pitch-roll turns was the only metric influenced by all three factors: morphology, burst capacity, and competitor presence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 is supported by the model analysis showing that PRT% had support for wing shape, burst capacity, and competition effects (Table 4). This integrative finding is appropriately highlighted as it shows convergence of multiple factors on a single performance metric.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Wing area and wing length were highly correlated (R\u00b2=0.85), so wing length was selected as the measure of wing size. Load lifting was negatively associated with aspect ratio (p=0.04) but not wing length (p=0.87), so residual burst performance controlling for aspect ratio was used as the measure of burst muscle capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C137 describe appropriate statistical decisions to address collinearity and confounding. The correlation between wing measures justifies using only one, and the association between load lifting and aspect ratio justifies the use of residuals. These methodological choices are transparent and statistically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The magnitudes of calculated accelerations were influenced by smoothing parameters, a well-known limitation of video tracking, requiring caution when comparing values across studies with different parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C140 acknowledge an important methodological limitation with appropriate citation (Walker, 1998). Figure 1c-d demonstrates the effects of different smoothing parameters. This transparent discussion of limitations is appropriate and shows the authors understand the constraints of their methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C85"
+    ],
+    "result": "Burst muscle capacity is a key predictor of maneuverability and is more important than within-species variation in body mass, wing morphology, and competition with conspecifics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C85 represent the main conclusion synthesizing results from multiple analyses. This conclusion is well-supported by the pattern of findings: burst capacity predicted most metrics (C56-C67), while body mass predicted none (C71), wing morphology predicted only two (C68), and competition had limited effects (C72). The comparative claim is justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The study's velocity and acceleration values are considerably lower than field studies, likely due to cage size constraints. The 1.5 m vertical dimension may have limited vertical movement, as hummingbirds tend to fly near cage tops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79, C103-C105 acknowledge limitations but are speculative (C79, C103, C105) or based on general knowledge (C104). While the comparison to field studies is reasonable, no quantitative comparison is provided, and the causal attribution to cage size is not directly tested. The vertical limitation hypothesis is plausible but remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "Arcing turns require less time but are used for smaller heading changes, whereas pitch-roll turns are longer but can change heading by 180\u00b0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 is supported by data presented in Figure 7 showing the distribution of degrees turned and time for each turn type. The characterization of the trade-offs between turn types is empirically grounded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Birds with higher aspect ratio may have preferred arcing turns due to higher centripetal acceleration capacity, while birds with higher burst capacity may have favored pitch-roll turns due to higher acceleration/deceleration performance, suggesting that high aspect ratio and burst capacity enhance maneuverability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C119 are explicitly speculative interpretations (using 'may have') of the observed associations. While the mechanistic reasoning is plausible and consistent with the data, these remain hypotheses rather than demonstrated results. The speculation is appropriately qualified but not empirically tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The study developed a novel assay of free flight maneuvering performance based on large numbers of stereotyped movements, identifying metrics that are highly repeatable, correlated with morphology and physiology, and largely uninfluenced by competition. This approach will be useful for future comparative studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 summarize the methodological contribution, which is well-supported by the results. Claim C124 about future utility is speculative but reasonable given the demonstrated repeatability and correlations. The methodological innovation is a legitimate contribution even if the future applications remain to be demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Maneuverability, defined as the ability to change speed and direction, is important for survival but poorly understood. The hypothesis that excess muscle capacity allows animals to overcome morphological constraints has never been explicitly tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 establish the background and motivation for the study. C1-C5 are supported by appropriate citations. C6 is speculative but represents the hypothesis being tested. C7's claim that the hypothesis has never been tested is an assessment of the literature that appears reasonable given the novelty of the study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Wing morphology (area and aspect ratio) affects flight aerodynamics and has been linked to efficiency, ecological roles, and competitive ability in prior studies, but less is known about individual variation in wing morphology and maneuverability. Different wing shapes may be favored for different maneuvers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 summarize prior work with appropriate citations. Claims C14-C15 are reasonable inferences about gaps in knowledge and complexity of the system. These background claims appropriately motivate the study's focus on individual variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Muscle capacity affects aerodynamic force production. Prior studies show that different flight behaviors require different levels of muscle output, with maximum load lifting being the most expensive behavior (200-400% more power than hovering). Load lifting provides a measure of maximum burst muscle capacity that has been related to ecological role and competitive ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C32 summarize prior work on muscle capacity and load lifting with extensive citations. The characterization of load lifting as measuring burst capacity (C27-C28) is reasonable. The connection to ecology and competition (C29-C32) is supported by citations, though C32 notes this is a suggested hypothesis. This background appropriately motivates the use of load lifting as a predictor variable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Field studies have quantified maneuvering performance without individual identification, but examining within-species variation requires individual identification and large samples. Chamber studies may have lower velocities than field studies but allow repeated measurements from known individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by citations and reasonable methodological reasoning. Claims C35-C36 acknowledge trade-offs in the chamber approach, with C35 being speculative but reasonable and C36 articulating the key advantage. This appropriately frames the study's methodological choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C86",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C93"
+    ],
+    "result": "Wing loading was historically thought to predict hummingbird performance, but the current study found no support for this. The limited sample size (20 individuals, one species) may have prevented detection of subtle morphological effects. High repeatability suggests potential intrinsic morphological influences, but aspect ratio's limited predictive role suggests aerodynamic efficiency plays a limited role in maneuvering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86, C90-C91 cite prior work appropriately. Claim C88 appropriately acknowledges study limitations. Claims C89, C93 are reasonable inferences from the results (high repeatability but limited morphological effects). The interpretation is appropriately cautious about the scope of conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C100"
+    ],
+    "result": "Load lifting is an anaerobic, inefficient escape maneuver performed at geometric limits (180\u00b0 wing amplitude) with increased wingbeat frequency. The capacity to increase muscle strain and velocity, previously shown to influence foraging and competition, also underlies maneuvering performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 describe the load lifting assay with appropriate citations. Claims C99-C100 connect prior findings to current results, with C100 supported by the study's data. This discussion appropriately interprets the meaning of the burst capacity measure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C101",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Vertical accelerations and decelerations were not repeatable and not well predicted by any factors. The chamber's 1.5 m vertical dimension likely limited vertical movement, as hummingbirds tend to fly near cage tops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C101 is supported by citations about the importance of vertical performance. However, the explanation for why vertical metrics were not repeatable or predictable (C103-C105) is speculative. While the chamber constraint hypothesis is plausible, it remains untested. The lack of repeatability could have other causes not considered.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C112",
+      "C113"
+    ],
+    "result": "Male hummingbirds are aggressive toward conspecifics and other species, defending territories and lekking sites. Agonistic interactions can involve physical contact and bill stabbing, potentially making slow turns vulnerable during competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110, C112 are supported by appropriate citations about hummingbird behavior. Claim C113 is speculative reasoning about vulnerability but is appropriately qualified. This background motivates the competition manipulation, though the study found limited competition effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "The minimum radius of arcing turns is limited by maximum centripetal acceleration while maintaining lift. The speed of pitch-roll turns is limited by deceleration and acceleration ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 are based on physical principles of flight mechanics. These are reasonable characterizations of the biomechanical constraints on different turn types, though they are not empirically tested in this study. They provide useful context for interpreting the results.",
+    "result_type": "MINOR"
+  }
+]

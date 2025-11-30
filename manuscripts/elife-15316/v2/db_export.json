@@ -1,0 +1,2022 @@
+{
+  "submission": {
+    "id": "eca9fe72-00a0-4b2a-81ad-57db0a0a941b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:08:31.144256Z",
+    "updated_at": "2025-11-30T00:08:31.144256Z"
+  },
+  "content": [
+    {
+      "id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "submission_id": "eca9fe72-00a0-4b2a-81ad-57db0a0a941b",
+      "content_type": "manuscript",
+      "content_text": "# Enhancer regions show high histone H3.3 turnover that changes during differentiation\n\n## Authors\n\n- Aimee M Deaton<sup>1</sup>\n- Mariluz Go\u0301mez-Rodri\u0301guez<sup>3</sup>\n- Jakub Mieczkowski<sup>1</sup>\n- Michael Y Tolstorukov<sup>1</sup>\n- Sharmistha Kundu<sup>1</sup>\n- Ruslan I Sadreyev<sup>1</sup>\n- Lars ET Jansen<sup>3</sup> \u2020\n- Robert E Kingston<sup>1</sup> ([ORCID: 0000-0003-3628-4335](https://orcid.org/0000-0003-3628-4335)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Biology Massachusetts General Hospital Boston United States\n2. Department of Genetics Harvard Medical School Boston United States\n3. Laboratory for Epigenetic Mechanisms Instituto Gulbenkian de Ciencia Oeiras Portugal\n4. Department of Medicine Harvard Medical School Boston United States\n5. Department of Pathology Massachusetts General Hospital and Harvard Medical School Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe organization of DNA into chromatin is dynamic; nucleosomes are frequently displaced to facilitate the ability of regulatory proteins to access specific DNA elements. To gain insight into nucleosome dynamics, and to follow how dynamics change during differentiation, we used a technique called time-ChIP to quantitatively assess histone H3.3 turnover genome-wide during differentiation of mouse ESCs. We found that, without prior assumptions, high turnover could be used to identify regions involved in gene regulation. High turnover was seen at enhancers, as observed previously, with particularly high turnover at super-enhancers. In contrast, regions associated with the repressive Polycomb-Group showed low turnover in ESCs. Turnover correlated with DNA accessibility. Upon differentiation, numerous changes in H3.3 turnover rates were observed, the majority of which occurred at enhancers. Thus, time-ChIP measurement of histone turnover shows that active enhancers are unusually dynamic in ESCs and changes in highly dynamic nucleosomes predominate at enhancers during differentiation.\n\n## Introduction\n\nThe organization of the genome into chromatin acts as a mechanism for regulating access to the information encoded in DNA. The simplest repeating unit of chromatin is the nucleosome consisting of a histone octamer, made up of two copies each of H2A, H2B, H3 and H4, around which approximately 147\u00a0bp of DNA is wrapped. Variants of the histone proteins exist that have distinct incorporation dynamics and functions. These include a number of histone H2A variants such as H2A.Z, H2A.X and macroH2A and histone H3 variants such as H3.3 and CENP-A (Maze et al., 2014; Skene and Henikoff, 2013).\n\nAs nucleosomes can act as barriers to reading the DNA sequence, they must be disrupted in order for many processes requiring DNA access to occur. Transcription and the binding of proteins to regulatory regions are known to be dependent upon increased accessibility to nucleosomal DNA. Therefore, assessment of nucleosome turnover can provide important information concerning which genomic regions are involved in regulation and the extent to which nucleosome dynamics contribute to their function.\n\nNucleosome dynamics is a generally underexplored property of chromatin. Previous studies examining nucleosome turnover genome-wide have made use of two main strategies \u2013 induction of epitope-tagged histone transgenes (Kraushaar et al., 2013; Yildirim et al., 2014) and metabolic labeling of histone proteins (Deal et al., 2010). These have yielded a number of insights into the genome-wide pattern of nucleosome turnover in Drosophila and mammalian systems. Such insights include high nucleosome turnover at gene bodies, regulatory elements and replication origins in Drosophila cells (Deal et al., 2010) and, in mouse cells, rapid deposition of H3.3-containing nucleosomes at enhancers and promoters associated with active histone modification marks and the histone variant H2A.Z (Kraushaar et al., 2013). However, each set of techniques has limitations. For example, systems based on inducible histones have a lag time after induction before histones are synthesized and incorporated into chromatin. In addition, they mainly look at where newly synthesized histones are deposited rather than disruption of existing histones. A TET-OFF system examining dissociation of tagged histones has recently been described although a significant proportion of tagged histone is observed up to 12\u2009hr after addition of doxycycline, limiting the sensitivity of this technique (Ha et al., 2014). Metabolic labeling methods such as 'CATCH-IT', on the other hand, are not specific for particular histone variants and have limited resolution at the level of individual genes. CATCH-IT analyzes incorporation rates rather than existing histones and cannot be employed for long chase times.\n\nTo circumvent these limitations, we have employed a newly developed method called time-ChIP (Go\u0301mez-Rodri\u0301guez et al., submitted) to assess histone turnover genome-wide during differentiation of mouse embryonic stem cells (ESCs) to neural stem cells (NSCs). Time-ChIP is based on SNAP technology (Bodor et al., 2012; Keppler et al., 2003), where histones are tagged with the suicide enzyme SNAP. Pulse labeling with a SNAP-tag specific biotin moiety leads to covalent biotinylation of the SNAP-tagged histone pool. Histone dynamics can then be determined by following the loss of biotin-labeled histones over time as nucleosomes are disrupted and replaced with nucleosomes comprised of newly synthesized unlabeled histones. Sequencing of the DNA associated with these biotinylated histones allowed us to quantify relative histone turnover genome-wide. Previous studies using SNAP-tagged histones suggest that they are recognized by the correct chaperone proteins and incorporated into chromatin at the appropriate cell cycle stage (Bodor et al., 2013; Dunleavy et al., 2009; Foltz et al., 2009; Jansen et al., 2007; Ray-Gallet et al., 2011).\n\nTime-ChIP allows labeling of existing, incorporated histones, is specific for particular histone variants and allows us to study histone dynamics in vivo. We focused on measuring turnover of the histone variant H3.3. In contrast to canonical H3, histone H3.3 is deposited independently of replication at places where nucleosomes are disrupted such as promoters, the bodies of active genes, and regulatory elements (Goldberg et al., 2010; Schwartz and Ahmad, 2005). Therefore examining this variant is likely to yield insights into the dynamics at regions important for gene regulation.\n\nTo examine H3.3 turnover at developmental loci and regulatory elements, and understand how turnover changes during cell specification, we applied time-ChIP to neural differentiation of mouse ESCs. We found that time-ChIP could be used a priori to identify regions important for gene regulation; specifically,\u00a0enhancer regions stood out for their rapid turnover. In ESCs, consistent with previous work, we found high H3.3 turnover at active enhancers (Ha et al., 2014; Kraushaar et al., 2013) with even higher rates of turnover observed at super-enhancers. We also observed high turnover of histone H3.1 at these regions. Regions bound by Polycomb-group proteins, which are involved in developmental gene repression, showed H3.3 enrichment in ESCs but low turnover compared to active regions. Upon differentiation to NSCs, many changes in H3.3 turnover were observed, with ESC and NSC enhancers overrepresented in the set of regions showing changes. We corroborated our time-ChIP findings by correlating H3.3 turnover with DNA accessibility measured by micrococcal nuclease (MNase) titration (Mieczkowski et al., 2016) and found good correlation at enhancers and other active regions. Our findings demonstrate the utility of time-ChIP for profiling H3.3 turnover during differentiation, for determining relative rates of turnover at regulatory elements, and for characterizing known and potentially novel regulatory regions.\n\n## Results\n\n### Time-ChIP reports histone H3.3 turnover genome-wide\n\nWe used time-ChIP to assess histone H3.3 turnover genome-wide in ESCs in an unbiased manner. To do this, we used a SNAP-tagged histone H3.3 which can be labeled with fluorescent or biotin-containing substrates in cell culture (Bodor et al., 2013; Ray-Gallet et al., 2011). We generated ESC lines expressing SNAP-tagged H3.3 in single copy from a defined locus. To achieve this we used recombination-mediated cassette exchange to insert H3.3 C-terminally tagged with SNAP and HA-tags into A2lox-Cre ESCs which allow for dox inducible transgene expression from the hprt locus (Iacovino et al., 2011) (Figure 1\u2014figure supplement 1). Western blotting showed that H3.3_SNAP was expressed at low levels relative to total endogenous H3 (Figure 1A) and undetectable when blotting was performed using an H3.3-specific antibody (Figure 1\u2014figure supplement 1). This was desirable, as we wanted H3.3_SNAP to act as a tracer to report the turnover of all H3.3 rather than overwhelm the cells with high levels of transgenic histone. We also generated a line expressing low levels of SNAP-tagged histone H3.1 (Figure 1\u2014figure supplement 2). Post-translational modifications were detected on the SNAP-tagged histones (Figure 1\u2014figure supplement 2).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/15316/elife-15316-fig1-v2.jpg)\n\n**Figure 1.:** (A) Western blot for total H3 in H3.3_SNAP ESCs after 48\u00a0hr dox induction of transgene. (B) Outline of time-ChIP protocol. (C) Quantification of DNA recovered from time-ChIP experiments. The amount of DNA relative to the 0\u00a0hr sample (expressed as\u00a0%) was averaged over two H3.3 time-ChIP replicates. Error bars are \u00b1 standard deviation.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15316/elife-15316-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Generation of H3.3_SNAP ESCs. The p2lox H3.3_SNAP plasmid was introduced into A2lox.Cre ESCs resulting in H3.3_SNAP ESCs expressing H3.3_SNAP_HA under dox inducible control from the hprt locus along with a neomycin resistance gene. These cells contain rtTA expressed from the Rosa26 locus to mediate dox inducible expression. (B) Western blot for H3.3 in H3.3_SNAP ESCs. For dox induced samples ('dox'), increasing amounts of protein were loaded, for the uninduced sample ('un'), only the highest protein concentration was loaded. Non-specific bands present in both the uninduced and dox induced samples are marked as 'NS'. Endogenous H3 serves as a loading control.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/15316/elife-15316-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Western blot for H3K4me3 H3.3_SNAP ESCs. Uninduced sample ('un') does not have any H3.3_SNAP, upon dox induction ('dox') H3K4me3 modified H3.3_SNAP is observed. Non-specific bands present in both the uninduced and dox induced samples are marked as 'NS'. Histone H3 serves as a loading control. (B) Western blot for H3K27me3 in H3.1_SNAP and H3.3_SNAP ESCs. Uninduced sample ('un') does not have any H3.1_SNAP or H3.3_SNAP, upon dox induction ('dox') H3K27me3 modified H3.1_SNAP is observed. Non-specific bands present in both the uninduced and dox induced samples are marked as 'NS'. Histone H3 serves as a loading control.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/15316/elife-15316-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Amount of DNA recovered relative to 0\u00a0hr time point (red bars) and proportion of sequencing reads mapping to the mouse genome relative to 0\u00a0hr time point based on the number of reads recovered from the spike-in control (blue bars). See 'Materials\u00a0and\u00a0methods' for more details.\n\nESCs expressing SNAP-tagged H3.3 were used to perform time-ChIP and assess genome-wide H3.3 turnover at high resolution. After inducing tagged H3.3 for 48\u2009hr, H3.3_SNAP was biotin labeled in intact cells by adding the cell permeable molecule chloropyrimidine biotin (CP-biotin) (Correa et al., 2013) to the media for 40 min followed by a wash step to remove unbound substrate. A portion of the labeled cells was harvested immediately representing the 0\u00a0hr time point and the remaining cells were re-plated for harvest at 3\u00a0hr, 6\u00a0hr and 12\u00a0hr post-labeling. Nuclei were isolated from these cells, chromatin liberated by MNase digestion and biotin labeled H3.3 recovered by streptavidin pull-down. DNA was purified from the recovered nucleosomes, quantified and prepared for sequencing (Figure 1B). As expected, decreasing amounts of DNA were recovered over time as biotin labeled H3.3_SNAP was replaced by newly synthesized H3 (Figure 1C). Approximately the same number of reads was sequenced from each time point. A spike-in control was added when preparing the sequencing libraries to verify that the proportion of reads resulting from pull-down of SNAP-tagged histones was consistent with expectation for each time point. Later time points in each experiment had fewer fragments associated with tagged histones compared to spike-in fragments and thus were consistent with the expected overall H3.3 turnover rate in the genome (Figure 1\u2014figure supplement 3 and Materials and methods).\n\nTo validate that the SNAP tagged histone showed appropriate localization, we analyzed the 0\u00a0hr sample. As expected, H3.3 was enriched at enhancers and the promoters and bodies of active genes. H3.3 also showed high enrichment at transcription termination sites (TTSs) (Figure 2\u2014figure supplement 1). To ensure that the biotin labeling of H3.3 was representative of all tagged H3.3, we compared the enrichment profiles for the H3.3 0\u00a0hr\u00a0sample to those generated by performing HA ChIP for transgenic H3.3_SNAP_HA and the two correlated well (Figure 2\u2014figure supplement 1).\n\nTo further validate our approach we examined the transcription start sites (TSSs) of active genes as these are elements where one would expect high H3.3 turnover. We plotted H3.3 time-ChIP data for the 0\u00a0hr, 3\u00a0hr, 6\u00a0hr and 12\u00a0hr time points over the transcription start sites (TSSs) of active genes (Figure 2A). As MNase was used to digest the chromatin, a characteristic MNase digestion pattern was observed consisting of a nucleosome 'depleted' region at the TSS and a well-positioned +1 nucleosome. As time progressed, labeled H3.3 was lost from these TSSs at an appreciable rate, particularly upstream of the TSS, as indicated by the fact that the profiles for each time point were well spaced apart. In contrast, at the TSSs of silent genes, H3.3 was less enriched and the profiles for each time point were closer together indicating slower H3.3 turnover compared to active promoters (Figure 2A). Fast H3.3 turnover at the TSSs of active genes was evident at the level of individual loci as well as when average behavior was observed (Figure 2B). H3.3 enrichment and rapid turnover was also observed at the 3\u2019 ends of expressed genes (Figure 2B and C). These observations are consistent with the displacement of nucleosomes by the transcription machinery and the enrichment of the replacement H3 variant, H3.3, at sites of active transcription as reported previously (Goldberg et al., 2010). The timeframe for turnover of H3.3_SNAP is concordant with previous estimates based on incorporation of H3.3 (Kraushaar et al., 2013).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/15316/elife-15316-fig2-v2.jpg)\n\n**Figure 2.:** (A) Average H3.3 profiles for 0\u00a0hr, 3\u00a0hr, 6\u00a0hr and 12\u00a0hr time points over the transcription start sites (TSSs) of expressed and silent genes in ESCs. (B) H3.3 in 1kb bins profiles for 0\u00a0hr, 3\u00a0hr, 6\u00a0hr and 12\u00a0hr time points at the actively transcribed Nanog locus. (C) Average H3.3 profiles over the transcription termination sites (TTSs) of genes expressed in ESCs. (D) Calculating turnover index (TI) in 1\u00a0kb bins across the genome. H3.3 signal for each bin was plotted for every time point, these were fitted to a linear regression model and the slope of this line was weighted and multiplied by minus\u00a01 to get TI. (E) Average TI over the TSSs of expressed genes. For (A\u2013C) results from one experiment representative of three biological replicates is shown.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15316/elife-15316-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) H3.3 enrichment in ESCs at annotated genomic elements \u2013 promoters, 5\u2019 end of genes, gene bodies, TTSs and enhancers. Genes are grouped by ESC expression level and ESC enhancers are from Whyte et al. (2013). (B) Scatter plot of H3.3 enrichment calculated in 1\u00a0kb bins for ESC H3.3_HA ChIP and H3.3 0\u00a0hr time-ChIP samples. R value is from Pearson\u2019s correlation. (C) Scatter plots comparing TI calculated for the three ESC time-ChIP replicates. R value is from Pearson\u2019s correlation.\n\nOur data allows assessment of the relative H3.3 turnover between different genomic sites. Regions of high turnover will have fewer reads in later time points than regions with slower turnover when compared to the number of reads seen for these regions at 0\u00a0hr. To examine how turnover compared between different regions, it was necessary to develop a method to quantify turnover rate. To do this we used data from the 0\u00a0hr, 3\u00a0hr, 6\u00a0hr and 12\u00a0hr time points to calculate a 'turnover index'. The genome was divided into 1\u00a0kb bins and, for each bin, signal from each time point was fitted to a simple linear regression model. The slope of the linear regression was weighted to account for significance of the data fit by the linear model and multiplied by minus 1 (Figure 2D and Materials and methods). The resulting value was taken as the turnover index (TI) such that regions with fast H3.3 turnover had higher positive TI values. Indeed, at the TSSs of active genes, TI was highest upstream of the TSS reflecting what we observed when individual time points were examined (Figure 2E). We calculated TI for three individual biological replicates and these samples correlated well with each other having R values of 0.67\u20130.82 (Figure 2\u2014figure supplement 1). Therefore, for subsequent analyses, we used the mean TI of the three replicates as the TI measurement. This TI reflects relative H3.3 turnover between different genomic sites and, by its nature, is internally comparable across the genome.\n\nHaving established time-ChIP as a method for assessing H3.3 turnover and shown that it offers reproducible measurements genome-wide we then went on to examine H3.3 turnover in ESCs in more depth.\n\n### Time-ChIP identifies regulatory regions in ESCs\n\nWe were interested in how turnover relates to regulation, so, without prior assumptions, we used TI to pick out the 1000 1\u00a0kb bins with the highest H3.3 turnover in ESCs (False Discovery Rate (FDR) = 0.003) (Supplementary file 1). The majority of these (approximately 77%) were located in at least one annotated regulatory region such as a promoter, gene body, TTS or enhancer. High TI regions were overrepresented, as compared to the occurrence of the features in the genome, at promoters, the 5\u2019 end of genes, TTSs, and enhancers (Figure 3A). In particular, high H3.3 enrichment and TI occurred at TTSs, often at those close to other transcription units, (Figure 3B) and at enhancers and super-enhancers (Figure 3C). We examined the high TI regions that did not correspond to annotated genomic features in more detail. Some of these overlapped with a larger UCSC gene set, leaving 146 high TI regions in truly unannotated locations. It is likely that a portion of these represents unidentified regulatory regions or regions with regulatory functions in differentiated cells (see example in Figure 3D). Indeed, 95 of these 146 unannotated regions were located within 50\u00a0kb of genes robustly expressed (FPKM\u00a0>\u00a09.5) in ESCs (p-value\u00a0=\u00a00.001) suggesting potential regulatory roles for\u00a0them\u00a0in ESCs. Thus, without prior assumptions, time-ChIP identifies known regulatory, and also potential novel regulatory regions. We conclude that time-ChIP can be used to identify regions important for gene regulation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/15316/elife-15316-fig3-v2.jpg)\n\n**Figure 3.:** (A) Representation of annotated genomic features in the 1000 highest TI regions in ESCs relative to their representation in the genome as a whole. Overrepresentation was calculated by taking the log2 ratio of the proportion of the high TI regions overlapping a particular feature divided by the proportion of whole genome overlapping the same feature. (B) The region 5\u2019 of the Fgf18 gene and 3\u2019 of the neighboring Npm1 gene has high TI in ESCs. Signal for each time point is shown for one replicate (top 4 tracks \u2013 green) while TI averaged for 3 replicates is shown (heatmap). RNA-seq in ESCs is shown in blue while the highest TI regions are marked with red bars. (C) Super-enhancers in the NR_037986 locus are amongst the most highly turned over regions in ESCs. Super-enhancer constituents are as defined by (Whyte et al., 2013) and shown as blue bars. (D) Unannotated regions are also present in the set of highest TI regions. The red bar marks a high TI region downstream of the Gulp1 gene on chr1. (E) ESC TI distribution at annotated genomic elements \u2013 promoters, 5\u2019 end of genes, gene bodies, TTSs and enhancers. Genes are grouped by ESC expression level and ESC enhancers are from Whyte et al. (2013). (F) Average TI over conventional ESC enhancers (purple) and super-enhancer constituent enhancers (pink) as described in Whyte et al. (2013).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15316/elife-15316-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Average H3.3 TI over conventional ESC enhancers ('Enhancers' \u2013 purple) and super-enhancer constituent enhancers ('Super-enhancers' \u2013 pink) where TI was calculated using a 300\u00a0bp bin size. The mean TI for three biological replicates is shown. Enhancers and super-enhancers are as described in Whyte et al. (2013).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/15316/elife-15316-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Average H3.1 TI over conventional ESC enhancers ('Enhancers' \u2013 purple), super-enhancer constituent enhancers ('Super-enhancers' \u2013 pink) and random genomic regions with a similar size distribution to enhancers ('Random' \u2013 teal). Enhancers and super-enhancers are as described in Whyte et al. 2013). (A) H3.1 biological replicate 1 (B) H3.1 biological replicate 2\n\nIf TI changes with the nature of a regulatory region, we anticipated that TI would be high in regions of high expression when these were examined over the entire genome. TI in fact did correlate with gene activity and was higher over the promoters, bodies and TTSs of highly expressed genes compared to genes with little or no expression (Figure 3E). ESC enhancers showed particularly high TI values. This was consistent with their overrepresentation in the set of regions with the highest TI in ESCs, and further indicated that enhancers are especially dynamic.\n\nWe examined enhancers in more detail, and found that TI distinguishes isolated enhancers from the grouped enhancers that modulate expression of genes involved in cell identity; super-enhancers or locus control regions (Magram et al., 1985; Whyte et al., 2013). Plotting average TI profiles over conventional ESC enhancers and ESC super-enhancer constituents revealed higher H3.3 TI over the constituent enhancers that make-up super-enhancers domains compared to conventional enhancers despite the fact that these regions are similar in size (Figure 3F). When TI was calculated using a smaller 300\u00a0bp bin size, exceptionally high H3.3 turnover was still evident at super-enhancers (Figure 3\u2014figure supplement 1). We also examined turnover of histone H3.1 at ESC enhancers and super-enhancers by performing H3.1 time-ChIP in the same manner as was done for H3.3. Although the depth of sequencing required to interrogate H3.1 limits the resolution of H3.1 time-ChIP, we clearly saw elevated TI over enhancers\u00a0compared to randomized regions in two seperate\u00a0biological replicates (Figure 3\u2014figure supplement 2). In addition, super-enhancer constituents showed higher H3.1 turnover than conventional enhancers, consistent with the results for H3.3. The high H3.1 and H3.3 TI observed at super-enhancers suggests that nucleosomes are more frequently disrupted at these regions regardless of which H3 variant they contain. We conclude that TI offers a metric for identifying enhancers and super-enhancers, and that super-enhancers have an unusually dynamic nucleosome population.\n\n### PcG-repressed loci show H3.3 enrichment but reduced TI in ESCs\n\nHaving observed increased TI associated with activation, we were interested in examining regions associated with repression. Heterochromatin, the most extensively repressed segment of the genome, does not have H3.3 (Figure 4\u2014figure supplement 1), indicating a lack of turnover and causing us to be unable to measure H3.3 turnover at these regions. However Polycomb-Group (PcG) regulated genes are bound by H3.3 in ESCs (Figure 4\u2014figure supplement 1), although H3.3 levels at these genes were lower than at enhancers and CpG islands (Figure 4\u2014figure supplement 1). PcG proteins mediate repression, at least in part, through chromatin compaction (Simon and Kingston, 2013). One outstanding question is whether this compaction could lead to stabilization of nucleosomes and reduced nucleosome turnover at PcG-bound genes.\n\nMeasurement\u00a0of\u00a0TI at PcG-bound regions revealed slower turnover of H3.3 compared to all CpG islands, the majority of which are associated with active chromatin (Figure 4A) while PcG-bound TSSs had a TI intermediate between the TSSs of active and silent genes (Figure 4B). The classical PcG-target, the Hoxb locus shows low levels of H3.3 throughout the region with average TI values of 0.03 (Figure 4C), compared to high levels of H3.3 enrichment and an average TI of 0.14 in the active Hnrnpa3 locus (Figure 4D). This shows that, in ESCs, PcG-bound regions have decreased TI compared to active regions.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/15316/elife-15316-fig4-v2.jpg)\n\n**Figure 4.:** (A) TI averaged over PcG-bound genomic regions (turquoise) and all CpG islands (red). (B) TI averaged over the TSSs of active genes (red), PcG targets (turquoise) and silent genes (blue) in ESCs. (C) The PcG-regulated Hoxb locus shows enrichment for H3.3 (top 4 tracks show H3.3 at each time point) but low TI (heatmap). The grey tracks show ChIP-seq for PcG protein Ring1b and the blue tracks RNA-seq. (D) The non-PcG-bound active gene Hnrnpa3 shows greater H3.3 enrichment and higher TI than Hoxb. TI scale is the same as in Figure 3.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15316/elife-15316-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) H3.3 enrichment in ESCs at PcG targets (grey) compared to H3K9me3 regions (green). (B) H3.3 enrichment in ESCs at PcG targets (blue), CpG islands (CGI \u2013 red), enhancers (purple) and randomized PcG regions (green).\n\nOverall, these data indicate that histone turnover can relate to known regulatory features. Regions involved in activation have high TI, those involved in repression have low TI.\n\n### High H3.3 turnover at enhancers and active genes after neural differentiation\n\nESCs have been proposed to have a more plastic chromatin structure compared with more differentiated cells (Bernstein et al., 2006; Meshorer et al., 2006). Therefore it was possible that the high turnover we had observed at enhancers and super-enhancers was due to ESC-specific plasticity. We therefore determined whether turnover remained high at regulatory regions and enhancers following cellular differentiation.\n\nWe generated neural stem cells (NSCs) expressing H3.3_SNAP by injecting H3.3_SNAP ESCs into blastocysts, harvesting E13.5 embryos and deriving NSCs from embryonic brain. NSC lines were screened to identify transgenic lines (Figure 5\u2014figure supplement 1) and these lines were drug-selected to obtain pure populations of cells carrying the H3.3_SNAP transgene. H3.3_SNAP NSCs expressed neuronal markers (Figure 5\u2014figure supplement 1) and, upon dox induction, expressed H3.3_SNAP at similar levels to the ESC line (Figure 5\u2014figure supplement 2).\n\nTo characterize turnover in neural stem cells, time-ChIP was performed with cells harvested at 0\u00a0hr, 3\u00a0hr, 6\u00a0hr and 12\u00a0hr post-labeling. As expected, genes that were activated during neural differentiation and lost PcG binding showed a dramatic increase in H3.3 enrichment and TI (Figure 5A and B). Regions still bound by PcG in NSCs were no longer enriched in H3.3 as they were in ESCs (Figure 5C and D). This suggests nucleosome stabilization at these regions upon differentiation. ESC-specific enhancers showed reduced H3.3 and TI in NSCs compared to ESCs but still showed high H3.3 turnover compared to the rest of the genome (Figure 5E and Figure 5\u2014figure supplement 2).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/15316/elife-15316-fig5-v2.jpg)\n\n**Figure 5.:** (A) Average TI profile around TSSs of genes that lose PcG binding and increase gene expression upon differentiation to NSCs. (B) The region containing the Olig1 and Olig2 genes, which are activated during neural differentiation, shows a dramatic increase in H3.3 turnover when ESCs are differentiated to NSCs. The top tracks represent H3.3 (green) and TI (heatmap) in ESCs while the bottom tracks show H3.3 (purple) and TI in NSCs. The grey tracks show ChIP-seq for PcG protein Ring1b and the blue tracks RNA-seq. (C) Average H3.3 enrichment (0\u00a0hr sample) over PcG-bound regions in ESCs and NSCs. (D) Hoxb remains bound by PcG (Ring1b) in NSCs but H3.3 enrichment is lost. (E) Average TI at ESC-specific enhancers in ESCs (cyan) and NSCs (purple). (F) NSC TI distribution at annotated genomic elements \u2013 promoters, 5\u2019 end of genes, gene bodies, TTSs and enhancers. Genes are grouped by NSC expression level and putative NS enhancers were defined using H3K27ac ChIP-seq data from Encode (E14.5 embryonic brain - ENCFF001XZR). (G) Representation of annotated genomic features in the 1000 highest TI regions in NSCs relative to their representation in the genome as a whole.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15316/elife-15316-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Screening for chimeric NSC lines expressing H3.3_SNAP based on puromycin resistance. Red bars indicate cell lines that scored as highly chimeric. NSC line '3_1' was used for time-ChIP studies. (B) RT-qPCR showing expression of NSC markers (Sox1, Sox2, Olig2 and Slc1a3) but not the pluripotency marker Oct4 in H3.3_SNAP NSCs. RT-qPCR in ESCs is shown for comparision. Expression is relative to the housekeeping gene Eef1A1. (C) Immunofluorescence for NSC markers Sox2 (red) and Nestin (green) in H3.3_SNAP NSCs.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/15316/elife-15316-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Western blot showing expression of H3.3_SNAP upon dox induction in ESCs compared to NSCs. For dox induced samples ('dox'), increasing amounts of protein were loaded, for uninduced samples ('un') only the highest protein concentration was loaded. H3.3_SNAP is detected using an anti-HA antibody while endogenous H3 and TBP serve as loading controls. (B) H3.3 enrichment at ESC enhancers is reduced in NSCs (purple) compared to ESCs (cyan).\n\nSimilar to what we observed in ESCs, the promoters, gene bodies and TTSs of highly expressed genes show high TI in NSCs as did putative NSC enhancers (identified using H3K27ac ChIP-seq data from embryonic brain). Average TI values were lower for putative NSC enhancers than those observed for active enhancers in ESCs (Figure 5F). This might reflect inclusion of enhancers expressed in embryonic brain that are not expressed in NSCs. When the 1000 regions showing the highest TI in NSCs (FDR = 0.002) were examined (Supplementary file 2), TTSs and enhancers were the most overrepresented genomic elements, similar to\u00a0what was observed for the highest TI regions in ESCs. However, gene bodies were overrepresented in the NSC set but not in the set of top TI regions in ESCs (Figure 5G). This might reflect either unusually low turnover at gene bodies in ES cells, or high turnover at these sites in NSCs.\n\nWe conclude that H3.3 turnover is broadly similar in ESCs and NSCs with the exception of PcG-bound regions, which seem to stabilize during differentiation as evidenced by a loss of H3.3.\n\n### Regions that change TI upon differentiation are often enhancers\n\nDifferences in H3.3 TI between pluripotent ESCs and lineage committed NSCs might identify regulatory regions important for differentiation. To explore this, we identified regions where TI changed upon differentiation. We compared TI between ESCs and NSCs for each 1\u00a0kb bin in the genome. Bins changing turnover were defined as those with a difference in TI between ESCs and NSCs in the top 2.5% with a p-value of \u22640.01. Using these criteria, 34,070 1\u00a0kb bins were identified which changed TI during differentiation (Figure 6A and Supplementary file 3) with more bins showing increased TI in NSCs compared to ESCs (19,870 bins compared to 14,200). Strikingly, regions showing higher TI in ESCs were enriched for the presence of an ESC enhancer (Figure 6B) and, similarly, regions with increased TI in NSCs were enriched for NSC enhancers (Figure 6C). Thus, enhancer regions showed high H3.3 turnover in a manner that correlated with cell type-specific enhancer activity. Interestingly, NSC enhancers were also somewhat overrepresented in regions with higher turnover in ESCs (Figure 6B). This could reflect roles for these enhancers in both ESCs and NSCs, or could reflect a \u2018poised\u2019 state for these enhancers (Ferrari et al., 2014; Rada-Iglesias et al., 2011). Regions with higher turnover in ESCs were also enriched for promoters and the 5\u2019 end of genes while rshowed a greater enrichment of gene bodies. In both sets, TTSs were overrepresented (Figure 6B and Figure 6C).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/15316/elife-15316-fig6-v2.jpg)\n\n**Figure 6.:** (A) Volcano plot showing differences in TI between ESCs and NSCs. Regions with a TI difference in the top 2.5% with a p-value\u22640.01 were selected as changing during differentiation (red dots). (B) Representation of annotated genomic features in regions showing higher TI in ESCs compared to NSCs (selected as described in A). The numbers to the right of the plot indicate the number of regions corresponding to each type of genomic feature. (C) Representation of annotated genomic features in regions showing higher TI in NSCs compared to ESCs (selected as described in A). (D) An unnanotated region on chromosome 3, which shows an increase in H3.3 and TI upon differentiation of ESCs to NSCs (asterisk) and an expression decrease in the nearby Stmn2 gene. The heatmap shows average TI while differences in TI are represented by blue bars.\n\nWe observed TI differences in unannotated regions; 8732 of 34,070 differences, when regions overlapping UCSC genes were excluded. Such regions could represent unidentified elements with roles in cell identity and differentiation. This is supported by the fact that 1608 of these regions are located within 50\u00a0kb of a gene changing expression during differentiation (example in Figure 6D). When we examined only the 1000 largest turnover changes in unannotated regions, 212 regions were close to genes changing expression. In both instances the intersection between unannotated differences and these genes was statistically significant (p-value = 0.001), consistent with the possibility that these are previously unannotated regulatory regions.\n\nWe conclude that H3.3 turnover is regulated during differentiation and that the biggest changes in histone dynamics are found prominently in enhancer regions. Time-ChIP may be useful as a tool for picking out novel enhancers or other regulatory elements involved in cell fate changes.\n\n### H3.3 turnover correlates with DNA accessibility at enhancers and TSSs\n\nOne attractive hypothesis is that histone turnover is directly related to accessibility of DNA sequences; regions of rapid turnover are expected to be more accessible. We wished to test this hypothesis by measuring the accessibility of DNA to enzymatic access genome-wide. DNase hypersensitivity, or the conceptually related technique ATAC-seq, detects regions of open chromatin (Buenrostro et al., 2013; John et al., 2013). We examined H3.3 turnover over previously annotated DNase hypersensitive sites in mouse ESCs (Vierstra et al., 2014) and found that TI was indeed high over these sites in ESCs (Figure 7\u2014figure supplement 1). TI over ESC DNase sensitive regions was reduced in NSCs consistent with regulatory changes during differentiation (Figure 7\u2014figure supplement 1). To expand upon this analysis, we used MNase, which is capable of measuring accessibility more broadly than these aforementioned technologies. It is established that nucleosomes have differential accessibility to MNase, with some nucleosomes liberated at low MNase and some requiring high MNase (Knight et al., 2014; Xi et al., 2011).\n\nWe have recently developed a metric that measures how nucleosomes respond to a titration of MNase. Nucleosomes that show decreased signal as MNase concentration decreases are deemed inaccessible (more MNase is needed to liberate them), while nucleosomes that show increased signal as MNase concentration decreases are deemed accessible (they are released at low MNase concentration and their associated DNA is over-digested at high concentrations; [Mieczkowski et al., 2016]) We therefore expanded upon the relationship between TI and DNase hypersensitity to examine whether this new parameter and H3.3 turnover were correlated.\n\nESC and NSC chromatin was digested with a range of concentrations of MNase \u2013 1U, 4U, 16U and 64U. We then calculated the \u2018MNase accessibility\u2019 (MACC) metric that reflects the change in signal at a particular locus in response to decreasing MNase concentration (Figure 7\u2014figure supplement 1) (Mieczkowski et al., 2016). The metric is designed so that positive MACC values reflect regions that are easily digested by MNase and therefore are classed as 'accessible'. MNase titration was performed on two biological replicates of H3.3_SNAP ESC and NSC chromatin ('a' replicates). The same assay was also carried out on different ESC and NSC lines ('b' replicates) thus increasing the number of replicates we could assess and providing greater confidence in our findings.\n\nWe examined annotated genomic elements to see if turnover index correlated with DNA accessibility as assessed by MACC. At the TSSs of genes that change expression upon neural differentiation, TI and MACC were positively correlated in a cell-type specific manner (Figure 7\u2014figure supplement 2). Increased turnover and accessibility at genes becoming activated during neural differentiation was evident at neuronal genes such as Olig1 (Figure 7\u2014figure supplement 2). In\u00a0ESCs,\u00a0at PcG-bound regions\u00a0which\u00a0are expected to be repressed, we observed slower turnover and also saw less accessibility (lower MACC) than enhancers and the TSSs of expressed genes (Figure 7A). These results are consistent with transcriptional repression at PcG-bound\u00a0regions, although the\u00a0presence\u00a0of histone H3.3\u00a0at\u00a0these\u00a0regions implies that some replication-independent histone turnover occurs\u00a0to deposit this histone.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/15316/elife-15316-fig7-v2.jpg)\n\n**Figure 7.:** (A) Boxplot of average ESC TI and MACC at ESC enhancers, the TSSs of expressed genes, and PcG-bound regions. (B) Pearson\u2019s correlation between DNA accessibility as measured by MNase titration (MACC) and TI at ESC enhancers. For MACC four replicates are shown for each cell type, two for ESC_ and NSC_H3.3_SNAP lines ('a' replicates) and two for separate ESC and NSC lines ('b' replicates). For\u00a0TI\u00a0three biological replicates are shown. (C) Boxplot of average TI and MACC values at ESC enhancers. (D) The Oct4/Pou5f1 super-enhancer shows high MACC (green) and TI (heatmap) in ESCs but not in NSCs.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15316/elife-15316-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Boxplot of average TI over DNase hypersensitive regions in E14 ESCs (Encode accession ENCSR000CMW). TI index was plotted over called DNase peaks (E14-DS18505.peaks.fdr0.01). (B) MNase digestion patterns generated by digestion of ESC and NSC chromatin with varying concentrations of enzyme (1U, 4U, 16U, 64U). (C) Sequencing data from each of the above titration points was used to generate an accessibility score (MACC) by fitting these to a linear model.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/15316/elife-15316-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** (A) Pearson\u2019s correlation between DNA accessibility as measured by MNase titration (MACC) and TI at the TSSs of genes differentially expressed in ESCs and NSCs. For MACC four replicates are shown for each cell type, two for ESC_ and NSC_H3.3_SNAP lines ('a' replicates) and two for separate ESC and NSC lines ('b' replicates). Three biological replicates are shown for TI. (B) Olig1 is activated during neural differentiation and shows high MACC (green) and TI (heatmap) in NSCs but not ESCs. RNA-seq is shown in blue. (C) Pearson\u2019s correlation between DNA accessibility as measured by MNase titration (MACC) and TI at ESC super-enhancers. Details as described in C. (D) Boxplot of average TI and MACC values at ESC super-enhancers.\n\nWe then examined DNA accessibility at ESC enhancers and super-enhancers as these regions show particularly high H3.3 turnover. We found that, in ESCs, TI and MACC correlated particularly well at these regions (Figure 7B and Figure 7\u2014figure supplement 2). When the magnitude of TI and MACC at ESC enhancers was assessed, both had values well above the genome average in ESCs but not in NSCs, consistent with their regulatory role in pluripotent cells (Figure 7C and Figure 7\u2014figure supplement 2). As well as being evident on a global scale, the relationship between TI and MACC at enhancers was also apparent at the level of individual loci. For example, the Oct4/Pou5f1 super-enhancer shows high TI and high MACC in ESCs while both TI and MACC are decreased upon differentiation to NSCs (Figure 7D). These findings indicate that, at enhancers, increased turnover of nucleosomes might account for increased accessibility to the DNA sequence. This is consistent with increased transcription factor binding at these sites.\n\n## Discussion\n\nOur unbiased assessment of H3.3 turnover identified enhancers as having highly dynamic nucleosomes. Notably, the clustered enhancers that make up super-enhancer domains were more rapidly turned over than conventional ESC enhancers. Measurement of H3.1 turnover showed the same phenomenon. These observations are consistent with the notion that nucleosomes must be disrupted in order to allow transcription factor binding and are consistent with increased DNA accessibility\u00a0at\u00a0enhancers. Notably, our data suggest that nucleosomes are frequently disrupted at enhancers regardless of which H3 variant they contain. Nucleosomes containing H3.3 predominate at these regions due to the high levels of nucleosome disruption but both H3.1 and H3.3 show rapid turnover. A variety of mechanisms might be used to generate high turnover in enhancers. Pioneer transcription factors such as Oct4 and Sox2 occupy these sets of ESC enhancers and super-enhancers and can bind partial motifs on the nucleosome surface (Soufi et al., 2015). These factors might contribute to nucleosome turnover, either directly through their binding or by recruiting remodeling complexes that facilitate turnover. Transcription through enhancers might also contribute (Kim et al., 2010). It is intriguing that super-enhancers show significantly higher turnover than enhancer elements. This could reflect a synergistic interaction between adjacent enhancer modules, or might indicate that the individual enhancer modules within super-enhancers each have intrinsically high turnover. In either case, the ability of turnover to identify these regions is striking and is likely to be related to their potency.\n\nHigh histone turnover at enhancers was not limited to ESCs, but was also seen when we looked at lineage-committed NSCs, indicating that this property is seen both in pluripotent and in differentiated cell lineages. There were significant changes in where high turnover occurred in NSCs due to the activation of a distinct set of enhancers. In broad classifications, regions with rapid turnover were in general similar between ESCs and NSCs, except that gene bodies were overrepresented in high turnover regions in the differentiated cells but not in ESCs (Figures 3 and 5). Increased turnover in gene bodies might reflect widespread transcriptional activation and consequent histone turnover in differentiated cells. Alternatively, it might be that pluripotent cells have a plastic chromatin structure at the promoters of genes poised for activation in future lineages, increasing turnover relative to gene bodies at those locations.\n\nMany unannotated regions showed differentiation-associated turnover changes, approximately one-quarter of turnover changes occurred outside of genes and enhancers. Many of these regions are likely to represent genomic elements with hitherto unknown roles in cell fate specification. In support of this, over 20% of the unannotated regions with the largest changes in turnover were located close to genes that changed expression during neural differentiation.\n\nNucleosome turnover might be related to accessibility of the underlying sequence as regions with rapid turnover are\u00a0likely\u00a0to have DNA sequences that are exposed for protein binding more frequently. To begin to analyze whether this is true, we measured accessibility genome wide using MNase, which is able to probe accessibility everywhere in the genome, and compared the resultant accessibility metric to turnover index. At ESC enhancers, both TI and MACC had high values and the two metrics were highly correlated. Similarly at the TSSs of expressed genes, TI and MACC had higher than average values while at repressed PcG targets both turnover and accessibility were reduced. These data thus cross validate these two distinct metrics and support the hypothesis that regions of high turnover correspond to regions of high DNA\u00a0accessibility.\n\nOur work and previous work are consistent in showing high incorporation rates for histone H3.3 and high turnover for that histone in enhancers and other regulatory regions (Ha et al., 2014; Kraushaar et al., 2013). We have extended these observations by also showing high turnover of H3.1 at enhancer regions and in demonstrating more rapid turnover of both H3.3 and H3.1 at super-enhancers compared to conventional enhancers. Notably, we also observed high H3.3 turnover around the transcription termination sites of expressed genes with our sets containing the (1000) highest TI regions showing a large overrepresentation of TTSs. RNA Polymerase II occupancy or transcription itself could contribute to nucleosome displacement at these regions. Indeed, enrichment of RNA Pol II and nascent transcription at the 3\u2019 end of genes has been reported to be widespread (Anamika et al., 2012; Core et al., 2008; Rahl et al., 2010).\n\nTime-ChIP allows examination of relative histone turnover in a genome-wide manner at high resolution, with changes in turnover evident at individual gene loci and regulatory elements. Labeling of SNAP-tagged histones for time-ChIP takes approximately one hour meaning that very rapid turnover might be missed and consequently turnover underestimated for some regions. Nevertheless, labeling time is relatively short compared to the cell cycle time of ESCs (12\u2009hr) and NSCs (18\u2009hr) and most H3.3 enriched loci are still detectable at the first time point as evidenced by the strong correlation between ChIP for H3.3_SNAP_HA and the H3.3 0\u00a0hr time-ChIP sample (Figure 2\u2014figure supplement 1). We are therefore confident that we accurately quantify relative turnover for the vast majority of H3.3-enriched regions. In this study, H3.3 turnover was assessed because of its enrichment at regions important for gene regulation. In theory, however, time-ChIP can be applied to study the dynamics of any core histone or histone variant. We performed time-ChIP for H3.1 but a comprehensive assessment of its turnover, and that of other broadly distributed histones, is currently limited by the depth of sequencing required. Measuring nucleosome dynamics provides a distinct measure of chromatin characteristics that can help identify and functionally characterize regulatory elements.\n\n## Materials and methods\n\n### Experimental procedures\n\n#### Generation and maintenance of H3_SNAP ESCs and NSCs\n\nA p2lox plasmid containing H3.3 cDNA and a C-terminal SNAP_3xHA tag was introduced into A2lox.Cre ESCs (Iacovino et al., 2011) by nucleofection (Lonza,\u00a0Switzerland). 24\u00a0hr prior to transfection 500\u00a0ng/ml doxycycline was added to induce Cre expression and facilitate integration of H3.3_SNAP_HA into the hprt locus. 24\u00a0hr after transfection selection was initiated with 300\u00a0ug/ml G418 and after 7\u20139 days colonies were picked and screened for presence of H3.3_SNAP_HA. The resulting A2lox.H3.3_SNAP ESCs were maintained on mitomycin-C inactivated embryonic fibroblast feeders in DMEM supplemented with 15% fetal bovine serum (Hyclone) and 1000\u00a0U/ml of leukemia inhibitory factor (EMD Millipore). H3.1_SNAP ESCs were generated in the same manner using a p2lox plasmid containing H3.1 cDNA and a C-terminal SNAP_3xHA tag.\n\nH3.3_SNAP NSCs were generated by injecting H3.3_SNAP ESCs into blastocysts and harvesting the resulting embryos at E13.5. Neurospheres isolated from embryonic brain were grown in suspension for 1\u20132 passages and then plated on poly-l-ornithine coated plates and grown as a monolayer in DMEM:F12 containing B-27 and N-2 supplements (Gibco) and EGF+FGF-2 (10\u00a0ng/ml). NSC lines were screened for chimerism based on puromycin resistance (which is present in the Rosa26 locus of H3.3_SNAP cells). The most highly chimeric lines were selected with puromycin to generate pure populations of H3.3_SNAP NSCs and expression of H3.3_SNAP_HA was tested after 24\u00a0hr doxycycline induction by HA staining and flow cytometry. The best H3.3_SNAP NSC line (line 3_1) was then chosen for further experiments.\n\n#### Time-ChIP: Biotin labeling and histone pulldown\n\nPrior to labeling, H3.3_SNAP or H3.1_SNAP was induced with 500\u00a0ng/ml doxycycline for four cell doubling times (48\u00a0hr for ESCs and 72\u00a0hr for NSCs). For labeling, 0.5\u20132\u00a0\u00d7\u00a0108 cells were incubated in 50\u00a0\u00b5l complete medium supplemented with 10\u00a0\u00b5M CP-Biotin (NEB) for 40\u00a0min at 37\u00b0C then washed twice with 10\u00a0ml media. Cells were then resuspended in 10\u00a0ml complete medium and incubated for 20\u00a0min at 37\u00b0C to remove any unbound CP-biotin. After a final wash, one-fifth of the labeled cells were harvested as the 0\u00a0hr time point and the rest plated for harvest at 3\u00a0hr, 6\u00a0hr or 12\u00a0hr.\n\nNuclei were extracted from each sample, counted, and equal numbers of cells resuspended in 500\u00a0\u00b5l 20\u00a0mM Hepes pH7.7, 20\u00a0mM KCl, 0.5\u00a0mM EDTA, 300\u00a0mM NaCl, 1\u00a0mM DTT containing complete protease inhibitors (Roche). Nuclei were digested with 120\u2013140U MNase (Worthington) in the presence of 3\u00a0mM CaCl2 for 20\u00a0min at 25\u00b0C. Reactions were stopped by the addition of EDTA/EGTA and chromatin was solubilized by the addition of 0.05% NP-40. The MNase digested chromatin was centrifuged at 12,000\u00a0g for 5\u00a0min. 400\u00a0\u00b5l of the resulting supernatant was added to 15\u00a0\u00b5l streptavidin magnetic beads (Pierce) which had been pre-blocked with 50\u00a0mg BSA and 200\u00a0\u00b5g/ml yeast tRNA and incubated for 1\u00a0hr at 4\u00b0C. Beads were washed 3\u00a0\u00d7\u00a05\u00a0min with 20\u00a0mM Hepes pH7.7, 20\u00a0mM KCl, 500\u00a0M NaCl, 3\u00a0mM CaCl2, 5\u00a0mM EGTA, 0.5% NP40, 1\u00a0mM DTT containing complete protease inhibitors (Roche). DNA was eluted with 250 \u00b5l 10\u00a0mM Tris pH8, 100\u00a0mM NaCl, 10\u00a0mM EDTA, 0.5% SDS and incubated for 10\u00a0min at at 30\u00b0C in the presence of RNase A (DNase-free, Roche). DNA was purified by phenol-chloroform and chloroform extraction followed by column purification (PCR purification kit, Qiagen). DNA was quantified using picogreen (Molecular Probes).\n\nThree biological replicates were performed for time-ChIP experiments based on what is standard for ChIP-seq experiments. For each replicate, cells were cultured at different times. They were then labeled, harvested at various time-points post-labeling. Pulldown was performed separately for each replicate.\n\n#### Chromatin immunoprecipitation (ChIP)\n\n##### Native ChIP for H3.3_HA\n\nH3.3_SNAP_HA was induced with doxycycline for 48\u00a0hr, approximately 0.5\u20131\u00a0\u00d7\u00a0107\u00a0cells were harvested, and washed in cold PBS. Nuclei were isolated and chromatin was prepared and fragmented by MNase as described above. Chromatin was added to 15\u00a0\u00b5l protein A dynabeads (Life Technologies) that had been preincubated with anti-HA (Abcam, ab9110) and incubated overnight at 4\u00b0C. Washing, elution and DNA purification was carried out as described above.\n\n##### Cross-linked ChIP\n\nCells were cross-linked in 1% formaldehyde at room temperature and ChIP carried out as described in Illingworth et al. (Illingworth et al., 2015) with minor modifications. For Ring1b ChIP cells were crosslinked with 2\u00a0\u00b5M EGS (Thermoscientific) at room temperature for 40\u00a0min prior to formaldehyde fixation. Antibodies used were as follows anti-H3K27me3 (Millipore, 07\u2013449), anti-Ring1b (Bethyl, A302-869A), anti-Cbx2 (Santa Cruz, sc-19297), anti-Ezh2 (Cell Signaling 5246S).\n\n#### Transcriptional analysis\n\nRNA was isolated using TRIZOL and Purelink RNA mini kit (Ambion \u2013 Life Technologies). For RT-qPCR, RNA was reverse transcribed using SuperScript III Reverse Transcriptase (Life Technologies) and the resulting cDNA analyzed by qPCR using iTaq Universal SYBR Green Supermix (Bio-rad) on an ABI 7500 fast qPCR machine. Primer sequences are listed in Supplementary file 6. For RNA-seq experiments, rRNA was depleted using Ribo-Zero Gold kit (Illumina). First and second strand cDNA synthesis were performed using the TruSeq RNA library prep kit (Illumina) according to manufacturer\u2019s instructions. Library preparation was carried out as described below.\n\n#### Western blotting\n\nProtein extracts were denatured at 95\u00b0C for 5\u2009min in 3x reducing loading buffer (NEB), separated by SDS-PAGE using a 4\u201312% NuPAGE Bis-Tris gel (Life Technologies), then transferred to PVDF membrane (Bio-Rad, for immunofluoresence). Membranes were blocked, incubated with antibodies and washed according to standard protocols. Primary antibodies used were anti-HA.11 (Covance, MMS-101P), anti-H3 (Cell signaling, 4499L), anti-H3.3 (Millipore, 09\u2013838), anti-H3K4me3 (Millipore, 07\u2013473), anti-H3K27me3 (Active Motif, 39155) and anti-TBP (Abcam, ab818). Secondary antibodies were LI-COR fluorescent secondary antibodies or HRP-conjugated. Membranes were imaged on the LI-COR Odyssey Sa or using Pierce ECL (Thermo Scientific) and film.\n\n#### Immunofluorescence\n\nCells were grown on coverslips and immunofluorescence was performed according to standard protocols. Primary antibodies used were anti-Sox2 (Millipore) and anti-Nestin (DSHB, rat-401). Secondary antibodies were anti-rabbit-IgG-Cy3 and anti-mouse-IgG-488. Coverslips were mounted in Vectashield with DAPI.\n\n#### MNase titration\n\nMNase titration was carried out as described in Mieczkowski et al. In brief, cells were harvested, cross-linked in 1% formaldehyde at room temperature and nuclei isolated. Digestions were performed on 2.5\u00a0105 nuclei per reaction using 64U, 16U, 4U or 1U MNase (Worthington) in 10\u00a0mM Tris pH 7.4, 15\u00a0mM NaCl, 60\u00a0mM KCl, 1\u00a0mM CaCl2 for 10\u201315 min at 25\u00b0C. Reactions were stopped with EDTA/EGTA and 0.5% SDS and 125\u00a0mM NaCl was added to the samples. RNase A and proteinase K treatment along with cross-link reversal at 65\u00b0C were performed. DNA was purified by phenol-chloroform extraction and column purification.\n\n#### Illumina HiSeq library preparation and sequencing\n\nSequencing libraries were prepared as described in Bowman et al. (Bowman et al., 2013). For time-ChIP libraries, the same amount of spike-in control DNA was added to each library. The amount of spike-in DNA added to each library was 10,000 times less than the amount of DNA recovered from the 0\u00a0hr time-point. The spike-in control consisted of synthetic 150\u00a0bp fragments of DNA with GC content of 30\u201370%. These sequences can be found in the Supplementary Material (Supplementary file 5). Paired-end 50 sequencing was carried out in an Illumina HiSeq 2500 according to manufacturer\u2019s instructions. For time-ChIP libraries, four samples were barcoded and run in one sequencing lane, yielding approximately 40\u201350\u00a0million reads for each sample.\n\n### Bioinformatics and statistical analysis\n\n#### Sequencing alignment and quality control\n\nSequenced 50-bp paired-end tags were mapped to the mouse (mm\u00a09) genome using the Bowtie aligner v. 0.12.9 (Langmead et al., 2009). For time-ChIP samples, where tags had 5 or more reportable alignments, one was reported at random. For MACC calculations, only uniquely mapped tags were considered. In addition, only tags with no more than two mismatches were retained. Genomic positions with the numbers of mapped tags above the significance threshold of z-score = 7 were identified as anomalous, and the tags mapped to such positions were discarded. Coordinates of genes were from the RefSeq mm9 gene set. The TSS profiles were calculated and plotted as described previously (Tolstorukov et al., 2012).\n\n#### Spike-in control\n\nFor each time point the number of reads aligning to the spike-in control was compared to the number of reads aligning to the mouse genome. The greater the number of spike-in reads relative to mouse genomic reads, the smaller the quantity of genomic DNA sequenced from the time point sample. We used this relationship to calculate the relative number of 'sequencing reads' for each time point relative to the 0\u00a0hr time point (Figure 1\u2014figure supplement 3).\n\n#### Time-ChIP: TI calculation\n\nThe genome was divided into 1\u00a0kb bins and, for each sample, the number of tags per bin was calculated as reads per million to normalize for library size. Data for each time point was then input subtracted. For each 1\u00a0kb bin, TI was calculated by fitting the number of reads for each time point to a simple linear regression model. A Kendall rank correlation test was used to assess how well points fit the linear model. The slope of the line fitted by linear regression was weighted by multiplying by 1-p-value from the Kendall test. Such weighting was introduced to reduce the TI values for the bins where the statistical significance of the fit was low, and thus it ensures a conservative estimation of TI (Abubucker et al., 2012). Finally, the sign of the slope was reversed such that positive TI values represented high turnover. As data for individual biological replicates correlated well (Figure 2\u2014figure supplement 1), the mean of these replicates was used for further analysis. In Figure 3\u2014figure supplement 1 a 300\u00a0bp bin size was used for calculating TI.\n\n#### Identification of top TI regions\n\nTo identify regions with the highest H3.3 turnover a sliding window calculation was performed that calculated the mean TI over a window size of three 1\u00a0kb bins. This allowed us to identify high TI bins whose neighboring bins also had high turnover. Regions corresponding to repeats were manually removed and the 1000 bins with the highest TI value were chosen as the set of highest TI regions for the cell type in question. An FDR threshold was calculated for these regions by taking the lowest TI value in this set and seeing how frequently it occurred in 1000 randomly selected 1\u00a0kb bins. This random selection was performed 100 times and for each test; FDR = # bins with TI value above threshold/# total bins. The highest value from these 100 tests was chosen as the final FDR.\n\n#### Detecting differences in TI between ESCs and NSCs\n\nTI difference for each 1\u00a0kb bin was calculated (mean ES TI \u2013 mean NS TI) and p-values were computed using the empirical Bayes method (limma package in R) on TI data from each of the three replicates. Bins with a TI difference in the 0.975 quantile with p-values \u2264 0.01 were selected as changing TI during differentiation.\n\n#### Definition of unannotated regions and overlap with genes\n\nRegions were defined as occurring in an unannotated region if they did not overlap a gene or an enhancer element. To ensure elements were truly unannotated we extended our gene set to include all UCSC mm9 genes and predicted genes (52,199 genes). To determine whether unannotated regions of interest overlapped particular gene sets in a statistically significant manner we used GAT (http://gat.readthedocs.org/en/latest/usage.html) (Heger et al., 2013).\n\n#### MACC calculation\n\nMACC was calculated as described in Mieczkowski et al.\n\n#### ChIP-seq analysis\n\nTo determine regions of ChIP-seq tag enrichment (peaks), we analyzed tag counts in a 1\u00a0kb window over the chromosome length with the step of 200 bp. Statistical significance of enrichment of ChIP vs input was estimated using negative binomial distribution, with the estimate of the mean based on the tag counts in input, and the size parameters selected based on manual inspection of resulting peak calls. Regions of significant enrichment were generated by merging adjacent significantly enriched windows separated by 1\u00a0kb or less. In ESCs, PcG targets were defined as having overlapping peaks of Ring1b Cbx2, Cbx7, Ezh2 and H3K27me3. For NSCs, PcG\u00a0targets were defined as having overlapping peaks of Ring1b and H3K27me3.\n\n#### Gene expression\n\nExpression data for TSS plots in Figure 2 and Figure 4 was taken from West et al. (West et al., 2014). Expression data in Figures 3,\u00a05 and 7 is from RNA-seq data performed on J-1 ESCs and NSCs differentiated in vitro from these cells. RNA-seq tags were aligned to the mouse genome (mm9) using the Tophat software package with default parameters (Trapnell et al., 2009). FPKM values and differential gene expression between ESC and NSC were calculated using Cufflinks (Trapnell et al., 2010) and Cuffdiff (Trapnell et al., 2013) packages respectively. Genes changing expression between ESCs and NSCs were defined as those showing at least a three-fold (for comparison with unannotated regions changing turnover during differentiation) or a four-fold change (MACC analysis) in FPKM value.\n\n#### Data availability\n\nHigh throughput sequencing data has been deposited in GEO and is accessible using the following links.\n\nTime-ChIP: GSE78876\n\nhttp://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE78876\n\nChIP-seq: GSE78899\n\nhttp://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE78899\n\nMNase titration and RNA-seq: GSE78984\n\nhttp://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE78984\n",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "ed0fb1da-a8ad-4c1e-9200-db0ae83f5d13",
+      "submission_id": "eca9fe72-00a0-4b2a-81ad-57db0a0a941b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Jerry L Workman, Stowers Institute for Medical Research , United States\n\n## Review text\n\nDOI: [10.7554/eLife.15316.041](https://doi.org/10.7554/eLife.15316.041)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: this article was originally rejected after discussions between the reviewers, but the authors were invited to resubmit after an appeal against the decision.]\n\nThank you for submitting your work entitled \"Enhancer regions show high histone H3.3 turnover that changes during differentiation\" for consideration by eLife. Your article has been favorably evaluated by Jessica Tyler (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. Our decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThe reviewers all applauded the new methods developed in the manuscript and the promise that these methods will lead to advances in the field. However, it was felt that such advances and novel discoveries were not contained in the manuscript submitted. Most of the results confirm observations previously made with other approaches. It was suggested that the current manuscript would be more appropriate for a high impact methods journal. The reviews also contain several comments and technical points that we help you will find helpful.\n\nReviewer #1:\n\nThis manuscript uses a novel technique to measure histone H3.3 turnover to generate a turnover index. The experiments are carefully done, well presented and well written. The results are largely predictable (e.g. high turnover at accessible act sites and low turnover at less accessible inactive sites).\n\n1) While the method is commendable my sense is that to have a high enough impact for eLife the manuscript really needs to emphasize novel findings from this method that we did not know already.\n\n2) Why study only the replacement variant of H3. Comparison to H3.1 would have increased the impact of the work. It might also allow some measurements on the rate of turnover during the cell cycle.\n\n3) Other H3 tags have been shown to interfere with modification of the histone. This study needs some general controls for the stability of the nucleosomes containing the tagged histone and for the presence of histone modifications on the tagged vs. endogenous histone.\n\nReviewer #2:\n\nIn the manuscript entitled \"Enhancer regions show high histone H3.3 turnover that changes during differentiation\" Deaton et al. developed a new approach to study variant histone H3.3 turnover and performed a thorough systematic investigation in mouse embryonic stem cells (mESCs) and neural precursors. They correlate such turnover with ESC promoters, with gene expression and with other metrics that allow regulatory region identification (i.e., H3K27ac and enhancers). The authors also employed their newly developed method called time-ChIP to assess histone turnover genome-wide after differentiation of mESCs to neural stem cells (NSCs), albeit differentiation occurred in mouse embryo brains. The authors found high histone turnover in the regions that are involved in gene regulation particularly, enhancers and super-enhancers. The turnover is quantitated by a turnover index (TI) in those regions. The results were further corroborated by MNase accessibility metric (MACC), a measure of chromatin/DNA accessibility. The overall approach is solid but we did not see a significant advantage over previously published approaches, i.e., the TET-OFF approach to H3.3 turnover by Zhao's lab. Also, the authors claim that their dual approach would be useful in identifying novel regulatory regions, but they did not pursue this avenue of investigation in a tangible way.\n\nFigure 1 described the general approach to histone H3.3 tagging and thence turnover but lacked good controls; Figure 1\u2014figure supplement 1 was somewhat ambiguous. This needs to be a crystal clear figure with obvious controls \u2013 it's not. The authors point out that much of the data of Figure 2 are as expected based on previous studies of H3.3 and known histone turnover in active regions vs. less turnover in inactive. The conclusions are compatible with the work from Henikoff, Allis and specifically Zhao's 2014 Epigenetics Chromatin paper on H3.3 turnover in mESC using a TET-OFF strategy. The study does not consider the presence of fragile nucleosomes. Figure 3 shows turnover correlates with gene activity, promoters and enhancers, particularly super-enhancers. The analysis here was a bit deeper than in the Zhou paper but also with a slightly different emphasis. The authors then concentrated on polycomb-repressed genes in Figure 4 and show a lower turnover, again, as expected. Figure 5 revealed a whole new set of genes that are activated upon neural differentiation, which had lost polycomb (PcG) binding, but again as expected these data showed a dramatic increase in H3.3 enrichment and histone turnover, whereas regions that are still bound by PcG in NSCs, were no longer enriched in H3.3 as they were in ESCs. Interestingly, gene bodies showed high turnover in NSC vs ESC. Remarkably, the NSC lines derived from embryos had rather rapid cell cycles vs. some generated in culture. Figure 7 is an ESC-NSC comparison but we found nothing striking.\n\nStrengths: This study offers two potentially useful tools to study nucleosome dynamics: first, to quantify the histone turnover rate (TI) and second, the MNase accessibility metric (MACC); the latter study appears to also be submitted elsewhere. The results are clean and the data presented in this study are largely convincing. The approach may indeed provide insight into identification of novel regulatory regions but the authors need to prove it.\n\nWeaknesses: This study does not break new conceptual ground or add significantly to our present understanding of nucleosome dynamics linked with transcription and silencing. It has long been known from a number of studies that gene expression positively correlates with the occupancy of H3.3 in the regulatory regions (especially promoters and enhancers) and generally associates with high nucleosome dynamics.\n\nReviewer #3:\n\nThis paper describes the application of a novel technique (time-ChIP) involving an induced histone variant coupled to a SNAP tag. The system is used in this paper to determine the genome-wide histone turnover of the H3.3 variant in a developmental context (ES to neuronal ES). The authors conclude that regions of the genome experiencing active regulation (promoters, enhancers, and super-enhancers) experience faster histone turnover relative to silenced or inactive regions. Additionally, the authors describe a relationship between polycomb repressive complex and the stabilization of chromatin during neuronal differentiation. Finally, the authors propose this technique as a potential method of identifying previously uncharacterized active regulatory regions.\n\nAt first glance, the study seems interesting and relevant to the field of nucleosome regulation. However, there were several analytical steps that lacked appropriate details which significantly impaired the full interpretation of the analysis and conclusions. It is difficult to recommend for publication without additional details of the methodology to make an informed decision.\n\nA more detailed description of how the spike-in control was used is critical. How was this spike-in used to normalize or control the data?\n\nThe authors state that they achieved greater DNA recovery the closer to the pulse they collected chromatin which is expected and serves as a good internal control. However, if the genome-wide normalization is based on the relative chromatin enrichment, the TI calculation could merely be mirroring the increased DNA recovery and not, on any sites, actual turnover. Further details on how the data was specifically normalized would clarify this concern. Additionally, it would be important to know the robustness of this TI calculation given alternative normalization approaches. For example, the authors show there is minimal turnover at silent genes. If this is expected to be a relative constant, how do their findings hold up if normalized to turnover at silent genes?\n\nWhat is the rationale for the use of 1kb windows for the calculation of the TI index? This time-ChIP data is presumably at nucleosome resolution since it is MNase-based. It would be of far greater value to see the extent of histone turnover extending into genes rather than what appears to be arbitrary 1 kb blocks. If there is a reason why the data is kept at 1kb blocks, the authors should also explain the limits of the spatial resolution of their data.\n\nThe use of linear regression slopes as the TI index raises concerns that the authors are assuming a linear relationship in histone turnover. What about regions that experience little turnover for long periods followed by spurts of high turnover? Would the TI metric pull that data out or would it be removed from consideration because of the weighting schema used to punish poorly fit regression models? Again this speaks to the concerns regarding the robustness of the TI metric.\n\nHow is the MACC calculated? There is insufficient information for the nature of this calculation, which is concerning since an entire section of the paper is based on this calculation. A reference to a submitted paper that was not provided is insufficient to judge the nature of the analysis and findings.\n\n[Editors\u2019 note: what now follows is the decision letter after the authors submitted for further consideration.]\n\nThank you for resubmitting your work entitled \"Enhancer regions show high histone H3.3 turnover that changes during differentiation\" for further consideration at eLife. Your revised article has been favorably evaluated by Jessica Tyler (Senior editor), a Reviewing editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nThis is a highly interesting study and certainly contributes to our understanding of nucleosome dynamics at enhancers and super-enhancers. However, it is mainly a techniques paper that states that there is high turnover at enhancers/super-enhancers and extends the work of Zhao while adding a large amount of new detail. We point out that Zhao's 2014 Epigenetics paper used the TET-OFF strategy referred to by the author in his rebuttal but Zhao also has a very nice Genome Bio paper, PMC3983652, that was cited by the author and which incorporates many and earlier time points. Although performed in MEFs, that study also shows H3.3 at high resolution and demonstrate high H3.3 turnover at enhancers and low at H3K27me3 rich regions using linear regression models in a TET-ON H3.3 system. The author's new strategy is probably more accurate versus attempting to measure turnover by regression.\n\n1) While the Discussion does in fact mention that Zhao came to the same conclusion on enhancers and cites the right paper, it comes too late in the manuscript. Hence, the Abstract makes an inappropriate novelty claim regarding high H3.3 turnover at regions known to be involved in gene regulation. Since Zhao has already shown this then they should acknowledge it in the Abstract and Introduction, i.e., \"As previously shown, we found high H3.3 turnover at active regulatory regions including enhancers. However, we also find that even higher turnover occurs at super-enhancers[\u2026]\".\n\n2) The authors have also satisfied the technical concerns that were raised in the previous review.\n\n3) The revised version now included the requested statistical information.\n",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ad76a130-2475-4c5c-affd-9372506ec486",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C1",
+      "claim": "Time-ChIP can be used to quantitatively assess histone H3.3 turnover genome-wide during differentiation of mouse ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "To gain insight into nucleosome dynamics, and to follow how dynamics change during differentiation, we used a technique called time-ChIP to quantitatively assess histone H3.3 turnover genome-wide during differentiation of mouse ESCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states the method used and its application to measure H3.3 turnover during ESC differentiation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "7531e778-35eb-4ccf-9e19-23baf69ca38f",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C2",
+      "claim": "High turnover can be used to identify regions involved in gene regulation without prior assumptions.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, without prior assumptions, high turnover could be used to identify regions involved in gene regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this finding from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "79de0743-fb2f-40af-87ca-076cb8c9515a",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C3",
+      "claim": "High turnover was seen at enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "High turnover was seen at enhancers, as observed previously, with particularly high turnover at super-enhancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this observation and cites previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "e3e8e91f-1670-47b1-8791-ec864958f48c",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C4",
+      "claim": "Super-enhancers show particularly high turnover compared to conventional enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "High turnover was seen at enhancers, as observed previously, with particularly high turnover at super-enhancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this comparative finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "e03f7f96-d199-4a41-80a8-57e39ee3a6c4",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C5",
+      "claim": "Regions associated with the repressive Polycomb-Group showed low turnover in ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, regions associated with the repressive Polycomb-Group showed low turnover in ESCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this finding about PcG-bound regions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "b0de2bd9-8e1c-436e-862d-a7ab1a185d35",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C6",
+      "claim": "Turnover correlated with DNA accessibility.",
+      "claim_type": "EXPLICIT",
+      "source": "Turnover correlated with DNA accessibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this correlation was observed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "1ef12ed0-12c1-4e4d-b48b-88b610f801b9",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C7",
+      "claim": "Upon differentiation, numerous changes in H3.3 turnover rates were observed, the majority of which occurred at enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon differentiation, numerous changes in H3.3 turnover rates were observed, the majority of which occurred at enhancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states this finding about changes during differentiation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "cf5ad64a-5967-4eb4-bfb9-7c21b68995e6",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C8",
+      "claim": "Active enhancers are unusually dynamic in ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, time-ChIP measurement of histone turnover shows that active enhancers are unusually dynamic in ESCs and changes in highly dynamic nucleosomes predominate at enhancers during differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract concludes with this statement based on the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "4afc7996-9f53-4326-844d-2d2ad010b1f1",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C9",
+      "claim": "Changes in highly dynamic nucleosomes predominate at enhancers during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, time-ChIP measurement of histone turnover shows that active enhancers are unusually dynamic in ESCs and changes in highly dynamic nucleosomes predominate at enhancers during differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract concludes with this statement based on the study's findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "aeff2ca3-84d3-45f2-8bdc-1b83d145a922",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C10",
+      "claim": "The nucleosome consists of a histone octamer made up of two copies each of H2A, H2B, H3 and H4, around which approximately 147 bp of DNA is wrapped.",
+      "claim_type": "EXPLICIT",
+      "source": "The simplest repeating unit of chromatin is the nucleosome consisting of a histone octamer, made up of two copies each of H2A, H2B, H3 and H4, around which approximately 147 bp of DNA is wrapped.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about nucleosome structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "5c23cfad-a788-4c3a-b5dc-f8674917fb1f",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C11",
+      "claim": "Histone variants include H2A.Z, H2A.X, macroH2A, H3.3, and CENP-A.",
+      "claim_type": "EXPLICIT",
+      "source": "These include a number of histone H2A variants such as H2A.Z, H2A.X and macroH2A and histone H3 variants such as H3.3 and CENP-A (Maze et al., 2014; Skene and Henikoff, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text lists these variants and cites references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "799c7bf1-4eec-4cca-a50b-c358af1a0d68",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C12",
+      "claim": "Nucleosomes must be disrupted in order for many processes requiring DNA access to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "As nucleosomes can act as barriers to reading the DNA sequence, they must be disrupted in order for many processes requiring DNA access to occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general principle in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "3f0cdd16-765c-4092-bfe7-6cf33a5d3afc",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C13",
+      "claim": "Transcription and the binding of proteins to regulatory regions are known to be dependent upon increased accessibility to nucleosomal DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription and the binding of proteins to regulatory regions are known to be dependent upon increased accessibility to nucleosomal DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "3410de82-6f1f-4300-813b-730aca790aed",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C14",
+      "claim": "Previous studies examining nucleosome turnover genome-wide have made use of induction of epitope-tagged histone transgenes and metabolic labeling of histone proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies examining nucleosome turnover genome-wide have made use of two main strategies \u2013 induction of epitope-tagged histone transgenes (Kraushaar et al., 2013; Yildirim et al., 2014) and metabolic labeling of histone proteins (Deal et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes previous methods with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "6ea4f092-9d04-4966-b7d5-e80f2fdc6bce",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C15",
+      "claim": "High nucleosome turnover occurs at gene bodies, regulatory elements and replication origins in Drosophila cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Such insights include high nucleosome turnover at gene bodies, regulatory elements and replication origins in Drosophila cells (Deal et al., 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding from previous work is cited.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "7c86d10d-7c11-4687-877b-30e94582556d",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C16",
+      "claim": "In mouse cells, rapid deposition of H3.3-containing nucleosomes occurs at enhancers and promoters associated with active histone modification marks and the histone variant H2A.Z.",
+      "claim_type": "EXPLICIT",
+      "source": "and, in mouse cells, rapid deposition of H3.3-containing nucleosomes at enhancers and promoters associated with active histone modification marks and the histone variant H2A.Z (Kraushaar et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding from previous work is cited.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "aad3fb0e-eb6c-499a-b5df-6d8a4070618a",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C17",
+      "claim": "Systems based on inducible histones have a lag time after induction before histones are synthesized and incorporated into chromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, systems based on inducible histones have a lag time after induction before histones are synthesized and incorporated into chromatin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of previous methods.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "a52ae18f-e7b9-489c-8ab7-c23bee96cc8e",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C18",
+      "claim": "Inducible histone systems mainly look at where newly synthesized histones are deposited rather than disruption of existing histones.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, they mainly look at where newly synthesized histones are deposited rather than disruption of existing histones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of previous methods.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "0016e811-46bd-41c4-ba11-0071912aee61",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C19",
+      "claim": "A TET-OFF system examining dissociation of tagged histones has a significant proportion of tagged histone present up to 12 hr after addition of doxycycline, limiting the sensitivity of this technique.",
+      "claim_type": "EXPLICIT",
+      "source": "A TET-OFF system examining dissociation of tagged histones has recently been described although a significant proportion of tagged histone is observed up to 12 hr after addition of doxycycline, limiting the sensitivity of this technique (Ha et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This limitation is stated with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "b80377eb-e944-46a3-be21-b9b01d198520",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C20",
+      "claim": "Metabolic labeling methods such as 'CATCH-IT' are not specific for particular histone variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Metabolic labeling methods such as 'CATCH-IT', on the other hand, are not specific for particular histone variants and have limited resolution at the level of individual genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of metabolic labeling methods.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "a6e6134c-a67b-4a6c-ac31-c027a3dc9fb4",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C21",
+      "claim": "CATCH-IT has limited resolution at the level of individual genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Metabolic labeling methods such as 'CATCH-IT', on the other hand, are not specific for particular histone variants and have limited resolution at the level of individual genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of metabolic labeling methods.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "148659a2-0b1e-4773-a58b-a2e4aa7c4f85",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C22",
+      "claim": "CATCH-IT analyzes incorporation rates rather than existing histones and cannot be employed for long chase times.",
+      "claim_type": "EXPLICIT",
+      "source": "CATCH-IT analyzes incorporation rates rather than existing histones and cannot be employed for long chase times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of CATCH-IT.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "e1e28a70-d92d-456c-bce9-887ce3229f6c",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C23",
+      "claim": "Time-ChIP is based on SNAP technology where histones are tagged with the suicide enzyme SNAP.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-ChIP is based on SNAP technology (Bodor et al., 2012; Keppler et al., 2003), where histones are tagged with the suicide enzyme SNAP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes the basis of time-ChIP with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "b0ee9cf5-e4b4-4bc7-8c38-07596bb76e4d",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C24",
+      "claim": "Pulse labeling with a SNAP-tag specific biotin moiety leads to covalent biotinylation of the SNAP-tagged histone pool.",
+      "claim_type": "EXPLICIT",
+      "source": "Pulse labeling with a SNAP-tag specific biotin moiety leads to covalent biotinylation of the SNAP-tagged histone pool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes the labeling mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "f60ab453-e30b-4aeb-9417-aa8e6f5b575a",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C25",
+      "claim": "Histone dynamics can be determined by following the loss of biotin-labeled histones over time as nucleosomes are disrupted and replaced with nucleosomes comprised of newly synthesized unlabeled histones.",
+      "claim_type": "EXPLICIT",
+      "source": "Histone dynamics can then be determined by following the loss of biotin-labeled histones over time as nucleosomes are disrupted and replaced with nucleosomes comprised of newly synthesized unlabeled histones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes how time-ChIP measures dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "e90507d9-c780-4457-93bc-230f74f1dfe0",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C26",
+      "claim": "Previous studies using SNAP-tagged histones suggest that they are recognized by the correct chaperone proteins and incorporated into chromatin at the appropriate cell cycle stage.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies using SNAP-tagged histones suggest that they are recognized by the correct chaperone proteins and incorporated into chromatin at the appropriate cell cycle stage (Bodor et al., 2013; Dunleavy et al., 2009; Foltz et al., 2009; Jansen et al., 2007; Ray-Gallet et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "f6808a1b-6f04-44d2-bad3-bce0092db1ee",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C27",
+      "claim": "Time-ChIP allows labeling of existing, incorporated histones.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-ChIP allows labeling of existing, incorporated histones, is specific for particular histone variants and allows us to study histone dynamics in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes advantages of time-ChIP.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "92d71c2c-e81c-494b-aba4-22759775f203",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C28",
+      "claim": "Time-ChIP is specific for particular histone variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-ChIP allows labeling of existing, incorporated histones, is specific for particular histone variants and allows us to study histone dynamics in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes advantages of time-ChIP.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "0729b11d-3d82-4a19-bd07-f3e1584a2e2b",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C29",
+      "claim": "Time-ChIP allows study of histone dynamics in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-ChIP allows labeling of existing, incorporated histones, is specific for particular histone variants and allows us to study histone dynamics in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes advantages of time-ChIP.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "d1a1d3a4-5e0b-4a8a-b8ae-3c60c8c1c2d9",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C30",
+      "claim": "Histone H3.3 is deposited independently of replication at places where nucleosomes are disrupted such as promoters, the bodies of active genes, and regulatory elements.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to canonical H3, histone H3.3 is deposited independently of replication at places where nucleosomes are disrupted such as promoters, the bodies of active genes, and regulatory elements (Goldberg et al., 2010; Schwartz and Ahmad, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "4590c09b-bebf-4362-ae45-b14585a831f7",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C31",
+      "claim": "H3.3_SNAP was expressed at low levels relative to total endogenous H3.",
+      "claim_type": "EXPLICIT",
+      "source": "Western blotting showed that H3.3_SNAP was expressed at low levels relative to total endogenous H3 (Figure 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 1A showing the Western blot.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "029beef6-c99b-4aaa-b15c-42823bee757b",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C32",
+      "claim": "H3.3_SNAP was undetectable when blotting was performed using an H3.3-specific antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "and undetectable when blotting was performed using an H3.3-specific antibody (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "09b8e6fe-07f3-452a-ad5e-eed98ef6f8fc",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C33",
+      "claim": "Post-translational modifications were detected on the SNAP-tagged histones.",
+      "claim_type": "EXPLICIT",
+      "source": "Post-translational modifications were detected on the SNAP-tagged histones (Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "087b3dd0-9a3b-444d-a598-30b32c0c0d2a",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C34",
+      "claim": "Decreasing amounts of DNA were recovered over time as biotin labeled H3.3_SNAP was replaced by newly synthesized H3.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, decreasing amounts of DNA were recovered over time as biotin labeled H3.3_SNAP was replaced by newly synthesized H3 (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this expected result and references Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "8122f7d8-a787-4592-bd1a-27bc147a1fce",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C35",
+      "claim": "Later time points in each experiment had fewer fragments associated with tagged histones compared to spike-in fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "Later time points in each experiment had fewer fragments associated with tagged histones compared to spike-in fragments and thus were consistent with the expected overall H3.3 turnover rate in the genome (Figure 1\u2014figure supplement 3 and Materials and methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this observation and references a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "e4d9a04b-a3ef-48b4-9d32-6f3739632b92",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C36",
+      "claim": "H3.3 was enriched at enhancers and the promoters and bodies of active genes.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, H3.3 was enriched at enhancers and the promoters and bodies of active genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this expected finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "284bc631-4214-48f0-8bcc-2a037bc8a594",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C37",
+      "claim": "H3.3 showed high enrichment at transcription termination sites (TTSs).",
+      "claim_type": "EXPLICIT",
+      "source": "H3.3 also showed high enrichment at transcription termination sites (TTSs) (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "c5f27cfe-0be8-44cc-94c5-3591f6791221",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C38",
+      "claim": "The enrichment profiles for the H3.3 0 hr sample correlated well with those generated by performing HA ChIP for transgenic H3.3_SNAP_HA.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure that the biotin labeling of H3.3 was representative of all tagged H3.3, we compared the enrichment profiles for the H3.3 0 hr sample to those generated by performing HA ChIP for transgenic H3.3_SNAP_HA and the two correlated well (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this validation result and references a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "576b1f4c-50e7-4cf2-a6e7-b4817abec1b6",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C39",
+      "claim": "A characteristic MNase digestion pattern was observed consisting of a nucleosome 'depleted' region at the TSS and a well-positioned +1 nucleosome.",
+      "claim_type": "EXPLICIT",
+      "source": "As MNase was used to digest the chromatin, a characteristic MNase digestion pattern was observed consisting of a nucleosome 'depleted' region at the TSS and a well-positioned +1 nucleosome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes the observed pattern.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "937cb460-1645-4f3b-b2d8-aee0677d304e",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C40",
+      "claim": "Labeled H3.3 was lost from TSSs of active genes at an appreciable rate, particularly upstream of the TSS.",
+      "claim_type": "EXPLICIT",
+      "source": "As time progressed, labeled H3.3 was lost from these TSSs at an appreciable rate, particularly upstream of the TSS, as indicated by the fact that the profiles for each time point were well spaced apart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes the observation from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "a243d0e0-a22f-4a37-9702-113512558313",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C41",
+      "claim": "At the TSSs of silent genes, H3.3 was less enriched and the profiles for each time point were closer together indicating slower H3.3 turnover compared to active promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, at the TSSs of silent genes, H3.3 was less enriched and the profiles for each time point were closer together indicating slower H3.3 turnover compared to active promoters (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this comparative finding and references Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "abc7d0c4-43ba-4170-99a9-6a2e183e084c",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C42",
+      "claim": "Fast H3.3 turnover at the TSSs of active genes was evident at the level of individual loci as well as when average behavior was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Fast H3.3 turnover at the TSSs of active genes was evident at the level of individual loci as well as when average behavior was observed (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "51a3cc72-b906-41e4-b686-a0da5f6cf2b9",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C43",
+      "claim": "H3.3 enrichment and rapid turnover was observed at the 3' ends of expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "H3.3 enrichment and rapid turnover was also observed at the 3' ends of expressed genes (Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "513bf191-cee4-4aa3-bacc-6a4f9d918d62",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C44",
+      "claim": "The timeframe for turnover of H3.3_SNAP is concordant with previous estimates based on incorporation of H3.3.",
+      "claim_type": "EXPLICIT",
+      "source": "The timeframe for turnover of H3.3_SNAP is concordant with previous estimates based on incorporation of H3.3 (Kraushaar et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this comparison with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "01d16632-ff77-4ea5-9b60-db4228283e0c",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C45",
+      "claim": "TI calculated for three individual biological replicates correlated well with each other having R values of 0.67\u20130.82.",
+      "claim_type": "EXPLICIT",
+      "source": "We calculated TI for three individual biological replicates and these samples correlated well with each other having R values of 0.67\u20130.82 (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states the correlation values and references a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "cfeb7945-8ecc-412c-ab68-a2ad5a65cd4a",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C46",
+      "claim": "Approximately 77% of the 1000 1 kb bins with the highest H3.3 turnover in ESCs were located in at least one annotated regulatory region.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of these (approximately 77%) were located in at least one annotated regulatory region such as a promoter, gene body, TTS or enhancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this quantitative finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "abb537d6-f4a1-4d64-9d92-0dd98a345cfa",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C47",
+      "claim": "High TI regions were overrepresented at promoters, the 5' end of genes, TTSs, and enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "High TI regions were overrepresented, as compared to the occurrence of the features in the genome, at promoters, the 5' end of genes, TTSs, and enhancers (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "60356a4b-53b5-4c6a-9444-23fe94c4c399",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C48",
+      "claim": "High H3.3 enrichment and TI occurred at TTSs, often at those close to other transcription units.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, high H3.3 enrichment and TI occurred at TTSs, often at those close to other transcription units, (Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "8c579bc6-be97-4c1d-98f2-d3aba0fe3733",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C49",
+      "claim": "High H3.3 enrichment and TI occurred at enhancers and super-enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, high H3.3 enrichment and TI occurred at TTSs, often at those close to other transcription units, (Figure 3B) and at enhancers and super-enhancers (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "4c4862e1-b895-4b04-9030-7ebba4636316",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C50",
+      "claim": "95 of 146 unannotated high TI regions were located within 50 kb of genes robustly expressed (FPKM > 9.5) in ESCs (p-value = 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, 95 of these 146 unannotated regions were located within 50 kb of genes robustly expressed (FPKM > 9.5) in ESCs (p-value = 0.001) suggesting potential regulatory roles for them in ESCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this quantitative finding with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "baea2a99-f8f0-4aa7-bab8-43630badfacd",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C51",
+      "claim": "TI correlated with gene activity and was higher over the promoters, bodies and TTSs of highly expressed genes compared to genes with little or no expression.",
+      "claim_type": "EXPLICIT",
+      "source": "TI in fact did correlate with gene activity and was higher over the promoters, bodies and TTSs of highly expressed genes compared to genes with little or no expression (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this correlation and references Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "7cb1b16c-7e7c-4fb6-81b1-c4a12a7fbccc",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C52",
+      "claim": "ESC enhancers showed particularly high TI values.",
+      "claim_type": "EXPLICIT",
+      "source": "ESC enhancers showed particularly high TI values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "5e036e2e-4723-407a-b67a-ca5e500a7ea7",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C53",
+      "claim": "Super-enhancer constituents showed higher H3.3 TI compared to conventional enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Plotting average TI profiles over conventional ESC enhancers and ESC super-enhancer constituents revealed higher H3.3 TI over the constituent enhancers that make-up super-enhancers domains compared to conventional enhancers despite the fact that these regions are similar in size (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this comparative finding and references Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "b7d4ed69-e5df-4ab7-a43c-a12cba0f0397",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C54",
+      "claim": "When TI was calculated using a smaller 300 bp bin size, exceptionally high H3.3 turnover was still evident at super-enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "When TI was calculated using a smaller 300 bp bin size, exceptionally high H3.3 turnover was still evident at super-enhancers (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding with a different bin size and references a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "290ccca0-8cb6-48b4-9f43-cee71ee03df4",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C55",
+      "claim": "Super-enhancer constituents showed higher H3.1 turnover than conventional enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, super-enhancer constituents showed higher H3.1 turnover than conventional enhancers, consistent with the results for H3.3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this finding for H3.1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "0fb12dab-9d9d-4464-a344-08c4c607b2bc",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C56",
+      "claim": "Heterochromatin does not have H3.3.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterochromatin, the most extensively repressed segment of the genome, does not have H3.3 (Figure 4\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "9d403d77-b2f2-4da8-9a16-47049cb206f6",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C57",
+      "claim": "PcG-bound genes are bound by H3.3 in ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "However Polycomb-Group (PcG) regulated genes are bound by H3.3 in ESCs (Figure 4\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "65ed6087-5584-46ed-8764-88f7a0521240",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C58",
+      "claim": "H3.3 levels at PcG-bound genes were lower than at enhancers and CpG islands.",
+      "claim_type": "EXPLICIT",
+      "source": "although H3.3 levels at these genes were lower than at enhancers and CpG islands (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this comparative finding and references a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "9972f462-73d8-424f-8703-8d06bb704ba2",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C59",
+      "claim": "PcG-bound regions showed slower turnover of H3.3 compared to all CpG islands.",
+      "claim_type": "EXPLICIT",
+      "source": "Measurement of TI at PcG-bound regions revealed slower turnover of H3.3 compared to all CpG islands, the majority of which are associated with active chromatin (Figure 4A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this comparative finding and references Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "cdb4bf32-1b42-4636-a0a9-81a9692c2dfd",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C60",
+      "claim": "PcG-bound TSSs had a TI intermediate between the TSSs of active and silent genes.",
+      "claim_type": "EXPLICIT",
+      "source": "while PcG-bound TSSs had a TI intermediate between the TSSs of active and silent genes (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this comparative finding and references Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "224bddea-cf24-4b97-9cd4-a0e4eea3b20f",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C61",
+      "claim": "The Hoxb locus shows low levels of H3.3 throughout the region with average TI values of 0.03.",
+      "claim_type": "EXPLICIT",
+      "source": "The classical PcG-target, the Hoxb locus shows low levels of H3.3 throughout the region with average TI values of 0.03 (Figure 4C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this quantitative finding for a specific locus and references Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "b875a423-b248-4b37-915b-f0e03efdf729",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C62",
+      "claim": "The active Hnrnpa3 locus shows high levels of H3.3 enrichment and an average TI of 0.14.",
+      "claim_type": "EXPLICIT",
+      "source": "compared to high levels of H3.3 enrichment and an average TI of 0.14 in the active Hnrnpa3 locus (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this quantitative finding for a specific locus and references Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "ae1a8e4d-1ad2-4d2f-9c5e-6ad01ab93a89",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C63",
+      "claim": "Genes that were activated during neural differentiation and lost PcG binding showed a dramatic increase in H3.3 enrichment and TI.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, genes that were activated during neural differentiation and lost PcG binding showed a dramatic increase in H3.3 enrichment and TI (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "fef8c7f5-2f6e-4120-9bc8-8278ed9d7cab",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C64",
+      "claim": "Regions still bound by PcG in NSCs were no longer enriched in H3.3 as they were in ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Regions still bound by PcG in NSCs were no longer enriched in H3.3 as they were in ESCs (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "eb4fbccc-616b-4623-afd0-e33c653c9986",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C65",
+      "claim": "ESC-specific enhancers showed reduced H3.3 and TI in NSCs compared to ESCs but still showed high H3.3 turnover compared to the rest of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "ESC-specific enhancers showed reduced H3.3 and TI in NSCs compared to ESCs but still showed high H3.3 turnover compared to the rest of the genome (Figure 5E and Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this comparative finding and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "2563e436-3e0d-44e1-be52-439480eff78c",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C66",
+      "claim": "The promoters, gene bodies and TTSs of highly expressed genes show high TI in NSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to what we observed in ESCs, the promoters, gene bodies and TTSs of highly expressed genes show high TI in NSCs as did putative NSC enhancers (identified using H3K27ac ChIP-seq data from embryonic brain).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this finding in NSCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "6c4329b3-e2c5-4053-9a6c-f3d51acba944",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C67",
+      "claim": "Average TI values were lower for putative NSC enhancers than those observed for active enhancers in ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Average TI values were lower for putative NSC enhancers than those observed for active enhancers in ESCs (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this comparative finding and references Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "b4a8a9b3-0017-4211-9efa-e2a59bad9aa7",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C68",
+      "claim": "Gene bodies were overrepresented in the NSC set of top TI regions but not in the set of top TI regions in ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, gene bodies were overrepresented in the NSC set but not in the set of top TI regions in ESCs (Figure 5G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this comparative finding and references Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "3c393786-5404-4a4a-be1b-c1b5d1539700",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C69",
+      "claim": "34,070 1 kb bins changed TI during differentiation from ESCs to NSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Using these criteria, 34,070 1 kb bins were identified which changed TI during differentiation (Figure 6A and Supplementary file 3)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this quantitative finding and references Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "835e5fc1-d40f-4a15-8af6-3ad4d864c852",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C70",
+      "claim": "More bins showed increased TI in NSCs compared to ESCs (19,870 bins) than decreased TI (14,200 bins).",
+      "claim_type": "EXPLICIT",
+      "source": "with more bins showing increased TI in NSCs compared to ESCs (19,870 bins compared to 14,200).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this quantitative comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "b2977f74-c6c2-4fc2-8f43-4d3828203f45",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C71",
+      "claim": "Regions showing higher TI in ESCs were enriched for the presence of an ESC enhancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, regions showing higher TI in ESCs were enriched for the presence of an ESC enhancer (Figure 6B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "12e6430c-302b-402d-9ced-4853d72c2a02",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C72",
+      "claim": "Regions with increased TI in NSCs were enriched for NSC enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "and, similarly, regions with increased TI in NSCs were enriched for NSC enhancers (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "252948f0-d076-4c84-9690-769c49e8a214",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C73",
+      "claim": "NSC enhancers were somewhat overrepresented in regions with higher turnover in ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, NSC enhancers were also somewhat overrepresented in regions with higher turnover in ESCs (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "8ac090b9-dfc2-430b-b054-b060bf21a68d",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C74",
+      "claim": "Regions with higher turnover in ESCs were enriched for promoters and the 5' end of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Regions with higher turnover in ESCs were also enriched for promoters and the 5' end of genes",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "2f065875-78ed-4f41-9133-71c78f664bd5",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C75",
+      "claim": "Regions with higher turnover in NSCs showed a greater enrichment of gene bodies.",
+      "claim_type": "EXPLICIT",
+      "source": "while rshowed a greater enrichment of gene bodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "4e222f89-1393-40b4-a6a5-e19e4366f84a",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C76",
+      "claim": "TTSs were overrepresented in both sets of regions changing TI during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In both sets, TTSs were overrepresented (Figure 6B and Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "623730ce-c9b5-461f-b366-eefe3be964e6",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C77",
+      "claim": "8732 of 34,070 TI differences occurred in unannotated regions when regions overlapping UCSC genes were excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed TI differences in unannotated regions; 8732 of 34,070 differences, when regions overlapping UCSC genes were excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this quantitative finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "562f781b-d8ad-4f4a-a912-b13961b41b16",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C78",
+      "claim": "1608 unannotated regions with TI differences are located within 50 kb of a gene changing expression during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by the fact that 1608 of these regions are located within 50 kb of a gene changing expression during differentiation (example in Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this quantitative finding and references Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "8f839a4f-e65f-4f98-977f-9cf07c36e3d0",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C79",
+      "claim": "The intersection between unannotated differences and genes changing expression was statistically significant (p-value = 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "In both instances the intersection between unannotated differences and these genes was statistically significant (p-value = 0.001), consistent with the possibility that these are previously unannotated regulatory regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this statistical finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "ce94b1c1-ebe0-4386-9309-bf41cbffbcbd",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C80",
+      "claim": "TI was high over DNase hypersensitive sites in ESCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined H3.3 turnover over previously annotated DNase hypersensitive sites in mouse ESCs (Vierstra et al., 2014) and found that TI was indeed high over these sites in ESCs (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references a supplementary figure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "58045eb6-6698-41f2-b4d2-8c0c284ff7a2",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C81",
+      "claim": "TI over ESC DNase sensitive regions was reduced in NSCs consistent with regulatory changes during differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "TI over ESC DNase sensitive regions was reduced in NSCs consistent with regulatory changes during differentiation (Figure 7\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding and references a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "ee04b131-c7f2-42f3-94fa-24124fc95334",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C82",
+      "claim": "At the TSSs of genes that change expression upon neural differentiation, TI and MACC were positively correlated in a cell-type specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "At the TSSs of genes that change expression upon neural differentiation, TI and MACC were positively correlated in a cell-type specific manner (Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this correlation and references a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "d4578e9f-7c48-4bba-bc2d-3d5d36ed7f3d",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C83",
+      "claim": "In ESCs, at PcG-bound regions, slower turnover and less accessibility (lower MACC) was observed than at enhancers and the TSSs of expressed genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In ESCs, at PcG-bound regions which are expected to be repressed, we observed slower turnover and also saw less accessibility (lower MACC) than enhancers and the TSSs of expressed genes (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this comparative finding and references Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "7df321b5-b215-424c-a599-8b7ddd8eb103",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C84",
+      "claim": "At ESC enhancers, TI and MACC correlated particularly well.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, in ESCs, TI and MACC correlated particularly well at these regions (Figure 7B and Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this correlation and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "c466ef5e-e8cc-4d31-ba04-46e718764d83",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C85",
+      "claim": "Both TI and MACC had values well above the genome average at ESC enhancers in ESCs but not in NSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "When the magnitude of TI and MACC at ESC enhancers was assessed, both had values well above the genome average in ESCs but not in NSCs, consistent with their regulatory role in pluripotent cells (Figure 7C and Figure 7\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this comparative finding and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "7de4567b-2bd7-4675-83e5-1762009092cc",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C86",
+      "claim": "The Oct4/Pou5f1 super-enhancer shows high TI and high MACC in ESCs while both TI and MACC are decreased upon differentiation to NSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the Oct4/Pou5f1 super-enhancer shows high TI and high MACC in ESCs while both TI and MACC are decreased upon differentiation to NSCs (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this finding for a specific locus and references Figure 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "daa347ac-c2bc-48d1-aa54-0db3dc0490ce",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C87",
+      "claim": "At enhancers, increased turnover of nucleosomes might account for increased accessibility to the DNA sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that, at enhancers, increased turnover of nucleosomes might account for increased accessibility to the DNA sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this interpretation of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "28e30533-0f05-4c4a-bcdb-12bebb3034f9",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C88",
+      "claim": "Nucleosomes are frequently disrupted at enhancers regardless of which H3 variant they contain.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are consistent with the notion that nucleosomes must be disrupted in order to allow transcription factor binding and are consistent with increased DNA accessibility at enhancers. Notably, our data suggest that nucleosomes are frequently disrupted at enhancers regardless of which H3 variant they contain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this interpretation based on the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "69d4820b-a3a7-46e7-9309-6eb899528389",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C89",
+      "claim": "Nucleosomes containing H3.3 predominate at enhancers due to the high levels of nucleosome disruption but both H3.1 and H3.3 show rapid turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleosomes containing H3.3 predominate at these regions due to the high levels of nucleosome disruption but both H3.1 and H3.3 show rapid turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this interpretation based on the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "c71bcb1b-d25b-40b8-843f-6995c8566770",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C90",
+      "claim": "Pioneer transcription factors such as Oct4 and Sox2 occupy ESC enhancers and super-enhancers and can bind partial motifs on the nucleosome surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Pioneer transcription factors such as Oct4 and Sox2 occupy these sets of ESC enhancers and super-enhancers and can bind partial motifs on the nucleosome surface (Soufi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "b54eac6d-f8a6-4fac-8615-06947785f0bc",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C91",
+      "claim": "Pioneer transcription factors might contribute to nucleosome turnover, either directly through their binding or by recruiting remodeling complexes that facilitate turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "These factors might contribute to nucleosome turnover, either directly through their binding or by recruiting remodeling complexes that facilitate turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text proposes this as a possible mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "0a2aa269-55f7-4f08-847d-ea0efbf92b82",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C92",
+      "claim": "Transcription through enhancers might contribute to nucleosome turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcription through enhancers might also contribute (Kim et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text proposes this as a possible mechanism with a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "ed7c49aa-1444-47ec-aff1-532766b3ece2",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C93",
+      "claim": "The high turnover at super-enhancers could reflect a synergistic interaction between adjacent enhancer modules, or might indicate that the individual enhancer modules within super-enhancers each have intrinsically high turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "This could reflect a synergistic interaction between adjacent enhancer modules, or might indicate that the individual enhancer modules within super-enhancers each have intrinsically high turnover.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text proposes these as possible explanations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "02a31f10-2ab4-4eb5-a13b-9748562a936c",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C94",
+      "claim": "High histone turnover at enhancers was not limited to ESCs, but was also seen in lineage-committed NSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "High histone turnover at enhancers was not limited to ESCs, but was also seen when we looked at lineage-committed NSCs, indicating that this property is seen both in pluripotent and in differentiated cell lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this finding comparing ESCs and NSCs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "a5d1ddec-0f6d-4603-ab51-652a6af76ba7",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C95",
+      "claim": "Increased turnover in gene bodies might reflect widespread transcriptional activation and consequent histone turnover in differentiated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased turnover in gene bodies might reflect widespread transcriptional activation and consequent histone turnover in differentiated cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text proposes this as a possible explanation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "eaab1734-b125-435c-8516-827047f5ca95",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C96",
+      "claim": "Pluripotent cells might have a plastic chromatin structure at the promoters of genes poised for activation in future lineages, increasing turnover relative to gene bodies at those locations.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, it might be that pluripotent cells have a plastic chromatin structure at the promoters of genes poised for activation in future lineages, increasing turnover relative to gene bodies at those locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text proposes this as an alternative explanation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "ea297190-d4fe-411e-8bc0-6a8870824eb1",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C97",
+      "claim": "Over 20% of the unannotated regions with the largest changes in turnover were located close to genes that changed expression during neural differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this, over 20% of the unannotated regions with the largest changes in turnover were located close to genes that changed expression during neural differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this quantitative finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "efc0843a-1d1f-48fd-8ff9-17c80683e0c6",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C98",
+      "claim": "Regions of high turnover correspond to regions of high DNA accessibility.",
+      "claim_type": "EXPLICIT",
+      "source": "At ESC enhancers, both TI and MACC had high values and the two metrics were highly correlated. Similarly at the TSSs of expressed genes, TI and MACC had higher than average values while at repressed PcG targets both turnover and accessibility were reduced. These data thus cross validate these two distinct metrics and support the hypothesis that regions of high turnover correspond to regions of high DNA accessibility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this conclusion based on the correlation data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "0db6ba32-f0c1-4459-9b52-cd1d2e101765",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C99",
+      "claim": "Previous work showed high incorporation rates for histone H3.3 and high turnover for that histone in enhancers and other regulatory regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work and previous work are consistent in showing high incorporation rates for histone H3.3 and high turnover for that histone in enhancers and other regulatory regions (Ha et al., 2014; Kraushaar et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this consistency with previous work and cites references.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "fee32d1d-0817-4f2c-8530-dbcdcb5eabf8",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C100",
+      "claim": "Enrichment of RNA Pol II and nascent transcription at the 3' end of genes has been reported to be widespread.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, enrichment of RNA Pol II and nascent transcription at the 3' end of genes has been reported to be widespread (Anamika et al., 2012; Core et al., 2008; Rahl et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this with citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "b677f122-6120-45fc-a5f8-1b8cec14d311",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C101",
+      "claim": "Time-ChIP allows examination of relative histone turnover in a genome-wide manner at high resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-ChIP allows examination of relative histone turnover in a genome-wide manner at high resolution, with changes in turnover evident at individual gene loci and regulatory elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this capability of the method.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "d2d4e04f-4e5c-4048-904a-26e207ab7b3f",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C102",
+      "claim": "Labeling of SNAP-tagged histones for time-ChIP takes approximately one hour.",
+      "claim_type": "EXPLICIT",
+      "source": "Labeling of SNAP-tagged histones for time-ChIP takes approximately one hour meaning that very rapid turnover might be missed and consequently turnover underestimated for some regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this technical detail and its implication.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "cf07aafb-9bfa-4883-a3fb-39986d1c763d",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C103",
+      "claim": "Labeling time is relatively short compared to the cell cycle time of ESCs (12 hr) and NSCs (18 hr).",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, labeling time is relatively short compared to the cell cycle time of ESCs (12 hr) and NSCs (18 hr)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states these cell cycle times for comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "a11b3706-a740-4c53-aaef-d013f425544e",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C104",
+      "claim": "Most H3.3 enriched loci are still detectable at the first time point as evidenced by the strong correlation between ChIP for H3.3_SNAP_HA and the H3.3 0 hr time-ChIP sample.",
+      "claim_type": "EXPLICIT",
+      "source": "and most H3.3 enriched loci are still detectable at the first time point as evidenced by the strong correlation between ChIP for H3.3_SNAP_HA and the H3.3 0 hr time-ChIP sample (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The text states this validation and references a supplementary figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "2437050c-c0b1-4fe7-a7ed-247bce1dbc14",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C105",
+      "claim": "Time-ChIP can in theory be applied to study the dynamics of any core histone or histone variant.",
+      "claim_type": "EXPLICIT",
+      "source": "In theory, however, time-ChIP can be applied to study the dynamics of any core histone or histone variant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this potential application.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "b118b9bf-ee8d-4351-b7a6-10011c7b6171",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "claim_id": "C106",
+      "claim": "A comprehensive assessment of H3.1 turnover and that of other broadly distributed histones is currently limited by the depth of sequencing required.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed time-ChIP for H3.1 but a comprehensive assessment of its turnover, and that of other broadly distributed histones, is currently limited by the depth of sequencing required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text states this technical limitation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ff3d7c27-3d7b-44f0-ab39-7e3ceb487a47",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Time-ChIP is a novel method based on SNAP technology that allows quantitative assessment of histone H3.3 turnover genome-wide. The method involves labeling existing SNAP-tagged histones with biotin, following their loss over time, and sequencing the associated DNA. The authors generated ESC lines expressing low levels of H3.3_SNAP and validated that the tagged histone is properly modified and that DNA recovery decreases over time as expected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C23-C25, C27-C29, C31-C35, and C101 collectively establish time-ChIP as a functional method. The Western blot data (C31-C33), DNA recovery time course (C34), spike-in validation (C35), and methodological descriptions (C23-C25, C27-C29) provide converging evidence that the technique works as intended and can measure histone turnover genome-wide at high resolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "143b78b8-5692-470b-893b-4e6b5e58d02b",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "High H3.3 turnover identifies regulatory regions without prior assumptions. Approximately 77% of the 1000 highest TI regions in ESCs overlapped with annotated regulatory elements (promoters, gene bodies, TTSs, enhancers), and 95 of 146 unannotated high TI regions were near highly expressed genes (p=0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C46-C50 demonstrate that time-ChIP can identify regulatory regions de novo. The quantitative overlap data (C46-C47), specific examples (C48-C49), and statistical association with expressed genes (C50) provide strong evidence that high turnover marks functional regulatory elements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "60e73973-921b-4a6e-bf38-d86f3fc618f9",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Enhancers show high H3.3 turnover, with super-enhancers displaying particularly elevated turnover compared to conventional enhancers. Both H3.3 and H3.1 show rapid turnover at enhancers, suggesting nucleosomes are frequently disrupted at these regions regardless of H3 variant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C52-C55, C88-C89 establish that enhancers have high turnover with super-enhancers showing even higher rates. The comparative data for conventional vs. super-enhancers (C53-C54), validation with different bin sizes (C54), and H3.1 data (C55) provide robust support. The interpretation that nucleosomes are disrupted regardless of variant (C88-C89) is well-supported by the H3.1 and H3.3 data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "01f6fd3d-951f-442d-8bed-9f7b030f45c7",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Polycomb-Group (PcG) bound regions show H3.3 enrichment but low turnover in ESCs. PcG-bound TSSs have intermediate TI between active and silent genes. Specific examples include the Hoxb locus (TI=0.03) versus the active Hnrnpa3 locus (TI=0.14).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C56-C62 demonstrate that PcG regions have distinct turnover characteristics. The comparative data showing lower turnover at PcG regions versus active regions (C59-C60), specific locus examples with quantitative TI values (C61-C62), and the observation of H3.3 presence but low turnover (C57-C58) provide consistent evidence for this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "09482da7-8e81-4e67-96e2-8b85a659d42d",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "H3.3 turnover correlates with DNA accessibility as measured by MNase accessibility (MACC). At ESC enhancers, TI and MACC are highly correlated and both show elevated values in ESCs but not NSCs. At PcG-bound regions, both turnover and accessibility are reduced. The Oct4/Pou5f1 super-enhancer exemplifies this correlation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C80-C86, C87, C98 establish a strong correlation between turnover and accessibility. The correlation data at enhancers (C84), cell-type specific patterns (C82, C85), comparative data at different genomic features (C83), specific locus examples (C86), and DNase hypersensitivity validation (C80-C81) provide multiple lines of converging evidence. The interpretation (C87, C98) is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "431eb09d-320e-4e31-96ee-8e4d3c56acf8",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Upon differentiation from ESCs to NSCs, 34,070 1kb bins changed TI, with the majority of changes occurring at enhancers. Regions with higher TI in ESCs were enriched for ESC enhancers, while regions with higher TI in NSCs were enriched for NSC enhancers. TTSs were overrepresented in both sets of changing regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C9, C69-C76 demonstrate widespread changes in turnover during differentiation with enhancers as the primary sites of change. The quantitative data (C69-C70), enrichment analyses showing cell-type specific enhancer associations (C71-C73), and genomic feature distributions (C74-C76) provide strong support for this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "26924675-f4e5-40f8-90a5-6948645db31a",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Active enhancers are unusually dynamic in ESCs, and high histone turnover at enhancers is not limited to ESCs but is also observed in lineage-committed NSCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C94 establish that enhancer dynamics are a general property not limited to pluripotent cells. The observation of high turnover at enhancers in both ESCs and NSCs (C94) supports the broader conclusion about enhancer dynamics (C8). This is supported by the data presented in multiple other claims about enhancer turnover in both cell types.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "c97d7f17-b81c-4b13-bee8-8866b9834045",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "During neural differentiation, genes activated and losing PcG binding show dramatic increases in H3.3 enrichment and TI. Regions remaining PcG-bound in NSCs lose H3.3 enrichment. ESC-specific enhancers show reduced H3.3 and TI in NSCs but still maintain high turnover relative to the genome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C65 describe specific patterns of turnover changes during differentiation. The data on activated genes (C63), PcG-bound regions (C64), and ESC enhancers (C65) are supported by figures showing these patterns and are consistent with the expected biology of differentiation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "acc859ee-ceff-4724-8145-589c7557304e",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "8,732 unannotated regions showed TI differences during differentiation. Of these, 1,608 were within 50kb of genes changing expression (p=0.001), and over 20% of unannotated regions with the largest turnover changes were near genes changing expression, suggesting these may be previously unidentified regulatory regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C79, C97 identify potential novel regulatory regions based on turnover changes. The quantitative data (C77-C78), statistical significance (C79), and percentage near differentially expressed genes (C97) provide evidence that these unannotated regions may have regulatory functions. However, functional validation would strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "0891d82e-c6df-495a-acac-ee9dde470ab7",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Time-ChIP validation shows H3.3 is enriched at enhancers, promoters, gene bodies, and TTSs of active genes. H3.3 is lost rapidly from TSSs of active genes but slowly from silent genes. The 0hr time-ChIP sample correlates well with HA-ChIP (r=0.51), and three biological replicates correlate well (r=0.67-0.82). The turnover timeframe is concordant with previous estimates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C45 provide validation of the time-ChIP method. The enrichment patterns (C36-C37), correlation with independent ChIP method (C38), expected MNase patterns (C39), differential turnover at active vs. silent genes (C40-C42), replicate correlations (C45), and concordance with prior work (C44) collectively validate the technique.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "74830fe9-d51e-4cd2-953f-bc3d86fe422b",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "TI correlates with gene activity, being higher at promoters, bodies, and TTSs of highly expressed genes in both ESCs and NSCs. However, average TI values were lower for putative NSC enhancers than ESC enhancers, and gene bodies were overrepresented in high TI regions in NSCs but not ESCs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51, C66-C68 describe the relationship between turnover and gene expression. The correlation with expression (C51, C66), comparative enhancer data (C67), and differential gene body representation (C68) are supported by the figures. The lower NSC enhancer TI (C67) may reflect technical issues with enhancer annotation rather than biological differences.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "861b28c0-5d60-45dd-945f-f383c49351e7",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Previous methods for measuring histone turnover have limitations: inducible histone systems have lag times and measure deposition rather than disruption; TET-OFF systems have slow kinetics; and CATCH-IT lacks variant specificity, has limited resolution, and cannot be used for long chase times.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C22 describe limitations of prior methods that motivate the development of time-ChIP. These are stated as established knowledge with citations (C19) and represent fair characterizations of the limitations of alternative approaches. This provides appropriate context for the new method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "5d9fc3cb-ca59-4a22-8836-a130418ba983",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Time-ChIP has a labeling time of approximately 1 hour, which is short relative to cell cycle times (12hr for ESCs, 18hr for NSCs) and allows detection of most H3.3 enriched loci. However, very rapid turnover might be underestimated, and comprehensive assessment of broadly distributed histones like H3.1 is limited by sequencing depth requirements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C104, C106 acknowledge technical limitations of time-ChIP. The labeling time (C102), comparison to cell cycle (C103), validation that most loci are detected (C104), and sequencing depth limitation for H3.1 (C106) are appropriately stated. These represent honest assessment of the method's limitations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "6710e840-11d5-4d04-920a-392a869a3f66",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Previous studies suggest SNAP-tagged histones are recognized by correct chaperone proteins and incorporated at appropriate cell cycle stages. H3.3 is deposited independently of replication at sites of nucleosome disruption including promoters, gene bodies, and regulatory elements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26 and C30 cite prior work establishing that SNAP-tagged histones behave normally (C26) and that H3.3 has replication-independent deposition (C30). These are appropriately cited background claims that provide context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    },
+    {
+      "id": "3c6f1aa2-f15a-4b37-b194-feed67c478ea",
+      "content_id": "523ab1bd-6bb1-4618-9b1d-99e2ae8382ef",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors speculate on mechanisms underlying high turnover at enhancers and super-enhancers, including roles for pioneer transcription factors (Oct4, Sox2), transcription through enhancers, synergistic interactions between enhancer modules, and differences in chromatin plasticity between pluripotent and differentiated cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C90-C93, C95-C96 are explicitly speculative (using 'might' and 'could'). While C90 cites that pioneer factors can bind nucleosomes, the mechanistic proposals (C91-C93, C95-C96) are not directly tested in this study. These represent reasonable hypotheses but lack experimental support in the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:08:31.144256Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ad76a130-2475-4c5c-affd-9372506ec486",
+      "result_id": "ff3d7c27-3d7b-44f0-ab39-7e3ceb487a47"
+    },
+    {
+      "claim_id": "e1e28a70-d92d-456c-bce9-887ce3229f6c",
+      "result_id": "ff3d7c27-3d7b-44f0-ab39-7e3ceb487a47"
+    },
+    {
+      "claim_id": "b0ee9cf5-e4b4-4bc7-8c38-07596bb76e4d",
+      "result_id": "ff3d7c27-3d7b-44f0-ab39-7e3ceb487a47"
+    },
+    {
+      "claim_id": "f60ab453-e30b-4aeb-9417-aa8e6f5b575a",
+      "result_id": "ff3d7c27-3d7b-44f0-ab39-7e3ceb487a47"
+    },
+    {
+      "claim_id": "f6808a1b-6f04-44d2-bad3-bce0092db1ee",
+      "result_id": "ff3d7c27-3d7b-44f0-ab39-7e3ceb487a47"
+    },
+    {
+      "claim_id": "92d71c2c-e81c-494b-aba4-22759775f203",
+      "result_id": "ff3d7c27-3d7b-44f0-ab39-7e3ceb487a47"
+    },
+    {
+      "claim_id": "0729b11d-3d82-4a19-bd07-f3e1584a2e2b",
+      "result_id": "ff3d7c27-3d7b-44f0-ab39-7e3ceb487a47"
+    },
+    {
+      "claim_id": "4590c09b-bebf-4362-ae45-b14585a831f7",
+      "result_id": "ff3d7c27-3d7b-44f0-ab39-7e3ceb487a47"
+    },
+    {
+      "claim_id": "029beef6-c99b-4aaa-b15c-42823bee757b",
+      "result_id": "ff3d7c27-3d7b-44f0-ab39-7e3ceb487a47"
+    },
+    {
+      "claim_id": "09b8e6fe-07f3-452a-ad5e-eed98ef6f8fc",
+      "result_id": "ff3d7c27-3d7b-44f0-ab39-7e3ceb487a47"
+    },
+    {
+      "claim_id": "087b3dd0-9a3b-444d-a598-30b32c0c0d2a",
+      "result_id": "ff3d7c27-3d7b-44f0-ab39-7e3ceb487a47"
+    },
+    {
+      "claim_id": "8122f7d8-a787-4592-bd1a-27bc147a1fce",
+      "result_id": "ff3d7c27-3d7b-44f0-ab39-7e3ceb487a47"
+    },
+    {
+      "claim_id": "b677f122-6120-45fc-a5f8-1b8cec14d311",
+      "result_id": "ff3d7c27-3d7b-44f0-ab39-7e3ceb487a47"
+    },
+    {
+      "claim_id": "7531e778-35eb-4ccf-9e19-23baf69ca38f",
+      "result_id": "143b78b8-5692-470b-893b-4e6b5e58d02b"
+    },
+    {
+      "claim_id": "cfeb7945-8ecc-412c-ab68-a2ad5a65cd4a",
+      "result_id": "143b78b8-5692-470b-893b-4e6b5e58d02b"
+    },
+    {
+      "claim_id": "abb537d6-f4a1-4d64-9d92-0dd98a345cfa",
+      "result_id": "143b78b8-5692-470b-893b-4e6b5e58d02b"
+    },
+    {
+      "claim_id": "60356a4b-53b5-4c6a-9444-23fe94c4c399",
+      "result_id": "143b78b8-5692-470b-893b-4e6b5e58d02b"
+    },
+    {
+      "claim_id": "8c579bc6-be97-4c1d-98f2-d3aba0fe3733",
+      "result_id": "143b78b8-5692-470b-893b-4e6b5e58d02b"
+    },
+    {
+      "claim_id": "4c4862e1-b895-4b04-9030-7ebba4636316",
+      "result_id": "143b78b8-5692-470b-893b-4e6b5e58d02b"
+    },
+    {
+      "claim_id": "79de0743-fb2f-40af-87ca-076cb8c9515a",
+      "result_id": "60e73973-921b-4a6e-bf38-d86f3fc618f9"
+    },
+    {
+      "claim_id": "e3e8e91f-1670-47b1-8791-ec864958f48c",
+      "result_id": "60e73973-921b-4a6e-bf38-d86f3fc618f9"
+    },
+    {
+      "claim_id": "7cb1b16c-7e7c-4fb6-81b1-c4a12a7fbccc",
+      "result_id": "60e73973-921b-4a6e-bf38-d86f3fc618f9"
+    },
+    {
+      "claim_id": "5e036e2e-4723-407a-b67a-ca5e500a7ea7",
+      "result_id": "60e73973-921b-4a6e-bf38-d86f3fc618f9"
+    },
+    {
+      "claim_id": "b7d4ed69-e5df-4ab7-a43c-a12cba0f0397",
+      "result_id": "60e73973-921b-4a6e-bf38-d86f3fc618f9"
+    },
+    {
+      "claim_id": "290ccca0-8cb6-48b4-9f43-cee71ee03df4",
+      "result_id": "60e73973-921b-4a6e-bf38-d86f3fc618f9"
+    },
+    {
+      "claim_id": "28e30533-0f05-4c4a-bcdb-12bebb3034f9",
+      "result_id": "60e73973-921b-4a6e-bf38-d86f3fc618f9"
+    },
+    {
+      "claim_id": "69d4820b-a3a7-46e7-9309-6eb899528389",
+      "result_id": "60e73973-921b-4a6e-bf38-d86f3fc618f9"
+    },
+    {
+      "claim_id": "e03f7f96-d199-4a41-80a8-57e39ee3a6c4",
+      "result_id": "01f6fd3d-951f-442d-8bed-9f7b030f45c7"
+    },
+    {
+      "claim_id": "0fb12dab-9d9d-4464-a344-08c4c607b2bc",
+      "result_id": "01f6fd3d-951f-442d-8bed-9f7b030f45c7"
+    },
+    {
+      "claim_id": "9d403d77-b2f2-4da8-9a16-47049cb206f6",
+      "result_id": "01f6fd3d-951f-442d-8bed-9f7b030f45c7"
+    },
+    {
+      "claim_id": "65ed6087-5584-46ed-8764-88f7a0521240",
+      "result_id": "01f6fd3d-951f-442d-8bed-9f7b030f45c7"
+    },
+    {
+      "claim_id": "9972f462-73d8-424f-8703-8d06bb704ba2",
+      "result_id": "01f6fd3d-951f-442d-8bed-9f7b030f45c7"
+    },
+    {
+      "claim_id": "cdb4bf32-1b42-4636-a0a9-81a9692c2dfd",
+      "result_id": "01f6fd3d-951f-442d-8bed-9f7b030f45c7"
+    },
+    {
+      "claim_id": "224bddea-cf24-4b97-9cd4-a0e4eea3b20f",
+      "result_id": "01f6fd3d-951f-442d-8bed-9f7b030f45c7"
+    },
+    {
+      "claim_id": "b875a423-b248-4b37-915b-f0e03efdf729",
+      "result_id": "01f6fd3d-951f-442d-8bed-9f7b030f45c7"
+    },
+    {
+      "claim_id": "b0de2bd9-8e1c-436e-862d-a7ab1a185d35",
+      "result_id": "09482da7-8e81-4e67-96e2-8b85a659d42d"
+    },
+    {
+      "claim_id": "ce94b1c1-ebe0-4386-9309-bf41cbffbcbd",
+      "result_id": "09482da7-8e81-4e67-96e2-8b85a659d42d"
+    },
+    {
+      "claim_id": "58045eb6-6698-41f2-b4d2-8c0c284ff7a2",
+      "result_id": "09482da7-8e81-4e67-96e2-8b85a659d42d"
+    },
+    {
+      "claim_id": "ee04b131-c7f2-42f3-94fa-24124fc95334",
+      "result_id": "09482da7-8e81-4e67-96e2-8b85a659d42d"
+    },
+    {
+      "claim_id": "d4578e9f-7c48-4bba-bc2d-3d5d36ed7f3d",
+      "result_id": "09482da7-8e81-4e67-96e2-8b85a659d42d"
+    },
+    {
+      "claim_id": "7df321b5-b215-424c-a599-8b7ddd8eb103",
+      "result_id": "09482da7-8e81-4e67-96e2-8b85a659d42d"
+    },
+    {
+      "claim_id": "c466ef5e-e8cc-4d31-ba04-46e718764d83",
+      "result_id": "09482da7-8e81-4e67-96e2-8b85a659d42d"
+    },
+    {
+      "claim_id": "7de4567b-2bd7-4675-83e5-1762009092cc",
+      "result_id": "09482da7-8e81-4e67-96e2-8b85a659d42d"
+    },
+    {
+      "claim_id": "daa347ac-c2bc-48d1-aa54-0db3dc0490ce",
+      "result_id": "09482da7-8e81-4e67-96e2-8b85a659d42d"
+    },
+    {
+      "claim_id": "efc0843a-1d1f-48fd-8ff9-17c80683e0c6",
+      "result_id": "09482da7-8e81-4e67-96e2-8b85a659d42d"
+    },
+    {
+      "claim_id": "1ef12ed0-12c1-4e4d-b48b-88b610f801b9",
+      "result_id": "431eb09d-320e-4e31-96ee-8e4d3c56acf8"
+    },
+    {
+      "claim_id": "4afc7996-9f53-4326-844d-2d2ad010b1f1",
+      "result_id": "431eb09d-320e-4e31-96ee-8e4d3c56acf8"
+    },
+    {
+      "claim_id": "3c393786-5404-4a4a-be1b-c1b5d1539700",
+      "result_id": "431eb09d-320e-4e31-96ee-8e4d3c56acf8"
+    },
+    {
+      "claim_id": "835e5fc1-d40f-4a15-8af6-3ad4d864c852",
+      "result_id": "431eb09d-320e-4e31-96ee-8e4d3c56acf8"
+    },
+    {
+      "claim_id": "b2977f74-c6c2-4fc2-8f43-4d3828203f45",
+      "result_id": "431eb09d-320e-4e31-96ee-8e4d3c56acf8"
+    },
+    {
+      "claim_id": "12e6430c-302b-402d-9ced-4853d72c2a02",
+      "result_id": "431eb09d-320e-4e31-96ee-8e4d3c56acf8"
+    },
+    {
+      "claim_id": "252948f0-d076-4c84-9690-769c49e8a214",
+      "result_id": "431eb09d-320e-4e31-96ee-8e4d3c56acf8"
+    },
+    {
+      "claim_id": "8ac090b9-dfc2-430b-b054-b060bf21a68d",
+      "result_id": "431eb09d-320e-4e31-96ee-8e4d3c56acf8"
+    },
+    {
+      "claim_id": "2f065875-78ed-4f41-9133-71c78f664bd5",
+      "result_id": "431eb09d-320e-4e31-96ee-8e4d3c56acf8"
+    },
+    {
+      "claim_id": "4e222f89-1393-40b4-a6a5-e19e4366f84a",
+      "result_id": "431eb09d-320e-4e31-96ee-8e4d3c56acf8"
+    },
+    {
+      "claim_id": "cf5ad64a-5967-4eb4-bfb9-7c21b68995e6",
+      "result_id": "26924675-f4e5-40f8-90a5-6948645db31a"
+    },
+    {
+      "claim_id": "02a31f10-2ab4-4eb5-a13b-9748562a936c",
+      "result_id": "26924675-f4e5-40f8-90a5-6948645db31a"
+    },
+    {
+      "claim_id": "ae1a8e4d-1ad2-4d2f-9c5e-6ad01ab93a89",
+      "result_id": "c97d7f17-b81c-4b13-bee8-8866b9834045"
+    },
+    {
+      "claim_id": "fef8c7f5-2f6e-4120-9bc8-8278ed9d7cab",
+      "result_id": "c97d7f17-b81c-4b13-bee8-8866b9834045"
+    },
+    {
+      "claim_id": "eb4fbccc-616b-4623-afd0-e33c653c9986",
+      "result_id": "c97d7f17-b81c-4b13-bee8-8866b9834045"
+    },
+    {
+      "claim_id": "623730ce-c9b5-461f-b366-eefe3be964e6",
+      "result_id": "acc859ee-ceff-4724-8145-589c7557304e"
+    },
+    {
+      "claim_id": "562f781b-d8ad-4f4a-a912-b13961b41b16",
+      "result_id": "acc859ee-ceff-4724-8145-589c7557304e"
+    },
+    {
+      "claim_id": "8f839a4f-e65f-4f98-977f-9cf07c36e3d0",
+      "result_id": "acc859ee-ceff-4724-8145-589c7557304e"
+    },
+    {
+      "claim_id": "ea297190-d4fe-411e-8bc0-6a8870824eb1",
+      "result_id": "acc859ee-ceff-4724-8145-589c7557304e"
+    },
+    {
+      "claim_id": "e4d9a04b-a3ef-48b4-9d32-6f3739632b92",
+      "result_id": "0891d82e-c6df-495a-acac-ee9dde470ab7"
+    },
+    {
+      "claim_id": "284bc631-4214-48f0-8bcc-2a037bc8a594",
+      "result_id": "0891d82e-c6df-495a-acac-ee9dde470ab7"
+    },
+    {
+      "claim_id": "c5f27cfe-0be8-44cc-94c5-3591f6791221",
+      "result_id": "0891d82e-c6df-495a-acac-ee9dde470ab7"
+    },
+    {
+      "claim_id": "576b1f4c-50e7-4cf2-a6e7-b4817abec1b6",
+      "result_id": "0891d82e-c6df-495a-acac-ee9dde470ab7"
+    },
+    {
+      "claim_id": "937cb460-1645-4f3b-b2d8-aee0677d304e",
+      "result_id": "0891d82e-c6df-495a-acac-ee9dde470ab7"
+    },
+    {
+      "claim_id": "a243d0e0-a22f-4a37-9702-113512558313",
+      "result_id": "0891d82e-c6df-495a-acac-ee9dde470ab7"
+    },
+    {
+      "claim_id": "abc7d0c4-43ba-4170-99a9-6a2e183e084c",
+      "result_id": "0891d82e-c6df-495a-acac-ee9dde470ab7"
+    },
+    {
+      "claim_id": "51a3cc72-b906-41e4-b686-a0da5f6cf2b9",
+      "result_id": "0891d82e-c6df-495a-acac-ee9dde470ab7"
+    },
+    {
+      "claim_id": "513bf191-cee4-4aa3-bacc-6a4f9d918d62",
+      "result_id": "0891d82e-c6df-495a-acac-ee9dde470ab7"
+    },
+    {
+      "claim_id": "01d16632-ff77-4ea5-9b60-db4228283e0c",
+      "result_id": "0891d82e-c6df-495a-acac-ee9dde470ab7"
+    },
+    {
+      "claim_id": "baea2a99-f8f0-4aa7-bab8-43630badfacd",
+      "result_id": "74830fe9-d51e-4cd2-953f-bc3d86fe422b"
+    },
+    {
+      "claim_id": "2563e436-3e0d-44e1-be52-439480eff78c",
+      "result_id": "74830fe9-d51e-4cd2-953f-bc3d86fe422b"
+    },
+    {
+      "claim_id": "6c4329b3-e2c5-4053-9a6c-f3d51acba944",
+      "result_id": "74830fe9-d51e-4cd2-953f-bc3d86fe422b"
+    },
+    {
+      "claim_id": "b4a8a9b3-0017-4211-9efa-e2a59bad9aa7",
+      "result_id": "74830fe9-d51e-4cd2-953f-bc3d86fe422b"
+    },
+    {
+      "claim_id": "aad3fb0e-eb6c-499a-b5df-6d8a4070618a",
+      "result_id": "861b28c0-5d60-45dd-945f-f383c49351e7"
+    },
+    {
+      "claim_id": "a52ae18f-e7b9-489c-8ab7-c23bee96cc8e",
+      "result_id": "861b28c0-5d60-45dd-945f-f383c49351e7"
+    },
+    {
+      "claim_id": "0016e811-46bd-41c4-ba11-0071912aee61",
+      "result_id": "861b28c0-5d60-45dd-945f-f383c49351e7"
+    },
+    {
+      "claim_id": "b80377eb-e944-46a3-be21-b9b01d198520",
+      "result_id": "861b28c0-5d60-45dd-945f-f383c49351e7"
+    },
+    {
+      "claim_id": "a6e6134c-a67b-4a6c-ac31-c027a3dc9fb4",
+      "result_id": "861b28c0-5d60-45dd-945f-f383c49351e7"
+    },
+    {
+      "claim_id": "148659a2-0b1e-4773-a58b-a2e4aa7c4f85",
+      "result_id": "861b28c0-5d60-45dd-945f-f383c49351e7"
+    },
+    {
+      "claim_id": "d2d4e04f-4e5c-4048-904a-26e207ab7b3f",
+      "result_id": "5d9fc3cb-ca59-4a22-8836-a130418ba983"
+    },
+    {
+      "claim_id": "cf07aafb-9bfa-4883-a3fb-39986d1c763d",
+      "result_id": "5d9fc3cb-ca59-4a22-8836-a130418ba983"
+    },
+    {
+      "claim_id": "a11b3706-a740-4c53-aaef-d013f425544e",
+      "result_id": "5d9fc3cb-ca59-4a22-8836-a130418ba983"
+    },
+    {
+      "claim_id": "b118b9bf-ee8d-4351-b7a6-10011c7b6171",
+      "result_id": "5d9fc3cb-ca59-4a22-8836-a130418ba983"
+    },
+    {
+      "claim_id": "e90507d9-c780-4457-93bc-230f74f1dfe0",
+      "result_id": "6710e840-11d5-4d04-920a-392a869a3f66"
+    },
+    {
+      "claim_id": "d1a1d3a4-5e0b-4a8a-b8ae-3c60c8c1c2d9",
+      "result_id": "6710e840-11d5-4d04-920a-392a869a3f66"
+    },
+    {
+      "claim_id": "c71bcb1b-d25b-40b8-843f-6995c8566770",
+      "result_id": "3c6f1aa2-f15a-4b37-b194-feed67c478ea"
+    },
+    {
+      "claim_id": "b54eac6d-f8a6-4fac-8615-06947785f0bc",
+      "result_id": "3c6f1aa2-f15a-4b37-b194-feed67c478ea"
+    },
+    {
+      "claim_id": "0a2aa269-55f7-4f08-847d-ea0efbf92b82",
+      "result_id": "3c6f1aa2-f15a-4b37-b194-feed67c478ea"
+    },
+    {
+      "claim_id": "ed7c49aa-1444-47ec-aff1-532766b3ece2",
+      "result_id": "3c6f1aa2-f15a-4b37-b194-feed67c478ea"
+    },
+    {
+      "claim_id": "a5d1ddec-0f6d-4603-ab51-652a6af76ba7",
+      "result_id": "3c6f1aa2-f15a-4b37-b194-feed67c478ea"
+    },
+    {
+      "claim_id": "eaab1734-b125-435c-8516-827047f5ca95",
+      "result_id": "3c6f1aa2-f15a-4b37-b194-feed67c478ea"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1756 @@
+{
+  "submission": {
+    "id": "7e342f12-0ecb-449b-b7fb-24ead0a8ee1d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:00:04.002658Z",
+    "updated_at": "2025-11-29T23:00:04.002658Z"
+  },
+  "content": [
+    {
+      "id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "submission_id": "7e342f12-0ecb-449b-b7fb-24ead0a8ee1d",
+      "content_type": "manuscript",
+      "content_text": "# Neural signatures of perceptual inference\n\n## Authors\n\n- William Sedley<sup>1</sup> ([ORCID: 0000-0002-9371-0962](https://orcid.org/0000-0002-9371-0962)) \u2020\n- Phillip E Gander<sup>2</sup>\n- Sukhbinder Kumar<sup>1</sup>\n- Christopher K Kovach<sup>2</sup>\n- Hiroyuki Oya<sup>2</sup>\n- Hiroto Kawasaki<sup>2</sup>\n- Matthew A Howard<sup>2</sup>\n- Timothy D Griffiths<sup>1</sup>\n\n### Affiliations\n\n1. Institute of Neuroscience Newcastle University Newcastle upon Tyne United Kingdom\n2. Human Brain Research Laboratory University of Iowa Iowa United States\n3. Wellcome Trust Centre for Neuroimaging University College London London United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nGenerative models, such as predictive coding, posit that perception results from a combination of sensory input and prior prediction, each weighted by its precision (inverse variance), with incongruence between these termed prediction error (deviation from prediction) or surprise (negative log probability of the sensory input). However, direct evidence for such a system, and the physiological basis of its computations, is lacking. Using an auditory stimulus whose pitch value changed according to specific rules, we controlled and separated the three key computational variables underlying perception, and discovered, using direct recordings from human auditory cortex, that surprise due to prediction violations is encoded by local field potential oscillations in the gamma band (>30 Hz), changes to predictions in the beta band (12-30 Hz), and that the precision of predictions appears to quantitatively relate to alpha band oscillations (8-12 Hz). These results confirm oscillatory codes for critical aspects of generative models of perception.\n\n## Introduction\n\nIt has long been apparent that brain responses do not simply represent input from sensory organs, but that they are modulated by context and expectation, giving rise to phenomena such as priming, mismatch negativity and repetition suppression. These can be explained if perceptual systems are based on internal generative models of the environment which are constantly updated based on experience. Predictive coding (Rao and Ballard, 1999) is a popular account of perception, in which internal representations generate predictions about upcoming sensory input, characterised by their mean and precision (inverse variance) (Friston, 2005; Friston and Kiebel, 2009). Sensory information is processed hierarchically, with backward connections conveying predictions, and forward connections conveying violations of these predictions, namely prediction errors. Qualitatively, prediction errors are the mismatch between the prediction and incoming sensory information, but the term is often used without a quantitative definition. One quantitative formulation of prediction error is surprise (Friston and Kiebel, 2009), which is the negative log probability of a sensory event, given the prior prediction. This definition takes into account the precision of predictions, such that the same prediction violation causes greater surprise where predictions are more precise. Prediction errors act to produce changes in predictions, thereby updating and refining internal models of the environment, and reducing subsequent prediction errors. These variables are illustrated in Figure 1. There is substantial overlap between predictive coding and other accounts of perception based on internal generative models (Friston, 2008). The crucial common feature of any generative model of perception is the brain\u2019s use of hidden states to predict observed sensory inputs, thus the methods and findings of this study are applicable to all generative perceptual models.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/11476/elife-11476-fig1-v2.jpg)\n\n**Figure 1.:** The graph displays a schematic probability distribution (solid curve) representing the prior prediction about the fundamental frequency (f) of an upcoming auditory stimulus (ft), where t simply refers to the number or position of the stimulus within a sequence. This prediction is characterised by its mean (\u03bct) and precision (\u03a0t), which is the inverse of its variance (\u03c32). The incongruence between the actual ft and the prediction can be expressed either as a (non-precision-weighted) prediction error (\u03bet), that\u00a0is, the absolute difference from the prediction mean, or as surprise (St), that\u00a0is, the negative log probability of the actual ft value according to the prediction distribution. As a result of a mismatch with bottom up sensory information, the prediction changes (dashed line). The change to the prediction (\u0394\u03bct) is calculated simply as the absolute difference between the old (\u03bct) and new (\u03bct+1) prediction means. Note that the curves on the graph display changing predictions on account of a stimulus (i.e. Bayesian belief updating) as opposed to the more commonly encountered graph in this field of research where the curves indicate the prior prediction, the sensory information and the posterior inference about the individual stimulus (i.e. Bayesian inference).\n\nThe functional unit of neocortex, the canonical microcircuit (Haeusler and Maass, 2007), has recently been interpreted in light of predictive coding models (Bastos et al., 2012), revealing appropriate neuronal properties and internal/external connectivity to carry out the necessary neuronal computations. It is thus hypothesised that superficial cell populations calculate prediction errors, manifest as gamma-band oscillations (>30\u2009Hz), and pass these to higher brain areas, while deep cell populations encode predictions, which manifest as beta band oscillations (12\u201330\u2009Hz) and pass these to lower brain areas (Bastos et al., 2012). The layer-specific separation of higher and lower frequency oscillations (Spaak et al., 2012), and the forward/backward asymmetry of high/low frequency oscillations (Buschman and Miller, 2007; Fontolan et al., 2014; van Kerkoerle et al., 2014, Bastos et al., 2015), are supported by direct evidence. A number of studies have found oscillatory gamma magnitude to correlate with the unexpectedness of incongruence of stimuli (Arnal et al., 2011; Brodski et al., 2015; Todorovic et al., 2011), but it remains unclear exactly what computational variable they represent. While there is a strong case that beta oscillations are involved in top-down neural communication, evidence specifically linking beta oscillations to predictions is presently limited and indirect (Arnal and Giraud, 2012), but includes observations that there is interdependence of gamma and subsequent beta activity in both in\u00a0vivo (Haenschel et al., 2000) and in\u00a0silico (Kopell et al., 2011) studies and that omissions of expected stimuli induce a beta rebound response (Fujioka et al., 2009). An oscillatory correlate of precision, to our knowledge, has not been proposed, though precision might affect the magnitude of gamma responses to prediction violations (Feldman and Friston, 2010). While an oscillatory correlate is possible, a case has been made that neuromodulatory connections alone, for instance from the basal forebrain cholinergic system, may be sufficient to dynamically mediate precision in sensory hierarchies (Feldman and Friston, 2010; Kanai et al., 2015). Direct evidence for correlates of processes inherent in perceptual inference requires being able to quantitatively manipulate predictions during an experiment, which has not so far been achieved.\n\nIn the present study, we sought to dissociate and expose the neural signatures of four key variables in predictive coding and other generative accounts of perception, namely surprise, prediction error, prediction change and prediction precision. Here, prediction error refers to absolute deviation of a sensory event from the mean of the prior prediction (which does not take into account the precision of the prediction). We hypothesised that surprise (over and above prediction error) would correlate with gamma oscillations, and prediction change with beta oscillations. The possibility of an oscillatory code for precision was also explored.\n\n## Results\u00a0and\u00a0discussion\n\nDirect cortical recordings were made from the auditory cortices of three awake humans undergoing invasive monitoring for epilepsy localization, while they listened to a pitch stimulus with a fundamental frequency (usually referred to as \u2018f0\u2019; hereafter just \u2018f\u2019 for clarity) that varied according to simple rules (Figure 2). Local field potential (LFP) data were decomposed using Morlet wavelets, separated into evoked and induced components, and regressed against the four perceptual inference variables of interest which were calculated by Bayes-optimal inversion of the sequence of f values assuming full knowledge of the rules by which they were generated (Figure 2\u2014figure supplements 1 and 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/11476/elife-11476-fig2-v2.jpg)\n\n**Figure 2.:** (A) The stimulus is composed of a series of concatenated segments, differing only in fundamental frequency (f). At any time, a given f population is in effect, characterised by its mean (\u03bc) and standard deviation (\u03c3). For each successive segment, there is a 7/8 chance that that segment\u2019s f value will be randomly drawn from the present population, and a 1/8 chance that the present population will be replaced, with new \u03bc and \u03c3 values drawn from uniform distributions. (B) Example section of stimulus. (Bi) Dots indicate the f values of individual stimulus segments, of 300 ms duration each. Four population changes are apparent. (Bii) Spectrogram of the corresponding stimulus, up to 5 kHz, on a colour scale of -60 to 0 dB relative to the maximum power value. The stimulus power spectrum does not change between segments, and the only difference is the spacing of the harmonics.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11476/elife-11476-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Schematic of the full three-dimensional model space, with dimensions indicating population mean (\u03c3), population standard deviation (\u03c3) and stimulus fundamental frequency (f). To ease computational demands, the model space was discretised. Each point in model space corresponds to the probability of a particular f, given a specific \u03bc and \u03c3, that\u00a0is, P(f|\u03bc,\u03c3). Therefore each column (along the f dimension) gives the probability distribution P(f|\u03bc,\u03c3), and corresponds to the forward model. The planes of the model space, conversely, indicate the probability of each given combination of \u03bc and \u03c3, given a particular f value, that\u00a0is, P(\u03bc,\u03c3|f), or in other words the inverse model. To generate priors based on a series of observed f values, the scalar product of the planes for each of these f values is taken, and the resulting plane scaled to a sum of 1. This plane represents the estimates of the hidden states \u03bc and \u03c3 and is then used to weight the columns of the model space. The weighted model space is averaged into a single column (forward model), and scaled to a sum of 1, thus providing optimal priors on the assumption that the f population does not change. The priors assuming a population change are derived from the same procedure, but with uniform weighting across the model space. The change and no change priors are then weighted according to the probability of a population change, and then summed. The only part of the process not illustrated here is the inference of population changes, determining how many preceding f values form part of the model inversion, which is explained in Equation 2.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11476/elife-11476-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Observed f values from a section of the stimulus (white dots), overlaid on prior predictions (colour scale) based on previous observations of f, using the model inversion scheme.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/11476/elife-11476-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Correlation matrices between instantaneous and time-lagged values of the main regressors. Note the strong instantaneous mutual positive correlations between \u0394f, S and \u0394\u03bc, and the negative correlations between \u03a0 and preceding values of \u0394f, S and \u0394\u03bc.\n\nIn keeping with prior hypotheses, both surprise and prediction error (the latter not taking into account the precision of predictions) were associated with significant gamma band responses in the LFP. We first established which of these variables explained the LFP data better. Figure 3 shows the strong correlation between these variables (A), the explanatory power of each with respect to the LFP data (B), and the unique explanatory power of each after partialling out the other variable (C). The extremely strong correlation between surprise and prediction error (r = 0.92 over 8000 samples) necessitated this partial analysis (C) in order to examine the independent contribution of each variable to the observed LFP data. Both variables correlated positively with gamma magnitude, but surprise showed a stronger correlation in all three subjects. In the partial analysis (C), residual surprise (after partialling out prediction error) correlated positively with gamma magnitude, whereas residual prediction error (after partialling out surprise) showed only a weak negative correlation in two subjects, and no correlation in one subject. At group level, these correlations were significantly different to each other at p<0.01 corrected, thus we concluded that surprise is the better correlate of gamma magnitude, and used this measure for further analysis.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/11476/elife-11476-fig3-v2.jpg)\n\n**Figure 3.:** (A) Correlation between surprise (S) and non-precision-weighted prediction error (\u03be), with each dot indicating an individual stimulus segment and the line indicating a linear regression fit. (B/C) Mean Pearson product moment correlation coefficients (r) between St or \u03bet, and gamma oscillation magnitude (30\u2013100 Hz) in the 90\u2013500 ms period following the onset of stimulus segment t. Regression coefficients were calculated for each time-frequency point, after partialling out the influences of current and preceding/subsequent values of all other regressors, and then averaged across time and frequency; these processing steps diminished the absolute size of the correlation values. In C, the influence of S on \u03be, and \u03be on S, was also partialled out, thus exposing the unique contribution of each variable to explaining the observed neural response. Partial S showed a higher mean correlation, across subjects, with gamma magnitude than partial \u03be (p<0.01).\n\nFigure 4 shows, at group level, the spectrotemporal pattern of induced and evoked oscillations uniquely attributable to each of the three perceptual variables of interest: surprise (S), change in prediction mean (\u0394\u03bc), precision of predictions (\u03a0), as well as the change in f value from one stimulus to the next (\u0394f). The latter measure was not a perceptual variable of interest but was included for comparative purposes as it approximately represents the \u2018pitch onset response\u2019 which is a robust and familiar response in auditory neurophysiology (Griffiths et al., 2010). Data significant at p<0.05 corrected (based on a non-parametric permutation approach [Maris and Oostenveld, 2007]) are shown in the left column of each group, and all data in the right column. Individual subject data are shown in Figure 4\u2014figure supplement 1. As these perceptual variables were highly correlated (Figure 2\u2014figure supplement 3), instantaneously and over time, regression for the main analysis was based on the residuals after partialling out these correlated influences, such that only the unique explanatory contribution of each variable, with respect to the LFP data, was measured. While the correlation values observed were small in absolute terms (Pearson\u2019s r < 0.1), reassuringly these r values were of the same scale of magnitude as those for change in frequency (\u0394f), which represents a robust auditory response. Furthermore, the LFP data variance explained by the entire model (Figure 4\u2014figure supplement 1) was around 1%. In accordance with our hypotheses, surprise (S) correlated positively, across subjects, with gamma oscillations, beginning at around 100 ms from segment onset, and this was significant by 200 ms. Also in accordance with our hypothesis, changes to predictions (\u0394\u03bc) correlated positively with beta oscillations coinciding with the onset of the subsequent stimulus segment (about 100 ms after), which again was significant. Prediction precision (\u03a0) correlated positively with delta-alpha (2\u201312\u2009Hz) frequency oscillations (for the whole 0\u2013300 ms period from segment onset), although this was only significant in the alpha frequency range, and fell slightly below significance in the delta-theta range. Given the strong negative correlation between \u03a0 and the preceding values of S and \u0394f, it seemed likely that the low-frequency correlates of these were being mutually attenuated by the partialisation process. For this reason, and to search for correlates of the commonalities between key variables, we repeated the analyses with only the contemporaneous value of \u0394f being partialled out (Figure 4\u2014figure supplement 3). This analysis found highly significant correlates of precision (\u03a0) in the full delta-alpha range, spanning the previous, current and subsequent segments, but we cannot attribute the delta-theta component to \u03a0 with absolute confidence. To respect the exploratory nature of our search for oscillatory correlates of \u03a0, a further variation of the analysis (Figure 4\u2014figure supplement 4) omitted \u03a0 altogether (including the partialisation of other variables with respect to it). Results were quantitatively stronger (due to reduced partialisation), but qualitatively similar except that S contained a strong negative delta-alpha band correlation coincident with the subsequent stimulus segment. As S for one segment is negatively correlated with \u03a0 of the subsequent segment, it is thus not presently clear how much of this low-frequency correlation is with S (negatively), and how much with \u03a0 (positively). However, given its sole significant association in the main analysis (Figure 4) is with \u03a0, and that a low-frequency correlate of S is not expected based on prior literature, we favour the interpretation that low-frequency oscillations are a correlate of the precision of prior predictions. Evoked results are shown in the right hand sections of Figure 4 plus its figure supplements 3 and 4. Unlike the induced results, there was no qualitative distinction between the timing or frequency profiles of the different variables (this is particularly evident in Figure 4\u2014figure supplement 4). The only significant evoked responses in the main analysis (Figure 4) were to \u0394f and \u0394\u03bc, while S only showed significant evoked correlates when \u03a0 was omitted from the analysis (Figure 4\u2014figure supplement 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/11476/elife-11476-fig4-v2.jpg)\n\n**Figure 4.:** Each plot illustrates the mean Pearson product moment correlation coefficient (r), across stimulus-responsive electrodes and across subjects, between induced oscillatory amplitude, at each time-frequency point, and the regressor of interest, that\u00a0is, a time-frequency \u2018image\u2019 of the oscillatory correlates of a particular perceptual variable. Time is represented on horizontal axes, and frequency on vertical. Dashed lines indicate the division between the previous (t-1), current (t) and subsequent (t+1) stimulus segment (vertical lines), and between frequency bands (horizontal lines). Each row of plots represents one regressor. The left-hand group contains induced correlates, and the right-hand group evoked, with the left-hand column in each group showing data points significant at p<0.05 corrected. Regressors are partialised with respect to each other, such that only the unique contribution of each to explaining the overall oscillatory data is displayed. (A) Spectrotemporal correlates of the three fundamental variables for perceptual inference. Note that the grey area in the upper left plot reflects the spectrotemporal region of interest (ROI) analysis used for correlates of surprise (i.e. >30 Hz). Outside of the ROI analysis, no significant correlates were observed below 30 Hz. (B) The variable \u2018pitch change\u2019 indicates the overall response to a changing stimulus and is included to illustrate the magnitude and time-frequency distribution of a typical and robust auditory response. \u03b4 = delta (0\u20134 Hz), \u03b8 = theta (4\u20138 Hz), \u03b1 = alpha (8\u201312 Hz), \u03b2 = beta (12\u201330 Hz), \u03b3 = gamma (30\u2013100 Hz).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11476/elife-11476-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Notation and conventions are as for Figure 4, except that each column denotes a single subject. All data are displayed, as significance testing was not performed at the individual subject level.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11476/elife-11476-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** This figure shows the total variance explained by the four regressor of interest (applicable to the stimulus segment 0-300\u00a0ms), including both their overlaps and their unique explanatory contributions. The plot shows the mean across electrodes and subjects.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/11476/elife-11476-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** This figure is equivalent in all respects to Figure 4, except that the four regressors have not been partialised with respect to each other, hence results are not only\u00a0limited to the unique explanatory power of each, but also\u00a0include all overlaps between regressors. (A) The three perceptual inference regressors have been partialised only with respect to the contemporaneous pitch change value. (B) The pitch change regressor has been subjected to no partialisation at all.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/11476/elife-11476-fig4-figsupp4-v2.jpg)\n\n**Figure 4\u2014figure supplement 4.:** This figure is equivalent in all respects to Figure 4, except that the analysis it displays does not include prediction precision. Hence, this quantity has not been partialised out of the other regressors. Also, a region-of-interest analysis is no longer applied to correlates of surprise. Note stronger but qualitatively similar gamma correlates of surprise, and beta correlates of precision, but the major difference that surprise is now correlated negatively with low-frequency induced oscillations coincident with the subsequent stimulus segment.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/11476/elife-11476-fig4-figsupp5-v2.jpg)\n\n**Figure 4\u2014figure supplement 5.:** Electrodes used for analysis. White-filled circles each indicate one electrode. All electrodes shown were included in the presented analyses and were selected based on showing significant responses to the experimental stimulus, as described in the Methods section. Top row: lateral surface of the cerebral hemisphere recorded from. Solid black circles mark the insertion point for the Heschl\u2019s gyrus depth electrode. Bottom row: depth electrode contacts used for analysis (white-filled circles), shown in the context of the surface of the superior temporal plane. Depth electrode contacts were positioned along the axis of Heschl\u2019s gyrus. S = superior, I = inferior, A = anterior, P = posterior, M = medial, L = lateral.\n\n![Figure 4\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/11476/elife-11476-fig4-figsupp6-v2.jpg)\n\n**Figure 4\u2014figure supplement 6.:** Distribution of regressor correlations. Each coloured plot represents one subject. Within each plot, the columns represent individual electrodes (positions displayed in A), with the vertical line separating Heschl\u2019s gyrus (HG) from superior temporal gyrus (STG) electrodes. HG electrodes are arranged medial (left) to lateral (right). Rows indicate the four main partial regressors. Colour values indicate the relative similarity between the correlation pattern for that subject/electrode combination and the mean correlation pattern across electrodes and subjects (range -1 to 1). \u0394f = absolute change in f value (octaves) compared to previous, S = surprise, \u0394\u03bc = absolute change in prediction mean (octaves), \u03a0 = precision of prediction.\n\nIn light of the above results, this study provides the first direct demonstration that beta oscillations are involved in updating the content of sensory predictions. We have also found that the precision of predictions is correlated to the magnitude of alpha oscillations, and possibly delta and/or theta also, thereby raising the possibility of an oscillatory mechanism for the control of precision. Interestingly, this correlate of precision was not time-locked to the stimuli (evoked), despite delta-theta oscillations showing strong phase entrainment by stimuli when predicting stimulus timing (Arnal and Giraud, 2012), and the period of the stimulus segments (300 ms) falling within the delta-theta range. Possibilities include that there is an evoked correlate closely shared by both surprise and precision which the present methods are unable to disambiguate, or that this time-locking of low-frequency oscillations is entrained preferentially by low-level stimulus features (such as changes in stimulus power spectrum) as opposed to the higher level feature of temporal pitch employed in the present study. Existing generative accounts of perception have not proposed a specific oscillatory correlate for the precision of predictions in predicting what a sensory stimulus will be. However, the present findings are not without precedent, as theta (4\u20138\u2009Hz) and alpha (8\u201312\u2009Hz) oscillations are implicated in mechanisms to predict when a stimulus will occur, with theta phase aligning to the expected stimulus onset (Arnal and Giraud, 2012), and alpha magnitude has been found to correlate with the probability of a stimulus change occurring (Bauer et al., 2014). Both theta (Canolty et al., 2006) and alpha (Jensen and Mazaheri, 2010) oscillations modulate higher frequency oscillations, through phase-amplitude coupling, and thereby segregating sensory responses into specific temporal windows. There is also antagonism between theta/alpha and beta/gamma oscillation magnitudes (Spaak et al., 2012) which, in the context of a theta/alpha code for precision, might indicate that over coarse time scales neuronal populations alternate between states of precise predictions (with theta/alpha predominating) and states of prediction violation (with beta/gamma predominating). However, the present results would suggest more than simple reciprocal antagonism and reveal the specific computational role of each oscillation type. While an oscillatory code for precision could have far-reaching implications, we must respect the fact that this is a novel finding and thus requires corroboration from additional studies with alternative methodology.\n\nPerhaps most strikingly, we have shown that the key variables theoretically necessary for sensory inference have distinct oscillatory profiles, with little to no overlap between these, which show remarkable consistency across subjects. Furthermore, each oscillatory frequency band correlates with a distinct computational variable. Thus, the present findings may be able to retrospectively aid in the interpretation of a large number of studies examining induced oscillations. As generative accounts of perception are generic across stimulus dimensions and sensory modalities, and perhaps even all of brain function (for instance, if action is understood as a method of resolving prediction errors [Friston et al., 2006]), the applicability of the results may be very broad indeed. The present paradigm is instantly portable to any sensory modality and, given the absence of any training or task requirement, to any species.\n\n## Materials and methods\n\n### Stimulus algorithm\n\nThe basis of the experiment was an algorithm (Figure 2A) in which stimulus segments varied across only one perceptual dimension, and values were drawn randomly from populations, that\u00a0is, Gaussian distributions, each characterised by its mean (\u03bc) and standard deviation (\u03c3). These populations constituted hidden states that were not directly observable, but whose parameters (i.e. \u03bc and \u03c3) could be inferred. The populations were randomly changed according to simple rules, such that subjects could be expected to unconsciously learn these rules in order to minimise uncertainty about upcoming stimuli. The rules were that for each stimulus segment, there was a 7/8 chance that its value would be drawn from the existing population, and a 1/8 chance that a new population would come into effect. Once a new population came into effect, it became the \u2018existing\u2019 population. Each population had its \u03bc and \u03c3 drawn randomly from uniform distributions. The 1/8 transition probability, and the other parameters described below, were chosen in order to maximise the dissociation between the perceptual inference variables under study.\n\n### Auditory implementation of algorithm\n\nThe algorithm was implemented in the auditory domain, with stimuli taking the form of harmonic complexes, containing only unresolved harmonics (by high-pass filtering from 1.8 kHz). Each harmonic had a random phase offset, which was preserved across all segments, stimuli and subjects. The variable dimension was fundamental frequency (f0; hereafter just \u2018f\u2019 for simplicity), which is the major determinant of perceived pitch. Population \u03bc was limited to the range 120\u2013140\u2009Hz, and \u03c3 to the range 1/128\u20131/16 octaves. Stimulus segments were 300 ms in duration and were smoothly concatenated to avoid any transients at the transitions between segments. This was achieved by defining instantaneous frequency at every point in the stimulus, by\u00a0calculating the cumulative sum of this, and then by\u00a0creating harmonics individually in the time domain as follows in Equation 1:\n\n$$\na_{T}=sin(2\\pir+2\\pih\\frac{1}{s}\\sumt=1Tf_{t})\n$$\n\nwhere a is the amplitude of the waveform, T is the current time point (measured in samples), t is all previous time points, r is the random phase offset for the harmonic, h is the number of the harmonic, s is the sampling rate and f is the instantaneous frequency. This procedure was repeated for every harmonic, from below the high-pass to above the Nyquist frequency. To prevent aliasing, the stimulus was generated at 88.2 kHz sampling rate, then downsampled to 44.1 kHz. The segment duration of 300 ms was chosen as the minimum duration that would capture most of the transient response to the onset of pitch within a stimulus, based on previous work (Griffiths et al., 2010). 8000 stimulus segments were presented to each subject, consisting of four blocks of 2000 segments. Blocks were generated by the same rules but were each independently randomly generated. See Figure 2B for an example section of the stimuli.\n\n### Subjects and stimulus delivery\n\nSubjects were three patients undergoing invasive electrode monitoring for localisation of medically refractory epilepsy prior to resective surgery. Subjects were not known to have any major cognitive deficits or clinically significant hearing impairment, and none had lesions in the region of auditory cortex. Informed consent for experimentation was obtained from all subjects, and research procedures were approved by the University of Iowa Institutional Review Board. Stimuli were presented diotically, via insert earphones (ER4B; Etymotic Research, Elk Grove Village, IL) through molds fitted to the subject\u2019s ear, at the loudest comfortable volume. During the experiments, subjects engaged in an irrelevant auditory task to maintain attention, but a specific performance on this task was not required. This task involved detecting a change to the timbre of individual stimulus segments (64 targets over 8000 segments), which was unrelated to their frequencies or underlying population parameters. Subject 1 performed well on the task, and subjects 2 and 3 performed poorly, with high false alarm rates. The first 100 stimulus segments, and 10 segments following each target and false alarm, were removed from analysis.\n\n### Data acquisition and preprocessing\n\nRecordings were made from one hemisphere in each subject (Subjects 1 and 3: right, Subject 2: left). All subjects had an 8-contact depth electrode placed along the axis of Heschl\u2019s gyrus, including anatomically and physiologically\u00a0defined primary auditory cortex, and a subdural grid overlying superior temporal gyrus. Local field potential data were downsampled to 1 kHz, and electrical noise was filtered out. Time-frequency decomposition was performed with Morlet wavelet convolution, oversampled at 2\u2009Hz frequency resolution and 10 ms time resolution, in the time range -300 to 600 ms from segment onset (i.e. spanning previous, current and subsequent segments) and frequency range 2\u2013100\u2009Hz. The upper frequency bound was limited to 100\u2009Hz in light of previous observations of a lack of qualitative response difference to pitch stimuli between the 80\u2013100\u2009Hz range and higher frequencies (Griffiths et al., 2010). The number of cycles per wavelet increased linearly from 1 cycle at 2\u2009Hz to 10 cycles at 100\u2009Hz. The absolute value (i.e. amplitude) of the wavelet coefficients was calculated for artefact rejection purposes, and these were normalised for each frequency (i.e. shifted/scaled to mean 0 and standard deviation 1). For each trial, both the mean (across time and frequency) and maximum normalised amplitude value was recorded, and the frequency histograms of these were plotted. Thresholds for trial rejection were set, by visual inspection, at the upper limit of the normal distribution of responses, beyond which trials were assumed to contain artefacts. After removal of segments at the start of the experiment, following target segments, and with outlying amplitude values, 89, 86 and 87% of segments remained, for the three subjects, respectively. Data were processed for all electrodes either in Heschl\u2019s gyrus or over the superior temporal gyrus. The procedure for selecting electrodes for the final analysis is described later.\n\n### Estimation of perceptual inference variables\n\nIdeal prior predictions, for each stimulus segment were calculated by inverting the algorithm used to generate the frequency values for the stimulus. Human subjects tend to implicitly make near-optimal inferences based on available sensory evidence and past experience (Ernst and Banks, 2002; K\u00f6rding and Wolpert, 2004), but in the present study, all that was assumed was an approximate concordance between the subjects\u2019 actual inferences and the optimal inferences that we modelled. This seems highly probable given the simplicity of the algorithm and its conformation to Gaussian statistics. Prediction calculation was achieved as follows, using a model inversion scheme illustrated in Figure 2\u2014figure supplement 1:\n\nAn example section of the stimulus, along with Bayes optimal prior predictions generated by the above algorithm, are shown in Figure 2\u2014figure supplement 2. As the regressors (the variables calculated above) were highly correlated with each other, both instantaneously and over neighbouring segments (see Figure 2\u2014figure supplement 3), these were partialised with respect to each of the other regressors, and the preceding and subsequent two values of both the other regressors and themselves. This conservative approach removed a lot of explanatory power from these regressors, but was necessary to be able to uniquely attribute observed neural correlates to a specific process. Importantly, the partialisation did not qualitatively alter the results, except in obscuring the distinction between correlates of S and \u0394\u00b5. Non-partialised results are shown in Figure 4\u2014figure supplement 3.\n\n### Correlation analysis\n\nElectrodes were included for further analysis (i.e. included in the averaging process) if they showed a significant response to the stimulus as a whole, based on the single largest response value in time-frequency space. Analysis was based on a 300 ms time window, which was randomly displaced by up to +/- 300 ms for each segment in each permutation (and undisplaced for the actual data) before averaging across segments. The electrodes selected using this procedure are displayed in Figure 4\u2014figure supplement 5. In all subjects, electrodes were included from both primary and non-primary auditory cortex.\n\nFor each partialised regressor, complex time-frequency data were subject to a two-stage regression approach. First, the complex (i.e. with phase data retained) for every electrode-time-frequency point were regressed against it to yield a pair (real and imaginary) of Pearson product moment correlation coefficients (r). The modulus of these constituted the evoked (time-locked) response. To calculate the induced response, the residuals from this regression (i.e. discarding the evoked component) were converted to amplitude (by taking their modulus), and the regression was performed again. All r values were subjected to a Fisher Z transformation prior to further analysis. Inspection of these responses found no qualitative differences between the responses observed in different divisions of auditory cortex, hence the correlations were averaged over electrodes for further analysis. To quantify the distribution of correlation strengths, the pattern, across time and frequency, of induced correlation coefficients for each regressor was averaged across electrodes and subjects. This pattern was used as a filter, in that it was scalar multiplied with the correlation coefficient pattern for each electrode for each subject, then averaged across time and frequency to yield a single correlation value for that electrode/subject combination. These values, for each regressor, for each subject, were divided by the largest absolute correlation value for that regressor, in order to represent relative correlation strengths on a scale of -1 to 1. These correlation values are displayed in Figure 4\u2014figure supplement 6, and show no systematic dissociation between the anatomical distributions of the correlations for the different regressors.\n\nStatistical analyses were all performed using a permutation approach (Maris and Oostenveld, 2007), using 100 permutations (in each of which the experimental parameter of interest was removed through randomization, e.g. by shuffling regressor values across stimulus segments) and a significance threshold of p<0.05 corrected. In each permutation, the statistical measure of interest is calculated, and the largest value within each permutation is added to a null distribution, from which a statistical threshold for significance is set. The measure of interest in this approach varied according to the analysis being performed (see below), and included the values at individual time-frequency points averaged across electrodes, mean values across time and frequency at individual electrodes, and mean values across both time-frequency points and electrodes.\n\nTo compare surprise and prediction error, for each of these regressors, the mean of the correlation coefficients (across time, frequency, electrode and subject) was calculated within the time window 90\u2013500 ms from segment onset and the frequency window 30- 100\u2009Hz. This was performed once with the regressors partialised as previously described (i.e. for current and adjacent values of \u0394f, \u03a0 and \u0394\u00b5), and again with additional partialisation of each regressor with respect to the other. This latter analysis measures the unique contribution of each regressor in explaining the observed data over and above the other, and was the analysis subjected to statistical analysis.\n\nFor the main correlation analysis, significance testing was performed on average correlation values across the three subjects. Points in time-frequency space exceeding the permutation-derived threshold were considered significant. Due to the strong prior hypothesis about gamma oscillations correlating with surprise or prediction error, the statistical analysis was repeated for these regressors but with only frequencies in the gamma range (30\u2013100\u2009Hz) being included in the analysis.\n",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "935b1ce3-9ecc-4fdd-88c0-b2b72be96617",
+      "submission_id": "7e342f12-0ecb-449b-b7fb-24ead0a8ee1d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Andrew J King, University of Oxford , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.11476.016](https://doi.org/10.7554/eLife.11476.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Neural Signatures of Perceptual Inference\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Andrew King as the Reviewing Editor and Eve Marder as the Senior Editor.\n\nThe following individuals involved in review of your submission have agreed to reveal their identity: Jonas Obleser, Luc Arnal and Peter Kok (peer reviewers).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThere is general agreement among the reviewers that this is a carefully performed and potentially influential study of the neural correlates of predictive coding. In particular, the use of human ECoG recordings from human auditory cortex to investigate the local field potential oscillatory signatures of change to prediction, precision of predictions and surprise represents a novel and important extension of previous work in this field.\n\nEssential revisions:\n\nAlthough they are generally enthusiastic about this paper, the reviewers have raised a number of issues that will need to be addressed, most of which relate to statistical/methodological issues, the organization of the manuscript, and to acknowledgement of prior work.\n\n1) The reviewers have pointed out that your claim (Results/Discussion, fourth paragraph) that this study provides the first direct evidence that beta oscillations are involved in updating the content of sensory predictions is incorrect. Previous work on the role of beta oscillations has not been cited: Buschman & Miller (2007) Science 315:1860-1862; Bastos et al., 2014, first published on BioRvix, and subsequently in Neuron (2015) 85:390-401. Similarly, in the second paragraph of the Introduction, it is stated that \"A neural correlate of precision.\u2026 has not been proposed.\" Some proposals about the neural implementation of precision have in fact been made in previous studies; see e.g. Feldman & Friston (2010) Front Hum Neurosci 4:215, and Kanai et al. (2015) Philos trans R Soc Lond B 370(1668).\n\n2) The reviewers (and editors) found it difficult for the reader to navigate through the many (main and supplementary) figures. We suggest that the authors carefully consider some reorganising of the figures and the way the data are presented, as this will likely considerably improve the manuscript. Please take full advantage of eLife formatting of figures and figure supplements.\n\n3) Clarification is needed about when single subject data are being described and when data from the three participants has been combined. While it is crucial to show that your observations are reliable across participants, it is probably not necessary to show single subject response profiles on main figures. You should consider showing the most relevant effects at the group level on main figures while providing single subject effects in supplements to the figures. This would also allow grouping the main findings of each figure into a single one, thereby providing a more synthetic view of the results.\n\n4) You show that the regressors are highly correlated with each other (e.g. prediction error and surprise). While this validates the authors' partialisation approach, the reviewers are concerned that you only show the (tiny) portion of the data that is not shared between regressors. In addition to showing what is specific to each regressor, it would be useful for the reader to know what is shared between those regressors, i.e. in which parts of brain responses reflect common processes.\n\n5) Where average r values are further processed, please confirm that this was only done after prior Fisher z transformation.\n\n6) From point 7 of the explanation of the prediction calculation (subsection \u201cEstimation of perceptual inference variables\u201d), it seems that first population change positions were estimated, before estimating optimal predictions and the other perceptual inference variables. In point 6, it is explained that in order to estimate population change positions, segments up to three trials back were considered, and inferred population changes could be assigned, retroactively, to up to three trials back. Does this mean that the other perceptual inference variables could also be changed retroactively? In other words, when at trial n it was inferred that a population change occurred at trial n-3, were the prediction, precision, surprise and prediction error for trial n-3 affected by this? It seems implausible for a neural surprise response on trial n-3 to be affected by a prediction made during trial n.\n\n7) The reviewers agree that a strong case has been made to link beta and gamma oscillations in auditory cortex to the updating of and the error in predictions, respectively, but are less convinced about the claims made in respect to alpha (or rather alpha-delta) oscillations. The precision effect reported in the alpha band seems rather weak and is hardly visible in Figure 4A. Again, one way to show this more convincingly would be to show the time-frequency map of these effects averaged at the group level and not only the significance. Although appropriately corrected statistics for multiple comparisons are used, it would be more convincing to provide additional information and analyses to backup this finding and support the claim that alpha oscillations encode precision. Otherwise, you should be more circumspect in your conclusions about this link.\n",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e5d1c001-96c2-4f64-b1f8-07290fd5ad57",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C1",
+      "claim": "Predictive coding posits that perception results from a combination of sensory input and prior prediction, each weighted by its precision (inverse variance).",
+      "claim_type": "EXPLICIT",
+      "source": "Generative models, such as predictive coding, posit that perception results from a combination of sensory input and prior prediction, each weighted by its precision (inverse variance), with incongruence between these termed prediction error (deviation from prediction) or surprise (negative log probability of the sensory input).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the theoretical framework of predictive coding, drawing from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "4e42f55e-8fa4-4c29-9018-61e9a2f30c51",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C2",
+      "claim": "Incongruence between sensory input and prior prediction is termed prediction error (deviation from prediction) or surprise (negative log probability of the sensory input).",
+      "claim_type": "EXPLICIT",
+      "source": "Generative models, such as predictive coding, posit that perception results from a combination of sensory input and prior prediction, each weighted by its precision (inverse variance), with incongruence between these termed prediction error (deviation from prediction) or surprise (negative log probability of the sensory input).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This defines key computational terms used in predictive coding theory, based on established theoretical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "a1f92797-4f66-40bc-aad7-4231bef18a45",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C3",
+      "claim": "Surprise due to prediction violations is encoded by local field potential oscillations in the gamma band (>30 Hz) in human auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an auditory stimulus whose pitch value changed according to specific rules, we controlled and separated the three key computational variables underlying perception, and discovered, using direct recordings from human auditory cortex, that surprise due to prediction violations is encoded by local field potential oscillations in the gamma band (>30 Hz), changes to predictions in the beta band (12-30 Hz), and that the precision of predictions appears to quantitatively relate to alpha band oscillations (8-12 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from direct cortical recordings presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "8a3548c4-569c-46b3-9cdf-4bef772a993f",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C4",
+      "claim": "Changes to predictions are encoded in the beta band (12-30 Hz) in human auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an auditory stimulus whose pitch value changed according to specific rules, we controlled and separated the three key computational variables underlying perception, and discovered, using direct recordings from human auditory cortex, that surprise due to prediction violations is encoded by local field potential oscillations in the gamma band (>30 Hz), changes to predictions in the beta band (12-30 Hz), and that the precision of predictions appears to quantitatively relate to alpha band oscillations (8-12 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from direct cortical recordings presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "c1efea9e-a888-4796-9cf4-8e66e5c547c2",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C5",
+      "claim": "The precision of predictions appears to quantitatively relate to alpha band oscillations (8-12 Hz) in human auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Using an auditory stimulus whose pitch value changed according to specific rules, we controlled and separated the three key computational variables underlying perception, and discovered, using direct recordings from human auditory cortex, that surprise due to prediction violations is encoded by local field potential oscillations in the gamma band (>30 Hz), changes to predictions in the beta band (12-30 Hz), and that the precision of predictions appears to quantitatively relate to alpha band oscillations (8-12 Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from direct cortical recordings, though the authors use 'appears to' indicating some uncertainty.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "de6f43b4-3d50-475d-8aa2-2eb458186ba5",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C6",
+      "claim": "Brain responses are modulated by context and expectation, giving rise to phenomena such as priming, mismatch negativity and repetition suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "It has long been apparent that brain responses do not simply represent input from sensory organs, but that they are modulated by context and expectation, giving rise to phenomena such as priming, mismatch negativity and repetition suppression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement draws from established scientific consensus about brain function and perceptual phenomena.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "577aedfa-767e-4eab-a9e0-243899f00e23",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C7",
+      "claim": "Perceptual systems are based on internal generative models of the environment which are constantly updated based on experience.",
+      "claim_type": "EXPLICIT",
+      "source": "These can be explained if perceptual systems are based on internal generative models of the environment which are constantly updated based on experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about how perceptual phenomena can be explained, based on theoretical frameworks.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "db6afee4-5395-4ac6-9e1b-7916a8c2dd7e",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C8",
+      "claim": "In predictive coding, internal representations generate predictions about upcoming sensory input, characterised by their mean and precision (inverse variance).",
+      "claim_type": "EXPLICIT",
+      "source": "Predictive coding (Rao and Ballard, 1999) is a popular account of perception, in which internal representations generate predictions about upcoming sensory input, characterised by their mean and precision (inverse variance) (Friston, 2005; Friston and Kiebel, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the predictive coding framework and is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "202cf122-48eb-4ffa-8b0c-820562cefd31",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C9",
+      "claim": "In predictive coding, backward connections convey predictions, and forward connections convey violations of these predictions (prediction errors).",
+      "claim_type": "EXPLICIT",
+      "source": "Sensory information is processed hierarchically, with backward connections conveying predictions, and forward connections conveying violations of these predictions, namely prediction errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key feature of predictive coding theory, based on established theoretical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "0189b2a1-b04a-4e9b-9f5f-3787abeefe8d",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C10",
+      "claim": "Surprise is the negative log probability of a sensory event, given the prior prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "One quantitative formulation of prediction error is surprise (Friston and Kiebel, 2009), which is the negative log probability of a sensory event, given the prior prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition supported by citation to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "bac61e5e-0a4e-4962-8523-8d5d01488a3e",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C11",
+      "claim": "Surprise takes into account the precision of predictions, such that the same prediction violation causes greater surprise where predictions are more precise.",
+      "claim_type": "EXPLICIT",
+      "source": "This definition takes into account the precision of predictions, such that the same prediction violation causes greater surprise where predictions are more precise.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the mathematical properties of surprise as a measure, based on theoretical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "57bea64f-9c35-4ca7-8792-c9373b8973cf",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C12",
+      "claim": "Prediction errors act to produce changes in predictions, thereby updating and refining internal models of the environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Prediction errors act to produce changes in predictions, thereby updating and refining internal models of the environment, and reducing subsequent prediction errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key mechanism in predictive coding theory, based on established theoretical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "d36adde8-73b1-450b-8967-46a459337b85",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C13",
+      "claim": "The canonical microcircuit has neuronal properties and connectivity appropriate to carry out predictive coding computations.",
+      "claim_type": "EXPLICIT",
+      "source": "The functional unit of neocortex, the canonical microcircuit (Haeusler and Maass, 2007), has recently been interpreted in light of predictive coding models (Bastos et al., 2012), revealing appropriate neuronal properties and internal/external connectivity to carry out the necessary neuronal computations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to relevant literature about neural circuit properties.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "1a016fd8-c6c4-4d22-aa73-3e8704982a38",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C14",
+      "claim": "Superficial cell populations calculate prediction errors, manifest as gamma-band oscillations (>30 Hz), and pass these to higher brain areas.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thus hypothesised that superficial cell populations calculate prediction errors, manifest as gamma-band oscillations (>30 Hz), and pass these to higher brain areas, while deep cell populations encode predictions, which manifest as beta band oscillations (12\u201330 Hz) and pass these to lower brain areas (Bastos et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citation to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "7a84c9b3-0c5b-4c1f-84eb-246cced58072",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C15",
+      "claim": "Deep cell populations encode predictions, which manifest as beta band oscillations (12\u201330 Hz) and pass these to lower brain areas.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thus hypothesised that superficial cell populations calculate prediction errors, manifest as gamma-band oscillations (>30 Hz), and pass these to higher brain areas, while deep cell populations encode predictions, which manifest as beta band oscillations (12\u201330 Hz) and pass these to lower brain areas (Bastos et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citation to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "759f23fe-15fd-489f-b894-420f6a3d271a",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C16",
+      "claim": "Layer-specific separation of higher and lower frequency oscillations is supported by direct evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "The layer-specific separation of higher and lower frequency oscillations (Spaak et al., 2012), and the forward/backward asymmetry of high/low frequency oscillations (Buschman and Miller, 2007; Fontolan et al., 2014; van Kerkoerle et al., 2014, Bastos et al., 2015), are supported by direct evidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to empirical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "afecbdd1-59d5-4628-92a4-cd24d20b3a06",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C17",
+      "claim": "Forward/backward asymmetry of high/low frequency oscillations is supported by direct evidence.",
+      "claim_type": "EXPLICIT",
+      "source": "The layer-specific separation of higher and lower frequency oscillations (Spaak et al., 2012), and the forward/backward asymmetry of high/low frequency oscillations (Buschman and Miller, 2007; Fontolan et al., 2014; van Kerkoerle et al., 2014, Bastos et al., 2015), are supported by direct evidence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to empirical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "046eebe4-8eaf-489c-99a2-3330c4864613",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C18",
+      "claim": "Oscillatory gamma magnitude correlates with the unexpectedness or incongruence of stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of studies have found oscillatory gamma magnitude to correlate with the unexpectedness of incongruence of stimuli (Arnal et al., 2011; Brodski et al., 2015; Todorovic et al., 2011), but it remains unclear exactly what computational variable they represent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to multiple empirical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "61384102-908d-4c3a-95ca-9d313bf7e384",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C19",
+      "claim": "It remains unclear exactly what computational variable gamma oscillations represent in relation to prediction violations.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of studies have found oscillatory gamma magnitude to correlate with the unexpectedness of incongruence of stimuli (Arnal et al., 2011; Brodski et al., 2015; Todorovic et al., 2011), but it remains unclear exactly what computational variable they represent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the state of knowledge in the field based on review of literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "9bba44bf-83f8-46bf-9e84-e4553ce1b428",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C20",
+      "claim": "Evidence specifically linking beta oscillations to predictions is presently limited and indirect.",
+      "claim_type": "EXPLICIT",
+      "source": "While there is a strong case that beta oscillations are involved in top-down neural communication, evidence specifically linking beta oscillations to predictions is presently limited and indirect (Arnal and Giraud, 2012), but includes observations that there is interdependence of gamma and subsequent beta activity in both in vivo (Haenschel et al., 2000) and in silico (Kopell et al., 2011) studies and that omissions of expected stimuli induce a beta rebound response (Fujioka et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an assessment of the state of evidence in the field, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "274c8148-e1a5-4fb0-80d3-e9ed94d733c7",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C21",
+      "claim": "There is interdependence of gamma and subsequent beta activity in both in vivo and in silico studies.",
+      "claim_type": "EXPLICIT",
+      "source": "While there is a strong case that beta oscillations are involved in top-down neural communication, evidence specifically linking beta oscillations to predictions is presently limited and indirect (Arnal and Giraud, 2012), but includes observations that there is interdependence of gamma and subsequent beta activity in both in vivo (Haenschel et al., 2000) and in silico (Kopell et al., 2011) studies and that omissions of expected stimuli induce a beta rebound response (Fujioka et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to specific studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "30dfd8d3-fad9-4fcb-a6a5-d730a9de61a0",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C22",
+      "claim": "Omissions of expected stimuli induce a beta rebound response.",
+      "claim_type": "EXPLICIT",
+      "source": "While there is a strong case that beta oscillations are involved in top-down neural communication, evidence specifically linking beta oscillations to predictions is presently limited and indirect (Arnal and Giraud, 2012), but includes observations that there is interdependence of gamma and subsequent beta activity in both in vivo (Haenschel et al., 2000) and in silico (Kopell et al., 2011) studies and that omissions of expected stimuli induce a beta rebound response (Fujioka et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a specific study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "03d8dcb1-1436-4af1-bb0c-6350edb70c17",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C23",
+      "claim": "An oscillatory correlate of precision has not been proposed prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "An oscillatory correlate of precision, to our knowledge, has not been proposed, though precision might affect the magnitude of gamma responses to prediction violations (Feldman and Friston, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the state of the literature based on the authors' knowledge.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "19d4da6e-77a5-4229-a672-a10d3fc53524",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C24",
+      "claim": "Precision might affect the magnitude of gamma responses to prediction violations.",
+      "claim_type": "EXPLICIT",
+      "source": "An oscillatory correlate of precision, to our knowledge, has not been proposed, though precision might affect the magnitude of gamma responses to prediction violations (Feldman and Friston, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim supported by citation to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "37a242fd-a838-4502-8529-32ba62c903e1",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C25",
+      "claim": "Neuromodulatory connections alone may be sufficient to dynamically mediate precision in sensory hierarchies.",
+      "claim_type": "EXPLICIT",
+      "source": "While an oscillatory correlate is possible, a case has been made that neuromodulatory connections alone, for instance from the basal forebrain cholinergic system, may be sufficient to dynamically mediate precision in sensory hierarchies (Feldman and Friston, 2010; Kanai et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical proposal supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "20505ca4-40d8-456c-9c53-0b27a73716a1",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C26",
+      "claim": "Direct evidence for correlates of processes inherent in perceptual inference requires being able to quantitatively manipulate predictions during an experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct evidence for correlates of processes inherent in perceptual inference requires being able to quantitatively manipulate predictions during an experiment, which has not so far been achieved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about methodological requirements for studying perceptual inference.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "29c8ea66-e1f7-45db-a9d0-f3993d7b5c17",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C27",
+      "claim": "Quantitative manipulation of predictions during an experiment has not been achieved prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct evidence for correlates of processes inherent in perceptual inference requires being able to quantitatively manipulate predictions during an experiment, which has not so far been achieved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the state of the field based on literature review.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "bfedbff9-e758-4615-8ec4-b9f4c49f0174",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C28",
+      "claim": "Direct cortical recordings were made from the auditory cortices of three awake humans undergoing invasive monitoring for epilepsy localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Direct cortical recordings were made from the auditory cortices of three awake humans undergoing invasive monitoring for epilepsy localization, while they listened to a pitch stimulus with a fundamental frequency (usually referred to as 'f0'; hereafter just 'f' for clarity) that varied according to simple rules (Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods and data collection procedures used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "5d42715a-14fd-4a7c-a40c-fc1fffbde3dc",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C29",
+      "claim": "Surprise (over and above prediction error) correlates with gamma oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Both variables correlated positively with gamma magnitude, but surprise showed a stronger correlation in all three subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing correlations in all three subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "19648584-d81f-4cd0-bb3d-e9dc275692b3",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C30",
+      "claim": "Surprise showed a stronger correlation with gamma magnitude than prediction error in all three subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Both variables correlated positively with gamma magnitude, but surprise showed a stronger correlation in all three subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data comparing the two measures across subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "3cf320ae-623c-40c1-a0e0-03d5912c56e2",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C31",
+      "claim": "Residual surprise (after partialling out prediction error) correlated positively with gamma magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "In the partial analysis (C), residual surprise (after partialling out prediction error) correlated positively with gamma magnitude, whereas residual prediction error (after partialling out surprise) showed only a weak negative correlation in two subjects, and no correlation in one subject.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by partial correlation analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "8044310d-e342-4f32-8a02-45440cb7e143",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C32",
+      "claim": "Residual prediction error (after partialling out surprise) showed only a weak negative correlation with gamma magnitude in two subjects, and no correlation in one subject.",
+      "claim_type": "EXPLICIT",
+      "source": "In the partial analysis (C), residual surprise (after partialling out prediction error) correlated positively with gamma magnitude, whereas residual prediction error (after partialling out surprise) showed only a weak negative correlation in two subjects, and no correlation in one subject.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by partial correlation analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "d5ea0510-b4d6-4cf8-8661-538bf6e8ceea",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C33",
+      "claim": "At group level, correlations between surprise and gamma magnitude were significantly different from correlations between prediction error and gamma magnitude at p<0.01 corrected.",
+      "claim_type": "EXPLICIT",
+      "source": "At group level, these correlations were significantly different to each other at p<0.01 corrected, thus we concluded that surprise is the better correlate of gamma magnitude, and used this measure for further analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "7b0079cf-3236-4f73-a43c-830a65cf4d81",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C34",
+      "claim": "Surprise is the better correlate of gamma magnitude compared to prediction error.",
+      "claim_type": "EXPLICIT",
+      "source": "At group level, these correlations were significantly different to each other at p<0.01 corrected, thus we concluded that surprise is the better correlate of gamma magnitude, and used this measure for further analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion inferred from the statistical comparison of the two measures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "d63b0a5f-783e-4234-a97c-8fa0bb2202f0",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C35",
+      "claim": "Surprise correlates positively with gamma oscillations, beginning at around 100 ms from segment onset, and this was significant by 200 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with our hypotheses, surprise (S) correlated positively, across subjects, with gamma oscillations, beginning at around 100 ms from segment onset, and this was significant by 200 ms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "c2df1d3b-ee69-4ff5-956c-27d00a31dc5e",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C36",
+      "claim": "Changes to predictions (\u0394\u03bc) correlate positively with beta oscillations coinciding with the onset of the subsequent stimulus segment (about 100 ms after).",
+      "claim_type": "EXPLICIT",
+      "source": "Also in accordance with our hypothesis, changes to predictions (\u0394\u03bc) correlated positively with beta oscillations coinciding with the onset of the subsequent stimulus segment (about 100 ms after), which again was significant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4 and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "da9d65d9-3e2d-4393-a96b-93d9562ae2f7",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C37",
+      "claim": "Prediction precision (\u03a0) correlates positively with delta-alpha (2\u201312 Hz) frequency oscillations for the whole 0\u2013300 ms period from segment onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Prediction precision (\u03a0) correlated positively with delta-alpha (2\u201312 Hz) frequency oscillations (for the whole 0\u2013300 ms period from segment onset), although this was only significant in the alpha frequency range, and fell slightly below significance in the delta-theta range.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4, though significance was only reached in the alpha range.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "4749ed44-2bc1-458f-b925-5021a905cd71",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C38",
+      "claim": "The correlation between prediction precision and delta-alpha oscillations was only significant in the alpha frequency range.",
+      "claim_type": "EXPLICIT",
+      "source": "Prediction precision (\u03a0) correlated positively with delta-alpha (2\u201312 Hz) frequency oscillations (for the whole 0\u2013300 ms period from segment onset), although this was only significant in the alpha frequency range, and fell slightly below significance in the delta-theta range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical significance of the observed correlations in the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "98031297-f827-4b0a-b125-1a5855a32497",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C39",
+      "claim": "The correlation between prediction precision and delta-theta oscillations fell slightly below significance.",
+      "claim_type": "EXPLICIT",
+      "source": "Prediction precision (\u03a0) correlated positively with delta-alpha (2\u201312 Hz) frequency oscillations (for the whole 0\u2013300 ms period from segment onset), although this was only significant in the alpha frequency range, and fell slightly below significance in the delta-theta range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical significance of the observed correlations in the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "0033867c-8b84-42de-b11a-3a057f6947f5",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C40",
+      "claim": "Low-frequency oscillations are a correlate of the precision of prior predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given its sole significant association in the main analysis (Figure 4) is with \u03a0, and that a low-frequency correlate of S is not expected based on prior literature, we favour the interpretation that low-frequency oscillations are a correlate of the precision of prior predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data based on the pattern of significant results and prior literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "cdddc81a-dd21-4a36-b8c9-25ea3ea348b5",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C41",
+      "claim": "The only significant evoked responses in the main analysis were to \u0394f and \u0394\u03bc.",
+      "claim_type": "EXPLICIT",
+      "source": "The only significant evoked responses in the main analysis (Figure 4) were to \u0394f and \u0394\u03bc, while S only showed significant evoked correlates when \u03a0 was omitted from the analysis (Figure 4\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the pattern of significant results in the evoked response analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "55ff879f-2166-4029-9bc9-4e121d6fb88a",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C42",
+      "claim": "This study provides the first direct demonstration that beta oscillations are involved in updating the content of sensory predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of the above results, this study provides the first direct demonstration that beta oscillations are involved in updating the content of sensory predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "056175f3-af03-4719-a6fa-5c0626cbd72b",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C43",
+      "claim": "The precision of predictions is correlated to the magnitude of alpha oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "We have also found that the precision of predictions is correlated to the magnitude of alpha oscillations, and possibly delta and/or theta also, thereby raising the possibility of an oscillatory mechanism for the control of precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "6b3df6f1-72c1-412e-9bf7-d30b9e352a36",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C44",
+      "claim": "The precision of predictions may be correlated to delta and/or theta oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "We have also found that the precision of predictions is correlated to the magnitude of alpha oscillations, and possibly delta and/or theta also, thereby raising the possibility of an oscillatory mechanism for the control of precision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a tentative conclusion based on data that did not reach full significance in these frequency ranges.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "b2f41c5b-2903-4b91-800f-da96a58b6b0b",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C45",
+      "claim": "The correlate of precision was not time-locked to the stimuli (evoked).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this correlate of precision was not time-locked to the stimuli (evoked), despite delta-theta oscillations showing strong phase entrainment by stimuli when predicting stimulus timing (Arnal and Giraud, 2012), and the period of the stimulus segments (300 ms) falling within the delta-theta range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an observation from the experimental data and compares it to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "32bfecd8-d41e-48d1-bc34-144c39a972a8",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C46",
+      "claim": "Delta-theta oscillations show strong phase entrainment by stimuli when predicting stimulus timing.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this correlate of precision was not time-locked to the stimuli (evoked), despite delta-theta oscillations showing strong phase entrainment by stimuli when predicting stimulus timing (Arnal and Giraud, 2012), and the period of the stimulus segments (300 ms) falling within the delta-theta range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "79d3416a-e643-4b76-87dc-498467c1998f",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C47",
+      "claim": "Theta (4\u20138 Hz) and alpha (8\u201312 Hz) oscillations are implicated in mechanisms to predict when a stimulus will occur.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the present findings are not without precedent, as theta (4\u20138 Hz) and alpha (8\u201312 Hz) oscillations are implicated in mechanisms to predict when a stimulus will occur, with theta phase aligning to the expected stimulus onset (Arnal and Giraud, 2012), and alpha magnitude has been found to correlate with the probability of a stimulus change occurring (Bauer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "0c9f9960-6aac-4269-968c-52463c36239f",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C48",
+      "claim": "Theta phase aligns to the expected stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the present findings are not without precedent, as theta (4\u20138 Hz) and alpha (8\u201312 Hz) oscillations are implicated in mechanisms to predict when a stimulus will occur, with theta phase aligning to the expected stimulus onset (Arnal and Giraud, 2012), and alpha magnitude has been found to correlate with the probability of a stimulus change occurring (Bauer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "b12e2e29-447f-433a-b2bb-7b5eff3041b4",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C49",
+      "claim": "Alpha magnitude correlates with the probability of a stimulus change occurring.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the present findings are not without precedent, as theta (4\u20138 Hz) and alpha (8\u201312 Hz) oscillations are implicated in mechanisms to predict when a stimulus will occur, with theta phase aligning to the expected stimulus onset (Arnal and Giraud, 2012), and alpha magnitude has been found to correlate with the probability of a stimulus change occurring (Bauer et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "8d415208-4604-41cd-994c-c232be7d08be",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C50",
+      "claim": "Theta and alpha oscillations modulate higher frequency oscillations through phase-amplitude coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "Both theta (Canolty et al., 2006) and alpha (Jensen and Mazaheri, 2010) oscillations modulate higher frequency oscillations, through phase-amplitude coupling, and thereby segregating sensory responses into specific temporal windows.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "2a826fa0-ef79-4d9e-9204-3bdd3e2a6d9d",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C51",
+      "claim": "There is antagonism between theta/alpha and beta/gamma oscillation magnitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "There is also antagonism between theta/alpha and beta/gamma oscillation magnitudes (Spaak et al., 2012) which, in the context of a theta/alpha code for precision, might indicate that over coarse time scales neuronal populations alternate between states of precise predictions (with theta/alpha predominating) and states of prediction violation (with beta/gamma predominating).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "8e6884cb-d3c4-407e-9cfd-94de25a0bc24",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C52",
+      "claim": "Neuronal populations may alternate between states of precise predictions (with theta/alpha predominating) and states of prediction violation (with beta/gamma predominating).",
+      "claim_type": "EXPLICIT",
+      "source": "There is also antagonism between theta/alpha and beta/gamma oscillation magnitudes (Spaak et al., 2012) which, in the context of a theta/alpha code for precision, might indicate that over coarse time scales neuronal populations alternate between states of precise predictions (with theta/alpha predominating) and states of prediction violation (with beta/gamma predominating).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the data in light of prior literature.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "19e1f3d0-6a54-4e4f-a695-47ac0edd4444",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C53",
+      "claim": "The key variables theoretically necessary for sensory inference have distinct oscillatory profiles, with little to no overlap between these.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps most strikingly, we have shown that the key variables theoretically necessary for sensory inference have distinct oscillatory profiles, with little to no overlap between these, which show remarkable consistency across subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing distinct frequency profiles for different variables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "52483589-0295-48f0-8de0-3fc8ca852fed",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C54",
+      "claim": "The distinct oscillatory profiles for key perceptual variables show remarkable consistency across subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps most strikingly, we have shown that the key variables theoretically necessary for sensory inference have distinct oscillatory profiles, with little to no overlap between these, which show remarkable consistency across subjects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data across the three subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "c4677b1a-71d0-4ad0-be71-f37508ffd338",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C55",
+      "claim": "Each oscillatory frequency band correlates with a distinct computational variable.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, each oscillatory frequency band correlates with a distinct computational variable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing frequency-specific correlations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "b8f28d38-7cc7-4bb9-a2be-69ed4712813a",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C56",
+      "claim": "Generative accounts of perception are generic across stimulus dimensions and sensory modalities.",
+      "claim_type": "EXPLICIT",
+      "source": "As generative accounts of perception are generic across stimulus dimensions and sensory modalities, and perhaps even all of brain function (for instance, if action is understood as a method of resolving prediction errors [Friston et al., 2006]), the applicability of the results may be very broad indeed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the theoretical scope of generative models, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "ee36d533-c9d1-40c2-913e-299df68b6341",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C57",
+      "claim": "Action can be understood as a method of resolving prediction errors.",
+      "claim_type": "EXPLICIT",
+      "source": "As generative accounts of perception are generic across stimulus dimensions and sensory modalities, and perhaps even all of brain function (for instance, if action is understood as a method of resolving prediction errors [Friston et al., 2006]), the applicability of the results may be very broad indeed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical proposal supported by citation to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "14e27752-bcf5-4cb1-ae1f-6e11ae283b52",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C58",
+      "claim": "The present paradigm is instantly portable to any sensory modality.",
+      "claim_type": "EXPLICIT",
+      "source": "The present paradigm is instantly portable to any sensory modality and, given the absence of any training or task requirement, to any species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the generalizability of the experimental paradigm.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "e067cdc8-2b50-45d9-b4b6-08d5988e1577",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C59",
+      "claim": "The present paradigm is portable to any species given the absence of any training or task requirement.",
+      "claim_type": "EXPLICIT",
+      "source": "The present paradigm is instantly portable to any sensory modality and, given the absence of any training or task requirement, to any species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the generalizability of the experimental paradigm.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "533fff8b-8f09-4f5b-bc23-3190e982ffef",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C60",
+      "claim": "For each stimulus segment, there was a 7/8 chance that its value would be drawn from the existing population, and a 1/8 chance that a new population would come into effect.",
+      "claim_type": "EXPLICIT",
+      "source": "The rules were that for each stimulus segment, there was a 7/8 chance that its value would be drawn from the existing population, and a 1/8 chance that a new population would come into effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the algorithm used to generate the experimental stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "503f0418-914a-47d9-89b8-0e2f251f8ae9",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C61",
+      "claim": "The stimulus was implemented using harmonic complexes containing only unresolved harmonics (by high-pass filtering from 1.8 kHz).",
+      "claim_type": "EXPLICIT",
+      "source": "The algorithm was implemented in the auditory domain, with stimuli taking the form of harmonic complexes, containing only unresolved harmonics (by high-pass filtering from 1.8 kHz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the acoustic properties of the experimental stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "7edc2d5f-33d7-47d4-a642-9a6169c5a5d0",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C62",
+      "claim": "Population \u03bc was limited to the range 120\u2013140 Hz, and \u03c3 to the range 1/128\u20131/16 octaves.",
+      "claim_type": "EXPLICIT",
+      "source": "Population \u03bc was limited to the range 120\u2013140 Hz, and \u03c3 to the range 1/128\u20131/16 octaves.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the parameters used in generating the experimental stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "e1cc7ae3-444c-4099-9140-b653ac726bb4",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C63",
+      "claim": "Stimulus segments were 300 ms in duration.",
+      "claim_type": "EXPLICIT",
+      "source": "Stimulus segments were 300 ms in duration and were smoothly concatenated to avoid any transients at the transitions between segments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the temporal structure of the experimental stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "b4fa4155-8d1f-4cd0-8120-157ba1222204",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C64",
+      "claim": "The segment duration of 300 ms was chosen as the minimum duration that would capture most of the transient response to the onset of pitch within a stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "The segment duration of 300 ms was chosen as the minimum duration that would capture most of the transient response to the onset of pitch within a stimulus, based on previous work (Griffiths et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the rationale for the stimulus duration, based on prior literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "02e8165f-63bd-46cb-93a1-76cb8ad218ca",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C65",
+      "claim": "8000 stimulus segments were presented to each subject, consisting of four blocks of 2000 segments.",
+      "claim_type": "EXPLICIT",
+      "source": "8000 stimulus segments were presented to each subject, consisting of four blocks of 2000 segments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design and number of trials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "ffb1ad5c-bf96-448c-a2d5-c595f8b3d7f1",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C66",
+      "claim": "Subjects were three patients undergoing invasive electrode monitoring for localisation of medically refractory epilepsy prior to resective surgery.",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects were three patients undergoing invasive electrode monitoring for localisation of medically refractory epilepsy prior to resective surgery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the participant population for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "5ef5ecd0-7db9-4fb4-a834-0359bc7fb2b3",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C67",
+      "claim": "Subjects were not known to have any major cognitive deficits or clinically significant hearing impairment.",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects were not known to have any major cognitive deficits or clinically significant hearing impairment, and none had lesions in the region of auditory cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the inclusion criteria for the study participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "a99318f7-bc45-4967-a5fa-9786e91a616f",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C68",
+      "claim": "None of the subjects had lesions in the region of auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects were not known to have any major cognitive deficits or clinically significant hearing impairment, and none had lesions in the region of auditory cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the inclusion criteria for the study participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "37fb5d37-cf5d-4d96-a6a7-b93628fc9fff",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C69",
+      "claim": "During the experiments, subjects engaged in an irrelevant auditory task to maintain attention.",
+      "claim_type": "EXPLICIT",
+      "source": "During the experiments, subjects engaged in an irrelevant auditory task to maintain attention, but a specific performance on this task was not required.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used to maintain subject attention.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "2710b97a-98fd-423f-92f6-4bda8b042f5a",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C70",
+      "claim": "The attention task involved detecting a change to the timbre of individual stimulus segments (64 targets over 8000 segments).",
+      "claim_type": "EXPLICIT",
+      "source": "This task involved detecting a change to the timbre of individual stimulus segments (64 targets over 8000 segments), which was unrelated to their frequencies or underlying population parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the attention task used in the experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "1b350f26-944e-4b89-b017-1acb36477518",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C71",
+      "claim": "All subjects had an 8-contact depth electrode placed along the axis of Heschl's gyrus, including anatomically and physiologically defined primary auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "All subjects had an 8-contact depth electrode placed along the axis of Heschl's gyrus, including anatomically and physiologically defined primary auditory cortex, and a subdural grid overlying superior temporal gyrus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the electrode placement for data recording.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "f47f1e88-48ec-4a5f-9056-b422d231f871",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C72",
+      "claim": "All subjects had a subdural grid overlying superior temporal gyrus.",
+      "claim_type": "EXPLICIT",
+      "source": "All subjects had an 8-contact depth electrode placed along the axis of Heschl's gyrus, including anatomically and physiologically defined primary auditory cortex, and a subdural grid overlying superior temporal gyrus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the electrode placement for data recording.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "d2c2b945-a00b-4edb-bee8-26341978ebb2",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C73",
+      "claim": "Local field potential data were downsampled to 1 kHz.",
+      "claim_type": "EXPLICIT",
+      "source": "Local field potential data were downsampled to 1 kHz, and electrical noise was filtered out.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data preprocessing procedures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "4fa0595a-79c9-43a3-83fa-0745b09b3672",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C74",
+      "claim": "Time-frequency decomposition was performed with Morlet wavelet convolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-frequency decomposition was performed with Morlet wavelet convolution, oversampled at 2 Hz frequency resolution and 10 ms time resolution, in the time range -300 to 600 ms from segment onset (i.e. spanning previous, current and subsequent segments) and frequency range 2\u2013100 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "b0cc1516-9b0a-4b97-9cbe-0ae67ff45658",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C75",
+      "claim": "The number of cycles per wavelet increased linearly from 1 cycle at 2 Hz to 10 cycles at 100 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of cycles per wavelet increased linearly from 1 cycle at 2 Hz to 10 cycles at 100 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the wavelet parameters used in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "515ccbe5-f1f9-4b6d-a250-fdb835bba4c5",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C76",
+      "claim": "The upper frequency bound was limited to 100 Hz in light of previous observations of a lack of qualitative response difference to pitch stimuli between the 80\u2013100 Hz range and higher frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "The upper frequency bound was limited to 100 Hz in light of previous observations of a lack of qualitative response difference to pitch stimuli between the 80\u2013100 Hz range and higher frequencies (Griffiths et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the rationale for the frequency range analyzed, based on prior literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "589f10ea-d1be-4d1f-ab90-2941792e5519",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C77",
+      "claim": "After removal of segments at the start of the experiment, following target segments, and with outlying amplitude values, 89, 86 and 87% of segments remained for the three subjects, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "After removal of segments at the start of the experiment, following target segments, and with outlying amplitude values, 89, 86 and 87% of segments remained, for the three subjects, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data retention after artifact rejection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "7556a7f6-6673-42f4-9ecc-1b3f786f8858",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C78",
+      "claim": "Human subjects tend to implicitly make near-optimal inferences based on available sensory evidence and past experience.",
+      "claim_type": "EXPLICIT",
+      "source": "Human subjects tend to implicitly make near-optimal inferences based on available sensory evidence and past experience (Ernst and Banks, 2002; K\u00f6rding and Wolpert, 2004), but in the present study, all that was assumed was an approximate concordance between the subjects' actual inferences and the optimal inferences that we modelled.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior literature on human perceptual inference.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "654304fb-fd3b-4e44-90a8-d5e29aee518d",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C79",
+      "claim": "The regressors were highly correlated with each other, both instantaneously and over neighbouring segments.",
+      "claim_type": "EXPLICIT",
+      "source": "As the regressors (the variables calculated above) were highly correlated with each other, both instantaneously and over neighbouring segments (see Figure 2\u2014figure supplement 3), these were partialised with respect to each of the other regressors, and the preceding and subsequent two values of both the other regressors and themselves.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a property of the experimental variables, shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "adcb2e95-2349-4719-8d3a-6b4665e2d408",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C80",
+      "claim": "Partialisation did not qualitatively alter the results, except in obscuring the distinction between correlates of S and \u0394\u00b5.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the partialisation did not qualitatively alter the results, except in obscuring the distinction between correlates of S and \u0394\u00b5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the effect of the statistical analysis approach on the results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "827b0d04-ad2f-4967-a55f-17c0ec79a1c7",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C81",
+      "claim": "Electrodes were included for analysis if they showed a significant response to the stimulus as a whole, based on the single largest response value in time-frequency space.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrodes were included for further analysis (i.e. included in the averaging process) if they showed a significant response to the stimulus as a whole, based on the single largest response value in time-frequency space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the electrode selection criteria for the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "a41d1ff2-39a1-4265-9e31-fc20f9c18094",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C82",
+      "claim": "In all subjects, electrodes were included from both primary and non-primary auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In all subjects, electrodes were included from both primary and non-primary auditory cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the anatomical distribution of electrodes included in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "b6fb9b36-9b90-4f1d-b789-22fc621865ae",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C83",
+      "claim": "Inspection of responses found no qualitative differences between the responses observed in different divisions of auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspection of these responses found no qualitative differences between the responses observed in different divisions of auditory cortex, hence the correlations were averaged over electrodes for further analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an observation from the data analysis regarding anatomical specificity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "6d7fd6b1-7b47-41ec-94ae-0f987c785b36",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C84",
+      "claim": "Statistical analyses were all performed using a permutation approach using 100 permutations and a significance threshold of p<0.05 corrected.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistical analyses were all performed using a permutation approach (Maris and Oostenveld, 2007), using 100 permutations (in each of which the experimental parameter of interest was removed through randomization, e.g. by shuffling regressor values across stimulus segments) and a significance threshold of p<0.05 corrected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "00972e0c-baa1-4566-af71-036afb0db8ec",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C85",
+      "claim": "Surprise and prediction error were extremely strongly correlated (r = 0.92 over 8000 samples).",
+      "claim_type": "EXPLICIT",
+      "source": "The extremely strong correlation between surprise and prediction error (r = 0.92 over 8000 samples) necessitated this partial analysis (C) in order to examine the independent contribution of each variable to the observed LFP data.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a quantitative relationship between two variables in the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "9217b66f-c0f2-4f9d-b11c-6b1ed79d0336",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C86",
+      "claim": "The correlation values observed were small in absolute terms (Pearson's r < 0.1).",
+      "claim_type": "EXPLICIT",
+      "source": "While the correlation values observed were small in absolute terms (Pearson's r < 0.1), reassuringly these r values were of the same scale of magnitude as those for change in frequency (\u0394f), which represents a robust auditory response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the magnitude of correlations observed in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "6aabc469-0fb3-40f4-b005-a72114ca9cbb",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C87",
+      "claim": "The correlation values for the perceptual variables were of the same scale of magnitude as those for change in frequency (\u0394f), which represents a robust auditory response.",
+      "claim_type": "EXPLICIT",
+      "source": "While the correlation values observed were small in absolute terms (Pearson's r < 0.1), reassuringly these r values were of the same scale of magnitude as those for change in frequency (\u0394f), which represents a robust auditory response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This provides context for interpreting the magnitude of the observed correlations by comparison to a known robust response.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "94fbc215-0eaa-4963-b04b-ed789b5030cf",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "claim_id": "C88",
+      "claim": "The LFP data variance explained by the entire model was around 1%.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the LFP data variance explained by the entire model (Figure 4\u2014figure supplement 1) was around 1%.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the overall explanatory power of the model, shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1add7dee-2f9e-44b7-aac0-bd5c710c0ea1",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the theoretical framework of predictive coding, defining key computational variables including predictions (characterized by mean and precision), prediction errors, and surprise (negative log probability weighted by precision). These definitions form the conceptual foundation for the experimental work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C8-C12 collectively describe well-established theoretical concepts in predictive coding, supported by appropriate citations to foundational literature (Rao and Ballard 1999; Friston 2005, 2009). These are standard definitions in the field and provide necessary background.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "b1cf85fd-d379-4842-8348-cf3e654e8072",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript reviews prior evidence for predictive coding mechanisms in neural circuits, including the canonical microcircuit interpretation and hypothesized frequency-specific oscillatory codes. Layer-specific frequency separation and forward/backward asymmetry are supported by direct evidence from prior studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, C13, C16-C17 accurately summarize established findings from cited literature. Claims C14-C15 are explicitly labeled as hypotheses from Bastos et al. 2012, appropriately distinguishing speculation from established fact. The review of prior work is accurate and well-supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "854c8420-9e2d-49f1-bd1d-49014ccf750d",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The manuscript identifies gaps in prior knowledge: while gamma oscillations correlate with stimulus unexpectedness, the specific computational variable is unclear; evidence linking beta to predictions is limited and indirect; no oscillatory correlate of precision has been proposed; and quantitative manipulation of predictions has not been achieved.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C27 accurately characterize the state of the field based on cited literature, appropriately distinguishing between established findings (C18, C21-C22), limitations (C19-C20), and gaps (C23, C27). These assessments provide clear motivation for the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "c4b32819-9d61-4f8f-9928-3f72dd9e56e8",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The experimental design used direct cortical recordings from three epilepsy patients listening to pitch stimuli that varied according to a probabilistic algorithm (7/8 chance same population, 1/8 chance new population), with 300 ms segments and 8000 total trials per subject. Subjects performed an irrelevant attention task.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28, C60-C72 describe the experimental methods in detail. The design is clearly specified and appropriate for the research question. The use of epilepsy patients is standard for intracranial recordings, and inclusion criteria (C67-C68) are appropriate. Sample size (n=3) is typical but limited for this type of study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "afe4f440-72dd-4a19-b34f-920fe20eb391",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Data preprocessing and analysis methods included downsampling to 1 kHz, Morlet wavelet decomposition (2-100 Hz), artifact rejection retaining 86-89% of segments, electrode selection based on stimulus responsiveness, and permutation-based statistics (100 permutations, p<0.05 corrected).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C77, C81-C84 describe standard preprocessing methods. However, critical concerns include: only 100 permutations (typically 1000+ recommended), no specification of multiple comparison correction method details, and electrode selection based on 'single largest response value' which could introduce bias. The low number of permutations undermines statistical rigor.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "3fa52297-cd02-4a46-9999-68065d711970",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The analysis assumed subjects make near-optimal Bayesian inferences, allowing calculation of ideal predictions by inverting the stimulus generation algorithm. Regressors were highly correlated (shown in Figure 2\u2014supplement 3), necessitating partialization that did not qualitatively alter results except for obscuring S vs \u0394\u03bc distinction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C78's assumption of near-optimal inference is reasonable but unvalidated in this study. Claims C79-C80 acknowledge high regressor correlation and describe partialization, but C80's statement that partialization 'did not qualitatively alter results' contradicts the need for extensive supplementary analyses (Figures 4-supplements 3-4) showing different patterns. This methodological choice significantly impacts interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "feb4eb55-d381-49ae-9273-239ab8a74126",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Surprise showed stronger correlation with gamma magnitude than prediction error across all three subjects. In partial correlation analysis controlling for the other variable, residual surprise correlated positively with gamma while residual prediction error showed weak negative or no correlation. The difference was significant at p<0.01 corrected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C34, C85 present a clear comparison between surprise and prediction error as correlates of gamma oscillations. The extremely high correlation between these variables (r=0.92, C85) necessitated partial correlation analysis, which was appropriately conducted. Results consistently favor surprise across subjects with reported statistical significance, though the small sample size (n=3) limits generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "79e7e719-ff20-49f7-b0c8-1af8cd45f708",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Surprise due to prediction violations is encoded by gamma band (>30 Hz) oscillations in human auditory cortex, with correlations beginning around 100 ms and significant by 200 ms. Correlation values were small (r<0.1) but comparable to the robust pitch change response, with the full model explaining ~1% of LFP variance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C3, C35 report the main gamma-surprise finding, supported by data in Figure 4. However, C86-C88 reveal critical limitations: extremely small effect sizes (r<0.1), only ~1% variance explained, and the justification that these are 'comparable' to pitch change response (C87) is circular reasoning. While statistically significant, the biological/functional significance of such small effects is questionable. Replication with larger samples is needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "fff6c7c0-a93c-4afa-b3e6-87486f03e374",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Changes to predictions (\u0394\u03bc) correlate positively with beta band (12-30 Hz) oscillations coinciding with the subsequent stimulus segment onset (~100 ms after), providing the first direct demonstration that beta oscillations are involved in updating sensory predictions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C4, C36, C42 report a novel finding about beta oscillations and prediction updating. While the correlation is reported as significant (C36) and shown in Figure 4, the same concerns about small effect sizes apply. Claim C42's assertion of 'first direct demonstration' is strong but the evidence is limited by small sample size, small effects, and the temporal relationship (beta at t+1 relative to \u0394\u03bc at t) which complicates causal interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "90e7eddc-1b79-4b60-b340-97262c05cc8a",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prediction precision (\u03a0) correlates with alpha band (8-12 Hz) oscillations significantly, and possibly with delta-theta (2-8 Hz) oscillations below significance threshold. This correlation was not time-locked (evoked), suggesting a novel oscillatory mechanism for precision control, though the authors acknowledge uncertainty about delta-theta contributions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C5, C37-C40, C43-C45 report the precision-alpha finding with appropriate caution ('appears to', 'possibly'). The main analysis (Figure 4) shows significance only for alpha, not delta-theta (C38-C39). The interpretation favoring precision over surprise for low-frequency correlations (C40) is reasonable but relies on indirect reasoning. Claim C45 notes the lack of evoked response, which is puzzling. This novel finding requires independent replication given the exploratory nature and statistical limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "ea89b17c-c941-4312-b522-e3c4b4b11782",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In evoked responses, only \u0394f (pitch change) and \u0394\u03bc (prediction change) showed significant correlates in the main analysis, while surprise showed significant evoked correlates only when precision was omitted from the analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C41 accurately describes the evoked response results shown in Figure 4 and supplement 4. The lack of clear evoked correlates for surprise and precision in the main analysis, and the dependence on analysis choices, suggests these variables primarily affect induced rather than evoked activity. This is clearly reported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "4e29e180-9d8d-43d1-8eed-ed01c8a8c538",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript contextualizes findings within prior literature showing theta/alpha oscillations predict stimulus timing, modulate higher frequencies through phase-amplitude coupling, and show antagonism with beta/gamma oscillations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51 accurately cite and describe relevant prior findings that provide context for interpreting the precision-alpha result. The citations are appropriate and the characterizations appear accurate based on the referenced work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "c2f1711d-0dc4-43db-893b-0788c732b3c2",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors speculate that neuronal populations may alternate between states of precise predictions (theta/alpha predominating) and prediction violation (beta/gamma predominating) based on observed antagonism between these frequency bands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 is explicitly speculative ('might indicate') and appropriately labeled as an interpretation combining current findings with prior literature (Spaak et al. 2012). This is reasonable speculation but clearly distinguished from established findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "4110f3e1-18c6-421e-ba9e-6948cd3466bf",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The key computational variables for sensory inference (surprise, prediction change, precision) have distinct oscillatory profiles with little overlap, showing remarkable consistency across the three subjects, with each frequency band correlating with a distinct computational variable.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C53-C55 assert distinct, non-overlapping frequency profiles with cross-subject consistency. While Figure 4 shows some frequency separation, the 'little to no overlap' and 'remarkable consistency' claims are overstated given: (1) only 3 subjects, (2) small effect sizes, (3) analysis choices strongly affecting results (supplements 3-4), and (4) Figure 4-supplement 6 showing variable patterns across electrodes. The distinctiveness is present but less clear-cut than claimed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    },
+    {
+      "id": "0352da2c-3952-492c-8526-b8be26139721",
+      "content_id": "6c1504ee-b26a-43fb-9761-db53a61f5820",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors argue that generative models of perception are generic across modalities and potentially all brain function, suggesting broad applicability of results. The paradigm is claimed to be portable to any sensory modality and species due to lack of training requirements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C56-C59 make broad generalization claims. While C56-C57 accurately describe theoretical positions (with citation), the portability claims (C58-C59) are speculative inferences not tested in this study. The paradigm's portability is plausible but undemonstrated, and the assumption that implicit learning occurs similarly across species is untested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:00:04.002658Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e5d1c001-96c2-4f64-b1f8-07290fd5ad57",
+      "result_id": "1add7dee-2f9e-44b7-aac0-bd5c710c0ea1"
+    },
+    {
+      "claim_id": "4e42f55e-8fa4-4c29-9018-61e9a2f30c51",
+      "result_id": "1add7dee-2f9e-44b7-aac0-bd5c710c0ea1"
+    },
+    {
+      "claim_id": "db6afee4-5395-4ac6-9e1b-7916a8c2dd7e",
+      "result_id": "1add7dee-2f9e-44b7-aac0-bd5c710c0ea1"
+    },
+    {
+      "claim_id": "202cf122-48eb-4ffa-8b0c-820562cefd31",
+      "result_id": "1add7dee-2f9e-44b7-aac0-bd5c710c0ea1"
+    },
+    {
+      "claim_id": "0189b2a1-b04a-4e9b-9f5f-3787abeefe8d",
+      "result_id": "1add7dee-2f9e-44b7-aac0-bd5c710c0ea1"
+    },
+    {
+      "claim_id": "bac61e5e-0a4e-4962-8523-8d5d01488a3e",
+      "result_id": "1add7dee-2f9e-44b7-aac0-bd5c710c0ea1"
+    },
+    {
+      "claim_id": "57bea64f-9c35-4ca7-8792-c9373b8973cf",
+      "result_id": "1add7dee-2f9e-44b7-aac0-bd5c710c0ea1"
+    },
+    {
+      "claim_id": "de6f43b4-3d50-475d-8aa2-2eb458186ba5",
+      "result_id": "b1cf85fd-d379-4842-8348-cf3e654e8072"
+    },
+    {
+      "claim_id": "577aedfa-767e-4eab-a9e0-243899f00e23",
+      "result_id": "b1cf85fd-d379-4842-8348-cf3e654e8072"
+    },
+    {
+      "claim_id": "d36adde8-73b1-450b-8967-46a459337b85",
+      "result_id": "b1cf85fd-d379-4842-8348-cf3e654e8072"
+    },
+    {
+      "claim_id": "1a016fd8-c6c4-4d22-aa73-3e8704982a38",
+      "result_id": "b1cf85fd-d379-4842-8348-cf3e654e8072"
+    },
+    {
+      "claim_id": "7a84c9b3-0c5b-4c1f-84eb-246cced58072",
+      "result_id": "b1cf85fd-d379-4842-8348-cf3e654e8072"
+    },
+    {
+      "claim_id": "759f23fe-15fd-489f-b894-420f6a3d271a",
+      "result_id": "b1cf85fd-d379-4842-8348-cf3e654e8072"
+    },
+    {
+      "claim_id": "afecbdd1-59d5-4628-92a4-cd24d20b3a06",
+      "result_id": "b1cf85fd-d379-4842-8348-cf3e654e8072"
+    },
+    {
+      "claim_id": "046eebe4-8eaf-489c-99a2-3330c4864613",
+      "result_id": "854c8420-9e2d-49f1-bd1d-49014ccf750d"
+    },
+    {
+      "claim_id": "61384102-908d-4c3a-95ca-9d313bf7e384",
+      "result_id": "854c8420-9e2d-49f1-bd1d-49014ccf750d"
+    },
+    {
+      "claim_id": "9bba44bf-83f8-46bf-9e84-e4553ce1b428",
+      "result_id": "854c8420-9e2d-49f1-bd1d-49014ccf750d"
+    },
+    {
+      "claim_id": "274c8148-e1a5-4fb0-80d3-e9ed94d733c7",
+      "result_id": "854c8420-9e2d-49f1-bd1d-49014ccf750d"
+    },
+    {
+      "claim_id": "30dfd8d3-fad9-4fcb-a6a5-d730a9de61a0",
+      "result_id": "854c8420-9e2d-49f1-bd1d-49014ccf750d"
+    },
+    {
+      "claim_id": "03d8dcb1-1436-4af1-bb0c-6350edb70c17",
+      "result_id": "854c8420-9e2d-49f1-bd1d-49014ccf750d"
+    },
+    {
+      "claim_id": "19d4da6e-77a5-4229-a672-a10d3fc53524",
+      "result_id": "854c8420-9e2d-49f1-bd1d-49014ccf750d"
+    },
+    {
+      "claim_id": "37a242fd-a838-4502-8529-32ba62c903e1",
+      "result_id": "854c8420-9e2d-49f1-bd1d-49014ccf750d"
+    },
+    {
+      "claim_id": "20505ca4-40d8-456c-9c53-0b27a73716a1",
+      "result_id": "854c8420-9e2d-49f1-bd1d-49014ccf750d"
+    },
+    {
+      "claim_id": "29c8ea66-e1f7-45db-a9d0-f3993d7b5c17",
+      "result_id": "854c8420-9e2d-49f1-bd1d-49014ccf750d"
+    },
+    {
+      "claim_id": "bfedbff9-e758-4615-8ec4-b9f4c49f0174",
+      "result_id": "c4b32819-9d61-4f8f-9928-3f72dd9e56e8"
+    },
+    {
+      "claim_id": "533fff8b-8f09-4f5b-bc23-3190e982ffef",
+      "result_id": "c4b32819-9d61-4f8f-9928-3f72dd9e56e8"
+    },
+    {
+      "claim_id": "503f0418-914a-47d9-89b8-0e2f251f8ae9",
+      "result_id": "c4b32819-9d61-4f8f-9928-3f72dd9e56e8"
+    },
+    {
+      "claim_id": "7edc2d5f-33d7-47d4-a642-9a6169c5a5d0",
+      "result_id": "c4b32819-9d61-4f8f-9928-3f72dd9e56e8"
+    },
+    {
+      "claim_id": "e1cc7ae3-444c-4099-9140-b653ac726bb4",
+      "result_id": "c4b32819-9d61-4f8f-9928-3f72dd9e56e8"
+    },
+    {
+      "claim_id": "b4fa4155-8d1f-4cd0-8120-157ba1222204",
+      "result_id": "c4b32819-9d61-4f8f-9928-3f72dd9e56e8"
+    },
+    {
+      "claim_id": "02e8165f-63bd-46cb-93a1-76cb8ad218ca",
+      "result_id": "c4b32819-9d61-4f8f-9928-3f72dd9e56e8"
+    },
+    {
+      "claim_id": "ffb1ad5c-bf96-448c-a2d5-c595f8b3d7f1",
+      "result_id": "c4b32819-9d61-4f8f-9928-3f72dd9e56e8"
+    },
+    {
+      "claim_id": "5ef5ecd0-7db9-4fb4-a834-0359bc7fb2b3",
+      "result_id": "c4b32819-9d61-4f8f-9928-3f72dd9e56e8"
+    },
+    {
+      "claim_id": "a99318f7-bc45-4967-a5fa-9786e91a616f",
+      "result_id": "c4b32819-9d61-4f8f-9928-3f72dd9e56e8"
+    },
+    {
+      "claim_id": "37fb5d37-cf5d-4d96-a6a7-b93628fc9fff",
+      "result_id": "c4b32819-9d61-4f8f-9928-3f72dd9e56e8"
+    },
+    {
+      "claim_id": "2710b97a-98fd-423f-92f6-4bda8b042f5a",
+      "result_id": "c4b32819-9d61-4f8f-9928-3f72dd9e56e8"
+    },
+    {
+      "claim_id": "1b350f26-944e-4b89-b017-1acb36477518",
+      "result_id": "c4b32819-9d61-4f8f-9928-3f72dd9e56e8"
+    },
+    {
+      "claim_id": "f47f1e88-48ec-4a5f-9056-b422d231f871",
+      "result_id": "c4b32819-9d61-4f8f-9928-3f72dd9e56e8"
+    },
+    {
+      "claim_id": "d2c2b945-a00b-4edb-bee8-26341978ebb2",
+      "result_id": "afe4f440-72dd-4a19-b34f-920fe20eb391"
+    },
+    {
+      "claim_id": "4fa0595a-79c9-43a3-83fa-0745b09b3672",
+      "result_id": "afe4f440-72dd-4a19-b34f-920fe20eb391"
+    },
+    {
+      "claim_id": "b0cc1516-9b0a-4b97-9cbe-0ae67ff45658",
+      "result_id": "afe4f440-72dd-4a19-b34f-920fe20eb391"
+    },
+    {
+      "claim_id": "515ccbe5-f1f9-4b6d-a250-fdb835bba4c5",
+      "result_id": "afe4f440-72dd-4a19-b34f-920fe20eb391"
+    },
+    {
+      "claim_id": "589f10ea-d1be-4d1f-ab90-2941792e5519",
+      "result_id": "afe4f440-72dd-4a19-b34f-920fe20eb391"
+    },
+    {
+      "claim_id": "827b0d04-ad2f-4967-a55f-17c0ec79a1c7",
+      "result_id": "afe4f440-72dd-4a19-b34f-920fe20eb391"
+    },
+    {
+      "claim_id": "a41d1ff2-39a1-4265-9e31-fc20f9c18094",
+      "result_id": "afe4f440-72dd-4a19-b34f-920fe20eb391"
+    },
+    {
+      "claim_id": "b6fb9b36-9b90-4f1d-b789-22fc621865ae",
+      "result_id": "afe4f440-72dd-4a19-b34f-920fe20eb391"
+    },
+    {
+      "claim_id": "6d7fd6b1-7b47-41ec-94ae-0f987c785b36",
+      "result_id": "afe4f440-72dd-4a19-b34f-920fe20eb391"
+    },
+    {
+      "claim_id": "7556a7f6-6673-42f4-9ecc-1b3f786f8858",
+      "result_id": "3fa52297-cd02-4a46-9999-68065d711970"
+    },
+    {
+      "claim_id": "654304fb-fd3b-4e44-90a8-d5e29aee518d",
+      "result_id": "3fa52297-cd02-4a46-9999-68065d711970"
+    },
+    {
+      "claim_id": "adcb2e95-2349-4719-8d3a-6b4665e2d408",
+      "result_id": "3fa52297-cd02-4a46-9999-68065d711970"
+    },
+    {
+      "claim_id": "5d42715a-14fd-4a7c-a40c-fc1fffbde3dc",
+      "result_id": "feb4eb55-d381-49ae-9273-239ab8a74126"
+    },
+    {
+      "claim_id": "19648584-d81f-4cd0-bb3d-e9dc275692b3",
+      "result_id": "feb4eb55-d381-49ae-9273-239ab8a74126"
+    },
+    {
+      "claim_id": "3cf320ae-623c-40c1-a0e0-03d5912c56e2",
+      "result_id": "feb4eb55-d381-49ae-9273-239ab8a74126"
+    },
+    {
+      "claim_id": "8044310d-e342-4f32-8a02-45440cb7e143",
+      "result_id": "feb4eb55-d381-49ae-9273-239ab8a74126"
+    },
+    {
+      "claim_id": "d5ea0510-b4d6-4cf8-8661-538bf6e8ceea",
+      "result_id": "feb4eb55-d381-49ae-9273-239ab8a74126"
+    },
+    {
+      "claim_id": "7b0079cf-3236-4f73-a43c-830a65cf4d81",
+      "result_id": "feb4eb55-d381-49ae-9273-239ab8a74126"
+    },
+    {
+      "claim_id": "00972e0c-baa1-4566-af71-036afb0db8ec",
+      "result_id": "feb4eb55-d381-49ae-9273-239ab8a74126"
+    },
+    {
+      "claim_id": "a1f92797-4f66-40bc-aad7-4231bef18a45",
+      "result_id": "79e7e719-ff20-49f7-b0c8-1af8cd45f708"
+    },
+    {
+      "claim_id": "d63b0a5f-783e-4234-a97c-8fa0bb2202f0",
+      "result_id": "79e7e719-ff20-49f7-b0c8-1af8cd45f708"
+    },
+    {
+      "claim_id": "9217b66f-c0f2-4f9d-b11c-6b1ed79d0336",
+      "result_id": "79e7e719-ff20-49f7-b0c8-1af8cd45f708"
+    },
+    {
+      "claim_id": "6aabc469-0fb3-40f4-b005-a72114ca9cbb",
+      "result_id": "79e7e719-ff20-49f7-b0c8-1af8cd45f708"
+    },
+    {
+      "claim_id": "94fbc215-0eaa-4963-b04b-ed789b5030cf",
+      "result_id": "79e7e719-ff20-49f7-b0c8-1af8cd45f708"
+    },
+    {
+      "claim_id": "8a3548c4-569c-46b3-9cdf-4bef772a993f",
+      "result_id": "fff6c7c0-a93c-4afa-b3e6-87486f03e374"
+    },
+    {
+      "claim_id": "c2df1d3b-ee69-4ff5-956c-27d00a31dc5e",
+      "result_id": "fff6c7c0-a93c-4afa-b3e6-87486f03e374"
+    },
+    {
+      "claim_id": "55ff879f-2166-4029-9bc9-4e121d6fb88a",
+      "result_id": "fff6c7c0-a93c-4afa-b3e6-87486f03e374"
+    },
+    {
+      "claim_id": "c1efea9e-a888-4796-9cf4-8e66e5c547c2",
+      "result_id": "90e7eddc-1b79-4b60-b340-97262c05cc8a"
+    },
+    {
+      "claim_id": "da9d65d9-3e2d-4393-a96b-93d9562ae2f7",
+      "result_id": "90e7eddc-1b79-4b60-b340-97262c05cc8a"
+    },
+    {
+      "claim_id": "4749ed44-2bc1-458f-b925-5021a905cd71",
+      "result_id": "90e7eddc-1b79-4b60-b340-97262c05cc8a"
+    },
+    {
+      "claim_id": "98031297-f827-4b0a-b125-1a5855a32497",
+      "result_id": "90e7eddc-1b79-4b60-b340-97262c05cc8a"
+    },
+    {
+      "claim_id": "0033867c-8b84-42de-b11a-3a057f6947f5",
+      "result_id": "90e7eddc-1b79-4b60-b340-97262c05cc8a"
+    },
+    {
+      "claim_id": "056175f3-af03-4719-a6fa-5c0626cbd72b",
+      "result_id": "90e7eddc-1b79-4b60-b340-97262c05cc8a"
+    },
+    {
+      "claim_id": "6b3df6f1-72c1-412e-9bf7-d30b9e352a36",
+      "result_id": "90e7eddc-1b79-4b60-b340-97262c05cc8a"
+    },
+    {
+      "claim_id": "b2f41c5b-2903-4b91-800f-da96a58b6b0b",
+      "result_id": "90e7eddc-1b79-4b60-b340-97262c05cc8a"
+    },
+    {
+      "claim_id": "cdddc81a-dd21-4a36-b8c9-25ea3ea348b5",
+      "result_id": "ea89b17c-c941-4312-b522-e3c4b4b11782"
+    },
+    {
+      "claim_id": "32bfecd8-d41e-48d1-bc34-144c39a972a8",
+      "result_id": "4e29e180-9d8d-43d1-8eed-ed01c8a8c538"
+    },
+    {
+      "claim_id": "79d3416a-e643-4b76-87dc-498467c1998f",
+      "result_id": "4e29e180-9d8d-43d1-8eed-ed01c8a8c538"
+    },
+    {
+      "claim_id": "0c9f9960-6aac-4269-968c-52463c36239f",
+      "result_id": "4e29e180-9d8d-43d1-8eed-ed01c8a8c538"
+    },
+    {
+      "claim_id": "b12e2e29-447f-433a-b2bb-7b5eff3041b4",
+      "result_id": "4e29e180-9d8d-43d1-8eed-ed01c8a8c538"
+    },
+    {
+      "claim_id": "8d415208-4604-41cd-994c-c232be7d08be",
+      "result_id": "4e29e180-9d8d-43d1-8eed-ed01c8a8c538"
+    },
+    {
+      "claim_id": "2a826fa0-ef79-4d9e-9204-3bdd3e2a6d9d",
+      "result_id": "4e29e180-9d8d-43d1-8eed-ed01c8a8c538"
+    },
+    {
+      "claim_id": "8e6884cb-d3c4-407e-9cfd-94de25a0bc24",
+      "result_id": "c2f1711d-0dc4-43db-893b-0788c732b3c2"
+    },
+    {
+      "claim_id": "19e1f3d0-6a54-4e4f-a695-47ac0edd4444",
+      "result_id": "4110f3e1-18c6-421e-ba9e-6948cd3466bf"
+    },
+    {
+      "claim_id": "52483589-0295-48f0-8de0-3fc8ca852fed",
+      "result_id": "4110f3e1-18c6-421e-ba9e-6948cd3466bf"
+    },
+    {
+      "claim_id": "c4677b1a-71d0-4ad0-be71-f37508ffd338",
+      "result_id": "4110f3e1-18c6-421e-ba9e-6948cd3466bf"
+    },
+    {
+      "claim_id": "b8f28d38-7cc7-4bb9-a2be-69ed4712813a",
+      "result_id": "0352da2c-3952-492c-8526-b8be26139721"
+    },
+    {
+      "claim_id": "ee36d533-c9d1-40c2-913e-299df68b6341",
+      "result_id": "0352da2c-3952-492c-8526-b8be26139721"
+    },
+    {
+      "claim_id": "14e27752-bcf5-4cb1-ae1f-6e11ae283b52",
+      "result_id": "0352da2c-3952-492c-8526-b8be26139721"
+    },
+    {
+      "claim_id": "e067cdc8-2b50-45d9-b4b6-08d5988e1577",
+      "result_id": "0352da2c-3952-492c-8526-b8be26139721"
+    }
+  ],
+  "comparisons": []
+}

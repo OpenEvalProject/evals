@@ -1,0 +1,340 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Participants demonstrated stimulus-specific perceptual learning without external feedback. Contrast thresholds improved significantly for the trained reference axis (t28=6.73, p<0.001) but not for the untrained axis (t28=0.41, p=0.68), with effects persisting 10 weeks later (F1,28=4.3, p=0.047). During training, thresholds decreased linearly across runs (slope=-0.006\u00b10.002, t28=-2.38, p=0.024).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 provide converging statistical evidence for stimulus-specific perceptual learning. The interaction effect (F1,28=14.2, p<0.001), long-term retention, and within-session learning trajectory all support the conclusion. The experimental design with trained/untrained axes provides appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Confidence ratings showed a monotonic relationship with task performance, validating confidence as meaningful self-generated feedback. Performance increased monotonically with confidence (F22,2442=5.76, p<0.001), approaching chance at low confidence without ceiling effects at high confidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 demonstrate that participants used the confidence scale appropriately. The monotonic relationship and absence of ceiling effects support the validity of confidence as a measure of internal decision certainty. Statistical evidence is robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The model's representational subsystem accurately captured stimulus orientation information. Orientation energy was higher for designated orientations on correct vs. incorrect trials (t28=8.1, p<0.001) and lower for opposite orientations on correct vs. incorrect trials (t28=-3.6, p=0.001), demonstrating behavioral relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 validate the representational subsystem through multiple convergent analyses. The differential energy patterns for correct/incorrect responses and designated/opposite orientations provide strong evidence that the model captures behaviorally relevant stimulus features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "The confidence-based reinforcement learning model successfully predicted both choices and confidence reports. The model accounted well for choices (rPearson=0.64\u00b10.03, t28=26.2, p<0.001) and confidence reports (rPearson=0.32\u00b10.02, t28=15.4, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 demonstrate good model fit to behavioral data. The correlations are statistically significant and effect sizes are substantial for choices. The moderate correlation for confidence is reasonable given the complexity of metacognitive judgments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Model-derived weight changes captured individual learning trajectories. Signal weights increased (slope=0.0147\u00b10.0036, t28=4.1, p<0.001) and noise weights decreased (slope=-0.0036\u00b10.0010, t28=-3.5, p=0.001) across training. Individual threshold learning slopes correlated with signal weight slopes (r=-0.45, p=0.013) and noise weight slopes (r=0.46, p=0.011).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 provide strong evidence that the model captures learning mechanisms. The linear weight changes and correlations with behavioral learning indices demonstrate that model parameters reflect actual learning processes. All statistical tests are significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Model-free fMRI analysis revealed confidence-related striatal activity patterns similar to reward-based learning. BOLD time courses showed anticipatory peaks 4-6s after trial onset and confidence-dependent deflections 4-6s after stimulus onset. Statistical analyses confirmed above-baseline activation at trial onset (bilateral peaks, both prFWE<0.001) and main effects of confidence at stimulus onset (bilateral peaks, both prFWE<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 demonstrate striking parallels between confidence and reward processing. The temporal dynamics and anatomical localization match predictions from reward literature. Statistical evidence is robust with appropriate corrections for multiple comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Model-based fMRI analysis revealed parametric modulation of striatal activity by expected confidence at trial onset (bilateral peaks: right [8 14 -4], t28=4.12, prFWE=0.018; left [-12 20 -2], t28=3.97, prFWE=0.026), analogous to anticipatory reward signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 provide model-based evidence for confidence anticipation in the striatum. The parametric modulation and anatomical localization support the parallel with reward anticipation. Statistical thresholds are appropriate with FWE correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Confidence prediction errors (CPEs) were encoded in mesolimbic structures. Bilateral ventral striatum showed strong positive relationships with CPE (left peak [-16 8 -10], t28=7.64, prFWE<0.001; right peak [16 14 -8], t28=7.81, prFWE<0.001), as did ventral tegmental area (peak [-6 -22 -16], t28=3.02, prFWE=0.027).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 demonstrate CPE encoding in key dopaminergic structures. The strong bilateral striatal effects and VTA modulation provide compelling evidence for confidence-based prediction error signals in the same regions implicated in reward prediction errors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Multivariate fMRI analysis revealed anatomical segregation of model variables. Orientation energy was encoded in left occipital cortex (peak [-44 70 0], t28=4.77, pcFWE=0.033) overlapping with stimulus-responsive regions, while decision value was encoded in right middle frontal gyrus (peak [32 14 44], t28=5.87, pFWE=0.026).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 demonstrate sensible anatomical mapping of perceptual and decision variables. The occipital encoding of orientation energy and frontal encoding of decision value align with known functional organization. Statistical thresholds are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Striatal CPE signals predicted individual learning success. Significant correlation was found in left ventral striatum (r=0.400, p=0.016, one-tailed) with a trend in right ventral striatum (r=0.268, p=0.080), linking mesolimbic confidence signals to behavioral learning outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 provide critical evidence linking neural CPE signals to learning. The left striatum correlation is significant even after age correction. The right hemisphere trend is weaker but consistent. The one-tailed test is justified by the directional hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The authors propose that humans generate internal feedback by monitoring confidence, which acts as a teaching signal for perceptual learning. Confidence represents self-evaluation of perceptual performance and could strengthen circuitry producing high-confidence percepts while weakening circuitry producing low-confidence percepts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C10-C14 articulate the core theoretical framework. While initially speculative, these hypotheses are strongly supported by the empirical findings (behavioral learning, model fits, and neural correlates). The convergence of multiple lines of evidence validates the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The computational model assumes perceptual learning occurs through optimizing a filter with signal and noise weights connecting orientation detectors to decision units, updated via an associative reinforcement learning rule combining confidence prediction errors and Hebbian plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 describe the model architecture. The model's success in capturing behavioral data (C32-C38) and neural correlates (C45-C49, C53-C55) validates these architectural assumptions. The combination of reinforcement and Hebbian components is theoretically motivated and empirically supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C63"
+    ],
+    "result": "The study demonstrates that confidence-based internal feedback mirrors reward-based external feedback in mesolimbic systems. The model successfully described learning as filter adjustment, striatal CPE modulation predicted learning success, and the pattern fits the dopamine prediction error hypothesis, suggesting confidence assumes reward's role when external feedback is absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59, C63 synthesize the main findings. The convergence of model-free fMRI, model-based fMRI, computational modeling, and brain-behavior correlations provides strong support for the central thesis that confidence serves as internal reward.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The present findings parallel a previous study by Kahnt et al. (2011) on reward-based perceptual learning, which found stimulus encoding in visual cortex, decision value in frontal cortex, and reward prediction errors in ventral striatum\u2014matching the current study's pattern for confidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 establish important connections to prior work. The parallel between reward and confidence processing across multiple levels (sensory, decision, prediction error) strengthens the interpretation that confidence serves as internal reward.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The present model extends previous reinforcement learning models of perceptual learning by implementing confidence prediction errors instead of reward prediction errors, using separate signal and noise weights (avoiding unreasonable effects of negative prediction errors), and employing a representational subsystem that captures stimulus ambiguity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 articulate theoretical advances. The model improvements are conceptually sound and empirically validated by the behavioral and neural data. The critique of previous models is fair and the proposed solutions are well-motivated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The model's associative reinforcement learning rule is inspired by the three-factor learning rule (presynaptic activity, postsynaptic activity, dopamine) proposed for striatal synaptic plasticity. This aligns with theories suggesting basal ganglia mediate perceptual learning by activating frontal targets after sensory activation, later superseded by cortico-cortical Hebbian learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 establish biological plausibility. The connections to established neuroscience (three-factor rule, basal ganglia function) are appropriate and strengthen the model's theoretical foundation. The fit with Ashby's framework is conceptually sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C79",
+      "C80"
+    ],
+    "result": "The study employed 29 female participants in a four-session design (pre-test, fMRI training, post-test, long-term test) without external feedback, using confidence ratings on a visual analogue scale to measure internal monitoring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18, C79-C80 describe the experimental design. The sample size (N=29) is adequate for the planned analyses. The multi-session design with long-term follow-up is appropriate for studying perceptual learning. The absence of feedback is critical for testing the hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Only female participants were selected because male and female brains differ in average volume (introducing normalization noise) and hemodynamic response profiles (potentially affecting BOLD signal detection).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C82 provide justification for single-sex sampling. While the cited differences exist, the decision limits generalizability. The rationale is methodologically conservative but the restriction to females means results may not generalize to males. This is a limitation rather than a flaw.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Pre-test thresholds strongly correlated with threshold improvements (r=0.73, p<0.001), so pre-test thresholds were regressed out to create a learning index corrected for baseline-dependent ceiling effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 describe an important correction. The strong correlation indicates regression to the mean or ceiling effects. Regressing out baseline is appropriate for isolating learning-specific variance. This correction strengthens the brain-behavior correlation analysis (C53-C55).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Eyetracking data from 24 participants confirmed fixation maintenance, with 98.5\u00b10.6% of gaze positions within the fixation area during training, validating that participants did not make eye movements to the stimulus location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 provide important validation that the task was performed as intended. The high percentage of fixation maintenance rules out confounds from eye movements. One participant was appropriately excluded for fixation failure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Learning can occur without external feedback, which normative reinforcement learning theories struggle to explain. While perceptual learning without feedback is well-established and reinforcement learning has been applied to perceptual learning, previous accounts required external feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C6-C9 establish the background and motivation. These are well-supported by citations and represent accurate characterizations of the literature. The gap between established phenomena and theoretical accounts is clearly articulated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The authors propose that confidence anticipation follows the same principle as reward anticipation: participants learn expected confidence based on past experiences, activated at trial onset. In the confidence domain, the outcome is calculated confidence and the prediction error is the difference between expected and actual confidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 extend the theoretical framework to explain anticipatory signals. This interpretation is supported by the empirical findings of expected confidence encoding (C45-C46) and fits well with established reward prediction error theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "Confidence was reported before choice to avoid potential bias from the choice itself, based on previous research showing that choices can influence subsequent confidence reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 describes a methodological decision supported by citations. This order is appropriate for measuring confidence as an independent variable. However, this design choice means confidence cannot be based on post-decisional processing, which may be a limitation.",
+    "result_type": "MINOR"
+  }
+]

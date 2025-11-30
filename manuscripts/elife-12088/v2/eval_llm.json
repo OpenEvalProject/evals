@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C57",
+      "C59",
+      "C60"
+    ],
+    "result": "Piezo1 is activated by both convex and concave membrane curvature in multiple patch configurations. In cell-attached patches, negative pressure induced rapidly-inactivating inward currents starting at \u22125 mmHg and saturating at ~\u221230 mmHg with convex curvature. Positive pressure inverted curvature to concave and also activated Piezo1, though responses were right-shifted (first apparent at +15 mmHg). Similar bidirectional activation was observed in inside-out and outside-out patches. Control experiments with empty vector showed negligible currents, confirming specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C60 provide converging evidence from multiple patch configurations (cell-attached, inside-out, outside-out) with simultaneous imaging and electrophysiology. The bidirectional activation by both positive and negative pressure, combined with appropriate negative controls (C59-C60), strongly supports that Piezo1 responds to both convex and concave membrane curvature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Piezo1 sensitivity varies across patch configurations. Cell-attached patches with negative pressure had P50 = \u221216.7 \u00b1 2.8 mmHg, while inside-out patches required more pressure (P50 = \u221235.8 \u00b1 4.0 mmHg, P<0.05). Outside-out patches required the largest pressures for activation. Current amplitudes also varied, with outside-out patches showing larger currents with positive pressure due to greater membrane surface area. These differences suggest that cytoskeletal content and membrane sidedness influence Piezo1 sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C68 document systematic differences in Piezo1 sensitivity across patch configurations with statistical support (C64-C66). The observations are internally consistent and supported by imaging data showing differences in membrane properties. The inference about cytoskeletal influence (C68) is reasonable given the data and cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Piezo1 activation is consistent with lateral membrane tension as the activating stimulus. Using Laplace's law (T = R\u00b7\u0394p/2) to calculate tension from measured curvature and pressure, Piezo1 activity in cell-attached patches followed a Boltzmann function with T50 = 2.7 \u00b1 0.1 mN/m (k = 0.8 \u00b1 0.1). Inside-out patches required slightly more tension (T50 = 4.7 \u00b1 0.3 mN/m, P<0.001). This reveals Piezo1 as a highly sensitive tension sensor compared to MscS (T50 ~5 mN/m) and MscL (T50 ~10 mN/m).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C80 provide quantitative evidence linking Piezo1 activation to membrane tension. The use of Laplace's law (C69, established physics) combined with simultaneous imaging and electrophysiology allows direct calculation of tension. The Boltzmann fits (C72-C73) are appropriate for dose-response relationships, and comparisons to MscS/MscL (C78-C80) are supported by cited literature. The symmetric response to convex/concave curvature (C70-C71) supports tension over curvature sensing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Resting membrane tension drives Piezo1 inactivation under standard recording conditions. Membrane patches showed substantial resting curvature at 0 mmHg. Positive pressure prepulses that flattened the membrane (minimizing tension) allowed recovery from inactivation, with maximal currents upon pressure release after +5-6 mmHg prepulses. Recovery followed an exponential time course (\u03c4 = 2.4 \u00b1 0.3 s), comparable to Piezo2 recovery kinetics. This demonstrates that a substantial fraction of Piezo1 channels is inactivated prior to pressure stimulation under standard conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C95 present a novel finding supported by systematic prepulse experiments. The U-shaped dependence on prepulse amplitude (C87-C88) with peak at minimal curvature (C91-C92) is internally consistent. The exponential recovery time course (C93) matches published Piezo2 data (C94), providing independent validation. Control experiments (C89) confirm Piezo1 specificity. The conclusion about resting inactivation (C95) logically follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Resting membrane tension modulates overall Piezo1 sensitivity. A +5 mmHg prepulse (which flattens the membrane) shifted P50 from \u221216.8 \u00b1 2.8 mmHg to \u22127.7 \u00b1 1.1 mmHg (~9 mmHg leftward shift, P<0.05), while +10 mmHg prepulses had no effect. In tension units, T50 shifted from 2.2 \u00b1 0.1 mN/m (no prepulse) to 1.4 \u00b1 0.1 mN/m (+5 mmHg prepulse, P<0.001). The slope factor remained unchanged. This demonstrates that the prepulse approach unmasks inherent Piezo1 tension sensitivity and shows it can be substantially modulated by resting membrane tension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C106 demonstrate modulation of Piezo1 sensitivity by resting tension through systematic prepulse experiments with statistical support (C99, C102-C103). The membrane geometry remained stable throughout experiments (C101), validating the approach. The findings are consistent with prior observations about gain-of-function mutations (C96) and Yoda1 effects (C97), providing independent support. The conclusion (C105-C106) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Piezo1 is a unique mechanosensor that senses lateral membrane tension with higher sensitivity than previously characterized channels. Like TREK-1 and TRAAK, Piezo1 responds to both positive and negative pressure. However, Piezos are structurally distinct (larger, more transmembrane domains, no sequence homology) and lack curvature-sensing motifs. Piezo1 in cellular environment (T50 = 1.4 \u00b1 0.1 mN/m) is more sensitive than MscL and MscS in liposomes (T50 ~5-10 mN/m). This high sensitivity is essential for Piezo's physiological roles in sensing blood flow and light touch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C118 synthesize the findings with appropriate citations to prior work. The comparison to TREK-1/TRAAK (C108-C109) and MscS/MscL (C110, C116) is supported by cited literature. Structural distinctions (C111-C114) are well-documented. The conclusion about unique sensitivity (C116-C117) follows from the experimental data (T50 measurements). The physiological relevance (C118) is supported by cited studies of Piezo function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The cytoskeleton is an important regulator of Piezo1 sensitivity. Sensitivity differed between cell-attached and inside-out patches, which retain different amounts of cytoskeleton (confirmed by lower optical density in inside-out patches). This reconciles previous findings that cytochalasin-D inhibits whole-cell Piezo1 currents evoked by direct stimulation but increases cell-attached pressure-evoked currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124 present a coherent interpretation of how cytoskeletal content affects Piezo1 sensitivity. The observation of different sensitivities (C119) is supported by data in earlier claims. The optical density measurements (C121) provide direct evidence for cytoskeletal differences. The reconciliation with cytochalasin-D effects (C122-C124) is supported by appropriate citations and provides a unified explanation for seemingly contradictory prior findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C125",
+      "C58"
+    ],
+    "result": "Inactivation properties vary across patch configurations, with outside-out patches showing the least consistent inactivation. This may be explained by irreversible loss of inactivation with repeated stimulation, as outside-out patches undergo the most membrane manipulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C125 document an observation (reduced inactivation in outside-out patches) and provide a plausible explanation supported by cited literature (Gottlieb et al., 2012). While the mechanism of inactivation remains unknown, the interpretation is reasonable given the data and prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Piezo1 pressure sensitivity varies substantially across cell types (P50 ranging from ~\u221213 to \u221240 mmHg in different cell types). This variation may be explained by differential expression of modulators like phosphoinositides (required for mechanosensitivity, depleted in excised patches) and STOML3 (increases sensitivity), as well as differences in resting membrane tension. Cellular membrane tension varies with cell type and depends on lipid composition, cytoskeletal contacts, and extracellular matrix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C135 synthesize literature on Piezo1 sensitivity variation with the current findings. The reported P50 variations (C126-C128) are supported by appropriate citations. The explanations involving phosphoinositides (C130-C131) and STOML3 (C132) are supported by cited work. The identification of resting tension as an additional modulator (C133) is a key finding of this study. The discussion of tension variation (C134-C135) is well-supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The ability of resting tension to modulate Piezo1 sensitivity provides a broad tuning curve that allows Piezo1 to respond to physiologically relevant tension changes across diverse cellular contexts. Inactivation is an important physiological modulator of sensitivity. The interplay between activation and inactivation may make Piezo1 most sensitive to rapidly applied stimuli and could allow cells to sense both stimulus onset and offset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C141 present physiologically relevant interpretations of the findings. The broad tuning curve concept (C136-C137) logically follows from the modulation by resting tension. The identification of inactivation as a modulator (C138) is supported by the prepulse experiments. The speculation about sensing stimulus offset (C139) is reasonable given the data on recovery from inactivation. The comparison to MscS (C140-C141) is supported by appropriate citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C142"
+    ],
+    "result": "The prepulse protocol provides a useful tool for measuring inherent mechanosensitivity in different cells irrespective of inactivation kinetics by flattening the membrane to minimize tension prior to testing sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C142 presents a methodological contribution. The prepulse protocol was successfully demonstrated in this study to unmask inherent sensitivity (earlier claims). The prediction about its utility is reasonable given the demonstrated effectiveness, though it represents future work rather than a tested result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Background on mechanosensation and Piezo channels: Mechanosensation is essential across organisms and is mediated by various mechanosensitive ion channels. Piezo proteins are large (>2500 residues), novel mechanosensitive channels in metazoans that lack homology to known proteins. The two mammalian isoforms (Piezo1 and Piezo2) are widely expressed and play key roles in diverse physiological processes. Piezo currents inactivate during sustained stimulation, and mutations affecting inactivation are linked to human diseases. The activation mechanism and precise physical stimulus remain unknown despite recent structural data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C39 provide background context supported by appropriate citations to established literature. These claims establish the scientific context and knowledge gaps that motivate the study. All claims are either well-established facts or properly cited prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C40",
+      "C41",
+      "C107"
+    ],
+    "result": "The apparent mechanical sensitivity of Piezo1 varies substantially across cellular environments, methods, and protocols. This study finds that Piezo1 responds to lateral membrane tension with high sensitivity (T50 = 1.4 \u00b1 0.1 mN/m after prepulse) and that resting tension can drive channel inactivation, thereby tuning overall mechanical sensitivity. These mechanisms may operate in native cells to affect overall Piezo1 sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6, C40-C41, and C107 summarize the main findings of the study. The variation in sensitivity (C3) is well-documented in prior literature. The key findings about tension sensitivity (C4, C40) and modulation by resting tension (C5-C6, C41) are supported by the experimental data presented in earlier result groups. The extrapolation to native cells (C107) is appropriately cautious (\"might affect\").",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Inside-out patches showed reduced optical density compared to cell-attached patches, consistent with less cytoskeleton being retained in cell-detached configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 report an observation (reduced optical density) and its interpretation (less cytoskeleton). The observation is directly supported by imaging data, and the interpretation is consistent with cited literature (Suchyna et al., 2009). This provides supporting evidence for the role of cytoskeleton in modulating Piezo1 sensitivity.",
+    "result_type": "MINOR"
+  }
+]

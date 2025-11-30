@@ -1,0 +1,532 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Prmt1+/- mice exhibit spontaneous seizures characterized by epileptiform spikes at 1-3 Hz frequency, lasting 96.7 \u00b1 12.5 seconds, occurring 4.1 \u00b1 1.4 times per day, with predominantly partial seizure behaviors (stages 1-3 on Racine scale) and rarely convulsive seizures (stages 4-5). No seizure activity was observed in WT mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide converging evidence from EEG recordings (n=8 Prmt1+/- mice, n=6 WT mice over 6 days) and behavioral scoring that Prmt1+/- mice exhibit spontaneous seizures with well-characterized frequency, duration, and behavioral manifestations. The data are quantitative with appropriate sample sizes and controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Prmt1+/- mice show a slight increase in locomotor activity in open-field tests, with significantly increased total travel distance (p<0.05) compared to WT mice, while spending similar time in the center zone. This indicates persistent neuronal hyperexcitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 are supported by open-field test data from 10 Prmt1+/- and 9 WT mice showing statistically significant increase in total distance traveled (p<0.05) with no change in anxiety-related center time. The inference of hyperexcitability (C14) is reasonable given the seizure phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Hippocampal granule cells from Prmt1+/- mice show significantly enhanced excitability compared to WT, with action potential frequency increasing from 8.1 \u00b1 1.4 Hz (n=16 WT) to 31.2 \u00b1 2.2 Hz (n=18 Prmt1+/-, p<0.01) in response to 200 pA depolarizing current.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 are supported by current-clamp recordings from adequate sample sizes (16 WT, 18 Prmt1+/- cells) showing statistically significant increase in firing frequency (p<0.01). The inference of enhanced excitability (C19) directly follows from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The increased excitability in Prmt1+/- neurons is associated with decreased threshold current for spike initiation and increased input resistance, while action potential amplitude and duration remain unchanged. This suggests the change reflects effects on input resistance rather than voltage-gated currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 are supported by electrophysiological measurements showing decreased threshold current, increased input resistance, and unchanged AP properties. The mechanistic inference (C24) is reasonable given that unchanged AP kinetics rule out effects on voltage-gated sodium/potassium channels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Based on the pattern of increased excitability and input resistance without changes in action potential properties, and ruling out increased leak currents, the KCNQ/M channel is identified as the most probable target underlying the phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 represent logical deduction from the electrophysiological data, systematically ruling out alternative mechanisms. The identification of KCNQ channels (C27) is supported by established knowledge (C28) that KCNQ inhibition increases both input resistance and excitability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Prmt1+/- granule cells show dramatically reduced M-currents (p<0.001, n=12) compared to WT (n=22), while WT neurons show robust M-currents that are completely abolished by the M-channel antagonist XE991.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by voltage-clamp recordings with adequate sample sizes showing statistically significant reduction in M-currents (p<0.001). The pharmacological validation with XE991 confirms the identity of the measured current as M-current.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "XE991 application increases input resistance (\u039451.7 \u00b1 4.6 M\u03a9) and causes membrane depolarization (\u03944.5 \u00b1 1.6 mV) in WT neurons, but these effects are abolished or greatly reduced in Prmt1+/- neurons, suggesting reduced KCNQ channel activity in the mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by measurements of membrane potential, input resistance, and threshold current before and after XE991 application. The inference (C36) that reduced KCNQ activity underlies the Prmt1+/- phenotype is well-supported by the insensitivity to XE991.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "XE991 significantly increases firing frequency in WT neurons (from 8.4 \u00b1 1.9 Hz to 12.6 \u00b1 1.9 Hz at 200 pA), but has no effect in Prmt1+/- neurons (34 \u00b1 3.2 Hz to 35.2 \u00b1 5.6 Hz), indicating that defective M-current contributes to neuronal hyperexcitability in Prmt1+/- mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 are supported by current-clamp recordings showing differential XE991 sensitivity between WT and Prmt1+/- neurons. The conclusion (C41) that defective M-current contributes to hyperexcitability is well-supported, though C42 appropriately notes that other targets cannot be excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Pharmacological inhibition of methyltransferases with MTA (100 \u03bcM) or furamidine (20 \u03bcM) completely abolishes M-currents (p<0.001) and increases neuronal excitability in WT neurons to levels similar to Prmt1+/- neurons, with no further effect in Prmt1+/- neurons, phenocopying the genetic deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 are supported by voltage-clamp and current-clamp recordings showing that pharmacological inhibition of Prmt1 in WT neurons reproduces the Prmt1+/- phenotype, while having no effect in Prmt1+/- neurons. This provides strong evidence that reduced Prmt1 activity is responsible for the phenotype (C50).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "KCNQ2 and KCNQ3 protein levels are unchanged in Prmt1+/- hippocampi, but Prmt1 physically interacts with KCNQ2 both in heterologous expression systems and endogenously in hippocampus, with the C-terminal region (aa 320-840) sufficient for interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by Western blot analysis showing unchanged KCNQ protein levels and co-immunoprecipitation experiments demonstrating physical interaction in both HEK293T cells and native hippocampal tissue. This indicates post-translational regulation rather than transcriptional effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Mass spectrometry identifies four arginine residues (R333, R345, R353, R435) as methylated in vivo in KCNQ2. In vitro methylation assays show that Prmt1, but not other Prmts, methylates KCNQ2, and substitution of all four arginines (4RK mutant) completely abolishes methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 are supported by mass spectrometry data identifying specific methylation sites and in vitro methylation assays using purified recombinant proteins showing Prmt1 specificity. The 4RK mutant provides strong evidence that these four sites are the critical targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C64"
+    ],
+    "result": "Prmt1 knockdown decreases ADMA-positive KCNQ2 levels in cells, while Prmt1 overexpression enhances KCNQ2 methylation. ADMA-positive KCNQ2 is readily detected in WT brain but significantly reduced in Prmt1+/- brain, demonstrating that reduced Prmt1 levels cause KCNQ2 hypo-methylation in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by immunoprecipitation and Western blot analysis showing bidirectional effects of Prmt1 manipulation on KCNQ2 methylation in cells and reduced methylation in Prmt1+/- brain tissue. The conclusion (C61, C64) that Prmt1 methylates KCNQ2 in vivo is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Prmt8 protein levels are unchanged in Prmt1+/- brain compared to WT, suggesting Prmt8 is not involved in the decreased KCNQ2 methylation observed in Prmt1+/- brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by Western blot analysis showing unchanged Prmt8 levels. This control experiment appropriately addresses the potential confound that Prmt8, which shares substrates with Prmt1, might compensate for Prmt1 loss.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Prmt1 knockdown reduces KCNQ2 current density from 57.6 \u00b1 7.6 to 26.3 \u00b1 7.6 pA/pF without changing I-V curve rectification. Methyltransferase inhibitors MTA and furamidine inhibit KCNQ2 currents by 79.9 \u00b1 13.6% and 72.1 \u00b1 2.1%, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are supported by whole-cell patch clamp recordings from HEK293T cells showing that both genetic and pharmacological reduction of Prmt1 activity dramatically reduces KCNQ2 currents without affecting voltage-dependence, indicating effects on channel activity rather than gating.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "KCNQ2 mutants preventing methylation (R333K, R345K, R353K, R435K, 4RK) show dramatically reduced current density (12.5-18.2 pA/pF, p<0.001) compared to WT (304.4 \u00b1 11.0 pA/pF), demonstrating that arginine methylation is required for KCNQ2 channel activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by whole-cell recordings showing that all methylation-deficient mutants have severely reduced currents with high statistical significance (p<0.001). The conclusion (C72) that methylation is required for channel activity is well-supported by the mutant data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "KCNQ2 methylation-deficient mutants show normal sensitivity to the channel activator retigabine, indicating that methylation regulates channel function through a mechanism distinct from overall activation potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is supported by patch clamp recordings showing similar retigabine-induced current augmentation in WT and mutant channels. This important control demonstrates that the mutants retain the capacity for activation, ruling out global structural defects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Surface biotinylation assays show that the ratio of membrane to total KCNQ2 is unchanged by Prmt1 knockdown or 4RK mutation, indicating that reduced currents reflect changes in channel open probability rather than trafficking defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by surface biotinylation experiments showing similar membrane localization despite reduced currents. The inference (C76) that conductance is determined by open probability is logical given unchanged surface expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The four methylated arginine residues (R333, R345, R353, R435) reside in the PIP2-binding domain of KCNQ2, leading to the hypothesis that methylation affects PIP2 binding affinity and thereby regulates channel activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 are supported by established knowledge from cited literature about KCNQ-PIP2 interactions and structural information about the PIP2-binding domain. The hypothesis (C81) is reasonable speculation based on the location of methylation sites, setting up subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Methylation-deficient KCNQ2 mutants show greatly increased sensitivity to neomycin-induced current inhibition compared to WT (remaining current reduced from 81.2 \u00b1 1.9% to 48.7 \u00b1 4.2% for R333K, p<0.01), with dose-response analysis showing higher neomycin sensitivity, indicating lower PIP2 affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 are supported by whole-cell recordings with neomycin in the pipette showing increased sensitivity of mutant channels. The interpretation that this reflects reduced PIP2 affinity is well-established in the literature (C82-C85) and appropriate for this assay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "WT KCNQ2 shows no current increase with exogenous PIP2 up to 200 \u03bcM, while methylation-deficient mutants show dose-dependent current increases that do not reach WT levels at corresponding PIP2 concentrations, with 4RK most severely affected and only R333K reaching WT level at 200 \u03bcM PIP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 are supported by patch clamp recordings with varying concentrations of exogenous PIP2. The differential rescue of mutants provides strong evidence for reduced PIP2 affinity, with the hierarchy of effects (4RK > other single mutants) supporting the importance of multiple methylation sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Dr-VSP-mediated PIP2 depletion reduces WT KCNQ2 currents with rapid recovery (T70 = 9.5 \u00b1 3.1 s), while RK mutants show 2-4 fold slower recovery (T70 = 17.9-32.1 s, p<0.05), indicating reduced PIP2 affinity. Together, these data demonstrate that methylation regulates KCNQ2-PIP2 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are supported by Dr-VSP experiments showing slowed recovery kinetics in mutants, which is an established measure of reduced PIP2 affinity (C97 cites Rjasanow et al., 2015). The conclusion (C98) is well-supported by converging evidence from neomycin, exogenous PIP2, and Dr-VSP experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Exogenous PIP2 (20-200 \u03bcM) restores M-current density in Prmt1+/- neurons to WT levels (27.3-29.9 pA vs 31.65 \u00b1 2.03 pA, p>0.05), accompanied by decreased input resistance (214.8 to 163.8 M\u03a9) and increased threshold current (115.6 to 175 pA), demonstrating that Prmt1 depletion impairs KCNQ activity via reduced channel-PIP2 interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by voltage-clamp and current-clamp recordings from Prmt1+/- neurons with exogenous PIP2 showing restoration of M-currents and associated electrophysiological parameters. The conclusion (C102) is well-supported by the rescue experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "PIP2 loading reduces firing frequency in Prmt1+/- neurons from 31.2 \u00b1 2.2 Hz to 15.5 \u00b1 2.9 Hz and restores XE991 sensitivity, while having minimal effects on WT neurons, demonstrating that impaired KCNQ function in Prmt1+/- hippocampus can be restored by PIP2 addition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 are supported by current-clamp recordings showing that PIP2 loading rescues the hyperexcitability phenotype in Prmt1+/- neurons without affecting WT neurons. This provides strong functional evidence that reduced PIP2 affinity underlies the phenotype (C107).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "PIP2 loading provides significant but incomplete recovery of excitability in Prmt1+/- neurons, and experiments with SK and BK channel blockers (apamin and paxilline) rule out involvement of these channels, suggesting possible involvement of other Prmt1 targets in neuronal hyperexcitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 are supported by the incomplete rescue with PIP2 and control experiments with SK/BK blockers. This appropriately acknowledges limitations and suggests additional mechanisms, though the incomplete rescue could also reflect technical limitations of PIP2 delivery.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "H2O2 treatment strongly reduces neuronal excitability in WT granule cells (firing rate from 9.3 \u00b1 2.1 to 1.4 \u00b1 0.9 Hz, input resistance from 163.8 to 116.3 M\u03a9), but has no effect in Prmt1+/- neurons or in WT neurons pretreated with MTA or furamidine, demonstrating that Prmt1-mediated methylation is necessary for ROS-induced neuronal silencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 are supported by current-clamp recordings showing differential H2O2 sensitivity between WT and Prmt1+/- neurons, and between untreated and methyltransferase inhibitor-treated WT neurons. The conclusion (C119) that Prmt1-mediated methylation is necessary for ROS-induced silencing is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "H2O2 induces 2.6 \u00b1 0.2-fold augmentation of WT KCNQ2 currents in HEK293T cells, reaching plateau within 7-8 minutes, which is completely reversed by DTT (2 mM), indicating reversible oxidative modification. DTT has no effect on non-H2O2-treated cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C125 are supported by whole-cell patch clamp recordings showing H2O2-induced current augmentation and DTT reversal. The time course and reversibility data provide strong evidence for oxidative modification of KCNQ2 channels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "When protein arginine methylation is blocked with MTA or furamidine, KCNQ2 channels become insensitive to H2O2 (0.8-0.9-fold augmentation). Similarly, methylation-deficient mutants (R333K, R345K, R353K, R435K) show minimal H2O2 sensitivity (0.7-1.6-fold augmentation) compared to WT (2.6-fold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128 are supported by patch clamp recordings showing that both pharmacological inhibition of methylation and genetic mutations preventing methylation abolish H2O2 sensitivity. This provides strong evidence that methylation is required for oxidative stress-induced KCNQ activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "MTA and furamidine reduce activity of the triple-Cys mutant of KCNQ2 (which is insensitive to H2O2) to a similar extent as WT KCNQ2, indicating that the H2O2 activation pathway is independent of arginine methylation-mediated regulation. Prmt1 is prerequisite for cytoprotective enhancement of KCNQ currents under oxidative stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C131 are supported by experiments showing that methylation inhibitors affect both WT and triple-Cys mutant channels, while only WT responds to H2O2. This demonstrates that methylation and oxidative modification are independent regulatory mechanisms. The conclusion (C132) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The study demonstrates that heterozygous reduction of Prmt1 causes spontaneous seizures due to reduced KCNQ/M channel activity resulting from decreased KCNQ2 methylation and diminished PIP2 affinity. Both basal KCNQ activity and oxidative stress-induced activation depend on protein arginine methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C135 represent the main conclusions of the study, integrating results from in vivo seizure monitoring, electrophysiology, biochemistry, and functional rescue experiments. The evidence chain from Prmt1 reduction \u2192 KCNQ2 hypo-methylation \u2192 reduced PIP2 affinity \u2192 reduced M-currents \u2192 hyperexcitability \u2192 seizures is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C139",
+      "C140"
+    ],
+    "result": "The impairment of neuroprotective KCNQ activation in response to oxidative stress may contribute to spontaneous seizures in Prmt1+/- mice. Protein arginine methylation is a unique post-translational modification that increases KCNQ/M channel function, unlike other known regulatory pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C139 is speculative but reasonable given that oxidative stress is involved in seizure induction (C138) and Prmt1+/- mice lack H2O2-induced KCNQ activation. Claim C140 is supported by the contrast with other known KCNQ regulatory mechanisms (C175-C177) that all decrease channel activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "All four methylation sites (R333, R345, R353, R435) reside within the C-terminal PIP2 binding domain, a 'hot spot' for multiple signaling molecules. Computational analyses show that methylation increases arginine pKa values, stabilizing positive charge and facilitating electrostatic interaction with negatively charged PIP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C142 are supported by structural knowledge from cited literature. Claims C143-C145 integrate experimental observations of reduced PIP2 affinity in methylation-deficient mutants with computational predictions (C144, citing Shearer 2008) to propose a mechanistic model. The inference is well-reasoned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Various epilepsy-associated KCNQ mutations reduce M-channel activity through diverse mechanisms including trafficking defects, protein instability, altered calmodulin binding, and reduced PIP2 affinity. The R353G mutation, affecting one of the methylation sites identified in this study, is linked to familial epilepsy and shows diminished PIP2 affinity, consistent with the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C150 are supported by extensive citations to prior literature on epilepsy-associated KCNQ mutations. The connection to R353G (C149-C150) is particularly relevant as this residue is one of the methylation sites identified in the current study, providing independent validation of the importance of this region for PIP2 interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "KCNQ3 contains conserved methylation sites within the PIP2 binding domain, suggesting that arginine methylation might regulate channel-PIP2 interaction in KCNQ3 as well. Since KCNQ2/3 heteromers form M-currents, hypo-methylation of either subunit might diminish M-currents and increase neuronal hyperexcitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C152 is supported by sequence alignment data. However, claims C153 and C155 are speculative, as no functional experiments were performed on KCNQ3. While the speculation is reasonable given sequence conservation and the heteromeric nature of M-channels (C154), experimental validation would be needed to support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Positively charged arginines are important for PIP2 interaction in other PIP2-sensitive channels (Kir2, GIRK), and PIP2 is required for proper function of many plasma membrane ion channels and transporters. Therefore, methylation may be a general mechanism for regulating ion flux physiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C156-C157 are supported by citations to literature on other ion channels. However, claim C158 is speculative, as the study only examined KCNQ channels. While the speculation is reasonable given the widespread importance of PIP2 in ion channel regulation, experimental evidence for methylation-dependent regulation of other channels would be needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The differential effects of KCNQ channel block versus Prmt1 block on firing rates imply possible involvement of other Prmt1 targets in neuronal hyperexcitability. SK and BK channels are not involved in the incomplete recovery by PIP2 loading. The results provide the first direct evidence for functional role of protein arginine methylation in controlling neuronal excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C160 appropriately acknowledge limitations and suggest additional mechanisms, supported by the incomplete rescue with PIP2 and control experiments with SK/BK blockers. Claim C161 is a reasonable conclusion given the comprehensive evidence linking Prmt1-mediated methylation to KCNQ function and neuronal excitability.",
+    "result_type": "MAJOR"
+  }
+]

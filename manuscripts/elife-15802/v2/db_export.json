@@ -1,0 +1,2122 @@
+{
+  "submission": {
+    "id": "03e00349-035b-460c-969c-4225a04b1262",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:32:47.922356Z",
+    "updated_at": "2025-11-29T23:32:47.922356Z"
+  },
+  "content": [
+    {
+      "id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "submission_id": "03e00349-035b-460c-969c-4225a04b1262",
+      "content_type": "manuscript",
+      "content_text": "# Determination of ubiquitin fitness landscapes under different chemical stresses in a classroom setting\n\n## Authors\n\n- David Mavor<sup>1</sup>\n- Kyle Barlow<sup>2</sup> ([ORCID: 0000-0002-9787-0066](https://orcid.org/0000-0002-9787-0066))\n- Samuel Thompson<sup>1</sup>\n- Benjamin A Barad<sup>1</sup>\n- Alain R Bonny<sup>1</sup>\n- Clinton L Cario<sup>2</sup>\n- Garrett Gaskins<sup>2</sup>\n- Zairan Liu<sup>1</sup>\n- Laura Deming<sup>3</sup>\n- Seth D Axen<sup>2</sup>\n- Elena Caceres<sup>2</sup>\n- Weilin Chen<sup>2</sup>\n- Adolfo Cuesta<sup>4</sup>\n- Rachel E Gate<sup>2</sup>\n- Evan M Green<sup>1</sup>\n- Kaitlin R Hulce<sup>4</sup>\n- Weiyue Ji<sup>1</sup>\n- Lillian R Kenner<sup>1</sup>\n- Bruk Mensa<sup>4</sup>\n- Leanna S Morinishi<sup>2</sup>\n- Steven M Moss<sup>4</sup>\n- Marco Mravic<sup>1</sup>\n- Ryan K Muir<sup>4</sup>\n- Stefan Niekamp<sup>1</sup>\n- Chimno I Nnadi<sup>4</sup>\n- Eugene Palovcak<sup>1</sup>\n- Erin M Poss<sup>4</sup>\n- Tyler D Ross<sup>1</sup>\n- Eugenia C Salcedo<sup>4</sup>\n- Stephanie K See<sup>4</sup>\n- Meena Subramaniam<sup>2</sup>\n- Allison W Wong<sup>4</sup>\n- Jennifer Li<sup>5</sup>\n- Kurt S Thorn<sup>6</sup>\n- Shane \u00d3 Conch\u00fair<sup>7</sup>\n- Benjamin P Roscoe<sup>8</sup>\n- Eric D Chow<sup>6</sup>\n- Joseph L DeRisi<sup>3</sup>\n- Tanja Kortemme<sup>7</sup>\n- Daniel N Bolon<sup>8</sup>\n- James S Fraser<sup>7</sup> ([ORCID: 0000-0002-5080-2859](https://orcid.org/0000-0002-5080-2859)) \u2020\n\n### Affiliations\n\n1. Biophysics Graduate Group University of California, San Francisco San Francisco United States\n2. Bioinformatics Graduate Group University of California, San Francisco San Francisco United States\n3. Howard Hughes Medical Institute, University of California, San Francisco San Francisco United States\n4. Chemistry and Chemical Biology Graduate Program University of California, San Francisco San Francisco United States\n5. UCSF Science and Health Education Partnership University of California, San Francisco San Francisco United States\n6. Department of Biochemistry and Biophysics University of California, San Francisco San Francisco United States\n7. Department of Bioengineering and Therapeutic Sciences, California Institute for Quantitative Biology University of California, San Francisco San Francisco United States\n8. Department of Biochemistry and Molecular Pharmacology University of Massachusetts Medical School Worcester United States\n9. Center for Advanced Technology University of California, San Francisco San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nUbiquitin is essential for eukaryotic life and varies in only 3 amino acid positions between yeast and humans. However, recent deep sequencing studies indicate that ubiquitin is highly tolerant to single mutations. We hypothesized that this tolerance would be reduced by chemically induced physiologic perturbations. To test this hypothesis, a class of first year UCSF graduate students employed deep mutational scanning to determine the fitness landscape of all possible single residue mutations in the presence of five different small molecule perturbations. These perturbations uncover 'shared sensitized positions' localized to areas around the hydrophobic patch and the C-terminus. In addition, we identified perturbation specific effects such as a sensitization of His68 in HU and a tolerance to mutation at Lys63 in DTT. Our data show how chemical stresses can reduce buffering effects in the ubiquitin proteasome system. Finally, this study demonstrates the potential of lab-based interdisciplinary graduate curriculum.\n\n## Introduction\n\nProtein homeostasis enables cells to engage in dynamic processes and respond to fluctuating environmental conditions (Powers et al., 2009). Misregulation of proteostasis leads to disease, including many cancers and neurodegenerative diseases (Balch et al., 2008; Lindquist and Kelly, 2011). Protein degradation is an important aspect of this regulation. In eukaryotes ~80% of the proteome is degraded by the highly conserved ubiquitin proteasome system (UPS) (Zolk et al., 2006). The high conservation of the UPS is epitomized by ubiquitin (Ub), a 76 amino acid protein post-translational modification that is ligated to substrate amine groups, including on Ub itself in poly-Ub linkages, via a three enzyme cascade (Finley et al., 2012).\n\nPerhaps due to its central role in regulation, the sequence of ubiquitin has been extremely stable throughout evolution. Only three residues vary between yeast and human (96% sequence identity). This remarkable conservation implies that the UPS does not acquire new functions through mutations in the central player, Ub. Instead the evolution of proteins that add Ub to substrate proteins (E2/E3 enzymes), remove Ub (deubiquitinating enzymes, DUBs), or recognize Ub (adaptor proteins) combine to create new functions, many of which rely on various poly-Ub topologies (Sharp and Li, 1987; Zuin et al., 2014). The role of Lys48 linked poly-Ub in protein degradation (Thrower et al., 2000) appears to be universally conserved, but the functions of other linkages are more plastic. Although mass spectroscopy of cell lysates has shown that every possible poly-Ub lysine linkage exists within yeast cells (Peng et al., 2003), only the roles of Lys11 linked poly-Ub in ERAD (Xu et al., 2009) and Lys63 linked poly-Ub in DNA damage (Zhang et al., 2011) and endocytosis (Erpapazoglou et al., 2014) are well characterized in yeast. Both of these linkages are central to stress responses, mirroring some of the established roles for non-Lys48 linkages in other organisms (Komander and Rape, 2012).\n\nGiven this central role in coordinating a diverse set of stress responses, perhaps the high sequence conservation of ubiquitin is not surprising. However, classic Alanine-scanning studies showed that ubiquitin is quite tolerant of mutation under normal growth conditions (Sloper-Mould et al., 2001). The high mutational tolerance of Ub was further confirmed using EMPIRIC ('extremely methodical and parallel investigation of randomized individual codons'), where growth rates of yeast strains harboring a nearly comprehensive library of all ubiquitin point mutations were assessed in bulk by deep sequencing (Roscoe et al., 2013). Subsequent studies revealed that many of the constraints on the Ub sequence are enforced directly by the E1-Ub interaction (Roscoe and Bolon, 2014); however, the surprisingly high number of tolerant positions remained unexplained.\n\nTo address the paradox of the high sequence conservation and mutational tolerance of ubiquitin, we posed the problem to the first year students in UCSF\u2019s iPQB (Integrative Program in Quantitative Biology) and CCB (Chemistry & Chemical Biology) graduate programs. Previous EMPIRIC experiments on HSP90 suggested that reducing protein expression could reveal fitness defects that are otherwise buffered (Jiang et al., 2013). Similarly, the high expression level of Ub might buffer some fitness defects. As an alternative approach to reducing expression, the buffering might also be exposed by chemical perturbations. Chemical-genetic approaches have been successful in elucidating protein function by assessing the context dependence of mutations on organismal fitness (Hietpas et al., 2013; Stockwell, 2000). There is substantial evidence to link the pool of free Ub to the eukaryotic stress responses to many chemicals. For example, Ub overexpression is protective against the general translational inhibitor cycloheximide (Hanna et al., 2003) and the deubiquitinating enzyme Ubp6 is upregulated upon stress to increase the pool of free Ub in the cell (Hanna et al., 2007). Collectively, these results suggest that the sequence of Ub is subject to many constraints arising from interacting with diverse proteins while mediating the stress responses to distinct chemical perturbations.\n\nThe students performed the bulk competition experiments, deep sequencing and data analysis as part of an 8-week long research class held in a purpose-built Teaching Lab. In small teams of 4\u20135 students working together for 3 afternoons each week, they each examined a chemical stressor: Caffeine, which inhibits TOR and consequently the cell cycle (Reinke et al., 2006; Wanke et al., 2008); Dithiothreitol (DTT), which reduces disulfides and induces the unfolded protein response (Frand and Kaiser, 1998) and the ER associated decay (ERAD) pathway (Friedlander et al., 2000); Hydroxyurea (HU), which causes pausing during DNA replication and induces DNA damage (Ko\u00e7 et al., 2004; Petermann et al., 2010); or MG132, which inhibits the protease activity of the proteasome (Jensen et al., 1995; Rock et al., 1994). We expected MG132 to desensitize the yeast to deleterious mutations in Ub, as the inhibition acts on the final degradation of UPS substrates. For the other three chemicals we expected that specific sites on Ub would become sensitized to mutation. These sites could represent important Ub/protein binding interfaces that are required for Ub to bind to adaptor proteins and ligation machinery required to respond to a specific stress. Furthermore, we expected that Caffeine induced stress would be mediated through Lys48 linked poly-Ub (cell cycle), DTT induced stress would be mediated through Lys11 linked poly-Ub (ERAD), and HU induced stress would be mediated through Lys63 linked poly-Ub (DNA damage response).\n\nOur data collectively show that stress reduces a general buffering effect and unmasks a shared set of residues that become less tolerant to mutation. Additionally, we have identified a small set of mutations that are specifically aggravated or alleviated by each chemical. Small fitness defects that are undetectable by EMPIRIC may still be significant over evolutionary timescales and are likely to similarly be enriched for certain chemicals (Boucher et al., 2014). We suggest that expanding the set of environmental stresses, and improved measurement of smaller fitness defects, might be able to explain the high sequence conservation of ubiquitin, as different positions in the protein are important for interactions mediating the specific responses to a wide variety of perturbations.\n\n## Results\n\n### Library construction\n\nPreviously, the fitness landscape of Ub in yeast was determined using eight competition experiments using the EMPIRIC strategy of deep sequencing short regions of all possible single amino acid substitutions during a growth competition experiment in rich media (Roscoe et al., 2013). These experiments measured all point mutants contained in short 30 base pair (bp)/10 amino acid residue stretches of the Ub open reading frame (ORF), which necessitated 8 separate competition experiments. To increase the throughput and reduce the cost of the experiment, we designed a barcoding strategy (Fowler et al., 2014), that allowed us to determine allele fitness in a single experiment using EMPIRIC with barcodes (EMPRIC-BC). We synthesized eighteen bp random barcodes (N18 BCs), which were ligated upstream of the Illumina sequencing primer binding site. The specific association of each unique N18 BC with a given mutant Ub allele was then established through paired end sequencing of the Ub ORF and the N18 BC (Figure 1A) The resulting lookup table of BCs and alleles was then employed in our competition experiments to count alleles by directly sequencing the N18 BCs. In addition to simplifying the experiment, this strategy enabled us to count the alleles with a short, single end sequencing run, substantially reducing cost. The library is ~97.5% complete at the amino acid level. We observed a slight GC bias in the codon coverage (Figure 1B\u2013C), which is likely due to the cloning method that initially generated the Ub mutants (Hietpas et al., 2012). Most substitutions are associated with many N18 BCs, with a median of fifteen unique barcodes representing a specific amino acid substitution (Figure 1D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig1-v2.jpg)\n\n**Figure 1.:** (A) Prior to the competition experiment, ubiquitin alleles were specifically associated with unique barcodes through a paired end sequencing. To monitor the frequency of different alleles during the competition experiments, we directly sequenced the barcodes in a short single end read. (B) The library contains most codon substitutions and almost all are associated with multiple barcodes. A slight GC bias is seen in the cloning. WT codons are shown in green and missing alleles are shown in grey. (C) The amino acid coverage of the library is almost complete. WT residues are shown in green and missing alleles are shown in grey. (D) Examining the number of barcodes per amino acid substitution shows that 2.5% of the library is missing and the median number of barcodes per substitution is 15.\n\n### Determining the Ub fitness landscape in DMSO\n\nTo determine the differential fitness landscape of Ub under different chemical stresses, we first conducted an EMPIRIC-BC experiment under 0.5% DMSO to serve as a control (Figure 2). The resulting fitness landscape is quite similar to the previously published dataset, which was collected under no chemical stress (Roscoe et al., 2013) (Figure 3A). The lowest fitness scores occurred at premature stop codons and residues that are critical to build Lys48 poly-Ub linkages (Lys48, Ile44, Gly75, Gly76). As previously observed, much of the protein surface is tolerant to mutation. Based on the average value of the stop codon substitutions, we set a minimum fitness score of -0.5 (Figure 3B). Comparisons of biological replicates indicated that the data were reproducible and well fit by a Lorentzian function centered at 0, as expected for the ratio of two Gaussian distributions (Figure 3C,D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig2-v2.jpg)\n\n**Figure 2.:** The fitness of all ubiquitin mutants was measured in a single culture by shutting off the galactose-driven wild type copy. This allows a constitutively expressed mutant to be the sole source of ubiquitin for the cell. The library was grown for 48\u00a0hr in galactose to remove dominant negative alleles and then expression of the wild type copy repressed by the addition of glucose. Upon repression of the wild type copy, chemical perturbations were added and the yeast were grown for multiple generations. Fitness scores were calculated for each mutant based on the relative frequencies of mutant and wild type alleles over multiple generations. The ratio of (mutant counts):(wild type counts) was computed for each time point and a line fit to these ratios vs. generation time. The fitness score is the slope of the linear fit.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig3-v2.jpg)\n\n**Figure 3.:** (A) Heatmap showing the fitness of observed ubiquitin alleles. Scores presented are the average of three biological replicates. Wild type amino acids are shown in green and mutations without fitness values (due to lack of barcode or competition sequencing reads) are shown in grey. The average fitness score of each position and the averages of substitutions binned by amino acid characteristics are shown below. The single column on the far right shows the average of each amino acid substitution across all positions. (B) The distribution of fitness values is shown and colored based on fitness score. Grey bins reflect fitness scores that were reset to -0.5. (C) Biological replicates of the competition experiment in DMSO are well correlated (R2\u00a0 = 0.79). Each point represents the fitness score of a mutant in two biological replicates. Points are colored based on the average standard deviation of the barcodes contributing to each fitness score. (D) The distribution of the residuals to the identity line between two DMSO replicates is symmetric and well modeled by a Lorentzian (X0\u00a0 = 0, \u0393\u00a0= 0.0035, scaled by 1600).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** We calculated the standard deviation of the distributions of barcode fitness scores that contribute to each amino acid mutant fitness score. Large errors of the stop codon substitutions are due to variation of fitness scores below the -0.5 floor.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** A linear regression (R2 = 0.785) and Pearson\u2019s correlation coefficient (CC = 0.886) were calculated between the fitness scores determined in DMSO and the previously published unperturbed dataset (Roscoe et al., 2013).\n\n### Chemical perturbations sensitize many positions in Ub\n\nBecause our competition experiments require cells growing for multiple generations in log phase, we conducted our experiments at chemical concentrations that inhibit yeast growth by 25%. These chemical concentrations are not as high as used in previous transcriptional studies of yeast chemical stress responses (Gasch et al., 2000). For Caffeine (7.5\u00a0mM), and DTT (1\u00a0mM) we determined the IC25 for each drug by following growth via optical density (Figure 4\u2014figure supplement 1). Since HU (25\u00a0mM) induced a lag phase followed by near wild type like growth, we determined the IC25 concentration by monitoring yeast growth from two to five hr post treatment. DMSO (0.5%) and MG132 (50\u00a0uM) did not inhibit growth.\n\nNext, we performed the EMPIRIC-BC experiment with each chemical perturbation (Figure 4B). In Caffeine, DTT, and HU (Figure 4A\u2013D, Figure 4\u2014figure supplements 1\u20133) many mutations are sensitized, and become less fit than in DMSO. Generally this increased sensitivity is localized around the C-terminus, which is essential for E1 activation, and the hydrophobic patch, which is the dominant interface for protein-protein interactions.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig4-v2.jpg)\n\n**Figure 4.:** The difference in fitness between DMSO and a perturbation for each Ub allele:\u00a0(A) Caffeine, (B) DTT (C) Hydroxyurea (D) MG132. Wild type amino acids are shown in red and mutations without fitness values (due to lack of barcode or competition sequencing reads) are shown in grey.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Heatmaps showing the fitness of observed Ub alleles under:\u00a0(A) Caffeine, (B) DTT (C) Hydroxyurea (D) MG132. Wild type amino acids are shown in green and mutations without fitness values (due to lack of barcode or competition sequencing reads) are shown in grey.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Heatmaps showing the error estimates for each observed Ub alleles under;\u00a0(A) Caffeine, (B) DTT (C) Hydroxyurea (D) MG132. Wild type amino acids are shown in green and mutations without fitness values (due to lack of barcode or competition sequencing reads) are shown in grey. Growth rates were calculated by monitoring OD600 over 8\u2009hr and normalized to the unperturbed SUB328 growth rate.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** We determined the concentration to inhibit SUB328 growth by 25% by monitoring optical density. Error bars represent standard deviation of multiple measurements.\n\nTo compare the responses to each perturbation, for each pairwise comparison we plotted the fitness scores for each mutant as a scatter plot and calculated the residual to the identity line. We compared the distribution of these residuals to the distribution of residuals calculated by the DMSO self comparison (Figure 5). Caffeine, DTT and HU generally sensitize the protein to mutation, which is evident in the enrichment of mutations with reduced fitness compared to the DMSO self distribution. These newly sensitized mutations are largely shared between these different chemical perturbations.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig5-v2.jpg)\n\n**Figure 5.:** The residuals between datasets shows are shown with the Lorentzian representing the biological replicates of DMSO in red. When compared to DMSO, three perturbations (Caffeine, DTT and HU) shift the distributions to the left, which highlights the increased sensitivity to mutation. In contrast, MG132 slightly shifts the distribution to the right, which highlights the alleviating interaction between MG132 and deleterious ubiquitin alleles. Comparisons between Caffeine, Hydroxyurea and DTT are symmetric but with longer tails than the control experiments. This result suggests a shared response comprised of many sensitized residues and a smaller number of perturbation-specific signals.\n\nIn contrast to the sensitizing effects of DTT, Caffeine, and HU, the proteasome inhibitor MG132 increases mutational tolerance throughout the protein. This effect can be seen in the slight shift of the residuals distribution to the right when compared to the DMSO self distribution (Figure 5D). The effect is small at the MG132 concentration we assayed, which is likely due to the poor penetrance of MG132 in yeast cells containing a wild type allele of ERG6 (Lee and Goldberg, 1996). This alleviating interaction is likely because MG132 directly perturbs proteasome, reducing the impact of defects related to Lys48 linked poly-Ub chains and leaving functions related to other, non-degradative poly-Ub topologies unperturbed. Also, reducing proteasome activity may increase the free pool of Ub in the cell by reducing the number of Ub proteins degraded by the proteasome. This increased pool of Ub could buffer the effects of deleterious Ub mutants participating in non-proteasomal functions. The consequence of an increased pool of free Ub might therefore lead to the general alleviating interactions observed between Ub mutants and MG132 treatment.\n\nAdditionally, the difference distributions are wider than the distribution between DMSO replicates. This result shows that the perturbations unmask previously buffered fitness defects that are phenotypically important for each perturbation. If the biological role of each residue were independent of perturbation then the distributions would be shifted without affecting the shape. Instead these data show that each perturbation uncovers unique roles of Ub residues in responding to a specific perturbation.\n\n### Rosetta \u2206\u2206G modeling indicate that sensitive mutants mildly perturb stability\n\nOne potential explanation of the buffer unmasked by the chemical perturbations is the stability of the Ub protein itself. Although Ub is highly stable (Ibarra-Molero et al., 1999; Wintrode et al., 1994), mutations that destabilize it may lead to misfolding or perturb Ub/protein interactions important for UPS function. To assess the degree to which mutational destabilization of ubiquitin itself is predictive of a decrease in mean fitness for each perturbation, we used the macromolecular modeling software Rosetta to estimate changes in protein stability (Kellogg et al., 2011; Kortemme and Baker, 2002) for every mutation in our library. With the resulting predictions, we classified each ubiquitin mutation as either destabilizing (change in Rosetta Energy Units (REU)\u00a0>\u00a0=\u00a01.0) or neutral/stabilizing (change in REU < 1.0). We observed a significant difference in experimental fitness between the two predicted classes for all conditions (Figure 6). This result holds independently of the absolute mean experimental fitness score of each perturbation, meaning that the difference in mean experimental fitness between predicted destabilizing and neutral mutations is not simply the result of lower mean destabilizing fitness scores. These results suggest that ubiquitin stability is more important for fitness in each of the perturbed conditions than in unperturbed yeast. Under stress, subtle changes in Ub stability could induce fitness defects that are otherwise buffered under control (DMSO) conditions. Furthermore, even small changes to ubiquitin stability could induce considerable changes to the Ub conformational ensemble that could destabilize Ub/protein complexes (Lange et al., 2008; Phillips et al., 2013). Adaptability within the UPS could buffer these defects in DMSO, but they can be revealed upon chemical stress.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig6-v2.jpg)\n\n**Figure 6.:** Fitness scores for each of the 5 sets of experimental conditions are shown along the y-axis as boxplots. Scores are grouped first by their respective experimental condition, and then by the change in stability of the ubiquitin monomer of the mutation estimated by Rosetta. Mutations that Rosetta predicts to be neutral or stabilizing (REU (Rosetta Energy Units) < 1.0) are shown in blue boxes; mutations predicted to be destabilizing (REU >= 1.0) are shown in green boxes. The mean of each fitness score distribution is shown as a white dot. The p-value of the two-sided T test between the fitness mean of mutations predicted to be stabilizing and those predicted to be neutral/stabilizing is shown at the bottom of the plot. Experimental conditions are arranged from left to right along the x-axis in order of decreasing p-value.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig7-v2.jpg)\n\n**Figure 7.:** Cartoon model of Ub (PDB 1UBQ) with important residues colored as follows: Lys48 - orange, Lys63 - light blue, Lys11 - green, other Lys residues - yellow, hydrophobic patch (Leu8, Val40, Ile 44) - red, C-terminal diGly motif (Gly75 and 76) - purple, Arg42 - pink, His68 - olive.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig8-v2.jpg)\n\n**Figure 8.:** (A) Based on the average fitness score, positions were binned into tolerant (>=-0.075 - Blue), intermediate (<-0.075 to > -0.35 - Pink) and sensitive (<= -0.35 - Red). (i) DMSO (ii) Caffeine (iii) DTT (iv) Hydroxyurea show a shift from tolerant to intermediate and sensitive positions. (B) Positions binned by average fitness score mapped onto the ubiquitin structure. C-alpha atoms are shown in spheres and the residues are colored as in A. Met1 is colored grey. (C) New sensitive positions induced by the perturbation describe a shared response to perturbation with 8 of 13 positions shared between Caffeine, DTT and HU. (D) New intermediate positions highlight the similarity between HU and Caffeine, with DTT sensitizing a unique set of residues. (E) New tolerant positions are unique to each perturbation. (F) Average position fitness scores mapped onto ubiquitin. (i) DMSO (ii) Minimum average fitness score in all perturbations. C-alpha atoms are shown in spheres and the residues are colored according to average fitness. Met1 is colored grey. (G) Minimum average fitness scores \u2013 DMSO average fitness scores mapped onto ubiquitin. C-alpha atoms are shown in spheres and the residues are colored according to the difference in fitness. Met1 is colored grey. With this small set of perturbations most positions are sensitized.\n\n### Mutational sensitivity is primarily localized to three regions of Ub\n\nTo assess the role of specific positions in Ub we averaged the fitness score of each amino acid mutation at a given position. We then binned each position into sensitive ($\\leq$-0.35), intermediate (-0.35 to -0.075) and tolerant ($\\geq$-0.075) and examined the distribution of average fitness in each condition (Figure 8A). These distributions again show that most positions in Ub are tolerant to mutation in DMSO, but many positions are sensitized upon chemical perturbation.\n\nIn DMSO only residues with well-established roles are sensitive: Arg42 (E1 activation), Ile44 (hydrophobic patch hotspot), Lys48 (essential Lys48 linked poly-Ub) and Gly75-Gly76 of the C-terminus (E1 activation) (Figure 7). The face opposite the hydrophobic patch is mostly tolerant and the protein core and residues adjacent to the sensitive residues are mostly intermediate (Figure 8B - i). When treated with Caffeine, DTT or HU, a shared set of residues become sensitive (Figure 8B ii\u2013 iv, Figure 8C). These residues are either: located adjacent to DMSO sensitive residues (e.g. Leu73, which is in the C-terminal tail); residues with important biological functions that of intermediate sensitivity in DMSO (e.g. Leu8, Val70, which are important hydrophobic patch residues); or core residues (e.g. Ile36, Leu71). These positions tolerated a small set of substitutions in DMSO but upon perturbation became only tolerant of mutations that share physical chemistry with the wild type residue.\n\nExamining the positions made intermediate by the perturbations highlights the similarities and differences between the DTT and Caffeine/HU datasets (Figure 8D). All three perturbations shift a shared set of residues to the intermediate bin. These residues are mostly surface residues on the tolerant face of Ub. In DMSO they tolerate a wide range of amino acids. Upon perturbation the mutational tolerance is reduced to amino acids generally compatible with surface residues. For example in DMSO, Asp32 is tolerant to any substitution except Proline. Upon perturbation, this position is restricted to polar and negative substitutions.\n\nAdditionally, DTT uniquely shifts five positions into the intermediate bin. This is due to subtle changes in the tolerance of positions that are otherwise highly tolerant. For example, mutations at Arg54 are well tolerated in all other conditions. However, in DTT mutations to negative residues become deleterious while all other substitution remain tolerated. This suggests that Arg54 may participate in a salt bridge during a protein-protein interaction that is involved in mediating the cellular response to DTT.\n\nWe also uncovered newly tolerant positions, which are uniquely tolerant to each of the perturbations (Figure 8E). These positions tend to be mildly sensitive to most mutations in DMSO, suggesting that these residues are involved in biological pathways that are important for cellular function, but not essential. When perturbed, these positions are mildly desensitized to mutation, with little regard for mutant amino acid identity. The most striking example is at Lys63 in DTT. In all other conditions any mutation of this residue is mildly deleterious. Because Lys63 linked poly-Ub chains are important for efficient cargo sorting in the endosome, this sensitivity is likely due to an endocytic defect. However, upon DTT treatment most mutants of Lys63 show WT-like fitness. This suggests an epistatic interaction between DTT treatment and mutations at Lys63. The endocytic defect caused by mutation Lys63 is likely masked by a similar endocytic defect induced by DTT treatment. Average difference maps showing the (DMSO - perturbation) fitness score highlight the features that underlie the sensitized and desensitized positions (Figure 4).\n\nIn a final effort to resolve the dichotomy between the Ub fitness landscape and the evolutionary record, we visualized the average fitness of each position in DMSO and compared it to the minimum of the average fitness of each position for all perturbations (Figure 8F,G). The data in DMSO again shows that biologically relevant positions are sensitive, the face opposite the hydrophobic patch is extremely tolerant to mutation, and that core residues are intermediately tolerant. Perturbations dramatically increase mutational sensitivity at the C-terminus, around the hydrophobic patch and at some core positions. However, much of the tolerant face of the protein remains tolerant to mutation in all of the perturbations. By exploring a wider array of perturbations we should be able determine the environmental pressures that constrain these tolerant positions and explain the extreme conservation of Ub.\n\n### Specific elements of the shared response to perturbations\n\nTo determine the elements of the shared response to HU, Caffeine and DTT, we defined 'shared sensitizing mutations' as those that were both sensitizing (delta fitness \u2264 -0.2 for all perturbations) and consistent between perturbations (within 0.1 of the regression line) (Figure 9A and Figure 9\u2014source data 1). Most of these mutations change from being mildly deleterious to being nearly null upon chemical stress. For example, in DMSO Ub tolerates mutation to small hydrophobics and other polar residues at Thr7. However, chemical stresses causes mutations of small hydrophobic or charged residues at this position to be deleterious. As Thr7 is adjacent to the hydrophobic patch residue Leu8, this sensitization is likely due to non-polar substitutions disrupting Ub adaptor protein binding and poly-Ub packing (Komander and Rape, 2012). Additionally, typically destabilizing substitutions such as Proline or Tryptophan generally become more deleterious under perturbation.\n\n### Specific residues connect different stresses to Ub protein-protein interactions\n\nWe also investigated specific signals outside of the shared sensitizing response (Figure 9B). We identified perturbation specific mutations by comparing the change in fitness scores of each of the sensitizing perturbations (Figure 9\u2014source data 2, 3). Because these mutants are not sensitized by all of the perturbations they likely alter binding to specific adaptors, conjugation machinery, or substrates. Most of these perturbation specific mutants are tolerated in Caffeine and HU, but sensitized by DTT treatment. However, the H68Y mutation differs as DTT and HU treatments sensitize this mutation whereas Caffeine treatment does not. His68 is an important position found at the interface between Ub and adaptor domains such as UIM and UBA domains. These domains are important for the trafficking of ubiquitinated proteins. His68 lies adjacent to the hydrophobic patch and binding to UIM domains is reduced when it is protonated (Fujiwara et al., 2004). In contrast, when His68 is mutated to Val in Ub, the binding to UIM domains is increased, likely mimicking the deprotonated state that forms a hydrophobic surface (Fujiwara et al., 2004).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/15802/elife-15802-fig9-v2.jpg)\n\n**Figure 9.:** (A) DMSO fitness - Caffeine fitness vs. DMSO fitness - DTT fitness. The markers are colored based on DMSO fitness - Hydroxyurea fitness. (B) DMSO fitness - Caffeine fitness vs. DMSO fitness - Hydroxyurea fitness. The markers are colored based on DMSO fitness - DTT fitness. (C) DMSO fitness - DTT fitness vs. DMSO fitness - Hydroxyurea fitness. The markers are colored based on DMSO fitness - Caffeine fitness.\n\nLys11 is similarly important for Ub biology and shows a specific sensitization to DTT. Lys11 linked poly-Ub chains are the second most abundant linkage in yeast. These chains likely signal for degradation by the proteasome, like Lys48 linked chains, and have been implicated in the response to ER stress (Xu et al., 2009). In DMSO all substitutions, except to negative and aromatic residues, are tolerated. However, substitutions to Leu, Ile, His and Asn are sensitized uniquely in DTT. These data suggest that Lys11 is mediating an interaction to DTT induced stress. Although previous studies have indicated a synthetic lethal interaction between Lys11Arg and DTT (Xu et al., 2009), in our experiments, at lower DTT concentrations, the relatively high fitness of Lys11Arg suggests that the structural role of the positively charged residues and not poly-Lys11 Ub linkages may dominate the physiological response.\n\nIn addition to fitness defects that are likely due to perturbing Ub/protein interfaces, we also observed defects due to perturbing ploy-Ub chain structure and dynamics. Lys63 linked poly-Ub chains exist in three distinct conformations in solution (Liu et al., 2015). The populations of these conformational states help determine binding partner selection between Lys63 linked chains and adaptor proteins. Mutating Glu64 to Arg biases the chains towards the open conformation (Liu et al., 2015). In DMSO, the mutation of Glu64 to a positive residue caused a fitness defect. In Caffeine and HU these mutants are sensitized and the fitness defect is further increased. However, DTT treatment increased the tolerance to positive mutations at this position, again suggesting an interaction between Lys63 linked poly-Ub and DTT treatment.\n\n## Discussion\n\nWe have determined the fitness landscape of Ub in yeast grown in the presence of five chemical perturbations. We identified newly sensitized positions in the protein, which supports the hypothesis that the Ub sequence is highly constrained by its role in a wide array of environmental stress responses. Although each perturbation had some unique features, we observed a general buffering effect that may have obscured mutational sensitivity in the previously determined Ub fitness landscape.\n\nPerhaps the most surprising result in our study was the failure to recapitulate the synthetic lethal interaction between Lys11Arg and DTT (Xu et al., 2009). This interaction was observed using the same strain (SUB328), however fitness was determined through a dilution spot assay on an agar plate containing 30\u00a0mM DTT. Our experiments were conducted in liquid culture with 1\u00a0mM DTT refreshed every sampling period. It is likely that we did not achieve a stress regime where Lys11 poly-Ub is essential for DTT tolerance. The Lys11Arg mutation induces the upregulation of proteins involved in ERAD including Ubc6, the ERAD E2. Also, the turnover of known ERAD substrates is unaffected by the Lys11Arg mutation, suggesting that Lys48 linked chains can be substituted for Lys11 linked chains (Xu et al., 2009). These adaptations could be sufficient to counteract the loss of Lys11 poly-Ub in our experiments, but are insufficient at higher concentrations of DTT. It would be interesting to explore these two regimes and determine the concentration of DTT that induces the lethality of the Lys11Arg mutant.\n\nTaken together, these data represent a step towards understanding the apparent dichotomy between the Ub conservation and the previously determined Ub fitness landscape. While much of the protein is tolerant to mutation when cells are grown with traditional laboratory conditions, new stress conditions reveal hidden mutational sensitivity. We show that thirteen new positions are extremely sensitized in at least one stress condition with an additional thirteen new positions intermediately sensitized. While the incorporation of these new stresses provides a rationale for an additional 1/3 of the protein, we cannot currently explain the conservation of some positions in the 'tolerant' face of the protein. Expanding the set of chemical perturbations assayed may begin to address this dichotomy further. It is also possible that mutations at tolerant positions create fitness defects that are too subtle to be determined by our current methods. These subtle defects can lead to the sequence conservation observed in Ub when a large population undergoes selection over a longer evolutionary time (Boucher et al., 2014). Future experiments may be able to identify these effects by: i) increasing the dose of the perturbation; ii) reducing the expression of the mutant Ub; or iii) performing the selection over more generations (Rockah-Shmuel et al., 2015).\n\nThe observed fitness defects can be due either to the functional properties of the mutant or the concentration of free Ub in the cell. The mutants in the library are all expressed on the same plasmid and the same promoter, which gave us confidence to interpret the effect of the mutants on Ub thermostablitly and biological function. However, it is important to note that the fitness defects may be due to decreased Ub mutant expression or increased Ub mutant degradation.\n\nHistorically, many temperature sensitive mutants are not deficient in protein activity, but rather have increased protein turnover by the proteasome due to destabilizing mutations (Gardner et al., 2005). Ub turnover is unique in that free Ub is not degraded (Shabek et al., 2007) and conjugated Ub is degraded by the proteasome when the DUBs Upb6 and Rpn11 do not remove Ub from the substrate, causing Ub to be pulled into the proteasome along with the substrate protein (Hanna et al., 2007). Additionally, the free Ub pool can be increased by the activity of the DUB Doa4 (Kimura et al., 2009), which cleaves Ub conjugates into free Ub. Therefore some of the mutants may increase Ub turnover either by interfering with DUB recognition or by destabilizing Ub and easing Ub unraveling by the proteasome (Lee et al., 2001; Prakash et al., 2004). Selection experiments that probe protein-protein interactions more directly, similar to those performed between the yeast E1 and Ub (Roscoe and Bolon, 2014), may be able to directly determine whether some mutants have abnormal proteasomal engagement and turnover.\n\nThe inability of SUB328 to regulate the free Ub pool by increasing expression may also limit the interpretation of our results. Physiologically Ub protein levels are maintained by strong expression of the UBI4 locus in response to stress conditions (Finley et al., 1987). In the strain used in these experiments (SUB328 (Finley et al., 1994), the native Ub loci have been deleted and complemented with both a plasmid containing WT Ub and a plasmid containing the mutant Ub. Therefore, SUB328 can no longer respond to stress by increasing the expression of UBI4 and is entirely dependent on DUB based mechanisms to maintain the free Ub pool, increasing the fitness defects of mutants that interfere with Doa4, Upb6, and Rpn11 activity. Alternatively, SUB328 expressing a deficient Ub mutant might increase Ub expression by increasing the copy number of the plasmid. While integrating these Ub alleles into the genome would remove copy number variation, it would also dramatically decrease number of Ub variants that could be assessed due to the relative inefficiency of integration when compared to transformation.\n\nWhile these caveats are a concern, the SUB328 experimental system has been successfully used for many years to assess the effect of Ub mutations in yeast (Roscoe et al., 2013; Sloper-Mould et al., 2001; Lee et al., 2014). Furthermore, we have only interpreted mutants that cause large defects, such as the biologically sensible fitness defects of mutations at known important residues such as Leu8 or Lys48 and residues with fitness values that vary between conditions such as His68. The fitness effects at these variable positions are not simply due to expression or turnover defects, which should decrease fitness uniformly across the chemical stresses. Therefore, mutants that affect protein turnover or expression are likely members of the 'shared response' mutants described above. In the case where a perturbation increased Ub turnover we would expect that most positions would be uniformly sensitized. Instead we observe a stereotyped pattern of sensation for the three sensitizing perturbations, suggesting that Ub turnover is similar for all three perturbations and the 'perturbation specific mutations' are independent of protein turnover and/or expression defects.\n\nThese experiments also demonstrate the success of graduate-level project based courses (Vale et al., 2012) as key components of a first-year curriculum. Our students were able to generate high quality data and useable computational pipelines during the 8 weeks of class time. These successes are notable because few students began the class with a background in both areas. By creating a project lab environment that encouraged team based learning and teaching, we enabled students to quickly acquire relevant skills within the context of an active research project. The wide variety of stress responses that Ub mediates and the vast chemical space that can be safely and economically addressed in a classroom make yeast and Ub ideal systems for continuing these studies. It is our hope that other graduate programs can similarly offer project based classes in their curriculums and we will make our reagents available for use to further that goal.\n\n## Materials\u00a0and\u00a0methods\n\nAdditional material is available on our website (www.fraserlab.com/pubs_2014) and GitHub (https://github.com/fraser-lab/PUBS2014). Raw Sequencing reads are made available via SRA (SRR3194828)\n\n### Yeast library\n\nYeast strain SUB328 (MATa lys2-801 leu2-3,2\u2013112 ura3-52 his3-\u0394200 trp1-1 ubi1-\u03941::TRP1 ubi2-\u03942::ura3 ubi3-\u0394ub-2 ubi4-\u03942::LEU2 (pUB146) (pUB100)) (Finley et al., 1994) was used, which expresses ubiquitin from a galactose-inducible promoter in pUB146. pUB100 expresses the Ubi1 tail. A library of ubiquitin genes was saturated with point mutations (Roscoe et al., 2013). Barcodes were added by ligating N18 oligos flanked by EagI and AscI sites into each of the eight previously create Ub libraries. These libraries were bottlenecked by transformation into E. coli and then pooled to create the single N18BC-UbLib. This pooled library was transformed into E. coli to create the final N18BC-UbLib.\n\n### Barcode association PCR/library/sequencing\n\nTo associate the N18BCs to a given Ub allele, we performed a paired end read on the Illumina MiSeq. Because Ub is a small gene, we were able to read the entire ORF with a 260 bp read and the associated N18BC with a 30 bp read. To prepare the library for sequencing, plasmid DNA was extracted from E. coli using the Omega Bio-Tek mini-prep kit. A ~700 bp product was amplified with primers containing the Illumina PE1 and PE2 primer sequences for 9 cycles to minimize PCR recombination. These products were separated on agarose gel, and excised products were purified by silica column. This library was prepared for sequencing on the Illumina MiSeq.\n\n### Drug concentration\n\nThe concentration to reduce the growth rate of SUB328 (WT Ub) by 25% was determined by monitoring the growth of cells by optical density measurements at 600nm over 8\u2009hr. MG132 and DMSO did not affect SUB328 (WT Ub) growth rate at any tested concentration. Hydroxyurea treatment induces a lag-phase followed by WT like growth.\n\n### EMPIRIC-BC\n\n#### Transformation\n\nSUB328 strain was independently transformed three times with the barcoded Ub library. Two of these transformations (LibA, LibB) were transformed with the LiAc method described previously (Gietz and Woods, 2002). The third library (LibC) was transformed using the hybrid LiAc/electroporation protocol described previously (Benatuil et al., 2010). Libraries were grown in log phase for 48\u2009hr @ 30*C in SRGal (synthetic, 1% raffinose, 1% galactose) + G418 and ampicillin and then flash frozen in LN2 at late log phase and stored at -80*C as 1\u2009mL aliquots.\n\n#### Library growth and sample collection\n\nFrozen aliquots were thawed and grown in 50\u2009mL SRGal +G418 in log-phase for 48\u2009hr to remove dominant negative alleles. The library was transferred into SD (synthetic, 2% glucose) + G418 as described (Roscoe et al., 2013). The library was maintained in log-phase for 12\u2009hr in SD + G418, at which time an initial sample was collected as described (Roscoe et al., 2013). The libraries were then maintained in log-phase growth by diluting cells into fresh SD +G418 every 12\u2009hr, in the presence of the perturbation. The perturbation was refreshed with each dilution. Samples were taken every 2\u20133 SUB328 (WT Ub) generations.\n\n#### PCR and miniprep\n\nPlasmid DNA was extracted from yeast and prepared for deep sequencing. Yeast pellets were thawed and lysed and plasmid DNA recovered as previously described (Roscoe et al., 2013). A 268 bp product was amplified from the plasmids by PCR, using only 9 cycles of amplification. This product contained the N18BC. PCR products were separated on agarose gel, and excised products were purified by silica column. A second round of PCR was performed to add unique indices (Illumina TruSeq) to barcode each sample.\n\n#### Sequencing and data analysis\n\nEach PCR product was quantified by qBit and diluted to 4\u00a0nM. The samples were then pooled and the pooled libraries prepared for sequencing on the Illumina HiSeq. The N18BCs were sequenced with a single end HiSeq run with a custom primer (TGCAGCGGCCCTGAGTCCTGCC) that read directly into the N18BC. Samples were indexed using the HiSeq indexing read and the Illumina TruSeq indices.\n\n#### Pipeline\n\n##### Module 0: Sub assembly\n\nScript1:\n\n01_sele_BC.py paired_end_read1.fasq > good_BC_reads.fastq\n\nThis script takes a raw fastq file (Illumina output) and checks each sequence to see if it matches the expected Ub-Library vector sequence after the N18 bar-code Input file should be the Read1 output file of a paired end Illumina read. The output is matched sequences in fastq format printed to the terminal. The script will also write a log file named 'Script01_logfile.txt' by default\n\n02_pair_reads.py good_BC_reads.fastq paired_end_read2.fastq -o pair_dict.pkl\n\nThis script takes the output fastq from 01_sele_BC.py and creates a dictionary keyed on the sequence sample ID. It then takes the full raw read2 fastq and associates the sample N18 bar-code with the Ub sequence from read2. The output is a dictionary keyed on the sample ID with values as a 2 item list. the first entry is the N18 bar-code (pair_dict[identity_key][0]). The second is a list of the Ub sequence from read2 (pair_dict[identity_key][1]).\n\npair_dict.pkl\n\n{\u2018SampleID\u2019:[\u2018Barcode\u2019, \u2018Ub_sequence\u2019], \u2026}\n\n03_sequences_assigned_to_barcode.py pair_dict.pkl -o barcode_to_Ub.pkl\n\nThis script takes the output from 02_pair_reads.py and associates a given N18 barcode with all the related ubiquitin sequences. It then returns a dictionary that is keyed on the barcode with values of a list of all associated ubiquitin reads.\n\nbarcode_to_Ub.pkl\n\n{\u2018Barcode\u2019: [\u2018Ub_sequence1\u2019, \u2018Ub_sequence2\u2019, \u2026]... }\n\n04_generate_consensus.y barcode_to_Ub.pkl -o Allele_Dictionary.pkl\n\nThis script takes the output from 03_sequences_assigned_to_barcode.py and generates a consensus sequence from the list of Ub sequences associated with a given barcode. The mutant in the consensus sequence is identified and associated with the barcode. A barcode must be observed at least 3 times and the consensus sequence must contain only one mutation to be included. The output is a dictionary keyed on the barcode with a tuple value of (int(amino_acid_position), str(mutant_codon))\n\nAllele_Dictionary.pkl\n\n{\u201cbarcode\u201d: (aa_position_in_Ub, Mutant_Codon)}\n\n\u201cAGCTCTA\u201d: (74, AUU)\n\n\u201cAGCCCTA\u201d: (5, GCU)}\n\n##### Module 1: Extract BC counts from fastq with Hamming error correction\n\nRequires seqmatch.py to be present in the working directory. The below scripts use function imported from this file\n\nScript1:\n\nfastq_index_parser_v4.py data.fastq --indices barcodes.txt -o indexed_data.pkl --index_cutoff 2 --const_cutoff 2\n\nThis will take the fastq files from a sequence run as input and create dictionaries that are keyed on the sample index and have values of barcode:quality score. The index and const cutoffs are Hamming distance cutoffs for the sample index (2 is acceptable because all TS BCs used are greater than 2 Hamming distance apart) and constant region of the vector (again 2 is acceptable because we are matching to a known constant region of length 8)\n\ndata.fastq - fastq formatted file directly from the sequencer\n\nbarcodes.txt - a table delimited file with 2 columns, the first being the name of the index and the second being the DNA sequence of the index\n\nTS1 CGTGAT\n\nTS2\u2003ACATCG\n\nTS3 GCCTAA\n\nindexed_data.pkl\n\n{TS1:{barcode:quality-score,... }, TS2:{barcode:quality-score,... },... ,}\n\n{TS1:{\u2018AGCTCTA\u2019:\u2019*55CCF>\u2019,...}...}\n\nScript2:\n\npkl_barcode_parser.py indexed_data.pkl --out_pickle indexed_data_counts.pkl --allele_pickle Allele_Dictionary.pkl --fuzzy_cutoff 2\n\nThis scripts takes in the pkl file produced by the previous script for each sample and checks the fastq quality scores and matches the sequenced barcodes to those identified by the assembly of the library and counts the number of times a barcode is observed. This script also uses the Hamming distance between an observed barcode and members of the Allele_Dictionary to assign counts to previously observed barcodes even if a sequencing error occurred in a given read. The 'fuzzy_cutoff' parameter sets the max Hamming distance considered.\n\nindexed_data_counts.pkl\n\n{TS1:{barcode:number-of-reads,... }, TS2:{barcode:number-of-reads,... }, \u2026}\n\n{TS1:{\u2018AGCTCTA\u2019: 147,...}...}\n\nScript 3:\n\npickleread.py indexed_data_counts_1.pkl... indexed_data_counts_N.pkl --out_dir output_files/ --pkl_basename TS_ --allele_pickle Allele_Dictionary.pkl\n\nThis script takes the output from multiple runs of 'pkl_barcode_parser.py' and combines the counts. This will result in one dictionary for each sample index with barcodes sequence as key and the number of reads as values.\n\nThe output files (pkl) will be as follows (30 pkl files):\n\nTS1:{barcode:number-of-reads,... }\n\nTS2:{barcode:number-of-reads,... }\n\n\u2026\n\nTSN:{barcode:number-of-reads,... }\n\n##### Module 2: Initial scoring - Barcodes, initial counts cutoff = 3\n\nScript1:\n\npickle_condensing.py TS_1.pkl TS_2.pkl TS_3.pkl perturbation replicate -o Barcode_Counts.pkl\n\nThis script simply takes the counts from the dictionaries created by Module 0 Script 3 and combines them into a single dictionary that contains the counts for a given barcode for all 3 samples that describe an experiment. The perturbation and replicate inputs are used in naming the output dictionary.\n\nScript2:\n\nScore_BCs.py Barcode_Counts.pkl Allele_Dictionary.pkl time1 time2 -o Barcode_scores.pkl\n\nBarcode_Counts.pkl\n\n{\u201cbarcode\u201d: [count_sample1, count_sample2\u2026]}\n\n\u201cAGCTCTA\u201d: [15, 3, 1]\n\n\u201cAGCCCTA\u201d: [222, 23, 21]}\n\nThis script takes a. pkl of a dictionary (Barcode_Counts.pkl) keyed on the sample barcodes with values of a list of counts at each time point. The scoring function uses these counts and scores them based on the time values (in WT generations) - the relative fitness is compared to wild type barcodes, which are distinguished in Allele_Dictionary.pkl. Output is a dictionary keyed on sample barcode with values of the fitness score. Fitness scores are determined by calculating the slope of the regression line of the three counts for each barcode. The score reported is log2(Mutant Slope/ WT Slope). Any barcode that is observed three or less times in the initial sample is not used in the fitness score calculation\n\nBarcode_scores.pkl\n\n{\u201cbarcode\u201d: float(Fitness_score)}\n\n\u201cAGCTCTA\u201d: -0.56\n\n\u201cAGCCCTA\u201d: -0.1}\n\n##### Module 3: Outlier detection and removal\n\ntoss_outliers.py Barcode_scores.pkl codon 4 -o clean_BCs.pkl\n\nclean_BCs.pkl\n\n{\u201cdirty_barcodes\u201d: [(aa_position_in_Ub, Mutant_Codon, barcode) \u2026]\n\n\u201cclean_barcodes\u201d: [(aa_position_in_Ub, Mutant_Codon, barcode) \u2026]}\n\n\u201cdirty_barcodes\u201d: [(74, AUU, \u201cAGCTCTA\u201d), (21, CCC, \u201cACTTCTA\u201d) \u2026]\n\n\u201cclean_barcodes\u201d: [(5, GCU, \u201cAGCCCTA\u201d), (21, UUU, \u201cGCATTTC\u201d) \u2026]}\n\nThis script compares the scores of barcodes mapping to the same allele. The median absolute deviation (MAD) is calculated for the barcodes that map to the same allele. Outlier barcodes are determined as scores that are greater than or equal to 1.5 times the interquartile range of the distribution and removed. The codon flag tells the script to compare all scores mapping to the same codon. The 4 flag sets the minimum number of barcodes before the MAD will be performed. The output is a pkl of barcodes to be kept in the dataset.\n\nremove_bad_BCs.py Barcode_scores.pkl clean_BCs.pkl Allele_Dictionary.pkl -o Barcode_scores_outliers_removed.pkl\n\nThis script checks the Barcode_scores dictionary against the clean_BCs returned by toss_outliers.py and removes those BCs that are not in the clean_BCs.pkl. The script returns a dictionary keyed on sample barcode with fitness scores as values but with outlier BCs removed.\n\nBarcode_scores_outliers_removed.pkl\n\n{\u201cbarcode\u201d: float(Fitness_score)}\n\n\u201cAGCCCTA\u201d: -0.1\n\n\u201cGCATTTC\u201d: -0.67}\n\n##### Module 4: Create matrix\n\nheatmap_BCs.py Barcode_scores_outliers_removed.pkl Allele_Dictionary.pkl -o Barcode_scores_outliers_removed_matrix.pkl\n\nThis script takes the Barcode scores and averages them to the amino acid level. It then outputs these scores as a heatmap and as a numpy matrix pkl.\n\nBarcode_scores_outliers_removed_matrix.pkl\n\nmasked_array(data = [21X76 matrix containing fitness scores for each aa substitution])\n\n[[-- -0.631791406846642 -0.5397724613430753... , -0.3530569856099873\n\n-0.4209070611721436 --]\n\n[-- -0.04155544432657808 --... , -- -0.4672829444990562\n\n-0.015863306980341812]\n\n[-- -0.06881685222913404 -0.3000996826283508... , -0.09038257104760622\n\n-0.5060198247122988 --]\n\n... ,\n\n[-- -0.2136845391374962 -0.5846954623554699... , -0.5201027046981986 -- --]\n\n[-- -0.037103840372513595 -0.6445621511224743... , -0.6398418859301449\n\n-0.5009308293341608 --]\n\n[-- -0.03813077561871194 -0.5946959237696324... , -0.5684471534238328\n\n-0.3959407495759722 --]]\n\n#### Rosetta predictions of ubiquitin stability changes upon point mutations\n\nWe used Rosetta version number 55,534 for all simulations. The Rosetta software can be downloaded at www.rosettacommons.org.\n\nUsing the crystal structure of human ubiquitin (1UBQ) as input, we first introduced three mutations to match the S. cerevisiae sequence using Rosetta fixed backbone design:\n\nCommand line:\n\nUBQ_to_yeast.res file contents:\n\nNATRO\n\nstart\n\n19 A PIKAA S\n\n24 A PIKAA D\n\n28 A PIKAA S\n\nWe then followed a protocol described by Kellogg & coworkers (Kellogg et al., 2011) for estimating stability changes in monomeric proteins in response to point mutations. For documentation of the protocol and file formats (mut_file, cst_file), see https://www.rosettacommons.org/docs/latest/application_documentation/analysis/ddg-monomer\n\nThe first step minimizes the input structure (the model of yeast ubiquitin generated above, 1UBQ_0001.pdb):\n\nCommand line (weights file sp2_paper_talaris2013_scaled.wts in supplement):\n\nThe second step performs the stability calculations:\n\nCommand line:\n",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "6346507f-e7af-4ae7-b588-4b0f87fb87f5",
+      "submission_id": "03e00349-035b-460c-969c-4225a04b1262",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jeffery W Kelly, Scripps Research Institute , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.15802.022](https://doi.org/10.7554/eLife.15802.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\n[Editors\u2019 note: a previous version of this study was rejected after peer review, but the authors submitted for reconsideration. The previous decision letter after peer review is shown below.]\n\nThank you for submitting your work entitled \"Determination of Ubiquitin Fitness Landscapes Under Different Chemical Stresses in a Classroom Setting\" for consideration by eLife. Your article has been reviewed by two expert peer reviewers, and the evaluation has been overseen by a Reviewing Editor (Jeffery W. Kelly) and Diethard Tautz as the Senior Editor. Our decision has been reached after consultation between the reviewers. Based on these discussions and the individual reviews below, we regret to inform you that your work will not be considered further for publication in eLife.\n\nThe authors propose that the major take-home of their paper is to measure the fitness of all Ubiquitin mutants after exposing yeast to distinct stresses, i.e. chemical perturbations, the idea being that mutants might be functionally deficient under stress conditions-which is not a new concept.\n\nAs Reviewer 1 points out, the authors do not consider the possibility that mutations could affect the level (or turnover rate) of ubiquitin. Rather, the tendency is to attribute the fitness effects to perturbed protein-protein interactions, ubiquitin chain formation, and so forth-which could be the case, but, as in any mutagenesis study, effects on protein level or degradation are possible and it seems that this must be probed for this paper to be considered.\n\nReviewer 2 feels that the authors have only partially succeeded in resolving the apparent conflict between the strict conservation of ubiquitin sequence in evolution and its mutational tolerance in the lab. The authors reveal that different stresses do sensitize new positions in ubiquitin, but they fail to deal directly with the fundamental limitation of experimental assays to measure small fitness effects, which seems like a very important issue regarding drawing strong conclusions from this work.\n\nThis work is certainly an inspiration and a call-to-arms for graduate programs, since it demonstrates the potential of project-based courses. We only encourage resubmission if the authors can deal with all of the reviewer comments, especially the above-mentioned critical concerns of reviewers 1 and 2 (see below for the remainder of the reviewer comments).\n\nReviewer #1:\n\nSince the 80's ubiquitin has been assaulted by structural biochemists, physical biochemists, and geneticists. It is of interest because of its central role in cellular regulation, its extraordinary evolutionary conservation, the multiplicity of its interactors, the stability of it structure, and the speed of its folding. The present study is motivated by the conundrum that ubiquitin is so highly conserved while in experimental settings tolerating substitution at many residues.\n\nThis paper describes a plunge into the importance of individual amino acid residues to fitness across the sequence of ubiquitin, focusing on stress conditions, using a very sophisticated approach including a deep dataset. It's a good rationale since stress states and particularly stationary phase (though that was not examined) probably do contribute substantially to natural selective pressures. The most interesting data are those showing distinct mutational profiles depending on the type of stress applied. In an extreme case, the stressor MG132 improved rather than attenuated mutational robustness. In general this is a well-executed and interesting study. Thus the data are good and I fully support publication. However, it may be that the interpretation is a bit narrow, a problem that is correctable.\n\nThe Discussion does not consider the possibility that mutations could affect the level (or turnover rate) of ubiquitin. Rather, the tendency is to attribute the fitness effects to perturbed protein-protein interactions, ubiquitin chain formation, and so forth \u2013 which may well be the case for the bulk of mutants. But in any mutagenesis, possible effects on protein level or degradation rates are in play, or to put it differently, this may play a role in the fitness landscape of many proteins. Many ts mutants are ts for protein levels, not function, with the ts protein being eliminated by the proteasome (Gardiner et al. Cell 120, 803 [2005]). Is ubiquitin any different? Ubiquitin is an unusual protein in these respects. Under stress conditions, ubiquitin rapidly declines in levels, and the UBI4 gene, running off of a strong promoter, serves principally to preserve ubiquitin levels under a variety of stress conditions, and in stationary phase (Cell 1987; 48: 1035-1046 [2007]). Other genes also play key roles in sensing and adjusting ubiquitin levels (Mol Cell Biol. 23: 9251-9261 [2003]; Cell 129, 747 [2007]; Cell 137: 549-59 [2009]). In the host strain, the levels of ubiquitin, if wild-type, do appear to be adequate after shift to galactose (Mol Cell Biol 23: 9251-9261 [2003]).\n\nWhy does ubiquitin decline under stress? In yeast, ubiquitin is degraded with a half-life of ~2 hr, as measured in this strain. This proceeds mainly via the proteasome (Mol Cell Biol 23: 9251-9261 [2003]), when deubiquitinating enzymes Ubp6 and Rpn11 together fail to remove ubiquitin from proteolytic substrates, and ubiquitin is dragged into the core particle. Accordingly, only conjugated ubiquitin is degraded, not free (Biochem Biophys Res Comm 363:425-31 [2007]).\n\nUbiquitin is exceptionally stable physically (for example its melting temperature is about 85\u00b0C) though not at all metabolically. The authors allude to ubiquitin stability but only in the sense of physical stability. Their in silico approach points to a role of physical stability in accounting for some of the observed effects but it's possible that the physical stability effects are mediated through metabolic instability, which was not examined, or that metabolic stability effects are in play where physical stability is only modestly perturbed.\n\nThe exceptional physical stability may reflect the need to minimize ubiquitin degradation by the proteasome, an occupational hazard unique to this molecule. If the proteasome fails to unfold ubiquitin, ubiquitin will not be dragged into the core particle and degraded, but rather it will be removed from substrate by deubiquitinating enzymes. This need for ubiquitin to resist the proteasome's mechanical unfolding action could possibly underlie the exceptional physical stability of ubiquitin and some component of its sequence conservation, whether substantial or not. Put differently, it might be reflected to some extent in the fitness landscape of ubiquitin. However, as noted above, unfolding by the proteasome is not equivalent to thermal unfolding (Mol Cell 7:627-37 [2001]; Nat Struct Mol Biol 11:830-7 [2004]), so purely physical studies might miss relevant effects.\n\nSince all endogenous ubiquitin genes are deleted in the host strain, some of the ability to regulate ubiquitin levels is also lost in the strain, and cells may consequently have trouble adapting to stress. Whether this is affecting results in these particular cases I don't know, but it is worth considering or mentioning. Ideally one would assess ubiquitin levels in the various mutants, though because they are mutants antibody recognition may be affected, so this approach could be flawed. Quantitative mass spectrometry would be the preferred method.\n\nThe importance of ubiquitin levels could be underestimated in work involving steady-state growth in the host strain, because any effect on ubiquitin levels can be compensated by adjustments in plasmid copy number. This is not a fast mechanism so would essentially not operate over the time course of the present studies. Thus, when examining ubiquitin under stress, in this short-term protocol, this putative effect could be more prominent than otherwise. Ultimately, integrated mutants will have advantages where ubiquitin levels are a concern, as potential plasmid copy number effects will be eliminated. It may be argued that the different relative mutant fitness seen under different stresses mitigates ubiquitin levels as a concern. Perhaps so, but degradation itself will be affected differently by these stresses; I don't think this argument can entirely neutralize the problem.\n\nOne of the more interesting findings in the paper is that the MG132-specific effects are overall opposite in sign to those of other stressors. High dose MG132 drives ubiquitin into conjugates and depletes free pools. For low doses such as used here, who knows. Conceivably the present results may be explained by an overall slowing of ubiquitin degradation, thus preserving ubiquitin levels over the time course of the experiment.\n\nReviewer #2:\n\nThe authors present the acquisition and analysis of ubiquitin fitness landscapes under a set of distinct chemical stresses. The main goal of the work is to resolve the apparent conflict between the strict conservation of ubiquitin sequence in evolution and its mutational tolerance in the lab. In this task the authors are only partially successful, revealing that different stresses do sensitize new positions in ubiquitin but failing to deal directly with the fundamental limitation of experimental assays to measure small fitness effects. I found the experiments and analysis to be well executed, although details are lacking in some areas. The work is an inspiration and a call-to-arms for graduate programs, since it demonstrates the potential of project-based courses.\n\nGeneral comments:\n\n1) I don't like the bone white -> blue color scheme, especially for the scatter plots. Because the bone white is so close to white, points on this end of the spectrum are hard to see and generally contribute much less visual weight to the plot. Such a color scheme would make sense if the information being conveyed was, for example, a p-value (such that points with small values should carry less weight than points with large ones). However, they're equally important so the authors should change their color scheme.\n\n2) The authors make the argument that there is a paradox inherent in the mutational tolerance of ubiquitin and its sequence conservation. They propose that distinct stressors place distinct constraints on ubiquitin and that integrating over all relevant stressors produces strong constraint. In the Discussion, they briefly consider a very important alternative hypothesis: that the assays used to measure ubiquitin mutational tolerance in the EMPIRIC and ala-scan papers are insensitive to small fitness effects. Large populations and evolutionary timescales can act on such small fitness effects. This caveat should be mentioned earlier on. I also think the manuscript could benefit from an expanded discussion of this point. To what extent can experiments like these address this question? How does this study relate to others in this area (e.g. PMID: 26274323)?\n\n3) The idea that lab conditions mask constraints on protein sequence (and genomes generally) is not new. I was disappointed to find that the manuscript lacked a discussion of other work in this broad area and that the authors did not place their work in the context what is already known. My impression is that the work, while providing some interesting insights into specific ubiquitin mutations, didn't have much to add to the general problem of mutational context dependence.\n\n4) The authors include insufficient detail, often using imprecise language and failing to provide quantitative assessments. It really limited my enthusiasm for the work.\n\n5) The authors should make the raw reads available on SRA. The analyzed data should also be made available.\n",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "40cf8f8d-03fd-4e4a-9c40-d0721e2d68c3",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C1",
+      "claim": "Ubiquitin is essential for eukaryotic life.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquitin is essential for eukaryotic life and varies in only 3 amino acid positions between yeast and humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about ubiquitin's role in eukaryotic organisms.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "7da55840-8c75-477d-b3dc-0c4902fe7076",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C2",
+      "claim": "Ubiquitin varies in only 3 amino acid positions between yeast and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Ubiquitin is essential for eukaryotic life and varies in only 3 amino acid positions between yeast and humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about ubiquitin sequence conservation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "3a3be72f-6112-4af0-a737-782086e1ef41",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C3",
+      "claim": "Recent deep sequencing studies indicate that ubiquitin is highly tolerant to single mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, recent deep sequencing studies indicate that ubiquitin is highly tolerant to single mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to prior published research findings using deep sequencing approaches.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "a696d43d-52fb-49e4-b070-b93b77562c16",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C4",
+      "claim": "Chemical perturbations uncover 'shared sensitized positions' localized to areas around the hydrophobic patch and the C-terminus.",
+      "claim_type": "EXPLICIT",
+      "source": "These perturbations uncover 'shared sensitized positions' localized to areas around the hydrophobic patch and the C-terminus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "d3ff6378-129f-4226-abbf-7dd779acc00c",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C5",
+      "claim": "His68 is sensitized in HU treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we identified perturbation specific effects such as a sensitization of His68 in HU and a tolerance to mutation at Lys63 in DTT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the experimental data comparing different chemical perturbations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "a2d384a8-a9bb-4360-95e1-abaca5aee1b2",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C6",
+      "claim": "Lys63 shows tolerance to mutation in DTT treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we identified perturbation specific effects such as a sensitization of His68 in HU and a tolerance to mutation at Lys63 in DTT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific finding from the experimental data comparing different chemical perturbations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "f4cd1a30-6ecd-46f7-bffc-eadedc1eb4bc",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C7",
+      "claim": "Chemical stresses can reduce buffering effects in the ubiquitin proteasome system.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data show how chemical stresses can reduce buffering effects in the ubiquitin proteasome system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing increased mutational sensitivity under chemical stress.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "fcbdabd4-6c78-46ae-ad50-7ecb11eee49f",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C8",
+      "claim": "Protein homeostasis enables cells to engage in dynamic processes and respond to fluctuating environmental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein homeostasis enables cells to engage in dynamic processes and respond to fluctuating environmental conditions (Powers et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Powers et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "6bacc532-2673-41a2-9888-b20662aa75d5",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C9",
+      "claim": "Misregulation of proteostasis leads to disease, including many cancers and neurodegenerative diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "Misregulation of proteostasis leads to disease, including many cancers and neurodegenerative diseases (Balch et al., 2008; Lindquist and Kelly, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Balch et al., 2008 and Lindquist and Kelly, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "42bbfa88-9210-456a-ac97-832e438f2bd5",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C10",
+      "claim": "In eukaryotes ~80% of the proteome is degraded by the highly conserved ubiquitin proteasome system (UPS).",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotes ~80% of the proteome is degraded by the highly conserved ubiquitin proteasome system (UPS) (Zolk et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Zolk et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "4ea40e15-0c29-423b-b1fb-76c44909bd8b",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C11",
+      "claim": "Ubiquitin is a 76 amino acid protein post-translational modification that is ligated to substrate amine groups.",
+      "claim_type": "EXPLICIT",
+      "source": "The high conservation of the UPS is epitomized by ubiquitin (Ub), a 76 amino acid protein post-translational modification that is ligated to substrate amine groups, including on Ub itself in poly-Ub linkages, via a three enzyme cascade (Finley et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about ubiquitin structure and function, supported by citation to Finley et al., 2012.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "a6ee0fcb-e363-451a-954d-8b181316bae7",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C12",
+      "claim": "Only three residues vary between yeast and human ubiquitin (96% sequence identity).",
+      "claim_type": "EXPLICIT",
+      "source": "Only three residues vary between yeast and human (96% sequence identity).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about ubiquitin sequence conservation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "136a7a6a-e638-479f-b27f-5f228e4d06da",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C13",
+      "claim": "The role of Lys48 linked poly-Ub in protein degradation appears to be universally conserved.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of Lys48 linked poly-Ub in protein degradation (Thrower et al., 2000) appears to be universally conserved, but the functions of other linkages are more plastic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Thrower et al., 2000 and represents established knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "7adec8b9-53cb-4851-8a8c-42f99f9eab88",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C14",
+      "claim": "Every possible poly-Ub lysine linkage exists within yeast cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Although mass spectroscopy of cell lysates has shown that every possible poly-Ub lysine linkage exists within yeast cells (Peng et al., 2003), only the roles of Lys11 linked poly-Ub in ERAD (Xu et al., 2009) and Lys63 linked poly-Ub in DNA damage (Zhang et al., 2011) and endocytosis (Erpapazoglou et al., 2014) are well characterized in yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Peng et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "53b4ddb0-68c2-4377-8a4f-62c90a5ecd64",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C15",
+      "claim": "Lys11 linked poly-Ub plays a role in ERAD.",
+      "claim_type": "EXPLICIT",
+      "source": "Although mass spectroscopy of cell lysates has shown that every possible poly-Ub lysine linkage exists within yeast cells (Peng et al., 2003), only the roles of Lys11 linked poly-Ub in ERAD (Xu et al., 2009) and Lys63 linked poly-Ub in DNA damage (Zhang et al., 2011) and endocytosis (Erpapazoglou et al., 2014) are well characterized in yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Xu et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "b74bc2ad-e7b7-4793-afc2-df9776909ec3",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C16",
+      "claim": "Lys63 linked poly-Ub plays a role in DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Although mass spectroscopy of cell lysates has shown that every possible poly-Ub lysine linkage exists within yeast cells (Peng et al., 2003), only the roles of Lys11 linked poly-Ub in ERAD (Xu et al., 2009) and Lys63 linked poly-Ub in DNA damage (Zhang et al., 2011) and endocytosis (Erpapazoglou et al., 2014) are well characterized in yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Zhang et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "94638067-16ee-4413-8e28-b248954f16af",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C17",
+      "claim": "Lys63 linked poly-Ub plays a role in endocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although mass spectroscopy of cell lysates has shown that every possible poly-Ub lysine linkage exists within yeast cells (Peng et al., 2003), only the roles of Lys11 linked poly-Ub in ERAD (Xu et al., 2009) and Lys63 linked poly-Ub in DNA damage (Zhang et al., 2011) and endocytosis (Erpapazoglou et al., 2014) are well characterized in yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Erpapazoglou et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "6093de26-40df-441a-a2b1-69b0ce524b73",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C18",
+      "claim": "Classic Alanine-scanning studies showed that ubiquitin is quite tolerant of mutation under normal growth conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, classic Alanine-scanning studies showed that ubiquitin is quite tolerant of mutation under normal growth conditions (Sloper-Mould et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Sloper-Mould et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "6051c379-8488-48e4-94b1-a3d02f5e2afe",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C19",
+      "claim": "The high mutational tolerance of Ub was confirmed using EMPIRIC.",
+      "claim_type": "EXPLICIT",
+      "source": "The high mutational tolerance of Ub was further confirmed using EMPIRIC ('extremely methodical and parallel investigation of randomized individual codons'), where growth rates of yeast strains harboring a nearly comprehensive library of all ubiquitin point mutations were assessed in bulk by deep sequencing (Roscoe et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Roscoe et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "bc32c111-5f8d-4147-a3b0-3badf0f14ebf",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C20",
+      "claim": "Many of the constraints on the Ub sequence are enforced directly by the E1-Ub interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent studies revealed that many of the constraints on the Ub sequence are enforced directly by the E1-Ub interaction (Roscoe and Bolon, 2014); however, the surprisingly high number of tolerant positions remained unexplained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Roscoe and Bolon, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "6fe8c512-fe7f-4b6c-80ad-f0ef3604e2ae",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C21",
+      "claim": "Previous EMPIRIC experiments on HSP90 suggested that reducing protein expression could reveal fitness defects that are otherwise buffered.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous EMPIRIC experiments on HSP90 suggested that reducing protein expression could reveal fitness defects that are otherwise buffered (Jiang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Jiang et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "10fb64b2-4d11-493d-bd37-5f9a85bef14a",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C22",
+      "claim": "Ub overexpression is protective against the general translational inhibitor cycloheximide.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Ub overexpression is protective against the general translational inhibitor cycloheximide (Hanna et al., 2003) and the deubiquitinating enzyme Ubp6 is upregulated upon stress to increase the pool of free Ub in the cell (Hanna et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Hanna et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "eb8e5a5c-9ae5-4864-9d06-755b7a1d9a62",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C23",
+      "claim": "The deubiquitinating enzyme Ubp6 is upregulated upon stress to increase the pool of free Ub in the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Ub overexpression is protective against the general translational inhibitor cycloheximide (Hanna et al., 2003) and the deubiquitinating enzyme Ubp6 is upregulated upon stress to increase the pool of free Ub in the cell (Hanna et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Hanna et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "427056ae-68e5-418c-b274-494a04014668",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C24",
+      "claim": "Caffeine inhibits TOR and consequently the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "In small teams of 4\u20135 students working together for 3 afternoons each week, they each examined a chemical stressor: Caffeine, which inhibits TOR and consequently the cell cycle (Reinke et al., 2006; Wanke et al., 2008);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Reinke et al., 2006 and Wanke et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "75e74695-e8c3-4429-8e35-e6a3e3b41d8a",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C25",
+      "claim": "Dithiothreitol (DTT) reduces disulfides and induces the unfolded protein response.",
+      "claim_type": "EXPLICIT",
+      "source": "Dithiothreitol (DTT), which reduces disulfides and induces the unfolded protein response (Frand and Kaiser, 1998) and the ER associated decay (ERAD) pathway (Friedlander et al., 2000);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Frand and Kaiser, 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "14da90fb-9ca6-4b31-9771-c65f123c63dc",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C26",
+      "claim": "Dithiothreitol (DTT) induces the ER associated decay (ERAD) pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Dithiothreitol (DTT), which reduces disulfides and induces the unfolded protein response (Frand and Kaiser, 1998) and the ER associated decay (ERAD) pathway (Friedlander et al., 2000);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Friedlander et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "b5b47f0b-a45e-4691-bb94-34ac44196c87",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C27",
+      "claim": "Hydroxyurea (HU) causes pausing during DNA replication and induces DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Hydroxyurea (HU), which causes pausing during DNA replication and induces DNA damage (Ko\u00e7 et al., 2004; Petermann et al., 2010);",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Ko\u00e7 et al., 2004 and Petermann et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "bce64f01-6168-4cd0-94d5-f6f28425c5fb",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C28",
+      "claim": "MG132 inhibits the protease activity of the proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "or MG132, which inhibits the protease activity of the proteasome (Jensen et al., 1995; Rock et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Jensen et al., 1995 and Rock et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "1593c100-7586-4b68-bbdf-446025d33392",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C29",
+      "claim": "The library is ~97.5% complete at the amino acid level.",
+      "claim_type": "EXPLICIT",
+      "source": "The library is ~97.5% complete at the amino acid level.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct measurement of the library coverage from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "810d7d5a-155d-43de-9397-01fd591f7581",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C30",
+      "claim": "A slight GC bias is observed in the codon coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a slight GC bias in the codon coverage (Figure 1B\u2013C), which is likely due to the cloning method that initially generated the Ub mutants (Hietpas et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the experimental data shown in Figure 1B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "4f0fbbb9-1648-45d4-a24e-0fc8fe09c33f",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C31",
+      "claim": "The median number of unique barcodes representing a specific amino acid substitution is fifteen.",
+      "claim_type": "EXPLICIT",
+      "source": "Most substitutions are associated with many N18 BCs, with a median of fifteen unique barcodes representing a specific amino acid substitution (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from the experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "b6f66d99-573b-4b7d-98ad-6741428ffbcc",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C32",
+      "claim": "The fitness landscape determined in DMSO is quite similar to the previously published dataset collected under no chemical stress.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting fitness landscape is quite similar to the previously published dataset, which was collected under no chemical stress (Roscoe et al., 2013) (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison between the current experimental data and previously published data, with reference to Roscoe et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "6f372472-34df-4e7e-88ad-9e01e9f5e9de",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C33",
+      "claim": "The lowest fitness scores occurred at premature stop codons and residues that are critical to build Lys48 poly-Ub linkages (Lys48, Ile44, Gly75, Gly76).",
+      "claim_type": "EXPLICIT",
+      "source": "The lowest fitness scores occurred at premature stop codons and residues that are critical to build Lys48 poly-Ub linkages (Lys48, Ile44, Gly75, Gly76).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental fitness data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "9b808273-caa6-4eb7-936c-cb71c8e2ee3d",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C34",
+      "claim": "Much of the protein surface is tolerant to mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously observed, much of the protein surface is tolerant to mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data that is consistent with prior findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "7a62044f-180e-467b-b842-757b47beb7b7",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C35",
+      "claim": "Comparisons of biological replicates indicated that the data were reproducible and well fit by a Lorentzian function centered at 0.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparisons of biological replicates indicated that the data were reproducible and well fit by a Lorentzian function centered at 0, as expected for the ratio of two Gaussian distributions (Figure 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical analysis of the experimental data shown in Figure 3C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "48336d9a-71a5-4156-8299-e0a1e9a1553e",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C36",
+      "claim": "Caffeine, DTT, and HU sensitize many mutations, which become less fit than in DMSO.",
+      "claim_type": "EXPLICIT",
+      "source": "In Caffeine, DTT, and HU (Figure 4A\u2013D, Figure 4\u2014figure supplements 1\u20133) many mutations are sensitized, and become less fit than in DMSO.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data comparing fitness under different chemical perturbations, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "9855127e-3d65-42f3-b564-0dfc06170dd0",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C37",
+      "claim": "Increased sensitivity is localized around the C-terminus and the hydrophobic patch.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally this increased sensitivity is localized around the C-terminus, which is essential for E1 activation, and the hydrophobic patch, which is the dominant interface for protein-protein interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data describing the spatial distribution of sensitized mutations.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "8cec3f80-5631-44ba-a088-560029b2689a",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C38",
+      "claim": "MG132 increases mutational tolerance throughout the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the sensitizing effects of DTT, Caffeine, and HU, the proteasome inhibitor MG132 increases mutational tolerance throughout the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data comparing fitness under MG132 treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "315852d1-a87f-4afd-afaa-0acd147fa933",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C39",
+      "claim": "The alleviating effect of MG132 is small at the concentration assayed, likely due to the poor penetrance of MG132 in yeast cells containing a wild type allele of ERG6.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect is small at the MG132 concentration we assayed, which is likely due to the poor penetrance of MG132 in yeast cells containing a wild type allele of ERG6 (Lee and Goldberg, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data with reference to Lee and Goldberg, 1996.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "ce3bf756-5239-4cae-8be1-c9409628c397",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C40",
+      "claim": "Caffeine, DTT and HU generally sensitize the protein to mutation, which is evident in the enrichment of mutations with reduced fitness compared to the DMSO self distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Caffeine, DTT and HU generally sensitize the protein to mutation, which is evident in the enrichment of mutations with reduced fitness compared to the DMSO self distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the statistical analysis of the experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "789c0283-6a77-4316-aeb8-6549912fdd44",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C41",
+      "claim": "Newly sensitized mutations are largely shared between different chemical perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "These newly sensitized mutations are largely shared between these different chemical perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing the experimental data across different chemical perturbations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "30a25477-25f0-420b-b56c-75dc044a0dc7",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C42",
+      "claim": "MG132 slightly shifts the distribution to the right when compared to the DMSO self distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, MG132 slightly shifts the distribution to the right, which highlights the alleviating interaction between MG132 and deleterious ubiquitin alleles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the statistical analysis of the experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "ad796216-b9de-42fe-baab-2ef04ed82506",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C43",
+      "claim": "The difference distributions are wider than the distribution between DMSO replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the difference distributions are wider than the distribution between DMSO replicates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "4d3f784f-8c8c-48b2-b347-2d210b3ad232",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C44",
+      "claim": "Each perturbation uncovers unique roles of Ub residues in responding to a specific perturbation.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead these data show that each perturbation uncovers unique roles of Ub residues in responding to a specific perturbation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing perturbation-specific effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "a6f7bf59-ed21-4539-b5f6-4ef2f6b7507d",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C45",
+      "claim": "A significant difference in experimental fitness is observed between mutations predicted to be destabilizing versus neutral/stabilizing for all conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a significant difference in experimental fitness between the two predicted classes for all conditions (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing Rosetta predictions with experimental fitness data, shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "fba29b0f-cd42-40a2-bdb4-bc783732f985",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C46",
+      "claim": "Ubiquitin stability is more important for fitness in each of the perturbed conditions than in unperturbed yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that ubiquitin stability is more important for fitness in each of the perturbed conditions than in unperturbed yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the Rosetta modeling and experimental fitness data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "f4e09567-aa60-4885-9a0c-dc9f309261f5",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C47",
+      "claim": "In DMSO only residues with well-established roles are sensitive: Arg42 (E1 activation), Ile44 (hydrophobic patch hotspot), Lys48 (essential Lys48 linked poly-Ub) and Gly75-Gly76 of the C-terminus (E1 activation).",
+      "claim_type": "EXPLICIT",
+      "source": "In DMSO only residues with well-established roles are sensitive: Arg42 (E1 activation), Ile44 (hydrophobic patch hotspot), Lys48 (essential Lys48 linked poly-Ub) and Gly75-Gly76 of the C-terminus (E1 activation) (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data in DMSO condition, with reference to Figure 7.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "e9676a25-79e2-41e9-852f-94a83bf854f3",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C48",
+      "claim": "When treated with Caffeine, DTT or HU, a shared set of residues become sensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "When treated with Caffeine, DTT or HU, a shared set of residues become sensitive (Figure 8B ii\u2013 iv, Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the experimental data comparing fitness under different chemical perturbations, shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "0b0d372a-dcd6-4e79-9dfd-f428f5d39aa5",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C49",
+      "claim": "Eight of 13 new sensitive positions are shared between Caffeine, DTT and HU.",
+      "claim_type": "EXPLICIT",
+      "source": "New sensitive positions induced by the perturbation describe a shared response to perturbation with 8 of 13 positions shared between Caffeine, DTT and HU.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from analyzing the experimental data across perturbations, shown in Figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "2d42db66-296c-4146-b702-0eb46927e00c",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C50",
+      "claim": "In all conditions except DTT, any mutation of Lys63 is mildly deleterious.",
+      "claim_type": "EXPLICIT",
+      "source": "The most striking example is at Lys63 in DTT. In all other conditions any mutation of this residue is mildly deleterious.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing the experimental fitness data across different conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "918a6944-bdad-47e1-8294-b1de9bb4ff86",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C51",
+      "claim": "Upon DTT treatment most mutants of Lys63 show WT-like fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "However, upon DTT treatment most mutants of Lys63 show WT-like fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental fitness data in DTT condition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "59b03549-c818-45ab-b0be-b4c20f317bbb",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C52",
+      "claim": "The sensitivity of Lys63 mutations is likely due to an endocytic defect.",
+      "claim_type": "EXPLICIT",
+      "source": "Because Lys63 linked poly-Ub chains are important for efficient cargo sorting in the endosome, this sensitivity is likely due to an endocytic defect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on established knowledge about Lys63 function and the experimental data.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "00c33896-f489-47a8-9ae7-c3962bfacf2f",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C53",
+      "claim": "The endocytic defect caused by mutation Lys63 is likely masked by a similar endocytic defect induced by DTT treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The endocytic defect caused by mutation Lys63 is likely masked by a similar endocytic defect induced by DTT treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data suggesting an epistatic interaction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "5140f4a6-2273-422d-aa46-209f116916aa",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C54",
+      "claim": "Perturbations dramatically increase mutational sensitivity at the C-terminus, around the hydrophobic patch and at some core positions.",
+      "claim_type": "EXPLICIT",
+      "source": "Perturbations dramatically increase mutational sensitivity at the C-terminus, around the hydrophobic patch and at some core positions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing the experimental data across perturbations, shown in Figure 8F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "8604553d-f719-451b-8517-778f7246c8cc",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C55",
+      "claim": "Much of the tolerant face of the protein remains tolerant to mutation in all of the perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, much of the tolerant face of the protein remains tolerant to mutation in all of the perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data across all perturbations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "843f937d-4662-4c4b-a462-5f3f1260f6d4",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C56",
+      "claim": "Most shared sensitizing mutations change from being mildly deleterious to being nearly null upon chemical stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of these mutations change from being mildly deleterious to being nearly null upon chemical stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from analyzing the experimental data for shared sensitizing mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "d93e64ab-8c5c-43ec-94b9-a6198bc11ee2",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C57",
+      "claim": "His68 lies adjacent to the hydrophobic patch and binding to UIM domains is reduced when it is protonated.",
+      "claim_type": "EXPLICIT",
+      "source": "His68 lies adjacent to the hydrophobic patch and binding to UIM domains is reduced when it is protonated (Fujiwara et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Fujiwara et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "ac4eabf8-3e6c-4636-9d29-3b161a7bf52d",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C58",
+      "claim": "When His68 is mutated to Val in Ub, the binding to UIM domains is increased, likely mimicking the deprotonated state that forms a hydrophobic surface.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when His68 is mutated to Val in Ub, the binding to UIM domains is increased, likely mimicking the deprotonated state that forms a hydrophobic surface (Fujiwara et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Fujiwara et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "3f47aab4-2c6a-4ff0-9063-a9712f4e79c6",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C59",
+      "claim": "Lys11 linked poly-Ub chains are the second most abundant linkage in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Lys11 is similarly important for Ub biology and shows a specific sensitization to DTT. Lys11 linked poly-Ub chains are the second most abundant linkage in yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about Lys11 linkages in yeast.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "cecc1aa1-9f5a-4c20-a348-b215cb9acab3",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C60",
+      "claim": "Lys11 linked chains likely signal for degradation by the proteasome, like Lys48 linked chains, and have been implicated in the response to ER stress.",
+      "claim_type": "EXPLICIT",
+      "source": "These chains likely signal for degradation by the proteasome, like Lys48 linked chains, and have been implicated in the response to ER stress (Xu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Xu et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "00f0616e-e384-428a-bf2d-f6878dd8debb",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C61",
+      "claim": "The relatively high fitness of Lys11Arg suggests that the structural role of the positively charged residues and not poly-Lys11 Ub linkages may dominate the physiological response.",
+      "claim_type": "EXPLICIT",
+      "source": "Although previous studies have indicated a synthetic lethal interaction between Lys11Arg and DTT (Xu et al., 2009), in our experiments, at lower DTT concentrations, the relatively high fitness of Lys11Arg suggests that the structural role of the positively charged residues and not poly-Lys11 Ub linkages may dominate the physiological response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data in the context of prior findings.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "82771414-6ee3-4a67-b05d-240d2382f2b3",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C62",
+      "claim": "Lys63 linked poly-Ub chains exist in three distinct conformations in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Lys63 linked poly-Ub chains exist in three distinct conformations in solution (Liu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Liu et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "905a7ef5-317a-46b7-b38d-810a0b8dddba",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C63",
+      "claim": "Mutating Glu64 to Arg biases Lys63 linked chains towards the open conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "The populations of these conformational states help determine binding partner selection between Lys63 linked chains and adaptor proteins. Mutating Glu64 to Arg biases the chains towards the open conformation (Liu et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Liu et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "0ee41c76-fe90-4cdc-aca9-1a4885d07ddf",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C64",
+      "claim": "In DMSO, the mutation of Glu64 to a positive residue caused a fitness defect.",
+      "claim_type": "EXPLICIT",
+      "source": "In DMSO, the mutation of Glu64 to a positive residue caused a fitness defect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental fitness data in DMSO condition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "94ece11b-4808-4274-8af8-d6efae4b6a4e",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C65",
+      "claim": "In Caffeine and HU, Glu64 mutants to positive residues are sensitized and the fitness defect is further increased.",
+      "claim_type": "EXPLICIT",
+      "source": "In Caffeine and HU these mutants are sensitized and the fitness defect is further increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental fitness data in Caffeine and HU conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "7dac010f-2970-4bfa-a9ef-9de4c2e062b7",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C66",
+      "claim": "DTT treatment increased the tolerance to positive mutations at Glu64.",
+      "claim_type": "EXPLICIT",
+      "source": "However, DTT treatment increased the tolerance to positive mutations at this position, again suggesting an interaction between Lys63 linked poly-Ub and DTT treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental fitness data in DTT condition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "82ea0027-65ef-4ed6-8fce-37b0dfecab94",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C67",
+      "claim": "The study failed to recapitulate the synthetic lethal interaction between Lys11Arg and DTT.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps the most surprising result in our study was the failure to recapitulate the synthetic lethal interaction between Lys11Arg and DTT (Xu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the experimental data that differs from prior published results.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "fc2281ee-d09b-4202-a2b7-204ddef9d6a0",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C68",
+      "claim": "The experiments were conducted in liquid culture with 1 mM DTT refreshed every sampling period.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experiments were conducted in liquid culture with 1 mM DTT refreshed every sampling period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "4d9d0ef1-be0b-414e-ad9c-1b41a7ee15fe",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C69",
+      "claim": "The Lys11Arg mutation induces the upregulation of proteins involved in ERAD including Ubc6, the ERAD E2.",
+      "claim_type": "EXPLICIT",
+      "source": "The Lys11Arg mutation induces the upregulation of proteins involved in ERAD including Ubc6, the ERAD E2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about the cellular response to Lys11Arg mutation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "85cc1fe9-92b8-4794-b935-77d8f915f6a4",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C70",
+      "claim": "The turnover of known ERAD substrates is unaffected by the Lys11Arg mutation, suggesting that Lys48 linked chains can be substituted for Lys11 linked chains.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the turnover of known ERAD substrates is unaffected by the Lys11Arg mutation, suggesting that Lys48 linked chains can be substituted for Lys11 linked chains (Xu et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Xu et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "3fd41324-6445-4a28-ae72-1ee2d8e9e88e",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C71",
+      "claim": "Thirteen new positions are extremely sensitized in at least one stress condition.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that thirteen new positions are extremely sensitized in at least one stress condition with an additional thirteen new positions intermediately sensitized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from analyzing the experimental data across stress conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "e669bba1-9d33-4675-b289-5f4fd41ff8b4",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C72",
+      "claim": "An additional thirteen new positions are intermediately sensitized.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that thirteen new positions are extremely sensitized in at least one stress condition with an additional thirteen new positions intermediately sensitized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from analyzing the experimental data across stress conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "1145017f-b07a-4881-94a2-60ba98ec8c94",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C73",
+      "claim": "The incorporation of new stresses provides a rationale for an additional 1/3 of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "While the incorporation of these new stresses provides a rationale for an additional 1/3 of the protein, we cannot currently explain the conservation of some positions in the 'tolerant' face of the protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data about the fraction of the protein explained by the perturbations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "78566ed4-f4ff-4467-89cd-b4d68162982e",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C74",
+      "claim": "Free Ub is not degraded.",
+      "claim_type": "EXPLICIT",
+      "source": "Ub turnover is unique in that free Ub is not degraded (Shabek et al., 2007) and conjugated Ub is degraded by the proteasome when the DUBs Upb6 and Rpn11 do not remove Ub from the substrate, causing Ub to be pulled into the proteasome along with the substrate protein (Hanna et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Shabek et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "4c0e4062-5d82-4754-b3f0-6f8205077c63",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C75",
+      "claim": "Conjugated Ub is degraded by the proteasome when the DUBs Upb6 and Rpn11 do not remove Ub from the substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Ub turnover is unique in that free Ub is not degraded (Shabek et al., 2007) and conjugated Ub is degraded by the proteasome when the DUBs Upb6 and Rpn11 do not remove Ub from the substrate, causing Ub to be pulled into the proteasome along with the substrate protein (Hanna et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Hanna et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "e0c2f4e4-a88b-47cd-a6d0-73bb15b32771",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C76",
+      "claim": "The free Ub pool can be increased by the activity of the DUB Doa4, which cleaves Ub conjugates into free Ub.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the free Ub pool can be increased by the activity of the DUB Doa4 (Kimura et al., 2009), which cleaves Ub conjugates into free Ub.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Kimura et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "0eea5376-6c6e-4f85-ba00-f59da545e72a",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C77",
+      "claim": "Physiologically Ub protein levels are maintained by strong expression of the UBI4 locus in response to stress conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Physiologically Ub protein levels are maintained by strong expression of the UBI4 locus in response to stress conditions (Finley et al., 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Finley et al., 1987.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "dde2d723-e23c-4186-add4-a1c62f4625d1",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C78",
+      "claim": "SUB328 can no longer respond to stress by increasing the expression of UBI4 and is entirely dependent on DUB based mechanisms to maintain the free Ub pool.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, SUB328 can no longer respond to stress by increasing the expression of UBI4 and is entirely dependent on DUB based mechanisms to maintain the free Ub pool, increasing the fitness defects of mutants that interfere with Doa4, Upb6, and Rpn11 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental system based on the genetic modifications in SUB328.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "5caf0073-93d9-4782-ba20-721fb0ac3021",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C79",
+      "claim": "The SUB328 experimental system has been successfully used for many years to assess the effect of Ub mutations in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "While these caveats are a concern, the SUB328 experimental system has been successfully used for many years to assess the effect of Ub mutations in yeast (Roscoe et al., 2013; Sloper-Mould et al., 2001; Lee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Roscoe et al., 2013; Sloper-Mould et al., 2001; Lee et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "92fac214-09c7-47bb-b12b-94bfa93c92e6",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C80",
+      "claim": "Students were able to generate high quality data and useable computational pipelines during the 8 weeks of class time.",
+      "claim_type": "EXPLICIT",
+      "source": "Our students were able to generate high quality data and useable computational pipelines during the 8 weeks of class time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the outcomes of the educational component of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "13e4224e-f247-4e8b-9829-1c53c58dd816",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C81",
+      "claim": "Yeast strain SUB328 was used in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Yeast strain SUB328 (MATa lys2-801 leu2-3,2\u2013112 ura3-52 his3-\u0394200 trp1-1 ubi1-\u03941::TRP1 ubi2-\u03942::ura3 ubi3-\u0394ub-2 ubi4-\u03942::LEU2 (pUB146) (pUB100)) (Finley et al., 1994) was used, which expresses ubiquitin from a galactose-inducible promoter in pUB146.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "f26a4ff3-23fc-49cd-a0c5-dbb7afdd5a43",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C82",
+      "claim": "The concentration to reduce the growth rate of SUB328 (WT Ub) by 25% was determined by monitoring the growth of cells by optical density measurements at 600nm over 8 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The concentration to reduce the growth rate of SUB328 (WT Ub) by 25% was determined by monitoring the growth of cells by optical density measurements at 600nm over 8 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used to determine drug concentrations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "ef4a5109-e635-43e6-9509-e4e193a7440f",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C83",
+      "claim": "MG132 and DMSO did not affect SUB328 (WT Ub) growth rate at any tested concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "MG132 and DMSO did not affect SUB328 (WT Ub) growth rate at any tested concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the growth rate experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "cb683a71-40da-4f4b-b406-3e1b4c8db7b0",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C84",
+      "claim": "Hydroxyurea treatment induces a lag-phase followed by WT like growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Hydroxyurea treatment induces a lag-phase followed by WT like growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the growth rate experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "52fd63ef-c54b-4c5b-a274-cbea3244460e",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C85",
+      "claim": "Rosetta version number 55,534 was used for all simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "We used Rosetta version number 55,534 for all simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "ddae80bd-6f83-41b8-a074-7309e34b4d88",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C86",
+      "claim": "The crystal structure of human ubiquitin (1UBQ) was used as input for Rosetta simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the crystal structure of human ubiquitin (1UBQ) as input, we first introduced three mutations to match the S. cerevisiae sequence using Rosetta fixed backbone design:",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "b3d7e4ae-8e52-49fd-aeeb-3f303a8faf71",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C87",
+      "claim": "Three mutations were introduced to match the S. cerevisiae sequence using Rosetta fixed backbone design.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the crystal structure of human ubiquitin (1UBQ) as input, we first introduced three mutations to match the S. cerevisiae sequence using Rosetta fixed backbone design:",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "f2fb848a-20ea-4283-9778-76b45eeba9ea",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C88",
+      "claim": "The barcoding strategy allowed determination of allele fitness in a single experiment using EMPIRIC with barcodes (EMPRIC-BC).",
+      "claim_type": "EXPLICIT",
+      "source": "To increase the throughput and reduce the cost of the experiment, we designed a barcoding strategy (Fowler et al., 2014), that allowed us to determine allele fitness in a single experiment using EMPIRIC with barcodes (EMPRIC-BC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design with reference to Fowler et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "9db623f3-5bc1-48a2-9f7d-81da230467a4",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C89",
+      "claim": "The barcoding strategy substantially reduced cost compared to previous methods.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to simplifying the experiment, this strategy enabled us to count the alleles with a short, single end sequencing run, substantially reducing cost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the advantages of the experimental design.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "6b3cdbba-0ef8-4407-af2c-936dd25c1399",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C90",
+      "claim": "A minimum fitness score of -0.5 was set based on the average value of the stop codon substitutions.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the average value of the stop codon substitutions, we set a minimum fitness score of -0.5 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the data analysis methods with reference to Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "8714df2b-30f7-477e-9789-3a907765bff1",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C91",
+      "claim": "Competition experiments require cells growing for multiple generations in log phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Because our competition experiments require cells growing for multiple generations in log phase, we conducted our experiments at chemical concentrations that inhibit yeast growth by 25%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design constraints.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "99d4483e-fcca-40dc-836f-a82db730fbc8",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C92",
+      "claim": "The chemical concentrations used are not as high as used in previous transcriptional studies of yeast chemical stress responses.",
+      "claim_type": "EXPLICIT",
+      "source": "These chemical concentrations are not as high as used in previous transcriptional studies of yeast chemical stress responses (Gasch et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior studies with reference to Gasch et al., 2000.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "d793f1a2-586e-4634-a9b5-9a8df801045e",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C93",
+      "claim": "The IC25 for Caffeine is 7.5 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "For Caffeine (7.5 mM), and DTT (1 mM) we determined the IC25 for each drug by following growth via optical density (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the growth rate experiments shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "a2e9baa5-34bb-4dcc-a3ea-243b43cd7168",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C94",
+      "claim": "The IC25 for DTT is 1 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "For Caffeine (7.5 mM), and DTT (1 mM) we determined the IC25 for each drug by following growth via optical density (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the growth rate experiments shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "60c797be-e7b8-465b-939c-b6744290a298",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C95",
+      "claim": "The IC25 concentration for HU is 25 mM.",
+      "claim_type": "EXPLICIT",
+      "source": "Since HU (25 mM) induced a lag phase followed by near wild type like growth, we determined the IC25 concentration by monitoring yeast growth from two to five hr post treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the growth rate experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "05abf008-b723-4746-87c8-d80dfe960df5",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C96",
+      "claim": "DMSO (0.5%) did not inhibit growth.",
+      "claim_type": "EXPLICIT",
+      "source": "DMSO (0.5%) and MG132 (50 uM) did not inhibit growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the growth rate experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "d7d31dce-565c-496e-9bf0-6999d55520c5",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C97",
+      "claim": "MG132 (50 uM) did not inhibit growth.",
+      "claim_type": "EXPLICIT",
+      "source": "DMSO (0.5%) and MG132 (50 uM) did not inhibit growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the growth rate experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "73d7972c-a9fd-4d65-9634-fec7b1d67612",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C98",
+      "claim": "The alleviating interaction between MG132 and deleterious ubiquitin alleles is likely because MG132 directly perturbs proteasome, reducing the impact of defects related to Lys48 linked poly-Ub chains.",
+      "claim_type": "EXPLICIT",
+      "source": "This alleviating interaction is likely because MG132 directly perturbs proteasome, reducing the impact of defects related to Lys48 linked poly-Ub chains and leaving functions related to other, non-degradative poly-Ub topologies unperturbed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data based on the known mechanism of MG132.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "235b2c82-48e7-4287-a26d-2ecee94a36bc",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C99",
+      "claim": "Reducing proteasome activity may increase the free pool of Ub in the cell by reducing the number of Ub proteins degraded by the proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, reducing proteasome activity may increase the free pool of Ub in the cell by reducing the number of Ub proteins degraded by the proteasome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "55732c5a-515c-4ec5-b8de-e71ed94c1654",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C100",
+      "claim": "An increased pool of free Ub could buffer the effects of deleterious Ub mutants participating in non-proteasomal functions.",
+      "claim_type": "EXPLICIT",
+      "source": "This increased pool of Ub could buffer the effects of deleterious Ub mutants participating in non-proteasomal functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "e80af8c8-4b78-4387-96c8-35dcb43768fa",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C101",
+      "claim": "Subtle changes in Ub stability could induce fitness defects that are otherwise buffered under control (DMSO) conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Under stress, subtle changes in Ub stability could induce fitness defects that are otherwise buffered under control (DMSO) conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data and Rosetta modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "5c0d0af1-bb7f-4c3c-9aa8-5261ef57999c",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C102",
+      "claim": "Even small changes to ubiquitin stability could induce considerable changes to the Ub conformational ensemble that could destabilize Ub/protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, even small changes to ubiquitin stability could induce considerable changes to the Ub conformational ensemble that could destabilize Ub/protein complexes (Lange et al., 2008; Phillips et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Lange et al., 2008 and Phillips et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "fc04050f-9449-4818-a445-bcb9e81749b3",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C103",
+      "claim": "Adaptability within the UPS could buffer defects in DMSO, but they can be revealed upon chemical stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Adaptability within the UPS could buffer these defects in DMSO, but they can be revealed upon chemical stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "ab283acf-5369-4757-9977-cf51e36ee60e",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C104",
+      "claim": "The GC bias in codon coverage is likely due to the cloning method that initially generated the Ub mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a slight GC bias in the codon coverage (Figure 1B\u2013C), which is likely due to the cloning method that initially generated the Ub mutants (Hietpas et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the library characteristics with reference to Hietpas et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "799d677b-49ed-454c-99a3-c4f63c242d77",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C105",
+      "claim": "The UPS does not acquire new functions through mutations in ubiquitin.",
+      "claim_type": "IMPLICIT",
+      "source": "This remarkable conservation implies that the UPS does not acquire new functions through mutations in the central player, Ub.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the high sequence conservation of ubiquitin.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "13df1901-485d-4a0e-90fc-6b51bd321eac",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C106",
+      "claim": "The evolution of E2/E3 enzymes, DUBs, and adaptor proteins combine to create new UPS functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead the evolution of proteins that add Ub to substrate proteins (E2/E3 enzymes), remove Ub (deubiquitinating enzymes, DUBs), or recognize Ub (adaptor proteins) combine to create new functions, many of which rely on various poly-Ub topologies (Sharp and Li, 1987; Zuin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Sharp and Li, 1987 and Zuin et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "ebac0887-5a6d-41ff-964e-3ed79898b531",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C107",
+      "claim": "The high expression level of Ub might buffer some fitness defects.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the high expression level of Ub might buffer some fitness defects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed to explain the mutational tolerance of ubiquitin.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "4e2a7ae9-023f-4f88-bf33-43ca99ce2030",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C108",
+      "claim": "The buffering might be exposed by chemical perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "As an alternative approach to reducing expression, the buffering might also be exposed by chemical perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis that motivated the experimental design.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "1de0bf60-0fc0-4b82-a882-49c25e67c92e",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C109",
+      "claim": "The sequence of Ub is subject to many constraints arising from interacting with diverse proteins while mediating the stress responses to distinct chemical perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results suggest that the sequence of Ub is subject to many constraints arising from interacting with diverse proteins while mediating the stress responses to distinct chemical perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the literature review and experimental hypothesis.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "ed1f87e2-5124-4dbf-8032-421427aee355",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C110",
+      "claim": "Expanding the set of environmental stresses might be able to explain the high sequence conservation of ubiquitin.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that expanding the set of environmental stresses, and improved measurement of smaller fitness defects, might be able to explain the high sequence conservation of ubiquitin, as different positions in the protein are important for interactions mediating the specific responses to a wide variety of perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion and suggestion for future work based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "b3a370c2-9e1b-4b91-a0b6-e562e7b35a59",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C111",
+      "claim": "Different positions in the protein are important for interactions mediating the specific responses to a wide variety of perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that expanding the set of environmental stresses, and improved measurement of smaller fitness defects, might be able to explain the high sequence conservation of ubiquitin, as different positions in the protein are important for interactions mediating the specific responses to a wide variety of perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing perturbation-specific effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "3a8a9ef0-b682-41e3-aa08-8166a362b03a",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "claim_id": "C112",
+      "claim": "Small fitness defects that are undetectable by EMPIRIC may still be significant over evolutionary timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "Small fitness defects that are undetectable by EMPIRIC may still be significant over evolutionary timescales and are likely to similarly be enriched for certain chemicals (Boucher et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Boucher et al., 2014.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "59bd4445-fe4e-4b96-bc9a-88ff224b2093",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a barcoded ubiquitin mutant library (EMPIRIC-BC) that is ~97.5% complete at the amino acid level, with a median of 15 unique barcodes per amino acid substitution. This barcoding strategy allowed determination of allele fitness in a single experiment and substantially reduced sequencing costs compared to previous methods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C31 provide quantitative measurements of library completeness and barcode representation from experimental data. Claims C88-C89 describe the methodological advantages. The library construction is well-documented with appropriate metrics, and the barcoding approach is properly cited (Fowler et al., 2014).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "b78d8c1e-8974-4331-8aac-f263be347736",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The fitness landscape of ubiquitin in DMSO control conditions shows that only residues with well-established roles are sensitive (Arg42, Ile44, Lys48, Gly75-Gly76), while much of the protein surface is tolerant to mutation. This landscape is similar to previously published unperturbed data and shows good reproducibility between biological replicates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 and C47 collectively establish the baseline fitness landscape with appropriate controls and statistical validation. The data show good correlation with prior work (Roscoe et al., 2013), biological replicates are well-correlated (R\u00b2=0.79), and the residuals fit expected distributions. The identification of sensitive residues matches established biological knowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "0a153a94-d451-49b6-b552-61882f5f493e",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Chemical perturbations (Caffeine, DTT, HU) sensitize many ubiquitin mutations, with increased sensitivity localized around the C-terminus and hydrophobic patch. Thirteen new positions are extremely sensitized and an additional thirteen are intermediately sensitized, with 8 of 13 new sensitive positions shared between all three perturbations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C37, C40-C41, C48-C49, C54, C71-C72 provide converging evidence from multiple perturbations showing a shared sensitization pattern. The quantitative findings (13 extremely sensitized, 13 intermediately sensitized, 8 shared positions) are supported by experimental data shown in Figures 4-5 and 8. The spatial localization to functionally important regions is biologically coherent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "5819b7ce-6d1f-44ef-b138-5e8b5b86db34",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MG132 treatment increases mutational tolerance throughout ubiquitin, though the effect is small at the concentration tested, likely due to poor penetrance in yeast cells with wild-type ERG6. This alleviating effect is attributed to MG132 directly perturbing the proteasome and reducing the impact of defects related to Lys48-linked poly-Ub chains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39, C42, and C98 describe the MG132 effect with appropriate caveats about the small effect size and mechanistic interpretation. The observation is supported by experimental data (Figure 5D) and the interpretation is consistent with known MG132 mechanism (cited Lee and Goldberg, 1996). The authors appropriately acknowledge limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "e657063f-084c-4421-ba6a-f611debc8e32",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The difference distributions between perturbations are wider than between DMSO replicates, indicating that each perturbation uncovers unique roles of ubiquitin residues in responding to specific perturbations, with different positions important for interactions mediating responses to different stresses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 and C111 describe statistical properties of the data distributions that support perturbation-specific effects. The wider distributions indicate genuine biological variation beyond experimental noise, and this interpretation is consistent with the identification of perturbation-specific mutations described elsewhere in the manuscript.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "d2ee4b22-8e5e-4f78-9c52-8b26627e5a53",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Rosetta modeling predictions show that mutations predicted to be destabilizing have significantly lower experimental fitness than neutral/stabilizing mutations across all conditions. This suggests that ubiquitin stability is more important for fitness under perturbed conditions, and that subtle changes in stability could induce fitness defects that are buffered under control conditions but revealed upon chemical stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 present computational predictions validated by experimental data (Figure 6), with significant p-values for all conditions. Claims C101-C103 provide mechanistic interpretation supported by citations (Lange et al., 2008; Phillips et al., 2013). The correlation between predicted stability changes and experimental fitness provides independent validation of the experimental results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "a08d9421-ca20-478c-89d1-0a76fb3cf7b5",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Lys63 shows perturbation-specific behavior: mutations are mildly deleterious in all conditions except DTT, where most mutants show wild-type-like fitness. This is interpreted as an epistatic interaction where the endocytic defect caused by Lys63 mutation is masked by a similar endocytic defect induced by DTT treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C5, C50-C51 describe the experimental observation, which is supported by data. However, claims C52-C53 provide mechanistic interpretation that is speculative. While the interpretation is biologically plausible given the known role of Lys63-linked poly-Ub in endocytosis, direct evidence for the proposed epistatic interaction is not provided. The mechanism remains inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "7ab3d54e-1736-4f3b-903d-ffcf2a045bdc",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "His68 shows perturbation-specific sensitization. Mutations to positive residues at Glu64 (which affects Lys63-linked chain conformation) show fitness defects in DMSO that are increased in Caffeine and HU but decreased in DTT, suggesting interactions between Lys63-linked poly-Ub and DTT treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 provide established knowledge about His68 and Glu64 (cited Fujiwara et al., 2004; Liu et al., 2015). Claims C64-C66 describe experimental observations of perturbation-specific effects. The pattern of sensitization and desensitization across conditions is supported by experimental data and is consistent with the known structural biology of these residues.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "a47946aa-d1e7-46c0-8ba6-5eda93ab12d9",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study failed to recapitulate the previously reported synthetic lethal interaction between Lys11Arg and DTT. At the lower DTT concentration used (1 mM in liquid culture), the relatively high fitness of Lys11Arg suggests that the structural role of positively charged residues, rather than poly-Lys11 Ub linkages, may dominate the physiological response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 describe the negative result with appropriate methodological details. Claims C59-C61, C69-C70 provide context from prior work (Xu et al., 2009) and offer a reasonable interpretation. The authors appropriately acknowledge the discrepancy with prior work and provide a plausible explanation based on differences in experimental conditions (concentration, liquid vs. solid media). This is a well-documented negative result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "4c3f3e9e-ae88-42d0-8267-3731696d135e",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Chemical stresses reduce buffering effects in the ubiquitin proteasome system, with the incorporation of new stresses providing a rationale for an additional 1/3 of the protein. The authors suggest that expanding the set of environmental stresses might explain the high sequence conservation of ubiquitin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C7, C73 summarize the main findings supported by the experimental data. Claim C110 provides a forward-looking interpretation and suggestion for future work. The quantitative estimate (1/3 of protein explained) is supported by the data on newly sensitized positions. The conclusion appropriately acknowledges limitations and suggests future directions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "af76c5b4-09d4-4bd1-865b-8f20b4fa2d9b",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The SUB328 experimental system has limitations: it cannot respond to stress by increasing UBI4 expression and is entirely dependent on DUB-based mechanisms to maintain the free Ub pool. However, this system has been successfully used for many years to assess Ub mutations in yeast.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C78 describe the experimental system with appropriate citations and acknowledge its limitations. Claim C79 provides validation through prior successful use (cited Roscoe et al., 2013; Sloper-Mould et al., 2001; Lee et al., 2014). The authors appropriately discuss caveats while defending the validity of their approach based on precedent.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "285bbc5f-8d08-4453-be66-0a739e87ff9b",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Students in a graduate-level project-based course were able to generate high quality data and useable computational pipelines during 8 weeks of class time, demonstrating the success of this educational approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C80 is supported by the fact that the manuscript presents high-quality, publishable data generated by students. The reproducibility of the data, correlation with prior work, and successful implementation of the barcoding strategy all validate the educational outcomes. This demonstrates the feasibility of research-based graduate education.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "3bb6232b-732b-46e8-b1ca-8ce84be50acb",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Chemical concentrations were determined to inhibit yeast growth by 25% (IC25) to allow cells to grow for multiple generations in log phase during competition experiments. IC25 values were: Caffeine 7.5 mM, DTT 1 mM, HU 25 mM. DMSO (0.5%) and MG132 (50 \u03bcM) did not inhibit growth.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C84, C91, C93-C97 describe the experimental design rationale and specific concentration determinations. The IC25 approach is appropriate for competition experiments requiring multiple generations of growth. The concentrations are empirically determined and documented in Figure 4\u2014figure supplement 1. The methodological choices are well-justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "eddb9ea3-6d25-457a-95ca-4cd3c64ea505",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Rosetta version 55,534 was used for all simulations, with the crystal structure of human ubiquitin (1UBQ) as input. Three mutations were introduced using Rosetta fixed backbone design to match the S. cerevisiae sequence.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85-C87 provide specific computational methods details including software version, input structure, and protocol. This level of detail supports reproducibility. The approach of adapting the human structure to yeast sequence is appropriate and well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "f4c86a6e-1586-4df5-becf-833156d8ab00",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "A minimum fitness score of -0.5 was set based on the average value of stop codon substitutions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C90 describes a data analysis decision with clear rationale. Using stop codons as a reference for the minimum fitness score is biologically sensible, as these should represent null alleles. This is documented in Figure 3B.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "cf5b3880-434e-49db-b1f5-5a134d05d772",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Reducing proteasome activity may increase the free pool of Ub in the cell by reducing the number of Ub proteins degraded by the proteasome, and this increased pool could buffer the effects of deleterious Ub mutants participating in non-proteasomal functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C99-C100 present a speculative mechanistic interpretation of the MG132 results. While the hypothesis is plausible and consistent with known Ub biology, it is explicitly marked as speculative in the evidence type. No direct measurements of free Ub pools are provided to support this interpretation. This remains an untested hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "6fa0d0cb-ec2a-43a5-a4ed-2c7fe8c61668",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Ubiquitin is essential for eukaryotic life and highly conserved, varying in only 3 amino acid positions between yeast and humans (96% sequence identity). This conservation implies that the UPS does not acquire new functions through mutations in ubiquitin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C12 state established facts about ubiquitin conservation. Claim C105 draws a reasonable inference from this conservation. These are well-established aspects of ubiquitin biology that provide context for the study. The inference about functional constraint is standard evolutionary reasoning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "7672427e-7044-47a1-83be-5048a226ccde",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Prior studies using alanine-scanning and EMPIRIC showed that ubiquitin is highly tolerant to mutation under normal growth conditions, with many constraints on the sequence enforced by the E1-Ub interaction, though the high number of tolerant positions remained unexplained.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C18-C20 accurately summarize prior work with appropriate citations (Sloper-Mould et al., 2001; Roscoe et al., 2013; Roscoe and Bolon, 2014). This establishes the paradox that motivates the current study: high conservation despite high mutational tolerance. The summary of prior work is accurate and properly contextualized.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "ad03d005-e021-459c-8ea8-a43e0957160e",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Most shared sensitizing mutations change from being mildly deleterious to being nearly null upon chemical stress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 describes a pattern in the experimental data for shared sensitizing mutations. This is supported by the analysis shown in Figure 9 and is consistent with the overall finding that chemical stress unmasks previously buffered fitness defects. The characterization is appropriate for the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    },
+    {
+      "id": "fcc73908-fecc-4c3f-b914-bb03c5c82453",
+      "content_id": "0eef3494-2648-4042-9f8b-481a8bb9abb3",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The GC bias in codon coverage is likely due to the cloning method that initially generated the Ub mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C104 provides a reasonable explanation for an observed library characteristic (C30) with appropriate citation (Hietpas et al., 2012). The interpretation is plausible given that the library was derived from a previously constructed library. This is a minor technical observation about library construction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:32:47.922356Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1593c100-7586-4b68-bbdf-446025d33392",
+      "result_id": "59bd4445-fe4e-4b96-bc9a-88ff224b2093"
+    },
+    {
+      "claim_id": "810d7d5a-155d-43de-9397-01fd591f7581",
+      "result_id": "59bd4445-fe4e-4b96-bc9a-88ff224b2093"
+    },
+    {
+      "claim_id": "4f0fbbb9-1648-45d4-a24e-0fc8fe09c33f",
+      "result_id": "59bd4445-fe4e-4b96-bc9a-88ff224b2093"
+    },
+    {
+      "claim_id": "f2fb848a-20ea-4283-9778-76b45eeba9ea",
+      "result_id": "59bd4445-fe4e-4b96-bc9a-88ff224b2093"
+    },
+    {
+      "claim_id": "9db623f3-5bc1-48a2-9f7d-81da230467a4",
+      "result_id": "59bd4445-fe4e-4b96-bc9a-88ff224b2093"
+    },
+    {
+      "claim_id": "b6f66d99-573b-4b7d-98ad-6741428ffbcc",
+      "result_id": "b78d8c1e-8974-4331-8aac-f263be347736"
+    },
+    {
+      "claim_id": "6f372472-34df-4e7e-88ad-9e01e9f5e9de",
+      "result_id": "b78d8c1e-8974-4331-8aac-f263be347736"
+    },
+    {
+      "claim_id": "9b808273-caa6-4eb7-936c-cb71c8e2ee3d",
+      "result_id": "b78d8c1e-8974-4331-8aac-f263be347736"
+    },
+    {
+      "claim_id": "7a62044f-180e-467b-b842-757b47beb7b7",
+      "result_id": "b78d8c1e-8974-4331-8aac-f263be347736"
+    },
+    {
+      "claim_id": "f4e09567-aa60-4885-9a0c-dc9f309261f5",
+      "result_id": "b78d8c1e-8974-4331-8aac-f263be347736"
+    },
+    {
+      "claim_id": "48336d9a-71a5-4156-8299-e0a1e9a1553e",
+      "result_id": "0a153a94-d451-49b6-b552-61882f5f493e"
+    },
+    {
+      "claim_id": "9855127e-3d65-42f3-b564-0dfc06170dd0",
+      "result_id": "0a153a94-d451-49b6-b552-61882f5f493e"
+    },
+    {
+      "claim_id": "ce3bf756-5239-4cae-8be1-c9409628c397",
+      "result_id": "0a153a94-d451-49b6-b552-61882f5f493e"
+    },
+    {
+      "claim_id": "789c0283-6a77-4316-aeb8-6549912fdd44",
+      "result_id": "0a153a94-d451-49b6-b552-61882f5f493e"
+    },
+    {
+      "claim_id": "e9676a25-79e2-41e9-852f-94a83bf854f3",
+      "result_id": "0a153a94-d451-49b6-b552-61882f5f493e"
+    },
+    {
+      "claim_id": "0b0d372a-dcd6-4e79-9dfd-f428f5d39aa5",
+      "result_id": "0a153a94-d451-49b6-b552-61882f5f493e"
+    },
+    {
+      "claim_id": "5140f4a6-2273-422d-aa46-209f116916aa",
+      "result_id": "0a153a94-d451-49b6-b552-61882f5f493e"
+    },
+    {
+      "claim_id": "3fd41324-6445-4a28-ae72-1ee2d8e9e88e",
+      "result_id": "0a153a94-d451-49b6-b552-61882f5f493e"
+    },
+    {
+      "claim_id": "e669bba1-9d33-4675-b289-5f4fd41ff8b4",
+      "result_id": "0a153a94-d451-49b6-b552-61882f5f493e"
+    },
+    {
+      "claim_id": "8cec3f80-5631-44ba-a088-560029b2689a",
+      "result_id": "5819b7ce-6d1f-44ef-b138-5e8b5b86db34"
+    },
+    {
+      "claim_id": "315852d1-a87f-4afd-afaa-0acd147fa933",
+      "result_id": "5819b7ce-6d1f-44ef-b138-5e8b5b86db34"
+    },
+    {
+      "claim_id": "30a25477-25f0-420b-b56c-75dc044a0dc7",
+      "result_id": "5819b7ce-6d1f-44ef-b138-5e8b5b86db34"
+    },
+    {
+      "claim_id": "73d7972c-a9fd-4d65-9634-fec7b1d67612",
+      "result_id": "5819b7ce-6d1f-44ef-b138-5e8b5b86db34"
+    },
+    {
+      "claim_id": "ad796216-b9de-42fe-baab-2ef04ed82506",
+      "result_id": "e657063f-084c-4421-ba6a-f611debc8e32"
+    },
+    {
+      "claim_id": "4d3f784f-8c8c-48b2-b347-2d210b3ad232",
+      "result_id": "e657063f-084c-4421-ba6a-f611debc8e32"
+    },
+    {
+      "claim_id": "b3a370c2-9e1b-4b91-a0b6-e562e7b35a59",
+      "result_id": "e657063f-084c-4421-ba6a-f611debc8e32"
+    },
+    {
+      "claim_id": "a6f7bf59-ed21-4539-b5f6-4ef2f6b7507d",
+      "result_id": "d2ee4b22-8e5e-4f78-9c52-8b26627e5a53"
+    },
+    {
+      "claim_id": "fba29b0f-cd42-40a2-bdb4-bc783732f985",
+      "result_id": "d2ee4b22-8e5e-4f78-9c52-8b26627e5a53"
+    },
+    {
+      "claim_id": "e80af8c8-4b78-4387-96c8-35dcb43768fa",
+      "result_id": "d2ee4b22-8e5e-4f78-9c52-8b26627e5a53"
+    },
+    {
+      "claim_id": "5c0d0af1-bb7f-4c3c-9aa8-5261ef57999c",
+      "result_id": "d2ee4b22-8e5e-4f78-9c52-8b26627e5a53"
+    },
+    {
+      "claim_id": "fc04050f-9449-4818-a445-bcb9e81749b3",
+      "result_id": "d2ee4b22-8e5e-4f78-9c52-8b26627e5a53"
+    },
+    {
+      "claim_id": "d3ff6378-129f-4226-abbf-7dd779acc00c",
+      "result_id": "a08d9421-ca20-478c-89d1-0a76fb3cf7b5"
+    },
+    {
+      "claim_id": "2d42db66-296c-4146-b702-0eb46927e00c",
+      "result_id": "a08d9421-ca20-478c-89d1-0a76fb3cf7b5"
+    },
+    {
+      "claim_id": "918a6944-bdad-47e1-8294-b1de9bb4ff86",
+      "result_id": "a08d9421-ca20-478c-89d1-0a76fb3cf7b5"
+    },
+    {
+      "claim_id": "59b03549-c818-45ab-b0be-b4c20f317bbb",
+      "result_id": "a08d9421-ca20-478c-89d1-0a76fb3cf7b5"
+    },
+    {
+      "claim_id": "00c33896-f489-47a8-9ae7-c3962bfacf2f",
+      "result_id": "a08d9421-ca20-478c-89d1-0a76fb3cf7b5"
+    },
+    {
+      "claim_id": "d93e64ab-8c5c-43ec-94b9-a6198bc11ee2",
+      "result_id": "7ab3d54e-1736-4f3b-903d-ffcf2a045bdc"
+    },
+    {
+      "claim_id": "ac4eabf8-3e6c-4636-9d29-3b161a7bf52d",
+      "result_id": "7ab3d54e-1736-4f3b-903d-ffcf2a045bdc"
+    },
+    {
+      "claim_id": "0ee41c76-fe90-4cdc-aca9-1a4885d07ddf",
+      "result_id": "7ab3d54e-1736-4f3b-903d-ffcf2a045bdc"
+    },
+    {
+      "claim_id": "94ece11b-4808-4274-8af8-d6efae4b6a4e",
+      "result_id": "7ab3d54e-1736-4f3b-903d-ffcf2a045bdc"
+    },
+    {
+      "claim_id": "7dac010f-2970-4bfa-a9ef-9de4c2e062b7",
+      "result_id": "7ab3d54e-1736-4f3b-903d-ffcf2a045bdc"
+    },
+    {
+      "claim_id": "3f47aab4-2c6a-4ff0-9063-a9712f4e79c6",
+      "result_id": "a47946aa-d1e7-46c0-8ba6-5eda93ab12d9"
+    },
+    {
+      "claim_id": "cecc1aa1-9f5a-4c20-a348-b215cb9acab3",
+      "result_id": "a47946aa-d1e7-46c0-8ba6-5eda93ab12d9"
+    },
+    {
+      "claim_id": "00f0616e-e384-428a-bf2d-f6878dd8debb",
+      "result_id": "a47946aa-d1e7-46c0-8ba6-5eda93ab12d9"
+    },
+    {
+      "claim_id": "82ea0027-65ef-4ed6-8fce-37b0dfecab94",
+      "result_id": "a47946aa-d1e7-46c0-8ba6-5eda93ab12d9"
+    },
+    {
+      "claim_id": "fc2281ee-d09b-4202-a2b7-204ddef9d6a0",
+      "result_id": "a47946aa-d1e7-46c0-8ba6-5eda93ab12d9"
+    },
+    {
+      "claim_id": "4d9d0ef1-be0b-414e-ad9c-1b41a7ee15fe",
+      "result_id": "a47946aa-d1e7-46c0-8ba6-5eda93ab12d9"
+    },
+    {
+      "claim_id": "85cc1fe9-92b8-4794-b935-77d8f915f6a4",
+      "result_id": "a47946aa-d1e7-46c0-8ba6-5eda93ab12d9"
+    },
+    {
+      "claim_id": "a696d43d-52fb-49e4-b070-b93b77562c16",
+      "result_id": "4c3f3e9e-ae88-42d0-8267-3731696d135e"
+    },
+    {
+      "claim_id": "f4cd1a30-6ecd-46f7-bffc-eadedc1eb4bc",
+      "result_id": "4c3f3e9e-ae88-42d0-8267-3731696d135e"
+    },
+    {
+      "claim_id": "1145017f-b07a-4881-94a2-60ba98ec8c94",
+      "result_id": "4c3f3e9e-ae88-42d0-8267-3731696d135e"
+    },
+    {
+      "claim_id": "ed1f87e2-5124-4dbf-8032-421427aee355",
+      "result_id": "4c3f3e9e-ae88-42d0-8267-3731696d135e"
+    },
+    {
+      "claim_id": "78566ed4-f4ff-4467-89cd-b4d68162982e",
+      "result_id": "af76c5b4-09d4-4bd1-865b-8f20b4fa2d9b"
+    },
+    {
+      "claim_id": "4c0e4062-5d82-4754-b3f0-6f8205077c63",
+      "result_id": "af76c5b4-09d4-4bd1-865b-8f20b4fa2d9b"
+    },
+    {
+      "claim_id": "e0c2f4e4-a88b-47cd-a6d0-73bb15b32771",
+      "result_id": "af76c5b4-09d4-4bd1-865b-8f20b4fa2d9b"
+    },
+    {
+      "claim_id": "0eea5376-6c6e-4f85-ba00-f59da545e72a",
+      "result_id": "af76c5b4-09d4-4bd1-865b-8f20b4fa2d9b"
+    },
+    {
+      "claim_id": "dde2d723-e23c-4186-add4-a1c62f4625d1",
+      "result_id": "af76c5b4-09d4-4bd1-865b-8f20b4fa2d9b"
+    },
+    {
+      "claim_id": "5caf0073-93d9-4782-ba20-721fb0ac3021",
+      "result_id": "af76c5b4-09d4-4bd1-865b-8f20b4fa2d9b"
+    },
+    {
+      "claim_id": "92fac214-09c7-47bb-b12b-94bfa93c92e6",
+      "result_id": "285bbc5f-8d08-4453-be66-0a739e87ff9b"
+    },
+    {
+      "claim_id": "f26a4ff3-23fc-49cd-a0c5-dbb7afdd5a43",
+      "result_id": "3bb6232b-732b-46e8-b1ca-8ce84be50acb"
+    },
+    {
+      "claim_id": "ef4a5109-e635-43e6-9509-e4e193a7440f",
+      "result_id": "3bb6232b-732b-46e8-b1ca-8ce84be50acb"
+    },
+    {
+      "claim_id": "cb683a71-40da-4f4b-b406-3e1b4c8db7b0",
+      "result_id": "3bb6232b-732b-46e8-b1ca-8ce84be50acb"
+    },
+    {
+      "claim_id": "8714df2b-30f7-477e-9789-3a907765bff1",
+      "result_id": "3bb6232b-732b-46e8-b1ca-8ce84be50acb"
+    },
+    {
+      "claim_id": "d793f1a2-586e-4634-a9b5-9a8df801045e",
+      "result_id": "3bb6232b-732b-46e8-b1ca-8ce84be50acb"
+    },
+    {
+      "claim_id": "a2e9baa5-34bb-4dcc-a3ea-243b43cd7168",
+      "result_id": "3bb6232b-732b-46e8-b1ca-8ce84be50acb"
+    },
+    {
+      "claim_id": "60c797be-e7b8-465b-939c-b6744290a298",
+      "result_id": "3bb6232b-732b-46e8-b1ca-8ce84be50acb"
+    },
+    {
+      "claim_id": "05abf008-b723-4746-87c8-d80dfe960df5",
+      "result_id": "3bb6232b-732b-46e8-b1ca-8ce84be50acb"
+    },
+    {
+      "claim_id": "d7d31dce-565c-496e-9bf0-6999d55520c5",
+      "result_id": "3bb6232b-732b-46e8-b1ca-8ce84be50acb"
+    },
+    {
+      "claim_id": "52fd63ef-c54b-4c5b-a274-cbea3244460e",
+      "result_id": "eddb9ea3-6d25-457a-95ca-4cd3c64ea505"
+    },
+    {
+      "claim_id": "ddae80bd-6f83-41b8-a074-7309e34b4d88",
+      "result_id": "eddb9ea3-6d25-457a-95ca-4cd3c64ea505"
+    },
+    {
+      "claim_id": "b3d7e4ae-8e52-49fd-aeeb-3f303a8faf71",
+      "result_id": "eddb9ea3-6d25-457a-95ca-4cd3c64ea505"
+    },
+    {
+      "claim_id": "6b3cdbba-0ef8-4407-af2c-936dd25c1399",
+      "result_id": "f4c86a6e-1586-4df5-becf-833156d8ab00"
+    },
+    {
+      "claim_id": "235b2c82-48e7-4287-a26d-2ecee94a36bc",
+      "result_id": "cf5b3880-434e-49db-b1f5-5a134d05d772"
+    },
+    {
+      "claim_id": "55732c5a-515c-4ec5-b8de-e71ed94c1654",
+      "result_id": "cf5b3880-434e-49db-b1f5-5a134d05d772"
+    },
+    {
+      "claim_id": "40cf8f8d-03fd-4e4a-9c40-d0721e2d68c3",
+      "result_id": "6fa0d0cb-ec2a-43a5-a4ed-2c7fe8c61668"
+    },
+    {
+      "claim_id": "7da55840-8c75-477d-b3dc-0c4902fe7076",
+      "result_id": "6fa0d0cb-ec2a-43a5-a4ed-2c7fe8c61668"
+    },
+    {
+      "claim_id": "a6ee0fcb-e363-451a-954d-8b181316bae7",
+      "result_id": "6fa0d0cb-ec2a-43a5-a4ed-2c7fe8c61668"
+    },
+    {
+      "claim_id": "799d677b-49ed-454c-99a3-c4f63c242d77",
+      "result_id": "6fa0d0cb-ec2a-43a5-a4ed-2c7fe8c61668"
+    },
+    {
+      "claim_id": "3a3be72f-6112-4af0-a737-782086e1ef41",
+      "result_id": "7672427e-7044-47a1-83be-5048a226ccde"
+    },
+    {
+      "claim_id": "6093de26-40df-441a-a2b1-69b0ce524b73",
+      "result_id": "7672427e-7044-47a1-83be-5048a226ccde"
+    },
+    {
+      "claim_id": "6051c379-8488-48e4-94b1-a3d02f5e2afe",
+      "result_id": "7672427e-7044-47a1-83be-5048a226ccde"
+    },
+    {
+      "claim_id": "bc32c111-5f8d-4147-a3b0-3badf0f14ebf",
+      "result_id": "7672427e-7044-47a1-83be-5048a226ccde"
+    },
+    {
+      "claim_id": "843f937d-4662-4c4b-a462-5f3f1260f6d4",
+      "result_id": "ad03d005-e021-459c-8ea8-a43e0957160e"
+    },
+    {
+      "claim_id": "ab283acf-5369-4757-9977-cf51e36ee60e",
+      "result_id": "fcc73908-fecc-4c3f-b914-bb03c5c82453"
+    }
+  ],
+  "comparisons": []
+}

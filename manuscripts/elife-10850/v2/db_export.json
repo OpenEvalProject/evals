@@ -1,0 +1,1703 @@
+{
+  "submission": {
+    "id": "261d715d-a9e6-4f88-b554-d5f335e2e197",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:05:33.520212Z",
+    "updated_at": "2025-11-29T22:05:33.520212Z"
+  },
+  "content": [
+    {
+      "id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "submission_id": "261d715d-a9e6-4f88-b554-d5f335e2e197",
+      "content_type": "manuscript",
+      "content_text": "# The kinetochore prevents centromere-proximal crossover recombination during meiosis\n\n## Authors\n\n- Nadine Vincenten<sup>1</sup>\n- Lisa-Marie Kuhl<sup>2</sup>\n- Isabel Lam<sup>3</sup>\n- Ashwini Oke<sup>4</sup>\n- Alastair RW Kerr<sup>1</sup> ([ORCID: 0000-0001-9207-6050](https://orcid.org/0000-0001-9207-6050))\n- Andreas Hochwagen<sup>5</sup>\n- Jennifer Fung<sup>4</sup>\n- Scott Keeney<sup>3</sup> ([ORCID: 0000-0002-1283-6417](https://orcid.org/0000-0002-1283-6417))\n- Gerben Vader<sup>2</sup> \u2020\n- Ad\u00e8le L Marston<sup>1</sup> \u2020\n\n### Affiliations\n\n1. The Wellcome Trust Centre for Cell Biology, Institute of Cell Biology, School of Biological Sciences The University of Edinburgh Edinburgh United Kingdom\n2. Department of Mechanistic Cell Biology Max Planck Institute of Molecular Physiology Dortmund Germany\n3. Howard Hughes Medical Institute, Memorial Sloan Kettering Cancer Center New York United States\n4. Department of Obstetrics, Gynecology and Reproductive Sciences, Center of Reproductive Sciences University of California, San Francisco San Francisco United States\n5. Department of Biology New York University New York United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring meiosis, crossover recombination is essential to link homologous chromosomes and drive faithful chromosome segregation. Crossover recombination is non-random across the genome, and centromere-proximal crossovers are associated with an increased risk of aneuploidy, including Trisomy 21 in humans. Here, we identify the conserved Ctf19/CCAN kinetochore sub-complex as a major factor that minimizes potentially deleterious centromere-proximal crossovers in budding yeast. We uncover multi-layered suppression of pericentromeric recombination by the Ctf19 complex, operating across distinct chromosomal distances. The Ctf19 complex prevents meiotic DNA break formation, the initiating event of recombination, proximal to the centromere. The Ctf19 complex independently drives the enrichment of cohesin throughout the broader pericentromere to suppress crossovers, but not DNA breaks. This non-canonical role of the kinetochore in defining a chromosome domain that is refractory to crossovers adds a new layer of functionality by which the kinetochore prevents the incidence of chromosome segregation errors that generate aneuploid gametes.\n\n## Introduction\n\nThe formation of haploid reproductive cells during meiosis relies on the accurate segregation of chromosomes during two meiotic divisions (meiosis I and II). Faithful segregation of homologous chromosomes during meiosis I is contingent on inter-homologue linkages that are established during the preceding G2/prophase. These linkages (chiasmata) are the final outcome of programmed DNA break formation and crossover (CO) repair. Improper placement of COs in the vicinity of centromeres negatively influences meiotic chromosome segregation (Hassold and Hunt, 2001; Koehler et al., 1996; Rockmill et al., 2006), so CO formation close to centromeres is infrequent in many species, including humans (Centola and Carbon, 1994; Copenhaver et al., 1999; Ellermeier et al., 2010; Gore et al., 2009; Lambie and Roeder, 1986; Mahtani and Willard, 1998; Nakaseko et al., 1986; Puechberty et al., 1999; Saintenac et al., 2009; Tanksley et al., 1992). However, the mechanisms that control DNA break formation and CO repair close to centromeres remain poorly understood (Choo, 1998; Talbert and Henikoff, 2010).\n\nCentromeres are functionally conserved but structurally diverse, ranging from the simple so-called \u201cpoint\u201d centromeres of budding yeasts to a variety of more complex \u201cregional\u201d or even holocentric centromeres in other eukaryotes (Allshire and Karpen, 2008). Point centromeres are defined by a short ~125bp sequence upon which the kinetochore assembles, while regional centromeres are typically comprised of specialized centromeric chromatin interspersed with blocks of heterochromatin. In fission yeast and Drosophila, the integrity of pericentromeric heterochromatin was found to repress double-strand\u00a0break\u00a0(DSB) formation and centromere-proximal recombination (Ellermeier et al., 2010; Westphal and Reuter, 2002). Although budding yeast lack pericentromeric heterochromatin,\u00a0suppression of centromere-proximal recombination is also observed in this organism (Lambie and Roeder, 1986, Chen et al., 2008). Moreover, pericentromeric CO suppression has been observed in situations where centromere position is uncoupled from its associated heterochromatin, such as in Drosophila strains carrying translocated chromosomes (Mather, 1939). These observations suggest the existence of a fundamental mechanism of recombination suppression that\u00a0functions independently of associated heterochromatin.\n\nGenome-wide DSB maps in budding yeast have inferred that the centromere exerts a zone of inhibition of meiotic DSB formation, the activity of which decreases over a distance of approximately 10 kb (Blitzblau et al., 2007; Buhler et al., 2007; Pan et al., 2011). Excision of a centromere relieved this DSB suppression, indicating that the centromere, or its associated factors, exert this effect (Robine et al., 2007). The synaptonemal complex component, Zip1 (Chen et al., 2008), and the Bloom\u2019s helicase, Sgs1 (Rockmill et al., 2006), which influences repair pathway choice, are also known to minimize centromere recombination. However, both proteins affect recombination globally, acting at a step after DSB formation, and are not specifically localized at centromeres. Instead, centromere-bound factors are likely to dictate the region of recombination suppression in the surrounding pericentromere through mechanisms that remain unclear.\n\nCandidate centromere-bound factors for the repression of pericentromeric recombination are components of the kinetochore, a sophisticated multi-subunit protein complex nucleated by centromeric chromatin (reviewed in Biggins (2013); Cheeseman, (2014)). Within kinetochores, multiple generally conserved sub-complexes can be recognized that perform specific roles. Outer kinetochore sub-complexes together form an interface with microtubules and serve as a platform for spindle assembly checkpoint signaling, coupling chromosome-microtubule interactions with cell cycle progression. Inner kinetochore sub-complexes direct assembly of the outer kinetochore. Several kinetochore subcomplexes together assemble into a Constitutive Centromere-Associated Network (CCAN;\u00a0also known as the Ctf19 complex in budding yeast) (reviewed in McAinsh and Meraldi (2011); Westermann and Schleiffer (2013)) As its name implies, the CCAN/Ctf19 complex is bound to centromeric chromatin throughout the mitotic or meiotic cell division program. In meiotic G2/prophase of budding yeast, when recombination occurs, only the Ctf19 and Mis12/MIND (Mtw1 including Nnf1-Nsl1-Dsn1) kinetochore complexes are bound to the centromere (Meyer et al., 2015; Miller et al., 2012). The Ctf19 complex exerts long range effects by promoting cohesin enrichment throughout the ~20\u201350\u00a0kb surrounding pericentromere despite being restricted to the core ~125\u00a0bp centromere sequence (Eckert et al., 2007; Fernius and Marston, 2009; Ng et al., 2009). It does so by targeting the Scc2/4 cohesin loader to the centromere, from where cohesin spreads into the pericentromere (Fernius et al., 2013). These characteristics make the Ctf19 complex a particularly good candidate for mediating kinetochore-derived recombination suppression. Here we show that both cohesin-independent suppression of DSB formation and cohesin-dependent repair pathway choice underlie a central role for the Ctf19 complex in suppression of CO\u00a0formation in the pericentromere.\n\n## Results\n\n### The Ctf19 kinetochore subcomplex suppresses pericentromeric COs\n\nTo understand how pericentromeric COs\u00a0are prevented, we used a fluorescent CO reporter assay (Thacker et al., 2011) (Figure 1A) to measure recombination rates within a pericentromere (around CEN8,\u00a0the centromere of chromosome VIII) or, as a control, on a chromosome arm interval of equivalent size on chromosome VIII of budding yeast (Figure 1B,C). In wild-type cells, map distance, a measure of CO frequency, was 7.5 cM within the arm interval but only 0.04 cM within the pericentromere interval. In cells lacking the synaptonemal component, Zip1, map distance within the pericentromeric interval rose to ~2 cM (Figure 1B), in agreement with previous observations (Chen et al., 2008), while we observed a modest decrease in map distance within the chromosomal arm region (Figure 1C). Thus, the fluorescent reporter assay can report on pericentromeric CO formation.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/10850/elife-10850-fig1-v2.jpg)\n\n**Figure 1.:** (A) Scheme of meiosis and the live cell reporter assay to measure CO recombination. Homologous chromosomes are shown in light and dark blue with Green fluorescent protein (GFP), tdTomato\u00a0(RFP) and m-Cerulean\u00a0(CFP) reporters represented in green, red and cyan, respectively. Expression of reporters in spores leads to segregation of coloured markers as indicated in the images of live tetrads. (B, C) Map distances (centiMorgans (cM)) and standard error (bars) were determined for a ~10\u00a0kb pericentromeric (B) or chromosomal arm (C) interval as described in Materials and methods. p-values were obtained using Fisher\u2019s exact test (* p<0.05; ** p<0.0001). (D) Schematic representation of the kinetochore showing yeast Ctf19 sub-complex components with superscripts indicating the centomere protein (CENP) equivalent in humans. Proteins essential for vegetative growth or proper spore viability after meiosis are shown in dark and light blue, respectively.\u00a0CO, crossover; n.d., not determined.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10850/elife-10850-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) The Ctf19 component, Mcm21, is required for proper levels of Dsn1 at the centromere during prophase I. Strains AM11633 (no tag), AM20078 (DSN1-6HIS-3FLAG) and AM20080 (DSN1-6HIS-3FLAG\u00a0mcm21\u25b3) all carrying ndt80\u25b3 were harvested 5\u00a0hr after resuspension in sporulation medium to induce a prophase I arrest and Dsn1 levels at CEN4\u00a0and a chromosomal arm site were measured by anti-FLAG ChIP-qPCR. (B) Effect of depleting the MIND components, Mcm21 or Dsn1, on centromeric levels of the Ctf19 component, Mcm21. Strains AM11633 (no tag), AM20296 (MCM21-yeGFP), AM20295 (MCM21-yeGFP\u00a0pCLB2-3HA-DSN1), AM20294 (MCM21-yeGFP\u00a0pCLB2-3HA-MTW1) all carrying ndt80\u25b3 were treated as in (A) except that anti-GFP ChIP-qPCR was performed. In (A) and (B) the mean of four biological replicates is shown with error bars indicating standard error. p values were obtained using a paired t test. * p<0.05. (C\u2013G) Nuclear division and efficiency of protein depletion in pCLB2-3HA-MTW1\u00a0and pCLB2-3HA-DSN1\u00a0strains. Wild type (AM1835), pCLB2-3HA-MTW1\u00a0(AM20084) and pCLB2-3HA-DSN1\u00a0(AM20082)\u00a0strains were induced to sporulate and the percentages of binucleate and tetranucleate cells were determined after scoring 100 cells at each of the indicated times (C\u2013E). (F, G) The amount of 3HA-Dsn1 (F) or 3HA-Mtw1 (G) was analysed by anti-HA western immunoblot at the indicated times. Pgk1 is shown as a loading control.\u00a0ChIP, Chromatin immunoprecipitation;\u00a0MIND, Mtw1 including Nnf1-Nsl1-Dsn1;\u00a0qPCR, quantitative polymerase chain reaction\n\nNext, we tested whether the kinetochore (Figure 1D) affects CO formation at pericentromeres. During meiotic prophase, when recombination occurs, only the MIND and Ctf19 complexes are assembled on centromeres (Meyer et al., 2015; Miller et al., 2012) and their components associate with kinetochores at least partially independently (Figure 1\u2014figure supplement 1). We were unable to test the requirement for the MIND complex in preventing pericentromeric recombination using the fluorescent reporter assay because depletion of two components of the essential MIND complex, Dsn1 or Mtw1, prevented proper execution of the meiotic divisions and tetrad formation (Figure 1\u2014figure supplement 1). Therefore, we focused on the conserved Ctf19/CCAN kinetochore complex. Using the live cell reporter assay, we observed a significantly increased frequency of pericentromeric COs in cells lacking the Ctf19 complex components Iml3CENP-L, Chl4CENP-N, Mcm21CENP-O and Ctf19CENP-P\u00a0(Figure 1B, Supplementary file 1; the gene names of the human homologues are indicated in superscript). This effect appeared to be specific to the pericentromere, as no significant changes in recombination were observed within the chromosomal arm interval in the absence of Iml3CENP-L, Chl4CENP-N, Mcm21CENP-O and Ctf19CENP-P\u00a0(Figure 1C, Supplementary file 2). Other kinetochore subunits (Cnn1CENP-T, Wip1CENP-W, Nkp1, Nkp2) had a more modest effect on pericentromeric COs, while we found no evidence that Mhf1CENP-S and Mhf2CENP-X, which have additional roles in meiotic DNA repair together with Mph1 (Osman and Whitby, 2013), are required for suppression of pericentromeric COs. Thus, the Ctf19 inner kinetochore subcomplex affects pericentromeric meiotic recombination.\n\nWe corroborated these findings by analyzing the effect of the Ctf19 complex on global meiotic recombination patterns, using high throughput sequencing to identify single nucleotide polymorphisms in the haploid progeny generated from meiosis of a hybrid yeast strain (Oke et al., 2014) (Figure 2A). This method allows the detection of CO and non-crossover (NCO) repair products (i.e. gene conversions), which can inform on altered regulation of meiotic DNA break repair (Figure 2B). Poor spore viability (typically <30%) precluded us from using Ctf19 complex deletion mutants. Instead, we used a meiosis-specific hypomorphic depletion allele of IML3\u00a0(pCLB2-3HA-IML3; Figure 2\u2014figure supplement 1) and were able to isolate 8 four-spore-viable tetrads for high-throughput sequencing and global recombination analysis (Supplementary file 3). Although we observed no global change in the average number of COs or NCOs in the pCLB2-3HA-IML3\u00a0strain compared to wild type (Figure 2C,D), the distribution of recombination was affected: the frequency of both COs and NCOs within 20 kb of centromeres was overall significantly increased (Figure 2E,F). These events were detected on most, but not all, chromosomes, although we are unable to test significance for individual chromosomes due to an insufficient number of events analyzed (Figure 2\u2014figure supplement 2A; Supplementary file 2). We note that, in the live cell recombination reporter assay, the increase in centromere-proximal COs on chromosome VIII was more modest in pCLB2-3HA-IML3\u00a0cells than iml3\u25b3 cells (Figure 1B,C), indicating that analysis of the hypomorphic pCLB2-3HA-IML3\u00a0strain likely underestimates the importance of the Ctf19 complex in suppressing pericentromeric recombination events. Nevertheless, the observed effect of pCLB2-3HA-IML3\u00a0on pericentromeric recombination was greater than sgs1\u25b3 (Figure 2\u2014figure supplement 2B,C), which is known to affect meiotic recombination near centromeres (Rockmill et al., 2006; Oke et al., 2014). Together, these experiments demonstrate that the Ctf19 complex shapes the meiotic recombination landscape by minimizing pericentromeric CO recombination.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/10850/elife-10850-fig2-v2.jpg)\n\n**Figure 2.:** (A) Assay to measure meiotic recombination genome-wide by analysis of SNPs after high-throughput sequencing of germinated spores resulting from hybrid meiosis. (B) Scheme of meiotic recombination showing CO and NCO outcomes. (C, D) Overall recombination levels are not affected by the pCLB2-3HA-IML3 mutation. The average numbers of COs (C) and NCOs (D) per tetrad are not significantly different between wild type and pCLB2-3HA-IML3 cells. Error bars represent standard deviation. A two-tailed t test indicated non-significance (p>0.05). (E, F) Both COs (E) and NCOs (F) within 20\u00a0kb of the pericentromere are increased in pCLB2-3HA-IML3 cells. Data for wild type is from (Oke et al., 2014). Number of meioses scored was 8 for pCLB2-3HA-IML3\u00a0and 52 for wild type. p-values were calculated using chi-square test with Yates correction.\u00a0CO, crossover;\u00a0DSB, double strand break;\u00a0NCO, non-crossover;\u00a0SNPs, single nucleotide polymorphisms.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10850/elife-10850-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Placement of IML3\u00a0under the control of the CLB2 promoter results in depletion of Iml3 during meiosis. Cells carrying pCLB2-3HA-IML3 (strain AM17552) were induced to undergo meiosis and samples extracted for anti-HA western immunoblot at the indicated times. A cycling, vegetative (V) sample is also shown. Pgk1 is shown as a loading control.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/10850/elife-10850-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) The distribution of the observed events on each chromosome is shown for wild type and pCLB2-3HA-IML3 cells. The percentages of CO or NCO events within 20\u00a0kb of the pericentromere were calculated as a fraction of the combined total of\u00a0CO and NCO events on that chromosome. (B, C) Comparison of the effect of Iml3 depletion on centromeric recombination with other mutants known to affect CO (B) and NCO (C) frequency. Events are shown as a percentage of the combined total of the CO and NCO events per meiosis. Significance was determined using a 2x\u00d72 contingency table and p values were calculated using a Chi square test with Yates correction (** p<0.0001; * p<0.05; n.s., not significant). Data for zip3\u25b3, sgs1\u25b3 and tel1\u25b3 is from (Oke et al., 2014).\u00a0CO, crossover;\u00a0NCO, non-crossover.\n\n### The Ctf19 complex inhibits centromere-proximal DNA breaks\n\nWe next addressed how the Ctf19 complex prevents pericentromeric COs and NCOs. All meiotic recombination events begin with the programmed introduction of DSBs by the topoisomerase-related protein Spo11 (Keeney et al., 1997). DSBs form throughout the genome, but are strongly repressed within ~3\u00a0kb of budding yeast centromeres (Blitzblau et al., 2007; Buhler et al., 2007; Pan et al., 2011). We generated genome-wide DSB maps of the mcm21\u25b3 mutant by high-throughput sequencing of oligonucleotides that remain covalently bound to Spo11 as a by-product of DSB processing (Pan et al., 2011) (Figure 3A). Interestingly, increased centromere-proximal DSBs were detected in the mcm21\u25b3 mutant compared with wild type, revealing a general role for the Ctf19 complex in suppression of pericentromeric DSBs (Figure 3B,C). Pericentromeric DSBs in the mcm21\u25b3 mutant reached a level\u00a0similar to the genome average (dotted lines, Figure 3C), indicating that there is no residual DSB suppression in the absence of Mcm21. Strikingly, the increase in DSBs occurred over a narrower domain (~3\u00a0kb on each side of the centromere, i.e. a total region of ~6\u00a0kb) than CO formation (~20 kb each side of the centromere, ~40\u00a0kb in total; Figure 2E,F), indicating that suppression of COs at centromeres is not solely due to a reduction in DSB levels. To compare the effect on DSBs and COs more directly, we examined DSB formation in the intervals on chromosome VIII analyzed in the live cell recombination assay (Figure 3D). As expected, we observed an increase in DSBs within the same pericentromeric interval in which we measured CO frequency using the live cell reporter assay. However, DSBs were increased only ~5-fold over wild type in mcm21\u25b3 within this region (Figure 3E), while we observed an ~21-fold increase in COs within the same region (Figure 3F; Figure 1B,C). Therefore, the increase in DSBs can only account for approximately 24% of the increase in pericentromeric COs.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/10850/elife-10850-fig3-v2.jpg)\n\n**Figure 3.:** (A) Sequencing of Spo11-oligos allows DSBs to be mapped genome wide. (B) Fold change in average Spo11-oligo density (RPM per kb) in 3 kb segments in mcm21\u25b3 cells compared to wild type (from Zhu and Keeney (2015)), over a 36 kb region surrounding all 16 centromeres. Boxes show median and interquartile range, whiskers enclose data points within 1.5 times the interquartile range; outliers are\u00a0not shown. Red dashed line, fold change of one. (C) Mean Spo11 signal as a function of distance from the centromere. Spo11 oligo density within 500 bp bins starting from the centromere and moving up to 75 kb away, averaged across the 32 chromosome arms was determined. The horizontal dotted line indicates genome average. The red (wild type) and blue (mcm21\u25b3) lines indicate loess smoothing, and the shading indicates the 95% confidence interval. (D) DSBs in the region examined in the CO assay. Spo11 oligo counts smoothed with a 201-bp Hann window are shown. The black circle indicates the centromere, filled triangles indicate the midpoints of coordinates where RFP (red) and GFP (green) cassettes were targeted to for CEN8 analysis in the live cell recombination assay; open triangles indicate the locations where the cassettes were targeted to for ARM8 analysis. (E and F) Fold change in the number of DSBs (E) or COs (F) in mcm21\u25b3 vs. wild type within the same pericentromeric or arm intervals on chromosome 8 that were analyzed in the live cell recombination assay (Figure 1B and C).\u00a0CO, crossover; DSBs, double strand breaks;\u00a0RPM,\u00a0reads per million mapped.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10850/elife-10850-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Fold change in mcm21\u25b3 over wild type of Spo11-oligo counts (RPM) in the 10 kb encompassing each centromere. Red dashed line indicates fold change of one. (B) Whole-chromosome view of changes in the Spo11-oligo distribution in mcm21\u25b3 . Each point is the fold change (plotted on log2 scale) of mcm21\u25b3 over wild type Spo11 oligos (RPM) summed in 5-kb bins. Blue lines, smoothed fit (loess); black triangles, centromeres; yellow shading, centromere \u00b1 20 kb; black solid line, 0 (log2 scale) indicating no change over wild type; black dotted lines, 2-fold change (log2 scale).\u00a0RPM,\u00a0reads per million mapped.\n\nThe DSB effect varied per individual chromosome (Figure 3\u2014figure supplement 1). The variability in susceptibility of the different pericentromeres to DSBs is likely explained by their underlying features, since it is well-established that DSB formation is influenced by chromatin and genome organization (e.g.\u00a0the availability of gene promoters that serve as a preferred target of Spo11 (Blitzblau et al., 2007; Pan et al., 2011)). Chromosome\u00a0I\u00a0in particular, showed emergence of a very prominent DSB hotspot in a promoter region immediately adjacent to the centromere\u00a0(CEN1; Figure 4A). We exploited the appearance of this hotspot to monitor ectopic DSBs close to centromeres by Southern blotting in the repair-deficient dmc1\u25b3 background, where DSBs persist. Close to CEN1,\u00a0DSBs\u00a0were detected in the absence of Mcm21CENP-O or Ctf19 CENP-P (Figure 4B). Importantly, DSBs that formed near CEN1 in the absence of Mcm21CENP-O or Ctf19 CENP-P were dependent on the catalytic activity of Spo11, demonstrating that these were genuine programmed DSBs (Figure 4B). Screening additional Ctf19 complex subunits showed a striking correlation between increased DSB formation at CEN1 and increased CO formation as measured in our live cell recombination reporter assay (Figure 4B, Figure 4\u2014figure supplement 1A). Interestingly, depletion of the MIND complex component, Dsn1 (Figure 1\u2014figure supplement 1) also resulted in the appearance of CEN1-proximal DSBs, suggesting that the overall integrity of the kinetochore might be generally important for repressing DSB formation within pericentromeres. In conclusion, one likely mechanism by which the Ctf19 complex prevents pericentromeric recombination is via the inhibition of DSB formation close to centromeres.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/10850/elife-10850-fig4-v2.jpg)\n\n**Figure 4.:** (A) Appearance of a strong DSB hotspot proximal to CEN1\u00a0in mcm21\u25b3 cells.\u00a0Spo11-oligo density in a 20 kb region surrounding the centromere of chromosome\u00a0I\u00a0in mcm21\u25b3 (top) and wild type (bottom). Spo11-oligo counts (RPM) were smoothed with 201-bp Hann window. (B) Detection of CEN1-proximal DSBs\u00a0in Ctf19 complex mutants by Southern blotting and their dependence on SPO11\u00a0catalysis (using a catalytic dead mutant allele of SPO11,\u00a0spo11-Y135F). Repair-deficient (dmc1\u25b3) cells were harvested at defined times after inducing sporulation ((t=0, 3, 5, 8\u2009hr) and faster migrating DNA species (indicative of DSBs) were detected using a probe to CEN1\u00a0or the control YCR047C locus. Arrowheads, Spo11-dependent DSBs. Strains used were GV48 (dmc1\u25b3), GV1912 (dmc1\u25b3 ctf19\u25b3), GV2128 (dmc1\u25b3 ctf19\u25b3 spo11-Y135F-HA), GV2050 (dmc1\u25b3 mcm21\u25b3)\u00a0and\u00a0GV2205 (dmc1\u25b3 mcm21\u25b3 spo11-Y135F-HA). (C) Summary of tested mutants and their importance for suppression of DSBs and inhibition of COs close to centromeres. n.d., not determined.\u00a0CO, crossover; DSB, double strand break; RPM, reads per million mapped.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10850/elife-10850-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Repair-deficient (dmc1\u25b3) cells (strains GV48 (dmc1\u25b3), GV1912 (dmc1\u25b3 ctf19\u25b3), GV1870 (dmc1\u25b3 iml3\u25b3)\u00a0and GV2139 (dmc1\u25b3 chl4\u25b3)) were harvested at defined times after inducing sporulation (t=0, 3, 5, 8\u2009hr) and faster migrating DNA species (indicative of DSBs) were detected using a probe to CEN1\u00a0or the control YCR047C locus. Arrowheads, Spo11-dependent DSBs.\u00a0DSBs, doublestrand breaks\n\n### Pericentromeric cohesin shields against CO repair of centromere-proximal DSBs\n\nDuring mitotic growth, the Ctf19 complex targets loading of the sister-chromatid-linking complex, cohesin, to the centromere prior to S phase to enrich cohesin in the surrounding pericentromere (Eckert et al., 2007; Fernius and Marston, 2009; Fernius et al., 2013; Ng et al., 2009). This enrichment provides the basis for robust sister chromatid cohesion, the establishment of which is coupled to DNA replication in S-phase (Eckert et al., 2007; Fernius and Marston, 2009; Fernius et al., 2013; Hinshaw et al., 2015; Ng et al., 2009; Uhlmann and Nasmyth, 1998). Pericentromeric enrichment of the meiotic cohesin subunit, Rec8, at G2/prophase I also depended on the Ctf19 complex (Figure 5A\u2013D). Since cohesin has been implicated in influencing meiotic DNA break formation and repair (Ellermeier and Smith, 2005; Klein et al., 1999; Kugou et al., 2009), we used the live cell recombination reporter assay to test the requirement for cohesin in preventing pericentromeric COs. To prevent pleiotropic phenotypes and sporulation failure associated with total cohesin loss in meiosis, we employed a mutation in the Scc4 subunit of the cohesin loader (scc4-m35), which in vegetative cells specifically abolishes pericentromeric cohesin enrichment (Hinshaw et al., 2015). In meiotic prophase, Rec8 levels were indeed reduced at centromeric and pericentromeric sites in scc4-m35\u00a0cells. However, chromosomal arm sites were also affected (Figure 5E), suggesting that the scc4-m35 mutations might influence cohesin loading at non-centromeric sites during meiosis. Nevertheless, scc4-m35\u00a0cells underwent meiosis to produce spores, analysis of which revealed an increased frequency of pericentromeric (Figure 5F), but not chromosomal arm (Figure 5G) COs, though this increase was more modest than in the absence of Ctf19 complex subunits (Figure 1B,C). This finding supports the notion that pericentromeric cohesin enrichment by the Ctf19 complex contributes to the suppression of centromere-proximal COs.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/10850/elife-10850-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013D), The Ctf19 complex enriches meiotic cohesin in the pericentromere during prophase I. (A\u2013C) Wild type (AM4015), iml3\u25b3 (AM4016) and mcm21\u25b3 (AM13833)\u00a0strains carrying REC8-3HA\u00a0and ndt80\u25b3 were harvested 5h after resuspension in sporulation medium and Rec8 association was analyzed by ChIP-Seq. Rec8 association with chromosome V and a close up of the 50\u00a0kb pericentromeric interval is shown (A). The median Rec8 level for all 16 pericentromeric regions is shown over a 25\u00a0kb region on each side of the centromere for iml3\u25b3 (B) and mcm21\u25b3 (C) compared to wild type. (D) Strains as in (A) together with chl4\u25b3 (AM4017),\u00a0ctf19\u25b3 (AM20086) and a no tag control (AM11633) carrying ndt80\u25b3 were arrested in prophase I by harvesting 5h after being induced to sporulate. The level of Rec8 at the indicated sites was determined by anti-HA ChIP-qPCR. Primer sets used corresponded to sites on the arm of chromosome IV\u00a0(arm1, 2, 3), within the 20\u00a0kb pericentromere (pericen1, 2) or ~150bp from CEN4\u00a0(CEN4) and sequences and coordinates are given in Supplementary file 4B. Error bars represent standard error (n=4 biological replicates for iml3\u25b3,\u00a0chl4\u25b3, ctf19\u25b3 and mcm21\u25b3;\u00a0n=8 for no tag and wild type). *p<0.05, unpaired t test. (E) Chromosomal Rec8 levels are reduced in scc4-m35\u00a0cells. Wild type (AM4015), scc4-m35 (AM18211) cells and a no tag control (AM11633) carrying ndt80\u25b3 were arrested in prophase I by harvesting 5\u00a0hr after being induced to sporulate. The level of Rec8 at the indicated sites was determined by anti-HA ChIP-qPCR. Error bars represent standard error (n=4 biological replicates). *p<0.05, paired t test. (F, G) Map distances (in cM) in the pericentromere (F) or a chromosome arm (G) interval in wild type, a control SCC4\u00a0replacement strain, or the scc4-m35\u00a0mutant were determined and their significance analysed as described in Figure 1.\u00a0ChIP-Seq,\u00a0chromatin immunoprecipitation\u00a0with\u00a0sequencing.\n\nWe next asked whether the Ctf19 complex influences DSB patterns near centromeres by acting before and during S-phase, when it is known to promote the pericentromeric enrichment of cohesin. To test this, we used the \u201canchor away\u201d system to selectively and conditionally deplete Ctf19 from the nucleus after S-phase (via timed addition of rapamycin (Haruki et al., 2008); Figure 6A, Figure 6\u2014figure supplement 1). We reasoned that anchoring away Ctf19 before S phase (t=0) would prevent pericentromeric cohesin establishment, similar to a ctf19\u25b3 strain\u00a0(Marston et al., 2005; Fernius et al., 2009). In contrast, because cohesin establishment is coupled to DNA replication (Uhlmann and Nasmyth, 1998), addition of rapamycin after S phase (t=3) would allow cohesion establishment, thereby allowing us to test cohesin-independent functions of the Ctf19 complex (Figure 6B). First, we confirmed the\u00a0successful removal of Ctf19-Frb-GFP from the centromere by addition\u00a0of rapamycin either before (t=0) or after (t=3) DNA replication (Figure 6C). Next, we examined the effect on centromeric cohesin. Rec8 chromatin immunoprecipitation\u00a0(ChIP) in prophase I cells revealed that centromeric cohesin levels were more greatly reduced by anchoring away Ctf19 before (t=0\u2009h) rather than after DNA replication (t=3\u2009h) (Figure 6D). Because this assay does not allow cohesin loaded before or after DNA replication to be distinguished, we sought to test the functionality of pericentromeric cohesin in the two conditions. Since only functional cohesin is expected to be retained at centromeres during anaphase I (Klein et al., 1999), we examined Rec8 on chromosome spreads in binucleate cells (Figure 6E,F). Although centromeric Rec8 was detected in only 4% of binucleate cells where Ctf19 was anchored away before DNA replication (Rapa t=0), centromeric Rec8 was observed in 48% of binucleate cells where Ctf19 was anchored away after DNA replication (Rapa t=3) (Figure 6F). Therefore, the presence of Ctf19 before and during S phase allows for the establishment of functional pericentromeric cohesin. Having established conditions that allowed us to uncouple pericentromeric cohesin establishment from post-S phase functions of the Ctf19 complex, we asked whether the role of the Ctf19 complex in suppressing pericentromeric DSBs is linked to its role in cohesin establishment during S phase. As expected, anchoring away Ctf19 before (Rapa t=0) DNA replication led to the appearance of CEN1-proximal DSBs with comparable timing and intensity to those of ctf19\u25b3 cells (Figure 6G\u2013I). DSBs were also observed following rapamycin addition at 3\u00a0hr, i.e. after DNA replication\u00a0(Figure 6H). This suggests that the Ctf19 complex is required throughout meiotic prophase to prevent pericentromeric DSB formation and that it does so in a manner independent of its role in cohesin establishment.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/10850/elife-10850-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013D) Anchoring away Ctf19 after DNA replication and cohesion establishment is not sufficient to prevent the appearance of centromere-proximal DSBs. (A, B) Scheme of the anchor away system and experimental setup used to deplete Ctf19 during meiosis. (C) Addition of Rapamycin leads to Ctf19 removal from the pericentromere. Three cultures of strain AM18978 (CTF19-FRB-GFP\u00a0RPL13A-2XFKBP12 tor1-1 fpr1\u25b3 ndt80\u25b3 REC8-3HA) were induced to sporulate. Either DMSO or Rapamycin were added to two of the cultures (t=0). Rapamycin was added 3\u00a0hr after inducing sporulation to the third culture (t=3). A fourth culture was a no tag ndt80\u25b3 control (AM11633) to which DMSO was added. All cultures were harvested 5\u00a0hr after inducing sporulation (prophase I arrest) and Ctf19 levels were analyzed by anti-GFP ChIP-qPCR at the indicated sites. Error bars represent standard error (n=4 biological replicates). *p<0.05, paired t-test. See Figure 5 and Supplementary file 4B for details of primer sets used. (D\u2013F) Anchoring away Ctf19 after DNA replication allows establishment of centromeric Rec8. (D) Cells treated as in (C) were processed for anti-HA ChIP-qPCR at the indicated sites. Error bars represent standard error (n=4 biological replicates). *p<0.05, paired t-test. (E and F) Three cultures of strain AM20138 (CTF19-FRB-GFP\u00a0NDC10-6HA pGAL-NDT80 pGPD1-GAL4(848)-ER RPL13A-2XFKBP12 tor1-1 fpr1\u25b3 ndt80\u25b3 REC8-3HA) were resuspended in sporulation medium (t=0). DMSO or Rapamycin were immediately added to the first and second cultures (t=0), while the third culture received Rapamycin after 3\u00a0hr incubation (t=3). After 6\u00a0hr total, \u03b2-estradiol was added to release cells from the prophase I arrest, samples were harvested at 15 min intervals and chromosome spreads were prepared and stained with anti-HA and anti-Myc antibodies. (E) Examples of binucleate cells with centromeric or no Rec8. (F) Percentages of binucleate cells with centromeric Rec8 are shown for indicated conditions. (G\u2013I) Timed depletion of Ctf19 to test DSB formation dependencies. (G) DNA replication is largely complete prior to anchoring Ctf19 away in cultures where Rapamycin was added at 3\u00a0hr. A control strain GV2367 (RPL13A-2XFKBP12\u00a0tor1-1 fpr1\u25b3 dmc1\u25b3) and equivalent experimental strain carrying CTF19-FRB-GFP\u00a0(GV2354) were induced to undergo meiosis together with a ctf19\u25b3 dmc1\u25b3 mutant (GV1912). Rapamycin or DMSO were added at the indicated times (red circles, addition of DMSO at t=0; blue squares, addition of Rapamycin at t=0; green squares, addition of Rapamycin at t=3) and samples were processed for FACS analysis (timepoints t=0, 3, 5, 8\u2009hr). (H) Analysis of DSB formation in the experiment shown in (B). Southern blot shows that DSB formation close to CEN1\u00a0occurs either when Ctf19 is anchored away early (t=0) or after DNA replication and cohesin enrichment (t=3). Red circles, addition of DMSO at t=0; blue squares, addition of Rapamycin at t=0; green squares, addition of Rapamycin at t=3; Arrowheads, Spo11-dependent DSBs; asterisks, cross-hybridizing species. (I) Quantification DSBs shown in (H). (J, K) Inhibition of centromere-proximal DSBs does not depend on cohesin. (J) CEN1-proximal DSBs are observed in rec8\u25b3 cells only upon deletion of Ctf19 complex components. Strains GV48 (dmc1\u25b3),\u00a0GV2050 (dmc1\u25b3\u00a0mcm21\u25b3), GV2403 (dmc1\u25b3\u00a0rec8\u25b3), GV2286 (dmc1\u25b3\u00a0mcm21\u25b3 rec8\u25b3) were analyzed by Southern blotting as described in Figure 4B. (K) Cohesin impairment does not allow CEN1-proximal DSB formation. Strains used were GV48 (dmc1\u25b3),\u00a0GV1912 (dmc1\u25b3\u00a0ctf19\u25b3), GV2305 (dmc1\u25b3\u00a0SCC4) and GV2533 (dmc1\u25b3\u00a0scc4-m35). (L) Anchoring away Ctf19-FRB after DNA replication and cohesin establishment leads to only a modest increase in pericentromeric COs. Three cultures of strain AM19543 [carrying heterozygous pericentromeric RFP/GFP reporters separated by ~10\u00a0kb, homozygous chromosomal arm CFP reporters (Figure 1B), estradiol-inducible Ndt80 to allow release from prophase I arrest (pGAL-NDT80\u00a0pGPD1-GAL4(848)-ER) and the Ctf19 anchor away system (CTF19-FRB\u00a0RPL13A-2XFKBP12 tor1-1 fpr1\u25b3)] were resuspended in sporulation medium (t=0). DMSO or Rapamycin were immediately added to the first and second cultures (t=0), while the third culture received Rapamycin after 3\u00a0hr incubation (t=3). All cultures were incubated for 6\u00a0hr total before being released from the prophase I arrest by addition of \u03b2-estradiol and tetrads were scored after incubation for 48\u00a0hr total.\u00a0ChIP, chromatin immunoprecipitation;\u00a0DMSO, dimethyl sulfoxide;\u00a0DSBs, double\u00a0strand breaks;\u00a0FACS, fluorescence-activated cell sorting;\u00a0qPCR, quantitative polymerase chain reaction.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10850/elife-10850-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** RPL13A-2xFKBP12\u00a0tor1-1 fpr1\u25b3 strains carrying FRB-tagged (CTF19-FRB-GFP; GV2275) or untagged Ctf19 (CTF19;\u00a0GV1853) were treated with Rapamycin or DMSO, as a control, upon resuspension in sporulation medium (t=0). (A) The percentages of cells producing monads (1 spore), dyads (2 spores) or tetrads (4 spores) was scored (n=200). (B) The number of spores germinating per tetrad was scored after dissection. At least 60 spores were analysed per condition.\n\nTo further test the requirement for cohesin in preventing pericentromeric DSB formation, we asked whether\u00a0DSBs are increased near CEN1\u00a0in cells defective for cohesin. Consistent with our findings above, CEN1-proximal DSBs were not observed in rec8\u25b3 or scc4-m35\u00a0cells, unless a Ctf19 complex component (Mcm21CENP-O) was also absent (Figure 6J,K). Thus, DSB inhibition near centromeres does not depend on cohesin, but requires the continuous presence of the Ctf19 complex. These findings provide an explanation for our observation that Ctf19 complex mutants exhibit a higher frequency of pericentromeric COs than scc4-m35\u00a0mutant cells (Figure 1C, Figure 5F), despite a comparable reduction in pericentromeric cohesin (Figure 5D,E). Loss of MCM21 relieved DSB suppression over a domain (~6\u00a0kb; Figure 3B) that is much larger than the 125\u00a0bp where the kinetochore resides but smaller than the cohesin-rich pericentromere (~20\u00a0kb; Figure 5A). We therefore speculate that the large multi-subunit Ctf19 complex may exert DSB suppression near centromeres by altering local chromosome structure such that accessibility of DSB-promoting factors is prevented.\n\nOur findings suggest that pericentromeric cohesin might provide a safeguarding mechanism to channel residual centromere-proximal DNA breaks towards repair pathways that do not promote CO formation. If this is the case, DSBs arising after DNA replication and pericentromeric cohesion establishment would not be expected to give rise to pericentromeric COs. To test this idea, we anchored away Ctf19 either before (t=0) or after (t=3) DNA replication, both of which induce CEN1-proximal DSBs soon thereafter (Figure 6H) and measured CO formation using the live cell reporter assay (Figure 6L). Anchoring Ctf19 away before DNA replication (t=0) increased pericentromeric COs to a similar extent to ctf19\u25b3 cells (compare Figure 1B and Figure 6L), as expected. However, anchoring Ctf19 away after DNA replication (t=3) led to a more modest increase in pericentromeric COs (Figure 6L), despite comparable levels of DNA break formation in these cells (Figure 6H,I). Therefore, pericentromeric cohesin acts at a step after DSB formation to direct repair, probably through a pathway avoiding the homolog, to ensure CO suppression near centromeres. Because the cohesin complex is known to promote inter-sister recombination in mitosis and meiosis (Covo et al., 2010; Ellermeier and Smith, 2005; Klein et al., 1999; Kugou et al., 2009; Sjogren and Nasmyth, 2001) the simplest explanation is that increased pericentromeric cohesin shunts meiotic DSBs into inter-sister-specific recombinational repair, although we cannot rule out pericentromere-specific, cohesin-dependent activation of alternative repair pathways.\n\n### Zip1 prevents pericentromeric COs and promotes centromere pairing through separate mechanisms\n\nRec8 globally influences the localization of the synaptonemal complex (SC) component Zip1 along chromosomes (Chuong and Dawson, 2010; Brar et al., 2009). Because Zip1, like cohesin (Kim et al., 2010) has been suggested to confer a bias on DSBs to be repaired from the sister chromatid, rather than the homolog, and because loss of Zip1 increases pericentromeric COs (Figure 1B), but not DSBs (Chen et al., 2008; Figure 7\u2014figure supplement 1), we reasoned that a critical role of pericentromeric cohesin might be Zip1 recruitment. Consistently, ChIP-qPCR indicated that Zip1 localization was impaired in scc4-m35 (Figure 7A) and Ctf19 complex mutants (Figure 7B). Furthermore, analysis of spread meiotic chromosomes revealed that the \u201cdotty\u201d Zip1 localization pattern, representative of centromeres, was rarely observed in Ctf19 complex mutants (Figure 7C). Unexpectedly, \u201cfull\u201d Zip1 localization along chromosomes was also impaired in Ctf19 complex mutants. Although the underlying reasons for this are currently unclear, possible explanations are delayed G2/prophase progression and/or a requirement for pericentromeric Zip1 in producing the \u201cfull\u201d Zip1 tracts observed in cytological analyses. Nevertheless, ChIP-Seq of prophase I-arrested cells confirmed that Ctf19 complex components are specifically required for Zip1 association with core centromeres and the pericentromere (Figure 7D\u2013F). We measured comparable pericentromeric CO frequencies of 2.4 and 2.0 cM in scc4-m35\u00a0and zip1\u25b3 cells, respectively (Figure 1B, Figure 5F) suggesting that pericentromeric cohesin establishment by the Ctf19 complex directs Zip1 association to suppress pericentromeric COs, although we do not rule out Zip1-independent functions of cohesin in CO suppression.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/10850/elife-10850-fig7-v2.jpg)\n\n**Figure 7.:** (A) Zip1 enrichment on chromosomes is reduced in scc4-m35 mutants. Wild type (AM11633), scc4-m35\u00a0(AM18881) and zip1\u25b3 (AM10913) cells carrying ndt80\u25b3 were induced to sporulate and harvested after 5\u00a0hr (prophase I) arrest for anti-Zip1 ChIP-qPCR. Error bars represent standard error (n=4 biological replicates). p<0.05, paired t test. See Figure 5 and Supplementary file 4B for details of primer sets used. (B-\u2013F) The Ctf19 complex is required for Zip1 localization at centromeres. (B) ChIP-qPCR analysis of Zip1 localization in prophase I in Ctf19 complex mutants. Wild type (AM11633), iml3\u25b3 (AM10686), chl4\u25b3 (AM10658), ctf19\u25b3 (AM10660), mcm21\u25b3 (AM10664) and zip1\u25b3 (AM10913) cells carrying ndt80\u25b3 were induced to sporulate and harvested after 5\u00a0hr for anti-Zip1 qPCR. Error bars represent standard error (n=3 biological replicates). p<0.05, paired t test. See Figure 5 and Supplementary file 4B for details of primer sets used. (C) Analysis of Zip1 localization on chromosome spreads as cells progress into prophase I. Examples of Zip1 localization on chromosome spreads are shown with Zip1 in green and DNA in blue. Categories of Zip1 localization were scored in 100 spread nuclei at each of the indicated times after resuspension in sporulation medium. Strains used carried NDC10-6HA,\u00a0pGAL-NDT80, pGPD1-GAL4-ER and were AM8769 (wild type), AM8772 (iml3\u25b3), AM8770 (chl4\u25b3), AM9049 (ctf19\u25b3) and AM8861 (mcm21\u25b3). (D\u2013F) ChIP-Seq analysis of Zip1 localization during prophase I in wild type, iml3\u25b3 and mcm21\u25b3 strains carrying ndt80\u25b3 (B) and harvested 5 hr after resuspension in sporulation medium. (D) Zip1 localization along chromosome V is shown as an example with the 50\u00a0kb region around the centromere amplified. (E,\u00a0F) Median Zip1 localization over a 50\u00a0kb domain surrounding all 16 centromeres is shown compared to wild type for iml3\u25b3 (E)\u00a0and mcm21\u25b3 (F).\u00a0ChIP,\u00a0chromatin immunoprecipitation;\u00a0qPCR, quantitative polymerase chain reaction.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10850/elife-10850-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Repair-deficient (dmc1\u25b3) cells (strains GV48 (dmc1\u25b3), GV2050 (dmc1\u25b3\u00a0mcm21\u25b3), GV2734 (dmc1\u25b3\u00a0zip1\u25b3) were harvested at defined times after inducing sporulation ((t=0, 3, 5, 8\u2009hr) and faster migrating DNA species (indicative of DSBs) were detected using a probe to CEN1\u00a0or the control YCR047C locus. Arrowheads, Spo11-dependent DSBs.\u00a0DSBs, double\u00a0strand breaks.\n\nCentromeric Zip1 mediates homology-independent pairing of homologous chromosomes early in meiotic prophase; the subsequent conversion to homologous pairing requires Spo11 (Tsubouchi and Roeder, 2005; Tsubouchi et al., 2008). The Ctf19 complex was required for the centromeric localization of Zip1 in spo11\u25b3 cells (Figure 8A) and homology-independent centromere coupling (Figure 8B) but not for the SPO11-dependent transition to homologous pairing (Figure 8C,D). To test whether Zip1 exerts its role in suppression of pericentromeric COs through homology-independent centromere coupling, we analyzed the synaptonemal complex assembly-proficient but centromere coupling-defective zip1-S75E mutant (Falk et al., 2010), using the live cell recombination reporter assay. Pericentromeric COs were not significantly increased in the zip1-S75E\u00a0mutant (Figure 8E,F), indicating that Zip1 suppresses pericentromeric COs independently of its role in centromere coupling.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/10850/elife-10850-fig8-v2.jpg)\n\n**Figure 8.:** (A,\u00a0B) Analysis of Zip1 and kinetochore foci (Ndc10-6HA) on chromosome spreads in spo11\u25b3 cells progressing into meiotic prophase I. The percentages of cells with \u201cdotty\u201d Zip1 foci, representing kinetochores, were scored in 100 spread nuclei at each of the indicated times after resuspension of strains spo11\u25b3 (AM9018), spo11\u25b3\u00a0iml3\u25b3 (AM9288),\u00a0spo11\u25b3 chl4\u25b3 (AM9287),\u00a0spo11\u25b3 ctf19\u25b3 (AM9017) and spo11\u25b3\u00a0mcm21\u25b3 (AM8861)\u00a0in sporulation medium (A). The number of Ndc10 kinetochore foci per spread nucleus was scored in the indicated strains at the 6\u00a0hr time\u00a0point with the average and standard deviation indicated. n=48 (spo11\u25b3), 63 (spo11\u25b3\u00a0iml3\u25b3) and 60 (spo11\u25b3\u00a0mcm21\u25b3). (B) The inset shows Ndc10-6HA staining (red) in an example nucleus. DNA is shown in blue. (C) The Ctf19 complex is not required for SPO11-dependent homologous pairing. Pairing of homozygous CEN5-GFP (C) or LYS2-GFP (D, arm) foci was scored for 100 cells at each of the indicated times after resuspension in sporulation medium in ndt80\u25b3 cells. Heterologous CEN5-GFP\u00a0and LYS2-GFP\u00a0foci labels were used as a control for spurious interactions (strain AM12823, red filled squares). Strains used in (C) were AM12829 (wild type), AM13348 (iml3\u25b3),\u00a0AM12466 (chl4\u25b3),\u00a0AM13346 (ctf19\u25b3) and AM12837 (mcm21\u25b3). Strains used in (D) were AM12469 (wild type), AM12978 (iml3\u25b3),\u00a0AM12980 (chl4\u25b3),\u00a0AM12831 (ctf19\u25b3) and AM12825 (mcm21\u25b3). A representative experiment is shown. (E,\u00a0F) The centromere-coupling function of Zip1 is separable from its role in suppression of recombination in the pericentromere. Recombination frequency in the pericentromere (E) or chromosomal arm (F) interval on chromosome VIII for the centromere-coupling defective zip1-S75E\u00a0mutant is shown together with data for wild type and zip1\u25b3 reproduced from Figure 1B,C.\u00a0COs, crossovers.\n\n## Discussion\n\nCentromere-proximal CO recombination is a major risk factor for meiotic chromosome segregation and developmental aneuploidy and is suppressed in species with diverse centromere organization. The data presented here establish the highly conserved kinetochore as a major factor responsible for setting up a repressive environment for crossover recombination in the pericentromere during meiosis (Figure 9). In cells lacking the Ctf19 kinetochore sub-complex, pericentromeric CO formation drastically increases. We uncover multi-layered Ctf19 complex-dependent suppression of CO formation acting at both the level of meiotic DSB formation and at the level of recombinational repair template choice. This centrally important role of the kinetochore in preventing potentially detrimental crossovers nearby defines a further mechanism by which it safeguards genome stability.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/10850/elife-10850-fig9-v2.jpg)\n\n**Figure 9.:** (1) Mid-range (~6\u00a0kb) suppression of DSBs. (2) Long range (~20-50\u00a0kb) inhibition of COs by cohesin and Zip1, directing repair of rare centromere-proximal breaks to the sister chromatid to avoid deleterious pericentromeric inter-homolog chiasmata.\n\n### The Ctf19 complex suppresses centromere-proximal DNA breaks\n\nThe placement of meiotic DSBs is influenced by factors acting on different levels of chromosome and chromatin organization. On a global scale, the assembly of a meiotic chromosome axis dictates the spatial distribution of the meiotic DSB machinery along chromosomes (Kim et al., 2010; Kugou et al., 2009; Pan et al., 2011; Panizza et al., 2011). On a smaller scale, genome organization and histone modifications have been shown to allow Spo11 activity (reviewed in de Massy (2013)). Spo11-dependent DSB formation is strongly associated with chromatin regions that are enriched for histone H3 Lysine 4 (H3K4) methylation (reviewed in\u00a0de Massy (2013)) and in budding yeast, these modifications are found near transcriptional start sites (Tischfield and Keeney, 2012)). Indeed, within the budding yeast genome, Spo11 prefers to cleave DNA in open, nucleosome-free regions that are most often found in active, divergent promoters (Blitzblau et al., 2007; Pan et al., 2011).\n\nSuperimposed on these global determinants of the DSB landscape are specific and spatial controls, which create zones of inhibition within at-risk genomic regions such as telomeres, repetitive DNA arrays and centromeres (reviewed in de Massy (2013)). We find that the kinetochore actively minimizes DSB formation within a region of ~6\u00a0kb, surrounding all budding yeast centromeres. The underlying genome organization of these regions is not obviously different from the rest of the genome, harboring a similar density of genes and regulatory elements, which would ordinarily be expected to contain several DSB-permissive regions, were they not located close to a centromere. Indeed, in the absence of the Ctf19 kinetochore sub-complex, DSB formation is strongly increased, and these DSBs have features typical of preferred DSB sites genome-wide. Accordingly, one of the strongest pericentromeric DSBs that we identified here, at CEN1, falls within a divergent promoter (of the genes TFC3 and NUP60;\u00a0Figure 4A). The Ctf19 complex suppresses DSB formation surrounding all centromeres, though to different extents depending on the chromosome (Figure 3\u2014figure supplement 1), suggesting that it overcomes the intrinsic features of the chromatin organization in the pericentromere to dampen DSB activity. This could be achieved by locally shaping a higher order chromosome organization and/or by influencing the recruitment of meiotic chromosome axis components. Intriguingly, the chromosomal region protected from DSBs (~6\u00a0kb) extends far beyond the binding of the Ctf19 complex, which is restricted to the 125 bp point centromere, as defined by the assembly of a nucleosome containing the centromere-specific histone variant Cse4CENP-A (Biggins, 2013). Therefore, the Ctf19 complex protects a region about 50 times larger than that occupied by the centromeric nucleosome from DSBs, suggesting that the effect is not merely due to a local disturbance of Cse4CENP-A. A precedent for the idea that the Ctf19 complex can exert long-range effects on the pericentromere through its role in driving cohesin loading at the centromere to enrich the surrounding 20\u201350\u00a0kb is well-documented (Eckert et al., 2007; Fernius and Marston, 2009; Fernius et al., 2013; Ng et al., 2013). However, we found that the Ctf19 complex must prevent DSB formation independently of its role in promoting cohesin enrichment within pericentromeres. Cohesin enrichment was neither sufficient nor required to prevent DSBs near CEN1. Furthermore, DSB suppression acts on shorter chromosomal distances (~6 kb), than the ~20\u201350 kb sized regions within which the Ctf19 complex influences cohesin recruitment. Taken together, these findings suggest the existence of an additional, distinct Ctf19 complex-dependent effect on meiotic DSB formation within regions adjacent to centromeres. By analogy to the effect on pericentromeric cohesin enrichment, we speculate that the Ctf19 complex may enable the centromeric recruitment of factors that alter chromatin organization in the surrounding region.\n\n### Cohesin recruitment in the pericentromere by the Ctf19 complex diverts DNA repair pathways away from the homolog to prevent CO formation\n\nMinimizing the initiating event of meiotic recombination, DSB formation, is an efficient way to shield against unwanted pericentromeric CO formation. However, the prevention of pericentromeric DSBs by the Ctf19 complex is not absolute, as DSBs are observed near centromeres in wild type cells, although at reduced levels (Blitzblau et al., 2007; Buhler et al., 2007; Pan et al., 2011). We found that DSBs that escape the repressive control of the Ctf19 complex are diverted from repair pathways that would lead to potentially deleterious CO formation by cohesin, which is established at high levels within pericentromeres. These observations are in agreement with previous conclusions that pericentromeric CO formation is more strongly suppressed than DSB formation (Blitzblau et al., 2007; Buhler et al., 2007; Chen et al., 2008; Pan et al., 2011).\n\nWe found that forced removal of the Ctf19 complex from kinetochores after S-phase triggered increased DSB formation, but led to only a\u00a0relatively modest increase in CO formation. Conversely, a cohesin-loader mutant (scc4-m35) that disrupts the proper establishment of cohesin showed increased levels of CO formation, whereas no increased DSB formation could be detected. Thus, DSBs that occur within the pericentromeric regions when high levels of cohesion are present are shunted away from inter-homologous recombinational repair (that eventually can yield a CO or NCO). Taking into account the established roles for cohesin in promoting inter-sister repair (Covo et al., 2010; Ellermeier and Smith, 2005; Klein et al., 1999; Kugou et al., 2009; Sjogren and Nasmyth, 2001), we consider it is most likely that these breaks will preferentially be repaired using the sister chromatid as a repair template.\n\nHow would the enrichment of cohesin minimize inter-homologue repair? One possibility is that high levels of cohesin turn the sister chromatid within pericentromeres into a preferred repair template. Indeed, it has been shown that template choice (sister or homologue) for DSB repair during budding yeast vegetative growth is dictated by the levels of cohesin (Covo et al., 2010). Globally, on meiotic chromosomes, repair of DSBs is normally biased towards use of the homologous chromosome instead of the sister chromatid to ensure at least one COs is formed to link each homolog pair (Hollingsworth, 2010; Humphryes and Hochwagen, 2014). In budding yeast, this homologue bias is established by the Red1/Hop1/Mek1 signaling axis (Hong et al., 2013; Kim et al., 2010; Niu et al., 2007; Niu et al., 2005). This signaling pathway is thought to locally antagonize cohesin to enable the use of the more distant homologous chromosome as a repair template (Hong et al., 2013; Kim et al., 2010). Potentially, the Red1/Hop1/Mek1 system is not capable of counteracting cohesin within pericentromeres, where much higher levels of cohesin are present as compared to elsewhere in the genome. Alternatively, one could envision that, within pericentromeric regions, Red1/Hop1/Mek1 are incapacitated via active inhibition or removal.\n\nOur findings point to a second mechanism through which cohesin steers repair of meiotic DSBs away from inter-homologue repair: by promoting the local recruitment of Zip1. Zip1 has previously been implicated in preventing pericentromeric CO and NCO repair, and was suggested to promote inter-sister repair (Chen et al., 2008). We found that proper recruitment of Zip1 to the pericentromere requires the Ctf19 complex and kinetochore-targeted Scc2/4, consistent with previous studies demonstrating a requirement for cohesin in Zip1 recruitment (Chuong and Dawson, 2010; Brar et al., 2009). Zip1 performs specific functions at centromeres during prophase, which include non-homologous centromere-coupling (Tsubouchi and Roeder, 2005; Tsubouchi et al., 2008), repression of pericentromeric CO formation (Chen et al., 2008) and the bi-orientation of homologous chromosomes during meiosis I (Gladstone et al., 2009; Newnham et al., 2010). Here we have shown that the Ctf19 complex, presumably through its role in directing pericentromeric cohesin enrichment, enables the dedicated recruitment of a centromere-localized pool of Zip1 to perform these specialized functions.\n\nOverall, we conclude that the kinetochore, and specifically the Ctf19 complex, promotes the establishment of an inter-homologue recombination-suppressed zone surrounding centromeres. To do so, the Ctf19 complex recruits high levels of cohesin within pericentromeres, which in turn triggers efficient recruitment of the synaptonemal complex component Zip1, effectively leading to strong, local inhibition of inter-homologue directed repair.\n\n### A novel role for the kinetochore during meiotic G2/Prophase\n\nCO formation in the vicinity of centromeres negatively influences meiotic chromosome segregation in diverse organisms, and is associated with the incidence of Trisomy 21, or Down\u2019s syndrome, in humans (Hassold and Hunt, 2001; Koehler et al., 1996; Rockmill et al., 2006). Mechanistically, pericentromeric CO formation has been suggested to lead to a local disturbance of sister chromatid cohesion, which could lead to precocious separation sister chromatid, causing meiosis II non-disjunction and aneuploidy (Rockmill et al., 2006). While meiosis II mis-segregation is a characteristic feature of Ctf19 complex mutants (Fernius and Marston, 2009), the impact of pericentromeric COs on this phenotype is currently unclear because of the requirement for this complex for proper pericentromeric cohesion.\n\nThe kinetochore is a sophisticated machine that couples chromosomes to microtubules and drives their segregation in meiosis and mitosis. The kinetochore also serves as a signaling platform that monitors and responds to the state of kinetochore\u2013microtubule attachment in the context of the cell cycle. During meiosis, in addition to the canonical events that also take place during mitosis, the kinetochore takes on additional roles to bring about the specialized segregation pattern. First, sister chromatids need to attach to microtubules that emanate from the same pole in a mono-oriented fashion. Second, sister chromatid cohesion at pericentromeres needs to be protected from removal during meiosis I. In both cases, the kinetochore controls these events by coordinating the recruitment of specific protein complexes (i.e. monopolin and Sgo1/PP2A, respectively) (reviewed in Duro and Marston (2015)). Our data add a hitherto unknown, additional level of functionality to the kinetochore in meiosis, in which it impacts meiosis-specific CO formation by influencing both meiotic DSB formation and recombinational break repair. As such, it effectively prevents the formation of unwanted chiasma within pericentromeres. Finally, we note that our data might also provide an additional rationale for why much higher cohesin levels need to be established around centromeres, namely to minimise CO formation near centromeres.\n\nThe Ctf19 complex is a generally conserved component of eukaryotic kinetochores. Suppression of meiotic CO recombination within pericentromeres is a widespread feature of meiotic recombination in many diverse organisms, whether or not their centromeres are surrounded by large blocks of heterochromatinized DNA. We therefore suggest that Ctf19 complex-driven suppression of meiotic CO formation serves as a universal component of the mechanisms that shape the meiotic recombination landscape in order to promote the faithful propagation of the genome from generation to the next.\n\n## Materials and methods\n\n### Yeast strains and plasmids\n\nYeast strains used in this study are derivatives of SK1 and genotypes are given in Supplementary file 4A except for the strains used for analysis of recombination genome-wide where AM15182 and AM15183 haploid strains derived from YJM789 and S96, respectively, were used. Standard techniques were used to generate gene deletions, promoter replacements and epitope-tagged proteins. zip1-S75E was described in Falk et al. (2010). scc4-m35\u00a0and SCC4::HIS3 were generated in SK1 as described by Hinshaw et al. (2015). SPO11-6HIS-3FLAG-loxP-KanMX-loxP was provided by K. Ohta (Kugou et al., 2009) and DSN1-6HIS-3FLAG\u00a0was described in Sarangapani et al., (2014). For the anchor away system, parental SK1 strains were generated as described by Haruki et al. (2008) harbouring tor1-1, fpr1\u0394, and RPL13A-2xFKBP12.\u00a0CTF19-FRB-GFP was made using standard polymerase chain reaction (PCR)-based transformation using pFA6a-FRB-GFP-KanMX6 (GVp584) as a template (Haruki et al., 2008). Prophase I block-release experiments used strains carrying pGAL-NDT80\u00a0pGPD1-GAL4(848)-ER (Benjamin et al., 2003).\n\nFor the live cell recombination reporter assay, pYKL050c-CFP/RFP/GFP* constructs (Thacker et al., 2011) were integrated at specific loci. Plasmids AMp1005 and AMp1048 were generated by cloning an ~500\u00a0bp region corresponding to SGD coordinates 115024\u2013115572 and 150521\u2013151070 into pSK726 and pSK691, respectively. pYKL050-CFP was introduced at the THR1 locus by integration of plasmid pSK695 and pYKL050-RFP was integrated at the CEN8 locus by integration of plasmid pSK693 or at SGD\u00a0coordinates 150521\u2013151070 by integration of plasmid AMp1048. pYKL050c-GFP* was introduced at the ARG4 locus by integration of the plasmid pSK729 and at SGD\u00a0coordinates 115024\u2013115572 locus by integration of plasmid AMp1005.\n\n### Growth conditions\n\nDiploid yeast strains were placed on Yeast peptone glycerol (YPG) agar plates (1% yeast extract, 2% Bacto peptone, 2.5% glycerol, and 2% agar) and grown for 16\u2009hr at 30oC before transferring to YPD\u00a04% agar plates (1% yeast extract, 2% Bacto peptone, 4% glucose, and 2% agar) and incubated for 24\u2009hr at 30oC. Strains were inoculated in YPD media (1% yeast extract, 2% Bacto peptone, and 2% glucose) and cultured for 24\u2009hr before being transferred to YPA (1% yeast extract, 2% Bacto peptone, and 1% potassium acetate) or BYTA (1% yeast extract, 2% Bacto tryptone, 1% potassium acetate, 50\u00a0mM potassium phthalate) at an OD600 = 0.2\u20130.3 for ~16\u2009hr. Cells were washed once with sterile distilled water and re-suspended in SPO media (0.3% potassium acetate, pH 7) at an OD600 = 1.8\u20131.9; t=0. Cells were incubated at 30oC for the duration of the experiment. Prophase I block-release experiments were performed as described by Carlile and Amon (2008).\n\n### Western blotting\n\nWestern blotting was performed as previously described (Clift et al., 2009), with the exception that proteins were visualized using a fluorophore-conjugated antibody and the Odyssey system (LI-COR Biosciences,\u00a0Lincoln,\u00a0Nebraska). To visualise 3HA-Iml3, 3HA-Dsn1 and 3HA-Mtw1, mouse anti-HA (12CA5, Roche,\u00a0Basel,\u00a0Switzerland) was used at a dilution of 1:1000 and anti-mouse IRDye 800CW (LI-COR Biosciences) at a dilution of 1:10,000. To visualise Pgk1 (loading control), rabbit anti-Pgk1 (Marston lab stock) and anti-rabbit IRDye 680RD (LI-COR Biosciences) were used at a dilution of 1:10000.\n\n### Anchor-Away technique\n\nProteins tagged with the FKBP12-rapamycin-binding (FRB) domain of mTOR1 were depleted from the nucleus by Rpl13A-2xFKBP12 upon addition of rapamycin to a final concentration of 1 \u03bcM, as previously described (Haruki et al., 2008).\n\n### Chromatin immunoprecipitation\n\nChIP-qPCR and ChIP-Seq were performed as described in Verzijlbergen et al. (2014) using mouse anti-HA (12CA5, Roche), rabbit anti-Zip1 (Santa Cruz Biotechnology,\u00a0Dallas,\u00a0Texas), mouse anti-FLAG (Mono M2, Sigma Aldrich, St Louis, Missouri) or mouse anti-GFP (Sigma Aldrich). Primers used for qPCR analysis are given in Supplementary file 4B.\n\n### Analysis of ChIP-Seq data\n\nChIP-Seq samples were analysed on a HiSeq2000 instrument (Illumina, San Diego, California) by the EMBL Core Genomics Facility (Heidelberg, Germany). Using BWA (Version: 0.7.5a-r405) (Li and Durbin, 2010), single reads were mapped to the sacCer3 reference genome. Duplicate reads were removed for parallel analysis using SAMtools (Version 1.2) (Li et al., 2009). The data shown were normalized to the number of reads per million of total mapped reads. The total mapped reads were established after any processing. Additional scripts for processing data around the pericentromeres can be found at https://github.com/AlastairKerr/Vincenten2015. ChIP-Seq data sets have been deposited with the NCBI Gene Expression Omnibus under the accession number GSE70032.\n\n### Microscopy\n\nChromosome spreading was performed as described previously (Loidl et al., 1998). Ndc10-6HA was detected using a mouse anti-HA antibody (Mono HA.11, Covance, Princeton, New Jersey) at 1:250 dilution and an anti-mouse Cy3 antibody (Jackson ImmunoResearch) at 1:300 dilution. Rec8-13 Myc was detected with a rabbit anti-MYC antibody (Gramsch Laboratories) and an anti-rabbit fluorescein\u00a0isothiocyanate\u00a0(FITC)-conjugated antibody (Jackson Immunoresearch, West Grove, Pennsylvania), both at 1:300 dilution. Zip1 was detected with a rabbit anti-Zip1 antibody (Santa Cruz Biotechnology) at 1:500 dilution and an anti-rabbit FITC antibody (Jackson ImmunoResearch) at 1:300 dilution. Chromosome spread samples were analysed on a DeltaVision Elite system (Applied Precision,\u00a0Isaaquah,\u00a0Washington) using an inverted Olympus IX-71 microscope with a 100x UPlanSApo NA 1.4 oil lens. Images were acquired using the Photometrics Cascade II EMCCD camera. The camera, shutters, and stage were operated through SoftWorx software (Applied Precision). Samples for studying GFP-labelled chromosomes were prepared as described previously (Klein et al., 1999). For the recombination and GFP-labelled chromosome assays, microscopy analysis was performed using a Zeiss Axioplan 2 microscope with a 100x Plan ApoChromat NA 1.4 oil lens. Images were acquired using the Photometrics Evolve EMCCD camera operated through Axiovision software. Images were processed and analysed using ImageJ software (National Institutes of Health).\n\n### Live cell recombination assay\n\nYeast strains were placed on SPO agar plates (0.8% KAc and 2% agar) and allowed to sporulate at 300\u00b0C. After 4 days, images were captured in three channels and the pattern of fluorescence scored in the tetrads. To prevent confounding effects due to chromosome mis-segregation (a common occurance in kinetochore mutants), only tetrads where all 4 spores had acquired CFP (blue) fluorescence were included in the final analysis. Recombination frequency, expressed as map distance in Morgans, and standard error, was calculated using online tools (http://molbio.uoregon.edu/~fstahl/compare2.php). Power analysis was performed to determine sample size required for >0.87 confidence in differences from wild type and Fishers exact test was used to determine significance. All raw data and statistical analysis is given in Supplementary files 1 and 2.\n\n### Southern blot analysis of DSB formation\n\nSouthern blotting was performed as previously described (Vader et al., 2011). The following probes (SGD coordinates) were used: YCR047C;III, 209,361\u2013210,030. CEN1:I, 145,305\u2013145,650. DSB intensities were analysed using ImageJ.\n\n### Flow cytometry\n\nFlow cytometry was performed as described (Vader et al., 2011).\n\n### Genome-wide analysis of recombination and meiotic DSBs\n\nIdentification of single nucleotide polymorphisms by high-throughput sequencing was carried out as described by Oke et al. (2014). Spo11-oligo maps of mcm21\u0394 were generated as described by\u00a0Zhu and Keeney, 2015 with modifications in sporulation culture cell density and Spo11-Flag immunoprecipitation (IP). Briefly, after 14\u2009hr pre-sporulation in YPA media, cells were transferred to sporulation media (SPM) described in Neale and Keeney (2009) to a cell density (OD600) of 6.0. The Spo11-oligo maps were generated from samples harvested after 4\u2009hr in SPM. Spo11-Flag IP was carried out as described, except with protein G Dynabeads (Life Technologies,\u00a0Carlsbad,\u00a0California) instead of protein G agarose beads (400 \u03bcl protein G Dynabeads per 25 ml whole-cell extract in 50 ml IP volume for first round of IP; 125 \u03bcl protein G Dynabeads in 800 \u03bcl IP volume for second round of IP).\n",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "2dbf239a-5d37-4e3a-8e27-e60bb2f3119c",
+      "submission_id": "261d715d-a9e6-4f88-b554-d5f335e2e197",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael Lichten, Center for Cancer Research National Cancer Institute , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.10850.035](https://doi.org/10.7554/eLife.10850.035)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"The kinetochore prevents centromere-proximal crossover recombination during meiosis\" for peer review at eLife. Your submission has been favorably evaluated by Jim Kadonaga (Senior Editor), Michael Lichten (Guest Reviewing Editor), and three reviewers.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nMeiotic recombination is suppressed in the vicinity of the centromere in many organisms. Studies in budding yeast have shown that this suppression extends not only to crossovers, but to the double-strand breaks (DSBs) that initiate meiotic recombination. This study shows that the conserved Ctf19/CCAN complex, part of the kinetochore which is necessary for recruitment of pericentric cohesin, is required for this suppression, but suggests that it suppresses breaks and crossover through distinct mechanisms.\n\nThe consensus of the reviewers was that this paper brings new information to an important topic and, although the mechanism by which the Ctf19/CCAN complex suppresses DSBs and crossovers remains unclear, the findings of the paper are potentially of sufficient interest, but the following issues need to be addressed. In some cases, the additional work and/or analysis requested below could change some of the major conclusions of the paper, although it seems unlikely that the main conclusion will be affected.\n\nEssential revisions:\n\n1) Are other kinetochore complexes involved CO/DSB suppression? Further mutant studies may be beyond the scope, but the involvement of other kinetochore proteins should be considered and discussed. For example, is the MIND complex retained at meiotic centromeres in the absence of the Ctf19 complex?\n\n2) A general concern involved the switching between different mutants and chromosomal regions in different experiments and figures. If at all possible, additional mutants should be included or additional analysis done so that there is more overlap between figures. For example, the addition of ctf19-del to the ChIP-qPCR in Figure 4D, E would provide a useful point of comparison to the anchor-away allele used in Figure 5, and thus would provide at least an indirect measure of the efficacy of the anchor away. Similarly, it would be useful to make a direct comparison between COs and DSBs in the same CEN8-associated interval in the mms21-del mutant background.\n\n3) Inclusion of primary data and/or error bars to allow the reader to evaluate differences. For tetrad analyses, this means that the primary data should be included in a supplementary table, so that statistical power can be evaluated as well as significance of difference. Three examples: in Figure 1, pCLB2-IML3 is \"n.s.\" relative to wild-type, but one suspects that this may be due to insufficient numbers of tetrads being analyzed, given the differences in frequencies shown. There is a similar concern with Figure 5G. Finally, it appears that Ctf19 complexes are increasing crossovers in the arm interval as well, and given the differences (15 versus 25%) it should be easy to make these numbers statistically significant. Given that the spore color assay makes it possible to readily examine hundreds of tetrads, it is important to analyze enough to exclude biologically significant differences that might be masked due to small numbers. In addition, there exist online tools (http://molbio.uoregon.edu/~fstahl/) that allow calculation of standard errors for tetrad-derived map distances. Please be aware that, upon revision, if it still appears that insufficient tetrads have been analyzed, there will likely be a direct request to analyze more.\n\n4) The quality of southern blots is below standard; if phosphorimaging was used, it is permissible to subtract general background if this will increase clarity. In critical cases, in particular the comparison between anchor-away at 0 and 3 hr, DSBs must be quantified. It is not at all clear that there is a quantitative difference between the impact of anchor-away 0 versus 3 hr on DSBs and on crossovers, but such a difference lies at the heart of the argument that Ctf19/CCAN depletion differentially affects breaks and crossovers.\n\n5) The anchor-away experiments in Figure 5, which lie at the heart of the paper, are problematic in several ways:\n\nA) The extent of Ctf19 depletion at kinetochores is not assessed-this is an important control to do.\n\nB) It appears that Ctf19 anchor-away does not result in a loss of pericentric cohesin regardless of when it is executed. Similarly, it appears that there are significant losses of cohesin at CEN4 regardless of the time of execution. Therefore, if there really are differences in DSB repair under the two anchor-away conditions (see point 4, above), it is difficult to see how these can be attributed to differences in cohesin recruitment.\n\nC) To recapitulate point 4, it is not at all clear that crossovers and DSBs are differently affected by the time when Ctf19 anchor-away is executed. Careful quantification is necessary to prove this point, and if the DSB analysis was only done once, additional replicates will need to be done.\n\n6) While it is clear that the Ctf19 complex is involved in suppressing DSBs near centromeres, is there still residual suppressing in its absence? In addition to the \"fold-change\" graph in Figure 3B, it would be useful to plot the mean Spo11-oligo signal as a function of distance from the centromere, comparing wild-type and mcm21-del. See Figure 4C in Buhler et al., 2007 for an illustration.\n\n7) While it is clear that pCLB2-IML3 is a hypomorph, the authors need to address the fact that it displays a clear increase in centromere-adjacent crossovers in only 8 of the 16 yeast chromosomes. Are these data compromised by insufficient numbers? As with tetrad data, the actual number of events need to be reported, so that they can be vigorously analyzed for sufficient statistical power and statistical significance.\n\n8) With regards to the experiments addressing Zip1 and the role of Ctf19 complex-loaded cohesin in recruiting Zip1:\n\nA) Ctf19 complex mutants seem to disrupt not only initial Zip1 recruitment to centromeres, but subsequent synapsis. It's not clear why this should be the case, if arm recombination and cohesin loading are unaffected, and this should be addressed.\n\nB) While zip1-del mutants increase pericentromeric crossovers (and possibly zip1-S75E, if sufficient numbers of tetrads are examined), their impact on pericentromeric DSBs is not addressed, and should be.\n\nC) The scc4-m35 mutant almost entirely eliminates Zip1 loading at centromeres, but increases pericentromeric crossovers to a substantially greater extent than does zip1-del, suggesting that pericentromeric cohesin might be doing other things to suppress crossovers other than recruiting Zip1. This should be considered and discussed, and an epistasis experiment should be considered if you truly believe that this is the main mode of pericentric crossover suppression.\n",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "45b82831-78f4-4b13-a053-07188cc4a541",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C1",
+      "claim": "Crossover recombination during meiosis is essential to link homologous chromosomes and drive faithful chromosome segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "During meiosis, crossover recombination is essential to link homologous chromosomes and drive faithful chromosome segregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a foundational statement in the abstract that establishes the importance of crossover recombination in meiosis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "bfc667cc-27a3-45f7-b4c5-ae4a3e1840fc",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C2",
+      "claim": "Centromere-proximal crossovers are associated with an increased risk of aneuploidy, including Trisomy 21 in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Crossover recombination is non-random across the genome, and centromere-proximal crossovers are associated with an increased risk of aneuploidy, including Trisomy 21 in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement cites the association between centromere-proximal crossovers and aneuploidy risk, including a specific human condition.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "a2fb87fe-aed2-4157-9a6a-782d2b8407ca",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C3",
+      "claim": "The Ctf19/CCAN kinetochore sub-complex minimizes centromere-proximal crossovers in budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we identify the conserved Ctf19/CCAN kinetochore sub-complex as a major factor that minimizes potentially deleterious centromere-proximal crossovers in budding yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the study as stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "c4bf47e5-9d48-4789-8afd-3c328b6b1e2b",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C4",
+      "claim": "The Ctf19 complex prevents meiotic DNA break formation proximal to the centromere.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ctf19 complex prevents meiotic DNA break formation, the initiating event of recombination, proximal to the centromere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key mechanistic finding stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "afc5a1fa-e419-4c7d-9f7b-18ed9eca0425",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C5",
+      "claim": "The Ctf19 complex drives the enrichment of cohesin throughout the broader pericentromere to suppress crossovers, but not DNA breaks.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ctf19 complex independently drives the enrichment of cohesin throughout the broader pericentromere to suppress crossovers, but not DNA breaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a second mechanism by which the Ctf19 complex suppresses crossovers, as stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "73b3c560-076f-48c0-9cc7-da158bb8282f",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C6",
+      "claim": "Improper placement of crossovers in the vicinity of centromeres negatively influences meiotic chromosome segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Improper placement of COs in the vicinity of centromeres negatively influences meiotic chromosome segregation (Hassold and Hunt, 2001; Koehler et al., 1996; Rockmill et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "90860536-2c0c-4862-965a-fcaef7f66e18",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C7",
+      "claim": "Crossover formation close to centromeres is infrequent in many species, including humans.",
+      "claim_type": "EXPLICIT",
+      "source": "so CO formation close to centromeres is infrequent in many species, including humans (Centola and Carbon, 1994; Copenhaver et al., 1999; Ellermeier et al., 2010; Gore et al., 2009; Lambie and Roeder, 1986; Mahtani and Willard, 1998; Nakaseko et al., 1986; Puechberty et al., 1999; Saintenac et al., 2009; Tanksley et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by extensive citations to previous research across multiple species.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "27890abb-1d1f-4456-af27-da2709e7b62d",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C8",
+      "claim": "Point centromeres are defined by a short ~125bp sequence upon which the kinetochore assembles.",
+      "claim_type": "EXPLICIT",
+      "source": "Point centromeres are defined by a short ~125bp sequence upon which the kinetochore assembles",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about point centromeres based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "119bdc72-ff5c-4d8d-a2e1-dfd527047e27",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C9",
+      "claim": "In fission yeast and Drosophila, the integrity of pericentromeric heterochromatin represses double-strand break formation and centromere-proximal recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "In fission yeast and Drosophila, the integrity of pericentromeric heterochromatin was found to repress double-strand break (DSB) formation and centromere-proximal recombination (Ellermeier et al., 2010; Westphal and Reuter, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research in fission yeast and Drosophila.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "04d4ee02-6f3d-4d98-99e7-fe9853bf8a14",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C10",
+      "claim": "Budding yeast lack pericentromeric heterochromatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Although budding yeast lack pericentromeric heterochromatin, suppression of centromere-proximal recombination is also observed in this organism (Lambie and Roeder, 1986, Chen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the chromatin structure of budding yeast centromeres, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "548648ca-5b31-44ab-ab5f-aa3d4cbec4d8",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C11",
+      "claim": "The centromere exerts a zone of inhibition of meiotic DSB formation over approximately 10 kb in budding yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide DSB maps in budding yeast have inferred that the centromere exerts a zone of inhibition of meiotic DSB formation, the activity of which decreases over a distance of approximately 10 kb (Blitzblau et al., 2007; Buhler et al., 2007; Pan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on genome-wide DSB mapping studies cited in the text.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "c4a63813-f560-4ccb-b5ef-c85bb9c2b5bf",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C12",
+      "claim": "Excision of a centromere relieves DSB suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Excision of a centromere relieved this DSB suppression, indicating that the centromere, or its associated factors, exert this effect (Robine et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This experimental finding is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "31a126ef-e772-40a2-9e3f-aa2410103c23",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C13",
+      "claim": "The synaptonemal complex component Zip1 minimizes centromere recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "The synaptonemal complex component, Zip1 (Chen et al., 2008), and the Bloom's helicase, Sgs1 (Rockmill et al., 2006), which influences repair pathway choice, are also known to minimize centromere recombination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "3c31cc4b-2812-4d08-b354-91f9c74efd33",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C14",
+      "claim": "The Bloom's helicase Sgs1 minimizes centromere recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "The synaptonemal complex component, Zip1 (Chen et al., 2008), and the Bloom's helicase, Sgs1 (Rockmill et al., 2006), which influences repair pathway choice, are also known to minimize centromere recombination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "168d7701-57ed-4ab6-ac61-4d618f98fc3b",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C15",
+      "claim": "During meiotic prophase in budding yeast, only the Ctf19 and Mis12/MIND kinetochore complexes are bound to the centromere.",
+      "claim_type": "EXPLICIT",
+      "source": "In meiotic G2/prophase of budding yeast, when recombination occurs, only the Ctf19 and Mis12/MIND (Mtw1 including Nnf1-Nsl1-Dsn1) kinetochore complexes are bound to the centromere (Meyer et al., 2015; Miller et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement about kinetochore composition during meiotic prophase is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "a14aa298-a53a-4c1c-b4af-cb341bf7b01e",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C16",
+      "claim": "The Ctf19 complex promotes cohesin enrichment throughout the ~20\u201350 kb surrounding pericentromere.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ctf19 complex exerts long range effects by promoting cohesin enrichment throughout the ~20\u201350 kb surrounding pericentromere despite being restricted to the core ~125 bp centromere sequence (Eckert et al., 2007; Fernius and Marston, 2009; Ng et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement about the long-range effects of the Ctf19 complex is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "e566451e-95b3-424c-b29b-c702d3fe3a72",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C17",
+      "claim": "The Ctf19 complex targets the Scc2/4 cohesin loader to the centromere, from where cohesin spreads into the pericentromere.",
+      "claim_type": "EXPLICIT",
+      "source": "It does so by targeting the Scc2/4 cohesin loader to the centromere, from where cohesin spreads into the pericentromere (Fernius et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanistic statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "fde18440-d2cb-425f-a237-89b806b1de73",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C18",
+      "claim": "In wild-type cells, map distance was 7.5 cM within the arm interval but only 0.04 cM within the pericentromere interval.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type cells, map distance, a measure of CO frequency, was 7.5 cM within the arm interval but only 0.04 cM within the pericentromere interval.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the live cell recombination assay presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "eef03b39-881b-48ec-969d-4b5c074e1e84",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C19",
+      "claim": "In cells lacking Zip1, map distance within the pericentromeric interval rose to ~2 cM.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells lacking the synaptonemal component, Zip1, map distance within the pericentromeric interval rose to ~2 cM (Figure 1B), in agreement with previous observations (Chen et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the live cell recombination assay, consistent with previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "92f8ec12-2553-46ec-a7e3-9b8163b5dfa7",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C20",
+      "claim": "Cells lacking Ctf19 complex components Iml3, Chl4, Mcm21 and Ctf19 show significantly increased frequency of pericentromeric crossovers.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the live cell reporter assay, we observed a significantly increased frequency of pericentromeric COs in cells lacking the Ctf19 complex components Iml3CENP-L, Chl4CENP-N, Mcm21CENP-O and Ctf19CENP-P (Figure 1B, Supplementary file 1; the gene names of the human homologues are indicated in superscript).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key experimental finding from the live cell recombination assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "c2279509-fc1b-4308-9452-4c7369e3dfb8",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C21",
+      "claim": "The effect of Ctf19 complex deletion on crossovers appears to be specific to the pericentromere.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect appeared to be specific to the pericentromere, as no significant changes in recombination were observed within the chromosomal arm interval in the absence of Iml3CENP-L, Chl4CENP-N, Mcm21CENP-O and Ctf19CENP-P (Figure 1C, Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental finding showing the spatial specificity of the Ctf19 complex effect.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "6db440c4-3e5d-4eb1-85ac-1b2491621ae4",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C22",
+      "claim": "The frequency of both crossovers and non-crossovers within 20 kb of centromeres was significantly increased in pCLB2-3HA-IML3 strain compared to wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we observed no global change in the average number of COs or NCOs in the pCLB2-3HA-IML3 strain compared to wild type (Figure 2C,D), the distribution of recombination was affected: the frequency of both COs and NCOs within 20 kb of centromeres was overall significantly increased (Figure 2E,F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the genome-wide recombination analysis using high-throughput sequencing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "4d938d4a-39af-4ad0-b12b-3bf96d492663",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C23",
+      "claim": "Increased centromere-proximal DSBs were detected in the mcm21\u0394 mutant compared with wild type.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, increased centromere-proximal DSBs were detected in the mcm21\u25b3 mutant compared with wild type, revealing a general role for the Ctf19 complex in suppression of pericentromeric DSBs (Figure 3B,C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the genome-wide DSB mapping experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "4e5418cd-dd49-43f6-a7ef-594fb767fb0e",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C24",
+      "claim": "Pericentromeric DSBs in the mcm21\u0394 mutant reached a level similar to the genome average.",
+      "claim_type": "EXPLICIT",
+      "source": "Pericentromeric DSBs in the mcm21\u25b3 mutant reached a level similar to the genome average (dotted lines, Figure 3C), indicating that there is no residual DSB suppression in the absence of Mcm21.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the DSB mapping data showing complete loss of suppression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "e01f8364-51cb-4d92-84fd-27ef0fb42f02",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C25",
+      "claim": "The increase in DSBs occurred over a narrower domain (~6 kb) than crossover formation (~40 kb).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the increase in DSBs occurred over a narrower domain (~3 kb on each side of the centromere, i.e. a total region of ~6 kb) than CO formation (~20 kb each side of the centromere, ~40 kb in total; Figure 2E,F), indicating that suppression of COs at centromeres is not solely due to a reduction in DSB levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative analysis of the spatial extent of DSB and CO suppression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "c9d54ff0-3cb8-4f7f-bd2d-8b53b174a2ef",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C26",
+      "claim": "DSBs were increased only ~5-fold over wild type in mcm21\u0394 within the pericentromeric interval, while crossovers increased ~21-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "However, DSBs were increased only ~5-fold over wild type in mcm21\u25b3 within this region (Figure 3E), while we observed an ~21-fold increase in COs within the same region (Figure 3F; Figure 1B,C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison showing that DSB increase cannot fully account for CO increase.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "1dee9ed9-f0a0-4224-921d-5934f18fd6d6",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C27",
+      "claim": "The increase in DSBs can only account for approximately 24% of the increase in pericentromeric crossovers.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the increase in DSBs can only account for approximately 24% of the increase in pericentromeric COs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculated inference from the quantitative data on DSBs and COs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "53564700-17c1-4f42-be54-f15be7d33e68",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C28",
+      "claim": "A strong DSB hotspot appears proximal to CEN1 in mcm21\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromosome I in particular, showed emergence of a very prominent DSB hotspot in a promoter region immediately adjacent to the centromere (CEN1; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from the Spo11-oligo mapping data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "dbda7b7d-9778-412b-8ecc-4a61a0eff240",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C29",
+      "claim": "DSBs near CEN1 in the absence of Mcm21 or Ctf19 are dependent on the catalytic activity of Spo11.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, DSBs that formed near CEN1 in the absence of Mcm21CENP-O or Ctf19 CENP-P were dependent on the catalytic activity of Spo11, demonstrating that these were genuine programmed DSBs (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the use of a catalytic dead mutant of Spo11 (spo11-Y135F) shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "9cb65c92-1b1c-4c6e-b243-dd47e433c5d4",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C30",
+      "claim": "There is a striking correlation between increased DSB formation at CEN1 and increased crossover formation in Ctf19 complex mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Screening additional Ctf19 complex subunits showed a striking correlation between increased DSB formation at CEN1 and increased CO formation as measured in our live cell recombination reporter assay (Figure 4B, Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a correlation observed across multiple Ctf19 complex subunit mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "c2cadb8e-cf18-4b0a-8a23-8de5151281f6",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C31",
+      "claim": "Depletion of the MIND complex component Dsn1 results in the appearance of CEN1-proximal DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, depletion of the MIND complex component, Dsn1 (Figure 1\u2014figure supplement 1) also resulted in the appearance of CEN1-proximal DSBs, suggesting that the overall integrity of the kinetochore might be generally important for repressing DSB formation within pericentromeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation suggesting a broader role for kinetochore integrity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "f3e12010-c486-4ec4-b2a1-87c2e016698c",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C32",
+      "claim": "Pericentromeric enrichment of the meiotic cohesin subunit Rec8 at G2/prophase I depends on the Ctf19 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Pericentromeric enrichment of the meiotic cohesin subunit, Rec8, at G2/prophase I also depended on the Ctf19 complex (Figure 5A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by ChIP-Seq and ChIP-qPCR data in Figure 5A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "679aad0f-c3c3-4cf8-a8c2-be6b19613877",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C33",
+      "claim": "The scc4-m35 mutation increases the frequency of pericentromeric but not chromosomal arm crossovers.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, scc4-m35 cells underwent meiosis to produce spores, analysis of which revealed an increased frequency of pericentromeric (Figure 5F), but not chromosomal arm (Figure 5G) COs, though this increase was more modest than in the absence of Ctf19 complex subunits (Figure 1B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the live cell recombination assay using the scc4-m35 mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "2286d3c0-f2da-469b-b0fd-70fd92a7487a",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C34",
+      "claim": "Anchoring away Ctf19 before DNA replication prevents pericentromeric cohesin establishment.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that anchoring away Ctf19 before S phase (t=0) would prevent pericentromeric cohesin establishment, similar to a ctf19\u25b3 strain (Marston et al., 2005; Fernius et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on previous research about the timing of cohesin establishment.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "588fe8da-a90e-46b1-b3d5-e9fd7e25dc66",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C35",
+      "claim": "Centromeric cohesin levels were more greatly reduced by anchoring away Ctf19 before (t=0 h) rather than after DNA replication (t=3 h).",
+      "claim_type": "EXPLICIT",
+      "source": "Rec8 chromatin immunoprecipitation (ChIP) in prophase I cells revealed that centromeric cohesin levels were more greatly reduced by anchoring away Ctf19 before (t=0 h) rather than after DNA replication (t=3 h) (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from ChIP experiments with timed Ctf19 depletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "409ffd2e-f202-48c5-af1f-de88df4aa321",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C36",
+      "claim": "Centromeric Rec8 was detected in only 4% of binucleate cells where Ctf19 was anchored away before DNA replication, but in 48% where Ctf19 was anchored away after DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Although centromeric Rec8 was detected in only 4% of binucleate cells where Ctf19 was anchored away before DNA replication (Rapa t=0), centromeric Rec8 was observed in 48% of binucleate cells where Ctf19 was anchored away after DNA replication (Rapa t=3) (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative finding from chromosome spread analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "418be0eb-2276-453a-ad4d-d1009afecc03",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C37",
+      "claim": "Anchoring away Ctf19 before DNA replication led to the appearance of CEN1-proximal DSBs with comparable timing and intensity to ctf19\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, anchoring away Ctf19 before (Rapa t=0) DNA replication led to the appearance of CEN1-proximal DSBs with comparable timing and intensity to those of ctf19\u25b3 cells (Figure 6G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from Southern blot analysis of DSBs with timed Ctf19 depletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "8b8dd0c0-1258-44be-9e11-380803586bbe",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C38",
+      "claim": "DSBs were observed following rapamycin addition at 3 hr, i.e. after DNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "DSBs were also observed following rapamycin addition at 3 hr, i.e. after DNA replication (Figure 6H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from Southern blot analysis showing DSBs appear even when Ctf19 is depleted after S phase.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "e61909d6-9535-43f2-9903-eea434669614",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C39",
+      "claim": "The Ctf19 complex is required throughout meiotic prophase to prevent pericentromeric DSB formation in a manner independent of its role in cohesin establishment.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the Ctf19 complex is required throughout meiotic prophase to prevent pericentromeric DSB formation and that it does so in a manner independent of its role in cohesin establishment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the timed depletion experiments showing DSBs appear even after cohesin establishment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "f2097836-e7f0-4d79-b08f-1adbd65d9c65",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C40",
+      "claim": "CEN1-proximal DSBs were not observed in rec8\u0394 or scc4-m35 cells, unless Mcm21 was also absent.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our findings above, CEN1-proximal DSBs were not observed in rec8\u25b3 or scc4-m35 cells, unless a Ctf19 complex component (Mcm21CENP-O) was also absent (Figure 6J,K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from Southern blot analysis showing cohesin is not required for DSB suppression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "3a058c1e-e21f-4fc5-8d59-a71a452c16ff",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C41",
+      "claim": "DSB inhibition near centromeres does not depend on cohesin, but requires the continuous presence of the Ctf19 complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, DSB inhibition near centromeres does not depend on cohesin, but requires the continuous presence of the Ctf19 complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experiments with cohesin mutants and Ctf19 depletion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "21b58659-8396-4130-806f-2658f6d7d9ee",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C42",
+      "claim": "Loss of MCM21 relieved DSB suppression over a domain (~6 kb) that is larger than the 125 bp where the kinetochore resides but smaller than the cohesin-rich pericentromere (~20 kb).",
+      "claim_type": "EXPLICIT",
+      "source": "Loss of MCM21 relieved DSB suppression over a domain (~6 kb; Figure 3B) that is much larger than the 125 bp where the kinetochore resides but smaller than the cohesin-rich pericentromere (~20 kb; Figure 5A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative analysis of the spatial extent of different effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "9d888ae1-fd00-4ff9-8173-661dd37f9e58",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C43",
+      "claim": "Anchoring Ctf19 away before DNA replication (t=0) increased pericentromeric crossovers to a similar extent to ctf19\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Anchoring Ctf19 away before DNA replication (t=0) increased pericentromeric COs to a similar extent to ctf19\u25b3 cells (compare Figure 1B and Figure 6L), as expected.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the live cell recombination assay with timed Ctf19 depletion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "44674744-af9f-4c23-9d6b-0deac8e31bd1",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C44",
+      "claim": "Anchoring Ctf19 away after DNA replication (t=3) led to a more modest increase in pericentromeric crossovers, despite comparable levels of DNA break formation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, anchoring Ctf19 away after DNA replication (t=3) led to a more modest increase in pericentromeric COs (Figure 6L), despite comparable levels of DNA break formation in these cells (Figure 6H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key finding showing that cohesin establishment protects against CO formation even when DSBs occur.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "c763b2c3-ea70-4ed2-9e16-5caca2099cf1",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C45",
+      "claim": "Pericentromeric cohesin acts at a step after DSB formation to direct repair through a pathway avoiding the homolog.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, pericentromeric cohesin acts at a step after DSB formation to direct repair, probably through a pathway avoiding the homolog, to ensure CO suppression near centromeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the timed depletion experiments showing differential effects on DSBs and COs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "fec8942e-5dc3-444c-8c3e-8bec28cdab28",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C46",
+      "claim": "Zip1 localization was impaired in scc4-m35 and Ctf19 complex mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, ChIP-qPCR indicated that Zip1 localization was impaired in scc4-m35 (Figure 7A) and Ctf19 complex mutants (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from ChIP-qPCR experiments showing Zip1 localization depends on cohesin and Ctf19.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "b56f80a1-aabd-4ff8-9edc-152c83afd661",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C47",
+      "claim": "The 'dotty' Zip1 localization pattern, representative of centromeres, was rarely observed in Ctf19 complex mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, analysis of spread meiotic chromosomes revealed that the \"dotty\" Zip1 localization pattern, representative of centromeres, was rarely observed in Ctf19 complex mutants (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from cytological analysis of Zip1 localization on chromosome spreads.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "83d2f557-e21a-4022-a01e-19f41ca9674a",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C48",
+      "claim": "ChIP-Seq confirmed that Ctf19 complex components are specifically required for Zip1 association with core centromeres and the pericentromere.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, ChIP-Seq of prophase I-arrested cells confirmed that Ctf19 complex components are specifically required for Zip1 association with core centromeres and the pericentromere (Figure 7D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from genome-wide ChIP-Seq analysis of Zip1 localization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "e9acdde8-a609-4f89-bab5-7a9d3f4d2fb1",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C49",
+      "claim": "Pericentromeric crossover frequencies were comparable at 2.4 and 2.0 cM in scc4-m35 and zip1\u0394 cells, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured comparable pericentromeric CO frequencies of 2.4 and 2.0 cM in scc4-m35 and zip1\u25b3 cells, respectively (Figure 1B, Figure 5F)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison from the live cell recombination assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "b6dc3760-e97c-4787-8c1a-58f1327c6bf2",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C50",
+      "claim": "The Ctf19 complex was required for the centromeric localization of Zip1 in spo11\u0394 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ctf19 complex was required for the centromeric localization of Zip1 in spo11\u25b3 cells (Figure 8A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from chromosome spread analysis in spo11\u0394 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "62022848-5c24-4957-af8d-5173e4ad0b43",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C51",
+      "claim": "The Ctf19 complex is required for homology-independent centromere coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ctf19 complex was required for the centromeric localization of Zip1 in spo11\u25b3 cells (Figure 8A) and homology-independent centromere coupling (Figure 8B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis of centromere pairing in spo11\u0394 cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "26ba9fa4-84ba-4a0c-a236-230b19caceab",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C52",
+      "claim": "The Ctf19 complex is not required for the SPO11-dependent transition to homologous pairing.",
+      "claim_type": "EXPLICIT",
+      "source": "but not for the SPO11-dependent transition to homologous pairing (Figure 8C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from analysis of homologous pairing in wild-type cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "2e5b816a-35c0-47eb-b160-3b8cfa03df58",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C53",
+      "claim": "Pericentromeric crossovers were not significantly increased in the zip1-S75E mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Pericentromeric COs were not significantly increased in the zip1-S75E mutant (Figure 8E,F), indicating that Zip1 suppresses pericentromeric COs independently of its role in centromere coupling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the live cell recombination assay using a separation-of-function mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "8af1a571-8d60-4fef-be17-9a79125ac866",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C54",
+      "claim": "Zip1 suppresses pericentromeric crossovers independently of its role in centromere coupling.",
+      "claim_type": "EXPLICIT",
+      "source": "Pericentromeric COs were not significantly increased in the zip1-S75E mutant (Figure 8E,F), indicating that Zip1 suppresses pericentromeric COs independently of its role in centromere coupling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the zip1-S75E mutant analysis showing separation of functions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "c5b24b96-b399-4ed7-9673-08cf149b2214",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C55",
+      "claim": "In cells lacking the Ctf19 kinetochore sub-complex, pericentromeric crossover formation drastically increases.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells lacking the Ctf19 kinetochore sub-complex, pericentromeric CO formation drastically increases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the main finding in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "aa9b75c7-2251-4eff-8b00-9327a6578ede",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C56",
+      "claim": "The Ctf19 complex suppresses crossover formation through both cohesin-independent suppression of DSB formation and cohesin-dependent repair pathway choice.",
+      "claim_type": "EXPLICIT",
+      "source": "We uncover multi-layered Ctf19 complex-dependent suppression of CO formation acting at both the level of meiotic DSB formation and at the level of recombinational repair template choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the two mechanisms identified in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "2aa863ba-8d38-4bec-9ff7-6c1932c3c1c4",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C57",
+      "claim": "Spo11-dependent DSB formation is strongly associated with chromatin regions enriched for histone H3 Lysine 4 (H3K4) methylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Spo11-dependent DSB formation is strongly associated with chromatin regions that are enriched for histone H3 Lysine 4 (H3K4) methylation (reviewed in de Massy (2013))",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the general determinants of DSB formation, supported by a review citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "36e53777-3c7b-402f-83e1-a37c6162af60",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C58",
+      "claim": "In budding yeast, H3K4 methylation modifications are found near transcriptional start sites.",
+      "claim_type": "EXPLICIT",
+      "source": "and in budding yeast, these modifications are found near transcriptional start sites (Tischfield and Keeney, 2012))",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about chromatin organization in budding yeast, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "c7fd06db-4337-4121-b42f-f1b3b8c2a3a4",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C59",
+      "claim": "Spo11 prefers to cleave DNA in open, nucleosome-free regions that are most often found in active, divergent promoters.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, within the budding yeast genome, Spo11 prefers to cleave DNA in open, nucleosome-free regions that are most often found in active, divergent promoters (Blitzblau et al., 2007; Pan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about Spo11 cleavage preferences, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "c8516eb4-01e6-4c70-9de5-e01ff8be726b",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C60",
+      "claim": "The kinetochore actively minimizes DSB formation within a region of ~6 kb surrounding all budding yeast centromeres.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the kinetochore actively minimizes DSB formation within a region of ~6 kb, surrounding all budding yeast centromeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the DSB mapping findings in the Discussion.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "dd671fff-66ab-4c1b-a21f-2ae2d52fc649",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C61",
+      "claim": "In the absence of the Ctf19 kinetochore sub-complex, DSB formation is strongly increased, and these DSBs have features typical of preferred DSB sites genome-wide.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in the absence of the Ctf19 kinetochore sub-complex, DSB formation is strongly increased, and these DSBs have features typical of preferred DSB sites genome-wide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the DSB mapping findings showing that suppression is overcome in mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "fbca0f81-b306-43f8-a68a-0165edbec84b",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C62",
+      "claim": "One of the strongest pericentromeric DSBs identified falls within a divergent promoter of the genes TFC3 and NUP60.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, one of the strongest pericentromeric DSBs that we identified here, at CEN1, falls within a divergent promoter (of the genes TFC3 and NUP60; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a specific example from the DSB mapping data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "b91af848-6252-4774-a1fc-a605e792fb45",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C63",
+      "claim": "The Ctf19 complex protects a region about 50 times larger than that occupied by the centromeric nucleosome from DSBs.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the Ctf19 complex protects a region about 50 times larger than that occupied by the centromeric nucleosome from DSBs, suggesting that the effect is not merely due to a local disturbance of Cse4CENP-A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation comparing the size of the protected region to the centromeric nucleosome.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "fd392d43-3fb4-4c10-ba6a-07cca31331f5",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C64",
+      "claim": "Cohesin enrichment was neither sufficient nor required to prevent DSBs near CEN1.",
+      "claim_type": "EXPLICIT",
+      "source": "Cohesin enrichment was neither sufficient nor required to prevent DSBs near CEN1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the experiments testing cohesin mutants for DSB formation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "6c6dcf47-ac68-41e5-9989-c655ea05d4b5",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C65",
+      "claim": "DSB suppression by the Ctf19 complex acts on shorter chromosomal distances (~6 kb) than the ~20\u201350 kb sized regions within which it influences cohesin recruitment.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, DSB suppression acts on shorter chromosomal distances (~6 kb), than the ~20\u201350 kb sized regions within which the Ctf19 complex influences cohesin recruitment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative analysis of the spatial extent of different Ctf19 complex functions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "b34dfd00-192d-4962-8ea8-c39217fe56b8",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C66",
+      "claim": "DSBs are observed near centromeres in wild type cells, although at reduced levels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the prevention of pericentromeric DSBs by the Ctf19 complex is not absolute, as DSBs are observed near centromeres in wild type cells, although at reduced levels (Blitzblau et al., 2007; Buhler et al., 2007; Pan et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about residual DSBs in wild-type cells, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "1c2fec1c-40ff-4a6b-ab6e-c6d00c488e1c",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C67",
+      "claim": "DSBs that escape the repressive control of the Ctf19 complex are diverted from repair pathways that would lead to potentially deleterious crossover formation by cohesin.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that DSBs that escape the repressive control of the Ctf19 complex are diverted from repair pathways that would lead to potentially deleterious CO formation by cohesin, which is established at high levels within pericentromeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the findings on cohesin's role in repair pathway choice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "ecb89d9b-49cc-490e-bcf7-b699d4d2fb71",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C68",
+      "claim": "Forced removal of the Ctf19 complex from kinetochores after S-phase triggered increased DSB formation but led to only a relatively modest increase in crossover formation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that forced removal of the Ctf19 complex from kinetochores after S-phase triggered increased DSB formation, but led to only a relatively modest increase in CO formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the timed depletion experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "cc6953ba-65dc-4745-a5c7-d5023cfa9802",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C69",
+      "claim": "A cohesin-loader mutant (scc4-m35) that disrupts proper cohesin establishment showed increased levels of crossover formation but no increased DSB formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, a cohesin-loader mutant (scc4-m35) that disrupts the proper establishment of cohesin showed increased levels of CO formation, whereas no increased DSB formation could be detected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the findings with the scc4-m35 mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "4e8cc031-7d34-4b92-b0e9-3a3ea824e405",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C70",
+      "claim": "DSBs that occur within pericentromeric regions when high levels of cohesion are present are shunted away from inter-homologous recombinational repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, DSBs that occur within the pericentromeric regions when high levels of cohesion are present are shunted away from inter-homologous recombinational repair (that eventually can yield a CO or NCO).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the timed depletion and cohesin mutant experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "7796ee06-dfa1-4060-9a87-15879d0991cd",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C71",
+      "claim": "Template choice (sister or homologue) for DSB repair during budding yeast vegetative growth is dictated by the levels of cohesin.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it has been shown that template choice (sister or homologue) for DSB repair during budding yeast vegetative growth is dictated by the levels of cohesin (Covo et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about cohesin's role in template choice, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "8d832fbc-7b0d-4ccd-b69e-b06ae17e9440",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C72",
+      "claim": "Globally on meiotic chromosomes, repair of DSBs is normally biased towards use of the homologous chromosome instead of the sister chromatid.",
+      "claim_type": "EXPLICIT",
+      "source": "Globally, on meiotic chromosomes, repair of DSBs is normally biased towards use of the homologous chromosome instead of the sister chromatid to ensure at least one COs is formed to link each homolog pair (Hollingsworth, 2010; Humphryes and Hochwagen, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the general bias in meiotic DSB repair, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "1585f192-b223-4076-ad1d-f326db543998",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C73",
+      "claim": "In budding yeast, homologue bias is established by the Red1/Hop1/Mek1 signaling axis.",
+      "claim_type": "EXPLICIT",
+      "source": "In budding yeast, this homologue bias is established by the Red1/Hop1/Mek1 signaling axis (Hong et al., 2013; Kim et al., 2010; Niu et al., 2007; Niu et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the mechanism of homologue bias, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "818303c1-d46e-448e-b3d3-246ec25b364c",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C74",
+      "claim": "The Red1/Hop1/Mek1 signaling pathway is thought to locally antagonize cohesin to enable use of the homologous chromosome as a repair template.",
+      "claim_type": "EXPLICIT",
+      "source": "This signaling pathway is thought to locally antagonize cohesin to enable the use of the more distant homologous chromosome as a repair template (Hong et al., 2013; Kim et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic statement about how homologue bias is achieved, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "9991975d-10d4-4694-96c6-02171e9aed20",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C75",
+      "claim": "Zip1 has previously been implicated in preventing pericentromeric crossover and non-crossover repair.",
+      "claim_type": "EXPLICIT",
+      "source": "Zip1 has previously been implicated in preventing pericentromeric CO and NCO repair, and was suggested to promote inter-sister repair (Chen et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about previous findings on Zip1's role, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "57a50fab-5d40-4df0-ae3b-24f146c9fdc4",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C76",
+      "claim": "Proper recruitment of Zip1 to the pericentromere requires the Ctf19 complex and kinetochore-targeted Scc2/4.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that proper recruitment of Zip1 to the pericentromere requires the Ctf19 complex and kinetochore-targeted Scc2/4, consistent with previous studies demonstrating a requirement for cohesin in Zip1 recruitment (Chuong and Dawson, 2010; Brar et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the Zip1 ChIP experiments, consistent with previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "a8fbf306-5809-4233-84bc-19af9510a02e",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C77",
+      "claim": "Zip1 performs specific functions at centromeres during prophase, including non-homologous centromere-coupling, repression of pericentromeric crossover formation, and bi-orientation of homologous chromosomes during meiosis I.",
+      "claim_type": "EXPLICIT",
+      "source": "Zip1 performs specific functions at centromeres during prophase, which include non-homologous centromere-coupling (Tsubouchi and Roeder, 2005; Tsubouchi et al., 2008), repression of pericentromeric CO formation (Chen et al., 2008) and the bi-orientation of homologous chromosomes during meiosis I (Gladstone et al., 2009; Newnham et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of Zip1's known functions at centromeres, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "d4dc68c4-3fa8-4d10-ac6d-ed7996087353",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C78",
+      "claim": "The kinetochore promotes the establishment of an inter-homologue recombination-suppressed zone surrounding centromeres.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we conclude that the kinetochore, and specifically the Ctf19 complex, promotes the establishment of an inter-homologue recombination-suppressed zone surrounding centromeres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion of the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "c88cbd5b-9ea9-4208-967d-a47f740d08db",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C79",
+      "claim": "Crossover formation in the vicinity of centromeres negatively influences meiotic chromosome segregation in diverse organisms and is associated with Trisomy 21 in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "CO formation in the vicinity of centromeres negatively influences meiotic chromosome segregation in diverse organisms, and is associated with the incidence of Trisomy 21, or Down's syndrome, in humans (Hassold and Hunt, 2001; Koehler et al., 1996; Rockmill et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the clinical relevance of pericentromeric COs, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "41c97e9b-6de2-4a57-8f64-cf0db509f03f",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C80",
+      "claim": "Pericentromeric crossover formation has been suggested to lead to a local disturbance of sister chromatid cohesion, which could cause precocious sister chromatid separation and meiosis II non-disjunction.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, pericentromeric CO formation has been suggested to lead to a local disturbance of sister chromatid cohesion, which could lead to precocious separation sister chromatid, causing meiosis II non-disjunction and aneuploidy (Rockmill et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis about how pericentromeric COs cause problems, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "032f76ab-c984-492a-ad01-7325c22ec9e3",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C81",
+      "claim": "During meiosis, sister chromatids need to attach to microtubules that emanate from the same pole in a mono-oriented fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "First, sister chromatids need to attach to microtubules that emanate from the same pole in a mono-oriented fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a specialized feature of meiotic chromosome segregation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "8ef297bf-9e91-485e-91e6-f2523e577907",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C82",
+      "claim": "Sister chromatid cohesion at pericentromeres needs to be protected from removal during meiosis I.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, sister chromatid cohesion at pericentromeres needs to be protected from removal during meiosis I.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a specialized feature of meiotic chromosome segregation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "c133830f-6703-45d8-a87c-c14b31e7c32b",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C83",
+      "claim": "The Ctf19 complex is a generally conserved component of eukaryotic kinetochores.",
+      "claim_type": "EXPLICIT",
+      "source": "The Ctf19 complex is a generally conserved component of eukaryotic kinetochores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the evolutionary conservation of the Ctf19 complex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "c2676ef5-7035-4d6d-bbbc-326eeadc8e01",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C84",
+      "claim": "Suppression of meiotic crossover recombination within pericentromeres is a widespread feature in many diverse organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Suppression of meiotic CO recombination within pericentromeres is a widespread feature of meiotic recombination in many diverse organisms, whether or not their centromeres are surrounded by large blocks of heterochromatinized DNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the widespread nature of pericentromeric CO suppression across species.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "b64ace21-2f78-4aa0-8253-d0a591819b2f",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "claim_id": "C85",
+      "claim": "Ctf19 complex-driven suppression of meiotic crossover formation serves as a universal component of mechanisms that shape the meiotic recombination landscape.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore suggest that Ctf19 complex-driven suppression of meiotic CO formation serves as a universal component of the mechanisms that shape the meiotic recombination landscape in order to promote the faithful propagation of the genome from generation to the next.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding speculation about the universal importance of the mechanism identified.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f7ee11d4-223a-4a23-990a-851c26d8551d",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The Ctf19/CCAN kinetochore sub-complex minimizes centromere-proximal crossovers in budding yeast. Deletion of Ctf19 complex components (Iml3, Chl4, Mcm21, Ctf19) significantly increases pericentromeric crossover frequency without affecting chromosomal arm crossovers, as demonstrated by both live cell recombination assays and genome-wide sequencing analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C20, C21, C22, and C55 collectively demonstrate the central finding using multiple complementary approaches. The live cell reporter assay (C20, C21) shows specific pericentromeric effects, while genome-wide sequencing (C22) confirms this is a general phenomenon. The spatial specificity (C21) strengthens the conclusion that this is a centromere-specific function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "c9c1f4b8-8732-4408-914b-e7da1ad7d8cc",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The Ctf19 complex suppresses meiotic DSB formation within approximately 6 kb surrounding centromeres. In mcm21\u0394 mutants, DSB levels increase to genome-average levels in this region, and these DSBs are Spo11-dependent. However, the increase in DSBs (~5-fold) accounts for only ~24% of the increase in crossovers (~21-fold), indicating additional mechanisms beyond DSB suppression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C30 provide strong evidence from genome-wide Spo11-oligo mapping and Southern blotting. The quantitative comparison (C26, C27) is particularly important, showing that DSB suppression alone cannot explain the crossover phenotype. The Spo11-dependence (C29) confirms these are programmed meiotic DSBs. The spatial analysis (C25, C42) is well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "02d69090-4250-4611-97dd-4d235a3a5075",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The Ctf19 complex drives pericentromeric cohesin enrichment, which acts after DSB formation to suppress crossovers by directing repair away from inter-homolog pathways. The scc4-m35 cohesin loader mutant increases pericentromeric crossovers without increasing DSBs, while timed depletion experiments show that Ctf19 removal after S-phase (when cohesin is established) causes DSBs but only modest crossover increases.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The timed depletion experiments (C35-C44, C68) are elegant and provide strong evidence for separable functions. The scc4-m35 analysis (C33, C69) complements this by showing cohesin's role independent of DSB formation. The quantitative data (C44) showing differential effects on DSBs versus COs when Ctf19 is depleted post-replication is particularly compelling. However, the scc4-m35 mutant shows some effects on arm cohesin (C32, Figure 5E), which slightly complicates interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "6c098e4e-c5dc-4af9-97d9-1def4d9dd375",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "DSB suppression by the Ctf19 complex is independent of cohesin and requires continuous presence of the Ctf19 complex throughout meiotic prophase. Cohesin mutants (rec8\u0394, scc4-m35) do not show increased DSBs near CEN1 unless Ctf19 complex components are also absent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 and C64 provide clear genetic evidence that DSB suppression does not require cohesin. The timed depletion showing DSBs appear even when Ctf19 is removed after S-phase (C38, C39) is particularly strong evidence. The spatial analysis (C42, C65) showing DSB suppression acts over shorter distances than cohesin enrichment further supports independence of these mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "613b5027-d415-499c-8802-b9d952ccc905",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The Ctf19 complex and pericentromeric cohesin are required for proper recruitment of the synaptonemal complex component Zip1 to pericentromeres. Zip1 localization is impaired in both Ctf19 complex mutants and scc4-m35 cells, as shown by ChIP-qPCR, ChIP-Seq, and cytological analysis. Pericentromeric crossover frequencies are comparable in scc4-m35 and zip1\u0394 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple complementary approaches (ChIP-qPCR C46, cytology C47, ChIP-Seq C48) consistently show Zip1 localization defects. The quantitative comparison (C49) suggesting similar pericentromeric CO frequencies in scc4-m35 and zip1\u0394 supports a model where cohesin acts through Zip1 recruitment. However, the cytological analysis (C47) also shows unexpected effects on 'full' Zip1 localization, which the authors acknowledge but don't fully explain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "a73afcbd-4dec-45e9-b39f-f3a04a9fbe5e",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Zip1 suppresses pericentromeric crossovers independently of its role in centromere coupling. The Ctf19 complex is required for Zip1-dependent homology-independent centromere coupling but not for SPO11-dependent homologous pairing. The zip1-S75E separation-of-function mutant, which is defective for centromere coupling but proficient for synapsis, does not show increased pericentromeric crossovers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The use of the zip1-S75E separation-of-function mutant (C53, C54) is a strong genetic approach to dissect Zip1 functions. The pairing analysis (C50-C52) clearly shows the Ctf19 complex is required for one Zip1 function (centromere coupling) but not another (homologous pairing). This separation of functions is well-demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "12da4d7f-c95b-4516-9d7c-355f67eb3994",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Wild-type cells show strong suppression of pericentromeric crossovers (0.04 cM) compared to arm crossovers (7.5 cM), and this suppression is partially relieved in zip1\u0394 cells (rising to ~2 cM in the pericentromere).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These baseline measurements (C18, C19) establish the phenomenon being studied and validate the live cell recombination assay. The zip1\u0394 result agrees with previous work (Chen et al., 2008), providing confidence in the assay. The quantitative data are clear and statistically significant.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "f2a0ee9d-40be-4bbd-95d1-4d88a77d3b8d",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Depletion of the MIND complex component Dsn1 results in appearance of CEN1-proximal DSBs, suggesting overall kinetochore integrity is important for DSB suppression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While C31 reports this observation, the evidence is limited to a single experiment (Figure 4B) and the authors note this is only suggestive. The MIND complex depletion also causes severe meiotic defects (Figure 1\u2014figure supplement 1), making it difficult to interpret whether this is a direct effect on DSB suppression or an indirect consequence of kinetochore dysfunction. More extensive characterization would be needed to support this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "08ef2d94-076b-46c1-8d90-45d7caff1f72",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Anchoring away Ctf19 before DNA replication prevents pericentromeric cohesin establishment and leads to increased DSBs and crossovers similar to ctf19\u0394 cells, while anchoring away after DNA replication allows partial cohesin establishment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The anchor-away system is well-controlled (Figure 6C shows successful depletion, Figure 6\u2014figure supplement 1 shows effects on sporulation). The ChIP data (C35) and functional assay on chromosome spreads (C36) provide complementary evidence for differential effects of timing. The quantitative data showing 4% vs 48% centromeric Rec8 retention (C36) is particularly clear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "92fec261-eb12-4a0e-8e84-d750416318ab",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Crossover recombination during meiosis is essential for chromosome segregation, and centromere-proximal crossovers are associated with increased aneuploidy risk, including Trisomy 21 in humans. Crossover formation close to centromeres is infrequent across many species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1, C2, C6, C7, C79) establish the biological context and are well-supported by extensive citations to prior literature. This is established knowledge that motivates the study rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "c514ea78-514f-4e67-a569-4277bfe1789a",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Prior work has established that centromeres suppress recombination through various mechanisms in different organisms, including heterochromatin in fission yeast and Drosophila, and that the Ctf19 complex promotes pericentromeric cohesin enrichment in budding yeast.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C8-C17) accurately summarize prior literature and are appropriately cited. They provide essential background for understanding the current work. The citations appear accurate based on the references provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "ae3d8248-f260-4b6a-9692-d73ec029f41a",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Spo11-dependent DSB formation is associated with H3K4 methylation and open chromatin at promoters. The strongest pericentromeric DSB identified (at CEN1) falls within a divergent promoter, and the Ctf19 complex protects a region ~50 times larger than the centromeric nucleosome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 accurately cite established knowledge about DSB determinants. Claims C62-C63 apply this knowledge to interpret the current findings. The calculation that the protected region is ~50\u00d7 larger than the centromeric nucleosome (C63) is straightforward and supports the inference that the effect is not simply due to local chromatin disruption.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "11570a09-b147-427f-a82d-e0b6d424f739",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work has established that DSBs occur at reduced levels near centromeres in wild-type cells, that cohesin levels influence template choice during DSB repair, that meiotic DSB repair is normally biased toward the homolog through the Red1/Hop1/Mek1 pathway, and that Zip1 has multiple functions at centromeres.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C66, C71-C75, C77) accurately summarize relevant prior literature with appropriate citations. They provide context for interpreting the mechanistic findings about how cohesin and Zip1 suppress crossovers.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "27e58aaf-6abe-4459-8ce5-e61658103eed",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors conclude that the kinetochore promotes establishment of an inter-homolog recombination-suppressed zone around centromeres, and suggest this is a universal mechanism across eukaryotes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 is a reasonable summary conclusion supported by the data presented. Claim C85 is more speculative (noted as 'SPECULATION' in evidence_type) but is appropriately framed as a suggestion. The speculation is reasonable given the conservation of the Ctf19 complex (C83) and widespread pericentromeric CO suppression (C84), though direct evidence in other organisms is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "040b9c88-58c7-4ad5-bb24-51e698e3438d",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Pericentromeric crossovers may cause chromosome segregation defects by disturbing sister chromatid cohesion. During meiosis, sister chromatids must mono-orient and pericentromeric cohesion must be protected during meiosis I.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C80 is appropriately cited as a hypothesis from prior work. Claims C81-C82 are established features of meiotic chromosome segregation. These provide biological context for why pericentromeric CO suppression is important.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    },
+    {
+      "id": "d32758cf-4719-4523-9cba-69531cd8ff58",
+      "content_id": "cbcfef8f-eab5-4504-b97b-c9176fdac9ce",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The Ctf19 complex is conserved across eukaryotes, and pericentromeric crossover suppression is widespread across diverse organisms regardless of heterochromatin organization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are statements of established knowledge (C83, C84) that support the potential generality of the findings. The conservation is well-documented in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:05:33.520212Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a2fb87fe-aed2-4157-9a6a-782d2b8407ca",
+      "result_id": "f7ee11d4-223a-4a23-990a-851c26d8551d"
+    },
+    {
+      "claim_id": "92f8ec12-2553-46ec-a7e3-9b8163b5dfa7",
+      "result_id": "f7ee11d4-223a-4a23-990a-851c26d8551d"
+    },
+    {
+      "claim_id": "c2279509-fc1b-4308-9452-4c7369e3dfb8",
+      "result_id": "f7ee11d4-223a-4a23-990a-851c26d8551d"
+    },
+    {
+      "claim_id": "6db440c4-3e5d-4eb1-85ac-1b2491621ae4",
+      "result_id": "f7ee11d4-223a-4a23-990a-851c26d8551d"
+    },
+    {
+      "claim_id": "c5b24b96-b399-4ed7-9673-08cf149b2214",
+      "result_id": "f7ee11d4-223a-4a23-990a-851c26d8551d"
+    },
+    {
+      "claim_id": "c4bf47e5-9d48-4789-8afd-3c328b6b1e2b",
+      "result_id": "c9c1f4b8-8732-4408-914b-e7da1ad7d8cc"
+    },
+    {
+      "claim_id": "4d938d4a-39af-4ad0-b12b-3bf96d492663",
+      "result_id": "c9c1f4b8-8732-4408-914b-e7da1ad7d8cc"
+    },
+    {
+      "claim_id": "4e5418cd-dd49-43f6-a7ef-594fb767fb0e",
+      "result_id": "c9c1f4b8-8732-4408-914b-e7da1ad7d8cc"
+    },
+    {
+      "claim_id": "e01f8364-51cb-4d92-84fd-27ef0fb42f02",
+      "result_id": "c9c1f4b8-8732-4408-914b-e7da1ad7d8cc"
+    },
+    {
+      "claim_id": "c9d54ff0-3cb8-4f7f-bd2d-8b53b174a2ef",
+      "result_id": "c9c1f4b8-8732-4408-914b-e7da1ad7d8cc"
+    },
+    {
+      "claim_id": "1dee9ed9-f0a0-4224-921d-5934f18fd6d6",
+      "result_id": "c9c1f4b8-8732-4408-914b-e7da1ad7d8cc"
+    },
+    {
+      "claim_id": "53564700-17c1-4f42-be54-f15be7d33e68",
+      "result_id": "c9c1f4b8-8732-4408-914b-e7da1ad7d8cc"
+    },
+    {
+      "claim_id": "dbda7b7d-9778-412b-8ecc-4a61a0eff240",
+      "result_id": "c9c1f4b8-8732-4408-914b-e7da1ad7d8cc"
+    },
+    {
+      "claim_id": "9cb65c92-1b1c-4c6e-b243-dd47e433c5d4",
+      "result_id": "c9c1f4b8-8732-4408-914b-e7da1ad7d8cc"
+    },
+    {
+      "claim_id": "c8516eb4-01e6-4c70-9de5-e01ff8be726b",
+      "result_id": "c9c1f4b8-8732-4408-914b-e7da1ad7d8cc"
+    },
+    {
+      "claim_id": "dd671fff-66ab-4c1b-a21f-2ae2d52fc649",
+      "result_id": "c9c1f4b8-8732-4408-914b-e7da1ad7d8cc"
+    },
+    {
+      "claim_id": "afc5a1fa-e419-4c7d-9f7b-18ed9eca0425",
+      "result_id": "02d69090-4250-4611-97dd-4d235a3a5075"
+    },
+    {
+      "claim_id": "f3e12010-c486-4ec4-b2a1-87c2e016698c",
+      "result_id": "02d69090-4250-4611-97dd-4d235a3a5075"
+    },
+    {
+      "claim_id": "679aad0f-c3c3-4cf8-a8c2-be6b19613877",
+      "result_id": "02d69090-4250-4611-97dd-4d235a3a5075"
+    },
+    {
+      "claim_id": "c763b2c3-ea70-4ed2-9e16-5caca2099cf1",
+      "result_id": "02d69090-4250-4611-97dd-4d235a3a5075"
+    },
+    {
+      "claim_id": "1c2fec1c-40ff-4a6b-ab6e-c6d00c488e1c",
+      "result_id": "02d69090-4250-4611-97dd-4d235a3a5075"
+    },
+    {
+      "claim_id": "ecb89d9b-49cc-490e-bcf7-b699d4d2fb71",
+      "result_id": "02d69090-4250-4611-97dd-4d235a3a5075"
+    },
+    {
+      "claim_id": "cc6953ba-65dc-4745-a5c7-d5023cfa9802",
+      "result_id": "02d69090-4250-4611-97dd-4d235a3a5075"
+    },
+    {
+      "claim_id": "4e8cc031-7d34-4b92-b0e9-3a3ea824e405",
+      "result_id": "02d69090-4250-4611-97dd-4d235a3a5075"
+    },
+    {
+      "claim_id": "e61909d6-9535-43f2-9903-eea434669614",
+      "result_id": "6c098e4e-c5dc-4af9-97d9-1def4d9dd375"
+    },
+    {
+      "claim_id": "f2097836-e7f0-4d79-b08f-1adbd65d9c65",
+      "result_id": "6c098e4e-c5dc-4af9-97d9-1def4d9dd375"
+    },
+    {
+      "claim_id": "3a058c1e-e21f-4fc5-8d59-a71a452c16ff",
+      "result_id": "6c098e4e-c5dc-4af9-97d9-1def4d9dd375"
+    },
+    {
+      "claim_id": "fd392d43-3fb4-4c10-ba6a-07cca31331f5",
+      "result_id": "6c098e4e-c5dc-4af9-97d9-1def4d9dd375"
+    },
+    {
+      "claim_id": "6c6dcf47-ac68-41e5-9989-c655ea05d4b5",
+      "result_id": "6c098e4e-c5dc-4af9-97d9-1def4d9dd375"
+    },
+    {
+      "claim_id": "fec8942e-5dc3-444c-8c3e-8bec28cdab28",
+      "result_id": "613b5027-d415-499c-8802-b9d952ccc905"
+    },
+    {
+      "claim_id": "b56f80a1-aabd-4ff8-9edc-152c83afd661",
+      "result_id": "613b5027-d415-499c-8802-b9d952ccc905"
+    },
+    {
+      "claim_id": "83d2f557-e21a-4022-a01e-19f41ca9674a",
+      "result_id": "613b5027-d415-499c-8802-b9d952ccc905"
+    },
+    {
+      "claim_id": "e9acdde8-a609-4f89-bab5-7a9d3f4d2fb1",
+      "result_id": "613b5027-d415-499c-8802-b9d952ccc905"
+    },
+    {
+      "claim_id": "57a50fab-5d40-4df0-ae3b-24f146c9fdc4",
+      "result_id": "613b5027-d415-499c-8802-b9d952ccc905"
+    },
+    {
+      "claim_id": "b6dc3760-e97c-4787-8c1a-58f1327c6bf2",
+      "result_id": "a73afcbd-4dec-45e9-b39f-f3a04a9fbe5e"
+    },
+    {
+      "claim_id": "62022848-5c24-4957-af8d-5173e4ad0b43",
+      "result_id": "a73afcbd-4dec-45e9-b39f-f3a04a9fbe5e"
+    },
+    {
+      "claim_id": "26ba9fa4-84ba-4a0c-a236-230b19caceab",
+      "result_id": "a73afcbd-4dec-45e9-b39f-f3a04a9fbe5e"
+    },
+    {
+      "claim_id": "2e5b816a-35c0-47eb-b160-3b8cfa03df58",
+      "result_id": "a73afcbd-4dec-45e9-b39f-f3a04a9fbe5e"
+    },
+    {
+      "claim_id": "8af1a571-8d60-4fef-be17-9a79125ac866",
+      "result_id": "a73afcbd-4dec-45e9-b39f-f3a04a9fbe5e"
+    },
+    {
+      "claim_id": "fde18440-d2cb-425f-a237-89b806b1de73",
+      "result_id": "12da4d7f-c95b-4516-9d7c-355f67eb3994"
+    },
+    {
+      "claim_id": "eef03b39-881b-48ec-969d-4b5c074e1e84",
+      "result_id": "12da4d7f-c95b-4516-9d7c-355f67eb3994"
+    },
+    {
+      "claim_id": "c2cadb8e-cf18-4b0a-8a23-8de5151281f6",
+      "result_id": "f2a0ee9d-40be-4bbd-95d1-4d88a77d3b8d"
+    },
+    {
+      "claim_id": "2286d3c0-f2da-469b-b0fd-70fd92a7487a",
+      "result_id": "08ef2d94-076b-46c1-8d90-45d7caff1f72"
+    },
+    {
+      "claim_id": "588fe8da-a90e-46b1-b3d5-e9fd7e25dc66",
+      "result_id": "08ef2d94-076b-46c1-8d90-45d7caff1f72"
+    },
+    {
+      "claim_id": "409ffd2e-f202-48c5-af1f-de88df4aa321",
+      "result_id": "08ef2d94-076b-46c1-8d90-45d7caff1f72"
+    },
+    {
+      "claim_id": "418be0eb-2276-453a-ad4d-d1009afecc03",
+      "result_id": "08ef2d94-076b-46c1-8d90-45d7caff1f72"
+    },
+    {
+      "claim_id": "9d888ae1-fd00-4ff9-8173-661dd37f9e58",
+      "result_id": "08ef2d94-076b-46c1-8d90-45d7caff1f72"
+    },
+    {
+      "claim_id": "45b82831-78f4-4b13-a053-07188cc4a541",
+      "result_id": "92fec261-eb12-4a0e-8e84-d750416318ab"
+    },
+    {
+      "claim_id": "bfc667cc-27a3-45f7-b4c5-ae4a3e1840fc",
+      "result_id": "92fec261-eb12-4a0e-8e84-d750416318ab"
+    },
+    {
+      "claim_id": "73b3c560-076f-48c0-9cc7-da158bb8282f",
+      "result_id": "92fec261-eb12-4a0e-8e84-d750416318ab"
+    },
+    {
+      "claim_id": "90860536-2c0c-4862-965a-fcaef7f66e18",
+      "result_id": "92fec261-eb12-4a0e-8e84-d750416318ab"
+    },
+    {
+      "claim_id": "c88cbd5b-9ea9-4208-967d-a47f740d08db",
+      "result_id": "92fec261-eb12-4a0e-8e84-d750416318ab"
+    },
+    {
+      "claim_id": "27890abb-1d1f-4456-af27-da2709e7b62d",
+      "result_id": "c514ea78-514f-4e67-a569-4277bfe1789a"
+    },
+    {
+      "claim_id": "119bdc72-ff5c-4d8d-a2e1-dfd527047e27",
+      "result_id": "c514ea78-514f-4e67-a569-4277bfe1789a"
+    },
+    {
+      "claim_id": "04d4ee02-6f3d-4d98-99e7-fe9853bf8a14",
+      "result_id": "c514ea78-514f-4e67-a569-4277bfe1789a"
+    },
+    {
+      "claim_id": "548648ca-5b31-44ab-ab5f-aa3d4cbec4d8",
+      "result_id": "c514ea78-514f-4e67-a569-4277bfe1789a"
+    },
+    {
+      "claim_id": "c4a63813-f560-4ccb-b5ef-c85bb9c2b5bf",
+      "result_id": "c514ea78-514f-4e67-a569-4277bfe1789a"
+    },
+    {
+      "claim_id": "31a126ef-e772-40a2-9e3f-aa2410103c23",
+      "result_id": "c514ea78-514f-4e67-a569-4277bfe1789a"
+    },
+    {
+      "claim_id": "3c31cc4b-2812-4d08-b354-91f9c74efd33",
+      "result_id": "c514ea78-514f-4e67-a569-4277bfe1789a"
+    },
+    {
+      "claim_id": "168d7701-57ed-4ab6-ac61-4d618f98fc3b",
+      "result_id": "c514ea78-514f-4e67-a569-4277bfe1789a"
+    },
+    {
+      "claim_id": "a14aa298-a53a-4c1c-b4af-cb341bf7b01e",
+      "result_id": "c514ea78-514f-4e67-a569-4277bfe1789a"
+    },
+    {
+      "claim_id": "e566451e-95b3-424c-b29b-c702d3fe3a72",
+      "result_id": "c514ea78-514f-4e67-a569-4277bfe1789a"
+    },
+    {
+      "claim_id": "2aa863ba-8d38-4bec-9ff7-6c1932c3c1c4",
+      "result_id": "ae3d8248-f260-4b6a-9692-d73ec029f41a"
+    },
+    {
+      "claim_id": "36e53777-3c7b-402f-83e1-a37c6162af60",
+      "result_id": "ae3d8248-f260-4b6a-9692-d73ec029f41a"
+    },
+    {
+      "claim_id": "c7fd06db-4337-4121-b42f-f1b3b8c2a3a4",
+      "result_id": "ae3d8248-f260-4b6a-9692-d73ec029f41a"
+    },
+    {
+      "claim_id": "fbca0f81-b306-43f8-a68a-0165edbec84b",
+      "result_id": "ae3d8248-f260-4b6a-9692-d73ec029f41a"
+    },
+    {
+      "claim_id": "b91af848-6252-4774-a1fc-a605e792fb45",
+      "result_id": "ae3d8248-f260-4b6a-9692-d73ec029f41a"
+    },
+    {
+      "claim_id": "b34dfd00-192d-4962-8ea8-c39217fe56b8",
+      "result_id": "11570a09-b147-427f-a82d-e0b6d424f739"
+    },
+    {
+      "claim_id": "7796ee06-dfa1-4060-9a87-15879d0991cd",
+      "result_id": "11570a09-b147-427f-a82d-e0b6d424f739"
+    },
+    {
+      "claim_id": "8d832fbc-7b0d-4ccd-b69e-b06ae17e9440",
+      "result_id": "11570a09-b147-427f-a82d-e0b6d424f739"
+    },
+    {
+      "claim_id": "1585f192-b223-4076-ad1d-f326db543998",
+      "result_id": "11570a09-b147-427f-a82d-e0b6d424f739"
+    },
+    {
+      "claim_id": "818303c1-d46e-448e-b3d3-246ec25b364c",
+      "result_id": "11570a09-b147-427f-a82d-e0b6d424f739"
+    },
+    {
+      "claim_id": "9991975d-10d4-4694-96c6-02171e9aed20",
+      "result_id": "11570a09-b147-427f-a82d-e0b6d424f739"
+    },
+    {
+      "claim_id": "a8fbf306-5809-4233-84bc-19af9510a02e",
+      "result_id": "11570a09-b147-427f-a82d-e0b6d424f739"
+    },
+    {
+      "claim_id": "d4dc68c4-3fa8-4d10-ac6d-ed7996087353",
+      "result_id": "27e58aaf-6abe-4459-8ce5-e61658103eed"
+    },
+    {
+      "claim_id": "b64ace21-2f78-4aa0-8253-d0a591819b2f",
+      "result_id": "27e58aaf-6abe-4459-8ce5-e61658103eed"
+    },
+    {
+      "claim_id": "41c97e9b-6de2-4a57-8f64-cf0db509f03f",
+      "result_id": "040b9c88-58c7-4ad5-bb24-51e698e3438d"
+    },
+    {
+      "claim_id": "032f76ab-c984-492a-ad01-7325c22ec9e3",
+      "result_id": "040b9c88-58c7-4ad5-bb24-51e698e3438d"
+    },
+    {
+      "claim_id": "8ef297bf-9e91-485e-91e6-f2523e577907",
+      "result_id": "040b9c88-58c7-4ad5-bb24-51e698e3438d"
+    },
+    {
+      "claim_id": "c133830f-6703-45d8-a87c-c14b31e7c32b",
+      "result_id": "d32758cf-4719-4523-9cba-69531cd8ff58"
+    },
+    {
+      "claim_id": "c2676ef5-7035-4d6d-bbbc-326eeadc8e01",
+      "result_id": "d32758cf-4719-4523-9cba-69531cd8ff58"
+    }
+  ],
+  "comparisons": []
+}

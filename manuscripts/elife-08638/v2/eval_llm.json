@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Using FACS and RNA-seq on hcrt:EGFP zebrafish, the authors identified 20 Hcrt-neuron-specific transcripts with high stringency (\u2265100 TPM, \u22657-fold enrichment, p<0.01), including hcrt itself at 300 TPM in EGFP+ cells versus <10 TPM in controls, validating the specificity of the approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C35-C37, C39-C42 collectively demonstrate successful isolation and transcriptomic profiling of Hcrt neurons. RT-PCR validation (C36), detection of hcrt as expected (C41-C42), and identification of 20 transcripts (C39-C40) with appropriate statistical thresholds provide strong converging evidence for the technical success and specificity of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "ISH validation confirmed that 9 of 20 high-stringency candidates showed hypothalamic expression at 2 dpf, with expression patterns similar to hcrt. Relaxing bioinformatic parameters (\u226510 TPM, \u22653.6-fold, p<0.01) identified 212 additional transcripts (66 annotated, 146 non-annotated), of which only elovl7b was detectable in adult hypothalamus among those not expressed at 2 dpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C49 demonstrate anatomical validation of RNA-seq results. The 45% validation rate (9/20) for hypothalamic expression at 2 dpf (C43) is reasonable given developmental timing and detection limits. The expanded list of 212 transcripts (C48-C49) with relaxed parameters provides a broader resource, though validation rates are not fully reported for this larger set.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C7"
+    ],
+    "result": "Double ISH/immunofluorescence revealed that 8 of 11 tested transcripts co-localized with EGFP in Hcrt neurons, with differential expression patterns: kcnh4a, hmx3, lhx9, and dennd1b in most Hcrt neurons; star, fam46a, and zgc171844 in subsets; and si:dkey-58b18.8 showing weak but specific expression. This heterogeneity was maintained in adults, demonstrating that Hcrt neurons are not uniform but comprise distinct subpopulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C59 and C7 provide strong evidence for Hcrt neuron heterogeneity through systematic co-localization studies. The differential expression patterns across multiple genes (C53-C54), consistency between larvae and adults (C56-C58), and direct observation of subset-specific expression (C59) robustly support the conclusion of neuronal heterogeneity (C7).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Three candidate transcripts (cuff.23873, npvf, and npffr) labeled distinct hypothalamic neuronal populations adjacent to but not co-localizing with Hcrt neurons, with npvf showing specific hypothalamic expression while the others also expressed in forebrain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by ISH data in Figure 4 showing clear spatial separation between these markers and EGFP+ Hcrt neurons. This identifies neighboring hypothalamic cell populations that may interact with Hcrt neurons, though the functional significance remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C6",
+      "C8"
+    ],
+    "result": "Bioinformatic analysis of regulatory sequences from the 48 most enriched transcripts predicted 68 putative transcription factors, with 13 showing significant enrichment (p<0.005). For example, hsf1 was predicted to regulate 25 Hcrt-enriched genes and was confirmed to be expressed in Hcrt neurons by ISH, suggesting that shared transcription factors orchestrate Hcrt neuron gene expression programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C65, C67-C68 describe computational predictions with limited experimental validation. While hsf1 expression in Hcrt neurons was confirmed (C68), this validates presence but not regulatory function. The prediction that shared TFs regulate gene clusters (C6, C8) is bioinformatically plausible but requires functional validation (e.g., ChIP-seq, perturbation experiments) to be considered supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C86",
+      "C9"
+    ],
+    "result": "The voltage-gated potassium channel kcnh4a is one of two zebrafish kcnh4 paralogs, located 5517 bp downstream of hcrt with conserved synteny across vertebrates. The gene encodes a 3456 bp CDS with six conserved transmembrane domains characteristic of voltage-gated K+ channels. Kcnh4a is expressed specifically in forebrain and hypothalamus, co-localizing with all Hcrt neurons in both larvae and adults, and 48 of 52 TFs predicted to regulate hcrt also target kcnh4a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C83, C86, C9 provide comprehensive characterization of kcnh4a through genomic analysis (C77-C81), structural analysis (C82-C83), phylogenetics (C86), and expression validation (C74-C76, C9). The synteny conservation (C78), shared regulatory elements (C81), and complete co-localization with Hcrt neurons (C75, C9) are well-documented with appropriate data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C10"
+    ],
+    "result": "CRISPR-mediated mutagenesis generated a kcnh4a mutant line with a 14 bp deletion in exon 5, predicted to introduce a premature stop codon and truncate the protein. qRT-PCR confirmed 59% reduction in kcnh4a mRNA levels in homozygous mutants (p<0.001), consistent with nonsense-mediated decay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89, C10 demonstrate successful generation of a kcnh4a loss-of-function allele. The molecular characterization (C87-C88), mRNA reduction (C89), and statistical significance provide strong evidence for effective gene silencing, though the 59% reduction rather than complete loss suggests either incomplete nonsense-mediated decay or maternal contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "kcnh4a-/- larvae exhibited rhythmic locomotor activity peaking during the day, but were slightly hyperactive compared to siblings during both day (13.84\u00b10.11 vs 12.98\u00b10.1 cm/min, p<0.0001) and night (8.05\u00b10.13 vs 7.64\u00b10.12 cm/min, p<0.05), with the effect more pronounced during the day.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 are supported by behavioral tracking data with appropriate statistics (mixed-effect model, n=85-209 per genotype). The mild hyperactivity phenotype is statistically significant and reproducible, though the biological significance of the small effect size (6-7% increase) during the day is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C11",
+      "C12"
+    ],
+    "result": "kcnh4a-/- larvae showed normal sleep during the day but significantly reduced nighttime sleep (13.08\u00b10.27 vs 15.46\u00b10.25 min/hour, p<0.0001) with decreased sleep/wake transitions (12.68\u00b10.19 vs 13.62\u00b10.18, p<0.0005) and shorter sleep bout length (2.21\u00b10.05 vs 2.43\u00b10.05 min, p<0.005), specifically during the night. This demonstrates that Kcnh4a regulates sleep time and consolidation in a circadian-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C105, C11-C12 provide robust evidence for Kcnh4a's role in sleep regulation. Multiple sleep parameters (total time, transitions, bout length) show consistent nighttime-specific deficits with strong statistical support (C100-C103). The circadian specificity (normal day sleep, C99) and convergent measures (C104) strongly support the conclusion that Kcnh4a regulates nighttime sleep (C105, C11-C12).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Six hours of sleep deprivation during the night increased sleep time during the following day in 6 dpf larvae, demonstrating that zebrafish larvae exhibit homeostatic sleep regulation similar to mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 are supported by sleep deprivation experiments shown in Figure 7\u2014figure supplement 1. The sleep rebound following deprivation demonstrates homeostatic regulation, validating the zebrafish larval model for studying sleep mechanisms. This provides important context for interpreting the kcnh4a mutant phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C108",
+      "C113",
+      "C114"
+    ],
+    "result": "The authors propose that Kcnh4a regulates sleep by repolarizing Hcrt neurons, and that loss of kcnh4a may reduce potassium efflux, causing hyperexcitability of Hcrt neurons and activation of downstream arousal-promoting targets, ultimately leading to nighttime wakefulness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106, C108, C113-C114 present a mechanistic model that is biologically plausible based on K+ channel function but lacks direct experimental support. The model requires electrophysiological validation of Hcrt neuron activity in mutants, demonstration of altered firing patterns, and evidence of downstream target activation. The speculation is reasonable but remains unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Cross-species comparison suggests that sleep is regulated by neuronal-circuit-specific potassium channels across flies, zebrafish, and mammals, as ERG channel blockers increase nighttime waking in zebrafish, shaker mutants show reduced sleep in flies, and Kcna2 loss decreases NREM sleep in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 synthesize findings from multiple species through appropriate citations. The comparative analysis (C112) is well-supported by the cited literature (C109-C111) and provides important evolutionary context for the kcnh4a findings, though the specific circuits and mechanisms differ across species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "Eight genes (rfx4, lhx9, scg2, vgll2, ptprn, creb3l1, sgsm1, and fam46a) are conserved as Hcrt-neuron-specific candidates between zebrafish and mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 is supported by comparison with Dalal et al., 2013 data. The conservation of these genes across vertebrates strengthens confidence in the biological relevance of the findings, though the modest overlap (8 genes) may reflect methodological differences or genuine species differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The neuropeptide VF system (npvf/npffr1) and Hcrt neurons may interact in the hypothalamus to regulate morphine- and stress-induced analgesia, based on their anatomical proximity and known roles in pain modulation and interactions with the opioid system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C121 present a speculative model based on anatomical proximity (from this study) and functional roles from literature (C116-C120). While the hypothesis is plausible given the cited evidence, no functional interaction is demonstrated in this work. The speculation (C121) requires experimental validation of npvf/Hcrt interactions.",
+    "result_type": "MINOR"
+  }
+]

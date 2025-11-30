@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Overexpression of Neto1 or Neto2 alone in CA1 pyramidal neurons does not recruit endogenous KARs to synapses. Despite CA1 neurons expressing functional KARs, no synaptic KAR-mediated responses are detected. Neto1 or Neto2 overexpression had no effect on synaptic responses at -70 mV or +40 mV, paired-pulse ratio, and GYKI53655 completely blocked all responses, indicating that Neto proteins cannot promote incorporation of endogenous KARs into synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 provide converging evidence from prior literature (C1-C2) and experimental data (C3-C6) that Neto proteins alone are insufficient to recruit endogenous KARs to synapses in CA1 neurons. The complete blockade by GYKI53655 (C6) strongly supports the conclusion (C7) that endogenous KARs are not synaptically localized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Expression of GluK1 alone in CA1 pyramidal neurons does not result in synaptic KAR responses. GluK1 expression had no effect on synaptic responses at -70 mV or +40 mV, paired-pulse ratio, and GYKI53655 fully blocked EPSCs, indicating that functional KARs were not recruited to the synapse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 demonstrate through multiple independent measures (EPSC amplitude, NMDAR response, paired-pulse ratio, and pharmacological blockade) that GluK1 alone is insufficient for synaptic targeting. The data are internally consistent and support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Co-expression of GluK1 with either Neto1 or Neto2 results in large synaptic KAR responses in CA1 pyramidal neurons. GYKI53655 only partially blocked responses in GluK1/Neto co-expressing neurons, indicating synaptic KAR incorporation. This synaptic trafficking is independent of synaptic activity and does not affect presynaptic release probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C18 provide strong experimental evidence that both Neto1 and Neto2 enable GluK1 synaptic targeting. The partial blockade by GYKI53655 (C13, C15) is appropriately interpreted given the known ~20% blockade of KARs by this concentration (C14). The activity-independence (C18) and lack of presynaptic effects (C16) are well-controlled observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "Co-expression of GluK1 with Neto1 or Neto2 increases NMDAR EPSC amplitude but does not change spine density. This suggests a potential synaptogenic effect that is not reflected in spine density measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The increase in NMDAR EPSCs (C19) suggests possible synaptogenesis, but the lack of change in spine density (C20) creates ambiguity. The authors acknowledge this discrepancy and suggest that modest effects might be difficult to detect or that shaft synapses might be involved. Additional experiments would be needed to resolve this uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "In the presence of the GluK1-selective antagonist ACET, there is no difference in AMPAR-mediated responses between control and GluK1/Neto-expressing neurons, indicating that AMPARs are not displaced by synaptic KARs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 provide direct experimental evidence using a selective antagonist that synaptic KARs do not displace AMPARs. The logic is sound: if KARs displaced AMPARs, blocking KARs would reveal reduced AMPAR responses, which was not observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "GluK1/Neto expression results in synapse unsilencing by selectively targeting silent synapses. Asynchronous EPSC analysis shows increased frequency without change in amplitude, and ACET blocks the frequency increase without reducing amplitude. This indicates that KARs are excluded from AMPAR-containing synapses and selectively populate silent synapses, with GluK1-mediated quantal events being the same size as AMPAR-mediated events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C31 provide a comprehensive and internally consistent dataset supporting selective KAR targeting to silent synapses. The asynchronous EPSC analysis (C23-C24) combined with ACET experiments (C26-C27) provides strong evidence for the model. The equal quantal size (C31) is an intriguing observation that suggests homeostatic regulation. The logic chain from data to conclusion is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The last 20 amino acids of the Neto1 C-terminal domain are critical for GluK1 synaptic targeting. Deletion of the entire C-tail (\u0394161) or the last 20 amino acids (\u039420) substantially impairs synaptic targeting, while deletion of the last 4 amino acids (\u03944, PDZ binding motif) has no effect. Mutation of three serines and one tyrosine in this region (S3Y/A) disrupts synaptic targeting to the same extent as \u039420.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 provide systematic truncation and mutagenesis data that map the critical domain for Neto1-mediated synaptic targeting. The convergence of truncation (C34) and point mutation (C36) data strengthens the conclusion. The data are internally consistent and support the identification of a critical 20 amino acid region.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The last 86 amino acids of the Neto2 C-terminal domain are critical for GluK1 synaptic targeting, with a particularly important region between amino acids 86 and 74. Deletion of the entire C-tail (\u0394148) or the last 86 amino acids (\u039486) substantially impairs targeting, while deletion of the last 74 or 4 amino acids has no effect. The region between 86-74 is critical, and mutation of serines and threonine in this region (S4T/A) impairs targeting to the same extent as \u039486-74.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 provide systematic mapping of the critical Neto2 domain through truncation and mutagenesis. The identification of a specific 12 amino acid region (C40) and confirmation through point mutations (C42) provides strong evidence. The data are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Neto proteins have a distinct role in targeting surface GluK1 receptors to synapses, independent of their role in surface trafficking. Outside-out patch recordings show that wild-type neurons have no detectable GluK1 currents, GluK1 alone produces small currents, and GluK1/Neto co-expression produces very large currents. Critically, Neto1S3Y/A and Neto2S4T/A mutants that impair synaptic targeting still generate large surface currents similar to wild-type Netos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 provide critical evidence separating surface trafficking from synaptic targeting functions of Neto proteins. The key observation is that mutants deficient in synaptic targeting (C46) maintain normal surface expression, demonstrating independent mechanisms. This is a well-designed experiment that directly tests the hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Both Neto1 and Neto2 drive robust surface expression of GluK1. Immunolabeling shows very weak surface GluK1 in the absence of Netos, but abundant surface expression in the presence of either Neto1 or Neto2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 provide direct immunolabeling evidence that Neto proteins promote GluK1 surface expression. The data are clear and support the conclusion. This complements the electrophysiological data from outside-out patches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Neto1 and Neto2 differentially modulate GluK1 kinetics. Neto1 has no effect on deactivation but enhances desensitization rate. Neto2 slows both deactivation and desensitization of GluK1-mediated currents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 provide clear kinetic measurements showing differential effects of Neto1 and Neto2 on GluK1. The data are consistent with prior literature (C54 cites Copits et al., 2011) and demonstrate distinct functional roles for the two Neto proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Summary of main findings: GluK1 alone is poorly expressed on the neuronal surface and absent from synapses. Neto1 and Neto2 promote high-level surface expression and synaptic targeting through independent mechanisms. GluK1 is excluded from AMPAR-containing synapses and selectively incorporated into silent synapses. Neto proteins differentially modulate GluK1 kinetics, with Neto2 slowing deactivation and Neto1 speeding desensitization while Neto2 slows it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C64 summarize the major findings of the study. These summary claims are well-supported by the comprehensive experimental data presented throughout the manuscript. The conclusions are appropriately drawn from the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Literature context and background on Neto proteins and KARs. Prior studies show variable effects of Neto proteins on different KAR subunits and in different systems. Neto proteins are single-pass transmembrane CUB domain-containing proteins that alter KAR kinetics. KARs are expressed at specific synapses including CA3 mossy fiber synapses and CA1 interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C78 provide appropriate literature context. The citations appear accurate and the authors acknowledge controversies in the field (e.g., C67 vs C68). This background appropriately frames the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Methodological details: Organotypic hippocampal slice cultures were made from P6-P8 rats, transfected on DIV 2, and recorded on DIV 8. Picrotoxin (100 \u03bcM) was used to block inhibitory currents and 2-Chloroadenosine (4 \u03bcM) to control epileptiform activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 describe standard methodological procedures that are appropriate for the experiments. The methods are clearly described and appear sound.",
+    "result_type": "MINOR"
+  }
+]

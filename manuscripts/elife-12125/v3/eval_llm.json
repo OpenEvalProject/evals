@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The T\u03b2L genetic construct enables dual monitoring of membrane insertion via ampicillin survival (\u03b2-lactamase activity) and self-association via chloramphenicol survival (ToxR activity), with known membrane orientation and improved sensitivity compared to previous MBP-based assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 collectively establish the T\u03b2L construct design and its functional properties. The construct design is clearly illustrated (C1), the functional basis is supported by established literature (C2-C4, C6), and the orientation specificity is logically inferred from compartmentalization (C5). The improved sensitivity claim (C7) follows from the linear dependence of ampicillin survival on \u03b2-lactamase levels (C6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The dsT\u03b2L assay was validated using CLS (a non-self-associating membrane segment) through comparison of deep sequencing with single-clone viability assays and Western blots, showing that 9/10 mutations had qualitatively similar trends, though deep sequencing provided greater resolution and captured membrane integration effects not detected by Western blots alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C14 provide comprehensive validation of the dsT\u03b2L method. The choice of CLS is justified (C8), and validation through multiple orthogonal methods (single-clone assays C9-C10, Western blots C11-C13) demonstrates consistency. The discrepancy for three mutants (C13) is reasonably explained by the assay measuring both expression and proper integration (C14), which Western blots cannot distinguish.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The dsT\u03b2L insertion profiles reveal that small polar amino acids (Ser, Thr, Cys) have nearly neutral insertion energies, helix-distorting residues (Gly, Pro) and large polar/charged residues are highly disruptive at the membrane mid-plane, while hydrophobic residues show favorable insertion with size-dependent effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C21 describe systematic insertion profiles across amino acid types based on deep sequencing data (Figure 2b). The patterns are internally consistent and align with chemical principles (hydrophobic effect, backbone exposure). The caveat about precise quantification for highly polar residues (C19) is appropriately noted due to low read counts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23"
+    ],
+    "result": "The dsT\u03b2L measurements correlate well with the Moon scale for outer membrane proteins (r\u00b2 = 0.90, slope \u2248 1), providing validation that the in vivo bacterial assay reflects membrane-protein energetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 establish external validation through strong statistical correlation with an independent biophysical measurement system. The high r\u00b2 value and slope near 1 indicate quantitative agreement, supporting the validity of dsT\u03b2L for measuring membrane energetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The dsT\u03b2L profiles for aromatic residues (Trp favored in membrane core, Tyr nearly neutral) diverge from statistical and experimental studies showing interface preference, possibly because the monomeric dsT\u03b2L construct lacks neighboring aromatics for stabilizing stacking interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C24-C28 identify a discrepancy between dsT\u03b2L and prior work on aromatic residues. While the observation is data-supported (C24-C26), the explanation (C27) is speculative and the supporting evidence for stacking contributions (C28) comes from different systems. This discrepancy requires further investigation to resolve.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The atomic-solvation parameter inferred from dsT\u03b2L is 37 \u00b1 6 cal/mol/\u0172, in agreement with values for protein cores and hydrocarbons (~30 cal/mol/\u0172) but 3-4 times larger than the Lep system value (10 cal/mol/\u0172), supporting the view that biological membrane cores have hydrocarbon-like hydrophobicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 present a key quantitative finding with clear statistical analysis (C29), appropriate comparisons to literature values (C31-C34), and a well-supported conclusion (C35). The analysis is based on 39 aliphatic substitutions and includes an independent calculation method (Figure 2d inset), strengthening confidence in the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The dsT\u03b2L profiles reveal large asymmetries for positively charged residues consistent with the 'positive-inside' rule: Arg and Lys are favored by 2 kcal/mol near the cytoplasm vs. periplasm (His by 1 kcal/mol), with only Arg stabilizing the cytosol-membrane interface, representing a novel distinction between Arg and Lys not previously quantified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 describe a major finding on charge asymmetry with clear quantitative data (C36-C39). The distinction between Arg and Lys (C39) is novel and data-supported, though the mechanistic explanation (C40) is speculative. The contrast with previous studies showing much smaller asymmetries (C41) highlights the improved sensitivity of dsT\u03b2L.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The dsT\u03b2L profiles agree with knowledge-based potentials for weakly polar/hydrophobic residues but diverge for more hydrophobic and polar residues, likely because knowledge-based potentials reflect amino acid frequencies biased by functional constraints rather than pure insertion energetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 systematically compare dsT\u03b2L with knowledge-based scales, identifying both agreements and discrepancies. The explanation (C47-C48) that knowledge-based potentials reflect functional constraints in native proteins is reasonable and well-articulated, distinguishing the experimental measurement of insertion energetics from structural statistics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Raw chloramphenicol viability data for GpA and ErbB2 showed that many mutations affecting viability were not at dimerization interfaces, but after correcting for insertion effects using the CLS-derived profiles, the corrected landscapes correctly discriminated self-association positions and highlighted interaction motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53 demonstrate the strong coupling between insertion and self-association. The observation that raw data is confounded (C49-C51) followed by successful correction (C52-C53) provides compelling evidence for the importance of accounting for insertion energetics when studying self-association.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The corrected dsT\u03b2L self-association data for GpA correlates with previous TOXCAT measurements (r\u00b2 = 0.66), validates the correction approach, identifies previously unmutated sensitive positions (e.g., Gly86), and reveals some mutations that may promote self-association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 provide external validation of the self-association correction method through comparison with independent measurements (C54-C55). The moderate correlation (r\u00b2 = 0.66) is reasonable given methodological differences. The identification of new sensitive positions (C56) demonstrates the value of systematic mutagenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The results confirm strong coupling between membrane-protein expression levels and association, emphasizing the importance of accounting for both factors in biophysical experiments on membrane proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 present a key conceptual conclusion supported by the need to correct self-association data for insertion effects. This is a logical inference from the data showing that insertion effects dominate raw chloramphenicol survival measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Structure modeling of GpA and ErbB2 using dsT\u03b2L mutational landscapes as constraints produced fewer than five models passing selection criteria, with some models within 2 \u00c5 of experimental structures, demonstrating that systematic mutational data can constrain structure prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 demonstrate a practical application of the dsT\u03b2L data for structure modeling. The stringent filtering (C60) and close agreement with experimental structures (C61) support the utility of the approach, though the small number of successful models suggests the method requires further refinement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The dsT\u03b2L measurements align with biophysical measurements on outer-membrane proteins and model systems but are 3-4 times larger than Lep system measurements, possibly because the Lep system measures only part of the insertion energy or because expression levels were not quantified in Lep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C67 address a major discrepancy in the field. While the dsT\u03b2L measurements are internally consistent and agree with some literature (C63-C64), the large difference from Lep (C65) is concerning. The explanations offered (C66-C67) are speculative and require further investigation to definitively resolve this discrepancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The dsT\u03b2L assay has limitations: polar residue penalties at the membrane mid-plane are likely lower bounds due to near-zero read counts, and the aromatic residue results diverge from prior work, possibly reflecting the monomeric construct's lack of aromatic neighbors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 appropriately acknowledge limitations of the method. The recognition that polar residue energies are lower bounds (C68) is important for interpretation. The aromatic discrepancy (C69-C70) is honestly reported with a plausible but speculative explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Previous TOXCAT studies showed chloramphenicol survival depends on expression levels; dsT\u03b2L strongly confirms expression is a dominant factor due to the quadratic relationship between monomer and homodimer concentrations, and the CLS insertion profiles provide a self-consistent way to correct for insertion effects in future studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 place the work in context of prior TOXCAT literature and articulate the key insight about the dominance of expression effects. The mathematical explanation (C74) is sound, and the proposed utility of the CLS profiles for future work (C76) is a reasonable inference from the successful correction of GpA/ErbB2 data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Deep mutational scanning enables unbiased measurement of all point mutations under equal conditions, and the structural simplicity of single helices/homodimers facilitates accurate energetic inference; the dsT\u03b2L data will be used to improve membrane-protein energetics models and protein engineering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 discuss the methodological advantages and future applications. The strengths of deep mutational scanning (C77-C78) are well-established in the literature. The role of structural simplicity (C79) is a reasonable inference. The proposed applications (C80) are logical extensions of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "The dsT\u03b2L deep sequencing achieved high coverage (87% of 540 possible mutations with >100 counts) and large dynamic range (spanning five orders of magnitude in read counts between favorable and unfavorable mutations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 document the technical quality of the deep sequencing data. The high coverage and large dynamic range support the reliability of the quantitative measurements and the ability to detect both favorable and highly unfavorable mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "The membrane mid-plane location was estimated by aligning hydrophobic residue profiles, and two centrally located polar positions (Ser307, Gly308) were excluded from analysis due to inconsistency with general trends, likely due to helix backbone distortion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 describe methodological decisions in data analysis. The approach to locating the membrane mid-plane (C97) is reasonable given the constraints of the assay. The exclusion of two positions (C98) is appropriately justified and represents a minor limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "The insertion profiles could be used for bioinformatics prediction of membrane protein locations and orientations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C42 is a speculative suggestion about future applications with reference to a manuscript in preparation. While plausible, this application has not been demonstrated in the current work and cannot be evaluated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The study reveals that biological membrane hydrophobicity is significantly higher than previously appreciated, identifies large differences among positively charged residues in membrane insertion, and demonstrates strong coupling between insertion and self-association in receptor homodimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 summarize the major findings of the paper as stated in the abstract. These high-level conclusions are well-supported by the detailed results presented in the manuscript, including the atomic-solvation parameter analysis (C82), charge asymmetry measurements (C83), and GpA/ErbB2 correction analysis (C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The introduction establishes that membrane-protein folding involves insertion and association stages, that membrane protein design lags behind soluble protein design due to lack of systematic energetic measurements, and that previous Lep system measurements showed unexpectedly low hydrophobicity and have not systematically examined the interplay between insertion and association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C94 establish the background and motivation for the study through citations to prior work. These claims accurately represent the state of the field and identify genuine gaps in knowledge that the current work addresses. The characterization of prior work appears accurate based on the citations provided.",
+    "result_type": "MINOR"
+  }
+]

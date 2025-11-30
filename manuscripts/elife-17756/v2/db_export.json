@@ -1,0 +1,1903 @@
+{
+  "submission": {
+    "id": "3b5b9243-2f9e-4684-a887-07c376ea131d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:18:28.616087Z",
+    "updated_at": "2025-11-30T00:18:28.616087Z"
+  },
+  "content": [
+    {
+      "id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "submission_id": "3b5b9243-2f9e-4684-a887-07c376ea131d",
+      "content_type": "manuscript",
+      "content_text": "# Nonenzymatic copying of RNA templates containing all four letters is catalyzed by activated oligonucleotides\n\n## Authors\n\n- Noam Prywes<sup>1</sup> ([ORCID: 0000-0003-2526-2392](https://orcid.org/0000-0003-2526-2392))\n- J Craig Blain<sup>2</sup> ([ORCID: 0000-0001-5664-4065](https://orcid.org/0000-0001-5664-4065))\n- Francesca Del Frate<sup>2</sup> ([ORCID: 0000-0003-2782-1290](https://orcid.org/0000-0003-2782-1290))\n- Jack W Szostak<sup>1</sup> ([ORCID: 0000-0003-4131-1203](https://orcid.org/0000-0003-4131-1203)) \u2020\n\n### Affiliations\n\n1. Department of Chemistry and Chemical Biology Harvard University Cambridge United States\n2. Department of Molecular Biology and Center for Computational and Integrative Biology Howard Hughes Medical Institute, Massachusetts General Hospital Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe nonenzymatic replication of RNA is a potential transitional stage between the prebiotic chemistry of nucleotide synthesis and the canonical RNA world in which RNA enzymes (ribozymes) catalyze replication of the RNA genomes of primordial cells. However, the plausibility of nonenzymatic RNA replication is undercut by the lack of a protocell-compatible chemical system capable of copying RNA templates containing all four nucleotides. We show that short 5\u2032-activated oligonucleotides act as catalysts that accelerate primer extension, and allow for the one-pot copying of mixed sequence RNA templates. The fidelity of the primer extension products resulting from the sequential addition of activated monomers, when catalyzed by activated oligomers, is sufficient to sustain a genome long enough to encode active ribozymes. Finally, by immobilizing the primer and template on a bead and adding individual monomers in sequence, we synthesize a significant part of an active hammerhead ribozyme, forging a link between nonenzymatic polymerization and the RNA world.\n\n## Introduction\n\nIn order to serve as a bridge from prebiotic chemistry to the RNA world (Patel et al., 2015; Powner et al., 2009), the nonenzymatic copying of RNA templates by suitably activated nucleotides (Figure 1a) must occur quickly enough to replicate functional RNA sequences faster than they degrade. However, the nonenzymatic copying of sequences containing all four nucleotides has not yet been possible for a number of reasons (Szostak, 2012), most notably the slow rate of primer extension with adenosine and uridine monomers (Joyce et al., 1987; Wu and Orgel, 1992b; Deck et al., 2011). Indeed, two adjacent A or U residues in the template will stop polymerization entirely (Wu and Orgel, 1992b) under normal conditions; even partial copying requires extreme conditions, such as the eutectic phase of frozen samples (Vogel and Richert, 2007), which are not compatible with replication within protocells. Extensive optimization of reaction conditions with the aim of improving the rate of primer extension with all four monomers, including varying the choice of divalent cation and leaving group, improved the rate and regiospecificity of polymerization for G and C but not A and U (Wu and Orgel, 1992b,\u00a0c; Deck et al., 2011; Inoue and Orgel, 1981; Hagenbuch et al., 2005; Lohrmann et al., 1980). Recent biophysical studies suggest that low A and U monomer affinity for the template is not the only reason for this problem (Szostak, 2012; Izgu et al., 2015) since A binds only three-fold more weakly than G, but primer extension with A is at least 100-fold slower (Joyce et al., 1987; Wu and Orgel, 1992b; Deck et al., 2011; Heuberger et al., 2015) than with G. Moreover, Deck et al. have shown that downstream helper oligonucleotides (Deck et al., 2011) that provide incoming monomers with an additional binding surface improve the binding of A and U monomers, but the underlying difference in rates remains. The use of helper oligonucleotides allowed primer extension to proceed on a template containing all four bases over the course of several weeks, where previously such templates could not be copied at all.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/17756/elife-17756-fig1-v2.jpg)\n\n**Figure 1.:** (a) Structure of 2-methylimidazole-activated guanosine-5\u2032-monophosphate, and its schematic representation. (b) Schematic of the RNA primer extension reaction. N1 represents an individual ribonucleotide monomer in position to react with the primer, N2 represents either a monomer or an oligomer downstream, with a leaving group capable of interacting with N1. Dashed lines: Potential interactions between leaving groups or between the downstream leaving group and the upstream nucleotide N1. (c) Schematics of the RNA primers, templates, monomers and oligomers used in d\u2013f. Templates are complementary to the displayed monomers and oligomers. Template 2 has a U following the C to which the G monomer is bound to prevent downstream binding of G. (d) Primer extension by polymerization or ligation on templates 1 or 3, respectively. Fits describe ln(fraction primer remaining) vs time, giving an apparent first-order rate constant (Figure 1\u2014figure supplement 1). (e) Primer extension assay for the experiments described in c, showing reaction progress after 10 min. In lane 6, a primer + 4 band can be observed, representing the slow addition of the activated trimer after the monomer. (f) Pseudo-first order rates of the reactions described in c. Error bars indicate S.E.M; all experiments were performed in triplicate or greater. Reaction conditions: 10 \u03bcM primer, 11 \u03bcM template, 200 mM CHES pH 9.0, 200 mM MgCl2, 50 mM monomer, 1 mM trimer.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17756/elife-17756-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Schematic of a primer extension reaction. (b) Gel showing primer (starting material) and extended primer. (c) Plot showing the decay of primer as a percentage of total fluorescence intensity on the gel. (d) Following the assumption of a pseudo-first order rate curve, the ln(fraction of primer remaining) plotted over time gives a plot where the slope is the rate for the reaction.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17756/elife-17756-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (a) Schematic of trimer ligation reaction. (b) Calculated rates of ligation of various trimer sequences.\n\nHere we show that the presence of a leaving group at the 5\u2032 end of a helper oligonucleotide can be a source of significant catalysis. Activated helper oligonucleotides facilitate the addition of all four RNA monomers individually and in sequence in a single reaction. Finally, when a template is immobilized by attachment to a bead, sequential addition of activated monomers and helper oligonucleotides successfully promoted the synthesis of a significant part of an active hammerhead ribozyme.\n\n## Results\n\nGiven the historical and continuing problems in demonstrating efficient nonenzymatic template directed primer extension, one might wonder whether this biologically inspired model is appropriate for replication within primordial cells. An alternative scenario that might seem more reasonable in the context of prebiotic chemistry involves template copying by the initial formation of short oligonucleotides, followed by ligation events that generate longer oligonucleotide intermediates and eventually a full length copy (Szostak, 2011; James and Ellington, 1999). To test the viability of this hierarchical assembly model, we compared the rate of primer extension with activated monomers to the rate of ligation of two template bound oligonucleotides (Figure 1b,c reactions 1 and 3). Nucleotides activated with 2-methylimidzole on the 5\u2032-phosphate have been used extensively to model nonenzymatic template copying (Deck et al., 2011; Wu and Orgel, 1992c), irrespective of their prebiotic plausibility, and were used in all experiments reported here. In both the nucleotide polymerization and the oligonucleotide ligation reactions, the chemical reaction is the same, i.e. attack of the 3\u2032-hydroxyl of an oligonucleotide on the 5\u2032-phosphate of a downstream nucleotide, with displacement of the 2-methylimidazole leaving group (Figure 1b). Moreover, the reacting nucleotides are the same in both cases: a G at the 3\u2032-end of the primer and a G monomer or a G at the 5\u2032-end of an oligonucleotide. We expected the ligation reaction to be faster, because the oligonucleotides to be ligated are both stably bound to the template, and because the fully base-paired nicked duplex should be largely in the optimal A-type conformation (Kozlov and Orgel, 2000), whereas the primer/template complex with template bound monomers would be significantly more disordered. To our surprise, the primer extension reaction proceeded almost 100 times more rapidly than the ligation reaction (Figure 1d). This was true for a variety of trimer sequences (Figure 1\u2014figure supplement 2). In our search for an explanation for this unexpected observation, we reasoned that one of the major differences between the two scenarios was the presence of multiple adjacent 5\u2032-activated nucleotides downstream of the primer in the case of monomer addition, but not ligation, where there is only a single activated nucleotide. Indeed, the case for a role of a second downstream activated nucleotide is consistent with the well known difficulty of extending a primer to the last nucleotide of a template (Wu and Orgel, 1992c). Furthermore, Orgel et al. showed over 20 years ago that efficient primer extension requires the presence of two activated monomers adjacent to the primer. Remarkably, the reaction is fastest when both monomers are activated with 2-methylimidazole instead of either or both being activated with imidazole (Wu and Orgel, 1992a), suggesting a possible catalytic role for a physical interaction of the leaving groups of adjacent monomers.\n\nIn order to directly test the possibility that a 2-methylimidazole leaving group on the 5\u2032-phosphate of a downstream monomer or oligonucleotide (Figure 1b) would increase the rate of reaction between a primer and an adjacent monomer, we designed a series of templates for nonenzymatic RNA polymerization and ligation (Figure 1c). We then measured the rate of addition of a monomer to a primer in the presence or absence of downstream nucleotides, with or without 5\u2032-activation of the downstream nucleotides (Figure 1c\u2013f). Rates were calculated assuming a pseudo-first order rate equation (Figure 1\u2014figure supplement 1), because the concentrations of primer and template were far below that of the monomer, which would not change significantly during the reaction. Primer extension by addition of a single monomer, in the absence of any additional downstream mono- or oligo-nucleotides, was very slow and comparable in rate to the ligation of the primer to a 5\u2032-activated GAG trinucleotide (Figure 1c\u2013f, reactions 2 and 3). The binding of an unactivated AGC trimer, with either a 5\u2032 hydroxyl or a 5\u2032 phosphate, downstream of an activated G monomer conferred only a modest increase in the rate of addition of the G monomer to the primer (Figure\u00a01c\u2013f, reactions 4 and 5), consistent with previous reports of unactivated downstream \u2018helper\u2019 oligonucleotides (Deck et al., 2011; Jauker et al., 2015; Kervio et al., 2010). Such helper oligonucleotides are thought to act largely by increasing monomer affinity to the primer/template complex by providing an additional base-stacking surface. In contrast, when the same AGC trimer was activated as a 5\u2032-phosphoro-2-methylimidazolide and used as a downstream helper oligonucleotide, the rate of primer extension (by addition of a G monomer) was increased by over two orders of magnitude (Figure\u00a01c\u2013f, reaction 6) compared to reactions with unactivated trimers. The rate of primer extension with a single G in the presence of an activated downstream trinucleotide was about twice as fast as the rate when the primer was followed by up to four sequential activated G monomers (Figure 1c\u2013f, reaction 1 and 6).\n\nTo systematically study the rate of nonenzymatic primer extension as a function of the length of the downstream activated \u2018helper\u2019 oligonucleotide, we synthesized a series of activated oligonucleotides of different lengths (Figure 2a). At saturating concentrations (Figure 2\u2014figure supplement 1) of each of the oligonucleotides, the rate of primer extension improved as the length of the helper increased from mononucleotide to dinucleotide to trinucleotide, and then stayed approximately constant with the tetranucleotide (Figure 2a). At subsaturating concentrations of helper oligonucleotide, the rate of the primer extension reaction increased with increasing concentrations of di- or tri-nucleotide helper (Figure 2\u2014figure supplement 1). Because the maximum rate of the trimer-assisted reaction was significantly faster than that of the dimer-assisted reaction, we proceeded with trimers as the downstream helper oligonucleotides for the remainder of this study.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/17756/elife-17756-fig2-v2.jpg)\n\n**Figure 2.:** (a) RNA primer extension assay using alternative 'helper' oligomers and corresponding, complementary templates. The respective rates are shown at bottom. Concentration curves are provided for AG and AGC in Figure 2\u2014figure supplement 1. (b) Primer extension assay for each of the four monomers, as well as 2-thiouridine, in the absence and presence of activated trimer. Shown at bottom of both a and b is a bar graph with the respective rates. Reaction conditions: 10 \u03bcM primer, 11 \u03bcM template, 200 mM Tris pH 8.0, 100 mM MgCl2, 50 mM monomer, 10 mM 2-MeImpAG, 1 mM 2-MeImpAGC, 1 mM 2-MeImpAGGC. The gels in a and b show reaction progress after 10 min and 1\u00a0hr respectively. Error bars indicate S.E.M; all experiments were performed in triplicate or greater.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17756/elife-17756-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Schematic of the primer extension reaction. (b) Saturation curves of primer extension reactions with either AG or AGC as the helper oligomers.\n\nWe then tested the ability of a downstream 2-methylimidazole-activated AGC trimer to catalyze template-directed RNA primer extension with all four individual 2-methylimidazole activated monomers \u2013 A, G, C and U. We also tested the 2-thiouridine monomer, which we have previously shown to be superior to uridine in nonenzymatic primer extension in terms of both increased rate and improved fidelity (Heuberger et al., 2015). In each case, the rate of primer extension increased by at least two orders of magnitude compared to the corresponding reactions without any helper oligonucleotides (Figure 2b). Remarkably, whereas the rate of primer extension with A and U monomers was previously too slow to measure (Wu and Orgel, 1992b; Heuberger et al., 2015) \u2013 conservatively estimated to be at least three orders of magnitude slower than primer extension with G or C monomers \u2013 the difference in polymerization rates was reduced to roughly one order of magnitude when assisted by downstream activated trimers (Figure 2b).\n\nIn order to assess the fidelity of nonenzymatic trimer-assisted primer extension, we measured the rates of monomer addition for all monomer-template combinations, including both matches and mismatches (Figure 3a). We calculated the fidelity for each template as the rate of matched monomer addition divided by the sum of matched and mismatched monomer addition rates. By averaging the fidelities of the four templates we found the overall fidelity of trimer-assisted polymerization to be 98%. Assuming an error threshold of one mutation per genome\u00a0(Eigen, 1971), this value of fidelity allows for effective genome sizes of 50 nucleotides, long enough to produce functional ribozymes (Ferr\u00e9-D'Amar\u00e9 and Scott, 2010). The fastest mismatch reaction was primer extension by G during copying of a template U, which was approximately 5% as fast as primer extension with A on the same template (Figure 3a, Figure 3\u2014figure supplement 1). This is likely due to the formation of a G:U wobble base pair (Heuberger et al., 2015), and is consistent with previous studies of nonenzymatic primer extension reactions (Rajamani et al., 2010). All other mismatches were at least two orders of magnitude slower than their matched counterparts. We also tested the effect of replacing the canonical U monomer with 2-thiouridine and 2-thioribothymine on the polymerization rate and found, in line with previous reports (Heuberger et al., 2015), that this sulfur substitution improved the rates by approximately one order of magnitude (Figure 3b), bringing the rate of primer extension closer to the rates of G and C addition. More rigorous tests of fidelity, in which monomers can compete for binding on a template in all possible sequence contexts, are ongoing.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/17756/elife-17756-fig3-v2.jpg)\n\n**Figure 3.:** (a) Schematic of the fidelity assay. Using the same RNA primer and trimer, four different templates, one with each base, were paired with each of the four 2-methylimidazole activated monomers to test the relative rates of each matched and mismatched pair. (b) Heat map showing the relative rates of primer extension for each template:monomer pairing. Black indicates a rate of 0.001 h\u22121, white indicates a rate of 100 h\u22121. A bar graph and a table of the same data can be found in Figure 3\u2014figure supplement 1. (c) Relative rates of primer extension with the modified U monomers, 2-thiouridine and 2-thioribothymidine compared to that of a canonical, activated U monomer on a template containing an A. Reaction conditions as in Figure 2. Error bars indicate S.E.M. All experiments were performed in triplicate or greater.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17756/elife-17756-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Schematic of the primer extension reaction. (b) Rates of monomer additions on different templates for all monomer-template pairs. (c) The rates from part b on the grid from Figure 3b.\n\nEncouraged by the relatively fast and accurate addition of all four monomers to a primer, we then attempted to copy short RNA templates containing all four nucleotides. In order to iterate the process of trimer assisted monomer addition, after a downstream activated trimer catalyzes the addition of the first monomer to the primer, the helper trimer must dissociate to allow for the binding of the next monomer-trimer pair. To test the feasibility of this mode of primer extension, we designed a template that contained binding sites for all four monomers and synthesized the appropriate activated trimers (Figure 4a). We used 2-thiouridine monomer in place of uridine (see above), and all four monomers (A, G, C and 2-thiouridine) were present in every reaction. In the absence of activated trimers, we observed almost no primer extension (lane 1 Figure 4b); even though all four monomers were present, their combined rate of addition was not measurable. Adding just the first helper trimer resulted in rapid addition of the first monomer (C) to the primer, followed by slow addition of the first trimer (AGC) to the growing primer. Similarly, adding two, three or four trimers together resulted in the generation of primers extended by two, three or four monomers respectively (Figure 4b). These reactions converted primer into a product with four sequentially added monomers with an ~80% yield after 16\u2009hr (Figure 4c,d); single monomer addition reactions reached >95% yield after only 10 min (Figure 2b). The difference between the fast rates observed in the trimer-assisted addition of a single base (Figure 2b) and the slower rate of trimer-assisted polymerization of all four bases simultaneously (Figure 4b) may be due to the competition of trimers for overlapping binding sites on the template. This hypothesis is supported by the decreased rate of trimer assisted primer extension with a single monomer in the presence of additional overlapping downstream trimers (Figure 4\u2014figure supplement 1). The copying of templates containing two consecutive A or U monomers is also made possible by the use of activated helper oligonucleotides (Figure 5).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/17756/elife-17756-fig4-v2.jpg)\n\n**Figure 4.:** (a) Schematic of a primer extension reaction incorporating all four RNA monomers, with four respective downstream helper trimers. (b) All four monomers and the activated trimers indicated below the gel were added to each reaction. For example, in lane 3 all four monomers and the activated AGC and GCG trimers were mixed with primer, template, buffer and Mg2+. Higher bands represent either the ligation of activated trimers or the polymerization of G monomers without trimer assistance. The gel shows reaction progress after 16\u2009hr. (c) Timecourse of the reaction with all four trimers. A 48\u2009hr timepoint of the reaction without any trimers (left lane of b) is contrasted with a timecourse (timepoints at 5 and 30 min, 2, 24 and 48\u2009hr). The percentage of polymerization products that have been extended by at least four nucleotides is plotted over time. (d) A gel displaying the timepoints plotted in part c. A timecourse showing the effect of overlapping trimers on reaction rate can be found in Figure 4\u2014figure supplement 1. Reaction conditions: 2.5 \u03bcM primer, 2.5 \u03bcM template, 100 mM HEPES pH 8.0, 100 mM MgCl2, 20 mM monomer, 100 \u03bcM trimer.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17756/elife-17756-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Schematic of the primer extension reaction. (b) Rate of primer extension as a function of increasing GCG trimer concentration.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/17756/elife-17756-fig5-v2.jpg)\n\n**Figure 5.:** (a) Schematic of a primer extension reaction wherein two consecutive A nucleotides can polymerize. The gel shows extension without trimers and with one or two trimers after 16\u2009hr. (b) Same as in (a) but with two U additions. In the right half 2-MeImpU is replaced with 2-MeImp-2-thioU.\n\nIf nonenzymatic RNA polymerization did indeed precede the RNA world, then it would have been necessary to synthesize RNA sequences long enough to function as ribozymes (Deck et al., 2011). While our method can only produce sequences >7 nucleotides in one reaction in low yields (Figure 6\u2014figure supplement 1) due to the cross-inhibitory effect of trimers with overlapping binding sites (Figure 4\u2014figure supplement 1), we reasoned that a ribozyme could be synthesized by this approach if monomers were added, along with their attendant trimers, one at a time (Figure 6). To that end, we immobilized a template that codes for the sequence of one half of the hammerhead ribozyme (HH2) \u2013 on a bead and added matched pairs of monomers and trimers sequentially (Figure 6a). Primer extension was monitored by gel electrophoresis. Despite the fact that no 2-thiouridine monomers were used (in order to protect the catalytic capacity of the ribozyme) a high conversion rate was observed at each step (75\u201395%) (Figure 6b). The reaction durations required to achieve these conversion rates varied widely, for example, the seventh monomer addition required 21\u2009hr to reach 95% while the eighth addition reached the same level of conversion after just 30 min. Generally, G and C additions were much faster than A or U additions; the reason for the discrepancy between the rates of these reactions on beads and those in solution is unknown. The use of s2U or s2T might offset some of the discrepancy. The final product was released from the bead by hybridization of an excess of a DNA oligonucleotide of identical sequence to the immobilized template. After DNase treatment, the hammerhead substrate, HH1, was added to the crude synthesized pool of oligonucleotides in the presence of 200\u2009mM MgCl2 for 16\u2009hr (Figure 6c). Despite the fact that this was a crude reaction product, with full-length HH2 comprising only 6% of the reaction products, the product mixture was able to function as a catalyst, with 50% ribozyme cleavage yield, thus demonstrating that a significant portion of an active ribozyme was synthesized nonenzymatically.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/17756/elife-17756-fig6-v2.jpg)\n\n**Figure 6.:** (a) Schematic of the bead-assisted primer extension reaction. Synthesis of the hammerhead ribozyme strand HH2 by the sequential addition of matched pairs of activated monomers and trimers. (b) Each lane shows primer extension by one nucleotide, catalyzed by the corresponding downstream activated trimer. Final yield of the +12 product was 6%. Reaction conditions: 100 mM MgCl2, 200 mM Tris-HCl pH 8, 25 mM monomer and 2 mM trimer. The beads were washed between steps in 2 M NaCl, 1 mM EDTA and 10 mM Tris-HCl pH 7. For steps 2, 5 and 7, 50 mM monomer and 4 mM trimer were added. Each step was monitored by gel electrophoresis until it reached >75% yield. Steps varied in length from 30 min to 22\u2009hr; the total time required was 150 hr. (c) The product of the last bead-assisted reaction was removed from the bead by the addition of the an excess of the DNA sequence of the extended primer at 95\u00b0C over 2 min. After DNase treatment, the target hammerhead RNA, HH1, was added. The third lane shows the extent of the nuclease reaction, 50%, after 16\u2009hr at room temperature. For comparison, pure HH2 made from DNA and RNA served as negative and positive controls respectively. Reaction conditions: Extended primer from the beads was added to 200 mM MgCl2, 200 mM Tris-HCl pH 8 and 250 nM Cy5 labeled HH1 RNA.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17756/elife-17756-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) Schematic of the primer extension reaction. (b) Gel showing primer extension after 18\u2009hr. Reaction conditions: 5 \u03bcM primer, 5.5 \u03bcM template, 100 mM Tris pH 8, 100 mM MgCl2, 12.5 mM monomers, 500 \u03bcM trimers.\n\n## Discussion\n\nThe experiments described above demonstrate for the first time a simple and robust means of nonenzymatically copying mixed sequence RNA templates. Short, activated oligonucleotides \u2013 themselves plausibly generated by either templated or untemplated monomer polymerization \u2013 are efficient catalysts of high fidelity primer extension with all four RNA monomers. Thus short activated oligonucleotides can play dual roles, acting either as catalysts of chain growth by monomer addition, or directly as replication intermediates, since they can also be incorporated into a growing chain by ligation. Template copying in a complex but realistic milieu containing both activated monomers and oligomers could therefore occur via a hybrid process combining primer extension with monomers and oligonucleotide ligation.\n\nThe disparity in rates between the reactions catalyzed by activated vs. unactivated trimers indicates a key role for the leaving group downstream of the polymerizing monomer. The slow rate of activated oligonucleotide ligation is also explained by the lack of a leaving group one base downstream of the site of the primer extension reaction: in this case the downstream position corresponds to the second monomer in the oligonucleotide which necessarily has no leaving group as it is linked to the upstream monomer by a phosphodiester linkage. The nature of the interaction between the downstream leaving group and the reacting monomer remains unclear. It is possible that the downstream leaving group interacts attractively with the reacting leaving group, positioning it optimally for attack by the 3\u2032 hydroxyl of the primer. As observed by Wu et al. (Wu and Orgel, 1992a) this interaction could be very sensitive to steric effects, such that 2-methylimidazole at the downstream position would facilitate polymerization much more effectively than imidazole, though the authors ultimately concluded that such subtle effects are not likely to adequately explain the strength of the interaction. Wu et al. (Wu and Orgel, 1992a) also suggested that the catalytic effect could be due to acid-base catalysis. Another possibility is that the upstream leaving group forms a covalent bond with the phosphate of the downstream monomer, a reaction that is only possible if there is a leaving group on the downstream monomer (Kervio et al., 2016\u00a0and T. Walton and J.W. Szostak, unpublished data). This covalent bond could form before the attack of the 3\u2032 hydroxyl of the primer, creating an imidazolium intermediate, or in a concerted reaction where the leaving group of the upstream monomer replaces the leaving group of the downstream monomer. Further understanding of the reaction mechanism could lead to concomitant improvements in the rate and extent of template copying.\n\nFurther advances are required to enable the copying of longer and potentially functional RNA sequences in one pot, protocell-compatible conditions. However, the copying of long mixed template sequences under our conditions compares favorably, both in terms of rate and efficiency with reactions in which arbitrary RNA templates are copied by highly evolved ribozyme polymerases (Wochner et al., 2011) (Figure 6\u2014figure supplement 1). In fact, if the rates and fidelities of nonenzymatic RNA polymerization were sufficiently high, the need for a ribozyme polymerase in the RNA world may be circumvented: RNA could be copied by nonenzymatic chemistry alone until the advent of protein polymerases.\n\nWe suggest that the identification of a plausible source of chemical energy that could drive the re-activation of monomers and oligomers following hydrolytic loss of the leaving group is a key missing component in efforts to reconstitute nonenzymatic RNA replication. A chemical environment that could maintain a fully activated pool of substrates, and avoid accumulation of the inhibitory by-products resulting from hydrolysis, might be sufficient to drive high yielding and complete copying of longer RNA templates in one pot, thus setting the stage for the emergence of Darwinian evolution.\n\n## Materials and methods\n\n### Chemicals\n\nGuanosine 5\u2032-monophosphate was purchased as the free acid from Santa Cruz Biotechnology (Dallas, TX). 2-thiouridine-5\u2032-phosphoro-2methylimidazolide and 2\u2032,3\u2032-diacetyl-nucleosides were purchased from ChemGenes (Wilmington, MA). Phosphoramidite nucleotides and all other oligonucleotide synthesis reagents were purchased from either ChemGenes or Bioautomation (Plano, TX). Tris(hydroxymethyl)aminomethane (Tris)-HCl, ThermoScript reverse transcriptase as well as reaction buffer and NTPs were purchased from Thermo Fisher Scientific (Waltham, MA). DNA and RNA primers and were purchased from Integrated DNA Technologies (Coralville, IA). All oligonucleotide sequences are listed below. All other chemicals were purchased from Sigma Aldrich Corporation (St. Louis, MO).\n\n### Gel electrophoresis\n\nGels were prepared using the SequaGel \u2013 UreaGel system from National Diagnostics (Atlanta, GA). Gels were prepared to 20% acrylamide and scanned using a Typhoon Scanner 9410 (GE Healthcare, Little Chalfont, Buckinghamshire, UK).\n\n### Activated monomer and oligomer synthesis\n\nRNA oligonucleotides were prepared by standard phosphoramidite oligonucleotide synthesis using a MerMade 6 DNA/RNA synthesizer (Bioautomation, Plano, TX) or starting with 2\u2032,3\u2032-diacetyl nucleosides using standard manual coupling procedures (Beaucage and Caruthers, 1981). 5\u2032-phosphates were installed using bis-cyanoethyl-N,N-diisopropyl phosphoramidite from ChemGenes by standard phosphoramidite coupling chemistry.\n\nMononucleotide monophosphates and oligonucleotide monophosphates were activated using a modified published protocol (Joyce et al., 1984). As an example, 2-MeImpAGC (the 2-methylimidazolide of the trimer 5\u2032-phosphoro-AGC) was synthesized by first dissolving 5 mg (5 \u03bcmole) of 5\u2032-phosphoro-AGC in 1\u2009mL of dimethyl sulfoxide (DMSO). To that mixture 160 mg (2 mmoles) of 2-methylimidazole, 56 mg triphenylphosphine (260 \u03bcmole), 64 mg 2,2\u2032-dipyridyldisulfide (290 \u03bcmole) and 40\u2009\u03bcL triethylamine (550 \u03bcmole) were added. After stirring overnight at room temperature, the mixture was precipitated in 10\u2009mL of a 400:250:30:1 mixture of acetone:diethylether:triethylamine:saturated solution of NaClO4 in acetone. The precipitate was pelleted by centrifugation (3000 rpm, 5 min) and washed twice with a 1:1 mixture of acetone:diethylether and once with pure diethylether. After decanting the solvent, the pellet was dried under vacuum, resuspended in deionized water and purified by high-performance liquid chromatography (HPLC) over a C18 column (Alltima C18 5\u00a0\u03bcm, Thermo Fisher, 250 \u00d7 10\u2009mm) with 25\u2009mM triethylammonium bicarbonate (TEAB) pH adjusted to 7.5 in 2% (v/v) acetonitrile for mobile phase A and acetonitrile for mobile phase B over a gradient beginning at 100% A and falling to 80% A over 20 min with a flow rate of 3\u2009mL/minute. The fraction containing the product was verified by electrospray ionization mass spectrometry (ESI/MS) in negative mode (m/z = 996), frozen in liquid nitrogen and lyophilized overnight to yield a white powder. The powder was dissolved in water and the concentration of the activated trimer was determined using a NanoDrop 2000c spectrophotometer (Thermo Fisher Scientific, Waltham, MA) and calculated assuming \u03b5260 = 34,170\u2009M\u22121 cm\u22121 29.\n\nMonomer stocks were adjusted to pH 7 before adding into the reaction mixture.\n\n### Primer extension reactions\n\nNonenzymatic RNA primer extension reactions exploring the effect of downstream nucleotides and oligonucleotides on 2-MeImpG addition were conducted under the following conditions: 200\u2009mM MgCl2, 200\u2009mM sodium N-cyclohexyl-2-aminoethanesulfonic acid (CHES) pH 9, 50\u2009mM monomer, 1\u2009mM trimer, 10\u2009\u03bcM primer and 11\u2009\u03bcM template. The primer sequence was the same for all reactions (6-carboxyfluorescein (FAM)-5\u2032-GAC UGG-3\u2032 for kinetics, cyanine 3 (Cy3)-5\u2032-GCG UAG ACU GAC UGG-3\u2032 for gels). The templates used in Figure 1 had the following sequences:\n\n1)\u00a05\u2032-AAC CCC CCA GUC -3\u2032\n\n2) 5\u2032-G CUC CCA GUC -3\u2032\n\n3)5\u2032-AA CUC CCA GUC -3\u2032\n\nThe templates in Figure 1\u2014figure supplement 2 had the following sequences:\n\nFor GGG:\n\n5\u2032-AA CCC CCA GUC -3\u2032\n\nFor GCG:\n\n5\u2032-AA CGC CCA GUC -3\u2032\n\nFor GAG:\n\n5\u2032-AA CUC CCA GUC -3\u2032\n\nFor AGC:\n\n5\u2032-GCU GCU GCU GCU CCA GUC AGU CUA CGC-3\u2032\n\nThe templates in Figure 2 had the following sequences:\n\nPart a lanes 1\u20134:\n\n5\u2032-G CUC CCA GUC -3\u2032\n\nPart a lane 5:\n\n5\u2032-GCC UCC CAG UC -3\u2032\n\nPart b:\n\n5\u2032-GCU N CCA GUC -3\u2032\n\nThe templates in Figure 3 had the same sequences as Figure 2b.\n\nThe template in Figure 4 had the following sequence:\n\n5\u2032-CCC GCU ACC AGU C -3\u2032\n\nThe template in Figure 4\u2014figure supplement 1 had the following sequence:\n\n5'- GCU C GCU C GCU C GCU C CCAGUCAGUCUACGC -3'\n\nThe templates in Figure 5 had the following sequences:\n\nPart a:\n\n5\u2032-CCC GCU UCC AGU C -3\u2032\n\nPart b:\n\n5\u2032-AUC AAC CAG UC -3\u2032\n\nThe template in Figure 6 had the following sequence:\n\n5\u2032-biotin \u2013 AAC CCC GCG CCU CAU CAG CCA GUC -3\u2032\n\nThe template in Figure 6\u2014figure supplement 1 had the following sequence:\n\n5\u2032 - GCG CCU CAU CAG CCA GUC -3\u2032\n\nReaction progress was assessed by gel electrophoresis (20% acrylamide denaturing urea gel) after 10 min. Reaction rates were calculated by quantifying primer conversion to products using a Typhoon Scanner 9410 (GE Healthcare, Little Chalfont, Buckinghamshire, UK). Band intensities were quantified using ImageQuant TL software (GE Healthcare, Little Chalfont, Buckinghamshire, UK). The negative log of the fraction of unreacted primer was plotted against time, in hours. A linear regression was performed and the slope of the fit as plotted was reported as the pseudo-first order rate kobs.\n\nPrimer extension reactions exploring the effect of different monomers and different oligomers on the rate of polymerization were conducted under the following conditions: 100\u2009mM MgCl2, 200\u2009mM Tris-HCl pH 8, 25\u2009mM monomer, 1\u2009mM trimer, 10\u2009\u03bcM primer and 11\u2009\u03bcM template. The downstream helper oligomers were added in the following concentrations: 25\u2009mM 2-MeImpA and 1\u2009mM activated oligonuleotide (AG, AGC or AGGC). The reaction progress was assessed by gel electrophoresis (20% acrylamide denaturing urea gel) after 10 min. Reaction rates were calculated as above.\n\nPrimer extension reactions exploring the addition of multiple monomers and trimers in one reaction had the following conditions: 100\u2009mM MgCl2, 200\u2009mM Tris-HCl pH 8, 25\u2009mM monomers, 500\u2009\u03bcM 2-methylimidazole-activated AGC, CGG and GGG, 100\u2009\u03bcM activated GCG, 10\u2009\u03bcM primer and 11\u2009\u03bcM template. The reaction progress was assessed by gel electrophoresis (20% acrylamide denaturing urea gel) after 18\u2009hr.\n\n### Bead-immobilized reactions\n\n30\u2009\u03bcL of Dynabeads\u00a0MyOne\u00a0Streptavidin T1 (Invitrogen Dynal AS, Oslo, Norway) beads were prepared as specified by the manufacturer. Primer (Cy3 - 5\u2032- GCG UAG ACU GAC UGG - 3\u2032) and template (biotin - 5\u2032- AAC CCC GCG CCU CAU CAG CCA GUC AGC UCU ACG C - 3\u2032) were bound to the beads at 250\u2009\u03bcM and 275\u2009\u03bcM, respectively, in 2\u2009M NaCl, 1\u2009mM EDTA and 10\u2009mM Tris-HCl pH 7. Monomer additions were conducted under the following conditions: 100\u2009mM MgCl2, 200\u2009mM Tris-HCl pH 8, 25\u2009mM monomer and 2\u2009mM trimer. The beads were washed between steps in 2\u2009M NaCl, 1\u2009mM EDTA and 10\u2009mM Tris-HCl pH 7. For steps 2, 5 and 7, 50\u2009mM monomer and 4\u2009mM trimer were added. Each step was monitored by gel electrophoresis until it reached >75% yield. Steps varied in length from 30 min to 22\u2009hr; the total time required was 150\u2009hr.\n\n### Hammerhead ribozyme cleavage assay\n\n10% of the product of the bead-immobilized reactions was washed twice in 100\u2009\u03bcL water containing 0.01% (v/v) Tween 20. 174\u2009\u03bcM DNA complement was added in 0.01% (v/v) Tween 20 and the beads were incubated at 95\u00b0C for 1 min. The solution was removed from the beads and 2 units of DNaseI along with DNaseI buffer (NEB) were added. Finally, the reaction was incubated at room temperature with 200\u2009mM MgCl2, 200\u2009mM Tris-HCl pH 8 and 250 nM Cy5 labeled HH1 RNA (Cy5 - 5\u2032 - CGC GCC GAA ACA CCG UGU CCC AGU C - 3\u2032) for 20\u2009hr. The products of both the bead immobilized reactions and the hammerhead reaction were analyzed by gel electrophoresis (20% acrylamide denaturing urea gel).\n",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "4eebbc10-6bad-42be-90e3-f6e4e8575daa",
+      "submission_id": "3b5b9243-2f9e-4684-a887-07c376ea131d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Timothy W Nilsen, Case Western Reserve University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.17756.015](https://doi.org/10.7554/eLife.17756.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Catalysis of nonenzymatic template copying by activated oligonucleotides allows synthesis of an active RNA enzyme\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Timothy Nilsen, Reviewing Editor and John Kuriyan as the Senior Editor. The following individuals involved in review of your submission have agreed to reveal their identity: Gerald Joyce (Reviewer #2); Christopher Switzer (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nHere Szostak and coworkers describe a major advance in the non-enzymatic template-directed polymerization of RNA, achieving dramatically faster reaction rates and much broader sequence generality compared to what has been achieved over the past 40 years of investigation. The authors uncover and exploit a heretofore unrecognized aspect of the templated polymerization of nucleoside 5'-phospho-2-methylimidazolides, involving catalysis by the nucleotide at the +1 position relative to the reacting nucleotide. Remarkably, the same 2-methylimidazole moiety that is the leaving group on the reacting nucleotide also has a catalytic effect at the +1 position. Furthermore, this catalytic effect can be provided by an adjacent oligonucleotide that has the same modification, thereby ensuring template occupancy of the adjacent catalyst. Employing a set of trinucleotide catalysts that cover successive reading frames, it now is possible to add sequentially all four nucleotides in good yield. Furthermore, if the trinucleotide catalysts are provided sequentially rather than as a mixture, even longer sequences can be synthesized, including 12 nucleotides that constitute a portion of the hammerhead ribozyme.\n\nAll of the referees felt that this work was an important contribution to nucleic acid chemistry and origins of life research.\n\nDespite their enthusiasm all of the reviewers felt that the paper could be improved and each has spelled out a number of points that should be addressed via revision. In particular, all thought the statement in the manuscript that reacting nucleotides are the same for reactions 1 and 3 in Figure 1B,C needs to be addressed given that Figure 1C indicates the reacting nucleotides are different, G/G and G/A, respectively, and given that these experiments are together a key test of the \"hierarchical assembly model.\" Please address this point as well as the other comments as thoroughly as possible.\n\nReviewer #1:\n\nA long-standing question in origins research, and in the efforts to test/support the RNA World hypothesis specifically, is how RNA monomers (i.e., nucleotides) could have polymerized into polymeric RNA. This was the focus of the works of Orgel, Ferris, and several others and still remains unsatisfactorily solved. The current paper proposes a possible mechanism that partially addresses some of the chemical problems inherent to abiotic polymerization of nucleotides, namely that certain nucleotides (e.g., A and U) are recalcitrant towards non-enzymatic polymerization, and that in general such polymerization is slow, to the point of being ineffectual in the face of the back reaction (hydrolysis).\n\nHere, the authors provide data that nucleotide activation can serve not only the canonical activation role that provides the free energy for polymerization, but also a catalytic role in that \"downstream\" activating groups can actually boost the rates up \"upstream\" ligation (polyermization) reactions. Specifically, the authors show that helper activated trinucleotide oligomers are particularly effective in enhancing rates of polymerization. In the extreme, they show that an RNA of sufficient length to be a catalyst itself, i.e., a ribozyme, can be made using this methodology, albeit with some help.\n\nWhen I started reading the manuscript I immediately ran into a conceptual flaw that temporarily tempered my enthusiasm for the work. In the first paragraph of the Results, the authors use an (apparent) observation that, when activated with a specific \"high-energy\" leaving group (2-methylimidizole), the efficiency of mononucleotide polymerization is greater than that of oligonucleotide ligation. This would be somewhat unexpected because of several reasons including a perceived enhanced stability of the oligo on the template strand during the ligation reaction, compared to the stability of a single nucleotide on the template strand. But to show this, the authors compare the reactions #1 and #3 depicted in Figure 1C. The accompanying text states that, \"[\u2026]the reacting nucleotides are the same in both cases: a G at the 3\u00b4 end of the primer and a G monomer or a G at the 5\u00b4 end of an oligonucleotide.\" But this is not the case: the oligomer in reaction #3 has an A on its 5\u00b4 end. This is particularly problematic because the authors make a big point about the lowered ability of A nucleotides to participate in ligation (or polymerization; the chemistry is the same) reactions compared to G. At first I thought it might be just a typo, but the same 5\u00b4-A appears in all of the subsequent helper trinucleotide oligomers. Unless I am reading this wrong, it appears as though the rationale for the rest of the project was thus based on a flawed premise.\n\nNevertheless, the balance of the manuscript did serve to convince me of the main result: that the activating group, and especially when placed on the 5\u00b4 ends of helper trinucleotides, can greatly facilitate monomer polymerization. This is indeed a significant result that should ultimately be meritorious of publication. I am always troubled by the artificiality of such imidazole-based activating groups, and thus I would ask the authors to comment on this more explicitly, and perhaps try other such activating groups. Would this work with a triphosphate or even with a 2\u00b4-3\u00b4-cyclic phosphate, the later has a clear prebiotic route to its synthesis as shown by Sutherland?\n\nObviously the flaw mentioned above about the G vs. A should also be addressed; this could be done for example by reformulating the rationale for the study (or showing me how I misunderstand the Figure/text correspondence).\n\nOn another point, the mechanism suggested by these data is reminiscent of \"substrate assisted catalysis\", which at one point was posited to be involved in the mechanism of RNA-directed peptide-bond formation in the PTC of the ribosome. This could be discussed.\n\nThe fact that a trinucleotide emerges as the best catalyst (and in fact I disagree with the characterization in the third paragraph of Results that the reaction rate stays \"constant\" with the tetranucleotide; from Figure 2A there appears to be a significant drop) is intriguing. Could this be related to the thermodynamic \"sweet spot\" for iterative information transfer, as seen in the 3-bp codon-anticodon interaction?\n\nI wonder what the effect of hot/cold or wet/dry cycles would have on polymerization as assisted in the proposed scheme.\n\nMy last major point is that the authors, in showing these data and proposing this chemistry, miss an opportunity to note that perhaps the elusive RNA-dependent RNA polymerase ribozyme (RNA replicase ribozyme) never existed. With substrate-assisted non-enzymatic template-directed RNA replication, one could envisage moving from a abiotic RNA monomer world to a protein world in a manner that obviates the need for an RNA replicase ribozyme.\n\nReviewer #2:\n\nPrywes et al. describe a major advance in the non-enzymatic template-directed polymerization of RNA, achieving dramatically faster reaction rates and much broader sequence generality compared to what has been achieved over the past 40 years of investigation. The authors uncover and exploit a heretofore unrecognized aspect of the templated polymerization of nucleoside 5'-phospho-2-methylimidazolides, involving catalysis by the nucleotide at the +1 position relative to the reacting nucleotide. Remarkably, the same 2-methylimidazole moiety that is the leaving group on the reacting nucleotide also has a catalytic effect at the +1 position. Furthermore, this catalytic effect can be provided by an adjacent oligonucleotide that has the same modification, thereby ensuring template occupancy of the adjacent catalyst. Employing a set of trinucleotide catalysts that cover successive reading frames, it now is possible to add sequentially all four nucleotides in good yield. Furthermore, if the trinucleotide catalysts are provided sequentially rather than as a mixture, even longer sequences can be synthesized, including 12 nucleotides that constitute a portion of the hammerhead ribozyme.\n\nThis manuscript is an important contribution to nucleic acid chemistry and origins-of-life research. It will have appeal to a broad audience of chemists and biologist who are interested in the origin of genetic replication systems. The manuscript is highly suitable for publication in eLife, subject to the following modifications.\n\n1) In the first paragraph of the Results. A reference should be added to the 1999 paper by James and Ellington (Origins Life Evol. Biosph. 29:375-390), which first described a prebiotic scenario for template copying based on ligation of short oligonucleotides.\n\n2) In the first paragraph of the Results. The description of the comparative addition of either a mono- or oligonucleotide to a template-bound primer is confusing because it states that the reacting nucleotides are the same, but the referenced reactions in Figure 1C involve either addition of G (reaction 1) or ligation of AGC (reaction 3). Presumably the ligation reaction involved addition of GCG, but was omitted from the figure.\n\n3) At the end of the Results. It is an exaggeration to say that \"an active ribozyme was synthesized nonenzymatically\". Of the 37 nucleotides that constitute the catalytic complex, only 12 were synthesized non-enzymatically, with 6 provided by the primer and 19 contained within the substrate portion of the complex. Although Wochner et al. (Science 332:209-212, 2011) used similar artifice to \"synthesize\" a hammerhead ribozyme using a polymerase ribozyme, the present manuscript should strive for a higher standard. The title of the manuscript is similarly misleading and should be changed from \"[\u2026]Allows Synthesis of an Active RNA Enzyme\" to something like \"[\u2026]Allows Synthesis of a broad range of RNA Sequences\".\n\n4) In the second paragraph of the Discussion. Further explanation is needed regarding what is meant by \"the lack of a leaving group one base downstream of the site of primer extension\". The meaning is clear to a specialist, but a non-specialist needs to be reminded that the catalytic 2-methylimidazole is not present at the second nucleotide position of the helper trinucleotide (and in any case would not be a \"leaving group\") because this is an unmodified phosphodiester within the 5\u00b4-activated trinucleotide.\n\n5) In the second paragraph of the Discussion. The authors are being too coy when referring to the possibility of an imidazolium intermediate that is the basis for the catalytic effect. If they have evidence for such an intermediate in another study, then it should be referred to as \"unpublished data\" or \"manuscript in press\", as appropriate.\n\n6) In the third paragraph of the Discussion. It is an exaggeration to say that the non-enzymatic polymerization reaction reported here compares favorably in terms of efficiency with the tC19Z polymerase ribozyme reported by Wochner et al. (Science 332:209-212, 2011). While the rates are comparable, the efficiencies are not even close, especially in batch reactions where Prywes et al. generate no more than 7mers and Wochner et al. generate products (albeit of an especially favorable sequence) of more than 90 nucleotides.\n\n7) Figure 3B. The heat map depiction of fidelities does not do justice to the data, which would be better represented as actual numbers.\n\n8) Figure 4. The lower right panel of the figure is confusing. Presumably it corresponds to the data shown in Figure 4C, although this is not clear from the figure legend. Adding to the confusion are the lack of labels along the vertical axis of the gel, the triangle presumably representing increasing time, and the non-standard labeling convention. The figure should be redone more thoughtfully.\n\nReviewer #3:\n\nThe manuscript reports nonenzymatic template directed copying reactions of activated monomers promoted by activated oligonucleotides. The system described enabled the template directed synthesis of an active hammerhead ribozyme. This work is the first to report the nonenzymatic synthesis of a catalytic RNA using activated monomers. Prebiotic chemists have sought the means to simply and robustly copy all four RNA monomers for decades, with mostly limited success, for A and U in particular. Moreover, it has become increasingly apparent that the limitations imposed by A and U are nuanced, extending beyond simply diminished binding affinities. In keeping with the subtle nature of these systems, the authors have taken a known, but poorly understood, feature of 2-Me-imidazolide activated nucleoside phosphate monomers noted by Orgel, and applied it in a heretofore unanticipated manner. The authors surprising initially discovered that the rate of 2-MeImpN oligomerization exceeded the rate of activated trinucleotide ligation by nearly 100-fold, despite the greater template binding affinity of the trimer. On further investigation it became evident that consecutive 2-MeImp groups in subsequent monomers led to the enhanced rate, and, ultimately, the unusual discovery that an 2-MeImp activated trinucleotide enhanced the rate of monomer addition due to the neighboring 2-MeImp group. Thus, while Orgel had earlier shown that at least two consecutive 2-MeImpN monomers were required for efficient template directed synthesis, it was not possible to anticipate the effectiveness of the presently reported system for a variety of reasons, not least because it involves an activated trinucleotide rather than activated monomers, and historically there appeared little hope for efficient synthesis with A and U, consecutive 2-MeImp activating groups notwithstanding. The prospects of simplifying the reported system even further in future work are very exciting for the field.\n\nIntroduction, first and second paragraphs. It is awkward to offer template immobilization as a shortcoming, but then promote its use shortly afterwards, even though template immobilization in the first instance is one of several shortcomings.\n\nResults, first paragraph. This sentence states the reacting nucleotides are the same in both reactions 1 and 3 in Figure 1B by including a G monomer or a G at the 5'-end of an oligonucleotide. However, the oligonucleotide shown for reaction 3 has an A at the 5'-end.\n\nResults, fifth paragraph. It would be extremely interesting to also know what effect the 2-thio U or rT has on the rate of the G:(s)U/rT mismatch reaction.\n\nResults, last paragraph. This should reference Figure 6.\n\nDiscussion, second paragraph. In Wu and Orgel, 1992, Orgel notes in the Discussion that simple steric effects are unlikely, suggesting instead that the neighboring 2-MeIm might act as an acid/base catalyst. I believe this section should be revised to reflect this fact. Nevertheless, the suggestion by the authors of covalent bond formation is new and interesting.\n",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "64dc6b0c-ba2b-4f33-9902-4a92b1810d6a",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C1",
+      "claim": "Nonenzymatic replication of RNA is a potential transitional stage between the prebiotic chemistry of nucleotide synthesis and the canonical RNA world in which RNA enzymes (ribozymes) catalyze replication of the RNA genomes of primordial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The nonenzymatic replication of RNA is a potential transitional stage between the prebiotic chemistry of nucleotide synthesis and the canonical RNA world in which RNA enzymes (ribozymes) catalyze replication of the RNA genomes of primordial cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by established scientific knowledge about the RNA world hypothesis and the role of nonenzymatic replication as a transitional mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "e8a4e3e0-2856-4862-934f-ffeaff5c986d",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C2",
+      "claim": "The plausibility of nonenzymatic RNA replication is undercut by the lack of a protocell-compatible chemical system capable of copying RNA templates containing all four nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the plausibility of nonenzymatic RNA replication is undercut by the lack of a protocell-compatible chemical system capable of copying RNA templates containing all four nucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the state of knowledge in the field prior to this study, representing a known limitation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "de9568c6-c818-4c7d-a224-343fff61066e",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C3",
+      "claim": "Short 5\u2032-activated oligonucleotides act as catalysts that accelerate primer extension.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that short 5\u2032-activated oligonucleotides act as catalysts that accelerate primer extension, and allow for the one-pot copying of mixed sequence RNA templates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, particularly in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "1eab3d48-2b6e-4010-a74d-856d0aee8315",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C4",
+      "claim": "Short 5\u2032-activated oligonucleotides allow for the one-pot copying of mixed sequence RNA templates.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that short 5\u2032-activated oligonucleotides act as catalysts that accelerate primer extension, and allow for the one-pot copying of mixed sequence RNA templates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "286ce581-65ef-4bbc-a9d3-057d149a5d57",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C5",
+      "claim": "The fidelity of primer extension products resulting from the sequential addition of activated monomers, when catalyzed by activated oligomers, is sufficient to sustain a genome long enough to encode active ribozymes.",
+      "claim_type": "EXPLICIT",
+      "source": "The fidelity of the primer extension products resulting from the sequential addition of activated monomers, when catalyzed by activated oligomers, is sufficient to sustain a genome long enough to encode active ribozymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by fidelity measurements presented in Figure 3 and the calculation that 98% fidelity allows for effective genome sizes of 50 nucleotides.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "134b0595-4aa5-424e-9642-76f6d9e52181",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C6",
+      "claim": "By immobilizing the primer and template on a bead and adding individual monomers in sequence, a significant part of an active hammerhead ribozyme can be synthesized.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, by immobilizing the primer and template on a bead and adding individual monomers in sequence, we synthesize a significant part of an active hammerhead ribozyme, forging a link between nonenzymatic polymerization and the RNA world.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "9e903b73-0563-4a6f-9601-919a7784e20f",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C7",
+      "claim": "The nonenzymatic copying of sequences containing all four nucleotides has not yet been possible for a number of reasons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the nonenzymatic copying of sequences containing all four nucleotides has not yet been possible for a number of reasons (Szostak, 2012), most notably the slow rate of primer extension with adenosine and uridine monomers (Joyce et al., 1987; Wu and Orgel, 1992b; Deck et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "62928c65-698c-43d8-a0ba-8a9e63e42da3",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C8",
+      "claim": "The slow rate of primer extension with adenosine and uridine monomers is the most notable reason why nonenzymatic copying of sequences containing all four nucleotides has not been possible.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the nonenzymatic copying of sequences containing all four nucleotides has not yet been possible for a number of reasons (Szostak, 2012), most notably the slow rate of primer extension with adenosine and uridine monomers (Joyce et al., 1987; Wu and Orgel, 1992b; Deck et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "d9df4f6d-b949-4393-ade8-96e765b29f9c",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C9",
+      "claim": "Two adjacent A or U residues in the template will stop polymerization entirely under normal conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, two adjacent A or U residues in the template will stop polymerization entirely (Wu and Orgel, 1992b) under normal conditions; even partial copying requires extreme conditions, such as the eutectic phase of frozen samples (Vogel and Richert, 2007), which are not compatible with replication within protocells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "671a1c08-dc81-4f82-98ed-496eee49f2f9",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C10",
+      "claim": "Partial copying of templates with adjacent A or U residues requires extreme conditions, such as the eutectic phase of frozen samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, two adjacent A or U residues in the template will stop polymerization entirely (Wu and Orgel, 1992b) under normal conditions; even partial copying requires extreme conditions, such as the eutectic phase of frozen samples (Vogel and Richert, 2007), which are not compatible with replication within protocells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "3c49edba-b298-453f-b342-54707332f584",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C11",
+      "claim": "The eutectic phase of frozen samples is not compatible with replication within protocells.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, two adjacent A or U residues in the template will stop polymerization entirely (Wu and Orgel, 1992b) under normal conditions; even partial copying requires extreme conditions, such as the eutectic phase of frozen samples (Vogel and Richert, 2007), which are not compatible with replication within protocells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference about the incompatibility of extreme conditions with protocell environments.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "82670970-6889-4354-a244-952fcad16fed",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C12",
+      "claim": "Extensive optimization of reaction conditions improved the rate and regiospecificity of polymerization for G and C but not A and U.",
+      "claim_type": "EXPLICIT",
+      "source": "Extensive optimization of reaction conditions with the aim of improving the rate of primer extension with all four monomers, including varying the choice of divalent cation and leaving group, improved the rate and regiospecificity of polymerization for G and C but not A and U (Wu and Orgel, 1992b, c; Deck et al., 2011; Inoue and Orgel, 1981; Hagenbuch et al., 2005; Lohrmann et al., 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "949243fd-aa58-4f5d-a519-71ff518aa272",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C13",
+      "claim": "Low A and U monomer affinity for the template is not the only reason for the slow rate of primer extension with A and U.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent biophysical studies suggest that low A and U monomer affinity for the template is not the only reason for this problem (Szostak, 2012; Izgu et al., 2015) since A binds only three-fold more weakly than G, but primer extension with A is at least 100-fold slower (Joyce et al., 1987; Wu and Orgel, 1992b; Deck et al., 2011; Heuberger et al., 2015) than with G.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature and biophysical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "d27c5ba7-24bf-429f-b1b9-363506e2cdbb",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C14",
+      "claim": "A binds only three-fold more weakly than G to the template.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent biophysical studies suggest that low A and U monomer affinity for the template is not the only reason for this problem (Szostak, 2012; Izgu et al., 2015) since A binds only three-fold more weakly than G, but primer extension with A is at least 100-fold slower (Joyce et al., 1987; Wu and Orgel, 1992b; Deck et al., 2011; Heuberger et al., 2015) than with G.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous biophysical studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "91c00b62-5004-4831-b065-0820fc192989",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C15",
+      "claim": "Primer extension with A is at least 100-fold slower than with G.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent biophysical studies suggest that low A and U monomer affinity for the template is not the only reason for this problem (Szostak, 2012; Izgu et al., 2015) since A binds only three-fold more weakly than G, but primer extension with A is at least 100-fold slower (Joyce et al., 1987; Wu and Orgel, 1992b; Deck et al., 2011; Heuberger et al., 2015) than with G.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "2ae28142-1507-4b4d-b736-72f0eabae0ad",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C16",
+      "claim": "Downstream helper oligonucleotides provide incoming monomers with an additional binding surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Deck et al. have shown that downstream helper oligonucleotides (Deck et al., 2011) that provide incoming monomers with an additional binding surface improve the binding of A and U monomers, but the underlying difference in rates remains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work by Deck et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "dafa0d5e-04ff-4907-9e5c-db7ae55335d9",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C17",
+      "claim": "Downstream helper oligonucleotides improve the binding of A and U monomers, but the underlying difference in rates remains.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Deck et al. have shown that downstream helper oligonucleotides (Deck et al., 2011) that provide incoming monomers with an additional binding surface improve the binding of A and U monomers, but the underlying difference in rates remains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work by Deck et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "6c511b8a-d888-46ef-9443-197248e26d80",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C18",
+      "claim": "The use of helper oligonucleotides allowed primer extension to proceed on a template containing all four bases over the course of several weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of helper oligonucleotides allowed primer extension to proceed on a template containing all four bases over the course of several weeks, where previously such templates could not be copied at all.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the previous discussion of Deck et al.'s work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "420302a3-e46a-4137-9fd5-25a65d28b094",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C19",
+      "claim": "The presence of a leaving group at the 5\u2032 end of a helper oligonucleotide can be a source of significant catalysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that the presence of a leaving group at the 5\u2032 end of a helper oligonucleotide can be a source of significant catalysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "7fad72fe-5f0d-4eee-8873-be97631548eb",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C20",
+      "claim": "Activated helper oligonucleotides facilitate the addition of all four RNA monomers individually and in sequence in a single reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Activated helper oligonucleotides facilitate the addition of all four RNA monomers individually and in sequence in a single reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "e6c5cc17-0526-471e-9d68-ca8a04a37874",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C21",
+      "claim": "Sequential addition of activated monomers and helper oligonucleotides successfully promoted the synthesis of a significant part of an active hammerhead ribozyme when a template is immobilized by attachment to a bead.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, when a template is immobilized by attachment to a bead, sequential addition of activated monomers and helper oligonucleotides successfully promoted the synthesis of a significant part of an active hammerhead ribozyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "b42e4c9a-3ba2-45b0-9dcb-60aeff443785",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C22",
+      "claim": "Nucleotides activated with 2-methylimidzole on the 5\u2032-phosphate have been used extensively to model nonenzymatic template copying.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleotides activated with 2-methylimidzole on the 5\u2032-phosphate have been used extensively to model nonenzymatic template copying (Deck et al., 2011; Wu and Orgel, 1992c), irrespective of their prebiotic plausibility, and were used in all experiments reported here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "0d13af4f-f8cd-4efd-9d95-3141510f402b",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C23",
+      "claim": "Nucleotides activated with 2-methylimidzole on the 5\u2032-phosphate were used in all experiments reported in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Nucleotides activated with 2-methylimidzole on the 5\u2032-phosphate have been used extensively to model nonenzymatic template copying (Deck et al., 2011; Wu and Orgel, 1992c), irrespective of their prebiotic plausibility, and were used in all experiments reported here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the experiments conducted in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "62f7319b-ae39-437e-9173-929c0239a328",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C24",
+      "claim": "The primer extension reaction proceeded almost 100 times more rapidly than the ligation reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, the primer extension reaction proceeded almost 100 times more rapidly than the ligation reaction (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "92355a08-5d4d-4f24-86a0-b24122e18dcc",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C25",
+      "claim": "The fully base-paired nicked duplex should be largely in the optimal A-type conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "We expected the ligation reaction to be faster, because the oligonucleotides to be ligated are both stably bound to the template, and because the fully base-paired nicked duplex should be largely in the optimal A-type conformation (Kozlov and Orgel, 2000), whereas the primer/template complex with template bound monomers would be significantly more disordered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work and represents established knowledge about RNA structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "5580751e-4673-431e-be6c-d784b433a44b",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C26",
+      "claim": "The primer/template complex with template bound monomers would be significantly more disordered than a fully base-paired nicked duplex.",
+      "claim_type": "EXPLICIT",
+      "source": "We expected the ligation reaction to be faster, because the oligonucleotides to be ligated are both stably bound to the template, and because the fully base-paired nicked duplex should be largely in the optimal A-type conformation (Kozlov and Orgel, 2000), whereas the primer/template complex with template bound monomers would be significantly more disordered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference about the structural properties of different RNA complexes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "14629d7b-1f88-4fdb-bd80-7e24733c7a0e",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C27",
+      "claim": "One of the major differences between monomer addition and ligation is the presence of multiple adjacent 5\u2032-activated nucleotides downstream of the primer in the case of monomer addition, but not ligation.",
+      "claim_type": "EXPLICIT",
+      "source": "In our search for an explanation for this unexpected observation, we reasoned that one of the major differences between the two scenarios was the presence of multiple adjacent 5\u2032-activated nucleotides downstream of the primer in the case of monomer addition, but not ligation, where there is only a single activated nucleotide.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on logical inference from the experimental design.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "2bdfdecb-7b3e-4f64-add1-74d43c81a63e",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C28",
+      "claim": "Efficient primer extension requires the presence of two activated monomers adjacent to the primer.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Orgel et al. showed over 20 years ago that efficient primer extension requires the presence of two activated monomers adjacent to the primer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by reference to previous work by Orgel et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "c978dbf0-be1e-48e0-87d0-48476e136407",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C29",
+      "claim": "The reaction is fastest when both monomers are activated with 2-methylimidazole instead of either or both being activated with imidazole.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the reaction is fastest when both monomers are activated with 2-methylimidazole instead of either or both being activated with imidazole (Wu and Orgel, 1992a), suggesting a possible catalytic role for a physical interaction of the leaving groups of adjacent monomers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work by Wu and Orgel.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "6e1a85e4-9a5f-410b-9edc-cce193e68a23",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C30",
+      "claim": "There is a possible catalytic role for a physical interaction of the leaving groups of adjacent monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, the reaction is fastest when both monomers are activated with 2-methylimidazole instead of either or both being activated with imidazole (Wu and Orgel, 1992a), suggesting a possible catalytic role for a physical interaction of the leaving groups of adjacent monomers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on inference from the observation about 2-methylimidazole activation.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "5e73544a-cda4-4cab-aaa4-fb31fa4dc352",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C31",
+      "claim": "Primer extension by addition of a single monomer, in the absence of any additional downstream mono- or oligo-nucleotides, was very slow and comparable in rate to the ligation of the primer to a 5\u2032-activated GAG trinucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "Primer extension by addition of a single monomer, in the absence of any additional downstream mono- or oligo-nucleotides, was very slow and comparable in rate to the ligation of the primer to a 5\u2032-activated GAG trinucleotide (Figure 1c\u2013f, reactions 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1c-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "4ae491b9-a28b-4992-9ac6-b86c9f93de2b",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C32",
+      "claim": "The binding of an unactivated AGC trimer, with either a 5\u2032 hydroxyl or a 5\u2032 phosphate, downstream of an activated G monomer conferred only a modest increase in the rate of addition of the G monomer to the primer.",
+      "claim_type": "EXPLICIT",
+      "source": "The binding of an unactivated AGC trimer, with either a 5\u2032 hydroxyl or a 5\u2032 phosphate, downstream of an activated G monomer conferred only a modest increase in the rate of addition of the G monomer to the primer (Figure 1c\u2013f, reactions 4 and 5), consistent with previous reports of unactivated downstream 'helper' oligonucleotides (Deck et al., 2011; Jauker et al., 2015; Kervio et al., 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1c-f and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "db3e3cc6-644f-471e-b398-95c2fd5532fb",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C33",
+      "claim": "Unactivated helper oligonucleotides are thought to act largely by increasing monomer affinity to the primer/template complex by providing an additional base-stacking surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Such helper oligonucleotides are thought to act largely by increasing monomer affinity to the primer/template complex by providing an additional base-stacking surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents established knowledge about the mechanism of helper oligonucleotides.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "73428372-4fb0-4e53-9e7b-48efc763cec3",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C34",
+      "claim": "When the AGC trimer was activated as a 5\u2032-phosphoro-2-methylimidazolide and used as a downstream helper oligonucleotide, the rate of primer extension was increased by over two orders of magnitude compared to reactions with unactivated trimers.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when the same AGC trimer was activated as a 5\u2032-phosphoro-2-methylimidazolide and used as a downstream helper oligonucleotide, the rate of primer extension (by addition of a G monomer) was increased by over two orders of magnitude (Figure 1c\u2013f, reaction 6) compared to reactions with unactivated trimers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1c-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "e2c90203-3f5e-4da3-bd92-744d4062326f",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C35",
+      "claim": "The rate of primer extension with a single G in the presence of an activated downstream trinucleotide was about twice as fast as the rate when the primer was followed by up to four sequential activated G monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of primer extension with a single G in the presence of an activated downstream trinucleotide was about twice as fast as the rate when the primer was followed by up to four sequential activated G monomers (Figure 1c\u2013f, reaction 1 and 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1c-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "adf29ef5-0a72-43be-9fe6-7503aefb430e",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C36",
+      "claim": "At saturating concentrations of each of the oligonucleotides, the rate of primer extension improved as the length of the helper increased from mononucleotide to dinucleotide to trinucleotide, and then stayed approximately constant with the tetranucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "At saturating concentrations (Figure 2\u2014figure supplement 1) of each of the oligonucleotides, the rate of primer extension improved as the length of the helper increased from mononucleotide to dinucleotide to trinucleotide, and then stayed approximately constant with the tetranucleotide (Figure 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2a and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "323c7b8c-97ea-4deb-82a3-6db5f3420e8c",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C37",
+      "claim": "At subsaturating concentrations of helper oligonucleotide, the rate of the primer extension reaction increased with increasing concentrations of di- or tri-nucleotide helper.",
+      "claim_type": "EXPLICIT",
+      "source": "At subsaturating concentrations of helper oligonucleotide, the rate of the primer extension reaction increased with increasing concentrations of di- or tri-nucleotide helper (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "9d9f9738-c64a-4ec2-84ad-7d1afe4764fe",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C38",
+      "claim": "The maximum rate of the trimer-assisted reaction was significantly faster than that of the dimer-assisted reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the maximum rate of the trimer-assisted reaction was significantly faster than that of the dimer-assisted reaction, we proceeded with trimers as the downstream helper oligonucleotides for the remainder of this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "093a8d62-7708-42e5-aa9a-8ef2fffbba87",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C39",
+      "claim": "The rate of primer extension increased by at least two orders of magnitude for all four monomers (A, G, C and U) when assisted by a downstream 2-methylimidazole-activated AGC trimer compared to reactions without any helper oligonucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "In each case, the rate of primer extension increased by at least two orders of magnitude compared to the corresponding reactions without any helper oligonucleotides (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "485d715b-97d0-4eba-81a6-5784f2248c62",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C40",
+      "claim": "The rate of primer extension with A and U monomers was previously too slow to measure, conservatively estimated to be at least three orders of magnitude slower than primer extension with G or C monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, whereas the rate of primer extension with A and U monomers was previously too slow to measure (Wu and Orgel, 1992b; Heuberger et al., 2015) \u2013 conservatively estimated to be at least three orders of magnitude slower than primer extension with G or C monomers \u2013 the difference in polymerization rates was reduced to roughly one order of magnitude when assisted by downstream activated trimers (Figure 2b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "64c0cea6-198d-4fb8-8dbf-694c3b8a651e",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C41",
+      "claim": "The difference in polymerization rates between A/U and G/C monomers was reduced to roughly one order of magnitude when assisted by downstream activated trimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, whereas the rate of primer extension with A and U monomers was previously too slow to measure (Wu and Orgel, 1992b; Heuberger et al., 2015) \u2013 conservatively estimated to be at least three orders of magnitude slower than primer extension with G or C monomers \u2013 the difference in polymerization rates was reduced to roughly one order of magnitude when assisted by downstream activated trimers (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "8464dde9-4ac3-47e8-bfd8-fc99b6e884be",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C42",
+      "claim": "The overall fidelity of trimer-assisted polymerization is 98%.",
+      "claim_type": "EXPLICIT",
+      "source": "By averaging the fidelities of the four templates we found the overall fidelity of trimer-assisted polymerization to be 98%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "c90beb13-7324-44b8-b344-1bad4c5d147b",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C43",
+      "claim": "Assuming an error threshold of one mutation per genome, a fidelity of 98% allows for effective genome sizes of 50 nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming an error threshold of one mutation per genome (Eigen, 1971), this value of fidelity allows for effective genome sizes of 50 nucleotides, long enough to produce functional ribozymes (Ferr\u00e9-D'Amar\u00e9 and Scott, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on a calculation using the measured fidelity and citations to previous work on error thresholds and ribozyme sizes.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "58502818-0a56-4b70-8939-7a8b0090a3cc",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C44",
+      "claim": "Genome sizes of 50 nucleotides are long enough to produce functional ribozymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming an error threshold of one mutation per genome (Eigen, 1971), this value of fidelity allows for effective genome sizes of 50 nucleotides, long enough to produce functional ribozymes (Ferr\u00e9-D'Amar\u00e9 and Scott, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work on ribozyme sizes.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "24bdafa4-bdda-4248-b69e-736df1e288a0",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C45",
+      "claim": "The fastest mismatch reaction was primer extension by G during copying of a template U, which was approximately 5% as fast as primer extension with A on the same template.",
+      "claim_type": "EXPLICIT",
+      "source": "The fastest mismatch reaction was primer extension by G during copying of a template U, which was approximately 5% as fast as primer extension with A on the same template (Figure 3a, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3a and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "576a13f8-bc16-4d95-9c17-a3ff1e139cce",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C46",
+      "claim": "The G:U mismatch is likely due to the formation of a G:U wobble base pair.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely due to the formation of a G:U wobble base pair (Heuberger et al., 2015), and is consistent with previous studies of nonenzymatic primer extension reactions (Rajamani et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference supported by citations to previous literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "8c234cbf-267c-4a8a-86eb-3771af07f586",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C47",
+      "claim": "All mismatches other than G:U were at least two orders of magnitude slower than their matched counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "All other mismatches were at least two orders of magnitude slower than their matched counterparts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "15d441f1-1f35-43d9-96e7-d587dd80dd04",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C48",
+      "claim": "Replacing the canonical U monomer with 2-thiouridine and 2-thioribothymine improved the polymerization rates by approximately one order of magnitude.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested the effect of replacing the canonical U monomer with 2-thiouridine and 2-thioribothymine on the polymerization rate and found, in line with previous reports (Heuberger et al., 2015), that this sulfur substitution improved the rates by approximately one order of magnitude (Figure 3b), bringing the rate of primer extension closer to the rates of G and C addition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3b and a citation to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "b3329b23-9a63-44a9-ab91-b3cb568259ff",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C49",
+      "claim": "Sulfur substitution in U monomers brings the rate of primer extension closer to the rates of G and C addition.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested the effect of replacing the canonical U monomer with 2-thiouridine and 2-thioribothymine on the polymerization rate and found, in line with previous reports (Heuberger et al., 2015), that this sulfur substitution improved the rates by approximately one order of magnitude (Figure 3b), bringing the rate of primer extension closer to the rates of G and C addition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "18e2d2f7-9e0f-4b2c-a4b7-25265a3b0596",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C50",
+      "claim": "After a downstream activated trimer catalyzes the addition of the first monomer to the primer, the helper trimer must dissociate to allow for the binding of the next monomer-trimer pair.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to iterate the process of trimer assisted monomer addition, after a downstream activated trimer catalyzes the addition of the first monomer to the primer, the helper trimer must dissociate to allow for the binding of the next monomer-trimer pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on logical inference about the mechanism of iterative primer extension.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "35c5c1e7-9180-4c08-91a8-6417e2a42a78",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C51",
+      "claim": "In the absence of activated trimers, almost no primer extension was observed even though all four monomers were present.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of activated trimers, we observed almost no primer extension (lane 1 Figure 4b); even though all four monomers were present, their combined rate of addition was not measurable.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "380a0ab2-6926-4702-8209-24fead924f0b",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C52",
+      "claim": "Adding just the first helper trimer resulted in rapid addition of the first monomer (C) to the primer, followed by slow addition of the first trimer (AGC) to the growing primer.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding just the first helper trimer resulted in rapid addition of the first monomer (C) to the primer, followed by slow addition of the first trimer (AGC) to the growing primer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "e528cbb4-9698-4a06-97d0-5f8c7274fbe6",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C53",
+      "claim": "Adding two, three or four trimers together resulted in the generation of primers extended by two, three or four monomers respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, adding two, three or four trimers together resulted in the generation of primers extended by two, three or four monomers respectively (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "8a98907b-7982-46ac-a3ec-159af7436e55",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C54",
+      "claim": "Reactions with all four trimers converted primer into a product with four sequentially added monomers with an ~80% yield after 16 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "These reactions converted primer into a product with four sequentially added monomers with an ~80% yield after 16 hr (Figure 4c,d); single monomer addition reactions reached >95% yield after only 10 min (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4c,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "6ea9a0a6-8907-458e-b269-b2b9ffebc535",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C55",
+      "claim": "Single monomer addition reactions reached >95% yield after only 10 min.",
+      "claim_type": "EXPLICIT",
+      "source": "These reactions converted primer into a product with four sequentially added monomers with an ~80% yield after 16 hr (Figure 4c,d); single monomer addition reactions reached >95% yield after only 10 min (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "47d3baf2-1882-4019-9008-bc39a5f634cd",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C56",
+      "claim": "The difference between the fast rates observed in the trimer-assisted addition of a single base and the slower rate of trimer-assisted polymerization of all four bases simultaneously may be due to the competition of trimers for overlapping binding sites on the template.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference between the fast rates observed in the trimer-assisted addition of a single base (Figure 2b) and the slower rate of trimer-assisted polymerization of all four bases simultaneously (Figure 4b) may be due to the competition of trimers for overlapping binding sites on the template.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on inference from the experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "386443f3-ec16-4b4d-9042-16e80c7adeb5",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C57",
+      "claim": "The hypothesis that competition of trimers for overlapping binding sites slows polymerization is supported by the decreased rate of trimer assisted primer extension with a single monomer in the presence of additional overlapping downstream trimers.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis is supported by the decreased rate of trimer assisted primer extension with a single monomer in the presence of additional overlapping downstream trimers (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "267faf71-30a0-4ef6-9ce2-1b1ae5e6e847",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C58",
+      "claim": "The copying of templates containing two consecutive A or U monomers is made possible by the use of activated helper oligonucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "The copying of templates containing two consecutive A or U monomers is also made possible by the use of activated helper oligonucleotides (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "c74571f4-cd1e-489a-a02a-d2b1ecd9d1e3",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C59",
+      "claim": "A high conversion rate (75\u201395%) was observed at each step of the sequential monomer addition on beads.",
+      "claim_type": "EXPLICIT",
+      "source": "Primer extension was monitored by gel electrophoresis. Despite the fact that no 2-thiouridine monomers were used (in order to protect the catalytic capacity of the ribozyme) a high conversion rate was observed at each step (75\u201395%) (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "d9c4a57b-c404-4dd2-963e-a2317bf7967c",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C60",
+      "claim": "The reaction durations required to achieve high conversion rates varied widely in the bead-based synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The reaction durations required to achieve these conversion rates varied widely, for example, the seventh monomer addition required 21 hr to reach 95% while the eighth addition reached the same level of conversion after just 30 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "3946f5d4-64d8-4440-b82d-8d01f234af95",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C61",
+      "claim": "Generally, G and C additions were much faster than A or U additions in the bead-based synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, G and C additions were much faster than A or U additions; the reason for the discrepancy between the rates of these reactions on beads and those in solution is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "eacb7876-b908-4d29-810d-d93d5c56589e",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C62",
+      "claim": "The reason for the discrepancy between the rates of reactions on beads and those in solution is unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, G and C additions were much faster than A or U additions; the reason for the discrepancy between the rates of these reactions on beads and those in solution is unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit statement of lack of knowledge about the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "6438fef9-cf1d-4dd6-bda0-4742bbe7ada3",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C63",
+      "claim": "Despite the crude reaction product with full-length HH2 comprising only 6% of the reaction products, the product mixture was able to function as a catalyst, with 50% ribozyme cleavage yield.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the fact that this was a crude reaction product, with full-length HH2 comprising only 6% of the reaction products, the product mixture was able to function as a catalyst, with 50% ribozyme cleavage yield, thus demonstrating that a significant portion of an active ribozyme was synthesized nonenzymatically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "8f18fb41-0c55-4cf7-b1b7-b4a47bcb0cda",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C64",
+      "claim": "A significant portion of an active ribozyme was synthesized nonenzymatically.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the fact that this was a crude reaction product, with full-length HH2 comprising only 6% of the reaction products, the product mixture was able to function as a catalyst, with 50% ribozyme cleavage yield, thus demonstrating that a significant portion of an active ribozyme was synthesized nonenzymatically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "70b566c8-969e-481f-906e-027ab67a70df",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C65",
+      "claim": "Short activated oligonucleotides are plausibly generated by either templated or untemplated monomer polymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Short, activated oligonucleotides \u2013 themselves plausibly generated by either templated or untemplated monomer polymerization \u2013 are efficient catalysts of high fidelity primer extension with all four RNA monomers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on reasoning about plausible prebiotic chemistry.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "e676e3a2-0df2-42e2-87af-c13c4bfb3461",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C66",
+      "claim": "Short activated oligonucleotides are efficient catalysts of high fidelity primer extension with all four RNA monomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Short, activated oligonucleotides \u2013 themselves plausibly generated by either templated or untemplated monomer polymerization \u2013 are efficient catalysts of high fidelity primer extension with all four RNA monomers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "99dc08f5-7288-4b19-bb21-11e540900811",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C67",
+      "claim": "Short activated oligonucleotides can play dual roles, acting either as catalysts of chain growth by monomer addition, or directly as replication intermediates, since they can also be incorporated into a growing chain by ligation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus short activated oligonucleotides can play dual roles, acting either as catalysts of chain growth by monomer addition, or directly as replication intermediates, since they can also be incorporated into a growing chain by ligation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental observations about both catalysis and ligation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "c026ef9b-479e-41d5-8f31-1bc857dbbe82",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C68",
+      "claim": "Template copying in a complex but realistic milieu containing both activated monomers and oligomers could occur via a hybrid process combining primer extension with monomers and oligonucleotide ligation.",
+      "claim_type": "EXPLICIT",
+      "source": "Template copying in a complex but realistic milieu containing both activated monomers and oligomers could therefore occur via a hybrid process combining primer extension with monomers and oligonucleotide ligation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on inference from the experimental results.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "0fa28b5d-6200-4279-838e-1c0661b2523e",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C69",
+      "claim": "The disparity in rates between the reactions catalyzed by activated vs. unactivated trimers indicates a key role for the leaving group downstream of the polymerizing monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "The disparity in rates between the reactions catalyzed by activated vs. unactivated trimers indicates a key role for the leaving group downstream of the polymerizing monomer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the experimental data comparing activated and unactivated trimers.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "0239a6a0-eb7a-478b-b1a7-b9ee04eec578",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C70",
+      "claim": "The slow rate of activated oligonucleotide ligation is explained by the lack of a leaving group one base downstream of the site of the primer extension reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "The slow rate of activated oligonucleotide ligation is also explained by the lack of a leaving group one base downstream of the site of the primer extension reaction: in this case the downstream position corresponds to the second monomer in the oligonucleotide which necessarily has no leaving group as it is linked to the upstream monomer by a phosphodiester linkage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the structural differences between ligation and polymerization reactions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "864b2d79-019e-4045-906f-d673ba453336",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C71",
+      "claim": "The nature of the interaction between the downstream leaving group and the reacting monomer remains unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "The nature of the interaction between the downstream leaving group and the reacting monomer remains unclear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explicit statement of lack of knowledge about the mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "dc2679d1-273b-4c6a-9591-9a4a120c41ea",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C72",
+      "claim": "It is possible that the downstream leaving group interacts attractively with the reacting leaving group, positioning it optimally for attack by the 3\u2032 hydroxyl of the primer.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that the downstream leaving group interacts attractively with the reacting leaving group, positioning it optimally for attack by the 3\u2032 hydroxyl of the primer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, proposing a possible mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "4927c11a-3da2-4a56-b622-77e488647215",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C73",
+      "claim": "Wu et al. observed that the interaction between leaving groups could be very sensitive to steric effects, such that 2-methylimidazole at the downstream position would facilitate polymerization much more effectively than imidazole.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed by Wu et al. (Wu and Orgel, 1992a) this interaction could be very sensitive to steric effects, such that 2-methylimidazole at the downstream position would facilitate polymerization much more effectively than imidazole, though the authors ultimately concluded that such subtle effects are not likely to adequately explain the strength of the interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work by Wu et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "3ef9f21a-b216-4f2b-ba23-c33c2bdf9de2",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C74",
+      "claim": "Wu et al. ultimately concluded that subtle steric effects are not likely to adequately explain the strength of the interaction between leaving groups.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed by Wu et al. (Wu and Orgel, 1992a) this interaction could be very sensitive to steric effects, such that 2-methylimidazole at the downstream position would facilitate polymerization much more effectively than imidazole, though the authors ultimately concluded that such subtle effects are not likely to adequately explain the strength of the interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work by Wu et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "f56079ea-ffbe-4d93-ad6a-1aec50ed4eaf",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C75",
+      "claim": "Wu et al. suggested that the catalytic effect could be due to acid-base catalysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Wu et al. (Wu and Orgel, 1992a) also suggested that the catalytic effect could be due to acid-base catalysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work by Wu et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "59a1d42f-0b1e-4805-9480-16e6f7a43abf",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C76",
+      "claim": "Another possibility is that the upstream leaving group forms a covalent bond with the phosphate of the downstream monomer, a reaction that is only possible if there is a leaving group on the downstream monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "Another possibility is that the upstream leaving group forms a covalent bond with the phosphate of the downstream monomer, a reaction that is only possible if there is a leaving group on the downstream monomer (Kervio et al., 2016 and T. Walton and J.W. Szostak, unpublished data).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, proposing a possible mechanism supported by a citation and unpublished data.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "8b84b878-5d0d-4355-bd9a-263adaaa161e",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C77",
+      "claim": "The covalent bond between leaving groups could form before the attack of the 3\u2032 hydroxyl of the primer, creating an imidazolium intermediate, or in a concerted reaction where the leaving group of the upstream monomer replaces the leaving group of the downstream monomer.",
+      "claim_type": "EXPLICIT",
+      "source": "This covalent bond could form before the attack of the 3\u2032 hydroxyl of the primer, creating an imidazolium intermediate, or in a concerted reaction where the leaving group of the upstream monomer replaces the leaving group of the downstream monomer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, proposing possible reaction mechanisms.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "e030880e-f338-4234-b394-09b4341cdf57",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C78",
+      "claim": "Further understanding of the reaction mechanism could lead to concomitant improvements in the rate and extent of template copying.",
+      "claim_type": "EXPLICIT",
+      "source": "Further understanding of the reaction mechanism could lead to concomitant improvements in the rate and extent of template copying.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, proposing potential future improvements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "0a7c40d0-7822-40f3-9b92-1cd79bae88ab",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C79",
+      "claim": "The copying of long mixed template sequences under the conditions described compares favorably, both in terms of rate and efficiency with reactions in which arbitrary RNA templates are copied by highly evolved ribozyme polymerases.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the copying of long mixed template sequences under our conditions compares favorably, both in terms of rate and efficiency with reactions in which arbitrary RNA templates are copied by highly evolved ribozyme polymerases (Wochner et al., 2011) (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on comparison with cited previous work and data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "0c5aa0fe-4ed8-4c75-b447-eb6bd9b2f275",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C80",
+      "claim": "If the rates and fidelities of nonenzymatic RNA polymerization were sufficiently high, the need for a ribozyme polymerase in the RNA world may be circumvented.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, if the rates and fidelities of nonenzymatic RNA polymerization were sufficiently high, the need for a ribozyme polymerase in the RNA world may be circumvented: RNA could be copied by nonenzymatic chemistry alone until the advent of protein polymerases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, proposing a possible scenario for the RNA world.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "7c03f772-d801-4778-a7d1-930daa3cceb6",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C81",
+      "claim": "RNA could be copied by nonenzymatic chemistry alone until the advent of protein polymerases if the rates and fidelities of nonenzymatic RNA polymerization were sufficiently high.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, if the rates and fidelities of nonenzymatic RNA polymerization were sufficiently high, the need for a ribozyme polymerase in the RNA world may be circumvented: RNA could be copied by nonenzymatic chemistry alone until the advent of protein polymerases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, proposing a possible scenario for the RNA world.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "041a3453-f81c-4057-9973-2ea2dcbb93e5",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C82",
+      "claim": "The identification of a plausible source of chemical energy that could drive the re-activation of monomers and oligomers following hydrolytic loss of the leaving group is a key missing component in efforts to reconstitute nonenzymatic RNA replication.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that the identification of a plausible source of chemical energy that could drive the re-activation of monomers and oligomers following hydrolytic loss of the leaving group is a key missing component in efforts to reconstitute nonenzymatic RNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim represents the authors' opinion about what is needed for future progress.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "c071f001-126c-43cd-98f7-0f85956314a8",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C83",
+      "claim": "A chemical environment that could maintain a fully activated pool of substrates, and avoid accumulation of the inhibitory by-products resulting from hydrolysis, might be sufficient to drive high yielding and complete copying of longer RNA templates in one pot.",
+      "claim_type": "EXPLICIT",
+      "source": "A chemical environment that could maintain a fully activated pool of substrates, and avoid accumulation of the inhibitory by-products resulting from hydrolysis, might be sufficient to drive high yielding and complete copying of longer RNA templates in one pot, thus setting the stage for the emergence of Darwinian evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, proposing what might be sufficient for future progress.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "4102b2cc-d90e-41b8-b44a-a7aa2c8544d8",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C84",
+      "claim": "Maintaining a fully activated pool of substrates and avoiding accumulation of inhibitory by-products could set the stage for the emergence of Darwinian evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "A chemical environment that could maintain a fully activated pool of substrates, and avoid accumulation of the inhibitory by-products resulting from hydrolysis, might be sufficient to drive high yielding and complete copying of longer RNA templates in one pot, thus setting the stage for the emergence of Darwinian evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, proposing a connection between improved replication and the emergence of evolution.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "d28afcdd-072d-4f5d-b79b-5d774e22b858",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C118",
+      "claim": "The final yield of the +12 product in the bead-assisted synthesis was 6%.",
+      "claim_type": "EXPLICIT",
+      "source": "Final yield of the +12 product was 6%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the caption of Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "139c7e60-7eba-467c-a4b7-abe4eab18c57",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C119",
+      "claim": "The total time required for the bead-assisted synthesis of 12 nucleotides was 150 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Steps varied in length from 30 min to 22 hr; the total time required was 150 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the caption of Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "363195f7-9f38-412a-9cb3-98b3764853f3",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "claim_id": "C120",
+      "claim": "Primer extension reactions can reach yields greater than 7 nucleotides in one pot, but only in low yields.",
+      "claim_type": "EXPLICIT",
+      "source": "While our method can only produce sequences >7 nucleotides in one reaction in low yields (Figure 6\u2014figure supplement 1) due to the cross-inhibitory effect of trimers with overlapping binding sites (Figure 4\u2014figure supplement 1), we reasoned that a ribozyme could be synthesized by this approach if monomers were added, along with their attendant trimers, one at a time (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "53af8d14-c59c-4bb6-88ba-d81c6571a31a",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the context that nonenzymatic RNA replication is a potential transitional stage in the RNA world hypothesis, but prior to this work, no protocell-compatible system existed for copying templates with all four nucleotides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 accurately represent established knowledge in the field and the state of the problem prior to this study. These are well-supported background claims based on the RNA world hypothesis and known limitations in prebiotic chemistry.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "8e2ebb71-8f98-4cf0-92fb-8259a50726be",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior work has shown that nonenzymatic copying of sequences containing all four nucleotides has been impossible primarily due to the slow rate of primer extension with A and U monomers, which is at least 100-fold slower than with G or C, despite only 3-fold weaker binding affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C15 accurately summarize prior literature on the limitations of nonenzymatic RNA replication. The citations to previous work (Joyce et al., Wu and Orgel, Deck et al., Szostak, Izgu et al., Heuberger et al.) support these characterizations of the field's challenges.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "82c3247f-476e-4cb3-a96f-c0a6b9c45269",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Previous work by Deck et al. showed that unactivated downstream helper oligonucleotides improve binding of A and U monomers but do not resolve the underlying rate differences, allowing only slow copying over several weeks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 accurately represent prior work on helper oligonucleotides. The citations to Deck et al. (2011) support these statements about the mechanism and limitations of unactivated helper oligonucleotides.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "91346073-6054-4bfa-a494-9701f1c64a19",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors demonstrate that 5'-activated helper oligonucleotides provide significant catalysis, increasing primer extension rates by over two orders of magnitude for all four monomers and reducing the rate difference between A/U and G/C from three orders of magnitude to roughly one order of magnitude.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C3, C34, C39, and C41 are well-supported by experimental data in Figures 1 and 2. The gel electrophoresis data and rate measurements clearly demonstrate the catalytic effect of activated trimers. The quantitative claims about rate increases are directly supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "4e79a99a-18d9-48f3-9517-b90c7e9222ec",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Primer extension by monomer addition proceeds almost 100 times faster than ligation of activated oligonucleotides, contrary to expectations based on structural considerations, with the key difference being the presence of multiple adjacent 5'-activated nucleotides downstream in the polymerization case.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 and C31 are supported by experimental data in Figure 1d showing the unexpected rate difference between polymerization and ligation. The structural reasoning (C25-C26) is appropriately cited and the inference about the role of downstream activated nucleotides (C27) is logical given the experimental design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "4490f0e7-f6ca-4f94-8bc3-e710ad288c0a",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Prior work by Orgel et al. showed that efficient primer extension requires two activated monomers adjacent to the primer, with 2-methylimidazole activation being more effective than imidazole, suggesting a possible catalytic role for leaving group interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 accurately represent prior work by Wu and Orgel (1992a). The citation supports the observations about the requirement for two activated monomers and the superiority of 2-methylimidazole. Claim C30 is appropriately speculative about the mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "896ae2ae-a901-43a5-96bf-7624483debcf",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Unactivated helper oligonucleotides (with 5'-OH or 5'-phosphate) provide only modest rate increases, consistent with their proposed mechanism of increasing monomer affinity through additional base-stacking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 are supported by experimental data in Figure 1c-f (reactions 4 and 5) and citations to previous literature. The modest rate increase is clearly shown in the data, and the mechanistic explanation is appropriately attributed to established knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "f714dcab-1719-4f65-b502-b853c9a219b7",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The catalytic effect of activated helper oligonucleotides depends on their length, with rates improving from mono- to di- to trinucleotide and plateauing at tetranucleotide, with trimers chosen for subsequent experiments due to their superior maximum rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 are well-supported by experimental data in Figure 2a and Figure 2\u2014figure supplement 1. The length-dependence is clearly demonstrated, and the saturation behavior is shown. The choice of trimers for subsequent work is justified by the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "649ab7bc-cf55-4388-a000-e9f8ffb95cdc",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Trimer-assisted polymerization achieves 98% fidelity, sufficient for 50-nucleotide genomes capable of encoding functional ribozymes, with the main mismatch being G:U wobble pairs at ~5% the matched rate, while other mismatches are at least 100-fold slower.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 are supported by experimental data in Figure 3. The fidelity measurements are clearly presented, and the calculation linking 98% fidelity to 50-nucleotide genomes is appropriately cited (Eigen, 1971). The G:U wobble pair observation is consistent with known RNA chemistry and supported by citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "edf43f51-9b52-41d0-b57b-f43a35138f0a",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Replacing canonical U with 2-thiouridine or 2-thioribothymine improves polymerization rates by approximately one order of magnitude, bringing U addition rates closer to G and C rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 are supported by experimental data in Figure 3b and consistent with previous reports (Heuberger et al., 2015). The rate improvement is clearly demonstrated in the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "4dc6aa22-a603-4c43-9f78-cd9db29343c7",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Activated helper oligonucleotides enable one-pot copying of mixed sequence templates by sequential monomer addition, with all four trimers together achieving ~80% yield of +4 products after 16 hours, though slower than single monomer additions which reach >95% yield in 10 minutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C20, C50-C55 are well-supported by experimental data in Figure 4. The gel data clearly shows sequential addition of monomers with different numbers of trimers present. The yield and time measurements are directly supported by the data in Figure 4c,d and Figure 2b.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "c89214ee-095b-46f8-a48f-17d72e879b93",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The slower rate of simultaneous four-base polymerization compared to single-base addition may be due to competition of trimers for overlapping binding sites, supported by decreased rates when additional overlapping trimers are present.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C57 present a reasonable mechanistic hypothesis supported by experimental data in Figure 4\u2014figure supplement 1. The speculation (C56) is appropriately qualified and the supporting evidence (C57) is clearly demonstrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "53300753-f635-499e-bd5b-1fd234a718c6",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Activated helper oligonucleotides enable copying of templates containing two consecutive A or U residues, which previously stopped polymerization entirely.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 is supported by experimental data in Figure 5, which shows successful extension through consecutive A or U residues. This addresses a major limitation identified in prior work (C9).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "515377ca-a158-49d4-a874-b63218c36b73",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Sequential addition of monomers and trimers on bead-immobilized templates achieves 75-95% conversion per step, synthesizing 12 nucleotides with 6% final yield over 150 hours, with highly variable reaction times (30 min to 22 hr per step) and generally faster G/C than A/U additions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C21, C59-C61, C118-C119 are supported by experimental data in Figure 6b. The gel clearly shows stepwise extension, and the yields and times are explicitly stated. However, the authors acknowledge not understanding the rate discrepancies between solution and bead-based reactions (C62), which is a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "24a0ed4a-1945-4cdc-b3ae-f1bfabb67015",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Despite only 6% full-length product, the crude bead synthesis mixture containing a significant portion of an active hammerhead ribozyme achieved 50% cleavage activity, demonstrating nonenzymatic synthesis of functional RNA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 are supported by experimental data in Figure 6c showing ribozyme activity. The cleavage assay clearly demonstrates catalytic function. However, the low yield (6%) and crude nature of the product mixture represent significant limitations. The claim of 'significant portion' is somewhat vague but supported by the observed activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "de6c3c45-2aa6-41d4-8ff7-2faf4d802fd4",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "One-pot primer extension can only produce sequences >7 nucleotides in low yields due to cross-inhibitory effects of trimers with overlapping binding sites.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C120 is supported by data in Figure 6\u2014figure supplement 1 and the mechanistic explanation in Figure 4\u2014figure supplement 1. This limitation is clearly acknowledged and motivates the bead-based sequential approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "989e407d-fdae-430f-8921-d45d76df552e",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Short activated oligonucleotides can function both as catalysts for monomer addition and as ligation substrates, enabling a hybrid replication process combining polymerization and ligation in complex prebiotic mixtures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 are supported by the combined experimental evidence showing both catalytic activity (Figures 1-4) and ligation capability (Figure 1). Claim C68 is appropriately speculative about implications for prebiotic chemistry, representing a reasonable inference from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "de4e61b5-aa82-482f-8bb5-9818c904d28a",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The rate disparity between activated and unactivated trimer-catalyzed reactions indicates a key role for the downstream leaving group, which also explains the slow ligation rate where the second nucleotide lacks a leaving group.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70 present reasonable mechanistic inferences from the experimental data comparing activated vs. unactivated trimers (Figure 1) and polymerization vs. ligation rates. The structural logic is sound, though the exact mechanism remains unclear (C71).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "727a4ff5-fd0d-4701-b127-ac4b59bda7ed",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "The mechanism of leaving group catalysis remains unclear, with possibilities including attractive interactions positioning the leaving group optimally, acid-base catalysis, or covalent bond formation between leaving groups, though prior work suggests steric effects alone are insufficient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C71-C77 appropriately acknowledge mechanistic uncertainty and present multiple hypotheses. The citations to Wu and Orgel (C73-C75) and Kervio et al. (C76) are appropriate. However, these remain speculative without direct mechanistic evidence. The unpublished data reference in C76 cannot be evaluated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "ed6a42ce-5f50-40e3-91e2-d239e848fc55",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The nonenzymatic copying method compares favorably in rate and efficiency to highly evolved ribozyme polymerases copying arbitrary templates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C79 references Figure 6\u2014figure supplement 1 and cites Wochner et al. (2011), but the comparison is not clearly quantified. The one-pot method only achieves low yields for >7 nucleotides (C120), and the bead method requires 150 hours for 12 nucleotides with 6% yield. More rigorous comparison is needed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "674bfe2b-ff30-4e09-a97f-7d44e36db4b8",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "If nonenzymatic RNA polymerization rates and fidelities were sufficiently high, ribozyme polymerases might be unnecessary in the RNA world, with RNA copied nonenzymatically until protein polymerases emerged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C80-C81 are highly speculative about RNA world scenarios. While the current work advances nonenzymatic replication, significant limitations remain (low yields for long sequences, slow rates, need for sequential addition). The conditional 'if' appropriately qualifies these claims, but they remain speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "35a37db9-43ec-4c5b-b847-411a3c80bfe8",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "A key missing component for nonenzymatic RNA replication is a plausible energy source for re-activating monomers and oligomers after hydrolysis; maintaining activated substrates and avoiding inhibitory by-products might enable complete template copying and Darwinian evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82-C84 identify important future directions but are speculative. The hydrolysis problem is real but not experimentally addressed in this work. The connection to Darwinian evolution (C84) is highly speculative and depends on solving multiple additional problems beyond those addressed here.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "1cef7399-0b53-42ca-8628-3ddfe79394e6",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "All experiments used 2-methylimidazole-activated nucleotides on the 5'-phosphate, a standard model system for nonenzymatic template copying regardless of prebiotic plausibility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C23 are straightforward methodological statements supported by citations and the Materials and Methods section. The acknowledgment that prebiotic plausibility is not established is appropriate transparency.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "f53817e0-192b-43bd-9d2a-ecd9498cdc9d",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "The fidelity of trimer-catalyzed sequential monomer addition is sufficient to sustain genomes long enough to encode active ribozymes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C5 is supported by the fidelity measurements (C42-C44) and the demonstration of ribozyme synthesis (C63-C64). The 98% fidelity calculation and 50-nucleotide genome size are appropriately supported by data and citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "0f839609-a8bd-4640-b400-a9d954fac729",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "The reason for rate discrepancies between bead-based and solution reactions is unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 is an explicit acknowledgment of a limitation in understanding. This transparency is appropriate, though it represents a gap in mechanistic understanding that could affect interpretation of the bead-based results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "2a492388-dc61-4556-b52d-b008749227c9",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "Short activated oligonucleotides are plausibly generated by templated or untemplated monomer polymerization in prebiotic conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C65 is speculative about prebiotic plausibility. While the authors demonstrate that activated oligonucleotides can catalyze polymerization, they explicitly state (C22) that the prebiotic plausibility of 2-methylimidazole activation is not established. This represents a significant gap for prebiotic scenarios.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    },
+    {
+      "id": "60cbb868-2254-4587-961e-a03e6ace668e",
+      "content_id": "d90cb691-bdb2-4c54-9e66-5a63bc0e9e28",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "Further understanding of the reaction mechanism could lead to improvements in the rate and extent of template copying.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 is a reasonable speculation about future work. Given the mechanistic uncertainties acknowledged (C71-C77) and the current limitations in yield and length, mechanistic insights could plausibly lead to improvements.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:18:28.616087Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "64dc6b0c-ba2b-4f33-9902-4a92b1810d6a",
+      "result_id": "53af8d14-c59c-4bb6-88ba-d81c6571a31a"
+    },
+    {
+      "claim_id": "e8a4e3e0-2856-4862-934f-ffeaff5c986d",
+      "result_id": "53af8d14-c59c-4bb6-88ba-d81c6571a31a"
+    },
+    {
+      "claim_id": "9e903b73-0563-4a6f-9601-919a7784e20f",
+      "result_id": "8e2ebb71-8f98-4cf0-92fb-8259a50726be"
+    },
+    {
+      "claim_id": "62928c65-698c-43d8-a0ba-8a9e63e42da3",
+      "result_id": "8e2ebb71-8f98-4cf0-92fb-8259a50726be"
+    },
+    {
+      "claim_id": "d9df4f6d-b949-4393-ade8-96e765b29f9c",
+      "result_id": "8e2ebb71-8f98-4cf0-92fb-8259a50726be"
+    },
+    {
+      "claim_id": "671a1c08-dc81-4f82-98ed-496eee49f2f9",
+      "result_id": "8e2ebb71-8f98-4cf0-92fb-8259a50726be"
+    },
+    {
+      "claim_id": "3c49edba-b298-453f-b342-54707332f584",
+      "result_id": "8e2ebb71-8f98-4cf0-92fb-8259a50726be"
+    },
+    {
+      "claim_id": "82670970-6889-4354-a244-952fcad16fed",
+      "result_id": "8e2ebb71-8f98-4cf0-92fb-8259a50726be"
+    },
+    {
+      "claim_id": "949243fd-aa58-4f5d-a519-71ff518aa272",
+      "result_id": "8e2ebb71-8f98-4cf0-92fb-8259a50726be"
+    },
+    {
+      "claim_id": "d27c5ba7-24bf-429f-b1b9-363506e2cdbb",
+      "result_id": "8e2ebb71-8f98-4cf0-92fb-8259a50726be"
+    },
+    {
+      "claim_id": "91c00b62-5004-4831-b065-0820fc192989",
+      "result_id": "8e2ebb71-8f98-4cf0-92fb-8259a50726be"
+    },
+    {
+      "claim_id": "2ae28142-1507-4b4d-b736-72f0eabae0ad",
+      "result_id": "82c3247f-476e-4cb3-a96f-c0a6b9c45269"
+    },
+    {
+      "claim_id": "dafa0d5e-04ff-4907-9e5c-db7ae55335d9",
+      "result_id": "82c3247f-476e-4cb3-a96f-c0a6b9c45269"
+    },
+    {
+      "claim_id": "6c511b8a-d888-46ef-9443-197248e26d80",
+      "result_id": "82c3247f-476e-4cb3-a96f-c0a6b9c45269"
+    },
+    {
+      "claim_id": "420302a3-e46a-4137-9fd5-25a65d28b094",
+      "result_id": "91346073-6054-4bfa-a494-9701f1c64a19"
+    },
+    {
+      "claim_id": "de9568c6-c818-4c7d-a224-343fff61066e",
+      "result_id": "91346073-6054-4bfa-a494-9701f1c64a19"
+    },
+    {
+      "claim_id": "73428372-4fb0-4e53-9e7b-48efc763cec3",
+      "result_id": "91346073-6054-4bfa-a494-9701f1c64a19"
+    },
+    {
+      "claim_id": "093a8d62-7708-42e5-aa9a-8ef2fffbba87",
+      "result_id": "91346073-6054-4bfa-a494-9701f1c64a19"
+    },
+    {
+      "claim_id": "64c0cea6-198d-4fb8-8dbf-694c3b8a651e",
+      "result_id": "91346073-6054-4bfa-a494-9701f1c64a19"
+    },
+    {
+      "claim_id": "62f7319b-ae39-437e-9173-929c0239a328",
+      "result_id": "4e79a99a-18d9-48f3-9517-b90c7e9222ec"
+    },
+    {
+      "claim_id": "92355a08-5d4d-4f24-86a0-b24122e18dcc",
+      "result_id": "4e79a99a-18d9-48f3-9517-b90c7e9222ec"
+    },
+    {
+      "claim_id": "5580751e-4673-431e-be6c-d784b433a44b",
+      "result_id": "4e79a99a-18d9-48f3-9517-b90c7e9222ec"
+    },
+    {
+      "claim_id": "14629d7b-1f88-4fdb-bd80-7e24733c7a0e",
+      "result_id": "4e79a99a-18d9-48f3-9517-b90c7e9222ec"
+    },
+    {
+      "claim_id": "5e73544a-cda4-4cab-aaa4-fb31fa4dc352",
+      "result_id": "4e79a99a-18d9-48f3-9517-b90c7e9222ec"
+    },
+    {
+      "claim_id": "2bdfdecb-7b3e-4f64-add1-74d43c81a63e",
+      "result_id": "4490f0e7-f6ca-4f94-8bc3-e710ad288c0a"
+    },
+    {
+      "claim_id": "c978dbf0-be1e-48e0-87d0-48476e136407",
+      "result_id": "4490f0e7-f6ca-4f94-8bc3-e710ad288c0a"
+    },
+    {
+      "claim_id": "6e1a85e4-9a5f-410b-9edc-cce193e68a23",
+      "result_id": "4490f0e7-f6ca-4f94-8bc3-e710ad288c0a"
+    },
+    {
+      "claim_id": "4ae491b9-a28b-4992-9ac6-b86c9f93de2b",
+      "result_id": "896ae2ae-a901-43a5-96bf-7624483debcf"
+    },
+    {
+      "claim_id": "db3e3cc6-644f-471e-b398-95c2fd5532fb",
+      "result_id": "896ae2ae-a901-43a5-96bf-7624483debcf"
+    },
+    {
+      "claim_id": "e2c90203-3f5e-4da3-bd92-744d4062326f",
+      "result_id": "f714dcab-1719-4f65-b502-b853c9a219b7"
+    },
+    {
+      "claim_id": "adf29ef5-0a72-43be-9fe6-7503aefb430e",
+      "result_id": "f714dcab-1719-4f65-b502-b853c9a219b7"
+    },
+    {
+      "claim_id": "323c7b8c-97ea-4deb-82a3-6db5f3420e8c",
+      "result_id": "f714dcab-1719-4f65-b502-b853c9a219b7"
+    },
+    {
+      "claim_id": "9d9f9738-c64a-4ec2-84ad-7d1afe4764fe",
+      "result_id": "f714dcab-1719-4f65-b502-b853c9a219b7"
+    },
+    {
+      "claim_id": "8464dde9-4ac3-47e8-bfd8-fc99b6e884be",
+      "result_id": "649ab7bc-cf55-4388-a000-e9f8ffb95cdc"
+    },
+    {
+      "claim_id": "c90beb13-7324-44b8-b344-1bad4c5d147b",
+      "result_id": "649ab7bc-cf55-4388-a000-e9f8ffb95cdc"
+    },
+    {
+      "claim_id": "58502818-0a56-4b70-8939-7a8b0090a3cc",
+      "result_id": "649ab7bc-cf55-4388-a000-e9f8ffb95cdc"
+    },
+    {
+      "claim_id": "24bdafa4-bdda-4248-b69e-736df1e288a0",
+      "result_id": "649ab7bc-cf55-4388-a000-e9f8ffb95cdc"
+    },
+    {
+      "claim_id": "576a13f8-bc16-4d95-9c17-a3ff1e139cce",
+      "result_id": "649ab7bc-cf55-4388-a000-e9f8ffb95cdc"
+    },
+    {
+      "claim_id": "8c234cbf-267c-4a8a-86eb-3771af07f586",
+      "result_id": "649ab7bc-cf55-4388-a000-e9f8ffb95cdc"
+    },
+    {
+      "claim_id": "15d441f1-1f35-43d9-96e7-d587dd80dd04",
+      "result_id": "edf43f51-9b52-41d0-b57b-f43a35138f0a"
+    },
+    {
+      "claim_id": "b3329b23-9a63-44a9-ab91-b3cb568259ff",
+      "result_id": "edf43f51-9b52-41d0-b57b-f43a35138f0a"
+    },
+    {
+      "claim_id": "1eab3d48-2b6e-4010-a74d-856d0aee8315",
+      "result_id": "4dc6aa22-a603-4c43-9f78-cd9db29343c7"
+    },
+    {
+      "claim_id": "7fad72fe-5f0d-4eee-8873-be97631548eb",
+      "result_id": "4dc6aa22-a603-4c43-9f78-cd9db29343c7"
+    },
+    {
+      "claim_id": "18e2d2f7-9e0f-4b2c-a4b7-25265a3b0596",
+      "result_id": "4dc6aa22-a603-4c43-9f78-cd9db29343c7"
+    },
+    {
+      "claim_id": "35c5c1e7-9180-4c08-91a8-6417e2a42a78",
+      "result_id": "4dc6aa22-a603-4c43-9f78-cd9db29343c7"
+    },
+    {
+      "claim_id": "380a0ab2-6926-4702-8209-24fead924f0b",
+      "result_id": "4dc6aa22-a603-4c43-9f78-cd9db29343c7"
+    },
+    {
+      "claim_id": "e528cbb4-9698-4a06-97d0-5f8c7274fbe6",
+      "result_id": "4dc6aa22-a603-4c43-9f78-cd9db29343c7"
+    },
+    {
+      "claim_id": "8a98907b-7982-46ac-a3ec-159af7436e55",
+      "result_id": "4dc6aa22-a603-4c43-9f78-cd9db29343c7"
+    },
+    {
+      "claim_id": "6ea9a0a6-8907-458e-b269-b2b9ffebc535",
+      "result_id": "4dc6aa22-a603-4c43-9f78-cd9db29343c7"
+    },
+    {
+      "claim_id": "47d3baf2-1882-4019-9008-bc39a5f634cd",
+      "result_id": "c89214ee-095b-46f8-a48f-17d72e879b93"
+    },
+    {
+      "claim_id": "386443f3-ec16-4b4d-9042-16e80c7adeb5",
+      "result_id": "c89214ee-095b-46f8-a48f-17d72e879b93"
+    },
+    {
+      "claim_id": "267faf71-30a0-4ef6-9ce2-1b1ae5e6e847",
+      "result_id": "53300753-f635-499e-bd5b-1fd234a718c6"
+    },
+    {
+      "claim_id": "134b0595-4aa5-424e-9642-76f6d9e52181",
+      "result_id": "515377ca-a158-49d4-a874-b63218c36b73"
+    },
+    {
+      "claim_id": "e6c5cc17-0526-471e-9d68-ca8a04a37874",
+      "result_id": "515377ca-a158-49d4-a874-b63218c36b73"
+    },
+    {
+      "claim_id": "c74571f4-cd1e-489a-a02a-d2b1ecd9d1e3",
+      "result_id": "515377ca-a158-49d4-a874-b63218c36b73"
+    },
+    {
+      "claim_id": "d9c4a57b-c404-4dd2-963e-a2317bf7967c",
+      "result_id": "515377ca-a158-49d4-a874-b63218c36b73"
+    },
+    {
+      "claim_id": "3946f5d4-64d8-4440-b82d-8d01f234af95",
+      "result_id": "515377ca-a158-49d4-a874-b63218c36b73"
+    },
+    {
+      "claim_id": "d28afcdd-072d-4f5d-b79b-5d774e22b858",
+      "result_id": "515377ca-a158-49d4-a874-b63218c36b73"
+    },
+    {
+      "claim_id": "139c7e60-7eba-467c-a4b7-abe4eab18c57",
+      "result_id": "515377ca-a158-49d4-a874-b63218c36b73"
+    },
+    {
+      "claim_id": "6438fef9-cf1d-4dd6-bda0-4742bbe7ada3",
+      "result_id": "24a0ed4a-1945-4cdc-b3ae-f1bfabb67015"
+    },
+    {
+      "claim_id": "8f18fb41-0c55-4cf7-b1b7-b4a47bcb0cda",
+      "result_id": "24a0ed4a-1945-4cdc-b3ae-f1bfabb67015"
+    },
+    {
+      "claim_id": "363195f7-9f38-412a-9cb3-98b3764853f3",
+      "result_id": "de6c3c45-2aa6-41d4-8ff7-2faf4d802fd4"
+    },
+    {
+      "claim_id": "e676e3a2-0df2-42e2-87af-c13c4bfb3461",
+      "result_id": "989e407d-fdae-430f-8921-d45d76df552e"
+    },
+    {
+      "claim_id": "99dc08f5-7288-4b19-bb21-11e540900811",
+      "result_id": "989e407d-fdae-430f-8921-d45d76df552e"
+    },
+    {
+      "claim_id": "c026ef9b-479e-41d5-8f31-1bc857dbbe82",
+      "result_id": "989e407d-fdae-430f-8921-d45d76df552e"
+    },
+    {
+      "claim_id": "0fa28b5d-6200-4279-838e-1c0661b2523e",
+      "result_id": "de4e61b5-aa82-482f-8bb5-9818c904d28a"
+    },
+    {
+      "claim_id": "0239a6a0-eb7a-478b-b1a7-b9ee04eec578",
+      "result_id": "de4e61b5-aa82-482f-8bb5-9818c904d28a"
+    },
+    {
+      "claim_id": "864b2d79-019e-4045-906f-d673ba453336",
+      "result_id": "727a4ff5-fd0d-4701-b127-ac4b59bda7ed"
+    },
+    {
+      "claim_id": "dc2679d1-273b-4c6a-9591-9a4a120c41ea",
+      "result_id": "727a4ff5-fd0d-4701-b127-ac4b59bda7ed"
+    },
+    {
+      "claim_id": "4927c11a-3da2-4a56-b622-77e488647215",
+      "result_id": "727a4ff5-fd0d-4701-b127-ac4b59bda7ed"
+    },
+    {
+      "claim_id": "3ef9f21a-b216-4f2b-ba23-c33c2bdf9de2",
+      "result_id": "727a4ff5-fd0d-4701-b127-ac4b59bda7ed"
+    },
+    {
+      "claim_id": "f56079ea-ffbe-4d93-ad6a-1aec50ed4eaf",
+      "result_id": "727a4ff5-fd0d-4701-b127-ac4b59bda7ed"
+    },
+    {
+      "claim_id": "59a1d42f-0b1e-4805-9480-16e6f7a43abf",
+      "result_id": "727a4ff5-fd0d-4701-b127-ac4b59bda7ed"
+    },
+    {
+      "claim_id": "8b84b878-5d0d-4355-bd9a-263adaaa161e",
+      "result_id": "727a4ff5-fd0d-4701-b127-ac4b59bda7ed"
+    },
+    {
+      "claim_id": "0a7c40d0-7822-40f3-9b92-1cd79bae88ab",
+      "result_id": "ed6a42ce-5f50-40e3-91e2-d239e848fc55"
+    },
+    {
+      "claim_id": "0c5aa0fe-4ed8-4c75-b447-eb6bd9b2f275",
+      "result_id": "674bfe2b-ff30-4e09-a97f-7d44e36db4b8"
+    },
+    {
+      "claim_id": "7c03f772-d801-4778-a7d1-930daa3cceb6",
+      "result_id": "674bfe2b-ff30-4e09-a97f-7d44e36db4b8"
+    },
+    {
+      "claim_id": "041a3453-f81c-4057-9973-2ea2dcbb93e5",
+      "result_id": "35a37db9-43ec-4c5b-b847-411a3c80bfe8"
+    },
+    {
+      "claim_id": "c071f001-126c-43cd-98f7-0f85956314a8",
+      "result_id": "35a37db9-43ec-4c5b-b847-411a3c80bfe8"
+    },
+    {
+      "claim_id": "4102b2cc-d90e-41b8-b44a-a7aa2c8544d8",
+      "result_id": "35a37db9-43ec-4c5b-b847-411a3c80bfe8"
+    },
+    {
+      "claim_id": "b42e4c9a-3ba2-45b0-9dcb-60aeff443785",
+      "result_id": "1cef7399-0b53-42ca-8628-3ddfe79394e6"
+    },
+    {
+      "claim_id": "0d13af4f-f8cd-4efd-9d95-3141510f402b",
+      "result_id": "1cef7399-0b53-42ca-8628-3ddfe79394e6"
+    },
+    {
+      "claim_id": "286ce581-65ef-4bbc-a9d3-057d149a5d57",
+      "result_id": "f53817e0-192b-43bd-9d2a-ecd9498cdc9d"
+    },
+    {
+      "claim_id": "eacb7876-b908-4d29-810d-d93d5c56589e",
+      "result_id": "0f839609-a8bd-4640-b400-a9d954fac729"
+    },
+    {
+      "claim_id": "70b566c8-969e-481f-906e-027ab67a70df",
+      "result_id": "2a492388-dc61-4556-b52d-b008749227c9"
+    },
+    {
+      "claim_id": "e030880e-f338-4234-b394-09b4341cdf57",
+      "result_id": "60cbb868-2254-4587-961e-a03e6ace668e"
+    }
+  ],
+  "comparisons": []
+}

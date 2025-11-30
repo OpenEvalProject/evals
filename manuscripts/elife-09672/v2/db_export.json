@@ -1,0 +1,2262 @@
+{
+  "submission": {
+    "id": "edc6107e-03a3-415c-a420-4a31f6714632",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:18:49.154977Z",
+    "updated_at": "2025-11-29T22:18:49.154977Z"
+  },
+  "content": [
+    {
+      "id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "submission_id": "edc6107e-03a3-415c-a420-4a31f6714632",
+      "content_type": "manuscript",
+      "content_text": "# Coverage and system efficiencies of insecticide-treated nets in Africa from 2000 to 2017\n\n## Authors\n\n- Samir Bhatt<sup>1</sup>\n- Daniel J Weiss<sup>1</sup>\n- Bonnie Mappin<sup>1</sup> ([ORCID: 0000-0002-1205-719X](https://orcid.org/0000-0002-1205-719X))\n- Ursula Dalrymple<sup>1</sup>\n- Ewan Cameron<sup>1</sup>\n- Donal Bisanzio<sup>1</sup>\n- David L Smith<sup>1</sup> ([ORCID: 0000-0003-4367-3849](https://orcid.org/0000-0003-4367-3849))\n- Catherine L Moyes<sup>1</sup> ([ORCID: 0000-0002-8028-4079](https://orcid.org/0000-0002-8028-4079))\n- Andrew J Tatem<sup>3</sup>\n- Michael Lynch<sup>6</sup>\n- Cristin A Fergus<sup>6</sup>\n- Joshua Yukich<sup>7</sup>\n- Adam Bennett<sup>8</sup>\n- Thomas P Eisele<sup>7</sup>\n- Jan Kolaczinski<sup>9</sup>\n- Richard E Cibulskis<sup>6</sup>\n- Simon I Hay<sup>3</sup> ([ORCID: 0000-0002-0611-7272](https://orcid.org/0000-0002-0611-7272))\n- Peter W Gething<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Spatial Ecology and Epidemiology Group, Department of Zoology University of Oxford Oxford United Kingdom\n2. Sanaria Institute of Global Health and Tropical Medicine Rockville United States\n3. Fogarty International Center National Institutes of Health Bethesda United States\n4. Flowminder Foundation Stockholm Sweden\n5. Department of Geography and the Environment University of Southampton Southampton United Kingdom\n6. Global Malaria Programme World Health Organization Geneva Switzerland\n7. Center for Applied Malaria Research and Evaluation, Department of Global Health Systems and Development Tulane University School of Public Health and Tropical Medicine New Orleans United States\n8. Malaria Elimination Initiative, Global Health Group University of California, San Francisco San Francisco United States\n9. Strategy, Investment and Impact Division The Global Fund to Fight AIDS, Tuberculosis and Malaria Geneva Switzerland\n10. Wellcome Trust Centre for Human Genetics University of Oxford Oxford United Kingdom\n11. Institute for Health Metrics and Evaluation University of Washington Seattle United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nInsecticide-treated nets (ITNs) for malaria control are widespread but coverage remains inadequate. We developed a Bayesian model using data from 102 national surveys, triangulated against delivery data and distribution reports, to generate year-by-year estimates of four ITN coverage indicators. We explored the impact of two potential 'inefficiencies': uneven net distribution among households and rapid rates of net loss from households. We estimated that, in 2013, 21% (17%\u201326%) of ITNs were over-allocated and this has worsened over time as overall net provision has increased. We estimated that rates of ITN loss from households are more rapid than previously thought, with 50% lost after 23 (20\u201328) months. We predict that the current estimate of 920 million additional ITNs required to achieve universal coverage would in reality yield a lower level of coverage (77% population access). By improving efficiency, however, the 920 million ITNs could yield population access as high as 95%.\n\n## Introduction\n\nInsecticide-treated nets (ITNs), which comprise conventional (cITNs) and long-lasting insecticidal nets (LLINs), are the single most widely used intervention for malaria control in Africa, proven to significantly reduce morbidity and mortality via direct protection and community-wide reductions in transmission (Lim et al., 2011; Lengeler and Lengeler, 2004; Eisele et al., 2010; Killeen et al., 2007). The World Health Organization (WHO) promotes a target of universal coverage for all populations at risk with either ITNs or indoor residual spraying (IRS), with the former representing the primary vector control tool in nearly all endemic African countries (WHO, 2013a). The international community has invested billions of dollars in the provision of at least 700 million LLINs since 2004 (WHO, 2013a). While these investments have led to enormous scale up in population access to ITNs (Noor et al., 2009; Monasch et al., 2004), the target of universal coverage remains distant and millions of African households at risk remain unprotected (WHO, 2013a).\n\nBridging this gap is a key component of future strategies to reduce further the burden of malaria in Africa (WHO, 2014), and will require sustained commitment from donors, policy makers and national programmes. Central to these efforts is the capacity to monitor reliably current levels of ITN coverage in populations at risk and evaluate the systems that give rise to this coverage. This, in turn, enables progress towards international goals to be tracked and opportunities for efficiency gains to be identified. Such information is essential for evaluating the\u00a0existing commodity and financing shortfalls and assessing future requirements if the target of universal coverage is to be achieved.\n\n### Modelling coverage\n\nTo facilitate standardised and comparable monitoring of ITN coverage through time, WHO and the Roll\u00a0Back\u00a0Malaria Monitoring and Evaluation Reference Group (RBM-MERG) has over the past decade defined a series of indicators to capture two different aspects of ITN coverage: access and use. Gold standard measurements of these indicators are provided by nationally representative household surveys such as Demographic and Health Surveys (DHS)\u00a0(Measure, 2014), Multiple Indicator Cluster Surveys (MICS) (UNICEF, 2012), and Malaria Indicator Surveys (MIS) (RBM, 2014a). These surveys are carried out relatively infrequently, however, meaning they cannot be used directly for evaluating year-on-year coverage trends or for generating timely estimates of continent-wide coverage levels. In contrast, programmatic data such as the number of ITNs delivered and distributed within countries, while not describing coverage directly, are available for most countries and years (WHO, 2013a ). In a 2009 study, Flaxman and colleagues (Flaxman et al., 2010) used a compartmental modelling approach to link these programmatic and survey data, generating annual estimates of the two ITN indicators recommended at that time on access (% households with at least one ITN) and use (% children < 5\u00a0years\u00a0old who slept under an ITN the previous night).\n\nSince that study, there has been increasing recognition that a richer set of indictors is required to identify the complex nature of ITN coverage (Kilian et al., 2013). An intra-household 'ownership gap' may exist whereby many households with some nets may not have enough for one net between two occupants (the recommended minimum level of protection (WHO, 2013b). Similarly, a 'usage gap' may exist whereby individuals with access to a net do not sleep under it. In response, the measurement of two additional indicators was recommended: % households with at least one ITN for every two people and % population with access to an ITN within their household (assuming each net was used by two people)\u00a0(RBM, UNICEF, WHO, 2013; RBM, 2011). In addition, the indicator on usage was extended to include the entire population rather than only children under 5 years old. This updated set of four indicators, used individually and in combination, has the potential to provide a nuanced picture of ITN access and use patterns that can directly guide operational decision making (Kilian et al., 2013). To achieve this, there is a need to develop modelling frameworks to allow all four to be tracked through time.\n\n### Evaluating efficiency\n\nCountries have an ongoing struggle to maintain high LLIN coverage in the face of continuous loss of nets from households due to damage, repurposing, or movement away from target areas. In response, systems need to be responsive to emerging coverage gaps by ensuring nets are distributed to households that need them and avoiding over-allocation (i.e. distribution of nets to those that already have them). Together, the rate of net loss and the degree of over-allocation of new nets play a key role in determining how efficiently delivery to countries will translate into household coverage levels. These factors are not currently well understood but triangulation of survey and programmatic data allows new insights into both.\n\n### Estimating future needs\n\nThe WHO define universal access to ITNs on the basis that two people can share one net. Using the working assumptions of a 3-year ITN lifespan and a 1.8 person-per-net ratio (one-between-two but allowing for odd-numbered households), a simple calculation yields an indicative estimate of 150 million new nets required each year to provide universal coverage to an African population at risk of around 810 million (WHO, 2013a). To support country planning and donor application processes (RBM-HWG, 2014), a more elaborate needs assessment approach has been developed by the RBM Harmonization Working Group (RBM-HWG) and implemented by 41 of the 47 endemic African countries (RBM, 2014; Paintain et al., 2013). The tool takes into account the size and structure of national target populations, a 1.8 person-per-net ratio for mass campaigns, additional routine distribution mechanisms employed by countries, and volumes of previously distributed nets and their likely rates of loss through time. Countries have used these inputs to calculate requirements for new nets to achieve national coverage targets, leading to an estimated continent-wide need for 920 million ITNs over the 2014\u20132017 period (approximately 230 million per year) (RBM, 2014). This tool provides a transparent, intuitive and standardised mechanism for comparing forecasted needs against current financing levels and identifying likely shortfalls. However, calculated needs are sensitive to assumptions about how a given volume of new nets will translate into population coverage, and inefficiencies in the system such as such as over-allocation and rate of net loss are not accounted for explicitly in the current needs assessment exercise.\n\nThe purpose of this study is to define a new dynamic modelling approach, triangulating all available data on ITN delivery, distribution and coverage in sub-Saharan Africa in order to (i) provide validated and data-driven time-series estimates for all four internationally recommended ITN indicators; (ii) explore and quantify different aspects of system efficiency and how these contribute to reduced coverage levels; and (iii) estimate future LLIN needs to achieve universal access by 2017 under different efficiency scenarios and how these compare to existing needs assessment estimates.\n\n## Results\n\n### Net stock estimates\n\nFigure 1A summarises the main inputs to and outputs from the stock-and-flow model for LLINs when aggregated at the continental level. Some 718 million LLINs have been delivered across the 40 endemic countries since their introduction in 2004. As is well documented (WHO, 2013a), annual LLIN deliveries increased year-on-year from 2004 to 2010, reaching 145 million in that year, but then declined dramatically in 2011 and 2012 to less than half that amount before rising again to 143 million in 2013 (green line). Taking into account rates of loss in households, these LLIN deliveries led to a continental net crop shown by the red line. We estimate that there were 252 million LLINs in sub-Saharan households by the end of 2013, with that net crop growing approximately linearly from 2004, with the exception of a slow-down resulting from the reduced supply of nets in 2011\u20132012. Figure 1B shows equivalent distribution and resulting net crop estimates for cITNs, which constituted nearly all ITNs prior to 2005 but diminished rapidly in importance following the introduction of LLINs thereafter.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/09672/elife-09672-fig1-v2.jpg)\n\n**Figure 1.:** Manufacturer data on deliveries were available for LLINs only. cITNs, conventional insecticide-treated nets; HHs, households; ITNs, insecticide-treated nets; LLINs, long-lasting insecticidal nets; NMCP, National Malaria Control Programme.\n\n### Coverage\u00a0estimates\n\nFigure 2 shows continent-level time-series estimates of the four internationally recommended ITN indicators, along with the 'access gap' indicator. All four indicators show a similar temporal trend: very low coverage levels and modest year-on-year increases for the first 5 years from 2000, with a marked inflexion point in 2005 and much more rapid gains thereafter. Importantly, however, all four indicators show that the pace of increase has, overall, slowed since 2005. By the end of 2013, we estimate that around two-thirds (66%, 95% CI 62%\u201371%) of households at risk owned at least one ITN. However, less than one-third (31%, 29%\u201334%) owned enough for one ITN between two people. This much lower level of adequate ownership is reflected in the levels of access and use, with 48% (45%\u201351%) of people at risk having access to an ITN within their household (on a one-between-two basis) and 43% (39%\u201346%) sleeping under an ITN the previous night. Comparison of Figure 2A,B demonstrates that many households that own some ITNs do not own enough for one-between-two, and this is captured in the time-series for the 'ownership gap' (Figure 2E). Encouragingly, this gap has been narrowed from 77% (76%\u201378%) of net-owning households having insufficient nets in 2000 to 56% (54%\u201357%) in 2013. Analysis of the 'use gap' suggested a large majority (89%, 84%\u201393%) of those with access to an ITN in the household slept under it the previous night, and we found no evidence of significant change in this proportion through time.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/09672/elife-09672-fig2-v2.jpg)\n\n**Figure 2.:** (A) % households with at least one ITN; (B) % households with at least one ITN for every two people; (C) % population with access to an ITN within their household; (D) % population who slept under an ITN the previous night; (E) 'ownership gap', the\u00a0% of ITN-owning households with insufficient ITNs for one-between-two. Black circles are the annual estimates; pink envelopes denote the 95% posterior credible interval.\u00a0ITNs, insecticide-treated nets.\n\nThe relatively smooth temporal trends seen at continental level obscure a great deal of complexity in the patterns of ITN scale-up occurring at national level (Figure 3). Nearly all countries began with very low coverage levels in 2000 and display a marked inflection point towards the middle of the decade, although there was considerable variation in the timing of onset of concerted scale-up activities. Importantly, the monotonic increases in coverage seen at the aggregated continental level are often replaced at national level with pronounced periods of rise and fall, and in many cases, 2013 does not represent the peak year. Variation in contemporary levels of coverage remains stark. The population with access to ITNs within the household, for example, was at or below 15% in seven countries in 2013, while above 70% for the top four.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/09672/elife-09672-fig3-v2.jpg)\n\n**Figure 3.:** Each plot shows the four ITN coverage indicators: % households with at least one ITN (black); % households with at least one ITN for every two people (red); % population with access to an ITN within their household (green); % population who slept under an ITN the previous night (blue). CAR = Central African Republic; DRC = Democratic Republic of Congo;\u00a0ITNs, insecticide-treated nets;\u00a0HH = household.\n\n### Over-allocation\n\nOver the 14-year period since 2000, on average 15% (12%\u201318%) of all ITNs distributed to households were over-allocated (owned by households already owning sufficient nets for one-between-two). Figure 4 illustrates how these over-allocation rates have changed through time. Around 7% (6%\u20139%) of ITNs were over-allocated in 2000, and this has risen steadily to 27% (22%\u201332%) in 2013. The year-on-year increase in over-allocation is to some extent an expected consequence of the overall growth in ITN provision: we found that over-allocation increased approximately 15 percentage points for each one-ITN-per-capita increase in net crop. Over-allocation also varied substantially between countries, for example ranging in 2013 from 50% (36%\u201365%) in the Republic of the Congo to 11% (9%\u201315%) in C\u00f4te D\u2019Ivoire.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/09672/elife-09672-fig4-v2.jpg)\n\n**Figure 4.:** Over-allocation refers to insecticide-treated nets distributed to households already owning enough nets for one-between-two, measured as the percentage of over-allocated nets among all nets in households.\n\n### Net loss\n\nAveraged over all years and all countries, we found the median retention time for LLINs in households was 23 (20\u201328) months. We found no statistically significant evidence of continent-wide temporal trends in retention times, but substantial between-country variation. Figure 5 plots the LLIN loss function representing the most recent three years (2011\u20132013) for each country individually (blue lines), along with the aggregated continental-level curve (red line). For reference, we also overlay on Figure 5 some alternative loss functions that have been proposed. Flaxman et al. (orange line) fitted very small annual loss rates (5%) for years 1, 2 and 3 - with all LLINs then assumed lost after 3 years (Flaxman et al., 2010). The RBM-HWG proposed rate of loss (green line) is 8, 20 and 50% of LLINs to remain after 1, 2 and 3 years, respectively, with all nets being lost thereafter (Networks, 2014). As can be seen, we found rates of loss for the first 3 years to be greater than both these alternatives for all countries. Both alternatives impose a three-year maximum retention time and our decision not to do so meant that we modelled a small proportion of LLINs lasting some years beyond that point.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/09672/elife-09672-fig5-v2.jpg)\n\n**Figure 5.:** Estimated long-lasting insecticidal net retention curves for each country individually (blue lines) and combined (red line), in both cases relating to the average of the most recent 3 years, 2011\u20132013.\u00a0Also shown for reference are the rate of loss recommended in the Roll Back Malaria Harmonization Working Group needs assessment exercise (green line) and the loss rate fitted by Flaxman et al. (orange line).\n\n### ITN requirements to achieve universal coverage\n\nFigure 6 shows the projected levels of coverage that we estimate would be achieved by the end of 2017 with LLIN deliveries for the 2014\u20132017 period varying from zero to 2.5 billion and under a range of different efficiency scenarios. The most important characteristic of our results is the pronounced shallowing of the delivery-coverage curves: proportionately smaller gains are made in coverage as more LLINs are delivered in an archetypal 'law of diminishing marginal returns'. This means that under a business-as-usual scenario, where current levels of over-allocation and LLIN loss persist, very large increases in LLIN delivery would be required to achieve high coverage. Under this scenario, we estimate that 1 billion LLINs (i.e. an average of 250 million per year) would be required to achieve 80% of the population with access to an LLIN in the household by the end of 2017, although this would only translate into 70% population use.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/09672/elife-09672-fig6-v2.jpg)\n\n**Figure 6.:** (A) % households owning at least one ITN; (B) % households owning enough ITN for one between two; (C) % population with access to ITN within the household; (D) % population sleeping under an ITN the previous night; (E) 'ownership gap', the\u00a0% of ITN-owning households with insufficient ITNs for one-between-two. For each indicator, we project likely coverage under four scenarios: current levels of over-allocation and net loss (i.e. 'business as usual'); with minimised over-allocation; with longer average net retention (3-yr median); and with both minimised over-allocation and longer net retention. The vertical dashed lines indicate the number of LLINs calculated as required over the period under the country programmatic needs assessment supported by Roll Back Malaria Harmonization Working Group.\u00a0LLINs, long-lasting insecticidal nets;\u00a0ITNs, insecticide-treated nets.\n\nThe extent to which coverage gains diminish as deliveries increase is mitigated substantially when over-allocation and ITN loss rate are reduced. In a scenario with minimised over-allocation (where over allocation is set to zero), 80% population access in 2017 would be achievable with just 700 million nets (175 million per year). Reducing ITN loss rate to a 3-year median retention time would have a broadly similar impact, acting in isolation, to minimising over-allocation. If these two hypothetical efficiency gains were combined, however, 80% access could be reached in 2017 with around 560 million nets (140 million per year). We found that the relative importance of the over-allocation and LLIN loss rates changed as more LLINs were introduced. Increasing LLIN retention times was the most important factor at low levels of net delivery, but as more and more nets were provided, over-allocation became progressively more important. This is intuitive since it becomes increasingly difficult to avoid over-allocation as more households obtain adequate numbers of nets.\n\nFor reference, we also plot on Figure 6 the 920 million additional LLINs calculated by countries as required for universal coverage of targeted populations by 2017 under the RBM-HWG needs assessment exercise. Under current levels of over-allocation and net loss, we estimate that by the end of 2017 this quantity of new LLINs would translate into 77% access (among those populations targeted by countries for ITN coverage) and, assuming current behaviour patterns continue, 68% sleeping under an ITN. Under the combined efficiency scenario with minimised over-allocation and 3-yr median ITN retention time, however, the 920 million nets would approach universal access (slightly over 95%).\n\n## Discussion\n\nBy linking manufacturer, programme and national survey data using a conceptually simple model framework, the intention has been to provide a transparent and intuitive mechanism for tracking net crops and resulting household coverage that reflects the input data while simultaneously providing a range of insights about the system itself. In doing so we have been able to (i) provide a new approach for estimating past trends and contemporary levels of ITN coverage; (ii) explore the effects of uneven net distribution between households and the rates of net loss once in households; and (iii) use these insights to estimate how many LLINs are likely to be required to achieve different coverage targets in sub-Saharan Africa.\n\nWe have, for the first time, extended dynamic model-derived estimation of ITN coverage to all four internationally recognized indicators, along with the two 'gap' metrics. Our results reinforce a simple message: while gains in ITN coverage have been impressive, there remains an enormous challenge if the goal of universal access is to be achieved and sustained. The importance of the new expanded suite of indicators is also exemplified: while an encouraging two-thirds of households now own at least one ITN, less than half of these have enough to protect everyone who lives there. This ownership gap is narrowing but the disparity remains evident across nearly all countries. Conversely, there is little evidence that non-use of available nets contributes substantially to low coverage levels. We therefore reinforce earlier studies that suggest the overwhelming barrier to not sleeping under an ITN is lack of access rather than lack of use WHO, 2013a; Eisele et al., 2009; 2011; Koenker and Kilian, 2014; Koenker et al., 2014). Of course, non-use may be important in certain local contexts, and finer-scale analysis can support identification of areas where behaviour change communication interventions may be appropriate to reduce it (Kilian et al., 2013).\n\nWe found substantial over-allocation of nets to households already owning a sufficient quantity, and that this became more pronounced as overall ownership levels increased through time. Mass distribution campaigns can, in principle, be designed to minimise over-allocation and maximise evenness of nets allocated to households strictly on the basis of households members and pre-existing nets. As other studies have highlighted, however, any possible commodity savings achieved by such strategies must be compared against the operational cost of these more complex distribution mechanisms (Yukich et al., 2013). What is certain is that over-allocation becomes a major barrier to achieving universal coverage when levels of ITN provision are high because most new incoming nets are simply leading to surpluses in many households, while elsewhere there remains a shortfall. This may have a disproportionately high public health impact if those surplus nets are concentrated in households at lowest risk. Wealthier, better educated and more urban households may be better placed to obtain available nets but are often located in regions of lower transmission (Steketee and Eisele, 2009; Webster et al., 2005). While beyond the scope of the present study, the approaches we have developed here could be extended to consider these issues of equity in coverage versus risk in more detail.\n\nOne of the most important observations in our study is that LLINs may be lost from households at a substantially faster rate than is currently assumed. Importantly, we assess loss by comparing total inputs to countries (from deliveries) to total numbers in households (net crop), and so we measure real losses rather than, for example, reallocation of nets between relatives (Koenker et al., 2014). Longer retention times of the sort observed in some local studies are not supported by the body of evidence we have provided by triangulating large-scale net distributions and household survey data. This more rapid loss rate has potentially important implications for existing guidelines. Current RBM guidance is for mass ITN campaigns to be conducted every 3 years, complemented by continuous distribution of nets via routine channels in order to maintain coverage levels between those campaigns. However, whatever levels of coverage are achieved by a given campaign, we estimate that one-half\u00a0of the campaign nets\u00a0distributed, on average, will not be present in households just 2 years later. Our coverage time-series for many countries suggest that routine distribution channels are not yet compensating fully for this rate of loss, often displaying pronounced dips in coverage levels between mass campaigns. Maintaining higher continuous coverage therefore clearly requires some combination of more frequent campaigns, greater ongoing distribution between campaigns, or more durable nets and improved care behaviour by users that lead to longer overall retention times.\n\nWe considered nets in households as simply present or absent, with no allowance for their condition. In reality, of course, nets may be retained by households (and thus 'present' in our calculations) even when they are badly torn, or have diminished insecticidal properties. As such, our estimates of 'coverage' would be revised downwards if additional measures of net efficacy were included. Our model is able to provide an estimate for every country and every year of the age-profile of ITNs in households. This raises the possibility of extending the predictions to incorporate modelled or observational data on average rates of net degradation in different contexts (Bri\u00ebt et al., 2012) to explore measures of entomologically effective coverage.\n\nTools developed to assist countries to calculate LLIN requirements, have tended to define need using a simple ratio to populations at risk (such as 1.8 people per net), and have made allowances for net loss from households using pre-defined rates of loss. We have been able to show that true LLIN requirements are likely to be considerably larger when the more rapid rates of loss are taken into account, along with the additional effect of likely over-allocation patterns. This more realistic framework not only provides the basis for more accurate needs assessments but identifies the relative importance of these different factors in determining the coverage that can be achieved for a given delivery level. Our analysis of future LLIN needs from the present time to 2017 demonstrates how these factors lead to a pronounced law of diminishing returns: as more nets are introduced to a population, proportional increases in coverage diminish, with over-allocation a particular problem at high net provision levels.\n\nUnder business-as-usual, the number of nets required to approach full coverage is prohibitively large. Clearly, however, reducing current system inefficiencies and increasing net retention are not straightforward and already the subject of much attention by countries and international partners. Over-allocation is the complex result of different distribution strategies and varying levels of population access to services, and any solution comes with its own cost. Net retention can doubtless be increased by improved LLIN technology coupled with behaviour-change communication efforts, although it is also feasible that retention times may reduce when overall net provision increases (with new nets displacing older ones). Additionally, we look only at the RBM definition of use and ignore the effectiveness of nets in repelling mosquitoes once they are being used. This is potentially an important confounder when considering retention times. While not aiming to provide solutions to these complex challenges, the results we present here provide an analytical framework in which the impact of theoretical efficiency gains can be assessed and this could be extended to include formal cost\u2013effectiveness analysis.\n\nIn conclusion, our results provide evidence that LLIN requirements to achieve universal coverage have been underestimated. If obtaining higher coverage remains an accepted goal of the international community, then larger LLIN volumes must be considered and planned for at national and international levels. We emphasise, however, that this would be best achieved in parallel with a renewed focus on maximising the efficiency of coverage achieved for each new net financed. Given that the pattern of diminishing coverage returns for each dollar spent is likely to be unavoidable, the cost\u2013effectiveness of pursuing universal coverage rather than a lower operational target must ultimately be weighed against alternative malaria control investments.\n\n## Materials and methods\n\n### Overview\n\nTwo important preceding studies have sought to model national-level ITN delivery, distribution, and coverage: the Flaxman et al. study (Flaxman et al., 2010) and the work of Albert Killian culminating in the NetCALC tool (Networks, 2014) and a series of related publications (Paintain et al., 2013; Yukich et al., 2013). Although very different in implementation, both approached the problem in a similar two-stage process. First, a mechanism was defined for estimating net crop \u2014 the total number of ITNs in households in a country at a given point in time\u2014taking into account inputs to the system (e.g. deliveries of ITNs to a country) and outputs (e.g. the discard of worn ITNs from households). Second, empirical modelling was used to translate estimated net crops into resulting levels of coverage (e.g. access within households). We have adopted a similar analytical outline, but the models we have developed for each stage differ structurally and conceptually from these earlier efforts. Our underlying principle has been to represent the ITN system in a simple and intuitive way and to parameterise that system using a data-driven approach that minimises the reliance on assumptions or small external datasets. In this Methods section, we describe: (i) the main data sources used; (ii) a new compartmental model for estimating net crop that also offers insights into rates of ITN loss from households; (iii) a new coverage model linking net crop to household net access and use that also assesses the efficiency of between-household distribution (i.e. the extent of over-allocation); and (iv) the use of our models to predict future ITN requirements to meet the goal of universal access. A schematic overview of our analytical framework is provided in Figure 7, and additional methodological detail is provided in the Supplementary Information.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/09672/elife-09672-fig7-v2.jpg)\n\n**Figure 7.:** HH = household;\u00a0ITN, insecticide-treated net; NMCP = National Malaria Control Programme.\n\n### Data\n\nWe used three principal sources of data to fit our models. These are described briefly below and in more detail in Supplementary Information.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/09672/elife-09672-fig8-v2.jpg)\n\n**Figure 8.:** The different types of survey are shown in the key: CAR = Central African Republic; DHS = Demographic and Health Survey; DRC = Democratic Republic of Congo; ITN, insecticide-treated net; MICS = Multiple Indicator Cluster Survey; MIS = Malaria Indicator Survey; STP = S\u00e3o Tom\u00e9 and Pr\u00edncipe.\n\n### Countries and populations at\u00a0risk\n\nOur main analysis covered 40 of the 47 (WHO, 2013a) malaria endemic countries of sub-Saharan Africa. We excluded six endemic countries on the basis that ITNs do not form an important part of their vector control programme, as reported by the respective NMCPs to the African Leaders Malaria Alliance, ALMA (M. Renshaw, pers. comm. 3rd August 2014). These were Botswana, Cape Verde, Namibia, S\u00e3o Tom\u00e9 and Pr\u00edncipe, South Africa and Swaziland. We also excluded the small island nation of Mayotte, for which no ITN delivery or distribution data were available. We limited all analyses to those populations categorized as being at risk by NMCPs (WHO, 2013a). When interpreting NMCP distribution and household ownership data, we made the simplifying assumption that all reported ITNs were distributed among, and owned within, households situated in malaria endemic regions (Burgert et al., 2012). Additionally, we used data from African Leaders Malaria Alliance (ALMA) on the proportion of populations at risk targeted for ITNs versus IRS, and downscaled targeted populations at risk accordingly. It should be noted that restricting the distribution of ITNs to populations at risk makes the assumption that no ITNs are distributed to populations not at risk.\n\n### Estimating national net\u00a0crops through time\n\nLike Flaxman et al.(Flaxman et al., 2010), we represented national ITN systems using a discrete time stock-and-flow model. In this structure, a series of compartments were defined that contained a given number of nets at each time-step, with possible movement of nets from one compartment to another between time-steps (see Supplementary Information). Nets delivered to a country by manufacturers were modelled as first entering a 'country stock' compartment (stored in-country but not yet distributed to households). Nets were then available from this stock for distribution to households by the NMCP or other distribution channels. Years where NMCP distributions were smaller than available country stock represented potential \u2018under-distribution\u2019, with nets left to stockpile rather than reaching households. However, because of the uncertainty associated with NMCP distribution data, these discrepancies could simply reflect under-reporting of distribution levels. To accommodate this uncertainty, we specified the number of nets distributed in a given year as a range, with all available country stock as one extreme (the maximum nets that could be delivered) and the NMCP-reported value (the assumed minimum distribution level) as the other.\n\nNew nets reaching households joined older nets remaining from earlier time-steps to constitute the total household net crop, with the duration of net retention by households described by a loss function. In this representation, the net crop simply reflected the differences over time between inputs to and outputs from households. This meant that distribution, net crop, and the loss function together formed a closed system: the three must triangulate exactly and knowledge of any two components allowed the third to be calculated directly. Flaxman et al. (Flaxman et al., 2010) assembled data from six studies on ITN durability and rates of loss. Using a loss function fitted to these data, however, they found that the three components tended not to triangulate: net crops observed in surveys were too small, given the data on nets distributed to households and their modelled rate of loss. Their interpretation was that the number of ITNs distributed each year may be systematically over-reported by NMCPs, and a 'bias parameter' was included in the model, adjusting downward the volume of nets entering households in each country compared with reported levels. As described above, we took a different approach: with no a priori expectation that NMCP distribution reports exaggerate distribution levels. Rather than fitting the loss function to a small external dataset, we fitted this function directly to the distribution and net crop data within the stock-and-flow model itself. Conceptually, this reflected the view that the 560 country-years of distribution data triangulated against the 102 survey-derived national net crop values represented a more impartial and data-driven way of inferring rates of loss than using limited data from local ITN retention studies. Loss functions were fitted on a country-by-country basis, allowed to vary through time, and defined separately for cITNs and LLINs. We compared these fitted loss functions to existing assumptions about rates of net loss from households. The stock-and-flow model was fitted using Bayesian inference and Markov chain Monte Carlo (MCMC), providing time-series estimates of national household net crop for cITNs and LLINs in each country along with evaluation of under-distribution, all with posterior credible intervals. A complete technical description is provided in the Supplementary Information.\n\n### Estimating\u00a0national ITN access and\u00a0use\u00a0indicators from\u00a0net\u00a0crop\n\nLevels of ITN access within households depend not only on the total number of ITNs in a country (i.e. net crop), but on how those nets are distributed between households. In simple terms, a more even distribution yields a greater proportion of households owning nets than if those same nets are concentrated in fewer households. Many recent national surveys report the number of ITNs observed in each surveyed household. This allows, a histogram to be generated that summarises the net ownership pattern (i.e. the proportion of households with zero nets, one net, two nets and so on). By analysing such data from multiple surveys, previous studies have demonstrated that histograms for different countries vary in a broadly predictable way according to national net crop (Flaxman et al., 2010; Yukich et al., 2013). By representing these histograms using a formal statistical distribution (such as the negative binomial), and linking its parameters to net crop, predicted histograms can be generated for any country-year for which a net crop estimate is available (Flaxman et al., 2010; Yukich et al., 2013). These histograms, in turn, allow direct calculation of the first access coverage indicator (% households owning one or more ITN). We took the view that this approach\u2014linking net crop to a statistical distribution, and using the distribution to calculate access indicators\u2014is preferable to the alternative of regressing the access indicators against net crop directly. The latter approach, used in the NetCalc tool (Networks, 2014), is simpler but provides less direct insight into the patterns of between-household ITN distribution that ultimately link net crops to access levels.\n\nOne aspect that is known to strongly influence the relationship between net crop and household ownership distribution is the size of households found in different countries (Networks, 2014; Yukich et al., 2013), which varies greatly across sub-Saharan Africa (Swaziland, for example has an average household size of around three members, while in Senegal the average is nearly ten). Household size also, of course, determines whether a given number of owned nets will be sufficient to provide access to all residents. We extended earlier analyses (Flaxman et al., 2010; Yukich et al., 2013) to explicitly account for household size: using a bivariate (i.e. two- rather than one-dimensional) histogram model to link net crop to ownership distributions for each household size stratum (see Supplementary Information). We replaced the negative binomial distribution with a 2-d zero-truncated Poisson distribution and, for each household size stratum, fitted the distribution using two parameters: (i) the proportion of households with zero ITNs and (ii) the mean number of ITNs per ITN-owning household. Using the household-level data from 83 national surveys, we found that both parameters were strongly related to national net crop, allowing bivariate histograms to be generated for every country-year that were closely representative of the true ITN ownership distribution.\n\nStratifying our analysis by household size had three important advantages over earlier approaches. First, the distribution of net ownership tended to vary substantially between households of different sizes within a given country and this variation would be missed if all households were considered together. Accounting for this enabled better fits to the data. This makes sense: all else being equal, larger households would be expected to own more nets than smaller ones and so distribution patterns would differ systematically. Second, the bivariate ownership histograms predicted for each country-year could be used to directly calculate all three indicators of household access. While a simple univariate histogram allows calculation of % households with at least one ITN, a bivariate histogram means the number of both ITNs and people in every household can be triangulated which, in turn, allows direct calculation of the two additional indicators: % households with at least one ITN for every two people and % population with access to an ITN within their household, along with the 'ownership gap' (see Supplementary Information). Linking these bivariate histograms to our annual net crop estimates for each country meant we could predict time-series of the access indicators at the national level from 2000\u20132013, with all parameters fitted in a Bayesian framework providing posterior credible intervals around each time-series. We also combined the country-level results to generate a set of continent-level indicator time-series, representing overall coverage levels among populations at risk in the 40 endemic countries. Third, the bivariate histograms allowed analysis of over-allocation: certain cells of the histogram represented households owning more ITNs than were required to achieve access on a one-between-two basis, and the proportion of the total net crop falling in this category was examined through time for every country.\n\nWe took a different approach for the final indicator, % population who slept under an ITN the previous night. ITN use is less directly linked to national net crop and is primarily determined by the availability of nets within households (Eisele et al., 2009). A total of 83 of the 102 national surveys contained data allowing the relationship to be explored between ITN use and each of the three access indicators with, perhaps unsurprisingly, % population with access to an ITN within their household displaying the largest correlation (adjusted R2= 0.96). We fitted this relationship across the 83 surveys using a simple Bayesian regression model (see Supplementary Information) and used it to predict time-series of the ITN use indicator for every country. The ratio of population use to access revealed the 'usage gap'\u2014the fraction of the population with access to ITNs not using them\u2014and between-country variation in this ratio was also explored.\n\n### Estimating ITN requirements to achieve universal access\n\nOur two-stage modelling framework represented the pathway from ITN delivery into countries through to resulting levels of net access and use in households. It also accounted for two potential factors that act to reduce access levels, and allowed these to be quantified through time for each country. Using this architecture, it was possible to simulate delivery of any hypothetical volume of ITNs to a given country over a given future time period, to predict the levels of access and use that would result, and to examine the impact of different amounts of over-allocation and net loss. The current needs assessment exercise that countries are undertaking (RBM-HWG, 2014; RBM, 2014) is designed to identify the number of LLINs required to achieve coverage targets by 2017. We used our model to estimate the levels of access likely to be achieved if these forecast LLIN commodity needs were met across the 2014\u20132017 period under a 'business as usual' scenario, that\u00a0is, with current levels of over-allocation and net loss, and compared these predicted levels with the objective of universal access among target populations. We then generalized this experiment to predict the likely level of coverage (for all four indicators) achievable by 2017 under a broad spectrum of LLIN delivery levels, equivalent to a total for sub-Saharan Africa (two of the 40 endemic countries in our study did not participate in the RBM-HWG needs assessment exercise [Djibouti and Equatorial Guinea], and so our scenario analysis is based on the set of 38 remaining countries;\u00a0to maintain comparability through time, we combined needs assessment data for mainland Tanzania and Zanzibar, and for Sudan and South Sudan)\u00a0of between zero and 2.5 billion nets across the 4-year period. Further, we ran these simulations under four scenarios: (i) 'business-as-usual' (where current levels of over-allocation and net loss were maintained); (ii) with no over-allocation (new LLINs are distributed preferentially to those households with zero LLINs, then to those with less than one-between-two); (iii) with reduced LLIN net loss by households (using a modelled 3-year median retention time); and (iv) with both no over-allocation and a 3-year median retention time.\n",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "8dd4f62e-fb94-43c9-8b91-a216ec02d46b",
+      "submission_id": "edc6107e-03a3-415c-a420-4a31f6714632",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Catherine Kyobutungi, Africa Population Health Research Center , Kenya\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.09672.021](https://doi.org/10.7554/eLife.09672.021)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"Coverage and system efficiencies of insecticide-treated nets in Africa from 2000 to 2017\" for peer review at eLife. Your submission has been favorably evaluated by Prabhat Jha (Senior editor), Catherine Kyobutungi (Reviewing editor) and two reviewers, one of whom has agreed to reveal her identity: Eline Korenromp.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe authors, using data from 102 national surveys, triangulated against delivery data and distribution reports, developed a Bayesian model to generate year-by-year estimates of four ITN coverage indicators: i)% households with at least one ITN; ii)% of children under five who slept under an ITN the previous night; iii)% household with at least one ITN for every two people; and iv)% of the population with access to an ITN within their household.\n\nThe authors also explored the impact of two potential 'inefficiencies': uneven net distribution among households and rapid rates of net loss from households. The findings show worsening of over-allocation (a measure of inefficiency) over time as overall net provision has increased, and more rapid ITN loss from households than previously thought. This has implications on the universal coverage (only 77%) that can be expected from the current estimate of 920 million additional ITNs that have been computed as the need through 2017. By improving efficiency, however, the 920 million ITNs could yield population access as high as 95%.\n\nThe study presents an important situation analysis, of progress in distribution and resulting protective coverage with ITNs, the primary malaria prevention strategy in most of the high-malaria-burden countries in Africa. The dynamic model developed for this purpose is elegant, building on and refining earlier analysis, and adds value by producing more credible and considerably different estimates of the extent that ITNs are mis-allocated to some households, and the high rates of loss of ITNs from households \u2013 with the resulting inefficiencies varying among countries. The up-to-date estimates of ITN use will be useful to other researchers. Building on similar previous work, the authors have developed a model which allows them to break down coverage into estimates of multiple indicators that take account of the variation in household size, and this is an important advance on previous work. The paper also has projections of the coverage achieved if distribution can be done more efficiently or if people retain their nets for longer \u2013 this is also novel.\n\nEssential revisions:\n\nThe areas of concern include the following:\n\n1) The absence of concrete suggestions on how national malaria control programs could aim to reduce the identified inefficiencies, specifically over-allocation of ITNs. The authors should give examples of the operational strategies for better targeting and/or pre-screening of households' current ITN situation, and indicate which of these has proven to work, in what settings.\n\n2) Different choices could have been made in the modelling, and this makes some of the conclusions more uncertain than what is currently presented. The authors should discuss these points and consider which outputs are most sensitive to the modelling choices. The estimates of the various indicators up to the present might not be much affected, but the projections forwards would be.\n\n3) The net loss function (the rate at which people discard nets) is estimated by combining the numbers of nets entering a country, the number reported as distributed by control programmes, and the numbers owned by households. Flaxman et al. found that nets were retained were much longer than would be expected from matching up the distribution data and coverage data from cross-sectional surveys and as a result they introduced bias parameters to account for the discrepancy between data sources. It is not clear how this was handled in the modelling. The authors should describe this aspect of the methodology and the implications on the findings.\n\nMinor points:\n\nThe estimated sharp fluctuations over time in ITN coverage indicators in some countries: are these real (if periodic campaigns dominate distributions?), or reflecting missing or incomplete data, e.g. in NMCP-reported distributions? In particular, comment on the odd time patterns in DRC and Ghana and/or a few other countries with irregular patterns.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Coverage and system efficiencies of insecticide-treated nets in Africa from 2000 to 2017\" for further consideration at eLife. Your revised article has been favorably evaluated by Prabhat Jha (Senior editor), a Reviewing editor, and two reviewers. The manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nThe reviewers still have concerns about the conclusions on net retention. The model in this paper only estimates ITN retention indirectly while the six studies that Flaxman depended on were directly measuring it. The bias parameters of Flaxman et al. were introduced because of a discrepancy between the different sources of data, if a loss function of longer duration is used. This discrepancy could be due to systematic differences between the data sources, and so the reviewers feel that the conclusion of the present paper that nets are retained for a shorter time than was previously thought is less certain than the authors suggest. This also has implications for the point about sharp fluctuations in the predicted ITN coverage over time, which presumably would be smoother with a loss function of longer duration.\n\nWe recommend that the authors conduct a sensitivity analysis that assumes longer retention of nets, showing how any projections change. In any case this uncertainty should be acknowledged and the implications for the projections discussed.\n\nIn addition, net loss and retention consider the physical presence of the ITNs in households, but not their effectiveness in repelling mosquitoes. According to manufacturer and WHOPES evidence and guidance on ITN's effective durability, is it justified to assume a median 36-month retention (in the optimized scenario), or does this imply a proportion of ITNs modelled as effective for longer than is realistically assumed? The authors should expound on this point in the discussion \u2013 for LLINs specifically\n\nFor the country-level estimates: Are the 4 international indicators (ownership, access, usage) calculated and shown for each country's overall national population (including sub-populations at no risk, just as the DHS, MICS and MIS surveys) or for the sub-population at risk of malaria? What assumptions, if any, are made about (mis-)allocation of ITNs to populations not at risk of malaria? Please clarify this in the appropriate section of the manuscript\n\nMinor suggested edits:\n\nIf the world limit allows, please define 'Population access' in the Abstract.\n\nParagraph three, subsection \u201cNet Loss\u201d, 'minimised over-allocation': From the annex (and subsection \u201cEstimating ITN Requirements to Achieve Universal Access\u201d) it seems that this is ZERO over-allocation; please qualify or rephrase accordingly.\n\nAppendix 1\u2014figure 2:\n\na) Parts of the diagram are confusing or not clear \u2013 please correct as needed:b) An arrow (or, equality sign) is missing from HH-level ITN ownership to the box below (National total ITNs in HH?). c) An arrow missing from National net crop to, Observed bivariate histogramsd) National net crop equals National total ITNs in HH 5 boxes below, but the equality is not indicated.\n\nAppendix 1: The scaling across countries to get to continent-totals is not very clear.\n",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "79a2fd12-6944-4264-b54e-b5cde313772f",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C1",
+      "claim": "Insecticide-treated nets (ITNs) comprise conventional (cITNs) and long-lasting insecticidal nets (LLINs).",
+      "claim_type": "EXPLICIT",
+      "source": "Insecticide-treated nets (ITNs), which comprise conventional (cITNs) and long-lasting insecticidal nets (LLINs), are the single most widely used intervention for malaria control in Africa, proven to significantly reduce morbidity and mortality via direct protection and community-wide reductions in transmission (Lim et al., 2011; Lengeler and Lengeler, 2004; Eisele et al., 2010; Killeen et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement that establishes the composition of ITNs, supported by established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "1b7976cf-2eb8-4967-a781-8f0b1e2aa5e4",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C2",
+      "claim": "ITNs are proven to significantly reduce malaria morbidity and mortality via direct protection and community-wide reductions in transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Insecticide-treated nets (ITNs), which comprise conventional (cITNs) and long-lasting insecticidal nets (LLINs), are the single most widely used intervention for malaria control in Africa, proven to significantly reduce morbidity and mortality via direct protection and community-wide reductions in transmission (Lim et al., 2011; Lengeler and Lengeler, 2004; Eisele et al., 2010; Killeen et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "0c8112f3-2bc7-4184-8a58-88859630249c",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C3",
+      "claim": "ITNs are the single most widely used intervention for malaria control in Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "Insecticide-treated nets (ITNs), which comprise conventional (cITNs) and long-lasting insecticidal nets (LLINs), are the single most widely used intervention for malaria control in Africa, proven to significantly reduce morbidity and mortality via direct protection and community-wide reductions in transmission (Lim et al., 2011; Lengeler and Lengeler, 2004; Eisele et al., 2010; Killeen et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations and represents established knowledge about malaria control interventions.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "54215050-09ca-45b3-8de6-0590721a1161",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C4",
+      "claim": "The World Health Organization (WHO) promotes a target of universal coverage for all populations at risk with either ITNs or indoor residual spraying (IRS).",
+      "claim_type": "EXPLICIT",
+      "source": "The World Health Organization (WHO) promotes a target of universal coverage for all populations at risk with either ITNs or indoor residual spraying (IRS), with the former representing the primary vector control tool in nearly all endemic African countries (WHO, 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to WHO documentation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "7142232b-cb72-414d-8636-7451b15c5205",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C5",
+      "claim": "ITNs represent the primary vector control tool in nearly all endemic African countries.",
+      "claim_type": "EXPLICIT",
+      "source": "The World Health Organization (WHO) promotes a target of universal coverage for all populations at risk with either ITNs or indoor residual spraying (IRS), with the former representing the primary vector control tool in nearly all endemic African countries (WHO, 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to WHO documentation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "fda69e0e-0c8f-44f9-8c42-dd7fca190a9a",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C6",
+      "claim": "The international community has invested billions of dollars in the provision of at least 700 million LLINs since 2004.",
+      "claim_type": "EXPLICIT",
+      "source": "The international community has invested billions of dollars in the provision of at least 700 million LLINs since 2004 (WHO, 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to WHO documentation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "fed269bf-d220-4785-9e80-a03094ceeb13",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C7",
+      "claim": "These investments have led to enormous scale up in population access to ITNs.",
+      "claim_type": "EXPLICIT",
+      "source": "While these investments have led to enormous scale up in population access to ITNs (Noor et al., 2009; Monasch et al., 2004), the target of universal coverage remains distant and millions of African households at risk remain unprotected (WHO, 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "6f27c9ae-7df8-4483-aaf9-81b375df4b17",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C8",
+      "claim": "The target of universal coverage remains distant and millions of African households at risk remain unprotected.",
+      "claim_type": "EXPLICIT",
+      "source": "While these investments have led to enormous scale up in population access to ITNs (Noor et al., 2009; Monasch et al., 2004), the target of universal coverage remains distant and millions of African households at risk remain unprotected (WHO, 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to WHO documentation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "c8f9bab4-3896-4513-90c4-dabb9bf1c289",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C9",
+      "claim": "Gold standard measurements of ITN coverage indicators are provided by nationally representative household surveys such as Demographic and Health Surveys (DHS), Multiple Indicator Cluster Surveys (MICS), and Malaria Indicator Surveys (MIS).",
+      "claim_type": "EXPLICIT",
+      "source": "Gold standard measurements of these indicators are provided by nationally representative household surveys such as Demographic and Health Surveys (DHS) (Measure, 2014), Multiple Indicator Cluster Surveys (MICS) (UNICEF, 2012), and Malaria Indicator Surveys (MIS) (RBM, 2014a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to the survey programs and represents established knowledge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "80a873c8-74be-48b6-ac98-67925601f812",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C10",
+      "claim": "Nationally representative household surveys are carried out relatively infrequently.",
+      "claim_type": "EXPLICIT",
+      "source": "These surveys are carried out relatively infrequently, however, meaning they cannot be used directly for evaluating year-on-year coverage trends or for generating timely estimates of continent-wide coverage levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the nature of survey implementation and its implications for monitoring.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "b995a746-2922-4ad7-9c6f-c175708e8e8e",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C11",
+      "claim": "Household surveys cannot be used directly for evaluating year-on-year coverage trends or for generating timely estimates of continent-wide coverage levels.",
+      "claim_type": "EXPLICIT",
+      "source": "These surveys are carried out relatively infrequently, however, meaning they cannot be used directly for evaluating year-on-year coverage trends or for generating timely estimates of continent-wide coverage levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the infrequent nature of surveys.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "d55bacfe-b914-4e4b-8bf0-df6b9b131147",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C12",
+      "claim": "Programmatic data such as the number of ITNs delivered and distributed within countries are available for most countries and years.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, programmatic data such as the number of ITNs delivered and distributed within countries, while not describing coverage directly, are available for most countries and years (WHO, 2013a ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to WHO documentation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "af0f64c3-1bda-44fe-8a34-30bcc5ac59a0",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C13",
+      "claim": "Flaxman and colleagues used a compartmental modelling approach to link programmatic and survey data, generating annual estimates of two ITN indicators.",
+      "claim_type": "EXPLICIT",
+      "source": "In a 2009 study, Flaxman and colleagues (Flaxman et al., 2010) used a compartmental modelling approach to link these programmatic and survey data, generating annual estimates of the two ITN indicators recommended at that time on access (% households with at least one ITN) and use (% children < 5 years old who slept under an ITN the previous night).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to the Flaxman et al. study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "6b8471c8-a927-4af0-b90b-62e9c95db88a",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C14",
+      "claim": "An intra-household 'ownership gap' may exist whereby many households with some nets may not have enough for one net between two occupants.",
+      "claim_type": "EXPLICIT",
+      "source": "An intra-household 'ownership gap' may exist whereby many households with some nets may not have enough for one net between two occupants (the recommended minimum level of protection (WHO, 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to WHO guidance and represents a conceptual understanding of coverage gaps.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "7060d566-a505-44f6-81b7-fae5cda87dd9",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C15",
+      "claim": "One net between two occupants is the recommended minimum level of protection.",
+      "claim_type": "EXPLICIT",
+      "source": "An intra-household 'ownership gap' may exist whereby many households with some nets may not have enough for one net between two occupants (the recommended minimum level of protection (WHO, 2013b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to WHO guidance.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "fae2b5ed-89d0-463f-a0f0-3f868c04ba01",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C16",
+      "claim": "A 'usage gap' may exist whereby individuals with access to a net do not sleep under it.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, a 'usage gap' may exist whereby individuals with access to a net do not sleep under it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents a conceptual understanding of coverage gaps based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "779aa4b1-ebfb-49cd-9dcb-5eb259cc6bfd",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C17",
+      "claim": "The measurement of two additional ITN indicators was recommended: % households with at least one ITN for every two people and % population with access to an ITN within their household.",
+      "claim_type": "EXPLICIT",
+      "source": "In response, the measurement of two additional indicators was recommended: % households with at least one ITN for every two people and % population with access to an ITN within their household (assuming each net was used by two people) (RBM, UNICEF, WHO, 2013; RBM, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to RBM, UNICEF, and WHO guidance documents.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "16313b23-40ea-47cc-92c2-3790ce2b9781",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C18",
+      "claim": "The indicator on usage was extended to include the entire population rather than only children under 5 years old.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the indicator on usage was extended to include the entire population rather than only children under 5 years old.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents a change in indicator definition based on established guidance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "20cc7d00-da8c-446f-9cb2-afe8e78ba68b",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C19",
+      "claim": "Countries have an ongoing struggle to maintain high LLIN coverage in the face of continuous loss of nets from households due to damage, repurposing, or movement away from target areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Countries have an ongoing struggle to maintain high LLIN coverage in the face of continuous loss of nets from households due to damage, repurposing, or movement away from target areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established knowledge about challenges in maintaining ITN coverage.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "a6f2fbfb-91bb-497a-b2f8-f0738ceb3ce2",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C20",
+      "claim": "The rate of net loss and the degree of over-allocation of new nets play a key role in determining how efficiently delivery to countries will translate into household coverage levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the rate of net loss and the degree of over-allocation of new nets play a key role in determining how efficiently delivery to countries will translate into household coverage levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the factors affecting coverage efficiency.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "36362938-b16f-4e44-92fe-3abc3ace5899",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C21",
+      "claim": "The WHO define universal access to ITNs on the basis that two people can share one net.",
+      "claim_type": "EXPLICIT",
+      "source": "The WHO define universal access to ITNs on the basis that two people can share one net.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established WHO guidance.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "9e9949b3-79ab-4fcc-8523-1d0ed810c8fb",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C22",
+      "claim": "Using the working assumptions of a 3-year ITN lifespan and a 1.8 person-per-net ratio, a simple calculation yields an indicative estimate of 150 million new nets required each year to provide universal coverage to an African population at risk of around 810 million.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the working assumptions of a 3-year ITN lifespan and a 1.8 person-per-net ratio (one-between-two but allowing for odd-numbered households), a simple calculation yields an indicative estimate of 150 million new nets required each year to provide universal coverage to an African population at risk of around 810 million (WHO, 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to WHO documentation and represents a calculation based on stated assumptions.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "d4ada0e1-5068-4708-a525-7e03b40dac24",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C23",
+      "claim": "41 of the 47 endemic African countries have implemented the RBM-HWG needs assessment approach.",
+      "claim_type": "EXPLICIT",
+      "source": "To support country planning and donor application processes (RBM-HWG, 2014), a more elaborate needs assessment approach has been developed by the RBM Harmonization Working Group (RBM-HWG) and implemented by 41 of the 47 endemic African countries (RBM, 2014; Paintain et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to RBM documentation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "5e00b350-acd1-4fb0-8474-e92b277cb94c",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C24",
+      "claim": "Countries have calculated a continent-wide need for 920 million ITNs over the 2014\u20132017 period (approximately 230 million per year).",
+      "claim_type": "EXPLICIT",
+      "source": "Countries have used these inputs to calculate requirements for new nets to achieve national coverage targets, leading to an estimated continent-wide need for 920 million ITNs over the 2014\u20132017 period (approximately 230 million per year) (RBM, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to RBM documentation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "51b96e9c-18f1-407f-8ca7-90af7a19cf1c",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C25",
+      "claim": "Some 718 million LLINs have been delivered across the 40 endemic countries since their introduction in 2004.",
+      "claim_type": "EXPLICIT",
+      "source": "Some 718 million LLINs have been delivered across the 40 endemic countries since their introduction in 2004.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on data analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "2399c7d3-5b63-4f88-b246-aef1199abb8b",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C26",
+      "claim": "Annual LLIN deliveries increased year-on-year from 2004 to 2010, reaching 145 million in that year.",
+      "claim_type": "EXPLICIT",
+      "source": "As is well documented (WHO, 2013a), annual LLIN deliveries increased year-on-year from 2004 to 2010, reaching 145 million in that year, but then declined dramatically in 2011 and 2012 to less than half that amount before rising again to 143 million in 2013 (green line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1A and cited WHO documentation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "3f8966aa-9edf-4c89-bead-9d8b14f8cfd7",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C27",
+      "claim": "LLIN deliveries declined dramatically in 2011 and 2012 to less than half the 2010 amount before rising again to 143 million in 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "As is well documented (WHO, 2013a), annual LLIN deliveries increased year-on-year from 2004 to 2010, reaching 145 million in that year, but then declined dramatically in 2011 and 2012 to less than half that amount before rising again to 143 million in 2013 (green line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1A and cited WHO documentation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "397b71e6-caca-46ba-8c6b-46be21db6455",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C28",
+      "claim": "There were 252 million LLINs in sub-Saharan households by the end of 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate that there were 252 million LLINs in sub-Saharan households by the end of 2013, with that net crop growing approximately linearly from 2004, with the exception of a slow-down resulting from the reduced supply of nets in 2011\u20132012.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an estimate derived from the model analysis presented in the study, shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "8da1ba2d-a061-4601-8656-38dedf9aad63",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C29",
+      "claim": "The net crop grew approximately linearly from 2004, with the exception of a slow-down resulting from the reduced supply of nets in 2011\u20132012.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate that there were 252 million LLINs in sub-Saharan households by the end of 2013, with that net crop growing approximately linearly from 2004, with the exception of a slow-down resulting from the reduced supply of nets in 2011\u20132012.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the data analysis and model results shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "62a195fa-6b74-4c75-85f9-896475a99ac0",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C30",
+      "claim": "cITNs constituted nearly all ITNs prior to 2005 but diminished rapidly in importance following the introduction of LLINs thereafter.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 1B shows equivalent distribution and resulting net crop estimates for cITNs, which constituted nearly all ITNs prior to 2005 but diminished rapidly in importance following the introduction of LLINs thereafter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "95f6a328-9f70-4732-9525-a3f1be1be5df",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C31",
+      "claim": "By the end of 2013, around two-thirds (66%, 95% CI 62%\u201371%) of households at risk owned at least one ITN.",
+      "claim_type": "EXPLICIT",
+      "source": "By the end of 2013, we estimate that around two-thirds (66%, 95% CI 62%\u201371%) of households at risk owned at least one ITN.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an estimate derived from the model analysis, shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "c38c23d0-b1ef-4c87-8f14-67371f1ebebc",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C32",
+      "claim": "Less than one-third (31%, 29%\u201334%) of households owned enough ITNs for one ITN between two people by the end of 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "However, less than one-third (31%, 29%\u201334%) owned enough for one ITN between two people.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an estimate derived from the model analysis, shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "328a4f4f-6de1-433b-9dc6-d0ee0a6c0afb",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C33",
+      "claim": "48% (45%\u201351%) of people at risk had access to an ITN within their household (on a one-between-two basis) by the end of 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "This much lower level of adequate ownership is reflected in the levels of access and use, with 48% (45%\u201351%) of people at risk having access to an ITN within their household (on a one-between-two basis) and 43% (39%\u201346%) sleeping under an ITN the previous night.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an estimate derived from the model analysis, shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "e2807e82-6a34-4d51-8049-7b9026d26199",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C34",
+      "claim": "43% (39%\u201346%) of people at risk slept under an ITN the previous night by the end of 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "This much lower level of adequate ownership is reflected in the levels of access and use, with 48% (45%\u201351%) of people at risk having access to an ITN within their household (on a one-between-two basis) and 43% (39%\u201346%) sleeping under an ITN the previous night.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an estimate derived from the model analysis, shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "12aa4310-3a65-4988-a469-133bdb38b989",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C35",
+      "claim": "The ownership gap has been narrowed from 77% (76%\u201378%) of net-owning households having insufficient nets in 2000 to 56% (54%\u201357%) in 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "Encouragingly, this gap has been narrowed from 77% (76%\u201378%) of net-owning households having insufficient nets in 2000 to 56% (54%\u201357%) in 2013.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an estimate derived from the model analysis, shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "ef9a3423-a2a6-4304-b978-c58800347094",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C36",
+      "claim": "A large majority (89%, 84%\u201393%) of those with access to an ITN in the household slept under it the previous night.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the 'use gap' suggested a large majority (89%, 84%\u201393%) of those with access to an ITN in the household slept under it the previous night, and we found no evidence of significant change in this proportion through time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate derived from the model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "e37450e7-1c93-4426-a788-2618b78a74e3",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C37",
+      "claim": "There was no evidence of significant change in the proportion of those with access who slept under an ITN through time.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the 'use gap' suggested a large majority (89%, 84%\u201393%) of those with access to an ITN in the household slept under it the previous night, and we found no evidence of significant change in this proportion through time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "a1946238-7a7f-4d06-bad3-a284f5173af2",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C38",
+      "claim": "Nearly all countries began with very low coverage levels in 2000 and display a marked inflection point towards the middle of the decade.",
+      "claim_type": "EXPLICIT",
+      "source": "Nearly all countries began with very low coverage levels in 2000 and display a marked inflection point towards the middle of the decade, although there was considerable variation in the timing of onset of concerted scale-up activities.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation based on the data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "2783d3fb-408a-4f72-9614-613fe5bb21ef",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C39",
+      "claim": "There was considerable variation in the timing of onset of concerted scale-up activities across countries.",
+      "claim_type": "EXPLICIT",
+      "source": "Nearly all countries began with very low coverage levels in 2000 and display a marked inflection point towards the middle of the decade, although there was considerable variation in the timing of onset of concerted scale-up activities.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation based on the data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "32b571b0-15a8-4220-a22e-05be86b00431",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C40",
+      "claim": "The monotonic increases in coverage seen at the aggregated continental level are often replaced at national level with pronounced periods of rise and fall.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the monotonic increases in coverage seen at the aggregated continental level are often replaced at national level with pronounced periods of rise and fall, and in many cases, 2013 does not represent the peak year.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation based on the data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "ca5dbfb2-4bbd-40fe-a4fa-cab1d72c85ad",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C41",
+      "claim": "In many cases, 2013 does not represent the peak year for ITN coverage at the national level.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the monotonic increases in coverage seen at the aggregated continental level are often replaced at national level with pronounced periods of rise and fall, and in many cases, 2013 does not represent the peak year.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation based on the data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "74f510c6-1405-49d9-a426-7a538df2c011",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C42",
+      "claim": "The population with access to ITNs within the household was at or below 15% in seven countries in 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "The population with access to ITNs within the household, for example, was at or below 15% in seven countries in 2013, while above 70% for the top four.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation based on the data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "2475d3ed-1f41-4fab-8f30-ffa4d4782088",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C43",
+      "claim": "The population with access to ITNs within the household was above 70% for the top four countries in 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "The population with access to ITNs within the household, for example, was at or below 15% in seven countries in 2013, while above 70% for the top four.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation based on the data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "1462b240-d336-4119-86b4-3a179884a0ff",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C44",
+      "claim": "Over the 14-year period since 2000, on average 15% (12%\u201318%) of all ITNs distributed to households were over-allocated.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the 14-year period since 2000, on average 15% (12%\u201318%) of all ITNs distributed to households were over-allocated (owned by households already owning sufficient nets for one-between-two).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate derived from the model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "d1d2ad8d-2eae-455f-99df-85f0507ce8ba",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C45",
+      "claim": "Around 7% (6%\u20139%) of ITNs were over-allocated in 2000.",
+      "claim_type": "EXPLICIT",
+      "source": "Around 7% (6%\u20139%) of ITNs were over-allocated in 2000, and this has risen steadily to 27% (22%\u201332%) in 2013.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an estimate derived from the model analysis, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "05f90ddd-95cc-4aba-a2ff-c7760e6fa5fd",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C46",
+      "claim": "Over-allocation has risen steadily to 27% (22%\u201332%) in 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "Around 7% (6%\u20139%) of ITNs were over-allocated in 2000, and this has risen steadily to 27% (22%\u201332%) in 2013.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an estimate derived from the model analysis, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "94a0461c-a3e5-44c1-9af6-7819536f189b",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C47",
+      "claim": "Over-allocation increased approximately 15 percentage points for each one-ITN-per-capita increase in net crop.",
+      "claim_type": "EXPLICIT",
+      "source": "The year-on-year increase in over-allocation is to some extent an expected consequence of the overall growth in ITN provision: we found that over-allocation increased approximately 15 percentage points for each one-ITN-per-capita increase in net crop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "608d87b0-5721-4301-8113-8442d5ed7695",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C48",
+      "claim": "Over-allocation varied substantially between countries, ranging in 2013 from 50% (36%\u201365%) in the Republic of the Congo to 11% (9%\u201315%) in C\u00f4te D'Ivoire.",
+      "claim_type": "EXPLICIT",
+      "source": "Over-allocation also varied substantially between countries, for example ranging in 2013 from 50% (36%\u201365%) in the Republic of the Congo to 11% (9%\u201315%) in C\u00f4te D'Ivoire.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "c8f49509-d229-40f6-9a54-423c4c212499",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C49",
+      "claim": "Averaged over all years and all countries, the median retention time for LLINs in households was 23 (20\u201328) months.",
+      "claim_type": "EXPLICIT",
+      "source": "Averaged over all years and all countries, we found the median retention time for LLINs in households was 23 (20\u201328) months.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate derived from the model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "448e4bbb-ae6c-46aa-80b1-f7e67e235fa7",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C50",
+      "claim": "There was no statistically significant evidence of continent-wide temporal trends in retention times.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no statistically significant evidence of continent-wide temporal trends in retention times, but substantial between-country variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "74975798-f834-4657-a748-3c0851bc2115",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C51",
+      "claim": "There was substantial between-country variation in LLIN retention times.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no statistically significant evidence of continent-wide temporal trends in retention times, but substantial between-country variation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the data analysis, shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "07a56be1-eec1-425a-9c5e-51ea65a5bd29",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C52",
+      "claim": "Rates of loss for the first 3 years were greater than both the Flaxman et al. and RBM-HWG alternatives for all countries.",
+      "claim_type": "EXPLICIT",
+      "source": "As can be seen, we found rates of loss for the first 3 years to be greater than both these alternatives for all countries.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison based on the data analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "d501478e-3e40-4af1-8723-7467820fb1b6",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C53",
+      "claim": "Under a business-as-usual scenario, 1 billion LLINs (i.e. an average of 250 million per year) would be required to achieve 80% of the population with access to an LLIN in the household by the end of 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "Under this scenario, we estimate that 1 billion LLINs (i.e. an average of 250 million per year) would be required to achieve 80% of the population with access to an LLIN in the household by the end of 2017, although this would only translate into 70% population use.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a projection based on the model analysis, shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "34383cb5-2fe2-4ec6-8d7a-bc3af94a9d1f",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C54",
+      "claim": "1 billion LLINs would only translate into 70% population use under a business-as-usual scenario.",
+      "claim_type": "EXPLICIT",
+      "source": "Under this scenario, we estimate that 1 billion LLINs (i.e. an average of 250 million per year) would be required to achieve 80% of the population with access to an LLIN in the household by the end of 2017, although this would only translate into 70% population use.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a projection based on the model analysis, shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "d78c416c-34fe-4397-8094-8a8f8fb57b09",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C55",
+      "claim": "In a scenario with minimised over-allocation, 80% population access in 2017 would be achievable with just 700 million nets (175 million per year).",
+      "claim_type": "EXPLICIT",
+      "source": "In a scenario with minimised over-allocation (where over allocation is set to zero), 80% population access in 2017 would be achievable with just 700 million nets (175 million per year).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a projection based on the model analysis, shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "3df9089e-9496-4b73-b837-a3f4c64f0ac9",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C56",
+      "claim": "Reducing ITN loss rate to a 3-year median retention time would have a broadly similar impact, acting in isolation, to minimising over-allocation.",
+      "claim_type": "EXPLICIT",
+      "source": "Reducing ITN loss rate to a 3-year median retention time would have a broadly similar impact, acting in isolation, to minimising over-allocation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison based on the model projections shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "a606f0e2-639f-4b46-8d28-e17a6c82899c",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C57",
+      "claim": "If minimised over-allocation and 3-year median retention were combined, 80% access could be reached in 2017 with around 560 million nets (140 million per year).",
+      "claim_type": "EXPLICIT",
+      "source": "If these two hypothetical efficiency gains were combined, however, 80% access could be reached in 2017 with around 560 million nets (140 million per year).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a projection based on the model analysis, shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "f231f71a-1508-4afd-a846-8a18fb5f40d4",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C58",
+      "claim": "The relative importance of the over-allocation and LLIN loss rates changed as more LLINs were introduced.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the relative importance of the over-allocation and LLIN loss rates changed as more LLINs were introduced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "58f7240f-25a0-42d8-9a4d-abedeaee4697",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C59",
+      "claim": "Increasing LLIN retention times was the most important factor at low levels of net delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing LLIN retention times was the most important factor at low levels of net delivery, but as more and more nets were provided, over-allocation became progressively more important.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "c3c8e8ea-2eac-45d3-a2e4-f7bdcebf1426",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C60",
+      "claim": "As more and more nets were provided, over-allocation became progressively more important.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing LLIN retention times was the most important factor at low levels of net delivery, but as more and more nets were provided, over-allocation became progressively more important.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "e73e6ea6-ff4c-4c1c-b0d5-21dea575703e",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C61",
+      "claim": "Under current levels of over-allocation and net loss, 920 million new LLINs would translate into 77% access (among those populations targeted by countries for ITN coverage) by the end of 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "Under current levels of over-allocation and net loss, we estimate that by the end of 2017 this quantity of new LLINs would translate into 77% access (among those populations targeted by countries for ITN coverage) and, assuming current behaviour patterns continue, 68% sleeping under an ITN.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a projection based on the model analysis, shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "adb78fe7-348c-471f-87cb-3d4798a70c71",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C62",
+      "claim": "Under current levels of over-allocation and net loss, 920 million new LLINs would translate into 68% sleeping under an ITN by the end of 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "Under current levels of over-allocation and net loss, we estimate that by the end of 2017 this quantity of new LLINs would translate into 77% access (among those populations targeted by countries for ITN coverage) and, assuming current behaviour patterns continue, 68% sleeping under an ITN.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a projection based on the model analysis, shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "76b3da44-e86b-4ffa-a834-369368c4b71b",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C63",
+      "claim": "Under the combined efficiency scenario with minimised over-allocation and 3-yr median ITN retention time, the 920 million nets would approach universal access (slightly over 95%).",
+      "claim_type": "EXPLICIT",
+      "source": "Under the combined efficiency scenario with minimised over-allocation and 3-yr median ITN retention time, however, the 920 million nets would approach universal access (slightly over 95%).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a projection based on the model analysis, shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "bc23e16e-6ccf-4ef9-bb52-b1530fbf8e0b",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C64",
+      "claim": "While gains in ITN coverage have been impressive, there remains an enormous challenge if the goal of universal access is to be achieved and sustained.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results reinforce a simple message: while gains in ITN coverage have been impressive, there remains an enormous challenge if the goal of universal access is to be achieved and sustained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data analysis and projections.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "d8c04548-be9d-48fb-ae36-d9e8001b06f7",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C65",
+      "claim": "While an encouraging two-thirds of households now own at least one ITN, less than half of these have enough to protect everyone who lives there.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of the new expanded suite of indicators is also exemplified: while an encouraging two-thirds of households now own at least one ITN, less than half of these have enough to protect everyone who lives there.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "7e5bb32c-90d2-4eca-8913-e8bf03a91f75",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C66",
+      "claim": "There is little evidence that non-use of available nets contributes substantially to low coverage levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, there is little evidence that non-use of available nets contributes substantially to low coverage levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "95008b32-8bb6-4807-b73b-a70174077365",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C67",
+      "claim": "The overwhelming barrier to not sleeping under an ITN is lack of access rather than lack of use.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore reinforce earlier studies that suggest the overwhelming barrier to not sleeping under an ITN is lack of access rather than lack of use WHO, 2013a; Eisele et al., 2009; 2011; Koenker and Kilian, 2014; Koenker et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion supported by the data analysis and citations to prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "8a7a43bb-fac4-4fb7-8706-b295c51c3aa5",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C68",
+      "claim": "Over-allocation becomes a major barrier to achieving universal coverage when levels of ITN provision are high because most new incoming nets are simply leading to surpluses in many households, while elsewhere there remains a shortfall.",
+      "claim_type": "EXPLICIT",
+      "source": "What is certain is that over-allocation becomes a major barrier to achieving universal coverage when levels of ITN provision are high because most new incoming nets are simply leading to surpluses in many households, while elsewhere there remains a shortfall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "8000b80f-f802-44e4-815d-8d7ad181aec7",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C69",
+      "claim": "LLINs may be lost from households at a substantially faster rate than is currently assumed.",
+      "claim_type": "EXPLICIT",
+      "source": "One of the most important observations in our study is that LLINs may be lost from households at a substantially faster rate than is currently assumed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "c48a1697-020c-4ce3-9573-f2c3d95efb05",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C70",
+      "claim": "Longer retention times of the sort observed in some local studies are not supported by the body of evidence provided by triangulating large-scale net distributions and household survey data.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we assess loss by comparing total inputs to countries (from deliveries) to total numbers in households (net crop), and so we measure real losses rather than, for example, reallocation of nets between relatives (Koenker et al., 2014). Longer retention times of the sort observed in some local studies are not supported by the body of evidence we have provided by triangulating large-scale net distributions and household survey data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the data analysis and comparison with other studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "18271372-e4a4-4460-8cce-93f309b7d536",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C71",
+      "claim": "Current RBM guidance is for mass ITN campaigns to be conducted every 3 years, complemented by continuous distribution of nets via routine channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Current RBM guidance is for mass ITN campaigns to be conducted every 3 years, complemented by continuous distribution of nets via routine channels in order to maintain coverage levels between those campaigns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This represents established guidance from RBM.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "6730b968-0f2f-4e77-b3cf-6fcc63c85caf",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C72",
+      "claim": "One-half of the campaign nets distributed, on average, will not be present in households just 2 years later.",
+      "claim_type": "EXPLICIT",
+      "source": "However, whatever levels of coverage are achieved by a given campaign, we estimate that one-half of the campaign nets distributed, on average, will not be present in households just 2 years later.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate derived from the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "15b1ae17-16c8-42a1-b296-e3bc8c26b205",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C73",
+      "claim": "Routine distribution channels are not yet compensating fully for the rate of net loss, often displaying pronounced dips in coverage levels between mass campaigns.",
+      "claim_type": "EXPLICIT",
+      "source": "Our coverage time-series for many countries suggest that routine distribution channels are not yet compensating fully for this rate of loss, often displaying pronounced dips in coverage levels between mass campaigns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation based on the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "19122812-9be6-41c3-a321-d2a967bc1d7c",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C74",
+      "claim": "Maintaining higher continuous coverage requires some combination of more frequent campaigns, greater ongoing distribution between campaigns, or more durable nets and improved care behaviour by users that lead to longer overall retention times.",
+      "claim_type": "EXPLICIT",
+      "source": "Maintaining higher continuous coverage therefore clearly requires some combination of more frequent campaigns, greater ongoing distribution between campaigns, or more durable nets and improved care behaviour by users that lead to longer overall retention times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data analysis and understanding of the system.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "dba6eee2-399f-4d69-bc46-e5eeebfb5892",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C75",
+      "claim": "Estimates of 'coverage' would be revised downwards if additional measures of net efficacy were included.",
+      "claim_type": "EXPLICIT",
+      "source": "We considered nets in households as simply present or absent, with no allowance for their condition. In reality, of course, nets may be retained by households (and thus 'present' in our calculations) even when they are badly torn, or have diminished insecticidal properties. As such, our estimates of 'coverage' would be revised downwards if additional measures of net efficacy were included.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about how the results would change if different assumptions were made.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "7736c3f6-7107-4d5d-9f86-493376f7b006",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C76",
+      "claim": "True LLIN requirements are likely to be considerably larger when the more rapid rates of loss are taken into account, along with the additional effect of likely over-allocation patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "We have been able to show that true LLIN requirements are likely to be considerably larger when the more rapid rates of loss are taken into account, along with the additional effect of likely over-allocation patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the data analysis and projections.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "bfbb5d56-098e-412b-b7f0-70cdac4273c5",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C77",
+      "claim": "Under business-as-usual, the number of nets required to approach full coverage is prohibitively large.",
+      "claim_type": "EXPLICIT",
+      "source": "Under business-as-usual, the number of nets required to approach full coverage is prohibitively large.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the model projections.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "afe8faa7-647e-4398-9d18-7d65394ae588",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C78",
+      "claim": "The pattern of diminishing coverage returns for each dollar spent is likely to be unavoidable.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the pattern of diminishing coverage returns for each dollar spent is likely to be unavoidable, the cost\u2013effectiveness of pursuing universal coverage rather than a lower operational target must ultimately be weighed against alternative malaria control investments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data analysis showing diminishing returns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "7bb4e147-53b9-4d2f-a051-5b84a36c2940",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C79",
+      "claim": "The main analysis covered 40 of the 47 malaria endemic countries of sub-Saharan Africa.",
+      "claim_type": "EXPLICIT",
+      "source": "Our main analysis covered 40 of the 47 (WHO, 2013a) malaria endemic countries of sub-Saharan Africa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "0d4c089f-0c51-4393-985d-b5d88933c90b",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C80",
+      "claim": "Six endemic countries were excluded on the basis that ITNs do not form an important part of their vector control programme: Botswana, Cape Verde, Namibia, S\u00e3o Tom\u00e9 and Pr\u00edncipe, South Africa and Swaziland.",
+      "claim_type": "EXPLICIT",
+      "source": "We excluded six endemic countries on the basis that ITNs do not form an important part of their vector control programme, as reported by the respective NMCPs to the African Leaders Malaria Alliance, ALMA (M. Renshaw, pers. comm. 3rd August 2014). These were Botswana, Cape Verde, Namibia, S\u00e3o Tom\u00e9 and Pr\u00edncipe, South Africa and Swaziland.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study methodology and is based on information from NMCPs.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "c02539df-aa55-4c40-b413-d824058d5c18",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C81",
+      "claim": "Mayotte was excluded because no ITN delivery or distribution data were available.",
+      "claim_type": "EXPLICIT",
+      "source": "We also excluded the small island nation of Mayotte, for which no ITN delivery or distribution data were available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "d88240af-2553-4270-9b08-387db4bba3d0",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C82",
+      "claim": "All analyses were limited to those populations categorized as being at risk by NMCPs.",
+      "claim_type": "EXPLICIT",
+      "source": "We limited all analyses to those populations categorized as being at risk by NMCPs (WHO, 2013a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the study methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "0e22e175-66f1-4982-a6d8-0a0f17ebb9de",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C83",
+      "claim": "The study made the simplifying assumption that all reported ITNs were distributed among, and owned within, households situated in malaria endemic regions.",
+      "claim_type": "EXPLICIT",
+      "source": "When interpreting NMCP distribution and household ownership data, we made the simplifying assumption that all reported ITNs were distributed among, and owned within, households situated in malaria endemic regions (Burgert et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a methodological assumption.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "84b964fb-1f0b-4f5f-8860-fe984921f2fb",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C84",
+      "claim": "A discrete time stock-and-flow model was used to represent national ITN systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Like Flaxman et al.(Flaxman et al., 2010), we represented national ITN systems using a discrete time stock-and-flow model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "7e992432-baf6-4ecf-9455-2a32f19893da",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C85",
+      "claim": "Nets delivered to a country by manufacturers were modelled as first entering a 'country stock' compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "Nets delivered to a country by manufacturers were modelled as first entering a 'country stock' compartment (stored in-country but not yet distributed to households).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the model structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "debdde60-9d6a-4431-901c-d7402ea297f6",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C86",
+      "claim": "The number of nets distributed in a given year was specified as a range, with all available country stock as one extreme and the NMCP-reported value as the other.",
+      "claim_type": "EXPLICIT",
+      "source": "To accommodate this uncertainty, we specified the number of nets distributed in a given year as a range, with all available country stock as one extreme (the maximum nets that could be delivered) and the NMCP-reported value (the assumed minimum distribution level) as the other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach to handling uncertainty.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "d83f080f-87ee-44d4-b7d0-fae8b6f38fda",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C87",
+      "claim": "The loss function was fitted directly to the distribution and net crop data within the stock-and-flow model itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather than fitting the loss function to a small external dataset, we fitted this function directly to the distribution and net crop data within the stock-and-flow model itself.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "73348916-621a-4e2b-97dc-6b3396f77063",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C88",
+      "claim": "Loss functions were fitted on a country-by-country basis, allowed to vary through time, and defined separately for cITNs and LLINs.",
+      "claim_type": "EXPLICIT",
+      "source": "Loss functions were fitted on a country-by-country basis, allowed to vary through time, and defined separately for cITNs and LLINs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "65767445-c6cb-4b56-a900-455c2430a208",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C89",
+      "claim": "The stock-and-flow model was fitted using Bayesian inference and Markov chain Monte Carlo (MCMC).",
+      "claim_type": "EXPLICIT",
+      "source": "The stock-and-flow model was fitted using Bayesian inference and Markov chain Monte Carlo (MCMC), providing time-series estimates of national household net crop for cITNs and LLINs in each country along with evaluation of under-distribution, all with posterior credible intervals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical methodology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "80a3747b-47ba-4975-b72e-8b889578b423",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C90",
+      "claim": "A more even distribution of nets yields a greater proportion of households owning nets than if those same nets are concentrated in fewer households.",
+      "claim_type": "EXPLICIT",
+      "source": "In simple terms, a more even distribution yields a greater proportion of households owning nets than if those same nets are concentrated in fewer households.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the relationship between distribution patterns and coverage.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "ce0a1747-8915-4552-90ea-2d94007d2f94",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C91",
+      "claim": "Histograms for different countries vary in a broadly predictable way according to national net crop.",
+      "claim_type": "EXPLICIT",
+      "source": "By analysing such data from multiple surveys, previous studies have demonstrated that histograms for different countries vary in a broadly predictable way according to national net crop (Flaxman et al., 2010; Yukich et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "25e1e7bb-7170-405f-b140-8d677b96e2f8",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C92",
+      "claim": "Household size strongly influences the relationship between net crop and household ownership distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "One aspect that is known to strongly influence the relationship between net crop and household ownership distribution is the size of households found in different countries (Networks, 2014; Yukich et al., 2013), which varies greatly across sub-Saharan Africa (Swaziland, for example has an average household size of around three members, while in Senegal the average is nearly ten).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations and examples.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "1111c946-f18b-45ff-bc9a-790e25eba5de",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C93",
+      "claim": "Household size varies greatly across sub-Saharan Africa, with Swaziland having an average household size of around three members, while in Senegal the average is nearly ten.",
+      "claim_type": "EXPLICIT",
+      "source": "One aspect that is known to strongly influence the relationship between net crop and household ownership distribution is the size of households found in different countries (Networks, 2014; Yukich et al., 2013), which varies greatly across sub-Saharan Africa (Swaziland, for example has an average household size of around three members, while in Senegal the average is nearly ten).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim provides specific examples from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "04721708-5a23-401d-84de-45d21a692ca5",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C94",
+      "claim": "The study used a bivariate histogram model to link net crop to ownership distributions for each household size stratum.",
+      "claim_type": "EXPLICIT",
+      "source": "We extended earlier analyses (Flaxman et al., 2010; Yukich et al., 2013) to explicitly account for household size: using a bivariate (i.e. two- rather than one-dimensional) histogram model to link net crop to ownership distributions for each household size stratum (see Supplementary Information).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "ceff8640-a086-4264-9bb9-bc4edb863c4f",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C95",
+      "claim": "The negative binomial distribution was replaced with a 2-d zero-truncated Poisson distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "We replaced the negative binomial distribution with a 2-d zero-truncated Poisson distribution and, for each household size stratum, fitted the distribution using two parameters: (i) the proportion of households with zero ITNs and (ii) the mean number of ITNs per ITN-owning household.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "510433cf-e9d3-4ffe-b23a-298971d98ac7",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C96",
+      "claim": "Both parameters (proportion of households with zero ITNs and mean number of ITNs per ITN-owning household) were strongly related to national net crop.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the household-level data from 83 national surveys, we found that both parameters were strongly related to national net crop, allowing bivariate histograms to be generated for every country-year that were closely representative of the true ITN ownership distribution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "783bc41c-9b57-4e51-a9ea-070259b4a355",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C97",
+      "claim": "The distribution of net ownership tended to vary substantially between households of different sizes within a given country.",
+      "claim_type": "EXPLICIT",
+      "source": "First, the distribution of net ownership tended to vary substantially between households of different sizes within a given country and this variation would be missed if all households were considered together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "b84e8d1c-c6f2-417c-83bf-bb577ecae2aa",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C98",
+      "claim": "All else being equal, larger households would be expected to own more nets than smaller ones.",
+      "claim_type": "EXPLICIT",
+      "source": "This makes sense: all else being equal, larger households would be expected to own more nets than smaller ones and so distribution patterns would differ systematically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about household net ownership patterns.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "d96a2f80-a937-4efb-ac80-09661064ed2a",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C99",
+      "claim": "ITN use is less directly linked to national net crop and is primarily determined by the availability of nets within households.",
+      "claim_type": "EXPLICIT",
+      "source": "We took a different approach for the final indicator, % population who slept under an ITN the previous night. ITN use is less directly linked to national net crop and is primarily determined by the availability of nets within households (Eisele et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation and represents understanding of the relationship between access and use.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "3f52fa88-d09d-4667-9bd6-363fb4f2fae8",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C100",
+      "claim": "% population with access to an ITN within their household displayed the largest correlation with ITN use (adjusted R2= 0.96).",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 83 of the 102 national surveys contained data allowing the relationship to be explored between ITN use and each of the three access indicators with, perhaps unsurprisingly, % population with access to an ITN within their household displaying the largest correlation (adjusted R2= 0.96).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "a1bdbaa1-6512-4a0e-bdc3-155911e8b81a",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C101",
+      "claim": "The study used a simple Bayesian regression model to predict time-series of the ITN use indicator for every country.",
+      "claim_type": "EXPLICIT",
+      "source": "We fitted this relationship across the 83 surveys using a simple Bayesian regression model (see Supplementary Information) and used it to predict time-series of the ITN use indicator for every country.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "831eca4f-b138-40b6-af2a-3e26681ea13e",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C102",
+      "claim": "The current needs assessment exercise is designed to identify the number of LLINs required to achieve coverage targets by 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "The current needs assessment exercise that countries are undertaking (RBM-HWG, 2014; RBM, 2014) is designed to identify the number of LLINs required to achieve coverage targets by 2017.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the purpose of the RBM-HWG needs assessment, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "bf5b9345-6bc4-493f-b97a-c513ff025519",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C103",
+      "claim": "Two of the 40 endemic countries in the study did not participate in the RBM-HWG needs assessment exercise (Djibouti and Equatorial Guinea).",
+      "claim_type": "EXPLICIT",
+      "source": "We then generalized this experiment to predict the likely level of coverage (for all four indicators) achievable by 2017 under a broad spectrum of LLIN delivery levels, equivalent to a total for sub-Saharan Africa (two of the 40 endemic countries in our study did not participate in the RBM-HWG needs assessment exercise [Djibouti and Equatorial Guinea], and so our scenario analysis is based on the set of 38 remaining countries; to maintain comparability through time, we combined needs assessment data for mainland Tanzania and Zanzibar, and for Sudan and South Sudan) of between zero and 2.5 billion nets across the 4-year period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scope of the scenario analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "260a9c9f-d1ef-43d4-bf4e-fae0a0346a94",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C104",
+      "claim": "In 2013, 21% (17%\u201326%) of ITNs were over-allocated.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated that, in 2013, 21% (17%\u201326%) of ITNs were over-allocated and this has worsened over time as overall net provision has increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate derived from the model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "c938767d-d7d2-42db-8c3a-b0aee914db3c",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C105",
+      "claim": "Over-allocation has worsened over time as overall net provision has increased.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated that, in 2013, 21% (17%\u201326%) of ITNs were over-allocated and this has worsened over time as overall net provision has increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "f064732d-1b4f-4d3b-9c24-3a2133d34de9",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C106",
+      "claim": "Rates of ITN loss from households are more rapid than previously thought, with 50% lost after 23 (20\u201328) months.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimated that rates of ITN loss from households are more rapid than previously thought, with 50% lost after 23 (20\u201328) months.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate derived from the model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "81955fea-6491-470f-9b4b-efa1f97c75c5",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C107",
+      "claim": "The current estimate of 920 million additional ITNs required to achieve universal coverage would in reality yield a lower level of coverage (77% population access).",
+      "claim_type": "EXPLICIT",
+      "source": "We predict that the current estimate of 920 million additional ITNs required to achieve universal coverage would in reality yield a lower level of coverage (77% population access).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the model analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "7815531e-9f5b-420d-8e1f-8b83580c91c7",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C108",
+      "claim": "By improving efficiency, the 920 million ITNs could yield population access as high as 95%.",
+      "claim_type": "EXPLICIT",
+      "source": "By improving efficiency, however, the 920 million ITNs could yield population access as high as 95%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the model analysis under improved efficiency scenarios.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "e221401a-b8d3-42a9-822d-d8911a651b14",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C109",
+      "claim": "All four ITN indicators show very low coverage levels and modest year-on-year increases for the first 5 years from 2000, with a marked inflexion point in 2005 and much more rapid gains thereafter.",
+      "claim_type": "EXPLICIT",
+      "source": "All four indicators show a similar temporal trend: very low coverage levels and modest year-on-year increases for the first 5 years from 2000, with a marked inflexion point in 2005 and much more rapid gains thereafter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation based on the data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "088faf55-75f7-4370-8f89-aa44ca8f7629",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C110",
+      "claim": "All four indicators show that the pace of increase has, overall, slowed since 2005.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, however, all four indicators show that the pace of increase has, overall, slowed since 2005.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation based on the data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "6c6fcec7-7ce4-4585-9cd4-afa9f934b19e",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C111",
+      "claim": "Manufacturer data on deliveries were available for LLINs only.",
+      "claim_type": "EXPLICIT",
+      "source": "Manufacturer data on deliveries were available for LLINs only.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a limitation of the available data, as noted in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "26978851-90fd-4073-bea8-30b425f2cf8a",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "claim_id": "C112",
+      "claim": "The study used data from 102 national surveys.",
+      "claim_type": "EXPLICIT",
+      "source": "We developed a Bayesian model using data from 102 national surveys, triangulated against delivery data and distribution reports, to generate year-by-year estimates of four ITN coverage indicators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0c1fb385-d455-4d9f-a81b-30baa7ddadd9",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study estimates that 718 million LLINs were delivered across 40 endemic countries from 2004-2013, with deliveries peaking at 145 million in 2010, declining in 2011-2012, then recovering to 143 million in 2013. This resulted in an estimated 252 million LLINs in households by end of 2013, with net crop growing approximately linearly except for a slowdown during 2011-2012. cITNs dominated before 2005 but were rapidly replaced by LLINs thereafter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C30 are well-supported by the stock-and-flow model analysis triangulating manufacturer delivery data with household survey data (shown in Figure 1). The temporal patterns are clearly documented in both text and figures, with confidence intervals provided. The methodology for estimating net crop from deliveries and loss rates is described in detail.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "d0f09793-0f94-4dfc-86bb-b35df5a486ee",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "By end of 2013, the study estimates 66% (62-71%) of households owned at least one ITN, but only 31% (29-34%) had enough for one-between-two. Population access was 48% (45-51%) and use was 43% (39-46%). All four indicators showed low coverage until 2000-2005, then rapid gains after 2005, but with slowing pace of increase since then.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34, C109-C110 are supported by the bivariate histogram model linking net crop to coverage indicators (Figure 2). The model was fitted using 83 national surveys with household-level data, and provides credible intervals. The temporal trends are clearly visible in the figures and consistent with the underlying data on net deliveries.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "867eeb88-6af0-45de-be16-698f45f688df",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The ownership gap (households with some but insufficient nets) narrowed from 77% (76-78%) in 2000 to 56% (54-57%) in 2013. The usage gap was small, with 89% (84-93%) of those with access using nets, showing no significant temporal change. The study concludes that lack of access, not lack of use, is the primary barrier to ITN coverage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37, C65-C67 are supported by the model analysis of ownership and use patterns. The finding that use among those with access is high (89%) with no temporal trend is based on regression analysis of 83 surveys (R\u00b2=0.96 for access-use relationship, C100). This conclusion is further supported by citations to prior studies showing similar patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "f5e1d425-be21-4c72-8e94-697e330f8c6b",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Country-level analysis revealed that nearly all countries started with very low coverage in 2000 with inflection points mid-decade, but with considerable variation in timing. National-level trends showed pronounced periods of rise and fall rather than monotonic increases, with 2013 often not representing peak coverage. In 2013, seven countries had \u226415% population access while four had >70%.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 are supported by country-specific time series shown in Figure 3. The heterogeneity in temporal patterns and contemporary coverage levels is clearly visible in the multi-panel figure. However, the specific threshold values (15%, 70%) and country counts are stated without explicit identification of which countries fall into these categories.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "d2af9e73-a1c4-4087-909f-29126c035d71",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Over-allocation (nets distributed to households already having sufficient nets) averaged 15% (12-18%) over 2000-2013, rising from 7% (6-9%) in 2000 to 27% (22-32%) in 2013. Over-allocation increased approximately 15 percentage points per one-ITN-per-capita increase in net crop, with substantial between-country variation (11-50% in 2013).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C48, C104-C105 are supported by the bivariate histogram model analysis that allows calculation of over-allocation from predicted ownership distributions (Figure 4). The temporal trend and relationship to net crop are quantified with credible intervals. The between-country variation is documented with specific examples.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "23205c03-f723-4b93-a67e-56d77f1a043b",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The study found median LLIN retention time of 23 (20-28) months averaged across all countries and years, substantially faster than previously assumed. No significant continent-wide temporal trends were detected, but substantial between-country variation existed. Loss rates for the first 3 years exceeded both Flaxman et al. and RBM-HWG assumptions for all countries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C52, C69-C70, C106 are supported by the loss function fitted within the stock-and-flow model by triangulating delivery and survey data (Figure 5). The approach of fitting loss directly to the integrated dataset rather than relying on small external studies is methodologically sound. However, the claim of 'no significant temporal trends' (C50) lacks specification of the statistical test used or p-values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "c2e7b93d-e436-4aca-8633-b7607ec00ff3",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Under business-as-usual, 1 billion LLINs (250M/year) would be required for 80% population access by 2017, yielding only 70% use. With minimized over-allocation alone, 700M nets (175M/year) would achieve 80% access. With 3-year retention alone, similar gains occur. Combined efficiency improvements would require only 560M nets (140M/year) for 80% access. The relative importance of these factors shifts with delivery levels: retention dominates at low delivery, over-allocation at high delivery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C60 are supported by scenario projections using the fitted model (Figure 6). The projections explore different combinations of efficiency improvements in a systematic way. However, these are model-based predictions for future scenarios, not empirical observations, and depend on assumptions about maintaining current patterns. The 'minimized over-allocation' scenario assumes perfect targeting (zero over-allocation), which may not be operationally achievable.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "8b92cb4c-63b6-457a-9fb7-ce0c7afec722",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The study predicts that the RBM-HWG estimate of 920 million ITNs needed for 2014-2017 would yield only 77% population access and 68% use under current efficiency levels, falling short of universal coverage. However, with combined efficiency improvements (minimized over-allocation and 3-year retention), the same 920 million nets could achieve >95% access, approaching universal coverage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63, C107-C108 are supported by model projections comparing the RBM-HWG needs estimate against different efficiency scenarios (Figure 6). The analysis provides a direct comparison to existing planning estimates. However, these are projections dependent on model assumptions, and the 'combined efficiency' scenario may not be operationally realistic. The claim of '>95%' access (C63, C108) should be interpreted cautiously as it assumes both perfect targeting and improved retention simultaneously.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "3983b518-3152-443f-a338-f914332b1a24",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study estimates that half of campaign nets will be lost from households within 2 years. Coverage time-series suggest routine distribution channels are not fully compensating for this loss rate, with pronounced dips between mass campaigns. Maintaining higher continuous coverage requires more frequent campaigns, greater routine distribution, or longer-lasting nets with improved user care.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C74 are supported by the retention time estimates (23-month median, C49) and country-level coverage patterns (Figure 3). The inference about routine distribution inadequacy is based on observed temporal patterns. However, C74 is somewhat speculative about solutions, though logically follows from the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "3c646deb-6180-4ac9-be0e-5f7e8967c949",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study concludes that while ITN coverage gains have been impressive, achieving and sustaining universal access remains an enormous challenge. Over-allocation becomes a major barrier at high provision levels as nets accumulate in some households while others lack sufficient coverage. True LLIN requirements are considerably larger than previously estimated when accounting for rapid loss rates and over-allocation. Under business-as-usual, the number of nets required for full coverage is prohibitively large, with unavoidable diminishing returns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64, C68, C76-C78 represent synthesis conclusions supported by the empirical findings on coverage levels (C31-C34), over-allocation patterns (C44-C48), and retention times (C49-C52), combined with the scenario projections (C53-C63). The 'prohibitively large' characterization (C77) is somewhat subjective but supported by the steep curves in Figure 6 showing diminishing returns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "354be1ca-a9d6-4c0f-9b20-90d1169dffbf",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The study analyzed 40 of 47 malaria-endemic countries in sub-Saharan Africa, excluding six where ITNs are not a primary vector control tool and Mayotte due to lack of data. Analysis was limited to populations at risk as defined by NMCPs, with the simplifying assumption that all ITNs were distributed in endemic regions. The study used data from 102 national surveys.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C83, C112 describe the study scope and are supported by clear statements in the Methods section. The exclusion criteria are justified and documented. However, the assumption that all ITNs are distributed only in at-risk populations (C83) is acknowledged as simplifying and may not fully reflect reality, as some nets may reach non-endemic areas.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "9f6201e9-3376-4dcf-9eb6-9ee9c3544b58",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study used a discrete-time stock-and-flow compartmental model where nets enter a country stock compartment, then are distributed to households. Distribution was specified as a range between NMCP-reported values (minimum) and all available stock (maximum) to account for uncertainty. Loss functions were fitted directly to distribution and net crop data within the model, on a country-by-country basis, varying through time, and separately for cITNs and LLINs. The model was fitted using Bayesian inference and MCMC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C89 describe the stock-and-flow modeling approach, which is clearly documented in Methods and Figure 7. The approach of fitting loss functions directly to the integrated dataset rather than using external data is a key methodological innovation. However, full technical details are deferred to Supplementary Information, limiting complete evaluation of model specification and convergence diagnostics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "dbe40dc0-e43c-4c22-a14f-924c913a5f26",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study developed a bivariate histogram model linking net crop to household ownership distributions, stratified by household size. More even distribution yields higher household ownership than concentrated distribution. Prior studies showed ownership histograms vary predictably with net crop, with household size strongly influencing this relationship (varying from ~3 members in Swaziland to ~10 in Senegal). The model used a 2-d zero-truncated Poisson distribution with two parameters per household size stratum, both strongly related to net crop. Net ownership varied substantially between household sizes within countries, with larger households owning more nets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C98 describe the coverage modeling approach, supported by Methods text and citations to prior work (C91). The bivariate approach accounting for household size is a methodological improvement over prior univariate models. The finding that both parameters relate strongly to net crop (C96) is stated but lacks quantitative details (e.g., R\u00b2 values, parameter estimates). The household size examples (C93) provide concrete illustration.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "834eb9ec-16b3-430e-ad5f-bda560b3d9df",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study modeled ITN use as primarily determined by household access rather than net crop directly. Among 83 surveys with relevant data, population access to ITN within household showed the strongest correlation with use (adjusted R\u00b2=0.96). A Bayesian regression model was used to predict use time-series from access for each country.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C101 describe the approach for modeling the use indicator, supported by Methods text. The high R\u00b2 value (C100) indicates strong predictive relationship between access and use. However, the regression model details are deferred to Supplementary Information, and potential confounders or non-linearities are not discussed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "434fe840-f2be-4415-92b9-954914210897",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study acknowledges that coverage estimates would be revised downward if net condition (torn nets, diminished insecticidal properties) were considered, as nets may be retained but ineffective.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 is an acknowledged limitation stated in the Discussion. This is a valid point about the study's definition of 'coverage' based solely on net presence, not efficacy. The authors appropriately note this would lead to downward revision of estimates, though they don't quantify the potential magnitude of this effect.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "09ab81b5-d4c1-454d-bcc1-fbf1679d7056",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background context establishes that ITNs (comprising cITNs and LLINs) are the most widely used malaria control intervention in Africa, proven to reduce morbidity and mortality. WHO promotes universal coverage with ITNs or IRS, with ITNs being primary in nearly all endemic African countries. Despite billions invested in 700+ million LLINs since 2004 leading to scale-up, universal coverage remains distant with millions unprotected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 provide background context supported by multiple WHO and literature citations. These are well-established facts in the malaria control field. The claims appropriately set up the study's motivation and context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "178c9695-3d45-4083-8f37-34c1cf4bcbe6",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background establishes that gold-standard ITN coverage measurements come from nationally representative surveys (DHS, MICS, MIS), but these are infrequent and cannot track year-on-year trends or provide timely continent-wide estimates. Programmatic data on deliveries and distributions are available for most countries and years. Flaxman et al. (2010) previously used compartmental modeling to link these data sources for annual estimates of two ITN indicators.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13 provide methodological background supported by appropriate citations. These establish the rationale for the modeling approach by identifying the gap between infrequent surveys and need for annual estimates, and citing prior work using similar approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "f581a43a-2329-41e5-a320-57b9eaacbecc",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background describes the evolution of ITN indicators to capture ownership and usage gaps. An ownership gap exists when households have some but not enough nets for one-between-two (the WHO-recommended minimum). A usage gap exists when individuals with access don't use nets. Two additional indicators were recommended: % households with one ITN per two people, and % population with access within household. The use indicator was extended from children <5 to entire population.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C18 describe the evolution of ITN indicators, supported by WHO and RBM citations. These establish the rationale for tracking four indicators rather than two, and explain the conceptual framework of ownership and usage gaps that motivates the analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "ca858f7b-8b04-4526-8d73-2a69504c77ae",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Background establishes that countries struggle to maintain coverage due to continuous net loss from damage, repurposing, or movement. Net loss rate and over-allocation determine efficiency of translating deliveries into coverage. WHO defines universal access as two people per net. Simple calculations suggest 150M nets/year needed for 810M at-risk population (assuming 3-year lifespan, 1.8 person-per-net ratio). The RBM-HWG needs assessment, implemented by 41 of 47 countries, calculated 920M ITNs needed for 2014-2017 (~230M/year).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C24 provide background on ITN needs assessment, supported by WHO and RBM citations. The simple calculation (C22) is transparent about its assumptions. The RBM-HWG estimate (C24) provides the benchmark against which the study's projections are compared.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "0e609818-00c3-430b-8b80-ef6c80abe0dc",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Current RBM guidance recommends mass ITN campaigns every 3 years, complemented by continuous routine distribution to maintain coverage between campaigns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 states established RBM guidance that provides context for interpreting the retention time findings. This is presented as established knowledge and is relevant for the discussion of implications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "63e9f123-19a2-46af-b361-29003f892ed2",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "The RBM-HWG needs assessment exercise is designed to identify LLINs required to achieve coverage targets by 2017. Two of the 40 study countries (Djibouti and Equatorial Guinea) did not participate in this exercise, so scenario analysis was based on 38 countries.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C102-C103 provide methodological context for the scenario analysis, explaining the scope and how it relates to the RBM-HWG needs assessment. The exclusion of two countries from scenario analysis is clearly documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    },
+    {
+      "id": "47084703-2152-4aab-9eb6-9f3e9df4be90",
+      "content_id": "7b6c0865-7bff-4f3b-938a-77304b7c9659",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Manufacturer data on deliveries were available for LLINs only, not for cITNs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C111 describes a data limitation noted in Figure 1. This explains why the detailed delivery-distribution-net crop analysis focuses on LLINs, with cITNs analyzed separately using different data sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:18:49.154977Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "51b96e9c-18f1-407f-8ca7-90af7a19cf1c",
+      "result_id": "0c1fb385-d455-4d9f-a81b-30baa7ddadd9"
+    },
+    {
+      "claim_id": "2399c7d3-5b63-4f88-b246-aef1199abb8b",
+      "result_id": "0c1fb385-d455-4d9f-a81b-30baa7ddadd9"
+    },
+    {
+      "claim_id": "3f8966aa-9edf-4c89-bead-9d8b14f8cfd7",
+      "result_id": "0c1fb385-d455-4d9f-a81b-30baa7ddadd9"
+    },
+    {
+      "claim_id": "397b71e6-caca-46ba-8c6b-46be21db6455",
+      "result_id": "0c1fb385-d455-4d9f-a81b-30baa7ddadd9"
+    },
+    {
+      "claim_id": "8da1ba2d-a061-4601-8656-38dedf9aad63",
+      "result_id": "0c1fb385-d455-4d9f-a81b-30baa7ddadd9"
+    },
+    {
+      "claim_id": "62a195fa-6b74-4c75-85f9-896475a99ac0",
+      "result_id": "0c1fb385-d455-4d9f-a81b-30baa7ddadd9"
+    },
+    {
+      "claim_id": "95f6a328-9f70-4732-9525-a3f1be1be5df",
+      "result_id": "d0f09793-0f94-4dfc-86bb-b35df5a486ee"
+    },
+    {
+      "claim_id": "c38c23d0-b1ef-4c87-8f14-67371f1ebebc",
+      "result_id": "d0f09793-0f94-4dfc-86bb-b35df5a486ee"
+    },
+    {
+      "claim_id": "328a4f4f-6de1-433b-9dc6-d0ee0a6c0afb",
+      "result_id": "d0f09793-0f94-4dfc-86bb-b35df5a486ee"
+    },
+    {
+      "claim_id": "e2807e82-6a34-4d51-8049-7b9026d26199",
+      "result_id": "d0f09793-0f94-4dfc-86bb-b35df5a486ee"
+    },
+    {
+      "claim_id": "e221401a-b8d3-42a9-822d-d8911a651b14",
+      "result_id": "d0f09793-0f94-4dfc-86bb-b35df5a486ee"
+    },
+    {
+      "claim_id": "088faf55-75f7-4370-8f89-aa44ca8f7629",
+      "result_id": "d0f09793-0f94-4dfc-86bb-b35df5a486ee"
+    },
+    {
+      "claim_id": "12aa4310-3a65-4988-a469-133bdb38b989",
+      "result_id": "867eeb88-6af0-45de-be16-698f45f688df"
+    },
+    {
+      "claim_id": "ef9a3423-a2a6-4304-b978-c58800347094",
+      "result_id": "867eeb88-6af0-45de-be16-698f45f688df"
+    },
+    {
+      "claim_id": "e37450e7-1c93-4426-a788-2618b78a74e3",
+      "result_id": "867eeb88-6af0-45de-be16-698f45f688df"
+    },
+    {
+      "claim_id": "d8c04548-be9d-48fb-ae36-d9e8001b06f7",
+      "result_id": "867eeb88-6af0-45de-be16-698f45f688df"
+    },
+    {
+      "claim_id": "7e5bb32c-90d2-4eca-8913-e8bf03a91f75",
+      "result_id": "867eeb88-6af0-45de-be16-698f45f688df"
+    },
+    {
+      "claim_id": "95008b32-8bb6-4807-b73b-a70174077365",
+      "result_id": "867eeb88-6af0-45de-be16-698f45f688df"
+    },
+    {
+      "claim_id": "a1946238-7a7f-4d06-bad3-a284f5173af2",
+      "result_id": "f5e1d425-be21-4c72-8e94-697e330f8c6b"
+    },
+    {
+      "claim_id": "2783d3fb-408a-4f72-9614-613fe5bb21ef",
+      "result_id": "f5e1d425-be21-4c72-8e94-697e330f8c6b"
+    },
+    {
+      "claim_id": "32b571b0-15a8-4220-a22e-05be86b00431",
+      "result_id": "f5e1d425-be21-4c72-8e94-697e330f8c6b"
+    },
+    {
+      "claim_id": "ca5dbfb2-4bbd-40fe-a4fa-cab1d72c85ad",
+      "result_id": "f5e1d425-be21-4c72-8e94-697e330f8c6b"
+    },
+    {
+      "claim_id": "74f510c6-1405-49d9-a426-7a538df2c011",
+      "result_id": "f5e1d425-be21-4c72-8e94-697e330f8c6b"
+    },
+    {
+      "claim_id": "2475d3ed-1f41-4fab-8f30-ffa4d4782088",
+      "result_id": "f5e1d425-be21-4c72-8e94-697e330f8c6b"
+    },
+    {
+      "claim_id": "1462b240-d336-4119-86b4-3a179884a0ff",
+      "result_id": "d2af9e73-a1c4-4087-909f-29126c035d71"
+    },
+    {
+      "claim_id": "d1d2ad8d-2eae-455f-99df-85f0507ce8ba",
+      "result_id": "d2af9e73-a1c4-4087-909f-29126c035d71"
+    },
+    {
+      "claim_id": "05f90ddd-95cc-4aba-a2ff-c7760e6fa5fd",
+      "result_id": "d2af9e73-a1c4-4087-909f-29126c035d71"
+    },
+    {
+      "claim_id": "94a0461c-a3e5-44c1-9af6-7819536f189b",
+      "result_id": "d2af9e73-a1c4-4087-909f-29126c035d71"
+    },
+    {
+      "claim_id": "608d87b0-5721-4301-8113-8442d5ed7695",
+      "result_id": "d2af9e73-a1c4-4087-909f-29126c035d71"
+    },
+    {
+      "claim_id": "260a9c9f-d1ef-43d4-bf4e-fae0a0346a94",
+      "result_id": "d2af9e73-a1c4-4087-909f-29126c035d71"
+    },
+    {
+      "claim_id": "c938767d-d7d2-42db-8c3a-b0aee914db3c",
+      "result_id": "d2af9e73-a1c4-4087-909f-29126c035d71"
+    },
+    {
+      "claim_id": "c8f49509-d229-40f6-9a54-423c4c212499",
+      "result_id": "23205c03-f723-4b93-a67e-56d77f1a043b"
+    },
+    {
+      "claim_id": "448e4bbb-ae6c-46aa-80b1-f7e67e235fa7",
+      "result_id": "23205c03-f723-4b93-a67e-56d77f1a043b"
+    },
+    {
+      "claim_id": "74975798-f834-4657-a748-3c0851bc2115",
+      "result_id": "23205c03-f723-4b93-a67e-56d77f1a043b"
+    },
+    {
+      "claim_id": "07a56be1-eec1-425a-9c5e-51ea65a5bd29",
+      "result_id": "23205c03-f723-4b93-a67e-56d77f1a043b"
+    },
+    {
+      "claim_id": "8000b80f-f802-44e4-815d-8d7ad181aec7",
+      "result_id": "23205c03-f723-4b93-a67e-56d77f1a043b"
+    },
+    {
+      "claim_id": "c48a1697-020c-4ce3-9573-f2c3d95efb05",
+      "result_id": "23205c03-f723-4b93-a67e-56d77f1a043b"
+    },
+    {
+      "claim_id": "f064732d-1b4f-4d3b-9c24-3a2133d34de9",
+      "result_id": "23205c03-f723-4b93-a67e-56d77f1a043b"
+    },
+    {
+      "claim_id": "d501478e-3e40-4af1-8723-7467820fb1b6",
+      "result_id": "c2e7b93d-e436-4aca-8633-b7607ec00ff3"
+    },
+    {
+      "claim_id": "34383cb5-2fe2-4ec6-8d7a-bc3af94a9d1f",
+      "result_id": "c2e7b93d-e436-4aca-8633-b7607ec00ff3"
+    },
+    {
+      "claim_id": "d78c416c-34fe-4397-8094-8a8f8fb57b09",
+      "result_id": "c2e7b93d-e436-4aca-8633-b7607ec00ff3"
+    },
+    {
+      "claim_id": "3df9089e-9496-4b73-b837-a3f4c64f0ac9",
+      "result_id": "c2e7b93d-e436-4aca-8633-b7607ec00ff3"
+    },
+    {
+      "claim_id": "a606f0e2-639f-4b46-8d28-e17a6c82899c",
+      "result_id": "c2e7b93d-e436-4aca-8633-b7607ec00ff3"
+    },
+    {
+      "claim_id": "f231f71a-1508-4afd-a846-8a18fb5f40d4",
+      "result_id": "c2e7b93d-e436-4aca-8633-b7607ec00ff3"
+    },
+    {
+      "claim_id": "58f7240f-25a0-42d8-9a4d-abedeaee4697",
+      "result_id": "c2e7b93d-e436-4aca-8633-b7607ec00ff3"
+    },
+    {
+      "claim_id": "c3c8e8ea-2eac-45d3-a2e4-f7bdcebf1426",
+      "result_id": "c2e7b93d-e436-4aca-8633-b7607ec00ff3"
+    },
+    {
+      "claim_id": "e73e6ea6-ff4c-4c1c-b0d5-21dea575703e",
+      "result_id": "8b92cb4c-63b6-457a-9fb7-ce0c7afec722"
+    },
+    {
+      "claim_id": "adb78fe7-348c-471f-87cb-3d4798a70c71",
+      "result_id": "8b92cb4c-63b6-457a-9fb7-ce0c7afec722"
+    },
+    {
+      "claim_id": "76b3da44-e86b-4ffa-a834-369368c4b71b",
+      "result_id": "8b92cb4c-63b6-457a-9fb7-ce0c7afec722"
+    },
+    {
+      "claim_id": "81955fea-6491-470f-9b4b-efa1f97c75c5",
+      "result_id": "8b92cb4c-63b6-457a-9fb7-ce0c7afec722"
+    },
+    {
+      "claim_id": "7815531e-9f5b-420d-8e1f-8b83580c91c7",
+      "result_id": "8b92cb4c-63b6-457a-9fb7-ce0c7afec722"
+    },
+    {
+      "claim_id": "6730b968-0f2f-4e77-b3cf-6fcc63c85caf",
+      "result_id": "3983b518-3152-443f-a338-f914332b1a24"
+    },
+    {
+      "claim_id": "15b1ae17-16c8-42a1-b296-e3bc8c26b205",
+      "result_id": "3983b518-3152-443f-a338-f914332b1a24"
+    },
+    {
+      "claim_id": "19122812-9be6-41c3-a321-d2a967bc1d7c",
+      "result_id": "3983b518-3152-443f-a338-f914332b1a24"
+    },
+    {
+      "claim_id": "bc23e16e-6ccf-4ef9-bb52-b1530fbf8e0b",
+      "result_id": "3c646deb-6180-4ac9-be0e-5f7e8967c949"
+    },
+    {
+      "claim_id": "8a7a43bb-fac4-4fb7-8706-b295c51c3aa5",
+      "result_id": "3c646deb-6180-4ac9-be0e-5f7e8967c949"
+    },
+    {
+      "claim_id": "7736c3f6-7107-4d5d-9f86-493376f7b006",
+      "result_id": "3c646deb-6180-4ac9-be0e-5f7e8967c949"
+    },
+    {
+      "claim_id": "bfbb5d56-098e-412b-b7f0-70cdac4273c5",
+      "result_id": "3c646deb-6180-4ac9-be0e-5f7e8967c949"
+    },
+    {
+      "claim_id": "afe8faa7-647e-4398-9d18-7d65394ae588",
+      "result_id": "3c646deb-6180-4ac9-be0e-5f7e8967c949"
+    },
+    {
+      "claim_id": "7bb4e147-53b9-4d2f-a051-5b84a36c2940",
+      "result_id": "354be1ca-a9d6-4c0f-9b20-90d1169dffbf"
+    },
+    {
+      "claim_id": "0d4c089f-0c51-4393-985d-b5d88933c90b",
+      "result_id": "354be1ca-a9d6-4c0f-9b20-90d1169dffbf"
+    },
+    {
+      "claim_id": "c02539df-aa55-4c40-b413-d824058d5c18",
+      "result_id": "354be1ca-a9d6-4c0f-9b20-90d1169dffbf"
+    },
+    {
+      "claim_id": "d88240af-2553-4270-9b08-387db4bba3d0",
+      "result_id": "354be1ca-a9d6-4c0f-9b20-90d1169dffbf"
+    },
+    {
+      "claim_id": "0e22e175-66f1-4982-a6d8-0a0f17ebb9de",
+      "result_id": "354be1ca-a9d6-4c0f-9b20-90d1169dffbf"
+    },
+    {
+      "claim_id": "26978851-90fd-4073-bea8-30b425f2cf8a",
+      "result_id": "354be1ca-a9d6-4c0f-9b20-90d1169dffbf"
+    },
+    {
+      "claim_id": "84b964fb-1f0b-4f5f-8860-fe984921f2fb",
+      "result_id": "9f6201e9-3376-4dcf-9eb6-9ee9c3544b58"
+    },
+    {
+      "claim_id": "7e992432-baf6-4ecf-9455-2a32f19893da",
+      "result_id": "9f6201e9-3376-4dcf-9eb6-9ee9c3544b58"
+    },
+    {
+      "claim_id": "debdde60-9d6a-4431-901c-d7402ea297f6",
+      "result_id": "9f6201e9-3376-4dcf-9eb6-9ee9c3544b58"
+    },
+    {
+      "claim_id": "d83f080f-87ee-44d4-b7d0-fae8b6f38fda",
+      "result_id": "9f6201e9-3376-4dcf-9eb6-9ee9c3544b58"
+    },
+    {
+      "claim_id": "73348916-621a-4e2b-97dc-6b3396f77063",
+      "result_id": "9f6201e9-3376-4dcf-9eb6-9ee9c3544b58"
+    },
+    {
+      "claim_id": "65767445-c6cb-4b56-a900-455c2430a208",
+      "result_id": "9f6201e9-3376-4dcf-9eb6-9ee9c3544b58"
+    },
+    {
+      "claim_id": "80a3747b-47ba-4975-b72e-8b889578b423",
+      "result_id": "dbe40dc0-e43c-4c22-a14f-924c913a5f26"
+    },
+    {
+      "claim_id": "ce0a1747-8915-4552-90ea-2d94007d2f94",
+      "result_id": "dbe40dc0-e43c-4c22-a14f-924c913a5f26"
+    },
+    {
+      "claim_id": "25e1e7bb-7170-405f-b140-8d677b96e2f8",
+      "result_id": "dbe40dc0-e43c-4c22-a14f-924c913a5f26"
+    },
+    {
+      "claim_id": "1111c946-f18b-45ff-bc9a-790e25eba5de",
+      "result_id": "dbe40dc0-e43c-4c22-a14f-924c913a5f26"
+    },
+    {
+      "claim_id": "04721708-5a23-401d-84de-45d21a692ca5",
+      "result_id": "dbe40dc0-e43c-4c22-a14f-924c913a5f26"
+    },
+    {
+      "claim_id": "ceff8640-a086-4264-9bb9-bc4edb863c4f",
+      "result_id": "dbe40dc0-e43c-4c22-a14f-924c913a5f26"
+    },
+    {
+      "claim_id": "510433cf-e9d3-4ffe-b23a-298971d98ac7",
+      "result_id": "dbe40dc0-e43c-4c22-a14f-924c913a5f26"
+    },
+    {
+      "claim_id": "783bc41c-9b57-4e51-a9ea-070259b4a355",
+      "result_id": "dbe40dc0-e43c-4c22-a14f-924c913a5f26"
+    },
+    {
+      "claim_id": "b84e8d1c-c6f2-417c-83bf-bb577ecae2aa",
+      "result_id": "dbe40dc0-e43c-4c22-a14f-924c913a5f26"
+    },
+    {
+      "claim_id": "d96a2f80-a937-4efb-ac80-09661064ed2a",
+      "result_id": "834eb9ec-16b3-430e-ad5f-bda560b3d9df"
+    },
+    {
+      "claim_id": "3f52fa88-d09d-4667-9bd6-363fb4f2fae8",
+      "result_id": "834eb9ec-16b3-430e-ad5f-bda560b3d9df"
+    },
+    {
+      "claim_id": "a1bdbaa1-6512-4a0e-bdc3-155911e8b81a",
+      "result_id": "834eb9ec-16b3-430e-ad5f-bda560b3d9df"
+    },
+    {
+      "claim_id": "dba6eee2-399f-4d69-bc46-e5eeebfb5892",
+      "result_id": "434fe840-f2be-4415-92b9-954914210897"
+    },
+    {
+      "claim_id": "79a2fd12-6944-4264-b54e-b5cde313772f",
+      "result_id": "09ab81b5-d4c1-454d-bcc1-fbf1679d7056"
+    },
+    {
+      "claim_id": "1b7976cf-2eb8-4967-a781-8f0b1e2aa5e4",
+      "result_id": "09ab81b5-d4c1-454d-bcc1-fbf1679d7056"
+    },
+    {
+      "claim_id": "0c8112f3-2bc7-4184-8a58-88859630249c",
+      "result_id": "09ab81b5-d4c1-454d-bcc1-fbf1679d7056"
+    },
+    {
+      "claim_id": "54215050-09ca-45b3-8de6-0590721a1161",
+      "result_id": "09ab81b5-d4c1-454d-bcc1-fbf1679d7056"
+    },
+    {
+      "claim_id": "7142232b-cb72-414d-8636-7451b15c5205",
+      "result_id": "09ab81b5-d4c1-454d-bcc1-fbf1679d7056"
+    },
+    {
+      "claim_id": "fda69e0e-0c8f-44f9-8c42-dd7fca190a9a",
+      "result_id": "09ab81b5-d4c1-454d-bcc1-fbf1679d7056"
+    },
+    {
+      "claim_id": "fed269bf-d220-4785-9e80-a03094ceeb13",
+      "result_id": "09ab81b5-d4c1-454d-bcc1-fbf1679d7056"
+    },
+    {
+      "claim_id": "6f27c9ae-7df8-4483-aaf9-81b375df4b17",
+      "result_id": "09ab81b5-d4c1-454d-bcc1-fbf1679d7056"
+    },
+    {
+      "claim_id": "c8f9bab4-3896-4513-90c4-dabb9bf1c289",
+      "result_id": "178c9695-3d45-4083-8f37-34c1cf4bcbe6"
+    },
+    {
+      "claim_id": "80a873c8-74be-48b6-ac98-67925601f812",
+      "result_id": "178c9695-3d45-4083-8f37-34c1cf4bcbe6"
+    },
+    {
+      "claim_id": "b995a746-2922-4ad7-9c6f-c175708e8e8e",
+      "result_id": "178c9695-3d45-4083-8f37-34c1cf4bcbe6"
+    },
+    {
+      "claim_id": "d55bacfe-b914-4e4b-8bf0-df6b9b131147",
+      "result_id": "178c9695-3d45-4083-8f37-34c1cf4bcbe6"
+    },
+    {
+      "claim_id": "af0f64c3-1bda-44fe-8a34-30bcc5ac59a0",
+      "result_id": "178c9695-3d45-4083-8f37-34c1cf4bcbe6"
+    },
+    {
+      "claim_id": "6b8471c8-a927-4af0-b90b-62e9c95db88a",
+      "result_id": "f581a43a-2329-41e5-a320-57b9eaacbecc"
+    },
+    {
+      "claim_id": "7060d566-a505-44f6-81b7-fae5cda87dd9",
+      "result_id": "f581a43a-2329-41e5-a320-57b9eaacbecc"
+    },
+    {
+      "claim_id": "fae2b5ed-89d0-463f-a0f0-3f868c04ba01",
+      "result_id": "f581a43a-2329-41e5-a320-57b9eaacbecc"
+    },
+    {
+      "claim_id": "779aa4b1-ebfb-49cd-9dcb-5eb259cc6bfd",
+      "result_id": "f581a43a-2329-41e5-a320-57b9eaacbecc"
+    },
+    {
+      "claim_id": "16313b23-40ea-47cc-92c2-3790ce2b9781",
+      "result_id": "f581a43a-2329-41e5-a320-57b9eaacbecc"
+    },
+    {
+      "claim_id": "20cc7d00-da8c-446f-9cb2-afe8e78ba68b",
+      "result_id": "ca858f7b-8b04-4526-8d73-2a69504c77ae"
+    },
+    {
+      "claim_id": "a6f2fbfb-91bb-497a-b2f8-f0738ceb3ce2",
+      "result_id": "ca858f7b-8b04-4526-8d73-2a69504c77ae"
+    },
+    {
+      "claim_id": "36362938-b16f-4e44-92fe-3abc3ace5899",
+      "result_id": "ca858f7b-8b04-4526-8d73-2a69504c77ae"
+    },
+    {
+      "claim_id": "9e9949b3-79ab-4fcc-8523-1d0ed810c8fb",
+      "result_id": "ca858f7b-8b04-4526-8d73-2a69504c77ae"
+    },
+    {
+      "claim_id": "d4ada0e1-5068-4708-a525-7e03b40dac24",
+      "result_id": "ca858f7b-8b04-4526-8d73-2a69504c77ae"
+    },
+    {
+      "claim_id": "5e00b350-acd1-4fb0-8474-e92b277cb94c",
+      "result_id": "ca858f7b-8b04-4526-8d73-2a69504c77ae"
+    },
+    {
+      "claim_id": "18271372-e4a4-4460-8cce-93f309b7d536",
+      "result_id": "0e609818-00c3-430b-8b80-ef6c80abe0dc"
+    },
+    {
+      "claim_id": "831eca4f-b138-40b6-af2a-3e26681ea13e",
+      "result_id": "63e9f123-19a2-46af-b361-29003f892ed2"
+    },
+    {
+      "claim_id": "bf5b9345-6bc4-493f-b97a-c513ff025519",
+      "result_id": "63e9f123-19a2-46af-b361-29003f892ed2"
+    },
+    {
+      "claim_id": "6c6fcec7-7ce4-4585-9cd4-afa9f934b19e",
+      "result_id": "47084703-2152-4aab-9eb6-9f3e9df4be90"
+    }
+  ],
+  "comparisons": []
+}

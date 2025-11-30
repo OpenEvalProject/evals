@@ -1,0 +1,214 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "CRISPRi activity exhibits periodic patterns anti-correlated with nucleosome occupancy in vivo. Analysis of 18,380 sgRNAs from 30 genome-wide screens revealed that highly active sgRNAs target sites with low nucleosome occupancy (~190 bp periodicity matching nucleosome phasing), and this relationship is stronger in highly expressed genes. Linear regression shows nucleosome occupancy (MNase signal) independently predicts sgRNA activity (p<10^-85 after correcting for sequence features), and combining all features yields even stronger correlation (p<10^-221).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C23 provide converging evidence from large-scale screens (30 screens, 18,380 sgRNAs) showing robust periodic patterns of CRISPRi activity that anti-correlate with MNase-seq nucleosome signal. The statistical analyses are rigorous with highly significant p-values, appropriate controls for sequence features, and validation across expression levels. The data directly support the conclusion that nucleosome occupancy is a major determinant of CRISPRi activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Nuclease-active Cas9 activity also anti-correlates with nucleosome occupancy, though less strongly than CRISPRi. Analysis of a ricin susceptibility screen with tiling sgRNAs showed strong Cas9 phenotypes predominantly in low nucleosome regions, with the relationship being stronger when including cis-regulatory regions. Combining nucleosome occupancy with sequence features provides much stronger predictive power than either alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 demonstrate that nucleosome effects extend to nuclease-active Cas9, supported by data from a tiling screen. The observation that the effect is less pronounced in CDS regions (C25) is explained by decreased nucleosome phasing (C26), which is consistent with prior knowledge. The statistical analyses appropriately combine multiple features to show improved prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C34",
+      "C65",
+      "C66"
+    ],
+    "result": "Nucleosomes completely block Cas9 cleavage in vitro regardless of target position within the nucleosome. Using reconstituted Widom 601 nucleosomes with multiple PAM sites at different positions and helical orientations, complete protection from Cas9 cleavage was observed at all tested positions, and this protection was not detectably influenced by nucleosome breathing dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 and C34 are well-supported by systematic in vitro cleavage assays (Figures 3E-F) testing multiple PAM sites across the nucleosome. The use of the well-characterized Widom 601 positioning sequence (C65-C66) provides appropriate experimental controls. The finding that position-independence contradicts expectations from nucleosome breathing is appropriately acknowledged as potentially specific to this stable nucleosome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "dCas9 binding is completely abolished by nucleosomes, and structural analysis reveals extensive steric clashes between Cas9 and histones. EMSA experiments show no dCas9 binding to nucleosomal DNA regardless of target site, and superposition of Cas9 and nucleosome crystal structures demonstrates that histones and Cas9 cannot co-occupy the same DNA, leading to the conclusion that Cas9 is excluded rather than capable of displacing histones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 provide complementary biochemical (EMSA) and structural evidence for the mechanism of nucleosome-mediated Cas9 exclusion. The binding data (C35, Figure 4C-E) are clear and systematic across multiple PAM sites. The structural analysis (C36-C37, Figure 4F) appropriately uses published crystal structures to rationalize the biochemical observations. The conclusion (C39) logically follows from the data showing complete exclusion rather than partial activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Chromatin remodeling by yChd1 restores Cas9 access to nucleosomal DNA in vitro. Using a chromatinized plasmid system, sites within the 601 nucleosome were strongly protected from Cas9 cleavage, but addition of the ATP-dependent chromatin remodeler yChd1 restored cleavage efficiency to ~80% of naked DNA controls. This effect was specifically due to nucleosome displacement rather than non-specific effects on cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 demonstrate a mechanism for Cas9 access through chromatin remodeling using appropriate controls. The chromatinized plasmid system is well-characterized (C41-C42), and the restoration of cleavage upon yChd1 addition (C43) is quantified and controlled (C44 shows adjacent sites remain protected). The conclusion (C45) appropriately frames this as a potential mechanism rather than claiming it fully explains in vivo activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C51",
+      "C52",
+      "C54",
+      "C62"
+    ],
+    "result": "Nucleosome organization modulates Cas9 efficiency at on-target sites and provides significant improvement in sgRNA design. The discrete pattern of nucleosome positioning affects Cas9 binding and cleavage efficiency, and despite dynamic nucleosome turnover in cells, a clear anti-correlation between Cas9 activity and nucleosome occupancy persists in vivo, suggesting the barrier exists even in cellular environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 and C51-C52 synthesize the in vivo and in vitro findings into mechanistic conclusions. The persistence of anti-correlation despite nucleosome dynamics (C51-C52) is an important observation supported by the large-scale screen data. The practical implication for sgRNA design (C49) is directly supported by the statistical analyses showing improved prediction. These represent appropriate integration of the experimental findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C53",
+      "C54"
+    ],
+    "result": "Nucleosomes effectively reduce the eukaryotic genome accessible to Cas9 by masking ~147 bp of DNA per nucleosome. This builds on prior observations that off-target Cas9 binding occurs preferentially in open chromatin, and the observed effects likely reflect average nucleosome positioning as measured by MNase-seq, which integrates nucleosome disruption, turnover, and repositioning dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 appropriately contextualize the findings within prior literature on Cas9 chromatin accessibility. Claims C53-C54 provide reasonable interpretation of how population-averaged MNase-seq data relates to the observed effects. The logic connecting static in vitro observations to dynamic in vivo measurements is sound and appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "There are likely fundamental differences between dCas9 and nuclease-active Cas9 applications regarding nucleosome sensitivity. CRISPRi requires persistent dCas9 binding to block transcription and would be ineffective during S-phase, while genome editing requires only a single cleavage event and could potentially exploit nucleosome turnover during replication. Nucleosome effects are expected to be particularly important for applications requiring sustained dCas9 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C60 are largely speculative (marked as SPECULATION in evidence_type) about mechanistic differences between dCas9 and Cas9 applications. While the reasoning is logical and consistent with cell biology principles, these hypotheses are not directly tested in the manuscript. The speculation about S-phase effects (C57) and replication-dependent access (C59) would require cell cycle-synchronized experiments or other direct evidence to be supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Independent work by Hinz et al. (2015) reported similar findings that Cas9 nuclease activity is inhibited within nucleosomes but not at linker sequences. Prior studies established that nucleosomal DNA undergoes transient unwrapping (breathing) at entry/exit sites, creating accessibility gradients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 appropriately cite prior work that corroborates the main findings (C32) and provides mechanistic context about nucleosome dynamics (C33). These are properly attributed to the literature and serve to contextualize the current findings within the broader field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The K562 dCas9-KRAB-BFP cell line used for screens tested negative for mycoplasma and showed cytogenetic profiles matching previous K562 characterizations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 report appropriate quality control measures for the cell line used in the large-scale screens. These are standard validation steps that support the reliability of the screening data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "Cas9 modifications can disrupt cis-regulatory regions, and a comprehensive algorithm accounting for nucleosome occupancy, higher-order sequence features, and non-linear relationships shows improved prediction of CRISPRi sgRNA activity (cross-validation R\u00b2=0.32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C67 is supported by citation to Canver et al. 2015 and observed phenotypes in promoter regions. However, C68 references unpublished work (manuscript in preparation), making it impossible to fully evaluate the methodology, validation, or robustness of the improved algorithm. While the R\u00b2 value is provided, without access to the full methods and validation, this result remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Background on CRISPR-Cas9 technology and chromatin context. Cas9 is a prokaryotic protein adapted for eukaryotic genome editing, imaging, and regulation. CRISPR evolved in prokaryotes and is likely not optimized for chromatin-bound eukaryotic genomes. Prior studies showed correlations between Cas9 activity and open chromatin (DNase I hypersensitivity), and dCas9 explores euchromatin more frequently than heterochromatin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C6, C8, C10-C11 are well-established facts supported by appropriate citations. Claims C7, C9 appropriately acknowledge limitations of sequence-based prediction and frame the hypothesis that chromatin may be important. These provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C61"
+    ],
+    "result": "Nucleosome organization is dynamic in cells with transient displacement during replication, remodeling, and transcription, and represents only one aspect of eukaryotic chromatin structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C61 appropriately acknowledge the broader context of chromatin biology and the limitations of focusing solely on nucleosome positioning. These are accurate statements of established knowledge that frame the scope of the current work.",
+    "result_type": "MINOR"
+  }
+]

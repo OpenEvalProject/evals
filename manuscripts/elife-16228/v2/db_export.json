@@ -1,0 +1,1749 @@
+{
+  "submission": {
+    "id": "e92cbaf9-585d-44db-8c2d-db608aca7137",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:26:57.790269Z",
+    "updated_at": "2025-11-30T00:26:57.790269Z"
+  },
+  "content": [
+    {
+      "id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "submission_id": "e92cbaf9-585d-44db-8c2d-db608aca7137",
+      "content_type": "manuscript",
+      "content_text": "# NaLi-H1: A universal synthetic library of humanized nanobodies providing highly functional antibodies and intrabodies\n\n## Authors\n\n- Sandrine Moutel<sup>1</sup>\n- Nicolas Bery<sup>4</sup> ([ORCID: 0000-0002-2643-3897](https://orcid.org/0000-0002-2643-3897))\n- Virginie Bernard<sup>1</sup>\n- Laura Keller<sup>4</sup> ([ORCID: 0000-0002-1786-9760](https://orcid.org/0000-0002-1786-9760))\n- Emilie Lemesre<sup>1</sup>\n- Ario de Marco<sup>1</sup> ([ORCID: 0000-0001-7729-819X](https://orcid.org/0000-0001-7729-819X))\n- Laetitia Ligat<sup>7</sup>\n- Jean-Christophe Rain<sup>8</sup>\n- Gilles Favre<sup>4</sup> ([ORCID: 0000-0002-2344-1883](https://orcid.org/0000-0002-2344-1883))\n- Aur\u00e9lien Olichon<sup>4</sup> \u2020\n- Franck Perez<sup>1</sup> ([ORCID: 0000-0002-9129-9401](https://orcid.org/0000-0002-9129-9401)) \u2020\n\n### Affiliations\n\n1. Institut Curie, PSL Research University Paris France\n2. CNRS UMR144 Paris France\n3. Translational Research Department Institut Curie Paris France\n4. Inserm, UMR 1037-CRCT Toulouse France\n5. Facult\u00e9 des Sciences Pharmaceutiques, Universit\u00e9 Toulouse III-Paul Sabatier Toulouse France\n6. Institut Claudius Regaud Toulouse France\n7. Le P\u00f4le Technologique du Centre de Recherches en Canc\u00e9rologie de Toulouse, plateau de prot\u00e9omique Toulouse France\n8. Hybrigenics Service Paris France\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn vitro selection of antibodies allows to obtain highly functional binders, rapidly and at lower cost. Here, we describe the first fully synthetic phage display library of humanized llama single domain antibody (NaLi-H1: Nanobody Library Humanized 1). Based on a humanized synthetic single domain antibody (hs2dAb) scaffold optimized for intracellular stability, the highly diverse library provides high affinity binders without animal immunization. NaLi-H1 was screened following several selection schemes against various targets (Fluorescent proteins, actin, tubulin, p53, HP1). Conformation antibodies against active RHO GTPase were also obtained. Selected hs2dAb were used in various immunoassays and were often found to be functional intrabodies, enabling tracking or inhibition of endogenous targets. Functionalization of intrabodies allowed specific protein knockdown in living cells. Finally, direct selection against the surface of tumor cells produced hs2dAb directed against tumor-specific antigens further highlighting the potential use of this library for therapeutic applications.\n\n## Introduction\n\nAntibodies expended as the biochemical tools of choice to label antigens in cells or tissues. Over the past 20 years, recombinant methods have been developed to quickly select and improve monoclonal antibodies from highly diverse libraries. Recombinant antibodies can be selected from immune or na\u00efve libraries. Immune libraries provide in general high affinity binders but, depending on the antigen, diversity is sometimes limited. Because natural antibody selection requires animal immunization, very conserved or toxic antigens should be avoided and, in general, only limited control of the immune response is possible. On the contrary, non-immune (na\u00efve) libraries provide a\u00a0higher diversity of binders even for antigens highly conserved in mammals, but high specificity and affinity can be reached only when selecting from very large functional libraries. Immune and na\u00efve libraries are based on the manipulation of antibody fragment that retain binding capacity and specificity of the entire immunoglobulin G (IgG).\n\nThe smallest IgG portion capable of binding with high specificity an antigen is the Fv fragment consisting of the variable heavy (VH) and the variable light (VL) domains. In the case of single domain antibodies (sdAb), a VH or a VL alone, is able to bind its target antigen. Each variable domain contains four conserved framework regions (FRW or framework) and three regions called CDR (Complementarity Determining Regions) corresponding to hypervariable sequences which determine the specificity for the antigen. VH and VL can be fused together using a synthetic linker and produced as a single protein in the form of a single chain Fv (scFv). Easier to manipulate, they can be produced in several bacteria or eukaryote cell types, fused to various tags or functional domains. Interestingly, antibodies called HCAb in Camelidae (Hamers-Casterman et al., 1993) or IgNAR in sharks (Greenberg et al., 1995) have an antigen recognition part composed of only a VH domain. Camelid natural single domain VH, referred to as VHH or nanobodies, can be expressed as recombinant fragments and represent attractive alternatives over classical antibody fragments like scFvs because they are easy to manipulate and they are not limited by potential misfolding of the two domains (W\u00f6rn and Pl\u00fcckthun, 1999). It is noteworthy that VHH FRWs show a high sequence and structural homology with human VH domains of family III (Muyldermans, 2013) and VHH have comparable immunogenicity as human VH (Bartunek et al., 2013; Holz et al., 2013). Thus, they further constitute very interesting agents for therapeutic applications, some of them are currently in phase II and Phase III clinical trials (Ablynx Nanobodies; http://clinicaltrials.gov/ct2/results?term=ablynx).\n\nRecombinant antibody fragments allowed not only to accelerate the identification of unique binders, but also the development of a novel type of tool: in this case, the antibodies are directly expressed in living cells as intracellular antibodies (intrabodies), to trace or perturb endogenous target at the protein level. Some scFv or sdAb have indeed been directly expressed in eukaryotic cell as intrabodies to target with high specificity intracellular antigens. Several intrabodies have been used as fluorescent protein fusion to highlight endogenous antigen in cells in a spatio-temporal manner (Nizak et al., 2003a; Rothbauer et al., 2006). Intrabodies with intrinsic blocking activity have been reported (Haque et al., 2011; Shin et al., 2005), and several other approaches have been developed to allow a larger fraction of intrabodies to be used as inhibitory factors: forced co-localization (Tanaka et al., 2007), suicide through proteasome targeting (Joshi et al., 2012; Melchionna and Cattaneo, 2007), rerouting or sequestration to cell compartment (B\u00f6ldicke et al., 2005), degradation (Caussinus et al., 2011). Depending on the target, such inhibitors may have potential in human therapy. Production of functional intrabodies depends on the stability of the antibody fragments in the reducing environment of the cytosol that does not allow disulfide bond formation between conserved cysteine. In this context, many advantages of the nanobody scaffold have been reported and, in particular, higher solubility, improved stability in a reducing environment (Wesolowski et al., 2009), as well as higher expression yield and thermostability (Jobling et al., 2003). For all these reasons, the nanobody scaffold represents an attractive option to generate functional intrabodies.\n\nThus, we decided to create a non-immune recombinant antibody library of high diversity, based on a nanobody scaffold that would enable efficient in vitro antibody selection against virtually any antigen. Such a library should provide antibodies usable in conventional immune assays and be enriched in antibodies active in the intracellular environment. First, using a fusion assay in E. coli, a family of highly functional VHH scaffolds was isolated, optimized for intracellular expression and high stability. One particularly stable VHH scaffold consensus sequence was chosen from these selected antibodies. Additional changes were then introduced to reduce the distance between the Camelidae and human VH3 sequences. We confirmed by CDR grafting that this humanized synthetic scaffold (hs2dAb) was robust and functional. Statistics of amino-acid diversity in the CDRs were computed and these information were used to construct a high diversity phage display library of 3.109 independent hs2dAb. The library was then screened against diverse targets of various structures and origin. Highly specific antibodies were selected against EGFP, mCherry, \u03b2-tubulin, \u03b2-actin, heterochromatin protein HP1\u03b1, GTP-bound RHO, p53 and HER2. Affinity measurement indicated that affinities in the nM range can be obtained using this library. As expected from our design, we further showed that hs2dAb are frequently usable as fluorescent intrabodies to track antigens in cells. We also showed that they can be functionalized to induce antigen knockdown. This thus represents the first report of a large and diverse synthetic single domain antibody library enabling fully in vitro selection of highly functional antibodies and intrabodies.\n\n## Results\n\n### Library design\n\nWe reasoned that the usual lower quality of these non-immune libraries may come from (1) an antibody scaffold that may not allow robust folding and presentation of CDR region, (2) a lack of control of diversity in the CDR regions and (3) a frequent occurrence of incorrect clones due to the presence of unexpected mutation or empty clones. We designed a pipeline for the development of functional synthetic libraries that aims at overcoming these limitations (Figure 1A). As a first step to construct a single domain antibody library enriched in highly stable and functional antibody fragments, we screened for a robust sdAb scaffold (Figure 1\u2014figure supplement 1). Previously, we selected from immune or na\u00efve llama VHH libraries several hundreds of clones (Monegal et al., 2012; Olichon and Surrey, 2007). From this population, we identified a set of robust scaffolds using an assay that discriminates highly stable clones from clones prone to aggregation, or unfolding, in the\u00a0bacterial cytoplasm (Olichon and Surrey, 2007). This assay is based on the fusion of HA-tagged chloramphenicol acetyl transferase (CAT) to the carboxy-terminus of VHH sequences (Figure 1\u2014figure supplement 1A). In these conditions, only bacteria expressing a functional VHH fusion in the reducing cytosol (non aggregating, non degraded) can grow in the presence of high antibiotic concentration, thus filtrating a sub-library of potential intrabodies. Expression yield in E.coli and apparent solubility as EGFP fusion in the\u00a0mammalian cell cytoplasm were further assessed to select a set of robust antibody scaffolds. Strikingly, the consensus scaffold was matching the sequence of the most robust VHH framework, represented by a single domain antibody D10 (hereafter named sdAbD10). When compared to previously reported thermostable nanobodies (Olichon et al., 2007a) or intrabodies (Rothbauer et al., 2006) obtained from immune libraries, sdAbD10 was found to provide higher antibiotic resistance in the chloramphenicol filter assay (Figure 1\u2014figure supplement 1A). Its expression yield in E.coli periplasm was in the higher range of soluble llama VHH fragments, allowing efficient and quantitative purification (Figure 1\u2014figure supplement 1B). Purified sdAbD10 showed excellent solubility, stability after treatment at 70\u00b0C and we did not observe aggregation when expressed as an intrabody fused to the EGFP in mammalian cells (Figure 1\u2014figure supplement 1C).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/16228/elife-16228-fig1-v2.jpg)\n\n**Figure 1.:** The development of the NaLi-H1 library followed three lines of optimization. (i) A novel scaffold was defined by selecting a set of robust nanobodies using a CAT fusion assay (1). A consensus was derived and mutations were introduced to humanize the scaffold (2). Usability and efficacy of the novel scaffolds (VHH and humanized) were then confirmed evaluating their display on phage, expression in CHO cells and use as intrabodies (3).In silico design was completed analyzing natural CDR diversity (4) and using this information to design synthetic CDRs. A fixed size of 7 aa was chosen for the CDR1 and CDR2. 4 sizes (9, 12, 15 and 18 amino acids) were chosen for CDR3. Finally, the pHEN2 vector was improved by implementing a triple myc tag and inserting a toxic gene (ccdb) to ensure low frequency of empty clones during library construction (6). Gene synthesis (using a tri-nucleotide approach) was ordered, synthetic sequences cloned into the novel pHEN2+ vector, transformed into bacteria and plated on 430 15 cm plates. 3\u00a0\u00d7\u00a0109 clones were obtained. Quality control was carried out using Sanger sequencing of 315 randomly picked clones and large scale sequencing of 56 000 clones. No redundant clone was found. The NaLi-H1 was then screened in various conditions and diversity, efficacy, versatility and affinity evaluated.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16228/elife-16228-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Chloramphenicol acetyl transferase carboxy terminal fusion is a folding reporter allowing for the selection of soluble amino terminal VHH. Top: scheme of the construct expressed from pAO-VHH-CAT-HA vector. Bottom: Relative colony growth of selected VHH (GFP4 and Lam1 chromobodies, or thermostable Re3) on chloramphenicol selection medium (Cam). Serial dilution of E.coli culture expressing VHH. (B) Analysis of heat purified sdAbD10 by SDS-PAGE. Clone D10 was expressed in E.coli and protein secreted in the periplasm were extracted (lane 1). Periplasmic extract was subjected to heat treatment at 70\u00b0C and insoluble proteins were pelleted by centrifugation (lane 2). The soluble supernatant containing the VHH was then concentrated using Amicon filters (lane 3). (C) HeLa cells expressing a GFP fusion of sdAbD10 showing homo-dispersed fluorescence (right) compared to typical randomly chosen aggregating llama VHH considered as non intrabody (left).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16228/elife-16228-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A)\u00a0Phages presenting each scaffolds (sdAbD10 and hs2dAb) bearing anti-lamin CDRs were produced in E.coli and supernatant were detected in Western Blot with an anti-pIII antibody (NEB). Two bands are visible, one for wild-type pIII and one for the pIII fusion with single domain antibodies. (B) Dot blot analysis of the\u00a0production of both scaffolds either as single domain antibodies in E. coli supernatant or as fusions with a human Fc domain and secreted by CHO cells (Moutel et al., 2009). Serial dilutions of supernatant were revealed with an anti-His tag antibody or an anti-human Fc antibody. (C) Immunofluorescence of HeLa cells with recombinant antibody in both scaffolds labeling the nuclear rim structure characteristic of the nuclear lamina. (D) The anti-lamin based on the two scaffolds were transiently expressed in HeLa cells as GFP fusion. Living cells were imaged after 24\u00a0hr and showed that the hs2dAb recognized its intracellular target lamin. Bar = 10 \u00b5m.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/16228/elife-16228-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Comparison between relative amino acid frequencies in CRD1 and CDR2 observed from 250 llama VHH isolated from a na\u00efve library (llama), the rationally designed (Designed) and the effective diversity in the synthetic library (Nali-H1) as computed after sequencing of 2500 clones using NGS. The\u00a0position of each amino acid is indicated (CDR1 1; CDR1 2; etc). Amino Acid are indicated in single letter code. (B) Comparison between the designed diversity set for every amino acid position in the CDR3 region with the effective diversity observed after sequencing 2500 clones using NGS. Note that various CDR3 amino acid lengths are present in the library. They were almost evenly distributed with a little bias for shorter CDR3s (9 aa: 26%; 12 aa: 27.2%; 15 aa: 23.7%; 18 aa: 23.1%). For simplicity, we report in the figure the diversity observed for up to 18 aa. Note also that although cysteine occurs in natural llama CDRs, they were avoided by design and, accordingly, not found in Nali-H1 CDRs.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/16228/elife-16228-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Sequential centrifugation carried out using clones selected from the NaLi-H1 library (anti-GFP, anti-mCherry) or obtained after CDR grafting into the hs2dAb scaffold (anti-lamin). As a reference, the behaviour of a widely used natural anti-GFP antibody (GFP4 or Chromobody) was analysed. I: Input; P1: pellet after the 20 000 g centrifugation, P2: pellet obtained after the 250 000 g centrifugation, SN: supernatant of the 250 000 g centrifugation. Samples were analysed after western blotting using an anti-HIS antibody. Note that the apparent size of the lamin antibody and the Chromobody is lower because these antibodies are fused to only one myc tag (expressed from the parental pHEN2-His-Myc plasmid). (B), (C): a set of clones randomly chosen in the NaLi-H1 library was expressed in a multiwell format and analysed as in A. Only-the pellet (P) and the supernatant (SN) of the 250 000 g centrifugation are shown. Two samples (an anti-GFP hs2dAb and a randomly picked clone #1) were heated at 90\u00b0C for 10 min before being analysed by sequential centrifugation (anti-GFP* and #1*). Note that in these conditions, a fraction of the hs2dAb is unfolded and found in the pellet. A significant resistance to temperature is however observed. Note that high molecular weight bands were systematically seen which may suggest that a fraction of the hs2dAb is in a multimeric form. The same behaviour was observed for the natural Chromobody.\n\nTo test whether the sdAbD10 scaffold composed of the FRW 1 to 4 was robust independently on the CDR sequences, we grafted the CDR loops of the lam1 VHH (Rothbauer et al., 2006) directed against laminB into the framework of the sdAbD10 (sdAbD10-anti lamin). In parallel, partial humanization of the scaffold was also tested to figure out whether it affected dramatically its intrinsic properties. Seven residues of the synthetic scaffold sdAbD10 were altered towards the most represented in human VH3 while five other divergent residues were kept unchanged. The four llama VHH-specific amino acids hallmarks in the framework-2 region (positions 42, 49, 50, and 52), which are essential to increase intrinsic solubility properties, as well as the Glutamine in position 103, were maintained. We named the resulting hybrid single domain VH hs2dAb (humanized synthetic single domain antibody) (Figure 1B). After grafting the CDR of the anti-lamin into these two scaffolds, we analyzed their display on the\u00a0M13 surface (Figure 1\u2014figure supplement 2A) and their production by E. coli and by CHO cells (Figure 1\u2014figure supplement 2B). Both scaffold showed similarly good efficacy. Importantly, both the sdAbD10 and hs2dAb scaffolds enabled functional display of the grafted CDRs and robust detection of endogenous lamin was observed by immunofluorescence staining of Hela cells (Figure 1\u2014figure supplement 2C). Last, Rothbauer et al. (Rothbauer et al., 2006) showed that the original anti-lamin VHH recognized its target antigen upon intracellular expression. Similarly, we observed that both the hs2dAb and the sdAbD10 scaffolds allowed the\u00a0efficient intrabody use of the synthetic anti-lamin antibodies (Figure 1\u2014figure supplement 2D). This further indicated that the synthetic scaffolds were robust, non-aggregating and resisted to the reducing conditions found in the cytosol, while allowing the\u00a0proper display of CDR loops. As partial humanization did not affect the properties of the sdAbD10 scaffold, we chose the hs2dAb scaffold as a unique framework to construct a diverse library of synthetic nanobodies endowed with the characteristic stability of these single domain antibodies while displaying an amino acid sequence closer to human VH3.\n\n### Library construction\n\nA synthetic diversity was introduced in the three CDRs by rationally controlling each position of the CDR1 and CDR2 using a set of amino acids that recapitulates partially natural diversity (see the Appendix for more details) while reducing the presence of the most hydrophobic residues in order to avoid the\u00a0aggregation propensity (see Material and methods). A constant length of 7 amino acids was selected for CDR1 and CDR2. A large spectrum of Camelidae VHH CDR3 length is naturally observed and this loop is known to contribute strongly to antigen binding selectivity. Thus, we chose to use four different lengths of CDR3 to cover this spectrum (9, 12, 15 or and 18 amino acids) and introduce random amino acid (except cysteine) at each position.\n\nSynthetic DNA was produced by the\u00a0trinucleotide DNA assembly and amplification was carried out starting from 2.1011 different molecules, using only a\u00a0few cycles of PCR (PCR linearity validated by Q-PCR) to prevent drift during amplification. The synthetic library was inserted into a modified pHEN2 phagemid vector containing a triple myc-tag and suicide gene (ccdB) that allowed positive selection of insert-bearing clones (Bernard et al., 1994). Massive electroporation was carried out using E. coli TG1 cells and 430 large agar dishes (140\u00a0mm) were used to ensure proper plating of the library. About 3.109 individual recombinant hs2dAb clones were obtained. We named this library NaLi-H1 (for Nanobody Library-Humanized 1). We first evaluated the quality of the NaLi-H1 library by sequencing 315 random clones. Only 13 sequences were found to be incorrect (bearing an in-frame stop codon, missing one base, missing a large region [the CDR1 or CDR1-FWR1- CDR2], or being empty). Thus, a total of about 4% of potential default was observed, which is rather low and only marginal in comparison to the 3.109 clones obtained. The diversity was then evaluated by sequencing 5.6 105 inserts using ion Torrent chips (Life Technologies). This confirmed the quality of the library and showed that the four CDR3 lengths (9, 12, 15 or and 18 amino acids) were present in similar proportions. The diversity and statistical distribution of amino acids in the CDRs were found to be as expected (Figure 1\u2014figure supplement 3). To estimate the overall folding of the hs2dAb present in the library, we picked randomly 24 clones and tested their solubility in bacteria medium after secretion. Medium were centrifuged at 250 000\u2009g and the supernatant and pellet were analyzed. All tested clones showed essentially complete solubility, at least as good as a natural Lama antibody (GFP4). Even after warming at 90\u00b0C for 10 min, the hs2dAb showed good solubility (over 70%) (Figure 1\u2014figure supplement 4).\n\n### Library screening and validation\n\nThe NaLi-H1 library was screened against a set of various antigens. Several standard phage display methods (Hoogenboom, 2005) were used (see Materials and methods for details): antigen adsorption on immunotube, native antigen captured on beads, direct selection at the cell surface. All conditions allowed the efficient recovery of diverse and functional antibodies.\n\nAs a first screen to evaluate the quality of the library, we chose to select specific binders for the EGFP and mCherry fluorescent proteins. NaLi-H1 phages were panned against biotinylated EGFP or mCherry and 3 rounds of selection were carried out. Eighty clones were analyzed for each screening campaign. From the panning against EGFP, 37 non redundant nanobodies were shown to detect EGFP by phage ELISA. These antibodies were then used for immunofluorescence and 10 of them were found to efficiently stain EGFP in fixed HeLa cells (Figure 2A). Similarly, selection against mCherry led to 6 positive binders (Figure 2B). As shown in Figure 2A and B, no staining was obtained in untransfected cells.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/16228/elife-16228-fig2-v2.jpg)\n\n**Figure 2.:** (A) HeLa cells were transfected with GFP-Rab6, fixed using paraformaldehyde, permeabilized using saponin and stained with non-purified myc-tagged hs2dAb (R3TF3) directed against EGFP and revealed with anti-Myc-Tag (9E10) and Cy3-labeled secondary antibodies. (B) HeLa cells transfected with mCherry-Rab6, fixed and permeabilized as in A and stained using a myc-tagged non purified hs2dAb against mCherry (C11). The hs2dAb was then revealed using 9E10 and A488-labeled secondary antibodies. (C) Cells were fixed in methanol and co-stained with a non-purified anti-tubulin hs2dAb (D5) fused to a human Fc domain and a mouse monoclonal anti-tubulin antibody (DM1A), and revealed using an anti-Human Fc-A488 and an anti-Mouse-Cy3 secondary antibody, respectively. (D) hs2dAb F4 anti-beta-actin was used to stain MRC5 cells fixed with paraformaldehyde and post fixed with methanol. The hs2dAb was then revealed using 9E10 and A488-labeled secondary antibodies. Cells were co-stained by red fluorescent phalloidin to detect actin stress fibers. (E) A431 cells were fixed with 3% paraformaldehyde, permeabilized with 0.1% Triton and stained with the anti-p53 hs2dAb (B7) fused to a human Fc domain together with a rabbit polyclonal antibody directed against p53. Immuno-labeling was revealed using anti-Human Fc-Cy3 and anti-Rabbit-A488 secondary antibodies. (F) The hs2dAb antibody directed against HP1\u03b1 (A5) fused to a human Fc domain was used to stain HeLa cells fixed with paraformaldehyde and permeabilized with 0.1% TritonX100. Cells were co-stained using a polyclonal rabbit antibody directed against HP1\u03b1 and immuno-labeling was revealed using anti-Human Fc-Cy3 and anti-Rabbit-A488 secondary antibodies. (scale bar = 10 \u00b5m).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16228/elife-16228-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) HeLa cells were left untreated (top) or incubated with 10 \u00b5M nocodazole for 90 min at 37\u00b0C (bottom). Cells were then permeabilized using 0.2% tritonX100, fixed using methanol (\u221220\u00b0C, 4 min) and immunolabelled using an anti-tubulin hs2dAb (green) and a polyclonal anti-tubulin antibody (Red). Staining was essentially lost upon nocodazole treatment with only few nocodazole-stable microtubules being labelled. Bar\u00a0=\u00a010 \u00b5m (B) HeLa cells were left untreated (top) or incubated with 5 \u00b5M cytochalasin D for 60 min at 37\u00b0C (bottom). Cells were then fixed using paraformaldehyde, permeabilized with saponin and immunolabelled using the anti-actin hs2dAb H2 (green) and a polyclonal anti-actin antibody (Red). Staining was strongly reorganized upon cytochalasin D treatment. Bar\u00a0=\u00a010 \u00b5m (C) SDS-PAGE of 40 \u00b5g sample per well of WI38 whole cell extract was blotted and separated in stripes for each lane. Stripes were then incubated for immuno-detection with various hs2dAb (lane 1\u20133: anti-actin hs2dAb; lane 4: non relevant [NR] control; lane 6: anti-tubulin hs2dAb) directly used from E.coli culture supernatant and further revealed using myc-HRP antibodies. Control monoclonal anti-actin or anti-tubulin were used on stripes 5 and 7, respectively.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16228/elife-16228-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) RPE-1 were left untreated or irradiated with UV light (100 J/m2). Cells were then fixed and stained using an anti-p53 hs2dAb together with an anti-p53 rabbit polyclonal antibody. Both the polyclonal and the hs2dAb antibodies detected the strong increase of p53 localization in the nuclei. (B) RPE-1 cells stably expressing an shRNA directed against p53 together with GFP were irradiated as in A and stained using the hs2dAb. No labeling was obtained in p53 KD cells. Bar\u00a0=\u00a010\u00a0\u00b5m.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/16228/elife-16228-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (B). (A) GFP tagged HP1\u03b1, HP1b and HP1\u03b3 were expressed in Hela cells. Cells were then lysed and extract separated by SDS-PAGE, transferred on nitrocellulose filters. Immunodetection was carried out using an anti-GFP antibody (left) or an anti-HP1 hs2dAb. Although the selection was carried out against was HP1\u03b1, the hs2dAb efficiently detected GFP tagged HP1\u03b1, HP1\u03b2 and HP1\u03b3. The band indicated by a star likely represent the endogenous HP1 proteins. (B) Cells were transfected as in (A), fixed and analyzed by immunofluorescence using the anti-HP1 hs2dAb. Nuclei were stained using DAPI. GFP tagged HP1\u03b1, HP1b and HP1\u03b3 were all efficiently detected by the recombinant antibody. Bar\u00a0= 10 \u00b5m.\n\nIn the next screen, two highly and constitutively expressed components of cell cytoskeleton, tubulin and \u03b2-actin, were targeted. Antibodies against tubulin were selected in native conditions (Nizak et al., 2003a) using commercial biotinylated tubulin (Cytoskeleton). After two rounds of selection, 3 out of 40 clones analyzed were shown to detect endogenous tubulin by immunofluorescence (Figure 2C). As expected, staining was lost in cells treated with the microtubule destabilizing drug nocodazole, with only a few stable microtubules being labelled in these conditions (Figure 2\u2014figure supplement 1A). This antibody was recently used to stain microtubules by super-resolution imaging (Mikhaylova et al., 2015). Among phage display methods, selection on antigens directly adsorbed on the surface of immunotube is often used as a cheap and straightforward method, despite the low capacity and the strong denaturation imposed by non-specific adsorption. A screen against coated \u03b2-actin led to the identification of 16 unique binders positive in phage ELISA. Seven of these antibodies decorated endogenous actin stress fibers by immunofluorescence in MRC5 cells (Figure 2D) as well as in other cell lines. Treatment of cells with cytochalasin D disorganizes actin fibers. Accordingly, staining with the hs2dAb was strongly altered (Figure 2\u2014figure supplement 1B). Three of the hs2dAb detected a single band at the molecular weight of \u03b2-actin in western blot from HeLa cell extract while one of the anti-tubulin detected a band at the correct molecular weight of tubulin (Figure 2\u2014figure supplement 1C).\n\nActin and tubulin are strongly expressed cellular proteins. Another screen was thus performed to select binders directed against proteins expressed at a lower level. A first screen was carried out against the tumor suppressor p53 protein. The 83 first amino acids of the NP_000537.3 isoform were produced in bacteria fused to a SNAP tag, biotinylated in vitro and used as a target in the phage display selection. Among 12 clones positive in phage ELISA, 6 selected hs2dAb were shown to label endogenous p53 in immunofluorescence on A431 cells (Figure 2E). The\u00a0specificity of the staining was confirmed using RPE-1 cells (Figure 2\u2014figure supplement 2). A low nuclear staining was observed in normal conditions, with some variability between cells. As expected, the\u00a0intensity was enhanced upon UV-induced DNA damage. Such an increase was not observed in a RPE-1 cell line stably expressing an shRNA against p53. A second screen was carried out against the heterochromatin protein HP1\u03b1. HP1\u03b1 was produced in bacteria fused to an avitag to obtain a biotinylated recombinant protein. Biot-HP1\u03b1 was then immobilized on streptavidin beads and used as a target for 3 rounds of selection. 5 individual hs2dAb were directly identified by immunofluorescence staining of HeLa cells. Figure 2F shows that selected antibodies were efficiently staining endogenous HP1 in the nucleus. Overexpression of the different HP1 variant followed by western blot and immunofluorescence analysis actually suggested that HP1\u03b2/\u03b3 were also detected by the antibody (Figure 2\u2014figure supplement 3). Together these results showed that the NaLi-H1 synthetic library can be screened in various conditions against very different purified targets while leading to the rapid identification of diverse and specific binders that can be used in classical antibody-based staining methods.\n\n### Selection of conformation-sensitive antibodies\n\nOne of the main advantages of full in vitro immunization using display technologies is the control of antigen conformation and concentration. It allows to drive selection towards the desired outcome. For example, selection schemes can be devised to improve the recovery of high affinity binders endowed with low off-rate kinetics (Lee et al., 2007), to target specific epitopes (Even-Desrumeaux et al., 2014; Vielemeyer et al., 2009), or to identify conformation sensitive-binders (Haque et al., 2011). Recombinant antibody fragment library screening have, for example, provided several binders targeting selectively the active conformation of GTP binding proteins (Dimitrov et al., 2008; Nizak et al., 2003a; Tanaka et al., 2007). We hypothesized that the NaLi-H1 synthetic library had enough diversity and functionality to enable the identification of selective conformational binders. A subtractive panning was performed to select conformation-specific antibodies directed against small GTPases from the RHO subfamily (Chinestra et al., 2012). Small GTPases are molecular switch that cycle between an inactive and an active state when bound to GDP or GTP nucleotides, respectively. Mutant of small GTPases can be designed that adopt stably an active or inactive conformation. A constitutively active (CA) mutant RHOA L63 was expressed in HEK293 as a bait then freshly pulled down for panning to preserve its native conformation. To enrich in phage specific for GTP-bound RHOA, a depletion step was introduced from the second round of panning using GDP-bound RHO proteins. After four rounds of selection, clones were analyzed using phage ELISA against either wild type RHOA loaded with GTP\u03b3S (a non-hydrolysable analogue of GTP) or GDP-loaded RHOA. Forty clones presenting a differential ELISA signal in favor of the GTP loaded RHOA were sequenced. One antibody, represented by clone H12, represented more than 50% of the population. We analyzed H12 binding specificity by ELISA on several purified RHO proteins expressed as GST fusion in E.coli. H12 recognized the constitutively active mutant RHOA L63 (RHOA-CA) which is bound to GTP due to impaired hydrolysis activity. A similar signal was obtained with wild type RHOA loaded with the non-hydrolysable GTP analogue GTP\u03b3S. In contrast, no binding was observed to the dominant negative RHOA N19 mutant RHOA-DN nor to GDP-loaded wild type RHOA (Figure 3A). The capacity of H12 to specifically immunoprecipitate GTP-loaded RHOA from mammalian cell extracts was then evaluated in comparison to the standard method to assay RHO activity (Ren et al., 1999). This pull down method is based on the RHO binding domain of Rhotekin fused to GST (GST-RBD) which is known to bind to the active conformation of RHO GTPase. The hs2dAb H12 bearing a carboxy-terminal CBD (Chitin-Binding Domain) was expressed in E. coli and immobilized on chitin beads. These beads were then incubated with HeLa cell extracts pre-treated with either GTP\u03b3S or GDP to load small GTPases with the respective nucleotide. The H12 hs2dAb was found to be highly selective of RHO loaded with GTP\u03b3S as it was unable to precipitate RHO from GDP loaded extract (Figure 3B). A similarly strong conformation-specificity was found when using H12 for immunofluorescence staining (Figure 3C). HeLa cells expressing the GFP-RHOA constitutively active mutant carrying the mutation Q63L (GFP-RHOA CA) or the dominant negative mutated T19N (GFP-RHOA DN), were fixed and stained with H12 hs2dAb. Expression of the dominant negative mutant GFP-RHOA DN, did not lead to an increased signal over the background of un-transfected cells. In contrast, a staining with H12 was correlated with the level of GFP-RHOA CA mutant expression. Note that the signal does not fully overlap GFP fluorescence and appeared stronger at the cell border and in large zone where cell shape is strongly retracted by large bundled actin stress fibers induced by a sustained activation of the RHOA/ROCK pathway (Mayer et al., 1999). This CA mutant, like active mutant of many small GTPases related to RAS still need to be activated by guanine nucleotide exchange factors to be loaded with GTP and display the active conformation. Thus, we believe that the H12 staining revealed the active form of this mutant in cells (Figure 3C). All together, these results demonstrated that the H12 hs2dAb is selective for RHO GTPases in their active conformation, highlighting the performance and diversity of the NaLi-H1 library.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/16228/elife-16228-fig3-v2.jpg)\n\n**Figure 3.:** (A\u2013C)\u00a0H12 is a conformational hs2dAb binding only to the GTP bound, activated state, of the RHOA GTPase: (A) ELISA using the H12 or anti-GST antibodies to reveal recombinant GST-RHOA wild type proteins loaded with either 100\u00a0\u00b5M GTP gamma S (Black) or 1\u00a0mM GDP (White), or constitutively active mutant proteins GST-RHOA Q63L (Grey). Means \u00b1 SEM. (B) A CBD tagged H12 pull down from HeLa cell extract loaded with100\u00a0\u00b5M GTP gamma S (GTP) or with 1\u00a0mM GDP as inputs. Western blot reveals RHOA at a\u00a0similar level in 5% of both input but only on the GTP loaded extract in the CBD-H12 pull down. D5 anti tubulin was used as a\u00a0negative control and the standard GST-RBD (RHO binding domain of Rhotekin) as a positive control of active RHO pull down. (C) Immunofluorescence on HeLa cells overexpressing GFP-RHOA CA (constitutively active) mutant or GFP-RHOA DN dominant negative mutant. H12 staining detected using a myc tag antibody revealed only cells overexpressing the constitutively active mutant with a pattern stronger at the cell periphery were RHOA activation is high. (D) Tumor cell surface subtractive selection scheme. (E) ELISA of hs2dAb F7 anti-HER2 on HER2 fused with a rabbit Fc versus binding on rabbit Fc at equimolar concentration. (F) hs2dAb F7 anti-HER2 decorated the SKBR3 membrane in immunofluorescence. SKBR3 cells were fixed with 3% paraformaldehyde and stained with F7 revealed by an anti-HisTag (Sigma) and an anti-MouseCy3 secondary antibody (Jackson). (G) FACS analysis of F7 anti-HER2 on SKBR3 HER2 positive cells versus MCF10A HER2 negative cells. (Scale bar = 10 \u00b5m).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16228/elife-16228-fig3-figsupp1-v2.jpg)\n\n### Direct selection against cell surface antigens\n\nThe use of antibodies to target cells involved in pathologies like cancers or viral infection is one of the most promising therapeutic approach. Antibodies also represent a unique tool to identify novel targets at the cell surface. Using synthetic libraries like the NaLi-H1 library to carry out direct selection against the cell surface of tumor cells would strongly accelerate the identification of specific antigens while allowing extended control over the conditions of selection. A subtractive selection scheme was set up to identify antibodies selectively detecting the surface of breast tumor cells: phages displaying hs2dAbs were first depleted against a reference cell line before being selected against the target one (Figure 3D). As a target cell line, we used the SKBR3 line, which is known to overexpress the HER2 cell surface protein, while the MCF7 cell line, negative for HER2, was used to pre-adsorb the library. After the third round of bio-panning, 88 clones were analyzed by FACS and 58 were found to be positive when tested on SKBR3 cells and negative on MCF7 cells. Sequencing the 58 positive clones revealed that 15 independent binders had been selected. Although the subtractive selection was not performed on identical cell lines expressing or not HER2, we observed strikingly that 12 clones out of 15 recognized HER2 exoplasmic domain by ELISA using HER2-Fc as a target antigen (Figure 3E), suggesting that it behaves as a dominant differential epitope. As shown in Figure 4, these antibodies efficiently detected HER2 at the cell surface by immunofluorescence (Figure 3F) or by FACS (Figure 3G). These experiments demonstrated that the NaLi-H1 library will represent a unique tool to discover, in a rapid and cost effective manner, specific antibodies detecting antigens present at the surface of pathological cells. These antibodies may then be used to identify the corresponding target.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/16228/elife-16228-fig4-v2.jpg)\n\n**Figure 4.:** Intracellular expression of hs2dAb. (A)\u00a0(top panel) HeLa cells were co-transfected with GFP-Rab6 and a hs2dAb-mCherry anti-EGFP plasmids. The hs2dAb mCherry anti-EGFP colocalized perfectly with the Rab6 Golgi staining. (bottom panel) HeLa cells were co-transfected with Myr-palm-mCherry and a VHH-EGFP anti-mCherry plasmids. The VHH-EGFP anti-mCherry interacted with its target in vivo and colocalized perfectly with the mCherry staining at the plasma membrane. (B) SKBR3 cells were transfected with an anti-p53 hs2dAb-mCherry alone (top panel), or together with full length p53-EGFP which concentrated the hs2dAb into the nucleus (bottom panel). (C) GFP, used as a control (top panel) or a GFP-tagged anti-HP1 hs2dAb (bottom panel) were transiently expressed in HeLa cells (green). In contrast to the GFP control, the GFP-tagged anti-HP1 strongly accumulated in the nucleus where it labeled nuclear condensations. (Scale bar = 10 \u00b5m)\n\n### hs2dAbs as intracellular antibodies\n\nVarious antibody fragments have long been proposed to represent powerful tools when expressed in cells as intrabodies. Although several studies indeed report efficient use of intrabodies (reviewed in [Kaiser et al., 2014; Lobato and Rabbitts, 2003; Stocks, 2005]), this is limited to antibody scaffolds that resist to the reducing environment of the cytosol. We evaluated the use of the hs2dAb scaffold to develop intrabodies. Randomly chosen hs2dAbs were fused to a fluorescent protein and observed in living cells. In comparison to our previous experience with scFv or nanobody libraries in which a majority of tested antibodies showed aggregation when expressed in the cytosol as an EGFP-fusion, most of the hs2dAbs tested here gave a monodispersed fluorescence, and very few were showing aggregates. Monodispersed fluorescence of the EGFP has been proposed to be a convenient indicator of stability and potential use as intrabody (Guglielmi et al., 2011). Several hs2dAb directed against actin, tubulin, EGFP or p53 were tested for their ability to trace intracellular antigens in living cells. None of the anti-tubulin or anti-actin antibodies tested were found localized on microtubule or microfilament, respectively, in living cells. We reasoned that this poor efficiency may be linked to the antigen denaturating conditions used during the selection of antibodies directed against actin. The existence of a large pool of unpolymerized actin and tubulin may also prevent efficient recruitment on the polymers. In contrast, several anti-GFP and anti-mCherry hs2dAbs were found to efficiently label their targets, like for example GFP-Rab6 or Myr-Palm-mCherry fusion proteins, in living cells (Figure 4A). Similarly, the anti-p53 hs2dAb fused to mCherry were clearly accumulated in the nucleus of SKBR3 cells where endogenous p53 is also localized. This signal was enhanced in cells overexpressing p53-EGFP (Figure 4B). This further confirmed the binding specificity of the hs2dAb anti-p53 while expressed in the reducing cytosol. Effective intrabodies were also obtained against HP1. Figure 4C (lower panel) shows that anti-HP1 expressed as an EGFP tagged protein in HeLa cells localized in the nucleus where it labels condensed structures similar to HP1 usual staining. In contrast, a diffuse cytoplasmic and nuclear staining was obtained using non relevant hs2dAbs fused to EGFP (Figure 4C, upper panel).\n\nThese results indicate that functional intrabodies can be obtained at high frequency using the NaLi-H1 library. Intrabodies can be used, upon fusion with a fluorescent protein, to track the dynamics of their target in living cells (see for example Nizak et al., 2003a). Such an application is illustrated in the Video 1 where an hs2dAb directed against mCherry is used to track mCherry-fused Rab6 in living cells. Intrabodies may allow not only to track the dynamics of their cellular target, but also to perturb, or block, their activity. Our results indeed indicate that the H12 antibody was able to perturb endogenous RHO activity when expressed in the cytosol. We could not directly image enrichment of the H12 antibodies in cellular sub-domains in living cells but we observed that H12 may behave as an efficient intrabody carrying out co-immunoprecipitation experiments. H12 carrying a carboxy-terminal myc tag was expressed in HeLa cells together with either the CBD-fused RHOA DN or with the CBD-RHOA CA mutants. H12 was pulled-down by RHOA CA but not by inactive RHOA DN (Figure 5\u2014figure supplement 1). H12 thus worked as an intrabody and kept its conformation sensitivity in the cytosol. Because RHO GTPases are involved in signaling pathways that promotes the actin cytoskeleton polymerization, we looked at functional effects induced by H12 overexpression. In contrast to un-transfected cells or cells transfected with various non-relevant EGFP fused hs2dAb (Figure 5A, upper panel), we observed that cells expressing H12-EGFP were totally devoid of actin stress fibers (Figure 5A, lower panel). This alteration in actin filament organization was associated with marked changed in cell shape characteristic of loss of intracellular mechanical forces and tension. As RHOA plays a major role in activating myosin II and actin cytoskeleton reorganization, our results suggested that H12 efficiently perturbed RHO-dependent signaling, mimicking the phenotype induced by the C3 exoenzyme RHO inhibitor (Ridley and Hall, 1992).\n\n![Video 1.](https://cdn.elifesciences.org/articles/16228/elife-16228-media1.mp4.jpg)\n\n![Figure 5.](https://cdn.elifesciences.org/articles/16228/elife-16228-fig5-v2.jpg)\n\n**Figure 5.:** (A) HeLa cells expressing transiently a EGFP-tagged non relevant hs2dAB (top panel) or EGFP-H12 anti RHO-GTP (bottom panel) were fixed 20\u2009hr post transfection and stained using DAPI and Alexa 594 phalloidin to detect actin stress fibers. The H12 hs2dAb induced actin stress fibers disappearance and major cell shape change (see cells outlined with a dotted line) (B) Protein knockdown of H2B-EGFP mediated by functionalized inhibitory antibodies. HeLa S3 cell stably expressing histone H2B-EGFP were transfected with vectors expressing antibodies fused to an F-box (F-Ib) to induce degradation of the targeted cellular antigen. The F-GFP4 VHH (DegradFP) was used as a positive control (top panel) and a non-relevant hs2dAb as a negative control (bottom panel). F-Ib were expressed using a bi-cistronic vector driving the co-expression of mitochondrial targeted mCherry. Protein interference is analyzed in cells displaying mCherry positive mitochondria (mitoCherry channel). Efficient protein knockdown is obtained using the R3TF3 anti-EGFP intrabody. Note that not all nanobodies can be used as F-Ib because R3TG4 does not induce protein degradation. (Scale bars = 20 \u00b5m) (C) Fluorescence decay measurement of the protein interference assay was quantified by flow cytometry (10000 cells analyzed, from 3 independent replicates). GFP fluorescence intensity was quantified in the transfected and the untransfected subpopulations for each F-Ib. The ratio of each median of fluorescence (transfected versus untransfected population) was calculated as a percentage of GFP fluorescence intensity for one F-Ib. A strong decrease in fluorescence corresponding to protein knockdown was observed with F-GFP4 VHH and F-R3TF3 hs2dAb intrabodies while the non-relevant negative control and R3TG4 did not induce a decrease of fluorescence. (D) Cells were analyzed as in C but the\u00a0cells were incubated in 1\u00a0\u00b5M MG132 or DMSO for 44\u2009hr after transfection by the different F-Ib and fluorescence intensity was normalized using the non-relevant control. Protein knockdown was inhibited by MG132.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/16228/elife-16228-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** HeLa cells were co-transfected for 24\u00a0hr with the anti RHO hs2dAb H12 fused to carboxy-terminal myc tag (H12-myc) or a non relevant control (NR-myc) that was a negative clone in a panning against FITC together with chitin binding domain (CBD) fusion of either the dominant negative mutant RHOA-N19 (DN) or the constitutively active mutant RHOA-L63 locked in the GTP bound state (CA). Chitin beads pull down of CBD-RHOA-DN or CBD-RHOA-CA revealed the selective co-precipitation of H12-myc together with the RHO active mutant. The total level of CBD-RHOA or hs2dAb-myc proteins was revealed by loading 5% of the respective input. CBD-RHOA proteins were detected with anti CBD tag and the hs2dAb antibodies with an anti-myc tag antibody.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/16228/elife-16228-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) Model for F-Ib degradation by fusing Fbox domain to the VHH GFP4 inducing GFP target protein ubiquitiation followed by proteasome-dependent degradation of the target protein. (B) Schematic illustration of the bicistronic vectors: an Fbox or NoFbox domain, respectively, is fused to the N terminal part of hs2dAb and a transfection marker MTS-mCherry, labeling mitochondria in red, is co-expressed using an Internal Ribosome Entry Site (IRES). (C) Fluorescence visualization HeLa S3 cells stably expressing H2B-GFP and transfected with NoF-VHH GFP4 or F-VHH GFP4. Degradation by the degradFP was observed in cells expressing F-VHH GFP4. Scale bar = 10 \u00b5m (D) Western blot quantification of protein knockdown mediated by F-GFP4. (E) Quantification of GFP fluorescence by flow cytometry in MTS Cherry positive cells.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/16228/elife-16228-fig5-figsupp3-v2.jpg)\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/16228/elife-16228-fig5-figsupp4-v2.jpg)\n\nIdentification of blocking antibodies is a challenging task and not all functional intrabodies are inhibitory. However, it is possible to functionalize non-blocking intrabodies to inhibit their target function. One approach relies on the ubiquitinylation and degradation of the recognized target as described by Caussinus et al. (2011). This approach is based on the fusion of intrabodies to an F-box domain which allows interaction with Skip1, a member of the SCF complex, an E3 ubiquitin ligase of the complex E1/E2/E3 ubiquitinylation machinery, that targets proteins to proteasome-dependent cellular degradation (Caussinus et al., 2011) (Figure 5\u2014figure supplement 2). This approach was efficiently developed to target several EGFP fusion proteins in Drosophila using a single anti EGFP intrabody, named GFP4, which is a robust and high affinity EGFP llama intrabody originally isolated from an immune library (Rothbauer et al., 2006). To get insight into the relative functionality of hs2dAb for such a protein interference approach, several of the anti EGFP hs2dAb selected from the NaLi-H1 library were fused at their amino terminus to the Fbox domain and their efficacy was compared to the efficacy of the Fbox-GFP4 nanobody. To detect cells expressing Fbox-intrabody fusion proteins (F-Ib), we constructed a bicistronic vector driving the co-expression of F-Ib together with a mitochondria-targeted mCherry (Mito-mCherry) (Figure 5B). We expressed the F-Ib antibodies in a HeLa clone stably expressing EGFP fused to histone H2B (Sillj\u00e9 et al., 2006) and looked for EGFP-H2B depletion. As expected, F-GFP4, also known as degradFP, induced a strong reduction of H2B-EGFP expression as analyzed by western blot (Figure 5\u2014figure supplement 2). Accordingly, a strong reduction in nuclear fluorescence intensity was observed in cells expressing F-GFP4 (see mito-mCherry positive cells, Figure 5B; Figure 5\u2014figure supplement 2). No effect was observed when expressing either GFP4 alone or a GFP4 fused to a truncated, nonfunctional, Fbox domain (Figure 5\u2014figure supplement 2). When anti-EGFP clones selected from the NaLi-H1 library were tested, we observed that some of the hs2dAb that were found to active as fluorescent intrabodies failed to degrade H2B-EGFP when expressed as F-Ib. This highlights the fact that not all intrabodies can efficiently be functionalized with the F-box and that in vivo binding to a target is not the only parameter to consider. However, several hs2dAb anti-EGFP induced a complete disappearance of nuclear H2B-EGFP signal when expressed as F-Ib (F-R3TF3, Figure 5B) while no reduction was observed when using an anti-EGFP that cannot be used as an intrabody (F-R3TG4, Figure 5B). FACS analysis showed a decreased of fluorescence intensity by as much as 70% (Figure 5C). As expected, this effect was reversed in the presence of a proteasome inhibitor (Figure 5D). Altogether, these experiments show that the hs2dAb scaffold enables the frequent selection of antibodies that can be expressed in the mammalian cell cytoplasm to be used as functional fluorescent or inhibitory intrabodies.\n\n## Discussion\n\nHere, we report the construction of the first large fully synthetic single domain antibody library based on a humanized scaffold derived from llama VHH. A set of robust nanobody scaffolds was first identified using a positive expression screening in E. coli cytosol. One very robust scaffold (sdAbD10) was identified and was used as a base. After introduction of several modifications that aimed at humanizing its primary sequence, we designed the hs2dAb scaffold which is as stable as sdAbD10 while being closer to human VH3. Our data indicate that the hs2dAb displays partial resistance and/or refolding after treatment for 10\u2009min at 90\u00b0C. Using CDR grafting experiments we confirmed the efficacy and the stability of the synthetic scaffold to display CDR regions. Based on our prior experience on phage display libraries, immune or na\u00efve llama VHH libraries (Monegal et al., 2012; Olichon and Surrey, 2007) or from scFv libraries (Dimitrov et al., 2008; Goffinet et al., 2008; Nizak et al., 2003a) we then rationally designed CDR diversity with fixed CDR1 and CDR2 size and four CDR3 sizes (9, 12, 15 or and 18 amino acids). The power of modern gene synthesis approach permits to reach very high genetic diversity while controlling codon bias and cloning features. Fully random codon combination using NNN or NNK trinucleotide cannot prevent stop codon, undesired cysteine or hydrophobic residues to be incorporated, and it does not lead to the\u00a0controlled probability of amino acid occurrence at a given position. Therefore a more rational design was implemented with defined set of codons for each CDR amino acid position so that it does not mimic natural diversity, in contrast to recently developed Fab synthetic libraries (Prassler et al., 2011; Zhai et al., 2011), but is rather optimized for intrinsic hydrophilicity or solubility. After a\u00a0large-scale cloning of synthetic fragments, 3 billion independent clones were transformed in the bacteria. Library quality was confirmed by Sanger and next generation sequencing.\n\nThe library was validated by screening against various targets and in each case specific and highly functional antibodies were obtained (Table 1). Various selection schemes yielded a large diversity of high affinity and high selectivity binders. Selections were carried out using purified antigen coated on polystyrene, on magnetic beads or directly on the\u00a0cell surface. In many cases, two rounds of selection were sufficient to obtain selective binders. We usually analyzed only\u00a080 randomly picked clones because the diversity of specific binders was systemically high. Only a\u00a0few selections led to antibodies usable in western blotting (anti-actin, ant-tubulin) probably because most screenings were done using natively folded targets. Accordingly, selected hs2dAb performed very well in other conventional immunoassays like ELISA, FACS, immunoprecipitation or immunofluorescence. Affinity measurements done by surface plasmon resonance revealed KD values in the order of 10 nanomolar and up to 50 picomolar. Such high affinities are rather good and usually rarely observed for monovalent binders obtained without in vivo\u00a0immunization or in vitro affinity maturation steps (Figure 6; Table 2).\n\n**Table\u00a01.**\n Summary of screenings showing the number of unique clones giving positive signal. (ND means non determined)\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th colspan=\"3\">Positive clones</th>\n      <th></th>\n    </tr>\n    <tr>\n      <th>Antigen</th>\n      <th>Phage ELISA</th>\n      <th>IF/FACS</th>\n      <th>Intrabody</th>\n      <th>Rounds of panning</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>GFP</td>\n      <td>37</td>\n      <td>10/ND</td>\n      <td>4/10</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>mCherry</td>\n      <td>ND</td>\n      <td>6/ND</td>\n      <td>2/6</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>Tubulin</td>\n      <td>ND</td>\n      <td>3/ND</td>\n      <td>0/3</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Actin</td>\n      <td>16</td>\n      <td>7/ND</td>\n      <td>1/7</td>\n      <td>3</td>\n    </tr>\n    <tr>\n      <td>p53</td>\n      <td>12</td>\n      <td>6/ND</td>\n      <td>2/6</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>RHOA-GTP</td>\n      <td>24</td>\n      <td>8/ND</td>\n      <td>3/8</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Her2</td>\n      <td>6</td>\n      <td>5/10</td>\n      <td>ND</td>\n      <td>3</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 6.](https://cdn.elifesciences.org/articles/16228/elife-16228-fig6-v2.jpg)\n\n**Figure 6.:** Single cycle kinetics analysis was simultaneously performed on immobilized His fusion VHH antibodies (250\u2013300 RU), with five injections of analytes (EGFP, HER2, RHOAQ63L and mCherry) at 3.125\u00a0nM, 6.25\u00a0nM, 12.5\u00a0nM, 25\u00a0nM, and 50\u00a0nM. Analytes injections lasted for 120\u00a0s each and were separated by 10\u00a0s dissociation phases. At this time of buffer exchange, a slight refraction index discrepancy between the sample and the flow buffer can induce a drop in resonance unit. This common bulk effect, which is clearly visible on sensorgrams with a\u00a0smaller scale range on the RU axis (ie: R3SE4, R2TB5), does not affect the measurement of off-rate constant. Off-rate constant was calculated from an extended dissociation period of 10 min following the last injection according to the single cycle kinetics method. Each sensorgram (expressed in RUs as a function of time in seconds) represents a differential response where the response on an empty reference channel (Fc1) was subtracted. The red curves correspond to the data and the black curves represent the fit done by the BIAevaluation software. Note that the fitted curve is almost identical to the data curve in some cases like for example the RHOA Q63L or the HER2 binding measurement.\n\n**Table 2.**\n Binding affinities of 9 selected hs2dAb fused to a 6HIS tag measured by surface plasmon resonance single cycle kinetics method. Dissociation equilibrium constant KD corresponds to the ratio between off-rate and on-rate kinetic constant Koff/Kon. Non relevant hs2dAb were used as negative controls and gave no detectable binding signal. A positive control endowed with subnanomolar affinity, the GFP binder VHH-GFP4, was analyzed in parallel to the GFP hs2dAbs. A KD of 1.55\u201310 M was measured for VHH-GFP4 which is similar to published values. The\u00a0binding properties of the conformational H12 hs2dAb to the GTP loaded RHOA subfamily were measured using the L63 or L61 constitutively active mutants of RHO, RHOB, RHOC, RAC1 and CDC42 related small GTPases, as well as the negative mutant T19N of RHOA. ('no' means no detectable binding).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>hs2dAb-6xHis</th>\n      <th>Antigen</th>\n      <th>kon (M\u22121 s\u22121)</th>\n      <th>koff (s\u22121)</th>\n      <th>KD(M)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>R2TB5 anti-GFP</td>\n      <td>GFP</td>\n      <td>1.24 10+6</td>\n      <td>3.05 10\u22124</td>\n      <td>2.45 10\u221210</td>\n    </tr>\n    <tr>\n      <td>R3SD1 anti-GFP</td>\n      <td>GFP</td>\n      <td>7.07 10+5</td>\n      <td>6.68 10\u22124</td>\n      <td>9.44 10\u221210</td>\n    </tr>\n    <tr>\n      <td>R3SE4 anti-GFP</td>\n      <td>GFP</td>\n      <td>1.45 10+5</td>\n      <td>5.83 10\u22124</td>\n      <td>4.01 10\u22129</td>\n    </tr>\n    <tr>\n      <td>Llama VHH GFP4</td>\n      <td>GFP</td>\n      <td>2.99 10+5</td>\n      <td>4.65 10\u22125</td>\n      <td>1.55 10\u221210</td>\n    </tr>\n    <tr>\n      <td>D4 anti-Her2</td>\n      <td>Her2</td>\n      <td>1.79 10+5</td>\n      <td>1.63 10\u22124</td>\n      <td>9.11 10\u221210</td>\n    </tr>\n    <tr>\n      <td>A10 anti-Her2</td>\n      <td>Her2</td>\n      <td>1.66 10+4</td>\n      <td>4.88 10\u22125</td>\n      <td>2.94 10\u22129</td>\n    </tr>\n    <tr>\n      <td>B9 anti-Cherry</td>\n      <td>mCherry</td>\n      <td>6.14 10+4</td>\n      <td>1.68 10\u22124</td>\n      <td>2.74 10\u22129</td>\n    </tr>\n    <tr>\n      <td>E4 anti-Cherry</td>\n      <td>mCherry</td>\n      <td>6.57 10+4</td>\n      <td>2.03 10\u22124</td>\n      <td>3.10 10\u22129</td>\n    </tr>\n    <tr>\n      <td>B3 anti-Cherry</td>\n      <td>mCherry</td>\n      <td>6.19 10+4</td>\n      <td>2.71 10\u22124</td>\n      <td>4.38 10\u22129</td>\n    </tr>\n    <tr>\n      <td>H12 anti-RHO.GTP</td>\n      <td>RHOA Q63L</td>\n      <td>4.81 10+5</td>\n      <td>1.28\u22124</td>\n      <td>2.65 10\u221210</td>\n    </tr>\n    <tr>\n      <td>H12 anti-RHO.GTP</td>\n      <td>RHOB Q63L</td>\n      <td>2.24 10+5</td>\n      <td>3.59\u22124</td>\n      <td>1.57 10\u22129</td>\n    </tr>\n    <tr>\n      <td>H12 anti-RHO.GTP</td>\n      <td>RHOC Q63L</td>\n      <td>1.12 10+6</td>\n      <td>5.41\u22125</td>\n      <td>4.79 10\u221211</td>\n    </tr>\n    <tr>\n      <td>H12 anti-RHO.GTP</td>\n      <td>RHOA T19N</td>\n      <td>no</td>\n      <td>no</td>\n      <td>no</td>\n    </tr>\n    <tr>\n      <td>H12 anti-RHO.GTP</td>\n      <td>RAC1 Q61L</td>\n      <td>7.53 10+5</td>\n      <td>2.55\u22124</td>\n      <td>3.3 10\u221210</td>\n    </tr>\n    <tr>\n      <td>H12 anti-RHO.GTP</td>\n      <td>CDC42 Q61L</td>\n      <td>no</td>\n      <td>no</td>\n      <td>no</td>\n    </tr>\n  </tbody>\n</table>\n\nThe NaLi-H1 library thus enables the rapid selection of diverse and highly functional binders. Because it is a fully synthetic, non immune, library, it does not depend on animal experimentation, it is not limited by natural immunogenicity or toxicity of antigens and allows to develop and adjust the\u00a0selection without ethic consideration. In addition, because all steps are carried out in vitro, conditions can be tightly controlled. This allowed to develop powerful differential selection and to identify conformation-specific antibodies. This also allowed to directly screen for antibodies directed against antigens specifically present at the surface of a particular cell type. Such a differential selection will be a powerful approach to identify novel antigen at the surface of tumor or infected cells. Such antibodies may also represent powerful tools for diagnostic and therapeutic applications to target cells in human pathologies. For example, after dimerization using Fc domains, hs2dAb antibodies may be used to target tumor cells and benefit from antibody-dependent cell-mediated cytotoxicity (ADCC) for example. They may also be used directly as the smallest antibody-derived domain naked as an agonist or antagonist or armed for enhanced toxicity. Similarly, it may be labeled using radioactive compounds (e.g. 99mTc, 111In, 64Cu) and used to image tumors in patient using positron emission tomography. Altogether, he NaLi-H1 library may accelerate the identification of novel potent tools to be used in human clinical applications.\n\nThe synthetic scaffold we defined was based on the selection of a set of VHH able to fold properly in the bacteria cytosol. The goal was not only to define a robust scaffold that would be efficiently produced without aggregation but also to allow frequent selection of functional intrabodies. Intrabodies have been isolated from various antibody libraries (Nizak et al., 2003a; Rothbauer et al., 2006; Tanaka and Rabbitts, 2010; Vercruysse et al., 2010) as well as other protein scaffold like Darpin (Tamaskovic et al., 2012) or FN3 (Koide et al., 2012) which are devoid of cysteine. A peculiar feature of the NaLi-H1 library is that it is based on a humanized nanobody-like robust scaffold, stable in a reducing environment, while it still contains the two canonical cysteine residues. Stabilized nanobodies, human single domain scaffolds (Christ et al., 2007; Saerens et al., 2005) and libraries (Goldman et al., 2006; Mandrup et al., 2013) were reported before. However, to our knowledge, no synthetic library producing at high frequency functional intrabodies was developed before based on such stabilized scaffolds. Almost every hs2dAb antibodies we expressed in mammalian cytosol showed no sign of aggregation, which further supported the idea that the synthetic scaffold we designed is robust and highly resistant to reduction. Previous studies showed that functional intrabody identification often relied on additional steps of selection in a protein\u2013protein interaction reporter system such as PCA (Koch et al., 2006) or bacterial 2 hybrid (Pellis et al., 2012), yeast IACT (Tanaka and Rabbitts, 2010) or F2H assays (Zolghadr et al., 2008). Using the NaLi-H1 library, we observed that without using particular selection schemes, functional intrabodies were frequently obtained. Although we did not formally compare the NaLi-H1 library to previous llama na\u00efve or semi synthetic libraries, the functionality of selected hs2dAb was compared to a sub-nanomolar affinity intrabody, the GFP4 nanobody, which has been extensively used (Caussinus et al., 2011; Kirchhofer et al., 2010). We observed by monitoring its signal-to-noise ratio and by using it in a protein knockdown assay that NaLi-H1 can provide highly functional hs2dAb which appeared as good as intrabodies from immune libraries.\n\nIntrabodies can be used in several applications like tracking of intracellular dynamics of endogenous proteins (Nizak et al., 2003a, 2003b; Rothbauer et al., 2006) but the most appealing application is to use them for rapid protein inactivation in living cells. Intrabodies may be used to directly block their target proteins in cells. One of the conformation-sensitive antibody that was selected can be used to inhibit active RHO GTPase signaling in living cells and is as potent as the C3 exoenzyme toxin. Only few intrabodies have been described to be intrinsically inhibitors of protein activity (Haque et al., 2011; Vercruysse et al., 2010), and our results suggest that the NaLi-H1 library may enable rapid selection of inhibitory antibodies. The next challenge will be to select conformational sensors specifically directed against a particular member of closely related RHO subtypes (RHOA/B/C) which share more than 90% similarity in primary sequence. But in any case, our results show that the NaLi-H1 library allows the selection of efficient, conformation-specific, inhibitory intrabodies.\n\nAnother way intrabodies may be used to inactivate their targets in living cells is to fuse the intrabody to a dominant inhibitory domain. Following an idea pioneered by Affolter and colleagues (Caussinus et al., 2011), we showed here that intrabodies selected from the NaLi-H1 library can be fused to a proteasome-targeting domain to impose the specific degradation of their respective targets. This protein interference approach was validated using anti-EGFP hs2dAb and we believe that this approach will bring disruptive tools to generate rapid protein knockdown both in cell culture and in the animal.\n\nIn summary, we have designed a novel nanobody scaffold endowed with improved stability and created a highly diverse library, the NaLi-H1 library, that was successfully screened to identify highly functional binders directed against very diverse targets. We believe that this library will allow the fast, and fully in vitro, identification of immunological tools usable both for fundamental and medical applications.\n\n## Materials and methods\n\n### Plasmids and cloning\n\nArtificial gene synthesis (Mr Gene, GmbH, Germany) composed of a 6His-Tag and a triple c-myc Tag was inserted into the pHEN2 phagemid vector (Griffin 1. library) between NotI and BamHI sites. CcdB gene from pENTR4 vector (Invitrogen - ThermoFisher Scientific, France) was inserted into the pHEN2 vector between NcoI and NotI sites. This vector allows to express antibody fragments in fusion, upstream, with the pelB leader to drive secretion in the periplasm and downstream with the PIII protein of M13 phages. An amber stop codon is present between the antibody and the pIII. This stop codon is partially suppressed in SupE E. coli. For expression and purification of dimeric antibodies, hs2dAb were inserted in vectors derived from pFuse (Invivogen,\u00a0France) as described in Moutel et al. (2009). For intrabody expression in mammalian cells, hs2dAb were digested by NcoI and NotI and ligated into the pIb-mEGFP, pEGFP or the pmCherry vectors (Clontech - Takara, USA). (See the Appendix for more details).\n\n### CAT filter assay\n\nPreviously selected VHHs from na\u00efve or immune libraries were subcloned into pAOCAT (Monegal et al., 2012) using the NcoI and NotI restriction sites. Chloramphenicol resistance assay was performed using BL21 (DE3) cells transformed with the pAOCAT-VHH fusion constructs. (See the Appendix for more details).\n\n### Library construction\n\nDetails about the construction of the library can be found in the Appendix. In short, a synthetic design was ordered based on a statistic analysis of the diversity found in natural VHH and aiming at reducing hydrophobicity at some position. The size of the CDR1 and CR2 was fixed at 7 amino acids while 4 sizes of CDR3 were chosen (9, 12, 15 and 18 amino acids). Large -scale PCR was then carried out ensuring that at least 1010 DNA molecules were used as a matrix. Fragments were then cut and inserted into the pHEN2-3myc plasmid. The ligated DNA material was used to transform electrocompetent E. coli TG1 cells (Lucigen Corp., Middleton, United States). Serial dilution was used to count the total number of bacteria transformed. A potential diversity of 3\u00a0\u00d7\u00a0109 was calculated. Transformed bacteria plated on 430 2xYT-ampicillin agar dishes (140\u00a0mm), grown overnight at 37\u00b0C, scrapped and stored in 30% of glycerol at \u221280\u00b0C.\n\n### Ion torrent sequencing\n\nIonTorrent sequencing library was prepared with the Ion Plus Fragment Library kit for AB Library Builder System (Life Technologies - TermoFisher Scientific, France) following manufacturer's instructions and was controlled on the Agilent 2100 Bioanalyzer (Agilent Technologies,\u00a0France) with the High Sensitivity DNA Kit (Agilent Technologies). The\u00a0sequencing template was prepared by emulsion PCR with the Ion OneTouch 2 system and the Ion PGM Template OT2 400 Kit (Life Technologies). Sequencing was performed on a IonTorrent Personal Genome Machine using the Ion PGM Sequencing 400 Kit and a 314v2 Ion chip (Life Technologies).\n\n### Antigens\n\nHuman \u03b2Actin was purchased from Sigma-Aldrich\u00a0(France). RHOA GTPase fused to either an amino terminal Chitin Binding Domain or a streptactin binding peptide were produced in HEK293 cells. EGFP (as mCherry) in fusion with a streptavidine binding peptide (SBP) were produced through in vitro translation system (Roche Life Science, France) and used directly for screening without the need for purification.\n\nBiotinylated Tubulin was purchased from Cytoskeleton, Inc. (Denver, United States). For p53, the 83 first amino acids of the NP_000537.3 isoform were produced in bacteria with a SNAP and His Tag, purified using Talon resin (Takara - Clontech) and biotinylated in vitro. HP1\u03b1 was produced in bacteria with an avitag and a His Tag, and purified using Talon resin.\n\nFor HER2, the natural receptor was used as membrane protein target on SKBR3 cells.\n\nFor more details see the Appendix for more details.\n\n### Phage display selections\n\nScreening for \u00dfactin was performed by panning in immunotubes as described (Marks et al., 1991).Screening for EGFP, Tubulin and p53 were performed in native condition as described (Nizak et al., 2005). Screening for HER2 was performed on surface cells as described (Even-Desrumeaux and Chames, 2012). Screening on RHO was performed in native condition. (See the Appendix for more details).\n\n### Enzyme-linked immunosorbent assay (ELISA)\n\nIndividual clones were screened by monoclonal phage ELISA as described. (See the Appendix for more details).\n\n### Western-blot\n\nAfter boiling in SDS-PAGE loading buffer, the samples were separated on a 12% SDS-PAGE and transferred to nitrocellulose membranes (Whatman GmbH,\u00a0Germany). Membranes were blocked in 3% non-fat milk-PBS with 0.2% Tween 20 for 1\u2009hr at room temperature or overnight at 4\u00b0C. unpurified hs2dAb were used at 1/100 from culture supernatant and added to the membranes with an anti-hisTag antibody at 1/3000 (Sigma-Aldrich) for 90\u00a0min. Blots were then washed and incubated 1\u2009hr with secondary anti-Mouse HRP labeled antibodies (diluted at 1/10000 in PBS 0.1% Tween 20) (Jakson ImmunoResearch Laboratories). After 5 washes with PBS 0.1% Tween 20, secondary antibodies were then revealed using the SuperSignal chemoluminescent reagent (Pierce) and Hyperfilm ECL (GE HealthCare). For RHO-GTP pull down, the\u00a0primary anti RHOA mAb was used (Cell Signaling Technology; 1/1000). For protein knockdown experiments, 500 000 of transfected cells (mCherry positive cells) were sorted with a MoFlo Astrios flow cytometer (Beckman Coulter). Cells were lysed with SDS-Tris lysis buffer (Tris pH7.4 10\u2009mM, SDS 1% supplemented with phosphatase and protease inhibitors). 20 \u00b5g of cell extracts were separated on 12.5% SDS-PAGE and electro transferred onto PVDF membranes. Blots were probed with a rabbit polyclonal anti-EGFP full length (Santa Cruz, sc-8334, 1:500), a mouse monoclonal anti-\u03b1-tubulin (Sigma, T5168, 1:25000) and an anti-myc HRP antibody (Novus Biologicals, NB600-341, 1:40000). Detection was performed using peroxydase conjugated secondary antibodies and Pierce ECL Western Blotting Substrate (Thermo Scientific Pierce).\n\n### Immunofluorescence\n\nImmunofluorescence screenings were performed on HeLa cells as described before (Nizak et al., 2005). (See the Appendix for more details).\n\n### Transient transfection\n\nHela or HeLa S3 H2B-EGFP Cells cultured on coverslips were transfected according to the CaPO4 or jet prime procedure with 1 \u00b5g DNA per well (24 wells plate) or 10 \u00b5g DNA (10\u00a0cm2 diameter dish). Cells can be observed from 12\u2009hr post-transfection on.\n\n### Flow cytometry\n\nFor HER2 immunoassay, cell surface staining were performed in phosphate-buffered saline (PBS) supplemented with 1% SFV. 100\u00a0\u00b5L of supernatant (80\u00a0\u00b5L phages + 20\u00a0\u00b5L PBS/milk1%) were incubated on 1.105 cells for 1\u00a0hr on ice. Phage binding was detected by a 1:300 dilution of anti-M13 antibody (GE healthcare,\u00a0France) for 1\u00a0hr on ice followed by a 1:1000 dilution of PE-conjugated anti-Mouse antibody (BD Bioscience,\u00a0France) for 45\u2009min. Samples were analyzed by flow cytometry on a FACSCalibur using CellQuest Pro software (BD Biosciences,France).\n\nIn the protein knockdown experiments, 48\u00a0hr after transfection, at least 10000 HeLa S3 H2B-GFP cells were analyzed on a MoFlo Astrios flow cytometer\u00a0(Beckman Coulter France S.A.S) for their GFP fluorescence intensity. This fluorescence was analyzed in mCherry transfected cells and non transfected cells. Flow cytometry data were analyzed with Kaluza software (Beckman Coulter). 1 \u00b5M of proteasome inhibitor MG132 (Sigma-Aldrich) was used in the\u00a0cell growth medium for 48\u00a0hr. Values reported represent median \u00b1 standard deviation (SD) of at least three independent experiments. p values were calculated with GraphPad Prism 6 (RRID:SCR_002798) using a Student\u2019s t test. **p<0.01; ***p<0.001; ****p<0.0001.\n\n### Affinity measurement\n\nAll binding studies based on SPR technology were performed on BIAcore T200 optical biosensor instrument (RRID:SCR_008424, GE Healthcare). Capture of single domain Hs2dAb-6xHis was performed on a nitrilotriacetic acid (NTA) sensorchip in HBS-P+ buffer (10\u00a0mM Hepes pH 7.4, 150\u00a0mM NaCl, and 0.05% surfactant P20) (GE Healthcare). The four flow cells (FC) of the sensorchip were used: one (FC 1) to monitor nonspecific binding and to provide background corrections for analyses and the other three flow cells (FC 2, 3, and 4) containing immobilized Hs2dAb-6xHis for measurement.\n\nFor immobilization strategies, the four flow cells were loaded with nickel solution (10\u2009\u03bcL/min for 60\u2009s) in order to saturate the NTA surface with Ni2+ and an extra wash using running buffer containing 3\u00a0mM EDTA after the nickel injection. Each His-tagged hs2dAb in running buffer was injected in flow cells at a flow-rate of 10\u2009\u03bcL/min. The total amount of immobilized hs2dAb-6xHis was 250\u2013300 resonance units. (RUs; 1 RU corresponds approximately to 1 pg/mm2 of protein on the sensor\u00a0chip). A Single-Cycle Kinetics (SCK) analysis to determine association (on-rates), dissociation (off-rates) and affinity constants (kon, koff and KD respectively) was carried out. SCK method prevents potential inaccuracy due to sensorchip regeneration between cycles which are necessary in the conventional multiple cycle kinetics (MCK) (Trutnau, 2006). SCK binding parameters are evaluated for each injection according to the tools and fit models of the BIAevaluation software, giving similar values than MCK. As hs2dAb were smaller proteins than their respective antigens, hs2dAbs were captured on the sensorchip while the recombinant antigens were used as analytes. Analytes were injected sequentially with increased concentrations ranging between 3.125 nM to 50 nM in a single cycle without regeneration of the sensorship between injections. Binding parameters were obtained by fitting the overlaid sensorgrams with the 1:1. Langmuir binding model of the BIAevaluation software version 1.0.\n",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "da4a6161-3dcf-4c9c-9f76-e60fb14d16ba",
+      "submission_id": "e92cbaf9-585d-44db-8c2d-db608aca7137",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anna Akhmanova, Utrecht University , Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.16228.024](https://doi.org/10.7554/eLife.16228.024)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"NaLi-H1: A universal synthetic library of humanized nanobodies providing highly functional antibodies and intrabodies\" for consideration by eLife. Your article has been favorably evaluated by Sean Morrison (Senior editor) and four reviewers, one of whom is a member of our Board of Reviewing Editors. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper describing the generation of a synthetic nanobody library with an optimized humanized scaffold, illustrates its usefulness by showing examples of successful selection of antibodies against different antigens, including conformation-specific nanobodies, and demonstrates the use of some of these antibodies as intrabodies for protein detection and degradation. Previously, immunization of Camelids was necessary to isolate functional nanobodies. With the NaLi-H1 library this immunization step is removed and the screening is entirely performed in vitro, where at each step the conditions can be controlled and manipulated. This has several advantages as no animal experimentation is needed, and binders to highly conserved or toxic antigens can be isolated. The provided data suggest that the library will be a useful and versatile tool for selection of various nanobodies. Some of the described antibodies, such as the conformation-specific nanobody against active Rho, will be directly useful for the cell-biological community.\n\nEssential revisions:\n\n1) The library is assessed for diversity by sequencing, but not at all for functionality in terms of nanobody expression, folding and solubility. Given that the library only partially attempts to mimic natural diversity, reducing the levels of hydrophobic amino acids, there is a danger that attempts to improve upon nature may lead to increased aggregation/poor folding etc. Consequently, it would be important to assess the levels of functional expression of 24-48 random clones picked from the library. This could be done by assessing the levels of soluble expression levels, or preferably, using protein A (if protein A binds to the scaffold, given that it is VH3-like) to assess the percentage of protein A binding clones \u2013 which would provide an assessment of correct folding.\n\n2) The staining of endogenous proteins with and without knockouts mediated by siRNA or Crispr-CAS9 should be demonstrated for the original anti-lamin nanobodies using the difficult scaffolds, as well as subsequently selected nanobodies. This will show first that the nanobodies are functional against natural proteins at natural levels, and second that there is no off-target binding (if knockout eliminates staining). Furthermore, functional positive control antibodies should also be included as comparisons.\n\n3) Wherever the phrase \"data not shown\" is used, either the data should be shown (in the supplementary), or the phrase should be eliminated. Supplementary files attached to primary figures allow all data to be shown.\n\n4) Where western blots are shown (e.g. Figure 3B) show the whole blot, not just that portion { \u00b1 } 5KDa around the expected target size.\n\n5) During the description of the library the authors mention () that the purified sdAbD10 shows stability after heat treatment. They support this observation in Figure 1\u2014figure supplement 1 panel B. One of the advantages of nanobody is their heat stability so the heat-purification experiment at 70 \u00b0C is not sufficient to support the claim that such scaffold is a better \"heat-resistant\" nanobody. This claim should be better supported or removed.\n\n6) Please explain in a bit more detail how the diversity in the CDR3 was introduced, especially in the Materials and methods section.\n\n7).Since this publication is mainly supposed to be a method-based, resource paper, it would greatly benefit from an extended description of a general protocol outline for the isolation of binders (starting from the preparation of the antigen, to the phage display and to the final screening method, with a few tips and tricks at the crucial steps). Researchers that want to use the NaLi-H1 library could use this as a starting point.\n\n8) The authors present the success stories, but it would be good to know what percentage of attempted antibody screens was not successful.\n\n9) Please make sure that a proper disclaimer regarding your financial interest in the commercial distribution of the library is provided in the published version of the paper.\n",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0f662c20-ce0a-49c2-bfbc-9b0c54ce5b33",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C1",
+      "claim": "NaLi-H1 is the first fully synthetic phage display library of humanized llama single domain antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe the first fully synthetic phage display library of humanized llama single domain antibody (NaLi-H1: Nanobody Library Humanized 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a primary contribution of the work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "df68a4e5-d0c9-4a84-a3eb-5cb7a6a293a8",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C2",
+      "claim": "NaLi-H1 is based on a humanized synthetic single domain antibody (hs2dAb) scaffold optimized for intracellular stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on a humanized synthetic single domain antibody (hs2dAb) scaffold optimized for intracellular stability, the highly diverse library provides high affinity binders without animal immunization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the library is based on an hs2dAb scaffold optimized for intracellular stability.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "03cdbeb2-26c1-4071-9871-353a99567519",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C3",
+      "claim": "NaLi-H1 provides high affinity binders without animal immunization.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on a humanized synthetic single domain antibody (hs2dAb) scaffold optimized for intracellular stability, the highly diverse library provides high affinity binders without animal immunization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states that the library provides high affinity binders without requiring animal immunization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "169322ed-6774-4f2c-8265-eb162d834213",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C4",
+      "claim": "NaLi-H1 was screened against various targets including Fluorescent proteins, actin, tubulin, p53, and HP1.",
+      "claim_type": "EXPLICIT",
+      "source": "NaLi-H1 was screened following several selection schemes against various targets (Fluorescent proteins, actin, tubulin, p53, HP1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly lists the targets against which the library was screened.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "099aad80-9050-41a8-969b-d4c881e84d29",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C5",
+      "claim": "Conformation antibodies against active RHO GTPase were obtained from NaLi-H1.",
+      "claim_type": "EXPLICIT",
+      "source": "Conformation antibodies against active RHO GTPase were also obtained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states that conformation-specific antibodies against active RHO GTPase were obtained.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "b4c9977d-1da3-427f-a8da-7be7a66dfb27",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C6",
+      "claim": "Selected hs2dAb were used in various immunoassays.",
+      "claim_type": "EXPLICIT",
+      "source": "Selected hs2dAb were used in various immunoassays and were often found to be functional intrabodies, enabling tracking or inhibition of endogenous targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states that selected hs2dAb were used in various immunoassays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "2695b1b1-3ee5-478b-9203-12d1c4e18b94",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C7",
+      "claim": "Selected hs2dAb were often found to be functional intrabodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Selected hs2dAb were used in various immunoassays and were often found to be functional intrabodies, enabling tracking or inhibition of endogenous targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states that selected hs2dAb were often functional intrabodies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "5dff36c7-181f-4a43-95e1-708e8cd0af13",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C8",
+      "claim": "Functionalization of intrabodies allowed specific protein knockdown in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Functionalization of intrabodies allowed specific protein knockdown in living cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states that functionalized intrabodies enabled protein knockdown in living cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "42f9c7c9-478a-4321-ac6d-4d166ee616ec",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C9",
+      "claim": "Direct selection against the surface of tumor cells produced hs2dAb directed against tumor-specific antigens.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, direct selection against the surface of tumor cells produced hs2dAb directed against tumor-specific antigens further highlighting the potential use of this library for therapeutic applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states that selection against tumor cell surfaces yielded antibodies against tumor-specific antigens.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "887bcfc4-9aed-4ccb-9eac-06990c3b3038",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C10",
+      "claim": "Antibodies have expanded as the biochemical tools of choice to label antigens in cells or tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Antibodies expended as the biochemical tools of choice to label antigens in cells or tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "f1558f44-16a1-4f4a-8601-ff1a9fde2a90",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C11",
+      "claim": "Recombinant methods have been developed over the past 20 years to quickly select and improve monoclonal antibodies from highly diverse libraries.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the past 20 years, recombinant methods have been developed to quickly select and improve monoclonal antibodies from highly diverse libraries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as background knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "08f08dcb-d695-4905-b10a-6c046385d29b",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C12",
+      "claim": "Immune libraries provide in general high affinity binders but diversity is sometimes limited.",
+      "claim_type": "EXPLICIT",
+      "source": "Immune libraries provide in general high affinity binders but, depending on the antigen, diversity is sometimes limited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about immune libraries.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "c46dccc5-f9fa-43ad-a1b7-76a86e22f63b",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C13",
+      "claim": "Natural antibody selection requires animal immunization.",
+      "claim_type": "EXPLICIT",
+      "source": "Because natural antibody selection requires animal immunization, very conserved or toxic antigens should be avoided and, in general, only limited control of the immune response is possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation of natural antibody selection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "8911b237-6ac1-41d0-b57e-aa3fec7891d7",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C14",
+      "claim": "Non-immune (na\u00efve) libraries provide a higher diversity of binders even for antigens highly conserved in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, non-immune (na\u00efve) libraries provide a higher diversity of binders even for antigens highly conserved in mammals, but high specificity and affinity can be reached only when selecting from very large functional libraries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of na\u00efve libraries.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "060d90c1-9bf1-4b93-b91e-b349ca86e9ce",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C15",
+      "claim": "The smallest IgG portion capable of binding with high specificity an antigen is the Fv fragment consisting of the variable heavy (VH) and the variable light (VL) domains.",
+      "claim_type": "EXPLICIT",
+      "source": "The smallest IgG portion capable of binding with high specificity an antigen is the Fv fragment consisting of the variable heavy (VH) and the variable light (VL) domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about antibody structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "05780406-5643-4f31-8e6a-3176791a2ae9",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C16",
+      "claim": "In the case of single domain antibodies (sdAb), a VH or a VL alone is able to bind its target antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of single domain antibodies (sdAb), a VH or a VL alone, is able to bind its target antigen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of single domain antibodies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "34ed8aa8-1a90-438f-8bb0-e7a81dcd98cb",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C17",
+      "claim": "Each variable domain contains four conserved framework regions (FRW or framework) and three regions called CDR (Complementarity Determining Regions).",
+      "claim_type": "EXPLICIT",
+      "source": "Each variable domain contains four conserved framework regions (FRW or framework) and three regions called CDR (Complementarity Determining Regions) corresponding to hypervariable sequences which determine the specificity for the antigen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about antibody structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "c9457c07-32e9-45bd-a0e3-3fd2d8acab7a",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C18",
+      "claim": "CDRs correspond to hypervariable sequences which determine the specificity for the antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "Each variable domain contains four conserved framework regions (FRW or framework) and three regions called CDR (Complementarity Determining Regions) corresponding to hypervariable sequences which determine the specificity for the antigen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about CDR function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "bb6131ad-3e09-4c11-9ffd-78b5612afb39",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C19",
+      "claim": "Antibodies called HCAb in Camelidae have an antigen recognition part composed of only a VH domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, antibodies called HCAb in Camelidae (Hamers-Casterman et al., 1993) or IgNAR in sharks (Greenberg et al., 1995) have an antigen recognition part composed of only a VH domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "e6131e96-c174-491c-8443-f355b8a0d5a7",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C20",
+      "claim": "Camelid natural single domain VH are referred to as VHH or nanobodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Camelid natural single domain VH, referred to as VHH or nanobodies, can be expressed as recombinant fragments and represent attractive alternatives over classical antibody fragments like scFvs because they are easy to manipulate and they are not limited by potential misfolding of the two domains (W\u00f6rn and Pl\u00fcckthun, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established nomenclature with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "497c7de4-1bbc-437d-b489-5c435c07f1c3",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C21",
+      "claim": "VHH FRWs show a high sequence and structural homology with human VH domains of family III.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that VHH FRWs show a high sequence and structural homology with human VH domains of family III (Muyldermans, 2013) and VHH have comparable immunogenicity as human VH (Bartunek et al., 2013; Holz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "9e6a728f-216d-41cd-af60-46dfc4dea145",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C22",
+      "claim": "VHH have comparable immunogenicity as human VH.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that VHH FRWs show a high sequence and structural homology with human VH domains of family III (Muyldermans, 2013) and VHH have comparable immunogenicity as human VH (Bartunek et al., 2013; Holz et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "9e58bdd3-3948-4877-a7e5-d82f0933ade1",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C23",
+      "claim": "Some nanobodies are currently in phase II and Phase III clinical trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, they further constitute very interesting agents for therapeutic applications, some of them are currently in phase II and Phase III clinical trials (Ablynx Nanobodies; http://clinicaltrials.gov/ct2/results?term=ablynx).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with reference to clinical trial data.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "80799d53-5ae3-4148-a826-7e9e7da61d16",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C24",
+      "claim": "Production of functional intrabodies depends on the stability of the antibody fragments in the reducing environment of the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Production of functional intrabodies depends on the stability of the antibody fragments in the reducing environment of the cytosol that does not allow disulfide bond formation between conserved cysteine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known requirement for intrabody function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "4b939a5a-b176-40d7-8a5a-5a6ad6e6fcfd",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C25",
+      "claim": "The nanobody scaffold has higher solubility compared to other antibody formats.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, many advantages of the nanobody scaffold have been reported and, in particular, higher solubility, improved stability in a reducing environment (Wesolowski et al., 2009), as well as higher expression yield and thermostability (Jobling et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "feaa7408-341b-46d9-865d-c50940cf8a4a",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C26",
+      "claim": "The nanobody scaffold has improved stability in a reducing environment.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, many advantages of the nanobody scaffold have been reported and, in particular, higher solubility, improved stability in a reducing environment (Wesolowski et al., 2009), as well as higher expression yield and thermostability (Jobling et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "d2d98ca8-d568-4d99-8036-51548578f3b9",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C27",
+      "claim": "A family of highly functional VHH scaffolds was isolated using a fusion assay in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "First, using a fusion assay in E. coli, a family of highly functional VHH scaffolds was isolated, optimized for intracellular expression and high stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "542de4f8-1dbd-473d-8b82-ff11e89ba9e0",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C28",
+      "claim": "One particularly stable VHH scaffold consensus sequence was chosen from selected antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "One particularly stable VHH scaffold consensus sequence was chosen from these selected antibodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a step in the library design process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "39e2e507-586d-4c01-9b5e-f0b5e16ae2d1",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C29",
+      "claim": "Additional changes were introduced to reduce the distance between the Camelidae and human VH3 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional changes were then introduced to reduce the distance between the Camelidae and human VH3 sequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a design step for humanization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "625b536d-4529-41e3-947a-52708b0af52f",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C30",
+      "claim": "The humanized synthetic scaffold (hs2dAb) was confirmed to be robust and functional by CDR grafting.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed by CDR grafting that this humanized synthetic scaffold (hs2dAb) was robust and functional.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a validation step in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "b048e57b-3552-4a6e-b775-bb42157cdde9",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C31",
+      "claim": "The NaLi-H1 library has a diversity of 3.10^9 independent hs2dAb.",
+      "claim_type": "EXPLICIT",
+      "source": "Statistics of amino-acid diversity in the CDRs were computed and these information were used to construct a high diversity phage display library of 3.109 independent hs2dAb.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the constructed library.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "2ca0b6b9-5737-4211-89df-a9ca16cc9686",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C32",
+      "claim": "Highly specific antibodies were selected against EGFP, mCherry, \u03b2-tubulin, \u03b2-actin, heterochromatin protein HP1\u03b1, GTP-bound RHO, p53 and HER2.",
+      "claim_type": "EXPLICIT",
+      "source": "Highly specific antibodies were selected against EGFP, mCherry, \u03b2-tubulin, \u03b2-actin, heterochromatin protein HP1\u03b1, GTP-bound RHO, p53 and HER2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of library screening.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "0d45db29-ea71-49ec-8653-918700ed173e",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C33",
+      "claim": "Affinity measurement indicated that affinities in the nM range can be obtained using this library.",
+      "claim_type": "EXPLICIT",
+      "source": "Affinity measurement indicated that affinities in the nM range can be obtained using this library.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of affinity measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "ad5a8c09-a936-407d-8ad3-2630e9318ab9",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C34",
+      "claim": "hs2dAb are frequently usable as fluorescent intrabodies to track antigens in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected from our design, we further showed that hs2dAb are frequently usable as fluorescent intrabodies to track antigens in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a demonstrated capability of the hs2dAb.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "8c433bcf-56b0-4b57-8f80-7f6cd9a69667",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C35",
+      "claim": "hs2dAb can be functionalized to induce antigen knockdown.",
+      "claim_type": "EXPLICIT",
+      "source": "We also showed that they can be functionalized to induce antigen knockdown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a demonstrated capability of the hs2dAb.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "27202e3b-bd8b-4f36-9d73-8b2143f2e031",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C36",
+      "claim": "This is the first report of a large and diverse synthetic single domain antibody library enabling fully in vitro selection of highly functional antibodies and intrabodies.",
+      "claim_type": "EXPLICIT",
+      "source": "This thus represents the first report of a large and diverse synthetic single domain antibody library enabling fully in vitro selection of highly functional antibodies and intrabodies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the primary contribution of the work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "7a976213-7949-4582-a236-e53189fd3b0d",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C37",
+      "claim": "The consensus scaffold was matching the sequence of the most robust VHH framework, represented by a single domain antibody D10 (sdAbD10).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the consensus scaffold was matching the sequence of the most robust VHH framework, represented by a single domain antibody D10 (hereafter named sdAbD10).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the scaffold selection process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "38233633-d6c9-449a-8ca2-7887995389a4",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C38",
+      "claim": "sdAbD10 provided higher antibiotic resistance in the chloramphenicol filter assay compared to previously reported thermostable nanobodies or intrabodies.",
+      "claim_type": "EXPLICIT",
+      "source": "When compared to previously reported thermostable nanobodies (Olichon et al., 2007a) or intrabodies (Rothbauer et al., 2006) obtained from immune libraries, sdAbD10 was found to provide higher antibiotic resistance in the chloramphenicol filter assay (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 1\u2014figure supplement 1A showing comparative data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "3758a7fe-5767-43b9-898e-4a007e1415b6",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C39",
+      "claim": "sdAbD10 expression yield in E.coli periplasm was in the higher range of soluble llama VHH fragments.",
+      "claim_type": "EXPLICIT",
+      "source": "Its expression yield in E.coli periplasm was in the higher range of soluble llama VHH fragments, allowing efficient and quantitative purification (Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "521bf8dc-7104-4552-9b72-9f0de612c2ee",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C40",
+      "claim": "Purified sdAbD10 showed excellent solubility and stability after treatment at 70\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Purified sdAbD10 showed excellent solubility, stability after treatment at 70\u00b0C and we did not observe aggregation when expressed as an intrabody fused to the EGFP in mammalian cells (Figure 1\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 1\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "140e03bc-006e-4755-92a3-1fd17bbbdd0a",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C41",
+      "claim": "Seven residues of the synthetic scaffold sdAbD10 were altered towards the most represented in human VH3.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven residues of the synthetic scaffold sdAbD10 were altered towards the most represented in human VH3 while five other divergent residues were kept unchanged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as part of the humanization process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "6c8c5031-bdbb-4441-bc67-754cfd58d450",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C42",
+      "claim": "The four llama VHH-specific amino acids hallmarks in the framework-2 region (positions 42, 49, 50, and 52) were maintained in the hs2dAb scaffold.",
+      "claim_type": "EXPLICIT",
+      "source": "The four llama VHH-specific amino acids hallmarks in the framework-2 region (positions 42, 49, 50, and 52), which are essential to increase intrinsic solubility properties, as well as the Glutamine in position 103, were maintained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a design decision for the hs2dAb scaffold.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "51c093b6-ec8f-4f75-bb75-2770ce6b3408",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C43",
+      "claim": "Both the sdAbD10 and hs2dAb scaffolds enabled functional display of the grafted CDRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, both the sdAbD10 and hs2dAb scaffolds enabled functional display of the grafted CDRs and robust detection of endogenous lamin was observed by immunofluorescence staining of Hela cells (Figure 1\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 1\u2014figure supplement 2C showing immunofluorescence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "31b3d990-be4a-4884-933a-12236b62277b",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C44",
+      "claim": "Both the hs2dAb and the sdAbD10 scaffolds allowed the efficient intrabody use of the synthetic anti-lamin antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we observed that both the hs2dAb and the sdAbD10 scaffolds allowed the efficient intrabody use of the synthetic anti-lamin antibodies (Figure 1\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 1\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "667be2b3-696d-40b2-bcde-e4552fccacd5",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C45",
+      "claim": "A constant length of 7 amino acids was selected for CDR1 and CDR2.",
+      "claim_type": "EXPLICIT",
+      "source": "A constant length of 7 amino acids was selected for CDR1 and CDR2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a design decision for the library.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "bb8443f7-6fef-455e-ac0c-a5ba6b5d4854",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C46",
+      "claim": "Four different lengths of CDR3 (9, 12, 15 or 18 amino acids) were chosen to cover the spectrum of natural VHH CDR3 length.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we chose to use four different lengths of CDR3 to cover this spectrum (9, 12, 15 or and 18 amino acids) and introduce random amino acid (except cysteine) at each position.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a design decision for the library.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "22167240-67ab-4c9e-a307-102b7bf029c0",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C47",
+      "claim": "About 3\u00d710^9 individual recombinant hs2dAb clones were obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "About 3.109 individual recombinant hs2dAb clones were obtained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the size of the library obtained.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "e307aa53-1cd7-4e90-9e38-b995a37e9a55",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C48",
+      "claim": "Only 13 out of 315 randomly sequenced clones were found to be incorrect, representing about 4% of potential defects.",
+      "claim_type": "EXPLICIT",
+      "source": "We first evaluated the quality of the NaLi-H1 library by sequencing 315 random clones. Only 13 sequences were found to be incorrect (bearing an in-frame stop codon, missing one base, missing a large region [the CDR1 or CDR1-FWR1- CDR2], or being empty). Thus, a total of about 4% of potential default was observed, which is rather low and only marginal in comparison to the 3.109 clones obtained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a quality control result.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "711faf97-15e2-49fd-9e53-51c470dcf87a",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C49",
+      "claim": "The four CDR3 lengths (9, 12, 15 or 18 amino acids) were present in similar proportions in the library.",
+      "claim_type": "EXPLICIT",
+      "source": "This confirmed the quality of the library and showed that the four CDR3 lengths (9, 12, 15 or and 18 amino acids) were present in similar proportions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of next generation sequencing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "f14be487-5438-4772-8d30-e2283bf7e12b",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C50",
+      "claim": "All 24 randomly picked clones tested showed essentially complete solubility after centrifugation at 250,000 g.",
+      "claim_type": "EXPLICIT",
+      "source": "To estimate the overall folding of the hs2dAb present in the library, we picked randomly 24 clones and tested their solubility in bacteria medium after secretion. Medium were centrifuged at 250 000 g and the supernatant and pellet were analyzed. All tested clones showed essentially complete solubility, at least as good as a natural Lama antibody (GFP4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of solubility testing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "2035b414-6727-484f-a57b-6ddb29d90cac",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C51",
+      "claim": "After warming at 90\u00b0C for 10 min, the hs2dAb showed good solubility (over 70%).",
+      "claim_type": "EXPLICIT",
+      "source": "Even after warming at 90\u00b0C for 10 min, the hs2dAb showed good solubility (over 70%) (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 1\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "9fceed9e-974d-434f-b73b-33bb92c4336b",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C52",
+      "claim": "From the panning against EGFP, 37 non redundant nanobodies were shown to detect EGFP by phage ELISA.",
+      "claim_type": "EXPLICIT",
+      "source": "From the panning against EGFP, 37 non redundant nanobodies were shown to detect EGFP by phage ELISA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of screening against EGFP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "830d143a-a0fb-48fc-bd54-84b24c410ae8",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C53",
+      "claim": "10 out of 37 anti-EGFP antibodies were found to efficiently stain EGFP in fixed HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These antibodies were then used for immunofluorescence and 10 of them were found to efficiently stain EGFP in fixed HeLa cells (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 2A showing immunofluorescence data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "2ff575d4-2d34-4035-a15d-f5419ac97ff2",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C54",
+      "claim": "Selection against mCherry led to 6 positive binders.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, selection against mCherry led to 6 positive binders (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "1bfa5e51-aae7-49b9-af61-c0abb3aa282e",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C55",
+      "claim": "After two rounds of selection against tubulin, 3 out of 40 clones analyzed were shown to detect endogenous tubulin by immunofluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "After two rounds of selection, 3 out of 40 clones analyzed were shown to detect endogenous tubulin by immunofluorescence (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "dc8752d8-f243-4304-b6a0-d0f93bed245d",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C56",
+      "claim": "A screen against coated \u03b2-actin led to the identification of 16 unique binders positive in phage ELISA.",
+      "claim_type": "EXPLICIT",
+      "source": "A screen against coated \u03b2-actin led to the identification of 16 unique binders positive in phage ELISA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of screening against \u03b2-actin.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "7b6366a4-716a-41fd-9f38-6ec22dc1263f",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C57",
+      "claim": "Seven anti-actin antibodies decorated endogenous actin stress fibers by immunofluorescence in MRC5 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Seven of these antibodies decorated endogenous actin stress fibers by immunofluorescence in MRC5 cells (Figure 2D) as well as in other cell lines.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "f564ee75-06dc-4b3a-ba0c-56ac5112d527",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C58",
+      "claim": "Three of the anti-actin hs2dAb detected a single band at the molecular weight of \u03b2-actin in western blot from HeLa cell extract.",
+      "claim_type": "EXPLICIT",
+      "source": "Three of the hs2dAb detected a single band at the molecular weight of \u03b2-actin in western blot from HeLa cell extract while one of the anti-tubulin detected a band at the correct molecular weight of tubulin (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "63f76f1f-816b-4e4b-b708-3d0b0cc1a48a",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C59",
+      "claim": "Among 12 clones positive in phage ELISA against p53, 6 selected hs2dAb were shown to label endogenous p53 in immunofluorescence on A431 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Among 12 clones positive in phage ELISA, 6 selected hs2dAb were shown to label endogenous p53 in immunofluorescence on A431 cells (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "8551e5bd-1313-47c5-b3f5-f38fc3b560e0",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C60",
+      "claim": "5 individual hs2dAb against HP1\u03b1 were directly identified by immunofluorescence staining of HeLa cells.",
+      "claim_type": "EXPLICIT",
+      "source": "5 individual hs2dAb were directly identified by immunofluorescence staining of HeLa cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of screening against HP1\u03b1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "f2f227a4-aa71-4a05-bba3-f010470375e2",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C61",
+      "claim": "After four rounds of selection against RHOA, one antibody (H12) represented more than 50% of the population.",
+      "claim_type": "EXPLICIT",
+      "source": "After four rounds of selection, clones were analyzed using phage ELISA against either wild type RHOA loaded with GTP\u03b3S (a non-hydrolysable analogue of GTP) or GDP-loaded RHOA. Forty clones presenting a differential ELISA signal in favor of the GTP loaded RHOA were sequenced. One antibody, represented by clone H12, represented more than 50% of the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of screening against RHOA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "b0c72138-de12-4ab9-9744-7213378096c8",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C62",
+      "claim": "H12 recognized the constitutively active mutant RHOA L63 (RHOA-CA) which is bound to GTP.",
+      "claim_type": "EXPLICIT",
+      "source": "H12 recognized the constitutively active mutant RHOA L63 (RHOA-CA) which is bound to GTP due to impaired hydrolysis activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of ELISA analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "3bfc80dd-f75d-44bf-bf68-9cdaa611a016",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C63",
+      "claim": "H12 showed no binding to the dominant negative RHOA N19 mutant RHOA-DN nor to GDP-loaded wild type RHOA.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, no binding was observed to the dominant negative RHOA N19 mutant RHOA-DN nor to GDP-loaded wild type RHOA (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 3A showing ELISA data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "20dc5ef6-f748-4d59-9eb6-7db7bb530548",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C64",
+      "claim": "The H12 hs2dAb was found to be highly selective of RHO loaded with GTP\u03b3S as it was unable to precipitate RHO from GDP loaded extract.",
+      "claim_type": "EXPLICIT",
+      "source": "The H12 hs2dAb was found to be highly selective of RHO loaded with GTP\u03b3S as it was unable to precipitate RHO from GDP loaded extract (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 3B showing pull-down data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "f2025cec-3a37-4aeb-8fc0-b3c3c4568f1b",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C65",
+      "claim": "H12 staining was correlated with the level of GFP-RHOA CA mutant expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a staining with H12 was correlated with the level of GFP-RHOA CA mutant expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of immunofluorescence analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "fdee095e-4156-4df7-97a3-faf75e7615d5",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C66",
+      "claim": "After the third round of bio-panning against SKBR3 cells, 88 clones were analyzed by FACS and 58 were found to be positive when tested on SKBR3 cells and negative on MCF7 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "After the third round of bio-panning, 88 clones were analyzed by FACS and 58 were found to be positive when tested on SKBR3 cells and negative on MCF7 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of cell surface selection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "3e4e601e-7efd-4d63-8b51-724ad199c5ff",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C67",
+      "claim": "Sequencing the 58 positive clones revealed that 15 independent binders had been selected.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequencing the 58 positive clones revealed that 15 independent binders had been selected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of sequencing analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "41cc00a1-39ed-4bbb-bfd1-ff71e9450692",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C68",
+      "claim": "12 out of 15 clones recognized HER2 exoplasmic domain by ELISA using HER2-Fc as a target antigen.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the subtractive selection was not performed on identical cell lines expressing or not HER2, we observed strikingly that 12 clones out of 15 recognized HER2 exoplasmic domain by ELISA using HER2-Fc as a target antigen (Figure 3E), suggesting that it behaves as a dominant differential epitope.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 3E showing ELISA data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "c22acf36-d4ea-4ae3-9324-787da30503cd",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C69",
+      "claim": "Most of the hs2dAbs tested gave a monodispersed fluorescence when fused to a fluorescent protein and observed in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Randomly chosen hs2dAbs were fused to a fluorescent protein and observed in living cells. In comparison to our previous experience with scFv or nanobody libraries in which a majority of tested antibodies showed aggregation when expressed in the cytosol as an EGFP-fusion, most of the hs2dAbs tested here gave a monodispersed fluorescence, and very few were showing aggregates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from intrabody expression experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "cf6bd21f-005c-4e7d-b482-0f17f8e49a8e",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C70",
+      "claim": "Several anti-GFP and anti-mCherry hs2dAbs were found to efficiently label their targets in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, several anti-GFP and anti-mCherry hs2dAbs were found to efficiently label their targets, like for example GFP-Rab6 or Myr-Palm-mCherry fusion proteins, in living cells (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 4A showing intrabody localization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "17ce3c0e-0e51-4913-86e6-0a8869c86eba",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C71",
+      "claim": "The anti-p53 hs2dAb fused to mCherry were clearly accumulated in the nucleus of SKBR3 cells where endogenous p53 is also localized.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the anti-p53 hs2dAb fused to mCherry were clearly accumulated in the nucleus of SKBR3 cells where endogenous p53 is also localized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from intrabody expression experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "cdd894c4-c22e-475d-9504-a246e7b7831f",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C72",
+      "claim": "Anti-HP1 expressed as an EGFP tagged protein in HeLa cells localized in the nucleus where it labels condensed structures similar to HP1 usual staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 4C (lower panel) shows that anti-HP1 expressed as an EGFP tagged protein in HeLa cells localized in the nucleus where it labels condensed structures similar to HP1 usual staining.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 4C showing intrabody localization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "529d6ffe-f0d7-4c7f-9c09-f3622bdba669",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C73",
+      "claim": "H12 was able to perturb endogenous RHO activity when expressed in the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Intrabodies may allow not only to track the dynamics of their cellular target, but also to perturb, or block, their activity. Our results indeed indicate that the H12 antibody was able to perturb endogenous RHO activity when expressed in the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of functional analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "0b90b17b-b71f-4c32-ac62-c50c0969a52f",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C74",
+      "claim": "H12 was pulled-down by RHOA CA but not by inactive RHOA DN in co-immunoprecipitation experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "H12 carrying a carboxy-terminal myc tag was expressed in HeLa cells together with either the CBD-fused RHOA DN or with the CBD-RHOA CA mutants. H12 was pulled-down by RHOA CA but not by inactive RHOA DN (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 5\u2014figure supplement 1 showing co-IP data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "d54ce358-0cf5-4bb6-b09a-d538a91cb006",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C75",
+      "claim": "Cells expressing H12-EGFP were totally devoid of actin stress fibers.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to un-transfected cells or cells transfected with various non-relevant EGFP fused hs2dAb (Figure 5A, upper panel), we observed that cells expressing H12-EGFP were totally devoid of actin stress fibers (Figure 5A, lower panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 5A showing the phenotypic effect.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "af7774a4-9b90-44c1-ba4e-fd2f32be9262",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C76",
+      "claim": "F-GFP4 (degradFP) induced a strong reduction of H2B-EGFP expression.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, F-GFP4, also known as degradFP, induced a strong reduction of H2B-EGFP expression as analyzed by western blot (Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 5\u2014figure supplement 2 showing western blot data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "87b04ba9-0781-473a-9172-cdc825f1f2fa",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C77",
+      "claim": "Some anti-EGFP clones selected from the NaLi-H1 library failed to degrade H2B-EGFP when expressed as F-Ib.",
+      "claim_type": "EXPLICIT",
+      "source": "When anti-EGFP clones selected from the NaLi-H1 library were tested, we observed that some of the hs2dAb that were found to active as fluorescent intrabodies failed to degrade H2B-EGFP when expressed as F-Ib.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from protein knockdown experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "d55916ff-8406-4850-b8de-f01f22c0eed7",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C78",
+      "claim": "Several hs2dAb anti-EGFP induced a complete disappearance of nuclear H2B-EGFP signal when expressed as F-Ib.",
+      "claim_type": "EXPLICIT",
+      "source": "However, several hs2dAb anti-EGFP induced a complete disappearance of nuclear H2B-EGFP signal when expressed as F-Ib (F-R3TF3, Figure 5B) while no reduction was observed when using an anti-EGFP that cannot be used as an intrabody (F-R3TG4, Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 5B showing protein knockdown.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "821fb084-ca30-4442-b9f3-356b7fa37258",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C79",
+      "claim": "FACS analysis showed a decreased of fluorescence intensity by as much as 70% with F-R3TF3.",
+      "claim_type": "EXPLICIT",
+      "source": "FACS analysis showed a decreased of fluorescence intensity by as much as 70% (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 5C showing FACS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "b073fcbb-4f26-4d9b-bd5b-f5efdb2914da",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C80",
+      "claim": "The protein knockdown effect was reversed in the presence of a proteasome inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, this effect was reversed in the presence of a proteasome inhibitor (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with reference to Figure 5D showing the effect of proteasome inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "838cc78c-9d8e-4033-bde6-17dfc35d492c",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C81",
+      "claim": "The hs2dAb displays partial resistance and/or refolding after treatment for 10 min at 90\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that the hs2dAb displays partial resistance and/or refolding after treatment for 10 min at 90\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of the hs2dAb scaffold.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "5acd5122-799d-4c13-9130-74dff8ef03fa",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C82",
+      "claim": "Affinity measurements done by surface plasmon resonance revealed KD values in the order of 10 nanomolar and up to 50 picomolar.",
+      "claim_type": "EXPLICIT",
+      "source": "Affinity measurements done by surface plasmon resonance revealed KD values in the order of 10 nanomolar and up to 50 picomolar.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of affinity measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "fe5ae8ca-a315-4b30-8924-9a036510a2c7",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C83",
+      "claim": "The NaLi-H1 library enables the rapid selection of diverse and highly functional binders.",
+      "claim_type": "EXPLICIT",
+      "source": "The NaLi-H1 library thus enables the rapid selection of diverse and highly functional binders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the screening results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "a4dfbb0e-f32f-4532-ac8e-0580d44698bc",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C84",
+      "claim": "The NaLi-H1 library does not depend on animal experimentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Because it is a fully synthetic, non immune, library, it does not depend on animal experimentation, it is not limited by natural immunogenicity or toxicity of antigens and allows to develop and adjust the selection without ethic consideration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the synthetic library approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "330dbd1d-a44b-4a1e-9c01-0c146a717e0e",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C85",
+      "claim": "Almost every hs2dAb antibody expressed in mammalian cytosol showed no sign of aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Almost every hs2dAb antibodies we expressed in mammalian cytosol showed no sign of aggregation, which further supported the idea that the synthetic scaffold we designed is robust and highly resistant to reduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from intrabody expression experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "1c502996-2ae1-4c98-b635-0d4f46c6c028",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C86",
+      "claim": "Without using particular selection schemes, functional intrabodies were frequently obtained from the NaLi-H1 library.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the NaLi-H1 library, we observed that without using particular selection schemes, functional intrabodies were frequently obtained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an advantage of the NaLi-H1 library.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "c4a5e40b-ce1d-4e8c-8d69-609573f086db",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "claim_id": "C87",
+      "claim": "NaLi-H1 can provide highly functional hs2dAb which appeared as good as intrabodies from immune libraries.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we did not formally compare the NaLi-H1 library to previous llama na\u00efve or semi synthetic libraries, the functionality of selected hs2dAb was compared to a sub-nanomolar affinity intrabody, the GFP4 nanobody, which has been extensively used (Caussinus et al., 2011; Kirchhofer et al., 2010). We observed by monitoring its signal-to-noise ratio and by using it in a protein knockdown assay that NaLi-H1 can provide highly functional hs2dAb which appeared as good as intrabodies from immune libraries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison with established intrabodies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0623a585-f08d-4a25-b962-504f69890d9d",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed NaLi-H1, the first fully synthetic phage display library of humanized llama single domain antibodies (hs2dAb) with a diversity of 3\u00d710^9 clones. The library is based on a humanized scaffold optimized for intracellular stability and provides high affinity binders without requiring animal immunization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C3, C31, C36, C47, C83, and C84 collectively establish the creation and characteristics of the NaLi-H1 library. The library size (C31, C47), humanized scaffold design (C2), synthetic nature (C1, C36, C84), and functional validation (C3, C83) are all explicitly stated and supported by the methodology and results presented. The claim of being 'first' (C1, C36) is a priority claim that cannot be independently verified but is stated by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "6829b813-3ef5-440e-8d74-f9748cd6c361",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A robust VHH scaffold (sdAbD10) was identified through CAT fusion assay screening in E. coli cytosol. This scaffold showed superior antibiotic resistance compared to previously reported thermostable nanobodies, high expression yield in E. coli periplasm, and excellent solubility and stability after heat treatment at 70\u00b0C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C40 describe the scaffold selection process and characterization of sdAbD10. The CAT fusion assay methodology (C27), identification of sdAbD10 as consensus (C28, C37), and comparative performance data (C38-C40) are supported by Figure 1\u2014figure supplement 1. The comparative claims (C38) reference specific prior work, providing appropriate context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "14274c3a-e1d0-4914-a625-2402f6b963d2",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The sdAbD10 scaffold was humanized by altering seven residues toward human VH3 sequences while maintaining four llama VHH-specific amino acids in framework-2 (positions 42, 49, 50, 52) to create the hs2dAb scaffold. Both scaffolds enabled functional display of grafted CDRs and efficient intrabody use.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C41-C44 describe the humanization strategy and validation. The specific residue changes (C41, C42) and functional validation through CDR grafting (C43, C44) are explicitly stated and supported by Figure 1\u2014figure supplement 2. The design rationale for maintaining VHH-specific residues is clearly articulated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "76128b03-d8c5-4178-8ee2-bcffaefbdf07",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The library was designed with fixed CDR1 and CDR2 lengths of 7 amino acids and four different CDR3 lengths (9, 12, 15, or 18 amino acids) to cover the spectrum of natural VHH CDR3 diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45 and C46 describe the CDR design strategy. These design decisions are explicitly stated in the text and are rational choices based on natural VHH diversity. The implementation is validated by sequencing data (C49) showing the intended distribution was achieved.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "e0b8b388-607c-474e-bacd-08862aa89d58",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Quality control of the NaLi-H1 library showed only 4% defective clones (13/315 sequenced), equal distribution of the four CDR3 lengths, and excellent solubility of randomly tested clones even after heat treatment at 90\u00b0C.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 present quality control data. The defect rate (C48) is based on Sanger sequencing of 315 clones, CDR3 distribution (C49) is confirmed by NGS, and solubility data (C50, C51) are supported by Figure 1\u2014figure supplement 4. The sample sizes and methods are appropriate for these quality assessments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "228df040-8a38-4359-8e1c-53839f95ec2e",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The NaLi-H1 library was successfully screened against multiple targets (EGFP, mCherry, tubulin, actin, p53, HP1\u03b1) yielding diverse specific binders functional in immunoassays. Success rates varied by target: 10/37 anti-EGFP worked in IF, 6 anti-mCherry, 3/40 anti-tubulin, 7/16 anti-actin, 6/12 anti-p53, and 5 anti-HP1\u03b1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C32, and C52-C60 document screening results against conventional protein targets. The data are supported by Figure 2 and supplementary figures showing immunofluorescence, ELISA, and western blot validation. The success rates are explicitly stated and demonstrate the library's functionality, though the variation in success rates across targets is notable and honestly reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "24edb3f6-96a9-4efb-86d9-7e6bdb6de59d",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A conformation-specific antibody (H12) was selected that selectively recognizes GTP-bound active RHOA. H12 showed no binding to GDP-loaded or dominant negative RHOA mutants and could specifically immunoprecipitate GTP-loaded RHO from cell extracts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C61-C65 describe the selection and characterization of the conformational H12 antibody. The specificity is demonstrated through multiple orthogonal assays (ELISA, pull-down, immunofluorescence) shown in Figure 3A-C. The conformational selectivity is well-supported by the differential binding to active vs. inactive mutants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "ddf11296-6551-408b-8c5f-ca9c268eab4f",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Direct selection against SKBR3 tumor cell surfaces yielded 15 independent binders, of which 12/15 recognized the HER2 exoplasmic domain, demonstrating the library's utility for identifying tumor-specific antigens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C66-C68 describe cell surface selection results. The enrichment for HER2-specific antibodies (12/15) is striking and supported by ELISA, immunofluorescence, and FACS data in Figure 3E-G. However, the authors acknowledge the subtractive selection was not performed on isogenic cell lines, which is a limitation but does not invalidate the result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "8673ffb9-ac11-4f14-a286-c1c58d41219a",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Selected hs2dAb frequently functioned as intrabodies without aggregation when expressed in mammalian cytosol. Several anti-GFP, anti-mCherry, anti-p53, and anti-HP1 antibodies efficiently labeled their targets in living cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, C69-C72, C85, and C86 describe intrabody functionality. The lack of aggregation (C69, C85) and successful target labeling (C70-C72) are demonstrated in Figure 4. The comparison to prior experience with scFv libraries (C69) provides context, though this is anecdotal rather than a formal comparison. The frequency claim (C86) is supported by the data but lacks precise quantification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "121510fc-a49b-4aa3-be41-0ffd8a1789a4",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The H12 antibody functioned as an inhibitory intrabody, perturbing endogenous RHO activity when expressed in the cytosol. H12 selectively co-immunoprecipitated with constitutively active RHOA, and its expression caused complete loss of actin stress fibers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C75 demonstrate H12's inhibitory function as an intrabody. The co-IP data (C74, Figure 5\u2014figure supplement 1) confirms intracellular binding specificity, and the dramatic phenotype of stress fiber loss (C75, Figure 5A) provides functional evidence of RHO pathway inhibition. The phenotype is consistent with known RHO biology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "fe87d212-91d0-4dd9-8cdd-b7aaec009882",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Functionalization of intrabodies with an F-box domain enabled specific protein knockdown in living cells. Several anti-EGFP hs2dAb induced up to 70% reduction in H2B-EGFP fluorescence, which was reversed by proteasome inhibition, though not all intrabodies were effective when functionalized.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C35, and C76-C80 describe the protein knockdown approach. The data in Figure 5B-D and Figure 5\u2014figure supplement 2 demonstrate successful knockdown with specific clones (C78, C79) and proteasome dependence (C80). The authors honestly report that some intrabodies failed as F-box fusions (C77), which is important for understanding the limitations of the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "6d45cc1a-a565-42a9-9230-038bad8c81b9",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Affinity measurements by surface plasmon resonance revealed KD values ranging from 10 nanomolar to 50 picomolar for selected hs2dAb.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33 and C82 report affinity measurements. The data are presented in Table 2 and Figure 6 showing SPR sensorgrams. The range of affinities is appropriate for antibodies from synthetic libraries. The methods describe single-cycle kinetics, which is a validated approach. The affinities are in the expected range for functional antibodies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "454d53f2-2c8d-4f39-9b28-459cb18f1a66",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The hs2dAb scaffold displays partial resistance and/or refolding after treatment at 90\u00b0C for 10 minutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C81 describes thermostability. This is supported by the solubility data in C51 and Figure 1\u2014figure supplement 4 showing >70% solubility after 90\u00b0C treatment. The qualification of 'partial resistance and/or refolding' is appropriately cautious given the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "f0568ef0-55e2-4fba-88af-d16983e7145c",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The functionality of hs2dAb from NaLi-H1 was comparable to the GFP4 nanobody from immune libraries when assessed by signal-to-noise ratio and protein knockdown assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C87 makes a comparative statement about library performance. While the authors compare selected hs2dAb to GFP4 in specific assays (Figure 5), they explicitly state they 'did not formally compare the NaLi-H1 library to previous llama na\u00efve or semi synthetic libraries.' The comparison is limited to specific clones in specific assays rather than a systematic library comparison. More comprehensive comparative data would be needed to fully support this claim.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "e2fa57a1-4500-4cd0-8974-8ed5cb87cf13",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The introduction provides background on antibody technology, recombinant methods, library types, antibody structure, nanobodies, and intrabodies, establishing the context for the work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C26 present established background knowledge with appropriate citations. These are literature-based claims that provide context rather than novel findings. The citations support the statements made, and the background is accurate and relevant to the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    },
+    {
+      "id": "829ad11c-1764-4701-870a-630db5d772b0",
+      "content_id": "4a5dc33e-40b9-4f4d-a5af-5354f828870d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The humanized synthetic scaffold (hs2dAb) was confirmed to be robust and functional by CDR grafting experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C30 describes validation of the hs2dAb scaffold. This is supported by the anti-lamin CDR grafting experiments shown in Figure 1\u2014figure supplement 2, which demonstrate phage display, expression in multiple systems, immunofluorescence, and intrabody functionality. The validation is thorough and appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:26:57.790269Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0f662c20-ce0a-49c2-bfbc-9b0c54ce5b33",
+      "result_id": "0623a585-f08d-4a25-b962-504f69890d9d"
+    },
+    {
+      "claim_id": "df68a4e5-d0c9-4a84-a3eb-5cb7a6a293a8",
+      "result_id": "0623a585-f08d-4a25-b962-504f69890d9d"
+    },
+    {
+      "claim_id": "03cdbeb2-26c1-4071-9871-353a99567519",
+      "result_id": "0623a585-f08d-4a25-b962-504f69890d9d"
+    },
+    {
+      "claim_id": "b048e57b-3552-4a6e-b775-bb42157cdde9",
+      "result_id": "0623a585-f08d-4a25-b962-504f69890d9d"
+    },
+    {
+      "claim_id": "27202e3b-bd8b-4f36-9d73-8b2143f2e031",
+      "result_id": "0623a585-f08d-4a25-b962-504f69890d9d"
+    },
+    {
+      "claim_id": "22167240-67ab-4c9e-a307-102b7bf029c0",
+      "result_id": "0623a585-f08d-4a25-b962-504f69890d9d"
+    },
+    {
+      "claim_id": "fe5ae8ca-a315-4b30-8924-9a036510a2c7",
+      "result_id": "0623a585-f08d-4a25-b962-504f69890d9d"
+    },
+    {
+      "claim_id": "a4dfbb0e-f32f-4532-ac8e-0580d44698bc",
+      "result_id": "0623a585-f08d-4a25-b962-504f69890d9d"
+    },
+    {
+      "claim_id": "d2d98ca8-d568-4d99-8036-51548578f3b9",
+      "result_id": "6829b813-3ef5-440e-8d74-f9748cd6c361"
+    },
+    {
+      "claim_id": "542de4f8-1dbd-473d-8b82-ff11e89ba9e0",
+      "result_id": "6829b813-3ef5-440e-8d74-f9748cd6c361"
+    },
+    {
+      "claim_id": "7a976213-7949-4582-a236-e53189fd3b0d",
+      "result_id": "6829b813-3ef5-440e-8d74-f9748cd6c361"
+    },
+    {
+      "claim_id": "38233633-d6c9-449a-8ca2-7887995389a4",
+      "result_id": "6829b813-3ef5-440e-8d74-f9748cd6c361"
+    },
+    {
+      "claim_id": "3758a7fe-5767-43b9-898e-4a007e1415b6",
+      "result_id": "6829b813-3ef5-440e-8d74-f9748cd6c361"
+    },
+    {
+      "claim_id": "521bf8dc-7104-4552-9b72-9f0de612c2ee",
+      "result_id": "6829b813-3ef5-440e-8d74-f9748cd6c361"
+    },
+    {
+      "claim_id": "39e2e507-586d-4c01-9b5e-f0b5e16ae2d1",
+      "result_id": "14274c3a-e1d0-4914-a625-2402f6b963d2"
+    },
+    {
+      "claim_id": "140e03bc-006e-4755-92a3-1fd17bbbdd0a",
+      "result_id": "14274c3a-e1d0-4914-a625-2402f6b963d2"
+    },
+    {
+      "claim_id": "6c8c5031-bdbb-4441-bc67-754cfd58d450",
+      "result_id": "14274c3a-e1d0-4914-a625-2402f6b963d2"
+    },
+    {
+      "claim_id": "51c093b6-ec8f-4f75-bb75-2770ce6b3408",
+      "result_id": "14274c3a-e1d0-4914-a625-2402f6b963d2"
+    },
+    {
+      "claim_id": "31b3d990-be4a-4884-933a-12236b62277b",
+      "result_id": "14274c3a-e1d0-4914-a625-2402f6b963d2"
+    },
+    {
+      "claim_id": "667be2b3-696d-40b2-bcde-e4552fccacd5",
+      "result_id": "76128b03-d8c5-4178-8ee2-bcffaefbdf07"
+    },
+    {
+      "claim_id": "bb8443f7-6fef-455e-ac0c-a5ba6b5d4854",
+      "result_id": "76128b03-d8c5-4178-8ee2-bcffaefbdf07"
+    },
+    {
+      "claim_id": "e307aa53-1cd7-4e90-9e38-b995a37e9a55",
+      "result_id": "e0b8b388-607c-474e-bacd-08862aa89d58"
+    },
+    {
+      "claim_id": "711faf97-15e2-49fd-9e53-51c470dcf87a",
+      "result_id": "e0b8b388-607c-474e-bacd-08862aa89d58"
+    },
+    {
+      "claim_id": "f14be487-5438-4772-8d30-e2283bf7e12b",
+      "result_id": "e0b8b388-607c-474e-bacd-08862aa89d58"
+    },
+    {
+      "claim_id": "2035b414-6727-484f-a57b-6ddb29d90cac",
+      "result_id": "e0b8b388-607c-474e-bacd-08862aa89d58"
+    },
+    {
+      "claim_id": "169322ed-6774-4f2c-8265-eb162d834213",
+      "result_id": "228df040-8a38-4359-8e1c-53839f95ec2e"
+    },
+    {
+      "claim_id": "2ca0b6b9-5737-4211-89df-a9ca16cc9686",
+      "result_id": "228df040-8a38-4359-8e1c-53839f95ec2e"
+    },
+    {
+      "claim_id": "9fceed9e-974d-434f-b73b-33bb92c4336b",
+      "result_id": "228df040-8a38-4359-8e1c-53839f95ec2e"
+    },
+    {
+      "claim_id": "830d143a-a0fb-48fc-bd54-84b24c410ae8",
+      "result_id": "228df040-8a38-4359-8e1c-53839f95ec2e"
+    },
+    {
+      "claim_id": "2ff575d4-2d34-4035-a15d-f5419ac97ff2",
+      "result_id": "228df040-8a38-4359-8e1c-53839f95ec2e"
+    },
+    {
+      "claim_id": "1bfa5e51-aae7-49b9-af61-c0abb3aa282e",
+      "result_id": "228df040-8a38-4359-8e1c-53839f95ec2e"
+    },
+    {
+      "claim_id": "dc8752d8-f243-4304-b6a0-d0f93bed245d",
+      "result_id": "228df040-8a38-4359-8e1c-53839f95ec2e"
+    },
+    {
+      "claim_id": "7b6366a4-716a-41fd-9f38-6ec22dc1263f",
+      "result_id": "228df040-8a38-4359-8e1c-53839f95ec2e"
+    },
+    {
+      "claim_id": "f564ee75-06dc-4b3a-ba0c-56ac5112d527",
+      "result_id": "228df040-8a38-4359-8e1c-53839f95ec2e"
+    },
+    {
+      "claim_id": "63f76f1f-816b-4e4b-b708-3d0b0cc1a48a",
+      "result_id": "228df040-8a38-4359-8e1c-53839f95ec2e"
+    },
+    {
+      "claim_id": "8551e5bd-1313-47c5-b3f5-f38fc3b560e0",
+      "result_id": "228df040-8a38-4359-8e1c-53839f95ec2e"
+    },
+    {
+      "claim_id": "099aad80-9050-41a8-969b-d4c881e84d29",
+      "result_id": "24edb3f6-96a9-4efb-86d9-7e6bdb6de59d"
+    },
+    {
+      "claim_id": "f2f227a4-aa71-4a05-bba3-f010470375e2",
+      "result_id": "24edb3f6-96a9-4efb-86d9-7e6bdb6de59d"
+    },
+    {
+      "claim_id": "b0c72138-de12-4ab9-9744-7213378096c8",
+      "result_id": "24edb3f6-96a9-4efb-86d9-7e6bdb6de59d"
+    },
+    {
+      "claim_id": "3bfc80dd-f75d-44bf-bf68-9cdaa611a016",
+      "result_id": "24edb3f6-96a9-4efb-86d9-7e6bdb6de59d"
+    },
+    {
+      "claim_id": "20dc5ef6-f748-4d59-9eb6-7db7bb530548",
+      "result_id": "24edb3f6-96a9-4efb-86d9-7e6bdb6de59d"
+    },
+    {
+      "claim_id": "f2025cec-3a37-4aeb-8fc0-b3c3c4568f1b",
+      "result_id": "24edb3f6-96a9-4efb-86d9-7e6bdb6de59d"
+    },
+    {
+      "claim_id": "42f9c7c9-478a-4321-ac6d-4d166ee616ec",
+      "result_id": "ddf11296-6551-408b-8c5f-ca9c268eab4f"
+    },
+    {
+      "claim_id": "fdee095e-4156-4df7-97a3-faf75e7615d5",
+      "result_id": "ddf11296-6551-408b-8c5f-ca9c268eab4f"
+    },
+    {
+      "claim_id": "3e4e601e-7efd-4d63-8b51-724ad199c5ff",
+      "result_id": "ddf11296-6551-408b-8c5f-ca9c268eab4f"
+    },
+    {
+      "claim_id": "41cc00a1-39ed-4bbb-bfd1-ff71e9450692",
+      "result_id": "ddf11296-6551-408b-8c5f-ca9c268eab4f"
+    },
+    {
+      "claim_id": "b4c9977d-1da3-427f-a8da-7be7a66dfb27",
+      "result_id": "8673ffb9-ac11-4f14-a286-c1c58d41219a"
+    },
+    {
+      "claim_id": "2695b1b1-3ee5-478b-9203-12d1c4e18b94",
+      "result_id": "8673ffb9-ac11-4f14-a286-c1c58d41219a"
+    },
+    {
+      "claim_id": "c22acf36-d4ea-4ae3-9324-787da30503cd",
+      "result_id": "8673ffb9-ac11-4f14-a286-c1c58d41219a"
+    },
+    {
+      "claim_id": "cf6bd21f-005c-4e7d-b482-0f17f8e49a8e",
+      "result_id": "8673ffb9-ac11-4f14-a286-c1c58d41219a"
+    },
+    {
+      "claim_id": "17ce3c0e-0e51-4913-86e6-0a8869c86eba",
+      "result_id": "8673ffb9-ac11-4f14-a286-c1c58d41219a"
+    },
+    {
+      "claim_id": "cdd894c4-c22e-475d-9504-a246e7b7831f",
+      "result_id": "8673ffb9-ac11-4f14-a286-c1c58d41219a"
+    },
+    {
+      "claim_id": "330dbd1d-a44b-4a1e-9c01-0c146a717e0e",
+      "result_id": "8673ffb9-ac11-4f14-a286-c1c58d41219a"
+    },
+    {
+      "claim_id": "1c502996-2ae1-4c98-b635-0d4f46c6c028",
+      "result_id": "8673ffb9-ac11-4f14-a286-c1c58d41219a"
+    },
+    {
+      "claim_id": "529d6ffe-f0d7-4c7f-9c09-f3622bdba669",
+      "result_id": "121510fc-a49b-4aa3-be41-0ffd8a1789a4"
+    },
+    {
+      "claim_id": "0b90b17b-b71f-4c32-ac62-c50c0969a52f",
+      "result_id": "121510fc-a49b-4aa3-be41-0ffd8a1789a4"
+    },
+    {
+      "claim_id": "d54ce358-0cf5-4bb6-b09a-d538a91cb006",
+      "result_id": "121510fc-a49b-4aa3-be41-0ffd8a1789a4"
+    },
+    {
+      "claim_id": "5dff36c7-181f-4a43-95e1-708e8cd0af13",
+      "result_id": "fe87d212-91d0-4dd9-8cdd-b7aaec009882"
+    },
+    {
+      "claim_id": "8c433bcf-56b0-4b57-8f80-7f6cd9a69667",
+      "result_id": "fe87d212-91d0-4dd9-8cdd-b7aaec009882"
+    },
+    {
+      "claim_id": "af7774a4-9b90-44c1-ba4e-fd2f32be9262",
+      "result_id": "fe87d212-91d0-4dd9-8cdd-b7aaec009882"
+    },
+    {
+      "claim_id": "87b04ba9-0781-473a-9172-cdc825f1f2fa",
+      "result_id": "fe87d212-91d0-4dd9-8cdd-b7aaec009882"
+    },
+    {
+      "claim_id": "d55916ff-8406-4850-b8de-f01f22c0eed7",
+      "result_id": "fe87d212-91d0-4dd9-8cdd-b7aaec009882"
+    },
+    {
+      "claim_id": "821fb084-ca30-4442-b9f3-356b7fa37258",
+      "result_id": "fe87d212-91d0-4dd9-8cdd-b7aaec009882"
+    },
+    {
+      "claim_id": "b073fcbb-4f26-4d9b-bd5b-f5efdb2914da",
+      "result_id": "fe87d212-91d0-4dd9-8cdd-b7aaec009882"
+    },
+    {
+      "claim_id": "0d45db29-ea71-49ec-8653-918700ed173e",
+      "result_id": "6d45cc1a-a565-42a9-9230-038bad8c81b9"
+    },
+    {
+      "claim_id": "5acd5122-799d-4c13-9130-74dff8ef03fa",
+      "result_id": "6d45cc1a-a565-42a9-9230-038bad8c81b9"
+    },
+    {
+      "claim_id": "838cc78c-9d8e-4033-bde6-17dfc35d492c",
+      "result_id": "454d53f2-2c8d-4f39-9b28-459cb18f1a66"
+    },
+    {
+      "claim_id": "c4a5e40b-ce1d-4e8c-8d69-609573f086db",
+      "result_id": "f0568ef0-55e2-4fba-88af-d16983e7145c"
+    },
+    {
+      "claim_id": "887bcfc4-9aed-4ccb-9eac-06990c3b3038",
+      "result_id": "e2fa57a1-4500-4cd0-8974-8ed5cb87cf13"
+    },
+    {
+      "claim_id": "f1558f44-16a1-4f4a-8601-ff1a9fde2a90",
+      "result_id": "e2fa57a1-4500-4cd0-8974-8ed5cb87cf13"
+    },
+    {
+      "claim_id": "08f08dcb-d695-4905-b10a-6c046385d29b",
+      "result_id": "e2fa57a1-4500-4cd0-8974-8ed5cb87cf13"
+    },
+    {
+      "claim_id": "c46dccc5-f9fa-43ad-a1b7-76a86e22f63b",
+      "result_id": "e2fa57a1-4500-4cd0-8974-8ed5cb87cf13"
+    },
+    {
+      "claim_id": "8911b237-6ac1-41d0-b57e-aa3fec7891d7",
+      "result_id": "e2fa57a1-4500-4cd0-8974-8ed5cb87cf13"
+    },
+    {
+      "claim_id": "060d90c1-9bf1-4b93-b91e-b349ca86e9ce",
+      "result_id": "e2fa57a1-4500-4cd0-8974-8ed5cb87cf13"
+    },
+    {
+      "claim_id": "05780406-5643-4f31-8e6a-3176791a2ae9",
+      "result_id": "e2fa57a1-4500-4cd0-8974-8ed5cb87cf13"
+    },
+    {
+      "claim_id": "34ed8aa8-1a90-438f-8bb0-e7a81dcd98cb",
+      "result_id": "e2fa57a1-4500-4cd0-8974-8ed5cb87cf13"
+    },
+    {
+      "claim_id": "c9457c07-32e9-45bd-a0e3-3fd2d8acab7a",
+      "result_id": "e2fa57a1-4500-4cd0-8974-8ed5cb87cf13"
+    },
+    {
+      "claim_id": "bb6131ad-3e09-4c11-9ffd-78b5612afb39",
+      "result_id": "e2fa57a1-4500-4cd0-8974-8ed5cb87cf13"
+    },
+    {
+      "claim_id": "e6131e96-c174-491c-8443-f355b8a0d5a7",
+      "result_id": "e2fa57a1-4500-4cd0-8974-8ed5cb87cf13"
+    },
+    {
+      "claim_id": "497c7de4-1bbc-437d-b489-5c435c07f1c3",
+      "result_id": "e2fa57a1-4500-4cd0-8974-8ed5cb87cf13"
+    },
+    {
+      "claim_id": "9e6a728f-216d-41cd-af60-46dfc4dea145",
+      "result_id": "e2fa57a1-4500-4cd0-8974-8ed5cb87cf13"
+    },
+    {
+      "claim_id": "9e58bdd3-3948-4877-a7e5-d82f0933ade1",
+      "result_id": "e2fa57a1-4500-4cd0-8974-8ed5cb87cf13"
+    },
+    {
+      "claim_id": "80799d53-5ae3-4148-a826-7e9e7da61d16",
+      "result_id": "e2fa57a1-4500-4cd0-8974-8ed5cb87cf13"
+    },
+    {
+      "claim_id": "4b939a5a-b176-40d7-8a5a-5a6ad6e6fcfd",
+      "result_id": "e2fa57a1-4500-4cd0-8974-8ed5cb87cf13"
+    },
+    {
+      "claim_id": "feaa7408-341b-46d9-865d-c50940cf8a4a",
+      "result_id": "e2fa57a1-4500-4cd0-8974-8ed5cb87cf13"
+    },
+    {
+      "claim_id": "625b536d-4529-41e3-947a-52708b0af52f",
+      "result_id": "829ad11c-1764-4701-870a-630db5d772b0"
+    }
+  ],
+  "comparisons": []
+}

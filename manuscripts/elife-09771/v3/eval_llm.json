@@ -1,0 +1,449 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Cell-free TX-TL systems prepared from E. coli extract preserve endogenous transcription machinery and degradation mechanisms. A microfluidic nano-reactor device with discontinuous flow at rates matching E. coli dilution rates maintains steady-state transcription/translation and removes reaction products, enabling implementation of dynamic genetic networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are well-supported by citations to prior work (Shin and Noireaux, 2010a; 2010b; 2012; Sun et al., 2013; Niederholtmeyer et al., 2013). These establish the foundational capabilities of the cell-free system used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Linear DNA can be used in TX-TL systems without requiring specific origins of replication or antibiotic markers, and can be assembled in vitro within 3 hours. The time for DNA assembly does not scale with circuit complexity. Prototyping in TX-TL requires 4-78 hours compared to 52 hours to several weeks in E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 are supported by citations (Sun et al., 2014) and demonstrated throughout the experimental work. The timing estimates are shown in Figure 1 and represent a key advantage of the cell-free approach. The modular nature of linear DNA assembly is demonstrated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The original repressilator network was successfully implemented in the cell-free system, showing long-term sustained oscillations with periods matching the original in vivo study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are supported by experimental data shown in Figure 2 and Video 1. This demonstrates that a well-characterized in vivo circuit can be faithfully reproduced in the cell-free system, establishing the validity of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The OR2* mutation in the repressilator increases the repressor concentration needed for half-maximal repression and reduces cooperativity. Both the original and OR2* repressilator oscillated at long dilution times but with shifted protein concentrations. At decreasing dilution times, amplitudes decreased and periods became faster with linear dependence on dilution time. The OR2* version did not support oscillations at faster dilution times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C21 are supported by experimental data in Figure 2B,C and citations to prior work (Rosenfeld et al., 2005). The characterization demonstrates how the cell-free system can be used to systematically study the effects of mutations on circuit behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The range of dilution times supporting oscillations serves as a measure for robust oscillator function, which diminishes with decreasing synthesis rates or when repressor-promoter binding is weakened.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are supported by experimental observations shown in Figure 2\u2014figure supplements 1\u20133. This provides a quantitative metric for oscillator robustness that would be difficult to measure systematically in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Initial conditions can influence nonlinear system dynamics but are difficult to control in cells. The repressilator system quickly approached limit cycle oscillations and was invariant to initial conditions for all tested starting concentrations of TetR and CI repressor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 are supported by experimental data in Figure 2D showing phase portraits. This demonstrates a key advantage of the cell-free system: the ability to systematically vary initial conditions, which is challenging in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Transfer functions of repressor-promoter pairs in the repressilator network were measured and found to be symmetric. The OR2* mutant showed expected shifts in K value and decreased transfer function steepness. TetR repressor homologs (except QacR) showed similar transfer functions as observed in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are supported by experimental data in Figure 3A and supplements, with comparison to in vivo data from Stanton et al., 2014. This demonstrates the cell-free system can accurately characterize individual circuit components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "A novel 3-node ring oscillator (3n1) using BetI, PhlF, and SrpR repressors showed high-amplitude oscillations over a broad range of dilution times with the same dependence of amplitude and period on dilution time as the repressilator. Dilution rates were found to be critical for oscillation existence, period, and amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by experimental data in Figure 3B. This demonstrates successful forward engineering of a novel oscillator circuit using the cell-free approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Protein degradation is similar to dilution in removing repressor proteins. A 3n2 circuit was constructed with and without ssrA degradation tags. Both versions oscillated, but the version without tags exhibited slower oscillations extending to lower dilution times, demonstrating that protein degradation affects oscillator function and period. Effects of ClpXP-mediated degradation can be emulated in the cell-free environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are supported by experimental data in Figure 3C and citations to prior work (Cookson et al., 2011; Prindle et al., 2014). This demonstrates the cell-free system can recapitulate important in vivo regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Theory predicts odd-numbered ring architectures oscillate while even-numbered architectures have stable steady states. A 4-node circuit was constructed and could be switched between two stable steady states using IPTG or aTc pulses. Steady states were reached after 5-10 hours and remained stable for 22 hours. This demonstrates non-oscillating networks function in the cell-free environment and that 3-node oscillations are determined by network architecture, not reactor conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 are supported by theoretical citations (Smith, 1987; Hori et al., 2013) and experimental data in Figure 3D. This provides experimental validation of theoretical predictions and demonstrates the versatility of the cell-free system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Two 5-node ring networks (5n1 and 5n2) oscillated over a broad range of dilution times with periods up to 19 hours, significantly longer than 3-node networks (up to 8 hours). Observed periods of all ssrA-tagged 3n and 5n architectures could be accurately predicted by computational simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by experimental data in Figure 3E,F. This demonstrates successful engineering of increasingly complex oscillator networks and validates computational predictions, representing a major achievement in synthetic biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Both 3n oscillators (3n1 and 3n2) showed regular oscillations with periods of 6\u00b11 hours for at least 30 hours in E. coli when tested on a mother machine device. All cells undergoing healthy cellular division oscillated (n=71).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are supported by experimental data in Figure 4A, Figure 4\u2014figure supplement 1, and Videos 2-4. This demonstrates successful transfer of cell-free prototyped circuits to living cells with high robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "5n1 with a high-strength reporter caused slow growth and high cell death, but decreasing reporter strength resolved viability issues. Both 5n oscillators with low-strength reporters showed robust oscillations maintained for at least 70 hours, with over 95% of healthy cells oscillating (n=104). Periods were 8 hours for 5n1 and 9 hours for 5n2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 are supported by experimental data in Figure 4B and supplements, with citation to related work (Ceroni et al., 2015). This demonstrates successful in vivo implementation of complex 5-node oscillators, though with some limitations regarding loading effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Both 3n oscillators showed striking population-wide oscillation pulses when grown from a single cell on a CellASIC system, observable with three different fluorescent reporters. Population-level oscillations were not observed in the original repressilator, OR2* mutant, or 5n networks. Synchronized oscillations were previously only observed in oscillators using intercellular communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 are supported by experimental data in Figure 4C and supplements (Videos 8-10) and citations to prior work (Elowitz and Leibler, 2000; Danino et al., 2010; Prindle et al., 2012). This represents a novel finding of population synchronization without active coupling mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The population-wide oscillations in 3n1 and 3n2 are hypothesized not to be due to active coupling mechanisms, but rather to increased repressor concentrations compared to the original repressilator, which increases inheritance of the period phenotype and minimizes de-phasing from stochastic fluctuations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C68 represent the authors' hypothesis and interpretation (with citation to Kiviet et al., 2014) but lack direct experimental validation. The mechanism underlying population synchronization remains speculative and would require additional experiments to confirm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "A direct relationship was found between division times and oscillation period for 3n oscillators by varying media conditions and flow rates. Oscillation periods of 5n oscillators were consistent with cell-free results and showed similar dependence on doubling time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by experimental data in Figure 4D comparing in vivo and in vitro results. This demonstrates good quantitative agreement between the cell-free system and living cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Stronger reporters are theorized to cause more ClpXP loading, slowing oscillation periods. Both 3n1 and 5n2 showed that stronger reporters resulted in longer periods in vivo, reflecting cell-free findings of differential ssrA tag-dependent period length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by experimental data in Figure 4E and Figure 3C, with citation to prior work (Cookson et al., 2011). The theoretical reasoning is validated by experimental observations in both in vitro and in vivo systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Synthetic dynamic networks can be readily implemented, characterized, and engineered in cell-free systems and transferred to cellular hosts. The cell-free system enabled experimental validation of theoretical predictions on even- and odd-numbered cyclic negative feedback circuits and enabled in vivo implementation of robust 5-node genetic oscillators. The cell-free environment fills the gap between theoretical design and in vivo implementation, providing a simplified environment that drastically reduces the design-build-test cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 summarize the major findings demonstrated throughout the study with supporting citations (Smith, 1987; Hori et al., 2013; Sun et al., 2014). The experimental results comprehensively support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Oscillation periods in negative feedback ring oscillators are mainly determined by degradation and dilution rates, which explains the good correspondence between oscillation periods in the cell-free environment and in E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by citation to theoretical work (Hori et al., 2013) and validated by experimental observations throughout the study comparing in vitro and in vivo periods. This provides a mechanistic explanation for the observed agreement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Almost all prototyping can be done on linear DNA, requiring less than 8 hours to assemble and test. This allows rapid screening of different network topologies and parameters important for network function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 are supported by the demonstrated experimental approach throughout the study, particularly for the 3n2, 4n, and 5n networks. The timing and utility are validated by the successful construction and testing of multiple circuit variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Some differences were observed between cell-free and cellular environments, particularly in predicting cellular toxicity and loading effects of 5n oscillators, and in promoter/repressor strengths. The 5n2 network oscillated on linear DNA in vitro and on plasmid DNA in vivo, but not on plasmid DNA in vitro, hypothesized to be due to differences in expression efficiencies between linear and plasmid DNA and/or differences in repressor strengths between environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 honestly acknowledge limitations of the cell-free approach, supported by experimental observations (Figure 3E, Figure 4, Figure 3\u2014figure supplement 3) and citations (Sun et al., 2014; Chappell et al., 2013). The hypotheses are reasonable but remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The observed behavior of complex networks in the cell-free environment reflected network behavior in vivo well. Cell-free systems are a powerful emulator of the cellular environment allowing precise control over experimental conditions and enabling studies that are difficult or time consuming to perform in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 are supported by the comprehensive comparison of in vitro and in vivo results throughout the study. The demonstrated capabilities validate these conclusions about the utility of the cell-free approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Cell-free systems will be useful for prototyping and characterizing novel synthetic systems and facilitate in-depth analyses of native biological networks. The cell-free approach is poised to play an increasing role in biological systems engineering and provides a unique opportunity to design, build, and analyze biological systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C99 represent forward-looking projections about future applications. While the demonstrated results support the potential utility, these are speculative statements about future work rather than established findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Performing extensive, quantitative network characterization in cells is limited due to difficulties including lack of precise control over component concentrations, unpredictable interactions with host processes, cumbersome molecular cloning, and technical challenges with single-cell measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 describe well-established limitations of cellular systems, supported by citation (Kwok, 2010) and general knowledge in the field. These motivate the development of cell-free approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Prior work has demonstrated reconstituted biochemical systems and cell-free transcription-translation systems can implement complex dynamic behaviors. However, comparisons between cell-free and cellular systems have been limited to simple components, and it has not been shown whether genetic networks with complex dynamic behavior function similarly in both environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C111 accurately summarize prior work with appropriate citations and identify the knowledge gap addressed by this study. This provides important context for the significance of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Novel 3-node, 4-node, and 5-node negative feedback architectures were implemented and characterized in vitro. The 3- and 5-node oscillator networks were functional in cells with periods comparable to the cell-free system, indicating the cell-free system accurately emulated the cellular environment for these complex dynamic networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 summarize the core experimental findings of the study. The comprehensive in vitro and in vivo characterization data throughout the manuscript strongly support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "Cells carrying the 3-node networks oscillated on a population level, which was previously only observed in actively synchronized oscillators using quorum-based coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 are supported by experimental observations in Figure 4C and supplements, with appropriate citation to prior work (Danino et al., 2010). This represents a novel and significant finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "The in vitro and in vivo oscillations of the 5-node negative feedback networks confirm theoretical predictions on biomolecular ring oscillators and represent the largest synthetic negative feedback networks implemented simultaneously in cell-free systems and in cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 are supported by the experimental results for 5n1 and 5n2 networks shown throughout the study. This represents a significant achievement in synthetic biology and validates theoretical predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Detailed experimental methods are provided for TX-TL extract preparation, microfluidic device operation, fluorescent protein maturation time measurements, and in vivo experiments using mother machine and CellASIC systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C128 describe experimental methods with appropriate detail and citations to prior work. These are factual descriptions of the experimental procedures used in the study.",
+    "result_type": "MINOR"
+  }
+]

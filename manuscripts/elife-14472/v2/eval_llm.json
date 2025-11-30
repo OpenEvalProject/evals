@@ -1,0 +1,337 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C48",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The 2p-RAM achieves near diffraction-limited resolution (lateral 0.66 \u03bcm, axial 4.09 \u03bcm at center, NA 0.6, \u03bb=970 nm) across a large imaging volume (\u22055 mm \u00d7 1 mm cylinder) and over a broad wavelength range (900-1070 nm). Resolution degrades gradually beyond 2 mm from center but remains subcellular at the edge (lateral 0.89 \u03bcm, axial 6.88 \u03bcm at 2.5 mm). Performance is maintained across different depths up to 1 mm and is robust to moderate coverglass misalignments (\u00b12.5\u00b0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C151 provide quantitative resolution measurements from fluorescent bead imaging experiments shown in Figure 4, with appropriate statistical reporting (SEM). The measurements are consistent with theoretical predictions (C55) and validated across multiple conditions including different field positions (C152-C153), wavelengths (C154), and sample orientations (C155). The conclusion (C156-C157) is well-supported by the comprehensive experimental characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C200",
+      "C201",
+      "C202"
+    ],
+    "result": "The 2p-RAM provides a ~100-fold larger imaging volume compared to other microscopes with comparable resolution, enabling imaging of a \u22055 mm \u00d7 1 mm cylinder with diffraction-limited resolution. The system is corrected for 900-1070 nm excitation wavelengths and allows random access to hundreds of thousands of neurons for targeted interrogation during behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The imaging volume specifications (C48, C200) are validated by experimental data throughout the manuscript. The wavelength correction (C49) is demonstrated in Figure 4\u2014figure supplement 3. The claim of ~100-fold larger volume (C201) is a reasonable inference based on comparison with cited systems (C39-C45). The capability to access hundreds of thousands of neurons (C51) is supported by the detection of 207,359 nuclei (C188) shown in Figure 7\u2014figure supplement 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Signal brightness across the field of view is relatively constant up to 2.5 mm from center, with ~30% inhomogeneities within the specified FOV. A central brightness dip (~20%) is attributed to PMT photocathode inhomogeneity. Brightness drops at the FOV edge correlate with PSF degradation, consistent with two-photon microscopy principles where sub-diffraction objects are sensitive to PSF quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C145 describe experimental measurements from fluorescein bath imaging shown in Figure 3, providing quantitative characterization of brightness variations. The attribution of the central dip to PMT inhomogeneity (C145, C162) is supported by independent PMT characterization (C169). The correlation between edge brightness drop and PSF degradation (C158-C159) is consistent with established two-photon microscopy principles (C160) and supported by data in Figure 4J-K.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "The fluorescence collection system performs nearly optimally across the \u22055 mm FOV, with PMT signal proportional to light entering the objective up to NA 1.0 (the specified collection NA). Overall collection path transmission is 71%. A modest central dip (~20% reduced sensitivity) was traced to PMT photocathode inhomogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C171 describe systematic measurements of collection efficiency shown in Figure 5, using a controlled light source with variable NA. The proportionality up to NA 1.0 (C171) validates the design specification (C59, C113). The 71% transmission (C173) is a measured value. The PMT inhomogeneity (C169) explains the central brightness dip observed in multiple experiments (C145, C162), providing internal consistency across different measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C208",
+      "C209",
+      "C210"
+    ],
+    "result": "The microscope exhibits field curvature up to 158 \u03bcm at 2.5 mm from center. A software-based remote focus correction compensates for curvature along slow galvo movements (line-by-line, settling to <2.5 \u03bcm in 6.77\u00b10.02 ms for 300 \u03bcm steps) but cannot correct the faster resonant scan axis, resulting in visible striping artifacts. For typical in vivo applications targeting neurons in different brain regions at different depths, this residual curvature is expected to be a minor inconvenience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C175 describe field curvature measurements shown in Figure 6. The correction implementation (C176-C179) and its limitations (C180-C181) are clearly documented with quantitative performance data (C177) from Figure 6\u2014figure supplement 1. The striping artifacts are visible in Figure 7. The assessment that residual curvature is a minor inconvenience (C210) is a reasonable inference based on typical imaging scenarios where neurons of interest are at different depths anyway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "In vivo imaging in transgenic mice demonstrates subcellular resolution up to 600 \u03bcm depth, with neurons appearing as ring-like structures reflecting nuclear-excluded GCaMP. Deep imaging (~450 \u03bcm) reveals layer 4 barrel cortex architecture. The system can access at least 207,359 nuclei (detected in emx1-Cre \u00d7 lsl-h2b-GFP mice) and resolve individual dendritic spines in sparsely labeled neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C187 describe in vivo imaging results shown in Figure 7 and Video 1, demonstrating the microscope's performance in biological tissue. The ring-like neuronal appearance (C185) is consistent with GCaMP properties (cited). The nuclei count (C188) is from automated analysis shown in Figure 7\u2014figure supplement 2, and the inference that this represents a lower bound (C189) is reasonable. Spine resolution (C190) is demonstrated in Figure 7\u2014figure supplement 3. These results collectively validate the microscope's biological imaging capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C221"
+    ],
+    "result": "The 2p-RAM enables multi-scale functional imaging during behavior, linking activity across brain regions with single-neuron resolution. Low-magnification imaging (4.4\u00d74.2 mm at 1.9 Hz) revealed >3000 active neurons. Higher-speed imaging (9.6 Hz) of four widely separated 600\u00d7600 \u03bcm regions captured individual neuronal calcium transients, with some neurons showing correlated activity across regions while others showed independent activity patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C191-C199 describe functional imaging experiments shown in Figure 8 and associated supplements. The large FOV imaging (C192-C193) is documented in Figure 8\u2014figure supplement 1 with >3000 neurons identified through correlation analysis. The multi-region high-speed imaging (C196) is shown in Figure 8C and Video 3. Individual calcium transients (C197) and correlation patterns (C198) are demonstrated in Figure 8E-F. These experiments effectively demonstrate the microscope's capability for mesoscale functional imaging during behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C213",
+      "C214"
+    ],
+    "result": "Group delay dispersion (GDD) compensation was implemented to maintain short pulse widths at the sample. The refractive optics introduce ~25,000 fs\u00b2 GDD at 1000 nm, which would reduce two-photon excitation efficiency. A prism-based compensation unit achieved 106 fs pulse width at the sample, comparable to the laser output, maximizing peak power for efficient two-photon excitation during fast scanning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 describe GDD compensation with quantitative measurements shown in Figure 2\u2014figure supplement 1. The measured pulse width (106 fs) is close to the laser output, validating effective compensation. The rationale (C74, C213-C214) is based on established two-photon microscopy principles. This is a well-documented technical implementation with appropriate experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The remote focus (RF) unit uses a lightweight mirror (170 mg) on a voice coil, enabling rapid axial scanning much faster than objective movement. The custom RF objective (5 elements, 97% transmission) is designed to counteract spherical and chromatic aberrations of the imaging objective, maintaining diffraction-limited performance throughout the imaging volume. RF mirror movement translates to focal plane movement with a 1.23\u00d7 scale factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C92 describe the RF system design and performance. The component specifications (C82-C84) are documented. The optical conjugation (C85-C86) and aberration correction (C90-C91) are design features validated by the resolution measurements (Figure 4). The scale factor (C87) is a measured specification. The rapid movement capability (C92) is demonstrated by step-and-settle measurements in Figure 6\u2014figure supplement 1. This is a well-characterized technical implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C65",
+      "C66",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The lateral scanning system uses a resonant scanner (24 kHz, 10\u00b0 optical range, ~600 \u03bcm specimen scan) moved by galvo scanners across the FOV. A virtually conjugated galvo pair (VCGP) using three mirrors maintains pupil conjugation without requiring a large-aperture refractive relay, providing a compact and cost-effective solution. The 20 mm galvo mirrors achieve 3.4 ms step-and-settle time across their full range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 describe the resonant scanner specifications. Claims C99-C102 describe the VCGP design, which solves the pupil conjugation problem (C96-C98) without expensive refractive optics. The design rationale (C100) is a reasonable inference. The galvo performance (C102) is a measured specification. This scanning system design is well-documented and addresses known optical challenges in remote focusing systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The imaging objective (NA 0.6, focal length 21 mm, entrance pupil 25.6 mm, front lens tip 15 mm) has 2.7 mm working distance, effectively >3 mm with remote focusing. The system is corrected for imaging through #4 coverglass (450 \u03bcm BK7, equivalent to three #1 coverglasses). Overall power transmission through the excitation path is 13%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C109 provide specifications of the imaging objective and system performance. The working distance enhancement through remote focusing (C106) is a logical inference. The coverglass correction (C108) is validated by resolution measurements in Figure 4. The 13% transmission (C109) is measured data shown in Figure 2B. These are well-documented technical specifications with appropriate experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The fluorescence collection system addresses an etendue mismatch between the large objective collection (NA 1.0, 6 mm FOV, 42 mm pupil) and standard PMTs (5 mm photocathode, NA ~0.9). Oil-coupling a custom condenser lens to the PMT achieves NA 1.4 collection, enabling detection of all collected fluorescence. This non-pupil-imaging design causes variable spot size (1.5-2.7 mm) on the photocathode depending on source location, making images sensitive to photocathode inhomogeneities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C119 describe the collection optics design addressing a fundamental etendue matching problem. The problem (C115-C116) is well-defined based on optical principles (C112) and component specifications (C113-C114). The solution (C117-C119) is a novel design feature. The consequences (C120-C123) are logical inferences from the optical design, and the sensitivity to photocathode inhomogeneity is confirmed by experimental observations (C169). The suggestion for critical applications (C124) is reasonable. This represents a significant technical innovation with appropriate characterization of trade-offs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The optical design was optimized in silico (Zemax) for diffraction-limited performance (Strehl ratio >0.8) and high two-photon excitation efficiency (propagation time delay <50 fs rms) across the \u22055\u00d71 mm volume for 900-1070 nm wavelengths. Field curvature was limited to <160 \u03bcm. No stock lenses were used; custom modules have 5-6 elements each (RF objective: 5, pupil relays 1/2: 4 each, pupil relay 3: 6, imaging objective: 6). Optimization of PTD as a design criterion appears to be novel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C139 describe the optical design methodology and specifications. The optimization criteria (C127-C132) are appropriate for the application, with Strehl ratio being a standard metric and PTD optimization being a novel contribution (C133). The field curvature specification (C134) is validated by measurements in Figure 6. The element counts (C136-C139) are documented specifications. The design approach is well-justified and experimentally validated throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C32",
+      "C33",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Existing microscopy systems face fundamental trade-offs: high-resolution microscopes have small (<1 mm) fields of view and cannot simultaneously image multiple brain areas, while large FOV microscopes lack cellular resolution, especially axially. Prior large FOV 2-photon systems (Tsai et al.: 10 mm FOV, 14 \u03bcm axial; Stirman et al.: 3.5 mm FOV, 12 \u03bcm axial) have limited axial resolution that may conflate signals from multiple neurons, use slow galvo mirrors, lack rapid axial scanning, and are corrected for only single wavelengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C32-C33 describe established limitations in microscopy based on fundamental optical principles (knowledge). Claims C39-C45 accurately characterize prior work based on cited publications. These limitations provide appropriate context and motivation for the 2p-RAM development. The characterization of prior systems is factual and based on published specifications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C38",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C215"
+    ],
+    "result": "Fluorescence signal rate is fundamentally limited by maximum deliverable power (~200 mW in mouse brain due to heating). Given slow calcium dynamics, serial scanning with a single focus maximizes neuron sampling compared to multiplexed approaches. Faster scanning provides better temporal resolution, reduced photodamage, and enables tracking more neurons. Current rapid scanning methods (resonant mirrors, AODs) have limited angular range (~few degrees, several hundred \u03bcm scans). With optimization, the system could potentially track tens of thousands of neurons at 10 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 describe fundamental physical limitations with appropriate citation (C36). The serial scanning rationale (C38) is a logical inference based on the power constraint and calcium dynamics. The benefits of faster scanning (C60-C62) represent established knowledge. The limitations of current scanning technologies (C63-C64) are well-known. The projection for future performance (C215) is speculative but based on reasonable extrapolation from demonstrated capabilities. The reasoning is sound and appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C219",
+      "C220",
+      "C222"
+    ],
+    "result": "Even simple behaviors involve multiple, often non-contiguous brain regions. Standard microscopes cannot simultaneously track activity across these regions due to slow mechanical movement and FOV limitations. Understanding natural, variable behaviors requires single-trial analysis of large neuronal populations across multiple brain areas, which is limited by the number of neurons that can be recorded. Large numbers are critical for single-trial decoding of neural activity patterns during behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 describe the biological motivation with appropriate citations. Claims C219-C220, C222 articulate the scientific need for mesoscale recording systems, supported by citation (C220). These claims establish the biological and neuroscientific context for the technical development. The reasoning is sound and represents current understanding in systems neuroscience about the requirements for studying naturalistic behaviors.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1696 @@
+{
+  "submission": {
+    "id": "04fc558e-1495-473c-ac20-4a55ef8c9bb4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:09:15.660961Z",
+    "updated_at": "2025-11-30T00:09:15.660961Z"
+  },
+  "content": [
+    {
+      "id": "24664482-8261-4045-a336-880720db4f97",
+      "submission_id": "04fc558e-1495-473c-ac20-4a55ef8c9bb4",
+      "content_type": "manuscript",
+      "content_text": "# Sensory experience modifies feature map relationships in visual cortex\n\n## Authors\n\n- Shaun L Cloherty<sup>1</sup> ([ORCID: 0000-0002-7679-1764](https://orcid.org/0000-0002-7679-1764))\n- Nicholas J Hughes<sup>4</sup> ([ORCID: 0000-0003-1657-4378](https://orcid.org/0000-0003-1657-4378))\n- Markus A Hietanen<sup>1</sup>\n- Partha S Bhagavatula<sup>1</sup>\n- Geoffrey J Goodhill<sup>4</sup> ([ORCID: 0000-0001-9789-9355](https://orcid.org/0000-0001-9789-9355)) \u2020\n- Michael R Ibbotson<sup>1</sup> ([ORCID: 0000-0002-3803-6653](https://orcid.org/0000-0002-3803-6653)) \u2020\n\n### Affiliations\n\n1. National Vision Research Institute Australian College of Optometry Carlton Australia\n2. ARC Center of Excellence for Integrative Brain Function, Department of Optometry and Vision Sciences University of Melbourne Parkville Australia\n3. Department of Electrical and Electronic Engineering University of Melbourne Parkville Australia\n4. Queensland Brain Institute The University of Queensland St Lucia Australia\n5. School of Mathematics and Physics The University of Queensland St Lucia Australia\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe extent to which brain structure is influenced by sensory input during development is a critical but controversial question. A paradigmatic system for studying this is the mammalian visual cortex. Maps of orientation preference (OP) and ocular dominance (OD) in the primary visual cortex of ferrets, cats and monkeys can be individually changed by altered visual input. However, the spatial relationship between OP and OD maps has appeared immutable. Using a computational model we predicted that biasing the visual input to orthogonal orientation in the two eyes should cause a shift of OP pinwheels towards the border of OD columns. We then confirmed this prediction by rearing cats wearing orthogonally oriented cylindrical lenses over each eye. Thus, the spatial relationship between OP and OD maps can be modified by visual experience, revealing a previously unknown degree of brain plasticity in response to sensory input.\n\n## Introduction\n\nIn cats and monkeys neurons in the primary visual cortices are selective for both the orientation of the visual input (orientation preference, OP) and its eye of origin (ocular dominance, OD) (Hubel and Wiesel, 1977). These feature preferences are arranged spatially in the form of OP and OD maps, with stereotypical structure within each map, and strong spatial relationships between them (Blasdel and Salama, 1986; Bonhoeffer and Grinvald, 1991; Bartfeld and Grinvald, 1992; Obermayer and Blasdel, 1993; H\u00fcbener et al., 1997; Nauhaus et al., 2012). While some aspects of the structure of OD and OP maps individually are plastic in response to altered visual input, such as monocular deprivation (Hubel et al., 1977; Shatz and Stryker, 1978; Farley et al., 2007) or stripe rearing (Sengpiel et al., 1999; Tanaka et al., 2006), none of these manipulations has succeeded in modifying the overall spatial relationships between OD and OP maps, which have appeared immune from environmental influence. In particular OP map pinwheels, where domains representing all orientations meet at a point, always tend to lie close to the center of OD regions. This is true even after manipulations of the visual input such as rearing animals with artificially induced strabismus (Hubel and Wiesel, 1965; L\u00f6wel, 1994; L\u00f6wel et al., 1998) or monocular deprivation (Crair et al., 1997). However, whether this relationship is a fundamental aspect of map structure that is determined by innate mechanisms (Godecke and Bonhoeffer, 1996; Crair et al., 1998; Kaschube et al., 2002; Katz and Crowley, 2002; Tomita et al., 2013), and thus beyond the limits of brain plasticity, is unclear.\n\nComputational models of map formation based on Hebbian plasticity principles have played an important role in understanding the mechanisms governing visual development. In particular \u2018dimension reduction\u2019 models predict negative correlations between the local gradient magnitudes of different maps (Durbin and Mitchison, 1990; Swindale, 1996), thus explaining why pinwheels, which have a high orientation gradient, normally tend to lie near the centre of OD regions, where the ocularity gradient is small. However, such models also suggest that the spatial relationship between pinwheels and OD regions might be sensitive to visual experience (Giacomantonio et al., 2010). Here we used a computational model to predict how rearing animals with visual input biased to vertical orientations in one eye and horizontal orientations in the other eye (cross-rearing) would change these relationships. We then confirmed this prediction by raising cats with weak (-10 dioptre) cylindrical lenses placed in front of their eyes throughout the critical period. This demonstrates a form of plasticity in the relationships between visual feature maps that has not previously been observed.\n\n## Results\n\n### Computational prediction\n\nThe elastic net algorithm (Durbin and Mitchison, 1990) uses Hebbian learning to optimize a trade-off between coverage and continuity constraints, and can explain many aspects of visual map formation (Swindale, 1996; Goodhill, 2007). When simulating normal rearing (Erwin et al., 1995; Carreira-Perpinan and Goodhill, 2004; Carreira-Perpinan et al., 2005) this reproduces the experimental observations cited above that pinwheels tend to be located near the center of OD columns. However, previous simulations of map development (Giacomantonio et al., 2010) suggested that this relationship would be disrupted when horizontal orientations were over-represented in one eye and vertical orientations were over-represented in the other (Hirsch and Spinelli, 1970; 1971; Blakemore, 1976). Here we simulated this scenario using the elastic net algorithm to quantify further the degree to which the relationship between pinwheels and OD borders would change as a function of the strength of over-representation (see Materials and methods).\n\nTo measure the relationship of pinwheels to OD regions we separately divided the left and right eye regions of simulated OD maps into five equally sized bins, which represented areas of the OD map from the centres of the OD columns to the border regions, similarly to H\u00fcbener et al. (1997). As the strength of over-representation (\u03b1) increased, the histograms became increasingly biased away from the center of OD regions, indicating a shift in the relative location of pinwheels towards the OD borders (Figure 1). To determine whether this is due to the movement of pinwheels, OD borders, or both, we then fixed the random seed in the algorithm and explored how the spatial relationships changed within reproducible maps as a function of \u03b1. An example is shown in Figure 1g, from which it is clear that both pinwheel positions and OD borders move in the cross-reared case. The average distance that pinwheels move from their original (\u03b1 = 1) positions as a function of \u03b1 is shown in Figure 1h. Thus, in the model, cross-rearing alters the spatial relationship between pinwheels and OD borders by causing movement of both.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/13911/elife-13911-fig1-v1.jpg)\n\n**Figure 1.:** (a) Simulated orientation preference map (colours), orientation pinwheels (black dots), and ocular dominance borders (black lines) under normal rearing (relative strength of over-representation of horizontal and vertical contours in the input \u03b1 = 1). (b) Histogram of pinwheel locations relative to the OD borders under normal rearing, showing a preference for pinwheels located near the centre of OD regions as previously\u00a0observed experimentally. Error bars show \u00b1 1 SEM from 10 independent simulations. The dashed line shows the expected distribution if pinwheels were arranged randomly. (c) Simulated orientation preference map for the cross-reared condition (\u03b1 = 3). (d) Histogram of pinwheel locations relative to OD borders for this case. (e,f) Simulated orientation preference maps and corresponding histogram of pinwheel locations relative to OD borders for a higher level of cross-rearing (\u03b1 = 5). In the simulations of cross-rearing, pinwheels are shifted away from the centre and towards the border of OD regions. (g) A cropped region of a simulated OP and OD map produced with the same random seed but increasing strengths of over-representation. Circles show the location of a pinwheel and lines show the location of the adjacent OD border. Both the pinwheel and the OD border move under cross-rearing relative to their positions under normal rearing (\u03b1 = 1), but the distance between them decreases. (h) The average distance that pinwheels move from their original positions (measured in units of average OP map wavelength) as a function of the strength of cross-rearing. Errors bars show \u00b1 1 SEM across all pinwheels in the map. Scale bars in panels a, c, e and g indicate 15 pixels in the simulated feature maps. Source data for this figure are available in Figure 1\u2014source data 1.\n\nHowever, plasticity of this type has not yet been observed experimentally, leaving open the possibility that the relationship between pinwheels and OD columns could instead be determined by intrinsic mechanisms and is not susceptible to environmental modification.\n\n### Testing the prediction\n\nTo directly test these predictions we reared cats from 3 weeks of age with -10 dioptre cylindrical lenses mounted comfortably in front of their eyes using soft neoprene masks. The lens covering the left eye had its axis aligned vertically, so that the left eye was exposed to high contrast contours with primarily horizontal orientation. Conversely, the lens covering the right eye had its axis aligned horizontally, so that the right eye was exposed to high contrast contours with primarily vertical orientation (Figure 2). The lens strength was chosen based on preliminary observations that animals wearing -10 dioptre lenses exhibited normal behavioural activity, while animals with higher power lenses (e.g., as used in Tanaka et al. [2006]) were noticeably less active. Animals wore the masks for 6\u2009hr per day while the room was illuminated and were otherwise kept in darkness. During light periods the animals were monitored at least every 30 min to ensure the masks remained in place and to encourage active visual behaviours, such as chasing light patterns and balls. Paw striking behaviour towards objects in front of the animals appeared normal. From age 20 weeks we used intrinsic signal optical imaging followed by extracellular single unit recordings to map OP and OD preferences in cortical areas 17 and 18 of 5 cross-reared animals (10 hemispheres), and 6 normally reared control animals (11 hemispheres).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/13911/elife-13911-fig2-v1.jpg)\n\n**Figure 2.:** (a) Circular square wave test grating (1 cycle/\u00b0) viewed normally (no lens). (b) The same grating viewed through the -10 dioptre cylindrical lens, with the lens axis aligned horizontally, attenuating horizontal and preserving vertical contours. (c) The radially symmetric distribution of power over spatial frequency for the test grating viewed normally. (d) The radially asymmetric distribution of power over spatial frequency for the same grating when viewed through the -10 dioptre cylindrical lens with the lens axis aligned horizontally. Contours orthogonal to the axis are preserved while contours parallel to the axis are attenuated.\u00a0Power spectra shown in (c)\u00a0and\u00a0(d) are normalized to the peak power (black).\n\n### Cross-rearing alters tuning properties of single units\n\nWe recorded extracellular spiking responses to quantify the tuning properties of single units in both the normal and cross-reared animals. In the five cross-reared animals we recorded from 182 units from 20 electrode tracks, 76 with a preference for input from the right eye (which experienced predominantly vertical contours) and 106 with a preference for input from the left eye (which experienced predominantly horizontal contours). In the six control animals, we recorded from 86 units from 17 electrode tracks. Electrode tracks were positioned without reference to cortical map structure.\n\nConsistent with previous work (Coppola et al., 1998; Li et al., 2003) and theoretical predictions (Hunt et al., 2013), the distribution of preferred orientation for units from the control animals exhibited an over representation of the cardinal orientations (Figure 3a). This distribution was well described by a sine curve with period 90\u00ba (r2 = 0.69). In contrast, distributions of preferred orientation for units from the cross-reared animals showed clear biases depending on the eye providing the dominant input. Units with a preference for input from the left eye showed a bias for horizontal orientations (Figure 3b, black line), while those with a preference for input from the right eye showed a bias for near vertical orientations (Figure 3b, gray line). These distributions were consistent with the orientation of the lenses fitted over each eye and were well described by sine curves with period 180\u00ba (r2 = 0.75, left eye; r2 = 0.79, right eye). In contrast to the distribution from the control animals, sine curves with period 90\u00ba provided a relatively poor account of the data (r2 = 0.11, left eye; r2 = 0.03, right eye).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/13911/elife-13911-fig3-v1.jpg)\n\n**Figure 3.:** (a) The distribution of preferred orientation in control animals exhibited an over representation of cardinal orientations. The dashed line shows the expected distribution if all orientations were represented equally. The best-fitting sine curve with period 90\u00b0 had peaks at 84\u00b0 and 174\u00b0 (thick line, r2 = 0.69). (b) Distributions of preferred orientation in the cross-reared animals, for units driven predominantly by input from the left (black) and right eye (grey). The best-fitting sine curves with period 180\u00b0 peaked at 174\u00b0 for the left eye (thick black line, r2 = 0.75) and 104\u00b0 for the right eye (thick grey line, r2 = 0.79). Cross-rearing thus caused a systematic change in the distributions of preferred orientation of single units. Cross-rearing also caused an increase in monocularity (c) and an increase in preferred spatial frequency (d) of single units. Source data for this figure are available in Figure 3\u2014source data 1.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13911/elife-13911-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The mean inter-ocular difference in preferred orientation (\u0394OP) is significantly greater than 0 in both control (mean \u0394OP = 11.8\u00b0, p < 0.001, two-tailed t-test) and cross-reared animals (mean \u0394OP = 9.8\u00b0, p < 0.001, two-tailed t-test). The distributions of \u0394OP for single units from control and cross-reared animals are not significantly different (p = 0.44, two-tailed, two-sample t-test).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/13911/elife-13911-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The distributions of preferred temporal frequency for single units from control and cross-reared animals are not significantly different (p = 0.2, Kruskal-Wallis test).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/13911/elife-13911-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The distributions of semi-saturation contrast (\u03c3, see Equation 4) for single units from control and cross-reared animals are not significantly different (p = 0.81, Kruskal-Wallis test).\n\nWe also calculated the inter-ocular difference in preferred orientation, \u2206OP, for each unit as the preferred orientation for the right eye minus the preferred orientation for the left eye. Consistent with previous reports (Nelson et al., 1977; Cooper and Pettigrew, 1979) we found a torsional disparity in the preferred orientation of the two eyes in both our control (mean \u0394OP = 11.7\u00b0, p<0.001, two-tailed t-test) and cross-reared (mean \u0394OP = 9.8\u00b0, p<0.001, two-tailed t-test) animals. We found no significant difference in the distribution of \u0394OP for control and cross-reared animals (p=0.44, two-tailed, two-sample t-test; Figure 3\u2014figure supplement 1). Units from cross-reared animals showed a higher level of monocularity than those from control animals (Figure 3c). The median monocularity index (MI, see Material and methods) of units from control and cross-reared animals was 0.24 and 0.38, respectively. This difference was significant (p=0.002, Kruskal-Wallis test). Cross-rearing therefore appears to induce subtle changes in the combination of input from the two eyes at the level of single neurons.\n\nIn addition to each unit\u2019s ocular dominance and orientation preference, we also quantitatively measured their tuning for spatial and temporal frequency (See Materials\u00a0and\u00a0methods). We found no significant differences in the monocular spatial or temporal frequency tuning for dominant vs non-dominant eyes or for left vs right eyes (regardless of dominance) in either control or cross-reared animals (p>0.05, Kruskal-Wallis tests). We therefore combined the populations of left- and right-eye dominant units within the two experimental groups (i.e., control and cross-reared) and compared their tuning parameters for the dominant eye. Units from cross-reared animals exhibited marginally higher preferred spatial frequencies compared to those from control animals (median preferred spatial frequency 0.24 and 0.16 cycles/\u00b0 for cross-reared and control animals respectively; Figure 3d). While this difference was significant (p<0.001; Kruskal-Wallis test), the tuning curves were very broad and overlapped substantially. We found no difference in either the bandwidth (p=0.19; Kruskal-Wallis test) or skew (p=0.40; Kruskal-Wallis test) of the spatial frequency tuning curves for normal and cross-reared animals. Similarly, we found no significant difference in either the preferred temporal frequency (p=0.2, Kruskal-Wallis test; Figure 3\u2014figure supplement 2), the temporal frequency bandwidth (p=0.28, Kruskal-Wallis test) or the skew of the temporal frequency tuning curves (p=0.63, Kruskal-Wallis test) of units from control and cross-reared animals.\n\nUsing the optimal grating parameters (orientation, size, spatial and temporal frequency) for each unit we also measured their response as a function of stimulus contrast. We found no difference in either the maximum spike rate (p=0.56, Kruskal-Wallis test) or the semi-saturation contrast (p=0.81, Kruskal-Wallis test; Figure 3\u2014figure supplement 3) of units from control and cross-reared animals. Selectivity for stimulus parameters, responsiveness and sensitivity to stimulus contrast therefore appeared normal in the cross-reared animals.\n\n### Extended spatial decorrelation for intrinsic signal optical imaging\n\nWhile previous studies have usually used red light (wavelengths >600 nm) for intrinsic signal imaging, here we used green light (520 nm) due to the much higher signal to noise ratio obtained (Figure 4a). Conventional techniques for map generation from intrinsic signal imaging data are based on the calculation of difference images by either subtraction or division by a reference image that is independent of the stimulus of interest. We found that these techniques left strong blood vessel artifacts in the maps derived from green light data, particularly for ocular dominance maps. However we were able to overcome this problem by using extended spatial decorrelation (ESD), a more sophisticated analysis technique (Stetter et al., 2000) (see Materials and methods). This technique robustly separated the noise and mapping signals even in the green light data (Figure 4b\u2013d). Consistent with a brief earlier report (Frostig et al., 1990), by imaging one of our control animals with both green (520 nm) and red (609 nm) wavelengths we found that the maps produced were very similar (Figure 4e\u2013h). We also compared measures of orientation preference from the OP maps with corresponding measures obtained from single unit recordings from the superficial layers of the cortex at each electrode track location. Where we obtained robust estimates from both the imaging and unit recordings we found a high level of correlation between the two measures (r2 = 0.64, p=0.003) with a median absolute difference of 15.2\u00b0.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/13911/elife-13911-fig4-v1.jpg)\n\n**Figure 4.:** (a) Time course of the relative change in reflectance (\u2206R/R) during a trial, averaged over all pixels and all trials, measured with red (609 nm) and green (520 nm) light. The shaded region shows the stimulus period. Consistent with earlier reports (Sirotin and Das, 2009; Sirotin et al., 2009), green light produced a much stronger signal. (b\u2013d) Representative source coefficient time series from the extended spatial decorrelation algorithm (see Materials and methods). Sources 46\u201350 (as per legend) for (b) the real component of the OP map, (c) the imaginary component of the OP map, and (d) the OD map. The shaded region shows the stimulus period. The mean over the pre-stimulus period was subtracted from each source. It is clear in each case that one source (in this case source 50) most strongly represents the signal of interest. (e,f) OP maps generated from the green (e) and red (f) light responses. (g,h) OD maps generated from the green (g) and red (h) light responses. Over the region shown here (the one used for analysis), the correlation between red and green OP maps was r2 = 0.78 and between the red and green OD maps was r2 = 0.77. Colour encodes the preferred orientation in the OP maps (as per legend) and brightness encodes eye preference in the OD maps, with black and white representing the left and right eyes, respectively. Data from a control animal. Scale bars: 1 mm. Source data for this figure are available in Figure 4\u2014source data 1.\n\n### Cross-rearing alters the proportion of cortical area representing different orientations\n\nWe measured OP and OD maps in cortical areas 17 and 18 of both normal and cross-reared animals using intrinsic signal optical imaging (typical maps for each case are shown in Figure 5a\u2013f). Cross-rearing caused a very slight reduction in orientation selectivity, as derived from the OP maps (Figure 5\u2014figure supplement 1). Although the selectivity\u00a0distributions appear very similar, the difference was statistically significant (p<0.001, two-sample Kruskal-Wallis test). However cross-rearing induced profound changes in map structure. In control animals there was an over-representation of cardinal (horizontal and vertical) orientations in the OP map. This is consistent with the distribution of orientation preferences of single units described above, and with previous reports for ferrets (Coppola et al., 1998) and cats (Li et al., 2003). The proportion of the map devoted to different orientations was well fit by a sine curve with period 90\u00ba (r2 = 0.6; Figure 5g; Figure 5\u2014figure supplement 2). However, in the cross-reared animals the OP maps calculated for each eye showed proportions that were now better fit by sine curves with period 180\u00ba (r2 = 0.64, left eye; r2 = 0.71, right eye). In each case these curves peaked close to the orientation of the lens covering that eye (Figure 5h; Figure 5\u2014figure supplement 2). As a comparison, the best-fitting sine curves with period 90\u00ba had r2 values of 0.33 (left eye) and 0.13 (right eye). Thus, cross-rearing caused substantial shifts in the distribution of orientations across the cortex.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/13911/elife-13911-fig5-v1.jpg)\n\n**Figure 5.:** (a) OP map, (c) OD map and (e) overlay of OD and OP contours for a control cat. (b) OP map, (d) OD map and (f) overlay of OD and OP contours for a cross-reared cat. While qualitatively the control and cross-reared maps look similar, quantitative analysis revealed differences. (g) Proportion of cortical area representing different orientations from binocular stimulation for all control hemispheres (thin line: mean \u00b1 1 SEM, thick line: least-squares sine curve fit). The best-fitting sine curve with period 90\u00b0 had peaks at 7\u00b0 and 97\u00b0, and an r2 value of 0.6. For comparison the dashed line at a frequency of 1/8 represents equal proportions. (h) Data from left (thin black line) and right (thin grey line) monocular stimulation for all cross-reared hemispheres. The best-fitting sine curve with period 180\u00b0 peaked at 0\u00b0 for the left eye (horizontal orientations, thick black line) and 148\u00b0 for the right eye (vertical orientations, thick grey line). The r2 values for the fits were 0.64 (left eye) and 0.71 (right eye). In contrast the best-fitting sine curves with period 90\u00b0 (not shown) had r2 values of 0.33 (left eye) and 0.13 (right eye). Thus cross-rearing caused a systematic shift in the proportions of the maps occupied by each orientation, towards the orientation that each eye predominantly experienced. As in Figure 4, colour encodes the preferred orientation in the OP maps and brightness encodes eye preference in the OD maps. Scale bars: 1 mm. Source data for this figure are available in Figure 5\u2014source data 1.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13911/elife-13911-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The mean distributions of normalised orientation selectivity for all control and cross-reared hemispheres. Normalised orientation selectivity was calculated as the absolute value of each pixel in the OP map, normalised to the maximum selectivity value in each map separately. Cross-reared hemispheres have slightly lower median orientation selectivity (p<0.001, two-sample Kruskal-Wallis test). Although the difference is very small, it is statistically significant because each data point is derived from many hundreds of pixels. Error bars show \u00b1 1 SEM.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/13911/elife-13911-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (a) Proportion of cortical area representing different orientations from binocular stimulation for all control hemispheres (colored lines), their mean (thin black line), and the best fitting sine curve with period 90\u00b0 (thick black line). (b,c) Proportion of cortical area representing different orientations from monocular stimulation of the left and right eyes, respectively, for all cross-reared hemispheres (colored lines), their mean (thin black lines), and the best fitting sine curve with period 180\u00b0 (thick black lines).\n\n### Cross-rearing alters the spatial relationship between OP and OD maps\n\nThe characteristic relationships between OP and OD maps are intersection angles and the distance of pinwheels to OD borders. There was no statistically significant change in pinwheel density (Kaschube et al., 2010) between rearing conditions (Figure 6a). The distribution of intersection angles between OD and OP maps was also similar in both rearing conditions (Figure 6\u2014figure supplement 1). There were subtle changes in the spatial distribution of orientation selectivity: in control animals orientation selectivity was slightly greater near OD borders, while in cross-reared animals selectivity was slightly greater near the centre of OD regions (Figure 6\u2014figure supplement 2). However there was a clear effect on the distance of pinwheels to OD borders. In our control animals, the distribution of pinwheels relative to OD borders was very similar to that of H\u00fcbener et al. (1997) (Figure 6b) but in cross-reared animals there was a significant shift of pinwheels away from the centre of OD regions (Figure 6c). Specifically, there was a significant under representation of pinwheels in the bin corresponding to the centre of OD columns (p=0.01, two-tailed t-test, power = 0.77, 95% confidence interval for difference in means = [0.06, 0.36]), as predicted in our model simulations (Figure 6d). Thus, the altered visual input during cross-rearing changed a fundamental aspect of the spatial relationship between OP and OD maps. The similarity between the model prediction and our data provides further evidence that models based on dimension reduction, such as the elastic net, capture essential elements of the mechanisms by which cortical maps develop.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/13911/elife-13911-fig6-v1.jpg)\n\n**Figure 6.:** (a) Pinwheel density relative to squared map wavelength was not significantly different between control and cross-reared animals, both being consistent with the theoretically predicted value of \u03c0 (dashed line) (Kaschube et al., 2010). (b) Pinwheel locations relative to the centres/borders of OD regions were quantised into 5 bins similarly to H\u00fcbener et al. (1997). For control animals, pinwheels were disproportionately overrepresented at the centre of OD regions (n = 71 pinwheels total\u00a0in control hemispheres), consistent with previous data (H\u00fcbener et al., 1997). (c) In strong contrast, for the cross-reared animals pinwheels were disproportionately underrepresented at the centre of OD regions (n = 55 pinwheels total\u00a0in cross-reared hemispheres). (d) Computational simulations using the elastic net reproduced the shift of pinwheels away from the centres of OD regions in the cross-reared compared to control condition (data replotted from Figure 1b,f). For all graphs error bars show \u00b1 1 SEM. p-values in (a) and (c) are from two-tailed, two-sample t-tests. Source data for this figure are available in Figure 6\u2014source data 1.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13911/elife-13911-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) The distributions for control and cross-reared hemispheres are not significantly different (p = 0.36, two-sample Kruskal-Wallis test). For the quantification we used (see Materials and methods), the random distribution is a sine curve. (b) For comparison, the distributions for control and cross-reared hemispheres using the same quantification as in H\u00fcbener et al. (1997). Here, the random distribution is uniform. For these data we cannot say in either case that the distributions are non-random. Errors bars show \u00b1 1 SEM.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/13911/elife-13911-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** The mean, normalised orientation selectivity in each of the five ocular dominance bins used to quantify pinwheel location relative to ocular dominance borders (see Materials and methods), averaged over all hemispheres in each condition. In control animals, selectivity was higher near the OD borders. but in cross-reared animals selectivity was higher near OD centres. * denotes a significant difference between conditions (p < 0.001, two-tailed, two-sample t-tests). Error bars show \u00b1 1 SEM over all the pixels in each bin.\n\n## Discussion\n\nDespite the apparent robustness of the relationship between pinwheels and OD columns in earlier studies that have manipulated visual input, here we showed that this relationship could be altered by cross-rearing. We found consistent changes in cortical response properties from both our electrophysiology and optical imaging. Our findings agree with previous cell population surveys and imaging experiments on cats raised in environments with a single orientation (stripe-rearing) (Blakemore and Cooper, 1970; Sengpiel et al., 1999) or with orthogonal orientations presented to the left and right eye (Hirsch and Spinelli, 1970; Blakemore, 1976). These studies, like our own, revealed an over-representation of single units tuned to the orientation that matches the rearing conditions. Interestingly, we found no significant difference in \u0394OP \u2013 the inter-ocular difference in preferred orientation \u2013 of units from our control and cross-reared animals. This might seem surprising given the mismatched inputs in the cross-reared animals. However, previous work using much stronger orientation biases found that cells tend to become monocular rather than maintain large \u0394OP values (Hirsch and Spinelli, 1970; 1971; Blakemore, 1976). Consistent with these earlier reports, we observed an increase in the monocularity of units from our cross-reared animals compared to the controls (median monocularity index, MI, of 0.38 versus 0.24 for the cross-reared and control animals, respectively). However, only about 10% of single units in our cross-reared animals were monocular, suggesting that relatively normal binocular summation developed in these animals. This is consistent with the relatively low power lenses that we used during rearing (-10 dioptres), compared to the higher power lenses used by others (67 dioptres, cats, Tanaka et al. (2006); 167 dioptres, mice, Kreile et al. (2011)). Evidently, cortical neurons in our cross-reared animals retained access to a sufficiently broad range of orientations to form fused binocular images during development. Similarly, units from our cross-reared animals generated similar maximum spike rates and had indistinguishable contrast sensitivity to the control animals, again suggesting that the lenses had little impact on basic visual processing.\n\nA theoretical prediction based on symmetry principles was that pinwheels move during normal development and annihilate in pairs (Wolf and Geisel, 1998), leading to a final pinwheel density relative to map wavelength of \u03c0 (Kaschube et al., 2010). However chronic imaging experiments have suggested that, with normal visual input, the positions of pinwheels do not move from the positions at which they are first observed during development (Chapman et al., 1996; Crair et al., 1998). In adult cats, chronic imaging of OP maps in response to spatially synchronous cortical activity induced by intracortical electrical microstimulation has shown substantial rearrangement of pinwheel positions (Godde et al., 2002). However, our results reveal for the first time that pinwheels can be repositioned relative to OD columns purely by abnormal sensory input.\n\nIn simulations of normal rearing, pinwheels form near the centre of OD columns to provide good coverage (Figure 1a,b): the gradient of OP is highest where the gradient of OD is lowest. However in the cross-reared case the over-represented orientations are the first to appear in the cortex, aligned with the initial formation of OD columns (Giacomantonio et al., 2010). The representation of other orientations then forms around this initial configuration, and thus pinwheels are pushed away from the centre of the OD regions, which are dominated by the over-represented orientations (Figure 1c\u2013f). In the model, movement of both pinwheels and OD borders contribute to the change in their spatial relationship; however we cannot directly assess whether this is also true in our experimental data.\n\nThe degree of plasticity of the tuning of V1 neurons depends on their position in the OP map, in particular whether they lie close to a pinwheel or in an iso-orientation domain (i.e. depending on the spatial gradient of OP). However, the direction of this dependence is controversial: while Dragoi et al. (2001) reported greater plasticity of tuning curves at pinwheels in response to an adapting visual input, Schuett et al. (2001) found less plasticity at pinwheels in response to pairing a visual stimulus at a particular orientation with direct cortical electrical stimulation. It would be interesting to perform cortical microstimulation studies in cross-reared animals, to determine whether the plasticity of pinwheels that have been repositioned away from the center of OD regions is the same as unperturbed pinwheels in normally reared animals.\n\nFrom a methodological perspective, we found that blood vessel artefacts common in intrinsic signal imaging of cortex with green light can be overcome by using more statistically sophisticated analysis techniques than are typically employed. Changes in cortical reflectance of green wavelengths are believed to indicate changes in blood volume, while those at longer (red) wavelength primarily indicate changes in blood oxygenation (Sirotin and Das, 2009; Sirotin et al., 2009). Several previous studies have employed shorter wavelengths for intrinsic signal imaging (Spitzer et al., 2001; Versnel et al., 2002; Sirotin and Das, 2009; Sirotin et al., 2009) and our results suggest that this does not strongly affect the resulting maps, provided appropriate analysis techniques are used (Figure 4).\n\nNotably, the strength of the lenses worn by our cross-reared animals (-10 dioptres) was considerably less than that in recent stripe rearing studies in cats (67 dioptres) (Tanaka et al., 2006) and mice (167 dioptres) (Kreile et al., 2011). This was motivated by our preliminary observations that weak lenses were required to avoid obvious behavioural changes in the kittens. The relatively low power of the lenses in our experiment suggests sensitivity of visual cortical structure to relatively small variations in sensory input. This raises the intriguing possibility that a component of the large variability in visual map structure between individuals, seen in cats (Kaschube et al., 2002) and humans (Adams et al., 2007), could be partly due to individual variations in visual experience (astigmatism, the closest analogy to rearing with cylindrical lenses in humans, has been reported with powers of up to 6 dioptres [Mitchell et al., 1973]). More generally, our results redefine the limits of cortical plasticity, and emphasize the importance of appropriate patterns of sensory stimulation during critical periods for normal brain development.\n\n## Materials and methods\n\nAll experimental and surgical procedures were approved by the Animal Ethics Committee at the University of Melbourne and were performed in compliance with the Australian Code of Practice for the Care and Use of Animals for Scientific Purposes from the National Health and Medical Research Council of Australia.\n\n### Cat rearing\n\nFive animals wore -10 dioptre cylindrical plano-concave lenses mounted in soft neoprene rubber masks (Dzioba et al., 1986). The lenses were fitted to the masks with the planar surface facing towards the cat\u2019s eyes. The axis of the cylindrical component for the left eye was vertical and for the right eye was horizontal. Figure 2a shows a pattern of concentric circles (spatial frequency 1 cycle/\u00b0). Figure 2b shows the same pattern viewed through a -10 dioptre cylindrical lens with its axis oriented horizontally. Both images were captured using a Nikon D90 DSLR camera fitted with a Nikkor 50\u2009mm f/1.2 lens. The cylindrical lens compresses the image along the direction orthogonal to its cylindrical axis. Figures 2c and d show the distribution of power over spatial frequency for images of the test pattern viewed normally (Figure 2c) and viewed through the -10 dioptre cylindrical lens (Figure 2d).\n\nAnimals were housed indoors in windowless rooms measuring 2.5\u2009m \u00d7 3.0\u2009m. Cross-reared animals wore the masks for 6\u2009hr each day from 3 weeks of age. For the remaining 18\u2009hr each day (i.e., when not wearing the masks) the room lights were extinguished. We took special care to eliminate any stray light entering the room around the doorframe. Six control animals (i.e., not cross-reared) were housed under identical conditions, subject to the same 6:18\u2009hr light:dark cycle. The walls of the rooms housing both control and cross-reared animals were covered with wallpaper consisting of high-contrast images containing all orientations.\n\n### Anaesthesia and surgical procedures\n\nWe performed optical intrinsic signal imaging of primary visual cortex in eleven adult cats (3.3\u20133.8\u2009kg; 6 control, 5 cross-reared). Animals were prepared for acute physiological recordings as described previously (van Kleef et al., 2010). Animals were anaesthetised by intramuscular injection of ketamine hydrochloride (10 mg.kg-1) and medetomidine (15\u2009\u03bcg.kg-1). Once deeply anaesthetised, as confirmed by the absence of corneal and toe withdrawal reflexes, animals were placed on a heated surgery table and intubated to ensure adequate respiration. Anaesthesia was then maintained for the remainder of the surgery by inhalation of gaseous isofluorane (0.7\u20131.0% in O2).\n\nTo ensure that adequate levels of oxygenation and anaesthesia were maintained at all times (during surgery and throughout the remainder of the experiment), animals were immediately instrumented to allow continuous monitoring of non-invasive physiological indicators, including heart rate and saturation of peripheral oxygen (SpO2), blood pressure, the\u00a0electroencephalogram (EEG) and end-tidal CO2 concentration. The EEG was sampled continuously at 256\u2009Hz and Fourier analysis was performed within a sliding window 30\u2009s in duration. The depth of anaesthesia was considered adequate when the power in the EEG was concentrated in the delta band (<4\u2009Hz) and no change in power distribution was observed in response to noxious stimuli. An increase in power in the EEG at frequencies >8\u2009Hz was interpreted as a sign the depth of anaesthesia may be inadequate. If at any stage the depth of anaesthesia was deemed to be inadequate the concentration of the anaesthetic agent was increased.\n\nThe cephalic vein was cannulated to permit delivery of fluids and intravenous drugs. Animals were then transferred to a stereotaxic frame and the head fixed using ear bars, a bite bar and a screw placed on the skull at the midline 30\u2009mm anterior to inter-aural zero. Body temperature was maintained at 37.7\u00b0C by means of an electric blanket under feedback control.\n\nA craniotomy (10\u2009mm\u00a0\u00d7\u00a015\u2009mm; A4 to P6) was made spanning the midline to expose primary visual cortex (Areas 17 and 18) in both hemispheres. A stainless steel chamber was fixed to the cranium with dental acrylic. The dura mater was removed and the recording chamber filled with silicone oil (Dow Corning 200, 50 cSt) and sealed with a glass cover slip.\n\nTo prevent eye movements during recording, animals were subject to neuro-muscular blockade by continuous intravenous infusion of vecuronium bromide (0.1 mg.kg-1.h-1). During neuro-muscular blockade animals were mechanically ventilated to maintain end-tidal CO2 between 3.5 and 4%. For fluid replacement all animals received a constant intravenous infusion of Hartmann\u2019s solution (25% by volume), 5% glucose in 0.9% NaCl solution (25% by volume) and a 10% amino acid solution (Synthamine-17; 50% by volume) at a rate of 2.5\u2009mL.kg-1.h-1. Animals also received daily injections of atropine (0.05 mg.kg-1; s.c.) to reduce salivation, dexamethasone phosphate (1.5 mg.kg-1; i.m.) to reduce cerebral oedema, and a broad-spectrum antibiotic (Clavulox; 0.2\u2009mL.kg-1; i.m.) to prevent infection.\n\nTo prevent desiccation of the corneas the eyes were fitted with neutral power rigid gas-permeable contact lenses. Refractive errors were assessed by reverse ophthalmoscopy and corrected as required using spherical lenses placed in front of the eyes to focus the stimulus on the retina. Eye drops (1% atropine sulphate; 10% phenylephrine hydrochloride) were administered daily to cause dilation of the pupils and retraction of the nictitating membranes.\n\nAfter surgery and for the remainder of the experiment, anaesthesia was maintained by inhalation of gaseous halothane (0.5\u20131.0%) in a 60:40 mixture of N2O and O2. At the conclusion of the experiment animals were euthanized by intravenous injection of an overdose of barbiturate (sodium pentobarbital; 150 mg.kg-1).\n\n### Visual stimuli\n\nVisual stimuli were generated by a ViSaGe visual stimulus generator (Cambridge Research Systems Ltd., Cambridge, UK) and displayed on a calibrated Clinton Monoray CRT monitor (modified Richardson Electronics MR2000HB-MED CRT with fast DP104 phosphor, 100\u2009Hz refresh, resolution 1024\u00a0\u00d7\u00a0768 pixels) viewed binocularly or monocularly from a distance of 28 cm.\n\nFor imaging, stimuli consisted of luminance defined oriented square wave gratings presented within a circular aperture (diameter 60\u00b0) on an isoluminant grey background matched to the mean luminance of the gratings. Orientation preference maps were obtained by recording responses to presentation of high contrast (Michelson contrast, 100%) gratings (0.15 cycles per degree) drifting (temporal frequency 2\u2009Hz) in one of 16 directions equally spaced between 0\u00b0 and 360\u00b0. Each stimulus direction, together with a blank condition (no grating), was presented at least 30 times with the order of presentation randomised across trials.\n\nFor single unit recordings, stimuli consisted of patches of sine wave gratings presented within a circular aperture on an isoluminant grey background matched to the mean lumunance of the gratings. For each recorded unit we systematically identified optimal grating parameters (orientation, direction of motion, spatial and temporal frequency, size and position) for stimuli presented monocularly to the right and left eye.\n\n### Intrinsic signal optical imaging\n\nThe exposed cortex was imaged using a Pantera 1M60P high-sensitivity 12-bit area scan CCD camera (Teledyne DALSA, Waterloo, ON Canada) fitted with a macroscope consisting of a pair of Nikkor 50\u2009mm f/1.2 lenses (Ratzlaff and Grinvald, 1991). The focal plane was positioned 500\u2009\u03bcm below the cortical surface, determined by focusing on the surface vasculature and then lowering the camera by way of a micromanipulator. The camera was configured to bin sensor pixels 2\u00d72 producing images with a resolution of 512\u00a0\u00d7\u00a0512 pixels (each pixel being 24\u2009\u03bcm square). Image acquisition was restricted to a region of interest comprising a subset of the full imaging frame.\n\nDuring imaging, the cortex was epi-illuminated using a custom built LED light source with a peak wavelength of 520 nm (Agilent Technologies; HSMQ-C150). Local increases in cerebral blood flow, indicative of neural activity, caused a reduction in cortical reflectance and a corresponding reduction in the resulting image intensity. Cortical responses were imaged during presentation of an ensemble of visual stimuli (gratings, described above). For each stimulus presentation images were acquired continuously at a rate of 5\u2009Hz for a period of 10\u2009s, the onset of which was synchronized to the phase (maximum inspiration) of the respirator. Visual stimuli were presented for 5\u2009s beginning 2\u2009s after the beginning of image acquisition. Each stimulus presentation was followed by a recovery period (minimum duration 3\u2009s) during which the stimulus monitor displayed an isoluminant gray screen, the luminance of which was matched to the mean luminance of the gratings.\n\n### Map generation\n\nAll data processing and analyses were conducted using MATLAB. MATLAB code for map pre-processing, generation and analysis is available at https://github.com/nickjhughes/feature-map-stats. Each raw image encompassed both hemispheres, and was cropped to two rectangular regions, one covering the exposed region of areas 17 and 18 in each hemisphere. In cats, both areas 17 and 18 receive direct input from the dorsal lateral geniculate nucleus and are therefore both primary visual cortex (Payne and Peters, 2001). The remaining analyses were performed on each hemisphere separately, hereafter a \u2018dataset.\u2019 All of the images in each dataset were then spatially aligned. The first image in the dataset was arbitrarily chosen as the reference frame, and every other image was translated to maximise the linear correlation between it and the reference frame. Trials from opposite directions of stimulus motion were pooled, and then all trials for each stimulus condition for each dataset were pixel-wise averaged, resulting in 50 imaging frames for each of 8 stimulus orientations (0\u00b0, 22.5\u00b0, \u2026, 157.5\u00b0), for both eyes. Each of these frames was then high-pass Gaussian filtered (\u03c3 = 20 pixels = 480\u2009\u03bcm) to remove large scale changes in illumination across the images, and low-pass Gaussian filtered (\u03c3 = 2 pixels = 48\u2009\u03bcm) to satisfy the requirement of the extended spatial decorrelation method (see below) that the sources be smooth. Image frames were zero-padded prior to filtering. This had no effect on the map regions subsequently analysed since they were sufficiently far from the edges of the frames. The sign of the values in all images were then reversed, as a decrease in reflectance indicates an increase in neural activity.\n\nTo generate feature maps from the data we initially tried vector-averaging methods typically used for red-light data (H\u00fcbener et al., 1997). While these produced OP maps similar to those we subsequently produced using the extended spatial decorrelation (ESD) method of Stetter et al. (2000) (see below), the OD maps produced were compromised by blood vessel artefacts. We therefore employed the ESD method for our analysis as follows. Each map (i.e., the two vector components of the orientation preference (OP) map and the ocular dominance (OD) map) was constructed by combining the responses to the appropriate stimulus conditions. Let $R_{\\theta,L}$ be the overall average response to orientation \u03b8 produced by the left eye, and similarly for the right eye:\n\n$$\nreal(OP)=\\sum\\theta0.5(R_{\\theta,L}+R_{\\theta,R})cos(2\\theta)imag(OP)=\\sum\\theta0.5(R_{\\theta,L}+R_{\\theta,R})sin(2\\theta)OD=\\sum\\thetaR_{\\theta,R}\u2212\\sum\\thetaR_{\\theta,L}\n$$\n\nwhere \u03b8 values in the sum were 0\u00b0, 22.5\u00b0, \u2026, 157.5\u00b0. Monocular OP maps were generated similarly, except that only the left or right eye response was considered, rather than the average of the two.\n\nFollowing the process described by Stetter et al. (2000), these maps were generated using each of the 50 imaging frames separately, resulting in maps that consisted of 50 frames. The frames of each map were first decorrelated from each other using principal component analysis (i.e., each frame\u2019s variance was made equal to 1 and the covariance, between frames, was made equal to 0). Single-shift ESD was then performed on each map using a shift of \u0394r = (5,5) pixels, resulting in 50 sources. The particular shift chosen had no appreciable difference on the resulting maps. The time series of the coefficients of each source were used to choose which of the 50 sources corresponded to the feature map in each case. The source chosen was the one with the coefficient time series that most closely matched that of the typical intrinsic signal optical imaging response (i.e., a rise at the time of stimulus onset, up to a maximal value by the time the stimulus was turned off). The correct source was obvious in most cases (for an example see Figures 4b\u2013d). In some cases, the correct source was chosen by looking at which source had both a response with the same spatial extent as the corresponding OP map and an appropriate coefficient time series. Each frame of the chosen source was then multiplied by its corresponding coefficient, and the feature map was defined as the average over frames 31 to 35 (i.e., the final 5 stimulus frames). Finally, each map was low-pass Gaussian filtered (\u03c3 = 12 pixels = 288\u2009\u03bcm). These filter parameters were chosen to remove any remaining high-frequency noise (due to remaining blood vessel artifacts) while minimising spatial distortion of the resulting feature maps.\n\n### Map analyses\n\nOnly areas inside masks were used in the following analyses. Each analysis mask was defined as the area within the anatomical boundaries of area 17/18, with any areas without strong orientation preference removed. All of the above processing was performed prior to this masking.\n\nFor a binocular or monocular orientation map, orientation distributions were generated as follows. Each pixel was binned into 22.5\u00b0 wide orientation preference bins centred on 11.25\u00b0, 33.75\u00b0, \u2026, 168.75\u00b0, according to its preferred orientation. These bins were used to generate a histogram, which we refer to as the orientation distribution. Sine curves were fit to the mean of the histograms for a particular condition (binocular orientation maps from control cats, and left and right monocular orientation maps from cross-reared cats) using least-squares estimation. The period was set to 90\u00b0 for control maps, and 180\u00b0 for cross-reared maps, matching the clear and expected periodicity of the data. Fits to the cross-reared maps of sine curves with period 90\u00b0 were also performed for comparison. The estimated value of the phase of the sine curve was then used to determine the location of the maxima. The quality of the fits was assessed using r2, the square of the correlation coefficient of the data and the fitted function.\n\nTo calculate the crossing angle distributions, the zero-level contour of the OD map was calculated, as were the 0\u00b0, 22.5\u00b0, \u2026, 157.5\u00b0 contours of the OP map, and the angle between the OD and OP contours at all points of intersection were calculated. The angle was defined as the difference between the orientations of the tangents of the two contours at the intersection point. The distributions of these angles were calculated for all orientation maps. We compared these between rearing conditions, and also against the expected distribution for unrelated maps, which follows a sine curve (Morton, 1966).\n\nPinwheel locations were defined in orientation maps as described previously (Carreira-Perpinan et al., 2005): an integral of orientation preference was calculated along a closed path of radius 1 pixel around each pixel, and the pixel was defined as a pinwheel if the integral was \u00b1 180\u00b0. For eight-connected clusters of such pixels, the cluster's centre of mass was defined as the pinwheel location. Pinwheel density was calculated as described previously (Kaschube et al., 2010): the number of pinwheels per pixel multiplied by the square of the map wavelength. The wavelength was defined as the mean Fourier wavelength of the map averaged over all directions.\n\nTo measure the relationship between the location of pinwheels and the OD domains we used the metric described by H\u00fcbener et al. (1997) with a slight modification. The positive and negative values in each OD map were separately binned into 5 equally sized regions, corresponding to values ranging from the centres to the borders of the OD columns, and the bin corresponding to each pinwheel was calculated. The bins corresponding to both the positive and negative sections were pooled, leaving 5 bins corresponding to values from the centre to the border of the OD columns. Thus, the centre of the OD column falls into the bin below the 20th percentile and the border region into the bin above the 80th percentile. This metric differs slightly from that used by H\u00fcbener et al. (1997) in that it considers the regions on either side of 0 separately, rather than binning all the values into 10 equal bins. This modification respects OD borders and takes into account contralateral bias in the OD map.\n\n### Computational modeling\n\nElastic net simulations were performed as described previously (Carreira-Perpinan et al., 2005; Giacomantonio et al., 2010). A MATLAB implementation of the elastic net algorithm is available at http://faculty.ucmerced.edu/mcarreira-perpinan/research/EN.html. Parameters for our simulations were as follows. Feature dimensions: 20\u00d720 spatial positions in a square array in a unit square, 2 OD values of -0.05 and 0.05 and 6 OP values of radius 0.08 for each spatial position, giving 4800 feature points in total. Cortical array: 128\u00d7128 with non-periodic boundary conditions, \u03b1 (weighting of coverage term) = 1 for non-overrepresented orientations, \u03b1 > 1 for the overrepresented orientation in each eye, and \u03b2 (weighting of continuity term) = 10. Initial value of annealing parameter K = 0.2, multiplied by 0.9925 at each iteration. Simulations (n = 10 per condition) were terminated at K = 0.0358, shortly after the OD and OP maps had formed. The only difference in parameters between simulations of the control and cross-reared conditions were the values of \u03b1.\n\n### Single unit recording\n\nAfter intrinsic signal imaging, extracellular signals from single units were acquired using gold or platinum tipped, lacquer coated tungsten microelectrodes (FHC, Bowdoin, ME USA). The extracellular potential was amplified, band-pass filtered (300\u2009Hz \u2013 5 kHz) and then sampled at 40 kHz using a 1401Plus and Spike2 software (Cambridge Electronic Designs, Cambridge, UK). After isolating a single unit (based on the size and shape of the extracellular spike waveform) the approximate size and location of the receptive fields for the right and left eye were mapped using hand-driven bright or dark bars projected onto a tangent screen. The size and location of the receptive fields together with the unit\u2019s tuning for direction, spatial and temporal frequency, and it\u2019s sensitivity to stimulus contrast were then determined quantitatively using circular patches of sine wave gratings under the control of the stimulus computer. The receptive fields of all recorded units were located within 10\u00b0 of the area centralis.\n\n### Analysis of single unit responses\n\n#### Analysis of orientation tuning\n\nTo quantify the orientation preference and selectivity of each unit we measured responses to 100% contrast drifting sine wave gratings of the preferred spatial and temporal frequency, presented at the optimal size and location, drifting in each of 16 directions equally spaced between 0 and 360\u00b0. Responses to opposite directions were averaged together and the set of responses, $R(\\theta)$, for orientations (\u03b8) between 0 and 180\u00b0 were fit with a von Mises function defined as follows:\n\n$$\nR(\\theta)=\u00a0R_{p}exp(k(cos(2(\\theta\u2212\\theta_{p}))\u22121))+R_{0}\n$$\n\nwhere $R_{p}$ denotes the response at the preferred orientation, $\\theta_{p}$, R0 denotes the spontaneous baseline, and $k$ denotes a width parameter from which we calculated the orientation tuning bandwidth. Across all units the goodness of fit, r2, of Equation 2 to the data formed a distribution with a mean of 0.88 and median of 0.93.\n\n#### Analysis of spatial frequency tuning\n\nTo quantify the preferred spatial frequency and the spatial frequency tuning bandwidth we measured responses to 100% contrast drifting sine wave gratings of the preferred orientation, presented at the optimal size and location, with a range of frequencies (f) from 0.05 to 1.6 cycles per degree. The responses, $R(f)$, were fit with a skewed Gaussian function defined as follows:\n\n$$\nR(f)=\u00a0R_{p}exp(\u2212(\\frac{log\u2061(\\frac{f}{f_{p}})}{k+\\lambdalog\u2061(\\frac{f}{f_{p}})})^{2})+R_{0}\n$$\n\nwhere $R_{p}$ denotes the maximal response at the preferred frequency, $f_{p}$, $k$ controls the tuning bandwidth, $\\lambda$ controls the skew of the tuning curve and $R_{0}$ denotes the spontaneous baseline. Across all units, the goodness of fit, r2, of Equation 3 to the spatial frequency tuning data formed a distribution with a mean of 0.89 and a median of 0.96.\n\n#### Analysis of temporal frequency tuning\n\nTo quantify the preferred temporal frequency and temporal frequency tuning bandwidth we measured responses to 100% contrast drifting sine wave gratings of the preferred orientation and spatial frequency, presented at the optimal size and location, with a range of temporal frequencies from 0.25 to 24\u2009Hz. As for the analysis of spatial frequency tuning, the responses over the full range of temporal frequencies were fit with a skewed Gaussian function as defined in Equation 3 (with f denoting temporal rather than spatial frequency). Across all units, the goodness of fit, r2, of Equation 3 to the temporal frequency tuning data formed a distribution with a mean of 0.86 and a median of 0.93.\n\n#### Analysis of contrast sensitivity\n\nTo quantify the contrast sensitivity of each unit we measured responses to optimal drifting sine wave gratings presented at Michelson contrasts (c) ranging from 1 to 100%. The set of responses, $R(c)$, were fit with a sigmoid function defined as follows:\n\n$$\nR(c)=R_{m}\\frac{c^{n}}{c^{n}+\u00a0\\sigma^{n}}+R_{0}\n$$\n\nwhere $R_{m}$ denotes the maximal saturated response above the spontaneous baseline, $R_{0}$, n is an exponent that determines the slope of the curve, and \u03c3 is the semi-saturation contrast, corresponding to the stimulus contrast at which the response equals half $R_{m}$. Across all units the goodness of fit, r2, of Equation 4 to the data formed a distribution with a mean of 0.9 and median of 0.96. Units that did not show response saturation at higher contrasts were excluded from the analysis.\n\n#### Analysis of ocular dominance\n\nTo quantify the ocular dominance of each unit we computed a monocularity index, defined as follows:\n\n$$\nMI=\\frac{|R_{R}\u2212R_{L}|}{R_{R}+R_{L}}\n$$\n\nwhere $R_{R}$ and $R_{L}$ denote the response to a patch of the optimal sine wave grating presented monocularly to the right and left eye, respectively.\n",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "4a0b3696-c437-4a41-8654-e671acf1f248",
+      "submission_id": "04fc558e-1495-473c-ac20-4a55ef8c9bb4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mark CW van Rossum, University of Edinburgh , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.13911.022](https://doi.org/10.7554/eLife.13911.022)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Sensory experience modifies feature map relationships in visual cortex\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and David Van Essen as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis paper reports that the relationship between pinwheel position and ocular dominance column boundaries changes in cross-orientation reared cats. Notably, the pinwheels are less concentrated in the centers of the ocular dominance stripes than they are in normal control animals. This result is most clearly documented in Figure 6C. The experimental findings are novel and it is also of interest that it is predicted by dimension-reduction models of visual cortex development, notably in prior work by Giacomantonio et al. (2010). Overall the paper adds an interesting new finding to the literature on cortical map plasticity; it also adds usefully to the literature on stripe-rearing experiments in cats which is not extensive, though it has a long and somewhat controversial history.\n\nEssential revisions:\n\n1) Figure 1 shows simulation results with pinwheel positions (black dots) and OD borders (black lines). The positions of the black dots do not seem to correspond at all to the pinwheel locations in panels a), c) or e). There are pinwheels without black dots, and vice versa. I would assume this is a mistake made in preparing the figure. However, in panel e) it is visually very obvious that the pinwheel positions are almost always very close to an OD border. This seems at odds with the histogram in panel f) which shows a rather weak tendency for them to be about halfway between the OD centers and the edges. I might be wrong about this, but it does make me worry that something more serious has gone wrong with the analysis.\n\n2) The authors acknowledge (Discussion, third paragraph) that the experimental results may reflect either pinwheel movement or OD boundary movement (both is clearly also a possibility). However, the results are generally presented as suggesting that it is the pinwheels that move (e.g. Discussion, second paragraph). The authors might try to come up with evidence that pinwheel statistics are different in the cross-reared animals, or some other kind of evidence that might point specifically to pinwheel movement. In the absence of it, I think the paper should be careful to be clear about the ambiguity: it is a slightly less interesting result if it is mainly due to OD border movement. It is also relevant because cross-orientation rearing was thought by Hubel and Wiesel and others to cause selective monocular deprivation rather than to modify orientation preference per se. Arguments against that view might usefully be made in the paper. I presume that the model really does show a shift of pinwheel positions \u2013 that might be made clear, if so.\n\n3) The eyes of cats rotate (cyclotorsion) by a few degrees under anesthesia \u2013 (e.g. Cooper and Pettigrew, 1979, J. Comp. Neurol., 184, 1-26) resulting in a roughly 15 deg difference between the two eyes. Though this is fairly small in relation to the effects seen here I think it would be worth correcting for. In particular, it ought to be manifest in the data on inter-ocular orientation differences (referred to in the manuscript but values not given). A figure showing the raw data (perhaps in the Supplementary figures) would be useful as well as some actual numbers on, or around, in the third paragraph of the subsection \u201c2Cross-rearing alters tuning properties of single cells\u201d.\n\n4) Although the signal is stronger with green imaging, and blood vessels can be removed, I presume the vessels still obscure or distort the optical signals from the tissue underneath in a way that does not happen with red light. So there may still be some disadvantage to green imaging. I was also concerned that the difference between Figure 4E and 4F (green vs. red imaging results) was quite large and especially that many fewer pinwheels were visible with green imaging. This must surely have some effect on the analyses, though what might be hard to say.\n\n5) Related to the previous point, I was also concerned about the large size of the low pass filter employed (at the end of the subsection \u201cMap generation\u201d: 288 microns, or 12 pixels). This will surely remove real structure from the maps, not just noise. Was such severe smoothing really necessary? What do the results look like if you omit this smoothing? I would strongly suggest re-doing the analyses with much less smoothing \u2013 even though I know it would probably be a lot of work.\n\n6) Figure 6\u2014figure supplement 1. Buried away here is what seems like an unfortunate finding that intersection angles between OD and OP contours in the experimental animals appear to be random (as well as being the same in the control and experimental groups) inasmuch as the distributions follow the sine function predicted for random curves (Morton, 1966). However, in Hubener et al. (1997) the distribution functions for border intersection angles in unrelated maps were essentially flat (see Figure 5 in that paper). Who is wrong, Morton or Hubener et al.? Are the results in Figure 6\u2014figure supplement 1 actually consistent with those of Hubener et al.?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Sensory experience modifies feature map relationships in visual cortex\" for further consideration at eLife. Your revised article has been favorably evaluated by David Van Essen (Senior editor), a Reviewing editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nReviewer #1:\n\nThe authors have responded substantively to my comments. However, the newly added Figure 1G appears to be lacking axes. As far as I could tell this was not a local pdf rendering problem.\n\nReviewer #2:\n\nMy main point concerned Figure 1.\n\nFor the first figure, it seems indeed that a reflexion of the pinwheel locations along the anti-diagonal produces the new plot. I am now more convinced that the data analysis is correct for this figure.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nWhile we are almost there, I agree as editor that Figure 1G can be improved.\n\nPart of the confusion might be that on first sight it is unclear whether this is a spatial plot or some random curve.\n\nA scale bar without units but also present in panel a-c would solve this.\n\nPerhaps it is even possible to indicate the zoom region in panel a-c.\n\nIn addition, is Figure 2 missing the a and b labels (c and d are fine)?\n",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "4f52b928-9b76-478a-9175-9d644f8a733c",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C1",
+      "claim": "Maps of orientation preference (OP) and ocular dominance (OD) in the primary visual cortex of ferrets, cats and monkeys can be individually changed by altered visual input.",
+      "claim_type": "EXPLICIT",
+      "source": "Maps of orientation preference (OP) and ocular dominance (OD) in the primary visual cortex of ferrets, cats and monkeys can be individually changed by altered visual input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research on visual cortex plasticity.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "8f0911f3-e16b-4811-bb4c-e843ff34dd49",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C2",
+      "claim": "The spatial relationship between OP and OD maps has appeared immutable.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the spatial relationship between OP and OD maps has appeared immutable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on prior research findings and established knowledge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "6ace3fcb-6353-47f7-bacc-7ebd0edde02f",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C3",
+      "claim": "Biasing the visual input to orthogonal orientation in the two eyes should cause a shift of OP pinwheels towards the border of OD columns.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a computational model we predicted that biasing the visual input to orthogonal orientation in the two eyes should cause a shift of OP pinwheels towards the border of OD columns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This prediction is derived from computational modeling using the elastic net algorithm.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "87b50ca7-4fdf-489f-95c2-d916a095606d",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C4",
+      "claim": "Rearing cats wearing orthogonally oriented cylindrical lenses over each eye causes a shift of OP pinwheels towards the border of OD columns.",
+      "claim_type": "EXPLICIT",
+      "source": "We then confirmed this prediction by rearing cats wearing orthogonally oriented cylindrical lenses over each eye.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from cross-reared cats.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "a3fc003e-1c1e-4122-be3a-da4a07c18371",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C5",
+      "claim": "The spatial relationship between OP and OD maps can be modified by visual experience.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the spatial relationship between OP and OD maps can be modified by visual experience, revealing a previously unknown degree of brain plasticity in response to sensory input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the experimental results from cross-reared cats.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "d6bbf384-b7d3-457e-a8c4-d98ae0216674",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C6",
+      "claim": "In cats and monkeys neurons in the primary visual cortices are selective for both the orientation of the visual input (orientation preference, OP) and its eye of origin (ocular dominance, OD).",
+      "claim_type": "EXPLICIT",
+      "source": "In cats and monkeys neurons in the primary visual cortices are selective for both the orientation of the visual input (orientation preference, OP) and its eye of origin (ocular dominance, OD) (Hubel and Wiesel, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Hubel and Wiesel, 1977.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "f27ec08f-8e47-413c-8d04-96b79c0a90a9",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C7",
+      "claim": "OP and OD feature preferences are arranged spatially in the form of OP and OD maps, with stereotypical structure within each map, and strong spatial relationships between them.",
+      "claim_type": "EXPLICIT",
+      "source": "These feature preferences are arranged spatially in the form of OP and OD maps, with stereotypical structure within each map, and strong spatial relationships between them (Blasdel and Salama, 1986; Bonhoeffer and Grinvald, 1991; Bartfeld and Grinvald, 1992; Obermayer and Blasdel, 1993; H\u00fcbener et al., 1997; Nauhaus et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "5758029e-a743-43f8-a97a-447a9c8445da",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C8",
+      "claim": "Some aspects of the structure of OD and OP maps individually are plastic in response to altered visual input, such as monocular deprivation or stripe rearing.",
+      "claim_type": "EXPLICIT",
+      "source": "While some aspects of the structure of OD and OP maps individually are plastic in response to altered visual input, such as monocular deprivation (Hubel et al., 1977; Shatz and Stryker, 1978; Farley et al., 2007) or stripe rearing (Sengpiel et al., 1999; Tanaka et al., 2006), none of these manipulations has succeeded in modifying the overall spatial relationships between OD and OP maps, which have appeared immune from environmental influence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "ad51850f-f8a2-4076-9283-d495ccd87273",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C9",
+      "claim": "OP map pinwheels, where domains representing all orientations meet at a point, always tend to lie close to the center of OD regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular OP map pinwheels, where domains representing all orientations meet at a point, always tend to lie close to the center of OD regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge and prior observations in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "69246fa8-90c0-4246-8d20-c3c7a6c876d5",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C10",
+      "claim": "Pinwheels tend to lie close to the center of OD regions even after manipulations of the visual input such as rearing animals with artificially induced strabismus or monocular deprivation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is true even after manipulations of the visual input such as rearing animals with artificially induced strabismus (Hubel and Wiesel, 1965; L\u00f6wel, 1994; L\u00f6wel et al., 1998) or monocular deprivation (Crair et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "71703fa1-2218-4f2c-a5da-5cdea135dbe4",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C11",
+      "claim": "Dimension reduction models predict negative correlations between the local gradient magnitudes of different maps.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular 'dimension reduction' models predict negative correlations between the local gradient magnitudes of different maps (Durbin and Mitchison, 1990; Swindale, 1996), thus explaining why pinwheels, which have a high orientation gradient, normally tend to lie near the centre of OD regions, where the ocularity gradient is small.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on computational modeling work cited in the text.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "c2231f43-58e4-4010-8a2b-509b647c9607",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C12",
+      "claim": "Dimension reduction models suggest that the spatial relationship between pinwheels and OD regions might be sensitive to visual experience.",
+      "claim_type": "EXPLICIT",
+      "source": "However, such models also suggest that the spatial relationship between pinwheels and OD regions might be sensitive to visual experience (Giacomantonio et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on computational modeling work cited in the text.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "aaff8a24-3723-4c27-9c8c-76180f977c75",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C13",
+      "claim": "The elastic net algorithm uses Hebbian learning to optimize a trade-off between coverage and continuity constraints, and can explain many aspects of visual map formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The elastic net algorithm (Durbin and Mitchison, 1990) uses Hebbian learning to optimize a trade-off between coverage and continuity constraints, and can explain many aspects of visual map formation (Swindale, 1996; Goodhill, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior computational modeling work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "12e07177-e0ad-439b-92ef-7b5a87e157f8",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C14",
+      "claim": "When simulating normal rearing, the elastic net algorithm reproduces the experimental observations that pinwheels tend to be located near the center of OD columns.",
+      "claim_type": "EXPLICIT",
+      "source": "When simulating normal rearing (Erwin et al., 1995; Carreira-Perpinan and Goodhill, 2004; Carreira-Perpinan et al., 2005) this reproduces the experimental observations cited above that pinwheels tend to be located near the center of OD columns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on computational modeling results and citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "f63df1ff-3414-4232-81e9-105a2213b0e8",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C15",
+      "claim": "As the strength of over-representation (\u03b1) increased in simulations, the histograms became increasingly biased away from the center of OD regions, indicating a shift in the relative location of pinwheels towards the OD borders.",
+      "claim_type": "EXPLICIT",
+      "source": "As the strength of over-representation (\u03b1) increased, the histograms became increasingly biased away from the center of OD regions, indicating a shift in the relative location of pinwheels towards the OD borders (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by computational modeling data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "f1377bc3-e9f7-4cd6-8004-82ad78efeec2",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C16",
+      "claim": "In the model, cross-rearing alters the spatial relationship between pinwheels and OD borders by causing movement of both pinwheel positions and OD borders.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in the model, cross-rearing alters the spatial relationship between pinwheels and OD borders by causing movement of both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on computational modeling results shown in Figure 1g,h.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "9d361467-4aca-49e0-b20d-13d2152d7895",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C17",
+      "claim": "Cats were reared from 3 weeks of age with -10 dioptre cylindrical lenses mounted comfortably in front of their eyes using soft neoprene masks.",
+      "claim_type": "EXPLICIT",
+      "source": "To directly test these predictions we reared cats from 3 weeks of age with -10 dioptre cylindrical lenses mounted comfortably in front of their eyes using soft neoprene masks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "841d7c30-c961-424c-98fc-770284669619",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C18",
+      "claim": "The lens covering the left eye had its axis aligned vertically, so that the left eye was exposed to high contrast contours with primarily horizontal orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "The lens covering the left eye had its axis aligned vertically, so that the left eye was exposed to high contrast contours with primarily horizontal orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "bdba4a27-d02c-494b-9c6e-3c3e235a07fd",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C19",
+      "claim": "The lens covering the right eye had its axis aligned horizontally, so that the right eye was exposed to high contrast contours with primarily vertical orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the lens covering the right eye had its axis aligned horizontally, so that the right eye was exposed to high contrast contours with primarily vertical orientation (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental procedure used in the study, with visual evidence in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "9fd07d95-d6d4-40c1-9cd1-404334afa2af",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C20",
+      "claim": "The lens strength was chosen based on preliminary observations that animals wearing -10 dioptre lenses exhibited normal behavioural activity, while animals with higher power lenses were noticeably less active.",
+      "claim_type": "EXPLICIT",
+      "source": "The lens strength was chosen based on preliminary observations that animals wearing -10 dioptre lenses exhibited normal behavioural activity, while animals with higher power lenses (e.g., as used in Tanaka et al. [2006]) were noticeably less active.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on preliminary experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "90ee5940-a781-4868-a243-322d49ce2e5d",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C21",
+      "claim": "Animals wore the masks for 6 hr per day while the room was illuminated and were otherwise kept in darkness.",
+      "claim_type": "EXPLICIT",
+      "source": "Animals wore the masks for 6 hr per day while the room was illuminated and were otherwise kept in darkness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "7e671139-0ae8-4af5-8faf-b9a703da3645",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C22",
+      "claim": "From age 20 weeks intrinsic signal optical imaging followed by extracellular single unit recordings were used to map OP and OD preferences in cortical areas 17 and 18 of 5 cross-reared animals (10 hemispheres), and 6 normally reared control animals (11 hemispheres).",
+      "claim_type": "EXPLICIT",
+      "source": "From age 20 weeks we used intrinsic signal optical imaging followed by extracellular single unit recordings to map OP and OD preferences in cortical areas 17 and 18 of 5 cross-reared animals (10 hemispheres), and 6 normally reared control animals (11 hemispheres).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods and sample sizes used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "acf419a9-969a-422f-aa2c-2aa188d8521e",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C23",
+      "claim": "In the five cross-reared animals, 182 units were recorded from 20 electrode tracks, 76 with a preference for input from the right eye and 106 with a preference for input from the left eye.",
+      "claim_type": "EXPLICIT",
+      "source": "In the five cross-reared animals we recorded from 182 units from 20 electrode tracks, 76 with a preference for input from the right eye (which experienced predominantly vertical contours) and 106 with a preference for input from the left eye (which experienced predominantly horizontal contours).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data collected from cross-reared animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "1176d28f-7cba-4dcb-b442-4f796c6df4fc",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C24",
+      "claim": "In the six control animals, 86 units were recorded from 17 electrode tracks.",
+      "claim_type": "EXPLICIT",
+      "source": "In the six control animals, we recorded from 86 units from 17 electrode tracks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental data collected from control animals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "2b7b5fa6-2cbe-4b40-a59d-359230689993",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C25",
+      "claim": "The distribution of preferred orientation for units from the control animals exhibited an over representation of the cardinal orientations.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous work (Coppola et al., 1998; Li et al., 2003) and theoretical predictions (Hunt et al., 2013), the distribution of preferred orientation for units from the control animals exhibited an over representation of the cardinal orientations (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3a and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "24461892-65c9-410a-86a1-0852ed6a099b",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C26",
+      "claim": "The distribution of preferred orientation for control animals was well described by a sine curve with period 90\u00ba (r2 = 0.69).",
+      "claim_type": "EXPLICIT",
+      "source": "This distribution was well described by a sine curve with period 90\u00ba (r2 = 0.69).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "a475d087-e630-42d3-9808-b184d7708c21",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C27",
+      "claim": "Units with a preference for input from the left eye showed a bias for horizontal orientations in cross-reared animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Units with a preference for input from the left eye showed a bias for horizontal orientations (Figure 3b, black line), while those with a preference for input from the right eye showed a bias for near vertical orientations (Figure 3b, gray line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "d8a9ec45-ccb5-4dec-90eb-a201460f4cb0",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C28",
+      "claim": "Units with a preference for input from the right eye showed a bias for near vertical orientations in cross-reared animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Units with a preference for input from the left eye showed a bias for horizontal orientations (Figure 3b, black line), while those with a preference for input from the right eye showed a bias for near vertical orientations (Figure 3b, gray line).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "097972b8-ff0d-4b9a-9290-40114850badc",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C29",
+      "claim": "The distributions of preferred orientation in cross-reared animals were consistent with the orientation of the lenses fitted over each eye and were well described by sine curves with period 180\u00ba (r2 = 0.75, left eye; r2 = 0.79, right eye).",
+      "claim_type": "EXPLICIT",
+      "source": "These distributions were consistent with the orientation of the lenses fitted over each eye and were well described by sine curves with period 180\u00ba (r2 = 0.75, left eye; r2 = 0.79, right eye).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "94840862-4581-4dc8-8fff-562ca19b06c7",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C30",
+      "claim": "The mean inter-ocular difference in preferred orientation (\u0394OP) is significantly greater than 0 in both control (mean \u0394OP = 11.8\u00b0, p < 0.001) and cross-reared animals (mean \u0394OP = 9.8\u00b0, p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports (Nelson et al., 1977; Cooper and Pettigrew, 1979) we found a torsional disparity in the preferred orientation of the two eyes in both our control (mean \u0394OP = 11.7\u00b0, p<0.001, two-tailed t-test) and cross-reared (mean \u0394OP = 9.8\u00b0, p<0.001, two-tailed t-test) animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "6aaf0efd-a839-4c40-a413-3021f394589d",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C31",
+      "claim": "There is no significant difference in the distribution of \u0394OP for control and cross-reared animals (p=0.44).",
+      "claim_type": "EXPLICIT",
+      "source": "We found no significant difference in the distribution of \u0394OP for control and cross-reared animals (p=0.44, two-tailed, two-sample t-test; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "bc47b242-75f9-4e7a-a16a-0b3fc6b5212c",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C32",
+      "claim": "Units from cross-reared animals showed a higher level of monocularity than those from control animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Units from cross-reared animals showed a higher level of monocularity than those from control animals (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "c5fb0525-f7f1-44d2-98e1-f65c7ae0181c",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C33",
+      "claim": "The median monocularity index (MI) of units from control and cross-reared animals was 0.24 and 0.38, respectively, and this difference was significant (p=0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "The median monocularity index (MI, see Material and methods) of units from control and cross-reared animals was 0.24 and 0.38, respectively. This difference was significant (p=0.002, Kruskal-Wallis test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "2ffef485-648a-438a-a276-6b0c4f2373c6",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C34",
+      "claim": "Units from cross-reared animals exhibited marginally higher preferred spatial frequencies compared to those from control animals (median preferred spatial frequency 0.24 and 0.16 cycles/\u00b0 for cross-reared and control animals respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Units from cross-reared animals exhibited marginally higher preferred spatial frequencies compared to those from control animals (median preferred spatial frequency 0.24 and 0.16 cycles/\u00b0 for cross-reared and control animals respectively; Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "98079bed-befd-455c-bc63-5eaf544ee93f",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C35",
+      "claim": "The difference in preferred spatial frequency between cross-reared and control animals was significant (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "While this difference was significant (p<0.001; Kruskal-Wallis test), the tuning curves were very broad and overlapped substantially.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "05696c37-806c-4b36-b4aa-42f01726c024",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C36",
+      "claim": "There was no difference in the bandwidth (p=0.19) or skew (p=0.40) of the spatial frequency tuning curves for normal and cross-reared animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no difference in either the bandwidth (p=0.19; Kruskal-Wallis test) or skew (p=0.40; Kruskal-Wallis test) of the spatial frequency tuning curves for normal and cross-reared animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "c71d4430-fd74-4856-b879-5b358939a20d",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C37",
+      "claim": "There was no significant difference in the preferred temporal frequency (p=0.2) between units from control and cross-reared animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we found no significant difference in either the preferred temporal frequency (p=0.2, Kruskal-Wallis test; Figure 3\u2014figure supplement 2), the temporal frequency bandwidth (p=0.28, Kruskal-Wallis test) or the skew of the temporal frequency tuning curves (p=0.63, Kruskal-Wallis test) of units from control and cross-reared animals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "487d9296-9133-45ee-8c99-2afc16d45e10",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C38",
+      "claim": "There was no difference in either the maximum spike rate (p=0.56) or the semi-saturation contrast (p=0.81) of units from control and cross-reared animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no difference in either the maximum spike rate (p=0.56, Kruskal-Wallis test) or the semi-saturation contrast (p=0.81, Kruskal-Wallis test; Figure 3\u2014figure supplement 3) of units from control and cross-reared animals.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "5cb2312e-2888-41fa-aa9c-42acfeb361e2",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C39",
+      "claim": "Green light (520 nm) provides a much higher signal to noise ratio for intrinsic signal imaging compared to red light (wavelengths >600 nm).",
+      "claim_type": "EXPLICIT",
+      "source": "While previous studies have usually used red light (wavelengths >600 nm) for intrinsic signal imaging, here we used green light (520 nm) due to the much higher signal to noise ratio obtained (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "a8a9a72a-4c1e-4f20-bf20-858b1601135f",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C40",
+      "claim": "Extended spatial decorrelation (ESD) robustly separated the noise and mapping signals even in the green light data.",
+      "claim_type": "EXPLICIT",
+      "source": "However we were able to overcome this problem by using extended spatial decorrelation (ESD), a more sophisticated analysis technique (Stetter et al., 2000) (see Materials and methods). This technique robustly separated the noise and mapping signals even in the green light data (Figure 4b\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4b-d and citation to the ESD method.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "02f51fa5-33c4-42b4-887d-5ab88eda864d",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C41",
+      "claim": "Maps produced by imaging with green (520 nm) and red (609 nm) wavelengths were very similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a brief earlier report (Frostig et al., 1990), by imaging one of our control animals with both green (520 nm) and red (609 nm) wavelengths we found that the maps produced were very similar (Figure 4e\u2013h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4e-h and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "25d1ebb1-1cec-4d4b-8b4c-796aa740785a",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C42",
+      "claim": "There was a high level of correlation (r2 = 0.64, p=0.003) between measures of orientation preference from OP maps and corresponding measures obtained from single unit recordings from the superficial layers of the cortex at each electrode track location.",
+      "claim_type": "EXPLICIT",
+      "source": "We also compared measures of orientation preference from the OP maps with corresponding measures obtained from single unit recordings from the superficial layers of the cortex at each electrode track location. Where we obtained robust estimates from both the imaging and unit recordings we found a high level of correlation between the two measures (r2 = 0.64, p=0.003) with a median absolute difference of 15.2\u00b0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis comparing imaging and electrophysiology data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "9e9b982d-c76d-4a85-aaf5-cc124316c0af",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C43",
+      "claim": "In control animals there was an over-representation of cardinal (horizontal and vertical) orientations in the OP map.",
+      "claim_type": "EXPLICIT",
+      "source": "In control animals there was an over-representation of cardinal (horizontal and vertical) orientations in the OP map.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from optical imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "6e3a8b1c-2ba6-4cf1-880d-acfadd60edea",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C44",
+      "claim": "The proportion of the map devoted to different orientations in control animals was well fit by a sine curve with period 90\u00ba (r2 = 0.6).",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of the map devoted to different orientations was well fit by a sine curve with period 90\u00ba (r2 = 0.6; Figure 5g; Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data shown in Figure 5g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "6dfc9248-ec44-4b31-9dbc-4b7ac8464d05",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C45",
+      "claim": "In the cross-reared animals the OP maps calculated for each eye showed proportions that were better fit by sine curves with period 180\u00ba (r2 = 0.64, left eye; r2 = 0.71, right eye).",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the cross-reared animals the OP maps calculated for each eye showed proportions that were now better fit by sine curves with period 180\u00ba (r2 = 0.64, left eye; r2 = 0.71, right eye).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "ce2d6afa-5cc0-40da-afb5-00f7b96018b8",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C46",
+      "claim": "In cross-reared animals, the sine curves with period 180\u00ba peaked close to the orientation of the lens covering each eye.",
+      "claim_type": "EXPLICIT",
+      "source": "In each case these curves peaked close to the orientation of the lens covering that eye (Figure 5h; Figure 5\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "8b040a3b-0318-48a1-9a65-8198cb8dd504",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C47",
+      "claim": "Cross-rearing caused substantial shifts in the distribution of orientations across the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, cross-rearing caused substantial shifts in the distribution of orientations across the cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the experimental data from optical imaging.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "ec5a895c-cb7a-45c9-b0b8-85670702900c",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C48",
+      "claim": "There was no statistically significant change in pinwheel density between rearing conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no statistically significant change in pinwheel density (Kaschube et al., 2010) between rearing conditions (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "364d897c-ed39-4a98-bbc7-3767db53675f",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C49",
+      "claim": "The distribution of intersection angles between OD and OP maps was similar in both rearing conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of intersection angles between OD and OP maps was also similar in both rearing conditions (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "e28cf710-4de1-4999-ae67-f52aa0123d53",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C50",
+      "claim": "In control animals, orientation selectivity was slightly greater near OD borders, while in cross-reared animals selectivity was slightly greater near the centre of OD regions.",
+      "claim_type": "EXPLICIT",
+      "source": "There were subtle changes in the spatial distribution of orientation selectivity: in control animals orientation selectivity was slightly greater near OD borders, while in cross-reared animals selectivity was slightly greater near the centre of OD regions (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "a703d532-ae63-4d67-a279-3c008458574c",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C51",
+      "claim": "In control animals, the distribution of pinwheels relative to OD borders was very similar to that of H\u00fcbener et al. (1997).",
+      "claim_type": "EXPLICIT",
+      "source": "In our control animals, the distribution of pinwheels relative to OD borders was very similar to that of H\u00fcbener et al. (1997) (Figure 6b) but in cross-reared animals there was a significant shift of pinwheels away from the centre of OD regions (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6b and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "3a05e5f0-852d-4cfc-a16d-25de3016a9ec",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C52",
+      "claim": "In cross-reared animals there was a significant shift of pinwheels away from the centre of OD regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In our control animals, the distribution of pinwheels relative to OD borders was very similar to that of H\u00fcbener et al. (1997) (Figure 6b) but in cross-reared animals there was a significant shift of pinwheels away from the centre of OD regions (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "4d80d557-a7a7-4bed-bece-8a8aebed0b2a",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C53",
+      "claim": "There was a significant under representation of pinwheels in the bin corresponding to the centre of OD columns in cross-reared animals (p=0.01, two-tailed t-test, power = 0.77).",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, there was a significant under representation of pinwheels in the bin corresponding to the centre of OD columns (p=0.01, two-tailed t-test, power = 0.77, 95% confidence interval for difference in means = [0.06, 0.36]), as predicted in our model simulations (Figure 6d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data shown in Figure 6c,d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "aec9e8bd-060d-4071-93d4-d964a7f8e4e4",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C54",
+      "claim": "The altered visual input during cross-rearing changed a fundamental aspect of the spatial relationship between OP and OD maps.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the altered visual input during cross-rearing changed a fundamental aspect of the spatial relationship between OP and OD maps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the experimental results showing shifted pinwheel locations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "868893a7-97cc-439c-89b7-b51df3cb7a95",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C55",
+      "claim": "The similarity between the model prediction and experimental data provides further evidence that models based on dimension reduction, such as the elastic net, capture essential elements of the mechanisms by which cortical maps develop.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity between the model prediction and our data provides further evidence that models based on dimension reduction, such as the elastic net, capture essential elements of the mechanisms by which cortical maps develop.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the agreement between computational predictions and experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "fb6c20b8-c06a-4013-8666-3bc0c5b6fab7",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C56",
+      "claim": "Previous studies on cats raised in environments with a single orientation (stripe-rearing) or with orthogonal orientations presented to the left and right eye revealed an over-representation of single units tuned to the orientation that matches the rearing conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings agree with previous cell population surveys and imaging experiments on cats raised in environments with a single orientation (stripe-rearing) (Blakemore and Cooper, 1970; Sengpiel et al., 1999) or with orthogonal orientations presented to the left and right eye (Hirsch and Spinelli, 1970; Blakemore, 1976). These studies, like our own, revealed an over-representation of single units tuned to the orientation that matches the rearing conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "de205acf-108d-40a1-bd22-0d985640cd3d",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C57",
+      "claim": "Previous work using much stronger orientation biases found that cells tend to become monocular rather than maintain large \u0394OP values.",
+      "claim_type": "EXPLICIT",
+      "source": "However, previous work using much stronger orientation biases found that cells tend to become monocular rather than maintain large \u0394OP values (Hirsch and Spinelli, 1970; 1971; Blakemore, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "473f56be-ca93-4b7f-a54b-373809b35101",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C58",
+      "claim": "Only about 10% of single units in cross-reared animals were monocular, suggesting that relatively normal binocular summation developed in these animals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only about 10% of single units in our cross-reared animals were monocular, suggesting that relatively normal binocular summation developed in these animals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental data and inference about binocular function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "57952098-f9d0-4c90-b7ef-6b10f0988265",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C59",
+      "claim": "Cortical neurons in cross-reared animals retained access to a sufficiently broad range of orientations to form fused binocular images during development.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidently, cortical neurons in our cross-reared animals retained access to a sufficiently broad range of orientations to form fused binocular images during development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental observations of relatively normal binocular function.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "11dbd25d-72e4-462f-b18e-cb2b4af4548b",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C60",
+      "claim": "A theoretical prediction based on symmetry principles was that pinwheels move during normal development and annihilate in pairs, leading to a final pinwheel density relative to map wavelength of \u03c0.",
+      "claim_type": "EXPLICIT",
+      "source": "A theoretical prediction based on symmetry principles was that pinwheels move during normal development and annihilate in pairs (Wolf and Geisel, 1998), leading to a final pinwheel density relative to map wavelength of \u03c0 (Kaschube et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on citations to theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "8beaafb9-e30d-48d3-8f3f-1ca688af32cf",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C61",
+      "claim": "Chronic imaging experiments have suggested that, with normal visual input, the positions of pinwheels do not move from the positions at which they are first observed during development.",
+      "claim_type": "EXPLICIT",
+      "source": "However chronic imaging experiments have suggested that, with normal visual input, the positions of pinwheels do not move from the positions at which they are first observed during development (Chapman et al., 1996; Crair et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "6747ab5e-99a4-4640-8389-0e44c5737980",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C62",
+      "claim": "In adult cats, chronic imaging of OP maps in response to spatially synchronous cortical activity induced by intracortical electrical microstimulation has shown substantial rearrangement of pinwheel positions.",
+      "claim_type": "EXPLICIT",
+      "source": "In adult cats, chronic imaging of OP maps in response to spatially synchronous cortical activity induced by intracortical electrical microstimulation has shown substantial rearrangement of pinwheel positions (Godde et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "e7b6dcb9-6b56-4bb0-ab76-312ef2147d77",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C63",
+      "claim": "The results reveal for the first time that pinwheels can be repositioned relative to OD columns purely by abnormal sensory input.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our results reveal for the first time that pinwheels can be repositioned relative to OD columns purely by abnormal sensory input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the experimental results from cross-reared animals.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "71f8944f-dbcd-4c44-9965-cf80e8dfd795",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C64",
+      "claim": "In simulations of normal rearing, pinwheels form near the centre of OD columns to provide good coverage: the gradient of OP is highest where the gradient of OD is lowest.",
+      "claim_type": "EXPLICIT",
+      "source": "In simulations of normal rearing, pinwheels form near the centre of OD columns to provide good coverage (Figure 1a,b): the gradient of OP is highest where the gradient of OD is lowest.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on computational modeling results shown in Figure 1a,b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "966113a0-d325-4169-8937-70384e7197f3",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C65",
+      "claim": "In the cross-reared case the over-represented orientations are the first to appear in the cortex, aligned with the initial formation of OD columns.",
+      "claim_type": "EXPLICIT",
+      "source": "However in the cross-reared case the over-represented orientations are the first to appear in the cortex, aligned with the initial formation of OD columns (Giacomantonio et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on computational modeling work cited in the text.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "26dc8d1f-f6ff-4d4f-975d-49fefa4b294c",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C66",
+      "claim": "The representation of other orientations forms around the initial configuration of over-represented orientations, and thus pinwheels are pushed away from the centre of the OD regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The representation of other orientations then forms around this initial configuration, and thus pinwheels are pushed away from the centre of the OD regions, which are dominated by the over-represented orientations (Figure 1c\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on computational modeling results shown in Figure 1c-f.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "6f3e02e1-0abc-45f5-ac50-1459ba4aaf39",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C67",
+      "claim": "In the model, movement of both pinwheels and OD borders contribute to the change in their spatial relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "In the model, movement of both pinwheels and OD borders contribute to the change in their spatial relationship; however we cannot directly assess whether this is also true in our experimental data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on computational modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "8ff78e72-ce5d-47c4-a309-f1d6aaa317c9",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C68",
+      "claim": "The degree of plasticity of the tuning of V1 neurons depends on their position in the OP map, in particular whether they lie close to a pinwheel or in an iso-orientation domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree of plasticity of the tuning of V1 neurons depends on their position in the OP map, in particular whether they lie close to a pinwheel or in an iso-orientation domain (i.e. depending on the spatial gradient of OP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "48a8463b-1664-49ce-bee4-9871ca146f28",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C69",
+      "claim": "Dragoi et al. (2001) reported greater plasticity of tuning curves at pinwheels in response to an adapting visual input.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the direction of this dependence is controversial: while Dragoi et al. (2001) reported greater plasticity of tuning curves at pinwheels in response to an adapting visual input, Schuett et al. (2001) found less plasticity at pinwheels in response to pairing a visual stimulus at a particular orientation with direct cortical electrical stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "e30a1dcd-95d5-43c4-a771-93676ce7747c",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C70",
+      "claim": "Schuett et al. (2001) found less plasticity at pinwheels in response to pairing a visual stimulus at a particular orientation with direct cortical electrical stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the direction of this dependence is controversial: while Dragoi et al. (2001) reported greater plasticity of tuning curves at pinwheels in response to an adapting visual input, Schuett et al. (2001) found less plasticity at pinwheels in response to pairing a visual stimulus at a particular orientation with direct cortical electrical stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "1c3a8d10-49aa-4165-b75a-5bf69022526f",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C71",
+      "claim": "Blood vessel artefacts common in intrinsic signal imaging of cortex with green light can be overcome by using more statistically sophisticated analysis techniques than are typically employed.",
+      "claim_type": "EXPLICIT",
+      "source": "From a methodological perspective, we found that blood vessel artefacts common in intrinsic signal imaging of cortex with green light can be overcome by using more statistically sophisticated analysis techniques than are typically employed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the experimental results using extended spatial decorrelation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "f5b88e8d-0cca-4f35-9732-38df283ab1a7",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C72",
+      "claim": "Changes in cortical reflectance of green wavelengths are believed to indicate changes in blood volume, while those at longer (red) wavelength primarily indicate changes in blood oxygenation.",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in cortical reflectance of green wavelengths are believed to indicate changes in blood volume, while those at longer (red) wavelength primarily indicate changes in blood oxygenation (Sirotin and Das, 2009; Sirotin et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "de5a1ffb-73dd-42b4-ad1f-077fc50d7083",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C73",
+      "claim": "The strength of the lenses worn by cross-reared animals (-10 dioptres) was considerably less than that in recent stripe rearing studies in cats (67 dioptres) and mice (167 dioptres).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the strength of the lenses worn by our cross-reared animals (-10 dioptres) was considerably less than that in recent stripe rearing studies in cats (67 dioptres) (Tanaka et al., 2006) and mice (167 dioptres) (Kreile et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison with prior experimental studies cited in the text.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "c259c547-1413-43c6-9a64-84f7d364327d",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C74",
+      "claim": "The relatively low power of the lenses in the experiment suggests sensitivity of visual cortical structure to relatively small variations in sensory input.",
+      "claim_type": "EXPLICIT",
+      "source": "The relatively low power of the lenses in our experiment suggests sensitivity of visual cortical structure to relatively small variations in sensory input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental results showing effects with weak lenses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "aba535b8-2062-438c-a55b-d5f591ce34cb",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C75",
+      "claim": "A component of the large variability in visual map structure between individuals, seen in cats and humans, could be partly due to individual variations in visual experience.",
+      "claim_type": "EXPLICIT",
+      "source": "This raises the intriguing possibility that a component of the large variability in visual map structure between individuals, seen in cats (Kaschube et al., 2002) and humans (Adams et al., 2007), could be partly due to individual variations in visual experience (astigmatism, the closest analogy to rearing with cylindrical lenses in humans, has been reported with powers of up to 6 dioptres [Mitchell et al., 1973]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim based on the experimental results and citations to prior work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "0fec8390-4f75-44e1-a58e-148d5da293eb",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C76",
+      "claim": "The results redefine the limits of cortical plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, our results redefine the limits of cortical plasticity, and emphasize the importance of appropriate patterns of sensory stimulation during critical periods for normal brain development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a broad conclusion based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "a4dc7b85-7132-4f21-9562-2217b70b3196",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C77",
+      "claim": "The results emphasize the importance of appropriate patterns of sensory stimulation during critical periods for normal brain development.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, our results redefine the limits of cortical plasticity, and emphasize the importance of appropriate patterns of sensory stimulation during critical periods for normal brain development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a broad conclusion based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "d2966f67-bf44-45b0-9b0a-4962fff24942",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C78",
+      "claim": "In cats, both areas 17 and 18 receive direct input from the dorsal lateral geniculate nucleus and are therefore both primary visual cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In cats, both areas 17 and 18 receive direct input from the dorsal lateral geniculate nucleus and are therefore both primary visual cortex (Payne and Peters, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to prior anatomical work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "2c22dd32-8d7a-4e7f-aff7-25e726130f95",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C79",
+      "claim": "Cross-reared hemispheres have slightly lower median orientation selectivity compared to control hemispheres (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-reared hemispheres have slightly lower median orientation selectivity (p<0.001, two-sample Kruskal-Wallis test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of experimental data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "782c52db-0c5e-46f8-920b-0994808e113b",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C80",
+      "claim": "The correlation between red and green OP maps was r2 = 0.78.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the region shown here (the one used for analysis), the correlation between red and green OP maps was r2 = 0.78 and between the red and green OD maps was r2 = 0.77.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical analysis of imaging data comparing red and green light.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "548fe9ad-e1ef-485c-8f18-03c62b5f8cec",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C81",
+      "claim": "The correlation between red and green OD maps was r2 = 0.77.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the region shown here (the one used for analysis), the correlation between red and green OP maps was r2 = 0.78 and between the red and green OD maps was r2 = 0.77.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on statistical analysis of imaging data comparing red and green light.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "c01c43bd-376f-4ff8-8101-d0c3892e1f15",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "claim_id": "C82",
+      "claim": "Green light produced a much stronger signal compared to red light in intrinsic signal imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with earlier reports (Sirotin and Das, 2009; Sirotin et al., 2009), green light produced a much stronger signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4a and citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d16be2cc-0470-40c2-847c-a906d6789bd2",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Computational modeling using the elastic net algorithm predicts that cross-rearing (biasing visual input to orthogonal orientations in the two eyes) causes a shift of OP pinwheels towards OD borders. The model shows that as the strength of over-representation (\u03b1) increases, pinwheels shift away from OD centers, with both pinwheel positions and OD borders moving.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C13-C16, C64-C67 collectively demonstrate that the elastic net model successfully predicts pinwheel repositioning under cross-rearing conditions. The computational results are internally consistent, showing dose-dependent effects (Figure 1) and mechanistic explanations for the spatial reorganization. The model parameters and methodology are adequately described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "2c238acb-b68e-48bf-90af-be3fbc0eddf8",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Cats were reared from 3 weeks of age wearing -10 dioptre cylindrical lenses (vertical axis on left eye for horizontal orientations, horizontal axis on right eye for vertical orientations) for 6 hours daily. Five cross-reared animals (10 hemispheres) and 6 control animals (11 hemispheres) were studied using optical imaging and electrophysiology from age 20 weeks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C22 describe the experimental design with appropriate detail. The lens strength was justified by preliminary behavioral observations (C20), and sample sizes are clearly stated (C22). The methodology appears sound, though the relatively weak lens power (-10 dioptres) compared to prior studies is noted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "ad0014de-fca9-439b-94b5-fdca1e4ef189",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Single-unit recordings from cross-reared animals (182 units from 20 tracks) showed orientation preference distributions biased toward the experienced orientations for each eye, well-fit by sine curves with 180\u00b0 period (r\u00b2=0.75 left, r\u00b2=0.79 right). Control animals (86 units from 17 tracks) showed cardinal orientation over-representation fit by 90\u00b0 period sine curves (r\u00b2=0.69).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C29 present electrophysiology data with appropriate statistical analysis (Figure 3a,b). The r\u00b2 values indicate good model fits, and the results are consistent with the experimental manipulation. Sample sizes are adequate for single-unit studies, though electrode placement was not guided by map structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "81e4e9ac-c3ee-4fe0-9b3e-28f8099a6523",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Both control and cross-reared animals showed significant torsional disparity in preferred orientation between eyes (\u0394OP = 11.7\u00b0 and 9.8\u00b0 respectively, both p<0.001), with no significant difference between conditions (p=0.44).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 report appropriate statistical tests (two-tailed t-tests) with significant p-values for within-group comparisons and non-significant between-group comparison. This finding is consistent with prior literature and suggests the manipulation did not alter basic binocular disparity properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "7f4a0890-c554-4407-9bb8-ef405f5459da",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Cross-reared animals showed significantly higher monocularity (median MI=0.38) compared to controls (median MI=0.24, p=0.002, Kruskal-Wallis test).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 present a statistically significant difference using an appropriate non-parametric test (Figure 3c). The effect is modest but consistent with the experimental manipulation creating some degree of eye-specific tuning while maintaining substantial binocularity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "6a3327e0-befc-456d-9e9f-51b34f563db3",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cross-reared animals exhibited marginally higher preferred spatial frequencies (median 0.24 vs 0.16 cycles/\u00b0, p<0.001) but no differences in bandwidth (p=0.19) or skew (p=0.40) of spatial frequency tuning compared to controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 report statistically significant differences in preferred spatial frequency but acknowledge substantial overlap in tuning curves (Figure 3d). The lack of differences in bandwidth and skew suggests the effect is subtle. Appropriate statistical tests were used.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "1a073a4e-61a4-45bb-ac27-a2ea8f4b7cd7",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "No significant differences were found between control and cross-reared animals in temporal frequency tuning (p=0.2), temporal frequency bandwidth (p=0.28), temporal frequency skew (p=0.63), maximum spike rate (p=0.56), or semi-saturation contrast (p=0.81).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 report multiple non-significant comparisons using appropriate statistical tests. These negative results suggest that basic response properties and contrast sensitivity were preserved in cross-reared animals, supporting the interpretation that the manipulation specifically affected orientation processing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "3f869cec-1c03-4c85-8276-d6b55a3fe14c",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Green light (520 nm) imaging provided higher signal-to-noise ratio than red light for intrinsic signal imaging. Extended spatial decorrelation (ESD) successfully removed blood vessel artifacts from green light data. Maps from green and red light were highly correlated (r\u00b2=0.78 for OP, r\u00b2=0.77 for OD), and imaging-derived orientation preferences correlated well with electrophysiology (r\u00b2=0.64, p=0.003).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C42, C71-C72, C80-C82 present methodological validation with appropriate quantitative comparisons (Figure 4). The high correlations between imaging modalities and between imaging and electrophysiology support the validity of the green light/ESD approach. The median absolute difference of 15.2\u00b0 between methods is reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "0fc02a6b-9364-4654-9ea0-d1f7ac34724d",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Optical imaging revealed that control animals showed cardinal orientation over-representation (90\u00b0 period sine fit, r\u00b2=0.6), while cross-reared animals showed orientation distributions biased toward lens orientations for each eye (180\u00b0 period sine fits, r\u00b2=0.64 left, r\u00b2=0.71 right). Cross-reared hemispheres had slightly lower median orientation selectivity (p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47, C79 present optical imaging data consistent with single-unit recordings (Figure 5). The r\u00b2 values indicate good model fits, and the results match the experimental manipulation. The small but significant reduction in orientation selectivity (C79) is appropriately noted as subtle despite statistical significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "d20d3f08-5c3d-4c71-8fad-8c6add1353c3",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Cross-rearing did not significantly change pinwheel density or the distribution of intersection angles between OD and OP maps. However, subtle changes in orientation selectivity distribution were observed: selectivity was slightly greater near OD borders in controls but near OD centers in cross-reared animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 report both negative results (pinwheel density, intersection angles) and subtle positive findings (selectivity distribution). The negative results are important controls showing that basic map structure was preserved. The selectivity distribution change (Figure 6\u2014figure supplement 2) is appropriately characterized as subtle.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "0978e1f1-c521-4c42-a357-df5a15077451",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In cross-reared animals, pinwheels showed a significant shift away from OD centers compared to controls, with significant under-representation in the center bin (p=0.01, power=0.77, 95% CI [0.06, 0.36]). Control animals showed pinwheel distributions similar to prior literature (H\u00fcbener et al. 1997).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 present the key experimental finding with appropriate statistical analysis (Figure 6b,c). The two-tailed t-test with reported power and confidence interval is appropriate. The effect matches the computational prediction, and the control data validates the methodology by replicating prior findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "806ed2c4-5113-499c-aa55-afd331c5ac24",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The experimental results confirm the computational prediction that cross-rearing causes pinwheel repositioning relative to OD columns. This demonstrates that the spatial relationship between OP and OD maps can be modified by visual experience, revealing previously unknown cortical plasticity and supporting dimension reduction models of map development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C55, C63, C76-C77 present the main conclusions of the study. The agreement between computational predictions and experimental results is strong (compare Figures 1 and 6). The claim of 'previously unknown plasticity' is justified given prior failures to modify this relationship. However, the broader claims about 'redefining limits of plasticity' (C76) are somewhat overstated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "d92282a6-c35d-4fd3-b2fb-fc3372749b1e",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The findings agree with prior stripe-rearing studies showing orientation-specific over-representation. Unlike studies with stronger biases where cells became monocular, only ~10% of units were monocular in cross-reared animals, suggesting relatively normal binocular summation and access to sufficient orientation range for binocular fusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 appropriately contextualize the results within prior literature. The comparison with stronger lens studies is valid, and the inference about binocular function (C58-C59) is reasonable given the monocularity data, though somewhat speculative since binocular function was not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "348aa3c6-7531-4180-a9f4-bd5d8f34ff0d",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior theoretical work predicted pinwheel movement and annihilation during development, but chronic imaging studies suggested pinwheels don't move with normal visual input. However, electrical microstimulation studies in adults showed pinwheel rearrangement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C62 accurately summarize prior theoretical and experimental work on pinwheel dynamics. The citations are appropriate and the apparent contradiction between theory and normal development observations is correctly noted, providing context for the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "65e3d3f7-ec1e-4093-85d6-a0630aa84515",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The relatively weak lenses used (-10 dioptres vs 67-167 dioptres in prior studies) suggest visual cortical structure is sensitive to small variations in sensory input. This raises the possibility that individual variability in map structure could partly reflect variations in visual experience, including naturally occurring astigmatism (up to 6 dioptres).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C74 make a reasonable inference about cortical sensitivity, but C75 is highly speculative. While the comparison with astigmatism is interesting, there is no direct evidence linking natural visual experience variations to map structure differences. This would require longitudinal studies or correlations between individual visual experience and map structure.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "568f01a8-85ec-417c-8e63-94dad2c2d1ba",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Prior work established that individual OP and OD maps can be modified by altered visual input, but the spatial relationship between them (particularly pinwheel location relative to OD centers) has appeared immutable. Dimension reduction models predict this relationship might be sensitive to visual experience.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C6-C12 accurately summarize established knowledge and prior theoretical predictions. The citations are appropriate and the characterization of the field's understanding (immutability of map relationships) correctly sets up the study's contribution. The description of dimension reduction models is accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "7130ad80-bcd3-433c-843f-0f8e26e84b35",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The degree of plasticity of V1 neurons depends on their position in the OP map (pinwheel vs iso-orientation domain), though the direction of this dependence is controversial between studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 accurately describe a controversy in the literature regarding position-dependent plasticity. The citations to conflicting studies (Dragoi et al. 2001 vs Schuett et al. 2001) are appropriate. This provides relevant context though it's not directly tested in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    },
+    {
+      "id": "e8a0d1d5-2e2d-47d8-9123-05cab1393f07",
+      "content_id": "24664482-8261-4045-a336-880720db4f97",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "In cats, both areas 17 and 18 receive direct input from the dorsal lateral geniculate nucleus and are therefore both primary visual cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C78 correctly describes cat visual cortex anatomy with appropriate citation. This justifies the inclusion of both areas 17 and 18 in the analysis, which is important for the study design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:09:15.660961Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6ace3fcb-6353-47f7-bacc-7ebd0edde02f",
+      "result_id": "d16be2cc-0470-40c2-847c-a906d6789bd2"
+    },
+    {
+      "claim_id": "aaff8a24-3723-4c27-9c8c-76180f977c75",
+      "result_id": "d16be2cc-0470-40c2-847c-a906d6789bd2"
+    },
+    {
+      "claim_id": "12e07177-e0ad-439b-92ef-7b5a87e157f8",
+      "result_id": "d16be2cc-0470-40c2-847c-a906d6789bd2"
+    },
+    {
+      "claim_id": "f63df1ff-3414-4232-81e9-105a2213b0e8",
+      "result_id": "d16be2cc-0470-40c2-847c-a906d6789bd2"
+    },
+    {
+      "claim_id": "f1377bc3-e9f7-4cd6-8004-82ad78efeec2",
+      "result_id": "d16be2cc-0470-40c2-847c-a906d6789bd2"
+    },
+    {
+      "claim_id": "71f8944f-dbcd-4c44-9965-cf80e8dfd795",
+      "result_id": "d16be2cc-0470-40c2-847c-a906d6789bd2"
+    },
+    {
+      "claim_id": "966113a0-d325-4169-8937-70384e7197f3",
+      "result_id": "d16be2cc-0470-40c2-847c-a906d6789bd2"
+    },
+    {
+      "claim_id": "26dc8d1f-f6ff-4d4f-975d-49fefa4b294c",
+      "result_id": "d16be2cc-0470-40c2-847c-a906d6789bd2"
+    },
+    {
+      "claim_id": "6f3e02e1-0abc-45f5-ac50-1459ba4aaf39",
+      "result_id": "d16be2cc-0470-40c2-847c-a906d6789bd2"
+    },
+    {
+      "claim_id": "9d361467-4aca-49e0-b20d-13d2152d7895",
+      "result_id": "2c238acb-b68e-48bf-90af-be3fbc0eddf8"
+    },
+    {
+      "claim_id": "841d7c30-c961-424c-98fc-770284669619",
+      "result_id": "2c238acb-b68e-48bf-90af-be3fbc0eddf8"
+    },
+    {
+      "claim_id": "bdba4a27-d02c-494b-9c6e-3c3e235a07fd",
+      "result_id": "2c238acb-b68e-48bf-90af-be3fbc0eddf8"
+    },
+    {
+      "claim_id": "9fd07d95-d6d4-40c1-9cd1-404334afa2af",
+      "result_id": "2c238acb-b68e-48bf-90af-be3fbc0eddf8"
+    },
+    {
+      "claim_id": "90ee5940-a781-4868-a243-322d49ce2e5d",
+      "result_id": "2c238acb-b68e-48bf-90af-be3fbc0eddf8"
+    },
+    {
+      "claim_id": "7e671139-0ae8-4af5-8faf-b9a703da3645",
+      "result_id": "2c238acb-b68e-48bf-90af-be3fbc0eddf8"
+    },
+    {
+      "claim_id": "acf419a9-969a-422f-aa2c-2aa188d8521e",
+      "result_id": "ad0014de-fca9-439b-94b5-fdca1e4ef189"
+    },
+    {
+      "claim_id": "1176d28f-7cba-4dcb-b442-4f796c6df4fc",
+      "result_id": "ad0014de-fca9-439b-94b5-fdca1e4ef189"
+    },
+    {
+      "claim_id": "2b7b5fa6-2cbe-4b40-a59d-359230689993",
+      "result_id": "ad0014de-fca9-439b-94b5-fdca1e4ef189"
+    },
+    {
+      "claim_id": "24461892-65c9-410a-86a1-0852ed6a099b",
+      "result_id": "ad0014de-fca9-439b-94b5-fdca1e4ef189"
+    },
+    {
+      "claim_id": "a475d087-e630-42d3-9808-b184d7708c21",
+      "result_id": "ad0014de-fca9-439b-94b5-fdca1e4ef189"
+    },
+    {
+      "claim_id": "d8a9ec45-ccb5-4dec-90eb-a201460f4cb0",
+      "result_id": "ad0014de-fca9-439b-94b5-fdca1e4ef189"
+    },
+    {
+      "claim_id": "097972b8-ff0d-4b9a-9290-40114850badc",
+      "result_id": "ad0014de-fca9-439b-94b5-fdca1e4ef189"
+    },
+    {
+      "claim_id": "94840862-4581-4dc8-8fff-562ca19b06c7",
+      "result_id": "81e4e9ac-c3ee-4fe0-9b3e-28f8099a6523"
+    },
+    {
+      "claim_id": "6aaf0efd-a839-4c40-a413-3021f394589d",
+      "result_id": "81e4e9ac-c3ee-4fe0-9b3e-28f8099a6523"
+    },
+    {
+      "claim_id": "bc47b242-75f9-4e7a-a16a-0b3fc6b5212c",
+      "result_id": "7f4a0890-c554-4407-9bb8-ef405f5459da"
+    },
+    {
+      "claim_id": "c5fb0525-f7f1-44d2-98e1-f65c7ae0181c",
+      "result_id": "7f4a0890-c554-4407-9bb8-ef405f5459da"
+    },
+    {
+      "claim_id": "2ffef485-648a-438a-a276-6b0c4f2373c6",
+      "result_id": "6a3327e0-befc-456d-9e9f-51b34f563db3"
+    },
+    {
+      "claim_id": "98079bed-befd-455c-bc63-5eaf544ee93f",
+      "result_id": "6a3327e0-befc-456d-9e9f-51b34f563db3"
+    },
+    {
+      "claim_id": "05696c37-806c-4b36-b4aa-42f01726c024",
+      "result_id": "6a3327e0-befc-456d-9e9f-51b34f563db3"
+    },
+    {
+      "claim_id": "c71d4430-fd74-4856-b879-5b358939a20d",
+      "result_id": "1a073a4e-61a4-45bb-ac27-a2ea8f4b7cd7"
+    },
+    {
+      "claim_id": "487d9296-9133-45ee-8c99-2afc16d45e10",
+      "result_id": "1a073a4e-61a4-45bb-ac27-a2ea8f4b7cd7"
+    },
+    {
+      "claim_id": "5cb2312e-2888-41fa-aa9c-42acfeb361e2",
+      "result_id": "3f869cec-1c03-4c85-8276-d6b55a3fe14c"
+    },
+    {
+      "claim_id": "a8a9a72a-4c1e-4f20-bf20-858b1601135f",
+      "result_id": "3f869cec-1c03-4c85-8276-d6b55a3fe14c"
+    },
+    {
+      "claim_id": "02f51fa5-33c4-42b4-887d-5ab88eda864d",
+      "result_id": "3f869cec-1c03-4c85-8276-d6b55a3fe14c"
+    },
+    {
+      "claim_id": "25d1ebb1-1cec-4d4b-8b4c-796aa740785a",
+      "result_id": "3f869cec-1c03-4c85-8276-d6b55a3fe14c"
+    },
+    {
+      "claim_id": "1c3a8d10-49aa-4165-b75a-5bf69022526f",
+      "result_id": "3f869cec-1c03-4c85-8276-d6b55a3fe14c"
+    },
+    {
+      "claim_id": "f5b88e8d-0cca-4f35-9732-38df283ab1a7",
+      "result_id": "3f869cec-1c03-4c85-8276-d6b55a3fe14c"
+    },
+    {
+      "claim_id": "782c52db-0c5e-46f8-920b-0994808e113b",
+      "result_id": "3f869cec-1c03-4c85-8276-d6b55a3fe14c"
+    },
+    {
+      "claim_id": "548fe9ad-e1ef-485c-8f18-03c62b5f8cec",
+      "result_id": "3f869cec-1c03-4c85-8276-d6b55a3fe14c"
+    },
+    {
+      "claim_id": "c01c43bd-376f-4ff8-8101-d0c3892e1f15",
+      "result_id": "3f869cec-1c03-4c85-8276-d6b55a3fe14c"
+    },
+    {
+      "claim_id": "9e9b982d-c76d-4a85-aaf5-cc124316c0af",
+      "result_id": "0fc02a6b-9364-4654-9ea0-d1f7ac34724d"
+    },
+    {
+      "claim_id": "6e3a8b1c-2ba6-4cf1-880d-acfadd60edea",
+      "result_id": "0fc02a6b-9364-4654-9ea0-d1f7ac34724d"
+    },
+    {
+      "claim_id": "6dfc9248-ec44-4b31-9dbc-4b7ac8464d05",
+      "result_id": "0fc02a6b-9364-4654-9ea0-d1f7ac34724d"
+    },
+    {
+      "claim_id": "ce2d6afa-5cc0-40da-afb5-00f7b96018b8",
+      "result_id": "0fc02a6b-9364-4654-9ea0-d1f7ac34724d"
+    },
+    {
+      "claim_id": "8b040a3b-0318-48a1-9a65-8198cb8dd504",
+      "result_id": "0fc02a6b-9364-4654-9ea0-d1f7ac34724d"
+    },
+    {
+      "claim_id": "2c22dd32-8d7a-4e7f-aff7-25e726130f95",
+      "result_id": "0fc02a6b-9364-4654-9ea0-d1f7ac34724d"
+    },
+    {
+      "claim_id": "ec5a895c-cb7a-45c9-b0b8-85670702900c",
+      "result_id": "d20d3f08-5c3d-4c71-8fad-8c6add1353c3"
+    },
+    {
+      "claim_id": "364d897c-ed39-4a98-bbc7-3767db53675f",
+      "result_id": "d20d3f08-5c3d-4c71-8fad-8c6add1353c3"
+    },
+    {
+      "claim_id": "e28cf710-4de1-4999-ae67-f52aa0123d53",
+      "result_id": "d20d3f08-5c3d-4c71-8fad-8c6add1353c3"
+    },
+    {
+      "claim_id": "a703d532-ae63-4d67-a279-3c008458574c",
+      "result_id": "0978e1f1-c521-4c42-a357-df5a15077451"
+    },
+    {
+      "claim_id": "3a05e5f0-852d-4cfc-a16d-25de3016a9ec",
+      "result_id": "0978e1f1-c521-4c42-a357-df5a15077451"
+    },
+    {
+      "claim_id": "4d80d557-a7a7-4bed-bece-8a8aebed0b2a",
+      "result_id": "0978e1f1-c521-4c42-a357-df5a15077451"
+    },
+    {
+      "claim_id": "aec9e8bd-060d-4071-93d4-d964a7f8e4e4",
+      "result_id": "0978e1f1-c521-4c42-a357-df5a15077451"
+    },
+    {
+      "claim_id": "87b50ca7-4fdf-489f-95c2-d916a095606d",
+      "result_id": "806ed2c4-5113-499c-aa55-afd331c5ac24"
+    },
+    {
+      "claim_id": "a3fc003e-1c1e-4122-be3a-da4a07c18371",
+      "result_id": "806ed2c4-5113-499c-aa55-afd331c5ac24"
+    },
+    {
+      "claim_id": "868893a7-97cc-439c-89b7-b51df3cb7a95",
+      "result_id": "806ed2c4-5113-499c-aa55-afd331c5ac24"
+    },
+    {
+      "claim_id": "e7b6dcb9-6b56-4bb0-ab76-312ef2147d77",
+      "result_id": "806ed2c4-5113-499c-aa55-afd331c5ac24"
+    },
+    {
+      "claim_id": "0fec8390-4f75-44e1-a58e-148d5da293eb",
+      "result_id": "806ed2c4-5113-499c-aa55-afd331c5ac24"
+    },
+    {
+      "claim_id": "a4dc7b85-7132-4f21-9562-2217b70b3196",
+      "result_id": "806ed2c4-5113-499c-aa55-afd331c5ac24"
+    },
+    {
+      "claim_id": "fb6c20b8-c06a-4013-8666-3bc0c5b6fab7",
+      "result_id": "d92282a6-c35d-4fd3-b2fb-fc3372749b1e"
+    },
+    {
+      "claim_id": "de205acf-108d-40a1-bd22-0d985640cd3d",
+      "result_id": "d92282a6-c35d-4fd3-b2fb-fc3372749b1e"
+    },
+    {
+      "claim_id": "473f56be-ca93-4b7f-a54b-373809b35101",
+      "result_id": "d92282a6-c35d-4fd3-b2fb-fc3372749b1e"
+    },
+    {
+      "claim_id": "57952098-f9d0-4c90-b7ef-6b10f0988265",
+      "result_id": "d92282a6-c35d-4fd3-b2fb-fc3372749b1e"
+    },
+    {
+      "claim_id": "11dbd25d-72e4-462f-b18e-cb2b4af4548b",
+      "result_id": "348aa3c6-7531-4180-a9f4-bd5d8f34ff0d"
+    },
+    {
+      "claim_id": "8beaafb9-e30d-48d3-8f3f-1ca688af32cf",
+      "result_id": "348aa3c6-7531-4180-a9f4-bd5d8f34ff0d"
+    },
+    {
+      "claim_id": "6747ab5e-99a4-4640-8389-0e44c5737980",
+      "result_id": "348aa3c6-7531-4180-a9f4-bd5d8f34ff0d"
+    },
+    {
+      "claim_id": "de5a1ffb-73dd-42b4-ad1f-077fc50d7083",
+      "result_id": "65e3d3f7-ec1e-4093-85d6-a0630aa84515"
+    },
+    {
+      "claim_id": "c259c547-1413-43c6-9a64-84f7d364327d",
+      "result_id": "65e3d3f7-ec1e-4093-85d6-a0630aa84515"
+    },
+    {
+      "claim_id": "aba535b8-2062-438c-a55b-d5f591ce34cb",
+      "result_id": "65e3d3f7-ec1e-4093-85d6-a0630aa84515"
+    },
+    {
+      "claim_id": "4f52b928-9b76-478a-9175-9d644f8a733c",
+      "result_id": "568f01a8-85ec-417c-8e63-94dad2c2d1ba"
+    },
+    {
+      "claim_id": "8f0911f3-e16b-4811-bb4c-e843ff34dd49",
+      "result_id": "568f01a8-85ec-417c-8e63-94dad2c2d1ba"
+    },
+    {
+      "claim_id": "d6bbf384-b7d3-457e-a8c4-d98ae0216674",
+      "result_id": "568f01a8-85ec-417c-8e63-94dad2c2d1ba"
+    },
+    {
+      "claim_id": "f27ec08f-8e47-413c-8d04-96b79c0a90a9",
+      "result_id": "568f01a8-85ec-417c-8e63-94dad2c2d1ba"
+    },
+    {
+      "claim_id": "5758029e-a743-43f8-a97a-447a9c8445da",
+      "result_id": "568f01a8-85ec-417c-8e63-94dad2c2d1ba"
+    },
+    {
+      "claim_id": "ad51850f-f8a2-4076-9283-d495ccd87273",
+      "result_id": "568f01a8-85ec-417c-8e63-94dad2c2d1ba"
+    },
+    {
+      "claim_id": "69246fa8-90c0-4246-8d20-c3c7a6c876d5",
+      "result_id": "568f01a8-85ec-417c-8e63-94dad2c2d1ba"
+    },
+    {
+      "claim_id": "71703fa1-2218-4f2c-a5da-5cdea135dbe4",
+      "result_id": "568f01a8-85ec-417c-8e63-94dad2c2d1ba"
+    },
+    {
+      "claim_id": "c2231f43-58e4-4010-8a2b-509b647c9607",
+      "result_id": "568f01a8-85ec-417c-8e63-94dad2c2d1ba"
+    },
+    {
+      "claim_id": "8ff78e72-ce5d-47c4-a309-f1d6aaa317c9",
+      "result_id": "7130ad80-bcd3-433c-843f-0f8e26e84b35"
+    },
+    {
+      "claim_id": "48a8463b-1664-49ce-bee4-9871ca146f28",
+      "result_id": "7130ad80-bcd3-433c-843f-0f8e26e84b35"
+    },
+    {
+      "claim_id": "e30a1dcd-95d5-43c4-a771-93676ce7747c",
+      "result_id": "7130ad80-bcd3-433c-843f-0f8e26e84b35"
+    },
+    {
+      "claim_id": "d2966f67-bf44-45b0-9b0a-4962fff24942",
+      "result_id": "e8a0d1d5-2e2d-47d8-9123-05cab1393f07"
+    }
+  ],
+  "comparisons": []
+}

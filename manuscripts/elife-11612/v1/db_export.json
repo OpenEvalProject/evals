@@ -1,0 +1,1877 @@
+{
+  "submission": {
+    "id": "6b749ce4-da1d-4858-a06b-93d4869a505e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:50:18.546173Z",
+    "updated_at": "2025-11-29T22:50:18.546173Z"
+  },
+  "content": [
+    {
+      "id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "submission_id": "6b749ce4-da1d-4858-a06b-93d4869a505e",
+      "content_type": "manuscript",
+      "content_text": "# Akt-mTORC1 signaling regulates Acly to integrate metabolic input to control of macrophage activation\n\n## Authors\n\n- Anthony J Covarrubias<sup>1</sup>\n- Halil Ibrahim Aksoylar<sup>1</sup> ([ORCID: 0000-0002-0527-6124](https://orcid.org/0000-0002-0527-6124))\n- Jiujiu Yu<sup>1</sup>\n- Nathaniel W Snyder<sup>2</sup>\n- Andrew J Worth<sup>2</sup>\n- Shankar S Iyer<sup>4</sup>\n- Jiawei Wang<sup>5</sup>\n- Issam Ben-Sahra<sup>1</sup>\n- Vanessa Byles<sup>1</sup>\n- Tiffany Polynne-Stapornkul<sup>1</sup>\n- Erika C Espinosa<sup>1</sup>\n- Dudley Lamming<sup>6</sup>\n- Brendan D Manning<sup>1</sup>\n- Yijing Zhang<sup>5</sup>\n- Ian A Blair<sup>2</sup>\n- Tiffany Horng<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Genetics and Complex Diseases Harvard T.H. Chan School of Public Health Boston United States\n2. Center of Excellence in Environmental Toxicology University of Pennsylvania Philadelphia United States\n3. A.J. Drexel Autism Institute Drexel University Philadelphia United States\n4. Department of Medicine Brigham and Women's Hospital Boston United States\n5. Institute for Plant Physiology and Ecology, Shanghai Institute for Biological Sciences Chinese Academy of Sciences Shanghai China\n6. Department of Medicine University of Wisconsin-Madison Madison United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMacrophage activation/polarization to distinct functional states is critically supported by metabolic shifts. How polarizing signals coordinate metabolic and functional reprogramming, and the potential implications for control of macrophage activation, remains poorly understood. Here we show that IL-4 signaling co-opts the Akt-mTORC1 pathway to regulate Acly, a key enzyme in Ac-CoA synthesis, leading to increased histone acetylation and M2 gene induction. Only a subset of M2 genes is controlled in this way, including those regulating cellular proliferation and chemokine production. Moreover, metabolic signals impinge on the Akt-mTORC1 axis for such control of M2 activation. We propose that Akt-mTORC1 signaling calibrates metabolic state to energetically demanding aspects of M2 activation, which may define a new role for metabolism in supporting macrophage activation.\n\n## Introduction\n\nMacrophages are pleiotropic cells that assume a variety of functions depending on tissue of residence and tissue state. Their ability to acquire diverse, context-dependent activities requires activation (or polarization) to distinct functional states, triggered by various factors including microbial products, cytokines, and growth factors\u00a0(Davies et al., 2013; Murray and Wynn, 2011). M1 or classical activation is triggered during infection by microbial products including LPS, leading to the transcriptional upregulation of genes encoding antimicrobial activities and inflammatory cytokines. M2 or alternative activation is triggered by IL-4 and IL-13 produced during parasite infections, and activates the transcription factor Stat6 to induce a transcriptional program that coordinates fibrosis, tissue remodeling, and Type 2 inflammation (Davies et al., 2013; Murray and Wynn, 2011). Therefore, the induction of multi-component transcriptional programs underpins macrophage activation.\n\nWhile macrophage activation is relatively well-understood at the level of signal transduction, transcriptional regulation, and acquisition of new effector activities, the metabolic underpinnings remain less clear. An emerging view is that macrophage activation to particular states is associated with distinct metabolic shifts (Pearce and Everts, 2015; Galv\u00e1n-Pe\u00f1a and O'Neill, 2014; Biswas and Mantovani, 2012). For example, M1 macrophages upregulate glucose and glutamine utilization (Tannahill et al., 2013; Cramer et al., 2003), while M2 macrophages augment \u03b2-oxidation and glutamine consumption (Vats et al., 2006; Jha et al., 2015). Importantly, such metabolic shifts critically support macrophage activation. Increased glycolytic flux in M1 macrophages is coupled to de novo lipogenesis, which enables ER and Golgi expansion and production of high levels of inflammatory cytokines (Everts et al., 2014). Another consequence of enhanced glycolysis is accumulation of the TCA cycle metabolite succinate, leading to stabilization of the transcription factor HIF-1\u03b1 and transcriptional induction of Il1b and other target genes in the M1 macrophage (Tannahill et al., 2013). How oxidative metabolism boosts M2 activation is not clear, but glutamine metabolism fuels production of UDP-GlcNAC, an important modification of multiple M2 markers (Jha et al., 2015).\n\nConsistent with the idea that macrophage activation is supported by metabolic shifts, recent studies indicate that macrophage polarizing signals impinge on metabolic signaling pathways. Polarizing signals like LPS and IL-4 regulate the activity of Akt, mTORC1, and AMPK (Everts et al., 2014; Byles et al., 2013; Cheng et al., 2014; Weichhart et al., 2008), presumably to coordinate metabolic processes that critically underlie macrophage polarization. Limited studies indicate that perturbing the activity of these metabolic regulators impairs macrophage metabolism and activation (Everts et al., 2014; Cheng et al., 2014). For example, Akt mediates enhanced glycolysis to support lipid synthesis and inflammatory cytokine secretion in M1 macrophages (Everts et al., 2014). Akt similarly stimulates glucose-fueled lipid synthesis in growing and proliferating cells, where lipids are used to build cellular membranes (Robey and Hay, 2009). Therefore, M1 macrophages co-opt a metabolic process (Akt-dependent lipogenesis) in order to coordinate a macrophage-specific function (inflammatory cytokine secretion). In general, however, how polarizing signals control metabolic shifts, and the full implications of this for control of macrophage activation, remains poorly understood.\n\nHere we show that integration of the Akt-mTORC1 pathway into IL-4 signaling allows for selective control of some M2 responses. Control is exerted at the level of Acly, a key enzyme in Ac-CoA production, thereby modulating histone acetylation and transcriptional induction of a subset of M2 genes. Consistent with its role as an important metabolic sensor, the Akt-mTORC1 pathway couples metabolic input to such gene-specific control. Our findings also reveal subsets of the M2 response, including chemokine production and cellular proliferation, that are linked to metabolic state by Akt-mTORC1 signaling.\n\n## Results\n\n### Akt regulates increased glucose metabolism in M2 macrophages\n\nAkt is a major metabolic regulator implicated in M2 activation (Byles et al., 2013; Ruckerl et al., 2012), but the underlying mechanisms remain poorly characterized. To begin to address this question, we employed unbiased metabolic profiling of M2 macrophages, using LC/MS-based metabolomics and a platform that measures ~290 small metabolites representative of all major pathways of intermediary metabolism (Ben-Sahra et al., 2013). Top enriched pathways include urea cycle and arginine and proline metabolism, consistent with previous studies indicating upregulation of arginine metabolism in M2 macrophages (Van Dyken and Locksley, 2013), as well as amino acid utilization and metabolism and nucleotide metabolism (Figure 1A, Supplementary file 1). Other top enriched pathways include glycolysis, amino sugar metabolism, and glycine, serine, and threonine metabolism, suggesting altered flux through glycolysis and glycolytic shunts (Figure 1A, Supplementary file 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/11612/elife-11612-fig1-v1.jpg)\n\n**Figure 1.:** (A) Top metabolic pathways enriched in macrophages stimulated for 12\u2009hr with IL-4 (relative to unstimulated macrophages) as identified by LC/MS-based metabolomics profiling.\u00a0(B) M2 macrophages increase glucose uptake in an Akt-dependent manner. BMDMs were treated with IL-4 for the indicated time periods (left) or 16 hr +/- the Akt inhibitor MK2206 (Akti) (right), followed by analysis of uptake of 3H-deoxy-D-glucose.\u00a0(C) Increased glucose utilization in M2 macrophages is associated with enhanced oxidative metabolism and glycolysis. BMDMs were treated with IL-4 for 20 hr +/- Akt inhibitor, followed by analysis of spare respiratory capacity (SRC) and aerobic glycolysis (ECAR) in extracellular flux analyses.\u00a0(D) M2 gene induction is sensitive to the glycolysis inhibitor 2-deoxyglucose (2-DG). BMDMs were treated with IL-4 for 16 hr +/- 2-DG or the \u03b2-oxidation inhibitor etomoxir pretreatment, followed by analysis of M2 gene induction by qPCR.\u00a0(E) Akt does not regulate \u03b2-oxidation in M2 macrophages. BMDMs stimulated for 36 hr with IL-4 +/- Akt inhibitor pretreatment were incubated for 3 hr with 3H-palmitate for analysis of \u03b2-oxidation. The student\u2019s t-test was used to determine statistical significance, defined as *P<0.05, **P<0.01, and ***P<0.001.\n\nAs M2 activation is thought to be sustained by fatty acid rather than glucose utilization (Cramer et al., 2003; Vats et al., 2006), we decided to re-examine the role of glycolysis in M2 macrophages. We found that BMDMs increased glucose uptake in a time-dependent manner in response to IL-4 treatment. Such increase was reduced by cotreatment with the Akt inhibitor MK2206 (Figure 1B), indicating control by Akt and consistent with a role for Akt in regulating glycolysis in many settings (Robey and Hay, 2009). Moreover, enhanced glucose consumption in M2 macrophages was associated with an Akt-dependent increase in both glycolysis and oxidative metabolism, as indicated by extracellular flux assays (Figure 1C). Importantly, glycolytic flux was needed for optimal implementation of the M2 program. Similar to the \u03b2-oxidation inhibitor etomoxir, the glycolysis inhibitor 2-DG reduced IL-4-mediated induction of some M2 genes (Figure 1D). Therefore, Akt mediates enhanced glucose consumption in M2 macrophages, and this contributes to induction of M2 gene expression. Such glucose consumption may also fuel production of UDP-Glc-NAc, the substrate for glycosylation of some M2 markers (Jha et al., 2015). In contrast, Akt does not control \u03b2-oxidation in M2 macrophages (Figure 1E).\n\n### IL-4 signaling activates Akt to allow for selective control of M2 gene induction\n\nBecause the increase in glucose utilization was relatively modest, we considered that Akt could play additional roles in control of M2 activation and turned to an analysis of M2 gene regulation. We examined induction of Retnla, Arg1, Mgl2, Chi3l3, Cd36, and Fabp4, \u201challmark\u201d M2 genes commonly used in studies of M2 activation (Van Dyken and Locksley, 2013). Consistent with the role of Stat6 as a transcriptional master regulator of M2 activation (Odegaard and Chawla, 2011), induction of these M2 genes was ablated in Stat6 KO BMDMs (Figure 2\u2014figure supplement 1A). Importantly and as reported (Byles et al., 2013; Ruckerl et al., 2012), Akt activity controlled the induction of a subset of M2 genes. In the presence of the Akt inhibitor MK2206, induction of Arg1, Retnla, and Mgl2 was reduced ~40\u201380%, while Chi3l3, Cd36, and Fabp4 were not affected (or even super-inducible) (Figure 2A). Use of a structurally distinct Akt inhibitor, Aktviii, yielded similar results, suggesting specificity in inhibition (data not shown). Below, these two groups of genes will be referred to as Akt-dependent and Akt-independent M2 genes, respectively.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/11612/elife-11612-fig2-v1.jpg)\n\n**Figure 2.:** (A) Akt activity stimulates induction of a subset of M2 genes. BMDMs were stimulated with IL-4 for 16 hr +/- the Akt inhibitor MK2206 (Akti) pretreatment, followed by analysis of M2 gene induction by qPCR.\u00a0(B) The Jak-Stat and Akt-mTORC1 pathways are activated independently downstream of the IL-4R. WT and Stat6 KO BMDMs were stimulated with IL-4 +/- Akt inhibitor as indicated. Analysis of Stat6, Akt, and mTORC1 activation was assessed by western blotting.\u00a0(C) IL-4 induces a global increase in histone H3 acetylation. BMDMs were stimulated with IL-4 over the time course indicated, followed by analysis of histone H3 acetylation by western blotting. Bottom, quantitation of acetylated H3 over total H3.\u00a0(D, E) Akt regulates inducible H3 (D) and H4 (E) acetylation at some M2 genes. BMDMs stimulated with IL-4 for 16 hr +/- Akt inhibitor pretreatment were subject to ChIP analysis using antibodies to acetylated H3 or acetylated H4. Enrichment of the indicated M2 gene promoters was assessed by qRT-PCR. The student\u2019s t-test was used to determine statistical significance, defined as *P<0.05, **P<0.01, and ***P<0.001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11612/elife-11612-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) M2 gene induction is dependent on Stat6. WT and Stat6 KO BMDMs were stimulated with IL-4 followed by analysis of M2 gene induction by qPCR.\u00a0(B) IL-4 signaling activates the Jak-Stat and Akt-mTORC1 pathways. Receptor ligation activates the latent activity of Jak1 and Jak3 kinases, leading to phosphorylation and activation of Stat6. Jak-mediated phosphorylation of the IL-4R also allows engagement of the adaptor protein IRS2. IRS2 recruits PI3K, which generates PIP3 from PIP2 at the plasma membrane, followed by recruitment, phosphorylation, and activation of Akt. Activated Akt phosphorylates and inactivates the TSC complex, a negative regulator of mTORC1, to activate mTORC1.\u00a0(C) Stat6 transcriptional activity is not affected by block of Akt activity. BMDMs were transfected with a Stat6-dependent luciferase reporter, followed by 16 hr IL-4 stimulation +/- Akt inhibitor pretreatment. Stat6 activity was assessed by a luciferase assay. The student\u2019s t-test was used to determine statistical significance, defined as *P<0.05, **P<0.01, and ***P<0.001.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11612/elife-11612-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) IL-4 increases global histone acetylation in an Akt-dependent manner. BMDMs stimulated as indicated were analyzed by western blotting for H3 and H4 acetylation.\u00a0(B) Quantitation of the western blotting data in A.\u00a0(C) IL-4 induces an increase in H3, H3K27, and H4 acetylation at promoters of M2 genes. BMDMs were stimulated with IL-4 over the time course indicated, followed by ChIP analysis to examine H3, H3K27, and H4 acetylation at M2 gene promoters.\u00a0(D) Akt regulates Pol II recruitment at some M2 genes. BMDMs stimulated for 16 hr with IL-4 +/- Akt inhibitor pretreatment were subject to ChIP analysis using antibodies to Pol II. Enrichment of the indicated M2 gene promoters was assessed by qRT-PCR. The student\u2019s t-test was used to determine statistical significance, defined as *P<0.05, **P<0.01, and ***P<0.001.\n\nThe IL-4R activates Jak-Stat signaling as well as Akt-mTORC1 signaling in macrophages (Byles et al., 2013) (Figure 2\u2014figure supplement 1B). Receptor ligation activates the latent activity of Jak1 and Jak3 kinases, leading to phosphorylation and activation of Stat6, as well as engagement of the adaptor protein IRS2. IRS2 recruits PI3K, which generates PIP3 from PIP2 leading to phosphorylation and activation of Akt. Activated Akt phosphorylates and inactivates the TSC complex, a negative regulator of mTORC1, to activate mTORC1. While the precise relationship between Jak-Stat and Akt-mTORC1 signaling remains unclear, the data in Figure 2A and Figure 2\u2014figure supplement 1A suggest that they may operate in parallel and independently downstream of the IL-4R. Indeed, IL-4-mediated increases in Stat6 activation, as indicated by phosphorylation on Y641, was not affected in the presence of an Akt inhibitor (Figure 2B). Stat6 activity as measured by a Stat6-dependent luciferase reporter was also not impaired by inhibition of Akt activity (Figure 2\u2014figure supplement 1C). Conversely, WT and Stat6 KO BMDMs could similarly activate Akt, as indicated by phosphorylation on S473, as well as mTORC1, as indicated by phosphorylation of the mTORC1 target S6K, in response to IL-4 (Figure 2B). These findings support the idea that the Jak-Stat and Akt-mTORC1 pathways are independent signaling branches downstream of the IL-4R, and suggest a basis by which all M2 genes are controlled by Stat6 while a subset receives additional inputs from the Akt-mTORC1 pathway.\n\nHow might Akt signaling regulate a subset of M2 genes? A seminal study from Wellen and colleagues indicated that in cancer cells and differentiating adipocytes, metabolic state is linked to gene expression via effects on histone acetylation (Wellen et al., 2009), thus we hypothesized that Akt may control histone acetylation to regulate M2 gene expression. Indeed, IL-4-treatment of BMDMs enhanced global acetylation of H3 and H4 histones, as indicated by western blot of whole cell lysates (Figure 2C, Figure 2\u2014figure supplement 2A,B). Importantly, IL-4-inducible increases in global H3 and H4 acetylation were reduced by cotreatment with an Akt inhibitor, indicating at least partial dependence on Akt (Figure 2\u2014figure supplement 2A,B). In contrast, tubulin acetylation was not modulated by IL-4 treatment (Figure 2\u2014figure supplement 2A,B). We next examined gene-specific patterns of H3 and H4 acetylation by chromatin immunoprecipitation (ChIP) experiments. IL-4 treatment increased H3 and H4 acetylation at promoters of M2 genes (Figure 2D,E, Figure 2\u2014figure supplement 2C), with the degree of inducible acetylation correlating fairly well with the degree of gene induction (Figure 2A). Interestingly, such increases in H3 and H4 acetylation were reduced by an Akt inhibitor at M2 genes induced in an Akt-dependent manner (Arg1, Retnla, Mgl2), but not at M2 genes induced independently of Akt (Chi3l3, Cd36, Fabp4) (Figure 2D,E). Pol II recruitment to M2 gene promoters paralleled H3 and H4 acetylation, and was controlled by Akt at M2 genes induced in an Akt-dependent manner (Figure 2\u2014figure supplement 2D). Together, these findings support the hypothesis that Akt regulates histone acetylation and Pol II recruitment at a subset of M2 genes.\n\n### Akt regulates Acly phosphorylation to control Ac-CoA production in M2 macrophages\n\nHow might Akt regulate increased histone acetylation in M2 macrophages? We hypothesized that Akt may control production of Ac-CoA, the metabolic substrate for histone acetylation. Using quantitative stable isotope dilution-LC-MS, we found that IL-4 treatment led to a maximal increase in Ac-CoA levels of ~40\u201375% (Figure 3A,C). A key regulator of Ac-CoA production is the enzyme Acly, which cleaves cytosolic citrate to produce a nuclear-cytoplasmic pool of Ac-CoA (Wellen et al., 2009). Akt has been shown to phosphorylate and activate Acly (Berwick et al., 2002; Lee et al., 2014), and we found that in M2 macrophages, IL-4 treatment stimulated the activating phosphorylation of Acly in an Akt-dependent manner (Figure 3B, Figure 3\u2014figure supplement 1A). Use of lysates from MEFs transfected with ACLY siRNA confirmed specificity in detection of phosphorylated and total Acly (Figure 3\u2014figure supplement 1B). Importantly, cotreatment with Akt or Acly inhibitors blocked the IL-4-mediated increases in Ac-CoA levels (Figure 3C), indicating Akt- and Acly-mediated control of Ac-CoA production in M2 macrophages. Conversely, citrate, the substrate for the Acly reaction, accumulated in the presence of the inhibitors (Figure 3\u2014figure supplement 1C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/11612/elife-11612-fig3-v1.jpg)\n\n**Figure 3.:** (A) IL-4 treatment increases Ac-CoA production. BMDMs were stimulated for the indicated time periods with IL-4, followed by analysis of Ac-CoA levels by LC-MS.\u00a0(B) Akt regulates IL-4-inducible Acly phosphorylation. BMDMs were stimulated as indicated, followed by analysis of Acly phosphorylation by western blotting. Arrow indicates phospho-Acly.\u00a0(C) Akt and Acly regulate IL-4-inducible production of Ac-CoA. BMDMs stimulated for 16 hr with IL-4 +/- inhibitor pretreatment were analyzed for levels of Ac-CoA by LC-MS.\u00a0(D) BMDMs were stimulated or not for 12 hr with IL-4, followed by a 2 hr incubation with 13C6-glucose, 13C16-palmitate, or 13C5-glutamine. Carbon tracing into Ac-CoA was assessed by LC-MS. Data shows arbitrary units of labeled 13C (M+2) in the different conditions. The student\u2019s t-test was used to determine statistical significance, defined as *P<0.05, **P<0.01, and ***P<0.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11612/elife-11612-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Quantitation of the Acly phosphorylation from Figure 3B.\u00a0(B) Knockdown of Acly in MEFs. Lysates from MEFs transfected with control siRNA (siCT) or siRNA to Acly (siAcly) were run next to BMDM lysates to unequivocally identify the bands corresponding to p-Acly and total Acly.\u00a0(C) Citrate accumulates upon block of Akt or Acly activity. Citrate levels in BMDMs from the steady state metabolomics experiment in Figure 1A. The student\u2019s t-test was used to determine statistical significance, defined as *P<0.05, **P<0.01, and ***P<0.001.\n\nNext, we asked about the carbon source of the Ac-CoA that supports optimal M2 gene induction. Untreated or IL-4-treated BMDMs were incubated with 13C6-glucose, 13C16-palmitate, 13C5-glutamine, followed by carbon tracing into Ac-CoA as assessed by LC-MS (Figure 3D). IL-4 treatment enhanced 13C (M+2) Ac-CoA labeling regardless of the tracer, indicating that all three metabolic fuels contributed to the elevated Ac-CoA pool. The highest labeling was observed in BMDMs fed palmitate. While LC-MS does not specifically measure the nuclear-cytosolic pool of Ac-CoA, these data suggests that palmitate may be the major carbon source for histone acetylation in M2 macrophages (Figure 3D).\n\n### Acly regulates gene-specific histone acetylation to control M2 activation\n\nThese data prompted us to investigate a role for Acly in M2 activation. Indeed, the Acly inhibitor SB-204990 reduced IL-4-mediated induction of Akt-dependent M2 genes (Arg1, Retnla, Mgl2) but not Akt-independent M2 genes (Chi3l3, Fabp4, Cd36) (Figure 4A). The structurally distinct Acly inhibitor MEDICA 16 had similar effects, indicating specificity in inhibition (data not shown). Moreover, SB-204990 treatment attenuated IL-4-mediated increases in H3 and H4 acetylation at promoters of Akt-dependent M2 genes, but not Akt-independent M2 genes (Figure 4B, Figure 4\u2014figure supplement 1A). Likewise, SB-204990 treatment diminished Pol II recruitment at Akt-dependent M2 genes (Figure 4\u2014figure supplement 1B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/11612/elife-11612-fig4-v1.jpg)\n\n**Figure 4.:** (A) Acly regulates induction of some M2 genes. BMDMs stimulated for 16 hr with IL-4 +/- Acly inhibitor pretreatment were analyzed for M2 gene induction by qRT-PCR.\u00a0(B) Acly regulates inducible H3 acetylation at some M2 genes. BMDMs stimulated for 16 hr with IL-4 +/- Acly inhibitor pretreatment were subject to ChIP analysis using antibodies to acetylated H3. Enrichment of the indicated M2 gene promoters was assessed by qRT-PCR.\u00a0(C) The p300 inhibitor C646 reduces induction of some M2 genes. BMDMs stimulated for 16 hr with IL-4 +/- C646 pretreatment were analyzed for M2 gene induction by qRT-PCR.\u00a0(D) Akt and Acly control IL-4-inducible arginase activity. BMDMs were stimulated for IL-4 for 24 hr +/- inhibitor pretreatment, followed by analysis of arginase activity in cellular lysates as assessed by urea production. The student\u2019s t-test was used to determine statistical significance, defined as *P<0.05, **P<0.01, and ***P<0.001.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11612/elife-11612-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Acly regulates inducible H4 acetylation at some M2 genes. BMDMs stimulated for 16 hr with IL-4 +/- Acly inhibitor pretreatment were subject to ChIP analysis using antibodies to acetylated H4. Enrichment of the indicated M2 gene promoters was assessed by qRT-PCR.\u00a0(B) Acly regulates Pol II recruitment at some M2 genes. BMDMs stimulated for 16 hr with IL-4 +/- Acly inhibitor pretreatment were subject to ChIP analysis using antibodies to Pol II. Enrichment of the indicated M2 gene promoters was assessed by qRT-PCR. The student\u2019s t-test was used to determine statistical significance, defined as *P<0.05, **P<0.01, and ***P<0.001.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11612/elife-11612-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Elicited peritoneal macrophages were treated for 16 hr with IL-4 +/- the indicated inhibitors, followed by analysis of M2 gene induction by qRT-PCR.\n\nBecause Akt and Acly regulate a global increase in Ac-CoA levels (Figure 3C) but control inducible histone acetylation only at some M2 gene promoters (Figure 2D,E, 4B, and Figure 4\u2014figure supplement 1A), Ac-CoA production is necessary but not sufficient for stimulating gene-specific increases in histone acetylation, which must be conferred by specific transcription factors and histone acetyltransferases (HATs). The activity of some HATs, including p300, is regulated by Ac-CoA levels and metabolic status\u00a0(Mari\u00f1o et al., 2014;\u00a0Pietrocola et al., 2015). Interestingly, the p300 inhibitor C646 reduced induction of Akt-dependent but not Akt-independent M2 genes (Figure 4C). Therefore, p300 may link the Akt/Acly-dependent rise in Ac-CoA levels to increased histone acetylation and gene induction at some Akt-dependent M2 genes, while distinct HATs at Akt-independent genes are insensitive to such modulation of Ac-CoA levels.\n\nArginase activity is a hallmark feature of M2 activation that supports collagen production and polyamine synthesis (Van Dyken and Locksley, 2013). Consistent with effects on induction of Arg1, arginase activity was regulated by Acly and Akt (Figure 4D). Additionally, Akt and Acly inhibitors reduced induction of Akt-dependent M2 genes in peritoneal-elicited macrophages, indicating that control of M2 activation by the Akt-Acly axis may be applicable to multiple macrophage populations (Figure 4\u2014figure supplement 2). Finally, induction of M2 gene expression by IL-13, a cytokine closely related to IL-4 that also triggers M2 activation (Van Dyken and Locksley, 2013), was also dependent on Akt and Acly (data not shown).\n\n### mTORC1 regulates Acly protein levels in M2 macrophages\n\nOur findings that Akt regulates Acly activity to control Ac-CoA production and M2 activation led us to consider a role for mTORC1 in this process. mTORC1 is a key downstream effector of Akt signaling and their activities are intricately linked in many settings ([Dibble and Manning, 2013; Pollizzi and Powell, 2014; Laplante and Sabatini, 2012]\u00a0and Figure 2\u2014figure supplement 1B). Indeed, we found that induction of Akt-dependent M2 genes was deficient in BMDMs lacking Raptor, a defining subunit of the mTORC1 complex (Dibble and Manning, 2013). In contrast, induction of Akt-independent M2 genes was not reduced (Figure 5A). mTORC1 is known to stimulate Acly expression (Porstmann et al., 2008; D\u00fcvel et al., 2010), and we found that Raptor-deficient BMDMs expressed lower levels of Acly protein (Figure 5B). Conversely, BMDMs with constitutive mTORC1 activity resulting from deletion of Tsc1 (Byles et al., 2013), a negative regulator of mTORC1 (Dibble and Manning, 2013), displayed elevated Acly levels that were reduced by treatment with the mTORC1 inhibitor rapamycin (Figure 5\u2014figure supplement 1). Additionally, we noted that IL-4-inducible Acly phosphorylation was reduced in Raptor-deficient BMDMs (Figure 5B). This raises the possibility that mTORC1 could also regulate Acly activating phosphorylation, through mechanisms that remain to be clarified in future studies. Taken together, these data indicate that the Akt-mTORC1 axis controls Acly activating phosphorylation and protein levels, likely contributing to its control of M2 activation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/11612/elife-11612-fig5-v1.jpg)\n\n**Figure 5.:** (A) mTORC1 regulates M2 activation. M2 gene expression in Raptorfl/fl and Raptor\u25b3/\u25b3 BMDMs stimulated with IL-4 for 16 hr as assessed by qRT-PCR.\u00a0(B) mTORC1 regulates Acly protein levels. Acly protein expression in Raptorfl/fl and Raptor\u25b3/\u25b3 BMDMs stimulated as indicated.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11612/elife-11612-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Tsc1fl/fl and Tsc1\u25b3/\u25b3 BMDMs were treated with rapamycin or not for the indicated time periods, followed by analysis of levels of Acly by western blotting.\n\n### The Akt-mTORC1 pathway couples metabolic input to induction of some M2 genes\n\nThe Akt-mTORC1 pathway is a major metabolic sensor, and mTORC1 activity in particular is controlled by amino acid levels, ADP/ATP levels, and other metabolic inputs (Dibble and Manning, 2013; Laplante and Sabatini, 2012). Therefore, we considered that incorporation of the Akt-mTORC1 pathway into IL-4 signaling, parallel to canonical Jak-Stat signaling, may allow particular subsets of the M2 transcriptional program to integrate signals reflecting the cellular metabolic state (Figure 6A). Amino acids directly and potently regulate mTORC1 activity independent of the TSC complex (Dibble and Manning, 2013; Laplante and Sabatini, 2012) and can also activate Akt in some contexts (Tato et al., 2011; Novellasdemunt et al., 2013), hence we varied amino acid concentrations as a way to modulate Akt-mTORC1 activity. As expected, mTORC1 activity, as assessed by phosphorylation of its downstream target S6K, was greatly reduced in amino acid deficient media and intermediate in media containing low levels of amino acids (Figure 6B). In line with (Tato et al., 2011; Novellasdemunt et al., 2013), increasing amino acid levels also augmented Akt activation, as indicated by enhanced phosphorylation on two critical residues, T308 and S473 (Figure 6B). Titrating amino acids had no effect on Stat6 phosphorylation and activation (Figure 6B), validating the use of this experimental model to modulate the Akt-mTORC1 axis independent of canonical Stat6 signaling. Consistent with effects on mTORC1 and Akt activity, amino acid levels dose dependently increased Acly phosphorylation and protein levels (Figure 6B) as well as Ac-CoA production (Figure 6C). Importantly, amino acids potentiated induction of Akt-dependent but not Akt-independent M2 genes (Figure 6D). This effect of amino acids was at least partially Raptor-dependent, indicating a critical role for mTORC1 in this process (Figure 6\u2014figure supplement 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/11612/elife-11612-fig6-v1.jpg)\n\n**Figure 6.:** (A) Proposed model for how Akt-mTORC1-Acly signaling exerts gene-specific control of M2 activation. Akt-TORC1-Acly signaling integrates metabolic input to control levels of Ac-CoA production, which modulates histone acetylation and gene induction at some M2 genes by HATs such as p300.\u00a0(B) Amino acid levels modulate the activity of the Akt-mTORC1-Acly axis. BMDMs cultured in media containing varying levels of amino acids (normal, low, or no) were stimulated with IL-4 for the indicated time periods, followed by analysis of Akt, mTORC1, and Acly activity by western blotting.\u00a0(C) Amino acid levels modulate Ac-CoA production. BMDMs stimulated as in B. were harvested for LC-MS analysis of Ac-CoA levels after 12 hr IL-4 stimulation.\u00a0(D) Amino acid levels modulate induction of some M2 genes. BMDMs stimulated as in B. were harvested for qRT-PCR analysis of M2 gene induction after 9 hr IL-4 stimulation.\u00a0(E) Leucine deficiency attenuates the activity of the Akt-mTORC1-Acly axis. BMDMs cultured in leucine-replete or leucine-deficient media were stimulated with IL-4 for the indicated time periods, followed by analysis of Akt, mTORC1, and Acly activity by western blotting. Right, quantitation of Acly phosphorylation.\u00a0(F) Leucine deficiency reduces induction of some M2 genes. BMDMs stimulated as in E. were harvested for qRT-PCR analysis of M2 gene induction after 16 hr IL-4 stimulation. The student\u2019s t-test was used to determine statistical significance, defined as *P<0.05, **P<0.01, and ***P<0.001.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11612/elife-11612-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Raptorfl/fl and Raptor\u25b3/\u25b3 BMDMs were stimulated as in the experiment shown in Figure 6D, followed by analysis of M2 gene expression by qRT-PCR. IL-4-stimulated gene expression in the absence of amino acids is arbitrary set at 1.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11612/elife-11612-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Analysis of ATM M2 activation in fed and fasted mice. Mice (n=4/group) were allowed to feed ad-lib or fasted O/N prior to their sacrifice. The ATM-containing stromal vascular fraction of perigonadal white adipose tissue was obtained for analysis of Akt activity by western blotting (A); H3 acetylation by western blotting (A,\u00a0B); expression of M2 genes by qRT-PCR (C); and expression of IL-13 by qRT-PCR (D). The student\u2019s t-test was used to determine statistical significance, defined as *P<0.05, **P<0.01, and ***P<0.001.\n\nWe also examined M2 activation using the complementary model of leucine deprivation, since leucine is particularly critical in regulation of mTORC1 activity (Hara et al., 1998). Here comparisons were made between culture conditions that differed only in the presence or absence of one amino acid, without significant effects on total levels of amino acids. Culture in leucine-deficient media attenuated IL-4-inducible mTORC1 and Akt activity and Acly phosphorylation, but not Stat6 phosphorylation (Figure 6E). Importantly, leucine deficiency selectively reduced expression of Akt-dependent M2 genes (Figure 6F). Taken together, these results indicate that amino acids and likely other metabolic inputs feed into the Akt-mTORC1 axis to calibrate M2 activation to the metabolic state (Figure 6A).\n\nFinally, we found that physiological changes to nutrient levels can modulate M2 activation in adipose tissue macrophages (ATMs). ATM M2 polarization is thought to critically maintain insulin sensitivity in white adipose tissue, so such feeding-induced increases in M2 activation may coordinate responses to nutrient influx to mediate metabolic homeostasis in the postprandial state\u00a0(Odegaard and Chawla, 2011). Specifically, we found that Akt activation was increased in the fed state compared to the fasted state in the ATM-containing stromal vascular (SVF) fraction of the white adipose tissue (Figure 6\u2014figure supplement 2A). Although we were unable to reliably detect pAcly or Acly in the SVF for technical reasons, global H3 acetylation (Figure 6\u2014figure supplement 2A\u2013B) and M2 gene expression (Figure 6\u2014figure supplement 2C) followed a similar pattern and were elevated in the fed state. Expression of all M2 genes was elevated in the fed state (Figure 6\u2014figure supplement 2C), consistent with an important role for IL-13, a critical regulator of ATM M2 polarization (Odegaard and Chawla, 2011) that is increased in the fed state (Figure 6\u2014figure supplement 2D), in feeding-induced ATM polarization, although postprandial elevations in nutrients like amino acids and glucose may also contribute. Therefore, feeding-inducible Akt activity correlated with increases in histone acetylation and M2 activation in ATMs.\n\n### Akt and Acly regulate functional subsets of the M2 program\n\nWe employed genome wide transcriptional profiling to obtain a comprehensive view of regulation of M2 activation by the Akt-Acly pathway. BMDMs were treated for 16\u2009hr with IL-4 with or without Akt or Acly inhibitors, followed by RNA seq (Figure 7) or microarray analysis (data not shown). In the RNA seq analysis, 758 genes were induced >2.0 fold by IL-4, of which 91were downregulated >30% by both Akt and Acly inhibitors (including Arg1, Retnla, and Mgl2), confirming critical roles for Akt and Acly in control of M2 activation as well as substantial overlap in the activities of the two proteins (Figure 7A,B). A subset of Akt inhibitor sensitive genes was sensitive to Acly inhibitor (91/327), in line with a broader role for Akt in control of cell physiology. In contrast, most genes sensitive to Acly inhibitor were sensitive to Akt inhibitor (91/118). This indicates that in the context of M2 activation, Acly is a major target of Akt and is critically controlled by Akt activity, likely in regulation of Ac-CoA production and histone acetylation at M2 genes (Figure 7A,B).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/11612/elife-11612-fig7-v1.jpg)\n\n**Figure 7.:** (A) Venn diagram depicting the number of IL-4-inducible genes regulated by Akt and/or Acly signaling.\u00a0(B) Heatmap of normalized rank ordered Log2 RPKM values of top 50 IL-4 response genes co-regulated by Akt and Acly.\u00a0(C) Heatmap of enriched KEGG pathways within the cohort of IL-4-inducible genes.\u00a0(D) Heatmap of enriched Gene Ontology terms within the cohort of IL-4-inducible genes.\u00a0(E) qPCR analysis validates regulation of chemokine and Ear genes by Akt-Acly signaling. BMDMs were stimulated with IL-4 for 16 hr +/- Akt or Acly inhibitor.\u00a0(F) ELISA analysis indicates that Akt-Acly signaling regulates production of CCL17 and CCL24. BMDMs were stimulated with IL-4 for 36 hr +/- Akt or Acly inhibitor. The student\u2019s t-test was used to determine statistical significance, defined as *P<0.05, **P<0.01, and ***P<0.001.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11612/elife-11612-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) The Akt-mTORC1-Acly pathway couples metabolic input to control of particular subsets of the M2 program, including chemokines and cellular proliferation.\u00a0(B) p300 links metabolic status and Akt-mTORC1 activity in the form of Ac-CoA levels to M2 gene induction. p300 has a high Km and is\u00a0responsive to changes in the levels of its substrate, allowing it to couple increased Ac-CoA levels to enhanced histone acetylation at some Akt-dependent M2 genes. In contrast, HATs at Akt-independent M2 genes (not shown) have low Km and are relatively insensitive to metabolic status and changing Ac-CoA levels.\n\nGene enrichment analysis of the 91 Akt- and Acly-coregulated genes identified preferential enrichment of several pathways, including cell cycle and DNA replication (Figure 7C,D). IL-4 triggered BrdU labeling of a subset of BMDMs in vitro (data not shown) and proliferation of macrophages in vivo (Ruckerl et al., 2012), thus IL-4 may stimulate macrophage proliferation in an Akt- and Acly-dependent manner. Consistently, metabolic processes underlying cellular proliferation were among the top enriched pathways in our metabolomics analysis, including nucleotide metabolism and protein biosynthesis (Figure 1A). Interestingly, chemokines were also enriched in Akt- and Acly-coregulated genes (Figure 7C\u2013D), including Ccl2, Ccl7, Ccl17, and Ccl24. Akt- and Acly-dependent induction of CCL17 and CCL24 was confirmed by qRT-PCR and ELISA (Figure 7E\u2013F). Finally, genes in the eosinophil associated ribonucleases (Ear) family were found to be regulated by Akt and Acly. While barely missing the stringent cutoffs that we set for the RNA-seq analysis, qPCR analysis confirmed coregulation of Ear2, Ear11, and Ear12 genes by the Akt-Acly pathway (Figure 7E). Ear genes are of interest because Ear2 and Ear11 are thought to have chemoattractant activity for dendritic cells and macrophages and are known to be highly induced in settings of Type 2 inflammation (Cormier et al., 2002; Yamada et al., 2015). Therefore, the transcriptional profiling analysis indicated that the Akt-Acly pathway controls selective subsets of the M2 program to allow their modulation by metabolic input (Figure 7\u2014figure supplement 1A). As M2 macrophages play a key role in metabolic homeostasis, parasite infection, allergic diseases, and wound healing and tissue repair (Van Dyken and Locksley, 2013; Odegaard and Chawla, 2011), these findings are relevant for metabolic control of macrophage function in diverse contexts.\n\n## Discussion\n\nThe Akt-mTORC1 pathway has a well-established role in promoting anabolic metabolism in growing/proliferating cells, tumor cells, and metabolic tissues. In the context of cellular proliferation, for example, Akt-mTORC1 activity couples growth factor signaling and nutrient availability to the synthesis of proteins, lipids, and nucleotides (Dibble and Manning, 2013). In contrast, the role of the Akt-mTORC1 pathway in macrophages is much less intuitive. What is the teleological rationale for control of macrophage activation by Akt-mTORC1 signaling (and metabolism more generally)?\n\nHere we propose that IL-4 signaling co-opted the Akt-mTORC1 pathway to couple metabolic input to regulation of certain components of the M2 response, including chemokines and cellular proliferation (Figure 7\u2014figure supplement 1A). This is supported by our findings that IL-4 signaling leads to parallel and independent activation of the Akt-mTORC1 pathway and the canonical Jak-Stat pathway, allowing the Akt-mTORC1 axis to regulate a subset of M2 genes through control of Acly activity/expression, Ac-CoA production, and histone acetylation. Why should some but not other components of the M2 response be regulated in this way? Control of cellular proliferation is intuitive, since Akt-mTORC1 signaling acts as a metabolic checkpoint in the context of cellular division to allow growth and proliferation only when nutrients are abundant. What about chemokines? We propose that chemokines may be controlled by the Akt-mTORC1 pathway because of their key role in amplifying energetically costly immune responses (Hotamisligil and Erbay, 2008). This allows metabolic status to calibrate immune responses such that inflammation is amplified and sustained only under metabolically favorable conditions. Interestingly, previous studies have shown that a critical role for Akt-mTORC1 signaling in activated CD8\u2009T cells is to support their migration to sites of inflammation (Finlay and Cantrell, 2011). Therefore, Akt-mTORC1 signaling regulates both facets of immune response amplification, i.e., the ability of tissue-resident sentinel cells to mobilize activated leukocytes and of activated T cells to be recruited. Together these findings add another dimension to our emerging understanding of how metabolism supports leukocyte activation and immune responses.\n\nAs discussed above, the Akt/Acly-dependent rise in Ac-CoA production is necessary but not sufficient for stimulating gene-specific increases in histone acetylation. Such specificity is most likely conferred by HATs with distinct Km (Pietrocola et al., 2015). Indeed, our analysis suggests that p300 may preferentially regulate at least a subset of the Akt-dependent M2 genes (Figure 4C). Its high Km (Mari\u00f1o et al., 2014; Pietrocola et al., 2015) may allow p300 to link metabolic status and Akt/mTORC1 activity, in the form of Ac-CoA levels, to histone acetylation and transcriptional induction at some M2 genes (Figure 7\u2014figure supplement 1B). In contrast, HATs at Akt-independent M2 genes may have a low Km and are thus insensitive to such modulation of Ac-CoA levels. Presumably, differential HAT recruitment is mediated by distinct transcription factors at Akt-dependent and independent M2 genes, which would be important to address in future studies.\n\nAlthough Akt activity has been linked to M2 activation, (Byles et al., 2013; Ruckerl et al., 2012), the role of mTORC1 remained unclear. Here, we use Raptor\u25b3/\u25b3 BMDMs to show that mTORC1 activity stimulates M2 activation (Figure 5A). Furthermore, amino acids modulate mTORC1 activity (Figure 6B) to potentiate M2 gene induction in a Raptor-dependent manner (Figure 6D, Figure 6\u2014figure supplement 1). Together these findings indicate that the Akt-mTORC1 signaling module supports M2 activation. Acly appears to be a key target, with its expression levels and activating phosphorylation controlled by mTORC1 and Akt respectively. In seeming contrast to these data indicating that mTORC1 supports M2 activation, we and others have shown that aberrantly increased mTORC1 activity in Tsc1-deficient BMDMs attenuates M2 activation (Byles et al., 2013; Zhu et al., 2014). We hypothesize that the difference between the two models reflects divergent control of M2 activation by physiological and pathophysiological mTORC1 activity respectively. Downstream of the insulin receptor, such context-dependent roles of mTORC1 are well-established. In lean/healthy animals, mTORC1 critically mediates insulin signaling in metabolic tissues (to coordinate postprandial nutrient storage), but in obesity, chronic nutrient excess leads to an aberrant increase in mTORC1 activity that contributes directly to insulin resistance and metabolic dysregulation\u00a0(Laplante and Sabatini, 2012). Similarly, while physiological mTORC1 activity couples metabolic input to M2 activation, pathophysiological mTORC1 activation during chronic nutrient excess may impair M2 activation. It would be interesting to see if the latter is true in adipose tissue macrophages in the context of diet-induced obesity, and if so, the consequences for tissue inflammation and metabolic homeostasis.\n\nInterestingly, while inducible Akt phosphorylation occurred within minutes of IL-4 stimulation (Figure 2B), inducible Acly phosphorylation was detected with slightly delayed kinetics (~2\u2009h, Figure 5B and data not shown). Such delay may reflect a need for other inputs that facilitate Akt-mediated Acly phosphorylation, or the reduced sensitivity and dynamic range of the pAcly antibody compared to the pAkt antibodies. Once pAcly is detectable at ~2\u2009h, Akt and Acly phosphorylation nicely parallel and steadily increase up to (and perhaps beyond) 8\u2009hr (Figure 5B). As expected, inducible Akt and Acly phosphorylation precede increases in global histone acetylation, which is observed starting only at 4\u2009hr (Figure 2C). However, Ac-CoA levels increase only 8\u2009hr after IL-4 stimulation (Figure 3A). One possibility, supported by the increase in global histone acetylation at 4\u2009h, is that diversion of Ac-CoA into acetylated histones diminishes the free Ac-CoA pool. Another possibility is that because the LC-MS analysis measures bulk Ac-CoA rather than the nuclear-cytoplasmic pool relevant for histone acetylation, changes in mitochondrial Ac-CoA levels could be confounding. Again, global histone acetylation, which may more accurately reflect nuclear-cytoplasmic pools of Ac-CoA, increases 4\u2009hr after IL-4 treatment (Figure 2C), as does gene-specific increases in histone acetylation at Akt-dependent M2 genes (Figure 2\u2014figure supplement 2C). Therefore, we believe that the preponderance of the data support our model that IL-4 triggers Ac-CoA production and histone acetylation as a consequence of Akt-mediated Acly activation.\n\nMetabolic status has long been proposed to modulate epigenetic control of gene expression (Teperino et al., 2010; Kaelin and McKnight, 2013; Gut and Verdin, 2013), but only recently have a handful of studies linked physiological changes in metabolite levels to chromatin regulation of gene expression (Wellen et al., 2009; Lee et al., 2014; Shimazu et al., 2013; Carey et al., 2015). Here we show how the Akt-mTORC1 axis couples metabolic input in the form of Ac-CoA levels to histone acetylation and gene regulation, and importantly, to control specific subsets of the M2 program. In addition to a recent study (Lee et al., 2014), this is only the second example of how Akt-Acly signaling controls gene regulation through histone acetylation. Other macrophage polarizing signals and common gamma chain cytokines (\u03b3c) (e.g. IL-2, IL-15) engage the Akt-mTORC1 axis, thus our findings may have implications for multiple programs of macrophage polarization and leukocyte activation. Canonical signaling downstream of the polarizing signal or \u03b3c specifies which genes are induced, while regulation of Ac-CoA levels and histone acetylation by the Akt-mTORC1-Acly pathway allows metabolic input to calibrate genes encoding energetically demanding processes; it would be informative in future studies to determine the nature of these processes. Alternatively, Ac-CoA can be synthesized independently of the Akt-mTORC1-Acly axis by AceCS1 (Hallows et al., 2006) or nuclear pyruvate dehydrogenase (Sutendra et al., 2014) to mediate histone acetylation. AceCS1 activity is controlled by SIRT1, thus providing a means for Ac-CoA production and histone acetylation in conditions of low energy or nutrients (Hallows et al., 2006). Therefore, future studies to determine how gene-specific histone acetylation is regulated during different macrophage activation programs are warranted. These studies could pave the way towards new therapeutic approaches of modulating macrophage function in diverse contexts, including Type 2 inflammation, metabolic homeostasis, and antimicrobial immunity.\n\n## Materials and methods\n\n### BMDM culture and stimulations\n\nBMDM cultures were established as described (Byles et al., 2013). For stimulations, BMDMs were pretreated for 1\u2009hr with inhibitors followed by addition of 10 ng/ml IL-4 for 16\u2009hr unless otherwise indicated. Inhibitors were used as follows: AKT inhibitor MK-2206, 2\u20135 \u03bcM (Selleck,\u00a0Houston, TX); ACLY inhibitor SB-204990, 40 \u03bcM (Tocris,\u00a0United Kingdom); p300 inhibitor C646, 10 \u03bcM; etomoxir, 200 \u03bcM (Sigma,\u00a0St. Louis, MO), and 2-deoxy-glucose, 1 mM (Sigma). For amino acid titration experiments, BMDMs were plated in DMEM containing low levels of amino acids for 6\u2009hr (to deplete cellular amino acid pools) prior to changing the media to DMEM with varying levels of amino acids (no, low, or normal) +/- IL-4 for 16\u2009hr. Normal is normal tissue culture media, while low indicates media containing 5% of the normal levels of amino acids (obtained by mixing normal media and media lacking amino acids). In experiments with leucine free media, BMDMs were stimulated in complete DMEM or \u2013Leu complete DMEM (Crystalgen,\u00a0Commack, NY) +/- IL-4 for 16\u2009hr. Tsc1\u25b3/\u25b3 BMDMs were described previously (Byles et al., 2013). BMDMs from UbiquitinC-CreERT2 Raptorfl/fl mice were treated with tamoxifen to delete Raptor; parallel treatment of Raptorfl/fl BMDMs were used as controls.\n\n### Mice\n\nC57BL/6 mice were used for in vivo studies and as a source of BMDMs. Mice were maintained at Harvard Medical School and all procedures were performed in accordance with the guidelines set forth by the Institutional Animal Care and Use Committees at the institution. To generate UbiquitinC-CreERT2 Raptorfl/fl mice, previously described Raptorfl/fl mice (Sengupta et al., 2010) were crossed with UbiquitinC-CreERT2 mice (The Jackson Laboratory,\u00a0Bar Harbor, ME) in David Sabatini\u2019s laboratory at the Whitehead Institute in Cambridge, Massachusetts, in accordance with the guidelines set forth by the Institutional Animal Care and Use Committee at the institution.\n\n### Immunoblotting\n\nCells were lysed directly in 6X SDS loading buffer (histone western blots) or in 1% NP-40 buffer (all other western blots). Protein concentration was determined using the Bradford method. Primary antibodies were purchased from Cell Signaling except for \u03b1-Tubulin (Sigma), acetylated Tubulin (Sigma), acetylated H3 (Millipore,\u00a0Germany), acetylated H4 (Millipore), and total H4 (Abcam,\u00a0Cambridge, MA).\n\n### Arginase assay\n\nArginase assay was done as described (Byles et al., 2013).\n\n### Extracellular flux assays\n\nOxygen consumption and extracellular acidification rates were measured with a XF96 extracellular flux analyzer (Seahorse Bioscience,\u00a0North Billerica, MA). Seahorse assay media containing 11 mM glucose or plain assay media was used for the mitochondrial and glycolysis stress tests respectively. OCR measurements were taken before and after the sequential addition of 1 \u03bcM oligomycin, 1.5 \u03bcM FCCP and 2 \u03bcM antimycin/rotenone (Sigma). ECAR measurements were taken before and after the sequential addition of 11 mM glucose, 1 \u03bcM oligomycin and 0.5 M 2-DG (Sigma). Values were normalized with Hoechst 33342 staining (Life Technologies, Carlsbad, CA).\n\n### Glucose uptake\n\nBMDMs were washed with Krebs-Ringer bicarbonate HEPES (KRBH) buffer once, followed by addition of 400 \u03bcl KRBH buffer. 100 \u03bcl loading buffer (KRBH buffer with 0.5 mM 2-deoxy-D-glucose (Sigma) and 1 \u03bcCi/well 3H-deoxy-D-glucose (2-3H[G]) (PerkinElmer, Waltham, MA, 1 mCi/ml in EtOH:water [9:1]) was added and incubated at 37\u00b0C for exactly 15\u2009min. 20 \u03bcl stop solution (1.5 mM cytochalasin B (Sigma) in DMSO) was added, and the cells were washed with KRBH buffer before lysis in 0.1\u2009N NaOH. The glucose uptake rate was determined by normalizing cellular 3H-deoxy-D-glucose count to protein concentrations.\n\n### Fatty acid oxidation\n\nFatty acid oxidation was done as described (Byles et al., 2013).\n\n### Chromatin immunoprecipitation\n\nChIP was done as described (Byles et al., 2013), using acetylated H3 (Millipore 06\u2013599), acetylated H4 (Millipore 06\u2013866), or IgG (Santa Cruz,\u00a0Dallas, TX, SC-2027) antibodies. Fold enrichment was calculated as ChIP signals normalized to input. ChIP primer sequences as well as position relative to transcription start site (TSS) are provided in Supplementary file 2.\n\n### Gene expression\n\nRNA was isolated using RNA-Bee (Tel-Test,\u00a0Friendswood, TX) per manufacturers protocol. cDNA synthesis was done using High Capacity cDNA Reverse Transcription Kit (Applied Biosystems, Foster City, CA). A Bio-Rad C1000 Thermocycler was used for qPCR, and data was analyzed by means of the CFX Manger Software (Bio-Rad, Hercules, CA) using the delta/delta CT method. BMDM samples were normalized to hypoxanthine phosphoribosyltransferase while ex vivo samples were normalized to the macrophage marker CD68.\n\n### Dual luciferase assays\n\nBMDMs were electroporated using mouse macrophage nucleofector kit (Lonza,\u00a0Hopkinton, MA) and the Amaxa machine with STAT6-Firefly luciferase (Addgene,\u00a0Cambridge, MA, plasmid #35554) along with Renilla\u2013Luciferase plasmid as a transfection control. BMDMs were stimulated with or without 10 ng/ml IL-4 4\u2009hr post electroporation for another 24\u2009hr. Cell lysates were collected and analyzed using the Promega Dual-Luciferase Reporter Assay System.\n\n### Acyl-CoA mass spectometry\n\nBMDMs were lysed in 800 \u03bcl ice cold 10% TCA (Tricholoracetic acid). Sc5-sulfosalicylic acid (SSA), ammonium formate, [13C6]-glucose, sodium [13C16]-palmitate, and analytical standards for acyl-CoAs were from Sigma-Aldrich (St. Louis, MO). Optima LC-MS grade methanol, ammonium acetate, acetonitrile (ACN) and water were purchased from Fisher Scientific (Pittsburgh, PA). Calcium [13C315N1]-pantothenate was purchased from Isosciences (King of Prussia, PA). [13C315N1]-acyl-CoA internal standards for quantitation were generated by pan6 deficient yeast culture as previously described (Snyder et al., 2015), with 100 \u00b5L of extract spiked into samples before extraction. Standard curves were prepared using the same batch of internal standard, and all samples were extracted by solid phase extraction as previously described (Basu and Blair, 2012). Acyl-CoAs were analyzed as previously described for quantitation (Basu et al., 2011) and for isotopolog analysis (Worth et al., 2014) by liquid chromatography-tandem mass spectrometry on an Agilent 1200 coupled to an API4000 in the positive ion mode monitoring the acyl-CoA specific neutral loss of 507 amu from each acyl-CoA, internal standard and isotopolog. For carbon tracing experiments, BMDMs were treated with 10 ng/ml IL-4 for 12\u2009hr before the addition of tracers (2g/L 13C6-glucose, 50 \u03bcM 13C16-palmitate, or 2 mM 13C5-glutamine) for another 2\u2009hr.\n\n### Steady state metabolomics\n\nBMDMs were stimulated for 10\u2009hr with IL-4 before media was refreshed by addition of complete RPMI with IL-4 for another 2\u2009hr. Preparation of cellular extracts was done as described (Ben-Sahra et al., 2013). Steady state metabolomics was done at Beth Israel Deaconess Medical Center Mass Spectrometry Facility. Data analysis was performed as described (Ben-Sahra et al., 2013).\n\n### RNA-seq library construction, mapping, and analysis\n\nStrand-specific libraries were generated using 500ng RNA input using TruSeq library preparation kit (Illumina, San Diego, CA). cDNA libraries were multiplexed using specific unique adaptors and sequenced using Illumina NextSeq 500 under single end 75bp read length parameters. Reads were aligned to the mouse mm10 reference genome using TopHat using default settings\u00a0(Langmead et al., 2009). Alignments were restricted to uniquely mapping reads, with up to 2 mismatches permitted. RPKM was calculated as described for mm10 Refseq genes by counting exonic reads and dividing by mRNA length (Mortazavi et al., 2008). Coexpressed gene classes were generated with Cluster3 by applying k-means clustering to mean-centered log2 (FPKM) expression values. Differential analyses was performed using DEseq\u00a0(Anders and Huber, 2010) using default parameters for the indicated comparisons. Cohort of IL-4 inducible genes was defined by following: >2 RPKM, Log2fold>1.0, DESeq P-adj<0.05 yielding 758 IL-4 inducible genes. Inhibition by AKT or ACLY inhibitors defined as 30% reduction in RPKM and DESeq P-adj <0.05. Enrichment of KEGG pathways and Gene Ontology (GO) terms analysis performed using DAVID\u00a0(Huang et al., 2008).\n\n### Feeding/fasting experiments\n\n8\u201310 week old C57BL/6 mice were fasted overnight or allowed to feed ad-libitum. Mice were sacrificed the next morning and the perigonadal adipose tissue was excised. A small section of whole adipose tissue (WAT) was homogenized in RNA-Bee for analysis of gene expression in unfractionated WAT. The remaining adipose tissue was minced and digested in 5 ml Krebs ringer buffer (KRBH) containing 2% fatty acid free BSA and 2 mg/ml collagenase (Sigma, C2674) for 20 min at 37\u00b0C. The resulting cell suspension was filtered through a 250 mm nylon mesh and centrifuged at 1200 RPM to obtain a cell pellet corresponding to the stromal vascular fraction (SVF), which was lysed for RNA extraction or western blotting.\n\n### Statistical analysis\n\nStatistical analysis was carried out using Prism (GraphPad) software. The student\u2019s t-test was used to determine statistical significance, defined as *P<0.05, **P<0.01, and ***P<0.001.\n",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "92f67ffe-63ae-45de-8690-593440e36f3c",
+      "submission_id": "6b749ce4-da1d-4858-a06b-93d4869a505e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David Wallach, The Weizmann Institute of Science , Israel\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.11612.023](https://doi.org/10.7554/eLife.11612.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Akt-Acly signaling integrates metabolic input to epigenetic control of macrophage activation\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Tadatsugu Taniguchi as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis study shows that Act stimulation in macrophages by IL-4, a cytokine that dictates alternative (M2) activation of these cells, leads to activation of Acly, an enzyme that mediates Ac-CoA production, and thus enhances histone acetylation and induction of a subset of the M2 genes. It further shows that this Act effect is subject to modulation by metabolic signals, which probably serves to adjust the differentiation state and function of macrophages to nutrient availability.\n\nEssential revisions:\n\n1) A major concern was raised on the timing by which various reported events occur and the implications of this for the overarching model. AKT phosphorylation increases within 15 min of IL-4 stimulation, histone acetylation increases by about 4 hours, while pACLY increases by 6 hours, and acetyl-CoA by 8 hours. This does not seem to be consistent with the proposed model, in which pACLY is directly downstream of AKT and should result in increased acetyl-CoA production proceeding or concurrent with increased histone acetylation. It is suggested that all of these parameters (or at least pAKT, pACLY, and histone acetylation) should be examined in the same experiment over the same time course to clarify whether the proposed model truly makes sense.\n\n2) The contribution of mTORC1 here should be further clarified. Based on the data, it doesn't look like mTORC1 is a major contributor to the IL-4-driven pathway, since mTORC1 is implicated in regulating ACLY protein levels and ACLY protein levels do not increase with IL-4. Yet, mTORC1 is included as a major component of the paper's conclusions. Would authors agree that the data don't appear to support mTORC1 as a major physiological component of the mechanism?\n",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e96491e3-f67c-49b0-bc01-adf70e848b8a",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C1",
+      "claim": "Top enriched pathways in M2 macrophages include urea cycle and arginine and proline metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Top enriched pathways include urea cycle and arginine and proline metabolism, consistent with previous studies indicating upregulation of arginine metabolism in M2 macrophages (Van Dyken and Locksley, 2013), as well as amino acid utilization and metabolism and nucleotide metabolism (Figure 1A, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by metabolomics data shown in Figure 1A and references a citation to Van Dyken and Locksley, 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "dc9bb94e-6f6a-4c8c-be5c-859a24deb7cc",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C2",
+      "claim": "M2 macrophages show enrichment in glycolysis, amino sugar metabolism, and glycine, serine, and threonine metabolism pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Other top enriched pathways include glycolysis, amino sugar metabolism, and glycine, serine, and threonine metabolism, suggesting altered flux through glycolysis and glycolytic shunts (Figure 1A, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by metabolomics profiling data presented in Figure 1A and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "df91416c-e582-46bb-a590-4512c241dfea",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C3",
+      "claim": "IL-4 treatment increases glucose uptake in BMDMs in a time-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that BMDMs increased glucose uptake in a time-dependent manner in response to IL-4 treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B measuring 3H-deoxy-D-glucose uptake.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "1cc535d0-07fc-49ef-9a2e-e3abeb9618dd",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C4",
+      "claim": "Akt inhibitor MK2206 reduces IL-4-induced glucose uptake in BMDMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Such increase was reduced by cotreatment with the Akt inhibitor MK2206 (Figure 1B), indicating control by Akt and consistent with a role for Akt in regulating glycolysis in many settings (Robey and Hay, 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data in Figure 1B and a citation to Robey and Hay, 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "46bbc1db-81a4-478b-9a4b-340c19e995a6",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C5",
+      "claim": "Enhanced glucose consumption in M2 macrophages is associated with an Akt-dependent increase in both glycolysis and oxidative metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, enhanced glucose consumption in M2 macrophages was associated with an Akt-dependent increase in both glycolysis and oxidative metabolism, as indicated by extracellular flux assays (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by extracellular flux assay data presented in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "76193930-d383-4b47-b8f1-17a0c00e2d31",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C6",
+      "claim": "The glycolysis inhibitor 2-DG reduces IL-4-mediated induction of some M2 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the \u03b2-oxidation inhibitor etomoxir, the glycolysis inhibitor 2-DG reduced IL-4-mediated induction of some M2 genes (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "54cef4fd-6e7f-4e88-8eb4-99f37bd1adc3",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C7",
+      "claim": "Akt does not control \u03b2-oxidation in M2 macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Akt does not control \u03b2-oxidation in M2 macrophages (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by \u03b2-oxidation assay data presented in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "e75bbe55-2f36-4924-b16b-eb123826e4e7",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C8",
+      "claim": "Akt activity controls the induction of a subset of M2 genes including Arg1, Retnla, and Mgl2.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly and as reported (Byles et al., 2013; Ruckerl et al., 2012), Akt activity controlled the induction of a subset of M2 genes. In the presence of the Akt inhibitor MK2206, induction of Arg1, Retnla, and Mgl2 was reduced ~40\u201380%, while Chi3l3, Cd36, and Fabp4 were not affected (or even super-inducible) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data in Figure 2A and citations to Byles et al., 2013 and Ruckerl et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "4644e6ce-3297-426a-bfd1-cad9dfcef03e",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C9",
+      "claim": "Chi3l3, Cd36, and Fabp4 M2 gene induction is not affected by Akt inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of the Akt inhibitor MK2206, induction of Arg1, Retnla, and Mgl2 was reduced ~40\u201380%, while Chi3l3, Cd36, and Fabp4 were not affected (or even super-inducible) (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "d627a521-6ac6-43e0-973b-8b9c81e93876",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C10",
+      "claim": "IL-4-mediated increases in Stat6 activation are not affected by Akt inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, IL-4-mediated increases in Stat6 activation, as indicated by phosphorylation on Y641, was not affected in the presence of an Akt inhibitor (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "3869a446-a819-427e-b176-4d65719a5f9a",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C11",
+      "claim": "Stat6 activity measured by a Stat6-dependent luciferase reporter is not impaired by inhibition of Akt activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Stat6 activity as measured by a Stat6-dependent luciferase reporter was also not impaired by inhibition of Akt activity (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by luciferase assay data in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "4d3303f2-c534-4d1e-8d02-adaf49b5bba4",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C12",
+      "claim": "WT and Stat6 KO BMDMs can similarly activate Akt and mTORC1 in response to IL-4.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, WT and Stat6 KO BMDMs could similarly activate Akt, as indicated by phosphorylation on S473, as well as mTORC1, as indicated by phosphorylation of the mTORC1 target S6K, in response to IL-4 (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "6a7ef966-1d87-47e3-9365-855c503ce500",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C13",
+      "claim": "The Jak-Stat and Akt-mTORC1 pathways are independent signaling branches downstream of the IL-4R.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings support the idea that the Jak-Stat and Akt-mTORC1 pathways are independent signaling branches downstream of the IL-4R, and suggest a basis by which all M2 genes are controlled by Stat6 while a subset receives additional inputs from the Akt-mTORC1 pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing independent activation of Stat6 and Akt-mTORC1 pathways.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "3b194f2b-6fc8-47d7-abf1-8eb1c27b5844",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C14",
+      "claim": "IL-4 treatment enhances global acetylation of H3 and H4 histones in BMDMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, IL-4-treatment of BMDMs enhanced global acetylation of H3 and H4 histones, as indicated by western blot of whole cell lysates (Figure 2C, Figure 2\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data in Figure 2C and Figure 2\u2014figure supplement 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "0d256d69-a1cd-43ab-81bc-3e7d63d7350e",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C15",
+      "claim": "IL-4-inducible increases in global H3 and H4 acetylation are reduced by Akt inhibitor cotreatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, IL-4-inducible increases in global H3 and H4 acetylation were reduced by cotreatment with an Akt inhibitor, indicating at least partial dependence on Akt (Figure 2\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data in Figure 2\u2014figure supplement 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "86147346-a480-44e6-b537-b5a4472029f3",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C16",
+      "claim": "Tubulin acetylation is not modulated by IL-4 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, tubulin acetylation was not modulated by IL-4 treatment (Figure 2\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data in Figure 2\u2014figure supplement 2A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "5895c660-1f40-4b02-add0-a100249ee4d1",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C17",
+      "claim": "IL-4 treatment increases H3 and H4 acetylation at promoters of M2 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "IL-4 treatment increased H3 and H4 acetylation at promoters of M2 genes (Figure 2D,E, Figure 2\u2014figure supplement 2C), with the degree of inducible acetylation correlating fairly well with the degree of gene induction (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ChIP data in Figure 2D, 2E, and Figure 2\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "115a7e0b-f811-43a8-a6ce-67bafda52c1d",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C18",
+      "claim": "Akt inhibitor reduces H3 and H4 acetylation at Akt-dependent M2 genes (Arg1, Retnla, Mgl2) but not at Akt-independent M2 genes (Chi3l3, Cd36, Fabp4).",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, such increases in H3 and H4 acetylation were reduced by an Akt inhibitor at M2 genes induced in an Akt-dependent manner (Arg1, Retnla, Mgl2), but not at M2 genes induced independently of Akt (Chi3l3, Cd36, Fabp4) (Figure 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ChIP data in Figure 2D and 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "3e8a3583-9574-4891-868a-b743c0e5d1cc",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C19",
+      "claim": "Pol II recruitment to M2 gene promoters parallels H3 and H4 acetylation and is controlled by Akt at Akt-dependent M2 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Pol II recruitment to M2 gene promoters paralleled H3 and H4 acetylation, and was controlled by Akt at M2 genes induced in an Akt-dependent manner (Figure 2\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ChIP data in Figure 2\u2014figure supplement 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "8a1a84ac-25e0-4d41-98f0-88ee4962f279",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C20",
+      "claim": "IL-4 treatment leads to a maximal increase in Ac-CoA levels of approximately 40-75%.",
+      "claim_type": "EXPLICIT",
+      "source": "Using quantitative stable isotope dilution-LC-MS, we found that IL-4 treatment led to a maximal increase in Ac-CoA levels of ~40\u201375% (Figure 3A,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by LC-MS data in Figure 3A and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "e6035e6f-616c-477b-9cf2-f7a15064caaf",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C21",
+      "claim": "IL-4 treatment stimulates the activating phosphorylation of Acly in an Akt-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Akt has been shown to phosphorylate and activate Acly (Berwick et al., 2002; Lee et al., 2014), and we found that in M2 macrophages, IL-4 treatment stimulated the activating phosphorylation of Acly in an Akt-dependent manner (Figure 3B, Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data in Figure 3B and Figure 3\u2014figure supplement 1A, and citations to Berwick et al., 2002 and Lee et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "77057ca4-47a9-49c2-b476-22c8cf52e064",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C22",
+      "claim": "Cotreatment with Akt or Acly inhibitors blocks IL-4-mediated increases in Ac-CoA levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, cotreatment with Akt or Acly inhibitors blocked the IL-4-mediated increases in Ac-CoA levels (Figure 3C), indicating Akt- and Acly-mediated control of Ac-CoA production in M2 macrophages.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by LC-MS data in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "7ea620ef-13f6-4d25-b9e5-43cfff9df78a",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C23",
+      "claim": "Citrate accumulates in the presence of Akt or Acly inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, citrate, the substrate for the Acly reaction, accumulated in the presence of the inhibitors (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by metabolomics data in Figure 3\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "1ddeb391-8095-499d-8f13-f0c454bd36f0",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C24",
+      "claim": "IL-4 treatment enhances 13C (M+2) Ac-CoA labeling from glucose, palmitate, and glutamine tracers.",
+      "claim_type": "EXPLICIT",
+      "source": "IL-4 treatment enhanced 13C (M+2) Ac-CoA labeling regardless of the tracer, indicating that all three metabolic fuels contributed to the elevated Ac-CoA pool.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by carbon tracing LC-MS data in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "0827c6c6-edd3-4e90-8d0c-89e030f4f423",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C25",
+      "claim": "Palmitate is the major carbon source for Ac-CoA in M2 macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "The highest labeling was observed in BMDMs fed palmitate. While LC-MS does not specifically measure the nuclear-cytosolic pool of Ac-CoA, these data suggests that palmitate may be the major carbon source for histone acetylation in M2 macrophages (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by carbon tracing LC-MS data in Figure 3D, with a caveat about the limitation of the method.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "5bdea0fe-0d69-437f-b400-0143b5d7aed5",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C26",
+      "claim": "The Acly inhibitor SB-204990 reduces IL-4-mediated induction of Akt-dependent M2 genes (Arg1, Retnla, Mgl2) but not Akt-independent M2 genes (Chi3l3, Fabp4, Cd36).",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the Acly inhibitor SB-204990 reduced IL-4-mediated induction of Akt-dependent M2 genes (Arg1, Retnla, Mgl2) but not Akt-independent M2 genes (Chi3l3, Fabp4, Cd36) (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "8d4d49c2-8b89-4e81-b42b-f24c3ac09f2f",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C27",
+      "claim": "SB-204990 treatment attenuates IL-4-mediated increases in H3 and H4 acetylation at promoters of Akt-dependent M2 genes but not Akt-independent M2 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, SB-204990 treatment attenuated IL-4-mediated increases in H3 and H4 acetylation at promoters of Akt-dependent M2 genes, but not Akt-independent M2 genes (Figure 4B, Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ChIP data in Figure 4B and Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "e7616126-ff30-4eed-986d-48c6efb0e244",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C28",
+      "claim": "SB-204990 treatment diminishes Pol II recruitment at Akt-dependent M2 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, SB-204990 treatment diminished Pol II recruitment at Akt-dependent M2 genes (Figure 4\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ChIP data in Figure 4\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "7a226f65-84ac-4560-875c-b0929a1eaa50",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C29",
+      "claim": "The p300 inhibitor C646 reduces induction of Akt-dependent but not Akt-independent M2 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the p300 inhibitor C646 reduced induction of Akt-dependent but not Akt-independent M2 genes (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "1f8462a2-48c4-4aeb-bdd2-a358aa41fd60",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C30",
+      "claim": "p300 may link the Akt/Acly-dependent rise in Ac-CoA levels to increased histone acetylation and gene induction at some Akt-dependent M2 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, p300 may link the Akt/Acly-dependent rise in Ac-CoA levels to increased histone acetylation and gene induction at some Akt-dependent M2 genes, while distinct HATs at Akt-independent genes are insensitive to such modulation of Ac-CoA levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing p300 inhibitor effects and knowledge about p300's regulation by Ac-CoA levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "775afe1a-c6e7-452d-981e-767abdda2d74",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C31",
+      "claim": "Arginase activity is regulated by Acly and Akt.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with effects on induction of Arg1, arginase activity was regulated by Acly and Akt (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by arginase activity assay data in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "8817c849-949c-412e-af72-1e0ea1a4ea86",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C32",
+      "claim": "Akt and Acly inhibitors reduce induction of Akt-dependent M2 genes in peritoneal-elicited macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, Akt and Acly inhibitors reduced induction of Akt-dependent M2 genes in peritoneal-elicited macrophages, indicating that control of M2 activation by the Akt-Acly axis may be applicable to multiple macrophage populations (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "965ad6d6-af2d-4f28-833b-bba153af87e8",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C33",
+      "claim": "Induction of Akt-dependent M2 genes is deficient in BMDMs lacking Raptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that induction of Akt-dependent M2 genes was deficient in BMDMs lacking Raptor, a defining subunit of the mTORC1 complex (Dibble and Manning, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by qPCR data in Figure 5A and a citation to Dibble and Manning, 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "a135dabb-e923-4e9a-8786-e7c93373c357",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C34",
+      "claim": "Induction of Akt-independent M2 genes is not reduced in Raptor-deficient BMDMs.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, induction of Akt-independent M2 genes was not reduced (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "ee0c6b7a-676d-44ff-9443-ca0e1193e6f5",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C35",
+      "claim": "Raptor-deficient BMDMs express lower levels of Acly protein.",
+      "claim_type": "EXPLICIT",
+      "source": "mTORC1 is known to stimulate Acly expression (Porstmann et al., 2008; D\u00fcvel et al., 2010), and we found that Raptor-deficient BMDMs expressed lower levels of Acly protein (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data in Figure 5B and citations to Porstmann et al., 2008 and D\u00fcvel et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "c6410428-550b-42ee-b6c3-fa1248a3a553",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C36",
+      "claim": "BMDMs with constitutive mTORC1 activity from Tsc1 deletion display elevated Acly levels that are reduced by rapamycin treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, BMDMs with constitutive mTORC1 activity resulting from deletion of Tsc1 (Byles et al., 2013), a negative regulator of mTORC1 (Dibble and Manning, 2013), displayed elevated Acly levels that were reduced by treatment with the mTORC1 inhibitor rapamycin (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data in Figure 5\u2014figure supplement 1 and citations to Byles et al., 2013 and Dibble and Manning, 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "4f9016a4-1e5d-4760-8831-e36db83d6b38",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C37",
+      "claim": "IL-4-inducible Acly phosphorylation is reduced in Raptor-deficient BMDMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we noted that IL-4-inducible Acly phosphorylation was reduced in Raptor-deficient BMDMs (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "7b840d8f-f216-47c4-906e-236f3deb0ab7",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C38",
+      "claim": "The Akt-mTORC1 axis controls Acly activating phosphorylation and protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that the Akt-mTORC1 axis controls Acly activating phosphorylation and protein levels, likely contributing to its control of M2 activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental data showing effects of Akt and mTORC1 on Acly.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "bb0ebd4a-442e-4ac5-8403-be34176237ef",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C39",
+      "claim": "mTORC1 activity is greatly reduced in amino acid deficient media and intermediate in media containing low levels of amino acids.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, mTORC1 activity, as assessed by phosphorylation of its downstream target S6K, was greatly reduced in amino acid deficient media and intermediate in media containing low levels of amino acids (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "bb7627c7-d826-4b0d-9c14-525bb213a483",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C40",
+      "claim": "Increasing amino acid levels augments Akt activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with (Tato et al., 2011; Novellasdemunt et al., 2013), increasing amino acid levels also augmented Akt activation, as indicated by enhanced phosphorylation on two critical residues, T308 and S473 (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data in Figure 6B and citations to Tato et al., 2011 and Novellasdemunt et al., 2013.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "3123289d-42e5-4d49-9413-1bb0d76d9103",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C41",
+      "claim": "Titrating amino acids has no effect on Stat6 phosphorylation and activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Titrating amino acids had no effect on Stat6 phosphorylation and activation (Figure 6B), validating the use of this experimental model to modulate the Akt-mTORC1 axis independent of canonical Stat6 signaling.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "c382b46a-5622-45a0-8650-16f63a274004",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C42",
+      "claim": "Amino acid levels dose dependently increase Acly phosphorylation and protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with effects on mTORC1 and Akt activity, amino acid levels dose dependently increased Acly phosphorylation and protein levels (Figure 6B) as well as Ac-CoA production (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data in Figure 6B and LC-MS data in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "d7bfbb6b-117d-47af-8146-2ded0b27b436",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C43",
+      "claim": "Amino acids potentiate induction of Akt-dependent but not Akt-independent M2 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, amino acids potentiated induction of Akt-dependent but not Akt-independent M2 genes (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data in Figure 6D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "6dac6b42-4d34-4203-b187-faa35e4c1881",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C44",
+      "claim": "The effect of amino acids on M2 gene induction is at least partially Raptor-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect of amino acids was at least partially Raptor-dependent, indicating a critical role for mTORC1 in this process (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "a574eb33-538d-4d2f-9a7c-dd2315034290",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C45",
+      "claim": "Culture in leucine-deficient media attenuates IL-4-inducible mTORC1 and Akt activity and Acly phosphorylation, but not Stat6 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Culture in leucine-deficient media attenuated IL-4-inducible mTORC1 and Akt activity and Acly phosphorylation, but not Stat6 phosphorylation (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "df7d4ec5-5ea4-4b20-acc1-a190a547f527",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C46",
+      "claim": "Leucine deficiency selectively reduces expression of Akt-dependent M2 genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, leucine deficiency selectively reduced expression of Akt-dependent M2 genes (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "cc71932f-dd52-4221-98da-45936750d887",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C47",
+      "claim": "Akt activation is increased in the fed state compared to the fasted state in the ATM-containing stromal vascular fraction of white adipose tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we found that Akt activation was increased in the fed state compared to the fasted state in the ATM-containing stromal vascular (SVF) fraction of the white adipose tissue (Figure 6\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data in Figure 6\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "3c984fed-1c70-414d-a412-e24233858ee2",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C48",
+      "claim": "Global H3 acetylation and M2 gene expression are elevated in the fed state in adipose tissue macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we were unable to reliably detect pAcly or Acly in the SVF for technical reasons, global H3 acetylation (Figure 6\u2014figure supplement 2A\u2013B) and M2 gene expression (Figure 6\u2014figure supplement 2C) followed a similar pattern and were elevated in the fed state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot data in Figure 6\u2014figure supplement 2A-B and qPCR data in Figure 6\u2014figure supplement 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "9e1eb659-ab01-4f24-9a76-0980acc4efe0",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C49",
+      "claim": "IL-13 expression is increased in the fed state.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of all M2 genes was elevated in the fed state (Figure 6\u2014figure supplement 2C), consistent with an important role for IL-13, a critical regulator of ATM M2 polarization (Odegaard and Chawla, 2011) that is increased in the fed state (Figure 6\u2014figure supplement 2D), in feeding-induced ATM polarization, although postprandial elevations in nutrients like amino acids and glucose may also contribute.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data in Figure 6\u2014figure supplement 2D and a citation to Odegaard and Chawla, 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "3bad3cda-78ad-436b-8538-1e9a9b8d20ab",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C50",
+      "claim": "758 genes were induced >2.0 fold by IL-4 in the RNA seq analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the RNA seq analysis, 758 genes were induced >2.0 fold by IL-4, of which 91were downregulated >30% by both Akt and Acly inhibitors (including Arg1, Retnla, and Mgl2), confirming critical roles for Akt and Acly in control of M2 activation as well as substantial overlap in the activities of the two proteins (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data presented in Figure 7A and 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "75c803e0-47b1-4d7a-a1c1-0d3bd99d048a",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C51",
+      "claim": "91 genes were downregulated >30% by both Akt and Acly inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "In the RNA seq analysis, 758 genes were induced >2.0 fold by IL-4, of which 91were downregulated >30% by both Akt and Acly inhibitors (including Arg1, Retnla, and Mgl2), confirming critical roles for Akt and Acly in control of M2 activation as well as substantial overlap in the activities of the two proteins (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data presented in Figure 7A and 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "d1274e70-664a-4bfc-8d40-4df63bfc1654",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C52",
+      "claim": "A subset of Akt inhibitor sensitive genes (91/327) is sensitive to Acly inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "A subset of Akt inhibitor sensitive genes was sensitive to Acly inhibitor (91/327), in line with a broader role for Akt in control of cell physiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RNA-seq data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "2dc81afd-1a9b-486d-8e4d-39418be927d7",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C53",
+      "claim": "Most genes sensitive to Acly inhibitor (91/118) are sensitive to Akt inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, most genes sensitive to Acly inhibitor were sensitive to Akt inhibitor (91/118). This indicates that in the context of M2 activation, Acly is a major target of Akt and is critically controlled by Akt activity, likely in regulation of Ac-CoA production and histone acetylation at M2 genes (Figure 7A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data analysis in Figure 7A and 7B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "011b538c-a308-4999-bab4-2a3633673822",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C54",
+      "claim": "Gene enrichment analysis of the 91 Akt- and Acly-coregulated genes identified preferential enrichment of cell cycle and DNA replication pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene enrichment analysis of the 91 Akt- and Acly-coregulated genes identified preferential enrichment of several pathways, including cell cycle and DNA replication (Figure 7C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene enrichment analysis data in Figure 7C and 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "0cf2ea38-2cc6-437e-a6d2-ba8f4b855a55",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C55",
+      "claim": "Chemokines including Ccl2, Ccl7, Ccl17, and Ccl24 are enriched in Akt- and Acly-coregulated genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, chemokines were also enriched in Akt- and Acly-coregulated genes (Figure 7C\u2013D), including Ccl2, Ccl7, Ccl17, and Ccl24.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by gene enrichment analysis data in Figure 7C and 7D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "a9fb5ebd-10d2-4b63-90a2-3e58979e8815",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C56",
+      "claim": "Akt- and Acly-dependent induction of CCL17 and CCL24 was confirmed by qRT-PCR and ELISA.",
+      "claim_type": "EXPLICIT",
+      "source": "Akt- and Acly-dependent induction of CCL17 and CCL24 was confirmed by qRT-PCR and ELISA (Figure 7E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data in Figure 7E and ELISA data in Figure 7F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "b86eb62f-38e6-4b15-89ad-d03e9a9ae1b5",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C57",
+      "claim": "Ear2, Ear11, and Ear12 genes are coregulated by the Akt-Acly pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, genes in the eosinophil associated ribonucleases (Ear) family were found to be regulated by Akt and Acly. While barely missing the stringent cutoffs that we set for the RNA-seq analysis, qPCR analysis confirmed coregulation of Ear2, Ear11, and Ear12 genes by the Akt-Acly pathway (Figure 7E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data in Figure 7E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "d3d44ffc-aafe-4f3f-886b-405415da49cd",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C58",
+      "claim": "IL-4 signaling co-opts the Akt-mTORC1 pathway to regulate Acly, leading to increased histone acetylation and M2 gene induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that IL-4 signaling co-opts the Akt-mTORC1 pathway to regulate Acly, a key enzyme in Ac-CoA synthesis, leading to increased histone acetylation and M2 gene induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim supported by multiple experimental findings throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "3bb85836-c39e-4208-a0ac-f727e9018571",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C59",
+      "claim": "Only a subset of M2 genes is controlled by the Akt-mTORC1-Acly pathway, including those regulating cellular proliferation and chemokine production.",
+      "claim_type": "EXPLICIT",
+      "source": "Only a subset of M2 genes is controlled in this way, including those regulating cellular proliferation and chemokine production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim supported by RNA-seq and gene enrichment analysis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "839b01c3-4f69-458f-8ccf-a89281bc6244",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C60",
+      "claim": "Metabolic signals impinge on the Akt-mTORC1 axis for control of M2 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, metabolic signals impinge on the Akt-mTORC1 axis for such control of M2 activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim supported by amino acid titration and leucine deprivation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "23c299e5-e6aa-4c35-993f-8c78a4ac2c71",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C61",
+      "claim": "Akt-mTORC1 signaling calibrates metabolic state to energetically demanding aspects of M2 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that Akt-mTORC1 signaling calibrates metabolic state to energetically demanding aspects of M2 activation, which may define a new role for metabolism in supporting macrophage activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed model based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "bd419590-4bf1-40f9-9241-fafa804e51ca",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C62",
+      "claim": "M1 macrophages upregulate glucose and glutamine utilization.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, M1 macrophages upregulate glucose and glutamine utilization (Tannahill et al., 2013; Cramer et al., 2003), while M2 macrophages augment \u03b2-oxidation and glutamine consumption (Vats et al., 2006; Jha et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Tannahill et al., 2013 and Cramer et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "2fdb60a9-c039-48ce-b259-a9c5ddabcf36",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C63",
+      "claim": "M2 macrophages augment \u03b2-oxidation and glutamine consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, M1 macrophages upregulate glucose and glutamine utilization (Tannahill et al., 2013; Cramer et al., 2003), while M2 macrophages augment \u03b2-oxidation and glutamine consumption (Vats et al., 2006; Jha et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Vats et al., 2006 and Jha et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "e5fc6cb3-4200-4ad6-bf1e-b0a2933e948c",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C64",
+      "claim": "Increased glycolytic flux in M1 macrophages is coupled to de novo lipogenesis, which enables ER and Golgi expansion and production of high levels of inflammatory cytokines.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased glycolytic flux in M1 macrophages is coupled to de novo lipogenesis, which enables ER and Golgi expansion and production of high levels of inflammatory cytokines (Everts et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Everts et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "7452b01e-a397-407f-9aef-7e58c4732c4a",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C65",
+      "claim": "Enhanced glycolysis in M1 macrophages leads to accumulation of succinate, resulting in stabilization of HIF-1\u03b1 and transcriptional induction of Il1b and other target genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Another consequence of enhanced glycolysis is accumulation of the TCA cycle metabolite succinate, leading to stabilization of the transcription factor HIF-1\u03b1 and transcriptional induction of Il1b and other target genes in the M1 macrophage (Tannahill et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Tannahill et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "9f9d9b9c-f7c3-48e0-a8e2-0cf18356900d",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C66",
+      "claim": "Glutamine metabolism fuels production of UDP-GlcNAC, an important modification of multiple M2 markers.",
+      "claim_type": "EXPLICIT",
+      "source": "How oxidative metabolism boosts M2 activation is not clear, but glutamine metabolism fuels production of UDP-GlcNAC, an important modification of multiple M2 markers (Jha et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Jha et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "0c62cb22-8944-4ccf-becc-f70b0006081f",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C67",
+      "claim": "Akt mediates enhanced glycolysis to support lipid synthesis and inflammatory cytokine secretion in M1 macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Akt mediates enhanced glycolysis to support lipid synthesis and inflammatory cytokine secretion in M1 macrophages (Everts et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Everts et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "e74cc5b3-32a5-427e-834e-3810d8c1bc96",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C68",
+      "claim": "Akt stimulates glucose-fueled lipid synthesis in growing and proliferating cells, where lipids are used to build cellular membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Akt similarly stimulates glucose-fueled lipid synthesis in growing and proliferating cells, where lipids are used to build cellular membranes (Robey and Hay, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Robey and Hay, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "5d86bdc1-8bf3-4c81-bf8d-04f5344d1526",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C69",
+      "claim": "In cancer cells and differentiating adipocytes, metabolic state is linked to gene expression via effects on histone acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "A seminal study from Wellen and colleagues indicated that in cancer cells and differentiating adipocytes, metabolic state is linked to gene expression via effects on histone acetylation (Wellen et al., 2009), thus we hypothesized that Akt may control histone acetylation to regulate M2 gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Wellen et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "f1f532a4-8a69-4250-868f-53bcb25a551a",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C70",
+      "claim": "Acly cleaves cytosolic citrate to produce a nuclear-cytoplasmic pool of Ac-CoA.",
+      "claim_type": "EXPLICIT",
+      "source": "A key regulator of Ac-CoA production is the enzyme Acly, which cleaves cytosolic citrate to produce a nuclear-cytoplasmic pool of Ac-CoA (Wellen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Wellen et al., 2009 and established biochemical knowledge.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "57429938-4de1-44e0-a980-d48e25988855",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C71",
+      "claim": "Akt phosphorylates and activates Acly.",
+      "claim_type": "EXPLICIT",
+      "source": "Akt has been shown to phosphorylate and activate Acly (Berwick et al., 2002; Lee et al., 2014), and we found that in M2 macrophages, IL-4 treatment stimulated the activating phosphorylation of Acly in an Akt-dependent manner (Figure 3B, Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Berwick et al., 2002 and Lee et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "faed3169-0ac0-4930-ac87-1a673181015a",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C72",
+      "claim": "The activity of some HATs, including p300, is regulated by Ac-CoA levels and metabolic status.",
+      "claim_type": "EXPLICIT",
+      "source": "The activity of some HATs, including p300, is regulated by Ac-CoA levels and metabolic status (Mari\u00f1o et al., 2014; Pietrocola et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Mari\u00f1o et al., 2014 and Pietrocola et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "ee459e7d-e099-4a6d-aff2-3c9894712aed",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C73",
+      "claim": "mTORC1 is a key downstream effector of Akt signaling and their activities are intricately linked in many settings.",
+      "claim_type": "EXPLICIT",
+      "source": "mTORC1 is a key downstream effector of Akt signaling and their activities are intricately linked in many settings ([Dibble and Manning, 2013; Pollizzi and Powell, 2014; Laplante and Sabatini, 2012] and Figure 2\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to Dibble and Manning, 2013; Pollizzi and Powell, 2014; Laplante and Sabatini, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "151a6d75-94b0-4974-8098-21ff2477a404",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C74",
+      "claim": "mTORC1 stimulates Acly expression.",
+      "claim_type": "EXPLICIT",
+      "source": "mTORC1 is known to stimulate Acly expression (Porstmann et al., 2008; D\u00fcvel et al., 2010), and we found that Raptor-deficient BMDMs expressed lower levels of Acly protein (Figure 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Porstmann et al., 2008 and D\u00fcvel et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "5a8a2547-8c79-48a1-9a4d-b7f58d5937b4",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C75",
+      "claim": "Amino acids directly and potently regulate mTORC1 activity independent of the TSC complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Amino acids directly and potently regulate mTORC1 activity independent of the TSC complex (Dibble and Manning, 2013; Laplante and Sabatini, 2012) and can also activate Akt in some contexts (Tato et al., 2011; Novellasdemunt et al., 2013), hence we varied amino acid concentrations as a way to modulate Akt-mTORC1 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Dibble and Manning, 2013 and Laplante and Sabatini, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "3d0e9ca1-7e52-4abc-a208-a34f410fd537",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C76",
+      "claim": "Amino acids can activate Akt in some contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Amino acids directly and potently regulate mTORC1 activity independent of the TSC complex (Dibble and Manning, 2013; Laplante and Sabatini, 2012) and can also activate Akt in some contexts (Tato et al., 2011; Novellasdemunt et al., 2013), hence we varied amino acid concentrations as a way to modulate Akt-mTORC1 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Tato et al., 2011 and Novellasdemunt et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "e47400a9-fbb8-4d32-ae61-594bc6d7081e",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C77",
+      "claim": "Leucine is particularly critical in regulation of mTORC1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We also examined M2 activation using the complementary model of leucine deprivation, since leucine is particularly critical in regulation of mTORC1 activity (Hara et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hara et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "b97016d8-ca6b-4f27-a90b-c53fbe23bb16",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C78",
+      "claim": "ATM M2 polarization is thought to critically maintain insulin sensitivity in white adipose tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "ATM M2 polarization is thought to critically maintain insulin sensitivity in white adipose tissue, so such feeding-induced increases in M2 activation may coordinate responses to nutrient influx to mediate metabolic homeostasis in the postprandial state (Odegaard and Chawla, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Odegaard and Chawla, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "2c3aa9ce-1ba7-44f3-a0b5-7f914188bfb1",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C79",
+      "claim": "p300 has a high Km and is responsive to changes in the levels of its substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "Its high Km (Mari\u00f1o et al., 2014; Pietrocola et al., 2015) may allow p300 to link metabolic status and Akt/mTORC1 activity, in the form of Ac-CoA levels, to histone acetylation and transcriptional induction at some M2 genes (Figure 7\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to Mari\u00f1o et al., 2014 and Pietrocola et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "d38dea43-600f-474e-aa3c-3b7e2666e785",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C80",
+      "claim": "Ac-CoA can be synthesized independently of the Akt-mTORC1-Acly axis by AceCS1.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, Ac-CoA can be synthesized independently of the Akt-mTORC1-Acly axis by AceCS1 (Hallows et al., 2006) or nuclear pyruvate dehydrogenase (Sutendra et al., 2014) to mediate histone acetylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Hallows et al., 2006 and Sutendra et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "330ed60b-e98f-4b96-9fbb-a3c7d5e50064",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C81",
+      "claim": "AceCS1 activity is controlled by SIRT1.",
+      "claim_type": "EXPLICIT",
+      "source": "AceCS1 activity is controlled by SIRT1, thus providing a means for Ac-CoA production and histone acetylation in conditions of low energy or nutrients (Hallows et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hallows et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "67a91376-0aca-4756-9c75-0c29c107a611",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C82",
+      "claim": "Ac-CoA can be synthesized by nuclear pyruvate dehydrogenase to mediate histone acetylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, Ac-CoA can be synthesized independently of the Akt-mTORC1-Acly axis by AceCS1 (Hallows et al., 2006) or nuclear pyruvate dehydrogenase (Sutendra et al., 2014) to mediate histone acetylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Sutendra et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "785aa8da-4985-41ca-bca3-eb29d8b6d660",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C83",
+      "claim": "Akt is a major metabolic regulator implicated in M2 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Akt is a major metabolic regulator implicated in M2 activation (Byles et al., 2013; Ruckerl et al., 2012), but the underlying mechanisms remain poorly characterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Byles et al., 2013 and Ruckerl et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "b79e7258-3569-438f-856c-b35cd60e93ee",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C84",
+      "claim": "Induction of Retnla, Arg1, Mgl2, Chi3l3, Cd36, and Fabp4 was ablated in Stat6 KO BMDMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the role of Stat6 as a transcriptional master regulator of M2 activation (Odegaard and Chawla, 2011), induction of these M2 genes was ablated in Stat6 KO BMDMs (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR data in Figure 2\u2014figure supplement 1A and a citation to Odegaard and Chawla, 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "55945ec9-3320-47d2-a6ef-b63d77057f67",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C85",
+      "claim": "Ear2 and Ear11 are thought to have chemoattractant activity for dendritic cells and macrophages.",
+      "claim_type": "EXPLICIT",
+      "source": "Ear genes are of interest because Ear2 and Ear11 are thought to have chemoattractant activity for dendritic cells and macrophages and are known to be highly induced in settings of Type 2 inflammation (Cormier et al., 2002; Yamada et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Cormier et al., 2002 and Yamada et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "06a29fde-3d8a-4ebb-ab06-f25434659558",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C86",
+      "claim": "Ear2 and Ear11 are highly induced in settings of Type 2 inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Ear genes are of interest because Ear2 and Ear11 are thought to have chemoattractant activity for dendritic cells and macrophages and are known to be highly induced in settings of Type 2 inflammation (Cormier et al., 2002; Yamada et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Cormier et al., 2002 and Yamada et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "97208e49-f15f-4497-a557-e9ded154ba62",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C87",
+      "claim": "Akt-mTORC1 signaling acts as a metabolic checkpoint in the context of cellular division to allow growth and proliferation only when nutrients are abundant.",
+      "claim_type": "EXPLICIT",
+      "source": "Control of cellular proliferation is intuitive, since Akt-mTORC1 signaling acts as a metabolic checkpoint in the context of cellular division to allow growth and proliferation only when nutrients are abundant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge about Akt-mTORC1 function in cell proliferation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "1e2ebb7f-921d-48b5-98c9-351446286b2b",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C88",
+      "claim": "A critical role for Akt-mTORC1 signaling in activated CD8 T cells is to support their migration to sites of inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, previous studies have shown that a critical role for Akt-mTORC1 signaling in activated CD8 T cells is to support their migration to sites of inflammation (Finlay and Cantrell, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Finlay and Cantrell, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "bd373bf3-862f-4057-9a08-1687e38c880a",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C89",
+      "claim": "Aberrantly increased mTORC1 activity in Tsc1-deficient BMDMs attenuates M2 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In seeming contrast to these data indicating that mTORC1 supports M2 activation, we and others have shown that aberrantly increased mTORC1 activity in Tsc1-deficient BMDMs attenuates M2 activation (Byles et al., 2013; Zhu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Byles et al., 2013 and Zhu et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "588f1cd7-44a3-4b2a-ab04-707ae6742c22",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C90",
+      "claim": "In lean/healthy animals, mTORC1 critically mediates insulin signaling in metabolic tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Downstream of the insulin receptor, such context-dependent roles of mTORC1 are well-established. In lean/healthy animals, mTORC1 critically mediates insulin signaling in metabolic tissues (to coordinate postprandial nutrient storage), but in obesity, chronic nutrient excess leads to an aberrant increase in mTORC1 activity that contributes directly to insulin resistance and metabolic dysregulation (Laplante and Sabatini, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Laplante and Sabatini, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "0a7feeb2-363f-4eba-903a-b05112b34c81",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "claim_id": "C91",
+      "claim": "In obesity, chronic nutrient excess leads to an aberrant increase in mTORC1 activity that contributes directly to insulin resistance and metabolic dysregulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Downstream of the insulin receptor, such context-dependent roles of mTORC1 are well-established. In lean/healthy animals, mTORC1 critically mediates insulin signaling in metabolic tissues (to coordinate postprandial nutrient storage), but in obesity, chronic nutrient excess leads to an aberrant increase in mTORC1 activity that contributes directly to insulin resistance and metabolic dysregulation (Laplante and Sabatini, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Laplante and Sabatini, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a05893e2-4cb1-4ced-90ae-fe0070f51392",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Metabolomics profiling of M2 macrophages reveals enrichment in pathways including urea cycle, arginine and proline metabolism, glycolysis, amino sugar metabolism, and glycine, serine, and threonine metabolism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 are supported by LC/MS-based metabolomics data presented in Figure 1A and Supplementary file 1. The enrichment analysis is appropriately conducted and the findings are consistent with prior literature on M2 macrophage metabolism (C1 cites Van Dyken and Locksley, 2013).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "7c6f0686-2cee-43d0-9bd3-ed9ea44d259d",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "IL-4 treatment increases glucose uptake in BMDMs in a time-dependent and Akt-dependent manner, with enhanced glucose consumption associated with increased glycolysis and oxidative metabolism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 are supported by 3H-deoxy-D-glucose uptake assays (Figure 1B) and extracellular flux analyses (Figure 1C). The Akt inhibitor MK2206 reduces glucose uptake, demonstrating Akt-dependence. The data are internally consistent and appropriately controlled.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "f697723c-0d10-4d25-9ea3-8aff7ed4441b",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Glycolysis inhibitor 2-DG reduces IL-4-mediated induction of some M2 genes, while Akt does not control \u03b2-oxidation in M2 macrophages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C7 are supported by qPCR data (Figure 1D) and \u03b2-oxidation assay data (Figure 1E). The findings establish that glycolysis contributes to M2 gene induction but Akt does not regulate fatty acid oxidation, clarifying the metabolic pathways controlled by Akt in M2 macrophages.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "d4e3d922-a38b-4a52-b2ec-28df17d68ca0",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Akt activity selectively controls induction of a subset of M2 genes (Arg1, Retnla, Mgl2) but not others (Chi3l3, Cd36, Fabp4).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C9 are supported by qPCR data in Figure 2A showing differential sensitivity to Akt inhibitor MK2206. The use of a structurally distinct inhibitor (Aktviii) with similar results strengthens the conclusion. This establishes the existence of Akt-dependent and Akt-independent M2 gene subsets.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "79dc0afb-e28e-4414-a4d6-d8b3569db631",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The Jak-Stat and Akt-mTORC1 pathways function as independent signaling branches downstream of the IL-4R.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C13 are supported by western blot data (Figure 2B) and luciferase reporter assays (Figure 2\u2014figure supplement 1C) showing that Akt inhibition does not affect Stat6 activation and that Stat6 KO does not affect Akt/mTORC1 activation. This independence provides a mechanistic basis for selective M2 gene regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "f653fe29-f6bf-4f38-b167-499e652fbe39",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "IL-4 treatment enhances global H3 and H4 histone acetylation in an Akt-dependent manner, while tubulin acetylation is not affected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16 are supported by western blot data (Figure 2C, Figure 2\u2014figure supplement 2A,B). The specificity for histone acetylation (not tubulin) and partial Akt-dependence are clearly demonstrated. The time course data show appropriate kinetics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "1605d390-8467-4b13-b348-a98efc40c987",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "IL-4 increases H3 and H4 acetylation and Pol II recruitment at M2 gene promoters in an Akt-dependent manner at Akt-dependent genes but not at Akt-independent genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 are supported by ChIP data (Figure 2D, 2E, Figure 2\u2014figure supplement 2C,D). The gene-specific pattern of Akt control over histone acetylation and Pol II recruitment correlates well with gene expression patterns, providing a mechanistic link between Akt signaling and selective M2 gene induction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "c83569a3-59bc-470b-8d2c-2c5374eb972f",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "IL-4 treatment increases Ac-CoA levels by approximately 40-75% through Akt-dependent phosphorylation and activation of Acly, with citrate accumulation upon inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 are supported by quantitative LC-MS data (Figure 3A,C) and western blot data (Figure 3B, Figure 3\u2014figure supplement 1A,C). The use of stable isotope dilution LC-MS provides rigorous quantification. The accumulation of citrate (Acly substrate) upon inhibition provides additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "02b11688-3afc-4080-bc81-b1c119cc7d5f",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "IL-4 enhances 13C (M+2) Ac-CoA labeling from glucose, palmitate, and glutamine, with palmitate showing the highest labeling suggesting it may be the major carbon source.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C24 and C25 are supported by carbon tracing LC-MS data (Figure 3D), but C25 includes appropriate caveats that LC-MS does not specifically measure the nuclear-cytosolic pool relevant for histone acetylation. The conclusion about palmitate being the major source is speculative and requires additional validation with compartment-specific measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "7db92a4d-0edd-4f74-b7b0-5732b4447e10",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Acly inhibitor SB-204990 selectively reduces IL-4-mediated induction, histone acetylation, and Pol II recruitment at Akt-dependent M2 genes but not Akt-independent genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 are supported by qPCR data (Figure 4A), ChIP data (Figure 4B, Figure 4\u2014figure supplement 1A,B), and validation with a structurally distinct inhibitor (MEDICA 16). The parallel effects on gene expression, histone acetylation, and Pol II recruitment strengthen the mechanistic model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "36d71d58-977c-458c-bd7f-bece7d45b622",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The p300 inhibitor C646 selectively reduces induction of Akt-dependent M2 genes, suggesting p300 may link Akt/Acly-dependent Ac-CoA increases to histone acetylation at these genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29 and C30 are supported by qPCR data (Figure 4C). However, C30 is partially inferential, proposing a mechanism based on known p300 properties (high Km for Ac-CoA) cited from the literature. Direct evidence for p300 recruitment to specific promoters would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "d6fc339d-a545-40b9-b2a6-c345025d6b2a",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Arginase activity is regulated by Akt and Acly in both BMDMs and peritoneal-elicited macrophages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31 and C32 are supported by arginase activity assay data (Figure 4D) and qPCR data from peritoneal macrophages (Figure 4\u2014figure supplement 2). The demonstration in multiple macrophage populations suggests broader applicability of the Akt-Acly regulatory axis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "6a550ba1-7955-461e-b010-26cbef35342e",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "mTORC1 regulates M2 activation through control of Acly protein levels and phosphorylation, as demonstrated by Raptor-deficient and Tsc1-deficient BMDMs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C38 are supported by qPCR data (Figure 5A), western blot data (Figure 5B, Figure 5\u2014figure supplement 1), and appropriate genetic models (Raptor KO and Tsc1 KO). The bidirectional effects (loss and gain of mTORC1 function) and rapamycin sensitivity provide strong evidence for mTORC1 control of Acly.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "25d4934c-30e9-44c1-bd42-e5d44fc3861b",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Amino acid levels dose-dependently modulate Akt-mTORC1-Acly activity and selectively potentiate induction of Akt-dependent M2 genes in a Raptor-dependent manner, without affecting Stat6 signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C44 are supported by western blot data (Figure 6B), LC-MS data (Figure 6C), qPCR data (Figure 6D), and genetic validation (Figure 6\u2014figure supplement 1). The experimental design appropriately isolates metabolic input from canonical IL-4 signaling by showing no effect on Stat6. The dose-response relationship strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "6f456549-1210-443d-8b39-287c19a5b99c",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Leucine deficiency attenuates IL-4-inducible Akt-mTORC1-Acly activity and selectively reduces expression of Akt-dependent M2 genes without affecting Stat6 phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45 and C46 are supported by western blot data (Figure 6E) and qPCR data (Figure 6F). This complementary approach to amino acid titration (specific deprivation of leucine, a key mTORC1 regulator) strengthens the conclusion about metabolic control of M2 activation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "16d7d1b5-022b-4f58-80c1-86995dd93dbf",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "In adipose tissue macrophages, Akt activation, global H3 acetylation, and M2 gene expression are elevated in the fed state compared to fasted state, correlating with increased IL-13 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 are supported by western blot data (Figure 6\u2014figure supplement 2A-B) and qPCR data (Figure 6\u2014figure supplement 2C-D) from in vivo feeding/fasting experiments. This demonstrates physiological relevance of the Akt-Acly pathway in metabolic regulation of M2 activation, though the authors appropriately note that multiple factors (IL-13, amino acids, glucose) may contribute.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "ba0ec00a-12b8-48eb-aacc-5dff4aa78183",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "RNA-seq analysis reveals that 758 genes are induced >2-fold by IL-4, with 91 genes downregulated >30% by both Akt and Acly inhibitors, indicating Acly is a major target of Akt in M2 activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 are supported by RNA-seq data (Figure 7A,B) with appropriate statistical cutoffs (>2 RPKM, Log2fold>1.0, DESeq P-adj<0.05). The substantial overlap between Akt- and Acly-sensitive genes (91/118 Acly-sensitive genes are Akt-sensitive) supports the conclusion that Acly is a major Akt target in this context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "e328c990-db25-4c7b-ae51-b6d5102770f9",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Gene enrichment analysis identifies cell cycle, DNA replication, chemokines (Ccl2, Ccl7, Ccl17, Ccl24), and Ear family genes as preferentially enriched in Akt- and Acly-coregulated genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 are supported by gene enrichment analysis (Figure 7C,D) and validation by qPCR and ELISA (Figure 7E,F). The identification of functional gene subsets (proliferation, chemokines) provides biological insight into which M2 functions are metabolically regulated. The Ear gene validation, though below RNA-seq cutoffs, is appropriately confirmed by qPCR.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "74357a70-2c25-4900-aa02-6ba86cc4ffc8",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "IL-4 signaling co-opts the Akt-mTORC1 pathway to regulate Acly and Ac-CoA production, leading to selective control of M2 gene subsets including those regulating proliferation and chemokines, with metabolic signals calibrating this response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 represent the main conclusions synthesized from the experimental findings. These summary claims are well-supported by the collective data, though C61 includes a proposed model that is speculative. The overall mechanistic framework is coherent and supported by multiple lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    },
+    {
+      "id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a",
+      "content_id": "9b6e3998-67b6-473b-9d9d-286b2494ad6a",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Background claims establishing prior knowledge about macrophage metabolism, Akt-mTORC1 signaling, Acly function, and metabolic regulation of gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C91 are background/context claims supported by appropriate citations to the literature. These establish the scientific foundation for the current work and are accurately represented. No experimental validation is required for these literature-based claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:50:18.546173Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e96491e3-f67c-49b0-bc01-adf70e848b8a",
+      "result_id": "a05893e2-4cb1-4ced-90ae-fe0070f51392"
+    },
+    {
+      "claim_id": "dc9bb94e-6f6a-4c8c-be5c-859a24deb7cc",
+      "result_id": "a05893e2-4cb1-4ced-90ae-fe0070f51392"
+    },
+    {
+      "claim_id": "df91416c-e582-46bb-a590-4512c241dfea",
+      "result_id": "7c6f0686-2cee-43d0-9bd3-ed9ea44d259d"
+    },
+    {
+      "claim_id": "1cc535d0-07fc-49ef-9a2e-e3abeb9618dd",
+      "result_id": "7c6f0686-2cee-43d0-9bd3-ed9ea44d259d"
+    },
+    {
+      "claim_id": "46bbc1db-81a4-478b-9a4b-340c19e995a6",
+      "result_id": "7c6f0686-2cee-43d0-9bd3-ed9ea44d259d"
+    },
+    {
+      "claim_id": "76193930-d383-4b47-b8f1-17a0c00e2d31",
+      "result_id": "f697723c-0d10-4d25-9ea3-8aff7ed4441b"
+    },
+    {
+      "claim_id": "54cef4fd-6e7f-4e88-8eb4-99f37bd1adc3",
+      "result_id": "f697723c-0d10-4d25-9ea3-8aff7ed4441b"
+    },
+    {
+      "claim_id": "e75bbe55-2f36-4924-b16b-eb123826e4e7",
+      "result_id": "d4e3d922-a38b-4a52-b2ec-28df17d68ca0"
+    },
+    {
+      "claim_id": "4644e6ce-3297-426a-bfd1-cad9dfcef03e",
+      "result_id": "d4e3d922-a38b-4a52-b2ec-28df17d68ca0"
+    },
+    {
+      "claim_id": "d627a521-6ac6-43e0-973b-8b9c81e93876",
+      "result_id": "79dc0afb-e28e-4414-a4d6-d8b3569db631"
+    },
+    {
+      "claim_id": "3869a446-a819-427e-b176-4d65719a5f9a",
+      "result_id": "79dc0afb-e28e-4414-a4d6-d8b3569db631"
+    },
+    {
+      "claim_id": "4d3303f2-c534-4d1e-8d02-adaf49b5bba4",
+      "result_id": "79dc0afb-e28e-4414-a4d6-d8b3569db631"
+    },
+    {
+      "claim_id": "6a7ef966-1d87-47e3-9365-855c503ce500",
+      "result_id": "79dc0afb-e28e-4414-a4d6-d8b3569db631"
+    },
+    {
+      "claim_id": "3b194f2b-6fc8-47d7-abf1-8eb1c27b5844",
+      "result_id": "f653fe29-f6bf-4f38-b167-499e652fbe39"
+    },
+    {
+      "claim_id": "0d256d69-a1cd-43ab-81bc-3e7d63d7350e",
+      "result_id": "f653fe29-f6bf-4f38-b167-499e652fbe39"
+    },
+    {
+      "claim_id": "86147346-a480-44e6-b537-b5a4472029f3",
+      "result_id": "f653fe29-f6bf-4f38-b167-499e652fbe39"
+    },
+    {
+      "claim_id": "5895c660-1f40-4b02-add0-a100249ee4d1",
+      "result_id": "1605d390-8467-4b13-b348-a98efc40c987"
+    },
+    {
+      "claim_id": "115a7e0b-f811-43a8-a6ce-67bafda52c1d",
+      "result_id": "1605d390-8467-4b13-b348-a98efc40c987"
+    },
+    {
+      "claim_id": "3e8a3583-9574-4891-868a-b743c0e5d1cc",
+      "result_id": "1605d390-8467-4b13-b348-a98efc40c987"
+    },
+    {
+      "claim_id": "8a1a84ac-25e0-4d41-98f0-88ee4962f279",
+      "result_id": "c83569a3-59bc-470b-8d2c-2c5374eb972f"
+    },
+    {
+      "claim_id": "e6035e6f-616c-477b-9cf2-f7a15064caaf",
+      "result_id": "c83569a3-59bc-470b-8d2c-2c5374eb972f"
+    },
+    {
+      "claim_id": "77057ca4-47a9-49c2-b476-22c8cf52e064",
+      "result_id": "c83569a3-59bc-470b-8d2c-2c5374eb972f"
+    },
+    {
+      "claim_id": "7ea620ef-13f6-4d25-b9e5-43cfff9df78a",
+      "result_id": "c83569a3-59bc-470b-8d2c-2c5374eb972f"
+    },
+    {
+      "claim_id": "1ddeb391-8095-499d-8f13-f0c454bd36f0",
+      "result_id": "02b11688-3afc-4080-bc81-b1c119cc7d5f"
+    },
+    {
+      "claim_id": "0827c6c6-edd3-4e90-8d0c-89e030f4f423",
+      "result_id": "02b11688-3afc-4080-bc81-b1c119cc7d5f"
+    },
+    {
+      "claim_id": "5bdea0fe-0d69-437f-b400-0143b5d7aed5",
+      "result_id": "7db92a4d-0edd-4f74-b7b0-5732b4447e10"
+    },
+    {
+      "claim_id": "8d4d49c2-8b89-4e81-b42b-f24c3ac09f2f",
+      "result_id": "7db92a4d-0edd-4f74-b7b0-5732b4447e10"
+    },
+    {
+      "claim_id": "e7616126-ff30-4eed-986d-48c6efb0e244",
+      "result_id": "7db92a4d-0edd-4f74-b7b0-5732b4447e10"
+    },
+    {
+      "claim_id": "7a226f65-84ac-4560-875c-b0929a1eaa50",
+      "result_id": "36d71d58-977c-458c-bd7f-bece7d45b622"
+    },
+    {
+      "claim_id": "1f8462a2-48c4-4aeb-bdd2-a358aa41fd60",
+      "result_id": "36d71d58-977c-458c-bd7f-bece7d45b622"
+    },
+    {
+      "claim_id": "775afe1a-c6e7-452d-981e-767abdda2d74",
+      "result_id": "d6fc339d-a545-40b9-b2a6-c345025d6b2a"
+    },
+    {
+      "claim_id": "8817c849-949c-412e-af72-1e0ea1a4ea86",
+      "result_id": "d6fc339d-a545-40b9-b2a6-c345025d6b2a"
+    },
+    {
+      "claim_id": "965ad6d6-af2d-4f28-833b-bba153af87e8",
+      "result_id": "6a550ba1-7955-461e-b010-26cbef35342e"
+    },
+    {
+      "claim_id": "a135dabb-e923-4e9a-8786-e7c93373c357",
+      "result_id": "6a550ba1-7955-461e-b010-26cbef35342e"
+    },
+    {
+      "claim_id": "ee0c6b7a-676d-44ff-9443-ca0e1193e6f5",
+      "result_id": "6a550ba1-7955-461e-b010-26cbef35342e"
+    },
+    {
+      "claim_id": "c6410428-550b-42ee-b6c3-fa1248a3a553",
+      "result_id": "6a550ba1-7955-461e-b010-26cbef35342e"
+    },
+    {
+      "claim_id": "4f9016a4-1e5d-4760-8831-e36db83d6b38",
+      "result_id": "6a550ba1-7955-461e-b010-26cbef35342e"
+    },
+    {
+      "claim_id": "7b840d8f-f216-47c4-906e-236f3deb0ab7",
+      "result_id": "6a550ba1-7955-461e-b010-26cbef35342e"
+    },
+    {
+      "claim_id": "bb0ebd4a-442e-4ac5-8403-be34176237ef",
+      "result_id": "25d4934c-30e9-44c1-bd42-e5d44fc3861b"
+    },
+    {
+      "claim_id": "bb7627c7-d826-4b0d-9c14-525bb213a483",
+      "result_id": "25d4934c-30e9-44c1-bd42-e5d44fc3861b"
+    },
+    {
+      "claim_id": "3123289d-42e5-4d49-9413-1bb0d76d9103",
+      "result_id": "25d4934c-30e9-44c1-bd42-e5d44fc3861b"
+    },
+    {
+      "claim_id": "c382b46a-5622-45a0-8650-16f63a274004",
+      "result_id": "25d4934c-30e9-44c1-bd42-e5d44fc3861b"
+    },
+    {
+      "claim_id": "d7bfbb6b-117d-47af-8146-2ded0b27b436",
+      "result_id": "25d4934c-30e9-44c1-bd42-e5d44fc3861b"
+    },
+    {
+      "claim_id": "6dac6b42-4d34-4203-b187-faa35e4c1881",
+      "result_id": "25d4934c-30e9-44c1-bd42-e5d44fc3861b"
+    },
+    {
+      "claim_id": "a574eb33-538d-4d2f-9a7c-dd2315034290",
+      "result_id": "6f456549-1210-443d-8b39-287c19a5b99c"
+    },
+    {
+      "claim_id": "df7d4ec5-5ea4-4b20-acc1-a190a547f527",
+      "result_id": "6f456549-1210-443d-8b39-287c19a5b99c"
+    },
+    {
+      "claim_id": "cc71932f-dd52-4221-98da-45936750d887",
+      "result_id": "16d7d1b5-022b-4f58-80c1-86995dd93dbf"
+    },
+    {
+      "claim_id": "3c984fed-1c70-414d-a412-e24233858ee2",
+      "result_id": "16d7d1b5-022b-4f58-80c1-86995dd93dbf"
+    },
+    {
+      "claim_id": "9e1eb659-ab01-4f24-9a76-0980acc4efe0",
+      "result_id": "16d7d1b5-022b-4f58-80c1-86995dd93dbf"
+    },
+    {
+      "claim_id": "3bad3cda-78ad-436b-8538-1e9a9b8d20ab",
+      "result_id": "ba0ec00a-12b8-48eb-aacc-5dff4aa78183"
+    },
+    {
+      "claim_id": "75c803e0-47b1-4d7a-a1c1-0d3bd99d048a",
+      "result_id": "ba0ec00a-12b8-48eb-aacc-5dff4aa78183"
+    },
+    {
+      "claim_id": "d1274e70-664a-4bfc-8d40-4df63bfc1654",
+      "result_id": "ba0ec00a-12b8-48eb-aacc-5dff4aa78183"
+    },
+    {
+      "claim_id": "2dc81afd-1a9b-486d-8e4d-39418be927d7",
+      "result_id": "ba0ec00a-12b8-48eb-aacc-5dff4aa78183"
+    },
+    {
+      "claim_id": "011b538c-a308-4999-bab4-2a3633673822",
+      "result_id": "e328c990-db25-4c7b-ae51-b6d5102770f9"
+    },
+    {
+      "claim_id": "0cf2ea38-2cc6-437e-a6d2-ba8f4b855a55",
+      "result_id": "e328c990-db25-4c7b-ae51-b6d5102770f9"
+    },
+    {
+      "claim_id": "a9fb5ebd-10d2-4b63-90a2-3e58979e8815",
+      "result_id": "e328c990-db25-4c7b-ae51-b6d5102770f9"
+    },
+    {
+      "claim_id": "b86eb62f-38e6-4b15-89ad-d03e9a9ae1b5",
+      "result_id": "e328c990-db25-4c7b-ae51-b6d5102770f9"
+    },
+    {
+      "claim_id": "d3d44ffc-aafe-4f3f-886b-405415da49cd",
+      "result_id": "74357a70-2c25-4900-aa02-6ba86cc4ffc8"
+    },
+    {
+      "claim_id": "3bb85836-c39e-4208-a0ac-f727e9018571",
+      "result_id": "74357a70-2c25-4900-aa02-6ba86cc4ffc8"
+    },
+    {
+      "claim_id": "839b01c3-4f69-458f-8ccf-a89281bc6244",
+      "result_id": "74357a70-2c25-4900-aa02-6ba86cc4ffc8"
+    },
+    {
+      "claim_id": "23c299e5-e6aa-4c35-993f-8c78a4ac2c71",
+      "result_id": "74357a70-2c25-4900-aa02-6ba86cc4ffc8"
+    },
+    {
+      "claim_id": "bd419590-4bf1-40f9-9241-fafa804e51ca",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "2fdb60a9-c039-48ce-b259-a9c5ddabcf36",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "e5fc6cb3-4200-4ad6-bf1e-b0a2933e948c",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "7452b01e-a397-407f-9aef-7e58c4732c4a",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "9f9d9b9c-f7c3-48e0-a8e2-0cf18356900d",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "0c62cb22-8944-4ccf-becc-f70b0006081f",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "e74cc5b3-32a5-427e-834e-3810d8c1bc96",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "5d86bdc1-8bf3-4c81-bf8d-04f5344d1526",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "f1f532a4-8a69-4250-868f-53bcb25a551a",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "57429938-4de1-44e0-a980-d48e25988855",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "faed3169-0ac0-4930-ac87-1a673181015a",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "ee459e7d-e099-4a6d-aff2-3c9894712aed",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "151a6d75-94b0-4974-8098-21ff2477a404",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "5a8a2547-8c79-48a1-9a4d-b7f58d5937b4",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "3d0e9ca1-7e52-4abc-a208-a34f410fd537",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "e47400a9-fbb8-4d32-ae61-594bc6d7081e",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "b97016d8-ca6b-4f27-a90b-c53fbe23bb16",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "2c3aa9ce-1ba7-44f3-a0b5-7f914188bfb1",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "d38dea43-600f-474e-aa3c-3b7e2666e785",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "330ed60b-e98f-4b96-9fbb-a3c7d5e50064",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "67a91376-0aca-4756-9c75-0c29c107a611",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "785aa8da-4985-41ca-bca3-eb29d8b6d660",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "b79e7258-3569-438f-856c-b35cd60e93ee",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "55945ec9-3320-47d2-a6ef-b63d77057f67",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "06a29fde-3d8a-4ebb-ab06-f25434659558",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "97208e49-f15f-4497-a557-e9ded154ba62",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "1e2ebb7f-921d-48b5-98c9-351446286b2b",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "bd373bf3-862f-4057-9a08-1687e38c880a",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "588f1cd7-44a3-4b2a-ab04-707ae6742c22",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    },
+    {
+      "claim_id": "0a7feeb2-363f-4eba-903a-b05112b34c81",
+      "result_id": "0396b896-d891-4a50-b0aa-f0cf4b480b2a"
+    }
+  ],
+  "comparisons": []
+}

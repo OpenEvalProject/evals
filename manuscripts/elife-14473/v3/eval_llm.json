@@ -1,0 +1,217 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The manuscript provides background on \u03b1-dystroglycan's role in muscular dystrophy and the O-mannose glycosylation pathway. These claims establish that defects in glycosyltransferases cause dystroglycanopathies ranging from mild LGMD to severe WWS, and that the functional glycan structure involves O-mannose modifications elaborated by various enzymes including POMT1/2, POMGNT1, POMGNT2, B3GALNT2, POMK, B4GAT1, and LARGE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 and C61-C63 are all supported by citations to prior literature and represent established knowledge in the field. These background claims provide context for the current study and are well-documented in the cited references. No new experimental data is presented for these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The authors identified pentitol-Xyl-GlcA and extended pentitol-(Xyl-GlcA)n structures in glycans released from \u03b1-DG-340 following aqueous HF treatment. The \u03b1-DG-340 construct contains only one M3 glycan consensus site (TPT, 317-319), and HF treatment results in loss of IIH6 antibody binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 are supported by experimental data shown in Figures 2 and related supplements. The mass spectrometry data clearly demonstrates the presence of pentitol-containing structures, and the loss of IIH6 binding after HF treatment is consistent with cleavage of the phosphodiester linkage. The experimental design using a simplified construct with one M3 site is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C79"
+    ],
+    "result": "ISPD is a CDP-ribitol (ribose) pyrophosphorylase that generates CDP-ribitol from CTP and ribitol-5-phosphate, and CDP-ribose from CTP and ribose-5-phosphate. ISPD cannot generate these sugar nucleotides from ribitol or ribose without the phosphate group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 are strongly supported by the mass spectrometry data in Figure 3 showing the enzymatic products of recombinant ISPD. The substrate specificity requiring phosphorylated substrates is clearly demonstrated. Claim C23 provides independent validation from a concurrent publication (Riemersma et al., 2015), strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C68",
+      "C69"
+    ],
+    "result": "Mild periodate treatment of \u03b1-DG-340 resulted in loss of IIH6 reactivity and revealed ribitol fragments on the phosphotrisaccharide at Thr317. Mass spectrometry identified glycopeptides with ribitol cleavage between C2-C3 or C3-C4, and some peptides contained an additional phosphate, suggesting the ribitol is connected at C1 to a phosphate on the M3 glycan and at C5 to xylose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 are supported by experimental data in Figure 4 and supplements. The periodate cleavage pattern is consistent with a linear ribitol structure, and the mass spectrometry data showing cleavage at specific positions provides strong evidence for the proposed linkage. The observation of an additional phosphate (C27, C69) adds structural detail, though the exact position of the second phosphate could not be resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C70",
+      "C80"
+    ],
+    "result": "TMEM5 is a UDP-xylosyl transferase that can hydrolyze UDP-Xyl selectively, transfer radiolabeled xylose to \u03b1-DG-Fc340 from TMEM5-deficient cells, and use CDP-ribitol (but not ribitol or ribitol-5-P) as an acceptor substrate. The authors conclude TMEM5 is the xylosyl transferase for modification of ribitol in a phosphodiester linkage to the M3 glycan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C31-C33 are supported by experimental data in Figure 5. However, the authors themselves acknowledge (C34) that the evidence is 'strong, but not direct.' The key limitation is that TMEM5 activity was not demonstrated on the actual glycopeptide substrate (ribitol-phosphotrisaccharide-peptide), only on CDP-ribitol as a surrogate. While CDP-ribitol may mimic the phosphodiester linkage (C70), direct demonstration of xylose transfer to the authentic substrate is needed for definitive proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C81"
+    ],
+    "result": "Knockdown of tmem5 in zebrafish caused hydrocephalus (95% of embryos), reduced eye size, compromised sarcolemma integrity (Evans Blue dye infiltration), and a 44% reduction in glycosylated \u03b1-dystroglycan. Co-injection with p53 MO did not rescue the phenotype, suggesting the effects are not due to off-target effects. These results demonstrate TMEM5's role in functional glycosylation of \u03b1-DG and that its knockdown generates a CMD phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C43 are supported by experimental data in Figure 6 and supplements. The zebrafish phenotype is consistent with WWS/CMD, and the p53 control experiment (C37-C38) addresses potential off-target effects. The reduction in glycosylated \u03b1-DG (C41) provides a molecular link between TMEM5 loss and the observed phenotype. Statistical analysis is provided for eye size measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C82"
+    ],
+    "result": "A homozygous TMEM5 mutation (c.997G>A, p.G333R) was identified in two affected siblings with WWS from a consanguineous family, while the unaffected sibling was homozygous wildtype. The mutation affects a highly conserved amino acid in the predicted glycosyltransferase domain and is predicted to be damaging. Both WWS fetuses showed brain abnormalities, severe dystrophic muscle features, and complete loss of functional \u03b1-DG glycosylation and laminin binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52 are supported by whole exome sequencing, Sanger sequencing confirmation, computational predictions, and extensive clinical/histological characterization shown in Figure 7 supplements. The segregation pattern in the family is consistent with autosomal recessive inheritance, and the clinical phenotype matches WWS. The molecular characterization showing loss of \u03b1-DG glycosylation provides functional evidence linking the mutation to disease.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Wildtype TMEM5 fully restored functional glycosylation in patient cells, while the p.G333R mutant did not. Both wildtype and mutant proteins localize normally to the Golgi, indicating the mutation affects catalytic activity rather than protein processing or localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by complementation assay data (Figure 7B,C) and immunofluorescence localization studies (Figure 7D). The rescue experiment provides strong evidence for pathogenicity of the p.G333R mutation. The normal Golgi localization of the mutant protein rules out trafficking defects and supports the interpretation that the mutation directly impairs enzymatic activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C78",
+      "C83"
+    ],
+    "result": "The authors propose a model where the functional M3 glycan on \u03b1-DG contains a phosphorylated trisaccharide extended by ribitol (added by Fukutin/FKRP) in a phosphodiester linkage, followed by xylose (added by TMEM5), GlcA (added by B4GAT1), and matriglycan repeats (added by LARGE). ISPD generates CDP-ribitol as the sugar donor, analogous to DPM1/2/3 generating dolichol-phosphomannose. Defects in ISPD and DPM1/2/3 are classified as tertiary dystroglycanopathies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 represent the integrated model based on all experimental data presented. The model is well-supported by the structural characterization (pentitol/ribitol identification), enzymatic characterization (ISPD and TMEM5 activities), and genetic/functional validation (zebrafish and human patient studies). The classification of ISPD/DPM1/2/3 defects as tertiary dystroglycanopathies (C60) is a logical inference supported by their roles in generating sugar donors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors speculate about the metabolic source of ribitol-P, suggesting it may be generated from ribose-5-phosphate by aldose reductase, or alternatively that reduction occurs after CDP-ribose formation. They note that no CDP-ribitol transporter has been identified and speculate that SLC35A1 may serve this function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C67 are explicitly speculative (C65, C67) or acknowledge gaps in knowledge (C66). While the speculation about ribitol-P biosynthesis (C64) is reasonable based on known metabolic pathways, no experimental evidence is provided. The speculation about SLC35A1 as a CDP-ribitol transporter (C67) is based on indirect evidence from prior studies but remains untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors acknowledge limitations in their structural characterization and note that a concurrent publication by Kanagawa et al. (2016) established that Fukutin adds ribitol-P to GalNAc and FKRP extends with another ribitol-P before xylose addition by TMEM5. The authors state their data is consistent with this structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 appropriately acknowledge limitations (C71) and integrate findings from a concurrent publication (C72-C73). The statement that their data is consistent with Kanagawa et al.'s structure (C74) is reasonable given the complementary nature of the findings. This demonstrates scientific integrity in acknowledging both limitations and independent validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors raise questions about why only select sites on \u03b1-DG (and not other O-mannosylated proteins) receive M3 glycans with matriglycan, noting this specificity and the evolution of such a complex pathway for a few sites on one protein as puzzling. They identify understanding this exclusivity and the role of M1/M2 glycans as future challenges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 represent thoughtful discussion of unresolved questions in the field. These are appropriate observations about the biological significance and evolutionary aspects of the pathway. While speculative (C76), they identify important areas for future research (C77) and demonstrate critical thinking about the broader implications of the findings.",
+    "result_type": "MINOR"
+  }
+]

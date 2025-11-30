@@ -1,0 +1,356 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Native OVA contains 54.9% complex-type glycans, 23% mannose-rich glycans (mainly Man5 and Man6), 16.2% hybrid glycoforms, and 3% oligomannose (Man3) glycoforms, as determined by normal-phase HPLC coupled with mass spectrometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 present a comprehensive glycan profile of native OVA based on HPLC-MS analysis shown in Figure 1A. The percentages sum to approximately 97%, which is reasonable given analytical limitations. The methodology is appropriate for glycan characterization, and the data directly support the quantitative claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "The presence of mannose-rich glycans on OVA correlates with previous reports that MR interacted with OVA and mediated TLR-dependent and TAP-1-dependent cross-presentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 appropriately cite prior work (Burgdorf et al., 2006, 2008) to contextualize the current glycan profiling results. The correlation between the 23% mannose-rich glycans identified here and previous MR-OVA interactions is logical and well-supported by the citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8"
+    ],
+    "result": "Mass spectrometry confirmed that OVA-LeX increased by 1.2 KDa in mass, indicating at least 40% of the preparation contained LeX, corresponding to the addition of two LeX molecules per OVA molecule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 are supported by MALDI-TOF/TOF data in Figure 1\u2014figure supplement 1. The mass increase calculation and inference of two LeX molecules per OVA are reasonable. However, the claim that '40% of the total preparation' contained LeX requires clarification\u2014this likely refers to the proportion of OVA molecules modified, not the total mass.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Native OVA does not bind MGL1 but binds MR, while LeX modification confers high-avidity MGL1 binding without altering MR binding, as demonstrated by ELISA with MGL1-Fc and MR-Fc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 are well-supported by ELISA data in Figure 1B showing differential binding patterns. The data clearly demonstrate that LeX modification redirects OVA to MGL1 while maintaining MR binding. The controls with anti-OVA antibodies confirm equivalent protein concentrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "MGL is expressed on both splenic and bone marrow-derived DCs of C57BL/6 mice, with MGL1 expression confirmed by qRT-PCR in wild-type CD11c+ DCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 are supported by flow cytometry (Figure 2A) and qRT-PCR data (Figure 2B). The use of both antibody staining and mRNA quantification provides complementary evidence for MGL1 expression on the relevant cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Immunization with OVA-LeX plus anti-CD40 antibodies enhanced priming of OVA-specific CD8+ T cells compared to native OVA in wild-type mice, but this enhancement was lost in MGL1 KO mice, demonstrating that MGL1 is the prime lectin mediating this effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 are strongly supported by in vivo immunization data (Figures 2C-D). The use of MGL1 KO mice as a genetic control is rigorous and clearly demonstrates MGL1 dependence. The tetramer and intracellular cytokine staining data provide multiple readouts of T cell priming with consistent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "OVA-LeX and native OVA induced similar levels of CD4+ OT-II T cell proliferation, indicating that LeX modification did not affect MHC class II loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 are supported by proliferation data in Figure 3A showing equivalent responses to both antigens. The inference that MHC-II loading is unaffected is reasonable given the similar proliferation, though direct MHC-II peptide loading assays would provide more definitive evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "OVA-LeX-loaded DCs induced significantly more IFN-\u03b3-producing CD4+ T cells (Th1 skewing) than native OVA-loaded DCs in both C57BL/6 and BALB/c mice, without affecting IL-4, IL-17A, or Foxp3+ T cell induction, and this effect was not due to increased proliferation but likely due to MGL1-mediated signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C28 are well-supported by in vitro (Figure 3B) and in vivo (Figure 3C) data showing consistent Th1 skewing across different mouse strains. The proliferation control (Figure 3\u2014figure supplement 1) appropriately rules out differential expansion as the mechanism. The inference of MGL1-mediated signaling (C28) is reasonable but remains speculative without direct signaling data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "LeX modification significantly increased OVA internalization by DCs and substantially enhanced cross-presentation to CD8+ T cells, with OT-I proliferation doubled at low antigen concentrations (7.5 \u00b5g/ml), indicating that LeX modification greatly affected cross-presentation efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are supported by uptake data (Figure 4A\u2014figure supplement 1) and proliferation assays (Figures 4B, 4B\u2014figure supplement 2). The dose-response data clearly demonstrate enhanced cross-presentation at low antigen doses, which is a key finding. The quantitative claim of 'doubled' proliferation at 7.5 \u00b5g/ml is directly supported by Figure 4B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "OVA-LeX loading resulted in enhanced SIINFEKL/H-2Kb complex presentation on DC surfaces compared to native OVA, and this cross-presentation was clearly mediated by MGL1 as demonstrated using MGL1 KO DCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by 25.1D1 antibody staining (Figure 4C) and MGL1 KO experiments (Figure 4D). The use of the 25.1D1 antibody provides direct evidence of peptide-MHC-I complexes at the cell surface, and the MGL1 KO control definitively establishes receptor dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "MGL1-mediated cross-presentation of OVA-LeX occurred independently of TLR signaling, as demonstrated using MyD88/TRIF DKO mice, and was not due to LPS contamination or DC maturation, suggesting only a minor role for MyD88/TRIF signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 are well-supported by data from MyD88/TRIF DKO mice (Figure 4E), LPS contamination controls (Figure 4\u2014figure supplement 5), and DC maturation assessments. The genetic knockout approach is rigorous, and the LPS control addresses a critical potential confound. The conclusion of TLR independence is a major finding that distinguishes MGL1 from MR-mediated cross-presentation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Cross-presentation of OVA-LeX was not reduced in TAP1 KO DCs, unlike native OVA with LPS which showed TAP-dependent cross-presentation, and exogenous peptide presentation was equal in WT and TAP1 KO DCs, ruling out confounding by reduced MHC-I levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by data from TAP1 KO mice (Figure 5A) and controls with OVA+LPS (Figure 4\u2014figure supplement 2). The peptide loading control appropriately addresses the concern about reduced MHC-I expression in TAP1 KO cells. This TAP-independence is a key mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Cross-presentation of OVA-LeX by Cathepsin-S KO DCs was not reduced compared to WT DCs, while MHC-II-restricted CD4+ T cell proliferation was compromised in Cat-S KO DCs as expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by data from Cat-S KO mice (Figure 5B) and the appropriate positive control showing compromised MHC-II presentation. The Cat-S independence, combined with TAP independence, suggests a novel cross-presentation pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "OVA-LeX rapidly co-localized with EEA1 and Rab11 at 15 min, then moved to LAMP1+Rab11+ compartments by 60 min where it persisted, representing altered intracellular routing compared to native OVA which remained in EEA1+Rab11+ compartments; this routing to LAMP1+ compartments was MGL1-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 are supported by imaging flow cytometry (Figures 6A-B) and confocal microscopy (Figure 6C) data showing temporal changes in co-localization. The use of MGL1 KO DCs confirms receptor-dependent routing. The multi-modal imaging approach strengthens the conclusions about intracellular trafficking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "MGL1 begins dissociating from LeX at pH 6.5, indicating that OVA-LeX becomes available for degradation in early and late endosomal compartments associated with cross-presentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by pH-dependent binding ELISA data (Figure 6D). The inference that pH 6.5 dissociation corresponds to early/late endosomal compartments is reasonable based on established knowledge of compartment pH. This provides a mechanistic explanation for antigen release and processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "OVA-LeX-loaded DCs maintained strong cross-presentation capacity even 48 hours after antigen pulse, with sustained OT-I proliferation at low antigen concentrations, while OT-II proliferation was less pronounced, suggesting that prolonged antigen storage in Rab11+LAMP1+ compartments predominantly favored cross-presentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 are supported by pulse-chase experiments (Figures 7A-B) showing sustained cross-presentation after 48h. The differential effect on CD8+ vs CD4+ T cells provides evidence for compartment-specific cross-presentation. The data support the conclusion of prolonged antigen storage facilitating cross-presentation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Glycan modification of antigens has major influence on antigen uptake and intracellular compartmentalization; specifically, LeX modification directs OVA to MGL1, enhancing CD8+ T cell cross-priming and Th1 skewing at low antigen doses, independently of TLR signaling, TAP, and Cathepsin-S, via routing to Rab11+LAMP1+ compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 represent the main conclusions synthesizing the experimental findings. These summary claims are well-supported by the comprehensive data presented throughout the manuscript, including binding studies, in vivo immunizations, knockout mouse experiments, and intracellular trafficking analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Unlike MR-mediated cross-presentation which requires TLR ligands, MGL1-mediated cross-presentation via LeX obviates the need for TLR signals, though the mechanism remains unclear as no signaling pathway has been described for MGL1, and OVA-LeX did not induce DC maturation or altered cytokine production, requiring co-stimulation (anti-CD40) for full T cell activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C77 appropriately contextualize the findings within existing literature and acknowledge gaps in mechanistic understanding. The requirement for anti-CD40 co-stimulation is supported by the experimental design. The speculation about MGL1 signaling (C76) is appropriately qualified as uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The MGL1 cross-presentation pathway differs from established cytosolic (TAP-dependent) and vacuolar (Cathepsin-S-dependent) pathways, and may occur via antigen storage compartments similar to Fc\u03b3R-targeted antigens, potentially involving Rab11-mediated delivery of MHC-I molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 appropriately cite prior work describing established cross-presentation pathways and position the current findings as a novel mechanism. The comparison to Fc\u03b3R-targeted antigens is supported by citation. The speculation about Rab11 involvement (C82) is appropriately qualified and supported by recent literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "MGL1-mediated cross-presentation allows sustained CD8+ T cell priming in vivo and is efficient at very low antigen concentrations (7.5 \u00b5g/ml), unlike native OVA which requires high doses (0.5-1.0 mg/ml) and TLR triggering, suggesting that CLR specificity and antigen glycosylation dictate cross-presentation efficiency, with MGL1 being much more efficient than MR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 synthesize the dose-response findings and compare them to literature values for MR-mediated cross-presentation. The quantitative comparison is well-supported by the data and citations. The speculation about vaccine efficacy (C84) is appropriately qualified. The conclusion about CLR-dependent efficiency is a key conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Glycan profiles are regulated by cell type and activation status and change dramatically upon malignant transformation; LeX is expressed in brain and cancer stem cells, and glycosylation patterns are crucial for CLR-mediated antigen uptake and cross-presentation, though multivalent LeX presentation might alter MGL1 signaling and induce anti-inflammatory responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 appropriately cite literature on glycan biology and LeX expression in various contexts. The speculation about multivalent effects (C94) is appropriately qualified as uncertain. These claims provide important biological context for the potential in vivo relevance of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Conjugation of LeX to tumor antigens could be beneficial for inducing anti-tumor responses, as glycans offer several advantages for CLR-targeted immunotherapy: they mimic natural receptor function, are small and easy to produce, and may be considered self-antigens unlike recombinant antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C99 are largely speculative regarding therapeutic applications. While the experimental data support enhanced immune responses with LeX-modified antigens, the translation to tumor immunotherapy remains untested. The advantages listed (C97-C99) are reasonable but not experimentally validated in this study. These represent future directions rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The glycan composition of protein antigens is fundamentally important in dictating intracellular routing and Th-skewing, and should be considered a major determinant in designing therapeutic vaccines against cancer and infectious diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 represent the overarching conclusion of the study. While the experimental data strongly support the importance of glycan composition for antigen routing and immune responses in the OVA model system, the generalization to vaccine design (C101) is somewhat speculative. However, the principle is well-supported by the comprehensive mechanistic data presented.",
+    "result_type": "MAJOR"
+  }
+]

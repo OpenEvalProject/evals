@@ -1,0 +1,338 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "A premature polyadenylation (pPA) event occurs at a cryptic intronic poly(A) signal in MAGI3 intron 10, producing a truncated mRNA (MAGI3pPA) in the absence of local genetic mutations. Comprehensive sequencing of all exons, intron 10, and flanking sequences revealed no mutations in coding regions, splice sites, or known cis-acting regulatory elements (U1 snRNA binding site, URE). 3\u2032 RACE sequencing identified the cryptic PAS in intron 10, resulting in premature transcription termination and a stop codon several nucleotides into the intron.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C15-C23 provide converging evidence from multiple sequencing approaches (exon sequencing, intron sequencing, 3\u2032 RACE) demonstrating that MAGI3pPA arises through pPA at a cryptic intronic PAS without local mutations. The sequencing data (Figures 1G-H, Figure 1\u2014figure supplements 1-2) comprehensively rule out mutation-based mechanisms and establish the molecular basis of the truncation. This is a well-supported finding with appropriate controls and multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C14"
+    ],
+    "result": "A truncated MAGI3 protein is specifically expressed in MDA-MB-231 breast cancer cells but not in non-transformed MCF10A or HMEC cells. Mass spectrometry analysis confirmed the truncation maps to the N-terminal half of MAGI3, lacking PDZ domains 3-6 from the C-terminal region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C14 are supported by immunoblot data (Figure 1B, D) showing differential expression between cancer and normal cell lines, and mass spectrometry data (Figure 1F) mapping the truncated protein. The combination of immunoblotting and MS provides strong evidence for the identity and cancer-specific expression of the truncated protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "MAGI3pPA is recurrently expressed in 7.5% (12/160) of primary breast tumors but absent in matched tumor-adjacent normal tissues (0/160), establishing it as a tumor-specific and recurrent event. RNA-Seq analysis of TCGA and published data used a three-tiered strategy to distinguish pPA from intron retention, identifying samples with continuous read coverage across the pPA region. The truncated isoform was expressed at 2-6% of MAGI3\u03b1 levels but comparable to MAGI3\u03b2 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C34 describe a rigorous bioinformatic analysis with appropriate controls for sequencing depth (C25), statistical testing to distinguish pPA from intron retention (chi-square test), and continuity thresholds for read coverage. The tumor-specific occurrence (12/160 tumors vs 0/160 normals) provides strong evidence for recurrence. The methodology is well-designed to minimize false positives, though the relatively low expression levels (2-6% of MAGI3\u03b1) and reliance on computational thresholds introduce some uncertainty. Overall well-supported by the data presented in Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Depletion of MAGI3pPA in MDA-MB-231 cells significantly impaired anchorage-independent growth on soft agar (p=1.1\u00d710\u207b\u2074 and 3.4\u00d710\u207b\u2075 for two independent shRNAs), suggesting the pPA event was positively selected during malignant transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by soft agar assays (Figure 3A-B) using two independent shRNAs that preferentially deplete MAGI3pPA while maintaining full-length MAGI3 levels. The significant p-values and use of multiple independent shRNAs strengthen the conclusion. The inference about positive selection (C36) is reasonable given the functional data, though it remains an interpretation rather than direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "A MAGI3 truncation (MAGI3\u0394C) corresponding to a previously identified MAGI3-AKT3 fusion in breast cancer significantly promoted anchorage-independent growth when expressed in MCF10A-SV40 cells (p=4.8\u00d710\u207b\u2075), suggesting that truncated MAGI3 products from different alteration mechanisms promote mammary cell transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by soft agar assays (Figure 3F-G) and citation to prior work identifying the MAGI3-AKT3 fusion. The functional data with MAGI3\u0394C-GFP provides independent validation that MAGI3 truncations have oncogenic properties. The generalization to other truncation mechanisms (C39) is reasonable given the two independent examples (pPA and chromosomal rearrangement), though additional examples would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Full-length MAGI3 physically interacts with YAP through a PDZ domain-mediated interaction. YAP was identified as the top MAGI3 interactor by AP-MS, validated by reciprocal endogenous co-IP in MCF10A cells. The interaction requires the PDZ-binding motif of YAP and the PDZ6 domain of MAGI3, as demonstrated by deletion mutant studies and computational prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C47-C54 provide multiple lines of evidence: AP-MS identification (Figure 4A), reciprocal endogenous co-IP (Figure 4B), ectopic expression co-IP with deletion mutants (Figure 4C-D), and computational prediction (Supplementary file 2). The convergence of these approaches, including both endogenous and overexpression systems, strongly supports the MAGI3-YAP interaction and domain requirements. The identification of tight junction proteins (C44-C46) validates the AP-MS approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Full-length MAGI3 negatively regulates YAP activity in a physiologically relevant manner. MAGI3 depletion induced YAP target gene expression (ANKRD1, CYR61) and caused anchorage-independent growth in MCF10A-SV40 cells. Epistasis analysis showed that YAP knockdown or MAGI3 rescue restored the normal phenotype, demonstrating that the MAGI3/YAP interaction is functionally important for suppressing transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56, C57, C59-C61 are supported by qPCR data (Figure 4E) showing YAP target gene induction upon MAGI3 depletion with rescue controls, and soft agar assays (Figure 4F-G) demonstrating epistasis. The use of rescue experiments and epistasis analysis provides strong evidence for the functional relationship. Statistical significance is reported for all key comparisons. The conclusion about physiological relevance (C61) is well-supported by the functional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Full-length MAGI3 inhibits YAP nuclear translocation, while truncated MAGI3 promotes YAP activation. Overexpression of full-length MAGI3 caused YAP cytoplasmic accumulation under serum-stimulated conditions, whereas truncated MAGI3 increased nuclear YAP localization even under serum-deprived conditions. Truncated MAGI3 expression reduced phosphorylated/inactive YAP levels, indicating heightened YAP activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are supported by immunofluorescence data (Figure 5A-D) showing opposing effects of full-length vs truncated MAGI3 on YAP localization, and immunoblot data (Figure 5E) showing reduced YAP phosphorylation with truncated MAGI3. The use of serum stimulation/deprivation as controls strengthens the conclusions. The inference about YAP activation (C69) is well-supported by both localization and phosphorylation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "The transforming activity of truncated MAGI3 is YAP-dependent. YAP knockdown in MCF10A-SV40 cells expressing MAGI3\u0394C-GFP significantly reduced colony formation on soft agar (p=7.4\u00d710\u207b\u2075), demonstrating that YAP activity is functionally important for transformation induced by truncated MAGI3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 are supported by epistasis experiments (Figure 5F-G) showing that YAP depletion rescues the transformed phenotype caused by truncated MAGI3. This provides strong evidence for the functional importance of YAP in mediating the oncogenic effects of MAGI3 truncations. The significant p-value and clear phenotypic rescue support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Truncated MAGI3 acts in a dominant-negative manner by forming complexes with full-length MAGI3, thereby preventing full-length MAGI3 from interacting with YAP. Truncated MAGI3 prevents endogenous MAGI3/YAP interaction but cannot directly bind YAP due to lack of the PDZ6 domain. Instead, truncated MAGI3 physically associates with full-length MAGI3. In vivo, increasing the FL:pPA ratio significantly impaired tumor growth (p=5.8\u00d710\u207b\u2075), consistent with the dominant-negative mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 are supported by co-IP experiments (Figure 6A-E) demonstrating that truncated MAGI3 prevents MAGI3/YAP interaction, cannot bind YAP directly, but can bind full-length MAGI3. The orthotopic xenograft experiments (Figure 6F-G) provide in vivo validation of the dominant-negative mechanism. The convergence of biochemical and functional data strongly supports the proposed mechanism. The molecular logic is sound: truncated MAGI3 sequesters full-length MAGI3, preventing it from inhibiting YAP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The PDZ6 domain of MAGI3 is essential for MAGI3/YAP interaction, and breast cancer-associated MAGI3 truncations (MAGI3pPA and MAGI3\u0394C) lack this domain. Despite lacking PDZ6, these truncations dominantly suppress MAGI3/YAP interactions by physically associating with full-length MAGI3, resulting in YAP activation and malignant transformation. This establishes MAGI3 as a potential component of the Hippo tumor suppressor pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 synthesize findings from multiple experiments (co-IP with deletion mutants, transformation assays) to establish the molecular mechanism and biological significance. The data consistently support that PDZ6 is required for YAP binding, truncations lack PDZ6 but bind full-length MAGI3, and this leads to transformation. The implication for the Hippo pathway (C92) is reasonable given YAP's role as a major Hippo effector, though direct evidence of Hippo pathway regulation would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C2",
+      "C98",
+      "C100"
+    ],
+    "result": "Premature cleavage and polyadenylation (pPA) can produce oncogenic proteins in cancer. This study demonstrates that pPA can occur in gene introns despite the absence of mutations in flanking exon/intron sequences, and can generate truncated mRNAs encoding constitutively active or dominant-negative proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C98, C100 represent the overarching finding of the study, supported by the comprehensive characterization of MAGI3pPA. The demonstration that pPA occurs without local mutations (C98) is well-supported by sequencing data. The production of a dominant-negative oncoprotein (C100) is supported by functional and mechanistic studies. This extends prior knowledge about pPA mechanisms in cancer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "MAGI3 alterations in cancer may occur much more frequently than previously appreciated, and MAGI3 truncations represent clinically relevant driver alterations. The recurrence of MAGI3pPA in 7.5% of breast tumors, combined with functional evidence of oncogenic activity, supports the clinical relevance of MAGI3 truncations as driver alterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 are supported by the recurrence data (7.5% of tumors) and functional studies demonstrating oncogenic properties. The inference that MAGI3 alterations are more frequent than appreciated is reasonable given that pPA events would not be detected by standard genomic analyses. However, the claim about clinical relevance would be strengthened by patient outcome data or additional tumor types. The functional data strongly support driver potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background context on cancer mechanisms and driver gene identification. Many tumors harbor alterations in only 1-2 known drivers, and ~15% lack alterations in any known driver. Solid tumors arise through oncogenic cooperation between multiple drivers, suggesting many cancer-relevant genes are missed by current genomic analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C10 provide established background knowledge supported by appropriate citations. These claims contextualize the study's rationale but do not represent novel findings. They are accurately stated and properly attributed to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C13",
+      "C40",
+      "C42",
+      "C45"
+    ],
+    "result": "Background information on MAGI3 and YAP protein structure and function. MAGI3 is a scaffolding protein with 2 WW and 6 PDZ domains plus a catalytically inactive guanylate kinase domain. YAP is a transcription co-activator and major effector of the Hippo tumor suppressor pathway. MAGI3 localizes to cell junctions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C40, C42, C45 provide established knowledge about protein structure and function, supported by appropriate citations. These are accurately stated background facts that contextualize the experimental findings but do not represent novel discoveries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Background on YAP regulation by serum. In HEK293T cells, YAP activity responds to serum deprivation (promoting cytoplasmic accumulation) and serum stimulation (inducing nuclear translocation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 describe established knowledge about YAP regulation, properly cited to prior work. This provides important context for the experimental design but represents background information rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Prior evidence suggesting MAGI3 involvement in cancer. YAP overexpression causes transformation in MCF10A cells. Oncogenic HPV targets MAGI3 for degradation. MAGI3 is part of a downregulated gene signature in breast tumor-initiating cells. However, MAGI3 is not frequently altered by mutations or copy number changes and has not been previously nominated as a driver.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C79-C82 accurately summarize prior literature with appropriate citations. These claims establish the rationale for studying MAGI3 but represent background information rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Background on pPA mechanisms in cancer. In mantle cell lymphoma, mutations generate novel PAS in CCND1 3\u2032 UTR, producing shorter mRNA isoforms with extended half-lives that drive cyclin D1 overexpression. Cancer cells favor shorter 3\u2032 UTRs using gene-proximal PAS, corresponding to increased mRNA half-life and protein expression, potentially as a mechanism to evade tumor suppressive microRNA regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 accurately summarize prior work on pPA in cancer, with appropriate citations. These provide important context for how the current study extends knowledge about pPA mechanisms, but represent background information rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C99",
+      "C101",
+      "C102"
+    ],
+    "result": "Conceptual framework distinguishing pPA from alternative 3\u2032 UTR PAS selection. Alternative 3\u2032 UTR PAS selection does not alter coding potential, whereas pPA can produce truncated proteins. pPA transcripts evade nonsense-mediated decay and may cause significant functional consequences even at low expression levels by producing constitutively active or dominant-negative proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99, C101-C102 provide conceptual framework supported by the MAGI3pPA example and general knowledge of RNA surveillance mechanisms. The inference about functional consequences at low expression (C102) is supported by the MAGI3pPA data showing 2-6% expression but significant functional effects. These represent reasonable interpretations of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Discussion of potential mechanisms underlying pPA in cancer. U1 snRNP function protects against pPA at cryptic intronic PAS, and U1 depletion can produce dominant-negative proteins. Polyadenylation factor overexpression can mediate alternative intronic PAS usage. The U1 snRNP to pre-mRNA ratio is critical for global pPA events, and global transcriptional amplification in cancer might induce pPA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C107 accurately cite prior work on pPA mechanisms. However, C108 is speculative\u2014while the authors propose that transcriptional amplification might induce pPA based on the U1 snRNP ratio, this is not directly tested in the study. The speculation is reasonable but lacks experimental validation. The discussion appropriately identifies this as a hypothesis for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "Speculation that truncated MAGI3 products may more potently deregulate YAP and drive transformation compared to mutation or loss of a single MAGI3 allele, due to their dominant-negative activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C83 is a reasonable speculation based on the dominant-negative mechanism demonstrated in the study. However, this is not directly tested\u2014the authors do not compare the effects of MAGI3 truncations to heterozygous MAGI3 loss or point mutations. While the logic is sound, experimental validation would be needed to support this claim definitively.",
+    "result_type": "MINOR"
+  }
+]

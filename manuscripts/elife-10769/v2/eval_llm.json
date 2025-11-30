@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors developed and validated a computational method to estimate mtDNA copy number from whole-genome and whole-exome sequencing data by calculating the ratio of mitochondrial to nuclear DNA reads, corrected for tumor purity and ploidy. The method was validated by demonstrating significant correlation between WXS and WGS estimates across 1110 samples from 8 tumor types, and batch effects from sequencing centers were identified and corrected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C45 collectively describe a well-validated methodological approach. The method builds on established principles (C30-C33) and prior work (C33), includes appropriate corrections for batch effects (C37-C39), and demonstrates strong cross-platform validation (C44-C45, Figure 2\u2014figure supplement 1). The correlation between WXS and WGS provides independent validation of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C106"
+    ],
+    "result": "Seven of fifteen tumor types (bladder, breast, esophageal, head and neck, clear-cell kidney, papillary kidney, and liver cancers) showed statistically significant mtDNA depletion relative to matched normal tissue, with particularly strong depletion in bladder (nearly all samples) and clear-cell kidney (87% of samples) cancers. Lung adenocarcinoma was the only tumor type showing significant mtDNA accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C46-C52, and C106 are strongly supported by statistical analysis (Mann-Whitney tests with BH correction, p<0.05) shown in Figure 3. The findings are consistent across both WXS and WGS platforms (C52, Figure 3\u2014figure supplement 1), and specific quantitative observations (C49-C50) are directly supported by the data. The statistical approach is appropriate for paired sample comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "A recurrent but weak negative correlation was observed between tumor mtDNA content and immune infiltration score across multiple cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C53 is supported by correlation analysis (Figure 3\u2014figure supplements 2-5), but the authors acknowledge the correlation is weak and note that p-values are uncorrected for multiple hypothesis testing. The biological interpretation is complicated by the fact that mtDNA estimates are already partially corrected for purity, making the independent contribution of immune infiltration unclear. Additional analysis would be needed to establish causality or mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "High tumor mtDNA content was associated with better survival in adrenocortical carcinoma (p=0.026), chromophobe renal cell carcinoma (p=0.053), and low-grade glioma (p=0.009), but with worse survival in clear-cell renal cell carcinoma (p=0.023) and melanoma (p=0.043).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are supported by Cox regression analysis shown in Figure 4. The statistical tests are appropriate for survival analysis, and p-values are reported. However, the p-value for chromophobe RCC (0.053) is marginally non-significant at the conventional 0.05 threshold. The opposing directions of association across cancer types suggest context-dependent effects, which the authors appropriately acknowledge may be confounded by somatic mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C101"
+    ],
+    "result": "mtDNA copy number showed tissue-specific correlation patterns with gene expression. Across cancer types, mitochondrially-localized metabolic pathways (TCA cycle, respiratory electron transport, fatty acid oxidation, BCAA catabolism) showed the most frequent positive correlation with mtDNA abundance. In some cancer types (KIRC, KIRP), mtDNA correlated with respiratory gene expression, but not in others (BLCA).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C61-C66, and C101 are supported by gene set enrichment analysis using appropriate statistical methods (Spearman correlation, limma mean-rank gene set test) shown in Figure 5. The recurrent correlation between mtDNA and mitochondrial gene expression serves as independent validation of the copy number estimates (C63). The tissue-specific patterns are well-documented, and the finding that TFAM correlates with mtDNA in only 34% of studies (C64) appropriately acknowledges variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Gene sets related to cell cycle, mRNA processing, and immune pathways (particularly interferon signaling) showed recurrent negative correlation with mtDNA content. Five of seven mtDNA-depleted tumor types exhibited negative correlation between immune gene expression and tumor mtDNA content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 are supported by gene set enrichment analysis (Figure 5\u2014figure supplement 1). The negative correlation with immune pathways is particularly interesting given prior work (C74, West et al. 2015) showing that mtDNA stress triggers innate immune responses. The connection to cell cycle genes is supported by established knowledge about mitochondrial replication being linked to cell cycle (C71-C72). The observation in C75 provides specific support for the immune correlation pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Specific somatic alterations were associated with mtDNA abundance: serous-like endometrial carcinomas with high copy number alterations showed substantially elevated mtDNA (p=7\u00d710\u207b\u2076); IDH1 mutations in low-grade gliomas were associated with increased mtDNA (BH-corrected p=0.012), while IDH2 mutations showed no effect; PTEN mutations were associated with decreased mtDNA (BH-corrected p=0.033).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C79-C87, and C124-C126 are supported by statistical analysis (Mann-Whitney tests with BH correction) shown in Figure 6. The association with UCEC serous-like subtype is particularly strong (p=7\u00d710\u207b\u2076). The differential effect of IDH1 vs IDH2 mutations (C85-C86) is intriguing and supported by the data, though the mechanistic interpretation requires caution. The findings echo prior work (C88, Navis et al. 2013) showing increased mitochondrial density in IDH1-mutant models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "In chromophobe kidney cancer, samples with mtDNA indels (but not SNVs) contained significantly higher mtDNA copy number than unmutated samples (p=0.002), suggesting that inactivating mtDNA mutations may induce compensatory mtDNA replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 are supported by statistical analysis (Mann-Whitney U-test, p=0.002) shown in Figure 6\u2014figure supplement 1. The differential effect of indels vs SNVs (C91) strengthens the interpretation that functional inactivation drives the response. However, C92 is appropriately framed as speculation ('may induce', 'perhaps'), as the mechanism is inferred rather than directly demonstrated. The finding is biologically plausible as a compensatory response to mitochondrial dysfunction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C107",
+      "C117"
+    ],
+    "result": "Immunohistochemical analysis revealed that mtDNA depletion does not always correlate with reduced mitochondrial protein levels. In KIRC and KIRP, mtDNA depletion was accompanied by reduced mitochondrial protein, but in BLCA, 2/3 tumors maintained or increased mitochondrial protein despite mtDNA depletion, suggesting compensatory mechanisms can sustain respiratory protein levels independent of mtDNA copy number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C96-C105, C107, and C117 are supported by IHC data (Figure 7) and gene expression analysis (Figure 5). The discordance between mtDNA depletion and protein levels in BLCA (C98, C100) is well-documented and consistent with gene expression patterns showing that BLCA mtDNA correlates with cell cycle/immune genes rather than respiratory genes (C102). This finding is supported by prior literature showing compensation in mtDNA-depleted systems (C93-C95, C118-C122). The conclusion that mtDNA depletion is insufficient to conclude respiratory downregulation (C105, C117) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background and motivation: The mitochondrial genome encodes 13 essential respiratory chain components, and mtDNA alterations can impair respiration and contribute to various pathologies including cancer. Despite extensive study of mtDNA mutations in cancer, comprehensive analysis of mtDNA copy number variation across tumor types has been lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C28 provide established background knowledge supported by appropriate citations to prior literature. These claims establish the biological context (C7-C8, C14-C21), the role of mtDNA alterations in disease (C9-C11), mitochondrial dysfunction in cancer (C22-C26), and the gap in knowledge that motivates the study (C13, C27-C28). All claims are either established facts or appropriately cited to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The findings of mtDNA depletion in breast, liver, and clear-cell kidney cancers agree with prior isolated reports based on qPCR with smaller sample sizes. Some discordances with prior studies (thyroid and endometrial carcinomas) are attributed to inadequate sample sizes and lack of matched normal tissue in earlier work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C116 appropriately contextualize the current findings relative to prior literature (Yu 2011 review, and specific studies). The authors correctly note that their larger sample sizes and use of matched normal tissue provide more robust evidence. The specific comparisons to prior work (C110-C112 showing agreement, C115-C116 showing disagreement) are appropriately cited and the explanations for discordance (C114) are reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C76",
+      "C77",
+      "C78",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Prior literature demonstrates that mtDNA copy number fluctuations influence transcription of respiratory genes, but complete mtDNA depletion can affect additional pathways. Compensatory mechanisms can maintain transcription despite depletion, as shown in HeLa cells and mouse models. The unique finding of anti-correlation between respiratory gene expression and mtDNA in prostate tissue may relate to the specialized citrate-secreting metabolism of prostate epithelia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60, C76-C78, and C118-C122 are supported by appropriate citations to prior literature. The prostate finding (C76) is an interesting observation from the data, and the speculation about citrate metabolism (C77-C78) is appropriately framed and supported by citations (Costello et al.). The discussion of compensatory mechanisms (C118-C122) provides important biological context for interpreting the IHC findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C88",
+      "C89",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Supporting evidence from prior literature: Elevated plasma BCAAs precede pancreatic cancer development; IDH1-mutant glioma models show high mitochondrial density; and compensation of respiratory activity has been documented in cases of mtDNA depletion caused by genetic alterations or drug treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C88-C89, and C93-C95 are appropriately cited to prior literature and provide relevant context for interpreting the current findings. These claims support the biological plausibility of the observed associations between mtDNA content and metabolic pathways (C69), IDH1 mutations (C88-C89), and compensatory mechanisms (C93-C95).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C123",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Future directions and implications: The authors recommend that future studies quantify mitochondrial protein expression alongside mtDNA copy number. They speculate that tumors with high mtDNA content may be vulnerable to mitochondrially-targeted therapies, and suggest investigating spatial heterogeneity of mtDNA across tumors and the role of mitochondria in therapeutic resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123, C127-C133 represent appropriate recommendations and speculation based on the study findings. The recommendation to measure protein expression (C123) is well-justified by the IHC results. The therapeutic speculations (C127-C128) are appropriately framed as hypotheses and suggestions for cell line studies (C129). The discussion of spatial heterogeneity (C130-C132) and therapeutic resistance (C133) identifies important gaps in knowledge, with C130 appropriately cited to prior work on genetic heterogeneity.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "During motor learning, mice selectively reduced variability in sequence frequency (the task-relevant dimension that determined reinforcement probability) while increasing variability in sequence duration (an orthogonal, non-reinforced dimension). This differential modulation was task-specific, as demonstrated by a control task where frequency was not reinforced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C31-C32 provide converging statistical evidence (repeated measures ANOVA with p<0.0001) showing opposite trajectories for frequency vs. duration variability. Claims C33-C34 demonstrate independence between these features. The control task (C35-C37) provides critical evidence that the frequency variability reduction was specific to the reinforcement contingency, not a general learning effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C72",
+      "C73"
+    ],
+    "result": "Reinforced sequences had significantly lower variability in frequency compared to non-reinforced sequences, but no difference in duration variability. This demonstrates that mice selectively reduced variability only in the behavioral domain where variability affected reinforcement probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 provide direct statistical comparisons (F1,38 = 7.608, p = 0.0089 for frequency; no effect for duration) between reinforced and non-reinforced sequences. Claims C40, C72-C73 appropriately interpret these findings as evidence for selective refinement based on reinforcement contingencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Neural variability (measured by Fano factor) in motor cortex (M1) and dorsal striatum (DS) was elevated early in training and decreased with learning, without changes in average firing rate. This decrease was specific to task performance periods (not baseline) and was observed in individual stable neurons tracked across training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C43-C44 establish the basic finding with appropriate statistics (DS: F8,48 = 2.767, p<0.05; M1: F8,48 = 2.771, p<0.05). Claims C45-C47 provide critical controls showing task-specificity and that effects are not due to population shifts. Claims C48-C52 demonstrate dissociation between variability and firing rate changes, strengthening the interpretation that this reflects pattern selection rather than overall activity changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The decrease in neural variability persisted even when analyzing sequences matched for frequency and duration between early and late training, demonstrating that neural variability changes were not simply due to gross behavioral changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 provide matched-sequence analysis controlling for behavioral parameters (DS: F8,48 = 2.732, p = 0.0144; M1: F8,48 = 2.491, p = 0.0239). This is a critical control that strengthens the interpretation that neural changes reflect learning-related refinement rather than behavioral stereotypy. Claim C55 appropriately concludes that neural and behavioral variability are dissociable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Variability in corticostriatal activity became progressively more correlated with behavioral variability in sequence frequency (the reinforced dimension) but not with duration variability. This correlation was specific to neural variability, not firing rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C56-C57 establish the selective correlation with frequency using moving-window analysis (Figure 6C vs 6D). Claims C58-C60 provide important controls showing this is not a general correlation effect. The specificity of the correlation to the reinforced behavioral dimension is a key finding linking neural and behavioral refinement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Neural variability in M1 and DS was initially uncorrelated but became strongly correlated during training, suggesting that corticostriatal circuits become coordinated as behavioral variability is refined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 provide correlation analysis showing emergence of M1-DS coupling (p<0.05 for all sessions except first, Figure 6B). Claim C63 appropriately interprets this as evidence for circuit-level coordination during learning. This finding suggests network-level changes accompany behavioral refinement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Corticostriatal plasticity was required for the reduction in frequency variability but not for changes in duration variability. Mutant mice lacking NMDA receptors in striatal projection neurons failed to reduce frequency variability during training while controls did, but both groups showed similar modulation of duration variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 establish the genetic model and basic behavioral phenotypes. Claim C68 provides the critical statistical evidence (main effect F1,10 = 10.13, p = 0.009; controls decreased frequency variability t10 = 3.00, p = 0.0134; mutants did not t10 = 1.38, p = 0.1964). Claim C69 shows no genotype effect on duration variability (F1,10 = 0.02, p = 0.887). This selective impairment provides causal evidence linking corticostriatal plasticity to refinement of reinforced behavioral features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C81",
+      "C82"
+    ],
+    "result": "Mice learned to organize their behavior into sequences of lever presses and progressively approached the covert frequency target across training, as evidenced by increased sequence organization, decreased distance to target, decreased spread around target, and increased percentage of sequences meeting the end-target criterion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C27 provide multiple converging behavioral measures with appropriate statistics (all p<0.0001) showing progressive task acquisition. Claims C28, C81-C82 appropriately conclude that mice implicitly learned to shape behavior toward task requirements. These claims establish the basic behavioral learning that forms the foundation for the neural analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Mean sequence frequency decreased slightly while sequence duration increased with training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 report basic behavioral measures with statistics (frequency: F8,152 = 2.372, p = 0.0195; duration: F8,152 = 22.69, p<0.0001). These changes in mean values provide context for understanding the variability changes, though the slight decrease in frequency argues against a ceiling effect explanation for reduced frequency variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "Sequence duration variability was strongly correlated with sequence length variability (R\u00b2 = 0.8710 for variance; R\u00b2 = 0.8839 for Fano factor).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 provides correlation analysis showing strong relationship between duration and length variability. This helps explain why duration variability increased (as animals performed longer sequences) and demonstrates that duration and length are not independent features, unlike duration and frequency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Reinforcement delivery did not provide an external cue that animals could use to anticipate reward, as magazine check probability after successful targets was not different from chance and did not change with learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 provide statistical evidence that magazine check probability was ~0.5 after successful targets and ~0.25 after reinforced vs non-reinforced presses, with no change across training. Claim C100 appropriately concludes this demonstrates the covert nature of the reinforcement contingency. This is an important control showing animals were not using external cues to guide behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The study used 20 male C57BL6/J mice (13 for behavior only, 7 with bilateral electrode arrays in M1 and DS), recording an average of 18 M1 and 10 DS units per animal per session, with 49 M1 and 21 DS units tracked as stable across training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42, C95-C97 provide methodological details about subjects, recording approach, and data yield. These are straightforward descriptive claims about experimental design that are well-documented in the methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C86",
+      "C87",
+      "C93",
+      "C94"
+    ],
+    "result": "During motor learning, corticostriatal dynamics encode the refinement of specific behavioral features that change the probability of obtaining outcomes. Neural patterns that give rise to reinforced behavioral patterns are progressively selected, and corticostriatal plasticity shapes not only which action to perform but how to perform it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent the main conclusions synthesizing the behavioral, neural, and genetic findings. Claims C10, C86-C87, C93-C94 are well-supported by the convergence of evidence showing: (1) selective behavioral refinement in reinforced dimensions, (2) neural variability decreases correlating specifically with reinforced behavioral variability, and (3) genetic disruption of corticostriatal plasticity selectively impairing refinement of reinforced features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "In challenging motor tasks, animals differentially refine motor patterns, decreasing variability in domains critical for reinforcement while increasing variability in orthogonal domains. The increase in duration variability may reflect effort minimization rather than a strategic attempt to increase reinforcement probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 establish that both features are task-relevant but only frequency was differentially reinforced. Claims C76-C80 discuss possible mechanisms for increased duration variability, with C79 providing evidence (lack of correlation, equal reinforcement probability) favoring the effort minimization explanation over the strategic explanation. This interpretation is reasonable given the data, though somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C74",
+      "C75",
+      "C83",
+      "C84",
+      "C85",
+      "C92"
+    ],
+    "result": "The findings are consistent with prior literature on motor learning, behavioral exploration, optimal feedback control, and the role of corticostriatal circuits in selecting task-relevant features and consolidating motor patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C20, C74-C75, C83-C85, C92 cite extensive prior literature to contextualize the current findings. These claims appropriately reference relevant theoretical frameworks (optimal feedback control, exploration-exploitation) and prior empirical work on motor learning and neural variability. The citations appear appropriate and accurately represent the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Corticostriatal plasticity is important for selecting neural patterns leading to reinforced movements, but changes in motor variability that are not specifically reinforced may be encoded elsewhere. Corticostriatal plasticity was not necessary for increased variability in non-reinforced domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are well-supported by the mutant mouse data showing selective impairment. Claim C88 is more speculative but represents a reasonable interpretation of the finding that neural variability correlated only with frequency (reinforced) and not duration (non-reinforced) variability. This suggests different neural substrates for different aspects of behavioral variability.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,405 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Prior research has established that incentive value depends on contextual anticipation of rewards, but the computational mechanisms underlying this context sensitivity remain unclear. Previous studies (including Rigoli et al. 2016a, 2016b) showed that identical rewards have larger incentive values in low-value compared to high-value contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C11 provide well-cited evidence from prior literature establishing context-dependent incentive value. Claims C2 and C12 appropriately identify the knowledge gap that motivates the current work. The characterization of prior work is consistent with the cited literature and accurately frames the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The BCV model proposes that the brain performs Bayesian inference by inverting a generative model of rewards, where incentive value corresponds to precision-weighted prediction error. This formulation implies that incentive value is intrinsically context-dependent, with information about context inducing subtractive value normalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C13-C17, C23-C25 present a coherent theoretical framework grounded in Bayesian inference principles. The model is mathematically specified (equations 1-2) and logically derives context-dependence from its assumptions. The connection to broader Bayesian brain theories (C13, C17) is well-supported by citations. However, this is theoretical speculation requiring empirical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C69",
+      "C70"
+    ],
+    "result": "BCV proposes that contexts can be organized hierarchically, where incentive value depends on generative models with nested contexts at multiple levels (e.g., restaurant within neighborhood). Any hierarchical context level can influence incentive value insofar as it determines expected reward.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C69-C70 extend the basic BCV model to hierarchical contexts with appropriate mathematical formulation (equation 7, Figure 1C). The hierarchical extension is logically consistent with the base model and connects to existing work on hierarchical active inference (C26 cites Pezzulo et al. 2015). This theoretical prediction is testable and forms the basis for Experiment 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "BCV makes specific predictions that distinguish it from alternative models: divisive normalization derives from reward variance (not expected reward), and reward variance divides (not multiplies) the prediction error. These predictions derive necessarily from Bayesian assumptions rather than being ad hoc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 clearly articulate testable predictions that differentiate BCV from competing models (with appropriate citations to Louie et al. 2014, 2015 and K\u0151szegi & Szeidl 2013). The emphasis on principled derivation from Bayesian assumptions (C35) is appropriate. These predictions are tested in Experiment 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "In Experiment 1 (n=36), average gambling probability was ~50% and did not differ between \u00a33 and \u00a34 choices. There was no correlation between average gambling propensity and preference for gambling with large vs. small expected values, replicating previous findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C38-C41 report basic descriptive statistics with appropriate statistical tests (t-tests, correlations) and p-values. The lack of overall effects (C38-C40) is important for establishing that context effects are individual-specific. The replication of prior findings (C41) strengthens confidence in the paradigm. Sample size (n=36) is reasonable for behavioral studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "In Experiment 1, the interaction term (context \u00d7 EV effect) did not differ from zero across participants, but showed a significant correlation with individual gambling preferences (r=0.45, p=0.005), remaining significant with Spearman correlation (rho=0.51, p=0.002).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 report the key behavioral finding supporting variance-dependent normalization. The statistical approach is appropriate: testing the interaction term and correlating it with individual differences. The use of both Pearson and Spearman correlations (C44) addresses concerns about outliers. The pattern is consistent with BCV predictions (Figure 4E-F). However, the interaction itself not differing from zero (C42) is somewhat unexpected and warrants discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "In Experiment 1, model comparison favored the full BCV model over reduced models. The context parameter \u03c4 was significantly less than zero (t(35)=-2.81, p=0.008), and the model with both subtractive and divisive normalization fit better than a model without subtractive normalization (\u03c7\u00b2(1)=508, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C47 provide strong model-based evidence for BCV. The likelihood ratio tests (C45) appropriately compare nested models. The finding that log(\u03c4)<0 (C46) directly supports variance-dependent divisive normalization. The comparison with alternative models (C47) demonstrates that both normalization components are necessary. The statistical approach is rigorous and the effect sizes are substantial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "In Experiment 2 (n=32), average gambling was ~54% (not significantly different from 50%), and the effect of option EV on gambling was not significant across participants. There was no correlation between average gambling propensity and EV effect, replicating previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C48-C51 report basic descriptive statistics for Experiment 2 with appropriate tests. The pattern mirrors Experiment 1, establishing that overall effects are absent but individual differences exist. The replication of prior findings (C51) is noted. Sample size (n=32) is adequate. These baseline results set up the hierarchical context analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "In Experiment 2, gambling differences across decks (low-level context) correlated with individual EV effects (r=0.55, p=0.001), and gambling differences across deck-sets (high-level context) for the common \u00a37 deck correlated with EV effects (r=0.42, p=0.018).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 provide the key behavioral evidence for hierarchical context effects. Both correlations are statistically significant and in the predicted direction. The analysis appropriately examines context effects at two hierarchical levels using overlapping rewards. The correlations are moderate-to-strong and consistent with BCV predictions (Figure 7C, E). This is novel evidence for hierarchical value normalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In Experiment 2, the full hierarchical BCV model was favored over reduced models. Both context parameters (\u03c4_LO and \u03c4_HO) were significantly greater than zero (p<0.001 and p=0.012), and the model with subtractive normalization fit better than one with divisive normalization (\u03c7\u00b2(1)=78, p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 provide strong model-based support for hierarchical BCV. The likelihood ratio tests (C54) favor the full model with both hierarchical levels. The significant context parameters (C55) directly support hierarchical normalization at both levels. The model comparison (C56) demonstrates that subtractive (not divisive) normalization by expected reward is the correct formulation. The statistical evidence is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C108"
+    ],
+    "result": "Experiment 1 demonstrates that incentive value is influenced by context variability (reward variance), showing choice behavior consistent with variance-dependent divisive normalization as predicted by BCV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C108 summarize the main empirical finding from Experiment 1. This is supported by the behavioral analyses (C42-C44) and computational modeling (C45-C47). The evidence for variance-dependent normalization is novel and distinguishes BCV from alternative models. Both raw behavioral data and model fits converge on this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C109",
+      "C71",
+      "C72"
+    ],
+    "result": "Experiment 2 demonstrates that incentive value is influenced by hierarchically nested contexts at two levels (decks and deck-sets), with information from both levels integrated to determine choice behavior. This supports the hypothesis that subjects use hierarchical generative models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C71-C72, C109 summarize the main finding from Experiment 2. This is supported by behavioral analyses (C52-C53) and computational modeling (C54-C56). The evidence for hierarchical context integration is novel and extends BCV beyond single-level models. The convergence of behavioral and model-based evidence is strong. This is the first demonstration of hierarchical value normalization in this domain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "BCV has similarities with Expected Utility theory and Prospect theory regarding the role of average reward/wealth and status quo, but differs fundamentally by deriving contextual normalization from normative Bayesian principles rather than descriptive assumptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 appropriately situate BCV within the broader literature on value theories. The comparisons to classical theories (with citations) are fair and accurate. The key distinction (C32) - deriving normalization from Bayesian principles - is valid and important. This positions BCV as a normative rather than purely descriptive account.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "BCV is closely linked to planning as inference and active inference frameworks, which recast decision-making as Bayesian inference. BCV extends these frameworks by focusing on incentive value as precision-weighted prediction error based on hierarchical contextual expectations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 appropriately connect BCV to broader theoretical frameworks in computational neuroscience (with appropriate citations). The characterization of planning as inference (C58) is accurate. The claim that hierarchical implementations exist (C59) is supported by citation. The extension to incentive value (C60) is a valid contribution. This situates BCV within established theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "In BCV, incentive value is determined by two factors: prediction error (difference between observed and expected reward) and precision (gain term ensuring optimal weighting). Only precise prediction errors affect higher-level expectations during belief updating, consistent with Bayesian models in other domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 clearly articulate the core computational principles of BCV. The two-component structure (prediction error and precision) is well-motivated theoretically. The connection to broader Bayesian frameworks (C65) is appropriate. However, these are theoretical claims that require empirical validation. The precision component is tested in Experiment 1, but the full hierarchical belief updating (C64) is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The central role of precision-weighted prediction error in BCV is consistent with predictive coding models in perception, theories of sense of agency, and active inference schemes, suggesting common computational principles across cognitive domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 draw appropriate parallels to other domains (perception, agency, action) with proper citations. These connections strengthen the theoretical motivation for BCV by showing it implements principles that are successful elsewhere. However, these are analogies rather than direct evidence for BCV itself. The claims about other domains are accurately characterized based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Hierarchical nesting may explain why contextual effects are substantial but not extreme in experiments. BCV's prediction error account (larger value with smaller prior expectancy) is distinguished from and supported over an alternative posterior expectation account (larger value with larger prior expectancy).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 offers a plausible theoretical explanation for bounded context effects, though this is speculative. Claims C74-C75 make an important conceptual distinction between BCV and an alternative interpretation, with C75 citing supporting data. This clarification is valuable for preventing misunderstanding of the model. The empirical support (from current and prior studies) favors the prediction error interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "BCV operates at Marr's computational level by focusing on normative Bayesian principles. Several biologically-plausible accounts exist for implementing Bayesian inference in the brain, and BCV fits comfortably within these accounts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 appropriately situate BCV within Marr's levels of analysis framework (with citation). The characterization of BCV as computational-level is accurate. The claim about biological plausibility (C77-C78) is supported by citations to relevant work. However, the actual neural implementation of BCV remains to be demonstrated empirically (acknowledged in C81).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Existing neurobiological findings show that brain regions adapt responses to both expected reward and reward range, consistent with BCV. However, key neurobiological predictions including specific neural mechanisms and hierarchical implementation await further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 appropriately cite neurobiological evidence consistent with BCV (with extensive citations). However, C81 appropriately acknowledges that direct neural tests of BCV predictions remain to be conducted. This is an honest assessment of the current state of evidence - behavioral support exists, but neural mechanisms are not yet established. The consistency with existing neural findings is encouraging but not definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "BCV implements adaptive coding because precision-weighted prediction error is normalized, consistent with efficient coding principles. BCV proposes that this normalized signal corresponds to incentive value and that adaptive coding should be reflected in both neural signaling and behavioral choice adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 connect BCV to efficient coding theory (with appropriate citations). The argument that BCV implements adaptive coding (C84) is valid given the normalization in the model. The proposal that behavior itself is tuned to incentive statistics (C86) is a logical consequence. However, the direct link between neural adaptive coding and behavioral adaptation (C85) is theoretical and requires empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "BCV currently focuses on scenarios where context is provided before reward delivery. Another form of context effect arises from simultaneously available options, which BCV does not yet address. Further theoretical work is needed to link BCV to simultaneous contextual effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 honestly acknowledge a limitation of the current BCV formulation. The distinction between sequential and simultaneous context effects (C88, with citations) is valid. The acknowledgment that further work is needed (C89) is appropriate. This is a fair assessment of the model's current scope and identifies a direction for future development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "BCV currently focuses on single-attribute rewards. Multi-attribute contextual effects (e.g., decoy effect) exist but are not addressed by the current model. BCV could in principle be extended to multi-attribute scenarios by connecting to Bayesian multisensory integration work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 acknowledge another limitation regarding single vs. multi-attribute rewards. The distinction is valid and the citation to multi-attribute theories (C91) is appropriate. The suggestion that BCV could be extended (C92, with citation to Ernst 2006) is plausible but speculative. This is an honest assessment of scope and identifies future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "The current BCV formulation assumes model parameters are given, but these parameters must be learned. Questions about learning mechanisms for generative models in Bayesian inference remain largely open, though substantial work exists on structure learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 acknowledge an important limitation regarding parameter learning. This is a common issue in Bayesian models. The acknowledgment that learning mechanisms are not fully understood (C94) is honest and supported by citations to relevant work. This limitation does not invalidate the current model but identifies an area for future development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "BCV assumes Gaussian variables for mathematical tractability, allowing analytical inference with simple equations. While this is an oversimplification, BCV can be extended to non-Gaussian variables, and the key predictions (subtractive and divisive normalization) apply generally to uniform and non-skewed distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 acknowledge the Gaussian assumption and justify it (C96, with citation). The acknowledgment that this is an oversimplification (C97) is honest. The claims about generalizability (C98-C99) are plausible - the core principles should extend beyond Gaussians. However, the actual performance with non-Gaussian distributions has not been tested. This is a reasonable modeling choice with acknowledged limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "BCV can be applied to addiction, interpreting tolerance and lack of satisfaction as increases in expected reward that decrease incentive value. BCV formalizes and extends set-point models by relaxing homeostatic assumptions and predicting that drug consumption can induce either positive or negative affect depending on expectations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C105 apply BCV to addiction, which is interesting but entirely speculative. The interpretation of tolerance (C101) is plausible. The comparison to set-point models (C102-C104) is fair. The prediction about positive vs. negative affect (C105) is supported by citation to Robinson & Berridge 2000. However, no empirical data on addiction are presented. This is theoretical speculation that requires validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "BCV assigns a crucial role to reward uncertainty beyond expected reward. Increased uncertainty over prior reward beliefs may boost positive prediction errors from drug consumption, potentially enhancing predisposition to addiction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C107 extend the addiction application by emphasizing the role of uncertainty, which is a distinctive feature of BCV. The prediction about uncertainty and addiction vulnerability (C107) is novel and testable. However, this is entirely speculative with no empirical support. It represents an interesting hypothesis for future research but cannot be evaluated as supported or unsupported based on current evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Context effects, though apparently irrational, can derive from Bayes-optimal inference. If incentive values are precision-weighted prediction errors, they are necessarily context-dependent. This approach could generate new predictions and explain dysfunctional value attribution in psychopathologies like addiction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C111 make an important conceptual point: context-dependence is a feature, not a bug, of optimal inference. This reframes \"irrational\" behavior as rational given the computational problem. Claim C112 suggests future applications, which is reasonable given the theoretical framework. However, the actual utility for psychopathology (C112) remains to be demonstrated empirically.",
+    "result_type": "MINOR"
+  }
+]

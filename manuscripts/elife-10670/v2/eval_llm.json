@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Ambiguous calls in Sanger consensus sequences are validated as a reliable proxy for within-patient genetic diversity. The study demonstrates high positive correlations between ambiguous calls in the D-PCR dataset and clonal within-host diversity at both nucleotide (r=0.91, p<2.2\u00d710\u207b\u00b9\u2076) and amino acid levels (r=0.85, p<2.2\u00d710\u207b\u00b9\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 provide strong statistical validation using an independent clonal dataset. The high correlation coefficients with highly significant p-values support the use of ambiguous calls as a diversity measure. This methodological validation is critical for the study's approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C33"
+    ],
+    "result": "Drug resistance mutations (DRMs) are associated with reduced within-patient genetic diversity across the dataset. Among 16 common DRMs, 14 show lower diversity compared to ancestral states, with 7 being statistically significant at 95% confidence, consistent with selective sweep signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 and C33 demonstrate a clear pattern of diversity reduction associated with DRMs. The statistical significance for nearly half the DRMs and the consistency with theoretical expectations (C51) provide solid support. Figure 2A illustrates this pattern clearly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The relationship between DRMs and diversity reduction varies by treatment type and is robust across HIV subtypes. After 4 DRMs, additional mutations do not significantly reduce diversity further. The pattern is primarily driven by NNRTI and boosted PI-based treatments, with weaker signals for NRTI-only or unboosted PI treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by stratified analyses shown in supplementary figures. The consistency across subtypes (C56) strengthens the findings. The differential effects by treatment type (C54-C55) align with the study's central hypothesis about treatment effectiveness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Treatment effectiveness strongly predicts the magnitude of diversity reduction per DRM. Effective NNRTI-based treatments show 13.6% diversity reduction per DRM versus 4.3% for NRTI-only treatments (p<2.2\u00d710\u207b\u00b9\u2076). Similarly, boosted PI treatments show 30.3% reduction versus 4.3% for unboosted PIs (p<2.2\u00d710\u207b\u00b9\u2076), with consistent patterns across 1000 subsampled datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 and C72-C79 present the core parametric analysis with robust statistical support. The use of 1000 subsampled datasets with p-thinning to control for temporal biases strengthens the findings. The highly significant p-values and consistent directionality across all subsamples (C75) provide strong evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "A non-parametric analysis confirms that treatment effectiveness correlates with diversity reduction. A 10% increase in treatment effectiveness associates with 0.17 fewer ambiguous calls per DRM (95% CI: -0.15 to -0.19). Patients on 80% effective treatments show 54% fewer ambiguous calls with 3 DRMs compared to 0 DRMs, while 50% effective treatments show no difference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 provide independent confirmation using a continuous measure of effectiveness. The tight confidence intervals and the dramatic difference between 50% and 80% effective treatments (C81-C82) support the conclusion. Figure 4 illustrates this relationship clearly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C83",
+      "C7",
+      "C37",
+      "C87"
+    ],
+    "result": "The study confirms that the historical transition from fast to slow HIV drug resistance evolution was accompanied by a shift from soft to hard selective sweeps. This supports the general principle that lower rates of adaptive mutation production lead to harder selective sweeps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C83, C7, C37, and C87 represent the study's main conclusions, which are well-supported by the empirical analyses (Results 2-5). The theoretical framework is sound and the data consistently support the predicted relationship between mutation availability and sweep type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Ambiguous calls increased over time even in sequences without DRMs, likely due to increased awareness and improved detection rather than actual diversity increases. This temporal bias was addressed through p-thinning procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 identify an important confounding factor and provide a reasonable interpretation. The p-thinning methodology described in Materials and Methods addresses this bias. The interpretation (C61) is plausible given the technical nature of sequencing practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C28",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The study analyzed 6717 HIV-1 consensus sequences from patients on first-line therapies (1989-2013) from the Stanford HIV Drug Resistance Database. The dataset includes diverse treatment regimens (77% receiving 3-drug combinations) and HIV subtypes (36% B, 34% C, 13% CRF01_AE).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C28, C38-C43 describe the dataset composition. These are straightforward descriptive statistics that are internally consistent and appropriate for the study design. The large sample size and diversity strengthen the generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "An additional clonal dataset of 11,653 sequences from 740 patients was used exclusively for validation purposes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 describe the validation dataset. This is a straightforward methodological detail that is appropriately used only for validation (Result 1).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Treatment effectiveness was assessed both categorically (based on clinical recommendations) and quantitatively (virologic suppression after 48 weeks), ranging from 5% (AZT monotherapy) to 100% (3TC+AZT+LPV/r). NNRTI-based and boosted PI treatments are clinically preferred over NRTI-only and unboosted PI treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 describe the treatment effectiveness measures. The dual approach (categorical and quantitative) is methodologically sound. The range of effectiveness (C59) is well-documented in the literature and supplementary materials.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Standard clinical Sanger sequencing produces consensus sequences with ambiguous calls that retain information about within-patient diversity. This approach has been used in multiple prior studies and shows reproducibility between laboratories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 describe established methodology. The citations to prior work (C31-C32) and the validation in Result 1 support this approach. This is standard practice in HIV research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C13",
+      "C21",
+      "C22"
+    ],
+    "result": "Historical context: Early HIV treatments led to rapid, predictable drug resistance, while modern treatments result in slow or absent resistance evolution. This represents a dramatic change in HIV's evolutionary speed in treated patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C9, C13, C21-C22 establish the historical context. These are well-documented observations in HIV research, supported by citations (C21-C22). This background motivates the study but is not a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C23",
+      "C24",
+      "C26",
+      "C27"
+    ],
+    "result": "Theoretical framework: Population genetic theory predicts that when adaptive mutations are rare (hard sweeps), diversity is sharply reduced, while common adaptive mutations (soft sweeps) maintain diversity. The availability of adaptive mutations determines both evolutionary speed and the mode of adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C14-C20, C23-C24, C26-C27 present established population genetics theory. These are well-supported theoretical predictions with appropriate citations (C18, C20). The theory provides the conceptual framework for interpreting the empirical results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "The theoretical predictions about the relationship between mutation availability and sweep type had not been tested in HIV or any natural population prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 establishes the novelty of the study. This is a verifiable statement about the literature and motivates the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Modern treatments have created a regime where HIV populations must wait for the correct mutations, making resistance acquisition partly an 'unlucky' occurrence rather than a predictable outcome. This is consistent with the overall decrease in resistance rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are reasonable interpretations of the empirical findings (Results 2-5). The language is appropriately cautious ('suggests,' 'at least partly'), and the conclusions follow logically from the data showing harder sweeps in well-treated patients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Fast evolution to selective pressures has been documented in multiple systems including pesticide resistance, industrial adaptation, and antibiotic resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 cite examples of rapid evolution from the literature. These are well-established examples that provide context for HIV evolution. The citations support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Less effective NRTI-only treatments show smaller or no diversity reduction per DRM compared to more effective treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 summarizes findings detailed in Result 4. This is supported by the parametric analysis (C72-C79) and is consistent with Figure 3C.",
+    "result_type": "MINOR"
+  }
+]

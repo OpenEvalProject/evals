@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The 2013-2015 West Africa Ebola epidemic began in December 2013, was officially reported in March 2014, spread through West Africa to Europe and the United States, and resulted in more than 28,000 cases and 11,000 deaths primarily in Guinea, Liberia, and Sierra Leone, with the epidemic waning by November 2015.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide consistent epidemiological data about the EVD epidemic with specific dates, case counts, and geographic spread. The data is cited from WHO reports (C8) and represents well-established facts about the epidemic timeline and impact. These are background claims that establish the context for the modeling review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "A systematic review using adapted PRISMA methodology identified 66 mathematical modeling studies of the 2013-present West Africa EVD epidemic published in peer-reviewed literature through a PubMed search conducted on September 24, 2015.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C91-C93 describe the systematic review methodology with specific search parameters, dates, and inclusion/exclusion criteria. The methodology is clearly documented and the resulting count of 66 publications is the primary output of the systematic search process.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C100"
+    ],
+    "result": "The 66 modeling publications addressed six key uncertainties: transmissibility/reproduction number R (41 publications), intervention effectiveness (29 publications), epidemic forecasting (29 publications), regional/international spread (15 publications), phylogenetics (9 publications), and vaccine trial feasibility (2 publications), with 125 total modeling applications across all studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 and C100 provide a comprehensive categorization of modeling applications with specific counts that sum appropriately. The data is presented in Table 1 and Figure 2, and the categories represent distinct modeling objectives. The definition of R (C22) is standard epidemiological terminology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Of the 125 models reported, 74% included mechanistic assumptions about disease transmission (compartmental, agent-based, or phylogenetic models) while 26% were purely phenomenological.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 provide a clear categorization of modeling approaches with percentages that sum to 100%. The classification into mechanistic versus phenomenological is a standard distinction in epidemiological modeling, and examples of mechanistic model types are provided (C25).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "For 82% (54/66) of publications, only pre-existing publicly-available data was used (typically WHO/Ministry aggregate case data or viral genetic data), while 12 studies used original epidemiological or genomic data. Additional data sources included social mobilization reports, media reports, air travel data, and spatial case data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33 provide a comprehensive accounting of data sources with specific counts (54/66, 12 studies) and citations to studies using original data. The percentages are mathematically consistent and the categorization of data types is clear and well-documented in Table 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Of 12 studies collecting original EVD data, 9 released data at publication (8 genetic data to GenBank, 1 epidemiological data online). WHO Ebola Response Team data was widely used as model inputs but detailed data remains unavailable. Phylogenetic studies showed clear data accumulation, with all studies after initial sequences incorporating those data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 document data sharing practices with specific counts (9/12, 8 genetic, 1 epidemiological) and citations. The observation about WHO data unavailability (C38) and phylogenetic data accumulation (C39-C40) are factual statements about data access that can be verified from the cited publications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Publication lag (most recent data to online publication) was median 85 days (IQR 30-157) overall, but varied by application: shorter for R estimation (58 vs 118 days) and forecasting (50 vs 125 days), longer for phylogenetics (125 days) and clinical trials (108 days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 provide detailed quantitative analysis of publication lags with specific medians and comparisons across modeling types. The data is presented in Figure 3 and the statistical measures (median, IQR) are appropriate. The caveat about fewer phylogenetic/trial publications (C47) appropriately qualifies the comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Forty-one publications characterized epidemic dynamics using epidemiological (36), genomic (4), or news report (1) data. Twenty-four provided R0 estimates for Guinea, Liberia, Sierra Leone, or West Africa, with 16 country-specific estimates providing 95% confidence/credible intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 provide a clear accounting of publications estimating epidemic dynamics and R0 with specific counts that are internally consistent (41 total, 24 with R0, 16 with CIs). The data is presented in Figure 4 and Supplementary file 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Median confidence interval width for R0 estimates was ~85% smaller for models using cumulative EVD counts (11 models, 5 publications) versus disaggregated data like weekly counts (5 models, 3 publications). CIs were also narrower for deterministic versus stochastic methods, though all deterministic results came from one study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 provide quantitative comparison of uncertainty estimates with specific effect sizes (85% reduction), sample sizes, and appropriate caveats. The data is shown in Figures 5-6. The caveat that all deterministic results came from one study (C54) is critical for interpretation and appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Fifteen publications provided numerical forecasts; 18 of 22 'status quo' models overestimated cases. Multivariate analysis showed forecast error decreased 14% per week for later forecasts (P<0.001), increased 29% per week for longer horizons (P<0.01), and decreased 90% with dampening methods (P<0.01). Country and parameter count were not significant predictors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 present comprehensive forecast accuracy analysis with specific counts, effect sizes, and p-values from multivariate regression. The statistical analysis is appropriate for the data type, and results are presented in Figure 7. The finding that most models overestimated (C56) is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The review only captures published results and does not include unpublished EVD investigations and modeling, including work by modelers providing direct operational support who may not have published due to operational demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 clearly state limitations of the review scope. This is a standard and appropriate limitation for systematic reviews of published literature. The speculation about operational demands (C63) is reasonable and appropriately qualified as 'possibly.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Studies estimating R0 using the same data sources at similar times reported varied results, which may partly reflect identifiability problems where different R0 estimates are possible for equally well-performing models depending on other parameter values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 identify an important limitation in R0 estimation with appropriate citation to Weitz and Dushoff 2015. The observation of variation (C64) is evident in Figure 4, and the explanation via identifiability (C65) is appropriately qualified as partial ('may, in part') and cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The analysis is consistent with simulation studies showing underestimation of uncertainty when estimating R0 with cumulative versus disaggregated incidence data, supporting recommendations to use disaggregated data and stochastic models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 connect the empirical findings (C51) to prior simulation work with appropriate citation (King et al. 2015). The consistency between this review's findings and simulation studies strengthens the recommendation, though the review itself does not independently validate the simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Incidence forecasts provided reasonable prospective estimates several weeks forward during the initial phase but became progressively more inaccurate beyond several weeks given available data and methodologies. Validation against other data (hospital admissions, contacts) could provide evidence that assumptions are sound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 summarize forecast performance findings supported by the multivariate analysis (C57-C59) and Figure 7. The recommendation for additional validation (C70) is appropriately framed as speculative future work ('could provide') rather than a demonstrated result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The outbreak highlights the need for better understanding of how increasing community awareness decreases transmissibility without specific interventions. Advancing methodological approaches like dampening to capture behavioral changes, interventions, and contact heterogeneity might improve forecasting accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 draw reasonable conclusions from the finding that dampening methods reduced forecast error by 90% (C59). The need for better understanding (C71) is supported by the systematic overestimation by status quo models (C56). The recommendation (C72) is appropriately qualified as speculative ('might help').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Establishing best practices would allow decision-makers to more quickly accept methodologies and make faster decisions. Modeling coordination could facilitate direct comparison of results. Epidemiological modelers might learn from comparison initiatives in influenza, dengue, HIV, and climate forecasting. An ensemble approach should preserve methodological diversity while enabling cross-model comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C79 present recommendations for future work that are logical extensions of the review findings but are largely speculative. While the recommendations are reasonable and cite relevant comparison initiatives (C76), they represent proposed future directions rather than demonstrated results. The causal claims about speed (C73-C74) lack empirical support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Outbreak modeling would be more fruitful with faster data and results sharing. Academic publication timelines don't match emergency decision-making needs where situations are dynamic and forecasts time-constrained. Mechanisms for interim results sharing would expand the evidence base. Data should be machine-readable; modelers expended enormous effort transcribing PDFs. New data-sharing norms would remove hurdles for model comparison. The current bilateral negotiation system is ineffective. A global data observatory could facilitate response and enable rapid, high-quality, comparable studies, as highlighted by SARS 2003, H1N1 2009, and this EVD outbreak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C90 present data sharing recommendations supported by documented challenges (PDF transcription effort C85, publication lags C41-C47, unavailable WHO data C38). The characterization of current systems as ineffective (C87) is a value judgment but supported by the documented inefficiencies. The recommendations are appropriately qualified as speculative future benefits ('could,' 'would') and cite relevant precedents (C90).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "While modelers have assessed ongoing epidemics previously, the prominence of EVD modeling work may be unprecedented, enabled by existing NIH research programs and online data availability. Major media incorporated modeling results throughout the outbreak, and U.S. Government decision-making benefited from modeling at key moments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10-C15 provide context about the prominence of EVD modeling. While the enabling factors (C12-C13) are cited and the media/government use (C14-C15) is documented, the claim of unprecedented prominence (C11) is speculative ('may be') and lacks quantitative comparison to previous outbreaks. The Robinson citation (C15) supports government use but doesn't quantify the benefit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "Forecast accuracy was assessed by comparing 'status quo' model predictions to EVD incidence data subsequently released by WHO, using WHO figures dated soonest after the forecast target date.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 describes the methodology for forecast validation, which is clearly documented and appropriate. The approach of comparing predictions to subsequently observed data is the standard method for assessing forecast accuracy, and the use of WHO data as ground truth is reasonable.",
+    "result_type": "MINOR"
+  }
+]

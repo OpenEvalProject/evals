@@ -1,0 +1,194 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "An extended computational model (MSM) incorporating Sema3E-Plexin-D1 signaling predicts that loss of this pathway delays tip cell selection by causing synchronized Dll4 fluctuations, resulting in fewer tip cells and reduced branching. The model required precise calibration of time delay parameters (D3+D4=D1) and was highly sensitive to even small deviations (\u00b11 timestep).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C68 collectively describe rigorous computational modeling with extensive sensitivity analyses. The model successfully recapitulates the mutant phenotype (C14) and provides mechanistic predictions (C15-C16). The detailed parameter calibration (C55-C68) demonstrates computational rigor, though the extreme sensitivity to small parameter changes (C62) suggests the model operates near a critical threshold that may warrant further biological validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C53",
+      "C72",
+      "C73"
+    ],
+    "result": "Mosaic analysis combining computational predictions and in vivo experiments demonstrates that Plexin-D1 cell-autonomously suppresses the tip cell phenotype. At 45% mosaicism, Plxnd1-/- cells occupy 75% of tip positions, while GFP+ control cells show no positional preference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23 and C53 provide converging computational and experimental evidence for cell-autonomous suppression. The mosaic experiments (C19-C21, C72-C73) include appropriate controls (C21) and adequate sample sizes (84 and 64 cells from 3 animals each). The agreement between simulation predictions (68-74%) and experimental observations (75%) strengthens the conclusion, though the paradoxical contrast between single-cell and collective effects (C23) is noted but not fully mechanistically resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "MSM-CPM simulations predict that loss of Sema3E-Plexin-D1 signaling reduces tip cell overtaking frequency by a factor of 1.26, with tip cells occupying their position for longer durations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 present clear computational predictions from the extended MSM-CPM model. The quantitative prediction (1.26-fold reduction) is specific and testable. However, the model is acknowledged as qualitative rather than quantitative, and results are shown across parameter ranges, which appropriately reflects uncertainty in parameter values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "A novel ex vivo lung explant system recapitulates in vivo angiogenic processes including branching and anastomosis. Live imaging in this system demonstrates that Plxnd1-/- sprouts exhibit a 1.5-fold reduction in tip cell selection frequency, with significant decreases in 'switch' and 'branch type II' events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 and C44-C52 describe a well-characterized ex vivo system with appropriate validation (PECAM expression, presence of Sema3e/Plxnd1, filopodia, branching, anastomosis). The live imaging methodology (C74-C78) is detailed with adequate imaging parameters. The 1.5-fold reduction (C27) closely matches computational predictions and shows statistical significance (p=0.013). Sample sizes are reasonable (24 WT sprouts from 12 explants, 30 mutant sprouts from 11 explants), and permutation testing was used appropriately.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Computational analysis of lung explant vascular networks reveals a significant reduction in branching points in Plxnd1-/- explants, demonstrating that slowed tip cell selection rate results in less branched networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by unbiased computational quantification methods (C79-C82) with appropriate image processing steps (Gaussian filtering, moment-preserving thresholding, noise removal, skeletonization). The statistical significance (p=0.0005, C30 in Figure 4G) is strong, and permutation testing was used. Sample sizes (7 heterozygous, 6 knockout explants) are modest but adequate for this type of analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C31",
+      "C32",
+      "C36"
+    ],
+    "result": "Temporal regulation of the VEGF/Notch feedback loop is the key mechanism determining vascular density, with the rate of tip cell selection dictating network topology. Sema3E-Plexin-D1 acts as a 'faster molecular metronome' that accelerates tip cell selection, yielding denser networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C31-C32, and C36 represent the central conclusions of the manuscript, integrating computational and experimental findings. These conclusions are well-supported by the convergence of multiple lines of evidence: computational modeling (Result 1), mosaic analysis (Result 2), cell rearrangement simulations (Result 3), live imaging (Result 4), and network topology analysis (Result 5). The mechanistic framework linking temporal regulation to network density is coherent and supported by data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C37",
+      "C38"
+    ],
+    "result": "The authors propose that temporal regulation of tip cell selection could be a general mechanism for sculpting vascular topology, with 'fast' and 'slow molecular metronomes' generating networks of different densities in different tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34-C38 are largely speculative (evidence_type includes SPECULATION). While the 'molecular metronome' concept is an interesting framework supported by the Sema3E-Plexin-D1 example, the generalization to other tissues and the existence of additional temporal regulators (C38) remain hypothetical. The proposal is reasonable given the data but requires validation in other systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C33",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Background knowledge establishing that vascular network density determines oxygen/nutrient delivery, that tip/stalk cell selection via VEGF/Notch lateral inhibition is the basis for network generation, and that this process is dynamic and conserved across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C7-C12, C33, C39-C41 represent established knowledge from the literature, appropriately cited. These provide the necessary context for the study but are not novel findings. The citations appear appropriate and the knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C42",
+      "C43",
+      "C54"
+    ],
+    "result": "Prior work established that Sema3E/Plexin-D1 mutants exhibit reduced tip cells, fewer branching points, and uneven growth fronts, and that the MSM computational model has been validated against multiple experimental datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C42-C43, and C54 describe prior work from the authors and others, appropriately cited (Kim et al., 2011 for Sema3E/Plexin-D1 phenotype; multiple citations for MSM validation). These establish the foundation for the current study's computational and experimental approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Methodological details for mosaic analysis: tamoxifen-induced Cre recombination at P4, with empirically determined doses (25 pg for Plxnd1 mosaic, 10 ng for Z/EG control) to achieve 45% mosaicism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 provide clear methodological details. The empirical determination of tamoxifen doses to achieve comparable mosaicism levels in different genetic backgrounds demonstrates appropriate experimental design, accounting for differential Cre sensitivity at different loci.",
+    "result_type": "MINOR"
+  }
+]

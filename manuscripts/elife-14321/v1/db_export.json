@@ -1,0 +1,1636 @@
+{
+  "submission": {
+    "id": "6e528504-c540-44bd-a82c-6cd7d8111093",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:41:41.136355Z",
+    "updated_at": "2025-11-30T00:41:41.136355Z"
+  },
+  "content": [
+    {
+      "id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "submission_id": "6e528504-c540-44bd-a82c-6cd7d8111093",
+      "content_type": "manuscript",
+      "content_text": "# Spatial tuning and brain state account for dorsal hippocampal CA1 activity in a non-spatial learning task\n\n## Authors\n\n- Kevin Q Shan<sup>1</sup> ([ORCID: 0000-0002-2621-1274](https://orcid.org/0000-0002-2621-1274))\n- Evgueniy V Lubenov<sup>1</sup> ([ORCID: 0000-0002-1099-944X](https://orcid.org/0000-0002-1099-944X))\n- Maria Papadopoulou<sup>1</sup>\n- Athanassios G Siapas<sup>1</sup> ([ORCID: 0000-0001-8837-678X](https://orcid.org/0000-0001-8837-678X)) \u2020\n\n### Affiliations\n\n1. Division of Biology and Biological Engineering California Institute of Technology Pasadena United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe hippocampus is a brain area crucial for episodic memory in humans. In contrast, studies in rodents have highlighted its role in spatial learning, supported by the discovery of place cells. Efforts to reconcile these views have found neurons in the rodent hippocampus that respond to non-spatial events but have not unequivocally dissociated the spatial and non-spatial influences on these cells. To disentangle these influences, we trained freely moving rats in trace eyeblink conditioning, a hippocampally dependent task in which the animal learns to blink in response to a tone. We show that dorsal CA1 pyramidal neurons are all place cells, and do not respond to the tone when the animal is moving. When the animal is inactive, the apparent tone-evoked responses reflect an arousal-mediated resumption of place-specific firing. These results suggest that one of the main output stages of the hippocampus transmits only spatial information, even in this non-spatial task.\n\n## Introduction\n\nThe hippocampus is a brain structure that is known to play a critical role in memory formation (Squire, 1992), but the scope and nature of hippocampal memory processing remains elusive. The discovery of place cells in rodents led to the hypothesis that the hippocampus forms a 'cognitive map' that is essential for spatial learning (O\u2019Keefe and Nadel, 1978). In contrast, human studies have indicated a more general role of the hippocampus in the formation of episodic memories (Scoville and Milner, 1957). In support of the latter view, electrophysiological studies in rodents have found that pyramidal neurons in the dorsal CA1 area of the hippocampus can change their firing in response to arbitrary stimuli, both spatial and non-spatial (Berger et al., 1976; Wood et al., 1999; Moita et al., 2003; Komorowski et al., 2009). However, the functional significance of these observations remains controversial because many non-spatial tasks are studied in restrained animals or under circumstances where spatial and non-spatial influences on hippocampal firing cannot be unequivocally dissociated (O\u2019Keefe, 1999).\n\nTo overcome this challenge, we selected a simple learning task\u2014trace eyeblink conditioning\u2014that can be performed independently of spatial location. In this task, a neutral conditioned stimulus (CS, a tone) is followed, after a short delay, by an unconditioned stimulus (US) that evokes an involuntary blink (Figure 1A). With repeated presentations, the subject learns that the CS predicts the US and begins to blink in anticipation (Figure 1C\u2013D). Learning the CS-US association has been shown to be hippocampally\u00a0dependent in many species, including humans and rodents (Clark and Squire, 1998; Kim et al., 1995; Takehara et al., 2003). Previous electrophysiological studies have found that dorsal CA1 pyramidal neurons change their firing following the CS onset (Berger et al., 1976, 1983; Weiss et al., 1996; Weible et al., 2006), suggesting that these cells encode the non-spatial stimulus. However, these experiments did not characterize the spatial tuning properties of the recorded neurons.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/14321/elife-14321-fig1-v1.jpg)\n\n**Figure 1.:** (A) An eyeblink trial is a sequence of a tone (CS), a stimulus-free period (trace interval), and a blink-inducing electrical pulse (US). Blinks are measured on an eyelid electromyogram (EMG). (B) Trials are delivered randomly throughout the environment as the rat traverses a linear track for water reward. (C) Eyelid EMG from early and late in learning. A conditioned response (CR) is defined as an increase in EMG power anticipating the US onset. (D) Learning is apparent as an increase in CR frequency over the course of training. (E) Example pyramidal cell that significantly increased its firing rate following the CS onset. If spike counts on each trial were Poisson distributed according to this cell\u2019s average response (top), we would expect to observe this CS-evoked increase in 76% of trials. Instead, its spike rasters (bottom) show that the response is much less reliable and occurs in only 32% of trials. (F) Observed vs. expected CS response reliability. All 1264 recorded pyramidal cells (back dots) responded in less than half of trials. The example from (E) is circled in red.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14321/elife-14321-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Example coronal section used to reconstruct recording sites. The electrolytic lesions used to mark the final tetrode locations can be detected as autofluorescence. This is superimposed with a nuclear stain to identify the CA1 cell layer. Scale bar: 1 mm. (B) Recording sites were registered onto a brain atlas (Paxinos and Watson, 2007), then projected onto a flatmap of the unfolded hippocampal formation (Petrovich et al., 2001). This shows only those sites from which we recorded at least one pyramidal cell.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14321/elife-14321-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Animal locations where eyeblink trials were delivered. All animals received eyeblink conditioning trials at random locations on the track. Animal C also received trials at random time intervals, producing a denser sampling of the endboxes. (B) Histogram of animal velocity when eyeblink trials were delivered. The indicated thresholds were used to classify individual trials as 'sit' vs. 'run' in subsequent analyses.\n\nHere, we disentangle the spatial and non-spatial influences on hippocampal firing by studying trace eyeblink conditioning in freely moving rats. Consistent with previous studies, we find that the CS can evoke significant changes in the firing rate of dorsal CA1 neurons. Additionally, we find that these apparent CS responses are spatially modulated, but surprisingly, they are absent when the animal is moving. These CS-evoked changes occur only when the animal is inactive, produce firing rates that match normal place cell activity, and are accompanied by a cessation of ripples. These observations are more consistent with an arousal-mediated resumption of place cell firing rather than a genuine encoding of the non-spatial stimuli. These results suggest that neurons in dorsal CA1, a major output stage of the hippocampus, transmit exclusively spatial signals even in this hippocampally\u00a0dependent non-spatial task.\n\n## Results\n\nTo simultaneously map the spatial and non-spatial influences on hippocampal firing, we trained adult rats in trace eyeblink conditioning while they traversed a linear track (Figure 1B), an environment in which the spatial coding of hippocampal neurons has been well-characterized (O\u2019Keefe, 2007). We presented the eyeblink trials at randomized locations throughout the environment, which enables us to dissociate spatial and non-spatial influences on neuronal activity.\n\nUsing chronically implanted tetrode arrays, we recorded from pyramidal cells in the dorsal CA1 region of the hippocampus (an average of 36 cells per training session for a total of 1264). Consistent with previous studies, we found that a subset of cells significantly changed their firing rate following the CS onset (p<0.01 for 10% of cells, two-sided Wilcoxon signed-rank test). However, an analysis of single-trial responses reveals that these cell-level statistics belie a high trial-to-trial variability, and none of the recorded cells respond consistently to the CS onset (Figure 1E\u2013F).\n\nWhat is the source of this trial-to-trial variability? Does spatial tuning play a role? To address this question, we mapped each cell\u2019s spatial tuning by measuring its average firing rate as a function of the animal\u2019s location while moving around the environment. Cells that were active in the environment had directional place fields distributed throughout the linear track (Figure 2A). The remaining cells had low firing rates everywhere, consistent with place cells that lack a place field in this environment.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/14321/elife-14321-fig2-v1.jpg)\n\n**Figure 2.:** (A) Spatial firing rate maps (place fields) for the 780 cells active on the linear track. Each row is a single cell; left and right panels show different directions of traversal. These maps are computed excluding eyeblink trials. (B) Place fields predict CS responses for the example cell from Figure 1E. Top: Place field map. Boxes are the track endboxes, and the track itself is duplicated to show different directions of traversal. Middle: Animal location during eyeblink trials, color-coded by CS-evoked firing. Bottom: Spike rasters ordered by place field intensity at trial delivery locations. (C) Spike rasters for all cells in (A), ordered by place field intensity. For visualization, many rasters are compressed onto a single row, and overlapping spikes are given warmer colors. Electrical artifacts prevent spike detection during the 10 ms US delivery window. (D) Spike rasters for the remaining 484 cells not active on the linear track. (E) Average firing rate over all cells and trials, grouped by place field intensity. (F) Cell-by-cell analysis of the correlation (Spearman\u2019s \u03c1) between CS-evoked firing rate and place field intensity. Most cells have a large positive correlation, especially those that appeared significantly CS-responsive (black dots). The only cells without a positive correlation are those that fired very few spikes. The cell from (B) is circled in red.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14321/elife-14321-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The example cell from Figures 1E and 2B is shown in panel (B). The other panels of this figure show simultaneously\u00a0recorded cells from different tetrodes. As in Figure 2B, each panel contains a place field map, trial delivery locations (color-coded by CS-evoked firing), and spike rasters for a single cell. Rasters are shown in chronological order (as in Figure 1E), so the same row in each panel corresponds to the same trial. Note that different sets of cells fire as the animal moves around, and cells with disjoint place fields fire on different subsets of trials. The colored bars flanking each raster show the cell\u2019s place field intensity for each trial.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14321/elife-14321-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** This figure shows additional single-cell examples, presented in the same fashion as Figure 2B. (A) 484 cells (38%) did not have a place field in the environment and fired very few spikes during eyeblink trials. (B) 301 cells (24%) had a place field in the endbox only. However, this count is very sensitive to the threshold on the place field\u2019s peak firing rate. For example, increasing this rate threshold from 2 Hz to 5 Hz would reclassify 160 of these 'endbox only' cells as 'no place field'. A small fraction of 'endbox only' cells (14 cells total) had place fields in both endboxes. (C) 325 cells (26%) had a place field on the track proper. Most of these (188 cells) had a single uni-directional place field. Note that non-uniform sampling of the track can cause place field traversals to appear as a CS-evoked change in firing. In this example, the animal received eight eyeblink trials as it was exiting this cell\u2019s place field, but only one trial as it was entering. As a result, we observe a significant decrease in firing following the CS onset (p=0.006, Wilcoxon signed-rank test). (D) 154 cells (12%) had place fields on the track and in the endbox(es). Many of these were due to a single place field that extended onto both areas, but some (like this example) had multiple distinct place fields.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/14321/elife-14321-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** This figure shows additional cell-by-cell analyses. Each dot represents a single recorded cell. The top row analyzes the CS response (firing in the 500 ms window between the CS onset and the US onset), and the bottom row analyzes the US response (firing in the 500 ms following the US offset). (A) Within-cell correlation (Spearman\u2019s \u03c1), across trials, between spatial tuning and stimulus-evoked firing. A correlation of 1 indicates that a cell exhibits a strictly monotonic relationship between place field intensity and observed firing. Note that all cells exhibit a positive correlation except those that fired very few spikes overall; such cells have many trials with zero observed spikes, and these ties reduce the measured correlation. The top plot is a duplicate of Figure 2F. (B) Predicted vs. observed stimulus-evoked firing rate for each cell (averaged over trials). Note that all cells lie close to the diagonal, and there are no outliers to suggest a subpopulation of cells that deviates from the spatially-predicted rates. Values less than 0.01 are not shown to scale.\n\nThese spatial firing rate maps\u2014which were constructed with eyeblink trials omitted\u2014reveal that a cell\u2019s spatial tuning exerts a strong influence on its response to non-spatial stimuli. For example, the intermittently CS-responsive neuron shown in Figure 1E had a place field in the right endbox, and the trials in which it fired corresponded to the trials presented within this place field (Figure 2B). To visualize the influence of this spatial tuning, we ordered the trials by the place field intensity at the trial delivery location (Figure 2B, bottom panel). Overall, we find that the CS evokes an increase in firing when delivered within a cell\u2019s place field, and silences the cell when delivered outside its place field (Figure 2C\u2013E). This correlation between CS-evoked firing and place field intensity also holds at the single-cell level (Figure 2F). These observations indicate that there are no CA1 neurons that respond consistently to the CS in a space-invariant fashion. Instead, the non-spatial stimulus modulates the firing of place cells.\n\nWhat is the nature of this modulation? If the CS amplifies ongoing place cell activity, as Figure 2E suggests, then we would expect that CS responses would be most prominent when place cells are actively engaged, such as during running. Surprisingly, we find the opposite: CS-evoked changes in firing rate are absent when the animal is running (Figure 3A) and occur only when the animal is inactive (Figure 3B). Importantly, the lack of CS-evoked changes while running is not accompanied by an impairment of task performance (Figure 3\u2014figure supplement 1). When the animal is sitting, the CS-evoked change in firing actually reflects the fact that the pre-trial firing rates differ from the spatially\u00a0predicted rates (Figure 3C, grey markers). After the CS onset, firing rates re-align with the place field intensity at the present location (Figure 3C, blue markers). The US evokes a response that briefly exceeds the spatially\u00a0predicted rates (Figure 3C, red markers), but analysis of this phenomenon is potentially confounded by head movement associated with the unconditioned response.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/14321/elife-14321-fig3-v1.jpg)\n\n**Figure 3.:** (A) Responses on trials delivered while the animal was running (40% of all trials). Top: Average firing rate among trials presented within (green) and out of (purple) the place field (same thresholds as Figure 2E). Middle: Spike rasters ordered by place field intensity. Bottom: Distribution of animal locations for this set of trials. (B) Responses on trials delivered while the animal was sitting (46% of all trials). (C) Top: Firing rates, on sitting trials, immediately before (grey) and after (blue) the CS onset. Note that the post-CS firing matches the place field intensity more closely than the pre-CS firing does. Each marker shows the mean and bootstrapped 95% confidence interval for a small range of intensities; values less than 0.01 Hz are not shown to scale. Bottom: Same analysis showing the predicted vs. observed firing rates immediately after the US (red) and shortly after that (grey). The time windows for analysis are indicated in panel (B).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14321/elife-14321-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Plots show behavioral performance over the course of training for the three animals. The mean CR rate over all trials is shown in black. Mean with 95% Bernoulli confidence intervals for running/sitting trials are shown in green/magenta, respectively. Asterisks indicate sessions where either confidence interval does not include the overall mean.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14321/elife-14321-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** In Figure 3, most running trials occur on the track, whereas the sitting trials occur mostly in the endboxes. To check whether it is behavior (run vs. sit) or location (track vs. endbox) that is the relevant feature, we repeated this analysis for each of the four conditions. Panels (B) and (C) contain fewer trials than (A) or (D), so their spike rasters are shown at a different scale.\n\nWhy do pre-trial firing rates in sitting animals differ from the place field intensity? During periods of inactivity, animals may enter a state of quiet wakefulness, in which the firing of place cells is not exclusively governed by the animal\u2019s present location. Instead, the hippocampus exhibits other patterns of firing, such as synchronous bursts (ripples) that may engage neurons with distant place fields (Foster and Wilson, 2006; Csicsvari et al., 2007; Diba and Buzs\u00e1ki, 2007). We find that when the animal is sitting, ripples spontaneously occur during the pre-trial period, and abruptly cease following the CS onset (Figure 4A). Furthermore, CS-evoked changes in firing rate are more pronounced in trials with detected ripples (Figure 4B) and the firing of these cells outside their place fields is closely associated with the ripple events (Figure 4C). These observations suggest that the animal is indeed in a state of quiet wakefulness during 'sitting' trials, and that the CS triggers an arousal response that leads to a resumption of place cell firing.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/14321/elife-14321-fig4-v1.jpg)\n\n**Figure 4.:** (A) Ripple occurrence rate during trials presented while the animal was sitting (ripples did not occur when the animal was running). (B) Unit responses on trials where a ripple was detected prior to the CS onset. Layout is similar to Figure 3B, but note the difference in scale for the 'out of place field' peri-event firing rate. The black triangle marks the average pre-trial firing rate from the corresponding panel in Figure 3B. (C) 'Out of place field' rasters sorted by the time that the ripple occurs. Some trials had more than one ripple; for these the longest ripple was used.\n\nFinally, we investigated the effect of the CS on hippocampal theta oscillations. Previous studies have reported that the CS can reset the theta rhythm, aligning the phase of theta to the CS onset (Moita et al., 2003; Nokia et al., 2010; Darling et al., 2011). To distinguish a genuine phase reset from stimulus-evoked initiation of theta oscillations, it is important to restrict our analysis to trials with ongoing theta activity prior to the CS onset. The prominent theta oscillations during running provide the ideal conditions for this analysis (Figure 5A). Under these conditions, we found that both the CS and US can evoke a sustained alignment of theta phase, but only in one out of three animals (Figure 5D). Even when theta phase alignment did occur, the new phase remained highly correlated with the pre-stimulus phase (Figure 5E), indicating that the observed alignment is due to a subtle phase shift rather than a reset of the theta rhythm. These results confirm that it is possible for the eyeblink stimuli to perturb ongoing theta oscillations, but the absence of this perturbation in two out of three animals shows that it is not necessary to perform the task.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/14321/elife-14321-fig5-v1.jpg)\n\n**Figure 5.:** This figure shows CS- and US-evoked changes to ongoing theta oscillations in the hippocampal local field potential (LFP) while running. (A) Randomly\u00a0selected example LFP traces from each animal. Note that theta oscillations are prominent and consistent across trials. (B) Averaged hippocampal LFP. Theta-band oscillations are visible in animal C, but note the 10-fold reduction in scale compared to the raw LFPs. (C) LFP spectrograms. Note the strong theta power that persists throughout the trial. Horizontal dashed lines indicate the 4\u201312 Hz theta band, and the peak spectral power density is indicated in the top right of each spectrogram. Animals B and C exhibited high-amplitude transients following the US, and time windows that overlap this transient are shown in greyscale. (D) Mean resultant length, a measure of theta phase coherence across trials. Values that correspond to a significantly non-uniform phase distribution (p<0.01, Rayleigh test) are shown in bold. Animal C exhibits a sustained phase alignment that persists for several theta cycles, but the other two animals show no significant phase alignment at all. (E) Phase transition curves. Each scatterplot compares the theta phase before and after the stimulus (see Materials and methods and Figure 5\u2014figure supplement 3); each dot is a single trial and two cycles are shown for clarity. A diagonal line (e.g. animal B) indicates that the theta rhythm is unaffected by the eyeblink stimuli, whereas a horizontal line would indicate theta reset to a fixed phase. Each scatterplot is accompanied by histograms of the phase distributions. The mean resultant length (R) and Rayleigh test P-value are reported for cases where P<0.05. Note that even in cases with a significant stimulus-evoked alignment of theta phase, the actual perturbation of ongoing theta oscillations is very subtle.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14321/elife-14321-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Same analysis as Figure 5, but for trials delivered during periods of relatively high theta power while sitting. Overall, the results are similar to, but noisier than, the running case. Inclusion criteria are: (1) the animal was sitting, (2) the ratio of pre-trial theta power (4\u201312 Hz) to delta power (1\u20134 Hz) was > 4, and (3) the pre-trial theta power was greater than the 5th percentile of theta power observed during running. (A) Despite the stringent inclusion criteria, these randomly-selected examples reveal a more diverse set of LFP activity than observed during running. (B) Mean LFPs. Animal A received very few trials that met the inclusion criteria, producing a very noisy mean LFP. (C) LFP spectrograms are shown using the same color scale as in Figure 5C. Note the reduced theta power compared to the running case. (D) No animals exhibited a significant alignment of theta phase to the CS, but this analysis is potentially confounded by smaller sample sizes. (E) Phase transition curves show much greater dispersion compared to the running case, which may reflect: (1) reduced accuracy of phase extraction due to reduced theta power, (2) unintentional inclusion of non-theta trials, or (3) increased variability in theta frequency.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14321/elife-14321-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Same analysis as Figure 5, but for trials delivered during periods of non-theta (i.e. the remaining sitting trials not shown in Figure 5\u2014figure supplement 1). (A) These randomly-selected LFP traces show several clear examples of theta initiation (a change from non-theta to theta), but also demonstrate that it does not always occur. (B) Mean LFPs. Note that the mean CS response for animal C is dominated by a transient rather than the persistent theta oscillations seen in Figure 5B. (C) LFP spectrograms show large changes in the spectral power following the onset of the eyeblink stimuli. (D) Animal C again shows significant alignment of theta phase following the CS, but the timing and duration of this alignment suggests that it is due to the broadband transient rather than a genuine alignment of the theta rhythm. (E) The theta phase continuity plots are very noisy because the pre-CS theta phase is not well-defined and the presence of post-CS theta oscillations is highly variable.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/14321/elife-14321-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) Example hippocampal local field potential (LFP) from a single eyeblink trial. A high-amplitude transient can be seen immediately following the US delivery. (B) Instantaneous theta frequency and phase were estimated using a short-time Fourier transform (STFT). Top: At each time point, we determine the theta frequency by finding the frequency with the highest spectral power (black line). The theta amplitude and phase are then extracted from the STFT at that frequency. Middle: Raw trace from (A) with extracted theta overlaid in black. Bottom: Corresponding theta phase. This is used for the theta coherence analysis in Figure 5D. (C) Phase extrapolation for the phase continuity analysis in Figure 5E. We use non-overlapping STFT windows (indicated by curly braces below the LFP trace) to ensure that the pre- and post-stimulus phase are estimated independently of each other. To assist in comparison, we use the corresponding frequency estimates to extrapolate both phase estimates to the same point in time (indicated by black triangles). This procedure is repeated for the US analysis.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/14321/elife-14321-fig5-figsupp4-v1.jpg)\n\n**Figure 5\u2014figure supplement 4.:** Phase precession plots for 12 example cells (four per animal). Each dot shows the animal\u2019s location (x-axis; arrow indicates direction of traversal) and theta phase (y-axis; two cycles shown) for a single spike. As the animal runs through the cell\u2019s place field, the cell fires at an earlier phase of theta; this phenomenon is known as phase precession. Black dots are spikes that are not associated with eyeblink trials, and red crosses are spikes fired within 500 ms of the CS or US. Note that the CS- and US-evoked spikes fall within the distribution of non-eyeblink spikes. These example cells were chosen because they had many eyeblink trials in their place field(s), providing favorable conditions for observing any deviations from their phase precession curves. Theta phase is extracted from the same tetrode that the single unit was recorded on.\n\n## Discussion\n\nThese findings require a re-evaluation of how dorsal CA1 pyramidal neurons may encode non-spatial information. The simplest form of non-spatial coding would be a purely non-spatial CS cell (Figure 6A) that exhibits a consistent change in firing to the CS independent of the animal\u2019s location. None of the 1264 pyramidal cells responded in this purely non-spatial manner.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/14321/elife-14321-fig6-v1.jpg)\n\n**Figure 6.:** (A) CS cells respond to the CS independently of place. None of the recorded cells consistently responded in space-invariant manner. (B) CS-place cells encode a context-specific representation of the non-spatial stimulus. The lack of CS responses when the animal is running is not consistent with this model. (C) Place cells encode purely spatial information, but arousal-mediated activation of place cells can produce changes in firing following a non-spatial stimulus.\n\nPrevious studies that found spatial correlates in hippocampal responses to non-spatial stimuli have hypothesized that these cells encode the conjunction of a specific non-spatial stimulus with a spatial context (Wood et al., 1999; Moita et al., 2003). A conjunction CS-place cell (Figure 6B) would change its firing in a location-dependent manner. At first glance, our data appear to fit this model\u2014the CS responses of place cells are gated by their place fields (Figure 2)\u2014but our key observation is that CS-evoked changes in firing rate disappear when the animal is running (Figure 3). This new finding rejects the conjunctive model because these cells can no longer encode the CS-place conjunction in this behavioral state.\n\nA model that only relies on the known properties of place cell firing provides a more compelling explanation of the experimental observations (Figure 6C). In particular, place cells exhibit place-specific firing only when the animal is moving or alert, and exhibit a different pattern of firing when the animal is in a state of quiet wakefulness. If the CS were able to trigger an arousal response, this would manifest as an increase in firing within a cell\u2019s place field (due to activation of place-specific firing) and a decrease in firing outside the place field (due to cessation of ripple-related firing). Consistent with this hypothesis, we find that in sitting animals, the CS indeed activates place-specific firing, silences out-of-field firing, and abolishes ripples. When the animal is already alert, such as during running, we observe no additional modulation beyond normal place field firing.\n\nHence the most parsimonious explanation of the experimental data is that dorsal CA1 neurons are all place cells and the apparent responses to the non-spatial stimuli are due to an arousal-mediated resumption of place-specific firing.\n\nThese observations clarify the nature of previously-reported patterns of hippocampal activity in eyeblink conditioning. Studies of inactive subjects in a fixed location, such as those with restrained animals (Berger et al., 1983; Weiss et al., 1996; Weible et al., 2006), would find that a subset of cells\u2014those with a place field overlapping the experiment location\u2014consistently increase their firing following the stimulus presentation. Most cells would not have place fields overlapping this location and would be silenced following the stimulus presentation.\n\nThe arousal-mediated nature of the hippocampal response can also account for a variety of learning-related phenomena. In particular, any salient stimulus should be able to evoke these hippocampal responses, regardless of whether the task is hippocampally\u00a0dependent (Berger et al., 1983; Moita et al., 2003; Abe et al., 2014). The salience of the stimulus, and hence its ability to trigger alertness, may change as the subject learns the predictive power of the stimulus, producing a stereotyped evolution of hippocampal activity across learning (McEchron and Disterhoft, 1997). On the other hand, manipulations that decrease the salience of the CS, such as habituation to the unpaired stimuli presented to control animals, would reduce the apparent response (Berger et al., 1976; Weiss et al., 1996).\n\nPrevious studies have also reported that the CS can reset the phase of hippocampal theta oscillations (Nokia et al., 2010; Darling et al., 2011). Given the lack of CS-evoked firing rate changes while running, could the CS onset be encoded by this phase reset instead? Analogous to previous studies, we find evidence for an alignment of theta phase to the CS onset. However, a direct comparison of pre- and post-stimulus phase reveals that this effect is due to a slight perturbation of the ongoing theta phase (Figure 5). In particular, this analysis rejects the notion of theta reset to a specific phase. Furthermore, this phase perturbation is present in only one out of three animals, indicating that it is not necessary for performing the task. Moreover, we did not find evidence that theta phase precession was affected by the CS onset (Figure 5\u2014figure supplement 4). Note, however, that this analysis does not rule out the possibility that the CS may modulate the degree of theta phase-locking across brain areas.\n\nFinally, extensive lesion studies have demonstrated the critical importance of the hippocampus in trace eyeblink conditioning (Kim et al., 1995; Takehara et al., 2003). How do our observations fit with this literature? We found that CS-evoked changes in dorsal CA1 firing rates and theta phase are not necessary for task performance\u2014these responses are absent during running, but performance is not impaired\u2014yet dorsally\u00a0restricted lesions still produce learning deficits (Takehara et al., 2003). Several possible explanations may account for this apparent discrepancy: (1) Dorsal hippocampal lesions may disrupt activity in other hippocampal areas (e.g. ventral CA1), which may contain genuinely CS-responsive neurons. (2) The encoding of the CS may be more subtle than changes in firing rate, but still detectable by postsynaptic targets. (3) The critical engagement of the hippocampus may not occur only during the trial itself. Memory consolidation is hippocampally\u00a0dependent and proceeds without additional training (Takehara et al., 2003; Takehara-Nishiuchi and McNaughton, 2008), indicating that some eyeblink-related activity occurs well after the stimulus presentation. (4) Even though spatial information may appear irrelevant in this task, the presence of ongoing place-specific firing may still be necessary for learning space-invariant responses. For example, awareness of the context may be necessary for the animal to attend to the appropriate stimuli, or learning a context-dependent association may be a necessary stepping-stone to developing a space-invariant association (Nadel and Willner, 1980).\n\nThese findings suggest that the dorsal hippocampus transmits exclusively spatial signals, even in a hippocampally\u00a0dependent non-spatial task, and constrain the ways in which it may contribute to memory processing. These experiments also highlight the importance of accounting for brain state in studies where alertness changes may confound the observed selectivity to experimental stimuli.\n\n## Materials and methods\n\n### Electrophysiological recordings\n\nWe recorded from three male Long-Evans rats, 3\u20135 months old at the time of surgery. We chronically implanted each animal with a differential pair of EMG recording wires in the left eyelid muscle, a pair of bipolar stimulation electrodes in the same area, and a microdrive array that allowed independent adjustment of 24 tetrodes. In two animals (A and B), these tetrodes were targeted to the right dorsal hippocampus; animal C received a bilateral implant targeting the dorsal hippocampus in both hemispheres. We lowered these tetrodes to their targets in the dorsal CA1 cell layer over the course of several days.\n\nElectrophysiological signals were buffered on the headstage, amplified, and digitally recorded for offline analysis. This data acquisition system also received timestamps from the video recording system and the stimulus delivery system to allow these data streams to be synchronized for analysis. All data analysis was performed in MATLAB using the DataJoint data processing chain toolbox (Yatsenko et al., 2015).\n\nAt the end of the experiment, we marked the final electrode locations using electrolytic lesions. Animals were then euthanized and intracardially perfused with 4% paraformaldehyde. We reconstructed the recording sites using a combination of high-resolution magnetic resonance imaging (Lubenov and Siapas, 2009) and histology (brains were cryoprotected, embedded in gelatin, frozen, and sectioned at 20\u2009\u03bcm; Figure 1\u2014figure supplement 1).\n\nAll animal procedures were in accordance with the National Institutes of Health (NIH) guidelines, and with the approval of the Caltech Institutional Animal Care and Use Committee.\n\n### Training environment\n\nAll experiments were performed in an acoustically and electromagnetically shielded room containing a sleepbox and a 180 cm long, 7.5 cm wide linear track. Each end of the track terminates in a 22 \u00d7 16 cm endbox that contains a water port for reward delivery. An overhead video system tracks LED markers on the tetrode headstage to provide a measurement of animal position.\n\nAnimals were housed in the sleepbox within the recording environment. An automated direct-current lighting system provided a 12-hr light cycle with light onset at 9am.\n\nAfter recovering from surgery, animals were trained to traverse the linear track for water reward. Animals were given at least 12 days to habituate to the environment and the linear track task before starting eyeblink conditioning.\n\n### Conditioning procedure\n\nWe used a 250 ms, 5 kHz tone as the CS, a 250 ms stimulus-free trace interval, and 10 ms bipolar stimulation of the eyelid muscle as the US. Lesion studies in rats have shown that this trace interval requires the hippocampus for successful acquisition (Weiss et al., 1999). The CS was delivered from a speaker located above the center of the track. The loudness of the tones used during training was determined during a tone-only habituation session by gradually increasing the loudness until startle responses (0\u201380 ms after CS onset) are detected in the eyelid EMG, then lowering the loudness until these responses disappear. We did not measure the CS loudness along the track, but afterwards verified that conditioned responses could be observed at all locations.\n\nFor all animals, we delivered eyeblink conditioning trials at random locations while they were running on the track. Animal C also received trials at random time intervals. Animals received between 38 and 186 eyeblink trials per training session (an average of 109), depending on how much they ran on the track. All animals received two training sessions per day, at the beginning and end of the 12-hr light cycle.\n\n### Behavioral analysis\n\nAfter filtering the differential EMG data with a 120\u2013960\u2009Hz passband, we computed its root-mean-square (RMS) value in three 100 ms windows: 'baseline' from \u2013100 to 0 ms relative to CS onset, 'CR' from 380 to 480 ms (US onset occurs at 500 ms), and 'control' from \u2013580 to \u2013480 ms. Trials in which [CR \u2212 baseline] exceeded the 95th percentile of that animal\u2019s [control \u2212 baseline] were considered blinks.\n\n### Spike detection and sorting\n\nAfter filtering the tetrode data with a 600\u20136000\u2009Hz passband, we detected and aligned spikes on peaks in the nonlinear energy operator (Mukhopadhyay and Ray, 1998). Spikes were clustered by fitting a mixture model in a 12-dimensional feature space (three principal components per tetrode channel) (Calabrese and Paninski, 2011; Ecker et al., 2014). A cluster was considered a single unit if it was well-isolated (sum of false positive and negative rates < 10%), had a refractory period > 1.5 ms, had a spike amplitude > 120 \u03bcV, and its spike waveforms remained stable throughout the course of the recording.\n\nThese criteria identified 1585 single units, of which 1264 we deemed to be putative pyramidal cells based on firing rate (<4\u2009Hz), spike width (>0.25 ms), and bursting (>5% of inter-spike intervals are <10 ms). Each of these 1264 units is treated independently in our analysis, even though several are likely to be repeated observations of the same neuron. We estimate that we recorded only 400\u2013500 unique pyramidal cells.\n\n### Place field analysis\n\nWe constructed place field maps by dividing the number of spikes in each location by the occupancy of that location (Rich et al., 2014). Track rate maps are one-dimensional, computed for each direction independently, and smoothed with a \u03c3 = 3 cm Gaussian kernel. Endbox rate maps are two-dimensional, non-directional, and smoothed with \u03c3 = 1 cm.\n\nOnly periods where the animal was moving (velocity > 2 cm/s) were included in the construction of the firing rate maps. Furthermore, the 2-s window following the CS onset was excluded so that eyeblink responses would not influence the construction of the place field maps. Areas with an occupancy < 50 ms/cm2 were considered to have an indeterminate spatial firing rate, and any eyeblink trials that occurred in these locations were excluded from analysis.\n\nWe found that 38% of cells were not active in this environment (i.e. did not have a place field with peak > 2\u2009Hz), but this underestimates the actual fraction of silent cells, as we are unable to reliably cluster single units with an overall firing rate < 0.01\u2009Hz.\n\nThe place field intensity on a given trial is the value of the place field map at the location in space where the trial was delivered. Since the animal may be moving, this is taken as the average over the animal\u2019s trajectory:\n\n$$\nI_{place}=\\frac{1}{t_{2}\u2212t_{1}}\\int_{t_{1}}^{t_{2}}M(x(t),y(t))dt,\n$$\n\nwhere $M(x,y)$ is the place field map for this cell and $x,y$ are the animal\u2019s trajectory over time. $t_{1}$ and $t_{2}$ define the time window for averaging. When sorting rasters (Figures 2B\u2013E, 3A\u2013B, and 4), this corresponds to the window visible in the figure; for analysis of CS response (Figures 2F and 3C), this corresponds to the 500 ms post-CS analysis window.\n\n### Statistical analysis of CS response\n\nAll analysis of CS response is based on 500 ms windows immediately prior to ('pre-CS') and immediately following ('post-CS') the CS onset.\n\nTo characterize a cell\u2019s CS response, we used the two-sided Wilcoxon signed-rank test without correction for multiple comparisons. We found 123 cells (10% of all pyramidal cells) that were significant at a p<0.01 level. Of these, 87 increased their firing rate and 36 decreased their firing rate. However, this statistical test should be interpreted as a heuristic measure only, as the influences of spatial tuning and brain state violate the test\u2019s assumption that samples are independent and identically distributed.\n\nTo quantify the reliability of a cell\u2019s CS response (Figure 1F), we looked for differences in pre- vs. post-CS firing on a trial-by-trial basis. For a rate-increasing cell like the one shown in Figure 1E, the observed response reliability is the fraction of trials in which it fired more spikes post-CS than pre-CS. The expected response reliability is the probability of this occurring given the cell\u2019s average pre- and post-CS firing rates, assuming that spike counts are Poisson distributed. Specifically,\n\n$$\nP_{k_{2}>k_1}=\\sumk_{1}=0\u221e\\sumk_{2}=k_{1}+1\u221ef(k_{1};\\lambda_{1})f(k_{2};\\lambda_{2}),\n$$\n\nwhere $f(k;\\lambda)$ is the Poisson probability mass function and $\\lambda_{1},\\lambda_{2}$ are this cell\u2019s average number of pre- and post-CS spikes, respectively.\n\nTo quantify the spatial tuning of the CS-evoked firing (Figure 2F), we computed Spearman\u2019s rank correlation coefficient between the CS-evoked firing and the place field intensity at the trial delivery locations. Cells that never fired any spikes following the CS were assigned a correlation of zero.\n\n### Ripple analysis\n\nWe detected ripples by looking for high-frequency oscillations in the local field potential (LFP). First, we filtered the tetrode data with an 80\u2013250\u2009Hz passband and looked for peaks in the RMS power. For each detected peak, we determined its frequency using a short-time Fourier transform (STFT) centered around the event and considered it a putative ripple if its frequency was between 120 and 250\u2009Hz and it was detected on at least 3 tetrodes.\n\n### Theta analysis\n\nWe analyzed the LFP to identify the effects of the CS/US on the hippocampal theta rhythm. For each animal, we used a single tetrode for all theta analysis. We chose tetrodes superficial to the cell layer (as determined by sharp wave polarity) so that small changes in the tetrode depth would have a minimal effect on the recorded theta phase (Lubenov and Siapas, 2009).\n\nFor each trial, we estimate the instantaneous theta frequency and phase using a short-time Fourier transform (STFT) with a 400 ms Kaiser window (\u03b1 = 1). At each time point, we determine the instantaneous theta frequency by looking for a peak in the spectral power density in the 4\u201312\u2009Hz range. We then obtain the instantaneous theta amplitude and phase from the modulus and argument of the STFT at that frequency (Figure 5\u2014figure supplement 3B). The mean resultant length (Figure 5D) is given by\n\n$$\nR(t)=|\\frac{1}{N}\\sumn=1Ne^{i\u03d5_{n}(t)}|,\n$$\n\nwhere $\u03d5_{n}(t)$ is the theta phase for trial $n$ at time $t$. This measure of circular concentration ranges between 0 (phases are symmetrically distributed, e.g. uniform) and 1 (phases are all concentrated at a single value).\n\nThis STFT-based approach guarantees that our theta estimates cannot be influenced by any features in the data more than \u00b1 200 ms away. For example, we often observed a high-amplitude transient following the US delivery. This clearly skews the estimated theta phase in the vicinity of the US, but our analysis approach ensures that phase estimates 200 ms before or after the transient are unaffected. In contrast, techniques that involve the Hilbert transform or an analysis of IIR-filtered signals cannot guarantee that that the influence of such transients remain localized to a fixed time interval.\n\nThese guarantees ensure that our phase continuity analysis (Figure 5E) does not introduce spurious autocorrelations. The pre-CS window ends at the CS onset, and the post-CS window starts 100 ms after that (Figure 5\u2014figure supplement 3C), therefore the pre- and post-CS phase estimates are derived from independent segments of data. To assist in comparison, we use the corresponding frequency estimates to extrapolate both phase estimates to the same point in time (the midpoint of this 100 ms gap, i.e. 50 ms after the CS onset).\n",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "5d5fc4eb-0b1e-4511-9a8d-9bdda0827582",
+      "submission_id": "6e528504-c540-44bd-a82c-6cd7d8111093",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michael H\u00e4usser, University College London , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.14321.019](https://doi.org/10.7554/eLife.14321.019)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Spatial tuning and brain state account for dorsal hippocampal CA1 activity in a non-spatial learning task\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Eve Marder as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is a very interesting study which identifies a novel spatial correlate of the hippocampal substrate of trace eyeblink conditioning. The authors examined hippocampal pyramidal cell firing during eyeblink conditioning and investigated the relationship between this and spatial firing. They report that conditioned eyeblink unit responses were not consistent, occurring preferentially within the independently mapped place field. Outside of the place field the CS silenced the cell. Furthermore, CS-evoked responses did not occur during running but only when animal was inactive. What seems to be happening is that when the animal becomes inactive in the place field the firing rate drops below what would be predicted on the basis of the active field rate and this active-movement rate is restored by the CS. As has been shown before, sharpwave ripples occurred when the animal was not moving and were inhibited by the CS. The authors conclude that the simplest explanation for their results is that all of the pyramidal cells are place cells, and that, following conditioning, the CS triggers an arousal response which leads to the resumption of the spatial firing in the place field. Importantly they find no evidence for an independent response to the CS which is not dependent on the animal's spatial location.\n\nThe paper is well-written and well-illustrated and makes an important contribution to our understanding of the role of the hippocampus in conditioned responses. Essentially it shows that these are dependent on the spatial function of this brain region and are merely a reflection of one aspect of this spatial function, namely that as an animal sits quietly in the place field, its arousal level drops with a concomitant decrease in firing of the place cell. The CS increases arousal and via this change in state restores the firing of the cell. There is no evidence for a role of the hippocampus conditioning independent of this arousal influence on spatial firing. Importantly, the results rule out the CS- spatial location conjunction hypothesis since the CS does not fire the cells in the place field during running.\n\nWhile the primary results are presented clearly, there are gaps in the analysis that should be addressed. In particular, there is a notable absence of analysis of theta activity and its relationship to conditioning, and CS-dependent hippocampal response.\n\nEssential revisions:\n\n1) In the Discussion, the authors show how their results explain all of the previous findings on the role of hippocampal pyramidal cells in conditioning experiments. On the other hand, they admit that they cannot account for the effect of the hippocampal lesions on eyeblink conditioning. Their only suggestion is that spatial signals are critical for spacing-invariant learning, but this does not seem very compelling or plausible. A possibility not considered is that trace eyeblink conditioning is context dependent and that spatial context is dependent on the hippocampus. Nadel and Willner (1980) originally suggested that the role of the hippocampus in some of these conditioning tasks involved conditioning to the spatial context which might provide the arousing or occasion-setting input which promotes the association between the CS and US especially if there is an interval between the two (see also O'Keefe 1999).\n\n2) Since animals spend most of their time in the end goal boxes and therefore most of the CS's were delivered there (see Figure 2B) there is a potential confound between location and behavior. It would have been better if the animal had been required to move and remain still at all locations along the track. Such data would be interesting (though optional)? If the authors do not already have this data, this issue should be discussed.\n\n3) The Moira paper is cited but not really adequately discussed despite the clear overlap in approach and findings. Both involve auditory tone CS conditioning of eyelid shock US response (freezing in their case vs. eyeblink in this study) and both demonstrate dependency on existing place field responses. The observation of CS-evoked responses during ripple-associated immobility is novel and was not addressed in the Moira study, but in that study they did examine questions regarding theta synchronization and the possibility of type II theta during CS-associated immobility. Given the conclusion of lack of CS-independent hippocampal firing rate response, these should be addressed in the present study, with further attention to possible CS-induced changes in hippocampal response that may be relevant such as CS-dependent theta-phase effects (theta phase resetting), and impact on phase precession (if possible).\n\n4) While it does not undermine the central finding of CS-evoked responses that are predicted by underlying place fields, the absence of an unpaired CS control condition does weaken the overall interpretation in that it does not afford the opportunity to differentiate potential hippocampal correlates of simple CS-related responses from successful CS-US association. The potential contribution of CS salience and associated arousal is discussed but is not explicitly tested.\n\n5) Figure 1E seems to show CS associated responses restricted to the early trials suggesting perhaps a training effect. This raises the questions as to whether the reported overall place field predicted CS response changes over the course of training. Is there a change in measures such as CS response reliability over training (e.g. comparing trials 1-7 with below 50% performance and trials 8-14 with above 50% performance)?\n\n6) Given the absence of a CS-independent hippocampal response, a related question is whether the conditioning would be successful if CS-US pairings only occurred during running when no CS modulation of hippocampal response is observed? It would seem that this is a strong and surprising prediction which could be tested.\n\n7) Additional information should also be provided on the distribution of place fields and overall behavior. Is hippocampally-dependent conditioning potentially derived from a subset of the CS-US pairings (perhaps those associated with stopping points as suggested in the example in Figure 1)? What is the spatial distribution of stopping locations, and what is the result of restricting the place field and CS response analyses to those locations where CS-associated responses are observed (even if they are arousal state related as the authors suggest)? What is the result of a within-cell comparison of CS response to running and stopping (cells for which CS response can be compared during stopping and running through the same location) as opposed to the across-cell population analysis currently used which may suffer from biases sampling bias due to non-uniform running/stopping behavior as a function of location? The analysis shown in Figure 3C may be adequate to address this concern given a reasonably uniform distribution of stopping locations.\n\n8) It is interesting that from the data shown in Figures 2\u20134, the US response also seems to show the same place field dependent modulation, but there is no analysis or discussion of this.\n",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2446d94a-560e-4f3d-9356-51d4a8baa2be",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C1",
+      "claim": "The hippocampus is a brain area crucial for episodic memory in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "The hippocampus is a brain area crucial for episodic memory in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established literature on human hippocampal function.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "636847ca-db07-46ac-acac-889cd00a3ffc",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C2",
+      "claim": "Studies in rodents have highlighted the hippocampus's role in spatial learning, supported by the discovery of place cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, studies in rodents have highlighted its role in spatial learning, supported by the discovery of place cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to established literature on rodent hippocampal function and place cells.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "b8c51834-1970-4f14-ae72-8431fa92d364",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C3",
+      "claim": "Dorsal CA1 pyramidal neurons are all place cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that dorsal CA1 pyramidal neurons are all place cells, and do not respond to the tone when the animal is moving.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing spatial tuning properties of all recorded neurons.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "fa38963d-4b2d-4413-8192-2697f826cc19",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C4",
+      "claim": "Dorsal CA1 pyramidal neurons do not respond to the tone when the animal is moving.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that dorsal CA1 pyramidal neurons are all place cells, and do not respond to the tone when the animal is moving.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing absence of CS-evoked responses during running.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "a36f5413-a220-47dc-a24b-3fdbdf4efa40",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C5",
+      "claim": "When the animal is inactive, the apparent tone-evoked responses reflect an arousal-mediated resumption of place-specific firing.",
+      "claim_type": "EXPLICIT",
+      "source": "When the animal is inactive, the apparent tone-evoked responses reflect an arousal-mediated resumption of place-specific firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing CS responses only during inactivity, correlation with ripple cessation, and alignment with place field intensity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "4736aac8-677e-4868-9ae0-e01174bc26d5",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C6",
+      "claim": "One of the main output stages of the hippocampus transmits only spatial information, even in this non-spatial task.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that one of the main output stages of the hippocampus transmits only spatial information, even in this non-spatial task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental findings that all CA1 neurons are place cells and apparent non-spatial responses are arousal-mediated.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "fed5965c-1783-420d-aca1-657aef2da2a1",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C7",
+      "claim": "The hippocampus plays a critical role in memory formation.",
+      "claim_type": "EXPLICIT",
+      "source": "The hippocampus is a brain structure that is known to play a critical role in memory formation (Squire, 1992), but the scope and nature of hippocampal memory processing remains elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Squire, 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "3719c211-9756-4ec6-a307-95b614fba6d0",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C8",
+      "claim": "The discovery of place cells in rodents led to the hypothesis that the hippocampus forms a 'cognitive map' that is essential for spatial learning.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of place cells in rodents led to the hypothesis that the hippocampus forms a 'cognitive map' that is essential for spatial learning (O'Keefe and Nadel, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to O'Keefe and Nadel, 1978.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "e9acfd35-1abf-4a55-8997-21d9e6c11240",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C9",
+      "claim": "Human studies have indicated a more general role of the hippocampus in the formation of episodic memories.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, human studies have indicated a more general role of the hippocampus in the formation of episodic memories (Scoville and Milner, 1957).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Scoville and Milner, 1957.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "85a1d362-38ac-4708-9c77-b6b198be5d25",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C10",
+      "claim": "Pyramidal neurons in the dorsal CA1 area of the hippocampus can change their firing in response to arbitrary stimuli, both spatial and non-spatial.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of the latter view, electrophysiological studies in rodents have found that pyramidal neurons in the dorsal CA1 area of the hippocampus can change their firing in response to arbitrary stimuli, both spatial and non-spatial (Berger et al., 1976; Wood et al., 1999; Moita et al., 2003; Komorowski et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Berger et al., 1976; Wood et al., 1999; Moita et al., 2003; Komorowski et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "eb96339f-37a7-496d-92f5-1f3594bca2b8",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C11",
+      "claim": "The functional significance of hippocampal responses to non-spatial stimuli remains controversial because many non-spatial tasks are studied in restrained animals or under circumstances where spatial and non-spatial influences on hippocampal firing cannot be unequivocally dissociated.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the functional significance of these observations remains controversial because many non-spatial tasks are studied in restrained animals or under circumstances where spatial and non-spatial influences on hippocampal firing cannot be unequivocally dissociated (O'Keefe, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to O'Keefe, 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "1439bd2b-e963-4bbd-ac82-2d657ac13871",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C12",
+      "claim": "Learning the CS-US association in trace eyeblink conditioning has been shown to be hippocampally dependent in many species, including humans and rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "Learning the CS-US association has been shown to be hippocampally dependent in many species, including humans and rodents (Clark and Squire, 1998; Kim et al., 1995; Takehara et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Clark and Squire, 1998; Kim et al., 1995; Takehara et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "8f4a6e20-7a1c-4253-8311-3005f3a8f2b1",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C13",
+      "claim": "Previous electrophysiological studies have found that dorsal CA1 pyramidal neurons change their firing following the CS onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous electrophysiological studies have found that dorsal CA1 pyramidal neurons change their firing following the CS onset (Berger et al., 1976, 1983; Weiss et al., 1996; Weible et al., 2006), suggesting that these cells encode the non-spatial stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Berger et al., 1976, 1983; Weiss et al., 1996; Weible et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "2322e375-4352-425f-b8fb-7436c1658050",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C14",
+      "claim": "Previous electrophysiological studies did not characterize the spatial tuning properties of the recorded neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these experiments did not characterize the spatial tuning properties of the recorded neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "d8311521-a863-4060-93f5-c14fb01dd3e4",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C15",
+      "claim": "The study recorded from an average of 36 pyramidal cells per training session for a total of 1264 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using chronically implanted tetrode arrays, we recorded from pyramidal cells in the dorsal CA1 region of the hippocampus (an average of 36 cells per training session for a total of 1264).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "e9f23018-e332-471d-9117-0137540e48fc",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C16",
+      "claim": "10% of recorded cells significantly changed their firing rate following the CS onset (p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies, we found that a subset of cells significantly changed their firing rate following the CS onset (p<0.01 for 10% of cells, two-sided Wilcoxon signed-rank test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "c33136cd-1a67-43a6-a2d6-bb2625ab6e4e",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C17",
+      "claim": "None of the recorded cells respond consistently to the CS onset.",
+      "claim_type": "EXPLICIT",
+      "source": "However, an analysis of single-trial responses reveals that these cell-level statistics belie a high trial-to-trial variability, and none of the recorded cells respond consistently to the CS onset (Figure 1E\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1E-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "7f3dde23-994e-4ee5-8be2-5aaa7593e932",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C18",
+      "claim": "Cells that were active in the environment had directional place fields distributed throughout the linear track.",
+      "claim_type": "EXPLICIT",
+      "source": "Cells that were active in the environment had directional place fields distributed throughout the linear track (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "065801c1-928d-4eb1-8acf-cb49e409e0a2",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C19",
+      "claim": "The remaining cells had low firing rates everywhere, consistent with place cells that lack a place field in this environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining cells had low firing rates everywhere, consistent with place cells that lack a place field in this environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on observed firing patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "849adc89-cf4a-4df8-932c-17f4fbbac68a",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C20",
+      "claim": "A cell's spatial tuning exerts a strong influence on its response to non-spatial stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "These spatial firing rate maps\u2014which were constructed with eyeblink trials omitted\u2014reveal that a cell's spatial tuning exerts a strong influence on its response to non-spatial stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing correlation between place field intensity and CS-evoked firing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "c7a57e96-e439-4733-835f-ed58e681482a",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C21",
+      "claim": "The CS evokes an increase in firing when delivered within a cell's place field, and silences the cell when delivered outside its place field.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we find that the CS evokes an increase in firing when delivered within a cell's place field, and silences the cell when delivered outside its place field (Figure 2C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "4f0ecfc3-2c92-430b-a3e2-90f48b686a0b",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C22",
+      "claim": "The correlation between CS-evoked firing and place field intensity holds at the single-cell level.",
+      "claim_type": "EXPLICIT",
+      "source": "This correlation between CS-evoked firing and place field intensity also holds at the single-cell level (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "07658619-08da-4700-b6a2-21c7e37109ad",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C23",
+      "claim": "There are no CA1 neurons that respond consistently to the CS in a space-invariant fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations indicate that there are no CA1 neurons that respond consistently to the CS in a space-invariant fashion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data showing spatial modulation of all CS responses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "38dcbdef-237f-4021-9a02-d7cfafacb93a",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C24",
+      "claim": "CS-evoked changes in firing rate are absent when the animal is running.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we find the opposite: CS-evoked changes in firing rate are absent when the animal is running (Figure 3A) and occur only when the animal is inactive (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "11633ba5-cbab-45bc-b443-1172889b1750",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C25",
+      "claim": "CS-evoked changes in firing rate occur only when the animal is inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we find the opposite: CS-evoked changes in firing rate are absent when the animal is running (Figure 3A) and occur only when the animal is inactive (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "1d0800df-74a2-4704-bbd3-98acfbf6804c",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C26",
+      "claim": "The lack of CS-evoked changes while running is not accompanied by an impairment of task performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the lack of CS-evoked changes while running is not accompanied by an impairment of task performance (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "a680550d-a648-44fb-85d7-389f6bac3d7c",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C27",
+      "claim": "When the animal is sitting, the CS-evoked change in firing reflects the fact that the pre-trial firing rates differ from the spatially predicted rates.",
+      "claim_type": "EXPLICIT",
+      "source": "When the animal is sitting, the CS-evoked change in firing actually reflects the fact that the pre-trial firing rates differ from the spatially predicted rates (Figure 3C, grey markers).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "8d9ccec4-c8a9-48a6-8107-d415e9d7ca7c",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C28",
+      "claim": "After the CS onset, firing rates re-align with the place field intensity at the present location.",
+      "claim_type": "EXPLICIT",
+      "source": "After the CS onset, firing rates re-align with the place field intensity at the present location (Figure 3C, blue markers).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "552d9845-e177-4a89-9c48-09dfe7540a64",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C29",
+      "claim": "When the animal is sitting, ripples spontaneously occur during the pre-trial period, and abruptly cease following the CS onset.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that when the animal is sitting, ripples spontaneously occur during the pre-trial period, and abruptly cease following the CS onset (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "248582ac-ec6a-4848-8ad7-4d61884b50ea",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C30",
+      "claim": "CS-evoked changes in firing rate are more pronounced in trials with detected ripples.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, CS-evoked changes in firing rate are more pronounced in trials with detected ripples (Figure 4B) and the firing of these cells outside their place fields is closely associated with the ripple events (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "759b3605-7673-4577-8f6a-1665130c6afc",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C31",
+      "claim": "The firing of cells outside their place fields is closely associated with ripple events.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, CS-evoked changes in firing rate are more pronounced in trials with detected ripples (Figure 4B) and the firing of these cells outside their place fields is closely associated with the ripple events (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "558075ff-0fe2-4cc7-b3a8-c06a9cb0a5f6",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C32",
+      "claim": "The CS triggers an arousal response that leads to a resumption of place cell firing.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations suggest that the animal is indeed in a state of quiet wakefulness during 'sitting' trials, and that the CS triggers an arousal response that leads to a resumption of place cell firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental observations about ripples, firing rates, and brain state.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "29c49635-b38e-459b-89ff-94af4463f032",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C33",
+      "claim": "Both the CS and US can evoke a sustained alignment of theta phase, but only in one out of three animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Under these conditions, we found that both the CS and US can evoke a sustained alignment of theta phase, but only in one out of three animals (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "e0cd634f-4462-416b-93a9-9d9a99ae7ef7",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C34",
+      "claim": "When theta phase alignment did occur, the new phase remained highly correlated with the pre-stimulus phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Even when theta phase alignment did occur, the new phase remained highly correlated with the pre-stimulus phase (Figure 5E), indicating that the observed alignment is due to a subtle phase shift rather than a reset of the theta rhythm.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "892d22f1-78d5-4cff-b58d-b5af35c404d2",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C35",
+      "claim": "The observed theta phase alignment is due to a subtle phase shift rather than a reset of the theta rhythm.",
+      "claim_type": "EXPLICIT",
+      "source": "Even when theta phase alignment did occur, the new phase remained highly correlated with the pre-stimulus phase (Figure 5E), indicating that the observed alignment is due to a subtle phase shift rather than a reset of the theta rhythm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the correlation analysis of pre- and post-stimulus theta phase.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "2bdb5200-58c1-4c37-85cb-3658aec70774",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C36",
+      "claim": "It is possible for the eyeblink stimuli to perturb ongoing theta oscillations, but the absence of this perturbation in two out of three animals shows that it is not necessary to perform the task.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm that it is possible for the eyeblink stimuli to perturb ongoing theta oscillations, but the absence of this perturbation in two out of three animals shows that it is not necessary to perform the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the variability in theta phase alignment across animals.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "725d92c0-abe4-409d-a4b1-208496ded21c",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C37",
+      "claim": "None of the 1264 pyramidal cells responded in a purely non-spatial manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The simplest form of non-spatial coding would be a purely non-spatial CS cell (Figure 6A) that exhibits a consistent change in firing to the CS independent of the animal's location. None of the 1264 pyramidal cells responded in this purely non-spatial manner.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the experimental findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "f894a1f1-c10c-4baf-8fd7-69c3c1453bd2",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C38",
+      "claim": "The lack of CS responses when the animal is running is not consistent with the CS-place cell model.",
+      "claim_type": "EXPLICIT",
+      "source": "At first glance, our data appear to fit this model\u2014the CS responses of place cells are gated by their place fields (Figure 2)\u2014but our key observation is that CS-evoked changes in firing rate disappear when the animal is running (Figure 3). This new finding rejects the conjunctive model because these cells can no longer encode the CS-place conjunction in this behavioral state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the experimental data showing absence of CS responses during running.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "0b800b08-a3e1-4e2e-b3e1-726d1f08cd13",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C39",
+      "claim": "Place cells exhibit place-specific firing only when the animal is moving or alert, and exhibit a different pattern of firing when the animal is in a state of quiet wakefulness.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, place cells exhibit place-specific firing only when the animal is moving or alert, and exhibit a different pattern of firing when the animal is in a state of quiet wakefulness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about place cell behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "b04f0bfb-c39e-41b4-befd-c11a5af3d77c",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C40",
+      "claim": "If the CS were able to trigger an arousal response, this would manifest as an increase in firing within a cell's place field and a decrease in firing outside the place field.",
+      "claim_type": "EXPLICIT",
+      "source": "If the CS were able to trigger an arousal response, this would manifest as an increase in firing within a cell's place field (due to activation of place-specific firing) and a decrease in firing outside the place field (due to cessation of ripple-related firing).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical prediction based on known properties of place cells and brain states.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "8faa89ec-4c14-4bbb-a9a2-a3c07ad95a5a",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C41",
+      "claim": "In sitting animals, the CS activates place-specific firing, silences out-of-field firing, and abolishes ripples.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this hypothesis, we find that in sitting animals, the CS indeed activates place-specific firing, silences out-of-field firing, and abolishes ripples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "933dc1ed-7db0-4cb4-9822-fd1b7ef5284a",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C42",
+      "claim": "When the animal is already alert, such as during running, no additional modulation beyond normal place field firing is observed.",
+      "claim_type": "EXPLICIT",
+      "source": "When the animal is already alert, such as during running, we observe no additional modulation beyond normal place field firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "ab18ee71-5322-462d-ab5c-6085c8d009f1",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C43",
+      "claim": "The most parsimonious explanation of the experimental data is that dorsal CA1 neurons are all place cells and the apparent responses to the non-spatial stimuli are due to an arousal-mediated resumption of place-specific firing.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence the most parsimonious explanation of the experimental data is that dorsal CA1 neurons are all place cells and the apparent responses to the non-spatial stimuli are due to an arousal-mediated resumption of place-specific firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from all experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "66fae5c7-2bb5-4869-9542-d4ec5b65e6ef",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C44",
+      "claim": "Studies of inactive subjects in a fixed location would find that a subset of cells\u2014those with a place field overlapping the experiment location\u2014consistently increase their firing following the stimulus presentation.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies of inactive subjects in a fixed location, such as those with restrained animals (Berger et al., 1983; Weiss et al., 1996; Weible et al., 2006), would find that a subset of cells\u2014those with a place field overlapping the experiment location\u2014consistently increase their firing following the stimulus presentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the current findings applied to previous experimental paradigms.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "8105ae89-38ad-40fc-8bf2-7a1004d8436d",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C45",
+      "claim": "Any salient stimulus should be able to evoke hippocampal responses, regardless of whether the task is hippocampally dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, any salient stimulus should be able to evoke these hippocampal responses, regardless of whether the task is hippocampally dependent (Berger et al., 1983; Moita et al., 2003; Abe et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citations to Berger et al., 1983; Moita et al., 2003; Abe et al., 2014.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "9b33e9d8-5614-4d37-8a4b-7ac9971db230",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C46",
+      "claim": "The salience of the stimulus may change as the subject learns the predictive power of the stimulus, producing a stereotyped evolution of hippocampal activity across learning.",
+      "claim_type": "EXPLICIT",
+      "source": "The salience of the stimulus, and hence its ability to trigger alertness, may change as the subject learns the predictive power of the stimulus, producing a stereotyped evolution of hippocampal activity across learning (McEchron and Disterhoft, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citation to McEchron and Disterhoft, 1997.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "13f6e3d1-80bc-4551-af3f-68295693af2d",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C47",
+      "claim": "Manipulations that decrease the salience of the CS, such as habituation to the unpaired stimuli presented to control animals, would reduce the apparent response.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, manipulations that decrease the salience of the CS, such as habituation to the unpaired stimuli presented to control animals, would reduce the apparent response (Berger et al., 1976; Weiss et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction supported by citations to Berger et al., 1976; Weiss et al., 1996.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "55a69bb4-fdcd-45f0-8b4d-7068a854b03a",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C48",
+      "claim": "Previous studies have reported that the CS can reset the phase of hippocampal theta oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have also reported that the CS can reset the phase of hippocampal theta oscillations (Nokia et al., 2010; Darling et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Nokia et al., 2010; Darling et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "d3c4b3d3-6f40-4db5-b380-4a4bb1f1b681",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C49",
+      "claim": "The CS onset is not encoded by theta phase reset.",
+      "claim_type": "IMPLICIT",
+      "source": "Given the lack of CS-evoked firing rate changes while running, could the CS onset be encoded by this phase reset instead? Analogous to previous studies, we find evidence for an alignment of theta phase to the CS onset. However, a direct comparison of pre- and post-stimulus phase reveals that this effect is due to a slight perturbation of the ongoing theta phase (Figure 5). In particular, this analysis rejects the notion of theta reset to a specific phase.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the theta phase continuity analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "1a5c3781-9734-4761-8288-429b65d7747b",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C50",
+      "claim": "Theta phase perturbation is present in only one out of three animals, indicating that it is not necessary for performing the task.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this phase perturbation is present in only one out of three animals, indicating that it is not necessary for performing the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the variability in theta phase effects across animals.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "66c2b1af-d2aa-413e-9f8f-14c20abc17ab",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C51",
+      "claim": "There is no evidence that theta phase precession was affected by the CS onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we did not find evidence that theta phase precession was affected by the CS onset (Figure 5\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "823d09a0-1186-47d1-988c-3efecc09724e",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C52",
+      "claim": "The analysis does not rule out the possibility that the CS may modulate the degree of theta phase-locking across brain areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Note, however, that this analysis does not rule out the possibility that the CS may modulate the degree of theta phase-locking across brain areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the analysis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "a6e19719-9043-4a20-aa9a-40c1c2a1ffe8",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C53",
+      "claim": "Extensive lesion studies have demonstrated the critical importance of the hippocampus in trace eyeblink conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, extensive lesion studies have demonstrated the critical importance of the hippocampus in trace eyeblink conditioning (Kim et al., 1995; Takehara et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Kim et al., 1995; Takehara et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "ebe834fb-fc43-4ae4-b0af-eca0fc3383e9",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C54",
+      "claim": "CS-evoked changes in dorsal CA1 firing rates and theta phase are not necessary for task performance.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CS-evoked changes in dorsal CA1 firing rates and theta phase are not necessary for task performance\u2014these responses are absent during running, but performance is not impaired\u2014yet dorsally restricted lesions still produce learning deficits (Takehara et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental data and comparison with lesion studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "abc66188-6910-47a0-aefa-871822b0da87",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C55",
+      "claim": "Dorsally restricted hippocampal lesions produce learning deficits in trace eyeblink conditioning.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that CS-evoked changes in dorsal CA1 firing rates and theta phase are not necessary for task performance\u2014these responses are absent during running, but performance is not impaired\u2014yet dorsally restricted lesions still produce learning deficits (Takehara et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Takehara et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "ee0b2967-9bc1-4820-a420-16dc43b409c4",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C56",
+      "claim": "Dorsal hippocampal lesions may disrupt activity in other hippocampal areas (e.g. ventral CA1), which may contain genuinely CS-responsive neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "(1) Dorsal hippocampal lesions may disrupt activity in other hippocampal areas (e.g. ventral CA1), which may contain genuinely CS-responsive neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about possible explanations for the discrepancy between the current findings and lesion studies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "69e29590-156f-41b2-b641-47741bdf7090",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C57",
+      "claim": "The encoding of the CS may be more subtle than changes in firing rate, but still detectable by postsynaptic targets.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) The encoding of the CS may be more subtle than changes in firing rate, but still detectable by postsynaptic targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about possible explanations for the discrepancy between the current findings and lesion studies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "e9436778-9914-4b8a-af17-6403de2b233a",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C58",
+      "claim": "The critical engagement of the hippocampus may not occur only during the trial itself.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) The critical engagement of the hippocampus may not occur only during the trial itself. Memory consolidation is hippocampally dependent and proceeds without additional training (Takehara et al., 2003; Takehara-Nishiuchi and McNaughton, 2008), indicating that some eyeblink-related activity occurs well after the stimulus presentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citations to Takehara et al., 2003; Takehara-Nishiuchi and McNaughton, 2008.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "d863676f-3e87-47f9-80bd-34023857477d",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C59",
+      "claim": "Memory consolidation is hippocampally dependent and proceeds without additional training.",
+      "claim_type": "EXPLICIT",
+      "source": "Memory consolidation is hippocampally dependent and proceeds without additional training (Takehara et al., 2003; Takehara-Nishiuchi and McNaughton, 2008), indicating that some eyeblink-related activity occurs well after the stimulus presentation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Takehara et al., 2003; Takehara-Nishiuchi and McNaughton, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "7e9c42d3-705b-43c6-be6e-68a83fe1108d",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C60",
+      "claim": "The presence of ongoing place-specific firing may be necessary for learning space-invariant responses.",
+      "claim_type": "EXPLICIT",
+      "source": "(4) Even though spatial information may appear irrelevant in this task, the presence of ongoing place-specific firing may still be necessary for learning space-invariant responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about possible explanations for the discrepancy between the current findings and lesion studies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "ed2bff41-82d1-4e84-bef6-fa856fe6e27a",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C61",
+      "claim": "Awareness of the context may be necessary for the animal to attend to the appropriate stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, awareness of the context may be necessary for the animal to attend to the appropriate stimuli, or learning a context-dependent association may be a necessary stepping-stone to developing a space-invariant association (Nadel and Willner, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citation to Nadel and Willner, 1980.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "6e4e6379-7ebb-41cc-bbf6-aac0ba2c33e7",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C62",
+      "claim": "Learning a context-dependent association may be a necessary stepping-stone to developing a space-invariant association.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, awareness of the context may be necessary for the animal to attend to the appropriate stimuli, or learning a context-dependent association may be a necessary stepping-stone to developing a space-invariant association (Nadel and Willner, 1980).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citation to Nadel and Willner, 1980.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "8ad4f348-8fba-4096-98f9-b81081e63a9e",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C63",
+      "claim": "The dorsal hippocampus transmits exclusively spatial signals, even in a hippocampally dependent non-spatial task.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that the dorsal hippocampus transmits exclusively spatial signals, even in a hippocampally dependent non-spatial task, and constrain the ways in which it may contribute to memory processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from all experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "13e364c5-1760-445c-8d7e-4490dda9238c",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C64",
+      "claim": "It is important to account for brain state in studies where alertness changes may confound the observed selectivity to experimental stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments also highlight the importance of accounting for brain state in studies where alertness changes may confound the observed selectivity to experimental stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion about experimental methodology drawn from the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "6d777971-f4f4-476a-9b37-294038bd60c2",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C65",
+      "claim": "Three male Long-Evans rats, 3\u20135 months old at the time of surgery, were used in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded from three male Long-Evans rats, 3\u20135 months old at the time of surgery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "33b4837a-f215-4135-b2b6-0f31824e3c87",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C66",
+      "claim": "Each animal was chronically implanted with a differential pair of EMG recording wires in the left eyelid muscle, a pair of bipolar stimulation electrodes in the same area, and a microdrive array that allowed independent adjustment of 24 tetrodes.",
+      "claim_type": "EXPLICIT",
+      "source": "We chronically implanted each animal with a differential pair of EMG recording wires in the left eyelid muscle, a pair of bipolar stimulation electrodes in the same area, and a microdrive array that allowed independent adjustment of 24 tetrodes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "80ac31dd-4707-461e-99e9-c3a7ad5dbe07",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C67",
+      "claim": "In two animals (A and B), tetrodes were targeted to the right dorsal hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "In two animals (A and B), these tetrodes were targeted to the right dorsal hippocampus; animal C received a bilateral implant targeting the dorsal hippocampus in both hemispheres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "f7323ac3-0478-4da3-a6b0-0c3ef0af82a8",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C68",
+      "claim": "Animal C received a bilateral implant targeting the dorsal hippocampus in both hemispheres.",
+      "claim_type": "EXPLICIT",
+      "source": "In two animals (A and B), these tetrodes were targeted to the right dorsal hippocampus; animal C received a bilateral implant targeting the dorsal hippocampus in both hemispheres.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "6374edd6-29fe-4b95-b0c0-38993ab7f269",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C69",
+      "claim": "A 250 ms, 5 kHz tone was used as the CS.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a 250 ms, 5 kHz tone as the CS, a 250 ms stimulus-free trace interval, and 10 ms bipolar stimulation of the eyelid muscle as the US.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "fd23b58b-361a-4719-9e35-7c29e4fb04f8",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C70",
+      "claim": "A 250 ms stimulus-free trace interval was used.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a 250 ms, 5 kHz tone as the CS, a 250 ms stimulus-free trace interval, and 10 ms bipolar stimulation of the eyelid muscle as the US.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "33e78a30-36dc-415e-b0b8-000640dfe911",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C71",
+      "claim": "10 ms bipolar stimulation of the eyelid muscle was used as the US.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a 250 ms, 5 kHz tone as the CS, a 250 ms stimulus-free trace interval, and 10 ms bipolar stimulation of the eyelid muscle as the US.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "e8412159-4007-439e-b6b8-52beca55aa2f",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C72",
+      "claim": "Lesion studies in rats have shown that a 250 ms trace interval requires the hippocampus for successful acquisition.",
+      "claim_type": "EXPLICIT",
+      "source": "Lesion studies in rats have shown that this trace interval requires the hippocampus for successful acquisition (Weiss et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Weiss et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "ed6151a7-b1c4-439b-aa42-6d98c2dd62c8",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C73",
+      "claim": "Animals received between 38 and 186 eyeblink trials per training session (an average of 109).",
+      "claim_type": "EXPLICIT",
+      "source": "Animals received between 38 and 186 eyeblink trials per training session (an average of 109), depending on how much they ran on the track.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "b5f404b0-46b9-4153-802a-32fb74f300a0",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C74",
+      "claim": "All animals received two training sessions per day, at the beginning and end of the 12-hr light cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "All animals received two training sessions per day, at the beginning and end of the 12-hr light cycle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "dbc96c11-ca63-4791-a124-c5ea552c96eb",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C75",
+      "claim": "1585 single units were identified, of which 1264 were deemed to be putative pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These criteria identified 1585 single units, of which 1264 we deemed to be putative pyramidal cells based on firing rate (<4 Hz), spike width (>0.25 ms), and bursting (>5% of inter-spike intervals are <10 ms).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental data and analysis methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "3160d78f-aa07-47fa-af45-4623f8b4e021",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C76",
+      "claim": "Putative pyramidal cells were identified based on firing rate (<4 Hz), spike width (>0.25 ms), and bursting (>5% of inter-spike intervals are <10 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "These criteria identified 1585 single units, of which 1264 we deemed to be putative pyramidal cells based on firing rate (<4 Hz), spike width (>0.25 ms), and bursting (>5% of inter-spike intervals are <10 ms).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "28647410-7cb8-491e-82cf-77cc33b9eb4d",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C77",
+      "claim": "The study estimates that only 400\u2013500 unique pyramidal cells were recorded.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of these 1264 units is treated independently in our analysis, even though several are likely to be repeated observations of the same neuron. We estimate that we recorded only 400\u2013500 unique pyramidal cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an estimate based on the analysis of recorded units.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "6a2dac73-b8d3-408b-b0a7-1e6c84026d84",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C78",
+      "claim": "38% of cells were not active in this environment (i.e. did not have a place field with peak > 2 Hz).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 38% of cells were not active in this environment (i.e. did not have a place field with peak > 2 Hz), but this underestimates the actual fraction of silent cells, as we are unable to reliably cluster single units with an overall firing rate < 0.01 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "18c9b0e6-3113-4ebc-816c-9564d75f53b1",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C79",
+      "claim": "The 38% figure underestimates the actual fraction of silent cells, as the study was unable to reliably cluster single units with an overall firing rate < 0.01 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 38% of cells were not active in this environment (i.e. did not have a place field with peak > 2 Hz), but this underestimates the actual fraction of silent cells, as we are unable to reliably cluster single units with an overall firing rate < 0.01 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the analysis methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "51929082-bbb5-45a3-b706-2f7aaec3f961",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C80",
+      "claim": "87 cells increased their firing rate following the CS onset.",
+      "claim_type": "EXPLICIT",
+      "source": "We found 123 cells (10% of all pyramidal cells) that were significant at a p<0.01 level. Of these, 87 increased their firing rate and 36 decreased their firing rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "a5e2b4ff-1329-459c-af6b-5270c466a22d",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C81",
+      "claim": "36 cells decreased their firing rate following the CS onset.",
+      "claim_type": "EXPLICIT",
+      "source": "We found 123 cells (10% of all pyramidal cells) that were significant at a p<0.01 level. Of these, 87 increased their firing rate and 36 decreased their firing rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct report of experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "82662f01-595e-4dc1-9011-cb82894ddd11",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "claim_id": "C82",
+      "claim": "The statistical test for CS response should be interpreted as a heuristic measure only, as the influences of spatial tuning and brain state violate the test's assumption that samples are independent and identically distributed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this statistical test should be interpreted as a heuristic measure only, as the influences of spatial tuning and brain state violate the test's assumption that samples are independent and identically distributed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the statistical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "53f5c322-c79b-4c80-a3bf-d847b438a1b5",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "All dorsal CA1 pyramidal neurons recorded in this study are place cells. Of 1264 recorded pyramidal cells, 780 had directional place fields distributed throughout the linear track, while the remaining 484 had low firing rates everywhere, consistent with place cells lacking a place field in this environment. None of the 1264 cells responded to the CS in a purely non-spatial manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C18, C19, C37, C78, and C79 collectively support this result through comprehensive spatial mapping of all recorded neurons. The classification of all neurons as place cells (either active or silent in this environment) is well-documented with appropriate criteria (firing rate, spike width, bursting properties). The authors acknowledge detection limitations for very low-firing cells (C79), which strengthens rather than weakens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "dfe866b8-ca81-4774-8058-8d8b3dee9a5a",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Dorsal CA1 pyramidal neurons do not respond to the tone (CS) when the animal is moving. CS-evoked changes in firing rate are absent during running, and this lack of response does not impair task performance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C24, C26, and C42 provide converging evidence from neural recordings (Figures 3A, 3B) and behavioral performance data (Figure 3\u2014figure supplement 1). The dissociation between neural response and behavioral performance is critical and well-documented. The velocity thresholds for classifying 'running' vs 'sitting' are clearly defined (>10 cm/s vs <2 cm/s).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "0df82f4a-dc9c-4bbe-923a-57686f998e17",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "When the animal is inactive, apparent tone-evoked responses reflect an arousal-mediated resumption of place-specific firing. During sitting, pre-trial firing rates differ from spatially predicted rates due to ripple-associated activity, and the CS triggers cessation of ripples and realignment of firing with place field intensity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C25, C27, C28, C29, C30, C31, C32, and C41 form a coherent mechanistic explanation supported by multiple lines of evidence: ripple detection (Figure 4A), correlation between CS responses and ripple presence (Figure 4B-C), and quantitative analysis of firing rate alignment with place fields (Figure 3C). The arousal hypothesis is well-supported by the data showing that post-CS firing matches place field predictions while pre-CS firing does not.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "4fa770e0-a8c0-4942-9c51-c3e60caa2dfe",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "A cell's spatial tuning exerts strong influence on its response to non-spatial stimuli. The CS evokes increased firing when delivered within a cell's place field and silences the cell when delivered outside its place field. This correlation holds at both population and single-cell levels, indicating no CA1 neurons respond to the CS in a space-invariant fashion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C21, C22, and C23 are strongly supported by comprehensive spatial analysis (Figure 2C-F) showing correlation between place field intensity and CS-evoked firing at both population and single-cell levels. The use of Spearman's rank correlation (Figure 2F) is appropriate for this analysis. The exclusion of eyeblink trials from place field construction (C20) is a critical methodological strength that prevents circular analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "75a05ab1-e085-45e4-bb44-505075bbba68",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "While 10% of recorded cells (123/1264) showed statistically significant changes in firing rate following CS onset (87 increases, 36 decreases), none responded consistently across trials. The statistical significance should be interpreted as heuristic only, as spatial tuning and brain state violate independence assumptions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16, C17, C80, C81, and C82 provide appropriate statistical analysis with important caveats. The authors correctly identify that the Wilcoxon signed-rank test assumptions are violated (C82), which is a critical acknowledgment. The trial-by-trial variability analysis (Figure 1E-F) demonstrates that population-level statistics mask the lack of consistent single-trial responses, which is a key finding that challenges previous interpretations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "c094f2a6-41e9-489c-90fe-2015e22a88e6",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The CS does not reset hippocampal theta phase. While one of three animals showed sustained theta phase alignment to CS/US, the new phase remained highly correlated with pre-stimulus phase, indicating subtle phase shift rather than reset. This perturbation is not necessary for task performance as it was absent in two of three animals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33, C34, C35, C36, C49, C50, and C51 provide strong evidence against theta reset through careful phase continuity analysis (Figure 5E). The STFT-based approach with non-overlapping windows (Figure 5\u2014figure supplement 3) ensures independent pre- and post-stimulus phase estimates, which is methodologically sound. The variability across animals (only 1/3 showing the effect) combined with normal task performance in all animals strongly argues against necessity of theta phase effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "7bfcdcf6-4d6a-473f-8103-995895221a49",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The dorsal hippocampus (specifically CA1) transmits exclusively spatial information, even in this hippocampally dependent non-spatial task. The most parsimonious explanation is that dorsal CA1 neurons are all place cells and apparent responses to non-spatial stimuli are due to arousal-mediated resumption of place-specific firing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C43, and C63 represent the main conclusion, which is well-supported by the convergence of multiple lines of evidence: (1) all neurons are place cells, (2) CS responses are absent during running, (3) CS responses during sitting align with place field predictions, and (4) CS responses correlate with ripple cessation. The parsimony argument is strengthened by the ability to explain previous findings (C44) and predict outcomes under different experimental conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "a8b17d08-5262-495f-a72e-dd49141da900",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The conjunctive CS-place cell model is rejected because CS-evoked changes in firing rate disappear when the animal is running. Instead, the data support an arousal-mediated model where place cells exhibit place-specific firing when moving or alert, but different patterns during quiet wakefulness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38, C39, and C40 provide clear logical reasoning for rejecting the conjunctive model. The key observation that CS responses disappear during running (when place cells are most active) is incompatible with a model where cells encode CS-place conjunctions. The alternative arousal model makes specific, testable predictions (C40) that are confirmed by the data (C41).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "236db39c-2c78-4919-b7c8-1855d48ba394",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CS-evoked changes in dorsal CA1 firing rates and theta phase are not necessary for task performance, yet dorsally restricted hippocampal lesions produce learning deficits. The authors propose several speculative explanations for this apparent discrepancy, including involvement of other hippocampal areas, subtle encoding mechanisms, offline consolidation processes, or necessity of spatial context for learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54 and C55 establish an important tension between the current findings and lesion literature. However, claims C56-C62 are explicitly speculative and not tested in this study. While the speculation is reasonable and well-grounded in literature (C58, C59, C61, C62 cite supporting work), none of these alternative explanations are empirically evaluated. This represents an important limitation and direction for future work rather than a supported result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "6e83c661-51c1-4c87-8ccb-1422482cb9c1",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The arousal-mediated model can account for previously reported patterns of hippocampal activity in eyeblink conditioning. Studies with restrained animals would observe consistent CS responses in cells with place fields overlapping the recording location. Any salient stimulus should evoke responses regardless of task dependence, and stimulus salience changes during learning could produce stereotyped evolution of hippocampal activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44, C45, C46, and C47 provide testable predictions that reconcile current findings with previous literature. The prediction about restrained animals (C44) is particularly strong as it explains why previous studies found consistent CS responses. The predictions are well-grounded in cited literature (Berger et al., 1983; Moita et al., 2003; McEchron and Disterhoft, 1997), though C46 involves some speculation about learning-related changes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "0e845660-510b-4a68-8a22-58e466b4ad46",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "These experiments highlight the importance of accounting for brain state in studies where alertness changes may confound observed selectivity to experimental stimuli.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 represents an important methodological conclusion well-supported by the demonstration that apparent CS responses are actually brain state transitions. This has broad implications for interpretation of neural responses in behavioral tasks and is a significant contribution to experimental methodology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "ac4f14cc-9e81-4981-a245-c51545fc3461",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study recorded from 1264 putative pyramidal cells (estimated 400-500 unique cells) across three male Long-Evans rats using chronically implanted tetrode arrays in dorsal CA1. Animals were trained in trace eyeblink conditioning (250 ms tone CS, 250 ms trace interval, 10 ms eyelid stimulation US) while freely moving on a linear track, receiving 38-186 trials per session across two daily sessions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C65-C77 provide comprehensive methodological details that are clearly reported. The cell classification criteria (firing rate <4 Hz, spike width >0.25 ms, bursting >5%) are standard for pyramidal cell identification. The acknowledgment that 1264 units likely represent 400-500 unique cells (C77) due to repeated recordings is an important caveat. The trace interval duration is validated by citation to lesion studies (C72).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "45dc7d8d-6d98-4380-8221-9eab4a9982cc",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The introduction establishes the scientific context: the hippocampus is crucial for episodic memory in humans and spatial learning in rodents. Previous studies found that dorsal CA1 neurons can respond to non-spatial stimuli in trace eyeblink conditioning, but these studies did not characterize spatial tuning properties, leaving the functional significance controversial.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C7-C14 accurately represent established knowledge and prior work, supported by appropriate citations to foundational literature (Squire, 1992; O'Keefe and Nadel, 1978; Scoville and Milner, 1957; Berger et al., 1976, 1983; Weiss et al., 1996; Weible et al., 2006). The identification of the gap in previous studies (C14) provides clear motivation for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    },
+    {
+      "id": "9a0fcbc5-70bf-467f-8950-7847fc7b69c9",
+      "content_id": "4572e564-6eed-4df9-a809-2789098344bc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Previous studies reported that CS can reset hippocampal theta phase, but the current analysis does not rule out that CS may modulate the degree of theta phase-locking across brain areas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48 and C52 appropriately cite prior work (Nokia et al., 2010; Darling et al., 2011) and acknowledge limitations of the current analysis. The caveat in C52 is important as it recognizes that absence of evidence for theta reset does not preclude other forms of theta modulation that were not measured.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:41:41.136355Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b8c51834-1970-4f14-ae72-8431fa92d364",
+      "result_id": "53f5c322-c79b-4c80-a3bf-d847b438a1b5"
+    },
+    {
+      "claim_id": "7f3dde23-994e-4ee5-8be2-5aaa7593e932",
+      "result_id": "53f5c322-c79b-4c80-a3bf-d847b438a1b5"
+    },
+    {
+      "claim_id": "065801c1-928d-4eb1-8acf-cb49e409e0a2",
+      "result_id": "53f5c322-c79b-4c80-a3bf-d847b438a1b5"
+    },
+    {
+      "claim_id": "725d92c0-abe4-409d-a4b1-208496ded21c",
+      "result_id": "53f5c322-c79b-4c80-a3bf-d847b438a1b5"
+    },
+    {
+      "claim_id": "6a2dac73-b8d3-408b-b0a7-1e6c84026d84",
+      "result_id": "53f5c322-c79b-4c80-a3bf-d847b438a1b5"
+    },
+    {
+      "claim_id": "18c9b0e6-3113-4ebc-816c-9564d75f53b1",
+      "result_id": "53f5c322-c79b-4c80-a3bf-d847b438a1b5"
+    },
+    {
+      "claim_id": "fa38963d-4b2d-4413-8192-2697f826cc19",
+      "result_id": "dfe866b8-ca81-4774-8058-8d8b3dee9a5a"
+    },
+    {
+      "claim_id": "38dcbdef-237f-4021-9a02-d7cfafacb93a",
+      "result_id": "dfe866b8-ca81-4774-8058-8d8b3dee9a5a"
+    },
+    {
+      "claim_id": "1d0800df-74a2-4704-bbd3-98acfbf6804c",
+      "result_id": "dfe866b8-ca81-4774-8058-8d8b3dee9a5a"
+    },
+    {
+      "claim_id": "933dc1ed-7db0-4cb4-9822-fd1b7ef5284a",
+      "result_id": "dfe866b8-ca81-4774-8058-8d8b3dee9a5a"
+    },
+    {
+      "claim_id": "a36f5413-a220-47dc-a24b-3fdbdf4efa40",
+      "result_id": "0df82f4a-dc9c-4bbe-923a-57686f998e17"
+    },
+    {
+      "claim_id": "11633ba5-cbab-45bc-b443-1172889b1750",
+      "result_id": "0df82f4a-dc9c-4bbe-923a-57686f998e17"
+    },
+    {
+      "claim_id": "a680550d-a648-44fb-85d7-389f6bac3d7c",
+      "result_id": "0df82f4a-dc9c-4bbe-923a-57686f998e17"
+    },
+    {
+      "claim_id": "8d9ccec4-c8a9-48a6-8107-d415e9d7ca7c",
+      "result_id": "0df82f4a-dc9c-4bbe-923a-57686f998e17"
+    },
+    {
+      "claim_id": "552d9845-e177-4a89-9c48-09dfe7540a64",
+      "result_id": "0df82f4a-dc9c-4bbe-923a-57686f998e17"
+    },
+    {
+      "claim_id": "248582ac-ec6a-4848-8ad7-4d61884b50ea",
+      "result_id": "0df82f4a-dc9c-4bbe-923a-57686f998e17"
+    },
+    {
+      "claim_id": "759b3605-7673-4577-8f6a-1665130c6afc",
+      "result_id": "0df82f4a-dc9c-4bbe-923a-57686f998e17"
+    },
+    {
+      "claim_id": "558075ff-0fe2-4cc7-b3a8-c06a9cb0a5f6",
+      "result_id": "0df82f4a-dc9c-4bbe-923a-57686f998e17"
+    },
+    {
+      "claim_id": "8faa89ec-4c14-4bbb-a9a2-a3c07ad95a5a",
+      "result_id": "0df82f4a-dc9c-4bbe-923a-57686f998e17"
+    },
+    {
+      "claim_id": "849adc89-cf4a-4df8-932c-17f4fbbac68a",
+      "result_id": "4fa770e0-a8c0-4942-9c51-c3e60caa2dfe"
+    },
+    {
+      "claim_id": "c7a57e96-e439-4733-835f-ed58e681482a",
+      "result_id": "4fa770e0-a8c0-4942-9c51-c3e60caa2dfe"
+    },
+    {
+      "claim_id": "4f0ecfc3-2c92-430b-a3e2-90f48b686a0b",
+      "result_id": "4fa770e0-a8c0-4942-9c51-c3e60caa2dfe"
+    },
+    {
+      "claim_id": "07658619-08da-4700-b6a2-21c7e37109ad",
+      "result_id": "4fa770e0-a8c0-4942-9c51-c3e60caa2dfe"
+    },
+    {
+      "claim_id": "e9f23018-e332-471d-9117-0137540e48fc",
+      "result_id": "75a05ab1-e085-45e4-bb44-505075bbba68"
+    },
+    {
+      "claim_id": "c33136cd-1a67-43a6-a2d6-bb2625ab6e4e",
+      "result_id": "75a05ab1-e085-45e4-bb44-505075bbba68"
+    },
+    {
+      "claim_id": "51929082-bbb5-45a3-b706-2f7aaec3f961",
+      "result_id": "75a05ab1-e085-45e4-bb44-505075bbba68"
+    },
+    {
+      "claim_id": "a5e2b4ff-1329-459c-af6b-5270c466a22d",
+      "result_id": "75a05ab1-e085-45e4-bb44-505075bbba68"
+    },
+    {
+      "claim_id": "82662f01-595e-4dc1-9011-cb82894ddd11",
+      "result_id": "75a05ab1-e085-45e4-bb44-505075bbba68"
+    },
+    {
+      "claim_id": "29c49635-b38e-459b-89ff-94af4463f032",
+      "result_id": "c094f2a6-41e9-489c-90fe-2015e22a88e6"
+    },
+    {
+      "claim_id": "e0cd634f-4462-416b-93a9-9d9a99ae7ef7",
+      "result_id": "c094f2a6-41e9-489c-90fe-2015e22a88e6"
+    },
+    {
+      "claim_id": "892d22f1-78d5-4cff-b58d-b5af35c404d2",
+      "result_id": "c094f2a6-41e9-489c-90fe-2015e22a88e6"
+    },
+    {
+      "claim_id": "2bdb5200-58c1-4c37-85cb-3658aec70774",
+      "result_id": "c094f2a6-41e9-489c-90fe-2015e22a88e6"
+    },
+    {
+      "claim_id": "d3c4b3d3-6f40-4db5-b380-4a4bb1f1b681",
+      "result_id": "c094f2a6-41e9-489c-90fe-2015e22a88e6"
+    },
+    {
+      "claim_id": "1a5c3781-9734-4761-8288-429b65d7747b",
+      "result_id": "c094f2a6-41e9-489c-90fe-2015e22a88e6"
+    },
+    {
+      "claim_id": "66c2b1af-d2aa-413e-9f8f-14c20abc17ab",
+      "result_id": "c094f2a6-41e9-489c-90fe-2015e22a88e6"
+    },
+    {
+      "claim_id": "4736aac8-677e-4868-9ae0-e01174bc26d5",
+      "result_id": "7bfcdcf6-4d6a-473f-8103-995895221a49"
+    },
+    {
+      "claim_id": "ab18ee71-5322-462d-ab5c-6085c8d009f1",
+      "result_id": "7bfcdcf6-4d6a-473f-8103-995895221a49"
+    },
+    {
+      "claim_id": "8ad4f348-8fba-4096-98f9-b81081e63a9e",
+      "result_id": "7bfcdcf6-4d6a-473f-8103-995895221a49"
+    },
+    {
+      "claim_id": "f894a1f1-c10c-4baf-8fd7-69c3c1453bd2",
+      "result_id": "a8b17d08-5262-495f-a72e-dd49141da900"
+    },
+    {
+      "claim_id": "0b800b08-a3e1-4e2e-b3e1-726d1f08cd13",
+      "result_id": "a8b17d08-5262-495f-a72e-dd49141da900"
+    },
+    {
+      "claim_id": "b04f0bfb-c39e-41b4-befd-c11a5af3d77c",
+      "result_id": "a8b17d08-5262-495f-a72e-dd49141da900"
+    },
+    {
+      "claim_id": "ebe834fb-fc43-4ae4-b0af-eca0fc3383e9",
+      "result_id": "236db39c-2c78-4919-b7c8-1855d48ba394"
+    },
+    {
+      "claim_id": "abc66188-6910-47a0-aefa-871822b0da87",
+      "result_id": "236db39c-2c78-4919-b7c8-1855d48ba394"
+    },
+    {
+      "claim_id": "ee0b2967-9bc1-4820-a420-16dc43b409c4",
+      "result_id": "236db39c-2c78-4919-b7c8-1855d48ba394"
+    },
+    {
+      "claim_id": "69e29590-156f-41b2-b641-47741bdf7090",
+      "result_id": "236db39c-2c78-4919-b7c8-1855d48ba394"
+    },
+    {
+      "claim_id": "e9436778-9914-4b8a-af17-6403de2b233a",
+      "result_id": "236db39c-2c78-4919-b7c8-1855d48ba394"
+    },
+    {
+      "claim_id": "d863676f-3e87-47f9-80bd-34023857477d",
+      "result_id": "236db39c-2c78-4919-b7c8-1855d48ba394"
+    },
+    {
+      "claim_id": "7e9c42d3-705b-43c6-be6e-68a83fe1108d",
+      "result_id": "236db39c-2c78-4919-b7c8-1855d48ba394"
+    },
+    {
+      "claim_id": "ed2bff41-82d1-4e84-bef6-fa856fe6e27a",
+      "result_id": "236db39c-2c78-4919-b7c8-1855d48ba394"
+    },
+    {
+      "claim_id": "6e4e6379-7ebb-41cc-bbf6-aac0ba2c33e7",
+      "result_id": "236db39c-2c78-4919-b7c8-1855d48ba394"
+    },
+    {
+      "claim_id": "66fae5c7-2bb5-4869-9542-d4ec5b65e6ef",
+      "result_id": "6e83c661-51c1-4c87-8ccb-1422482cb9c1"
+    },
+    {
+      "claim_id": "8105ae89-38ad-40fc-8bf2-7a1004d8436d",
+      "result_id": "6e83c661-51c1-4c87-8ccb-1422482cb9c1"
+    },
+    {
+      "claim_id": "9b33e9d8-5614-4d37-8a4b-7ac9971db230",
+      "result_id": "6e83c661-51c1-4c87-8ccb-1422482cb9c1"
+    },
+    {
+      "claim_id": "13f6e3d1-80bc-4551-af3f-68295693af2d",
+      "result_id": "6e83c661-51c1-4c87-8ccb-1422482cb9c1"
+    },
+    {
+      "claim_id": "13e364c5-1760-445c-8d7e-4490dda9238c",
+      "result_id": "0e845660-510b-4a68-8a22-58e466b4ad46"
+    },
+    {
+      "claim_id": "d8311521-a863-4060-93f5-c14fb01dd3e4",
+      "result_id": "ac4f14cc-9e81-4981-a245-c51545fc3461"
+    },
+    {
+      "claim_id": "6d777971-f4f4-476a-9b37-294038bd60c2",
+      "result_id": "ac4f14cc-9e81-4981-a245-c51545fc3461"
+    },
+    {
+      "claim_id": "33b4837a-f215-4135-b2b6-0f31824e3c87",
+      "result_id": "ac4f14cc-9e81-4981-a245-c51545fc3461"
+    },
+    {
+      "claim_id": "80ac31dd-4707-461e-99e9-c3a7ad5dbe07",
+      "result_id": "ac4f14cc-9e81-4981-a245-c51545fc3461"
+    },
+    {
+      "claim_id": "f7323ac3-0478-4da3-a6b0-0c3ef0af82a8",
+      "result_id": "ac4f14cc-9e81-4981-a245-c51545fc3461"
+    },
+    {
+      "claim_id": "6374edd6-29fe-4b95-b0c0-38993ab7f269",
+      "result_id": "ac4f14cc-9e81-4981-a245-c51545fc3461"
+    },
+    {
+      "claim_id": "fd23b58b-361a-4719-9e35-7c29e4fb04f8",
+      "result_id": "ac4f14cc-9e81-4981-a245-c51545fc3461"
+    },
+    {
+      "claim_id": "33e78a30-36dc-415e-b0b8-000640dfe911",
+      "result_id": "ac4f14cc-9e81-4981-a245-c51545fc3461"
+    },
+    {
+      "claim_id": "e8412159-4007-439e-b6b8-52beca55aa2f",
+      "result_id": "ac4f14cc-9e81-4981-a245-c51545fc3461"
+    },
+    {
+      "claim_id": "ed6151a7-b1c4-439b-aa42-6d98c2dd62c8",
+      "result_id": "ac4f14cc-9e81-4981-a245-c51545fc3461"
+    },
+    {
+      "claim_id": "b5f404b0-46b9-4153-802a-32fb74f300a0",
+      "result_id": "ac4f14cc-9e81-4981-a245-c51545fc3461"
+    },
+    {
+      "claim_id": "dbc96c11-ca63-4791-a124-c5ea552c96eb",
+      "result_id": "ac4f14cc-9e81-4981-a245-c51545fc3461"
+    },
+    {
+      "claim_id": "3160d78f-aa07-47fa-af45-4623f8b4e021",
+      "result_id": "ac4f14cc-9e81-4981-a245-c51545fc3461"
+    },
+    {
+      "claim_id": "28647410-7cb8-491e-82cf-77cc33b9eb4d",
+      "result_id": "ac4f14cc-9e81-4981-a245-c51545fc3461"
+    },
+    {
+      "claim_id": "2446d94a-560e-4f3d-9356-51d4a8baa2be",
+      "result_id": "45dc7d8d-6d98-4380-8221-9eab4a9982cc"
+    },
+    {
+      "claim_id": "636847ca-db07-46ac-acac-889cd00a3ffc",
+      "result_id": "45dc7d8d-6d98-4380-8221-9eab4a9982cc"
+    },
+    {
+      "claim_id": "fed5965c-1783-420d-aca1-657aef2da2a1",
+      "result_id": "45dc7d8d-6d98-4380-8221-9eab4a9982cc"
+    },
+    {
+      "claim_id": "3719c211-9756-4ec6-a307-95b614fba6d0",
+      "result_id": "45dc7d8d-6d98-4380-8221-9eab4a9982cc"
+    },
+    {
+      "claim_id": "e9acfd35-1abf-4a55-8997-21d9e6c11240",
+      "result_id": "45dc7d8d-6d98-4380-8221-9eab4a9982cc"
+    },
+    {
+      "claim_id": "85a1d362-38ac-4708-9c77-b6b198be5d25",
+      "result_id": "45dc7d8d-6d98-4380-8221-9eab4a9982cc"
+    },
+    {
+      "claim_id": "eb96339f-37a7-496d-92f5-1f3594bca2b8",
+      "result_id": "45dc7d8d-6d98-4380-8221-9eab4a9982cc"
+    },
+    {
+      "claim_id": "1439bd2b-e963-4bbd-ac82-2d657ac13871",
+      "result_id": "45dc7d8d-6d98-4380-8221-9eab4a9982cc"
+    },
+    {
+      "claim_id": "8f4a6e20-7a1c-4253-8311-3005f3a8f2b1",
+      "result_id": "45dc7d8d-6d98-4380-8221-9eab4a9982cc"
+    },
+    {
+      "claim_id": "2322e375-4352-425f-b8fb-7436c1658050",
+      "result_id": "45dc7d8d-6d98-4380-8221-9eab4a9982cc"
+    },
+    {
+      "claim_id": "55a69bb4-fdcd-45f0-8b4d-7068a854b03a",
+      "result_id": "9a0fcbc5-70bf-467f-8950-7847fc7b69c9"
+    },
+    {
+      "claim_id": "823d09a0-1186-47d1-988c-3efecc09724e",
+      "result_id": "9a0fcbc5-70bf-467f-8950-7847fc7b69c9"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,1274 @@
+{
+  "submission": {
+    "id": "36a8a4df-0bdc-4444-9497-c05e87859313",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:53:43.504840Z",
+    "updated_at": "2025-11-29T21:53:43.504840Z"
+  },
+  "content": [
+    {
+      "id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "submission_id": "36a8a4df-0bdc-4444-9497-c05e87859313",
+      "content_type": "manuscript",
+      "content_text": "# Protein biogenesis machinery is a driver of replicative aging in yeast\n\n## Authors\n\n- Georges E Janssens<sup>1</sup>\n- Anne C Meinema<sup>2</sup>\n- Javier Gonz\u00e1lez<sup>3</sup>\n- Justina C Wolters<sup>4</sup>\n- Alexander Schmidt<sup>5</sup>\n- Victor Guryev<sup>1</sup>\n- Rainer Bischoff<sup>4</sup>\n- Ernst C Wit<sup>3</sup>\n- Liesbeth M Veenhoff<sup>1</sup> \u2020\n- Matthias Heinemann<sup>2</sup> \u2020\n\n### Affiliations\n\n1. European Research Institute for the Biology of Ageing, University Medical Center Groningen, University of Groningen Groningen The Netherlands\n2. Molecular Systems Biology, Groningen Biomolecular Sciences and Biotechnology Institute, University of Groningen Groningen The Netherlands\n3. Probability and Statistics, Johann Bernoulli Institute of Mathematics and Computer Science, University of Groningen Groningen The Netherlands\n4. Analytical Biochemistry, Groningen Research Institute of Pharmacy, University of Groningen Groningen The Netherlands\n5. Biozentrum, University of Basel Basel Switzerland\n\n\u2020 Corresponding author\n\n## Abstract\n\nAn integrated account of the molecular changes occurring during the process of cellular aging is crucial towards understanding the underlying mechanisms. Here, using novel culturing and computational methods as well as latest analytical techniques, we mapped the proteome and transcriptome during the replicative lifespan of budding yeast. With age, we found primarily proteins involved in protein biogenesis to increase relative to their transcript levels. Exploiting the dynamic nature of our data, we reconstructed high-level directional networks, where we found the same protein biogenesis-related genes to have the strongest ability to predict the behavior of other genes in the system. We identified metabolic shifts and the loss of stoichiometry in protein complexes as being consequences of aging. We propose a model whereby the uncoupling of protein levels of biogenesis-related genes from their transcript levels is causal for the changes occurring in aging yeast. Our model explains why targeting protein synthesis, or repairing the downstream consequences, can serve as interventions in aging.\n\n## Introduction\n\nAging, the gradual decrease in function occurring at the molecular, cellular, and organismal level, is a main risk factor for cardiovascular disease, neurodegeneration, and cancer (Niccoli and Partridge, 2012). Understanding its driving force is the required step towards enabling interventions that might delay age-related disorders (de Magalh\u00e3es et al., 2012). While this remains an unsolved problem in biology (Medawar, 1952; Mccormick and Kennedy, 2012), significant advances in the field have shown the process of aging to be malleable at both the genetic and environmental levels, indicating that it is possible for its causal elements to be dissected. The rate of aging, however, is influenced by diverse factors, including protein translation, protein quality control, mitochondrial dysfunction, and metabolism (Kennedy and Kaeberlein, 2009; Webb and Brunet, 2014; Lagouge and Larsson, 2013; Barzilai et al., 2012). The multitude of factors involved indicates that aging is a complex and multifactorial process, where ultimately an integrated and systems-level approach might be necessary to untangle the causal forces.\n\nImportant insights into the complex process of aging originate from research on the unicellular eukaryote Saccharomyces cerevisiae, which can produce 20\u201330 daughter cells before its death (Mortimer and Johnston, 1959, and see Wasko and Kaeberlein, 2014; Denoth Lippuner et al., 2014 for recent reviews). Significant contributions towards global mapping of the aging process have been demonstrated through transcriptome studies (Egilmez et al., 1989; Lin et al., 2001; Lesur and Campbell, 2004; Koc et al., 2004; Yiu et al., 2008) and genome-wide single-gene deletion lifespan measurements (reviewed in Mccormick and Kennedy, 2012). However, a major task remains to comprehensively describe the molecular changes that accompany the aging process. As the exponential increase in daughter cells represents a major challenge in terms of generating sufficient numbers of aged cells, to date no comprehensive description of the changes on both the proteome and transcriptome level has been provided. Assuming that the molecular changes occurring along the replicative lifespan of yeast are, in part, responsible for its decreased viability that occurs over time, we reason that revealing the dynamic and interdependent changes that accompany this process would allow us to distinguish cause from consequence in aging.\n\nHere, we developed a novel column-based cultivation method that allowed us to generate large numbers of advanced-age cells in a constant environment. Applying next-generation RNA sequencing and shotgun proteomics, we mapped the molecular phenotypes of aging yeast cells at 12 time points, well into advanced age where the majority of cells had died due to aging. Analysis of these dynamic and comprehensive datasets allowed us to identify a general uncoupling of protein levels from their corresponding messenger RNA (mRNA) levels. This uncoupling was most apparent in protein biogenesis-related proteins, which we found over-represented relative to their transcripts. Using computational network-based inference methods, we found that changes in these genes had the strongest ability to predict the behavior of other genes, thereby suggesting their causal role in replicatively aging yeast. On the basis of these analyses, we provide a systems-level model of aging unifying and integrating diverse observations made within the field.\n\n## Results\n\n### Novel culture and computational methods to determine aged cell phenotypes\n\nTo obtain aged yeast cells, we bound streptavidin-conjugated iron beads to biotinylated cells (adapted from Smeal et al., 1996) from an exponentially growing culture. This starting cohort of mother cells was put into a column containing stainless steel mesh that was positioned within a magnetic field (Figure 1A, Figure 1\u2014figure supplement 1). The daughter cells do not inherit the iron beads, as the yeast cell wall remains with the mother during mitosis (Smeal et al., 1996). By running a constant flow of medium through the column, we washed away the majority of emerging daughter cells. The flowing medium also provided fresh nutrients and oxygen and ensured constant culture conditions, as confirmed for pH, glucose, and oxygen levels (Figure 1\u2014figure supplement 2A\u2013C). By maintaining multiple columns simultaneously, we could harvest cells from the same starting cohort at different time points and thus at different replicative ages (Figure 1\u2014figure supplement 2D). Because we could retain up to 109 mother cells per column (Figure 1\u2014figure supplement 3), we could produce sufficient numbers of aged cells for performing parallel proteome and transcriptome analyses. Computer simulations showed that the age distribution broadened over time (Figure 1\u2014figure supplement 4A,B). The broadened age distribution results in a lower resolution making detecting the actual changes occurring at later time points more difficult, and we therefore harvested cells at exponentially increasing time intervals to maximize the differences between time points at later ages.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig1-v2.jpg)\n\n**Figure 1.:** (A) Schematic overview of the column-based cultivation and data analysis pipeline with 16 parallel columns, where (zoom in) mother cells\u00a0(M) containing streptavidin-bound (green triangles) iron beads (black circles) were captured on the magnetized column and aged under constant environmental conditions, while the\u00a0daughter cells (D)\u00a0were flushed away. Samples are collected in two replicate campaigns (R1, R2) at indicated time points in the lifespan. (B) Flow\u00a0cytometry-based assessment of viability of mother (Avidin-fluorescein isothiocyanate positive\u00a0[AvF]) and daughter (AvF negative) cells in R1 and R2, calculated for each time point comparing viable (propidium iodide\u00a0[PI] negative) versus inviable (PI positive) cells in harvested samples Mix 1\u20133 (see figure 2A for explanation of Mix 1\u20133). The solid black line represents cell viability in time measured for the same strain in the same media using a microfluidic device (Lee et al., 2012; data from Huberts et al., 2014,\u00a0was obtained from the authors). (C) Cell size is qualitatively assessed with median forward scatter of live mothers (AvF positive, PI negative) vs live daughters (AvF and PI negative). Dashed line represents the median forward scatter of young cells that have reached the fully-grown cell size to start their first division. (D) Aging was qualitatively assessed throughout the experiment by observing an increase in median WGA intensity over time in a population of primarily mothers (Mix 2) compared to a sample composed primarily of daughters flushed out of the column (Mix 3). Inset: bright field (BF) and fluorescence microscopy image of cell stained with AlexaFluor 633 conjugated wheat germ agglutinin (WGA), which selectively binds chitin in bud scars. Scale bar 5 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Prior to being loaded on the aging column, the yeast cells are labeled with membrane impermeable Sulfo-NHS-LC-Biotin (step 1, green triangles). The LC-linker in Sulfo-NHS-LC-Biotin has a spacer arm length of 22.4 \u00c5. The NHS-ester forms a covalent amide bond with primary amine groups in the lysines and at the N-termini of the yeast cell wall proteins. Streptavidin-coated magnetic beads (black circles, step 2) bind with high affinity to the biotin-labeled cells. (B) The side view of one column setup. Medium is pumped with a flow rate of 170 ml/h via air permeable silicone tubing (1) and a T-connector (2) into the magnetized column holding the magnetic-bead-coupled yeast cells (3). The medium leaves the magnetized column via the U-shaped tubing below the column (4), a T-connector (5) and the outlet tubing (6) into a waste jar (7). The medium level in the column is regulated with the air valve on top of the T-connector (2) in combination with the backpressure caused by medium in the U-shaped tubing after the column (4). To disrupt the steady laminar effluent flow, air was allowed to enter the system via T-connector (5). During incubation at the columns, the flow was started and clamp 1 (C. I) and clamp 3 (C. III) were open, while the air valve was closed (C. II). (C) The items used to build the setup are presented in a simplified two-dimensional view and listed in Figure 1\u2013source data 1 Table S1. (D) Three-dimensional view of the magnet\u2019s stand with two magnets present.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** The aging columns maintain constant oxygen (A) and glucose (B) concentrations and pH (C) during cultivation. Oxygen concentration was determined using the Optical Oxygen Meter Fibox 3 in both fresh medium and the column effluent (A). Glucose concentration was determined by enzyme-based assay Enzytec fluid D-Glucose (B). The pH of the medium was measured by a conventional pH-meter in fresh medium (t = 0h) and in the column effluent after 24\u00a0and 48\u00a0hr in duplicate (C). (D) Distribution of replicative ages of (n) cells in samples harvested at different time points as determined by counting bud scars in AlexaFluor 633\u00a0WGA-labeled cells. The bud scars were counted double blind from confocal z-stack images.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** The cell counts present in each mixed-cell sample harvested from each time point of the experiment. These values (along with fractional compositions present in Figure 2\u2014figure supplement 3B) were used to calculate the weighted lifespan curve presented in Figure 1B.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Due to biological cell-to-cell variation in cell division rates, the age distribution of a starting cohort of cells increases at later time points. This results in an increasing overlap of ages in the mother cell populations harvested at later time points, as modeled for a starting cohort of 1000 cells (see methods: Harvesting time points). The age is indicated as the replication life span\u00a0(RLS). (A) shows the distribution of mother cell ages in samples harvested at indicated equally spaced time points, (B) shows the distribution when samples are harvested at exponentially spaced time points, minimizing the overlap of information between neighboring samples.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig1-figsupp5-v2.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) Cells were stained with fluorescein isothiocyanate conjugated avidin (AvF), which only labels cells coming from the initial biotin-labeled cohort (see Figure 1\u2014figure supplement 1A), and with PI, which is permeable only to dead cells and fluoresces upon intercalation with DNA. (B) Analyzing the stained samples on a flow cytometer clearly distinguishes the populations of dead or alive mother cells and dead or alive daughter cells, based on fluorescence emission. Quantification of these populations gives the fractional compositions of each mixed-cell sample (Mix 1\u20133 in Figure 2\u2014figure supplement 3) collected per time point. SSC-A is the side scatter area, FCS-A is theforward scatter area, FL1-A is the fluorescein emission peak area, FL3-A is the PI fluorescence emission peak area.\n\nTo assess whether our column-based cultivation method generated correctly aged cells in a reproducible manner, we developed flow cytometric assays to determine the typical phenotypes of aging cells. Avidin-fluorescein isothiocyanate (AvF) binding to the biotin-labeled cells distinguished the starting cohort of mother cells from daughter cells (Figure 1\u2014figure supplement 5A). Dead cells were identified using propidium iodide (PI), which fluoresces upon intercalating with the DNA of membrane-permeable dead cells (Figure 1\u2014figure supplement 5A). These two assays were used to determine the fractions of daughters, mothers, and dead cells in a population (Figure 1\u2014figure supplement 5B). From this data, we derived the viability of the mother cells over time, which we found to be in excellent agreement with the lifespan curve of yeast as observed in a microfluidic device (Huberts et al., 2014) (Figure 1B). Using the forward scatter of the flow cytometer as a rough proxy for cell size, we could qualitatively observe the cell size increase of live mothers that is known to occur in aging mother cells (Egilmez et al., 1990)\u00a0(Figure 1C). Similarly, using fluorophore-conjugated wheat-germ agglutinin, which labels bud scars that appear after every division (Powell et al., 2003), we observed an increase of bud scar staining on mother cells in the column, as also visualized by confocal microscopy (Figure 1D, Figure 1\u2014figure supplement 2D). These analyses confirmed known changes that characterize aging yeast: increased cell size and bud scars, and decreased population viability (Figure 1B\u2013C).\n\nNext, we developed a combined experimental and mathematical method to determine the molecular phenotype of aging mother cells without contributions from daughter or dead cells. The approach exploits the fact that a system of linear equations can be solved when the number of unknowns equals the number of independent equations. Specifically, while we could determine the number of mothers, daughters, and dead cells in a sample using flow cytometry, the contribution of each type of cells to the measured abundance of a particular protein or transcript was unknown. Therefore, by measuring protein and transcript abundances in three mixed samples with various proportions of mothers, daughters, and dead cells, we could mathematically un-mix the abundances. This resulted in un-mixed data for the aging mother cells. Experiments using samples containing mixed cell populations with known molecular phenotypes validated this mathematical un-mixing method for the RNA sequencing (RNAseq) transcriptome, targeted (selected reaction monitoring) proteome, and global (shotgun) proteome data with a <16% average error (Figure 2\u2014figure supplement 1 and 2; Supplementary file 1).\n\nTo use this data un-mixing approach, we harvested three mixed samples for each time point (Figure 2A, Figure 2\u2014figure supplement 3). One sample was collected from the column effluent (Mix 3, mainly daughter cells). Harvesting all cells from the column and applying a further enrichment step on a larger magnet produced the two other samples: one sample contained mainly aged mother cells (Mix 2, 80\u201399% mothers), while the other contained an intermediate composition compared to Mixes 2 and 3 (wash fraction, Mix 1). In each of these mixed-cell samples, we determined the fraction of mothers, daughters, and dead cells and generated the mixed-population proteomes and transcriptomes. Then, we mathematically un-mixed the proteomes and transcriptomes to obtain the molecular phenotype of aging mother cells. The data was corrected for sampling artefacts related to bead labeling and cell harvesting (Figure 2\u2014figure supplement 4;\u00a0supplemental notes 2 and 3 in Supplementary file 1). Together, through this approach, we obtained pure data for aging mother cells and daughter cells.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig2-v2.jpg)\n\n**Figure 2.:** For each time\u00a0point in the aging experiment, three samples (mixed-cell samples 1,2,3; originating from different harvesting steps) composed of different fractions of Mother\u00a0(M,\u00a0green), Daughter\u00a0(D,\u00a0blue) and Dead\u00a0cells (De,\u00a0red) were harvested and analyzed. On the basis of the compositions of the mixed-cell samples (wM, D, De) and the determined proteome or transcriptome data of the mixed-cell samples (Amix1,2,3), with the mathematical un-mixing, we obtained un-mixed data (AM, D, De) over the time course of 72 hr from two replicates. See Figure 1\u2014figure supplement 5 for details about determining the composition of the mixed-cell samples and Figure 2\u2014figure supplement 3 for the un-mixing method. Data from proteome (B) and transcriptome (C) replicates highly correlated (Spearman correlation >0.85) for M (circles) and D cells (squares), indicating high reproducibility of the experimental and data processing pipelines. (D, E) Levels of random chosen proteins (D) and transcripts (E) from both replicate measurements (gray) and the fit (solid line) are indicated for un-mixed mother data. Raw abundance is a measure of mass\u00a0spectrometry\u00a0(MS) peak intensities (proteome) or fragments per kb of transcript per million mapped\u00a0(FPKM) reads (transcriptome).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Schematic representation of samples used for validation of the mathematical un-mixing procedure, taken from fermenter-grown yeast. Log-phase represents mid-exponential growth of the culture (L), deceleration phase represents a decreased growth rate around the diauxic shift (D), and stationary phase is a nutrient deprived culture (S). Each phase of cultivation has a unique transcriptional and proteomic signature. (B) The abundance of 207 proteins was measured with targeted selected reaction monitoring\u00a0(SRM) proteomics in the samples L, D and S, and in three mixed-cell samples composed of different ratios of L, D, and S. The protein abundance in the pure samples and the abundance derived after mathematical un-mixing of the data obtained from the mixed cell-sample is shown for 10 representative proteins of the 207 proteins. (C) As in B, for all 207 proteins.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) As in Figure 2\u2014figure supplement 1C but now for proteome data obtained by shotgun proteomics. The Pearson correlations are as high as 0.989, 0.992, and 0.993, for log, deceleration, and stationary phase samples, respectively, in the log2 scale (top panels). Bottom panels show the relative errors for all proteins quantified; the abundance of the indicated number of proteins is recovered with less than 20% relative error. (B) As in (A) but here for the messenger RNA sequencing\u00a0(mRNAseq) transcriptome data showing Pearson correlations of 0.945, 0.956, and 0.801 for log, deceleration, and stationary phase samples, respectively, in the log2 scale (top panels). The indicated numbers of transcripts were recovered with less than 20% relative error (bottom panels). All abundances are plotted on a log2\u00a0scale.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) I. A cohort of cells with cell-wall attached beads is maintained in the magnetized column (magnet 1) and harvested at set time points (column fraction) when also a fraction with mainly daughter cells is collected (column effluent, mix 3). II. The harvested column fraction was applied for further enrichment on \u2018The Big Easy\u2019 EasySep Magnet (magnet 2). The bead-labeled aged cells stay in the glass tube, while the non-bead-labeled young cells are removed by pipetting. This wash is repeated three times, resulting in a sample enriched for mothers (mother enriched; mix 2), and a wash fraction (wash, mix 1). The fractional population sizes of these three mixes, schematically represented in III, were determined (See Figure 1\u2014figure supplement 5) before storage at \u221280\u00b0C. (B) The measured compositions of mother, daughters, and dead cells present in each mixed-cell sample harvested from each time point of the experiment. These fractional compositions were used in the mathematical un-mixing procedure. (C) Example of the mathematical un-mixing procedure: Hsp104 protein abundances (mass spectrometry\u00a0[MS] peak intensity) for each time point in each of the mixed-cell samples (left panel) and the resulting un-mixed abundances visualized as fold changes on a log2\u00a0scale (right panel).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** The effect of the beads on the proteome was highly reproducible, regardless of the number of beads per sample, and was unrelated to other biological stimuli applied on the cells. (A) Samples generated at different steps during biotinylation, bead labeling, and harvesting were assessed for their similarity to a sample that has undergone all processing steps (sample D), as would the starting (bead labeled) sample of the experiment. Using targeted (SRM) proteomics focusing on 74 proteins known to be either strongly affected or not affected when comparing a processed to an unprocessed sample, we found that the presence of beads alone within a sample (sample G) was enough to match the starting bead-labeled sample (sample D). The process of bead labeling itself (sample \u2018H\u2019, where bead labeling conditions were mimicked) yielded proteomes that bore little resemblance to our bead-containing samples. (B) Cells and bead counts from flow cytometry. A cohort of 4.0\u00d7108 cells (pink bar, left) was labeled with beads, by adding a known number of beads (4.8\u00a0\u00d7\u00a0108 beads, pink bar , right ). The number of beads attached to a biotinylated cell population (1.2\u00a0\u00d7\u00a0108) is the difference between free beads before (4.8\u00a0\u00d7\u00a0108 beads, pink bar, right) and after bead\u00a0labeling (3.6\u00a0\u00d7\u00a0108 cells, gray bar, right). The number of cells with at least one bead was counted after bead labeling and cell enrichment on a magnet (after bead labeling, 1.2\u00a0\u00d7\u00a0108, gray bar, left). The yield was\u00a0on average 1.1 beads/cell. (C) The number of free beads and beads attached to the cells was determined for each sample with flow cytometry. The ratio of bead to cells increased maximally two\u00a0fold in both replicates, most likely due to the detachment of cells from beads while being cultivated in the aging columns. (D) To study the effect of a small increase in bead concentration per sample we mixed unprocessed cells with different numbers of beads and performed targeted (selected reaction monitoring\u00a0[SRM]) proteomics, using the same 74 proteins for assessment. The median of the measured peak intensities decreased with an increase of beads per sample, indicating a loss of proteins. (E) Nonetheless, we found that varying the amount of beads in the sample in the range relevant to the aging experiment, did not alter the degree to which the sample was changed by the presence of the beads. The Pearson correlation of these samples to the standard (1.06 beads/cell) was higher than the correlation between two replicates of the standard. We conclude that the bead effect is highly reproducible, and can be redressed with a correction factor specific to each protein (See Supplementary file 1).\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig2-figsupp5-v2.jpg)\n\n**Figure 2\u2014figure supplement 5.:** Detailed view of the experimental pipeline to depict number of samples collected and data processing steps. Up to 16 columns could be run simultaneously (cartoon of red magnet with column) and harvested throughout the aging procedure (cartoon of lifespan curve, fraction surviving at each age). Time points were exponentially spaced, and covered by two partially overlapping replicate campaigns (R1 and R2, dots showing time points), of 14 and 8 time points, respectively. For each time point, either two or three samples were required for mathematical un-mixing of the population, that is, early time points (blue dots), contained mainly live mother and daughter cells, without mortality in the population, and therefore required only two samples for the mathematical un-mixing of two unknowns. While later time points (red dots), contained increasing levels of dead cells, and required three samples for the mathematical un-mixing of three unknowns. Replicate 1 consisted of an unprocessed sample, five time points requiring two samples for un-mixing, and 9 time points requiring three samples for un-mixing, totaling 38 samples. Replicate 2 had in the same way 23 samples, and together the two replicates consisted of 61 samples, which were processed with shotgun proteomics and RNA sequencing\u00a0(RNAseq) transcriptomics. After \u2018omics\u2019 data was collected, a bead correction was applied to proteome data coming from samples containing beads (see methods), and quality assessment of sequencing data removed four sets of samples from the transcriptome (see methods). The subsequent 61 proteome samples and 50 transcriptome samples were used for mathematical un-mixing, which resulted in mother-specific data for the proteome (R1, 15 time points, and R2, 9 time points) and transcriptome (R1, 12 time points, R2, 8 time points). Corresponding daughter-specific data also resulted from the un-mixing procedure (not depicted in schematic). Finally, a reference time point was selected (7.8 hr, see Materials\u00a0and\u00a0methods) and the replicate datasets were merged to produce a single time series, for each of the proteome and transcriptome, spanning 12 time points throughout the replicative lifespan of the cells.\n\n![Figure 2\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig2-figsupp6-v2.jpg)\n\n**Figure 2\u2014figure supplement 6.:** (A) The coefficient of variation was calculated between the replicate datasets for each gene-product profile and a cutoff of 0.3 was used to select the most reproducible expression profiles between replicates, consisting of \u223c90.9% of the proteome, and \u223c84.4% of the transcriptome datasets. (B) Example of a gene profile having a coefficient of variation of 0.1 (top panels) and coefficient of variation of 0.3, which just failed the cutoff for being included in the dataset (bottom panels). Data shown for both proteome (left panels), and transcriptome (right panels), with each replicate measurement (gray) and the fit (colored line).\n\nIn two experimental series with overlapping time points, we generated 61 samples for both the proteome and the transcriptome as required for un-mixing. After data processing, we obtained high quality data at 12 unique time points during the lifespan of replicatively aging yeast (Figure 2\u2014figure supplement 5). We found the replicates to be in excellent agreement (Spearman correlations >0.85) (Figure 2B,C). A unified dataset was generated for both the proteome and the transcriptome by fitting the replicate datasets with a polynomial regression (Figure 2D,E), only\u00a0retaining highly reproducible expression\u00a0profiles (\u223c85% of genes, Figure 2\u2014figure supplement 6), and resampling the fit at the actual time points of the experiment. This yielded profiles for 1494 proteins and 4904 transcripts from aging mother cells. The raw data (Janssens et al., 2015a; Janssens et al., 2015b)\u00a0and the data for each processing step are provided in the supplementary Tables S2 and S3 (Figure 2\u2014source data 1 and 2). The final datasets for aging mother cells are presented in Table S4 (proteome) and Table S5 (transcriptome) (Figure 2\u2014source data 3 and 4).\n\n### Biogenesis proteins increase relative to transcript levels during aging\n\nCorrelation analyses between the proteomes of young cells and the proteomes of aging mother cells confirmed the expected divergence of the aging cell away from the youthful state (Figure 3A, Figure 3\u2014figure supplement 1). Daughters from later time points showed a partially aged signature (Figure 3\u2014figure supplement 2), consistent with the notion that rejuvenation of daughter cells is incomplete later in a mother\u2019s life\u00a0(Kennedy et al., 1994). Furthermore, we found agreement between specific proteome changes detected by us and observations present in literature, including changes related to glycolysis, gluconeogenesis (Lin et al., 2001), increased expression levels in energy reserve pathway proteins (Levy et al., 2012), increases in stress response protein levels (Erjavec et al., 2007; Crane et al., 2014), and mitochondrial changes (Hughes and Gottschling, 2012) (Figure 3B, Figure 3\u2014figure supplement 3). Also, we confirmed that changes detected in our population-level study similarly occurred at the single-cell level, which excluded the possibility that our observed changes may reflect a gradual enrichment of a long lived subpopulation. Specifically, we see the levels of the stress-related chaperone Hsp104 and the translation elongation factor Tef1 to increase with age (Figure 3\u2014figure supplement 4), similar to what was shown using a microfluidic platform tracking single cells (Zhang et al., 2012). Also, other single protein changes reported to occur in literature match well (Koc et al., 2004; Lee et al., 2012; Hughes and Gottschling, 2012; Zhang et al., 2012; Lord et al., 2015; Denoth-Lippuner et al., 2014; Eldakak et al., 2010; Sun et al., 1994) (Figure 3\u2014figure supplement 4). Together, these observations confirm the validity of our novel experimental design.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig3-v2.jpg)\n\n**Figure 3.:** (A) The Spearman correlation at progressive time points compared with the young reference sample for the mother and daughter proteome shows a divergence away from a youthful state for the mother. (B) The numbers of proteins changing by at least twofold from the reference (young) sample per time point. Blue and red bars and text represent changes that had not occurred previously, either up- or down-regulated, respectively. Gray bars and text are changes that already occurred at a previous time point. Gene functional enrichments per grouped time points were derived from Gene Ontologies\u00a0(GO) and are scaled with significance of enrichment obtained by database for annotation, visualization and integrated discovery\u00a0(DAVID) bioinformatics resource version 6.7 (scaling\u00a0of\u00a0text: DAVID enrichment score see Materials and methods and Table S6 (Figure 3\u2014source data 1).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Similar to Figure 3A, but for transcriptome. The Spearman correlation of the transcriptomes of mother and daughter cells at different time point compared to that of a reference (young) time point sample.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Heat maps (with row clustering based on Euclidean distance) showing changes for daughter profiles of each mother-age dependent time point for both proteome (A) and transcriptome (B). Gene functional enrichments were determined using database for annotation, visualization and integrated discovery\u00a0(DAVID) version 6.7 and summarized into representative terms (see\u00a0Materials\u00a0and methods section for details). The enrichment score provided by DAVID for the summarized terms were used as a size-scaling factor for the text, with larger words being more significantly enriched (scaling\u00a0of\u00a0text: DAVID enrichment score). Enriched terms are shown next to each respective heat map, for genes changing by at least twofold when comparing the daughter coming from the oldest mother age, to the daughter coming from the youngest mother age. This resulted in 33 genes twofold up-regulated and 40 genes twofold down-regulated in the proteome of 1494 proteins, and 31 genes up-regulated and 190 genes down-regulated in the transcriptome of 4904 transcripts. Fold changes are plotted on a log2 scale.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Proteins contributing to the enrichment score for \u2018stress\u00a0response\u00a0(general)\u2019, or \u2018glycolysis/gluconeogenesis\u2019 that were increasing more than twofold with age, or proteins contributing to the enrichment score for \u2018mitochondria\u00a0(general)\u2019 and \u2018DNA\u00a0replication\u2019 that were decreasing more than twofold with age were selected for visualization (from Figure 3B). The fold changes are plotted on a log2\u00a0scale.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig3-figsupp4-v2.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Assessing the protein dynamics on the single cell level that were reported in the literature to occur in aging yeast shows agreement with our global-scale proteome dataset. Specifically, we see protein levels of the stress-related chaperone Hsp104 and the translation elongation factor Tef1 to increase with aging as was shown using a microfluidic platform tracking single cells [Zhang et al., 2012]. Using another microfluidic platform and green fluorescent protein\u00a0(GFP)-tagged Vph1 protein as a marker for the vacuole, it was found that the vacuole increased in size more rapidly than the cell itself, suggesting a net increase of Vph1 protein levels to occur in the aging cell [Lee et al., 2012]. Our data shows Vph1 levels to increase with aging, in line with these observations. Furthermore, our proteome also captures the subtle changes described to occur with the Tpo1 protein and aging, where a computational model based on production and inheritance of the protein throughout aging predicted Tpo1 levels to initially increase and then gradually decrease with age [Eldakak et al., 2010]. A recent study looking at protein abundances in young and old whole-cell extracts found that levels of the nucleoporins Nup116 and Nsp1 decrease with age, while Nup100 and Nup53 did not change significantly [Lord et al., 2015], and for one other nucleoporin, Nup170, was shown that the levels increase with aging [Denoth-Lippuner et al., 2014], which we all also detect in our proteome data (Figure 7D). Three proteins whose overexpression results in extended lifespan in yeast, Ras2 [Sun et al., 1994], Mxr1 [Koc et al., 2004], and Vma1 [Hughes and Gottschling, 2012] were observed to decrease with age. Literature references are according to main text reference numbering.\n\nTo obtain further insights into the global changes in protein expression in mother cells, we plotted our dynamic data as heat map expression profiles. We found that changes started at young age, were gradual, and mostly occurred in one direction (i.e. up, down) (Figure 4A,B). Specifically, we found that 64% (184/288 total changes) of the proteins that showed a twofold change by the end of the yeast lifespan also showed a significant change in the same direction at an earlier time point (Figure 3B). These findings suggest that aging is a gradual process occurring from early on.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig4-v2.jpg)\n\n**Figure 4.:** (A) Expression profiles for the proteome were clustered using the Ward clustering algorithm and plotted in a dendrogram. Visualization of the most prominent (red line in dendrogram) protein fold change profiles (log2 scale) occurring with age, showing up-regulated (cluster 1), down-regulated (cluster 2) and mainly flat (cluster 3) profiles. Gene functional enrichments per grouped time points were summarized into representative terms as in Figure 3B. (B) Unidirectional changes occurring with aging are illustrated with a heat map of the fold changes (log2 scale) of proteins in the aging mother compared to the young reference sample.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Heat maps (with row dendrograms based on Euclidean distance) of proteome (top panel) and transcriptome (bottom panel) time series data, plotted as fold changes on a log2\u00a0scale. (B) The raw abundances (log2\u00a0scale) for the proteome and transcriptome are plotted against one another for young (left panel, age 7.8 hr) and old (right panel age 72 hr) cells.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A)\u00a0The numbers of transcripts changing by at least twofold from the reference (young) sample per time point. Red and blue bars or text represent changes that had not occurred previously, either up- or down-regulated, respectively. Gray bars or text are changes that already occurred at a previous time point. Gene functional enrichments per grouped time points were derived from Gene Ontologies\u00a0(GO) and are scaled with significance of enrichment obtained by database for annotation, visualization and integrated discovery\u00a0(DAVID) version 6.7 (scaling of text: DAVID enrichment score). (B) Profiles that contribute to the enrichments of transcript changing more than twofold. Transcripts contributing to the enrichment score for \u2018integral\u00a0to\u00a0membrane\u2019, or \u2018sporulation\u2019 that increased more than twofold with age, or transcripts contributing to the enrichment score for \u2018mitochondria(respiration)\u2019 and \u2018mitochondria(translation)\u2019 that decreased more than twofold with age were selected for visualization (from A). The fold changes are plotted on a log2\u00a0scale.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig4-figsupp3-v2.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Expression profiles for the transcriptome were clustered using the Ward clustering algorithm and plotted in a dendrogram. Three expression profile groups were selected for characterization (red vertical line). (B) The three most prominent profile expression clusters for the transcriptome , showing mainly down-regulated (cluster 1 and 2) and up-regulated (cluster 3) profiles. Gene functional enrichments per grouped time points were summarized into representative terms as in Figure 3B. In one case (asterix, \u2018translation regulation\u2019), the enrichment value was scaled down (from 10.2) to the score of the next most enriched term (5.0), for better legibility of the other terms (with first three letters kept on the original scale). Transcript fold changes are plotted on a log2 scale.\n\nWe next investigated whether these changes in the proteome data matched transcriptional changes. Interestingly, the RNAseq data showed similar gradual and unidirectional changes occurring from the beginning on (Figure 4\u2014figure supplement 1A,2,3). To compare the changes between the proteome and transcriptome, we determined the non-parametric Spearman rank correlation, and found a starting correlation of 0.75, a value in agreement with other single-study comparisons between yeast proteomes and transcriptomes (Cs\u00e1rdi et al., 2015). When comparing this correlation in time, however, we found that it declined steadily with age, down to a correlation of 0.70 (Figure 5A). This decreasing trend was observed regardless of the statistical method used (Figure 5\u2014figure supplement 1). Furthermore, this trend is also not an experimental artefact, since samples originating from all time points were treated identically, and both proteome and transcriptome datasets originated from the same biological samples. The decrease in correlation between the proteome and transcriptome means that they do not change synchronously. Indeed, during aging, we found different Gene Ontology (GO) terms to describe the changes in the proteins and transcripts that show a larger than two-fold change during aging (Figure 3B vs. Figure 4\u2014figure supplement 2A). These results indicate that, over time, protein levels were increasingly uncoupled from their transcript levels.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig5-v2.jpg)\n\n**Figure 5.:** (A) A progressive uncoupling of the proteome from the transcriptome in time is apparent from the decreasing Spearman correlation between the two. (B) Co-expression map showing fold changes (log2) of 72\u00a0hr aged samples compared to the young reference, plotting the proteome versus the transcriptome. Quadrants 1 and 3 (Q1 and Q3) represent changes where the protein changes match their transcript changes (coupled), while quadrants 2 (Q2) and Q4 (Q4) reflect opposite changes (uncoupled). Summarizing terms per quadrant are derived from Gene Ontologies\u00a0(GO) as in Figure 3B (scaling\u00a0of\u00a0text: DAVID enrichment score).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Comparison of the proteome versus the transcriptome using the dataset of genes in common between the two. Using Pearson correlation on the raw data, Pearson correlation on log2 transformed data, or Spearman or Kendall correlations on the raw data, show similar results: a decreasing correlation of the proteome and transcriptome with age.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Co-expression map as in Figure 5B, showing fold changes of proteins and transcripts at 10.7, 22, 45.4, and 72.3\u00a0hr aged time points compared to the young (7.8\u00a0hr) reference sample. Genes contributing to enrichment scores of the most enriched processes per quadrant at 72.3\u00a0hr of aging (sterol\u00a0biosynthesis from Q1, translation\u00a0regulation from Q2, cortical\u00a0actin\u00a0cytoskeleton from Q3, and endoplasmic\u00a0reticulum from Q4) are shown highlighted for each time\u00a0point to illustrate their changes. The fold changes are plotted on a log2\u00a0scale.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig5-figsupp3-v2.jpg)\n\n**Figure 5\u2014figure supplement 3.:** The fold change in abundance of a protein compared to a reference (young) sample, minus the fold change of its transcript, gives a quantity for its relative overabundance. Plotted in time are the summed values for the gene products per quadrant of the co-expression map in Figure 5B (gray points), and for all genes of the entire plot summed (black points). This shows a net increase over time of total relative protein overabundance, and a distinct behavior per quadrant.\n\nTo identify the most uncoupled cellular processes, we plotted the fold-changes of transcript and protein expression in old and young cells on a gene product co-expression map (Figure 5A). The transcript and protein levels of genes in quadrants 1 (Q1) and 3 (Q3) were \u2018coupled\u2019, meaning that the changes in protein levels followed the changes in transcript levels. Q1 and Q3 were enriched in gene products related to sterol biosynthesis and cytoskeletal and cell wall processes, possibly related to cell growth. In contrast, the expression of gene products in quadrants 2 (Q2) and 4 (Q4) were \u2018uncoupled\u2019, meaning that the changes in protein levels did not follow the changes in transcript levels. In Q2, the proteins were over-represented relative to their transcripts, that is, there were more proteins per transcript in older cells than in younger cells. Of all analyzed transcript\u2013protein pairs, 38.4% were located in Q2, suggesting a global tendency towards relative protein overabundance with aging (Figure 5). In line with this global protein overabundance, Q4 contained fewer genes and less GO-term enrichments. Strikingly, Q2 was strongly enriched in \u2018translation regulation\u2019 gene products (i.e. ribosome and protein biogenesis machinery) (Figure 5B), and the extent of their overabundance progressively increased as the cells aged (Figure 5\u2014figure supplement 2,3).\n\n### Network inference identifies protein biogenesis-related genes as causal in yeast aging\n\nNext we asked whether this increased level of biogenesis-related proteins, uncoupled from transcriptional regulation, was causal for downstream effects during replicative aging in yeast. Identifying causality on a systems-wide level is difficult, and the key challenge is to separate cause from downstream effects. However, our dynamically resolved, comprehensive data offered the possibility to suggest\u00a0causal relationships.\n\nTo elucidate the causal order of changes during aging, we reconstructed a high-level directional network revealing the interdependences of changes in transcript expression (Figure 6, Figure 6\u2014figure supplement 1A). Therefore, we defined each transcript\u2019s expression profile as a network node, and an edge between each pair of nodes as a partial correlation between the nodes\u2019 expression profiles (Figure 6\u2014figure supplement 1B and C). Next, we determined the directionality of the edges, indicated by arrows. We defined directionality to represent the ability of a transcript\u2019s profile to predict the profile of another transcript. Concretely, when looking at two connected nodes, the node that could be explained by the connected node was considered as the responsive node, while the predicting node was considered to be the causal node (Opgen-Rhein and Strimmer, 2007)\u00a0(Figure 6\u2014figure supplement 1D and E). This relation defined the directionality of the edge. Any transcript that had no predictive ability and could not be predicted by any other transcript was removed from the network analysis. Following this, the nodes were clustered by maximizing the global modularity of the network (Csardi and Nepusz, 2006) (Figure 6A). Finally, the clusters were ranked based on the ratio of causal (outward arrows) to responsive nodes (inward arrows) per cluster to determine the higher-level causal relations existing between clusters. A sensitivity analysis was performed to determine the optimal sparsity of the network and the cut-off for the partial correlation among transcript profiles, through which we established that the network was a robust representation of the datasets (supplemental note 4 in Supplementary file 1, Table S7, Figure 6\u2013source data 1). These steps produced a high-level directional network, in which the ranking of the clusters with respective GO enrichments revealed causal relations during aging (Figure 6B).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig6-v2.jpg)\n\n**Figure 6.:** (A) The directed and clustered transcriptome network consists of 3631 edges, connecting 1241 nodes in 8 clusters (see Figure 6\u2014figure supplement 1 and supplemental note 4, in Supplementary file 1, for further details). Only actual relations are depicted, the causal direction between two nodes is indicated with an arrow, where the arrowhead points to the responsive node. (B) Clusters ranked from more causal to more responsive in the causality network (from blue to red for clusters 1 through 8). The degree of causality is determined by the ratio of the outgoing over incoming connections per cluster (from A). The blue to red arrows indicate the sum of outgoing arrows between two clusters, where arrow thickness is logarithmically scaled to the number of arrows (from A), that is, the summed predictive power of one cluster over the other. Terms per cluster are derived from Gene Ontologies\u00a0(GO) as in Figure 3B (scaling\u00a0of\u00a0text: database for annotation, visualization and integrated discovery\u00a0[DAVID] enrichment score).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A)\u00a0Cartoon illustrating the pipeline of the network analysis procedure, to go stepwise from gene expression time series (i.e. a gene profile) towards a high-level causal network. First, only nodes that have related gene profiles (based on partial correlations), as distinguished from all indirectly related gene profiles (based on simple correlations), are connected in the network (see B below). Second, the directionality of the arrows between two nodes was found by accounting for the relative reduction in the variability between the nodes. This revealed a causal relationship (see D below). Third, highly interconnected nodes were clustered. Finally, based on the clusters and the average directionality among the clusters, a high-level directional network was generated. For further details regarding these steps, see\u00a0below\u00a0and supplemental note 4. (B) A simulated example to highlight the first step in (A), showing that the edge between nodes in the network depends on the partial correlation between the gene profiles. Two transcript profiles (\u2018y\u2019 and \u2018z\u2019) were based on a computationally generated transcript profile (\u2018x\u2019), forming a small artificial network with edges between the nodes x and y in addition to x and z. While the simple correlations between all profiles are high (>0.995), the partial correlations are only high for x with y and x with z (grey dashed lines). Therefore, actual relations were only found from x to z and x to y (black edge). We can thus retrieve the true network, by making use of the partial correlations. (C) The undirected network for the transcriptome data. The edges between the nodes indicate only actual relations (based on partial correlations) between transcript profiles. All edges connected without partial correlations or nodes linked to the dataset without a partial correlation are omitted in this network. (D) An example to highlight the second step in (A) that the directionality between two transcript profiles was found by multiple testing of the standardized partial variances of the nodes. The standardized partial variances are the variances once the effect of the related profiles has been removed by regression analysis. For each of the connected node pairs (e.g. \u2018m\u2019 and \u2018n\u2019), the direction goes from the profile with the highest standardized partial variance to the lowest. Basically, for a profile with a lower standardized partial variance, much of its variability is explained by the profiles connected to it, while for a profile with a high standardized partial variance, less of its variability is explained by the profiles associated to it. The latter profile has thus a higher ability to predict the first one than vice versa, and makes a profile with high standardized variance causal over a profile with a low standardized variance. The directionality is indicated as an arrow between the nodes. (E) The directed network for the transcriptome data. The arrowhead is pointing to the responsive node. For the clustered directed network see Figure 6A and for the high level directional network see Figure 6B.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A) The genes represented in cluster 1 of the transcriptome networks (blue dots) were mapped on the co-expression map (gray dots; Figure 5B). The percentage of the genes enriched in each of the four quadrants (Q1\u20134) is indicated, fold changes are plotted on a log2\u00a0scale (B) p-values for the enrichment of the genes in each cluster of the network in the four quadrants; transcriptome (top) and proteome (bottom). (C) The p-value for the enrichment of genes in each cluster in Q1 and Q3 together representing a \u2018coupled\u2019 change in protein and transcript levels (left panel), and in quadrant Q2 and Q4 (uncoupled change) (right panel). A shift towards an uncoupled phenotype in the \u2018later\u2019 network clusters is apparent. The p-values are plotted on a log10\u00a0scale.\n\nThis high-level directional network of the transcriptome data showed that the very first causal-ranked cluster in the network that we detected was highly enriched for gene products associated with protein biogenesis (i.e. ribosome biogenesis and transfer RNA [tRNA] processing; Figure 6B). These are the same biological processes that had uncoupled transcript and protein levels (Figure 5B); indeed, genes from this causal cluster were enriched in Q2 of the co-expression map, which showed uncoupled expression (Figure 6\u2014figure supplement 2A and B). These analyses suggest that the uncoupling of protein and transcript levels for \u2018biogenesis\u2019-related genes has a central role in the aging process, and may affect the transcript and protein abundances of other genes, as elaborated upon in the discussion.\n\n### Consequences for other cellular processes\n\nThe overabundance of proteins relative to transcripts must have consequences for cellular functioning. Protein overproduction could increase cell size, one of the first hallmarks described in yeast aging (Egilmez et al., 1990). Increased cell size could reduce glucose influx rates per cell volume and induce metabolic changes, for example, at low rates of glucose influx, cells switch to respiration (Huberts et al., 2012). Indeed, in our transcript-based network analysis (Figure 6B) as well as in our proteome dataset (Figure 3B), we found that metabolic signatures related to starvation and oxidative stress were consequences of aging.\n\nFurthermore, we hypothesized that if protein levels become globally uncoupled from their transcript levels during aging (Figure 5), the optimal stoichiometry of proteins in complexes may be perturbed (Figure 7A). Indeed, using curated lists of protein complexes (Cherry et al., 2012), we found that an increased deviation from the original stoichiometry occurred with aging (Figure 7B\u2013D, and Figure 7\u2014figure supplement 1\u20133). We observed many complexes that were not previously implicated in aging to be age-affected, and we found previously implicated protein complexes such as the vacuolar adenosine triphosphatase (Hughes and Gottschling, 2012) and the nuclear pore complex (Lord et al., 2015; Denoth-Lippuner et al., 2014)\u00a0to lose stoichiometry (Figure 7C and D and Figure 7\u2014figure supplement 1,2). The global stoichiometry loss was greater in aged mothers compared with the daughter population (Figure 7\u2014figure supplement 3A), confirming that this is an aging-related phenotype. Additionally, we found that the stoichiometry loss was greater overall at the proteome level than at the transcriptome level (Figure 7B), supporting the observation that protein levels uncouple from their transcript levels.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig7-v2.jpg)\n\n**Figure 7.:** (A) Illustrative representation of loss of stoichiometry within a protein complex during aging. Changing levels of proteins may be coordinated (left) or uncoordinated and result in a loss of complex stoichiometry (right). (B) Stoichiometry loss (for a single complex defined as the InterQuartile Range (IQR) of the distribution of fold changes of the components) is plotted for all complexes in proteome and transcriptome datasets as bean plots during aging. Thick horizontal line represents the mean of the distribution of all complexes, thin colored lines the individual complexes\u2019 stoichiometry loss, and the outline the distribution of all complexes. The genes in common between the proteome and transcriptome datasets are used.\u00a0(C) Illustration of the loss of stoichiometry of protein complexes during aging for the proteome (gray lines), with specific examples highlighted (colored lines). (D) Illustration of the loss of protein stoichiometry in proteasome (left panel) and the vacuolar proton transporting V-type adenosine triphosphatase\u00a0(ATPase), V1 domain (right panel). The protein abundance changes (log2\u00a0scale) of the complex\u2019 components are plotted in time. The degree of stoichiometry loss is indicated with a box plot.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** A curated list of protein complexes derived from the \u2018cellular component\u2019 gene ontology was downloaded from yeastgenome.org, and the horizontal box plots show the distribution of fold changes (log2\u00a0scale) occurring in the complex when comparing proteome data of the old (72 hr) sample to the young reference sample. Box-and-whisker plots are presented as follows: the thick black line within the box is the median of the data, the box extends to the upper and lower quartile of the dataset (i.e. to include 25% of the data above and below the median, respectively), whiskers (dashed lines) represent up to 1.5 times the upper or lower quartiles and circles represent outliers.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig7-figsupp2-v2.jpg)\n\n**Figure 7\u2014figure supplement 2.:** Same as Figure 7\u2014figure supplement 1 but for the transcriptome data.\n\n![Figure 7\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig7-figsupp3-v2.jpg)\n\n**Figure 7\u2014figure supplement 3.:** (A)\u00a0Comparison between mother cells and mother-age dependent daughter cells, loss of stoichiometry within complexes. Bean plots showing the distribution of the loss of stoichiometry for all complexes in the cell (same as in Figure 7B), at each time point throughout aging. Mother and daughter cells plotted side by side, for the proteomes (left panel) and transcriptomes (right panel), showing that the mother cells\u2019 proteome undergoes a greater degree of loss of stoichiometry within complexes than do mother-age dependent daughter cells. Stoichiometry loss for a single complex is calculated as the interquartile of the distribution of fold changes within the complex at any given time (i.e. the \u2018box\u2019 in Figure 7\u2014figure supplement 1 and 2). Bean plots are drawn as follows: thick horizontal line represents the mean of the distribution of all complexes, thin colored lines the individual complexes\u2019 stoichiometry loss, and the outline the distribution of all complexes. (B) Illustration of the loss of protein stoichiometry in the vacuolar proton transportin V-type adenosine triphosphatase\u00a0(ATPase), V1 domain. The protein abundance changes (log2\u00a0scale) of the complex\u2019 components are plotted in time. The degree of stoichiometry loss is indicated with a box plot.\n\n![Figure 7\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/08527/elife-08527-fig7-figsupp4-v2.jpg)\n\n**Figure 7\u2014figure supplement 4.:** (A) Undirected, directed, and clustered directed networks for the proteome dataset. The clustered directed network consists of 669 edges, connecting 493 nodes in 5 clusters. (B) These interactions are summarized in a causal network: clusters are ranked from more causal to more responsive (from blue to red for clusters 1 through 5, placed on a turquoise arrow that depicts ranking) in the causality network. The degree of causality is determined by the ratio of the causal outgoing over incoming connections per cluster (from A). The blue to red arrows indicate the sum of outgoing arrows between two clusters (from A), that is, the summed predictive power of one cluster over the other. Terms per cluster are derived from Gene Ontologies\u00a0(GO) as in Figure 3B (scaling\u00a0of\u00a0text: DAVID enrichment score).\n\nBeing built of fewer genes (1494 proteins versus 4904 transcripts), the high-level directional network of the proteome was less revealing than that of the transcriptome (Figure 7\u2014figure supplement 4). The most causal cluster of the proteome network was enriched for chaperone proteins, reflecting a cellular response to internally changing conditions. Such conditions could include metabolic restructuring in response to an increased cell size or to aggregating proteins that are accumulating due to altered protein complex stoichiometry. Furthermore, we found that the causal clusters of the proteome network tended to be expressed according to their transcriptional message (i.e. coupled expression; Q1, Q3), while the responsive clusters represented increasingly uncoupled expression (Q2, Q4) (Figure 6\u2014figure supplement 2C). This both confirmed the response of the cell to the accumulating changes occurring during aging and indicated that the effects of uncoupled protein expression are progressive over time. We see the clear downstream consequences during aging emerging in the proteome, including metabolic shifts, stoichiometric loss, aggregating proteins, and protein overproduction. All of these point to pathways and processes that may become dysfunctional with aging, any of which may ultimately result in cell death.\n\n## Discussion\n\nUsing our newly developed culturing and computational methods and state-of-the-art proteomics and transcriptomics analyses, we generated the first systems-level molecular phenotype of replicatively aging yeast. The comprehensiveness of the data allowed us to discover that protein biogenesis machinery genes, including ribosome, tRNA synthesis, and translation regulation genes, have their protein levels uncoupled from their mRNA levels during aging (Figure 5B). Furthermore, the dynamic nature of the data allowed us to pinpoint the transcripts of these genes as having the strongest ability to predict the behavior of others transcripts during aging (Figure 6B). Finally, we observed metabolic changes, protein stress responses, and changes in the stoichiometry of many protein complexes (Figure 3B,4,7B).\n\nBased on these analyses, we propose a model whereby the uncoupling of protein levels of biogenesis-related genes from their transcript levels is causal for the changes occurring in aging yeast. The model proposes that proteins of the translation machinery that are uncoupled from transcript levels accumulate in cells with age (Figure 5B). As the biogenesis genes are themselves involved in translation, their uncoupling might contribute to further uncoupling of the proteome from the transcriptome as a whole. This general uncoupling has degenerative effects (i.e. cell size increase, protein aggregations and loss of stoichiometry in protein complexes), that stimulate transcriptional responses in the cell (i.e. metabolic changes and activated stress responses), which further contributes to changes in the proteome. Although we cannot exclude the possibility of other causes even further upstream, the uncoupling of the protein biogenesis machinery is likely an early driver of replicative aging in yeast.\n\nA question remains as to why the biogenesis-related class of proteins we identified as having protein levels uncoupled from their transcript levels become over-represented in replicatively aging yeast in the first place. Ribosome footprinting has shown these proteins to be highly translated (Ingolia et al., 2009), and protein\u00a0turnover experiments have shown them to be highly stable (Belle et al., 2006); thus, it is possible that their overabundance may result from the combination of the dynamics of protein biogenesis, protein turnover, and mRNA stability. Interestingly, the ribosomal proteins themselves showed a low degree of loss of stoichiometry at the protein\u00a0complex level in our data (Figure 7C), supporting the idea that they are still active and contributing to uncoupling in the cell. In any case, the uncoupling of protein and transcript levels has downstream consequences for the cell that may explain many phenotypes of aging. First, cell size may increase due to protein overproduction and result in metabolic changes. Second, proteins being overproduced at different rates will alter protein complex stoichiometry. Many documented phenotypes of aging may result from this, including the formation of protein aggregates (Erjavec et al., 2007), increased reactive oxygen species formation by a dysfunctional mitochondrial transport chain (Laun et al., 2001), and loss of gene silencing (Hu et al., 2014). The sum of these may ultimately lead to system failure for the organism.\n\nDirectly targeting certain failing protein complexes or downstream deleterious effects results in replicative lifespan extension, but we suggest that many of these effects will prove to be cell type- and growth condition-specific. Our model predicts that a more robust extension of lifespan may be possible in many organisms by targeting the causal factor in aging, protein biogenesis. Indeed, altering the rates of protein production (i.e. translation) or degradation (i.e. autophagy) have repeatedly been shown to influence longevity across a wide range of organisms (see (Wasko and Kaeberlein, 2014; Johnson et al., 2013; Cuervo, 2008). The translation activators, target of rapamycin\u00a0(TOR)\u00a0and S6 kinase, fall into this category, and decreases in their activity result in increased lifespan in yeast (Fabrizio et al., 2001; Kaeberlein et al., 2005), worms (Vellai et al., 2003; Pan et al., 2007), flies (Kapahi et al., 2004), and mice (Lamming et al., 2012; Selman et al., 2009), as does calorie restriction and drugs such as rapamycin, which are also modulators of protein biogenesis pathways (Johnson et al., 2013). Likewise, deletions in ribosomal subunit components have positive effects on lifespan in both yeast (Steffen et al., 2008) and worms (Hansen et al., 2007). Our model suggests why these interventions and mutations have a lifespan-extending effect in a broad spectrum of organisms, namely because protein biogenesis machinery is itself a driver of aging.\n\n## Materials and methods\n\n### Aging yeast\n\n#### Strains and medium\n\nThe prototrophic Saccharomyces cerevisiae strain YSBN6 (MATa) was used for the phenotyping of yeast replicative aging (Canelas et al., 2010). The cells were grown in yeast nitrogen base (YNB) without amino acids (ForMedium, Norfolk, UK) supplemented with 2% glucose at a temperature of 30\u00b0C, unless indicated differently. Precultures in flasks were shaken at 300 revolutions per minute (RPM).\n\nSamples not processed by the steps involving biotinylation and the attachment of beads (termed \u2018unprocessed samples\u2019) were precultured in the above medium for minimum 24 hr in mid-exponential growth phase and were immediately pelleted (5 min, 2500\u00a0\u00d7\u00a0g) and snap frozen in liquid nitrogen.\n\n#### Preparing the cells for column captured culturing in aging columns\n\nPrior to loading the cells onto the aging columns, the cells were biotinylated and labeled with iron beads (Figure 1\u2014figure supplement 1) in a manner adapted from (Smeal et al., 1996), as follows: The yeast YSBN6 was pre-cultured for minimum 24 hr in a mid-exponential\u00a0growth phase, having an optical density below 1. Cells were harvested and concentrated by gentle centrifugation, 10\u00a0min 2500\u00a0\u00d7g. For one column, 3\u00a0\u00d7\u00a0109 cells were resuspended in 1 ml 2\u00d7\u00a0phosphate buffered saline (PBS), immediately mixed with 14 mg Sulfo-NHS-LC-Biotin (Thermo Scientific, Rockford, IL) dissolved in 1 ml cold (4\u00b0C) water and incubated in a shaker (800 RPM) at room temperature for 20 min. The biotinylated cells were washed twice with 1\u00d7PBS at room temperature and were resuspended in 100 ml pre-warmed YNB plus 2% glucose and incubated for 90 min at 30\u00b0C shaken at 300 RPM. At room temperature, the cells were pelleted by gentle centrifugation (5\u00a0min, 2500\u00a0\u00d7g), washed with 1\u00d7\u00a0PBS, resuspended in 4 ml 1\u00d7\u00a0PBS, mixed with 750 \u00b5l of streptavidin coated BioMag beads (Qiagen, Germantown, MD) and incubated for 30 min on a lab rocker. The bead-labeled cells were concentrated in ~\u223c0.5 ml PBS by gentle centrifugation (5min, 2500\u00a0\u00d7g) and 2\u00a0\u00d7\u00a0109 cells were loaded onto the magnetized aging column.\n\n#### The aging columns setup\n\nThe aging column setup is a closed system, where cells are cultivated on a magnetized iron meshwork under a constant flow of medium (Figure 1\u2014figure supplement 1B and C). The setup was designed to ensure a sterile environment within the system, continuous removal of daughter cells, and constant oxygen and nutrient concentrations in the medium. Table S1 (Figure 1\u2014source data 1 shows materials used for its construction and operation.\n\nThe core of the setup for column-captured cell cultivation is the 0.3\" Negative Selection Column combined with a 3-way stopcock (Stemcell Technologies Inc., Vancouver, Canada; Figure 1\u2014source data 1, Table S1), which is placed in a magnetic field. Four magnets (StemSep Red Magnet, Stemcell Technologies) were placed in a stand (custom made, Figure 1\u2014figure supplement 1), and four stands with magnets were connected in a row to run 16 columns simultaneously. The rim at the top of the column was cut with a sharp scalpel, to enable connection with 15 cm long silicone tubing (Si, inner diameter (id) 8\u00a0mm, outer diameter (od) 11\u00a0mm, Si 8-11, Figure 1\u2014figure supplement 1C, Figure 1\u2014source data 1 Table S1). Silicone tubing was chosen, as it is air permeable. The T-connector (od 10 mm, C T-10) on top serves to connect the column with the inlet tubing from the side and a 6 cm long tubing closed with a clamp (C. II).\n\nThe pump (BVP standard motor, MS/CA4-12 + 3\u00a0\u00d7 MS/CA4-12 extensions; Ismatec, Wertheim, Germany) provided a constant medium flow over the column. The pump tubing (BPT Tubing, 1.52 mm ID, 400 mm length, Pharmed,\u00a0Ismatec, Wertheim, Germany) connected the 20\u00a0l medium jar (20\u00a0l round high density polyethylene [HDPE] bottle, Nalgene, Rochester, NY) to the column via two long pieces of 2\u00a0m silicone tubing (id 2 mm, od 4 mm, Si 2-4). The Silicone tubing between pump and column could be closed with clamp C. II. The flow rate of medium over the column was set at 170 ml/h.\n\nThe medium jar was closed with a 5-layered aluminum foil top prior to autoclaving. 5 syringes with their plungers removed were punched through the aluminum foil and 4 were connected inside the jar to a 60 cm long silicone tubing (id 6 mm, od 8 mm, Si 6-8). The end of the tubing was weighted down with a glass pipet, in order to have the inlet remain at the bottom of the jar. The syringe barrels at the top of the jar were closed with small pieces of aluminum foil during autoclaving and attached to the Si 2-4 silicon inlet tubing prior to the start of the column run. The fifth syringe without its plunger and without silicon tubing was attached on the outside to Si 2-4 silicone tubing, with pressurized sterile air, to provide an overpressure of sterile air in the medium jar. The medium jar was filled with 20 l autoclaved YNB without amino acids prior to autoclaving and was subsequently supplemented with 2% filter-sterilized glucose.\n\nThe effluent of the column went\u00a0down via silicone Si 2-4 tubing, passing a quick release connector, and went\u00a0up via silicone Si 4-6 tubing to an air chamber. The tubing could\u00a0be closed with a clamp (C. III). The air chamber breaked the laminar medium flow, allowing the liquid to drip down via silicone Si 4-6 tubing into a waste jar (20 l round HDPE bottle, Nalgene). The air chamber consisted of a T-connector (od 10 mm, C T-10) connected at all the three sides with 6 cm silicone Si 8-11 tubing and a tube connector.\n\n#### Loading the aging columns\n\nPrior to loading the columns with the biotinylated yeast cells, the system was primed with sterile medium for about 1 hr, having clamp C. I and C. III open. The medium flow was then stopped on the pump and clamps C. I and C. III were closed and clamp C. II opened. The quick release was opened and clamp C. III was shortly opened to lower the medium level to the iron meshwork. The column was detached from the tubing and the magnet and 2\u00a0\u00d7\u00a0109 cells were pipetted onto the column and gently sucked into the meshwork by a 5 ml syringe attached to the stopcock below the column. The stopcock was closed, \u223c2ml fresh medium was pipetted on top of the column and the column was reattached to the tubing and placed in the magnet. Clamp C. I was opened and the medium flow was restarted. After some medium was collected on top of the column, clamp C. III was opened. Clamp C. II was kept open until the medium level above the column stabilized halfway in the tubing above the column. This level could be adjusted by the height of the air chamber in the effluent tubing (Figure 1\u2014figure supplement 1B). The cells were kept surrounded by liquid media throughout all cultivation time.\n\n#### Harvesting aged yeast cells\n\nIn order to harvest the mother cells, the pump was stopped, clamps C. I and C. III were closed and clamp C. II opened. Only the specific pump tubing was disconnected from the pump, and the pump was restarted. The quick release was disconnected and through the shortly opening clamp C. III, the medium level was lowered to just above the meshwork. The tubing on top of the column was detached and a 20 ml syringe was connected to the stopcock below the column. While keeping the column at the magnet, 15 ml fresh medium was provided on top of the column, while the column effluent was collected by the syringe. This step was repeated 2 or 3 times, until the effluent was clear. This combined column effluent sample was kept on ice (effluent fraction, sample: Mix 3, Figure 2\u2014figure supplement 1). The column was detached from the magnet and again 15 ml fresh medium was provided on top of the column and the effluent was collected by a new syringe. This was repeated 2 or 3 times, until the medium was clear. This combined column fraction (column fraction, later to be split into Mix 1 and 2, Figure 2\u2014figure supplement 3A) was also kept on ice.\n\nAfter harvesting, the samples consisted of mixes of aged mother cells, dead cells, and daughter cells. In order to obtain a higher purity of aged mother cells, an enrichment step was required for the column fraction. The cells were gently centrifuged (10 min 2500 \u00d7g), resuspended in 7 ml cold PBS and transferred to a glass test tube. The test tube was placed in a magnet (\"The Big Easy\" EasySep\u00a0Magnet, Stemcell Technologies Inc.\u00a0Grenoble, France) for 5 min (Figure 2\u2014figure supplement 3A, panel II). The supernatant was removed by pipetting and the magnet-bound cells were resuspended in fresh and cold PBS. This was repeated two times, until\u00a0the supernatant was clear. The supernatant fractions were combined and kept on ice (wash fraction, sample: Mix 1). The cells that were retained in the magnet were resuspended in 2 ml PBS after removal from the magnet (mother enriched fraction, sample: Mix 2) (Figure 2\u2014figure supplement 3A, panel III). The samples were pelleted by gentle centrifugation (4 min, 4\u00b0C, 2500\u00a0\u00d7g) and immediately snap frozen in liquid nitrogen. A small aliquot of each of three samples was kept aside to measure the fractions of live and dead cells, mother and daughter cells, and obtain the cell count per sample.\n\n#### Harvesting time\u00a0points\n\nBased on the population viability curves generated from the columns during test campaigns, the average lifespan of yeast being roughly 20\u201330 divisions, and the doubling time of the YSBN6 strain being roughly 2 hr, it was decided to collect aged samples up to 72\u00a0hr of aging, with roughly 42% of viable cells expected in the last sample (Figure 1B). There is cell-to-cell variation in the replication rates of yeast and so, with time, the distribution of replicative ages per sample increases. These distributions were modeled based on the variation of the replication rates as quantified from single cell microfluidic data (unpublished data). In a mathematical model, a start culture of 1000 cells having a random replication rate, according to a Poisson distribution an average replication rate of 0.5\u00a0hr\u22121, was allowed to replicate (and age) (Figure 1\u2014figure supplement 4). Consistent with our empirical observations counting bud scars in the population (Figure 1\u2014figure supplement 2D), with increasing elapsed time, the distributions of the number of replications per cell became wider. Linearly spaced harvesting in time would cause increasing information overlap between neighboring time points, thus it was decided to harvest samples exponentially spaced in time (Figure 1\u2014figure supplement 4).\n\nFinally, we performed two replicate runs of the column-captured cell culturing campaigns. Campaign 1 generated an unprocessed sample and 14 column samples and campaign 2 generated another unprocessed sample and 8 column samples. In total, two unprocessed samples combined with 16 unique time points were generated (Figure 2\u2014figure supplement 5).\n\n#### Flow cytometry analysis of sample composition\n\nIn each sample, the cells were counted on a BD Accuri C6 flow\u00a0cytometer (Becton, Dickinson and Company, Franklin Lakes, NJ). To quantify the fractions of mother cells, dead cells, and daughter cells in the samples, the cells were stained with dyes and analyzed by flow cytometry using the BD Accuri C6. From each aliquot, 2\u00a0\u00d7\u00a0106 cells were pelleted and resuspended in 100 \u03bcl PBS, and simultaneously stained for 30 min at room temperature with 5 \u03bcl 5\u00a0mg/ml fluorescein\u00a0isothiocyanate\u00a0conjugated Avidin (AvF, Thermo Scientific) and 2\u00a0\u03bcl 2\u00a0mM propidium iodide (PI, Sigma-Aldrich Co., St. Louis, MO). Biotinylated mother cells\u00a0(see section Materials and methods, Preparing the cells for column-captured culturing in aging columns) were stained with AvF, dead mother or dead daughter cells were stained with PI, live daughter cells remained unstained (Figure 1\u2014figure supplement 5). The fluorescein was excited by a laser of 488 nm wavelength and detected in the range of 533 \u00b1 30 nm, PI was excited by a laser of 488 nm and detected in the range of >670 nm. The beads were excluded from any analysis by gating (Figure 1\u2014figure supplement 5B, left panels). The flow cytometer events that were plotted for their PI and AvF intensities in a scatter plot, clear clusters for stained and unstained, both in PI and AvF channel, were apparent. The fractional enrichments were obtained in the BD CS Accuri C6 Software 1.0 (Figure 1\u2014figure supplement 5).\n\n#### Validations of column captured cultivation\n\nOxygen concentration in medium: The oxygen concentration was measured by using the Optical Oxygen Meter Fibox 3 (PreSens Precision Sensing GmbH, Regensburg, Germany). The flow-cell, an oxygen-sensitive spot glued in a polystyrene tube, was connected to the tubing in front of the aging column to measure the O2 concentration in fresh medium and connected to the effluent tubing to measure the O2 concentration in the column effluent. Each measurement was done within 10 min to avoid measurements being influenced by the accumulation of yeast cells in the flow-cell, which would alter readings.\n\nGlucose consumption on the column: The glucose concentration in the medium and the column effluent was measured with a commercially available enzyme-based assay Enzytec fluid D-Glucose (Thermo Fisher Scientific GmbH, Dreieich, Germany). The column effluent samples were harvested by collecting medium from the column outlet, by opening the quick release below the column (Figure 1\u2014figure supplement 1B and C). The column effluent sample was immediately placed on ice, shortly centrifuged (30\u00a0s, >16\u00a0k \u00d7g) to remove the cells, and the glucose concentration was measured.\n\nBud scar counting: The number of bud scars was counted using microscopy and evaluated from flow cytometry data.\n\nFor microscopy, 1\u00a0\u00d7\u00a0107 cells were resuspended in 0.5 ml PBS supplemented with 25 \u03bcl 5\u00a0mg/ml Alexa 633 labeled wheat germ agglutinin (WGA, Life Technologies/Thermo Fisher Scientific Co., Carlsbad, CA), 50 \u03bcl 5 mg/ml AvF and 20 \u03bcl 2\u00a0mM PI and incubated for 90 min at room temperature (see \u2018Flow cytometry analysis of sample composition\u2019). The images were taken on a commercial laser scanning microscope Zeiss LSM710 (Carl Zeiss, MicroImaging, Jena, Germany), using ZEN2010B software. The dyes were excited with different solid state lasers; PI and AvF were excited with a wavelength of 488 nm and emission was recorded between 607\u2013797 and 493\u2013564 nm wavelength, respectively; WGA\u00a0Alexa 633 was excited, with a wavelength of 633 nm and emission was recorded between 638\u2013797 nm wavelength in a stack of 10 images with a z-scaling of 0.8 \u00b5m (Figure 1D, inset). Only living mother cells were selected (containing AvF, without PI) and the bud scars were counted independently by two researchers.\n\nFor flow cytometry, 2\u00a0\u00d7\u00a0106 cells were resuspended in 100 \u03bcl PBS supplemented with 7 \u03bcl 5\u00a0mg/ml WGA\u00a0Alexa 633 and incubated for 30 min at room temperature. The cells were excited in the flow cytometer by a laser with 640 nm wavelength and emission was recorded with a filter selecting for 675 \u00b1 25 nm. The mean fluorescence intensity for R2 was normalized to R1 t = 0\u00a0h, to be plotted on the same scale (Figure 1D).\n\nLifespan curve: For viability of mother (AvF positive) and daughter (AvF negative) cells at each time point in the aging column, viability of the mother and daughter cells was assessed in each mixed-cell sample (derived from proportions of live [PI negative] and dead [PI positive] cells (Figure 1\u2014figure supplement 5,\u00a0Figure 2\u2014figure supplement 3B). These scores were weighted based on the number of cells present in each of these samples (derived from raw numbers as presented in Figure 1\u2014figure supplement 3). This ensured that the viability of mothers and daughters (Figure 1C) reflected the entire population, since mothers and daughters in different mixed-cell samples may have slightly different ratios of live to dead cells. The microfluidic-based lifespan curve was obtained from authors of Huberts et al., 2014, based on 2641 cells, plotted as viability versus time.\n\n### Proteome analysis\n\n#### 15N standards\n\nProtein extracts from isotopically labeled 15N YSBN6 yeast cells were used as an internal standard for the targeted selected reaction monitoring (SRM) proteomics experiments. For the preparation of the 15N standards, yeast was cultivated in two 2.5 l\u00a0fermenters on minimal or synthetic Verduyn medium (Verduyn et al., 1992), supplemented with 10 g/l glucose and using 15N-labeled (NH4)2SO4 as the sole nitrogen source. Cells were harvested in the different growth phases, namely the log phase (L), the deceleration phase (D) and the stationary phase (S, Figure 2\u2014figure supplement 1A). Aliquots from all conditions were mixed (1:1:1) to maximize the coverage of the targeted proteins.\n\n##### Cell lysis and protein extraction\n\nCell pellets were resuspended in 1.85\u00a0M sodium hydroxide plus 7.4% v/v \u03b2-mercapto-ethanol at a concentration of 1\u00a0\u00d7\u00a0108 cells per 100 \u00b5l and incubated for 10 min on ice. An equal volume of 100% w/v trichloric acid (TCA) was added and was subsequently incubated for 10 min on ice. The precipitated proteins were collected by centrifugation (16\u00a0k\u00a0\u00d7g, 10 min, 4\u00b0C). The pellet was washed with 200 \u00b5l cold acetone and incubated for 30 min at \u221220\u00b0C. Finally, the protein pellet was collected by centrifugation (16\u00a0\u00d7g, 10 min, 4\u00b0C), and removal of supernatant.\n\nThe precipitated proteins were resuspended in 100 \u00b5l 2% w/v sodium deoxycholate plus 100 mM ammonium bicarbonate per 1\u00d7108 cells. For the targeted proteomics, the 15N-labelled protein extracts were added in a 1:1 ratio, based on the cell counts. Samples were incubated for 5 min at 90\u00b0C to solubilize. Magnetic beads present in a subset of the samples were removed at this stage by collecting them on the commercially available magnet tube rack DynaMag-2 (Life Technologies/Thermo Fisher Scientific Co.,\u00a0Waltham, MA, USA).\n\n#### Digestion and cleanup\n\nThe solubilized proteins were reduced with 12 mM dithiothreitol (30 min at 55\u00b0C) and alkylated with 40 mM iodoacetamide (45 min at 30\u00b0C, in the dark). Samples were diluted with 100 mM ammonium bicarbonate to dilute the sodium deoxycholate to 1% w/v prior to overnight digestion with trypsin (1:100, sequencing grade modified trypsin V5111, Promega, Madison, WI) at 37\u00b0C. Then, 10% v/v formic acid (FA) was added to the solution to precipitate the deoxycholate, which was subsequently removed by centrifugation (16\u00a0k \u00d7g, 10 minutes). Cleanup prior to liquid chromatography\u2013mass spectrometry (LC\u2013MS) analysis was done with C18-SPE columns (SPE C18-Aq 50 mg/1ml, Gracepure, Columbia, MD). This column was conditioned with 3\u00a0\u00d7 1 ml acetonitrile (ACN) plus 0.1% v/v FA, and re-equilibrated with 3\u00a0\u00d7 1 ml 0.1% v/v FA before application of the samples at a total amount of maximum 1 mg total protein per column. The bound peptides were washed with 2\u00a0\u00d7 1ml 0.1% v/v FA and eluted with 3\u00a0\u00d7 0.4 ml 50% v/v ACN plus 0.1% v/v FA. The eluted fractions were dried under vacuum and resuspended in 0.1% v/v FA to a final concentration of around 1 \u00b5g/\u00b5l.\n\n#### Targeted proteomics (SRM)\n\nSRM analyses were performed on a triple quadrupole mass spectrometer with a nanoelectrospray ion source (TSQ Vantage, Thermo Fisher\u00a0Scientific,\u00a0Waltham, MA). Chromatographic separation of the peptides was performed by liquid chromatography on a nano ultra-high performance liquid chromatography system (UltiMate UHPLC Focused, Dionex,\u00a0Thermo\u00a0Fisher Scientific,\u00a0Waltham, MA) using a nano column (Acclaim PepMap100 C18, 75 \u00b5m\u00a0x\u00a0150\u00a0mm 3\u00a0\u00b5m, 100 \u00c5, Dionex,\u00a0Thermo Fisher\u00a0Scientific,\u00a0Waltham, MA). Samples were injected at a total amount of 1 \u00b5g using the microliter-pickup system using 0.1% v/v FA as transport liquid from a cooled autosampler (5\u00b0C) and loaded onto a trap column (\u00b5-precolumn cartridge, Acclaim PepMap100 C18, 5 \u00b5m, 100 \u00c5, 300 \u00b5m id, 5 mm Dionex,\u00a0Thermo Fisher\u00a0Scientific,\u00a0Waltham, MA). Peptides were separated on the nano-LC column using a linear gradient from 3 to 45% v/v ACN plus 0.1% v/v FA in 30 min at a flow\u00a0rate of 0.3 \u03bcl/min. The mass spectrometer was operated in the positive mode at a spray voltage of 1500\u00a0V, a capillary temperature of 270\u00b0C, a half maximum peak width of 0.7 for Q1 and Q3, a collision gas pressure of 1.2 mTorr and a cycle time of 1.2 ms. The measurements were scheduled in windows of 4 min around the pre-determined retention time, with a maximum of 150 concurrent transitions.\n\nThe MS traces were manually curated using the Skyline software (Steffen et al., 2008). The sum of all transition peak areas for the endogenous and standard (15N labeled) peptide was used to calculate the ratio between the endogenous and standard peptides. Only peptides that were minimally quantified with two transitions and a peak area of the 15N standard above 10,000 for both technical replicates were considered for quantification. The ratios on protein level were calculated by averaging the ratio of all peptides per protein. In order to correct for global errors made in the protein concentration determination of either the endogenous samples or the 15N labeled standard, the median of all datasets were normalized to the same value.\n\n#### Shotgun proteomics\n\n1 \u00b5g of peptides of each sample were subjected to LC\u2013MS analysis using a dual pressure LTQ-Orbitrap Velos mass spectrometer connected to an electrospray ion source (Thermo Fisher Scientific,\u00a0Waltham, MA) as described recently (Sun et al., 1994) with a few modifications. In brief, peptide separation was carried out using an EASY nLC-1000 system (Thermo Fisher Scientific,\u00a0Waltham, MA) equipped with a reversed phase\u00a0HPLC column (75 \u03bcm \u00d7 45 cm) packed in-house with C18 resin (ReproSil-Pur C18\u2013AQ, 1.9 \u03bcm resin; Dr. Maisch GmbH, Ammerbuch-Entringen, Germany) using a linear gradient from 95% solvent A (0.15% FA, 2% acetonitrile) and 5% solvent B (98% acetonitrile, 0.15% FA) to 28% solvent B over 120 min at a flow rate of 0.2 \u03bcl/min. The data acquisition mode was set to obtain one high resolution MS scan in the\u00a0Fourier Transform\u00a0(FT) part of the mass spectrometer at a resolution of 60,000 full width at half-maximum (at m/z 400) followed by MS/MS scans in the linear ion trap of the 20 most intense ions. The charged state screening modus was enabled to exclude unassigned and singly charged ions and the dynamic exclusion duration was set to 30\u00a0s. The ion accumulation time was set to 300 ms (MS) and 50 ms (MS/MS).\n\nFor label-free quantification, the generated raw files were imported into the Progenesis LC-MS software (Nonlinear Dynamics, Version 4.0) and analyzed using the default parameter settings. MS/MS-data were exported directly from Progenesis LC\u2013MS in mgf format and searched against a decoy database the forward and reverse sequences of the predicted proteome from S. cerevisae (SGD, download date: 15/6/2012, total of 13,590 entries) using MASCOT (version 2.4.0). The search criteria were set as follows: full tryptic specificity was required (cleavage after lysine or arginine residues); three missed cleavages were allowed; carbamidomethylation (C) was set as fixed modification; oxidation (M) as variable modification. The mass tolerance was set to 10 ppm for precursor ions and 0.6 Da for fragment ions. Results from the database search were imported into Progenesis and the final peptide feature list and the protein list containing the summed peak areas of all identified peptides for each protein, respectively, were exported from Progenesis LC-MS. Both lists were further statically analyzed using an in-house developed R script (SafeQuant) and the peptide and protein false discovery rate (FDR) was set to 1% using the number of reverse hits in the dataset (Sun et al., 1994).\n\n### Transcriptomics\n\n#### mRNA extraction\n\nFor the extraction of mRNA from yeast, the RiboPure RNA Purification Kit, yeast (Ambion, Life Technologies/Thermo Fisher Scientific Co.) was used as described by the manufacturer. Frozen cell pellets of 3\u00a0\u00d7\u00a0107 cells were suspended in the lysis mixture. Vortexing was done by using the the Ambion Vortex Adapter (Ambion, Life Technologies/Thermo Fisher Scientific Co.\u00a0Waltham, MA). The mRNA was collected in 70 \u03bcl elution solution. The quality and yield of the RNA was checked with a NanoDrop ND-1000 Spectrophotometer (Thermo Fisher Scientific, Waltham, MA). The samples were stored as 5 \u00b5g mRNA aliquots at \u221280\u00b0C. 1 \u00b5l of 1:10 diluted mixture of 92 polyadenylated non-yeast transcripts was added as a spike-in for sequencing quality control (ERCC RNA Spike-In control mix, Life Technologies/Thermo Fisher, Waltham, MA) (Smeal et al., 1996).\n\n#### mRNA sequencing and mapping\n\nThe mRNA was sequenced by ServiceXS (Leiden, The Netherlands). The quality and integrity of the RNA\u00a0samples was determined with a Nanodrop ND1000 spectrophotometer and analyzed on a RNA 6000 Lab-on-a-Chip using bioanalyzer (Agilent Technologies, Santa Clara, CA). The complementary DNA (cDNA) libraries were generated by using the Illumina TruSeq mRNA-Seq Sample Prep Kit v2 (Illumina, San Diego, CA). In short, mRNA was isolated from total RNA using the oligo-dT-magnetic beads and fragmented and cDNA synthesis was performed. The cDNA was ligated with the sequencing adapters and amplified by polymerase chain reaction. The quality of the amplified cDNA was measured with a DNA 1000 Lab-on-a-Chip. The fragment sizes ranged between 300 and 500 bp.\n\nThe cDNA was clustered in the flow cell of the sequencer by an Illumina cBot and the sequencing was done on an Illumina HiSeq 2000. A cDNA concentration of 4.5 pM was used for sequencing, in two reads of 100 cycles each, controlled by the HiSeq control software HCS v2.0.12.0. Image analysis, base calling, and quality checks were performed with the Illumina data analysis pipeline RTA v1.13.48 and/or OLB v1.9 and CASAVA v1.8.2. All data consisted of >0.9 Gb read depth and a quality Q30-score >80% per sample. One time point set, replicate 1 t10 (26.8\u00a0hr), was excluded by this criteria.\n\nReads were mapped to EF4 genome assembly using TopHat software v2.0.8 and gene annotation from Ensembl release 71. Per gene expression values were calculated using Cufflinks/Cuffdiff package v. 2.1.1. Data quality was assessed by principle component analysis on the resulting raw data of spike-in controls and gene profiles. Outliers resulting from poor sequencing results in the spike-in (i.e., Figure 2\u2014source data 2 Table S3.1, samples from replicate 1: t2_M_Feb and t7_EW_Feb) or the full genome profiles (i.e., Figure 2\u2014source data 2 Table S3.1, samples from replicate 2: t14_M_May, t14_D_May and t14_EW_May) were removed. As a result, three time points were omitted: replicate 1 t2 (1\u00a0hr), replicate 1 t7 (14\u00a0hr), replicate 2 t14 (53\u00a0hr). In total, four time points were omitted from the raw mRNA data.\n\n### Data processing\n\n#### Mathematical un-mixing\n\nMathematical un-mixing rests on the idea that a system of linear equations can be solved when (i) the number of equations is equal to the number of unknowns and (ii) these are independent (see supplemental note 1 in Supplementary file 1 for terminology, explanation, and validation of the method). In our experiment, this idea was implemented for each time point by means of a weighted \u2018un-mixing\u2019 matrix (W) whose rows represented the fractions of cell types (i.e. mothers, dead, and daughter cells) in the harvested \u2018mixed-cell samples\u2019. The fractional composition of each mixed-cell sample was acquired by using flow cytometry on dye stained cells, using PI and AvF to assess the amount of live mother cells, dead cells, and daughter cells (see: Materials and methods, Flow cytometry analysis of sample composition, and see Figure 2\u2014source data 1 Table S2.f for each time point\u2019s matrix).\n\nFor the mathematical un-mixing validation experiments, the fractional compositions of the mixed-cell samples were defined by mixing different pure cell sample types (i.e. log-phase, deceleration-phase, and stationary-phase cells) in known ratios. Protein and mRNA abundance values for the mixed-cell samples were measured by targeted (SRM) proteomics (for validation only) and shotgun proteomics (for validation and aging cells), or RNAseq transcriptomics (for validation and aging cells). Equation (3), present in the supplemental note 1 in Supplementary file 1, was implemented using a custom R script for the actual un-mixing procedure. Following the un-mixing of the data, should the resulting data contained \u2018unsolvable\u2019 entries (see supplemental note 1 in Supplementary file 1), a data quality criteria was applied: at least five time points per time trace (0\u201372 hr) should be solvable, otherwise the protein or transcript was removed from the dataset. In cases that passed this criteria but still contained one or more unsolvable entries in the time series, the missing data was linearly interpolated by the time points neighboring the data in question using the \u2018approx\u2019 interpolation function in R, implemented by the zoo package (Zeileis and Grothendieck, 2005). Datasets were subsequently normalized to 1 million for both the shotgun proteomes and transcriptomes.\n\n#### Correction for effect of beads\n\nA simple correction step accommodating for the specific protein losses caused by the presence of the beads was applied to the relevant data, and is explained in the supplemental note 2 in Supplementary file 1. The loss was specific for each protein, highly reproducible and independent of the ratio of beads to cells (Figure 2\u2014figure supplement 4). Briefly, a protein specific correction factor was calculated for each protein of the proteome from the difference between a sample with and without beads, averaged over two replicates. The correction was applied to the raw proteome datasets, prior to mathematical un-mixing, and on all samples that contained beads.\n\n#### Selection of the young time point reference sample\n\nA young time point to compare aged cells to was selected and processed as described in the supplemental note 3 in Supplementary file 1. Briefly, the time series proteome and transcriptome data were standardized to the difference between the starting time point (7.8 hr in the column) and an unprocessed sample, and only data from 7.8 hr and later was considered in the analyses. This was done to avoid mislabeling any biological recovery from the biotinylation and loading procedure as being aging related and to maintain quantitative datasets for analysis.\n\n#### Data fitting and filtering\n\nFor both the shotgun proteomes and transcriptomes, replicate datasets were fitted with a locally weighted scatterplot smoothing by\u00a0polynomial regression using a standard span value of 0.75 (R\u00a0Core Development Team, 2014), using the replicates of unprocessed samples, and the replicate time series of 7.8\u201372 hr, as input for the regression. Final datasets were generated by resampling the regression fit at each time point physically sampled in the experiment (including those prior to 7.8 hr, for completeness and consistency). Datasets are available in Table S2.5a and S3.5a for each of the proteome and transcriptome supplementary Tables (Figure 2\u2014source data 1 and 2). A noise threshold was applied to the time series datasets using the coefficient of variation between replicates with a cutoff of 0.3, corresponding to retention of 90.9 and 84.4% of the most reproducible data for the proteome and transcriptome, respectively (Figure 2\u2014figure supplement 6) (dataset available in Figure 2\u2014source data 3 and 4, Table S4 and S5). From this final dataset of 1494 proteins and 4904 transcripts, two proteins and two transcripts contained a negative data point in their time series profiles, and were removed from both mother and daughter datasets in subsequent analyses. Unless specified otherwise (see network methods), the final datasets used for analyses consisted of the fitted regression data (Figure 2\u2014source data 3 and 4, Table S4 and S5), from 7.8 hr of cultivation and later.\n\n#### GO term selection and annotation\n\nGene functional enrichments were determined by using the DAVID Bioinformatics Resources version 6.7 (Huang et al., 2009). Corresponding background gene lists of indicated size (Figure 3\u2014source data 1 Table S6) were used for each enrichment analysis. Annotation clusters determined by DAVID (groupings of related genes based on the agreement of sharing similar annotation terms) having an enrichment score of >0.5 were selected for consideration, if a GO term was enriched in the cluster with a p-value <0.1. For larger datasets, a more stringent enrichment score cutoff of either >0.9 or >1.0 was used, as seen from lowest score cutoffs listed in the table below per analysis. A representative naming for the enrichment was selected after evaluation of the annotation cluster's GO terms (see Figure 3\u2013source data 1 ,Table S6). Visualization of the representative terms in clouds was made using the R wordcloud package (Fellows, 2014) using the annotation cluster enrichment score as a size-scaling factor. If duplicate terms were present within a GO term enrichment list, the higher enrichment was used for visualization purposes. In one instance (the most responsive cluster of the proteome network) an unclear term (\u2018BNR repeat\u2019) representing three genes was omitted even though it passed our criteria for inclusion.\n\n#### Protein complex deregulation\n\nA curated list of protein complexes derived from the \u2018cellular component\u2019 GO was downloaded from yeastgenome.org (Cherry et al., 2012). Using the fold changes of gene products (i.e. either proteins or transcripts) at any given time point within a protein complex of interest, the degree of deregulation was assessed by measuring the interquartile of the distribution of the fold changes of the complex\u2019s gene products.\n\n#### Network analysis\n\nTo infer the high-level directional networks (Figure 6B, Figure 7\u2014figure supplement 1) and find causal relations, six data analysis steps (Figure 6\u2014figure supplement 1) were undertaken, as expanded upon below in the supplemental note 4 in Supplementary file 1. Briefly, these were: (i) Starting from the replicate datasets, the gene expression time series of both the transcriptome and proteome were filtered to remove flat and/or noisy profiles using the R package GPREGE (Zeileis and Grothendieck, 2005). (ii) The gene product networks (i.e transcriptome or proteome) were generated, based on the gene profiles of the respective time course datasets, using the R package GeneNet (Opgen-Rhein and Strimmer, 2007;\u00a0Schaefer et al., 2015). This included generating an undirected network by calculating the partial correlation among gene profiles (Figure 6\u2014figure supplement 1B and C, Figure 7\u2014figure supplement 4A). (iii) Following this, a directed network was generated from the undirected network, based on an assessment of a gene profile\u2019s ability to predict another gene profile (Figure 6\u2014figure supplement 1D and E, Figure 7\u2014figure supplement 4A) (Opgen-Rhein and Strimmer, 2007; Schaefer et al., 2015). (iv) The nodes in the network were clustered together, using the method in (de Magalh\u00e3es et al., 2012) using the R package igraph (Figure 6A, Figure 7\u2014figure supplement 4A) (Cs\u00e1rdi et al., 2015). The causal in/out connections among genes were calculated for all the network clusters and listed in a direction matrix (listed in Figure 6\u2014source data 1 Table S7). (v) A high-level directional network was generated, where the clusters were plotted in the order of their causal ranking by drawing the direction matrix as arrows between the clusters. (vi). A sensitivity analysis was made to determine the optimal sparsity of the networks and the cut-off for the partial correlation among gene profiles.\n",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "06247b76-e07b-434f-9b10-7e4eba008012",
+      "submission_id": "36a8a4df-0bdc-4444-9497-c05e87859313",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Karsten Weis, ETH Z\u00fcrich , Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.08527.049](https://doi.org/10.7554/eLife.08527.049)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"Protein Biogenesis Machinery is a Driver of Replicative Aging in Yeast\" for peer review at eLife. Your submission has been favorably evaluated by Naama Barkai (Senior Editor), Karsten Weis (Reviewing Editor), and two reviewers.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThis manuscript describes a novel column-based mother enrichment method to map dynamic transcriptome and proteome changes during the yeast replicative aging process. The authors perform a careful computational analysis to separate the contribution from mother, daughter and dead cells at each time point, and they discover new molecular changes that have not been previously identified. In particular, they find a progressive decoupling of the proteome from the transcriptome for biogenesis genes during aging.\n\nThere was a consensus amongst the reviewers that this work describes interesting and important observations and that this manuscript could be published in eLife upon appropriate revision. In particular, the reviewers felt that some of the key conclusions are overstated and need to be toned down, and that further experiments are needed to strengthen the results.\n\nEssential revisions:\n\nReviewer 1:1) The authors contend that they have isolated late age mothers. In Figure 1B they show a progressive decline in viability. How do they know that cells didn't die simply because they stayed longer in the column? They rely on additionanl criteria, but that data appears less convincing. Staining for bud scars provides the replicative age, and they track that with WGA intensity (Figure 1C). However, the difference is ~ 2-fold, from start to finish. Why doesn't the signal increase more? One would expect that by 72h most cells would have >20 scars, while close to the start only ~2-3 scars. Likewise, cell size increases {less than or equal to} 2-fold (Figure 1D). Others reported that the size increase is ~ 4-fold (DOI: 10.4161/cc.10.1.14455). Addressing these issues is important, for their thesis that properly aged cells have been isolated.\n\n2) They report a strong un-coordination between the transcriptome and the proteome, getting worse in later stages. They obtained data for 1494 proteins and 4904 mRNAs. Hence, they did not sample >1/2 of the proteome. Still, sampling 1494 gene products represents a substantial dataset. My concerns have to do with their transcriptome/proteome comparisons. It has been argued that log2 comparisons (which is what they are doing) maybe prone to artifacts (PNAS, 107: 21487). A comprehensive comparison of available proteome, transcriptome and ribosome profiling data in yeast found widespread errors due to noisy data and incomplete coverage (DOI: 10.1371/journal.pgen.1005206), accounting for most of the discrepancies between mRNA and protein abundance. The data here are internally controlled, since the same methods are applied throughout the time series. Nonetheless, since proteome/transcriptome discrepancies are central, it will be prudent to analyze their data with different statistical models, and report on the overlap. They should also report how their findings for the early time points (which should be very similar to populations sampled previously) stack up against the literature.\n\n3) They conclude that changes in the translation machinery are causal to the aging process. This may be true, and fits well with the literature. However, as I understand it, they exclusively rely on the directionality of the network they have built (shown in Figure 5). For that, they look at whether the profile of a given gene product could predict the profile of another gene product. The ones that could not be predicted were clustered as causal. Hence, the approach appears to rely on negative evidence (lack of predictability) to arrive at such a powerful conclusion. For such a conclusion, I think some additional kind of evidence must be provided. At a minimum, they should look at the numerous mutations (mostly loss-of-function, but some gain-of-function) that have been reported to extend longevity in yeast. What is the enrichment for these gene products in their various clusters? Also, can they point to some new, unidentified ones from their study and test directly their role in determining replicative lifespan?\n\nReviewer 2: 1) The authors found that the biogenesis genes are enriched in the gene cluster, the transcriptional changes of which are \"most causal\" (ranked number 1) to other transcriptional changes during aging. They then immediately claim in the subsection \u201cNetwork interference identifies protein biogenesis related genes as casual in yeast aging\u201d that \"Taken together, as the biogenesis transcripts were the most predictive of all the changes we measured, our analyses support a model whereby the uncoupling of protein levels of biogenesis-related genes from their transcript levels is causal for the changes occurring in aging yeast\". We think the authors need to better explain their reasoning here, because it is a key claim in the paper.\n\nSpecifically, we would like to understand the following: (a) Is the decoupling of protein levels from transcript levels of biogenesis genes the causal factor for the transcriptiome changes, or the changes of both transcriptome and proteome, or their global decoupling during aging? (b) What is the mechanism for the decoupling to cause transcriptome changes, since it appears that the authors came up with this claim from their transcriptional network analysis? (c) If the authors want to claim that the decoupling of protein levels from transcript levels of biogenesis genes can cause the global decoupling of the proteome and transcriptome during aging (with which we are totally fine), then the best evidence would seem to arise from a similar network analysis for the decoupled time series of the decoupled genes (Q2 and Q4 in Figure 4). The network correlation analysis of the transcriptome in Figure 5 seems less than ideal in supporting this claim.\n\nTo summarize this point, the authors present very rich and impressive data, but we believe that they need to be more specific about what they mean in order to draw such strong conclusions. A titrated summary would be sufficiently interesting: The decoupling of biogenesis protein levels from their transcript levels through some early-life molecular regulation (e.g. a general stress response?) can drive the global decoupling of the proteome and transcriptome, which is a consequence of aging and an important molecular phenotype of aged cells. Here, the overabundance of biogenesis genes is an early event driving a specific molecular consequence of aging, rather than the cause of all the transcriptome and proteome changes during aging.\n\n2) It is stated that only 30% of the cells are alive at the final (12th) time point and the rest have died due to aging. Is it possible that since the majority of cells have died, some of the observed proteomic/transcriptomic changes could actually be conducive towards halting aging rather than driving it? Put another way, in a sense, this method is selecting for long-lived cells and thus, some of the changes could reflect beneficial changes rather than deleterious ones, which is why those cells are still alive after so many replications. For example, transcriptional inhibition of biogenesis genes is a major aspect of the general stress response (which has been observed in Figure 3B) that promotes longevity. Is it possible that these long-lived cells are a subpopulation with very high stress response levels and the method is biased toward these responses?\n\n3) The authors should do a better job organizing and illustrating the rich dynamic data they have collected. For example, what is the fold-change time series (protein and transcript) of different gene groups (glycolysis, stress response, mitochondria)? Figure 3B did not provide information about actual fold-change values. Similarly, Figure 4C only shows 72 hr aged samples. It would be interesting to see how various gene groups alter their locations in the quadrant plots over time. In addition, the extraction of the detailed data from the supplemental tables is overly difficult. This point is especially important given the utility and importance of the dynamic data to the community. The authors need to facilitate access and plotting of the data (like the plots in Figure 2D and E) in a straightforward manner. We would strongly suggest a dedicated website.\n\nTechnical concerns:\n\nSince the authors presented a novel mother enrichment method, a few control experiments might be needed to further validate the approach:\n\n1) The preparation for cell loading takes about 90 minutes and may involve a number of stress responses, including starvation in PBS and low temperature in 4 C water. Would the whole loading and column culturing processes affect the fitness and lifespan of cells? In accordance with this concern, the authors actually observed the induction of a number of general stress genes even at the early phase of lifespan (Figure 3B). To prove that the cells are aging normally, a lifespan curve of cells growing under this column condition and a comparison with the lifespan curve of cells growing on regular culture plates (microdissection) or microfluidics (as in Lee et al., 2012) is sufficient.\n\n2) It would be more convincing if the authors were able to use conventional methods to confirm the protein expression and transcriptional changes of a couple of the most interesting genes they identified (e.g. biogenesis genes?). For example, they could use biotin-affinity sorting or a genetic mother enrichment program to collect old mother cells, and use q-PCR and westerns to measure the transcription and expression levels.\n\n3) Single mother cells divide with different rates and therefore at later time points the method collects mother cells with mixed ages. As shown in Figure 1\u2013figure supplement 2E, mother cells have a very wide distribution of ages at 44 hr and 68 hr. Does this complicate data interpretation? Is it possible to further separate mother cells into different age groups? At the very least a thorough and convincing discussion is needed.\n",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a22e7b7a-93ea-454a-99d1-d31e45043a06",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C1",
+      "claim": "A novel column-based cultivation method was developed that allowed generation of large numbers of advanced-age yeast cells in a constant environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we developed a novel column-based cultivation method that allowed us to generate large numbers of advanced-age cells in a constant environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the development and validation of the column-based cultivation method in the Results section and Materials and methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "ad5140fa-5a88-4ca5-a564-68c5680d25a1",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C2",
+      "claim": "The column-based cultivation method maintained constant oxygen, glucose, and pH levels during cultivation.",
+      "claim_type": "EXPLICIT",
+      "source": "The flowing medium also provided fresh nutrients and oxygen and ensured constant culture conditions, as confirmed for pH, glucose, and oxygen levels (Figure 1\u2014figure supplement 2A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1\u2014figure supplement 2A-C shows measurements confirming constant oxygen, glucose, and pH levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "37c93508-7931-4bfe-995e-fba8576eac63",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C3",
+      "claim": "Up to 10^9 mother cells could be retained per column.",
+      "claim_type": "EXPLICIT",
+      "source": "Because we could retain up to 109 mother cells per column (Figure 1\u2014figure supplement 3), we could produce sufficient numbers of aged cells for performing parallel proteome and transcriptome analyses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1\u2014figure supplement 3 shows cell counts present in each sample harvested from the columns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "e20c4793-e866-4565-8ddf-b991f5c8217c",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C4",
+      "claim": "The viability of mother cells over time in the column-based cultivation method was in excellent agreement with the lifespan curve of yeast observed in a microfluidic device.",
+      "claim_type": "EXPLICIT",
+      "source": "From this data, we derived the viability of the mother cells over time, which we found to be in excellent agreement with the lifespan curve of yeast as observed in a microfluidic device (Huberts et al., 2014) (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1B shows comparison of viability curves from the column method and microfluidic device data from Huberts et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "ffe9bed1-2371-4495-bdcb-dc911fbc58bd",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C5",
+      "claim": "Aging yeast cells show increased cell size.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the forward scatter of the flow cytometer as a rough proxy for cell size, we could qualitatively observe the cell size increase of live mothers that is known to occur in aging mother cells (Egilmez et al., 1990) (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1C shows forward scatter data indicating cell size increase with age, and citation to Egilmez et al., 1990 provides literature support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "df77abb4-0c17-4d51-8aac-a861c4808083",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C6",
+      "claim": "Aging yeast cells accumulate bud scars.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, using fluorophore-conjugated wheat-germ agglutinin, which labels bud scars that appear after every division (Powell et al., 2003), we observed an increase of bud scar staining on mother cells in the column, as also visualized by confocal microscopy (Figure 1D, Figure 1\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1D and Figure 1\u2014figure supplement 2D show bud scar staining and counting data, with citation to Powell et al., 2003.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "25111073-8d05-4ee6-95ae-6a14a0555d49",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C7",
+      "claim": "A mathematical un-mixing method was developed to determine the molecular phenotype of aging mother cells without contributions from daughter or dead cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Next, we developed a combined experimental and mathematical method to determine the molecular phenotype of aging mother cells without contributions from daughter or dead cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the mathematical un-mixing approach and its validation in the Results section and supplemental notes.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "0d6fbc0d-b091-405c-9189-530f080ebd5e",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C8",
+      "claim": "The mathematical un-mixing method was validated with <16% average error for RNAseq transcriptome, targeted proteome, and global proteome data.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments using samples containing mixed cell populations with known molecular phenotypes validated this mathematical un-mixing method for the RNA sequencing (RNAseq) transcriptome, targeted (selected reaction monitoring) proteome, and global (shotgun) proteome data with a <16% average error (Figure 2\u2014figure supplement 1 and 2; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2\u2014figure supplement 1 and 2 show validation results for the un-mixing method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "7f7f73a7-4fe3-4fe3-b75a-95e8094de9e1",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C9",
+      "claim": "The final datasets consisted of profiles for 1494 proteins and 4904 transcripts from aging mother cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This yielded profiles for 1494 proteins and 4904 transcripts from aging mother cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the number of proteins and transcripts in the final dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "c6af1816-a13b-4f46-aa9a-47dffb1d4566",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C10",
+      "claim": "Proteomes of aging mother cells diverge from the youthful state over time.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlation analyses between the proteomes of young cells and the proteomes of aging mother cells confirmed the expected divergence of the aging cell away from the youthful state (Figure 3A, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3A shows Spearman correlation decreasing over time between young and aging mother cell proteomes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "aa8c7b14-9d2e-46d9-9661-78267b788062",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C11",
+      "claim": "Daughters from later time points showed a partially aged signature.",
+      "claim_type": "EXPLICIT",
+      "source": "Daughters from later time points showed a partially aged signature (Figure 3\u2014figure supplement 2), consistent with the notion that rejuvenation of daughter cells is incomplete later in a mother's life (Kennedy et al., 1994).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3\u2014figure supplement 2 shows daughter cell profiles with aging signatures, and citation to Kennedy et al., 1994 provides literature support.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "1b181fbe-8d89-4094-b9fa-7074cf10dfe2",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C12",
+      "claim": "Specific proteome changes detected in the study agree with observations in literature, including changes related to glycolysis, gluconeogenesis, energy reserve pathways, stress response proteins, and mitochondrial changes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found agreement between specific proteome changes detected by us and observations present in literature, including changes related to glycolysis, gluconeogenesis (Lin et al., 2001), increased expression levels in energy reserve pathway proteins (Levy et al., 2012), increases in stress response protein levels (Erjavec et al., 2007; Crane et al., 2014), and mitochondrial changes (Hughes and Gottschling, 2012) (Figure 3B, Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3B and Figure 3\u2014figure supplement 3 show proteome changes, with multiple citations to literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "d6d467a1-b504-4694-80e2-1630a2e04778",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C13",
+      "claim": "Levels of the stress-related chaperone Hsp104 and the translation elongation factor Tef1 increase with age at the single-cell level.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we see the levels of the stress-related chaperone Hsp104 and the translation elongation factor Tef1 to increase with age (Figure 3\u2014figure supplement 4), similar to what was shown using a microfluidic platform tracking single cells (Zhang et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 3\u2014figure supplement 4 shows single-cell level protein dynamics, with citation to Zhang et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "92abea91-e1b0-4653-91bf-9a4a38bb328d",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C14",
+      "claim": "64% of proteins that showed a twofold change by the end of the yeast lifespan also showed a significant change in the same direction at an earlier time point.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we found that 64% (184/288 total changes) of the proteins that showed a twofold change by the end of the yeast lifespan also showed a significant change in the same direction at an earlier time point (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides quantitative analysis of protein changes over time shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "af988ef3-70e4-4fd4-86bf-b62b5a8fb8e2",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C15",
+      "claim": "Aging is a gradual process occurring from early on.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that aging is a gradual process occurring from early on.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that changes start at young age and are gradual and mostly unidirectional.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "4c8df9d5-0ed6-4658-a72c-3a90d72ced4a",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C16",
+      "claim": "The correlation between proteome and transcriptome declined steadily with age, from 0.75 to 0.70.",
+      "claim_type": "EXPLICIT",
+      "source": "When comparing this correlation in time, however, we found that it declined steadily with age, down to a correlation of 0.70 (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5A shows the declining Spearman correlation between proteome and transcriptome over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "20896e09-21bb-4347-9f7f-8ef8f19abb58",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C17",
+      "claim": "Protein levels become increasingly uncoupled from their transcript levels during aging.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that, over time, protein levels were increasingly uncoupled from their transcript levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the decreasing correlation between proteome and transcriptome and different GO terms describing changes in proteins vs transcripts.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "b6291e6c-8153-434a-8a01-3c0a8bd0ff06",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C18",
+      "claim": "38.4% of analyzed transcript-protein pairs were located in quadrant 2 of the co-expression map, where proteins were over-represented relative to their transcripts.",
+      "claim_type": "EXPLICIT",
+      "source": "Of all analyzed transcript\u2013protein pairs, 38.4% were located in Q2, suggesting a global tendency towards relative protein overabundance with aging (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5B shows the co-expression map with genes distributed across quadrants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "8f0a938f-86f9-4765-9574-4bba5ccd3cf9",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C19",
+      "claim": "Quadrant 2 of the co-expression map was strongly enriched in 'translation regulation' gene products (i.e. ribosome and protein biogenesis machinery).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, Q2 was strongly enriched in 'translation regulation' gene products (i.e. ribosome and protein biogenesis machinery) (Figure 5B), and the extent of their overabundance progressively increased as the cells aged (Figure 5\u2014figure supplement 2,3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5B shows GO term enrichments for quadrant 2, and Figure 5\u2014figure supplement 2,3 show the progressive increase in overabundance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "c9792edd-07b4-4976-a83a-d9787bf7a191",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C20",
+      "claim": "A high-level directional network was reconstructed to reveal the interdependences of changes in transcript expression during aging.",
+      "claim_type": "EXPLICIT",
+      "source": "To elucidate the causal order of changes during aging, we reconstructed a high-level directional network revealing the interdependences of changes in transcript expression (Figure 6, Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 6 shows the high-level directional network, and the manuscript describes the network reconstruction method.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "56c48377-7c29-4773-98ed-4bf8f182efc6",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C21",
+      "claim": "The very first causal-ranked cluster in the transcriptome network was highly enriched for gene products associated with protein biogenesis (i.e. ribosome biogenesis and tRNA processing).",
+      "claim_type": "EXPLICIT",
+      "source": "This high-level directional network of the transcriptome data showed that the very first causal-ranked cluster in the network that we detected was highly enriched for gene products associated with protein biogenesis (i.e. ribosome biogenesis and transfer RNA [tRNA] processing; Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 6B shows the causal ranking of clusters with GO term enrichments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "8b88949a-a2c7-4771-baa2-e9bed22be919",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C22",
+      "claim": "Genes from the most causal cluster in the transcriptome network were enriched in quadrant 2 of the co-expression map, which showed uncoupled expression.",
+      "claim_type": "EXPLICIT",
+      "source": "These are the same biological processes that had uncoupled transcript and protein levels (Figure 5B); indeed, genes from this causal cluster were enriched in Q2 of the co-expression map, which showed uncoupled expression (Figure 6\u2014figure supplement 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 6\u2014figure supplement 2A and B show the enrichment of cluster 1 genes in quadrant 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "f82189d0-1015-4b6d-9fb0-6fb9a13f8183",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C23",
+      "claim": "The uncoupling of protein and transcript levels for 'biogenesis'-related genes has a central role in the aging process and may affect the transcript and protein abundances of other genes.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses suggest that the uncoupling of protein and transcript levels for 'biogenesis'-related genes has a central role in the aging process, and may affect the transcript and protein abundances of other genes, as elaborated upon in the discussion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the network analysis showing biogenesis genes as most causal and their uncoupled expression.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "14a24ab0-236a-4bd8-b40a-2a769d0af0ea",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C24",
+      "claim": "An increased deviation from the original stoichiometry of protein complexes occurred with aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, using curated lists of protein complexes (Cherry et al., 2012), we found that an increased deviation from the original stoichiometry occurred with aging (Figure 7B\u2013D, and Figure 7\u2014figure supplement 1\u20133).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 7B-D and Figure 7\u2014figure supplement 1-3 show loss of stoichiometry in protein complexes over time.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "18108c34-5153-44c7-8b02-3030bbbbb89a",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C25",
+      "claim": "The vacuolar adenosine triphosphatase and the nuclear pore complex lose stoichiometry with aging.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed many complexes that were not previously implicated in aging to be age-affected, and we found previously implicated protein complexes such as the vacuolar adenosine triphosphatase (Hughes and Gottschling, 2012) and the nuclear pore complex (Lord et al., 2015; Denoth-Lippuner et al., 2014) to lose stoichiometry (Figure 7C and D and Figure 7\u2014figure supplement 1,2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 7C and D show loss of stoichiometry in these complexes, with citations to literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "6e1b9a2d-ccf0-42cb-8b7b-ec1342530561",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C26",
+      "claim": "The global stoichiometry loss was greater in aged mothers compared with the daughter population.",
+      "claim_type": "EXPLICIT",
+      "source": "The global stoichiometry loss was greater in aged mothers compared with the daughter population (Figure 7\u2014figure supplement 3A), confirming that this is an aging-related phenotype.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 7\u2014figure supplement 3A shows comparison of stoichiometry loss between mothers and daughters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "fb3ebf1f-9fbc-4ce0-b265-5b5f150e4b77",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C27",
+      "claim": "The stoichiometry loss was greater overall at the proteome level than at the transcriptome level.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we found that the stoichiometry loss was greater overall at the proteome level than at the transcriptome level (Figure 7B), supporting the observation that protein levels uncouple from their transcript levels.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 7B shows bean plots comparing stoichiometry loss in proteome vs transcriptome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "86082081-31e0-4017-baf7-5a4d11c68ac7",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C28",
+      "claim": "The uncoupling of protein levels of biogenesis-related genes from their transcript levels is causal for the changes occurring in aging yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these analyses, we propose a model whereby the uncoupling of protein levels of biogenesis-related genes from their transcript levels is causal for the changes occurring in aging yeast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, based on the integration of multiple analyses including co-expression maps and network inference.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "4ff4e32e-c2aa-4d08-86ed-e5315213875b",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C29",
+      "claim": "Proteins of the translation machinery that are uncoupled from transcript levels accumulate in cells with age.",
+      "claim_type": "EXPLICIT",
+      "source": "The model proposes that proteins of the translation machinery that are uncoupled from transcript levels accumulate in cells with age (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 5B shows translation regulation genes in quadrant 2 with protein overabundance relative to transcripts.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "b2242761-a75d-4a0e-8790-cc06be9c980b",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C30",
+      "claim": "The uncoupling of biogenesis genes might contribute to further uncoupling of the proteome from the transcriptome as a whole.",
+      "claim_type": "EXPLICIT",
+      "source": "As the biogenesis genes are themselves involved in translation, their uncoupling might contribute to further uncoupling of the proteome from the transcriptome as a whole.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the role of biogenesis genes in translation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "43b71348-acbb-47cc-a170-8c9e19d68795",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C31",
+      "claim": "General uncoupling of the proteome from the transcriptome has degenerative effects including cell size increase, protein aggregations, and loss of stoichiometry in protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "This general uncoupling has degenerative effects (i.e. cell size increase, protein aggregations and loss of stoichiometry in protein complexes), that stimulate transcriptional responses in the cell (i.e. metabolic changes and activated stress responses), which further contributes to changes in the proteome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed consequences of uncoupling described in the Results section.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "eeca423a-1095-4a0b-9f95-37fc5e5d48ae",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C32",
+      "claim": "Ribosomal proteins are highly translated and highly stable.",
+      "claim_type": "EXPLICIT",
+      "source": "Ribosome footprinting has shown these proteins to be highly translated (Ingolia et al., 2009), and protein turnover experiments have shown them to be highly stable (Belle et al., 2006); thus, it is possible that their overabundance may result from the combination of the dynamics of protein biogenesis, protein turnover, and mRNA stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to Ingolia et al., 2009 and Belle et al., 2006 provide literature support for these properties.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "7bb8228e-7b97-456f-9922-36707557f27e",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C33",
+      "claim": "Ribosomal proteins showed a low degree of loss of stoichiometry at the protein complex level.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the ribosomal proteins themselves showed a low degree of loss of stoichiometry at the protein complex level in our data (Figure 7C), supporting the idea that they are still active and contributing to uncoupling in the cell.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 7C shows ribosome complex stoichiometry over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "36a79743-8a9f-4b4d-865b-06345269898d",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C34",
+      "claim": "Cell size may increase due to protein overproduction and result in metabolic changes.",
+      "claim_type": "EXPLICIT",
+      "source": "First, cell size may increase due to protein overproduction and result in metabolic changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed protein overproduction and known relationship between cell size and metabolism.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "ed373565-19fd-4032-9cd8-2b935e544e7c",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C35",
+      "claim": "Proteins being overproduced at different rates will alter protein complex stoichiometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, proteins being overproduced at different rates will alter protein complex stoichiometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the observed uncoupling and loss of stoichiometry.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "7208616d-1a91-444e-bc0a-642ef35a25da",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C36",
+      "claim": "Many documented phenotypes of aging may result from altered protein complex stoichiometry, including the formation of protein aggregates, increased reactive oxygen species formation by a dysfunctional mitochondrial transport chain, and loss of gene silencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Many documented phenotypes of aging may result from this, including the formation of protein aggregates (Erjavec et al., 2007), increased reactive oxygen species formation by a dysfunctional mitochondrial transport chain (Laun et al., 2001), and loss of gene silencing (Hu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to Erjavec et al., 2007, Laun et al., 2001, and Hu et al., 2014 provide literature support for these phenotypes.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "442ad3e0-c7f1-4bbb-bdd6-a0c3b0a7d8e3",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C37",
+      "claim": "Altering the rates of protein production (i.e. translation) or degradation (i.e. autophagy) have repeatedly been shown to influence longevity across a wide range of organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, altering the rates of protein production (i.e. translation) or degradation (i.e. autophagy) have repeatedly been shown to influence longevity across a wide range of organisms (see (Wasko and Kaeberlein, 2014; Johnson et al., 2013; Cuervo, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to Wasko and Kaeberlein, 2014, Johnson et al., 2013, and Cuervo, 2008 provide literature support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "eddce07b-ff70-42a3-952f-518b1c7a2fa1",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C38",
+      "claim": "Decreases in activity of translation activators TOR and S6 kinase result in increased lifespan in yeast, worms, flies, and mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The translation activators, target of rapamycin (TOR) and S6 kinase, fall into this category, and decreases in their activity result in increased lifespan in yeast (Fabrizio et al., 2001; Kaeberlein et al., 2005), worms (Vellai et al., 2003; Pan et al., 2007), flies (Kapahi et al., 2004), and mice (Lamming et al., 2012; Selman et al., 2009), as does calorie restriction and drugs such as rapamycin, which are also modulators of protein biogenesis pathways (Johnson et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple citations provide literature support for lifespan extension effects across organisms.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "37d82546-9bf8-46da-be01-dae0bb6c45f7",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C39",
+      "claim": "Deletions in ribosomal subunit components have positive effects on lifespan in both yeast and worms.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, deletions in ribosomal subunit components have positive effects on lifespan in both yeast (Steffen et al., 2008) and worms (Hansen et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citations to Steffen et al., 2008 and Hansen et al., 2007 provide literature support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "3287f5a5-74e2-47c6-9faf-65ffe662a746",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C40",
+      "claim": "The model explains why interventions targeting protein synthesis, or repairing the downstream consequences, can serve as interventions in aging.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model explains why targeting protein synthesis, or repairing the downstream consequences, can serve as interventions in aging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Abstract and elaborated in the Discussion based on the proposed model.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "3b3de559-ea2e-49cc-8155-261ab6b412aa",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C41",
+      "claim": "Aging is a main risk factor for cardiovascular disease, neurodegeneration, and cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Aging, the gradual decrease in function occurring at the molecular, cellular, and organismal level, is a main risk factor for cardiovascular disease, neurodegeneration, and cancer (Niccoli and Partridge, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to Niccoli and Partridge, 2012 provides literature support.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "30c13cfd-df35-4ca7-b47d-1b90bf20fe1e",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C42",
+      "claim": "The rate of aging is influenced by diverse factors, including protein translation, protein quality control, mitochondrial dysfunction, and metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of aging, however, is influenced by diverse factors, including protein translation, protein quality control, mitochondrial dysfunction, and metabolism (Kennedy and Kaeberlein, 2009; Webb and Brunet, 2014; Lagouge and Larsson, 2013; Barzilai et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple citations provide literature support for these factors.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "230621f3-c128-4401-a73b-ff5282cf5c01",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C43",
+      "claim": "Saccharomyces cerevisiae can produce 20\u201330 daughter cells before its death.",
+      "claim_type": "EXPLICIT",
+      "source": "Important insights into the complex process of aging originate from research on the unicellular eukaryote Saccharomyces cerevisiae, which can produce 20\u201330 daughter cells before its death (Mortimer and Johnston, 1959, and see Wasko and Kaeberlein, 2014; Denoth Lippuner et al., 2014 for recent reviews).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to Mortimer and Johnston, 1959 provides original observation, with additional review citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "ba1a3271-3be7-4484-bd7d-17f52bfdb95e",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C44",
+      "claim": "The prototrophic Saccharomyces cerevisiae strain YSBN6 (MATa) was used for the phenotyping of yeast replicative aging.",
+      "claim_type": "EXPLICIT",
+      "source": "The prototrophic Saccharomyces cerevisiae strain YSBN6 (MATa) was used for the phenotyping of yeast replicative aging (Canelas et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section with citation to Canelas et al., 2010.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "37de58ac-ba6b-4318-8636-ee88231a5da5",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C45",
+      "claim": "Cells were grown in yeast nitrogen base (YNB) without amino acids supplemented with 2% glucose at 30\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The cells were grown in yeast nitrogen base (YNB) without amino acids (ForMedium, Norfolk, UK) supplemented with 2% glucose at a temperature of 30\u00b0C, unless indicated differently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "cedaa21d-c0eb-421a-9b6e-79d707620ff5",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C46",
+      "claim": "Biotinylated cells were labeled with streptavidin-coated iron beads.",
+      "claim_type": "EXPLICIT",
+      "source": "To obtain aged yeast cells, we bound streptavidin-conjugated iron beads to biotinylated cells (adapted from Smeal et al., 1996) from an exponentially growing culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described in the Results section with citation to Smeal et al., 1996.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "d39d79c5-87e5-4e93-b2cf-3eccbce46a18",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C47",
+      "claim": "Daughter cells do not inherit the iron beads because the yeast cell wall remains with the mother during mitosis.",
+      "claim_type": "EXPLICIT",
+      "source": "The daughter cells do not inherit the iron beads, as the yeast cell wall remains with the mother during mitosis (Smeal et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to Smeal et al., 1996 provides support for this mechanism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "8fc55774-fc9e-42d9-862c-6ca3ef587824",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C48",
+      "claim": "The age distribution of cells broadened over time in the column cultivation.",
+      "claim_type": "EXPLICIT",
+      "source": "Computer simulations showed that the age distribution broadened over time (Figure 1\u2014figure supplement 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 1\u2014figure supplement 4A,B shows simulated age distributions at different time points.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "c8ae47e5-1125-46a1-95cb-021e551a9b24",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C49",
+      "claim": "Cells were harvested at exponentially increasing time intervals to maximize the differences between time points at later ages.",
+      "claim_type": "EXPLICIT",
+      "source": "The broadened age distribution results in a lower resolution making detecting the actual changes occurring at later time points more difficult, and we therefore harvested cells at exponentially increasing time intervals to maximize the differences between time points at later ages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is explained in the Results section based on the modeling of age distributions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "7a1b3d4a-7e1e-49cb-b931-2875a716328e",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C50",
+      "claim": "Two replicate campaigns were performed, generating 16 unique time points in total.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we performed two replicate runs of the column-captured cell culturing campaigns. Campaign 1 generated an unprocessed sample and 14 column samples and campaign 2 generated another unprocessed sample and 8 column samples. In total, two unprocessed samples combined with 16 unique time points were generated (Figure 2\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2\u2014figure supplement 5 shows the experimental pipeline with replicate campaigns.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "c58fee8f-ea0e-4339-8bda-a102c1712c04",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C51",
+      "claim": "The replicates of proteome and transcriptome data were in excellent agreement with Spearman correlations >0.85.",
+      "claim_type": "EXPLICIT",
+      "source": "We found the replicates to be in excellent agreement (Spearman correlations >0.85) (Figure 2B,C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 2B,C shows correlation plots between replicates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "1bd5c661-80ac-420d-adb7-edb1d5674df8",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C52",
+      "claim": "A coefficient of variation cutoff of 0.3 was used to select the most reproducible expression profiles, consisting of ~90.9% of the proteome and ~84.4% of the transcriptome datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "The coefficient of variation was calculated between the replicate datasets for each gene-product profile and a cutoff of 0.3 was used to select the most reproducible expression profiles between replicates, consisting of \u223c90.9% of the proteome, and \u223c84.4% of the transcriptome datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the figure legend for Figure 2\u2014figure supplement 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "a2630a57-8846-491c-a83d-15f1b82b5ef7",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C53",
+      "claim": "The starting correlation between proteome and transcriptome was 0.75, in agreement with other single-study comparisons between yeast proteomes and transcriptomes.",
+      "claim_type": "EXPLICIT",
+      "source": "To compare the changes between the proteome and transcriptome, we determined the non-parametric Spearman rank correlation, and found a starting correlation of 0.75, a value in agreement with other single-study comparisons between yeast proteomes and transcriptomes (Cs\u00e1rdi et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to Cs\u00e1rdi et al., 2015 provides comparison to literature values.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "25621bda-2e7c-4e56-bd9f-c23adf84e7d6",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C54",
+      "claim": "The decreasing trend in proteome-transcriptome correlation is not an experimental artefact.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, this trend is also not an experimental artefact, since samples originating from all time points were treated identically, and both proteome and transcriptome datasets originated from the same biological samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a control consideration in the Results section.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "b6dff6f6-4e8e-4a97-b48e-9b2f7aff4977",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C55",
+      "claim": "At increased cell size and low rates of glucose influx, cells switch to respiration.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased cell size could reduce glucose influx rates per cell volume and induce metabolic changes, for example, at low rates of glucose influx, cells switch to respiration (Huberts et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Citation to Huberts et al., 2012 provides support for this metabolic relationship.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "7f889327-0440-425e-8c4a-8980574a7f78",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C56",
+      "claim": "Metabolic signatures related to starvation and oxidative stress were consequences of aging found in the transcript-based network analysis and proteome dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, in our transcript-based network analysis (Figure 6B) as well as in our proteome dataset (Figure 3B), we found that metabolic signatures related to starvation and oxidative stress were consequences of aging.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 6B and Figure 3B show these metabolic signatures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "c790d625-640e-4c82-9c97-dfc4a6ade22c",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C57",
+      "claim": "The most causal cluster of the proteome network was enriched for chaperone proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The most causal cluster of the proteome network was enriched for chaperone proteins, reflecting a cellular response to internally changing conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section describing the proteome network analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "193d8021-6b69-4966-b51e-e93914c2aacd",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "claim_id": "C58",
+      "claim": "The causal clusters of the proteome network tended to be expressed according to their transcriptional message (i.e. coupled expression), while the responsive clusters represented increasingly uncoupled expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that the causal clusters of the proteome network tended to be expressed according to their transcriptional message (i.e. coupled expression; Q1, Q3), while the responsive clusters represented increasingly uncoupled expression (Q2, Q4) (Figure 6\u2014figure supplement 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Figure 6\u2014figure supplement 2C shows enrichment analysis of network clusters in co-expression quadrants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "10dd1e5e-22f5-4c3d-b0dd-558eb3e5d63e",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A novel column-based cultivation method was developed and validated for aging yeast cells. The method maintained constant environmental conditions (oxygen, glucose, pH), retained up to 10^9 mother cells per column, and produced cells with aging phenotypes (increased cell size, bud scar accumulation) consistent with microfluidic-based lifespan measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 provide converging evidence for successful method development. The viability curve matches independent microfluidic data (C4), environmental parameters are controlled (C2), and known aging markers are observed (C5, C6). The method is well-validated through multiple orthogonal measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "070815cd-c3a5-4e02-95fc-ea4ad51ae15b",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A mathematical un-mixing method was developed and validated to determine the molecular phenotype of aging mother cells from mixed populations. The method achieved <16% average error across multiple omics platforms and yielded profiles for 1494 proteins and 4904 transcripts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9 demonstrate rigorous validation of the un-mixing approach. The <16% error rate (C8) was established using samples with known compositions, and the method was successfully applied to generate comprehensive datasets (C9). The validation experiments provide strong support for the approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "bbc9cb8a-e33d-44d0-ae4b-86a80a4480fb",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Aging mother cells show gradual, unidirectional molecular changes starting early in life. The proteome diverges from the youthful state over time, with 64% of proteins showing twofold changes also changing significantly at earlier time points. Changes agree with literature observations for specific proteins and pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C15 are well-supported by the data and literature comparisons. The gradual nature of aging (C14, C15) is quantitatively demonstrated, and agreement with prior single-cell studies (C13) and pathway-level changes (C12) validates the population-level approach. The daughter cell data (C11) provides additional confirmation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "65f2f192-a011-4817-a4f5-bd24dd75802b",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The correlation between proteome and transcriptome declined steadily with age from 0.75 to 0.70, indicating increasing uncoupling of protein levels from transcript levels during aging. This trend is not an experimental artifact.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C17, C53-C54 demonstrate a robust finding. The starting correlation (0.75) agrees with literature values (C53), the decline is consistent across multiple correlation methods (Figure 5\u2014supplement 1), and experimental controls rule out artifacts (C54). The modest magnitude of change (0.05 correlation units) is statistically supported but biologically significant given the dataset size.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "2d7a9e13-6d46-4062-bb96-8c1f8c234eac",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "38.4% of transcript-protein pairs showed protein overabundance relative to transcripts (quadrant 2), with strong enrichment for translation regulation genes (ribosome and protein biogenesis machinery). This overabundance increased progressively with age.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 identify a key molecular signature of aging. The quantification of Q2 enrichment (38.4%) and the GO term analysis showing translation regulation enrichment are well-supported by the data. Figure 5\u2014supplement 2,3 demonstrate the progressive nature of this uncoupling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "791a9913-9d41-428b-861a-05a118e615fa",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Network inference analysis identified protein biogenesis genes (ribosome biogenesis, tRNA processing) as the most causally-ranked cluster in the transcriptome network. These genes were enriched in the uncoupled expression quadrant (Q2), suggesting a central role in aging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 present a sophisticated computational analysis. The network reconstruction method is described and validated (supplemental note 4), and the convergence of network causality ranking with the co-expression uncoupling pattern provides strong support for the central role of biogenesis genes. However, the causal interpretation relies on computational inference rather than experimental manipulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "7223b9d4-77e5-4d01-907d-9b3aed2d89fa",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Protein complex stoichiometry is progressively lost during aging, with greater loss at the proteome level than transcriptome level. This loss is greater in aged mothers than daughters, confirming it as an aging-related phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 demonstrate a clear consequence of molecular aging. The use of curated protein complex lists (C24), validation with known aging-affected complexes (C25), mother-daughter comparison (C26), and proteome-transcriptome comparison (C27) provide multiple lines of evidence. The interquartile range metric for stoichiometry loss is appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "54f0f515-b1ae-4803-b9fb-826d665f5821",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose a model where uncoupling of biogenesis-related protein levels from transcript levels is causal for aging changes. This uncoupling leads to protein accumulation, further proteome-transcriptome uncoupling, and degenerative effects including cell size increase, protein aggregation, and loss of complex stoichiometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C28-C31 present the central model but rely heavily on inference from correlative data. While the network analysis suggests causality (C23), no experimental perturbations directly test whether biogenesis gene uncoupling causes downstream effects. The model is plausible and integrates multiple observations, but causality remains to be experimentally validated. Claims C30-C31 are logical inferences but lack direct experimental support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "4172d00f-2c94-492b-be95-1c414c76731b",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Ribosomal proteins are highly translated and stable (based on literature), and show low loss of stoichiometry at the complex level, suggesting they remain active during aging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 combine literature evidence with the current dataset. The citations to ribosome footprinting and turnover studies (C32) are appropriate, and the observation of maintained ribosome stoichiometry (C33, Figure 7C) supports the interpretation that these proteins remain functional.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "8ed23930-2217-410f-8f4c-d82e671ab797",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The model proposes that protein overproduction increases cell size and causes metabolic changes, while differential protein production rates alter complex stoichiometry, leading to documented aging phenotypes including protein aggregates, ROS formation, and loss of gene silencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C34-C36 propose mechanistic connections between observations but lack direct experimental validation. The links between protein overproduction and cell size (C34), differential production and stoichiometry loss (C35), and stoichiometry loss and specific phenotypes (C36) are logical inferences supported by literature citations but not directly tested in this study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "2628789b-5648-4867-b78e-81a789aa4ab6",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The model explains why interventions targeting protein synthesis (TOR, S6 kinase, ribosomal deletions) extend lifespan across multiple organisms, as documented in literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 effectively integrate the current findings with extensive literature on lifespan interventions. The citations span multiple organisms and intervention types (C37-C39), providing strong support that the proposed model has explanatory power for existing observations. However, this is interpretive rather than providing new experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "521df814-0796-41c9-b0d4-3a6b13ef218c",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims establishing aging as a risk factor for disease, influenced by multiple factors including protein translation, and that S. cerevisiae undergoes replicative aging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C43 are well-established background knowledge supported by appropriate literature citations. These provide context for the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "81baae07-eca3-4662-8a1b-b36bb675caa6",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methodological details: YSBN6 strain was used, cells were grown in YNB with 2% glucose at 30\u00b0C, and biotinylated cells were labeled with streptavidin-iron beads that are not inherited by daughters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 describe standard methodological details that are adequately documented. The bead labeling approach is adapted from established methods (Smeal et al., 1996) and the mechanism of mother-specific retention is well-established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "dcec1c3c-3bd4-495e-9ddb-51b045e74bcc",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The age distribution broadened over time due to cell-to-cell variation, leading to exponentially-spaced sampling to maximize information content. Two replicate campaigns generated 16 unique time points.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 describe thoughtful experimental design. The computer simulations (C48) justified the exponential sampling strategy (C49), and the replicate structure (C50) is clearly documented. This demonstrates rigorous experimental planning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "3295506d-835d-4521-85fa-b0a7e07562f1",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Replicate proteome and transcriptome data showed excellent agreement (Spearman >0.85), and filtering retained ~90.9% of proteome and ~84.4% of transcriptome data with coefficient of variation <0.3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C52 demonstrate high data quality. The correlation values (C51) and the retention of >84% of data after quality filtering (C52) indicate robust and reproducible measurements. The coefficient of variation cutoff is reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "1183600f-5f3d-40a2-963c-743a7af59718",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Metabolic signatures related to starvation and oxidative stress were identified as consequences of aging in both network analysis and proteome data, potentially linked to increased cell size and reduced glucose influx.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 connect observations across datasets. The metabolic changes are documented in Figures 6B and 3B (C56), and the mechanistic link to cell size is supported by literature (C55, Huberts et al., 2012). The interpretation is reasonable though not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    },
+    {
+      "id": "188452a1-4e85-4143-b4a6-732cc776822f",
+      "content_id": "1d50e921-a0b3-4729-ab1b-ec78e900c325",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The proteome network's most causal cluster was enriched for chaperones, while causal clusters showed coupled expression and responsive clusters showed uncoupled expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C58 describe additional network analysis results. The chaperone enrichment (C57) suggests cellular stress responses, and the pattern of coupled vs. uncoupled expression across network clusters (C58, Figure 6\u2014supplement 2C) provides additional support for the progressive nature of uncoupling.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:53:43.504840Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a22e7b7a-93ea-454a-99d1-d31e45043a06",
+      "result_id": "10dd1e5e-22f5-4c3d-b0dd-558eb3e5d63e"
+    },
+    {
+      "claim_id": "ad5140fa-5a88-4ca5-a564-68c5680d25a1",
+      "result_id": "10dd1e5e-22f5-4c3d-b0dd-558eb3e5d63e"
+    },
+    {
+      "claim_id": "37c93508-7931-4bfe-995e-fba8576eac63",
+      "result_id": "10dd1e5e-22f5-4c3d-b0dd-558eb3e5d63e"
+    },
+    {
+      "claim_id": "e20c4793-e866-4565-8ddf-b991f5c8217c",
+      "result_id": "10dd1e5e-22f5-4c3d-b0dd-558eb3e5d63e"
+    },
+    {
+      "claim_id": "ffe9bed1-2371-4495-bdcb-dc911fbc58bd",
+      "result_id": "10dd1e5e-22f5-4c3d-b0dd-558eb3e5d63e"
+    },
+    {
+      "claim_id": "df77abb4-0c17-4d51-8aac-a861c4808083",
+      "result_id": "10dd1e5e-22f5-4c3d-b0dd-558eb3e5d63e"
+    },
+    {
+      "claim_id": "25111073-8d05-4ee6-95ae-6a14a0555d49",
+      "result_id": "070815cd-c3a5-4e02-95fc-ea4ad51ae15b"
+    },
+    {
+      "claim_id": "0d6fbc0d-b091-405c-9189-530f080ebd5e",
+      "result_id": "070815cd-c3a5-4e02-95fc-ea4ad51ae15b"
+    },
+    {
+      "claim_id": "7f7f73a7-4fe3-4fe3-b75a-95e8094de9e1",
+      "result_id": "070815cd-c3a5-4e02-95fc-ea4ad51ae15b"
+    },
+    {
+      "claim_id": "c6af1816-a13b-4f46-aa9a-47dffb1d4566",
+      "result_id": "bbc9cb8a-e33d-44d0-ae4b-86a80a4480fb"
+    },
+    {
+      "claim_id": "aa8c7b14-9d2e-46d9-9661-78267b788062",
+      "result_id": "bbc9cb8a-e33d-44d0-ae4b-86a80a4480fb"
+    },
+    {
+      "claim_id": "1b181fbe-8d89-4094-b9fa-7074cf10dfe2",
+      "result_id": "bbc9cb8a-e33d-44d0-ae4b-86a80a4480fb"
+    },
+    {
+      "claim_id": "d6d467a1-b504-4694-80e2-1630a2e04778",
+      "result_id": "bbc9cb8a-e33d-44d0-ae4b-86a80a4480fb"
+    },
+    {
+      "claim_id": "92abea91-e1b0-4653-91bf-9a4a38bb328d",
+      "result_id": "bbc9cb8a-e33d-44d0-ae4b-86a80a4480fb"
+    },
+    {
+      "claim_id": "af988ef3-70e4-4fd4-86bf-b62b5a8fb8e2",
+      "result_id": "bbc9cb8a-e33d-44d0-ae4b-86a80a4480fb"
+    },
+    {
+      "claim_id": "4c8df9d5-0ed6-4658-a72c-3a90d72ced4a",
+      "result_id": "65f2f192-a011-4817-a4f5-bd24dd75802b"
+    },
+    {
+      "claim_id": "20896e09-21bb-4347-9f7f-8ef8f19abb58",
+      "result_id": "65f2f192-a011-4817-a4f5-bd24dd75802b"
+    },
+    {
+      "claim_id": "a2630a57-8846-491c-a83d-15f1b82b5ef7",
+      "result_id": "65f2f192-a011-4817-a4f5-bd24dd75802b"
+    },
+    {
+      "claim_id": "25621bda-2e7c-4e56-bd9f-c23adf84e7d6",
+      "result_id": "65f2f192-a011-4817-a4f5-bd24dd75802b"
+    },
+    {
+      "claim_id": "b6291e6c-8153-434a-8a01-3c0a8bd0ff06",
+      "result_id": "2d7a9e13-6d46-4062-bb96-8c1f8c234eac"
+    },
+    {
+      "claim_id": "8f0a938f-86f9-4765-9574-4bba5ccd3cf9",
+      "result_id": "2d7a9e13-6d46-4062-bb96-8c1f8c234eac"
+    },
+    {
+      "claim_id": "c9792edd-07b4-4976-a83a-d9787bf7a191",
+      "result_id": "791a9913-9d41-428b-861a-05a118e615fa"
+    },
+    {
+      "claim_id": "56c48377-7c29-4773-98ed-4bf8f182efc6",
+      "result_id": "791a9913-9d41-428b-861a-05a118e615fa"
+    },
+    {
+      "claim_id": "8b88949a-a2c7-4771-baa2-e9bed22be919",
+      "result_id": "791a9913-9d41-428b-861a-05a118e615fa"
+    },
+    {
+      "claim_id": "f82189d0-1015-4b6d-9fb0-6fb9a13f8183",
+      "result_id": "791a9913-9d41-428b-861a-05a118e615fa"
+    },
+    {
+      "claim_id": "14a24ab0-236a-4bd8-b40a-2a769d0af0ea",
+      "result_id": "7223b9d4-77e5-4d01-907d-9b3aed2d89fa"
+    },
+    {
+      "claim_id": "18108c34-5153-44c7-8b02-3030bbbbb89a",
+      "result_id": "7223b9d4-77e5-4d01-907d-9b3aed2d89fa"
+    },
+    {
+      "claim_id": "6e1b9a2d-ccf0-42cb-8b7b-ec1342530561",
+      "result_id": "7223b9d4-77e5-4d01-907d-9b3aed2d89fa"
+    },
+    {
+      "claim_id": "fb3ebf1f-9fbc-4ce0-b265-5b5f150e4b77",
+      "result_id": "7223b9d4-77e5-4d01-907d-9b3aed2d89fa"
+    },
+    {
+      "claim_id": "86082081-31e0-4017-baf7-5a4d11c68ac7",
+      "result_id": "54f0f515-b1ae-4803-b9fb-826d665f5821"
+    },
+    {
+      "claim_id": "4ff4e32e-c2aa-4d08-86ed-e5315213875b",
+      "result_id": "54f0f515-b1ae-4803-b9fb-826d665f5821"
+    },
+    {
+      "claim_id": "b2242761-a75d-4a0e-8790-cc06be9c980b",
+      "result_id": "54f0f515-b1ae-4803-b9fb-826d665f5821"
+    },
+    {
+      "claim_id": "43b71348-acbb-47cc-a170-8c9e19d68795",
+      "result_id": "54f0f515-b1ae-4803-b9fb-826d665f5821"
+    },
+    {
+      "claim_id": "eeca423a-1095-4a0b-9f95-37fc5e5d48ae",
+      "result_id": "4172d00f-2c94-492b-be95-1c414c76731b"
+    },
+    {
+      "claim_id": "7bb8228e-7b97-456f-9922-36707557f27e",
+      "result_id": "4172d00f-2c94-492b-be95-1c414c76731b"
+    },
+    {
+      "claim_id": "36a79743-8a9f-4b4d-865b-06345269898d",
+      "result_id": "8ed23930-2217-410f-8f4c-d82e671ab797"
+    },
+    {
+      "claim_id": "ed373565-19fd-4032-9cd8-2b935e544e7c",
+      "result_id": "8ed23930-2217-410f-8f4c-d82e671ab797"
+    },
+    {
+      "claim_id": "7208616d-1a91-444e-bc0a-642ef35a25da",
+      "result_id": "8ed23930-2217-410f-8f4c-d82e671ab797"
+    },
+    {
+      "claim_id": "442ad3e0-c7f1-4bbb-bdd6-a0c3b0a7d8e3",
+      "result_id": "2628789b-5648-4867-b78e-81a789aa4ab6"
+    },
+    {
+      "claim_id": "eddce07b-ff70-42a3-952f-518b1c7a2fa1",
+      "result_id": "2628789b-5648-4867-b78e-81a789aa4ab6"
+    },
+    {
+      "claim_id": "37d82546-9bf8-46da-be01-dae0bb6c45f7",
+      "result_id": "2628789b-5648-4867-b78e-81a789aa4ab6"
+    },
+    {
+      "claim_id": "3287f5a5-74e2-47c6-9faf-65ffe662a746",
+      "result_id": "2628789b-5648-4867-b78e-81a789aa4ab6"
+    },
+    {
+      "claim_id": "3b3de559-ea2e-49cc-8155-261ab6b412aa",
+      "result_id": "521df814-0796-41c9-b0d4-3a6b13ef218c"
+    },
+    {
+      "claim_id": "30c13cfd-df35-4ca7-b47d-1b90bf20fe1e",
+      "result_id": "521df814-0796-41c9-b0d4-3a6b13ef218c"
+    },
+    {
+      "claim_id": "230621f3-c128-4401-a73b-ff5282cf5c01",
+      "result_id": "521df814-0796-41c9-b0d4-3a6b13ef218c"
+    },
+    {
+      "claim_id": "ba1a3271-3be7-4484-bd7d-17f52bfdb95e",
+      "result_id": "81baae07-eca3-4662-8a1b-b36bb675caa6"
+    },
+    {
+      "claim_id": "37de58ac-ba6b-4318-8636-ee88231a5da5",
+      "result_id": "81baae07-eca3-4662-8a1b-b36bb675caa6"
+    },
+    {
+      "claim_id": "cedaa21d-c0eb-421a-9b6e-79d707620ff5",
+      "result_id": "81baae07-eca3-4662-8a1b-b36bb675caa6"
+    },
+    {
+      "claim_id": "d39d79c5-87e5-4e93-b2cf-3eccbce46a18",
+      "result_id": "81baae07-eca3-4662-8a1b-b36bb675caa6"
+    },
+    {
+      "claim_id": "8fc55774-fc9e-42d9-862c-6ca3ef587824",
+      "result_id": "dcec1c3c-3bd4-495e-9ddb-51b045e74bcc"
+    },
+    {
+      "claim_id": "c8ae47e5-1125-46a1-95cb-021e551a9b24",
+      "result_id": "dcec1c3c-3bd4-495e-9ddb-51b045e74bcc"
+    },
+    {
+      "claim_id": "7a1b3d4a-7e1e-49cb-b931-2875a716328e",
+      "result_id": "dcec1c3c-3bd4-495e-9ddb-51b045e74bcc"
+    },
+    {
+      "claim_id": "c58fee8f-ea0e-4339-8bda-a102c1712c04",
+      "result_id": "3295506d-835d-4521-85fa-b0a7e07562f1"
+    },
+    {
+      "claim_id": "1bd5c661-80ac-420d-adb7-edb1d5674df8",
+      "result_id": "3295506d-835d-4521-85fa-b0a7e07562f1"
+    },
+    {
+      "claim_id": "b6dff6f6-4e8e-4a97-b48e-9b2f7aff4977",
+      "result_id": "1183600f-5f3d-40a2-963c-743a7af59718"
+    },
+    {
+      "claim_id": "7f889327-0440-425e-8c4a-8980574a7f78",
+      "result_id": "1183600f-5f3d-40a2-963c-743a7af59718"
+    },
+    {
+      "claim_id": "c790d625-640e-4c82-9c97-dfc4a6ade22c",
+      "result_id": "188452a1-4e85-4143-b4a6-732cc776822f"
+    },
+    {
+      "claim_id": "193d8021-6b69-4966-b51e-e93914c2aacd",
+      "result_id": "188452a1-4e85-4143-b4a6-732cc776822f"
+    }
+  ],
+  "comparisons": []
+}

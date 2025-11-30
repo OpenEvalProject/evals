@@ -1,0 +1,2179 @@
+{
+  "submission": {
+    "id": "9a39d122-4ded-49f6-97da-c07f398f71da",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:34:49.979042Z",
+    "updated_at": "2025-11-29T21:34:49.979042Z"
+  },
+  "content": [
+    {
+      "id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "submission_id": "9a39d122-4ded-49f6-97da-c07f398f71da",
+      "content_type": "manuscript",
+      "content_text": "# Resolving dual binding conformations of cellulosome cohesin-dockerin complexes using single-molecule force spectroscopy\n\n## Authors\n\n- Markus A Jobst<sup>1</sup>\n- Lukas F Milles<sup>1</sup>\n- Constantin Schoeler<sup>1</sup>\n- Wolfgang Ott<sup>1</sup>\n- Daniel B Fried<sup>3</sup>\n- Edward A Bayer<sup>4</sup>\n- Hermann E Gaub<sup>1</sup>\n- Michael A Nash<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Lehrstuhl f\u00fcr Angewandte Physik Ludwig-Maximilians-University Munich Germany\n2. Center for Nanoscience Ludwig-Maximilians-University Munich Germany\n3. Kean University New Jersey United States\n4. Department of Biological Chemistry The Weizmann Institute of Science Rehovot Israel\n\n\u2020 Corresponding author\n\n## Abstract\n\nReceptor-ligand pairs are ordinarily thought to interact through a lock and key mechanism, where a unique molecular conformation is formed upon binding. Contrary to this paradigm, cellulosomal cohesin-dockerin (Coh-Doc) pairs are believed to interact through redundant dual binding modes consisting of two distinct conformations. Here, we combined site-directed mutagenesis and single-molecule force spectroscopy (SMFS) to study the unbinding of Coh:Doc complexes under force. We designed Doc mutations to knock out each binding mode, and compared their single-molecule unfolding patterns as they were dissociated from Coh using an atomic force microscope (AFM) cantilever. Although average bulk measurements were unable to resolve the differences in Doc binding modes due to the similarity of the interactions, with a single-molecule method we were able to discriminate the two modes based on distinct differences in their mechanical properties. We conclude that under native conditions wild-type Doc from Clostridium thermocellum exocellulase Cel48S populates both binding modes with similar probabilities. Given the vast number of Doc domains with predicteddual binding modes across multiple bacterial species, our approach opens up newpossibilities for understanding assembly and catalytic properties of a broadrange of multi-enzyme complexes.\n\n## Introduction\n\nCellulosomes are hierarchically branching protein networks developed by nature for efficient deconstruction of lignocellulosic biomass. These enzyme complexes incorporate catalytic domains, carbohydrate binding modules (CBMs), cohesin:dockerin (Coh:Doc) pairs, and other conserved features (Demain et al., 2005; Bayer et al., 2004; Schwarz, 2001; B\u00e9guin and Aubert, 1994; Smith and Bayer, 2013; Fontes and Gilbert, 2010). A central attribute of cellulosome assembly is the conserved ~75 amino acid type-I Doc domain typically found at the C-terminus of cellulosomal catalytic domains. The highly conserved consensus Doc sequence from Clostridium thermocellum (Ct) is shown in Figure 1A. Dockerins guide attachment of enzymes into the networks by binding strongly to conserved Coh domains organized within non-catalytic poly (Coh) scaffolds. In addition to their nanomolar binding affinities, many archetypal Coh:Doc pairs are thought to exhibit dual binding modes (Carvalho et al., 2007; Pinheiro et al., 2008; Currie et al., 2012). The bound Doc domain can adopt two possible orientations that differ by ~180\u00b0 rotation on the Coh surface, as shown in Figure 1B. The two binding modes originate from duplicated F-hand sequence motifs, a conserved structural feature found among type-I dockerins (Pag\u00e8s et al., 1997). The duplicated F-hand motifs resemble EF-hands found in eukaryotic calcium binding proteins (e.g., calmodulin), and provide internal sequence and structural symmetry to Doc domains. Rotating Doc by ~180\u00b0 with respect to Coh (Figure 1B,C) results in an alternatively bound complex with similarly high affinity involving the same residues on Coh recognizing mirrored residues within Doc. The dual binding mode is thought to increase the conformational space available to densely packed enzymes on protein scaffolds, and to facilitate substrate recognition by catalytic domains within cellulosomal networks (Bayer et al., 2004). From an evolutionary perspective, the dual binding mode confers robustness against loss-of-function mutations, while allowing mutations within Doc to explore inter-bacterial species cohesin-binding promiscuity in cellulosome-producing microbial communities. Coh:Doc interactions and dual binding modes are therefore important in the context of cellulose degradation by cellulosome-producing anaerobic bacterial communities.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/10319/elife-10319-fig1-v2.jpg)\n\n**Figure 1.:** (A) Secondary structure and consensus sequence logo (Crooks, 2004) assembled from 65 putative Ct type-I Doc variants. Dots above the amino acid codes indicate residues involved in: Ca2+ coordination (yellow), mode A binding (black), and mode B binding (gray). Letter colors represent chemical properties: Green, polar; purple, neutral; blue, basic; red, acidic; black, hydrophobic. Crucial Coh-binding residues are located at positions 11, 12, 18, 19, 22, and 23 in each F-hand motif. (B) Coh:Doc complex crystal structures showing overlaid Doc domains in the two binding modes. Images were generated by aligning the Coh domain (gray) from PDB 2CCL (green, binding mode (A) and 1OHZ (red, binding mode (B) using the VMD plugin MultiSeq (Humphrey et al., 1996;\u00a0Roberts et al., 2006). (C) View of the Doc binding interface for each mode from the perspective of Coh. The conserved binding residues at positions 11, 12, 18, and 19 in the F-hand motif relevant for binding in the corresponding mode are depicted as stick models (yellow). (D) Close-up view of the interface for each binding mode with arrows indicating the location and direction of applied force. Binding residues 11, 12, 18, and 19 for binding mode A and 45, 46, 52, and 53 for binding mode B are shown as blue stick models. The Coh domain is oriented the exact same way in both views.\n\nHowever, direct experimental observation of the dual binding modes for wild-type Doc has thus far proven challenging. Ensemble average bulk biochemical assays (e.g., surface plasmon resonance, calorimetry, enzyme-linked immunosorbent assays) are of limited use in resolving binding mode populations, particularly when the binding modes are of equal thermodynamic affinity. Crystallography is challenging because the complex does not adopt a unique molecular conformation, but rather exhibits a mixture of two conformations thereby hindering crystal growth. Structural data on the dual binding mode have typically been collected using a mutagenesis approach, where one of the binding modes was destabilized by mutating key recognition elements (Carvalho et al., 2007; Pinheiro et al., 2008). This approach, however, while resolving the structures of each bound complex, cannot determine if one binding mode is dominant for wild-type Doc, or if that dominance is species or sequence dependent. Coarse grained molecular dynamics has also predicted dual modes of interaction between Coh and Doc (Hall and Sansom, 2009), but direct experimental evidence of both binding modes for wild-type Doc has remained elusive. Improved fundamental understanding of the dual binding mode could shed light onto the molecular mechanisms by which these multi-enzyme complexes self-assemble and achieve synergistic conformations, as well as provide a new approach to designing systems for protein nanoassembly (Kufer et al., 2009; 2008).\n\nHere, we used SMFS\u00a0(Li and Cao, 2010; Engel and M\u00fcller, 2000; Woodside and Block, 2014) to study wild-type and mutant Doc from exocellulase Cel48S of C. thermocellum (Ct-DocS). We demonstrate that specific unfolding/unbinding trajectories of individually bound Coh:Doc complexes are characteristic of the binding modes. To validate our approach, we produced Doc mutants that exhibited a preferred binding mode. We performed single-molecule pulling experiments on bound Coh:mutant Doc complexes and observed a strong bias in the probability of two clearly distinguishable unfolding patterns, termed \u2018single\u2019 and \u2018double\u2019 rupture types for each binding mode mutant. We further probed the unbinding mechanism of the double rupture events using poly (Gly-Ser) inserts to add amino acid sequence length to specific sections of Doc as a means to identify which portions of Doc unfolded. Finally, we used the inherent differences in mechanical stability of each binding mode, and the effects these differences had on the unfolding force distributions of an adjacent domain, to directly observe and quantify binding mode populations for wild-type Doc.\n\n## Results\n\n### Protein design\n\nThe wild-type and mutant Doc sequences used in this work were aligned (Beitz, 2000) and are presented in Figure 2. Among Ct-Doc domains, a Ser-Thr pair located at positions 11 and 12 of F-hand motif 1 (N-terminal helix 1) is highly conserved (Figure 1A). This Ser-Thr pair is H-bonded to Coh in binding mode A (Figure 1A, black dots). Analogously, binding mode B refers to the configuration where the Ser-Thr pair from helix 3 dominates the H-bonding to Coh (Figure 1A, gray dots). Binding mode B was previously crystallized for a homologous Ct-Doc (Carvalho et al., 2003). Mutation of the Ser-Thr pair in helix 3 to Ala-Ala was used to bias binding and thereby crystallize binding mode A for the same Doc (Carvalho et al., 2007). A similar targeted mutagenesis approach was also used to obtain crystal structures of a Clostridium cellulolyticum Doc in each binding mode (Pinheiro et al., 2008).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/10319/elife-10319-fig2-v2.jpg)\n\n**Figure 2.:** Doc_wt: wild-type sequence; hydrophobicity and charge graphs are displayed for the wild-type-Doc (red: positively charged, blue: negatively charged); (GS)x8_insert: A (Gly-Ser)8 linker was incorporated between helix 1 and helix 2; Q1_mutant: Quadruple mutant in helix 1. Four point mutations (DE/AA) were incorporated into Doc helix 1 to knock out binding mode A; Q3_mutant: Quadruple mutant in helix 3. Four point mutations (DE/AA) were incorporated into Doc helix 3 to knock out binding mode B; QQ_mutant: Non-binding control with both binding modes knocked out. Numbers below indicate amino acid number of the fusion protein construct starting from the xylanase N-terminus.\n\nTo preferentially select for a specific binding mode (A or B), we prepared Doc sequences that incorporated 4 amino acid point mutations, referred to as quadruple mutants (\u2018Q\u2019). To design quadruple mutants, we noted that recent structural work reported a set of Ct-Doc domains that differ from the canonical duplicated Ser-Thr sequences. These non-canonical Docs were found to exhibit only a single binding mode (Br\u00e1s et al., 2012; Pinheiro et al., 2009). In one of these non-canonical Doc domains, an Asp-Glu pair was found in place of Ser-Thr. Since the Coh surface is negatively charged, we postulated that including Asp-Glu in place of Ser-Thr within one of the F-hands could be used to effectively knock out a given binding mode for our canonical Doc. Additionally, we incorporated double alanine mutations to replace the conserved Lys-18 Arg-19 residues of a given F-hand motif, further destabilizing a targeted binding mode. Q1 refers to a quadruple mutant where helix 1 has been modified at four positions (i.e. S11D-T12E-K18A-R19A). Q3 refers to the quadruple mutant where helix 3 has been modified at four positions (i.e. S43D-T44E-K50A-R51A). As a negative control, we prepared a mutant referred to as \u2018QQ\u2019 that incorporated quadruple mutations into both helices 1 and 3.\n\nDoc domains were expressed as fusion domains attached to the C-terminal end of xylanaseT6 (Xyn) from Geobacillus stearothermophilus to improve solubility and expression levels as previously reported (Stahl et al., 2012). The Xyn domain also acts as a so-called fingerprint in AFM force extension traces to provide a means for screening datasets and searching for known contour length increments. We use the term \u2018contour length\u2019 to refer to the maximum length of a stretched (unfolded) polypeptide chain. Our screening process identified single-molecule interactions and ensured correct pulling geometry. For the Coh domain, we chose cohesin 2 from Ct-CipA expressed as a C-terminal fusion domain with the family 3a carbohydrate binding module (CBM) from Ct-CipA. In order to exclude artifacts arising from fingerprint domains, protein immobilization or pulling geometry, a second set of fusion proteins was cloned, expressed and probed in complementary experiments using a flavoprotein domain from the plant blue light receptor phototropin (iLOV) (Chapman et al., 2008). All protein sequences are provided in the \u2018Materials and methods\u2019\u00a0section.\n\n### Single-molecule unfolding patterns\n\nThe pulling configuration for single-molecule AFM experiments is shown in Figure 3A. CBM-Coh was site-specifically and covalently attached to an AFM cantilever tip and brought into contact with a glass surface modified with Xyn-Doc. The mechanical strength of protein domains and complexes will strongly depend on the pulling points (i.e. sites at which the molecule is attached to cantilever/surface). The site-specific attachment chemistry used here was precisely defined by the chosen residue of immobilization, ensuring the same loading geometry was used on the complex for each and every data trace. After formation of the Coh:Doc complex, the cantilever was retracted at a constant speed that ranged from 200 to 3200 nm/s while the force was monitored by optical cantilever deflection. The resulting force-distance traces were characteristic of the series of energy barriers crossed by the protein complex along the unfolding/unbinding pathway. A sawtooth pattern was consistently observed when molecular ligand-receptor complexes had formed. Sorting the data using contour length transformation (Puchner et al., 2008) and identifying traces that contained a Xyn contour length increment (~89 nm) allowed us to screen for single-molecule interactions (Stahl et al., 2012), as described in our prior work on Coh:Doc dissociation under force (Stahl et al., 2012;\u00a0Schoeler et al., 2014; Jobst et al., 2013; Otten et al., 2014; Schoeler et al., 2015).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/10319/elife-10319-fig3-v2.jpg)\n\n**Figure 3.:** (A) Schematic depiction showing the pulling geometry with CBM-Coh on the AFM Cantilever and Xyn-Doc on the glass substrate. Each fusion protein is site-specifically and covalently immobilized on a PEG-coated surface. (B-C) Each force vs. extension trace shows PEG linker stretching (black), xylanase unfolding and subsequent stretching (blue), and Coh:Doc complex rupture. The Coh:Doc complex rupture occurred in two distinct event types: single (B) and double (C) ruptures. The 8-nm contour length increment separating the double peaks was assigned to Doc unfolding (C, green).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10319/elife-10319-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Traces showing xylanase unfolding and (A) single-event rupture, (B) double-event rupture, (C) CBM unfolding prior to unbinding, (D) shielded double-event for Q3 mutants, (E) nonspecific multiple interactions, and (F) no interactions. Traces such as E and F were excluded from the analysis. Multiple traces are offset on the force axis for readability.\n\nTypical single-molecule interaction traces from such an experiment are shown in Figure 3B, C\u00a0and in Figure 3\u2014figure supplement 1. Following PEG linker stretching, an initial set of peaks sequentially decreasing in force was assigned to xylanase unfolding and stretching. This domain when unfolded added ~89 nm of free contour length to the system. The final peak (s) corresponded to rupture of the Coh:Doc complex, and occurred as either \u2018single\u2019 or \u2018double\u2019 rupture events. The contour length increment between the two double event peaks was found to be ~8 nm, that is, 8 nm of hidden contour length was added to the biopolymer during a sub-step of Doc unbinding (see \u2018Discussion\u2019). The 8-nm contour length increment was also observed in complementary experiments employing other fusion domains: xylanase was swapped for an sfGFP domain and CBM was swapped out for an iLOV domain. In these new fusions, the 8 nm Doc increment was still observed, indicating it was not caused by a specific fusion domain. As we show below, double and single rupture events were associated with binding modes A and B, respectively. CBM unfolding length increments (~57 nm) were only rarely observed because the Coh:Doc complex only rarely withstood forces sufficiently high to unfold CBM\u00a0(Stahl et al., 2012).\n\n### Ensemble average binding experiments\n\nBinding experiments were carried out in bulk to evaluate the binding affinity of wild-type, Q1, Q3, and QQ Doc sequences to wild-type Coh. Xyn-Doc fusion protein variants were immobilized in a microwell plate and exposed to tag red fluorescent protein (TagRFP) (Merzlyak et al., 2007) fused to Coh (TagRFP-Coh) across a range of concentrations, followed by rinsing and subsequent fluorescence readout (Figure 4A). The data clearly showed that Q1 and Q3 Doc sequences, each with a mutated binding mode, maintained high-binding affinity with dissociation constants (Kd) in the nM range. These values are in good agreement with previous reports on homologous type-I Doc domains (Br\u00e1s et al., 2012;\u00a0Sakka et al., 2011). This suggested that mutant Doc domains with one destabilized binding mode were still able to recognize fluorescent protein fused Coh with strong affinity by relying on the alternative binding mode that was preserved. The QQ double knockout mutant, however, showed no appreciable binding over the concentration range tested. This negative control showed that DEAA quadruple mutations were in fact effective at eliminating binding for the targeted modes.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/10319/elife-10319-fig4-v2.jpg)\n\n**Figure 4.:** (A) Fluorescence binding curve showing binding of TagRFP-labelled Coh to wild-type and mutant Doc nonspecifically immobilized in a 96-well plate. Both Q1 and Q3 mutants bound TagRFP-Coh similarly to wild-type with dissociation constants (KD) in the low nM range. The negative control QQ mutant showed no binding. Solid lines are 4 parameter logistic nonlinear regression model fits to the data. Error bars represent the standard deviation of three independent samples. (B) Event probabilities for single (opaque colors) and double (translucent colors) Coh:Doc rupture peaks determined for Doc wild-type and DE/AA quadruple mutants. Data originate from 947, 4959, and 1998 force-extension traces from wild-type, Q1 and Q3 variants, respectively. Error bars represent 95% Clopper-Pearson confidence intervals based on the beta probability distribution. (C) Relative difference in double peak rupture forces for the different Doc variants. Positive values indicate a stronger final peak. Histograms represent concatenated data from various pulling speeds. Drawn lines are kernel density estimates calculated on the raw data.\n\n### Single-molecule rupture statistics of binding mode mutants\n\nFor each Doc tested, we collected tens of thousands of force-extension traces and selected for further analysis only those traces showing the ~89 nm xylanase contour length increments and no other anomalous behavior, resulting in typically 200\u20133000 usable single-molecule interaction curves per experiment. We determined the number of Coh:Doc unbinding events that occurred as single or double rupture peaks. The results are shown in Figure 4B. The wild-type Doc showed double rupture events in ~57% of the cases, and single rupture events in ~43% of the cases. The mutant designed to knock out binding mode A (Q1), showed a single event probability of ~77%, and a double event probability of ~23%. The mutant designed to knock out binding mode B (Q3) showed a single event probability of ~41%, and a double event probability of ~59%. It is clear from these data that the Q1 mutant has a strong bias toward single peaks that is not observed in the wild-type leading to preliminary assignment of single peaks to binding mode B.\n\nFor all double events, we determined the force difference of the second peak relative to the first (Figure 4C). Q1 and wild-type on average showed second peaks that were ~15\u201320% higher in force than the first peak. Q3 meanwhile showed clearly different behavior. Although the ratios of single to double peaks were nearly identical between wild-type and Q3, differences in the relative force between the first and second peaks differentiated wild-type and Q3 (Figure 4C). Double peaks for the Q3 mutant were more likely to show a shielded behavior, where the second peak was lower in force than the first peak by ~10%. Although the Q3 mutant showed the same single vs. double event probability as wild-type, the double events for Q3 were distinguishable from those of the wild-type based on this observed decrease in the rupture force of the second peak. The second barrier of the double events was therefore weaker in Q3 than for wild-type. This weaker 2nd double peak for the Q3 mutant combined with similar single/double peak ratios as wild-type leads us to believe that the number of double peaks is being underestimated systematically for the Q3 mutant. Generally, each binding mode still allows for the occurrence of a single event (albeit with different likelihood), in which the whole Doc domain unbinds without an additional unfolding substep. Since the second and final energy barrier for complex dissociation is weaker than the first for the Q3 mutant, the probability for the molecule to pass both barriers simultaneously is increased, thus resulting in a higher percentage of single events.\n\n### Probing the 8-nm length increment with poly (GS) inserts\n\nWe sought to identify the molecular origin of the 8 nm contour length increment separating the double event peaks by engineering additional amino acid sequence length into the Doc domain. Amino acid insert sequences have previously been used to probe length increments in AFM force spectroscopy experiments (Bertz and Rief, 2009) (Carrion-Vazquez et al., 1999). By adding additional amino acids to the polypeptide chain at a particular location, insert sequences increase the gain in contour length following unfolding of a subdomain in a predictable way. Any change in the observed length increment can be pinpointed to the position in the molecule where the unfolding event occurs. In this case, we engineered flexible (GS)8 insert sequences directly into wild-type Doc between helices 1 and 2, in a flexible loop that was not expected to interfere with either of the two binding modes. Structural homology models (Figure 5A) of the wild-type Doc and (GS)8 insert sequence were calculated using the Phyre server (Kelley and Sternberg, 2009). If the 8-nm contour length increment was caused by sequential unbinding of Doc helices 1 and 3 in wild-type Doc, then double peaks for the poly (GS) constructs should show an increase in the double peak contour length increment. As shown in Figure 5B,C and D, the contour length histogram for (GS)8 Doc was indistinguishable from the wild-type Doc. No additional contour length was gained due to additional amino acids inserted between Doc helices 1 and 2. Since the Doc was anchored to the glass slide through an N-terminal xylanase domain, this result indicated that the unfolding event responsible for the 8-nm length increment must be located upstream (i.e. N-terminal) from the site of the (GS)8-insert. This result suggested that unfolding of calcium binding loop 1 and helix 1 in Doc was the source of the 8-nm length increment.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/10319/elife-10319-fig5-v2.jpg)\n\n**Figure 5.:** (A) Structural homology model overlay of wild-type and mutant Doc containing a (GS)8-linker between helix 1 and helix 3. The wild-type Doc is shown in green. The 16 amino acid long GS-insert is shown in purple (Kelley and Sternberg, 2009) (remaining Doc domain not shown). (B) Typical force extension trace with final double rupture event depicted in green (arrow). (C) Histogram and kernel density estimate of the transformation of the single force extension trace in panel B into contour length space (black) and kernel density estimate of the whole dataset of single molecule Xyn-Doc:Coh-CBM traces bearing xylanase fingerprint and final double rupture (gray, offset in y-direction for readability) in contour length space. (D) Histograms (bars, bin width: 1 nm), kernel density estimates (drawn lines, bandwidth: 0.75 nm, gaussian kernel), and statistical test (Kolmogorov-Smirnov, \u2018KS test\u2019) are each calculated on the raw data of the final increments (peak-to-peak distances) in contour length space (x-distance between arrow 1 and 2 in panel (C). Maxima for final double event increments lie at 7.75 nm and 7.73 nm for iLOV-Coh:Doc (wild-type)-sfGFP (N = 255) and Xyn-Doc (GS)8:Coh-CBM (N = 320) final ruptures, respectively (a two-sample KS test on the raw data indicates no significant difference in the data distributions (p-value of 21.7%).\n\n### Single-molecule evidence of dual binding mode\n\nTo finally confirm the presence of both bound conformations in wild-type Coh:Doc complexes, we replaced xylanase with sfGFPand CBM with iLOV as the contour length marker or fingerprint domains. iLOV was chosen as a superior unfolding fingerprint domain because it does not show multiple unfolding substeps (in contrast to xylanase), which simplified analysis. Also iLOV has an unfolding force distribution that lies in a similar range as the Coh:Doc complex dissociation single and double peaks, allowing for effective biasing of the iLOV unfolding force distributions by the inherent stability difference between single and double event peaks. Figure 6A shows characteristic single and double event curves containing iLOV unfolding (36-nm contour length increment) followed by Coh:Doc rupture as a single or double event. The rupture force distributions of the single and double event (second peak) ruptures are shown in Figure 6B. The most probable rupture force for single events was ~104 pN, while for double events this value was ~140 pN at a pulling speed of 800 nm/s. We next calculated the unfolding force distributions of the iLOV domain for curves that terminated with single events or double events. If the Coh:Doc complex ruptured before iLOV unfolding was observed, the curve was eliminated from the dataset because it lacked a fingerprint domain length increment. This criterion for inclusion in the dataset results in a biasing of the iLOV unfolding forces, since the maximum of the fingerprint unfolding force distribution that can be observed must lie below that of the Coh:Doc complex. The fact that we observed a downward shift in the iLOV unfolding forces (Figure 6C) for curves that terminated in the less mechanically stable single rupture event is confirmation that the single- and double-event peaks arise from separate bound conformations. Each mode has a distinct mechanical stability and energy landscape that is set at the time of receptor-ligand binding, that is once bound, the conformation of the complex does not change. If single- and double-event unbinding patterns were simply two competing pathways out of the same bound state, then the downward shift in rupture force distribution would not be observed for the iLOV unfolding forces. Although this shift in rupture force distributions is comparatively subtle, it can be observed accurately with high statistical significance. We note that the datasets for both binding modes were measured with the same cantilever throughout the runtime of the whole experiment. Calibration and drift issues therefore did not interfere with the required accuracy.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/10319/elife-10319-fig6-v2.jpg)\n\n**Figure 6.:** (A) Typical force traces showing iLOV unfolding with final single (green) and double (purple) complex ruptures. The curve terminating in a double peak is offset in the y-direction for clarity. (B) Final complex rupture force distribution for single and double events. Double events are more mechanically stable. (C) iLOV domain unfolding forces for final single (green) and double (red) events at a pulling velocity of 800 nm/s. Histograms (bars), kernel density estimates (lines), and statistical tests are each obtained from the raw data. Maxima for iLOV unfolding lie at 96.0 pN and 102.7 pN for single (N = 172) and double (N = 277) final ruptures, respectively. A two-sample Kolmogorov-Smirnov test showed significant differences in the data distributions (p-value of 0.09%). Since the data were all recorded with a single cantilever and both event types were distributed equally throughout the runtime of the measurement, no systematic biasing is expected. Because of the lower force distribution of final single peaks, the iLOV unfolding force distribution is truncated compared to final double peak force traces, supporting the notion that the binding mode is set prior to mechanical loading of the complex.\n\n## Discussion\n\nThe relatively small ~8\u2009kDa Doc domains exhibit an internal sequence and structural symmetry that is believed to give rise to a dual mode of binding to Coh, as shown in Figure 1. In order to study this remarkable plasticity in molecular recognition in greater detail, we prepared a series of mutants (Figure 2) designed to either knock out a specific binding mode or add length to the molecule at a specific position. Bulk experiments showed that Doc mutants Q1 and Q3, originally designed to suppress one of the binding modes, were still able to bind Coh with high affinity, while the double knockout did not bind (Figure 4A). The equilibrium affinities of Coh binding to Q1, Q3, or wild-type were all similarly high with KDs in the low nM range, in good agreement with literature values (Sakka et al., 2011), suggesting the two binding modes are thermodynamically equivalent and rendering them indistinguishable with conventional methods such as ELISA or calorimetry. Techniques like surface plasmon resonance could possibly show differing values for on- and off-rates for the mutants, but would still not be able to resolve the binding modes within a wild-type population.\n\nForce spectroscopy with the AFM interrogates individual molecules, and measures their mechanical response to applied force. Since the technique is able to probe individual members of an ensemble, it provided a means to quantify binding mode configurations by assigning unfolding/unbinding patterns to the binding mode adopted by the individual complexes. Site-directed Q1 and Q3 mutations supported the assignment of binding mode A to a characteristic double rupture peak dissociation pathway. Single events were assigned to binding mode B and showed no Doc unfolding sub-step prior to complex rupture.\n\nWe consistently observed 8 nm of added contour length that separated the Doc double peaks. Since force is applied to Doc from the N-terminus, we analyzed the Doc sequence starting at the N-terminus and searched for reasonable portions of Doc that could unfold in a coordinated fashion to provide 8 nm of contour length. The results from the GS-insert experiments (Figure 5) indicated no change in the double-event contour length increment, regardless of the added GS-insert length located between helix 1 and 3 in Doc. This result is consistent with the 8 nm length increment being located N-terminally from the GS-insert site, implicating unfolding of Doc calcium binding loop 1 and helix 1 as the source of the 8 nm. This length accurately matches the estimated length increment for unfolding calculated from the crystal structure (Figure 1D).\n\nAlthough this result could also be consistent with the 8 nm increment being located somewhere outside the Doc domain in the polyprotein, we deem this scenario highly unlikely. The 8 nm increment cannot be located in the Xyn or CBM domains because we have accounted for Xyn and CBM lengths in their entirety based on the observed 89 nm and rare 57 nm length increments here and in a previous study (Stahl et al., 2012), and for confirmation swapped out those domains for different proteins completely (i.e. iLOV and GFP). The remaining possibility that the 8 nm is located within the Coh domain is also not likely since the barrel-like structure of the Coh is known to be mechanically highly stable (Valbuena et al., 2009;\u00a0Hoffmann et al., 2013). Also, if the 8-nm length increment were due to partial Coh unfolding, the Q1 and Q3 mutants would not be expected to affect the single/double peak ratio or force differences between the double event peaks as was observed (Figure 4B, C). The GS-insert data suggest the 8-nm length increment is located within Doc, upstream (N-terminal) from the GS-insert site implicating calcium loop 1 and helix 1 in this unfolding event.\n\nFinally, we observed that an inherent difference in the mechanical stability of single and double event rupture peaks (Figure 6B) could be used as a feature by which to discriminate the binding modes. Our analysis algorithm accepted only the force curves that first showed iLOV fingerprint domain unfolding followed by either a single- or double-rupture peak. By observing a small but significant downward shift in the iLOV unfolding force distribution when analyzing curves that terminated in the less stable single-event peak, we confirmed the single-event peaks originate from a unique conformation that is \u2018set\u2019 at the time of complex formation.\n\nTaken together, we propose an unbinding mechanism where the first barrier of the double peaks represents unfolding of the N-terminal calcium binding loop and unraveling of alpha helix 1 up to the Lys-Arg pair at sequence positions 18 and 19 in the wild-type structure in binding mode A. Based on a length per stretched amino acid of 0.4 nm, the expected contour length for unfolding the Doc domain up to this position would be 7.6 nm, in good agreement with the measured value of 8 nm within experimental error. A portion of the N-terminal calcium binding loop (i.e. residues S11-T12) is involved in binding to D39 in Coh. The first peak of the double events is attributed to breakage of this interaction and simultaneous unfolding of calcium loop 1 and alpha helix 1 up to the Lys-Arg pair at sequence positions 18 and 19. Another contributing factor is the intramolecular clasp that has been identified as a stabilizing mechanism among similar type-I Doc domains (Slutzki et al., 2013). A recent NMR structural study (Chen et al., 2014) on the same wild-type Doc used in this work confirmed a hydrophobic ring-stacking interaction between Tyr-5 and Pro-66. Confirmation of this clasp motif by NMR means the head and tail of the Doc are bound together, additionally stabilizing the barrier that is overcome in the first of the double event peaks. In this scenario, subsequent to breaking the interactions between the calcium binding loop and Coh, disrupting the intramolecular clasp and unfolding the N-terminal loop-helix motif, the remaining bound residues including Lys-18, Arg-19, Lys-50, Leu-54, and Lys-55 stay bound to Coh and are able to withstand substantial force on their own, eventually breaking in the second and final of the double rupture peaks. Prior work further supports this unbinding mechanism, revealing that a progressive N-terminal truncation of Doc did not affect the interaction largely, unless the truncation reached the Lys-18 and Arg-19 residues (Karpol et al., 2009). This corroborates the idea of the C-terminal end of helix 1 being a crucial part of the binding site within the complex. Single rupture peaks were thus observed when the wild-type complex was bound in binding mode B, and no unfolding of Ca-binding loop 1 or helix 1 occurred. Force was propagated directly to bound residues Lys-18, Leu-22, and Arg-23 which when broken resulted in complete complex dissociation.\n\nGiven the fingerprint biasing phenomenon (Figure 6C), we finally sought to correct the single/double peak counting statistics (Figure 4B) in order to correct for undercounting of single peaks due solely to their failure to reach sufficiently high forces to unfold the fingerprint domain. Only traces showing a fingerprint were analyzed to ensure defined unfolding geometry. Using the rupture force distributions of singles, doubles, iLOV, and xylanase domains, we calculated the probability of occurrence of fingerprint unfolding at a force higher than the single-event ruptures. This overlap probability was found to be 0.85 for iLOV and 0.40 for xylanase. When the single/double peak ratios for were corrected for this effect, the final binding mode ratios (binding mode A/binding mode B, i.e., doubles/singles) were found to be 0.95 and 0.87 for xylanase-Doc and iLOV, respectively. These ratios are close to 1 indicating comparable probability of each binding mode after accounting for biasing the single/double peak counting statistics due to fingerprint domain stability. We note that these numbers are also slightly lower than unity due to the exclusion of double peaks that occurred before unfolding of the fingerprint domains. Further details on rupture force distributions and overlap statistics are shown in Figure 7. As the magnitude of biasing changes with the unfolding force distributions of each fingerprint domain, overlaps in the probability distributions allow for normalizing single/double event ratios of experimental data sets with different fingerprinting domains. For the Coh:Doc complex unbinding event, biasing (undercounting) is more pronounced for the mechanically weaker single ruptures. This normalization procedure shows the relative difference of biasing between single and double events, as double events are less biased than single events.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/10319/elife-10319-fig7-v2.jpg)\n\n**Figure 7.:** (A) Rupture force distribution of final complex ruptures for single (green), first (purple) and second (red) double unbinding events. (B) Overlap area (purple) of iLOV domain unfolding force distribution (red) (iLOV-doubles curve class) with the rupture force distribution (green) for single-event complex ruptures. (C) Overlap area (purple) of Xyn domain unfolding force distribution (red) (Xyn-doubles curve class) with the rupture force distribution (green) for single-event complex ruptures. Overlaps in probability distributions allow normalizing single-event counts to double events to account for different biasing caused by the different unfolding forces of the fingerprint domain. Biasing occurs, because for overlapping force distributions of fingerprint unfolding and complex ruptures, unbinding events are more likely to take place without fingerprint unfolding if the two distributions are closer together. For the Coh:Doc unbinding, this effect is more pronounced for the weaker single ruptures. Because double events are also biased, this still does not give a true quantification, but only compensates for the differences of biasing. The non-bell-evans-like shape of the single rupture peaks, especially in the region of the 1st double event peak (A) suggests that this class of curves does not contain a single type of unbinding mechanism, but rather a superposition of different event types.\n\nThe biological significance of Coh-Doc interactions in the context of cellulosome assembly and catalysis cannot be overstated. Their high affinity and specificity, along with their modularity, thermostability, and their ultrastable mechanical properties all make Coh-Doc unique from a biophysics perspective, and attractive from an engineering standpoint. Dual binding mode Doc domains are broadly predicted among many cellulosome producing bacteria (e.g. C. thermocellum, C. cellulolyticum, R. flavefaciens), however relatively few have been confirmed experimentally (Carvalho et al., 2007; Pinheiro et al., 2008;\u00a0Br\u00e1s et al., 2012). In fact, the direct effect of single vs. dual binding modes on the ability of cellulosomes to convert substrate into sugars is currently unknown. It is therefore unclear whether or not dual binding modes affect, for example, the catalytic properties of native or engineered synthetic cellulosomes.\n\nHowever, it is important to note that cellulosome producing bacteria invariably live among communities with other microorganisms, which may be producing cellulases and cellulosomes of their own. In such an environment, a dual binding mode could enable organisms to produce enzymes that are able to bind to a neighboring species\u2019 scaffoldins, yet still retain high-affinity interactions with host scaffoldins. They would be able to combine resources with neighboring cells in a mixed microbial consortium. The dual binding mode could therefore allow genetic drift to explore interspecies protein binding. Indeed, cross-species reactivity between Coh and Doc has been reported (Haimovitz et al., 2008). Cellulosome-producing microbes may therefore be pursuing a middle ground between protein synthesis strictly for selfish vs.\u00a0communal usage. By distinguishing the presence of each binding mode for wild-type Doc domains, the single-molecule biophysical approach presented here based on differences in mechanical hierarchies will facilitate further study into the significance of the dual binding mode.\n\nIn summary, the dual binding mode of Coh:Doc domains has so far proven resistant to explicit experimental characterization. Crystallography combined with mutagenesis has provided snapshots of the two modes, but resolving each of the modes for wild-type Doc under near native conditions has up until now not been possible. We have demonstrated the advantages of a single-molecule approach in resolving these subtle differences in molecular conformations of bound complexes. Despite having equal thermodynamic binding affinity, when mechanically dissociated by pulling from the N-terminus of Doc, binding mode A was more mechanically stable with an additional energy barrier. This mechanical difference was exploited to probe the two binding modes independently from one another, providing direct observation of this unique mechanism in molecular recognition. In the future, harnessing control over binding modes could offer new approaches to designing molecular assembly systems that achieve defined protein orientations.\n\n## Materials\u00a0and\u00a0methods\n\n### Site-directed mutagenesis of plasmid DNA\n\nA pET28a vector containing the previously cloned xylanaseT6 from Geobacillus stearothermophilus (Salama-Alber et al., 2013) and DocS dockerin from Clostridium thermocellum Cel48S were subjected to QuikChange mutagenesis (Wang and Malcolm, 1999) to install the following mutations: Q1, Q3, and QQ in the dockerin and T129C in the xylanase, respectively.\n\nFor insertion of the (GS)4 and (GS)8 linkers into the Doc domain, exponential amplification with primers bearing coding sequences for the inserts at their 5\u2019-ends was performed with a Phusion High-Fidelity DNA polymerase (New England Biolabs, MA). PCR products were then blunt end ligated using KLD Enzyme Mix and KLD Reaction Buffer from the Q5 site directed mutagenesis kit (New England Biolabs, MA). The modified DNA constructs were used to\u00a0transform Escherichia coli DH5-alpha cells, grown on kanamycin-containing agar plates and subsequently screened. All mutagenesis products were confirmed by DNA sequencing analysis.\n\nPrimers used for inserting the (GS)8 linker into the Doc domain:\n\nFw 5\u2019-ggttctggctccggttctggctccagcatcaacactgacaat-3\u2019\n\nRev 5\u2019-agaaccggagccagagccggaacctatacctgatctcaaaacatatct-3\u2019\n\n### Protein expression and purification\n\nFusion proteins HIS-CBM A2C-Coh2 (C.t.) were expressed in E. coli BL21(DE3)RIPL cells in kanamycin-containing media supplemented with 2mM calcium chloride overnight at 16\u00b0C. After harvesting, cells were lysed by sonication, and the lysate was subjected to heat treatment at 60\u00b0C for 30\u2009min to precipitate the bulk of the host bacterial proteins, leaving the expressed thermophilic proteins in solution. The lysate was then pelleted, and the supernatant fluids were applied to a beaded cellulose column and incubated at 4\u00b0C for 1\u2009hr. The column was then washed with 50 mM Tris buffer (pH 7.4) containing 1.15 M NaCl, and the protein was eluted using a 1% (vl/v) triethylamine aqueous solution. Tris buffer was added to the eluent and the solution was neutralized with HCl.\n\nFusion proteins HIS-Xyn T129C-DocS (C.t.) wild-type, Q1, and Q3 mutants were expressed as described above. Following heat treatment, the supernatant fluids were applied to a Ni-NTA column and washed with TBS buffer containing 20mM imidazole and 2mM calcium chloride. The bound protein was eluted using TBS buffer containing 250 mM imidazole and 2\u00a0mM calcium chloride. The solution was then dialyzed to remove the imidazole.\n\nFusion proteins ybbR-HIS-CBM A2C-Coh2 (C.t.), ybbR-HIS-Xyn T129C-DocS (C.t.) wild-type and QQ mutants and ybbR-HIS-Xyn T129C-DocS (C.t.) (GS)4 insert were expressed in E. coli BL21(DE3)RIPL cells; ybbR-HIS-Xyn T129C-DocS (C.t.) (GS)8 insert fusion protein variants were expressed in E. coli NiCo21(DE3)RIPL cells. Cultivation and expression was done in ZYM-5052 autoinduction media (Studier, 2005) containing kanamycin (and chloramphenicol, in case of the NiCo21(DE3)RIPL cells) overnight at 22\u00b0C, overall 24 hr. After harvesting, cells were lysed using sonication. The lysate was then pelleted by centrifugation at 39,000 rcf, the supernatant fluids were applied to Ni-NTA columns and washed with TBS buffer. The bound protein was eluted using TBS buffer containing 200 mM imidazole. Imidazole was removed with polyacrylamide gravity flow columns or with polyacrylamide spin desalting columns.\n\nAll protein solutions were concentrated with Amicon centrifugal filter devices and stored in 50% (v/v) glycerol at -20\u00b0C (ybbR-free constructs) or -80\u00b0C (ybbR-bearing constructs). The concentrations of the protein stock solutions were determined to be in the order of 1\u201315 mg/mL by absorption spectrophotometry at a wavelength of 280 nm.\n\n### ELISA-like binding assay\n\n1 \u00b5M of Xyn-Doc fusion proteins (wild-type Q1, Q3, QQ Doc fusions) bearing either wild-type or mutant Doc domains were adsorbed onto surfaces of the wells of a 96-well nunc maxi sorp plate (Thermo Scientific, Pittsburgh, PA). After blocking (2% (w/v) BSA, 0.05% Tween 20 in TBS buffer) and several rinsing steps, a red fluorescent protein-cohesin (StrepII-TagRFP-Coh2 (C.t.), Addgene ID 58,710 (Otten et al., 2014)) fusion construct was incubated to the unspecifically immobilized Doc fusion proteins over a range of concentrations. After further rinsing, the fluorescence of the TagRFP domain was measured with a multi-well fluorescence plate reader ( M1000 PRO, Tecan Group Ltd., M\u00e4nnedorf, Switzerland). Fluorescence values were plotted against their corresponding concentration values for each protein variant, and 4 parameter logistic nonlinear regression model functions were fitted to the data to determine the transition point of the curve.\n\n### Surface immobilization strategies\n\nThe Xyn domain had a cysteine point mutation at position 129 (Xyn T129C) to facilitate covalent attachment to a glass surface via Polyethylene glycol (PEG)-maleimide linkers. There were no other cysteines within the Xyn or Doc domains, which ensured site-specific immobilization of the molecule and defined mechanical loading of Doc from the N-terminus for the AFM experiments. The CBM domain likewise contained an A2C cysteine point mutation for covalent attachment to the cantilever tip via PEG-maleimide linkers. The second set of fusion proteins sfGFP-Doc and iLOV-Coh was covalently attached to coenzyme A bearing PEG linkers by their terminal ybbR tags.\n\n### AFM sample preparation\n\nFor AFM measurements, silicon nitride cantilevers (Biolever mini, BL-AC40TS-C2, Olympus Corporation nominal spring constant: 100 pN/nm; 25 kHz resonance frequency in water), and glass coverslips (Menzel Gl\u00e4ser, Braunschweig, Germany; diameter 22mm) were used. 3-Aminopropyl dimethyl ethoxysilane (APDMES, ABCR GmbH, Karlsruhe, Germany), \u0251-Maleinimidohexanoic-\u03c9-NHS PEG (NHS-PEG-Mal, Rapp Polymere, T\u00fcbingen, Germany; PEG-MW: 5\u2009kDa), immobilized tris (2-carboxylethyl)phosphine (TCEP) disulfide reducing gel (Thermo Scientific, Pittsburgh, PA), tris (hydroxymethyl)\u00a0aminomethane (TRIS, >99% p.a., Carl Roth, Karlsruhe, Germany), CaCl2 (>99% p.a., Carl Roth, Karlsruhe, Germany), sodium borate (>99.8% p.a., Carl Roth, Karlsruhe, Germany), NaCl (>99.5% p.a., Carl Roth, Karlsruhe, Germany), ethanol (>99% p.a.), toluene (>99.5% p.a., Carl Roth, Karlsruhe, Germany) were used as received. Sodium borate buffer was 150 mM, pH 8.5. Measurement buffer for AFM-SMFS was tris-buffered saline supplemented with 1 mM CaCl2 (TBS, 25 mM TRIS, 75 mM NaCl, 1 mM CaCl2 pH 7.2). All buffers were filtered through a sterile 0.2 \u00b5m polyethersulfone membrane filter (Nalgene, Rochester, NY) prior to use.\n\nForce spectroscopy measurement samples, measurements and data analysis were prepared and performed according to previously published protocols (Jobst et al., 2013;Otten et al., 2014). In brief, NHS-PEG-Maleimide linkers were covalently attached to cleaned and amino-silanized silicon nitride AFM cantilevers and cover glasses. The respective protein constructs were covalently linked either via engineered cysteine residues to the maleimide groups of the surface on the sample directly, or via Sfp phosphopantetheinyl transferase-mediated attachment of a terminal ybbR tag to coenzyme A, which was previously attached to the maleimide groups of the surface.\n\n### AFM-SMFS measurements\n\nAFM data were recorded in 25 mM TRIS pH 7.2, 75 mM NaCl and 1mM CaCl2 buffer solution (TBS). Retraction velocities for constant speed force spectroscopy measurements varied between 0.2 and 3.2 \u00b5m/s. Cantilever spring constants were calibrated utilizing the thermal method applying the equipartition theorem to the one dimensionally oscillating lever (Hutter and Bechhoefer, 1993;\u00a0Cook et al., 2006). Measurements were performed on custom built instruments, deploying an Asylum Research (Santa Barbara, CA, USA) MFP-3D AFM controller and Physik Instrumente (Karlsruhe, Germany) or attocube (Munich, Germany) piezo nanopositioners (Gumpp et al., 2009). After each measurement, the xy-stage was actuated by 100 nm to probe a new spot on the surface and measure new individual Xyn-Doc fusion molecules. Instrument control software was programmed in Igor Pro 6.3 (Wavemetrics). The retraction speed was controlled with a closed-loop feedback system running internally on the AFM controller field-programmable gate array (FPGA).\n\n### Force-extension data analysis\n\nData analysis and plotting was performed in Python (Python Software Foundation. Python Language Reference, version 2.7. Available at http://www.python.org) utilizing the libraries NumPy and SciPy (van der Walt et al., 2011) and Matplotlib (Hunter, 2007).\n\nMeasured raw data were analyzed by determining the zero force value with the baseline position and applying a cantilever bending correction to the z-position. The resulting force distance traces were coarsely screened for peaks as sudden drops in force and curves with less than three peaks (such as in Figure 3\u2014figure supplement 1, panel F) were excluded, as they contain no clearly identifiable signal. Force-distance traces were transformed into contour length space with the inverse worm-like-chain model (Jobst et al., 2013), assuming a fixed persistence length of 0.4 nm. Screening for the 89 nm xylanase, the 36nm iLOV and the final 8 nm final double rupture increment was performed by finding their corresponding local maxima in a kernel density estimate with bandwidth b = 1 nm. Thresholds in force, distance, and peak counts were applied to sort out nonspecific and multiple interactions. All curves were ultimately selected for the xylanase or iLOV fingerprint and checked manually. For the counting statistics, double peaks were detected as an increment of 8 +- 4 nm in contour length for final rupture peaks in the contour length plot, given that the curve showed one of the fingerprints. If a double peak was detected, the force difference was determined as the percentual difference between the first and the final rupture peak force.\n\nBarrier position diagrams were assembled using optimal alignment through cross-correlation (Puchner et al., 2008;\u00a0Otten et al., 2014). The numbers of points included in fitted histograms are provided in the figure captions, along with the statistical tests and significance values obtained.\n\n### Amino acid sequences\n\n#### pET28a-HIS-XynT129C-DocS (C.t.) wild-type\n\nMSHHHHHHKNADSYAKKPHISALNAPQLDQRYKNEFTIGAAVEPYQLQNEKDVQMLKRHFNSIVAENVMKPISIQPEEGKFNFEQADRIVKFAKANGMDIRFHTLVWHSQVPQWFFLDKEGKPMVNECDPVKREQNKQLLLKRLETHIKTIVERYKDDIKYWDVVNEVVGDDGKLRNSPWYQIAGIDYIKVAFQAARKYGGDNIKLYMNDYNTEVEPKRTALYNLVKQLKEEGVPIDGIGHQSHIQIGWPSEAEIEKTINMFAALGLDNQITELDVSMYGWPPRAYPTYDAIPKQKFLDQAARYDRLFKLYEKLSDKISNVTFWGIADNHTWLDSRADVYYDANGNVVVDPNAPYAKVEKGKGKDAPFVFGPDYKVKPAYWAIIDHKVVPGTPSTKLYGDVNDDGKVNSTDAVALKRYVLRSGISINTDNADLNEDGRVNSTDLGILKRYILKEIDTLPYKN\n\n#### pET28a-ybbR-HIS-XynT129C-DocS (C.t.) 16aa GS Insert\n\nMGTDSLEFIASKLALEVLFQGPLQHHHHHHPWTSASKNADSYAKKPHISALNAPQLDQRYKNEFTIGAAVEPYQLQNEKDVQMLKRHFNSIVAENVMKPISIQPEEGKFNFEQADRIVKFAKANGMDIRFHTLVWHSQVPQWFFLDKEGKPMVNECDPVKREQNKQLLLKRLETHIKTIVERYKDDIKYWDVVNEVVGDDGKLRNSPWYQIAGIDYIKVAFQAARKYGGDNIKLYMNDYNTEVEPKRTALYNLVKQLKEEGVPIDGIGHQSHIQIGWPSEAEIEKTINMFAALGLDNQITELDVSMYGWPPRAYPTYDAIPKQKFLDQAARYDRLFKLYEKLSDKISNVTFWGIADNHTWLDSRADVYYDANGNVVVDPNAPYAKVEKGKGKDAPFVFGPDYKVKPAYWAIIDHKVVPGTPSTKLYGDVNDDGKVNSTDAVALKRYVLRSGIGSGSGSGSGSGSGSGSSINTDNADLNEDGRVNSTDLGILKRYILKEIDTLPYKN\n\n#### pET28a-HIS-XynT129C-DocS (C.t.) Q1 mutant\n\nMSHHHHHHKNADSYAKKPHISALNAPQLDQRYKNEFTIGAAVEPYQLQNEKDVQMLKRHFNSIVAENVMKPISIQPEEGKFNFEQADRIVKFAKANGMDIRFHTLVWHSQVPQWFFLDKEGKPMVNECDPVKREQNKQLLLKRLETHIKTIVERYKDDIKYWDVVNEVVGDDGKLRNSPWYQIAGIDYIKVAFQAARKYGGDNIKLYMNDYNTEVEPKRTALYNLVKQLKEEGVPIDGIGHQSHIQIGWPSEAEIEKTINMFAALGLDNQITELDVSMYGWPPRAYPTYDAIPKQKFLDQAARYDRLFKLYEKLSDKISNVTFWGIADNHTWLDSRADVYYDANGNVVVDPNAPYAKVEKGKGKDAPFVFGPDYKVKPAYWAIIDHKVVPGTPSTKLYGDVNDDGKVNDEDAVALAAYVLRSGISINTDNADLNEDGRVNSTDLGILKRYILKEIDTLPYKN\n\n#### pET28a-HIS-XynT129C-DocS (C.t.) Q3 mutant\n\nMSHHHHHHKNADSYAKKPHISALNAPQLDQRYKNEFTIGAAVEPYQLQNEKDVQMLKRHFNSIVAENVMKPISIQPEEGKFNFEQADRIVKFAKANGMDIRFHTLVWHSQVPQWFFLDKEGKPMVNECDPVKREQNKQLLLKRLETHIKTIVERYKDDIKYWDVVNEVVGDDGKLRNSPWYQIAGIDYIKVAFQAARKYGGDNIKLYMNDYNTEVEPKRTALYNLVKQLKEEGVPIDGIGHQSHIQIGWPSEAEIEKTINMFAALGLDNQITELDVSMYGWPPRAYPTYDAIPKQKFLDQAARYDRLFKLYEKLSDKISNVTFWGIADNHTWLDSRADVYYDANGNVVVDPNAPYAKVEKGKGKDAPFVFGPDYKVKPAYWAIIDHKVVPGTPSTKLYGDVNDDGKVNSTDAVALKRYVLRSGISINTDNADLNEDGRVNDEDLGILAAYILKEIDTLPYKN\n\n#### pET28a-HIS-XynT129C-DocS (C.t.) QQ mutant\n\nMSHHHHHHKNADSYAKKPHISALNAPQLDQRYKNEFTIGAAVEPYQLQNEKDVQMLKRHFNSIVAENVMKPISIQPEEGKFNFEQADRIVKFAKANGMDIRFHTLVWHSQVPQWFFLDKEGKPMVNECDPVKREQNKQLLLKRLETHIKTIVERYKDDIKYWDVVNEVVGDDGKLRNSPWYQIAGIDYIKVAFQAARKYGGDNIKLYMNDYNTEVEPKRTALYNLVKQLKEEGVPIDGIGHQSHIQIGWPSEAEIEKTINMFAALGLDNQITELDVSMYGWPPRAYPTYDAIPKQKFLDQAARYDRLFKLYEKLSDKISNVTFWGIADNHTWLDSRADVYYDANGNVVVDPNAPYAKVEKGKGKDAPFVFGPDYKVKPAYWAIIDHKVVPGTPSTKLYGDVNDDGKVNDEDAVALAAYVLRSGISINTDNADLNEDGRVNDEDLGILAAYILKEIDTLPYKN\n\n#### pET28a-ybbR-HIS-sfGFP-DocIS (C.t.)\n\nMGTDSLEFIASKLALEVLFQGPLQHHHHHHPWTSASSKGEELFTGVVPILVELDGDVNGHKFSVRGEGEGDATIGKLTLKFICTTGKLPVPWPTLVTTLTYGVQCFSRYPDHMKRHDFFKSAMPEGYVQERTISFKDDGKYKTRAVVKFEGDTLVNRIELKGTDFKEDGNILGHKLEYNFNSHNVYITADKQKNGIKANFTVRHNVEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQTVLSKDPNEKRDHMVLHEYVNAAGITHGMDELYKKVVPGTPSTKLYGDVNDDGKVNSTDAVALKRYVLRSGISINTDNADLNEDGRVNSTDLGILKRYILKEIDTLPYKN\n\n#### pET28a-ybbR-HIS-CBM A2C-Coh2 (C.t.)\n\nMGTDSLEFIASKLALEVLFQGPLQHHHHHHPWTSASMCNTVSGNLKVEFYNSNPSDTTNSINPQFKVTNTGSSAIDLSKLTLRYYYTVDGQKDQTFWCDHAAIIGSNGSYNGITSNVKGTFVKMSSSTNNADTYLEISFTGGTLEPGAHVQIQGRFAKNDWSNYTQSNDYSFKSASQFVEWDQVTAYLNGVLVWGKEPGGSVVPSTQPVTTPPATTKPPATTIPPSDDPNAGSDGVVVEIGKVTGSVGTTVEIPVYFRGVPSKGIANCDFVFRYDPNVLEIIGIDPGDIIVDPNPTKSFDTAIYPDRKIIVFLFAEDSGTGAYAITKDGVFAKIRATVKSSAPGYITFDEVGGFADNDLVEQKVSFIDGGVNVGNAT\n\n#### pET28a-ybbR-HIS-iLOV-Coh2 (C.t.)\n\nMGTDSLEFIASKLALEVLFQGPLQHHHHHHPWTSASGSPEFIEKNFVITDPRLPDNPIIFASDGFLELTEYSREEILGRNARFLQGPETDQATVQKIRDAIRDQRETTVQLINYTKSGKKFWNLLHLQPVRDQKGELQYFIGVQLDGSDHVGSVVPSTQPVTTPPATTKPPATTIPPSDDPNAGSDGVVVEIGKVTGSVGTTVEIPVYFRGVPSKGIANCDFVFRYDPNVLEIIGIDPGDIIVDPNPTKSFDTAIYPDRKIIVFLFAEDSGTGAYAITKDGVFAKIRATVKSSAPGYITFDEVGGFADNDLVEQKVSFIDGGVNVGNAT\n\n#### pET28a-StrepII-TagRFP-Coh2 (C.t.)\n\nMWSHPQFEKVSKGEELIKENMHMKLYMEGTVNNHHFKCTSEGEGKPYEGTQTMRIKVVEGGPLPFAFDILATSFMYGSRTFINHTQGIPDFFKQSFPEGFTWERVTTYEDGGVLTATQDTSLQDGCLIYNVKIRGVNFPSNGPVMQKKTLGWEANTEMLYPADGGLEGRSDMALKLVGGGHLICNFKTTYRSKKPAKNLKMPGVYYVDHRLERIKEADKETYVEQHEVAVARYCDLPSKLGHKLNGSVVPSTQPVTTPPATTKPPATTIPPSDDPNAGSDGVVVEIGKVTGSVGTTVEIPVYFRGVPSKGIANCDFVFRYDPNVLEIIGIDPGDIIVDPNPTKSFDTAIYPDRKIIVFLFAEDSGTGAYAITKDGVFAKIRATVKSSAPGYITFDEVGGFADNDLVEQKVSFIDGGVNVGNAT\n",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "bbe7941d-de1b-4b17-94cf-97b0c2d03ebd",
+      "submission_id": "9a39d122-4ded-49f6-97da-c07f398f71da",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Taekjip Ha, Johns Hopkins University School of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.10319.012](https://doi.org/10.7554/eLife.10319.012)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"Resolving Dual Binding Modes of Cellulosome Cohesin-Dockerin Complexes using Single-Molecule Force Spectroscopy\" for peer review at eLife. Your submission has been favorably evaluated by John Kuriyan (Senior Editor), a Reviewing Editor, and two reviewers. One of the two reviewers, Jie Yan, has agreed to reveal his identity.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe manuscript by Jobst et al. describes the using of site-directed mutagenesis, protein engineering, and atomic force microscopy to assess the dual mode of binding of the cellulosomal type-I dockerin module to its cognate scaffoldin type-I cohesin module.\n\nThe cellulosome is a highly efficient lignocellulosic degrading complex produced by several anaerobic bacteria. The high-affinity type-I cohesin-dockerin interaction mediates the assembly of enzymatic subunits onto the central scaffoldin subunit. X-ray crystallographic studies have revealed that type-I dockerin modules, through its internal sequential symmetry, can display two modes of binding on the surface of the type-I cohesin module. These studies have been complemented with biophysical studies (e.g. isothermal titration calorimetry) and have involved the use of dockerin mutants to distinguish the two binding modes. Direct observation of this dual binding mode in solution has remained elusive, including assessing any preference for a particular mode/orientation.\n\nThe authors observed either a single force peak or two force peaks that are separated by ~ 8 nm preceding the final dissociation of the complex, which led to their critical hypothesis that they may correspond to the dual-binding modes of Coh-Doc complexes. The authors excluded the possibilities that these characteristic force peaks were from unfolding of CBM, xylanase, and partial unfolding of cohesion by various strictly designed control experiments. By additional studies using (GS)8-insert located between helix 1 and 2, the authors were finally able to determine that the double-peak of unfolding force separated by 8-nm is from unfolding involving loop 1 and helix 1 at the N-terminus of dockerin.\n\nOverall, this is an important and solid study that provides important insights to the mechanism of Coh-Doc interaction. This manuscript is clearly and concisely written. The methods used are highly appropriate and the analysis and interpretation of the data appears sound. Indeed, the work represents a novel and revealing study. One weakness of the manuscript is that there is no clear exposition on if and why the two binding modes may have physiological consequences.\n\nEssential revisions:\n\n1) Some additional information in the Introduction to highlight the biological and biophysical significance of the cellulosome cohesin-dockerin interactions and in the Discussion to show the benefits of having two binding modes should be added. Otherwise, the readers may feel that the two binding modes may be of peculiar novelty that may be of no physiological consequences.\n\n2) The authors stated that the binding of Doc helix 1 to Coh corresponds to the binding mode A, while that of Doc helix 3 to Coh corresponds to the binding mode B. It will be helpful to indicate all interaction bonds at the binding interface in Figure 1B or in a new figure panel for each binding mode. It will also be helpful to add an arrow to the N-terminus of Doc in Figure 1B to indicate location where the force is applied. With such information illustrated in the figure, it will be easier for readers to understand how force is applied, and why the mode A may have double force peaks prior to rupture.\n\n3) The authors proposed that in the mode A the first barrier of the double peaks represents unfolding of the N-terminal calcium binding loop and unraveling of alpha helix 1 up to the Lys-Arg pair at sequence positions 18 and 19. But my impression is that in the mode A, the binding is through the interaction between Doc helix 1 and Coh. Do the authors suggest that unfolding of the N-terminal calcium-binding loop always precedes the dissociation of the Doc helix 1 from Coh? Does the N-terminal calcium-binding loop also bind to Coh? If not, how can its unfolding be thought of as the first barrier against rupture? What will happen if Ca2+ is removed from solution? Some clarifications and additional discussions will be helpful.\n\n4) In their Q3 mutant, the binding mode B is excluded. Should we expect to see predominant double force peak preceding rupture since only the mode A is possible? Why do we still see 41% of single force peak, similar to that from the wild type? Maybe we misunderstood something. If we did, please clarify in the reply letter and in a revised manuscript.\n",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "28ccac7a-532d-4149-8129-e0748bc7f227",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C1",
+      "claim": "Cellulosomal cohesin-dockerin (Coh-Doc) pairs are believed to interact through redundant dual binding modes consisting of two distinct conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Receptor-ligand pairs are ordinarily thought to interact through a lock and key mechanism, where a unique molecular conformation is formed upon binding. Contrary to this paradigm, cellulosomal cohesin-dockerin (Coh-Doc) pairs are believed to interact through redundant dual binding modes consisting of two distinct conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to prior literature and established understanding in the field, as indicated by the phrase 'are believed to'.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "667071a7-9c37-461b-9819-63ab293fce4d",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C2",
+      "claim": "Single-molecule force spectroscopy (SMFS) was used to discriminate two binding modes of Coh:Doc complexes based on distinct differences in their mechanical properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Although average bulk measurements were unable to resolve the differences in Doc binding modes due to the similarity of the interactions, with a single-molecule method we were able to discriminate the two modes based on distinct differences in their mechanical properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes experimental results from SMFS measurements showing distinct mechanical properties for different binding modes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "6fd7c15d-eaea-4b9d-9468-a90bb14faea8",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C3",
+      "claim": "Wild-type Doc from Clostridium thermocellum exocellulase Cel48S populates both binding modes with similar probabilities under native conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that under native conditions wild-type Doc from Clostridium thermocellum exocellulase Cel48S populates both binding modes with similar probabilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the experimental data presented in the manuscript, particularly the single-molecule measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "b2ba5937-2928-46d1-ba7f-b103ba9533e0",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C4",
+      "claim": "Cellulosomes are hierarchically branching protein networks developed by nature for efficient deconstruction of lignocellulosic biomass.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellulosomes are hierarchically branching protein networks developed by nature for efficient deconstruction of lignocellulosic biomass.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature on cellulosomes.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "538c691c-0130-4826-90da-196de0d71758",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C5",
+      "claim": "Cellulosomes incorporate catalytic domains, carbohydrate binding modules (CBMs), cohesin:dockerin (Coh:Doc) pairs, and other conserved features.",
+      "claim_type": "EXPLICIT",
+      "source": "These enzyme complexes incorporate catalytic domains, carbohydrate binding modules (CBMs), cohesin:dockerin (Coh:Doc) pairs, and other conserved features (Demain et al., 2005; Bayer et al., 2004; Schwarz, 2001; B\u00e9guin and Aubert, 1994; Smith and Bayer, 2013; Fontes and Gilbert, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple literature citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "1be710d5-9fc4-4968-b849-b6c6bd83d75f",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C6",
+      "claim": "The type-I Doc domain is typically found at the C-terminus of cellulosomal catalytic domains and is approximately 75 amino acids in length.",
+      "claim_type": "EXPLICIT",
+      "source": "A central attribute of cellulosome assembly is the conserved ~75 amino acid type-I Doc domain typically found at the C-terminus of cellulosomal catalytic domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about cellulosome structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "a1e873df-8a64-47bd-a4dd-9b1906010312",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C7",
+      "claim": "Dockerins guide attachment of enzymes into cellulosome networks by binding strongly to conserved Coh domains organized within non-catalytic poly (Coh) scaffolds.",
+      "claim_type": "EXPLICIT",
+      "source": "Dockerins guide attachment of enzymes into the networks by binding strongly to conserved Coh domains organized within non-catalytic poly (Coh) scaffolds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the functional role of dockerins based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "5dcd6804-e358-439e-be70-d6f8431191d3",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C8",
+      "claim": "Many archetypal Coh:Doc pairs exhibit nanomolar binding affinities.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to their nanomolar binding affinities, many archetypal Coh:Doc pairs are thought to exhibit dual binding modes (Carvalho et al., 2007; Pinheiro et al., 2008; Currie et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "fdf25de1-c15d-4b71-ab74-f545a36a5aae",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C9",
+      "claim": "Many archetypal Coh:Doc pairs are thought to exhibit dual binding modes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to their nanomolar binding affinities, many archetypal Coh:Doc pairs are thought to exhibit dual binding modes (Carvalho et al., 2007; Pinheiro et al., 2008; Currie et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "efdaed59-aa9d-45da-b5fc-bc92be4438c1",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C10",
+      "claim": "The two binding modes of Doc differ by approximately 180\u00b0 rotation on the Coh surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The bound Doc domain can adopt two possible orientations that differ by ~180\u00b0 rotation on the Coh surface, as shown in Figure 1B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data shown in Figure 1B and referenced literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "a3efa5a7-39d9-44fb-8688-5961883ebcc2",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C11",
+      "claim": "The two binding modes originate from duplicated F-hand sequence motifs found among type-I dockerins.",
+      "claim_type": "EXPLICIT",
+      "source": "The two binding modes originate from duplicated F-hand sequence motifs, a conserved structural feature found among type-I dockerins (Pag\u00e8s et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "b811b67c-85c8-4fbe-aba1-28fd828bd52b",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C12",
+      "claim": "The duplicated F-hand motifs in dockerins resemble EF-hands found in eukaryotic calcium binding proteins such as calmodulin.",
+      "claim_type": "EXPLICIT",
+      "source": "The duplicated F-hand motifs resemble EF-hands found in eukaryotic calcium binding proteins (e.g., calmodulin), and provide internal sequence and structural symmetry to Doc domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural similarity and established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "e8ca64bc-9585-403c-a67e-754cbc03f986",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C13",
+      "claim": "Rotating Doc by approximately 180\u00b0 with respect to Coh results in an alternatively bound complex with similarly high affinity involving the same residues on Coh recognizing mirrored residues within Doc.",
+      "claim_type": "EXPLICIT",
+      "source": "Rotating Doc by ~180\u00b0 with respect to Coh (Figure 1B,C) results in an alternatively bound complex with similarly high affinity involving the same residues on Coh recognizing mirrored residues within Doc.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data shown in Figures 1B and 1C.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "5629b3d5-80be-43f5-8e82-2c6a80bb6a48",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C14",
+      "claim": "The dual binding mode is thought to increase the conformational space available to densely packed enzymes on protein scaffolds.",
+      "claim_type": "EXPLICIT",
+      "source": "The dual binding mode is thought to increase the conformational space available to densely packed enzymes on protein scaffolds, and to facilitate substrate recognition by catalytic domains within cellulosomal networks (Bayer et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "f4cede87-4743-45b9-89a1-77cb8b15a640",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C15",
+      "claim": "The dual binding mode facilitates substrate recognition by catalytic domains within cellulosomal networks.",
+      "claim_type": "EXPLICIT",
+      "source": "The dual binding mode is thought to increase the conformational space available to densely packed enzymes on protein scaffolds, and to facilitate substrate recognition by catalytic domains within cellulosomal networks (Bayer et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "68f7ea43-c910-4229-adff-71659de54da1",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C16",
+      "claim": "The dual binding mode confers robustness against loss-of-function mutations from an evolutionary perspective.",
+      "claim_type": "EXPLICIT",
+      "source": "From an evolutionary perspective, the dual binding mode confers robustness against loss-of-function mutations, while allowing mutations within Doc to explore inter-bacterial species cohesin-binding promiscuity in cellulosome-producing microbial communities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about evolutionary advantages based on the structural properties.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "53498e1f-d4c0-4376-bd55-6fef62b5bd6e",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C17",
+      "claim": "The dual binding mode allows mutations within Doc to explore inter-bacterial species cohesin-binding promiscuity in cellulosome-producing microbial communities.",
+      "claim_type": "EXPLICIT",
+      "source": "From an evolutionary perspective, the dual binding mode confers robustness against loss-of-function mutations, while allowing mutations within Doc to explore inter-bacterial species cohesin-binding promiscuity in cellulosome-producing microbial communities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about evolutionary advantages based on the structural properties.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "bafb9f8a-d307-4383-b8af-0d7e3acc1229",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C18",
+      "claim": "Direct experimental observation of the dual binding modes for wild-type Doc has proven challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "However, direct experimental observation of the dual binding modes for wild-type Doc has thus far proven challenging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known limitation in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "db5f1405-76b8-4ec0-adec-de4c840bf0b9",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C19",
+      "claim": "Ensemble average bulk biochemical assays are of limited use in resolving binding mode populations when the binding modes are of equal thermodynamic affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Ensemble average bulk biochemical assays (e.g., surface plasmon resonance, calorimetry, enzyme-linked immunosorbent assays) are of limited use in resolving binding mode populations, particularly when the binding modes are of equal thermodynamic affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the inherent limitations of ensemble methods.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "79f1d247-c22a-4414-bdb2-1a3138868fd4",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C20",
+      "claim": "Crystallography of Coh:Doc complexes is challenging because the complex does not adopt a unique molecular conformation but exhibits a mixture of two conformations, hindering crystal growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystallography is challenging because the complex does not adopt a unique molecular conformation, but rather exhibits a mixture of two conformations thereby hindering crystal growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains a technical challenge based on the nature of the dual binding mode.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "5e733905-60a7-48e2-8c1d-dcdae1bd56e6",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C21",
+      "claim": "Structural data on the dual binding mode have typically been collected using a mutagenesis approach where one of the binding modes was destabilized by mutating key recognition elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural data on the dual binding mode have typically been collected using a mutagenesis approach, where one of the binding modes was destabilized by mutating key recognition elements (Carvalho et al., 2007; Pinheiro et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature describing this methodology.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "5b07f71b-9677-4c96-81e0-61beb58d4f83",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C22",
+      "claim": "The mutagenesis approach for obtaining structural data cannot determine if one binding mode is dominant for wild-type Doc or if that dominance is species or sequence dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach, however, while resolving the structures of each bound complex, cannot determine if one binding mode is dominant for wild-type Doc, or if that dominance is species or sequence dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the limitations of the mutagenesis approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "077e10ef-1e90-4462-af5d-2fbc18568e9f",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C23",
+      "claim": "Coarse grained molecular dynamics has predicted dual modes of interaction between Coh and Doc.",
+      "claim_type": "EXPLICIT",
+      "source": "Coarse grained molecular dynamics has also predicted dual modes of interaction between Coh and Doc (Hall and Sansom, 2009), but direct experimental evidence of both binding modes for wild-type Doc has remained elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior computational work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "1ad78db6-3d2d-4415-a003-e0fe76b8bac0",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C24",
+      "claim": "Direct experimental evidence of both binding modes for wild-type Doc has remained elusive.",
+      "claim_type": "EXPLICIT",
+      "source": "Coarse grained molecular dynamics has also predicted dual modes of interaction between Coh and Doc (Hall and Sansom, 2009), but direct experimental evidence of both binding modes for wild-type Doc has remained elusive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a gap in the existing literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "4352e7ee-8643-4d76-a0e5-19756b70cec8",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C25",
+      "claim": "Doc mutants Q1 and Q3 were designed to exhibit a preferred binding mode.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate our approach, we produced Doc mutants that exhibited a preferred binding mode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "8939cf2d-1e45-4e85-b4a8-56edfa35f673",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C26",
+      "claim": "Single-molecule pulling experiments on bound Coh:mutant Doc complexes observed a strong bias in the probability of two clearly distinguishable unfolding patterns termed 'single' and 'double' rupture types for each binding mode mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed single-molecule pulling experiments on bound Coh:mutant Doc complexes and observed a strong bias in the probability of two clearly distinguishable unfolding patterns, termed 'single' and 'double' rupture types for each binding mode mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes experimental observations from SMFS measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "65518734-972d-4445-b8e1-3bcb76a765fe",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C27",
+      "claim": "Poly (Gly-Ser) inserts were used to add amino acid sequence length to specific sections of Doc to identify which portions of Doc unfolded.",
+      "claim_type": "EXPLICIT",
+      "source": "We further probed the unbinding mechanism of the double rupture events using poly (Gly-Ser) inserts to add amino acid sequence length to specific sections of Doc as a means to identify which portions of Doc unfolded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an experimental approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "dc0ada53-5e9a-42b8-b5f3-aeb8b1369a2f",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C28",
+      "claim": "The inherent differences in mechanical stability of each binding mode were used to directly observe and quantify binding mode populations for wild-type Doc.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we used the inherent differences in mechanical stability of each binding mode, and the effects these differences had on the unfolding force distributions of an adjacent domain, to directly observe and quantify binding mode populations for wild-type Doc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical approach used to quantify binding modes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "1b374c3e-591e-430c-9b3f-3b4cd084b7c8",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C29",
+      "claim": "A Ser-Thr pair located at positions 11 and 12 of F-hand motif 1 (N-terminal helix 1) is highly conserved among Ct-Doc domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Among Ct-Doc domains, a Ser-Thr pair located at positions 11 and 12 of F-hand motif 1 (N-terminal helix 1) is highly conserved (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence analysis shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "33fd0647-f869-4e8c-a7df-b3bcdc42083d",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C30",
+      "claim": "The Ser-Thr pair at positions 11 and 12 is H-bonded to Coh in binding mode A.",
+      "claim_type": "EXPLICIT",
+      "source": "This Ser-Thr pair is H-bonded to Coh in binding mode A (Figure 1A, black dots).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "ac01e6bc-c998-4835-a7b8-90fba565f3c4",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C31",
+      "claim": "Binding mode B refers to the configuration where the Ser-Thr pair from helix 3 dominates the H-bonding to Coh.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogously, binding mode B refers to the configuration where the Ser-Thr pair from helix 3 dominates the H-bonding to Coh (Figure 1A, gray dots).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "7cf5db94-841b-4491-a6f0-7489baced2e4",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C32",
+      "claim": "Binding mode B was previously crystallized for a homologous Ct-Doc.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding mode B was previously crystallized for a homologous Ct-Doc (Carvalho et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "ba7f39d1-6f7b-45f6-b0a4-409ef7efdec4",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C33",
+      "claim": "Mutation of the Ser-Thr pair in helix 3 to Ala-Ala was used to bias binding and thereby crystallize binding mode A for a Ct-Doc.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of the Ser-Thr pair in helix 3 to Ala-Ala was used to bias binding and thereby crystallize binding mode A for the same Doc (Carvalho et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "fde87b68-7863-46ec-8711-6c97a71fd7a8",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C34",
+      "claim": "A similar targeted mutagenesis approach was used to obtain crystal structures of a Clostridium cellulolyticum Doc in each binding mode.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar targeted mutagenesis approach was also used to obtain crystal structures of a Clostridium cellulolyticum Doc in each binding mode (Pinheiro et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "372bb91e-3e7f-4d5a-9e44-4cffc3a3650f",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C35",
+      "claim": "Quadruple mutants (Q1 and Q3) were designed to preferentially select for a specific binding mode (A or B).",
+      "claim_type": "EXPLICIT",
+      "source": "To preferentially select for a specific binding mode (A or B), we prepared Doc sequences that incorporated 4 amino acid point mutations, referred to as quadruple mutants ('Q').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "2506dc1b-c2e8-4469-88c8-b1193faca94d",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C36",
+      "claim": "Non-canonical Ct-Doc domains that differ from the canonical duplicated Ser-Thr sequences were found to exhibit only a single binding mode.",
+      "claim_type": "EXPLICIT",
+      "source": "To design quadruple mutants, we noted that recent structural work reported a set of Ct-Doc domains that differ from the canonical duplicated Ser-Thr sequences. These non-canonical Docs were found to exhibit only a single binding mode (Br\u00e1s et al., 2012; Pinheiro et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "7996243f-1e63-47df-95d9-4e71778c79ec",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C37",
+      "claim": "In one non-canonical Doc domain, an Asp-Glu pair was found in place of Ser-Thr.",
+      "claim_type": "EXPLICIT",
+      "source": "In one of these non-canonical Doc domains, an Asp-Glu pair was found in place of Ser-Thr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural information from prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "36a12780-6702-452c-8555-7b2772259a5d",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C38",
+      "claim": "Including Asp-Glu in place of Ser-Thr within one of the F-hands could be used to effectively knock out a given binding mode because the Coh surface is negatively charged.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the Coh surface is negatively charged, we postulated that including Asp-Glu in place of Ser-Thr within one of the F-hands could be used to effectively knock out a given binding mode for our canonical Doc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on electrostatic considerations.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "79932085-07f8-41b7-8aae-80b132b46957",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C39",
+      "claim": "Double alanine mutations were incorporated to replace the conserved Lys-18 Arg-19 residues of a given F-hand motif to further destabilize a targeted binding mode.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we incorporated double alanine mutations to replace the conserved Lys-18 Arg-19 residues of a given F-hand motif, further destabilizing a targeted binding mode.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design approach.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "c4ae084c-0bbd-4c9c-8137-e1582407742f",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C40",
+      "claim": "Q1 refers to a quadruple mutant where helix 1 has been modified at four positions (S11D-T12E-K18A-R19A).",
+      "claim_type": "EXPLICIT",
+      "source": "Q1 refers to a quadruple mutant where helix 1 has been modified at four positions (i.e. S11D-T12E-K18A-R19A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific mutations made in the Q1 mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "22b4714a-6097-439e-b894-5fd850c24904",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C41",
+      "claim": "Q3 refers to the quadruple mutant where helix 3 has been modified at four positions (S43D-T44E-K50A-R51A).",
+      "claim_type": "EXPLICIT",
+      "source": "Q3 refers to the quadruple mutant where helix 3 has been modified at four positions (i.e. S43D-T44E-K50A-R51A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific mutations made in the Q3 mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "e0614585-8a30-4460-b08e-484713cb4d80",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C42",
+      "claim": "QQ mutant incorporated quadruple mutations into both helices 1 and 3 and served as a negative control.",
+      "claim_type": "EXPLICIT",
+      "source": "As a negative control, we prepared a mutant referred to as 'QQ' that incorporated quadruple mutations into both helices 1 and 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the negative control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "9ff4fd54-052a-4b66-999a-580fa620d97d",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C43",
+      "claim": "Doc domains were expressed as fusion domains attached to the C-terminal end of xylanaseT6 from Geobacillus stearothermophilus to improve solubility and expression levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Doc domains were expressed as fusion domains attached to the C-terminal end of xylanaseT6 (Xyn) from Geobacillus stearothermophilus to improve solubility and expression levels as previously reported (Stahl et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental approach and is supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "302cc972-9fe3-4dfa-8e36-6924f81afbe7",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C44",
+      "claim": "The Xyn domain acts as a fingerprint in AFM force extension traces to provide a means for screening datasets and searching for known contour length increments.",
+      "claim_type": "EXPLICIT",
+      "source": "The Xyn domain also acts as a so-called fingerprint in AFM force extension traces to provide a means for screening datasets and searching for known contour length increments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological role of the Xyn domain.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "e0a39c65-5444-45ca-b95e-7aebc60c46d5",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C45",
+      "claim": "Cohesin 2 from Ct-CipA was expressed as a C-terminal fusion domain with the family 3a carbohydrate binding module (CBM) from Ct-CipA.",
+      "claim_type": "EXPLICIT",
+      "source": "For the Coh domain, we chose cohesin 2 from Ct-CipA expressed as a C-terminal fusion domain with the family 3a carbohydrate binding module (CBM) from Ct-CipA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the Coh construct.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "91f6158f-3d85-438e-b7e8-738958edd0aa",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C46",
+      "claim": "A second set of fusion proteins was cloned, expressed and probed in complementary experiments using a flavoprotein domain from the plant blue light receptor phototropin (iLOV) to exclude artifacts arising from fingerprint domains, protein immobilization or pulling geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to exclude artifacts arising from fingerprint domains, protein immobilization or pulling geometry, a second set of fusion proteins was cloned, expressed and probed in complementary experiments using a flavoprotein domain from the plant blue light receptor phototropin (iLOV) (Chapman et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design for control experiments and is supported by a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "9d7b2271-abfc-4b4c-924d-e86b1c1db188",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C47",
+      "claim": "CBM-Coh was site-specifically and covalently attached to an AFM cantilever tip.",
+      "claim_type": "EXPLICIT",
+      "source": "CBM-Coh was site-specifically and covalently attached to an AFM cantilever tip and brought into contact with a glass surface modified with Xyn-Doc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental setup for AFM measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "21ef9c01-651a-4cd3-961e-4e8815e15464",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C48",
+      "claim": "The mechanical strength of protein domains and complexes strongly depends on the pulling points (sites at which the molecule is attached to cantilever/surface).",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanical strength of protein domains and complexes will strongly depend on the pulling points (i.e. sites at which the molecule is attached to cantilever/surface).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field of single-molecule force spectroscopy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "80f8cec6-cb7a-4663-bd9b-a2d99ec0befb",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C49",
+      "claim": "The site-specific attachment chemistry ensured the same loading geometry was used on the complex for each and every data trace.",
+      "claim_type": "EXPLICIT",
+      "source": "The site-specific attachment chemistry used here was precisely defined by the chosen residue of immobilization, ensuring the same loading geometry was used on the complex for each and every data trace.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach to ensure reproducibility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "b6275e1d-0a0b-467e-80d6-4f7de3ea96aa",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C50",
+      "claim": "The cantilever retraction speed ranged from 200 to 3200 nm/s during AFM measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "After formation of the Coh:Doc complex, the cantilever was retracted at a constant speed that ranged from 200 to 3200 nm/s while the force was monitored by optical cantilever deflection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental parameters used in AFM measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "7ce2df32-d460-4b2a-bf54-e69eacabcd4f",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C51",
+      "claim": "A sawtooth pattern was consistently observed in force-distance traces when molecular ligand-receptor complexes had formed.",
+      "claim_type": "EXPLICIT",
+      "source": "A sawtooth pattern was consistently observed when molecular ligand-receptor complexes had formed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the characteristic signature of single-molecule interactions in AFM.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "e24bdd41-6ce7-478c-9ac3-396e1d9c57a4",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C52",
+      "claim": "Contour length transformation and identification of traces containing a Xyn contour length increment (~89 nm) allowed screening for single-molecule interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Sorting the data using contour length transformation (Puchner et al., 2008) and identifying traces that contained a Xyn contour length increment (~89 nm) allowed us to screen for single-molecule interactions (Stahl et al., 2012), as described in our prior work on Coh:Doc dissociation under force (Stahl et al., 2012; Schoeler et al., 2014; Jobst et al., 2013; Otten et al., 2014; Schoeler et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data analysis methodology and is supported by citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "b6eee25f-5889-4d67-aa3b-6b78e885311d",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C53",
+      "claim": "Coh:Doc complex rupture occurred in two distinct event types: single and double ruptures.",
+      "claim_type": "EXPLICIT",
+      "source": "The Coh:Doc complex rupture occurred in two distinct event types: single (B) and double (C) ruptures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the force-extension traces shown in Figures 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "f024c923-a2d7-4035-a583-5b99b37aeaae",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C54",
+      "claim": "The 8-nm contour length increment separating the double peaks was assigned to Doc unfolding.",
+      "claim_type": "EXPLICIT",
+      "source": "The 8-nm contour length increment separating the double peaks was assigned to Doc unfolding (C, green).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an assignment based on the experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "e93aee94-7382-4542-aa54-faeaa5011b86",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C55",
+      "claim": "The 8-nm contour length increment was also observed in complementary experiments employing other fusion domains where xylanase was swapped for an sfGFP domain and CBM was swapped out for an iLOV domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The 8-nm contour length increment was also observed in complementary experiments employing other fusion domains: xylanase was swapped for an sfGFP domain and CBM was swapped out for an iLOV domain. In these new fusions, the 8 nm Doc increment was still observed, indicating it was not caused by a specific fusion domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes control experiments that validate the assignment of the 8-nm increment to Doc.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "6a8b0b16-b0ab-4ce3-8423-fd17cc6f8341",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C56",
+      "claim": "Double and single rupture events were associated with binding modes A and B, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "As we show below, double and single rupture events were associated with binding modes A and B, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data presented later in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "4fbbb658-f3ab-4b36-98b9-3d07479773e8",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C57",
+      "claim": "CBM unfolding length increments (~57 nm) were only rarely observed because the Coh:Doc complex only rarely withstood forces sufficiently high to unfold CBM.",
+      "claim_type": "EXPLICIT",
+      "source": "CBM unfolding length increments (~57 nm) were only rarely observed because the Coh:Doc complex only rarely withstood forces sufficiently high to unfold CBM (Stahl et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental data and is supported by a citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "d812e05b-1e6e-4497-be53-83dc5ce7d76c",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C58",
+      "claim": "Q1 and Q3 Doc sequences maintained high-binding affinity with dissociation constants (Kd) in the nM range.",
+      "claim_type": "EXPLICIT",
+      "source": "The data clearly showed that Q1 and Q3 Doc sequences, each with a mutated binding mode, maintained high-binding affinity with dissociation constants (Kd) in the nM range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the fluorescence binding data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "551cf9d3-cf4d-4ea6-9211-937d9e1c5231",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C59",
+      "claim": "The dissociation constants for Q1 and Q3 mutants are in good agreement with previous reports on homologous type-I Doc domains.",
+      "claim_type": "EXPLICIT",
+      "source": "These values are in good agreement with previous reports on homologous type-I Doc domains (Br\u00e1s et al., 2012; Sakka et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This comparison is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "9d826107-bb96-4033-b84c-5a407df01ca1",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C60",
+      "claim": "Mutant Doc domains with one destabilized binding mode were still able to recognize fluorescent protein fused Coh with strong affinity by relying on the alternative binding mode that was preserved.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggested that mutant Doc domains with one destabilized binding mode were still able to recognize fluorescent protein fused Coh with strong affinity by relying on the alternative binding mode that was preserved.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the binding data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "02952c97-93a0-4813-b51d-7dae4c73ab4e",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C61",
+      "claim": "The QQ double knockout mutant showed no appreciable binding over the concentration range tested.",
+      "claim_type": "EXPLICIT",
+      "source": "The QQ double knockout mutant, however, showed no appreciable binding over the concentration range tested.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the fluorescence binding data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "29452a13-8857-4eb8-88ec-743999b48ac7",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C62",
+      "claim": "DEAA quadruple mutations were effective at eliminating binding for the targeted modes.",
+      "claim_type": "EXPLICIT",
+      "source": "This negative control showed that DEAA quadruple mutations were in fact effective at eliminating binding for the targeted modes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is drawn from the QQ mutant binding data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "25a5615d-c119-430a-acee-0bb2542e65e9",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C63",
+      "claim": "Wild-type Doc showed double rupture events in approximately 57% of the cases and single rupture events in approximately 43% of the cases.",
+      "claim_type": "EXPLICIT",
+      "source": "The wild-type Doc showed double rupture events in ~57% of the cases, and single rupture events in ~43% of the cases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the event probability data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "6baf9db3-4e01-43e3-ae73-c2c9a6396f36",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C64",
+      "claim": "The Q1 mutant showed a single event probability of approximately 77% and a double event probability of approximately 23%.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutant designed to knock out binding mode A (Q1), showed a single event probability of ~77%, and a double event probability of ~23%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the event probability data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "defb4b02-b16f-484d-8270-3fa7b8b0042a",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C65",
+      "claim": "The Q3 mutant showed a single event probability of approximately 41% and a double event probability of approximately 59%.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutant designed to knock out binding mode B (Q3) showed a single event probability of ~41%, and a double event probability of ~59%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the event probability data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "47775f4b-e503-4c92-bccf-8faf6c48f143",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C66",
+      "claim": "The Q1 mutant has a strong bias toward single peaks that is not observed in the wild-type, leading to preliminary assignment of single peaks to binding mode B.",
+      "claim_type": "EXPLICIT",
+      "source": "It is clear from these data that the Q1 mutant has a strong bias toward single peaks that is not observed in the wild-type leading to preliminary assignment of single peaks to binding mode B.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the event probability data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "31b9ff34-b17e-47f3-8de4-1111cc0dce31",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C67",
+      "claim": "Q1 and wild-type on average showed second peaks that were approximately 15-20% higher in force than the first peak for double events.",
+      "claim_type": "EXPLICIT",
+      "source": "Q1 and wild-type on average showed second peaks that were ~15\u201320% higher in force than the first peak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the force difference data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "0a22e777-a8e3-446a-bb46-63355e649eaa",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C68",
+      "claim": "Double peaks for the Q3 mutant were more likely to show a shielded behavior where the second peak was lower in force than the first peak by approximately 10%.",
+      "claim_type": "EXPLICIT",
+      "source": "Double peaks for the Q3 mutant were more likely to show a shielded behavior, where the second peak was lower in force than the first peak by ~10%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the force difference data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "ba7896ce-85d1-413e-a06f-4028a387250c",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C69",
+      "claim": "The second barrier of the double events was weaker in Q3 than for wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "The second barrier of the double events was therefore weaker in Q3 than for wild-type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the force difference data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "3cc0aaa3-4b14-435a-845a-ddd73a58b45c",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C70",
+      "claim": "The number of double peaks is being underestimated systematically for the Q3 mutant due to the weaker 2nd double peak combined with similar single/double peak ratios as wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "This weaker 2nd double peak for the Q3 mutant combined with similar single/double peak ratios as wild-type leads us to believe that the number of double peaks is being underestimated systematically for the Q3 mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about systematic bias in the measurements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "f041973d-a245-4796-96de-582485848a7d",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C71",
+      "claim": "Each binding mode allows for the occurrence of a single event (albeit with different likelihood) in which the whole Doc domain unbinds without an additional unfolding substep.",
+      "claim_type": "EXPLICIT",
+      "source": "Generally, each binding mode still allows for the occurrence of a single event (albeit with different likelihood), in which the whole Doc domain unbinds without an additional unfolding substep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the unbinding mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "f37af8f3-8244-4276-8323-d97bb5fa8961",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C72",
+      "claim": "Since the second and final energy barrier for complex dissociation is weaker than the first for the Q3 mutant, the probability for the molecule to pass both barriers simultaneously is increased, resulting in a higher percentage of single events.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the second and final energy barrier for complex dissociation is weaker than the first for the Q3 mutant, the probability for the molecule to pass both barriers simultaneously is increased, thus resulting in a higher percentage of single events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the energy landscape and its effect on observed events.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "9b5abb60-a6fd-4806-ab5e-fb1b356fd27a",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C73",
+      "claim": "A (Gly-Ser)8 linker was incorporated between helix 1 and helix 2 in a flexible loop that was not expected to interfere with either of the two binding modes.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, we engineered flexible (GS)8 insert sequences directly into wild-type Doc between helices 1 and 2, in a flexible loop that was not expected to interfere with either of the two binding modes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of the GS-insert mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "f4a2f1f8-a505-4ca3-96de-442b71ea7fe0",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C74",
+      "claim": "The contour length histogram for (GS)8 Doc was indistinguishable from the wild-type Doc.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 5B,C and D, the contour length histogram for (GS)8 Doc was indistinguishable from the wild-type Doc.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "10f511ff-337c-4155-8be0-201cf7c91d52",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C75",
+      "claim": "No additional contour length was gained due to additional amino acids inserted between Doc helices 1 and 2.",
+      "claim_type": "EXPLICIT",
+      "source": "No additional contour length was gained due to additional amino acids inserted between Doc helices 1 and 2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the GS-insert experiment data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "0a7e56bb-718f-431c-a1c6-955ebec25be2",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C76",
+      "claim": "The unfolding event responsible for the 8-nm length increment must be located upstream (N-terminal) from the site of the (GS)8-insert.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the Doc was anchored to the glass slide through an N-terminal xylanase domain, this result indicated that the unfolding event responsible for the 8-nm length increment must be located upstream (i.e. N-terminal) from the site of the (GS)8-insert.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the GS-insert experiment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "6b017230-89b6-4fe8-8c69-8844ae352963",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C77",
+      "claim": "Unfolding of calcium binding loop 1 and helix 1 in Doc was the source of the 8-nm length increment.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggested that unfolding of calcium binding loop 1 and helix 1 in Doc was the source of the 8-nm length increment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the GS-insert experiment results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "822dffb7-2226-4855-8d12-77c555c3f8a5",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C78",
+      "claim": "The most probable rupture force for single events was approximately 104 pN at a pulling speed of 800 nm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "The most probable rupture force for single events was ~104 pN, while for double events this value was ~140 pN at a pulling speed of 800 nm/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the rupture force distribution data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "c1c93c5e-d28d-4bff-a934-3e55f4bd6854",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C79",
+      "claim": "The most probable rupture force for double events (second peak) was approximately 140 pN at a pulling speed of 800 nm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "The most probable rupture force for single events was ~104 pN, while for double events this value was ~140 pN at a pulling speed of 800 nm/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the rupture force distribution data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "035113ee-4b6f-41b3-8aee-50d5a311b7c9",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C82",
+      "claim": "Each binding mode has a distinct mechanical stability and energy landscape that is set at the time of receptor-ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Each mode has a distinct mechanical stability and energy landscape that is set at the time of receptor-ligand binding, that is once bound, the conformation of the complex does not change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that the binding mode affects the iLOV unfolding force distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "e5e6a87d-e520-450b-930f-284b25b2e4d0",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C83",
+      "claim": "Once bound, the conformation of the Coh:Doc complex does not change.",
+      "claim_type": "EXPLICIT",
+      "source": "Each mode has a distinct mechanical stability and energy landscape that is set at the time of receptor-ligand binding, that is once bound, the conformation of the complex does not change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observation that the binding mode affects the iLOV unfolding force distribution.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "e5270f56-14fb-4aa8-8845-672889cea1d1",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C84",
+      "claim": "If single- and double-event unbinding patterns were simply two competing pathways out of the same bound state, then the downward shift in rupture force distribution would not be observed for the iLOV unfolding forces.",
+      "claim_type": "EXPLICIT",
+      "source": "If single- and double-event unbinding patterns were simply two competing pathways out of the same bound state, then the downward shift in rupture force distribution would not be observed for the iLOV unfolding forces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical argument supporting the interpretation of the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "17ccb656-9d45-4afa-8760-8f8889fef1b1",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C85",
+      "claim": "The datasets for both binding modes were measured with the same cantilever throughout the runtime of the whole experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that the datasets for both binding modes were measured with the same cantilever throughout the runtime of the whole experiment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental procedure to ensure data quality.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "ab8f7fb0-05d4-46c5-b417-fc5891348414",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C86",
+      "claim": "Calibration and drift issues did not interfere with the required accuracy of the measurements.",
+      "claim_type": "EXPLICIT",
+      "source": "Calibration and drift issues therefore did not interfere with the required accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the quality control of the measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "ab9374ac-e74a-4b9c-9426-343c04267c51",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C87",
+      "claim": "The first barrier of the double peaks represents unfolding of the N-terminal calcium binding loop and unraveling of alpha helix 1 up to the Lys-Arg pair at sequence positions 18 and 19 in the wild-type structure in binding mode A.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we propose an unbinding mechanism where the first barrier of the double peaks represents unfolding of the N-terminal calcium binding loop and unraveling of alpha helix 1 up to the Lys-Arg pair at sequence positions 18 and 19 in the wild-type structure in binding mode A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the experimental data and structural information.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "0e7352f6-5fd4-4ca1-8cbf-5353247f7828",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C88",
+      "claim": "Based on a length per stretched amino acid of 0.4 nm, the expected contour length for unfolding the Doc domain up to position 18-19 would be 7.6 nm, in good agreement with the measured value of 8 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on a length per stretched amino acid of 0.4 nm, the expected contour length for unfolding the Doc domain up to this position would be 7.6 nm, in good agreement with the measured value of 8 nm within experimental error.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on structural information that supports the proposed mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "7ab35cb9-283f-4e7a-bb6c-6ba6669255b4",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C89",
+      "claim": "A portion of the N-terminal calcium binding loop (residues S11-T12) is involved in binding to D39 in Coh.",
+      "claim_type": "EXPLICIT",
+      "source": "A portion of the N-terminal calcium binding loop (i.e. residues S11-T12) is involved in binding to D39 in Coh.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural information from crystal structures.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "66f5ef79-ad26-4496-829b-369b0a3fad68",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C90",
+      "claim": "The first peak of the double events is attributed to breakage of the S11-T12 interaction with Coh and simultaneous unfolding of calcium loop 1 and alpha helix 1 up to the Lys-Arg pair at sequence positions 18 and 19.",
+      "claim_type": "EXPLICIT",
+      "source": "The first peak of the double events is attributed to breakage of this interaction and simultaneous unfolding of calcium loop 1 and alpha helix 1 up to the Lys-Arg pair at sequence positions 18 and 19.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the experimental data and structural information.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "dd0e41b0-55f8-4ba7-8fa4-7e7fcb9f4ce3",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C91",
+      "claim": "An intramolecular clasp has been identified as a stabilizing mechanism among similar type-I Doc domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Another contributing factor is the intramolecular clasp that has been identified as a stabilizing mechanism among similar type-I Doc domains (Slutzki et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "6a9a7efb-c12c-4b96-a839-10a24be23039",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C92",
+      "claim": "A recent NMR structural study on the same wild-type Doc used in this work confirmed a hydrophobic ring-stacking interaction between Tyr-5 and Pro-66.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent NMR structural study (Chen et al., 2014) on the same wild-type Doc used in this work confirmed a hydrophobic ring-stacking interaction between Tyr-5 and Pro-66.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "70dc48b6-9ac6-46ab-b0f0-928da5b22a57",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C93",
+      "claim": "Confirmation of the clasp motif by NMR means the head and tail of the Doc are bound together, additionally stabilizing the barrier that is overcome in the first of the double event peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "Confirmation of this clasp motif by NMR means the head and tail of the Doc are bound together, additionally stabilizing the barrier that is overcome in the first of the double event peaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the structural implications of the clasp motif.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "d0efd020-2f3d-4642-8868-a97c924e2984",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C94",
+      "claim": "Subsequent to breaking the interactions between the calcium binding loop and Coh, disrupting the intramolecular clasp and unfolding the N-terminal loop-helix motif, the remaining bound residues including Lys-18, Arg-19, Lys-50, Leu-54, and Lys-55 stay bound to Coh and are able to withstand substantial force on their own, eventually breaking in the second and final of the double rupture peaks.",
+      "claim_type": "EXPLICIT",
+      "source": "In this scenario, subsequent to breaking the interactions between the calcium binding loop and Coh, disrupting the intramolecular clasp and unfolding the N-terminal loop-helix motif, the remaining bound residues including Lys-18, Arg-19, Lys-50, Leu-54, and Lys-55 stay bound to Coh and are able to withstand substantial force on their own, eventually breaking in the second and final of the double rupture peaks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the experimental data and structural information.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "85a87ac2-09c7-4ec7-8d10-b432d11a0520",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C95",
+      "claim": "Prior work revealed that a progressive N-terminal truncation of Doc did not affect the interaction largely, unless the truncation reached the Lys-18 and Arg-19 residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior work further supports this unbinding mechanism, revealing that a progressive N-terminal truncation of Doc did not affect the interaction largely, unless the truncation reached the Lys-18 and Arg-19 residues (Karpol et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "abc36871-f95d-46fd-be9a-d38e86e72c38",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C96",
+      "claim": "The C-terminal end of helix 1 is a crucial part of the binding site within the Coh:Doc complex.",
+      "claim_type": "EXPLICIT",
+      "source": "This corroborates the idea of the C-terminal end of helix 1 being a crucial part of the binding site within the complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by prior literature on truncation studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "785ba83f-9b1b-4b05-8189-9b4a2a9edc1d",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C97",
+      "claim": "Single rupture peaks were observed when the wild-type complex was bound in binding mode B, and no unfolding of Ca-binding loop 1 or helix 1 occurred.",
+      "claim_type": "EXPLICIT",
+      "source": "Single rupture peaks were thus observed when the wild-type complex was bound in binding mode B, and no unfolding of Ca-binding loop 1 or helix 1 occurred.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the experimental data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "5d9f9fef-c8ae-4c0a-a94c-c6048b4b09f0",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C98",
+      "claim": "In binding mode B, force was propagated directly to bound residues Lys-18, Leu-22, and Arg-23 which when broken resulted in complete complex dissociation.",
+      "claim_type": "EXPLICIT",
+      "source": "Force was propagated directly to bound residues Lys-18, Leu-22, and Arg-23 which when broken resulted in complete complex dissociation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the experimental data and structural information.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "ff3d99bc-4f7a-4ece-8bf9-9376bffd4684",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C99",
+      "claim": "The overlap probability of fingerprint unfolding at a force higher than the single-event ruptures was found to be 0.85 for iLOV and 0.40 for xylanase.",
+      "claim_type": "EXPLICIT",
+      "source": "This overlap probability was found to be 0.85 for iLOV and 0.40 for xylanase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the rupture force distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "7f5bd357-8432-4d85-8451-665bbed68c2a",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C100",
+      "claim": "When the single/double peak ratios were corrected for fingerprint biasing, the final binding mode ratios (binding mode A/binding mode B, i.e., doubles/singles) were found to be 0.95 and 0.87 for xylanase-Doc and iLOV, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "When the single/double peak ratios for were corrected for this effect, the final binding mode ratios (binding mode A/binding mode B, i.e., doubles/singles) were found to be 0.95 and 0.87 for xylanase-Doc and iLOV, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation that corrects for systematic bias in the measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "63ed164a-f874-4687-b24f-8e71f8379191",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C101",
+      "claim": "The corrected binding mode ratios are close to 1 indicating comparable probability of each binding mode after accounting for biasing.",
+      "claim_type": "EXPLICIT",
+      "source": "These ratios are close to 1 indicating comparable probability of each binding mode after accounting for biasing the single/double peak counting statistics due to fingerprint domain stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the corrected binding mode ratios.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "2bb09594-4d4c-4456-ab8c-a1f11f72fa36",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C102",
+      "claim": "The corrected binding mode ratios are slightly lower than unity due to the exclusion of double peaks that occurred before unfolding of the fingerprint domains.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that these numbers are also slightly lower than unity due to the exclusion of double peaks that occurred before unfolding of the fingerprint domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains a source of systematic bias in the corrected ratios.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "7177a9b1-70cf-49f6-8536-b17cd1a0c90a",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C103",
+      "claim": "Biasing (undercounting) is more pronounced for the mechanically weaker single ruptures.",
+      "claim_type": "EXPLICIT",
+      "source": "For the Coh:Doc complex unbinding event, biasing (undercounting) is more pronounced for the mechanically weaker single ruptures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the nature of the systematic bias.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "69d02eb7-9013-46d3-94a6-35c8cc2c1a71",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C104",
+      "claim": "The biological significance of Coh-Doc interactions in the context of cellulosome assembly and catalysis cannot be overstated.",
+      "claim_type": "EXPLICIT",
+      "source": "The biological significance of Coh-Doc interactions in the context of cellulosome assembly and catalysis cannot be overstated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement emphasizing the importance of the system being studied.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "30067e33-d074-4a28-aa31-cffc8b3c5926",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C105",
+      "claim": "Coh-Doc pairs exhibit high affinity and specificity, along with modularity, thermostability, and ultrastable mechanical properties.",
+      "claim_type": "EXPLICIT",
+      "source": "Their high affinity and specificity, along with their modularity, thermostability, and their ultrastable mechanical properties all make Coh-Doc unique from a biophysics perspective, and attractive from an engineering standpoint.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about Coh-Doc properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "25fabb1e-fd65-4249-84db-8f581e2f69b1",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C106",
+      "claim": "Dual binding mode Doc domains are broadly predicted among many cellulosome producing bacteria (e.g. C. thermocellum, C. cellulolyticum, R. flavefaciens).",
+      "claim_type": "EXPLICIT",
+      "source": "Dual binding mode Doc domains are broadly predicted among many cellulosome producing bacteria (e.g. C. thermocellum, C. cellulolyticum, R. flavefaciens), however relatively few have been confirmed experimentally (Carvalho et al., 2007; Pinheiro et al., 2008; Br\u00e1s et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "fe9e6b29-c502-477a-a324-ae53a9f6cabd",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C107",
+      "claim": "Relatively few dual binding mode Doc domains have been confirmed experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "Dual binding mode Doc domains are broadly predicted among many cellulosome producing bacteria (e.g. C. thermocellum, C. cellulolyticum, R. flavefaciens), however relatively few have been confirmed experimentally (Carvalho et al., 2007; Pinheiro et al., 2008; Br\u00e1s et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "cb9aee6c-77e3-4c1c-95c8-2f78d20bf937",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C108",
+      "claim": "The direct effect of single vs. dual binding modes on the ability of cellulosomes to convert substrate into sugars is currently unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the direct effect of single vs. dual binding modes on the ability of cellulosomes to convert substrate into sugars is currently unknown.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in current knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "856b7ff9-5bf9-4e83-bbea-6269838e7f95",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C109",
+      "claim": "It is unclear whether or not dual binding modes affect the catalytic properties of native or engineered synthetic cellulosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is therefore unclear whether or not dual binding modes affect, for example, the catalytic properties of native or engineered synthetic cellulosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies an open question in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "caa28420-4c62-4bed-b571-628c106fdeb6",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C110",
+      "claim": "Cellulosome producing bacteria invariably live among communities with other microorganisms, which may be producing cellulases and cellulosomes of their own.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is important to note that cellulosome producing bacteria invariably live among communities with other microorganisms, which may be producing cellulases and cellulosomes of their own.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on ecological knowledge about cellulosome-producing bacteria.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "825c1f1b-20f4-49c0-a82a-a2d8516f6e60",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C111",
+      "claim": "A dual binding mode could enable organisms to produce enzymes that are able to bind to a neighboring species' scaffoldins yet still retain high-affinity interactions with host scaffoldins.",
+      "claim_type": "EXPLICIT",
+      "source": "In such an environment, a dual binding mode could enable organisms to produce enzymes that are able to bind to a neighboring species' scaffoldins, yet still retain high-affinity interactions with host scaffoldins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about the evolutionary advantage of dual binding modes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "9d0edd7f-f4c9-45d7-a225-675ca5c72716",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C112",
+      "claim": "Organisms with dual binding mode Doc domains would be able to combine resources with neighboring cells in a mixed microbial consortium.",
+      "claim_type": "EXPLICIT",
+      "source": "They would be able to combine resources with neighboring cells in a mixed microbial consortium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about the ecological advantage of dual binding modes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "dc0ce3b4-f18b-4718-8f41-8a11f00ab1e2",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C113",
+      "claim": "The dual binding mode could allow genetic drift to explore interspecies protein binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The dual binding mode could therefore allow genetic drift to explore interspecies protein binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about the evolutionary implications of dual binding modes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "d7ddc878-7605-414e-9442-670b6cbcc392",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C114",
+      "claim": "Cross-species reactivity between Coh and Doc has been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, cross-species reactivity between Coh and Doc has been reported (Haimovitz et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "c863bb0f-28dc-4ac3-8c92-5eb64e4e94f5",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C115",
+      "claim": "Cellulosome-producing microbes may be pursuing a middle ground between protein synthesis strictly for selfish vs. communal usage.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellulosome-producing microbes may therefore be pursuing a middle ground between protein synthesis strictly for selfish vs. communal usage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis about the evolutionary strategy of cellulosome-producing bacteria.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "fc8d40e0-dbe2-49ed-93ce-e33d50da5154",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C116",
+      "claim": "The dual binding mode of Coh:Doc domains has proven resistant to explicit experimental characterization.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the dual binding mode of Coh:Doc domains has so far proven resistant to explicit experimental characterization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes a challenge in the field that the current work addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "9876c719-efaf-4de7-8653-89c7581a5f33",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C117",
+      "claim": "Crystallography combined with mutagenesis has provided snapshots of the two binding modes.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystallography combined with mutagenesis has provided snapshots of the two modes, but resolving each of the modes for wild-type Doc under near native conditions has up until now not been possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by references to prior structural studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "6033f76b-057b-47c1-9ca0-2f80fff68f2d",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C118",
+      "claim": "Resolving each of the binding modes for wild-type Doc under near native conditions has up until now not been possible.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystallography combined with mutagenesis has provided snapshots of the two modes, but resolving each of the modes for wild-type Doc under near native conditions has up until now not been possible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in the field that the current work addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "6d5f0483-59ad-4192-93c0-3c907d2d22fc",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C119",
+      "claim": "Despite having equal thermodynamic binding affinity, when mechanically dissociated by pulling from the N-terminus of Doc, binding mode A was more mechanically stable with an additional energy barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite having equal thermodynamic binding affinity, when mechanically dissociated by pulling from the N-terminus of Doc, binding mode A was more mechanically stable with an additional energy barrier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key finding from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "99414874-4ec3-4738-9d0e-33a3cef3f6c8",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C120",
+      "claim": "The mechanical difference between binding modes was exploited to probe the two binding modes independently from one another, providing direct observation of this unique mechanism in molecular recognition.",
+      "claim_type": "EXPLICIT",
+      "source": "This mechanical difference was exploited to probe the two binding modes independently from one another, providing direct observation of this unique mechanism in molecular recognition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This summarizes the key methodological contribution of the work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "d7fa0291-300c-494e-aecf-01875d896b12",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "claim_id": "C121",
+      "claim": "Harnessing control over binding modes could offer new approaches to designing molecular assembly systems that achieve defined protein orientations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the future, harnessing control over binding modes could offer new approaches to designing molecular assembly systems that achieve defined protein orientations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about future applications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1675c488-6942-4d8a-9a32-777a9de4eba3",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cohesin-dockerin (Coh:Doc) pairs are believed to interact through dual binding modes consisting of two distinct conformations that differ by ~180\u00b0 rotation, originating from duplicated F-hand sequence motifs in type-I dockerins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C13 establish the prior knowledge foundation about dual binding modes in Coh:Doc complexes. These claims are well-supported by multiple literature citations and structural data (Figure 1), providing the established paradigm that the current work seeks to experimentally validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "091779f7-b32d-48b2-b739-84a8a4cb661e",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Direct experimental observation of dual binding modes for wild-type Doc has been challenging because ensemble methods cannot resolve modes with equal thermodynamic affinity, crystallography is hindered by conformational heterogeneity, and mutagenesis approaches cannot determine mode dominance in wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C24 and C116-C118 clearly articulate the experimental gap in the field that motivates this study. These claims are well-supported by citations to prior work and logical reasoning about methodological limitations, establishing the need for the single-molecule approach presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "90e3a2a0-0baa-4e02-bff0-a5fe944145da",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Quadruple mutants Q1 and Q3 were designed to preferentially select for binding modes A or B, respectively, by incorporating Asp-Glu substitutions and Lys-Arg to Ala mutations in specific F-hand helices, based on non-canonical Doc domains that exhibit single binding modes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C42 describe the rational design of binding mode mutants. The design is well-justified based on prior structural work (C36-C37) and electrostatic considerations (C38). The QQ double mutant serves as an appropriate negative control (C42).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "35965733-d899-4f08-8825-cfa34774878d",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Q1 and Q3 mutants maintained high-affinity binding (Kd in nM range) to Coh by relying on their preserved binding mode, while the QQ double knockout showed no binding, demonstrating that quadruple mutations effectively eliminate targeted binding modes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C62 are supported by fluorescence binding data (Figure 4A). The nM-range Kd values for Q1 and Q3 are consistent with literature (C59), and the QQ negative control validates the mutation strategy. This demonstrates that each mutant retains one functional binding mode.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "b1a2d58f-1b13-4982-8edc-2863acbddff8",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Coh:Doc complex rupture occurred in two distinct event types (single and double ruptures), with an 8-nm contour length increment separating double peaks that was assigned to Doc unfolding and confirmed across different fusion protein constructs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C56 describe the key experimental observation of two rupture patterns. The 8-nm increment is consistently observed across different fusion proteins (C55), ruling out artifacts from specific domains. The assignment to Doc unfolding (C54) is supported by subsequent experiments with GS inserts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "afa14b6a-4ab2-477d-bc74-537c5d9e1cb1",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Wild-type Doc showed ~57% double and ~43% single rupture events, while Q1 mutant showed strong bias toward single events (~77%), and Q3 showed similar ratios to wild-type (~41% single, ~59% double), leading to preliminary assignment of single peaks to binding mode B.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 present event probability data (Figure 4B) showing that Q1 mutant (designed to knock out mode A) exhibits strong bias toward single events, supporting the assignment of single events to binding mode B. The data are statistically robust with large sample sizes (947-4959 traces).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "4196f95a-0ace-4633-a47b-559e523e0632",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Q1 and wild-type showed second peaks ~15-20% higher in force than first peaks for double events, while Q3 showed weaker second peaks (~10% lower), suggesting systematic underestimation of double peaks for Q3 due to the weaker second barrier allowing simultaneous passage of both barriers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C72 analyze force differences between double event peaks (Figure 4C). The observation that Q3 shows weaker second peaks is well-reasoned, and the inference about systematic underestimation (C70) is logical given the energy landscape considerations (C72).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "1001ed24-c24d-4656-a020-6bdeb902d2ea",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "A (Gly-Ser)8 linker inserted between helices 1 and 2 did not change the contour length increment, indicating that the 8-nm unfolding event is located N-terminal to the insert site, implicating calcium binding loop 1 and helix 1 as the source.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C77 describe a clever experiment using GS inserts to localize the unfolding event. The data (Figure 5) clearly show no change in contour length increment, and the inference about N-terminal location (C76-C77) is logically sound given the pulling geometry.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "252c89ea-e065-41da-85ce-5fe0b6872030",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Single events showed most probable rupture force of ~104 pN while double events showed ~140 pN at 800 nm/s pulling speed. The downward shift in iLOV unfolding forces for curves terminating in single events confirms that binding modes represent distinct conformations set at binding time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 and C82-C86 present the key evidence for distinct binding mode conformations. The iLOV fingerprint biasing experiment (Figure 6C) is elegant and the logic is sound: if single and double events arose from the same bound state, no shift in iLOV forces would occur. Experimental controls (C85-C86) are appropriate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "f845d208-00f4-4d19-9024-4c2d721116ec",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The first barrier of double peaks represents unfolding of N-terminal calcium binding loop and helix 1 up to Lys-18/Arg-19 (expected 7.6 nm, observed 8 nm), involving breakage of S11-T12 interactions with Coh and disruption of the intramolecular clasp, while remaining residues withstand force until the second peak.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C96 propose a detailed unbinding mechanism for binding mode A. The mechanism is well-supported by: (1) contour length calculations matching observations (C88), (2) structural information about binding residues (C89), (3) prior NMR data on the clasp motif (C92-C93), and (4) prior truncation studies (C95).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "99829c0e-34ee-46fe-835d-7d60dfa455c8",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Single rupture peaks occur when wild-type complex is bound in binding mode B, with force propagated directly to bound residues Lys-18, Leu-22, and Arg-23, resulting in complete dissociation without Ca-binding loop 1 or helix 1 unfolding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C97-C98 propose the unbinding mechanism for binding mode B. This is a logical inference based on the structural differences between modes and the absence of the 8-nm unfolding increment in single events. The mechanism is consistent with all experimental observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "6e82a14b-772b-4ab3-aa49-420a6efadba3",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "After correcting for fingerprint domain biasing (overlap probabilities 0.85 for iLOV, 0.40 for xylanase), the final binding mode ratios (mode A/mode B) were 0.95 and 0.87 for xylanase-Doc and iLOV respectively, indicating comparable probability of each binding mode.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C99-C103 present a sophisticated correction for systematic bias in counting single vs. double events. The correction methodology is sound, accounting for the fact that weaker single ruptures are more likely to be missed if they don't reach fingerprint unfolding forces. The corrected ratios near 1.0 support equal mode populations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "898e4dfa-ea36-4ff5-a097-8bfda2d50ad6",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Single-molecule force spectroscopy discriminated two binding modes based on distinct mechanical properties, demonstrating that wild-type Doc populates both binding modes with similar probabilities under native conditions, with binding mode A being more mechanically stable when pulled from the N-terminus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3 and C25-C28 state the main conclusions of the study. These are well-supported by the comprehensive experimental evidence including: mutant validation (C25-C26), GS-insert experiments (C27), fingerprint biasing analysis (C28), and corrected binding mode ratios (C100-C101). The conclusion about equal populations (C3) is justified after bias correction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "858dc283-b884-4475-9f5e-87acd28bcae1",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The dual binding mode is hypothesized to increase conformational space for enzymes, facilitate substrate recognition, confer evolutionary robustness, enable interspecies binding promiscuity in microbial communities, and could offer new approaches for designing molecular assembly systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C14-C17 and C111-C113, C115, C121 present speculative hypotheses about the functional and evolutionary significance of dual binding modes. While these are reasonable hypotheses cited from or consistent with prior literature, they are not directly tested in this study. The current work establishes that dual modes exist but does not validate their proposed functions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    },
+    {
+      "id": "16faa100-09ee-4635-876a-884477373381",
+      "content_id": "0d64776d-67c2-497a-b142-62ff953fc3e6",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Dual binding mode Doc domains are broadly predicted among cellulosome-producing bacteria, but relatively few have been experimentally confirmed, and the direct effect of dual binding modes on cellulosome catalytic activity is currently unknown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106-C109 accurately describe the state of knowledge in the field based on literature citations. These claims establish the broader context and identify important open questions that remain to be addressed beyond the scope of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:34:49.979042Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "28ccac7a-532d-4149-8129-e0748bc7f227",
+      "result_id": "1675c488-6942-4d8a-9a32-777a9de4eba3"
+    },
+    {
+      "claim_id": "fdf25de1-c15d-4b71-ab74-f545a36a5aae",
+      "result_id": "1675c488-6942-4d8a-9a32-777a9de4eba3"
+    },
+    {
+      "claim_id": "efdaed59-aa9d-45da-b5fc-bc92be4438c1",
+      "result_id": "1675c488-6942-4d8a-9a32-777a9de4eba3"
+    },
+    {
+      "claim_id": "a3efa5a7-39d9-44fb-8688-5961883ebcc2",
+      "result_id": "1675c488-6942-4d8a-9a32-777a9de4eba3"
+    },
+    {
+      "claim_id": "b811b67c-85c8-4fbe-aba1-28fd828bd52b",
+      "result_id": "1675c488-6942-4d8a-9a32-777a9de4eba3"
+    },
+    {
+      "claim_id": "e8ca64bc-9585-403c-a67e-754cbc03f986",
+      "result_id": "1675c488-6942-4d8a-9a32-777a9de4eba3"
+    },
+    {
+      "claim_id": "bafb9f8a-d307-4383-b8af-0d7e3acc1229",
+      "result_id": "091779f7-b32d-48b2-b739-84a8a4cb661e"
+    },
+    {
+      "claim_id": "db5f1405-76b8-4ec0-adec-de4c840bf0b9",
+      "result_id": "091779f7-b32d-48b2-b739-84a8a4cb661e"
+    },
+    {
+      "claim_id": "79f1d247-c22a-4414-bdb2-1a3138868fd4",
+      "result_id": "091779f7-b32d-48b2-b739-84a8a4cb661e"
+    },
+    {
+      "claim_id": "5e733905-60a7-48e2-8c1d-dcdae1bd56e6",
+      "result_id": "091779f7-b32d-48b2-b739-84a8a4cb661e"
+    },
+    {
+      "claim_id": "5b07f71b-9677-4c96-81e0-61beb58d4f83",
+      "result_id": "091779f7-b32d-48b2-b739-84a8a4cb661e"
+    },
+    {
+      "claim_id": "077e10ef-1e90-4462-af5d-2fbc18568e9f",
+      "result_id": "091779f7-b32d-48b2-b739-84a8a4cb661e"
+    },
+    {
+      "claim_id": "1ad78db6-3d2d-4415-a003-e0fe76b8bac0",
+      "result_id": "091779f7-b32d-48b2-b739-84a8a4cb661e"
+    },
+    {
+      "claim_id": "fc8d40e0-dbe2-49ed-93ce-e33d50da5154",
+      "result_id": "091779f7-b32d-48b2-b739-84a8a4cb661e"
+    },
+    {
+      "claim_id": "9876c719-efaf-4de7-8653-89c7581a5f33",
+      "result_id": "091779f7-b32d-48b2-b739-84a8a4cb661e"
+    },
+    {
+      "claim_id": "6033f76b-057b-47c1-9ca0-2f80fff68f2d",
+      "result_id": "091779f7-b32d-48b2-b739-84a8a4cb661e"
+    },
+    {
+      "claim_id": "372bb91e-3e7f-4d5a-9e44-4cffc3a3650f",
+      "result_id": "90e3a2a0-0baa-4e02-bff0-a5fe944145da"
+    },
+    {
+      "claim_id": "2506dc1b-c2e8-4469-88c8-b1193faca94d",
+      "result_id": "90e3a2a0-0baa-4e02-bff0-a5fe944145da"
+    },
+    {
+      "claim_id": "7996243f-1e63-47df-95d9-4e71778c79ec",
+      "result_id": "90e3a2a0-0baa-4e02-bff0-a5fe944145da"
+    },
+    {
+      "claim_id": "36a12780-6702-452c-8555-7b2772259a5d",
+      "result_id": "90e3a2a0-0baa-4e02-bff0-a5fe944145da"
+    },
+    {
+      "claim_id": "79932085-07f8-41b7-8aae-80b132b46957",
+      "result_id": "90e3a2a0-0baa-4e02-bff0-a5fe944145da"
+    },
+    {
+      "claim_id": "c4ae084c-0bbd-4c9c-8137-e1582407742f",
+      "result_id": "90e3a2a0-0baa-4e02-bff0-a5fe944145da"
+    },
+    {
+      "claim_id": "22b4714a-6097-439e-b894-5fd850c24904",
+      "result_id": "90e3a2a0-0baa-4e02-bff0-a5fe944145da"
+    },
+    {
+      "claim_id": "e0614585-8a30-4460-b08e-484713cb4d80",
+      "result_id": "90e3a2a0-0baa-4e02-bff0-a5fe944145da"
+    },
+    {
+      "claim_id": "d812e05b-1e6e-4497-be53-83dc5ce7d76c",
+      "result_id": "35965733-d899-4f08-8825-cfa34774878d"
+    },
+    {
+      "claim_id": "551cf9d3-cf4d-4ea6-9211-937d9e1c5231",
+      "result_id": "35965733-d899-4f08-8825-cfa34774878d"
+    },
+    {
+      "claim_id": "9d826107-bb96-4033-b84c-5a407df01ca1",
+      "result_id": "35965733-d899-4f08-8825-cfa34774878d"
+    },
+    {
+      "claim_id": "02952c97-93a0-4813-b51d-7dae4c73ab4e",
+      "result_id": "35965733-d899-4f08-8825-cfa34774878d"
+    },
+    {
+      "claim_id": "29452a13-8857-4eb8-88ec-743999b48ac7",
+      "result_id": "35965733-d899-4f08-8825-cfa34774878d"
+    },
+    {
+      "claim_id": "b6eee25f-5889-4d67-aa3b-6b78e885311d",
+      "result_id": "b1a2d58f-1b13-4982-8edc-2863acbddff8"
+    },
+    {
+      "claim_id": "f024c923-a2d7-4035-a583-5b99b37aeaae",
+      "result_id": "b1a2d58f-1b13-4982-8edc-2863acbddff8"
+    },
+    {
+      "claim_id": "e93aee94-7382-4542-aa54-faeaa5011b86",
+      "result_id": "b1a2d58f-1b13-4982-8edc-2863acbddff8"
+    },
+    {
+      "claim_id": "6a8b0b16-b0ab-4ce3-8423-fd17cc6f8341",
+      "result_id": "b1a2d58f-1b13-4982-8edc-2863acbddff8"
+    },
+    {
+      "claim_id": "25a5615d-c119-430a-acee-0bb2542e65e9",
+      "result_id": "afa14b6a-4ab2-477d-bc74-537c5d9e1cb1"
+    },
+    {
+      "claim_id": "6baf9db3-4e01-43e3-ae73-c2c9a6396f36",
+      "result_id": "afa14b6a-4ab2-477d-bc74-537c5d9e1cb1"
+    },
+    {
+      "claim_id": "defb4b02-b16f-484d-8270-3fa7b8b0042a",
+      "result_id": "afa14b6a-4ab2-477d-bc74-537c5d9e1cb1"
+    },
+    {
+      "claim_id": "47775f4b-e503-4c92-bccf-8faf6c48f143",
+      "result_id": "afa14b6a-4ab2-477d-bc74-537c5d9e1cb1"
+    },
+    {
+      "claim_id": "31b9ff34-b17e-47f3-8de4-1111cc0dce31",
+      "result_id": "4196f95a-0ace-4633-a47b-559e523e0632"
+    },
+    {
+      "claim_id": "0a22e777-a8e3-446a-bb46-63355e649eaa",
+      "result_id": "4196f95a-0ace-4633-a47b-559e523e0632"
+    },
+    {
+      "claim_id": "ba7896ce-85d1-413e-a06f-4028a387250c",
+      "result_id": "4196f95a-0ace-4633-a47b-559e523e0632"
+    },
+    {
+      "claim_id": "3cc0aaa3-4b14-435a-845a-ddd73a58b45c",
+      "result_id": "4196f95a-0ace-4633-a47b-559e523e0632"
+    },
+    {
+      "claim_id": "f041973d-a245-4796-96de-582485848a7d",
+      "result_id": "4196f95a-0ace-4633-a47b-559e523e0632"
+    },
+    {
+      "claim_id": "f37af8f3-8244-4276-8323-d97bb5fa8961",
+      "result_id": "4196f95a-0ace-4633-a47b-559e523e0632"
+    },
+    {
+      "claim_id": "9b5abb60-a6fd-4806-ab5e-fb1b356fd27a",
+      "result_id": "1001ed24-c24d-4656-a020-6bdeb902d2ea"
+    },
+    {
+      "claim_id": "f4a2f1f8-a505-4ca3-96de-442b71ea7fe0",
+      "result_id": "1001ed24-c24d-4656-a020-6bdeb902d2ea"
+    },
+    {
+      "claim_id": "10f511ff-337c-4155-8be0-201cf7c91d52",
+      "result_id": "1001ed24-c24d-4656-a020-6bdeb902d2ea"
+    },
+    {
+      "claim_id": "0a7e56bb-718f-431c-a1c6-955ebec25be2",
+      "result_id": "1001ed24-c24d-4656-a020-6bdeb902d2ea"
+    },
+    {
+      "claim_id": "6b017230-89b6-4fe8-8c69-8844ae352963",
+      "result_id": "1001ed24-c24d-4656-a020-6bdeb902d2ea"
+    },
+    {
+      "claim_id": "822dffb7-2226-4855-8d12-77c555c3f8a5",
+      "result_id": "252c89ea-e065-41da-85ce-5fe0b6872030"
+    },
+    {
+      "claim_id": "c1c93c5e-d28d-4bff-a934-3e55f4bd6854",
+      "result_id": "252c89ea-e065-41da-85ce-5fe0b6872030"
+    },
+    {
+      "claim_id": "035113ee-4b6f-41b3-8aee-50d5a311b7c9",
+      "result_id": "252c89ea-e065-41da-85ce-5fe0b6872030"
+    },
+    {
+      "claim_id": "e5e6a87d-e520-450b-930f-284b25b2e4d0",
+      "result_id": "252c89ea-e065-41da-85ce-5fe0b6872030"
+    },
+    {
+      "claim_id": "e5270f56-14fb-4aa8-8845-672889cea1d1",
+      "result_id": "252c89ea-e065-41da-85ce-5fe0b6872030"
+    },
+    {
+      "claim_id": "17ccb656-9d45-4afa-8760-8f8889fef1b1",
+      "result_id": "252c89ea-e065-41da-85ce-5fe0b6872030"
+    },
+    {
+      "claim_id": "ab8f7fb0-05d4-46c5-b417-fc5891348414",
+      "result_id": "252c89ea-e065-41da-85ce-5fe0b6872030"
+    },
+    {
+      "claim_id": "ab9374ac-e74a-4b9c-9426-343c04267c51",
+      "result_id": "f845d208-00f4-4d19-9024-4c2d721116ec"
+    },
+    {
+      "claim_id": "0e7352f6-5fd4-4ca1-8cbf-5353247f7828",
+      "result_id": "f845d208-00f4-4d19-9024-4c2d721116ec"
+    },
+    {
+      "claim_id": "7ab35cb9-283f-4e7a-bb6c-6ba6669255b4",
+      "result_id": "f845d208-00f4-4d19-9024-4c2d721116ec"
+    },
+    {
+      "claim_id": "66f5ef79-ad26-4496-829b-369b0a3fad68",
+      "result_id": "f845d208-00f4-4d19-9024-4c2d721116ec"
+    },
+    {
+      "claim_id": "dd0e41b0-55f8-4ba7-8fa4-7e7fcb9f4ce3",
+      "result_id": "f845d208-00f4-4d19-9024-4c2d721116ec"
+    },
+    {
+      "claim_id": "6a9a7efb-c12c-4b96-a839-10a24be23039",
+      "result_id": "f845d208-00f4-4d19-9024-4c2d721116ec"
+    },
+    {
+      "claim_id": "70dc48b6-9ac6-46ab-b0f0-928da5b22a57",
+      "result_id": "f845d208-00f4-4d19-9024-4c2d721116ec"
+    },
+    {
+      "claim_id": "d0efd020-2f3d-4642-8868-a97c924e2984",
+      "result_id": "f845d208-00f4-4d19-9024-4c2d721116ec"
+    },
+    {
+      "claim_id": "85a87ac2-09c7-4ec7-8d10-b432d11a0520",
+      "result_id": "f845d208-00f4-4d19-9024-4c2d721116ec"
+    },
+    {
+      "claim_id": "abc36871-f95d-46fd-be9a-d38e86e72c38",
+      "result_id": "f845d208-00f4-4d19-9024-4c2d721116ec"
+    },
+    {
+      "claim_id": "785ba83f-9b1b-4b05-8189-9b4a2a9edc1d",
+      "result_id": "99829c0e-34ee-46fe-835d-7d60dfa455c8"
+    },
+    {
+      "claim_id": "5d9f9fef-c8ae-4c0a-a94c-c6048b4b09f0",
+      "result_id": "99829c0e-34ee-46fe-835d-7d60dfa455c8"
+    },
+    {
+      "claim_id": "ff3d99bc-4f7a-4ece-8bf9-9376bffd4684",
+      "result_id": "6e82a14b-772b-4ab3-aa49-420a6efadba3"
+    },
+    {
+      "claim_id": "7f5bd357-8432-4d85-8451-665bbed68c2a",
+      "result_id": "6e82a14b-772b-4ab3-aa49-420a6efadba3"
+    },
+    {
+      "claim_id": "63ed164a-f874-4687-b24f-8e71f8379191",
+      "result_id": "6e82a14b-772b-4ab3-aa49-420a6efadba3"
+    },
+    {
+      "claim_id": "2bb09594-4d4c-4456-ab8c-a1f11f72fa36",
+      "result_id": "6e82a14b-772b-4ab3-aa49-420a6efadba3"
+    },
+    {
+      "claim_id": "7177a9b1-70cf-49f6-8536-b17cd1a0c90a",
+      "result_id": "6e82a14b-772b-4ab3-aa49-420a6efadba3"
+    },
+    {
+      "claim_id": "667071a7-9c37-461b-9819-63ab293fce4d",
+      "result_id": "898e4dfa-ea36-4ff5-a097-8bfda2d50ad6"
+    },
+    {
+      "claim_id": "6fd7c15d-eaea-4b9d-9468-a90bb14faea8",
+      "result_id": "898e4dfa-ea36-4ff5-a097-8bfda2d50ad6"
+    },
+    {
+      "claim_id": "4352e7ee-8643-4d76-a0e5-19756b70cec8",
+      "result_id": "898e4dfa-ea36-4ff5-a097-8bfda2d50ad6"
+    },
+    {
+      "claim_id": "8939cf2d-1e45-4e85-b4a8-56edfa35f673",
+      "result_id": "898e4dfa-ea36-4ff5-a097-8bfda2d50ad6"
+    },
+    {
+      "claim_id": "65518734-972d-4445-b8e1-3bcb76a765fe",
+      "result_id": "898e4dfa-ea36-4ff5-a097-8bfda2d50ad6"
+    },
+    {
+      "claim_id": "dc0ada53-5e9a-42b8-b5f3-aeb8b1369a2f",
+      "result_id": "898e4dfa-ea36-4ff5-a097-8bfda2d50ad6"
+    },
+    {
+      "claim_id": "6d5f0483-59ad-4192-93c0-3c907d2d22fc",
+      "result_id": "898e4dfa-ea36-4ff5-a097-8bfda2d50ad6"
+    },
+    {
+      "claim_id": "99414874-4ec3-4738-9d0e-33a3cef3f6c8",
+      "result_id": "898e4dfa-ea36-4ff5-a097-8bfda2d50ad6"
+    },
+    {
+      "claim_id": "5629b3d5-80be-43f5-8e82-2c6a80bb6a48",
+      "result_id": "858dc283-b884-4475-9f5e-87acd28bcae1"
+    },
+    {
+      "claim_id": "f4cede87-4743-45b9-89a1-77cb8b15a640",
+      "result_id": "858dc283-b884-4475-9f5e-87acd28bcae1"
+    },
+    {
+      "claim_id": "68f7ea43-c910-4229-adff-71659de54da1",
+      "result_id": "858dc283-b884-4475-9f5e-87acd28bcae1"
+    },
+    {
+      "claim_id": "53498e1f-d4c0-4376-bd55-6fef62b5bd6e",
+      "result_id": "858dc283-b884-4475-9f5e-87acd28bcae1"
+    },
+    {
+      "claim_id": "825c1f1b-20f4-49c0-a82a-a2d8516f6e60",
+      "result_id": "858dc283-b884-4475-9f5e-87acd28bcae1"
+    },
+    {
+      "claim_id": "9d0edd7f-f4c9-45d7-a225-675ca5c72716",
+      "result_id": "858dc283-b884-4475-9f5e-87acd28bcae1"
+    },
+    {
+      "claim_id": "dc0ce3b4-f18b-4718-8f41-8a11f00ab1e2",
+      "result_id": "858dc283-b884-4475-9f5e-87acd28bcae1"
+    },
+    {
+      "claim_id": "c863bb0f-28dc-4ac3-8c92-5eb64e4e94f5",
+      "result_id": "858dc283-b884-4475-9f5e-87acd28bcae1"
+    },
+    {
+      "claim_id": "d7fa0291-300c-494e-aecf-01875d896b12",
+      "result_id": "858dc283-b884-4475-9f5e-87acd28bcae1"
+    },
+    {
+      "claim_id": "25fabb1e-fd65-4249-84db-8f581e2f69b1",
+      "result_id": "16faa100-09ee-4635-876a-884477373381"
+    },
+    {
+      "claim_id": "fe9e6b29-c502-477a-a324-ae53a9f6cabd",
+      "result_id": "16faa100-09ee-4635-876a-884477373381"
+    },
+    {
+      "claim_id": "cb9aee6c-77e3-4c1c-95c8-2f78d20bf937",
+      "result_id": "16faa100-09ee-4635-876a-884477373381"
+    },
+    {
+      "claim_id": "856b7ff9-5bf9-4e83-bbea-6269838e7f95",
+      "result_id": "16faa100-09ee-4635-876a-884477373381"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,189 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The authors developed Dynamic Organellar Maps, a fractionation profiling method using SILAC labeling and differential centrifugation to generate organellar profiles. The method resolves all major organelles including plasma membrane, ER, ERGIC, Golgi, endosome, lysosome, peroxisomes, and mitochondria with sub-organellar resolution. Six replicate maps showed exceptional reproducibility (average SILAC ratio correlation >0.95, 93.7% concordance in organellar assignments) and high prediction accuracy (94.7% for marker proteins with SVM classification).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C28 provide comprehensive methodological validation with quantitative metrics. The reproducibility is demonstrated through multiple independent measures (C22, C23, C27), organellar resolution is validated against external databases (C21, C31, C32), and prediction accuracy is rigorously assessed with cross-validation (C26). The minimal organellar leakage (C12) and high reproducibility of protein recovery (C13) support the technical quality of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors generated a comprehensive spatial proteome database for HeLa cells covering 8710 proteins with localization information, including 5265 proteins with organellar profiles and 2423 assigned to 9 membranous organelles. The database achieves 96.5% overall marker prediction accuracy (92.7% average per organelle) and shows excellent agreement with external validation datasets including UniProt annotations and MitoCarta (97% concordance for mitochondrial proteins).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C29-C33, and C67 provide consistent quantitative data on database coverage and accuracy. External validation through multiple independent sources (C31, C32) strongly supports the quality of predictions. The coverage approaches comprehensive for HeLa cells (C68, C69), accounting for the vast majority of protein cell mass. The statistical validation using Fisher's exact test (C31) and comparison with experimentally validated databases (C32) provide rigorous support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors constructed a quantitative model of HeLa cell anatomy showing that the endomembrane system contributes ~16% to total cellular protein mass, dominated by mitochondria (6.6%), ER (4.4%), and plasma membrane (3.1%). The 20 most abundant proteins constitute at least 40% of organellar protein mass in major organelles. Specific findings include plasma membrane protein density of 4-5 per 100 nm\u00b2, which agrees with previous biochemical estimates, and ~3 million ATP synthase F0 complexes per cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C44 present quantitative cellular composition data derived from combining localization and abundance information. The internal consistency of the data is demonstrated through cumulative mass plots (C69), and external validation is provided by agreement with previous estimates (C41). The proteomic ruler approach used for copy number estimation has been independently validated (C73, C74, C75), supporting the quantitative accuracy of these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The authors applied dynamic organellar maps to detect protein translocation events following EGF stimulation. With stringent FDR control (FDR=0), four proteins were identified as significantly translocating: EGFR, GRB2, SHC1, and PKN2, all moving to the endosome/lysosomal compartment. With relaxed criteria (FDR=10%), 14 additional translocating proteins were identified including known EGF targets. Global profile analysis identified 26 significant changes including recruitment of GRB2, SHC1, CBL, and UBASH3B to membranes, nuclear import of RPS6KA3, and nuclear export of transcriptional regulators including NEXT complex components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C58 describe translocation detection with rigorous statistical validation. The use of mock experiments to derive FDR-controlled cutoffs (C47) provides strong statistical support. Detection of known biology (EGFR endocytosis, GRB2/SHC1 recruitment) validates the approach (C46, C48, C49, C53). The identification of novel events (C51, C57, C58) is supported by the same statistical framework. The multi-level analysis (organellar maps + global profiles) provides complementary evidence for translocation events.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors integrated translocation data with absolute protein copy numbers to generate a quantitative model of EGF signaling. Key findings include: significant EGFR degradation (700,000 to 620,000 copies, p=0.0022), recruitment of ~500,000 GRB2 copies suggesting 1:1 stoichiometry with EGFR, sub-stoichiometric recruitment of CBL (10,000) and UBASH3B (30,000), loss of 75% of Vasorin (30,000 copies) likely through shedding, and release of >300,000 Palladin copies to cytosol. Ten major regulators of actin dynamics were identified as translocating, suggesting cytoskeletal rearrangement as a major immediate effect of EGF signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C66 and C78-C79 present quantitative modeling based on combining translocation detection with copy number estimates. The statistical significance of EGFR loss is explicitly stated (C60). The stoichiometric interpretations (C61, C62, C63) are reasonable inferences from the quantitative data. The identification of coordinated changes in actin regulators (C78, C79) is well-supported by the data. However, some mechanistic interpretations (C59, C64, C66, C81) involve inference beyond direct observation, though they are reasonable given the biological context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The fractionation profiling method is 5\u00d7 faster (4 hr vs ~20 hr) and requires 10\u00d7 less starting material (10\u2077 vs 10\u2078 cells) compared to LOPIT. Direct comparison with LOPIT analysis of mouse stem cells showed 91.6% concordance (2196/2397 homologous proteins). Copy number estimates showed high precision (Pearson correlation 0.98 between replicates) and accuracy (Pearson correlation 0.96 with PrEST data). Organellar leakage was minimal: 3.9% for mitochondria, 2.3% for lysosomes, and 8.3% for ER.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77 provide comparative validation of the method. The comparison with LOPIT (C70, C71, C72) is well-documented with specific citations. The high concordance between methods (91.6%) despite differences in species and cell type strongly supports both approaches. The validation of copy number accuracy through comparison with PrEST data (C73, C75) and high reproducibility (C74) support the quantitative aspects. The leakage analysis (C76, C77) provides important quality control data, though the interpretation requires assumptions about which proteins reflect genuine leakage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The authors establish the biological context and motivation for the study, noting that protein function is determined by subcellular localization, many biological processes involve protein translocation, but no existing proteomic method allows global dynamic mapping of protein subcellular localization due to high variability between spatial proteomics experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C9 present established biological knowledge (C4, C5) supported by appropriate citations (C6, C7, C9). The statement about the lack of existing methods (C8) is a claim about the state of the field that is supported by the cited literature on experimental variability (C9). These claims provide appropriate context and motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C86"
+    ],
+    "result": "The authors discuss the broader implications of their findings, noting that nuclear protein export is rarely reported compared to import, possibly because export is harder to detect with microscopy as it diffuses rather than concentrates signal. They propose that dynamic organellar maps identify coordinated behavior of functionally linked proteins, uncovering cellular response modules, and offer an unbiased approach not requiring prior knowledge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 and C86 present reasonable interpretations of the data and method capabilities. The observation about nuclear export being rarely reported (C82) is a statement about the literature. The explanation for this (C83) is a reasonable inference. The claims about the method's capabilities (C84, C86) are supported by the demonstrated ability to detect coordinated changes in functionally related proteins (e.g., actin regulators, NEXT complex components).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors propose future applications of dynamic organellar maps in studying autophagy, membrane trafficking, and cellular differentiation. They suggest combining maps with phosphoproteomics data could provide unprecedented views of signaling, and that organellar maps will enable quantitative process modeling in cell biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85, C87, and C88 are speculative statements about future applications. While the demonstrated capabilities of the method (detecting translocations, quantitative modeling of EGF signaling) provide some support for these proposals, these are prospective claims that have not been tested in the current study. The feasibility is plausible given the demonstrated method performance, but actual implementation would require additional validation.",
+    "result_type": "MINOR"
+  }
+]

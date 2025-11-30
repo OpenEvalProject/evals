@@ -1,0 +1,354 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "U2OS cells express relatively low levels of endogenous MYC, comparable to non-transformed cells and lower than other tumor cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 are supported by immunoblot data in Figure 1B showing quantitative comparison of MYC levels across multiple cell lines. The data clearly demonstrate that U2OS cells have MYC levels similar to non-transformed cells (IMEC, HMLE, MCF10A) and lower than HeLa and HCT116 tumor cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "MYC binding to promoters shows differential occupancy patterns at endogenous versus overexpressed levels, with weakly bound promoters recruiting more MYC upon overexpression while strongly bound promoters show saturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C27 are well-supported by ChIP-sequencing data (Figure 1C-F) showing that endogenous MYC binds ~5,500 promoters with variable occupancy, increasing to ~8,400 upon doxycycline induction. The anti-correlation between endogenous occupancy and recruitment is clearly demonstrated in the binned plot analysis (Figure 1F), with quantitative measurements showing weakly bound genes (89 tags) recruit MYC 5.3-fold while strongly bound genes (580 tags) show no further recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "High-affinity MYC binding sites are saturated at endogenous MYC levels, as evidenced by displacement of MXD6 from strongly bound promoters and lack of additional MYC recruitment upon overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 are supported by ChIP data (Figure 1G) showing MXD6 is barely detectable at strongly MYC-occupied promoters (NPM1, NCL) but present at weakly occupied promoters (HSPBAP1, FBX32) where it decreases upon MYC induction. This competitive displacement pattern supports the saturation model, though the conclusion relies on testing only four genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "U2OS cells express approximately 100,000 molecules of endogenous MYC per cell, increasing to ~3\u00d710^6 upon doxycycline induction, reaching levels comparable to or higher than human tumor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by quantitative immunoblot data (Figure 2A, Figure 2\u2014figure supplement 1D-F) using purified recombinant MYC protein as a standard. The measurements were performed in biological triplicates. Comparison with published tumor cell line data (Lin et al., 2012) confirms that induced U2OS cells reach physiologically relevant oncogenic MYC levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "MYC levels show relatively modest cell-to-cell variation in U2OS cells, with 80% of cells varying less than \u00b13.7-fold at endogenous levels and \u00b12.9-fold upon overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by immunofluorescence data using three different antibodies (Figure 2\u2014figure supplement 2B-E). The quantification demonstrates relatively homogeneous MYC expression across the cell population, which is important for interpreting the population-level ChIP-seq and RNA-seq data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "EC50 values for MYC binding vary widely across promoters, with ribosomal protein genes showing the lowest EC50 values and genes encoding transporters, GPCRs, and hypoxia response genes showing the highest EC50 values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by EC50 calculations from ChIP-seq data (Figure 2C) and gene set enrichment analysis (Figure 2D-E). The stratification of biological processes by promoter affinity is a key finding, though the EC50 calculation method assumes a simple Michaelis-Menten model which may oversimplify the complex binding dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "DNA binding affinity alone cannot account for observed MYC promoter occupancy, as only 363 of 8,425 promoters show EC50 values consistent with direct DNA binding predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by mathematical modeling (Figure 3D) comparing predicted EC50 values based on published DNA binding affinities with experimentally observed values. The large discrepancy (only 4.3% of promoters match predictions) strongly supports the conclusion that additional factors beyond DNA binding determine promoter occupancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Endogenous MYC occupancy positively correlates with canonical E-box sequences, gene expression levels, and H3K4me3 marks, but not with non-consensus E-boxes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by binned plot analyses (Figure 4A-C, Figure 4\u2014figure supplement 1). The positive correlations with canonical E-boxes, expression, and H3K4me3 are clear, while non-consensus E-boxes show only moderate enrichment without positive correlation. These findings identify key features of high-affinity MYC binding sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "MYC interacts with WDR5 via MYC BoxIII (KD = 9.3 \u00b5M), and mathematical modeling predicts this interaction can account for high-affinity promoter occupancy (EC50 = 0.014 \u00b5M) observed for the majority of MYC-bound promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 are supported by mathematical modeling (Figure 3F-G) incorporating published MYC-WDR5 binding affinity data (Thomas et al., 2015). The model predictions are consistent with experimental observations for 7,963 of 8,425 promoters. However, the model makes simplifying assumptions about WDR5 being constantly bound and freely accessible for MYC interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "WDR5 binds the majority of promoters, overlaps with nearly all MYC binding sites, and disruption of MYC-WDR5 interaction most strongly affects high-affinity binding sites with low EC50 values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by re-analysis of published ChIP-seq data (Thomas et al., 2015) shown in Figure 4D-E. The Venn diagram analysis and binned plot of mutant MYC binding clearly demonstrate that WDR5 interaction is critical for high-affinity binding. However, this relies on re-analysis of data from a different cell type (HEK293), which may limit generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Recruitment of exogenous MYC shows strong anti-correlation with E-box occurrence, gene expression levels, and H3K4me3 marks, indicating that MYC overexpression primarily affects low-affinity binding sites and weakly expressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are supported by binned plot analyses (Figure 4F-H) showing inverse relationships between MYC recruitment and features associated with high-affinity binding. This finding is critical for understanding how MYC overexpression changes the transcriptional program and is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Depletion of endogenous MYC by siRNA most strongly down-regulates ribosomal protein genes and ribosome biogenesis genes, which are the genes with highest affinity for MYC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are supported by RNA-seq data (Figure 5B-D) and ChIP-seq upon MYC depletion (Figure 5\u2014figure supplement 1). GSEA analysis clearly shows ribosomal genes are most affected by MYC depletion, and the correlation with EC50 values (Figure 5\u2014figure supplement 1G) supports the affinity-based regulation model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "In the E\u00b5-MYC B cell lymphoma model, ribosomal protein genes are induced in pre-tumor cells but not further increased in tumors despite 8-fold higher MYC levels, demonstrating similar dose-dependent responses in vivo and in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by re-analysis of published expression data from the E\u00b5-MYC model (Sab\u00f2 et al., 2014) shown in Figure 5F-H. The saturation of ribosomal gene expression at intermediate MYC levels in vivo parallels the U2OS cell findings, strengthening the biological relevance of the affinity-based model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Gene sets regulated by MYC overexpression show significantly higher median EC50 values than those regulated by endogenous MYC, and this pattern holds across different experimental systems including mouse embryonic fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 are supported by boxplot analysis (Figure 5I) comparing EC50 distributions across multiple gene sets and experimental conditions. The consistent pattern across different systems (U2OS, mouse fibroblasts, E\u00b5-MYC model) strengthens the conclusion that promoter affinity determines MYC-mediated transcriptional responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "MYC regulates different gene sets at physiological versus oncogenic levels, stratified by promoter affinity, with dose-response patterns correlating with EC50 values for both binding and regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are supported by doxycycline titration experiments (Figure 6A-C) showing different response patterns for different gene sets. The correlation between EC50 values for binding and regulation (Figure 6C) provides strong evidence that promoter affinity determines transcriptional responses. This is a central conclusion of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Direct MYC-mediated repression via MIZ1 occurs predominantly at high MYC levels, with directly repressed genes showing significantly higher EC50 values than transactivated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 are supported by analysis of MYCV394D mutant and MIZ1 depletion data (Figure 6D-F). The heat maps and boxplots clearly show that MYC/MIZ1-mediated repression requires high MYC levels and affects genes with high EC50 values. This explains discrepancies in the literature regarding MYC-mediated repression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Direct DNA interaction alone is insufficient to account for MYC promoter occupancy; instead, protein-protein interactions with factors like WDR5 strongly enhance occupancy of core promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 represent a major conclusion supported by mathematical modeling (Figure 3) and experimental validation with WDR5 mutant (Figure 4E). The integration of modeling and experimental data provides strong support, though the model makes simplifying assumptions about chromatin accessibility and competition with other E-box binding factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "MYC interacts with multiple transcription machinery components beyond WDR5, and these protein-protein interactions with chromatin-bound factors contribute to specific gene regulation by determining genome-wide occupancy patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 are supported by citations to published literature documenting MYC interactions with P-TEFb, TBP, TRRAP, and PAF1C. The hypothesis that these interactions contribute to targeting specificity is reasonable but represents an inference beyond the direct experimental evidence presented in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Promoter affinity for MYC confers specificity to gene regulation, with genes regulated in a given setting being those whose promoter occupancy changes in that setting; promoters can be saturated at physiological MYC levels, explaining why some genes don't respond to overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C103 represent the second major conclusion of the paper, supported by the correlation between ChIP-seq and RNA-seq data across multiple MYC concentrations (Figures 2-6). The saturation model reconciles the 'amplifier' and 'specifier' models without invoking productive/non-productive binding modes. This is well-supported by the comprehensive dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "MYC contributes to oncogenic transformation via two mechanisms: low constitutive MYC enhances high-affinity genes (ribosome function), while additional increases enhance low-affinity genes (nutrient transport, GPCRs, hypoxia response), altering cellular physiology and metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C108 are supported by analysis of the E\u00b5-MYC model (Figure 5F-H) and EC50 stratification of biological processes (Figure 2E, 5I). The two-stage model of transformation is consistent with the data, though the metabolic consequences are inferred rather than directly demonstrated. Citations to tumor progression studies support the clinical relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "Inhibition of proteins encoded by low-affinity MYC target genes may provide a rational strategy for selective inhibition of MYC-dependent tumor growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C110 represent a therapeutic hypothesis based on the finding that tumors depend on high MYC levels and that low-affinity genes are preferentially regulated at oncogenic MYC concentrations. While the logic is sound, this is speculation without experimental validation of therapeutic efficacy or selectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "MYC/MIZ1-mediated repression occurs predominantly at high MYC levels (high EC50 values) and is required for tumor formation in MYC-driven lymphoma and medulloblastoma, suggesting targeting this complex may provide therapeutic opportunities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C112 are supported by EC50 analysis (Figure 6F), while C113-C114 are supported by citations to published genetic studies. Claim C115 is a therapeutic hypothesis based on the genetic requirement data. The EC50 analysis is well-supported, but the therapeutic potential is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "Doxycycline-induced MYC overexpression in U2OS cells establishes a gene expression signature resembling established MYC signatures and identifying patients with MYC amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 are supported by citation to previous work (Walz et al., 2014). This validates the U2OS model system as biologically relevant for studying MYC function, though the specific data are not shown in the current manuscript.",
+    "result_type": "MINOR"
+  }
+]

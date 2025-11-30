@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors developed LocoMouse, a novel automated system for analyzing 3D locomotor kinematics in freely walking mice. The system uses high-speed cameras (400 fps), a mirror setup, machine learning algorithms (SVM classifiers), and automated tracking to capture paw, nose, and tail movements with 2.5 ms temporal resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C48-C53, and C84-C88 collectively describe the LocoMouse system's technical specifications, capabilities, and validation. The system is well-documented with detailed methods (C99-C102), visual evidence (Figure 1), and validation data (Figure 1\u2014figure supplement 1) showing high correlation between automated and manual tracking (r=0.982-1.0 for x,y,z coordinates). The tracking failure rate was <10% (C101), and the system successfully tracked multiple body parts in 3D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Basic stride parameters (stride length, cadence, swing velocity, stance duration) in wildtype mice can be accurately predicted based solely on walking speed and body weight, with no additional predictive value from age or gender once body size is accounted for.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 and C54-C59 are strongly supported by comprehensive data from 34 wildtype mice with diverse ages (30-114 days) and weights (7-33g), totaling 9,602 strides. Linear mixed-effects models show high R\u00b2 values (0.83-0.95) for predictions based on speed and weight (Figure 2, Figure 2\u2014figure supplement 1). The statistical approach is rigorous, using likelihood ratio tests to compare models and demonstrating that adding age or gender does not improve predictions (C59).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C11",
+      "C12",
+      "C13",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Despite being visibly ataxic, pcd mice show normal forward paw motion when accounting for their smaller body size and slower walking speed. Stride parameters and forward velocity profiles are indistinguishable from size-matched controls, and variability in some parameters (cadence, stance duration) is actually reduced in pcd.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C11-C13 are well-supported by data comparing pcd mice (N=3, n=3,052 strides) to size-matched controls (N=11, n=3,400 strides). The linear mixed-effects models accurately predict pcd stride parameters based on speed and body size (Figure 3B-D). Statistical tests confirm no differences in forward velocity profiles (F(10.97,1)=0.092, p=0.77, C66) and stride length (F(14,1)=0.70, p=0.42). The finding that cadence and stance duration are less variable in pcd (C65) is statistically significant (p<0.05) and surprising, strengthening the conclusion that forward motion is preserved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C14",
+      "C15",
+      "C68",
+      "C69"
+    ],
+    "result": "Pcd mice show specific impairments in off-axis (3D) paw movements, including a wider base of support and significantly larger vertical displacement of paws during swing, though the variability of vertical displacement is unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C14-C15, and C68-C69 are supported by statistical analyses showing significant differences in base of support (F(15.51,1)=42.87, p<0.001, C14) and vertical displacement (F(66.84,1)=17.16, p<0.001, C15/C68) between pcd and size-matched controls. The data are visualized in Figure 3F-H and Figure 3\u2014figure supplement 2. The finding that variability is unchanged (C69) is also statistically supported (F(81,1)=2.47, p=0.12), indicating consistent but altered 3D trajectories.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Interlimb coordination is specifically disrupted in pcd mice, with altered front-hind phasing but preserved left-right alternation. Pcd mice spend more time with more paws on the ground, show increased unstable support configurations, and exhibit more variable paw placement, though the changes in phasing are consistent rather than more variable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 and C70-C76 are comprehensively supported by detailed analyses of interlimb coordination (Figure 4). Statistical tests confirm altered front-hind phasing (F(77.07,1)=4.11, p<0.05, C17) while left-right alternation is preserved (F(159,1)=0.018, p=0.89, C18). The increased 3-paw support (F(82,1)=83.57, p<0.001, C19) and unstable 2-paw configurations (F(46.78,1)=7.76, p=0.01, C21) are statistically significant. The finding that phasing is less variable in pcd (C74-C75) strengthens the interpretation that deficits are specific and consistent rather than random.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Nose and tail movements in pcd mice exhibit large side-to-side oscillations that can be accurately modeled as passive consequences of forward hindlimb motion with fixed time delays (31 ms for tail base, 96 ms for nose). This suggests that wildtype mice actively cancel these passive movements to maintain body alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C30 and C77-C83 are strongly supported by both empirical data and geometric modeling. Statistical tests confirm significantly larger oscillations in pcd (tail: F(415,1)=91.01, p<0.001; nose: F(13.48,1)=5.49, p<0.05, C23) and speed-dependent phase lags (C24). The passive geometric model (C25-C28, C79-C80) accurately predicts the observed oscillations (Figure 5, Video 3). The argument that hindlimb differences cannot explain the oscillations is supported by data showing preserved hindpaw alternation (C81) and double support (C82), and model predictions about base of support effects (C83). The inference that wildtype mice actively cancel these movements (C30) is logical but remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Whole-body coordination is dramatically impaired in pcd mice, with desynchronized movements across body parts and weaker, more variable correlations between body part movements compared to the strong correlations or anti-correlations observed in control mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are supported by visualization and correlation analyses of vertical trajectories across body parts (Figure 6). The ribbon plots (Figure 6A) clearly show synchronized movements in controls versus desynchronized movements in pcd. The correlation matrices (Figure 6B) quantitatively demonstrate the loss of correlational structure in pcd. This result synthesizes findings from Figures 3-6 and provides a comprehensive view of coordination deficits across joints, limbs, and body.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C38",
+      "C39",
+      "C41",
+      "C45"
+    ],
+    "result": "The coordination deficits in pcd are consistent with a failure to predict and compensate for the consequences of movement across the body, suggesting that the cerebellum provides forward models for motor control rather than simply executing movement kinematics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C38-C39, C41, and C45 represent interpretations and hypotheses based on the data. While the passive model of tail/nose movements (C6) is well-supported, the broader interpretation about forward models (C45) is speculative. The preservation of left-right alternation (C39) and forward paw motion (C41) are cited as evidence for spinal and compensatory mechanisms, but these interpretations, while plausible, go beyond what the data directly demonstrate. The hypothesis about forward models is interesting and consistent with the data, but would require additional experiments to confirm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Many existing analyses of mouse locomotion rely on indirect measures that lack specificity and fail to capture the essence of coordination deficits visible in ataxic mice during overground locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C89-C91 are supported by extensive citations to previous literature and are consistent with the motivation for developing LocoMouse. The authors demonstrate through their own data that basic stride parameters (which are commonly measured) fail to capture ataxia when speed and body size are not accounted for (C38), supporting the claim that existing approaches are insufficient. However, this is primarily a literature-based claim rather than a direct experimental finding of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C40",
+      "C42",
+      "C43",
+      "C44",
+      "C46",
+      "C47",
+      "C92"
+    ],
+    "result": "Background knowledge about cerebellar function, pcd mouse anatomy, and theories of cerebellar motor control (inverse vs. forward models) is accurately cited from the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C40, C42-C44, C46-C47, and C92 are all cited from previous literature and represent established knowledge or existing hypotheses. These claims provide context for the current study but are not novel findings. The citations appear appropriate and the knowledge claims are consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C103"
+    ],
+    "result": "The experimental design included appropriate animal subjects (wildtype C57BL/6 mice, pcd mice, and littermate controls), adequate sample sizes, and proper ethical approvals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 and C103 describe the experimental subjects and procedures. Sample sizes are adequate for the wildtype group (N=34 mice, n=9,602 strides) but relatively small for pcd mice (N=3 mice, n=3,052 strides). However, the use of size-matched controls (N=11, n=3,400 strides) from the larger wildtype dataset is appropriate. The consideration of extra-cerebellar degeneration after P50 (C98) and separate analysis of young pcd mice shows methodological rigor. Ethical approvals are documented (C103).",
+    "result_type": "MINOR"
+  }
+]

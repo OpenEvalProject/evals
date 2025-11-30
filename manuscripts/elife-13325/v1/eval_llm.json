@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C62"
+    ],
+    "result": "A triple aux/iaa\u0394 mutant was generated in P. patens that displays constitutive auxin response phenotype and is completely insensitive to auxin treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C62 provide converging evidence from genetic knockout validation, GUS reporter assays, and phenotypic analysis showing the mutant exhibits constitutive auxin response. The data includes molecular validation (PCR, qPCR) and phenotypic characterization with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C73"
+    ],
+    "result": "Auxin regulation of transcription occurs exclusively through Aux/IAA function in P. patens, as the aux/iaa\u0394 mutant shows no transcriptional changes upon auxin treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 present RNA-seq data showing zero differentially expressed genes in aux/iaa\u0394 upon auxin treatment (Figure 2D), directly supporting the conclusion. C73 extends this to rule out alternative pathways. The statistical threshold and experimental conditions are clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C10",
+      "C55",
+      "C56",
+      "C57",
+      "C71"
+    ],
+    "result": "Loss of Aux/IAA repressors causes massive transcriptional changes affecting over one-third of annotated genes, with ~80% not regulated by auxin in WT, and fold-changes up to 430-fold in the mutant versus 15-fold maximum in WT auxin treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 provide specific numbers (3752 upregulated, 4031 downregulated genes) from RNA-seq with clear statistical thresholds (padj <0.01, fold change \u22651.5). C10, C55-C57 quantify the dramatic differences in gene regulation magnitude. The data demonstrates the broad impact of Aux/IAA loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C46",
+      "C89"
+    ],
+    "result": "GO enrichment analysis reveals that auxin-upregulated genes are enriched for transcription and biosynthesis processes, while downregulated genes are enriched for chloroplast and photosynthesis processes, suggesting auxin functions as a molecular switch between energy production and growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 present GO enrichment data with references to supplementary files and figures. C46 and C89 provide mechanistic interpretation. However, C89 includes speculative language ('may function') that should be noted. The GO analysis methodology appears sound but the 'molecular switch' interpretation is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C41",
+      "C42",
+      "C53",
+      "C54"
+    ],
+    "result": "Overexpression of repressing ARFs (ARFb4 and AtARF1) suppresses the constitutive auxin phenotype of aux/iaa\u0394, demonstrating that repressing ARFs function as transcriptional repressors independently of Aux/IAAs, though with weaker repression than Aux/IAAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 present phenotypic and gene expression data (Figure 3A-C) showing ARFb4 overexpression suppresses aux/iaa\u0394 phenotype. C41 shows conservation with Arabidopsis ARF1. C42 compares repression strength using reporter gene expression. The evidence converges from multiple independent lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "Activating ARF (ARFa8) and repressing ARF (ARFb4) display opposing activity on the same gene targets and can bind to the same DNA sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C13 is supported by inducible ARFa8-GR experiments showing opposing effects on gene expression (Figure 4A-D). C14 provides direct biochemical evidence via EMSA showing both ARF DNA binding domains bind the same sequences (Figure 4E). The combination of genetic and biochemical evidence is strong.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C45",
+      "C93",
+      "C95",
+      "C96"
+    ],
+    "result": "Loss of repressing ARFs (arfb2 arfb4\u0394) paradoxically results in reduced auxin response, with lower expression of upregulated genes and higher expression of downregulated genes, suggesting complex interactions where repressing ARFs affect the occupancy of activating ARFs and Aux/IAAs on promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C15-C17 and C45 present surprising results where loss of repressing ARFs reduces rather than increases auxin response. While the data appears consistent across multiple approaches (stable knockouts, RNAi), the mechanistic explanation (C93, C95-C96) is largely speculative. The authors acknowledge this is unexpected and propose a model, but additional experiments would be needed to validate the proposed mechanism of ARF/Aux/IAA occupancy changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The aux/iaa\u0394 mutant exhibits altered cellular morphology including significantly wider cells, lower chlorophyll concentration, slower growth rate, and lack of differentiated cell types, though filamentous growth remains robust.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 provide quantitative measurements with statistical analysis (t-tests, p<0.001 for width). C64-C66 describe additional phenotypic observations with figure references. The measurements appear properly controlled and replicated (n=30 for cell measurements). The characterization is thorough though some observations are qualitative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C54"
+    ],
+    "result": "Aux/IAA function is required for developmental transition in protonema, as ARFb4 overexpression in aux/iaa\u0394 prevents filament differentiation even after prolonged auxin treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43 and C54 describe experiments showing no developmental transition after one month of auxin treatment in ARFb4OE_aux/iaa\u0394 lines (Figure 3D). The long treatment duration (one month) and clear phenotypic readout support the conclusion, though the interpretation involves some inference about Aux/IAA requirement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The transition from chloronema to caulonema is regulated by a dynamic balance of quantitative auxin responses, where low auxin response prevents developmental transition and constitutive auxin response causes rapid abnormal maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 synthesize observations from multiple mutants (auxin-resistant and aux/iaa\u0394) to propose a model of developmental regulation. The interpretation is well-supported by the phenotypic data presented throughout the manuscript, though it represents a synthesis rather than a single experimental result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C36",
+      "C37",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "RNA-seq analysis identified 723 upregulated and 762 downregulated genes in WT after 5 hours IAA treatment. Five of sixteen P. patens ARFs were auxin-upregulated in WT, with nine additional ARFs upregulated in aux/iaa\u0394. GH3 homologs showed unexpected expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C36-C37, C67-C69 present specific quantitative findings from RNA-seq with clear statistical thresholds. The data on ARF regulation and GH3 expression is straightforward descriptive analysis. C37 includes some speculation about evolutionary implications that goes beyond the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C83",
+      "C84",
+      "C85",
+      "C94"
+    ],
+    "result": "The authors propose a model where repressing ARFs fine-tune gene expression by providing less stable repression than Aux/IAAs, with Aux/IAAs providing stable long-term repression at low auxin and repressing ARFs providing dynamic fine-tuning at high auxin levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C85 and C94 present a speculative model based on the observation that ARF-mediated repression is weaker than Aux/IAA-mediated repression (C42). While the model is logical and consistent with the data, it involves significant speculation ('may provide', 'may fine-tune') without direct experimental validation of the proposed mechanisms of stable versus dynamic repression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "A model is proposed where auxin responsive gene expression is determined by interplay between Aux/IAAs (stringent repression at low auxin), activating ARFs (transcription at high auxin), and repressing ARFs (buffering by attenuating activating ARFs), resulting in dynamic context-specific responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C103 describe the model presented in Figure 5E. While this model synthesizes the experimental findings, it represents an interpretive framework rather than directly tested hypotheses. The model is consistent with the data but involves assumptions about molecular mechanisms (occupancy, buffering) that are not directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "Loss of ARFb2 and ARFb4 in the aux/iaa\u0394 background did not result in morphological changes or clear trends in gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 reports a negative result with reference to Figure 5\u2014figure supplement 2. This is important for understanding the context-dependence of ARF function and supports the model that repressing ARFs require Aux/IAAs to exert their effects on gene expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "The aux/iaa\u0394 mutant is insensitive to the auxin biosynthesis inhibitor L-Kynurenine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 presents data showing the mutant does not respond to L-Kyn treatment while WT does (Figure 1I). This provides additional evidence for the constitutive auxin response phenotype and validates that the mutant phenotype is not due to altered auxin biosynthesis.",
+    "result_type": "MINOR"
+  }
+]

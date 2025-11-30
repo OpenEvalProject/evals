@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors identified 40 fragments with sequence and structural similarity across domains of different folds using HHsearch and TM-align with stringent cutoffs (HHsearch probability \u226570%, TM-score \u22650.5). After filtering SCOPe to 30% sequence identity, performing pairwise comparisons, and clustering, 65 clusters were obtained, of which 25 were excluded (20 for global fold similarity, 5 for domain boundary artifacts), yielding a final set of 40 fragments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodology is clearly described (C41, C44-C45) with appropriate cutoffs established from bimodal distributions (C46-C49). The clustering and filtering procedures are documented (C50-C53), and the stringent criteria provide confidence in the results. The fragment identification represents a systematic computational analysis with conservative thresholds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The 40 identified fragments have a median length of 24 residues (range 9-38), with only about half corresponding to typical supersecondary structures. The remaining fragments have unusual, non-compact structures interpreted as predating hydrophobic folding and reflecting association with RNA scaffolds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The fragment length statistics (C54-C56) are clearly stated and consistent with expectations for ancient peptides (C57). The structural characterization (C58-C59) is based on direct analysis. However, the interpretation about RNA scaffolds (C60-C61) is inferential and relies on analogy to ribosomal proteins rather than direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The sequence similarity observed in the fragments is not explained by biophysical constraints. Structural searches showed that 36/40 fragments have structural matches with undetectable sequence similarity, and correlation analysis comparing the fragment set to Smotifs reference set demonstrated strong sequence-structure correlation in homologs but weak correlation in analogs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural search results (C62-C63) and correlation analysis (C65-C66) using a Smotifs reference set provide systematic evidence. The linear regression analysis (Figure 5) supports the conclusion that sequence convergence is minimal (C67-C68). The comparison with a reference set strengthens the inference that observed sequence similarity indicates homology rather than structural constraint.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "About one-third (13/40) of the fragments bind nucleic acids, representing significant enrichment compared to the Smotifs reference set (2 binders despite covering 3\u00d7 more superfamilies/folds). Eight of these nucleic acid-binding fragments occur in ribosomal proteins, and six of nine proposed ancient folds contain at least one fragment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The nucleic acid-binding enrichment is well-documented (C72-C74) with appropriate comparison to a reference set (C73). The occurrence in ribosomal proteins (C75) and ancient folds (C78) supports the RNA world hypothesis. However, the functional assignment relies on structural evidence of binding rather than biochemical validation, and the interpretation of ribosomal proteins as ancient (C76-C77) is citation-based.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Seven fragments coordinate metal ions and iron-sulfur clusters, and five bind nucleotides and nucleotide-derived cofactors. In all cases, the peptides coordinate catalytic cofactors rather than providing catalytic residues directly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of metal-binding (C79) and nucleotide-binding (C80) fragments is documented in Figure 3 and Table 1. The interpretation that peptides coordinate rather than catalyze (C81) is consistent with the data and supports the RNA world cofactor hypothesis, though this functional characterization is based on structural analysis of modern proteins rather than direct ancestral evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "No domain contains two or more different fragments from the set at the stringent cutoffs used. Fragments form folds either by repetition or in single copy with heterologous decoration. When sequence similarity requirements are removed (retaining only TM-score \u22650.5), over 50% of families show fragment combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative result (C82) is clearly stated and the characterization of fragment occurrence (C83) is data-based. The speculative explanation about dominant folding cores (C84) is appropriately qualified. The relaxed analysis (C85) demonstrates that the lack of combinations is not due to geometric incompatibility but rather to sequence divergence, strengthening the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Repetition is widespread, observed in 14/40 fragments (35%), with nine capable of forming folds in both single and multiple copies. Examples include the TPR element (multiple copies in a.118.8, single in other folds), \u03b2-hammerhead motif (duplicated in b.84, single in d.41 and others), and obligate duplications like cradle-loop barrels. The authors conclude that repetition and accretion were key forces in domain emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The repetition statistics (C86-C87) are clearly documented in Figure 3 and Table 1. Specific examples (C88-C94) are well-illustrated in Figure 7 with structural evidence. The conclusion about repetition as a key evolutionary force (C95) is supported by the data, though it represents an inference about ancient processes based on modern protein analysis. The finding is consistent with extensive prior literature cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The 40 fragments are distributed across 130 folds and 188 superfamilies in SCOPe (which contains 1194 folds and 1961 superfamilies total). However, 14/25 most populated folds and 7/10 top folds contain at least one fragment, indicating the fragments are widespread in contemporary domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The distribution statistics (C100-C103) are clearly stated and the analysis of representation in highly populated folds provides strong evidence for widespread occurrence (C104). The focus on populated folds is appropriate since these represent the most common protein architectures. The conclusion that fragments are widespread despite covering only ~10% of total folds/superfamilies is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "40% (16/40) of the identified fragments have been individually described before and connected to deep evolutionary events. The fragment set comprises all but one previously reported case (the ASP-box, which was excluded due to stringent search criteria but is included at 60% probability cutoff).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with prior literature (C69-C70) validates the approach by showing substantial overlap with established findings. The explanation for the missing ASP-box (C71) is reasonable and demonstrates awareness of the method's limitations. This result provides important validation that the systematic approach recovers known cases while identifying new ones.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The 40 fragments represent a lower bound due to stringent cutoffs, incomplete fold assignments, and fragments surviving in single folds. Relaxing cutoffs to 60% probability adds 5 fragments. The authors project that up to 100 ancestral fragments might be reconstructed in coming decades, but argue the current set covers the most frequent and best conserved ancestral peptides and supports a viable theory for protein emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The acknowledgment of limitations (C105) is appropriate and the effect of relaxed cutoffs (C106) is documented. The projection about future work (C107) is clearly speculative. The interpretation that the current set represents the most significant cases (C108-C109) is reasonable given the conservative methodology, though the claim about supporting a \"viable theory\" is a broad interpretive conclusion that extends beyond the direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C7",
+      "C21",
+      "C23",
+      "C29",
+      "C34"
+    ],
+    "result": "The authors propose that contemporary domains contain vestiges of ancestral peptides from an RNA-peptide world, where peptides were recruited by RNA as cofactors. The 40 identified fragments are interpreted as observable remnants of this primordial RNA-peptide world, with protein folding emerging as a property of peptide-RNA coevolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is the central hypothesis being tested (C2, C21, C23) and the main interpretive conclusion (C7, C34). While the data on fragment properties (nucleic acid binding, metal coordination, occurrence in ancient folds) are consistent with this hypothesis, the interpretation represents a significant inferential leap from modern protein analysis to ancient evolutionary processes. Alternative explanations for the observed patterns are not systematically excluded. The hypothesis is plausible and supported by circumstantial evidence but cannot be definitively proven from the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background claims about protein evolution: proteins arose from ~1000 domain prototypes through shuffling and differentiation; domains act as evolutionary units; many domains trace to LUCA (~3.5 billion years ago); domain origins are poorly understood; de novo origin appears impossible due to sequence complexity and abiotic synthesis limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established background claims supported by appropriate citations (C8-C11) or represent consensus knowledge in the field (C1, C12-C14). They provide context for the study but are not novel findings. The claims about abiotic peptide synthesis limitations (C14) represent current understanding though this remains an active area of research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background on subdomain evolution and RNA world: local sequence/structure similarities exist within different folds; domains are constructed by repetition of subdomain fragments; domains may not be the only evolutionary unit; the RNA world hypothesis proposes that folded domains arose from ancestral peptides that emerged as RNA cofactors; peptides have beneficial properties for RNA function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are well-supported by extensive citations to prior work (C15-C20, C24, C28) or represent established biochemical knowledge (C22, C25-C27). They provide the theoretical framework for the study but are not novel contributions. The RNA world hypothesis is widely accepted though details of peptide-RNA coevolution remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The linguistic analogy: comparative studies of languages and proteins show parallels due to shared linear information storage and evolutionary constraints. The Semitic root qnw (reed) is conserved in hundreds of European words. The \u03b2-hammerhead motif occurs in four folds with diverse functions, with RNA binding proposed as the orthologous function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The linguistic analogy (C30-C32) is well-illustrated in Figure 1A and supported by citations. The \u03b2-hammerhead example (C33) is documented in Figure 1B and Figure 3. However, the assignment of RNA binding as the \"orthologous\" function (C34) is interpretive and based on the hypothesis rather than direct evidence. The analogy is pedagogically useful but the parallel between linguistic and protein evolution has limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Methodological rationale: protein structures diverge more slowly than sequences; similar structures may arise convergently; structure similarity alone doesn't prove common ancestry; sequence space is enormous and convergence is rare; sequence similarity is more reliable than structure similarity for inferring homology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established principles in protein evolution supported by appropriate citations (C36, C40) and represent consensus knowledge (C35, C37-C39). They provide sound methodological justification for using sequence similarity as the primary criterion with structural similarity as confirmation. This rationale is central to the validity of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The SCOPe database (release 2.03) was used as reference for fold assignment. In SCOPe, family and superfamily levels capture homology while fold groupings reflect convergent evolution (analogy).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The database choice (C41) is appropriate and well-justified. The description of SCOPe classification levels (C42-C43) is accurate and represents established knowledge about this widely-used database. This is straightforward methodological documentation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Historical context on repetition: McLachlan documented protein origins by repetition in 20+ publications starting in the 1970s. Analyses show repetitive folds comprise up to one-fifth of all folds. Of the 10 most populated SCOPe folds, 6 (including top 5) have repetitive structures, all with sequence-detectable repetition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The historical attribution (C96) and current state of knowledge (C97) are supported by appropriate citations. The SCOPe statistics (C98-C99) are based on database analysis. This provides important context showing that the emphasis on repetition is consistent with extensive prior work, though the specific statistics about the most populated folds are a novel contribution.",
+    "result_type": "MINOR"
+  }
+]

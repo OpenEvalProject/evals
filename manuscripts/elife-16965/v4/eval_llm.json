@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C21",
+      "C22",
+      "C81",
+      "C82",
+      "C85"
+    ],
+    "result": "The authors experimentally characterized a fitness landscape of 160,000 variants (20^4) at four amino acid sites (V39, D40, G41, V54) in protein GB1, achieving 93.4% coverage with high-throughput sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C21, C22, C81, C82, and C85 collectively establish the experimental scope and data quality. The high coverage (93.4%), substantial sequencing depth (>89M reads for input), and consistency with prior work (C20, Pearson r=0.97) provide strong validation. The four sites were rationally chosen based on known epistatic interactions (C2).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C79",
+      "C80"
+    ],
+    "result": "The fitness landscape shows that 2.4% of mutants were beneficial (fitness > 1), 19.7% were lethal (fitness = 0), and wild-type fitness ranked at the 97.6th percentile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C79, and C80 provide consistent quantitative characterization of the fitness distribution. These measurements are directly stated and supported by Figure 1\u2014figure supplement 4, establishing the baseline fitness landscape properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Sign epistasis and reciprocal sign epistasis are prevalent in the fitness landscape, constraining direct adaptive paths. The number of accessible direct paths varied from 12 to 1 among 29 subgraphs, with strong positive correlation (r=0.66, p=1.0\u00d710^-4) between inaccessible paths and landscape ruggedness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C26-C29 demonstrate epistatic constraints on adaptation through multiple lines of evidence: prevalence data (C4, Figure 1C), correlation analysis with statistical significance (C5), and extreme cases like WLFA with only one accessible path (C27). The skewed probability distribution (C28) further supports constrained accessibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C30",
+      "C31",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Two distinct mechanisms of extra-dimensional bypass were identified: conversion bypass (using extra amino acids at the same site) and detour bypass (using additional sites). Conversion bypass was more prevalent (>40% success rate) than detour bypass, with an average of 1.2 conversion vs 0.27 detour bypasses available per reciprocal sign epistasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C65-C67 establish both mechanisms with quantitative support. The higher prevalence of conversion bypass (C6-C7) is explained by fixed availability (36 possible, C30) versus length-dependent detour options (C31). The mechanistic requirement that conversion changes reciprocal sign to sign epistasis (C67) provides theoretical grounding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C33",
+      "C34",
+      "C36",
+      "C63"
+    ],
+    "result": "Higher-order epistasis is necessary for two of three detour bypass scenarios and plays an important role in mediating evolutionary accessibility via indirect paths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 provides mathematical proof that higher-order epistasis is required for specific bypass scenarios. Claims C33-C34 and C63 establish the broader context that higher-order epistasis, while reported in other systems, has been understudied. Claim C36 synthesizes the mechanistic role in promoting accessibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C48",
+      "C50"
+    ],
+    "result": "Higher-order interactions are enriched among specific amino acid combinations at sites 39, 41, and 54, consistent with protein structure where these residues physically interact at the core. The epistasis between G41L and V54H switched from positive to negative depending on the amino acid at site 39.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 demonstrate higher-order epistasis through sequence logo analysis (C10, Figure 3B) and specific examples of sign-switching epistasis (C12, Figure 3C-D). Structural rationalization (C11) and steric effect hypothesis (C48) provide mechanistic context, though C50 appropriately acknowledges alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C41",
+      "C42",
+      "C23"
+    ],
+    "result": "The complete fitness landscape contains 30 fitness peaks, with 15 peaks having fitness greater than wild-type and covering 99% of sequence space. Missing variants (6.6%) were imputed using regularized regression incorporating main effects, pairwise interactions, and three-way interactions, achieving high correlation (r=0.93) with measured values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14 characterize the global landscape structure. Claims C41-C42 describe the imputation methodology with appropriate statistical rigor (regularized regression, predictor selection). Claim C23 validates the approach with high correlation. However, C51 acknowledges that imputation can influence landscape structure, introducing some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C15",
+      "C17",
+      "C18",
+      "C19",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Indirect paths involving conversion and detour steps are pervasive during adaptation (17-59% of steps depending on model) and substantially increase evolutionary accessibility. The fraction of genotypes with access to all 15 fitness peaks increased from 34% to 93% when indirect paths were allowed. The strength of selection interacts with landscape topology to determine trajectory length and directness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C17-C19 quantify the impact of indirect paths across three evolutionary models with consistent findings. Claims C43-C44 explain model-dependent variation in path usage. Claim C45 shows delayed commitment to fitness peaks with indirect paths. The convergent evidence from multiple models and metrics strongly supports enhanced accessibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Genetic code constraints reduce connectivity and accessible variants, but do not alter the core finding that indirect paths substantially increase evolutionary accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 address an important biological constraint. The analysis shows robustness of the main conclusion despite reduced connectivity from genetic code restrictions (Figure 4\u2014figure supplement 3B), strengthening the generalizability of findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C20",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Fitness measurements were validated against a previous independent study (Pearson r=0.97). Single substitution fitness values were calibrated using a scaling factor (1.159) derived from linear regression between studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20 and C86-C88 establish measurement reproducibility and appropriate data integration. The high correlation (r=0.97) and transparent calibration procedure (slope=1.159, y-intercept\u22480) support data quality. This validation is critical for trusting the fitness landscape characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Protein GB1 is an immunoglobulin-binding protein from Streptococcal bacteria. Fitness was measured by both stability and IgG-Fc binding affinity using mRNA display. The study does not extrapolate protein fitness to organismal fitness, acknowledging that this relationship may be nonlinear and system-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 establish the biological system and fitness definition. Claims C73-C75 appropriately scope the study and acknowledge limitations in extrapolating to organismal fitness. This transparent discussion of scope strengthens rather than weakens the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C37",
+      "C56",
+      "C69"
+    ],
+    "result": "The pervasiveness of extra-dimensional bypasses contrasts with the prevailing view that reciprocal sign epistasis blocks adaptation. Even in highly rugged fitness landscapes, most sequence space remains accessible via indirect paths opened by high dimensionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C37 synthesize the main conceptual advance. Claim C56 appropriately qualifies that quantitative details may vary across landscapes while maintaining generality of conceptual findings. Claim C69 suggests potential applications to viral evolution. The claims are well-supported by the extensive empirical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35",
+      "C54",
+      "C55"
+    ],
+    "result": "Higher-order epistasis can either increase or decrease ruggedness induced by pairwise epistasis. While conversion bypass availability depends only on dimensionality, the degree of higher-order epistasis and detour bypass availability can vary across fitness landscapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C35 is supported by Figure 3\u2014figure supplement 6 but shows no systematic trend in the analyzed subgraphs. Claims C54-C55 appropriately acknowledge system-specific variation. The evidence for C35 is suggestive but not conclusive, as the relationship between higher-order epistasis and ruggedness appears complex and context-dependent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The study acknowledges several limitations: imputed fitness values can influence landscape structure, measurement errors were ignored (though expected to be small), and the four chosen sites have strong epistatic interactions and physical proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 transparently discuss limitations. C52 is supported by high reproducibility (Figure 1\u2014figure supplement 3B). C53 acknowledges that site selection may affect generalizability. This honest assessment of limitations is appropriate and does not undermine the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C70"
+    ],
+    "result": "Enhanced accessibility via indirect paths may explain observations in viral evolution, such as HIV's ability to revert to consensus sequences. For large proteins, adaptive accessibility may become a quantitative rather than qualitative problem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38-C39 and C70 are speculative extensions supported by citations but not directly tested. C38 cites HIV reversion data (Zanini et al., 2015) and C39/C70 cite theoretical work (Gavrilets, 1997). These are plausible implications but remain hypotheses requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Prior work established that pairwise epistasis is prevalent and constrains adaptation, but previous empirical studies were limited to 2^L genotypes. Indirect paths and higher-order epistasis have been implied but not systematically studied. Extra-dimensional bypass occurs when additional dimensions convert local maxima to saddle points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 accurately summarize prior literature with appropriate citations. These claims establish the knowledge gap and conceptual framework motivating the study. The characterization of prior work appears accurate and well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C40",
+      "C83"
+    ],
+    "result": "Fitness detection limit is ~0.01, and fitness is computed relative to wild-type (set to 1.0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C83 establish methodological details for fitness calculation. C40 is supported by prior work (Olson et al., 2014). These are straightforward methodological claims that are well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "Recent advances coupling saturation mutagenesis with deep sequencing have substantially improved experimental throughput, though a gap remains between measurement capacity (~10^2 variants) and sequence space size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 accurately characterize the state of the field with appropriate citations. These claims contextualize the technical advance represented by this study (160,000 variants measured).",
+    "result_type": "MINOR"
+  }
+]

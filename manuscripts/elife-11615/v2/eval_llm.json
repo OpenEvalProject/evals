@@ -1,0 +1,264 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Mammalian genomes diverge more rapidly than bird and insect genomes. After 100 million years, only ~30% of mammalian genomic segments retained homology compared to >60% in birds and insects. Segments retaining homologs showed high conservation across all lineages, though insects exhibited slightly faster nucleotide substitution rates than mammals or birds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C21-C24 are well-supported by data in Figure 2 and Figure 2\u2014figure supplement 1, showing clear differences in homology retention rates across lineages with appropriate statistical testing (P<0.05). The findings recapitulate previous observations from cited literature (Siepel et al., 2005; Zhang et al., 2014), providing validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Gene expression levels evolve at statistically indistinguishable rates across mammals, birds, and insects. A lineage-na\u00efve exponential decay model fitted the data as well as a lineage-aware model, and this result was robust to different correlation metrics and inclusion/exclusion of poorly expressed genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are supported by data in Figure 3 and Figure 3\u2014figure supplement 1, showing similar decay rates across lineages using multiple analytical approaches. The statistical framework appropriately compares lineage-na\u00efve versus lineage-aware models, and robustness analyses strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C17",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Conflicting interpretations about transcriptional evolution rates in previous studies resulted from differing methodologies. When 108 analytical pipelines were systematically applied to ChIP-seq data, GSTF binding patterns diverged at statistically indistinguishable rates in mammals and insects in 56-78% of cases, despite substantial variation in estimated rates depending on analytical choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C17, C28-C32 are well-supported by the comprehensive analysis in Figure 4, which systematically varied five analytical parameters across 108 pipelines. The data demonstrate that methodological choices strongly influence rate estimates (Figure 4b,c) but that the majority of methods yield indistinguishable rates between lineages (Figure 4d). This directly addresses the conflicting prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "The nucleotide-resolution analysis successfully recapitulated known differences in CTCF conservation between mammals and insects, validating the analytical method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is supported by data in Figure 4f showing that CTCF occupancy is highly conserved in mammals but diverges rapidly in insects, consistent with prior studies (Schmidt et al., 2012; Villar et al., 2014; Ni et al., 2012). This serves as an important positive control demonstrating the method can detect true differences when they exist.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "DNA sequence motifs for GSTFs are retained at similar rates in mammals and insects. Motifs for GSTFs shared between M. musculus and D. melanogaster were retained at similar rates across lineages in 8 out of 12 cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by data in Figure 5a,b and Figure 5\u2014figure supplement 1. The analysis shows indistinguishable retention rates for GSTF motifs in the majority of cases examined, though 4 out of 12 shared GSTF motifs showed different rates, indicating some heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Differences in genome divergence rates were greatly reduced when restricting comparisons to chromatin-accessible sequences. Inaccessible segments lost homology much faster in mammals than in birds and insects, while accessible segments retained homologs at more similar rates across the three lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C40-C43 are supported by data in Figure 5c,d showing clear differences between accessible and inaccessible chromatin. After 100 Myrs, ~50% of accessible segments retained homology in mammals compared to ~20% of inaccessible segments, while birds and insects showed ~60% retention regardless of accessibility. Statistical significance (P<0.05) and effect sizes support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C45"
+    ],
+    "result": "Transcriptional networks evolve at a common rate across mammals, birds, and insects, and this evolution is decoupled from the global rate of genome sequence evolution. Gene expression levels, GSTF binding patterns, regulatory motifs, and chromatin-accessible sequences each diverged at similar rates across the three lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C7, and C45 represent the main synthesis of findings from Figures 3, 4, and 5. The data consistently show similar evolutionary rates for multiple layers of transcriptional regulation despite different genome-wide divergence rates. The statistical framework appropriately tests lineage-na\u00efve versus lineage-aware models across multiple data types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C55"
+    ],
+    "result": "A small fraction of the genome regulates transcription, specifically chromatin-accessible regions may represent the only portion of the mammalian genome that effectively regulates transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8 and C55 are speculative interpretations of the findings rather than directly demonstrated results. While the data show that chromatin-accessible regions evolve differently than the genome as a whole, the claim that these represent the 'only' functional regulatory regions requires additional experimental validation and is acknowledged as one potential model among alternatives discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The results reconcile previously conflicting findings about transcriptional evolution rates and highlight the importance of unified study methodologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by the systematic demonstration that different analytical methods yield different conclusions (Figure 4), directly explaining discrepancies in prior literature (Villar et al., 2014; Coolon et al., 2014; Stefflova et al., 2013). The comprehensive analysis using unified methods across lineages provides strong evidence for this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "The study assembled a comparative genomics platform with >40 datasets spanning >25 organisms across three lineages, and developed a statistical framework that could detect differences in divergence rates with high sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 describe the methodological foundation. The platform is documented in Figure 1\u2014figure supplement 1, and the statistical framework's sensitivity is validated through simulations in Figure 1\u2014figure supplement 2, showing detection of rate differences with appropriate power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C16",
+      "C18"
+    ],
+    "result": "Previous studies reported conflicting findings: ChIP studies in mammalian livers described faster divergence rates than in fly embryos, while another study found gene expression levels may diverge at a slower rate in mammals than in flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C16, and C18 accurately summarize prior literature (Villar et al., 2014; Stefflova et al., 2013; Coolon et al., 2014) and provide the motivation for the current study. These are appropriately cited background claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "The study has important limitations: only three lineages and six to twelve organisms per lineage were investigated with non-uniform temporal coverage, and only a small number of tissues and five GSTFs (none in birds) were examined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are explicit acknowledgments of study limitations by the authors. These are accurate descriptions of the scope and constraints of the work, appropriately disclosed in the Discussion section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Background context on genome regulation and evolution: Recent studies implicated half the human genome in regulatory interactions, but less than 10% is evolutionarily conserved. Genomic sequences can influence transcription without conservation, including repetitive elements. Mammalian genomes contain more repetitive elements and are less constrained than bird or insect genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 are background knowledge claims appropriately supported by citations to prior literature (ENCODE Project Consortium, 2012; Siepel et al., 2005; Graur et al., 2013; multiple others). These establish the scientific context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C27",
+      "C33",
+      "C34",
+      "C38",
+      "C39"
+    ],
+    "result": "Background on transcription factor binding and chromatin: Gene expression levels can remain stable as GSTF binding locations change rapidly. CTCF occupancy is more conserved than GSTFs in mammals but diverges rapidly in insects. Most active cis-regulatory sequences are in chromatin-accessible regions, which are more conserved than expected by chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C33, C34, C38, and C39 are background knowledge appropriately supported by citations to prior studies (Wong et al., 2015; Chan et al., 2009; Paris et al., 2013; Schmidt et al., 2012; Villar et al., 2014; Ni et al., 2012; Hesselberth et al., 2009; Yue et al., 2014). These provide necessary context for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Mammals, birds, and insects differ in generation times and breeding sizes. Populations with small breeding sizes like mammals are more prone to genetic drift, which accounts for the abundance of repetitive elements and rapid genome evolution in mammals. Repetitive and rapidly-evolving sequences make up the majority of the mammalian genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 present established population genetics theory (Ohta, 1992) and genomic observations (Siepel et al., 2005; Taft et al., 2007) appropriately cited. These provide theoretical context for interpreting the unexpected finding of common transcriptional evolution rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Proposed mechanistic models: Chromatin-accessible regions in mammals are conserved at levels similar to birds and insects. The regulatory potential of rapidly-evolving elements could be silenced or control non-coding RNAs. Alternatively, transcriptional networks could diverge through different processes (natural selection in birds/insects versus neutral drift in mammals) yielding similar rates. None of these models account for generation time differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C61 present speculative mechanistic models to explain the findings. While C56 is supported by data (Figure 5d), claims C57-C61 are explicitly speculative interpretations acknowledged as such by the authors. These represent hypotheses requiring future testing rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Evolutionary changes occurring based on chronological time rather than generation time have been observed for protein-coding sequences, leading to molecular clock theory. The mechanisms through which environmental forces entrain these chronological clocks remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 accurately describe established molecular evolution concepts (Kumar, 2005) and acknowledge open questions in the field. These provide broader evolutionary context for the findings and are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C44",
+      "C48"
+    ],
+    "result": "The analyses represent the most comprehensive study to date on transcriptional network evolution across animal lineages. Data on closely related species are needed to investigate molecular network evolution dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C48 are reasonable assessments given the scope of the study (>40 datasets, >25 organisms, multiple data layers, systematic methodology). While 'most comprehensive' is subjective, the breadth of analysis across lineages, data types, and analytical methods supports this characterization.",
+    "result_type": "MINOR"
+  }
+]

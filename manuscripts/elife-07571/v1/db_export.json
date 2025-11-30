@@ -1,0 +1,1393 @@
+{
+  "submission": {
+    "id": "4998fa11-304a-4854-8c11-9beaeef167df",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:33:43.500426Z",
+    "updated_at": "2025-11-29T21:33:43.500426Z"
+  },
+  "content": [
+    {
+      "id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "submission_id": "4998fa11-304a-4854-8c11-9beaeef167df",
+      "content_type": "manuscript",
+      "content_text": "# Genetic and epigenetic variation in the lineage specification of regulatory T cells\n\n## Authors\n\n- Aaron Arvey<sup>1</sup> \u2020\n- Joris van der Veeken<sup>1</sup>\n- George Plitas<sup>2</sup>\n- Stephen S Rich<sup>4</sup>\n- Patrick Concannon<sup>5</sup>\n- Alexander Y Rudensky<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Immunology Program Howard Hughes Medical Institute, Memorial Sloan Kettering Cancer Center New York United States\n2. Ludwig Center for Cancer Immunotherapy Memorial Sloan Kettering Cancer Center New York United States\n3. Breast Service Memorial Sloan Kettering Cancer Center New York United States\n4. Center for Public Health Genomics, Department of Public Health Sciences, Division of Biostatistics and Epidemiology University of Virginia Charlottesville United States\n5. Genetics Institute, Department of Pathology, Immunology and Laboratory Medicine University of Florida Florida United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nRegulatory T (Treg) cells, which suppress autoimmunity and other inflammatory states, are characterized by a distinct set of genetic elements controlling their gene expression. However, the extent of genetic and associated epigenetic variation in the Treg cell lineage and its possible relation to disease states in humans remain unknown. We explored evolutionary conservation of regulatory elements and natural human inter-individual epigenetic variation in Treg cells to identify the core transcriptional control program of lineage specification. Analysis of single nucleotide polymorphisms in core lineage-specific enhancers revealed disease associations, which were further corroborated by high-resolution genotyping to fine map causal polymorphisms in lineage-specific enhancers. Our findings suggest that a small set of regulatory elements specify the Treg lineage and that genetic variation in Treg cell-specific enhancers may alter Treg cell function contributing to polygenic disease.\n\n## Introduction\n\nLineage specification factors promote cellular differentiation by binding DNA regulatory elements to stably alter the local chromatin state and affect gene transcriptional outputs (Visel et al., 2009; Thurman et al., 2012; Nord et al., 2013; Ostuni et al., 2013). Since the majority of protein-coding genome sequence is under constraint, due to the cost of deleterious mutational perturbations in protein function, changes in non-coding regulatory portions of the genome are thought to serve as a major source of evolutionary innovation and substrates for selection (King and Wilson, 1975; Schmidt et al., 2010; Goncalves et al., 2012; Ward and Kellis, 2012). Histone modifications and chromatin accessibility, which serve as proxies for epigenetic transcriptional control, can exhibit conservation shared with the underlying genetic elements in a given cell lineage across species and within the genetically diverse human population (Kasowski et al., 2013a; Kilpinen et al., 2013a; Long et al., 2013; McVicker et al., 2013a; Stergachis et al., 2014; Vierstra et al., 2014). However, it remains unknown if changes in the chromatin state of regulatory elements associated with cell lineage specification are conserved in their lineage-specificity (Odom et al., 2007). That is, it is unknown to what extent regulatory elements are cell lineage-specific across multiple organisms and individuals. Strong conservation would imply that the differentiation process of a specialized cell population is highly constrained at a genomic level, whereas extensive variation would suggest that lineage specification is dependent on only a few immutable genetic regulatory elements.\n\nWe examined conservation of chromatin states and gene expression in human and mouse regulatory T (Treg) cells, a key cell population required for maintenance of tolerance to \u2018self\u2019 and restrained inflammatory responses during infection. Treg cell differentiation and function is controlled by a late-acting lineage specification factor Foxp3, which is induced upon signaling through T cell (TCR) and cytokine receptors (Hill et al., 2007; Ohkura et al., 2012; Samstein et al., 2012). Treg cells generated in the thymus exhibit a \u2018naive\u2019 phenotype and display low, if any suppressor activity in contrast to activated Treg cells, which acquire highly potent suppressor function as the result of TCR signaling-dependent activation and division (Battaglia and Roncarolo, 2009; Levine et al., 2014; Vahl et al., 2014). Genetic Foxp3 deficiency or elimination of Treg cells in mice results in lymphoproliferation and myeloproliferation leading to widespread fatal autoimmune lesions largely driven by activation of \u2018self\u2019-, commensal microbiota-, and food-derived antigen-reactive CD4 T cells (Brunkow et al., 2001; Fontenot et al., 2003; Khattri et al., 2003; Kim et al., 2007). Human IPEX patients with loss-of-function Foxp3 mutations and congenital Treg cell deficiency present with neonatal diabetes, thyroiditis, autoimmune anemia and neutropenia, autoimmune hepatitis, exudative dermatitis, enteropathies, and hyper-IgE syndrome (Bennett et al., 2001; Torgerson and Ochs, 2007; Verbsky and Chatila, 2013).\n\nTo characterize evolutionary conservation and human-to-human genetic variation that underlies the lineage specification of Treg cells, we investigated the active regulatory DNA elements and gene expression in murine and human resting and activated Treg cells and compared them to their counterpart resting naive CD4+ T cells (Tn) and activated and effector CD4+ T cells (Teff). The analysis of orthologous lineage-specific epigenetic features revealed that while the vast majority of regulatory loci were genetically conserved, the lineage-specific epigenome was markedly different in mouse and human, supporting a model whereby few conserved elements contribute to the specification of the Treg cell lineage. A subset of the conserved lineage-specific elements contained nucleotide polymorphisms associated with altered epigenetic activity in human Treg cells isolated from a small cohort of healthy donors. Finally, we analyzed the polymorphic conserved elements using high-resolution epigenetic and genome-wide genetic disease association data and were able to localize disease-risk linked polymorphisms to regulatory loci that are exclusively epigenetically active in Treg cells. Our results support a role for Treg dysfunction in common polygenic diseases.\n\n## Results\n\n### Genetic and epigenetic conservation of regulatory non-coding DNA elements between human and mouse CD4+ T-cell lineages\n\nTo characterize the epigenetic state of human Treg and CD4+ T-cell populations, we isolated CD4+ T cells from the peripheral blood of individual anonymous human donors using negative selection (see \u2018Materials and methods\u2019). Previously characterized subsets of Treg cells and naive and effector CD4+ T cells were purified using FACS sorting based on expression of CD25 and CD45RO (>97\u201399% purity) (Figure 1A\u2013C, Figure 1\u2014figure supplement 1A,B). Mouse resting Treg cells and CD4+ T cells were isolated from phosphate-buffered saline (PBS)-treated Foxp3DTR-GFP mice using FACS sorting based on the expression of GFP-DTR (diphtheria toxin (DT) receptor) fusion protein or lack thereof, respectively. In these mice, DNA sequence encoding IRES-driven GFP-DTR fusion protein was inserted in frame into the 3\u2032 UTR of the endogenous Foxp3 gene. These knock-in mice enabled isolation of Treg cells based on GFP expression and their depletion upon DT injection (Kim et al., 2007). The corresponding populations of activated CD4+ Teff and Treg cells were isolated from Foxp3DTR-GFP mice subjected to transient ablation of Treg cells followed by their recovery and activation in response to inflammation on day 11 after administration of a single dose of DT as described (see \u2018Materials and methods\u2019). We desired to compare aTreg vs Teff in addition to Treg vs Tn cell populations, since they have comparable antigen experience; however, human and mouse T-cell subsets isolated ex vivo may have experienced different in vivo activation conditions. Therefore, we compared activated Treg lineage-specific transcriptional and epigenetic features to those of conventional T effector populations for each organism to account for the species-specific activation associated changes. In total, we analyzed 16 human cell samples (7 donors: 7 aTreg, 4 rTreg, 2 Teff, 2 Tmem, and 1 Tn samples) and 10 murine samples (2 aTreg, 4 rTreg, 2 Teff, and 4 Tn biological replicates independently isolated from different mice).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/07571/elife-07571-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic representation of profiled CD4+ T-cell subsets. Abbreviations: naive T cell (Tn); effector T cell (Teff); resting regulatory T cell (rTreg); activated regulatory T cells (aTreg). (B) The indicated human CD4+ T-cell subpopulations were FACS sorted based on CD3, CD4, CD45RO, and CD25 expression from preparations of peripheral blood mononuclear cells (PBMCs) from healthy human donors. Highly purified Treg cell subpopulations were obtained using a FACS Aria II fluorescent cell sorter (Figure 1\u2014figure supplement 1A). Epigenetic profiling was performed using the following 16 cell samples isolated from 7 healthy donors: including 7 aTreg, 4 rTreg, 2 Teff, 2 Tmem, and 1 Tn independently isolated cell populations. See also Figure 1\u2014figure supplement 1A,B. (C) Resting and activated murine CD4+ T-cell subpopulations were FACS sorted from Foxp3DTR-GFP mice injected with PBS or diphtheria toxin (DT), respectively. In Foxp3DTR-GFP mice, Treg cells express diphtheria toxin receptor (DTR). Mice injected with DT underwent punctual Treg cell depletion and consequent transient systemic inflammation, which resulted in activation of rebounding Treg and conventional T cells. A total of 10 mouse cell samples isolated using FACS sorting from DT-treated and DT-untreated Foxp3DTR mice were analyzed: 2 aTreg, 4 rTreg, 2 Teff, and 4 Tn biological replicates. (D, E) Genetic and epigenetic conservation at select loci. Multiple regulatory elements near LRRC32 and YY1 are genetically and epigenetically conserved: YY1 has two epigenetic elements that are not conserved in human; LRRC32 has a regulatory element that is genetically, but not epigenetically conserved. (D) Acetylation at the LRRC32 locus shows multiple conserved genetic elements that illustrate concordant and discordant epigenetic states across species (highlighted regions). The human LRRC32 locus (top) and murine Lrrc32 locus (bottom) feature extensive genetically orthologous elements (lines connecting human and murine genomic coordinates) containing species-specific insertions/deletions (white space). H3K27ac ChIP-seq reads per million (RPM) are shown on y-axis for the indicated species and cell lineages. Orthologous regions with regulatory elements of interest are shown by blue background highlighting and red connecting lines. A genetically conserved element near LRRC32 is epigenetically active in mouse, but not in human (leftmost highlighted region). (E) Two regulatory elements near YY1 are epigenetically active in human but are not genetically conserved in mouse (leftmost and rightmost highlighted regions). (F) Genome-wide fractions of genetically conserved acetylated loci. Loci with high read counts are more frequently genetically conserved (shown) as are regulatory elements more proximal to gene body (Figure 1\u2014figure supplement 1H). (G) Genome-wide quantification of epigenetic conservation. Axes show H3K27ac quantification (reads per million: RPM) of murine (x-axis) and human (y-axis) acetylated loci. Qualitatively, the vast majority of regulatory elements are epigenetically conserved in mouse and human Treg cells, with genome-wide quantitative correlation of r = 0.48 (\u2018\u2020\u2019 indicates that correlation is computed only for genetically conserved loci; non-conserved loci are shown on axes and by definition cannot be epigenetically conserved). Correlation across mouse biological replicates was r > 0.99 and between human donors r > 0.94, indicating that the observed conservation and lack thereof are reflective of biology and not technical/replicate reproducibility (Figure 1\u2014figure supplement 1K).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07571/elife-07571-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) High post-sort purity of human activated and resting Treg cell populations. (B) Isolated cell counts for each of nine donors are shown. Donors D204, D304, and D563 had lower buffy coat sample volumes (\u223c25 ml) than other donors (\u223c50 ml). (C, D) Examples of genetic conservation of inversion (C) and chromosome break (D). (E) Conservation analysis of the Foxp3 locus finds that downstream and proximal upstream elements are conserved, whereas distal upstream genomic elements encoding the GAGE transcripts are not conserved. (F) Phylogenetic analysis of the Foxp3 locus across a broad set of organisms indicates evolutionary constraint of distal genetic elements. The proximal genetic elements controlling Foxp3 expression have been previously characterized (Zheng et al., 2010; Samstein et al., 2012). (G) DNase-seq analysis confirms that the highlighted regulatory element is genetically conserved and even weakly accessible, but not histone H3K27 acetylated in human. (H) Genome-wide fractions of genetically conserved DNase-accessible loci. Loci with \u2018high\u2019 read counts are more frequently genetically conserved. (I) Genetic conservation of H3K27Ac sites is highest at promoter-proximal regulatory elements. Genetic conservation (pie charts) is shown for sites at given distances (D) from the most proximal gene promoter. Conservation at intronic loci is also shown. (J) Conservation statistics for DNase hypersensitive sites (DHSs) (similar to Figure 1F). Genome-wide quantitative correlation of mouse and human DHSs is r = 0.56 (\u2018\u2020\u2019 indicates that correlation is computed only for genetically conserved loci; non-conserved loci are shown on axes and by definition cannot be epigenetically conserved). (K) ChIP-seq reproducibility in mouse and human. Representative donor-to-donor and mouse biological replicates are shown. Slightly increased variation in human donors is a combination of biological and technical variation. Lower chromatin (cell) input into the chromatin immunoprecipitation (ChIP) assay likely results in higher technical variation; however, we also identify donor-specific usage of regulatory elements such as ENTPD1, which we confirmed as a high-probability eQTL (Figure 4).\n\nTo identify active regulatory elements of the CD4+ T-cell epigenome, we performed chromatin immunoprecipitation (ChIP) of histone H3 acetylated at lysine 27 (H3K27ac) followed by high-throughput sequencing (ChIP-seq). This histone modification serves as a reliable marker for active regulatory elements (Creyghton et al., 2010; Arvey et al., 2012). We observed \u223c31,000 H3K27 acetylation peaks across the genome in CD4+ T-cell subsets, which we stratified by reads aligned per million (RPM) in each cell population. In addition to histone acetylation, we incorporated previously generated DNase-seq hypersensitive site (DHS) data sets to enable higher resolution positioning of active acetylated regulatory elements (Arvey et al., 2012; Samstein et al., 2012; Thurman et al., 2012; Epigenome Roadmap Consortium, 2015).\n\nWe found that the overall epigenetic features of chromatin in human- and mouse-activated Treg cells were highly conserved based on qualitative and quantitative analyses. Human and murine loci with sufficient read counts of H3K27ac were \u2018lifted over\u2019 and merged to form a single set of peaks that exist in either organism (see \u2018Materials and methods\u2019\u00a0and Supplementary files 1-6 for details). This analysis captures micro- and macro-genetic differences, including sequence homology, insertions/deletions, inversions, and chromosome breaks (Figure 1\u2014figure supplement 1C\u2013F). We identified loci that were genetically and epigenetically conserved (e.g., LRRC32 [encoding GARP]; Figure 1D), epigenetically active only in a single organism due to unique genetic elements (e.g., YY1; Figure 1E), and with loss or gain of histone modifications at genetically conserved sites (e.g., LRRC32 upstream gene C11ORF30, Figure 1D, Figure 1\u2014figure supplement 1G). Genome-wide comparison between human and mouse identified \u223c27,000 orthologous regulatory elements (Figure 1F,G, Figure 1\u2014figure supplement 1H,I). The level of H3K27ac at conserved genetic elements was highly correlated (r = 0.48), with a plurality of shared elements being weakly active in both organisms (Figure 1G). A similar correlation was revealed by analyses of chromatin accessibility at DHSs across organisms (Figure 1\u2014figure supplement 1J).\n\n### Genetic and epigenetic conservation of the Treg cell lineage specification program\n\nWe reasoned that the most critical genetic components of the Treg lineage identity would be genetically and epigenetically conserved in mouse and human and additionally be Treg lineage-specific in both species. We thus characterized regulatory elements with conserved lineage-specific activity, which we defined as increased or decreased H3K27ac amounts in Treg cells in comparison to non-Treg cells in both mouse and human. This was an extension of the above analyses in which we characterized genetic conservation of regulatory elements and the epigenetic activity of these elements in mouse and human Treg cells. Previous studies of multiple cell lines and specialized tissues from different organisms have shown that non-coding regulatory elements are more likely to be genetically conserved and active based on their epigenetic features (Bernstein et al., 2005; Schmidt et al., 2010; Woo and Li, 2012). However, it remained unclear whether cell lineage-specific regulatory elements, which define identity and function of a given cell type, are conserved at genetic, epigenetic, and lineage-specific functional levels (Cheng et al., 2014; Vierstra et al., 2014; Yue et al., 2014).\n\nWe identified a handful of regulatory elements with cell lineage-specific acetylation in both human and mouse. For instance, the LRRC32 locus, which encodes the GARP protein that acts as a functionally important marker of activated Treg cells in humans (Wang et al., 2009), has multiple regulatory elements that are genetically conserved, epigenetically conserved, and only active in the Treg cell lineage (Figure 2A). Intriguingly, while the genome-wide epigenetically active landscape was similar in human and mouse, quantification of cell lineage specificity revealed that very few of the elements are Treg cell-specific in both species (Figure 2B and Figure 2\u2014figure supplement 1A\u2013C). Specifically, we were able to identify conserved epigenetic modifications at a small set of regulatory elements, which could be assigned to a handful of genes, including FOXP3, IL2RA (CD25), CTLA4, IKZF2 (HELIOS), IL2RB, DUSP4, BLIMP1, TNFRSF8, TNFRSF9, CCR8, and LRRC32 (Figure 2\u2014figure supplement 1D,E). Interestingly, there was greater statistical enrichment for conserved loci downregulated in a Treg-specific fashion, which included IL7R (CD127), IL2, PDE3B, LEF1, IL21, PDE7A, TNFSF8, and THEMIS.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/07571/elife-07571-fig2-v1.jpg)\n\n**Figure 2.:** (A) The LRRC32 locus contains multiple epigenetically active regulatory elements that are conserved and Treg lineage-specific in mouse and human. The layout is same as in Figure 1D,E, with H3K27ac and DNase-seq RPM quantification shown on the y-axis for multiple mouse and human CD4+ T-cell subpopulations. The DNase-seq track provides high-resolution localization of protein-bound DNA in acetylated loci. (B) Lineage-specific conservation of epigenetic activity occurs at only a handful of Treg regulatory elements. Changes in histone acetylation (H3K27ac ChIP RPM) in aTreg compared to Teff cells are shown for mouse (x-axis) and human (y-axis) cells for genetically conserved loci. (C) Treg cell lineage-specific gene expression is similarly conserved as lineage-specific chromatin features in mouse and man. Changes in gene expression in aTreg compared to Teff cells are shown for mouse (x-axis) and human (y-axis) cells. (D) Conserved gene expression changes are associated with conserved lineage-specificity of histone acetylation. Expression changes are shown for genes most proximal to regulatory elements that were lineage-specific in both species. See also Figure 2\u2014figure supplement 2. (E) Species-specific gene expression changes are associated with species-specific changes in histone acetylation. Acetylated loci were classified as upregulated or downregulated in a cell type-specific manner in mouse, human, or both organisms. These loci were mapped to their most proximal gene expressed in either mouse or human (lines) and cumulative fraction is shown (y-axis). The differential expression in aTreg vs Teff cells was plotted for these genes in human (left) and mouse (right). Regulatory elements that are lineage-specific in both species (dashed lines) have been associated with genes with the most conserved differential expression patterns. Regulatory elements that are lineage-specific in only mouse (red/gray for up/downregulated loci) are near genes that are more differentially expressed in mouse cell subsets. Similarly, elements that are lineage-specific in only human (purple/green for up/downregulated loci) are associated with differential expression in human. Statistical significance was assessed by the Kolmogorov\u2013Smirnov test; all relevant distribution shifts are statistically significant; p-values are shown for relevant comparisons in Figure 2\u2014figure supplement 1F.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07571/elife-07571-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Treg cell lineage-specific acetylation at the CTLA4 locus (highlighted region). The layout and axes are same as in Figure 2A. (B) The Treg lineage-specific H3K27ac landscape is reproducible in both mouse and human. Representative donor-to-donor and mouse biological replicates are shown as Treg vs Teff cell ChIP-seq log2 RPM fold-change on the x- and y-axes; actual transform is log2[(RPMtreg + 0.5)/(RPMteff + 0.5)], which preferentially decreases fold changes of lower read count peaks and thus reduces noise in the plot. Sources of variance are likely to be similar to those in Figure 1\u2014figure supplement 1K. An example of a genotype-associated inconsistent lineage-specificity is ENTPD1, which is further characterized in Figure 4. (C) Lineage-specific changes in accessibility at DHSs are globally similar to H3K27ac, showing lineage-specific conservation at a subset of loci in mouse and human. (D) Treg lineage-specific downregulation and upregulation of histone acetylation is significantly conserved (p < 10\u22127, 10\u22123, respectively). Venn diagram shows overlap counts of loci in mouse and human with differential lineage acetylation. Statistical significance was tested by the one-sided hypergeometric test. (E) Conservation of the Treg cell lineage-specific program is statistically significant (y-axis) irrespective of fold-change cutoff (x-axis). All H3K27ac peaks were ranked by ChIP-seq RPM fold change in aTreg vs Teff cells (x-axis; rank of upregulated and downregulated peaks is shown as red and blue, respectively). Genome-wide, downregulation of histone acetylation is more statistically conserved than upregulation. The rank of differentially acetylated loci in each species was tested for statistical significance (y-axis, left) of overlap enrichment between species (y-axis, right). (F) Statistical analysis of Figure 2E. Kolmogorov\u2013Smirnov test p-values for the indicated comparisons (shown in black arrows) are shown on plots, proceeding left-to-right. For instance, regulatory elements that are downregulated in both mouse and human Treg cells (dashed magenta line) are near genes that are more downregulated in human Treg cells vs Teff cells (left panel) than regulatory elements downregulated only in human (green line; p < 0.005). Similarly, human-only downregulated elements (green line) are associated with much more pronounced gene repression than murine-only downregulated elements (gray line) in human cells (left panel; p < 10\u22128).\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/07571/elife-07571-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Examples of lineage-specific elements in human and mouse that are partially or non-epigenetically and/or genetically conserved in the other organism. At the PRDM1 locus, the locus is comparably acetylated in both organisms (labeled 1), whereas a downstream enhancer shows lineage-specificity only in mouse; this element is epigenetically inactive in human (2). Another enhancer is acetylated in a lineage-specific manner in human and epigenetically active, but not lineage-specific in mouse (3). (B) Overlap of genes with conserved or organism-specific differentially acetylated loci in aTreg vs Teff cells. Regulatory elements were assigned to genes within 100 kbp or nearest gene. The overlap of genes with human-specific and mouse-specific consistently differentially regulated elements (n = 13 and n = 5 for downregulated and upregulated elements, respectively) is not statistically significant (see \u2018Materials and methods\u2019 for nominal and empirical statistical tests). Note the comparable values for overlap of discordant up/downregulated loci (e.g., n = 31 down in human, up in mouse; n = 12 up in human, down in mouse). (C\u2013F) Regulatory elements that are lineage-specific either at the conserved orthologous genetic elements or nearby conserved or non-conserved regions have varying impact on gene expression. Heatmaps of differential gene expression in aTreg vs Teff cells; non-expressed genes are excluded. Panel F also shows maximum lineage-specific differential histone acetylation, since in that panel every gene can be assigned a maximally lineage-specific element. (C) Loci that are lineage-specific elements in both human and mouse have concordant differential gene expression. Statistical analysis of this set is shown in Figure 2E, Figure 2\u2014figure supplement 1F. Foxp3 differential expression is not detected in mouse due to knock in of IRES-DTR-GFP allele. (D) Genes with regulatory elements that are epigenetically active in both organisms, but lineage-specific in only one. (E) Genes with regulatory elements that are lineage-specific in only mouse or human and not genetically conserved in the other organism. (F) Genes with at least one lineage-specific regulatory element in mouse or human. Genes with differential expression (fold change >2) are shown above (n = 22 and n = 26) and remaining genes are shown below. The additional two columns show human and mouse differential histone acetylation.\n\nTo assess potential functional relevance of species-specific features of H3K27 acetylation, we analyzed genome-wide RNA expression levels in the human and mouse Treg and CD4+ T-cell populations (Figure 2C; Supplementary files 10-12). Comparison of lineage-specific gene expression revealed similar conservation of gene expression patterns. We also observed that organism-specific cell lineage-associated variation in H3K27 acetylation correlated with organism-specific gene expression changes (Figure 2D,E and Figure 2\u2014figure supplement 1F). The latter result is consistent with organism-specific regulatory elements maintaining functional impact on Treg cell lineage-specific epigenetic activity.\n\nWe next explored conservation of the regulatory network architecture by considering a broader definition of locus epigenetic \u2018conservation\u2019. Namely, previous studies have identified broad conservation of the regulatory networks even if the exact regulatory elements and transcription factor-binding sites are not conserved (Stergachis et al., 2014; Vierstra et al., 2014). Thus, we examined all regulatory elements associated with a given gene (most proximal gene body) to see if a lineage-specific regulatory element in mouse could \u2018re-emerge\u2019 in a different location as a non-homologous lineage-specific regulatory element in human. This definition could be considered \u2018functional homology\u2019 in contrast to our previous analyses that have focused on individually conserved regulatory elements. Interestingly, this and other functional definitions of lineage-specific conservation (see \u2018Materials and methods\u2019) yielded very few additional genes (statistically non-significant gene counts, see \u2018Materials and methods\u2019), nearly all of which had non-conserved gene expression patterns in Treg vs conventional CD4+ T cells (Figure 2\u2014figure supplement 2). This implies that lineage specification of Treg cells is governed by a specific evolutionarily constrained small set of regulatory elements, which is in contrast to the more plastic conservation of global genome-wide regulatory network architectures (Stergachis et al., 2014; Vierstra et al., 2014).\n\n### Conserved binding of the Treg lineage specification factor Foxp3 contributes to the conserved lineage-specific epigenome\n\nGiven the critical role of Foxp3 in establishment and maintenance of Treg cell identity and function, and Treg-specific chromatin repression (Arvey et al., 2014), we wanted to know if conservation of the lineage-specific epigenome is associated with conserved binding sites of Foxp3. We quantified Foxp3 binding in human and murine Treg cells and found that many Foxp3-bound loci were genetically conserved and bound in both organisms (Figure 3A, Figure 3\u2014figure supplement 1A,B; Supplementary files 7-9). While there was substantial conservation of Foxp3 binding, there were also many sites that were species specific or had insufficient binding for robust quantification in the weaker Foxp3-bound sites in one of the species (Figure 3B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/07571/elife-07571-fig3-v1.jpg)\n\n**Figure 3.:** (A) The TCF7 locus provides examples of conserved (first intron, promoter-proximal), mouse-specific (upstream), and human-specific (first intron, promoter-distal) Foxp3 binding. Plot layout and axes are similar to Figure 2A. Orthologous regulatory elements (light blue) and their orthological mapping (red) are shown. (B) Genome-wide, regulatory elements are bound by Foxp3 in both mouse and human (red) or in a human-specific (green) or mouse-specific (blue) manner. (C) Foxp3 binds loci in human and mouse that have decreased acetylation in the Treg cells at the PDE3B locus. This locus contains species-specific Foxp3-binding sites that are associated with species-specific decrease in acetylation in Treg cells (marked as 1, 3) and conserved Foxp3 binding that is associated with conserved Treg lineage decreases in acetylation (2). The decrease in acetylation at the PDE3B promoter is conserved in both species. (D) Conserved and species-specific Foxp3 binding is associated with decreased histone H3K27 acetylation at regulatory elements. Changes in human or mouse H3K27 acetylation (y-axis) at genetically conserved regulatory elements are shown to be associated with human- or mouse-specific, or conserved Foxp3 binding (x-axis). Statistical significance was calculated by two-sample t-test using all acetylated loci as the background distribution; p-values are shown as *: p < 0.05; **: p < 0.01; ***: p < 0.001. (E) Species-specific Foxp3 binding in mouse and human Treg cells is associated with non-conserved forkhead box DNA motif. Enrichment of the forkhead motif (odds ratio, y-axis) is shown for those Foxp3-binding sites that are genetically conserved and bound only in human (left) or mouse (center) Treg cells or both (right). Odds ratio and statistical significance were calculated using Fisher's exact test, where motif counts in Foxp3-binding sites were compared to flanking 200nt regions to estimate the empirical enrichment over chance. p-values are shown as *: p < 0.05; **: p < 0.01; ***: p < 0.001.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07571/elife-07571-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Foxp3 binding is consistent in multiple human donors across two laboratory studies. Each study consists of two replicates. The NCBI SRA accession SRP006674 (Birzele et al., 2011) had two high-quality technical replicates (SRR192544, SRR192545) of a single donor, which were merged into single average (x-axis). The NCBI SRA accession SRP017669 (Schmidl et al., 2014) had high-quality Foxp3 ChIP-seq in two distinct donors (SRR639420, SRR639419), which were averaged in the above comparison (y-axis) and analyzed individually in other analyses. (B) Mouse Foxp3 ChIP-seq was performed on activated and resting Treg cell populations. Average ChIP signal is shown for 2 aTreg cell biological replicates on each axis (left) and single biological replicates in rTreg cells (right). These panels are from Arvey et al., 2014 and are reproduced here with copyright permission. (C) Examples of Foxp3 binding that is conserved, species specific, and the association with Treg lineage-specific differences in acetylation. The examples include: a mouse-specific Foxp3-binding site is associated with a mouse-specific active regulatory element that is downregulated in the Treg lineage (1); a Treg lineage-specific decrease in acetylation at the PDE7A promoter in both mouse and human (2); and a human-specific Foxp3-binding site (3). Figure design and axes similar to Figure 3C in main text. (D) Foxp3-binding sites are associated with decreases in gene expression. Statistical significance is shown for comparison of conserved, mouse, and human-specific Foxp3-bound genes against all expressed genes in the respective organism (p-values are one-sided Kolmogorov\u2013Smirnov tests). Conserved and mouse-specific binding sites have statistically indistinguishable effect on gene expression in mouse (p < 0.18, two-sided test); whereas conserved and mouse-specific sites are more repressed than human-specific sites (p < 0.03 and p < 10\u22124, respectively).\n\nRecent reports have implicated Foxp3 in repression of chromatin (Arvey et al., 2014; DuPage et al., 2015); therefore, we characterized the relationship between conservation of Foxp3 binding and conservation of Treg lineage-specific decreases in H3K27ac. We found that conserved Foxp3 binding was associated with decreased H3K27ac in both human and mouse (Figure 3C,D, Figure 3\u2014figure supplement 1C). Importantly, at human- or mouse species-specific Foxp3-bound sites, H3K27ac was decreased exclusively in the corresponding organism (Figure 3D, Figure 3\u2014figure supplement 1D). Species-specific Foxp3 occupancy at genetically conserved loci was also associated with presence of forkhead DNA-binding motifs at the corresponding Foxp3-bound sites (Figure 3E). These results suggest that preservation of the forkhead motif likely enables Foxp3 protein recruitment, Foxp3-mediated chromatin repression at conserved loci, and that DNA sequence divergence can account for differential Foxp3 occupancy of otherwise genetically conserved orthologous regulatory elements.\n\n### Natural human genetic variation at Treg cell lineage-specific regulatory elements is associated with epigenetic variation\n\nTo determine if non-coding regulatory elements specific to resting or activated Treg cells are subject to genetic variation in human, we explored polymorphisms associated with these elements. We examined a narrow genomic window (150 bp) at each of the \u223c85,000 DHSs to find that \u223c80,000 contained at least 1 polymorphism cataloged in the single nucleotide polymorphism database (dbSNP) and that \u223c45,000 of these contained polymorphisms with significant (>0.05) minor allele frequency (MAF) in at least one of the thousand genome project (1000G) populations (Figure 4A; \u2018Materials and methods\u2019; Supplementary file 13). Consistent with evolutionary constraint, genetically conserved elements had decreased maximum MAF relative to expected frequency (Figure 4B; \u2018Materials and methods\u2019). This pattern held across regulatory elements regardless of their distance from protein-coding regions or binding of Foxp3 (Figure 4\u2014figure supplement 1A\u2013C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/07571/elife-07571-fig4-v1.jpg)\n\n**Figure 4.:** (A) The CD4+ T-cell epigenome is subject to human-to-human genetic variation. The number (y-axis) of DHSs with at least one polymorphism greater than a given minor allele frequency (MAF, x-axis). MAFs are binned by <0.05 (0), 0.05\u20130.15 (0.1), 0.15\u20130.25 (0.2), 0.25\u20130.35 (0.3), 0.35\u20130.45 (0.4), >0.45 (0.5) for each population in the 1000G project (\u2018Materials and methods\u2019). (B) Human DHSs not genetically conserved in mouse (red) contain greater genetic variation than those DHS that are conserved (black). Empirical p-value is computed by sampling maximum polymorphism MAF across conservation-permuted DHSs, fitting a linear regression, and testing for greater conserved vs shuffled DHS slopes: \u03b2conserved > \u03b2shuffle. (C) Genetic polymorphisms are correlated with H3K27 acetylation at the ENTPD1 locus. The activated Treg cell-specific expression of ENTPD1 is associated with a haplotype represented by single nucleotide polymorphism (SNP) rs1342790. Resting Treg (rTreg) and naive (Tn) and effector (Teff) CD4+ T-cell populations have limited acetylation of the ENTPD1 locus; in contrast, activated Treg cells have acetylation that is associated with the 'A' genotype of rs1342790. (D) Quantification of the ENTPD1 genetic association reveals allele-specific histone modification in heterozygous individuals. Meta-analysis of the ENTPD1 locus in B lymphoblastoid cell lines was performed to provide additional statistical power (Kasowski et al., 2013a). Genotypes (x-axis) and their corresponding reads crossing the polymorphism per million reads aligned (RPM; y-axis) were calculated for each individual with more than 5 reads at rs1342790. Values across zygosity and cell type were made comparable by doubling heterozygous RPMs and mean normalizing. Statistical significance was estimated by independent assessment of heterozygous and homozygous allelic normalized read counts (\u2018Materials and methods\u2019).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07571/elife-07571-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Increased sequence polymorphism frequency in non-conserved DHSs stratified by localization relative to the most proximal gene. Non-conserved DHSs (solid lines) at promoters, exons, introns, and distal elements showed patterns of polymorphism consistent with decreased constraint in contrast to conserved DHSs (dashed lines). (B) Human Foxp3-bound regulatory elements are subject to human-to-human genetic variation. The number (y-axis) of DHSs with at least one polymorphism greater than a given MAF (x-axis). (C) Human Foxp3-bound regulatory elements not genetically conserved in mouse (red) contain greater genetic variation than the conserved ones (black). Empirical p-value is computed by sampling maximum polymorphism MAF across conservation-permuted DHSs. (D) Representative examples of lineage-to-lineage and donor-to-donor variation. ChIP-seq H3K27ac RPM intra-donor variation for D204 aTreg and rTreg cells is shown (left) as well as inter-donor variation between D204 and D304 aTreg cells (right). Axes are log2(x + 0.5) transformed. (E) QQ-plot quantification of allele specificity in 2227 enhancers with robustly detectable heterozygous polymorphisms reveals potentially significant associations. Axes show observed (y-axis) and expected (x-axis) \u2212log10 p-values. Since the observed p-value distribution diverges from the expected (null) p-value distribution, the most significant p-values are likely not a result of multiple hypothesis testing. Observed \u2212log10 p-values were capped at 5 for ease of visualization. (F) A polymorphic allele at COMMD10 does not affect acetylation in B cells but is associated with differential acetylation in T-cell populations. A linear regression model with fixed intercept is fitted to the B and T-cell populations. Difference in slope parameters \u03b21 \u2260 \u03b22 was tested for significance with two-tailed t-test with n1 + n2 \u22124\u00b0 of freedom where n1 and n2 are the number of heterozygous alleles in B and Treg cells. As indicated in the legend, homozygous cell lines/donors are shown as black circles, while heterozygous sample cell type is represented by color and symbol.\n\nTo test if genetic variation in the Treg cell-specific regulatory elements could alter enhancer functionality, we characterized DNA sequence polymorphisms associated with inter-individual quantitative variability in H3K27ac modifications across multiple cell populations in a cohort of unrelated donors (Figure 4\u2014figure supplement 1D,E). For example, the Treg cell lineage-specific enhancer containing the single nucleotide polymorphism (SNP) rs2882971 at the ENTPD1 locus demonstrated genetic association with H3K27ac levels across individuals and in an allele-specific manner in a given individual (Figure 4C). This is consistent with previous reports showing ENTPD1 RNA and protein expression association with a strong cis-eQTL (Orr\u00f9 et al., 2013; Ferraro et al., 2014). We confirmed the genetic association with chromatin state through meta-analysis of lymphoblastoid cell lines, which enabled sufficient statistical power (Figure 4D). We also identified potential associations where the enhancer decorated with H3K27ac was present in multiple CD4+ T-cell subsets, but exhibits only allele-specific variation in Treg cells, suggesting that Treg cell-specific chromatin modulators or transcription factors may preferentially act on a single allele of a polymorphic locus (Figure 4\u2014figure supplement 1F).\n\n### Treg cell lineage-specific regulatory elements are enriched for disease-associated polymorphisms\n\nOur observation that the inter-individual genetic variation present in the Treg cell-specific epigenome can potentially alter Treg cell function raised a question if this variation may contribute to polygenic human disease pathogenesis. In particular, while fatal monogenic IPEX disorder resulting from loss-of-function Foxp3 mutations (Khattri et al., 2003) highlights the critical role for Treg cells in preventing autoimmunity, the role of these cells in common polygenic human diseases has been notoriously difficult to assess with cellular functional analyses confounded by patients' disease state. As a result, assessments of Treg cell function in patients with complex autoimmune and inflammatory diseases frequently lead to conflicting conclusions open to alternative interpretations (Miyara et al., 2011). Furthermore, recent findings from genome-wide association (GWA) studies have revealed that most disease-predisposing susceptibility loci reside in non-coding portions of the genome (Welter et al., 2014; Figure 5\u2014figure supplement 1), suggesting that the majority of polygenic disease is in fact due to variation in transcriptional control rather than protein structure and function. Recent studies have also found that active chromatin is enriched for variants that contribute to polygenic diseases, including autoimmunity (Maurano et al., 2012; Trynka et al., 2013; Farh et al., 2014), and that these variants can alter transcriptional regulator protein-DNA interactions, resulting in differential gene expression (Ferraro et al., 2014; Lee et al., 2014; Ye et al., 2014).\n\nTherefore, we reasoned that if disease-predisposing polymorphisms were embedded in chromatin with function exclusively in Treg cells, then Treg cell dysfunction could contribute to disease etiology. Through meta-analysis of GWA studies of SNPs, we identified hundreds of statistically significant disease-associated polymorphisms residing in the CD4+ T effector and Treg cell epigenome.\n\nOne such strictly Treg cell-specific epigenetic element was found at the CTLA4 locus, which harbors a risk allele for multiple autoimmune disorders, including rheumatoid arthritis, type 1 diabetes (T1D), Graves' disease, and systemic lupus erythematosus (Scalapino and Daikh, 2008). While early GWA genotyping approaches were too coarse to localize the causative polymorphism, fine mapping by the ImmunoChip across a large case\u2013control T1D cohort demonstrated that the most disease-associated variants, represented by rs2882971, lie within Treg cell-specific enhancers that are epigenetically conserved and lineage-specific in both human and mouse (Figure 5A, Figure 2\u2014figure supplement 1A) (Onengut-Gumuscu et al., 2015). Functional relevance of a non-coding CTLA4 polymorphism in linkage disequilibrium with rs2882971 (rs3087243) has been experimentally validated as influencing the CTLA4 splice form dosage, with disease-predisposing variants decreasing the soluble isoform that is expressed in Treg cells (Ueda et al., 2003; Atabani et al., 2005; Gerold et al., 2011). The linkage disequilibrium across the locus suggests that the causative polymorphism is either in (1) upstream Treg lineage-specific epigenetically active enhancers near rs2882971 or (2) downstream epigenetically and transcriptionally inactive DNA near rs3087243. Pairwise conditioning of rs2882971 and rs3087243 resulted in a non-statistically significant association for both polymorphisms (logistic regression for an additive model yielded SNP coefficient p-values that were greater than 0.05). This indicates that genotype\u2013phenotype statistics alone is unable to resolve the causative SNP. In contrast, our epigenetic approach provides orthogonal data that implicate upstream enhancers.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/07571/elife-07571-fig5-v1.jpg)\n\n**Figure 5.:** (A) Fine mapping of genetic disease association identifies Treg-specific upstream enhancers (highlighted in blue) at the CTLA4 locus as being associated with predisposition to type 1 diabetes (T1D). The high-resolution ImmunoChip SNP array analysis suggests that the functional polymorphism resides in the Treg-specific enhancer. The x-axis shows genomic position and y-axis shows RPM for chromatin tracks and \u2212log10(p-value) for association study data. Dashed horizontal lines show genome-wide statistical significance thresholds for T1D disease association studies. The highlighted polymorphism rs2882971 is representative of multiple SNPs in linkage disequilibrium. (B) Autoimmune disease-risk polymorphisms have extensive overlap with the pan-CD4+ T-cell epigenome. Disease-risk polymorphisms was obtained from the NHGRI GWAS catalog and statistical significance of overlap was determined by a one-tailed hypergeometric test using all known disease-associated polymorphisms to model the null distribution (\u2018Materials and methods\u2019). (C) Treg and Teff cell-specific epigenetic elements contain a significant number of autoimmune disease-risk polymorphisms. Metabolic diseases are shown as a control. T1D and type 2 diabetes (T2D) are shown as representative autoimmune and metabolic diseases. Aggregated disease sets are provided in Supplementary file 14. (D) Polymorphisms in conserved Treg lineage-specific epigenetic elements are enriched for autoimmune-associated genetic variation. Genes near epigenetic elements containing risk polymorphisms are divided into categories: genetically non-conserved, genetically conserved, lineage-specific elements epigenetically active in human, and lineage-specific epigenetic modification conserved in both human and mouse. Autoimmune (AI), T1D, metabolic (Met), T2D, and psychiatric (Psych) disease sets are shown.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/07571/elife-07571-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Polymorphisms associated with common polygenic diseases reside predominantly in the non-coding portion of the genome. Annotations of statistically significant SNP-phenotype associations are taken from the NHGRI GWAS catalog. (B) Only a subset of DHSs contain variants that exhibit high LD with polymorphisms assayed using the Illumina genotyping bead array. The number of DHSs (y-axis) satisfying certain critera (x-axis) are shown. Of the \u223c85 K DHSs, \u223c45 K have at least one variant with significant MAF (>0.05 across 1000G). The majority of these loci have limited LD (<0.8) with any exonic polymorphism with 100 kbp. However, only \u223c7 K DHSs have a polymorphism that is in strong LD (>0.8) with an assayed polymorphism on the Illumina Human 660 K genotyping chip. (C) Chromatin state at the INS locus supports the unique role of insulin in beta islet cells in the etiology of T1D (similar axes to Figure 5A). This is consistent with an extensive literature on beta islet cells and supports the relevance of our approach to characterizing cell type- and tissue-specific disease relevance using chromatin state.\n\nNext, we sought to identify specific diseases influenced by polymorphisms that may cause Treg cell dysfunction. We analyzed GWA case\u2013control cohorts for autoimmune and autoinflammatory diseases in addition to metabolic and psychiatric disorders (\u2018Materials and methods\u2019; Supplementary file 14). We identified dozens of Treg cell lineage-specific epigenetic elements that harbor genetic variation associated with and potentially contributing to polygenic autoimmune disease such as T1D (Figure 5B,C; \u2018Materials and methods\u2019). Analysis of these risk alleles revealed that many were in LD or were proximal to genes with epigenetically conserved Treg lineage-specific elements (Figure 5D), suggesting that these elements have important conserved function. In contrast, an aggregate GWAS data set of metabolic (e.g., type 2 diabetes) and psychiatric disorders lacked disease associations in conserved Treg lineage-specific elements. Furthermore, psychiatric disorders risk-alleles were generally localized in non-conserved genetic elements, which is consistent with recent reports finding substantial human-specific genetic diversity in cognition-associated genes in comparison to recent evolutionary ancestors (Ogawa and Vallender, 2014).\n\n## Discussion\n\nIn the past few years, many studies have characterized genome-wide epigenetic activity in progenitor cells or related differentiated cell lineages to identify hundreds of lineage-specific regulatory elements (Epigenome Roadmap Consortium, 2015). To isolate biologically important elements, conservation of genetic DNA sequence and epigenetic activity has been used as a proxy for functional significance (Odom et al., 2007; Schmidt et al., 2010; Long et al., 2013; Vierstra et al., 2014). We compared genome-wide features of regulatory elements and their activity in two closely related cell lineages, Treg cells, and effector CD4+ T cells, which represent alternative cell fate choices during T-cell differentiation and fulfill opposing anti-inflammatory and pro-inflammatory immune functions. In our comparison of Treg and effector T-cell lineages, we found that \u223c85% of regulatory elements were genetically conserved and epigenetically active in both human and mouse, \u223c1\u20132% were lineage-specific in human or mouse, and <0.1% were lineage-specific in both human and mouse. This indicates that of those elements that are specific to the Treg lineage, less than 10% were lineage-specific in both mouse and human. Thus, the bulk of lineage-specific epigenetic activity was unique to each organism with only a small set of conserved Treg lineage defining regulatory elements, including enhancers near FOXP3, IL2RA, LRRC32, IKZF2, IL2, IL7R, and PDE3B. Interestingly, our analysis also indicates the potential importance of CCR8, DUSP4, TNFRSF19, TNFRSF1B, THEMIS, PDE7A, and SWAP70 to Treg cellular function, as lineage-specific epigenetic activity was conserved in both mouse and human. These findings suggest that lineage specification programs may be dependent on but a few immutable genetic regulatory elements, while tolerating considerable epigenetic variation at numerous additional organism-specific lineage-specific elements.\n\nGiven previous findings regarding the extensive turnover of DNA elements in genome-wide regulatory networks (Stergachis et al., 2014; Vierstra et al., 2014), it is noteworthy that we found limited turnover of regulatory elements that are lineage-specific in both mouse and human. This confirms the unique importance of these individual regulatory elements. However, our observation that many lineage-specific regulatory elements are lineage-specific in only a single organism highlights the plasticity of genome-wide regulatory networks. Furthermore, we found that the Foxp3-mediated transcriptional control program was subject to forkhead-binding motif \u2018turnover\u2019 that was associated with functional consequences. While these organism-specific elements contributed to gene regulation, the regulatory elements with conserved lineage-specific epigenetic activity were associated with far more pronounced regulation of Treg cell lineage-specific gene expression.\n\nAlthough our studies support a role for Treg cell dysfunction in disease pathogenesis, other factors are almost certainly required, such as environmental contributors and dysfunction of multiple other cell lineages and physiological processes. For instance, it is reasonable to consider that autoimmune diabetes development is impacted most significantly by HLA risk alleles (Wong et al., 2004; Stadinski et al., 2010), and to a lesser degree by other susceptibility determinants including potentially compromised Treg cells. Though, we observed statistical enrichment of risk alleles near Treg cell enhancers, it is worth noting that the majority of polymorphisms exist as broad haplotype blocks that cannot be perfectly resolved to a single or several lineage-specific enhancers. Although methods for parsing risk alleles into causative and specific cell lineages have been proposed (Maurano et al., 2012; Trynka et al., 2013; Farh et al., 2014; Seumois et al., 2014; Onengut-Gumuscu et al., 2015), these approaches, similar to our study, rely on aggregate proximity statistics and imperfect modeling of genetic linkage. As whole genome sequencing and mappings of epigenetic activity improve and expand to more cell populations (Epigenome Roadmap Consortium, 2015), we expect a significant fraction of loci will have clear epigenetic partitioning in many diseases. We propose that for those risk alleles without clear causative polymorphism due to broad linkage disequilibrium, hypothesis-driven lineage-focused epigenomic QTL studies may be an alternative for gaining increased resolution of disease causing polymorphisms.\n\nOur study suggests that the vast majority of Treg cell lineage-specific elements are not conserved between mice and humans suggesting that during cellular differentiation, only a handful of epigenetic elements implement the core transcriptional program that underlies establishment of a differentiated Treg cell identity and function. In support of this model, disease-associated polymorphisms clustered at genic loci containing core lineage-specific epigenetic elements. Nevertheless, most Treg lineage-specific regulatory elements were lineage-specific only in human and could harbor extensive natural genetic variation that could influence transcription, alter cellular function, and contribute to polygenic disease. This orthogonal high-resolution epigenetic and genetic analysis enabled characterization of disease-predisposing genetic variation associated with Treg-specific enhancers, and therefore, implicated Treg cells in complex autoimmune disease.\n\n## Materials and methods\n\n### Cell isolation\n\nBuffy coat preparations from normal human peripheral blood donors were obtained from the New York Blood Center (NYBC) on same day as donation. CD4+ T cells were enriched through negative selection with RosetteSep antibody cocktails (Stem Cell Technologies #15062, Vancouver, BC Canada). Isolated CD4+ T cells were stained for CD3 (PE-TexasRed, Invitrogen #MHCD0317, Waltham, MA, United States), CD4 (APC-eFluor 780, eBioscience #47-0049-42, San Diego, CA, United States), CD45RA (APC, BioLegend #304112), CD45RO (PE-Cy7, BioLegend #304230), and CD25 (PE, BioLegend #302606), and resting and activated Treg and effector CD4+ T-cell subsets were purified on a BD Biosciences Aria2 fluorescent cell sorter.\n\nMurine CD3+CD4+ cells were isolated as previously described (Kim et al., 2007; Arvey et al., 2014). Briefly, naive CD4+ T cells (GFP\u2212) and resting Treg cells (GFP+) were isolated from untreated Foxp3DTR mice, whose Treg cells express GFP-DTR (DT Receptor) fusion protein driven cells by an IRES-DTR-GFP coding DNA sequence knocked into 3\u2032-UTR of the Foxp3 gene. Activated T effector cells (GFP\u2212) and activated Treg cells (GFP+) were FACS sorted from Foxp3DTR mice 11 days after DT treatment (day 0 and 1; 20 \u03bcg/kg). DT treatment resulted in transient ablation of Treg cells and systemic inflammation. Cells harvested from lymph node and spleen were enriched by positive selection (Dynabeads, Invitrogen) and sorted on a FACS Aria2 fluorescent sorter.\n\n### ChIP-seq analysis\n\nChIP-seq analysis of H3K27Ac in mouse and human cells was performed as previously described (Arvey et al., 2014). Briefly, ChIP was performed using the H3K27Ac-specific antibody (Abcam ab4729, Cambridge, United Kingdom) raised against the conserved acetylated epitope \u2018LATKAARKSAPA\u2019. Sequencing was performed using an Illumina Hi-Seq 2000 instrument and standard library preparation and adaptors. Reads were aligned to hg19 using BWA using the \u2018mem\u2019 algorithm with parameters \u2018-k 22 -L\u2019. Only nuclear chromosomes were included in our analysis, which excluded all contigs of unknown physical mapping, episomal DNA, and mitochondrial DNA. Peaks were called using MACSv2 using default parameters and a permissive threshold for total peak count (p < 0.0001). The peaks for all experiments were then combined and reads from all experiments were remapped onto the combined set of peaks. We removed peaks with low reads per million (<1 RPM in all samples) or high-input signal (>0.5 RPM); or peaks that were blacklisted by the ENCODE consortium analysis of artifactual signals in mouse or human cells (Kundaje, 2013). ChIP tracks were plotted by taking strand-shifted reads (covering 200 nt from original read start) and computing overlaps for the center 100 nt of each read, as previously described (Arvey et al., 2014). This simple transformation is superior to simple raw read overlap, as it enhances signal at actual protein\u2013DNA-binding sites.\n\n### Meta-analysis of epigenetic and gene expression data sets\n\nHuman and murine T effector and Treg cell DHSs were assayed as previously described (Bernstein et al., 2012; Samstein et al., 2012). To confirm specificity of the most Treg-specific regulatory elements, we compared active regulatory elements across a number of tissues and immune cell populations identified by ChIP-seq and DNase-seq by the Epigenome Roadmap and ENCODE consortia (Bernstein et al., 2012). The pancreatic islet active genomic element data set was obtained from recent studies (Pasquali et al., 2014; Epigenome Roadmap Consortium, 2015). Additional human Treg cell epigenetic data were obtained from recent studies (Andersson et al., 2014; Schmidl et al., 2014). Murine Foxp3 ChIP-seq data sets were generated in our previous studies (Samstein et al., 2012; Arvey et al., 2014) and human Foxp3 ChIP-seq data sets were obtained from SRP006674 (technical replicates SRR192544, SRR192545) and SRP017669 (SRR639419, SRR639420) (Birzele et al., 2011; Schmidl et al., 2014). Reproducibility of mouse and human ChIP-seq studies was confirmed (Figure 3\u2014figure supplement 1). Murine gene expression microarray data sets were generated in our previous studies (Samstein et al., 2012; Arvey et al., 2014). Mouse Foxp3 gene expression is derived from RNA-seq (data not shown) since the Affymetrix 430 2.0 array probe assays the 3\u2032-UTR region of the gene that contains the knocked in IRES-DTR-GFP construct. Human gene expression was obtained from a previously published study (Miyara et al., 2009).\n\n### Quantifying genetically and epigenetically conserved loci\n\nAcetylated, DNase hypersensitive, and Foxp3-bound loci were identified as described above. To identify orthologous loci in human and mouse, the UCSC liftOver program (Hinrichs et al., 2006) was used with the hg19 to mm9 chains downloaded from: human: http://hgdownload-test.cse.ucsc.edu/goldenPath/hg19/liftOver/, mouse: http://hgdownload-test.cse.ucsc.edu/goldenPath/mm9/liftOver/ using default parameters. If an orthologous locus was not identified, iterations over smaller regions of the locus were tested for orthology. This was particularly important for acetylation events, which typically spanned 2\u20135 kbp, with only a fraction requiring conservation to obtain conserved function. We used the following iteration scheme, starting at the center and then scanning outward in increments depending on assay: histone acetylation ChIP-seq: 3\u20135 kbp loci were searched in 300 bp increments, DNase-seq: 200 bp loci were searched in 50-bp increments, Foxp3 ChIP-seq: 300 bp loci were searched in 50-bp increments.\n\nOur high-level results were robust to diverse parameter settings and code is provided online. Conserved epigenetic activity was quantified as follows. After matching human-to-mouse loci, we then mapped all mouse-to-human elements and took the union of all elements in each species, respectively. Raw read counts were mapped to the union set of all genetically conserved regulatory elements and non-genetically conserved loci were set to zero. For analysis of gene-level conservation (e.g., gene expression), human HUGO gene names were mapped to murine gene names by Mouse ENCODE mapping (Yue et al., 2014).\n\n### Quantifying mobility and function of lineage-specific regulatory elements\n\nTo test for mobility (since individual regulatory elements may be active in both mouse and human, but be lineage-specific only in a single organism, we determined if lineage-specific regulatory elements appear as an independent regulatory elements near the same gene) of lineage-specific epigenetic elements within a genic locus (defined as the closest gene transcription start site (TSS) and genes within 100 kbp), we addressed the following questions: (1) Is there mobility of lineage-specific epigenetic elements within a locus? (2) Do lineage-specific epigenetic elements become epigenetically active, but lineage non-specific, conserved genetic elements? (3) Would loosening of cutoffs for lineage-specificity and taking the maximally lineage-specific element across a large locus reveal conservation of the lineage specification program across non-conserved regulatory elements?\n\nFor (1), we identified genic loci that contained movement of lineage-specific epigenetic elements in mouse and human (Figure 2\u2014figure supplement 2D, example shown in Figure 2\u2014figure supplement 2A). Gene expression was concordant for 3/45 elements examined (not statistically significant).\n\nFor (2), a handful of lineage-specific elements became epigenetically inactive in the other organism (<15, not statistically significant) and had limited lineage-specific gene expression (Figure 2\u2014figure supplement 2E).\n\nFor (3), loosened rank cutoffs identified weakly lineage-specific elements in human (n = 632/496, up/down) and mouse (n = 759/625, up/down) at proximal but not necessarily orthogonal gene loci. Nearby genes were largely unaffected or exhibited discordant lineage-specific gene expression, indicating that this set may have limited functional relevance. Nearby genes with weak levels of differential expression (>0.5-fold or q < 0.01, where q is false discovery rate (FDR) value) are shown in Figure 2\u2014figure supplement 2F (n = 26 up; n = 22 down), which includes many genes with regulatory elements that are lineage specific in both mouse and human as characterized in Figure 2\u2014figure supplement 2C.\n\n### SNP genotype calling\n\nGenotype calling was performed according to best practices described by the Broad Institute Genome Analysis Tool Kit v3.1.1 (GATK) documentation (DePristo et al., 2011). We used Picard (v0.92) to designate read groups by donor and cell type. Potentially monoclonal reads were removed by selecting a single read at random for each position in the genome with multiple read start sites (custom Python script). This strategy avoids reference alignment bias of other tools (e.g., samtools rmdup) that select reads with maximum alignment score. The standard GATK pipeline was used to perform local realignment around potential indels and recalibrate quality scores across experiments. Final calling and estimation of allelic read depth were performed using the Unified Genotyper algorithm on variants compiled in dbSNP (v138). Variant calling quality was assessed by the Variant Recalibrator algorithm using HapMap 3.3, 1000G Project, and dbSNP v138 as calibrating resources for estimating sensitivity and specificity of calls. Low-quality tranches were discarded and not considered in downstream analyses.\n\n### Allele-specific chromatin modifications\n\nHeterozygous SNPs were identified using GATK (see above). This set of SNPs was then filtered to remove low quality or unreliable genotype calls by discarding SNPs that:failed QC after GATK quality recalibration (as described above);were heterozygous in less than 2 donors;were homozygous in less than 2 donors;showed allelic imbalance in input (\u2018non-ChIPed\u2019) DNA at nominal p-values <0.05.\n\nAllelic read depth was determined from GATK estimates from \u2018rmdup\u2019 data output. Two-tailed binomial tests for allelic imbalance was used to filter all heterozygous polymorphisms with p-values > 0.2, as these provide little evidence for allele-specific enhancer usage. Remaining polymorphisms were aggregated into H3K27ac regulatory elements and tested for LD r2 > 0.99 in the five 1000G populations AFR, EUR, CEU, CHB, and JPT. These polymorphisms were then aggregated for each regulatory element, under the assumption of allelic read depth independence. This statistic was then analyzed for divergence from an empirical null distribution constructed by random uniform p-value aggregation under identical assumptions. This is shown in the QQ-plot of Figure 4\u2014figure supplement 1E.\n\nSince B lymphoblastoid cell lines (B-LCL) share many regulatory elements with CD4+ T cells, we performed meta-analysis with the inclusion of the B-LCL data sets (Kasowski et al., 2013a; McVicker et al., 2013a) to increase confidence in shared allele-specific chromatin expression alleles (e.g., ENTPD1 as shown in Figure 4). Additionally, a small set of loci presented allele-specific modifications in only CD4+ T cells (e.g., Figure 4\u2014figure supplement 1F); however, our analysis was underpowered to detect such events genome-wide.\n\nA test of allelic preference across both homozygous and heterozygous individuals was performed on normalized estimates of read count coverage of a given genotype. That is, reads with a given genotype were quantified by RPM. Heterozygous RPM values were doubled to make them comparable to homozygous RPM values. These were then mean-normalized by data set (LCL and primary T cells). Statistical test of allele specificity incorporating homozygous individuals was performed using two approaches: (1) independent test of heterozygous and homozygous individuals and (2) linear regression across all genotypes. For (1), test of heterozygous allele specificity is described above and quantitative differences in H3K27ac across homozygous individuals was estimated by t-test. As homozygous and heterozygous individuals represent independent observations, the product of p-values was used as an estimate of statistical significance of allele specificity. For (2), linear regression of normalized RPM values to major allele counts was modified to include values for the two heterozygous read overlap counts, shifting the regression domain from {0, 1, 2} to {0, 1, 2, 3}, where 0, 3 are homozygous and 1, 2 are the respective heterozygous regressor values.\n\n### Analysis of epigenetic association with disease-risk SNPs\n\nPolymorphisms identified in prior GWA studies were obtained from the NHGRI GWAS Catalog (Welter et al., 2014) (downloaded 12 April, 2014). At this time, the catalog was in hg18 coordinates, which were converted to hg19 coordinates using the liftOver program and UCSC whole genome lift over chains. These polymorphisms were then analyzed for overlap with regions surrounding regulatory elements using the hypergeometric overlap test. Our analysis crudely corrected for linkage disequilibrium, which has confounded significance statistics in previous studies (Maurano et al., 2012), by taking broad 100 kbp regions (or most proximal gene body) surrounding regulatory elements to include disease-associated polymorphisms across the haplotype block. This empirically eliminated over-counting events arising from multiple epigenetic elements overlapping a single genetic haplotype. We include GWA studies if they identified >5 independent SNPs associated with the disease. The phenotypic traits and diseases analyzed are presented in Supplementary file 14.\n\n### Source Code\n\nAll source code is open source and available for download at https://bitbucket.org/aarvey/treg_epigen.\n\n## Ethics statement\n\nAll mice were bred and housed in the animal facility at the Memorial Sloan Kettering Cancer Center, in accordance with institutional guidelines.\n\nHuman buffy coat samples were obtained from NYBC. Human subject informed consent was obtained by the NYBC, under guidance of the NYBC committee for protection of human subjects. The informed consent allowed for research use and publication. Donor identities were anonymous and subject IDs are different from those provided by NYBC.\n\nThe Memorial Sloan Kettering Cancer Center IRB determined analysis of human data to be exempt research per 45 CFR 46.101.b(4), 45 CFR 164.512(i)(2)(ii), and 45 CFR 46.116(d).\n",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "e1277850-11f4-417d-a9c2-8839ac3ae3ff",
+      "submission_id": "4998fa11-304a-4854-8c11-9beaeef167df",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Christopher K Glass, University of California, San Diego , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.07571.028](https://doi.org/10.7554/eLife.07571.028)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for sending your work entitled \u201cGenetic and epigenetic variation in the lineage specification of regulatory T cells\u201d for consideration at eLife. Your article has been evaluated by Mark McCarthy (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe manuscript by Arvey et al. explores genetic and epigenetic variation in the lineage specification of regulatory T cells. A comparison is made of various mouse and human T helper cell populations using H3K27ac as a surrogate of active regulatory elements. The studies are of interest because of the key roles of Treg cells in control of immune function and autoimmunity. There were divergent opinions among the reviewers as to the suitability of this manuscript for publication in eLife that related to the extent to which it represents a conceptual advance. There were also concerns that many aspects of the manuscript are insufficiently documented and difficult to follow. After considerable discussion among the reviewers, a decision was made to allow consideration of a revised manuscript that fully addresses the main concerns. The consensus was that this could not be accomplished in the form of a short report due to the requirement to provide more detail and that the revised manuscript would have to be expanded to a full article rather than a short report.\n\nEssential revisions:\n\n1) A major motivation of this work is based on the statement, \u2018it remains unknown if changes in the chromatin state of regulatory elements associated with cell lineage specification are conserved in their lineage-specificity\u2019. However, this precise question was the major focus of Stergachis et al. Nature 515, 356-70, 2014. The Stergachis et al. paper, which is not cited, systematically analyzed the cis-acting circuitry of a large number of mouse and human cell types. A main point of Stergachis et al., is that while the precise genomic sequences containing cis regulatory elements for key transcription factors may not be conserved, the higher level organization of transcriptional networks is highly conserved. Although not the main focus of the paper, Treg cells are included in this analysis in Figures 3\u20135. The methods differ in that Stergachis et al. primarily rely on DNase hypersensitivity, which indicates TF binding, whereas the current manuscript uses H3K27ac to identify regions of regulatory activity. The current findings may be fully consistent with those of Stergachis, but at this point it is not clear the conclusion in the Abstract that \u2018our findings suggest that a small set of regulatory elements specify the Treg lineage\u2019 is correct. This conclusion is drawn from the data shown in Figure 2 and Figure 2\u2013figure supplement 1, and is based on the relatively limited set of \u2018conserved\u2019 elements. These studies do not exclude the possibility that there are many non-conserved elements (that may represent conserved functional modules in different genomic locations) that are important for expression of Treg-specific genes. The authors will need to directly compare and contrast their findings and conclusions with those of Stergachis et al. with respect to the point of whether a small set of regulatory elements is sufficient to specify the Treg lineage.\n\n2) Many of the figure panels in this manuscript are hard to interpret, and are inadequately explained in the legends. Specific examples of this are detailed in \u2018Additional concerns\u2019. Secondly, the Methods section does not give enough detail about the analyses that were performed to explain how certain numbers were arrived at. There needs to be more detail about what computational processes and parameters were used. Ideally, code would be provided as well to enable thorough review of what is largely a data-analysis, rather than data-generation, paper. Thirdly, many of the claims relied on single examples, and many figures lacked sufficient numerical or statistical underpinnings. Also, there should be more discussion about the relationship between this analysis and the results in King and Wilson, 1975; Goncalves et al., 2012 and Ward and Kellis, 2012.\n\n3) Figure 2BC show that only a few genes show correlation between K27 levels in human and mouse, and only a few genes show correlation in expression between human and mouse. It would seem that a listing of the genes in common between these two analyses would make the analysis much more meaningful.\n\n4) Figure 2E is a very strong demonstration that sites bound by Foxp3 only in human Treg cells lost H3K27ac only in humans, and conversely sites bound by Foxp3 only in mice lost H3K27 only in mice. In conserved sites both human and mice lost H3K27ac. This appears to support the notion that Foxp3 is associated with repression, but there is no comment on this. Would the authors discuss?\n\n5) Figure 3C expounds on the ENTPD1 gene encoding the ectonucleoside triphosphate diphosphohydrolase, CD39. They show and state, \u201cENTPD1 locus demonstrated genetic association with H3K27ac levels across individuals and in an allele-specific manner in a given individual (Figure 3C,D).\u201d The odd thing about this is that CD39 is ubiquitously expressed in virtually all tissues. Although the authors show an association with H3K27 levels, they did not show whether this translated into changes in gene expression. I would think the authors should address this issue, especially as CD39 is so widely expressed.\n\n6) Figure 3D shows the K27ac reads associated with two alleles in the same individual, which is a nice analysis; however, do the points represent individual people? How many are people, and how many are lymphoblastoid lines? Is this a fair aggregation of data? Does the p-value listed refer to the difference in alleles? From the looks of the data, I wouldn't have expected a p value of 10^-13.\n\n7) The conclusion that DNA polymorphisms in Treg-specific noncoding regulatory sites are enriched for association with autoimmune disease is not fully convincing. The association of these polymorphisms with total CD4+ T cell noncoding regulatory sites is far more impressive. Treg cells are a subset of CD4+ cells, and a \u201cdevil's advocate\u201d would raise the question of whether Tregs might even be less likely than other types of CD4+ T cells to have their specific regulatory elements contribute to disease. The association is stated without discussing real alternatives in this version of the manuscript. Is the right null hypothesis being tested in Figure 3G?\n\n8) The figures do not explicitly show much evidence for a disease association among the Treg-specific enhancers. There is differential H3K27 acetylation, but the Venn diagrams shown seem to indicate that only a few Treg-specific elements are found among the many disease-associated SNPs. Is the Treg-specific element containing a SNP at the ENTPD1 locus disease-associated?\n\n9) It seems surprising to use enhancer activity marks in the B lymphoblastoid cell lines as an additional source of statistical power for Treg-specific enhancers, e.g. in Figure 3D and elsewhere as described in Methods (under \u201cAllele-specific chromatin modifications\u201d). What does this statement mean? These marks should generally be cell type specific.\n\n10) Legend to Figure 3\u2013figure supplement 1E: For interested biologists in the readership, explain what a Q\u2013Q plot is and what the axes represent. It is a supplementary figure and the legend is the only source of information about what it is showing. Legends to panels F, G, H, and I are not legends but statements of interpretations of the data shown without explaining the plots themselves.\n",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bd9f4373-f11b-49a3-a4ef-8eb55767987b",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C1",
+      "claim": "Regulatory T (Treg) cells suppress autoimmunity and other inflammatory states.",
+      "claim_type": "EXPLICIT",
+      "source": "Regulatory T (Treg) cells, which suppress autoimmunity and other inflammatory states, are characterized by a distinct set of genetic elements controlling their gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a defining characteristic of Treg cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "34a6f349-c1c8-4ff0-81f1-fa3109c055d4",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C2",
+      "claim": "Treg cells are characterized by a distinct set of genetic elements controlling their gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Regulatory T (Treg) cells, which suppress autoimmunity and other inflammatory states, are characterized by a distinct set of genetic elements controlling their gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a fundamental property of Treg cells.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "7d82558c-3fc3-4dfc-bd80-51acbf8e141b",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C3",
+      "claim": "A small set of regulatory elements specify the Treg lineage.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that a small set of regulatory elements specify the Treg lineage and that genetic variation in Treg cell-specific enhancers may alter Treg cell function contributing to polygenic disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract based on the conservation analysis performed in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "c60503d9-95ed-4d25-9a9a-7b5df8e13a0c",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C4",
+      "claim": "Genetic variation in Treg cell-specific enhancers may alter Treg cell function contributing to polygenic disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings suggest that a small set of regulatory elements specify the Treg lineage and that genetic variation in Treg cell-specific enhancers may alter Treg cell function contributing to polygenic disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract based on disease association analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "da97f108-8cf1-4895-8740-c0ae8aa78823",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C5",
+      "claim": "The majority of protein-coding genome sequence is under constraint due to the cost of deleterious mutational perturbations in protein function.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the majority of protein-coding genome sequence is under constraint, due to the cost of deleterious mutational perturbations in protein function, changes in non-coding regulatory portions of the genome are thought to serve as a major source of evolutionary innovation and substrates for selection (King and Wilson, 1975; Schmidt et al., 2010; Goncalves et al., 2012; Ward and Kellis, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "694dd16c-a6c4-4241-862f-9e7c63289426",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C6",
+      "claim": "Changes in non-coding regulatory portions of the genome serve as a major source of evolutionary innovation and substrates for selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the majority of protein-coding genome sequence is under constraint, due to the cost of deleterious mutational perturbations in protein function, changes in non-coding regulatory portions of the genome are thought to serve as a major source of evolutionary innovation and substrates for selection (King and Wilson, 1975; Schmidt et al., 2010; Goncalves et al., 2012; Ward and Kellis, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "6dd1c02b-bea9-4af5-8661-3148403d9dcf",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C7",
+      "claim": "Treg cell differentiation and function is controlled by the lineage specification factor Foxp3.",
+      "claim_type": "EXPLICIT",
+      "source": "Treg cell differentiation and function is controlled by a late-acting lineage specification factor Foxp3, which is induced upon signaling through T cell (TCR) and cytokine receptors (Hill et al., 2007; Ohkura et al., 2012; Samstein et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "147ef373-2bfb-41a6-ac84-0f832e7e2fb3",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C8",
+      "claim": "Foxp3 is induced upon signaling through T cell (TCR) and cytokine receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Treg cell differentiation and function is controlled by a late-acting lineage specification factor Foxp3, which is induced upon signaling through T cell (TCR) and cytokine receptors (Hill et al., 2007; Ohkura et al., 2012; Samstein et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "e72de423-043c-4418-8945-227be9f5f4f7",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C9",
+      "claim": "Genetic Foxp3 deficiency or elimination of Treg cells in mice results in lymphoproliferation and myeloproliferation leading to widespread fatal autoimmune lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic Foxp3 deficiency or elimination of Treg cells in mice results in lymphoproliferation and myeloproliferation leading to widespread fatal autoimmune lesions largely driven by activation of 'self'-, commensal microbiota-, and food-derived antigen-reactive CD4 T cells (Brunkow et al., 2001; Fontenot et al., 2003; Khattri et al., 2003; Kim et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "ac7ba018-7d8f-45fd-9342-594f81b11989",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C10",
+      "claim": "Human IPEX patients with loss-of-function Foxp3 mutations present with neonatal diabetes, thyroiditis, autoimmune anemia and neutropenia, autoimmune hepatitis, exudative dermatitis, enteropathies, and hyper-IgE syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Human IPEX patients with loss-of-function Foxp3 mutations and congenital Treg cell deficiency present with neonatal diabetes, thyroiditis, autoimmune anemia and neutropenia, autoimmune hepatitis, exudative dermatitis, enteropathies, and hyper-IgE syndrome (Bennett et al., 2001; Torgerson and Ochs, 2007; Verbsky and Chatila, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "7bae53d2-2b1d-4cb1-aab6-28c23f1fd42e",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C11",
+      "claim": "Approximately 31,000 H3K27 acetylation peaks were observed across the genome in CD4+ T-cell subsets.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed \u223c31,000 H3K27 acetylation peaks across the genome in CD4+ T-cell subsets, which we stratified by reads aligned per million (RPM) in each cell population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the ChIP-seq experiments performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "9c15ecf2-4aba-4358-ab2d-8796ce325c68",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C12",
+      "claim": "Approximately 27,000 orthologous regulatory elements were identified between human and mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide comparison between human and mouse identified \u223c27,000 orthologous regulatory elements (Figure 1F,G, Figure 1\u2014figure supplement 1H,I).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the conservation analysis performed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "131ddad4-e1c7-4f08-8147-d2ca68570d3c",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C13",
+      "claim": "The level of H3K27ac at conserved genetic elements was highly correlated (r = 0.48) between human and mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "The level of H3K27ac at conserved genetic elements was highly correlated (r = 0.48), with a plurality of shared elements being weakly active in both organisms (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the conservation analysis shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "e5f369c9-eece-4002-a9b6-a777aa0fcabd",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C14",
+      "claim": "Very few regulatory elements are Treg cell-specific in both human and mouse species.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, while the genome-wide epigenetically active landscape was similar in human and mouse, quantification of cell lineage specificity revealed that very few of the elements are Treg cell-specific in both species (Figure 2B and Figure 2\u2014figure supplement 1A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a primary finding from the lineage-specificity analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "fb728967-e724-4561-acff-0f0967467126",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C15",
+      "claim": "Conserved Treg lineage-specific regulatory elements include those near FOXP3, IL2RA (CD25), CTLA4, IKZF2 (HELIOS), IL2RB, DUSP4, BLIMP1, TNFRSF8, TNFRSF9, CCR8, and LRRC32.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we were able to identify conserved epigenetic modifications at a small set of regulatory elements, which could be assigned to a handful of genes, including FOXP3, IL2RA (CD25), CTLA4, IKZF2 (HELIOS), IL2RB, DUSP4, BLIMP1, TNFRSF8, TNFRSF9, CCR8, and LRRC32 (Figure 2\u2014figure supplement 1D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the conservation analysis of lineage-specific elements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "21776c1e-96ab-4b61-ae79-0f36f56e4336",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C16",
+      "claim": "There was greater statistical enrichment for conserved loci downregulated in a Treg-specific fashion, including IL7R (CD127), IL2, PDE3B, LEF1, IL21, PDE7A, TNFSF8, and THEMIS.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, there was greater statistical enrichment for conserved loci downregulated in a Treg-specific fashion, which included IL7R (CD127), IL2, PDE3B, LEF1, IL21, PDE7A, TNFSF8, and THEMIS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the statistical analysis of conserved downregulated elements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "53f8e241-33aa-4367-9cf8-2be521557b06",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C17",
+      "claim": "Organism-specific cell lineage-associated variation in H3K27 acetylation correlated with organism-specific gene expression changes.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that organism-specific cell lineage-associated variation in H3K27 acetylation correlated with organism-specific gene expression changes (Figure 2D,E and Figure 2\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the integrated analysis of epigenetic and gene expression data shown in Figure 2D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "058bf570-f558-4bbb-b093-84859546845a",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C18",
+      "claim": "Many Foxp3-bound loci were genetically conserved and bound in both human and mouse organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "We quantified Foxp3 binding in human and murine Treg cells and found that many Foxp3-bound loci were genetically conserved and bound in both organisms (Figure 3A, Figure 3\u2014figure supplement 1A,B; Supplementary files 7-9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the Foxp3 ChIP-seq analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "7b3fb56f-618f-4e8d-95e1-3ab3f1ebcc23",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C19",
+      "claim": "Conserved Foxp3 binding was associated with decreased H3K27ac in both human and mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that conserved Foxp3 binding was associated with decreased H3K27ac in both human and mouse (Figure 3C,D, Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the integrated analysis of Foxp3 binding and H3K27ac shown in Figure 3C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "3ae51c2e-14a4-43ff-8d09-74288b472a18",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C20",
+      "claim": "At human- or mouse species-specific Foxp3-bound sites, H3K27ac was decreased exclusively in the corresponding organism.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, at human- or mouse species-specific Foxp3-bound sites, H3K27ac was decreased exclusively in the corresponding organism (Figure 3D, Figure 3\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the analysis of species-specific Foxp3 binding shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "f569b93e-0b11-4177-852f-5a36cfa38e19",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C21",
+      "claim": "Species-specific Foxp3 occupancy at genetically conserved loci was associated with presence of forkhead DNA-binding motifs at the corresponding Foxp3-bound sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Species-specific Foxp3 occupancy at genetically conserved loci was also associated with presence of forkhead DNA-binding motifs at the corresponding Foxp3-bound sites (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the motif analysis shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "bcfbec5c-5a0e-4488-a2cf-20087e42a15d",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C22",
+      "claim": "Approximately 80,000 DHSs contained at least 1 polymorphism cataloged in the single nucleotide polymorphism database (dbSNP).",
+      "claim_type": "EXPLICIT",
+      "source": "We examined a narrow genomic window (150 bp) at each of the \u223c85,000 DHSs to find that \u223c80,000 contained at least 1 polymorphism cataloged in the single nucleotide polymorphism database (dbSNP) and that \u223c45,000 of these contained polymorphisms with significant (>0.05) minor allele frequency (MAF) in at least one of the thousand genome project (1000G) populations (Figure 4A; 'Materials and methods'; Supplementary file 13).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the polymorphism analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "0f6c276e-ec11-4042-a74e-e55322e2ff6d",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C23",
+      "claim": "Approximately 45,000 DHSs contained polymorphisms with significant (>0.05) minor allele frequency (MAF) in at least one of the thousand genome project (1000G) populations.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined a narrow genomic window (150 bp) at each of the \u223c85,000 DHSs to find that \u223c80,000 contained at least 1 polymorphism cataloged in the single nucleotide polymorphism database (dbSNP) and that \u223c45,000 of these contained polymorphisms with significant (>0.05) minor allele frequency (MAF) in at least one of the thousand genome project (1000G) populations (Figure 4A; 'Materials and methods'; Supplementary file 13).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a direct result from the polymorphism analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "c186a131-aa26-46e2-8e75-44eabf4095a0",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C24",
+      "claim": "Genetically conserved elements had decreased maximum MAF relative to expected frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with evolutionary constraint, genetically conserved elements had decreased maximum MAF relative to expected frequency (Figure 4B; 'Materials and methods').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the conservation analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "1a0524de-0c70-4ce4-ae63-962d0ee8e080",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C25",
+      "claim": "The activated Treg cell-specific expression of ENTPD1 is associated with a haplotype represented by single nucleotide polymorphism (SNP) rs1342790.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the Treg cell lineage-specific enhancer containing the single nucleotide polymorphism (SNP) rs2882971 at the ENTPD1 locus demonstrated genetic association with H3K27ac levels across individuals and in an allele-specific manner in a given individual (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4C which demonstrates the association between genotype and H3K27ac at the ENTPD1 locus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "4adf3cbd-d35c-41a2-939c-cfbbfab2d0ad",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C26",
+      "claim": "The ENTPD1 locus demonstrates genetic association with H3K27ac levels across individuals and in an allele-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the Treg cell lineage-specific enhancer containing the single nucleotide polymorphism (SNP) rs2882971 at the ENTPD1 locus demonstrated genetic association with H3K27ac levels across individuals and in an allele-specific manner in a given individual (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 4C and confirmed by meta-analysis in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "ab9e51f4-8884-4cf8-a898-680688563fc3",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C27",
+      "claim": "ENTPD1 RNA and protein expression is associated with a strong cis-eQTL.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with previous reports showing ENTPD1 RNA and protein expression association with a strong cis-eQTL (Orr\u00f9 et al., 2013; Ferraro et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "e477d4db-01e9-44a5-b2e9-b15130eb4779",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C28",
+      "claim": "Most disease-predisposing susceptibility loci reside in non-coding portions of the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, recent findings from genome-wide association (GWA) studies have revealed that most disease-predisposing susceptibility loci reside in non-coding portions of the genome (Welter et al., 2014; Figure 5\u2014figure supplement 1), suggesting that the majority of polygenic disease is in fact due to variation in transcriptional control rather than protein structure and function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to previous literature and shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "21a0cb61-53e1-44c3-b1bf-0d746a319ae5",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C29",
+      "claim": "The majority of polygenic disease is due to variation in transcriptional control rather than protein structure and function.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, recent findings from genome-wide association (GWA) studies have revealed that most disease-predisposing susceptibility loci reside in non-coding portions of the genome (Welter et al., 2014; Figure 5\u2014figure supplement 1), suggesting that the majority of polygenic disease is in fact due to variation in transcriptional control rather than protein structure and function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the observation that most disease loci are non-coding.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "c2405a60-7761-4b7d-89c9-d9a151060ff8",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C30",
+      "claim": "Active chromatin is enriched for variants that contribute to polygenic diseases, including autoimmunity.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have also found that active chromatin is enriched for variants that contribute to polygenic diseases, including autoimmunity (Maurano et al., 2012; Trynka et al., 2013; Farh et al., 2014), and that these variants can alter transcriptional regulator protein-DNA interactions, resulting in differential gene expression (Ferraro et al., 2014; Lee et al., 2014; Ye et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "d865ba03-6cd4-4fa0-b1a1-1a0ae5b2fb34",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C31",
+      "claim": "Variants in active chromatin can alter transcriptional regulator protein-DNA interactions, resulting in differential gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have also found that active chromatin is enriched for variants that contribute to polygenic diseases, including autoimmunity (Maurano et al., 2012; Trynka et al., 2013; Farh et al., 2014), and that these variants can alter transcriptional regulator protein-DNA interactions, resulting in differential gene expression (Ferraro et al., 2014; Lee et al., 2014; Ye et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "ad9690ff-fc86-4919-b5ec-50c86688885f",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C32",
+      "claim": "The CTLA4 locus harbors a risk allele for multiple autoimmune disorders, including rheumatoid arthritis, type 1 diabetes (T1D), Graves' disease, and systemic lupus erythematosus.",
+      "claim_type": "EXPLICIT",
+      "source": "One such strictly Treg cell-specific epigenetic element was found at the CTLA4 locus, which harbors a risk allele for multiple autoimmune disorders, including rheumatoid arthritis, type 1 diabetes (T1D), Graves' disease, and systemic lupus erythematosus (Scalapino and Daikh, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "17f4c718-ea75-4d14-9253-ee85359cc8b4",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C33",
+      "claim": "The most disease-associated variants at the CTLA4 locus, represented by rs2882971, lie within Treg cell-specific enhancers that are epigenetically conserved and lineage-specific in both human and mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "While early GWA genotyping approaches were too coarse to localize the causative polymorphism, fine mapping by the ImmunoChip across a large case\u2013control T1D cohort demonstrated that the most disease-associated variants, represented by rs2882971, lie within Treg cell-specific enhancers that are epigenetically conserved and lineage-specific in both human and mouse (Figure 5A, Figure 2\u2014figure supplement 1A) (Onengut-Gumuscu et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to previous literature and shown in Figure 5A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "b88ce9fd-87c9-4ea2-a99f-a36d2af49190",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C34",
+      "claim": "A non-coding CTLA4 polymorphism in linkage disequilibrium with rs2882971 (rs3087243) influences the CTLA4 splice form dosage, with disease-predisposing variants decreasing the soluble isoform that is expressed in Treg cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional relevance of a non-coding CTLA4 polymorphism in linkage disequilibrium with rs2882971 (rs3087243) has been experimentally validated as influencing the CTLA4 splice form dosage, with disease-predisposing variants decreasing the soluble isoform that is expressed in Treg cells (Ueda et al., 2003; Atabani et al., 2005; Gerold et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "06f843c3-52f9-4cd6-a925-4c90d43164ac",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C35",
+      "claim": "Dozens of Treg cell lineage-specific epigenetic elements harbor genetic variation associated with polygenic autoimmune disease such as T1D.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified dozens of Treg cell lineage-specific epigenetic elements that harbor genetic variation associated with and potentially contributing to polygenic autoimmune disease such as T1D (Figure 5B,C; 'Materials and methods').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the disease association analysis shown in Figure 5B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "4405356b-5a12-42da-8ff3-893434c6bc4b",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C36",
+      "claim": "Many autoimmune disease risk alleles were in LD or were proximal to genes with epigenetically conserved Treg lineage-specific elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of these risk alleles revealed that many were in LD or were proximal to genes with epigenetically conserved Treg lineage-specific elements (Figure 5D), suggesting that these elements have important conserved function.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the disease association analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "02e69e0a-16f0-47aa-a8ea-7259c77f68f8",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C37",
+      "claim": "An aggregate GWAS data set of metabolic (e.g., type 2 diabetes) and psychiatric disorders lacked disease associations in conserved Treg lineage-specific elements.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, an aggregate GWAS data set of metabolic (e.g., type 2 diabetes) and psychiatric disorders lacked disease associations in conserved Treg lineage-specific elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the disease association analysis comparing autoimmune vs metabolic/psychiatric disorders.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "661df36d-8793-42df-86bd-a8582adf0e4b",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C38",
+      "claim": "Psychiatric disorders risk-alleles were generally localized in non-conserved genetic elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, psychiatric disorders risk-alleles were generally localized in non-conserved genetic elements, which is consistent with recent reports finding substantial human-specific genetic diversity in cognition-associated genes in comparison to recent evolutionary ancestors (Ogawa and Vallender, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the disease association analysis and is supported by citation to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "5f213b45-d52b-4539-b775-f35ba3c47c57",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C39",
+      "claim": "Less than 10% of lineage-specific epigenetic elements were lineage-specific in both mouse and human.",
+      "claim_type": "EXPLICIT",
+      "source": "In our comparison of Treg and effector T-cell lineages, we found that \u223c85% of regulatory elements were genetically conserved and epigenetically active in both human and mouse, \u223c1\u20132% were lineage-specific in human or mouse, and <0.1% were lineage-specific in both human and mouse. This indicates that of those elements that are specific to the Treg lineage, less than 10% were lineage-specific in both mouse and human.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the conservation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "c961860b-b25f-43bb-9129-5036f356be1e",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C40",
+      "claim": "Approximately 85% of regulatory elements were genetically conserved and epigenetically active in both human and mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "In our comparison of Treg and effector T-cell lineages, we found that \u223c85% of regulatory elements were genetically conserved and epigenetically active in both human and mouse, \u223c1\u20132% were lineage-specific in human or mouse, and <0.1% were lineage-specific in both human and mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the conservation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "23e88d70-0b54-4fac-8899-b077b5e48b82",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C41",
+      "claim": "Approximately 1-2% of regulatory elements were lineage-specific in human or mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "In our comparison of Treg and effector T-cell lineages, we found that \u223c85% of regulatory elements were genetically conserved and epigenetically active in both human and mouse, \u223c1\u20132% were lineage-specific in human or mouse, and <0.1% were lineage-specific in both human and mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the conservation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "e9f16336-09ba-49c1-be2b-3a7cd621a6f5",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C42",
+      "claim": "Less than 0.1% of regulatory elements were lineage-specific in both human and mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "In our comparison of Treg and effector T-cell lineages, we found that \u223c85% of regulatory elements were genetically conserved and epigenetically active in both human and mouse, \u223c1\u20132% were lineage-specific in human or mouse, and <0.1% were lineage-specific in both human and mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the conservation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "19493efb-0f21-426c-a12c-7d47a6d105d6",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C43",
+      "claim": "Lineage specification programs may be dependent on but a few immutable genetic regulatory elements, while tolerating considerable epigenetic variation at numerous additional organism-specific lineage-specific elements.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that lineage specification programs may be dependent on but a few immutable genetic regulatory elements, while tolerating considerable epigenetic variation at numerous additional organism-specific lineage-specific elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the conservation analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "58b398e1-823e-40f9-84e2-133cb3e7e2c8",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C44",
+      "claim": "Limited turnover of regulatory elements that are lineage-specific in both mouse and human confirms the unique importance of these individual regulatory elements.",
+      "claim_type": "EXPLICIT",
+      "source": "Given previous findings regarding the extensive turnover of DNA elements in genome-wide regulatory networks (Stergachis et al., 2014; Vierstra et al., 2014), it is noteworthy that we found limited turnover of regulatory elements that are lineage-specific in both mouse and human. This confirms the unique importance of these individual regulatory elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the conservation analysis results and comparison to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "7f56f5e2-3b77-4203-bfc7-e7d978ad5d0d",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C45",
+      "claim": "The Foxp3-mediated transcriptional control program was subject to forkhead-binding motif 'turnover' that was associated with functional consequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that the Foxp3-mediated transcriptional control program was subject to forkhead-binding motif 'turnover' that was associated with functional consequences.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the Foxp3 binding and motif analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "2986b9b1-e6c1-452d-8b47-29a60bdaa88e",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C46",
+      "claim": "Regulatory elements with conserved lineage-specific epigenetic activity were associated with far more pronounced regulation of Treg cell lineage-specific gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "While these organism-specific elements contributed to gene regulation, the regulatory elements with conserved lineage-specific epigenetic activity were associated with far more pronounced regulation of Treg cell lineage-specific gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the integrated analysis of epigenetic and gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "cde8e439-c54b-4893-87c9-cedb877edf09",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C47",
+      "claim": "Autoimmune diabetes development is impacted most significantly by HLA risk alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, it is reasonable to consider that autoimmune diabetes development is impacted most significantly by HLA risk alleles (Wong et al., 2004; Stadinski et al., 2010), and to a lesser degree by other susceptibility determinants including potentially compromised Treg cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "6e68dcdf-27d2-4b69-a599-1c2d446251e1",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C48",
+      "claim": "The majority of polymorphisms exist as broad haplotype blocks that cannot be perfectly resolved to a single or several lineage-specific enhancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Though, we observed statistical enrichment of risk alleles near Treg cell enhancers, it is worth noting that the majority of polymorphisms exist as broad haplotype blocks that cannot be perfectly resolved to a single or several lineage-specific enhancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged in the discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "dc277cc3-c152-46e8-af33-10d84b6f0f74",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C49",
+      "claim": "During cellular differentiation, only a handful of epigenetic elements implement the core transcriptional program that underlies establishment of a differentiated Treg cell identity and function.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study suggests that the vast majority of Treg cell lineage-specific elements are not conserved between mice and humans suggesting that during cellular differentiation, only a handful of epigenetic elements implement the core transcriptional program that underlies establishment of a differentiated Treg cell identity and function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the conservation analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "924ec37c-563d-4c90-b669-c144e2d2e94a",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C50",
+      "claim": "Disease-associated polymorphisms clustered at genic loci containing core lineage-specific epigenetic elements.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this model, disease-associated polymorphisms clustered at genic loci containing core lineage-specific epigenetic elements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the disease association analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "d9a4b3c6-06bf-4ad7-8668-f177d35e5805",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C51",
+      "claim": "Most Treg lineage-specific regulatory elements were lineage-specific only in human and could harbor extensive natural genetic variation that could influence transcription, alter cellular function, and contribute to polygenic disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, most Treg lineage-specific regulatory elements were lineage-specific only in human and could harbor extensive natural genetic variation that could influence transcription, alter cellular function, and contribute to polygenic disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the conservation and polymorphism analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "adc91839-8b28-4881-9ac6-7a821b8949ba",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C52",
+      "claim": "High-resolution epigenetic and genome-wide genetic disease association data enabled localization of disease-risk linked polymorphisms to regulatory loci that are exclusively epigenetically active in Treg cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This orthogonal high-resolution epigenetic and genetic analysis enabled characterization of disease-predisposing genetic variation associated with Treg-specific enhancers, and therefore, implicated Treg cells in complex autoimmune disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the approach and findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "07898f59-1f28-4988-9df3-b6989706b0d8",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C53",
+      "claim": "The analysis implicated Treg cells in complex autoimmune disease.",
+      "claim_type": "EXPLICIT",
+      "source": "This orthogonal high-resolution epigenetic and genetic analysis enabled characterization of disease-predisposing genetic variation associated with Treg-specific enhancers, and therefore, implicated Treg cells in complex autoimmune disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the disease association analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "f85f78c2-bdcc-48bc-845b-73b5694213d5",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C54",
+      "claim": "Human CD4+ T cells were isolated from peripheral blood of individual anonymous human donors using negative selection.",
+      "claim_type": "EXPLICIT",
+      "source": "CD4+ T cells were enriched through negative selection with RosetteSep antibody cocktails (Stem Cell Technologies #15062, Vancouver, BC Canada).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "4d47c336-aac4-4240-a6cf-660583920327",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C55",
+      "claim": "Resting and activated Treg and effector CD4+ T-cell subsets were purified using FACS sorting based on expression of CD25 and CD45RO with >97\u201399% purity.",
+      "claim_type": "EXPLICIT",
+      "source": "Isolated CD4+ T cells were stained for CD3 (PE-TexasRed, Invitrogen #MHCD0317, Waltham, MA, United States), CD4 (APC-eFluor 780, eBioscience #47-0049-42, San Diego, CA, United States), CD45RA (APC, BioLegend #304112), CD45RO (PE-Cy7, BioLegend #304230), and CD25 (PE, BioLegend #302606), and resting and activated Treg and effector CD4+ T-cell subsets were purified on a BD Biosciences Aria2 fluorescent cell sorter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used in the study, with purity mentioned in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "1b0a4e1d-cfe8-4d3a-8047-39910b50a547",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C58",
+      "claim": "DT treatment resulted in transient ablation of Treg cells and systemic inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "DT treatment resulted in transient ablation of Treg cells and systemic inflammation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods and their effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "fa21ed00-7142-4db1-8c3d-b9f0d6afb483",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C59",
+      "claim": "A total of 16 human cell samples from 7 donors were analyzed, including 7 aTreg, 4 rTreg, 2 Teff, 2 Tmem, and 1 Tn samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we analyzed 16 human cell samples (7 donors: 7 aTreg, 4 rTreg, 2 Teff, 2 Tmem, and 1 Tn samples) and 10 murine samples (2 aTreg, 4 rTreg, 2 Teff, and 4 Tn biological replicates independently isolated from different mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample sizes used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "ed87c53f-959f-4cf1-b746-dfa1e5c3ebf4",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C60",
+      "claim": "A total of 10 mouse cell samples were analyzed, including 2 aTreg, 4 rTreg, 2 Teff, and 4 Tn biological replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we analyzed 16 human cell samples (7 donors: 7 aTreg, 4 rTreg, 2 Teff, 2 Tmem, and 1 Tn samples) and 10 murine samples (2 aTreg, 4 rTreg, 2 Teff, and 4 Tn biological replicates independently isolated from different mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sample sizes used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "2ba6d017-39d6-4f77-aad4-4ea2a83844c2",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C61",
+      "claim": "ChIP-seq analysis of H3K27Ac was performed using the H3K27Ac-specific antibody (Abcam ab4729) raised against the conserved acetylated epitope 'LATKAARKSAPA'.",
+      "claim_type": "EXPLICIT",
+      "source": "ChIP was performed using the H3K27Ac-specific antibody (Abcam ab4729, Cambridge, United Kingdom) raised against the conserved acetylated epitope 'LATKAARKSAPA'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "fc6f6b27-d884-41fb-9388-dac8d2020055",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C62",
+      "claim": "Peaks were called using MACSv2 using default parameters and a permissive threshold for total peak count (p < 0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "Peaks were called using MACSv2 using default parameters and a permissive threshold for total peak count (p < 0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the computational methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "a6885331-2165-46da-92c2-75d344c99178",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C63",
+      "claim": "The LRRC32 locus contains multiple epigenetically active regulatory elements that are conserved and Treg lineage-specific in mouse and human.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the LRRC32 locus, which encodes the GARP protein that acts as a functionally important marker of activated Treg cells in humans (Wang et al., 2009), has multiple regulatory elements that are genetically conserved, epigenetically conserved, and only active in the Treg cell lineage (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2A and described in the text.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "d9b3237c-9e18-4604-94a6-f6575d6f93da",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C64",
+      "claim": "LRRC32 encodes the GARP protein that acts as a functionally important marker of activated Treg cells in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, the LRRC32 locus, which encodes the GARP protein that acts as a functionally important marker of activated Treg cells in humans (Wang et al., 2009), has multiple regulatory elements that are genetically conserved, epigenetically conserved, and only active in the Treg cell lineage (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "e377bc75-2c66-486b-8e66-4382f0c86468",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C82",
+      "claim": "Approximately 85,000 DHSs were identified in CD4+ T-cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined a narrow genomic window (150 bp) at each of the \u223c85,000 DHSs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the DNase-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "26557d6b-781a-417d-aaf8-fd6182622d1a",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C90",
+      "claim": "Correlation across mouse biological replicates was r > 0.99.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlation across mouse biological replicates was r > 0.99 and between human donors r > 0.94, indicating that the observed conservation and lack thereof are reflective of biology and not technical/replicate reproducibility (Figure 1\u2014figure supplement 1K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 1K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "266b5c4a-db69-49c4-9702-01131c48f86c",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "claim_id": "C91",
+      "claim": "Correlation between human donors was r > 0.94.",
+      "claim_type": "EXPLICIT",
+      "source": "Correlation across mouse biological replicates was r > 0.99 and between human donors r > 0.94, indicating that the observed conservation and lack thereof are reflective of biology and not technical/replicate reproducibility (Figure 1\u2014figure supplement 1K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1\u2014figure supplement 1K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "708d9a83-b03f-4d8c-ab1b-dce0e7c789a2",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study identified approximately 31,000 H3K27ac peaks in CD4+ T-cell subsets, with ~27,000 orthologous regulatory elements conserved between human and mouse. The level of H3K27ac at conserved genetic elements showed high correlation (r=0.48) between species, and approximately 85% of regulatory elements were genetically conserved and epigenetically active in both organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C13, C40, C90-C91 provide consistent quantitative data from ChIP-seq experiments with high reproducibility (r>0.99 in mouse, r>0.94 in human). The correlation values and conservation percentages are directly measured and well-documented with appropriate technical replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "fa1afd44-e2be-43d4-bfdc-e1d9100122e2",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Very few regulatory elements (<0.1%) are Treg cell-specific in both human and mouse, representing less than 10% of lineage-specific elements. Conserved Treg lineage-specific elements include those near FOXP3, IL2RA, CTLA4, IKZF2, IL2RB, DUSP4, BLIMP1, TNFRSF8, TNFRSF9, CCR8, and LRRC32, with greater enrichment for downregulated loci including IL7R, IL2, PDE3B, LEF1, IL21, PDE7A, TNFSF8, and THEMIS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C16, C39, C41-C42 present a coherent picture of lineage-specific conservation with specific quantitative breakdowns (~85% conserved, ~1-2% species-specific, <0.1% lineage-specific in both). The identification of specific genes is data-driven and supported by Figures 2B and supplementary figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "4074a567-fafb-4880-adb5-a981400db1b4",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Organism-specific cell lineage-associated variation in H3K27 acetylation correlated with organism-specific gene expression changes, with conserved lineage-specific regulatory elements showing more pronounced regulation of Treg cell lineage-specific gene expression compared to organism-specific elements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17 and C46 are supported by integrated analysis of epigenetic and gene expression data shown in Figure 2D,E. The correlation between epigenetic variation and gene expression is demonstrated, though the mechanistic link is correlative rather than causal.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "d6e9ad5c-ec36-45a2-9f4f-3c6b423014bc",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Many Foxp3-bound loci were genetically conserved and bound in both human and mouse. Conserved Foxp3 binding was associated with decreased H3K27ac in both species, while species-specific Foxp3 binding correlated with species-specific decreases in H3K27ac. Species-specific Foxp3 occupancy was associated with presence of forkhead DNA-binding motifs, indicating motif turnover with functional consequences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21, C45 are well-supported by Foxp3 ChIP-seq data shown in Figure 3. The association between Foxp3 binding and H3K27ac changes is demonstrated with appropriate statistical tests, and the motif analysis provides mechanistic insight into species-specific binding patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "7c30a47f-af0a-43ca-b18f-a46c0d8aefdb",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Analysis of approximately 85,000 DHSs revealed that ~80,000 contained at least one polymorphism in dbSNP, with ~45,000 containing polymorphisms with significant MAF (>0.05) in at least one 1000G population. Genetically conserved elements showed decreased maximum MAF relative to expected frequency, consistent with evolutionary constraint.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24, C82 present quantitative results from polymorphism analysis with appropriate statistical testing. The observation of decreased MAF in conserved elements is consistent with evolutionary constraint and is supported by Figure 4B with empirical p-value calculation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "e191b026-78f4-4b39-8395-3600cf13a5d2",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The ENTPD1 locus demonstrates genetic association with H3K27ac levels across individuals and in an allele-specific manner, with the activated Treg cell-specific expression associated with SNP rs1342790. This is consistent with previous reports of ENTPD1 expression association with a strong cis-eQTL.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27 are supported by data in Figure 4C,D showing allele-specific histone modification. The meta-analysis with B lymphoblastoid cell lines provides additional statistical power. However, there is a discrepancy: C25 mentions rs1342790 while the text and C26 mention rs2882971 at ENTPD1, suggesting a potential error in claim extraction or manuscript inconsistency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "c093d948-782a-474a-82ae-ec6c3a7030cc",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The CTLA4 locus harbors risk alleles for multiple autoimmune disorders. Fine mapping demonstrated that the most disease-associated variants (rs2882971) lie within Treg cell-specific enhancers that are epigenetically conserved and lineage-specific in both human and mouse. A linked polymorphism (rs3087243) influences CTLA4 splice form dosage, with disease-predisposing variants decreasing the soluble isoform expressed in Treg cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 are supported by citations to previous literature and epigenetic data shown in Figure 5A. The fine mapping data from ImmunoChip provides strong evidence for localization to Treg-specific enhancers, though the manuscript acknowledges that linkage disequilibrium makes it difficult to definitively resolve the causative polymorphism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "2d6bc7bf-a873-4e59-a003-7641ad817ee8",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Dozens of Treg cell lineage-specific epigenetic elements harbor genetic variation associated with polygenic autoimmune disease such as T1D. Many autoimmune disease risk alleles were in LD or proximal to genes with epigenetically conserved Treg lineage-specific elements, and disease-associated polymorphisms clustered at genic loci containing core lineage-specific epigenetic elements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36, C50 are supported by disease association analysis shown in Figure 5B-D. The statistical enrichment of risk alleles near Treg cell enhancers is demonstrated, though the manuscript acknowledges limitations due to broad haplotype blocks and imperfect resolution of causative polymorphisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "70db195f-7144-452b-b5f8-73af98535dc7",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "An aggregate GWAS dataset of metabolic and psychiatric disorders lacked disease associations in conserved Treg lineage-specific elements. Psychiatric disorder risk-alleles were generally localized in non-conserved genetic elements, consistent with human-specific genetic diversity in cognition-associated genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 provide important negative controls showing specificity of the autoimmune disease associations. The lack of enrichment in metabolic/psychiatric disorders and localization of psychiatric risk alleles to non-conserved elements supports the specificity of Treg involvement in autoimmune disease.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "1903f7fe-7052-4380-9db7-955d422a3606",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A small set of regulatory elements specify the Treg lineage. Lineage specification programs may be dependent on a few immutable genetic regulatory elements while tolerating considerable epigenetic variation at organism-specific elements. Limited turnover of regulatory elements that are lineage-specific in both species confirms their unique importance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C43-C44, C49 represent the major conceptual conclusions of the study, supported by the conservation analysis showing <0.1% of elements are lineage-specific in both species. These conclusions are logical inferences from the quantitative data, though they represent interpretations rather than direct measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "7bfb2eb5-5954-4895-9e64-44f9d5803e7b",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Genetic variation in Treg cell-specific enhancers may alter Treg cell function contributing to polygenic disease. Most Treg lineage-specific regulatory elements were lineage-specific only in human and could harbor extensive natural genetic variation. High-resolution epigenetic and genetic disease association data enabled localization of disease-risk polymorphisms to Treg-specific regulatory loci, implicating Treg cells in complex autoimmune disease.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C51-C53 represent the translational implications of the study. The implication of Treg cells in autoimmune disease is supported by the enrichment of disease-associated polymorphisms in Treg-specific enhancers, though the functional consequences remain to be experimentally validated. The use of 'may' appropriately indicates uncertainty about causality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "1924db95-dc98-4bfe-b035-06dee893aabd",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Human CD4+ T cells were isolated from peripheral blood using negative selection, and Treg and effector subsets were purified by FACS sorting with >97-99% purity. The study analyzed 16 human cell samples from 7 donors (7 aTreg, 4 rTreg, 2 Teff, 2 Tmem, 1 Tn) and 10 mouse samples (2 aTreg, 4 rTreg, 2 Teff, 4 Tn biological replicates).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55, C59-C60 describe the experimental methods and sample sizes. The high purity (>97-99%) and reasonable sample sizes provide confidence in the data quality. However, the human sample sizes are relatively small for some cell types (e.g., 1 Tn sample), which may limit statistical power for some comparisons.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "ef55b3be-fa8b-4814-af57-8ab3968ca39f",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Mouse activated T cells were obtained from Foxp3DTR mice subjected to DT treatment resulting in transient Treg ablation and systemic inflammation. ChIP-seq was performed using H3K27Ac-specific antibody (Abcam ab4729) against the conserved epitope 'LATKAARKSAPA', with peaks called using MACSv2 with default parameters and p<0.0001 threshold.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58, C61-C62 describe methodological details that are standard and appropriate for the study. The use of a conserved epitope for the antibody is important for cross-species comparisons. The peak calling parameters are reasonable, though the permissive threshold (p<0.0001) is acknowledged in the text.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "b6656568-9537-4c70-befa-86b28f26ac4c",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The LRRC32 locus contains multiple epigenetically active regulatory elements that are conserved and Treg lineage-specific in mouse and human. LRRC32 encodes the GARP protein that acts as a functionally important marker of activated Treg cells in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 provide a specific example of conserved lineage-specific regulation shown in Figure 2A. The functional importance of GARP is supported by citation to previous literature (Wang et al., 2009), making this a well-validated example.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "0760c616-9d29-4edc-a5f9-942bc2ae3900",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Treg cells suppress autoimmunity and are characterized by distinct genetic regulatory elements. Treg differentiation is controlled by Foxp3, which is induced by TCR and cytokine receptor signaling. Foxp3 deficiency in mice causes fatal autoimmune disease, and human IPEX patients with Foxp3 mutations present with multiple autoimmune manifestations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C7-C10 provide essential background information supported by citations to established literature. These are well-accepted facts in the field that provide context for the study but do not represent novel findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "90635bfc-d30c-4bfa-a314-88b02a346212",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The majority of protein-coding genome sequence is under constraint, while changes in non-coding regulatory regions serve as major sources of evolutionary innovation. Most disease-predisposing susceptibility loci reside in non-coding portions of the genome, suggesting that polygenic disease is due to variation in transcriptional control. Active chromatin is enriched for disease-associated variants that can alter transcriptional regulator-DNA interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6, C28-C31 provide important background from prior literature that motivates the study. These are well-established concepts supported by appropriate citations. C29 uses 'suggesting' appropriately to indicate this is an inference rather than proven fact.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    },
+    {
+      "id": "768010a5-58d1-4387-b480-1dd1ef6e22b3",
+      "content_id": "0c108e89-b6c1-4af8-aec4-87c23c6374a2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Autoimmune diabetes development is impacted most significantly by HLA risk alleles, with other factors including potentially compromised Treg cells playing lesser roles. The majority of polymorphisms exist as broad haplotype blocks that cannot be perfectly resolved to single lineage-specific enhancers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 acknowledge important limitations and context. C47 appropriately cites literature on HLA risk alleles and uses cautious language ('reasonable to consider', 'potentially'). C48 acknowledges a key limitation of the GWAS approach that affects interpretation of the disease association results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:43.500426Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7bae53d2-2b1d-4cb1-aab6-28c23f1fd42e",
+      "result_id": "708d9a83-b03f-4d8c-ab1b-dce0e7c789a2"
+    },
+    {
+      "claim_id": "9c15ecf2-4aba-4358-ab2d-8796ce325c68",
+      "result_id": "708d9a83-b03f-4d8c-ab1b-dce0e7c789a2"
+    },
+    {
+      "claim_id": "131ddad4-e1c7-4f08-8147-d2ca68570d3c",
+      "result_id": "708d9a83-b03f-4d8c-ab1b-dce0e7c789a2"
+    },
+    {
+      "claim_id": "c961860b-b25f-43bb-9129-5036f356be1e",
+      "result_id": "708d9a83-b03f-4d8c-ab1b-dce0e7c789a2"
+    },
+    {
+      "claim_id": "26557d6b-781a-417d-aaf8-fd6182622d1a",
+      "result_id": "708d9a83-b03f-4d8c-ab1b-dce0e7c789a2"
+    },
+    {
+      "claim_id": "266b5c4a-db69-49c4-9702-01131c48f86c",
+      "result_id": "708d9a83-b03f-4d8c-ab1b-dce0e7c789a2"
+    },
+    {
+      "claim_id": "e5f369c9-eece-4002-a9b6-a777aa0fcabd",
+      "result_id": "fa1afd44-e2be-43d4-bfdc-e1d9100122e2"
+    },
+    {
+      "claim_id": "fb728967-e724-4561-acff-0f0967467126",
+      "result_id": "fa1afd44-e2be-43d4-bfdc-e1d9100122e2"
+    },
+    {
+      "claim_id": "21776c1e-96ab-4b61-ae79-0f36f56e4336",
+      "result_id": "fa1afd44-e2be-43d4-bfdc-e1d9100122e2"
+    },
+    {
+      "claim_id": "5f213b45-d52b-4539-b775-f35ba3c47c57",
+      "result_id": "fa1afd44-e2be-43d4-bfdc-e1d9100122e2"
+    },
+    {
+      "claim_id": "23e88d70-0b54-4fac-8899-b077b5e48b82",
+      "result_id": "fa1afd44-e2be-43d4-bfdc-e1d9100122e2"
+    },
+    {
+      "claim_id": "e9f16336-09ba-49c1-be2b-3a7cd621a6f5",
+      "result_id": "fa1afd44-e2be-43d4-bfdc-e1d9100122e2"
+    },
+    {
+      "claim_id": "53f8e241-33aa-4367-9cf8-2be521557b06",
+      "result_id": "4074a567-fafb-4880-adb5-a981400db1b4"
+    },
+    {
+      "claim_id": "2986b9b1-e6c1-452d-8b47-29a60bdaa88e",
+      "result_id": "4074a567-fafb-4880-adb5-a981400db1b4"
+    },
+    {
+      "claim_id": "058bf570-f558-4bbb-b093-84859546845a",
+      "result_id": "d6e9ad5c-ec36-45a2-9f4f-3c6b423014bc"
+    },
+    {
+      "claim_id": "7b3fb56f-618f-4e8d-95e1-3ab3f1ebcc23",
+      "result_id": "d6e9ad5c-ec36-45a2-9f4f-3c6b423014bc"
+    },
+    {
+      "claim_id": "3ae51c2e-14a4-43ff-8d09-74288b472a18",
+      "result_id": "d6e9ad5c-ec36-45a2-9f4f-3c6b423014bc"
+    },
+    {
+      "claim_id": "f569b93e-0b11-4177-852f-5a36cfa38e19",
+      "result_id": "d6e9ad5c-ec36-45a2-9f4f-3c6b423014bc"
+    },
+    {
+      "claim_id": "7f56f5e2-3b77-4203-bfc7-e7d978ad5d0d",
+      "result_id": "d6e9ad5c-ec36-45a2-9f4f-3c6b423014bc"
+    },
+    {
+      "claim_id": "bcfbec5c-5a0e-4488-a2cf-20087e42a15d",
+      "result_id": "7c30a47f-af0a-43ca-b18f-a46c0d8aefdb"
+    },
+    {
+      "claim_id": "0f6c276e-ec11-4042-a74e-e55322e2ff6d",
+      "result_id": "7c30a47f-af0a-43ca-b18f-a46c0d8aefdb"
+    },
+    {
+      "claim_id": "c186a131-aa26-46e2-8e75-44eabf4095a0",
+      "result_id": "7c30a47f-af0a-43ca-b18f-a46c0d8aefdb"
+    },
+    {
+      "claim_id": "e377bc75-2c66-486b-8e66-4382f0c86468",
+      "result_id": "7c30a47f-af0a-43ca-b18f-a46c0d8aefdb"
+    },
+    {
+      "claim_id": "1a0524de-0c70-4ce4-ae63-962d0ee8e080",
+      "result_id": "e191b026-78f4-4b39-8395-3600cf13a5d2"
+    },
+    {
+      "claim_id": "4adf3cbd-d35c-41a2-939c-cfbbfab2d0ad",
+      "result_id": "e191b026-78f4-4b39-8395-3600cf13a5d2"
+    },
+    {
+      "claim_id": "ab9e51f4-8884-4cf8-a898-680688563fc3",
+      "result_id": "e191b026-78f4-4b39-8395-3600cf13a5d2"
+    },
+    {
+      "claim_id": "ad9690ff-fc86-4919-b5ec-50c86688885f",
+      "result_id": "c093d948-782a-474a-82ae-ec6c3a7030cc"
+    },
+    {
+      "claim_id": "17f4c718-ea75-4d14-9253-ee85359cc8b4",
+      "result_id": "c093d948-782a-474a-82ae-ec6c3a7030cc"
+    },
+    {
+      "claim_id": "b88ce9fd-87c9-4ea2-a99f-a36d2af49190",
+      "result_id": "c093d948-782a-474a-82ae-ec6c3a7030cc"
+    },
+    {
+      "claim_id": "06f843c3-52f9-4cd6-a925-4c90d43164ac",
+      "result_id": "2d6bc7bf-a873-4e59-a003-7641ad817ee8"
+    },
+    {
+      "claim_id": "4405356b-5a12-42da-8ff3-893434c6bc4b",
+      "result_id": "2d6bc7bf-a873-4e59-a003-7641ad817ee8"
+    },
+    {
+      "claim_id": "924ec37c-563d-4c90-b669-c144e2d2e94a",
+      "result_id": "2d6bc7bf-a873-4e59-a003-7641ad817ee8"
+    },
+    {
+      "claim_id": "02e69e0a-16f0-47aa-a8ea-7259c77f68f8",
+      "result_id": "70db195f-7144-452b-b5f8-73af98535dc7"
+    },
+    {
+      "claim_id": "661df36d-8793-42df-86bd-a8582adf0e4b",
+      "result_id": "70db195f-7144-452b-b5f8-73af98535dc7"
+    },
+    {
+      "claim_id": "7d82558c-3fc3-4dfc-bd80-51acbf8e141b",
+      "result_id": "1903f7fe-7052-4380-9db7-955d422a3606"
+    },
+    {
+      "claim_id": "19493efb-0f21-426c-a12c-7d47a6d105d6",
+      "result_id": "1903f7fe-7052-4380-9db7-955d422a3606"
+    },
+    {
+      "claim_id": "58b398e1-823e-40f9-84e2-133cb3e7e2c8",
+      "result_id": "1903f7fe-7052-4380-9db7-955d422a3606"
+    },
+    {
+      "claim_id": "dc277cc3-c152-46e8-af33-10d84b6f0f74",
+      "result_id": "1903f7fe-7052-4380-9db7-955d422a3606"
+    },
+    {
+      "claim_id": "c60503d9-95ed-4d25-9a9a-7b5df8e13a0c",
+      "result_id": "7bfb2eb5-5954-4895-9e64-44f9d5803e7b"
+    },
+    {
+      "claim_id": "d9a4b3c6-06bf-4ad7-8668-f177d35e5805",
+      "result_id": "7bfb2eb5-5954-4895-9e64-44f9d5803e7b"
+    },
+    {
+      "claim_id": "adc91839-8b28-4881-9ac6-7a821b8949ba",
+      "result_id": "7bfb2eb5-5954-4895-9e64-44f9d5803e7b"
+    },
+    {
+      "claim_id": "07898f59-1f28-4988-9df3-b6989706b0d8",
+      "result_id": "7bfb2eb5-5954-4895-9e64-44f9d5803e7b"
+    },
+    {
+      "claim_id": "f85f78c2-bdcc-48bc-845b-73b5694213d5",
+      "result_id": "1924db95-dc98-4bfe-b035-06dee893aabd"
+    },
+    {
+      "claim_id": "4d47c336-aac4-4240-a6cf-660583920327",
+      "result_id": "1924db95-dc98-4bfe-b035-06dee893aabd"
+    },
+    {
+      "claim_id": "fa21ed00-7142-4db1-8c3d-b9f0d6afb483",
+      "result_id": "1924db95-dc98-4bfe-b035-06dee893aabd"
+    },
+    {
+      "claim_id": "ed87c53f-959f-4cf1-b746-dfa1e5c3ebf4",
+      "result_id": "1924db95-dc98-4bfe-b035-06dee893aabd"
+    },
+    {
+      "claim_id": "1b0a4e1d-cfe8-4d3a-8047-39910b50a547",
+      "result_id": "ef55b3be-fa8b-4814-af57-8ab3968ca39f"
+    },
+    {
+      "claim_id": "2ba6d017-39d6-4f77-aad4-4ea2a83844c2",
+      "result_id": "ef55b3be-fa8b-4814-af57-8ab3968ca39f"
+    },
+    {
+      "claim_id": "fc6f6b27-d884-41fb-9388-dac8d2020055",
+      "result_id": "ef55b3be-fa8b-4814-af57-8ab3968ca39f"
+    },
+    {
+      "claim_id": "a6885331-2165-46da-92c2-75d344c99178",
+      "result_id": "b6656568-9537-4c70-befa-86b28f26ac4c"
+    },
+    {
+      "claim_id": "d9b3237c-9e18-4604-94a6-f6575d6f93da",
+      "result_id": "b6656568-9537-4c70-befa-86b28f26ac4c"
+    },
+    {
+      "claim_id": "bd9f4373-f11b-49a3-a4ef-8eb55767987b",
+      "result_id": "0760c616-9d29-4edc-a5f9-942bc2ae3900"
+    },
+    {
+      "claim_id": "34a6f349-c1c8-4ff0-81f1-fa3109c055d4",
+      "result_id": "0760c616-9d29-4edc-a5f9-942bc2ae3900"
+    },
+    {
+      "claim_id": "6dd1c02b-bea9-4af5-8661-3148403d9dcf",
+      "result_id": "0760c616-9d29-4edc-a5f9-942bc2ae3900"
+    },
+    {
+      "claim_id": "147ef373-2bfb-41a6-ac84-0f832e7e2fb3",
+      "result_id": "0760c616-9d29-4edc-a5f9-942bc2ae3900"
+    },
+    {
+      "claim_id": "e72de423-043c-4418-8945-227be9f5f4f7",
+      "result_id": "0760c616-9d29-4edc-a5f9-942bc2ae3900"
+    },
+    {
+      "claim_id": "ac7ba018-7d8f-45fd-9342-594f81b11989",
+      "result_id": "0760c616-9d29-4edc-a5f9-942bc2ae3900"
+    },
+    {
+      "claim_id": "da97f108-8cf1-4895-8740-c0ae8aa78823",
+      "result_id": "90635bfc-d30c-4bfa-a314-88b02a346212"
+    },
+    {
+      "claim_id": "694dd16c-a6c4-4241-862f-9e7c63289426",
+      "result_id": "90635bfc-d30c-4bfa-a314-88b02a346212"
+    },
+    {
+      "claim_id": "e477d4db-01e9-44a5-b2e9-b15130eb4779",
+      "result_id": "90635bfc-d30c-4bfa-a314-88b02a346212"
+    },
+    {
+      "claim_id": "21a0cb61-53e1-44c3-b1bf-0d746a319ae5",
+      "result_id": "90635bfc-d30c-4bfa-a314-88b02a346212"
+    },
+    {
+      "claim_id": "c2405a60-7761-4b7d-89c9-d9a151060ff8",
+      "result_id": "90635bfc-d30c-4bfa-a314-88b02a346212"
+    },
+    {
+      "claim_id": "d865ba03-6cd4-4fa0-b1a1-1a0ae5b2fb34",
+      "result_id": "90635bfc-d30c-4bfa-a314-88b02a346212"
+    },
+    {
+      "claim_id": "cde8e439-c54b-4893-87c9-cedb877edf09",
+      "result_id": "768010a5-58d1-4387-b480-1dd1ef6e22b3"
+    },
+    {
+      "claim_id": "6e68dcdf-27d2-4b69-a599-1c2d446251e1",
+      "result_id": "768010a5-58d1-4387-b480-1dd1ef6e22b3"
+    }
+  ],
+  "comparisons": []
+}

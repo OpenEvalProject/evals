@@ -1,0 +1,377 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript provides background on Down syndrome (trisomy 21), describing it as the most common chromosomal abnormality affecting multiple organ systems with variable clinical manifestations. Prior work on gene expression changes in T21 has been inconsistent, with conflicting conclusions about chromatin topology-driven changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 establish well-documented background knowledge about Down syndrome epidemiology, clinical features, and prior research controversies. These are appropriately cited and provide context for the current study. The conflicting prior work (C12-C13) justifies the need for the present investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "RNA-seq analysis of 12 fibroblast cell lines identified 662 consistent differentially expressed genes (DEGs) between T21 and D21 cells, with 471 upregulated. Notably, 88% of DEGs are located outside chromosome 21, suggesting conserved mechanisms drive genome-wide expression changes, with chr21-encoded genes accounting for ~12% of the signature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C28 present the core RNA-seq findings from fibroblasts with appropriate statistical analysis (DESeq2, FDR<10%). The data demonstrate consistent gene expression changes across diverse genetic backgrounds, ages, and sexes. Sample size analysis (C27) strengthens confidence in the chr21 contribution estimate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Analysis of DEG genomic distribution revealed no obvious contiguous domains of dysregulation across the genome except on chromosome 21 itself. This contradicts the Letourneau et al. chromatin topology hypothesis and aligns with the Do et al. reanalysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are supported by Manhattan plots and visual analysis across all chromosomes. The findings directly challenge prior work (Letourneau et al.) and are consistent with independent reanalysis (Do et al.). The visual evidence in Figure 1 and supplementary figures clearly shows absence of large dysregulated domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Chr21 DEGs are regulated primarily by gene dosage (~1.5-fold upregulation with >80% probability), while non-chr21 DEGs show signal amplification, bias toward upregulation, and greater inter-individual variation. This suggests chr21 gene dosage activates specific signaling pathways causing genome-wide expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 are well-supported by multiple analytical approaches including violin plots, kernel density estimation, and standard deviation analysis. The ~1.5-fold change for chr21 genes is consistent with gene dosage effects, while the distinct properties of non-chr21 DEGs support the pathway activation hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Ingenuity Pathway Analysis identified the top 13 upstream regulators as interferon-related factors, with signals primarily from non-chr21 DEGs. Four of six interferon receptors (IFNAR1, IFNAR2, IFNGR2, IL10RB) are chr21-encoded DEGs showing ~1.5-fold upregulation, while downstream ISGs show larger fold changes and greater variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C49 present the key computational finding linking T21 to interferon pathway activation. The IPA analysis is validated using control datasets (Figure 2\u2014supplement 1A). The pattern of modest receptor upregulation (~1.5-fold) with amplified downstream ISG responses is consistent with signal transduction biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Protein-level validation confirmed elevated interferon receptors, STAT1 phosphorylation, and ISG expression in T21 fibroblasts. SOMAScan proteomics corroborated RNA-seq findings. Overall, 21% of upregulated DEGs (101/471) are linked to interferon signaling, accounting for a considerable fraction of transcriptome changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C59 provide multi-platform validation (Western blot, SOMAScan) of the RNA-seq findings. The convergence of evidence from transcriptomics and proteomics strengthens confidence in interferon pathway activation. The quantification that 21% of upregulated DEGs are IFN-related is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "T21 fibroblasts show stronger induction of ISGs upon treatment with IFN-\u03b1, -\u03b2, and -\u03b3 compared to D21 cells, with variation across cell lines and ligands. STAT1 phosphorylation does not robustly predict ISG expression, which depends on multiple transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by Western blot data from three matched cell line pairs treated with multiple IFN ligands. The observation of discordance between pSTAT1 and ISG expression (C62) is appropriately interpreted as reflecting the complexity of IFN signaling involving multiple transcription factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "A kinome-focused shRNA screen identified 25 kinases negatively affecting T21 cell fitness and 15 positively affecting it. mTOR was the top hit, consistent with prior reports of mTOR hyperactivation in Down syndrome models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 present the shRNA screen results with appropriate statistical filtering (\u22653 shRNAs per gene, FDR<5%). The mTOR finding is appropriately contextualized with prior literature. However, the screen design cannot distinguish whether hits affect T21 fitness negatively or D21 fitness positively (acknowledged in C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C17",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The shRNA screen identified JAK1 and TYK2 as negative regulators of T21 fibroblast viability. Pharmacological JAK inhibition with ruxolitinib decreased pSTAT1 and ISG expression, and dose-dependently increased viable T21 cell numbers while decreasing D21 cells at high doses, demonstrating differential signaling requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C69-C77 connect the shRNA screen to functional validation with ruxolitinib. The drug treatment data (Western blot, Q-RT-PCR, cell viability assays) support the screen findings. The differential effect on T21 vs D21 cells is clearly demonstrated by T21/D21 ratio analysis. Results are replicated in two cell line pairs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "RNA-seq of lymphoblastoid cell lines identified 1538 DEGs (861 upregulated) with interferon-related upstream regulators dominating the signature. All four chr21-encoded IFN receptors are upregulated, with IFNAR1 being the most significant chr21 DEG. Protein validation confirmed elevated IFN receptors, pSTAT1, and IFN-related genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C86 demonstrate conservation of IFN pathway activation in a second cell type (lymphoblastoids). The analysis parallels the fibroblast work with consistent findings. Western blot validation strengthens the conclusions. The convergence across cell types of different developmental origins is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "RNA-seq of LSK cells from Dp16 mice (a Down syndrome model) confirmed upregulation of three IFN receptors (Ifnar1, Ifnar2, Ifngr2) and canonical ISGs, demonstrating conservation of IFN activation in the hematopoietic lineage and across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 extend findings to a mouse model, strengthening the biological relevance. The Dp16 model is appropriate as it contains the syntenic region including IFN receptors. The conservation across species supports the fundamental nature of IFN pathway activation in trisomy 21.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "RNA-seq of primary circulating monocytes and T cells from individuals with T21 showed significant upregulation of chr21-encoded IFN receptors (except IFNGR2 in T cells). Flow cytometry detected minor increases in surface IFN receptor expression in B cells. IPA identified IFN ligands and transcription factors as predicted drivers with many canonical ISGs induced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 demonstrate IFN pathway activation in primary human cells from living individuals, greatly strengthening clinical relevance. The RNA-seq data from 10 T21 and 7 D21 individuals provides adequate power. Flow cytometry provides orthogonal validation at the protein level, though increases are modest (appropriately noted as 'minor').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Comparative analysis across four cell types revealed conserved IFN activation and predicted inactivation of IFN repressors MAPK1 and TRIM24. Uniquely in primary monocytes and T cells, MYCN transcriptional program inactivation was predicted. IFN signaling was the top activated pathway, while monocytes and T cells showed strong EIF2 pathway repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 synthesize findings across cell types, identifying both conserved (IFN activation) and cell-type-specific (MYCN, EIF2) features. The IPA analysis is consistent across datasets. The identification of translation machinery downregulation in primary cells is a novel finding with potential mechanistic significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Analysis of MYCN and EIF2 pathway signatures in monocytes and T cells revealed substantial overlap, with common genes encoding ribosomal proteins. MYCN-exclusive genes include metabolic enzymes and translation elongation factors, while EIF2-exclusive genes include translation initiation factors. This indicates T21 causes general downregulation of protein synthesis machinery in these cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C112 connect IFN activation to translation machinery repression through well-cited mechanisms. The Venn diagram analysis and gene categorization are appropriate. The finding is consistent with prior reports of IFN effects on translation (C111). This represents a mechanistic link between IFN hyperactivation and cellular dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Principal component analysis showed cell type has a stronger effect on transcriptome than T21. Many chr21 genes, including IFN receptors and ISGs, display cell-type-specific expression patterns (e.g., APP higher in fibroblasts, DYRK1A higher in T cells, IFNAR2 low in fibroblasts, IFNGR2 low in T cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C122 appropriately contextualize T21 effects within cell-type-specific regulatory landscapes. The PCA clearly demonstrates cell type as the dominant source of variation. The examples of cell-type-specific expression of disease-relevant chr21 genes (APP, DYRK1A) have important implications for understanding variable clinical manifestations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Comparison of IFN signatures across cell types revealed extensive cell-type specificity, with most IFN-related genes differentially expressed in only one cell type. Only three chr21-encoded genes (IFNAR1, IFNAR2, MX1) are common to all four IFN-\u03b1 signatures. Despite this, T21 consistently activates IFN response by inducing different gene sets, contrasting with stochastic or chromatin domain models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C131 provide a sophisticated analysis of how T21 operates within cell-type-specific contexts while maintaining consistent pathway activation. The Venn diagram analysis is compelling. Manhattan plots from matched monocytes and T cells clearly demonstrate cell-type-specific changes without large chromatin domains, directly refuting the Letourneau model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Historical and recent literature demonstrates links between T21 and IFN sensitivity. Early work showed T21 fibroblasts have increased IFN sensitivity and viral resistance, chr21 confers IFN sensitivity in mouse cells, and anti-IFN antibodies partially rescue embryonic defects in mouse models. Recent studies found IFN-related gene network disruption in DS mouse brains and IFN contribution to periodontal disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C139 appropriately contextualize current findings within historical and recent literature. The citations support each claim. This demonstrates the authors are building on established but under-appreciated prior work rather than making entirely novel claims about the IFN-T21 connection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The authors propose that IFN activation via increased gene dosage of four chr21-encoded IFN receptors contributes to many clinical impacts of T21, potentially explaining comorbidities like leukemia, autoimmune disorders, and reduced solid tumors. JAK inhibitors are in clinical trials for some DS-associated conditions, though dose-limiting toxicities exist and rigorous clinical investigation is needed to establish therapeutic windows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C19-C22, C140-C143 are largely speculative proposals for future work. While C19 (four IFN receptors on chr21) is established knowledge and C20 (gene dosage mechanism) is a reasonable inference from the data, claims C21-C22 and C140 about clinical impacts are speculative. C141-C143 appropriately note existing clinical trials and safety concerns, but therapeutic benefit remains unproven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The authors propose that constitutive IFN pathway activation in the CNS contributes to neurological problems in DS, potentially through mechanisms like IFN-mediated microglial activation causing neurotoxicity. They suggest DS can be understood as an interferonopathy, with variable manifestations explained by inter-individual differences in adaptation to chronic IFN hyperactivity. Early intervention with IFN pathway inhibitors is proposed as a potential therapeutic strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C144-C155 are highly speculative proposals about neurological impacts and therapeutic interventions. While appropriately cited connections exist between IFN signaling and neurological conditions (C144-C149), the specific proposals about DS neuropathology (C150-C152) and therapeutic strategies (C153) lack direct experimental support. The interferonopathy framework (C154-C155) is an interesting hypothesis but requires substantial additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "Pharmacological inhibition of JAK kinases improves T21 cell viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 is directly supported by the ruxolitinib treatment experiments showing dose-dependent increases in viable T21 cell numbers (C73) and differential effects when comparing T21/D21 ratios (C75). The finding is replicated in two independent cell line pairs.",
+    "result_type": "MAJOR"
+  }
+]

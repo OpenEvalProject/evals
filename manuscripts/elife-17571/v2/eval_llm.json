@@ -1,0 +1,347 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The polyL mutation (replacing syb2 TMD with poly-leucine) strongly reduces secretion in chromaffin cells by impairing vesicle fusion rather than SNARE complex formation. The mutation reduces both RRP and SRP components and sustained secretion rate without affecting exocytosis timing, and does not alter SNARE complex assembly kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C26 are well-supported by capacitance measurements (Figure 1B) and biochemical assays (Figure 1\u2014figure supplement 1). The data clearly demonstrate reduced secretion with normal SNARE complex formation, supporting the inference that the defect is in fusion rather than priming. Controls for expression and localization (C32-C33) strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Replacing syb2 TMD core residues with \u03b2-branched amino acids (polyV, polyI, or polyLV) fully rescues exocytosis to wildtype levels, and single conserved residue substitutions do not impair secretion. This indicates that membrane fusion does not depend on specific conserved residues at particular positions within the TMD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 are supported by capacitance measurements showing functional rescue (Figures 1C-E) and single-residue mutation data (Figure 1\u2014figure supplement 2). The systematic testing of multiple \u03b2-branched substitutions and single mutations provides strong evidence that overall TMD properties rather than specific residues determine function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Despite similar physicochemical properties (hydrophobicity and side chain volume), leucine, isoleucine, and valine produce different secretory effects due to differences in side chain mobility, which influences TMD backbone dynamics. Overall structural flexibility of the TMD, rather than specific residues, determines exocytotic response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by the contrasting functional phenotypes of polyL vs polyV/polyI mutants despite similar amino acid properties. The inference about side chain mobility (C36) is supported by citation to structural studies and later confirmed by MD simulations (Figure 4). The conclusion about TMD flexibility (C37) is a reasonable synthesis of the mutational data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Tonic secretion assays with simultaneous capacitance and amperometry measurements confirm that polyL diminishes exocytosis while polyV/polyI support wildtype secretion levels. The close correlation between capacitance and amperometry indicates changes reflect genuine alterations in catecholamine granule exocytosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by dual measurement data (Figure 2A-D) showing strong correlation (r\u00b2>0.94) between capacitance and amperometric event frequency. This orthogonal validation strengthens the conclusion that observed effects reflect genuine changes in exocytosis rather than artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The polyL mutation slows transmitter release from single vesicles (decreased amplitude, increased rise-time and half-width), while polyV/polyI mutations accelerate release (opposite effects). Modifying \u03b2-branched amino acid content causes correlated changes in spike waveform, producing gain-of-function phenotypes for \u03b2-branched-enriched TMDs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 are strongly supported by detailed amperometric spike analysis (Figure 2E-F) showing systematic, opposite effects of polyL vs polyV/polyI on multiple kinetic parameters. The gain-of-function observation for \u03b2-branched residues is particularly compelling evidence for an active TMD role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "TMD mutations affect prespike signals reflecting early fusion pore dynamics. PolyL prolongs prespike duration, lowers amplitude, and reduces fluctuations, while polyV/polyI have opposite effects. This indicates TMD conformational properties govern the entire fusion process from initial pore opening to final expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 are supported by detailed prespike analysis (Figure 3) showing systematic effects on multiple parameters. The inference that TMD properties govern the complete fusion process (C53) is well-justified by the consistent effects across both prespike and spike phases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Molecular dynamics simulations demonstrate that polyL decreases and polyV increases TMD conformational flexibility compared to wildtype, with changes in RMSD and \u03b1-helix content. These flexibility changes correlate with alterations in fusion pore kinetics and spike waveform, providing evidence that TMD structural features actively promote fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 are supported by MD simulation data (Figure 4) showing significant differences in RMSF, RMSD, and helix content between mutants. The correlation between computational flexibility measures and experimental fusion kinetics (C57) provides strong mechanistic support for the active TMD role hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Leucine substitution in the N-terminal TMD half (polyL-Nt, outer leaflet) impairs exocytosis, while C-terminal substitution (polyL-Ct, inner leaflet) has no effect. Isoleucine substitution in the N-terminus (polyI-Nt) rescues function. N-terminal mutations alone reproduce the fusion pore effects of full TMD substitutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by capacitance measurements (Figure 5B, Figure 5\u2014figure supplement 1) and amperometric analysis (Figures 5C-E) showing clear functional asymmetry between N- and C-terminal TMD regions. This systematic dissection provides strong evidence for TMD functional polarity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "There is a clear proportionality between the number of \u03b2-branched residues in the N-terminal TMD and fusion pore kinetics (r\u00b2=0.93-0.96 for multiple parameters). This provides strong evidence for a mechanistic link between TMD flexibility and fusion pore expansion kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are strongly supported by correlation analysis (Figure 6A-C) showing high r\u00b2 values across multiple independent parameters. The systematic dose-response relationship provides compelling evidence for the mechanistic link (C67) between TMD composition and fusion kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Total secretion does not increase beyond wildtype levels when \u03b2-branched residue content is increased in the N-terminal TMD, likely because docking and priming reactions become rate-limiting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C68 is supported by experimental data (Figure 6D), but the explanation (C69) is speculative and based only on citation rather than direct experimental evidence. Alternative explanations (e.g., ceiling effects, compensatory mechanisms) are not excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The syb2 TMD has functional polarity with the N-terminal region being more important for fusogenicity. This agrees with simulation models suggesting TMDs preferentially perturb lipid packing in cytoplasmic leaflets to facilitate lipid bridge formation and that TMD dynamics may lower membrane curvature to drive fusion pore expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 is well-supported by the differential effects of N- vs C-terminal mutations. Claims C71-C72 represent reasonable mechanistic interpretations consistent with cited simulation studies and the experimental data, though C72 is somewhat speculative about the specific mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "A lipid-anchored syb2 (\u0394TMD-CSP) is largely inefficient at reconstituting Ca\u00b2\u207a-triggered exocytosis in chromaffin cells (21% of wildtype), though it raises secretion above knockout levels (2%). This is more severe than the polyL phenotype (35%), indicating the proteinaceous TMD provides autonomous facilitating function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by capacitance and amperometry data (Figure 7A-B) with appropriate expression/localization controls (Figure 7\u2014figure supplement 1). The comparison across mutants (C77-C78) provides strong evidence for TMD-specific function beyond simple membrane anchoring.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Lipid-anchored syb2 prolongs transmitter discharge during the spike phase without changing event charge, and slows early fusion pore kinetics even more strongly than polyL. This highlights the important role of the proteinaceous TMD in facilitating both fusion initiation and pore expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by detailed amperometric analysis (Figure 7C-F) showing that lipid anchoring produces more severe fusion pore defects than even the rigid polyL mutant. This provides strong evidence for the conclusion about TMD importance (C82).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "In hippocampal neurons, polyV rescues evoked synaptic transmission to wildtype levels while polyL largely fails. PolyL reduces spontaneous release frequency (though still 20-fold above knockout), while polyV fully rescues it. This indicates similar structural requirements for v-SNARE TMDs in neurons and neuroendocrine cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C92 are supported by electrophysiological recordings (Figure 7\u2014figure supplement 2A-G) with appropriate localization controls. The parallel phenotypes in two cell types (C92) strengthen the generality of the findings, though the lack of amplitude changes (C91) suggests some cell-type-specific differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "TMD mutations may change protein-lipid interactions during fusion by altering helical backbone conformational dynamics. Previous studies show \u03b2-branched amino acids enhance lipid mobility, and hydrophobic nucleation is energy-demanding. The interplay between flexible TMDs and lipids could promote tail protrusion and fusion initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C96-C97 are supported by citations to prior work, claims C95 and C98 are speculative mechanistic interpretations. The data are consistent with this model but do not directly demonstrate protein-lipid interactions or lipid tail protrusion. Alternative mechanisms are not excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Systematically changing \u03b2-branched residue number in syb2 TMD leads to correlated changes in fusion pore behavior. Structural flexibility in the N-terminal TMD half may counter negative membrane curvature in the outer leaflet to drive fusion pore neck expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 is strongly supported by the systematic mutational analysis (Figure 6). Claim C107 is a reasonable mechanistic interpretation based on the N-terminal specificity data and membrane biophysics principles, though it remains somewhat speculative about the precise mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Different v-SNARE isoforms show considerable variability in \u03b2-branched amino acid content in their N-terminal TMD regions (22-77%), correlating with the size of vesicles they mediate. This suggests evolutionary adaptation of TMD flexibility to vesicle size for optimizing fusion pore expansion and cargo release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 is supported by sequence analysis (Table 1). Claims C125-C127 connect sequence features to known functional roles via citations. Claim C128 is a reasonable evolutionary interpretation of the correlation, though it remains somewhat speculative without direct experimental validation across isoforms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "SNARE proteins act not only as force generators through molecular straining but also catalyze membrane merger via TMD structural flexibility. \u03b2-branched amino acids are key determinants that likely promote TMD conformational dynamics, perturbing lipid packing to facilitate intermembrane contact and fusion pore expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent the main conclusions of the study. C130-C131 are well-supported by the comprehensive experimental data showing TMD flexibility effects on fusion. C132 is a reasonable mechanistic synthesis, though the specific molecular mechanism remains somewhat speculative. The overall conclusion is justified by the body of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "SNARE force-mediated membrane straining, TMD-mediated lipid perturbation, and synaptotagmin-1's membrane bending ability are synergistic mechanisms that mutually reinforce formation of lipid bridges and drive pore expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This claim is a speculative mechanistic model integrating the current findings with prior work on SNAREs and synaptotagmin. While conceptually reasonable and consistent with the data, it lacks direct experimental evidence for the proposed synergy. The claim goes beyond what the data demonstrate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C112",
+      "C114",
+      "C117",
+      "C120",
+      "C121"
+    ],
+    "result": "The data argue against a proteinaceous fusion pore model and against TMD-TMD interactions being critical for fusion. Instead, conformational flexibility of the syb2 TMD within the cytoplasmic membrane leaflet, rather than specific protein-protein interactions, facilitates fusion pore opening and expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by multiple lines of evidence: lipid-anchored syb2 can partially rescue (C112), mutations of dimerization residues don't impair function (C114), and polyV/polyI mutants with altered interaction surfaces function normally (C117). The inference about TMD flexibility over specific interactions (C120-C121) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "The TMD variants tested leave stimulus-secretion coupling unchanged, while previous mutants designed to disrupt force transfer between SNARE motif and TMD prolong exocytotic delay, providing independent evidence for autonomous TMD function in fusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is supported by timing measurements (Figure 1). Claim C94 is supported by citation to prior work. Together they provide evidence that the TMD has a distinct function in fusion separate from its role in force transmission, though the comparison relies on different experimental systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Bilayer bending mechanics allow smaller vesicles' pores to expand more rapidly. Increasing \u03b2-branched amino acid content in v-SNARE TMD can ease lipidic pore expansion for larger vesicles as they fuse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 is supported by citations to membrane biophysics studies. Claim C105 is a reasonable inference connecting the experimental findings to vesicle size effects, though it lacks direct experimental validation with vesicles of different sizes. The logic is sound but somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C122"
+    ],
+    "result": "Single point mutations may change TMD flexibility but are not expected to detectably affect fusion pore dynamics given the observed proportionality between \u03b2-branched amino acid number and fusion pore parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by the dose-response relationship (Figure 6) and the observation that single mutations (G100L, V101A, V112A) don't significantly affect function (Figure 1\u2014figure supplement 2). The inference is logical and consistent with the data.",
+    "result_type": "MINOR"
+  }
+]

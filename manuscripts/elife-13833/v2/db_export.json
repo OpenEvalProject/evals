@@ -1,0 +1,1531 @@
+{
+  "submission": {
+    "id": "33de2e02-92dd-4d91-81f7-38244eb76a38",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:19:30.354389Z",
+    "updated_at": "2025-11-30T00:19:30.354389Z"
+  },
+  "content": [
+    {
+      "id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "submission_id": "33de2e02-92dd-4d91-81f7-38244eb76a38",
+      "content_type": "manuscript",
+      "content_text": "# Basal ganglia output reflects internally-specified movements\n\n## Authors\n\n- Mario J Lintz<sup>1</sup>\n- Gidon Felsen<sup>1</sup> ([ORCID: 0000-0003-0745-8279](https://orcid.org/0000-0003-0745-8279)) \u2020\n\n### Affiliations\n\n1. Department of Physiology and Biophysics University of Colorado School of Medicine Aurora United States\n2. Neuroscience Program University of Colorado School of Medicine Aurora United States\n3. Medical Scientist Training Program University of Colorado School of Medicine Aurora United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHow movements are selected is a fundamental question in systems neuroscience. While many studies have elucidated the sensorimotor transformations underlying stimulus-guided movements, less is known about how internal goals \u2013 critical drivers of goal-directed behavior \u2013 guide movements. The basal ganglia are known to bias movement selection according to value, one form of internal goal. Here, we examine whether other internal goals, in addition to value, also influence movements via the basal ganglia. We designed a novel task for mice that dissociated equally rewarded internally-specified and stimulus-guided movements, allowing us to test how each engaged the basal ganglia. We found that activity in the substantia nigra pars reticulata, a basal ganglia output, predictably differed preceding internally-specified and stimulus-guided movements. Incorporating these results into a simple model suggests that internally-specified movements may be facilitated relative to stimulus-guided movements by basal ganglia processing.\n\n## Introduction\n\nAs we interact with the world, our movements are selected based on external sensory stimuli and internal variables representing action value, learned stimulus-response contingencies, and prior experiences (Gold and Shadlen, 2007). Selecting the movement associated with the most desirable outcome requires appropriately weighting each of these factors. While the neural substrates for movements based on external sensory stimuli have been the focus of much research (Hall and Moschovakis, 2003), where, how, and when internal goals influence movement selection is less well understood. The basal ganglia (BG) are known to be involved in motor control (Hikosaka and Wurtz, 1989; Mink, 1996), contributing to movement selection by modulating inhibition on competing downstream motor structures (Basso and Wurtz, 2002; Di Chiara et al., 1979; Hikosaka and Wurtz, 1985). In particular, the BG have been thought to bias the selection of movements towards those associated with the highest value (Hikosaka et al., 2006). This 'value-biasing' hypothesis is supported by much evidence showing that activity in several BG nuclei is modulated, prior to stimulus presentation, by reward expectation (Bryden et al., 2011; Handel and Glimcher, 2000; Hikosaka et al., 2006; Kawagoe et al., 1998; Sato and Hikosaka, 2002) such that movements toward high-value targets are disinhibited relative to movements toward low-value targets (Hikosaka et al., 2006; Lauwereyns et al., 2002). Anatomical evidence is consistent with a primary role for the BG in mediating the integration of value-based information into motor plans (Bolam et al., 2000; Gerfen and Surmeier, 2011). However, movement selection may also be guided by other internal representations, such as recent movements and their outcomes (Corrado et al., 2005; Fecteau and Munoz, 2003; Lau and Glimcher, 2005). We therefore asked whether BG activity mediates the influence of internal goals, in addition to value, on movement selection.\n\nWe reasoned that, if this were the case, BG output would differ when selecting equally valuable stimulus-guided and internally-specified movements. Specifically, we would expect that internally-specified movements would be promoted relative to otherwise-identical stimulus-guided movements, just as more valuable movements have been shown to be promoted relative to otherwise-identical less valuable movements (Hikosaka et al., 2006; Sato and Hikosaka, 2002). Notably, it is has been proposed that Parkinsonian patients exhibit more pronounced bradykinesia when initiating internally-specified than stimulus-guided movements because the latter engage pathways outside of the BG (Glickstein and Stein, 1991). However, whether the BG themselves are differentially engaged by these two types of movements has not been tested.\n\nWe distinguished between these two possibilities by recording from neurons in the substantia nigra pars reticulata (SNr), an output nucleus of the BG critical for orienting movements (Basso and Sommer, 2011; Handel and Glimcher, 1999; Hikosaka and Wurtz, 1983a), in mice performing a behavioral task in which a sensory stimulus either was or was not informative of the rewarded direction of an orienting movement. Using a design akin to that of other recent studies (Pastor-Bernier and Cisek, 2011; Seo et al., 2012; Ito and Doya, 2015), in alternating blocks of trials, the rewarded direction was either determined by a sensory cue or by internal representations informed by recent trial history. Critically, we designed the task such that correct movements were equally valuable in both conditions. We found that SNr activity predictably differed between these two conditions, supporting the idea that the BG mediate the influence on movement selection of internal goals. We interpret these results, in the context of a simple model of BG output (Hikosaka et al., 2006), as suggesting that internally-specified movements may be promoted over stimulus-guided movements by BG activity.\n\n## Results\n\n### Behavioral assay dissociates stimulus-guided and internally-specified movements\n\nWe trained mice on a delayed-response spatial choice task comprised of interleaved blocks of 'stimulus-guided' (SG) trials, in which the direction of movement is selected based on a sensory stimulus (Uchida and Mainen, 2003), and 'internally-specified' (IS) trials, in which the direction of an otherwise-identical movement is selected based on internal representations informed by recent trial history (see Materials and methods; Figure 1A,B). In each trial of the task, the mouse is presented with a binary odor mixture at a central port, waits for an auditory go cue, and moves to the left or right reward port for a water reward. In SG trials, the dominant component of the odor mixture \u2013 which varies trial by trial \u2013 determines the side at which reward will be delivered, while in IS trials, a balanced mixture of the two odors is always presented but reward is delivered at only one side throughout the block (see Materials and methods; Figure 1B). Thus, while both trial types require the mouse to sample the stimulus, in SG trials the stimulus indicates that the rewarded side is determined by the odor mixture and in IS trials the stimulus indicates that the rewarded side is determined by the recent history of choices and outcomes. We found that mice were able to infer (unsignaled) transitions between the SG and IS blocks and switch their response mode accordingly: during SG blocks, mice were equally likely to choose the left and right port (Figure 1C, gray boxes) reflecting a dependence on the odor mixture (Figure 1D), while during IS blocks, mice reliably returned to the same (rewarded) port in each trial (Figure 1C, white boxes). We quantified performance in IS blocks by calculating, for each block, the percentage of correct trials and the number of error events, defined as a run of consecutive incorrect choices (Figure 1E). Finally, we reasoned that if a mouse were to recognize that a given trial belonged to an IS block, it could prepare its movement in advance and would therefore be able to reach the reward port faster (Niemi and N\u00e4\u00e4t\u00e4nen, 1981; Poulton, 1950; Seo et al., 2012). Indeed, across the population of sessions, we found that reaction time \u2013 defined as the time from the go cue to reward port entry \u2013 was shorter in IS trials than in the 'easy' SG trials in the same session [Figure 1F; we used only easy SG trials (mixture ratios of 95/5, 80/20, 20/80, and 5/95) to control for a potential dependence of reaction time on difficulty; population of sessions: p\u00a0=\u00a01.7 \u00d7 10\u221211, paired t-test; individual sessions: IS shorter than SG in 46/108, SG shorter than IS in 3/108, p<0.05, Wilcoxon rank-sum test; ipsiversive and contraversive trials compared separately]. Together, these data suggest that, as intended, the direction of movement in SG blocks is selected based on the stimulus while the direction of movements in IS blocks is selected based on recent trial history. We therefore utilized this behavioral assay to compare how stimulus-guided and internally-specified movements are mediated by the BG, as described below.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/13833/elife-13833-fig1-v2.jpg)\n\n**Figure 1.:** (A) Timing of events in each trial. The mouse enters the odor port, receives an odor mixture, waits for the go signal, exits the odor port, moves to one of the reward ports, and receives a water reward for a correct choice. Gray box, delay epoch. (B) Organization of SG (gray) and IS (white) blocks within a session. All sessions start with an SG block and alternate between SG and IS blocks. In SG blocks, reward side corresponds to the dominant odor in the mixture [(-)-carvone, left; (+)-carvone, right]; when the odors are balanced ([(-)-carvone] = [(+)-carvone]), the probability of reward at both reward ports is 0.5. In IS blocks, odors are balanced in every trial and reward is available at the same side in each trial. Thickness of horizontal lines corresponds to probability of reward. SG, stimulus guided; IS, internally specified; L, left; R, right. (C) Fraction of left choices across block types throughout the session. Dashed line shows an example session (boxcar smoothed over 7 trials), solid black line shows mean over all sessions (54, from 4 mice), horizontal black lines show block means, horizontal gray lines show ideal block means (if all choices were correct). To account for different numbers of trials per block across sessions, trials that occur in < 60% of sessions are excluded. In SG blocks only difficult trials [(+)-carvone/(-)-carvone = 60/40, 50/50, or 40/60] are shown. (D) Mean performance in SG blocks over all sessions, separated by rewarded side of first IS block in the session. Lines show best fit to $p=\\frac{1}{1+e^{\u2212a\u2212bx}}$, where x is the proportion of the left odor [(-)-carvone)] in the mixture, p is the fraction of right choices, and a and b are free parameters. While choices were slightly biased by the rewarded direction in the first IS block (center panels), they were much more strongly influenced by the stimulus. (E) Performance in IS blocks. Histograms of percent correct choices (top) and number of error events (run of consecutive incorrect choices, bottom) across blocks over all sessions. (F) Mean reaction time in easy SG trials plotted against mean reaction time in IS trials in the corresponding session, separately for each direction of movement.\n\n### SNr activity differs for stimulus-guided and internally-specified movements\n\nIf the BG integrates not only value but also other internal representations, then stimulus-guided and internally-specified movements may differentially engage the BG despite being equally valuable. In this case, we would predict that BG output would depend on whether the movement was internally specified or stimulus guided, and specifically, in our task, on the degree to which recent trial history is informative of rewarded direction. To test this prediction we examined activity in the SNr, a BG output known to be involved in orienting movements (Basso and Sommer, 2011; Handel and Glimcher, 2000, 1999; Hikosaka and Wurtz, 1983a, 1983b). We recorded from 296 well-isolated left SNr neurons (see Materials and methods; Figure 2) in four mice performing the task\u00a0(see Supplementary file 1). Data from one example neuron are shown in Figure 3A,B, segregated by reward port selected (ipsilateral vs. contralateral to the recording side) and by trial type (SG vs. IS). The activity of this neuron clearly depends on both movement direction and trial type. To examine these dependencies across the population of neurons we first examined firing rate during the delay epoch, defined as the time from odor valve open to the time of odor port exit (Figure 1A, gray box), which most directly captures, across trial types, activity underlying selection of the direction of movement (but since activity in IS trials may, by design, reflect direction selection even before stimulus delivery, we subsequently examine activity in other epochs). Based on the firing rate during this epoch in SG and IS trials, we then calculated direction preference (see Materials and methods). This value ranges from -1 (strongly 'prefers' ipsiversive) to 1 (strongly prefers contraversive), where 0 represents no preference. We found that 216/296 neurons displayed a significant direction preference (p<0.05) during the delay epoch, with about as many preferring ipsiversive (94/216) as contraversive (122/216) movements (Figure 3C). Since SNr activity has been shown to exhibit both movement-related increases and decreases (Bryden et al., 2011; Gulley et al., 2002, 1999; Handel and Glimcher, 1999; Sato and Hikosaka, 2002), we next asked whether a relationship existed between direction preference and the sign of activity change during the delay epoch, relative to baseline (see Materials and methods). We found that 188/296 neurons exhibited an increase in activity during this epoch, 91/296 exhibited a decrease, and 17/296 exhibited no change (Table 1), consistent with previous studies (Bryden et al., 2011; Gulley et al., 2002, 1999; Handel and Glimcher, 2000, 1999; Sato and Hikosaka, 2002). Within these groups, neurons exhibited a preference for ipsiversive, contraversive, or neither direction in roughly equal numbers (Table 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/13833/elife-13833-fig2-v2.jpg)\n\n**Figure 2.:** (A) Schematic (left) shows targeted recording extent (bar) within SNr; coronal section (right, 3.3 mm caudal from bregma) shows representative tetrode track (arrow) in SNr. (B) Left, peaks of waveforms from lead 1 plotted against peaks of waveforms from lead 3 of one tetrode for a representative recording session. Note that clustering was performed using additional features to those shown here. Red and green points show waveform peaks recorded from neurons considered to be distinct. Right, waveforms (mean \u00b1 SD) corresponding to red and green points.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/13833/elife-13833-fig3-v2.jpg)\n\n**Figure 3.:** (A) Rasters for an example neuron grouped by movement direction (rows) and trial type (columns). For each raster, each row shows spikes (black ticks) in one trial, aligned to time of odor valve open (red line) and sorted by duration of delay epoch. Green ticks, times of go signal; blue ticks, times of odor port exit. Fifty pseudo-randomly selected trials are shown per group. (B) Peri-event histograms showing average activity, separately by direction, in stimulus-guided (left) and internally-specified (right) trials. Shading, \u00b1 SEM. Histograms are smoothed with a Gaussian filter (\u03c3 = 15 ms). Ipsi., ipsiversive; Contra., contraversive. (C) Histogram of direction preferences during delay epoch across population of neurons. Arrowhead corresponds to example neuron in A. (D) Difference in delay-epoch firing rate between ipsiversive and contraversive trials in SG vs. IS trials in the same session, separately for ipsiversive-preferring neurons (left subpanel, corresponding to left black bars in C) and contraversive-preferring neurons (right subpanel, corresponding to right black bars in C). Only correct trials are included; all choices on 50/50 SG trials were considered correct regardless of whether they were rewarded. Dashed lines show x = 0, y = 0, and x = y. Red marker corresponds to example neuron from A and B. FR, firing rate.\n\n**Table 1.**\n Direction preference and activity change during delay epoch.\u00a0Neurons are grouped by direction preference and whether activity in the preferred direction increased or decreased relative to baseline (see Materials and methods), during the delay epoch. Numbers and percentages of grand total (279) are shown; note that 17 neurons exhibited no change in activity and are not included here.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Preference</th>\n      <th colspan=\"2\">Increase</th>\n      <th colspan=\"2\">Decrease</th>\n      <th colspan=\"2\">Total</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Contraversive</td>\n      <td>88</td>\n      <td>32%</td>\n      <td>27</td>\n      <td>10%</td>\n      <td>115</td>\n      <td>41%</td>\n    </tr>\n    <tr>\n      <td>Ipsiversive</td>\n      <td>52</td>\n      <td>19%</td>\n      <td>38</td>\n      <td>14%</td>\n      <td>90</td>\n      <td>32%</td>\n    </tr>\n    <tr>\n      <td>Nonselective</td>\n      <td>48</td>\n      <td>17%</td>\n      <td>26</td>\n      <td>9%</td>\n      <td>74</td>\n      <td>27%</td>\n    </tr>\n    <tr>\n      <td>Total</td>\n      <td>188</td>\n      <td>67%</td>\n      <td>91</td>\n      <td>33%</td>\n      <td>279</td>\n      <td>100%</td>\n    </tr>\n  </tbody>\n</table>\n\nWe next examined whether activity during the delay epoch of direction-selective neurons (Figure 3C, black bars) differed between SG and IS trials, in two complementary ways. First, we examined whether the difference in activity between ipsiversive and contraversive trials depended on whether the movement was stimulus guided or internally specified. Across our population, neurons tended to show a larger difference in firing rate preceding ipsiversive and contraversive movements in IS than in SG trials [Figure 3D; ipsiversive-preferring neurons: p\u00a0=\u00a02.2 \u00d7 10\u221210, paired t-test; contraversive-preferring neurons: p\u00a0=\u00a04.0 \u00d7 10\u22124, paired t-test]. Second, we determined whether neurons were trial-type-dependent by comparing firing rates between SG and IS trials in which the selected movement was correct and in the preferred direction of the neuron; we then repeated this comparison for the antipreferred direction. For trials in the preferred direction, we found that the activity of approximately half of the direction-selective neurons was modulated by trial type (101/216; p<0.05, unpaired t-test), with more neurons exhibiting higher activity in IS trials than SG trials (84/101 vs. 17/101; p\u00a0=\u00a02.6 \u00d7 10\u221211, X2 test). Conversely, for trials in the antipreferred direction, we again found that the activity of approximately half of the direction-selective neurons was modulated by trial type (109/216; p<0.05, unpaired t-test; 158/216 direction-selective neurons were modulated by trial type in at least one direction), but that more neurons exhibited higher activity in SG trials than IS trials (76/109 vs. 33/109; p\u00a0=\u00a03.8 \u00d7 10\u22125, X2 test). Therefore, while we found that neurons were about equally likely to prefer upcoming ipsiversive and contraversive movements (Figure 3C), their activity depended, in a predictable manner, on trial type (Figure 3D).\n\nWhile these findings suggest that the BG differentially mediate internally-specified and stimulus-guided movements, as we had predicted, a few differences between SG and IS trials may have contributed to this observation. We therefore sought to identify these differences and determine their influence, in several ways. First, we reasoned that, if neural activity indeed reflects trial type, firing rate would systematically change during the IS block as the mouse increasingly based its movement choice on internal representations instead of the stimulus (recall that the transitions from SG to IS blocks were unsignaled). To test this idea, we calculated the correlation between the trial-by-trial firing rate during the delay epoch and the extent to which the mouse had learned that its movement choice should be internally specified, estimated with a reinforcement learning algorithm (see Materials and methods). We performed this analysis on the 158 neurons with firing rates that depended on both direction and trial type, separately for choices in the preferred and antipreferred direction. Figure 4A shows data from an example neuron displaying a significant correlation for trials in the preferred direction of the neuron (r = 0.65, p\u00a0=\u00a07.0 \u00d7 10\u22129), and no correlation for trials in the antipreferred direction (r = 0.066, p\u00a0=\u00a00.60). Overall, 77/158 neurons exhibited a significant correlation (p<0.05) between firing rate and the number of consecutive correct trials for either direction [Figure 4B,C; 35/77 for trials in the preferred direction (red circles), 29/77 for trials in the antipreferred direction (blue circles), and 13/77 for trials in both directions (purple circles)], with more positive correlations for trials in the preferred direction (p\u00a0=\u00a02.4 \u00d7 10\u22126,\u00a0X2 test) and negative correlations for trials in the antipreferred direction (p\u00a0=\u00a05.9 \u00d7 10\u22126, X2 test), as we would expect given the pattern of results shown in Figure 3D. These results support the idea that SNr activity reflects the degree to which movements are selected based on internal representations.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/13833/elife-13833-fig4-v2.jpg)\n\n**Figure 4.:** (A) Firing rate during delay epoch plotted as a function of the value of the rewarded side, estimated via reinforcement learning ($V_{dir,\u00a0t}$), for both IS blocks in a session, for one example neuron. Each circle corresponds to one trial. (B) Correlations (as in panel A) for ipsiversive movement plotted against contraversive movement, for the population of ipsiversive-preferring neurons (left black bars in Figure 3C) with activity that depended on trial type (SG vs. IS). Each circle corresponds to one neuron. (C) Same as B, for contraversive-preferring neurons (right black bars in Figure 3C). Black box corresponds to example neuron from A.\n\n### Modulation of SNr activity by task-relevant variables\n\nWe next examined the potential influence of other factors on the observed difference in neural activity during SG and IS trials. One difference between these trial types, by design, is that in IS trials the decision (to move left or right) is relatively easy, while in some SG trials this decision is more difficult (Figure 1D). The difficulty of this decision \u2013 or an associated variable, such as uncertainty, or the estimated value of each movement direction \u2013 could, in principle, affect SNr activity. Were this the case, we would expect to observe a difference in activity between those SG trials requiring an easy discrimination (mixture ratios of 95/5, 80/20, 20/80, and 5/95) and those SG trials requiring a 'difficult' discrimination (mixture ratios of 60/40, 50/50, and 40/60), since easy trials resulted in a larger fraction of correct choices (p\u00a0=\u00a03.4 \u00d7 10\u201327, paired t-test; see Figure 1D), corresponding to a higher likelihood of reward. We therefore compared firing rate during the delay epoch between easy and difficult SG trials, separately for trials in the ipsiversive (Figure 5A) and contraversive (Figure 5B) direction, for the 216 direction-selective neurons (Figure 3C, black bars). We found that the activity of some individual neurons depended on difficulty (or an associated variable) (ipsiversive direction: 39/216 neurons; contraversive direction: 31/216 neurons, p<0.05, 1-way ANOVA across mixture ratios, Figure 5A,B), as would be predicted by the value-biasing view of BG function. However, there was little overlap (purple circles) between this small population of difficulty-dependent neurons (blue circles) and those neurons that we classified as trial-type-dependent [ipsiversive direction: 21/109 trial-type-dependent, and 18/107 non-trial-type-dependent, neurons exhibited difficulty dependence (these ratios did not differ: p\u00a0=\u00a00.32, X2 test); contraversive direction: 16/101 trial-type-dependent, and 15/115 non-trial-type-dependent, neurons exhibited difficulty dependence (these ratios did not differ: p\u00a0=\u00a00.56, X2 test); p<0.05, 1-way ANOVA across mixture ratios]. These results suggest that differences in decision difficulty, uncertainty, and the value associated with the direction of movement do not account for trial-type dependence or the differences in activity between SG and IS trials shown in Figure 3D.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/13833/elife-13833-fig5-v2.jpg)\n\n**Figure 5.:** (A) Mean normalized change from baseline (Fc, see Materials and methods) during delay epoch of easy vs. difficult ipsiversive SG trials of direction-selective neurons (black bars in Figure 3C). Each circle corresponds to one neuron. Red circles indicate that activity differs between SG and IS trials, and does not depends on mixture ratio (or an associated variable such as discrimination difficulty). (B) Same as A, for contraversive trials.\n\nWe then examined whether reaction time (which differs between trial types; Figure 1F) and the choice on the previous trial (which, by design, is more likely to correlate with the current choice in IS blocks than SG blocks; Figure 1C) could explain the difference in activity between SG and IS trials. Preliminary analyses of each of these factors in isolation indicated that, as opposed to discrimination difficulty or an associated variable such as value (Figure 5), they often correlated with firing rate during the delay epoch. In order to determine the relative influence of these factors, as well as other factors that correlate with firing rate \u2013 current choice (Figure 3C) and trial type (Figure 3D) \u2013 on neural activity during the delay epoch, we performed a linear regression analysis with previous choice, current choice, trial type and reaction time as predictor variables (see Materials and methods). By considering all of these factors simultaneously, this analysis provides an unbiased method for determining their influence on neural activity.\n\nAcross our population of neurons, the vast majority were influenced by at least one of these factors (281/296, p<0.05), and we found neurons with firing rates influenced by all possible combinations of factors (Figure 6A). Consistent with the results shown in Figure 3C and D, respectively, this analysis confirms that, as the mouse is selecting its direction of movement, the activity of many SNr neurons was modulated by current choice (167/296) and trial type (142/296). We also found that the activity of many neurons depended on reaction time (111/296). Surprisingly, the largest fraction of neurons exhibited activity modulated by previous choice (188/296). This is particularly interesting because this variable is critical for determining, in an IS block, which direction is associated with reward.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/13833/elife-13833-fig6-v2.jpg)\n\n**Figure 6.:** (A) Venn diagram showing the number of neurons whose firing rate during the delay epoch was significantly influenced (p < 0.05) by previous choice, current choice, trial type, reaction time, and all combinations of these factors, or by no factor. (B) \u03b2 coefficients estimated based on firing rate in 100 ms bins aligned to three different trial events for one example neuron (reaction time coefficient not shown, for clarity). Shading, \u00b1 95% confidence interval. (C) Fraction of neurons with a significant \u03b2 coefficient corresponding to each predictor variable in each 100 ms bin, aligned as in panel B. All 296 neurons were included in this analysis.\n\nGiven that movements can initially be selected earlier in IS than SG trials (Figure 3A,B), we wondered how firing rate at other times during the trial depended on previous choice, current choice, trial type, and reaction time. We therefore extended our regression analysis to examine how firing rate is modulated by these factors during overlapping 100 ms windows throughout the trial (see Materials and methods). In the example shown in Figure 6B, the activity of the neuron is modulated by previous choice (cyan line) \u2013 i.e., the confidence interval (shading) for this coefficient does not include 0 \u2013 even before the odor is delivered (odor valve open), and this influence persists until the movement is initiated (odor port exit). The current choice (black line) does not influence neural activity until ramping up just prior to movement initiation, but then continues to exert an influence for the remainder of the trial. The trial type (magenta line), meanwhile, exerts a moderate influence on the firing rate \u2013 specifically, activity is higher for IS trials \u2013 until just before movement initiation, after which this influence is diminished. Reaction time was a relatively poor predictor of firing rate (not shown, for clarity). To examine the dynamics of the weights of these factors across our population of neurons, we calculated the fraction of neurons with significant weights in each time window (Figure 6C). The pattern of results was similar to that shown in the example neuron (Figure 6B). Before the odor is delivered, the firing rates of about half of the neurons are influenced by the previous choice. However, as the odor is sampled, the influence of the previous choice decreases and the influence of the current choice increases, with about two thirds of neurons exhibiting a significant weight for the current choice by the time the movement is initiated. Interestingly, trial type modulates the activity of about one third of neurons throughout the trial. The influence of reaction time is strongest during movement but has relatively little influence on the population (not shown). These results indicate that SNr activity dynamically reflects trial type and other task-relevant variables throughout the trial, as would be expected if the BG are differentially involved in mediating stimulus-guided and internally-specified movements.\n\n## Discussion\n\nWe have shown that SNr activity preceding orienting movements depends on whether the direction of movement was indicated by a stimulus or was specified by internal variables (Figures 3, 4). While we designed the task such that correct movements were equally valuable across these conditions (Figure 1), given imperfect (and stochastic) choice behavior, the experienced value was not necessarily identical. However, the dependence on trial type could not be accounted for by differences in the estimated value of each movement direction \u2013 or an associated variable, such as difficulty or uncertainty in selecting the movement \u2013 between the trial types (Figure 5). In some neurons this dependence could be explained, in part, by the choice on the previous trial (Figure 6A), which is informative of the rewarded direction in IS blocks. Over the course of the trial, while the influence on SNr activity of the previous choice decreased and that of the current choice increased, as might be expected given the demands of the task, the influence of trial type remained relatively constant (Figure 6C). These results suggest that the SNr is differentially engaged by stimulus-guided and internally-specified movements.\n\nPrevious studies in primates have shown that movement-related SNr activity was higher for memory-guided than visually-guided saccades (Hikosaka and Wurtz, 1983a), and that SNr stimulation had a larger effect on memory- than visually-guided saccades (Basso and Liu, 2007). Movements selected based on a remembered stimulus can be thought of as internally specified, and in this sense our results (Figure 3D) are consistent with these findings and demonstrate that they generalize across species and movement types (saccades and full-body orienting). However, the rewarded direction in both memory- and visually-guided trials was indicated by the stimulus, which was not the case in our IS trials, in which we sometimes observed that direction preference emerged even before stimulus delivery (see example in Figure 3A,B). Further, the difference between direction preference in IS and SG trials during the delay epoch was correlated with the difference between preference in IS and SG trials during the epoch from odor port entry to odor valve open (r = 0.47, p\u00a0=\u00a04.8 \u00d7 10\u221218). These results demonstrate that, in IS trials, the direction of movement was initially selected independent of the stimulus, which contributes to the difference in activity during the delay epoch that we observe between SG and IS trials. In addition, while Hikosaka and Wurtz (1983a) examined only neurons that exhibited a decrease in activity around the time of contraversive saccades, we examined increasing and decreasing neurons that prefer both ipsiversive and contraversive movement (Gulley et al., 2002, 1999; Handel and Glimcher, 2000; Sato and Hikosaka, 2002) and found that all of these groups exhibited a difference in activity between stimulus-guided and internally-specified movements. Therefore, the differences we observed between internally-specified and stimulus-guided movements extend our understanding of SNr function.\n\nInterestingly, patients with Parkinson\u2019s disease and other BG pathologies have been reported to exhibit greater deficits in the initiation of internally-specified than visually-guided movements (Forssberg et al., 1984; Laplane et al., 1984; Azulay et al., 1999). While the neural basis for this phenomenon is not well understood and remains an active area of study (Distler et al., 2016), it has been suggested that visual cues engage (intact) sensorimotor pathways outside of the BG, such as the cerebellum (Glickstein and Stein, 1991). Our results suggest that differential processing of internally-specified and visually-guided movements within the BG themselves may also contribute to this clinical observation.\n\nAs noted above, other studies have found that movement-related SNr activity is modulated by the relative value associated with a movement (Bryden et al., 2011; Sato and Hikosaka, 2002), including whether the movement will be rewarded at all (Handel and Glimcher, 2000). This value dependence likely arises from dopaminergic input to the BG that is thought to convey reward-related information (Schultz et al., 1997), and has been accounted for by a model in which, prior to stimulus presentation, reward expectation modulates striatal inputs to the SNr in order to bias downstream superior colliculus (SC) activity such that the most valuable movement is facilitated (Hikosaka et al., 2006; Wolf et al., 2015). We propose that a similar model can also explain how internally-specified movements, more generally, are facilitated (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/13833/elife-13833-fig7-v2.jpg)\n\n**Figure 7.:** (A) Line thickness corresponds to level of activity. Activity preceding stimulus-guided rightward movement. A left SNr neuron is moderately weakly active, providing moderately weak inhibition to the left SC (superior colliculus). A right SNr neuron is moderately strongly active, providing moderately strong inhibition to the right SC. This pattern of activity in the SC moderately promotes rightward movement. (B) Activity preceding internally-specified rightward movement. Compared to A, a left SNr neuron is very weakly active, providing very weak inhibition to the left SC; and a right SNr neuron is very strongly active, providing very strong inhibition to the right SC. This pattern of activity in the SC strongly promotes rightward movement.\n\nTo illustrate this idea, consider how, given the data presented here, the relative activity between ipsiversive-preferring left and right SNr neurons would relate to an upcoming rightward movement (we consider relative, rather than absolute, activity since this is most directly relevant to the decision \u2013 move left vs. move right \u2013 required by our task). Left and right SNr neurons would exhibit a larger difference in activity in IS trials than in SG trials (Figure 3D, left). If ipsiversive-preferring SNr neurons primarily project to the ipsilateral SC (Hikosaka and Wurtz, 1983b), then a downstream left SC neuron, the activity of which promotes rightward movement (Felsen and Mainen, 2012; Horwitz and Newsome, 2001; Stubblefield et al., 2013) will receive less inhibition from the left SNr when the movement is internally specified, thereby facilitating rightward movements that are internally specified (Figure 7). Preceding the same movement, contraversive-preferring left and right SNr neurons would also exhibit a larger difference in activity in IS trials than in SG trials (Figure 3D, right). If contraversive-preferring SNr neurons comprise the 'crossed'\u00a0projection to the contralateral SC (Jiang et al., 2003), then a downstream right SC neuron would receive more inhibition from the left SNr when the movement is internally specified, again facilitating the rightward movement. However, we observed that slightly more SNr neurons prefer contraversive than ipsiversive movement (Figure 3C) but many fewer SNr neurons project to the contralateral than ipsilateral SC, particularly in rodents (Beckstead et al., 1981; Deniau et al., 1977; Gerfen et al., 1982; Jayaraman et al., 1977), and contraversive-preferring SNr neurons may preferentially project to non-tectal targets. Thus, SNr activity may be consistent with the facilitation of internally-specified contraversive movements. Our results therefore extend the model underlying the value-biasing view of BG function (Hikosaka et al., 2006) by suggesting that the influence of the SNr on downstream motor regions is modulated by internal representations in addition to value.\n\nIn summary, we have shown that SNr activity depends on whether otherwise-identical movements are specified by internal representations of task variables or guided by an external stimulus. We suggest that this dependence may reflect a facilitation for internally-specified movements, consistent with the view that, although movements are often made in response to sensory stimuli, internal representations of priors play a critical role in guiding motor output (Wolpert and Landy, 2012). Our results are sufficiently consistent with results in primate SNr (Handel and Glimcher, 2000, 1999; Hikosaka and Wurtz, 1983a; Liu and Basso, 2008; Sato and Hikosaka, 2002) that they can inform the interpretation of previous studies (e.g., our proposed extensions of the model explaining the value-biasing role of the BG described above), while also offering novel insight into BG function. Future studies can utilize the task established here, in the experimentally-advantageous awake-behaving mouse model (Carandini and Churchland, 2013), to examine whether the difference in SNr activity preceding internally-specified and stimulus-guided movements is established by local processing or via striatal inputs (Hikosaka et al., 2006; Lauwereyns et al., 2002) and to further elucidate how the BG control goal-directed movements.\n\n## Materials and methods\n\n### Animal subjects\n\nAll experiments were performed according to protocols approved by the University of Colorado School of Medicine Institutional Animal Care and Use Committee. We used male adult C57BL/6J mice (n = 4, determined by estimating the number of neurons required for our analyses and by the number of neurons recorded per mouse in initial experiments; aged 7\u201314 months at the start of experiments; Jackson Labs) housed in a vivarium with a 12-hr light/dark cycle with lights on at 5:00 am. Food (Teklad Global Rodent Diet No. 2918; Harlan) was available ad libitum. Access to water was restricted to the behavioral session to motivate performance; however, if mice did not obtain ~1\u2009ml of water during the behavioral session, additional water was provided for ~2\u20135 min following the behavioral session (Smear et al., 2011; Thompson and Felsen, 2013). All mice were weighed daily and received sufficient water during behavioral sessions to maintain >85% of pre-water restriction weight.\n\n### Behavioral task\n\nIn general, mice were first trained to perform an odor-guided spatial choice task \u2013 which was comprised of 'stimulus-guided' (SG) trials \u2013 as described in Stubblefield et al. (2013), and were then trained to perform 'internally-specified' (IS) trials. Briefly, each mouse was water-restricted and trained to interact with three ports (center: odor port; sides: reward ports) along one wall of a behavioral chamber (Island Motion). In each trial, the mouse entered the odor port, triggering the delivery of an odor; waited 488 \u00b1 104 ms (mean \u00b1 SD) for a go signal (auditory tone); exited the odor port; and entered one of the reward ports (Figure 1A). Premature exit from the odor port resulted in the unavailability of reward on that trial. Odors were comprised of binary mixtures of (+)-carvone and (-)-carvone, commonly perceived as caraway and spearmint, respectively; an enantiomeric odor pair was selected to control for differences in molecular structure of odorant stimuli. In each SG trial, one of seven odor mixtures was presented via an olfactometer (Island Motion): volume (+)-carvone/(-)-carvone = 95/5, 80/20, 60/40, 50/50, 40/60, 20/80, or 5/95. Mixtures in which (+)-carvone > (-)-carvone indicated reward availability only at the right port and mixtures in which (-)-carvone > (+)-carvone indicated reward availability only at the left port [we therefore refer to (-)-carvone as the 'left odor' (e.g., Figure 1D) for simplicity]. In trials in which (+)-carvone = (-)-carvone, the probability of reward at the left and right ports, independently, was 0.5. Reward, consisting of 4\u2009\u03bcl of water, was delivered by transiently opening a calibrated water valve 10\u2013100 ms after reward port entry. Odor and water delivery were controlled, and port entries and exits were recorded, using custom software (available at https://github.com/felsenlab; adapted from C. D. Brody) written in MATLAB (MathWorks).\n\nMice learned to perform SG trials within ~48 sessions (1 session/day); detailed training stages are described in Stubblefield et al. (2013). Mice required an additional ~5 sessions to learn to perform interleaved blocks of SG and IS trials. In every IS trial the 50/50 mixture was presented, and reward was available only at one side throughout the block. Mice were first introduced to interleaved blocks, each of which required 25 correct trials to advance to the next block. Once they performed ~70% of trials in the session correctly, the number of correct trials required per block was increased to 50. Mice performed 5 blocks (SG, IS, SG, IS, SG) per session (Figure 1B); the side associated with reward switched between each IS block. Upon completing training, mice were implanted with microdrives for neural recording (see below). During each of the 54 recording sessions, mice performed 321.81 \u00b1 89.49 (mean \u00b1 SD) trials.\n\n### Surgery\n\nDetails of the surgical procedure are provided in Thompson and Felsen (2013). Briefly, once the mouse was fully trained on the task, it was anesthetized with isoflurane and secured in a stereotaxic device, the scalp was incised and retracted, 2 small screws were attached to the skull, and a craniotomy targeting the left SNr was performed, centered at 3.27\u2009mm posterior from bregma and 1.4\u2009mm lateral from the midline (Paxinos and Franklin, 2004). A VersaDrive 4 microdrive (Neuralynx), containing 4 independently adjustable tetrodes, was affixed to the skull via the screws, luting (3M), and dental acrylic (A-M Systems). A second small craniotomy was performed in order to place the ground wire in direct contact with the brain. After the acrylic hardened, a topical triple antibiotic ointment (Major) mixed with 2% lidocaine hydrochloride jelly (Akorn) was applied to the scalp, the mouse was removed from the stereotaxic device, the isoflurane was turned off, and oxygen alone was delivered to the animal to gradually alleviate anesthetic state. Mice were administered sterile isotonic saline (0.9%) for rehydration and an analgesic (Ketofen; 5 mg/kg) for pain management. Analgesic and topical antibiotic administration was repeated daily for up to 5 days, and animals were closely monitored for any signs of distress.\n\n### Electrophysiology\n\nNeural recordings were collected using four tetrodes, wherein each tetrode consisted of four polyimide-coated nichrome wires (Sandvik; single-wire diameter 12.5\u2009\u03bcm) gold plated to 0.2\u20130.4 M\u03a9 impedance. Electrical signals were amplified and recorded using the Digital Lynx S multichannel acquisition system (Neuralynx) in conjunction with Cheetah data acquisition software (Neuralynx).\n\nTetrode depths were adjusted approximately 23\u2009hr before each recording session in order to sample an independent population of neurons across sessions. To estimate tetrode depths during each session we calculated distance traveled with respect to rotation fraction of the screw that was affixed to the shuttle holding the tetrode. One full rotation moved the tetrode ~250\u2009\u03bcm and tetrodes were moved ~62.5\u2009\u03bcm between sessions. The final tetrode location was confirmed through histological assessment using electrolytic lesions and tetrode tracks (see below).\n\nOffline spike sorting and cluster quality analysis was performed using MClust software (MClust-3.5, A.D. Redish, et al.) in MATLAB. Briefly, for each tetrode, single units were isolated by manual cluster identification based on spike features derived from sampled waveforms (Figure 2B). Identification of single units through examination of spikes in high-dimensional feature space allowed us to refine the delimitation of identified clusters by examining all possible two-dimensional combinations of selected spike features. We used standard spike features for single unit extraction: peak amplitude, energy (square root of the sum of squares of each point in the waveform, divided by the number of samples in the waveform), and the first principal component normalized by energy. Spike features were derived separately for individual leads. To assess the quality of identified clusters we calculated two standard quantitative metrics: L-ratio and isolation distance (Schmitzer-Torbert et al., 2005). Clusters with an L-ratio of less than 0.70 and isolation distance greater than 6.5 were deemed single units, which resulted in the exclusion of 12% of the identified clusters. Although units were clustered without knowledge of interspike interval, only clusters with few interspike intervals less than 1 ms were considered for further examination. Furthermore, we excluded the possibility of including data from the same neuron twice by ensuring that both the waveforms and response properties sufficiently changed across sessions. If they did not, we conservatively assumed that we were recording from the same neuron, and only included data from one session.\n\n### Lesioning and histology\n\nTo verify final tetrode location we performed electrolytic lesions (100 \u03bcA, ~1.5\u2009min per lead) after the last recording session. One day following lesion, mice were overdosed with an intraperitoneal injection of sodium pentobarbital (100 mg/kg) and transcardially perfused with saline followed by ice-cold 4% paraformaldehyde (PFA) in 0.1\u2009M phosphate buffer (PB). After perfusion, brains were submerged in 4% PFA in 0.1\u2009M PB for 24\u2009hr for post-fixation and then cryoprotected for 24\u2009hr by immersion in 30% sucrose in 0.1\u2009M PB. The brain was encased in the same sucrose solution, and frozen rapidly on dry ice. Serial coronal sections (60\u2009\u03bcm) were cut on a sliding microtome for reconstruction of the lesion site and tetrode tracks. Fluorescent Nissl (NeuroTrace, Invitrogen) was used to identify cytoarchitectural features of the SNr and verify tetrode tracks and lesion damage within or below the SNr. Images of SNr (see Figure 2A) were captured with a 10x objective lens, using an LSM 5 Pascal series Axioskop 2 FS MOT confocal microscope (Zeiss).\n\n### Analyses and statistics\n\nAll analyses were performed in MATLAB.\n\n#### Direction preference\n\nTo quantify the selectivity of single neurons for movement direction, we used an ROC-based analysis (Green and Swets, 1966). This analysis calculates the ability of an ideal observer to classify whether a given spike rate was recorded in one of two conditions (here, preceding leftward or rightward movement). We defined 'preference' as 2(ROCarea\u00a0\u2212\u00a00.5), a measure ranging from\u00a0\u22121 to 1, where \u22121 signifies the strongest possible preference for left, 1 signifies the strongest possible preference for right, and 0 signifies no preference (Feierstein et al., 2006). Statistical significance was determined with a permutation test: we recalculated the preference after randomly reassigning all firing rates to either of the two groups arbitrarily, repeating this procedure 500 times to obtain a distribution of values, and calculated the fraction of random values exceeding the actual value. We tested for significance at \u03b1 = 0.05. Trials in which the movement time (between odor port exit and reward port entry) was > 1.5\u2009s were excluded from all analyses. Neurons with fewer than 100 trials of each type (SG and IS) or with a firing rate below 2.5 spikes/s for either trial type or across the entire session (Fc, described below), were excluded from all analyses.\n\n#### Sign of activity change during delay epoch\n\nWe calculated the normalized response (NR) for each neuron as NR = Ft/Fc where Ft is the mean firing rate in the 'test' window (delay epoch) and Fc is the mean firing rate in the 'control' window (Sato and Hikosaka, 2002) across all trials in the preferred direction of the neuron (or, for neurons with no direction preference, across all trials). Since the structure of our task does not include a natural 'control' epoch \u2013 i.e., in which the animal is in a motionless state unaffected by task demands \u2013 our control window was defined as the time of odor port entry to reward port exit (i.e., the duration of the trial). Neurons with NR < 1 were defined as decreasing and neurons with NR > 1 were defined as increasing (Table 1). Note that, by convention, a decreasing neuron that decreases more for contraversive than ipsiversive movement would be considered to have an ipsiversive direction preference (as calculated above), because firing rate is higher for ipsiversive movement (cf. Sato and Hikosaka, 2002).\n\n#### Reinforcement learning model\n\nIn order to estimate the value associated with each direction of movement, we iteratively updated the value of each direction in each trial as $V_{dir,t}=V_{dir,t\u22121}+\\alpha(R_{dir,t\u22121}\u2212V_{dir,t\u22121})$, where $R_{dir,t\u22121}$\u00a0is the reward for the given direction in the previous trial in which that direction was chosen [0 for unrewarded (which includes trials in which the correct choice was made but the odor port was exited before the go signal) and 1 for rewarded] and $\\alpha$ is the learning rate (we set $\\alpha=0.1$; values of 0.03 and 0.3 did not affect the results). The value of each direction was updated independently. This estimate is based on the Q-learning algorithm (Sutton and Barto, 1998; note that we excluded a term for maximum future value because this was independent of the choice on the current trial). $V_{dir,t}$ therefore ranged from 0 to 1. Since we calculated $V_{dir,t}$ in each trial of the session (including SG and IS trials), it tended to start near 0.5 (but was not exactly 0.5) at the beginning of each IS block. In well-behaved IS blocks, $V_{dir,t}$ tended to asymptotically approach 1 as the mouse consistently returned to the rewarded port. $V_{dir,t}$ was calculated separately for the ipsiversive and contraversive directions and was only updated in trials in which that direction was selected.\n\n#### Regression model\n\nTo assess the influence of several factors on SNr activity (Figure 6), we fit the electrophysiological data with a multi-variable linear regression model of the form\n\n$$\nFR=\\beta_{0}+\\beta_{Previous\u00a0choice}\u03c7_{Previous\u00a0choice}+\u00a0\\beta_{Current\u00a0choice}\u03c7_{Current\u00a0choice}+\\beta_{Trial\u00a0type}\u03c7_{Trial\u00a0type}+\\beta_{Reaction\u00a0time}\u03c7_{Reaction\u00a0time},\n$$\n\nwhere $FR$ is the firing rate during the delay epoch,\n\n$\u03c7_{Previous\u00a0choice}={\u22121\u00a0for\u00a0an\u00a0ipsiversive\u00a0choice0\u00a0for\u00a0no\u00a0choice1\u00a0for\u00a0a\u00a0contraversive\u00a0choice$in the previous trial,\n\n$\u03c7_{Current\u00a0choice}={\u22121\u00a0for\u00a0an\u00a0ipsiversive\u00a0choice0\u00a0for\u00a0no\u00a0choice1\u00a0for\u00a0a\u00a0contraversive\u00a0choice$in the current trial,\n\n$\u03c7_{Trial\u00a0type}={\u22121\u00a0for\u00a0an\u00a0IS\u00a0trial1\u00a0for\u00a0an\u00a0SG\u00a0trial$,\n\n$\u03c7_{Reaction\u00a0time}=time\u00a0from\u00a0go\u00a0cue\u00a0to\u00a0reward\u00a0port\u00a0entry\u00a0(normalized\u00a0between\u00a00\u00a0and\u00a01)$,\n\n$\\beta_{0}$ represents the mean firing rate across trials during the delay epoch, and $\\beta_{Previous\u00a0choice}$, $\\beta_{Current\u00a0choice}$, $\\beta_{Trial\u00a0type}$, and $\\beta_{Reaction\u00a0time}$ represent the influence on firing rate of the previous choice, the current choice, the trial type, and the reaction time corresponding to that trial. Positive values for $\\beta_{Previous\u00a0choice}$ and $\\beta_{Current\u00a0choice}$ indicate that firing rate is increased by contraversive choices and negative values indicate that firing rate is increased by ipsiversive choices. Positive values for $\\beta_{Trial\u00a0type}$ indicate that firing rate is increased by stimulus-guided trials and negative values indicate that firing rate is increased by internally-specified trials. The sign of $\\beta_{Reaction\u00a0time}$ indicates the sign of the correlation between reaction time and firing rate. We used the MATLAB function fitlm to estimate the \u03b2s and calculate their significance and confidence intervals. We also performed this same regression analysis with two additional terms, for value [estimated in IS trials with the reinforcement learning model (see above) and in SG trials as the average performance by mixture ratio within the block (Figure 1D)], and the interaction between value and trial type. We found that, while the firing rate of some neurons was influenced by these additional factors, as expected given the value-biasing view of BG function (Hikosaka et al., 2006), including them \u2013 or including the log of the value \u2013 did not affect the overall results shown in Figure 6A. To examine how firing rate throughout the trial depended on these factors (Figure 6B,C), we repeated the above analysis with respect to firing rate in overlapping 100 ms bins, shifted by 10 ms, aligned to three behavioral events: odor valve open, odor port exit and reward port entry.\n",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "5e4c2344-7e91-4a2b-8b3b-5cc83cc5992c",
+      "submission_id": "33de2e02-92dd-4d91-81f7-38244eb76a38",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Rui M Costa, Funda\u00e7\u00e3o Champalimaud , Portugal\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.13833.016](https://doi.org/10.7554/eLife.13833.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Basal ganglia output reflects internally-specified movements\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Timothy Behrens as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nThe reviewers and reviewing editor agree that the study clearly presents an interesting and well done study, where the authors show that activity in SNr, the main basal ganglia output nucleus in rodents, signals preferentially internally-generated movements rather than stimulus-driven movements. The results are consistent with the clinical findings in basal ganglia disorders (self-paced movements are more affected than stimulus-driven ones), but are still novel in the sense that they show that SNr activity precedes many times internally generated movements.\n\nHowever, there are several issues to be addressed before the manuscript can be considered further. Please find attached below the original comments and also a summary of the most important issues to take into account.\n\n1) The reviewers suggest new analyses to quantify the activity of single SNr neurons in the different conditions. They specifically suggest that the authors analyse the activity of individual neurons during ipsi versus contralateral movements.\n\n2) The reviewers ask for new analyses to demonstrate that activity preferentially encodes internally-generate movements versus stimulus-guided throughout different epochs of the movement. In the current version of the study, the activity is measured at constant times in the trial which, given the fact that reaction times are different, may mean different epochs in relation to movement are being compared.\n\n3) The reviewers also comment that SNr-SC connections are largely ipsilateral in different species. The data presented almost suggests that the contralateral connection is equally common. How do the authors explain this?\n\n4) The reviewers propose other ways of quantifying and analysing/fitting the data; namely using a simple RL model.\n\n5) The flow of the manuscript tries to set up an opposition between value-based action selection or movement biasing, versus internally generated action selection or movement biasing. However, the study does not address that, it rather addresses the comparison between similarly valued stimulus-driven versus internally-guided movements (in other formulations feedforward versus feedback driven, sensorimotor versus motor sensory). Therefore, the study does not address that expected value does not influence the activity of SNr during the execution of similar internally-guided movements. It does compare the activity of similarly valued movements, internally-guided are more represented than stimulus-driven. The study is not contrary to the value-biasing view of basal ganglia function, it just shows that basal ganglia cares more about self-paced that stimulus-driven movements (even for the same value). Therefore, the Abstract; Introduction, Discussion, and flow should focus on the difference between stimulus-driven versus internally-guided movements.\n\nSpecific Comments:\n\nReviewer #1:\n\n6) This study provides data suggesting that the basal ganglia contribute to the internally triggered motor behavior. It has been known that patients with basal ganglia dysfunction may have difficulty in initiating movements internally. For example, patients with Parkinson's disease often have difficulty in initiating movements (e.g., walking) if there is no sensory guidance (Glickstein & Stein, Trends Neurosci 1991) and patients with bilateral pallidal lesions may not initiate goal-directed behavior spontaneously (Laplane et al., J Neurol Neurosurg Psychiatry 1984). However, the underlying mechanism is still unclear. In this sense, this study is important.\n\nA difficulty of this theme is how to guide the subject to initiate movements internally. Without any sensory guidance, motor behavior is likely uncontrollable and, if so, behavioral as well as neuronal data may not be feasible for statistical analysis. In such a difficult context, the authors devised a simple but controllable procedure for mice. Thus, this manuscript is valuable.\n\nWith my high expectation, I now have many suggestions and comments, as shown below.\n\nIt is important to discuss the results of this study in relation to the well-known clinical symptoms described above.\n\n7) The authors analyzed the preferred and antipreferred directions separately throughout the description of the results, which makes the interpretation very complex and difficult. In the end, to interpret the data as a whole the authors focused on the difference in neuronal activity between the contralateral and ipsilateral choices (Figure 7). Aiming at this goal, it would be much better to use this measure (i.e., Ipsi-Contra) from the beginning. Below are my suggestions.\n\n8) Figure 3A: Rearrange graphs in a 2x2 format: SG (left) vs. IS (right), Ipsi (top) vs. Contra (bottom). The Ipsi-Contra difference would become more evident in IS, but not SG.\n\n9) Figure 3D: In the current version, it is unclear how individual neurons behaved. My suggestion is to plot the Ipsi-Contra difference for each neuron. The distribution of data points would be similar to the current graph. I would then analyze data statistically, including populational trend (e.g., Ipsi-Contra difference is larger in IS than SG) and classification of individual neurons (e.g., IS-preferring, SG-preferring).\n\n10) Figure 4: In the current version, 4A has the same issue as for Figure 1D, and 4B is almost meaningless. I would use the Ipsi-Contra difference for 4A for each neuron. Then, show the across-trial changes (perhaps, using a regression line) for a number of neurons; in this case, it may be useful to use the absolute value of the Ipsi-Contra difference, because it would increase across trials. My other suggestion is to plot the Ipsi-Contra difference across time within a trial; the value would increase for IS than SG (as in Figure 3B).\n\n11) Figure 5: The current version includes multiple comparisons, although the graphs do not visually show the results of the comparisons. My suggestion is to present simple histograms showing the absolute values of the Ipsi-Contra difference, separately for IS, SG (easy), and SG (difficult).\n\n12) Figure 6: This figure is too complicated and does not add any support for the conclusion. Moreover, the data include both SG and IS, which I find no benefit. The previous choice should have a larger effect in IS than SG. The current choice should start earlier for IS than SG. My suggestion is to do the same analysis separately for SG and IS, although it may provoke more issues.\n\n13) I have to add one issue to my own suggestion \u2013 focus on the Ipsi-Contra difference. The feature that is orthogonal to this measure is the average magnitude of the Ipsi & Contra activity. If this is high, SC on both sides would be inhibited and the action (e.g., orienting) would be suppressed in general. If low, the action would be enhanced in general. The authors need to consider if this feature contributes to any difference in animals' choice behavior in general.\n\nBelow, I add my comments (rather than suggestions), which can be critical.\n\n14) Activity of SNr neurons started differential (ipsi vs. contra) earlier in IS trials (even before odor delivery) than SG trials (basically after odor delivery), as exemplified in Figure 3B. Now, the magnitude of neuronal activity was measured during the delay epoch that started with odor delivery. This raised the possibility that the differential activity was higher in IS trials than SG trials simply because the differential activity started earlier in IS trials. Please answer this question.\n\n15) The different connections shown in Figure 7 may explain the functions of ipsiversive and contraversive SNr neurons, but this is a hopeful scheme with no evidence or hints. Virtually all anatomical studies have shown that the majority of the SNr-SC connections are ipsilateral in various mammals. The contralateral SNr-SC connection is very few in rats (Beckstead et al., J Neurosci 1981), which may be true in mice. The authors found that contraversive SNr neurons (thus, projecting to the contralateral SC) are slightly more common than ipsiversive SNr neurons (thus, projecting to the ipsilateral SC). This raises a concern about the scheme in Figure 7.\n\nOther comments and questions:\n\n16) Results: \"if value is only one of a number of internal representations contributing to movement selection, then these movements would differentially engage the BG.\"\n\nWhat does this mean?\n\n17) Results: \"We recorded from 298 well isolated left SNr neurons\"\n\nWhy did you record SNr neurons only on the left side in 4 mice?\n\n18) Results: \"while we found that neurons were equally likely to prefer upcoming ipsiversive and contraversive movements (Figure 3C), they were more likely to exhibit a higher firing rate preceding IS movements in their preferred direction and preceding SG movements in their antipreferred direction (Figure 3D).\"\n\nIt is unclear what this sentence means.\n\n19) Results: \"We observed no difference in activity between SG trials in which different mixtures were presented but movement direction was held constant\"\n\nPlease show statistical evidence.\n\n20) Results: \"The difficulty of this decision could, in principle, affect SNr activity.\" Another possibility is 'uncertainty', rather than difficulty.\n\n21) Results: \"there was little overlap between this small population of difficulty-dependent neurons and those neurons that exhibited a dependence on trial type (Figure 5A, B)\". This notion is unclear simply by looking at these graphs.\n\nReviewer #2:\n\nThe authors present results from a study in which they recorded neural activity in the SNr while mice carried out a task in which they chose left or right reward ports either on the basis of an odor mixture (stimulus guided) or on the basis of previously rewarded outcomes (internally-guided). They examined neural activity, mostly during the choice period and found that SNr neurons coded ipsiversive and contraversive movements with about equal frequency. Neurons responded more strongly for internally-guided movements in their preferred direction, and more strongly for stimulus guided movements in their anti-preferred direction. They also correlated with learning in the IS blocks.\n\nThis study addresses an interesting question about the role of the basal ganglia, assessed from the perspective of an output nucleus, in internally generated vs. externally cued movements. Overall the study was well carried out. The dataset is reasonable and the results are clearly presented. The authors make a strong claim about matching the values of the movements. However, the analytical approach to matching them could be more detailed. Currently it is a bit qualitative. Specific suggestions follow.\n\n22) The analysis of the effects of learning on firing rates shows a reasonable correlation. But more sophisticated methods exist for examining such relationships. Specifically, it would be better to fit a simple reinforcement learning model to the data, and correlate value with neural activity. The analysis that correlates number of consecutive correct trials is a bit harder to interpret, although it may be getting at the same point.\n\n23) The RL model would also allow you to more rigorously examine similarities between the reward value representations in the SG and IS blocks. At this point they are only being qualitatively compared.\n\n24) For the analysis of the effects of difficulty in the SG blocks on neural activity, why not just run an ANOVA with difficulty level as a factor? Comparing hard vs. difficult levels is approximately doing this, but since the task design used fixed levels, why not just use them all in the analysis? This could be done in an ANOVA with odor mixture as a factor as well.\n\n25) Also, if an RL model is fit to the learning data, this can be used to estimate accuracy as a function of trials in IS blocks. Accuracy can also be extracted from the psychometric curves in the SG blocks. Accuracy could then be used a factor in an ANOVA analysis of neural activity. How many neurons show a main effect of accuracy? How many show an accuracy by task interaction? Log accuracy should also be analyzed, as this is often more correlated with neural activity in choice tasks than accuracy.\n\n26) A similar study has been carried out in macaques, comparing lateral prefrontal and the caudate nucleus, Seo et al., Neuron, 2012. Which areas do the authors think would be more strongly involved in the SG component of the task?\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Basal ganglia output reflects internally-specified movements\" for further consideration at eLife. Your revised article has been favorably evaluated by Timothy Behrens as the Senior editor, a Reviewing editor, and two reviewers.\n\nThe manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\n1) One of the reviewers still feels strongly that the main point of analyzing ipsi /contra versus preferred/non preferred direction was not understood. So the reviewer now provides a more detailed explanation of what was the point. We ask the authors to please submit new analyses and details regarding this point (where possible).\n\n2) In addition, it would be good to fix some of the small points raised.\n\n3) Finally, the authors still insist that the data presented are not consistent with a value-biasing view of basal ganglia function. The editors and reviewers felt that the data and results presented focus on the difference between stimulus-driven versus internally-guided movements, which is orthogonal to value biasing (and does not formally exclude value biasing). Therefore, we urge the authors to further revise the manuscript regarding this point.\n\nReviewer #1:\n\n4) As I mentioned before, I am not arguing that the authors' data are wrong. I have been trying to find a more straightforward way to present the authors' data. My main concern is that the current version may not transmit the basic and essential part of the authors' message to the readers. For this reason, I still have a strong suggestion to use the neuronal activity difference between ipsilateral and contralateral choices, for the following reasons.\n\nLet's start from Figure 3B. Does this neuron contribute to the choice? To answer this question, I would set this neuron in SNr on both sides. If the animal decides to choose Rightward movement, the neuron in Right SNr (i.e., Ipsi) is more active than the neuron in Left SNr (i.e., Contra). This would lead to the bias toward Rightward movement (Figure 7). Importantly, the choice bias is stronger in IS than SG (Figure 3B). Therefore, the neuron does contribute to the choice using the difference in its activity between Ipsi and Contra choices, and does so more strongly in IS than SG condition.\n\nChecking the neuron's activity for only one choice (i.e., preferred or anti-preferred) would not indicate whether the neuron can contribute to the choice. That's why the data points shown in Figures 3 and 4 provide no clear message. Two data points are associated with one neuron. By looking at these two points in Figure 3D, we can guess if the neuron can contribute to the choice; the slope between the two data points indicates the ratio of the directional bias (IS-bias/SG-bias). But, I bet most readers would not reach such detailed understanding. Moreover, the pair of data points is shown for only one example neuron. How about the others?\n\nI understand the authors' logic. The average slope of all data points (regression line) in Figure 3D is higher than 1. Therefore, IS-bias is larger than SG-bias overall. But, the basic information \u2013 choice signal carried by individual neurons \u2013 is missing. Let me ask a basic question. How many SNr neurons were capable of contributing to the choice? Would the data in Figure 4 answer the question? I doubt it. For example, there are neurons that showed significant correlations with both preferred and anti-preferred directions. Some of them had the same polarities; they would increase (or decrease) their activity during both Ipsi and Contra IS blocks. Such neurons are probably not capable of contributing to the correct choice.\n\nHow can we quantify the choice capability of each neuron, then? My only suggestion is to use the difference between Ipsi and Contra directional choices. This exactly matches the model shown in Figure 7.\n\nOther than my critical comments, I do find some of the authors' data interesting. For example, I find two dominant groups of neurons in Figure 4B: 1) neurons showing positive correlations with their preferred directions, and 2) neurons showing negative correlations with their anti-preferred directions. This indicates that both groups of neurons enhanced their choice signals, but in different ways: 1) enhancing the dominant signal, and 2) suppressing the non-dominant signal. This reminds me of a basic mechanism of motor control: To change the orientation of a joint, the agonist muscle contracts or the antagonist muscle relaxes, or both contract (or relax) in different amounts. These mechanisms may be useful in different contexts. In this sense, the authors' data may suggest that different groups of SNr neurons contribute to such different mechanisms of joint orientation, in this case, head or eye orientation.\n\nHowever, this question is one step beyond the main question: Which neurons can contribute to the choice of orientation? To address this main question, the authors should focus on the difference in each neuron's activity between the Ipsi- and Contra-directions, which is similar to the difference in contraction force between agonist and antagonist muscles.\n\nI have some specific questions (below).\n\n5) Data in Figure 3D are different from the ones in the original manuscript. In particular, the two data points for the example neuron are very different. Please give me an explanation.\n\n6) How was the preferred direction defined? I understand that the authors used ROC analysis. Were both SG and IS trials included? Weren't there any neurons that showed a bit different preference between SG and IS trials? For example, the dark blue data point at the far right in Figure 3D. This means that the neuron responded strongly in the anti-preferred direction in SG trials. In other words, it responded more strongly in the preferred direction. Which of the dark red data points belongs to this neuron? In any case, this may raise another issue of preferred vs. anti-preferred directions.\n\nReviewer #2:\n\n7) I have only one brief comment. Otherwise the authors have carefully addressed all of my concerns in detail.\n\nFigure 4A doesn't show value estimates evolving over trials as stated in reply to reviewers and Methods. \"In well-behaved IS blocks, Vdir,t tended to asymptotically approach 1 as the mouse consistently returned to the rewarded port (Figure 4A).\" Was this erroneously not included or with this statement did you just mean you were using the RL algorithm to generate the value estimates and these value estimates were used in Figure 4? It's not clear.\n",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7fa48d19-2369-45c2-b601-6ed0ab1df605",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C1",
+      "claim": "The basal ganglia are known to bias movement selection according to value.",
+      "claim_type": "EXPLICIT",
+      "source": "The basal ganglia are known to bias movement selection according to value, one form of internal goal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior work in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "c58c935e-ac99-442b-9ab5-0653b06b1a63",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C2",
+      "claim": "Activity in the substantia nigra pars reticulata predictably differed preceding internally-specified and stimulus-guided movements.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that activity in the substantia nigra pars reticulata, a basal ganglia output, predictably differed preceding internally-specified and stimulus-guided movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "cd97e7d1-7a4b-4fc0-b058-e2337f2366cb",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C3",
+      "claim": "Internally-specified movements may be facilitated relative to stimulus-guided movements by basal ganglia processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Incorporating these results into a simple model suggests that internally-specified movements may be facilitated relative to stimulus-guided movements by basal ganglia processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on modeling of the experimental data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "599438bc-4a2c-43e3-87f2-50a314fa9f86",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C4",
+      "claim": "The basal ganglia contribute to movement selection by modulating inhibition on competing downstream motor structures.",
+      "claim_type": "EXPLICIT",
+      "source": "The basal ganglia (BG) are known to be involved in motor control (Hikosaka and Wurtz, 1989; Mink, 1996), contributing to movement selection by modulating inhibition on competing downstream motor structures (Basso and Wurtz, 2002; Di Chiara et al., 1979; Hikosaka and Wurtz, 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "f2c10cb7-a64d-49c3-ad85-a340e4d9c741",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C5",
+      "claim": "Activity in several BG nuclei is modulated, prior to stimulus presentation, by reward expectation.",
+      "claim_type": "EXPLICIT",
+      "source": "This 'value-biasing' hypothesis is supported by much evidence showing that activity in several BG nuclei is modulated, prior to stimulus presentation, by reward expectation (Bryden et al., 2011; Handel and Glimcher, 2000; Hikosaka et al., 2006; Kawagoe et al., 1998; Sato and Hikosaka, 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to multiple prior studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "c5ae3b08-4cf0-48b3-ae3c-f24e78254e78",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C6",
+      "claim": "Movements toward high-value targets are disinhibited relative to movements toward low-value targets.",
+      "claim_type": "EXPLICIT",
+      "source": "such that movements toward high-value targets are disinhibited relative to movements toward low-value targets (Hikosaka et al., 2006; Lauwereyns et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "a7631020-0413-4ca0-a505-5ab2946b7383",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C7",
+      "claim": "Movement selection may be guided by internal representations such as recent movements and their outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, movement selection may also be guided by other internal representations, such as recent movements and their outcomes (Corrado et al., 2005; Fecteau and Munoz, 2003; Lau and Glimcher, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "82bacf3b-87b5-44a8-b764-5a0b8545a888",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C8",
+      "claim": "Parkinsonian patients exhibit more pronounced bradykinesia when initiating internally-specified than stimulus-guided movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, it is has been proposed that Parkinsonian patients exhibit more pronounced bradykinesia when initiating internally-specified than stimulus-guided movements because the latter engage pathways outside of the BG (Glickstein and Stein, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "e770413d-6c8c-4612-8450-b1496b12e3e3",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C9",
+      "claim": "The substantia nigra pars reticulata is an output nucleus of the BG critical for orienting movements.",
+      "claim_type": "EXPLICIT",
+      "source": "We distinguished between these two possibilities by recording from neurons in the substantia nigra pars reticulata (SNr), an output nucleus of the BG critical for orienting movements (Basso and Sommer, 2011; Handel and Glimcher, 1999; Hikosaka and Wurtz, 1983a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "1aee7cb0-1cc8-4211-9322-9e853b1cc24d",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C10",
+      "claim": "Mice were able to infer unsignaled transitions between the SG and IS blocks and switch their response mode accordingly.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that mice were able to infer (unsignaled) transitions between the SG and IS blocks and switch their response mode accordingly: during SG blocks, mice were equally likely to choose the left and right port (Figure 1C, gray boxes) reflecting a dependence on the odor mixture (Figure 1D), while during IS blocks, mice reliably returned to the same (rewarded) port in each trial (Figure 1C, white boxes).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 1C and 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "e22445b3-89dd-4b65-9a30-277c519fe434",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C11",
+      "claim": "Reaction time was shorter in IS trials than in easy SG trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, across the population of sessions, we found that reaction time \u2013 defined as the time from the go cue to reward port entry \u2013 was shorter in IS trials than in the 'easy' SG trials in the same session [Figure 1F; we used only easy SG trials (mixture ratios of 95/5, 80/20, 20/80, and 5/95) to control for a potential dependence of reaction time on difficulty; population of sessions: p = 1.7 \u00d7 10\u221211, paired t-test; individual sessions: IS shorter than SG in 46/108, SG shorter than IS in 3/108, p<0.05, Wilcoxon rank-sum test; ipsiversive and contraversive trials compared separately].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of behavioral data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "91d0a3ef-2c6c-472f-aa8a-e2e9f78098a6",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C12",
+      "claim": "216 out of 296 neurons displayed a significant direction preference during the delay epoch.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 216/296 neurons displayed a significant direction preference (p<0.05) during the delay epoch, with about as many preferring ipsiversive (94/216) as contraversive (122/216) movements (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of neural recording data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "fdc44674-d229-4b9f-830a-60be82a6d28b",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C13",
+      "claim": "188 out of 296 neurons exhibited an increase in activity during the delay epoch relative to baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 188/296 neurons exhibited an increase in activity during this epoch, 91/296 exhibited a decrease, and 17/296 exhibited no change (Table 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of neural recording data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "3b65cc07-e7b5-4a96-a5fa-49e71ef1f70d",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C14",
+      "claim": "SNr activity exhibits both movement-related increases and decreases.",
+      "claim_type": "EXPLICIT",
+      "source": "Since SNr activity has been shown to exhibit both movement-related increases and decreases (Bryden et al., 2011; Gulley et al., 2002, 1999; Handel and Glimcher, 1999; Sato and Hikosaka, 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "c4072ab0-5ef2-40c1-adbe-def5adf85deb",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C15",
+      "claim": "Neurons tended to show a larger difference in firing rate between ipsiversive and contraversive movements in IS than in SG trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Across our population, neurons tended to show a larger difference in firing rate preceding ipsiversive and contraversive movements in IS than in SG trials [Figure 3D; ipsiversive-preferring neurons: p = 2.2 \u00d7 10\u221210, paired t-test; contraversive-preferring neurons: p = 4.0 \u00d7 10\u22124, paired t-test].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of neural recording data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "220c2a6e-ea06-44a6-9c89-e5d156785f23",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C16",
+      "claim": "Approximately half of direction-selective neurons were modulated by trial type for trials in the preferred direction.",
+      "claim_type": "EXPLICIT",
+      "source": "For trials in the preferred direction, we found that the activity of approximately half of the direction-selective neurons was modulated by trial type (101/216; p<0.05, unpaired t-test), with more neurons exhibiting higher activity in IS trials than SG trials (84/101 vs. 17/101; p = 2.6 \u00d7 10\u221211, X2 test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of neural recording data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "c9697e6c-ddb4-4623-afd3-3b4a963d5c1f",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C17",
+      "claim": "For trials in the antipreferred direction, more neurons exhibited higher activity in SG trials than IS trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, for trials in the antipreferred direction, we again found that the activity of approximately half of the direction-selective neurons was modulated by trial type (109/216; p<0.05, unpaired t-test; 158/216 direction-selective neurons were modulated by trial type in at least one direction), but that more neurons exhibited higher activity in SG trials than IS trials (76/109 vs. 33/109; p = 3.8 \u00d7 10\u22125, X2 test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of neural recording data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "27571217-8d37-42d8-9983-201702ec24e9",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C18",
+      "claim": "77 out of 158 neurons exhibited a significant correlation between firing rate and the number of consecutive correct trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, 77/158 neurons exhibited a significant correlation (p<0.05) between firing rate and the number of consecutive correct trials for either direction [Figure 4B,C; 35/77 for trials in the preferred direction (red circles), 29/77 for trials in the antipreferred direction (blue circles), and 13/77 for trials in both directions (purple circles)]",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of neural recording data shown in Figure 4B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "a89331b9-8a48-4c6c-b7ab-984a6b94812c",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C19",
+      "claim": "More neurons showed positive correlations for trials in the preferred direction and negative correlations for trials in the antipreferred direction.",
+      "claim_type": "EXPLICIT",
+      "source": "with more positive correlations for trials in the preferred direction (p = 2.4 \u00d7 10\u22126, X2 test) and negative correlations for trials in the antipreferred direction (p = 5.9 \u00d7 10\u22126, X2 test), as we would expect given the pattern of results shown in Figure 3D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of neural recording data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "fe629812-d24b-4514-9bd2-71da524bcaff",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C20",
+      "claim": "Easy SG trials resulted in a larger fraction of correct choices than difficult SG trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Were this the case, we would expect to observe a difference in activity between those SG trials requiring an easy discrimination (mixture ratios of 95/5, 80/20, 20/80, and 5/95) and those SG trials requiring a 'difficult' discrimination (mixture ratios of 60/40, 50/50, and 40/60), since easy trials resulted in a larger fraction of correct choices (p = 3.4 \u00d7 10\u201327, paired t-test; see Figure 1D), corresponding to a higher likelihood of reward.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of behavioral data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "1c59af3d-7721-4a62-9fa6-7d52b88748f3",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C21",
+      "claim": "The activity of some individual neurons depended on difficulty or an associated variable.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the activity of some individual neurons depended on difficulty (or an associated variable) (ipsiversive direction: 39/216 neurons; contraversive direction: 31/216 neurons, p<0.05, 1-way ANOVA across mixture ratios, Figure 5A,B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by statistical analysis of neural recording data shown in Figure 5A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "26c84571-ae47-4143-961f-9a2af038ba33",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C22",
+      "claim": "There was little overlap between difficulty-dependent neurons and trial-type-dependent neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was little overlap (purple circles) between this small population of difficulty-dependent neurons (blue circles) and those neurons that we classified as trial-type-dependent [ipsiversive direction: 21/109 trial-type-dependent, and 18/107 non-trial-type-dependent, neurons exhibited difficulty dependence (these ratios did not differ: p = 0.32, X2 test); contraversive direction: 16/101 trial-type-dependent, and 15/115 non-trial-type-dependent, neurons exhibited difficulty dependence (these ratios did not differ: p = 0.56, X2 test); p<0.05, 1-way ANOVA across mixture ratios].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of neural recording data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "6d38cdd0-d6bb-4eb1-a047-1ebbc2ee73ef",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C23",
+      "claim": "Differences in decision difficulty, uncertainty, and the value associated with the direction of movement do not account for trial-type dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that differences in decision difficulty, uncertainty, and the value associated with the direction of movement do not account for trial-type dependence or the differences in activity between SG and IS trials shown in Figure 3D.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the statistical analysis of neural recording data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "c5177f01-1d85-4d1f-b529-166858865e83",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C24",
+      "claim": "The vast majority of neurons (281/296) were influenced by at least one of the factors: previous choice, current choice, trial type, or reaction time.",
+      "claim_type": "EXPLICIT",
+      "source": "Across our population of neurons, the vast majority were influenced by at least one of these factors (281/296, p<0.05), and we found neurons with firing rates influenced by all possible combinations of factors (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by regression analysis of neural recording data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "011cdde2-df22-4a9d-8f6e-edc95f688690",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C25",
+      "claim": "The activity of many SNr neurons was modulated by current choice (167/296) during the delay epoch.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the results shown in Figure 3C and D, respectively, this analysis confirms that, as the mouse is selecting its direction of movement, the activity of many SNr neurons was modulated by current choice (167/296) and trial type (142/296).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by regression analysis of neural recording data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "e9f80af9-55c1-4e0b-80e5-54e43d14507b",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C26",
+      "claim": "The activity of many SNr neurons was modulated by trial type (142/296) during the delay epoch.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the results shown in Figure 3C and D, respectively, this analysis confirms that, as the mouse is selecting its direction of movement, the activity of many SNr neurons was modulated by current choice (167/296) and trial type (142/296).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by regression analysis of neural recording data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "7934e6a1-345b-4985-8d35-1aec46b84c19",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C27",
+      "claim": "The activity of many neurons depended on reaction time (111/296).",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that the activity of many neurons depended on reaction time (111/296).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by regression analysis of neural recording data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "b9953255-5f33-45c9-8c51-570661ae2f79",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C28",
+      "claim": "The largest fraction of neurons exhibited activity modulated by previous choice (188/296).",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, the largest fraction of neurons exhibited activity modulated by previous choice (188/296).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by regression analysis of neural recording data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "f6dc94ce-9a55-4673-865d-602f793f045f",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C29",
+      "claim": "Previous choice is critical for determining which direction is associated with reward in an IS block.",
+      "claim_type": "EXPLICIT",
+      "source": "This is particularly interesting because this variable is critical for determining, in an IS block, which direction is associated with reward.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the task design and the role of previous choice in IS blocks.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "e86931c7-06dc-4e50-9102-8702589b966f",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C30",
+      "claim": "Before the odor is delivered, the firing rates of about half of the neurons are influenced by the previous choice.",
+      "claim_type": "EXPLICIT",
+      "source": "Before the odor is delivered, the firing rates of about half of the neurons are influenced by the previous choice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by regression analysis of neural recording data across time windows shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "63475755-9e48-4793-960a-76def002363b",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C31",
+      "claim": "As the odor is sampled, the influence of the previous choice decreases and the influence of the current choice increases.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as the odor is sampled, the influence of the previous choice decreases and the influence of the current choice increases, with about two thirds of neurons exhibiting a significant weight for the current choice by the time the movement is initiated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by regression analysis of neural recording data across time windows shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "1ba86243-30ac-4163-a8d1-2fbcaa6fd33f",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C32",
+      "claim": "Trial type modulates the activity of about one third of neurons throughout the trial.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, trial type modulates the activity of about one third of neurons throughout the trial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by regression analysis of neural recording data across time windows shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "9a81edbd-2ea6-4a63-93bd-1848a4081a31",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C33",
+      "claim": "SNr activity preceding orienting movements depends on whether the direction of movement was indicated by a stimulus or was specified by internal variables.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that SNr activity preceding orienting movements depends on whether the direction of movement was indicated by a stimulus or was specified by internal variables (Figures 3, 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a summary of the primary finding supported by data shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "814a4b63-7bb2-4ab1-8ed1-fbceafd9953a",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C34",
+      "claim": "The dependence on trial type could not be accounted for by differences in the estimated value of each movement direction between the trial types.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the dependence on trial type could not be accounted for by differences in the estimated value of each movement direction \u2013 or an associated variable, such as difficulty or uncertainty in selecting the movement \u2013 between the trial types (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "5e05779a-41f9-4a18-be98-ba381d9b77c1",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C35",
+      "claim": "In some neurons, the dependence on trial type could be explained, in part, by the choice on the previous trial.",
+      "claim_type": "EXPLICIT",
+      "source": "In some neurons this dependence could be explained, in part, by the choice on the previous trial (Figure 6A), which is informative of the rewarded direction in IS blocks.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by regression analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "c04f4430-223f-4e9f-a29b-d7d5e69e2530",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C36",
+      "claim": "Over the course of the trial, the influence on SNr activity of the previous choice decreased and that of the current choice increased, while the influence of trial type remained relatively constant.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the course of the trial, while the influence on SNr activity of the previous choice decreased and that of the current choice increased, as might be expected given the demands of the task, the influence of trial type remained relatively constant (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by regression analysis across time windows shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "56bbd29d-5fc0-44f1-86e2-8a0713918476",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C37",
+      "claim": "The SNr is differentially engaged by stimulus-guided and internally-specified movements.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the SNr is differentially engaged by stimulus-guided and internally-specified movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data presented in the study.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "3a327c3c-4fab-4af3-995a-50ccb532d65b",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C38",
+      "claim": "Movement-related SNr activity was higher for memory-guided than visually-guided saccades in primates.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies in primates have shown that movement-related SNr activity was higher for memory-guided than visually-guided saccades (Hikosaka and Wurtz, 1983a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "bb5c0a14-88c2-4ebd-8ef0-8eaf3547c1ed",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C39",
+      "claim": "SNr stimulation had a larger effect on memory- than visually-guided saccades in primates.",
+      "claim_type": "EXPLICIT",
+      "source": "and that SNr stimulation had a larger effect on memory- than visually-guided saccades (Basso and Liu, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "5518fb81-413c-48b2-a55e-3c7f775d7905",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C40",
+      "claim": "The results generalize across species and movement types (saccades and full-body orienting).",
+      "claim_type": "EXPLICIT",
+      "source": "Movements selected based on a remembered stimulus can be thought of as internally specified, and in this sense our results (Figure 3D) are consistent with these findings and demonstrate that they generalize across species and movement types (saccades and full-body orienting).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison of the current results with prior research.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "6f880b34-c93a-4bf0-9772-706b511ecf59",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C41",
+      "claim": "In IS trials, direction preference sometimes emerged even before stimulus delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the rewarded direction in both memory- and visually-guided trials was indicated by the stimulus, which was not the case in our IS trials, in which we sometimes observed that direction preference emerged even before stimulus delivery (see example in Figure 3A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by observation of neural recording data shown in Figure 3A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "430c150c-2047-448a-8744-1fa2d1092aaa",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C42",
+      "claim": "The difference between direction preference in IS and SG trials during the delay epoch was correlated with the difference between preference in IS and SG trials during the epoch from odor port entry to odor valve open.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the difference between direction preference in IS and SG trials during the delay epoch was correlated with the difference between preference in IS and SG trials during the epoch from odor port entry to odor valve open (r = 0.47, p = 4.8 \u00d7 10\u221218).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of neural recording data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "e40f9c9a-b21b-4778-b79e-3ca3983d2a58",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C43",
+      "claim": "In IS trials, the direction of movement was initially selected independent of the stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that, in IS trials, the direction of movement was initially selected independent of the stimulus, which contributes to the difference in activity during the delay epoch that we observe between SG and IS trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the correlation analysis of neural recording data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "1546765c-4409-42eb-8504-155a0e919d13",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C44",
+      "claim": "All groups of neurons (increasing and decreasing, preferring ipsiversive and contraversive movement) exhibited a difference in activity between stimulus-guided and internally-specified movements.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, while Hikosaka and Wurtz (1983a) examined only neurons that exhibited a decrease in activity around the time of contraversive saccades, we examined increasing and decreasing neurons that prefer both ipsiversive and contraversive movement (Gulley et al., 2002, 1999; Handel and Glimcher, 2000; Sato and Hikosaka, 2002) and found that all of these groups exhibited a difference in activity between stimulus-guided and internally-specified movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of neural recording data across different neuron types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "c234d222-5223-4cbf-a4aa-b519cdce9db5",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C45",
+      "claim": "Patients with Parkinson's disease and other BG pathologies exhibit greater deficits in the initiation of internally-specified than visually-guided movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, patients with Parkinson's disease and other BG pathologies have been reported to exhibit greater deficits in the initiation of internally-specified than visually-guided movements (Forssberg et al., 1984; Laplane et al., 1984; Azulay et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior clinical research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "a0ca7784-1107-4821-8add-37b9c6206676",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C46",
+      "claim": "Visual cues may engage intact sensorimotor pathways outside of the BG, such as the cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "While the neural basis for this phenomenon is not well understood and remains an active area of study (Distler et al., 2016), it has been suggested that visual cues engage (intact) sensorimotor pathways outside of the BG, such as the cerebellum (Glickstein and Stein, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "f5feb915-f87a-4cb7-8d65-cba20e3bfadc",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C47",
+      "claim": "Differential processing of internally-specified and visually-guided movements within the BG themselves may contribute to the clinical observation of greater deficits in Parkinsonian patients for internally-specified movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that differential processing of internally-specified and visually-guided movements within the BG themselves may also contribute to this clinical observation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the experimental data and prior clinical observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "df990675-3a42-4a97-882c-2ac53030fdb3",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C48",
+      "claim": "Movement-related SNr activity is modulated by the relative value associated with a movement.",
+      "claim_type": "EXPLICIT",
+      "source": "As noted above, other studies have found that movement-related SNr activity is modulated by the relative value associated with a movement (Bryden et al., 2011; Sato and Hikosaka, 2002), including whether the movement will be rewarded at all (Handel and Glimcher, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "5d81352b-55ba-4ded-bf14-6e8b0fd71111",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C49",
+      "claim": "Value dependence in SNr activity likely arises from dopaminergic input to the BG that conveys reward-related information.",
+      "claim_type": "EXPLICIT",
+      "source": "This value dependence likely arises from dopaminergic input to the BG that is thought to convey reward-related information (Schultz et al., 1997)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "86ea1da0-6517-4d62-9767-887f154f8d97",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C50",
+      "claim": "A model in which reward expectation modulates striatal inputs to the SNr to bias downstream superior colliculus activity can account for how the most valuable movement is facilitated.",
+      "claim_type": "EXPLICIT",
+      "source": "and has been accounted for by a model in which, prior to stimulus presentation, reward expectation modulates striatal inputs to the SNr in order to bias downstream superior colliculus (SC) activity such that the most valuable movement is facilitated (Hikosaka et al., 2006; Wolf et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior modeling work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "ab5935f6-329a-4ec7-b9e5-07fffa92ebac",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C51",
+      "claim": "A similar model can explain how internally-specified movements, more generally, are facilitated.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that a similar model can also explain how internally-specified movements, more generally, are facilitated (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculative proposal based on extending a prior model to the current data, illustrated in Figure 7.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "56cbfd86-45c8-4af1-90df-0820875ce318",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C52",
+      "claim": "Left and right SNr neurons would exhibit a larger difference in activity in IS trials than in SG trials for an upcoming rightward movement.",
+      "claim_type": "EXPLICIT",
+      "source": "To illustrate this idea, consider how, given the data presented here, the relative activity between ipsiversive-preferring left and right SNr neurons would relate to an upcoming rightward movement (we consider relative, rather than absolute, activity since this is most directly relevant to the decision \u2013 move left vs. move right \u2013 required by our task). Left and right SNr neurons would exhibit a larger difference in activity in IS trials than in SG trials (Figure 3D, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the data shown in Figure 3D.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "399e0588-b5dd-4244-bf62-c5e791eac01d",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C53",
+      "claim": "Ipsiversive-preferring SNr neurons primarily project to the ipsilateral SC.",
+      "claim_type": "EXPLICIT",
+      "source": "If ipsiversive-preferring SNr neurons primarily project to the ipsilateral SC (Hikosaka and Wurtz, 1983b)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research and is presented as a conditional assumption.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "dd23379b-0914-4c4b-9fd1-0c0409df9cc4",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C54",
+      "claim": "A downstream left SC neuron will receive less inhibition from the left SNr when the movement is internally specified, thereby facilitating rightward movements that are internally specified.",
+      "claim_type": "EXPLICIT",
+      "source": "then a downstream left SC neuron, the activity of which promotes rightward movement (Felsen and Mainen, 2012; Horwitz and Newsome, 2001; Stubblefield et al., 2013) will receive less inhibition from the left SNr when the movement is internally specified, thereby facilitating rightward movements that are internally specified (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the model and data, illustrated in Figure 7.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "de89d5f9-ebc2-4165-9159-a5c561352b17",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C55",
+      "claim": "Contraversive-preferring SNr neurons comprise the 'crossed' projection to the contralateral SC.",
+      "claim_type": "EXPLICIT",
+      "source": "If contraversive-preferring SNr neurons comprise the 'crossed' projection to the contralateral SC (Jiang et al., 2003)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research and is presented as a conditional assumption.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "62cd2290-b048-4c4a-bf32-d6093aacc251",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C56",
+      "claim": "A downstream right SC neuron would receive more inhibition from the left SNr when the movement is internally specified, again facilitating the rightward movement.",
+      "claim_type": "EXPLICIT",
+      "source": "then a downstream right SC neuron would receive more inhibition from the left SNr when the movement is internally specified, again facilitating the rightward movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the model and data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "b8cf0916-af6f-4e4b-8c5b-b8aeafec42ad",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C57",
+      "claim": "Slightly more SNr neurons prefer contraversive than ipsiversive movement.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we observed that slightly more SNr neurons prefer contraversive than ipsiversive movement (Figure 3C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "6936cb62-6e96-41d8-8dfc-09d3d3fa9350",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C58",
+      "claim": "Many fewer SNr neurons project to the contralateral than ipsilateral SC, particularly in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "but many fewer SNr neurons project to the contralateral than ipsilateral SC, particularly in rodents (Beckstead et al., 1981; Deniau et al., 1977; Gerfen et al., 1982; Jayaraman et al., 1977)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior anatomical research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "291e435a-46db-49d6-869a-830531a258c0",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C59",
+      "claim": "Contraversive-preferring SNr neurons may preferentially project to non-tectal targets.",
+      "claim_type": "EXPLICIT",
+      "source": "and contraversive-preferring SNr neurons may preferentially project to non-tectal targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on anatomical considerations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "935ee65c-2c72-43aa-902b-ea0d4b2e83d3",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C60",
+      "claim": "SNr activity may be consistent with the facilitation of internally-specified contraversive movements.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, SNr activity may be consistent with the facilitation of internally-specified contraversive movements.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the model and anatomical considerations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "3cdea41f-2f65-4128-9065-4dffd8f970a3",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C61",
+      "claim": "The results extend the model underlying the value-biasing view of BG function by suggesting that the influence of the SNr on downstream motor regions is modulated by internal representations in addition to value.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results therefore extend the model underlying the value-biasing view of BG function (Hikosaka et al., 2006) by suggesting that the influence of the SNr on downstream motor regions is modulated by internal representations in addition to value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data and prior models.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "bbfdefd8-97c3-4ba8-97c3-206093bd52e4",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C62",
+      "claim": "Internal representations of priors play a critical role in guiding motor output.",
+      "claim_type": "EXPLICIT",
+      "source": "We suggest that this dependence may reflect a facilitation for internally-specified movements, consistent with the view that, although movements are often made in response to sensory stimuli, internal representations of priors play a critical role in guiding motor output (Wolpert and Landy, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to prior research.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "a4403625-277a-4bce-93c9-66eea2a867d9",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C63",
+      "claim": "The results are sufficiently consistent with results in primate SNr that they can inform the interpretation of previous studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results are sufficiently consistent with results in primate SNr (Handel and Glimcher, 2000, 1999; Hikosaka and Wurtz, 1983a; Liu and Basso, 2008; Sato and Hikosaka, 2002) that they can inform the interpretation of previous studies (e.g., our proposed extensions of the model explaining the value-biasing role of the BG described above), while also offering novel insight into BG function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison of the current results with prior research.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "d70b55f9-4e4f-4490-961a-86e187ff9616",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C64",
+      "claim": "296 well-isolated left SNr neurons were recorded from four mice performing the task.",
+      "claim_type": "EXPLICIT",
+      "source": "We recorded from 296 well-isolated left SNr neurons (see Materials and methods; Figure 2) in four mice performing the task (see Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "a6903cd2-64ac-4894-b9fa-be0ad7260375",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C65",
+      "claim": "Male adult C57BL/6J mice aged 7\u201314 months at the start of experiments were used.",
+      "claim_type": "EXPLICIT",
+      "source": "We used male adult C57BL/6J mice (n = 4, determined by estimating the number of neurons required for our analyses and by the number of neurons recorded per mouse in initial experiments; aged 7\u201314 months at the start of experiments; Jackson Labs)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "c03bfbf2-d433-42a7-be7b-ab0375dd4c55",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C66",
+      "claim": "Mice were housed in a vivarium with a 12-hr light/dark cycle with lights on at 5:00 am.",
+      "claim_type": "EXPLICIT",
+      "source": "housed in a vivarium with a 12-hr light/dark cycle with lights on at 5:00 am.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "20c5de20-c16d-4e82-946c-6202534fd4b0",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C67",
+      "claim": "Access to water was restricted to the behavioral session to motivate performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Access to water was restricted to the behavioral session to motivate performance; however, if mice did not obtain ~1 ml of water during the behavioral session, additional water was provided for ~2\u20135 min following the behavioral session (Smear et al., 2011; Thompson and Felsen, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "7110343c-434c-49c8-9579-4c5999aa368c",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C68",
+      "claim": "All mice were weighed daily and received sufficient water during behavioral sessions to maintain >85% of pre-water restriction weight.",
+      "claim_type": "EXPLICIT",
+      "source": "All mice were weighed daily and received sufficient water during behavioral sessions to maintain >85% of pre-water restriction weight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "52c90f9c-b081-4232-b72d-7149f4c83a9b",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C69",
+      "claim": "Odors were comprised of binary mixtures of (+)-carvone and (-)-carvone, commonly perceived as caraway and spearmint, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Odors were comprised of binary mixtures of (+)-carvone and (-)-carvone, commonly perceived as caraway and spearmint, respectively; an enantiomeric odor pair was selected to control for differences in molecular structure of odorant stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental stimuli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "583af191-dc96-403f-96d0-7f6a2fff788c",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C70",
+      "claim": "Mice learned to perform SG trials within approximately 48 sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice learned to perform SG trials within ~48 sessions (1 session/day); detailed training stages are described in Stubblefield et al. (2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the behavioral training.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "536588c3-091b-40a1-abca-b62c8b4afa70",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C71",
+      "claim": "Mice required an additional approximately 5 sessions to learn to perform interleaved blocks of SG and IS trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice required an additional ~5 sessions to learn to perform interleaved blocks of SG and IS trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the behavioral training.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "4b0d53bc-d728-4015-8ac0-66f586376078",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C72",
+      "claim": "During each of the 54 recording sessions, mice performed 321.81 \u00b1 89.49 (mean \u00b1 SD) trials.",
+      "claim_type": "EXPLICIT",
+      "source": "During each of the 54 recording sessions, mice performed 321.81 \u00b1 89.49 (mean \u00b1 SD) trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the behavioral performance during recording sessions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "5a8823c8-5e77-4916-8f07-cc2bfb0644cd",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C73",
+      "claim": "Tetrodes were moved approximately 62.5 \u03bcm between sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "One full rotation moved the tetrode ~250 \u03bcm and tetrodes were moved ~62.5 \u03bcm between sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the recording procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "a490b31b-456a-482a-a197-8c9f13a4cd92",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C74",
+      "claim": "Clusters with an L-ratio of less than 0.70 and isolation distance greater than 6.5 were deemed single units.",
+      "claim_type": "EXPLICIT",
+      "source": "Clusters with an L-ratio of less than 0.70 and isolation distance greater than 6.5 were deemed single units, which resulted in the exclusion of 12% of the identified clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the spike sorting criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "3d2ea701-8d46-48cc-a8ed-5c22a2731110",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "claim_id": "C75",
+      "claim": "12% of the identified clusters were excluded based on quality metrics.",
+      "claim_type": "EXPLICIT",
+      "source": "Clusters with an L-ratio of less than 0.70 and isolation distance greater than 6.5 were deemed single units, which resulted in the exclusion of 12% of the identified clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data exclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ff558e70-ff5e-4160-85f8-1a493b9776cb",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Mice successfully learned to distinguish between stimulus-guided (SG) and internally-specified (IS) trial blocks, switching their response strategies accordingly. In SG blocks, mice based choices on odor mixtures, while in IS blocks they reliably returned to the same rewarded port. Reaction times were significantly shorter in IS trials compared to easy SG trials (p = 1.7 \u00d7 10\u207b\u00b9\u00b9).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10 and C11 are well-supported by behavioral data in Figures 1C-F. The statistical analyses are appropriate (paired t-test, Wilcoxon rank-sum test) with strong effect sizes. The task design successfully dissociates the two movement types, providing a solid foundation for subsequent neural analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "8ae34f35-49ac-4678-98f8-75f7b56482ec",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SNr neurons exhibited direction-selective activity during the delay epoch, with 216/296 neurons showing significant directional preference. Critically, neurons showed larger differences in firing rate between ipsiversive and contraversive movements in IS trials compared to SG trials (ipsiversive-preferring: p = 2.2 \u00d7 10\u207b\u00b9\u2070; contraversive-preferring: p = 4.0 \u00d7 10\u207b\u2074). Approximately half of direction-selective neurons were modulated by trial type, with predictable patterns: more neurons showed higher activity in IS trials for preferred directions and higher activity in SG trials for antipreferred directions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C17 present the core finding that SNr activity differs between IS and SG trials. The statistical analyses are rigorous with appropriate tests (ROC analysis, paired t-tests, chi-square tests) and highly significant p-values. The data in Figures 3C-D clearly support these claims. However, the interpretation that this reflects differential engagement requires additional mechanistic evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "924557a2-3305-4ade-a513-8e2d1f6fc8f6",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Neural activity correlated with the degree to which movements were internally specified. 77/158 trial-type-dependent neurons showed significant correlations between firing rate and consecutive correct trials (estimated via reinforcement learning). The correlations were directionally appropriate: positive for preferred directions (p = 2.4 \u00d7 10\u207b\u2076) and negative for antipreferred directions (p = 5.9 \u00d7 10\u207b\u2076).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 are supported by the reinforcement learning analysis shown in Figure 4. The correlation analysis appropriately tests whether neural activity tracks the learning of IS blocks. However, the reinforcement learning model parameters (\u03b1 = 0.1) appear arbitrary, and sensitivity analyses with different learning rates are mentioned but not fully reported, which introduces some uncertainty about robustness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "5cf3487e-0ee5-49c1-b6ad-a4675cd623e1",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The trial-type dependence of SNr activity could not be explained by differences in task difficulty, uncertainty, or value between SG and IS trials. While some neurons (39/216 ipsiversive, 31/216 contraversive) showed difficulty-dependent activity, there was minimal overlap with trial-type-dependent neurons (p = 0.32 and p = 0.56 for ipsiversive and contraversive directions, respectively).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C23 address a critical alternative explanation. The analysis in Figure 5 appropriately compares easy vs. difficult SG trials and shows minimal overlap with trial-type effects. However, the claim that value is equated between conditions (C23) is somewhat overstated\u2014while designed to be equal, experienced value differs due to performance differences, and the reinforcement learning model only partially addresses this. The statistical tests are appropriate but the conclusion could be more nuanced.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "c7bfa126-3e40-4278-bd5c-d6faaf134ce3",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Multivariate regression analysis revealed that SNr activity during the delay epoch was influenced by multiple task variables: previous choice (188/296 neurons), current choice (167/296), trial type (142/296), and reaction time (111/296). The largest fraction of neurons was modulated by previous choice, which is critical for determining the rewarded direction in IS blocks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C29 are supported by the regression analysis in Figure 6A. The multivariate approach appropriately accounts for correlations between predictors. However, the regression model does not report variance inflation factors or other multicollinearity diagnostics, which is important given that predictors like previous choice and trial type are likely correlated. The claim about previous choice being 'critical' (C29) is more of an inference than a direct result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "b79e0b62-c43d-4f31-a8d5-ff0d1b46b78e",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Time-resolved regression analysis showed dynamic changes in the influence of task variables on SNr activity. Before odor delivery, ~50% of neurons were influenced by previous choice. During odor sampling, previous choice influence decreased while current choice influence increased to ~67% by movement initiation. Trial type influence remained relatively constant at ~33% throughout the trial.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 and C36 are supported by the time-resolved analysis in Figure 6B-C. The sliding window approach (100 ms bins, 10 ms shifts) is appropriate for examining temporal dynamics. However, the analysis does not correct for multiple comparisons across time windows, which could inflate false positive rates. The qualitative patterns are clear, but quantitative claims about specific percentages should be interpreted cautiously.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "3bf6e68d-b07e-422a-972e-24d6dd7f3646",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SNr activity preceding orienting movements depends on whether movements are stimulus-guided or internally-specified, and this dependence cannot be fully explained by value, difficulty, or uncertainty. In some neurons, previous choice partially explains trial-type dependence. The authors conclude that SNr is differentially engaged by the two movement types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37 summarize the main findings. While the data support differential SNr activity between trial types (C33), the claim that this represents 'differential engagement' (C37) is an inference that goes beyond what the data directly show. The analysis rules out some alternative explanations (C34) but not all\u2014for example, differences in motor preparation timing or attention are not fully addressed. The conclusion is reasonable but somewhat overstated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "7d178a9d-76a2-426f-a927-4d6d7b5223eb",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The current findings extend prior primate work showing higher SNr activity for memory-guided vs. visually-guided saccades. The present study demonstrates that direction preference sometimes emerged before stimulus delivery in IS trials, and this pre-stimulus difference correlated with delay-epoch differences (r = 0.47, p = 4.8 \u00d7 10\u207b\u00b9\u2078). All neuron types (increasing/decreasing, ipsiversive/contraversive-preferring) showed trial-type differences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C44 appropriately contextualize the findings relative to prior work. The correlation analysis (C42) provides strong evidence that movement selection begins before stimulus delivery in IS trials. However, the claim that results 'generalize across species and movement types' (C40) is somewhat overstated\u2014this is a single study in mice, and true generalization would require replication. The comparison to primate studies is reasonable but the differences between memory-guided and internally-specified movements could be more clearly articulated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "d793b26b-89df-40ac-a5c3-a9f20ce9e4d9",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors propose a model extending the value-biasing framework to explain how internally-specified movements are facilitated. In this model, differential SNr activity in IS vs. SG trials leads to differential inhibition of superior colliculus neurons, thereby facilitating internally-specified movements. This extends prior models by suggesting SNr influence is modulated by internal representations beyond value.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C3, C47, C51, C52, C54, C56, C60, and C61 present a speculative model illustrated in Figure 7. While the model is conceptually reasonable and builds on established frameworks (Hikosaka et al., 2006), it remains largely untested. The model makes specific predictions about SNr-SC connectivity and functional consequences that are not directly tested in this study. The claim that internally-specified movements are 'facilitated' is inferred from shorter reaction times and neural activity patterns, but causality is not established. This represents an interesting hypothesis requiring future experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "25c6705d-c320-4148-9240-99c777d630b4",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior clinical research shows that Parkinson's disease patients exhibit greater deficits in internally-specified than visually-guided movements, potentially because visual cues engage intact pathways outside the basal ganglia such as the cerebellum.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 accurately cite prior clinical literature. The citations are appropriate and the characterization of the clinical phenomenon is accurate. This provides important context for interpreting the current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "ce391f54-32fd-456e-b9e4-abc1534269eb",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background claims about basal ganglia function: BG bias movement selection according to value, contribute to motor control by modulating inhibition on downstream structures, and show value-dependent activity. SNr is an output nucleus critical for orienting movements that exhibits both increases and decreases in activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C4-C9, and C14 accurately summarize established knowledge from prior literature with appropriate citations. These provide necessary background context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "57d41522-a61f-4e3f-ac67-77049832b3c8",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work has established that SNr activity is modulated by movement value, likely via dopaminergic input, and that this has been modeled as reward expectation modulating striatal inputs to bias SC activity. Anatomical studies show that ipsiversive-preferring SNr neurons project primarily to ipsilateral SC, while fewer neurons project contralaterally, especially in rodents.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50, C53, C55, and C58 accurately cite prior research on SNr function and anatomy. The anatomical claims are well-established and appropriately referenced. These provide important context for the proposed model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "c4cb49ae-efab-4909-b028-afdbad53f61b",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Slightly more SNr neurons prefer contraversive than ipsiversive movement (122/216 vs. 94/216), but contraversive-preferring neurons may preferentially project to non-tectal targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C57 is supported by data in Figure 3C. However, claim C59 is speculative and not directly tested. The speculation is reasonable given anatomical constraints but represents a hypothesis rather than a demonstrated result. This uncertainty affects interpretation of the model in Figure 7.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "7579d93b-bfab-4c3e-8d66-bbe41edb2ed7",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The findings are consistent with the view that internal representations of priors play a critical role in guiding motor output, and the results are sufficiently consistent with primate SNr studies to inform interpretation of previous work while offering novel insights.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 appropriately contextualize the findings within broader theoretical frameworks. The consistency with primate work is reasonable given the similarities in results, though the claim of 'sufficient consistency' is somewhat subjective. These represent appropriate interpretive claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    },
+    {
+      "id": "ad338a57-6bed-48d2-9203-c12b019fabbe",
+      "content_id": "a348e84d-7047-4970-8420-736e267c2cd5",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Methods: 296 well-isolated left SNr neurons were recorded from 4 male C57BL/6J mice (7-14 months old) across 54 sessions. Mice were water-restricted, housed on 12-hr light/dark cycles, and trained on the task over ~48 sessions for SG trials plus ~5 additional sessions for IS trials. Tetrodes were moved ~62.5 \u03bcm between sessions. Spike sorting used L-ratio < 0.70 and isolation distance > 6.5 criteria, excluding 12% of clusters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C75 describe the experimental methods. The methods are generally well-described and appropriate. However, some concerns: (1) only 4 mice were used, which is a small sample size for generalization; (2) only left SNr was recorded, which limits interpretation of lateralization effects; (3) the justification for spike sorting thresholds is not provided; (4) the claim that neurons across sessions are independent is based on waveform and response property changes, but this could miss slowly drifting recordings of the same neurons. These are minor concerns that don't invalidate the results but affect confidence in generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:19:30.354389Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1aee7cb0-1cc8-4211-9322-9e853b1cc24d",
+      "result_id": "ff558e70-ff5e-4160-85f8-1a493b9776cb"
+    },
+    {
+      "claim_id": "e22445b3-89dd-4b65-9a30-277c519fe434",
+      "result_id": "ff558e70-ff5e-4160-85f8-1a493b9776cb"
+    },
+    {
+      "claim_id": "91d0a3ef-2c6c-472f-aa8a-e2e9f78098a6",
+      "result_id": "8ae34f35-49ac-4678-98f8-75f7b56482ec"
+    },
+    {
+      "claim_id": "fdc44674-d229-4b9f-830a-60be82a6d28b",
+      "result_id": "8ae34f35-49ac-4678-98f8-75f7b56482ec"
+    },
+    {
+      "claim_id": "c4072ab0-5ef2-40c1-adbe-def5adf85deb",
+      "result_id": "8ae34f35-49ac-4678-98f8-75f7b56482ec"
+    },
+    {
+      "claim_id": "220c2a6e-ea06-44a6-9c89-e5d156785f23",
+      "result_id": "8ae34f35-49ac-4678-98f8-75f7b56482ec"
+    },
+    {
+      "claim_id": "c9697e6c-ddb4-4623-afd3-3b4a963d5c1f",
+      "result_id": "8ae34f35-49ac-4678-98f8-75f7b56482ec"
+    },
+    {
+      "claim_id": "27571217-8d37-42d8-9983-201702ec24e9",
+      "result_id": "924557a2-3305-4ade-a513-8e2d1f6fc8f6"
+    },
+    {
+      "claim_id": "a89331b9-8a48-4c6c-b7ab-984a6b94812c",
+      "result_id": "924557a2-3305-4ade-a513-8e2d1f6fc8f6"
+    },
+    {
+      "claim_id": "fe629812-d24b-4514-9bd2-71da524bcaff",
+      "result_id": "5cf3487e-0ee5-49c1-b6ad-a4675cd623e1"
+    },
+    {
+      "claim_id": "1c59af3d-7721-4a62-9fa6-7d52b88748f3",
+      "result_id": "5cf3487e-0ee5-49c1-b6ad-a4675cd623e1"
+    },
+    {
+      "claim_id": "26c84571-ae47-4143-961f-9a2af038ba33",
+      "result_id": "5cf3487e-0ee5-49c1-b6ad-a4675cd623e1"
+    },
+    {
+      "claim_id": "6d38cdd0-d6bb-4eb1-a047-1ebbc2ee73ef",
+      "result_id": "5cf3487e-0ee5-49c1-b6ad-a4675cd623e1"
+    },
+    {
+      "claim_id": "c5177f01-1d85-4d1f-b529-166858865e83",
+      "result_id": "c7bfa126-3e40-4278-bd5c-d6faaf134ce3"
+    },
+    {
+      "claim_id": "011cdde2-df22-4a9d-8f6e-edc95f688690",
+      "result_id": "c7bfa126-3e40-4278-bd5c-d6faaf134ce3"
+    },
+    {
+      "claim_id": "e9f80af9-55c1-4e0b-80e5-54e43d14507b",
+      "result_id": "c7bfa126-3e40-4278-bd5c-d6faaf134ce3"
+    },
+    {
+      "claim_id": "7934e6a1-345b-4985-8d35-1aec46b84c19",
+      "result_id": "c7bfa126-3e40-4278-bd5c-d6faaf134ce3"
+    },
+    {
+      "claim_id": "b9953255-5f33-45c9-8c51-570661ae2f79",
+      "result_id": "c7bfa126-3e40-4278-bd5c-d6faaf134ce3"
+    },
+    {
+      "claim_id": "f6dc94ce-9a55-4673-865d-602f793f045f",
+      "result_id": "c7bfa126-3e40-4278-bd5c-d6faaf134ce3"
+    },
+    {
+      "claim_id": "e86931c7-06dc-4e50-9102-8702589b966f",
+      "result_id": "b79e0b62-c43d-4f31-a8d5-ff0d1b46b78e"
+    },
+    {
+      "claim_id": "63475755-9e48-4793-960a-76def002363b",
+      "result_id": "b79e0b62-c43d-4f31-a8d5-ff0d1b46b78e"
+    },
+    {
+      "claim_id": "1ba86243-30ac-4163-a8d1-2fbcaa6fd33f",
+      "result_id": "b79e0b62-c43d-4f31-a8d5-ff0d1b46b78e"
+    },
+    {
+      "claim_id": "c04f4430-223f-4e9f-a29b-d7d5e69e2530",
+      "result_id": "b79e0b62-c43d-4f31-a8d5-ff0d1b46b78e"
+    },
+    {
+      "claim_id": "9a81edbd-2ea6-4a63-93bd-1848a4081a31",
+      "result_id": "3bf6e68d-b07e-422a-972e-24d6dd7f3646"
+    },
+    {
+      "claim_id": "814a4b63-7bb2-4ab1-8ed1-fbceafd9953a",
+      "result_id": "3bf6e68d-b07e-422a-972e-24d6dd7f3646"
+    },
+    {
+      "claim_id": "5e05779a-41f9-4a18-be98-ba381d9b77c1",
+      "result_id": "3bf6e68d-b07e-422a-972e-24d6dd7f3646"
+    },
+    {
+      "claim_id": "56bbd29d-5fc0-44f1-86e2-8a0713918476",
+      "result_id": "3bf6e68d-b07e-422a-972e-24d6dd7f3646"
+    },
+    {
+      "claim_id": "3a327c3c-4fab-4af3-995a-50ccb532d65b",
+      "result_id": "7d178a9d-76a2-426f-a927-4d6d7b5223eb"
+    },
+    {
+      "claim_id": "bb5c0a14-88c2-4ebd-8ef0-8eaf3547c1ed",
+      "result_id": "7d178a9d-76a2-426f-a927-4d6d7b5223eb"
+    },
+    {
+      "claim_id": "5518fb81-413c-48b2-a55e-3c7f775d7905",
+      "result_id": "7d178a9d-76a2-426f-a927-4d6d7b5223eb"
+    },
+    {
+      "claim_id": "6f880b34-c93a-4bf0-9772-706b511ecf59",
+      "result_id": "7d178a9d-76a2-426f-a927-4d6d7b5223eb"
+    },
+    {
+      "claim_id": "430c150c-2047-448a-8744-1fa2d1092aaa",
+      "result_id": "7d178a9d-76a2-426f-a927-4d6d7b5223eb"
+    },
+    {
+      "claim_id": "e40f9c9a-b21b-4778-b79e-3ca3983d2a58",
+      "result_id": "7d178a9d-76a2-426f-a927-4d6d7b5223eb"
+    },
+    {
+      "claim_id": "1546765c-4409-42eb-8504-155a0e919d13",
+      "result_id": "7d178a9d-76a2-426f-a927-4d6d7b5223eb"
+    },
+    {
+      "claim_id": "cd97e7d1-7a4b-4fc0-b058-e2337f2366cb",
+      "result_id": "d793b26b-89df-40ac-a5c3-a9f20ce9e4d9"
+    },
+    {
+      "claim_id": "f5feb915-f87a-4cb7-8d65-cba20e3bfadc",
+      "result_id": "d793b26b-89df-40ac-a5c3-a9f20ce9e4d9"
+    },
+    {
+      "claim_id": "ab5935f6-329a-4ec7-b9e5-07fffa92ebac",
+      "result_id": "d793b26b-89df-40ac-a5c3-a9f20ce9e4d9"
+    },
+    {
+      "claim_id": "56cbfd86-45c8-4af1-90df-0820875ce318",
+      "result_id": "d793b26b-89df-40ac-a5c3-a9f20ce9e4d9"
+    },
+    {
+      "claim_id": "dd23379b-0914-4c4b-9fd1-0c0409df9cc4",
+      "result_id": "d793b26b-89df-40ac-a5c3-a9f20ce9e4d9"
+    },
+    {
+      "claim_id": "62cd2290-b048-4c4a-bf32-d6093aacc251",
+      "result_id": "d793b26b-89df-40ac-a5c3-a9f20ce9e4d9"
+    },
+    {
+      "claim_id": "935ee65c-2c72-43aa-902b-ea0d4b2e83d3",
+      "result_id": "d793b26b-89df-40ac-a5c3-a9f20ce9e4d9"
+    },
+    {
+      "claim_id": "3cdea41f-2f65-4128-9065-4dffd8f970a3",
+      "result_id": "d793b26b-89df-40ac-a5c3-a9f20ce9e4d9"
+    },
+    {
+      "claim_id": "c234d222-5223-4cbf-a4aa-b519cdce9db5",
+      "result_id": "25c6705d-c320-4148-9240-99c777d630b4"
+    },
+    {
+      "claim_id": "a0ca7784-1107-4821-8add-37b9c6206676",
+      "result_id": "25c6705d-c320-4148-9240-99c777d630b4"
+    },
+    {
+      "claim_id": "7fa48d19-2369-45c2-b601-6ed0ab1df605",
+      "result_id": "ce391f54-32fd-456e-b9e4-abc1534269eb"
+    },
+    {
+      "claim_id": "599438bc-4a2c-43e3-87f2-50a314fa9f86",
+      "result_id": "ce391f54-32fd-456e-b9e4-abc1534269eb"
+    },
+    {
+      "claim_id": "f2c10cb7-a64d-49c3-ad85-a340e4d9c741",
+      "result_id": "ce391f54-32fd-456e-b9e4-abc1534269eb"
+    },
+    {
+      "claim_id": "c5ae3b08-4cf0-48b3-ae3c-f24e78254e78",
+      "result_id": "ce391f54-32fd-456e-b9e4-abc1534269eb"
+    },
+    {
+      "claim_id": "a7631020-0413-4ca0-a505-5ab2946b7383",
+      "result_id": "ce391f54-32fd-456e-b9e4-abc1534269eb"
+    },
+    {
+      "claim_id": "82bacf3b-87b5-44a8-b764-5a0b8545a888",
+      "result_id": "ce391f54-32fd-456e-b9e4-abc1534269eb"
+    },
+    {
+      "claim_id": "e770413d-6c8c-4612-8450-b1496b12e3e3",
+      "result_id": "ce391f54-32fd-456e-b9e4-abc1534269eb"
+    },
+    {
+      "claim_id": "3b65cc07-e7b5-4a96-a5fa-49e71ef1f70d",
+      "result_id": "ce391f54-32fd-456e-b9e4-abc1534269eb"
+    },
+    {
+      "claim_id": "df990675-3a42-4a97-882c-2ac53030fdb3",
+      "result_id": "57d41522-a61f-4e3f-ac67-77049832b3c8"
+    },
+    {
+      "claim_id": "5d81352b-55ba-4ded-bf14-6e8b0fd71111",
+      "result_id": "57d41522-a61f-4e3f-ac67-77049832b3c8"
+    },
+    {
+      "claim_id": "86ea1da0-6517-4d62-9767-887f154f8d97",
+      "result_id": "57d41522-a61f-4e3f-ac67-77049832b3c8"
+    },
+    {
+      "claim_id": "399e0588-b5dd-4244-bf62-c5e791eac01d",
+      "result_id": "57d41522-a61f-4e3f-ac67-77049832b3c8"
+    },
+    {
+      "claim_id": "de89d5f9-ebc2-4165-9159-a5c561352b17",
+      "result_id": "57d41522-a61f-4e3f-ac67-77049832b3c8"
+    },
+    {
+      "claim_id": "6936cb62-6e96-41d8-8dfc-09d3d3fa9350",
+      "result_id": "57d41522-a61f-4e3f-ac67-77049832b3c8"
+    },
+    {
+      "claim_id": "b8cf0916-af6f-4e4b-8c5b-b8aeafec42ad",
+      "result_id": "c4cb49ae-efab-4909-b028-afdbad53f61b"
+    },
+    {
+      "claim_id": "291e435a-46db-49d6-869a-830531a258c0",
+      "result_id": "c4cb49ae-efab-4909-b028-afdbad53f61b"
+    },
+    {
+      "claim_id": "bbfdefd8-97c3-4ba8-97c3-206093bd52e4",
+      "result_id": "7579d93b-bfab-4c3e-8d66-bbe41edb2ed7"
+    },
+    {
+      "claim_id": "a4403625-277a-4bce-93c9-66eea2a867d9",
+      "result_id": "7579d93b-bfab-4c3e-8d66-bbe41edb2ed7"
+    },
+    {
+      "claim_id": "d70b55f9-4e4f-4490-961a-86e187ff9616",
+      "result_id": "ad338a57-6bed-48d2-9203-c12b019fabbe"
+    },
+    {
+      "claim_id": "a6903cd2-64ac-4894-b9fa-be0ad7260375",
+      "result_id": "ad338a57-6bed-48d2-9203-c12b019fabbe"
+    },
+    {
+      "claim_id": "c03bfbf2-d433-42a7-be7b-ab0375dd4c55",
+      "result_id": "ad338a57-6bed-48d2-9203-c12b019fabbe"
+    },
+    {
+      "claim_id": "20c5de20-c16d-4e82-946c-6202534fd4b0",
+      "result_id": "ad338a57-6bed-48d2-9203-c12b019fabbe"
+    },
+    {
+      "claim_id": "7110343c-434c-49c8-9579-4c5999aa368c",
+      "result_id": "ad338a57-6bed-48d2-9203-c12b019fabbe"
+    },
+    {
+      "claim_id": "52c90f9c-b081-4232-b72d-7149f4c83a9b",
+      "result_id": "ad338a57-6bed-48d2-9203-c12b019fabbe"
+    },
+    {
+      "claim_id": "583af191-dc96-403f-96d0-7f6a2fff788c",
+      "result_id": "ad338a57-6bed-48d2-9203-c12b019fabbe"
+    },
+    {
+      "claim_id": "536588c3-091b-40a1-abca-b62c8b4afa70",
+      "result_id": "ad338a57-6bed-48d2-9203-c12b019fabbe"
+    },
+    {
+      "claim_id": "4b0d53bc-d728-4015-8ac0-66f586376078",
+      "result_id": "ad338a57-6bed-48d2-9203-c12b019fabbe"
+    },
+    {
+      "claim_id": "5a8823c8-5e77-4916-8f07-cc2bfb0644cd",
+      "result_id": "ad338a57-6bed-48d2-9203-c12b019fabbe"
+    },
+    {
+      "claim_id": "a490b31b-456a-482a-a197-8c9f13a4cd92",
+      "result_id": "ad338a57-6bed-48d2-9203-c12b019fabbe"
+    },
+    {
+      "claim_id": "3d2ea701-8d46-48cc-a8ed-5c22a2731110",
+      "result_id": "ad338a57-6bed-48d2-9203-c12b019fabbe"
+    }
+  ],
+  "comparisons": []
+}

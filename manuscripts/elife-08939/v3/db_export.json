@@ -1,0 +1,2026 @@
+{
+  "submission": {
+    "id": "fc35a3d0-9c2d-41d2-b025-f4fcba6f6baf",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:33:40.269293Z",
+    "updated_at": "2025-11-29T21:33:40.269293Z"
+  },
+  "content": [
+    {
+      "id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "submission_id": "fc35a3d0-9c2d-41d2-b025-f4fcba6f6baf",
+      "content_type": "manuscript",
+      "content_text": "# pp32 and APRIL are host cell-derived regulators of influenza virus RNA synthesis from cRNA\n\n## Authors\n\n- Kenji Sugiyama<sup>1</sup>\n- Atsushi Kawaguchi<sup>1</sup>\n- Mitsuru Okuwaki<sup>1</sup>\n- Kyosuke Nagata<sup>1</sup> ([ORCID: 0000-0003-2522-3561](https://orcid.org/0000-0003-2522-3561)) \u2020\n\n### Affiliations\n\n1. Department of Infection Biology, Faculty of Medicine University of Tsukuba Tsukuba Japan\n\n\u2020 Corresponding author\n\n## Abstract\n\nReplication of influenza viral genomic RNA (vRNA) is catalyzed by viral RNA-dependent RNA polymerase (vRdRP). Complementary RNA (cRNA) is first copied from vRNA, and progeny vRNAs are then amplified from the cRNA. Although vRdRP and viral RNA are minimal requirements, efficient cell-free replication could not be reproduced using only these viral factors. Using a biochemical complementation assay system, we found a novel activity in the nuclear extracts of uninfected cells, designated IREF-2, that allows robust unprimed vRNA synthesis from a cRNA template. IREF-2 was shown to consist of host-derived proteins, pp32 and APRIL. IREF-2 interacts with a free form of vRdRP and preferentially upregulates vRNA synthesis rather than cRNA synthesis. Knockdown experiments indicated that IREF-2 is involved in in vivo viral replication. On the basis of these results and those of previous studies, a plausible role(s) for IREF-2 during the initiation processes of vRNA replication is discussed.\n\n## Introduction\n\nThe influenza A virus genome is composed of eight single-stranded viral RNA (vRNA) segments of negative polarity that form viral ribonucleoprotein (vRNP) complexes with viral RNA-dependent RNA polymerases (vRdRPs) and nucleocapsid proteins (NPs). Both transcription and replication of vRNA are catalyzed by vRdRPs consisting of three viral proteins: PB1, PB2, and PA. Transcription of the influenza virus genome is initiated in a primer-dependent manner. The cap-1 structure of cellular mRNA was recognized by PB2 (Guilligay et al., 2008), and the capped RNA is cleaved 10\u201315 bases downstream of the 5'-terminus by the endonuclease activity of PA (Dias et al., 2009; Yuan et al., 2009). This cleaved, short RNA with a 5\u2019-cap structure serves as a primer for the initiation of transcription. After elongation of the nascent RNA chain, transcription is terminated by a virus-specific polyadenylation mechanism (Poon et al., 1999): vRdRP reaches the poly(U) stretch of the vRNA template adjacent to its 5'-end and is thought to slip there repeatedly, leading to the addition of a poly(A) tail at the 3'-end of the nascent viral RNA transcript. Replication of the viral genomic RNA takes place in a primer-independent manner and proceeds in two steps: in the first step, vRdRP synthesizes full-length RNA copies of positive polarity, termed complementary RNA (cRNA); and in the second step, progeny vRNAs are amplified from the cRNA template. Both cRNA and vRNA products from each replication step contain a 5'-triphosphate end group (Hay et al., 1982; Young and Content, 1971), indicating that both replications are initiated de novo.\n\nvRdRP and the viral RNA template are minimal and essential viral factors for viral RNA synthesis (Deng et al., 2005; Lee et al., 2002). NP is thought to play roles in efficient RNA elongation (Honda et al., 1988) and regulation of vRdRP activity for replication (Beaton and Krug, 1986; Newcomb et al., 2009; Portela and Digard, 2002; Shapiro and Krug, 1988). These observations, which were provided using mainly cell-free systems, concord with the fact that an in vivo viral mini-genome replicon system can be reconstituted by transfection of expression plasmids for PB1, PB2, PA, and NP and of a plasmid for vRNA driven by cellular RNA polymerase I (Pleschka et al., 1996). These viral factors catalyze cell-free viral RNA synthesis, but at a limited level. Furthermore, cell-free viral replication activity using viral factors could be observed in the presence of a large amount of viral factors (Vreede and Brownlee, 2007). In early cell-free studies using nuclei or nuclear extracts (NEs)\u00a0prepared from infected cells, a robust level of transcription took place and replication to some extent could be observed (Beaton and Krug, 1984; Jackson et al., 1982; Nagata et al., 1989). Dissection and reconstitution of a cell-free viral RNA synthesis system using vRNP complexes isolated from virions, an exogenously added model RNA template, and uninfected NEs\u00a0indicated that host-derived factors could be involved in the process of viral RNA synthesis (Shimizu et al., 1994). Using this assay system, we identified two stimulatory host factors, designated as RNA polymerase activating factors (RAF) -I and -II, which were identified as Hsp90 and UAP56/BAT1, respectively (Momose et al., 2001; 2002). Later, we found a factor, designated as influenza virus replication factor (IREF)-1, which upregulates unprimed cRNA synthesis from vRNA by the vRNP complex through promotion of the promoter clearance step and avoidance of premature abortive RNA synthesis. IREF-1 was shown to be identical to the minichromosome maintenance (MCM) complex (Kawaguchi and Nagata, 2007). Recently, several screening studies including high-throughput screenings have indicated that there may be more candidates for the host factors that affect viral RNA synthesis (Brass et al., 2009; Hao et al., 2008; Karlas et al., 2010; Konig et al., 2010; Naito et al., 2007; Watanabe et al., 2014). Among these potentially relevant candidates, some were further examined and characterized using in vivo and/or cell-free analyses.\n\nHere, we focused our study on identification of a novel host factor(s) that facilitates the efficient second step of replication, that\u00a0is, vRNA synthesis from the cRNA template. We found that a crude fraction of uninfected NE enables vRdRP to synthesize unprimed vRNA from the cRNA template effectively, and we thus designated the novel factor(s) responsible for this activity as IREF-2. Further fractionation and purification identified two host-derived factors, pp32 and APRIL. The target of these factors was shown to be a free form of the vRdRP trimeric complex. IREF-2 was found to preferentially upregulate vRNA synthesis rather than cRNA synthesis. Knockdown (KD)\u00a0of IREF-2 using short interfering dsRNA resulted in decreased levels of viral RNA in the infected cells. However, the primary transcription from the incoming vRNP complexes was not affected. These results suggest that IREF-2 functions as a host factor for vRNA synthesis from cRNA in infected cells.\n\n## Results\n\n### Purification of IREF-2 from NEs of uninfected cells\n\nTo establish a cell-free viral RNA synthesis system that mimics the second replication step, that\u00a0is, unprimed vRNA synthesis from a cRNA template, we used micrococcal nuclease-treated vRNP complexes (mnRNP) as an enzyme source and the 53 nucleotide (nt)-long RNA harboring both terminal sequences of cRNA derived from segment 8 (designed \u2018c53\u2019) as an exogenous cRNA model template (Shimizu et al., 1994). This enzyme source was established in an early study (Seong and Brownlee, 1992) and well characterized in subsequent studies (Galarza et al., 1996; Seong et al., 1992). These previous studies showed that mnRNP does not support unprimed vRNA synthesis from the cRNA template. NEs prepared from uninfected cells were fractionated through a phosphocellulose column by stepwise elution with increasing concentrations of KCl. P0.05 was a fraction unbound to the column, whereas P0.2, P0.5, and P1.0 were fractions eluted using 0.2 M, 0.5 M, and 1.0 M salt solutions, respectively. These fractions were examined individually in terms of their ability to promote cell-free vRNA synthesis reaction in the absence of any primer (Figure 1A, lanes 3\u20136). The 53 nt-long RNA product was formed only in the presence of the P0.05 fraction (lane 3). The RNA synthesis was dependent on the mnRNP, c53, and P0.05 fractions (Figure 1A, lanes 8\u201310). This novel activity present in the P0.05 fraction was designated as IREF-2. Next, we tried to purify and identify the factor responsible for the IREF-2 activity in the P0.05 fraction through fractionation using sequential column chromatography (Figure 1B). To determine fractions containing the IREF-2 activity at each column chromatography step, every fraction was individually assayed for RNA synthesis ability in the presence of mnRNP and the c53 model template, but in the absence of any added primer. On the basis of its chromatographic behavior, IREF-2 appears to be highly acidic. At the final purification step using an anion exchanger (the Mono-Q column), the IREF-2 activity was recovered in fractions eluted with about 500 mM of KCl (fraction numbers 6\u201310 in Figure 1C, upper panel). The fractions from the Mono-Q column were also analyzed by SDS-PAGE followed by silver staining (Figure 1C, lower panel). Comparison of the polypeptide elution patterns and the level of the IREF-2 activity strongly suggested that two polypeptides with molecular masses of approximately 32 and 31\u2009kDa corresponded to the IREF-2 activity (Figure 1C, arrows). The 32- and 31-kDa polypeptides were designated IREF-2\u03b1 and \u03b2, respectively.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/08939/elife-08939-fig1-v3.jpg)\n\n**Figure 1.:** (A) IREF-2 activity in uninfected nuclear extracts (NEs). Biochemical complementation assays using a cell-free vRNA replication system for fractions separated by phosphocellulose column chromatography were performed. The fractions, P0.05 (lane 3), P0.2 (lane 4), P0.5 (lane 5), and P1.0 (lane 6), were individually assayed in the cell-free viral RNA synthesis reaction employing 5 ng PB1-equivalent micrococcal nuclease-treated vRNP (mnRNP) as an enzyme source and 10 ng of the complementary RNA (cRNA) model template (c53), as described in the 'Materials and methods'. Dinucleotide ApG, serving as primer for viral RNA synthesis, was added to a final concentration of 0.2 mM (lane 1). To confirm the components required for the reactions, cell-free viral RNA synthesis with mnRNP and c53 in the presence of the P0.05 fraction was carried out (lane 7; identical to the conditions of lane 3). Simultaneously, reactions omitting the cRNA model template (lane 8), mnRNP (lane 9), or P0.05 fraction (lane 10; identical to the conditions of lane 2) were also carried out. After incubation at 30\u00b0C for 2 hr, each reaction product was collected and subjected to 10% Urea-PAGE followed by autoradiography. (B) Purification scheme of IREF-2 from uninfected HeLa cell NEs. For details regarding the column chromatography, see 'Materials and methods'. (C) Profile of the fractions from Mono-Q column chromatography at the final purification step. Each Mono-Q fraction (fraction numbers 1\u201311) or input material for the Mono-Q column chromatography (i.e., unbound fraction of the Uno-S column chromatography) was individually added to this cell-free viral RNA synthesis reaction in the absence of any added primers (upper panel). Each Mono-Q fraction was subjected to 11.5% SDS-PAGE, and polypeptides were visualized by silver staining (lower panel). The closed arrowhead indicates 53 mer RNA products. The open arrowhead (50 mer) indicates the product possibly generated by internal priming of ApG. The arrows indicate two candidate peptides responsible for IREF-2 activity. The molecular weight (kDa) positions are denoted on the left side of the panel.\n\n### Structure of IREF-2-dependent RNA products\n\nTo confirm the polarity of the IREF-2-dependent product, we carried out RNase T2 protection assays. ApG-primed RNA products using v53 and c53 as templates were also prepared as control materials (Figure 2A, lanes 1 and 4), in addition to the IREF-2-dependent RNA products (lane 7). Each radioactively labeled ApG-primed or unprimed 53 nt RNA product was hybridized with excess amounts of either the v53 or the c53 probe and then subjected to digestion with RNase T2, which preferentially digests ssRNA rather than dsRNA. Expectedly, the v53-directed ApG-primed RNA products were protected from digestion with RNase T2 by hybridization with the v53 probe (lane 2) but not the c53 probe (lane 3), whereas the c53-directed ApG-primed RNA products were protected by hybridization with the c53 probe (lane 6) but not with the v53 probe (lane 5), verifying the authenticity of this assay. The IREF-2-dependent RNA product was protected by hybridization with the c53 probe (lane 9) but not with the v53 probe (lane 8). These results clearly indicate that the IREF-2-dependent RNA product is of negative polarity, that\u00a0is, vRNA.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/08939/elife-08939-fig2-v3.jpg)\n\n**Figure 2.:** (A) RNase T2 protection assay. Radioactively labeled vRNA products were synthesized in the cell-free viral RNA synthesis system with micrococcal nuclease-treated vRNP (mnRNP) and the v53 model template in the presence of ApG (lanes 1\u20133), the c53 model template in the presence of ApG (lanes 4\u20136), and c53 in the presence of the IREF-2 fraction and in the absence of ApG (lanes 7\u20139). Viral RNA products were hybridized with excess amounts of nonlabeled v53 (lanes 2, 5, and 8) or c53 (lanes 3, 6, and 9), which was followed by digestion with RNase T2. Hybridized and digested RNA samples were extracted, collected, and subjected to 10% Urea-PAGE followed by autoradiography visualization. The closed arrowhead indicates 53-nt-long RNAs. (B) Analysis of the 5'-terminal structure of IREF-2-dependent unprimed vRNA products. [\u03b1-32P] GTP-labeled IREF-2-dependent unprimed vRNA products were prepared in the cell-free viral RNA synthesis system. The radioactively labeled 53-nt-long vRNA products were isolated from 10% Urea-PAGE, which was followed by excision and elution from the gel. A portion of the isolated 53-nt-long products was treated with alkaline phosphatase (lanes 2 and 4). Both nontreated and alkaline phosphatase-treated [\u03b1-32P] GTP-labeled unprimed vRNA products were digested with RNase T2 (lanes 1\u20134) or snake venom phosphodiesterase (lane 5). The digested materials were spotted onto a polyethylenimine (PEI)-cellulose thin layer and developed with 1 N acetic acid-4 M LiCl (4:1, v/v) (left panel; lanes 1 and 2) or 1.6 M LiCl (right panel; lanes 3\u20136) and visualized by autoradiography. For mobility standards, nonradiolabeled AMP, ADP, and ATP were also subjected to thin-layer chromatography and are indicated on the left side of each panel. For a marker of pppAp, [\u03b3-32P] ATP-labeled v53 synthesized using T7 RNA polymerase was also subjected to RNase T2 digestion and then to thin-layer chromatography (lane 6). The expected nucleotide positions are indicated on the right side of each panel by closed arrowheads.\n\nThe other important point to be discussed regarding authentic vRNA replication is whether the vRNA product possesses a triphosphate moiety at its 5'-terminus due to de novo initiation. Thus, we analyzed the structure of the 5'-terminus of the IREF-2-dependent vRNA product (Figure 2B). The vRNA product synthesized in the presence of [\u03b1-32P] GTP as a radioactive substrate in the reaction was expected to have 5'-xA[32p]Gp\u2026-3'. If the product is synthesized de novo, \u2018x\u2019 must be a triphosphate moiety (denoted as ppp). Upon digestion of the [\u03b1-32P] GTP-labeled IREF-2-dependent vRNA product with RNase T2, which cleaves on the 3' side of a phosphodiester bond, pppA[32p] derived from the 5'-terminus could be detected by thin-layer chromatography separation (Figure 2B, lanes 1 and 3). This product, putative pppA[32p], was not detected by treatment with alkaline phosphatase prior to RNase T2 digestion (lanes 2 and 4) or by digestion with snake venom phosphodiesterase (SV-PDE), which cleaves on the 5' side of a phosphodiester bond (lane 5). These results clearly reveal that a triphosphate moiety is present at the 5'-terminus of the IREF-2-dependent vRNA product, thereby indicating that the synthesis of this vRNA product is initiated de novo. Taken together, these results indicate that the IREF-2-dependent unprimed vRNA product is a bona fide unprimed vRNA replication product from the cRNA template.\n\n### Mass spectrometry analysis of IREF-2 proteins\n\nNext, we attempted to reveal the identity of IREF-2\u03b1 and \u03b2 polypeptides. To this end, fraction numbers 6 (for IREF-2\u03b1, 32\u2009kDa) and 9 (for IREF-2\u03b2, 31\u2009kDa), shown in Figure 1C, were individually subjected to separation by SDS-PAGE, and polypeptides corresponding to IREF-2\u03b1 (32\u2009kDa) and \u03b2 (31\u2009kDa), were excised from the gel and then digested with trypsin. The trypsin-digested oligopeptides derived from IREF-2\u03b1 and \u03b2 were then analyzed using matrix-assisted laser desorption-ionization time-of-flight mass spectrometry (MALDI-TOF MS). By comparing the molecular masses of the oligopeptides from each IREF-2 protein obtained by MALDI-TOF MS analysis (see Supplementary file 1) with the database, we identified these IREF-2 proteins as follows: IREF-2\u03b1 was shown to be identical to pp32 (phosphoprotein with a molecular mass of 32\u2009kDa; accession number NP_006296) (Malek et al., 1990) and also known as leucine-rich acidic nuclear protein, inhibitor of protein phosphatase 2A\u00a0(I1pp2A), and putative HLA class II-associated protein\u00a0I\u00a0(Matilla and Radrizzani, 2005). IREF-2\u03b2 was shown to be identical to APRIL (acidic protein rich in leucines; accession number NP_006392) (Mencinger et al., 1998), also named proliferation-related acidic leucine-rich protein or silver-stainable protein 29 (Matilla and Radrizzani, 2005).\n\nBoth IREF-2\u03b1/pp32 and IREF-2\u03b2/APRIL exhibit high homology (71% sequence identity and 81% sequence similarity) and belong to the acidic nuclear phosphoprotein 32-kDa family (ANP32 family; pp32 and APRIL are also named ANP32A and ANP32B, respectively). These two proteins are encoded by separate genes and expressed mainly in the nuclei of variety kinds of tissues. Each IREF-2 protein is able to exist stably as a monomer and functions redundantly in multiple biological processes as an I1pp2A (Li et al., 1996a), a ligand to HuR that stabilizes ARE-containing mRNA (Brennan et al., 2000), a component for INHAT activity (Seo et al., 2001). The C terminus, comprising one-third of each protein, is extremely acidic, being composed of approximately 70% glutamic acid and aspartic acid residues, while the N-terminal region, comprising two-thirds of the protein, currently termed a leucine-rich-repeat, forms a horseshoe-shaped solenoid protein domain (Huyton and Wolberger, 2007; Tochio et al., 2010). By previous physical and regulatory mapping analyses, pp32 (ANP32A) was shown to be a host protein related to influenza virus infection (Shapira et al., 2009). In addition, a previous proteomic study identified pp32 and APRIL (ANP32B) as binding partners to the influenza vRdRP complex (Bradel-Tretheway et al., 2011). Recently, a genomewide RNAi screening study identified APRIL as one of nine \u2018top hit\u2019 genes affecting the viral RNA synthesis process in infected cells (Watanabe et al., 2014). However, functional analyses for IREF-2/ANP32s have not been carried out, and thus their functional importance remains unclear.\n\n### Identification of pp32 and APRIL as IREF-2\n\nMono-Q chromatography could not separate IREF-2\u03b1/pp32 and IREF-2\u03b2/APRIL completely. Furthermore, several other polypeptides were also observed in these fractions (Figure 1C, fraction numbers 6\u201310). Therefore, we needed to confirm that pp32 and APRIL have authentic IREF-2 activity before any further molecular characterization. To this end, we prepared native and recombinant IREF-2 proteins and confirmed the quality of each protein preparation by silver staining and western blot analysis with anti-pp32 or anti-APRIL antibodies (Figure 3\u2014figure supplement 1). Both native and recombinant IREF-2 proteins supported cell-free unprimed RNA synthesis using mnRNP and the c53 model template in a dose-dependent manner (Figure 3A, lanes 2\u20134 and 5\u20137, or lanes 8\u201311 and 12\u201315, respectively). These results clearly indicate that pp32 and APRIL are authentic proteins responsible for IREF-2 activity, able to function independently of each other. We also tested the IREF-2 activity of an acidic protein, TAF-I\u03b2/SET (Nagata et al., 1995). TAF-I\u03b2/SET was reported to exhibit similar functions to pp32 as an inhibitor of PP2A phosphatase (Li et al., 1996b) or INHAT (Seo et al., 2001). TAF-I\u03b2/SET did not exhibit any IREF-2 activity at all (lanes 16\u201318), suggesting that its acidic property is insufficient for IREF-2 activity.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/08939/elife-08939-fig3-v3.jpg)\n\n**Figure 3.:** (A) Dose response of IREF-2. Native or recombinant IREF-2 proteins were added to the cell-free viral RNA (vRNA) synthesis reaction using micrococcal nuclease-treated vRNP (mnRNP) and the c53 model template in the absence of primer. Native pp32 (lanes 2\u20134), native APRIL (lanes 5\u20137), recombinant pp32 (lanes 8\u201311), and recombinant APRIL (lanes 12\u201315) were used as follows: 5 ng (lanes 2, 5, 8, and 12), 15 ng (lane 3, 6, 9, and 13), 50 ng (lanes 4, 7, 10, and 14) and 150 ng equivalent (lanes 11 and 15) of IREF-2 proteins. Recombinant TAF-I\u03b2/SET protein prepared using an Escherichia. coli expression system (33, 110, and 330 ng) was also tested (lanes 16\u201318). After incubation at 30\u00b0C for 2 hr, the RNA products were collected and analyzed by 10% Urea-PAGE followed by autoradiography. (B) Template preference of IREF-2-dependent viral RNA synthesis. Viral RNA replication reactions were performed in the cell-free viral RNA synthesis system using mnRNP and either v53 (lanes 1\u20135) or c53 (lanes 6\u201310) as viral model templates for vRNA and complementary RNA (cRNA), respectively. ApG at a final concentration of 0.2 mM (lanes 1 and 6) or 30, 100, and 300 ng of recombinant pp32 (lanes 3\u20135 and 8\u201310) was added to the reaction. (C) Effect of IREF-2 on cRNA synthesis from vRNP. Cell-free viral RNA synthesis using 2 ng PB1-equivalent of vRNP as the enzyme source and an endogenous genomic vRNA template were carried out in the presence (lane 1) or absence (lanes 2\u20138) of 0.2 mM ApG. Recombinant pp32 (lanes 3\u20135, 30, 100, and 300 ng, respectively) was added to the reactions. As a positive control, 1.5, 5, and 15 ng of recombinant IREF-1/MCM were also used (lanes 6\u20138). The RNA products were collected and analyzed by 4% Urea-PAGE followed by autoradiography. One-third (33%) of the total products derived from the ApG-primed cRNA synthesis were subjected to Urea-PAGE (lane 1). (D) Effect of IREF-2 on cap-snatching viral transcription. Cell-free viral RNA synthesis reactions were performed using mnRNP as the enzyme source and the exogenous model vRNA template (v53) in the presence of 0.2 mM ApG (lane 1) or globin mRNA as the 5\u2019-capped RNA donor (lanes 2\u20135). Recombinant pp32 (lanes 3\u20135, 30, 100, and 300 ng, respectively) was added to the reaction.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08939/elife-08939-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Native or recombinant IREF-2 proteins (50 ng) were subjected to 11.5% SDS-PAGE followed by silver staining (lanes 1\u20134) and western blot analysis with anti-pp32 antibody (lanes 5\u20138) or anti-APRIL antibody (lanes 9\u201312). The Mono-Q fraction 6 (shown in Figure 1C) was used as native pp32 (lanes 1, 5, and 9). Mono-Q fractions 9 and 10 (also shown in Figure 1C) were further purified with Mono-Q and used as native APRIL (lanes 2, 6, and 10). Recombinant pp32 (lanes 3, 7, and 11) and APRIL (lanes 4, 8, and 12) were prepared using the Escherichia. coli expression system, as described in 'Materials and methods'.\n\nWe therefore next examined the template preference of IREF-2. Either v53 or c53 was used as the model RNA template for the cell-free reactions (Figure 3B). Notably, the unprimed RNA product was observed from the cRNA template in an IREF-2-dependent manner (Figure 3B, lanes 8\u201310), but a significant level of cRNA synthesis was not detected when the vRNA template was used (lanes 3\u20135). These results suggest that IREF-2 preferentially regulates vRNA synthesis from the cRNA template, that\u00a0is, the second step of the replication mechanism. Furthermore, the effect of IREF-2 on cRNA synthesis from the vRNP complex was also examined (Figure 3C). Cell-free viral RNA synthesis using vRNP complexes as the enzyme and endogenous vRNA template source, that\u00a0is, the vRdRP and genomic vRNA of each segment, was performed in the absence of a primer. As previously observed, replicative cRNA synthesis from the genomic vRNA templates was stimulated by recombinant IREF-1/MCM (Figure 3C, lanes 6\u20138), which is known to stimulate promoter clearance during replication (Kawaguchi and Nagata, 2007). In contrast, no significant change induced by pp32 was observed (lanes 3\u20135). This finding indicates that IREF-2 is not involved in cRNA synthesis from endogenous vRNA and that the function of IREF-2 is distinct from that of IREF-1/MCM. This observation also confirms the template polarity preference of IREF-2 (Figure 3B).\n\nNext, to address whether IREF-2 affects viral transcription, cap-snatching viral transcription was performed in the cell-free system using 5\u2019-capped mRNA of \u03b2-globin (GmRNA) as a 5\u2019-cap donor for viral transcription (Figure 3D). By adding GmRNA instead of ApG, the transcriptional product could be detected at a 10\u201312 nt longer size than that of the vRNA template (compare lanes 1 and 2), consistent with the findings of a previous report (Plotch et al., 1979). After addition of pp32 to this cell-free transcription reaction, no obvious change was observed (lanes 3\u20135), suggesting that IREF-2 has neither a positive nor a negative effect on viral mRNA transcription.\n\n### Interaction between IREF-2 and viral RNA polymerases\n\nTo determine a regulatory target(s) of IREF-2, we performed interaction assays using IREF-2 and viral factors related to the viral RNA synthesis process. To date, no report has been published showing that pp32 and APRIL bind directly to RNA. In fact, the interaction between IREF-2 proteins and the model RNA template was not observed (Figure 4\u2014figure supplement 1). Therefore, we performed GST pull-down assays using lysates prepared from mammalian cells (HEK293T) expressing GST-tagged IREF-2 (GST-IREF-2). Forty-eight hours after transfection with GST-derivative expression plasmids, the cells were infected with influenza virus at a multiplicity of infection (MOI) of 3 for 6 hr, and the viral factors bound to the GST-protein were then analyzed. Each subunit of the vRdRP complex (PB1, PB2, and PA) was co-precipitated with both GST-pp32 and GST-APRIL, but NP was not (Figure 4A, lanes 2 and 3). Instead, only NP was co-precipitated with GST-RAF2p48, which functions as a chaperone for NP (Momose et al., 2001) (lane 4). To further confirm this, lysates prepared from cells exogenously expressing polymerases (Figure 4B, lanes 1\u20134) or NP (lanes 5\u20138) and GST-derivative proteins were also examined. Exogenously expressed trimeric complexes of the viral polymerases were co-precipitated with both GST-pp32 and GST-APRIL (lanes 2 and 3), but NP was not detected at all (lanes 6 and 7). GST-RAF2p48 interacted with NP, but not with any polymerase subunits (lanes 4 and 8). Thus, we concluded that the binding target of IREF-2 is the trimeric complex of vRdRP, not NP. Moreover, the fact that the interaction between IREF-2 and NP could not be observed in the infected cells suggested that IREF-2 might interact with a free form of vRdRP, but not with vRdRP, in RNP complexes in infected cells. To confirm this, the amount of viral RNA in the complex of IREF-2 and vRdRP was quantitatively determined. Complexes of GST-pp32 with vRdRP were prepared from infected cells by GST pull-down, as shown in Figure 4A (lane 2). The RNA pulled down with the complexes was then extracted, and the amount of viral RNA (here, segment 5) was determined by reverse transcription-mediated quantitative PCR (RT-qPCR). We found that 1 pmol of vRdRP complexed with GST-pp32 contains <0.5 fmol of segment 5 (vRNA, cRNA, and viral mRNA) only, suggesting that IREF-2 tends to interact with a free form of vRdRP in infected cells.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/08939/elife-08939-fig4-v3.jpg)\n\n**Figure 4.:** (A) Interaction between IREF-2 and viral proteins in infected cells. HEK293T cells were transfected with 10 \u03bcg of plasmids expressing GSTnls (lane 1), GST-pp32 (lane 2), GST-APRIL (lane 3), and GST-RAF2p48 (lane 4). At 48 hr post transfection, influenza virus was infected at an multiplicity of infection (MOI) of 3. At 6 hr post infection, the transfected and infected cells were collected, lysed, and subjected to GST pull-down assays, as described in 'Materials\u00a0and\u00a0methods'. The pulled-down materials and 3% equivalent of the input samples were subjected to SDS-PAGE followed by western blot analysis with anti-PB1, -PB2, -PA, -NP, and -GST (only the pull-down sample) antibodies. (B) Interaction between IREF-2 and viral proteins in the transfected cells. HEK293T cells were transfected with 5 \u03bcg of plasmids expressing GSTnls (lanes 1 and 5), GST-pp32 (lanes 2 and 6), GST-APRIL (lanes 3 and 7), and GST-RAF2p48 (lanes 4 and 8) and also co-transfected with the plasmids for the viral polymerase subunits (5 \u03bcg of pCAGGS-PB1, 12.5 \u03bcg of pCAGGS-PB2, and 2.5 \u03bcg of pCAGGS-PA [lanes 1\u20134] or 10 \u03bcg of pCAGGS-NP for NP expression [lanes 5\u20138]). Forty-eight hours post transfection, the cotransfected cells were collected, lysed, and subjected to GST pull-down assays. The input samples (3%) and pulled-down materials were subjected to SDS-PAGE followed by western blot analysis. (C) Interaction between IREF-2 and trimeric or binary complexes of vRdRP. HEK293T cells were cotransfected with 5 \u03bcg of plasmids expressing GSTnls (lanes 1, 4, and 7), GST-pp32 (lanes 2, 5, and 6), GST-APRIL (lanes 3, 6, and 9), 5 \u03bcg of pCAGGS-PB1cFlag (lanes 1\u20139), 12.5 \u03bcg of pCAGGS-PB2 (lanes 1\u20136), and 2.5 \u03bcg of pCAGGS-PA (lanes 1\u20133 and 7\u20139). Forty-eight hours post transfection, the lysates from the cotransfected cells were subjected to GST pull-down assays or immunoprecipitation assays with anti-Flag antibody. The precipitated materials were subjected to SDS-PAGE followed by western blot analysis.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08939/elife-08939-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Radioactively labeled 53-nt-long model vRNA and complementary RNA(cRNA) probes (v53 and c53; 246.9 cpm/fmol) were synthesized by T7 RNA polymerase using [\u03b1-32P] GTP and isolated by gel excision. Each 500 pM (final concentration) of the labeled viral RNA probes, v53 (lanes 1\u20137) and c53 (lanes 8\u201314) was incubated with 10 nM or 50 nM of recombinant NP prepared using the Escherichia. coli expression system (lanes 2, 3, 9, and 10), recombinant pp32 (lanes 4, 5, 11, and 12), and recombinant APRIL (lanes 6, 7, 13, and 14) in 50 mM HEPES-NaOH (pH 7.9), 50 mM KCl, 0.5 U/\u03bcl of RNase inhibitor, and 15% (v/v) glycerol at 30\u00b0C for 30 min. After incubation, each binding mixture was loaded onto 0.6% agarose gel (buffered with TBE) and separated by electrophoresis (50 V for 3 hr). The gel was dried and visualized by autoradiography.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/08939/elife-08939-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** HEK293T cells were transfected with plasmids expressing PB1 (lane 2) or PB1cFlag (lanes 3\u20135), PB2 (lanes 2\u20134), and PA (lanes 2, 3, and 5), as indicated. At 48 hr post transfection, the cells were harvested, lysed, and subjected to immunoprecipitation assays using anti-Flag antibody, as described in 'Materials and methods'. Input and precipitated materials were analyzed by SDS-PAGE, followed by western blot analysis using the antibodies indicated on the right side of each panel.\n\nWe also tried to determine which subunit of vRdRP is the binding target of IREF-2. Cells expressing GST-tagged derivative proteins and vRdRP trimeric complexes or binary subcomplexes were prepared and subjected to GST pull-down assays (Figure 4C). Here, a Flag epitope tag was attached to the PB1 subunit, and formation of vRdRP subcomplexes, such as a trimeric complex (lanes 1\u20133) and a binary complex of PB1-PB2 (lanes 4\u20136) and of PB1-PA (lanes 7\u20139), was confirmed by immunoprecipitation with anti-Flag antibodies (\u2018Flag IP\u2019 panels). Neither of the binary subcomplexes was pulled down with GST-IREF-2 (\u2018GST pull-down\u2019 panels, lanes 5, 6, 8, and 9), whereas the interaction with IREF-2 could be observed for the vRdRP trimeric complex (lanes 2 and 3). A similar characteristic interaction property could be observed for each endogenous IREF-2 protein (Figure 4\u2014figure supplement 2). Consistent with this observation, each IREF-2 protein was previously reported to be associated with the vRdRP trimeric complex, but not with the binary complex of PB1-PA (Bradel-Tretheway et al., 2011). And interestingly, the PB1-PB2 subcomplex was also found not to be associated with IREF-2, as shown here. This result strongly suggests that both the PA and the PB2 subunits in the trimeric complex of vRdRP are requisite for stable interaction with IREF-2.\n\n### Effect of IREF-2 on viral RNA synthesis in infected cells\n\nUsing a cell-free viral RNA synthesis system, we demonstrated that IREF-2 enables vRdRP to replicate vRNA from a cRNA template preferentially. Next, to show the function of IREF-2 in vivo, the effect of IREF-2 KD on viral RNA synthesis in infected cells was examined. By transfection with short RNAi duplexes targeting pp32 and APRIL, the expression levels of both proteins were strongly blocked (Figure 5A). Both the control KD and the IREF-2 KD cells were infected with influenza virus, and the intracellular viral RNA level was measured. Upon KD of pp32 or APRIL, the levels of vRNA, cRNA, and viral mRNA decreased to about 50% to \u201380% of the control level in each infection period (Figure 5B). By silencing both pp32 and APRIL (\u2018double-KD\u2019 cells; see Figure 5A, lane 6), each viral RNA level was additively decreased to about 25% to \u2013 50% of the control level (Figure 5B). These results suggest that IREF-2, pp32, and APRIL redundantly play a positive role in viral RNA synthesis in infected cells. Although IREF-2 was shown to preferentially regulate vRNA synthesis from a cRNA template in a cell-free system, the decrease patterns of the vRNA, cRNA, and viral mRNA syntheses were comparable in the IREF-2 KD cells.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/08939/elife-08939-fig5-v3.jpg)\n\n**Figure 5.:** (A) Endogenous IREF-2 protein levels in knockdown (KD) HeLa cells. The whole-cell lysates of control KD cells (lane 3), pp32 KD cells (lane 4), APRIL KD cells (lane 5), and both pp32 and APRIL KD cells (termed double-KD cells; lane 6) were subjected to SDS-PAGE followed by western blot analysis with antibodies, as indicated on the right side of the panel. To measure the KD levels, 10% and 30% of the lysates of the control KD cells were also subjected to SDS-PAGE followed by western blot analysis with antibodies, respectively (lanes 1 and 2). (B) Viral RNA levels in infected KD HeLa cells. Total RNA was extracted from mock-infected or infected KD cells at an multiplicity of infection (MOI) of 1 at 3, 6, and 9 hr post infection. vRNA, complementary RNA(cRNA), and viral mRNA derived from segment 5 were quantitatively determined by RT-mediated qPCR (RT-qPCR), as described in 'Materials and methods'. (C) Primary transcription level in infected KD HeLa cells. Total RNA was extracted from mock-infected or infected KD cells at an MOI of 10 for 3 hr in the presence or absence of cycloheximide (CHX). Viral mRNA derived from segment 5 was quantitatively determined by RT-qPCR. (D) Effect of IREF-2 on progeny virus production. Control KD and IREF-2 double-KD A549 cells were infected with FluV (WSN/33 strain) at an MOI of 0.001. The number of infectious progeny viruses produced from control KD and IREF-2 double-KD A549 cells at each time point were plotted (upper panel), and the ratios of progeny viruses produced from IREF-2 double-KD A549 cells compared with those from control KD cells were also represented as a percentage of the control (lower panel). Each quantitative result is presented as the average with the standard deviation from at least three independent experiments. Significance was determined using Student\u2019s t test. n.s.: not significant.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/08939/elife-08939-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** HEK293T of control and IREF-2 knockdown (KD) cells (approximately, 3\u00a0\u00d7\u00a0105 cells in a 22-mm-diameter dish) were transfected with expression plasmids pCAGGS-PB1, -PB2, -PA, and -NP (15 ng each). In addition, 1.5 ng of either phPolI-vNS-Luc (for expression of vNS-Luc; left panel) or phPolI-cNS-Luc (for expression of cNS-Luc; right panel) was co-transfected as a viral genomic source. At 24 hr post co-transfection, viral reporter levels in both the control KD and the IREF-2 KD cells were quantitatively determined by RT-qPCR as described previously (Kawaguchi et al., 2011) and in 'Materials and methods'. Quantification and standard deviations of the viral reporter RNA levels from IREF-2 KD cells expressed as a percentage of the value from the control KD cells. Each experiment was repeated three times.\n\nWe tried to address whether the effect of IREF-2 on vRNA and cRNA syntheses could be distinguished by using a mini-genome replicon system with either the vRNA reporter (vNS-Luc) or the cRNA reporter (cNS-Luc) as the source of the viral genome (Figure 5\u2014figure supplement 1). In both templates, the levels of three kinds of viral RNAs were shown to be significantly decreased by IREF-2 KD as observed in the infected IREF-2 KD cells (Figure 5B). On the basis of the assumption that IREF-2 preferentially stimulates vRNA synthesis rather than cRNA synthesis, the vRNA level is expected to be more reduced by IREF-2 KD than the cRNA level in these experiments. In the case of vNS-Luc as a viral genomic source, the vRNA level appeared to be slightly more decreased by IREF-2 KD (12% of the control) when compared with the decrease in the cRNA level (23% of the control). Meanwhile, all viral reporter RNA levels were shown to be decreased almost comparably (46%-\u2013 48% reductions) when cNS-luc was used. From these results, the difference in the reduction level of vRNA and cRNA was insufficient to distinguish the effects of IREF-2 KD on vRNA and cRNA syntheses in these reporter experiments. This could be interpreted as follows: vRNA serves as a template for cRNA synthesis and mRNA transcription, and cRNA serves as a template for vRNA synthesis. Therefore, a defect in a certain specific step of viral RNA synthesis would influence the other steps and would result in declines in the accumulation levels of all viral RNA species, as observed in a previous study (Maier et al., 2008).\n\nNext, we tried to address whether IREF-2 plays a role in transcription. To examine the effect of IREF-2 KD on primary transcription, we used a translation inhibitor, cycloheximide. In infected cells, cycloheximide prevents the synthesis of viral proteins required for the viral RNA replication process, resulting in the blockage of cRNA and vRNA syntheses. Therefore, only viral mRNA synthesis from incoming vRNP is detectable in the presence of cycloheximide. Control KD and pp32 and APRIL double-KD cells (identical to lanes 3 and 6 in Figure 5A) were infected at high multiplicity (MOI of 10) for 3 hr in the presence or absence of cycloheximide. In the presence of cycloheximide, the accumulation level of the primary transcription appeared to be almost the same for the control KD and IREF-2 double-KD cells, while in the absence of cycloheximide, a significant reduction was observed in the IREF-2 double-KD cells (Figure 5C). These results demonstrate that IREF-2 had no effect on the primary transcription, consistent with the result presented in Figure 3D showing that IREF-2 had no effect on the cap-snatching transcription in the cell-free reaction system. Thus, it is quite possible that IREF-2 stimulates viral RNA replication in vivo. Nevertheless the function of IREF-2 in cRNA synthesis and vRNA synthesis was not distinguishable in these experiments.\n\nFinally, the effect of IREF-2 KD on virus growth was examined by using human alveolar basal epithelial cells (A549 cell line). Upon silencing both IREF-2 proteins (IREF-2 double-KD), significant decrease in progeny virus production (approximately, 90% of reduction at each time point) could be observed (Figure 5D). This seems to be attributable to the deficiency in the viral RNA replication process caused by IREF-2 KD.\n\n## Discussion\n\nIn this study, we have identified IREF-2 consisting of pp32 and APRIL as host factors, which upregulate the second step of influenza viral RNA replication, that\u00a0is, vRNA synthesis from a cRNA template. These host factors are well known as members of the ANP32 family and exhibit high homology with each other. Both are evolutionarily conserved in many organisms, including birds and swine, and are ubiquitously expressed in a variety of tissues, including lung tissue. Recently, an small-interfering RNA\u00a0(siRNA) screening study suggested that APRIL is a positive regulator of viral RNA biogenesis (Watanabe et al., 2014). In that report, the interaction between host proteins and viral factors singly expressed in mammalian cells was also examined, but interaction between APRIL with vRdRP subunit was not observed, and the authors speculated that the effect of APRIL on viral RNA synthesis might be indirect. However, we have shown that IREF-2 can interact efficiently with the trimeric complex of PB1, PB2, and PA, but not with any subcomplexes (Figure 4C). Therefore, APRIL seems not to be co-precipitated with any singly expressed vRdRP subunit (Watanabe et al., 2014). It is noteworthy that interaction between IREF-2 and the vRdRP trimeric complexes was observed in infected cells and cells cotransfected with all three subunit expression vectors, while interaction with the RNP complexes could not be observed in the infected cells (Figure 4A). On the basis of these observations, the interaction between IREF-2 and vRdRP appears to be temporary during the process of cRNA template binding and vRNA synthesis, and once vRdRP starts vRNA synthesis, the associating IREF-2 protein may be released from vRdRP. The exact timing of the release of IREF-2 from the RNP complexes during replication, for\u00a0example, at the initiation step of vRNA synthesis, during the transition step from initiation to elongation, or during elongation, remains to be solved. Cell-free analyses clearly demonstrated that IREF-2 is preferentially involved in vRNA synthesis from the cRNA template rather than in cRNA synthesis from the vRNA template (Figures 3B,C). The accumulation level of viral RNA in infected IREF-2 KD cells was significantly decreased, but not completely abolished (Figure 5B). This incomplete abolishment could be interpreted as due to the involvement of another unidentified host factor(s) in the viral RNA replication process. Recent studies have demonstrated that viral NS2 protein and virus-induced small leader RNA play important roles in the RNA replication process (Perez et al., 2010; 2012; Robb et al., 2009). Taken together, these findings suggest that the negative effect of IREF-2 KD on viral RNA replication might be compensated by other host and/or viral factor(s) and/or other regulation mechanism(s) and that viral replication at some limited level could still be observed in IREF-2 KD cells.\n\nApparently, the function of IREF-2 is distinct from that of IREF-1/MCM (Figure 3C), which plays a role in promoter clearance during viral RNA synthesis, but how and in which step IREF-2 is involved is unclear. Previously, Deng et al demonstrated that the initiation steps of vRNA synthesis and cRNA synthesis take place in different ways: vRNA synthesis is initiated in an \u2018internal initiation and realignment\u2019 manner, whereas cRNA synthesis is initiated at the 3\u2019-terminus of the vRNA template (Deng et al., 2006b). The reported initiation mechanism of vRNA synthesis in this model describes that dinucleotide pppApG is internally synthesized de novo so as to be complementary to U4C5 (in which the numbers indicate the nucleotide positions of the cRNA from the 3\u2019-terminus and are denoted as \u2018c3\u2019U4C5\u2019 in the discussion below). The 3\u2019-terminal sequence of cRNA is composed of 3'-U1C2A3U4C5\u2026 -5'. Therefore, this internally synthesized pppApG would be realigned to the 3\u2019-terminal nucleotide positions 1 and 2 (denoted as \u2018c3\u2019U1C2\u2019) of the template cRNA, followed by subsequent extension resulting in the full-length vRNA product. On the basis of this model (Deng et al., 2006b), the differential effect of IREF-2 on vRNA and cRNA synthesis (Figure 3B) leads to the hypothetical speculation that IREF-2 functions at an initiation process specific to vRNA synthesis using cRNA as the template. In another previous report by Zhang et al, unprimed vRNA synthesis appears to be initiated de novo at the c3\u2019U4C5 position of the cRNA template but \u2018realignment\u2019 does not take place. And vRdRP extends a nascent RNA chain from the internal position, resulting in a short vRNA product lacking the first three nucleotides at the 5'-terminal sequence of the authentic vRNA product (Zhang et al., 2010a). In their cell-free vRNA synthesis system, such abnormal 3 nt-shorter vRNA was a major product, whereas full-sized vRNA was synthesized only to a limited extent at high concentrations of the UTP substrate. In our study, however, IREF-2-dependent vRNA products were shown to be exclusively full\u00a0length. Taking these results together, we postulated that IREF-2 regulates the initiation step of vRNA synthesis as follows: (1) by preventing improper extension prior to pppApG realignment, (2) by facilitating the conformational change of vRdRP and/or the cRNA template to promote the realignment, and/or (3) by stabilizing the initiation-intermediate complex when pppApG is already realigned onto c3'U1C2 and ready for proper elongation. To address these possibilities, further functional studies are needed.\n\nIn the two previous reports by Deng et al. and Zhang et al., cell-free vRNA synthesis could be reproduced without any exogenously added primer and host proteins, while in our cell-free system, no vRNA synthesis occurred without any added primer and host proteins, as was observed previously (Galarza et al., 1996; Seong and Brownlee, 1992; Seong et al., 1992). They used recombinant vRdRP purified from plasmid-transfected mammalian cells (Deng et al., 2006b) or baculovirus-infected insect cells (Zhang et al., 2010a; 2010b), while we used mainly mnRNP prepared by treatment of virion-derived vRNP complexes with MNase as the enzyme source. Therefore, the intrinsic nature of vRdRPs seems to differ one from the other, and recombinant vRdRP is possibly competent to initiate spontaneously de novo vRNA synthesis to some extent. Another difference among these enzyme sources is the presence of NP in the mnRNP preparation. At present, several lines of evidence suggest that NP plays a positive role(s) in regulation of vRdRP for replication and nascent chain elongation, but in the present study, unprimed vRNA synthesis employing mnRNP was not observed even in the presence of NP (lanes 2 and 10 in Figure 1A, and elsewhere). On the other hand, in previously reported preparations of recombinant vRdRP, some host proteins were possibly contaminated (Deng et al., 2006a; Zhang et al., 2010b), and an unexpected contribution(s) of such host protein contamination to their cell-free reactions could not be completely excluded. The other point for consideration is that the amount of vRdRP used in the cell-free reactions was different. In their cell-free reaction systems, a relatively large amount (100 nM) of vRdRP was used for the reaction (Zhang et al., 2010a), while we used a much smaller amount of the enzyme source (approximately 2\u20133 nM of vRdRP equivalent mnRNP) in the reaction. Hence, spontaneous vRNA synthesis in the absence of any primer and host factor might have taken place to some extent in their cell-free system. Taking such differences in the quality and quantity of the enzyme sources into account, it is possible that vRdRP intrinsically possesses de novo initiation activity and that IREF-2 may increase the turnover efficiency so that the apparent concentration of vRdRP seems to be increased. At this point, one of the primary interests to be addressed is whether IREF-2 exhibits similar stimulation activity as observed here in the cell-free system using recombinant vRdRP. In addition, the relationship between IREF-2 and NP has also not been addressed because mnRNP was used mainly as an enzyme source throughout this study. Therefore, NP-free vRdRP (i.e., recombinant vRdRP) seems to be a suitable enzyme source to address whether NP is necessary for the regulatory mechanism by IREF-2. These differences in the quality and quantity of vRdRP must be taken into account for further study. Lastly, we have shown by cell-free studies that IREF-2 is involved in regulation of unprimed vRNA synthesis but not of cRNA synthesis (Figures 3B,C). However, it is possible that our cell-free system might not be completely appropriate or sufficient for cRNA synthesis from a vRNA template, and thus we do not exclude the possibility that IREF-2 also functions in unprimed cRNA synthesis. If virion-derived vRdRP, including mnRNP, could be set up to be adapted to the transcriptional mode rather than to the (cRNA) replicative mode, some process might be required for neutralizing the transcriptional mode of vRdRP or switching the mode from \u2018transcriptase\u2019 to \u2018replicase\u2019. Given this possibility, not only IREF-2 but also an additional factor(s) might be required for efficient unprimed cRNA synthesis in our cell-free system. To confirm this possibility, we are currently preparing recombinant vRdRP complexes possibly with the intrinsic property of influenza vRdRP as \u2018replicase\u2019 in infected cells for use in examining the effect of IREF-2.\n\nIn conclusion, we have demonstrated that the novel host-derived factors pp32 and APRIL regulate vRNA synthesis at least from the cRNA template. However, a number of questions about the function of IREF-2 remain unanswered. It would be important and beneficial to use recombinant vRdRP with high-purity and an authentic nature as an enzyme source in further detailed studies. In addition, the crystal structure of influenza vRdRP was recently resolved (Pflug et al., 2014; Reich et al., 2014), and therefore, the structure-based mechanism of IREF-2 will likely be elucidated in future studies.\n\n## Materials and methods\n\n### Cell culture, virus, and antibodies\n\nCells from the human cervical carcinoma HeLa S3 cell line were cultured in a spinner flask with Eagle\u2019s minimal essential medium for suspension cultures (S-MEM; Sigma, St. Louis, MO) containing 10% calf serum. The medium was added to the suspension cell culture to maintain a density of 2\u20136\u00a0\u00d7\u00a0105 cells/ml. When the volume of the suspension cell culture reached 10 liters, the cells were collected by centrifugation and used for preparation of the NEs. HEK293T and A549 cells were grown at 37\u00b0C in Dulbecco\u2019s modified Eagle\u2019s medium (DMEM; Nissui, Japan) containing 10% fetal calf serum, and monolayer HeLa cells were cultured in Eagle\u2019s minimal essential medium (MEM; Sigma) containing 10% fetal calf serum, termed as MEM(+).\n\nInfluenza virus A/PR/8/34 (H1N1) was grown in the allantoic sacs of 10-day-old embryonated eggs. The viruses were purified from infected allantoic fluid as described previously (Kawakami et al., 1981) and used for vRNP preparation.\n\nAnti-pp32 (goat polyclonal; Santa Cruz Biotechnology, Dallas, TX), anti-APRIL (goat polyclonal; Abcam limited, UK), and anti-GST (mouse polyclonal; Nacalai Tesque, Japan) antibodies were commercially purchased. For detection of viral proteins, rabbit polyclonal anti-PB1, -PB2, -PA, and -NP antisera were prepared as previously described (Momose et al., 2001; 2002) and used for western blot analysis.\n\n### Cell-free viral RNA synthesis\n\nvRNP complexes were prepared from the purified influenza A/PR/8/34 virus as described previously (Shimizu et al., 1994). mnRNP was prepared by incubation of vRNP complexes at 30\u00b0C for 2 hr with one unit of micrococcal nuclease (Roche Molecular Biochemicals, Schweiz)/\u03bcl in the presence of 1 mM CaCl2. The nuclease reaction was terminated by addition of EGTA to a final concentration of 3 mM. The 53 nt-long viral model RNAs (v53; 5'-AGUAGAAACAAGGGUGUUUUUUCAUAUCAUUUAAACUUCACCCUGCUUUUGCU-3' and c53; 5'-AGCAAAAGCAGGGUGAAGUUUAAAUGAUAUGAAAAAACACCCUUGUUUCUACU-3') were synthesized by transcription with RiboMAX Large Scale RNA Production System-T7 (Promega, Madison, WI) using a synthetic DNA template as previously described (Shimizu et al., 1994). Cell-free viral RNA synthesis was carried out at 30\u00b0C in a final volume of 20 \u03bcl or 25 \u03bcl in the presence of 50 mM HEPES-NaOH (pH 7.9), 3 mM MgCl2, 50 mM KCl, 1 mM DTT, 500 \u03bcM each of ATP, UTP, and CTP and 25 \u03bcM GTP, 5 \u03bcCi of [\u03b1-32P] GTP (3000 Ci/mmol), 8 U of RNase inhibitor from human placenta (Toyobo, Japan), 10 ng of a 53-nt-long model viral RNA template of negative or positive polarity (v53 and c53, respectively) and approximately 40 ng NP-equivalent, alternatively 5 ng PB1-equivalent of mnRNP as an enzyme source. After incubation, the reactions were terminated by phenol/chloroform extraction followed by precipitation of the RNA products with ethanol. The precipitated materials were subjected to polyacrylamide gel electrophoresis in the presence of urea (Urea-PAGE) and visualized by autoradiography.\n\n### Purification of native IREF-2s from NEs\n\nAll procedures for preparation and fractionation of the NEs were carried out at 4\u00b0C or on ice. The details for purification is described at Bio-protocol (Sugiyama and Nagata, 2016).\u00a0Briefly,\u00a0uninfected HeLa cell NE was prepared as described previously (Dignam et al., 1983). For fractionation of the NE, a buffer (buffer H) containing 50 mM HEPES-NaOH (pH 7.9), 20% (v/v) glycerol, and 1 mM DTT in the presence of the appropriate concentrations of KCl was used for ion-exchange chromatography for purification of IREF-2. The purification scheme started with NE containing 15 mg protein. NE was loaded onto a phosphocellulose column (10-ml bed volume; Whatman P11) equilibrated with buffer H containing 50 mM KCl and successively eluted stepwise with buffer H containing 0.2 M, 0.5 M, and 1.0 M KCl. An unbound fraction (P0.05) and fractions eluted with 0.2 M (P0.2), 0.5 M (P0.5), and 1.0 M (P1.0) of KCl were examined by the cell-free viral RNA synthesis system. The remaining P0.05 fraction was loaded onto an anion exchanger Uno-Q column (Bio-Rad, Hercules, CA) equilibrated with buffer H containing 50 mM KCl and eluted stepwise with increasing concentrations of KCl. The IREF-2 activity fraction eluted with buffer H containing 0.6 M KCl was diluted with buffer H and again loaded onto the Uno-Q column equilibrated with buffer H containing 0.25 M KCl. The IREF-2 activity was eluted with a linear gradient of 0.25 M to \u20130.8 M KCl in buffer H. The concentrated IREF-2 fraction was diluted two-fold with an equal volume of a buffer containing 50 mM HEPES-NaOH (pH 7.9), 1 mM DTT, and 2.0 M (NH4)2SO4 and loaded onto a hydrophobic SOURCE-PHE column (GE Healthcare, Piscataway, NJ) equilibrated with a buffer containing 50 mM HEPES-NaOH (pH 7.9), 10% (v/v) glycerol, 1 mM DTT, and 1.0 M (NH4)2SO4. The IREF-2 activity was unbound to the hydrophobic column and dialyzed with buffer H containing 30 mM KCl. The dialyzed IREF-2 fraction was loaded onto a cation exchanger (Uno-S, Bio-Rad), and the IREF-2 activity was recovered in the fraction unbound to the column. Finally, the IREF-2 fraction was load onto an anion axcahnger (Mono-Q column; GE Healthcare), and the materials captured by the column were eluted with a linear gradient of 0.35\u20130.7 M KCl in buffer H.\n\n### RNase T2 protection assay and thin-layer chromatography\n\nFor the RNase T2 protection assay, one-third of [\u03b1-32P] GTP-radiolabeled total RNA products synthesized by the cell-free viral RNA synthesis reactions were hybridized with either a nonradiolabeled v53 or a c53 probe by incubation at 85\u00b0C for 10 min, followed by incubation at 60\u00b0C for 10 min in a hybridization buffer (40 mM PIPES-NaOH [pH 6.4], 1 mM EDTA, 0.4 M NaCl, and 80% formamide) and gradual cooling down to room temperature (Shimizu et al., 1994). Each hybridized RNA product was subjected to RNase T2 digestion (five units in 20 mM NaOAc [pH 5.2]) at 25\u00b0C for 1 hr. Digestion was terminated by phenol/chloroform extraction, and the digested materials were collected by ethanol precipitation. The precipitated materials were subjected to 10% Urea-PAGE and visualized by autoradiography. At the same time, the remaining one-third of the total RNA products was also subjected to Urea-PAGE as an undigested sample.\n\nFor analysis of the 5'\u2019-terminus of the unprimed IREF-2-dependent RNA products, RNase digestion and thin-layer chromatography were performed as described previously (Kawaguchi and Nagata, 2007). After purification by 10% Urea-PAGE and elution from the gel piece, the purified [\u03b1-32P] GTP-radiolabeled RNA products were digested with 15 units of RNase T2 in 50 mM NaOAc (pH 5.0), 100 mM NaCl, and 2 mM EDTA, or 0.5 units of SV-PDE in 50 mM Tris-HCl (pH 9.0), 100 mM NaCl, and 14 mM MgCl2 at 37\u00b0C for 1 hr. The digested products were spotted onto a PEI-cellulose thin layer (Merck, Germany) and developed with 1.6 M LiCl or 1\u2009N acetic acid-4 M LiCl (4:1, v/v) and visualized by autoradiography. In the case of alkaline phosphatase treatment, [\u03b1-32P] GTP-labeled product was incubated with 0.5 units of bacterial alkaline phosphatase in a buffer recommended by the manufacturer (Toyobo) at 37\u00b0C for 1 hr before nuclease digestion. For mobility standards, nonradioactive adenosine monophosphate\u00a0(AMP),\u00a0adenosine diphosphate (ADP), and adenosine triphosphate\u00a0(ATP) were subjected to thin-layer chromatography. For a marker of adenosine 5'-triphosphate and 3'-monophosphate (pppAp), [\u03b3-32P] ATP-labeled v53 synthesized with T7 RNA polymerase was also subjected to gel purification, nuclease digestion, and thin-layer chromatography as described above.\n\n### GST pull-down assay from mammalian cells\n\nTransfected and infected HEK293T cells were harvested with a rubber policeman and washed with PBS(-). The collected cells were suspended in an ice-cold lysis-binding buffer (50 mM Hepes-NaOH [pH 7.9], 100 mM NaCl, 50 mM KCl, 0.25% NP-40, and 1 mM DTT) and lysed by brief sonication. After centrifugation, the crude lysates were incubated with Glutathione-Sepharose 4B resin (GE Healthcare) at 4\u00b0C for 1 hr. After incubation, the resins were collected by brief centrifugation and washed three times with the lysis-binding buffer. The resin-bound materials were eluted by boiling in the SDS-PAGE loading buffer and subjected to SDS-PAGE, which was followed by detection with the standard western blot analysis procedure.\n\n### RNA isolation, reverse transcription, and quantification by RT- PCR\n\nTotal RNA from infected HeLa cells or transfected 293T cells was extracted using Sepasol-RNA I Super G (Nacalai Tesque) according to the manufacturer\u2019s instructions. The extracted RNA was treated with DNase I and subjected to RT reaction as follows. For synthesis of cDNA derived from segment 5 viral RNAs, each specific primer was used in the RT reaction, as follows: 5'-GACGATGCAACGGCTGGTCTG-3' (complementary to the 1122 nt-\u2013 1142 nt region from the 5'-terminus) for the vRNA of segment 5; 5'-TCATCTTTGTTCCTCAA-3' (3' terminal region) for the cRNA of segment 5; and oligo-dT20 (5'-TTTTTTTTTTTTTTTTTTTT-3') for the viral mRNA. The RT reactions were performed using the hot-start protocol as described elsewhere (Kawakami et al., 2011). Total RNA (50\u2013100 ng) and the aforementioned specific primer (10 pmol) were heated in a volume of 5.5 \u03bcl at 65\u00b0C for 5\u2009min, chilled immediately in an ice-water bath, and then preincubated at 48\u00b0C. The RT premixture (3 \u03bcl First Strand buffer [5\u00d7, Invitrogen, Carlsbad, CA]; 0.75 \u03bcl of 0.1 M DTT; 0.75 \u03bcl of 10 mM dNTP mixture; 0.25 \u03bcl of Superscript III Reverse Transcriptase [200 U/\u03bcl, Invitrogen]; 0.25 \u03bcl RNase inhibitor; and 4.5 \u03bcl of saturated trehalose [Sigma] in a total of 9.5 \u03bcl) was also preincubated at 48\u00b0C and quickly added to the RNA-primer mixture and incubated at 48\u00b0C for 1 hr. The RT reaction mixture was diluted ten-fold with H2O and incubated at 95\u00b0C to terminate the RT reaction. The diluted cDNA sample (3 \u03bcl) was subjected to quantification by real-time PCR using the FastStart SYBR Green Master (Roche) and the segment 5-specific primer set (5 pmol each/15 \u03bcl of the qPCR reaction mix), 5\u2019-GACGATGCAACGGCTGGTCTG-3' and 5\u2019-AGCATTGTTCCAACTCCTTT-3'. Real-time PCR was performed using the Thermal Cycler Dice Real Time System TP800 (Takara, Japan).\n\n### Growth curve analysis\n\nGrowth curve analysis was performed by infecting confluent A549 cells (96 hr after transfection of siRNA) in 35-mm dishes with FluV/A/WSN/33 virus at an MOI of 0.001 and harvesting the supernatant every 12 hr after infection for 60 hr. The virus titers present in the supernatant were determined by a standard plaque assay using MDCK cells.\n\n### Plasmid constructions\n\nFull-length cDNA of human IREF-2\u03b1/pp32 was amplified using KOD polymerase (Toyobo) from a cDNA library prepared from HeLa cell mRNA using the specific primers 5'-CGCGGATCCCATATGGAGATGGGCAGACGGATTCATTTAG-3' and 5'-GCGGCTCGAGACGTCAGTCATCATCTTCTCCCTCATCTTCAGGTTCTCGT-3', corresponding to the pp32 amino-terminal and carboxyl-terminal regions, respectively. The full-length cDNA of human IREF-2\u03b2/APRIL was also amplified by using the specific primers 5'-CGGAATTCATATGGACATGAAGAGGAGGATCCACCTGGAG-3' and 5'-GCGGCTCGAGACGTCAATCATCTTCTCCTTCATCATCTGT-3', corresponding to the APRIL amino-terminal and carboxyl-terminal regions, respectively. To construct the glutathione S-transferase (GST)-tagged pp32 expression vectors for Escherichia. coli cells (pGEX-2T-pp32), the amplified cDNA fragment of pp32 was digested with BamHI and AatII and then cloned into pGEX-2T (GE Healthcare) predigested with the same restriction enzymes. To construct E. coli expression vectors for GST-tagged APRIL (pGEX-2T-APRIL), the amplified cDNA fragment of APRIL was digested with EcoRI and AatII and then cloned into pGEX-2T predigested with the same restriction enzymes. To construct mammalian expression vectors expressing GST harboring the nuclear localization signal (NLS) at the C-terminal end, termed pCAGGS-GSTnls, DNA fragments were amplified by PCR using the specific primer set 5'-CCCTCGAGCTCGCGGCCGCCGCCATGGGCTCCCCTATACTAGGTTATTGG-3' (the sequence responsible for the \u2018Kozak translational consensus\u2019 is underlined) and 5\u2019-AAGATCTATGCATGGTACCGCTAGCGACGTCACCCGGGGTCTTCTACC-3', and pGEX-2T-SV40 NLS-GFP (kindly gifted by Dr Yoneda, Osaka University) as the PCR template. The PCR products corresponding to Kozak-GSTnls were trimmed by digestion with XhoI and BglII and then cloned into the predigested pCAGGS mammalian expression vector, resulting in pCAGGS-GSTnls. To construct mammalian expression vectors expressing GST-tagged IREF-2s, pGEX-2T-pp32 and pGEX-2T-APRIL were digested with SwaI (for cutting within the GST coding region) and AatII (for cutting downstream of the termination codon of both IREF2s), and each DNA fragment corresponding to GSTC-term-IREF-2 was subcloned into the pCAGGS-GSTnls predigested with SwaI and AatII, resulting in pCAGST-pp32 and pCAGST-APRIL. To construct pCAGST-RAF2p48 expressing GST-fused RAF2p48/BAT1/UAP56, a DNA fragment corresponding to the GST-RAF2p48-encoding region derived from pGEX-p48 was subcloned into the pCAGGS vector, resulting in pCAGST-RAF2p48. The nucleotide sequences of all plasmids constructed for this study were confirmed by DNA sequencing (ABI prism genetic analyzer; Applied Biosystems, Foster City, CA).\n\n### Preparation of recombinant IREF-2 proteins\n\nTo express recombinant IREF-2 proteins, E. coli BL21(DE3) cells harboring the expression vectors (pGEX-2T-pp32 and pGEX-2T-APRIL) for GST-tagged IREF-2s were cultivated at 30\u00b0C until A590 reached 0.5, and protein production was then induced with 1 mM isopropyl-1-thio-\u03b2-D-galactopyranoside for 6 hr. The induced cells were harvested by centrifugation and resuspended in a lysis buffer (50 mM Hepes-NaOH [pH 7.9], 150 mM KCl, 0.25% NP-40, and 1 mM DTT) and sonicated well in an ice-water bath. The insoluble material was removed by centrifugation, and crude extracts were recovered as a supernatant fraction was applied to Glutathione-Sepharose 4B resin that had been equilibrated with the lysis buffer. After capturing of the GST-tagged proteins to the resin, lysis buffer was applied to wash away the unbound materials. The washed resins were equilibrated with a digestion buffer (50 mM Hepes-NaOH [pH 7.9], 50 mM KCl, 1 mM CaCl2, and 1 mM DTT) and digested with thrombin (Nacalai Tesque) at 4\u00b0C overnight. The materials with the GST portion removed were collected and further purified through a Mono-Q column with KCl linear gradient elution. The purified proteins were dialyzed with buffer H containing 1 mM DTT, and the concentration of each protein was determined by the Bradford method and comparison of band intensities with a standard protein (BSA) after separation by SDS-PAGE.\n\n### Transfection of DNA and siRNA and virus infection\n\nFor transfection of HEK293T cells with mammalian expression plasmids, plasmid DNA mixtures were prepared in Opti-MEM (Thermo Fisher Scientific, Waltham, MA), and an appropriate amount of PEI\u00a0(Sigma Aldrich, St. Louis, MO) were mixed into the DNA solution (1.5 \u03bcg PEI per 1 \u03bcg DNA) and incubated at room temperature for 10 min. The DNA/PEI complex was added to monolayer cell cultures (approximately, 3\u00a0\u00d7\u00a0106 cells in a 100-mm-diameter dish). Six hours after transfection, the medium was replaced with fresh DMEM and maintained at 37\u00b0C.\n\nFor transfection of siRNAs, trypsinized cells (HeLa, HEK293T, and A549) were seeded, and pp32 siRNA (custom-designed Stealth RNAi; Invitrogen), APRIL siRNA (ANP32B-HSS116202; Invitrogen), and negative control siRNA (12935\u2013200; Invitrogen) were introduced into the cells with Lipofectamine RNAiMAX (Invitrogen) according to the manufacturer's protocol. Twelve to twenty-four hours after the first transfection, the cells were again transfected with the same amount of siRNA used at the first transfection and maintained at 37\u00b0C for 4 to 5 days until influenza virus infection.\n\nFor virus infection, monolayer cultures of human cells (HEK293T, HeLa, and A549) were washed with serum-free MEM, and the cells were infected with influenza A/PR/8 virus allantoic fluid at the desired MOI as described in each figure legend. After virus adsorption at 37\u00b0C for 1 hr, the infecting allantoic fluid was removed, and the cells were washed with serum-containing medium and maintained at 37\u00b0C in the medium for an appropriate period (3\u20139 hr).\n\n## Acknowledgements\n\nThe\u00a0authors\u00a0thank Dr Ryoich Kiyama (National Institute of Advanced Industrial Science and Technology, Tsukuba) for MALDI-TOFF mass analysis; Dr Yoshihiro Yoneda (Osaka University) for pGEX-2T-SV40 NLS-GFP; and Ms Flaminia Miyamasu (University of Tsukuba) for editing of the manuscript.\u00a0This work was supported in part by grants-in-aid from the Ministry of Education, Culture, Sports, Science, and Technology of Japan (to KN and AK).\n",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "58720a8a-4a9c-46aa-a39a-1c0fd292bf69",
+      "submission_id": "fc35a3d0-9c2d-41d2-b025-f4fcba6f6baf",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephen P Goff, Howard Hughes Medical Institute, Columbia University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.08939.015](https://doi.org/10.7554/eLife.08939.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"pp32 and APRIL are host cell-derived regulators for the influenza virus vRNA synthesis from cRNA\" for peer review at eLife. Your submission has been favorably evaluated by Detlef Weigel (Senior Editor), a Reviewing Editor, and three reviewers, one of whom is a member of our Board of Reviewing Editors. One of the three reviewers, Andrew Mehle (Reviewer #2), has agreed to reveal his identity.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nEssential revisions:\n\nWhile all the reviewers were excited by the findings, there were several perceived weaknesses in the story, and additional work was universally asked for. What was most critically needed was the inclusion of better indications of the importance of these factors in cells. Very specific experiments were proposed in the reviews, and adding new data that proved the roles of these proteins in replication, and in the expected steps of replication, is essential.\n\nReviewer #1:\n\nInfluenza RNA replication, distinct from mRNA synthesis, involves the synthesis of cRNA (RNA complementary to the genome) first, and then vRNAs (viral RNA, minus-strand). Both cRNA and vRNA have 5' triphosphate ends such that both are initiated de novo, not via cap-snatching as in transcription. This paper reports the identification of two cellular proteins that act to stimulate influenza RNA-dependent RNA polymerase (made up of PB1, PB2, and PA), specifically to increase the second step of replication, the synthesis of new vRNA from cRNA, as assayed in reactions on short templates in vitro. The products were confirmed to have appropriate sense and 5' triphosphate ends. The proteins with this activity were identified as pp32 and APRIL. Both had been found in other proteomic or functional screens. The proteins were confirmed to only stimulate vRNA and not cRNA synthesis. Both were shown to bind vRdRP (and only as a trimeric complex) and not the viral protein NP. KD led to small reductions in viral RNA levels in vivo.\n\nThis work is of interest as identifying strand-specific initiation factors for influenza replication. The in vitro stimulation assays, the MS identification, and the assays of the recombinant proteins seem adequate, notably the strand specificity. The binding to the trimer also seems convincing and is an interesting result. The paper provides a significant and useful addition to the field.\n\nConcerns:\n\nIt would be helpful to know if these factors bind to RNA first and then vRdRP or the other way around. Can they bind and protect the 3' ends of the template?\n\nThe knockdowns show only modest effects on viral RNA levels and the CHX experiments are particularly unconvincing. Thus the importance of the factors in vivo is not certain. Better experiments in this area would be helpful.\n\nReviewer #2:\n\nThe influenza polymerase synthesizes viral genomic and messenger RNA in a temporally coordinated fashions. How vRNA, cRNA and mRNA production is regulated, and the co-factors that do this, is an area of significant interest. Sugiyama, et al. identify APRIL and pp32 as host proteins that regulate polymerase function. Their biochemistry nicely shows that APRIL/pp32 exclusively stimulate vRNA synthesis from a cRNA template in vitro. Nonetheless, the authors lack cell-based data showing that these proteins function in the same way as physiologically relevant regulators during viral infection.\n\n1) The in vitro biochemistry is fairly convincing and shows that APRIL/pp32 stimulate vRNA synthesis from a model cRNA template. These finds are never validated in cells, raising multiple questions:\n\na) There are no data describing the effect of APRIL/pp32 knockdown on virus replication. Do these co-factors function during the full viral life cycle (e.g. single- or multi-cycle replication) and in the context of a real cRNP?\n\nb) Knockdown of APRIL/pp32 reduces all viral RNA products during infection, as opposed to their in vitro data showing APRIL/pp32 only stimulate vRNA synthesis. Controls show that mRNA production is unchanged, but they could not test cRNA vs vRNA in the knockdown cells. As the major claim of their paper is that APRIL/pp32 stimulate cRNA synthesis, this discrepancy between their results in vitro and in cells during infection needs to be addressed experimentally. Perhaps investigating the role of APRIL/pp32 on purified cRNPs (following techniques from York et al., 2013), or when using a cRNA reporter, could help address these gaps.\n\nc) Do APRIL/pp32 only affect vRNA synthesis in cells, or might they stimulate svRNAs? This is important to differentiate in cells as both vRNA and svRNA are produced from the same template by the same polymerase, and svRNAs have been implicated in shifting the polymerase towards synthesizing vRNA (just as the authors' APRIL/pp32 factors do). All of the gels for their in vitro assays are cropped, so it is not possible to know if svRNAs are produced in vitro.\n\n2) Binding experiments in Figure 4 were all done in cells over-expressing transfected APRIL/pp32. Experiments demonstrating binding between the polymerase and endogenous APRIL/pp32 are needed to determine if these interactions are biologically relevant.\n\nReviewer #3:\n\nUsing cell-free influenza polymerase derived by micrococcal nuclease treated vRNPS purified from virions the authors are unable to detect unprimed vRNA synthesis using a 53-mer cRNA template, whereas ApG primed synthesis of vRNA is observed. They are able to purify a fraction of nuclear extract from uninfected HeLa cells that promotes unprimed vRNA synthesis, but not unprimed cRNA synthesis from a vRNA template. The active host proteins are identified by mass-spec as APRIL and pp32 and the effect is recapitulated with purified recombinant APRIL and pp32. These proteins are homologous, have independent and additive stimulatory activity and have previously been identified as influenza polymerase interacting proteins. They are shown to only bind to the trimeric polymerase, preferably in the 'free state' (i.e. not part of an RNP). Finally the authors show that siRNA knockdown of APRIL or pp32 or both in HeLa cells with subsequent infection by influenza virus leads to significantly reduced levels of all viral RNAs, vRNA, cRNA and mRNA, compared to the control infection without knockdown. The authors conclude that APRIL and pp32 promote viral replication by stimulating unprimed vRNA synthesis from cRNA.\n\nThis study raises a number of questions:\n\n1) The source of polymerase the authors used is micrococcal nuclease treated vRNPs purified from virions. This is a poorly characterized, presumably heterogeneous sample. It is not clear, and should be stated, if any purification is done after stopping the nuclease digestion with 3 mM EGTA. Is the nuclease and EGTA still present in downstream experiments? One can imagine the preparation is highly heterogeneous containing free polymerase, polymerase bound to the conserved 3' and 5' ends (which are protected from nuclease), nucleoprotein bound to RNA fragments, free nucleoprotein, etc. All these things could influence the fate of added cRNA or vRNA template in an artifactual way (e.g. free NP sequestering template RNA, etc.). The authors should in the main text discuss what they think the preparation really contains.\n\n2) Is this polymerase preparation capable of doing cap-dependent transcription e.g. upon adding capped RNA? If not, why not? If it can, then the effect of APRIL and pp32 on transcription could have been tested in vitro.\n\n3) As the authors discuss in the Discussion, un-primed vRNA-synthesis was previously demonstrated in the absence of exogenously added primer or host factors by other authors using different preparation methods of polymerase. In contrast, Sugiyama et al. do not detect any vRNA-synthesis under their experimental conditions and in the absence of RNA-primer or host-proteins. However, as the authors point out, reaction-conditions like the reaction-time or particularly the enzyme-concentration, might affect the results and conclusions. To compare data from individual experiments and laboratories, it would be beneficial to determine (and not just discuss in the Discussion) the (estimated) active enzyme-concentration used in the experiments and/or vary parameters, in particular the reaction-time to perhaps overcome some detection limits.\n\n4) Irrespective of the above, the authors come up with APRIL and pp32 as putative host factors that enhance vRNA synthesis, consistent with other recent work that identifies these proteins as polymerase associated host factors. The critical experiment is then the demonstration of this activity in infected cells. However the authors only show that siRNA knockdown of APRIL or pp32 or both in HeLa cells with subsequent infection by influenza virus leads to significantly reduced levels of all viral RNAs, vRNA, cRNA and mRNA. They argue that this is consistent with a specific role of APRIL and pp32 in being required for enhancing vRNA synthesis (which then has a knock on effect on other viral RNAs) but there is no direct proof that this is the mechanism in infected cells (except that they show there is no clear affect directly on primary transcription). For clarity and consistency the authors should also show growth curves for virus in knockdown and control cells and repeat these experiments in one other more relevant cell line (HeLA cells are very particular).\n\n5) The authors propose that the mechanism for enhanced vRNA synthesis could be related to the different mode of initiation of vRNA synthesis, which has been reported to involve internal initiation and then realignment. Yet in an infected cell vRNA synthesis occurs in the context of a cRNP particle, whereas the authors argue that APRIL and pp32 preferably binds free polymerase. But free polymerase does not do RNA synthesis so how can APRIL and pp32 bound to free polymerase influence an initiation process that occurs buried in the internal cavity of the polymerase which is part of a cRNP? This paradox needs to be further discussed/explained by the authors.\n",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "569f3e5e-4a46-496a-9024-f50fb96ef8c0",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C1",
+      "claim": "Replication of influenza viral genomic RNA (vRNA) is catalyzed by viral RNA-dependent RNA polymerase (vRdRP).",
+      "claim_type": "EXPLICIT",
+      "source": "Replication of influenza viral genomic RNA (vRNA) is catalyzed by viral RNA-dependent RNA polymerase (vRdRP).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a fundamental statement about influenza virus biology that is supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "3582247c-9f3f-4cd9-b98d-e3b0f1784974",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C2",
+      "claim": "Complementary RNA (cRNA) is first copied from vRNA, and progeny vRNAs are then amplified from the cRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Complementary RNA (cRNA) is first copied from vRNA, and progeny vRNAs are then amplified from the cRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established two-step replication mechanism of influenza virus, which is well-documented in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "ef837845-cdbf-44ba-906a-e204dcf082e6",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C3",
+      "claim": "Efficient cell-free replication could not be reproduced using only viral factors (vRdRP and viral RNA).",
+      "claim_type": "EXPLICIT",
+      "source": "Although vRdRP and viral RNA are minimal requirements, efficient cell-free replication could not be reproduced using only these viral factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is based on experimental observations from the study and previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "724eb070-edb6-492d-837e-f4a268db959d",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C4",
+      "claim": "A novel activity designated IREF-2 in nuclear extracts of uninfected cells allows robust unprimed vRNA synthesis from a cRNA template.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a biochemical complementation assay system, we found a novel activity in the nuclear extracts of uninfected cells, designated IREF-2, that allows robust unprimed vRNA synthesis from a cRNA template.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study demonstrated through biochemical complementation assays shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "5e613cff-0c1e-429d-99c5-2d6435520b4b",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C5",
+      "claim": "IREF-2 consists of host-derived proteins pp32 and APRIL.",
+      "claim_type": "EXPLICIT",
+      "source": "IREF-2 was shown to consist of host-derived proteins, pp32 and APRIL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study based on purification and mass spectrometry analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "7edcead6-4ddb-4a92-9ee8-93a158d7e159",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C6",
+      "claim": "IREF-2 interacts with a free form of vRdRP.",
+      "claim_type": "EXPLICIT",
+      "source": "IREF-2 interacts with a free form of vRdRP and preferentially upregulates vRNA synthesis rather than cRNA synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through GST pull-down assays and quantitative analysis of viral RNA in complexes shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "b53fef1f-0405-425a-9061-6a81ff0fc7a0",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C7",
+      "claim": "IREF-2 preferentially upregulates vRNA synthesis rather than cRNA synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "IREF-2 interacts with a free form of vRdRP and preferentially upregulates vRNA synthesis rather than cRNA synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through cell-free viral RNA synthesis assays shown in Figure 3B and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "c231ef0b-8ab7-42f6-93de-f18f0806b818",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C8",
+      "claim": "IREF-2 is involved in in vivo viral replication.",
+      "claim_type": "EXPLICIT",
+      "source": "Knockdown experiments indicated that IREF-2 is involved in in vivo viral replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through siRNA knockdown experiments shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "0e08e7c5-97a5-48ed-a998-d2c8ffdb97f9",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C9",
+      "claim": "The influenza A virus genome is composed of eight single-stranded viral RNA (vRNA) segments of negative polarity.",
+      "claim_type": "EXPLICIT",
+      "source": "The influenza A virus genome is composed of eight single-stranded viral RNA (vRNA) segments of negative polarity that form viral ribonucleoprotein (vRNP) complexes with viral RNA-dependent RNA polymerases (vRdRPs) and nucleocapsid proteins (NPs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about influenza virus genome structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "0e585189-1b46-468e-ae92-4b7baa3934ca",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C10",
+      "claim": "vRdRPs consist of three viral proteins: PB1, PB2, and PA.",
+      "claim_type": "EXPLICIT",
+      "source": "Both transcription and replication of vRNA are catalyzed by vRdRPs consisting of three viral proteins: PB1, PB2, and PA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the composition of influenza virus RNA polymerase.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "51439d85-2b42-48c6-9bc8-b44cd4eeeeeb",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C11",
+      "claim": "The cap-1 structure of cellular mRNA is recognized by PB2.",
+      "claim_type": "EXPLICIT",
+      "source": "The cap-1 structure of cellular mRNA was recognized by PB2 (Guilligay et al., 2008), and the capped RNA is cleaved 10\u201315 bases downstream of the 5'-terminus by the endonuclease activity of PA (Dias et al., 2009; Yuan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "2cb41726-020f-4477-a234-1c6e4709f328",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C12",
+      "claim": "Capped RNA is cleaved 10\u201315 bases downstream of the 5'-terminus by the endonuclease activity of PA.",
+      "claim_type": "EXPLICIT",
+      "source": "The cap-1 structure of cellular mRNA was recognized by PB2 (Guilligay et al., 2008), and the capped RNA is cleaved 10\u201315 bases downstream of the 5'-terminus by the endonuclease activity of PA (Dias et al., 2009; Yuan et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "746fd3b9-8d0c-45a4-aafc-f1d083fd7f07",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C13",
+      "claim": "Cleaved short RNA with a 5'-cap structure serves as a primer for the initiation of transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "This cleaved, short RNA with a 5'-cap structure serves as a primer for the initiation of transcription.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about influenza virus transcription mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "510103ef-5eff-4c6c-a03e-484688c8c326",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C14",
+      "claim": "Transcription is terminated by a virus-specific polyadenylation mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "After elongation of the nascent RNA chain, transcription is terminated by a virus-specific polyadenylation mechanism (Poon et al., 1999): vRdRP reaches the poly(U) stretch of the vRNA template adjacent to its 5'-end and is thought to slip there repeatedly, leading to the addition of a poly(A) tail at the 3'-end of the nascent viral RNA transcript.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "5e481dc1-23bf-4839-b7ac-c3c26db9444d",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C15",
+      "claim": "Replication of the viral genomic RNA takes place in a primer-independent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Replication of the viral genomic RNA takes place in a primer-independent manner and proceeds in two steps: in the first step, vRdRP synthesizes full-length RNA copies of positive polarity, termed complementary RNA (cRNA); and in the second step, progeny vRNAs are amplified from the cRNA template.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about influenza virus replication mechanism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "18b04d7e-63cb-4cb4-9ba7-b087bd5bdd16",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C16",
+      "claim": "Both cRNA and vRNA products contain a 5'-triphosphate end group.",
+      "claim_type": "EXPLICIT",
+      "source": "Both cRNA and vRNA products from each replication step contain a 5'-triphosphate end group (Hay et al., 1982; Young and Content, 1971), indicating that both replications are initiated de novo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "153dfb7b-5fb4-457a-83dc-32563af20fb2",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C17",
+      "claim": "Both cRNA and vRNA replications are initiated de novo.",
+      "claim_type": "EXPLICIT",
+      "source": "Both cRNA and vRNA products from each replication step contain a 5'-triphosphate end group (Hay et al., 1982; Young and Content, 1971), indicating that both replications are initiated de novo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the presence of 5'-triphosphate end groups and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "669c38a2-3ea2-4aeb-83d3-dbc007eb02ea",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C18",
+      "claim": "vRdRP and viral RNA template are minimal and essential viral factors for viral RNA synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "vRdRP and the viral RNA template are minimal and essential viral factors for viral RNA synthesis (Deng et al., 2005; Lee et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "f4fb254e-32fc-4546-9c5d-a120ad78cad8",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C19",
+      "claim": "NP plays roles in efficient RNA elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "NP is thought to play roles in efficient RNA elongation (Honda et al., 1988) and regulation of vRdRP activity for replication (Beaton and Krug, 1986; Newcomb et al., 2009; Portela and Digard, 2002; Shapiro and Krug, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "b1680ede-9e2e-4760-8b11-f04dca78276f",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C20",
+      "claim": "NP plays a role in regulation of vRdRP activity for replication.",
+      "claim_type": "EXPLICIT",
+      "source": "NP is thought to play roles in efficient RNA elongation (Honda et al., 1988) and regulation of vRdRP activity for replication (Beaton and Krug, 1986; Newcomb et al., 2009; Portela and Digard, 2002; Shapiro and Krug, 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "68675595-5418-4042-8c5b-a059a59851e0",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C21",
+      "claim": "An in vivo viral mini-genome replicon system can be reconstituted by transfection of expression plasmids for PB1, PB2, PA, and NP and a plasmid for vRNA driven by cellular RNA polymerase I.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations, which were provided using mainly cell-free systems, concord with the fact that an in vivo viral mini-genome replicon system can be reconstituted by transfection of expression plasmids for PB1, PB2, PA, and NP and of a plasmid for vRNA driven by cellular RNA polymerase I (Pleschka et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "f51f4728-60e0-4e91-9937-927aacfbfec3",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C22",
+      "claim": "Host-derived factors could be involved in the process of viral RNA synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Dissection and reconstitution of a cell-free viral RNA synthesis system using vRNP complexes isolated from virions, an exogenously added model RNA template, and uninfected NEs indicated that host-derived factors could be involved in the process of viral RNA synthesis (Shimizu et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "db81dc44-ae22-4bde-aa7e-385f88781c85",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C23",
+      "claim": "RAF-I was identified as Hsp90.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this assay system, we identified two stimulatory host factors, designated as RNA polymerase activating factors (RAF) -I and -II, which were identified as Hsp90 and UAP56/BAT1, respectively (Momose et al., 2001; 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "d2b00507-b5d9-4758-b563-4371c97ea711",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C24",
+      "claim": "RAF-II was identified as UAP56/BAT1.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this assay system, we identified two stimulatory host factors, designated as RNA polymerase activating factors (RAF) -I and -II, which were identified as Hsp90 and UAP56/BAT1, respectively (Momose et al., 2001; 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "29e76447-bc80-4c88-b06c-211eee3021bc",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C25",
+      "claim": "IREF-1 upregulates unprimed cRNA synthesis from vRNA by the vRNP complex through promotion of the promoter clearance step and avoidance of premature abortive RNA synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Later, we found a factor, designated as influenza virus replication factor (IREF)-1, which upregulates unprimed cRNA synthesis from vRNA by the vRNP complex through promotion of the promoter clearance step and avoidance of premature abortive RNA synthesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "f0fb9ab6-7d14-4dde-b453-0351aa14fe11",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C26",
+      "claim": "IREF-1 is identical to the minichromosome maintenance (MCM) complex.",
+      "claim_type": "EXPLICIT",
+      "source": "IREF-1 was shown to be identical to the minichromosome maintenance (MCM) complex (Kawaguchi and Nagata, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "9beadd1b-9a65-4c8c-8577-e57a9dfb9c36",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C27",
+      "claim": "The P0.05 fraction from phosphocellulose column chromatography contains IREF-2 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The 53 nt-long RNA product was formed only in the presence of the P0.05 fraction (lane 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "2ff08c1c-8276-4e32-9337-9bad6361b59a",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C28",
+      "claim": "RNA synthesis is dependent on mnRNP, c53, and P0.05 fractions.",
+      "claim_type": "EXPLICIT",
+      "source": "The RNA synthesis was dependent on the mnRNP, c53, and P0.05 fractions (Figure 1A, lanes 8\u201310).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the experimental data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "27f8e3c0-da1a-41fa-a964-fdc4346e9266",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C29",
+      "claim": "IREF-2 appears to be highly acidic based on its chromatographic behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "On the basis of its chromatographic behavior, IREF-2 appears to be highly acidic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the chromatographic behavior during purification.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "5d64390e-8cd5-4f4d-ad77-839f5341cfa0",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C30",
+      "claim": "IREF-2 activity was recovered in fractions eluted with about 500 mM of KCl from the Mono-Q column.",
+      "claim_type": "EXPLICIT",
+      "source": "At the final purification step using an anion exchanger (the Mono-Q column), the IREF-2 activity was recovered in fractions eluted with about 500 mM of KCl (fraction numbers 6\u201310 in Figure 1C, upper panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "7fa3570d-6711-4b71-874f-90ee455fd64c",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C31",
+      "claim": "Two polypeptides with molecular masses of approximately 32 and 31 kDa correspond to the IREF-2 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of the polypeptide elution patterns and the level of the IREF-2 activity strongly suggested that two polypeptides with molecular masses of approximately 32 and 31 kDa corresponded to the IREF-2 activity (Figure 1C, arrows).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from comparing activity profiles with protein elution patterns shown in Figure 1C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "998f7c0c-30d4-4dc8-819f-764ea5c3727e",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C32",
+      "claim": "The IREF-2-dependent RNA product is of negative polarity (vRNA).",
+      "claim_type": "EXPLICIT",
+      "source": "The IREF-2-dependent RNA product was protected by hybridization with the c53 probe (lane 9) but not with the v53 probe (lane 8). These results clearly indicate that the IREF-2-dependent RNA product is of negative polarity, that is, vRNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by RNase T2 protection assays shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "d8792830-0a6d-41de-97ca-f017927e920b",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C33",
+      "claim": "A triphosphate moiety is present at the 5'-terminus of the IREF-2-dependent vRNA product.",
+      "claim_type": "EXPLICIT",
+      "source": "These results clearly reveal that a triphosphate moiety is present at the 5'-terminus of the IREF-2-dependent vRNA product, thereby indicating that the synthesis of this vRNA product is initiated de novo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by thin-layer chromatography analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "ce490da0-5eee-48f1-8b1f-baaf43fd5808",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C34",
+      "claim": "The synthesis of the IREF-2-dependent vRNA product is initiated de novo.",
+      "claim_type": "EXPLICIT",
+      "source": "These results clearly reveal that a triphosphate moiety is present at the 5'-terminus of the IREF-2-dependent vRNA product, thereby indicating that the synthesis of this vRNA product is initiated de novo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the presence of a triphosphate moiety at the 5'-terminus demonstrated in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "9ea7420e-26a9-4293-ab68-4e6ddfceafdf",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C35",
+      "claim": "IREF-2\u03b1 is identical to pp32.",
+      "claim_type": "EXPLICIT",
+      "source": "IREF-2\u03b1 was shown to be identical to pp32 (phosphoprotein with a molecular mass of 32 kDa; accession number NP_006296) (Malek et al., 1990) and also known as leucine-rich acidic nuclear protein, inhibitor of protein phosphatase 2A (I1pp2A), and putative HLA class II-associated protein I (Matilla and Radrizzani, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on MALDI-TOF MS analysis and database comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "534ab429-6703-4496-98d1-446df2c02749",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C36",
+      "claim": "IREF-2\u03b2 is identical to APRIL.",
+      "claim_type": "EXPLICIT",
+      "source": "IREF-2\u03b2 was shown to be identical to APRIL (acidic protein rich in leucines; accession number NP_006392) (Mencinger et al., 1998), also named proliferation-related acidic leucine-rich protein or silver-stainable protein 29 (Matilla and Radrizzani, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on MALDI-TOF MS analysis and database comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "11a5381f-58a3-4be4-829d-f740157cc12f",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C37",
+      "claim": "pp32 and APRIL exhibit high homology (71% sequence identity and 81% sequence similarity).",
+      "claim_type": "EXPLICIT",
+      "source": "Both IREF-2\u03b1/pp32 and IREF-2\u03b2/APRIL exhibit high homology (71% sequence identity and 81% sequence similarity) and belong to the acidic nuclear phosphoprotein 32-kDa family (ANP32 family; pp32 and APRIL are also named ANP32A and ANP32B, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence comparison analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "6a9cc898-1c61-4060-9dfb-7f317254e3c3",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C38",
+      "claim": "pp32 and APRIL belong to the acidic nuclear phosphoprotein 32-kDa family (ANP32 family).",
+      "claim_type": "EXPLICIT",
+      "source": "Both IREF-2\u03b1/pp32 and IREF-2\u03b2/APRIL exhibit high homology (71% sequence identity and 81% sequence similarity) and belong to the acidic nuclear phosphoprotein 32-kDa family (ANP32 family; pp32 and APRIL are also named ANP32A and ANP32B, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about protein family classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "848c0ea2-b241-450a-ace2-d77a592ea335",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C39",
+      "claim": "pp32 and APRIL are expressed mainly in the nuclei of variety kinds of tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "These two proteins are encoded by separate genes and expressed mainly in the nuclei of variety kinds of tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the cellular localization of these proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "beffe82d-b836-4c72-a141-f0f96a1ec161",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C40",
+      "claim": "pp32 was identified as a host protein related to influenza virus infection by previous physical and regulatory mapping analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "By previous physical and regulatory mapping analyses, pp32 (ANP32A) was shown to be a host protein related to influenza virus infection (Shapira et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "3be38ea7-f1d3-4e6c-b1b8-8dd62e06089c",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C41",
+      "claim": "pp32 and APRIL were identified as binding partners to the influenza vRdRP complex by a previous proteomic study.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a previous proteomic study identified pp32 and APRIL (ANP32B) as binding partners to the influenza vRdRP complex (Bradel-Tretheway et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "af67ed91-ab94-4657-a929-e088b36b8889",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C42",
+      "claim": "APRIL was identified as one of nine 'top hit' genes affecting the viral RNA synthesis process in infected cells by a genomewide RNAi screening study.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a genomewide RNAi screening study identified APRIL as one of nine 'top hit' genes affecting the viral RNA synthesis process in infected cells (Watanabe et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "b46ed060-0e4f-414c-9718-a0580b8e78aa",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C43",
+      "claim": "Both native and recombinant pp32 support cell-free unprimed RNA synthesis using mnRNP and the c53 model template in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Both native and recombinant IREF-2 proteins supported cell-free unprimed RNA synthesis using mnRNP and the c53 model template in a dose-dependent manner (Figure 3A, lanes 2\u20134 and 5\u20137, or lanes 8\u201311 and 12\u201315, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "6c3ad248-1db1-4934-a5ff-08fc52c846b5",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C44",
+      "claim": "Both native and recombinant APRIL support cell-free unprimed RNA synthesis using mnRNP and the c53 model template in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Both native and recombinant IREF-2 proteins supported cell-free unprimed RNA synthesis using mnRNP and the c53 model template in a dose-dependent manner (Figure 3A, lanes 2\u20134 and 5\u20137, or lanes 8\u201311 and 12\u201315, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "3a5247a7-ce7f-4e3a-b1ec-cd5a856c7d18",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C45",
+      "claim": "pp32 and APRIL are authentic proteins responsible for IREF-2 activity, able to function independently of each other.",
+      "claim_type": "EXPLICIT",
+      "source": "These results clearly indicate that pp32 and APRIL are authentic proteins responsible for IREF-2 activity, able to function independently of each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the dose-response experiments shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "b8f748c2-3a00-4f54-b5ce-2aed190606b4",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C46",
+      "claim": "TAF-I\u03b2/SET did not exhibit any IREF-2 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "TAF-I\u03b2/SET did not exhibit any IREF-2 activity at all (lanes 16\u201318), suggesting that its acidic property is insufficient for IREF-2 activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "88605915-0d79-48ed-b3ae-1a32960da5a0",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C47",
+      "claim": "The acidic property of TAF-I\u03b2/SET is insufficient for IREF-2 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "TAF-I\u03b2/SET did not exhibit any IREF-2 activity at all (lanes 16\u201318), suggesting that its acidic property is insufficient for IREF-2 activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the lack of IREF-2 activity despite TAF-I\u03b2/SET being an acidic protein.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "fa01d992-bbde-402b-a2d4-e7afeb74b11e",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C48",
+      "claim": "Unprimed RNA product was observed from the cRNA template in an IREF-2-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the unprimed RNA product was observed from the cRNA template in an IREF-2-dependent manner (Figure 3B, lanes 8\u201310), but a significant level of cRNA synthesis was not detected when the vRNA template was used (lanes 3\u20135).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "21fe0392-9210-4594-91b3-b7a97a37390e",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C49",
+      "claim": "A significant level of cRNA synthesis was not detected when the vRNA template was used with IREF-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the unprimed RNA product was observed from the cRNA template in an IREF-2-dependent manner (Figure 3B, lanes 8\u201310), but a significant level of cRNA synthesis was not detected when the vRNA template was used (lanes 3\u20135).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "d1ab238a-f072-4a26-8286-48d6417c89d6",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C50",
+      "claim": "IREF-2 preferentially regulates vRNA synthesis from the cRNA template (the second step of the replication mechanism).",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that IREF-2 preferentially regulates vRNA synthesis from the cRNA template, that is, the second step of the replication mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the template preference experiments shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "9df2bd72-c664-467f-a839-ca245dc75aac",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C51",
+      "claim": "Replicative cRNA synthesis from the genomic vRNA templates was stimulated by recombinant IREF-1/MCM.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously observed, replicative cRNA synthesis from the genomic vRNA templates was stimulated by recombinant IREF-1/MCM (Figure 3C, lanes 6\u20138), which is known to stimulate promoter clearance during replication (Kawaguchi and Nagata, 2007).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the experimental data shown in Figure 3C and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "7d09c52f-41d1-41b0-a646-cfecf5adf073",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C52",
+      "claim": "No significant change induced by pp32 was observed in cRNA synthesis from endogenous vRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, no significant change induced by pp32 was observed (lanes 3\u20135).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "d14ffee6-ab0f-4830-9d8d-68c549686de6",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C53",
+      "claim": "IREF-2 is not involved in cRNA synthesis from endogenous vRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding indicates that IREF-2 is not involved in cRNA synthesis from endogenous vRNA and that the function of IREF-2 is distinct from that of IREF-1/MCM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "2a7fbeb2-406b-45eb-8fb0-ac371a8843bd",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C54",
+      "claim": "The function of IREF-2 is distinct from that of IREF-1/MCM.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding indicates that IREF-2 is not involved in cRNA synthesis from endogenous vRNA and that the function of IREF-2 is distinct from that of IREF-1/MCM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing the effects of IREF-2 and IREF-1/MCM shown in Figure 3C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "3f624631-d1ba-4341-a7df-115f07a6ab4f",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C55",
+      "claim": "IREF-2 has neither a positive nor a negative effect on viral mRNA transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "After addition of pp32 to this cell-free transcription reaction, no obvious change was observed (lanes 3\u20135), suggesting that IREF-2 has neither a positive nor a negative effect on viral mRNA transcription.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "53a34717-9707-4113-982e-495051e7706d",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C56",
+      "claim": "The interaction between IREF-2 proteins and the model RNA template was not observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the interaction between IREF-2 proteins and the model RNA template was not observed (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the experimental data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "017d737b-f2c8-45bc-a6c4-fd0108d3f997",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C57",
+      "claim": "Each subunit of the vRdRP complex (PB1, PB2, and PA) was co-precipitated with both GST-pp32 and GST-APRIL.",
+      "claim_type": "EXPLICIT",
+      "source": "Each subunit of the vRdRP complex (PB1, PB2, and PA) was co-precipitated with both GST-pp32 and GST-APRIL, but NP was not (Figure 4A, lanes 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by GST pull-down assays shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "717781bd-4ad2-419e-b6b6-ec4470bbf149",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C58",
+      "claim": "NP was not co-precipitated with GST-pp32 or GST-APRIL.",
+      "claim_type": "EXPLICIT",
+      "source": "Each subunit of the vRdRP complex (PB1, PB2, and PA) was co-precipitated with both GST-pp32 and GST-APRIL, but NP was not (Figure 4A, lanes 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by GST pull-down assays shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "7f66a4ec-2cd9-4708-b967-47c24f384fe2",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C59",
+      "claim": "NP was co-precipitated with GST-RAF2p48.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, only NP was co-precipitated with GST-RAF2p48, which functions as a chaperone for NP (Momose et al., 2001) (lane 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by GST pull-down assays shown in Figure 4A and supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "9784704a-6fe6-4a20-846b-96b18c3b63cd",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C60",
+      "claim": "Exogenously expressed trimeric complexes of the viral polymerases were co-precipitated with both GST-pp32 and GST-APRIL.",
+      "claim_type": "EXPLICIT",
+      "source": "Exogenously expressed trimeric complexes of the viral polymerases were co-precipitated with both GST-pp32 and GST-APRIL (lanes 2 and 3), but NP was not detected at all (lanes 6 and 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by GST pull-down assays shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "3c5972b6-d1b8-4e2c-8a2c-952e4a70ad1f",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C61",
+      "claim": "The binding target of IREF-2 is the trimeric complex of vRdRP, not NP.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we concluded that the binding target of IREF-2 is the trimeric complex of vRdRP, not NP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the GST pull-down experiments shown in Figures 4A and 4B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "f2535700-46c4-4fa2-8c0f-30bc86a409e9",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C62",
+      "claim": "IREF-2 might interact with a free form of vRdRP, but not with vRdRP in RNP complexes in infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the fact that the interaction between IREF-2 and NP could not be observed in the infected cells suggested that IREF-2 might interact with a free form of vRdRP, but not with vRdRP, in RNP complexes in infected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lack of NP co-precipitation with IREF-2 in infected cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "43d1181e-6fc2-4977-aada-e64a710d9d14",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C63",
+      "claim": "1 pmol of vRdRP complexed with GST-pp32 contains <0.5 fmol of segment 5 viral RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 1 pmol of vRdRP complexed with GST-pp32 contains <0.5 fmol of segment 5 (vRNA, cRNA, and viral mRNA) only, suggesting that IREF-2 tends to interact with a free form of vRdRP in infected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by RT-qPCR quantification of viral RNA in IREF-2-vRdRP complexes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "14ed8fd8-791e-4a5e-9041-b880283567a7",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C64",
+      "claim": "IREF-2 tends to interact with a free form of vRdRP in infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 1 pmol of vRdRP complexed with GST-pp32 contains <0.5 fmol of segment 5 (vRNA, cRNA, and viral mRNA) only, suggesting that IREF-2 tends to interact with a free form of vRdRP in infected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the low amount of viral RNA in IREF-2-vRdRP complexes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "9f024c45-9392-4d3b-8ba7-ee6114c4bd53",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C65",
+      "claim": "Neither of the binary subcomplexes (PB1-PB2 or PB1-PA) was pulled down with GST-IREF-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither of the binary subcomplexes was pulled down with GST-IREF-2 ('GST pull-down' panels, lanes 5, 6, 8, and 9), whereas the interaction with IREF-2 could be observed for the vRdRP trimeric complex (lanes 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by GST pull-down assays shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "721c81e2-f509-4da9-9496-e2ed93c2cef7",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C66",
+      "claim": "The interaction with IREF-2 could be observed for the vRdRP trimeric complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither of the binary subcomplexes was pulled down with GST-IREF-2 ('GST pull-down' panels, lanes 5, 6, 8, and 9), whereas the interaction with IREF-2 could be observed for the vRdRP trimeric complex (lanes 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by GST pull-down assays shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "a09d8617-097b-4c4f-998a-21d8efec60e6",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C67",
+      "claim": "Both the PA and the PB2 subunits in the trimeric complex of vRdRP are requisite for stable interaction with IREF-2.",
+      "claim_type": "EXPLICIT",
+      "source": "This result strongly suggests that both the PA and the PB2 subunits in the trimeric complex of vRdRP are requisite for stable interaction with IREF-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that only the trimeric complex, not binary subcomplexes, interacts with IREF-2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "dd4d0ff4-469d-43ca-83fa-15dde0d92769",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C68",
+      "claim": "The expression levels of both pp32 and APRIL were strongly blocked by transfection with short RNAi duplexes targeting them.",
+      "claim_type": "EXPLICIT",
+      "source": "By transfection with short RNAi duplexes targeting pp32 and APRIL, the expression levels of both proteins were strongly blocked (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by western blot analysis shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "8a2182e4-7b15-4bc1-a38a-8af08e2e801a",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C69",
+      "claim": "Upon knockdown of pp32 or APRIL, the levels of vRNA, cRNA, and viral mRNA decreased to about 50% to 80% of the control level in each infection period.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon KD of pp32 or APRIL, the levels of vRNA, cRNA, and viral mRNA decreased to about 50% to \u201380% of the control level in each infection period (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by RT-qPCR analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "20d9ca7b-8675-4d94-ab41-cc10b4062fcd",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C70",
+      "claim": "By silencing both pp32 and APRIL, each viral RNA level was additively decreased to about 25% to 50% of the control level.",
+      "claim_type": "EXPLICIT",
+      "source": "By silencing both pp32 and APRIL ('double-KD' cells; see Figure 5A, lane 6), each viral RNA level was additively decreased to about 25% to \u2013 50% of the control level (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by RT-qPCR analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "e007921c-4a33-4c60-8739-9f054b5794d4",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C71",
+      "claim": "pp32 and APRIL redundantly play a positive role in viral RNA synthesis in infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that IREF-2, pp32, and APRIL redundantly play a positive role in viral RNA synthesis in infected cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the additive effect of double knockdown on viral RNA levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "c9192f3a-9075-46c4-a695-553e15397b53",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C72",
+      "claim": "The accumulation level of the primary transcription appeared to be almost the same for the control KD and IREF-2 double-KD cells in the presence of cycloheximide.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of cycloheximide, the accumulation level of the primary transcription appeared to be almost the same for the control KD and IREF-2 double-KD cells, while in the absence of cycloheximide, a significant reduction was observed in the IREF-2 double-KD cells (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by RT-qPCR analysis shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "d23d1fd7-9b7f-4b66-9cf6-7deb93a606ed",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C73",
+      "claim": "IREF-2 had no effect on the primary transcription.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that IREF-2 had no effect on the primary transcription, consistent with the result presented in Figure 3D showing that IREF-2 had no effect on the cap-snatching transcription in the cell-free reaction system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cycloheximide experiment shown in Figure 5C and consistent with Figure 3D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "925850b2-b927-4eef-95ec-ef2659844404",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C74",
+      "claim": "IREF-2 stimulates viral RNA replication in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is quite possible that IREF-2 stimulates viral RNA replication in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the knockdown experiments showing effects on viral RNA levels but not on primary transcription.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "07444c07-d8d0-46a8-b394-0ac0c171ec18",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C75",
+      "claim": "Upon silencing both IREF-2 proteins, significant decrease in progeny virus production (approximately 90% of reduction at each time point) could be observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon silencing both IREF-2 proteins (IREF-2 double-KD), significant decrease in progeny virus production (approximately, 90% of reduction at each time point) could be observed (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by virus growth curve analysis shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "456bd274-d6f4-4dca-81bc-ce5da47dd5d3",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C76",
+      "claim": "The decrease in progeny virus production in IREF-2 double-KD cells is attributable to the deficiency in the viral RNA replication process caused by IREF-2 KD.",
+      "claim_type": "EXPLICIT",
+      "source": "This seems to be attributable to the deficiency in the viral RNA replication process caused by IREF-2 KD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the combined results of viral RNA level measurements and virus production assays.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "9c050078-d4a1-4211-9afe-692f2eeec75e",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C77",
+      "claim": "APRIL seems not to be co-precipitated with any singly expressed vRdRP subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we have shown that IREF-2 can interact efficiently with the trimeric complex of PB1, PB2, and PA, but not with any subcomplexes (Figure 4C). Therefore, APRIL seems not to be co-precipitated with any singly expressed vRdRP subunit (Watanabe et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the requirement for the trimeric complex for IREF-2 interaction and cited previous study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "320c3293-8c9d-4301-8a6d-892f1c54fb1a",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C78",
+      "claim": "Interaction between IREF-2 and the vRdRP trimeric complexes was observed in infected cells and cells cotransfected with all three subunit expression vectors.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that interaction between IREF-2 and the vRdRP trimeric complexes was observed in infected cells and cells cotransfected with all three subunit expression vectors, while interaction with the RNP complexes could not be observed in the infected cells (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by GST pull-down assays shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "cd0ed8be-4581-4a95-abac-622806b92801",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C79",
+      "claim": "The interaction between IREF-2 and vRdRP appears to be temporary during the process of cRNA template binding and vRNA synthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "On the basis of these observations, the interaction between IREF-2 and vRdRP appears to be temporary during the process of cRNA template binding and vRNA synthesis, and once vRdRP starts vRNA synthesis, the associating IREF-2 protein may be released from vRdRP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the observation that IREF-2 interacts with free vRdRP but not with RNP complexes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "a897d426-7b57-46b0-aaeb-a61ca616dd32",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C80",
+      "claim": "Once vRdRP starts vRNA synthesis, the associating IREF-2 protein may be released from vRdRP.",
+      "claim_type": "EXPLICIT",
+      "source": "On the basis of these observations, the interaction between IREF-2 and vRdRP appears to be temporary during the process of cRNA template binding and vRNA synthesis, and once vRdRP starts vRNA synthesis, the associating IREF-2 protein may be released from vRdRP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the transient nature of IREF-2-vRdRP interaction.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "690062e3-8186-4efe-9c5a-06157bfe2304",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C81",
+      "claim": "The incomplete abolishment of viral RNA accumulation in IREF-2 KD cells could be interpreted as due to the involvement of another unidentified host factor(s) in the viral RNA replication process.",
+      "claim_type": "EXPLICIT",
+      "source": "The accumulation level of viral RNA in infected IREF-2 KD cells was significantly decreased, but not completely abolished (Figure 5B). This incomplete abolishment could be interpreted as due to the involvement of another unidentified host factor(s) in the viral RNA replication process.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculated to explain the incomplete effect of IREF-2 knockdown.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "92a21184-f6eb-445e-9975-edb23f67b53c",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C82",
+      "claim": "Viral NS2 protein and virus-induced small leader RNA play important roles in the RNA replication process.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have demonstrated that viral NS2 protein and virus-induced small leader RNA play important roles in the RNA replication process (Perez et al., 2010; 2012; Robb et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "9b1e5c7a-9e77-4b72-a802-a938e1c5cd45",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C83",
+      "claim": "The negative effect of IREF-2 KD on viral RNA replication might be compensated by other host and/or viral factor(s) and/or other regulation mechanism(s).",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings suggest that the negative effect of IREF-2 KD on viral RNA replication might be compensated by other host and/or viral factor(s) and/or other regulation mechanism(s) and that viral replication at some limited level could still be observed in IREF-2 KD cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the incomplete abolishment of viral replication in IREF-2 KD cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "5502b50e-63ea-4d74-a96f-9db0709059aa",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C84",
+      "claim": "Viral replication at some limited level could still be observed in IREF-2 KD cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these findings suggest that the negative effect of IREF-2 KD on viral RNA replication might be compensated by other host and/or viral factor(s) and/or other regulation mechanism(s) and that viral replication at some limited level could still be observed in IREF-2 KD cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the knockdown experiments shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "7d0a1e72-af7f-4e3d-be61-73a0e8090b3b",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C85",
+      "claim": "The function of IREF-2 is distinct from that of IREF-1/MCM.",
+      "claim_type": "EXPLICIT",
+      "source": "Apparently, the function of IREF-2 is distinct from that of IREF-1/MCM (Figure 3C), which plays a role in promoter clearance during viral RNA synthesis, but how and in which step IREF-2 is involved is unclear.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparing the effects of IREF-2 and IREF-1/MCM in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "42dce37a-7ee0-498a-b16c-a5f26d11d1a6",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C86",
+      "claim": "vRNA synthesis is initiated in an 'internal initiation and realignment' manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, Deng et al demonstrated that the initiation steps of vRNA synthesis and cRNA synthesis take place in different ways: vRNA synthesis is initiated in an 'internal initiation and realignment' manner, whereas cRNA synthesis is initiated at the 3'-terminus of the vRNA template (Deng et al., 2006b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "824c53f4-aa22-4674-8457-2f8bc388dc9b",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C87",
+      "claim": "cRNA synthesis is initiated at the 3'-terminus of the vRNA template.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, Deng et al demonstrated that the initiation steps of vRNA synthesis and cRNA synthesis take place in different ways: vRNA synthesis is initiated in an 'internal initiation and realignment' manner, whereas cRNA synthesis is initiated at the 3'-terminus of the vRNA template (Deng et al., 2006b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "4b8cf3cd-9ca7-4135-9892-33667d53f8df",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C88",
+      "claim": "IREF-2 functions at an initiation process specific to vRNA synthesis using cRNA as the template.",
+      "claim_type": "EXPLICIT",
+      "source": "On the basis of this model (Deng et al., 2006b), the differential effect of IREF-2 on vRNA and cRNA synthesis (Figure 3B) leads to the hypothetical speculation that IREF-2 functions at an initiation process specific to vRNA synthesis using cRNA as the template.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is speculated based on the template preference of IREF-2 and the known initiation mechanisms.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "59201342-a0aa-4f53-8afd-8941c0033cf9",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C89",
+      "claim": "IREF-2-dependent vRNA products were shown to be exclusively full length.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, however, IREF-2-dependent vRNA products were shown to be exclusively full length.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the experimental data in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "37876360-519c-435a-9264-fe793016d6dd",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C90",
+      "claim": "IREF-2 regulates the initiation step of vRNA synthesis by preventing improper extension prior to pppApG realignment.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking these results together, we postulated that IREF-2 regulates the initiation step of vRNA synthesis as follows: (1) by preventing improper extension prior to pppApG realignment, (2) by facilitating the conformational change of vRdRP and/or the cRNA template to promote the realignment, and/or (3) by stabilizing the initiation-intermediate complex when pppApG is already realigned onto c3'U1C2 and ready for proper elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothetical mechanism proposed based on the experimental observations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "ce437c73-b914-423d-9100-3526a3356d99",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C91",
+      "claim": "IREF-2 regulates the initiation step of vRNA synthesis by facilitating the conformational change of vRdRP and/or the cRNA template to promote the realignment.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking these results together, we postulated that IREF-2 regulates the initiation step of vRNA synthesis as follows: (1) by preventing improper extension prior to pppApG realignment, (2) by facilitating the conformational change of vRdRP and/or the cRNA template to promote the realignment, and/or (3) by stabilizing the initiation-intermediate complex when pppApG is already realigned onto c3'U1C2 and ready for proper elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothetical mechanism proposed based on the experimental observations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "2f346a16-0047-4def-bd53-87fa538fd82c",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C92",
+      "claim": "IREF-2 regulates the initiation step of vRNA synthesis by stabilizing the initiation-intermediate complex when pppApG is already realigned onto c3'U1C2 and ready for proper elongation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking these results together, we postulated that IREF-2 regulates the initiation step of vRNA synthesis as follows: (1) by preventing improper extension prior to pppApG realignment, (2) by facilitating the conformational change of vRdRP and/or the cRNA template to promote the realignment, and/or (3) by stabilizing the initiation-intermediate complex when pppApG is already realigned onto c3'U1C2 and ready for proper elongation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothetical mechanism proposed based on the experimental observations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "5555897a-2cb2-4736-9215-8a4060234965",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C93",
+      "claim": "The intrinsic nature of vRdRPs differs between mnRNP and recombinant vRdRP preparations.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the intrinsic nature of vRdRPs seems to differ one from the other, and recombinant vRdRP is possibly competent to initiate spontaneously de novo vRNA synthesis to some extent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparing different experimental systems and their outcomes.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "c2c303e9-aa87-497c-81e5-621e2d67d6bd",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C94",
+      "claim": "Recombinant vRdRP is possibly competent to initiate spontaneously de novo vRNA synthesis to some extent.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the intrinsic nature of vRdRPs seems to differ one from the other, and recombinant vRdRP is possibly competent to initiate spontaneously de novo vRNA synthesis to some extent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on differences in cell-free system outcomes.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "36de84f7-6176-45b2-bede-4b44645cc3c6",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C95",
+      "claim": "vRdRP intrinsically possesses de novo initiation activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking such differences in the quality and quantity of the enzyme sources into account, it is possible that vRdRP intrinsically possesses de novo initiation activity and that IREF-2 may increase the turnover efficiency so that the apparent concentration of vRdRP seems to be increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on comparing different experimental systems.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "5642d963-2eed-407a-9543-a20d6257ae95",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "claim_id": "C96",
+      "claim": "IREF-2 may increase the turnover efficiency so that the apparent concentration of vRdRP seems to be increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking such differences in the quality and quantity of the enzyme sources into account, it is possible that vRdRP intrinsically possesses de novo initiation activity and that IREF-2 may increase the turnover efficiency so that the apparent concentration of vRdRP seems to be increased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothetical mechanism proposed to explain IREF-2 function.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a6b69563-0fd2-4924-92aa-0b8f42f01cf4",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A novel host factor activity designated IREF-2 was identified in nuclear extracts of uninfected cells that enables robust unprimed vRNA synthesis from a cRNA template. IREF-2 was purified through sequential chromatography steps and appears to be highly acidic based on its chromatographic behavior, with activity recovered in fractions eluted with ~500 mM KCl from Mono-Q column. Two polypeptides of approximately 32 and 31 kDa were identified as corresponding to IREF-2 activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C27-C31 collectively demonstrate the discovery and initial purification of IREF-2 activity through biochemical fractionation. The data in Figure 1 shows clear RNA synthesis activity dependent on the P0.05 fraction (C27-C28), successful purification through multiple chromatography steps (C29-C30), and correlation of activity with specific protein bands (C31). The experimental approach is sound and the results are internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "3ae7a32b-3137-40a2-b9bf-4bfeb9bf508b",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The IREF-2-dependent RNA product is of negative polarity (vRNA) and contains a 5'-triphosphate moiety, indicating that synthesis is initiated de novo. This was demonstrated through RNase T2 protection assays showing the product hybridizes with cRNA probe but not vRNA probe, and thin-layer chromatography analysis revealing the presence of pppAp at the 5'-terminus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 are well-supported by complementary experimental approaches shown in Figure 2. The RNase T2 protection assay (C32) definitively establishes polarity, while the thin-layer chromatography with appropriate controls (C33) demonstrates the 5'-triphosphate structure. The inference that synthesis is de novo (C34) logically follows from the presence of 5'-triphosphate. The experimental design includes proper controls and the conclusions are warranted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "f28451ed-40aa-4abd-86c9-603eb517388e",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "IREF-2 consists of two host-derived proteins identified as pp32 (IREF-2\u03b1/ANP32A) and APRIL (IREF-2\u03b2/ANP32B) through MALDI-TOF mass spectrometry analysis. These proteins exhibit high homology (71% sequence identity, 81% similarity) and belong to the acidic nuclear phosphoprotein 32-kDa family (ANP32 family).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C35-C38 are supported by mass spectrometry identification (referenced in Supplementary file 1) and correlation with activity profiles from Figure 1C. The identification of pp32 and APRIL is based on standard proteomic methods, and the homology data (C37) is verifiable through sequence analysis. The family classification (C38) is established knowledge. The identification is convincing given the correlation between protein elution and activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "a321dd38-a620-4798-a4f9-ab840b112786",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Both native and recombinant pp32 and APRIL independently support cell-free unprimed RNA synthesis in a dose-dependent manner, confirming they are authentic proteins responsible for IREF-2 activity. A related acidic protein, TAF-I\u03b2/SET, did not exhibit IREF-2 activity, indicating that acidic properties alone are insufficient for this function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 are well-supported by Figure 3A showing dose-dependent activity for both native and recombinant forms of pp32 and APRIL. The negative control with TAF-I\u03b2/SET (C46-C47) is important for demonstrating specificity beyond just acidic character. The use of both native and recombinant proteins strengthens the conclusion that these are the authentic factors. The experimental design is rigorous with appropriate controls.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "0d298e87-2db5-4d3c-af15-46bd2f3e6af4",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "IREF-2 preferentially upregulates vRNA synthesis from cRNA templates rather than cRNA synthesis from vRNA templates. Unprimed RNA products were observed from cRNA templates in an IREF-2-dependent manner, but significant cRNA synthesis was not detected when vRNA templates were used, suggesting IREF-2 specifically regulates the second step of viral replication.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C48-C50 are supported by the template preference experiments in Figure 3B showing clear differential activity. The observation that IREF-2 promotes vRNA synthesis from cRNA but not cRNA synthesis from vRNA is consistent across experiments. However, the authors acknowledge in the Discussion that the cell-free system may not be fully optimized for cRNA synthesis, introducing some uncertainty about whether IREF-2 truly has no role in cRNA synthesis in vivo. The conclusion is supported for the experimental conditions tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "0b3e441e-dec3-4821-93de-2e9e71ecd615",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "IREF-2 is not involved in cRNA synthesis from endogenous vRNA in vRNP complexes, and its function is distinct from IREF-1/MCM. While recombinant IREF-1/MCM stimulated cRNA synthesis from genomic vRNA templates, pp32 showed no significant effect on this process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 and C85 are supported by Figure 3C comparing the effects of IREF-2 and IREF-1/MCM on cRNA synthesis from vRNP. The differential effects clearly distinguish the two factors' functions. The experimental design appropriately uses IREF-1/MCM as a positive control for cRNA synthesis stimulation, making the lack of effect by IREF-2 more meaningful. This result is consistent with the template preference data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "70824825-cec4-4500-9e77-71c552225c28",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "IREF-2 has no effect on viral mRNA transcription, as demonstrated both in cell-free cap-snatching transcription assays and in cycloheximide-treated infected cells measuring primary transcription. Addition of pp32 to transcription reactions showed no obvious changes in mRNA production.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55 and C73 are supported by complementary experiments: cell-free transcription assays (Figure 3D) and cycloheximide treatment of infected cells (Figure 5C). The convergence of evidence from both in vitro and cellular systems strengthens the conclusion. The cycloheximide experiment is particularly informative as it isolates primary transcription from replication. The conclusion that IREF-2 does not affect transcription is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "a7a0788f-5bf6-4977-8d06-46fe57606a4f",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "IREF-2 interacts with the trimeric vRdRP complex (PB1, PB2, PA) but not with NP, and preferentially binds to free vRdRP rather than vRdRP in RNP complexes. GST pull-down assays showed co-precipitation of all three polymerase subunits with GST-pp32 and GST-APRIL, and RT-qPCR quantification revealed that vRdRP complexed with IREF-2 contains minimal viral RNA (<0.5 fmol per pmol vRdRP).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C57-C58, C60-C64 are well-supported by GST pull-down experiments in Figure 4A-B and RT-qPCR quantification. The use of both infected cells and transfected cells expressing recombinant proteins strengthens the conclusions. The quantification of viral RNA in IREF-2-vRdRP complexes (C63-C64) provides strong evidence for interaction with free polymerase. The experimental approach is sound with appropriate controls (GST-RAF2p48 for NP interaction).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "908aa727-191e-4d5a-93ad-ba0292b91d00",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Both PA and PB2 subunits in the trimeric vRdRP complex are required for stable interaction with IREF-2. GST pull-down assays showed that neither PB1-PB2 nor PB1-PA binary subcomplexes interacted with IREF-2, while the trimeric complex did, indicating that the complete trimeric structure is necessary for IREF-2 binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 are supported by Figure 4C showing differential binding of trimeric versus binary complexes. The experimental design systematically tests different subunit combinations, and the results clearly demonstrate the requirement for the complete trimer. The use of Flag-tagged PB1 to confirm complex formation adds rigor. The conclusion that both PA and PB2 are required (C67) is a reasonable inference from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "e38cc5f3-9d1a-49f0-91c3-1bb8a9eea2dc",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "IREF-2 is involved in viral replication in vivo, as demonstrated by siRNA knockdown experiments. Knockdown of pp32 or APRIL individually decreased viral RNA levels to 50-80% of control, while double knockdown additively decreased levels to 25-50% of control, indicating that pp32 and APRIL redundantly play positive roles in viral RNA synthesis in infected cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C68-C71 are supported by knockdown experiments in Figure 5A-B showing effective protein depletion and corresponding decreases in viral RNA levels. The additive effect of double knockdown (C70-C71) provides strong evidence for redundant function. The use of RT-qPCR for quantification is appropriate. However, the incomplete abolishment of viral RNA synthesis suggests additional factors may be involved, which the authors acknowledge. The conclusion of in vivo involvement is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "938371fc-349f-4ace-b1b6-f16c965c978a",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "IREF-2 stimulates viral RNA replication in vivo, and knockdown of both IREF-2 proteins results in approximately 90% reduction in progeny virus production at each time point. This decrease is attributable to deficiency in the viral RNA replication process caused by IREF-2 knockdown.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76 are supported by the virus growth curve analysis in Figure 5D and the viral RNA measurements in Figure 5B-C. The dramatic reduction in virus production (C75) correlates with decreased viral RNA levels. The attribution to replication deficiency (C76) is a reasonable inference given that primary transcription was unaffected (Figure 5C). However, C74 contains some speculation as indicated by 'quite possible,' though it is well-supported by the totality of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "6196ff81-b37b-4917-8b7c-299318a6c609",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "IREF-2 proteins do not interact directly with the model RNA template, as demonstrated by gel shift assays shown in Figure 4\u2014figure supplement 1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 is supported by the experimental data in Figure 4\u2014figure supplement 1. This negative result is important for understanding the mechanism of IREF-2 action, indicating that it functions through interaction with the polymerase rather than the RNA template. The experimental approach using gel shift assays is appropriate for detecting RNA-protein interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "5d6e2b86-9396-45fe-acba-52e694eba455",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The manuscript describes established knowledge about influenza virus replication: vRNA replication is catalyzed by vRdRP consisting of PB1, PB2, and PA; replication proceeds in two steps with cRNA first copied from vRNA, then progeny vRNA amplified from cRNA; and the genome consists of eight negative-strand vRNA segments forming vRNP complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C9-C10, and C15 represent well-established background knowledge about influenza virus biology that is widely accepted in the field. These are appropriately cited and provide necessary context for the study. No experimental validation is needed as these are foundational facts.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "8eb39b38-f0e3-4162-a8ee-dcdf849e895e",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The manuscript reviews prior work on influenza virus transcription and replication mechanisms, including cap-snatching, polyadenylation, de novo initiation, roles of viral proteins, and previously identified host factors (RAF-I/Hsp90, RAF-II/UAP56/BAT1, IREF-1/MCM complex).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C26 represent background information from prior studies, appropriately cited throughout. These claims establish the context for the current work and are supported by the cited literature. The authors' previous identification of RAF-I, RAF-II, and IREF-1 (C23-C26) provides important background for the discovery of IREF-2.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "d9d712d6-8804-4815-a01f-6d799b5db410",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Efficient cell-free replication could not be reproduced using only viral factors (vRdRP and viral RNA), despite these being minimal requirements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C3 is supported by experimental observations in the study (Figure 1A, lane 2 and elsewhere) and is consistent with prior literature. This observation motivates the search for host factors like IREF-2. The claim is well-established in the field and demonstrated in the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "d721da7f-8f1d-467c-8491-0d85b3dd1377",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "pp32 and APRIL are highly homologous proteins (71% identity, 81% similarity) expressed mainly in nuclei of various tissues. Previous studies identified pp32 as related to influenza infection through mapping analyses, both proteins as vRdRP binding partners through proteomics, and APRIL as a 'top hit' gene affecting viral RNA synthesis in genome-wide RNAi screening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37, C39-C42 provide important context about the identified proteins. C37 is supported by sequence analysis data. C39 represents established knowledge about protein localization. C40-C42 cite relevant prior studies that identified these proteins in influenza-related contexts, though their functional roles were not previously characterized. These claims appropriately position the current work within existing literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "95c31fcc-f070-4223-9477-71549d13d345",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "NP was co-precipitated with GST-RAF2p48, which functions as a chaperone for NP, serving as a positive control for NP interaction in the GST pull-down experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C59 is supported by Figure 4A and provides an important positive control demonstrating that the experimental system can detect NP interactions when they occur. This strengthens the conclusion that IREF-2 does not interact with NP. The result is consistent with prior characterization of RAF2p48.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "082d52c7-d7d7-4676-ab70-b059ec6e80c3",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "In the presence of cycloheximide, the accumulation level of primary transcription was similar between control and IREF-2 double-KD cells, while in the absence of cycloheximide, a significant reduction was observed in IREF-2 double-KD cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C72 is directly supported by the experimental data in Figure 5C. This result is critical for distinguishing effects on primary transcription versus replication. The experimental design using cycloheximide to block protein synthesis and isolate primary transcription is appropriate and well-executed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "7b02718a-cb66-49f3-91dc-5f2dcf4416de",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "APRIL does not co-precipitate with singly expressed vRdRP subunits, consistent with the requirement for trimeric complex formation. Interaction between IREF-2 and vRdRP trimeric complexes was observed in infected cells and cotransfected cells, but not with RNP complexes in infected cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C78 are supported by Figure 4A-C and reconcile the current findings with a previous study (Watanabe et al., 2014). The explanation for why APRIL was not detected with single subunits in prior work is logical given the requirement for the trimeric complex. C78 summarizes key interaction data that distinguishes free polymerase from RNP-associated polymerase.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "3305e2f5-227d-4b47-9de4-ebd7ddfde189",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "The interaction between IREF-2 and vRdRP appears to be temporary during cRNA template binding and vRNA synthesis, with IREF-2 potentially released once synthesis begins. The incomplete abolishment of viral RNA in IREF-2 KD cells could be due to other unidentified host factors or viral factors (like NS2 protein and small leader RNA) that might compensate for IREF-2 loss, allowing limited viral replication to continue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C79-C81, C83-C84 involve significant speculation about mechanisms and compensatory factors. While C84 is observational (limited replication continues in KD cells), C79-C80 speculate about the timing of IREF-2 release without direct evidence. C81 and C83 propose compensatory mechanisms to explain incomplete knockdown effects, but these remain hypothetical. The speculation is reasonable given the data, but lacks direct experimental support. These represent plausible interpretations requiring future validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "bb88fb3e-3faa-4d0c-a0fc-3f3452f2e481",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "Based on prior models of differential initiation mechanisms (vRNA via 'internal initiation and realignment' versus cRNA at the 3'-terminus), the authors speculate that IREF-2 functions at an initiation process specific to vRNA synthesis. They propose IREF-2 may regulate initiation by preventing improper extension before realignment, facilitating conformational changes to promote realignment, and/or stabilizing the initiation-intermediate complex. IREF-2-dependent products were exclusively full-length, unlike some prior reports showing truncated products.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C86-C92 involve substantial speculation about molecular mechanisms. C86-C87 cite prior work on initiation mechanisms. C88 speculates about IREF-2's specific role based on template preference. C89 is observational (full-length products). C90-C92 propose three possible mechanisms without direct evidence distinguishing among them. While the speculation is scientifically reasonable and grounded in the data, these mechanistic proposals require future experimental validation through detailed biochemical and structural studies. The authors appropriately present these as hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "fe818386-8e4c-4c0d-a2bf-da8e283ea6d2",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "The authors speculate that differences between their mnRNP-based system and recombinant vRdRP systems used in other studies may reflect intrinsic differences in enzyme preparations. They propose that vRdRP may intrinsically possess de novo initiation activity, and IREF-2 may increase turnover efficiency, making the apparent vRdRP concentration seem increased.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C93-C96 are highly speculative attempts to reconcile differences between experimental systems. The authors acknowledge these are possibilities ('seems to differ,' 'possibly competent,' 'it is possible') without direct evidence. While the speculation addresses an important issue about why different systems yield different results, these claims lack experimental support and represent hypotheses for future investigation. The discussion is valuable for identifying questions but does not constitute supported conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "139f1e3f-d2ab-4df6-847e-8863b30a1bdc",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Recent studies have demonstrated that viral NS2 protein and virus-induced small leader RNA play important roles in the RNA replication process.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C82 cites prior studies (Perez et al., 2010; 2012; Robb et al., 2009) about other factors involved in replication. This background information is appropriately cited and provides context for discussing why IREF-2 knockdown doesn't completely abolish replication.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    },
+    {
+      "id": "6921411e-4fb9-4dce-ac96-f9e13a1fa374",
+      "content_id": "30a8e055-7275-4edb-88cb-1dcf4ab49346",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "pp32 and APRIL belong to the acidic nuclear phosphoprotein 32-kDa family (ANP32 family).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C38 represents established knowledge about protein family classification based on sequence homology and biochemical properties. This is well-documented in the literature and provides important context for understanding the proteins' properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:40.269293Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "724eb070-edb6-492d-837e-f4a268db959d",
+      "result_id": "a6b69563-0fd2-4924-92aa-0b8f42f01cf4"
+    },
+    {
+      "claim_id": "9beadd1b-9a65-4c8c-8577-e57a9dfb9c36",
+      "result_id": "a6b69563-0fd2-4924-92aa-0b8f42f01cf4"
+    },
+    {
+      "claim_id": "2ff08c1c-8276-4e32-9337-9bad6361b59a",
+      "result_id": "a6b69563-0fd2-4924-92aa-0b8f42f01cf4"
+    },
+    {
+      "claim_id": "27f8e3c0-da1a-41fa-a964-fdc4346e9266",
+      "result_id": "a6b69563-0fd2-4924-92aa-0b8f42f01cf4"
+    },
+    {
+      "claim_id": "5d64390e-8cd5-4f4d-ad77-839f5341cfa0",
+      "result_id": "a6b69563-0fd2-4924-92aa-0b8f42f01cf4"
+    },
+    {
+      "claim_id": "7fa3570d-6711-4b71-874f-90ee455fd64c",
+      "result_id": "a6b69563-0fd2-4924-92aa-0b8f42f01cf4"
+    },
+    {
+      "claim_id": "998f7c0c-30d4-4dc8-819f-764ea5c3727e",
+      "result_id": "3ae7a32b-3137-40a2-b9bf-4bfeb9bf508b"
+    },
+    {
+      "claim_id": "d8792830-0a6d-41de-97ca-f017927e920b",
+      "result_id": "3ae7a32b-3137-40a2-b9bf-4bfeb9bf508b"
+    },
+    {
+      "claim_id": "ce490da0-5eee-48f1-8b1f-baaf43fd5808",
+      "result_id": "3ae7a32b-3137-40a2-b9bf-4bfeb9bf508b"
+    },
+    {
+      "claim_id": "5e613cff-0c1e-429d-99c5-2d6435520b4b",
+      "result_id": "f28451ed-40aa-4abd-86c9-603eb517388e"
+    },
+    {
+      "claim_id": "9ea7420e-26a9-4293-ab68-4e6ddfceafdf",
+      "result_id": "f28451ed-40aa-4abd-86c9-603eb517388e"
+    },
+    {
+      "claim_id": "534ab429-6703-4496-98d1-446df2c02749",
+      "result_id": "f28451ed-40aa-4abd-86c9-603eb517388e"
+    },
+    {
+      "claim_id": "11a5381f-58a3-4be4-829d-f740157cc12f",
+      "result_id": "f28451ed-40aa-4abd-86c9-603eb517388e"
+    },
+    {
+      "claim_id": "6a9cc898-1c61-4060-9dfb-7f317254e3c3",
+      "result_id": "f28451ed-40aa-4abd-86c9-603eb517388e"
+    },
+    {
+      "claim_id": "b46ed060-0e4f-414c-9718-a0580b8e78aa",
+      "result_id": "a321dd38-a620-4798-a4f9-ab840b112786"
+    },
+    {
+      "claim_id": "6c3ad248-1db1-4934-a5ff-08fc52c846b5",
+      "result_id": "a321dd38-a620-4798-a4f9-ab840b112786"
+    },
+    {
+      "claim_id": "3a5247a7-ce7f-4e3a-b1ec-cd5a856c7d18",
+      "result_id": "a321dd38-a620-4798-a4f9-ab840b112786"
+    },
+    {
+      "claim_id": "b8f748c2-3a00-4f54-b5ce-2aed190606b4",
+      "result_id": "a321dd38-a620-4798-a4f9-ab840b112786"
+    },
+    {
+      "claim_id": "88605915-0d79-48ed-b3ae-1a32960da5a0",
+      "result_id": "a321dd38-a620-4798-a4f9-ab840b112786"
+    },
+    {
+      "claim_id": "b53fef1f-0405-425a-9061-6a81ff0fc7a0",
+      "result_id": "0d298e87-2db5-4d3c-af15-46bd2f3e6af4"
+    },
+    {
+      "claim_id": "fa01d992-bbde-402b-a2d4-e7afeb74b11e",
+      "result_id": "0d298e87-2db5-4d3c-af15-46bd2f3e6af4"
+    },
+    {
+      "claim_id": "21fe0392-9210-4594-91b3-b7a97a37390e",
+      "result_id": "0d298e87-2db5-4d3c-af15-46bd2f3e6af4"
+    },
+    {
+      "claim_id": "d1ab238a-f072-4a26-8286-48d6417c89d6",
+      "result_id": "0d298e87-2db5-4d3c-af15-46bd2f3e6af4"
+    },
+    {
+      "claim_id": "9df2bd72-c664-467f-a839-ca245dc75aac",
+      "result_id": "0b3e441e-dec3-4821-93de-2e9e71ecd615"
+    },
+    {
+      "claim_id": "7d09c52f-41d1-41b0-a646-cfecf5adf073",
+      "result_id": "0b3e441e-dec3-4821-93de-2e9e71ecd615"
+    },
+    {
+      "claim_id": "d14ffee6-ab0f-4830-9d8d-68c549686de6",
+      "result_id": "0b3e441e-dec3-4821-93de-2e9e71ecd615"
+    },
+    {
+      "claim_id": "2a7fbeb2-406b-45eb-8fb0-ac371a8843bd",
+      "result_id": "0b3e441e-dec3-4821-93de-2e9e71ecd615"
+    },
+    {
+      "claim_id": "7d0a1e72-af7f-4e3d-be61-73a0e8090b3b",
+      "result_id": "0b3e441e-dec3-4821-93de-2e9e71ecd615"
+    },
+    {
+      "claim_id": "3f624631-d1ba-4341-a7df-115f07a6ab4f",
+      "result_id": "70824825-cec4-4500-9e77-71c552225c28"
+    },
+    {
+      "claim_id": "d23d1fd7-9b7f-4b66-9cf6-7deb93a606ed",
+      "result_id": "70824825-cec4-4500-9e77-71c552225c28"
+    },
+    {
+      "claim_id": "7edcead6-4ddb-4a92-9ee8-93a158d7e159",
+      "result_id": "a7a0788f-5bf6-4977-8d06-46fe57606a4f"
+    },
+    {
+      "claim_id": "017d737b-f2c8-45bc-a6c4-fd0108d3f997",
+      "result_id": "a7a0788f-5bf6-4977-8d06-46fe57606a4f"
+    },
+    {
+      "claim_id": "717781bd-4ad2-419e-b6b6-ec4470bbf149",
+      "result_id": "a7a0788f-5bf6-4977-8d06-46fe57606a4f"
+    },
+    {
+      "claim_id": "9784704a-6fe6-4a20-846b-96b18c3b63cd",
+      "result_id": "a7a0788f-5bf6-4977-8d06-46fe57606a4f"
+    },
+    {
+      "claim_id": "3c5972b6-d1b8-4e2c-8a2c-952e4a70ad1f",
+      "result_id": "a7a0788f-5bf6-4977-8d06-46fe57606a4f"
+    },
+    {
+      "claim_id": "f2535700-46c4-4fa2-8c0f-30bc86a409e9",
+      "result_id": "a7a0788f-5bf6-4977-8d06-46fe57606a4f"
+    },
+    {
+      "claim_id": "43d1181e-6fc2-4977-aada-e64a710d9d14",
+      "result_id": "a7a0788f-5bf6-4977-8d06-46fe57606a4f"
+    },
+    {
+      "claim_id": "14ed8fd8-791e-4a5e-9041-b880283567a7",
+      "result_id": "a7a0788f-5bf6-4977-8d06-46fe57606a4f"
+    },
+    {
+      "claim_id": "9f024c45-9392-4d3b-8ba7-ee6114c4bd53",
+      "result_id": "908aa727-191e-4d5a-93ad-ba0292b91d00"
+    },
+    {
+      "claim_id": "721c81e2-f509-4da9-9496-e2ed93c2cef7",
+      "result_id": "908aa727-191e-4d5a-93ad-ba0292b91d00"
+    },
+    {
+      "claim_id": "a09d8617-097b-4c4f-998a-21d8efec60e6",
+      "result_id": "908aa727-191e-4d5a-93ad-ba0292b91d00"
+    },
+    {
+      "claim_id": "c231ef0b-8ab7-42f6-93de-f18f0806b818",
+      "result_id": "e38cc5f3-9d1a-49f0-91c3-1bb8a9eea2dc"
+    },
+    {
+      "claim_id": "dd4d0ff4-469d-43ca-83fa-15dde0d92769",
+      "result_id": "e38cc5f3-9d1a-49f0-91c3-1bb8a9eea2dc"
+    },
+    {
+      "claim_id": "8a2182e4-7b15-4bc1-a38a-8af08e2e801a",
+      "result_id": "e38cc5f3-9d1a-49f0-91c3-1bb8a9eea2dc"
+    },
+    {
+      "claim_id": "20d9ca7b-8675-4d94-ab41-cc10b4062fcd",
+      "result_id": "e38cc5f3-9d1a-49f0-91c3-1bb8a9eea2dc"
+    },
+    {
+      "claim_id": "e007921c-4a33-4c60-8739-9f054b5794d4",
+      "result_id": "e38cc5f3-9d1a-49f0-91c3-1bb8a9eea2dc"
+    },
+    {
+      "claim_id": "925850b2-b927-4eef-95ec-ef2659844404",
+      "result_id": "938371fc-349f-4ace-b1b6-f16c965c978a"
+    },
+    {
+      "claim_id": "07444c07-d8d0-46a8-b394-0ac0c171ec18",
+      "result_id": "938371fc-349f-4ace-b1b6-f16c965c978a"
+    },
+    {
+      "claim_id": "456bd274-d6f4-4dca-81bc-ce5da47dd5d3",
+      "result_id": "938371fc-349f-4ace-b1b6-f16c965c978a"
+    },
+    {
+      "claim_id": "53a34717-9707-4113-982e-495051e7706d",
+      "result_id": "6196ff81-b37b-4917-8b7c-299318a6c609"
+    },
+    {
+      "claim_id": "569f3e5e-4a46-496a-9024-f50fb96ef8c0",
+      "result_id": "5d6e2b86-9396-45fe-acba-52e694eba455"
+    },
+    {
+      "claim_id": "3582247c-9f3f-4cd9-b98d-e3b0f1784974",
+      "result_id": "5d6e2b86-9396-45fe-acba-52e694eba455"
+    },
+    {
+      "claim_id": "0e08e7c5-97a5-48ed-a998-d2c8ffdb97f9",
+      "result_id": "5d6e2b86-9396-45fe-acba-52e694eba455"
+    },
+    {
+      "claim_id": "0e585189-1b46-468e-ae92-4b7baa3934ca",
+      "result_id": "5d6e2b86-9396-45fe-acba-52e694eba455"
+    },
+    {
+      "claim_id": "5e481dc1-23bf-4839-b7ac-c3c26db9444d",
+      "result_id": "5d6e2b86-9396-45fe-acba-52e694eba455"
+    },
+    {
+      "claim_id": "51439d85-2b42-48c6-9bc8-b44cd4eeeeeb",
+      "result_id": "8eb39b38-f0e3-4162-a8ee-dcdf849e895e"
+    },
+    {
+      "claim_id": "2cb41726-020f-4477-a234-1c6e4709f328",
+      "result_id": "8eb39b38-f0e3-4162-a8ee-dcdf849e895e"
+    },
+    {
+      "claim_id": "746fd3b9-8d0c-45a4-aafc-f1d083fd7f07",
+      "result_id": "8eb39b38-f0e3-4162-a8ee-dcdf849e895e"
+    },
+    {
+      "claim_id": "510103ef-5eff-4c6c-a03e-484688c8c326",
+      "result_id": "8eb39b38-f0e3-4162-a8ee-dcdf849e895e"
+    },
+    {
+      "claim_id": "18b04d7e-63cb-4cb4-9ba7-b087bd5bdd16",
+      "result_id": "8eb39b38-f0e3-4162-a8ee-dcdf849e895e"
+    },
+    {
+      "claim_id": "153dfb7b-5fb4-457a-83dc-32563af20fb2",
+      "result_id": "8eb39b38-f0e3-4162-a8ee-dcdf849e895e"
+    },
+    {
+      "claim_id": "669c38a2-3ea2-4aeb-83d3-dbc007eb02ea",
+      "result_id": "8eb39b38-f0e3-4162-a8ee-dcdf849e895e"
+    },
+    {
+      "claim_id": "f4fb254e-32fc-4546-9c5d-a120ad78cad8",
+      "result_id": "8eb39b38-f0e3-4162-a8ee-dcdf849e895e"
+    },
+    {
+      "claim_id": "b1680ede-9e2e-4760-8b11-f04dca78276f",
+      "result_id": "8eb39b38-f0e3-4162-a8ee-dcdf849e895e"
+    },
+    {
+      "claim_id": "68675595-5418-4042-8c5b-a059a59851e0",
+      "result_id": "8eb39b38-f0e3-4162-a8ee-dcdf849e895e"
+    },
+    {
+      "claim_id": "f51f4728-60e0-4e91-9937-927aacfbfec3",
+      "result_id": "8eb39b38-f0e3-4162-a8ee-dcdf849e895e"
+    },
+    {
+      "claim_id": "db81dc44-ae22-4bde-aa7e-385f88781c85",
+      "result_id": "8eb39b38-f0e3-4162-a8ee-dcdf849e895e"
+    },
+    {
+      "claim_id": "d2b00507-b5d9-4758-b563-4371c97ea711",
+      "result_id": "8eb39b38-f0e3-4162-a8ee-dcdf849e895e"
+    },
+    {
+      "claim_id": "29e76447-bc80-4c88-b06c-211eee3021bc",
+      "result_id": "8eb39b38-f0e3-4162-a8ee-dcdf849e895e"
+    },
+    {
+      "claim_id": "f0fb9ab6-7d14-4dde-b453-0351aa14fe11",
+      "result_id": "8eb39b38-f0e3-4162-a8ee-dcdf849e895e"
+    },
+    {
+      "claim_id": "ef837845-cdbf-44ba-906a-e204dcf082e6",
+      "result_id": "d9d712d6-8804-4815-a01f-6d799b5db410"
+    },
+    {
+      "claim_id": "11a5381f-58a3-4be4-829d-f740157cc12f",
+      "result_id": "d721da7f-8f1d-467c-8491-0d85b3dd1377"
+    },
+    {
+      "claim_id": "848c0ea2-b241-450a-ace2-d77a592ea335",
+      "result_id": "d721da7f-8f1d-467c-8491-0d85b3dd1377"
+    },
+    {
+      "claim_id": "beffe82d-b836-4c72-a141-f0f96a1ec161",
+      "result_id": "d721da7f-8f1d-467c-8491-0d85b3dd1377"
+    },
+    {
+      "claim_id": "3be38ea7-f1d3-4e6c-b1b8-8dd62e06089c",
+      "result_id": "d721da7f-8f1d-467c-8491-0d85b3dd1377"
+    },
+    {
+      "claim_id": "af67ed91-ab94-4657-a929-e088b36b8889",
+      "result_id": "d721da7f-8f1d-467c-8491-0d85b3dd1377"
+    },
+    {
+      "claim_id": "7f66a4ec-2cd9-4708-b967-47c24f384fe2",
+      "result_id": "95c31fcc-f070-4223-9477-71549d13d345"
+    },
+    {
+      "claim_id": "c9192f3a-9075-46c4-a695-553e15397b53",
+      "result_id": "082d52c7-d7d7-4676-ab70-b059ec6e80c3"
+    },
+    {
+      "claim_id": "9c050078-d4a1-4211-9afe-692f2eeec75e",
+      "result_id": "7b02718a-cb66-49f3-91dc-5f2dcf4416de"
+    },
+    {
+      "claim_id": "320c3293-8c9d-4301-8a6d-892f1c54fb1a",
+      "result_id": "7b02718a-cb66-49f3-91dc-5f2dcf4416de"
+    },
+    {
+      "claim_id": "cd0ed8be-4581-4a95-abac-622806b92801",
+      "result_id": "3305e2f5-227d-4b47-9de4-ebd7ddfde189"
+    },
+    {
+      "claim_id": "a897d426-7b57-46b0-aaeb-a61ca616dd32",
+      "result_id": "3305e2f5-227d-4b47-9de4-ebd7ddfde189"
+    },
+    {
+      "claim_id": "690062e3-8186-4efe-9c5a-06157bfe2304",
+      "result_id": "3305e2f5-227d-4b47-9de4-ebd7ddfde189"
+    },
+    {
+      "claim_id": "9b1e5c7a-9e77-4b72-a802-a938e1c5cd45",
+      "result_id": "3305e2f5-227d-4b47-9de4-ebd7ddfde189"
+    },
+    {
+      "claim_id": "5502b50e-63ea-4d74-a96f-9db0709059aa",
+      "result_id": "3305e2f5-227d-4b47-9de4-ebd7ddfde189"
+    },
+    {
+      "claim_id": "42dce37a-7ee0-498a-b16c-a5f26d11d1a6",
+      "result_id": "bb88fb3e-3faa-4d0c-a0fc-3f3452f2e481"
+    },
+    {
+      "claim_id": "824c53f4-aa22-4674-8457-2f8bc388dc9b",
+      "result_id": "bb88fb3e-3faa-4d0c-a0fc-3f3452f2e481"
+    },
+    {
+      "claim_id": "4b8cf3cd-9ca7-4135-9892-33667d53f8df",
+      "result_id": "bb88fb3e-3faa-4d0c-a0fc-3f3452f2e481"
+    },
+    {
+      "claim_id": "59201342-a0aa-4f53-8afd-8941c0033cf9",
+      "result_id": "bb88fb3e-3faa-4d0c-a0fc-3f3452f2e481"
+    },
+    {
+      "claim_id": "37876360-519c-435a-9264-fe793016d6dd",
+      "result_id": "bb88fb3e-3faa-4d0c-a0fc-3f3452f2e481"
+    },
+    {
+      "claim_id": "ce437c73-b914-423d-9100-3526a3356d99",
+      "result_id": "bb88fb3e-3faa-4d0c-a0fc-3f3452f2e481"
+    },
+    {
+      "claim_id": "2f346a16-0047-4def-bd53-87fa538fd82c",
+      "result_id": "bb88fb3e-3faa-4d0c-a0fc-3f3452f2e481"
+    },
+    {
+      "claim_id": "5555897a-2cb2-4736-9215-8a4060234965",
+      "result_id": "fe818386-8e4c-4c0d-a2bf-da8e283ea6d2"
+    },
+    {
+      "claim_id": "c2c303e9-aa87-497c-81e5-621e2d67d6bd",
+      "result_id": "fe818386-8e4c-4c0d-a2bf-da8e283ea6d2"
+    },
+    {
+      "claim_id": "36de84f7-6176-45b2-bede-4b44645cc3c6",
+      "result_id": "fe818386-8e4c-4c0d-a2bf-da8e283ea6d2"
+    },
+    {
+      "claim_id": "5642d963-2eed-407a-9543-a20d6257ae95",
+      "result_id": "fe818386-8e4c-4c0d-a2bf-da8e283ea6d2"
+    },
+    {
+      "claim_id": "92a21184-f6eb-445e-9975-edb23f67b53c",
+      "result_id": "139f1e3f-d2ab-4df6-847e-8863b30a1bdc"
+    },
+    {
+      "claim_id": "6a9cc898-1c61-4060-9dfb-7f317254e3c3",
+      "result_id": "6921411e-4fb9-4dce-ac96-f9e13a1fa374"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C112",
+      "C118",
+      "C149"
+    ],
+    "result": "The Na+/K+-pump's ion selectivity is controlled by protonation state switching between E1 and E2 conformations. MD simulations and free energy calculations demonstrate that Na+ selectivity in E1 requires protonation of D804 (with D808 and D926 deprotonated), while K+ selectivity in E2 requires the opposite pattern (D804 deprotonated, D808 and D926 protonated). Glutamates E327, E779, and E954 remain protonated in both states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C70 collectively provide strong computational evidence from MD simulations, free energy calculations, and pKa predictions showing state-dependent protonation patterns. The findings are internally consistent across multiple computational approaches (PROPKA, FEP, MD stability analysis) and align with prior experimental observations (C124, C125). The calculated pKa of 9.2 for D804 (C71) supports its protonated state in E1 under physiological conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C38",
+      "C110",
+      "C111",
+      "C132",
+      "C133",
+      "C134",
+      "C143",
+      "C150",
+      "C151"
+    ],
+    "result": "A self-correcting mechanism ensures transport selectivity by raising the free energy barrier for occlusion when incorrect ions occupy binding sites. This prevents the pump cycle from proceeding with wrong ion configurations, thereby protecting the stoichiometry and overall selectivity of the transport process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C37, C110-111, C132-133 present a coherent mechanistic model supported by free energy calculations along the pump cycle (Figure 5, Table 5). The computational data show increased barriers for occlusion with incorrect ions. This mechanism is used to explain multiple experimental observations (C135-C142), providing convergent support. However, the mechanism is inferred from computational data rather than directly experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Charge-neutralizing D-to-N mutations differentially affect Na+ selectivity in E1. D804N and D808N maintain or enhance Na+ selectivity at all three sites, with D804N showing ~1000-fold increased selectivity at site II. In contrast, D926N causes loss of Na+ selectivity at sites II and III.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C84 present free energy calculations on mutants (Figure 4, Table 4) that are qualitatively consistent with experimental observations (C74). The computational predictions for D804N and D808N showing maintained/enhanced Na+ selectivity align with experimental data showing these mutants affect K+ binding more than Na+ binding. The quantitative selectivity values provide mechanistic insight into experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Computational models of the outward-facing P-E2 state resolve discrepancies between prior E2(K2) calculations and experimental selectivity measurements. The P-E2 models show that D808N increases Na+ preference at sites I and II in this state, explaining experimental observations of decreased external K+ selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C92 address a specific discrepancy between prior computational work and experiments. The generation of P-E2 models using SERCA pump templates (C90) and their validation against experimental gating charge measurements (C92) provide credibility. The calculations on these models (C89) successfully reconcile prior inconsistencies, though the models themselves are homology-based rather than direct crystal structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C107",
+      "C108"
+    ],
+    "result": "Ion selectivity varies dynamically along the pump cycle. K+ binding sites in outward-facing P-E2\u00b7K2 are initially non-selective or weakly selective, but selectivity increases upon occlusion to E2(K2). During E2-to-E1 transition, site I switches from K+ to Na+ selective, with protonation state changes further enhancing Na+ selectivity. This dynamic selectivity promotes K+ release to the cytoplasm and explains cooperative K+ binding from the extracellular side.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C108 describe selectivity changes along the pump cycle based on free energy calculations at multiple intermediate states (Figure 5, Table 5). The findings are internally consistent and provide mechanistic explanations for experimental observations of sequential and cooperative K+ binding (C101-C104, C107). The computational approach samples multiple conformational states, though these are model-based intermediates rather than experimentally determined structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "MD simulations testing eight protonation state configurations show that binding pocket stability in Na3\u00b7E1(ADP\u00b7Pi) requires fewer than two protonated aspartates among D804, D808, and D926. Four stable protonation states (E1_S0-S3) maintain RMSD <1.6 \u00c5 from crystal structure, while configurations with two or more protonated aspartates become unstable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C64 describe systematic MD simulations testing all possible protonation combinations (Table 3, Figure 2). The structural stability criterion (RMSD <1.6 \u00c5) is reasonable and the results are clearly presented. The finding that multiple protonation states can coexist (C61) is a logical inference from the stability data, though relative populations are not quantified. This provides important validation for subsequent free energy calculations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "PROPKA pKa predictions are sensitive to local structural perturbations, with values for the same residue differing by >1 pH unit between chains in the same crystal asymmetric unit. Due to this sensitivity, only highest-resolution structures (3WGV for E1, 2ZXE for E2) were used for protonation state assignments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 acknowledge an important limitation of empirical pKa prediction methods and describe the methodological response (using only highest-resolution structures). The example of E779 showing pKa values of 9.9 vs 8.4 in different chains (C47) demonstrates the issue. This represents appropriate methodological caution, though it also highlights uncertainty in the protonation state assignments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The proton on D926 in the K+-bound E2 state must come from and return to the cytoplasmic side during the pump cycle to maintain net charge movement of one per cycle. MD simulations reveal aqueous pathways connecting the cytoplasm to D926, including one between helices M5, M7, and M8.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131 present a logical inference about proton movement based on pump stoichiometry (C128) and support it with MD simulation evidence of water pathways (C130-C131, Figure 6). The reasoning is sound: if the D926 proton came from the extracellular side, external pH changes would affect pumping, which is not observed experimentally. The water pathway evidence provides structural plausibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The self-correcting mechanism explains puzzling experimental observations, including why E1 displays strong apparent K+ affinity in competitive binding assays despite binding Na+ from the cytoplasm, and why backward deocclusion shows different kinetics in the presence of Na+ versus K+/Rb+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C142 use the computational self-correcting mechanism to explain experimental observations. While the explanations are plausible and internally consistent with the computational model, they remain interpretations rather than direct experimental validations of the mechanism. The explanations for competitive binding (C135-C138) and backdoor phosphorylation experiments (C139-C142) are reasonable but speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Computational predictions of protonation states in E1 and E2 are consistent with prior experimental and theoretical work. The E1 binding pocket carries net charge -2 (consistent with fluorescence studies), and the protonation pattern agrees with the Skou-Esmann 'four-site' model (H2EK2 for E2, HENa3 for E1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C127 compare computational predictions with prior experimental work, showing consistency with fluorescence studies (C124), mutagenesis experiments (C125), and historical models (C127). This convergence of evidence from multiple independent sources strengthens confidence in the protonation state assignments, though it does not constitute direct experimental validation of the current computational predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "In flexible binding sites like the Na+/K+-pump, selectivity is controlled by ion-ligand and ligand-ligand interactions rather than rigid geometry. Protonation modulates selectivity by altering electrostatic properties: high-field ligands (deprotonated acidic residues) favor Na+, while protonation creates low-field ligands favoring K+. Despite small structural differences (2.5 \u00c5 RMSD) between E1 and E2 binding pockets, protonation state changes drive selectivity switching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C120 present the mechanistic framework for understanding selectivity in flexible binding sites. The principles about high-field vs low-field ligands (C116-C117) are established concepts (C115 cites prior work). The application to the Na+/K+-pump (C118) is supported by the computational data and is consistent with prior work on E2 selectivity (C119). The small RMSD (C120) emphasizes that protonation, not large structural changes, drives selectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The Na+/K+-pump operates near thermodynamic equilibrium with a slow turnover rate (<100/s), suggesting evolutionary optimization for energetic efficiency rather than speed. This explains why the pump does not require highly selective binding sites in open-access states, instead relying on the self-correcting occlusion mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C144-C148 present an evolutionary interpretation of the pump's design. While the slow turnover rate is experimentally established (C145-C146), the inference that this allows near-equilibrium operation (C147) and the speculation about evolutionary optimization (C148) are interpretations. The connection to the self-correcting mechanism (C144) is logical but not directly tested. This represents reasonable speculation rather than demonstrated fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Crystal structures show large structural overlap between Na+ and K+ binding pockets in E1 and E2, with sites I and II in the main chamber (M4, M5, M6) sharing many coordinating residues. Despite structural similarity, the local physicochemical environment varies considerably and can affect pKa and protonation states of six protonatable residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 describe structural features from crystal structures (C39, C23) and make reasonable inferences about physicochemical environment (C43-C44). The structural overlap (C39, C24) and shared coordinating residues (C41-C42, Table 1) are directly observable. The inference that environment affects pKa (C44) is a well-established principle. These claims provide important structural context for the computational work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C71"
+    ],
+    "result": "Free energy calculations confirm that aspartate protonation states greatly affect binding site selectivity in both E1 and E2. The calculations validate prior predictions for E2(K2) protonation states and extend the model to include D926 and E954. FEP calculations estimate D804 pKa at 9.2, supporting its protonated state in E1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66, C71 describe free energy calculation results (Figure 3, Table 4) that confirm and extend prior computational work. The pKa calculation for D804 (C71) provides quantitative support for the protonation state assignment. The confirmation of prior E2(K2) predictions (C66) with an expanded model adds confidence. These are direct computational results rather than inferences.",
+    "result_type": "MINOR"
+  }
+]

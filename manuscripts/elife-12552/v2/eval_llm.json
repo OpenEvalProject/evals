@@ -1,0 +1,346 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C78",
+      "C79"
+    ],
+    "result": "Glycogen accumulates in the inclusion lumen and within EBs, but not in RBs, and this accumulation does not result from bacterial lysis. Luminal glycogen appears between 16-20 hpi when RBs predominate, suggesting RBs initiate the process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 and C78-C79 are well-supported by TEM observations (Figure 1B, supplements) and glucose deprivation/restoration experiments (Figure 1C,D). The timing data from TEM time course (Figure 1\u2014figure supplement 3) directly demonstrates glycogen appearance kinetics. The conclusion that bacterial lysis is not the source is logically derived from the observation that glycogen appears in the lumen before it appears in bacteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Host glycogen synthase Gys1 is translocated into the inclusion lumen along with glycogen-filled vesicles, representing bulk uptake of host glycogen. This process is independent of Atg5-dependent autophagy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 and C80-C82 are supported by immunofluorescence showing Gys1 in inclusions (Figure 2A), specificity controls via siRNA knockdown, glucose deprivation experiments (Figure 2\u2014figure supplement 1), TEM visualization of glycogen-filled vesicles (Figure 2B), and experiments in Atg5-/- cells (Figure 2\u2014figure supplement 2). The evidence converges to demonstrate bulk uptake as one mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "De novo glycogen synthesis in the inclusion lumen is the main mechanism for glycogen accumulation, as Gys1 knockdown only reduces luminal glycogen by approximately 18-20%, indicating bulk uptake is a minor pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 and C85-C87 are supported by quantitative PAS staining showing 82% glycogen remains after Gys1 knockdown (Figure 2D). The quantification method using CellProfiler is described in methods. The inference that de novo synthesis is the major pathway is logically sound given that bulk uptake accounts for only ~20% reduction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C91",
+      "C93",
+      "C94"
+    ],
+    "result": "Bacterial glycogen metabolism enzymes (GlgA, GlgB, GlgX, GlgP, MalQ) are secreted into the inclusion lumen through type 3 secretion (T3S), with glgA transcription delayed until 16 hpi, correlating with glycogen appearance. GlgC lacks a T3S signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50, C91, C93-C94 are supported by qRT-PCR data (Figure 3\u2014figure supplement 1), immunofluorescence of GlgX (Figure 3A), heterologous T3S assays in Shigella (Figure 3B), and citations to prior work on GlgA and GlgB. The temporal correlation between glgA expression and glycogen appearance is well-documented. The T3S assay has been previously validated with ~5% false positive rate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "C. trachomatis bacteria specifically take up Glc6P, not Glc or Glc1P, and the phosphoglucomutase MrsA contains a functional T3S signal, suggesting it converts Glc1P to Glc6P in the inclusion lumen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by radioactive uptake assays with purified EBs (Figure 4A) showing specific and saturable Glc6P uptake, and heterologous T3S assay for MrsA (Figure 4B). The experimental design with competition assays demonstrates specificity. The inference about MrsA function in the lumen is reasonable given the T3S signal and the discrepancy between Glc1P (degradation product) and Glc6P (uptake substrate).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C101",
+      "C7"
+    ],
+    "result": "C. trachomatis GlgA exhibits remarkable substrate promiscuity, functioning on both UDP-Glc and ADP-Glc, unlike E. coli GlgA which exclusively uses ADP-Glc. This represents an adaptation allowing the enzyme to function in the eukaryotic cytoplasm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56, C101, and C7 are supported by transfection experiments showing glycogen accumulation in mammalian cells (Figure 5A) and zymogram analysis comparing C. trachomatis and E. coli GlgA (Figure 5B). The dual substrate specificity is clearly demonstrated and represents a significant biochemical finding. This is unusual for bacterial glycogen synthases and well-documented in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C6"
+    ],
+    "result": "UDP-Glc is the substrate for sugar import into the inclusion, as demonstrated by UGP2 knockdown reducing luminal glycogen to 57%, a greater effect than can be explained by reduced bulk import alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 and C6 are supported by siRNA knockdown of UGP2 with quantitative PAS staining (Figure 5C,D). The authors correctly note that UGP2 knockdown had less effect on host cytoplasmic glycogen than Gys1 knockdown, yet had greater effect on luminal glycogen, supporting the conclusion that UDP-Glc is directly imported. The logic is sound and the quantification is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C5"
+    ],
+    "result": "C. trachomatis co-opts the host UDP-Glc transporter SLC35D2, recruiting it to the inclusion membrane to import UDP-Glc. SLC35D2 knockdown reduces luminal glycogen to 43%, similar to UGP2 knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 and C5 are supported by immunofluorescence showing SLC35D2-HA enrichment at inclusions (Figure 6A), immuno-EM demonstrating specific localization to the inclusion membrane (Figure 6B with quantification), and siRNA knockdown showing 43% glycogen remaining (Figure 6C,D). The convergence of localization and functional data strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Double knockdown of Gys1 and SLC35D2 does not further reduce luminal glycogen beyond SLC35D2 knockdown alone, confirming bulk import is minor. The double knockdown has no severe impact on bacterial development (\u22642-fold reduction in progeny).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by double knockdown experiments with PAS staining (Figure 6\u2014figure supplement 1A) and reinfection assays (Figure 6\u2014figure supplement 1B). The lack of additive effect confirms the two pathways are not independent and that de novo synthesis predominates. The modest effect on progeny is appropriately measured at 30 hpi to minimize cell viability effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C95"
+    ],
+    "result": "C. muridarum GlgA mutants (P2B10 and P3B4) show reduced glycogen accumulation (40-51% of wild-type) and impaired infectivity (3-7-fold reduction in progeny), demonstrating that GlgA defects result in loss of infectivity in vitro. The P2B10 defect appears primarily due to bacterial glycogen synthesis deficiency rather than luminal storage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C75 and C95 are supported by sequence analysis showing mutations in conserved GlgA residues (Figure 7\u2014figure supplement 1), quantitative PAS staining (Figure 7A), and reinfection assays (Figure 7B). The interpretation that P2B10's defect is primarily in bacterial glycogen synthesis (based on lack of further progeny reduction with Gys1 depletion) is reasonable but somewhat speculative. However, the core finding that GlgA mutations impair infectivity is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C76"
+    ],
+    "result": "Two independent processes contribute to glycogen accumulation in the C. trachomatis inclusion lumen: bulk uptake from the host cytoplasm and de novo synthesis, with de novo synthesis being the predominant mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, and C76 represent the central conclusion of the manuscript, supported by the entirety of the experimental work. The dual pathway model is demonstrated through multiple complementary approaches: Gys1 knockdown showing partial reduction, GlgA activity on UDP-Glc, UGP2 and SLC35D2 knockdown experiments, and T3S of glycogen metabolism enzymes. This is the major integrative finding of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "Bacterial glycogen metabolism enzymes are secreted into the vacuole lumen through type 3 secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 is supported by heterologous T3S assays (Figure 3B) showing 5 of 6 enzymes tested have functional T3S signals, immunofluorescence of GlgX (Figure 3A), and citations to prior work on GlgA and GlgB secretion. The evidence is strong and uses a validated assay system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C108"
+    ],
+    "result": "Different levels of GlgA expression between wild-type and plasmid-less strains account for their difference in glycogen accumulation. High luminal glycogen accumulation is not necessary for chlamydial growth in vitro, as plasmid-less strains show no infectivity defect in culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 and C108 are supported by complementation experiments with Flag-GlgA in both wild-type and plasmid-less strains (Figure 5\u2014figure supplement 1) and citation to prior work showing no in vitro defect for plasmid-less strains. The conclusion is logical and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "Gys1 depletion decreased progeny by about 30% in wild-type C. muridarum, suggesting bacterial development is somewhat sensitive to the amount of glycogen in the inclusion lumen, possibly at early infection times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are supported by reinfection assays (Figure 7B). The 30% reduction is modest but reproducible. The speculation about timing (early infection) is reasonable but not directly tested. The result suggests some functional importance of luminal glycogen even in vitro.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Multi-layered glycogen-filled vesicles do not originate from an Atg5-dependent autophagic process, as they still occur in Atg5-deficient cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is supported by experiments in Atg5-/- MEFs showing persistence of glycogen-filled vesicles (Figure 2\u2014figure supplement 2C). This is a clear negative result ruling out canonical autophagy. The control is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "Uptake of large particles likely occurs through invagination of the inclusion membrane, but the underlying mechanisms remain to be investigated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C83 is speculative based on observation of vesicular structures. The authors appropriately acknowledge this is speculation and requires further investigation. No direct evidence for the mechanism is provided, only morphological observations consistent with membrane invagination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "Uptake of Glc6P before EBs appear would dangerously increase osmotic pressure in the inclusion, while storing glucose as osmotically inert glycogen provides an elegant solution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106-C107 represent a reasonable hypothesis about the functional advantage of glycogen storage, but this is not directly tested. The osmotic argument is logical but speculative. No experiments measuring osmotic pressure or testing this hypothesis are provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "GlgX and GlgP might work in concert, degrading host glycogen in the vicinity of the inclusion membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C90 is speculative, based on co-localization of both enzymes at the inclusion membrane (GlgX shown in Figure 3A, GlgP cited from prior work). While plausible, no direct evidence for coordinated activity is provided. This is reasonable speculation but not demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "Re-routing host energy stores towards the inclusion lumen might 'weaken' the host cell in its fight against the intruder by compromising energy-dependent defense mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C112 is speculative discussion about potential advantages of glycogen sequestration. No experiments testing host defense mechanisms or energy depletion effects are provided. This is reasonable speculation but entirely untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C77",
+      "C88",
+      "C89",
+      "C92",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Background information and prior work establishing the context for C. trachomatis biology, glycogen metabolism, and related findings from the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C27, C77, C88-C89, C92, C102-C105, C109-C111 represent background knowledge and citations to prior work. These are appropriately cited and provide necessary context. They are not novel findings of this manuscript but establish the foundation for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C8",
+      "C113",
+      "C114"
+    ],
+    "result": "Parasitophorous vacuoles provide a microorganism-controlled metabolically active compartment for redirecting host resources. This sequestration strategy could be broadly used by other intracellular parasites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C113-C114 represent broader conclusions and proposals extending beyond the specific findings. While the demonstration that C. trachomatis sequesters host glycogen is well-supported, the generalization to other parasites and the characterization of the vacuole as 'essential' for redirecting resources is speculative and not directly tested. These are reasonable proposals for future investigation.",
+    "result_type": "MINOR"
+  }
+]

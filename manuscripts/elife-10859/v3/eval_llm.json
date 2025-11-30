@@ -1,0 +1,408 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C45",
+      "C60",
+      "C61",
+      "C62",
+      "C109"
+    ],
+    "result": "SMS mutations (C268F and E373A) phenocopy the E373Q mutation, which stabilizes the ATP-bound state by preventing ATP hydrolysis. All three mutations lead to constitutive activation of the IFN\u03b2 promoter in non-infected cells, as demonstrated by luciferase assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C45, C60, C61, C62, and C109 collectively demonstrate through luciferase assays (Figure 1C) that SMS mutations C268F and E373A show similar constitutive signaling as the structure-derived E373Q mutation. The data consistently show strong IFN\u03b2 promoter activation in both infected and non-infected cells for all three mutants, supporting the phenocopy relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C79"
+    ],
+    "result": "ATPase-deficient RIG-I (E373Q and SMS mutants) constitutively signals through endogenous RNA and co-purifies with approximately 3-fold more RNA than wild-type RIG-I, specifically enriched in 28S rRNA from the large ribosomal subunit. This occurs even in virus-infected cells, suggesting that self-RNA competes with viral RNA for binding to ATPase-deficient RIG-I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C64, C65, C66, C67, C68, and C79 are well-supported by co-immunoprecipitation experiments (Figure 2A-C) showing increased RNA binding by E373Q and SMS mutants, with specific enrichment of 28S rRNA. The constitutive signaling is demonstrated by luciferase assays, and the competition with viral RNA is inferred from the observation that E373Q co-purifies with non-immunostimulatory RNA even from infected cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C85",
+      "C88",
+      "C89",
+      "C90",
+      "C122"
+    ],
+    "result": "Cryo-EM structural analysis identifies ribosomal expansion segment ES7L as a dominant self-RNA binding site for ATPase-deficient RIG-I E373Q. The crystal structure of ATP-bound RIG-I fits into additional density at the root of ES7L helix A, which contains a contiguous stretch of seven G:C base pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C85, C88, C89, C90, and C122 are supported by cryo-EM data (Figure 3D-G) showing additional density at ES7L in the RIG-I E373Q:ribosome complex at 17.7 \u00c5 resolution. The structural fitting of the ATP-bound RIG-I crystal structure into this density provides direct evidence for the binding site. However, the resolution is moderate and only 40% of particles showed this density, suggesting heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C95",
+      "C96",
+      "C103",
+      "C112"
+    ],
+    "result": "ATP hydrolysis by wild-type RIG-I selectively displaces the protein from self-RNA (ES hairpin) but not from 5' triphosphate dsRNA. In vitro binding assays show that ATP reduces wtRIG-I affinity for ES hairpin RNA, while the non-hydrolyzable ATP analog ADP\u00b7BeF3 reconstitutes high-affinity binding similar to E373Q.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C95, C96, C103, C112 are supported by EMSA and fluorescence anisotropy data (Figure 4D) showing differential effects of ATP on binding to different RNA substrates. The data demonstrate that ATP hydrolysis leads to decreased binding of RNA lacking proper ppp-dsRNA ends while maintaining binding to ppp-dsRNA, providing a mechanism for self/non-self discrimination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C64",
+      "C106",
+      "C107",
+      "C143"
+    ],
+    "result": "ATP hydrolysis prevents unintentional recognition of self-RNA by RIG-I, providing a molecular mechanism for self/non-self discrimination. This mechanism explains the pathology of Singleton-Merten Syndrome, where mutations preventing ATP hydrolysis lead to prolonged RNA binding and constitutive signaling through self-RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C64, C106, C107, and C143 represent the main mechanistic conclusion of the study, supported by the convergence of multiple lines of evidence: constitutive signaling by ATPase-deficient mutants, increased self-RNA binding, differential effects of ATP on binding to self vs. viral RNA, and the phenocopy of SMS mutations. The conclusion is well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "RIG-I E373Q is structurally similar to wild-type RIG-I and is not constitutively active due to protein misfolding. SAXS and thermal shift assays show identical solution structures and stability, while dominant-negative experiments demonstrate that E373Q requires productive RNA interactions for signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C47, C48, and C49 are supported by SAXS data (Figure 1\u2014figure supplement 2A,B), thermal shift assays (Figure 1\u2014figure supplement 2C), and dominant-negative experiments (Figure 1\u2014figure supplement 2D,E). These controls rule out the alternative explanation that E373Q signals constitutively due to structural destabilization or exposure of the 2CARD domain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C54",
+      "C55"
+    ],
+    "result": "The constitutive signaling by E373Q requires productive RNA binding through both the SF2 domain (T347) and the regulatory domain (RD). Double mutants E373Q,T347A and E373Q,\u0394RD abolish signaling in both infected and non-infected cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C51, C54, and C55 are supported by luciferase assay data (Figure 1C) showing that mutations disrupting RNA binding in either SF2 (T347A) or RD (\u0394RD) abolish the constitutive signaling of E373Q. This demonstrates that E373Q requires RNA binding for signaling, not just ATP binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C114"
+    ],
+    "result": "The constitutive signaling by E373Q on endogenous RNA is independent of the ppp-dsRNA recognition by the regulatory domain. The K888T mutation, which disrupts triphosphate recognition, does not reduce constitutive activation of E373Q.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C59, and C114 are supported by luciferase assay data (Figure 1C) showing that the E373Q,K888T double mutant remains constitutively active. This indicates that the self-RNA recognized by E373Q does not require the ppp-dsRNA epitope normally recognized by the RD, consistent with ribosomal RNA lacking 5' triphosphates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Both RIG-I and RIG-I E373Q bind ATP, but only wild-type RIG-I hydrolyzes ATP. In sedimentation assays, E373Q binds ribosomes stoichiometrically in the presence of ATP, while wild-type RIG-I shows minimal binding with ATP but enhanced binding without ATP or with non-hydrolyzable ADP\u00b7BeF3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C81, C82, and C83 are supported by DRaCALA ATP binding assays (Figure 3A), ATP hydrolysis assays (Figure 3B), and ribosome sedimentation assays (Figure 3C). These biochemical data directly demonstrate that E373Q traps RIG-I in an ATP-bound state that binds ribosomes, while ATP hydrolysis by wild-type RIG-I prevents stable ribosome binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "ATP binding to the SF2 domain positively contributes to RIG-I affinity for blunt-ended dsRNA. Both RIG-I and E373Q show slightly higher affinity for 24mer dsRNA in the presence of ATP or ADP\u00b7BeF3, but this effect is not observed with ppp-dsRNA where the RD dominates binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91, C92, and C93 are supported by EMSA (Figure 4A) and fluorescence anisotropy data (Figure 4B,C) showing differential effects of ATP on binding to dsRNA vs. ppp-dsRNA. The data demonstrate that ATP binding enhances affinity for dsRNA lacking terminal phosphates, while the RD dominates binding to ppp-dsRNA.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C101",
+      "C131",
+      "C132"
+    ],
+    "result": "The ES7L-A hairpin RNA can induce signaling in RIG-I E373Q-expressing cells and moderately stimulates RIG-I's ATPase activity. Whole human ribosomes show comparable ATPase stimulation, confirming that ribosomal RNA can engage RIG-I's enzymatic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98, C99, C101, C131, and C132 are supported by luciferase assays (Figure 2E) and ATP hydrolysis assays (Figure 5A). The data show that the ES hairpin RNA derived from the cryo-EM binding site can both signal through E373Q and stimulate ATPase activity, validating the biological relevance of the structural findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "RNA co-purified with wild-type RIG-I from infected cells is immunostimulatory when transfected into reporter cells, while RNA from E373Q is not. This demonstrates that E373Q binds predominantly non-immunostimulatory self-RNA even from infected cells, while wild-type RIG-I selectively binds viral RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C71, C72, C73, C74, and C75 are supported by back-transfection experiments (Figure 2D, Figure 2\u2014figure supplement 3A) showing that RNA co-purified with wild-type RIG-I stimulates reporter cells while RNA from E373Q does not. This functional assay demonstrates the differential RNA binding specificity and supports the competition model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Cells expressing RIG-I E373Q can be stimulated by transfection of total RNA or purified ribosomal RNA, while cells lacking RIG-I or E373Q do not respond. This demonstrates that ribosomal RNA can activate E373Q but not wild-type RIG-I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C77, and C78 are supported by luciferase assay data (Figure 2E) showing that transfection of total RNA or ribosomal RNA stimulates E373Q-expressing cells but not control cells. This provides functional evidence that ribosomal RNA is a ligand for ATPase-deficient RIG-I.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Wild-type RIG-I shows slight IFN\u03b2 promoter activation that is amplified by viral infection, while the 2CARD domain alone strongly activates in all conditions. The 2CARD domain is essential for signaling, as \u03942CARD constructs cannot signal. ATP binding-deficient K270I mutant is inactive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C41, C42, C43, and C44 are supported by luciferase assay data (Figure 1C) establishing baseline signaling properties of wild-type RIG-I and control constructs. These results are consistent with prior literature and validate the experimental system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C118",
+      "C119"
+    ],
+    "result": "The V699A mutation in motif V slightly increases constitutive signaling of RIG-I in non-infected cells. This may result from decoupling RNA-binding induced ATP hydrolysis from translocation or RNA displacement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52, C118, and C119 are based on luciferase assay data (Figure 1C) showing increased signaling by V699A. However, the mechanistic explanation (C119) is speculative and not directly tested. The phenotype is interesting but requires additional biochemical characterization to determine whether it truly represents uncoupling of hydrolysis from translocation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The equivalent MDA5 E444Q Walker B mutant shows increased RNA binding and specific enrichment of 28S rRNA, similar to RIG-I E373Q.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by co-immunoprecipitation and Bioanalyzer data (Figure 2\u2014figure supplement 1B,C) showing that the MDA5 E444Q mutant phenocopies RIG-I E373Q. This suggests that ATP hydrolysis-dependent self-RNA discrimination may be a general mechanism for RLRs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "The C268F SMS mutation may lock RIG-I in an RNA-bound, active conformation based on co-immunoprecipitation and binding assay results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C110 is based on RNA co-IP data (Figure 2\u2014figure supplement 1A) and binding assays (Figure 4\u2014figure supplement 1C) showing increased RNA binding by C268F. However, the mechanistic explanation is speculative and the authors explicitly state that 'the precise structural reason for the increased signaling of C268F needs to be addressed in future studies.' More detailed biochemical and structural characterization is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C111",
+      "C113",
+      "C120",
+      "C121"
+    ],
+    "result": "The authors propose a model where RIG-I's RD dominates binding to ppp-dsRNA ends, tethering RIG-I despite ATP hydrolysis and leading to prolonged 2CARD exposure. For self-RNA lacking proper ends, ATP hydrolysis rapidly removes RIG-I via its translocase activity, preventing autoimmune signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111, C113, C120, and C121 represent the mechanistic model synthesized from the experimental data. The model is well-supported by the differential effects of ATP on binding to ppp-dsRNA vs. self-RNA (Figure 4), the requirement for RD and SF2 domains (Figure 1C), and the observation that K888T mutation doesn't abolish E373Q signaling. The model provides a coherent explanation for the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "RD and ATP binding are important for signaling by E373Q on self-RNA, suggesting that a ring-like ATP-bound structure is involved. In this conformation, the RD likely helps displace the 2CARD module but may not have high affinity for the RNA itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115 and C116 are supported by mutational data (Figure 1C) showing that \u0394RD and K270I mutations abolish signaling. However, claim C117 about the RD having low affinity for self-RNA in the ATP-bound conformation is speculative and not directly tested. The model requires additional biochemical validation to measure RD affinity for different RNAs in different nucleotide states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The specific enrichment of 28S rRNA (large subunit) but not 18S rRNA (small subunit) suggests specific interactions with the large ribosomal subunit. Only 40% of ribosome particles showed RIG-I density in cryo-EM, suggesting additional binding sites may exist but are not visible due to flexibility of peripheral expansion segments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126, C127, C128, C129, and C130 are supported by the Bioanalyzer data showing selective 28S enrichment (Figure 2B) and the cryo-EM analysis showing 40% occupancy. The interpretation that additional binding sites may exist is reasonable given the heterogeneity, though the authors acknowledge this is speculative. The technical limitation regarding flexibility is a valid explanation for incomplete visualization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The authors propose that in SMS patients, RIG-I binds to ribosomal RNA (including ES7L-A) when ATP hydrolysis is impaired. The high local concentration of ribosomes in polysomes could bring multiple RIG-I molecules together, allowing 2CARD interactions for downstream signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C133, C134, C135, and C136 represent hypotheses about the disease mechanism. While C133 and C134 are supported by the in vitro data showing differential ATPase stimulation and ATP effects on binding, claims C135 and C136 about the in vivo situation in SMS patients are speculative. The polysome clustering model for 2CARD interactions is plausible but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The authors conclude that there are two levels of control limiting RLR signaling to viral RNA: (1) RNA editing and methylation that modifies self-RNA, and (2) intrinsic ATPase/translocase activity that removes RLRs from endogenous dsRNA stretches, reducing background signaling and increasing system sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141, C142, and C143 represent the overarching conclusion integrating the current findings with prior literature on RNA modifications. The ATPase-dependent mechanism (C143) is well-supported by the experimental data. The integration with RNA editing/methylation mechanisms (C142) is supported by appropriate citations and provides a comprehensive view of self/non-self discrimination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Deletion of the regulatory domain (\u0394RD) inactivates RIG-I signaling in both infected and non-infected cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 is supported by luciferase assay data (Figure 1C) and is consistent with prior studies (Cui et al., 2008). This confirms the essential role of the RD for RIG-I function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "The cryo-EM reconstruction of the RIG-I E373Q:80S ribosome complex achieved an average resolution of 17.7 \u00c5 based on FSC 0.5 criterion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is a technical specification of the cryo-EM data quality. The resolution is moderate but sufficient for identifying the binding site and fitting the crystal structure. This is appropriate for the conclusions drawn.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "The authors propose that RIG-I dissociates from unphosphorylated RNA termini with an increased rate after ATP hydrolysis compared to triphosphorylated termini.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C94 is a plausible hypothesis based on the differential effects of ATP on binding to different RNA substrates (Figure 4). However, this kinetic model is not directly tested with dissociation rate measurements. The claim is presented as 'plausible' by the authors, acknowledging its speculative nature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "The RIG-I T347A,E373Q double mutant shows binding affinity similar to wild-type RIG-I in the presence of ATP for ES hairpin RNA, probably due to residual RD binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is supported by EMSA data (Figure 4D) showing that the T347A,E373Q double mutant has reduced affinity compared to E373Q alone. The explanation that residual RD binding accounts for the remaining affinity is a reasonable inference consistent with the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "RIG-I E373Q and RIG-I T347A,E373Q lack the ability to hydrolyze ATP even in the presence of triphosphorylated RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is supported by ATP hydrolysis assay data (Figure 5A, Figure 5\u2014figure supplement 1B) confirming that the E373Q mutation abolishes ATP hydrolysis activity. This validates the design of the E373Q mutant as an ATP hydrolysis-deficient variant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "The in vitro binding data showing differential effects of ATP hydrolysis on RNA binding are consistent with co-immunopurification studies showing increased endogenous RNA binding by E373Q.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 represents an inference connecting the in vitro biochemical data with the cellular co-IP data. This connection is well-supported and strengthens the overall conclusions by showing consistency between different experimental approaches.",
+    "result_type": "MINOR"
+  }
+]

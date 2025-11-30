@@ -1,0 +1,351 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The canonical HRC and motion energy models only respond to pairwise correlations, but recent experiments show that humans and flies perceive motion from higher-order correlations. These higher-order correlations can improve motion estimation in natural environments, suggesting that departures from canonical models might improve motion estimation accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C27-C32 establish the background and motivation for the study. The claims about canonical models (C1, C27) are well-established knowledge, and the experimental evidence for higher-order motion perception (C2, C29) is supported by multiple citations. The theoretical work (C28, C30) and the conclusion that canonical models are incomplete (C31, C32) logically follow from the cited evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The HRC is weakly correlated with velocity in isolation. Adding a converging 3-point correlator improves accuracy and predicts glider response directions, but underestimates 3-point turning magnitudes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C48-C50 present computational modeling results shown in Figure 1. The weak correlation of the HRC (C42) and the improved performance of the 3-point correlator model (C48, C49) are directly supported by the data. The underestimation of turning magnitudes (C50) is also shown in the figure, indicating a limitation of this simple model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Front-end nonlinearities can reshape natural image statistics to improve HRC performance. The mean squared error depends on second-order and fourth-order statistics (kurtosis). Naturalistic inputs are highly kurtotic (9.6), and reducing kurtosis through nonlinearities (Gaussian, uniform, binary) substantially improves HRC accuracy, with contrast equalization performing best.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C65 present a coherent theoretical and computational analysis of front-end nonlinearities. The mathematical relationships between kurtosis and estimation error (C54-C58) are theoretically sound with references to appendices. The empirical results (C59, C61-C65) are supported by data shown in Figure 2. The explanation for why contrast equalization outperforms binarization despite higher kurtosis (C63-C65) is well-reasoned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Front-end nonlinearity models performed poorly at predicting Drosophila's glider response pattern, failing to predict the inversion of responses to positive and negative 3-point gliders. This is likely because these models responded to fourth-order rather than third-order correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 present a clear negative result comparing model predictions to experimental data (Figure 2F,G). The failure to predict glider responses (C66, C67) is directly shown in the figures. The interpretation that models responded to fourth-order rather than third-order correlations (C68) is a reasonable mechanistic explanation supported by citation to prior work and mathematical analysis in Appendix 6.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C69",
+      "C70",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Segregating motion signals into ON/OFF channels (weighted 4-quadrant model) enhances estimation accuracy by accounting for natural light/dark asymmetries. The four quadrants provide motion signals of different quality, with the (\u2212 \u2212) quadrant outperforming the full HRC. Nearly all accuracy can be obtained by supplementing the HRC with odd-ordered correlations accounting for asymmetry between positive and negative low-pass filtered signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C69-C70, C74-C80 present a major finding about ON/OFF segregation. The computational results (C74-C79) are directly supported by data in Figure 3C. The reparameterization analysis (C80) is supported by Figure 3\u2014figure supplement 1 and Appendix 8. The biological motivation (C69, C70) is well-cited. This represents a novel computational demonstration of how ON/OFF channels improve motion estimation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The weighted 4-quadrant model preserved HRC's 2-point glider responses and correctly predicted 3-point glider turning directions with similar magnitudes. However, it failed to predict that positive 3-point gliders generate smaller responses than negative ones, likely because it finds little utility in higher-order even correlations due to architectural limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 evaluate the weighted 4-quadrant model against behavioral data. The successes (C81, C82) and failures (C83) are clearly shown in Figure 3D. The interpretation about 3-point and 4-point correlations (C84) is reasonable speculation. The explanation about architectural limitations (C85, C86) is supported by supplementary figures and appendices, providing mechanistic insight into the model's limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The non-multiplicative nonlinearity model outperformed the weighted 4-quadrant model, with improvement largely due to 3-point correlations. This implies that ON/OFF segregation provides an imperfect way to account for light-dark asymmetries in natural images, as third-order correlations are only useful because of these asymmetries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 present comparative model performance results. The superior performance of the non-multiplicative model (C92) is shown in Figure 4E. The attribution to 3-point correlations (C94) is supported by Figure 4\u2014figure supplement 2. The interpretation about ON/OFF segregation being imperfect (C93, C96) logically follows from the results, and the theoretical statement about third-order correlations (C95) is well-cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The unrestricted nonlinearity model performed better than the non-multiplicative model, and the extra input model performed better than averaging two neighboring unrestricted models. Both models incorporated novel computational signatures relevant for visual motion estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 present hierarchical model comparisons shown in Figure 4E. The performance improvements are directly supported by the data. The conclusion that both models incorporate novel computational signatures (C99) is a reasonable inference from the performance gains, though the improvements are noted as relatively small.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The three generalized models (non-multiplicative, unrestricted, extra input) predicted 2-point glider responses resembling the HRC and correctly predicted 3-point glider turning directions. The extra input model predicted asymmetry between positive and negative 3-point gliders, showing that even-ordered correlations in glider stimuli have relevance for naturalistic motion estimation. The qualitative agreement supports the hypothesis that glider responses reflect nonlinear mechanisms facilitating motion estimation in natural environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C107 evaluate the generalized models against behavioral data (Figures 4F,G). The predictions for 2-point gliders (C102) and 3-point glider directions (C103) are directly shown. The asymmetry prediction by the extra input model (C104) is a key result shown in Figure 4G. The interpretations about even-ordered correlations (C105), multiple mechanisms (C106), and the general hypothesis (C107) are reasonable inferences from the pattern of results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Lasso regression revealed that fewer than half of multipoint correlators account for the full accuracy of the extra input model. The model approximately correlates neighboring points like the HRC but differentially weights positive and negative low-pass signals. The best treatment of asymmetric light and dark information need not be as simple as pure ON/OFF segregation. Spatial averaging improves estimates, and the leading fourth-order correlator spanned three spatial points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C109-C115 present the decomposition analysis of the extra input model using lasso regression (Figure 5). The sparsity result (C109) is directly shown in Figure 5A. The interpretations about model structure (C110-C113) are reasonable inferences from the identified predictors shown in Figure 5B. The observation about the fourth-order correlator (C114, C115) connects to the model's ability to predict glider asymmetry, providing mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C124",
+      "C125",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Non-canonical computations improve motion estimation with naturalistic inputs, and the complexity of fly motion circuits represents a valuable feature. Four of five models predict non-Reichardtian motion percepts, supporting the view that these percepts probe ethologically relevant aspects of motion estimators. The recurring theme is that motion-processing circuits should treat light and dark signals differently for functional reasons, and neural circuits could perform better with distinctions subtler than simple ON/OFF segregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C33-C36, C119-C122, C124-C125, C129-C131 present the main conclusions of the study. These are well-supported by the comprehensive modeling results presented throughout. The claim that four of five models predict glider responses (C33) is directly supported by the data. The interpretations about functional significance (C35, C36, C119, C131) are reasonable inferences from the optimization approach and results. The novelty claim (C121) is justified given the explicit demonstration of ON/OFF channel benefits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The authors predict that T4 and T5 neurons will combine visual inputs with non-multiplicative nonlinearities that facilitate accurate motion estimation in natural environments, contrary to conventional wisdom that these neurons multiply their inputs. Subtle differences from pure multiplication can have substantial functional effects, as the optimized nonlinearity improves HRC accuracy by an impressive margin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 present a key prediction of the study. The background about T4/T5 (C37) and conventional wisdom (C38) are well-established. The prediction (C39) follows logically from the modeling results. The statements about subtle differences having large effects (C40, C41) are supported by the data in Figures 2D and 4B, showing that nonlinearities superficially similar to multiplication can substantially improve performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C72",
+      "C73",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C117",
+      "C118",
+      "C126",
+      "C128"
+    ],
+    "result": "Recent experimental evidence shows that Drosophila's motion processing involves separate ON/OFF pathways, velocity-dependent coordination, and more spatial/temporal channels than predicted by the HRC. T4 cells receive inputs from multiple neuron types and retinotopic locations, with imperfect ON/OFF selectivity. The biological substrates for reverse-phi signals remain poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19, C72-C73, C87-C91, C117-C118, C126, C128 summarize experimental evidence from the literature that motivates the modeling work. All claims are supported by appropriate citations to experimental research. These provide the biological context for the computational models and are accurately represented based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C127",
+      "C129"
+    ],
+    "result": "The most general model with three spatial inputs showed that spatial averaging of local motion detectors was suboptimal. Circuit heterogeneity could enhance motion estimation by facilitating computations that compute higher-order correlations distributed across multiple points in space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127, C129 present findings about spatial integration. The result about suboptimal averaging (C127) is shown in Figure 4E. The interpretation about circuit heterogeneity (C129) is supported by Figure 5B and connectomic evidence (C128). This provides a functional interpretation for anatomical complexity observed in T4 cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The approximation of natural motion by rigid translation of natural images revealed substantial utility for higher-order correlations. The simplified naturalism sufficed to account for many aspects of fly glider responses, possibly because the rotational optomotor response is sensitive primarily to full-field rotations. Different glider sensitivities might be optimal for other behaviors like looming responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C136 discuss the adequacy and limitations of the modeling approach. The observation about simplified naturalism being sufficient (C132, C133) is supported by the good agreement between models and glider data. The explanation about optomotor responses (C134) is reasonable based on knowledge of the system. The speculation about other behaviors (C135, C136) is appropriately cautious and well-cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The approach is relevant to vertebrate vision, where the motion energy model is typically used. Like the HRC, the motion energy model only responds to 2-point correlations, so many theoretical considerations apply directly. Each computational model can be generalized to the motion energy architecture, though numerical benefits might differ due to distinct filtering. Comparative experiments suggest similarities between primate and insect motion processing are abundant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C142 discuss the generalizability of the results to vertebrate vision. The mathematical equivalence between HRC and motion energy models (C138) is established knowledge. The statements about applicability (C139, C140) are reasonable given this equivalence. The caveat about potential differences (C141) is appropriate. The comparative evidence (C142) is well-cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Visual motion guides behaviors across animals, who use elementary motion detectors (EMDs) to compute local motion. The HRC model has been successful in predicting fly behavior. Visual systems are tailored for natural behavioral contexts, with examples including photoreceptor adaptation, retinal ganglion cell distributions, and receptive field predictions. Natural stimuli are intricately structured and light-dark asymmetric, with various correlations characterizing motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C16, C20-C26 provide background knowledge about motion vision, the HRC model, and efficient coding principles. All claims are well-supported by appropriate citations to established literature. These provide the necessary context for understanding the study's motivation and approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Drosophila turned in response to 2-point glider stimuli as predicted by the HRC, but 3-point glider stimuli generated motion responses that the HRC could not explain. This shows the HRC is an incomplete description of fly motion estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 present key experimental results from prior work (Clark et al., 2014) that motivate the current study. The behavioral responses (C44, C46) are shown in Figure 1G. The HRC's success with 2-point gliders (C45) and failure with 3-point gliders (C46) are clearly demonstrated. The conclusion about HRC incompleteness (C47) logically follows from these results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "Experimental evidence shows that photoreceptors have nonlinear responses to contrast changes, some early visual neurons have nearly uniform output signals, visual processing is divided into ON/OFF channels, T4/T5 are sensitive to light and dark edges with incompletely rectified inputs, and stimuli targeting the four quadrants are differentially represented in neural substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C147 from Table 1 summarize experimental evidence supporting different models. All claims are supported by appropriate citations to experimental research. These provide the biological justification for the model architectures explored in the study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The manuscript provides background on cystic fibrosis (CF) and the F508del-CFTR mutation, describing CF as the most common lethal genetic disease in Caucasians caused by CFTR mutations. The F508del mutation, present in ~90% of CF patients, results in protein misfolding, ER retention, and degradation, with only a small fraction reaching the plasma membrane where it is rapidly degraded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C18 represent well-established background knowledge about CF and F508del-CFTR, supported by appropriate citations to the literature (Riordan 2008, Jensen et al. 1995, Ward et al. 1995, Amaral 2005, Okiyoneda et al. 2010, etc.). These are foundational facts that contextualize the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The authors establish the rationale for their approach by noting that UPR/HSR have been explored for F508del-CFTR rescue with partial success, that signaling networks control secretory trafficking, that many drugs target multiple pathways, and that gene expression changes are significant components of drug mechanisms of action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 provide well-cited background establishing the study's rationale. The citations support the statements about UPR/HSR (Roth et al. 2014, Ryno et al. 2013), signaling control of trafficking (multiple citations), and transcriptional drug MOAs (Popescu 2003, Santagata et al. 2013).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Using the FIT (Fuzzy Intersection of Transcriptomes) method, the authors analyzed gene signatures from 13 correctors (CFBE dataset) and 11 correctors (MANTRA dataset), identifying 621 CORE genes (219 downregulated, 402 upregulated) shared by 70% of corrector signatures, which was threefold higher than expected by chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 describe the FIT methodology and results, supported by Figure 1 and detailed methods. The statistical validation (threefold enrichment over random, C28) and the fuzzy cutoff optimization (Figure 1B-C) provide quantitative support for the approach's validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The CORE genes show statistically significant protein-protein interactions with known F508del-CFTR proteostasis genes and include 48 folding/degradation components, 24 transport machinery components, 24 kinases, and 6 phosphatases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by STRING database analysis (Figure 1F) and systematic searches of the CORE gene pool. The statistical significance of protein-protein interactions validates the biological relevance of the identified genes, though the lack of enrichment of proteostasis machinery genes (noted in text) is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Experimental validation by siRNA screening identified 47 active genes out of 108 tested: 32 anti-correction genes (whose depletion increased F508del-CFTR bands B and C by 1.5- to >10-fold) and 15 pro-correction genes (whose depletion decreased bands B and C). Notably, RNF215 depletion increased band C over 10-fold, and these effects were not due to changes in CFTR mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 are supported by extensive screening data (Figure 2A-D, Figure 2\u2014figure supplement 2B). Multiple controls validate specificity: RT-PCR confirms on-target effects (Figure 2\u2014figure supplement 3), multiple siRNAs per gene show concordant results, and dose-response relationships are demonstrated. The RT-PCR data (C36) rules out transcriptional effects on CFTR itself.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Bioinformatic analysis identified mitoxantrone as a corrector, and analysis of MANTRA drugs showed that CORE genes were ~3-fold enriched in corrector signatures. At least 20% of drugs selected based on CORE gene downregulation were correctors. Correctors showed higher frequency of upregulation of pro-corrector genes (MKK1, MKK3, FGFBP1) while non-correctors more frequently upregulated anti-corrector genes (NF-\u03baB2, MKK7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C59-C62 demonstrate that CORE gene modulation predicts corrector activity. The 3-fold enrichment (C59), 20% hit rate vs. 0% for random drugs (C60), and differential gene expression patterns (C61-C62) provide convergent evidence. Mitoxantrone validation (C37, Figure 2F) experimentally confirms the predictive value.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "Strong synergistic interactions were observed between siRNAs targeting CKII, CAMKK2, MLK3, and NUP50 in correcting F508del-CFTR proteostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is supported by Figure 2G showing synergistic effects of combined siRNA treatments. However, the authors note increased variability with combinations, attributed to reduced efficacy of individual siRNAs in combination, which is an appropriate caveat.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The MLK3 signaling pathway was delineated, showing that TGF receptors, CDC42, Rac2, and HPK1 act upstream of MLK3, while MKK7 and JNK2 act downstream. Overexpression of CDC42, MKK7, or JNK2 decreased F508del-CFTR bands B and C, confirming the pathway's negative regulatory role. MLK3 downregulation did not increase CFTR mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by systematic siRNA screening (Figure 3A-B) and overexpression experiments (Figure 3C) showing opposite effects. The bidirectional validation (knockdown increases, overexpression decreases CFTR) strengthens the conclusions. RT-PCR data (C42) rules out transcriptional regulation of CFTR.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "MLK3 pathway inhibition slowed F508del-CFTR band B degradation in CHX chase assays, while overexpression of pathway activators increased degradation rate twofold. The ubiquitin-proteasome system itself was not affected by MLK3 pathway modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by CHX chase (Figure 4A-D), pulse-chase (Figure 4\u2014figure supplement 1A-B), and proteasome activity assays (Figure 4\u2014figure supplement 1C-D). The lack of effect on proteasome activity (C45) indicates MLK3 acts upstream of proteasomal degradation, supporting specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "In peripheral quality control assays, MLK3 depletion slowed band C degradation (increasing t1/2 from ~2 to ~4 hr), CDC42 overexpression enhanced band C degradation, while JNK2 knockdown or overexpression did not change band C degradation kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by PQC assays (Figure 4E-H). The differential effects of MLK3 vs. JNK2 on band C degradation (C46 vs. C48) suggest pathway complexity and potentially distinct roles in ER vs. PM quality control, which the authors appropriately discuss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Treatment with H2O2 induced dramatic reduction in F508del-CFTR levels within 30 min, while TNF-\u03b1 and TGF-\u03b2 induced 50% decreases. These reductions were completely abolished by MLK3 downregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by western blot data (Figure 5A-D). The rapid and dramatic effects of H2O2 (C49) and the complete rescue by MLK3 knockdown (C51) provide strong evidence for MLK3 pathway involvement in stress-induced CFTR degradation, with potential pathophysiological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Three JNK inhibitors (JNKi II, IX, XI) and oxozeaenol markedly increased F508del-CFTR bands B and C. The corrective effects of oxozeaenol were not additive with MLK3 knockdown, suggesting they act through the same pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by western blots (Figure 6A-D) and non-additivity experiments (Figure 6\u2014figure supplement 1C). The use of structurally diverse JNK inhibitors with different mechanisms (ATP-competitive vs. substrate-binding inhibitors) strengthens confidence that effects are on-target. The non-additivity with MLK3 knockdown (C54) supports pathway specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Potent synergy was observed between MLK3 pathway inhibitors and the pharmacochaperone VX-809, resulting in band C levels over 20-fold above basal and fourfold above VX-809 alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by combination treatment data (Figure 6E-F). The synergy is substantial and reproducible, representing a key translational finding. The magnitude of synergy (20-fold over basal, 4-fold over VX-809 alone) is clearly quantified and visually evident in the blots.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "JNKi II showed selective effects on proteostasis of different mutant proteins, rescuing P-gp DY490 and ATP7B mutants but having no effect on other mutants tested or on endogenous non-mutant proteins (E-cadherin, IGF1R-\u03b2, EGFR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by western blots (Figure 6\u2014figure supplement 1F-G). The selectivity for structurally related mutants (proteins with nucleotide-binding domains and aromatic amino acid mutations) and lack of effect on wild-type proteins supports specificity and suggests a defined mechanism of action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors propose that CORE signaling systems physiologically regulate the stringency of quality control and degradation processes, with most CORE pathways enhancing QC/degradation efficiency while the ERBB4 pathway suppresses these processes under growth conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C65 are interpretations and speculations (as noted in evidence_type) rather than directly demonstrated findings. While the experimental data showing that pathway inhibition reduces degradation supports the inference that these pathways normally enhance degradation (C64), the proposed physiological roles (C63, C65) require additional validation in physiological contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors cite literature showing that ROS are produced by neutrophils in CF patient lungs, elevated VEGF is detected in some CF patients, JNK and p38 MAPK are hyperactive in CF models/patients, oxozeaenol corrects F508del-CFTR in primary bronchial epithelial cells, and TNF-\u03b1, TGF-\u03b2, and ROS have been proposed as CF modifiers or are enhanced in CF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67, C72-C76 are appropriately cited literature statements that provide context for the pathophysiological relevance of the findings. The citations appear appropriate (Witko-Sarsat et al. 1995, McColley et al. 2000, Grassme et al. 2014, Berube et al. 2010, Trzcinska-Daneluti et al. 2012, Cutting 2010, Luciani et al. 2010).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors propose that MLK3 pathway inhibition regulates the folding/degradation switch by impairing F508del-CFTR entry into the degradation pathway. They observe that HOP co-precipitates less efficiently with F508del-CFTR in JNK inhibitor-treated cells, and cite that HOP links HSC70 and HSP90 in F508del-CFTR folding and its depletion induces rescue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C68 is an interpretation of the data. While the degradation data support that MLK3 affects entry into degradation pathways, the folding/export effects remain incompletely characterized (as authors acknowledge with trypsin and VSVG assays showing limited effects). Claim C69 is supported by immunoprecipitation data (Figure 4\u2014figure supplement 1G), and C70 is appropriately cited (Marozkina et al. 2010), but the mechanistic link requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71",
+      "C77"
+    ],
+    "result": "The authors note that over 120 kinase inhibitors targeting correction-related kinases are in clinical trials and that the majority of known drug targets are signaling components, supporting the druggability of the identified pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71 and C77 are factual statements about drug development that are appropriately cited (Imming et al. 2006 for C77) or based on clinical trial databases (C71). These support the translational potential of the findings.",
+    "result_type": "MINOR"
+  }
+]

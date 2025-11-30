@@ -1,0 +1,340 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Paraspeckles are present in GH4C1 rat pituitary cells, as demonstrated by immunofluorescence showing nuclear localization of four protein components (SFPQ, NONO, PSPC1, RBM14) with overlapping punctate clusters, and by RIP experiments showing 20-80-fold enrichment of Neat1 RNA with these proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 provide converging evidence from immunofluorescence microscopy (C31, C32) and biochemical RIP experiments (C33, C34) that establish the presence of functional paraspeckles in GH4C1 cells. The data are internally consistent and use complementary methodologies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Neat1 RNA visualized by FISH appears as nuclear punctates that are elliptical rather than round when analyzed by super-resolution STORM microscopy, with a mean height-to-width ratio of 1.53\u00b10.1 and mean surface area of 24,960\u00b14831 nm\u00b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 describe FISH and STORM microscopy characterization of paraspeckle morphology. The progression from confocal to super-resolution imaging is logical, and quantitative measurements (C38, C39) are provided with appropriate statistics (n=10). The elliptical shape finding (C37) is novel and well-supported by the quantitative ratio.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "All paraspeckle components (proteins RBM14, PSPC1, NONO, SFPQ and Neat1 RNA) display circadian rhythmic expression patterns in GH4C1 cells and in multiple mouse tissues including pituitary, spleen, adrenal gland, and suprachiasmatic nuclei, with rhythmic binding of proteins to Neat1 RNA peaking at 6-10 hours after medium change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 demonstrate circadian rhythmicity using multiple approaches: Western blot for proteins (C40, C41), RT-qPCR for RNA (C42-C44), and RIP for protein-RNA binding (C45, C46). All data were fitted with cosinor equations with R\u00b2>0.55, providing statistical support. The consistency across multiple tissues (C43, C44) strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The number of paraspeckles per well and per cell fluctuates over time with circadian rhythmicity, reaching minimum values 15 hours after medium change when Neat1 RNA levels are lowest, demonstrating that rhythmic expression of paraspeckle components translates into rhythmic paraspeckle number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 provide quantitative FISH data showing temporal fluctuations in paraspeckle number with statistical significance (p<0.0001 and p<0.001). The correlation between paraspeckle number and Neat1 RNA levels (C49) is a logical inference supported by the temporal correspondence noted in C47.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C56"
+    ],
+    "result": "IRAlu elements from NICN1 inserted in the 3'-UTR of EGFP significantly reduce EGFP protein expression compared to single Alu elements, causing >2-fold greater nuclear retention of egfp mRNA, and this nuclear retention correlates with silencing of EGFP protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52, C54, C56 demonstrate the functional effect of IRAlu elements using multiple readouts: fluorescence microscopy (C50, C51), Western blot (C52), and nuclear/cytoplasmic fractionation (C54). The correlation between nuclear retention and reduced protein expression (C56) is well-supported by the data, though the claim acknowledges this is correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "IRAlu-egfp mRNA is preferentially associated with paraspeckle components compared to Alu-egfp mRNA, as demonstrated by RIP showing PSPC1 association only with IRAlu-egfp and by Neat1 RNA pull-down showing significantly higher enrichment of IRAlu-egfp mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 use two complementary approaches (RIP and RNA pull-down) to demonstrate specific association of IRAlu-containing mRNA with paraspeckles. The controls are appropriate (C58, C60 show comparable Neat1 enrichment in both cell lines), and the differential enrichment of egfp mRNA (C57, C61) provides strong evidence for the conclusion (C62).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C6"
+    ],
+    "result": "IRAlu elements in the 3'-UTR of egfp mRNA induce high-amplitude circadian variations in nuclear/cytoplasmic mRNA ratio, while single Alu elements produce only weak circadian effects with highly reduced magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C64, and C6 demonstrate differential circadian effects of IRAlu vs. Alu elements using time-course nuclear/cytoplasmic fractionation. The data are fitted with cosinor equations (R\u00b2=0.68 for IRAlu, R\u00b2=0.73 for Alu), and the comparison of amplitudes is appropriate. The weak effect of single Alu (C6, C64) serves as an important control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Disruption of paraspeckles by Neat1 knockdown (siRNA or ASO reducing Neat1 to ~60% of control) abolishes both the rhythmic expression pattern of Neat1 and the circadian nuclear retention of IRAlu-egfp mRNA, demonstrating that paraspeckles are required for circadian cycling of the IRAlu-egfp reporter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 provide loss-of-function evidence using two independent knockdown methods (siRNA and ASO). The knockdown efficiency is validated (C65), the effect on Neat1 rhythmicity is shown (C66), and the functional consequences on egfp mRNA retention are demonstrated (C67, C68). The conclusion (C69) is well-supported by these data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C7"
+    ],
+    "result": "IRAlu elements in the 3'-UTR of egfp mRNA promote circadian EGFP protein expression, as demonstrated by real-time video microscopy showing a significantly higher percentage of cells with rhythmic EGFP fluorescence (R\u00b2>0.5) in IRAlu-egfp cells compared to Alu-egfp and control egfp cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70, C71, and C7 use real-time video microscopy to demonstrate circadian protein expression. The statistical approach (percentage of cells fitting cosinor with R\u00b2>0.5) is appropriate, and the comparison across three cell lines provides good controls. This represents the functional endpoint of the nuclear retention mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "RNA sequencing of Neat1 pull-down identified 4268 genes as paraspeckle-associated targets in GH4C1 cells, with significant overlap with published circadian transcriptomes: 18.8% overlap with pituitary circadian genes and 27% overlap with liver post-transcriptional circadian genes, including 25% of genes common to both published datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 describe RNA-seq analysis with appropriate validation (two specific oligonucleotides with 65-83% overlap, C72-C73). The cross-species and cross-tissue comparisons (C74-C77) are acknowledged as limitations but show meaningful overlaps. The enrichment of circadian genes among paraspeckle targets supports the biological relevance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Seven selected genes (Calr, Evi5, Maged1, Canx, Pcbp2, Syne1, Fkbp4) identified as Neat1 RNA targets by pull-down and validated by qPCR display rhythmic nuclear retention patterns in IRAlu-egfp cells (R\u00b2>0.55), with minimum nuclear/cytoplasmic ratios occurring ~20 hours after medium change when paraspeckle components are lowest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 provide validation of RNA-seq findings using qPCR (C78) and demonstrate functional rhythmic nuclear retention for selected endogenous genes (C79). The temporal correlation with paraspeckle component levels (C80) strengthens the mechanistic link. The R\u00b2>0.55 threshold is consistently applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Knockdown of Neat1 RNA by siRNA or ASO disrupts the circadian pattern of nuclear/cytoplasmic ratios for seven selected endogenous genes, demonstrating that paraspeckles play a role in the rhythmic expression of these genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 provide loss-of-function evidence for endogenous genes using the same knockdown approaches validated earlier. The disruption of rhythmic patterns (inability to fit with R\u00b2>0.55) after paraspeckle disruption supports the mechanistic role. This extends the findings from the reporter system to endogenous genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C8",
+      "C105",
+      "C106",
+      "C108"
+    ],
+    "result": "Paraspeckles control circadian gene expression at a post-transcriptional level through their circadian expression, with nuclear retention by paraspeckles contributing to the cycling of both reporter genes and endogenous circadian genes, suggesting that circadian mRNA oscillations can be post-transcriptionally controlled through rhythmic nuclear retention by paraspeckle nuclear bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C8, C105, C106, and C108 represent the main conclusions of the study. These are well-supported by the collective evidence from multiple experimental approaches: demonstration of circadian paraspeckle expression, IRAlu-mediated circadian nuclear retention, loss-of-function experiments, and validation with endogenous genes. The conclusion is appropriately cautious (\"can be\" rather than \"are\").",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C55"
+    ],
+    "result": "Single Alu elements in the 3'-UTR do not significantly affect EGFP gene expression or nuclear/cytoplasmic distribution of egfp mRNA compared to control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53 and C55 state that single Alu elements have no effect, but both explicitly note that data are not shown. While this is consistent with the weak circadian effect observed (C6, C64), the absence of presented data makes these specific claims uncertain. This represents a minor control that would strengthen the manuscript if included.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "STORM analysis reveals that paraspeckles appear as oblong structures with dimensions smaller than previously reported IGAZ nuclear bodies, suggesting either species differences or that Neat1 RNA staining does not fill the entire nuclear body.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 compare STORM measurements with published electron microscopy data. The observation is well-documented (C90), and the interpretation (C91) appropriately acknowledges alternative explanations. This represents a technical advance in paraspeckle visualization but is secondary to the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The circadian expression pattern of Neat1 RNA in mouse tissues may reflect variations in paraspeckle number, though oscillations in paraspeckle size cannot be excluded.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C93 are explicitly speculative (\"may be assumed,\" \"cannot be excluded\"). While the inference is reasonable based on the GH4C1 cell data showing correlation between Neat1 levels and paraspeckle number, direct evidence in tissues is not provided. This represents a reasonable extrapolation but requires validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The weak circadian EGFP expression in Alu-egfp cells may be explained by rhythmic expression of RNA-binding proteins that target antisense Alu elements, such as HNRNPC which displays circadian expression in pituitary, though the mechanism remains to be determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C104 are explicitly speculative (\"may be speculated,\" \"remains to be determined\"). While HNRNPC is identified as a candidate (C101), and HNRNPU/STAU1 are ruled out (C102-C103), no direct experimental evidence links any specific factor to the weak Alu effect. This represents reasonable speculation but lacks experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C83",
+      "C84",
+      "C85",
+      "C97",
+      "C98",
+      "C107"
+    ],
+    "result": "Background knowledge claims about paraspeckles, circadian biology, Alu elements, and prior work are established in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C2, C9-C30, C83-C85, C97-C98, C107) represent established background knowledge supported by appropriate citations. They provide context for the current work and are not novel findings of this study. The citations appear appropriate and the knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Paraspeckles in GH4C1 rat pituitary cells are distributed in both nucleoplasm and subnuclear foci, appearing as small, irregularly sized, unevenly distributed bodies that appear round under confocal microscopy with diameter ~360 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 describe basic characterization of paraspeckles in the cell line used. The observations are supported by immunofluorescence and FISH data (C86-C88), and the size estimate (C89) is consistent with literature. This represents standard characterization necessary for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C99"
+    ],
+    "result": "IRAlu elements in the 3'-UTR of egfp strongly silence EGFP expression through preferential nuclear retention of the mRNA, with association of IRAlu-egfp mRNA with Neat1 providing evidence for nuclear retention by paraspeckles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96, C99 summarize the basic IRAlu effect and its mechanism. These are well-supported by the experimental data (Figures 4-5) and represent confirmation/extension of prior work by Chen and Carmichael (2008) in a new cell type. The Neat1 pull-down (C99) provides stronger evidence than previous RIP alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "GH4C1 cells were obtained from ATCC in 2012 with certificate of analysis and confirmed mycoplasma-free.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 provides cell line authentication information. This is good practice for reproducibility but represents methodological documentation rather than a scientific finding. The information is clearly stated and verifiable.",
+    "result_type": "MINOR"
+  }
+]

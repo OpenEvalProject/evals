@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The study identifies extensive periodic alternative splicing (AS) during the cell cycle, with 15.6% of expressed genes containing 1747 periodically-regulated AS events. These genes with periodic AS are largely independent from genes with periodic transcript level changes and are enriched in cell cycle-related functions. Intron retention events are over-represented among periodic AS events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide converging evidence from RNA-Seq analysis with appropriate statistical thresholds (FDR < 2.5%), validation by multiple analysis pipelines (MISO and VAST-TOOLS), and GO enrichment analysis. The independence of periodic AS from periodic transcription is demonstrated by lack of overlap between gene sets, and the over-representation of intron retention is supported by Fisher's exact test (p=2.2\u00d710^-16).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C98"
+    ],
+    "result": "Periodic intron retention in AURKB mRNA introduces a premature termination codon predicted to trigger nonsense-mediated decay, and the timing of intron splicing lags behind total mRNA expression changes. This periodic AS is proposed to control the timing of AURKB protein activation during the cell cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 are supported by temporal RT-PCR analysis (Figure 1E) showing the lag between intron retention and total mRNA levels. The computational correction for intron-retaining transcripts demonstrates a shifted peak coinciding with mitosis. However, C98's claim about function is inferential and would benefit from direct protein-level validation or functional assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Among 96 periodically expressed RNA-binding proteins enriched in splicing regulation, CLK1 displays the strongest cyclic expression peaking at G2/M phase, while other CLK paralogs and SRPK1 do not show significant periodic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 are supported by RNA-Seq data, GO enrichment analysis (adjusted p=10^-4), immunoblotting across cell cycle stages, and consistency with a cited mass spectrometry study. The specificity of CLK1 cycling compared to other kinases strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "CLK1 protein levels are controlled by ubiquitin-mediated degradation in a cell cycle-dependent manner, while CLK1 mRNA levels remain constant. This indicates post-transcriptional regulation at the level of protein translation and/or turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 are well-supported by multiple complementary experiments: RNA-Seq and RT-PCR showing constant mRNA levels, cycloheximide chase experiments demonstrating rapid protein degradation, MG132 rescue experiments, and immunoprecipitation showing polyubiquitination. The convergence of these independent lines of evidence strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "CLK1 protein stability is regulated by an activity-dependent negative feedback loop where CLK1 kinase activity promotes its own ubiquitination and degradation. Inhibition of CLK1 activity with TG003 or use of catalytically inactive mutants stabilizes the protein and prevents its cell cycle-dependent turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C30 provide strong mechanistic evidence through multiple experimental approaches: TG003 inhibitor studies, wild-type vs. kinase-dead mutant comparisons, co-expression experiments, polyubiquitination assays, and synchronized cell experiments. The activity-dependent degradation is demonstrated by showing that active CLK1 can promote degradation of inactive CLK1 in trans (C25), and that inhibition prevents normal turnover (C28).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "CLK1 regulates 892 AS events in 665 genes, with most events showing increased exon skipping (70%) or intron retention (87%) upon CLK1 inhibition. These CLK1-regulated AS events significantly overlap with periodic AS events (156 genes, p=8.5\u00d710^-10) and are enriched in cell cycle-related GO terms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C41 are supported by RNA-Seq analysis after TG003 treatment, RT-PCR validation of 9/9 tested events, rapid time course experiments (3-6 hr), and statistical overlap analysis with periodic AS. The enrichment in cell cycle GO terms (adjusted p<0.05, FDR<20%) and lack of overlap with periodically expressed genes (C39) strengthens the specificity of the AS regulation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "CLK1 regulates CHEK2 exon 9 splicing in a catalytic activity-dependent manner through SRSF1. The resulting CHEK2 isoform lacking exon 9 (which removes the kinase domain) can still interact with full-length CHEK2 and may function as a dominant-negative regulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are well-supported by dose-response experiments, overexpression studies, catalytic mutant controls, and SRSF1 manipulation experiments. Claims C49-C50 are supported by co-IP data and prior literature. However, C51's dominant-negative hypothesis is speculative and lacks direct functional validation of CHEK2 activity or downstream effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "CLK1 inhibition shifts CENPE splicing to produce predominantly the long isoform, accompanied by reduced CENPE protein levels during G2/M phase, presumably due to instability of the long isoform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C54 is supported by RT-PCR data showing the splicing shift. However, C55's explanation for reduced protein levels as being due to long isoform instability is speculative (indicated by 'presumably'). Direct measurement of isoform-specific protein stability or half-life experiments would be needed to support this mechanistic claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Of 1498 AS events that change between G1 and G2 phases, ~94% show reduced changes following treatment with two structurally distinct CLK1 inhibitors (TG003 and KHCB-19), with 65% commonly affected by both drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by RNA-Seq analysis of synchronized cells with appropriate controls. The use of two structurally distinct inhibitors strengthens the conclusion that effects are due to CLK1 inhibition rather than off-target effects. The high percentage (94%) of blocked events provides strong evidence for CLK1's role in cell cycle-dependent splicing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "CLK1 knockdown or inhibition causes accumulation of cells with 4N DNA content, increased multi-nucleation, and mitotic defects including delayed cytokinesis and aberrant cell division. The primary defects occur in late S-phase and G2 phase when CLK1 levels normally rise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C65 are supported by multiple complementary approaches: flow cytometry showing 4N accumulation in multiple cell lines, immunofluorescence microscopy showing multi-nucleation, time-lapse imaging documenting mitotic progression defects, and timed inhibitor addition experiments demonstrating the critical window. The correlation between knockdown efficiency and phenotype severity (C59) and the timing of CLK1-dependent AS target expression (C65) provide additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "CLK1 knockdown or chemical inhibition results in near complete block of cell proliferation in colony formation assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by both anchorage-dependent and -independent colony formation assays using multiple perturbation methods (shRNA, TG003, KHCB-19). The consistency across different approaches strengthens the conclusion about CLK1's requirement for proliferation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C74"
+    ],
+    "result": "CLK1 expression is significantly elevated in kidney tumors compared to normal tissue (p=10^-5), and patients with high CLK1 expression have significantly lower survival rates (p=0.007). CLK1-regulated AS events are altered across multiple tumor types. CLK4, despite being highly similar and also elevated in tumors, does not correlate with survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 are supported by analysis of TCGA data with appropriate statistical tests (Kolmogorov-Smirnov for expression, Kaplan-Meier for survival). The specificity of CLK1 (vs. CLK4) in survival correlation despite both being elevated strengthens the biological significance. The consistency of CLK1-regulated AS alterations across multiple cancer types provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "This study demonstrates for the first time that AS patterns are subject to extensive periodic regulation during the cell cycle, occurring in part through a global control mechanism involving cell cycle fluctuations of CLK1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 represent the main conclusions of the study and are supported by the totality of evidence from multiple result groups above: identification of 1747 periodic AS events, demonstration of CLK1's periodic expression and activity-dependent degradation, overlap between CLK1-regulated and periodic AS events, and functional consequences of CLK1 perturbation on cell cycle progression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "The study identified 94 cases of periodic alternative poly-A site usage in genes regulating cell cycle and/or proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C100 mentions data that are explicitly stated as 'not shown' in the manuscript. Without access to the supporting data, methods, or statistical thresholds used for this analysis, the claim cannot be properly evaluated. This appears to be a preliminary finding that requires further documentation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "A fraction of periodically translated genes are also periodically spliced, including key cell cycle regulators, suggesting coupling between AS and translation regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 are supported by comparison of periodic splicing data from this study with published periodic translation data, identifying specific overlapping genes (AURKA, AURKB, TTBK1, DICER1). The consistency with prior literature on AS-translation coupling strengthens the interpretation, though direct mechanistic experiments would further support the coupling hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C21",
+      "C42",
+      "C43",
+      "C52",
+      "C53",
+      "C73",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C99",
+      "C101"
+    ],
+    "result": "Background knowledge claims about splicing regulation, cell cycle control, SR proteins, CLK kinases, and cancer biology that provide context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C101 (selected background claims) represent established knowledge supported by appropriate citations from the literature. These provide necessary context but are not novel findings of this study. The citations appear appropriate and the knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "TG003 can inhibit both CLK1 and CLK4, but RNAi of CLK1 alone is sufficient to recapitulate the phenotype, indicating CLK1 is the primary target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 address an important specificity concern about the TG003 inhibitor. The demonstration that CLK1 RNAi alone recapitulates the TG003 phenotype (referenced to Figure 4 and citations) provides critical validation that the observed effects are primarily due to CLK1 inhibition rather than off-target effects on CLK4.",
+    "result_type": "MINOR"
+  }
+]

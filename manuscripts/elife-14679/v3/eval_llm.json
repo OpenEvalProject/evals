@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The authors developed a multi-area two-photon microscope capable of simultaneous imaging of two sub-areas within a 1.8-mm FOV using temporal multiplexing with 6.25-ns delayed laser pulses, electrically tunable lenses for independent focusing (600 \u00b5m z-range), and a 16x water-immersion objective (NA 0.8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8 and C44-C47 collectively describe the technical specifications and capabilities of the microscope with supporting figures and data. The temporal multiplexing approach is well-justified based on fluorescence lifetimes (C8), and the optical design is documented with appropriate technical details and validation data (Figure 1 and supplements).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The authors imaged 228 S1S2, 817 S1ND, 193 S2S1, and 750 S2ND neurons across ~1800 trials in 7 mice performing a whisker-based go/no-go texture discrimination task (d' = 2.62 \u00b1 0.15), using combinatorial plane hopping and tensor decomposition for denoising calcium traces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C58 describe the experimental design, behavioral task, and data acquisition parameters with appropriate detail. The sample sizes, behavioral performance metrics, and data processing methods are clearly documented. The tensor decomposition denoising method is validated against Gaussian filtering (C59).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Tensor decomposition for denoising calcium traces better preserves the onset and peak of calcium transients compared to Gaussian filtering (CC: 0.69 \u00b1 0.01 vs. 0.65 \u00b1 0.01, p<1\u00d710\u207b\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by statistical comparison on simulated data shown in Figure 2\u2014figure supplement 1F,G. The method is appropriately validated and the improvement is statistically significant with a very low p-value.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "S1ND and S2S1 neurons showed better overall GLM fits to behavioral parameters (whisker-touch onset, whisking amplitude, licking onset) compared to their within-area counterparts, with S2S1 neurons showing higher coefficients for whisker-touch onset, whisking, and licking onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 are supported by statistical analysis (KS-test, one-way ANOVA with repeated measures) shown in Figure 3C-D and supplements. The GLM approach is appropriate for relating calcium signals to behavioral parameters, and the statistical tests are correctly applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "A larger fraction of S2S1 neurons discriminated Hit vs. CR trials (72%, p<0.002) and FA vs. CR trials (50%, p<0.05) above chance compared to other cell types, but were not more likely to discriminate P280 vs. P1200 textures on CR trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are supported by ROC analysis with appropriate statistical testing (\u03c7\u00b2 test) shown in Figure 3E. The control analysis with texture discrimination (C14) strengthens the interpretation that S2S1 neurons encode decision/action rather than sensory information.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Cross-areal correlation (LDCCS1:S2) increased immediately following whisker-touch onset for both Hit and CR trials, but remained elevated for Hit trials 500 ms after touch onset (p<0.05), corresponding to the mean reaction time (524 \u00b1 5 ms), and peaked at licking onset when Hit trials were re-aligned.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 describe the temporal dynamics of cross-areal correlation with statistical support (one-way ANOVA with repeated measures) shown in Figure 5B-D. The alignment of LDCCS1:S2 divergence with reaction time provides strong evidence for the relationship between coordination and behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "LDCCS1:S2 was higher for FA vs. CR trials (p<0.05), particularly for FA trials with early licking (p<0.05), and for high- vs. low-amplitude whisking trials (p<0.02), but stimulation with distinct textures did not result in elevated LDCCS1:S2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 are supported by statistical analysis (one-way ANOVA with repeated measures) shown in Figures 5E-I and supplements. The control analysis with texture discrimination (C22) demonstrates that S1-S2 coordination is not stimulus-specific but rather behavior-related.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "S1S2 and S2S1 neurons especially contributed to LDCCS1:S2 upon licking onset on Hit trials (p<0.0001), in high-amplitude whisking trials following whisker-touch onset (p<0.02), and in FA trials when licking followed whisker-touch onset (p<0.02), but not when licking preceded touch or in the absence of sensory stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 are supported by trial-shuffling experiments with statistical analysis (one-way ANOVA with repeated measures) shown in Figure 6B-F. The control shuffling of S1ND and S2ND neurons strengthens the interpretation that the effect is specific to projection neurons. The pattern of results consistently shows that projection neuron contribution depends on sensory stimulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "The specific contribution of S1S2 and S2S1 projection neurons to inter-areal coordination reflects sensory- or decision-related activity rather than motor-related activity, as their contribution depends on the presence of sensory stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are interpretations based on the pattern of results from C23-C27. The inference is well-supported by the observation that projection neurons contribute to coordination only after whisker-touch onset and not during motor behavior in the absence of sensory stimulation (C27).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Population activity across S1 and S2 is coordinated during relevant task periods in a behavior-dependent manner, associated with both goal-directed licking and whisking behavior independent of sensory stimuli, but S1S2 and S2S1 neurons do not show special contribution to motor-related coordination in the absence of tactile stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 summarize the main findings from the LDA and trial-shuffling analyses (C15-C27). The conclusions are well-supported by the data, though the authors acknowledge temporal resolution limitations that preclude analysis of rapid spike-timing dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "S1 and S2 receive common input from M1 and POm conveying motor information and are coupled by thalamic relays through POm, suggesting that motor-related S1-S2 coordination could result from common drive or cortico-thalamocortical pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are based on cited anatomical literature and are well-established. Claim C35 is explicitly speculative and appropriately qualified as such. The speculation is reasonable given the anatomical connectivity and the observed motor-related coordination without special contribution from projection neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "The contribution of S1S2 and S2S1 neurons to inter-areal coordination is most prominent when sensory stimuli and motor behavior are paired, suggesting that cortico-cortical interactions could be involved in 'active sensation'.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are based on the pattern of results from trial-shuffling experiments (C23-C27). While C37 is speculative, it is appropriately qualified and represents a reasonable interpretation of the data showing maximal projection neuron contribution during combined sensory-motor conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The findings provide the first direct evidence for a unique contribution of direct cortico-cortical interactions over other sources of correlated activity across S1 and S2, with the division between direct and indirect interactions along sensory and motor parameters consistent with theories about cortico-thalamocortical pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 is a novelty claim supported by the unique experimental approach combining anatomical labeling with multi-area imaging. Claim C39 relates the findings to existing theoretical frameworks (Sherman and Guillery, 2011), which is appropriate. The evidence from trial-shuffling experiments distinguishing projection neuron contributions provides strong support for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "S2S1 neurons exhibit prominent licking and decision-related activity, consistent with evidence that behavior-related activity in S1 can be inherited from S2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 is supported by the GLM and ROC analysis results (C9-C13). Claim C41 is based on cited literature (Yang et al., 2016) and provides context for interpreting the S2S1 neuron activity patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Coordinated activity between S1S2 and S2S1 neurons during texture discrimination may reflect sensory processing involved in decision making or reinforcement of sensory signals through goal-directed learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C43 are explicitly speculative interpretations of the functional significance of the observed coordination. While the speculation is reasonable and supported by the temporal dynamics of coordination (increasing at touch onset, peaking at licking onset, persisting after licking), these functional interpretations require additional experiments to validate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The coordination of activity across neocortical areas is essential for mammalian brain function, with sensory perception, motor control, and cognitive functions depending on neural dynamics that rely on information exchange through feedforward and feedback pathways formed by long-range axons of pyramidal neurons in L2/3 and L5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide background knowledge and are supported by appropriate citations to established literature (Bressler and Menon, 2010; Buschman and Miller, 2007; Markov et al., 2013; Oh et al., 2014; Zingg et al., 2014). These are well-established facts in neuroscience.",
+    "result_type": "MINOR"
+  }
+]

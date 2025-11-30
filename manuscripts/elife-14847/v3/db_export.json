@@ -1,0 +1,1932 @@
+{
+  "submission": {
+    "id": "0bdd9028-62ca-4843-924a-f396ebcb622a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:49:58.240307Z",
+    "updated_at": "2025-11-29T23:49:58.240307Z"
+  },
+  "content": [
+    {
+      "id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "submission_id": "0bdd9028-62ca-4843-924a-f396ebcb622a",
+      "content_type": "manuscript",
+      "content_text": "# Cytoplasmic NOTCH and membrane-derived \u03b2-catenin link cell fate choice to epithelial-mesenchymal transition during myogenesis\n\n## Authors\n\n- Daniel Sieiro<sup>1</sup>\n- Anne C Rios<sup>1</sup>\n- Claire E Hirst<sup>1</sup>\n- Christophe Marcelle<sup>1</sup> ([ORCID: 0000-0002-9612-7609](https://orcid.org/0000-0002-9612-7609)) \u2020\n\n### Affiliations\n\n1. Australian Regenerative Medicine Institute Monash University Clayton Australia\n2. Institut NeuroMyoGene University Lyon 1, CNRS UMR 5310, INSERM U 1217 Villeurbanne France\n\n\u2020 Corresponding author\n\n## Abstract\n\nHow cells in the embryo coordinate epithelial plasticity with cell fate decision in a fast changing cellular environment is largely unknown. In chick embryos, skeletal muscle formation is initiated by migrating Delta1-expressing neural crest cells that trigger NOTCH signaling and myogenesis in selected epithelial somite progenitor cells, which rapidly translocate into the nascent muscle to differentiate. Here, we uncovered at the heart of this response a signaling module encompassing NOTCH, GSK-3\u03b2, SNAI1 and \u03b2-catenin. Independent of its transcriptional function, NOTCH profoundly inhibits GSK-3\u03b2 activity. As a result SNAI1 is stabilized, triggering an epithelial to mesenchymal transition. This allows the recruitment of \u03b2-catenin from the membrane, which acts as a transcriptional co-factor to activate myogenesis, independently of WNT ligand. Our results intimately associate the initiation of myogenesis to a change in cell adhesion and may reveal a general principle for coupling cell fate changes to EMT in many developmental and pathological processes.\n\n## Introduction\n\nDuring early embryogenesis, a succession of extensive tissue rearrangements and cell migration events, intimately associated with rapid cell fate changes, establish the tissues and organs of the future adult. A model where such complex issues are amenable to experimentation is the early formation of skeletal muscles in the chick embryo.\n\nOver many days of development, the medial border of the dermomyotome (DML) generates the first skeletal muscle cells that assemble into a primary myotome (Figure 1A\u2013D). This arises from a crucial cell fate decision: epithelial cells in the DML either self-renew or undergo myogenic differentiation and this is accompanied by an EMT that allows their translocation into the primary myotome (Denetclaw et al., 1997; Gros et al., 2009; Ordahl et al., 2001; Rios et al., 2011).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/14847/elife-14847-fig1-v3.jpg)\n\n**Figure 1.:** (A) Chick embryos at HH stage 15\u201316 (24\u201328 somites) were electroporated in the medial part of the (4\u20135) newly formed somites (boxed region). (B) Immunostaining of a HH 15 chick embryo with PAX7 (in green), HNK1 (in blue) and MYF5 (in red) to label the dermomyotome, the neural crest and the myotome, respectively. (C) Schematic illustrating regions of the somite that are represented in the confocal stacks of images shown throughout the study. It shows the medial portion of a somite 6\u201324\u2009hr after its DML was electroporated. Typically, it leads to the mosaic expression (in green) of the electroporated construct(s) in the DML, the transition zone (in blue) and the nascent primary myotome (in purple). (D) is a maximum intensity projection of a confocal stack of a somite electroporated with GFP 6\u2009hr prior to analysis.\n\nClassical experiments demonstrated that signaling cues from tissues surrounding the somites act as inducers of muscle formation (Ordahl and Le Douarin, 1992). It was later shown that WNT1 and WNT3a are expressed in the dorsal neural tube and that, in vitro, both ligands enhance myogenesis in somites (Munsterberg et al., 1995; Stern et al., 1995; Tajbakhsh et al., 1998). A major consequence of the activation of the 'canonical' WNT pathway by WNT ligands is that \u03b2-catenin, normally degraded by the APC/Axin destruction complex, accumulates in the cytoplasm and enters the nucleus, where it engages DNA-bound TCF transcription factor to activate their targets (hence the name of WNT/\u03b2-catenin-dependent pathway to this cellular response). Since it was demonstrated that MYF5 promoter contains TCF binding sites required for its in vivo expression in the DML (Borello et al., 2006) and that dominant negative and constitutively active forms of TCF and \u03b2-catenin modulate MYF5 expression in somites (Abu-Elmagd et al., 2010; Gros et al., 2009), this has led to the largely accepted theory that myogenesis in somites is under the control of WNTs from the dorsal neural tube acting through a WNT/\u03b2-catenin-dependent pathway.\n\nThis raises a paradox: although presumably all cells in the DML are equally exposed to WNTs from axial structures and are fully competent to initiate myogenesis, only a small proportion of DML cells do so at any given time (Rios et al., 2011), suggesting that other mechanisms affect the cell fate decision in selected DML cells.\n\nWe recently introduced NOTCH signaling as a novel player in early myogenesis, by demonstrating that the activation of MYF5 and MYOD in the DML is dependent upon the transient activation of NOTCH signaling, triggered by Delta1-positive neural crest cells migrating from the dorsal neural tube (Rios et al., 2011). This finding is compatible with the well-documented role of the dorsal neural tube in myogenesis. Importantly, the mosaic expression of Delta1 in the migrating neural crest cell population ensures that NOTCH signaling is regularly triggered in selected DML cells, thus explaining the cell fate choice necessary to generate myotomal cells over an extended period of time, all while self-renewing the progenitor population. However, this finding was not in accordance with the established role of WNT in myogenesis, nor did it explain why the initiation of the myogenic program in selected progenitors within the DML is associated with their translocation into the primary myotome via an EMT.\n\nHere, we discovered that in DML cells, the activation of NOTCH signaling by Delta1-positive neural crest cells strongly decreases GSK-3\u03b2 activity, independent of NOTCH transcriptional function. This leads to a dramatic stabilization of SNAI1, resulting in the initiation of the EMT program. As a consequence, \u03b2-catenin from the cell membrane pool is mobilized, allowing its entry into the nucleus where it activates MYF5 expression in a WNT ligand-independent manner. Therefore, our results suggest that non-canonical functions of NOTCH and \u03b2-catenin, associated in an efficient signaling circuitry, explain the coupling of myogenesis with changes in cell adhesion in the DML.\n\n## Results\n\n### Co-activation of NOTCH and WNT reporters in early myogenesis\n\nThe first sign that myogenesis is initiated in the DML is the activation of MYF5 (or MYOD) expression, which serves as a read-out of a cell fate change in this structure (Rios et al., 2011). As WNT and Delta1 are reported to activate myogenesis (Munsterberg et al., 1995; Rios et al., 2011; Stern et al., 1995; Tajbakhsh et al., 1998), it was important to determine whether and how these pathways co-operate in this process. As a first step, we co-electroporated the DML of trunk-level somites (as shown in Figure 1A\u2013D) with reporter constructs for the NOTCH and WNT pathways. The NOTCH reporter (Ohtsuka et al., 2006) contains the HES1 promoter region upstream of a destabilized red fluorescent protein. HES1 is a direct target of the NOTCH pathway, and we previously showed this construct serves as a faithful reporter of NOTCH activity in somites (Rios et al., 2011). The 'TOPflash' reporter (Korinek et al., 1997; Rios et al., 2010) contains twelve TCF-1 binding sites upstream of a destabilized EGFP (12Tf-d2EGFP). The activity of the TOPflash reporter is triggered by the binding of the transcription factor TCF/LEF together with its co-factor \u03b2-catenin. The destabilized fluorescent reporter proteins present in both constructs allow the visualization of only the cells that are actively engaged in NOTCH and WNT signaling, while the intensity of the signal indicates the magnitude of the response.\n\nWe found that, within the DML, almost half of the epithelial cells that activated the TOPflash reporter were also positive for the NOTCH reporter (Figure 2A,B). Remarkably, nearly all DML cells that were positive for both reporters were MYF5-positive (Figure 2C), indicating a strong correlation between the activation of NOTCH and WNT reporters and the initiation of the myogenic program.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/14847/elife-14847-fig2-v3.jpg)\n\n**Figure 2.:** (A,D) Confocal stacks of somites, in dorsal view, 12\u00a0hr after electroporation of HES1-DsRedExpress-DR (NOTCH reporter, in red), 12Tf-d2EGFP (TOPflash reporter, in green), an ubiquitously expressed H2B-BFP (blue in D) or immunostained for MYF5 expression (blue in A).\u00a0(B\u2013C) Bar charts showing (B) 38% of cells activating the NOTCH reporter within the TOPflash reporter-positive population and (C) 98.5% of cells expressing MYF5 that co-activate the NOTCH and the TOPflash reporters. Lower panels (black and white in D) show enlargements of the yellow boxes (upper panels in D). Orange arrows indicate DML cells positive for the NOTCH reporter and strongly positive for the TOPflash reporter; yellow arrowheads show cells negative for NOTCH and weak or strong for TOPflash. (E) Linear regression chart plotting mean fluorescence intensity of CAGGS-BFP-positive cells against the mean fluorescence intensity of 12Tf-d2EGFP-positive cells ('Y=0.2378*X+93.61', r(96)=0.134, p<0.0002). Indicated is best-fit regression line for entire population (Hes1+: NOTCH reporter-positive, red dots; Hes1-: NOTCH reporter-negative, blue dots) and r-squared value. In each panel are indicated the antigens that were detected by immunostaining. Abbreviation: EP: electroporation. Scale bars: 50 \u03bcm\n\nDuring this analysis, we made the surprising observation that a large majority of NOTCH reporter-positive cells displayed a high TOPflash fluorescence. On the contrary, most cells that expressed low levels of TOPflash fluorescence were NOTCH-reporter negative (Figure 2A,D). It was important to show that this difference was not due to electroporation, since DNA transfer with this technique is inherently variable between cells. To show that the variable levels of TOPflash activity were not the result of variable amounts of electroporated plasmids, we plotted the intensity of TOPflash response against that of the BFP as a control. BFP is driven by an ubiquitous promoter and its fluorescence should thus be directly correlated with the quantity of plasmid incorporated in each cell. We found no correlation between the intensity of the TOPflash reporter and that of BFP (Figure 2E). This suggests that the low and high levels of TOPflash fluorescence observed in DML cells are due to genuine differences in TCF/\u03b2-catenin transcriptional activity. The graph also distinguishes cells that are positive (in red) for the NOTCH reporter from those that are negative (in blue, Figure 2E). It confirms that the vast majority of NOTCH reporter-positive (and MYF5-positive) cells display a high TCF/\u03b2-catenin transcriptional activity. This is the cell population that will be thoroughly analyzed in this study. The identity of the cell population that displays a low TCF/\u03b2-catenin transcriptional activity (about 60% of the entire TOPflash positive cell population) but is NOTCH reporter- and MYF5-negative will become clear in the following chapters.\n\n### NOTCH signaling regulates TCF/\u03b2-catenin transcriptional activity during myogenesis\n\nThe results above raised the possibility that NOTCH and the TCF/\u03b2-catenin transcriptional activity may be interconnected during the initial phases of myogenesis. To address this, we first co-electroporated the DML with a constitutively active form of \u03b2-catenin (Rios et al., 2010) together with the NOTCH reporter. This did not lead to any change in activity of the NOTCH reporter, compared to controls (Figure 3A\u2013C). In contrast, the co-expression of a constitutively active form of NOTCH1 (NICD [Daudet and Lewis, 2005]) led to rapid and robust increase in the activity of the TOPflash reporter, compared to controls (Figure 3D,E). To further investigate the interrelation between both pathways, we used a dominant-negative form of the NOTCH co-activator Mastermind (DN-MAML1 [Weng et al., 2003]). We previously showed that it strongly inhibits MYF5 expression in the DML (Rios et al., 2011). A constitutively active form of the most downstream effector of the WNT pathway, LEF1/TCF1 (named CA-LEF1 [Abu-Elmagd et al., 2010]), co-electroporated with DN-MAML1 not only rescued the inhibition of MYF5 expression by DN-MAML1, but also led to a strong activation of its expression that was indistinguishable from that observed after electroporation of CA-LEF1 alone (Figure 3F,G) or NICD (Rios et al., 2011). These data support the premise that NOTCH regulates TCF/\u03b2-catenin transcriptional activity in the DML.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/14847/elife-14847-fig3-v3.jpg)\n\n**Figure 3.:** (A,B) Confocal stacks, 12\u00a0hr after electroporation of (A) the NOTCH reporter HES1-d2EGFP in green, H2B-RFP (in red) and (B) with a constitutively active form of \u03b2-catenin (in blue). (C) Bar charts showing 15.6% of HES1-d2EGFP-positive cells in the control (in white) or 17.7% with CA \u03b2-catenin (in black). (D) Confocal stacks of somites 6\u00a0hr after co-electroporation of 12Tfd2EGFP (TOPflash reporter, in green), and an ubiquitously expressed H2B-RFP (in red, left) or NICD (in red, right). (E) Bar charts showing 35.5% of cells expressing the TOPflash reporter in the controls (in white) or 75.4% with NICD (in black). (F) Confocal stacks of somites 6\u00a0hr after co-electroporation of a constitutive active form of LEF1 and GFP (in green, left) or a dominant negative form of MAML1 fused to GFP (in green, right) and a constitutive active form of LEF1; MYF5 expression is shown in red. (G) Bar charts showing 87.2% of MYF5-positive cells in DN-MAML1/CA-LEF1-positive cells and 87.8% MYF5-positive cells when expressing CA-LEF1 alone. In each panel are indicated the antigens that were detected by immunostaining. Abbreviation: EP: electroporation. Scale bars: 50 \u03bcm\n\n### The activation of TCF/\u03b2-catenin transcriptional activity by NOTCH is WNT ligand-independent\n\nThe TOPflash reporter reflects TCF/\u03b2-catenin transcriptional activity and it is a known outcome of WNT ligand binding to its cognate receptor. However, the results above indicate that NOTCH somehow regulates TOPflash activity in the DML. To understand this apparent contradiction, we decided to test whether WNT ligands are at all required during this process. Dickkopf (Dkk) genes comprise an evolutionarily conserved family that encode secreted proteins that antagonize WNTs, by inhibiting in the extracellular space the WNT co-receptors Lrp5 and 6 (Niehrs, 2006). First, we tested whether DKK1 efficiently inhibits WNT signaling by co-electroporating DKK1 into the neural tube of developing embryos, together with the TOPflash reporter described above. As control, the TOPflash reporter was electroporated alone. Without DKK1, we observed a robust TOPflash reporter activity in the neural tube (Figure 4\u2014figure supplement 1A,B). The co-electroporation of DKK1 abrogated nearly all reporter activity in this tissue (Figure 4\u2014figure supplement 1C). These results suggest that DKK1 efficiently inhibits most, if not all TOPflash (i.e. TCF/\u03b2-catenin transcriptional) activity in the posterior neural tube by antagonizing WNTs in the extracellular space.\n\nWe then performed a similar experiment in somites. A striking difference from the neural tube control experiment was that, even in the presence of DKK1, the TOPflash reporter was still active (Figure 4A,B). While this response showed a decrease of about half in the proportion of TOPflash reporter-positive cells compared to controls (Figure 4C), remarkably nearly all cells that remained TOPflash-positive also expressed MYF5 (Figure 4D). As a consequence, the overall proportion of MYF5-positive cells was unaffected (Figure 4E). Of these cells that remained TOPflash-positive in the presence of DKK1, nearly all expressed the NOTCH reporter (Figure 4F,G), a result coherent with our observation that MYF5 is tightly associated with the activation of this reporter (Figure 2C).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/14847/elife-14847-fig4-v3.jpg)\n\n**Figure 4.:** (A,B) Confocal stacks of somites, 6\u00a0hr after co-electroporation of 12Tf-d2EGFP (TOPflash reporter, in green), with H2B-RFP (in red) without (A) or with (B) DKK-1, and immunostained for MYF5 (in blue). (C\u2013E) Bar charts showing (C) 33.3% of TOPflash-positive cells in the controls (in white) or 17.7% with DKK-1 (in black); (D) Bar charts indicating 56.8% of TOPflash-positive cells are MYF5-positive in control embryos, while 96.9% of TOPflash-positive cells are MYF5-positive when DKK1 is present; (E) percentage of electroporated cells that are MYF5-positive in controls: 25.7%; with DKK1: 26.6%. (F) Confocal stacks of somites after co-electroporation of HES1-DsRed-express-DR (NOTCH reporter, in red) or with 12Tf-d2EGFP (TOPflash reporter in green) and DKK1. (G) Bar charts showing the% of electroporated cells co-expressing the TOPflash and the NOTCH reporters when DKK1 is present (91.4%, in black) or absent (39.9%, in white). (H) Schematic representing the design of the double electroporation experiments, with a first electroporation targeting the neural tube (NT) and the migrating neural crest (in blue), followed by electroporation in the DML. (I\u2013K) Confocal stacks of somites showing the expression of 12Tf-DsRed-express-DR (TOPflash reporter, in red) and the electroporation marker H2B-BFP (in blue) in the DML. Dorsal neural tube was electroporated with (I) GFP, (J) dominant-negative WNT1 (in green), or (K) wild-type WNT1 (in green). (L) Bar charts showing 19% of DN-WNT1-positive electroporated cells express the TOPflash reporter (in black), 67.6% of WT-WNT1-positive electroporated cells express the TOPflash reporter (in gray), controls (in white): 35.5%. (M) Bar charts showing 15.04% of DN-WNT1-positive electroporated cells express MYF5 (in black), 15.07% for WT-WNT1-positive electroporated cells (in gray), controls (in white): 15.08%. (N,O) Confocal stacks of somites showing the TOPflash reporter 12Tf-DsRed-express-DR (in red), the electroporation marker GFP (in green) and DKK1, electroporated into the DML. The dorsal neural tube was electroporated with (N) BFP or (O) dominant-negative DLL1 and BFP. (P) Bar charts showing the% of electroporated cells expressing the TOPflash reporter, DN-DLL1 + DKK1: 6%, in black; controls with DKK1: 22.3%, in white. (Q) Bar charts showing the% of electroporated cells expressing MYF5, DN-DLL1 + DKK1: 6.8% in black; controls with DKK1: 16.6%, in white. Dotted lines indicate the borders of the neural tube and somites. Abbreviations: NT: neural tube; DML: Dorso-Medial Lip; EP: electroporation. In each panel are indicated the antigens that were detected by immunostaining with the exception of native BFP blue fluorescence. Scale bars: 50 \u03bcm.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14847/elife-14847-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) shows a E2.5 chick embryo at the end of the experiment. The box in (A) indicates the region that is analyzed in B and C. (B) Confocal stacks of a control embryo showing the expression of the TOPflash reporter 12Tf-d2EGFP (in green). In red, RFP immunostaining, identifying all electroporated cells. (C) Neural tube of an embryo in which DKK1 (in blue) was co-electroporated with the TOPflash reporter (in green) and the electroporation marker H2B-RFP (in red). Dotted lines indicate the borders of the neural tube and somites. In each panel are indicated the antigens that were detected by immunostaining. Scale bars: 50 \u03bcm.\n\nThese surprising results suggested that WNT ligands are dispensable for the NOTCH-dependent myogenic response in DML cells. To confirm this, we performed double electroporations (Figure 4H). First, we electroporated WNT1 or a dominant-negative form of WNT1 into the dorsal neural tube and the neural crest. WNT1 is predicted to activate WNT1 and WNT3a cognate receptors, while DN WNT1 is believed to act as a competitive inhibitor for both WNT1 and WNT3a (Hoppler et al., 1996). Second, we electroporated the TOPflash reporter and an electroporation control plasmid in somites. This allowed us to quantify the activity of the TOPflash reporter together with the myogenic response (determined by immunostaining for MYF5). We observed that WNT1 and DN WNT1 significantly increased or decreased, respectively, the activity of the TOPflash reporter, compared to controls (Figure 4I\u2013L), but importantly with no visible change to their myogenic response (Figure 4M).\n\nThese results led us to hypothesize that the overall TCF/\u03b2-catenin transcriptional activity observed in DML cells is the sum of two TCF/\u03b2-catenin transcriptional activities: the first is NOTCH-dependent, WNT ligand-independent and it is associated with myogenesis; the second is WNT ligand-dependent, but it is not associated with myogenesis. To show this, we inhibited both DLL1 in neural crest and the WNT ligands in the DML, while monitoring the activity of the TOPflash reporter and myogenesis in somites. Compared to controls (no inhibition of DLL1 in the neural crest), this led to a near complete absence of TOPflash reporter activity in DML cells (Figure 4O,P), which was now accompanied by a robust decrease in their myogenic response (Figure 4O,Q).\n\nTogether with the results presented in Figure 2, these data suggest that two distinct populations coexist in the DML: the first displays a strong TCF/\u03b2-catenin transcriptional activity triggered by DLL1 from migrating neural crest cells, which results in the initiation of MYF5 expression. The second shows a low TOPflash reporter activity, initiated by WNT ligand transported by neural crest cells but with no sign of myogenesis. These findings prompted a search for a mechanism that could explain how DLL1 can trigger the high TCF/\u03b2-catenin transcriptional activity that is required for the initiation of the myogenic program.\n\n### Membrane-derived \u03b2-catenin is required for the NOTCH-mediated activation of MYF5\n\nIn the DML, the initiation of myogenesis is accompanied by an EMT (Gros et al., 2009; Rios et al., 2011). Because it integrates two distinct functions i) as a transcriptional co-factor together with TCF/LEF and ii) as a structural adaptor protein linking cadherins to the actin cytoskeleton in cell-cell adhesion, \u03b2-catenin is a prime candidate to play a central role in these two processes. However, despite experimental evidence that the dissociation of adherens junction (AJ) can induce the release of \u03b2-catenin into the cytoplasm, a functional connection between the nuclear and membranal pools of \u03b2-catenin in vivo is still a matter of debate (Brembeck et al., 2006; Gavard and M\u00e8ge, 2012; Nelson and Nusse, 2004).\n\nTo test whether \u03b2-catenin located at the AJ and at the plasma membrane of DML cells is required for the activation of MYF5, we electroporated DML cells with a mutant Y489F \u03b2-catenin that cannot be mobilized from the junctional complex (Rhee et al., 2007). As control, wild-type (WT) \u03b2-catenin was utilized. We verified that the overall levels of exogenously provided WT and mutant \u03b2-catenin were similar to those of the endogenous \u03b2-catenin (Figure 5\u2014figure supplement 1). In control embryos, we observed a normal proportion of MYF5-positive DML cells (Figure 5A,C). In contrast, the electroporation of Y489F \u03b2-catenin resulted in a robust reduction of MYF5 expression (Figure 5B,C), suggesting that junctional \u03b2-catenin is required for the early activation of myogenesis.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/14847/elife-14847-fig5-v3.jpg)\n\n**Figure 5.:** (A,B) Confocal stacks of somites after electroporation of WT \u03b2-catenin (A) or Y489F \u03b2-catenin (B).\u00a0MYF5 expression is shown (in blue). (C) Bar charts showing the% of electroporated cells that were positive for MYF5 after electroporation of WT \u03b2-catenin (27.7%, in white) or Y489F \u03b2-catenin (6.4%, in black). (D) Schematic of the experimental design that was followed: (Myc-tagged) WT or a mutant Y489F \u03b2-catenin under a CAGGS ubiquitous promoter was electroporated in the DML together with the Tet-On Advanced transactivator (rtTA) and NICD inserted in the response vector. The \u03b2-catenin (WT or mutant) was expressed from the start of the experiment; NICD was induced 10\u2009hr later. (E,F) Confocal stacks of somites after electroporation of (E) NICD (in green) and WT \u03b2-catenin (in red) or (F) NICD (in green) and Y489F \u03b2-catenin (in red). MYF5 expression is shown (in blue). (G) Bar charts showing the% of MYF5-positive cells after electroporation of NICD with WT \u03b2-catenin (88%, in white) or Y489F \u03b2-catenin (8.1%, in black). In each panel are indicated the antigens that were detected by immunostaining. DML: dorso-medial lip. Scale bars: 50 \u03bcm\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14847/elife-14847-fig5-figsupp1-v3.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Confocal optical slices of somites, 6\u2009hr after electroporation of a DML with CAGGS-WT \u03b2-catenin and stained for either c-myc tag or endogenous \u03b2-catenin. Shown is a non-electroporated somite as reference. In each panel are indicated the antigens that were detected by immunostaining. Scale bars: 50 \u03bcm.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14847/elife-14847-fig5-figsupp2-v3.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Confocal optical slices of DML cells electroporated with (in red) WT \u03b2-catenin or Y489F \u03b2-catenin, 6\u2009hr after induction of NICD (in green). Arrows in first image show that nuclear NICD co-localizes with prominent \u03b2-catenin staining. Arrows in second image show that nuclear NICD does not co-localize with Y489F \u03b2-catenin. In each panel are indicated the antigens that were detected by immunostaining. Scale bars: 10 \u03bcm.\n\nWe then tested whether junctional \u03b2-catenin is required, downstream of NOTCH, to induce MYF5. We repeated the same experiment as above, this time in combination with NICD. Y489F or WT \u03b2-catenin w\u03b5\u03c1\u03b5 expressed for 10\u2009hr in the DML, after which (using a Tet-on inducible system, see Materials\u00a0and\u00a0methods) NICD expression was induced for 6\u2009hr (Figure 5D). In control embryos, the induction of NICD expression resulted in a robust increase in overall (nuclear and cytoplasmic) \u03b2-catenin protein levels in electroporated cells (as determined by immunostaining for the Myc tag present on the exogenous WT \u03b2-catenin as well as by staining for endogenous \u03b2-catenin [Figure 5E and Figure 5\u2014figure supplement 2]). In these embryos, the vast majority of NICD+/WT \u03b2-catenin+ cells expressed MYF5 as expected (Figure 5E,G). The myogenic response in embryos electroporated with Y489F \u03b2-catenin was strikingly different, and the presence of the mutant form of \u03b2-catenin not only prevented the activation of myogenesis by NICD, but also resulted in a dramatic reduction of MYF5 expression (Figure 5F,G) that was similar to the decrease observed when Y489F \u03b2-catenin was electroporated alone (Figure 5C). As reported (Rhee et al., 2007), Y489F \u03b2-catenin remained mainly distributed at the membrane and AJ of DML cells (Figure 5\u2014figure supplement 2), suggesting that it did not mobilize from the junctional complex.\n\nTogether with the observation that MYF5 expression is associated with high activity of the TOPflash reporter in DML cells (Figures 2 and 4), our data suggest that the pool of \u03b2-catenin at the AJ and along the plasma membrane of DML cells acts as a reservoir for the NOTCH-mediated, strong \u03b2-catenin-dependent response required for the activation of MYF5.\n\n### SNAI1 is a necessary and sufficient step for the NOTCH-dependent activation of MYF5\n\nMajor players in cell adhesion are the zinc finger transcriptional repressors Snail (or SNAI) family members. An essential function of SNAI is to repress epithelial gene expression and thereby promote epithelial-mesenchymal transitions (EMT) during vertebrate and invertebrate development and metastatic progression of cancers (Barrallo-Gimeno and Nieto, 2005). In early chick embryos, SNAI1 is expressed in the epithelial dermomyotome, including the DML. Its activation leads to the down-regulation of N-cadherin expression present at the adherens junction of epithelial cells located in the central dermomyotome and to their subsequent EMT (Delfini et al., 2009). Coherent with this, the over-expression of SNAI1 in the DML induced a significant increase in the translocation of DML cells into the myotome (Figure 6A,B), while the inhibition of its function by a SNAI1-specific siRNA (Delfini et al., 2009) inhibited their translocation (Figure 6C,D). Since we showed above that the release of \u03b2-catenin from the AJ is a key event in the activation of MYF5, we tested whether SNAI1 could regulate the activation of MYF5 expression in the DML. The electroporation of SNAI1 in the DML induced a strong activation of MYF5 expression, compared to controls (Figure 6F,G). Conversely, the electroporation of a dominant-negative form of SNAIL-1 or an siRNA directed against SNAI1 (Delfini et al., 2009) resulted in a significant decrease in MYF5 expression (Figure 6C,E,F,G). Finally, we co-electroporated NICD together with the dominant-negative form of SNAI1 and observed that the massive increase in MYF5 expression observed after NICD expression (Rios et al., 2011) was profoundly reduced by DN-SNAI1 (Figure 6F,G), thus demonstrating that SNAI1 activation is a necessary step, downstream of NOTCH, in the chain of events that leads to the activation of MYF5 in DML cells.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/14847/elife-14847-fig6-v3.jpg)\n\n**Figure 6.:** (A) Confocal stacks of somites, 17\u2009hr after electroporation of EGFP as control or with SNAI1.\u00a0(B) Bar charts showing the% of cells that have entered the primary myotome in the control (46.7%, in white) or after electroporation of SNAI1 (89%, in black). (C) Confocal stacks of somites, 17\u2009hr after electroporation of a luciferase-specific siRNA as control or a SNAI1-specific siRNA, immunostained for MYF5 (in red). (D\u2013E) Bar charts showing the% of electroporated cells that have entered the primary myotome (D) in the control (41.6%, in white) of with siRNA SNAI1 (9.3%, in black) and the% of electroporated cells that are MYF5-positive (E) in the control (26.2%, in white) or with siRNA SNAI1 (6.3%, in black). (F) Confocal stacks of somites, 6\u00a0hr after electroporation of a WT chicken SNAI1 (in green, left), a dominant negative (DN) form of SNAI1 (in green, right) alone or together with NICD. MYF5 expression is indicated (in red). (G) Bar charts showing the% of MYF5-positive cells after GFP electroporation (23.1%, in white), with chicken SNAI1 (73%, in black), DN SNAI1 alone (7.7%, in dark grey) or together with NICD (6%, in light grey). In each panel are indicated the antigens that were detected by immunostaining. Abbreviation: EP: electroporation. Scale bars: 50 \u03bcm.\n\n### NOTCH regulates SNAI1 degradation through inhibition of GSK-3\u03b2 activity\n\nWe then determined whether NOTCH regulates SNAI1. NICD regulates the transcription of many target genes (Fortini, 2009; Guruharsha et al., 2012), including SNAIL (Grego-Bessa et al., 2004). Therefore, we wondered whether this would be the case in the DML. However, the expression of NICD did not result in any significant increase in SNAI1 transcription (as judged by in situ hybridization, data not shown). These results led us to explore alternative mechanisms. SNAI1 mRNA is widely expressed; however, its activity is tightly regulated post-translationally through phosphorylation by GSK-3\u03b2, which leads to its \u03b2-Trcp-mediated ubiquitination and degradation. Due to this continuous degradation, SNAI1 protein has a short half-life, estimated to be about 25 min (Zhou et al., 2004). We first determined whether NOTCH signaling could modify the stability of SNAI1 in DML cells by electroporating SNAI1 fused to GFP (SNAI1-GFP), alone or in combination with NICD. SNAI1-GFP was used in low concentration, leading to no visible phenotype, e.g. EMT or activation of MYF5, data not shown). In control embryos, GFP was undetectable under UV examination, but faintly visible after immunostaining and confocal examination in electroporated cells (Figure 7A). In sharp contrast, the co-electroporation of NICD with SNAI1-GFP led to a massive increase in GFP staining in most electroporated cells (Figure 7A), suggesting that the activation of NOTCH signaling prevents the degradation of SNAI1 that normally occurs in DML cells.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/14847/elife-14847-fig7-v3.jpg)\n\n**Figure 7.:** (A) Confocal stacks of somites, 6\u00a0hr after electroporation of RFP (in red) and SNAI1-GFP (fusion of SNAI1 and GFP, in green) alone or together with NICD. (B) Confocal stacks of somites, 6\u00a0hr after electroporation of GSK-3\u03b2 biosensor (in green) and RFP (in red) alone (left), or together with NICD (right). (C) Confocal stacks of a somite 6\u2009hr after co-electroporation of the GSK-3\u03b2 biosensor (green) and the NOTCH reporter (red) and immunostained for MYF5 (blue). (D,E) Bar charts showing the% of GSK-3\u03b2 biosensor-positive cells that activate NOTCH signaling (86.9%, D) and that are MYF5-positive (88.2%, E). (F) Confocal stacks of a somite 6\u2009hr after co-electroporation of a SNAI fused to RFP (in red) and the GSK-3\u03b2 biosensor (in green). In blue the electroporated cells, identified by H2B-BFP. (G) Bar charts showing 89.4% of DML electroporated cells are GSK-3\u03b2 biosensor and SNAI1-positive. (H) Confocal stacks of somites and adjacent neural tube electroporated as described in Figure 4H, only in the DML with the GSK-3\u03b2 biosensor (in green) and H2B-BFP (in blue, left panels) or double-electroporated in the DML with the GSK-3\u03b2 biosensor (in green) and H2B BFP (in blue) and in the neural tube with DLL1 under the control of a neural crest-specific promoter (right panels). (I) Bar charts showing the% of GSK-3\u03b2 biosensor-positive cells in the control (26.4%, in white) or with DLL1 expressed in the neural crest (64.6%, in black). (J) Confocal stacks of somites 17\u2009hr after electroporation of GFP as control or DN-GSK-3\u03b2 and immunostained for MYF5 (red). (K) Bar charts showing the% of electroporated cells that have entered the primary myotome in the control (45.8%, in white) of with the DN-GSK-3\u03b2 (61.2%, in black). (L) Bar charts showing the% of electroporated cells that are MYF5-positive in the control (23.1%, in white) of with the DN-GSK-3\u03b2 (57.2%, in black). In each panel are indicated the antigens that were detected by immunostaining, with the exception of native BFP blue fluorescence. Abbreviation: EP: electroporation; NT: neural tube. Scale bars: 50 \u03bcm.\n\nSince GSK-3\u03b2 is the main regulator of SNAI1 stability (Barrallo-Gimeno and Nieto, 2005; Weng et al., 2003), we tested whether NOTCH regulates the activity of GSK-3\u03b2. Taelman and colleagues (Taelman et al., 2010) cleverly designed a GSK-3\u03b2 fluorescent 'biosensor' (see Materials\u00a0and\u00a0methods). When GSK-3\u03b2 is active, the biosensor fluorescence is reduced; in contrast, when GSK-3\u03b2 is inactive, its fluorescence is increased. We first determined whether the GSK-3\u03b2 biosensor is active in DML cells, and observed that fluorescence of the biosensor was only detected in a small proportion of electroporated DML cells (Figure 7B). This observation indicates that in the majority of DML cells under normal, unperturbed conditions, GSK-3\u03b2 is active (i.e. low or no biosensor detectable). However, in a minority of cells, GSK-3\u03b2 is inhibited (i.e. high level of biosensor). To find out the identity of the biosensor-positive cells in normal, unperturbed condition, we performed a series of co-electroporations followed by immunostaining. This showed that the cells in which the fluorescence of the biosensor is observed are those that i) activate the NOTCH reporter (Figure 7C,D), ii) in which SNAI1 is active (Figure 7F,G) and iii) are MYF5-positive (Figure 7C,E). This reinforces the hypothesis of a mechanistic link between the initiation of myogenesis, NOTCH activation, the stability of SNAIL and the inhibition of GSK-3\u03b2 activity in DML cells.\n\nWe then tested whether NOTCH regulates GSK-3\u03b2 by co-electroporating the biosensor together with NICD. This resulted in a massive increase in the fluorescence of the GSK-3\u03b2 biosensor (Figure 7B), suggesting that NICD inhibits GSK-3\u03b2 kinase activity. To eliminate the possibility that the increase in fluorescence of the biosensor was due to a non-physiological effect of NICD expression in DML cells, we induced the activation of NOTCH signaling in the DML by electroporating DLL1 in the neural crest cell population (as described in Figure 4H), with the GSK-3\u03b2 biosensor electroporated in adjacent somites. Again, we observed a strong increase in the fluorescence of the biosensor in somites when compared to controls (Figure 7H,I). The electroporation of a dominant-negative form of GSK-3\u03b2 (DN-GSK-3\u03b2 [Taelman et al., 2010]) mimicked the effects of NOTCH activation on SNAI1 and MYF5, resulting in a significant increase in the proportion of DML cells undergoing EMT (Figure 7J,K) as well as a robust increase in MYF5 expression in DML cells (Figure 7L).\n\nAltogether our data suggest that a direct consequence of the activation of NOTCH signaling by migrating DLL1-positive neural crest cells is an inhibition of GSK-3\u03b2 activity that leads to a stabilization of the SNAI1 protein, which triggers an EMT of DML cells.\n\n### NOTCH controls myogenesis independently of its transcriptional role in the nucleus\n\nThe decrease of GSK-3\u03b2 activity in DML cells could be a transcriptional response to the activation of NOTCH signaling. However, NOTCH can also act in a manner independent to RBPJ/CSL co-activation (Andersen et al., 2012; Ayaz and Osborne, 2014). To distinguish between the two possibilities, we electroporated a constitutively-active and a dominant-negative form of RBPJ (Kuroda et al., 1999) in DML cells. As expected, the DN-RBPJ and CA-RBPJ significantly inhibited or activated the NOTCH reporter, respectively, compared to controls (Figure 8A\u2013D). However, both constructs failed to modify the expression of MYF5 in this structure, compared to controls (Figure 8E). These results indicate that NICD regulates myogenesis in the DML independently of its transcriptional activity with RBPJ.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/14847/elife-14847-fig8-v3.jpg)\n\n**Figure 8.:** (A\u2013C) Confocal stacks of somites 6\u2009hr after co-electroporation of H2B-BFP (blue) and the NOTCH reporter (green) alone (A) or together with CA-RBPJ (B) or DN-RBPJ (C) and immunostained for MYF5 (red). (D) Bar charts showing the percentage of electroporated cells positive for the NOTCH reporter in the controls (15.8%, in white), with CA-RBPJ (77.6%, in black) or DN-RBPJ (8%, in grey). (E) Bar charts showing the percentage of electroporated cells positive for MYF5 in the controls (15.9%, in white), with CA-RBPJ (17.1%, in black) or DN-RBPJ (17.3%, in grey). In each panel are indicated the antigens that were detected by immunostaining, with the exception of native BFP blue fluorescence. Abbreviation: EP: electroporation. Scale bars: 50 \u03bcm.\n\nWe hypothesized that NICD could be mediating this activity in the cytosol. To address this, we constructed an artificial, membrane-tethered, HA-tagged NICD (CD4-NICD, see Materials\u00a0and\u00a0methods). Unlike wild-type NICD, which upon electroporation readily enters the nucleus and massively activates the NOTCH reporter (Rios et al., 2011), immunostaining for CD4-NICD was not observed in the nucleus and, coherent with this, it did not activate the NOTCH reporter (Figure 9A,B). Despite this, CD4-NICD expression resulted in a massive stabilization of the GSK-3\u03b2 biosensor that was indistinguishable from that obtained after electroporation of NICD (Figure 9C,D). This suggests that the regulation of GSK-3\u03b2 activity by CD4-NICD is not a transcriptional response to NOTCH signaling.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/14847/elife-14847-fig9-v3.jpg)\n\n**Figure 9.:** (A) Confocal stacks of somites, 6\u2009hr after co-electroporation of a HA-tagged, membrane-tethered NICD, CD4-NICD (in blue), a NOTCH reporter (in green) and H2B-RFP (in red).\u00a0(B) Bar charts showing 6.4% of NOTCH reporter-positive cells electroporated with CD4-NICD. (C) Confocal stacks, 6\u00a0hr after electroporation of CD4-NICD (in blue), GSK-3\u03b2 biosensor (in green) and H2B-RFP (in red). (D) Bar charts showing the percentage of GSK-3\u03b2 biosensor-positive cells after electroporation with NICD (91.6%, in white) or with CD4-NICD (88.6%, in black). (E) Confocal stacks, 6\u00a0hr after co-electroporation of CD4-NICD (in blue), SNA1-GFP (in green) and H2B-RFP (in red). (F) Bar charts showing the percentage of SNAI1-GFP-positive cells after electroporation with NICD (96.7%, in white) or with CD4-NICD (90%, in black). (G) Confocal stacks, 6\u00a0hr after co-electroporation of CD4-NICD (in green), H2B-RFP (in red) and immunostained for MYF5 (in blue). (H) Bar charts showing the percentage of MYF5-positive cells after electroporation with NICD (83.7%, in white) or with CD4-NICD (71.1%, in black). In each panel are indicated the antigens that were detected by immunostaining. Abbreviation: EP: electroporation. Scale bars: 50 \u03bcm\n\nThese results prompted us to test whether CD4-NICD expression would mimic the effects of NICD on SNAI1 and MYF5. Indeed, we observed that the electroporation of CD4-NICD led to i) a massive stabilization of SNAI1 protein comparable to NICD alone (Figure 9E,F) and ii) to a robust increase of MYF5 expression in DML cells, not significantly different from the NICD alone (Figure 9G,H). These data demonstrate that the activation of MYF5 in DML cells is the result of a cytoplasmic function of NICD that can be uncoupled from its role as a transcriptional co-activator in the nucleus.\n\n## Discussion\n\nThe findings presented here uncover a unique signaling module, triggered by a signal presented by migrating neural crest cells to selected progenitors in the somites. This signal is transduced into two distinct, but interrelated outcomes i) a cell fate decision in the receiving cells that leads to their entry into the myogenic program and ii) an EMT that allows their translocation into the myotome (Figure 10). While the key players in this module are well characterized, the demonstration that they cooperate to integrate cell fate determination and epithelial plasticity is novel.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/14847/elife-14847-fig10-v3.jpg)\n\n**Figure 10.:** The physical contact with DLL1-positive neural crest cells triggers the cleavage of NOTCH receptor and the release of NICD in DML cells. NICD represses the activity of GSK-3\u03b2, independent of its transcriptional activity. The accumulation of SNAI1 (blue arrows) allows its translocation in the nucleus (not shown) where it activates EMT. This releases \u03b2-catenin from the adherens junction and/or membrane, leading it to enter into the nucleus where, together with TCF/LEF co-activator, it activates MYF5 expression. Abbreviations: DLL1: Delta-like 1; NECD: NOTCH extracellular domain; NICD: NOTCH intracellular domain; EMT: Epithelial to Mesenchymal Transition.\n\nEMT is intimately associated with essential changes in cell specification in many developmental processes. For instance, the massive and rapid cell rearrangement that takes place during neural crest formation or gastrulation in vertebrates vertebrate are associated with the acquisition of novel features that are characteristic of neural crest cells or of the forming mesoderm and endoderm, respectively (Barrallo-Gimeno and Nieto, 2005; Joubin and Stern, 1999). Inhibiting EMT in these models profoundly interferes with the associated cell fate changes. A large spectrum of secreted factors belonging to many signaling pathways have been shown to activate EMT. However, these mechanisms are unlikely to trigger at the same time the cell fate changes associated with the cell adhesion changes (Barrallo-Gimeno and Nieto, 2005; Lamouille et al., 2014). A remarkable aspect of the signaling module described here is that it targets GSK-3\u03b2, the main regulator of SNAI1 stability. In addition, aiming at GSK-3\u03b2 may protect the \u03b2-catenin released during the EMT process from degradation, allowing it to accumulate sufficiently to act as a transcriptional co-factor, thereby resulting in a quasi-automatic coupling of EMT and \u03b2-catenin-dependent cell fate changes. Given the commonality of the key players described here in this paper, it is plausible that the same signaling circuitry could couple EMT to cell fate decisions in a wide variety of epithelia in normal and pathological conditions.\n\nAt both ends of this signaling module, NICD and \u03b2-catenin display unexpected functions. The 'canonical' role of NICD is to act as a co-transcriptional activator together with RBPJ. However, cytosolic interactions of NICD with various molecular partners that result in cellular responses independent of RBPJ, have been described in in vitro experimental settings (reviewed in [Andersen et al., 2014; Ayaz and Osborne, 2014]), but also in Drosophila (Le Gall et al., 2008). Our data uncover a novel in vivo function of NOTCH1 that takes place in the cytosol and leads to GSK-3\u03b2 inhibition. It was shown that the transcriptional activity of NICD is modified by its phosphorylation in vitro, probably by GSK-3\u03b2 (Espinosa et al., 2003; Foltz et al., 2002; Schweisguth, 2004). It is therefore not completely surprising that GSK-3\u03b2 and\u00a0NICD could (directly or not) interact in the DML. What is remarkable is the fact that this leads to a decrease in the overall activity of GSK-3\u03b2 that has important consequences for the cell. The mechanisms for this are unknown. A hypothesis is that the response we observed results from a titration of GSK-3\u03b2 kinase activity by NICD that is amplified by the stabilization of SNAI, itself a substrate for this kinase.\n\nWhile it is largely accepted that \u03b2-catenin participates in adhesion and signaling functions in a mutually exclusive manner, changes in the transcriptional activity of \u03b2-catenin have also been associated with the disassembly of the junctional complex at the plasma membrane in vitro (Brembeck et al., 2006; Gavard and M\u00e8ge, 2012; Nelson and Nusse, 2004). The results reported here provide direct evidence that this is also the case in vivo and demonstrate that the pool of \u03b2-catenin accumulated at the membrane and/or at the AJ has important signaling functions in addition to its established role in cell-cell adhesion.\n\nRemarkably, we observed distinct thresholds of TCF/\u03b2-catenin transcriptional activity associated with discrete cellular outputs. It is known that WNT(s) expressed by the dorsal neural tube and transported by neural crest cells regulate the expression of WNT11 in the DML through canonical WNT signaling. WNT11 itself plays an essential role in the oriented elongation of early muscle fibers through planar cell polarity signaling (Gros et al., 2009; Marcelle et al., 1997; Serralbo and Marcelle, 2014). It is therefore not surprising to observe a TOPflash activity in DML cells that results from WNT ligand binding. The data presented here suggest that the WNTs carried by neural crest cells induce a low TOPflash response that regulates myotome's organization, but has no influence on MYF5 expression. On the contrary, DLL1, via the signaling module uncovered here, provokes the release of junctional \u03b2-catenin that leads to a high TOPflash response sufficient to trigger myogenesis. The reason for such different cellular responses is only speculative at present. It could be due to varying quantities of \u03b2-catenin entering the nucleus, low when WNT is presented by neural crest cells, high when it is (presumably massively) mobilized from the cell membrane. WNT11 and MYF5 would then be morphogen-like responses of DML cells to varying quantities of \u03b2-catenin. An alternative hypothesis is that of a qualitative difference in the transcriptional activity of \u03b2-catenin when it results from bona fide WNT signaling or when it is mobilized from the cell membrane. Rhee and colleagues have shown that \u03b2-catenin phosphorylated at the AJ on Y489 is transported into the nucleus and is transcriptionally active in vitro (Rhee et al., 2007). It is thus possible that post-translational phosphorylation of \u03b2-catenin potentiates or modifies its transcriptional activity, allowing a sharp separation between the WNT-dependent and the NOTCH-dependent cellular responses. This hypothesis is attractive, as it would explain why we did not observe any change in MYF5 expression even when WNT1 was over-expressed in neural crest cells and would also explain why in the presence of the mutant Y489F \u03b2-catenin, endogenous \u03b2-catenin did not rescue MYF5 expression when NICD was over-expressed.\n\nFinally, our study also provides a model that reconciles apparently divergent observations on the respective role of NOTCH and WNT signaling in the initial phases of myogenesis. The necessary function of NOTCH in this process (Rios et al., 2011) is confirmed, but the present work demonstrates that the NOTCH signal is a permissive one, while the instructive role is executed by \u03b2-catenin and TCF/LEF. This is in accordance with the role assigned to WNT signaling in somite myogenesis years ago (Borello et al., 2006; Gros et al., 2009; Munsterberg et al., 1995; Stern et al., 1995; Tajbakhsh et al., 1998); however, the results presented here shed an entirely novel light on the origin of the signal and the pathway that mediates it. More generally, the increasing complexity of the cellular responses triggered by migrating neural crest cells in somites is puzzling as it raises the question of how two distinct tissues have become so perfectly coordinated during evolution to generate such sophisticated interactions.\n\n## Materials\u00a0and\u00a0methods\n\n### Electroporation\n\nThe somite electroporation technique that was used throughout this study has been described elsewhere (Gros et al., 2004; 2009; Rios et al., 2010; 2011). Briefly, we targeted the expression of various constructs to the dorso-medial portion of newly formed interlimb somites of Hamburger\u2013Hamilton (HH [Hamburger and Hamilton, 1992]) stage 15\u201316 chick embryos (24\u201328 somite). We have previously shown that this technique allows the specific expression of cDNA constructs in the DML, and that fluorescent reporters (e.g. GFP) are detected 3\u2009hr after electroporation in this structure (Gros et al., 2004). Since we have analyzed most embryos 6\u2009hr after electroporation, this implies that the molecules under study here have been acting during a narrow timeframe (about 3\u2009hr). To target the neural crest cell population, we electroporated the dorsal neural tube of HH stage 13\u201314 chick embryos at the level of the pre-somitic mesoderm (Rios et al., 2011).\n\n### Expression constructs\n\nThe following constructs have been previously published:\n\nThe WNT reporter 12Tf-d2EGFP contains 12 TCF/LEF1 binding sites (Korinek et al., 1997) upstream of a TK minimal promoter driving a destabilized GFP (d2EGFP, 2\u2009hr half-life, Clontech [Rios et al., 2010]).\n\nThe CAGGS-H2B\u2013RFP (provided by Dr. S. Tajbakhsh [Rios et al., 2011]) contains a fusion of Histone 2B with RFP, downstream of the CAGGS strong ubiquitous promoter (CMV/chick \u03b2-actin promoter/enhancer).\n\nThe CAGGS\u2013EGFP (Rios et al., 2011) contains the CAGGS promoter followed by the EGFP reporter gene.\n\nThe constitutively active form of LEF1, CA-LEF1 (provided by Dr. A. M\u00fcnsterberg) is described in Abu-Elmagd et al. (2010).\n\nThe CAGGS-DN-MAML1\u2013EGFP contains a truncated, dominant-negative form of the human Mastermind (DN-MAML1), fused with EGFP (Weng et al., 2003), downstream of the CAGGS promoter.\n\npCS2+ DKK1-flag (Addgene #16690) contains a human DKK1 fused to a flag tag downstream of a CMV promoter (Sem\u00ebnov et al., 2001).\n\nU3-DLL1 (Rios et al., 2011) was made by inserting the U3 evolutionarily conserved Sox10 enhancer sequences (Werner et al., 2007) in the TK-EGFP plasmid (Uchikawa et al., 2003).\n\nA Tet-on (Clontech, Mountain View, CA) inducible system was used to activate NICD expression (Rios et al., 2011). The doxycyclin inducible system is composed of two plasmids that are co-electroporated: first, the pCIRX-rtTA (provided by O. Pourqui\u00e9) contains a Tet-On Advanced transactivator (rtTA, Clontech) downstream of the CAGGS promoter. Second, the pBI-HA-NICD is the response plasmid (Clontech) in which the HA-tagged constitutively active form of the NOTCH1 receptor from chick, NICD (Daudet and Lewis, 2005) (provided by Dr. N. Daudet), was cloned.\n\nCAGGS-cSNAI1 contains the wild type chicken Snail1 gene downstream of the CAAGS promoter upstream of an IRES EGFP (Delfini et al., 2009).\n\nThe dominant negative form of SNAI1 consists of the chicken SNAI1 in which the repressor domain was replaced by the VP16 activator domain of the Herpes simplex virus (Delfini et al., 2009).\n\nSNAI1-GFP (Addgene #16225) contains a CMV promoter upstream of a human wild type Snail1 fused to EGFP (Zhou et al., 2004).\n\nCAGGS NICD contains the chicken NICD downstream of the CAGGS promoter (Rios et al., 2011).\n\nThe GSK3 biosensor (pCS2 GFP-GSK3-MAPK, Addgene #29689) contains a CMV promoter upstream of a GFP molecule followed by a polypeptide tail that contains 3 GSK-3\u03b2 phosphorylation sites, a priming site for MAPK/Erk and a site for the binding of E3 polyubiquitin ligases (Taelman et al., 2010).\n\nHES1\u2013d2EGFP (provided by Dr. R. Kageyama) contains the HES1 mouse promoter followed by a destabilized d2EGFP (Ohtsuka et al., 2006).\n\nThe constitutively active form of \u03b2-catenin was described in Gros et al. (2009).\n\nThe dominant negative form of Dll1 has been described in Rios et al. (2011).\n\nA constitutively active form of RBPJ (pCMX-N/VP16-RBPJ, obtained from Dr. T. Honjo) comprises the CMV promoter driving a VP16 activation domain fused to the mouse RBPJ gene (Kuroda et al., 1999).\n\nThe dominant-negative GSK-3\u03b2 (Addgene #29681) is a kinase dead variant of the Xenopus GSK-3\u03b2 gene fused to an EGFP protein (Taelman et al., 2010).\n\nThe SNAI1 siRNA (as well as the Luciferase control) were described and tested in Delfini et al. (2009). It leads to an efficient down-regulation of SNAI1 transcript level in chick tissues.\n\nThe NOTCH1 siRNA was described in Rios et al. (2011). It leads to an efficient down-regulation of NOTCH1 transcript level in chick tissues.\n\nThe following plasmids were constructed:\n\nHES1-DSRed-Express-DR was created by replacing the d2EGFP from HES1\u2013d2EGFP (provided by Dr. R. Kageyama [Ohtsuka et al., 2006]) with a fast-folding, unstable variant of DSRed (Clontech).\n\nThe wild-type human \u03b2-catenin was amplified from pFG8 (provided by Dr. N. Plachta), then cloned into pCX-Myc (pCAGGS with 6xMyc tag, obtained from Dr. X. Morin).\n\nHuman \u03b2-catenin containing the Y489F (Tyr to Phe [Rhee et al., 2007]) mutation was amplified from Addgene #24197, then cloned into pCX-Myc.\n\nThe dominant-negative version of the mouse Wnt1 (obtained from Randy Moon [Hoppler et al., 1996]) was inserted into the pCLGFPA (Scaal et al., 2004).\n\nThe wild-type version of WNT1 (obtained from Randy Moon) was inserted into pCAGGS IRES H2B-GFP (provided by Olivier Serralbo) upstream of the IRES element.\n\nThe membrane tagged NICD was constructed using Gibson assembly (NEB) with the signal peptide FGFR2 (from Danio rerio), the extracellular and transmembrane domain of human CD4 (both obtained from Dr. J Kaslin) followed by the HA tagged NICD previously described, cloned either into the bidirectional vector tetracycline responsive vector or into the pCX-Myc described above.\n\nThe H2B-BFP has been made by replacing the RFP from the CAGGS-H2B\u2013RFP described above by a TagBFP (Evrogen).\n\nThe SNAI1-RFP has been made by replacing the GFP from SNAI1-GFP (Addgene #16225) by RFP (Clontech).\n\nCAGGS-BFP has been made by cloning the TagBFP (Evrogen) into the pCAGGS vector.\n\n### Immunohistochemistry\n\nWhole-mount antibody staining were performed as described (Gros et al., 2009). The following antibodies were used: rabbit polyclonals directed against chick myogenic regulatory factor MYF5 (obtained from Dr. B. Paterson (Manceau et al., 2008); 1/200); and anti-RFP (Abcam #62341, 1/1000); chicken polyclonal antibody against EGFP (Abcam #13970, 1/1000). The neural-crest-specific monoclonal antibody HNK1 was provided by Dr. A. Eichmann. Mouse monoclonal antibodies against c-myc-tag (Abcam #32072, 1/200), HA-tag (CST, #2367S, 1/100) and \u03b2-catenin (BD biosciences, #610154) were also used.\n\n### Doxycycline-mediated induction of NOTCH signaling\n\nWe have tested the role of \u03b2-catenin from the membrane and AJ using a mutant (Y489F) form of \u03b2-catenin and a doxycycline inducible (Tet-On system) NICD. The association of \u03b2-catenin with proteins partners (\u03b1-catenin and cadherin) at the membrane is regulated by its phosphorylation at highly conserved tyrosine residues 142, 489 and 654 (Lilien and Balsamo, 2005; Palka-Hamblin et al., 2010; Rhee et al., 2007). In the neural tissue, the phosphorylation of \u03b2-catenin on tyrosine 489 reduces its affinity for N-cadherin and a mutant form of the \u03b2-catenin where this tyrosine is mutated to a phenylalanine (Y489F) cannot be mobilized from the junctional complex (Rhee et al., 2007). In DML cells, where \u03b2-catenin is also associated with N-cadherin (Gros et al., 2005), we hypothesized that cells in which endogenous wild-type \u03b2-catenin was replaced by Y489F mutant \u03b2-catenin would not be able to activate myogenesis. Due to the fast turnover of the junctional complex (Baum and Georgiou, 2011), and the rapid degradation of cytoplasmic \u03b2-catenin by the APC/Axin destruction complex (Clevers and Nusse, 2012), we speculated that the forced expression of the Y489F mutant \u03b2-catenin would rapidly replace the endogenous wild type (WT) \u03b2-catenin with its mutant counterpart, thereby allowing us to test the role of this variant in the induction of myogenesis. We tested whether the massive up-regulation of MYF5 expression resulting from the constitutive activation of NOTCH signaling (Rios et al., 2011) could be inhibited in presence of the mutant Y489F \u03b2-catenin.\n\nTen hours after electroporation of pCIRX-rtTA and pBI-HA-NICD, doxycycline (300 \u00b5l of a 0.75 \u00b5g/ml solution) was added onto the embryos. We have shown that the response plasmid is completely silent before doxycycline addition, while it is strongly and rapidly activated 6\u00a0hr after doxycycline addition (Rios et al., 2011).\n\n### Confocal analyses\n\nDorsal views of somites shown in all figures are projections of stacks of confocal images taken using a 4-channel Leica SP5 confocal microscope (Leica). Confocal stacks of images were visualized and analyzed with the Imaris software suite (Bitplane). Cell counting was performed using the cell counter plugin (Kurt De Vos, University of Sheffield) within the ImageJ software (Schneider et al., 2012).\n\n### Quantifications and statistical analyses\n\nElectroporation results in the transfection of a portion of the targeted cell population, which is variable from embryo to embryo. To precisely evaluate the phenotypes obtained after electroporation of cell-autonomously acting cDNA constructs, the number of positive cells was compared to the total number of electroporated cells, recognized by an internal fluorescent reporter construct. On average, more than 700 cells were counted per point and the corresponding quantifications are shown in all figures.\n\nTo determine the fluorescence intensity of electroporated cells (Figure 2D,E), the surface of electroporated cells were rendered manually with Imaris software. The mean intensity for each cell and each channel in three-dimensions was collected for statistical analyses.\n\nStatistical analyses were performed using the GraphPad Prism software. Mann\u2013Whitney non-parametric two-tail testing was applied to populations to determine the P values indicated in the figures. In each graph, columns correspond to the mean and error bars correspond to the standard deviation. ***p value < 0.001, extremely significant; **p value 0.001 to 0.01, very significant.\n",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "a6175741-de80-4046-a2fe-d60c3a08892b",
+      "submission_id": "0bdd9028-62ca-4843-924a-f396ebcb622a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marianne E Bronner, California Institute of Technology , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.14847.016](https://doi.org/10.7554/eLife.14847.016)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Cytoplasmic NOTCH and membranal \u03b2-catenin link cell fate choice to EMT during myogenesis\" for consideration by eLife. Your article has been reviewed by three peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Fiona Watt as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor, Marianne Bronner, has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis manuscript addresses an interesting developmental biology problem \u2013 how cell behavior and fate are coordinated during morphogenesis \u2013 using myogenesis of the developing chick somite as a model system. The authors first resolve a previous conundrum in the field to show how Notch and WNT signaling pathways are integrated during myogenesis in the development somite. Interestingly, their results show that Notch triggers release of \u03b2-catenin from adherens junctions to the nucleus to activate MYF5, in a WNT ligand independent manner. This in itself is an important result. Although exchange between membrane and nuclear \u03b2-catenin pools has been previously postulated, this study directly demonstrates this occurrence in vivo. Second, using a GSK-3\u03b2 biosensor, they find that Notch ICD inactivates GSK-3\u03b2, which in turn stabilizes SNAI1, which promotes EMT and also leads to activation of MYF5 expression. Moreover, this activity of NICD is important in the cytosol and independent of transcription.\n\nThese results are very interesting and highly appropriate for eLife. However, the presentation of the manuscript, including the title, is confusing and will require rewriting and reorganization in order to present the results and conclusions in a more direct and easier to interpret manner. The following changes should be made.\n\nEssential revisions:\n\n1) The manuscript clearly shows that both Notch and WNT pathways are required and that the WNT pathway is downstream of Notch. However, there is no need to invoke WNT itself since only \u03b2-catenin is required to transcriptionally activate myogenic factors and indeed they conclude this is ligand independent.\n\n2) It is clear that SNAI1 is downstream of Notch and that GSK-3 inhibition potentiates SNAI1 function as an EMT inducer. Once SNAI1 is activated and stabilized, DML cells undergo an EMT that is presumably the consequence of cadherin repression and dismantling of adherens junctions. This in turn leads to the release of \u03b2-catenin to the cytoplasm, which translocates to the nucleus to activate MYF5. This connection is implied but not stated. They could test this using the Y489F mutant in this experiment to see if NICD still leads to elevated SNAI1-GFP but no activation of MYF5 in the presence of the mutant. Although this experiment is non-essential given the huge amount of data already present in the manuscript, it might tie the stories together a bit better.\n\n3) The membrane tethered Y489F mutant is expressed in cells that already have endogenous \u03b2-catenin. The authors need to explain better why this construct prevents endogenous \u03b2-catenin from translocating to the nucleus.\n\n4) It is clear that Notch signaling does not seem to use its canonical RBPJ-mediated transcriptional pathway. The question that remains unsolved is what is the mechanism by which Notch represses GSK-3 activity, but following the principles of eLife this is may be a question for an independent study.\n\n5) In the Discussion, the authors should address how their proposed model reconciles with various reports showing that WNT receptors or membrane bound WNTs (Farin et al., Nature, 2016) can promote myogenesis.\n\nIn summary, the relevant players here are not Notch and WNT as stated in the title but rather Notch, SNAI1 and \u03b2-catenin. Similarly, alluding to \"membrane\" \u03b2-catenin in the title and in the text is misleading, as it is release from adhesion complexes in the membrane that allows \u03b2-catenin to fulfill its role in this process. As such, it is the SNAI1-mediated EMT that releases \u03b2-catenin from the membrane. In other words, it is a process mediated by EMT and \u03b2-catenin but independent of WNT ligand and Notch-mediated transcription. It is a very good example of how EMT can influence WNT signalling in a WNT-independent manner, as already suggested by Stemmer et al., Oncogene 2008 and discussed in EMT reviews. As already mentioned, all this is compatible with the model in Figure 10, but the title, the Abstract and the text should be written so that the model is readily followed and easy to understand. In general, the manuscript would benefit from text-editing to make it more concise and to the point. The way it is presently written may make it difficult for the non-expert reader.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for submitting your article \"Cytoplasmic NOTCH and membrane-derived \u03b2-catenin link cell fate choice to epithelial-mesenchymal transition during myogenesis.\" for consideration by eLife. Your article has been reviewed by two peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Fiona Watt as the Senior Editor.\n\nIn the present version, the text is difficult to follow and to understand. It is essential that you spell out 'Epithelial-mesenchymal transition' in the title.\n\nThe clarification about how the Y489F \u03b2-catenin works in the presence of the endogenous wild type protein should be added to the manuscript rather than just being in the response letter.\n\nIt is mandatory to re-write the manuscript to make this study readable for the non-expert.\n",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "09721048-f6e7-4aad-87a2-05cfe9909282",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C1",
+      "claim": "Skeletal muscle formation in chick embryos is initiated by migrating Delta1-expressing neural crest cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In chick embryos, skeletal muscle formation is initiated by migrating Delta1-expressing neural crest cells that trigger NOTCH signaling and myogenesis in selected epithelial somite progenitor cells, which rapidly translocate into the nascent muscle to differentiate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a key finding of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "91bbfc54-2403-429e-9054-949289ce0c0d",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C2",
+      "claim": "Migrating Delta1-expressing neural crest cells trigger NOTCH signaling in selected epithelial somite progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In chick embryos, skeletal muscle formation is initiated by migrating Delta1-expressing neural crest cells that trigger NOTCH signaling and myogenesis in selected epithelial somite progenitor cells, which rapidly translocate into the nascent muscle to differentiate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "27c0c381-3f73-4c63-8820-1e296904ea16",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C3",
+      "claim": "NOTCH signaling triggers myogenesis in selected epithelial somite progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In chick embryos, skeletal muscle formation is initiated by migrating Delta1-expressing neural crest cells that trigger NOTCH signaling and myogenesis in selected epithelial somite progenitor cells, which rapidly translocate into the nascent muscle to differentiate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental evidence in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "555df89f-517a-442e-b38b-e7412d3dbb6c",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C4",
+      "claim": "Selected epithelial somite progenitor cells rapidly translocate into the nascent muscle to differentiate.",
+      "claim_type": "EXPLICIT",
+      "source": "In chick embryos, skeletal muscle formation is initiated by migrating Delta1-expressing neural crest cells that trigger NOTCH signaling and myogenesis in selected epithelial somite progenitor cells, which rapidly translocate into the nascent muscle to differentiate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as part of the myogenesis process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "e084ecd6-59f6-45af-a091-4285358cc3c9",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C5",
+      "claim": "NOTCH profoundly inhibits GSK-3\u03b2 activity independent of its transcriptional function.",
+      "claim_type": "EXPLICIT",
+      "source": "Independent of its transcriptional function, NOTCH profoundly inhibits GSK-3\u03b2 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated experimentally in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "a2f8e670-3e59-4a66-b068-91aac071d852",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C6",
+      "claim": "SNAI1 is stabilized as a result of GSK-3\u03b2 inhibition by NOTCH.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result SNAI1 is stabilized, triggering an epithelial to mesenchymal transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experimental data showing SNAI1 stabilization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "22546e0f-7c16-494f-9801-8bd6f25f4638",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C7",
+      "claim": "Stabilization of SNAI1 triggers an epithelial to mesenchymal transition.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result SNAI1 is stabilized, triggering an epithelial to mesenchymal transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated through EMT experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "e3a8ef18-6088-40a9-8f25-5dbb83beafd6",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C8",
+      "claim": "EMT allows the recruitment of \u03b2-catenin from the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows the recruitment of \u03b2-catenin from the membrane, which acts as a transcriptional co-factor to activate myogenesis, independently of WNT ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by experiments with Y489F \u03b2-catenin mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "5018210a-1621-43da-8d95-5a754206e272",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C9",
+      "claim": "\u03b2-catenin recruited from the membrane acts as a transcriptional co-factor to activate myogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows the recruitment of \u03b2-catenin from the membrane, which acts as a transcriptional co-factor to activate myogenesis, independently of WNT ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated through reporter assays and MYF5 expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "022c5635-805e-4fbd-b210-2ca5e08d8f12",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C10",
+      "claim": "\u03b2-catenin activates myogenesis independently of WNT ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "This allows the recruitment of \u03b2-catenin from the membrane, which acts as a transcriptional co-factor to activate myogenesis, independently of WNT ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated through DKK1 inhibition experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "c70f97dd-36ec-4f08-b73a-50f32204d63a",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C11",
+      "claim": "The medial border of the dermomyotome (DML) generates the first skeletal muscle cells that assemble into a primary myotome over many days of development.",
+      "claim_type": "EXPLICIT",
+      "source": "Over many days of development, the medial border of the dermomyotome (DML) generates the first skeletal muscle cells that assemble into a primary myotome (Figure 1A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the introduction and illustrated in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "93fa17ff-03a3-40a2-9ca4-225ab32e8a19",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C12",
+      "claim": "Epithelial cells in the DML either self-renew or undergo myogenic differentiation accompanied by an EMT.",
+      "claim_type": "EXPLICIT",
+      "source": "This arises from a crucial cell fate decision: epithelial cells in the DML either self-renew or undergo myogenic differentiation and this is accompanied by an EMT that allows their translocation into the primary myotome (Denetclaw et al., 1997; Gros et al., 2009; Ordahl et al., 2001; Rios et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "3db28797-c8c8-42c5-ba40-e2c02bfdc27f",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C13",
+      "claim": "EMT allows DML cells to translocate into the primary myotome.",
+      "claim_type": "EXPLICIT",
+      "source": "This arises from a crucial cell fate decision: epithelial cells in the DML either self-renew or undergo myogenic differentiation and this is accompanied by an EMT that allows their translocation into the primary myotome (Denetclaw et al., 1997; Gros et al., 2009; Ordahl et al., 2001; Rios et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "93ba8c25-3af1-4ed6-9d3f-3297e091b948",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C14",
+      "claim": "Signaling cues from tissues surrounding the somites act as inducers of muscle formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Classical experiments demonstrated that signaling cues from tissues surrounding the somites act as inducers of muscle formation (Ordahl and Le Douarin, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "789c3d36-79e3-4b32-8816-cacc46c88ff6",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C15",
+      "claim": "WNT1 and WNT3a are expressed in the dorsal neural tube.",
+      "claim_type": "EXPLICIT",
+      "source": "It was later shown that WNT1 and WNT3a are expressed in the dorsal neural tube and that, in vitro, both ligands enhance myogenesis in somites (Munsterberg et al., 1995; Stern et al., 1995; Tajbakhsh et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "094aa463-4189-43ac-8400-1e4d38d4ba1e",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C16",
+      "claim": "WNT1 and WNT3a enhance myogenesis in somites in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "It was later shown that WNT1 and WNT3a are expressed in the dorsal neural tube and that, in vitro, both ligands enhance myogenesis in somites (Munsterberg et al., 1995; Stern et al., 1995; Tajbakhsh et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "ae244327-b4f1-4379-a01f-e8f7f237f405",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C17",
+      "claim": "MYF5 promoter contains TCF binding sites required for its in vivo expression in the DML.",
+      "claim_type": "EXPLICIT",
+      "source": "Since it was demonstrated that MYF5 promoter contains TCF binding sites required for its in vivo expression in the DML (Borello et al., 2006) and that dominant negative and constitutively active forms of TCF and \u03b2-catenin modulate MYF5 expression in somites (Abu-Elmagd et al., 2010; Gros et al., 2009), this has led to the largely accepted theory that myogenesis in somites is under the control of WNTs from the dorsal neural tube acting through a WNT/\u03b2-catenin-dependent pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "51963771-bbe4-4f4a-ab7d-1752266f26be",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C18",
+      "claim": "Dominant negative and constitutively active forms of TCF and \u03b2-catenin modulate MYF5 expression in somites.",
+      "claim_type": "EXPLICIT",
+      "source": "Since it was demonstrated that MYF5 promoter contains TCF binding sites required for its in vivo expression in the DML (Borello et al., 2006) and that dominant negative and constitutively active forms of TCF and \u03b2-catenin modulate MYF5 expression in somites (Abu-Elmagd et al., 2010; Gros et al., 2009), this has led to the largely accepted theory that myogenesis in somites is under the control of WNTs from the dorsal neural tube acting through a WNT/\u03b2-catenin-dependent pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "88ae10de-2980-4971-a2c1-e7f438b6736a",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C19",
+      "claim": "Only a small proportion of DML cells initiate myogenesis at any given time despite all cells being equally exposed to WNTs.",
+      "claim_type": "EXPLICIT",
+      "source": "This raises a paradox: although presumably all cells in the DML are equally exposed to WNTs from axial structures and are fully competent to initiate myogenesis, only a small proportion of DML cells do so at any given time (Rios et al., 2011), suggesting that other mechanisms affect the cell fate decision in selected DML cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "4796efba-2f5d-461c-a68b-8c06e48f0165",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C20",
+      "claim": "The activation of MYF5 and MYOD in the DML is dependent upon the transient activation of NOTCH signaling triggered by Delta1-positive neural crest cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently introduced NOTCH signaling as a novel player in early myogenesis, by demonstrating that the activation of MYF5 and MYOD in the DML is dependent upon the transient activation of NOTCH signaling, triggered by Delta1-positive neural crest cells migrating from the dorsal neural tube (Rios et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "8b5c4665-23ce-4056-a4f5-9c6a51f0ba45",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C21",
+      "claim": "The mosaic expression of Delta1 in the migrating neural crest cell population ensures that NOTCH signaling is regularly triggered in selected DML cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the mosaic expression of Delta1 in the migrating neural crest cell population ensures that NOTCH signaling is regularly triggered in selected DML cells, thus explaining the cell fate choice necessary to generate myotomal cells over an extended period of time, all while self-renewing the progenitor population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction as an explanation for the cell fate choice mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "0cb169ec-dccc-4992-8035-0204511ba85d",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C22",
+      "claim": "38% of cells activating the NOTCH reporter are within the TOPflash reporter-positive population.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, within the DML, almost half of the epithelial cells that activated the TOPflash reporter were also positive for the NOTCH reporter (Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "2a72ebd0-344a-4592-a5ad-fcc79d26b503",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C23",
+      "claim": "Nearly all DML cells that were positive for both NOTCH and TOPflash reporters were MYF5-positive.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, nearly all DML cells that were positive for both reporters were MYF5-positive (Figure 2C), indicating a strong correlation between the activation of NOTCH and WNT reporters and the initiation of the myogenic program.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "db25cd92-0b42-45c1-a9de-543b086b755e",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C24",
+      "claim": "A large majority of NOTCH reporter-positive cells displayed a high TOPflash fluorescence.",
+      "claim_type": "EXPLICIT",
+      "source": "During this analysis, we made the surprising observation that a large majority of NOTCH reporter-positive cells displayed a high TOPflash fluorescence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on microscopy observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "81eac442-d5a6-4442-8702-543178030554",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C25",
+      "claim": "Most cells that expressed low levels of TOPflash fluorescence were NOTCH-reporter negative.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, most cells that expressed low levels of TOPflash fluorescence were NOTCH-reporter negative (Figure 2A,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "7b471e2a-3c91-4a33-be12-4a3cedc988fb",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C26",
+      "claim": "There is no correlation between the intensity of the TOPflash reporter and that of BFP control.",
+      "claim_type": "EXPLICIT",
+      "source": "We found no correlation between the intensity of the TOPflash reporter and that of BFP (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "97523db6-d688-475e-9994-a2f68b4a8d1a",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C27",
+      "claim": "The low and high levels of TOPflash fluorescence observed in DML cells are due to genuine differences in TCF/\u03b2-catenin transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the low and high levels of TOPflash fluorescence observed in DML cells are due to genuine differences in TCF/\u03b2-catenin transcriptional activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as an inference from the lack of correlation with BFP.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "0ad0cc9b-94bd-4b3f-83ee-7adae8af16a5",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C28",
+      "claim": "The vast majority of NOTCH reporter-positive (and MYF5-positive) cells display a high TCF/\u03b2-catenin transcriptional activity.",
+      "claim_type": "EXPLICIT",
+      "source": "It confirms that the vast majority of NOTCH reporter-positive (and MYF5-positive) cells display a high TCF/\u03b2-catenin transcriptional activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section based on the analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "c16fa829-7772-45e9-a1d6-47d1da9318c9",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C29",
+      "claim": "Constitutively active \u03b2-catenin did not lead to any change in activity of the NOTCH reporter compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this, we first co-electroporated the DML with a constitutively active form of \u03b2-catenin (Rios et al., 2010) together with the NOTCH reporter. This did not lead to any change in activity of the NOTCH reporter, compared to controls (Figure 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "829eb4e0-568f-4b87-99e8-63822fa1cb69",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C30",
+      "claim": "Co-expression of constitutively active NOTCH1 (NICD) led to rapid and robust increase in the activity of the TOPflash reporter compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the co-expression of a constitutively active form of NOTCH1 (NICD [Daudet and Lewis, 2005]) led to rapid and robust increase in the activity of the TOPflash reporter, compared to controls (Figure 3D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 3D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "528065d7-e896-410c-93c8-e1f0ad3dd374",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C31",
+      "claim": "CA-LEF1 co-electroporated with DN-MAML1 rescued the inhibition of MYF5 expression by DN-MAML1.",
+      "claim_type": "EXPLICIT",
+      "source": "A constitutively active form of the most downstream effector of the WNT pathway, LEF1/TCF1 (named CA-LEF1 [Abu-Elmagd et al., 2010]), co-electroporated with DN-MAML1 not only rescued the inhibition of MYF5 expression by DN-MAML1, but also led to a strong activation of its expression that was indistinguishable from that observed after electroporation of CA-LEF1 alone (Figure 3F,G) or NICD (Rios et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 3F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "b6761a7c-95eb-4464-8a9b-82253bea72bd",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C32",
+      "claim": "NOTCH regulates TCF/\u03b2-catenin transcriptional activity in the DML.",
+      "claim_type": "EXPLICIT",
+      "source": "These data support the premise that NOTCH regulates TCF/\u03b2-catenin transcriptional activity in the DML.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "bbfcb9a1-5e5e-43a0-bfb1-af3929335608",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C33",
+      "claim": "DKK1 efficiently inhibits most, if not all TOPflash activity in the neural tube by antagonizing WNTs in the extracellular space.",
+      "claim_type": "EXPLICIT",
+      "source": "Without DKK1, we observed a robust TOPflash reporter activity in the neural tube (Figure 4\u2014figure supplement 1A,B). The co-electroporation of DKK1 abrogated nearly all reporter activity in this tissue (Figure 4\u2014figure supplement 1C). These results suggest that DKK1 efficiently inhibits most, if not all TOPflash (i.e. TCF/\u03b2-catenin transcriptional) activity in the posterior neural tube by antagonizing WNTs in the extracellular space.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "14f217ab-37bb-4741-9ec8-74fd9fc3d8c6",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C34",
+      "claim": "In the presence of DKK1, the TOPflash reporter was still active in somites.",
+      "claim_type": "EXPLICIT",
+      "source": "We then performed a similar experiment in somites. A striking difference from the neural tube control experiment was that, even in the presence of DKK1, the TOPflash reporter was still active (Figure 4A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "280c263d-7b96-41a3-920f-0fd1d6aa34ab",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C35",
+      "claim": "DKK1 decreased the proportion of TOPflash reporter-positive cells by about half compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "While this response showed a decrease of about half in the proportion of TOPflash reporter-positive cells compared to controls (Figure 4C), remarkably nearly all cells that remained TOPflash-positive also expressed MYF5 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "39b67b04-3402-48ee-a32e-b723222ba492",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C36",
+      "claim": "Nearly all cells that remained TOPflash-positive in the presence of DKK1 also expressed MYF5.",
+      "claim_type": "EXPLICIT",
+      "source": "While this response showed a decrease of about half in the proportion of TOPflash reporter-positive cells compared to controls (Figure 4C), remarkably nearly all cells that remained TOPflash-positive also expressed MYF5 (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "fd65b0de-9533-481c-8449-bbb65cd643a1",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C37",
+      "claim": "The overall proportion of MYF5-positive cells was unaffected by DKK1.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, the overall proportion of MYF5-positive cells was unaffected (Figure 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "736d7dc4-f9d0-4b3a-8c01-a3b639f94b9b",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C38",
+      "claim": "Nearly all cells that remained TOPflash-positive in the presence of DKK1 expressed the NOTCH reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these cells that remained TOPflash-positive in the presence of DKK1, nearly all expressed the NOTCH reporter (Figure 4F,G), a result coherent with our observation that MYF5 is tightly associated with the activation of this reporter (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 4F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "822b6da1-ffa5-4262-9c4c-c9cd9966a16b",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C39",
+      "claim": "WNT1 and DN WNT1 significantly increased or decreased, respectively, the activity of the TOPflash reporter compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that WNT1 and DN WNT1 significantly increased or decreased, respectively, the activity of the TOPflash reporter, compared to controls (Figure 4I\u2013L), but importantly with no visible change to their myogenic response (Figure 4M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 4I-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "7aa2b9b3-00ce-4553-8105-ad00bcf0f936",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C40",
+      "claim": "WNT1 and DN WNT1 had no visible change to the myogenic response.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that WNT1 and DN WNT1 significantly increased or decreased, respectively, the activity of the TOPflash reporter, compared to controls (Figure 4I\u2013L), but importantly with no visible change to their myogenic response (Figure 4M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 4M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "e1cf020b-5786-44b5-8e11-e5a78e02e62c",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C41",
+      "claim": "Inhibiting both DLL1 in neural crest and WNT ligands in the DML led to a near complete absence of TOPflash reporter activity in DML cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To show this, we inhibited both DLL1 in neural crest and the WNT ligands in the DML, while monitoring the activity of the TOPflash reporter and myogenesis in somites. Compared to controls (no inhibition of DLL1 in the neural crest), this led to a near complete absence of TOPflash reporter activity in DML cells (Figure 4O,P), which was now accompanied by a robust decrease in their myogenic response (Figure 4O,Q).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 4O,P.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "64f8cad0-b96e-46ff-aaa8-050fc119a408",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C42",
+      "claim": "Inhibiting both DLL1 in neural crest and WNT ligands in the DML was accompanied by a robust decrease in myogenic response.",
+      "claim_type": "EXPLICIT",
+      "source": "To show this, we inhibited both DLL1 in neural crest and the WNT ligands in the DML, while monitoring the activity of the TOPflash reporter and myogenesis in somites. Compared to controls (no inhibition of DLL1 in the neural crest), this led to a near complete absence of TOPflash reporter activity in DML cells (Figure 4O,P), which was now accompanied by a robust decrease in their myogenic response (Figure 4O,Q).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 4O,Q.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "c30167c3-cfb4-4191-9d56-254b2da1188b",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C43",
+      "claim": "Two distinct populations coexist in the DML: one displays strong TCF/\u03b2-catenin transcriptional activity triggered by DLL1 resulting in MYF5 expression, and another shows low TOPflash reporter activity initiated by WNT ligand with no sign of myogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the results presented in Figure 2, these data suggest that two distinct populations coexist in the DML: the first displays a strong TCF/\u03b2-catenin transcriptional activity triggered by DLL1 from migrating neural crest cells, which results in the initiation of MYF5 expression. The second shows a low TOPflash reporter activity, initiated by WNT ligand transported by neural crest cells but with no sign of myogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "8bc16a34-edef-4848-b69d-36d7c1c64bdf",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C44",
+      "claim": "The initiation of myogenesis in the DML is accompanied by an EMT.",
+      "claim_type": "EXPLICIT",
+      "source": "In the DML, the initiation of myogenesis is accompanied by an EMT (Gros et al., 2009; Rios et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "34a5d94b-83bb-49eb-a1c4-ecca3c0299a0",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C45",
+      "claim": "The electroporation of Y489F \u03b2-catenin resulted in a robust reduction of MYF5 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "In control embryos, we observed a normal proportion of MYF5-positive DML cells (Figure 5A,C). In contrast, the electroporation of Y489F \u03b2-catenin resulted in a robust reduction of MYF5 expression (Figure 5B,C), suggesting that junctional \u03b2-catenin is required for the early activation of myogenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 5B,C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "feea70e8-bfcb-4530-8b13-251386d66877",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C46",
+      "claim": "Junctional \u03b2-catenin is required for the early activation of myogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In control embryos, we observed a normal proportion of MYF5-positive DML cells (Figure 5A,C). In contrast, the electroporation of Y489F \u03b2-catenin resulted in a robust reduction of MYF5 expression (Figure 5B,C), suggesting that junctional \u03b2-catenin is required for the early activation of myogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the Y489F \u03b2-catenin experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "1ba55192-6846-477b-9f1e-a03e8612d010",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C47",
+      "claim": "The induction of NICD expression resulted in a robust increase in overall \u03b2-catenin protein levels in electroporated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In control embryos, the induction of NICD expression resulted in a robust increase in overall (nuclear and cytoplasmic) \u03b2-catenin protein levels in electroporated cells (as determined by immunostaining for the Myc tag present on the exogenous WT \u03b2-catenin as well as by staining for endogenous \u03b2-catenin [Figure 5E and Figure 5\u2014figure supplement 2]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 5E and Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "be4de067-4063-456d-9951-0d434fcd9889",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C48",
+      "claim": "The vast majority of NICD+/WT \u03b2-catenin+ cells expressed MYF5.",
+      "claim_type": "EXPLICIT",
+      "source": "In these embryos, the vast majority of NICD+/WT \u03b2-catenin+ cells expressed MYF5 as expected (Figure 5E,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 5E,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "7e5b901e-50be-45be-ae23-8efe6d838cbe",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C49",
+      "claim": "The presence of Y489F \u03b2-catenin prevented the activation of myogenesis by NICD.",
+      "claim_type": "EXPLICIT",
+      "source": "The myogenic response in embryos electroporated with Y489F \u03b2-catenin was strikingly different, and the presence of the mutant form of \u03b2-catenin not only prevented the activation of myogenesis by NICD, but also resulted in a dramatic reduction of MYF5 expression (Figure 5F,G) that was similar to the decrease observed when Y489F \u03b2-catenin was electroporated alone (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 5F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "0619f432-c6e9-4aff-aa8e-5058a2d1a3c7",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C50",
+      "claim": "Y489F \u03b2-catenin remained mainly distributed at the membrane and AJ of DML cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As reported (Rhee et al., 2007), Y489F \u03b2-catenin remained mainly distributed at the membrane and AJ of DML cells (Figure 5\u2014figure supplement 2), suggesting that it did not mobilize from the junctional complex.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 5\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "2f52ab34-5224-42b4-a440-4dbc7737bd68",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C51",
+      "claim": "The pool of \u03b2-catenin at the AJ and along the plasma membrane of DML cells acts as a reservoir for the NOTCH-mediated, strong \u03b2-catenin-dependent response required for the activation of MYF5.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the observation that MYF5 expression is associated with high activity of the TOPflash reporter in DML cells (Figures 2 and 4), our data suggest that the pool of \u03b2-catenin at the AJ and along the plasma membrane of DML cells acts as a reservoir for the NOTCH-mediated, strong \u03b2-catenin-dependent response required for the activation of MYF5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "138a4edd-f35c-4d71-8d69-2940fe3f4d72",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C52",
+      "claim": "SNAI1 is expressed in the epithelial dermomyotome, including the DML.",
+      "claim_type": "EXPLICIT",
+      "source": "In early chick embryos, SNAI1 is expressed in the epithelial dermomyotome, including the DML.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "4c3d04da-15ce-4d70-bcf0-96de1cc171ce",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C53",
+      "claim": "SNAI1 activation leads to the down-regulation of N-cadherin expression in epithelial cells located in the central dermomyotome and to their subsequent EMT.",
+      "claim_type": "EXPLICIT",
+      "source": "Its activation leads to the down-regulation of N-cadherin expression present at the adherens junction of epithelial cells located in the central dermomyotome and to their subsequent EMT (Delfini et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "6f76083a-e546-4b26-8280-1210517ed2b7",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C54",
+      "claim": "The over-expression of SNAI1 in the DML induced a significant increase in the translocation of DML cells into the myotome.",
+      "claim_type": "EXPLICIT",
+      "source": "Coherent with this, the over-expression of SNAI1 in the DML induced a significant increase in the translocation of DML cells into the myotome (Figure 6A,B), while the inhibition of its function by a SNAI1-specific siRNA (Delfini et al., 2009) inhibited their translocation (Figure 6C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 6A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "2efd9e73-b3c8-43db-ae79-3489d7770a18",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C55",
+      "claim": "The inhibition of SNAI1 function by a SNAI1-specific siRNA inhibited the translocation of DML cells into the myotome.",
+      "claim_type": "EXPLICIT",
+      "source": "Coherent with this, the over-expression of SNAI1 in the DML induced a significant increase in the translocation of DML cells into the myotome (Figure 6A,B), while the inhibition of its function by a SNAI1-specific siRNA (Delfini et al., 2009) inhibited their translocation (Figure 6C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 6C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "aab0717a-77ce-4009-b143-22a9ac3a8e47",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C56",
+      "claim": "The electroporation of SNAI1 in the DML induced a strong activation of MYF5 expression compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "The electroporation of SNAI1 in the DML induced a strong activation of MYF5 expression, compared to controls (Figure 6F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 6F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "b63f4b35-05a3-4533-b684-545a0c9967c5",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C57",
+      "claim": "The electroporation of a dominant-negative form of SNAIL-1 or an siRNA directed against SNAI1 resulted in a significant decrease in MYF5 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the electroporation of a dominant-negative form of SNAIL-1 or an siRNA directed against SNAI1 (Delfini et al., 2009) resulted in a significant decrease in MYF5 expression (Figure 6C,E,F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 6C,E,F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "a569dd64-7f78-4af3-a3ed-3047bdfdad97",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C58",
+      "claim": "The massive increase in MYF5 expression observed after NICD expression was profoundly reduced by DN-SNAI1.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we co-electroporated NICD together with the dominant-negative form of SNAI1 and observed that the massive increase in MYF5 expression observed after NICD expression (Rios et al., 2011) was profoundly reduced by DN-SNAI1 (Figure 6F,G), thus demonstrating that SNAI1 activation is a necessary step, downstream of NOTCH, in the chain of events that leads to the activation of MYF5 in DML cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 6F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "33dbec64-98d5-4992-a306-f19bada763bc",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C59",
+      "claim": "SNAI1 activation is a necessary step, downstream of NOTCH, in the chain of events that leads to the activation of MYF5 in DML cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we co-electroporated NICD together with the dominant-negative form of SNAI1 and observed that the massive increase in MYF5 expression observed after NICD expression (Rios et al., 2011) was profoundly reduced by DN-SNAI1 (Figure 6F,G), thus demonstrating that SNAI1 activation is a necessary step, downstream of NOTCH, in the chain of events that leads to the activation of MYF5 in DML cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "f8b373c6-8c00-418b-809e-037ea0bbb30e",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C60",
+      "claim": "SNAI1 protein has a short half-life, estimated to be about 25 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Due to this continuous degradation, SNAI1 protein has a short half-life, estimated to be about 25 min (Zhou et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "9223fb1c-32a4-48b2-be1d-d9821325e034",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C61",
+      "claim": "The co-electroporation of NICD with SNAI1-GFP led to a massive increase in GFP staining in most electroporated cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In control embryos, GFP was undetectable under UV examination, but faintly visible after immunostaining and confocal examination in electroporated cells (Figure 7A). In sharp contrast, the co-electroporation of NICD with SNAI1-GFP led to a massive increase in GFP staining in most electroporated cells (Figure 7A), suggesting that the activation of NOTCH signaling prevents the degradation of SNAI1 that normally occurs in DML cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "a710981c-6f3d-407b-bfd0-1d5cab39bfa2",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C62",
+      "claim": "The activation of NOTCH signaling prevents the degradation of SNAI1 that normally occurs in DML cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In control embryos, GFP was undetectable under UV examination, but faintly visible after immunostaining and confocal examination in electroporated cells (Figure 7A). In sharp contrast, the co-electroporation of NICD with SNAI1-GFP led to a massive increase in GFP staining in most electroporated cells (Figure 7A), suggesting that the activation of NOTCH signaling prevents the degradation of SNAI1 that normally occurs in DML cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the SNAI1-GFP experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "e8c99c1b-cad3-4c14-b2be-48d0f1373e6a",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C63",
+      "claim": "Fluorescence of the GSK-3\u03b2 biosensor was only detected in a small proportion of electroporated DML cells under normal, unperturbed conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "We first determined whether the GSK-3\u03b2 biosensor is active in DML cells, and observed that fluorescence of the biosensor was only detected in a small proportion of electroporated DML cells (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "16149d49-ea98-462a-9202-36fed8d73023",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C64",
+      "claim": "In the majority of DML cells under normal, unperturbed conditions, GSK-3\u03b2 is active.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation indicates that in the majority of DML cells under normal, unperturbed conditions, GSK-3\u03b2 is active (i.e. low or no biosensor detectable).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as an interpretation of the biosensor data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "f32f6472-d5ff-4561-886f-91e03a24f317",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C65",
+      "claim": "In a minority of DML cells, GSK-3\u03b2 is inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in a minority of cells, GSK-3\u03b2 is inhibited (i.e. high level of biosensor).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as an interpretation of the biosensor data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "c91a32fa-fd05-4877-b82c-a097685f387e",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C66",
+      "claim": "The cells in which the fluorescence of the GSK-3\u03b2 biosensor is observed are those that activate the NOTCH reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "To find out the identity of the biosensor-positive cells in normal, unperturbed condition, we performed a series of co-electroporations followed by immunostaining. This showed that the cells in which the fluorescence of the biosensor is observed are those that i) activate the NOTCH reporter (Figure 7C,D), ii) in which SNAI1 is active (Figure 7F,G) and iii) are MYF5-positive (Figure 7C,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 7C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "ef078917-545d-4c91-be79-9f43d96f9b24",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C67",
+      "claim": "The cells in which the fluorescence of the GSK-3\u03b2 biosensor is observed are those in which SNAI1 is active.",
+      "claim_type": "EXPLICIT",
+      "source": "To find out the identity of the biosensor-positive cells in normal, unperturbed condition, we performed a series of co-electroporations followed by immunostaining. This showed that the cells in which the fluorescence of the biosensor is observed are those that i) activate the NOTCH reporter (Figure 7C,D), ii) in which SNAI1 is active (Figure 7F,G) and iii) are MYF5-positive (Figure 7C,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 7F,G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "afc7bb5b-80d2-4c48-9272-f81c14e4c944",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C68",
+      "claim": "The cells in which the fluorescence of the GSK-3\u03b2 biosensor is observed are those that are MYF5-positive.",
+      "claim_type": "EXPLICIT",
+      "source": "To find out the identity of the biosensor-positive cells in normal, unperturbed condition, we performed a series of co-electroporations followed by immunostaining. This showed that the cells in which the fluorescence of the biosensor is observed are those that i) activate the NOTCH reporter (Figure 7C,D), ii) in which SNAI1 is active (Figure 7F,G) and iii) are MYF5-positive (Figure 7C,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 7C,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "c5fadc08-2aac-486a-b541-42e525bfbae8",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C69",
+      "claim": "Co-electroporating the GSK-3\u03b2 biosensor together with NICD resulted in a massive increase in the fluorescence of the GSK-3\u03b2 biosensor.",
+      "claim_type": "EXPLICIT",
+      "source": "We then tested whether NOTCH regulates GSK-3\u03b2 by co-electroporating the biosensor together with NICD. This resulted in a massive increase in the fluorescence of the GSK-3\u03b2 biosensor (Figure 7B), suggesting that NICD inhibits GSK-3\u03b2 kinase activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "ea8fa43f-6ff5-4c48-b03a-27cd14c47848",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C70",
+      "claim": "NICD inhibits GSK-3\u03b2 kinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We then tested whether NOTCH regulates GSK-3\u03b2 by co-electroporating the biosensor together with NICD. This resulted in a massive increase in the fluorescence of the GSK-3\u03b2 biosensor (Figure 7B), suggesting that NICD inhibits GSK-3\u03b2 kinase activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the biosensor experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "ddaa8720-f2d6-4cbf-b803-9b995c1a3633",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C71",
+      "claim": "Electroporating DLL1 in the neural crest cell population resulted in a strong increase in the fluorescence of the GSK-3\u03b2 biosensor in somites compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "To eliminate the possibility that the increase in fluorescence of the biosensor was due to a non-physiological effect of NICD expression in DML cells, we induced the activation of NOTCH signaling in the DML by electroporating DLL1 in the neural crest cell population (as described in Figure 4H), with the GSK-3\u03b2 biosensor electroporated in adjacent somites. Again, we observed a strong increase in the fluorescence of the biosensor in somites when compared to controls (Figure 7H,I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 7H,I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "b70ba725-791c-40af-8f4d-2aa430aa49ab",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C72",
+      "claim": "The electroporation of a dominant-negative form of GSK-3\u03b2 mimicked the effects of NOTCH activation on SNAI1 and MYF5.",
+      "claim_type": "EXPLICIT",
+      "source": "The electroporation of a dominant-negative form of GSK-3\u03b2 (DN-GSK-3\u03b2 [Taelman et al., 2010]) mimicked the effects of NOTCH activation on SNAI1 and MYF5, resulting in a significant increase in the proportion of DML cells undergoing EMT (Figure 7J,K) as well as a robust increase in MYF5 expression in DML cells (Figure 7L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 7J-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "9db14515-b5f7-4cfd-923a-e029a9f3af9c",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C73",
+      "claim": "A direct consequence of the activation of NOTCH signaling by migrating DLL1-positive neural crest cells is an inhibition of GSK-3\u03b2 activity that leads to a stabilization of the SNAI1 protein, which triggers an EMT of DML cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether our data suggest that a direct consequence of the activation of NOTCH signaling by migrating DLL1-positive neural crest cells is an inhibition of GSK-3\u03b2 activity that leads to a stabilization of the SNAI1 protein, which triggers an EMT of DML cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "811fb6a8-5e8e-49b6-b4ee-8276c03cc433",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C74",
+      "claim": "DN-RBPJ and CA-RBPJ significantly inhibited or activated the NOTCH reporter, respectively, compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the DN-RBPJ and CA-RBPJ significantly inhibited or activated the NOTCH reporter, respectively, compared to controls (Figure 8A\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 8A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "1081ceb9-e705-402c-a502-3423796fb159",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C75",
+      "claim": "DN-RBPJ and CA-RBPJ failed to modify the expression of MYF5 in the DML compared to controls.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both constructs failed to modify the expression of MYF5 in this structure, compared to controls (Figure 8E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 8E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "d2454065-803b-47a2-a2e1-7651089ae011",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C76",
+      "claim": "NICD regulates myogenesis in the DML independently of its transcriptional activity with RBPJ.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that NICD regulates myogenesis in the DML independently of its transcriptional activity with RBPJ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the RBPJ experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "2748f6db-e766-4b4f-8d54-b676f03595ae",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C77",
+      "claim": "CD4-NICD did not enter the nucleus and did not activate the NOTCH reporter.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike wild-type NICD, which upon electroporation readily enters the nucleus and massively activates the NOTCH reporter (Rios et al., 2011), immunostaining for CD4-NICD was not observed in the nucleus and, coherent with this, it did not activate the NOTCH reporter (Figure 9A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 9A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "0a65e543-a5d0-4902-931c-e3ee78064ed7",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C78",
+      "claim": "CD4-NICD expression resulted in a massive stabilization of the GSK-3\u03b2 biosensor that was indistinguishable from that obtained after electroporation of NICD.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, CD4-NICD expression resulted in a massive stabilization of the GSK-3\u03b2 biosensor that was indistinguishable from that obtained after electroporation of NICD (Figure 9C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 9C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "9c97b899-2495-4c45-9fa1-c067e61ccc23",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C79",
+      "claim": "The regulation of GSK-3\u03b2 activity by CD4-NICD is not a transcriptional response to NOTCH signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the regulation of GSK-3\u03b2 activity by CD4-NICD is not a transcriptional response to NOTCH signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the CD4-NICD experiment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "2683be60-42ac-43a4-8ee2-289d1c09f51a",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C80",
+      "claim": "The electroporation of CD4-NICD led to a massive stabilization of SNAI1 protein comparable to NICD alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed that the electroporation of CD4-NICD led to i) a massive stabilization of SNAI1 protein comparable to NICD alone (Figure 9E,F) and ii) to a robust increase of MYF5 expression in DML cells, not significantly different from the NICD alone (Figure 9G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 9E,F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "e0510f90-fb08-414d-ae3f-54c08e22e4d4",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C81",
+      "claim": "The electroporation of CD4-NICD led to a robust increase of MYF5 expression in DML cells, not significantly different from NICD alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we observed that the electroporation of CD4-NICD led to i) a massive stabilization of SNAI1 protein comparable to NICD alone (Figure 9E,F) and ii) to a robust increase of MYF5 expression in DML cells, not significantly different from the NICD alone (Figure 9G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the results section and shown in Figure 9G,H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "3eb4ad83-d533-4ef7-aa37-11ce961c5d84",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C82",
+      "claim": "The activation of MYF5 in DML cells is the result of a cytoplasmic function of NICD that can be uncoupled from its role as a transcriptional co-activator in the nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "These data demonstrate that the activation of MYF5 in DML cells is the result of a cytoplasmic function of NICD that can be uncoupled from its role as a transcriptional co-activator in the nucleus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section as a conclusion from the CD4-NICD experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "d83f960d-4740-4d5c-aa09-26ea0c2cec4e",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C83",
+      "claim": "The signaling module uncovered integrates cell fate determination and epithelial plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "The findings presented here uncover a unique signaling module, triggered by a signal presented by migrating neural crest cells to selected progenitors in the somites. This signal is transduced into two distinct, but interrelated outcomes i) a cell fate decision in the receiving cells that leads to their entry into the myogenic program and ii) an EMT that allows their translocation into the myotome (Figure 10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the discussion section as a summary of the findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "e51bf4ef-31b8-4e53-b42b-34b52fc33de7",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C84",
+      "claim": "EMT is intimately associated with essential changes in cell specification in many developmental processes.",
+      "claim_type": "EXPLICIT",
+      "source": "EMT is intimately associated with essential changes in cell specification in many developmental processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section as general knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "460d3f56-0bb2-4edf-b82a-46a972db0c0f",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C85",
+      "claim": "The signaling module targets GSK-3\u03b2, the main regulator of SNAI1 stability.",
+      "claim_type": "EXPLICIT",
+      "source": "A remarkable aspect of the signaling module described here is that it targets GSK-3\u03b2, the main regulator of SNAI1 stability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section as a key feature of the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "3e1362b0-c068-41b6-949f-a6fe58e4c8be",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C86",
+      "claim": "Aiming at GSK-3\u03b2 may protect the \u03b2-catenin released during the EMT process from degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, aiming at GSK-3\u03b2 may protect the \u03b2-catenin released during the EMT process from degradation, allowing it to accumulate sufficiently to act as a transcriptional co-factor, thereby resulting in a quasi-automatic coupling of EMT and \u03b2-catenin-dependent cell fate changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section as a proposed mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "2d59be25-2ea2-4aee-af41-43d202c845b6",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C87",
+      "claim": "The same signaling circuitry could couple EMT to cell fate decisions in a wide variety of epithelia in normal and pathological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the commonality of the key players described here in this paper, it is plausible that the same signaling circuitry could couple EMT to cell fate decisions in a wide variety of epithelia in normal and pathological conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section as a speculation about broader implications.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "4f9323c7-405d-4798-b52c-681ff4ac9633",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C88",
+      "claim": "Cytosolic interactions of NICD with various molecular partners that result in cellular responses independent of RBPJ have been described in in vitro experimental settings.",
+      "claim_type": "EXPLICIT",
+      "source": "However, cytosolic interactions of NICD with various molecular partners that result in cellular responses independent of RBPJ, have been described in in vitro experimental settings (reviewed in [Andersen et al., 2014; Ayaz and Osborne, 2014]), but also in Drosophila (Le Gall et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "358390e4-e0c3-4d84-9db1-11931ec9ef11",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C89",
+      "claim": "The data uncover a novel in vivo function of NOTCH1 that takes place in the cytosol and leads to GSK-3\u03b2 inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data uncover a novel in vivo function of NOTCH1 that takes place in the cytosol and leads to GSK-3\u03b2 inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section as a key finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "03d34e87-f698-4240-8ff9-2b24b3164f8c",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C90",
+      "claim": "The transcriptional activity of NICD is modified by its phosphorylation in vitro, probably by GSK-3\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "It was shown that the transcriptional activity of NICD is modified by its phosphorylation in vitro, probably by GSK-3\u03b2 (Espinosa et al., 2003; Foltz et al., 2002; Schweisguth, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "dd009e51-4eb6-4151-bdae-4d06f67d4f75",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C91",
+      "claim": "The response observed results from a titration of GSK-3\u03b2 kinase activity by NICD that is amplified by the stabilization of SNAI, itself a substrate for this kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "A hypothesis is that the response we observed results from a titration of GSK-3\u03b2 kinase activity by NICD that is amplified by the stabilization of SNAI, itself a substrate for this kinase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section as a hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "9e74a729-8b6d-4729-b2a2-c3647764c86e",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C92",
+      "claim": "Changes in the transcriptional activity of \u03b2-catenin have been associated with the disassembly of the junctional complex at the plasma membrane in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is largely accepted that \u03b2-catenin participates in adhesion and signaling functions in a mutually exclusive manner, changes in the transcriptional activity of \u03b2-catenin have also been associated with the disassembly of the junctional complex at the plasma membrane in vitro (Brembeck et al., 2006; Gavard and M\u00e8ge, 2012; Nelson and Nusse, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "dd472d60-a122-4021-a2cb-036c4f097047",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C93",
+      "claim": "The results provide direct evidence that the pool of \u03b2-catenin accumulated at the membrane and/or at the AJ has important signaling functions in addition to its established role in cell-cell adhesion in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "The results reported here provide direct evidence that this is also the case in vivo and demonstrate that the pool of \u03b2-catenin accumulated at the membrane and/or at the AJ has important signaling functions in addition to its established role in cell-cell adhesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section as a key finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "fa88efc5-05a6-4ec0-8796-c95e24756b4a",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C94",
+      "claim": "Distinct thresholds of TCF/\u03b2-catenin transcriptional activity are associated with discrete cellular outputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we observed distinct thresholds of TCF/\u03b2-catenin transcriptional activity associated with discrete cellular outputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section as an observation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "c8c6ed1c-20b2-4be0-9699-616cf31c20c9",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C95",
+      "claim": "WNT(s) expressed by the dorsal neural tube and transported by neural crest cells regulate the expression of WNT11 in the DML through canonical WNT signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that WNT(s) expressed by the dorsal neural tube and transported by neural crest cells regulate the expression of WNT11 in the DML through canonical WNT signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section as established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "6196e503-78e8-4bb2-9901-cb65cd84964d",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C96",
+      "claim": "WNT11 plays an essential role in the oriented elongation of early muscle fibers through planar cell polarity signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "WNT11 itself plays an essential role in the oriented elongation of early muscle fibers through planar cell polarity signaling (Gros et al., 2009; Marcelle et al., 1997; Serralbo and Marcelle, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "482933ea-37aa-4d27-a598-725252e9b432",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C97",
+      "claim": "The WNTs carried by neural crest cells induce a low TOPflash response that regulates myotome's organization, but has no influence on MYF5 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The data presented here suggest that the WNTs carried by neural crest cells induce a low TOPflash response that regulates myotome's organization, but has no influence on MYF5 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section as a conclusion from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "65bb2d4c-92a0-42c4-b9fa-960cad2d7d58",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C98",
+      "claim": "DLL1, via the signaling module uncovered, provokes the release of junctional \u03b2-catenin that leads to a high TOPflash response sufficient to trigger myogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, DLL1, via the signaling module uncovered here, provokes the release of junctional \u03b2-catenin that leads to a high TOPflash response sufficient to trigger myogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section as a conclusion from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "e92735c4-7e7e-4402-bb07-8facf278d840",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C99",
+      "claim": "\u03b2-catenin phosphorylated at the AJ on Y489 is transported into the nucleus and is transcriptionally active in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Rhee and colleagues have shown that \u03b2-catenin phosphorylated at the AJ on Y489 is transported into the nucleus and is transcriptionally active in vitro (Rhee et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "bb2d98be-758d-4a49-ace8-39b5b9b7ee3e",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "claim_id": "C100",
+      "claim": "The NOTCH signal is a permissive one, while the instructive role is executed by \u03b2-catenin and TCF/LEF.",
+      "claim_type": "EXPLICIT",
+      "source": "The necessary function of NOTCH in this process (Rios et al., 2011) is confirmed, but the present work demonstrates that the NOTCH signal is a permissive one, while the instructive role is executed by \u03b2-catenin and TCF/LEF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the discussion section as a conclusion from the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "9e18cf2e-8cb7-4ff1-b0d9-c6981aff274e",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Skeletal muscle formation in chick embryos is initiated by migrating Delta1-expressing neural crest cells that trigger NOTCH signaling and myogenesis in selected epithelial somite progenitor cells, which then translocate into the nascent muscle. The mosaic expression of Delta1 in neural crest cells ensures regular triggering of NOTCH signaling in selected DML cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4, C20-C21 collectively establish the role of Delta1-positive neural crest cells in initiating myogenesis through NOTCH signaling. This is supported by prior work (C20) and forms the foundation for the current study's mechanistic investigations. The claims are internally consistent and well-cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "8bcc2c38-6418-4baf-b514-19c0b202cfab",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Co-activation of NOTCH and WNT reporters correlates with MYF5 expression in DML cells. Nearly all cells positive for both NOTCH and TOPflash reporters express MYF5. NOTCH reporter-positive cells display high TOPflash fluorescence, representing genuine differences in TCF/\u03b2-catenin transcriptional activity rather than electroporation variability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C28 are supported by quantitative imaging data (Figure 2) showing correlation between NOTCH activation, high TOPflash activity, and MYF5 expression. The control experiment with BFP (C26) validates that fluorescence differences reflect biological activity rather than technical artifacts. Statistical analysis and cell counting support the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "0d3d98cc-9cad-4e19-a88f-0f034238bf3f",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "NOTCH regulates TCF/\u03b2-catenin transcriptional activity in the DML. NICD expression increases TOPflash reporter activity, while constitutively active \u03b2-catenin does not affect NOTCH reporter activity. CA-LEF1 rescues MYF5 expression inhibited by DN-MAML1, indicating NOTCH acts upstream of TCF/\u03b2-catenin signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 are supported by gain-of-function experiments (Figure 3) showing unidirectional regulation: NICD activates TOPflash but CA-\u03b2-catenin does not activate NOTCH reporter. The rescue experiment with CA-LEF1 (C31) provides strong evidence for the hierarchical relationship. The logic is sound and data are quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "950d081c-c301-4b61-863f-be8f18a273ce",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "TCF/\u03b2-catenin transcriptional activity in DML cells is WNT ligand-independent. DKK1 inhibits TOPflash activity in neural tube but not in myogenic DML cells that co-express NOTCH reporter and MYF5. Modulating WNT1 levels changes TOPflash activity without affecting myogenesis. Two distinct DML populations exist: one with high TOPflash triggered by DLL1 (myogenic), another with low TOPflash triggered by WNT ligand (non-myogenic).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C43 are supported by DKK1 inhibition experiments showing tissue-specific responses (Figure 4). The neural tube control (C33) validates DKK1 efficacy. The persistence of TOPflash activity in DML cells despite DKK1 (C34-C38) and the lack of myogenic response to WNT1 modulation (C39-C40) strongly support WNT-independent myogenesis. The double inhibition experiment (C41-C42) and the two-population model (C43) are logical conclusions from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "2249bdcd-5596-4ca2-9134-a781b62d4a1c",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Membrane-derived \u03b2-catenin is required for NOTCH-mediated activation of MYF5. The Y489F \u03b2-catenin mutant, which cannot be mobilized from junctions, prevents MYF5 activation even in the presence of NICD. The pool of \u03b2-catenin at adherens junctions and plasma membrane acts as a reservoir for the NOTCH-mediated \u03b2-catenin-dependent response.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C51 are supported by experiments using Y489F \u03b2-catenin mutant (Figure 5). The mutant's inability to rescue MYF5 expression when co-expressed with NICD (C49) and its membrane localization (C50) provide strong evidence for the requirement of junctional \u03b2-catenin mobilization. The Tet-on system allows temporal control, strengthening the conclusions. The inference about \u03b2-catenin reservoir function (C51) is well-supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "1d7cb87e-c88b-4cff-9d17-dc847497b0a4",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SNAI1 is necessary and sufficient for NOTCH-dependent activation of MYF5 in DML cells. SNAI1 overexpression increases DML cell translocation and MYF5 expression, while SNAI1 inhibition (siRNA or dominant-negative) decreases both. DN-SNAI1 blocks NICD-induced MYF5 expression, demonstrating SNAI1 acts downstream of NOTCH.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C59 are supported by gain- and loss-of-function experiments (Figure 6). The bidirectional effects of SNAI1 manipulation on EMT and MYF5 expression (C54-C57) and the epistasis experiment showing DN-SNAI1 blocks NICD effects (C58) provide strong evidence for SNAI1's necessary role. The conclusion about SNAI1 being downstream of NOTCH (C59) is well-supported by the genetic epistasis data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "03850fd5-74c0-4001-9c4d-df11f5c8f400",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "NOTCH inhibits GSK-3\u03b2 activity, leading to SNAI1 stabilization and EMT. NICD co-expression with SNAI1-GFP dramatically increases SNAI1 protein levels. GSK-3\u03b2 biosensor shows that GSK-3\u03b2 is active in most DML cells but inhibited in NOTCH-positive, SNAI1-active, MYF5-positive cells. NICD and DLL1 expression increase biosensor fluorescence, indicating GSK-3\u03b2 inhibition. DN-GSK-3\u03b2 mimics NOTCH effects on EMT and MYF5.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C73 are supported by SNAI1-GFP stabilization experiments and GSK-3\u03b2 biosensor data (Figure 7). The biosensor experiments show clear correlation between NOTCH activation and GSK-3\u03b2 inhibition (C69-C71). The identity of biosensor-positive cells (C66-C68) and DN-GSK-3\u03b2 phenocopy experiments (C72) provide strong mechanistic evidence. The conclusion about NOTCH\u2192GSK-3\u03b2 inhibition\u2192SNAI1 stabilization\u2192EMT pathway (C73) is well-supported by converging lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "66e7325c-609a-4d58-a30a-37c083624f05",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "NICD regulates myogenesis independently of its transcriptional activity with RBPJ. DN-RBPJ and CA-RBPJ modulate NOTCH reporter but not MYF5 expression. Membrane-tethered CD4-NICD, which cannot enter the nucleus or activate NOTCH reporter, still inhibits GSK-3\u03b2, stabilizes SNAI1, and activates MYF5 expression. This demonstrates a cytoplasmic function of NICD uncoupled from nuclear transcriptional activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C82 are supported by RBPJ manipulation experiments (Figure 8) and CD4-NICD experiments (Figure 9). The dissociation between NOTCH reporter activity and MYF5 expression with RBPJ mutants (C74-C76) and the CD4-NICD experiments showing nuclear exclusion but retained function (C77-C81) provide compelling evidence for RBPJ-independent, cytoplasmic NOTCH function. The conclusion (C82) is strongly supported by the CD4-NICD data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "3a9443d1-c9aa-400f-969a-69503fa97797",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "NOTCH inhibits GSK-3\u03b2 activity independent of transcriptional function, leading to SNAI1 stabilization and EMT. This allows recruitment of \u03b2-catenin from the membrane, which acts as a transcriptional co-factor to activate myogenesis independently of WNT ligand.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C10 represent the core mechanistic findings summarized in the abstract. These are supported by the detailed experimental results grouped in other result clusters (GSK-3\u03b2 biosensor data, SNAI1 stabilization, Y489F \u03b2-catenin experiments, DKK1 experiments). The claims are well-integrated and represent the main conclusions of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "9f11591c-7b4e-49cc-a008-5d247b42d99c",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study uncovers a signaling module integrating cell fate determination and epithelial plasticity. This module targets GSK-3\u03b2 and reveals a novel in vivo cytoplasmic function of NOTCH1 leading to GSK-3\u03b2 inhibition. The results demonstrate that membrane/AJ \u03b2-catenin has signaling functions beyond adhesion and that distinct thresholds of TCF/\u03b2-catenin activity produce discrete cellular outputs. NOTCH acts as a permissive signal while \u03b2-catenin/TCF/LEF execute the instructive role.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83, C85, C89, C93, C94, C100 represent key conceptual advances from the discussion. These interpretations are well-supported by the experimental data presented throughout the manuscript. The integration of EMT and cell fate determination (C83), the targeting of GSK-3\u03b2 (C85), the cytoplasmic NOTCH function (C89), the signaling role of junctional \u03b2-catenin (C93), the threshold model (C94), and the permissive vs. instructive distinction (C100) are all logical conclusions from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "11a76948-d7d2-4970-bd53-d161ec652fc1",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background on somite myogenesis: DML generates skeletal muscle cells through a cell fate decision involving self-renewal or myogenic differentiation with EMT. Classical work showed WNT1/3a from dorsal neural tube enhance myogenesis in vitro, and MYF5 promoter contains TCF binding sites. However, only a small proportion of DML cells initiate myogenesis despite uniform WNT exposure, suggesting additional mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C19 represent established background knowledge from prior literature, appropriately cited. These claims set up the paradox that motivates the current study (C19). The citations appear appropriate and the background is accurately represented. This is standard contextual information rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "0d2d4554-09b2-4498-a6f2-81c0370fabe3",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background on SNAI1 and EMT: Myogenesis in DML is accompanied by EMT. SNAI1 is expressed in dermomyotome and its activation leads to N-cadherin down-regulation and EMT. SNAI1 has a short half-life (~25 min) due to GSK-3\u03b2-mediated degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44, C52, C53, C60 represent established background knowledge appropriately cited. These provide necessary context for understanding the SNAI1 experiments. The information is accurately represented from the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    },
+    {
+      "id": "17369e6b-0cdd-486d-85bc-5d2664998062",
+      "content_id": "230245b3-351c-4793-bf67-aa691ae8f354",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Discussion of broader implications and mechanisms: EMT is associated with cell specification changes in development. The signaling module may protect \u03b2-catenin from degradation during EMT. Similar circuitry could operate in other epithelia. Cytosolic NICD interactions have been described in vitro and Drosophila. NICD phosphorylation by GSK-3\u03b2 has been reported. The mechanism may involve titration of GSK-3\u03b2 by NICD. \u03b2-catenin junctional disassembly has been associated with transcriptional activity in vitro. WNTs from neural tube regulate WNT11 expression (low TOPflash) for fiber organization, while DLL1 triggers junctional \u03b2-catenin release (high TOPflash) for myogenesis. Y489-phosphorylated \u03b2-catenin is transcriptionally active.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84, C86-C92, C95-C99 represent discussion points integrating current findings with prior literature and proposing mechanisms. These are appropriately speculative where indicated (C86, C87, C91) and cite relevant prior work. The interpretations are reasonable given the data, though some (C86, C87, C91) are explicitly hypothetical. The distinction between low and high TOPflash responses (C97-C98) is a logical interpretation of the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:49:58.240307Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "09721048-f6e7-4aad-87a2-05cfe9909282",
+      "result_id": "9e18cf2e-8cb7-4ff1-b0d9-c6981aff274e"
+    },
+    {
+      "claim_id": "91bbfc54-2403-429e-9054-949289ce0c0d",
+      "result_id": "9e18cf2e-8cb7-4ff1-b0d9-c6981aff274e"
+    },
+    {
+      "claim_id": "27c0c381-3f73-4c63-8820-1e296904ea16",
+      "result_id": "9e18cf2e-8cb7-4ff1-b0d9-c6981aff274e"
+    },
+    {
+      "claim_id": "555df89f-517a-442e-b38b-e7412d3dbb6c",
+      "result_id": "9e18cf2e-8cb7-4ff1-b0d9-c6981aff274e"
+    },
+    {
+      "claim_id": "4796efba-2f5d-461c-a68b-8c06e48f0165",
+      "result_id": "9e18cf2e-8cb7-4ff1-b0d9-c6981aff274e"
+    },
+    {
+      "claim_id": "8b5c4665-23ce-4056-a4f5-9c6a51f0ba45",
+      "result_id": "9e18cf2e-8cb7-4ff1-b0d9-c6981aff274e"
+    },
+    {
+      "claim_id": "0cb169ec-dccc-4992-8035-0204511ba85d",
+      "result_id": "8bcc2c38-6418-4baf-b514-19c0b202cfab"
+    },
+    {
+      "claim_id": "2a72ebd0-344a-4592-a5ad-fcc79d26b503",
+      "result_id": "8bcc2c38-6418-4baf-b514-19c0b202cfab"
+    },
+    {
+      "claim_id": "db25cd92-0b42-45c1-a9de-543b086b755e",
+      "result_id": "8bcc2c38-6418-4baf-b514-19c0b202cfab"
+    },
+    {
+      "claim_id": "81eac442-d5a6-4442-8702-543178030554",
+      "result_id": "8bcc2c38-6418-4baf-b514-19c0b202cfab"
+    },
+    {
+      "claim_id": "7b471e2a-3c91-4a33-be12-4a3cedc988fb",
+      "result_id": "8bcc2c38-6418-4baf-b514-19c0b202cfab"
+    },
+    {
+      "claim_id": "97523db6-d688-475e-9994-a2f68b4a8d1a",
+      "result_id": "8bcc2c38-6418-4baf-b514-19c0b202cfab"
+    },
+    {
+      "claim_id": "0ad0cc9b-94bd-4b3f-83ee-7adae8af16a5",
+      "result_id": "8bcc2c38-6418-4baf-b514-19c0b202cfab"
+    },
+    {
+      "claim_id": "c16fa829-7772-45e9-a1d6-47d1da9318c9",
+      "result_id": "0d3d98cc-9cad-4e19-a88f-0f034238bf3f"
+    },
+    {
+      "claim_id": "829eb4e0-568f-4b87-99e8-63822fa1cb69",
+      "result_id": "0d3d98cc-9cad-4e19-a88f-0f034238bf3f"
+    },
+    {
+      "claim_id": "528065d7-e896-410c-93c8-e1f0ad3dd374",
+      "result_id": "0d3d98cc-9cad-4e19-a88f-0f034238bf3f"
+    },
+    {
+      "claim_id": "b6761a7c-95eb-4464-8a9b-82253bea72bd",
+      "result_id": "0d3d98cc-9cad-4e19-a88f-0f034238bf3f"
+    },
+    {
+      "claim_id": "bbfcb9a1-5e5e-43a0-bfb1-af3929335608",
+      "result_id": "950d081c-c301-4b61-863f-be8f18a273ce"
+    },
+    {
+      "claim_id": "14f217ab-37bb-4741-9ec8-74fd9fc3d8c6",
+      "result_id": "950d081c-c301-4b61-863f-be8f18a273ce"
+    },
+    {
+      "claim_id": "280c263d-7b96-41a3-920f-0fd1d6aa34ab",
+      "result_id": "950d081c-c301-4b61-863f-be8f18a273ce"
+    },
+    {
+      "claim_id": "39b67b04-3402-48ee-a32e-b723222ba492",
+      "result_id": "950d081c-c301-4b61-863f-be8f18a273ce"
+    },
+    {
+      "claim_id": "fd65b0de-9533-481c-8449-bbb65cd643a1",
+      "result_id": "950d081c-c301-4b61-863f-be8f18a273ce"
+    },
+    {
+      "claim_id": "736d7dc4-f9d0-4b3a-8c01-a3b639f94b9b",
+      "result_id": "950d081c-c301-4b61-863f-be8f18a273ce"
+    },
+    {
+      "claim_id": "822b6da1-ffa5-4262-9c4c-c9cd9966a16b",
+      "result_id": "950d081c-c301-4b61-863f-be8f18a273ce"
+    },
+    {
+      "claim_id": "7aa2b9b3-00ce-4553-8105-ad00bcf0f936",
+      "result_id": "950d081c-c301-4b61-863f-be8f18a273ce"
+    },
+    {
+      "claim_id": "e1cf020b-5786-44b5-8e11-e5a78e02e62c",
+      "result_id": "950d081c-c301-4b61-863f-be8f18a273ce"
+    },
+    {
+      "claim_id": "64f8cad0-b96e-46ff-aaa8-050fc119a408",
+      "result_id": "950d081c-c301-4b61-863f-be8f18a273ce"
+    },
+    {
+      "claim_id": "c30167c3-cfb4-4191-9d56-254b2da1188b",
+      "result_id": "950d081c-c301-4b61-863f-be8f18a273ce"
+    },
+    {
+      "claim_id": "34a5d94b-83bb-49eb-a1c4-ecca3c0299a0",
+      "result_id": "2249bdcd-5596-4ca2-9134-a781b62d4a1c"
+    },
+    {
+      "claim_id": "feea70e8-bfcb-4530-8b13-251386d66877",
+      "result_id": "2249bdcd-5596-4ca2-9134-a781b62d4a1c"
+    },
+    {
+      "claim_id": "1ba55192-6846-477b-9f1e-a03e8612d010",
+      "result_id": "2249bdcd-5596-4ca2-9134-a781b62d4a1c"
+    },
+    {
+      "claim_id": "be4de067-4063-456d-9951-0d434fcd9889",
+      "result_id": "2249bdcd-5596-4ca2-9134-a781b62d4a1c"
+    },
+    {
+      "claim_id": "7e5b901e-50be-45be-ae23-8efe6d838cbe",
+      "result_id": "2249bdcd-5596-4ca2-9134-a781b62d4a1c"
+    },
+    {
+      "claim_id": "0619f432-c6e9-4aff-aa8e-5058a2d1a3c7",
+      "result_id": "2249bdcd-5596-4ca2-9134-a781b62d4a1c"
+    },
+    {
+      "claim_id": "2f52ab34-5224-42b4-a440-4dbc7737bd68",
+      "result_id": "2249bdcd-5596-4ca2-9134-a781b62d4a1c"
+    },
+    {
+      "claim_id": "6f76083a-e546-4b26-8280-1210517ed2b7",
+      "result_id": "1d7cb87e-c88b-4cff-9d17-dc847497b0a4"
+    },
+    {
+      "claim_id": "2efd9e73-b3c8-43db-ae79-3489d7770a18",
+      "result_id": "1d7cb87e-c88b-4cff-9d17-dc847497b0a4"
+    },
+    {
+      "claim_id": "aab0717a-77ce-4009-b143-22a9ac3a8e47",
+      "result_id": "1d7cb87e-c88b-4cff-9d17-dc847497b0a4"
+    },
+    {
+      "claim_id": "b63f4b35-05a3-4533-b684-545a0c9967c5",
+      "result_id": "1d7cb87e-c88b-4cff-9d17-dc847497b0a4"
+    },
+    {
+      "claim_id": "a569dd64-7f78-4af3-a3ed-3047bdfdad97",
+      "result_id": "1d7cb87e-c88b-4cff-9d17-dc847497b0a4"
+    },
+    {
+      "claim_id": "33dbec64-98d5-4992-a306-f19bada763bc",
+      "result_id": "1d7cb87e-c88b-4cff-9d17-dc847497b0a4"
+    },
+    {
+      "claim_id": "9223fb1c-32a4-48b2-be1d-d9821325e034",
+      "result_id": "03850fd5-74c0-4001-9c4d-df11f5c8f400"
+    },
+    {
+      "claim_id": "a710981c-6f3d-407b-bfd0-1d5cab39bfa2",
+      "result_id": "03850fd5-74c0-4001-9c4d-df11f5c8f400"
+    },
+    {
+      "claim_id": "e8c99c1b-cad3-4c14-b2be-48d0f1373e6a",
+      "result_id": "03850fd5-74c0-4001-9c4d-df11f5c8f400"
+    },
+    {
+      "claim_id": "16149d49-ea98-462a-9202-36fed8d73023",
+      "result_id": "03850fd5-74c0-4001-9c4d-df11f5c8f400"
+    },
+    {
+      "claim_id": "f32f6472-d5ff-4561-886f-91e03a24f317",
+      "result_id": "03850fd5-74c0-4001-9c4d-df11f5c8f400"
+    },
+    {
+      "claim_id": "c91a32fa-fd05-4877-b82c-a097685f387e",
+      "result_id": "03850fd5-74c0-4001-9c4d-df11f5c8f400"
+    },
+    {
+      "claim_id": "ef078917-545d-4c91-be79-9f43d96f9b24",
+      "result_id": "03850fd5-74c0-4001-9c4d-df11f5c8f400"
+    },
+    {
+      "claim_id": "afc7bb5b-80d2-4c48-9272-f81c14e4c944",
+      "result_id": "03850fd5-74c0-4001-9c4d-df11f5c8f400"
+    },
+    {
+      "claim_id": "c5fadc08-2aac-486a-b541-42e525bfbae8",
+      "result_id": "03850fd5-74c0-4001-9c4d-df11f5c8f400"
+    },
+    {
+      "claim_id": "ea8fa43f-6ff5-4c48-b03a-27cd14c47848",
+      "result_id": "03850fd5-74c0-4001-9c4d-df11f5c8f400"
+    },
+    {
+      "claim_id": "ddaa8720-f2d6-4cbf-b803-9b995c1a3633",
+      "result_id": "03850fd5-74c0-4001-9c4d-df11f5c8f400"
+    },
+    {
+      "claim_id": "b70ba725-791c-40af-8f4d-2aa430aa49ab",
+      "result_id": "03850fd5-74c0-4001-9c4d-df11f5c8f400"
+    },
+    {
+      "claim_id": "9db14515-b5f7-4cfd-923a-e029a9f3af9c",
+      "result_id": "03850fd5-74c0-4001-9c4d-df11f5c8f400"
+    },
+    {
+      "claim_id": "811fb6a8-5e8e-49b6-b4ee-8276c03cc433",
+      "result_id": "66e7325c-609a-4d58-a30a-37c083624f05"
+    },
+    {
+      "claim_id": "1081ceb9-e705-402c-a502-3423796fb159",
+      "result_id": "66e7325c-609a-4d58-a30a-37c083624f05"
+    },
+    {
+      "claim_id": "d2454065-803b-47a2-a2e1-7651089ae011",
+      "result_id": "66e7325c-609a-4d58-a30a-37c083624f05"
+    },
+    {
+      "claim_id": "2748f6db-e766-4b4f-8d54-b676f03595ae",
+      "result_id": "66e7325c-609a-4d58-a30a-37c083624f05"
+    },
+    {
+      "claim_id": "0a65e543-a5d0-4902-931c-e3ee78064ed7",
+      "result_id": "66e7325c-609a-4d58-a30a-37c083624f05"
+    },
+    {
+      "claim_id": "9c97b899-2495-4c45-9fa1-c067e61ccc23",
+      "result_id": "66e7325c-609a-4d58-a30a-37c083624f05"
+    },
+    {
+      "claim_id": "2683be60-42ac-43a4-8ee2-289d1c09f51a",
+      "result_id": "66e7325c-609a-4d58-a30a-37c083624f05"
+    },
+    {
+      "claim_id": "e0510f90-fb08-414d-ae3f-54c08e22e4d4",
+      "result_id": "66e7325c-609a-4d58-a30a-37c083624f05"
+    },
+    {
+      "claim_id": "3eb4ad83-d533-4ef7-aa37-11ce961c5d84",
+      "result_id": "66e7325c-609a-4d58-a30a-37c083624f05"
+    },
+    {
+      "claim_id": "e084ecd6-59f6-45af-a091-4285358cc3c9",
+      "result_id": "3a9443d1-c9aa-400f-969a-69503fa97797"
+    },
+    {
+      "claim_id": "a2f8e670-3e59-4a66-b068-91aac071d852",
+      "result_id": "3a9443d1-c9aa-400f-969a-69503fa97797"
+    },
+    {
+      "claim_id": "22546e0f-7c16-494f-9801-8bd6f25f4638",
+      "result_id": "3a9443d1-c9aa-400f-969a-69503fa97797"
+    },
+    {
+      "claim_id": "e3a8ef18-6088-40a9-8f25-5dbb83beafd6",
+      "result_id": "3a9443d1-c9aa-400f-969a-69503fa97797"
+    },
+    {
+      "claim_id": "5018210a-1621-43da-8d95-5a754206e272",
+      "result_id": "3a9443d1-c9aa-400f-969a-69503fa97797"
+    },
+    {
+      "claim_id": "022c5635-805e-4fbd-b210-2ca5e08d8f12",
+      "result_id": "3a9443d1-c9aa-400f-969a-69503fa97797"
+    },
+    {
+      "claim_id": "d83f960d-4740-4d5c-aa09-26ea0c2cec4e",
+      "result_id": "9f11591c-7b4e-49cc-a008-5d247b42d99c"
+    },
+    {
+      "claim_id": "460d3f56-0bb2-4edf-b82a-46a972db0c0f",
+      "result_id": "9f11591c-7b4e-49cc-a008-5d247b42d99c"
+    },
+    {
+      "claim_id": "358390e4-e0c3-4d84-9db1-11931ec9ef11",
+      "result_id": "9f11591c-7b4e-49cc-a008-5d247b42d99c"
+    },
+    {
+      "claim_id": "dd472d60-a122-4021-a2cb-036c4f097047",
+      "result_id": "9f11591c-7b4e-49cc-a008-5d247b42d99c"
+    },
+    {
+      "claim_id": "fa88efc5-05a6-4ec0-8796-c95e24756b4a",
+      "result_id": "9f11591c-7b4e-49cc-a008-5d247b42d99c"
+    },
+    {
+      "claim_id": "bb2d98be-758d-4a49-ace8-39b5b9b7ee3e",
+      "result_id": "9f11591c-7b4e-49cc-a008-5d247b42d99c"
+    },
+    {
+      "claim_id": "c70f97dd-36ec-4f08-b73a-50f32204d63a",
+      "result_id": "11a76948-d7d2-4970-bd53-d161ec652fc1"
+    },
+    {
+      "claim_id": "93fa17ff-03a3-40a2-9ca4-225ab32e8a19",
+      "result_id": "11a76948-d7d2-4970-bd53-d161ec652fc1"
+    },
+    {
+      "claim_id": "3db28797-c8c8-42c5-ba40-e2c02bfdc27f",
+      "result_id": "11a76948-d7d2-4970-bd53-d161ec652fc1"
+    },
+    {
+      "claim_id": "93ba8c25-3af1-4ed6-9d3f-3297e091b948",
+      "result_id": "11a76948-d7d2-4970-bd53-d161ec652fc1"
+    },
+    {
+      "claim_id": "789c3d36-79e3-4b32-8816-cacc46c88ff6",
+      "result_id": "11a76948-d7d2-4970-bd53-d161ec652fc1"
+    },
+    {
+      "claim_id": "094aa463-4189-43ac-8400-1e4d38d4ba1e",
+      "result_id": "11a76948-d7d2-4970-bd53-d161ec652fc1"
+    },
+    {
+      "claim_id": "ae244327-b4f1-4379-a01f-e8f7f237f405",
+      "result_id": "11a76948-d7d2-4970-bd53-d161ec652fc1"
+    },
+    {
+      "claim_id": "51963771-bbe4-4f4a-ab7d-1752266f26be",
+      "result_id": "11a76948-d7d2-4970-bd53-d161ec652fc1"
+    },
+    {
+      "claim_id": "88ae10de-2980-4971-a2c1-e7f438b6736a",
+      "result_id": "11a76948-d7d2-4970-bd53-d161ec652fc1"
+    },
+    {
+      "claim_id": "8bc16a34-edef-4848-b69d-36d7c1c64bdf",
+      "result_id": "0d2d4554-09b2-4498-a6f2-81c0370fabe3"
+    },
+    {
+      "claim_id": "138a4edd-f35c-4d71-8d69-2940fe3f4d72",
+      "result_id": "0d2d4554-09b2-4498-a6f2-81c0370fabe3"
+    },
+    {
+      "claim_id": "4c3d04da-15ce-4d70-bcf0-96de1cc171ce",
+      "result_id": "0d2d4554-09b2-4498-a6f2-81c0370fabe3"
+    },
+    {
+      "claim_id": "f8b373c6-8c00-418b-809e-037ea0bbb30e",
+      "result_id": "0d2d4554-09b2-4498-a6f2-81c0370fabe3"
+    },
+    {
+      "claim_id": "e51bf4ef-31b8-4e53-b42b-34b52fc33de7",
+      "result_id": "17369e6b-0cdd-486d-85bc-5d2664998062"
+    },
+    {
+      "claim_id": "3e1362b0-c068-41b6-949f-a6fe58e4c8be",
+      "result_id": "17369e6b-0cdd-486d-85bc-5d2664998062"
+    },
+    {
+      "claim_id": "2d59be25-2ea2-4aee-af41-43d202c845b6",
+      "result_id": "17369e6b-0cdd-486d-85bc-5d2664998062"
+    },
+    {
+      "claim_id": "4f9323c7-405d-4798-b52c-681ff4ac9633",
+      "result_id": "17369e6b-0cdd-486d-85bc-5d2664998062"
+    },
+    {
+      "claim_id": "03d34e87-f698-4240-8ff9-2b24b3164f8c",
+      "result_id": "17369e6b-0cdd-486d-85bc-5d2664998062"
+    },
+    {
+      "claim_id": "dd009e51-4eb6-4151-bdae-4d06f67d4f75",
+      "result_id": "17369e6b-0cdd-486d-85bc-5d2664998062"
+    },
+    {
+      "claim_id": "9e74a729-8b6d-4729-b2a2-c3647764c86e",
+      "result_id": "17369e6b-0cdd-486d-85bc-5d2664998062"
+    },
+    {
+      "claim_id": "c8c6ed1c-20b2-4be0-9699-616cf31c20c9",
+      "result_id": "17369e6b-0cdd-486d-85bc-5d2664998062"
+    },
+    {
+      "claim_id": "6196e503-78e8-4bb2-9901-cb65cd84964d",
+      "result_id": "17369e6b-0cdd-486d-85bc-5d2664998062"
+    },
+    {
+      "claim_id": "482933ea-37aa-4d27-a598-725252e9b432",
+      "result_id": "17369e6b-0cdd-486d-85bc-5d2664998062"
+    },
+    {
+      "claim_id": "65bb2d4c-92a0-42c4-b9fa-960cad2d7d58",
+      "result_id": "17369e6b-0cdd-486d-85bc-5d2664998062"
+    },
+    {
+      "claim_id": "e92735c4-7e7e-4402-bb07-8facf278d840",
+      "result_id": "17369e6b-0cdd-486d-85bc-5d2664998062"
+    }
+  ],
+  "comparisons": []
+}

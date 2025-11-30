@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C106",
+      "C107",
+      "C111"
+    ],
+    "result": "mHtt protein fragments display three distinct dynamic states in living cells: fast diffusion, dynamic clustering (10-20s lifetime), and stable aggregation (FRAP recovery >45 min). Wild-type Htt-25Q shows fast diffusion and dynamic clustering, while mHtt-94Q additionally forms large stable aggregates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C24, C106-C107, and C111 collectively provide strong converging evidence from multiple complementary techniques (sptPALM, FRAP, time-counting PALM, MSD analysis, Bayesian diffusion mapping) demonstrating three distinct dynamic states. The quantitative measurements of diffusion kinetics, temporal dynamics, and recovery times are internally consistent and support the main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Large mHtt aggregates exclude chromatin, as demonstrated by dramatic depletion of H2B staining in aggregate regions across multiple imaging modalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C27-C30 are supported by consistent results from three independent super-resolution imaging techniques (3D-SIM, Airyscan, single-molecule localization microscopy) all showing H2B depletion in mHtt aggregate regions. The radial intensity analysis provides quantitative support. The observation about DAPI non-specific staining (C29-C30) appropriately cautions against using DAPI as a chromatin marker in this context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C43",
+      "C44"
+    ],
+    "result": "Wild-type Htt-25Q, TBP, and Foxp2 are sequestered in mHtt aggregates through their PolyQ-containing domains. Deletion of PolyQ tracts abolishes recruitment to aggregates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36, C43-C44 are supported by domain mapping experiments using imaging to show selective enrichment of PolyQ-containing domains (Htt-25Q, TBP-TAD, Foxp2-TAD) but not non-PolyQ domains (TBP-DBD, Foxp2-DBD) in mHtt aggregates. The deletion experiments (C32) provide loss-of-function evidence. Results are consistent across ES cells and STHdh striatal cells (C31, C37).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C102",
+      "C104"
+    ],
+    "result": "Aromatic amino acids (Y, F) interspersed among glutamines are critical for Sp1 binding to mHtt aggregates. A 50aa Sp1 fragment (166-215) with 14Qs and three aromatic residues binds aggregates, while a fragment with 18Qs but no aromatic residues does not. Mutation of aromatic residues abolishes binding, while introducing aromatic residues enables binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C50-C63, C102, C104 are strongly supported by systematic domain mapping, mutagenesis (loss-of-function and gain-of-function), and imaging experiments. The comparison between Sp1 166-215aa (14Q with aromatics, binds) and 363-412aa (18Q without aromatics, doesn't bind) is particularly compelling. The reciprocal mutagenesis experiments (C57: removing aromatics abolishes binding; C58: adding aromatics enables binding) provide strong causal evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "mHtt aggregates act as 'sticky' decoy traps that impede transcription factor target search. Numerical simulations show that aggregates occupying ~5% nuclear volume slow target search ~20-fold. Single-molecule tracking shows dramatically reduced diffusion of Sp1, Foxp2, and wild-type Htt within aggregates and elevated slow-diffusing fractions in aggregate-containing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C5, C66-C72 are supported by converging evidence from numerical simulations and single-molecule tracking experiments. The simulations provide quantitative predictions (C66: 5% volume \u2192 20-fold delay) that are consistent with experimental observations of reduced diffusion (C69) and increased slow fractions (C71) in aggregate-containing cells. The interpretation that reduced diffusion indicates longer residence times (C70, C72) is reasonable given the experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C82",
+      "C87"
+    ],
+    "result": "mHtt aggregates impair gene expression programs in striatal neurons. 449 genes are dose-dependently down-regulated in Q111 cells. Sp1 binding sites are enriched near down-regulated genes. Sp1 overexpression (~2x) partially rescues 50 down-regulated Sp1 target genes. Sp1 ChIP occupancy is reduced at target promoters in Q111/Q111 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C73-C79, C82, C87 are supported by genome-wide mRNA-seq, ChIP-exo mapping of Sp1 binding sites, and ChIP-qPCR validation. The enrichment of Sp1 sites near down-regulated genes (C77, p<2.07e-8) is statistically significant. The partial rescue by Sp1 overexpression (C79, C87) and reduced Sp1 occupancy at target sites (C82) provide functional validation. However, the rescue is partial (50 of 449 genes), suggesting additional mechanisms may be involved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C108",
+      "C109",
+      "C110",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "PolyQ expansion tilts the kinetic balance from dynamic clustering to stable aggregation, analogous to phase transitions in ALS/FTD-associated proteins (TDP-43, FUS). Dynamic Htt clusters are rapidly reversible (10-20s lifetime), while mHtt aggregates are stable with minimal exchange (FRAP recovery >45 min), resembling irreversible polymeric-hydrogel states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C108-C116 draw an analogy between Htt dynamics and LCD phase transitions in RNPs based on temporal dynamics (C111-C112) and FRAP data (C113). The analogy is supported by cited literature (C108-C110) and the observed similarities in dynamic behavior. However, this is primarily an interpretive framework rather than direct mechanistic evidence. The claim is reasonable but relies heavily on analogy to other systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C46",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Foxp2 sequestration by mHtt aggregates may contribute to HD pathology. Foxp2 is a striatum-specific transcription factor critical for cortico-basal ganglia circuits affected in HD. Foxp2 disruption causes motor impairment and cerebellar defects in mice, and HD patients show reduced Purkinje cell density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38-C42, C46, C89-C93 establish that Foxp2 is sequestered by mHtt aggregates (experimental data) and that Foxp2 is important for brain regions affected in HD (cited literature). However, the causal link between Foxp2 sequestration and HD pathology is speculative (C46, C93 use 'might be'). The claims rely heavily on correlative evidence and cited literature rather than direct functional experiments testing whether Foxp2 sequestration contributes to HD phenotypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The Cth gene is Q111 dose-dependently down-regulated and partially rescued by Sp1 overexpression. However, no Sp1 binding was detected at the proximal Cth enhancer, suggesting long-distance regulation may be involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C86 show that Cth is down-regulated in Q111 cells and rescued by Sp1 overexpression, but the lack of proximal Sp1 binding (C85) creates uncertainty about the mechanism. The speculation about long-distance regulation (C86) is reasonable but unproven. This result highlights a limitation in understanding how Sp1 regulates some target genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Wild-type Htt sequestration by mHtt aggregates may contribute to HD through dominant-negative effects. Wild-type Htt is involved in axon trafficking, and Htt knockout induces HD phenotypes that are rescued by wild-type Htt overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88, C94-C97 combine experimental observation of wild-type Htt sequestration (C31) with cited literature on Htt function (C94-C96) to infer dominant-negative effects (C97). While the sequestration is demonstrated and the cited literature is relevant, the causal contribution to disease is inferred rather than directly tested. The claim is plausible but requires functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Disrupting molecular kinetics of key regulatory proteins by mHtt aggregates may represent a common HD mechanism, and other protein aggregate-forming diseases may share similar mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C99 represent broad mechanistic interpretations and speculations based on the experimental data. While the data support altered kinetics in HD (C98), the generalization to other aggregate-forming diseases (C99) is explicitly speculative. These are reasonable hypotheses but require testing in other disease contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C15",
+      "C26",
+      "C37",
+      "C47",
+      "C48",
+      "C65",
+      "C100",
+      "C101",
+      "C103",
+      "C117",
+      "C118"
+    ],
+    "result": "Prior work context: Previous studies showed fast diffusing and aggregate states of mHtt (FRAP/FCS), distinct aggregate species for seeding/polymerization (in vitro super-resolution), Sp1/TAF4 overexpression rescues gene expression defects, aromatic residues are essential for amyloid-like structures in RNPs, and beta-sheets underlie LCD phase transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C26, C37, C47-C48, C65, C100-C101, C103, C117-C118 accurately cite and contextualize prior work. The citations appear appropriate and the claims about prior work are consistent with the cited literature. These claims establish the foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C105"
+    ],
+    "result": "A broader spectrum of proteins with low-complexity sequences than studied are likely affected by mHtt aggregates in different cellular contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64, C105 are explicitly speculative extrapolations from the limited set of proteins tested. While reasonable based on the observed specificity for certain sequence features, these claims require experimental validation with additional proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Rescued genes have known functions: Rnd1 is a neuron-specific GTPase important for dendritic spine formation; Phlda1 and Ier3 are involved in anti-apoptotic pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 accurately cite prior literature on the functions of rescued genes. These claims provide biological context for the gene expression results.",
+    "result_type": "MINOR"
+  }
+]

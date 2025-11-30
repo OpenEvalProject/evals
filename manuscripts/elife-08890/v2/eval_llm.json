@@ -1,0 +1,452 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Ribosome profiling experiments generated millions of unique mappable reads from cycloheximide and harringtonine treatments in two cell models, with ribosome-protected fragments (RPFs) ranging 24-31 nts and showing variable distances between the 5' end and ribosome A-site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide detailed sequencing statistics and RPF characteristics that are standard quality control metrics for ribosome profiling experiments. The data are explicitly stated with specific numbers and are consistent with established ribosome profiling methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Ribosome profiling reads show 3-nt periodicity with ~65% at 1st codon position, ~24% at 2nd, and ~11% at 3rd. The majority (73%) map to canonical ORFs, while 2%, 4%, and 9% map to 5'UTRs, 3'UTRs, and lncRNAs/pseudogenes respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 describe the fundamental characteristics of ribosome profiling data quality and read distribution. The 3-nt periodicity is a hallmark of genuine translation, and the percentages are explicitly stated with supporting figures. These metrics validate the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Reads mapping to snoRNAs show narrow distribution patterns comparable between cycloheximide and harringtonine treatments, indicating non-ribosomal protection. A PME (Percentage of Maximum Entropy) metric was developed to distinguish translated from non-translated RNAs, with candidate ORFs from short noncoding RNAs showing drastically lower PME values than canonical protein-coding ORFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C23 establish a critical quality control step by identifying and filtering out false-positive signals from non-ribosomal RNA-protein complexes. The PME metric is well-defined (C20-C21) and validated by showing that snoRNAs (known to be nuclear and untranslated) have low PME values (C22), providing strong evidence for the filtering approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The RibORF classifier combining 3-nt periodicity and PME features achieved near-perfect performance (AUC=0.996) in distinguishing translated from non-translated ORFs, with 3-nt periodicity contributing more than PME. The algorithm performed robustly across expression levels (AUC>0.993 for RPKM>1) and showed high correlation (R=0.97) between two cancer models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 describe the RibORF algorithm's performance with explicit metrics. The AUC values indicate excellent classifier performance, and the high correlation between models (C27) supports generalizability (C28). The use of appropriate training/testing sets and cross-validation strengthens these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "RibORF identified 10,946 canonical ORFs, 544 truncated/extended variants, 3,842 uORFs, 1,054 overlapping uORFs, 550 dORFs, 1,204 ORFs in 510 lncRNAs, and 278 ORFs in 161 pseudogenes using a stringent probability cutoff of 0.7 (FPR=0.67%, FNR=2.5%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 provide comprehensive counts of identified translated ORFs across different categories. The stringent cutoff with defined false positive and false negative rates indicates careful threshold selection. The numbers are explicitly stated and represent the primary output of the RibORF algorithm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "All 7 tested RNAs encoding non-canonical translated ORFs are associated with 80S monosomes and/or polysomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 provides experimental validation through polysome profiling, an orthogonal method to confirm ribosome association. While the sample size is small (7 RNAs), this provides important biochemical validation of the computational predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Approximately 40% of expressed lncRNAs and pseudogene RNAs are translated, ~35% of mRNA coding genes have translated uORFs, and 4% have translated dORFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 represent the main quantitative findings of the study. These percentages are derived from the RibORF analysis (C29-C35) and are consistently stated in both the abstract and results. The claims are well-supported by the computational pipeline and validation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C50",
+      "C51"
+    ],
+    "result": "Translated lncRNAs preferentially localize in the cytoplasm while untranslated lncRNAs preferentially localize in the nucleus (p<10^-70). Translated lncRNAs show slightly lower cytoplasmic:nuclear (C:N) ratios compared to canonical mRNAs (p<10^-46).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 and C50-C51 establish a strong correlation between translation and subcellular localization using published RNA-seq data from nuclear/cytoplasmic fractions. The extremely significant p-values and consistency across multiple cell lines (Figure 3\u2014figure supplement 1) provide robust support. This finding provides independent validation of the translation predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C52",
+      "C104",
+      "C113",
+      "C114"
+    ],
+    "result": "The translation efficiency of cytoplasmic lncRNAs is nearly comparable to that of mRNAs, suggesting that cytoplasmic lncRNAs are engaged by ribosomes and translated. Accessibility to the translation machinery in the cytoplasm is a major determinant of translation efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44, C52, C104, C113-C114 establish that cytoplasmic localization strongly predicts translation. While lncRNAs show lower overall translation efficiency than mRNAs (C52, p<10^-12), this is explained by their reduced cytoplasmic localization (C51). The correlation between translation efficiency and cytoplasmic location (C54, C104) supports the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Translation efficiency of mRNAs varies hundreds of fold, and these differences are strongly correlated with cytosolic localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 extend the localization-translation relationship to mRNAs, showing this is a general principle. The claim cites prior work (Ingolia et al., 2009) for the variation in translation efficiency and demonstrates the correlation with localization using multiple cell lines (Figure 3E, Figure 3\u2014figure supplement 1H-I).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Over 40% of expressed lncRNAs encode peptides longer than 10 aa (median 43 aa), with 8% encoding peptides >100 aa. The median length of the longest peptide per lncRNA is 62 aa, considerably longer than uORF peptides (median 17 aa).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 characterize the length distribution of lncRNA-encoded peptides. The percentages and median values are explicitly stated and supported by figures. The comparison to uORFs (C58) provides useful context for interpreting the biological significance of these peptides.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C105",
+      "C106"
+    ],
+    "result": "Translated lncRNAs use AUG start codons more often than uORFs. Only 56% of lncRNAs translate their longest candidate ORF, with 38% translating an upstream ORF instead.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C105-C106 reveal important features of lncRNA translation initiation. The finding that the longest ORF is not always translated (C105-C106) demonstrates the value of the RibORF approach over simple ORF-length-based predictions and is consistent with 5'-to-3' scanning mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Of 93 translated lncRNAs with homologous genes in mouse (19% of total), 41 (44%) express conserved peptides with median length 69 aa. These conserved lncRNA peptides have Ka/Ks ratios significantly lower than 1, with 20 having Ka/Ks <0.5 and 12 having Ka/Ks <0.3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 provide evolutionary evidence for functional importance of a subset of lncRNA peptides. The Ka/Ks analysis is appropriate for detecting stabilizing selection, and Ka/Ks <1 indicates purifying selection. The graded evidence (Ka/Ks <0.5, <0.3) strengthens the case for functional peptides. However, the majority of lncRNA peptides are not conserved, consistent with C115-C116.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Most lncRNA peptides (92%) lack Pfam-annotated protein domains. However, translated ORF sequences are more conserved and have higher coding potential than untranslated sequences (p<10^-4), with short peptides (<100 aa) containing domains being more conserved (p<10^-3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 use multiple lines of evidence (domain annotation, PhastCon conservation, PhyloCSF coding potential) to assess functional potential. The lack of domains in most peptides (C107) suggests many may be nonfunctional, but the increased conservation of translated vs. untranslated sequences (C109) and domain-containing peptides (C108) supports functionality for a subset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Of 426 expressed pseudogenes (~3% of 13,708 annotated), 155 (36%) are translated into peptides >10 aa, with 81 (19%) generating peptides >100 aa. Most (~80%) of these longer peptides contain at least one protein domain. The median pseudogene peptide length is 70 aa, with the longest peptide per pseudogene being 102 aa (30 aa longer than lncRNA peptides).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 characterize pseudogene translation. The finding that 36% of expressed pseudogenes are translated is striking and challenges the definition of pseudogenes as non-coding. The higher domain content (C70) and longer peptides (C72-C73) compared to lncRNAs suggest pseudogene peptides may be more likely to retain ancestral functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "114 pseudogene peptides (74% of translated) are conserved in mouse with median length 92 aa (~25% of canonical protein length). 69% are homologous to canonical mouse ORFs and show Ka/Ks significantly <1, with 50 having Ka/Ks <0.3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 demonstrate that most translated pseudogene peptides are conserved (74% vs. only ~9% for lncRNAs), and the majority show evidence of purifying selection. This strongly suggests many pseudogene peptides retain biological function, possibly as truncated versions of ancestral proteins (C76).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "15% of conserved pseudogene peptides are homologous to mouse pseudogenes with even lower Ka/Ks ratios (19 with Ka/Ks <0.3), while 16% are homologous to non-canonical mouse ORFs with Ka/Ks ~1, suggesting they are nonfunctional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 provide nuanced analysis showing that pseudogene-to-pseudogene conservation (C80-C81) indicates longer evolutionary maintenance and stronger selection than pseudogene-to-canonical conservation. The subset with Ka/Ks ~1 (C82-C83) serves as an internal control, showing the analysis can distinguish functional from nonfunctional peptides.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "Nucleotide sequences of translated ORFs in pseudogenes are significantly more conserved and have higher coding potential than untranslated sequences of matching sizes and positions (p<10^-22), consistent across various ORF sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 parallels the lncRNA analysis (C109) but shows even stronger conservation for pseudogenes. The matched control sequences (same size and position) strengthen the conclusion that conservation is specific to translated regions. The extremely significant p-value and consistency across sizes support the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The median lengths of uORFs (17 aa) and overlapping uORFs (37 aa) are shorter than lncRNA and pseudogene peptides. The translation efficiency of uORFs is similar to canonical protein-coding sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 characterize uORF translation. The similar translation efficiency between uORFs and canonical ORFs (C86) is somewhat surprising given that uORFs are thought to be regulatory, but this may reflect that scanning ribosomes efficiently initiate at upstream AUGs when present.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The translational efficiency of mRNA coding regions is slightly lower for genes containing uORFs (p<10^-34), even though RNA levels of uORF-containing genes are somewhat higher than genes lacking uORFs (p<10^-200).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 demonstrate the regulatory impact of uORFs on downstream translation, consistent with prior work (cited: Calvo et al., 2009; Barbosa et al., 2013). The increased RNA levels (C88) may represent compensatory transcriptional upregulation. The extremely significant p-values support both claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "1,144 genes show >3-fold higher uORF translation than canonical ORF, enriched for transcription regulators (p<10^-8, 237 genes), particularly zinc finger transcription factors (p<10^-9), and protein kinases (p<10^-5, 45 genes), suggesting translational regulation similar to yeast Gcn4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 identify genes with high uORF usage and show functional enrichment for regulatory genes. The comparison to Gcn4 (C89) is appropriate as this is a well-characterized example of uORF-mediated translational control. The enrichment p-values are highly significant, though the biological interpretation requires caution as enrichment does not prove the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "ATF4 contains 3 uORFs and 1 overlapping uORF, with uORF expression over 300-fold higher than the canonical ORF under normal growth conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 provide a specific example of high uORF usage in ATF4, a known stress-responsive gene. This is consistent with the Gcn4 paradigm and provides validation for the broader pattern identified in C89-C94. The 300-fold difference is striking and well-supported by the figure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "84% of highly translated uORFs (>3-fold higher than canonical ORFs) use AUG start codons, while only 32% of poorly translated uORFs (>3-fold lower than canonical ORFs) use AUG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 identify start codon identity as the major determinant of uORF translation efficiency. This is consistent with the known preference of eukaryotic ribosomes for AUG codons and the scanning model of translation initiation. The large difference (84% vs. 32%) strongly supports this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "The translation efficiency of dORFs is much lower (30-fold on average) than the corresponding protein-coding region, indicating very low translational reinitiation after the canonical stop codon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 shows that dORFs are translated much less efficiently than uORFs, consistent with the known difficulty of reinitiation after translation of a long ORF. The 30-fold difference is substantial and well-supported by Figure 6B.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C111"
+    ],
+    "result": "Nucleotide sequences encoding uORFs and dORFs are more conserved than neighboring untranslated sequences. 20% of uORF peptides, 46% of overlapping uORF peptides, and 32% of dORF peptides are conserved in mouse, with Ka/Ks ratios significantly <1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 and C111 provide evolutionary evidence for functional importance of a subset of uORF and dORF peptides. The conservation percentages vary by ORF type, with overlapping uORFs showing highest conservation (46%), possibly because they overlap with canonical coding sequences. The Ka/Ks <1 (C103) indicates purifying selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "While most lncRNA peptides may be unstable byproducts without function, ~9% of lncRNA peptides, 74% of pseudogene peptides, 24% of uORF peptides, and 32% of dORF peptides are conserved in mouse. Some conserved peptides show Ka/Ks ratios significantly <1, suggesting stabilizing selection and potential functional importance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 summarize the conservation analysis across all non-canonical peptide types. The varying conservation rates (9% for lncRNAs vs. 74% for pseudogenes) suggest different evolutionary trajectories. The Ka/Ks analysis (C49) provides strong evidence that at least some conserved peptides are functional, though the claim appropriately hedges with 'potential' and 'some.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "The RibORF approach represents a significant improvement over current methods for identifying translated ORFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C112 is a summary statement supported by the methodological advances described in C24-C28 and the Discussion section. The improvements include: (1) A-site alignment accounting for variable RPF lengths, (2) 3-nt periodicity analysis, (3) PME filtering of non-ribosomal reads, and (4) high performance (AUC=0.996). The claim is justified but represents an interpretation rather than a direct experimental result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "The majority of lncRNA-encoded peptides are not conserved in mouse or other species, and most lncRNA peptides are likely not biologically functional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 acknowledge that while many lncRNAs are translated, most resulting peptides are probably nonfunctional. This is supported by the low conservation rate (~9%, C45) and is consistent with the interpretation that cytoplasmic lncRNAs are translated by default (C119). The claim appropriately uses 'likely' to indicate this is an inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C117",
+      "C120"
+    ],
+    "result": "A significant minority of non-canonical peptides have biological functions, as evidenced by evolutionary conservation and low Ka/Ks ratios of some peptides generated by lncRNAs and pseudogene RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117 and C120 represent the key biological conclusion: while most non-canonical peptides are likely nonfunctional, a subset shows strong evidence of function. This is supported by: (1) conservation in mouse (C45-C48), (2) Ka/Ks <1 indicating purifying selection (C49, C64, C78, C103), (3) examples from other species (cited in C117), and (4) polysome association (C36). The claim is appropriately cautious ('suggestive,' 'significant minority').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C118",
+      "C119"
+    ],
+    "result": "Approximately 40% of so-called lncRNAs and pseudogene RNAs are translated in vivo. Many peptides generated from these RNAs arise from invariable translation of cytoplasmic RNAs, thereby fortuitously generating peptides of no biological consequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C119 synthesize the main findings: widespread translation of 'noncoding' RNAs (C37-C38) driven primarily by cytoplasmic localization (C41-C42, C50-C51, C104, C113-C114), with most resulting peptides being nonfunctional byproducts (C115-C116). This interpretation is well-supported by the data, though it remains an inference about biological function.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,2136 @@
+{
+  "submission": {
+    "id": "67ffed31-d018-47e8-a9b5-0e062f134c68",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:38:24.943179Z",
+    "updated_at": "2025-11-30T00:38:24.943179Z"
+  },
+  "content": [
+    {
+      "id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "submission_id": "67ffed31-d018-47e8-a9b5-0e062f134c68",
+      "content_type": "manuscript",
+      "content_text": "# Antiparallel protocadherin homodimers use distinct affinity- and specificity-mediating regions in cadherin repeats 1-4\n\n## Authors\n\n- John M Nicoludis<sup>1</sup>\n- Bennett E Vogt<sup>2</sup>\n- Anna G Green<sup>3</sup>\n- Charlotta PI Sch\u00e4rfe<sup>3</sup>\n- Debora S Marks<sup>3</sup>\n- Rachelle Gaudet<sup>2</sup> ([ORCID: 0000-0002-9177-054X](https://orcid.org/0000-0002-9177-054X)) \u2020\n\n### Affiliations\n\n1. Department of Chemistry and Chemical Biology Harvard University Cambridge United States\n2. Department of Molecular and Cellular Biology Harvard University Cambridge United States\n3. Department of Systems Biology Harvard Medical School Boston United States\n4. Applied Bioinformatics, Department of Computer Science University of T\u00fcbingen T\u00fcbingen Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nProtocadherins (Pcdhs) are cell adhesion and signaling proteins used by neurons to develop and maintain neuronal networks, relying on trans homophilic interactions between their extracellular cadherin (EC) repeat domains. We present the structure of the antiparallel EC1-4 homodimer of human Pcdh\u03b3B3, a member of the \u03b3 subfamily of clustered Pcdhs. Structure and sequence comparisons of \u03b1, \u03b2, and \u03b3 clustered Pcdh isoforms illustrate that subfamilies encode specificity in distinct ways through diversification of loop region structure and composition in EC2 and EC3, which contains isoform-specific conservation of primarily polar residues. In contrast, the EC1/EC4 interface comprises hydrophobic interactions that provide non-selective dimerization affinity. Using sequence coevolution analysis, we found evidence for a similar antiparallel EC1-4 interaction in non-clustered Pcdh families. We thus deduce that the EC1-4 antiparallel homodimer is a general interaction strategy that evolved before the divergence of these distinct protocadherin families.\n\n## Introduction\n\nProtocadherins (Pcdhs) encompass about 70% of the cadherin superfamily in mammals, and are involved in cell adhesion in the nervous system of higher animals (Hulpiau and van Roy, 2011; Hulpiau et al., 2013; Keeler et al., 2015; Sotomayor et al., 2014). Pcdhs segregate into two groups: clustered (expressed from a large gene cluster) and non-clustered. Clustered Pcdhs, comprising the \u03b1, \u03b2, and \u03b3 subfamilies, mediate neuronal survival, self-avoidance and self/nonself discrimination, and promote dendritic arborization in neuronal cells (Emond and Jontes, 2008; Garrett et al., 2012; Kostadinov and Sanes, 2015; Ledderose et al., 2013; Lefebvre et al., 2012; Molumby et al., 2016; Suo et al., 2012; Wang et al., 2002; Weiner et al., 2005). Clustered Pcdhs thus function analogously to insect Dscam isoforms to mediate neuronal identity (Zipursky and Sanes, 2010). Clustered Pcdhs are also broadly involved in synapse formation and maintenance, neuronal connectivity and neuronal survival (Hayashi and Takeichi, 2015; Keeler et al., 2015). Non-clustered Pcdhs play key roles in neuronal development (Keeler et al., 2015; Kim et al., 2011). For example, Pcdh7 is involved in germ layer differentiation (Rashid et al., 2006; Yoshida, 2003), and Pcdh1 and Pcdh8 mediate cell sorting and migration during gastrulation (Kim et al., 1998; Kuroda et al., 2002). Both clustered and non-clustered Pcdhs control these phenotypes through homophilic interactions of their extracellular cadherin (EC) repeat domains (Hirano et al., 1999; Hoshina et al., 2013; Kim et al., 1998; Kuroda et al., 2002; Schreiner and Weiner, 2010; Thu et al., 2014; Yamagata et al., 1999; Yoshida, 2003).\n\nClustered Pcdh subfamilies show distinct phenotypes. In zebrafish, \u03b1 and \u03b3 Pcdhs express in overlapping but distinct brain regions (Biswas et al., 2012). In mammals, \u03b1 Pcdhs regulate sorting of olfactory sensory neuron axons into glomeruli, serotonergic axon maturation, and dendritic patterning in CA1 pyramidal neurons (Hasegawa et al., 2012, 2008; Katori et al., 2009; Suo et al., 2012). The \u03b3 subfamily is important for self/non-self discrimination in retinal starburst amacrine cells and Purkinje neurons (Kostadinov and Sanes, 2015; Lefebvre et al., 2012). Thus, available data suggest that the different Pcdh subfamilies may function independently or cooperatively, perhaps depending on the brain region and/or neuronal cell type.\n\nOur recent Pcdh\u03b3A1 and Pcdh\u03b3C3 EC1-3 structures revealed dimer interactions between EC2 and EC3 (Nicoludis et al., 2015), consistent with previous biochemical and bioinformatics data (Schreiner and Weiner, 2010; Wu, 2005). Using sequence co-evolution analysis, we predicted intersubunit EC1-EC4 interactions, and proposed that clustered Pcdhs form extended antiparallel homodimers engaging EC1-4. A complementary biochemical and structural study arrived at a very similar docking model (Rubinstein et al., 2015), which was recently confirmed for \u03b1 and \u03b2 clustered Pcdhs (Goodman et al., 2016).\n\nWe determined the crystal structure of Pcdh\u03b3B3 EC1-4, the first full antiparallel dimer for a \u03b3 isoform. We analyzed the clustered Pcdhs structures in light of biological, biochemical and evolutionary data to further resolve how clustered Pcdhs encode specificity. We describe how structural differences between the \u03b1, \u03b2 and \u03b3 subfamilies generate distinct modes of specificity encoding. We also provide evidence that the EC1/EC4 and EC2/EC3 interfaces are functionally different: EC1/EC4 provides nonselective dimerization affinity while EC2/EC3 is generally responsible for enforcing specificity. Finally, we extend our sequence coevolution analysis to the non-clustered Pcdhs and provide evidence that the EC1-4 interaction is broadly used by Pcdhs.\n\n## Results and discussion\n\n### Structure of the Pcdh\u03b3B3 EC1-4 extended antiparallel dimer\n\nThe in vitro-refolded recombinantly-expressed Pcdh\u03b3B3 EC1-4 (47\u2009kDa) yielded two peaks on size exclusion chromatography (SEC; Figure 1\u2014figure supplement 1). Based on multi-angle light scattering (MALS; Figure 1\u2014figure supplement 1), peak 1 was wide and polydisperse (~200\u2013300\u2009kDa). Peak 2 was monodisperse at 80\u2009kDa \u2013 consistent with a dimer \u2013\u00a0and\u00a0readily yielded a crystal structure (Figure 1\u2014source data 1). As expected, each EC forms a seven-stranded Greek key \u03b2-sandwich motif (Figure 1A), similarly to other clustered Pcdh structures (Goodman et al., 2016; Nicoludis et al., 2015; Rubinstein et al., 2015). Notably, EC4 has a unique \u03b2-strand arrangement compared to EC1-EC3 (Figure 1B,C) and all known cadherin repeat structures. Strand \u03b21a is extended by 4\u20135 residues, while \u03b21b is correspondingly shortened. Additionally, while in EC1-3 strand \u03b22 splits into \u03b22a and \u03b22b, interacting with strands \u03b25 and \u03b21a, respectively, in EC4 it forms a continuous strand interacting with both simultaneously. This distinct structural feature contributes to intersubunit EC1/EC4 interactions (see below).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/18449/elife-18449-fig1-v2.jpg)\n\n**Figure 1.:** (A) Structure of the Pcdh\u03b3B3 EC1-4 antiparallel dimer, with each EC a different shade of blue and the Ca2+ ions in grey. (B) Superposition of Pcdh\u03b3B3 EC2 and EC4 highlighting the differences in \u03b2-strands 1 and 2. (C) Comparison of the canonical cadherin (top) and EC4 (bottom) \u03b2-strand arrangement. (D) The structures of Pcdh dimers \u03b14 EC1-4, \u03b17 EC1-5, \u03b26 EC1-4, and \u03b28 EC1-4 (grey) were superimposed using the dimeric EC2-3 region onto \u03b3B3 EC1-4 (blue), illustrating variations in twist/corkscrew. (E) The EC4 domains of clustered Pcdh structures (colored as labeled) were superimposed, highlighting EC1 position differences that correlate with subfamily. Point of view (eye symbol) shown in (D). See Figure 1\u2014figure supplements 1\u20134.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18449/elife-18449-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) SEC profile of refolded Pcdh\u03b3B3 run on a Superdex 200 16/60 column, with the two collected peak fractions indicated. (B) SEC-MALS profile of Peak 1 run on a Superdex S200 10/300 column was broad and polydisperse. (C) SEC-MALS profile of Peak 2 run on a Superdex S200 10/300 column was monodisperse at a molecular weight of ~80 kDa, consistent with a dimer (monomeric molecular weight 47 kDa).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18449/elife-18449-fig1-figsupp2-v2.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Distribution of tilt and azimuthal angles from adjacent EC repeat pairs of classical (black), Pcdh15 and Cdh23 (blue) and clustered Pcdh (red). (Inset) The orientation of adjacent EC repeats was defined by the tilt and azimuthal rotation of the EC domain principal axes.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/18449/elife-18449-fig1-figsupp3-v2.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Sequence alignment of clustered Pcdhs for which dimer interface structures are available. EC1 and EC4 of Pcdh\u03b3A1 are grey because their interaction interface is unknown. Residues highlighted orange have a BSA > 10 \u00c52 in those respective structures. We selected as conserved interface residues (boxed) those that have a BSA > 10 \u00c52 in 5 of 6 structures for EC2/EC3 or 4 of 5 structures for EC1/EC4. The interface regions are notably similar in EC1 and EC3, as well as in EC2 and EC4. (B) Superposition of the first half of Pcdh\u03b3B3 EC1-4 with the second half yields an RMSD of 2.24 \u00c5 over 142 C\u03b1 atoms. (C) The two superimposed chains at the top (B) are rotated 90\u00b0, highlighting how similar surfaces of EC1 and EC3, and EC2 and EC4, form the extended antiparallel interface of clustered Pcdhs. In (B) and (C), the conserved interface positions identified in (A) are marked by C\u03b1 atom spheres.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/18449/elife-18449-fig1-figsupp4-v2.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Final 2Fo-Fc electron density contoured at 1\u03c3, with the final structural model shown as sticks. Nearby side chains from EC2 (lighter blue) and EC3 (darker blue) are labeled.\n\nAlthough the asymmetric unit contains a single Pcdh\u03b3B3 molecule, a crystallographic two-fold axis generates an antiparallel dimer with intersubunit EC1/EC4 and EC2/EC3 interactions (Figure 1A). This dimer is consistent with the Pcdh\u03b3A1 EC1-3 crystal structure, validating the previously predicted interface (Nicoludis et al., 2015; Rubinstein et al., 2015), and with recent \u03b1 and \u03b2 Pcdhs structures (Goodman et al., 2016), confirming that this interaction mechanism is conserved among all clustered Pcdh subfamilies (Figure 1D). The structures do differ noticeably in overall twist, including subfamily-specific differences in relative EC1/EC4 orientation (Figure 1E).\n\nThe linear architecture of clustered Pcdhs enables extended antiparallel dimer interfaces. Overall, the tilt and azimuthal angles between adjacent clustered Pcdh repeats are distinct from those of classical cadherins (Figure 1\u2014figure supplement 2) (Nicoludis et al., 2015). Classical cadherins, which typically dimerize through EC1/EC1 interfaces, exhibit smaller tilt angles and thus an overall curved structure (Boggon et al., 2002). Notably, the clustered Pcdh repeat orientation is such that EC1 and EC3 use the same face for intersubunit contacts, as do EC2 and EC4 (Figure 1\u2014figure supplement 3), suggesting that longer cadherins could readily form even more extended interfaces.\n\n### Clustered protocadherin subfamilies have distinct specificity mechanisms dictated by structural differences\n\nClustered Pcdh subfamilies control different phenotypes in vivo\u00a0and have discrete expression patterns (Biswas et al., 2012; Keeler et al., 2015), suggesting that they encode specificity using distinct modes, which may relate to subfamily-specific structural features. To investigate this hypothesis, we calculated the isoform conservation ratio (ICR) within individual subfamilies, which quantifies the extent to which individual residue positions are conserved among orthologs (same isoform in different species) and diversified in paralogs (different isoforms in the same species) (Nicoludis et al., 2015), resulting in three ICR value sets for the \u03b1, \u03b2 and \u03b3 subfamilies, respectively (Figure 2\u2014figure supplement 1). To account for subfamily differences in sequence conservation, we normalized the ICR values by dividing by the subfamily average. We then mapped them onto the Pcdh\u03b17 EC1-5, Pcdh\u03b28 EC1-4 and Pcdh\u03b3B3 EC1-4 structures (Figure 2A). Comparing the structures and isoform-specific conservation in the different subfamilies allowed us to identify key specificity determinant regions for individual subfamilies. We illustrate three examples of how the subfamilies have encoded specificity using unique structural features.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/18449/elife-18449-fig2-v2.jpg)\n\n**Figure 2.:** (A) Subfamily-specific ICR values mapped onto the surfaces of Pcdh\u03b17 (top, green), Pcdh\u03b28 (middle, magenta) and Pcdh\u03b3B3 (bottom, blue). The black outline marks the dimer interface footprint. (B, C, D) Unique structural features of the \u03b1 (left), \u03b2 (center), and \u03b3 (right) structures (colored according to Figure 1). ICR values for highlighted residues shown below and normalized amino acid frequencies for these positions shown on the right. See Figure 2\u2014figure supplement 1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18449/elife-18449-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Subfamily-specific normalized ICR values as a sliding average with a 5-residue window size (\u03b1 = green, \u03b2 = magenta, \u03b3 = cyan). Loop regions illustrated in Figure 2B\u2013D are indicated at the bottom. (B) ICR values for interface residues (BSA > 10 \u00c52) for Pcdh \u03b14 EC1-4 (yellow), \u03b17 EC1-5 (green), \u03b26 EC1-4 (salmon), \u03b28 EC1-4 (magenta), \u03b3B3 EC1-4 (cyan), and \u03b3A1 EC1-3 (dark blue). In black are the average and standard error. Residues with high isoform-specific conservation localize to EC2 and EC3 surfaces.\n\nIn \u03b1 isoforms, the EC2 \u03b24-\u03b25 loop is enriched in high-ICR and chemically diverse residues, and differs in conformation in the Pcdh\u03b14 and Pcdh\u03b17 structures (Figure 2B): the Pcdh\u03b14 EC2 \u03b24-\u03b25 loop contacts \u03b21b of EC3, while the corresponding loop in Pcdh\u03b17 does not, suggesting variable interactions in other isoforms. In comparison, the EC2 \u03b24-\u03b25 loop residues in both \u03b2 and \u03b3 isoforms have lower ICR values, more similar loop structure, and do not contact \u03b21b of EC3. Thus, this loop may have evolved to generate diversity within \u03b1 isoforms, but not in other subfamilies.\n\nIn \u03b2 isoforms, the Phe-X10-Phe loop between \u03b23 and \u03b24 of EC3 has limited diversity compared to \u03b1 and \u03b3 isoforms and wedges between the EC2 \u03b24-\u03b25 loop and \u03b22b strand (Figure 2C). In contrast, the Phe-X10-Phe loop of \u03b1 and \u03b3 isoforms has a helical conformation, and has residues with higher ICR values and greater chemical diversity. Therefore alterations in secondary structure can affect how specificity is encoded within the subfamilies.\n\nThe short loop following the extended \u03b21a strand in EC4 contacts the EC1 \u03b26-\u03b27 loop (Figure 2D), and there are large structural differences in the EC1/EC4 interaction between subfamilies (Figure 1E). \u03b1 Isoforms have low-ICR residues at this interface, whereas \u03b2 and \u03b3 isoforms have higher ICR value residues. This thus suggests that the large structural differences drive inter-subfamily specificity, on which may be layered additional isoform specificity.\n\nIn all cases, sequence regions with high isoform-specific conservation correlate with interface contacts, revealing the interplay between dimer structure and how subfamilies encode specificity. Diversity in the composition and conformation of loop regions provides distinct specificity mechanisms to subfamilies. Phylogenetic analysis indicates that isoforms are more similar within than across subfamilies (Sotomayor et al., 2014; Wu, 2005), and the available structures show that the interface architecture is more similar within subfamilies as well (Figure 1E) (Goodman et al., 2016; Nicoludis et al., 2015). With this insight, the dimer interface seen in the Pcdh\u03b3C3 EC1-3 crystal structure may represent a unique dimer architecture for C-type isoforms (Nicoludis et al., 2015), as these isoforms are transcriptionally, functionally and evolutionarily distinct from the subfamilies in which they reside (Chen et al., 2012; Frank et al., 2005; Kaneko et al., 2006). Distinct expression of the clustered Pcdh subfamilies in different tissues and at different developmental stages supports the necessity for intra-subfamily specificity (Biswas et al., 2012; Frank et al., 2005). Differences in subfamily structure and isoform-specific conservation suggest that homophilic specificity mechanisms emerged independently in each subfamily through diversification of subfamily-specific interface contacts.\n\n### The EC1/EC4 interaction provides affinity of dimerization\n\nThe EC2/EC3 interaction is integral to clustered Pcdh dimerization specificity, as evidenced by bioinformatics and cell-aggregation assays (Nicoludis et al., 2015; Rubinstein et al., 2015; Schreiner and Weiner, 2010; Thu et al., 2014; Wu, 2005). We sought to understand the functional purpose of the EC1/EC4 interaction, and made three observations. First, for all isoforms with available structures, fewer EC1/EC4 interface residues have high isoform-specific conservation compared to the EC2/EC3 interface residues (Figure 2A, Figure 2\u2014figure supplement 1). Second, interface residues shared by most isoforms are more hydrophobic in EC1/EC4 than in EC2/EC3 (Figure 3A). Third, the Pcdh\u03b3B3 EC1/EC4 interface is much larger (BSA = 976 \u00c52 per protomer) than the EC2/EC3 interface (555 \u00c52 per protomer). The lack of isoform specificity, the hydrophobic nature, and large interface area together suggest that the EC1/EC4 interface promotes binding with little specificity.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/18449/elife-18449-fig3-v2.jpg)\n\n**Figure 3.:** (A) Amino acid frequencies in clustered Pcdhs of conserved interface residues (see Figure 1\u2014figure supplement 2). (B) Plot of ICR value and \u2206\u2206Gcalc of interface residues of Pcdh \u03b14 EC1-4 (yellow), \u03b17 EC1-5 (green), \u03b26 EC1-4 (salmon), \u03b28 EC1-4 (magenta), \u03b3B3 EC1-4 (blue). Two subsets of interface residues segregate from the main cluster: high-\u2206\u2206Gcalc and low-ICR residues (\u2018affinity\u2019; black box) and low-\u2206\u2206Gcalc and high-ICR residues (\u2018specificity\u2019; crimson box). Residue F86 from Pcdh\u03b3B3 EC1-4 is labeled. (C) High-\u2206\u2206Gcalc and low-ICR residues (black) map primarily to EC1 and EC4, while low-\u2206\u2206Gcalc and high-ICR residues (crimson) primarily map to EC2 and EC3. N253 (*) is found in the \u2018specificity\u2019 region for \u03b3B3 and in the \u2018affinity\u2019 region for \u03b26 and \u03b28. (D) The EC1/EC4 interface features a hydrophobic cluster, with EC1 F86 near its center. (E) SEC-MALS profiles of WT Pcdh\u03b3B3 EC1-4 (blue; molecular weight 82 kDa) and F86A (black; molecular weight 52 kDa) run on a Superdex S200 10/300 column, are consistent with dimeric and monomeric proteins, respectively.\n\nTo probe this hypothesis, we used the Computational Interface Alanine Scanning Server to assess each interface residue\u2019s contribution to the free energy of complex formation (\u0394\u0394Gcalc) when computationally mutated to alanine (Kortemme and Baker, 2002; Kortemme et al., 2004). Using the five available EC1-4 interfaces, two residue groups emerged from comparing the ICR values to \u0394\u0394Gcalc: one group with low ICR values and high \u0394\u0394Gcalc, the other with high ICR values and low \u0394\u0394Gcalc (Figure 3B). These residue groups can be regarded as contributing to the affinity and specificity of the complex, respectively. When mapped on Pcdh\u03b3B3, predicted affinity residues concentrated on EC1 and EC4, and predicted specificity residues on EC2 and EC3, corroborating the distinction between EC1/EC4 and EC2/EC3 interactions (Figure 3C).\n\nIn the Pcdh\u03b3B3 EC1/EC4 interface, F86, one of the predicted affinity-driving residues from EC1, wedges into a cavity created by hydrophobic EC4 residues (Figure 3D). A Pcdh\u03b3B3 EC1-4 F86A mutant indeed disrupted dimerization, resulting in a monomeric protein as measured by MALS (Figure 3E). Thus, the hydrophobic interactions between EC1 and EC4 are crucial to dimerization. Analogously, purified EC1-3 constructs failed to dimerize in vitro\u00a0whereas EC1-4 constructs did (Nicoludis et al., 2015; Rubinstein et al., 2015), and K562 cells expressing \u0394EC1 or \u0394EC4-6 constructs did not aggregate while cells expressing chimeras in which EC1 and EC4 derived from different paralogs did (Schreiner and Weiner, 2010; Thu et al., 2014). Together, these results indicate that the EC1/EC4 interaction is not strictly required for the specificity of dimerization but it drives dimerization affinity through non-specific hydrophobic interactions.\n\n### Antiparallel EC1-4 interaction is predicted in non-clustered Pcdhs\n\nThe antiparallel EC1-4 interaction architecture can encode diverse specificities within the clustered Pcdh family. Is this architecture unique to clustered Pcdhs or is it ancestral, and thus also found in non-clustered Pcdhs? These include the \u03b4-1 (Pcdh1, Pcdh7, Pcdh9, Pcdh11) and \u03b4-2 (Pcdh8, Pcdh10, Pcdh17, Pcdh18, Pcdh19) families that are integral to the development and maintenance of the nervous system (Keeler et al., 2015; Kim et al., 2011). We used sequence coevolution analysis, which successfully predicted the clustered Pcdh interface (Nicoludis et al., 2015) (Figure 4\u2014figure supplement 1),to look for evidence of an antiparallel interface in non-clustered Pcdhs (Figure 4A). As in clustered Pcdhs, most covarying residue pairs in non-clustered Pcdhs were intra-domain structural contacts of the well-conserved cadherin fold. Additionally, several covarying pairs are found between EC2 and EC3, or EC1 and EC4, similar to those observed for the clustered Pcdhs. When mapped onto the Pcdh\u03b3B3 dimer, these covarying pairs are somewhat further apart than true interface contacts (Figure 4B), which could be due to differences in dimerization interfaces, as we observe between the clustered Pcdh families, or in the \u03b4-1 or \u03b4-2 Pcdhs secondary structure, for which there are no available structures. This analysis thus predicts an antiparallel EC1-4 interaction in members of the non-clustered Pcdhs. Notably, we cannot determine whether all members or only a subset \u2013 and if so, which \u2013 likely use this architecture. However maximum parsimony suggests that the ancestral Pcdh used the antiparallel EC1-4 dimer interaction, and Pcdh members which do not show this interaction mechanism either diverged before it evolved or lost it subsequently.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/18449/elife-18449-fig4-v2.jpg)\n\n**Figure 4.:** (A) The top 38 covarying pairs are shown in black, and include a number of EC1-EC4 and EC2-EC3 covarying residue pairs. The intramolecular contact maps of Pcdh\u03b3B3 EC1-4, Pcdh\u03b14 EC1-4, Pcdh\u03b17 EC1-4, Pcdh\u03b26 EC1-4, Pcdh\u03b28 EC1-4 and Pcdh\u03b3A1 EC1-3 are in gray for reference. The observed interface contact residues are also mapped (\u03b14, yellow; \u03b17, green; \u03b26, salmon; \u03b28, magenta; \u03b3B3, blue; \u03b3A1, dark blue). (B) Covarying residue pairs across EC1-EC4 or EC2-EC3 are mapped onto the Pcdh\u03b3B3 EC1-4 structure with a line between coupled residues. Alignments and evolutionary couplings in Figure 4\u2014source data 1 and 2. (C) Amino acid frequencies at non-clustered Pcdh alignment positions corresponding to the conserved interface residue positions identified in clustered Pcdhs (Figure 1\u2014figure supplement 2). See Figure 4\u2014figure supplements 1 and 2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/18449/elife-18449-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The top 83 covarying pairs are shown in black. The intramolecular contact maps of Pcdh\u03b3B3 EC1-4, Pcdh\u03b14 EC1-4, Pcdh\u03b17 EC1-4, Pcdh\u03b26 EC1-4, Pcdh\u03b28 EC1-4 and Pcdh\u03b3A1 EC1-3 are in gray for reference. The observed interface contact residues are also mapped (\u03b14, yellow; \u03b17, green; \u03b26, salmon; \u03b28, magenta; \u03b3B3, blue; \u03b3A1, dark blue). Alignments and evolutionary couplings in Figure 4\u2014source data 3 and 4.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/18449/elife-18449-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Based on this phylogeny, evolutionary couplings were obtained for the two groups labeled. The clustered and non-clustered Pcdh alignments had effective sequences numbers of 2660 and 405.5, respectively.\n\nFinally, we looked at the composition of a predicted non-clustered Pcdh interface, by selecting residues homologous to those found at clustered Pcdh interfaces. The predicted EC1/EC4 interface residues are predominantly hydrophobic, while EC2/EC3 residues have more polar and ionic character (Figure 4C). Notably, positions 41 and 77 in EC1 and 320, 321, 371 and 373 in EC4 are more hydrophobic in non-clustered than clustered Pcdhs, indicating that these may form contacts in some non-clustered Pcdhs. Thus, like in the clustered Pcdhs, the EC1/EC4 interaction may promote dimer affinity while the EC2/EC3 interaction provides specificity.\n\n### Conclusions\n\nRecently, we and others predicted that clustered Pcdhs form homophilic antiparallel EC1-EC4 complexes based on crystal structures, mutagenesis and bioinformatics (Nicoludis et al., 2015; Rubinstein et al., 2015). Our structure of Pcdh\u03b3B3 EC1-4 confirms our sequence coevolution analysis, demonstrating the robustness of the analysis and revealing the molecular details of this interaction. Here we extended this prediction to other non-clustered Pcdhs using sequence coevolution analysis.\n\nAnalysis of the Pcdh\u03b3B3 EC1-4 structure in comparison to \u03b1 or \u03b2 subfamily dimers revealed structural differences that correlated with differences in isoform-specific conservation, indicating distinct specificity mechanisms. Unlike the Dscams, where isoforms vary at specific alternatively-spliced regions (Li et al., 2016; Meijers et al., 2007; Sawaya et al., 2008; Wojtowicz et al., 2007), the clustered Pcdh subfamilies are structurally diverse, and thus can encode specificity in different ways.\n\nWe identified a hydrophobic interaction between EC1 and EC4 that contributes to dimerization affinity, whereas its conservation among clustered Pcdh isoforms suggests that this interaction is not a driver of specificity. Overall, our data support a general role for conserved hydrophobic EC1/EC4 interactions in affinity, and for highly diversified polar EC2/EC3 contacts in specificity, and sequence analyses suggest that this is conserved in at least some non-clustered Pcdhs.\n\n## Materials and methods\n\n### Expression, purification and crystallization of Pcdh\u03b3B3 EC1-4\n\nHuman Pcdh\u03b3B3 EC1-4 (residues 1\u2013414, not counting the signal peptide) was cloned into pET21 with a C-terminal hexahistidine tag, expressed in BL21 Gold (DE3) Escherichia coli cells in terrific broth. Cells were induced at OD600 = 0.8 with 0.5\u2009mM isopropyl \u03b2-D-1-thiogalactopyranoside (IPTG) at 37\u00b0C for 4\u2009hr, harvested and lysed by sonication in 8\u2009M guanadinium hydrochloride (GuHCl), 50\u2009mM HEPES pH 7.5, 2\u2009mM CaCl2, and 20\u2009mM imidazole. Cell lysates were diluted to 5\u2009M GuHCl and loaded onto Ni-Sepharose, washed with 50\u2009mM HEPES pH 7.5, 250\u2009mM NaCl, 10\u2009mM CaCl2, and 25\u2009mM imidazole and eluted with 250\u2009mM imidazole. Eluted protein was refolded at 1 mg/mL in 12\u2009hr dialysis steps reducing the GuHCl concentration from 2.5\u2009M to 1.25\u2009M and finally 0\u2009M in refolding buffer (100\u2009mM Tris pH 8.5, 10\u2009mM CaCl2, 1\u2009mM EDTA, 5\u2009mM dithiothreitol (DTT), and 0.5\u2009M L-arginine). Concentrated refolded protein was purified by size-exclusion chromatography (SEC) on a Superdex 200 16/60 column (GE Healthcare, Pittsburgh, PA) in 20\u2009mM Tris pH 8.5, 200\u2009mM NaCl, and 2\u2009mM CaCl2 (SEC buffer). Two peaks were isolated and each peak was run again separately by SEC before being concentrated for crystallization.\n\n### Multi-angle light scattering (MALS)\n\nApproximate molecular mass of Pcdh\u03b3B3 EC1-4 protein (WT or F86A mutant) was determined using a Superdex S200 10/300 column (GE Healthcare, Pittsburgh, PA) with in-line Wyatt Dawn Heleos II and Optilab T-rex refractive index detectors. Protein (100\u2009\u03bcL at 4 mg/mL) was injected and run at 0.4\u2009mL/min in SEC buffer. Signals were aligned, normalized and band-broadened using bovine serum albumin as a standard.\n\n### Crystallization, data collection, and structure determination and analysis\n\nCrystals were obtained by vapor diffusion at room temperature in 0.1\u2009M HEPES pH 7, 4% ethylene glycol, and 5% polyethylene glycol monomethyl ether 500 in a 0.3\u2009\u03bcL protein (12 mg/mL) to 0.3\u2009\u03bcL reservoir drop, then cryoprotected with reservoir with 20% glycerol before flash cooling in liquid N2. Diffraction data (Figure 1\u2014source data 1) were\u00a0processed in HKL2000 (Otwinowski and Minor, 1997). The Pcdh\u03b3B3 EC1-4 structure was determined by an iterative molecular replacement search with single domains of the Pcdh\u03b3A1 EC1-3 structure (PDBID 4zi9) in PHENIX (Adams et al., 2010). Model building was done in Coot (Emsley and Cowtan, 2004) and refinement in PHENIX (Adams et al., 2010). We analyzed the physicochemical properties of the dimer interface using PISA (Krissinel and Henrick, 2007). In the structure, we found a HEPES molecule near the EC2/EC3 interface that forms a salt bridge with N253 and N155 (Figure 1\u2014figure supplement 4). MALS data were collected with Tris as the buffer (Figure 1\u2014figure supplement 1), indicating that HEPES is not required for dimerization.\n\n### ICR value calculations\n\nOverall percent identity of the most common residue at each position was used to calculate ICR values, dividing the percent identity across subfamily orthologs by the percent identity across subfamily paralogs. ICR values were then normalized by dividing by the whole sequence ICR average within each subfamily. The alignment and identity data are provided here (Nicoludis et al., 2015).\n\n### Computational Interface Alanine Scanning Server\n\nPcdh\u03b14 EC1-4 (5dzw), Pcdh\u03b17 EC1-5 (5dzv), Pcdh\u03b26 EC1-4 (5dzx), Pcdh\u03b28 EC1-4 (5dzy),\u00a0and Pcdh\u03b3B3 EC1-4 (5k8r) dimer structures were submitted to the Computational Interface Alanine Scanning Server using default settings (Kortemme and Baker, 2002; Kortemme et al., 2004).\n\n### Covariation analyses\n\nPreviously, we generated an alignment of clustered Pcdhs using mouse Pcdh\u03b3C3 and manually filtered by phylogeny, using FastTree 2.1 (Price et al., 2010), to eliminate non-clustered Pcdhs (Figure 4\u2014figure supplement 2) (Nicoludis et al., 2015). Both this clustered Pcdh and the now separated non-clustered Pcdh alignment were filtered to remove sequences with more than 50% gaps and columns with more than 30% gaps, and trimmed to contain only EC1-EC4. The clustered and non-clustered Pcdh alignments had 2660 and 405.5 effective non-redundant sequences, respectively; sequences were considered redundant and downweighted when more than 90% identical over their full length (Hopf et al., 2014). Evolutionary couplings (Hopf et al., 2014; Marks et al., 2011) were computed using the updated \u2018PLMC\u2019 algorithm (Weinreb et al., 2015) available on https://github.com/debbiemarkslab/plmc, which uses a pseudo maximum likelihood approximation (Balakrishnan et al., 2011; Ekeberg et al., 2013; Kamisetty et al., 2013). Alignments and all EC scores are provided (Figure 4\u2014source data 1\u20134).\n\nWe used the precision of the intra-domain evolutionary couplings to determine whether the inter-domain evolutionary couplings are likely to be true. For the clustered Pcdh alignment, 83 non-local (more than five residues apart) contacts fall above a threshold of 80% precision of the intra-domain evolutionary couplings. Intra-domain evolutionary couplings are considered true if they correspond to structural contact (minimum atom distance < 8\u2009\u00c5) in any structure (Figure 4\u2014figure supplement 1). Based on the same 80% precision threshold, the top 38 non-local ECs are significant in the non-clustered Pcdh alignment. We exclude couplings between residues greater than 400 in this analysis due to the false signal from gaps in this region.\n",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "b3b4ce69-e424-4012-9d99-3255ef06fbe0",
+      "submission_id": "67ffed31-d018-47e8-a9b5-0e062f134c68",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- William I Weis, Stanford University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.18449.023](https://doi.org/10.7554/eLife.18449.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Antiparallel protocadherin homodimers use distinct affinity- and specificity-mediating regions in cadherin repeats 1-4\" for consideration by eLife. Your article has been reviewed by two peer reviewers, one of whom is a member of our Board of Reviewing Editors, and the evaluation has been overseen by Arup Chakraborty as the Senior Editor. The reviewers have opted to remain anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission. The reviewers and editors are in agreement that the work is worthy of publication and only have a few minor concerns that would need to be addressed before acceptance.\n\nSummary:\n\nThe authors report the structure of the first four extracellular cadherin repeats of PcdhgB3, the first of the \u03b3 subfamily of clustered protocadherins. The structure reveals an antiparallel dimer in which the four domains mediate dimerization. Using the previously known \u03b1- and \u03b2-subfamily dimer structures, the authors provide a detailed structural analysis of dimerization specificity throughout the clustered protocadherins: it appears that the EC2-EC3 interaction contributes to the specificity of binding within each subfamily, while the EC1-EC4 interface provides for a more general nonselective binding affinity. They also predict that the non-clustered protocadherins likely work through similar mechanisms. This provides insights into the binding mechanisms of the entire clustered protocadherin family that supports and extends previous functional studies. Overall it represents a significant advance in understanding this large family of adhesion proteins.\n\nMinor points:\n\n1) First paragraph, Results and Discussion and Figure 1C: \"Topology\" refers to the connectivity of secondary structure elements that interact with one another. The topology of EC4 is not different from other EC domains \u2013 it simply has a split \u03b2 strand but it hydrogen bonds interacts with the same neighboring strands. It is fine to point out this difference but is not a topological difference.\n\n2) Materials and methods section, subsection \u201cCovariation analyses\u201d: \"\u2026405.5 non-redundant sequences\u2026\" \u2013 what is a 0.5 sequence?\n\n3) Figure 1\u2014source data 1 (Crystallographic statistics):a) The number of significant figures is inappropriate, please fix (true of almost every entry, e.g. unit cell lengths, R values, B factors); b) \"Ligands\" \u2013 please specify, this presumably means Ca2+, HEPES, anything else?\n",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ec948787-2707-4c1e-bb07-97437eb0244c",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C1",
+      "claim": "Protocadherins (Pcdhs) encompass about 70% of the cadherin superfamily in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Protocadherins (Pcdhs) encompass about 70% of the cadherin superfamily in mammals, and are involved in cell adhesion in the nervous system of higher animals (Hulpiau and van Roy, 2011; Hulpiau et al., 2013; Keeler et al., 2015; Sotomayor et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hulpiau and van Roy, 2011; Hulpiau et al., 2013; Keeler et al., 2015; Sotomayor et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "078de492-5c17-4ad1-9d27-9df8e6836c7a",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C2",
+      "claim": "Protocadherins are involved in cell adhesion in the nervous system of higher animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Protocadherins (Pcdhs) encompass about 70% of the cadherin superfamily in mammals, and are involved in cell adhesion in the nervous system of higher animals (Hulpiau and van Roy, 2011; Hulpiau et al., 2013; Keeler et al., 2015; Sotomayor et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hulpiau and van Roy, 2011; Hulpiau et al., 2013; Keeler et al., 2015; Sotomayor et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "62631e27-6fa0-401a-b55d-733171d0ce02",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C3",
+      "claim": "Pcdhs segregate into two groups: clustered (expressed from a large gene cluster) and non-clustered.",
+      "claim_type": "EXPLICIT",
+      "source": "Pcdhs segregate into two groups: clustered (expressed from a large gene cluster) and non-clustered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about protocadherin classification",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "a1c2fc86-02e2-4ae6-b588-5b981d2fb789",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C4",
+      "claim": "Clustered Pcdhs comprise the \u03b1, \u03b2, and \u03b3 subfamilies.",
+      "claim_type": "EXPLICIT",
+      "source": "Clustered Pcdhs, comprising the \u03b1, \u03b2, and \u03b3 subfamilies, mediate neuronal survival, self-avoidance and self/nonself discrimination, and promote dendritic arborization in neuronal cells (Emond and Jontes, 2008; Garrett et al., 2012; Kostadinov and Sanes, 2015; Ledderose et al., 2013; Lefebvre et al., 2012; Molumby et al., 2016; Suo et al., 2012; Wang et al., 2002; Weiner et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about clustered protocadherin organization",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "a087ad36-5896-4579-ae97-77beb0ef872d",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C5",
+      "claim": "Clustered Pcdhs mediate neuronal survival, self-avoidance and self/nonself discrimination.",
+      "claim_type": "EXPLICIT",
+      "source": "Clustered Pcdhs, comprising the \u03b1, \u03b2, and \u03b3 subfamilies, mediate neuronal survival, self-avoidance and self/nonself discrimination, and promote dendritic arborization in neuronal cells (Emond and Jontes, 2008; Garrett et al., 2012; Kostadinov and Sanes, 2015; Ledderose et al., 2013; Lefebvre et al., 2012; Molumby et al., 2016; Suo et al., 2012; Wang et al., 2002; Weiner et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations including Emond and Jontes, 2008; Garrett et al., 2012; Kostadinov and Sanes, 2015; and others",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "22855344-61c2-42ad-9e3e-3f3fb496bc64",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C6",
+      "claim": "Clustered Pcdhs promote dendritic arborization in neuronal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Clustered Pcdhs, comprising the \u03b1, \u03b2, and \u03b3 subfamilies, mediate neuronal survival, self-avoidance and self/nonself discrimination, and promote dendritic arborization in neuronal cells (Emond and Jontes, 2008; Garrett et al., 2012; Kostadinov and Sanes, 2015; Ledderose et al., 2013; Lefebvre et al., 2012; Molumby et al., 2016; Suo et al., 2012; Wang et al., 2002; Weiner et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations including Emond and Jontes, 2008; Garrett et al., 2012; and others",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "249ad858-19ee-4b30-926a-352f5e4f7dd9",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C7",
+      "claim": "Clustered Pcdhs function analogously to insect Dscam isoforms to mediate neuronal identity.",
+      "claim_type": "EXPLICIT",
+      "source": "Clustered Pcdhs thus function analogously to insect Dscam isoforms to mediate neuronal identity (Zipursky and Sanes, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zipursky and Sanes, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "d9b6e9d5-c7b1-4b4f-827a-ef9ab4e07387",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C8",
+      "claim": "Clustered Pcdhs are broadly involved in synapse formation and maintenance, neuronal connectivity and neuronal survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Clustered Pcdhs are also broadly involved in synapse formation and maintenance, neuronal connectivity and neuronal survival (Hayashi and Takeichi, 2015; Keeler et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hayashi and Takeichi, 2015; Keeler et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "cc11a19e-e3e9-45a2-b5a8-9c292db3840d",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C9",
+      "claim": "Non-clustered Pcdhs play key roles in neuronal development.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-clustered Pcdhs play key roles in neuronal development (Keeler et al., 2015; Kim et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Keeler et al., 2015; Kim et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "b8d7363d-7581-4164-9273-7f17de8101a3",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C10",
+      "claim": "Pcdh7 is involved in germ layer differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Pcdh7 is involved in germ layer differentiation (Rashid et al., 2006; Yoshida, 2003), and Pcdh1 and Pcdh8 mediate cell sorting and migration during gastrulation (Kim et al., 1998; Kuroda et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Rashid et al., 2006; Yoshida, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "b72765b8-91dd-47d5-90a1-7fcd38c24b9e",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C11",
+      "claim": "Pcdh1 and Pcdh8 mediate cell sorting and migration during gastrulation.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Pcdh7 is involved in germ layer differentiation (Rashid et al., 2006; Yoshida, 2003), and Pcdh1 and Pcdh8 mediate cell sorting and migration during gastrulation (Kim et al., 1998; Kuroda et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kim et al., 1998; Kuroda et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "9c2a6d63-f949-4249-a66e-bd1ea20c1cc5",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C12",
+      "claim": "Both clustered and non-clustered Pcdhs control these phenotypes through homophilic interactions of their extracellular cadherin (EC) repeat domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Both clustered and non-clustered Pcdhs control these phenotypes through homophilic interactions of their extracellular cadherin (EC) repeat domains (Hirano et al., 1999; Hoshina et al., 2013; Kim et al., 1998; Kuroda et al., 2002; Schreiner and Weiner, 2010; Thu et al., 2014; Yamagata et al., 1999; Yoshida, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple citations including Hirano et al., 1999; Hoshina et al., 2013; Kim et al., 1998; and others",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "208b0ac6-3f82-407f-9047-1c54e94c11e7",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C13",
+      "claim": "In zebrafish, \u03b1 and \u03b3 Pcdhs express in overlapping but distinct brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "In zebrafish, \u03b1 and \u03b3 Pcdhs express in overlapping but distinct brain regions (Biswas et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Biswas et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "5f98429f-7ef2-45f9-b4b3-0127d718ee5a",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C14",
+      "claim": "In mammals, \u03b1 Pcdhs regulate sorting of olfactory sensory neuron axons into glomeruli, serotonergic axon maturation, and dendritic patterning in CA1 pyramidal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, \u03b1 Pcdhs regulate sorting of olfactory sensory neuron axons into glomeruli, serotonergic axon maturation, and dendritic patterning in CA1 pyramidal neurons (Hasegawa et al., 2012, 2008; Katori et al., 2009; Suo et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Hasegawa et al., 2012, 2008; Katori et al., 2009; Suo et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "acf39f82-4c38-492c-9884-4307383d1d8e",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C15",
+      "claim": "The \u03b3 subfamily is important for self/non-self discrimination in retinal starburst amacrine cells and Purkinje neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b3 subfamily is important for self/non-self discrimination in retinal starburst amacrine cells and Purkinje neurons (Kostadinov and Sanes, 2015; Lefebvre et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Kostadinov and Sanes, 2015; Lefebvre et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "333446f5-d28e-4289-a63c-8e1a3a9c9c67",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C16",
+      "claim": "The different Pcdh subfamilies may function independently or cooperatively, perhaps depending on the brain region and/or neuronal cell type.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, available data suggest that the different Pcdh subfamilies may function independently or cooperatively, perhaps depending on the brain region and/or neuronal cell type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the previously cited data about differential expression and function",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "b09a0c9f-b9ba-4ad1-bbd3-d7a1ae62c481",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C17",
+      "claim": "Pcdh\u03b3A1 and Pcdh\u03b3C3 EC1-3 structures revealed dimer interactions between EC2 and EC3.",
+      "claim_type": "EXPLICIT",
+      "source": "Our recent Pcdh\u03b3A1 and Pcdh\u03b3C3 EC1-3 structures revealed dimer interactions between EC2 and EC3 (Nicoludis et al., 2015), consistent with previous biochemical and bioinformatics data (Schreiner and Weiner, 2010; Wu, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Nicoludis et al., 2015 and consistent with Schreiner and Weiner, 2010; Wu, 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "d5259a77-0665-47ec-9a0c-54c42f662005",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C18",
+      "claim": "Sequence co-evolution analysis predicted intersubunit EC1-EC4 interactions in clustered Pcdhs.",
+      "claim_type": "EXPLICIT",
+      "source": "Using sequence co-evolution analysis, we predicted intersubunit EC1-EC4 interactions, and proposed that clustered Pcdhs form extended antiparallel homodimers engaging EC1-4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to the authors' previous work using sequence coevolution analysis",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "1c056ef2-f5e4-4fdf-abdf-490f6057f3cd",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C19",
+      "claim": "Clustered Pcdhs form extended antiparallel homodimers engaging EC1-4.",
+      "claim_type": "EXPLICIT",
+      "source": "Using sequence co-evolution analysis, we predicted intersubunit EC1-EC4 interactions, and proposed that clustered Pcdhs form extended antiparallel homodimers engaging EC1-4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on sequence coevolution analysis from the authors' previous work",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "0e7c9d32-2fec-445a-b18f-24149bc2b794",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C20",
+      "claim": "A complementary biochemical and structural study arrived at a very similar docking model for clustered Pcdhs.",
+      "claim_type": "EXPLICIT",
+      "source": "A complementary biochemical and structural study arrived at a very similar docking model (Rubinstein et al., 2015), which was recently confirmed for \u03b1 and \u03b2 clustered Pcdhs (Goodman et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rubinstein et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "cae8c1db-e85f-4b58-9b8a-0a217a060206",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C21",
+      "claim": "The antiparallel EC1-4 docking model was confirmed for \u03b1 and \u03b2 clustered Pcdhs.",
+      "claim_type": "EXPLICIT",
+      "source": "A complementary biochemical and structural study arrived at a very similar docking model (Rubinstein et al., 2015), which was recently confirmed for \u03b1 and \u03b2 clustered Pcdhs (Goodman et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Goodman et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "5cc11b22-b10c-4652-bc36-72723b5ac982",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C22",
+      "claim": "The crystal structure of Pcdh\u03b3B3 EC1-4 is the first full antiparallel dimer for a \u03b3 isoform.",
+      "claim_type": "EXPLICIT",
+      "source": "We determined the crystal structure of Pcdh\u03b3B3 EC1-4, the first full antiparallel dimer for a \u03b3 isoform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the manuscript, supported by the structural data presented",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "aa3e38b6-ecc5-4b10-9462-8c0c776864c8",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C23",
+      "claim": "Structural differences between the \u03b1, \u03b2 and \u03b3 subfamilies generate distinct modes of specificity encoding.",
+      "claim_type": "EXPLICIT",
+      "source": "We describe how structural differences between the \u03b1, \u03b2 and \u03b3 subfamilies generate distinct modes of specificity encoding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from structural analysis and comparison presented in the manuscript",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "2869965d-b22d-4099-92a1-9f1a955bd1e4",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C24",
+      "claim": "EC1/EC4 provides nonselective dimerization affinity while EC2/EC3 is generally responsible for enforcing specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "We also provide evidence that the EC1/EC4 and EC2/EC3 interfaces are functionally different: EC1/EC4 provides nonselective dimerization affinity while EC2/EC3 is generally responsible for enforcing specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple lines of evidence including structural analysis, ICR values, and computational alanine scanning",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "9abaa975-2fb7-45cd-8bfb-90412f84f745",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C25",
+      "claim": "Sequence coevolution analysis provides evidence that the EC1-4 interaction is broadly used by non-clustered Pcdhs.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we extend our sequence coevolution analysis to the non-clustered Pcdhs and provide evidence that the EC1-4 interaction is broadly used by Pcdhs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence coevolution analysis performed in the manuscript",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "f6c1cf27-b491-4fd6-b0d4-62429bc58895",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C26",
+      "claim": "In vitro-refolded recombinantly-expressed Pcdh\u03b3B3 EC1-4 (47 kDa) yielded two peaks on size exclusion chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "The in vitro-refolded recombinantly-expressed Pcdh\u03b3B3 EC1-4 (47 kDa) yielded two peaks on size exclusion chromatography (SEC; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "514cfaab-a337-431b-8985-3c92da6bb42b",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C27",
+      "claim": "Peak 1 from SEC of Pcdh\u03b3B3 EC1-4 was wide and polydisperse (~200\u2013300 kDa).",
+      "claim_type": "EXPLICIT",
+      "source": "Based on multi-angle light scattering (MALS; Figure 1\u2014figure supplement 1), peak 1 was wide and polydisperse (~200\u2013300 kDa).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by MALS data shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "298341ac-bc16-40c3-a49b-0209a8ad2981",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C28",
+      "claim": "Peak 2 from SEC of Pcdh\u03b3B3 EC1-4 was monodisperse at 80 kDa, consistent with a dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Peak 2 was monodisperse at 80 kDa \u2013 consistent with a dimer \u2013 and readily yielded a crystal structure (Figure 1\u2014source data 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by MALS data shown in Figure 1\u2014figure supplement 1 and the monomeric molecular weight of 47 kDa",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "17f000d1-ccf0-4222-9746-d981413e37a1",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C29",
+      "claim": "Each EC domain in Pcdh\u03b3B3 forms a seven-stranded Greek key \u03b2-sandwich motif.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, each EC forms a seven-stranded Greek key \u03b2-sandwich motif (Figure 1A), similarly to other clustered Pcdh structures (Goodman et al., 2016; Nicoludis et al., 2015; Rubinstein et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by the crystal structure shown in Figure 1A and consistent with other clustered Pcdh structures",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "32bc9730-9eb9-4c70-8327-33818837acbf",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C30",
+      "claim": "EC4 has a unique \u03b2-strand arrangement compared to EC1-EC3 and all known cadherin repeat structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, EC4 has a unique \u03b2-strand arrangement compared to EC1-EC3 (Figure 1B,C) and all known cadherin repeat structures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural comparison shown in Figure 1B,C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "d49f5734-1b51-4f29-9e77-d92d19458547",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C31",
+      "claim": "In EC4, strand \u03b21a is extended by 4\u20135 residues, while \u03b21b is correspondingly shortened.",
+      "claim_type": "EXPLICIT",
+      "source": "Strand \u03b21a is extended by 4\u20135 residues, while \u03b21b is correspondingly shortened.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the crystal structure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "faf9e463-3873-4d17-9840-4eda14e1bf05",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C32",
+      "claim": "In EC4, strand \u03b22 forms a continuous strand interacting with both \u03b25 and \u03b21a simultaneously, unlike in EC1-3 where it splits into \u03b22a and \u03b22b.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, while in EC1-3 strand \u03b22 splits into \u03b22a and \u03b22b, interacting with strands \u03b25 and \u03b21a, respectively, in EC4 it forms a continuous strand interacting with both simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a structural observation from the crystal structure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "5893151f-aef1-4f0e-ac99-2949871d866b",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C33",
+      "claim": "The distinct structural feature of EC4 contributes to intersubunit EC1/EC4 interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "This distinct structural feature contributes to intersubunit EC1/EC4 interactions (see below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural observations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "6f8ae8b8-226b-4182-a316-3adbe165af0e",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C34",
+      "claim": "The asymmetric unit of the Pcdh\u03b3B3 EC1-4 crystal contains a single Pcdh\u03b3B3 molecule.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the asymmetric unit contains a single Pcdh\u03b3B3 molecule, a crystallographic two-fold axis generates an antiparallel dimer with intersubunit EC1/EC4 and EC2/EC3 interactions (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the crystal structure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "aef89d91-712a-4e60-9fd9-af301f1ce96a",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C35",
+      "claim": "A crystallographic two-fold axis generates an antiparallel dimer with intersubunit EC1/EC4 and EC2/EC3 interactions in the Pcdh\u03b3B3 EC1-4 crystal.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the asymmetric unit contains a single Pcdh\u03b3B3 molecule, a crystallographic two-fold axis generates an antiparallel dimer with intersubunit EC1/EC4 and EC2/EC3 interactions (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the crystal structure shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "96b605e2-ac10-4bc6-af59-0b0542e0c786",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C36",
+      "claim": "The Pcdh\u03b3B3 EC1-4 dimer is consistent with the Pcdh\u03b3A1 EC1-3 crystal structure, validating the previously predicted interface.",
+      "claim_type": "EXPLICIT",
+      "source": "This dimer is consistent with the Pcdh\u03b3A1 EC1-3 crystal structure, validating the previously predicted interface (Nicoludis et al., 2015; Rubinstein et al., 2015), and with recent \u03b1 and \u03b2 Pcdhs structures (Goodman et al., 2016), confirming that this interaction mechanism is conserved among all clustered Pcdh subfamilies (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison with previous structures and predictions",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "02dd9cf3-05ee-499c-af8a-74badbe2d42e",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C37",
+      "claim": "The antiparallel EC1-4 interaction mechanism is conserved among all clustered Pcdh subfamilies.",
+      "claim_type": "EXPLICIT",
+      "source": "This dimer is consistent with the Pcdh\u03b3A1 EC1-3 crystal structure, validating the previously predicted interface (Nicoludis et al., 2015; Rubinstein et al., 2015), and with recent \u03b1 and \u03b2 Pcdhs structures (Goodman et al., 2016), confirming that this interaction mechanism is conserved among all clustered Pcdh subfamilies (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is confirmed by comparison with \u03b1 and \u03b2 Pcdh structures from Goodman et al., 2016",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "f4a3de6e-d4d1-44bc-8101-aa8c0569b671",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C38",
+      "claim": "Clustered Pcdh structures differ noticeably in overall twist, including subfamily-specific differences in relative EC1/EC4 orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "The structures do differ noticeably in overall twist, including subfamily-specific differences in relative EC1/EC4 orientation (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from structural comparison shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "80cfd04e-e130-48d9-8919-f8af406fabd0",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C39",
+      "claim": "The linear architecture of clustered Pcdhs enables extended antiparallel dimer interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "The linear architecture of clustered Pcdhs enables extended antiparallel dimer interfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural observations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "78b7ff33-d267-4826-aa29-18e8f7e0b68f",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C40",
+      "claim": "The tilt and azimuthal angles between adjacent clustered Pcdh repeats are distinct from those of classical cadherins.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the tilt and azimuthal angles between adjacent clustered Pcdh repeats are distinct from those of classical cadherins (Figure 1\u2014figure supplement 2) (Nicoludis et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data shown in Figure 1\u2014figure supplement 2 and citation to Nicoludis et al., 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "b2ee4562-236e-4856-b6dd-3562935d4d32",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C41",
+      "claim": "Classical cadherins typically dimerize through EC1/EC1 interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Classical cadherins, which typically dimerize through EC1/EC1 interfaces, exhibit smaller tilt angles and thus an overall curved structure (Boggon et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Boggon et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "c8affa83-ffde-4eaf-b979-9bfc0966dc9c",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C42",
+      "claim": "Classical cadherins exhibit smaller tilt angles and thus an overall curved structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Classical cadherins, which typically dimerize through EC1/EC1 interfaces, exhibit smaller tilt angles and thus an overall curved structure (Boggon et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Boggon et al., 2002",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "b499d708-3821-4250-a782-3b5d6d347bc8",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C43",
+      "claim": "EC1 and EC3 use the same face for intersubunit contacts in clustered Pcdhs.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the clustered Pcdh repeat orientation is such that EC1 and EC3 use the same face for intersubunit contacts, as do EC2 and EC4 (Figure 1\u2014figure supplement 3), suggesting that longer cadherins could readily form even more extended interfaces.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural analysis shown in Figure 1\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "15027cec-17d6-4eee-9ad9-e24cfca1cfe8",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C44",
+      "claim": "EC2 and EC4 use the same face for intersubunit contacts in clustered Pcdhs.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the clustered Pcdh repeat orientation is such that EC1 and EC3 use the same face for intersubunit contacts, as do EC2 and EC4 (Figure 1\u2014figure supplement 3), suggesting that longer cadherins could readily form even more extended interfaces.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural analysis shown in Figure 1\u2014figure supplement 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "0696e6e9-f5f0-42c6-b3ff-cbb7fa051b76",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C45",
+      "claim": "Longer cadherins could readily form even more extended interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the clustered Pcdh repeat orientation is such that EC1 and EC3 use the same face for intersubunit contacts, as do EC2 and EC4 (Figure 1\u2014figure supplement 3), suggesting that longer cadherins could readily form even more extended interfaces.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the observed structural pattern",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "64c4e328-3beb-4af8-92c8-39686f4feff4",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C46",
+      "claim": "Clustered Pcdh subfamilies control different phenotypes in vivo and have discrete expression patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Clustered Pcdh subfamilies control different phenotypes in vivo and have discrete expression patterns (Biswas et al., 2012; Keeler et al., 2015), suggesting that they encode specificity using distinct modes, which may relate to subfamily-specific structural features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Biswas et al., 2012; Keeler et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "b8dd1d67-52ff-470d-83cc-4a3274bf2932",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C47",
+      "claim": "Clustered Pcdh subfamilies encode specificity using distinct modes, which may relate to subfamily-specific structural features.",
+      "claim_type": "EXPLICIT",
+      "source": "Clustered Pcdh subfamilies control different phenotypes in vivo and have discrete expression patterns (Biswas et al., 2012; Keeler et al., 2015), suggesting that they encode specificity using distinct modes, which may relate to subfamily-specific structural features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the observed phenotypic and expression differences",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "7886476c-dda4-4787-b7c1-b14546f7d51c",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C48",
+      "claim": "The isoform conservation ratio (ICR) quantifies the extent to which individual residue positions are conserved among orthologs and diversified in paralogs.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate this hypothesis, we calculated the isoform conservation ratio (ICR) within individual subfamilies, which quantifies the extent to which individual residue positions are conserved among orthologs (same isoform in different species) and diversified in paralogs (different isoforms in the same species) (Nicoludis et al., 2015), resulting in three ICR value sets for the \u03b1, \u03b2 and \u03b3 subfamilies, respectively (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a method from the authors' previous work (Nicoludis et al., 2015)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "00afa85b-301f-4cec-83fb-4dc66448534b",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C49",
+      "claim": "In \u03b1 isoforms, the EC2 \u03b24-\u03b25 loop is enriched in high-ICR and chemically diverse residues.",
+      "claim_type": "EXPLICIT",
+      "source": "In \u03b1 isoforms, the EC2 \u03b24-\u03b25 loop is enriched in high-ICR and chemically diverse residues, and differs in conformation in the Pcdh\u03b14 and Pcdh\u03b17 structures (Figure 2B): the Pcdh\u03b14 EC2 \u03b24-\u03b25 loop contacts \u03b21b of EC3, while the corresponding loop in Pcdh\u03b17 does not, suggesting variable interactions in other isoforms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ICR analysis and structural comparison shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "0d712002-b06e-4ec3-98e6-06fc2f14dcce",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C50",
+      "claim": "The EC2 \u03b24-\u03b25 loop differs in conformation in the Pcdh\u03b14 and Pcdh\u03b17 structures.",
+      "claim_type": "EXPLICIT",
+      "source": "In \u03b1 isoforms, the EC2 \u03b24-\u03b25 loop is enriched in high-ICR and chemically diverse residues, and differs in conformation in the Pcdh\u03b14 and Pcdh\u03b17 structures (Figure 2B): the Pcdh\u03b14 EC2 \u03b24-\u03b25 loop contacts \u03b21b of EC3, while the corresponding loop in Pcdh\u03b17 does not, suggesting variable interactions in other isoforms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural comparison shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "bc227112-fc76-4bf3-bac6-36d90d348383",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C51",
+      "claim": "The Pcdh\u03b14 EC2 \u03b24-\u03b25 loop contacts \u03b21b of EC3, while the corresponding loop in Pcdh\u03b17 does not.",
+      "claim_type": "EXPLICIT",
+      "source": "In \u03b1 isoforms, the EC2 \u03b24-\u03b25 loop is enriched in high-ICR and chemically diverse residues, and differs in conformation in the Pcdh\u03b14 and Pcdh\u03b17 structures (Figure 2B): the Pcdh\u03b14 EC2 \u03b24-\u03b25 loop contacts \u03b21b of EC3, while the corresponding loop in Pcdh\u03b17 does not, suggesting variable interactions in other isoforms.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural comparison shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "2744a37f-e99f-42a0-96ef-48e7b8b51eae",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C52",
+      "claim": "The EC2 \u03b24-\u03b25 loop may have evolved to generate diversity within \u03b1 isoforms, but not in other subfamilies.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this loop may have evolved to generate diversity within \u03b1 isoforms, but not in other subfamilies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed differences in ICR values and structure between subfamilies",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "4f84109d-e520-4a6d-b848-15d3d97af914",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C53",
+      "claim": "In \u03b2 isoforms, the Phe-X10-Phe loop between \u03b23 and \u03b24 of EC3 has limited diversity compared to \u03b1 and \u03b3 isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "In \u03b2 isoforms, the Phe-X10-Phe loop between \u03b23 and \u03b24 of EC3 has limited diversity compared to \u03b1 and \u03b3 isoforms and wedges between the EC2 \u03b24-\u03b25 loop and \u03b22b strand (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ICR analysis and structural observation shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "533aafd5-79a5-4086-b750-facb618af1e2",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C54",
+      "claim": "In \u03b2 isoforms, the Phe-X10-Phe loop wedges between the EC2 \u03b24-\u03b25 loop and \u03b22b strand.",
+      "claim_type": "EXPLICIT",
+      "source": "In \u03b2 isoforms, the Phe-X10-Phe loop between \u03b23 and \u03b24 of EC3 has limited diversity compared to \u03b1 and \u03b3 isoforms and wedges between the EC2 \u03b24-\u03b25 loop and \u03b22b strand (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural observation shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "425ee146-a93d-4951-b49f-ae110876a8ff",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C55",
+      "claim": "The Phe-X10-Phe loop of \u03b1 and \u03b3 isoforms has a helical conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the Phe-X10-Phe loop of \u03b1 and \u03b3 isoforms has a helical conformation, and has residues with higher ICR values and greater chemical diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by structural observation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "62838fb3-9616-407a-af04-3b21c7ec58fb",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C56",
+      "claim": "The Phe-X10-Phe loop of \u03b1 and \u03b3 isoforms has residues with higher ICR values and greater chemical diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the Phe-X10-Phe loop of \u03b1 and \u03b3 isoforms has a helical conformation, and has residues with higher ICR values and greater chemical diversity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ICR analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "6b7c03a2-8fdf-498f-be8b-22c50c24b30c",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C57",
+      "claim": "Alterations in secondary structure can affect how specificity is encoded within the subfamilies.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore alterations in secondary structure can affect how specificity is encoded within the subfamilies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed structural differences and their correlation with ICR values",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "3b6de4fd-d6c4-4644-a952-78fb8649a4ef",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C58",
+      "claim": "The short loop following the extended \u03b21a strand in EC4 contacts the EC1 \u03b26-\u03b27 loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The short loop following the extended \u03b21a strand in EC4 contacts the EC1 \u03b26-\u03b27 loop (Figure 2D), and there are large structural differences in the EC1/EC4 interaction between subfamilies (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural observation shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "69a74e14-7e21-41ff-b46c-beb3063a6271",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C59",
+      "claim": "There are large structural differences in the EC1/EC4 interaction between subfamilies.",
+      "claim_type": "EXPLICIT",
+      "source": "The short loop following the extended \u03b21a strand in EC4 contacts the EC1 \u03b26-\u03b27 loop (Figure 2D), and there are large structural differences in the EC1/EC4 interaction between subfamilies (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural comparison shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "66a37570-0a6d-450a-a73a-d6f1f174bd32",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C60",
+      "claim": "\u03b1 Isoforms have low-ICR residues at the EC1/EC4 interface.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1 Isoforms have low-ICR residues at this interface, whereas \u03b2 and \u03b3 isoforms have higher ICR value residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ICR analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "00105944-eb8b-4749-9774-fb4b18534a17",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C61",
+      "claim": "\u03b2 and \u03b3 isoforms have higher ICR value residues at the EC1/EC4 interface.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b1 Isoforms have low-ICR residues at this interface, whereas \u03b2 and \u03b3 isoforms have higher ICR value residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ICR analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "2536b7a8-0df1-4968-a0d9-82803e08cbad",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C62",
+      "claim": "The large structural differences in EC1/EC4 drive inter-subfamily specificity, on which may be layered additional isoform specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "This thus suggests that the large structural differences drive inter-subfamily specificity, on which may be layered additional isoform specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed structural differences and ICR patterns",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "b88c21a8-38f7-4668-bf70-2e1096b26531",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C63",
+      "claim": "Sequence regions with high isoform-specific conservation correlate with interface contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cases, sequence regions with high isoform-specific conservation correlate with interface contacts, revealing the interplay between dimer structure and how subfamilies encode specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the ICR analysis and structural observations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "71c7b563-4d94-40e3-9994-70e6b3f8c61a",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C64",
+      "claim": "Diversity in the composition and conformation of loop regions provides distinct specificity mechanisms to subfamilies.",
+      "claim_type": "EXPLICIT",
+      "source": "Diversity in the composition and conformation of loop regions provides distinct specificity mechanisms to subfamilies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural and sequence analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "8f3f9f31-f642-4f54-a9a8-9fa49f362015",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C65",
+      "claim": "Phylogenetic analysis indicates that isoforms are more similar within than across subfamilies.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic analysis indicates that isoforms are more similar within than across subfamilies (Sotomayor et al., 2014; Wu, 2005), and the available structures show that the interface architecture is more similar within subfamilies as well (Figure 1E) (Goodman et al., 2016; Nicoludis et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sotomayor et al., 2014; Wu, 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "7f44a99a-af77-4767-bfb3-84205edcd3ef",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C66",
+      "claim": "The interface architecture is more similar within subfamilies than across subfamilies.",
+      "claim_type": "EXPLICIT",
+      "source": "Phylogenetic analysis indicates that isoforms are more similar within than across subfamilies (Sotomayor et al., 2014; Wu, 2005), and the available structures show that the interface architecture is more similar within subfamilies as well (Figure 1E) (Goodman et al., 2016; Nicoludis et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural comparison shown in Figure 1E and citations to Goodman et al., 2016; Nicoludis et al., 2015",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "c2b2a590-7fd1-44d0-8fdc-da066aa8d01e",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C67",
+      "claim": "The dimer interface seen in the Pcdh\u03b3C3 EC1-3 crystal structure may represent a unique dimer architecture for C-type isoforms.",
+      "claim_type": "EXPLICIT",
+      "source": "With this insight, the dimer interface seen in the Pcdh\u03b3C3 EC1-3 crystal structure may represent a unique dimer architecture for C-type isoforms (Nicoludis et al., 2015), as these isoforms are transcriptionally, functionally and evolutionarily distinct from the subfamilies in which they reside (Chen et al., 2012; Frank et al., 2005; Kaneko et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the structural observation and the known distinctiveness of C-type isoforms",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "a831b1b8-53db-4c6a-aa63-008d9e7031f6",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C68",
+      "claim": "C-type isoforms are transcriptionally, functionally and evolutionarily distinct from the subfamilies in which they reside.",
+      "claim_type": "EXPLICIT",
+      "source": "With this insight, the dimer interface seen in the Pcdh\u03b3C3 EC1-3 crystal structure may represent a unique dimer architecture for C-type isoforms (Nicoludis et al., 2015), as these isoforms are transcriptionally, functionally and evolutionarily distinct from the subfamilies in which they reside (Chen et al., 2012; Frank et al., 2005; Kaneko et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Chen et al., 2012; Frank et al., 2005; Kaneko et al., 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "4b0c520a-a38d-4d65-ab7c-61155327d21c",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C69",
+      "claim": "Distinct expression of the clustered Pcdh subfamilies in different tissues and at different developmental stages supports the necessity for intra-subfamily specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Distinct expression of the clustered Pcdh subfamilies in different tissues and at different developmental stages supports the necessity for intra-subfamily specificity (Biswas et al., 2012; Frank et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Biswas et al., 2012; Frank et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "7e4ded88-74dd-4675-b309-1c4add5efa26",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C70",
+      "claim": "Differences in subfamily structure and isoform-specific conservation suggest that homophilic specificity mechanisms emerged independently in each subfamily through diversification of subfamily-specific interface contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Differences in subfamily structure and isoform-specific conservation suggest that homophilic specificity mechanisms emerged independently in each subfamily through diversification of subfamily-specific interface contacts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural and sequence analysis",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "b9713012-a64c-44d3-b231-e4bf3b6ce155",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C71",
+      "claim": "The EC2/EC3 interaction is integral to clustered Pcdh dimerization specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "The EC2/EC3 interaction is integral to clustered Pcdh dimerization specificity, as evidenced by bioinformatics and cell-aggregation assays (Nicoludis et al., 2015; Rubinstein et al., 2015; Schreiner and Weiner, 2010; Thu et al., 2014; Wu, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Nicoludis et al., 2015; Rubinstein et al., 2015; Schreiner and Weiner, 2010; Thu et al., 2014; Wu, 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "d20ec7b1-5d02-4d47-9a6b-7b19f57cb6c3",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C72",
+      "claim": "For all isoforms with available structures, fewer EC1/EC4 interface residues have high isoform-specific conservation compared to the EC2/EC3 interface residues.",
+      "claim_type": "EXPLICIT",
+      "source": "First, for all isoforms with available structures, fewer EC1/EC4 interface residues have high isoform-specific conservation compared to the EC2/EC3 interface residues (Figure 2A, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ICR analysis shown in Figure 2A and Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "97ec53dc-f85c-4190-801b-91b314456cdc",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C73",
+      "claim": "Interface residues shared by most isoforms are more hydrophobic in EC1/EC4 than in EC2/EC3.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, interface residues shared by most isoforms are more hydrophobic in EC1/EC4 than in EC2/EC3 (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by amino acid frequency analysis shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "0d078526-1caf-465b-89e2-87ff5c82b855",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C74",
+      "claim": "The Pcdh\u03b3B3 EC1/EC4 interface is much larger (BSA = 976 \u00c52 per protomer) than the EC2/EC3 interface (555 \u00c52 per protomer).",
+      "claim_type": "EXPLICIT",
+      "source": "Third, the Pcdh\u03b3B3 EC1/EC4 interface is much larger (BSA = 976 \u00c52 per protomer) than the EC2/EC3 interface (555 \u00c52 per protomer).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from the crystal structure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "dc5af98c-1e54-4aac-9de1-966a620e35c2",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C75",
+      "claim": "The lack of isoform specificity, the hydrophobic nature, and large interface area of EC1/EC4 together suggest that the EC1/EC4 interface promotes binding with little specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "The lack of isoform specificity, the hydrophobic nature, and large interface area together suggest that the EC1/EC4 interface promotes binding with little specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the three observations about EC1/EC4",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "53d30925-3ef3-4f33-a34f-81b2d646b3fa",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C76",
+      "claim": "Two subsets of interface residues segregate from the main cluster: high-\u0394\u0394Gcalc and low-ICR residues ('affinity') and low-\u0394\u0394Gcalc and high-ICR residues ('specificity').",
+      "claim_type": "EXPLICIT",
+      "source": "Using the five available EC1-4 interfaces, two residue groups emerged from comparing the ICR values to \u0394\u0394Gcalc: one group with low ICR values and high \u0394\u0394Gcalc, the other with high ICR values and low \u0394\u0394Gcalc (Figure 3B). These residue groups can be regarded as contributing to the affinity and specificity of the complex, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational alanine scanning analysis shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "6940ac08-7a4f-4ac2-9677-7ae80001894e",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C77",
+      "claim": "Predicted affinity residues concentrated on EC1 and EC4, and predicted specificity residues on EC2 and EC3.",
+      "claim_type": "EXPLICIT",
+      "source": "When mapped on Pcdh\u03b3B3, predicted affinity residues concentrated on EC1 and EC4, and predicted specificity residues on EC2 and EC3, corroborating the distinction between EC1/EC4 and EC2/EC3 interactions (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mapping of computational alanine scanning results shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "060e925a-b4dd-4e31-8d90-4252c2220914",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C78",
+      "claim": "In the Pcdh\u03b3B3 EC1/EC4 interface, F86 wedges into a cavity created by hydrophobic EC4 residues.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Pcdh\u03b3B3 EC1/EC4 interface, F86, one of the predicted affinity-driving residues from EC1, wedges into a cavity created by hydrophobic EC4 residues (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural observation shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "04d079b1-ba34-4092-822f-fd22139d4ca1",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C79",
+      "claim": "A Pcdh\u03b3B3 EC1-4 F86A mutant disrupted dimerization, resulting in a monomeric protein as measured by MALS.",
+      "claim_type": "EXPLICIT",
+      "source": "A Pcdh\u03b3B3 EC1-4 F86A mutant indeed disrupted dimerization, resulting in a monomeric protein as measured by MALS (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by MALS data shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "07dc5f18-d8cf-47c7-aa8e-246315771e14",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C80",
+      "claim": "The hydrophobic interactions between EC1 and EC4 are crucial to dimerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the hydrophobic interactions between EC1 and EC4 are crucial to dimerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the F86A mutant experiment",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "6dd3963d-06c6-4ccd-bfa9-7469bde4b602",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C81",
+      "claim": "Purified EC1-3 constructs failed to dimerize in vitro whereas EC1-4 constructs did.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogously, purified EC1-3 constructs failed to dimerize in vitro whereas EC1-4 constructs did (Nicoludis et al., 2015; Rubinstein et al., 2015), and K562 cells expressing \u0394EC1 or \u0394EC4-6 constructs did not aggregate while cells expressing chimeras in which EC1 and EC4 derived from different paralogs did (Schreiner and Weiner, 2010; Thu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Nicoludis et al., 2015; Rubinstein et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "87800623-dfce-4338-bcf5-86e0d2f200f1",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C82",
+      "claim": "K562 cells expressing \u0394EC1 or \u0394EC4-6 constructs did not aggregate while cells expressing chimeras in which EC1 and EC4 derived from different paralogs did.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogously, purified EC1-3 constructs failed to dimerize in vitro whereas EC1-4 constructs did (Nicoludis et al., 2015; Rubinstein et al., 2015), and K562 cells expressing \u0394EC1 or \u0394EC4-6 constructs did not aggregate while cells expressing chimeras in which EC1 and EC4 derived from different paralogs did (Schreiner and Weiner, 2010; Thu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schreiner and Weiner, 2010; Thu et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "3f19e87b-defc-4ab4-b559-9e3834f2dd4a",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C83",
+      "claim": "The EC1/EC4 interaction is not strictly required for the specificity of dimerization but it drives dimerization affinity through non-specific hydrophobic interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results indicate that the EC1/EC4 interaction is not strictly required for the specificity of dimerization but it drives dimerization affinity through non-specific hydrophobic interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple lines of evidence including the F86A mutant and previous studies",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "b6af2bb9-475b-470d-8a44-dc12db840554",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C84",
+      "claim": "Non-clustered Pcdhs include the \u03b4-1 (Pcdh1, Pcdh7, Pcdh9, Pcdh11) and \u03b4-2 (Pcdh8, Pcdh10, Pcdh17, Pcdh18, Pcdh19) families.",
+      "claim_type": "EXPLICIT",
+      "source": "These include the \u03b4-1 (Pcdh1, Pcdh7, Pcdh9, Pcdh11) and \u03b4-2 (Pcdh8, Pcdh10, Pcdh17, Pcdh18, Pcdh19) families that are integral to the development and maintenance of the nervous system (Keeler et al., 2015; Kim et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about non-clustered protocadherin classification",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "8a461d48-63ec-4752-8b6f-1c524df8ee4d",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C85",
+      "claim": "\u03b4-1 and \u03b4-2 Pcdh families are integral to the development and maintenance of the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "These include the \u03b4-1 (Pcdh1, Pcdh7, Pcdh9, Pcdh11) and \u03b4-2 (Pcdh8, Pcdh10, Pcdh17, Pcdh18, Pcdh19) families that are integral to the development and maintenance of the nervous system (Keeler et al., 2015; Kim et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Keeler et al., 2015; Kim et al., 2011",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "2befbf08-08e2-45be-aa4c-25576fdfeaa3",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C86",
+      "claim": "Sequence coevolution analysis successfully predicted the clustered Pcdh interface.",
+      "claim_type": "EXPLICIT",
+      "source": "We used sequence coevolution analysis, which successfully predicted the clustered Pcdh interface (Nicoludis et al., 2015) (Figure 4\u2014figure supplement 1),to look for evidence of an antiparallel interface in non-clustered Pcdhs (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Nicoludis et al., 2015 and shown in Figure 4\u2014figure supplement 1",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "bf244fd3-ec1a-4ca3-a9ec-9a48183c31c9",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C87",
+      "claim": "Most covarying residue pairs in non-clustered Pcdhs were intra-domain structural contacts of the well-conserved cadherin fold.",
+      "claim_type": "EXPLICIT",
+      "source": "As in clustered Pcdhs, most covarying residue pairs in non-clustered Pcdhs were intra-domain structural contacts of the well-conserved cadherin fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the sequence coevolution analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "57440502-d8e9-4dcc-8e7d-34ca7642779c",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C88",
+      "claim": "Several covarying pairs in non-clustered Pcdhs are found between EC2 and EC3, or EC1 and EC4, similar to those observed for the clustered Pcdhs.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, several covarying pairs are found between EC2 and EC3, or EC1 and EC4, similar to those observed for the clustered Pcdhs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the sequence coevolution analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "8096e1dc-052f-487d-a866-a19cb687ae03",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C89",
+      "claim": "When mapped onto the Pcdh\u03b3B3 dimer, covarying pairs in non-clustered Pcdhs are somewhat further apart than true interface contacts.",
+      "claim_type": "EXPLICIT",
+      "source": "When mapped onto the Pcdh\u03b3B3 dimer, these covarying pairs are somewhat further apart than true interface contacts (Figure 4B), which could be due to differences in dimerization interfaces, as we observe between the clustered Pcdh families, or in the \u03b4-1 or \u03b4-2 Pcdhs secondary structure, for which there are no available structures.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by mapping shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "29b67171-f823-40f5-913d-01d4b472d159",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C90",
+      "claim": "Sequence coevolution analysis predicts an antiparallel EC1-4 interaction in members of the non-clustered Pcdhs.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis thus predicts an antiparallel EC1-4 interaction in members of the non-clustered Pcdhs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the sequence coevolution analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "9e40beb1-99bf-4e70-8ff0-cc6d056c756b",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C91",
+      "claim": "Maximum parsimony suggests that the ancestral Pcdh used the antiparallel EC1-4 dimer interaction.",
+      "claim_type": "EXPLICIT",
+      "source": "However maximum parsimony suggests that the ancestral Pcdh used the antiparallel EC1-4 dimer interaction, and Pcdh members which do not show this interaction mechanism either diverged before it evolved or lost it subsequently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on evolutionary reasoning",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "7e768dd1-e960-4fa0-8462-488a31c56e8a",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C92",
+      "claim": "The predicted EC1/EC4 interface residues in non-clustered Pcdhs are predominantly hydrophobic.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted EC1/EC4 interface residues are predominantly hydrophobic, while EC2/EC3 residues have more polar and ionic character (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by amino acid frequency analysis shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "9a6722fe-c690-4a20-ad3e-19ec4316b04b",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C93",
+      "claim": "The predicted EC2/EC3 interface residues in non-clustered Pcdhs have more polar and ionic character.",
+      "claim_type": "EXPLICIT",
+      "source": "The predicted EC1/EC4 interface residues are predominantly hydrophobic, while EC2/EC3 residues have more polar and ionic character (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by amino acid frequency analysis shown in Figure 4C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "243395a4-e364-41ad-bc74-6254b56677d4",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C94",
+      "claim": "Positions 41 and 77 in EC1 and 320, 321, 371 and 373 in EC4 are more hydrophobic in non-clustered than clustered Pcdhs.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, positions 41 and 77 in EC1 and 320, 321, 371 and 373 in EC4 are more hydrophobic in non-clustered than clustered Pcdhs, indicating that these may form contacts in some non-clustered Pcdhs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the amino acid frequency analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "3b194c9c-b706-4497-bc52-ea1ff353c649",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C95",
+      "claim": "In non-clustered Pcdhs, like in the clustered Pcdhs, the EC1/EC4 interaction may promote dimer affinity while the EC2/EC3 interaction provides specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, like in the clustered Pcdhs, the EC1/EC4 interaction may promote dimer affinity while the EC2/EC3 interaction provides specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed similarity in interface composition between clustered and non-clustered Pcdhs",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "35151f10-c57a-4f9b-aa4b-94a7609d385f",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C96",
+      "claim": "The Pcdh\u03b3B3 EC1-4 structure confirms the sequence coevolution analysis, demonstrating the robustness of the analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our structure of Pcdh\u03b3B3 EC1-4 confirms our sequence coevolution analysis, demonstrating the robustness of the analysis and revealing the molecular details of this interaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the agreement between the structure and the prediction",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "6ac5164d-a87e-4d21-9e54-38906301d21e",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C97",
+      "claim": "Unlike the Dscams, where isoforms vary at specific alternatively-spliced regions, the clustered Pcdh subfamilies are structurally diverse.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the Dscams, where isoforms vary at specific alternatively-spliced regions (Li et al., 2016; Meijers et al., 2007; Sawaya et al., 2008; Wojtowicz et al., 2007), the clustered Pcdh subfamilies are structurally diverse, and thus can encode specificity in different ways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with Dscams supported by citations to Li et al., 2016; Meijers et al., 2007; Sawaya et al., 2008; Wojtowicz et al., 2007",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "8e1a200c-ff49-42f0-ad40-e8861cec9c73",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C98",
+      "claim": "Clustered Pcdh subfamilies can encode specificity in different ways.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the Dscams, where isoforms vary at specific alternatively-spliced regions (Li et al., 2016; Meijers et al., 2007; Sawaya et al., 2008; Wojtowicz et al., 2007), the clustered Pcdh subfamilies are structurally diverse, and thus can encode specificity in different ways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed structural diversity",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "2bdf1005-429b-4aee-b8b4-35464a60e1df",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C99",
+      "claim": "A hydrophobic interaction between EC1 and EC4 contributes to dimerization affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a hydrophobic interaction between EC1 and EC4 that contributes to dimerization affinity, whereas its conservation among clustered Pcdh isoforms suggests that this interaction is not a driver of specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the structural analysis and mutagenesis experiments",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "935830b5-d3a4-4e45-8795-b99e4fc732d5",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C100",
+      "claim": "The conservation of the EC1/EC4 hydrophobic interaction among clustered Pcdh isoforms suggests that this interaction is not a driver of specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified a hydrophobic interaction between EC1 and EC4 that contributes to dimerization affinity, whereas its conservation among clustered Pcdh isoforms suggests that this interaction is not a driver of specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the conservation pattern",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "e1262323-c3f1-4910-a242-bf2746022106",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C101",
+      "claim": "Conserved hydrophobic EC1/EC4 interactions play a general role in affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our data support a general role for conserved hydrophobic EC1/EC4 interactions in affinity, and for highly diversified polar EC2/EC3 contacts in specificity, and sequence analyses suggest that this is conserved in at least some non-clustered Pcdhs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple lines of evidence including structural analysis, ICR values, computational alanine scanning, and mutagenesis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "4dfba24f-058b-46c3-a15b-141ae5a48096",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C102",
+      "claim": "Highly diversified polar EC2/EC3 contacts play a general role in specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our data support a general role for conserved hydrophobic EC1/EC4 interactions in affinity, and for highly diversified polar EC2/EC3 contacts in specificity, and sequence analyses suggest that this is conserved in at least some non-clustered Pcdhs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from multiple lines of evidence including structural analysis, ICR values, and computational alanine scanning",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "f9514ec0-16cd-4aed-aed5-e09d3287486d",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C103",
+      "claim": "The functional distinction between EC1/EC4 (affinity) and EC2/EC3 (specificity) is conserved in at least some non-clustered Pcdhs.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our data support a general role for conserved hydrophobic EC1/EC4 interactions in affinity, and for highly diversified polar EC2/EC3 contacts in specificity, and sequence analyses suggest that this is conserved in at least some non-clustered Pcdhs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the sequence coevolution analysis of non-clustered Pcdhs",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "f661785b-7005-47d0-80cd-4946302255ef",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C104",
+      "claim": "Human Pcdh\u03b3B3 EC1-4 (residues 1\u2013414, not counting the signal peptide) was cloned into pET21 with a C-terminal hexahistidine tag.",
+      "claim_type": "EXPLICIT",
+      "source": "Human Pcdh\u03b3B3 EC1-4 (residues 1\u2013414, not counting the signal peptide) was cloned into pET21 with a C-terminal hexahistidine tag, expressed in BL21 Gold (DE3) Escherichia coli cells in terrific broth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "6ccfbaf6-a464-43dc-9508-879cca4e5adb",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C105",
+      "claim": "Pcdh\u03b3B3 EC1-4 was expressed in BL21 Gold (DE3) Escherichia coli cells in terrific broth.",
+      "claim_type": "EXPLICIT",
+      "source": "Human Pcdh\u03b3B3 EC1-4 (residues 1\u2013414, not counting the signal peptide) was cloned into pET21 with a C-terminal hexahistidine tag, expressed in BL21 Gold (DE3) Escherichia coli cells in terrific broth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "f5b37e20-b8a1-4c51-b05a-f7b1acdac356",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C106",
+      "claim": "Crystals of Pcdh\u03b3B3 EC1-4 were obtained by vapor diffusion at room temperature in 0.1 M HEPES pH 7, 4% ethylene glycol, and 5% polyethylene glycol monomethyl ether 500.",
+      "claim_type": "EXPLICIT",
+      "source": "Crystals were obtained by vapor diffusion at room temperature in 0.1 M HEPES pH 7, 4% ethylene glycol, and 5% polyethylene glycol monomethyl ether 500 in a 0.3 \u03bcL protein (12 mg/mL) to 0.3 \u03bcL reservoir drop, then cryoprotected with reservoir with 20% glycerol before flash cooling in liquid N2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "f5389339-22e8-4616-afd4-1ce39c598157",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C107",
+      "claim": "The Pcdh\u03b3B3 EC1-4 structure was determined by an iterative molecular replacement search with single domains of the Pcdh\u03b3A1 EC1-3 structure (PDBID 4zi9) in PHENIX.",
+      "claim_type": "EXPLICIT",
+      "source": "The Pcdh\u03b3B3 EC1-4 structure was determined by an iterative molecular replacement search with single domains of the Pcdh\u03b3A1 EC1-3 structure (PDBID 4zi9) in PHENIX (Adams et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "481711bd-8c81-4e46-a238-8a4cba7f9f54",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C108",
+      "claim": "A HEPES molecule was found near the EC2/EC3 interface in the Pcdh\u03b3B3 structure that forms a salt bridge with N253 and N155.",
+      "claim_type": "EXPLICIT",
+      "source": "In the structure, we found a HEPES molecule near the EC2/EC3 interface that forms a salt bridge with N253 and N155 (Figure 1\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by structural observation shown in Figure 1\u2014figure supplement 4",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "48a03baf-54db-4ca8-bdb0-ad79851164c6",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C109",
+      "claim": "HEPES is not required for dimerization of Pcdh\u03b3B3 EC1-4.",
+      "claim_type": "EXPLICIT",
+      "source": "MALS data were collected with Tris as the buffer (Figure 1\u2014figure supplement 1), indicating that HEPES is not required for dimerization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by MALS data collected in Tris buffer shown in Figure 1\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "9e490065-15fc-42ef-aef9-a34c581edb01",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C110",
+      "claim": "The clustered and non-clustered Pcdh alignments had effective sequences numbers of 2660 and 405.5, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The clustered and non-clustered Pcdh alignments had 2660 and 405.5 effective non-redundant sequences, respectively; sequences were considered redundant and downweighted when more than 90% identical over their full length (Hopf et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the sequence analysis methods and results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "cc025c9e-c4e6-422b-95ed-1804c954e3c9",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C111",
+      "claim": "For the clustered Pcdh alignment, 83 non-local contacts fall above a threshold of 80% precision of the intra-domain evolutionary couplings.",
+      "claim_type": "EXPLICIT",
+      "source": "For the clustered Pcdh alignment, 83 non-local (more than five residues apart) contacts fall above a threshold of 80% precision of the intra-domain evolutionary couplings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the sequence coevolution analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "3f36ab7f-b1f0-4ed6-95c7-4eafb8a297f2",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C112",
+      "claim": "Based on the same 80% precision threshold, the top 38 non-local ECs are significant in the non-clustered Pcdh alignment.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the same 80% precision threshold, the top 38 non-local ECs are significant in the non-clustered Pcdh alignment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the sequence coevolution analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "df83ffa8-65df-46a1-bd23-3069a75ab792",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C113",
+      "claim": "The EC1-4 antiparallel homodimer is a general interaction strategy that evolved before the divergence of distinct protocadherin families.",
+      "claim_type": "EXPLICIT",
+      "source": "We thus deduce that the EC1-4 antiparallel homodimer is a general interaction strategy that evolved before the divergence of these distinct protocadherin families.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the sequence coevolution analysis and structural comparisons",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "9edf9729-ec31-4f02-ae12-506bab41df8b",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C114",
+      "claim": "Subfamilies encode specificity through diversification of loop region structure and composition in EC2 and EC3.",
+      "claim_type": "EXPLICIT",
+      "source": "Structure and sequence comparisons of \u03b1, \u03b2, and \u03b3 clustered Pcdh isoforms illustrate that subfamilies encode specificity in distinct ways through diversification of loop region structure and composition in EC2 and EC3, which contains isoform-specific conservation of primarily polar residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from structural and sequence analysis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "3538b7b1-be4f-4f6d-99d8-dab8e5b886d6",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C115",
+      "claim": "EC2 and EC3 contain isoform-specific conservation of primarily polar residues.",
+      "claim_type": "EXPLICIT",
+      "source": "Structure and sequence comparisons of \u03b1, \u03b2, and \u03b3 clustered Pcdh isoforms illustrate that subfamilies encode specificity in distinct ways through diversification of loop region structure and composition in EC2 and EC3, which contains isoform-specific conservation of primarily polar residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from ICR analysis and amino acid frequency analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "15b93889-679b-45b6-841e-1c07e30ee446",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "claim_id": "C116",
+      "claim": "The EC1/EC4 interface comprises hydrophobic interactions that provide non-selective dimerization affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the EC1/EC4 interface comprises hydrophobic interactions that provide non-selective dimerization affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from structural analysis, ICR values, computational alanine scanning, and mutagenesis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1d343ecb-e836-4115-b425-aa1d0a28a85d",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors determined the crystal structure of Pcdh\u03b3B3 EC1-4, representing the first complete antiparallel dimer structure for a \u03b3 subfamily isoform. The structure reveals that each EC domain forms a seven-stranded Greek key \u03b2-sandwich motif, with EC4 displaying a unique \u03b2-strand arrangement. The crystallographic dimer shows antiparallel EC1/EC4 and EC2/EC3 interactions, consistent with previous predictions and structures from \u03b1 and \u03b2 subfamilies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C37 and C104-C107 provide comprehensive structural data including SEC-MALS characterization (C26-C28), crystallographic details (C34-C35, C106-C107), and structural comparisons with other subfamilies (C36-C37). The structure validates previous predictions and confirms conservation of the antiparallel EC1-4 interaction mechanism across clustered Pcdh subfamilies. The experimental methods are well-documented and the structural observations are internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "98eab1f6-cb7a-47b0-8ab3-725d276100d3",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Clustered Pcdh structures exhibit subfamily-specific differences in overall twist and EC1/EC4 orientation. The linear architecture of clustered Pcdhs, with distinct tilt and azimuthal angles compared to classical cadherins, enables extended antiparallel dimer interfaces. EC1 and EC3 use the same face for intersubunit contacts, as do EC2 and EC4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C44 are supported by structural comparisons shown in Figures 1D-E and Figure 1\u2014figure supplement 2-3. The observations about repeat orientation and interface architecture are directly derived from crystallographic data. Claim C45 is speculative but reasonably inferred from the observed structural pattern. The comparison with classical cadherins (C41-C42) is appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "38375bf3-c180-4a2a-98de-ff8162ec934e",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Clustered Pcdh subfamilies encode specificity through distinct structural mechanisms. Using isoform conservation ratio (ICR) analysis, the authors identified subfamily-specific features: \u03b1 isoforms show high ICR in the EC2 \u03b24-\u03b25 loop with variable conformations; \u03b2 isoforms have a conserved Phe-X10-Phe loop in EC3 with limited diversity; and \u03b2/\u03b3 isoforms show higher ICR at the EC1/EC4 interface compared to \u03b1. These structural differences correlate with regions of high isoform-specific conservation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C64 present a coherent analysis combining ICR calculations (C48), structural observations (C49-C61), and evolutionary inferences (C62-C64). The ICR method is properly cited (C48), and the structural observations are supported by Figures 2A-D. The correlations between sequence conservation and interface contacts (C63) are demonstrated through multiple examples. The conclusions about distinct specificity mechanisms (C64, C70) are reasonable inferences from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "edb8fe99-c2e2-457f-972c-31ec0e1e4cef",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The EC1/EC4 interface provides non-selective dimerization affinity through conserved hydrophobic interactions, while EC2/EC3 is responsible for specificity. Evidence includes: fewer EC1/EC4 residues with high ICR values, more hydrophobic composition at EC1/EC4, larger buried surface area at EC1/EC4 (976 \u00c5\u00b2 vs 555 \u00c5\u00b2), computational alanine scanning identifying affinity vs specificity residues, and experimental validation showing F86A mutation disrupts dimerization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C83 present multiple converging lines of evidence: ICR analysis (C72), amino acid composition (C73), interface size measurements (C74), computational predictions (C76-C77), structural observations (C78), and experimental mutagenesis (C79-C80). The F86A mutant provides direct experimental validation of the affinity role of EC1/EC4. Previous studies (C81-C82) corroborate these findings. The conclusion (C83) is well-supported by the integrated evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "174b3b24-01c6-4c0e-b7c9-ed8e3278e4d1",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Sequence coevolution analysis predicts that the antiparallel EC1-4 interaction extends to non-clustered Pcdhs (\u03b4-1 and \u03b4-2 families). The analysis identified covarying residue pairs between EC1-EC4 and EC2-EC3 similar to clustered Pcdhs. The predicted interface shows predominantly hydrophobic EC1/EC4 residues and more polar EC2/EC3 residues, suggesting a similar functional distinction between affinity and specificity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C95 and C110-C112 present sequence coevolution analysis extending the structural findings to non-clustered Pcdhs. The method is validated by its previous success with clustered Pcdhs (C86). The analysis identified 38 significant covarying pairs (C112) from 405.5 effective sequences (C110). The predicted interface composition (C92-C94) parallels clustered Pcdhs. However, C89 notes the covarying pairs are somewhat further apart than true contacts, and C90-C91 acknowledge uncertainty about which specific members use this architecture. The predictions are reasonable but require experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "09a44d66-3003-4c2a-a2d3-8b7836a72753",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The authors conclude that the EC1-4 antiparallel homodimer is a general interaction strategy that evolved before protocadherin family divergence. Subfamilies encode specificity through diversification of loop regions in EC2/EC3 with polar residues, while EC1/EC4 provides non-selective affinity through conserved hydrophobic interactions. This functional distinction appears conserved in at least some non-clustered Pcdhs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C103 and C113-C116 synthesize the major findings into overarching conclusions. The Pcdh\u03b3B3 structure validates sequence coevolution predictions (C96). The comparison with Dscams (C97) is appropriately cited. The conclusions about EC1/EC4 affinity (C99-C101, C116) and EC2/EC3 specificity (C102, C114-C115) are supported by multiple lines of evidence from previous result groups. The evolutionary inference (C113) is reasonable based on the conservation across families, though the extension to non-clustered Pcdhs (C103) is more tentative pending experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "305c2b02-88bb-40cf-8643-a9a87f1ee607",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "A HEPES molecule was found at the EC2/EC3 interface forming salt bridges with N253 and N155, but HEPES is not required for dimerization as demonstrated by MALS data collected in Tris buffer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33, C108-C109 describe a crystallographic observation and its functional interpretation. The HEPES molecule is clearly visible in the electron density (Figure 1\u2014figure supplement 4, C108). The control experiment using Tris buffer (C109) appropriately demonstrates that HEPES is not essential for dimerization. This is a minor technical observation that does not affect the main conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "6a68aab0-dddd-459a-801c-da6cc036413a",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Phylogenetic and structural analyses indicate that isoforms and interface architectures are more similar within subfamilies than across subfamilies. The distinct Pcdh\u03b3C3 EC1-3 dimer interface may represent unique architecture for C-type isoforms, which are transcriptionally, functionally, and evolutionarily distinct. Homophilic specificity mechanisms likely emerged independently in each subfamily through diversification of subfamily-specific interface contacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C70 integrate phylogenetic (C65), structural (C66), and functional (C68-C69) evidence to support evolutionary inferences. The phylogenetic claims are appropriately cited (C65, C68-C69). The structural observation about within-subfamily similarity (C66) is supported by Figure 1E. The speculation about C-type isoforms (C67) is reasonable given their known distinctiveness (C68). The evolutionary conclusion (C70) is a logical inference from the observed patterns, though it remains a hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    },
+    {
+      "id": "d4712dbf-9c38-4337-b47e-82810ca44daf",
+      "content_id": "94a30e8f-1936-4ac9-aabf-10ee185c39cf",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The introduction establishes background on protocadherins: they comprise ~70% of mammalian cadherins, segregate into clustered (\u03b1, \u03b2, \u03b3) and non-clustered groups, mediate various neuronal functions through homophilic EC domain interactions, and show subfamily-specific expression patterns and phenotypes. Previous work predicted antiparallel EC1-4 homodimers, which was confirmed for \u03b1 and \u03b2 subfamilies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C21 provide background context appropriately supported by citations to prior literature. These are established facts about protocadherin biology (C1-C16) and summaries of previous work including the authors' own studies (C17-C21). All claims are properly attributed to published sources. This background contextualizes the current study but does not represent new findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:38:24.943179Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5cc11b22-b10c-4652-bc36-72723b5ac982",
+      "result_id": "1d343ecb-e836-4115-b425-aa1d0a28a85d"
+    },
+    {
+      "claim_id": "f6c1cf27-b491-4fd6-b0d4-62429bc58895",
+      "result_id": "1d343ecb-e836-4115-b425-aa1d0a28a85d"
+    },
+    {
+      "claim_id": "514cfaab-a337-431b-8985-3c92da6bb42b",
+      "result_id": "1d343ecb-e836-4115-b425-aa1d0a28a85d"
+    },
+    {
+      "claim_id": "298341ac-bc16-40c3-a49b-0209a8ad2981",
+      "result_id": "1d343ecb-e836-4115-b425-aa1d0a28a85d"
+    },
+    {
+      "claim_id": "17f000d1-ccf0-4222-9746-d981413e37a1",
+      "result_id": "1d343ecb-e836-4115-b425-aa1d0a28a85d"
+    },
+    {
+      "claim_id": "32bc9730-9eb9-4c70-8327-33818837acbf",
+      "result_id": "1d343ecb-e836-4115-b425-aa1d0a28a85d"
+    },
+    {
+      "claim_id": "d49f5734-1b51-4f29-9e77-d92d19458547",
+      "result_id": "1d343ecb-e836-4115-b425-aa1d0a28a85d"
+    },
+    {
+      "claim_id": "faf9e463-3873-4d17-9840-4eda14e1bf05",
+      "result_id": "1d343ecb-e836-4115-b425-aa1d0a28a85d"
+    },
+    {
+      "claim_id": "6f8ae8b8-226b-4182-a316-3adbe165af0e",
+      "result_id": "1d343ecb-e836-4115-b425-aa1d0a28a85d"
+    },
+    {
+      "claim_id": "aef89d91-712a-4e60-9fd9-af301f1ce96a",
+      "result_id": "1d343ecb-e836-4115-b425-aa1d0a28a85d"
+    },
+    {
+      "claim_id": "96b605e2-ac10-4bc6-af59-0b0542e0c786",
+      "result_id": "1d343ecb-e836-4115-b425-aa1d0a28a85d"
+    },
+    {
+      "claim_id": "02dd9cf3-05ee-499c-af8a-74badbe2d42e",
+      "result_id": "1d343ecb-e836-4115-b425-aa1d0a28a85d"
+    },
+    {
+      "claim_id": "f661785b-7005-47d0-80cd-4946302255ef",
+      "result_id": "1d343ecb-e836-4115-b425-aa1d0a28a85d"
+    },
+    {
+      "claim_id": "6ccfbaf6-a464-43dc-9508-879cca4e5adb",
+      "result_id": "1d343ecb-e836-4115-b425-aa1d0a28a85d"
+    },
+    {
+      "claim_id": "f5b37e20-b8a1-4c51-b05a-f7b1acdac356",
+      "result_id": "1d343ecb-e836-4115-b425-aa1d0a28a85d"
+    },
+    {
+      "claim_id": "f5389339-22e8-4616-afd4-1ce39c598157",
+      "result_id": "1d343ecb-e836-4115-b425-aa1d0a28a85d"
+    },
+    {
+      "claim_id": "f4a3de6e-d4d1-44bc-8101-aa8c0569b671",
+      "result_id": "98eab1f6-cb7a-47b0-8ab3-725d276100d3"
+    },
+    {
+      "claim_id": "80cfd04e-e130-48d9-8919-f8af406fabd0",
+      "result_id": "98eab1f6-cb7a-47b0-8ab3-725d276100d3"
+    },
+    {
+      "claim_id": "78b7ff33-d267-4826-aa29-18e8f7e0b68f",
+      "result_id": "98eab1f6-cb7a-47b0-8ab3-725d276100d3"
+    },
+    {
+      "claim_id": "b2ee4562-236e-4856-b6dd-3562935d4d32",
+      "result_id": "98eab1f6-cb7a-47b0-8ab3-725d276100d3"
+    },
+    {
+      "claim_id": "c8affa83-ffde-4eaf-b979-9bfc0966dc9c",
+      "result_id": "98eab1f6-cb7a-47b0-8ab3-725d276100d3"
+    },
+    {
+      "claim_id": "b499d708-3821-4250-a782-3b5d6d347bc8",
+      "result_id": "98eab1f6-cb7a-47b0-8ab3-725d276100d3"
+    },
+    {
+      "claim_id": "15027cec-17d6-4eee-9ad9-e24cfca1cfe8",
+      "result_id": "98eab1f6-cb7a-47b0-8ab3-725d276100d3"
+    },
+    {
+      "claim_id": "0696e6e9-f5f0-42c6-b3ff-cbb7fa051b76",
+      "result_id": "98eab1f6-cb7a-47b0-8ab3-725d276100d3"
+    },
+    {
+      "claim_id": "64c4e328-3beb-4af8-92c8-39686f4feff4",
+      "result_id": "38375bf3-c180-4a2a-98de-ff8162ec934e"
+    },
+    {
+      "claim_id": "b8dd1d67-52ff-470d-83cc-4a3274bf2932",
+      "result_id": "38375bf3-c180-4a2a-98de-ff8162ec934e"
+    },
+    {
+      "claim_id": "7886476c-dda4-4787-b7c1-b14546f7d51c",
+      "result_id": "38375bf3-c180-4a2a-98de-ff8162ec934e"
+    },
+    {
+      "claim_id": "00afa85b-301f-4cec-83fb-4dc66448534b",
+      "result_id": "38375bf3-c180-4a2a-98de-ff8162ec934e"
+    },
+    {
+      "claim_id": "0d712002-b06e-4ec3-98e6-06fc2f14dcce",
+      "result_id": "38375bf3-c180-4a2a-98de-ff8162ec934e"
+    },
+    {
+      "claim_id": "bc227112-fc76-4bf3-bac6-36d90d348383",
+      "result_id": "38375bf3-c180-4a2a-98de-ff8162ec934e"
+    },
+    {
+      "claim_id": "2744a37f-e99f-42a0-96ef-48e7b8b51eae",
+      "result_id": "38375bf3-c180-4a2a-98de-ff8162ec934e"
+    },
+    {
+      "claim_id": "4f84109d-e520-4a6d-b848-15d3d97af914",
+      "result_id": "38375bf3-c180-4a2a-98de-ff8162ec934e"
+    },
+    {
+      "claim_id": "533aafd5-79a5-4086-b750-facb618af1e2",
+      "result_id": "38375bf3-c180-4a2a-98de-ff8162ec934e"
+    },
+    {
+      "claim_id": "425ee146-a93d-4951-b49f-ae110876a8ff",
+      "result_id": "38375bf3-c180-4a2a-98de-ff8162ec934e"
+    },
+    {
+      "claim_id": "62838fb3-9616-407a-af04-3b21c7ec58fb",
+      "result_id": "38375bf3-c180-4a2a-98de-ff8162ec934e"
+    },
+    {
+      "claim_id": "6b7c03a2-8fdf-498f-be8b-22c50c24b30c",
+      "result_id": "38375bf3-c180-4a2a-98de-ff8162ec934e"
+    },
+    {
+      "claim_id": "3b6de4fd-d6c4-4644-a952-78fb8649a4ef",
+      "result_id": "38375bf3-c180-4a2a-98de-ff8162ec934e"
+    },
+    {
+      "claim_id": "69a74e14-7e21-41ff-b46c-beb3063a6271",
+      "result_id": "38375bf3-c180-4a2a-98de-ff8162ec934e"
+    },
+    {
+      "claim_id": "66a37570-0a6d-450a-a73a-d6f1f174bd32",
+      "result_id": "38375bf3-c180-4a2a-98de-ff8162ec934e"
+    },
+    {
+      "claim_id": "00105944-eb8b-4749-9774-fb4b18534a17",
+      "result_id": "38375bf3-c180-4a2a-98de-ff8162ec934e"
+    },
+    {
+      "claim_id": "2536b7a8-0df1-4968-a0d9-82803e08cbad",
+      "result_id": "38375bf3-c180-4a2a-98de-ff8162ec934e"
+    },
+    {
+      "claim_id": "b88c21a8-38f7-4668-bf70-2e1096b26531",
+      "result_id": "38375bf3-c180-4a2a-98de-ff8162ec934e"
+    },
+    {
+      "claim_id": "71c7b563-4d94-40e3-9994-70e6b3f8c61a",
+      "result_id": "38375bf3-c180-4a2a-98de-ff8162ec934e"
+    },
+    {
+      "claim_id": "b9713012-a64c-44d3-b231-e4bf3b6ce155",
+      "result_id": "edb8fe99-c2e2-457f-972c-31ec0e1e4cef"
+    },
+    {
+      "claim_id": "d20ec7b1-5d02-4d47-9a6b-7b19f57cb6c3",
+      "result_id": "edb8fe99-c2e2-457f-972c-31ec0e1e4cef"
+    },
+    {
+      "claim_id": "97ec53dc-f85c-4190-801b-91b314456cdc",
+      "result_id": "edb8fe99-c2e2-457f-972c-31ec0e1e4cef"
+    },
+    {
+      "claim_id": "0d078526-1caf-465b-89e2-87ff5c82b855",
+      "result_id": "edb8fe99-c2e2-457f-972c-31ec0e1e4cef"
+    },
+    {
+      "claim_id": "dc5af98c-1e54-4aac-9de1-966a620e35c2",
+      "result_id": "edb8fe99-c2e2-457f-972c-31ec0e1e4cef"
+    },
+    {
+      "claim_id": "53d30925-3ef3-4f33-a34f-81b2d646b3fa",
+      "result_id": "edb8fe99-c2e2-457f-972c-31ec0e1e4cef"
+    },
+    {
+      "claim_id": "6940ac08-7a4f-4ac2-9677-7ae80001894e",
+      "result_id": "edb8fe99-c2e2-457f-972c-31ec0e1e4cef"
+    },
+    {
+      "claim_id": "060e925a-b4dd-4e31-8d90-4252c2220914",
+      "result_id": "edb8fe99-c2e2-457f-972c-31ec0e1e4cef"
+    },
+    {
+      "claim_id": "04d079b1-ba34-4092-822f-fd22139d4ca1",
+      "result_id": "edb8fe99-c2e2-457f-972c-31ec0e1e4cef"
+    },
+    {
+      "claim_id": "07dc5f18-d8cf-47c7-aa8e-246315771e14",
+      "result_id": "edb8fe99-c2e2-457f-972c-31ec0e1e4cef"
+    },
+    {
+      "claim_id": "6dd3963d-06c6-4ccd-bfa9-7469bde4b602",
+      "result_id": "edb8fe99-c2e2-457f-972c-31ec0e1e4cef"
+    },
+    {
+      "claim_id": "87800623-dfce-4338-bcf5-86e0d2f200f1",
+      "result_id": "edb8fe99-c2e2-457f-972c-31ec0e1e4cef"
+    },
+    {
+      "claim_id": "3f19e87b-defc-4ab4-b559-9e3834f2dd4a",
+      "result_id": "edb8fe99-c2e2-457f-972c-31ec0e1e4cef"
+    },
+    {
+      "claim_id": "b6af2bb9-475b-470d-8a44-dc12db840554",
+      "result_id": "174b3b24-01c6-4c0e-b7c9-ed8e3278e4d1"
+    },
+    {
+      "claim_id": "8a461d48-63ec-4752-8b6f-1c524df8ee4d",
+      "result_id": "174b3b24-01c6-4c0e-b7c9-ed8e3278e4d1"
+    },
+    {
+      "claim_id": "2befbf08-08e2-45be-aa4c-25576fdfeaa3",
+      "result_id": "174b3b24-01c6-4c0e-b7c9-ed8e3278e4d1"
+    },
+    {
+      "claim_id": "bf244fd3-ec1a-4ca3-a9ec-9a48183c31c9",
+      "result_id": "174b3b24-01c6-4c0e-b7c9-ed8e3278e4d1"
+    },
+    {
+      "claim_id": "57440502-d8e9-4dcc-8e7d-34ca7642779c",
+      "result_id": "174b3b24-01c6-4c0e-b7c9-ed8e3278e4d1"
+    },
+    {
+      "claim_id": "8096e1dc-052f-487d-a866-a19cb687ae03",
+      "result_id": "174b3b24-01c6-4c0e-b7c9-ed8e3278e4d1"
+    },
+    {
+      "claim_id": "29b67171-f823-40f5-913d-01d4b472d159",
+      "result_id": "174b3b24-01c6-4c0e-b7c9-ed8e3278e4d1"
+    },
+    {
+      "claim_id": "9e40beb1-99bf-4e70-8ff0-cc6d056c756b",
+      "result_id": "174b3b24-01c6-4c0e-b7c9-ed8e3278e4d1"
+    },
+    {
+      "claim_id": "7e768dd1-e960-4fa0-8462-488a31c56e8a",
+      "result_id": "174b3b24-01c6-4c0e-b7c9-ed8e3278e4d1"
+    },
+    {
+      "claim_id": "9a6722fe-c690-4a20-ad3e-19ec4316b04b",
+      "result_id": "174b3b24-01c6-4c0e-b7c9-ed8e3278e4d1"
+    },
+    {
+      "claim_id": "243395a4-e364-41ad-bc74-6254b56677d4",
+      "result_id": "174b3b24-01c6-4c0e-b7c9-ed8e3278e4d1"
+    },
+    {
+      "claim_id": "3b194c9c-b706-4497-bc52-ea1ff353c649",
+      "result_id": "174b3b24-01c6-4c0e-b7c9-ed8e3278e4d1"
+    },
+    {
+      "claim_id": "9e490065-15fc-42ef-aef9-a34c581edb01",
+      "result_id": "174b3b24-01c6-4c0e-b7c9-ed8e3278e4d1"
+    },
+    {
+      "claim_id": "cc025c9e-c4e6-422b-95ed-1804c954e3c9",
+      "result_id": "174b3b24-01c6-4c0e-b7c9-ed8e3278e4d1"
+    },
+    {
+      "claim_id": "3f36ab7f-b1f0-4ed6-95c7-4eafb8a297f2",
+      "result_id": "174b3b24-01c6-4c0e-b7c9-ed8e3278e4d1"
+    },
+    {
+      "claim_id": "35151f10-c57a-4f9b-aa4b-94a7609d385f",
+      "result_id": "09a44d66-3003-4c2a-a2d3-8b7836a72753"
+    },
+    {
+      "claim_id": "6ac5164d-a87e-4d21-9e54-38906301d21e",
+      "result_id": "09a44d66-3003-4c2a-a2d3-8b7836a72753"
+    },
+    {
+      "claim_id": "8e1a200c-ff49-42f0-ad40-e8861cec9c73",
+      "result_id": "09a44d66-3003-4c2a-a2d3-8b7836a72753"
+    },
+    {
+      "claim_id": "2bdf1005-429b-4aee-b8b4-35464a60e1df",
+      "result_id": "09a44d66-3003-4c2a-a2d3-8b7836a72753"
+    },
+    {
+      "claim_id": "935830b5-d3a4-4e45-8795-b99e4fc732d5",
+      "result_id": "09a44d66-3003-4c2a-a2d3-8b7836a72753"
+    },
+    {
+      "claim_id": "e1262323-c3f1-4910-a242-bf2746022106",
+      "result_id": "09a44d66-3003-4c2a-a2d3-8b7836a72753"
+    },
+    {
+      "claim_id": "4dfba24f-058b-46c3-a15b-141ae5a48096",
+      "result_id": "09a44d66-3003-4c2a-a2d3-8b7836a72753"
+    },
+    {
+      "claim_id": "f9514ec0-16cd-4aed-aed5-e09d3287486d",
+      "result_id": "09a44d66-3003-4c2a-a2d3-8b7836a72753"
+    },
+    {
+      "claim_id": "df83ffa8-65df-46a1-bd23-3069a75ab792",
+      "result_id": "09a44d66-3003-4c2a-a2d3-8b7836a72753"
+    },
+    {
+      "claim_id": "9edf9729-ec31-4f02-ae12-506bab41df8b",
+      "result_id": "09a44d66-3003-4c2a-a2d3-8b7836a72753"
+    },
+    {
+      "claim_id": "3538b7b1-be4f-4f6d-99d8-dab8e5b886d6",
+      "result_id": "09a44d66-3003-4c2a-a2d3-8b7836a72753"
+    },
+    {
+      "claim_id": "15b93889-679b-45b6-841e-1c07e30ee446",
+      "result_id": "09a44d66-3003-4c2a-a2d3-8b7836a72753"
+    },
+    {
+      "claim_id": "5893151f-aef1-4f0e-ac99-2949871d866b",
+      "result_id": "305c2b02-88bb-40cf-8643-a9a87f1ee607"
+    },
+    {
+      "claim_id": "481711bd-8c81-4e46-a238-8a4cba7f9f54",
+      "result_id": "305c2b02-88bb-40cf-8643-a9a87f1ee607"
+    },
+    {
+      "claim_id": "48a03baf-54db-4ca8-bdb0-ad79851164c6",
+      "result_id": "305c2b02-88bb-40cf-8643-a9a87f1ee607"
+    },
+    {
+      "claim_id": "8f3f9f31-f642-4f54-a9a8-9fa49f362015",
+      "result_id": "6a68aab0-dddd-459a-801c-da6cc036413a"
+    },
+    {
+      "claim_id": "7f44a99a-af77-4767-bfb3-84205edcd3ef",
+      "result_id": "6a68aab0-dddd-459a-801c-da6cc036413a"
+    },
+    {
+      "claim_id": "c2b2a590-7fd1-44d0-8fdc-da066aa8d01e",
+      "result_id": "6a68aab0-dddd-459a-801c-da6cc036413a"
+    },
+    {
+      "claim_id": "a831b1b8-53db-4c6a-aa63-008d9e7031f6",
+      "result_id": "6a68aab0-dddd-459a-801c-da6cc036413a"
+    },
+    {
+      "claim_id": "4b0c520a-a38d-4d65-ab7c-61155327d21c",
+      "result_id": "6a68aab0-dddd-459a-801c-da6cc036413a"
+    },
+    {
+      "claim_id": "7e4ded88-74dd-4675-b309-1c4add5efa26",
+      "result_id": "6a68aab0-dddd-459a-801c-da6cc036413a"
+    },
+    {
+      "claim_id": "ec948787-2707-4c1e-bb07-97437eb0244c",
+      "result_id": "d4712dbf-9c38-4337-b47e-82810ca44daf"
+    },
+    {
+      "claim_id": "078de492-5c17-4ad1-9d27-9df8e6836c7a",
+      "result_id": "d4712dbf-9c38-4337-b47e-82810ca44daf"
+    },
+    {
+      "claim_id": "62631e27-6fa0-401a-b55d-733171d0ce02",
+      "result_id": "d4712dbf-9c38-4337-b47e-82810ca44daf"
+    },
+    {
+      "claim_id": "a1c2fc86-02e2-4ae6-b588-5b981d2fb789",
+      "result_id": "d4712dbf-9c38-4337-b47e-82810ca44daf"
+    },
+    {
+      "claim_id": "a087ad36-5896-4579-ae97-77beb0ef872d",
+      "result_id": "d4712dbf-9c38-4337-b47e-82810ca44daf"
+    },
+    {
+      "claim_id": "22855344-61c2-42ad-9e3e-3f3fb496bc64",
+      "result_id": "d4712dbf-9c38-4337-b47e-82810ca44daf"
+    },
+    {
+      "claim_id": "249ad858-19ee-4b30-926a-352f5e4f7dd9",
+      "result_id": "d4712dbf-9c38-4337-b47e-82810ca44daf"
+    },
+    {
+      "claim_id": "d9b6e9d5-c7b1-4b4f-827a-ef9ab4e07387",
+      "result_id": "d4712dbf-9c38-4337-b47e-82810ca44daf"
+    },
+    {
+      "claim_id": "cc11a19e-e3e9-45a2-b5a8-9c292db3840d",
+      "result_id": "d4712dbf-9c38-4337-b47e-82810ca44daf"
+    },
+    {
+      "claim_id": "b8d7363d-7581-4164-9273-7f17de8101a3",
+      "result_id": "d4712dbf-9c38-4337-b47e-82810ca44daf"
+    },
+    {
+      "claim_id": "b72765b8-91dd-47d5-90a1-7fcd38c24b9e",
+      "result_id": "d4712dbf-9c38-4337-b47e-82810ca44daf"
+    },
+    {
+      "claim_id": "9c2a6d63-f949-4249-a66e-bd1ea20c1cc5",
+      "result_id": "d4712dbf-9c38-4337-b47e-82810ca44daf"
+    },
+    {
+      "claim_id": "208b0ac6-3f82-407f-9047-1c54e94c11e7",
+      "result_id": "d4712dbf-9c38-4337-b47e-82810ca44daf"
+    },
+    {
+      "claim_id": "5f98429f-7ef2-45f9-b4b3-0127d718ee5a",
+      "result_id": "d4712dbf-9c38-4337-b47e-82810ca44daf"
+    },
+    {
+      "claim_id": "acf39f82-4c38-492c-9884-4307383d1d8e",
+      "result_id": "d4712dbf-9c38-4337-b47e-82810ca44daf"
+    },
+    {
+      "claim_id": "333446f5-d28e-4289-a63c-8e1a3a9c9c67",
+      "result_id": "d4712dbf-9c38-4337-b47e-82810ca44daf"
+    },
+    {
+      "claim_id": "b09a0c9f-b9ba-4ad1-bbd3-d7a1ae62c481",
+      "result_id": "d4712dbf-9c38-4337-b47e-82810ca44daf"
+    },
+    {
+      "claim_id": "d5259a77-0665-47ec-9a0c-54c42f662005",
+      "result_id": "d4712dbf-9c38-4337-b47e-82810ca44daf"
+    },
+    {
+      "claim_id": "1c056ef2-f5e4-4fdf-abdf-490f6057f3cd",
+      "result_id": "d4712dbf-9c38-4337-b47e-82810ca44daf"
+    },
+    {
+      "claim_id": "0e7c9d32-2fec-445a-b18f-24149bc2b794",
+      "result_id": "d4712dbf-9c38-4337-b47e-82810ca44daf"
+    },
+    {
+      "claim_id": "cae8c1db-e85f-4b58-9b8a-0a217a060206",
+      "result_id": "d4712dbf-9c38-4337-b47e-82810ca44daf"
+    }
+  ],
+  "comparisons": []
+}

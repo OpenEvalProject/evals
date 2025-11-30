@@ -1,0 +1,351 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C15",
+      "C72"
+    ],
+    "result": "Aging causes transcriptional drift, a phenomenon where genes within functional groups change expression in opposing directions, leading to a transcriptome-wide loss in mRNA stoichiometry and co-expression patterns in aging animals compared to young adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C11, C15, and C72 collectively demonstrate the phenomenon of transcriptional drift. The RNA-seq data (C15) shows dramatic increases in drift-variance with age across 19,196 genes, and the analysis of GO annotations (C11) confirms that genes within functional groups change in opposing directions. The statistical support (P < 10^-100) and multiple independent observations across different data sets provide strong evidence for this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C8",
+      "C12",
+      "C13",
+      "C16"
+    ],
+    "result": "Mianserin treatment attenuates transcriptional drift across approximately 80% of the transcriptome, preserving co-expression patterns observed in young adults into older age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C8, C12, C13, and C16 provide converging evidence that mianserin attenuates age-associated transcriptional drift. The quantitative data showing attenuation in 15,095 out of 19,169 genes (80%, binomial P < 10^-100) and the observation that mianserin reduced age-associated expression changes in over 90% of significantly changing genes provide robust statistical support for this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The effect of mianserin on drift-variance is dose-dependent and timing-dependent, with increasing doses progressively decreasing drift-variance and delayed treatment (day 5) abolishing the effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C19, and C20 demonstrate a quantitative relationship between mianserin dose, timing of treatment, and drift-variance attenuation. The dose-response relationship (C18) and the timing experiments (C19, C20) provide strong evidence for a causal relationship between mianserin treatment and drift-variance reduction, supporting the specificity of the effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C61",
+      "C62"
+    ],
+    "result": "Longevity mechanisms induced by blocking insulin signaling (daf-2 RNAi) also attenuate transcriptional drift, with 58% overlap in genes affected by both mianserin and daf-2 RNAi, and this effect is dependent on daf-16.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C23, C24, C61, and C62 demonstrate that transcriptional drift attenuation is not unique to mianserin but is also observed with daf-2 RNAi. The significant overlap (58%, binomial P=6.3e-47) and the daf-16 dependence provide strong evidence that drift attenuation is a general feature of longevity mechanisms, supporting the broader significance of the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C63",
+      "C75"
+    ],
+    "result": "Mianserin treatment attenuates drift-variance in redox-related pathways and preserves homeostatic capacity, improving stress resistance specifically in older animals (day 5 and day 10) but not in young animals (day 3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29, C63, and C75 provide converging evidence that mianserin preserves redox homeostatic capacity through drift attenuation. The age-specific improvement in stress resistance (C27, C28) and the timing-dependent effects (C29) support a model where drift attenuation preserves functional capacity rather than directly activating stress responses. The functional validation strengthens the biological significance of drift-variance as a metric.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C38"
+    ],
+    "result": "Mianserin treatment leads to enhanced transcription of redox genes in response to paraquat in a ser-5 dependent manner, with genes that increase in response to oxidative stress showing lower expression and genes that decrease showing higher expression in mianserin-treated animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C31, and C38 demonstrate that mianserin preserves homeostatic capacity rather than directly activating stress responses. The observation that mianserin attenuates rather than mimics the oxidative stress signature (C31) and the ser-5 dependence (C38) provide strong mechanistic support for the model that drift attenuation preserves regulatory capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C64"
+    ],
+    "result": "The serotonin receptor SER-5 is required for mianserin to attenuate drift-variance in redox genes, protect from oxidative stress, and extend lifespan, while SER-3 and SER-4 are dispensable for stress protection and drift attenuation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 and C64 provide comprehensive genetic evidence for the role of SER-5 in mediating mianserin's effects. The use of multiple ser-5 alleles (C32), the requirement for serotonin synthesis (C33), the testing of seven additional serotonergic antagonists (C34), and the specificity demonstrated by the dispensability of SER-3 and SER-4 (C36) provide robust genetic validation of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Lifespan extension by mianserin and seven additional serotonergic antagonists is strongly reduced or abrogated in ser-5, snt-1, and unc-26 mutant animals, demonstrating that synaptic transmission and SER-5 signaling are required for longevity effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C40 provide genetic evidence linking the molecular effects on drift-variance to the organismal phenotype of lifespan extension. The requirement for synaptic components (snt-1, unc-26) and the partial or full dependence on ser-5 for multiple serotonergic antagonists strengthen the mechanistic connection between serotonergic signaling, drift attenuation, and longevity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C65",
+      "C66"
+    ],
+    "result": "Mianserin-treated animals show a 7-8 day delay in age-associated transcriptional change, with 10-day-old mianserin-treated animals exhibiting drift-variance similar to 3-day-old control animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43, C65, and C66 provide converging evidence from multiple analytical approaches (drift-variance comparison, PCA) that mianserin causes a specific temporal delay in transcriptional aging. The quantitative agreement between different methods (drift-variance, PCA) and the statistical support (P=0.37 for drift-variance comparison) provide strong evidence for this temporal shift.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C67",
+      "C86",
+      "C87"
+    ],
+    "result": "Mianserin treatment decelerates the rise in mortality levels between day 1 and 12 of adulthood, resulting in parallel mortality curves with a 7-8 day shift, indicating that mianserin's effect on lifespan is restricted to early adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47, C67, C86, and C87 provide demographic evidence that complements the transcriptional data. The parallel nature of mortality curves after day 12 and the 7-8 day shift matching the transcriptional delay provide strong support for the model that mianserin acts specifically during early adulthood. The large sample size (>3,000 animals) and power calculations strengthen the reliability of these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C68",
+      "C90"
+    ],
+    "result": "Exposure to mianserin for 5-10 days during early adulthood is necessary and sufficient to fully extend lifespan, with shorter exposures (8 hr, 1 day) providing partial extension.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C49, C68, and C90 provide experimental validation of the temporal window during which mianserin acts. The dose-response relationship with exposure duration and the sufficiency of 5-10 day exposure for full lifespan extension provide strong support for the model that mianserin acts specifically during early adulthood to establish a lasting effect on longevity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C9",
+      "C69",
+      "C85",
+      "C88",
+      "C89",
+      "C96"
+    ],
+    "result": "Mianserin extends lifespan by slowing age-associated physiological changes exclusively during early adulthood (days 1-10), thereby postponing the onset of major mortality, as supported by convergent evidence from drift-variance, PCA, mortality analysis, and survivorship data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C9, C69, C85, C88, C89, and C96 synthesize the major findings into a coherent model. The convergence of multiple independent lines of evidence (transcriptional drift, mortality curves, limited exposure experiments) all pointing to the same 7-8 day delay and the restriction of effects to early adulthood provides strong support for this integrative conclusion. This represents the central finding of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Drift-variance increases with age in multiple mouse tissues (brain, kidney, liver, lung, spleen) and in human brain, with a significant correlation between age and drift-variance in human brain (Spearman rho=0.6, P=0.0014).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 demonstrate that transcriptional drift is evolutionarily conserved across species. The observation of drift-variance increases in multiple mouse tissues and human brain, with statistical support for the human data, provides evidence for the generality of the phenomenon. However, the magnitude of changes appears smaller in mammals than in C. elegans, which may reflect biological differences or technical limitations of the reanalyzed datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Fibroblasts from Hutchinson-Gilford progeria syndrome (HGPS) patients show increased drift-variance relative to control fibroblasts, and nuclear reprogramming to iPSCs reduces drift-variance to levels closer to embryonic stem cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 provide evidence that drift-variance is associated with premature aging and can be reversed by cellular reprogramming. The observation that HGPS fibroblasts show increased drift-variance and that reprogramming reduces it supports the biological relevance of drift-variance as a marker of cellular aging. However, the analysis is based on reanalysis of published data and would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C91"
+    ],
+    "result": "Mianserin treatment has minor effects on spontaneous egg-laying and brood size, does not increase reproductive longevity, and appears to act specifically on somatic tissue rather than germline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C51, and C91 provide evidence that mianserin's effects are specific to somatic aging rather than reproductive aging. The lack of effect on reproductive longevity and the minor effects on egg-laying distinguish mianserin's mechanism from germline-dependent longevity pathways. This specificity strengthens the interpretation that mianserin acts on somatic aging processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C92"
+    ],
+    "result": "Mianserin treatment does not increase proteasome activity and slightly decreases it on day 5, distinguishing its mechanism from germline ablation-induced longevity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C53, and C92 provide negative results that help distinguish mianserin's mechanism from other longevity pathways. The lack of proteasome activation and the genetic epistasis data (mianserin extends lifespan of daf-16 mutants but not eat-2 mutants) support the conclusion that mianserin acts through a distinct mechanism from germline ablation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C14",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Accounting for transcriptional drift simplifies the analysis of aging transcriptomes, revealing that mianserin-induced changes (excluding drift effects) are enriched for genes related to stress, innate immunity, aging, and xenobiotic response, most of which are linked to serotonin signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C14, C76, C77, and C78 demonstrate the analytical utility of the transcriptional drift concept. The simplification of complex expression patterns and the identification of a coherent set of serotonin-regulated pathways provide methodological validation of the drift-variance approach. This supports the broader applicability of the method for analyzing aging transcriptomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "Transcriptional drift is a transcriptome-wide phenomenon, as demonstrated by random subsampling showing identical increases in drift-variance across multiple gene sets of ~1,000 genes each.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 provides important validation that drift is not driven by a small subset of genes but is a global transcriptome property. The subsampling analysis strengthens the interpretation that drift-variance reflects a fundamental property of transcriptional aging rather than being driven by outliers or specific gene sets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Mianserin fully induces the xenobiotic response by up to 1,000-fold regardless of whether added on day 1 or day 5, indicating that lack of effect when added late is not due to reduced drug uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 provides an important control demonstrating that the timing-dependent effects of mianserin on drift-variance and longevity are not due to differences in drug uptake or bioavailability. This control strengthens the interpretation that the timing dependence reflects a biological window of sensitivity rather than a technical artifact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Young (day 1) wild-type N2 animals and ser-5(ok3087) mutants show nearly identical responses to oxidative stress, indicating that ser-5 mutants are not generally defective in stress response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 provides an important control showing that ser-5 mutants are specifically defective in their response to mianserin rather than having a general defect in stress response. This specificity strengthens the interpretation that SER-5 mediates mianserin's effects on drift attenuation and stress resistance preservation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C70",
+      "C71",
+      "C73",
+      "C94"
+    ],
+    "result": "Background knowledge claims about aging, including that aging causes tissue degeneration and increased mortality, that mutations in age-1 or daf-2 slow degenerative processes, and that age-associated mortality in young adults is difficult to determine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C70, C71, C73, and C94 represent established knowledge from the literature, supported by appropriate citations. These claims provide necessary context for the study but do not represent novel findings. The citations appear appropriate and the statements are consistent with current understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C25",
+      "C74",
+      "C83",
+      "C84",
+      "C93",
+      "C95"
+    ],
+    "result": "Conceptual and interpretive claims about transcriptional drift, including that it is a metric rather than a biomarker for aging, that drift-variance likely affects proteostasis, and that parallel shifts in mortality may result from period-specific effects in early adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C25, C74, C83, C84, C93, and C95 represent interpretations and conceptual frameworks rather than direct experimental observations. While these interpretations are reasonable and consistent with the data, they involve inference beyond what is directly demonstrated. The claim that drift-variance affects proteostasis (C74) is particularly speculative, though supported by citations to related work. These interpretations would benefit from additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Drift-variance is attenuated by two longevity mechanisms (mianserin and daf-2 RNAi) with 58% overlap in affected genes, and treating daf-2 mutants with mianserin causes only partial lifespan extension (11% instead of 31%), consistent with overlapping mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 provide evidence for the generality of drift attenuation as a feature of longevity mechanisms and demonstrate partial overlap between mianserin and daf-2 pathways. The quantitative data on gene overlap (58%) and the epistasis data from daf-2 mutants support the interpretation of partially overlapping mechanisms. However, the analysis relies on reanalysis of published data (Murphy et al., 2003) which may have different technical characteristics than the authors' data.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Oct4 is phosphorylated at serine 229 (S229) during G2/M phase, leading to its dissociation from chromatin. The S229 residue is conserved across species and located in the homeodomain. Phosphorylated Oct4(S229) accumulates in G2/M phase and dissociates from target gene binding regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C20-C30 provide converging evidence from multiple experimental approaches including mass spectrometry identification of phosphorylation sites (C20), functional assays showing S229D mutant reduces transcriptional activity (C21), sequence conservation analysis (C22), immunofluorescence showing cell cycle-specific localization (C23-C28), and ChIP-qPCR demonstrating dissociation from chromatin (C29-C30). The data consistently support that Oct4 phosphorylation at S229 occurs during G2/M phase and results in chromatin dissociation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Aurora kinase B (Aurkb) is the kinase responsible for phosphorylating Oct4 at S229 during G2/M phase. This was demonstrated through kinase screening, in vitro kinase assays, pharmacological inhibition, and co-immunoprecipitation showing cell cycle-dependent interaction between Aurkb and Oct4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C45 provide comprehensive evidence identifying Aurkb as the Oct4(S229) kinase through: screening of 19 candidate kinases (C33), shRNA knockdown experiments (C34), in vitro kinase assays with recombinant proteins (C35), specific pharmacological inhibition with hesperadin but not Aurka inhibitor (C36-C38), and co-immunoprecipitation showing strong interaction in G2/M phase (C42-C43). The convergence of genetic, biochemical, and pharmacological evidence strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Protein phosphatase 1 (PP1), specifically PP1\u03b2 and PP1\u03b3 isoforms, binds Oct4 through a conserved RVWF motif and dephosphorylates Oct4(S229) during the M/G1 transition. PP1 activity is critical for regulating Oct4 phosphorylation state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C60 demonstrate PP1's role through: identification of conserved PP1-binding motif (C46-C47), differential interaction of PP1 isoforms with Oct4 during cell cycle (C48-C51), direct binding assays showing RVWF-dependent interaction (C52-C53), in vitro phosphatase assays (C54-C55), and dose-dependent effects of PP1 inhibitor okadaic acid (C57-C59). The data consistently support that PP1\u03b2/\u03b3 dephosphorylate Oct4(S229) during M/G1 transition through direct interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "PP1-mediated dephosphorylation of Oct4(S229) is critical for transcriptional resetting during M/G1 transition. Oct4 binding to target genes and nascent RNA levels of pluripotency genes are reduced in G2/M phase and restored during G1 entry, a process that is impaired by PP1 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C76 provide evidence through cell cycle synchronization experiments showing: dynamic changes in p-Oct4(S229) levels (C61-C62), stable Oct4 protein levels despite phosphorylation changes (C64), ChIP-qPCR showing reduced Oct4 binding in G2/M and restoration in G1 (C68-C69), nascent RNA analysis demonstrating transcriptional changes (C73-C75), and impairment of these processes by okadaic acid treatment (C67, C69, C75). The convergence of ChIP and nascent RNA data supports the conclusion about transcriptional resetting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Oct4 directly controls cell cycle-related genes (including Bub1 and Rif1) in addition to pluripotency genes through resetting during M/G1 transition. ChIP-seq analysis revealed that Oct4 binds more genomic regions with higher density in G1 phase compared to G2/M phase, with enrichment in both pluripotency and cell cycle categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C90 demonstrate Oct4's role in cell cycle regulation through: gene ontology analysis identifying cell cycle genes as Oct4 targets (C77), focus on Bub1 and Rif1 based on literature (C78-C79), ChIP-qPCR showing dynamic binding during M/G1 transition that is impaired by okadaic acid (C80-C81), nascent RNA analysis confirming transcriptional regulation (C82-C83), and genome-wide ChIP-seq data showing differential binding between G2/M and G1 phases (C85-C90). The integration of targeted and genome-wide approaches provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Oct4 mutants that mimic Aurkb phosphorylation (S229D) or prevent PP1 binding (F271A) alter cell cycle progression and cause loss of pluripotency in ESCs. These mutants show increased G1 phase populations, reduced binding to target genes, decreased nascent RNA transcription, reduced alkaline phosphatase activity, and impaired self-renewal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C91-C106 provide functional validation through: stable expression of mutants in ZHBTc4 ESCs (C91), FACS analysis showing altered cell cycle profiles (C92-C95), ChIP-qPCR showing reduced target gene binding (C97), nascent RNA analysis showing impaired transcriptional resetting (C98-C100), qRT-PCR showing downregulated target genes (C101-C102), alkaline phosphatase staining showing reduced pluripotency (C103), and luciferase assays showing reduced transcriptional activity (C104-C105). The convergence of multiple functional assays supports the importance of the Aurkb/PP1 regulatory axis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C107",
+      "C118"
+    ],
+    "result": "Oct4 mutants (S229D and F271A) that disrupt the Aurkb/PP1 regulatory axis significantly decrease the efficiency of somatic cell reprogramming to induced pluripotent stem cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C107, and C118 demonstrate that mutations disrupting Oct4 phosphorylation regulation impair reprogramming efficiency, as shown by reprogramming experiments in Figure 7G. This extends the functional importance of the Aurkb/PP1-Oct4 axis beyond ESC maintenance to cellular reprogramming, though the mechanistic details of how impaired resetting affects reprogramming are not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C108",
+      "C119",
+      "C143"
+    ],
+    "result": "The cell cycle is directly linked to pluripotency programs in ESCs through the Aurkb/PP1-mediated regulation of Oct4. The spatiotemporal recycling of Oct4 by Aurkb/PP1 during the cell cycle is pivotal for transcriptional resetting and maintaining ESC identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C108, C119, and C143 represent the main conclusions drawn from the collective experimental findings. These conclusions are well-supported by the convergence of evidence from phosphorylation/dephosphorylation studies, cell cycle analysis, transcriptional profiling, and functional validation with mutants. The inference that prompt resetting prevents postmitotic cell fate changes (C143) is a reasonable interpretation of the data showing that delayed resetting (via OKA treatment or mutants) causes loss of pluripotency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C135",
+      "C136",
+      "C144"
+    ],
+    "result": "The authors propose that the M/G1 transition represents a critical window for ESC fate determination, where tight resetting of Oct4 maintains pluripotency while loose resetting may lead to differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C1, C135, C136, and C144 represent speculative hypotheses about the broader implications of Oct4 resetting for ESC fate decisions. While the experimental data support that proper resetting is required for maintaining pluripotency, the specific proposal that the M/G1 transition serves as a bifurcation point for fate decisions lacks direct experimental validation. Testing this hypothesis would require experiments examining differentiation conditions and demonstrating that altered resetting kinetics during M/G1 transition directly influences lineage commitment decisions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background claims establishing the context for the study, including the roles of core transcription factors in pluripotency, unusual ESC cell cycle characteristics, links between cell cycle and pluripotency, Oct4 as a master regulator, and the Aurkb-PP1 axis in cell cycle regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C19 are background statements supported by citations to previous literature. These establish the scientific context and rationale for the current study. The claims are appropriately cited and represent established knowledge in the field, though they are not novel findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C40",
+      "C63",
+      "C72",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C120",
+      "C121",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Discussion claims contextualizing the findings within existing literature, including comparisons to previous studies on Oct4 phosphorylation, transcription factor behavior during mitosis, Aurora kinase functions, PP1 functions, cell cycle-pluripotency links, and nuclear reprogramming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32, C40, C63, C72, C109-C115, C120-C121, C124-C133, and C137-C140 are discussion points that place the current findings in the context of existing literature. These are appropriately cited and help interpret the significance of the results. Claim C113 represents a reasonable inference about differential roles of Aurka and Aurkb based on the data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "The Aurkb phosphorylation site (S229) and PP1-binding motif (RVWF) in Oct4 are in close proximity in the 3-dimensional structure, and mutations at these sites lead to loss of pluripotency even in the presence of LIF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 are supported by structural analysis (Figure 3B) and functional data from Figure 7. The structural proximity of the phosphorylation site and PP1-binding motif provides a mechanistic rationale for the coordinated regulation, and the functional data demonstrate the biological importance of these regulatory elements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "Oct4 protein levels remain stable throughout the cell cycle despite fluctuations in nascent Oct4 RNA levels, suggesting that phosphorylated Oct4 may be protected from degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C123 present an observation (stable Oct4 protein despite fluctuating RNA) and a speculative interpretation (protection from degradation). While the observation is supported by Western blot and nascent RNA data (Figure 4A and F), the interpretation about protection from degradation is speculative (C123 is marked as SPECULATION). No direct experiments testing Oct4 protein stability or degradation rates were performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C134"
+    ],
+    "result": "The regulation of S-G2-M phase by Oct4 might be critical for ESC pluripotency, based on the known roles of Bub1 and Rif1 in cell cycle regulation and pluripotency maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C134 is a speculative inference (marked as SPECULATION) based on the observation that Oct4 regulates Bub1 and Rif1, combined with literature showing these genes are important for pluripotency. While the data support that Oct4 regulates these cell cycle genes, the broader claim about S-G2-M phase regulation being critical for pluripotency requires additional experimental validation beyond the regulation of two specific genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C141",
+      "C142"
+    ],
+    "result": "The resetting of Oct4 occurs rapidly during mitotic exit, and delayed resetting (by OKA treatment or mutations) alters the cell cycle and causes loss of pluripotency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C142 are supported by experimental data showing rapid dephosphorylation during M/G1 transition and the effects of OKA treatment and mutants on cell cycle and pluripotency. These represent well-supported observations from the synchronization experiments and mutant analyses presented throughout the manuscript.",
+    "result_type": "MINOR"
+  }
+]

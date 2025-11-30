@@ -1,0 +1,1862 @@
+{
+  "submission": {
+    "id": "03c14b00-7b31-48c3-a4d9-edb4aa778e5b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:02:04.353028Z",
+    "updated_at": "2025-11-29T22:02:04.353028Z"
+  },
+  "content": [
+    {
+      "id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "submission_id": "03c14b00-7b31-48c3-a4d9-edb4aa778e5b",
+      "content_type": "manuscript",
+      "content_text": "# Discrete spatial organization of TGF\u03b2 receptors couples receptor multimerization and signaling to cellular tension\n\n## Authors\n\n- Joanna P Rys<sup>1</sup>\n- Christopher C DuFort<sup>2</sup>\n- David A Monteiro<sup>1</sup>\n- Michelle A Baird<sup>3</sup>\n- Juan A Oses-Prieto<sup>4</sup> ([ORCID: 0000-0003-4759-2341](https://orcid.org/0000-0003-4759-2341))\n- Shreya Chand<sup>4</sup>\n- Alma L Burlingame<sup>4</sup>\n- Michael W Davidson<sup>3</sup>\n- Tamara N Alliston<sup>1</sup> \u2020\n\n### Affiliations\n\n1. UC Berkeley-UC San Francisco Graduate Program in Bioengineering University of California, San Francisco San Francisco United States\n2. Department of Orthopaedic Surgery University of California, San Francisco San Francisco United States\n3. National High Magnetic Field Laboratory,Department of Biological Science Florida State University Tallahassee United States\n4. Mass Spectrometry Facility, Department of Pharmaceutical Chemistry University of California, San Francisco San Francisco United States\n5. Department of Bioengineering and Therapeutic Sciences, Department of Otolaryngology\u2013Head and Neck Surgery, Eli and Edythe Broad Center of Regeneration Medicine and Stem Cell Research University of California, San Francisco San Francisco United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nCell surface receptors are central to the cell's ability to generate coordinated responses to the multitude of biochemical and physical cues in the microenvironment. However, the mechanisms by which receptors enable this concerted cellular response remain unclear. To investigate the effect of cellular tension on cell surface receptors, we combined novel high-resolution imaging and single particle tracking with established biochemical assays to examine TGF\u03b2 signaling. We find that TGF\u03b2 receptors are discretely organized to segregated spatial domains at the cell surface. Integrin-rich focal adhesions organize T\u03b2RII around T\u03b2RI, limiting the integration of T\u03b2RII while sequestering T\u03b2RI at these sites. Disruption of cellular tension leads to a collapse of this spatial organization and drives formation of heteromeric T\u03b2RI/T\u03b2RII complexes and Smad activation. This work details a novel mechanism by which cellular tension regulates TGF\u03b2 receptor organization, multimerization, and function, providing new insight into the mechanisms that integrate biochemical and physical cues.\n\n## Introduction\n\nThe diversity and specificity of cellular responses rely on the precise integration of biochemical and physical cues from the microenvironment. Cells generate a coordinated response through interactions among signaling pathways \u2013 from ligands and receptors to intracellular effectors. Receptors are a particularly versatile locus of control since they undergo regulated microdomain clustering, internalization and homo/hetero-meric multimerization. Because these mechanisms affect ligand binding, enzymatic activity, and effector recruitment, receptors play a crucial role in defining signal intensity, duration, location, and quality (Bethani et al., 2010; Di Guglielmo et al., 2003; Groves and Kuriyan, 2010; Salaita et al., 2010). However, many questions remain about the mechanisms by which receptors participate in the concerted cellular response to a multitude of concurrent cues.\n\nThe TGF\u03b2 signaling pathway exemplifies the importance of regulated receptor multimerization. TGF\u03b2 signals through a heterotetrameric complex of transmembrane receptor kinases. Once the TGF\u03b2 ligand is activated from its latent form, it binds directly to a dimer of type II receptors (T\u03b2RII) (Annes, 2003; Munger et al., 1999; Wipff et al., 2007; Munger and Sheppard, 2011). The ligand-bound T\u03b2RII complex recruits and phosphorylates two type I receptors (T\u03b2RI) \u2013 either Alk5 or Alk1 (Wrana et al., 2008). T\u03b2RI, in turn, phosphorylates and activates canonical Smad proteins and multiple non-canonical effectors, such as RhoA, TAK1 and Akt (Massague, 1998; Feng and Derynck, 2005). Specifically, recruitment of Alk5 to the T\u03b2RII complex stimulates phosphorylation of Smad2/3, whereas Alk1 recruitment drives activation of Smad1/5/8 (Lin et al., 2008). The inappropriate shift of T\u03b2RII multimerization partner from Alk5 to Alk1 underlies disease processes ranging from vascular disorders to osteoarthritis (Blaney Davidson et al., 2009; Goumans, 2002). Not only do TGF\u03b2 receptors associate with one another, but also with a number of other receptor families, notably integrins (Scaffidi et al., 2004; Garamszegi et al., 2010). Garamszegi et al. revealed a physical interaction between integrin \u03b12\u03b21 and TGF\u03b2 receptors involved in collagen-induced Smad phosphorylation (Garamszegi et al., 2010). TGF\u03b2 receptor interactions alter ligand specificity and effector selection, offering a regulatory mechanism to calibrate TGF\u03b2 signaling based on the cellular microenvironment.\n\nIntegrins, another class of multimeric receptors, are central to cellular mechanotransduction. Upon integrin binding to the extracellular matrix, the formation of focal adhesions stimulates actomyosin contractility to generate cellular tension (DuFort et al., 2011; Giancotti, 1999; Ingber, 1997). Through this Rho/ROCK-dependent mechanism, cells establish tensional homeostasis with the physical features of the extracellular environment (DuFort et al., 2011). Cellular tension can amplify, alter, or suppress cellular responses to growth factor signaling (Allen et al., 2012; McBeath et al., 2004; Wang et al., 2012). The functional state of many intracellular effectors, including \u03b2-catenin, YAP/TAZ, and MAPK, is modulated by cellular tension (Samuel et al., 2011; Dupont et al., 2011; Wang et al., 1998). In the case of TGF\u03b2 signaling, we and others have identified several mechanosensitive responses (Allen et al., 2012; Wang et al., 2012; Leight et al., 2012). The activation of latent TGF\u03b2 ligand, as well as the phosphorylation, nuclear translocation and transactivation of Smads is regulated by cellular tension in a Rho/ROCK-dependent manner (Allen et al., 2012; Wipff and Hinz, 2008). However, the mechanisms by which changes in cellular tension modulate effector activity remain unclear.\n\nThe effect of cellular tension on the multimerization of receptors other than integrins is largely unexplored. In spite of the established tension-sensitive regulation of downstream signaling effectors, the effect of physical cues on growth factor receptor interactions is unknown. This gap in understanding is partly due to the fact that until recently, studies of cell surface receptor colocalization and physical interactions have mostly utilized biochemical, biophysical, or fluorescence imaging approaches. While invaluable, these approaches are limited by their inability to discriminate spatially discrete molecular interactions that occur in specific cellular domains. Novel super-resolution imaging approaches provide the capability to visualize receptor responses to biochemical and physical cues at the single molecule level with spatial and temporal specificity (Coelho et al., 2013; Manley et al., 2008; Rossier et al., 2012; Calebiro et al., 2013; Xia et al., 2013). To elucidate mechanisms by which physical cues regulate growth factor signaling, we utilize high-resolution imaging, single particle tracking, mass spectrometry and biochemical assays to test the hypothesis that cellular tension regulates TGF\u03b2 receptor multimerization. We find that cellular tension controls the spatial organization, multimerization and activity of a discrete population of TGF\u03b2 receptors at integrin-rich focal adhesions, suggesting a novel mechanism by which physical cues calibrate the activity of the TGF\u03b2 signaling pathway.\n\n## Results\n\n### Discrete localization of T\u03b2RI and T\u03b2RII to segregated spatial domains\n\nTo investigate the spatiotemporal control of TGF\u03b2 receptors, we evaluated the localization of endogenous and fluorescently tagged T\u03b2RII and T\u03b2RI in ATDC5 chondroprogenitor cells and NIH3T3 fibroblasts. Immunofluorescence of T\u03b2RII in both wildtype and transfected ATDC5 cells yielded similar results, revealing specific punctate staining that did not provide structural information (Figure 1A, Figure 1\u2014figure supplement 1). Proceeding with fluorescently tagged T\u03b2RII allowed for visualization of fine structural features in static and dynamic conditions. Spinning disc confocal microscopy of T\u03b2RII-mEmerald allowed visualization of its spatial organization, revealing shadowed regions where T\u03b2RII expression is completely absent (indicated by arrows, Figure 1B\u2013D). Total internal reflection fluorescence (TIRF) microscopy improves visualization of transmembrane proteins by examining a thin section of the sample at the adherent cell surface. Switching from widefield microscopy (Figure 1E) to TIRF on the same cell vividly revealed segregated domains of T\u03b2RII (Figure 1F) and T\u03b2RI (Figure 1G,H). The sequestration of T\u03b2RII from T\u03b2RI was present with either the canonical (Alk5) or non-canonical (Alk1) type I TGF\u03b2 receptors (Figure 1G,H). Indeed, when co-expressed in the same cell, T\u03b2RII is enriched at the boundary of discrete T\u03b2RI domains, demonstrating a novel spatial segregation of these signaling partners (Figure 1I\u2013L).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/09300/elife-09300-fig1-v2.jpg)\n\n**Figure 1.:** Spinning disc confocal imaging of endogenous T\u03b2RII (A, Figure 1\u2014figure supplement 1) demonstrates punctate staining. Imaging of mEmerald-labeled T\u03b2RII (B) reveals T\u03b2RII-absent domains in ATDC5 (B,C) and NIH3T3 (D) cells expressing mEmerald-T\u03b2RII. Switching from widefield (E) to TIRF mode imaging (F) on the same cell unveils a specific spatial organization of T\u03b2RII, which is discrete from that of T\u03b2RI (Alk5 and Alk1) (G,H). ATDC5 cells co-expressing mEmerald-T\u03b2RII and mCherry-T\u03b2RI (Alk1) reveal that T\u03b2RII surrounds specific domains of T\u03b2RI (I-L). Quantitative profile plot of expression intensity demonstrates separate and distinct localization patterns of T\u03b2RI and T\u03b2RII (L).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09300/elife-09300-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Wildtype ATDC5 cells (A-C) and ATDC5 cells expressing T\u03b2RII-mCherry were stained with two different anti-T\u03b2RII (A,D and B,E) antibodies and an IgG control (C,F). Staining of T\u03b2RII between wildtype and transfected cells differs only in intensity and not structurally, indicating that the observed spatial organization is not due to expression constructs alone. Although T\u03b2RII antibodies showed specificity relative to IgG staining, this bright punctate staining is insufficient for visualizing fine structural organization.\n\n### Single molecule trajectories reveal specific regulation of TGF\u03b2 receptor dynamics\n\nSince dynamic recruitment of T\u03b2RI to TGF\u03b2-bound T\u03b2RII complexes stimulates downstream effectors, we sought to determine if spatial segregation of TGF\u03b2 receptors affects receptor mobility. Single-particle tracking photoactivated localization microscopy (sptPALM) resolves the dynamics of individual molecules in live single cells. Using sptPALM, we captured thousands of trajectories of individual T\u03b2RI (Alk5) and T\u03b2RII proteins labeled with photoswitchable mEos2 (Figure 2A,B) (McKinney et al., 2009). The large number of long duration molecular trajectories (Figure 2C) allowed us to visualize single molecule track behavior and describe molecular environments within individual cells. For both T\u03b2RI and T\u03b2RII, individual receptors showed a range of mobility, resulting in groups of immobile, confined, or freely diffusive receptors (representative tracks, Figure 2D). Mobility of each group of T\u03b2RI did not differ significantly from T\u03b2RII (Figure 2E), but the diffusion coefficient of T\u03b2RI was slightly higher (Figure 2F), perhaps because of its lower molecular weight (T\u03b2RI/Alk5 56\u2009kDa vs. T\u03b2RII 65\u2009kDa). Relative to whole cell TGF\u03b2 receptor dynamics, T\u03b2RI and T\u03b2RII are significantly less mobile in cellular domains enriched with clusters of spatially organized receptors (Figure 2F). Thus, this spatially organized population of TGF\u03b2 receptors is slower and more confined, possibly due to interactions with other proteins.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/09300/elife-09300-fig2-v2.jpg)\n\n**Figure 2.:** All mEos2-tagged T\u03b2RI and T\u03b2RII sptPALM single molecule trajectories with durations of at least 5 frames (500 ms) are plotted for representative ATDC5 cells, in which each color represents a different track (A,B). Cellular domains outside the imaging plane appear black. The histogram represents the distribution within a single cell of trajectory durations for individual T\u03b2RI and T\u03b2RII molecules (C). Representative individual T\u03b2RI sptPALM single molecule trajectories exhibiting immobile (red), confined (green), and freely diffusive (blue) movement are plotted in (D), with calculated mean squared displacement (MSD) plots for each population of T\u03b2RI and T\u03b2RII shown in E (mean \u00b1 SEM). Comparison of diffusion coefficients for T\u03b2RI and T\u03b2RII (F, mean \u00b1 SEM) in whole cells relative to areas of segregated T\u03b2RI/T\u03b2RII identify a less mobile population of TGF\u03b2 receptors in these regions of interest (ROI). See Source code 1 and Figure 2\u2014source data 1.\n\n### Focal adhesions organize T\u03b2RII around a segregated pool of T\u03b2RI\n\nThe distinct localization of TGF\u03b2 receptors could result from physical interactions with any number of known TGF\u03b2 receptor-associated proteins. Among these, integrins bind to T\u03b2RI and T\u03b2RII and functionally interact with the TGF\u03b2 pathway at multiple levels (Wrana et al., 2008; Scaffidi et al., 2004). The primary integrins in chondrocytes are integrins \u03b12 and \u03b1V, which bind collagen and vitronectin/fibronectin (Loeser, 2000). Both integrins interact with the TGF\u03b2 pathway (Scaffidi et al., 2004; Garamszegi et al., 2010). TIRF imaging of mCherry-labelled integrin \u03b12 revealed the presence of focal adhesions at these T\u03b2R-rich sites. Specifically, T\u03b2RII is absent from sites of adhesions and forms a peripheral ring surrounding integrin \u03b12, resulting in distinct patterns of spatial localization (Figure 3A). Interestingly, this spatial organization is absent in cells grown on poly-l-lysine-coated substrates that facilitate integrin-independent cell adhesion (Figure 3\u2014figure supplement 1). Therefore, T\u03b2RII organization at sites of adhesion is dependent upon integrin activity. Profile plots of intensity and a custom analysis (Figure 3Ai,Bi,Ci) were utilized to quantify colocalization between T\u03b2Rs and integrin \u03b12 across multiple cells. The slope of the regression line can be used as a metric, in which higher values indicate increased colocalization of two proteins. T\u03b2RI (Alk5 and Alk1) is precisely colocalized with integrin \u03b12 within focal adhesions, such that adhesions appear yellow (Figure 3B,C) and regression line slopes (Figure 3Bi,Ci) are higher relative to T\u03b2RII (Figure 3A,Ai). This analysis reveals that integrin \u03b12 colocalizes significantly more with Alk5 and Alk1 than with T\u03b2RII (Figure 3D). The specific localization of T\u03b2RII near focal adhesions is apparent in cells of both mesenchymal (ATDC5, Figure 3A\u2013C,E; Saos-2, Figure 3F) and epithelial (MCF10A, Figure 3G) origin and is observed whether integrin \u03b12 or integrin \u03b1V is tagged with a fluorescent protein (Figure 3). Furthermore, this observation still holds if the fluorescent labels for T\u03b2RII and integrin \u03b12 are switched, as well as if T\u03b2RII is expressed and imaged alone (Figure 3E,H). The overall spatial organization of TGF\u03b2 receptors at sites of adhesion is not affected upon stimulation with exogenous TGF\u03b2 (Figure 3I), suggesting that this spatiotemporal organization is regulated through mechanisms independent from TGF\u03b2 ligand addition. Given the critical role of integrins in mechanotransduction and the known sensitivity of TGF\u03b2 signaling to cellular tension (Allen et al., 2012), the unique pattern of TGF\u03b2 receptor and integrin localization could prime TGF\u03b2 receptors for regulation by elements of the mechanotransduction pathway.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/09300/elife-09300-fig3-v2.jpg)\n\n**Figure 3.:** TIRF mode imaging and a custom colocalization analysis were used to evaluate localization of T\u03b2RII (A), Alk5 (B), or Alk1 (C) with integrin \u03b12 in ATDC5 cells. T\u03b2RII surrounds integrin \u03b12 (A), whereas both subtypes of T\u03b2RI, Alk5 (B) and Alk1 (C), are included within integrin-rich focal adhesions, as reflected by profile plots and the slope values of the regression lines (Ai,Bi,Ci). Quantification of colocalization reveals that Alk5 and Alk1 are significantly more colocalized with integrin \u03b12 relative to T\u03b2RII (**p < 0.001, mean \u00b1 SD, D, Figure 3\u2014source data 1). This organization is also present in ATDC5 cells when the fluorescent labels for T\u03b2RII and integrin \u03b12 have been switched (E), in osteosarcoma Saos-2 cells (F), or in epithelial MCF10A cells (G), when labeling focal adhesions with integrin \u03b1V (G), and when T\u03b2RII is expressed and imaged alone (H). T\u03b2RII spatial organization is unaffected by addition of TGF\u03b2, indicated by red outlines in the same cellular region following 15 min of TGF\u03b2 treatment (I). See Source code 2.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09300/elife-09300-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** T\u03b2RII spatial organization (A,B,E,F) and focal adhesion formation (C,D,G,H) are absent on poly-l-lysine (B,D,F,H) coated glass substrates relative to collagen II (A,C,E,G). Spinning disc confocal microscopy at 40x (A-D) and TIRF microscopy at 100x (E\u2013H) of ATDC5 cells expressing T\u03b2RII-mEmerald and integrin \u03b12-mCherry demonstrate a loss of T\u03b2RII depleted regions (A,B), T\u03b2RII peripheral ring formations (E,F), and integrin \u03b12 developed adhesions (C,D,G,H) on poly-l-lysine relative to collagen II-coated substrates.\n\n### Focal adhesions immobilize T\u03b2RI and limit the integration of T\u03b2RII\n\nTo investigate the effect of focal adhesions on T\u03b2RI (Alk5) and T\u03b2RII dynamics, we used sptPALM to visualize TGF\u03b2 receptor trajectories near or within these vinculin-rich domains (Figure 4A,B). SptPALM shows, both qualitatively and quantitatively, that T\u03b2RI is preferentially enriched and T\u03b2RII is preferentially excluded at sites of adhesion (Figure 4A\u2013C). Analysis of individual T\u03b2RII trajectories shows that T\u03b2RII \u2018bounces\u2019 around the edges of individual focal adhesions (Figure 4E) but is rarely incorporated within the focal adhesion, as is common for T\u03b2RI (Figure 4D,i\u2013ii). To determine if focal adhesions shifted the fractions of freely diffusive, confined, or immobile receptors, T\u03b2RI and T\u03b2RII trajectories near sites of adhesion were mapped based on receptor mobility. Trajectory maps reveal that T\u03b2RII mobility is confined near focal adhesions, which sequester and immobilize T\u03b2RI (Figure 4F,G). Indeed, a higher fraction of immobilized T\u03b2RI is present inside adhesions relative to outside (Figure 4H). Accordingly, the diffusion coefficient for T\u03b2RI decreases for tracks inside adhesions compared to those outside, demonstrating that this spatial organization specifically limits T\u03b2RI mobility (Figure 4I). The differential localization and dynamics of T\u03b2RI and T\u03b2RII in adhesion-rich domains, relative to one another and to the whole cell TGF\u03b2 receptor population, indicates that this spatial control has functional implications for TGF\u03b2 signaling and for mechanotransduction.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/09300/elife-09300-fig4-v2.jpg)\n\n**Figure 4.:** Representative trajectories for T\u03b2RI (Alk5) overlaid with the tagged focal adhesion marker vinculin are consistent with TIRF results showing a colocalization and interaction between integrin-based adhesions and T\u03b2RI (A) but not T\u03b2RII (B). Quantification of these regions shows that T\u03b2RI is preferentially enriched inside adhesions relative to outside, and that T\u03b2RII is preferentially excluded at these same sites (*p < 0.01, mean \u00b1 SD, C). Representative single molecule trajectories show sequestration of T\u03b2RI in focal adhesions (D, i-ii) and free diffusion outside adhesions (D, iii-iv), whereas T\u03b2RII bounces around the edges of focal adhesions in a freely diffusive (E, i-ii) or confined (E, iii-iv) manner. Analyzing T\u03b2R trajectories at focal adhesions based on diffusion (Red: Immobile, Green: Confined, Blue: Freely Diffusive) shows a higher density of tracks inside adhesions for T\u03b2RI (F) compared to T\u03b2RII (G), and demonstrates a higher fraction of immobile T\u03b2RI tracks inside relative to outside adhesions (H). The diffusion coefficient of T\u03b2RI trajectories decreases inside adhesions (mean \u00b1 SD, I). See Source code 1 and Figure 4\u2014source data 1.\n\n### TGF\u03b2 receptors form complexes with integrin \u03b1V and the actin-binding protein cofilin\n\nTo determine whether these changes in receptor mobility at sites of adhesion are due to direct or indirect physical interactions with other proteins, we performed mass spectrometry and co-immunoprecipitation experiments. Mass spectrometric analysis of proteins that precipitate with Flag-tagged T\u03b2RI (Alk5) and T\u03b2RII revealed hundreds of proteins, several of which were specifically enriched compared with precipitates of untransfected (mock) cells. The analysis identified proteins already known to interact with T\u03b2Rs, such as PRMT5 and PRMT1 (Xu et al., 2013). T\u03b2Rs also precipitated several adhesion-related proteins, including integrin \u03b1V and endogenous cofilin, as shown in the annotated spectra (Figure 5A,B). The peptide counts (graph insets) indicate that integrin \u03b1V associates with both T\u03b2RI and T\u03b2RII, and that cofilin preferentially associates with T\u03b2RII (Figure 5A,B). Cofilin is an actin-binding protein that severs ADP-actin filaments at the leading edge of migratory cells (Pollard and Borisy, 2003). Previous reports implicate cofilin as a target of TGF\u03b2-activated RhoA, which promotes actin reorganization through ROCK, LIMK and cofilin (Vardouli et al., 2005; Lamouille et al., 2014). However, this is the first report, to our knowledge, of a complex between TGF\u03b2 receptors and cofilin. To confirm these mass spectrometry findings, we performed co-immunoprecipitation on cells expressing Flag-tagged T\u03b2RI/II and tagged integrin \u03b1V or cofilin (Figure 5C,D). Consistent with the mass spectrometry peptide counts, integrin \u03b1V forms a complex with both T\u03b2RI and T\u03b2RII, whereas cofilin primarily interacts with T\u03b2RII. Although the novel finding of a complex formation, either through direct or indirect interactions, between T\u03b2RII and cofilin remains to be further explored, it suggests a potential mechanism underlying the discrete spatial organization of T\u03b2RII at focal adhesions.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/09300/elife-09300-fig5-v2.jpg)\n\n**Figure 5.:** High-energy collision dissociation\u2013tandem mass spectra obtained from precursor ions with mass 549.7775+2 (A) and 669.3185+2 (B) found in tryptic digests of immunoaffinity pulldowns of T\u03b2RI/II, corresponding to peptides spanning residues Y153-K165 of human integrin \u03b1V (A) and Y82-K92 of human cofilin (B). b- and y- type ion series are labeled in the figure. Insets show the sequences of the peptides as well as representative peptide counts for integrin \u03b1V (A) and cofilin (B) for mock (M), T\u03b2RI (RI, Alk5), and T\u03b2RII (RII) pulldowns. Co-immunoprecipitation of Flag-tagged T\u03b2RI and T\u03b2RII demonstrate the presence of integrin \u03b1V and cofilin in these complexes (C,D).\n\n### Cellular tension regulates TGF\u03b2 receptor organization at focal adhesions\n\nIntegrins transmit changes in the physical microenvironment across the plasma membrane to modulate cellular tension and signaling. The presence of a focal adhesion-associated TGF\u03b2-receptor population suggests a novel mechanism by which cellular tension may regulate TGF\u03b2 signaling. To test the hypothesis that TGF\u03b2 receptor organization at focal adhesions is sensitive to cellular tension, we treated ATDC5 cells with the ROCK inhibitor Y27632 or the myosin II inhibitor blebbistatin. Within 15 min of adding Y27632 (Figure 6A,B) or blebbistatin (Figure 6C,D), the peripheral ring of T\u03b2RII completely collapses. The segregation of T\u03b2RII from T\u03b2RI and integrin \u03b12 at sites of adhesion is dynamically released, such that T\u03b2RII (Video 1) converges and colocalizes with integrin \u03b12 (Video 2, Video 3). Quantitative analysis demonstrates that T\u03b2RII is significantly more colocalized with integrin \u03b12 after addition of Y27632 and blebbistatin (Figure 6E).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/09300/elife-09300-fig6-v2.jpg)\n\n**Figure 6.:** Within 15 min of disrupting cellular tension by adding the ROCK inhibitor Y27632 (A,B) or the myosin II inhibitor blebbistatin (C,D), the peripheral ring of T\u03b2RII-mEmerald around focal adhesions (A,C) completely collapses (B,D). Colocalization quantification (Ai,Bi,Ci) demonstrates that T\u03b2RII is significantly more colocalized with integrin \u03b12 post-treatment (Y27632, blebbistatin) relative to pre-treatment (**p < 0.001, mean \u00b1 SD, E, Figure 6\u2014source data 1). Disruption of tension with Y27632 enhances integrin \u03b1V association with T\u03b2RI but reduces its association with T\u03b2RII (F). See Source code 2.\n\n![Video 1.](https://cdn.elifesciences.org/articles/09300/elife-09300-media1.mp4.jpg)\n\n**Video 1.:** T\u03b2RII-mEmerald spatial organization collapses within 15 min of adding ROCK inhibitor Y27632 in ATDC5 cells (45 min, 7 fps).\n\n![Video 2.](https://cdn.elifesciences.org/articles/09300/elife-09300-media2.mp4.jpg)\n\n**Video 2.:** Integrin \u03b12-mCherry adhesions disassemble within 15 min of adding ROCK inhibitor Y27632 in ATDC5 cells (45 min, 7 fps).\n\n![Video 3.](https://cdn.elifesciences.org/articles/09300/elife-09300-media3.mp4.jpg)\n\n**Video 3.:** Composite of T\u03b2RII and integrin \u03b12 (Video 3) demonstrate a tension-sensitive collapse of this discrete spatial organization at sites of adhesion and a reorganization at the cell periphery.\n\nTo assess the effect of cellular tension on physical associations among T\u03b2RI, T\u03b2RII and integrins, we performed co-immunoprecipitation experiments. We find that cellular tension not only regulates the spatial organization of integrins and TGF\u03b2 receptors, but also affects their physical associations with each other; though these interactions may be direct or indirect. Specifically, while disruption of tension with the ROCK inhibitor enhanced integrin \u03b1V association with T\u03b2RI, it almost completely blocked the association between integrin \u03b1V and T\u03b2RII (Figure 6F).\n\n### Tension-sensitive regulation of TGF\u03b2 receptor heteromerization and signaling\n\nSince a reduction in cellular tension drives colocalization of T\u03b2RI and T\u03b2RII, we sought to determine if this change in spatial organization had functional consequences for TGF\u03b2 signaling. We first evaluated the effect of reduced cellular tension on T\u03b2RI/T\u03b2RII heteromerization using co-immunoprecipitation. Release of this discrete spatial segregation of TGF\u03b2 receptors at focal adhesions allows the receptor subunits to interact such that ROCK-inhibition stimulates formation of heteromeric T\u03b2RI/T\u03b2RII complexes (Figure 7A). To examine the effect of manipulating cellular tension under physiological conditions, we cultured cells on polydimethylsiloxane\u00a0(PDMS)\u00a0substrates of varying stiffness. A reduction in cellular tension through culture on compliant substrates significantly drives T\u03b2RI/T\u03b2RII complex formation (Figure 7B). Therefore, a reduction in cellular tension, due to pharmacologic ROCK inhibition or changes to the stiffness of the microenvironment, drives formation of a multimeric T\u03b2RI/T\u03b2RII complex that is required for the activation of downstream TGF\u03b2 effectors.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/09300/elife-09300-fig7-v2.jpg)\n\n**Figure 7.:** ROCK inhibition releases the discrete spatial organization of T\u03b2Rs at focal adhesions and drives the formation of heteromeric T\u03b2RI/T\u03b2RII complexes within 15 min of Y27632 exposure (A), as shown by Flag co-immunoprecipitation (IP) and immunoblotting (IB). Likewise, manipulation of cellular tension through culturing cells on collagen II-coated glass or 0.5 kPa PDMS substrates increases co-immunoprecipitation of T\u03b2RI with Flag-tagged T\u03b2RII (p < 0.05, B). In cells grown on collagen II-coated compliant (0.5 kPa, p < 0.05) or stiff (16 kPa) PDMS substrates, endogenous Smad3 phosphorylation is increased (C). The effect of TGF\u03b2 on Smad3 phosphorylation is substrate-dependent, such that maximal TGF\u03b2-inducibility is observed on 0.5 kPa substrates (p < 0.05), consistent with a tension-sensitive calibration of T\u03b2R localization and activity (C). See Figure 7 \u2013 source data.\n\nTo determine the effect of tension-sensitive T\u03b2R localization and heteromerization on downstream TGF\u03b2 effectors, we evaluated the phosphorylation of Smad3. Culturing cells on compliant substrates leads to significantly increased endogenous Smad3 phosphorylation (Figure 7C). Interestingly, the effect of TGF\u03b2 on Smad3 phosphorylation is substrate-dependent, such that TGF\u03b2 induces Smad3 phosphorylation on 0.5 kPa substrates but not on 16 kPa substrates (Figure 7C). This is consistent with the established non-linear response of TGF\u03b2 signaling and other cellular behaviors to cellular tension (Allen et al., 2012; Rape et al., 2015). Thus the spatial organization of T\u03b2RI and T\u03b2RII by integrins at focal adhesions affords tension-sensitive control of T\u03b2RI and T\u03b2RII multimerization and activation of Smad3, providing a mechanosensitive mechanism by which cells calibrate their response to TGF\u03b2.\n\n## Discussion\n\nHere we show that cellular tension regulates TGF\u03b2 receptor spatial organization and interactions at focal adhesions, providing a novel mechanism for the cellular integration of signaling by physical and biochemical cues. We observe a novel spatiotemporal regulation of the TGF\u03b2 pathway such that T\u03b2RII is segregated from T\u03b2RI and integrins at sites of adhesions. Single particle tracking reveals the dynamics of individual TGF\u03b2 receptor molecules, and identifies populations of TGF\u03b2 receptors with distinct behaviors and mobility near and far from sites of focal adhesions. The confined population of TGF\u03b2 receptors at focal adhesions has lower mobility than the freely diffusive receptor population far from sites of adhesion. TGF\u03b2 receptors associate with several adhesion-related proteins, including the actin-binding protein cofilin, which preferentially associates with T\u03b2RII relative to T\u03b2RI. This novel spatial organization of T\u03b2RI and T\u03b2RII at sites of adhesion provides mechanosensitive control of TGF\u03b2 receptor multimerization and function independently of TGF\u03b2 ligand stimulation. Overall, this reveals the potential of two differentially regulated populations of TGF\u03b2 receptors \u2013 one that is TGF\u03b2-sensitive and one that is tension-sensitive \u2013 a finding that may contribute to the context-dependent signaling outcomes of this pathway.\n\nThis tension-dependent mechanism for the regulation of TGF\u03b2 receptors has a number of interesting functional implications. At the level of the TGF\u03b2 ligand, integrins activate TGF\u03b2 from its latent form through cellular tension generated by actomyosin contraction (Wipff et al., 2007; Munger and Sheppard, 2011; Wells and Discher, 2008; Giacomini et al., 2012). The observed recruitment of TGF\u03b2 receptors to focal adhesions would enrich their access to this reservoir of integrin-activated TGF\u03b2. At the receptor level, focal adhesions may sequester T\u03b2RI from T\u03b2RII to limit their activity in the presence of ligand. The extent to which this sequestration is cofilin-dependent requires further investigation. This sequestration of T\u03b2RI may contribute to its slow internalization, relative to T\u03b2RII, following TGF\u03b2 stimulation (Vizan et al., 2013; Ma et al., 2007). Alternatively, focal adhesions may create structured T\u03b2RI and T\u03b2RII boundaries that prime a robust response when cells encounter the correct combination of physical and biochemical cues. We demonstrate tension-sensitive regulation of endogenous downstream Smad3 phosphorylation by cellular tension and TGF\u03b2. In addition, chondrocytes grown in TGF\u03b2 on 0.5 MPa substrates induce differentiation markers far beyond levels induced by either cue alone (Allen et al., 2012). We and others have reported that the effect of substrate stiffness or cellular tension/Rho/ROCK activity on downstream TGF\u03b2 signaling is synergistic and nonlinear (Allen et al., 2012; Wang et al., 2012; Leight et al., 2012). Therefore, it is possible that lower cell tension in one cell type may have a differential effect on Smad phosphorylation, nuclear localization, and transactivation than in another cell type. It would be interesting to examine this effect utilizing a substrate system that provides independent and continuous gradients of ligand density and substrate stiffness (Rape et al., 2015). The mechanisms responsible for such synergy have been unclear, but this newly described regulation of TGF\u03b2 receptor multimerization and downstream signaling may couple the mechanosensitive activity of the TGF\u03b2 pathway to physical cues. Fully understanding the functional implications of this spatially-distinct TGF\u03b2 receptor population will require the development of new imaging tools, such as those that can dynamically visualize TGF\u03b2 effector activity locally at focal adhesions.\n\nThe current study of TGF\u03b2 receptors opens the possibility that tension-sensitive receptor multimerization may underlie mechanosensitive signaling by other pathways. Cellular tension impacts the activation, translocation, and function of intracellular effectors including small GTP-ases, kinases and transcriptional regulators such as Smads and YAP/TAZ (Allen et al., 2012; Wang et al., 2012; Dupont et al., 2011; Leight et al., 2012). However, known mechanisms are insufficient to explain the ability of physical cues to modulate cell-type specific responses to BMP, EGF, and other growth factors (Wang et al., 2012; Paszek et al., 2005). Several receptor families share features with TGF\u03b2 receptors that may contribute to their mechanosensitivity, such as their association with integrin-rich focal adhesions and their potential for the formation of stable receptor clusters by geometric constraints (Bethani et al., 2010; Salaita et al., 2010; Hartman and Groves, 2011). Previous studies have established important physical and functional links between focal adhesion components and growth factor receptors. EGF receptor binds actin and colocalizes with integrin \u03b12\u03b21 (Alam et al., 2007), while the receptor CD44 interacts with several components of the focal adhesion complex, such that hyaluronan-bound CD44 activates c-Src and Rac1 (Turley et al., 2002). Aside from TGF\u03b2, shown herein, the extent to which these physical associations contribute to mechanosensitive control of receptor multimerization or downstream signaling remains to be determined. Nonetheless, others have postulated receptor multimerization as a mechanism for mechanocoupling of TGF\u03b2, ephrin, and T cell receptor signaling (Hartman and Groves, 2011; Hynes, 2009). In each case, the solid state presentation of the ligand is thought to play a critical role in structuring multimeric receptor clusters. In T cell receptor and ephrin signaling, the solid state is provided by ligands on the neighboring cell, which create geometric constraints that mechanically trap receptors to induce clustering (Bethani et al., 2010; Salaita et al., 2010; Hartman and Groves, 2011). For growth factors like TGF\u03b2, BMP, and EGF, the ECM serves as the solid state (Hynes, 2009). ECM proteins such as collagen II bind both TGF\u03b2 and integrin \u03b12\u03b21 (Zhu, 1999), imposing geometric constraints that may structure receptor clusters. Therefore, growth factor receptor multimerization at focal adhesions, controlled by receptor interactions with integrins and with solid state growth factors, provide focal adhesions with the capability to integrate signaling between physical and biochemical cues.\n\nUnderstanding the mechanosensitive regulation of TGF\u03b2 signaling has significant biological implications. We find that focal adhesions segregate T\u03b2RI from T\u03b2RII in both epithelial and mesenchymal cell lineages, opening the possibility that this is a general cellular mechanism for the control of TGF\u03b2 signaling. It will be interesting to determine if TGF\u03b2 receptor multimerization at focal adhesions responds to physical cues that aberrantly promote TGF\u03b2-induced epithelial-mesenchymal transition (EMT) in cancer or the loss of chondrocyte homeostasis in osteoarthritis. On stiff substrates, TGF\u03b2 preferentially activates PI3K to induce EMT instead of apoptosis (Leight et al., 2012). In osteoarthritis, the material properties of the cartilage ECM deteriorate as chondrocytes inappropriately shift the balance from canonical (Alk5/Smad2/3) to non-canonical (Alk1/Smad1/5/8) T\u03b2RI signaling (Blaney Davidson et al., 2009). In each case, the extent to which changing the physical environment alters TGF\u03b2 effector selection through differential TGF\u03b2 receptor multimerization remains to be determined. Applied physical cues, such as compression or shear flow, also regulate TGF\u03b2 signaling in cartilage, vasculature, and other tissues (Li et al., 2010; Sakai et al., 1998; Streuli, 1993). Whether similar mechanisms operate in response to exogenous physical cues remains to be elucidated.\n\nIn conclusion, we utilized novel high-resolution imaging and single particle tracking microscopy coupled with biochemical assays to explore the spatial organization of TGF\u03b2 signaling at the receptor level. At focal adhesions, T\u03b2RII is uniquely segregated from its T\u03b2RI counterpart. Cellular tension modulates the spatial organization, multimerization, and downstream signaling of TGF\u03b2 receptors at sites of adhesion, suggesting the existence of a functionally distinct subpopulation of TGF\u03b2 receptors. Overall, this finding provides a new mechanism by which cellular tension and physical cues exert control of growth factor signaling at the cellular membrane.\n\n## Materials and methods\n\n### Plasmids\n\nThe plasmids pRK5 TGF\u03b2 type I receptor Flag and pRK5 TGF\u03b2 type II receptor Flag were gifts from Rik Derynck (Addgene plasmids 14,831 (Feng and Derynck, 1996), 31719). The plasmid pRK5 TGF\u03b2 type I receptor Myc was also a gift from Rik Derynck.\u00a0All fluorescent protein expression vectors are available in the Michael Davidson Fluorescent Protein Collection on Addgene.\u00a0All fluorescent protein expression vectors were constructed using C1 or N1 (Clontech-style) cloning vectors and initially characterized using the advanced EGFP variant mEmerald to verify proper localization of the fusions.\u00a0To construct the N-terminal (with respect to the fluorescent protein) human integrin alpha2 (NM_002203.3) fusions, the following primers were used to amplify the integrin alpha 2, and create the 18-amino acid linker (GSAGGSGVPRARDPPVAT):\n\nXhoI forward: CTC CGT CTC GAG ACC GCC ATG GGG CCA GAA CGG ACA GGG GCC\n\nKpnI reverse: CGG AAC GGT ACC CCG CTT CCG CCT GCG CTG CCG CTA CTG AGC TCT GTG GTC TCA TCA ATC TCA TCT GGA TTT TTG GTC\n\nFollowing digestion and gel purification, the PCR product was ligated into a similarly digested mEmerald-N1 cloning vector to produce mEmerald-Integrin alpha2-N-18. The resulting fusion, along with mCherry-N1 cloning vector, was sequentially digested with AgeI and NotI to yield mCherry-Integrin alpha2-N-18.\u00a0To generate the N-terminal human integrin alpha V (NM_002210.4) fusions, the following primers were used to amplify the protein and create the 25-amino acid linker (PGSRAQASNSAVDGTAGPGSPPVAT):\n\nAgeI forward: CCC GGG ATC CAC CGG TCG CCA CCA TGG CTT TTC CGC CGC GGC GAC GGC TGC GCC TCG GTC\n\nHindIII reverse: AAT TGA AGC TTG AGC TCG AGA TCC CGG AAG TTT CTG AGT TTC CTT CAC CAT TTT CAT GAG GTT GAA GCT GCT CCC TTT CTT GTT CTT CTT GAG\n\nThe PCR product was digested, gel purified, and ligated into a similarly treated mEmerald-N1 or mCherry-N1 cloning vector to yield the mEmerald-Integrin alphaV-25 or mCherry-Integrin-alphaV-25 fusions.\u00a0To construct the N-terminal tagged human vinculin (NM_003373.3) plasmids, the following primers were used to PCR-amplify and create a 21-amino acid linker (SGGSGILQSTVPRARDPPVAT):\n\nNheI forward: GTC AGA TCC GCT AGC ACC GCC ACC ATG CCA GTG TTT CAT ACG CGC ACG ATC GAG AGC\n\nEcoR1 reverse: CGA CTG CAG AAT TCC GCT GCC ACC GGA CTG GTA CCA GGG AGT CTT TCT AAC CCA GCG CAG\n\nThe PCR product was digested and ligated into a similarly cut mEmerald-N1 or mCherry-N1 cloning vector to yield mEmerald-Vinculin-N-21 or mCherry-Vinculin-N-21 expression vectors.\u00a0To construct the C-terminal human T\u03b2R2 (NM_001024847.2) fusion plasmids, the following primers were used to amplify the T\u03b2R2 and generate an 18-amino acid linker (SGLRSRESGSGGSSGSGS):\n\nXhoI forward: GAC GAG CTC GAG AGA GTG GCT CTG GTG GGT CGA GTG GAA GTG GCA GCG GTC GGG GGC TGC TCA GGG GCC TG\n\nBamHI reverse: CGT CTA GGA TCC CTA TTT GGT AGT GTT TAG GGA GCC GTC TTC AGG AAT CTT CTC C\n\nFollowing digestion and gel purification, the PCR product was ligated into a similarly digested mEmerald-C1 cloning vector, to produce mEmerald-T\u03b2RII-C-18. The fusion, along with mCherry-C1 and mEos2-C1 cloning vectors, was sequentially digested with AgeI and BamHI and ligated to yield mCherry-T\u03b2RII-C-18 and mEos2-T\u03b2RII-C-18.\u00a0To generate the N-terminal human T\u03b2RII plasmids and create an 18-amino acid linker (SSGGASAASGSADPPVAT), the following primers were used:\n\nNheI forward: CGA TCC GCT AGC GCC ACC ATG GGT CGG GGG CTG CTC AGG GGC\n\nBamHI reverse: CCT GTA CGG ATC CGC GCT ACC ACT GGC TGC GCT TGC TCC ACC GCT GCT TTT GGT AGT GTT TAG GGA GCC GTC TTC AGG AAT CTT CTC C\n\nThe PCR fragment was digested, gel purified, and ligated with a similarly treated mEmerald-N1 cloning vector to produce mEmerald-T\u03b2RII-N-18. The resulting fusion, along with mCherry-N1 and mEos2-N1, was double digested with BamHI and NotI to yield mCherry-T\u03b2RII-N-18 and mEos2-T\u03b2RII-N-18 respectively.\u00a0To construct the N-terminal human Alk1 (NM_000020.2) expression vectors, the following primers were used to amplify the plasmid, and create a 13-amino acid linker (GSAGGSGDPPVAT):\n\nEcoRI forward: GCG TTG AAT TCA CCG CCA TGA CCT TGG GCT CCC CCA GGA AAG GCC\n\nBamHI reverse: CGG AAC GGA TCC CCG CTT CCG CCT GCG CTG CCT TGA ATC ACT TTA GGC TTC TCT GGA CTG TTG CTA ATT TTT TGT AGT GTC TTC TTG ATC\n\nFollowing amplification, the PCR fragment was digested, purified, and ligated to a similarly treated mEmerald-N1 cloning vector to yield mEmerald-Alk1-N-13. Upon sequence verification, the resulting fusion, along with mCherry-N1, was digested with BamH1 and NotI and ligated to yield mCherry-Alk1-N-13.\u00a0To generate the C-terminal human Alk5 (NM_004612.2) expression vectors, the following primers were used to amplify the plasmid, and create an 18-amino acid linker (SGLRSGSSAGSASGGSGS):\n\nBglII forward: GAC TCG AGA TCT GGC TCC AGC GCA GGC AGC GCA TCC GGC GGA AGC GGA AGC GAG GCG GCG GTC GCT GCT CCG CGT C\n\nHindIII reverse: CGG TCA AAG CTT TTA CAT TTT GAT GCC TTC CTG TTG ACT GAG TTG CGA TAA TGT TTT CTT AAT CCG C\n\nFollowing amplification, the PCR fragment was digested, purified, and ligated to a similarly treated mEmerald-C1 cloning vector to yield mEmerald-Alk5-C-18. The resulting fusion, along with mCherry-C1 and mEos2-C1, was double digested with BglII and NheI to yield mCherry-Alk5-C-18 and mEos2-Alk5-C-18.\u00a0To construct the N-terminally labeled Alk5 fusions, the following primers were used to amplify the Alk5 and generate a 13-amino acid linker (GSGGAGGGGPVAT):\n\nBglII forward: GTC TGT AGA TCT GCC ACC ATG GAG GCG GCG GTC GCT GCT CCG\n\nAgeI reverse: CGG TCA ACC GGT CCT CCG CCG CCC GCA CCC CCG GAA CCC ATT TTG ATG CCT TCC TGT TGA CTG AGT TGC GAT AAT GTT TTC TTA ATC CGC\n\nFollowing amplification, the resulting fragment was digested, purified, and ligated to a similarly treated mEmerald-N1 cloning vector, resulting in mEmerald-Alk5-N-13. Following sequence verification, the plasmid, along with mCherry-N1 and mEos2-N1 cloning vectors, was sequentially digested with AgeI and NotI and ligated to produce mCherry-Alk5-N-13 and mEos2-Alk5-N-13 fusions.\n\nAll DNA for transfection was prepared using the Plasmid Maxi kit (QIAGEN, Valencia, CA) and characterized by transfection in HeLa cells (CCL2 line; ATCC, Manassas, VA) using Effectene (QIAGEN) followed by observation under widefield fluorescence illumination to ensure proper localization. The sequences for all vectors were confirmed using Big Dye technology (The Florida State University Bioanalytical and Molecular Cloning DNA Sequencing Laboratory Tallahassee, FL).\n\n### Cell culture and transfection\n\nStudies were performed using ATDC5 murine chondroprogenitor cells (RCB0565, RIKEN,\u00a0Wako,\u00a0Japan), NIH3T3 fibroblasts, MCF10A human mammary epithelial cells, and Human Embryonic Kidney (HEK) 293 cells. Cells were treated as indicated with TGF\u03b21 (5 ng/ml, HumanZyme,\u00a0Chicago,\u00a0IL), Y27632 (10 \u03bcM, Sigma-Aldrich,\u00a0St.\u00a0Louis,\u00a0MO), and blebbistatin (10 \u03bcM, Cayman Chemical, Ann Arbor, MI).\n\nFor imaging experiments, glass-bottom imaging wells (Cellvis, Mountain View, CA ) were coated with collagen II (1\u00a0mg/ml in acetic acid diluted 1:100 in PBS), fibronectin (1\u00a0mg/ml diluted 1:100 in PBS), or poly-l-lysine (0.1 mg/ml). ATDC5, NIH3T3, and MCF10A cells were transfected using Nucleofection (Lonza,\u00a0Basel,\u00a0Switzerland) or Effectene (Qiagen,\u00a0Valencia,\u00a0CA), and then plated on to the imaging wells. For biochemical assays, 293 cells were plated in 100 mm cell-culture dishes and transfected using Effectene (Qiagen) at 80% confluency.\n\n### Antibodies, Co-immunoprecipitation, Immunoblotting and Immunofluorescence\n\nFor co-immunprecipitation experiments, 293 cells were transfected with integrin \u03b1V-mCherry, cofilin-mEmerald, T\u03b2RI-Flag, T\u03b2RII-Flag, and/or T\u03b2RI-Myc. 24\u2009hr after transfection, cells were treated with TGF\u03b2 or Y27632 for 15 min. Cells were lysed (50 mM Tris pH 7.5, 150 mM NaCl, 2 mM EDTA, 0.5% Igepal, 0.25% sodium deoxycholate, supplemented with protease and phosphatase inhibitor tablets) and immunoprecipitated with anti-Flag M2 beads (Sigma-Aldrich) overnight prior to Western analysis (Alliston, 2001). For immunoblotting experiments of downstream endogenous proteins, 293 cells were cultured on plastic or fibronectin-coated gel substrates (Advanced BioMatrix,\u00a0Carlsbad,\u00a0CA), treated with TGF\u03b2 as indicated for 30 min and then lysed. Blots were probed with anti-Flag (F3165, Sigma-Aldrich), anti-CD51, integrin \u03b1V (611013, BD Biosciences, San Jose, CA), anti-cofilin (ACFL02, Cytoskeleton,\u00a0Denver,\u00a0CO), anti-pSmad3 (gift from E. Leof, Mayo Clinic, Rochester, MN), anti-\u03b2-actin (ab8226, Abcam,\u00a0Cambridge,\u00a0MA) and anti-T\u03b2RI (sc-398, Santa Cruz Biotechnology, Santa Cruz, CA), and anti-mouse anti-rabbit secondary antibodies that were conjugated to 680 or 800CW IRDye fluorophores for detection using a LI-COR infrared imaging system (LI-COR Biosciences,\u00a0Lincoln,\u00a0NE). Blots shown are representative of multiple technical replicates of at least three independent experiments for each condition (N\u22653). Where indicated, quantitative analysis was performed using ImageJ (National Institutes of Health, Bethesda, MD). Band intensity for proteins of interest was normalized to band intensity of controls (Flag for co-IP and \u03b2-actin for whole cell extract). Fold change in band intensity was calculated relative to plastic control samples. ANOVA followed by Bonferroni correction and student\u2019s t test were used to evaluate statistical significance.\n\nFor immunofluorescence studies, ATDC5 cells were cultured on collagen II-coated glass substrates in 8 well Lab-Tek chamber slides (Nunc/Thermo\u00a0Fisher\u00a0Scientific, Waltham,\u00a0MA). Cells were fixed (4% paraformaldehyde) and permeabilized (0.5% Triton X-100 in PBS). Primary antibodies included anti-T\u03b2RII (sc-1700, sc-400, Santa Cruz) and anti-T\u03b2RI (sc-398, sc-9048, Santa Cruz). Cells were imaged as described below.\n\n### Affinity purification and reversed-phase liquid chromatography-electrospray tandem mass spectrometry (LC-MS/MS)\n\nCells expressing T\u03b2RII-Flag or T\u03b2RI-Flag and integrin \u03b1V-mCherry in 10 cm cell culture dishes were lysed as above and affinity-purified with M2-Flag magnetic beads (Sigma-Aldrich), followed by on-bead trypsin digestion (Kean et al., 2012) and mass spectrometry approaches to study associated proteins (N=3). Peptides recovered were analyzed by reversed-phase liquid chromatography-electrospray tandem mass spectrometry (LC-MS/MS) as described (Duong et al., 2015). Briefly, peptides were separated by nano-flow chromatography in a C18 column, and the eluate was coupled to a hybrid linear ion trap-Orbitrap mass spectrometer (LTQ-OrbitrapVelos, Thermo\u00a0Fisher\u00a0Scientific, Waltham,\u00a0MA) equipped with a nanoelectrospray ion source. Following LC-MS/MS analysis, peak lists generated from spectra were searched against the human subset of the SwissProt database using in-house ProteinProspector (Clauser et al., 1999). For analysis, peptide counts of each protein were normalized by the total protein content in the sample and the molecular weight of the respective protein. This provided an abundance index for each protein that served as a comparison between pulldowns. The ratio between abundance indices for T\u03b2R pulldowns to untransfected control (mock) pulldowns was used to screen candidate proteins.\n\n### Image acquisition and analysis\n\nATDC5, NIH3T3, and MCF10A cells were transiently transfected with fluorescently labeled expression plasmids and plated on collagen II, fibronectin or poly-l-lysine-coated glass-bottom imaging wells. Cells were imaged 24\u2009hr after transfection, and treated with Y27632, blebbistatin, or TGF\u03b2 as indicated. Confocal images were obtained on a motorized Yokogawa CSU-X1 spinning disk confocal unit on an inverted microscope system (Ti-E Perfect Focus System, Nikon,\u00a0Tokyo,\u00a0Japan), with either a 100X/NA 1.49 oil-immersion objective (CFI Apo TIRF, Nikon) or a 40X/NA 1.15 water-immersion objective (CFI Apo LWD, Nikon), on a front illuminated CMOS camera (Zyla sCMOS, Andor, Belfast, United Kingdom). For TIRF and sptPALM, imaging was performed on a motorized objective-type TIRF inverted microscope system (Ti-E Perfect Focus System, Nikon) with activation and excitation lasers of 405 nm, 488 nm, and 561 nm, and an electron-multiplying charged-coupled device camera (QuantEM 512, Photometrics,\u00a0Tuscon,\u00a0AZ), a 100X/NA 1.49 oil-immersion objective (CFI Apo TIRF, Nikon), a stage top incubator (Okolab,\u00a0Burlingame,\u00a0CA), and controlled by NIS-Elements software (Nikon). Cells expressing mEos2-tagged constructs were simultaneously activated with a 405 nm laser and excited with a 561 nm laser. Laser intensities were adjusted to maintain a constant sparse population of activated molecules that were spaced well enough for accurate localization and tracking. Prior to each sptPALM imaging sequence and photoconversion of mEos2, the mEmerald signal from mEmerald fusions of vinculin was imaged to localize focal adhesions. NIS-Elements software (Nikon) was used for the acquisition of images at 10 fps. Individual receptors were localized and tracked using a previously described algorithm (Sbalzarini and Koumoutsakos, 2005) written in MosaicSuite for ImageJ and available at (www.mosaic.mpi-cbg.de). All images were processed using ImageJ with a 0.6 gaussian blur filter to remove noise. Images shown are representative of multiple cells (N\u22655) for at least three independent experiments for each condition.\n\n### Colocalization quantification\n\nTIRF mode imaging was used to obtain intensity profiles of two distinct molecules over adhesion-rich regions of interest (for example, regions shown in Figure 3A\u2013C). The similarity of the two profiles was quantified to provide a measure of colocalization, specifically by comparing pixel intensities (8-bit grayscale) at each point across the two profiles. For each pixel, an ordered pair containing the intensities at that particular coordinate from both images was plotted. Values closer to the line y=x refer to coordinates that have very similar intensities in both profiles. Values further from y=x are coordinates that have a mismatch in intensities. By reflecting all points in the top half of this graph across y=x, a distribution of points is created between y=x and the x-axis, but the distance of individual points from y=x is preserved. The magnitude of the slope of the regression line through these points can be used as a quantitative metric of colocalization. The greater this slope, the higher the degree of colocalization. Plots are representative of multiple cells (N\u22653) and multiple regions of interest (N=5). ANOVA followed by Bonferroni correction was used to evaluate statistical significance.\n\n### Single-molecule tracking\n\nEach sptPALM imaging sequence generates tens of thousands of molecule trajectories per cell (N=6 cells for each T\u03b2R). From these, only trajectories lasting between 0.5 seconds and 2 seconds (5 to 20 frames at 10 fps) were selected for analysis. Tracks that were not confined to either inside or outside focal adhesions were not considered in the quantitative analysis. For each individual track, a series of parameters were calculated to quantify receptor dynamics. These parameters include mean squared displacement (MSD), diffusion coefficient ($D$), and radius of confinement (rconf). MSD was computed as per Equation 1 (Rossier et al., 2012):\n\n$$\nMSD\u00a0(\\tau=n\u00b7\\Deltat)=\\frac{\\sum_{i=1}^{N\u2212n}(x_{i+n}\u2212x_{i})^{2}+(y_{i+n}\u2212y_{i})^{2}}{N\u2212n}.\n$$\n\nWhere $x_{i}$ and $y_{i}$ are the coordinates of the molecule at time $i*\\Deltat$ and $N$ is the number of frames for which the trajectory persisted. The radius of confinement (rconf) of a track is defined to be the magnitude of the radius of the smallest circle that encloses all points in that track. $D$ is defined as one-fourth of the slope of the regression line fitted to the first four values of the MSD as per Equation 2.\n\n$$\nMSD(\\tau)=4D\\tau.\n$$\n\nUsing these variables, trajectories were pooled into three fractions: immobile, confined, and freely diffusive. Immobile molecules were defined as being restricted to a radius of confinement equal to one pixel (rconf < 0.166 \u03bcm). Confined molecules were defined as non-immobile tracks with a diffusion coefficient $D$ of less than 0.2 \u00b5m2/s, and the remaining tracks were considered freely diffusive. Custom routines written for Python were used for track quantification, analysis, and visualization (source code). To account for variability in these large data sets consisting of tens of thousands of tracks, we report mean and standard error of the mean (SEM). ANOVA followed by Bonferroni correction and student\u2019s t test were used to evaluate statistical significance.\n\nTo quantify the diffusive behavior of T\u03b2RI and T\u03b2RII around focal adhesions, we calculated an enrichment ratio to compare track densities in several (N\u22655) focal adhesion-rich regions (where vinculin covered more than 25% of total area) across at least three cells. The enrichment ratio was defined as the ratio of the track density (tracks/\u00b5m2) inside adhesions to the track density outside adhesions within a given area. Student\u2019s t test was used to evaluate statistical significance.\n\n### Statistical analysis\n\nFor colocalization quantification (Figure 3 and Figure 6) and enrichment ratio (Figure 4C), we report mean and standard deviation (SD). There are three circumstances in which it was more statistically appropriate to report the standard error of the mean (SEM). Specifically, to account for variability in large sptPALM data sets (consisting of tens of thousands of tracks), we report mean and SEM (Figure 2E,F and Figure 4I). Significance was calculated with ANOVA followed by Bonferroni correction and student's t test, with significance defined as p<0.01.\n",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "0b5fb881-27c3-405f-b28d-e60a3a67a1b6",
+      "submission_id": "03c14b00-7b31-48c3-a4d9-edb4aa778e5b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Johanna Ivaska, University of Turku , Finland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.09300.022](https://doi.org/10.7554/eLife.09300.022)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"Discrete spatial organization of TGF\u03b2 receptors couples receptor multimerization to cellular tension\" for peer review at eLife. Your submission has been favorably evaluated by Fiona Watt (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nAll of the three referees found the manuscript potentially interesting. However, Referee #1 and #2 raised very similar concerns about the lack of data showing that the segregation of the receptors actually regulates TGF\u03b2 signalling in cells. They were also concerned about the validity of the data with respect to endogenous receptors as all the data provided is with overexpressed receptors. An additional point of concern was that the mechanosensitivity has only been addressed with cytoskeleton modifying drugs and not for example using engineered matrixes of different stiffness. Finally, quantification and statistic needs to be improved.\n\nEssential revisions:\n\n1) To warrant publication in a high-quality journal like eLife the authors should expand their experiments on cellular tension and the plausible mechanosensitivity of the TGF\u03b2 receptor heterodimerisation beyond the use of ROCK inhibitor and blebbistatin. For example some of the following approaches should be tested:\n\nWhat happens to the organization of the receptors when cells are spread on different size micropatterns with equal adhesive area?\n\nWhat is the contribution of integrin activity to the phenomena \u2013 this could be tested by comparing cells plated on surfaces coated with active \u03b21-integrin antibody like 12G10 vs. inactive integrin antibody like 4B4. Is the receptor segregation lost when cells are plated on integrin-independent surface like poly-L-lysine?\n\nTIRF imaging and sptPALM are not compatible with cells plated on supports (hydrogels, PAGE-gels) of variable stiffness. However, the co-IP experiments and possible TGF\u03b2 signalling experiments could be extended to cells growing on soft and stiff supports. Furthermore, confocal microscopy could be attempted.\n\n2) The experiments need to be better explained (e.g. time courses of the experiments performed, concentrations of matrices used, rationale for selecting only and exclusively \u03b1V and \u03b12 containing integrins).\n\n3) Thus far all the data provided are with over-expressed proteins. It is important to validate the TIRF data with staining of endogenous proteins to demonstrate that the sequestration is not an artifact of tagged proteins or overexpression.\n\n4) Some data are over interpreted. The authors talk about physical association between T\u03b2RI and integrin \u03b1V or T\u03b2RI and integrin \u03b1V. Given that the IPs presented were performed on cell lysates of overexpressing cells, then the authors can only conclude that T\u03b2RI and T\u03b2RII form a complex with integrins, but whether this is a direct contact needs to be addressed by better protein-protein interactions assays.\n\n5) Importantly, it is not clear what the significance of the study proposed truly is. The authors show that cellular tension might regulate multimerization of T\u03b2RI and T\u03b2RII, but whether this has any implication in receptor activation, downstream signaling and, importantly, cell function is highly debatable. The authors finish the paper suggesting that \"\u2026which would be required to activate downstream signalling\". This should be tested experimentally.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Discrete spatial organization of TGF\u03b2 receptors couples receptor multimerization and signaling to cellular tension\" for further consideration at eLife. Your revised article has been favorably evaluated by Fiona Watt (Senior editor) and a Reviewing editor. The manuscript has been improved but there are some remaining issues that need to be addressed before acceptance, as outlined below:\n\nThe data regarding the sensitivity of endogenous TGF\u03b2 to stiffness of the matrix are interesting and important for the study. While they address most of the points raised by the reviewers it seems that in their current form they fall short of the scientific quality expected for eLife. The figure legends do not indicate how many times these experiments have been performed. The gold standard would be 3 and for statistics 4 would be recommended. Please repeat these experiments if necessary and provide quantification from 3-4 independent biological replicates to validate the claims for increased co-precipitation and altered SMAD-signalling.\n",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f9c386fe-ec1c-411c-b99e-889d1770e73a",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C1",
+      "claim": "TGF\u03b2 receptors are discretely organized to segregated spatial domains at the cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that TGF\u03b2 receptors are discretely organized to segregated spatial domains at the cell surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by imaging data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "ee119ecd-13b4-46ff-958b-038613e29fc8",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C2",
+      "claim": "Integrin-rich focal adhesions organize T\u03b2RII around T\u03b2RI.",
+      "claim_type": "EXPLICIT",
+      "source": "Integrin-rich focal adhesions organize T\u03b2RII around T\u03b2RI, limiting the integration of T\u03b2RII while sequestering T\u03b2RI at these sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is directly stated in the abstract and supported by TIRF imaging and colocalization analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "505aebac-75b4-4595-a94c-15fdadffa39e",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C3",
+      "claim": "Focal adhesions limit the integration of T\u03b2RII while sequestering T\u03b2RI at these sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Integrin-rich focal adhesions organize T\u03b2RII around T\u03b2RI, limiting the integration of T\u03b2RII while sequestering T\u03b2RI at these sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data showing T\u03b2RII exclusion and T\u03b2RI enrichment at focal adhesions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "bb1c0c87-235e-4366-817c-6ca044692c9d",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C4",
+      "claim": "Disruption of cellular tension leads to a collapse of TGF\u03b2 receptor spatial organization.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of cellular tension leads to a collapse of this spatial organization and drives formation of heteromeric T\u03b2RI/T\u03b2RII complexes and Smad activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments using Y27632 and blebbistatin to disrupt tension.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "ba856371-c18f-467d-8669-1233233c720c",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C5",
+      "claim": "Disruption of cellular tension drives formation of heteromeric T\u03b2RI/T\u03b2RII complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of cellular tension leads to a collapse of this spatial organization and drives formation of heteromeric T\u03b2RI/T\u03b2RII complexes and Smad activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by co-immunoprecipitation experiments showing increased T\u03b2RI/T\u03b2RII complex formation after ROCK inhibition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "282e8913-f70d-4f8b-9def-fc96cb256fbb",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C6",
+      "claim": "Disruption of cellular tension drives Smad activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of cellular tension leads to a collapse of this spatial organization and drives formation of heteromeric T\u03b2RI/T\u03b2RII complexes and Smad activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing increased Smad3 phosphorylation on compliant substrates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "9044367d-fca5-4d6d-b400-126de3218d65",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C7",
+      "claim": "TGF\u03b2 signals through a heterotetrameric complex of transmembrane receptor kinases.",
+      "claim_type": "EXPLICIT",
+      "source": "TGF\u03b2 signals through a heterotetrameric complex of transmembrane receptor kinases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about TGF\u03b2 signaling cited in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "2364ddf1-b472-406a-80fa-bafccfb9bfdb",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C8",
+      "claim": "Once the TGF\u03b2 ligand is activated from its latent form, it binds directly to a dimer of type II receptors (T\u03b2RII).",
+      "claim_type": "EXPLICIT",
+      "source": "Once the TGF\u03b2 ligand is activated from its latent form, it binds directly to a dimer of type II receptors (T\u03b2RII) (Annes, 2003; Munger et al., 1999; Wipff et al., 2007; Munger and Sheppard, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "e1ed0851-91c0-4224-8614-9ae161e23cbf",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C9",
+      "claim": "The ligand-bound T\u03b2RII complex recruits and phosphorylates two type I receptors (T\u03b2RI) \u2013 either Alk5 or Alk1.",
+      "claim_type": "EXPLICIT",
+      "source": "The ligand-bound T\u03b2RII complex recruits and phosphorylates two type I receptors (T\u03b2RI) \u2013 either Alk5 or Alk1 (Wrana et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "2157830a-3aac-406f-abf2-94eec4bcfd18",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C10",
+      "claim": "T\u03b2RI phosphorylates and activates canonical Smad proteins and multiple non-canonical effectors, such as RhoA, TAK1 and Akt.",
+      "claim_type": "EXPLICIT",
+      "source": "T\u03b2RI, in turn, phosphorylates and activates canonical Smad proteins and multiple non-canonical effectors, such as RhoA, TAK1 and Akt (Massague, 1998; Feng and Derynck, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "a7b6bf01-024a-4aaa-bf4c-279c3e402610",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C11",
+      "claim": "Recruitment of Alk5 to the T\u03b2RII complex stimulates phosphorylation of Smad2/3.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, recruitment of Alk5 to the T\u03b2RII complex stimulates phosphorylation of Smad2/3, whereas Alk1 recruitment drives activation of Smad1/5/8 (Lin et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "25d02930-18b3-4fce-b09c-4a6078d53566",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C12",
+      "claim": "Alk1 recruitment drives activation of Smad1/5/8.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, recruitment of Alk5 to the T\u03b2RII complex stimulates phosphorylation of Smad2/3, whereas Alk1 recruitment drives activation of Smad1/5/8 (Lin et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "28ae5f66-0ccb-44cd-80ef-215f6b4471f9",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C13",
+      "claim": "The inappropriate shift of T\u03b2RII multimerization partner from Alk5 to Alk1 underlies disease processes ranging from vascular disorders to osteoarthritis.",
+      "claim_type": "EXPLICIT",
+      "source": "The inappropriate shift of T\u03b2RII multimerization partner from Alk5 to Alk1 underlies disease processes ranging from vascular disorders to osteoarthritis (Blaney Davidson et al., 2009; Goumans, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "856dd78a-e4b3-418c-914a-3691bdf41900",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C14",
+      "claim": "TGF\u03b2 receptors associate with integrins.",
+      "claim_type": "EXPLICIT",
+      "source": "Not only do TGF\u03b2 receptors associate with one another, but also with a number of other receptor families, notably integrins (Scaffidi et al., 2004; Garamszegi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "66adb957-0ca7-4b54-ba72-651d1df68de8",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C15",
+      "claim": "Integrin \u03b12\u03b21 physically interacts with TGF\u03b2 receptors and is involved in collagen-induced Smad phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Garamszegi et al. revealed a physical interaction between integrin \u03b12\u03b21 and TGF\u03b2 receptors involved in collagen-induced Smad phosphorylation (Garamszegi et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "ea3dcf63-0b40-4436-a9f3-bef5961bc926",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C16",
+      "claim": "Upon integrin binding to the extracellular matrix, the formation of focal adhesions stimulates actomyosin contractility to generate cellular tension.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon integrin binding to the extracellular matrix, the formation of focal adhesions stimulates actomyosin contractility to generate cellular tension (DuFort et al., 2011; Giancotti, 1999; Ingber, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "562c7067-d5e9-4522-be24-2c470c8cde8c",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C17",
+      "claim": "Through a Rho/ROCK-dependent mechanism, cells establish tensional homeostasis with the physical features of the extracellular environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Through this Rho/ROCK-dependent mechanism, cells establish tensional homeostasis with the physical features of the extracellular environment (DuFort et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "c7ebffe8-153a-4f8b-8630-8abf9c53af87",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C18",
+      "claim": "Cellular tension can amplify, alter, or suppress cellular responses to growth factor signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular tension can amplify, alter, or suppress cellular responses to growth factor signaling (Allen et al., 2012; McBeath et al., 2004; Wang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "5f7847e0-4ee0-48ce-a6c9-8e55bfbdb9bb",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C19",
+      "claim": "The functional state of \u03b2-catenin, YAP/TAZ, and MAPK is modulated by cellular tension.",
+      "claim_type": "EXPLICIT",
+      "source": "The functional state of many intracellular effectors, including \u03b2-catenin, YAP/TAZ, and MAPK, is modulated by cellular tension (Samuel et al., 2011; Dupont et al., 2011; Wang et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "f151ee51-a566-4216-9965-9f00e6e84b83",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C20",
+      "claim": "The activation of latent TGF\u03b2 ligand is regulated by cellular tension in a Rho/ROCK-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The activation of latent TGF\u03b2 ligand, as well as the phosphorylation, nuclear translocation and transactivation of Smads is regulated by cellular tension in a Rho/ROCK-dependent manner (Allen et al., 2012; Wipff and Hinz, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "809a9247-ff0f-47ae-8226-100ca63a5893",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C21",
+      "claim": "The phosphorylation, nuclear translocation and transactivation of Smads is regulated by cellular tension in a Rho/ROCK-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "The activation of latent TGF\u03b2 ligand, as well as the phosphorylation, nuclear translocation and transactivation of Smads is regulated by cellular tension in a Rho/ROCK-dependent manner (Allen et al., 2012; Wipff and Hinz, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "b19f7263-6334-4452-a806-8faaed879b77",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C22",
+      "claim": "Immunofluorescence of T\u03b2RII in both wildtype and transfected ATDC5 cells yielded similar results, revealing specific punctate staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence of T\u03b2RII in both wildtype and transfected ATDC5 cells yielded similar results, revealing specific punctate staining that did not provide structural information (Figure 1A, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunofluorescence imaging data shown in Figure 1A and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "aad92791-a09d-400e-b268-639350133de9",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C23",
+      "claim": "Spinning disc confocal microscopy of T\u03b2RII-mEmerald revealed shadowed regions where T\u03b2RII expression is completely absent.",
+      "claim_type": "EXPLICIT",
+      "source": "Spinning disc confocal microscopy of T\u03b2RII-mEmerald allowed visualization of its spatial organization, revealing shadowed regions where T\u03b2RII expression is completely absent (indicated by arrows, Figure 1B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by confocal imaging data shown in Figure 1B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "f0b09e7b-2eb2-447b-abd6-ae1f0340bb74",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C24",
+      "claim": "TIRF microscopy revealed segregated domains of T\u03b2RII and T\u03b2RI.",
+      "claim_type": "EXPLICIT",
+      "source": "Switching from widefield microscopy (Figure 1E) to TIRF on the same cell vividly revealed segregated domains of T\u03b2RII (Figure 1F) and T\u03b2RI (Figure 1G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TIRF imaging data shown in Figure 1E-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "58bbf01f-20cc-445c-9395-4db78f7d2cf1",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C25",
+      "claim": "The sequestration of T\u03b2RII from T\u03b2RI was present with either the canonical (Alk5) or non-canonical (Alk1) type I TGF\u03b2 receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequestration of T\u03b2RII from T\u03b2RI was present with either the canonical (Alk5) or non-canonical (Alk1) type I TGF\u03b2 receptors (Figure 1G,H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TIRF imaging data shown in Figure 1G-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "8cafe651-7dbd-484f-9d57-6f5d27bf485a",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C26",
+      "claim": "When co-expressed in the same cell, T\u03b2RII is enriched at the boundary of discrete T\u03b2RI domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, when co-expressed in the same cell, T\u03b2RII is enriched at the boundary of discrete T\u03b2RI domains, demonstrating a novel spatial segregation of these signaling partners (Figure 1I\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 1I-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "b4cae69e-46aa-42cd-8d8a-fbd57c799c35",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C27",
+      "claim": "Individual T\u03b2RI and T\u03b2RII receptors showed a range of mobility, resulting in groups of immobile, confined, or freely diffusive receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "For both T\u03b2RI and T\u03b2RII, individual receptors showed a range of mobility, resulting in groups of immobile, confined, or freely diffusive receptors (representative tracks, Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sptPALM data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "f7b16eef-18d6-48b5-92b1-5253a7bfe298",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C28",
+      "claim": "Mobility of each group of T\u03b2RI did not differ significantly from T\u03b2RII.",
+      "claim_type": "EXPLICIT",
+      "source": "Mobility of each group of T\u03b2RI did not differ significantly from T\u03b2RII (Figure 2E), but the diffusion coefficient of T\u03b2RI was slightly higher (Figure 2F), perhaps because of its lower molecular weight (T\u03b2RI/Alk5 56 kDa vs. T\u03b2RII 65 kDa).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sptPALM data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "f01e170d-423a-4b03-8e4e-27551fa59188",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C29",
+      "claim": "The diffusion coefficient of T\u03b2RI was slightly higher than T\u03b2RII, perhaps because of its lower molecular weight (T\u03b2RI/Alk5 56 kDa vs. T\u03b2RII 65 kDa).",
+      "claim_type": "EXPLICIT",
+      "source": "Mobility of each group of T\u03b2RI did not differ significantly from T\u03b2RII (Figure 2E), but the diffusion coefficient of T\u03b2RI was slightly higher (Figure 2F), perhaps because of its lower molecular weight (T\u03b2RI/Alk5 56 kDa vs. T\u03b2RII 65 kDa).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sptPALM data shown in Figure 2F and includes speculation about the mechanism.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "2a9a351a-6c8e-419e-9c7d-be2529e61c9a",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C30",
+      "claim": "T\u03b2RI and T\u03b2RII are significantly less mobile in cellular domains enriched with clusters of spatially organized receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Relative to whole cell TGF\u03b2 receptor dynamics, T\u03b2RI and T\u03b2RII are significantly less mobile in cellular domains enriched with clusters of spatially organized receptors (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sptPALM data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "16daee1f-3478-4202-a9a8-10bb96e06882",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C31",
+      "claim": "The spatially organized population of TGF\u03b2 receptors is slower and more confined, possibly due to interactions with other proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this spatially organized population of TGF\u03b2 receptors is slower and more confined, possibly due to interactions with other proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mobility data, with speculation about the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "28cecb2f-cec3-4226-9574-a379498af3e8",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C32",
+      "claim": "T\u03b2RII is absent from sites of adhesions and forms a peripheral ring surrounding integrin \u03b12.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, T\u03b2RII is absent from sites of adhesions and forms a peripheral ring surrounding integrin \u03b12, resulting in distinct patterns of spatial localization (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TIRF imaging data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "48be85f2-4480-4e3d-b4ef-47b5c01884e6",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C33",
+      "claim": "T\u03b2RII spatial organization is absent in cells grown on poly-l-lysine-coated substrates that facilitate integrin-independent cell adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, this spatial organization is absent in cells grown on poly-l-lysine-coated substrates that facilitate integrin-independent cell adhesion (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "3bc095fb-d230-45bb-954d-1d8f7a219432",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C34",
+      "claim": "T\u03b2RII organization at sites of adhesion is dependent upon integrin activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, T\u03b2RII organization at sites of adhesion is dependent upon integrin activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that T\u03b2RII organization is absent on poly-l-lysine substrates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "c2099bf1-6fa7-4d5c-96e5-bcc84915ae14",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C35",
+      "claim": "T\u03b2RI (Alk5 and Alk1) is precisely colocalized with integrin \u03b12 within focal adhesions.",
+      "claim_type": "EXPLICIT",
+      "source": "T\u03b2RI (Alk5 and Alk1) is precisely colocalized with integrin \u03b12 within focal adhesions, such that adhesions appear yellow (Figure 3B,C) and regression line slopes (Figure 3Bi,Ci) are higher relative to T\u03b2RII (Figure 3A,Ai).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TIRF imaging and colocalization analysis shown in Figure 3B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "4ea511a6-eeb8-41ee-8573-49706ad74590",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C36",
+      "claim": "Integrin \u03b12 colocalizes significantly more with Alk5 and Alk1 than with T\u03b2RII.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis reveals that integrin \u03b12 colocalizes significantly more with Alk5 and Alk1 than with T\u03b2RII (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative colocalization analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "a955afb9-6bf0-4659-9e6a-497795090239",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C37",
+      "claim": "The specific localization of T\u03b2RII near focal adhesions is apparent in cells of both mesenchymal (ATDC5, Saos-2) and epithelial (MCF10A) origin.",
+      "claim_type": "EXPLICIT",
+      "source": "The specific localization of T\u03b2RII near focal adhesions is apparent in cells of both mesenchymal (ATDC5, Figure 3A\u2013C,E; Saos-2, Figure 3F) and epithelial (MCF10A, Figure 3G) origin and is observed whether integrin \u03b12 or integrin \u03b1V is tagged with a fluorescent protein (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 3A-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "1f5bf0d5-7d06-46fb-b7d6-c9fc3ce35cef",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C38",
+      "claim": "The overall spatial organization of TGF\u03b2 receptors at sites of adhesion is not affected upon stimulation with exogenous TGF\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall spatial organization of TGF\u03b2 receptors at sites of adhesion is not affected upon stimulation with exogenous TGF\u03b2 (Figure 3I), suggesting that this spatiotemporal organization is regulated through mechanisms independent from TGF\u03b2 ligand addition.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "e92897de-5657-49e0-bd27-ce4097ba6ecc",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C39",
+      "claim": "The spatiotemporal organization of TGF\u03b2 receptors is regulated through mechanisms independent from TGF\u03b2 ligand addition.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall spatial organization of TGF\u03b2 receptors at sites of adhesion is not affected upon stimulation with exogenous TGF\u03b2 (Figure 3I), suggesting that this spatiotemporal organization is regulated through mechanisms independent from TGF\u03b2 ligand addition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that TGF\u03b2 stimulation does not affect receptor organization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "fefc9d2c-d3d9-4a97-b89e-99368adc8dd1",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C40",
+      "claim": "T\u03b2RI is preferentially enriched and T\u03b2RII is preferentially excluded at sites of adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "SptPALM shows, both qualitatively and quantitatively, that T\u03b2RI is preferentially enriched and T\u03b2RII is preferentially excluded at sites of adhesion (Figure 4A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sptPALM data shown in Figure 4A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "640a1bd2-710d-4973-99de-23902c2324f2",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C41",
+      "claim": "T\u03b2RII 'bounces' around the edges of individual focal adhesions but is rarely incorporated within the focal adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of individual T\u03b2RII trajectories shows that T\u03b2RII 'bounces' around the edges of individual focal adhesions (Figure 4E) but is rarely incorporated within the focal adhesion, as is common for T\u03b2RI (Figure 4D,i\u2013ii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sptPALM trajectory analysis shown in Figure 4D-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "842b6f6f-931f-4fca-b72c-7e120c2c70e4",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C42",
+      "claim": "T\u03b2RII mobility is confined near focal adhesions, which sequester and immobilize T\u03b2RI.",
+      "claim_type": "EXPLICIT",
+      "source": "Trajectory maps reveal that T\u03b2RII mobility is confined near focal adhesions, which sequester and immobilize T\u03b2RI (Figure 4F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sptPALM trajectory maps shown in Figure 4F-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "1095ef38-8b21-4f05-9f43-2d5f95f3c4ed",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C43",
+      "claim": "A higher fraction of immobilized T\u03b2RI is present inside adhesions relative to outside.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a higher fraction of immobilized T\u03b2RI is present inside adhesions relative to outside (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sptPALM data shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "574995e7-f62c-4d44-9599-c3fb3ad7549e",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C44",
+      "claim": "The diffusion coefficient for T\u03b2RI decreases for tracks inside adhesions compared to those outside.",
+      "claim_type": "EXPLICIT",
+      "source": "Accordingly, the diffusion coefficient for T\u03b2RI decreases for tracks inside adhesions compared to those outside, demonstrating that this spatial organization specifically limits T\u03b2RI mobility (Figure 4I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sptPALM data shown in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "9ade3277-7ffa-47b2-86ee-09c63f274821",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C45",
+      "claim": "Mass spectrometric analysis of proteins that precipitate with Flag-tagged T\u03b2RI (Alk5) and T\u03b2RII revealed hundreds of proteins, several of which were specifically enriched compared with precipitates of untransfected (mock) cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Mass spectrometric analysis of proteins that precipitate with Flag-tagged T\u03b2RI (Alk5) and T\u03b2RII revealed hundreds of proteins, several of which were specifically enriched compared with precipitates of untransfected (mock) cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "59e62c49-7ea3-4e21-b5ef-535f24116b00",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C46",
+      "claim": "The mass spectrometry analysis identified proteins already known to interact with T\u03b2Rs, such as PRMT5 and PRMT1.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis identified proteins already known to interact with T\u03b2Rs, such as PRMT5 and PRMT1 (Xu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mass spectrometry data and citation to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "21998f16-4010-436c-83f3-78dbbffba8c2",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C47",
+      "claim": "T\u03b2Rs precipitated integrin \u03b1V and endogenous cofilin.",
+      "claim_type": "EXPLICIT",
+      "source": "T\u03b2Rs also precipitated several adhesion-related proteins, including integrin \u03b1V and endogenous cofilin, as shown in the annotated spectra (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry data shown in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "05de79f6-f65f-43bd-9e17-d7f789a34f23",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C48",
+      "claim": "Integrin \u03b1V associates with both T\u03b2RI and T\u03b2RII.",
+      "claim_type": "EXPLICIT",
+      "source": "The peptide counts (graph insets) indicate that integrin \u03b1V associates with both T\u03b2RI and T\u03b2RII, and that cofilin preferentially associates with T\u03b2RII (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry peptide counts shown in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "e01d2a43-dd03-461d-a797-357a3f163750",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C49",
+      "claim": "Cofilin preferentially associates with T\u03b2RII.",
+      "claim_type": "EXPLICIT",
+      "source": "The peptide counts (graph insets) indicate that integrin \u03b1V associates with both T\u03b2RI and T\u03b2RII, and that cofilin preferentially associates with T\u03b2RII (Figure 5A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass spectrometry peptide counts shown in Figure 5A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "8c72bc04-d985-40c1-9a0c-30e6b34a9215",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C50",
+      "claim": "Cofilin is an actin-binding protein that severs ADP-actin filaments at the leading edge of migratory cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Cofilin is an actin-binding protein that severs ADP-actin filaments at the leading edge of migratory cells (Pollard and Borisy, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "140d5318-a7d0-4bba-98f1-49608390e188",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C51",
+      "claim": "Previous reports implicate cofilin as a target of TGF\u03b2-activated RhoA, which promotes actin reorganization through ROCK, LIMK and cofilin.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous reports implicate cofilin as a target of TGF\u03b2-activated RhoA, which promotes actin reorganization through ROCK, LIMK and cofilin (Vardouli et al., 2005; Lamouille et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "5db1db27-cbc1-4d20-a49b-4c18783ac696",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C52",
+      "claim": "This is the first report of a complex between TGF\u03b2 receptors and cofilin.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this is the first report, to our knowledge, of a complex between TGF\u03b2 receptors and cofilin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the finding based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "061ef14e-6b3b-4cbc-beab-98869700a09e",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C53",
+      "claim": "Co-immunoprecipitation confirmed that integrin \u03b1V forms a complex with both T\u03b2RI and T\u03b2RII.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm these mass spectrometry findings, we performed co-immunoprecipitation on cells expressing Flag-tagged T\u03b2RI/II and tagged integrin \u03b1V or cofilin (Figure 5C,D). Consistent with the mass spectrometry peptide counts, integrin \u03b1V forms a complex with both T\u03b2RI and T\u03b2RII, whereas cofilin primarily interacts with T\u03b2RII.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "eda56a6f-ddcc-429b-9632-e8d99b1ad3de",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C54",
+      "claim": "Cofilin primarily interacts with T\u03b2RII.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the mass spectrometry peptide counts, integrin \u03b1V forms a complex with both T\u03b2RI and T\u03b2RII, whereas cofilin primarily interacts with T\u03b2RII.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 5C-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "fa834082-c35b-4238-9b98-0cc9ffc39b84",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C55",
+      "claim": "Within 15 min of adding Y27632 or blebbistatin, the peripheral ring of T\u03b2RII completely collapses.",
+      "claim_type": "EXPLICIT",
+      "source": "Within 15 min of adding Y27632 (Figure 6A,B) or blebbistatin (Figure 6C,D), the peripheral ring of T\u03b2RII completely collapses.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Figure 6A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "16587dff-0149-43ad-a95f-42049fe21d2d",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C56",
+      "claim": "The segregation of T\u03b2RII from T\u03b2RI and integrin \u03b12 at sites of adhesion is dynamically released upon ROCK or myosin II inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "The segregation of T\u03b2RII from T\u03b2RI and integrin \u03b12 at sites of adhesion is dynamically released, such that T\u03b2RII (Video 1) converges and colocalizes with integrin \u03b12 (Video 2, Video 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by imaging data shown in Videos 1-3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "79c52a13-eacf-43a9-a3c9-df29571b4427",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C57",
+      "claim": "T\u03b2RII is significantly more colocalized with integrin \u03b12 after addition of Y27632 and blebbistatin.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative analysis demonstrates that T\u03b2RII is significantly more colocalized with integrin \u03b12 after addition of Y27632 and blebbistatin (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative colocalization analysis shown in Figure 6E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "0fa75965-e169-454c-8430-7fda23dd6186",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C58",
+      "claim": "Disruption of tension with Y27632 enhances integrin \u03b1V association with T\u03b2RI but reduces its association with T\u03b2RII.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that cellular tension not only regulates the spatial organization of integrins and TGF\u03b2 receptors, but also affects their physical associations with each other; though these interactions may be direct or indirect. Specifically, while disruption of tension with the ROCK inhibitor enhanced integrin \u03b1V association with T\u03b2RI, it almost completely blocked the association between integrin \u03b1V and T\u03b2RII (Figure 6F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "697fa2a7-cbbc-4af3-ac9c-1772810113e9",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C59",
+      "claim": "ROCK-inhibition stimulates formation of heteromeric T\u03b2RI/T\u03b2RII complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Release of this discrete spatial segregation of TGF\u03b2 receptors at focal adhesions allows the receptor subunits to interact such that ROCK-inhibition stimulates formation of heteromeric T\u03b2RI/T\u03b2RII complexes (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "3673cb9d-5f7f-4169-9c04-7c3bb618072d",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C60",
+      "claim": "A reduction in cellular tension through culture on compliant substrates significantly drives T\u03b2RI/T\u03b2RII complex formation.",
+      "claim_type": "EXPLICIT",
+      "source": "To examine the effect of manipulating cellular tension under physiological conditions, we cultured cells on polydimethylsiloxane (PDMS) substrates of varying stiffness. A reduction in cellular tension through culture on compliant substrates significantly drives T\u03b2RI/T\u03b2RII complex formation (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by co-immunoprecipitation data shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "3be7d872-f296-451f-92c4-319f09aa7ea3",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C61",
+      "claim": "Culturing cells on compliant substrates leads to significantly increased endogenous Smad3 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine the effect of tension-sensitive T\u03b2R localization and heteromerization on downstream TGF\u03b2 effectors, we evaluated the phosphorylation of Smad3. Culturing cells on compliant substrates leads to significantly increased endogenous Smad3 phosphorylation (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblotting data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "d515f48a-73ef-4467-99c8-29b28e5d0827",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C62",
+      "claim": "The effect of TGF\u03b2 on Smad3 phosphorylation is substrate-dependent, such that TGF\u03b2 induces Smad3 phosphorylation on 0.5 kPa substrates but not on 16 kPa substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the effect of TGF\u03b2 on Smad3 phosphorylation is substrate-dependent, such that TGF\u03b2 induces Smad3 phosphorylation on 0.5 kPa substrates but not on 16 kPa substrates (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by immunoblotting data shown in Figure 7C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "ea927d37-aeaf-4aa3-9094-f122da1e5a07",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C63",
+      "claim": "The spatial organization of T\u03b2RI and T\u03b2RII by integrins at focal adhesions affords tension-sensitive control of T\u03b2RI and T\u03b2RII multimerization and activation of Smad3.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus the spatial organization of T\u03b2RI and T\u03b2RII by integrins at focal adhesions affords tension-sensitive control of T\u03b2RI and T\u03b2RII multimerization and activation of Smad3, providing a mechanosensitive mechanism by which cells calibrate their response to TGF\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a synthesis of the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "6c62a89c-1f81-4f73-b50b-57034bd4420f",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C64",
+      "claim": "Cellular tension regulates TGF\u03b2 receptor spatial organization and interactions at focal adhesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that cellular tension regulates TGF\u03b2 receptor spatial organization and interactions at focal adhesions, providing a novel mechanism for the cellular integration of signaling by physical and biochemical cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding of the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "a18d929b-3609-49a8-aa5b-8999a7c810f0",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C65",
+      "claim": "Single particle tracking reveals the dynamics of individual TGF\u03b2 receptor molecules, and identifies populations of TGF\u03b2 receptors with distinct behaviors and mobility near and far from sites of focal adhesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Single particle tracking reveals the dynamics of individual TGF\u03b2 receptor molecules, and identifies populations of TGF\u03b2 receptors with distinct behaviors and mobility near and far from sites of focal adhesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sptPALM data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "76862d7e-d2f7-4e95-82b5-7106ce6cae34",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C66",
+      "claim": "The confined population of TGF\u03b2 receptors at focal adhesions has lower mobility than the freely diffusive receptor population far from sites of adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "The confined population of TGF\u03b2 receptors at focal adhesions has lower mobility than the freely diffusive receptor population far from sites of adhesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sptPALM data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "042daa36-5b08-4db8-a940-d6bfa08aec17",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C67",
+      "claim": "This novel spatial organization of T\u03b2RI and T\u03b2RII at sites of adhesion provides mechanosensitive control of TGF\u03b2 receptor multimerization and function independently of TGF\u03b2 ligand stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This novel spatial organization of T\u03b2RI and T\u03b2RII at sites of adhesion provides mechanosensitive control of TGF\u03b2 receptor multimerization and function independently of TGF\u03b2 ligand stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a synthesis of the experimental findings presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "57df8256-2b4d-44c1-b964-d3daa83d854a",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C68",
+      "claim": "There is potential for two differentially regulated populations of TGF\u03b2 receptors \u2013 one that is TGF\u03b2-sensitive and one that is tension-sensitive.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this reveals the potential of two differentially regulated populations of TGF\u03b2 receptors \u2013 one that is TGF\u03b2-sensitive and one that is tension-sensitive \u2013 a finding that may contribute to the context-dependent signaling outcomes of this pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "0c5dd384-dcef-4a09-b80d-a8eb721fe6ff",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C69",
+      "claim": "Integrins activate TGF\u03b2 from its latent form through cellular tension generated by actomyosin contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "At the level of the TGF\u03b2 ligand, integrins activate TGF\u03b2 from its latent form through cellular tension generated by actomyosin contraction (Wipff et al., 2007; Munger and Sheppard, 2011; Wells and Discher, 2008; Giacomini et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "fc6fcb51-6898-4b26-838f-808f30eeb2f1",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C70",
+      "claim": "The recruitment of TGF\u03b2 receptors to focal adhesions would enrich their access to integrin-activated TGF\u03b2.",
+      "claim_type": "EXPLICIT",
+      "source": "The observed recruitment of TGF\u03b2 receptors to focal adhesions would enrich their access to this reservoir of integrin-activated TGF\u03b2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the functional implications of the findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "10b7c3c5-29e6-4510-81f6-2c4c381f3f2a",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C71",
+      "claim": "Focal adhesions may sequester T\u03b2RI from T\u03b2RII to limit their activity in the presence of ligand.",
+      "claim_type": "EXPLICIT",
+      "source": "At the receptor level, focal adhesions may sequester T\u03b2RI from T\u03b2RII to limit their activity in the presence of ligand.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the functional implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "76e4d911-50a0-4ca3-9ba4-bfc63d7c96dd",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C73",
+      "claim": "Focal adhesions may create structured T\u03b2RI and T\u03b2RII boundaries that prime a robust response when cells encounter the correct combination of physical and biochemical cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, focal adhesions may create structured T\u03b2RI and T\u03b2RII boundaries that prime a robust response when cells encounter the correct combination of physical and biochemical cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the functional implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "9f7a7ea6-e825-484b-a198-f5d2669793ca",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C74",
+      "claim": "Chondrocytes grown in TGF\u03b2 on 0.5 MPa substrates induce differentiation markers far beyond levels induced by either cue alone.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, chondrocytes grown in TGF\u03b2 on 0.5 MPa substrates induce differentiation markers far beyond levels induced by either cue alone (Allen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "96ce1deb-5ede-4dca-b952-f6a3f9608ab4",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C75",
+      "claim": "The effect of substrate stiffness or cellular tension/Rho/ROCK activity on downstream TGF\u03b2 signaling is synergistic and nonlinear.",
+      "claim_type": "EXPLICIT",
+      "source": "We and others have reported that the effect of substrate stiffness or cellular tension/Rho/ROCK activity on downstream TGF\u03b2 signaling is synergistic and nonlinear (Allen et al., 2012; Wang et al., 2012; Leight et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "e0942555-241a-4038-a41b-68a1f2fb41d1",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C76",
+      "claim": "The newly described regulation of TGF\u03b2 receptor multimerization and downstream signaling may couple the mechanosensitive activity of the TGF\u03b2 pathway to physical cues.",
+      "claim_type": "EXPLICIT",
+      "source": "The mechanisms responsible for such synergy have been unclear, but this newly described regulation of TGF\u03b2 receptor multimerization and downstream signaling may couple the mechanosensitive activity of the TGF\u03b2 pathway to physical cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "ad04e8d2-35e0-4e94-80f8-c4ab2fd6b7b8",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C77",
+      "claim": "Cellular tension impacts the activation, translocation, and function of intracellular effectors including small GTP-ases, kinases and transcriptional regulators such as Smads and YAP/TAZ.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular tension impacts the activation, translocation, and function of intracellular effectors including small GTP-ases, kinases and transcriptional regulators such as Smads and YAP/TAZ (Allen et al., 2012; Wang et al., 2012; Dupont et al., 2011; Leight et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "f2e32180-8091-476d-b485-eeb347b78f71",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C78",
+      "claim": "Known mechanisms are insufficient to explain the ability of physical cues to modulate cell-type specific responses to BMP, EGF, and other growth factors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, known mechanisms are insufficient to explain the ability of physical cues to modulate cell-type specific responses to BMP, EGF, and other growth factors (Wang et al., 2012; Paszek et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "35c0ee21-c22b-48ab-8d88-b8bbb36ef5f3",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C79",
+      "claim": "EGF receptor binds actin and colocalizes with integrin \u03b12\u03b21.",
+      "claim_type": "EXPLICIT",
+      "source": "EGF receptor binds actin and colocalizes with integrin \u03b12\u03b21 (Alam et al., 2007), while the receptor CD44 interacts with several components of the focal adhesion complex, such that hyaluronan-bound CD44 activates c-Src and Rac1 (Turley et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "f119a8b3-42e4-446a-98e4-12afc4e2d1b4",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C80",
+      "claim": "The receptor CD44 interacts with several components of the focal adhesion complex, such that hyaluronan-bound CD44 activates c-Src and Rac1.",
+      "claim_type": "EXPLICIT",
+      "source": "EGF receptor binds actin and colocalizes with integrin \u03b12\u03b21 (Alam et al., 2007), while the receptor CD44 interacts with several components of the focal adhesion complex, such that hyaluronan-bound CD44 activates c-Src and Rac1 (Turley et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "9a3d57cd-517d-49b8-a311-bc041d5ebc2b",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C81",
+      "claim": "Others have postulated receptor multimerization as a mechanism for mechanocoupling of TGF\u03b2, ephrin, and T cell receptor signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, others have postulated receptor multimerization as a mechanism for mechanocoupling of TGF\u03b2, ephrin, and T cell receptor signaling (Hartman and Groves, 2011; Hynes, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "5c1a9100-e402-4a8c-b942-3aefc2c8b10a",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C82",
+      "claim": "In T cell receptor and ephrin signaling, the solid state is provided by ligands on the neighboring cell, which create geometric constraints that mechanically trap receptors to induce clustering.",
+      "claim_type": "EXPLICIT",
+      "source": "In T cell receptor and ephrin signaling, the solid state is provided by ligands on the neighboring cell, which create geometric constraints that mechanically trap receptors to induce clustering (Bethani et al., 2010; Salaita et al., 2010; Hartman and Groves, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "edc627fb-7dc5-4d6a-9018-5536b3ccbca5",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C83",
+      "claim": "For growth factors like TGF\u03b2, BMP, and EGF, the ECM serves as the solid state.",
+      "claim_type": "EXPLICIT",
+      "source": "For growth factors like TGF\u03b2, BMP, and EGF, the ECM serves as the solid state (Hynes, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "a1228281-df39-4655-862a-ec320e255127",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C84",
+      "claim": "ECM proteins such as collagen II bind both TGF\u03b2 and integrin \u03b12\u03b21.",
+      "claim_type": "EXPLICIT",
+      "source": "ECM proteins such as collagen II bind both TGF\u03b2 and integrin \u03b12\u03b21 (Zhu, 1999), imposing geometric constraints that may structure receptor clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "736e5050-9533-4df0-85ee-38358f5e4f28",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C85",
+      "claim": "Growth factor receptor multimerization at focal adhesions, controlled by receptor interactions with integrins and with solid state growth factors, provide focal adhesions with the capability to integrate signaling between physical and biochemical cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, growth factor receptor multimerization at focal adhesions, controlled by receptor interactions with integrins and with solid state growth factors, provide focal adhesions with the capability to integrate signaling between physical and biochemical cues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings and prior work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "106f1c27-2663-4be1-a6d0-126b2019ec8a",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C86",
+      "claim": "Focal adhesions segregate T\u03b2RI from T\u03b2RII in both epithelial and mesenchymal cell lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that focal adhesions segregate T\u03b2RI from T\u03b2RII in both epithelial and mesenchymal cell lineages, opening the possibility that this is a general cellular mechanism for the control of TGF\u03b2 signaling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by imaging data from multiple cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "82b54ef6-395f-4292-b2e8-b3d088fde47a",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C87",
+      "claim": "On stiff substrates, TGF\u03b2 preferentially activates PI3K to induce EMT instead of apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "On stiff substrates, TGF\u03b2 preferentially activates PI3K to induce EMT instead of apoptosis (Leight et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "60d9f084-8a69-45c3-9596-6492b90e58fd",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C88",
+      "claim": "In osteoarthritis, the material properties of the cartilage ECM deteriorate as chondrocytes inappropriately shift the balance from canonical (Alk5/Smad2/3) to non-canonical (Alk1/Smad1/5/8) T\u03b2RI signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In osteoarthritis, the material properties of the cartilage ECM deteriorate as chondrocytes inappropriately shift the balance from canonical (Alk5/Smad2/3) to non-canonical (Alk1/Smad1/5/8) T\u03b2RI signaling (Blaney Davidson et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "471d5e1e-309b-471b-9b64-30b9a3b894e8",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C89",
+      "claim": "Applied physical cues, such as compression or shear flow, regulate TGF\u03b2 signaling in cartilage, vasculature, and other tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Applied physical cues, such as compression or shear flow, also regulate TGF\u03b2 signaling in cartilage, vasculature, and other tissues (Li et al., 2010; Sakai et al., 1998; Streuli, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "48e23196-a93b-4d96-bafc-16578befd685",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C90",
+      "claim": "At focal adhesions, T\u03b2RII is uniquely segregated from its T\u03b2RI counterpart.",
+      "claim_type": "EXPLICIT",
+      "source": "At focal adhesions, T\u03b2RII is uniquely segregated from its T\u03b2RI counterpart.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding of the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "771e2ad4-b24e-45df-8b66-e970228ecb18",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C91",
+      "claim": "Cellular tension modulates the spatial organization, multimerization, and downstream signaling of TGF\u03b2 receptors at sites of adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular tension modulates the spatial organization, multimerization, and downstream signaling of TGF\u03b2 receptors at sites of adhesion, suggesting the existence of a functionally distinct subpopulation of TGF\u03b2 receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding of the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "3fb1477e-73b5-45ac-93e9-a129f685fe9a",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C92",
+      "claim": "There exists a functionally distinct subpopulation of TGF\u03b2 receptors at focal adhesions.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular tension modulates the spatial organization, multimerization, and downstream signaling of TGF\u03b2 receptors at sites of adhesion, suggesting the existence of a functionally distinct subpopulation of TGF\u03b2 receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "2aade0c5-b2a2-418c-9763-fe4101c6ebef",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "claim_id": "C93",
+      "claim": "Cellular tension and physical cues exert control of growth factor signaling at the cellular membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this finding provides a new mechanism by which cellular tension and physical cues exert control of growth factor signaling at the cellular membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main finding of the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3fc2797d-ce16-404c-b527-a247c0f0aa34",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TGF\u03b2 receptors T\u03b2RI and T\u03b2RII are spatially segregated at the cell surface, with T\u03b2RII forming a peripheral ring around discrete T\u03b2RI domains. This segregation is observed with both canonical (Alk5) and non-canonical (Alk1) type I receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 provide converging imaging evidence from confocal and TIRF microscopy demonstrating spatial segregation of T\u03b2RI and T\u03b2RII. The observation is consistent across multiple imaging modalities and receptor subtypes, strongly supporting the main finding (C1).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "7136b684-0162-4195-b392-441bdee20cbe",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Single-particle tracking reveals that TGF\u03b2 receptors exhibit heterogeneous mobility with immobile, confined, and freely diffusive populations. Receptors in spatially organized domains near focal adhesions show significantly reduced mobility compared to whole-cell populations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 are supported by sptPALM data (Figure 2) showing distinct mobility populations and reduced diffusion in organized domains. The statistical analysis appropriately uses SEM for large datasets. The speculation about protein interactions (C31) is reasonable but requires further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "bb2add70-c61b-4afa-9184-47fa6ab20b3f",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Integrin-rich focal adhesions organize T\u03b2RII around T\u03b2RI, with T\u03b2RII excluded from and T\u03b2RI enriched within focal adhesions. This organization is integrin-dependent and conserved across cell types.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C37 provide strong imaging and quantitative colocalization evidence (Figure 3) showing differential localization. The integrin-dependence is demonstrated by loss of organization on poly-l-lysine substrates (C33). Conservation across cell types strengthens the finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "bda944b8-08e2-4905-9a11-3360646bbf2e",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Focal adhesions immobilize T\u03b2RI while confining T\u03b2RII mobility to the periphery. T\u03b2RI shows increased immobilization and decreased diffusion coefficient inside versus outside focal adhesions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 are supported by sptPALM trajectory analysis (Figure 4) showing differential dynamics at focal adhesions. The quantitative metrics (enrichment ratio, diffusion coefficient, fraction immobilized) provide robust statistical support with appropriate significance testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "a4caea41-9295-4b63-a21e-8fbd4f9a025d",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mass spectrometry and co-immunoprecipitation reveal that TGF\u03b2 receptors form complexes with integrin \u03b1V and cofilin, with cofilin preferentially associating with T\u03b2RII.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 and C53-C54 are supported by converging mass spectrometry (Figure 5A-B) and co-IP validation (Figure 5C-D). The identification of known interactors (C46) validates the approach. However, the manuscript acknowledges these may be direct or indirect interactions, requiring further characterization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "1be0f396-6984-42bc-a365-1c1ec341ccc2",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Disruption of cellular tension with ROCK or myosin II inhibitors causes rapid collapse of T\u03b2RII spatial organization and increased colocalization with integrins within 15 minutes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 are supported by time-lapse imaging (Figure 6, Videos 1-3) and quantitative colocalization analysis showing significant increases after Y27632 or blebbistatin treatment. The rapid timescale and consistency across two inhibitors strengthen the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "63054e27-6bec-4886-b245-56bae97cf6b1",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "ROCK inhibition differentially affects integrin \u03b1V associations, enhancing binding to T\u03b2RI while reducing binding to T\u03b2RII.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C58 is supported by co-IP data (Figure 6F) showing opposite effects on T\u03b2RI versus T\u03b2RII interactions with integrin \u03b1V. This provides mechanistic insight into tension-dependent regulation, though the molecular basis requires further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "0193854e-a592-4018-bb31-75db5c4686e5",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Reduction of cellular tension through ROCK inhibition or culture on compliant substrates drives formation of heteromeric T\u03b2RI/T\u03b2RII complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 are supported by co-IP experiments (Figure 7A-B) showing increased T\u03b2RI/T\u03b2RII complex formation under both pharmacological (Y27632) and physiological (substrate stiffness) tension reduction. The convergence of approaches strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "4468bfe3-bd10-49aa-93e3-c0c9dc5f8622",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Culturing cells on compliant substrates increases endogenous Smad3 phosphorylation, with TGF\u03b2-induced phosphorylation being substrate stiffness-dependent (maximal on 0.5 kPa, minimal on 16 kPa substrates).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 are supported by immunoblotting data (Figure 7C) showing substrate-dependent Smad3 phosphorylation. The nonlinear response to stiffness is consistent with prior literature. However, quantification and statistical analysis details are limited in the figure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "4c5873b5-aacf-4d47-a6ed-73e490ecaeba",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The spatial organization of T\u03b2RI and T\u03b2RII by integrins at focal adhesions provides tension-sensitive control of receptor multimerization and Smad activation, representing a novel mechanism for mechanosensitive regulation of TGF\u03b2 signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This synthesis claim (C63, C64, C67, C91, C93) is supported by the collective experimental evidence showing: (1) spatial segregation, (2) tension-dependent reorganization, (3) altered receptor complexes, and (4) functional consequences for Smad signaling. The mechanistic link is well-established.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "74c6b24c-070d-45e1-a19e-4ca057c2a49c",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "TGF\u03b2 receptor spatial organization at focal adhesions is independent of exogenous TGF\u03b2 ligand stimulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C39 are supported by imaging data (Figure 3I) showing no change in receptor organization after TGF\u03b2 treatment. This suggests ligand-independent regulation, though the experiment appears limited to a single timepoint (15 min) and may not capture longer-term effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "337b56e4-19f9-41d3-a7fb-16fd83ed15d0",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Immunofluorescence of endogenous and transfected T\u03b2RII shows similar punctate staining patterns, validating the use of fluorescently tagged constructs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C22 is supported by comparison of wildtype and transfected cells (Figure 1A, Figure 1\u2014supplement 1). This control validates that the observed spatial organization is not an artifact of overexpression, though the punctate staining lacks the resolution of TIRF imaging.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "ec3e4b97-e550-40cb-9f63-2b91d880f1aa",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "This is the first report of a complex between TGF\u03b2 receptors and cofilin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C52 asserts novelty based on the authors' literature knowledge. While the finding is supported by mass spectrometry and co-IP data, comprehensive verification of novelty would require systematic literature review. The functional significance of this interaction remains unexplored.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "00afde34-ab93-40ec-b3c1-ad760a2b5de4",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "There exist two differentially regulated populations of TGF\u03b2 receptors: one TGF\u03b2-sensitive and one tension-sensitive.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68 and C92 represent an inference from the collective data showing spatial segregation, differential mobility, and tension-dependent versus ligand-independent regulation. While the data support distinct populations, direct demonstration of independent functional responses would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "41bdc252-abaf-4d35-ab52-96101e8aa548",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Focal adhesion-mediated segregation of T\u03b2RI from T\u03b2RII occurs in both epithelial and mesenchymal cell lineages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C86 is supported by imaging data from ATDC5, Saos-2, and MCF10A cells (Figure 3). Testing across multiple cell types strengthens the generalizability, though the number of cell types is limited and tissue-specific variations may exist.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "47fa0452-5898-4245-aad2-73c7810a1659",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Functional implications of receptor segregation at focal adhesions include potential enrichment of receptor access to integrin-activated TGF\u03b2, sequestration to limit activity, or priming for robust responses to combined cues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C70, C71, and C73 are speculative interpretations of the functional consequences. While plausible based on the spatial organization data, these hypotheses lack direct experimental support and represent alternative models requiring future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "cbc0f844-4cb0-404a-a3a1-12282fbe1c78",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The described mechanism of tension-sensitive receptor multimerization may explain synergistic effects of substrate stiffness and TGF\u03b2 signaling and could extend to other growth factor receptors at focal adhesions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76 and C85 connect the findings to broader mechanobiology literature. The inference is reasonable given the demonstrated mechanism and prior observations of synergy (C74, C75), though direct testing of this hypothesis for other growth factors is needed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    },
+    {
+      "id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1",
+      "content_id": "02d400d5-c366-44fe-923c-042e13d972eb",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background claims establishing prior knowledge about TGF\u03b2 signaling, mechanotransduction, integrin function, and related pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C7-C21, C50-C51, C69, C74-C75, C77-C84, C87-C89) cite established literature and provide context for the study. They are appropriately referenced and generally accurate representations of prior work, though individual citations were not independently verified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:02:04.353028Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f9c386fe-ec1c-411c-b99e-889d1770e73a",
+      "result_id": "3fc2797d-ce16-404c-b527-a247c0f0aa34"
+    },
+    {
+      "claim_id": "aad92791-a09d-400e-b268-639350133de9",
+      "result_id": "3fc2797d-ce16-404c-b527-a247c0f0aa34"
+    },
+    {
+      "claim_id": "f0b09e7b-2eb2-447b-abd6-ae1f0340bb74",
+      "result_id": "3fc2797d-ce16-404c-b527-a247c0f0aa34"
+    },
+    {
+      "claim_id": "58bbf01f-20cc-445c-9395-4db78f7d2cf1",
+      "result_id": "3fc2797d-ce16-404c-b527-a247c0f0aa34"
+    },
+    {
+      "claim_id": "8cafe651-7dbd-484f-9d57-6f5d27bf485a",
+      "result_id": "3fc2797d-ce16-404c-b527-a247c0f0aa34"
+    },
+    {
+      "claim_id": "b4cae69e-46aa-42cd-8d8a-fbd57c799c35",
+      "result_id": "7136b684-0162-4195-b392-441bdee20cbe"
+    },
+    {
+      "claim_id": "f7b16eef-18d6-48b5-92b1-5253a7bfe298",
+      "result_id": "7136b684-0162-4195-b392-441bdee20cbe"
+    },
+    {
+      "claim_id": "f01e170d-423a-4b03-8e4e-27551fa59188",
+      "result_id": "7136b684-0162-4195-b392-441bdee20cbe"
+    },
+    {
+      "claim_id": "2a9a351a-6c8e-419e-9c7d-be2529e61c9a",
+      "result_id": "7136b684-0162-4195-b392-441bdee20cbe"
+    },
+    {
+      "claim_id": "16daee1f-3478-4202-a9a8-10bb96e06882",
+      "result_id": "7136b684-0162-4195-b392-441bdee20cbe"
+    },
+    {
+      "claim_id": "a18d929b-3609-49a8-aa5b-8999a7c810f0",
+      "result_id": "7136b684-0162-4195-b392-441bdee20cbe"
+    },
+    {
+      "claim_id": "76862d7e-d2f7-4e95-82b5-7106ce6cae34",
+      "result_id": "7136b684-0162-4195-b392-441bdee20cbe"
+    },
+    {
+      "claim_id": "ee119ecd-13b4-46ff-958b-038613e29fc8",
+      "result_id": "bb2add70-c61b-4afa-9184-47fa6ab20b3f"
+    },
+    {
+      "claim_id": "505aebac-75b4-4595-a94c-15fdadffa39e",
+      "result_id": "bb2add70-c61b-4afa-9184-47fa6ab20b3f"
+    },
+    {
+      "claim_id": "28cecb2f-cec3-4226-9574-a379498af3e8",
+      "result_id": "bb2add70-c61b-4afa-9184-47fa6ab20b3f"
+    },
+    {
+      "claim_id": "48be85f2-4480-4e3d-b4ef-47b5c01884e6",
+      "result_id": "bb2add70-c61b-4afa-9184-47fa6ab20b3f"
+    },
+    {
+      "claim_id": "3bc095fb-d230-45bb-954d-1d8f7a219432",
+      "result_id": "bb2add70-c61b-4afa-9184-47fa6ab20b3f"
+    },
+    {
+      "claim_id": "c2099bf1-6fa7-4d5c-96e5-bcc84915ae14",
+      "result_id": "bb2add70-c61b-4afa-9184-47fa6ab20b3f"
+    },
+    {
+      "claim_id": "4ea511a6-eeb8-41ee-8573-49706ad74590",
+      "result_id": "bb2add70-c61b-4afa-9184-47fa6ab20b3f"
+    },
+    {
+      "claim_id": "a955afb9-6bf0-4659-9e6a-497795090239",
+      "result_id": "bb2add70-c61b-4afa-9184-47fa6ab20b3f"
+    },
+    {
+      "claim_id": "fefc9d2c-d3d9-4a97-b89e-99368adc8dd1",
+      "result_id": "bda944b8-08e2-4905-9a11-3360646bbf2e"
+    },
+    {
+      "claim_id": "640a1bd2-710d-4973-99de-23902c2324f2",
+      "result_id": "bda944b8-08e2-4905-9a11-3360646bbf2e"
+    },
+    {
+      "claim_id": "842b6f6f-931f-4fca-b72c-7e120c2c70e4",
+      "result_id": "bda944b8-08e2-4905-9a11-3360646bbf2e"
+    },
+    {
+      "claim_id": "1095ef38-8b21-4f05-9f43-2d5f95f3c4ed",
+      "result_id": "bda944b8-08e2-4905-9a11-3360646bbf2e"
+    },
+    {
+      "claim_id": "574995e7-f62c-4d44-9599-c3fb3ad7549e",
+      "result_id": "bda944b8-08e2-4905-9a11-3360646bbf2e"
+    },
+    {
+      "claim_id": "9ade3277-7ffa-47b2-86ee-09c63f274821",
+      "result_id": "a4caea41-9295-4b63-a21e-8fbd4f9a025d"
+    },
+    {
+      "claim_id": "59e62c49-7ea3-4e21-b5ef-535f24116b00",
+      "result_id": "a4caea41-9295-4b63-a21e-8fbd4f9a025d"
+    },
+    {
+      "claim_id": "21998f16-4010-436c-83f3-78dbbffba8c2",
+      "result_id": "a4caea41-9295-4b63-a21e-8fbd4f9a025d"
+    },
+    {
+      "claim_id": "05de79f6-f65f-43bd-9e17-d7f789a34f23",
+      "result_id": "a4caea41-9295-4b63-a21e-8fbd4f9a025d"
+    },
+    {
+      "claim_id": "e01d2a43-dd03-461d-a797-357a3f163750",
+      "result_id": "a4caea41-9295-4b63-a21e-8fbd4f9a025d"
+    },
+    {
+      "claim_id": "061ef14e-6b3b-4cbc-beab-98869700a09e",
+      "result_id": "a4caea41-9295-4b63-a21e-8fbd4f9a025d"
+    },
+    {
+      "claim_id": "eda56a6f-ddcc-429b-9632-e8d99b1ad3de",
+      "result_id": "a4caea41-9295-4b63-a21e-8fbd4f9a025d"
+    },
+    {
+      "claim_id": "bb1c0c87-235e-4366-817c-6ca044692c9d",
+      "result_id": "1be0f396-6984-42bc-a365-1c1ec341ccc2"
+    },
+    {
+      "claim_id": "fa834082-c35b-4238-9b98-0cc9ffc39b84",
+      "result_id": "1be0f396-6984-42bc-a365-1c1ec341ccc2"
+    },
+    {
+      "claim_id": "16587dff-0149-43ad-a95f-42049fe21d2d",
+      "result_id": "1be0f396-6984-42bc-a365-1c1ec341ccc2"
+    },
+    {
+      "claim_id": "79c52a13-eacf-43a9-a3c9-df29571b4427",
+      "result_id": "1be0f396-6984-42bc-a365-1c1ec341ccc2"
+    },
+    {
+      "claim_id": "0fa75965-e169-454c-8430-7fda23dd6186",
+      "result_id": "63054e27-6bec-4886-b245-56bae97cf6b1"
+    },
+    {
+      "claim_id": "ba856371-c18f-467d-8669-1233233c720c",
+      "result_id": "0193854e-a592-4018-bb31-75db5c4686e5"
+    },
+    {
+      "claim_id": "697fa2a7-cbbc-4af3-ac9c-1772810113e9",
+      "result_id": "0193854e-a592-4018-bb31-75db5c4686e5"
+    },
+    {
+      "claim_id": "3673cb9d-5f7f-4169-9c04-7c3bb618072d",
+      "result_id": "0193854e-a592-4018-bb31-75db5c4686e5"
+    },
+    {
+      "claim_id": "282e8913-f70d-4f8b-9def-fc96cb256fbb",
+      "result_id": "4468bfe3-bd10-49aa-93e3-c0c9dc5f8622"
+    },
+    {
+      "claim_id": "3be7d872-f296-451f-92c4-319f09aa7ea3",
+      "result_id": "4468bfe3-bd10-49aa-93e3-c0c9dc5f8622"
+    },
+    {
+      "claim_id": "d515f48a-73ef-4467-99c8-29b28e5d0827",
+      "result_id": "4468bfe3-bd10-49aa-93e3-c0c9dc5f8622"
+    },
+    {
+      "claim_id": "ea927d37-aeaf-4aa3-9094-f122da1e5a07",
+      "result_id": "4c5873b5-aacf-4d47-a6ed-73e490ecaeba"
+    },
+    {
+      "claim_id": "6c62a89c-1f81-4f73-b50b-57034bd4420f",
+      "result_id": "4c5873b5-aacf-4d47-a6ed-73e490ecaeba"
+    },
+    {
+      "claim_id": "042daa36-5b08-4db8-a940-d6bfa08aec17",
+      "result_id": "4c5873b5-aacf-4d47-a6ed-73e490ecaeba"
+    },
+    {
+      "claim_id": "771e2ad4-b24e-45df-8b66-e970228ecb18",
+      "result_id": "4c5873b5-aacf-4d47-a6ed-73e490ecaeba"
+    },
+    {
+      "claim_id": "2aade0c5-b2a2-418c-9763-fe4101c6ebef",
+      "result_id": "4c5873b5-aacf-4d47-a6ed-73e490ecaeba"
+    },
+    {
+      "claim_id": "1f5bf0d5-7d06-46fb-b7d6-c9fc3ce35cef",
+      "result_id": "74c6b24c-070d-45e1-a19e-4ca057c2a49c"
+    },
+    {
+      "claim_id": "e92897de-5657-49e0-bd27-ce4097ba6ecc",
+      "result_id": "74c6b24c-070d-45e1-a19e-4ca057c2a49c"
+    },
+    {
+      "claim_id": "b19f7263-6334-4452-a806-8faaed879b77",
+      "result_id": "337b56e4-19f9-41d3-a7fb-16fd83ed15d0"
+    },
+    {
+      "claim_id": "5db1db27-cbc1-4d20-a49b-4c18783ac696",
+      "result_id": "ec3e4b97-e550-40cb-9f63-2b91d880f1aa"
+    },
+    {
+      "claim_id": "57df8256-2b4d-44c1-b964-d3daa83d854a",
+      "result_id": "00afde34-ab93-40ec-b3c1-ad760a2b5de4"
+    },
+    {
+      "claim_id": "3fb1477e-73b5-45ac-93e9-a129f685fe9a",
+      "result_id": "00afde34-ab93-40ec-b3c1-ad760a2b5de4"
+    },
+    {
+      "claim_id": "106f1c27-2663-4be1-a6d0-126b2019ec8a",
+      "result_id": "41bdc252-abaf-4d35-ab52-96101e8aa548"
+    },
+    {
+      "claim_id": "fc6fcb51-6898-4b26-838f-808f30eeb2f1",
+      "result_id": "47fa0452-5898-4245-aad2-73c7810a1659"
+    },
+    {
+      "claim_id": "10b7c3c5-29e6-4510-81f6-2c4c381f3f2a",
+      "result_id": "47fa0452-5898-4245-aad2-73c7810a1659"
+    },
+    {
+      "claim_id": "76e4d911-50a0-4ca3-9ba4-bfc63d7c96dd",
+      "result_id": "47fa0452-5898-4245-aad2-73c7810a1659"
+    },
+    {
+      "claim_id": "e0942555-241a-4038-a41b-68a1f2fb41d1",
+      "result_id": "cbc0f844-4cb0-404a-a3a1-12282fbe1c78"
+    },
+    {
+      "claim_id": "736e5050-9533-4df0-85ee-38358f5e4f28",
+      "result_id": "cbc0f844-4cb0-404a-a3a1-12282fbe1c78"
+    },
+    {
+      "claim_id": "9044367d-fca5-4d6d-b400-126de3218d65",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "2364ddf1-b472-406a-80fa-bafccfb9bfdb",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "e1ed0851-91c0-4224-8614-9ae161e23cbf",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "2157830a-3aac-406f-abf2-94eec4bcfd18",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "a7b6bf01-024a-4aaa-bf4c-279c3e402610",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "25d02930-18b3-4fce-b09c-4a6078d53566",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "28ae5f66-0ccb-44cd-80ef-215f6b4471f9",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "856dd78a-e4b3-418c-914a-3691bdf41900",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "66adb957-0ca7-4b54-ba72-651d1df68de8",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "ea3dcf63-0b40-4436-a9f3-bef5961bc926",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "562c7067-d5e9-4522-be24-2c470c8cde8c",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "c7ebffe8-153a-4f8b-8630-8abf9c53af87",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "5f7847e0-4ee0-48ce-a6c9-8e55bfbdb9bb",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "f151ee51-a566-4216-9965-9f00e6e84b83",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "809a9247-ff0f-47ae-8226-100ca63a5893",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "8c72bc04-d985-40c1-9a0c-30e6b34a9215",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "140d5318-a7d0-4bba-98f1-49608390e188",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "0c5dd384-dcef-4a09-b80d-a8eb721fe6ff",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "9f7a7ea6-e825-484b-a198-f5d2669793ca",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "96ce1deb-5ede-4dca-b952-f6a3f9608ab4",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "ad04e8d2-35e0-4e94-80f8-c4ab2fd6b7b8",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "f2e32180-8091-476d-b485-eeb347b78f71",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "35c0ee21-c22b-48ab-8d88-b8bbb36ef5f3",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "f119a8b3-42e4-446a-98e4-12afc4e2d1b4",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "9a3d57cd-517d-49b8-a311-bc041d5ebc2b",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "5c1a9100-e402-4a8c-b942-3aefc2c8b10a",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "edc627fb-7dc5-4d6a-9018-5536b3ccbca5",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "a1228281-df39-4655-862a-ec320e255127",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "82b54ef6-395f-4292-b2e8-b3d088fde47a",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "60d9f084-8a69-45c3-9596-6492b90e58fd",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    },
+    {
+      "claim_id": "471d5e1e-309b-471b-9b64-30b9a3b894e8",
+      "result_id": "d1ccce12-bf5b-4ea0-aa41-30c9d43ca2a1"
+    }
+  ],
+  "comparisons": []
+}

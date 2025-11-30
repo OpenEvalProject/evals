@@ -1,0 +1,1362 @@
+{
+  "submission": {
+    "id": "68a47225-82ae-4d8b-ba25-27e91964486f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:05:25.442589Z",
+    "updated_at": "2025-11-30T00:05:25.442589Z"
+  },
+  "content": [
+    {
+      "id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "submission_id": "68a47225-82ae-4d8b-ba25-27e91964486f",
+      "content_type": "manuscript",
+      "content_text": "# Tracking transcription factor mobility and interaction in Arabidopsis roots with fluorescence correlation spectroscopy\n\n## Authors\n\n- Natalie M Clark<sup>1</sup> ([ORCID: 0000-0003-0988-321X](https://orcid.org/0000-0003-0988-321X))\n- Elizabeth Hinde<sup>3</sup>\n- Cara M Winter<sup>4</sup>\n- Adam P Fisher<sup>1</sup>\n- Giuseppe Crosti<sup>4</sup>\n- Ikram Blilou<sup>5</sup>\n- Enrico Gratton<sup>3</sup>\n- Philip N Benfey<sup>4</sup> ([ORCID: 0000-0001-5302-758X](https://orcid.org/0000-0001-5302-758X)) \u2020\n- Rosangela Sozzani<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Department of Plant and Microbial Biology North Carolina State University Raleigh United States\n2. Biomathematics Graduate Program North Carolina State University Raleigh United States\n3. Laboratory for Fluorescence Dynamics University of California, Irvine Irvine United States\n4. Department of Biology Howard Hughes Medical Institute, Duke University Durham United States\n5. Plant Developmental Biology Wageningen University Wageningen Netherlands\n\n\u2020 Corresponding author\n\n## Abstract\n\nTo understand complex regulatory processes in multicellular organisms, it is critical to be able to quantitatively analyze protein movement and protein-protein interactions in time and space. During Arabidopsis development, the intercellular movement of SHORTROOT (SHR) and subsequent interaction with its downstream target SCARECROW (SCR) control root patterning and cell fate specification. However, quantitative information about the spatio-temporal dynamics of SHR movement and SHR-SCR interaction is currently unavailable. Here, we quantify parameters including SHR mobility, oligomeric state, and association with SCR using a combination of Fluorescent Correlation Spectroscopy (FCS) techniques. We then incorporate these parameters into a mathematical model of SHR and SCR, which shows that SHR reaches a steady state in minutes, while SCR and the SHR-SCR complex reach a steady-state between 18 and 24\u2009hr. Our model reveals the timing of SHR and SCR dynamics and allows us to understand how protein movement and protein-protein stoichiometry contribute to development.\n\n## Introduction\n\nDuring development, multicellular organisms must coordinate patterning, maintenance, and growth of different cell types. This dynamic coordination is achieved through complex spatio-temporal signaling mechanisms (Voas and Rebay, 2004; Scheres, 2007; Han et al., 2014; Sozzani and Iyer-Pascuzzi, 2014; Sablowski, 2015; Tuazon and Mullins, 2015; Fisher and Sozzani, 2016). Many of the signaling mechanisms regulating development utilize mobile signals that cross cell boundaries (Koizumi et al., 2011; Xu et al., 2011; Gallagher et al., 2004). In plants, the intercellular movement of transcription factors and the spatio-temporal control of protein complex formation regulate many processes including cell fate specification.\n\nThe key to a systems-level understanding of development in multicellular organisms is the ability to obtain quantitative information about various signaling factors. In the Arabidopsis root, the SHORTROOT-SCARECROW (SHR-SCR) mediated gene regulatory network (GRN) is a well-characterized developmental pathway that controls ground tissue patterning and endodermal cell fate specification (Levesque et al., 2006; Cui et al., 2007; Sozzani et al., 2010; Cruz-Ram\u0131rez et al., 2012; Long et al., 2015; Moreno-Risueno et al., 2015). SHR is transcribed in the vasculature (Helariutta et al., 2000; Nakajima et al., 2001), and then the protein moves to the adjacent cell layer where it is retained in the nuclei of the Quiescent Center (QC), Cortex/Endodermis Initials (CEI) and endodermis (Nakajima et al., 2001; Gallagher et al., 2004; Gallagher and Benfey, 2009). In these cells, SHR activates the expression of the downstream transcription factor SCR (Helariutta et al., 2000; Levesque et al., 2006; Cui et al., 2007; Sozzani et al., 2010), which, as shown by yeast two hybrid experiments, interacts with SHR and prevents further SHR movement (Heidstra et al., 2004; Cui et al., 2007; Long et al., 2015). Although there have been important advances in identifying the essential features that govern the SHR-SCR GRN (Gallagher et al., 2004; Sena et al., 2004; Cui et al., 2007; Gallagher and Benfey, 2009; Sozzani et al., 2010; Cruz-Ram\u0131rez et al., 2012), the ability to measure key network parameters that may contribute to patterning and cell fate specification remains a fundamental bottleneck.\n\nNew imaging tools that enable parameter quantification and acquisition of in vivo kinetic parameters could provide quantitative information that describes temporal and spatial dynamics of proteins in multicellular organisms. Thus, we explored the possibility of combining scanning Fluorescence Correlation Spectroscopy (scanning FCS) techniques. Unlike more common time correlation FCS techniques, which only use temporal information, scanning FCS techniques utilizes both the spatial and temporal information present in a confocal raster scan to measure protein movement, protein-protein interactions, and the stoichiometry of protein complexes. (Petrasek and Schwille, 2008; Digman and Gratton, 2011). Previously, these techniques have only been used to quantify protein mobility and the dynamics of protein association in cell cultures (Digman et al., 2005a; 2005b; Digman and Gratton, 2009a; Digman et al., 2009a; Jameson et al., 2009; Rossow et al., 2010; Hinde et al., 2010; 2011; Vetri et al., 2011). We combined the techniques of Raster Image Correlation Spectroscopy (RICS), Pair Correlation Function (pCF) and Number and Brightness (N&B) to analyze SHR and SCR mobility and interaction at high spatio-temporal resolution. By using RICS and pCF (Digman et al., 2005a; 2005b; Brown et al., 2008; Digman and Gratton, 2009a; 2009b; Jameson et al., 2009; Rossow et al., 2010; Hinde et al., 2010; 2011; Vetri et al., 2011; Digman and Gratton, 2011), we quantified the rate and directionality of SHR movement. Specifically, we used RICS and a 3D Gaussian diffusion model (Digman et al., 2005a; 2005b) to calculate the diffusion coefficient of SHR in different root cell types. We also acquired line scans and performed pCF analyses (Hinde et al., 2010) to assess the directionality of SHR movement in these different cell types. Moreover, we used N&B and cross-correlation analyses (Digman et al., 2008; 2009a; 2009b) to characterize the oligomeric state of SHR and the stoichiometry of the SHR-SCR complex, respectively. Finally, we incorporated the diffusion coefficient of SHR and the stoichiometry of the SHR-SCR complex into a mathematical model of SHR and SCR dynamics. Our results demonstrate that these parameters can be used in predictive mathematical models, allowing us to understand how protein movement and stoichiometry of protein complexes contribute to developmental processes. Further, our study highlights how these non-invasive scanning FCS techniques can be used to experimentally measure protein movement and protein-protein interactions within multicellular organisms.\n\n## Results\n\n### Protein movement quantified using raster image correlation spectroscopy (RICS)\n\nA key parameter in biological models is molecular diffusion, which is frequently estimated based on published measurements from single cell organisms (Spiller et al., 2010). In order to measure protein movement in a multicellular organism such as Arabidopsis, we used Raster Image Correlation Spectroscopy (RICS), which returns an autocorrelation function (ACF) by correlating fluorescence intensity fluctuations in pixels in an image over time and space. The diffusion coefficient (DC) is then calculated by fitting the ACF with a diffusion model (Figure 1). Since the fit of the diffusion model depends on the choice of imaging parameters, such as pixel size and pixel dwell time, we first set these parameters by performing RICS analysis on Green Fluorescent Protein (GFP) driven by the CaMV 35S constitutive promoter (35S:GFP) (Table 1, see Materials and methods). In the Arabidopsis root, the resulting DC for free GFP was 6.33 \u00b1 0.37 \u03bcm2/s (n\u00a0=\u00a034 for different cells, including vascular, endodermal, and QC cells) (Figure 1\u2014figure supplement 1). We obtained similar diffusion coefficients using two different confocal microscopes (Zeiss 780 and Zeiss 710).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/14770/elife-14770-fig1-v2.jpg)\n\n**Figure 1.:** (a) Schematic showing image acquisition and RICS analysis. (Left) A time series of 100 frames (time points) acquired using predetermined imaging parameters (Table 1). (Middle) Autocorrelation function (ACF) calculated from the time series. Red represents a high ACF value, blue represents a low ACF value. (Right) Fit of the ACF to a Gaussian diffusion model to calculate the diffusion coefficient. (b\u2013d) Representative images of SHR:SHR-GFP in shr2 taken in regions containing the vasculature and endodermis (b), endodermis only (c), vasculature and QC (d). Cell walls are marked in red using propidium iodide (PI). Below each image is its ACF fit using the Gaussian model and the calculated diffusion coefficient for that representative image. (d) 128x128 pixel region of interest (ROI) used for RICS (white frame). (e) Bar graph showing average diffusion coefficients of 35S:GFP (n\u00a0=\u00a034), SHR:SHR-GFP in shr2 (n\u00a0=\u00a040) for vasculature and endodermis, n\u00a0=\u00a019 for endodermis, n\u00a0=\u00a020 for vasculature and QC) and SHR:SHR-GFP in SCRi (vasculature and endodermis, n\u00a0=\u00a014). Groups that have different symbols are significantly different from each other and from the 35S:GFP line (Wilcoxon with Steel-Dwass, p<0.05). Error bars are s.e.m. Source data is provided in Figure 1\u2014source data 1\u20134 .\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14770/elife-14770-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Region of interest of 35S:GFP in vasculature cells. (b) Autocorrelation function (ACF) calculated using RICS. Red represents a high ACF value, blue represents a low ACF value. (c) Fit of diffusion model and calculation of diffusion coefficient from the ACF. Residuals of fit are shown at top of graph.\n\n**Table 1.**\n Recommended imaging conditions for RICS and N&B.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Method</th>\n      <th>Pixel size (\u03bcm)</th>\n      <th>Pixel dwell time (\u03bcs)</th>\n      <th>Line scan time (ms)</th>\n      <th>Number of frames</th>\n      <th>Image size</th>\n      <th>Laser intensity</th>\n      <th colspan=\"2\">Gain</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>RICS</td>\n      <td>0.05 to 0.1</td>\n      <td>12.61 or 25.21</td>\n      <td>7.56 or 15.13</td>\n      <td>50 to 100</td>\n      <td>256x256</td>\n      <td>1.0% to 4.0%</td>\n      <td colspan=\"2\">800 to 1000</td>\n    </tr>\n    <tr>\n      <td>N&amp;B</td>\n      <td>0.1</td>\n      <td>12.61 or 25.21</td>\n      <td>7.56 or 15.13</td>\n      <td>50 to 100</td>\n      <td>256x256</td>\n      <td>1.0% to 12%</td>\n      <td>800 to 1000</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nWe next used RICS to determine if the DC of SHR differs between the vasculature, where it is produced, and the endodermis and QC, where it moves and interacts with SCR (Heidstra et al., 2004; Cui et al., 2007; Long et al., 2015). To this end, we used a SHR:SHR-GFP translational fusion, which complements the shr2 mutant phenotype (SHR:SHR-GFP in shr2) (Nakajima et al., 2001). Our RICS analysis showed that SHR moves at a rate of 2.45 \u00b1 0.26 \u03bcm2/s (n\u00a0=\u00a040) and 1.73 \u00b1 0.15 \u00b5m2/s (n\u00a0=\u00a016) within a population of vascular and endodermal cells and vascular and QC cells, respectively (Figure 1). Notably, in a population of only endodermal cells, SHR moves at a significantly slower rate (1.29 \u00b1 0.14 \u03bcm2/s n\u00a0=\u00a019, Wilcoxon with Steel-Dwass, p\u00a0=\u00a00.0303) (Figure 1). To investigate whether the reduction in SHR movement in the endodermis may be due to its interaction SCR (Cui et al., 2007; Levesque et al., 2006; Sozzani et al., 2010; Moreno-Risueno et al., 2015), we measured the DC of SHR in a SCR RNAi (SCRi) line (SHR:SHR-GFP in SCRi)\u00a0(Cui et al., 2007). In this line, in which the levels of SCR are reduced, SHR diffusion in populations of only endodermal cells was similar to that in populations of vascular and endodermal cells (2.40 \u00b1 0.29 \u03bcm2/s, n\u00a0=\u00a014, Wilcoxon with Steel-Dwass, p\u00a0=\u00a00.9337)\u00a0(Figure 1). Overall, our RICS data are in agreement with genetic and molecular data that show SHR movement is restricted by SCR (Heidstra et al., 2004; Cui et al., 2007; Long et al., 2015). Most importantly, our RICS data provide a precise quantification of how SHR diffusion is affected by the presence of SCR.\n\n### The direction of protein movement determined using pair correlation function (pCF) analysis\n\nAn open question is whether SHR moves unidirectionally, only from the inner to the outer cell layers, or in a bidirectional fashion. The former would be consistent with an active transport mechanism from the vasculature into the endodermis. To detect the route of intercellular movement of SHR between the vasculature and endodermis as well as between the endodermis and cortex, we used pair correlation function (pCF) analysis on line scans (Figure 2). We used pCF to measure the directionality of movement by correlating pixels that are separated by a specific pixel distance (Hinde and Cardarelli, 2011). To account for differences in cell size, as well as cell wall orientation within our images, we used three different distances: 5 pixels, 7 pixels, and 9 pixels. Generally, the pCF analysis returns a carpet, or heatmap, that shows the fluorescence correlation over time (y-axis) and space (x-axis). If proteins move across the cell wall, there is an arch that represents the delay in movement. If proteins are unable to cross the barrier, the arch is absent (Hinde et al., 2010) (Figure 2) (see Materials and methods). Thus, we performed a binary analysis on each carpet to determine the movement of SHR between cells by looking at the presence, or absence, of these arches. Specifically, we recorded a 1 if the carpet showed an arch and a 0 if no arch was present (Figure 2). We took the average of these values from the different pixel distances (5, 7, and 9) to represent one biological replicate. We then calculated the protein Movement Index (MI), which is the average of all biological replicates (Figure 2). As a positive control, we acquired pCF data for 35SGFP, which had a MI\u00a0=\u00a00.71 \u00b1 0.07 (n\u00a0=\u00a015). As a negative control we used 3xGFP, which was shown to restrict free GFP movement in roots (Kim et al., 2005). To this end, we drove the 3xGFP using a root vasculature promoter (TMO5:3xGFP, Schlereth et al., 2010) which had a MI\u00a0= 0.26 \u00b1 0.05 (n\u00a0=\u00a019) (Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/14770/elife-14770-fig2-v2.jpg)\n\n**Figure 2.:** (a) Schematic of image acquisition and pCF analysis. (Left) Line scans acquired using predetermined imaging conditions (Table 1). Carpets of the forward (middle) and reverse (right) pCF analysis. The orange arch indicates delayed movement, while the absence of an arch (green lines) indicates no movement. (b) pCF analysis of SHR:SHR-GFP in shr2. Cell walls are marked with PI. Lines indicate the laser path going across the vasculature, endodermis, and cortex. pCF carpets for each direction are shown. Orange arches indicate movement. (c) pCF analysis of SHR:SHR-GFP in SCRi. Cell walls are marked with PI. Lines indicate the laser path across the vasculature, endodermis, the extra layer, and the cortex. pCF carpets for each direction are shown. Orange arches indicate movement. (d) Bar graph showing average movement index of 35S:GFP (n\u00a0=\u00a015), TMO5:3xGFP (n\u00a0=\u00a019), SCR:SCR-GFP (n\u00a0=\u00a014), SHR:SHR-GFP in shr2 (n\u00a0=\u00a020) between vasculature and endodermis, n\u00a0=\u00a022 between endodermis and cortex), and SHR:SHR-GFP in SCRi (n\u00a0=\u00a014 between vasculature and endodermis, n\u00a0=\u00a017 between endodermis and cortex). Stars denote groups that are different from TMO5:3xGFP, crosses indicate groups that are different from 35S:GFP (Wilcoxon with Steel-Dwass, p<0.05). Error bars are s.e.m. Source data is provided in Figure 2\u2014source data 1 and 2.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14770/elife-14770-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) pCF analysis of 35S:GFP in vasculature cells. Cell walls are marked with PI. Orange arches indicate movement. (b) pCF analysis of TMO5:3xGFP in vasculature cells. Cell walls are marked with PI. Green lines indicate no movement. (c) pCF analysis of SCR:SCR-GFP in endodermal and cortical cells. Cell walls are marked with PI. Orange arches indicate movement. Green lines indicate no movement.\n\nWe then used pCF to measure SHR movement across the vasculature, endodermis, and cortex. We found that SHR moves from the vasculature to the endodermis (MI\u00a0= 0.58 \u00b1 0.03, n\u00a0=\u00a020, Wilcoxon with Steel-Dwass, p\u00a0=\u00a00.6356), consistent with previous experimental data (Helariutta et al., 2000; Nakajima et al., 2001) (Figure 2). However, from the endodermis back to the vasculature, the MI of SHR was significantly lower than the MI of free GFP (MI\u00a0= 0.36 \u00b1 0.07, n\u00a0=\u00a020, Wilcoxon with Steel-Dwass, p\u00a0=\u00a00.0368) and not significantly different from the MI of the 3xGFP (Wilcoxon rank-sum test, p\u00a0=\u00a00.5974), suggesting that SHR is unable to move back to the vasculature (Figure 2). In addition, we found that SHR moves bidirectionally between the endodermis and cortex, as the MI is not significantly different from that of free GFP (MI\u00a0= 0.61 \u00b1 0.06 from endodermis to cortex, MI = 0.53 \u00b1 0.06 from cortex to endodermis, n\u00a0=\u00a020, Wilcoxon with Steel-Dwass, p\u00a0=\u00a00.9524 and p\u00a0=\u00a00.3909 respectively).\n\nGiven that our RICS analysis showed that the presence of SCR reduces SHR mobility in the endodermis, we measured SHR intercellular movement with pCF in the absence of SCR. Accordingly, we performed a pCF analysis using SHR:SHR-GFP in the SCRi line. Line scan measurements were taken across vascular, endodermal, and cortical cells as well as across the extra layer between the endodermis and cortex which is a direct consequence of the RNAi reduction of SCR (Cui et al., 2007). We not only observed SHR movement from the vasculature to the endodermis with a MI\u00a0= 0.66 \u00b1 0.07 (n\u00a0=\u00a014) but also from the endodermis back to the vasculature with a MI\u00a0= 0.78 \u00b1 0.09 (n\u00a0=\u00a014) (Figure 2). Since the MI for SHR:SHR-GFP in SCRi in both directions is not significantly different from the MI for 35S:GFP (Wilcoxon rank-sum test, p\u00a0=\u00a00.9553 for endo to vasc, p\u00a0=\u00a00.9999 for vasc to endo) it suggests that movement is unrestricted in both directions (Figure 2). Similarly, we found that SHR is still able to move bidirectionally between the endodermis and cortex (MI\u00a0= 0.61 \u00b1 0.05 from endodermis to cortex, MI = 0.59 \u00b1 0.07 from cortex to endodermis, n\u00a0=\u00a017, Wilcoxon with Steel-Dwass, p\u00a0=\u00a00.9997 and p\u00a0=\u00a00.5510 respectively). These results suggest that the presence of SCR prevents SHR movement specifically from the endodermis back to the vasculature while it does not affect the movement between the endodermis and cortex. To determine if SCR can move with SHR from the endodermis to the cortex, we used pCF on the SCR:SCR-GFP. Our results show that SCR does not move between the endodermis and the cortex, as the MI in either direction is significantly lower than that of 35S:GFP (MI\u00a0= 0.31 \u00b1 0.08 from endodermis to cortex, MI = 0.31 \u00b1 0.07 from cortex to endodermis, n\u00a0=\u00a014, Wilcoxon with Steel-Dwass, p\u00a0=\u00a00.0236 and p\u00a0=\u00a00.0054 respectively). Taken together, our pCF results provide information about the directionality of SHR movement and indicate that SCR restricts SHR movement from the endodermis to the vasculature.\n\n### Protein oligomeric state determined by number and brightness (N&B) analysis\n\nStoichiometry is an important feature of protein complexes, as some transcription factors must form higher order complexes in order to function (Nakashima et al., 2012; Sornaraj et al., 2016). We used the Number and Brightness technique (N\u00a0and\u00a0B), which relies on the RICS image acquisition, to investigate the oligomeric state of the SHR protein in different root cell types. We used the average fluorescence intensity, and the variance in fluorescence, to determine the brightness of particles and their number in an image (Digman et al., 2008; 2009a) (Figure 3, see Materials and methods). In order to use N&B to measure SHR oligomeric state, we first obtained the brightness of the autofluorescence (immobile fraction) and of monomeric GFP protein. We used roots expressing 35SGFP to calculate the S-factor, an imaging parameter that shifts the brightness of the image, such that the immobile fraction has a brightness value of 1 (Digman et al., 2008). In addition, we used the 35S:GFP line to measure the brightness of monomeric GFP protein (Figure 3 and Table 2) (see Materials and methods).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/14770/elife-14770-fig3-v2.jpg)\n\n**Figure 3.:** (a) Schematic of image acquisition and N&B analysis. (Left) Image acquisition for N&B is the same as for RICS analysis. (Middle) The mean and variance of intensity used to calculate the brightness and number of particles. (Right) The background brightness (red) set to 1 by adjusting the S-factor (Table 2). The monomer (blue) positioned at the predetermined brightness of monomeric GFP (Table 2). Homodimer (green) particles shown to be twice as bright as the monomer. (b, c, d) 35S:GFP used to determine the molecular brightness of monomeric GFP (b, e, h) Region of interest selected for N&B analysis of 35S:GFP, SHR:SHR-GFP in shr2, and SHR:SHR-GFP in SCRi. Cell walls are marked with PI. Note that the extra layer in (h) is a result of the SCRi background. (c, f, i) Brightness vs intensity for 35S:GFP, SHR:SHR-GFP in shr2, and SHR:SHR-GFP in SCRi. The red, blue, green boxes indicate the autofluorescence (B\u00a0=\u00a01), monomer (B\u00a0=\u00a0\u03b5\u00a0=\u00a00.28 \u00b1 0.01) and homodimer (B\u00a0= 2*\u03b5), respectively. (d, g, j) Color-coding of the brightness for 35S:GFP, SHR:SHR-GFP in shr2, and SHR:SHR-GFP in SCRi. Red, blue, and green represent background (autofluorescence), monomer, and homodimer, respectively. (k) Bar graph showing average percent of SHR homodimer for SHR:SHR-GFP in vascular cells (n\u00a0=\u00a040), SHR:SHR-GFP in endodermal cells (n\u00a0=\u00a019), and SHR:SHR-GFP in SCRi (n\u00a0=\u00a014). Error bars are s.e.m. Star denotes sample that is significantly different from the other two (Wilcoxon with Steel-Dwass, p<0.05). Source data is provided in Figure 3\u2014source data 1\u20133.\n\n**Table 2.**\n N\u00a0and\u00a0B parameters for SimFCS software analysis. SEM is given.Table 2\u2014source data 1.Monomeric brightness of 35S:GFP line obtained using N&B with the Zeiss 780 and Zeiss 710 instruments.Table 2\u2014source data 2.S-factor of the 35S:GFP background line obtained using N&B with the Zeiss 780 and Zeiss 710 instruments.Table 2\u2014source data 3.S-factor of the UBQ10:mCherry background line and monomeric brightness of UBQ10:mCherry line obtained using N&B with the Zeiss 780 instrument.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Confocal model and objective</th>\n      <th>S-factor (green channel)</th>\n      <th>S-factor (red channel)</th>\n      <th>Monomer brightness (green channel) (counts/pixel dwell/molecule)</th>\n      <th>Monomer brightness (red channel) (counts/pixel dwell/molecule)</th>\n      <th>Cursor size</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>LSM 780, 40 x 1.2 NA water</td>\n      <td>1.34 \u00b1 0.02 (n\u00a0=\u00a017)</td>\n      <td>1.00 \u00b1 0.01 (n\u00a0=\u00a024)</td>\n      <td>0.28 \u00b1 0.01 (n\u00a0=\u00a013)</td>\n      <td>0.34 \u00b1 0.02 (n\u00a0=\u00a07)</td>\n      <td>42 \u00b1 0.69 (n\u00a0=\u00a013)</td>\n    </tr>\n    <tr>\n      <td>LSM 710, 40 x 1.2 NA and 63 x 1.2 NA water</td>\n      <td>0.92 \u00b1 0.004 (n\u00a0=\u00a020)</td>\n      <td>N/A*</td>\n      <td>0.24 \u00b1 0.01 (n\u00a0=\u00a020)</td>\n      <td>N/A*</td>\n      <td>50 (n\u00a0=\u00a020)</td>\n    </tr>\n    <tr>\n      <td colspan=\"6\">Source data is provided in Figure 2\u2014source data 1 (Monomer brightness for green channel and cursor size); Table 2\u2014source data 2 (S-factor, green channel); and Table 2\u2014source data 3 (Monomer brightness and S-factor, red channel) *Red channel data was not collected on the LSM 710</td>\n    </tr>\n  </tbody>\n</table>\n\nAfter calibration, we used N&B on SHR:SHR-GFP to determine the oligomeric state of SHR in different cell types. Our results indicated that SHR exists primarily as a monomer in the vasculature, given that SHR homodimer formation was only 2.6% \u00b1 0.3% in these cells (Figure 3). Notably, SHR monomeric proteins are observed in both the nuclei and in the cytoplasm of vasculature cells. By contrast, in the nuclei of the endodermis, there are significantly more SHR homodimers present (7.5% \u00b1 0.9% homodimer, Wilcoxon with Steel-Dwass, p<0.0001) (Figure 3). Moreover, in the endodermis SHR is present at very low levels outside of the nuclei (Figure 3). To further understand the differences in SHR oligomeric state, we determined if the homodimer of SHR present in the endodermis could be affected by the presence of SCR. Therefore, we performed N&B on SHR:SHR-GFP in the SCRi line and observed that SHR is mainly found as a monomer in the endodermis (1.9% \u00b1 0.4% homodimer, Wilcoxon with Steel-Dwass, p\u00a0=\u00a00.2546), indicating that SCR influences the oligomeric composition of SHR (Figure 3). These N&B results provide a quantitative assessment of SHR\u2019s oligomeric states and their distribution in the vasculature and endodermis.\n\n### Stoichiometry of the SHR-SCR complex\n\nThe N&B analysis revealed that SHR exists both as a monomer and as a homodimer in the endodermis. We next asked if both the monomer and homodimer are able to form a complex with SCR. To test this hypothesis, we performed cross-N&B, which can determine the stoichiometry of the SHR-SCR complex. Cross N&B requires that each protein be tagged with a different fluorophore. The analysis then determines which proteins are in a complex by calculating the cross-correlation between the two channels at each pixel (Figure 4, see Materials and methods). Accordingly, we generated a transgenic line containing both SHR and SCR tagged with different fluorophores (SHR:SHR-GFP & SCR:SCR-mCherry) (Figure 4\u2014figure supplement 1). We reasoned that SCR may also exist in higher oligomeric states, which would increase the possible binding ratio of the SHR-SCR complex; therefore we first used N&B on SCR:SCR-mCherry to determine the oligomeric state of SCR. Initially, we determined the S-factor and brightness of monomeric mCherry protein in the root (UBQ10:mCherry) as we did for the monomeric 35SGFP protein (Figure 4\u2014figure supplement 2 and Table 2). In the SCR:SCR-mCherry line, we detected mostly monomers with 4.7% \u00b1 0.5% of homodimers (Figure 4). We tested the oligomeric state of SCR using a SCR:SCR-GFP fusion protein (Figure 4\u2014figure supplement 2), as it was shown that the type of fluorescent tag can change the behavior of a protein and its aggregation (Brown et al., 2008). We found that the SCR:SCR-GFP line had 5.4% \u00b1 0.7% of homodimers, which is similar to the SCR:SCR-mCherry line (Figure 4\u2014source data 1). Therefore, when performing the cross-N&B analysis, we considered the possibility that the homodimer of SCR could be part of the SHR-SCR complex.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/14770/elife-14770-fig4-v2.jpg)\n\n**Figure 4.:** (a) Schematic of cross N&B analysis. (Left) A double-tagged line used for imaging. The B1 (GFP brightness) vs B2 (mCherry brightness) graph is used to select the region for cross-correlation. (Middle) The brightness cross-correlation (Bcc) used to determine GFP pixels that cross-correlate with mCherry pixels. (Right) Stoichiometry plot that displays the protein complexes detected in the image. (b) Expression of SHR:SHR-GFP/SCR:SCR-mCherry marker line in root endodermis. (c) Bcc vs B1 graph for SHR. The blue and green boxes represent the SHR monomer and homodimer, respectively, that form a complex with SCR. (d) Color-coding of the cross brightness of the SHR:SHR-GFP/SCR:SCR-mCherry line. Blue represents SHR monomer binding SCR monomer, while green represents SHR homodimer binding SCR monomer. (e) Stoichiometry histogram from cross N&B analysis. The orange line at (1,1) represents a high proportion of monomeric SHR bound to monomeric SCR (84.77% \u00b1 1.58%), while the green line at (2,1) represents a lower proportion of homodimeric SHR bound to monomeric SCR (15.23% \u00b1 1.58%). (f) Bar graph showing average percentages of the 1:1 and 2:1 SHR-SCR complex (n\u00a0=\u00a017). Error bars are s.e.m. Source data is provided in Figure 4\u2014source data 1 and 2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14770/elife-14770-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Inset: Red (SCR:SCR-mCherry), green (SHR:SHR-GFP), BF, and merged channels.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14770/elife-14770-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a, d, g) Region of interest of UBQ10:mCherry, SCR:SCR-mCherry, and SCR:SCR-GFP in the root. Both SCR:SCR-mCherry (d) and SCR:SCR-GFP (g) are shown in the endodermis. (b, e, h)\u00a0(b, e, h) Brightness (B) vs intensity graphs for UBQ10:mCherry, SCR:SCR-mCherry, and SCR:SCR-GFP. The red, blue, and green boxes indicate the autofluorescence (B=1), monomer (B1\u00a0=\u00a0$\\epsilon_{1}$\u00a0=\u00a00.28 \u00b1 0.01 for GFP; B2\u00a0=\u00a0$\\epsilon_{2}$\u00a0=\u00a00.34 \u00b1 0.02 for mCherry) and homodimer (B1\u00a0=\u00a02*monomeric B1 for GFP; B2 = 2*monomeric B2 for mCherry) (Table 2). (c, f, i) Color-coding of the distribution of the brightness of UBQ10:mCherry, SCR:SCR-mCherry, and SCR:SCR-GFP. Red, blue, and green represent autofluorescence, monomer, and homodimer respectively.\n\nAfter analyzing the SHR:SHR-GFP and SCR:SCR-mCherry separately, we performed cross-N&B on the SHR:SHR-GFP/SCR:SCR-mCherry line to determine the stoichiometry of the complex. The cross-N&B analysis returns a stoichiometry diagram that represents the proportion of different complexes (Figure 4). We found that both the monomer and the homodimer of SHR bind the monomer of SCR, suggesting that SHR and SCR bind with a 1:1 and 2:1 stoichiometry (Figure 4). We were not able to detect any complexes that contain the homodimer of SCR. Additionally, we determined that 84.8% \u00b1 1.6% of the SHR-SCR complexes have 1:1 stoichiometry while 15.2% \u00b1 1.6% have 2:1 stoichiometry (Figure 4). Our cross N&B results reveal that both the monomer and homodimer of SHR are able to bind the monomer of SCR, while the homodimer of SCR does not seem to be part of this complex.\n\n### A mathematical model of SHR and SCR dynamics\n\nSHR and SCR dynamics have been previously modeled in the endodermis, but this model did not take into account either the intercellular movement of SHR or the stoichiometry of the SHR-SCR complex (Cruz-Ram\u0131rez et al., 2012). After experimentally determining the rate of SHR movement, SHR oligomeric state, and the binding ratio of the SHR-SCR complex, we sought to incorporate this information into a mathematical model of SHR and SCR, with the goal of determining how protein movement and stoichiometry affect SHR and SCR dynamics. Therefore, we constructed a compartmental model that only measures SHR, SCR, and the SHR-SCR complex in both the vasculature and the endodermis (see Materials and methods).\n\nAfter constructing the model, we performed a sensitivity analysis to determine the most influential parameters. We chose to use Sobol indices to measure how sensitive the model is to each parameter (Sobol, 2001; see Materials and\u00a0methods). Briefly, the total Sobol effects index measures how much the model outcome varies as the parameters are changed. If small changes in the parameter values cause large changes in the model outcome, then that parameter is more influential. Using this measure, we found that the rate of movement of SHR from the vasculature to the endodermis (a1) and from the endodermis to the vasculature (a2) are both highly influential parameters (Figure 5\u2014figure supplement 1). Thus, this suggests that SHR movement is a key component of the model that greatly influences the dynamics of SHR in the endodermis.\n\nNext, we sought to use the model, in conjunction with our experimentally determined diffusion coefficients, to (i) simulate SHR and SCR dynamics in the endodermis, and (ii) estimate values for the other parameters. Most of the parameter values were chosen based on the previous mathematical model (Cruz-Ram\u00edrez et al., 2012). However, since this model did not account for different oligomeric states of SHR we estimated some of the parameters using the N&B data (Supplementary file 3; see Materials and methods). Our mathematical model predicts that SHR reaches a steady state in the vasculature and endodermis in a matter of minutes. The levels of SCR increase greatly in the first 3\u2009hr, which is supported by data that show that SCR expression in a SHR inducible system is significant after 3\u2009hr (Sozzani et al, 2010). While the 1:1 SHR-SCR complex increases greatly in the first 3\u2009hr, the 2:1 complex does not form until after 9\u2009hr. This is because the SHR homodimer does not form until about 9\u2009hr into the simulation (Figure 5). We reasoned that this is a plausible scenario because SCR should exceed 60% of steady-state levels to trigger homodimer formation (see Materials and methods). Finally, the entire system reaches a steady-state between 18 and 24\u2009hr (Figure 5). This suggests that cell division occurs once SCR and the SHR-SCR complexes reach their steady state values.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/14770/elife-14770-fig5-v2.jpg)\n\n**Figure 5.:** (a, b, c) Model simulations of wild type showing how (a) SCR and the 1:1 SHR-SCR complex greatly increase in the first 3\u2009hr, (b) SHR homodimer and the 2:1 SHR-SCR complex do not form until around 9\u2009hr, (c) the entire system reaches a steady state between 18\u201324\u2009hr. (d) Model simulations of SCR RNAi showing a reduction in SHR homodimer, SCR, 1:1 SHR-SCR complex, and 2:1 SHR-SCR complex levels after 24\u2009hr. The model outcomes show SHR in the vasculature (black), SHR monomer in the endodermis (solid blue), SHR homodimer (dashed blue), SCR (red), 1:1 SHR-SCR complex (solid green), and 2:1 SHR-SCR complex (dashed green). Parameter values and initial conditions are given in Supplementary file 3. Source data is provided in Figure 5\u2014source data 1 and 2.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14770/elife-14770-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Bar graphs showing average Sobol total indices (n\u00a0=\u00a010) for SHR in vasculature (a), SHR monomer in endodermis (b), SHR homodimer (c), SCR (d), 1:1 SHR-SCR complex (e), and 2:1 SHR-SCR complex (f). Indices were normalized to mean 0, variance 1 before averaging. Bars represent s.e.m. Stars denote parameters that have significantly higher total effects indices (Wilcoxon with Steel-Dwass, p<0.10). Source data is provided in Figure 5\u2014source data 1.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14770/elife-14770-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** k2\u00a0is the rate of SHR homodimer formation and depends on the concentration of SCR. Once SCR passes a critical value (C0 = 360), SHR homodimer formation switches on. The homodimer formation rate has a maximum value of L = 0.5.\n\nIn addition to simulating what happens in wild type, we also wanted to observe how decreasing SCR affects the model dynamics and how it reflects our pCF and N&B data. Accordingly, in the SCRi model, SHR movement is bidirectional and no SHR homodimer forms (see Materials and methods). In this model, we assume that SCR levels are maintained at below 60% of wild type levels as in agreement with previous experimental data (Cui et al, 2007). At these lower levels of SCR, we observe that the steady-state value of the 1:1 SHR-SCR complex is reduced by half (Figure 5). In addition, we observe that SHR homodimers do not form as seen in the N&B analysis (Figure 3). Since SHR homodimers do not form, the 2:1 SHR-SCR complex does not exist (Figure 5). These results suggest that the extra layer in the SCRi line could form due to a reduction in the levels of the SHR-SCR complex. However, there are still other unknown factors that could contribute to the formation of the extra layer.\n\n## Discussion\n\nThe methodologies we describe are rapid, direct, and convenient approaches for characterizing the quantitative and qualitative behavior of proteins in vivo. Combining RICS and pCF provided detailed understanding of SHR movement both within and between cells of the Arabidopsis root. Trafficking along the radial axis is normally unidirectional - SHR moves from the vasculature to the endodermis, and not in the opposite direction (Figure 2). In the absence of SCR, SHR trafficking is bidirectional. In agreement with the pCF results, our RICS data showed that the DC of SHR in the endodermis increases significantly in the absence of SCR as compared to wild type, indicating that removal of SCR affects the diffusive behavior of SHR. Taken together, these results provide further evidence that SCR, which is present only in the endodermis, spatially restricts SHR movement. The mechanisms underlying this restricted movement remain unclear, and future experiments should focus on uncovering other factors, in addition to SCR, that can bind SHR (Long et al., 2015; Moreno-Risueno et al., 2015). In this study, combining RICS and pCF provided quantitative information about the speed and direction of protein movement.\n\nUsing RICS and pCF, which allow both intra- and inter-cellular analysis of protein movement, we were able to determine the in vivo flow of molecules in a multicellular organism. The average value of the diffusion coefficient obtained with RICS could be obtained with other techniques such as single-point FCS or Fluorescence Recovery After Photobleaching (FRAP), but these techniques have limitations, such as returning only temporal information (Miyawaki, 2011). On the other hand, both RICS and pCF are applied to frames or lines, respectively, which increase the spatial resolution and the statistical power of the analysis by simultaneously measuring the movement of many individual molecules in time and space. Moreover, RICS and pCF introduce a spatial component that can determine whether slow movement is due to a binding interaction or slow diffusion, which FRAP and single-point FCS cannot do. Thus, these scanning FCS methods are robust against cell movement and other artifacts that could bias measurements taken with other single-point methods.\n\nThe DC measurements of SHR in both the shr2 complemented line and SCRi are significantly lower than those of freely-moving 35S:GFP (Wilcoxon rank-sum test, p<0.0001) (Figure 1). The slower movement of SHR could be due to its size alone. However, since the DC of SHR is three-fold smaller than the DC of 35S:GFP, and the DC is inversely proportional to the cube root of the molecular weight of the protein (Young et al., 1980), the change in DC is not attributable to the molecular weight of SHR (~60\u00a0kDa). If it were, then the molecular weight of SHR would have to be 27-fold higher than that of GFP, or approximately 729\u2009kDa (Prendergast and Manni, 1978). Further, the decrease in the DC of SHR relative to 35S:GFP, in addition to the pCF analysis which shows unidirectional movement, suggests an active regulation of SHR movement, which is in agreement with previous data (Gallagher et al., 2004; Sena et al., 2004; Gallagher and Benfey, 2009). Future work could expand our understanding of SHR movement by examining it in callose synthase gain-of-function mutants, which block transport via the plasmodesmata (Vaten et al., 2011), or in Shortroot interacting embryonic lethal (SIEL) mutant alleles, which have reduced SHR movement (Koizumi et al, 2011).\n\nThe N&B results provided a quantitative assessment of SHR\u2019s oligomeric states and their distribution across cell types. SHR exists in the vasculature primarily as a monomer and in the endodermis as a monomer and a homodimer (Figure 3). The presence of the SHR homodimer in the nucleus and loss of the homodimer in the SCRi line indicate that SCR is required to maintain SHR in its higher oligomeric forms. Taken together, these results provide insights into the molecular mechanisms by which SCR regulates SHR movement. They also raise new questions, such as how SCR maintains SHR in multimeric forms, and how formation of higher oligomeric complexes helps restrict SHR movement.\n\nBy using our experimentally determined parameters in a mathematical model, we were able to determine that SHR reaches a steady state in a matter of minutes, while SCR and the SHR-SCR complex stabilize within 24\u2009hr. This suggests that future experiments that aim to understand the details of the SHR-SCR GRN should focus on a time scale of hours to measure its dynamics. In addition, the sensitivity analysis revealed that diffusion is one of the most important parameters in our model, motivating the need to experimentally measure the diffusion coefficient. In the simulation of SCRi, our model showed that the 2:1 complex does not form and the 1:1 complex is reduced to half of normal levels. This suggests that the mutant layer in the SCRi line is likely due to a reduction in the SHR-SCR complex. These results only scratch the surface of what is likely to be a complex network regulating the spatial localization of SHR as a mobile transcription factor and developmental regulator. Furthermore, they highlight the importance of physical interactions between transcription factors as a regulatory component of transcription factor intercellular trafficking networks. The three scanning FCS methodologies utilized here (pCF, RICS, and N&B) gave consistent results providing strong evidence for their reliability. Our data suggest that the application of in vivo molecule tracking techniques is virtually limitless, which opens exciting new opportunities in all fields of biology.\n\n## Materials and methods\n\n### Plant material and growth conditions\n\nPrior to plating, Arabidopsis seeds were dry sterilized using 50% bleach and 1.5\u00a0ml of HCl for at least 1\u2009hr, imbibed with 500\u2013700\u00a0\u03bcL of sterile water, and vernalized for 2 days at 4\u00b0C in complete dark. After vernalization, seeds were plated on 1x MS (Murashige and Skooge) media supplemented with 1% sucrose and grown vertically at 22\u00b0C in long day conditions (16\u2009hr light/8\u2009hr dark). Seedlings were 5 days old when imaged. The 35SGFP, SHR:SHR-GFP in shr2, SCR:SCR-GFP in scr4, SHR:SHR-GFP in\u00a0SCRi, and TMO5:3xGFP lines are described in (Ruiz et al., 1998; Nakajima et al., 2001; Cui et al., 2007; Sabatini et al., 2003; Schlereth et al, 2010). For the SCR:SCR-mCherry construct, the coding sequence (CDS) of the mCherry fluorescent protein (Goedhart et al., 2007) was amplified using primers with flanking attB sites: mCherry-R2R3 F: 5\u2019-GGGGACAGCTTTCTTGTACAAAGTGGCTATGGTGAGCAAGGGCGAGGAG-3\u2019 and mCherry -R2R3 R: 5\u2019-GGGGACAACTTTGTATAATAAAGTTGCTTACTCACTTGTACAGCTCGTCCATGCC-3 and recombined into pGEMTeasyR2R3 vector by Gateway BP reaction. SCR coding sequence in pDONR221-derived entry clones was previously described (Welch et al., 2007). The root expression vector was created using endogenous SCR promoter in pH7m34GW binary vectors by multiple Gateway LR reactions as described (Long et al., 2015).\n\n### Statistical analysis\n\nWe performed all statistical analyses using the Wilcoxon rank-sum test with Steel-Dwass for multiple comparisons at significance level \u03b1 = 0.05. We chose the Wilcoxon test as not all of our data are normally distributed (Shapiro-Wilk Goodness of Fit test, p<0.0001, Supplementary file 1). In addition, the Wilcoxon test adjusts for our sample sizes, which were unequal between groups. The Steel-Dwass test is used after the Wilcoxon test to perform pairwise comparisons. All statistical analyses were performed using JMP software (http://www.jmp.com).\n\n### Point spread function (PSF) measurement\n\nThe Point Spread Function (PSF) measures the radius of the laser beam and is experimentally measured in order to perform Raster Image Correlation Spectroscopy (RICS) analysis (Rigler et al., 1993). The PSF was measured for each objective and each confocal microscope used for image acquisition. To calibrate the PSF for our objective lens, we performed RICS on free EGFP in an aqueous solution. While we determined the PSF using free EGFP in solution, it is possible that the PSF varies depending on the cell or tissue we are imaging. However, the exact value of the PSF is not as important for these scanning FCS techniques as it is for single-point FCS since the scanning techniques measure the time a molecule takes to go from one pixel to the next (Digman et al., 2005b; Petrasek and Schwille, 2008). Thus we made the assumption that the PSF determined using the EGFP solution is an accurate estimation of the true PSF. Accordingly, raster images of a solution of 0.6 \u00b5M EGFP were acquired using commercial CLSMs, including the Zeiss 780 and 710 (Zeiss Inc, Germany). We determined the PSF by fitting the autocorrelation function (ACF) to the intensity fluctuations of free EGFP in aqueous solution, obtained from the raster images, while fixing the known EGFP diffusion coefficient of 78 \u03bcm2/s (Chen et al., 2002). The ACF then returned the experimental PSF beam waist (Supplementary file 2). We found that the PSF measurement was different for different objectives (Supplementary file 2).\n\n### Raster image correlation spectroscopy (RICS)\n\nRICS is a technique that has been developed to determine the rate of movement (either passive diffusion or regulated movement) of fluorescently-labeled particles in a small volume (i.e femtoliter volume of the PSF). In particular, RICS can be used to determine the rate of movement of a GFP-labeled protein, such as SHR:SHR-GFP. During a RICS measurement, the laser performs a raster scan across a selected region of interest. The raster scan involves scanning from left to right across a set number of pixels and then retracing, without backtracking across the already imaged pixels, to perform the next line below. The scanning is repeated for multiple consecutive lines until a 256x256 pixel frame is created, and then starts over again to obtain between 50 to 100 time points. Because each pixel is collected at a different time, and we know where each pixel is located, there is spatial and temporal information included in each individual image (Figure 1). This spatio-temporal information can be used to extract the diffusion coefficient of a population of molecules using the RICS algorithm, which has two steps: (1) background subtraction and (2) image correlation. The background subtraction removes stationary and slow-moving objects so that the image autocorrelation only detects the dynamics of diffusing species (Digman et al., 2005a) while the image correlation compares each pixel to its adjacent pixel in both the x and y direction.\n\nFor the RICS analysis the pixel size, pixel dwell time, line scan time, number of frames, and image size were set prior to acquisition. The parameters were set so that each pixel is sampled at a slightly faster rate than the particles move in the solution (Digman et al., 2005a). The laser intensity was set so that the signal to noise ratio is high, but within a range that does not cause photobleaching (Table 2). Since all of these parameters affect the ACF fit and, therefore, the estimation of the diffusion coefficient, we determined the optimal parameters for the A. thaliana root system by testing different values while imaging the 35S:GFP genotype. We chose parameter values that resulted in an ACF with a good fit to the data and low residuals (Table 1). We found that these parameter values remained the same between different confocal microscopes. Moreover, since sample movement can create artifacts in the ACF, which results in an erroneous diffusion coefficient (Digman et al., 2005a), no data were analyzed that had significant sample movement (i.e. sample movement that shifts the region of interest outside of the imaging frame).\n\nThe RICS-ACF is decomposed into two correlation functions that depend on \u03be (the spatial lag in x) and \u03c8 (the spatial lag in y). The first correlation function, S(\u03be,\u03c8), calculates the spatio-temporal correlation due to the scanning of the microscope. The second correlation function, G(\u03be,\u03c8), calculates the spatio-temporal correlation due to particles diffusing in the medium. The ACF, GS(\u03be,\u03c8), takes both of these correlations into account by multiplying them: GS(\u03be,\u03c8)= S(\u03be,\u03c8)* G(\u03be,\u03c8). The functions are constructed assuming that the distribution of fluorescence intensities follows a 3D Gaussian distribution. The decomposition of the ACF into two parts allows RICS to distinguish random, Brownian motion from diffusing particles in the medium (Digman et al., 2005a).\n\nIt is possible for artifacts to occur in the ACF due to slow, mobile structures within the volume. To eliminate these artifacts from our analysis, a moving average with a 10 frame time window was applied to the time series images to subtract the immobile fraction (Digman et al., 2005a). The first and last 5 frames of the time series were ignored since in this time window there is not enough information to calculate the moving average. For the remainder of the frames, the average intensity of the 5 preceding and 5 following frames was subtracted. For example, the average of frames 10\u201320 was subtracted from frame 15.\n\nThe ACF was calculated using the PSF of the beam (Supplementary file 2) and the other parameters that were set before imaging (Table 1). The only unknown parameters in the ACF function were DC, the diffusion coefficient of the particles, and G(0), which is inversely proportional to the number of molecules present. The diffusion coefficient returned by the software was the value that best fits the data (see SimFCS Software Analysis).\n\n### Pair correlation function\n\nPair correlation function (pCF) is a technique that allows us to measure the movement of a protein along a line. To do this, we scanned a 32 pixel line through a region of interest in the root. The region of interest was chosen such that 2\u20133 cells are contained within the frame. To visualize cell walls, we used propidium iodide (PI), which causes the walls to fluoresce red when excited with the 488\u00a0nm emission line of an argon laser. In our images, the line scans across the middle of the frame, and the sample was positioned such that the line does not scan directly over a cell wall. Additionally, the line was placed towards the middle of the cell so that movement in both the nucleus and cytoplasm can be measured. The imaging area was cropped such that the edges of the line overlap exactly with the outer cell walls. Once the imaging area was cropped, a reference image was taken to check for image movement. The selected 32 pixel line was then rapidly scanned 2\u00a0\u00d7\u00a0105 times at a pixel dwell time of 12.61 \u00b5s. Note that the pixel size was not set as a constant, but rather changed for each image depending on the position of the line scan and the size of the cells analyzed. As soon as the line scan finished, another reference image was taken to check if the root had moved during imaging. If the reference images suggested that the root had moved during imaging, then that line scan was not used for analysis.\n\nThe pair correlation function (pCF) for two points at a distance \u03b4r as a function of the delay time \u03c4 is calculated using Equation (1):\n\n$$\nG(\\tau,\\deltar)=\\frac{\u27e8F(t,0).F(t+\\tau,\\deltar)\u27e9}{\u27e8F(t,0)\u27e9\u27e8F(t,\\deltar)\u27e9}\u22121,\n$$\n\nwhere F(t,0) is the fluctuation in fluorescence intensity at pixel 0 and F(t+\u03c4,\u03b4r) is the fluctuation in fluorescence intensity at some other pixel position (\u03b4r) at different time delays (\u03c4) (Hinde et al., 2010; Hinde et al., 2011; Digman and Gratton, 2009b). The result of the pCF analysis is a carpet, or heatmap, that displays the correlation in fluorescence over time (y-axis) and space (x-axis). Molecules that move across a barrier display a characteristic \u2018arch\u2019 pattern in the pCF carpet output, whereas molecules that do not move across the barrier do not (Hinde et al., 2010) (Figure 2). Since the delay time recovered by the pair correlation function analysis is variable, we performed a binary analysis on the pCF carpets to look for movement (presence of an arch pattern) or no movement (no arch) (see SimFCS Software Analysis).\n\n### Number and brightness (N&B)\n\nN&B is used to determine the number (N) and brightness (B) of particles in a volume, which allows us to determine the amount of aggregation of particles. This is useful in determining the oligomeric state of GFP- and mCherry-labeled proteins such as SHR:SHR-GFP, SCR:SCR-GFP, and SCR:SCR-mCherry. A time course of raster-scanned images was obtained using the confocal microscope (see RICS). Certain imaging parameters had to be determined so that the pixels were not under or over sampled (see RICS). In addition, lines expressing monomeric forms of GFP (35S:GFP) and mCherry (UBQ10:mCherry) were used to set the background fluorescence and to measure monomer brightness (see SimFCS Software Analysis).\n\nWe obtained both the mean and the variance of the intensity distribution at each pixel in order to determine the number (N) and brightness (B) of the particles. The mean, <k>, and the variance, \u03c32, of the intensity distribution are given by Equations 2 and 3:\n\n$$\n<k>\u00a0=\\frac{\\sumi=1Kk_{i}}{K}\n$$\n\n\n\n$$\n\\sigma^{2}=\\frac{\\sumi=1K(k_{i}\u2212<k>)^{2}}{K}\n$$\n\nwhere K is the number of time points and ki is the fluorescence counts for time point i. The number and brightness of the particles can be determined from the mean and variance of the intensity distribution alone due to the assumption that the occupation of particles follows a Poisson distribution (Digman et al., 2008). Using moment analysis (Qian and Elson, 2000), the apparent number (N) and apparent brightness (B) of the particles are defined in Equations 4 and 5.\n\n$$\nN=\u00a0\\frac{<k>^{2}}{\\sigma^{2}}\n$$\n\n\n\n$$\nB=\u00a0\\frac{\\sigma^{2}}{<k>}\n$$\n\nNote that if the average intensity is fixed and the variance increases, B increases but N decreases. This is because fewer, larger particles cause greater intensity fluctuations as the laser scans than many small particles. The true number of particles, n, and the true brightness, \u03b5, can be calculated from N and B respectively. However, the apparent brightness B is used for the software analysis (see SimFCS Software Analysis).\n\n### Cross number and brightness (Cross N&B)\n\nCross N&B follows the same theory as N&B but involves two particles that are marked with different fluorescent proteins (Digman et al., 2009b). Thus, Cross N&B is used to determine the binding ratio of a protein-protein interaction. We specifically use Cross N&B to look at the stoichiometry of the SHR-SCR complex using the SHR:SHR-GFP/SCR:SCR-mCherry line. The apparent number of particles, N, and the apparent brightness, B, were calculated for the green and the red channels separately (see N&B). The cross-variance, $\\sigma_{cc}^{2}$, is defined in Equation 6:\n\n$$\n\\sigma_{cc}^{2}=\u00a0\\frac{\\sumi=1K(G_{i}\u2212<G>)(R_{i}\u2212\u00a0<R>)}{K}\n$$\n\nwhere Gi and Ri\u00a0are the pixel intensities in the green and red channels, respectively, at time i, and <G> and <R> are the mean intensities of the green and red channels. When the cross-variance is zero, the fluctuations in the two channels are independent. When the cross-variance is positive or negative, the two channels are correlated or anti-correlated, respectively. The cross-brightness, BCC, and the cross-number, NCC, are defined in Equations 7 and 8.\n\n$$\nB_{cc}=\u00a0\\frac{\\sigma_{cc}^{2}}{\\sqrt{<G><R>}}\n$$\n\n\n\n$$\nN_{cc}=\u00a0\\frac{<G><R>}{\\sigma_{cc}^{2}}\n$$\n\nTo determine the stoichiometry of a protein-protein complex, the brightness of each protein was compared to the cross-brightness at each pixel (Digman et al., 2009b). A large, positive cross-brightness indicates that the two proteins bind at that pixel in the image. The brightness of each protein in the complex determines the stoichiometry (see SimFCS Software Analysis).\n\n### SimFCS software analysis\n\nThe SimFCS Software (Digman et al., 2005a), developed at the Laboratory for Fluorescence Dynamics (www.lfd.uci.edu), is used to perform RICS, pCF, N&B, and Cross N&B analysis on raster or line scans obtained using a confocal microscope. For the RICS analysis, the software can reduce the region of interest (ROI) from 256x256 pixels to 128 \u00d7\u00a0128 pixels in order to obtain a more enriched cell population. For example, we used this feature to obtain QC-enriched populations (Figure 1). After selecting the ROI to use, the software uses the moving average (see RICS) to eliminate any artifacts from immobile fractions. Then, the software fits the RICS-ACF using the imaging parameters provided (Table 1) and returns the diffusion coefficient of the protein. The diffusion coefficient returned results in the ACF curve that best fits the data (Figure 1). Goodness of fit was determined by comparing the residuals to the amplitude of the ACF. We only kept images where the maximum value of the ACF was three fold larger than the greatest residual in order for the RICS analysis to be reliable (Figure 1). Images that had residuals larger than this threshold generally had low laser intensity or sample movement were not used for analysis.\n\nFor pCF, the line scan file was loaded as a 32 pixel by 2\u00a0\u00d7\u00a0105 pixel image where the x axis represents position along the line and the y axis represents time. When there was photobleaching in the sample, we eliminated some of the frames acquired at later time points. A period average of 800 frames was then applied so that trends in the fluorescence carpet are easier to see. The carpet is displayed as a gradient, with red corresponding to high correlation and blue corresponding to low correlation. Next, the autocorrelation of each of the 32 pixels in the line scan was calculated using a moving average of 200 frames. The resulting image was a 32 column image where each of the columns represented the autocorrelation value of that pixel. At this step, the 32 columns were aligned with the reference image to determine the pixel location of the cell wall. The location of the cell wall was then used as the column distance ($\\deltar)$ in order to calculate the pCF. The software calculated the pCF by correlating pixels that are $\\deltar$ apart, moving from left to right. The pCF in the opposite direction was then calculated by correlating pixels from right to left, instead of left to right. To account for the fact that the cell wall is not straight, the pCF was calculated using pixel distances of 5, 7, and 9. Given that there is heterogeneity in the cell size and cell wall orientation in the root, we would not capture differences by using only one pixel distance. Finally, the color scale of the pCF was adjusted such that high correlation is represented as red, low correlation is represented as blue, and no correlation is black.\n\nN&B analysis was applied to the same data set as RICS. First, we calibrated the software using a monomeric form of the fluorescent proteins, namely, 35S:GFP and UBQ10:mCherry. Images were taken of A. thaliana roots expressing 35S:GFP and UBQ10:mCherry that contained and did not contain the background (background refers to a region of the image that does not contain the root) using the same experimental settings as the RICS analysis (Figure 3). RICS analysis was run on the images to ensure a good ACF fit. Then, N&B analysis was first run on the background images. The software plots the brightness versus the intensity of each pixel. Since the intensity is not used in the N&B calculation, the exact values of the intensity for each fluorophore do not matter. Background images have two distinct populations representing the monomer and the background. The background brightness was standardized by setting the S-factor parameter such that the background population is centered at B\u00a0=\u00a01 (Figure 3). This ensured that the brightness of the monomer was calibrated for the detector output. Since background brightness can vary between microscopes and laser or detector settings, the S-factor was calculated for each microscope and experimental set-up (Table 2).\n\nOnce the S-factor was set, N&B analysis was run on the 35S:GFP and UBQ10:mCherry images with no background. All particles with B > 1 were bounded by a rectangle, or cursor, on the brightness graph, and the position and size of the cursor on the B axis were recorded (Table 2, Figure 3). The size of the cursor measures the distribution of the monomer in the image. The position on the B axis represents the brightness of the GFP or mCherry monomer. The x axis represents the intensity and is not used in the N&B analysis: thus, the intensity axis can vary between images. Since these parameters can vary by microscope, the cursor size and monomer brightness were calculated for each microscope (Table 2).\n\nThe quality of acquired data for N&B analysis of GFP- and mCherry-labeled proteins was first determined by RICS analysis of the acquired images to ensure a good ACF fit. The S-factor was set to the value determined by the background image analysis (Table 2). A cursor size was selected that took into account the entire distribution of monomer detected in the brightness histogram. Another cursor of the same size was then positioned at the brightness value that corresponds to twice the brightness of the monomer, as any pixels inside the higher rectangle represent a homodimer of the protein (Figure 3). The percentage of monomer and homodimer were then calculated by dividing the number of pixels inside the monomer, or homodimer, cursor by the total number of fluorescent pixels (monomer plus homodimer).\n\nFor Cross N&B using images that contain both GFP- and mCherry-labeled protein, the B1-B2 channel was used to determine the pixels in the green channel that were positively correlated with the red channel. The cursor was positioned in the area of the B1-B2 channel that corresponded to where the GFP and mCherry monomers are located. The cursor was then expanded to include any higher oligomeric states that are present, and that area was set as the correlation area (Figure 4). Once the correlation area was set, the Brightness cross correlation (Bcc) channel was used to determine the brightness of the green and red channels at each of the correlated pixels (Digman et al, 2009b). The software highlighted the mCherry pixels that correlated with the GFP pixels using a green curve. The percentage of each complex stoichiometry (1:1, 2:1, etc) was then calculated by overlaying cursors on GFP monomer, mCherry monomer, GFP homodimer, and mCherry homodimer. As in N&B analysis, the percentage was computed by dividing the pixels in the 1:1 complex by the total number of fluorescent pixels (1:1 plus 2:1). Finally, the software returned a stoichiometry plot that displayed the most likely stoichiometry of the protein-protein complex (Figure 4).\n\n### Mathematical model formulation\n\nWe constructed a mathematical model that incorporated our experimentally determined parameters and simulated SHR and SCR dynamics in the root. Our model assumed that transcription and translation happens quickly. Because of this, we modeled transcription and protein movement terms in the same equation. Additionally, we assumed that all proteins have linear degradation terms.\n\nFirst, we developed a model reflecting wild type conditions (Model 1). We modeled six different variables: SHR in the vasculature (Sv), SHR monomer in the endodermis (Se), SHR homodimer in the endodermis (S2e), SCR in the endodermis (C), 1:1 SHR-SCR complex in the endodermis (SC), and 2:1 SHR-SCR complex in the endodermis (S2C). The model consisted of six ordinary differential equations (ODEs) that measure how each of the variables changes over time.\n\nWe assumed that SHR is constantly produced at rate k1 as there is no information on upstream regulators of SHR. Since our pCF analysis showed that SHR only moves from the vasculature to the endodermis, possibly through an active transport mechanism (Gallagher et al., 2004; Sena et al., 2004; Gallagher and Benfey, 2009), we modeled the movement of SHR using an active transport term, where a1is the active transport rate. We defined a1 as the experimentally determined diffusion coefficient (D1) divided by the area of a vasculature cell (A1). We measured the area of vascular cells (n\u00a0=\u00a019) using ImageJ, and averaged them to determine A1 (Supplementary file 3). Although the diffusion coefficient returned by RICS is from a population of vascular and endodermal cells, we assumed that it is a good approximation of SHR movement between one vascular and one endodermal cell. We included a second active transport term for movement in the reverse direction, from the endodermis to the vasculature, where a2is the active transport rate. However, based on the pCF analysis, a2 = 0 since normally there is no bidirectional movement. Adding linear degradation gave us the equation for the change in SHR in the vasculature over time.\n\n$$\n\\frac{dS_{v}}{dt}=k_{1}\u2212a_{1}S_{v}+a_{2}S_{e}\u2212d_{1}S_{v}\n$$\n\n\n\n$$\na_{1}=\u00a0\\frac{D_{1}}{A_{1}},\u00a0a_{2}=0\n$$\n\nGiven that SHR is not produced in the endodermis, there is no production term in the equation. Thus, the only SHR present in the endodermis is the SHR that moves from the vasculature. This leads to the equation for the change in SHR monomer in the endodermis over time.\n\n$$\n\\frac{dS_{e}}{dt}=a_{1}S_{v}\u2212a_{2}S_{e}\u2212d_{2}S_{e}\n$$\n\n\n\n$$\na_{2}=0\n$$\n\nThe SHR homodimer forms from two SHR monomers. Our N&B analysis revealed that SHR homodimer does not form in a SCRi line. This suggested that the homodimer formation rate, k2, should depend on the concentration of SCR. To account for this, we modeled k2 as a logistic function of the concentration of SCR. Once the SCR concentration reaches a critical value C0, k2\u00a0will increase at rate k until it reaches a maximum value of L (Figure 5\u2014figure supplement 2). We chose values for C0, k, and L based on the N&B data (see Parameter Estimation). Thus, the equation for the change in SHR homodimer over time is\n\n$$\n\\frac{dS_{2e}}{dt}=k_{2}(C)S_{e}^{2}\u2212d_{3}S_{2e}\n$$\n\n\n\n$$\nk_{2}(C)=\u00a0\\frac{L}{1+e^{\u2212k(C\u2212C_{0})}}.\n$$\n\nUnlike the other variables, SCR production is not a linear term but rather a Hill equation. This structure was chosen because it has been shown that the SHR-SCR complex activates SCR expression (Cui et al, 2007). We assumed that both the 1:1 and 2:1 SHR-SCR complexes can activate SCR. In addition, SCR has been shown to autoregulate itself (Cui et al, 2007; Moreno-Risueno et al, 2015). Therefore, the change in SCR over time is expressed as:\n\n$$\n\\frac{dC}{dt}=k_{3}(\\frac{K_{1D}^{2}C+K_{1D}SC+S_{2}C}{K_{1D}^{2}K_{2D}+K_{1D}K_{2D}S_{v}+K_{1D}^{2}C+K_{1D}SC+S_{2}C})\u2212d_{4}C.\n$$\n\nFinally, our N&B analysis revealed that both the monomer and homodimer of SHR can bind SCR and form a complex. The final two equations in our model measure the change in these complexes over time.\n\n$$\n\\frac{dSC}{dt}=k_{4}S_{e}C\u2212d_{5}SC\n$$\n\n\n\n$$\n\\frac{dS_{2}C}{dt}=k_{5}S_{2e}C\u2212d_{6}S_{2}C\n$$\n\nIn addition to the wild type model, we constructed a model that simulates SCRi (Model 2). Our pCF analysis revealed that SHR movement in the SCRi line is bidirectional, so now a2 is defined as the experimentally determined diffusion coefficient (D2) divided by the area of an endodermal cell (A2). We determined the average area of endodermal cells by averaging the area of representative cells (n\u00a0=\u00a019) as we did for vascular cells (Supplementary file 3). Since it had been shown that a 60% reduction of SCR is required to produce the mutant layer, we assumed that SCR concentrations are maintained below 60% and that the change in SCR over time is zero (Cui et al., 2007).\n\n$$\n\\frac{dS_{v}}{dt}=k_{1}\u2212a_{1}S_{v}+a_{2}S_{e}\u2212d_{1}S_{v}\n$$\n\n\n\n$$\n\\frac{dS_{e}}{dt}=a_{1}S_{v}\u2212a_{2}S_{e}\u2212d_{2}S_{e}\n$$\n\n\n\n$$\n\\frac{dS_{2e}}{dt}=k_{2}(C)S_{e}^{2}\u2212d_{3}S_{2e}\n$$\n\n\n\n$$\n\\frac{dC}{dt}=0\n$$\n\n\n\n$$\n\\frac{dSC}{dt}=k_{4}S_{e}C\u2212d_{5}SC\n$$\n\n\n\n$$\n\\frac{dS_{2}C}{dt}=k_{5}S_{2e}C\u2212d_{6}S_{2}C\n$$\n\n\n\n$$\na_{1}=\u00a0\\frac{D_{1}}{A_{1}},\u00a0a_{2}=\u00a0\\frac{D_{2}}{A_{2}},\u00a0k_{2}(C)=\u00a0\\frac{L}{1+e^{\u2212k(C\u2212C_{0})}}\n$$\n\n### Sensitivity analysis\n\nThe sensitivity analysis was performed to determine the most influential parameters in our model. Notably, we reasoned that small changes in highly influential parameters could result in large changes in the model outcome. In addition, it has been shown that parameter estimation can become more computationally complex and produce more uncertainty in the parameter values as the number of estimated parameters increases (Smith, 2014). Therefore, we focused on estimating only the most influential parameters. We chose to use Sobol decomposition to measure how sensitive the model is to a particular parameter (Sobol, 2001). Sobol decomposition is a variance-based method, meaning that the sensitivity of the model to a parameter is quantified by calculating the variance in the model outcome. In addition, Sobol decomposition is a global sensitivity method, so we are exploring the entire parameter space in order to determine the most influential parameters (Smith, 2014).\n\nSince the Sobol decomposition allows us to calculate numerous Sobol indices, we chose to use the total effects index to measure sensitivity in our model. Accordingly, the total effects index takes into account how sensitive the model is to a single parameter as well as combinations of more than one parameter. Thus, by using the total-effects index, we take into account any parameter interactions in our model.\n\nTo calculate the Sobol total effects index, we rewrote model 1 in the form $Y=f(X_{1},X_{2},\u2026,X_{15})$ where the Xi represent the 15 parameters. Y is the model outcome, which in this case must be a scalar. The ODE solution is a set of values over time, so the solution must be numerically integrated to obtain a single, constant value (Smith, 2014). Consequently, the total effects index for parameter i, STi, is defined as\n\n$$\nS_{Ti}=\\frac{E_{X_{~i}}(V_{X_{i}}(Y|X_{~i}))}{V(Y)}\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0(1)\n$$\n\nwhere E(\u00a0) denotes the expected value, V(\u00a0) denotes the variance, and X~i is the vector of parameters without the ith parameter value. The numerator represents the expected variance in the model if all factors except Xi are fixed. If this term is very large, then that means that Xi\u00a0contributes greatly to variance in the model: in other words, Xi\u00a0is an influential parameter. We divided by the variance in the model outcome so that the value of the total index is normalized across different outcomes (Saltelli et al, 2010; Sobol, 2001).\n\nWe calculated the index for each parameter using Monte Carlo evaluations and built two matrices A and B, which are 1000 rows by 15 columns. Each row represented a random draw of all 15 parameters from the parameter space (Supplementary file 3). For each parameter i = 1,2,\u2026,15, we constructed a third matrix C that was identical to A except that the ith column of A was replaced with the ith column of B. Model 1 was then evaluated for all 1000 rows. When we evaluated the ODE, we obtained 6 different outcomes: one for each variable we measured. To understand how each parameter affects all of the different variables we calculated the total effects index for each variable separately.\n\nAfter evaluating the model, we numerically integrated the solution to obtain a constant value. The result is a 1000 by 6 matrix, where each row represents a model evaluation and each column represents one of the variables (SHR in the vasculature, SHR monomer, etc). We then used each column to evaluate (1), giving us the total effects index for parameter i with respect to each of the variables. Since the numerator of (1) cannot be computed exactly, we estimated it using one of the most accurate estimators,\n\n$$\nE_{X_{~i}}(V_{X_{i}}(Y|X_{~i}))\u2248\\frac{1}{2N}\\sumj=1N(f(A)_{j}\u2212f(C)_{j})^{2},\n$$\n\nwhere N is the number of Monte Carlo iterations (in our case, N = 1000) (Saltelli et al., 2010). Finally, we repeated the entire process 10 times to obtain technical replicates (Supplementary file 4). We used the Wilcoxon test with the Steel-Dwass test for multiple comparisons at significance level \u03b1 = 0.1 to determine parameters that are significantly more influential.\n\n### Parameter estimation\n\nFor the initial model simulations, we derived most of the model parameters from the previous model of SHR and SCR in the CEI (Supplementary file 3). It has been shown that the mutant layer in the SCRi line occurs when the concentration of SCR drops to 60% of WT levels (Cui et al., 2007). Therefore, for the homodimer formation term k2, we chose C0 to be 60% of the steady-state value of SCR. By choosing this value, the homodimer will not form until the concentration of SCR is above 60%. Additionally, we chose k\u00a0=\u00a00.1 so that homodimer formation occurs rapidly after SCR passes the threshold (Supplementary file 3). We expected that our model would have high levels of SHR monomer and 1:1 complex relative to the levels of SHR homodimer and 2:1 complex as shown by our N&B data. However, using these parameters, we were unable to replicate these results.\n\nWe reasoned that estimating better values for some of the parameters could improve our model simulation. Thus, we used the results from our sensitivity analysis to identify the most influential parameters to estimate. We chose to estimate d2, k3, K2D, and d4 based on their high sensitivity indices (Figure 5 and Figure 5\u2014figure supplement 1). Although k1\u00a0and d1\u00a0are influential parameters, we chose not to estimate them as varying their values only changes the overall level of SHR and not the oligomeric dynamics. We also chose to estimate L, which is the maximum value of k2. Although k2 is not as influential as some of the other parameters, its functional structure comes from the N&B analysis, so its maximum value should be derived from the N&B data.\n\nFor the parameter estimation, we started parameters at their default values (Supplementary file 3) and varied them one at a time until we were able to replicate the N&B data. To replicate the N&B data, we required that the SHR homodimer accounted for 7.5% of the total SHR proteins, while the 2:1 complex accounted for 15.2% of the total SHR-SCR complexes (Figure 3 and Figure 4). We found that increasing d2, decreasing K2D, and decreasing L achieved this relationship. In addition, decreasing K2D resulted in SCR increasing over time (Figure 5D). We did not change the values of k3 and d4. Using N&B to experimentally determine the oligomeric state and protein-protein stoichiometry of SHR and SCR allowed us to estimate better values for some parameters and, further, improve the reliability of the conclusions we derived from the model.\n",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "f1b0523a-c614-4256-b6a6-4923f4865b0d",
+      "submission_id": "68a47225-82ae-4d8b-ba25-27e91964486f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Dominique C Bergmann, Stanford University/HHMI , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.14770.038](https://doi.org/10.7554/eLife.14770.038)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Tracking transcription factor mobility and interaction in Arabidopsis roots with fluorescence correlation spectroscopy\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Detlef Weigel as the Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nTo elucidate molecular mechanisms that control organismal growth and development, the authors have characterized two key transcription factors (SHORTROOT [SHR] and SCARECROW [SCR]) that control root radial patterning. Their earlier studies have revealed that SHR moves from the vasculature into the adjacent cell layer where it activates SCR expression, which is proposed to delimit further SHR movement through hetero-dimerisation. To probe the underlying mechanism, the authors have employed innovative techniques based on Fluorescent Correlation Spectroscopy (FCS) to non-invasively and quantitatively study SHR-SCR mobility and interactions. These tools allowed them to measure the diffusion of the GFP-tagged species, to determine that a binding partner slows this diffusion, to show that the presence of the binding partner in some cells creates a directional net motion of the factor towards the cell with the partner, and to make a measure of the likely stoichiometry of the factor and this partner. These conclusions are made possible by innovations in the measurement of species inside cells, often using aspects of the data that others merely ignore or discard and extends these tools to applications in the intact Arabidopsis root.\n\nEssential revisions:\n\nAll three reviewers found the application of FCS techniques and the N&B analysis potentially useful tools in the arsenal of understanding multicellular development, but all felt that the techniques needed to be presented in a way more accessible to readers with improvements to both the text and figures. In addition, integrating the parameters obtained using these techniques into a mathematical model of SHR-SCR regulation would demonstrate that this is biologically significant work by providing new functional insights, which the reviewers felt was needed for publication in eLife.\n\n1) Both the figures and the text need to be presented in a clearer way. The authors present techniques (that they say are novel) in a fashion more appropriate for techniques that are in everyday use. The reviewers (who are experts in these techniques) found the descriptions difficult to follow, and thus for many readers the paper will be impenetrable. A couple of sentences of introduction at the beginning of each section on what the technique is, or a cartoon in some cases would help tremendously to solve this. The authors also use things that are equivalent in their minds somewhat too interchangeably and without using the terms to help the reader understand. As an example of how the text impresses rather than illuminates, consider these sentences in the introduction: \"To that end, we explored the possibility of combining scanning Fluorescence Correlation Spectroscopy (scanning FCS) techniques. These are different from the more common time correlation FCS techniques as they are based on the probability of finding a molecule at a given distance from a starting point with a time delay (Petrasek and Schwille, 2008, Digman and Gratton, 2011). In particular, we employed spatial temporal probability techniques to measure protein movement, protein-protein interactions, and the stoichiometry of protein complexes.\"\n\nTell us what you have done, clearly. Tell us what it means, clearly. If you do, then people will want to refer to this publication as a foundational assembly/application of tools.\n\n2) Integrating the parameters obtained using these elegant biophysical techniques into a mathematical model of SHR-SCR regulation would help assess their significance and provide much greater mechanistic insight than currently provided in the manuscript. A model such as that described by co-author Cara Winter (http://grantome.com/grant/NIH/F32-GM106690-01) would be appropriate.\n\n3) There are numerous places where figure presentation could be improved. More attention needs to be paid to details of presentation and to keeping consistent nomenclature. Specific examples have been included in the \"minor points\" section, but these should all be addressed carefully.\n\n[Editors' note: further revisions were requested prior to acceptance, as described below.]\n\nThank you for resubmitting your work entitled \"Tracking transcription factor mobility and interaction in Arabidopsis roots with fluorescence correlation spectroscopy\" for further consideration at eLife. Your revised article has been favorably evaluated by the Reviewing editor and Detlef Weigel as the Senior editor.\n\nThe manuscript has been significantly improved and now is much more accessible as a resource. There is a remaining issue in Figure 5 that need to be addressed before acceptance.\n\nThe major message and conclusions of Figure 5, which represent the newly added model, is quite difficult to understand. At the very least, the four graphs should be given titles to make it clear that a-c represent the WT condition over increasing lengths of time and d is the SCR-RNAi line. With as much white space as if present the graphs, the keys could be made more informative (e.g., SHR-mono vs. SHR-HD) and the first sentence of the legend could summarize the conclusion from the models, not just that the graphs represent models.\n",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c8888c6e-8c62-4f86-91ff-7639511a03d6",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C1",
+      "claim": "The diffusion coefficient for free GFP in the Arabidopsis root was 6.33 \u00b1 0.37 \u03bcm\u00b2/s (n = 34 for different cells, including vascular, endodermal, and QC cells).",
+      "claim_type": "EXPLICIT",
+      "source": "In the Arabidopsis root, the resulting DC for free GFP was 6.33 \u00b1 0.37 \u03bcm2/s (n = 34 for different cells, including vascular, endodermal, and QC cells) (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental measurements using RICS analysis on 35S:GFP in Arabidopsis roots, with sample size and standard error provided.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "dd9798cc-5c6f-4d13-8dbb-829bab1d204e",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C2",
+      "claim": "Similar diffusion coefficients for free GFP were obtained using two different confocal microscopes (Zeiss 780 and Zeiss 710).",
+      "claim_type": "EXPLICIT",
+      "source": "We obtained similar diffusion coefficients using two different confocal microscopes (Zeiss 780 and Zeiss 710).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental validation across two different instruments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "59a1274e-6b7f-4c4a-baec-2c768cd0c6bc",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C3",
+      "claim": "SHR moves at a rate of 2.45 \u00b1 0.26 \u03bcm\u00b2/s (n = 40) within a population of vascular and endodermal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our RICS analysis showed that SHR moves at a rate of 2.45 \u00b1 0.26 \u03bcm2/s (n = 40) and 1.73 \u00b1 0.15 \u00b5m2/s (n = 16) within a population of vascular and endodermal cells and vascular and QC cells, respectively (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RICS measurements on SHR:SHR-GFP in shr2 complemented line.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "a4b33ebb-580d-4e31-a962-2c589a0895d4",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C4",
+      "claim": "SHR moves at a rate of 1.73 \u00b1 0.15 \u00b5m\u00b2/s (n = 16) within a population of vascular and QC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our RICS analysis showed that SHR moves at a rate of 2.45 \u00b1 0.26 \u03bcm2/s (n = 40) and 1.73 \u00b1 0.15 \u00b5m2/s (n = 16) within a population of vascular and endodermal cells and vascular and QC cells, respectively (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RICS measurements on SHR:SHR-GFP in shr2 complemented line.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "67c2b591-e689-4329-80ee-2444fb26ba63",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C5",
+      "claim": "In a population of only endodermal cells, SHR moves at a significantly slower rate (1.29 \u00b1 0.14 \u03bcm\u00b2/s n = 19, Wilcoxon with Steel-Dwass, p = 0.0303).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in a population of only endodermal cells, SHR moves at a significantly slower rate (1.29 \u00b1 0.14 \u03bcm2/s n = 19, Wilcoxon with Steel-Dwass, p = 0.0303) (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RICS measurements with statistical analysis showing significant difference.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "a03cb474-2e9d-45f5-af3f-be6f37e59e33",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C6",
+      "claim": "SHR diffusion in populations of only endodermal cells in the SCRi line was similar to that in populations of vascular and endodermal cells (2.40 \u00b1 0.29 \u03bcm\u00b2/s, n = 14, Wilcoxon with Steel-Dwass, p = 0.9337).",
+      "claim_type": "EXPLICIT",
+      "source": "In this line, in which the levels of SCR are reduced, SHR diffusion in populations of only endodermal cells was similar to that in populations of vascular and endodermal cells (2.40 \u00b1 0.29 \u03bcm2/s, n = 14, Wilcoxon with Steel-Dwass, p = 0.9337) (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RICS measurements in SCRi background with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "42183d43-e5df-417c-9242-8b1a73a56fb6",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C7",
+      "claim": "RICS data are in agreement with genetic and molecular data that show SHR movement is restricted by SCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our RICS data are in agreement with genetic and molecular data that show SHR movement is restricted by SCR (Heidstra et al., 2004; Cui et al., 2007; Long et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental RICS data and references to previous genetic and molecular studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "bcd12b90-c85f-4263-93f7-aa9247f3a605",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C8",
+      "claim": "35S:GFP had a Movement Index (MI) of 0.71 \u00b1 0.07 (n = 15).",
+      "claim_type": "EXPLICIT",
+      "source": "As a positive control, we acquired pCF data for 35SGFP, which had a MI = 0.71 \u00b1 0.07 (n = 15).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by pCF measurements on 35S:GFP as a positive control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "af390ef3-f64e-46fa-8748-32913df5dae4",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C9",
+      "claim": "TMO5:3xGFP had a Movement Index (MI) of 0.26 \u00b1 0.05 (n = 19).",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we drove the 3xGFP using a root vasculature promoter (TMO5:3xGFP, Schlereth et al., 2010) which had a MI = 0.26 \u00b1 0.05 (n = 19) (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by pCF measurements on TMO5:3xGFP as a negative control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "9eaf23f2-5af1-45d1-b298-c0ce5c0e099a",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C10",
+      "claim": "SHR moves from the vasculature to the endodermis (MI = 0.58 \u00b1 0.03, n = 20, Wilcoxon with Steel-Dwass, p = 0.6356).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that SHR moves from the vasculature to the endodermis (MI = 0.58 \u00b1 0.03, n = 20, Wilcoxon with Steel-Dwass, p = 0.6356), consistent with previous experimental data (Helariutta et al., 2000; Nakajima et al., 2001) (Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by pCF measurements with statistical analysis and references to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "78491cff-6013-4e3d-8fdc-1deb79f8b331",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C11",
+      "claim": "From the endodermis back to the vasculature, the MI of SHR was significantly lower than the MI of free GFP (MI = 0.36 \u00b1 0.07, n = 20, Wilcoxon with Steel-Dwass, p = 0.0368).",
+      "claim_type": "EXPLICIT",
+      "source": "However, from the endodermis back to the vasculature, the MI of SHR was significantly lower than the MI of free GFP (MI = 0.36 \u00b1 0.07, n = 20, Wilcoxon with Steel-Dwass, p = 0.0368) and not significantly different from the MI of the 3xGFP (Wilcoxon rank-sum test, p = 0.5974), suggesting that SHR is unable to move back to the vasculature (Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by pCF measurements with statistical analysis comparing to controls.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "d7d2a494-e2db-4133-bb25-51daa82428b8",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C12",
+      "claim": "SHR moves bidirectionally between the endodermis and cortex, as the MI is not significantly different from that of free GFP (MI = 0.61 \u00b1 0.06 from endodermis to cortex, MI = 0.53 \u00b1 0.06 from cortex to endodermis, n = 20, Wilcoxon with Steel-Dwass, p = 0.9524 and p = 0.3909 respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found that SHR moves bidirectionally between the endodermis and cortex, as the MI is not significantly different from that of free GFP (MI = 0.61 \u00b1 0.06 from endodermis to cortex, MI = 0.53 \u00b1 0.06 from cortex to endodermis, n = 20, Wilcoxon with Steel-Dwass, p = 0.9524 and p = 0.3909 respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by pCF measurements with statistical analysis in both directions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "30b5abce-149e-408a-8112-ced58bb7d3dc",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C13",
+      "claim": "In the SCRi line, SHR movement from the vasculature to the endodermis had a MI = 0.66 \u00b1 0.07 (n = 14).",
+      "claim_type": "EXPLICIT",
+      "source": "We not only observed SHR movement from the vasculature to the endodermis with a MI = 0.66 \u00b1 0.07 (n = 14) but also from the endodermis back to the vasculature with a MI = 0.78 \u00b1 0.09 (n = 14) (Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by pCF measurements in SCRi background.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "50824624-e0ac-41d7-891a-a4338427a126",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C14",
+      "claim": "In the SCRi line, SHR movement from the endodermis back to the vasculature had a MI = 0.78 \u00b1 0.09 (n = 14).",
+      "claim_type": "EXPLICIT",
+      "source": "We not only observed SHR movement from the vasculature to the endodermis with a MI = 0.66 \u00b1 0.07 (n = 14) but also from the endodermis back to the vasculature with a MI = 0.78 \u00b1 0.09 (n = 14) (Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by pCF measurements in SCRi background.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "3b9accd3-f833-42df-87f6-30476623a04d",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C15",
+      "claim": "The MI for SHR:SHR-GFP in SCRi in both directions is not significantly different from the MI for 35S:GFP (Wilcoxon rank-sum test, p = 0.9553 for endo to vasc, p = 0.9999 for vasc to endo), suggesting that movement is unrestricted in both directions.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the MI for SHR:SHR-GFP in SCRi in both directions is not significantly different from the MI for 35S:GFP (Wilcoxon rank-sum test, p = 0.9553 for endo to vasc, p = 0.9999 for vasc to endo) it suggests that movement is unrestricted in both directions (Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by pCF measurements with statistical analysis and inference about unrestricted movement.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "de967ef2-79ab-4f5c-9f0d-f6d6370f7973",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C16",
+      "claim": "In the SCRi line, SHR is still able to move bidirectionally between the endodermis and cortex (MI = 0.61 \u00b1 0.05 from endodermis to cortex, MI = 0.59 \u00b1 0.07 from cortex to endodermis, n = 17, Wilcoxon with Steel-Dwass, p = 0.9997 and p = 0.5510 respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, we found that SHR is still able to move bidirectionally between the endodermis and cortex (MI = 0.61 \u00b1 0.05 from endodermis to cortex, MI = 0.59 \u00b1 0.07 from cortex to endodermis, n = 17, Wilcoxon with Steel-Dwass, p = 0.9997 and p = 0.5510 respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by pCF measurements in SCRi background with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "9e7cfd32-3071-43b0-99fa-74331f767068",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C17",
+      "claim": "The presence of SCR prevents SHR movement specifically from the endodermis back to the vasculature while it does not affect the movement between the endodermis and cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the presence of SCR prevents SHR movement specifically from the endodermis back to the vasculature while it does not affect the movement between the endodermis and cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from pCF measurements comparing wild type and SCRi lines.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "ddb62ac4-ead4-4c31-9001-109ce6807466",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C18",
+      "claim": "SCR does not move between the endodermis and the cortex, as the MI in either direction is significantly lower than that of 35S:GFP (MI = 0.31 \u00b1 0.08 from endodermis to cortex, MI = 0.31 \u00b1 0.07 from cortex to endodermis, n = 14, Wilcoxon with Steel-Dwass, p = 0.0236 and p = 0.0054 respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that SCR does not move between the endodermis and the cortex, as the MI in either direction is significantly lower than that of 35S:GFP (MI = 0.31 \u00b1 0.08 from endodermis to cortex, MI = 0.31 \u00b1 0.07 from cortex to endodermis, n = 14, Wilcoxon with Steel-Dwass, p = 0.0236 and p = 0.0054 respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by pCF measurements on SCR:SCR-GFP with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "73ae432a-9fef-4be6-ba5d-c0042bbdf3a5",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C19",
+      "claim": "SHR exists primarily as a monomer in the vasculature, with SHR homodimer formation at only 2.6% \u00b1 0.3%.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicated that SHR exists primarily as a monomer in the vasculature, given that SHR homodimer formation was only 2.6% \u00b1 0.3% in these cells (Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by N&B analysis on SHR:SHR-GFP in vascular cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "2ecbf65d-b4f8-480d-a10d-e2bc456a293d",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C20",
+      "claim": "SHR monomeric proteins are observed in both the nuclei and in the cytoplasm of vasculature cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, SHR monomeric proteins are observed in both the nuclei and in the cytoplasm of vasculature cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by N&B analysis observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "a5e01878-42a5-4ca8-a1d1-05389a0a5e11",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C21",
+      "claim": "In the nuclei of the endodermis, there are significantly more SHR homodimers present (7.5% \u00b1 0.9% homodimer, Wilcoxon with Steel-Dwass, p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, in the nuclei of the endodermis, there are significantly more SHR homodimers present (7.5% \u00b1 0.9% homodimer, Wilcoxon with Steel-Dwass, p<0.0001) (Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by N&B analysis with statistical comparison to vascular cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "b5172871-0982-49b8-8bd0-20b22f929215",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C22",
+      "claim": "In the endodermis, SHR is present at very low levels outside of the nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in the endodermis SHR is present at very low levels outside of the nuclei (Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by N&B analysis observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "9b353d9c-9c05-41d3-b4cc-194e44f2c023",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C23",
+      "claim": "In the SCRi line, SHR is mainly found as a monomer in the endodermis (1.9% \u00b1 0.4% homodimer, Wilcoxon with Steel-Dwass, p = 0.2546), indicating that SCR influences the oligomeric composition of SHR.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we performed N&B on SHR:SHR-GFP in the SCRi line and observed that SHR is mainly found as a monomer in the endodermis (1.9% \u00b1 0.4% homodimer, Wilcoxon with Steel-Dwass, p = 0.2546), indicating that SCR influences the oligomeric composition of SHR (Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by N&B analysis in SCRi background with statistical analysis and inference about SCR's influence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "a170380e-3adf-4581-a57e-fd6415145f75",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C24",
+      "claim": "SCR:SCR-mCherry line had mostly monomers with 4.7% \u00b1 0.5% of homodimers.",
+      "claim_type": "EXPLICIT",
+      "source": "In the SCR:SCR-mCherry line, we detected mostly monomers with 4.7% \u00b1 0.5% of homodimers (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by N&B analysis on SCR:SCR-mCherry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "6afb38d8-00f7-4f00-8c91-b8e2995b17e4",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C25",
+      "claim": "The SCR:SCR-GFP line had 5.4% \u00b1 0.7% of homodimers, which is similar to the SCR:SCR-mCherry line.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the SCR:SCR-GFP line had 5.4% \u00b1 0.7% of homodimers, which is similar to the SCR:SCR-mCherry line (Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by N&B analysis on SCR:SCR-GFP with comparison to mCherry-tagged version.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "bcb4b3f3-94f6-40e3-8ddc-16097acd3384",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C26",
+      "claim": "Both the monomer and the homodimer of SHR bind the monomer of SCR, suggesting that SHR and SCR bind with a 1:1 and 2:1 stoichiometry.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that both the monomer and the homodimer of SHR bind the monomer of SCR, suggesting that SHR and SCR bind with a 1:1 and 2:1 stoichiometry (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by cross-N&B analysis on SHR:SHR-GFP/SCR:SCR-mCherry line.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "78ddfb49-3dec-4a4b-8560-7f6f32337ed7",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C27",
+      "claim": "84.8% \u00b1 1.6% of the SHR-SCR complexes have 1:1 stoichiometry while 15.2% \u00b1 1.6% have 2:1 stoichiometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we determined that 84.8% \u00b1 1.6% of the SHR-SCR complexes have 1:1 stoichiometry while 15.2% \u00b1 1.6% have 2:1 stoichiometry (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by cross-N&B analysis quantifying complex stoichiometry.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "b61c53ef-4202-4c8b-98a3-8c7b8bf7311e",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C28",
+      "claim": "The homodimer of SCR does not seem to be part of the SHR-SCR complex.",
+      "claim_type": "EXPLICIT",
+      "source": "We were not able to detect any complexes that contain the homodimer of SCR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by cross-N&B analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "dd03e1d3-a2d1-44ef-914e-9a0cde0ff41d",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C29",
+      "claim": "The rate of movement of SHR from the vasculature to the endodermis (a1) and from the endodermis to the vasculature (a2) are both highly influential parameters in the mathematical model.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this measure, we found that the rate of movement of SHR from the vasculature to the endodermis (a1) and from the endodermis to the vasculature (a2) are both highly influential parameters (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Sobol sensitivity analysis of the mathematical model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "ae109e43-d886-465a-af77-8d87fc3623ab",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C30",
+      "claim": "SHR movement is a key component of the model that greatly influences the dynamics of SHR in the endodermis.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, this suggests that SHR movement is a key component of the model that greatly influences the dynamics of SHR in the endodermis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the sensitivity analysis results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "47fdfa7b-ed46-4533-a538-ebeca036514a",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C31",
+      "claim": "The mathematical model predicts that SHR reaches a steady state in the vasculature and endodermis in a matter of minutes.",
+      "claim_type": "EXPLICIT",
+      "source": "Our mathematical model predicts that SHR reaches a steady state in the vasculature and endodermis in a matter of minutes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on mathematical model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "e6435e1d-40c6-4664-aafc-8ad84da6dad9",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C32",
+      "claim": "The levels of SCR increase greatly in the first 3 hr, which is supported by data that show that SCR expression in a SHR inducible system is significant after 3 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The levels of SCR increase greatly in the first 3 hr, which is supported by data that show that SCR expression in a SHR inducible system is significant after 3 hr (Sozzani et al, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on mathematical model simulations and supported by cited experimental data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "4143a550-4dcb-4d7f-b8ee-7743a541ec83",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C33",
+      "claim": "While the 1:1 SHR-SCR complex increases greatly in the first 3 hr, the 2:1 complex does not form until after 9 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "While the 1:1 SHR-SCR complex increases greatly in the first 3 hr, the 2:1 complex does not form until after 9 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on mathematical model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "d09162d1-9fae-4163-aa99-ee8e6869f822",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C34",
+      "claim": "The SHR homodimer does not form until about 9 hr into the simulation.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because the SHR homodimer does not form until about 9 hr into the simulation (Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on mathematical model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "fb0d6d97-80e6-4405-a17d-b61810b3495d",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C35",
+      "claim": "The entire system reaches a steady-state between 18 and 24 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the entire system reaches a steady-state between 18 and 24 hr (Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on mathematical model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "638799e5-057e-437c-b405-3bbf8e897697",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C36",
+      "claim": "Cell division occurs once SCR and the SHR-SCR complexes reach their steady state values.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that cell division occurs once SCR and the SHR-SCR complexes reach their steady state values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the mathematical model results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "146fbd4c-84d6-4ed7-b253-3fa6a6a9c093",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C37",
+      "claim": "In the SCRi model, at lower levels of SCR, the steady-state value of the 1:1 SHR-SCR complex is reduced by half.",
+      "claim_type": "EXPLICIT",
+      "source": "At these lower levels of SCR, we observe that the steady-state value of the 1:1 SHR-SCR complex is reduced by half (Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on mathematical model simulations of SCRi conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "28fde476-1689-4698-8266-3db5c041468e",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C38",
+      "claim": "In the SCRi model, SHR homodimers do not form as seen in the N&B analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we observe that SHR homodimers do not form as seen in the N&B analysis (Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on mathematical model simulations consistent with experimental N&B data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "34f1d66f-ae0e-45a1-9af2-78587fcad083",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C39",
+      "claim": "Since SHR homodimers do not form in the SCRi model, the 2:1 SHR-SCR complex does not exist.",
+      "claim_type": "EXPLICIT",
+      "source": "Since SHR homodimers do not form, the 2:1 SHR-SCR complex does not exist (Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on mathematical model simulations and logical inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "c1b2d8da-ac0a-4a78-b86c-fd674a2cddc7",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C40",
+      "claim": "The extra layer in the SCRi line could form due to a reduction in the levels of the SHR-SCR complex.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the extra layer in the SCRi line could form due to a reduction in the levels of the SHR-SCR complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative, based on model results suggesting a possible mechanism.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "6268e7e9-eb96-401f-8394-3740d85e6ca5",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C41",
+      "claim": "There are still other unknown factors that could contribute to the formation of the extra layer in the SCRi line.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there are still other unknown factors that could contribute to the formation of the extra layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim acknowledges limitations and unknown factors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "6df1b06d-f4b9-4d82-9ccb-64df9d870a62",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C42",
+      "claim": "Trafficking along the radial axis is normally unidirectional - SHR moves from the vasculature to the endodermis, and not in the opposite direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Trafficking along the radial axis is normally unidirectional - SHR moves from the vasculature to the endodermis, and not in the opposite direction (Figure 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by pCF analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "badf2c31-37f4-435d-8e42-daa93fc6e096",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C43",
+      "claim": "In the absence of SCR, SHR trafficking is bidirectional.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of SCR, SHR trafficking is bidirectional.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by pCF analysis in SCRi background.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "b1233e57-3c4d-4ca9-839c-521607432ac2",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C44",
+      "claim": "The DC of SHR in the endodermis increases significantly in the absence of SCR as compared to wild type, indicating that removal of SCR affects the diffusive behavior of SHR.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the pCF results, our RICS data showed that the DC of SHR in the endodermis increases significantly in the absence of SCR as compared to wild type, indicating that removal of SCR affects the diffusive behavior of SHR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RICS measurements comparing wild type and SCRi, with inference about SCR's effect.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "e38636b9-82b9-4305-abde-e589908b82d9",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C45",
+      "claim": "SCR, which is present only in the endodermis, spatially restricts SHR movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results provide further evidence that SCR, which is present only in the endodermis, spatially restricts SHR movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from combined RICS and pCF results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "aaa60fe5-bc0d-46cd-a15a-1246f6032d02",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C46",
+      "claim": "The DC measurements of SHR in both the shr2 complemented line and SCRi are significantly lower than those of freely-moving 35S:GFP (Wilcoxon rank-sum test, p<0.0001).",
+      "claim_type": "EXPLICIT",
+      "source": "The DC measurements of SHR in both the shr2 complemented line and SCRi are significantly lower than those of freely-moving 35S:GFP (Wilcoxon rank-sum test, p<0.0001) (Figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by RICS measurements with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "7cf82f41-3194-4445-96aa-ba4a1990ef91",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C47",
+      "claim": "The change in DC is not attributable to the molecular weight of SHR.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since the DC of SHR is three-fold smaller than the DC of 35S:GFP, and the DC is inversely proportional to the cube root of the molecular weight of the protein (Young et al., 1980), the change in DC is not attributable to the molecular weight of SHR (~60 kDa).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on theoretical calculations using known relationships between DC and molecular weight, with citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "fe4fe5c4-14c4-42fd-b607-df29fe804f19",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C48",
+      "claim": "If the change in DC were due to molecular weight, the molecular weight of SHR would have to be 27-fold higher than that of GFP, or approximately 729 kDa.",
+      "claim_type": "EXPLICIT",
+      "source": "If it were, then the molecular weight of SHR would have to be 27-fold higher than that of GFP, or approximately 729 kDa (Prendergast and Manni, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on theoretical calculations with citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "387a5612-0939-4662-a2b0-024ccfe118e4",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C49",
+      "claim": "The decrease in the DC of SHR relative to 35S:GFP, in addition to the pCF analysis which shows unidirectional movement, suggests an active regulation of SHR movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, the decrease in the DC of SHR relative to 35S:GFP, in addition to the pCF analysis which shows unidirectional movement, suggests an active regulation of SHR movement, which is in agreement with previous data (Gallagher et al., 2004; Sena et al., 2004; Gallagher and Benfey, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from combined RICS and pCF data, supported by citations to previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "75dfaeb0-2070-4c61-822c-e19d66c6c180",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C50",
+      "claim": "SHR is transcribed in the vasculature.",
+      "claim_type": "EXPLICIT",
+      "source": "SHR is transcribed in the vasculature (Helariutta et al., 2000; Nakajima et al., 2001), and then the protein moves to the adjacent cell layer where it is retained in the nuclei of the Quiescent Center (QC), Cortex/Endodermis Initials (CEI) and endodermis (Nakajima et al., 2001; Gallagher et al., 2004; Gallagher and Benfey, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "0f54a2f1-74df-4bd7-b897-e587637b5eee",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C51",
+      "claim": "SHR protein moves to the adjacent cell layer where it is retained in the nuclei of the Quiescent Center (QC), Cortex/Endodermis Initials (CEI) and endodermis.",
+      "claim_type": "EXPLICIT",
+      "source": "SHR is transcribed in the vasculature (Helariutta et al., 2000; Nakajima et al., 2001), and then the protein moves to the adjacent cell layer where it is retained in the nuclei of the Quiescent Center (QC), Cortex/Endodermis Initials (CEI) and endodermis (Nakajima et al., 2001; Gallagher et al., 2004; Gallagher and Benfey, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "9cc531af-3cb3-48d5-9bd9-79516682056c",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C52",
+      "claim": "SHR activates the expression of the downstream transcription factor SCR.",
+      "claim_type": "EXPLICIT",
+      "source": "In these cells, SHR activates the expression of the downstream transcription factor SCR (Helariutta et al., 2000; Levesque et al., 2006; Cui et al., 2007; Sozzani et al., 2010), which, as shown by yeast two hybrid experiments, interacts with SHR and prevents further SHR movement (Heidstra et al., 2004; Cui et al., 2007; Long et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "667db41f-277c-4927-9e0c-aaeee9e089b4",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C53",
+      "claim": "SCR interacts with SHR and prevents further SHR movement, as shown by yeast two hybrid experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "In these cells, SHR activates the expression of the downstream transcription factor SCR (Helariutta et al., 2000; Levesque et al., 2006; Cui et al., 2007; Sozzani et al., 2010), which, as shown by yeast two hybrid experiments, interacts with SHR and prevents further SHR movement (Heidstra et al., 2004; Cui et al., 2007; Long et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies including yeast two hybrid experiments.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "da67a62e-fcba-4520-9f56-0e919598d85b",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C54",
+      "claim": "The SHR-SCR mediated gene regulatory network (GRN) is a well-characterized developmental pathway that controls ground tissue patterning and endodermal cell fate specification.",
+      "claim_type": "EXPLICIT",
+      "source": "In the Arabidopsis root, the SHORTROOT-SCARECROW (SHR-SCR) mediated gene regulatory network (GRN) is a well-characterized developmental pathway that controls ground tissue patterning and endodermal cell fate specification (Levesque et al., 2006; Cui et al., 2007; Sozzani et al., 2010; Cruz-Ram\u0131rez et al., 2012; Long et al., 2015; Moreno-Risueno et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "e496b053-b810-462c-b798-d7d4fa0736c4",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C55",
+      "claim": "3xGFP was shown to restrict free GFP movement in roots.",
+      "claim_type": "EXPLICIT",
+      "source": "As a negative control we used 3xGFP, which was shown to restrict free GFP movement in roots (Kim et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "baa97a8a-7269-442a-aac4-f7dbbcec979d",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C56",
+      "claim": "A 60% reduction of SCR is required to produce the mutant layer in the SCRi line.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that the mutant layer in the SCRi line occurs when the concentration of SCR drops to 60% of WT levels (Cui et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "8a03b02d-5cca-4cf0-91fb-0428ed7826d4",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C57",
+      "claim": "The SHR:SHR-GFP translational fusion complements the shr2 mutant phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we used a SHR:SHR-GFP translational fusion, which complements the shr2 mutant phenotype (SHR:SHR-GFP in shr2) (Nakajima et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "d67e7e2f-c479-4874-a410-53c292486921",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C58",
+      "claim": "RICS and pCF introduce a spatial component that can determine whether slow movement is due to a binding interaction or slow diffusion, which FRAP and single-point FCS cannot do.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, RICS and pCF introduce a spatial component that can determine whether slow movement is due to a binding interaction or slow diffusion, which FRAP and single-point FCS cannot do.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on knowledge of the capabilities of different techniques.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "64b5d4c1-c4c7-4dca-977d-2533c5a07eae",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C59",
+      "claim": "Scanning FCS methods are robust against cell movement and other artifacts that could bias measurements taken with other single-point methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, these scanning FCS methods are robust against cell movement and other artifacts that could bias measurements taken with other single-point methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on knowledge of the advantages of scanning FCS methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "b1bed14a-7bf4-4ef2-9f6e-2c822ecde1d7",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C60",
+      "claim": "The DC is inversely proportional to the cube root of the molecular weight of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since the DC of SHR is three-fold smaller than the DC of 35S:GFP, and the DC is inversely proportional to the cube root of the molecular weight of the protein (Young et al., 1980), the change in DC is not attributable to the molecular weight of SHR (~60 kDa).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge with citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "571e0a38-28be-4d7a-8c09-d7957fc7f899",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C61",
+      "claim": "Some transcription factors must form higher order complexes in order to function.",
+      "claim_type": "EXPLICIT",
+      "source": "Stoichiometry is an important feature of protein complexes, as some transcription factors must form higher order complexes in order to function (Nakashima et al., 2012; Sornaraj et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "ac5d79aa-7320-4fde-abfc-b76d054b5924",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C62",
+      "claim": "The intercellular movement of transcription factors and the spatio-temporal control of protein complex formation regulate many processes including cell fate specification in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "In plants, the intercellular movement of transcription factors and the spatio-temporal control of protein complex formation regulate many processes including cell fate specification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "cf204d40-be4d-4327-ad65-f723a5e98283",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C63",
+      "claim": "Many of the signaling mechanisms regulating development utilize mobile signals that cross cell boundaries.",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the signaling mechanisms regulating development utilize mobile signals that cross cell boundaries (Koizumi et al., 2011; Xu et al., 2011; Gallagher et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "fd767c37-a28a-402e-a5e1-1def12d75fc1",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "claim_id": "C64",
+      "claim": "During development, multicellular organisms must coordinate patterning, maintenance, and growth of different cell types through complex spatio-temporal signaling mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "During development, multicellular organisms must coordinate patterning, maintenance, and growth of different cell types. This dynamic coordination is achieved through complex spatio-temporal signaling mechanisms (Voas and Rebay, 2004; Scheres, 2007; Han et al., 2014; Sozzani and Iyer-Pascuzzi, 2014; Sablowski, 2015; Tuazon and Mullins, 2015; Fisher and Sozzani, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established scientific knowledge with citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5950181a-2bd2-4df2-a778-b4395c445196",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The diffusion coefficient (DC) for free GFP in Arabidopsis roots was measured as 6.33 \u00b1 0.37 \u03bcm\u00b2/s using RICS analysis. This measurement was validated across two different confocal microscopes (Zeiss 780 and 710), demonstrating reproducibility of the technique.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C2 provide a well-characterized baseline measurement with adequate sample size (n=34) and technical validation across instruments. The standard error is reported and the measurement serves as a critical control for subsequent SHR mobility experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "7a725200-a587-4c66-bdae-38e29b8b5a5e",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "SHR exhibits cell-type-specific diffusion rates, moving at 2.45 \u00b1 0.26 \u03bcm\u00b2/s in vascular/endodermal populations and significantly slower (1.29 \u00b1 0.14 \u03bcm\u00b2/s, p=0.0303) in endodermis-only populations. In SCRi backgrounds where SCR is reduced, SHR diffusion in endodermis increases to 2.40 \u00b1 0.29 \u03bcm\u00b2/s (p=0.9337 vs. vasc/endo), demonstrating that SCR restricts SHR movement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C7 and C46 form a coherent experimental series with appropriate statistical testing (Wilcoxon with Steel-Dwass), adequate sample sizes (n=14-40), and proper controls. The genetic manipulation (SCRi) provides strong evidence for SCR's role in restricting SHR mobility, consistent with prior literature (C7).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "85628f2a-b1bc-4cb8-9e04-bc51d438d194",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SHR movement is unidirectional from vasculature to endodermis under normal conditions. The Movement Index (MI) for SHR from vasculature to endodermis (0.58 \u00b1 0.03) is similar to free GFP (0.71 \u00b1 0.07), but movement from endodermis back to vasculature (MI=0.36 \u00b1 0.07) is significantly restricted (p=0.0368). SHR moves bidirectionally between endodermis and cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C12 and C42 demonstrate directional movement using pCF analysis with appropriate positive (35S:GFP) and negative (TMO5:3xGFP) controls. Statistical comparisons are properly conducted with adequate sample sizes (n=15-20). The binary analysis approach for detecting movement 'arches' is clearly described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "41f5d212-bd42-4a0f-a2a3-d1daca6ed2e0",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In SCRi backgrounds, SHR trafficking becomes bidirectional between vasculature and endodermis (MI=0.66 \u00b1 0.07 vasc\u2192endo; MI=0.78 \u00b1 0.09 endo\u2192vasc), with both directions showing unrestricted movement similar to free GFP. This demonstrates that SCR specifically prevents SHR movement from endodermis back to vasculature while not affecting endodermis-cortex movement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C17 and C43 provide strong genetic evidence for SCR's role in directional restriction. The SCRi manipulation is well-controlled, statistical comparisons are appropriate (p=0.9553 and p=0.9999 vs. GFP), and the specificity of the effect (vasc-endo but not endo-cortex) strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "5228983d-3871-42b1-b751-922838678d80",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SCR does not move between endodermis and cortex, as demonstrated by Movement Index values (0.31 \u00b1 0.08 and 0.31 \u00b1 0.07) significantly lower than free GFP (p=0.0236 and p=0.0054).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C18 provides important negative control data showing SCR is immobile, contrasting with SHR's mobility. Statistical testing is appropriate with adequate sample size (n=14), supporting the conclusion that only SHR moves between these cell types.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "da787718-45c3-49f5-a17f-d8f63e62f62f",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "SHR exists primarily as a monomer in vasculature (2.6% \u00b1 0.3% homodimer) but forms significantly more homodimers in endodermal nuclei (7.5% \u00b1 0.9%, p<0.0001). In SCRi backgrounds, SHR homodimer formation in endodermis is reduced to 1.9% \u00b1 0.4% (p=0.2546 vs. vasculature), indicating SCR influences SHR oligomeric state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 demonstrate cell-type-specific oligomerization using N&B analysis with proper calibration (S-factor, monomer brightness). The genetic manipulation (SCRi) provides strong evidence for SCR's role in promoting SHR homodimerization. Statistical testing is appropriate and sample sizes adequate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "01262b22-474c-4de7-96b7-715e435157e4",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "SCR exists predominantly as monomers with 4.7% \u00b1 0.5% homodimers (mCherry-tagged) and 5.4% \u00b1 0.7% homodimers (GFP-tagged), showing consistency across fluorescent tags.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25 provide important validation that fluorescent tag choice does not substantially affect oligomeric state measurements. The similar homodimer percentages across tags strengthen confidence in the N&B methodology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "e6fdae0e-dc74-4c79-b2cf-bdcfbdeddbfb",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Both SHR monomer and homodimer bind SCR monomer, forming 1:1 and 2:1 SHR:SCR complexes. The 1:1 complex comprises 84.8% \u00b1 1.6% of SHR-SCR complexes while 2:1 comprises 15.2% \u00b1 1.6%. SCR homodimers were not detected in the complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 provide novel stoichiometric information using cross-N&B analysis on dual-labeled lines. The quantification of complex ratios is well-supported by the methodology, though the claim that SCR homodimers are absent from complexes (C28) is based on negative evidence and could benefit from additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "69be9439-7525-401a-aed3-db408b444d38",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Sobol sensitivity analysis of the mathematical model identified SHR movement rates (a1 and a2) as highly influential parameters, indicating that SHR movement is a key component affecting dynamics in the endodermis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 appropriately use global sensitivity analysis (Sobol indices) to identify influential parameters. The methodology is sound with adequate Monte Carlo iterations (n=1000) and technical replicates (n=10). This justifies the focus on experimentally measuring diffusion coefficients.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "058087f7-fe9a-4189-ba33-47026fc9afd9",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mathematical modeling predicts SHR reaches steady state in minutes, SCR increases significantly in the first 3 hours (consistent with inducible system data), the 2:1 complex forms after 9 hours (following SHR homodimer formation), and the entire system reaches steady state between 18-24 hours, suggesting cell division timing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C36 present model predictions that are partially validated by experimental data (C32 cites Sozzani et al. 2010). However, C36's inference about cell division timing is speculative and not directly tested. The temporal predictions are internally consistent with the model structure but would benefit from experimental validation of the predicted dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "ee04ab4b-12a1-4db7-b6cd-654724d93363",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In the SCRi model simulation, the 1:1 SHR-SCR complex is reduced by half, SHR homodimers do not form (consistent with N&B data), and consequently the 2:1 complex does not exist. This suggests the extra layer phenotype could result from reduced SHR-SCR complex levels, though other unknown factors may contribute.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39 show good agreement between model predictions and experimental N&B data (C38). However, C40 is appropriately cautious ('could form') and C41 acknowledges limitations. The model provides a plausible mechanism but does not definitively establish causation for the extra layer phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "9f85e3f6-41b0-4cf1-9a34-4da365cefcf8",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The combination of RICS and pCF data demonstrates that SCR affects SHR diffusive behavior and spatially restricts SHR movement. The decreased DC of SHR relative to free GFP, combined with unidirectional movement, suggests active regulation rather than passive diffusion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45 and C49 synthesize multiple experimental approaches (RICS, pCF) to support the conclusion of active regulation. The inference is strengthened by agreement with prior literature (C49 cites three studies). However, the mechanism of 'active regulation' remains undefined and requires future investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "fb79e3da-3d70-4e9c-81ed-d743577e3b3e",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The three-fold reduction in SHR DC compared to GFP cannot be attributed to molecular weight differences. Based on the inverse cube root relationship between DC and molecular weight, SHR would need to be ~729 kDa (27-fold heavier than GFP) to account for the observed DC change, but SHR is only ~60 kDa.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 and C60 use established biophysical relationships (Young et al. 1980) to rule out molecular weight as the primary factor. The calculation is straightforward and properly cited. This strengthens the argument for active regulation, though the analysis assumes the Stokes-Einstein relationship holds in the cellular environment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "a5a29b1c-d5a7-490e-89ca-f29534cc04d4",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "RICS and pCF provide advantages over FRAP and single-point FCS by introducing spatial components that distinguish binding interactions from slow diffusion, and by being robust against cell movement artifacts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 accurately describe methodological advantages of scanning FCS techniques. These are well-established properties of the methods based on their design principles, though the manuscript does not directly compare results with FRAP or single-point FCS experimentally.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "269f80b8-4be4-4c24-8ab7-4052a5d12dea",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims about the SHR-SCR system establish that SHR is transcribed in vasculature, moves to adjacent layers, activates SCR expression, and that SCR interacts with SHR to prevent further movement. These are supported by multiple prior studies and provide context for the current work.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C57 appropriately cite prior literature to establish the biological context. These are well-supported background claims that justify the experimental approach. C57 specifically validates that the SHR:SHR-GFP fusion used in experiments complements the mutant phenotype, ensuring biological relevance.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    },
+    {
+      "id": "cc7e7098-2225-4050-b275-99ecf95114d8",
+      "content_id": "36a0bab3-5276-43f8-9593-ba07da091afa",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "General biological principles establish that transcription factor oligomerization is functionally important, intercellular movement and protein complex formation regulate developmental processes including cell fate specification, and multicellular development requires coordinated spatio-temporal signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64 present well-established biological principles with appropriate citations. These provide the broader scientific context motivating the study but are not novel findings of this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:05:25.442589Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c8888c6e-8c62-4f86-91ff-7639511a03d6",
+      "result_id": "5950181a-2bd2-4df2-a778-b4395c445196"
+    },
+    {
+      "claim_id": "dd9798cc-5c6f-4d13-8dbb-829bab1d204e",
+      "result_id": "5950181a-2bd2-4df2-a778-b4395c445196"
+    },
+    {
+      "claim_id": "59a1274e-6b7f-4c4a-baec-2c768cd0c6bc",
+      "result_id": "7a725200-a587-4c66-bdae-38e29b8b5a5e"
+    },
+    {
+      "claim_id": "a4b33ebb-580d-4e31-a962-2c589a0895d4",
+      "result_id": "7a725200-a587-4c66-bdae-38e29b8b5a5e"
+    },
+    {
+      "claim_id": "67c2b591-e689-4329-80ee-2444fb26ba63",
+      "result_id": "7a725200-a587-4c66-bdae-38e29b8b5a5e"
+    },
+    {
+      "claim_id": "a03cb474-2e9d-45f5-af3f-be6f37e59e33",
+      "result_id": "7a725200-a587-4c66-bdae-38e29b8b5a5e"
+    },
+    {
+      "claim_id": "42183d43-e5df-417c-9242-8b1a73a56fb6",
+      "result_id": "7a725200-a587-4c66-bdae-38e29b8b5a5e"
+    },
+    {
+      "claim_id": "aaa60fe5-bc0d-46cd-a15a-1246f6032d02",
+      "result_id": "7a725200-a587-4c66-bdae-38e29b8b5a5e"
+    },
+    {
+      "claim_id": "bcd12b90-c85f-4263-93f7-aa9247f3a605",
+      "result_id": "85628f2a-b1bc-4cb8-9e04-bc51d438d194"
+    },
+    {
+      "claim_id": "af390ef3-f64e-46fa-8748-32913df5dae4",
+      "result_id": "85628f2a-b1bc-4cb8-9e04-bc51d438d194"
+    },
+    {
+      "claim_id": "9eaf23f2-5af1-45d1-b298-c0ce5c0e099a",
+      "result_id": "85628f2a-b1bc-4cb8-9e04-bc51d438d194"
+    },
+    {
+      "claim_id": "78491cff-6013-4e3d-8fdc-1deb79f8b331",
+      "result_id": "85628f2a-b1bc-4cb8-9e04-bc51d438d194"
+    },
+    {
+      "claim_id": "d7d2a494-e2db-4133-bb25-51daa82428b8",
+      "result_id": "85628f2a-b1bc-4cb8-9e04-bc51d438d194"
+    },
+    {
+      "claim_id": "6df1b06d-f4b9-4d82-9ccb-64df9d870a62",
+      "result_id": "85628f2a-b1bc-4cb8-9e04-bc51d438d194"
+    },
+    {
+      "claim_id": "30b5abce-149e-408a-8112-ced58bb7d3dc",
+      "result_id": "41f5d212-bd42-4a0f-a2a3-d1daca6ed2e0"
+    },
+    {
+      "claim_id": "50824624-e0ac-41d7-891a-a4338427a126",
+      "result_id": "41f5d212-bd42-4a0f-a2a3-d1daca6ed2e0"
+    },
+    {
+      "claim_id": "3b9accd3-f833-42df-87f6-30476623a04d",
+      "result_id": "41f5d212-bd42-4a0f-a2a3-d1daca6ed2e0"
+    },
+    {
+      "claim_id": "de967ef2-79ab-4f5c-9f0d-f6d6370f7973",
+      "result_id": "41f5d212-bd42-4a0f-a2a3-d1daca6ed2e0"
+    },
+    {
+      "claim_id": "9e7cfd32-3071-43b0-99fa-74331f767068",
+      "result_id": "41f5d212-bd42-4a0f-a2a3-d1daca6ed2e0"
+    },
+    {
+      "claim_id": "badf2c31-37f4-435d-8e42-daa93fc6e096",
+      "result_id": "41f5d212-bd42-4a0f-a2a3-d1daca6ed2e0"
+    },
+    {
+      "claim_id": "ddb62ac4-ead4-4c31-9001-109ce6807466",
+      "result_id": "5228983d-3871-42b1-b751-922838678d80"
+    },
+    {
+      "claim_id": "73ae432a-9fef-4be6-ba5d-c0042bbdf3a5",
+      "result_id": "da787718-45c3-49f5-a17f-d8f63e62f62f"
+    },
+    {
+      "claim_id": "2ecbf65d-b4f8-480d-a10d-e2bc456a293d",
+      "result_id": "da787718-45c3-49f5-a17f-d8f63e62f62f"
+    },
+    {
+      "claim_id": "a5e01878-42a5-4ca8-a1d1-05389a0a5e11",
+      "result_id": "da787718-45c3-49f5-a17f-d8f63e62f62f"
+    },
+    {
+      "claim_id": "b5172871-0982-49b8-8bd0-20b22f929215",
+      "result_id": "da787718-45c3-49f5-a17f-d8f63e62f62f"
+    },
+    {
+      "claim_id": "9b353d9c-9c05-41d3-b4cc-194e44f2c023",
+      "result_id": "da787718-45c3-49f5-a17f-d8f63e62f62f"
+    },
+    {
+      "claim_id": "a170380e-3adf-4581-a57e-fd6415145f75",
+      "result_id": "01262b22-474c-4de7-96b7-715e435157e4"
+    },
+    {
+      "claim_id": "6afb38d8-00f7-4f00-8c91-b8e2995b17e4",
+      "result_id": "01262b22-474c-4de7-96b7-715e435157e4"
+    },
+    {
+      "claim_id": "bcb4b3f3-94f6-40e3-8ddc-16097acd3384",
+      "result_id": "e6fdae0e-dc74-4c79-b2cf-bdcfbdeddbfb"
+    },
+    {
+      "claim_id": "78ddfb49-3dec-4a4b-8560-7f6f32337ed7",
+      "result_id": "e6fdae0e-dc74-4c79-b2cf-bdcfbdeddbfb"
+    },
+    {
+      "claim_id": "b61c53ef-4202-4c8b-98a3-8c7b8bf7311e",
+      "result_id": "e6fdae0e-dc74-4c79-b2cf-bdcfbdeddbfb"
+    },
+    {
+      "claim_id": "dd03e1d3-a2d1-44ef-914e-9a0cde0ff41d",
+      "result_id": "69be9439-7525-401a-aed3-db408b444d38"
+    },
+    {
+      "claim_id": "ae109e43-d886-465a-af77-8d87fc3623ab",
+      "result_id": "69be9439-7525-401a-aed3-db408b444d38"
+    },
+    {
+      "claim_id": "47fdfa7b-ed46-4533-a538-ebeca036514a",
+      "result_id": "058087f7-fe9a-4189-ba33-47026fc9afd9"
+    },
+    {
+      "claim_id": "e6435e1d-40c6-4664-aafc-8ad84da6dad9",
+      "result_id": "058087f7-fe9a-4189-ba33-47026fc9afd9"
+    },
+    {
+      "claim_id": "4143a550-4dcb-4d7f-b8ee-7743a541ec83",
+      "result_id": "058087f7-fe9a-4189-ba33-47026fc9afd9"
+    },
+    {
+      "claim_id": "d09162d1-9fae-4163-aa99-ee8e6869f822",
+      "result_id": "058087f7-fe9a-4189-ba33-47026fc9afd9"
+    },
+    {
+      "claim_id": "fb0d6d97-80e6-4405-a17d-b61810b3495d",
+      "result_id": "058087f7-fe9a-4189-ba33-47026fc9afd9"
+    },
+    {
+      "claim_id": "638799e5-057e-437c-b405-3bbf8e897697",
+      "result_id": "058087f7-fe9a-4189-ba33-47026fc9afd9"
+    },
+    {
+      "claim_id": "146fbd4c-84d6-4ed7-b253-3fa6a6a9c093",
+      "result_id": "ee04ab4b-12a1-4db7-b6cd-654724d93363"
+    },
+    {
+      "claim_id": "28fde476-1689-4698-8266-3db5c041468e",
+      "result_id": "ee04ab4b-12a1-4db7-b6cd-654724d93363"
+    },
+    {
+      "claim_id": "34f1d66f-ae0e-45a1-9af2-78587fcad083",
+      "result_id": "ee04ab4b-12a1-4db7-b6cd-654724d93363"
+    },
+    {
+      "claim_id": "c1b2d8da-ac0a-4a78-b86c-fd674a2cddc7",
+      "result_id": "ee04ab4b-12a1-4db7-b6cd-654724d93363"
+    },
+    {
+      "claim_id": "6268e7e9-eb96-401f-8394-3740d85e6ca5",
+      "result_id": "ee04ab4b-12a1-4db7-b6cd-654724d93363"
+    },
+    {
+      "claim_id": "b1233e57-3c4d-4ca9-839c-521607432ac2",
+      "result_id": "9f85e3f6-41b0-4cf1-9a34-4da365cefcf8"
+    },
+    {
+      "claim_id": "e38636b9-82b9-4305-abde-e589908b82d9",
+      "result_id": "9f85e3f6-41b0-4cf1-9a34-4da365cefcf8"
+    },
+    {
+      "claim_id": "387a5612-0939-4662-a2b0-024ccfe118e4",
+      "result_id": "9f85e3f6-41b0-4cf1-9a34-4da365cefcf8"
+    },
+    {
+      "claim_id": "7cf82f41-3194-4445-96aa-ba4a1990ef91",
+      "result_id": "fb79e3da-3d70-4e9c-81ed-d743577e3b3e"
+    },
+    {
+      "claim_id": "fe4fe5c4-14c4-42fd-b607-df29fe804f19",
+      "result_id": "fb79e3da-3d70-4e9c-81ed-d743577e3b3e"
+    },
+    {
+      "claim_id": "b1bed14a-7bf4-4ef2-9f6e-2c822ecde1d7",
+      "result_id": "fb79e3da-3d70-4e9c-81ed-d743577e3b3e"
+    },
+    {
+      "claim_id": "d67e7e2f-c479-4874-a410-53c292486921",
+      "result_id": "a5a29b1c-d5a7-490e-89ca-f29534cc04d4"
+    },
+    {
+      "claim_id": "64b5d4c1-c4c7-4dca-977d-2533c5a07eae",
+      "result_id": "a5a29b1c-d5a7-490e-89ca-f29534cc04d4"
+    },
+    {
+      "claim_id": "75dfaeb0-2070-4c61-822c-e19d66c6c180",
+      "result_id": "269f80b8-4be4-4c24-8ab7-4052a5d12dea"
+    },
+    {
+      "claim_id": "0f54a2f1-74df-4bd7-b897-e587637b5eee",
+      "result_id": "269f80b8-4be4-4c24-8ab7-4052a5d12dea"
+    },
+    {
+      "claim_id": "9cc531af-3cb3-48d5-9bd9-79516682056c",
+      "result_id": "269f80b8-4be4-4c24-8ab7-4052a5d12dea"
+    },
+    {
+      "claim_id": "667db41f-277c-4927-9e0c-aaeee9e089b4",
+      "result_id": "269f80b8-4be4-4c24-8ab7-4052a5d12dea"
+    },
+    {
+      "claim_id": "da67a62e-fcba-4520-9f56-0e919598d85b",
+      "result_id": "269f80b8-4be4-4c24-8ab7-4052a5d12dea"
+    },
+    {
+      "claim_id": "e496b053-b810-462c-b798-d7d4fa0736c4",
+      "result_id": "269f80b8-4be4-4c24-8ab7-4052a5d12dea"
+    },
+    {
+      "claim_id": "baa97a8a-7269-442a-aac4-f7dbbcec979d",
+      "result_id": "269f80b8-4be4-4c24-8ab7-4052a5d12dea"
+    },
+    {
+      "claim_id": "8a03b02d-5cca-4cf0-91fb-0428ed7826d4",
+      "result_id": "269f80b8-4be4-4c24-8ab7-4052a5d12dea"
+    },
+    {
+      "claim_id": "571e0a38-28be-4d7a-8c09-d7957fc7f899",
+      "result_id": "cc7e7098-2225-4050-b275-99ecf95114d8"
+    },
+    {
+      "claim_id": "ac5d79aa-7320-4fde-abfc-b76d054b5924",
+      "result_id": "cc7e7098-2225-4050-b275-99ecf95114d8"
+    },
+    {
+      "claim_id": "cf204d40-be4d-4327-ad65-f723a5e98283",
+      "result_id": "cc7e7098-2225-4050-b275-99ecf95114d8"
+    },
+    {
+      "claim_id": "fd767c37-a28a-402e-a5e1-1def12d75fc1",
+      "result_id": "cc7e7098-2225-4050-b275-99ecf95114d8"
+    }
+  ],
+  "comparisons": []
+}

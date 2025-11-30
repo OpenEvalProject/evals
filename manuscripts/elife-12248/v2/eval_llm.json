@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C22",
+      "C24",
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C32",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors developed a mathematical model based on persistence, bias, and noise that accurately describes growth cone behavior in gradients and explains why average axon turning angles saturate rapidly at small values. The model was fitted to experimental data with parameters a=0.7, b=0.09 for attractive gradients, b=0.002 for control, and b=-0.08 for repulsive gradients, and successfully reproduced key experimental observations including turning angle distributions, straightness indices, and bearing change statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C22, C24, C68-C76 collectively demonstrate that the mathematical model accurately captures experimental observations. The model parameters were derived from maximum likelihood fitting to experimental data (C68-C70), and simulations reproduced turning angle saturation (C71-C72), distributions (C73), straightness (C74, p=0.2), and bearing change statistics (C75). The mechanistic explanation that persistence prevents complete alignment (C30, C32) is supported by both analytical derivations and simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "The microfluidic device generated stable linear gradients that persisted for at least 20 hours, as visualized using fluorescently labeled dextran.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 are directly supported by experimental measurements shown in Figures 3D-F. The gradient linearity and stability over 20 hours are demonstrated with fluorescence imaging and quantitative line-scan measurements with error bars across multiple chambers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "SCG neurons, which express TrkA receptors, were attracted to NGF gradients and this attraction was converted to repulsion by KT5720. The average turning angle reached steady state quickly and did not increase significantly with time, matching model predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 are supported by experimental data in Figure 4. The choice of SCG neurons is justified by citations showing TrkA expression (C41). The attractive and repulsive responses are demonstrated in Figure 4B with statistical significance (p<0.01), and the rapid saturation of turning angles over time (C45, Figure 4C) matches the model prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C60"
+    ],
+    "result": "The gradient had no effect on axon branching dynamics, branch lifetimes, or directional bias of branches, and step sizes were statistically indistinguishable across control, attractive, and repulsive gradient conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 and C60 are supported by statistical tests (Kolmogorov-Smirnov and Kruskal-Wallis) with non-significant p-values (0.2-0.9) across multiple branching metrics shown in Figures 5 and 11D. This justifies modeling only turning angles (C23) rather than growth rate modulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "Fluid flow in the microfluidic device did not bias bearing changes or turning angles, confirming that observed turning was due to the gradient rather than mechanical effects of flow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by control experiments comparing bearing changes across four quadrants with different orientations to flow (Figure 6). Statistical tests (Kruskal-Wallis, p=0.4-0.7) showed no significant differences, validating that the gradient effect is chemical rather than mechanical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Growth cone trajectories exhibited characteristic statistical properties: axons remained straight (mean straightness S=0.72) despite random growth cone wandering, bearing changes followed a von Mises distribution favoring forward movement, step sizes followed gamma distributions with idiosyncratic means per growth cone, mean square displacement was super-linear, and successive steps were anti-correlated, helping maintain straight paths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C67 are supported by comprehensive statistical analysis of experimental trajectories shown in Figures 7 and 11. The straightness observation (C53-C56) is quantified and visualized. The bearing change distribution (C58-C59) and step size distributions (C61-C63) are fitted to appropriate statistical models. The anti-correlation (C65) is demonstrated in Figure 11H and explained mechanistically (C66). These observations are inconsistent with simple random walk models (C64), justifying the more complex model structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C86"
+    ],
+    "result": "Simulations with multiple anchor points showed that increasing anchor point frequency increases average turning fidelity but also increases variability. The growth cone angle still follows a power law with a steeper slope (faster alignment) when more anchor points are present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C78-C84, C86 are supported by simulation results in Figure 14. The bias-variance tradeoff is demonstrated quantitatively (Figure 14G-H), showing that more anchor points increase both mean turning and variance. The power law behavior with modified exponents (C82-C83) is shown in Figure 14I. Whether anchor points are placed probabilistically or regularly makes little difference (C80), supporting the robustness of the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Model simulations showed that without noise, trajectories were very straight (straightness >0.98), but adding noise reduced average turning angles further by creating random wandering. Increasing the bias/persistence ratio (b/a) increased turning angles but did not prevent rapid saturation, and increasing noise reduced straightness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 are supported by simulation results in Figures 1-2. The noiseless case produces very straight trajectories (C31), and noise reduces directional influence (C33-C36, Figure 2A-B). The parameter sensitivity analysis (C37, Figure 2C) and noise effects on straightness (C38, Figure 2D) are demonstrated quantitatively.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Attractive and repulsive gradients employed similar mechanisms and could not reduce trajectory variability, as evidenced by similar model parameters except for the sign of the bias term.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is supported by the model fitting results showing that parameters a, c, d remained similar across attractive (b=0.09) and repulsive (b=-0.08) conditions, with only the bias term changing sign. This indicates a common underlying mechanism with opposite directional bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C87",
+      "C109",
+      "C113"
+    ],
+    "result": "The model predicts that turning rate drops rapidly within 20-40 minutes, that different substrates with different anchor point densities would produce different trajectories, and that additional guidance cues beyond gradients may be necessary for reliable in vivo targeting. The model provides a predictive framework to test whether in vivo trajectories can be explained by gradient guidance alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85, C87, C109, C113 represent predictions and implications of the model. C85 is directly supported by model simulations and experimental validation (Figure 4C). C87 is a testable prediction based on the anchor point analysis (Figure 14). C109 and C113 are logical inferences from the model showing limited turning with few anchor points, suggesting additional mechanisms may be required in vivo. These are appropriately framed as predictions and implications rather than established facts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript establishes the biological context and identifies gaps in prior work: correct wiring is crucial for nervous system function, molecular gradients guide growth cones, but in vitro trajectories are highly stochastic with weak turning responses (10-25\u00b0), axons grow straight due to mechanical tension, and previous models have not been closely compared with detailed experimental trajectory statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 establish background knowledge and identify the research gap. These are supported by appropriate citations to prior literature (C6, C8, C11-C16, C19) and accurately characterize the state of the field (C9, C21). The observations about weak turning responses (C11-C13) and straight growth (C14) are well-documented in cited literature and motivate the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The discussion contextualizes anchor points biologically as potentially corresponding to focal adhesions, discusses how substrate properties (stiffness, ECM components) affect tension and anchor point density, and suggests future experimental approaches to test the model including staining for integrins, applying orthogonal forces, measuring stress fields, and using 3D culture models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C112 are primarily discussion points mixing established knowledge (C88-C91, C94, C106-C108 with citations), speculation about biological implementation (C95, C103), observations from the current study (C102), and suggestions for future work (C97-C98, C100, C111-C112). While the cited prior work is appropriately referenced, the speculative elements (C95, C103, C110) and future directions (C97-C98, C100) are not directly tested. The observation that anchor points appeared rare on laminin (C102) lacks quantification.",
+    "result_type": "MINOR"
+  }
+]

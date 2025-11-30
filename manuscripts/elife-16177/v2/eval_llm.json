@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C17",
+      "C23",
+      "C24"
+    ],
+    "result": "Mia40 consists of two functional elements: an N-terminal redox-active CPC motif and a C-terminal hydrophobic substrate-binding pocket. The substrate-binding pocket is essential for binding Mia40 substrates and Erv1, and substrates contain internal MISS/ITS sequences that dock onto this region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C21, C17, C23, and C24 describe established structural and functional features of Mia40 that are well-supported by prior literature (multiple citations provided). These are background claims setting up the study's context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The Mia40-SPS mutant (CPC\u2192SPS) contains a properly oxidized substrate-binding domain, while the Mia40-FE mutant lacks structural disulfides due to negative charges preventing proper folding. The Mia40-STOP variant shows partial oxidation of the CPC motif even without the substrate-binding domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 are directly supported by redox state analysis shown in Figure 1E-F using alkylation shift assays. The biochemical characterization of the mutants is clearly demonstrated and provides the foundation for subsequent functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C70"
+    ],
+    "result": "Neither Mia40-SPS nor Mia40-FE can rescue loss of endogenous Mia40, and the mutants cannot cross-complement each other even when co-expressed. Both the redox-active cysteine pair and substrate-binding region are essential and must be present in the same protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 and C70 are supported by multiple complementation assays shown in Figure 2 (plasmid shuffling, GAL-Mia40 repression, temperature-sensitive rescue). The inability to cross-complement is a key negative result that establishes both domains are required in cis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C34",
+      "C35",
+      "C77",
+      "C78"
+    ],
+    "result": "The oxidase-deficient Mia40-SPS mutant is inviable but can be partially rescued by the chemical oxidant diamide. In the presence of diamide, the hydrophobic binding pocket of Mia40 is sufficient for viability, though cells remain sick, indicating oxidation is still essential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C34, C35, C77, and C78 are supported by growth assays in Figure 3A-B showing ring-like growth around diamide and liquid culture growth curves. The partial rescue is clearly demonstrated, though the authors appropriately note the cells remain compromised.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Mia40-SPS efficiently promotes import of the cysteine-less protein 10CS, while Mia40-FE does not. Diamide does not affect import into either mutant, suggesting it acts on substrates after translocation rather than on Mia40 functionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by in vitro import assays in Figure 3C-D. The lack of diamide effect on import efficiency (C37) combined with its rescue of viability provides strong evidence that diamide acts post-translationally on substrates (C38).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C40",
+      "C41",
+      "C42",
+      "C49",
+      "C71",
+      "C73"
+    ],
+    "result": "The substrate-binding domain of Mia40 is both necessary and sufficient to promote protein import. Mia40-SPS efficiently drives import of Tim9, Atp23, and other substrates, while Mia40-STOP does not. The redox-active cysteines are dispensable for the import reaction, indicating that hydrophobic binding rather than oxidation provides the driving force for translocation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C40-C42, C49, C71, and C73 represent the central finding of the manuscript, supported by extensive in vitro import data in Figure 4. The demonstration that Mia40-SPS supports import while Mia40-STOP does not provides strong evidence for the 'holding trap' vs 'folding trap' mechanism. This directly challenges the prevailing model (C20).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C55",
+      "C82"
+    ],
+    "result": "Overexpression of Erv1 in the Mia40-SPS background reduces rather than increases import of Atp23 and Cmc1, likely due to competitive binding of Erv1 and substrates to Mia40's substrate-binding pocket. Up- or down-regulation of Erv1 has no positive effect on steady-state IMS protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44, C55, and C82 are supported by import assays (Figure 4H-I) and Western blots (Figure 6F). The competitive binding interpretation (C44) is reasonable given prior structural data cited (Banci et al., 2011), though direct competition is not definitively proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Tim9 and Cmc1 co-immunoprecipitate with Mia40-SPS during import but are not covalently bound via disulfides, indicating tight non-covalent association with the substrate-binding pocket. Substrates do not co-isolate with Mia40-STOP or with Erv1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by co-immunoprecipitation experiments in Figure 5 and supplements. The non-covalent binding (C45) is demonstrated by reducing vs non-reducing conditions. The lack of Erv1 co-IP (C48) is appropriately qualified as potentially due to transient/weak interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Expression of Mia40-SPS in Mia40-depleted cells partially restores levels of Mia40 substrates. Tim10 is properly oxidized in the Mia40-SPS mutant, suggesting the CPC motif accelerates but is not absolutely essential for substrate oxidation. The substrate-binding pocket is critical for substrate accumulation in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are supported by Western blots (Figure 6A, D-E) and redox state analysis (Figure 6B-C). The finding that Tim10 is oxidized in Mia40-SPS (C51) is important evidence that oxidation can occur without the CPC motif, though the mechanism is not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C52"
+    ],
+    "result": "Cox19-HA is rapidly oxidized in wild-type cells (<2 min) but much more slowly in mia40-4 mutants (4-8 min). Expression of Mia40-SPS does not accelerate oxidation, confirming that the CPC motif accelerates but is not essential for oxidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 and C52 are supported by pulse-chase experiments in Figure 6G-H. The kinetic data clearly show delayed oxidation in mia40-4 and lack of rescue by Mia40-SPS, supporting the conclusion that the CPC motif has a kinetic role in oxidation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C59",
+      "C60",
+      "C74",
+      "C75"
+    ],
+    "result": "Mia40 predominantly serves as a trans-site receptor that binds incoming proteins via hydrophobic interactions, mediating translocation by a 'holding trap' rather than 'folding trap' mechanism. The primary function is driving translocation across the outer membrane, while oxidoreductase activity plays a role after translocation, presumably for folding and protease resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C59-C60, C74-C75 represent the main mechanistic conclusion of the study. This is well-supported by the collective evidence that Mia40-SPS drives import (C40-C42), binds substrates non-covalently (C45-C46), and allows substrate accumulation (C50) and oxidation (C51) in vivo, though with reduced efficiency. The model is a significant reinterpretation of the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C79",
+      "C80"
+    ],
+    "result": "Overexpression of Mia40 leads to much higher cellular levels of Mia40 substrates (Atp23, Tim10, Cmc1) and even cytochrome b2. Endogenous Mia40 levels are rate-limiting, suggesting only a fraction of synthesized substrates accumulate as stable proteins in vivo, with degradation occurring in cytosol or IMS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64, C79-C80 are supported by Western blots in Figure 7A-B. The rate-limiting interpretation (C62) is reasonable given the dramatic increase upon overexpression. The degradation hypothesis (C80) is supported by cited pulse-labeling studies, though not directly tested here.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Upregulation of Mia40 considerably improves import of Cmc1, Atp23, and Tim9 but reduces import of cytochrome b2. Depletion of Mia40 impairs cytochrome b2 processing, likely due to effects on the Mia40 substrate Som1, a component of the processing protease complex. Mia40's rate-limiting function affects IMS protein composition broadly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 are supported by import assays (Figure 7C-D). The cytochrome b2 effects (C66-C68) are appropriately interpreted as indirect, mediated through Som1. The broad impact on IMS composition (C69) is a reasonable conclusion from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The increase in Mia40 substrates upon overexpression suggests more Mia40 creates more import sites. It is proposed that mitochondria contain specific import sites for different preproteins, with matrix proteins using TOM-Tim50 complexes and IMS proteins using TOM-Mia40 complexes, potentially tethered by Mic60.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C87 are largely speculative (C84-C85 explicitly marked as speculation). While C83 is a reasonable interpretation of the overexpression data, the specific import site model (C84-C85) goes beyond the data presented. The Mic60 connection (C86) is supported by citations but not tested here. The discrete translocation route (C87) is cited but not demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The thioredoxin-based oxidation system of the bacterial endosymbiont ancestor was replaced by Mia40 during evolution. Mia40 is a poor catalyst compared to DsbA and PDI but binds substrates much more strongly and for longer times. This superior trapping ability at the TOM trans-site likely made Mia40 evolutionarily advantageous for mediating translocation and oxidation of IMS proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C93 present an evolutionary interpretation. The comparative biochemistry (C91-C92) is supported by citations, but the evolutionary replacement (C90) and selective advantage (C93) are speculative inferences. While plausible given the study's findings, these claims lack direct evolutionary evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C18",
+      "C19",
+      "C20",
+      "C22",
+      "C32",
+      "C33",
+      "C72",
+      "C76",
+      "C88",
+      "C89"
+    ],
+    "result": "Background claims about mitochondrial protein import, the disulfide relay system, IMS protein characteristics, and the folding trap model from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C20, C22, C32-C33, C72, C76, C88-C89 are background knowledge claims supported by extensive citations. These establish the context for the study and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  }
+]

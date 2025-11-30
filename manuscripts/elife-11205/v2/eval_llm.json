@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C50"
+    ],
+    "result": "The authors successfully reconstituted autophagy-regulated IL-1\u03b2 secretion in non-macrophage cells (HEK293T and MEFs). Co-expression of pro-IL-1\u03b2 and pro-caspase-1 generated ~5% mature IL-1\u03b2 secretion, which was enhanced ~3-fold by starvation and blocked by autophagy inhibitors (3-MA, wortmannin) or depletion of autophagy factors (ATG5, ATG2A/B, ATG4B, FIP200). The system also requires GRASP proteins and MVB formation components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C35-C47, and C50 provide comprehensive evidence from multiple complementary approaches (pharmacological inhibition, genetic knockout, RNAi depletion) consistently demonstrating autophagy-dependence. The reconstitution system shows appropriate controls (caspase-1 requirement, minimal cell lysis) and quantitative measurements. The convergence of evidence from different autophagy pathway components strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Mature IL-1\u03b2 associates with autophagosomes as demonstrated by co-fractionation with LC3-II through differential centrifugation, sucrose gradient separation, and OptiPrep gradient analysis. Immunoisolation of LC3-positive autophagosomes confirmed co-sedimentation with IL-1\u03b2, particularly the mature form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C51-C56 present systematic biochemical fractionation data showing consistent co-distribution of IL-1\u03b2 with the autophagosome marker LC3-II across multiple separation methods. The immunoisolation experiment (C54) provides direct confirmation. The convergence of multiple fractionation approaches strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "IL-1\u03b2 enters the phagophore membrane before autophagosome completion, as depletion of ATG2 (required for autophagosome maturation) did not prevent co-fractionation of IL-1\u03b2 with LC3-II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 use ATG2 depletion as a specific tool to block autophagosome completion while preserving earlier phagophore structures. The continued co-fractionation of IL-1\u03b2 with LC3-II under these conditions logically supports entry at an early stage. However, the inference relies on the assumption that ATG2 depletion completely blocks maturation without affecting earlier steps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Mature IL-1\u03b2 is translocated into a vesicle intermediate rather than engulfed by the maturing phagophore. Proteinase K protection assays showed that mature IL-1\u03b2 was protected from digestion in ATG2-depleted, ATG5 KO, and FIP200 knockdown cells, where autophagosome closure is blocked but cytoplasmic cargoes (p62, LC3-II) remain accessible. The precursor form remained protease-sensitive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C59-C71 present compelling proteinase K protection data across multiple autophagy-deficient conditions (ATG2, ATG5, FIP200). The differential protection of mature vs. precursor IL-1\u03b2 and the contrast with known engulfed cargoes (p62) strongly support translocation over engulfment. The logic is sound: if IL-1\u03b2 were engulfed, it should be accessible when autophagosome closure is blocked. The use of multiple independent genetic perturbations strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Entry of IL-1\u03b2 into the vesicle carrier requires protein unfolding or conformational flexibility. Fusion of IL-1\u03b2 to DHFR and stabilization with aminopterin reduced secretion in a dose-dependent manner, decreased membrane localization, and rendered membrane-associated IL-1\u03b2 proteinase K-sensitive.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C72-C78 employ the DHFR-folding trap approach, a well-established method for testing translocation mechanisms. The dose-dependent inhibition by aminopterin, the shift from membrane to cytosol, and the loss of protease protection provide convergent evidence. The control showing no effect on untagged IL-1\u03b2 (C74) confirms specificity. This is strong evidence for an unfolding requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Two KFERQ-like motifs (Q132K133 and Q198L199) in mature IL-1\u03b2 are required for membrane translocation. Mutations in these motifs blocked secretion, reduced membrane association, and prevented protease protection, while the 130-131AA mutant had no effect. Both wild-type and mutant precursor forms remained protease-accessible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C79-C85 present systematic mutagenesis data with appropriate controls (130-131AA mutant showing no effect). The convergence of secretion defects, reduced membrane association, and loss of protease protection for the same mutants provides strong support. The differential effect on mature vs. precursor forms is internally consistent. Quantitative protection data (~45% WT vs. <10% mutants) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "HSP90, but not HSC70 or HSP70, is required for IL-1\u03b2 translocation. HSP90 knockdown or inhibition (geldanamycin) reduced secretion and rendered IL-1\u03b2 protease-accessible. HSP90 associated with mature IL-1\u03b2 but not translocation-deficient mutants (Q132K133, Q198L199). The mechanism is distinct from chaperone-mediated autophagy (CMA), as LAMP2A knockdown did not affect IL-1\u03b2 secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C98 provide comprehensive evidence through multiple approaches: RNAi knockdown, pharmacological inhibition, co-immunoprecipitation, and comparison with CMA. The specificity for HSP90 over HSC70/HSP70, the correlation between HSP90 binding and translocation competence (mutant analysis), and the distinction from CMA (LAMP2A independence) are well-supported. The control showing HSC70 knockdown affects CMA but not IL-1\u03b2 secretion is particularly valuable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C75"
+    ],
+    "result": "Starvation enhances the association between HSP90 and IL-1\u03b2 (~2.5-fold increase) and promotes membrane localization of mature IL-1\u03b2 (~2-fold increase). This effect is not due to increased caspase-1 processing, as starvation did not affect cleavage of HSP90-binding-deficient mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 and C75 show quantitative increases in HSP90-IL-1\u03b2 association and membrane localization upon starvation. The control experiment with binding-deficient mutants (C100) effectively rules out indirect effects through increased processing. However, the mechanistic link between increased HSP90 binding and enhanced secretion remains correlative rather than causally demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C32",
+      "C33",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "IL-1\u03b2 localizes to the intermembrane space of the autophagosome. 3D STORM imaging showed IL-1\u03b2 colocalizing with LC3 in ring-shaped structures (~700 nm diameter, ~18 per cell). Selective permeabilization experiments demonstrated that IL-1\u03b2 in WT cells required both digitonin and saponin for antibody access, while in ATG5 KO cells (open phagophores), saponin alone was sufficient, with ~50% colocalization with DFCP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C32-C33, and C102-C113 combine super-resolution imaging with selective permeabilization assays to determine IL-1\u03b2 topology. The STORM data provides high-resolution spatial information, while the differential antibody accessibility in WT vs. ATG5 KO cells provides strong topological evidence. The convergence of imaging and biochemical approaches, along with appropriate controls (DFCP1 accessibility), strongly supports intermembrane localization. The occasional observation of IL-1\u03b2 in the center (C107-C108) suggests heterogeneity but doesn't undermine the main conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C48",
+      "C49"
+    ],
+    "result": "Completion of IL-1\u03b2 secretion requires GRASPs (GRASP55/65) and MVB formation components (Hrs, TSG101). Knockdown of these factors reduced IL-1\u03b2 secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C48-C49 demonstrate requirements for downstream secretion steps through RNAi depletion. The data are consistent with prior literature (C50 cites Dupont et al., 2011; Qu et al., 2007). However, the manuscript provides limited mechanistic insight into how these factors function in IL-1\u03b2 secretion, and the experiments are relatively straightforward knockdowns without detailed characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "The reconstituted IL-1\u03b2 secretion system functions similarly in U2OS cells, showing starvation-enhanced and PI3K-dependent secretion of both pro-IL-1\u03b2/pro-caspase-1 co-expression and mature IL-1\u03b2-FLAG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 demonstrate that the reconstituted system is not cell-type specific. This validation in a second cell line strengthens the generalizability of the findings. However, this is primarily a confirmatory result supporting the main reconstitution system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The intermembrane localization of IL-1\u03b2 explains its secretion as a soluble protein through either direct autophagosome-plasma membrane fusion or via the MVB pathway. Mature IL-1\u03b2 secreted by macrophages or the surrogate system is completely soluble, inconsistent with engulfment. The secretion compartment must be protease-depleted given IL-1\u03b2's protease sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C34 and C119-C123 present logical inferences about secretion mechanisms based on the intermembrane localization. While the reasoning is sound, the actual secretion route (direct fusion vs. MVB pathway) is not experimentally determined. The observation of soluble IL-1\u03b2 (C119) supports the model but is based on unpublished data. The requirement for protease depletion (C122-C123) is a logical inference but lacks direct experimental support. These are reasonable hypotheses requiring further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background and context claims establishing the field of unconventional protein secretion, IL-1\u03b2 biology, and autophagy mechanisms, including the gap in understanding how IL-1\u03b2 enters autophagosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C10-C31 provide literature context and are appropriately supported by citations to established work. These claims accurately represent the state of the field and identify the key unanswered question (C24, C31) that motivates the study. These are standard background claims that frame the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Autophagy has a dual effect on IL-1\u03b2 secretion in macrophages: directly promoting secretion by incorporating IL-1\u03b2 into autophagosomes, and indirectly dampening secretion by degrading inflammasome components and reducing triggers for inflammasome assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 summarize prior literature on the complex role of autophagy in IL-1\u03b2 secretion in macrophages. These are appropriately cited and provide context for why the authors used a reconstituted system to focus on the direct secretion mechanism. This is background information rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The IL-1\u03b2 translocation mechanism differs from both FGF2 (which translocates as a folded protein without chaperones) and CMA (which uses HSC70 and LAMP2A). IL-1\u03b2 uses HSP90 and distributes separately from the lysosomal marker LAMP2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C127 appropriately contextualize the IL-1\u03b2 mechanism by comparison with other known translocation pathways. The distinction from CMA is experimentally supported (C126 shows separation from LAMP2, C96 shows LAMP2A independence). The comparison with FGF2 (C124) is cited literature. These comparisons help position the findings within the broader field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Speculative discussion of unknown mechanistic components: a potential membrane receptor for HSP90-IL-1\u03b2 recruitment (possibly a LAMP2A functional equivalent), a possible protein conducting channel (unlikely to be SEC61), and the unclear route for autophagosome delivery to the cell surface (possibly involving MVB or specialized lysosomes, requiring Rabs and SNAREs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C133 are explicitly speculative (marked as SPECULATION in evidence_type) and represent reasonable hypotheses for future investigation. The authors appropriately acknowledge these as open questions. These are discussion points rather than supported findings and should not be evaluated as results. They identify important gaps for future research.",
+    "result_type": "MINOR"
+  }
+]

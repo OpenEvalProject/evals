@@ -1,0 +1,338 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C86"
+    ],
+    "result": "The mlCNBD-FRET biosensor exhibits nanomolar sensitivity for cAMP with a KD of 66 \u00b1 15 nM (n=5), which is significantly improved compared to existing Epac-based FRET sensors that have KD values in the 1-15 \u00b5M range. The sensor also binds cGMP with lower affinity (KD = 504 \u00b1 137 nM, n=6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C3, and C86 are well-supported by direct experimental measurements using dose-response relationships (C2, C3) and comparison with literature values for other sensors (C86). The nanomolar KD values are consistently measured across different experimental systems, demonstrating the sensor's improved sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "The mlCNBD-FRET sensor responds to cAMP changes on a 100 millisecond time scale, with an overall on rate of 2.5 \u00b1 0.6 \u00d7 10^7 M^-1 s^-1 and off rate of 9.3 \u00b1 6.7 s^-1 (n=3), as determined by stopped-flow kinetic measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, and C7 are supported by stopped-flow kinetic measurements and numerical fitting to a one-step binding model. The off rate is identified as rate-limiting, yielding the ~100 ms time constant. However, the large standard deviation in the off rate (9.3 \u00b1 6.7 s^-1) suggests considerable variability in measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C53",
+      "C54"
+    ],
+    "result": "In HEK293 cells, the basal free cAMP concentration is 35 \u00b1 1 nM (n=3) by intensity-based measurements and 48.7 \u00b1 11.0 nM (n=3) by lifetime-based measurements. The KD for cAMP in HEK293 cells is 73 \u00b1 20 nM (n=11) by intensity-based FRET and 99.0 \u00b1 10.1 nM (n=3) by fluorescence lifetime spectroscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C53, and C54 are supported by calibration experiments using both intensity-based and lifetime-based approaches. The basal cAMP concentrations and KD values are reasonably consistent between the two methods, though the lifetime-based measurements show somewhat higher values. The consistency validates the sensor's performance in cellular environments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The mlCNBD domain consists of an eight-stranded beta roll (\u03b21-8) flanked by three alpha helices (\u03b1A-C) with a conserved phosphate-binding cassette (PBC). Upon cAMP binding, mlCNBD undergoes a conformational change that causes the two fluorophores in mlCNBD-FRET to move further apart, decreasing FRET. The purified protein elutes as a single peak at 67 kDa in size-exclusion chromatography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are supported by structural knowledge from cited literature (C31-C33), experimental size-exclusion chromatography data (C34), and fluorescence spectroscopy measurements (C35-C36). The structural basis and functional mechanism of the sensor are well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "The R307Q mutation in the phosphate-binding cassette abolishes cAMP binding to mlCNBD, and the mlCNBD-FRET-R307Q mutant does not respond to cAMP concentrations up to 1.5 \u00b5M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C38 are supported by experimental data showing no FRET response in the R307Q mutant and by citations to prior studies demonstrating this mutation abolishes cAMP binding. This control validates the specificity of the sensor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The citrine emission at 529 nm is pH-sensitive, increasing at higher pH and saturating at pH \u2265 7.5, while cerulean emission at 475 nm is largely pH-insensitive. The KD for cAMP binding is only modestly affected by pH changes (pH 6: 101 \u00b1 5 nM; pH 7: 98 \u00b1 21 nM; pH 7.5: 66 \u00b1 15 nM; pH 8: 50 \u00b1 13 nM; n=3), suggesting cAMP affinity might increase upon alkalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by pH titration experiments. The pH sensitivity of citrine is a known property of YFP variants. The modest pH dependence of KD is documented, though the interpretation that affinity increases with alkalization (C42) is tentative given the error bars and limited pH range tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Fluorescence lifetime measurements show cerulean alone has \u03c4wm = 2.52 \u00b1 0.09 ns (n=12), which decreases to \u03c4wm = 2.38 \u00b1 0.04 ns (n=11) in mlCNBD-FRET due to FRET. Saturating cAMP (5 \u00b5M) increases the lifetime to \u03c4wm = 2.44 \u00b1 0.03 ns (n=5), demonstrating the sensor is suitable for both intensity- and lifetime-based approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by fluorescence lifetime spectroscopy data. The lifetime changes upon FRET and cAMP binding are consistent with the expected mechanism. The demonstration of both intensity- and lifetime-based functionality is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "In HEK293 cells, mlCNBD-FRET is mainly cytosolic with some nuclear localization. The sensor responds to various stimuli: NKH477/IBMX increases FRET ratio by 43 \u00b1 4% (n=31), isoproterenol (20 \u00b5M) by 47 \u00b1 3% (n=9), and SNP (3 mM) by 25 \u00b1 5% (n=36). The EC50 for NKH477 is 3.6 \u00b1 0.6 \u00b5M (n=4). The sensor registers both increases and decreases in intracellular cAMP concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by immunocytochemistry and fluorescence microscopy data. The sensor responds appropriately to multiple stimuli that modulate cAMP/cGMP levels. The reversibility demonstrated by permeabilization experiments (C52) validates bidirectional sensing capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C10"
+    ],
+    "result": "Transgenic mice expressing mlCNBD-FRET under the protamine 1 promoter were generated. The protein is exclusively expressed in sperm and mainly targeted to the flagellum. Prm1-mlCNBD-FRET males are fertile, demonstrating the sensor does not impair sperm function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C57, and C10 are supported by PCR genotyping, Western blot, immunohistochemistry, and breeding experiments. The successful generation of fertile transgenic mice expressing the sensor specifically in sperm flagella is a key technical achievement enabling in vivo studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "The KD for cAMP binding in mouse sperm is 103 \u00b1 31 nM (n=7), determined from calibration experiments in permeabilized sperm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 is supported by dose-response experiments in digitonin-permeabilized sperm. The KD value is consistent with measurements in purified protein and HEK293 cells, validating the sensor's performance in sperm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Total cAMP levels do not properly reflect free cAMP concentrations in live sperm cells. Total cAMP levels transiently increase after bicarbonate stimulation and decline to basal levels within 10 minutes, while free cAMP levels remain elevated during bicarbonate stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 are supported by comparing immunoassay measurements of total cAMP with mlCNBD-FRET measurements of free cAMP during bicarbonate stimulation. This reveals a critical discrepancy between total and free cAMP dynamics, resolving a longstanding puzzle in sperm biology regarding sustained PKA activity during capacitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "NKH477 does not increase cAMP levels in the sperm flagellum (0 \u00b1 3%, n=3), ruling out the presence of transmembrane adenylate cyclases (tmACs) in the flagellum. SACY is the sole cAMP source in the sperm flagellum, as demonstrated by response to bicarbonate but not NKH477.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 are supported by spatially-resolved FRET measurements in freely beating sperm flagella. The lack of response to NKH477 (which activates tmACs) combined with robust response to bicarbonate (which activates SACY) provides strong evidence that SACY is the sole cAMP source in the flagellum. This resolves a debate in the field about the presence and function of tmACs in sperm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Bicarbonate increases cAMP levels in both the midpiece (26 \u00b1 3%) and principal piece (22 \u00b1 10%) of the sperm flagellum (n=7). The kinetics of cAMP increase is faster in the principal piece than in the midpiece, indicating that cAMP dynamics in these two compartments are distinctively different.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 are supported by spatially-resolved FRET imaging and kinetic analysis using logistic regression. The differential kinetics between midpiece and principal piece reveal compartmentalized cAMP signaling within the flagellum, likely due to differential PDE distribution and activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C21",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Bicarbonate-dependent SACY activity requires Ca2+. Bicarbonate does not change cAMP concentration at 10 \u00b5M Ca2+, whereas readjusting Ca2+ to 2 mM rapidly elevates cAMP levels. The regulation of SACY by Ca2+ is fully and rapidly reversible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C23-C25 are supported by mlCNBD-FRET measurements at defined Ca2+ concentrations. The Ca2+ requirement for bicarbonate-stimulated SACY activity is clearly demonstrated, and the rapid reversibility upon Ca2+ switching confirms dynamic Ca2+-dependent regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C22",
+      "C26",
+      "C27",
+      "C95"
+    ],
+    "result": "Basal SACY activity is suppressed by Ca2+. Stepping Ca2+ from 2 mM to 20 \u00b5M moderately increases basal cAMP levels. Ca2+ alone, in the absence of bicarbonate, inhibits rather than activates SACY. This suggests SACY activity is controlled by a Ca2+-dependent negative feedback that operates in intact sperm but is absent in isolated or heterologously expressed protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C26, C27, and C95 are supported by measurements showing increased basal cAMP upon Ca2+ reduction. This reveals a novel Ca2+-dependent inhibition of basal SACY activity that differs from the Ca2+-dependent activation observed with bicarbonate stimulation and in vitro. The biphasic Ca2+ regulation is a significant finding, though the molecular mechanism remains to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "mlCNBD-FRET can be targeted to primary cilia by fusion to SSTR3. SSTR3-mlCNBD-FRET undergoes FRET in primary cilia (43 \u00b1 21% increase in cerulean emission upon acceptor photobleaching, n=11) and allows measuring cAMP dynamics in response to isoproterenol stimulation (~25% FRET ratio increase, n=9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by immunocytochemistry showing ciliary localization, acceptor photobleaching demonstrating FRET, and functional measurements showing cAMP responses. The successful targeting to primary cilia extends the sensor's applicability to another important ciliary system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The mlCNBD-FRET sensor has unique characteristics: it can be used with purified protein in solution (unlike other cAMP biosensors), its properties in solution and inside cells are similar, it can be selectively targeted to subcellular compartments like primary cilia or sperm flagella, and it is compatible with both fluorescence intensity and lifetime-based approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 are supported by the comprehensive characterization of the sensor in multiple systems (purified protein, HEK293 cells, sperm, primary cilia) using multiple techniques (intensity-based FRET, FLIM, FLS). The consistency of KD values across systems validates the claim that properties are similar in solution and cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The flagellum is either sealed up and cAMP in the head does not propagate to the flagellum, or NKH477-sensitive tmACs are absent altogether. A physical barrier restricting cAMP diffusion between midpiece and head is unlikely because Ca2+ propagates between these compartments. PDEs might serve as gatekeepers preventing rapid cAMP exchange between head and flagellum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C93 are speculative interpretations (C91, C93) or inferences based on Ca2+ behavior (C92). While the lack of NKH477 response in the flagellum is clear, distinguishing between compartmentalization by physical barriers versus enzymatic barriers (PDEs) requires additional experiments. The analogy to Ca2+ diffusion (C92) is reasonable but not definitive proof.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "Total cAMP levels might not properly reflect free cAMP concentrations due to compartmentalization of cAMP signaling in sperm or due to buffering by cAMP-binding proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is a reasonable hypothesis supported by the observed discrepancy between total and free cAMP measurements (C12-C14) and by analogy to other systems (photoreceptors, sea urchin sperm) where similar phenomena occur. However, the specific mechanism (compartmentalization vs. buffering) remains to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "PKA-dependent phosphorylation indirectly or directly down-regulates SACY activity, as inferred from studies showing higher basal and bicarbonate-stimulated cAMP levels in sperm lacking the catalytic PKA subunit C\u03b12.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 is supported by citations to prior studies on PKA knockout sperm. This represents a negative feedback mechanism for SACY regulation, though the current manuscript does not provide direct experimental evidence for this mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C98"
+    ],
+    "result": "Background knowledge claims about cAMP signaling, sperm biology, primary cilia, and existing cAMP sensors, all supported by appropriate citations to the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C84 and C98 represent established knowledge from the literature, appropriately cited. These provide context for the current work but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "cAMP signaling in primary cilia might be functionally distinct from the cell body, hypothesized by analogy to the demonstrated functional distinction of Ca2+ signaling in cilia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C85 is explicitly stated as a hypothesis. While the analogy to Ca2+ compartmentalization is reasonable, this remains speculative without direct experimental evidence. The development of the SSTR3-mlCNBD-FRET tool (C28-C30) provides a means to test this hypothesis in future work.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "A transatlantic flight produces approximately 1.3 metric tons of CO2 per passenger, which is comparable to a year of car commuting (1.5 metric tons). This is based on an emission rate of ~1 kg CO2 per passenger per 10 km for economy class air travel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The emission rate (C2) is presented as factual knowledge without citation, and the calculation methodology is not detailed. The comparison depends on assumptions about commuting frequency (daily, presumably ~250 work days) that are not explicitly stated. The car emission estimate (C4) also lacks source documentation. While the arithmetic appears internally consistent, the underlying data sources and assumptions require verification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Per capita CO2 emissions vary substantially by country (US: 17, Japan: 9.3, China: 6.7, France: 5.2, India: 1.7 metric tons/year), but individual controllable emissions are substantially smaller than these national averages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The national emission data (C6-C10) are properly cited to World Bank 2016, providing verifiable support. The inference (C11) that individual controllable emissions are smaller than total per capita footprints is logically sound, as national figures include industrial, governmental, and infrastructure emissions beyond individual control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Per capita carbon footprints in developing countries are expected to rise substantially over the next 50 years due to increasing standards of living, necessitating immediate emission reductions in developed countries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C12-C13 are presented as predictions without supporting citations or quantitative projections. While the general trend is consistent with development economics, the lack of specific data or modeling makes this speculative. The normative conclusion (C14) follows logically only if the prediction is accurate, but no evidence is provided for the underlying forecast.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "A typical life sciences laboratory of 7-10 people generates more than 20 metric tons of CO2 annually, primarily from equipment like -80\u00b0C freezers (4 metric tons/year each), with most energy use being essential and difficult to reduce.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The freezer energy consumption (C16) and US emission conversion factor (C18) are presented as data, with C18 cited. However, the overall laboratory estimate (C19) is acknowledged as an estimate without detailed methodology. The claim that equipment energy use is essential (C15) lacks supporting analysis of potential efficiency improvements or alternative technologies. No data on measurement methods, sample size, or variability across laboratories is provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C1"
+    ],
+    "result": "Long-distance air travel is identified as the largest easily reducible source of work-related CO2 emissions for scientists, making it the best target for emission reductions by the scientific community.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "This conclusion (C1, C21) relies on the unsubstantiated claim (C20) that laboratory emissions cannot be significantly reduced. No systematic analysis of alternative reduction strategies is presented. The comparison ignores other potential sources (commuting, building operations, computing infrastructure) and does not quantify 'ease' of reduction. The claim that air travel is 'best' requires comparative analysis of cost-effectiveness, feasibility, and impact across all emission sources, which is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The 2014 Society for Neuroscience meeting generated approximately 22,000 metric tons of CO2 from 30,000 attendees traveling an average of 7,500 km round-trip, equivalent to the annual emissions of 1,000 medium-sized laboratories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the attendee count (C22) appears factual, the mean travel distance (C23) is based on an undescribed analysis methodology. No information is provided about data sources, sampling methods, or how cities of origin were determined. The calculation (C24) assumes all attendees flew, ignoring local participants who may have driven or used public transit. The comparison to laboratories (C25) depends on the uncertain laboratory emission estimate from C19.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors propose that large scientific societies shift to biennial meetings supplemented by smaller regional meetings, which would roughly halve emissions from major conferences, with implementation requiring 5-10 years. This proposal has been formally submitted to the Society for Neuroscience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "The claim that biennial meetings would 'roughly halve' emissions (C28) is overly simplistic and ignores several factors: (1) smaller regional meetings (C27) would generate their own emissions, which are not quantified; (2) scientists might attend multiple regional meetings instead of one large meeting; (3) no analysis of whether scientific productivity or collaboration would be maintained. The procedural claims (C29-C30) about the SFN proposal are factual statements, but the 5-10 year timeline (C31) is presented without supporting analysis of booking constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors propose examining seminars, grant reviews, and other activities to reduce travel through video-conferencing and strategic trip planning, while acknowledging concerns about scientific isolation for researchers in remote locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are proposals (C32, C33, C35) rather than demonstrated results. No evidence is provided that video-conferencing achieves 'the same or nearly the same end' (C33) as in-person meetings for activities like grant reviews. The concern about isolation (C34) is acknowledged but the proposed solutions (C35) are not evaluated for effectiveness. No data on current practices, potential adoption rates, or actual emission reductions are provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "While face-to-face meetings are important, the cost-benefit balance has shifted due to severe climate change impacts, and modern communication technology can offset reductions in physical meetings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The claim about climate change disruption (C38) reflects scientific consensus but is presented without specific citations. The assertion that technology can 'offset' reduced face-to-face interaction (C40) is speculative and not supported by evidence about effectiveness for scientific collaboration, networking, or career development. No studies are cited comparing outcomes of virtual versus in-person scientific interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "A remote lecture delivered via video-link from Johns Hopkins to Hyderabad, India provided an experience remarkably similar to live presentation while saving time and avoiding 2.6 metric tons of CO2 emissions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a single anecdotal case (C41-C42) with subjective assessment (C43). The claim that the experience was 'remarkably similar' is not supported by objective measures or audience feedback. The time savings (C44) and emission calculation (C45) are plausible but the generalizability of this single positive experience to all scientific communication is not established. No discussion of technical requirements, costs, or accessibility barriers is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Global adoption of reduced scientific travel could save hundreds of thousands of metric tons of CO2 annually, and scientists have a responsibility to lead by example given their education and the severity of climate change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "The quantitative claim (C46) is speculative extrapolation without supporting calculation or data on total scientific travel. The assertion about public influence (C47) is unsupported by evidence from behavioral science or public opinion research. The rhetorical argument about scientific leadership (C48-C49) is normative rather than empirical. The comparison to future climate impacts (C50) lacks specific quantitative analysis of the relative scale of proposed changes versus predicted climate disruption.",
+    "result_type": "MAJOR"
+  }
+]

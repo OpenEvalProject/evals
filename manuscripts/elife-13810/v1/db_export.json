@@ -1,0 +1,1483 @@
+{
+  "submission": {
+    "id": "873dce35-f929-43f4-83d6-4991aa34e1ab",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:34:59.354469Z",
+    "updated_at": "2025-11-30T00:34:59.354469Z"
+  },
+  "content": [
+    {
+      "id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "submission_id": "873dce35-f929-43f4-83d6-4991aa34e1ab",
+      "content_type": "manuscript",
+      "content_text": "# Multiplexed coding by cerebellar Purkinje neurons\n\n## Authors\n\n- Sungho Hong<sup>1</sup> ([ORCID: 0000-0002-6905-7932](https://orcid.org/0000-0002-6905-7932)) \u2020\n- Mario Negrello<sup>1</sup>\n- Marc Junker<sup>3</sup>\n- Aleksandra Smilgin<sup>3</sup>\n- Peter Thier<sup>3</sup>\n- Erik De Schutter<sup>1</sup>\n\n### Affiliations\n\n1. Computational Neuroscience Unit Okinawa Institute of Science and Technology Okinawa Japan\n2. Department of Neuroscience Erasmus Medical Center Rotterdam The Netherlands\n3. Department of Cognitive Neurology Hertie Institute for Clinical Brain Research, University of T\u00fcbingen T\u00fcbingen Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nPurkinje cells (PC), the sole output neurons of the cerebellar cortex, encode sensorimotor information, but how they do it remains a matter of debate. Here we show that PCs use a multiplexed spike code. Synchrony/spike time and firing rate encode different information in behaving monkeys during saccadic eye motion tasks. Using the local field potential (LFP) as a probe of local network activity, we found that infrequent pause spikes, which initiated or terminated intermittent pauses in simple spike trains, provide a temporally reliable signal for eye motion onset, with strong phase-coupling to the \u03b2/\u03b3 band LFP. Concurrently, regularly firing, non-pause spikes were weakly correlated with the LFP, but were crucial to linear encoding of eye movement kinematics by firing rate. Therefore, PC spike trains can simultaneously convey information necessary to achieve precision in both timing and continuous control of motion.\n\n## Introduction\n\nMovements are often executed with high precision in timing and trajectory control. The cerebellum is heavily involved in online motor control and should process sensorimotor information with great accuracy. In particular, PCs, which deliver the final output from the cerebellar cortex, should use an appropriate coding strategy for this task, but the nature of their coding mechanism is actively debated (De Zeeuw et al., 2011; Heck et al., 2013). In one view, transmission of timing-sensitive information is performed by precisely timed PC spikes and their synchronized firing (Ebner and Bloedel, 1981; Gauck and Jaeger, 2000; Shin and De Schutter, 2006; de Solages et al., 2008; De Zeeuw et al., 2011; Person and Raman, 2012). In the other, PCs use linear firing-rate coding with weak PC-to-PC correlations to robustly control continuous movement kinematics, where high signal-to-noise ratio is achieved by averaging the rates of many PCs (Shidara et al., 1993; Thier et al., 2000; Roitman et al., 2005; Medina and Lisberger, 2007; Catz et al., 2008; Herzfeld et al., 2015).\n\nIn this study, we re-examined this controversy using a new approach to analyze PC spike trains. We classified PC spikes into specific spike categories, and correlated spike categories with the LFP, using the LFP as a proxy signal for local network activity. In particular, we focused on the role of long, infrequent interspike intervals (ISI), called pauses, which abruptly interrupt the rapid and very regular firing of PCs (Schonewille et al., 2006; Shin and De Schutter, 2006; Shin et al., 2007; Yartsev et al., 2009). Pauses in the PC spike train are a well-known phenomenon in many contexts, such as saccades (Ohtsuka and Noda, 1995; Arnstein et al., 2015; Herzfeld et al., 2015), and classical conditioning (Rasmussen et al., 2008), etc. Spikes that initiate and terminate pauses often synchronize sharply across nearby PCs (Shin and De Schutter, 2006). This suggests that pauses can be simultaneously involved in spike coding by individual PCs and with collective encoding in a local network.\n\nOur approach was to examine the relationships among PC spikes, cerebellar LFPs, and eye motion, with a focus on how those relationships change, depending on the spike category. Using this, we demonstrate that PC spikes simultaneously contribute to precision, both in timing and control of motion by adaptive use of synchrony/spike time and rate coding scheme.\n\n## Results\n\n### Cerebellar LFP and single PC firing correlate to saccadic eye movements\n\nFrom three rhesus (Macaca mulatta) monkeys (E, H, and N), we simultaneously recorded spikes of single PCs, the slow component of the LFP below low-\u03b3 frequency (42\u2009Hz), and eye positions during spontaneous and visually guided saccades (Figure 1A). Only recordings where both simple and complex spikes could be isolated were used. In this study, we focused exclusively on simple spikes, since complex spikes comprised a very small percentage of total spikes (1.71 \u00b1 0.13% with a rate of 0.81 \u00b1 0.07\u2009Hz, mean \u00b1 SEM) and their overall effect on firing statistics was not significant (Figure 1\u2014figure supplement 1H, see also below).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/13810/elife-13810-fig1-v1.jpg)\n\n**Figure 1.:** (A)\u00a0Left: Schematics of eye motion tasks. Right: Simultaneously recorded eye speed, PC spike train, and LFP. Both the recorded (black) and filtered LFP below the low-\u03b3 frequency (red) are shown, but only the latter was analyzed. (B)\u00a0CCFLFP-EV and CCFSpike-EV computed with EV (Top) and eye speed in the direction with the angle \u03b8 (Bottom). Shaded regions represent the 99% confidence interval. Data are normalized as described in the Materials and methods and plotted as mean \u00b1 SEM.\u00a0(C)\u00a0\u03b8-dependent variability of CCFLFP-EV (x-axis) versus CCFSpike-EV (y-axis). CCFSpike-EV varied significantly more (p<0.05, t-test) than CCFLFP-EV in 74% (n\u00a0=\u00a025; magenta), and less in 15% (n\u00a0=\u00a05; cyan) of all recordings. No difference was found in the rest (n\u00a0=\u00a04; black). Error bars are omitted for clarity. The gray line represents equal variability. The red circle denotes data in A and B.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13810/elife-13810-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A)\u00a0Onset-triggered average LFP with different saccade angle \u03b8 and, (B)\u00a0L. Each data point at \u03b8 or L represents the average over [\u03b8 \u2212\u00a045\u00ba, \u03b8\u00a0+\u00a045\u00ba] or [L \u2212\u00a04 ms, L\u00a0+\u00a04 ms]. The LFP was normalized by its standard deviation. In (A) the curve in the center represents the normalized peak-to-peak amplitude of the average LFP. In (B) white lines mark the saccade beginning and end, respectively. (C)\u00a0The average LFP for the different saccade lengths (top), and for all the saccades (bottom). (D, E, F)\u00a0The same plots as (A\u2013C) for the firing rate. In (D) red and blue lines represent normalized maximal and minimal firing rates, respectively. The rate was computed with a Gaussian smoothing kernel of \u03c3\u00a0=\u00a010 ms. Note that waveforms in (A) and (D) are similar to CCFs in Figure 1B. (G)\u00a0Firing rate of complex spikes, computed with \u03c3\u00a0=\u00a025 ms, varying with \u03b8 (left) and L (right). The boxed insert shows spike waveforms. (H)\u00a0Histograms of ISIs after simple (cyan), complex (black), and all spikes (red). Note that the simple and all-spike cases are nearly identical while the complex spike case is shifted, reflecting pauses after complex spikes. Cumulative distributions (inset) show that the all-spike case has a small number of short ISIs < 5 ms, caused by complex spikes that immediately follow simple spikes. Data are mean \u00b1 SEM. The data are the same as in Figure 1A,B.\n\nWe first estimated the sensitivity of neural signals to eye motion by computing their cross-correlation functions to eye velocity (EV), CCFLFP-EV and CCFSpike-EV for the LFP and simple spikes, respectively (Figure 1B). Two sharp differences between the LFP and spikes were noticed: First, CCFLFP-EV was significant in recordings from 49 cells (p<0.01, t-test, n\u00a0=\u00a033, 15, 1 from E, H, and N, respectively), but significant CCFSpike-EV was found only in a subset of 34 cells (p<0.01, t-test, n\u00a0=\u00a021, 12, 1 from E, H, and N, respectively). These 34 cells were used in the rest of the analysis. Second, when computed to account for the eye speed component for specific directions, the CCF varied less significantly with the angles of eye movements for the LFP than for spikes, in most cases (Figure 1B,C). We also computed the average LFP and firing rates for saccades with different directions and durations, and found that they shared the same properties, having similar waveforms as the CCFs (Figure 1\u2014figure supplement 1A\u2013F).\n\nWe identified eye saccade-related neurons based on CCFLFP-EV and CCFSpike-EV; this is essentially identical to the classical method used to localize eye motion-sensitive cells (Ohtsuka and Noda, 1992). Differences in how LFP and PC spikes relate to eye movements were similar to previously reported differences between multiple PCs versus single units, where the averaged activity of multiple PCs is more robust, but much less direction-dependent (Ohtsuka and Noda, 1995; Thier et al., 2000). This supports the view that the LFP represents the average activity of many neurons with diverse angle-dependencies in the local network (Buzs\u00e1ki et al., 2012) rather than reflecting the activity of a single PC or a cluster of PCs with similar directional tuning. For this reason, the LFP and spikes apparently do not encode identical information about eye motion.\n\n### PCs fire regularly most of the time, but occasionally pause\n\nAll recorded PCs fired rapidly (55 \u00b1 18\u2009Hz, mean \u00b1 SD) with high regularity. To quantify this regularity, we computed the ISI asymmetry index (AI) and coefficient of variation (CV2) (Shin et al., 2007) for each data set, and compared them with those of control spike trains. In controls, spikes were randomly generated with the same instantaneous firing rates and refractory period (4 ms) as in the reference PC spike train. All of our spike trains contained a significantly higher number of regularly firing spikes (AI\u00a0\u2248\u00a00, or equivalently CV2\u00a0\u2248\u00a00) than the control (p<0.01, one-sided z-test; Figure 2A). ISI distributions had long tails that followed a power law, PISI(x) ~ x-\u03b1 (\u03b1 = 3.78 \u00b1 0.64; tail onset = 30.4 \u00b1 13.4 ms; p<0.05, n\u00a0=\u00a032) (Figure 2B). Furthermore, the size of the ISI after each spike quickly diverged as the AI of the spike increased (Figure 2C), implying that deviation from regular firing tends to be associated with long ISIs.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/13810/elife-13810-fig2-v1.jpg)\n\n**Figure 2.:** (A)\u00a0Left: The ISI asymmetry index (AI) measures local variability at each spike and is related to the local coefficient of variation (CV2). Right: Distribution of AI for PC spikes (black) and rate-matching control spike train (green, mean \u00b1 SD). Significantly more PC spikes occurred around AI\u00a0\u2248\u00a00. (B) The ISI histogram with a fitted power-law tail (red). Inset: the same histogram and tail in linear scales. (C)\u00a0ISI after each spike vs. AI. The black line represents mean \u00b1 SD in each bin (center\u00a0=\u00a0[-0.8, -0.6, \u2026, 0.8], width\u00a0=\u00a00.2). (D) Top: Three types of spiking pattern classified by their AI and associated ISI length. Bottom: Examples of pause and regular spikes in an actual PC spike train. Data are the same as in Figure 1A,B.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13810/elife-13810-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A)\u00a0ISI after each spike vs. AI for all spikes. Orange dots are complex spikes. Light blue dots are pause-initiating spikes selected based on the AI value and ISI size (see next section and Materials and methods for details). Lines represent correlation coefficients R. Here the fraction of selected pauses caused by complex spikes is 1.75%. (B)\u00a0ISIs after spikes vs. ISIs before spikes. Red, cyan, and black dots are pause-initiating, -terminating, and regular spikes, respectively. The rest of the spikes are gray dots. Contours represent log10\u00a0(density). Note that the density becomes stretched along x- and y-axes and develops two tails as the ISI becomes larger. Data are the same as in Figure 2.\n\nOur observations are consistent with previous studies describing the PC spike train as typically composed of prolonged periods of fast and highly regular firing, occasionally interrupted by longer ISIs, called pauses (Schonewille et al., 2006; Shin and De Schutter, 2006; Shin et al., 2007; Yartsev et al., 2009) (Figure 2D). Some previous studies discussed extremely long (>200 ms) pauses and related them to membrane bistability of the PC (Loewenstein et al., 2005; Schonewille et al., 2006). However, the majority of longer ISIs, or pauses, were much shorter (<100\u00a0ms), even when they were associated with a moderately large AI (Figure 2C). Note that these were therefore comparable or larger in duration to pauses triggered by complex spikes (Latham and Paul, 1970) (see also Figure 1\u2014figure supplement 1H) and also those following simple spike bursts induced by optogenetic excitation (Lee et al., 2015).\n\nAlthough complex spikes triggered pauses, their contribution to pauses in our study remained limited. Complex spikes had a larger average AI than simple spikes (complex: 0.36 \u00b1 0.12, simple: 5.9\u00a0\u00d7\u00a010-4 \u00b1 7.7\u00a0\u00d7\u00a010-4), but their standard deviations were comparable (complex: 0.36 \u00b1 0.05, simple: 0.31 \u00b1 0.04). This implies that AI values were widely distributed in both simple and complex spikes. However, durations of complex-spike pauses did not increase as rapidly with AI as those of simple-spike pauses. In all cells, correlations between AI and log10\u00a0(ISI) were significantly smaller for complex spikes than simple spikes (complex: 0.24 \u00b1 0.15, simple: 0.66 \u00b1 0.03; p<2.84\u00a0\u00d7\u00a010-12, Wilcoxon rank-sum test), which made complex-spikes pauses poorly predicted by AI (Figure 2\u2014figure supplement 1A). Therefore, if we select ~10% of all ISIs as representative 'pauses', based on ISI size and the AI value of a preceding spike (see below), only 4.3 \u00b1 2.5% of all pauses would be caused by complex spikes. For this reason, we did not include complex spikes and their associated pauses in our analysis beyond this point.\n\n### Pause spikes couple strongly to the LFP and specifically to the \u03b2/\u03b3 band\n\nOur first question was whether the relationship between spikes of individual PCs and the activity of the local network vary with specific spike categories, i.e., regular-firing or pause-related. To examine this, we first selected three subsets of simple spikes from each cell, representing regular, pause-initiating, and pause-terminating spikes, based on a criterion combining AI and ISI duration (see Materials and methods) that selected ~10% of all spikes in each category (Figure 2\u2014figure supplement 1B). Then, we computed the spike-triggered average LFP (STALFP) (Gray and Singer, 1989; Soteropoulos and Baker, 2006) for each.\n\nWe found that the STALFP of spikes that initiated or terminated pauses was sharply different from those of regular spikes: the pause-related STALFP was characterized by strong and sharp peaks around the spike time, whereas the regular spike-related STALFP showed only a weak modulation (Figure 3A left, B). For comparison, if computed with randomly selected, or all simple spikes, the STALFP showed a level of peak correlation similar to that of regular spikes (Figure 3A right, B). This suggests that pause spikes are more strongly and more precisely coupled to network activity than regular spikes, but this fact goes unnoticed if the temporal structure of the spike train is ignored when computing the STALFP (Figure 3A right), because pauses are relatively rare events. The larger amplitude of the STALFP for pause-related spikes was readily observed when we varied the criterion for pause spike selection (Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/13810/elife-13810-fig3-v1.jpg)\n\n**Figure 3.:** (A) Left: STALFP of the pause-initiating (red), -terminating (cyan), and regular spikes (black). The grey region is the 99% confidence interval. h is the peak-to-peak amplitude and shown for pause-terminating spikes. Right: STALFP of randomly selected spikes (black) and all spikes (green). Data are mean \u00b1 SEM. (B) Relative STA amplitude, h, to that of all spikes (hAll) for each spike category. (C)\u00a0Phase distribution of the \u03b2/\u03b3 LFP at the pause, regular, and randomly selected spikes (thick: histogram, thin: kernel-estimated density). \u03c6 denotes location of the peak, shown for the pause-initiating spike. (D)\u00a0Pair phase consistency (PPC) for each spike category.\u00a0(E)\u00a0Peak phases for the pause-initiating (x-axis) and pause-terminating spikes (y-axis) in all data. Grey and red lines represent \u03c6PauseT = \u03c6PauseI and \u03c6PauseT = \u03c6PauseI + 278.3\u00ba, respectively. In (C) and (E), **p<10\u20135\u00a0(Wilcoxon rank-sum test). Data in (A), (D), and (E) are the same as in Figure 1A,B.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13810/elife-13810-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** We used a similar scheme to choose pause and regular spikes as in Figure 3, but varied the AI and CV2 thresholds to change the number of spikes in each group from 7.5% to 37.5% of all spikes in increments of 7.5%. (A)\u00a0STALFP of the pause-initiating, -terminating, and regular spikes. Note that the fast fluctuating part of the STALFP remains robust in the case of pause spikes. Data are the same as in Figure 3A. (B)\u00a0Amplitude of the STALFP of the \u03b2/\u03b3 band LFP vs. the number of spikes in each group, for all cells. Amplitudes are all normalized by those of STALFP from all spikes (dotted line). Data are mean \u00b1 SD.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/13810/elife-13810-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** In a minority of cases (n\u00a0=\u00a07), STALFP of the regular spikes (AI\u00a0\u2248\u00a00) had a comparable (>60%) amplitude to that of pause spikes (A). However, the amplitude significantly diminished when STALFP was recomputed with the LFP in the \u03b2/\u03b3 band (B). The amplitude of the regular spike STALFP in the \u03b2/\u03b3 band (h\u03b2/\u03b3Regular) was negatively correlated with the original amplitude (hRegular) (C) suggesting that, when regular spikes are significantly coupled to the LFP, they prefer time scales slower than the \u03b2 frequency. In C, the red circle corresponds to data in A and B while the cyan circle is a single, exceptional case where hRegular remained relatively large (D). For pause spikes, the original amplitude is mostly retained as h\u03b2/\u03b3/horig = 0.86 \u00b1 0.13 (mean \u00b1 SD).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/13810/elife-13810-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** PPC is computed with the band-passed LFP in the \u03b2/\u03b3 (15\u201342 Hz), low \u03b2 (10\u201315\u00a0Hz), \u03b8 (4\u201310\u00a0Hz), and \u03b4 (<4) band, and all normalized by values in the \u03b2/\u03b3 case.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/13810/elife-13810-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A\u2013C) STALFP based on the LFP from the same electrode as the spike signal (A) and on the LFP from two other electrodes. (B,C) In B, STALFP for pause and regular spikes has distinct waveforms similar to A, but not C. Coherence between LFPs in (A) and (B) is significantly higher than between (A) and (C). Note that we omitted the final stage of LFP filtering (< 42Hz) in (B) and (C), nonetheless, the spike waveform is negligible. (D) Coherence between LFPs from different locations. The LFP shown in B is significantly more coherent with the LFP in (A) than the LFP in (C) in the higher frequency range (>4 Hz), which underlies the difference in STALFP shown in (A\u2013C). Electrodes for (B) and (C) were both 1 mm distant from the spike electrode in A. The difference between (B) and (C) suggests that the relevant signal also depends highly on the vertical electrode position. Coherences and their confidence intervals (99%, light color) were computed with the chronux toolbox (http://chronux.org).\n\nIn a few exceptional PCs, the STALFP of regular spikes had a modulation amplitude comparable to that of pause spikes (>70% in amplitude, n\u00a0=\u00a05; Figure 3\u2014figure supplement 2A), whereas these cells did not show difference in correlation with eye movements (measured by max |CCFSpike-EV|) from the rest (p>0.16, Wilcoxon rank-sum test). However, in most of these cases (n\u00a0=\u00a04), the STALFP of regular spikes developed on a much slower time scale, mostly below the high \u03b2 frequency (15\u2009Hz). Therefore, when the STALFP was recomputed with the \u03b2/\u03b3 band (15\u201342\u2009Hz) LFP, STALFP amplitudes were mostly retained for pause spikes, but significantly diminished for regular spikes, particularly if the original amplitude was large (Figure 3\u2014figure supplement 2B\u2013D). This was observed even when the LFP power spectrum did not have a distinct peak in the \u03b2/\u03b3 band, implying that it is a property of pause spikes rather than a product of LFP dynamics that generates the \u03b2/\u03b3 band oscillation.\n\nThe preferential coupling of pause spikes to the higher frequency LFP band, not the lower, led us to examine whether pause spikes are phase-locked to the \u03b2/\u03b3 LFP. This was true in the entire dataset, where pause spikes strongly preferred certain phases of the \u03b2/\u03b3 LFP while regular spikes showed only a weak dependence on the phase (Figure 3C). To estimate how reliably spikes fired at certain LFP phases, we computed the pairwise phase consistency (PPC), which is an average coincidence between any two spikes in the LFP phase space (see Materials and methods for more details) and provides an unbiased measure of phase locking (Vinck et al., 2010). Again, we found a large difference between pause and regular spikes in their PPC (Figure 3D), specifically for the \u03b2/\u03b3 LFP (Figure 3\u2014figure supplement 3). Notably, pause-initiating spikes preferentially occurred near the climbing phase, i.e., <\u03c6PauseI>\u00a0=\u00a048.7\u00ba \u00b1 45.7\u00ba where \u03c6PauseI was the most preferred phase for each data set, and pause-terminating spikes were shifted by about 3/4 cycles on average (<\u03c6PauseT>\u00a0= <\u03c6PauseI> + 278.3\u00ba \u00b1 35.3\u00ba) (Figure 3E).\n\nThese results clearly show that pauses are not randomly occurring events. On the contrary, their initiating and terminating spikes are temporally locked to specific patterns of network activity, which generate significant and temporally precise fluctuations in the LFP.\n\n### Pause spikes and correlated LFP components encode the timing of eye motion\n\nIf pause spikes in single PCs are related to specific patterns of network activity, what information do they jointly encode about eye motion? To answer this question, we first probed how the phase of the \u03b2/\u03b3 LFP evolves during each saccade in recordings for each cell. In many of them, the \u03b2/\u03b3 LFP was significantly coherent across all saccades, with a phase locking to saccade onsets (Figure 4A,B). We quantified this by computing the average cross-saccade phase coherence during a time window around saccade onset (from \u2212100 ms to 150 ms), which we called LFP phase reliability. Significantly high LFP phase reliability was found in 80% of the data (p<0.01, n\u00a0=\u00a028, one sided t-test to time-shifted control data; <RLFP> = 0.20 \u00b1 0.02, mean \u00b1 SEM).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/13810/elife-13810-fig4-v1.jpg)\n\n**Figure 4.:** (A)\u00a0Eye speed (Top) and \u03b2/\u03b3 LFP (Bottom) aligned with saccade onset. Black lines represent an average over all saccades (grey, n = 865). (B) Phases of the \u03b2/\u03b3 LFP at saccade onset for the same data. (C) Top: Spike trains for pause-initiating, -terminating, and regular spikes aligned with onsets of randomly subselected saccades (n\u00a0=\u00a0289). Light colored regions represent periods with significantly reliable firing (jp(t)<0.05, see Materials and methods). Bottom: Z-score for spike occurrence, smoothed by a gaussian kernel (\u03c3\u00a0=\u00a05 ms). (D) Spike reliability of pause and regular spikes in all data. *p\u00a0=\u00a00.0229, 0.0193 (Wilcoxon rank-sum test). (E)\u00a0LFP phase reliability versus spike reliability. The two were significantly correlated (red and black line) for pause-initiating and regular spikes (p\u00a0=\u00a09.3074\u00a0\u00d7\u00a010-6, 0.0012; Fisher\u2019s z-test), but not for pause-terminating spikes (p\u00a0=\u00a00.0912), due to some recordings with low spike reliability but high LFP reliability. Data in (A\u2013C) are the same as in Figure 1A,B.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13810/elife-13810-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A)\u00a0Distribution of the peak Z-score for the firing probability of the pause versus regular spikes. We used a time window from \u2212100 ms to 150 ms around saccade onset and the baseline was estimated with 200 randomized controls. Only significant peaks (colored dots) were used to compute the distributions (p<0.01, t-test; n\u00a0=\u00a027, 19, and 19 for pause-initiating, -terminating, and regular spikes, respectively). Gray dots represent insignificant data sets. *p\u00a0=\u00a00.0061 (Wilcoxon rank-sum test)\u00a0(B)\u00a0Distribution of Z-score peak timing. The mean timing \u00b1 SD for pause-initiating, -terminating, and regular spikes are 1.48 \u00b1 24.5 ms, 15.6 \u00b1 43.0 ms, and 13.9 \u00b1 70.6 ms. Colored and gray dots represent significant and insignificant peaks, respectively. Only the distribution of pause-initiating spikes is significantly different from a uniform distribution (**p\u00a0=\u00a06.7353\u00a0\u00d7\u00a010-4, Kolmogorov-Smirnov test).\n\nThis predicted that pause spikes, which are phase-locked to the \u03b2/\u03b3 LFP, should reliably code eye movement timing. The most significant pattern that we observed was that pause-initiating spikes encode saccade onsets with a significant and sharp increase in average firing (Figure 4C and Figure 4\u2014figure supplement 1). This could be caused either by a firing rate increase of pause spikes during some saccades, or by a sharp spike-time correlation across most saccade trials, i.e. reliable spiking. To ascertain which, we estimated how many spike coincidence events occurred beyond the prediction from the firing rate, from all possible pairings of spike trains and saccades, which we called the spike reliability: Briefly, for each pair of saccade trials, we counted spike coincidences\u00a0(|\u0394t|\u22643 ms)\u00a0between two spike trains within a 50 ms-long moving time window, centered at t (\u2212100 ms \u2264t\u2264150 ms, relative to saccade onset). Then we estimated the probability, jp(t), that two random spike trains with the same firing rates could have the same or more spike coincidences, looking for significant ones (jp(t)<0.05) (Riehle et al., 1997; Denker et al., 2011; Ito et al., 2011). The fraction of those significant coincidences from all cells, summed over all trials and time, became the spike reliability. Significantly coincident spikes were indeed found during significant peaks of firing probability (colored regions in Figure 4C); therefore, spike reliability was significantly higher for pause spikes (Figure 4D), further emphasizing their role in encoding the onset of eye motion. Finally, the LFP phase and spike reliability were much more steeply related to each other for pause-initiating spikes than for regular spikes (Figure 4E). This demonstrates that the fidelity of temporal coding by pauses in individual PCs crucially reflects the reliability of activity and coding of the local network.\n\n### PC firing rate linearly encodes eye motion, mostly by regular spikes\n\nSo far we have focused on pause spikes, rare events in the spike train that provide timing information. On the other hand, eye velocity-spike correlation (and similarly saccade-triggered average rate) showed firing rate modulation by eye movement kinematics such as direction, duration, etc. (Figure 1B\u2013C and Figure 1\u2014figure supplement 1A\u2013F). This suggests that a firing rate code may also be present in PC spike trains.\n\nTo answer this question, we constructed an inverse model that predicts firing rate from eye movements in each cell, based on the linear-nonlinear (LN) model framework (Victor and Shapley, 1980). LN models are widely used in sensory system studies, but have not been applied to PCs to date. First, the eye velocity profile is compared with a preferred pattern (motion feature) estimated from the linear cross-correlation (CCFs in Figure 1B) to generate a linear prediction m of the firing rate, which goes through an additional nonlinear transformation to fit the actually observed firing rate (Figure 5A,B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/13810/elife-13810-fig5-v1.jpg)\n\n**Figure 5.:** (A)\u00a0Schematics of the eye motion-to-rate inverse model. (B) Example motion feature. (C) Predicted vs. measured firing rate for all (green), regular (black), and pause (red) spikes. The rates of pause and regular spikes are rescaled to match those of all spikes to compensate for subsampling. The dotted line represents equality. (D)\u00a0Goodness of fit R2 for the linear prediction to actual rate. **p<10-30 (Wilcoxon rank-sum test). (E)\u00a0R2 for all cells. Error bars are omitted and box plots are for means. *p<10-6, **p<10-11 (Wilcoxon rank-sum test). Error bars represent SEM. Data in B\u2013D are the same as in Figure 1A,B.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/13810/elife-13810-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Black traces are correlation coefficients of the CCFSpike-EV, computed in eight eye movement directions, between the full spike train and regular spikes selected based on the CV2 threshold (x-axis). The blue line is the fraction of regular spikes out of all spikes. The inset contains the same correlation coefficients for pause spikes vs. the fraction of pause spikes out of all spikes. Varying numbers of pause spikes were selected by varying the AI threshold as in Figure 3\u2014figure supplement 1. Data are mean \u00b1 SD.\n\nWe found that the linear rate prediction m followed the actual rate very closely (R2\u00a0=\u00a00.92 \u00b1 0.07, mean \u00b1 SD); therefore, the effect of the nonlinear transformation is small (Figure 5C\u2013E). This made the linear rate prediction m alone a good predictor of the time-course of average firing rate modulation during saccades and it was used exclusively in the rest of the analysis. Importantly, correlation with the firing rate remained high (R2\u00a0=\u00a00.81 \u00b1 0.17) when we computed the linear prediction with only regular spikes, which comprised about 20% of all spikes. Conversely, the firing rate of pause spikes (both pause-initiating and \u2013terminating spikes) did not modulate as linearly or steeply as for regular spikes (R2\u00a0=\u00a00.35 \u00b1 0.25). This suggests that information encoded by the whole firing rate is very different from eye movement features related to pause spikes such as onsets (Figure 4C), but this information can be captured well by a subset of the full spike train, regular spikes.\n\nThis led us to further inquire into the similarity between rate coding by regular spikes and the full spike train. For this, we imposed different thresholds on CV2 (=2|AI|) for selecting the regular spikes, computed the direction-dependent CCFSpike-EV of those selected spikes (Figure 1B), and estimated its similarity to that of the full spike train by computing their correlation coefficient \u03c1. We found that \u03c1 quickly grew as we increased the CV2 threshold, whereas the fraction of regular spikes increased more slowly (Figure 5\u2014figure supplement 1). For example, when we select ~47% of all spikes as regular spikes by imposing CV2\u00a0<\u00a00.4, their CCFSpike-EV is very similar (\u03c1\u00a0\u2248\u00a00.93 in average) to that of the full spike train. Even at 20%, CCFSpike-EV of these regular spikes had \u03c1\u00a0\u2248\u00a00.85 on average, similar to the linear coding property (Figure 5C). Note that \u03c1 for pause spikes behaved very differently; it was not significant for a reasonable fractions of pause spikes (Figure 5\u2014figure supplement 1 inset).\n\nThe combination of Figure 5 and Figure 5\u2014figure supplement 1 demonstrates that regular spikes dominate rate coding. Regular spike and full spike trains respond to similar motion features and also share the linear coding property. Our results resemble those of a previous report in which 'patterns' of regularly firing spikes dominate the rate responses of PCs to sensory stimuli (Shin et al., 2007). Nevertheless, pause spikes can make small contributions to rate coding. With all spikes, the LN model is empirically linear, but the rate coding of regular spikes predicted by the model is slightly less linear (Figure 5D,E). Pause spikes, which by definition represent fast rate changes, must compensate for this.\n\nOne regular spike is inexpensive from the standpoint of information content, because a small and very regular subset can already provide a good approximation of the full rate modulation (Figure 5\u2014figure supplement 1). Furthermore, regular spikes are weakly coupled to network activity (Figure 3). This evidence strongly suggests linear rate coding as the primary role of regular spikes.\n\n## Discussion\n\nExamples in sensory and motor systems (Riehle et al., 1997; Panzeri et al., 2010; Gire et al., 2013) and theoretical analysis (Ratt\u00e9 et al., 2013) have shown that neurons can use multiplexed coding strategies, where each spike in a single spike train can differentially couple to local network activity and encode different information about sensory stimuli or behavior. This study presents the first evidence for multiplexed coding in cerebellar Purkinje cells. Specifically, spikes that initiate pauses are strongly coupled to the \u03b2/\u03b3 band of the LFP and are therefore probably synchronized among nearby PCs. These spikes form a temporally reliable signal to initiate saccadic eye motion. Conversely, regular spikes in the same spike trains are desynchronized among nearby PCs and form a rate code that predicts direction selective eye kinematics. Use of a multiplexed code resolves the perceived contradiction between temporal and rate coding that has dominated recent discussions about PC spiking (De Zeeuw et al., 2011; Heck et al., 2013).\n\nPauses in the spike train are observed in many tonically firing neurons in various contexts. In striatal cholinergic interneurons, synchronized pauses after bursts encode a salient stimulus (Aosaki et al., 1995). Since pause-initiating and -terminating spikes can synchronize sharply (Jaeger, 2003; Shin and De Schutter, 2006), PCs can potentially operate by a similar coding mechanism. In fact, spike synchronization by PCs is a powerful mechanism to control their postsynaptic targets in the cerebellar nucleus (CN). With exceptionally fast GABAergic synapses (Person and Raman, 2012), CN neurons can reliably generate time-locked rebound spikes in response to synchronized inputs followed by simultaneous disinhibition, even at moderate levels of synchrony (\u226450%) (Person and Raman, 2012) and spike time jitter (\u226420 ms) (Gauck and Jaeger, 2000; Sudhakar et al., 2015). Furthermore, recent optogenetic experiments have shown that synchronous pauses induced either by direct/indirect inhibition or at the offset of direct excitation, can reliably trigger firing in CN neurons, and importantly, at movement onset (Heiney et al., 2014; Lee et al., 2015). Crucially, excitation-induced pauses were short (~35 ms), but effective, and even shorter pauses from direct inhibition caused similar effects (Lee et al., 2015).\n\nSynchronized pause spikes (Shin and De Schutter, 2006) can not only represent timing information, but also can complement a rate code. Previous studies have analyzed PC firing collected over many trials and neurons, and found that a collective representation of time and motion emerges as a form of burst firing alone (Thier et al., 2000) or together with suppressed/paused firing of many PCs (Catz et al., 2008; Arnstein et al., 2015; Herzfeld et al., 2015). Our results suggest that pause spikes can enhance temporal fidelity of such population-level representations since their temporal consistency across different PCs (e.g. Figure 4\u2014figure supplement 1B) can offer a reliable representation, despite large heterogeneity in rate coding schemes of different PCs. For example, Herzfeld et al. (2015) found that population PC coding of saccade direction depends critically on the timing of pause onset, which varies only up to ~10 ms. Here we showed that pause spikes of individual PCs can indeed fire with a reliability of a few milliseconds. This can be particularly important at the single trial/saccade level, but averaging over multiple trials and cells may not be a suitable approach to probe it. Instead, we evaluated the correlation between simultaneously recorded PC spikes and LFP, and also trial-to-trial correlation (reliability) of those signals, for each cell. Our results show that synchronized pause spikes constitute the most significant population signal in PCs despite their sparse appearance in individual spike trains, suggesting that they can be a specific signaling mechanism in the PC-CN part of the motor pathway.\n\nThe spike-LFP relationship indicates that pause spikes are generated by the local network. While firings by presynaptic afferents, granule cells, Golgi cells, as well as by the postsynaptic targets, are clearly related to the LFP (Soteropoulos and Baker, 2006; Dugu\u00e9 et al., 2009; Ros et al., 2009), PCs only occasionally or weakly modulate their simple spike firing with the LFP (Courtemanche et al., 2002; Ros et al., 2009), except for the very high frequency component (~200\u2009Hz) (de Solages et al., 2008). Here we found that the \u03b2/\u03b3 LFP robustly and preferentially couples to pause spikes and that both can reliably encode time information in a correlated way. Considering that cerebellar LFP is coherent with neocortical LFP (Courtemanche and Lamarre, 2005; Soteropoulos and Baker, 2006; Ros et al., 2009) and also plays a critical role in maintaining LFP coherence between the sensory and motor cortex, particularly in the low \u03b3 band (Popa et al., 2013), pause spikes may also have a special relationship with the LFP in the cerebral cortex.\n\nWe did not attempt to resolve the origin of the time encoding LFP signal due to limitations of the experimental setup. However, there are multiple possible primary sources. One is the dense activation of mossy fibers and granule cells that accompanies the significant LFP in the granular layer (Morissette and Bower, 1996; Roggeri et al., 2008; Diwakar et al., 2011). Because our electrodes are probably too far from the granular layer to detect the signal directly, it is likely that that localized massive activity propagates via ascending and parallel fibers to activate many interneurons and ultimately PCs. In particular, molecular layer interneurons (MLI) could provide significant feedforward inhibition (Mittmann et al., 2005), causing PCs to pause (Mittmann and H\u00e4usser, 2007). If simultaneous activation of local MLIs (and/or their synaptic inputs to the local population of PCs) contributes to the LFP, this would explain our observed correlation of the fast LFP signal and pauses in PCs. However, the time-encoding signal components we observed seem to be highly localized in the cerebellar cortex. In LFPs recorded ~1\u2009mm horizontally from the spike electrode, STALFP amplitude, particularly of pause spikes was greatly diminished to absent (Figure 3\u2014figure supplement 4). This suggests that the pause-related \u03b2/\u03b3 LFP signal originates from localized sources and decays quickly with distance, spreading at most a few hundred microns. This is consistent with the fact that PCs are rarely synchronized unless they are very close to each other (<100\u2009\u03bcm) (Ebner and Bloedel, 1981; Jaeger, 2003; Shin and De Schutter, 2006).\n\nWe also found that the effect of complex spikes was minimal since pauses triggered by complex spikes (Latham and Paul, 1970) had a distinct distribution compared to simple-spike pauses (Figure 2\u2014figure supplement 1A). The overall impact of complex spikes was negligible, most probably because none of our tasks involved sensorimotor learning where complex spikes are crucial (Catz et al., 2005; Medina and Lisberger, 2008), as they tend to occur after saccades, triggered by significant saccade errors (Herzfeld et al., 2015).\n\nMany studies have reported significant correlated spiking in similar settings. In the motor and visual cortex, synchronized spikes have larger STALFP and better phase locking to the motion-related LFP \u03b2 oscillation (Denker et al., 2011; Ito et al., 2011). In another part of the cerebellum, Medina and Lisberger found that firing rate variability and cross-correlation of PC firing both peaked at the onset of smooth-pursuit eye motion (Medina and Lisberger, 2007). Our findings are consistent with their observations since pause spikes, which fire reliably with respect to motion onset, have higher ISI variability, and significant coupling to the LFP implies correlated firing. Medina and Lisberger also suggested that such correlated spiking is due to common input to PCs (Medina and Lisberger, 2007), which can significantly contribute to the LFP signal (Denker et al., 2011) and trigger synchronized pauses (Jaeger, 2003).\n\nOn the other hand, PCs also use linear rate coding of eye movements and here non-pause regular spikes are predominant. Linear coding of motion kinematics by the PC firing rate has been repeatedly observed (Shidara et al., 1993; Roitman et al., 2005; Medina and Lisberger, 2007; Herzfeld et al., 2015). If correlations with other PCs are weak, as is the case for regular spikes, rate coding by individual PCs can precisely control continuous movements since CN neurons receive inputs from many PCs and can average away noise in individual inputs.\n\nBecause different stages of a movement may demand that some aspects of the motion be controlled more precisely than others, it is useful for PCs to use different spike codes. Our study demonstrates that PCs can use both temporal- and rate-coding schemes to multiplex their population output with different types of information (De Schutter and Steuber, 2009; Ratt\u00e9 et al., 2013), so that precision in motion timing and continuous control can be managed adaptably. We conclude that multiplexed coding is used for sensorimotor coordination in the cerebellar cortex.\n\n## Materials and methods\n\n### Electrophysiological recording and behavioral procedure\n\nAll animal experiments were approved by the local animal care committee (Protocol number: Regierungpr\u00e4sidium T\u00fcbingen N1/08 and N6/13), conducted in accordance with German law and the National Institutes of Health's Guide for the Care and Use of Laboratory Animals and carefully monitored by the veterinary administration (Regierungspr\u00e4sidium and Landratsamt T\u00fcbingen). Three adult male rhesus (Macaca mulatta) monkeys (E, H, and N; 10, 11, and 15 years old, respectively) were subjects in this study. They were implanted with a magnetic scleral search coil to record the eye position (Judge et al., 1980), a titanium head post to painlessly immobilize the head during experiments, and a circular titanium recording chamber located over the midline of the cerebellum to allow electrophysiological recordings (Thier and Erickson, 1992). Position and orientation of the implants were carefully planned using pre-surgical MRI and confirmed using postsurgical MRI that helped to direct electrodes to the oculomotor vermis. All surgical procedures were conducted using aseptic techniques under the full anesthesia consisting of isofluorane supplemented with remifentanil (1\u20132\u2009\u03bcg/kg/min). All relevant physiological parameters such as body temperature, heart rate, blood pressure, pO2, and pCO2 were monitored. Postoperatively, buprenorphine was given until no sign of pain was evident. Animals were allowed to fully recover before starting the experiments.\n\nAnimals made saccades either without (n\u00a0=\u00a016) or with visual cues (n\u00a0=\u00a018), but we analyzed all data combined. In the spontaneous saccade paradigm, animals made eye movements freely in the absence of any given visual stimulus. In the visually guided task, animals first focused on a fixation spot at the center of the monitor for periods of time that varied randomly between 1000 and 1500 ms. As soon as the fixation spot disappeared, a target for the primary saccade appeared randomly in one of eight possible locations in the periphery with the angle \u03b8\u00a0=\u00a00\u00ba, 45\u00ba,... , 315\u00ba at a constant distance from the center, varying between 2.5\u00ba and 20\u00ba in separate blocks.\n\n### Processing and selection of recording data\n\nExtracellular potentials were initially high- and low-pass filtered online and recorded separately. The band pass-filtered (300\u00a0Hz\u20133\u00a0kHz) channel was used to identify single-unit activity. Single-PC units were distinguished by the presence of simple and complex spikes via online sorting, but all spikes were resorted offline and semi-automatically via a neural network trained on manually selected spike waveform prototypes as in (Yartsev et al., 2009).\n\nThe LFP from the low-pass filtered (<150\u2009Hz) channel went through a series of additional filtering steps to remove influences from spike waveforms. First, an online notch filter at 50\u2009Hz was applied to reduce line noise. An additional offline low-pass filter at 42\u2009Hz was applied. Then, the LFP was resampled at 90\u2009Hz and oversampled back to 1 kHz to minimize the effect of spike waveforms.\n\nEye velocity was computed from recorded eye position using a Savitzky-Golay filter of the fifth order with a 25 ms time window. Saccade onsets were detected from eye speed using a custom adaptive detection algorithm described in Appendix 1.\n\nWe first selected data based on recording quality both in neural and eye motion recordings and then based on statistical significance of CCFEV-LFP and CCFEV-Spike (see below).\n\n### Calculation of cross-correlation function and spike triggered averages\n\nWhen the signal for the quantity A and B are x(t) and y(t), respectively, the cross-correlation function CCFAB is computed by\n\n$$\nCCF_{AB}(t)=\\frac{1}{Z_{AB}}\\sums=0Lx(s+t)y(s)\u2212\\frac{1}{M_{shift}}\\summ=1M_{shift}(\\frac{1}{Z_{AB}}\\sums=0Lx(s+t)y_{mT}(s)),\n$$\n\nwhere L is the signal length. ymT(t) is y(t) shifted by m\u00b7T, ymT(t) = y(t + m\u00b7T). The second term is a shift-correction that estimates the baseline and average of possible uncontrolled correlation. We used T = 1 s and Mshift\u00a0~ 200 depending on L and whether the variance of the shift corrections stabilized. Assuming this variance corresponds to the standard error of the CCF both for the original and shifted data, we computed the t-score for the one-sided test for whether the CCF becomes significant (p<0.01), particularly from t\u00a0=\u00a0\u2212100 ms to t\u00a0=\u00a0100 ms.\n\nFor the normalization ZAB, we used two different schemes depending on whether A and B were both continuous (eye velocity and LFP) or one of them was a spike train. In the former, the 'CCF-like' convention, ZAB = (Var[x]\u00b7Var[y])1/2 (L\u2212|t|), was used. In the latter, we used the 'STA-like' normalization ZAB = Var[x]1/2\u00b7Nspike where Nspike was the number of spikes. Therefore, STALFP(t) = CCFLFP-Spike(t) where y(s) was a spike train with 1 ms wide time bins, up to a constant factor.\n\n### Saccade-angle dependence of the LFP and PC spikes\n\nWe estimated dependence of the LFP and spikes on saccade angle \u03b8 by computing their CCF(\u03b8) with the component of the eye velocity vector v, v\u03b8 = (v\u00b7e\u03b8)+ where e\u03b8 = [cos \u03b8, sin \u03b8] (\u03b8 = 0\u00ba, 45\u00ba, \u2026, 315\u00b0) and ()+ represents rectification. Then, we computed the matrix CCF = [CCF(0\u00ba); CCF(45\u00ba); \u2026] and the noise-to-signal ratio, NSR = Tr Cov[CCF]/||Mean[CCF]||2, which was used as an estimate of \u03b8-dependence in CCF(\u03b8). About 200 control CCF(\u03b8) were made from time-shifted data (see above) and their variance was used in the t-test for differences in NSR between the LFP and spikes.\n\n### Estimation of spike train statistics and selection of pause/regular spikes\n\nThe ISI-asymmetry index (AI) was computed as in Figure 2A. For each data set, we generated 200 rate-matching artificial spike trains in a similar way to Shin et al. (2007). We first computed ISIs, {ISIk} (k\u00a0=\u00a01,\u2026Nspike-1), from experimental data. At each k, we computed the local firing rate from the nearest five ISIs as rk = 5/(ISIk-2\u00a0+\u00a0ISIk-1+\u00a0... ISIk+2). The k-th artificial ISI, Tk, was drawn from the gamma distribution P(Tk) ~ rk2 Tk exp(-rk Tk) with a refractory period 4 ms imposed. From these, we computed the mean histogram and its variance. The tail shape of the ISI distribution was tested using the powerlaw Python package (http://pypi.python.org/pypi/powerlaw), which provided a fitting algorithm to the power-law tail and statistical tests to compare the result with the alternative hypothesis of an exponential tail.\n\nFor pause-initiating spikes, we first selected 15% of spikes having the largest AI values. Then, we removed 25% of spikes with the shortest pause ISI. Pause-terminating spikes were selected similarly, but with the smallest AI. Minimal pause duration varied with the average firing rate of the cell, but was in general ~20% larger than the ISI corresponding to the mean firing rate. Regular spikes were selected based only on their CV2, and their number was matched to those in comparison groups.\n\n### LFP phases in the \u03b2/\u03b3 band and their cross-saccade reliability\n\nThe \u03b2/\u03b3 LFP was obtained by band-pass filtering the LFP between 15\u201342\u2009Hz. Phases were extracted by the Hilbert transformation (MATLAB function hilbert). From the phase and spike times, we computed pairwise phase consistency (PPC) in the following way (Vinck et al., 2010). When the phase of the \u03b2/\u03b3 LFP at spike times is {\u03c6n} (n\u00a0=\u00a01,\u2026, Nspike), PPC is given by\n\n$$\nPPC=\\frac{2}{N_{spike}(N_{spike}\u22121)}\\summ=1N_{spike}\u22121\\sumn=m+1N_{spike}exp\u2061(i(\u03d5_{m}\u2212\u03d5_{n}))\n$$\n\nLFP phase reliability RLFP is measured by phase coherence of the \u03b2/\u03b3 LFP across saccades. When \u03c6i(t) is the LFP phase at t, time relative to saccade onset (t\u00a0=\u00a00 at the onset), for the i-th of N saccades, RLFP is given by\n\n$$\nR_{LFP}=\\frac{1}{T_{e}\u2212T_{b}}\\int_{T_{b}}^{T_{e}}Z(t)dt,Z(t)=|\\frac{1}{N}\\sumi=1Kexp\u2061(i\u03d5_{i}(t))|,\n$$\n\nwhere we used Tb\u00a0=\u00a0\u2212100 ms and Te = 150 ms. We also computed RLFP of time-shifted data in the same way as CCF and their mean and variance were used for the one-sided t-test.\n\n### Cross-saccade spike reliability\n\nSpike reliability Rspike was evaluated using the fraction of significant cross-saccade synchronization events, following Denker et al. (2011). We first collected spike trains during the same time window as for RLFP. Then, within a 50 ms-wide moving window centered at t in each saccade period (t = 0 at the onset), we counted the number of spike coincidences up to \u00b1 3 ms time difference, nemp(t). In the same moving window, rate prediction of the coincidence probability and expected number of coincidences nexp(t) were computed from firing rates based on summing all possible spike train/saccade pairings. With a null hypothesis of Poisson statistics, the probability of nemp(t) is\n\n$$\njp(t)=P(n_{emp}(t)|n_{exp}(t))=\\sumr=0n_{emp}(t)\\frac{n_{emp}(t)^{r}}{r!}exp\u2061(\u2212n_{exp}(t)).\n$$\n\nThe criterion for significant synchronization was jp(t)<0.05 and if this was satisfied, all coincidence events in the window were regarded as spike synchronization from 'unit events' (Riehle et al., 1997; Denker et al., 2011; Ito et al., 2011). Then, Rspike is a fraction of synchronization events versus all coincidences,\n\n$$\nR_{spike}=\\frac{\\sumjp(t)<0.05n_{emp}(t)}{\\sumtn_{emp}(t)}.\n$$\n\n### Eye motion-to-rate inverse model\n\nOur inverse model consists of two parts: a motion feature f acts as a receptive field that linearly transforms eye velocity history to the linear rate prediction, m. Then, a nonlinear function P(spike|m) gives the spiking probability. f was estimated from the spike-triggered average of the rectified eye velocity in four directions (\u03b8 = 0\u00ba, 90\u00ba, etc.) from \u2212300 ms to 300 ms around the spike time. We computed the rate prediction, m, by linear filtering the rectified eye velocity by f, and estimated P(spike|m) by comparing m with actual firing rate. See Appendix 2 for more mathematical details.\n\n### Statistical analysis\n\nWhen z- and t-tests were used, we checked normality of sample distribution using D'Agostino's K2 test (significance level = 0.05). In some cases that failed the normality test, we estimated a p-value by computing an empirical upper bound of the type I error rate by using control data sets. We increased 400~2000 control data sets, depending on computing time, evaluated the quantity of interest, and made one-sided comparisons with an estimate from original data. The p-value was estimated to be an error rate of the comparisons.\n\nFor each statistical test, we computed statistical power by estimating an upper bound of the type II error rate from the resampled data sets: we generated 400~2000 randomly resampled data sets with replacement, performed the same statistical test on them, and counted how many passed the test at a given significance level, which gave our estimate of the power. We regarded the original test result as significant only when the power is sufficiently high (>0.8),\n\nAll analyses were done with MATLAB 2012a (Mathworks, VA) and custom scripts in Python 2.7, which will be available on our homepage (http://groups.oist.jp/cnu).\n",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "3bab77d5-f796-4639-becf-1b4d34fc9032",
+      "submission_id": "873dce35-f929-43f4-83d6-4991aa34e1ab",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nReviewers:\n- Fred Rieke, Howard Hughes Medical Institute, University of Washington , United States\n\n## Review text\n\nDOI: [10.7554/eLife.13810.021](https://doi.org/10.7554/eLife.13810.021)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Multiplexed coding by cerebellar Purkinje neurons\" for consideration by eLife. Your article has been favorably evaluated by Timothy Behrens as the Senior editor and three reviewers, one of whom, Fred Rieke, is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nConsensus review (discussed by all reviewers):\n\nThis is an interesting paper that suggests that cerebellar Purkinje cells exhibit multiplexed coding \u2013 in which spikes at the onset or offset of pauses in spike activity signify the onset of an eye movement, while spikes part of more regular firing patterns represent eye movement properties. The reviewers felt the paper had the potential to provide key insights into Purkinje cell coding and to resolve some issues in the literature. Several issues, however, limited enthusiasm and need to be dealt with before considering the paper further. These are listed below in rough order of importance.\n\n1) Importance of complex spikes. Complex spikes are described in the Discussion as having effectively no impact on the conclusions of the paper. However, it is not clear to what extent the results presented reflect complex-spike-triggered pauses in Purkinje cell firing (see Reviewer #2 comments). This issue needs to be clarified, presumably by additional analyses.\n\n2) Event selection. All of the reviewers had concerns about how spikes were selected for analysis. The core issue is whether the selection process used in the paper biased the results by focusing on a small subset of spikes and omitting others. Controls to test for such biases and to assess the generality of the reported result are needed. These include a more straightforward analysis to identify pauses (see Reviewer #3 comments) and analysis that are more inclusive of all the spikes (see Reviewer #1 comments).\n\n3) LFP phase reliability and Purkinje cell synchrony. How confident can we be that the reliability of the LFP phase is due to synchrony? The reviewers did not feel this point necessarily needed to be resolved by data from cell populations, but instead that any caveats of the interpretation needed to be discussed carefully.\n\n4) Writing. The results could be presented in a more accessible manner, which will be particularly important give eLife's broad readership. See reviewer comments for specific suggestions.\n\nThese, and other, issues are detailed below in the comments from the individual reviewers.\n\nReviewer #1:\n\nI am not an expert in Purkinje cell coding, so will leave comments about significance of the findings and relation with other work on the cerebellum to the more expert reviewers. The comments below deal specifically with more general coding issues and overall presentation of the work. My main concerns had to do with the selection of data to analyze, and how that selection influences the results and interpretation of the findings as well as some writing issues.\n\nData selection.\n\nI was concerned about several issues about the data included or excluded from analysis. First, in a subset of recordings (subsection \u201cCerebellar LFP and single PC firing correlate to saccadic eye movements\u201d, second paragraph) spike times and eye velocity exhibited significant correlations. The other recordings were apparently omitted from subsequent analysis. Is that because these are likely cells that do not participate in the control of eye movements? It would be helpful to indicate why that selection of data is justified.\n\nSecond, related to above, some selection of recordings was apparently made based on LFP coherence (subsection \u201cPause spikes and their correlated LFP component encode the timing of eye motion\u201d, second paragraph) \u2013 but the details are also unclear.\n\nThird, the identification of pause spikes and regularly firing spikes omits the majority of the recorded spikes. Given the large differences in properties of the pause and regular spikes, the question of what the other spikes are doing comes up immediately. I think this is a key issue with respect to the multiplexing concept \u2013 is there a continuum between the extremes represented by the pause and regular spikes, or is there a more discrete transition? I think of multiplexing as being about a set of discrete signals rather than a continuum. It is important to know how much the results extend to encompass all of the Purkinje cell spikes. This issue comes up in particular with regard to Figure 5.\n\nWriting.\n\nI think the writing can be improved in several places. A partial list follows:\n\nAbstract, second sentence could be split into two.\n\nAbstract, last sentence unclear.\n\nIn the third paragraph of the subsection \u201cPause spikes couple to the LFP strongly and specifically to the \u03b2/\u03b3 band\u201d, last sentence \"This effect [\u2026]\" is unclear.\n\nIn the last paragraph of the subsection \u201cPause spikes couple to the LFP strongly and specifically to the \u03b2/\u03b3 band\u201d, define pairwise phase consistency in a sentence.\n\nIn the last paragraph of the subsection \u201cPause spikes and their correlated LFP component encode the timing of eye motion\u201d, explain estimate of extra coincident events in a bit more detail.\n\nIn the last sentence of the subsection \u201cPause spikes and their correlated LFP component encode the timing of eye motion\u201d \u2013 I'm not sure why you say that the fidelity depends on the local network \u2013 perhaps \"reflects\" is a better word? What if a set of nearby cells received highly synchronized inhibitory input (not necessarily local) and hence generated high fidelity, synchronized pauses?\n\nIn the third paragraph of the subsection \u201cPC firing rate linearly encodes eye motion, mostly by regular spikes\u201d, you describe the pause spikes as exhibiting a high degree of nonlinearity, but it seems to me like that the firing rate is just not very dependent on eye movements. In other words, how do you separate nonlinearity from lack of correlation?\n\nThe third paragraph of the Discussion seems a bit repetitive.\n\nIn the sixth paragraph of the Discussion, \"Exclusion of the complex spikes causes minuscule.\u2026\" \u2013 can you be more specific about what minuscule means?\n\nReviewer #2:\n\nThis manuscript tackles the very general question of how neurons encode information in their spike trains, and, in particular, the contribution of coding by the precise time of spikes within a train vs. a rate code. The experimental systems used by the authors (cerebellum and saccadic eye movements) offer some powerful advantages for analyzing this issue. The manuscript builds on the De Schutter group's previous work suggesting that brief, synchronized pauses in Purkinje cell firing may play a key role in cerebellar function. The current manuscript expands significantly on what had been done previously by 1) building a tighter link to behavior by examining pauses in the context of saccadic eye movement behavior and 2) examining the relationship between the LFP and the spikes bounding the pause.\n\nThe main conclusion is that the pause-related spikes are synchronized and encode movement onset, whereas the other, \"regular\" spikes encode movement kinematics.\n\nI think this paper makes a significant contribution to the field. The idea that different spikes within a train may encode different information and be read out differently (through synchronized action with other cells vs. rate averaging) should be of broad interest to the neuroscience community.\n\nThere are three main areas where I have questions or concerns.\n\nFirst, the authors claim in the Discussion \"Exclusion of the complex spikes caused minuscule changes in our results.\" This is an important issue that should be more thoroughly documented to rule out that the pause spikes are not reflecting the effect of complex spikes. Pause beginning spikes are defined so that they are 10% of all spikes. Complex spikes are nearly 2% of all spikes, so could potentially account for ~20% of the pause beginning spikes-if pause beginning spikes associated with a complex spike are removed, do the results still hold? If so, that would strengthen the authors' claim that the effects they report are not related to the complex spikes. But the opposite result would also be interesting.\n\nSecond, it would be nice to see a more systematic analysis of different frequency bands in the LFP to determine whether it is really just the 15-42\u2009Hz band that couple with the pause spikes.\n\nBased on Figure 5C, the authors conclude that the regular spikes more linearly encode eye velocity than the pause spikes. Although this appears to be true, it also appears that there is a nonlinearity in the encoding of eye velocity by the regular spikes, which is compensated by the pause spikes in a way that makes the population as a whole more linear re eye velocity. Is this a reasonable interpretation? If so, it seems worth mentioning.\n\nReviewer #3:\n\nThe manuscript by Hong et al. describes analyses of Purkinje neuron spike trains that shed light on the potential population encoding strategies of this cell population with respect to movement kinematics. They analyze LFPs and simple spikes during saccadic eye movements and find that LFP measurements are more tightly correlated with eye movement onset than single-spike trains, and that long interspike interval \u2013 \"pauses\" \u2013 phase-locked with these predictive LFPs. The conclusion from these pause-related data is that pauses encode saccade onsets. On the other hand, overall firing rate is highly correlated with eye velocity, with the \"regular\" spikes within this population. Pairing these observations, the authors conclude that multiplexed coding occurs with Purkinje firing.\n\nI like the direction taken here and find most of the analyses important. There are some important missing pieces of information, however, that make evaluating the findings challenging and therefore a strong recommendation for accepting or rejecting the manuscript is premature. Of paramount importance is the selection of spikes beginning long pauses: \"we selected 15% of largest AI values. [\u2026] then removed 25% of the spikes with the shortest pause ISI.\" Since this process operates on ISI ratios, it is unclear what the ISI durations are that are being analyzed as pauses. Moreover, because this analysis relies on ratios and not overall ISI duration, (which would seem a more natural criterion for long ISIs), it is selecting for essentially bursty sequences of short-then-longish spikes. Interpreting the data through this light seems different than interpreting it through the lens of 'pauses' or longest ISIs. While I acknowledge that there may be no perfect solution to identifying pauses, I am not provided enough information to evaluate their claims because I don't know if the pauses they have chosen are unique in any way, or are alternatively unique in ways they do not highlight. In addition to the distribution of 'pause' ISIs vs. all ISIs, a plot of ISIn vs. ISIn+1 would provide non-ratioed data that may help reveal unique characteristics of the 'pause' population.\n\nAn important assumption to the interpretation of the data advanced by the study is that the LFP correlation with pause onset spikes reflects synchronous firing. Since LFPs reflect synaptic and spiking currents, it may be that correlation detected is simply a readout of the fact that pushing the ISI off of the basal firing rates reflects synaptic input, which is also reflected in the LFP. I am not confident that any data analysis short of multi single-unit array recordings could resolve whether single spikes are temporally aligned at the onset of a pause to the degree necessary for synchrony coding in the nuclei, but I could be persuaded by experts of LFP interpretation.\n\nOverall I think this manuscript could really help resolve an ongoing debate and find many of their observations tantalizing. The information and caveats I raise above prevent me from providing overwhelming support.\n",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "18372a9c-d777-46a8-9e33-ee2de11be214",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C1",
+      "claim": "Purkinje cells are the sole output neurons of the cerebellar cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Purkinje cells (PC), the sole output neurons of the cerebellar cortex, encode sensorimotor information, but how they do it remains a matter of debate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as an established fact about cerebellar anatomy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "d6376a0f-0e2b-474c-a306-682dc4bfd554",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C2",
+      "claim": "Purkinje cells encode sensorimotor information.",
+      "claim_type": "EXPLICIT",
+      "source": "Purkinje cells (PC), the sole output neurons of the cerebellar cortex, encode sensorimotor information, but how they do it remains a matter of debate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established fact in the abstract, though the mechanism is debated.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "7caac5d9-3a10-4482-94cd-fdaf39e8a3b1",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C3",
+      "claim": "Purkinje cells use a multiplexed spike code.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that PCs use a multiplexed spike code.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary finding of the study, supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "fcc0ad28-41f3-46d0-9a1f-abdb0eb7625b",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C4",
+      "claim": "Synchrony/spike time and firing rate encode different information in Purkinje cells during saccadic eye motion tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "Synchrony/spike time and firing rate encode different information in behaving monkeys during saccadic eye motion tasks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a main finding supported by experimental data from monkey recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "9739c8de-7eba-4881-9f82-1d6cb1a3a457",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C5",
+      "claim": "Pause spikes provide a temporally reliable signal for eye motion onset.",
+      "claim_type": "EXPLICIT",
+      "source": "we found that infrequent pause spikes, which initiated or terminated intermittent pauses in simple spike trains, provide a temporally reliable signal for eye motion onset, with strong phase-coupling to the \u03b2/\u03b3 band LFP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing spike reliability and phase-coupling measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "bc5fb0ee-8ba4-4dba-9fd8-44bf821cee72",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C6",
+      "claim": "Pause spikes have strong phase-coupling to the \u03b2/\u03b3 band LFP.",
+      "claim_type": "EXPLICIT",
+      "source": "we found that infrequent pause spikes, which initiated or terminated intermittent pauses in simple spike trains, provide a temporally reliable signal for eye motion onset, with strong phase-coupling to the \u03b2/\u03b3 band LFP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by PPC measurements and phase distribution analysis in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "c523b5e1-8789-4f67-ac90-26490d063b96",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C7",
+      "claim": "Non-pause spikes are weakly correlated with the LFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Concurrently, regularly firing, non-pause spikes were weakly correlated with the LFP, but were crucial to linear encoding of eye movement kinematics by firing rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by STALFP analysis in Figure 3A showing weak modulation for regular spikes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "ba44ae5c-1ccc-4f37-b896-62f120317709",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C8",
+      "claim": "Regular spikes are crucial to linear encoding of eye movement kinematics by firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Concurrently, regularly firing, non-pause spikes were weakly correlated with the LFP, but were crucial to linear encoding of eye movement kinematics by firing rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the linear-nonlinear model analysis in Figure 5 showing high R\u00b2 values for regular spikes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "843775b1-d396-43ee-b1f4-ea54f838f6db",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C9",
+      "claim": "PC spike trains can simultaneously convey information necessary to achieve precision in both timing and continuous control of motion.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, PC spike trains can simultaneously convey information necessary to achieve precision in both timing and continuous control of motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from the multiplexed coding findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "b6ec7aa0-038b-4d91-838a-dd2257abdf74",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C10",
+      "claim": "The cerebellum is heavily involved in online motor control.",
+      "claim_type": "EXPLICIT",
+      "source": "The cerebellum is heavily involved in online motor control and should process sensorimotor information with great accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "998c1003-04f1-4eef-807a-3b6dfa30b53c",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C11",
+      "claim": "Precisely timed PC spikes and their synchronized firing can transmit timing-sensitive information.",
+      "claim_type": "EXPLICIT",
+      "source": "In one view, transmission of timing-sensitive information is performed by precisely timed PC spikes and their synchronized firing (Ebner and Bloedel, 1981; Gauck and Jaeger, 2000; Shin and De Schutter, 2006; de Solages et al., 2008; De Zeeuw et al., 2011; Person and Raman, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "9dcc225a-9fb2-4200-8a02-5d4259eb9226",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C12",
+      "claim": "PCs use linear firing-rate coding with weak PC-to-PC correlations to robustly control continuous movement kinematics.",
+      "claim_type": "EXPLICIT",
+      "source": "In the other, PCs use linear firing-rate coding with weak PC-to-PC correlations to robustly control continuous movement kinematics, where high signal-to-noise ratio is achieved by averaging the rates of many PCs (Shidara et al., 1993; Thier et al., 2000; Roitman et al., 2005; Medina and Lisberger, 2007; Catz et al., 2008; Herzfeld et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an alternative view supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "9b79870f-3e26-4f1d-83ee-13dee8e41f3a",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C13",
+      "claim": "Pauses in the PC spike train abruptly interrupt the rapid and very regular firing of PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we focused on the role of long, infrequent interspike intervals (ISI), called pauses, which abruptly interrupt the rapid and very regular firing of PCs (Schonewille et al., 2006; Shin and De Schutter, 2006; Shin et al., 2007; Yartsev et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "a37c92a5-14d1-4dbf-9120-164e4cee657f",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C14",
+      "claim": "Spikes that initiate and terminate pauses often synchronize sharply across nearby PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Spikes that initiate and terminate pauses often synchronize sharply across nearby PCs (Shin and De Schutter, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "b9636969-e28b-4078-9ec2-3e2fe8729765",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C15",
+      "claim": "Recordings were obtained from three rhesus (Macaca mulatta) monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "From three rhesus (Macaca mulatta) monkeys (E, H, and N), we simultaneously recorded spikes of single PCs, the slow component of the LFP below low-\u03b3 frequency (42 Hz), and eye positions during spontaneous and visually guided saccades (Figure 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental subjects used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "1333d062-c759-41d7-8fe1-5376ec95fbcb",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C16",
+      "claim": "Only recordings where both simple and complex spikes could be isolated were used.",
+      "claim_type": "EXPLICIT",
+      "source": "Only recordings where both simple and complex spikes could be isolated were used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a selection criterion for the data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "dbf453c2-e7ca-41ca-8f54-1539081fa2c3",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C17",
+      "claim": "Complex spikes comprised 1.71 \u00b1 0.13% of total spikes with a rate of 0.81 \u00b1 0.07 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we focused exclusively on simple spikes, since complex spikes comprised a very small percentage of total spikes (1.71 \u00b1 0.13% with a rate of 0.81 \u00b1 0.07 Hz, mean \u00b1 SEM) and their overall effect on firing statistics was not significant (Figure 1\u2014figure supplement 1H, see also below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "a30a0337-9496-4080-a791-ea0b02032ea8",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C18",
+      "claim": "CCFLFP-EV was significant in recordings from 49 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "First, CCFLFP-EV was significant in recordings from 49 cells (p<0.01, t-test, n = 33, 15, 1 from E, H, and N, respectively), but significant CCFSpike-EV was found only in a subset of 34 cells (p<0.01, t-test, n = 21, 12, 1 from E, H, and N, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "f414e5c0-eeff-4f65-8829-e2a157ed7585",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C19",
+      "claim": "Significant CCFSpike-EV was found only in a subset of 34 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "First, CCFLFP-EV was significant in recordings from 49 cells (p<0.01, t-test, n = 33, 15, 1 from E, H, and N, respectively), but significant CCFSpike-EV was found only in a subset of 34 cells (p<0.01, t-test, n = 21, 12, 1 from E, H, and N, respectively).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "e53cca31-715d-43d1-bba2-49607b97fd1c",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C20",
+      "claim": "The CCF varied less significantly with the angles of eye movements for the LFP than for spikes in most cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, when computed to account for the eye speed component for specific directions, the CCF varied less significantly with the angles of eye movements for the LFP than for spikes, in most cases (Figure 1B,C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 1C where 74% of recordings showed this pattern.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "20d8d383-7dcf-4b6a-bbda-d6ff71a02cac",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C21",
+      "claim": "The LFP represents the average activity of many neurons with diverse angle-dependencies in the local network.",
+      "claim_type": "EXPLICIT",
+      "source": "This supports the view that the LFP represents the average activity of many neurons with diverse angle-dependencies in the local network (Buzs\u00e1ki et al., 2012) rather than reflecting the activity of a single PC or a cluster of PCs with similar directional tuning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is supported by a citation and by the observed differences in directional tuning.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "5ac33ee2-517a-4897-a9ee-b49fa377ef17",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C22",
+      "claim": "All recorded PCs fired rapidly at 55 \u00b1 18 Hz with high regularity.",
+      "claim_type": "EXPLICIT",
+      "source": "All recorded PCs fired rapidly (55 \u00b1 18 Hz, mean \u00b1 SD) with high regularity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "b3627ec7-9408-4da2-968d-f8ca5b85d1ae",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C23",
+      "claim": "All spike trains contained a significantly higher number of regularly firing spikes than the control.",
+      "claim_type": "EXPLICIT",
+      "source": "All of our spike trains contained a significantly higher number of regularly firing spikes (AI \u2248 0, or equivalently CV2 \u2248 0) than the control (p<0.01, one-sided z-test; Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical comparison with control data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "0cb2022a-dd87-4acb-a869-bd8428c91681",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C24",
+      "claim": "ISI distributions had long tails that followed a power law with \u03b1 = 3.78 \u00b1 0.64.",
+      "claim_type": "EXPLICIT",
+      "source": "ISI distributions had long tails that followed a power law, PISI(x) ~ x-\u03b1 (\u03b1 = 3.78 \u00b1 0.64; tail onset = 30.4 \u00b1 13.4 ms; p<0.05, n = 32) (Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical characterization of the ISI distribution from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "64eb61c0-6148-400e-9ba4-4e9bdd946f61",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C25",
+      "claim": "The size of the ISI after each spike quickly diverged as the AI of the spike increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the size of the ISI after each spike quickly diverged as the AI of the spike increased (Figure 2C), implying that deviation from regular firing tends to be associated with long ISIs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 2C and represents an observed relationship in the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "8bd34273-42ad-4262-94ca-15702116e7e0",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C26",
+      "claim": "Deviation from regular firing tends to be associated with long ISIs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the size of the ISI after each spike quickly diverged as the AI of the spike increased (Figure 2C), implying that deviation from regular firing tends to be associated with long ISIs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed relationship between AI and ISI size.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "8f8886f5-b199-4833-8e80-8c913c77e577",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C27",
+      "claim": "Complex spikes had a larger average AI than simple spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "Complex spikes had a larger average AI than simple spikes (complex: 0.36 \u00b1 0.12, simple: 5.9 \u00d7 10-4 \u00b1 7.7 \u00d7 10-4), but their standard deviations were comparable (complex: 0.36 \u00b1 0.05, simple: 0.31 \u00b1 0.04).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative comparison from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "6a2e7e08-6a71-42bf-bb3a-1b5815f79617",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C28",
+      "claim": "Correlations between AI and log10(ISI) were significantly smaller for complex spikes than simple spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "In all cells, correlations between AI and log10 (ISI) were significantly smaller for complex spikes than simple spikes (complex: 0.24 \u00b1 0.15, simple: 0.66 \u00b1 0.03; p<2.84 \u00d7 10-12, Wilcoxon rank-sum test), which made complex-spikes pauses poorly predicted by AI (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical comparison from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "cfb09191-8bae-411e-b93b-5112d388c1e9",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C29",
+      "claim": "Only 4.3 \u00b1 2.5% of all pauses would be caused by complex spikes when selecting ~10% of all ISIs as representative pauses.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, if we select ~10% of all ISIs as representative 'pauses', based on ISI size and the AI value of a preceding spike (see below), only 4.3 \u00b1 2.5% of all pauses would be caused by complex spikes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a calculation based on the experimental data and selection criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "d556c81c-7934-43a8-bf37-cd93b0d2116c",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C30",
+      "claim": "The STALFP of spikes that initiated or terminated pauses was characterized by strong and sharp peaks around the spike time.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the STALFP of spikes that initiated or terminated pauses was sharply different from those of regular spikes: the pause-related STALFP was characterized by strong and sharp peaks around the spike time, whereas the regular spike-related STALFP showed only a weak modulation (Figure 3A left, B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3A and quantified in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "a47f63db-e794-4486-813e-8fe3486c6ebb",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C31",
+      "claim": "Regular spike-related STALFP showed only a weak modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the STALFP of spikes that initiated or terminated pauses was sharply different from those of regular spikes: the pause-related STALFP was characterized by strong and sharp peaks around the spike time, whereas the regular spike-related STALFP showed only a weak modulation (Figure 3A left, B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 3A and quantified in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "1b70f3c9-224c-4617-8fca-d69718f7d7ef",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C32",
+      "claim": "Pause spikes are more strongly and more precisely coupled to network activity than regular spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that pause spikes are more strongly and more precisely coupled to network activity than regular spikes, but this fact goes unnoticed if the temporal structure of the spike train is ignored when computing the STALFP (Figure 3A right), because pauses are relatively rare events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the STALFP analysis showing different coupling strengths.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "20c3ccf1-a165-458f-ba8d-2e1e68bb74e9",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C33",
+      "claim": "Pause spikes strongly preferred certain phases of the \u03b2/\u03b3 LFP while regular spikes showed only a weak dependence on the phase.",
+      "claim_type": "EXPLICIT",
+      "source": "This was true in the entire dataset, where pause spikes strongly preferred certain phases of the \u03b2/\u03b3 LFP while regular spikes showed only a weak dependence on the phase (Figure 3C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the phase distribution analysis in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "0f806aba-4b66-4e22-b0c9-0a00edc9a0c5",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C34",
+      "claim": "Pause-initiating spikes preferentially occurred near the climbing phase at <\u03c6PauseI> = 48.7\u00ba \u00b1 45.7\u00ba.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, pause-initiating spikes preferentially occurred near the climbing phase, i.e., <\u03c6PauseI> = 48.7\u00ba \u00b1 45.7\u00ba where \u03c6PauseI was the most preferred phase for each data set, and pause-terminating spikes were shifted by about 3/4 cycles on average (<\u03c6PauseT> = <\u03c6PauseI> + 278.3\u00ba \u00b1 35.3\u00ba) (Figure 3E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement of phase preferences from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "661f9e82-2262-471d-827f-f14c217b6955",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C35",
+      "claim": "Pause-terminating spikes were shifted by about 3/4 cycles on average relative to pause-initiating spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, pause-initiating spikes preferentially occurred near the climbing phase, i.e., <\u03c6PauseI> = 48.7\u00ba \u00b1 45.7\u00ba where \u03c6PauseI was the most preferred phase for each data set, and pause-terminating spikes were shifted by about 3/4 cycles on average (<\u03c6PauseT> = <\u03c6PauseI> + 278.3\u00ba \u00b1 35.3\u00ba) (Figure 3E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative measurement of phase relationships from the data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "75014a09-a1bd-472a-896c-b923d0582a5e",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C36",
+      "claim": "Pauses are not randomly occurring events.",
+      "claim_type": "EXPLICIT",
+      "source": "These results clearly show that pauses are not randomly occurring events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phase-locking and STALFP results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "8b4d1ec8-7453-4820-9fed-959767406a44",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C37",
+      "claim": "Pause initiating and terminating spikes are temporally locked to specific patterns of network activity.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, their initiating and terminating spikes are temporally locked to specific patterns of network activity, which generate significant and temporally precise fluctuations in the LFP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the phase-locking and STALFP analyses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "f7340986-01da-4c79-a33a-a753ce68db33",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C38",
+      "claim": "The \u03b2/\u03b3 LFP was significantly coherent across all saccades with phase locking to saccade onsets in many recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "In many of them, the \u03b2/\u03b3 LFP was significantly coherent across all saccades, with a phase locking to saccade onsets (Figure 4A,B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4A,B and quantified by LFP phase reliability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "fb8d0c6f-7409-48f6-9067-4d0ec5dad818",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C39",
+      "claim": "Significantly high LFP phase reliability was found in 80% of the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly high LFP phase reliability was found in 80% of the data (p<0.01, n = 28, one sided t-test to time-shifted control data; <RLFP> = 0.20 \u00b1 0.02, mean \u00b1 SEM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "6e8e6c47-56bf-4126-873c-640c4ebcd929",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C40",
+      "claim": "Pause-initiating spikes encode saccade onsets with a significant and sharp increase in average firing.",
+      "claim_type": "EXPLICIT",
+      "source": "The most significant pattern that we observed was that pause-initiating spikes encode saccade onsets with a significant and sharp increase in average firing (Figure 4C and Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4C and quantified in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "a2fe6cd1-40c8-4b2d-8996-05907c0ff589",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C41",
+      "claim": "Spike reliability was significantly higher for pause spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly coincident spikes were indeed found during significant peaks of firing probability (colored regions in Figure 4C); therefore, spike reliability was significantly higher for pause spikes (Figure 4D), further emphasizing their role in encoding the onset of eye motion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4D comparing spike reliability across spike types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "4e5eaf70-8615-4406-b7c5-9334d769a3eb",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C42",
+      "claim": "The LFP phase and spike reliability were much more steeply related to each other for pause-initiating spikes than for regular spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the LFP phase and spike reliability were much more steeply related to each other for pause-initiating spikes than for regular spikes (Figure 4E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 4E with different slopes for different spike types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "270b6414-c841-42bf-ba7b-af0e63e67b5e",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C43",
+      "claim": "The fidelity of temporal coding by pauses in individual PCs crucially reflects the reliability of activity and coding of the local network.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that the fidelity of temporal coding by pauses in individual PCs crucially reflects the reliability of activity and coding of the local network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation between LFP phase reliability and spike reliability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "e67154d9-2876-4564-920d-4d67acaa00fd",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C44",
+      "claim": "The linear rate prediction m followed the actual rate very closely with R2 = 0.92 \u00b1 0.07.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the linear rate prediction m followed the actual rate very closely (R2 = 0.92 \u00b1 0.07, mean \u00b1 SD); therefore, the effect of the nonlinear transformation is small (Figure 5C\u2013E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the linear-nonlinear model fitting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "0d387184-e536-4bfb-985b-54522f9d4e2e",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C45",
+      "claim": "Correlation with the firing rate remained high (R2 = 0.81 \u00b1 0.17) when computed with only regular spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, correlation with the firing rate remained high (R2 = 0.81 \u00b1 0.17) when we computed the linear prediction with only regular spikes, which comprised about 20% of all spikes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the linear model analysis with regular spikes only.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "68c3edf3-f13a-43dd-8c71-69709cec89f8",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C46",
+      "claim": "The firing rate of pause spikes did not modulate as linearly or steeply as for regular spikes (R2 = 0.35 \u00b1 0.25).",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the firing rate of pause spikes (both pause-initiating and \u2013terminating spikes) did not modulate as linearly or steeply as for regular spikes (R2 = 0.35 \u00b1 0.25).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the linear model analysis with pause spikes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "6427dcec-3210-4e65-82ab-6b90133d016f",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C47",
+      "claim": "When selecting ~47% of all spikes as regular spikes, their CCFSpike-EV is very similar (\u03c1 \u2248 0.93 in average) to that of the full spike train.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, when we select ~47% of all spikes as regular spikes by imposing CV2 < 0.4, their CCFSpike-EV is very similar (\u03c1 \u2248 0.93 in average) to that of the full spike train.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "b44c8a82-17c4-43c9-9d8c-96b4903bf7a7",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C48",
+      "claim": "Regular spikes dominate rate coding.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination of Figure 5 and Figure 5\u2014figure supplement 1 demonstrates that regular spikes dominate rate coding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the high correlation between regular spike and full spike train rate coding.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "1622c9eb-5bf5-4a90-a9e3-e5e4ce10da87",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C49",
+      "claim": "Regular spike and full spike trains respond to similar motion features and share the linear coding property.",
+      "claim_type": "EXPLICIT",
+      "source": "Regular spike and full spike trains respond to similar motion features and also share the linear coding property.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similarity in CCF patterns and R\u00b2 values.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "9f372c3b-e346-4cc1-b581-e1404422cab2",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C50",
+      "claim": "Synchronized pauses can reliably trigger firing in CN neurons at movement onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, recent optogenetic experiments have shown that synchronous pauses induced either by direct/indirect inhibition or at the offset of direct excitation, can reliably trigger firing in CN neurons, and importantly, at movement onset (Heiney et al., 2014; Lee et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to optogenetic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "8e583248-fa0b-463c-93b8-29991f10ea97",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C51",
+      "claim": "CN neurons can reliably generate time-locked rebound spikes in response to synchronized inputs followed by simultaneous disinhibition, even at moderate levels of synchrony (\u226450%) and spike time jitter (\u226420 ms).",
+      "claim_type": "EXPLICIT",
+      "source": "With exceptionally fast GABAergic synapses (Person and Raman, 2012), CN neurons can reliably generate time-locked rebound spikes in response to synchronized inputs followed by simultaneous disinhibition, even at moderate levels of synchrony (\u226450%) (Person and Raman, 2012) and spike time jitter (\u226420 ms) (Gauck and Jaeger, 2000; Sudhakar et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "be5b115a-c3b8-42cf-8bd8-a4129cc5ba17",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C52",
+      "claim": "Synchronized pause spikes constitute the most significant population signal in PCs despite their sparse appearance in individual spike trains.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that synchronized pause spikes constitute the most significant population signal in PCs despite their sparse appearance in individual spike trains, suggesting that they can be a specific signaling mechanism in the PC-CN part of the motor pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the strong LFP coupling and reliability of pause spikes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "ec73e208-0487-4ed2-b4d2-907487b9054e",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C53",
+      "claim": "Cerebellar LFP is coherent with neocortical LFP.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that cerebellar LFP is coherent with neocortical LFP (Courtemanche and Lamarre, 2005; Soteropoulos and Baker, 2006; Ros et al., 2009) and also plays a critical role in maintaining LFP coherence between the sensory and motor cortex, particularly in the low \u03b3 band (Popa et al., 2013), pause spikes may also have a special relationship with the LFP in the cerebral cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "4b8f45de-0e3a-4e7f-a65c-c1e4d850b5d1",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C54",
+      "claim": "The cerebellum plays a critical role in maintaining LFP coherence between the sensory and motor cortex, particularly in the low \u03b3 band.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering that cerebellar LFP is coherent with neocortical LFP (Courtemanche and Lamarre, 2005; Soteropoulos and Baker, 2006; Ros et al., 2009) and also plays a critical role in maintaining LFP coherence between the sensory and motor cortex, particularly in the low \u03b3 band (Popa et al., 2013), pause spikes may also have a special relationship with the LFP in the cerebral cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Popa et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "17afdc11-9e81-41d3-be15-da66d097117e",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C55",
+      "claim": "The pause-related \u03b2/\u03b3 LFP signal originates from localized sources and decays quickly with distance, spreading at most a few hundred microns.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the pause-related \u03b2/\u03b3 LFP signal originates from localized sources and decays quickly with distance, spreading at most a few hundred microns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that STALFP amplitude diminished in LFPs recorded ~1 mm away.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "faaa95a2-abdc-42ea-be8c-954c8d7e7105",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C56",
+      "claim": "PCs are rarely synchronized unless they are very close to each other (<100 \u03bcm).",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with the fact that PCs are rarely synchronized unless they are very close to each other (<100 \u03bcm) (Ebner and Bloedel, 1981; Jaeger, 2003; Shin and De Schutter, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "66ffc97d-cced-4d4b-81b3-9707964055ef",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C57",
+      "claim": "The overall impact of complex spikes was negligible in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "The overall impact of complex spikes was negligible, most probably because none of our tasks involved sensorimotor learning where complex spikes are crucial (Catz et al., 2005; Medina and Lisberger, 2008), as they tend to occur after saccades, triggered by significant saccade errors (Herzfeld et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the task design and supported by citations about complex spike function.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "9b77d5c2-1555-4e35-a6d6-1071b9ebff54",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C58",
+      "claim": "In the motor and visual cortex, synchronized spikes have larger STALFP and better phase locking to the motion-related LFP \u03b2 oscillation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the motor and visual cortex, synchronized spikes have larger STALFP and better phase locking to the motion-related LFP \u03b2 oscillation (Denker et al., 2011; Ito et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work in other brain regions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "83c26efe-2344-4b42-8c46-dc4cde8b5f89",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C59",
+      "claim": "Firing rate variability and cross-correlation of PC firing both peaked at the onset of smooth-pursuit eye motion.",
+      "claim_type": "EXPLICIT",
+      "source": "In another part of the cerebellum, Medina and Lisberger found that firing rate variability and cross-correlation of PC firing both peaked at the onset of smooth-pursuit eye motion (Medina and Lisberger, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Medina and Lisberger, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "2de67d85-ac24-4c09-a4f0-ad5058f8a8fe",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C60",
+      "claim": "Correlated spiking in PCs is due to common input to PCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Medina and Lisberger also suggested that such correlated spiking is due to common input to PCs (Medina and Lisberger, 2007), which can significantly contribute to the LFP signal (Denker et al., 2011) and trigger synchronized pauses (Jaeger, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "bb628b63-6e45-49d0-b7b7-9c577c30e138",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C61",
+      "claim": "Linear coding of motion kinematics by the PC firing rate has been repeatedly observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Linear coding of motion kinematics by the PC firing rate has been repeatedly observed (Shidara et al., 1993; Roitman et al., 2005; Medina and Lisberger, 2007; Herzfeld et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "1f3ef02a-1dea-432c-8509-79bed0130189",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C62",
+      "claim": "If correlations with other PCs are weak, rate coding by individual PCs can precisely control continuous movements since CN neurons receive inputs from many PCs and can average away noise in individual inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "If correlations with other PCs are weak, as is the case for regular spikes, rate coding by individual PCs can precisely control continuous movements since CN neurons receive inputs from many PCs and can average away noise in individual inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical inference about how rate coding works in the cerebellar circuit.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "707772d5-cf69-4532-bfeb-040ed9576ba5",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C63",
+      "claim": "Different stages of a movement may demand that some aspects of the motion be controlled more precisely than others.",
+      "claim_type": "EXPLICIT",
+      "source": "Because different stages of a movement may demand that some aspects of the motion be controlled more precisely than others, it is useful for PCs to use different spike codes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle about motor control used to interpret the findings.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "8be87be1-d5b1-41f4-9c3e-c904a42366b9",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C64",
+      "claim": "Multiplexed coding is used for sensorimotor coordination in the cerebellar cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that multiplexed coding is used for sensorimotor coordination in the cerebellar cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on all the experimental findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "574bc9e5-90d4-4ecd-aba8-a37817ee2ab4",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C65",
+      "claim": "All animal experiments were approved by the local animal care committee (Protocol number: Regierungpr\u00e4sidium T\u00fcbingen N1/08 and N6/13).",
+      "claim_type": "EXPLICIT",
+      "source": "All animal experiments were approved by the local animal care committee (Protocol number: Regierungpr\u00e4sidium T\u00fcbingen N1/08 and N6/13), conducted in accordance with German law and the National Institutes of Health's Guide for the Care and Use of Laboratory Animals and carefully monitored by the veterinary administration (Regierungspr\u00e4sidium and Landratsamt T\u00fcbingen).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval for the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "895271f5-bf11-42d6-842d-20d3be15ce6c",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C66",
+      "claim": "Three adult male rhesus monkeys were 10, 11, and 15 years old.",
+      "claim_type": "EXPLICIT",
+      "source": "Three adult male rhesus (Macaca mulatta) monkeys (E, H, and N; 10, 11, and 15 years old, respectively) were subjects in this study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the age of the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "543a58f1-d20b-414f-a49a-054b03ca31e7",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C67",
+      "claim": "Monkeys were implanted with a magnetic scleral search coil to record the eye position.",
+      "claim_type": "EXPLICIT",
+      "source": "They were implanted with a magnetic scleral search coil to record the eye position (Judge et al., 1980), a titanium head post to painlessly immobilize the head during experiments, and a circular titanium recording chamber located over the midline of the cerebellum to allow electrophysiological recordings (Thier and Erickson, 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the surgical preparation for the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "76c490cb-125a-4224-a3b5-549ef5d2f5b9",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C68",
+      "claim": "Animals made saccades either without (n = 16) or with visual cues (n = 18).",
+      "claim_type": "EXPLICIT",
+      "source": "Animals made saccades either without (n = 16) or with visual cues (n = 18), but we analyzed all data combined.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental paradigms used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "79ae4b4b-d30c-4f7b-a7a3-d804f4be4c3c",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C69",
+      "claim": "Extracellular potentials were initially high- and low-pass filtered online and recorded separately.",
+      "claim_type": "EXPLICIT",
+      "source": "Extracellular potentials were initially high- and low-pass filtered online and recorded separately.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data acquisition method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "e71f6988-1ceb-4842-a83f-35337c3975fc",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C70",
+      "claim": "The band pass-filtered (300 Hz\u20133 kHz) channel was used to identify single-unit activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The band pass-filtered (300 Hz\u20133 kHz) channel was used to identify single-unit activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the signal processing method for spike detection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "944c77f1-3001-41de-a541-33714de0748f",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C71",
+      "claim": "Single-PC units were distinguished by the presence of simple and complex spikes via online sorting.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-PC units were distinguished by the presence of simple and complex spikes via online sorting, but all spikes were resorted offline and semi-automatically via a neural network trained on manually selected spike waveform prototypes as in (Yartsev et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the spike sorting methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "90d22fbe-9650-4ff2-b568-9ec7a2545ee1",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C72",
+      "claim": "An additional offline low-pass filter at 42 Hz was applied to the LFP.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional offline low-pass filter at 42 Hz was applied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the LFP signal processing method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "d375b42c-bbcd-4cda-b498-0c7ba52da0bd",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "claim_id": "C73",
+      "claim": "Eye velocity was computed from recorded eye position using a Savitzky-Golay filter of the fifth order with a 25 ms time window.",
+      "claim_type": "EXPLICIT",
+      "source": "Eye velocity was computed from recorded eye position using a Savitzky-Golay filter of the fifth order with a 25 ms time window.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for computing eye velocity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "51bb9bd8-f0ec-4a79-a7ba-03a0a385c33b",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Purkinje cells use a multiplexed spike code where synchrony/spike time and firing rate encode different information during saccadic eye movements, allowing simultaneous precision in both timing and continuous control of motion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C9, and C64 collectively establish the main finding of multiplexed coding. The experimental data throughout the manuscript (Figures 1-5) demonstrate that different spike types encode different aspects of eye movement, with pause spikes encoding timing and regular spikes encoding kinematics. The conclusion is well-supported by converging evidence from multiple analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "2c565d07-54ab-4eb1-9d3a-e2d4238c1ea5",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Pause spikes (those initiating or terminating pauses) are strongly phase-coupled to the \u03b2/\u03b3 band LFP and provide temporally reliable signals, while regular spikes show weak LFP correlation. Pause spikes are not random events but are temporally locked to specific network activity patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 and C30-C37 are supported by comprehensive STALFP and phase-locking analyses (Figure 3). The PPC measurements, phase distribution analysis, and statistical comparisons demonstrate significant differences between pause and regular spikes. The quantitative measurements (e.g., phase preferences, PPC values) provide strong evidence for the differential coupling to network activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "3768dd23-9ce1-430d-97f6-bd1d4c897f62",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Pause-initiating spikes encode saccade onsets with high temporal reliability and sharp increases in firing, with spike reliability strongly correlated with LFP phase reliability. The \u03b2/\u03b3 LFP shows significant phase-locking to saccade onsets in 80% of recordings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C43 are supported by spike reliability analysis (Figure 4) showing significant coincidence events and correlation with LFP phase reliability. The statistical tests (p<0.01 for LFP reliability, significant spike coincidences) and quantitative measurements (RLFP = 0.20 \u00b1 0.02) provide strong evidence. The relationship between LFP and spike reliability demonstrates network-level coordination.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "b641a431-8d23-44aa-bef7-224475e94c0e",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Regular spikes dominate linear rate coding of eye movement kinematics. The linear-nonlinear model shows high correlation (R\u00b2 = 0.81 \u00b1 0.17) between regular spike firing rate and eye velocity, while pause spikes show poor linear correlation (R\u00b2 = 0.35 \u00b1 0.25).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8 and C44-C49 are supported by the linear-nonlinear model analysis (Figure 5). The high R\u00b2 values for regular spikes and similarity between regular spike and full spike train CCFs (\u03c1 \u2248 0.93) provide strong quantitative evidence. The contrast with pause spike performance further supports the differential coding scheme.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "75e1aad2-8426-4532-85ad-63c298682b84",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Purkinje cells fire rapidly (55 \u00b1 18 Hz) with high regularity, containing significantly more regularly firing spikes than control. ISI distributions have power-law tails (\u03b1 = 3.78 \u00b1 0.64), and deviation from regular firing is associated with long ISIs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C26 are supported by statistical characterization of spike trains (Figure 2). The comparison with rate-matching controls (p<0.01), power-law fitting (p<0.05), and correlation between AI and ISI size provide robust quantitative evidence for the firing pattern characteristics.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "b409ad4b-5829-4e43-baf5-69edcc580500",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Complex spikes had minimal impact on the study results, comprising only 1.71 \u00b1 0.13% of total spikes and causing only 4.3 \u00b1 2.5% of pauses. Their correlation between AI and ISI was significantly weaker than simple spikes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17, C27-C29, and C57 are supported by quantitative measurements and statistical comparisons (p<2.84 \u00d7 10\u207b\u00b9\u00b2). The justification for excluding complex spikes from main analyses is well-documented with measurements showing their limited contribution to the phenomena under study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "02c56da4-2be8-46cd-90cc-3e1b45d7997c",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "LFP-eye velocity correlation (CCFLFP-EV) was significant in 49 cells while spike-eye velocity correlation (CCFSpike-EV) was significant in only 34 cells. The LFP showed less directional dependence than spikes, supporting the view that LFP represents averaged activity of many neurons with diverse tuning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C21 are supported by cross-correlation analysis (Figure 1) with appropriate statistical tests (p<0.01). The observation that 74% of recordings showed greater directional variability in spikes than LFP supports the interpretation about LFP representing population activity, though this interpretation relies partly on cited prior work (C21).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "116dddfb-a7fc-4fde-8ae3-246d434a33a7",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Synchronized pause spikes constitute the most significant population signal in PCs and can reliably trigger firing in cerebellar nucleus neurons at movement onset, even at moderate synchrony levels (\u226450%) and spike time jitter (\u226420 ms).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 combine current findings (C52) with cited prior work (C50-C51). While C52 is an inference supported by the LFP coupling and reliability data from this study, the mechanistic claims about CN neuron responses rely entirely on citations to optogenetic studies. The integration is logical but the causal mechanism is not directly tested here.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "fd3fb393-1be3-4677-b6c4-29f99ec8e04e",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The pause-related \u03b2/\u03b3 LFP signal originates from localized sources and decays quickly with distance, spreading at most a few hundred microns. This is consistent with PC synchronization occurring only when cells are very close (<100 \u03bcm).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C55 is supported by observations from Figure 3\u2014figure supplement 4 showing diminished STALFP amplitude at ~1 mm distance. Claim C56 is supported by citations to prior work. The inference about localized sources is reasonable given the spatial decay pattern, though the exact spatial extent is not precisely quantified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "0114dd6b-fb71-43bf-8786-e81ae384ab29",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study used three rhesus monkeys with appropriate ethical approval, recording PC spikes, LFP, and eye movements during spontaneous and visually-guided saccades. Data processing included spike sorting, LFP filtering (<42 Hz), and eye velocity computation using Savitzky-Golay filtering.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C16 and C65-C73 describe the experimental methods and are internally consistent. The methods are described in sufficient detail for the main analyses, though some computational details are deferred to appendices. Ethical approval is documented (C65) and the selection criteria (C16) are clearly stated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "d88d6fe9-fafb-4b00-b3ea-43a0a4a96919",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Purkinje cells are the sole output neurons of the cerebellar cortex, encode sensorimotor information, and the cerebellum is heavily involved in online motor control requiring accurate sensorimotor processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, and C10 represent established anatomical and functional knowledge about the cerebellum, supported by the broader neuroscience literature. These are background claims that provide context for the study rather than novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "a83ea9ab-8354-40f6-ac38-fb30c862eb87",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Two competing views exist in the literature: one proposing that PCs use precisely timed synchronized spikes for timing-sensitive information, and another proposing linear firing-rate coding with weak correlations for continuous movement control. Pauses in PC spike trains are well-documented phenomena that can synchronize across nearby cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 accurately represent prior work through appropriate citations. These claims establish the scientific context and controversy that motivates the current study. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "dccd7606-443c-4197-853e-3ea0089c9432",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work has shown that cerebellar LFP is coherent with neocortical LFP, plays a role in maintaining sensory-motor cortex coherence, and that synchronized spikes in motor/visual cortex show enhanced LFP coupling. Linear rate coding by PCs has been repeatedly observed, and weak PC-PC correlations enable precise control through population averaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54 and C58-C62 represent prior work supported by appropriate citations. These claims contextualize the current findings within the broader literature. The citations appear relevant, though the accuracy of the cited work cannot be fully verified without examining the original sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    },
+    {
+      "id": "ac20d054-e762-4596-981b-88890ef5e19d",
+      "content_id": "b892f912-12f6-461d-80fa-ab3f49ebfe7b",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Different stages of movement may demand that some aspects of motion be controlled more precisely than others, making it useful for PCs to use different spike codes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 represents a general principle about motor control used to interpret the findings. This is a reasonable theoretical framework that provides context for why multiplexed coding would be advantageous, though it is not directly tested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:34:59.354469Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7caac5d9-3a10-4482-94cd-fdaf39e8a3b1",
+      "result_id": "51bb9bd8-f0ec-4a79-a7ba-03a0a385c33b"
+    },
+    {
+      "claim_id": "fcc0ad28-41f3-46d0-9a1f-abdb0eb7625b",
+      "result_id": "51bb9bd8-f0ec-4a79-a7ba-03a0a385c33b"
+    },
+    {
+      "claim_id": "843775b1-d396-43ee-b1f4-ea54f838f6db",
+      "result_id": "51bb9bd8-f0ec-4a79-a7ba-03a0a385c33b"
+    },
+    {
+      "claim_id": "8be87be1-d5b1-41f4-9c3e-c904a42366b9",
+      "result_id": "51bb9bd8-f0ec-4a79-a7ba-03a0a385c33b"
+    },
+    {
+      "claim_id": "9739c8de-7eba-4881-9f82-1d6cb1a3a457",
+      "result_id": "2c565d07-54ab-4eb1-9d3a-e2d4238c1ea5"
+    },
+    {
+      "claim_id": "bc5fb0ee-8ba4-4dba-9fd8-44bf821cee72",
+      "result_id": "2c565d07-54ab-4eb1-9d3a-e2d4238c1ea5"
+    },
+    {
+      "claim_id": "d556c81c-7934-43a8-bf37-cd93b0d2116c",
+      "result_id": "2c565d07-54ab-4eb1-9d3a-e2d4238c1ea5"
+    },
+    {
+      "claim_id": "a47f63db-e794-4486-813e-8fe3486c6ebb",
+      "result_id": "2c565d07-54ab-4eb1-9d3a-e2d4238c1ea5"
+    },
+    {
+      "claim_id": "1b70f3c9-224c-4617-8fca-d69718f7d7ef",
+      "result_id": "2c565d07-54ab-4eb1-9d3a-e2d4238c1ea5"
+    },
+    {
+      "claim_id": "20c3ccf1-a165-458f-ba8d-2e1e68bb74e9",
+      "result_id": "2c565d07-54ab-4eb1-9d3a-e2d4238c1ea5"
+    },
+    {
+      "claim_id": "0f806aba-4b66-4e22-b0c9-0a00edc9a0c5",
+      "result_id": "2c565d07-54ab-4eb1-9d3a-e2d4238c1ea5"
+    },
+    {
+      "claim_id": "661f9e82-2262-471d-827f-f14c217b6955",
+      "result_id": "2c565d07-54ab-4eb1-9d3a-e2d4238c1ea5"
+    },
+    {
+      "claim_id": "75014a09-a1bd-472a-896c-b923d0582a5e",
+      "result_id": "2c565d07-54ab-4eb1-9d3a-e2d4238c1ea5"
+    },
+    {
+      "claim_id": "8b4d1ec8-7453-4820-9fed-959767406a44",
+      "result_id": "2c565d07-54ab-4eb1-9d3a-e2d4238c1ea5"
+    },
+    {
+      "claim_id": "6e8e6c47-56bf-4126-873c-640c4ebcd929",
+      "result_id": "3768dd23-9ce1-430d-97f6-bd1d4c897f62"
+    },
+    {
+      "claim_id": "a2fe6cd1-40c8-4b2d-8996-05907c0ff589",
+      "result_id": "3768dd23-9ce1-430d-97f6-bd1d4c897f62"
+    },
+    {
+      "claim_id": "4e5eaf70-8615-4406-b7c5-9334d769a3eb",
+      "result_id": "3768dd23-9ce1-430d-97f6-bd1d4c897f62"
+    },
+    {
+      "claim_id": "270b6414-c841-42bf-ba7b-af0e63e67b5e",
+      "result_id": "3768dd23-9ce1-430d-97f6-bd1d4c897f62"
+    },
+    {
+      "claim_id": "f7340986-01da-4c79-a33a-a753ce68db33",
+      "result_id": "3768dd23-9ce1-430d-97f6-bd1d4c897f62"
+    },
+    {
+      "claim_id": "fb8d0c6f-7409-48f6-9067-4d0ec5dad818",
+      "result_id": "3768dd23-9ce1-430d-97f6-bd1d4c897f62"
+    },
+    {
+      "claim_id": "ba44ae5c-1ccc-4f37-b896-62f120317709",
+      "result_id": "b641a431-8d23-44aa-bef7-224475e94c0e"
+    },
+    {
+      "claim_id": "e67154d9-2876-4564-920d-4d67acaa00fd",
+      "result_id": "b641a431-8d23-44aa-bef7-224475e94c0e"
+    },
+    {
+      "claim_id": "0d387184-e536-4bfb-985b-54522f9d4e2e",
+      "result_id": "b641a431-8d23-44aa-bef7-224475e94c0e"
+    },
+    {
+      "claim_id": "68c3edf3-f13a-43dd-8c71-69709cec89f8",
+      "result_id": "b641a431-8d23-44aa-bef7-224475e94c0e"
+    },
+    {
+      "claim_id": "6427dcec-3210-4e65-82ab-6b90133d016f",
+      "result_id": "b641a431-8d23-44aa-bef7-224475e94c0e"
+    },
+    {
+      "claim_id": "b44c8a82-17c4-43c9-9d8c-96b4903bf7a7",
+      "result_id": "b641a431-8d23-44aa-bef7-224475e94c0e"
+    },
+    {
+      "claim_id": "1622c9eb-5bf5-4a90-a9e3-e5e4ce10da87",
+      "result_id": "b641a431-8d23-44aa-bef7-224475e94c0e"
+    },
+    {
+      "claim_id": "5ac33ee2-517a-4897-a9ee-b49fa377ef17",
+      "result_id": "75e1aad2-8426-4532-85ad-63c298682b84"
+    },
+    {
+      "claim_id": "b3627ec7-9408-4da2-968d-f8ca5b85d1ae",
+      "result_id": "75e1aad2-8426-4532-85ad-63c298682b84"
+    },
+    {
+      "claim_id": "0cb2022a-dd87-4acb-a869-bd8428c91681",
+      "result_id": "75e1aad2-8426-4532-85ad-63c298682b84"
+    },
+    {
+      "claim_id": "64eb61c0-6148-400e-9ba4-4e9bdd946f61",
+      "result_id": "75e1aad2-8426-4532-85ad-63c298682b84"
+    },
+    {
+      "claim_id": "8bd34273-42ad-4262-94ca-15702116e7e0",
+      "result_id": "75e1aad2-8426-4532-85ad-63c298682b84"
+    },
+    {
+      "claim_id": "8f8886f5-b199-4833-8e80-8c913c77e577",
+      "result_id": "b409ad4b-5829-4e43-baf5-69edcc580500"
+    },
+    {
+      "claim_id": "6a2e7e08-6a71-42bf-bb3a-1b5815f79617",
+      "result_id": "b409ad4b-5829-4e43-baf5-69edcc580500"
+    },
+    {
+      "claim_id": "cfb09191-8bae-411e-b93b-5112d388c1e9",
+      "result_id": "b409ad4b-5829-4e43-baf5-69edcc580500"
+    },
+    {
+      "claim_id": "dbf453c2-e7ca-41ca-8f54-1539081fa2c3",
+      "result_id": "b409ad4b-5829-4e43-baf5-69edcc580500"
+    },
+    {
+      "claim_id": "66ffc97d-cced-4d4b-81b3-9707964055ef",
+      "result_id": "b409ad4b-5829-4e43-baf5-69edcc580500"
+    },
+    {
+      "claim_id": "a30a0337-9496-4080-a791-ea0b02032ea8",
+      "result_id": "02c56da4-2be8-46cd-90cc-3e1b45d7997c"
+    },
+    {
+      "claim_id": "f414e5c0-eeff-4f65-8829-e2a157ed7585",
+      "result_id": "02c56da4-2be8-46cd-90cc-3e1b45d7997c"
+    },
+    {
+      "claim_id": "e53cca31-715d-43d1-bba2-49607b97fd1c",
+      "result_id": "02c56da4-2be8-46cd-90cc-3e1b45d7997c"
+    },
+    {
+      "claim_id": "20d8d383-7dcf-4b6a-bbda-d6ff71a02cac",
+      "result_id": "02c56da4-2be8-46cd-90cc-3e1b45d7997c"
+    },
+    {
+      "claim_id": "9f372c3b-e346-4cc1-b581-e1404422cab2",
+      "result_id": "116dddfb-a7fc-4fde-8ae3-246d434a33a7"
+    },
+    {
+      "claim_id": "8e583248-fa0b-463c-93b8-29991f10ea97",
+      "result_id": "116dddfb-a7fc-4fde-8ae3-246d434a33a7"
+    },
+    {
+      "claim_id": "be5b115a-c3b8-42cf-8bd8-a4129cc5ba17",
+      "result_id": "116dddfb-a7fc-4fde-8ae3-246d434a33a7"
+    },
+    {
+      "claim_id": "17afdc11-9e81-41d3-be15-da66d097117e",
+      "result_id": "fd3fb393-1be3-4677-b6c4-29f99ec8e04e"
+    },
+    {
+      "claim_id": "faaa95a2-abdc-42ea-be8c-954c8d7e7105",
+      "result_id": "fd3fb393-1be3-4677-b6c4-29f99ec8e04e"
+    },
+    {
+      "claim_id": "b9636969-e28b-4078-9ec2-3e2fe8729765",
+      "result_id": "0114dd6b-fb71-43bf-8786-e81ae384ab29"
+    },
+    {
+      "claim_id": "1333d062-c759-41d7-8fe1-5376ec95fbcb",
+      "result_id": "0114dd6b-fb71-43bf-8786-e81ae384ab29"
+    },
+    {
+      "claim_id": "574bc9e5-90d4-4ecd-aba8-a37817ee2ab4",
+      "result_id": "0114dd6b-fb71-43bf-8786-e81ae384ab29"
+    },
+    {
+      "claim_id": "895271f5-bf11-42d6-842d-20d3be15ce6c",
+      "result_id": "0114dd6b-fb71-43bf-8786-e81ae384ab29"
+    },
+    {
+      "claim_id": "543a58f1-d20b-414f-a49a-054b03ca31e7",
+      "result_id": "0114dd6b-fb71-43bf-8786-e81ae384ab29"
+    },
+    {
+      "claim_id": "76c490cb-125a-4224-a3b5-549ef5d2f5b9",
+      "result_id": "0114dd6b-fb71-43bf-8786-e81ae384ab29"
+    },
+    {
+      "claim_id": "79ae4b4b-d30c-4f7b-a7a3-d804f4be4c3c",
+      "result_id": "0114dd6b-fb71-43bf-8786-e81ae384ab29"
+    },
+    {
+      "claim_id": "e71f6988-1ceb-4842-a83f-35337c3975fc",
+      "result_id": "0114dd6b-fb71-43bf-8786-e81ae384ab29"
+    },
+    {
+      "claim_id": "944c77f1-3001-41de-a541-33714de0748f",
+      "result_id": "0114dd6b-fb71-43bf-8786-e81ae384ab29"
+    },
+    {
+      "claim_id": "90d22fbe-9650-4ff2-b568-9ec7a2545ee1",
+      "result_id": "0114dd6b-fb71-43bf-8786-e81ae384ab29"
+    },
+    {
+      "claim_id": "d375b42c-bbcd-4cda-b498-0c7ba52da0bd",
+      "result_id": "0114dd6b-fb71-43bf-8786-e81ae384ab29"
+    },
+    {
+      "claim_id": "18372a9c-d777-46a8-9e33-ee2de11be214",
+      "result_id": "d88d6fe9-fafb-4b00-b3ea-43a0a4a96919"
+    },
+    {
+      "claim_id": "d6376a0f-0e2b-474c-a306-682dc4bfd554",
+      "result_id": "d88d6fe9-fafb-4b00-b3ea-43a0a4a96919"
+    },
+    {
+      "claim_id": "b6ec7aa0-038b-4d91-838a-dd2257abdf74",
+      "result_id": "d88d6fe9-fafb-4b00-b3ea-43a0a4a96919"
+    },
+    {
+      "claim_id": "998c1003-04f1-4eef-807a-3b6dfa30b53c",
+      "result_id": "a83ea9ab-8354-40f6-ac38-fb30c862eb87"
+    },
+    {
+      "claim_id": "9dcc225a-9fb2-4200-8a02-5d4259eb9226",
+      "result_id": "a83ea9ab-8354-40f6-ac38-fb30c862eb87"
+    },
+    {
+      "claim_id": "9b79870f-3e26-4f1d-83ee-13dee8e41f3a",
+      "result_id": "a83ea9ab-8354-40f6-ac38-fb30c862eb87"
+    },
+    {
+      "claim_id": "a37c92a5-14d1-4dbf-9120-164e4cee657f",
+      "result_id": "a83ea9ab-8354-40f6-ac38-fb30c862eb87"
+    },
+    {
+      "claim_id": "ec73e208-0487-4ed2-b4d2-907487b9054e",
+      "result_id": "dccd7606-443c-4197-853e-3ea0089c9432"
+    },
+    {
+      "claim_id": "4b8f45de-0e3a-4e7f-a65c-c1e4d850b5d1",
+      "result_id": "dccd7606-443c-4197-853e-3ea0089c9432"
+    },
+    {
+      "claim_id": "9b77d5c2-1555-4e35-a6d6-1071b9ebff54",
+      "result_id": "dccd7606-443c-4197-853e-3ea0089c9432"
+    },
+    {
+      "claim_id": "83c26efe-2344-4b42-8c46-dc4cde8b5f89",
+      "result_id": "dccd7606-443c-4197-853e-3ea0089c9432"
+    },
+    {
+      "claim_id": "2de67d85-ac24-4c09-a4f0-ad5058f8a8fe",
+      "result_id": "dccd7606-443c-4197-853e-3ea0089c9432"
+    },
+    {
+      "claim_id": "bb628b63-6e45-49d0-b7b7-9c577c30e138",
+      "result_id": "dccd7606-443c-4197-853e-3ea0089c9432"
+    },
+    {
+      "claim_id": "1f3ef02a-1dea-432c-8509-79bed0130189",
+      "result_id": "dccd7606-443c-4197-853e-3ea0089c9432"
+    },
+    {
+      "claim_id": "707772d5-cf69-4532-bfeb-040ed9576ba5",
+      "result_id": "ac20d054-e762-4596-981b-88890ef5e19d"
+    }
+  ],
+  "comparisons": []
+}

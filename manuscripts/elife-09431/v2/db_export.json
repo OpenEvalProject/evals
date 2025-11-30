@@ -1,0 +1,2620 @@
+{
+  "submission": {
+    "id": "7ce61f46-8b61-4769-b9b4-cadde15d5900",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:22:49.151379Z",
+    "updated_at": "2025-11-29T21:22:49.151379Z"
+  },
+  "content": [
+    {
+      "id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "submission_id": "7ce61f46-8b61-4769-b9b4-cadde15d5900",
+      "content_type": "manuscript",
+      "content_text": "# Precise let-7 expression levels balance organ regeneration against tumor suppression\n\n## Authors\n\n- Linwei Wu<sup>1</sup>\n- Liem H Nguyen<sup>1</sup>\n- Kejin Zhou<sup>4</sup>\n- T Yvanka de Soysa<sup>5</sup>\n- Lin Li<sup>1</sup>\n- Jason B Miller<sup>4</sup>\n- Jianmin Tian<sup>9</sup>\n- Joseph Locker<sup>9</sup>\n- Shuyuan Zhang<sup>1</sup>\n- Gen Shinoda<sup>5</sup>\n- Marc T Seligson<sup>5</sup>\n- Lauren R Zeitels<sup>3</sup>\n- Asha Acharya<sup>3</sup>\n- Sam C Wang<sup>1</sup>\n- Joshua T Mendell<sup>3</sup>\n- Xiaoshun He<sup>2</sup>\n- Jinsuke Nishino<sup>12</sup>\n- Sean J Morrison<sup>12</sup>\n- Daniel J Siegwart<sup>4</sup> ([ORCID: 0000-0003-3823-1931](https://orcid.org/0000-0003-3823-1931))\n- George Q Daley<sup>5</sup>\n- Ng Shyh-Chang<sup>5</sup>\n- Hao Zhu<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Children's Research Institute, Departments of Pediatrics and Internal Medicine, Simmons Comprehensive Cancer Center University of Texas Southwestern Medical Center Dallas United States\n2. Organ Transplant Center The First Affiliated Hospital of Sun Yat-Sen University Guangzhou China\n3. Center for Regenerative Science and Medicine University of Texas Southwestern Medical Center Dallas United States\n4. Simmons Comprehensive Cancer Center, Department of Biochemistry University of Texas Southwestern Medical Center Dallas United States\n5. Stem Cell Transplantation Program, Division of Pediatric Hematology/Oncology Boston Children's Hospital and Dana Farber Cancer Institute Boston United States\n6. Harvard Stem Cell Institute Harvard University Boston United States\n7. Department of Biological Chemistry and Molecular Pharmacology Harvard Medical School Boston United States\n8. The Manton Center for Orphan Disease Research Howard Hughes Medical Institute, Boston Children\u2019s Hospital Boston United States\n9. Department of Pathology University of Pittsburg Pittsburg United States\n10. Department of Molecular Biology University of Texas Southwestern Medical Center Dallas United States\n11. Department of Surgery University of Texas Southwestern Medical Center Dallas United States\n12. Howard Hughes Medical Institute, Children's Research Institute, Department of Pediatrics University of Texas Southwestern Medical Center Dallas United States\n13. Stem cell and Regenerative Biology Genome Institute of Singapore Singapore Singapore\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe in vivo roles for even the most intensely studied microRNAs remain poorly defined. Here, analysis of mouse models revealed that let-7, a large and ancient microRNA family, performs tumor suppressive roles at the expense of regeneration. Too little or too much let-7 resulted in compromised protection against cancer or tissue damage, respectively. Modest let-7 overexpression abrogated MYC-driven liver cancer by antagonizing multiple let-7 sensitive oncogenes. However, the same level of overexpression blocked liver regeneration, while let-7 deletion enhanced it, demonstrating that distinct let-7 levels can mediate desirable phenotypes. let-7 dependent regeneration phenotypes resulted from influences on the insulin-PI3K-mTOR pathway. We found that chronic high-dose let-7 overexpression caused liver damage and degeneration, paradoxically leading to tumorigenesis. These dose-dependent roles for let-7 in tissue repair and tumorigenesis rationalize the tight regulation of this microRNA in development, and have important implications for let-7 based therapeutics.\n\n## Introduction\n\nMicroRNAs are thought to control cellular responses to stresses such as tissue damage and transformation (Leung and Sharp, 2010; Chivukula et al., 2014), but the impact of this idea is unclear because microRNAs have been understudied in vivo. let-7 is one of the most ancient and omnipresent microRNAs, yet relatively little is known about its functional roles in mammalian development and physiology. let-7 was first identified as a gene that regulates the timing of developmental milestones in a C. elegans screen (Reinhart et al., 2000). In mammals, mature let-7 is undetectable in early embryos and embryonic stem cells, but becomes highly expressed in most adult tissues (Schulman et al., 2005; Thomson et al., 2006). A handful of previous studies have implicated let-7 in body size regulation, metabolism, stem cell self-renewal, and colon carcinogenesis (Zhu et al., 2011; Frost and Olson, 2011;\u00a0Shyh-Chang, et al., 2013;\u00a0Nishino et al., 2013; Madison, et al., 2013, but the core functions of let-7 in regeneration and disease remain incompletely understood.\n\nIn addition to questions about what let-7 does, it is unknown why so many let-7s are expressed at such high levels. In mice and humans, the let-7 family is comprised of 10 to 12 members who are thought to share a common set of mRNA targets. It has been thought that deep redundancy might make it difficult to discern any phenotypes that individual let-7s might have. Essential unanswered questions regarding let-7 biology include whether let-7 members are redundant, have unique functions, or are regulated to maintain a specific total dose. Our previous study of Lin28a, which inhibits the biogenesis of each let-7 member similarly (Heo et al., 2008; Nam et al., 2011), suggests that total let-7 dose alterations, rather than regulation of specific members, is important. In transgenic mice, modest increase in Lin28a and consequent 40% suppression of total let-7 levels promote increased glucose uptake and an overgrowth syndrome (Zhu et al., 2010).\n\nIn this study we examined the consequences of let-7 dose disruption in cancer and organ regeneration in genetic mouse models. While let-7s have been implicated as a tumor suppressor, this has predominantly been shown in cell lines and xenograft assays (Guo et al., 2006; Chang et al., 2009; Iliopoulos et al., 2009; Viswanathan et al., 2009; Wang et al., 2010; Lan et al., 2011), as well as using exogenous let-7 delivery to mouse cancer models (Esquela-Kerscher et al., 2008; Trang et al., 2010; Trang et al., 2011). Here, we confirmed the tumor suppressor activity of an endogenous transgenic let-7 in a MYC-driven hepatoblastoma model. However, we found that this same level of let-7 overexpression impaired liver regeneration after partial hepatectomy (PHx). Furthermore, chronic high-dose let-7 resulted in severe liver damage and paradoxical liver cancer development. Overall, we provide in vivo evidence that let-7 expression levels have been developmentally constrained to balance the need for regenerative proliferation against the need to antagonize malignant proliferation, findings with implications for let-7 based therapies.\n\n## Results\n\n### let-7g inhibits the development of MYC-driven hepatoblastoma\n\nTo study the effect of let-7 on carcinogenesis, we employed an inducible MYC-driven hepatoblastoma model (Shachaf et al., 2004). In this model, most let-7s are suppressed by more than 60% (Nguyen et al., 2014). However, MYC affects the expression of many other microRNAs (Chang et al., 2009; Kota et al., 2009). To test if let-7 suppression is specifically required for MYC\u2019s oncogenic program, we simultaneously overexpressed let-7g and MYC using a triple transgenic, liver-specific, tet-off model (Figure 1A: LAP-tTA; TRE-MYC; TRE-let-7S21L transgenic mice). This transgenic form of let-7g is an engineered let-7 species called let-7S21L (let-7g Stem + miR-21 Loop) (Zhu et al., 2011), in which the precursor microRNA loop derives from mir-21 and cannot be bound and inhibited by Lin28b (Figure 1B), which is highly expressed in MYC-driven tumors (Chang et al., 2009; Nguyen et al., 2014).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/09431/elife-09431-fig1-v2.jpg)\n\n**Figure 1.:** (A)\u00a0Schema of the liver-specific inducible LAP-MYC +/- let-7S21L cancer model. (B)\u00a0let-7S21L is a chimeric construct containing the let-7g stem, miR-21 loop, and let-7g flanking sequences. (C)\u00a0Schema showing that LAP-MYC +/- let-7S21L mice were induced at 14 days\u00a0of age, tissues were collected at 90 days of age, and survival was followed. (D)\u00a0Ninety-day old mice bearing tumors in the LAP-MYC (87.5%, 7/8) and LAP-MYC + let-7S21L (27.3%, 3/11) mouse models. (E)\u00a0Livers showing tumors from the above mice. (F)\u00a0Liver surface area occupied by tumor.\u00a0(G)\u00a0Kaplan-Meier curve of LAP-MYC alone and LAP-MYC + let-7S21L mice. (H)\u00a0Mature let-7 expression levels in as determined by RT-qPCR. (I)\u00a0Human c-MYC mRNA expressionin tumors as determined by RT-qPCR. (J)\u00a0Heat map of let-7 target gene expression in WT normal livers, MYC tumors, and MYC + let-7S21L tumors as measured by RT-qPCR. Red is higher and blue is lower relative mRNA expression. (K)\u00a0Gene expression plotted as bar graphs to show relative changes. (L)\u00a0Evolutionarily conserved let-7 target sites within 3\u2019UTRs (Targetscan.org). All data in this figure are represented as mean \u00b1 SEM. *p < 0.05, **p < 0.01.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09431/elife-09431-fig1-figsupp1-v2.jpg)\n\nInduction of MYC with or without let-7S21L was initiated at 14 days\u00a0of age (Figure 1C). By 90 days of age, large multifocal tumors had formed in 88% of the MYC alone group, whereas single small tumors appeared in only 27% the MYC + let-7S21L group (Figure 1D\u2013F) and overall survival was dramatically improved (Figure 1G). The level of let-7g was increased more than eightfold in both non-tumor and tumor tissues (Figure 1H). Tumors from both groups showed similar histology (Figure 1\u2014figure supplement 1) and MYC expression (Figure 1I). Gene-expression within tumors showed that previously validated let-7 targets involved in proliferation and growth including Cdc25a (Johnson et al., 2007), Cdc34 (Legesse-Miller et al., 2009), E2f2 (Dong et al., 2010), E2f5 (Kropp et al., 2015), and Map4k4 (Tan et al., 2015) were upregulated in MYC-tumors, but suppressed back down to normal levels in the context of let-7 overexpression (Figure 1J\u2013L), suggesting that the repression of these targets restrains MYC-dependent tumorigenesis. These data indicated that let-7g has potent tumor suppressor activity in the context of MYC-driven hepatoblastoma.\n\n### let-7g overexpression inhibits liver regeneration after partial hepatectomy\n\nSince increasing let-7g was extremely effective at suppressing hepatoblastoma without compromising overall health, we asked if this\u00a0increase in levels would impact tissue homestasis. We examined let-7g overexpression in the setting of liver injuries that drive rapid proliferation and growth. After PHx, let-7s in regenerating tissues fell, but returned to normal after forty hours (Figure 2A), findings consistent with a\u00a0previous report (Chen et al., 2011). Similarly, let-7s also declined acutely after chemical injury with the xenobiotic TCPOBOP (1,4-bis-[2-[3,5-dichloropyridyloxy]] benzene) (Figure 2\u2014figure supplement 1A). This shows that while let-7 increases in a temporally defined fashion during development (Figure 2\u2014figure supplement 1B), it can transiently fluctuate after environmental perturbations. To test if the observed let-7 suppression is necessary for regeneration, we induced let-7g in LAP-let-7S21L mice and performed PHx (Figure 2B\u2013D). The body weight (Figure 2\u2014figure supplement 1C), liver function (Figure 2\u2014figure supplement 1D), resected liver mass (Figure 2E) and histology (Figure 2\u2014figure supplement 1E) were unaffected in LAP-let-7S21L mice compared to control mice. Forty hours after PHx, there was reduced liver mass and decreased Ki-67 in LAP-let-7S21L mice (Figure 2F\u2013H). Liver mass was no different at four and fourteen days, indicating a kinetic delay but not a permanent impairment (Figure 2\u2014figure supplement 1F,G).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/09431/elife-09431-fig2-v2.jpg)\n\n**Figure 2.:** (A)\u00a0Mature endogenous let-7 expression levels in WT C57Bl/6 mice at different time points after PHx as determined by RT-qPCR (n=4 and 4 for each time point).\u00a0(B)\u00a0Schema of the LAP-let-7S21L dox-inducible model. LAP-tTA single transgenic mice served as the controls. (C)\u00a0Schema showing that let-7S21L control and LAP-let-7S21L mice were induced at 42 days of\u00a0age, PHx was performed after 14 days\u00a0of induction, and tissues were collected 40 hr post PHx. (D)\u00a0Mature let-7 expression levels in let-7S21L and LAP-let-7S21L livers after 14 days\u00a0of induction (n=4 and 4). (E)\u00a0Resected liver/body weight ratios of LAP-tTA Control and LAP-let-7S21L mice at the time of PHx (n=4 and 4).\u00a0(F)\u00a0Liver/body weight ratios 40 hr after PHx (n=4 and 4). (G)\u00a0Ki-67 staining on resected and post-PHx liver tissues. (H)\u00a0Quantification of Ki-67-positive cells (n=2 and 2 mice; ten 20x fields for each mouse were quantified). (I)\u00a0Resected liver/body weight ratios 2 days after intravenous injection of 0.5 mg/kg negative control or let-7g microRNA mimics packaged in C12-200 LNPs (n=5 and 5). (J)\u00a0Liver/body weight ratios 40 hr after PHx (n=4 and 4). (K)\u00a0Mature let-7g expression levels in mimic treated livers (n=5 and 5). All data in this figure are represented as mean \u00b1 SEM. *p<0.05, **p<0.01.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09431/elife-09431-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A)\u00a0Sum of the absolute sequencing reads for mature let-7 microRNA family members after TCPOBOP treatment, as measured by small RNA sequencing.\u00a0(B)\u00a0Mature let-7 microRNA family expression in WT mouse livers at different ages as determined by RT-qPCR. Numbers over bars indicate the fold change normalized to that of 1 day old mice. (C)\u00a0Body weights of let-7S21L alone and LAP-let-7S21L mice pre-PHx (n=4 and 4). (D)\u00a0Liver function tests: ALT (U/L) and AST (U/L) of let-7S21L alone and LAP-let-7S21L mice pre-PHx (n=5 and 5). (E)\u00a0H&E staining of let-7S21L alone and LAP-let-7S21L mice pre-PHx. (F)\u00a0Schema showing that let-7S21L control and LAP-let-7S21L mice were induced at 42 days of age, PHx was performed after 14 days\u00a0of induction, and tissues were collected 4 and 14 days after PHx. (G)\u00a0Liver to body weight ratio of let-7S21L alone and LAP-let-7S21L mice 4 and 14 days after PHx (n=5 and 5). All data in this figure are represented as mean \u00b1 SEM. *p<0.05, **p<0.01.\n\nTo rule out increasing demands on microRNA biogenesis machinery as a mechanism of proliferative suppression, we delivered mature control or let-7g microRNA mimics (0.5 mg/kg) into wild-type mice two days prior to hepatectomy using C12-200 lipidoid nanoparticles (LNPs) (Love et al., 2010). let-7g, but not control mimics, inhibited regeneration (Figure 2I\u2013K). While let-7 overexpression blocked MYC-induced tumorigenesis, these data show that a similar increase in let-7 levels inhibited post-injury organ growth and regeneration.\n\n### Loss of let-7b and let-7c2 is sufficient to enhance liver regeneration\n\nTo assess the physiological relevance of our gain-of-function experiments, we examined knockout mice to determine if let-7 is a bona fide regeneration suppressor. Both let-7b and let-7c2 were conditionally deleted from the liver by crossing Albumin-Cre into a let-7b/c2\u00a0floxed\u00a0mouse (\"let-7b/c2 LKO\" mice, Figure 3A). Small RNA-sequencing data from Xie et al. showed that let-7 is one of the most highly expressed microRNA families in the liver and that let-7b and let-7c2 together comprise approximately 18% of the let-7 total (Figure 3B) (Xie et al., 2012). Thus, let-7b/c2 LKO mice have substantial, but far from a complete reduction of total let-7 levels.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/09431/elife-09431-fig3-v2.jpg)\n\n**Figure 3.:** (A)\u00a0Schema of liver-specific let-7b and let-7c2 knockout mice (let-7b/c2 LKO). Albumin-Cre excises loxPs in the embryonic liver of let-7b/c2Fl/Fl mice. Mice without Cre serve as the controls. (B)\u00a0Small RNA sequencing showing the distribution of 10 let-7s in WT mice (n=2) (Data obtained from Xie et al. 2012). (C)\u00a0Schema showing that PHx was performed on let-7b/c2Fl/Fl and let-7b/c2 LKO mice at 56 days of age and tissues were collected 40 hr post PHx. (D)\u00a0Resected liver/body weight ratios at the time of PHx, and (E)\u00a0Liver to body ratios of let-7b/c2Fl/Fl (n=11) and let-7b/c2 LKO mice (n=10) 40 hr after PHx. (F)\u00a0Ki-67 staining and (G)\u00a0Quantification of Ki-67-positive cells on resected and 40 hr post-PHx liver tissues (n=3 and 3 mice; total of five 40x fields/mouse were used for quantification). (H)\u00a0RT-qPCR on let-7 family members from let-7b/c2Fl/Fl and let-7b/c2 LKO mice pre- and 40 hr post-PHx. (I)\u00a0Viability of\u00a0H2.35 immortalized human hepatocytes treated with either scrambled, let-7a, or let-7b antiMiRs, measured at two and three days after transfection (n=10 each). All data in this figure are represented as mean \u00b1 SEM. *p<0.05, **p<0.01.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09431/elife-09431-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A)\u00a0Body weight, liver weight, and liver to body weight percent of let-7b/c2Fl/Fl (n = 7) and let-7b/c2 LKO mice (n=5) at 56 days\u00a0of age. (B)\u00a0H&E staining of let-7b/c2Fl/Fl (n=3) and let-7b/c2 LKO livers (n=3). (C)\u00a0Schema showing that PHx was performed on let-7b/c2Fl/Fl and let-7b/c2 LKO mice at 56 days\u00a0of age and tissues were collected at 4, 7, and 14 days post PHx. (D)\u00a0Liver to body weight percent of let-7b/c2Fl/Fl (n=11) and let-7b/c2 LKO mice (n=10) 4, 7, and 14 days after PHx. All data in this figure are represented as mean \u00b1 SEM. *p<0.05, **p<0.01.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/09431/elife-09431-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A)\u00a0Schema showing that let-7b/c2 +/+  and let-7b/c2Fl/Fl\u00a0mice were injected with AAV-Cre at 49 days\u00a0of age, PHx was performed 7 days\u00a0after viral injection, and tissues were collected 40 hr post PHx.\u00a0(B)\u00a0DNA gel showing excised let-7b/c2 band in let-7b/c2Fl/Fl\u00a0+\u00a0AAV-Cre mice (n=5) but not in let-7b/c2 +/+  + AAV-Cre mice. (C)\u00a0Percentage of resected liver/body weight ratios of let-7b/c2 +/+  + AAV-Cre (n=5) and let-7b/c2Fl/Fl + AAV-Cre mice (n=5) at the time of PHx. (D)\u00a0Liver/body weight ratios of the above mice 40 hr after PHx. (E)\u00a0Ki-67 staining on resected and 40\u00a0hr post-PHx livers from the above mice (n=3 and 3). (F)\u00a0Quantification of Ki-67-positive cells (n=2 and 2 mice; total of ten 40x fields/mouse were used for quantification). All data in this figure are represented as mean \u00b1 SEM. *p<0.05, **p<0.01.\n\nThese LKO mice were healthy and showed normal liver/body weight ratios and histology at baseline (Figure 3\u2014figure supplement 1A,B). An identical amount of liver mass was resected from let-7b/c2Fl/Fl control and let-7b/c2 LKO mice (Figure 3C,D), but LKO mice exhibited significant increases in liver mass and proliferation 40 hr after surgery (Figure 3E\u2013G). Four and seven days after PHx, there were no differences in liver weights, indicating that other phases of regeneration were unaffected (Figure 3\u2014figure supplement 1C,D). At fourteen days, the liver weight precisely achieved pre-surgery levels in control and LKO mice, indicating accelerated but not excessive regeneration (Figure 3\u2014figure supplement 1C,D). There was no compensatory upregulation of other let-7s in pre- or post-PHx tissues (Figure 3H), supporting the concept that let-7 is a dose-dependent regeneration suppressor.\n\nCre under the Albumin promoter is expressed in embryonic hepatoblasts that give rise to both hepatocyte and bile duct compartments (Postic and Magnuson, 1999, 2000; Xu et al., 2006; Weisend et al., 2009; Malato et al., 2011), so developmental influences of let-7 loss could have led to adult phenotypes. To define cell- and temporal-specific roles of let-7b/c2, we used adeno-associated virus expressing Cre (AAV8.TBG.PI.Cre.rBG, hereafter called \"AAV-Cre\"), known to mediate efficient gene excision in hepatocytes but never in biliary epithelial cells (Yanger et al., 2013) (Figure 3\u2014figure supplement 2A,B). These adult and hepatocyte-specific conditional knockout mice also exhibited significantly enhanced regenerative capacity (Figure 3\u2014figure supplement 2C\u2013F). To test if proliferative effects are specific to particular let-7 species, we knocked-down either let-7a or let-7b in SV40 immortalized hepatocytes (H2.35 cells) and found that both led to increased proliferation (Figure 3I). Collectively, our data shows that physiological let-7 levels regulate the kinetics of adult liver regeneration by hepatocytes.\n\n### let-7g suppresses liver regeneration through insulin-PI3K-mTOR\n\nlet-7 was previously demonstrated to regulate the insulin-PI3K-mTOR pathway (Zhu et al., 2011; Frost and Olson, 2011), which is also important in liver regeneration (Okano et al., 2003; Chen et al., 2009; Haga et al., 2009; Espeillac et al., 2011). To avoid auto-regulatory feedback and compensation as confounding factors, we focused on liver tissues exposed to acute let-7 gain or loss. In regenerating livers treated with let-7g mimic (Figure 2I\u2013K), we found significant protein suppression of insulin receptor \u03b2, Igf1r\u03b2, and Irs2, previously validated let-7 targets at the top of the insulin pathway (Figure 4A,B) (Zhu et al., 2011). In addition to insulin signaling components, the expression of cell cycle genes (Ccnb1, Cdc34, and Cdk8) and Map4k4 were also downregulated (Figure 4C). In mice with acute let-7b/c2 deletion by AAV-Cre (Figure 3\u2014figure supplement 2), there was a small increase in insulin receptor \u03b2\u00a0protein levels (Figure 4D,E). Increased mTOR signaling was also evident in the increased phospho-S6K/Total S6K and phospho-S6/Total S6 ratios (Figure 5E).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/09431/elife-09431-fig4-v2.jpg)\n\n**Figure 4.:** (A)\u00a0Western blots of insulin receptor \u03b2, Igf1r\u03b2, Irs2, and \u03b2-Actin in negative control or let-7g microRNA mimic treated liver tissues 40 hr after PHx. (B)\u00a0Quantification of intensity of insulin receptor \u03b2, Igf1r\u03b2, Irs2 (Image\u00a0J). (C)\u00a0Cell cycle gene expression in let-7S21L alone (n=4) and LAP-let-7S21L (n=4) livers before and 40 hr after PHx as determined by RT-qPCR. (D)\u00a0Western blots of insulin receptor \u03b2, Igf1r\u03b2, p-S6K,\u00a0total S6K, \u03b2-Actin, p-S6\u00a0(Ser235/236), and total\u00a0S6 in AAV-Cre treated let-7b/c2 +/+ and let-7b/c2Fl/Fl livers\u00a0(n=5 and 5). (E)\u00a0Quantification of intensity of insulin receptor \u03b2/\u03b2-Actin, p-S6K/total S6K, and p-S6/total S6, 40 hr after PHx (Image\u00a0J). (F)\u00a0Rapamycin treatment during and after PHx in let-7b/c2Fl/Fl\u00a0control and let-7b/c2 LKO mice. Shown are liver weights 40 hr post PHx. (G)\u00a0INK128 treatment during and after PHx in let-7b/c2Fl/Fl control and let-7b/c2 LKO mice. Shown are liver weights 40 hr post PHx. (H)\u00a0Western blots of p-S6K, total S6K, and \u03b2-Actin in let-7b/c2Fl/Fl control and let-7b/c2 LKO livers treated with either vehicle or INK128 at 40 hr post PHx. All data in this figure are represented as mean \u00b1 SEM. *p<0.05, **p<0.01.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/09431/elife-09431-fig5-v2.jpg)\n\n**Figure 5.:** (A)\u00a0Schema showing that let-7S21L control and Rosa-rtTA; let-7S21L mice were induced at 42 days of age and collected at 84 days. (B)\u00a0Images showing the whole body, extremities, and livers of Rosa-rtTA (n=4) and Rosa-let-7S21L mice (n=3) given 1\u00a0mg/mL dox between 42 and 84 days of age. (C)\u00a0Liver function tests: AST (U/L), ALT (U/L), and total bilirubin (mg/L) in these mice. (D)\u00a0H&E staining of livers. (E)\u00a0RT-qPCR of mature let-7s and other microRNAs in let-7g overexpressing mice (n=4 and\u00a03). (F)\u00a0Body weight 3 days after injection of 2.0 mg/kg negative control or let-7g microRNA mimics packaged in C12-200 LNPs relative to pre-injection weight (n=5 and 4). (G)\u00a0Liver function tests: AST (U/L) and ALT (U/L) in WT C57Bl/6 mice before and 3 days after mimic injection (n=5 and 4). (H)\u00a0Mature let-7 levels in wild-type C57Bl/6 mice treated with mimics as determined by RT-qPCR (n=5 and 4).\u00a0(I)\u00a0Kaplan-Meier curve for Rosa-let-7S21L induced with 1.0 g/L dox at 6 weeks old (n=15 and 17). (J)\u00a0Gross images of the liver of Rosa-let-7S21L mice induced for 18 months.\u00a0All data in this figure are represented as mean \u00b1 SEM. *p<0.05, **p<0.01.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09431/elife-09431-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Body, liver, and liver/body weight ratios of control (n=4) and Rosa-let-7S21L (n=3) mice after 42 days\u00a0of induction.\u00a0(B)\u00a0Gross image of Rosa-rtTA (non-induced) and Rosa-miR26a-2 (induced) mice under 1.0 g/L dox for 42 days. (C)\u00a0Liver function tests: AST (U/L), ALT (U/L), and total bilirubin (mg/L) (n=2 and 2) after induction. (D)\u00a0H&E staining of Rosa-rtTA (non-induced) and Rosa-miR26a-2 (induced) mice after induction.\u00a0All data in this figure are represented as mean \u00b1 SEM. *p<0.05, **p<0.01.\n\nTo determine if mTOR signaling is functionally relevant in LKO mice, we treated mice with rapamycin two hours prior to and immediately after PHx. Rapamycin abrogated differences in regenerating liver weights between control and LKO mice (Figure 4F), demonstrating that let-7b/c2 loss promotes additional mTOR activation to enhance regeneration. Rapamycin\u2019s allosteric inhibition of mTOR can lead to pleiotropic and unpredictable effects due to cell-type specific and feedback related phenomena (Thoreen et al., 2009). INK128 is a second generation mTOR inhibitor that directly competes with ATP at the catalytic domains of mTORC1/2, leading to more complete abrogation of 4EBP and S6K1 (Hsieh et al., 2012). INK128, similar to rapamycin, completely abrogated the regenerative enhancement associated with let-7b/c2 loss (Figure 4G). Analysis of p-S6K confirmed that mTOR is hyperactivated in LKO livers and that INK128 extinguishes the mTOR dependent phosphorylation of this substrate (Figure 4H). Similar results after rapamycin and INK128 indicated that mTOR and its substrates play an essential role in driving increased regeneration in the context of let-7 suppression.\n\n### Chronic high-dose let-7g causes hepatotoxicity and liver carcinogenesis\n\nSince acute let-7g induction interferes with hepatocyte proliferation, we asked what the effects of chronic high-dose let-7g induction might be. To answer this question, we induced let-7g using rtTA under the control of the Rosa promoter, which drives higher expression than the LAP promoter (Figure 5A). These mice lost significant body weight and became jaundiced (Figure 5\u2014figure supplement 1A and Figure 5). Liver function tests indicated severe liver injury (Figure 5C) and histology showed prominent microvesicular steatosis, characterized by intra-cytoplasmic lipid droplets (Figure 5D), a finding associated with drug-induced liver injury, acute fatty liver of pregnancy, or Reye\u2019s syndrome in humans. Using this system, mature let-7g was overexpressed by more than twentyfold, as compared to \u223ceightfold induction in the LAP-let-7S21L system (Figure 5E). Liver dysfunction was not seen after low-dose let-7 overexpression in LAP-let-7S21L mice (Figure 2\u2014figure supplement 1) or after high-dose miR-26a-2 overexpression in Rosa-rtTA; TRE-miR-26a-2 mice (Figure 5\u2014figure supplement 1B\u2013D), suggesting a dose and let-7 microRNA specific effect.\n\nAnother possibility was that the miR-21 loop of the let-7S21L construct saturated the microRNA biogenesis machinery, thus causing non-specific toxicity independent of the let-7 seed sequence. To address this we again delivered a higher dose (2.0 mg/kg) of mature let-7g and control microRNA mimics, which do not harbor loops or tails, into wild-type mice. Mice receiving let-7g mimic lost significantly more weight (Figure 5F) and suffered hepatocyte destruction leading to increased AST/ALT levels (Figure 5G), while control mice remained healthy. Mimic delivery achieved a twelvefold increase of let-7g (Figure 5H). These results suggest that above certain doses let-7 is incompatible with hepatocyte survival, and that let-7\u2019s anti-proliferative activities would interfere with normal tissue homeostasis.\n\nWhen the Rosa-let-7S21L mice were induced chronically, approximately 50% of the mice survived the acute liver injury seen after dox induction (Figure 5I). Over the course of 18 months, 5 of 10 (50%) of these surviving mice developed large liver tumors, whereas only 1 of 12 (7.7%) of the non-induced mice had any tumors (Figure 5J). Chronic let-7 overexpression likely caused hepatocyte toxicity and selected for pre-malignant hepatocytes that eventually become cancer. Our long-term experiments revealed the potential dangers of chronic let-7 treatment, and the consequent disruption of the balance between tissue regeneration, degeneration, and cancer risk.\n\n## Discussion\n\nThe role of let-7s in adult animal physiology is unclear in part because the redundancy of this large microRNA family has made loss of function studies challenging. Deep redundancy of multiple highly conserved genes raises the possibility that dose regulation is important. Despite this, overexpression has been helpful in uncovering physiological functions of let-7 (Zhu et al., 2011; Frost and Olson, 2011; Shyh-Chang et al., 2013;\u00a0Nishino et al., 2013; Madison et al., 2013).\u00a0Using overexpression tools, we have shown that let-7 suppression is a fundamental requirement for MYC-mediated liver transformation, and that let-7 is capable of counteracting strong oncogenic drivers in vivo. However, one negative consequence of raising the level of let-7 expression is a limitation in the ability to regenerate after major tissue loss. More surprisingly, our knockout mouse model showed that the loss of two out of the ten let-7 members in the liver resulted in improved liver proliferation and regeneration. These data suggest a lack of complete redundancy between let-7 microRNA species, but rather a precisely regulated cumulative dose that when increased or decreased, leads to significant alterations in regenerative capacity.\n\nThe knowledge that let-7 suppresses both normal and malignant growth will have particular relevance to malignancies that arise from chronically injured tissues. In these tissues, winners of the competition between cancer and host cells might ultimately dictate whether organ failure or tumor progression ensues. It has been thought that one key advantage of using microRNAs therapeutically is that they are already expressed at high levels in normal tissues, thus making increased dosing likely to be safe and tolerable. Surprisingly, we showed that chronic let-7 overexpression caused hepatotoxicity, disrupted tissue homeostasis, ultimately leading to carcinogenesis. This is likely due to the high levels of overexpression achieved in the Rosa-rtTA transgenic system, as opposed to the lower dose in the LAP-tTA system. These high doses are likely to be toxic to hepatocytes, a phenomena compounded by the fact that excess let-7 impairs proliferation in surviving cells that might serve to replenish lost tissues. Eventually, certain clones must epigenetically or genetically evolve to evade let-7 growth inhibition in order to transform.\n\nIt is also interesting that let-7 overexpression led to dramatically different outcomes in distinct cancer contexts. While dose is most likely the critical variable between the Rosa-rtTA and LAP-tTA systems, Rosa-rtTA does induce expression in cells other than hepatocytes and bile duct epithelia, leaving the possibility that non-cell autonomous influences of let-7 overexpression play a role in liver injury and cancer development. A more interesting possibility would be if distinct genetic subtypes of cancer respond differently to let-7 overexpression. Since let-7 has been conceptualized as a general tumor suppressor, it is surprising that it can cause opposing phenotypes in distinct cancer models. MYC liver cancers show a dramatic suppression of let-7, rendering it especially sensitive to let-7 replacement. Tumors or tissues with more normal levels of let-7 might not respond to increases in let-7. Alternatively, the growth of other cancer models may not depend on the overproduction of let-7 target genes/proteins. let-7 overexpression in these contexts would probably not elicit growth suppression, but may instead exacerbate tissue injury. It would be interesting to evaluate the effects of let-7 overexpression in hepatocellular carcinomas caused by different driver mutations. Together, our data suggest that let-7 therapy directed at hepatocellular carcinomas could be risky, given that most of these cancers occur in severely compromised, cirrhotic livers (Yang et al., 2011).\n\nWe speculate that the total dose of let-7 is evolutionarily determined via regulation of the expression levels of individual let-7 members, and is postnatally maintained at a level that can suppress cancer, but which also allows for adequate levels of mammalian regenerative capacity. Clearly, let-7 levels are not static throughout life, since let-7 levels are dynamic after environmental perturbations. However, when baseline let-7 levels are altered permanently by genetic means, compromises in tumor suppression or tissue regeneration were revealed. Our study underscores the importance of regulating appropriate levels of this small RNA to maintain health during times of regenerative stress.\n\n## Materials and methods\n\n### Mice\n\nAll mice were handled in accordance with the guidelines of the Institutional Animal Care and Use Committee at UTSW. MYC tumor models and the LAP-let-7S21L inducible mice were carried on a 1:1 FVB/C57Bl/6 strain background. Please see (Nishino et al., 2013) for more details about the let-7b/c2 floxed mice, which are on a C57Bl/6 background. The chronically injured let-7 inducible mice were on a mixed B6/129 background. All experiments were done in an age and sex controlled fashion unless otherwise noted in the figure legends.\n\n### Partial hepatectomy\n\nTwo-thirds of the liver was surgically excised as previously described (Mitchell and Willenbring, 2008).\n\n### RNA extraction and RT-qPCR\n\nTotal RNA was isolated using Trizol reagent (Invitrogen). For RT-qPCR of mRNAs, cDNA synthesis was performed with 1 ug of total RNA using miScript II Reverse Transcription Kit (Cat. #218161, Qiagen). Gene expression levels were measured using the \u0394\u0394Ct method as described previously (Zhu et al., 2010).\n\n### Western blot assay\n\nMouse liver tissues were ground with a pestle and lysed in T-PER Tissue Protein Extraction Reagent (Thermo Scientific Pierce). Western blots were performed in the standard fashion. The following antibodies were used: Anti-Insulin receptor\u00a0\u03b2 (Cell Signaling #3025), Anti-Igf1r\u03b2 (Cell Signaling #9750), Anti-Irs2 (Cell Signaling #3089), Anti-total\u00a0S6K (Cell Signaling #9202), Anti-p-S6K (Cell Signaling #9205), Anti-total\u00a0S6 (Cell Signaling #2217), Anti-p-S6 Ser235/236 (Cell Signaling #2211), Anti-mouse \u03b2-Actin (Cell Signaling #4970), Anti-rabbit IgG, HRP-linked Antibody (Cell Signaling #7074) and Anti-mouse IgG, HRP-linked Antibody (Cell Signaling #7076).\n\n### Histology and immunohistochemistry\n\nTissue samples were fixed in 10% neutral buffered formalin or 4% paraformaldehyde (PFA) and embedded in paraffin. In some cases, frozen sections were made. Immunohistochemistry was performed as previously described (Zhu et al., 2010). Primary antibodies used: Ki-67 (Abcam #ab15580). Detection was performed with the Elite ABC Kit and DAB Substrate (Vector Laboratories), followed by Hematoxylin Solution counterstaining (Sigma).\n\n### Liver function tests\n\nBlood samples (\u223c50 ul) were taken retro-orbitally in heparinized tubes. Liver function tests were analyzed by the UTSW Molecular Genetics core.\n\n### Viral Cre excision\n\n100 \u03bcL of AAV8.TBG.PI.Cre.rBG (University of Pennsylvania Vector Core) was retro-orbitally injected at a titer of 5 x\u00d7 1010 genomic particles to mediate 90%-\u2013100% Cre excision.\n\n### Cell culture and in vitro antiMiR experiments\n\nThe H2.35 cell line was directly obtained from ATCC and has been cultured for less than 6 months. The cells were authenticated by ATCC using Short Tandem Repeat (STR) DNA profiling. Cells were cultured in DMEM with 4% (vol/vol) FBS, 1x Pen/Strep (Thermo Scientific) and 200\u00a0nM Dexamethasone (Sigma). Cells were transfected with control (Life Technologies\u00a0Cat. AM17010), let-7a (Life Technologies Cat.\u00a0#4464084-Assay ID MH10050), or let-7g (Life Technologies\u00a0Cat. #4464084-Assay ID MH11050) miRVana antiMiRs. AntiMiRs were packaged by RNAiMAX (Invitrogen) and transfected into H2.35 cells cultured in 96-well plates at a concentration of 50 nM. The number of viable cells in each well was measured at 2 and 3 days after transfection using CellTiter-Glo Luminescent Cell Viability Assay (Promega\u00a0Cat. #G7570).\n\n### In vivo microRNA mimic experiments\n\nFor in vivo experiments, formulated C12-200 lipidoid nanoparticles (LNPs) were used to package either Control (Life Technologies\u00a0Cat. #4464061) or let-7g (Life Technologies\u00a0Cat. 364 #4464070-Assay ID MC11758) miRVana mimic at either 0.5 or 2 mg/kg and delivered intravenously through the tail vein. LNPs were formulated following the previously reported component ratios (Love et al., 2010) with the aid of a microfluidic rapid mixing instrument (Precision Nanosystems NanoAssemblr) and purified by dialysis in sterile PBS before injection.\n\n### In vivo drug treatments\n\nRapamycin (LC Biochem) was dissolved in 25% ethanol/PBS and then injected at 1.5 mg/kg 2 hr prior to and 20 hr after PHx. INK128 (LC Biochem) was formulated in 5% polyvinylpropyline, 15% NMP, 80% water and administered by oral gavage at 1 mg/kg 2 hr prior to and 20 hr after PHx.\n\n### MicroRNA sequencing\n\nFemale CD1 mice were treated with 3 mg/kg TCPOBOP in DMSO-corn oil by gavage (Tian et al., 2011), sacrificed at 3, 6, 9, 12, and 18 hr after treatment, and compared to untreated controls. Replicate libraries were made from two individual mice for each condition. RNA was purified with the Qiagen miRNeasy Mini kit. Small RNA libraries were constructed using an Illumina Truseq Small RNA Sample Prep Kit. 12 indexed libraries were multiplexed in a single flow cell lane and received 50 base single-end sequencing on an Illumina HiSeq 2500 sequencer. Sequence reads were aligned to mm9 using Tophat and quantified with Cufflinks by the FPKM method (Trapnell et al., 2012). Data for each experimental condition represent the average values from two libraries.\n\n### Statistical analysis\n\nThe data in most figure panels reflect multiple experiments performed on different days using mice derived from different litters. Variation is always indicated using standard error presented as mean \u00b1 SEM. Two-tailed Student's t-tests (two-sample equal variance) were used to test the significance of differences between two groups. Statistical significance is displayed as p<0.05 (*) or p<0.01 (**) unless specified otherwise. In all experiments, no mice were excluded form analysis after the experiment was initiated. Image analysis for the quantification of cell proliferation, cell death, and fibrosis were blinded.\n",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "c0f147fa-e728-43fd-b099-951c26f3be16",
+      "submission_id": "7ce61f46-8b61-4769-b9b4-cadde15d5900",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Amy J Wagers, Harvard University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.09431.015](https://doi.org/10.7554/eLife.09431.015)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"Precise Let-7 expression levels balance organ regeneration against tumor suppression\" for peer review at eLife. Your submission has been favorably evaluated by Fiona Watt (Senior editor), a Reviewing editor, and two reviewers.\n\nThe following individual responsible for the peer review of your submission has agreed to reveal his identity: Frank Slack (peer reviewer). A further reviewer remains anonymous.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nIn the manuscript entitled \"Precise Let-7 expression levels balance organ regeneration against tumor suppression\" Wu and colleagues utilize transgenic overexpression and liver-specific knockout of Let-7 to assess the consequences of Let-7 dysregulation in the setting of MYC-driven carcinogenesis and during liver regeneration after partial hepatectomy. The authors find that moderate Let-7 overexpression blocks MYC-driven hepatoblastoma formation and inhibits liver regeneration after partial hepatectomy. During liver regeneration, Let-7 overexpression alters steady state levels of various metabolites. Further, Let-7 regulates the insulin-mTOR pathway after regeneration. Finally, extreme Let-7 overexpression causes liver injury and liver carcinogenesis.\n\nAll reviewers found this work to be innovative and important, noting particularly the likely impact on the field of demonstrating the functional role of Let-7 regulation during carcinogenesis and liver repair and the potential negative effects of high dose Let-7 on normal liver function. However, two reviewers expressed significant concerns about the rather expansive scope of the manuscript in its current form, which causes the work to appear somewhat superficial and difficult to follow in places. The authors are strongly encouraged to consider how they may address this issue in their revision, perhaps by separating some of the multiple, intertwined stories or by providing clearer connections between the various observations that are reported.\n\nEssential revisions:\n\n1) Please revise the manuscript to provide more focus on the major conclusions and message and a clearer, more streamlined description of the experiments and data.\n\n2) Some conclusions presented appear to be stronger than others, and the paper would benefit from inclusion of relevant experimental caveats. For example, the partial hepatectomy studies only examine one time point, at 40 hours post resection, thereby only investigating the initial phase of hepatocyte proliferation, rather than also the subsequent phase of vascular-driven liver remodeling. It is possible that Let-7 is more dynamically regulated and active in both phases. Similar concerns apply to the metabolomics studies, which, while innovative, are problematic in that they represent a snap shot of the metabolic state at one time point. They provide no assessment of metabolite flux, which would require more extensive labeling studies. Further, the increase in nucleotides, for example, could well be due to increased biosynthesis, but could also be due to a block in nucleotide utilization. If rapid cell proliferation is required for liver regeneration, requiring rapid DNA synthesis, would DNA assembly be the rate-limiting step, causing accumulation of nucleotides? Also, would it be informative to correlate metabolite changes in the glycolysis or nucleotide biosynthesis pathways with expression changes of relevant enzymes? Please address these issues experimentally or by inclusion of relevant discussion and caveats.\n\n3) The role of mTOR in liver regeneration has been described, and the connection to the Let-7 pathway is intriguing, as is the fact that rapamycin decreases liver recovery. However, the pleiotropic effects of rapamycin are also well-described, and should be noted. The use of more specific agents (e.g. Torin) or genetic methods, if available, might also be desirable for a more comprehensive assessment.\n\n4) Please comment on whether differences in cellular context (i.e., oncogenetic background) in addition to or instead of Let7g levels may explain the different outcomes in the myc-driven vs. spontaneous tumor models.\n",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f5f30afa-181e-4e37-a09c-2c51d609799b",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C1",
+      "claim": "let-7 is one of the most ancient and omnipresent microRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "let-7 is one of the most ancient and omnipresent microRNAs, yet relatively little is known about its functional roles in mammalian development and physiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established scientific knowledge about let-7's evolutionary conservation and widespread expression.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "6150cb99-fc48-4f15-8226-c11ac360ad88",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C2",
+      "claim": "let-7 was first identified as a gene that regulates the timing of developmental milestones in a C. elegans screen.",
+      "claim_type": "EXPLICIT",
+      "source": "let-7 was first identified as a gene that regulates the timing of developmental milestones in a C. elegans screen (Reinhart et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Reinhart et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "8fe635c9-f438-4fff-af4d-e0fdd46bdf3b",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C3",
+      "claim": "Mature let-7 is undetectable in early embryos and embryonic stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, mature let-7 is undetectable in early embryos and embryonic stem cells, but becomes highly expressed in most adult tissues (Schulman et al., 2005; Thomson et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Schulman et al., 2005 and Thomson et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "7345511d-8bcb-44cc-9717-c0712013a87c",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C4",
+      "claim": "let-7 becomes highly expressed in most adult tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, mature let-7 is undetectable in early embryos and embryonic stem cells, but becomes highly expressed in most adult tissues (Schulman et al., 2005; Thomson et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Schulman et al., 2005 and Thomson et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "047038d1-d746-4fc7-8c27-49f386a2c28d",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C5",
+      "claim": "let-7 has been implicated in body size regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "A handful of previous studies have implicated let-7 in body size regulation, metabolism, stem cell self-renewal, and colon carcinogenesis (Zhu et al., 2011; Frost and Olson, 2011; Shyh-Chang, et al., 2013; Nishino et al., 2013; Madison, et al., 2013, but the core functions of let-7 in regeneration and disease remain incompletely understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations including Zhu et al., 2011 and Frost and Olson, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "b6da0079-21a0-4bdd-8e19-151a830c23fd",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C6",
+      "claim": "let-7 has been implicated in metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "A handful of previous studies have implicated let-7 in body size regulation, metabolism, stem cell self-renewal, and colon carcinogenesis (Zhu et al., 2011; Frost and Olson, 2011; Shyh-Chang, et al., 2013; Nishino et al., 2013; Madison, et al., 2013, but the core functions of let-7 in regeneration and disease remain incompletely understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "41911263-5a8b-4787-ab5b-205cc49e97ff",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C7",
+      "claim": "let-7 has been implicated in stem cell self-renewal.",
+      "claim_type": "EXPLICIT",
+      "source": "A handful of previous studies have implicated let-7 in body size regulation, metabolism, stem cell self-renewal, and colon carcinogenesis (Zhu et al., 2011; Frost and Olson, 2011; Shyh-Chang, et al., 2013; Nishino et al., 2013; Madison, et al., 2013, but the core functions of let-7 in regeneration and disease remain incompletely understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations including Shyh-Chang et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "e0a3f5be-c73d-4a15-9736-279054b431b8",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C8",
+      "claim": "let-7 has been implicated in colon carcinogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "A handful of previous studies have implicated let-7 in body size regulation, metabolism, stem cell self-renewal, and colon carcinogenesis (Zhu et al., 2011; Frost and Olson, 2011; Shyh-Chang, et al., 2013; Nishino et al., 2013; Madison, et al., 2013, but the core functions of let-7 in regeneration and disease remain incompletely understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations including Madison et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "7116a9f0-083f-4053-a2bf-b6c1019633af",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C9",
+      "claim": "The let-7 family is comprised of 10 to 12 members in mice and humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice and humans, the let-7 family is comprised of 10 to 12 members who are thought to share a common set of mRNA targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about the let-7 family composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "8caa17e2-51dc-43f9-b21f-8e579cead9d6",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C10",
+      "claim": "let-7 family members are thought to share a common set of mRNA targets.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice and humans, the let-7 family is comprised of 10 to 12 members who are thought to share a common set of mRNA targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established understanding of let-7 family function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "6d176044-f2a3-4a75-888e-4bd35726f188",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C11",
+      "claim": "Lin28a inhibits the biogenesis of each let-7 member similarly.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous study of Lin28a, which inhibits the biogenesis of each let-7 member similarly (Heo et al., 2008; Nam et al., 2011), suggests that total let-7 dose alterations, rather than regulation of specific members, is important.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Heo et al., 2008 and Nam et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "82787adb-d29d-4c55-813d-fe3f8915ced8",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C12",
+      "claim": "Modest increase in Lin28a and consequent 40% suppression of total let-7 levels promote increased glucose uptake in transgenic mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In transgenic mice, modest increase in Lin28a and consequent 40% suppression of total let-7 levels promote increased glucose uptake and an overgrowth syndrome (Zhu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Zhu et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "7705dbe3-5751-48ad-aff9-b89b2e4c2dd3",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C13",
+      "claim": "Modest increase in Lin28a and consequent 40% suppression of total let-7 levels promote an overgrowth syndrome in transgenic mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In transgenic mice, modest increase in Lin28a and consequent 40% suppression of total let-7 levels promote increased glucose uptake and an overgrowth syndrome (Zhu et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Zhu et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "9d12a95c-e798-45be-bed5-c69c20edec2f",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C14",
+      "claim": "let-7s have been implicated as a tumor suppressor predominantly in cell lines and xenograft assays.",
+      "claim_type": "EXPLICIT",
+      "source": "While let-7s have been implicated as a tumor suppressor, this has predominantly been shown in cell lines and xenograft assays (Guo et al., 2006; Chang et al., 2009; Iliopoulos et al., 2009; Viswanathan et al., 2009; Wang et al., 2010; Lan et al., 2011), as well as using exogenous let-7 delivery to mouse cancer models (Esquela-Kerscher et al., 2008; Trang et al., 2010; Trang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to studies using cell lines and xenografts.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "c96121ff-f78d-408d-a555-66c0a202786f",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C15",
+      "claim": "Exogenous let-7 delivery has been used in mouse cancer models.",
+      "claim_type": "EXPLICIT",
+      "source": "While let-7s have been implicated as a tumor suppressor, this has predominantly been shown in cell lines and xenograft assays (Guo et al., 2006; Chang et al., 2009; Iliopoulos et al., 2009; Viswanathan et al., 2009; Wang et al., 2010; Lan et al., 2011), as well as using exogenous let-7 delivery to mouse cancer models (Esquela-Kerscher et al., 2008; Trang et al., 2010; Trang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Esquela-Kerscher et al., 2008; Trang et al., 2010; Trang et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "90a084df-aa70-4770-9ab8-ca0e060cf384",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C16",
+      "claim": "Most let-7s are suppressed by more than 60% in the MYC-driven hepatoblastoma model.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, most let-7s are suppressed by more than 60% (Nguyen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Nguyen et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "6f9d61d6-b1ec-4ce1-888c-490e8fbddb60",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C17",
+      "claim": "MYC affects the expression of many other microRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, MYC affects the expression of many other microRNAs (Chang et al., 2009; Kota et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Chang et al., 2009 and Kota et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "a0160400-1774-46d0-9c7b-5a2f7eb5c0d2",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C18",
+      "claim": "The precursor microRNA loop of let-7S21L derives from mir-21 and cannot be bound and inhibited by Lin28b.",
+      "claim_type": "EXPLICIT",
+      "source": "This transgenic form of let-7g is an engineered let-7 species called let-7S21L (let-7g Stem + miR-21 Loop) (Zhu et al., 2011), in which the precursor microRNA loop derives from mir-21 and cannot be bound and inhibited by Lin28b (Figure 1B), which is highly expressed in MYC-driven tumors (Chang et al., 2009; Nguyen et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation to Zhu et al., 2011 and reference to Figure 1B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "406c83f5-34ef-4820-9534-ff77aee74c5c",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C19",
+      "claim": "Lin28b is highly expressed in MYC-driven tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "This transgenic form of let-7g is an engineered let-7 species called let-7S21L (let-7g Stem + miR-21 Loop) (Zhu et al., 2011), in which the precursor microRNA loop derives from mir-21 and cannot be bound and inhibited by Lin28b (Figure 1B), which is highly expressed in MYC-driven tumors (Chang et al., 2009; Nguyen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Chang et al., 2009 and Nguyen et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "112f7e57-e032-4333-8da1-5ee19e06e4d5",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C20",
+      "claim": "By 90 days of age, large multifocal tumors had formed in 88% of the MYC alone group.",
+      "claim_type": "EXPLICIT",
+      "source": "By 90 days of age, large multifocal tumors had formed in 88% of the MYC alone group, whereas single small tumors appeared in only 27% the MYC + let-7S21L group (Figure 1D\u2013F) and overall survival was dramatically improved (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 1D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "a864bf3e-8611-4c56-b51f-6cbc7b0cefc4",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C21",
+      "claim": "Single small tumors appeared in only 27% of the MYC + let-7S21L group by 90 days of age.",
+      "claim_type": "EXPLICIT",
+      "source": "By 90 days of age, large multifocal tumors had formed in 88% of the MYC alone group, whereas single small tumors appeared in only 27% the MYC + let-7S21L group (Figure 1D\u2013F) and overall survival was dramatically improved (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 1D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "7d7b5716-2e5e-4f16-a4da-5698888bc809",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C22",
+      "claim": "Overall survival was dramatically improved in MYC + let-7S21L mice compared to MYC alone mice.",
+      "claim_type": "EXPLICIT",
+      "source": "By 90 days of age, large multifocal tumors had formed in 88% of the MYC alone group, whereas single small tumors appeared in only 27% the MYC + let-7S21L group (Figure 1D\u2013F) and overall survival was dramatically improved (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "13494390-47b4-4e0e-8315-dea48b625a68",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C23",
+      "claim": "The level of let-7g was increased more than eightfold in both non-tumor and tumor tissues in MYC + let-7S21L mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The level of let-7g was increased more than eightfold in both non-tumor and tumor tissues (Figure 1H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "45dc5a1c-7767-4d5c-8938-a6709d9561f3",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C24",
+      "claim": "Tumors from both MYC alone and MYC + let-7S21L groups showed similar histology.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumors from both groups showed similar histology (Figure 1\u2014figure supplement 1) and MYC expression (Figure 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "fabc073a-d104-483d-b6e4-cd0a85c1de97",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C25",
+      "claim": "Tumors from both MYC alone and MYC + let-7S21L groups showed similar MYC expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumors from both groups showed similar histology (Figure 1\u2014figure supplement 1) and MYC expression (Figure 1I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "93a6acde-1880-4bd9-a929-2e8e45691088",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C26",
+      "claim": "Cdc25a is a previously validated let-7 target involved in proliferation and growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene-expression within tumors showed that previously validated let-7 targets involved in proliferation and growth including Cdc25a (Johnson et al., 2007), Cdc34 (Legesse-Miller et al., 2009), E2f2 (Dong et al., 2010), E2f5 (Kropp et al., 2015), and Map4k4 (Tan et al., 2015) were upregulated in MYC-tumors, but suppressed back down to normal levels in the context of let-7 overexpression (Figure 1J\u2013L), suggesting that the repression of these targets restrains MYC-dependent tumorigenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Johnson et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "cbe557bd-d6e8-4baa-98a0-c6a6c94c49cd",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C27",
+      "claim": "Cdc34 is a previously validated let-7 target involved in proliferation and growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene-expression within tumors showed that previously validated let-7 targets involved in proliferation and growth including Cdc25a (Johnson et al., 2007), Cdc34 (Legesse-Miller et al., 2009), E2f2 (Dong et al., 2010), E2f5 (Kropp et al., 2015), and Map4k4 (Tan et al., 2015) were upregulated in MYC-tumors, but suppressed back down to normal levels in the context of let-7 overexpression (Figure 1J\u2013L), suggesting that the repression of these targets restrains MYC-dependent tumorigenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Legesse-Miller et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "ff3ac484-f6ec-49b3-8531-03ef8de4fd1e",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C28",
+      "claim": "E2f2 is a previously validated let-7 target involved in proliferation and growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene-expression within tumors showed that previously validated let-7 targets involved in proliferation and growth including Cdc25a (Johnson et al., 2007), Cdc34 (Legesse-Miller et al., 2009), E2f2 (Dong et al., 2010), E2f5 (Kropp et al., 2015), and Map4k4 (Tan et al., 2015) were upregulated in MYC-tumors, but suppressed back down to normal levels in the context of let-7 overexpression (Figure 1J\u2013L), suggesting that the repression of these targets restrains MYC-dependent tumorigenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Dong et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "1a0d8d2b-a9bd-42ed-8f78-a1cd009f66ae",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C29",
+      "claim": "E2f5 is a previously validated let-7 target involved in proliferation and growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene-expression within tumors showed that previously validated let-7 targets involved in proliferation and growth including Cdc25a (Johnson et al., 2007), Cdc34 (Legesse-Miller et al., 2009), E2f2 (Dong et al., 2010), E2f5 (Kropp et al., 2015), and Map4k4 (Tan et al., 2015) were upregulated in MYC-tumors, but suppressed back down to normal levels in the context of let-7 overexpression (Figure 1J\u2013L), suggesting that the repression of these targets restrains MYC-dependent tumorigenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Kropp et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "bcefeef2-9dc5-4be7-9af5-543d3beb6748",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C30",
+      "claim": "Map4k4 is a previously validated let-7 target involved in proliferation and growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene-expression within tumors showed that previously validated let-7 targets involved in proliferation and growth including Cdc25a (Johnson et al., 2007), Cdc34 (Legesse-Miller et al., 2009), E2f2 (Dong et al., 2010), E2f5 (Kropp et al., 2015), and Map4k4 (Tan et al., 2015) were upregulated in MYC-tumors, but suppressed back down to normal levels in the context of let-7 overexpression (Figure 1J\u2013L), suggesting that the repression of these targets restrains MYC-dependent tumorigenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Tan et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "64eaf5ff-0788-407f-a407-e74049add8da",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C31",
+      "claim": "Cdc25a, Cdc34, E2f2, E2f5, and Map4k4 were upregulated in MYC-tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene-expression within tumors showed that previously validated let-7 targets involved in proliferation and growth including Cdc25a (Johnson et al., 2007), Cdc34 (Legesse-Miller et al., 2009), E2f2 (Dong et al., 2010), E2f5 (Kropp et al., 2015), and Map4k4 (Tan et al., 2015) were upregulated in MYC-tumors, but suppressed back down to normal levels in the context of let-7 overexpression (Figure 1J\u2013L), suggesting that the repression of these targets restrains MYC-dependent tumorigenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 1J-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "f1a674f1-0734-4e56-826d-e7bf0497b857",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C32",
+      "claim": "Cdc25a, Cdc34, E2f2, E2f5, and Map4k4 were suppressed back down to normal levels in the context of let-7 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene-expression within tumors showed that previously validated let-7 targets involved in proliferation and growth including Cdc25a (Johnson et al., 2007), Cdc34 (Legesse-Miller et al., 2009), E2f2 (Dong et al., 2010), E2f5 (Kropp et al., 2015), and Map4k4 (Tan et al., 2015) were upregulated in MYC-tumors, but suppressed back down to normal levels in the context of let-7 overexpression (Figure 1J\u2013L), suggesting that the repression of these targets restrains MYC-dependent tumorigenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 1J-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "7fa6dbef-76f8-4dcf-a2a4-6766d570477b",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C33",
+      "claim": "The repression of let-7 targets restrains MYC-dependent tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene-expression within tumors showed that previously validated let-7 targets involved in proliferation and growth including Cdc25a (Johnson et al., 2007), Cdc34 (Legesse-Miller et al., 2009), E2f2 (Dong et al., 2010), E2f5 (Kropp et al., 2015), and Map4k4 (Tan et al., 2015) were upregulated in MYC-tumors, but suppressed back down to normal levels in the context of let-7 overexpression (Figure 1J\u2013L), suggesting that the repression of these targets restrains MYC-dependent tumorigenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the experimental data showing that let-7 overexpression suppresses tumor formation and normalizes target gene expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "a5e09e98-8c76-477a-a34a-b19cbb5d4c55",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C34",
+      "claim": "let-7g has potent tumor suppressor activity in the context of MYC-driven hepatoblastoma.",
+      "claim_type": "EXPLICIT",
+      "source": "These data indicated that let-7g has potent tumor suppressor activity in the context of MYC-driven hepatoblastoma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing reduced tumor formation and improved survival with let-7g overexpression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "792cad2a-0119-4c19-bbc9-d4ba7efb6cba",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C35",
+      "claim": "After PHx, let-7s in regenerating tissues fell, but returned to normal after forty hours.",
+      "claim_type": "EXPLICIT",
+      "source": "After PHx, let-7s in regenerating tissues fell, but returned to normal after forty hours (Figure 2A), findings consistent with a previous report (Chen et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2A and a citation to Chen et al., 2011.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "67015e5d-afcf-448b-8c9d-2f08d5bcdc3a",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C36",
+      "claim": "let-7s declined acutely after chemical injury with TCPOBOP.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, let-7s also declined acutely after chemical injury with the xenobiotic TCPOBOP (1,4-bis-[2-[3,5-dichloropyridyloxy]] benzene) (Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "b076834f-b0da-407d-a948-2f8a6efb0302",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C37",
+      "claim": "let-7 increases in a temporally defined fashion during development.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that while let-7 increases in a temporally defined fashion during development (Figure 2\u2014figure supplement 1B), it can transiently fluctuate after environmental perturbations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "d86603eb-2e33-42b4-a6fe-43490a223566",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C38",
+      "claim": "let-7 can transiently fluctuate after environmental perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that while let-7 increases in a temporally defined fashion during development (Figure 2\u2014figure supplement 1B), it can transiently fluctuate after environmental perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing let-7 changes after PHx and TCPOBOP treatment.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "dc95a75d-77a8-461c-8eee-595e986125ad",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C39",
+      "claim": "Body weight was unaffected in LAP-let-7S21L mice compared to control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The body weight (Figure 2\u2014figure supplement 1C), liver function (Figure 2\u2014figure supplement 1D), resected liver mass (Figure 2E) and histology (Figure 2\u2014figure supplement 1E) were unaffected in LAP-let-7S21L mice compared to control mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "d4466435-7623-4635-8869-2b21f52eae12",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C40",
+      "claim": "Liver function was unaffected in LAP-let-7S21L mice compared to control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The body weight (Figure 2\u2014figure supplement 1C), liver function (Figure 2\u2014figure supplement 1D), resected liver mass (Figure 2E) and histology (Figure 2\u2014figure supplement 1E) were unaffected in LAP-let-7S21L mice compared to control mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "8a0a66cc-d51d-4125-b3f0-509b79cd5199",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C41",
+      "claim": "Resected liver mass was unaffected in LAP-let-7S21L mice compared to control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The body weight (Figure 2\u2014figure supplement 1C), liver function (Figure 2\u2014figure supplement 1D), resected liver mass (Figure 2E) and histology (Figure 2\u2014figure supplement 1E) were unaffected in LAP-let-7S21L mice compared to control mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "672c0926-47a2-4a20-af8e-0debc9e3fb9d",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C42",
+      "claim": "Histology was unaffected in LAP-let-7S21L mice compared to control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The body weight (Figure 2\u2014figure supplement 1C), liver function (Figure 2\u2014figure supplement 1D), resected liver mass (Figure 2E) and histology (Figure 2\u2014figure supplement 1E) were unaffected in LAP-let-7S21L mice compared to control mice.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "8ebbf642-cf30-4aaf-975d-c0c0d8b80dc7",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C43",
+      "claim": "Forty hours after PHx, there was reduced liver mass in LAP-let-7S21L mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Forty hours after PHx, there was reduced liver mass and decreased Ki-67 in LAP-let-7S21L mice (Figure 2F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 2F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "dc4233e8-4401-4cf8-a242-827bc5322386",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C44",
+      "claim": "Forty hours after PHx, there was decreased Ki-67 in LAP-let-7S21L mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Forty hours after PHx, there was reduced liver mass and decreased Ki-67 in LAP-let-7S21L mice (Figure 2F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 2F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "79632183-827d-44b7-aaef-e3cd6eccddfb",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C45",
+      "claim": "Liver mass was no different at four and fourteen days after PHx in LAP-let-7S21L mice, indicating a kinetic delay but not a permanent impairment.",
+      "claim_type": "EXPLICIT",
+      "source": "Liver mass was no different at four and fourteen days, indicating a kinetic delay but not a permanent impairment (Figure 2\u2014figure supplement 1F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1F,G and inference about the nature of the effect.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "7df2fc72-7c2b-4de3-95b9-eb7bd39f46e7",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C46",
+      "claim": "let-7g microRNA mimics inhibited liver regeneration after PHx.",
+      "claim_type": "EXPLICIT",
+      "source": "let-7g, but not control mimics, inhibited regeneration (Figure 2I\u2013K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 2I-K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "e78edab1-f7c7-4550-9ccc-52af85cc7084",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C47",
+      "claim": "let-7 overexpression blocked MYC-induced tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "While let-7 overexpression blocked MYC-induced tumorigenesis, these data show that a similar increase in let-7 levels inhibited post-injury organ growth and regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data from the MYC tumor model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "9ecce37d-fa1e-45c5-a11a-899263cfb660",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C48",
+      "claim": "A similar increase in let-7 levels inhibited post-injury organ growth and regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "While let-7 overexpression blocked MYC-induced tumorigenesis, these data show that a similar increase in let-7 levels inhibited post-injury organ growth and regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data from the PHx experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "02c4ee6b-2a81-4073-abca-312464fb3681",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C49",
+      "claim": "let-7 is one of the most highly expressed microRNA families in the liver.",
+      "claim_type": "EXPLICIT",
+      "source": "Small RNA-sequencing data from Xie et al. showed that let-7 is one of the most highly expressed microRNA families in the liver and that let-7b and let-7c2 together comprise approximately 18% of the let-7 total (Figure 3B) (Xie et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation to Xie et al., 2012 and data shown in Figure 3B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "db4107c0-a2b2-4f3b-8e6a-0d7f378d0032",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C50",
+      "claim": "let-7b and let-7c2 together comprise approximately 18% of the let-7 total in the liver.",
+      "claim_type": "EXPLICIT",
+      "source": "Small RNA-sequencing data from Xie et al. showed that let-7 is one of the most highly expressed microRNA families in the liver and that let-7b and let-7c2 together comprise approximately 18% of the let-7 total (Figure 3B) (Xie et al., 2012).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation to Xie et al., 2012 and data shown in Figure 3B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "50845e2e-40e4-4048-b718-9203e30d2823",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C51",
+      "claim": "let-7b/c2 LKO mice have substantial, but far from a complete reduction of total let-7 levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, let-7b/c2 LKO mice have substantial, but far from a complete reduction of total let-7 levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the fact that let-7b and let-7c2 comprise only 18% of total let-7.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "fda094f1-1fe7-43a6-ba18-b406ce4c7646",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C52",
+      "claim": "let-7b/c2 LKO mice were healthy and showed normal liver/body weight ratios at baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "These LKO mice were healthy and showed normal liver/body weight ratios and histology at baseline (Figure 3\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "7ba86c14-f6c5-4554-99c8-7fb9aac2094e",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C53",
+      "claim": "let-7b/c2 LKO mice showed normal histology at baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "These LKO mice were healthy and showed normal liver/body weight ratios and histology at baseline (Figure 3\u2014figure supplement 1A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "50f01c26-28f5-4fb1-b409-b6f84796d35b",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C54",
+      "claim": "An identical amount of liver mass was resected from let-7b/c2Fl/Fl control and let-7b/c2 LKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "An identical amount of liver mass was resected from let-7b/c2Fl/Fl control and let-7b/c2 LKO mice (Figure 3C,D), but LKO mice exhibited significant increases in liver mass and proliferation 40 hr after surgery (Figure 3E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 3C,D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "340dd4e1-1653-42db-a7cd-135365be9018",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C55",
+      "claim": "let-7b/c2 LKO mice exhibited significant increases in liver mass 40 hr after surgery.",
+      "claim_type": "EXPLICIT",
+      "source": "An identical amount of liver mass was resected from let-7b/c2Fl/Fl control and let-7b/c2 LKO mice (Figure 3C,D), but LKO mice exhibited significant increases in liver mass and proliferation 40 hr after surgery (Figure 3E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 3E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "829d4d56-a4d5-427b-b909-723f49eba121",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C56",
+      "claim": "let-7b/c2 LKO mice exhibited significant increases in proliferation 40 hr after surgery.",
+      "claim_type": "EXPLICIT",
+      "source": "An identical amount of liver mass was resected from let-7b/c2Fl/Fl control and let-7b/c2 LKO mice (Figure 3C,D), but LKO mice exhibited significant increases in liver mass and proliferation 40 hr after surgery (Figure 3E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 3E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "80e449f6-ec78-4430-bc23-6df5aed8eb2a",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C57",
+      "claim": "Four and seven days after PHx, there were no differences in liver weights between control and let-7b/c2 LKO mice, indicating that other phases of regeneration were unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "Four and seven days after PHx, there were no differences in liver weights, indicating that other phases of regeneration were unaffected (Figure 3\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1C,D and inference about regeneration phases.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "8946e1fe-9e89-4534-aca6-8155abcaf1d5",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C58",
+      "claim": "At fourteen days after PHx, the liver weight precisely achieved pre-surgery levels in control and LKO mice, indicating accelerated but not excessive regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "At fourteen days, the liver weight precisely achieved pre-surgery levels in control and LKO mice, indicating accelerated but not excessive regeneration (Figure 3\u2014figure supplement 1C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 1C,D and inference about the nature of regeneration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "4c03b749-cf9c-441f-bd3d-9a03d8dd0308",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C59",
+      "claim": "There was no compensatory upregulation of other let-7s in pre- or post-PHx tissues in let-7b/c2 LKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no compensatory upregulation of other let-7s in pre- or post-PHx tissues (Figure 3H), supporting the concept that let-7 is a dose-dependent regeneration suppressor.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "d167dfb7-9a1d-498b-aece-5afa2ecd52ce",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C60",
+      "claim": "let-7 is a dose-dependent regeneration suppressor.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no compensatory upregulation of other let-7s in pre- or post-PHx tissues (Figure 3H), supporting the concept that let-7 is a dose-dependent regeneration suppressor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing that partial reduction of let-7 enhances regeneration without compensatory changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "a7850bd4-a1c2-4f04-bc81-4b9bc8db27ab",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C61",
+      "claim": "Cre under the Albumin promoter is expressed in embryonic hepatoblasts that give rise to both hepatocyte and bile duct compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Cre under the Albumin promoter is expressed in embryonic hepatoblasts that give rise to both hepatocyte and bile duct compartments (Postic and Magnuson, 1999, 2000; Xu et al., 2006; Weisend et al., 2009; Malato et al., 2011), so developmental influences of let-7 loss could have led to adult phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to studies characterizing Albumin-Cre expression.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "e9d8ec4a-c333-46b3-a3bf-92b9e223060d",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C62",
+      "claim": "AAV8.TBG.PI.Cre.rBG mediates efficient gene excision in hepatocytes but never in biliary epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To define cell- and temporal-specific roles of let-7b/c2, we used adeno-associated virus expressing Cre (AAV8.TBG.PI.Cre.rBG, hereafter called \"AAV-Cre\"), known to mediate efficient gene excision in hepatocytes but never in biliary epithelial cells (Yanger et al., 2013) (Figure 3\u2014figure supplement 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation to Yanger et al., 2013 and data shown in Figure 3\u2014figure supplement 2A,B.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "f66e5789-ab5c-43f1-869a-ae5d1ec37097",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C63",
+      "claim": "Adult and hepatocyte-specific conditional knockout mice exhibited significantly enhanced regenerative capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "These adult and hepatocyte-specific conditional knockout mice also exhibited significantly enhanced regenerative capacity (Figure 3\u2014figure supplement 2C\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3\u2014figure supplement 2C-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "8e669c7f-24e8-4e15-9f90-bb1d58667f24",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C64",
+      "claim": "Knockdown of let-7a in SV40 immortalized hepatocytes led to increased proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if proliferative effects are specific to particular let-7 species, we knocked-down either let-7a or let-7b in SV40 immortalized hepatocytes (H2.35 cells) and found that both led to increased proliferation (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "09a1623b-defd-4266-8441-581c1f9962de",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C65",
+      "claim": "Knockdown of let-7b in SV40 immortalized hepatocytes led to increased proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "To test if proliferative effects are specific to particular let-7 species, we knocked-down either let-7a or let-7b in SV40 immortalized hepatocytes (H2.35 cells) and found that both led to increased proliferation (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "6c4b1ebd-7c4d-4f78-a5d6-44a19a70c7dd",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C66",
+      "claim": "Physiological let-7 levels regulate the kinetics of adult liver regeneration by hepatocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our data shows that physiological let-7 levels regulate the kinetics of adult liver regeneration by hepatocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the collective experimental data showing effects of let-7 manipulation on regeneration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "ff003988-e4c0-4dd3-bb2e-3e724cf2df01",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C67",
+      "claim": "let-7 was previously demonstrated to regulate the insulin-PI3K-mTOR pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "let-7 was previously demonstrated to regulate the insulin-PI3K-mTOR pathway (Zhu et al., 2011; Frost and Olson, 2011), which is also important in liver regeneration (Okano et al., 2003; Chen et al., 2009; Haga et al., 2009; Espeillac et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Zhu et al., 2011 and Frost and Olson, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "9ad1ee3f-06e9-4ac1-a882-0edbe918fdf3",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C68",
+      "claim": "The insulin-PI3K-mTOR pathway is important in liver regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "let-7 was previously demonstrated to regulate the insulin-PI3K-mTOR pathway (Zhu et al., 2011; Frost and Olson, 2011), which is also important in liver regeneration (Okano et al., 2003; Chen et al., 2009; Haga et al., 2009; Espeillac et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Okano et al., 2003; Chen et al., 2009; Haga et al., 2009; Espeillac et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "e125cf6f-2c08-40a9-97c9-13ab7a64173e",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C69",
+      "claim": "In regenerating livers treated with let-7g mimic, there was significant protein suppression of insulin receptor \u03b2, Igf1r\u03b2, and Irs2.",
+      "claim_type": "EXPLICIT",
+      "source": "In regenerating livers treated with let-7g mimic (Figure 2I\u2013K), we found significant protein suppression of insulin receptor \u03b2, Igf1r\u03b2, and Irs2, previously validated let-7 targets at the top of the insulin pathway (Figure 4A,B) (Zhu et al., 2011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 4A,B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "28ae6493-7850-401f-af81-6a8765c15697",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C70",
+      "claim": "Insulin receptor \u03b2, Igf1r\u03b2, and Irs2 are previously validated let-7 targets at the top of the insulin pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "In regenerating livers treated with let-7g mimic (Figure 2I\u2013K), we found significant protein suppression of insulin receptor \u03b2, Igf1r\u03b2, and Irs2, previously validated let-7 targets at the top of the insulin pathway (Figure 4A,B) (Zhu et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Zhu et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "e5dcdaaa-48e7-4f35-942e-e8e32a512de8",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C71",
+      "claim": "The expression of cell cycle genes (Ccnb1, Cdc34, and Cdk8) and Map4k4 were downregulated in let-7g overexpressing livers.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to insulin signaling components, the expression of cell cycle genes (Ccnb1, Cdc34, and Cdk8) and Map4k4 were also downregulated (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "09978451-aede-4193-bfe8-5f56096bbd6a",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C72",
+      "claim": "In mice with acute let-7b/c2 deletion by AAV-Cre, there was a small increase in insulin receptor \u03b2 protein levels.",
+      "claim_type": "EXPLICIT",
+      "source": "In mice with acute let-7b/c2 deletion by AAV-Cre (Figure 3\u2014figure supplement 2), there was a small increase in insulin receptor \u03b2 protein levels (Figure 4D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figures 4D,E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "07e5a739-6236-44e2-ad9e-1049bd49fd31",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C73",
+      "claim": "Increased mTOR signaling was evident in the increased phospho-S6K/Total S6K and phospho-S6/Total S6 ratios in let-7b/c2 knockout livers.",
+      "claim_type": "EXPLICIT",
+      "source": "Increased mTOR signaling was also evident in the increased phospho-S6K/Total S6K and phospho-S6/Total S6 ratios (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5E (note: this appears to be a typo in the manuscript, should be Figure 4E based on context).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "67b06d97-9d8a-40db-b894-64369c399142",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C74",
+      "claim": "Rapamycin abrogated differences in regenerating liver weights between control and LKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapamycin abrogated differences in regenerating liver weights between control and LKO mice (Figure 4F), demonstrating that let-7b/c2 loss promotes additional mTOR activation to enhance regeneration.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "c9bc0c50-f614-42df-90af-bcff51645e63",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C75",
+      "claim": "let-7b/c2 loss promotes additional mTOR activation to enhance regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapamycin abrogated differences in regenerating liver weights between control and LKO mice (Figure 4F), demonstrating that let-7b/c2 loss promotes additional mTOR activation to enhance regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing that mTOR inhibition eliminates the regenerative advantage of let-7 loss.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "02ec42bf-e848-41b8-aa20-2cbf5a27f24e",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C76",
+      "claim": "Rapamycin's allosteric inhibition of mTOR can lead to pleiotropic and unpredictable effects due to cell-type specific and feedback related phenomena.",
+      "claim_type": "EXPLICIT",
+      "source": "Rapamycin's allosteric inhibition of mTOR can lead to pleiotropic and unpredictable effects due to cell-type specific and feedback related phenomena (Thoreen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Thoreen et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "c8ebdc96-522a-4aba-8642-e2f34ec27c5d",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C77",
+      "claim": "INK128 is a second generation mTOR inhibitor that directly competes with ATP at the catalytic domains of mTORC1/2, leading to more complete abrogation of 4EBP and S6K1.",
+      "claim_type": "EXPLICIT",
+      "source": "INK128 is a second generation mTOR inhibitor that directly competes with ATP at the catalytic domains of mTORC1/2, leading to more complete abrogation of 4EBP and S6K1 (Hsieh et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hsieh et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "e19d646e-2c21-4cdb-a843-0f166061832b",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C78",
+      "claim": "INK128 completely abrogated the regenerative enhancement associated with let-7b/c2 loss.",
+      "claim_type": "EXPLICIT",
+      "source": "INK128, similar to rapamycin, completely abrogated the regenerative enhancement associated with let-7b/c2 loss (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "a38cddd0-3c2e-42cd-bcf0-97259aff0eb0",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C79",
+      "claim": "mTOR is hyperactivated in LKO livers.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of p-S6K confirmed that mTOR is hyperactivated in LKO livers and that INK128 extinguishes the mTOR dependent phosphorylation of this substrate (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "95e01a68-694c-4a15-a8e9-4ceadbad830a",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C80",
+      "claim": "INK128 extinguishes the mTOR dependent phosphorylation of S6K.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of p-S6K confirmed that mTOR is hyperactivated in LKO livers and that INK128 extinguishes the mTOR dependent phosphorylation of this substrate (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "bf08aca8-759c-4b8d-ad4c-59d00613196a",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C81",
+      "claim": "mTOR and its substrates play an essential role in driving increased regeneration in the context of let-7 suppression.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results after rapamycin and INK128 indicated that mTOR and its substrates play an essential role in driving increased regeneration in the context of let-7 suppression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing that both mTOR inhibitors eliminate the regenerative advantage of let-7 loss.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "4ef1f38f-b58c-47d9-84e4-57c7d9fc593c",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C82",
+      "claim": "Rosa-let-7S21L mice lost significant body weight after let-7g induction.",
+      "claim_type": "EXPLICIT",
+      "source": "These mice lost significant body weight and became jaundiced (Figure 5\u2014figure supplement 1A and Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5\u2014figure supplement 1A and Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "042f12e9-c4d8-44c1-91ab-a41cf97f1306",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C83",
+      "claim": "Rosa-let-7S21L mice became jaundiced after let-7g induction.",
+      "claim_type": "EXPLICIT",
+      "source": "These mice lost significant body weight and became jaundiced (Figure 5\u2014figure supplement 1A and Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5\u2014figure supplement 1A and Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "8d907b40-f37b-4e40-aaec-6879edb5b380",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C84",
+      "claim": "Liver function tests indicated severe liver injury in Rosa-let-7S21L mice after let-7g induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Liver function tests indicated severe liver injury (Figure 5C) and histology showed prominent microvesicular steatosis, characterized by intra-cytoplasmic lipid droplets (Figure 5D), a finding associated with drug-induced liver injury, acute fatty liver of pregnancy, or Reye's syndrome in humans.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "1f318e54-91c0-4bfa-8aec-dcf9355d22f4",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C85",
+      "claim": "Histology showed prominent microvesicular steatosis in Rosa-let-7S21L mice after let-7g induction.",
+      "claim_type": "EXPLICIT",
+      "source": "Liver function tests indicated severe liver injury (Figure 5C) and histology showed prominent microvesicular steatosis, characterized by intra-cytoplasmic lipid droplets (Figure 5D), a finding associated with drug-induced liver injury, acute fatty liver of pregnancy, or Reye's syndrome in humans.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "fefcaf0e-ac7a-4220-ac28-ecacc595bf3e",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C86",
+      "claim": "Microvesicular steatosis is characterized by intra-cytoplasmic lipid droplets.",
+      "claim_type": "EXPLICIT",
+      "source": "Liver function tests indicated severe liver injury (Figure 5C) and histology showed prominent microvesicular steatosis, characterized by intra-cytoplasmic lipid droplets (Figure 5D), a finding associated with drug-induced liver injury, acute fatty liver of pregnancy, or Reye's syndrome in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established medical knowledge about the histological features of microvesicular steatosis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "74638d5c-cfed-4bdb-86e1-71ae089a1524",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C87",
+      "claim": "Microvesicular steatosis is associated with drug-induced liver injury, acute fatty liver of pregnancy, or Reye's syndrome in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Liver function tests indicated severe liver injury (Figure 5C) and histology showed prominent microvesicular steatosis, characterized by intra-cytoplasmic lipid droplets (Figure 5D), a finding associated with drug-induced liver injury, acute fatty liver of pregnancy, or Reye's syndrome in humans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established medical knowledge about conditions associated with microvesicular steatosis.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "08497ecb-9246-4104-831a-9b81d5885ce9",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C88",
+      "claim": "Mature let-7g was overexpressed by more than twentyfold in the Rosa-rtTA system.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this system, mature let-7g was overexpressed by more than twentyfold, as compared to \u223ceightfold induction in the LAP-let-7S21L system (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "9f69da96-f00c-46c3-be4e-d86182bf4ab9",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C89",
+      "claim": "Mature let-7g was overexpressed by approximately eightfold in the LAP-let-7S21L system.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this system, mature let-7g was overexpressed by more than twentyfold, as compared to \u223ceightfold induction in the LAP-let-7S21L system (Figure 5E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "ded845f2-7590-4f50-8ad0-18ab9d63267f",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C90",
+      "claim": "Liver dysfunction was not seen after low-dose let-7 overexpression in LAP-let-7S21L mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Liver dysfunction was not seen after low-dose let-7 overexpression in LAP-let-7S21L mice (Figure 2\u2014figure supplement 1) or after high-dose miR-26a-2 overexpression in Rosa-rtTA; TRE-miR-26a-2 mice (Figure 5\u2014figure supplement 1B\u2013D), suggesting a dose and let-7 microRNA specific effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "e882e097-a72f-4b25-b090-37d956ddefc4",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C91",
+      "claim": "Liver dysfunction was not seen after high-dose miR-26a-2 overexpression in Rosa-rtTA; TRE-miR-26a-2 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Liver dysfunction was not seen after low-dose let-7 overexpression in LAP-let-7S21L mice (Figure 2\u2014figure supplement 1) or after high-dose miR-26a-2 overexpression in Rosa-rtTA; TRE-miR-26a-2 mice (Figure 5\u2014figure supplement 1B\u2013D), suggesting a dose and let-7 microRNA specific effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5\u2014figure supplement 1B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "8cc09a01-9112-4287-92f8-f9660b0765aa",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C92",
+      "claim": "The liver toxicity effect is dose and let-7 microRNA specific.",
+      "claim_type": "EXPLICIT",
+      "source": "Liver dysfunction was not seen after low-dose let-7 overexpression in LAP-let-7S21L mice (Figure 2\u2014figure supplement 1) or after high-dose miR-26a-2 overexpression in Rosa-rtTA; TRE-miR-26a-2 mice (Figure 5\u2014figure supplement 1B\u2013D), suggesting a dose and let-7 microRNA specific effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing toxicity only with high-dose let-7 but not with low-dose let-7 or high-dose miR-26a-2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "ca871e51-6242-4a70-aba3-54b72f6d6f99",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C93",
+      "claim": "Mice receiving let-7g mimic lost significantly more weight than control mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice receiving let-7g mimic lost significantly more weight (Figure 5F) and suffered hepatocyte destruction leading to increased AST/ALT levels (Figure 5G), while control mice remained healthy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "530b8648-79a3-46fe-aa4a-30acc9c34004",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C94",
+      "claim": "Mice receiving let-7g mimic suffered hepatocyte destruction leading to increased AST/ALT levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice receiving let-7g mimic lost significantly more weight (Figure 5F) and suffered hepatocyte destruction leading to increased AST/ALT levels (Figure 5G), while control mice remained healthy.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "f0d02e44-b999-4812-a663-1f8a15020e72",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C95",
+      "claim": "Control mice remained healthy after mimic treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice receiving let-7g mimic lost significantly more weight (Figure 5F) and suffered hepatocyte destruction leading to increased AST/ALT levels (Figure 5G), while control mice remained healthy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing no weight loss or liver damage in control mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "f06f0762-8d42-4759-80b9-d9471f23c0b1",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C96",
+      "claim": "Mimic delivery achieved a twelvefold increase of let-7g.",
+      "claim_type": "EXPLICIT",
+      "source": "Mimic delivery achieved a twelvefold increase of let-7g (Figure 5H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "1cc8c9ba-3c60-4ce9-81fb-387a0ba229db",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C97",
+      "claim": "Above certain doses let-7 is incompatible with hepatocyte survival.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that above certain doses let-7 is incompatible with hepatocyte survival, and that let-7's anti-proliferative activities would interfere with normal tissue homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing hepatotoxicity at high let-7 doses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "b709cafa-94f3-43ae-a787-633fa6a1f171",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C98",
+      "claim": "let-7's anti-proliferative activities would interfere with normal tissue homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that above certain doses let-7 is incompatible with hepatocyte survival, and that let-7's anti-proliferative activities would interfere with normal tissue homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing impaired regeneration and hepatotoxicity with let-7 overexpression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "febb1cd9-6b1f-49aa-9066-71141d7bc2f2",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C99",
+      "claim": "Approximately 50% of Rosa-let-7S21L mice survived the acute liver injury seen after dox induction.",
+      "claim_type": "EXPLICIT",
+      "source": "When the Rosa-let-7S21L mice were induced chronically, approximately 50% of the mice survived the acute liver injury seen after dox induction (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "81c3050e-16a4-4ec6-8a6b-ffa19dc20ed5",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C100",
+      "claim": "Over the course of 18 months, 5 of 10 (50%) of surviving Rosa-let-7S21L mice developed large liver tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the course of 18 months, 5 of 10 (50%) of these surviving mice developed large liver tumors, whereas only 1 of 12 (7.7%) of the non-induced mice had any tumors (Figure 5J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "88ad21ed-984f-4ff2-9e0b-0400bcec3fb6",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C101",
+      "claim": "Only 1 of 12 (7.7%) of the non-induced mice had any tumors over 18 months.",
+      "claim_type": "EXPLICIT",
+      "source": "Over the course of 18 months, 5 of 10 (50%) of these surviving mice developed large liver tumors, whereas only 1 of 12 (7.7%) of the non-induced mice had any tumors (Figure 5J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "7e005776-6859-47f9-9a5c-d76c4a427ff2",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C102",
+      "claim": "Chronic let-7 overexpression likely caused hepatocyte toxicity and selected for pre-malignant hepatocytes that eventually become cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Chronic let-7 overexpression likely caused hepatocyte toxicity and selected for pre-malignant hepatocytes that eventually become cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative reasoning based on the experimental observation of tumor development after chronic let-7 overexpression.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "1e3846df-451d-4168-aac9-743f427746d5",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C103",
+      "claim": "Deep redundancy of multiple highly conserved genes raises the possibility that dose regulation is important.",
+      "claim_type": "EXPLICIT",
+      "source": "Deep redundancy of multiple highly conserved genes raises the possibility that dose regulation is important.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the biological significance of gene redundancy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "f40f2edf-76bc-4e22-b28c-daad6962c043",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C104",
+      "claim": "Overexpression has been helpful in uncovering physiological functions of let-7.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, overexpression has been helpful in uncovering physiological functions of let-7 (Zhu et al., 2011; Frost and Olson, 2011; Shyh-Chang et al., 2013; Nishino et al., 2013; Madison et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to studies using overexpression approaches.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "312cbab4-7303-4dbd-9a43-7e26288605f8",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C105",
+      "claim": "let-7 suppression is a fundamental requirement for MYC-mediated liver transformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using overexpression tools, we have shown that let-7 suppression is a fundamental requirement for MYC-mediated liver transformation, and that let-7 is capable of counteracting strong oncogenic drivers in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing that let-7 overexpression blocks MYC-driven tumorigenesis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "7f7c2c1f-710e-4b3a-85a0-130de0a0126e",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C106",
+      "claim": "let-7 is capable of counteracting strong oncogenic drivers in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Using overexpression tools, we have shown that let-7 suppression is a fundamental requirement for MYC-mediated liver transformation, and that let-7 is capable of counteracting strong oncogenic drivers in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing that let-7 overexpression blocks MYC-driven tumorigenesis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "54aa5d79-c322-499c-974b-e85ae2ae8c48",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C107",
+      "claim": "The loss of two out of the ten let-7 members in the liver resulted in improved liver proliferation and regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "More surprisingly, our knockout mouse model showed that the loss of two out of the ten let-7 members in the liver resulted in improved liver proliferation and regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data from the let-7b/c2 LKO mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "504a8928-16c4-4e4e-96ab-277e89d88aa8",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C108",
+      "claim": "There is a lack of complete redundancy between let-7 microRNA species.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest a lack of complete redundancy between let-7 microRNA species, but rather a precisely regulated cumulative dose that when increased or decreased, leads to significant alterations in regenerative capacity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing that partial reduction of let-7 has functional consequences.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "b895104c-85d0-492c-b7aa-b741ef1282f0",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C109",
+      "claim": "let-7 is regulated as a precisely regulated cumulative dose that when increased or decreased, leads to significant alterations in regenerative capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "These data suggest a lack of complete redundancy between let-7 microRNA species, but rather a precisely regulated cumulative dose that when increased or decreased, leads to significant alterations in regenerative capacity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing dose-dependent effects of let-7 on regeneration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "98285be1-bdcc-4219-b04f-5dcb3160fdca",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C110",
+      "claim": "In tissues where malignancies arise from chronically injured tissues, winners of the competition between cancer and host cells might ultimately dictate whether organ failure or tumor progression ensues.",
+      "claim_type": "EXPLICIT",
+      "source": "In these tissues, winners of the competition between cancer and host cells might ultimately dictate whether organ failure or tumor progression ensues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about the dynamics of cancer development in injured tissues.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "ce7a5cff-8914-4832-a489-1f9daa350e82",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C111",
+      "claim": "It has been thought that one key advantage of using microRNAs therapeutically is that they are already expressed at high levels in normal tissues, thus making increased dosing likely to be safe and tolerable.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been thought that one key advantage of using microRNAs therapeutically is that they are already expressed at high levels in normal tissues, thus making increased dosing likely to be safe and tolerable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of a prevailing assumption in the field about microRNA therapeutics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "4ca48624-579c-41d9-b065-e0da84f612c8",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C112",
+      "claim": "Chronic let-7 overexpression caused hepatotoxicity, disrupted tissue homeostasis, ultimately leading to carcinogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we showed that chronic let-7 overexpression caused hepatotoxicity, disrupted tissue homeostasis, ultimately leading to carcinogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data from the Rosa-let-7S21L mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "176afa2f-7422-483e-968d-4acf90546436",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C113",
+      "claim": "The hepatotoxicity from chronic let-7 overexpression is likely due to the high levels of overexpression achieved in the Rosa-rtTA transgenic system, as opposed to the lower dose in the LAP-tTA system.",
+      "claim_type": "EXPLICIT",
+      "source": "This is likely due to the high levels of overexpression achieved in the Rosa-rtTA transgenic system, as opposed to the lower dose in the LAP-tTA system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the comparison of toxicity outcomes between the two systems with different expression levels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "4e43d4ab-392d-4c7f-a224-ff4ce104197e",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C114",
+      "claim": "High doses of let-7 are likely to be toxic to hepatocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "These high doses are likely to be toxic to hepatocytes, a phenomena compounded by the fact that excess let-7 impairs proliferation in surviving cells that might serve to replenish lost tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing hepatotoxicity at high let-7 doses.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "d2ed531d-3c85-42ef-bb97-c2ab82210fba",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C115",
+      "claim": "Excess let-7 impairs proliferation in surviving cells that might serve to replenish lost tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "These high doses are likely to be toxic to hepatocytes, a phenomena compounded by the fact that excess let-7 impairs proliferation in surviving cells that might serve to replenish lost tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing impaired regeneration with let-7 overexpression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "0c4ee5fc-4c2a-4490-8db5-f59654c25c23",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C116",
+      "claim": "Certain clones must epigenetically or genetically evolve to evade let-7 growth inhibition in order to transform after chronic let-7 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Eventually, certain clones must epigenetically or genetically evolve to evade let-7 growth inhibition in order to transform.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about the mechanism of tumor development after chronic let-7 overexpression.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "9d33faa2-9c91-4071-85a8-348d9afe8621",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C117",
+      "claim": "Rosa-rtTA induces expression in cells other than hepatocytes and bile duct epithelia.",
+      "claim_type": "EXPLICIT",
+      "source": "Rosa-rtTA does induce expression in cells other than hepatocytes and bile duct epithelia, leaving the possibility that non-cell autonomous influences of let-7 overexpression play a role in liver injury and cancer development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the expression pattern of the Rosa-rtTA system based on knowledge of the promoter.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "2a8044c9-0b88-4196-aa7e-0e992913ffe7",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C118",
+      "claim": "Non-cell autonomous influences of let-7 overexpression may play a role in liver injury and cancer development.",
+      "claim_type": "EXPLICIT",
+      "source": "Rosa-rtTA does induce expression in cells other than hepatocytes and bile duct epithelia, leaving the possibility that non-cell autonomous influences of let-7 overexpression play a role in liver injury and cancer development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about potential mechanisms of let-7-induced liver injury.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "59e896c4-315c-4887-a61d-7356be264a9d",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C119",
+      "claim": "Distinct genetic subtypes of cancer may respond differently to let-7 overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "A more interesting possibility would be if distinct genetic subtypes of cancer respond differently to let-7 overexpression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about potential context-dependent effects of let-7.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "617de068-4e7f-4b1a-8512-52c8832266d0",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C120",
+      "claim": "let-7 has been conceptualized as a general tumor suppressor.",
+      "claim_type": "EXPLICIT",
+      "source": "Since let-7 has been conceptualized as a general tumor suppressor, it is surprising that it can cause opposing phenotypes in distinct cancer models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of a prevailing view in the field about let-7's role.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "24d65d42-bdcf-4009-aff2-1b179ce38f2f",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C121",
+      "claim": "MYC liver cancers show a dramatic suppression of let-7, rendering it especially sensitive to let-7 replacement.",
+      "claim_type": "EXPLICIT",
+      "source": "MYC liver cancers show a dramatic suppression of let-7, rendering it especially sensitive to let-7 replacement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing let-7 suppression in MYC tumors and their sensitivity to let-7 overexpression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "9dc9f1f1-6755-4a4c-9c25-6a0112706319",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C122",
+      "claim": "Tumors or tissues with more normal levels of let-7 might not respond to increases in let-7.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumors or tissues with more normal levels of let-7 might not respond to increases in let-7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about potential context-dependent effects of let-7.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "233f06bc-e96b-4775-bb83-96571e36c5f7",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C123",
+      "claim": "The growth of other cancer models may not depend on the overproduction of let-7 target genes/proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the growth of other cancer models may not depend on the overproduction of let-7 target genes/proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning about potential mechanisms underlying differential cancer responses to let-7.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "35373b22-e723-4970-ab44-156bd52777a5",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C124",
+      "claim": "let-7 overexpression in cancer contexts not dependent on let-7 targets would probably not elicit growth suppression, but may instead exacerbate tissue injury.",
+      "claim_type": "EXPLICIT",
+      "source": "let-7 overexpression in these contexts would probably not elicit growth suppression, but may instead exacerbate tissue injury.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the experimental observations of let-7-induced hepatotoxicity.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "fb294dc1-91f4-4edb-a3a0-f970a2fdf97b",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C125",
+      "claim": "let-7 therapy directed at hepatocellular carcinomas could be risky, given that most of these cancers occur in severely compromised, cirrhotic livers.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our data suggest that let-7 therapy directed at hepatocellular carcinomas could be risky, given that most of these cancers occur in severely compromised, cirrhotic livers (Yang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing hepatotoxicity with let-7 overexpression and knowledge about HCC context, supported by a citation to Yang et al., 2011.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "86942e00-bcf7-4ea8-a64e-22f2af7ddd86",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C126",
+      "claim": "Most hepatocellular carcinomas occur in severely compromised, cirrhotic livers.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our data suggest that let-7 therapy directed at hepatocellular carcinomas could be risky, given that most of these cancers occur in severely compromised, cirrhotic livers (Yang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Yang et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "d75528f6-da3a-48c0-85ad-55c9419af66a",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C127",
+      "claim": "The total dose of let-7 is evolutionarily determined via regulation of the expression levels of individual let-7 members.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that the total dose of let-7 is evolutionarily determined via regulation of the expression levels of individual let-7 members, and is postnatally maintained at a level that can suppress cancer, but which also allows for adequate levels of mammalian regenerative capacity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the experimental observations of dose-dependent let-7 effects.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "77a0d446-368d-4794-ac6e-86f2d53fa67f",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C128",
+      "claim": "let-7 is postnatally maintained at a level that can suppress cancer, but which also allows for adequate levels of mammalian regenerative capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "We speculate that the total dose of let-7 is evolutionarily determined via regulation of the expression levels of individual let-7 members, and is postnatally maintained at a level that can suppress cancer, but which also allows for adequate levels of mammalian regenerative capacity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the experimental observations showing a balance between tumor suppression and regeneration.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "6bfe0ac3-c42a-486f-94d6-5054e80516b1",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C129",
+      "claim": "let-7 levels are dynamic after environmental perturbations.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearly, let-7 levels are not static throughout life, since let-7 levels are dynamic after environmental perturbations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data showing let-7 changes after PHx and TCPOBOP treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "0af91c4f-b1b0-4507-8781-abaca25e30ce",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C130",
+      "claim": "When baseline let-7 levels are altered permanently by genetic means, compromises in tumor suppression or tissue regeneration were revealed.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when baseline let-7 levels are altered permanently by genetic means, compromises in tumor suppression or tissue regeneration were revealed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data from the genetic models showing effects on both tumorigenesis and regeneration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "b30fb63c-2236-452e-98e9-855047207f34",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C131",
+      "claim": "Modest let-7 overexpression abrogated MYC-driven liver cancer by antagonizing multiple let-7 sensitive oncogenes.",
+      "claim_type": "EXPLICIT",
+      "source": "Modest let-7 overexpression abrogated MYC-driven liver cancer by antagonizing multiple let-7 sensitive oncogenes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data from the MYC tumor model showing tumor suppression and target gene regulation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "f6f7edb2-ee7d-4bee-959d-5a69c56713ac",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C132",
+      "claim": "The same level of let-7 overexpression that abrogated MYC-driven liver cancer blocked liver regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the same level of overexpression blocked liver regeneration, while let-7 deletion enhanced it, demonstrating that distinct let-7 levels can mediate desirable phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data from the PHx experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "798c9f6a-176c-4bf9-a625-42629f64393f",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C133",
+      "claim": "let-7 deletion enhanced liver regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the same level of overexpression blocked liver regeneration, while let-7 deletion enhanced it, demonstrating that distinct let-7 levels can mediate desirable phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data from the let-7b/c2 LKO mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "f44151df-d0bd-4824-bad0-323f18fb7744",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C134",
+      "claim": "Distinct let-7 levels can mediate desirable phenotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the same level of overexpression blocked liver regeneration, while let-7 deletion enhanced it, demonstrating that distinct let-7 levels can mediate desirable phenotypes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing different optimal let-7 levels for tumor suppression versus regeneration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "785a8e9f-a911-4e5b-ae6f-215b13c249ed",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C135",
+      "claim": "let-7 dependent regeneration phenotypes resulted from influences on the insulin-PI3K-mTOR pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "let-7 dependent regeneration phenotypes resulted from influences on the insulin-PI3K-mTOR pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data showing effects on insulin pathway components and mTOR signaling, and the functional effects of mTOR inhibitors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "5bc21b1e-468f-4236-9cdd-91c465e64afa",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C136",
+      "claim": "Chronic high-dose let-7 overexpression caused liver damage and degeneration, paradoxically leading to tumorigenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that chronic high-dose let-7 overexpression caused liver damage and degeneration, paradoxically leading to tumorigenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data from the Rosa-let-7S21L mice showing hepatotoxicity and tumor development.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "fc2fc968-bbf6-4493-a5ad-d4dfad141c09",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C137",
+      "claim": "Too little or too much let-7 resulted in compromised protection against cancer or tissue damage, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Too little or too much let-7 resulted in compromised protection against cancer or tissue damage, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data showing increased cancer risk with let-7 loss and tissue damage with high-dose let-7 overexpression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "367d87c0-063d-4495-b8e4-23b0b6f7b3f0",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C138",
+      "claim": "let-7 performs tumor suppressive roles at the expense of regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, analysis of mouse models revealed that let-7, a large and ancient microRNA family, performs tumor suppressive roles at the expense of regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing that let-7 levels that suppress tumors also impair regeneration.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "49fce845-2d2e-490a-b043-8176cfd94672",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C139",
+      "claim": "These dose-dependent roles for let-7 in tissue repair and tumorigenesis rationalize the tight regulation of this microRNA in development.",
+      "claim_type": "EXPLICIT",
+      "source": "These dose-dependent roles for let-7 in tissue repair and tumorigenesis rationalize the tight regulation of this microRNA in development, and have important implications for let-7 based therapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing dose-dependent effects and their implications.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "1c0053a5-058e-4762-b715-0b3bfcee278d",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "claim_id": "C140",
+      "claim": "The dose-dependent roles for let-7 have important implications for let-7 based therapeutics.",
+      "claim_type": "EXPLICIT",
+      "source": "These dose-dependent roles for let-7 in tissue repair and tumorigenesis rationalize the tight regulation of this microRNA in development, and have important implications for let-7 based therapeutics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing both beneficial and harmful effects of let-7 manipulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "941163d7-a5d9-4134-bf75-5218b52156f2",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "let-7g overexpression suppresses MYC-driven hepatoblastoma development. By 90 days, 88% of MYC-only mice developed large multifocal tumors versus 27% of MYC+let-7S21L mice with small single tumors. let-7g overexpression (>8-fold) improved survival and normalized expression of let-7 target genes (Cdc25a, Cdc34, E2f2, E2f5, Map4k4) that were upregulated in MYC tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C34 provide converging evidence from tumor incidence data (Figures 1D-F), survival curves (Figure 1G), let-7g expression levels (Figure 1H), and target gene expression (Figures 1J-L). The experimental design includes appropriate controls, statistical significance is demonstrated, and the mechanistic link through validated let-7 targets is well-established by prior literature and confirmed experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "79359a26-17b6-4b13-96e1-5eea49757789",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "let-7g overexpression inhibits liver regeneration after partial hepatectomy. LAP-let-7S21L mice showed reduced liver mass and decreased Ki-67 staining at 40 hours post-PHx, with recovery by 4-14 days. let-7g mimics (but not control mimics) similarly inhibited regeneration, demonstrating that the same level of let-7 overexpression that blocks tumorigenesis also impairs regeneration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C48 are supported by multiple experimental approaches: transgenic overexpression (Figures 2F-H) and mimic delivery (Figures 2I-K). Controls are appropriate (baseline measurements C39-C42, control mimics C46), and the temporal dynamics are well-characterized (C35-C38, C45). The conclusion that similar let-7 levels affect both tumorigenesis and regeneration (C47-C48) is directly supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "51bcc65c-a0f2-4e40-8a3d-fbea99471fea",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Loss of let-7b/c2 (representing ~18% of total let-7) enhances liver regeneration. let-7b/c2 LKO mice showed significantly increased liver mass and proliferation at 40 hours post-PHx, with normal recovery by 14 days. Adult hepatocyte-specific knockout (AAV-Cre) and in vitro knockdown of let-7a or let-7b confirmed the proliferative effects, supporting that let-7 acts as a dose-dependent regeneration suppressor.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C66 provide strong evidence through multiple experimental systems: constitutive LKO (Figures 3E-G), adult-specific AAV-Cre deletion (Figure 3\u2014supplement 2C-F), and in vitro studies (Figure 3I). The lack of compensatory upregulation of other let-7s (C59) strengthens the dose-dependence interpretation (C60). Controls are appropriate (C52-C54), and the temporal specificity (C57-C58) indicates accelerated but not excessive regeneration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "067b5ee4-a4de-42c0-bf69-e0edcf8a231d",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "let-7 regulates liver regeneration through the insulin-PI3K-mTOR pathway. let-7g overexpression suppressed insulin receptor \u03b2, Igf1r\u03b2, and Irs2 protein levels, while let-7b/c2 deletion increased insulin receptor \u03b2 and mTOR signaling (p-S6K/S6K, p-S6/S6 ratios). Both rapamycin and INK128 (mTOR inhibitors) completely abrogated the regenerative enhancement in LKO mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C81 establish a mechanistic pathway through gain-of-function (Figures 4A-C) and loss-of-function (Figures 4D-E) experiments, with functional validation using two different mTOR inhibitors (Figures 4F-H). The prior literature support (C67-C68, C70, C76-C77) is appropriate, and the pharmacological rescue experiments (C74, C78) provide strong causal evidence for mTOR's role (C81).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "e22340c7-b887-42e5-9632-e49b61d906e5",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "High-dose chronic let-7g overexpression causes hepatotoxicity. Rosa-let-7S21L mice (>20-fold let-7g induction) developed weight loss, jaundice, severe liver injury (elevated AST/ALT), and microvesicular steatosis. let-7g mimics (12-fold increase) similarly caused weight loss and hepatocyte destruction. This toxicity was dose- and let-7-specific, as low-dose let-7 (LAP system, ~8-fold) or high-dose miR-26a-2 did not cause liver dysfunction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C98 demonstrate dose-dependent hepatotoxicity through two independent systems: transgenic (Figures 5B-E) and mimic delivery (Figures 5F-H). The specificity controls (C90-C92) are critical and well-executed. The dose comparison between Rosa-rtTA (~20-fold) and LAP-tTA (~8-fold) systems (C88-C89) directly supports the dose-dependence conclusion (C92, C97-C98).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "5bf6a290-b640-4307-86b0-b78769388c7d",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Chronic high-dose let-7 overexpression paradoxically leads to liver cancer. Among Rosa-let-7S21L mice surviving acute liver injury (~50%), 50% developed large liver tumors over 18 months versus 7.7% in non-induced controls. The authors propose that chronic let-7 overexpression caused hepatocyte toxicity and selected for pre-malignant cells that evolved to evade let-7 growth inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C99-C101 present clear experimental data (Figure 5I-J) showing increased tumor incidence. However, C102 is speculative reasoning without direct mechanistic evidence. The manuscript does not provide molecular characterization of the tumors, analysis of let-7 levels in tumors, or evidence of genetic/epigenetic changes that would support the proposed selection mechanism. While the observation is striking, the mechanistic interpretation remains uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "f9f2f09c-de9f-44d1-9884-595afefc52bb",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "let-7 exhibits dose-dependent effects balancing tumor suppression and regeneration. Modest let-7 overexpression (~8-fold) suppresses MYC-driven tumors but blocks regeneration, while partial let-7 loss (~18% reduction) enhances regeneration. Too little or too much let-7 compromises cancer protection or causes tissue damage, respectively, rationalizing tight developmental regulation and having implications for therapeutics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C107-C140 synthesize the major findings into a coherent dose-response framework. The experimental evidence from gain-of-function (tumor suppression and regeneration inhibition) and loss-of-function (enhanced regeneration) studies directly supports the dose-dependence concept (C109, C134). The trade-off between tumor suppression and regeneration (C138) is demonstrated experimentally. The implications for development and therapeutics (C139-C140) are reasonable inferences from the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "e48d513c-7ee7-40d1-8368-9dede07d32ae",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Background on let-7 microRNA family. let-7 is an ancient, omnipresent microRNA first identified in C. elegans development, undetectable in early mammalian embryos but highly expressed in adult tissues. The family comprises 10-12 members in mice/humans sharing common mRNA targets, and has been implicated in body size, metabolism, stem cell self-renewal, and colon carcinogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10 provide established background knowledge supported by appropriate citations (C2-C8). These are literature-based claims that contextualize the study rather than novel findings. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "ce239b9f-2708-4791-b2a0-4d654fcf5669",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior work on let-7 regulation and tumor suppression. Lin28a inhibits all let-7 members similarly, and its overexpression (causing 40% let-7 suppression) promotes glucose uptake and overgrowth. let-7 tumor suppressor activity has been shown predominantly in cell lines and xenografts. In MYC-driven hepatoblastoma, let-7s are suppressed >60%, and the let-7S21L construct cannot be inhibited by Lin28b.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C19 accurately cite prior literature and provide context for the experimental design. The let-7S21L construct design (C18) is supported by citation and Figure 1B. These claims establish the rationale for the current study's approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "3f96a7c5-aae2-4144-9241-ec74b3dcb34f",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Validation of let-7 target genes. Cdc25a, Cdc34, E2f2, E2f5, and Map4k4 are previously validated let-7 targets involved in proliferation and growth, supported by citations to prior studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 appropriately cite prior literature validating these genes as let-7 targets. The citations appear accurate and relevant to the claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "0c51b241-b8ab-46eb-89a8-5fc4c4dc3c49",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Characterization of Cre expression systems. Albumin-Cre is expressed in embryonic hepatoblasts giving rise to hepatocytes and bile ducts, while AAV8.TBG.PI.Cre.rBG mediates efficient gene excision in hepatocytes but not biliary epithelial cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C62 are supported by appropriate citations and experimental validation (Figure 3\u2014supplement 2A-B for C62). These technical details are important for interpreting the knockout experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "1fc4ed8a-6f69-4115-a90f-f4475f89f2d7",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Clinical context of microvesicular steatosis. Microvesicular steatosis is characterized by intra-cytoplasmic lipid droplets and is associated with drug-induced liver injury, acute fatty liver of pregnancy, or Reye's syndrome in humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C87 provide established medical knowledge contextualizing the histological findings. These are accurate descriptions of microvesicular steatosis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    },
+    {
+      "id": "79923571-d28d-4324-bbf0-a22a4c1ab94a",
+      "content_id": "bc736bd6-4c31-4043-8238-e2f1a21cfda9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Discussion and speculation on let-7 biology and therapeutic implications. The authors discuss gene redundancy and dose regulation (C103), summarize their findings on let-7's role in tumor suppression and regeneration (C105-C106, C129-C130), and speculate on mechanisms of chronic let-7 toxicity (C113-C118), context-dependent cancer responses (C119-C124), risks for HCC therapy (C125-C126), and evolutionary optimization of let-7 levels (C127-C128).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C103-C130 mix supported conclusions with speculation. Some claims (C105-C106, C129-C130) are well-supported by the experimental data. However, many claims (C110, C116, C118-C124, C127-C128) are explicitly speculative without direct experimental support. The speculation is reasonable given the data but represents hypotheses rather than demonstrated results. The therapeutic caution (C125) is a reasonable inference but not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:22:49.151379Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "112f7e57-e032-4333-8da1-5ee19e06e4d5",
+      "result_id": "941163d7-a5d9-4134-bf75-5218b52156f2"
+    },
+    {
+      "claim_id": "a864bf3e-8611-4c56-b51f-6cbc7b0cefc4",
+      "result_id": "941163d7-a5d9-4134-bf75-5218b52156f2"
+    },
+    {
+      "claim_id": "7d7b5716-2e5e-4f16-a4da-5698888bc809",
+      "result_id": "941163d7-a5d9-4134-bf75-5218b52156f2"
+    },
+    {
+      "claim_id": "13494390-47b4-4e0e-8315-dea48b625a68",
+      "result_id": "941163d7-a5d9-4134-bf75-5218b52156f2"
+    },
+    {
+      "claim_id": "45dc5a1c-7767-4d5c-8938-a6709d9561f3",
+      "result_id": "941163d7-a5d9-4134-bf75-5218b52156f2"
+    },
+    {
+      "claim_id": "fabc073a-d104-483d-b6e4-cd0a85c1de97",
+      "result_id": "941163d7-a5d9-4134-bf75-5218b52156f2"
+    },
+    {
+      "claim_id": "93a6acde-1880-4bd9-a929-2e8e45691088",
+      "result_id": "941163d7-a5d9-4134-bf75-5218b52156f2"
+    },
+    {
+      "claim_id": "cbe557bd-d6e8-4baa-98a0-c6a6c94c49cd",
+      "result_id": "941163d7-a5d9-4134-bf75-5218b52156f2"
+    },
+    {
+      "claim_id": "ff3ac484-f6ec-49b3-8531-03ef8de4fd1e",
+      "result_id": "941163d7-a5d9-4134-bf75-5218b52156f2"
+    },
+    {
+      "claim_id": "1a0d8d2b-a9bd-42ed-8f78-a1cd009f66ae",
+      "result_id": "941163d7-a5d9-4134-bf75-5218b52156f2"
+    },
+    {
+      "claim_id": "bcefeef2-9dc5-4be7-9af5-543d3beb6748",
+      "result_id": "941163d7-a5d9-4134-bf75-5218b52156f2"
+    },
+    {
+      "claim_id": "64eaf5ff-0788-407f-a407-e74049add8da",
+      "result_id": "941163d7-a5d9-4134-bf75-5218b52156f2"
+    },
+    {
+      "claim_id": "f1a674f1-0734-4e56-826d-e7bf0497b857",
+      "result_id": "941163d7-a5d9-4134-bf75-5218b52156f2"
+    },
+    {
+      "claim_id": "7fa6dbef-76f8-4dcf-a2a4-6766d570477b",
+      "result_id": "941163d7-a5d9-4134-bf75-5218b52156f2"
+    },
+    {
+      "claim_id": "a5e09e98-8c76-477a-a34a-b19cbb5d4c55",
+      "result_id": "941163d7-a5d9-4134-bf75-5218b52156f2"
+    },
+    {
+      "claim_id": "792cad2a-0119-4c19-bbc9-d4ba7efb6cba",
+      "result_id": "79359a26-17b6-4b13-96e1-5eea49757789"
+    },
+    {
+      "claim_id": "67015e5d-afcf-448b-8c9d-2f08d5bcdc3a",
+      "result_id": "79359a26-17b6-4b13-96e1-5eea49757789"
+    },
+    {
+      "claim_id": "b076834f-b0da-407d-a948-2f8a6efb0302",
+      "result_id": "79359a26-17b6-4b13-96e1-5eea49757789"
+    },
+    {
+      "claim_id": "d86603eb-2e33-42b4-a6fe-43490a223566",
+      "result_id": "79359a26-17b6-4b13-96e1-5eea49757789"
+    },
+    {
+      "claim_id": "dc95a75d-77a8-461c-8eee-595e986125ad",
+      "result_id": "79359a26-17b6-4b13-96e1-5eea49757789"
+    },
+    {
+      "claim_id": "d4466435-7623-4635-8869-2b21f52eae12",
+      "result_id": "79359a26-17b6-4b13-96e1-5eea49757789"
+    },
+    {
+      "claim_id": "8a0a66cc-d51d-4125-b3f0-509b79cd5199",
+      "result_id": "79359a26-17b6-4b13-96e1-5eea49757789"
+    },
+    {
+      "claim_id": "672c0926-47a2-4a20-af8e-0debc9e3fb9d",
+      "result_id": "79359a26-17b6-4b13-96e1-5eea49757789"
+    },
+    {
+      "claim_id": "8ebbf642-cf30-4aaf-975d-c0c0d8b80dc7",
+      "result_id": "79359a26-17b6-4b13-96e1-5eea49757789"
+    },
+    {
+      "claim_id": "dc4233e8-4401-4cf8-a242-827bc5322386",
+      "result_id": "79359a26-17b6-4b13-96e1-5eea49757789"
+    },
+    {
+      "claim_id": "79632183-827d-44b7-aaef-e3cd6eccddfb",
+      "result_id": "79359a26-17b6-4b13-96e1-5eea49757789"
+    },
+    {
+      "claim_id": "7df2fc72-7c2b-4de3-95b9-eb7bd39f46e7",
+      "result_id": "79359a26-17b6-4b13-96e1-5eea49757789"
+    },
+    {
+      "claim_id": "e78edab1-f7c7-4550-9ccc-52af85cc7084",
+      "result_id": "79359a26-17b6-4b13-96e1-5eea49757789"
+    },
+    {
+      "claim_id": "9ecce37d-fa1e-45c5-a11a-899263cfb660",
+      "result_id": "79359a26-17b6-4b13-96e1-5eea49757789"
+    },
+    {
+      "claim_id": "02c4ee6b-2a81-4073-abca-312464fb3681",
+      "result_id": "51bcc65c-a0f2-4e40-8a3d-fbea99471fea"
+    },
+    {
+      "claim_id": "db4107c0-a2b2-4f3b-8e6a-0d7f378d0032",
+      "result_id": "51bcc65c-a0f2-4e40-8a3d-fbea99471fea"
+    },
+    {
+      "claim_id": "50845e2e-40e4-4048-b718-9203e30d2823",
+      "result_id": "51bcc65c-a0f2-4e40-8a3d-fbea99471fea"
+    },
+    {
+      "claim_id": "fda094f1-1fe7-43a6-ba18-b406ce4c7646",
+      "result_id": "51bcc65c-a0f2-4e40-8a3d-fbea99471fea"
+    },
+    {
+      "claim_id": "7ba86c14-f6c5-4554-99c8-7fb9aac2094e",
+      "result_id": "51bcc65c-a0f2-4e40-8a3d-fbea99471fea"
+    },
+    {
+      "claim_id": "50f01c26-28f5-4fb1-b409-b6f84796d35b",
+      "result_id": "51bcc65c-a0f2-4e40-8a3d-fbea99471fea"
+    },
+    {
+      "claim_id": "340dd4e1-1653-42db-a7cd-135365be9018",
+      "result_id": "51bcc65c-a0f2-4e40-8a3d-fbea99471fea"
+    },
+    {
+      "claim_id": "829d4d56-a4d5-427b-b909-723f49eba121",
+      "result_id": "51bcc65c-a0f2-4e40-8a3d-fbea99471fea"
+    },
+    {
+      "claim_id": "80e449f6-ec78-4430-bc23-6df5aed8eb2a",
+      "result_id": "51bcc65c-a0f2-4e40-8a3d-fbea99471fea"
+    },
+    {
+      "claim_id": "8946e1fe-9e89-4534-aca6-8155abcaf1d5",
+      "result_id": "51bcc65c-a0f2-4e40-8a3d-fbea99471fea"
+    },
+    {
+      "claim_id": "4c03b749-cf9c-441f-bd3d-9a03d8dd0308",
+      "result_id": "51bcc65c-a0f2-4e40-8a3d-fbea99471fea"
+    },
+    {
+      "claim_id": "d167dfb7-9a1d-498b-aece-5afa2ecd52ce",
+      "result_id": "51bcc65c-a0f2-4e40-8a3d-fbea99471fea"
+    },
+    {
+      "claim_id": "f66e5789-ab5c-43f1-869a-ae5d1ec37097",
+      "result_id": "51bcc65c-a0f2-4e40-8a3d-fbea99471fea"
+    },
+    {
+      "claim_id": "8e669c7f-24e8-4e15-9f90-bb1d58667f24",
+      "result_id": "51bcc65c-a0f2-4e40-8a3d-fbea99471fea"
+    },
+    {
+      "claim_id": "09a1623b-defd-4266-8441-581c1f9962de",
+      "result_id": "51bcc65c-a0f2-4e40-8a3d-fbea99471fea"
+    },
+    {
+      "claim_id": "6c4b1ebd-7c4d-4f78-a5d6-44a19a70c7dd",
+      "result_id": "51bcc65c-a0f2-4e40-8a3d-fbea99471fea"
+    },
+    {
+      "claim_id": "ff003988-e4c0-4dd3-bb2e-3e724cf2df01",
+      "result_id": "067b5ee4-a4de-42c0-bf69-e0edcf8a231d"
+    },
+    {
+      "claim_id": "9ad1ee3f-06e9-4ac1-a882-0edbe918fdf3",
+      "result_id": "067b5ee4-a4de-42c0-bf69-e0edcf8a231d"
+    },
+    {
+      "claim_id": "e125cf6f-2c08-40a9-97c9-13ab7a64173e",
+      "result_id": "067b5ee4-a4de-42c0-bf69-e0edcf8a231d"
+    },
+    {
+      "claim_id": "28ae6493-7850-401f-af81-6a8765c15697",
+      "result_id": "067b5ee4-a4de-42c0-bf69-e0edcf8a231d"
+    },
+    {
+      "claim_id": "e5dcdaaa-48e7-4f35-942e-e8e32a512de8",
+      "result_id": "067b5ee4-a4de-42c0-bf69-e0edcf8a231d"
+    },
+    {
+      "claim_id": "09978451-aede-4193-bfe8-5f56096bbd6a",
+      "result_id": "067b5ee4-a4de-42c0-bf69-e0edcf8a231d"
+    },
+    {
+      "claim_id": "07e5a739-6236-44e2-ad9e-1049bd49fd31",
+      "result_id": "067b5ee4-a4de-42c0-bf69-e0edcf8a231d"
+    },
+    {
+      "claim_id": "67b06d97-9d8a-40db-b894-64369c399142",
+      "result_id": "067b5ee4-a4de-42c0-bf69-e0edcf8a231d"
+    },
+    {
+      "claim_id": "c9bc0c50-f614-42df-90af-bcff51645e63",
+      "result_id": "067b5ee4-a4de-42c0-bf69-e0edcf8a231d"
+    },
+    {
+      "claim_id": "02ec42bf-e848-41b8-aa20-2cbf5a27f24e",
+      "result_id": "067b5ee4-a4de-42c0-bf69-e0edcf8a231d"
+    },
+    {
+      "claim_id": "c8ebdc96-522a-4aba-8642-e2f34ec27c5d",
+      "result_id": "067b5ee4-a4de-42c0-bf69-e0edcf8a231d"
+    },
+    {
+      "claim_id": "e19d646e-2c21-4cdb-a843-0f166061832b",
+      "result_id": "067b5ee4-a4de-42c0-bf69-e0edcf8a231d"
+    },
+    {
+      "claim_id": "a38cddd0-3c2e-42cd-bcf0-97259aff0eb0",
+      "result_id": "067b5ee4-a4de-42c0-bf69-e0edcf8a231d"
+    },
+    {
+      "claim_id": "95e01a68-694c-4a15-a8e9-4ceadbad830a",
+      "result_id": "067b5ee4-a4de-42c0-bf69-e0edcf8a231d"
+    },
+    {
+      "claim_id": "bf08aca8-759c-4b8d-ad4c-59d00613196a",
+      "result_id": "067b5ee4-a4de-42c0-bf69-e0edcf8a231d"
+    },
+    {
+      "claim_id": "4ef1f38f-b58c-47d9-84e4-57c7d9fc593c",
+      "result_id": "e22340c7-b887-42e5-9632-e49b61d906e5"
+    },
+    {
+      "claim_id": "042f12e9-c4d8-44c1-91ab-a41cf97f1306",
+      "result_id": "e22340c7-b887-42e5-9632-e49b61d906e5"
+    },
+    {
+      "claim_id": "8d907b40-f37b-4e40-aaec-6879edb5b380",
+      "result_id": "e22340c7-b887-42e5-9632-e49b61d906e5"
+    },
+    {
+      "claim_id": "1f318e54-91c0-4bfa-8aec-dcf9355d22f4",
+      "result_id": "e22340c7-b887-42e5-9632-e49b61d906e5"
+    },
+    {
+      "claim_id": "08497ecb-9246-4104-831a-9b81d5885ce9",
+      "result_id": "e22340c7-b887-42e5-9632-e49b61d906e5"
+    },
+    {
+      "claim_id": "9f69da96-f00c-46c3-be4e-d86182bf4ab9",
+      "result_id": "e22340c7-b887-42e5-9632-e49b61d906e5"
+    },
+    {
+      "claim_id": "ded845f2-7590-4f50-8ad0-18ab9d63267f",
+      "result_id": "e22340c7-b887-42e5-9632-e49b61d906e5"
+    },
+    {
+      "claim_id": "e882e097-a72f-4b25-b090-37d956ddefc4",
+      "result_id": "e22340c7-b887-42e5-9632-e49b61d906e5"
+    },
+    {
+      "claim_id": "8cc09a01-9112-4287-92f8-f9660b0765aa",
+      "result_id": "e22340c7-b887-42e5-9632-e49b61d906e5"
+    },
+    {
+      "claim_id": "ca871e51-6242-4a70-aba3-54b72f6d6f99",
+      "result_id": "e22340c7-b887-42e5-9632-e49b61d906e5"
+    },
+    {
+      "claim_id": "530b8648-79a3-46fe-aa4a-30acc9c34004",
+      "result_id": "e22340c7-b887-42e5-9632-e49b61d906e5"
+    },
+    {
+      "claim_id": "f0d02e44-b999-4812-a663-1f8a15020e72",
+      "result_id": "e22340c7-b887-42e5-9632-e49b61d906e5"
+    },
+    {
+      "claim_id": "f06f0762-8d42-4759-80b9-d9471f23c0b1",
+      "result_id": "e22340c7-b887-42e5-9632-e49b61d906e5"
+    },
+    {
+      "claim_id": "1cc8c9ba-3c60-4ce9-81fb-387a0ba229db",
+      "result_id": "e22340c7-b887-42e5-9632-e49b61d906e5"
+    },
+    {
+      "claim_id": "b709cafa-94f3-43ae-a787-633fa6a1f171",
+      "result_id": "e22340c7-b887-42e5-9632-e49b61d906e5"
+    },
+    {
+      "claim_id": "febb1cd9-6b1f-49aa-9066-71141d7bc2f2",
+      "result_id": "5bf6a290-b640-4307-86b0-b78769388c7d"
+    },
+    {
+      "claim_id": "81c3050e-16a4-4ec6-8a6b-ffa19dc20ed5",
+      "result_id": "5bf6a290-b640-4307-86b0-b78769388c7d"
+    },
+    {
+      "claim_id": "88ad21ed-984f-4ff2-9e0b-0400bcec3fb6",
+      "result_id": "5bf6a290-b640-4307-86b0-b78769388c7d"
+    },
+    {
+      "claim_id": "7e005776-6859-47f9-9a5c-d76c4a427ff2",
+      "result_id": "5bf6a290-b640-4307-86b0-b78769388c7d"
+    },
+    {
+      "claim_id": "54aa5d79-c322-499c-974b-e85ae2ae8c48",
+      "result_id": "f9f2f09c-de9f-44d1-9884-595afefc52bb"
+    },
+    {
+      "claim_id": "504a8928-16c4-4e4e-96ab-277e89d88aa8",
+      "result_id": "f9f2f09c-de9f-44d1-9884-595afefc52bb"
+    },
+    {
+      "claim_id": "b895104c-85d0-492c-b7aa-b741ef1282f0",
+      "result_id": "f9f2f09c-de9f-44d1-9884-595afefc52bb"
+    },
+    {
+      "claim_id": "b30fb63c-2236-452e-98e9-855047207f34",
+      "result_id": "f9f2f09c-de9f-44d1-9884-595afefc52bb"
+    },
+    {
+      "claim_id": "f6f7edb2-ee7d-4bee-959d-5a69c56713ac",
+      "result_id": "f9f2f09c-de9f-44d1-9884-595afefc52bb"
+    },
+    {
+      "claim_id": "798c9f6a-176c-4bf9-a625-42629f64393f",
+      "result_id": "f9f2f09c-de9f-44d1-9884-595afefc52bb"
+    },
+    {
+      "claim_id": "f44151df-d0bd-4824-bad0-323f18fb7744",
+      "result_id": "f9f2f09c-de9f-44d1-9884-595afefc52bb"
+    },
+    {
+      "claim_id": "fc2fc968-bbf6-4493-a5ad-d4dfad141c09",
+      "result_id": "f9f2f09c-de9f-44d1-9884-595afefc52bb"
+    },
+    {
+      "claim_id": "367d87c0-063d-4495-b8e4-23b0b6f7b3f0",
+      "result_id": "f9f2f09c-de9f-44d1-9884-595afefc52bb"
+    },
+    {
+      "claim_id": "49fce845-2d2e-490a-b043-8176cfd94672",
+      "result_id": "f9f2f09c-de9f-44d1-9884-595afefc52bb"
+    },
+    {
+      "claim_id": "1c0053a5-058e-4762-b715-0b3bfcee278d",
+      "result_id": "f9f2f09c-de9f-44d1-9884-595afefc52bb"
+    },
+    {
+      "claim_id": "f5f30afa-181e-4e37-a09c-2c51d609799b",
+      "result_id": "e48d513c-7ee7-40d1-8368-9dede07d32ae"
+    },
+    {
+      "claim_id": "6150cb99-fc48-4f15-8226-c11ac360ad88",
+      "result_id": "e48d513c-7ee7-40d1-8368-9dede07d32ae"
+    },
+    {
+      "claim_id": "8fe635c9-f438-4fff-af4d-e0fdd46bdf3b",
+      "result_id": "e48d513c-7ee7-40d1-8368-9dede07d32ae"
+    },
+    {
+      "claim_id": "7345511d-8bcb-44cc-9717-c0712013a87c",
+      "result_id": "e48d513c-7ee7-40d1-8368-9dede07d32ae"
+    },
+    {
+      "claim_id": "047038d1-d746-4fc7-8c27-49f386a2c28d",
+      "result_id": "e48d513c-7ee7-40d1-8368-9dede07d32ae"
+    },
+    {
+      "claim_id": "b6da0079-21a0-4bdd-8e19-151a830c23fd",
+      "result_id": "e48d513c-7ee7-40d1-8368-9dede07d32ae"
+    },
+    {
+      "claim_id": "41911263-5a8b-4787-ab5b-205cc49e97ff",
+      "result_id": "e48d513c-7ee7-40d1-8368-9dede07d32ae"
+    },
+    {
+      "claim_id": "e0a3f5be-c73d-4a15-9736-279054b431b8",
+      "result_id": "e48d513c-7ee7-40d1-8368-9dede07d32ae"
+    },
+    {
+      "claim_id": "7116a9f0-083f-4053-a2bf-b6c1019633af",
+      "result_id": "e48d513c-7ee7-40d1-8368-9dede07d32ae"
+    },
+    {
+      "claim_id": "8caa17e2-51dc-43f9-b21f-8e579cead9d6",
+      "result_id": "e48d513c-7ee7-40d1-8368-9dede07d32ae"
+    },
+    {
+      "claim_id": "6d176044-f2a3-4a75-888e-4bd35726f188",
+      "result_id": "ce239b9f-2708-4791-b2a0-4d654fcf5669"
+    },
+    {
+      "claim_id": "82787adb-d29d-4c55-813d-fe3f8915ced8",
+      "result_id": "ce239b9f-2708-4791-b2a0-4d654fcf5669"
+    },
+    {
+      "claim_id": "7705dbe3-5751-48ad-aff9-b89b2e4c2dd3",
+      "result_id": "ce239b9f-2708-4791-b2a0-4d654fcf5669"
+    },
+    {
+      "claim_id": "9d12a95c-e798-45be-bed5-c69c20edec2f",
+      "result_id": "ce239b9f-2708-4791-b2a0-4d654fcf5669"
+    },
+    {
+      "claim_id": "c96121ff-f78d-408d-a555-66c0a202786f",
+      "result_id": "ce239b9f-2708-4791-b2a0-4d654fcf5669"
+    },
+    {
+      "claim_id": "90a084df-aa70-4770-9ab8-ca0e060cf384",
+      "result_id": "ce239b9f-2708-4791-b2a0-4d654fcf5669"
+    },
+    {
+      "claim_id": "6f9d61d6-b1ec-4ce1-888c-490e8fbddb60",
+      "result_id": "ce239b9f-2708-4791-b2a0-4d654fcf5669"
+    },
+    {
+      "claim_id": "a0160400-1774-46d0-9c7b-5a2f7eb5c0d2",
+      "result_id": "ce239b9f-2708-4791-b2a0-4d654fcf5669"
+    },
+    {
+      "claim_id": "406c83f5-34ef-4820-9534-ff77aee74c5c",
+      "result_id": "ce239b9f-2708-4791-b2a0-4d654fcf5669"
+    },
+    {
+      "claim_id": "93a6acde-1880-4bd9-a929-2e8e45691088",
+      "result_id": "3f96a7c5-aae2-4144-9241-ec74b3dcb34f"
+    },
+    {
+      "claim_id": "cbe557bd-d6e8-4baa-98a0-c6a6c94c49cd",
+      "result_id": "3f96a7c5-aae2-4144-9241-ec74b3dcb34f"
+    },
+    {
+      "claim_id": "ff3ac484-f6ec-49b3-8531-03ef8de4fd1e",
+      "result_id": "3f96a7c5-aae2-4144-9241-ec74b3dcb34f"
+    },
+    {
+      "claim_id": "1a0d8d2b-a9bd-42ed-8f78-a1cd009f66ae",
+      "result_id": "3f96a7c5-aae2-4144-9241-ec74b3dcb34f"
+    },
+    {
+      "claim_id": "bcefeef2-9dc5-4be7-9af5-543d3beb6748",
+      "result_id": "3f96a7c5-aae2-4144-9241-ec74b3dcb34f"
+    },
+    {
+      "claim_id": "a7850bd4-a1c2-4f04-bc81-4b9bc8db27ab",
+      "result_id": "0c51b241-b8ab-46eb-89a8-5fc4c4dc3c49"
+    },
+    {
+      "claim_id": "e9d8ec4a-c333-46b3-a3bf-92b9e223060d",
+      "result_id": "0c51b241-b8ab-46eb-89a8-5fc4c4dc3c49"
+    },
+    {
+      "claim_id": "fefcaf0e-ac7a-4220-ac28-ecacc595bf3e",
+      "result_id": "1fc4ed8a-6f69-4115-a90f-f4475f89f2d7"
+    },
+    {
+      "claim_id": "74638d5c-cfed-4bdb-86e1-71ae089a1524",
+      "result_id": "1fc4ed8a-6f69-4115-a90f-f4475f89f2d7"
+    },
+    {
+      "claim_id": "1e3846df-451d-4168-aac9-743f427746d5",
+      "result_id": "79923571-d28d-4324-bbf0-a22a4c1ab94a"
+    },
+    {
+      "claim_id": "f40f2edf-76bc-4e22-b28c-daad6962c043",
+      "result_id": "79923571-d28d-4324-bbf0-a22a4c1ab94a"
+    },
+    {
+      "claim_id": "312cbab4-7303-4dbd-9a43-7e26288605f8",
+      "result_id": "79923571-d28d-4324-bbf0-a22a4c1ab94a"
+    },
+    {
+      "claim_id": "7f7c2c1f-710e-4b3a-85a0-130de0a0126e",
+      "result_id": "79923571-d28d-4324-bbf0-a22a4c1ab94a"
+    },
+    {
+      "claim_id": "98285be1-bdcc-4219-b04f-5dcb3160fdca",
+      "result_id": "79923571-d28d-4324-bbf0-a22a4c1ab94a"
+    },
+    {
+      "claim_id": "ce7a5cff-8914-4832-a489-1f9daa350e82",
+      "result_id": "79923571-d28d-4324-bbf0-a22a4c1ab94a"
+    },
+    {
+      "claim_id": "176afa2f-7422-483e-968d-4acf90546436",
+      "result_id": "79923571-d28d-4324-bbf0-a22a4c1ab94a"
+    },
+    {
+      "claim_id": "4e43d4ab-392d-4c7f-a224-ff4ce104197e",
+      "result_id": "79923571-d28d-4324-bbf0-a22a4c1ab94a"
+    },
+    {
+      "claim_id": "d2ed531d-3c85-42ef-bb97-c2ab82210fba",
+      "result_id": "79923571-d28d-4324-bbf0-a22a4c1ab94a"
+    },
+    {
+      "claim_id": "0c4ee5fc-4c2a-4490-8db5-f59654c25c23",
+      "result_id": "79923571-d28d-4324-bbf0-a22a4c1ab94a"
+    },
+    {
+      "claim_id": "9d33faa2-9c91-4071-85a8-348d9afe8621",
+      "result_id": "79923571-d28d-4324-bbf0-a22a4c1ab94a"
+    },
+    {
+      "claim_id": "2a8044c9-0b88-4196-aa7e-0e992913ffe7",
+      "result_id": "79923571-d28d-4324-bbf0-a22a4c1ab94a"
+    },
+    {
+      "claim_id": "59e896c4-315c-4887-a61d-7356be264a9d",
+      "result_id": "79923571-d28d-4324-bbf0-a22a4c1ab94a"
+    },
+    {
+      "claim_id": "617de068-4e7f-4b1a-8512-52c8832266d0",
+      "result_id": "79923571-d28d-4324-bbf0-a22a4c1ab94a"
+    },
+    {
+      "claim_id": "24d65d42-bdcf-4009-aff2-1b179ce38f2f",
+      "result_id": "79923571-d28d-4324-bbf0-a22a4c1ab94a"
+    },
+    {
+      "claim_id": "9dc9f1f1-6755-4a4c-9c25-6a0112706319",
+      "result_id": "79923571-d28d-4324-bbf0-a22a4c1ab94a"
+    },
+    {
+      "claim_id": "233f06bc-e96b-4775-bb83-96571e36c5f7",
+      "result_id": "79923571-d28d-4324-bbf0-a22a4c1ab94a"
+    },
+    {
+      "claim_id": "35373b22-e723-4970-ab44-156bd52777a5",
+      "result_id": "79923571-d28d-4324-bbf0-a22a4c1ab94a"
+    },
+    {
+      "claim_id": "fb294dc1-91f4-4edb-a3a0-f970a2fdf97b",
+      "result_id": "79923571-d28d-4324-bbf0-a22a4c1ab94a"
+    },
+    {
+      "claim_id": "86942e00-bcf7-4ea8-a64e-22f2af7ddd86",
+      "result_id": "79923571-d28d-4324-bbf0-a22a4c1ab94a"
+    },
+    {
+      "claim_id": "d75528f6-da3a-48c0-85ad-55c9419af66a",
+      "result_id": "79923571-d28d-4324-bbf0-a22a4c1ab94a"
+    },
+    {
+      "claim_id": "77a0d446-368d-4794-ac6e-86f2d53fa67f",
+      "result_id": "79923571-d28d-4324-bbf0-a22a4c1ab94a"
+    },
+    {
+      "claim_id": "6bfe0ac3-c42a-486f-94d6-5054e80516b1",
+      "result_id": "79923571-d28d-4324-bbf0-a22a4c1ab94a"
+    },
+    {
+      "claim_id": "0af91c4f-b1b0-4507-8781-abaca25e30ce",
+      "result_id": "79923571-d28d-4324-bbf0-a22a4c1ab94a"
+    }
+  ],
+  "comparisons": []
+}

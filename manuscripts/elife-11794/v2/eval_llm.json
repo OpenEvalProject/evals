@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Stalling reporters form SDS-resistant, high-molecular-weight aggregates in ltn1\u0394 cells. These aggregates are not due to ubiquitylation, sediment by centrifugation, resist boiling in 1% SDS, and share properties with amyloid structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 provide converging experimental evidence from gel electrophoresis, deubiquitylation assays, and centrifugation showing that stalling reporters form detergent-resistant aggregates in ltn1\u0394 cells. The comparison to amyloid properties (C28-C29) is supported by appropriate citations. This represents the first observation of E3 dysfunction leading to amyloid-like aggregates (C30).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Ltn1 dysfunction specifically promotes stalled nascent chain aggregation, not general protein aggregation. Aggregation requires ribosome stalling, as demonstrated by Hel2 dependency for polybasic tract-mediated stalling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 demonstrate specificity through negative controls with polyQ reporters. Claims C34-C35 provide mechanistic validation using Hel2 deletion to prevent stalling, which suppresses K12 but not NS aggregation as predicted. The experimental design appropriately tests the stalling requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "NC aggregation correlates with CATylation and occurs in both ltn1\u0394 and rqc1\u0394 cells. Aggregation is not caused by defective ubiquitylation per se, but rather by defects downstream of ubiquitylation. In the absence of Rqc2, NC aggregates fail to form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 establish correlation between CATylation and aggregation through multiple genetic backgrounds (ltn1\u0394, rqc1\u0394, ltn1\u0394 rqc2\u0394). The MG132 experiment (C41) and functional Ltn1 in rqc1\u0394 cells (C39-C40) appropriately rule out ubiquitylation defects as the primary cause. The logic connecting these observations is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "CAT tail synthesis by Rqc2 is required for NC aggregation. The Rqc2 D98Y mutant, which cannot synthesize CAT tails but supports Ltn1 function, fails to promote aggregation. Endogenous Rqc2 is limiting for aggregation, and the requirement is specific to stalling reporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 use the D98Y separation-of-function mutant to demonstrate CAT tail requirement. Claims C47-C48 show dose-dependency with Rqc2 overexpression. Claims C49-C50 establish specificity through comparison with polyQ reporters. The experimental design appropriately separates CAT tail synthesis from other Rqc2 functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "A synthetic CAT tail mimic (AT)10 is sufficient to induce aggregation when fused to a non-stalling reporter, while homopolymeric A20 or T20 sequences are not. This demonstrates that the combination of Ala and Thr is particularly aggregation-prone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 provide direct evidence for sufficiency through gain-of-function experiments. The comparison between (AT)10, A20, and T20 appropriately tests sequence requirements. However, the conclusion about sufficiency (C53) should be tempered as the construct still contains the reporter protein which may contribute to aggregation propensity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "NC aggregates form in intact cells, not as post-lysis artifacts. LTN1 deletion leads to GFP punctae in living cells that depend on Rqc2-mediated CATylation, correlating with aggregates observed in cell extracts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C57 provide complementary evidence from cell mixing experiments and live-cell microscopy. The correlation between punctae formation and biochemical aggregates (C57) is supported by parallel genetic dependencies on Rqc2 and the D98Y mutation. This addresses a critical concern about artifact formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The chaperone Sis1 specifically associates with stalled NC aggregates in an Rqc2- and stalling-dependent manner. Sis1 itself forms slow-migrating, SDS-resistant species that co-IP with stalling reporters and depend on CAT tail synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C71 provide converging evidence from co-IP, mass spectrometry, and genetic dependencies. The specificity is demonstrated through appropriate controls (K0 reporter, other chaperones Ssa1/Ydj1, rqc2\u0394 strains). The observation that Sis1 itself forms aggregates (C67-C70) is particularly compelling and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Sis1 aggregate formation occurs independently of ectopic stalling reporter expression, providing evidence for endogenous stalled NC aggregation and demonstrating that reporter aggregation is not an overexpression artifact.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 address a critical concern about the physiological relevance of the findings. The observation that Sis1 aggregates form without reporter overexpression provides strong evidence for endogenous NC aggregation. This is an important control for the entire study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C95",
+      "C96"
+    ],
+    "result": "Sis1 depletion increases NC aggregate levels both biochemically and in living cells. This is consistent with Sis1 functioning as an amyloid-recognition factor that promotes aggregate disassembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 demonstrate increased aggregation upon Sis1 depletion using both biochemical and microscopy approaches. The interpretation (C95-C96) is supported by appropriate citations and provides a plausible mechanistic explanation. However, the mechanism remains somewhat speculative as direct disassembly activity was not demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "CATylation and aggregation of stalled NCs can be observed in wild-type cells using K-less reporters with limited ubiquitylation sites. This demonstrates physiological relevance and suggests that inefficient Ltn1 targeting favors Rqc2-mediated CATylation and aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 address the critical question of physiological relevance by demonstrating CATylation and aggregation in wild-type cells. The K-less reporter strategy is well-designed to test the competition between ubiquitylation and CATylation pathways. The data support the model that limited ubiquitylation sites shift the balance toward CATylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background on ribosome stalling, the RQC pathway, and CAT tail synthesis. These claims establish the context for the study based on prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C22 represent established knowledge from prior literature, appropriately cited. These provide necessary background but are not novel findings of this study. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "NCs can be assembled into aggregates through ribosome stalling and CAT tail synthesis by Rqc2. This implies proteins can be 'tagged' for aggregation while associated with the 60S subunit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 represent summary statements of the major findings. These are well-supported by the experimental data presented in earlier claims. The inference about tagging occurring on the 60S (C60) is reasonable given the known mechanism of CAT tail addition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In the RQC complex, Ltn1 mediates ubiquitylation while Rqc2 mediates CATylation. CATylation is not essential for Ltn1-mediated degradation but promotes NC aggregation. This is the first demonstration of proteins being specifically marked for aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 synthesize the findings into a coherent model. The separation of Ltn1 and Rqc2 functions is well-supported by the D98Y mutant data. The claim of novelty (C91) appears justified as no prior examples of specific aggregation tags have been reported. Claim C89 is supported by Figure 2\u2014figure supplement 1B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "NC aggregates share features with amyloid including dependency on low-complexity sequences similar to polyAla tracts, detergent insolubility, and Sis1 binding. Physical characterization remains to be completed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 summarize the amyloid-like properties demonstrated experimentally. The caveat about incomplete physical characterization (C92) is appropriate. The evidence for amyloid-like properties is strong but not definitive without structural characterization (e.g., thioflavin T binding, electron microscopy).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Potential functions of NC aggregation include sequestering aberrant proteins, mediating vacuolar degradation, or inducing stress signaling. Excessive aggregation may cause toxicity. Future studies should investigate the role in Listerin-mutant mouse neurodegeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C103 are largely speculative about potential functions and future directions. While the speculation is reasonable and grounded in cited literature (C99-C100), these represent hypotheses rather than demonstrated findings. The suggestions for future work (C103) are appropriate but do not constitute results of the current study.",
+    "result_type": "MINOR"
+  }
+]

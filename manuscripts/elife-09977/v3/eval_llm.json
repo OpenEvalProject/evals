@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Transcriptome coverage saturates within a taxon at a given sequencing depth (~50% per taxon on average), but continues to extend when comparing between taxa. This pattern is consistent across tissues (liver, brain, testis) and sequencing depths, with liver showing lowest coverage and brain/testis showing similar levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C26-C30 are well-supported by the RNA-seq data presented in Figure 2. The saturation within taxa and extension across taxa is demonstrated through systematic sequencing experiments across 10 taxa and multiple tissues. The quantitative measurements (50.0 \u00b1 2.5% coverage per taxon) and tissue-specific patterns are directly derived from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C38",
+      "C67"
+    ],
+    "result": "There is high turnover of transcriptional states between taxa, with 1-7% of transcribed windows being taxon-specific (higher in more distant taxa), and 26-33% of windows showing intermediate sharing patterns (2-9 taxa). Most taxon-specific transcripts are lowly expressed, though distant taxa show some highly expressed taxon-specific transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C31-C34, C38, C67 are supported by the quantitative analysis shown in Figure 3. The data demonstrate clear patterns of transcript turnover with phylogenetic distance, with specific percentages and expression levels documented. The finding of 6566 highly expressed (>50 reads) taxon-specific windows provides strong evidence for biological signal rather than noise.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Approximately 18% of transcribed windows are shared across all 10 taxa, including most highly expressed transcripts (>100 reads per window) and some low-expressed ones. These conserved transcripts are enriched in annotated genes, especially protein-coding exons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by the data in Figure 3 and Figure 3\u2014figure supplement 2. The quantification of conserved transcripts and their enrichment in annotated genes provides clear evidence for a core set of stable transcripts across evolutionary time. The expression level distribution and annotation enrichment analyses strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C68"
+    ],
+    "result": "Transcript sharing patterns reflect phylogenetic relationships, with closer taxa sharing more transcripts. However, branch lengths are extended for closely related taxa compared to molecular distances, suggesting particularly high turnover at short evolutionary timescales (thousands of years vs. millions of years).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43, C68 are supported by the phylogenetic analyses in Figure 4A-B. The tree topology based on transcript sharing mimics the molecular phylogeny, demonstrating time-dependent turnover. The extended branch lengths for closely related taxa are clearly visible in the comparison, though C68 acknowledges partial influence from sampling variance (Figure 4C).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C52",
+      "C53"
+    ],
+    "result": "Singleton transcripts (single-read coverage) constitute 2-12% of windows per sample, but most are re-detected in other tissues or taxa. Analysis of sampling variance shows that 88% of singleton-based branch length is influenced by sampling variance, but 12% recovers the expected phylogenetic topology, indicating biological signal exists even in low-level transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47, C52-C53 are supported by the singleton analysis in Figure 4\u2014figure supplements 1-2 and Figure 4C. The variance partitioning analysis using replicate subsampling provides rigorous quantification of sampling effects. The finding that biological signal persists despite sampling variance strengthens the interpretation that low-level transcripts are not merely technical noise.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C54"
+    ],
+    "result": "Transcriptomic coverage increases logarithmically with addition of taxa (rarefaction analysis), while sequencing depth shows asymptotic saturation at ~84%. This pattern is consistent with evolutionary turnover leading to steady transcriptional exploration of the genome across taxa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51, C54 are supported by the rarefaction and saturation analyses in Figure 5. The statistical modeling (generalized linear model for taxa addition, asymptotic model for sequencing depth) with Bayes factors provides strong quantitative support. The contrasting behaviors between taxonomic sampling and sequencing depth directly support the evolutionary turnover hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C55",
+      "C56",
+      "C62"
+    ],
+    "result": "No major transcript-free islands exist across evolutionary time. The maximum observed length of non-transcribed regions is 6 kb, suggesting that within a timespan of a few million years, practically the whole genome is covered by transcription at some point.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C55-C56, C62 are supported by the analysis of non-transcribed regions in Figure 6. The 6 kb maximum size of non-transcribed regions, combined with the rarefaction analysis showing continued increase in coverage with taxa addition, provides strong evidence against persistent transcriptional deserts. However, this applies only to the non-repetitive 71.7% of the genome analyzed (C22-C23).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C82"
+    ],
+    "result": "The entire genome can be transcribed into poly-adenylated RNA when viewed at an evolutionary time scale, and any part of the non-coding genome can potentially become subject to evolutionary functionalization via de novo gene evolution within relatively short evolutionary time spans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C82 represent the main conclusions of the study, supported by the combined evidence from transcript turnover (C4), lack of transcript-free islands (C5, C55-C56), and logarithmic increase in coverage with taxa (C48-C49). However, these conclusions are limited to the 71.7% non-repetitive common genome analyzed (C22-C23) and represent inferences from the data rather than direct observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Additional transcripts beyond annotated genes have sufficient stability to reflect phylogenetic relationships and should not be considered noise. Their lifetime is sufficient for evolutionary testing, making them substrates for de novo gene evolution, though they show high turnover if they do not acquire function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C61 represent interpretations and inferences from the phylogenetic signal in transcript turnover. While C57-C58 are reasonably supported by the phylogenetic tree analysis (Figure 4), claims C59-C60 about evolutionary testing and substrate for de novo evolution are speculative extrapolations. No direct functional evidence is provided, and the connection between transcript stability and evolutionary potential requires additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The study samples span 10 million years of divergence (6% nucleotide difference for most distant comparisons). The common genome analyzed represents 71.7% of the reference genome, excluding highly repetitive regions where unique mapping is not possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 describe the study design and methodological constraints. These are well-supported by the phylogenetic sampling (Figure 1) and genome mapping analysis (Figure 1\u2014figure supplements 1-2). The exclusion of ~30% of the genome is a significant limitation that should be considered when interpreting the main conclusions about genome-wide transcription.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "NextGenMap performs extremely well with divergences over 10% compared to other standard mapping software, as confirmed by the authors' simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is supported by citation to Sedlazeck et al. 2013 and validation through the authors' own simulations (Appendix 1). This methodological choice is critical for the study given the phylogenetic distances involved (up to 6% divergence, C21). The validation simulations strengthen confidence in the mapping approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C69",
+      "C70",
+      "C71",
+      "C79"
+    ],
+    "result": "The authors speculate that sampling more tissues and life stages would increase coverage within taxa, that turnover patterns would apply to other tissues/stages, that weak selection acts against many new transcripts, that new transcripts are polymorphic at the population level, and that low transcript levels may reflect degradation rather than low transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C64, C69-C71, C79 are explicitly speculative (marked as SPECULATION in evidence_type). While some are reasonable extrapolations from the data (C63-C64) or supported by analogy to other systems (C70, citing Drosophila), they lack direct experimental support in this study. These represent hypotheses for future work rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C24",
+      "C65",
+      "C66",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The introduction and discussion cite extensive prior work on pervasive transcription, lncRNAs, de novo gene evolution, transcript conservation, and RNA degradation pathways to contextualize the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C19, C24, C65-C66, C72-C78 represent background knowledge and prior work, all supported by appropriate citations. These establish the scientific context for the study and are generally well-documented in the literature. The authors appropriately distinguish between established knowledge and their novel contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The authors propose a conceptual framework where emergence, functionalization, and decay of gene functions should be seen as an evolutionary life cycle, and de novo gene birth should be considered an inherent property of the transcriptional apparatus rather than unlikely circumstances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 represent the conceptual synthesis of the study's findings with prior work. These are supported by the combination of data presented (transcript turnover, lack of transcript-free islands, phylogenetic patterns) and cited literature on de novo gene evolution. While conceptual rather than directly experimental, these conclusions are reasonable interpretations of the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The phylogenetic relationships and divergence times of the sampled taxa are established based on prior studies, ranging from 3,000 years (European M. m. domesticus populations) to 10.6 million years (Apodemus uralensis).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 describe the phylogenetic sampling design, all supported by appropriate citations to population genetics and phylogenetic studies. These establish the temporal framework for interpreting transcript turnover patterns. The divergence time estimates are taken from the literature rather than calculated de novo, which is appropriate for this study's design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "The study sequenced only the poly-A+ fraction of RNA, focusing on coding and non-coding exons in processed RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is a straightforward methodological statement about the study design. This is an important limitation as it excludes non-polyadenylated transcripts, which could affect the completeness of the transcriptome coverage assessment. The focus on poly-A+ RNA is clearly stated and appropriate for the study's goals.",
+    "result_type": "MINOR"
+  }
+]

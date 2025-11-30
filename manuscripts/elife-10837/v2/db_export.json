@@ -1,0 +1,1994 @@
+{
+  "submission": {
+    "id": "536f1450-304a-4543-8c26-66cfd00521cd",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:13:48.621863Z",
+    "updated_at": "2025-11-29T22:13:48.621863Z"
+  },
+  "content": [
+    {
+      "id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "submission_id": "536f1450-304a-4543-8c26-66cfd00521cd",
+      "content_type": "manuscript",
+      "content_text": "# Active contraction of microtubule networks\n\n## Authors\n\n- Peter J Foster<sup>1</sup> ([ORCID: 0000-0003-1818-5886](https://orcid.org/0000-0003-1818-5886)) \u2020\n- Sebastian F\u00fcrthauer<sup>2</sup>\n- Michael J Shelley<sup>2</sup>\n- Daniel J Needleman<sup>1</sup>\n\n### Affiliations\n\n1. John A. Paulson School of Engineering and Applied Sciences, FAS Center for Systems Biology Harvard University Cambridge United States\n2. Courant Institute of Mathematical Science New York University New York United States\n3. Department of Molecular and Cellular Biology Harvard University Cambridge United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nMany cellular processes are driven by cytoskeletal assemblies. It remains unclear how cytoskeletal filaments and motor proteins organize into cellular scale structures and how molecular properties of cytoskeletal components affect the large-scale behaviors of these systems. Here, we investigate the self-organization of stabilized microtubules in Xenopus oocyte extracts and find that they can form macroscopic networks that spontaneously contract. We propose that these contractions are driven by the clustering of microtubule minus ends by dynein. Based on this idea, we construct an active fluid theory of network contractions, which predicts a dependence of the timescale of contraction on initial network geometry, a development of density inhomogeneities during contraction, a constant final network density, and a strong influence of dynein inhibition on the rate of contraction, all in quantitative agreement with experiments. These results demonstrate that the motor-driven clustering of filament ends is a generic mechanism leading to contraction.\n\n## Introduction\n\nThe mechanics, motions, and internal organization of eukaryotic cells are largely determined by the cytoskeleton. The cytoskeleton consists of filaments, such as actin and microtubules, and molecular motors, which consume chemical energy to exert forces on and arrange the filaments into large-scale networks. Motor proteins, including dynein and roughly 14 different families of kinesin (Wordeman, 2010), organize microtubules to form the spindle, which segregates chromosomes during cell division. The motor protein myosin organizes actin filaments into networks which drive cell motility, polarity, cytokinesis, and left-right symmetry breakage (Mitchinson and Cramer, 1996; Mayer et al., 2010; Naganathan et al., 2014). The non-equilibrium nature of motor activity is essential for the organization of the cytoskeleton into these diverse sub-cellular structures, but it remains unclear how the interactions between filaments, different motor proteins, and other biomolecules influence the behaviors of the networks they form. In particular, it is difficult to extrapolate from the biochemical properties of motors characterized in reconstituted systems to the biological function of those motors in vivo. To address this question, we study self-organization of cytoskeletal filaments in Xenopus extracts, which recapitulate the biochemical complexity of the in vivo system.\n\nThe self-organization of cytoskeletal filaments has been extensively studied in cell extracts and in reconstituted systems of purified components. Actin can form macroscopic networks that exhibit a myosin-dependent bulk contraction (Murrell and Gardel, 2012; Bendix et al., 2008; K\u00f6hler and Bausch, 2012; Alvarado et al., 2013; Szent-Gy\u00f6rgyi, 1943). Microtubule networks purified from neuronal extracts have also been observed to undergo bulk contraction (Weisenberg and Cianci, 1984), while microtubules in mitotic and meiotic extracts are found to assemble into asters (Gaglio et al., 1995; Mountain et al., 1999; Verde et al., 1991). Aster formation in meiotic Xenopus egg extracts is dynein-dependent, and has been proposed to be driven by the clustering of microtubule minus ends by dynein (Verde et al., 1991). It has also been suggested that dynein binds to the minus ends of microtubules in spindles and clusters the minus ends of microtubules to form spindle poles (Heald et al., 1996; Burbank et al., 2007; Khodjakov et al., 2003; Goshima et al., 2005; Elting et al., 2014) and dynein has been shown to accumulate on microtubule minus ends in a purified system (McKenney et al., 2014). Purified solutions of microtubules and kinesin can also form asters (N\u00e9d\u00e9lec et al., 1997; Hentrich and Surrey, 2010; Urrutia et al., 1991), or under other conditions, dynamic liquid crystalline networks (Sanchez et al., 2012). Hydrodynamic theories have been proposed to describe the behaviors of cytoskeletal networks on length scales that are much greater than the size of individual filaments and motor proteins (Prost et al., 2015, Marchetti et al., 2013). These phenomenological theories are based on symmetries and general principles of non-equilibrium physics, with the details of the microscopic process captured by a small number of effective parameters. As hydrodynamic theories are formulated at the continuum level, they cannot be used to derive the values of their associated parameters, which must be obtained from more microscopic theories (Prost et al., 2015, Marchetti et al., 2013) or by comparison to experiments (Mayer et al., 2010; Brugu\u00e9s and Needleman, 2014).\n\nA key feature of networks of cytoskeletal filaments and motor proteins that enters hydrodynamic theories, and differentiates these non-equilibrium systems from passive polymer networks, is the presence of additional, active stresses (Prost et al., 2015, Marchetti et al., 2013). These active stresses can be contractile or extensile, with profound implications for the large-scale behavior of cytoskeletal networks. Contractile stresses can result from a preferred association of motors with filament ends (Kruse and J\u00fclicher, 2000; Hyman and Karsenti, 1996), nonlinear elasticity of the network (Liverpool et al., 2009), or the buckling of individual filaments (Murrell and Gardel, 2012; Lenz, 2014; Soares e Silva et al., 2011). Extensile active stresses can arise from polarity sorting or result from the mechanical properties of individual molecular motors (Gao et al., 2015; Blackwell et al. 2015). In networks with dynamically growing and shrinking filaments, polymerization dynamics can also contribute to the active stress. Experimentally, acto-myosin systems (Murrell and Gardel, 2012; Bendix et al., 2008; K\u00f6hler and Bausch, 2012; Alvarado et al., 2013; Szent-Gy\u00f6rgyi, 1943) and microtubule networks from neuronal extracts (Weisenberg and Cianci, 1984) are observed to be contractile, while purified solutions of microtubules and kinesin can form extensile liquid crystalline networks (Sanchez et al., 2012). It is unclear which microscopic properties of filaments and motor proteins dictate if the active stress is contractile or extensile in these different systems.\n\nHere, we investigate the motor-driven self-organization of stabilized microtubules in Xenopus meiotic egg extracts. These extracts are nearly undiluted cytoplasm and recapitulate a range of cell biological processes, including spindle assembly and chromosome segregation (Hannak and Heald, 2006). We have discovered that, in addition to microtubules forming asters in this system as previously reported (Verde et al., 1991), the asters assemble themselves into a macroscopic network that undergoes a bulk contraction. We quantitatively characterized these contractions and found that their detailed behavior can be well understood using a simple coarse-grained model of a microtubule network in which dynein drives the clustering of microtubule minus ends. This end clustering mechanism leads to a novel form of active stress, which drives the system to a preferred microtubule density. Our results suggest that the dynein-driven clustering of microtubule minus ends causes both aster formation and network contraction, and have strong implications for understanding the role of dynein in spindle assembly and pole formation. Furthermore, the close agreement we find between experiments and theory demonstrates that simple continuum models can accurately describe the behavior of the cytoskeleton, even in complex biological systems.\n\n## Results\n\nTo further study the motor-induced organization of microtubules, we added 2.5 \u03bcM Taxol to Xenopus egg extracts and loaded them into microfluidic channels (Figure 1A). Taxol causes microtubules to rapidly assemble and stabilize (Mitchison et al., 2013), which allowed us to decouple the effects of motor-driven self-assembly from the complicating effects of polymerization-depolymerization dynamics. In some regions of the channel, microtubules organized into asters (Figure 1B) as observed previously (Verde et al., 1991). A NUMA antibody was used to locate microtubule minus ends (Mitchison et al., 2013), and was found to localize to the aster core, confirming the polarity of the aster (Gaglio et al., 1995). Isolated asters were found to interact and coalesce (Figure 1C, Video 1). In other regions of the channel, microtubules formed networks of aster-like structures (Figure 1D), which were highly dynamic and exhibited large-scale motion that persisted for several tens of seconds (Figure 1E, Video 2). NUMA was found to localize to the interior of these structures, confirming their aster-like nature (Figure 1F,G).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/10837/elife-10837-fig1-v2.jpg)\n\n**Figure 1.:** (A) Experiments were performed in thin rectangular channels of width $W_{0}$, height $H_{0}$,\u00a0and length $L_{0}$. (B) In some regions of the channel, microtubules organize into asters, with minus ends localized in the aster core (Scale bar, $5\u00a0\\mu$m). (C) Isolated asters fuse together over minute timescales (Scale bar, $5\u00a0\\mu$m). (D) Aster-like structures form in other regions of the channel (Scale bar, $10\u00a0\\mu$m) (E) Aster-like structures show large scale movement on minute timescales. (Scale bar, $25\u00a0\\mu$m). (F) NUMA localizes to the network interior (Scale bar, $20\u00a0\\mu$m). (G) Closeup of aster-like structure showing NUMA localized on the interior (Scale bar, $10\u00a0\\mu$m).\n\n![Video 1.](https://cdn.elifesciences.org/articles/10837/elife-10837-media1.mp4.jpg)\n\n**Video 1.:** Taxol stabilized microtubules in Xenopus oocyte extracts self-organize into asters that can then coalesce. The mageneta channel depicts microtubules while the green channel depicts NUMA localization, here used as a proxy for microtubule minus ends. Time is shown in minutes : seconds.\n\n![Video 2.](https://cdn.elifesciences.org/articles/10837/elife-10837-media2.mp4.jpg)\n\n**Video 2.:** In other regions of the channel, microtubules organize into aster-like structures that exhibit large-scale movement on the minute timescale. Time is shown in minutes : seconds.\n\nTo characterize these large-scale motions, we next imaged networks at lower magnification, obtaining a field of view spanning the entire channel width. The networks, which initially filled the entire channel (width $W_{0}$ = 1.4\u00a0mm), underwent a strong contraction, which was uniform along the length of the channel (Figure 2A, Video 3). The contractile behavior of these microtubule networks is highly reminiscent of the contractions of actin networks in these extracts (Bendix et al., 2008), but in our experiments actin filaments are not present due to the addition of 10 $\\frac{\\mug}{mL}$ Cytochalasin D. We characterized the dynamics of microtubule network contractions by measuring the width, W(t), of the network as a function of time (Figure 2B). Occasionally, we observed networks tearing along their length (Video 4), yet these tears seemed to have little impact on the contraction dynamics far from the tearing site, arguing that the Poisson ratio of the network is $\u2248$ 0. We then calculated the fraction contracted of the network:\n\n(1)\u03f5(t)=W0-W(t)W0,\n\n![Figure 2.](https://cdn.elifesciences.org/articles/10837/elife-10837-fig2-v2.jpg)\n\n**Figure 2.:** (A) Low magnification imaging shows that microtubules form a contractile network (Scale bar, $500\u00a0\\mu$m). (B) The width of the microtubule network decreases with time (n = $6$ experiments). (Inset) Representative plot of $\u03f5$(t) (Blue line) and fit from (Equation 2) (Pink line), with $\u03f5_{\u221e}=0.81$, $\\tau=3.49$ min, $T_{c}=1.06$ min.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10837/elife-10837-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Plots of $\u03f5$(t) from data in Figure 1F (Blue lines) along with fits from (Equation 2) (Pink lines).\n\n![Video 3.](https://cdn.elifesciences.org/articles/10837/elife-10837-media3.mp4.jpg)\n\n**Video 3.:** Low magnification imaging of the channels reveals that microtubules organize into a macroscopic network that spontaneously contracts on the millimeter length scale.\u00a0Time is shown in minutes : seconds.\n\n![Video 4.](https://cdn.elifesciences.org/articles/10837/elife-10837-media4.mp4.jpg)\n\n**Video 4.:** During contraction, tears can develop in the microtubule network, causing the network to break.\u00a0Time is shown in minutes : seconds.\n\nThe time course of $\u03f5$(t) was found to be well fit by an exponential relaxation:\n\n$$\n\u03f5(t)\u2243\u03f5_{\u221e}1-e^{\\frac{-(t-T_{c})}{\\tau}},\n$$\n\nwhere $\u03f5_{\u221e}$ is the final fraction contracted, $\\tau$ is the characteristic time of contraction, and $T_{c}$ is a lag time before contraction begins (Figure 2B, inset, Figure 2\u2014figure supplement 1).\n\nWe next sought to investigate which processes determine the timescale of contraction and the extent that the network contracts. For this, we exploited the fact that different mechanisms predict different dependence of the timescale $\\tau$ on the channel dimensions. For instance, in a viscoelastic Kelvin-Voight material driven to contract by a constant applied stress, $\\tau$ = $\u03b7$/E depends solely on the viscosity $\u03b7$ and the Young\u2019s modulus E and is independent of the size of the channel (Oswald, 2009). In contrast, in a poroelastic material driven by a constant stress, $\\tau\u00a0\u221d\u00a0W_{0}^{2}$ (Coussy, 2004), where $W_{0}$ is the width of the channel. Thus, studying how $\\tau$ varies with channel width provides a means to test the validity of these models.\n\nWe fabricated microfluidic channels of varying width, W0 = 1.4, 0.9, 0.44, and 0.16 mm, all with height H0 = 125 \u03bcm, loaded the channels with extracts supplemented with 2.5 \u03bcM Taxol, and imaged the networks at low magnification (Figure 3A, Video 5). Results for each channel width were averaged together to produce master curves of the width, W(t) (Figure 3B), and fraction contracted, \u03f5(t) (Figure 3C), of the networks in each channel. Visual inspection of the fraction-contracted curves, \u03f5(t), reveals that networks in smaller channels contract faster, but all reach a similar final fraction contracted (Figure 3C). To quantify these trends, we fit the \u03f5(t) curves using (Equation 2) and extracted the characteristic time to contract, \u03c4, and the final fraction contracted, \u03f5\u221e, for each channel width. We find that the dependence of \u03c4 on channel width is inconsistent with the time of contraction resulting from either viscoelastic or poroelastic timescales, which would predict constant and quadratic scalings respectively (Figure 3D). We next explored the influence of channel height H0 (H0 = 75, 125, 150\u00a0\u03bcm, all with width W0 = 1.4 mm) and found that \u03c4 does not significantly vary in these channels (Figure 3E).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/10837/elife-10837-fig3-v2.jpg)\n\n**Figure 3.:** (A) Microtubules form contractile networks in channels with various widths (Scale bar, 500 $\\mu$m, t=10 min). (B) Width of the networks as a function of time in channels with various widths. (C) Fraction contracted as a function of time, $\u03f5$(t), calculated from the data in B. The networks all contract to a similar final fraction, while the timescale of contraction differs. (D) The scaling of the characteristic time, $\\tau$, with channel width does not vary as $W_{0}^{2}$, as would result for a poroelastic timescale, and is not a constant, independent of width, as would result from a viscoelastic timescale. The scaling is well described by an active fluid model (green line analytic scaling, fit to (Equation 6); green dots numerical solution). (E) The characteristic time, $\\tau$, is found to be independent of channel height. The dashed line is the mean value of $\\tau$. (F) $\u03f5_{\u221e}$ is constant for all channel widths and heights, indicating that the network contracts to a constant final density. The dashed line is the mean value of $\u03f5_{\u221e}$. All panels display mean $\\pm$ s.e.m.\n\n![Video 5.](https://cdn.elifesciences.org/articles/10837/elife-10837-media5.mp4.jpg)\n\n**Video 5.:** Devices were fabricated with different widths.\u00a0Each video panel depicts a representative experiment using channels of the given width. Time is shown in minutes : seconds.\n\nIn all cases, the networks contracted to a similar final fraction, $\u03f5_{\u221e}$, of $\u2248$ 0.77, irrespective of channel geometry (Figure 3F). Since the Taxol concentration was held constant, all experiments started with the same initial density of microtubules, regardless of the dimensions of the channel. Thus, all networks contracted to the same final density. By using fluorescence intensity as a proxy for tubulin concentration (see Materials and methods), we estimate the final concentration of tubulin in the network to be $\u03c1_{0}\u2248$ 30\u00a0$\\mu$M. Remarkably, this is comparable to the concentration of microtubules in reconstituted meiotic spindles in Xenopus extracts (Needleman et al., 2010), which is $\u2248$ 60\u00a0$\\mu$M. As neither the simple viscoelastic nor poroelastic models are consistent with these results, we sought to construct an alternative model of the contraction process. Since Taxol stabilizes microtubules in these experiments, the density of microtubules $\u03c1$ is conserved throughout the contraction process, implying\n\n$$\n\u2202_{t}\u03c1=-\\nabla\u2192\u22c5(\u03c1v\u2192),\n$$\n\nwhere $v\u2192$ is the local velocity of the microtubule network. The velocity $v\u2192$ is set by force balance. If the relevant timescales are long enough that the microtubule network can be considered to be purely viscous, and if the network\u2019s motion results in drag, then the equation for force balance is\n\n$$\n\u03b7\\nabla^{2}v\u2192-\\gammav\u2192=\\nabla\u2192\u22c5\\sigma,\n$$\n\nwhere $\u03b7$ and $\\gamma$ are the viscosity and drag coefficients, respectively, and $\\sigma$ is an active stress caused by motor proteins which drive the contraction of the microtubule network. The observation that the timescale of contraction, $\\tau$, is independent of channel height (Figure 3E) shows that the drag does not significantly vary with channel height, and thus could arise from weak interactions between the microtubule network and the device wall.\n\nWe obtain an expression for the active stress, \u03c3, by considering the microscopic behaviors of microtubules and motor proteins. As the contracting networks consist of microtubule asters (Figure 1D, E), and microtubule asters in meiotic extracts are thought to assemble by the dynein-induced clustering of microtubule minus ends (Verde et al., 1991), we hypothesize that the contraction process is also driven by dynein pulling microtubule minus ends towards each other (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/10837/elife-10837-fig4-v2.jpg)\n\n**Figure 4.:** (A) Microtubule sliding by dynein drives microtubule minus ends together. (B) Minus end clustering leads to the formation of aster-like structures. Due to steric interactions between microtubules, there is an upper limit to the local microtubule density. (C) The microtubule network is composed of interacting asters. Motor activity driving aster cores together leads to bulk contraction of the network.\n\nIn an orientationally disordered suspension of microtubules, we expect dynein mediated collection of microtubule minus ends to drive a contractile stress which is proportional to the number of motor molecules $m$ and the local density of microtubules $\u03c1$, (see Appendix).\n\nAs only a finite number of microtubules can fit near the core of an aster, steric collisions will counteract the contractile stress at high densities (Figure 4B).\n\nSince most motion in the suspension is motor driven, thermal collisions can be ignored, and the extensile stress driven by steric interactions will be be proportional to the number\u00a0of motor molecules $m$ and quadratic in the local density of microtubules $\u03c1$\u00a0(see Appendix).\n\nTaken together, these two effects lead to the active stress\n\n$$\n\\sigma=s\u03c1(\u03c1-\u03c1_{0})\ud835\udd40,\n$$\n\nwhere $s$ is the strength of the active stress, $\u03c1_{0}$ is the final density at which the effects of dynein mediated clustering and steric repulsion between microtubules balance, and $\ud835\udd40$ is a unit tensor (see Appendix).\n\nImportantly, since the contractile and extensile parts of the active stress both depend linearly on the number of motor molecules, the prefered density $\u03c1_{0}$ that the suspension will reach after contraction depends only on the interaction geometry between microtubules and motors and not on the actual number of active motors. Only the strength $s$ of the active stress will be affected if the number of active motors could be changed.\n\nTaken together, Equations (3,4,5) constitute an active fluid theory of microtubule network contraction by minus end clustering. We note that this theory could be reformulated, essentially without change, as the clustering of aster cores, again driven by dynein mediated clustering of minus\u00a0ends. Isotropy of interactions remains a fundamental assumption.\n\nWe first investigated if this active fluid theory can explain the dependence of the timescale of contraction on sample geometry. An analysis of the equations of motion, Equations (3,4,5), near equilibrium predicts that the timescale of contractions obeys\n\n$$\n\\tau(W_{0})=\\alpha\\frac{\u03b7}{s\u03c1_{0}^{2}}+\\beta\\frac{\\gamma}{s\u03c1_{0}^{2}}W_{0}^{2},\n$$\n\nwhere $\\alpha$ = 2.2 $\\pm$ 0.05 and $\\beta$ = 0.085 $\\pm$ 0.006 are dimensionless constants, which we determined numerically (see Appendix). This predicted scaling is both consistent with the experimental data and simulations of the full theory (Figure 3D). Fitting the scaling relationship to the data allows combinations of the parameters to be determined, giving $\u03b7\u2215(s\u03c1_{0}^{2}$) = 0.82 $\\pm$ 0.20 min and $\\gamma\u2215(s\u03c1_{0}^{2}$) = 1.0 $\\times10^{-5}\\pm0.7\\times10^{-5}\u00a0min\u2215(\\mum^{2})$ (mean $\\pm$ standard error). Combining this measurement with an estimate for the network viscosity taken from measurements in spindles of $\u03b7\u00a0\u2248\u00a02\\times10^{2}Pa\u22c5s$ (Shimamoto et al., 2011), we can estimate the dynein-generated active stress to be $s\u03c1_{0}^{2}\u00a0\u2248\u00a04Pa$ which is consistant with having $\u2248$ 0.4 dynein per microtubule minus end each exerting an average force of 1 pN (Nicholas et al., 2015).\n\nTo further explore the validity of the active fluid theory of contraction by microtubule minus end clustering, we explored other testable predictions of the theory. This theory predicts that: (i) the preferred density of the network $\u03c1_{0}$ is constant and does not depend on the initial conditions. This is consistent with the constant $\u03f5_{\u221e}$ measured experimentally (Figure 3F); (ii) since contractions are driven by stress gradients (Equation 4) and stress depends on microtubule density (Equation 5) the density discontinuity at the edge of the network should produce large-stress gradients, leading to an inhomogeneous density profile in the network during contraction; (iii) the magnitude of the active stress, s, is proportional to the number of active motors, but the final density of the network, $\u03c1_{0}$, is independent of the number of molecular motors (see Appendix). Thus, reducing the number of motors should lead to slower contractions, but still yield the same final density.\n\nWe first examined prediction (ii), that the stress discontinuity at the edge of the network should lead to a material buildup in the film. To test this, we averaged the fluorescence intensity along the length of the channel (see Materials and Methods) and found that the microtubule density does indeed increase at the network\u2019s edge during contraction (Figure 5A). We next explored if the inhomogeneous density profile could be quantitatively explained by our active fluid theory. We numerically solved Equations (3,4,5) and used least squares fitting to determine the simulation parameters which most closely matched the experimentally measured profiles (Figure 5B), yielding \u03b7\u2215(s\u03c102) = 0.82 \u00b1 0.03 min, \u03b3\u2215(s\u03c102) = 6.1 \u00b1 0.1\u00d710-6 min/(\u03bcm2), and \u03c1initial\u2215\u03c10 = 0.32  \u00b1  0.01 (mean  \u00b1  s.e.m., n=4 experiments). Within error, these values are the same as those determined from the dependence of the timescale of contraction on channel width (Figure 3D). The simulated profiles closely match the experimental ones for most of the contraction (Figure 5B), but at late times the simulated inhomogeneities dissipate in contrast to the experiments (Figure 5\u2014figure supplement 1). This might be caused by a long-term aging of the network that is not incorporated into our simple model. To confirm that the density buildup was due to an increased velocity near the network\u2019s edge, we measured the velocity throughout the network using Particle Image Velocimetry (PIV, see Materials and Methods) (Figure 5C) and found that the velocities increase superlinearly with distance from the network\u2019s center, as predicted (Figure 5D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/10837/elife-10837-fig5-v2.jpg)\n\n**Figure 5.:** (A) Time series of contraction showing intensity averaged along the length of the channel. The average intensity peaks at the network\u2019s edges due to increased local microtubule density. (Scale bars, 500 $\\mu$m) (B) Comparison of measured density profiles (solid lines) with density profiles from simulation (dashed lines). Data are plotted at 1 min intervals starting at t = 40 s. (C) Representative frame from PIV showing the network\u2019s local velocity component along the network\u2019s width. (D) Comparison between measured (solid red line) and simulated (dashed red line) velocity along the width of the channel at t = 80 s. The measured and simulated velocities increase superlinearly with distance from the center of the network, as can be seen by comparison to a linear velocity profile (dashed black line).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10837/elife-10837-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Data are plotted at 2 min intervals starting at t = 40 s.\n\nFinally, we sought to determine the molecular basis of the contraction process, and check prediction (iii), that the number of motors driving the contraction affects the rate of contraction, but not the final density the network contracts to. Aster assembly is dynein-dependent in Xenopus egg extracts (Gaglio et al.,1995; Verde et al., 1991), and dynein (Heald et al., 1996) and Kinesin-5 (Sawin et al., 1992) are two of the most dominant motors in spindle assembly in this system. We inhibited these motors to test their involvement in the contraction process. Extracts supplemented with STLC for Kinesin-5 inhibition or p150-CC1 for dynein inhibition were loaded into channels with a width, W0, of 0.9 mm and imaged at low magnification. Inhibiting Kinesin-5 had little effect on the contraction process (Figure 6\u2014figure supplement 1). In contrast, inhibiting dynein caused a dose-dependent slowdown of the contraction (Figure 6A). In spindle assembly, inhibiting Kinesin-5 suppresses the morphological changes caused by dynein inhibition (Mitchison et al., 2005). We, therefore, tested how simultaneously inhibiting both motors influences the contraction process, but found that the effects of dynein inhibition were not rescued by the simultaneous inhibition of Kinesin-5 (Figure 6\u2014figure supplement 1), suggesting that in this context, Kinesin-5 is not generating a counteracting extensile stress. This further suggests the possibility that in the spindle, the role of Kinesin-5 may be in orienting, polarity sorting, and sliding microtubules as opposed to active stress generation. Curves of \u03f5(t) were fit using Equation (2) to extract the final fraction contracted, \u03f5\u221e, and the characteristic time of contraction, \u03c4. By varying the concentration of p150-CC1, the characteristic time, \u03c4, could be tuned over a wide range from \u2248 3 min to \u2248 75 min (Figure 6B). Fitting a sigmoid function to the \u03c4 vs. p150-CC1 concentration curve yields an EC50 value of 0.22  \u00b1 . 02 \u03bcM (mean  \u00b1  standard error), similar to the value of \u2248 0.3 \u03bcM reported for the effect of p150-CC1 on spindle length in Xenopus extracts (Gaetz and Kapoor, 2004), which is consistent with active stress generated by dynein being required for pole focusing. Despite this large change in the contraction timescale, we found no apparent differences in \u03f5\u221e (Figure 6C). Thus, the microtubule networks contract to approximately the same final density irrespective of the concentration of p150-CC1. The observation that inhibiting dynein affects the timescale of contraction but not the final density to which the network contracts is consistent with the predictions of our model. We note that even at the highest p150-CC1 concentrations used, the network still undergoes a bulk contraction. This could possibly be due to incomplete inhibition of dynein by p150-CC1, or by another motor protein present in the extract that also contributes to the contraction process. As the characteristic time, \u03c4\u221d1s, by comparing the characteristic times in the uninhibited and 2 \u03bcM p150-CC1 cases, we can estimate that the strength of the active stress, s, in the 2 \u03bcM p150-CC1 condition is only \u2248 4% of the strength of the active stress in the uninhibited case, arguing that even if another motor is involved in the contraction, dynein contributes \u2248 96% of the active stress.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/10837/elife-10837-fig6-v2.jpg)\n\n**Figure 6.:** (A) Fraction contracted as a function of time, $\u03f5$(t), when dynein is inhibited using p150-CC1. (B) The characteristic time of contraction, $\\tau$, increases with increasing p150-CC1 concentration. Solid green line indicates fit of sigmoid function. (C) $\u03f5_{\u221e}$ has no apparent variation with p150-CC1 concentration. Solid green line indicates the mean value of $\u03f5_{\u221e}$. All panels display mean $\\pm$ s.e.m.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/10837/elife-10837-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Comparison of $\u03f5$(t) curves for samples where Kinesin-5 was inhibited using STLC and control where no STLC was added. (B) Simultaneous inhibition of dynein with p150-CC1 and Kinesin-5 with STLC does not rescue the effects of dynein inhibition alone. All panels display mean $\\pm$ s.e.m.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/10837/elife-10837-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Plots of $\u03f5$(t) from experiments with 2 $\\mu$M p150-CC1 (blue lines) along with fits from Equation (2) (pink lines).\n\n## Discussion\n\nHere, we have shown that networks of stabilized microtubules in Xenopus egg extracts undergo a bulk contraction. By systematically varying the width of the microfluidic channel in which the network forms, we demonstrated that the timescale of contraction is not a poroelastic or viscoelastic timescale. A simple active fluid model of network contraction by dynein-driven clustering of microtubule minus ends correctly predicts the dependence of the contraction timescale on channel width, the nonuniform density profile in the network during contraction, and that inhibiting dynein affects the timescale of contraction but not the final density that the network contracts to. Parameters of this model can be measured by the scaling of the contraction timescale with channel width and by a detailed analysis of the inhomogeneities in the network that develop during contraction. Both methods give similar values.\n\nOur results demonstrate that the behaviors of a complex biological system can be quantitatively described by a simple active matter continuum theory. These active matter theories aim to describe the behavior of cytoskeletal systems at large-length\u00a0scales and long-timescales by effectively averaging all of the molecular complexity into a small set of coarse-grained parameters. Previously, these theories have been predominately applied to describe biological systems near non-equilibrium steady states (Prost et al., 2015; Brugu\u00e9s et al., 2014). In the present work, we augment previous theories with a nonlinear active stress term derived from microscopic considerations to capture the far from steady state dynamics of the contraction process. This approach allows us to quantitatively explain our experimental results using a theory with only four parameters, while a complete microscopic model would require understanding the behavior of the thousands of different proteins present in Xenopus egg extracts. Furthermore, the considerations of the model are general, and it will be interesting to consider whether the end clustering mechanism proposed here could contribute to contraction in actin networks as well.\n\nIn our model, the active stress which drives network contraction results from the motor-induced clustering of microtubule minus ends, the same process thought to be responsible for aster formation and spindle pole focusing (Gaglio et al., 1995; Mountain et al., 1999; Verde et al., 1991, Elting et al., 2014; Heald et al., 1996; Burbank et al., 2007; Khodjakov et al., 2003; Goshima et al., 2005). Our results, and previous data (Verde et al., 1991; Heald et al., 1996; Burbank et al., 2007), are consistent with minus end clustering in Xenopus egg extracts primarily arising from the activity of dynein. The ability of dynein to cluster microtubule minus ends could result from dynein being able to accumulate on the minus end of one microtubule, while simultaneously walking towards the minus end of another (Hyman and Karsenti, 1996; McKenney et al. 2014; Figure 4A). There is indication that such behaviors may indeed occur in spindles (Elting et al., 2014), and pursuing a better understanding of those processes is an exciting future direction that will help to clarify the function of dynein in spindles.\n\nThe observation that microtubule networks contract in Xenopus egg extracts suggests that motor-induced stresses in spindles are net contractile and not extensile as previously assumed (Brugu\u00e9s and Needleman, 2014). The contribution of dynein to spindle pole focusing may ultimately be due to these contractile stresses. The presence of contractile stresses from dynein might also explain both the observation that the fusion of spindles is dynein-dependent (Gatlin et al., 2009), and the apparently greater cohesion between microtubules at spindle poles, (where dynein is localized [Gatlin et al., 2010]). It is unclear what processes set the density of microtubules in the spindle, and the finding that the active stress generated from minus end clustering saturates at a preferred microtubule density could play an important role.\n\n## Materials and methods\n\n### Preparation of Xenopus extracts\n\nCSF-arrested extracts were prepared from Xenopus llaevis oocytes as previously described (Hannak and Heald, 2006). Crude extracts were sequentially filtered through 2.0, 1.2, and 0.2 micron filters, frozen in liquid nitrogen, and stored at \u221280\u00b0C until use.\n\n### Preparation of microfluidic devices\n\nChannel negatives were designed using AutoCAD 360 (Autodesk) and Silhouette Studio (Silhouette America) software, cut from 125-micron-thick tape (3M Scotchcal,\u00a0St. Paul,\u00a0MN) using a Silhouette Cameo die cutter, and a master was made by adhering channel negatives to the bottom of a petri dish. PDMS (Sylgard 184, Dow Corning, Midland,\u00a0MI;\u00a010:1 mixing ratio) was cast onto the masters and cured overnight at 60\u00b0C. Devices and coverslips were each corona treated with air plasma for 1 min before bonding. Channels containing a degassed solution of 5 mg/mL BSA (J.T. Baker, Center Valley, PA) supplemented with 2.5% w/w Pluronic F127 (Sigma,\u00a0St.\u00a0Louis,\u00a0MO) were incubated overnight at 12\u00b0C. Unless stated otherwise, the microfluidic devices had a length of 18 mm, a height of 0.125 mm, and a width of 1.4 mm.\n\n### Protein purification\n\nGST-tagged p150-CC1 plasmid was a gift from Thomas Surrey (Uteng et al., 2008). GST-p150-CC1 was expressed in E. coli BL21 (DE3)-T1R(Sigma) for 4 hr at 37\u00b0C. The culture was shifted to 18\u00b0C for 1 hr before adding 0.2\u00a0mM IPTG and the culture was grown overnight at 18\u00b0C. Cells were centrifuged, resuspended in PBS supplemented with Halt Protease Inhibitor Cocktail (Thermo Scientific,\u00a0Rockford,\u00a0IL) and benzonase (Novagen, San Diego, CA) before lysis by sonication. GST-p150-CC1 was purified from clarified lysate using a GSTrap column FF (G.E. Healthcare,\u00a0Sweden) as per the manufacturer\u2019s instructions. GST-p150-CC1 was dialyzed overnight into 20\u00a0mM Tris-HCl, 150\u00a0mM KCl, and 1\u00a0mM DTT. The GST tag was cleaved using Prescission Protease (overnight incubation at 4\u00b0C). After removing free GST and Prescission Protease using a GSTrap FF column, p150-CC1 was concentrated, frozen in liquid nitrogen, and stored at -80\u00b0C until use.\n\n### Bulk contraction assay\n\n20 $\\mu$L aliquots of filtered extract were supplemented with \u223c1 $\\mu$M Alexa-647 labeled tubulin and 2.5\u00a0$\\mu$M Taxol before being loaded into channels. For dynein inhibition experiments, 1 $\\mu$L of either p150-CC1 or buffer alone was added to the extract immediately before Taxol addition. For Kinesin-5 inhibition experiments, 100 $\\mu$M STLC (Sigma Aldrich) was added concurrently with Taxol. Channels were sealed with vacuum grease and imaged using a spinning disk confocal microscope (Nikon Ti2000, Yokugawa CSU-X1), an EMCCD camera (Hamamatsu), and a 2x objective using Metamorph acquisition software (Molecular Devices). t=0 is defined when the imaging begins, $\u2248$ 1 min after Taxol addition to the extract. After a brief lag time, the microtubule networks spontaneously begin contraction. Images were analyzed using ImageJ and custom build MATLAB and Python software (available at https://github.com/peterjfoster/eLife). Parameters were fit to contraction data using timepoints where $\u03f5(t)>$ 0.1.\n\n### Final density estimation\n\nThe final density was estimated using contraction experiments with 2.5 $\\mu$M Taxol in 0.9 mm channels. For each experiment, the frame closest to t = $\\tau$ + $T_{c}$ was isolated, where $\\tau$ and $T_{c}$ are the timescale of contraction and the offset time respectively, obtained from fits of the time course of contraction to Equation 2 of the main text. After correcting for the camera offset and inhomogeneous laser illumination, the average fluorescence intensity of the network, $\u03c1_{N}$ and the average fluorescence intensity in the channel outside the network, $\u03c1_{M}$ were calculated. The fluorescence intensity in the channel but outside the network comes from monomeric fluorescently labeled tubulin and was assumed to be constant throughout the channel. The fractional concentration was then estimated as $\u03c1(\\tau+T_{c})=\\frac{\u03c1_{N}-\u03c1_{M}}{\u03c1_{N}+\u03c1_{M}}$. Using this measurement along with the fit curves for $\u03f5$(t) and under the assumption that the network contracts in the z direction such that $\u03f5$(t) in the z direction is the same as along the width, the inferred fractional concentration at t = $\u221e$ was calculated as\n\n$$\n\u03c1(t=\u221e)=\\frac{\u03c1(\\tau+T_{c})}{(1-\u03f5_{\u221e})^{2}}(1-\u03f5_{\u221e}(1-e^{-1}))^{2}\n$$\n\nAssuming the fluorescently labeled tubulin incorporates into microtubules at the same rate as endogenous tubulin, we can multiply the derived fractional density $\u03c1$(t = $\u221e$) by the tubulin concentration in extract, \u224818\u00a0$\\mu$M (Parsons and Salmon, 1997) to arrive a final network tubulin concentration of \u224830 $\\mu$M.\n\n### Density profile measurements\n\nImages from contraction experiments were corrected for the camera offset and inhomogeneous laser illumination before being thresholded in order to segment the microtubule network from background fluorescence. Rotations of the channel relative to the CCD were detected by fitting linear equations to edges of the microtubule network. If the average of the slopes from the top and bottom of the network was greater than 1/(the number of pixels in the length of the image), a rotated, interpolated frame was constructed where pixels were assigned based on the intensity of the pixel in the original frame weighted by their area fraction in the interpolated pixel. Frames were averaged along the length of the channel before background signal subtraction. For density profiles compared with simulations, the edge peaks of the density profile were identified and pixels between the two peaks were retained. Profiles were normalized such that the integral of the profile was set to 1.\n\n### Particle imaging velocimetry\n\nParticle Imaging Velocimetry was performed using PIVLab software (Thielicke and Stamhuis, 2014) using the FFT window deformation algorithm with a 16-pixel interrogation area and 8 pixel step for the first pass and an 8 pixel interrogation area with a 4-pixel step for the second pass. After PIV was performed, intensity images were thresholded to segment the microtubule network from the background, and only velocity vectors within the microtubule network that were $>$ 8 pixels from the network\u2019s edges were retained.\n",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "947fac6a-c90c-46a9-bb55-1b37377e0400",
+      "submission_id": "536f1450-304a-4543-8c26-66cfd00521cd",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anna Akhmanova, Utrecht University , Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.10837.018](https://doi.org/10.7554/eLife.10837.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Active Contraction of Microtubule Networks\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Naama Barkai as the Senior Editor. One of the three reviewers, Gijsje Koenderink, has agreed to reveal her identity.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis study describes the macroscopic contraction of the microtubule network induced in Xenopus egg extracts by the addition of Taxol. It was shown before that with these conditions, the motor dynein induce the formation of asters (radial structures) that have a size that is commensurate with the length of the microtubules induced by Taxol. In this study, the larger scale is considered for the first time, and it is shown that the asters will coalesce, inducing the whole network to contract. This is reminiscent of the actin-gel contraction that is observed in the same system, but with a network of microtubules. The observations are interesting and fairly systematic. The quantitative nature of the experimental data allows for the development of phenomenological theoretical models that can describe the data. The message is clear and the article will be a worthwhile addition to the literature, in particular because it shows that contraction is not a unique feature of the actin world, as it occurs also in microtubule networks.\n\nEssential revisions:\n\n1) The claim \"Our results suggest that the dynein-driven clustering of microtubule minus ends causes both aster formation and network contraction\" (Introduction) is not sufficiently well supported by the data. Firstly, the aster nature of the structures is only weakly supported by the data (the data being shown in Figure 1B and C; especially panel 1C is unconvincing); it would be more convincing to visualize the MT minus ends or the motors. Secondly, the claim that dynein drives minus-end clustering is not well-supported since dynein inhibition only slows contraction, but does not stop it. Is the inhibition not 100% effective, or are other processes involved in contraction?\n\n2) The biological relevance of the work must be made more explicit. The authors claim that the observation of dynein-driven clustering of microtubule minus ends has \"strong implications for understanding the role of dynein in spindle assembly and pole formation.\" It is, however, not clear specifically how the insights obtained here can be translated to those situations. The statement in the Results section \"suggesting that dynein is performing the same activity in spindles as in the contracting networks\" is particularly unclear.\n\n3) To develop the model (Appendix, \u201cActive stresses from dynein-mediated microtubule interactions), the authors consider point-like objects in 1D, which are said to represent the \"minus ends of microtubules\". However the attractive interaction between these points extends symmetrically left and right, as if the microtubules were not orientated. The effective steric interaction between microtubules is also only dependent on the position of the minus-end, ignoring the fact that it is really the polymer mass that would induce steric forces, and not just the minus-ends. The plus-ends would be equally relevant. In other words, it seems in this theory that the minus-end located in the middle of the filament. To avoid this inconsistency with the accepted molecular picture, the authors should consider reformulating the model as a theory of many asters coming together. The basic unit would not be a microtubule, but a bunch of them already connected at their minus-ends. The variables 'Xi' could represent the positions of the centres of these asters, and assuming that they are symmetric, it would be justified to use the functional form of the interactions that are surmised. Doing so will not require changing the algebra in the theory, and rewriting its description would be sufficient.\n\n4) The authors briefly mention that networks confined within 10-micron thick chambers do not exhibit any macroscopic contraction. Is there a way to understand this experimental observation and can it be accounted for by the theoretical model?\n\n5) It seems that the contraction is a two-step process in which microtubules first form localized aster. Subsequently, these asters interact with each other in order to form a bulk contractile gel. Their proposed mechanism of end motor clustering explains local contractions that lead to formation of asters. However, presumably once the asters are formed all the microtubule ends are localized at the center of asters. In view of this information, please explain better why interacting asters would form a bulk contractile structure.\n\n6) Previous work by Leibler, Surrey and Nedelec has investigated the behavior of purified systems of molecular motors and microtubules. They have not described bulk contraction but only formation of aster-like structures, which perhaps could be considered to be localized contractions. It would be good to explain the differences between the two analyzed systems and discuss whether the comparison between the two studies might suggest a way to assemble bulk microtubule contractile networks from purified components.\n\n7) Model and data description:\n\nA) Regarding the kinetics of contraction, several important aspects are unclear: what defines t=0? What is the origin of the lag time? And what process actually triggers constriction? A more detailed description of the kinetics of microtubule assembly versus that of motor-driven remodeling would be helpful.\n\nB) It is not evident why the width W(t) is used as a read-out for the densification. It seems that fluorescence intensity would be a much more direct measure of concentration. In particular, since the \u03b5 does not take into account the thickness of the gel. xz/yz-projections could help to justify this choice.\n\nC) The authors should show fits of \u03b5(t) in Figure 1 and in particular in Figure 5, and comment on the adequacy of exponential fits.\n\nD) Viscoelastic and poroelastic models can be nicely ruled out by showing the dependence of \u03c4(W0). The new model clearly is more consistent with the data, but actually does not reproduce the trend very well. The authors should critically comment on this, as well as on other aspects of their model.\n\nE) The model derivation (assumptions, s, \u03c10) should be better explained in the main text to allow the reader to follow the reasoning.\n\nF) The authors should provide a more detailed explanation of what s and \u03c10 depend on, and give a simple estimate of physically reasonable values. In general, the authors should comment on the connection between the parameters in the continuum theory with microscopic parameters. As it stands, the best-fit parameter values (Results) are meaningless.\n\nG) It is unclear how alpha and beta are derived. What are the input parameters? (Please see the subsection \u201cScaling analysis of the equations of motion\u201d).\n\nH) Video 1 as well as Figure 1 show very inhomogeneous density distributions. How is this taken into account in the theory or why can it be neglected?\n\nI) The cytochalasin D concentration should be specified.\n\nJ) For the PIV analysis, the settings should be specified.\n\nK) In Figure 5C: is the initial systematic decrease of \u03b5\u221ea real effect?\n\n8) What are the implications of this new mechanism for other, more well studied, contractile systems, in particular actin-myosin?\n\n9) The statements on alternative methods of study appear to be a bit superficial. The authors are encouraged to discuss better the shortcomings of their approach.\n",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2ef97372-5c53-4914-b5ca-add933492b35",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C2",
+      "claim": "Network contractions are driven by the clustering of microtubule minus ends by dynein.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that these contractions are driven by the clustering of microtubule minus ends by dynein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on experimental observations and theoretical modeling presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "30d9e93b-93bd-419b-9ba7-1bffa6272625",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C3",
+      "claim": "The timescale of contraction depends on initial network geometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this idea, we construct an active fluid theory of network contractions, which predicts a dependence of the timescale of contraction on initial network geometry, a development of density inhomogeneities during contraction, a constant final network density, and a strong influence of dynein inhibition on the rate of contraction, all in quantitative agreement with experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing different contraction timescales for different channel widths (Figure 3).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "a3c1a19e-683a-4192-8c68-8238054a68b7",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C4",
+      "claim": "Density inhomogeneities develop during contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this idea, we construct an active fluid theory of network contractions, which predicts a dependence of the timescale of contraction on initial network geometry, a development of density inhomogeneities during contraction, a constant final network density, and a strong influence of dynein inhibition on the rate of contraction, all in quantitative agreement with experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental measurements of density profiles showing increased density at network edges (Figure 5).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "7ac0d654-97ba-42f6-90e5-ae418ed3627e",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C5",
+      "claim": "Networks contract to a constant final density independent of initial conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this idea, we construct an active fluid theory of network contractions, which predicts a dependence of the timescale of contraction on initial network geometry, a development of density inhomogeneities during contraction, a constant final network density, and a strong influence of dynein inhibition on the rate of contraction, all in quantitative agreement with experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing constant \u03b5\u221e across different channel geometries (Figure 3F).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "ca1f87da-5b54-42a8-9d21-1e4e5e1bde4a",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C6",
+      "claim": "Dynein inhibition strongly influences the rate of contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this idea, we construct an active fluid theory of network contractions, which predicts a dependence of the timescale of contraction on initial network geometry, a development of density inhomogeneities during contraction, a constant final network density, and a strong influence of dynein inhibition on the rate of contraction, all in quantitative agreement with experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing dose-dependent slowdown of contraction with p150-CC1 (Figure 6).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "ee571a4f-a62c-48c5-8471-d45396983d85",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C7",
+      "claim": "Motor-driven clustering of filament ends is a generic mechanism leading to contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "These results demonstrate that the motor-driven clustering of filament ends is a generic mechanism leading to contraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental and theoretical results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "9500ea57-dc4f-4d23-afb5-f422fb9675ba",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C8",
+      "claim": "Motor proteins including dynein and roughly 14 different families of kinesin organize microtubules to form the spindle.",
+      "claim_type": "EXPLICIT",
+      "source": "Motor proteins, including dynein and roughly 14 different families of kinesin (Wordeman, 2010), organize microtubules to form the spindle, which segregates chromosomes during cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "de4cc4e4-52f0-4f5d-a4bd-d4a03b69498d",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C9",
+      "claim": "Myosin organizes actin filaments into networks which drive cell motility, polarity, cytokinesis, and left-right symmetry breakage.",
+      "claim_type": "EXPLICIT",
+      "source": "The motor protein myosin organizes actin filaments into networks which drive cell motility, polarity, cytokinesis, and left-right symmetry breakage (Mitchinson and Cramer, 1996; Mayer et al., 2010; Naganathan et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "31455d36-fd0a-4106-af56-98686cdeb698",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C10",
+      "claim": "Actin can form macroscopic networks that exhibit myosin-dependent bulk contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Actin can form macroscopic networks that exhibit a myosin-dependent bulk contraction (Murrell and Gardel, 2012; Bendix et al., 2008; K\u00f6hler and Bausch, 2012; Alvarado et al., 2013; Szent-Gy\u00f6rgyi, 1943).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "d68cb06a-bb4b-4c7c-8c4a-7ce85707d2dd",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C11",
+      "claim": "Microtubule networks purified from neuronal extracts undergo bulk contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Microtubule networks purified from neuronal extracts have also been observed to undergo bulk contraction (Weisenberg and Cianci, 1984)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "3432f829-8f35-46b8-86ad-02d47cdf8834",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C12",
+      "claim": "Microtubules in mitotic and meiotic extracts assemble into asters.",
+      "claim_type": "EXPLICIT",
+      "source": "while microtubules in mitotic and meiotic extracts are found to assemble into asters (Gaglio et al., 1995; Mountain et al., 1999; Verde et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "cbb97f84-181e-4916-bf13-aad49b5dcd6d",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C13",
+      "claim": "Aster formation in meiotic Xenopus egg extracts is dynein-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Aster formation in meiotic Xenopus egg extracts is dynein-dependent, and has been proposed to be driven by the clustering of microtubule minus ends by dynein (Verde et al., 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "b5232bb9-f6b8-4138-b54a-ef1b5f83cc27",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C14",
+      "claim": "Dynein binds to the minus ends of microtubules in spindles and clusters the minus ends to form spindle poles.",
+      "claim_type": "EXPLICIT",
+      "source": "It has also been suggested that dynein binds to the minus ends of microtubules in spindles and clusters the minus ends of microtubules to form spindle poles (Heald et al., 1996; Burbank et al., 2007; Khodjakov et al., 2003; Goshima et al., 2005; Elting et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "d2ce63d6-8650-4fe1-a977-7b4fe9a5fff4",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C15",
+      "claim": "Dynein accumulates on microtubule minus ends in a purified system.",
+      "claim_type": "EXPLICIT",
+      "source": "and dynein has been shown to accumulate on microtubule minus ends in a purified system (McKenney et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "e77fbd6b-91e9-433d-9b27-f3b01936c4af",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C16",
+      "claim": "Purified solutions of microtubules and kinesin can form asters.",
+      "claim_type": "EXPLICIT",
+      "source": "Purified solutions of microtubules and kinesin can also form asters (N\u00e9d\u00e9lec et al., 1997; Hentrich and Surrey, 2010; Urrutia et al., 1991)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "0f03d3b3-9b67-4880-833f-ef66d4c819a7",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C17",
+      "claim": "Purified solutions of microtubules and kinesin can form dynamic liquid crystalline networks under certain conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "or under other conditions, dynamic liquid crystalline networks (Sanchez et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "3c42e269-2206-4197-b539-1cb5c3936c24",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C18",
+      "claim": "Hydrodynamic theories describe the behaviors of cytoskeletal networks on length scales much greater than individual filaments and motor proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Hydrodynamic theories have been proposed to describe the behaviors of cytoskeletal networks on length scales that are much greater than the size of individual filaments and motor proteins (Prost et al., 2015, Marchetti et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "e670b2ac-c701-41c0-a094-5411c017f118",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C19",
+      "claim": "Contractile stresses can result from a preferred association of motors with filament ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Contractile stresses can result from a preferred association of motors with filament ends (Kruse and J\u00fclicher, 2000; Hyman and Karsenti, 1996)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "f547f582-e37b-4494-9710-cbd328633af1",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C20",
+      "claim": "Contractile stresses can result from nonlinear elasticity of the network.",
+      "claim_type": "EXPLICIT",
+      "source": "nonlinear elasticity of the network (Liverpool et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "8a344bdb-a8aa-46d3-9fe8-0e91e050870c",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C21",
+      "claim": "Contractile stresses can result from the buckling of individual filaments.",
+      "claim_type": "EXPLICIT",
+      "source": "or the buckling of individual filaments (Murrell and Gardel, 2012; Lenz, 2014; Soares e Silva et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "1908e0fb-36e9-4d21-b953-70f1bda4bb8a",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C22",
+      "claim": "Extensile active stresses can arise from polarity sorting or from the mechanical properties of individual molecular motors.",
+      "claim_type": "EXPLICIT",
+      "source": "Extensile active stresses can arise from polarity sorting or result from the mechanical properties of individual molecular motors (Gao et al., 2015; Blackwell et al. 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "a4c1ca1a-ad37-454f-9754-590dc30499cd",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C23",
+      "claim": "Acto-myosin systems are observed to be contractile.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimentally, acto-myosin systems (Murrell and Gardel, 2012; Bendix et al., 2008; K\u00f6hler and Bausch, 2012; Alvarado et al., 2013; Szent-Gy\u00f6rgyi, 1943) and microtubule networks from neuronal extracts (Weisenberg and Cianci, 1984) are observed to be contractile",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "937008f0-81ce-4be4-a52a-29cb9381dd4d",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C24",
+      "claim": "Purified solutions of microtubules and kinesin can form extensile liquid crystalline networks.",
+      "claim_type": "EXPLICIT",
+      "source": "while purified solutions of microtubules and kinesin can form extensile liquid crystalline networks (Sanchez et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "0145115d-16df-43a4-bfd4-0e2b343c89c9",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C25",
+      "claim": "Xenopus egg extracts recapitulate a range of cell biological processes, including spindle assembly and chromosome segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "These extracts are nearly undiluted cytoplasm and recapitulate a range of cell biological processes, including spindle assembly and chromosome segregation (Hannak and Heald, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "9054eb59-56d4-4fde-aaee-3150aae4de07",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C26",
+      "claim": "Taxol causes microtubules to rapidly assemble and stabilize.",
+      "claim_type": "EXPLICIT",
+      "source": "Taxol causes microtubules to rapidly assemble and stabilize (Mitchison et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "2a52b5f2-853e-4b09-9e35-18efbb4286d7",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C27",
+      "claim": "Microtubules organized into asters in some regions of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "In some regions of the channel, microtubules organized into asters (Figure 1B) as observed previously (Verde et al., 1991).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 1B and cited prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "7b611f36-53ca-4b18-b7c0-31d55b8bb00c",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C28",
+      "claim": "NUMA antibody localizes to microtubule minus ends.",
+      "claim_type": "EXPLICIT",
+      "source": "A NUMA antibody was used to locate microtubule minus ends (Mitchison et al., 2013), and was found to localize to the aster core, confirming the polarity of the aster (Gaglio et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations and citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "a1a7af16-e539-407f-b999-6bf2d3c37f06",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C29",
+      "claim": "Isolated asters interact and coalesce.",
+      "claim_type": "EXPLICIT",
+      "source": "Isolated asters were found to interact and coalesce (Figure 1C, Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 1C and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "307b1218-9006-4015-bc69-a52bc4333e1b",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C30",
+      "claim": "Microtubules formed networks of aster-like structures in other regions of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "In other regions of the channel, microtubules formed networks of aster-like structures (Figure 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "dbd175de-3ae7-460a-9c62-50c44b983cdc",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C31",
+      "claim": "Aster-like structures are highly dynamic and exhibit large-scale motion that persists for several tens of seconds.",
+      "claim_type": "EXPLICIT",
+      "source": "which were highly dynamic and exhibited large-scale motion that persisted for several tens of seconds (Figure 1E, Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figure 1E and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "8607ef99-7e5c-4f89-94a7-084589146444",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C32",
+      "claim": "NUMA localizes to the interior of aster-like structures.",
+      "claim_type": "EXPLICIT",
+      "source": "NUMA was found to localize to the interior of these structures, confirming their aster-like nature (Figure 1F,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figures 1F and 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "d2b61b20-06e6-4bb8-81f3-8d696b23e141",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C34",
+      "claim": "The contractile behavior of microtubule networks is reminiscent of actin network contractions in these extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "The contractile behavior of these microtubule networks is highly reminiscent of the contractions of actin networks in these extracts (Bendix et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior work supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "3a10efd0-c2db-426c-bbab-d2575b80f810",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C36",
+      "claim": "Network tears have little impact on contraction dynamics far from the tearing site.",
+      "claim_type": "EXPLICIT",
+      "source": "Occasionally, we observed networks tearing along their length (Video 4), yet these tears seemed to have little impact on the contraction dynamics far from the tearing site",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from experimental data shown in Video 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "bcb606ba-734f-4105-af27-4f5145343a96",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C39",
+      "claim": "Networks in smaller channels contract faster.",
+      "claim_type": "EXPLICIT",
+      "source": "Visual inspection of the fraction-contracted curves, \u03f5(t), reveals that networks in smaller channels contract faster",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "70001fc1-8c7f-41d6-aedd-af4246882a69",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C40",
+      "claim": "All networks reach a similar final fraction contracted regardless of channel width.",
+      "claim_type": "EXPLICIT",
+      "source": "but all reach a similar final fraction contracted (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "f4924d12-8ea4-4158-93a9-38f40021e87b",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C41",
+      "claim": "The dependence of \u03c4 on channel width is inconsistent with viscoelastic or poroelastic timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the dependence of \u03c4 on channel width is inconsistent with the time of contraction resulting from either viscoelastic or poroelastic timescales, which would predict constant and quadratic scalings respectively (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D and comparison to theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "689fbb60-e0fa-4a12-9989-fe13caadcff3",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C42",
+      "claim": "\u03c4 does not significantly vary with channel height.",
+      "claim_type": "EXPLICIT",
+      "source": "We next explored the influence of channel height H0 (H0 = 75, 125, 150 \u03bcm, all with width W0 = 1.4 mm) and found that \u03c4 does not significantly vary in these channels (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "43fe72c7-2d99-40fb-9f3f-e4fb4a05399e",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C44",
+      "claim": "All networks contracted to the same final density since Taxol concentration was held constant.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the Taxol concentration was held constant, all experiments started with the same initial density of microtubules, regardless of the dimensions of the channel. Thus, all networks contracted to the same final density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the constant \u03b5\u221e and constant initial conditions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "fe8cf931-f63d-4712-9b36-c58d6ad773cb",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C49",
+      "claim": "Drag could arise from weak interactions between the microtubule network and the device wall.",
+      "claim_type": "EXPLICIT",
+      "source": "and thus could arise from weak interactions between the microtubule network and the device wall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the observation that drag is independent of channel height.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "62a9fd43-b506-4291-81ca-6980140b78b7",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C50",
+      "claim": "Contracting networks consist of microtubule asters.",
+      "claim_type": "EXPLICIT",
+      "source": "As the contracting networks consist of microtubule asters (Figure 1D, E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations shown in Figures 1D and 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "cbcf14ca-b604-4fe4-ab55-c39085d041e4",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C51",
+      "claim": "Microtubule asters in meiotic extracts assemble by dynein-induced clustering of microtubule minus ends.",
+      "claim_type": "EXPLICIT",
+      "source": "and microtubule asters in meiotic extracts are thought to assemble by the dynein-induced clustering of microtubule minus ends (Verde et al., 1991)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "0e57b511-ff49-4680-a831-287b9c547faf",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C52",
+      "claim": "The contraction process is driven by dynein pulling microtubule minus ends towards each other.",
+      "claim_type": "EXPLICIT",
+      "source": "we hypothesize that the contraction process is also driven by dynein pulling microtubule minus ends towards each other (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a hypothesis based on prior work and experimental observations, illustrated in Figure 4A.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "c06d122f-d86e-4a1b-a961-335df27dd7db",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C54",
+      "claim": "Steric collisions counteract the contractile stress at high densities.",
+      "claim_type": "EXPLICIT",
+      "source": "As only a finite number of microtubules can fit near the core of an aster, steric collisions will counteract the contractile stress at high densities (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical consideration illustrated in Figure 4B.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "2f0742ab-7950-498d-a180-43c8e364c599",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C58",
+      "claim": "The predicted scaling of \u03c4 with W\u2080 is consistent with experimental data and simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "This predicted scaling is both consistent with the experimental data and simulations of the full theory (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of theoretical predictions to experimental data and simulations shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "acb26729-7ea3-4011-a24b-1f2f4d872b34",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C62",
+      "claim": "The microtubule density increases at the network's edge during contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "To test this, we averaged the fluorescence intensity along the length of the channel (see Materials and Methods) and found that the microtubule density does indeed increase at the network's edge during contraction (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental measurements shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "3d7efdfb-5d36-49c7-9506-647359718fd9",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C63",
+      "claim": "The inhomogeneous density profile is quantitatively explained by the active fluid theory.",
+      "claim_type": "EXPLICIT",
+      "source": "We next explored if the inhomogeneous density profile could be quantitatively explained by our active fluid theory. We numerically solved Equations (3,4,5) and used least squares fitting to determine the simulation parameters which most closely matched the experimentally measured profiles (Figure 5B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of simulations to experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "a1a9894b-5fb9-458e-9433-a6ecdda26901",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C64",
+      "claim": "Fitting simulations to density profiles yields \u03b7/(s\u03c1\u2080\u00b2) = 0.82 \u00b1 0.03 min, \u03b3/(s\u03c1\u2080\u00b2) = 6.1 \u00b1 0.1\u00d710\u207b\u2076 min/(\u03bcm\u00b2), and \u03c1\u1d62\u2099\u1d62\u209c\u1d62\u2090\u2097/\u03c1\u2080 = 0.32 \u00b1 0.01.",
+      "claim_type": "EXPLICIT",
+      "source": "yielding \u03b7\u2215(s\u03c102) = 0.82 \u00b1 0.03 min, \u03b3\u2215(s\u03c102) = 6.1 \u00b1 0.1\u00d710-6 min/(\u03bcm2), and \u03c1initial\u2215\u03c10 = 0.32  \u00b1  0.01 (mean  \u00b1  s.e.m., n=4 experiments).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is obtained by fitting simulations to experimental density profiles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "ba7abeea-39c2-49b3-bf4a-27e69f0943bf",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C65",
+      "claim": "The fitted parameter values from density profiles are the same as those determined from the dependence of \u03c4 on channel width.",
+      "claim_type": "EXPLICIT",
+      "source": "Within error, these values are the same as those determined from the dependence of the timescale of contraction on channel width (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a comparison of parameter values obtained from two different experimental approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "a056cd13-e0de-4779-b88e-ca90bf9462d3",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C66",
+      "claim": "Simulated profiles closely match experimental ones for most of the contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "The simulated profiles closely match the experimental ones for most of the contraction (Figure 5B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by visual comparison of simulations and experiments shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "f52db1e7-bcc1-4599-b225-1f125743f20d",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C67",
+      "claim": "At late times, simulated inhomogeneities dissipate in contrast to experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "but at late times the simulated inhomogeneities dissipate in contrast to the experiments (Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from comparison of simulations and experiments shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "adec3c61-5209-4e98-83ed-ff26b8fc1b86",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C68",
+      "claim": "The discrepancy at late times might be caused by long-term aging of the network not incorporated into the model.",
+      "claim_type": "EXPLICIT",
+      "source": "This might be caused by a long-term aging of the network that is not incorporated into our simple model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the cause of the discrepancy between simulations and experiments.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "d7995479-8cb4-4f3a-9710-319ffb22f97b",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C69",
+      "claim": "Velocities increase superlinearly with distance from the network's center.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm that the density buildup was due to an increased velocity near the network's edge, we measured the velocity throughout the network using Particle Image Velocimetry (PIV, see Materials and Methods) (Figure 5C) and found that the velocities increase superlinearly with distance from the network's center, as predicted (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by PIV measurements shown in Figures 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "6983dae8-3413-4fd3-8440-745f0ba392ac",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C70",
+      "claim": "Aster assembly is dynein-dependent in Xenopus egg extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "Aster assembly is dynein-dependent in Xenopus egg extracts (Gaglio et al.,1995; Verde et al., 1991)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "add08c09-2adc-4138-bc13-0d5d7a52a1fb",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C71",
+      "claim": "Dynein and Kinesin-5 are two of the most dominant motors in spindle assembly in Xenopus egg extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "and dynein (Heald et al., 1996) and Kinesin-5 (Sawin et al., 1992) are two of the most dominant motors in spindle assembly in this system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "6a94843d-2c41-4235-9b71-5b2cc3aac5ca",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C72",
+      "claim": "Inhibiting Kinesin-5 had little effect on the contraction process.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibiting Kinesin-5 had little effect on the contraction process (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "49a53920-b279-4c97-8e11-f43aa046a75f",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C73",
+      "claim": "Inhibiting dynein caused a dose-dependent slowdown of the contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, inhibiting dynein caused a dose-dependent slowdown of the contraction (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "93f5e67c-f26e-4357-8e08-b6b298bc19b7",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C74",
+      "claim": "In spindle assembly, inhibiting Kinesin-5 suppresses the morphological changes caused by dynein inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "In spindle assembly, inhibiting Kinesin-5 suppresses the morphological changes caused by dynein inhibition (Mitchison et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "5dbb8b86-bcc9-449a-aba8-0706c0cd211b",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C75",
+      "claim": "The effects of dynein inhibition were not rescued by simultaneous inhibition of Kinesin-5.",
+      "claim_type": "EXPLICIT",
+      "source": "We, therefore, tested how simultaneously inhibiting both motors influences the contraction process, but found that the effects of dynein inhibition were not rescued by the simultaneous inhibition of Kinesin-5 (Figure 6\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "b833fde6-49d3-490b-aa5a-e8413b506dc1",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C76",
+      "claim": "In this context, Kinesin-5 is not generating a counteracting extensile stress.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that in this context, Kinesin-5 is not generating a counteracting extensile stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that simultaneous inhibition of Kinesin-5 does not rescue dynein inhibition effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "c6ff25d2-0dab-44fe-9811-86223397f226",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C77",
+      "claim": "In the spindle, the role of Kinesin-5 may be in orienting, polarity sorting, and sliding microtubules as opposed to active stress generation.",
+      "claim_type": "EXPLICIT",
+      "source": "This further suggests the possibility that in the spindle, the role of Kinesin-5 may be in orienting, polarity sorting, and sliding microtubules as opposed to active stress generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the experimental observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "18fa6d36-c783-41ed-b73d-b679a8a713c5",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C78",
+      "claim": "The characteristic time \u03c4 can be tuned over a wide range from approximately 3 min to approximately 75 min by varying p150-CC1 concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "By varying the concentration of p150-CC1, the characteristic time, \u03c4, could be tuned over a wide range from \u2248 3 min to \u2248 75 min (Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "224120f0-3492-4aaa-942b-a69726f22bd4",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C79",
+      "claim": "The EC50 value for p150-CC1 effect on contraction timescale is 0.22 \u00b1 0.02 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitting a sigmoid function to the \u03c4 vs. p150-CC1 concentration curve yields an EC50 value of 0.22  \u00b1 . 02 \u03bcM (mean  \u00b1  standard error)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is obtained by fitting a sigmoid function to experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "cc700ad8-c6f7-4102-95ea-f253c1330f06",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C80",
+      "claim": "The EC50 value is similar to the value of approximately 0.3 \u03bcM reported for the effect of p150-CC1 on spindle length in Xenopus extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "similar to the value of \u2248 0.3 \u03bcM reported for the effect of p150-CC1 on spindle length in Xenopus extracts (Gaetz and Kapoor, 2004)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison to prior work supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "fe87dc3d-3f66-424b-9108-8fbb0737a312",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C81",
+      "claim": "The similarity in EC50 values is consistent with active stress generated by dynein being required for pole focusing.",
+      "claim_type": "EXPLICIT",
+      "source": "which is consistent with active stress generated by dynein being required for pole focusing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the similarity of EC50 values.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "57c30cb0-7d79-4f3a-b04a-9b852b5cec29",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C82",
+      "claim": "There are no apparent differences in \u03b5\u221e despite large changes in contraction timescale with p150-CC1 concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this large change in the contraction timescale, we found no apparent differences in \u03f5\u221e (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "b7d4f846-cee8-4f17-b14d-b253b7939dc9",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C83",
+      "claim": "Microtubule networks contract to approximately the same final density irrespective of p150-CC1 concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the microtubule networks contract to approximately the same final density irrespective of the concentration of p150-CC1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the constant \u03b5\u221e across different p150-CC1 concentrations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "ffd538bc-5d4a-485d-8197-a3aa2a8194fc",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C84",
+      "claim": "The observation that inhibiting dynein affects the timescale but not the final density is consistent with model predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that inhibiting dynein affects the timescale of contraction but not the final density to which the network contracts is consistent with the predictions of our model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of experimental observations to theoretical predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "bbdaf6b8-6bf6-4476-be53-79960e49129e",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C85",
+      "claim": "Even at the highest p150-CC1 concentrations, the network still undergoes bulk contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that even at the highest p150-CC1 concentrations used, the network still undergoes a bulk contraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "65ade877-ead7-47d5-871f-c22746a065d6",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C86",
+      "claim": "Residual contraction at high p150-CC1 could be due to incomplete inhibition of dynein or another motor protein.",
+      "claim_type": "EXPLICIT",
+      "source": "This could possibly be due to incomplete inhibition of dynein by p150-CC1, or by another motor protein present in the extract that also contributes to the contraction process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the cause of residual contraction.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "f51b4bc3-86b7-439a-b9e0-abc43a2fb163",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C87",
+      "claim": "The strength of the active stress in the 2 \u03bcM p150-CC1 condition is approximately 4% of the strength in the uninhibited case.",
+      "claim_type": "EXPLICIT",
+      "source": "As the characteristic time, \u03c4\u221d1s, by comparing the characteristic times in the uninhibited and 2 \u03bcM p150-CC1 cases, we can estimate that the strength of the active stress, s, in the 2 \u03bcM p150-CC1 condition is only \u2248 4% of the strength of the active stress in the uninhibited case",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated by comparing characteristic times under different conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "e5224126-c4aa-4dbf-b32d-5f137fca4fe7",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C88",
+      "claim": "Even if another motor is involved in contraction, dynein contributes approximately 96% of the active stress.",
+      "claim_type": "EXPLICIT",
+      "source": "arguing that even if another motor is involved in the contraction, dynein contributes \u2248 96% of the active stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the estimate that the active stress at high p150-CC1 is 4% of the uninhibited case.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "c080aa77-2580-497f-957e-76fa3bebf59e",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C89",
+      "claim": "Networks of stabilized microtubules in Xenopus egg extracts undergo bulk contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have shown that networks of stabilized microtubules in Xenopus egg extracts undergo a bulk contraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main experimental finding.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "06e61a2e-d1d9-4d52-bfd6-64a31a75ab07",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C90",
+      "claim": "The timescale of contraction is not a poroelastic or viscoelastic timescale.",
+      "claim_type": "EXPLICIT",
+      "source": "By systematically varying the width of the microfluidic channel in which the network forms, we demonstrated that the timescale of contraction is not a poroelastic or viscoelastic timescale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experimental data showing the dependence of \u03c4 on channel width.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "43ee4b16-23cd-4f5b-b363-7218fc284a29",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C91",
+      "claim": "A simple active fluid model correctly predicts multiple features of network contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "A simple active fluid model of network contraction by dynein-driven clustering of microtubule minus ends correctly predicts the dependence of the contraction timescale on channel width, the nonuniform density profile in the network during contraction, and that inhibiting dynein affects the timescale of contraction but not the final density that the network contracts to.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the agreement between theoretical predictions and experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "2986b869-c0fa-4012-b135-eaea42abae1f",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C92",
+      "claim": "Model parameters can be measured by the scaling of contraction timescale with channel width and by analysis of network inhomogeneities.",
+      "claim_type": "EXPLICIT",
+      "source": "Parameters of this model can be measured by the scaling of the contraction timescale with channel width and by a detailed analysis of the inhomogeneities in the network that develop during contraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the two independent methods used to determine model parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "2994f2a7-b5c8-45d2-9a9d-348c3319fc0c",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C93",
+      "claim": "Both methods for measuring model parameters give similar values.",
+      "claim_type": "EXPLICIT",
+      "source": "Both methods give similar values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a result of comparing parameter values obtained from two different approaches.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "877b91bf-2e72-4e95-92b6-b1c09798aeb3",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C94",
+      "claim": "The behaviors of a complex biological system can be quantitatively described by a simple active matter continuum theory.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results demonstrate that the behaviors of a complex biological system can be quantitatively described by a simple active matter continuum theory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the agreement between theory and experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "424620d3-f51e-49ef-bb4c-0d5a8f64128f",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C95",
+      "claim": "Active matter theories aim to describe cytoskeletal systems at large-length scales and long-timescales by averaging molecular complexity into coarse-grained parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "These active matter theories aim to describe the behavior of cytoskeletal systems at large-length scales and long-timescales by effectively averaging all of the molecular complexity into a small set of coarse-grained parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the approach used in active matter theories.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "bfd29f7c-8da5-4d0d-a9dd-9672c792a677",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C96",
+      "claim": "Previously, active matter theories have been predominantly applied to describe biological systems near non-equilibrium steady states.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, these theories have been predominately applied to describe biological systems near non-equilibrium steady states (Prost et al., 2015; Brugu\u00e9s et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "df008c58-99e8-4337-bf33-61e93acf3ee4",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C97",
+      "claim": "The present work augments previous theories with a nonlinear active stress term to capture far from steady state dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present work, we augment previous theories with a nonlinear active stress term derived from microscopic considerations to capture the far from steady state dynamics of the contraction process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the novel contribution of the present work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "9d59c29a-64d3-49cc-a4ed-42d311e67412",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C98",
+      "claim": "The approach allows quantitative explanation of experimental results using a theory with only four parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach allows us to quantitatively explain our experimental results using a theory with only four parameters",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the simplicity and effectiveness of the theoretical approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "e22d8950-2f3a-49dd-83bb-88658f596137",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C99",
+      "claim": "A complete microscopic model would require understanding the behavior of thousands of different proteins in Xenopus egg extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "while a complete microscopic model would require understanding the behavior of the thousands of different proteins present in Xenopus egg extracts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the complexity of the biological system.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "2449dbef-5e34-4440-a222-851215f33d81",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C100",
+      "claim": "The considerations of the model are general.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the considerations of the model are general",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the generalizability of the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "8a500802-73f8-485a-86f1-6963c2c39a08",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C101",
+      "claim": "The end clustering mechanism could contribute to contraction in actin networks as well.",
+      "claim_type": "EXPLICIT",
+      "source": "and it will be interesting to consider whether the end clustering mechanism proposed here could contribute to contraction in actin networks as well.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the potential applicability of the mechanism to other systems.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "b5d07dcb-22ea-482c-bbe5-08b9705e53b5",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C102",
+      "claim": "The active stress which drives network contraction results from motor-induced clustering of microtubule minus ends.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, the active stress which drives network contraction results from the motor-induced clustering of microtubule minus ends",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the key mechanism in the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "3fac61a2-5cfa-41f8-b499-cb2b87c191f6",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C103",
+      "claim": "Minus end clustering is the same process thought to be responsible for aster formation and spindle pole focusing.",
+      "claim_type": "EXPLICIT",
+      "source": "the same process thought to be responsible for aster formation and spindle pole focusing (Gaglio et al., 1995; Mountain et al., 1999; Verde et al., 1991, Elting et al., 2014; Heald et al., 1996; Burbank et al., 2007; Khodjakov et al., 2003; Goshima et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "a08f53a5-6393-4d71-b5ed-aae8f48f9fc3",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C104",
+      "claim": "Results and previous data are consistent with minus end clustering in Xenopus egg extracts primarily arising from dynein activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results, and previous data (Verde et al., 1991; Heald et al., 1996; Burbank et al., 2007), are consistent with minus end clustering in Xenopus egg extracts primarily arising from the activity of dynein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "ebbb690e-7a52-4f0c-921b-da56c58c9b59",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C105",
+      "claim": "Dynein's ability to cluster minus ends could result from accumulating on one microtubule minus end while walking towards the minus end of another.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of dynein to cluster microtubule minus ends could result from dynein being able to accumulate on the minus end of one microtubule, while simultaneously walking towards the minus end of another (Hyman and Karsenti, 1996; McKenney et al. 2014; Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a proposed mechanism supported by citations and illustrated in Figure 4A.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "c0a59d9f-62e2-4f24-ac44-f73cccd14e6d",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C106",
+      "claim": "There is indication that such dynein behaviors may occur in spindles.",
+      "claim_type": "EXPLICIT",
+      "source": "There is indication that such behaviors may indeed occur in spindles (Elting et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "0845843a-570e-4200-ba9e-efd26814d8f7",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C107",
+      "claim": "Microtubule networks contracting in Xenopus egg extracts suggests that motor-induced stresses in spindles are net contractile.",
+      "claim_type": "EXPLICIT",
+      "source": "The observation that microtubule networks contract in Xenopus egg extracts suggests that motor-induced stresses in spindles are net contractile and not extensile as previously assumed (Brugu\u00e9s and Needleman, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "f451b29c-8c93-4d03-8900-48ab2780d47f",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C108",
+      "claim": "Dynein's contribution to spindle pole focusing may be due to contractile stresses.",
+      "claim_type": "EXPLICIT",
+      "source": "The contribution of dynein to spindle pole focusing may ultimately be due to these contractile stresses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the experimental findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "4539372f-23cd-4c6a-ad3d-5b66e7903908",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C109",
+      "claim": "Contractile stresses from dynein might explain that spindle fusion is dynein-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of contractile stresses from dynein might also explain both the observation that the fusion of spindles is dynein-dependent (Gatlin et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by citation to prior work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "73dc76c3-1ed7-446a-8f89-665309a3abd3",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C110",
+      "claim": "Contractile stresses from dynein might explain the greater cohesion between microtubules at spindle poles.",
+      "claim_type": "EXPLICIT",
+      "source": "and the apparently greater cohesion between microtubules at spindle poles, (where dynein is localized [Gatlin et al., 2010]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation supported by citation to prior work.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "178ed5f3-3c5a-4819-a42e-322a9800261b",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C111",
+      "claim": "It is unclear what processes set the density of microtubules in the spindle.",
+      "claim_type": "EXPLICIT",
+      "source": "It is unclear what processes set the density of microtubules in the spindle",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about current knowledge gaps.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "6202a84c-6dac-4d4c-a370-ee609a32ba0d",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C112",
+      "claim": "The active stress from minus end clustering saturating at a preferred microtubule density could play an important role in setting spindle microtubule density.",
+      "claim_type": "EXPLICIT",
+      "source": "and the finding that the active stress generated from minus end clustering saturates at a preferred microtubule density could play an important role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about the implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "5b1b86fd-df56-4c5f-bb97-5e5a00507fdb",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C113",
+      "claim": "CSF-arrested extracts were prepared from Xenopus laevis oocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "CSF-arrested extracts were prepared from Xenopus llaevis oocytes as previously described (Hannak and Heald, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "aefe4ee3-e10a-47fc-aeba-f6f128cc93f5",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C114",
+      "claim": "Crude extracts were sequentially filtered through 2.0, 1.2, and 0.2 micron filters.",
+      "claim_type": "EXPLICIT",
+      "source": "Crude extracts were sequentially filtered through 2.0, 1.2, and 0.2 micron filters, frozen in liquid nitrogen, and stored at \u221280\u00b0C until use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "5826542e-82f9-4b1a-9852-1467d02a3855",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C115",
+      "claim": "Microfluidic devices were fabricated using PDMS cast onto masters made from tape channel negatives.",
+      "claim_type": "EXPLICIT",
+      "source": "Channel negatives were designed using AutoCAD 360 (Autodesk) and Silhouette Studio (Silhouette America) software, cut from 125-micron-thick tape (3M Scotchcal, St. Paul, MN) using a Silhouette Cameo die cutter, and a master was made by adhering channel negatives to the bottom of a petri dish. PDMS (Sylgard 184, Dow Corning, Midland, MI; 10:1 mixing ratio) was cast onto the masters and cured overnight at 60\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "9db06b2f-8d72-45ef-b10a-f9e9f117a607",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C116",
+      "claim": "Channels were treated with BSA and Pluronic F127 before use.",
+      "claim_type": "EXPLICIT",
+      "source": "Channels containing a degassed solution of 5 mg/mL BSA (J.T. Baker, Center Valley, PA) supplemented with 2.5% w/w Pluronic F127 (Sigma, St. Louis, MO) were incubated overnight at 12\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "7104f1ed-e801-4f8e-8a71-83e81ab04d69",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C117",
+      "claim": "GST-tagged p150-CC1 was expressed in E. coli and purified using a GSTrap column.",
+      "claim_type": "EXPLICIT",
+      "source": "GST-p150-CC1 was expressed in E. coli BL21 (DE3)-T1R(Sigma) for 4 hr at 37\u00b0C. The culture was shifted to 18\u00b0C for 1 hr before adding 0.2 mM IPTG and the culture was grown overnight at 18\u00b0C. Cells were centrifuged, resuspended in PBS supplemented with Halt Protease Inhibitor Cocktail (Thermo Scientific, Rockford, IL) and benzonase (Novagen, San Diego, CA) before lysis by sonication. GST-p150-CC1 was purified from clarified lysate using a GSTrap column FF (G.E. Healthcare, Sweden) as per the manufacturer's instructions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "6ec5e1fb-7bf4-4f82-af04-4a900e2a3bc2",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C119",
+      "claim": "Images were acquired using a spinning disk confocal microscope with a 2x objective.",
+      "claim_type": "EXPLICIT",
+      "source": "Channels were sealed with vacuum grease and imaged using a spinning disk confocal microscope (Nikon Ti2000, Yokugawa CSU-X1), an EMCCD camera (Hamamatsu), and a 2x objective using Metamorph acquisition software (Molecular Devices).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "22fadd38-32c2-403c-98de-f22c822fac9d",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "claim_id": "C121",
+      "claim": "Particle Imaging Velocimetry was performed using PIVLab software.",
+      "claim_type": "EXPLICIT",
+      "source": "Particle Imaging Velocimetry was performed using PIVLab software (Thielicke and Stamhuis, 2014) using the FFT window deformation algorithm with a 16-pixel interrogation area and 8 pixel step for the first pass and an 8 pixel interrogation area with a 4-pixel step for the second pass.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data analysis methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6fc4dd39-38a0-42e0-a285-6a9fc111dc45",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Microtubules in Xenopus egg extracts with Taxol organize into asters and aster-like structures that are dynamic and can coalesce. NUMA localizes to the interior of these structures, confirming their aster-like nature with minus ends at the core.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C32 and C50 provide consistent experimental observations from multiple figures showing aster formation, NUMA localization to aster cores, and dynamic aster interactions. The data directly support these morphological characterizations with appropriate controls (NUMA antibody) and visual evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "046a67f7-9028-4f5d-a902-b51f79104a71",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Microtubule networks in Xenopus egg extracts undergo bulk contraction driven by dynein-mediated clustering of microtubule minus ends, representing a generic mechanism for cytoskeletal contraction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89, C2, C7, C52, and C102 collectively establish the main finding. The bulk contraction is directly observed (C89), and the dynein-minus end clustering mechanism is supported by multiple lines of evidence including dynein inhibition experiments (C73, C78), NUMA localization data (C28, C32), and consistency with prior literature on aster formation (C51, C70).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "92842d14-b4fc-4bca-bde4-820ba2094e83",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The timescale of microtubule network contraction depends on initial channel width but not height, with a scaling inconsistent with viscoelastic or poroelastic models but consistent with the active fluid theory.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C39-C42, C58, and C90 are well-supported by systematic experimental variation of channel dimensions (Figure 3). The data clearly show \u03c4 increases with channel width (C39, C3) but not height (C42), ruling out simple viscoelastic (constant \u03c4) or poroelastic (\u03c4 \u221d W\u2080\u00b2) models (C41, C90). The agreement with active fluid theory predictions (C58) provides strong validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "7d8c4da5-59bc-4c73-a2aa-1cc5a5995aac",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Microtubule networks contract to a constant final density (\u03b5\u221e \u2248 0.77) independent of initial channel geometry and dynein inhibitor concentration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C40, C44, C82, and C83 are consistently supported by experimental data across different channel widths (Figure 3F) and p150-CC1 concentrations (Figure 6C). The constant \u03b5\u221e despite varying conditions is a key prediction of the active fluid model and is well-documented experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "a2bd1f72-1e50-44e8-99c1-3ea6d3505be7",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Density inhomogeneities develop during contraction with increased density at network edges, and these profiles are quantitatively explained by the active fluid theory with parameter values consistent with those from timescale scaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C62-C66, and C69 are supported by fluorescence intensity measurements (Figure 5A), PIV data (Figure 5C-D), and numerical simulations (Figure 5B). The two independent methods for parameter determination yield consistent values (C65), strengthening confidence in the model. The superlinear velocity profile (C69) provides additional mechanistic validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "cf184786-6609-49ef-ab84-4405bafc001d",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "At late times, simulated density inhomogeneities dissipate in contrast to experiments, possibly due to long-term network aging not captured by the model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67 and C68 acknowledge a limitation of the model. The discrepancy is clearly documented (Figure 5\u2014figure supplement 1), and the speculation about network aging (C68) is reasonable. This honest assessment of model limitations is appropriate and does not undermine the overall validity of the approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "b4391add-145c-46e0-bedf-5e7cafc8d373",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Dynein inhibition with p150-CC1 causes dose-dependent slowdown of contraction (EC50 \u2248 0.22 \u03bcM) without affecting final density, with dynein contributing ~96% of the active stress, consistent with model predictions and spindle pole focusing requirements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C73, C78-C81, C84, C87-C88 are well-supported by systematic dose-response experiments (Figure 6). The EC50 value (C79) is rigorously determined and matches prior spindle length data (C80), providing cross-validation. The estimate that dynein contributes 96% of active stress (C88) is based on sound reasoning from the \u03c4 \u221d 1/s relationship. The observation that \u03b5\u221e remains constant (C82-C83) while \u03c4 varies strongly supports the model's prediction that motor number affects stress magnitude but not preferred density.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "c287b458-630d-4d28-98e9-bfd40d467ef7",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Kinesin-5 inhibition has little effect on contraction, and simultaneous inhibition with dynein does not rescue dynein inhibition effects, suggesting Kinesin-5 does not generate counteracting extensile stress in this context.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72, C75, and C76 are supported by experimental data (Figure 6\u2014figure supplement 1). The inference that Kinesin-5 is not generating extensile stress (C76) is logical given the lack of rescue effect. However, C77 (speculation about Kinesin-5 role in spindles) is appropriately labeled as speculation and represents an extrapolation beyond the current data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "fd64efd9-70ae-4e78-a249-61e7266345d9",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Even at highest p150-CC1 concentrations, networks still contract, possibly due to incomplete dynein inhibition or contribution from another motor protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C85 and C86 are supported by experimental observations (Figure 6A). The residual contraction at high inhibitor is documented, and the speculation about causes (C86) is reasonable. However, the authors' own analysis (C87-C88) suggests this residual activity is only ~4% of total, making incomplete inhibition or minor motor contribution plausible explanations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "5bbebfb6-9dca-453b-93b8-d1146d0a2260",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A simple active fluid model with nonlinear active stress correctly predicts multiple features of network contraction, with parameters measurable by two independent methods that yield consistent values, demonstrating quantitative description of complex biological systems with minimal parameters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C91-C94, C97-C98 summarize the theoretical contribution. The model successfully predicts: (1) \u03c4 scaling with W\u2080 (C58), (2) density inhomogeneities (C63, C66), (3) constant \u03b5\u221e (C5), and (4) dynein inhibition effects (C84). The consistency of parameter values from two independent measurements (C93, C65) is particularly compelling. The claim of quantitative description (C94) is well-justified by the extensive agreement between theory and experiment.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "02204f5a-ab47-4f86-aef8-0739cb36132a",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Network tears have little impact on contraction dynamics far from the tearing site, and drag could arise from weak interactions between the network and device wall.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C36 is observational but lacks quantitative analysis of how far from tears the dynamics are unaffected. The Poisson ratio \u2248 0 inference is stated but not rigorously demonstrated. Claim C49 is explicitly speculative about the source of drag. While the height-independence of \u03c4 (C42) supports wall interactions over bulk viscous effects, alternative explanations are not fully excluded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "c1e71138-d748-4799-9a44-e5155d563923",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Steric collisions counteract contractile stress at high densities, limiting microtubule packing near aster cores.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 is a theoretical consideration that is reasonable based on geometric constraints and is illustrated in Figure 4B. This mechanism is essential for the nonlinear active stress formulation (Equation 5) that successfully predicts the constant final density. While not directly tested experimentally, it is a physically sound assumption consistent with all observations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "de67baf5-5697-4ae5-bdbd-c1dcfbd6b2ca",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Results are consistent with dynein-mediated minus end clustering in Xenopus extracts, suggesting spindle motor stresses are net contractile rather than extensile, with implications for pole focusing, spindle fusion, and microtubule density regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C104-C110 and C112 extend findings to spindle biology. While C104 is well-supported by current data and prior literature, claims C107-C110 and C112 are explicitly speculative extrapolations to spindle function. The inference that spindle stresses are contractile (C107) is reasonable but indirect. These claims represent plausible hypotheses requiring future validation in spindle contexts rather than established results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims establishing prior knowledge about cytoskeletal organization, motor proteins, active matter theories, and Xenopus extract systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C26, C34, C51, C70-C71, C74, C95-C96, C99-C101, and C103 are literature review and background statements supported by appropriate citations. These establish context but are not novel findings of this work. The citations appear appropriate and the general knowledge claims are accurate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    },
+    {
+      "id": "70b97443-a6e8-47e1-8070-db6703db400a",
+      "content_id": "df9d6ef0-fa80-470b-a338-ff0393fbc082",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Methods for extract preparation, microfluidic device fabrication, protein purification, imaging, and image analysis are described.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C113-C117, C119, and C121 describe experimental methods with sufficient detail for reproducibility. Standard protocols are referenced appropriately (e.g., Hannak and Heald, 2006 for extract preparation). The methods appear sound and are consistent with the data presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:13:48.621863Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2a52b5f2-853e-4b09-9e35-18efbb4286d7",
+      "result_id": "6fc4dd39-38a0-42e0-a285-6a9fc111dc45"
+    },
+    {
+      "claim_id": "7b611f36-53ca-4b18-b7c0-31d55b8bb00c",
+      "result_id": "6fc4dd39-38a0-42e0-a285-6a9fc111dc45"
+    },
+    {
+      "claim_id": "a1a7af16-e539-407f-b999-6bf2d3c37f06",
+      "result_id": "6fc4dd39-38a0-42e0-a285-6a9fc111dc45"
+    },
+    {
+      "claim_id": "307b1218-9006-4015-bc69-a52bc4333e1b",
+      "result_id": "6fc4dd39-38a0-42e0-a285-6a9fc111dc45"
+    },
+    {
+      "claim_id": "dbd175de-3ae7-460a-9c62-50c44b983cdc",
+      "result_id": "6fc4dd39-38a0-42e0-a285-6a9fc111dc45"
+    },
+    {
+      "claim_id": "8607ef99-7e5c-4f89-94a7-084589146444",
+      "result_id": "6fc4dd39-38a0-42e0-a285-6a9fc111dc45"
+    },
+    {
+      "claim_id": "62a9fd43-b506-4291-81ca-6980140b78b7",
+      "result_id": "6fc4dd39-38a0-42e0-a285-6a9fc111dc45"
+    },
+    {
+      "claim_id": "c080aa77-2580-497f-957e-76fa3bebf59e",
+      "result_id": "046a67f7-9028-4f5d-a902-b51f79104a71"
+    },
+    {
+      "claim_id": "2ef97372-5c53-4914-b5ca-add933492b35",
+      "result_id": "046a67f7-9028-4f5d-a902-b51f79104a71"
+    },
+    {
+      "claim_id": "ee571a4f-a62c-48c5-8471-d45396983d85",
+      "result_id": "046a67f7-9028-4f5d-a902-b51f79104a71"
+    },
+    {
+      "claim_id": "0e57b511-ff49-4680-a831-287b9c547faf",
+      "result_id": "046a67f7-9028-4f5d-a902-b51f79104a71"
+    },
+    {
+      "claim_id": "b5d07dcb-22ea-482c-bbe5-08b9705e53b5",
+      "result_id": "046a67f7-9028-4f5d-a902-b51f79104a71"
+    },
+    {
+      "claim_id": "30d9e93b-93bd-419b-9ba7-1bffa6272625",
+      "result_id": "92842d14-b4fc-4bca-bde4-820ba2094e83"
+    },
+    {
+      "claim_id": "bcb606ba-734f-4105-af27-4f5145343a96",
+      "result_id": "92842d14-b4fc-4bca-bde4-820ba2094e83"
+    },
+    {
+      "claim_id": "70001fc1-8c7f-41d6-aedd-af4246882a69",
+      "result_id": "92842d14-b4fc-4bca-bde4-820ba2094e83"
+    },
+    {
+      "claim_id": "f4924d12-8ea4-4158-93a9-38f40021e87b",
+      "result_id": "92842d14-b4fc-4bca-bde4-820ba2094e83"
+    },
+    {
+      "claim_id": "689fbb60-e0fa-4a12-9989-fe13caadcff3",
+      "result_id": "92842d14-b4fc-4bca-bde4-820ba2094e83"
+    },
+    {
+      "claim_id": "2f0742ab-7950-498d-a180-43c8e364c599",
+      "result_id": "92842d14-b4fc-4bca-bde4-820ba2094e83"
+    },
+    {
+      "claim_id": "06e61a2e-d1d9-4d52-bfd6-64a31a75ab07",
+      "result_id": "92842d14-b4fc-4bca-bde4-820ba2094e83"
+    },
+    {
+      "claim_id": "7ac0d654-97ba-42f6-90e5-ae418ed3627e",
+      "result_id": "7d8c4da5-59bc-4c73-a2aa-1cc5a5995aac"
+    },
+    {
+      "claim_id": "70001fc1-8c7f-41d6-aedd-af4246882a69",
+      "result_id": "7d8c4da5-59bc-4c73-a2aa-1cc5a5995aac"
+    },
+    {
+      "claim_id": "43fe72c7-2d99-40fb-9f3f-e4fb4a05399e",
+      "result_id": "7d8c4da5-59bc-4c73-a2aa-1cc5a5995aac"
+    },
+    {
+      "claim_id": "57c30cb0-7d79-4f3a-b04a-9b852b5cec29",
+      "result_id": "7d8c4da5-59bc-4c73-a2aa-1cc5a5995aac"
+    },
+    {
+      "claim_id": "b7d4f846-cee8-4f17-b14d-b253b7939dc9",
+      "result_id": "7d8c4da5-59bc-4c73-a2aa-1cc5a5995aac"
+    },
+    {
+      "claim_id": "a3c1a19e-683a-4192-8c68-8238054a68b7",
+      "result_id": "a2bd1f72-1e50-44e8-99c1-3ea6d3505be7"
+    },
+    {
+      "claim_id": "acb26729-7ea3-4011-a24b-1f2f4d872b34",
+      "result_id": "a2bd1f72-1e50-44e8-99c1-3ea6d3505be7"
+    },
+    {
+      "claim_id": "3d7efdfb-5d36-49c7-9506-647359718fd9",
+      "result_id": "a2bd1f72-1e50-44e8-99c1-3ea6d3505be7"
+    },
+    {
+      "claim_id": "a1a9894b-5fb9-458e-9433-a6ecdda26901",
+      "result_id": "a2bd1f72-1e50-44e8-99c1-3ea6d3505be7"
+    },
+    {
+      "claim_id": "ba7abeea-39c2-49b3-bf4a-27e69f0943bf",
+      "result_id": "a2bd1f72-1e50-44e8-99c1-3ea6d3505be7"
+    },
+    {
+      "claim_id": "a056cd13-e0de-4779-b88e-ca90bf9462d3",
+      "result_id": "a2bd1f72-1e50-44e8-99c1-3ea6d3505be7"
+    },
+    {
+      "claim_id": "d7995479-8cb4-4f3a-9710-319ffb22f97b",
+      "result_id": "a2bd1f72-1e50-44e8-99c1-3ea6d3505be7"
+    },
+    {
+      "claim_id": "f52db1e7-bcc1-4599-b225-1f125743f20d",
+      "result_id": "cf184786-6609-49ef-ab84-4405bafc001d"
+    },
+    {
+      "claim_id": "adec3c61-5209-4e98-83ed-ff26b8fc1b86",
+      "result_id": "cf184786-6609-49ef-ab84-4405bafc001d"
+    },
+    {
+      "claim_id": "ca1f87da-5b54-42a8-9d21-1e4e5e1bde4a",
+      "result_id": "b4391add-145c-46e0-bedf-5e7cafc8d373"
+    },
+    {
+      "claim_id": "49a53920-b279-4c97-8e11-f43aa046a75f",
+      "result_id": "b4391add-145c-46e0-bedf-5e7cafc8d373"
+    },
+    {
+      "claim_id": "18fa6d36-c783-41ed-b73d-b679a8a713c5",
+      "result_id": "b4391add-145c-46e0-bedf-5e7cafc8d373"
+    },
+    {
+      "claim_id": "224120f0-3492-4aaa-942b-a69726f22bd4",
+      "result_id": "b4391add-145c-46e0-bedf-5e7cafc8d373"
+    },
+    {
+      "claim_id": "cc700ad8-c6f7-4102-95ea-f253c1330f06",
+      "result_id": "b4391add-145c-46e0-bedf-5e7cafc8d373"
+    },
+    {
+      "claim_id": "fe87dc3d-3f66-424b-9108-8fbb0737a312",
+      "result_id": "b4391add-145c-46e0-bedf-5e7cafc8d373"
+    },
+    {
+      "claim_id": "ffd538bc-5d4a-485d-8197-a3aa2a8194fc",
+      "result_id": "b4391add-145c-46e0-bedf-5e7cafc8d373"
+    },
+    {
+      "claim_id": "f51b4bc3-86b7-439a-b9e0-abc43a2fb163",
+      "result_id": "b4391add-145c-46e0-bedf-5e7cafc8d373"
+    },
+    {
+      "claim_id": "e5224126-c4aa-4dbf-b32d-5f137fca4fe7",
+      "result_id": "b4391add-145c-46e0-bedf-5e7cafc8d373"
+    },
+    {
+      "claim_id": "6a94843d-2c41-4235-9b71-5b2cc3aac5ca",
+      "result_id": "c287b458-630d-4d28-98e9-bfd40d467ef7"
+    },
+    {
+      "claim_id": "5dbb8b86-bcc9-449a-aba8-0706c0cd211b",
+      "result_id": "c287b458-630d-4d28-98e9-bfd40d467ef7"
+    },
+    {
+      "claim_id": "b833fde6-49d3-490b-aa5a-e8413b506dc1",
+      "result_id": "c287b458-630d-4d28-98e9-bfd40d467ef7"
+    },
+    {
+      "claim_id": "c6ff25d2-0dab-44fe-9811-86223397f226",
+      "result_id": "c287b458-630d-4d28-98e9-bfd40d467ef7"
+    },
+    {
+      "claim_id": "bbdaf6b8-6bf6-4476-be53-79960e49129e",
+      "result_id": "fd64efd9-70ae-4e78-a249-61e7266345d9"
+    },
+    {
+      "claim_id": "65ade877-ead7-47d5-871f-c22746a065d6",
+      "result_id": "fd64efd9-70ae-4e78-a249-61e7266345d9"
+    },
+    {
+      "claim_id": "43ee4b16-23cd-4f5b-b363-7218fc284a29",
+      "result_id": "5bbebfb6-9dca-453b-93b8-d1146d0a2260"
+    },
+    {
+      "claim_id": "2986b869-c0fa-4012-b135-eaea42abae1f",
+      "result_id": "5bbebfb6-9dca-453b-93b8-d1146d0a2260"
+    },
+    {
+      "claim_id": "2994f2a7-b5c8-45d2-9a9d-348c3319fc0c",
+      "result_id": "5bbebfb6-9dca-453b-93b8-d1146d0a2260"
+    },
+    {
+      "claim_id": "877b91bf-2e72-4e95-92b6-b1c09798aeb3",
+      "result_id": "5bbebfb6-9dca-453b-93b8-d1146d0a2260"
+    },
+    {
+      "claim_id": "df008c58-99e8-4337-bf33-61e93acf3ee4",
+      "result_id": "5bbebfb6-9dca-453b-93b8-d1146d0a2260"
+    },
+    {
+      "claim_id": "9d59c29a-64d3-49cc-a4ed-42d311e67412",
+      "result_id": "5bbebfb6-9dca-453b-93b8-d1146d0a2260"
+    },
+    {
+      "claim_id": "3a10efd0-c2db-426c-bbab-d2575b80f810",
+      "result_id": "02204f5a-ab47-4f86-aef8-0739cb36132a"
+    },
+    {
+      "claim_id": "fe8cf931-f63d-4712-9b36-c58d6ad773cb",
+      "result_id": "02204f5a-ab47-4f86-aef8-0739cb36132a"
+    },
+    {
+      "claim_id": "c06d122f-d86e-4a1b-a961-335df27dd7db",
+      "result_id": "c1e71138-d748-4799-9a44-e5155d563923"
+    },
+    {
+      "claim_id": "a08f53a5-6393-4d71-b5ed-aae8f48f9fc3",
+      "result_id": "de67baf5-5697-4ae5-bdbd-c1dcfbd6b2ca"
+    },
+    {
+      "claim_id": "ebbb690e-7a52-4f0c-921b-da56c58c9b59",
+      "result_id": "de67baf5-5697-4ae5-bdbd-c1dcfbd6b2ca"
+    },
+    {
+      "claim_id": "c0a59d9f-62e2-4f24-ac44-f73cccd14e6d",
+      "result_id": "de67baf5-5697-4ae5-bdbd-c1dcfbd6b2ca"
+    },
+    {
+      "claim_id": "0845843a-570e-4200-ba9e-efd26814d8f7",
+      "result_id": "de67baf5-5697-4ae5-bdbd-c1dcfbd6b2ca"
+    },
+    {
+      "claim_id": "f451b29c-8c93-4d03-8900-48ab2780d47f",
+      "result_id": "de67baf5-5697-4ae5-bdbd-c1dcfbd6b2ca"
+    },
+    {
+      "claim_id": "4539372f-23cd-4c6a-ad3d-5b66e7903908",
+      "result_id": "de67baf5-5697-4ae5-bdbd-c1dcfbd6b2ca"
+    },
+    {
+      "claim_id": "73dc76c3-1ed7-446a-8f89-665309a3abd3",
+      "result_id": "de67baf5-5697-4ae5-bdbd-c1dcfbd6b2ca"
+    },
+    {
+      "claim_id": "6202a84c-6dac-4d4c-a370-ee609a32ba0d",
+      "result_id": "de67baf5-5697-4ae5-bdbd-c1dcfbd6b2ca"
+    },
+    {
+      "claim_id": "9500ea57-dc4f-4d23-afb5-f422fb9675ba",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "de4cc4e4-52f0-4f5d-a4bd-d4a03b69498d",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "31455d36-fd0a-4106-af56-98686cdeb698",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "d68cb06a-bb4b-4c7c-8c4a-7ce85707d2dd",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "3432f829-8f35-46b8-86ad-02d47cdf8834",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "cbb97f84-181e-4916-bf13-aad49b5dcd6d",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "b5232bb9-f6b8-4138-b54a-ef1b5f83cc27",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "d2ce63d6-8650-4fe1-a977-7b4fe9a5fff4",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "e77fbd6b-91e9-433d-9b27-f3b01936c4af",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "0f03d3b3-9b67-4880-833f-ef66d4c819a7",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "3c42e269-2206-4197-b539-1cb5c3936c24",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "e670b2ac-c701-41c0-a094-5411c017f118",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "f547f582-e37b-4494-9710-cbd328633af1",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "8a344bdb-a8aa-46d3-9fe8-0e91e050870c",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "1908e0fb-36e9-4d21-b953-70f1bda4bb8a",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "a4c1ca1a-ad37-454f-9754-590dc30499cd",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "937008f0-81ce-4be4-a52a-29cb9381dd4d",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "0145115d-16df-43a4-bfd4-0e2b343c89c9",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "9054eb59-56d4-4fde-aaee-3150aae4de07",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "d2b61b20-06e6-4bb8-81f3-8d696b23e141",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "cbcf14ca-b604-4fe4-ab55-c39085d041e4",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "6983dae8-3413-4fd3-8440-745f0ba392ac",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "add08c09-2adc-4138-bc13-0d5d7a52a1fb",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "93f5e67c-f26e-4357-8e08-b6b298bc19b7",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "424620d3-f51e-49ef-bb4c-0d5a8f64128f",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "bfd29f7c-8da5-4d0d-a9dd-9672c792a677",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "e22d8950-2f3a-49dd-83bb-88658f596137",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "2449dbef-5e34-4440-a222-851215f33d81",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "8a500802-73f8-485a-86f1-6963c2c39a08",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "3fac61a2-5cfa-41f8-b499-cb2b87c191f6",
+      "result_id": "27de1fc9-accd-4a26-8e4c-bd7529829bc9"
+    },
+    {
+      "claim_id": "5b1b86fd-df56-4c5f-bb97-5e5a00507fdb",
+      "result_id": "70b97443-a6e8-47e1-8070-db6703db400a"
+    },
+    {
+      "claim_id": "aefe4ee3-e10a-47fc-aeba-f6f128cc93f5",
+      "result_id": "70b97443-a6e8-47e1-8070-db6703db400a"
+    },
+    {
+      "claim_id": "5826542e-82f9-4b1a-9852-1467d02a3855",
+      "result_id": "70b97443-a6e8-47e1-8070-db6703db400a"
+    },
+    {
+      "claim_id": "9db06b2f-8d72-45ef-b10a-f9e9f117a607",
+      "result_id": "70b97443-a6e8-47e1-8070-db6703db400a"
+    },
+    {
+      "claim_id": "7104f1ed-e801-4f8e-8a71-83e81ab04d69",
+      "result_id": "70b97443-a6e8-47e1-8070-db6703db400a"
+    },
+    {
+      "claim_id": "6ec5e1fb-7bf4-4f82-af04-4a900e2a3bc2",
+      "result_id": "70b97443-a6e8-47e1-8070-db6703db400a"
+    },
+    {
+      "claim_id": "22fadd38-32c2-403c-98de-f22c822fac9d",
+      "result_id": "70b97443-a6e8-47e1-8070-db6703db400a"
+    }
+  ],
+  "comparisons": []
+}

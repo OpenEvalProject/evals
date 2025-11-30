@@ -1,0 +1,371 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "SpoIIE is degraded with a half-life of 7 minutes during sporulation in an FtsH-dependent manner. This rapid degradation is consistent with the timescale of asymmetric cell division and \u03c3F activation, supporting spatially restricted degradation as a mechanism to compartmentalize SpoIIE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 provide converging evidence from degradation assays showing SpoIIE instability (t1/2 = 7 min) during sporulation and stabilization in \u0394ftsH cells. The experimental design appropriately uses chloramphenicol to block translation and western blots to monitor protein levels over time. The conclusion that SpoIIE is an FtsH substrate is well-supported by the genetic and biochemical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The N-terminal cytosolic tail of SpoIIE (residues 11-37, TagSpoIIE) is both necessary and sufficient for FtsH-dependent proteolysis. Domain deletion and fusion experiments demonstrate that this tag can confer FtsH-dependent degradation on heterologous proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 present systematic domain deletion and fusion experiments that identify TagSpoIIE as the degradation signal. The necessity is shown by deletion (C40) and sufficiency by fusion to MalF-TM (C42). The controls with other domain deletions (C41) strengthen the conclusion. The experimental logic is sound and the data directly support the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Blocking SpoIIE degradation by removing TagSpoIIE causes non-specific activation of \u03c3F in 71% of cells with 10-fold elevated activity, though activation still occurs primarily after cell division. There is a correlation between elevated SpoIIE in the mother cell and \u03c3F mis-activation, indicating that degradation is required for compartmentalization of both SpoIIE and \u03c3F activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50 demonstrate the functional importance of SpoIIE degradation through loss-of-function experiments. The quantitative data (71% mis-activation, 10-fold increase in activity) are clearly presented with appropriate controls. The observation that \u03c3F activation still requires cell division (C47-C48) is an important nuance. The correlation between SpoIIE localization and \u03c3F activity (C49) provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "FtsH is active in the forespore, as demonstrated by degradation of a model substrate (TagSpoIIE-MalF) expressed under a \u03c3F-dependent promoter. This indicates that SpoIIE must be specifically stabilized against FtsH-dependent degradation in the forespore rather than FtsH being inactive there.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 address a critical alternative hypothesis using an elegant experimental design. The use of a forespore-specific promoter to express a model FtsH substrate directly tests whether FtsH is active in the forespore. The conclusion that SpoIIE is specifically protected (C53) logically follows from the data, though this is an inference rather than direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Nine SpoIIE variants (including K356D) fail to accumulate in the forespore and are present at reduced levels. Removing TagSpoIIE restores protein levels but not \u03c3F activation, indicating that SpoIIE undergoes a transition in the forespore that protects it from degradation and is required for activation, and this transition is blocked by mutations like K356D.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 present a comprehensive mutant analysis linking stabilization to function. The systematic approach of testing multiple variants (C54-C55), removing the degradation tag (C56), and testing for \u03c3F activation (C59) provides strong evidence for the model. The conclusion that stabilization and activation are linked but separable processes is well-supported. However, the molecular nature of the 'transition' remains undefined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The T353I substitution is an allele-specific suppressor of spoIIEK356D that restores protein levels, partially restores forespore localization, and restores compartment-specific \u03c3F activation. This coordinated rescue supports the model that a common feature of SpoIIE mediates protection from proteolysis, accumulation in the forespore, and \u03c3F activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 present genetic suppressor analysis that provides strong support for the mechanistic model. The allele-specificity (C60) and coordinated rescue of multiple phenotypes (C61-C63) are consistent with T353I restoring a specific conformational or functional state. The partial restoration of localization (C62) is an important detail that suggests incomplete rescue of the underlying defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The V697A substitution in the phosphatase domain is a non-allele-specific suppressor that enhances phosphatase activity and restores \u03c3F activation but not compartmentalization or stabilization of SpoIIE. This indicates that V697A bypasses the activation defect by locking the phosphatase in a high-activity state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 characterize a second class of suppressors that separate activation from localization/stabilization. The biochemical data showing enhanced phosphatase activity (C68) directly support the interpretation that V697A is a gain-of-function allele. The non-allele-specific suppression (C65) and failure to restore compartmentalization (C66) are consistent with this mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Stabilized \u0394Tag-SpoIIE is enriched at cell poles in sporulating cells that have not initiated polar division. This polar localization depends on stabilization and is abolished by K356D and partially restored by T353I. The pole is a cue that directs compartmentalization of SpoIIE, and the same features required for polar recognition are required for stabilization and \u03c3F activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 reveal a key mechanistic insight about polar localization. The observation that stabilized SpoIIE localizes to poles before division (C69) is striking and well-documented by microscopy. The genetic analysis with K356D and T353I (C71-C72) links polar localization to the same molecular features required for stabilization and activation. The conclusion that these processes are mechanistically linked (C73-C74) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "\u0394Tag SpoIIE-YFP localizes to poles in vegetative cells blocked in divisome formation, recapitulating the features of polar localization seen during sporulation. This demonstrates that a fundamental, constitutive feature of the cell pole mediates SpoIIE polar localization independently of sporulation-specific factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 extend the polar localization findings to vegetative cells, demonstrating that this is not sporulation-specific. The use of MciZ to block division is an appropriate experimental design. The conclusion that polar localization is mediated by a constitutive feature of the pole (C76) is well-supported and represents an important advance in understanding the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "DivIVA anchors SpoIIE at the cell pole, as shown by co-immunoprecipitation of wild-type SpoIIE but not SpoIIEK356D with DivIVA, and loss of polar localization in \u0394divIVA cells. This anchoring is proposed to stabilize, compartmentalize, and activate SpoIIE through a common feature linked to oligomerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 identify DivIVA as the polar anchor for SpoIIE through co-IP (C79-C80) and genetic deletion (C81) experiments. The data are clear and the conclusion is well-supported. However, C83 is more speculative, proposing a model that links DivIVA anchoring to stabilization and activation through oligomerization. While consistent with the data, this remains a hypothesis requiring further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "SpoIIE accumulates at the polar divisome, constricts with the septum, and is released to the forespore pole after cytokinesis. The divisome sequesters SpoIIE and prevents association with the pole until disassembly. SpoIIE has affinity for two sites: the divisome (dominant) and the pole (where it is captured after release).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C90 describe the dynamic localization of SpoIIE during sporulation. The time-lapse and structured illumination microscopy (C84) directly demonstrate the constriction and release. The experiments blocking cytokinesis (C87-C88) elegantly show that the divisome sequesters SpoIIE. The model of competing binding sites (C90) is well-supported by the data and provides a mechanistic explanation for the timing of polar localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "In vegetative cells engineered to divide asymmetrically, SpoIIE is compartmentalized to small cells and \u03c3F is activated with high selectivity in minicells. This demonstrates that polar division is the only feature of sporulation necessary to restrict SpoIIE and activate \u03c3F in the small cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 present a critical test of the model by reconstituting the system in vegetative cells. The observation that asymmetric division alone is sufficient for compartmentalization (C93) and \u03c3F activation (C94) is striking and strongly supports the model. The experimental design is elegant and the conclusions (C95-C96) are well-justified. This is a key result demonstrating sufficiency of the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Purified SpoIIE320-827 forms hexamers and higher-order oligomers. The region from residues 345-358 is required for multimerization. The K356D substitution uniquely blocks multimerization, while T353I partially restores it, linking multimerization to the in vivo phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 provide biochemical evidence for SpoIIE oligomerization using analytical ultracentrifugation and gel filtration. The identification of hexamers (C98) and mapping of the multimerization domain (C99) are well-supported by the data. The correlation between multimerization defects and in vivo phenotypes (C100-C102) strengthens the model linking oligomerization to function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Multimerization of SpoIIE is proposed as the critical transition that stabilizes SpoIIE, enables polar recognition, and leads to phosphatase activation. This is supported by the requirement for multimerization in stabilization and compartmentalization (in vivo) and the correlation between multimerization defects and functional defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C106 synthesize the genetic and biochemical data into a unified model. The evidence linking multimerization to stabilization (C104), activation (C105), and polar recognition (C106) is strong. However, C103 represents a proposed model rather than direct demonstration. The causal relationship between multimerization and these phenotypes is inferred from correlations rather than directly tested (e.g., by forcing multimerization independently).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C107",
+      "C108"
+    ],
+    "result": "SpoIIE is compartmentalized in the small cell by transfer from the polar septum to the adjacent cell pole where it is protected from proteolysis and activated. Polar recognition, protection from proteolysis, and stimulation of phosphatase activity are linked to oligomerization. This mechanism is independent of additional sporulation proteins and is sufficient to explain cell-specific \u03c3F activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8 and C107-C108 represent the main conclusions of the manuscript, synthesizing all the experimental findings. The evidence from degradation assays, localization studies, mutant analysis, suppressor genetics, biochemistry, and reconstitution in vegetative cells collectively support this model. The claim that the mechanism is independent of sporulation-specific factors (C7, C107) is strongly supported by the vegetative cell experiments. This represents a comprehensive and well-supported model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "During sporulation in Bacillus subtilis, cells switch from symmetric to asymmetric division, placing a septum near a randomly chosen pole to create unequally sized daughter cells (forespore and mother cell) with dissimilar programs of gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C10-C14 describe established background knowledge about B. subtilis sporulation, supported by appropriate citations. These are well-established facts in the field and provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "\u03c3F is the earliest cell-specific transcription factor in sporulation, controlled by SpoIIAB (anti-sigma), SpoIIAA (anti-anti-sigma), and SpoIIE (phosphatase). SpoIIE dephosphorylates SpoIIAA-P, which is the critical event in activating \u03c3F selectively in the forespore after asymmetric division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C15-C23 describe the established \u03c3F regulatory pathway, supported by appropriate citations to prior work. This background is accurate and provides essential context for understanding the significance of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "SpoIIE consists of three domains (transmembrane, regulatory, and phosphatase) and localizes to the polar divisome before division and principally to the forespore after septation. Despite continued transcription in the mother cell, SpoIIE protein and activity are restricted to the forespore.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 describe the domain structure and localization of SpoIIE, combining established knowledge (C24-C27) with observations from this study (C28-C31). The microscopy data clearly show forespore localization (C28, C31), and the apparent contradiction with transcription patterns (C30-C31) motivates the investigation of proteolysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The ftsH gene encoding the AAA+ protease FtsH is located near spoIIE with conserved synteny. FtsH degrades transmembrane proteins and is known to degrade sporulation inhibitors, making it a candidate protease for SpoIIE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 present genomic and literature analysis that motivated testing FtsH as the SpoIIE protease. The synteny analysis (C34) is clearly shown, and the functional properties of FtsH (C35-C36) are appropriately cited. This represents sound hypothesis generation based on bioinformatics and prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "Caulobacter crescentus localizes cell fate determinants to the old cell pole, leading to asymmetric distribution after division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 provides comparative context from another bacterial system, appropriately cited. This is relevant background but not central to the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "SpoIIE localization to the divisome depends on FtsZ and FtsA. Time-lapse and structured illumination microscopy show that SpoIIE constricts with the FtsZ ring during cytokinesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 describe divisome localization, combining cited prior work (C109) with new microscopy data (C110). The imaging data clearly demonstrate constriction with FtsZ, resolving prior uncertainty about the timing of SpoIIE release from the divisome.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "V697 is in an active site proximal loop that in many PP2C phosphatases coordinates a third metal ion critical for activity. SpoIIE lacks the coordinating aspartate, which may explain how V697A enhances activity. Other PP2C phosphatases like PHLPP similarly lack this residue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C111-C114 present structural and mechanistic speculation about how V697A enhances phosphatase activity. While the structural information is cited (C111-C112) and the observation about the missing aspartate is noted (C113), the proposed mechanism is speculative. The comparison to PHLPP (C114) is interesting but does not validate the proposed mechanism for SpoIIE. This requires structural and biochemical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Time-lapse and structured illumination microscopy show that SpoIIE constricts with the asymmetric FtsZ ring during polar septation, with 81% of cells with incomplete septa showing clear SpoIIE ring constriction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 present high-resolution imaging data from figure supplements showing SpoIIE dynamics during septation. The quantification (81% showing constriction, C116) provides statistical support. This is solid descriptive data supporting the model of SpoIIE transfer from divisome to pole.",
+    "result_type": "MINOR"
+  }
+]

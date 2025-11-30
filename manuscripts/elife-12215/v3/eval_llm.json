@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Participants employed an active sensing strategy in which eye movement patterns depended on the underlying image type. Eye movements for images of the same type were positively correlated (p<0.001), while movements for different types were negatively correlated (p<0.001), with differentiation increasing over the course of trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 provide strong statistical evidence (p<0.001) from revealing density maps and correlation analyses showing image-type-dependent eye movements. C19 appropriately infers active sensing from this pattern dependence. The convergence of multiple analyses supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C20",
+      "C21",
+      "C25"
+    ],
+    "result": "Participants' categorization performance benefited from their active sensing strategy compared to passive random revealing, and performance improved with appropriately chosen additional revealings during scanning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C20, and C25 are directly supported by experimental data in Figure 2C comparing active vs. passive conditions. C21 is a reasonable inference from the performance difference. The comparison provides clear evidence for the benefit of active control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Categorization performance improved with revealing number during active scanning, but rescanning time after the final revealing was brief and negatively correlated with performance, suggesting rescanning indicates uncertainty rather than providing primary information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C13 is supported by Figure 2C data. C22 provides measured rescanning times. C23 reports significant negative correlations (p<0.001, p<0.03) for 2/3 participants. C24 is a reasonable inference from the negative correlation pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C60"
+    ],
+    "result": "A control experiment showed that allowing rescanning did not substantially change participants' revealing strategy, with similar revealing density maps (within-type correlation 0.63 vs. across-type -0.30) between groups with and without rescanning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C26 provides quantitative correlation data comparing groups. C27 and C60 draw appropriate inferences from this comparison. The control experiment adequately addresses whether the rescanning period influenced the primary scanning strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C92"
+    ],
+    "result": "A Bayesian ideal observer model with 4 parameters (perception noise, prior bias, stimulus-dependent and stimulus-independent decision noise) provided a close match to participants' performance in both active and passive conditions, selected using Bayesian information criterion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C28 is supported by model fits shown in Figure 2C and Tables 1-2. C92 describes the appropriate model selection procedure. The model comparison is systematic and the best model is clearly identified, though the manuscript could benefit from reporting goodness-of-fit statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Participants' active revealings were 2.93 times more efficient than random revealings and 1.81-1.92 times more efficient than heuristic strategies, but 2.48 times less efficient than ideal BAS with minimal noise and no biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 report efficiency ratios with 95% confidence intervals from information gain analysis (Figure 5A-B). C38 rules out rescanning time as an explanation. The quantitative comparisons are well-supported, though the efficiency metric depends on the validity of the ideal observer model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C39",
+      "C42"
+    ],
+    "result": "The central process of selecting fixation locations is approximately 70% efficient, with major sources of apparent suboptimality arising from prior biases, perceptual noise, and saccadic inaccuracies. When BAS operated with participants' constraints, the efficiency gap was reduced to 1.45 (95% CI: 1.37-1.53).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C39 provides quantitative evidence that matching BAS to participant constraints markedly reduces the efficiency gap. C3 and C42 appropriately calculate ~70% efficiency (1/1.45). C4 correctly attributes suboptimality sources. The decomposition is logical and well-supported by the modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C48"
+    ],
+    "result": "Participants' eye movements were substantially more efficient than heuristic strategies and used both prior knowledge of stimulus statistics and evidence accumulated about the current scene to guide fixations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C41 is supported by comparisons to heuristics in Figure 5B. C48 is supported by the image-type-dependent eye movements and correlation with BAS predictions. The convergence of efficiency analysis and pattern analysis supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C51",
+      "C65"
+    ],
+    "result": "Efficiency remained stable across experimental sessions spanning multiple days, suggesting minimal learning was required and that high-efficiency active sensing is a natural strategy adopted without overt deliberation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C40 and C51 are supported by efficiency analysis in Figure 5\u2014figure supplement 1. C65 appropriately infers that stable efficiency and natural eye movement timing indicate automatic rather than deliberative strategy. The lack of learning effect is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C14",
+      "C50",
+      "C52"
+    ],
+    "result": "Inter-saccadic intervals (mean 408 ms) and saccade sizes were similar to those in natural vision (mean 497 ms for everyday activities), suggesting participants did not depart dramatically from natural eye movement strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C14 and C50 provide measured values compared to cited literature. C52 draws a reasonable inference from the similarity. However, the conclusion is somewhat indirect and the 18% difference in inter-saccadic intervals is non-trivial, though the authors acknowledge it is 'somewhat shorter.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The observed 30% inefficiency may be due to unmodeled constraints such as biases for cardinal directions or center fixation, which may be beneficial in natural environments. If these are execution rather than planning suboptimalities, the 70% efficiency estimate becomes a lower bound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C43 is speculative reasoning supported by observed biases in Figure 3A and citations. C44 is speculative with citation support. C45 is logical inference about interpretation. However, these remain hypotheses without direct testing, making the result uncertain despite reasonable speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "Saccadic variability and bias were measured independently and incorporated into the BAS model, accounting for standard deviation and bias along and orthogonal to the desired saccade direction as a function of amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C89 is supported by measurements shown in Figure 3\u2014figure supplement 2. The independent measurement and incorporation into the model is methodologically sound and important for fair comparison between participants and BAS.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The task focused on voluntary macro-saccades rather than involuntary micro-saccades and drift. Involuntary processes (SD ~0.22\u00b0) were likely used within revealed patches (SD 0.18\u00b0), while categorization required macro-saccades given the larger stimulus length scales (0.91\u00b0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C53 describes the experimental design with appropriate citations. C55 provides quantitative comparison of spatial scales. C54 is reasonable inference from these scales. C56 is appropriate speculation about generalization. The spatial scale argument is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The study makes several methodological contributions: isolating top-down eye movement strategies using gaze-contingent display, requiring information integration across multiple locations, extending active sensing to non-spatial latent features, providing fixation-by-fixation information analysis, and dissociating eye-movement selection from perceptual/motor/decision processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C70 describe methodological contributions that are well-supported by the experimental design and analysis approach. The gaze-contingent paradigm, pattern categorization task, Bayesian framework, and efficiency decomposition represent genuine advances over prior work as cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C49"
+    ],
+    "result": "The current results contrast with recent studies showing random or stimulus-independent eye movements. Better performance may be due to the more naturalistic task involving extraction of abstract latent features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C46 and C47 accurately cite contrasting prior work. However, C49 is purely speculative about why results differ. Without systematic comparison of task features or additional experiments, the explanation remains uncertain despite being plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C61"
+    ],
+    "result": "The stimuli had stationary statistics approximating natural images, were more naturalistic than typical active sensing stimuli while allowing rigorous information control, and the task limited revealings rather than time. Participants may be more efficient in fully naturalistic settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C57 and C58 appropriately characterize the stimuli relative to natural images and prior studies. C59 describes the experimental constraint. C61 is reasonable speculation about generalization. The characterization of stimulus properties and task constraints is accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C83",
+      "C84"
+    ],
+    "result": "Three naive participants (aged 25-35) completed the experiment over 12 hours across 6 days. All were neurologically healthy with normal/corrected vision, gave informed consent, and the study was ethically approved. Participants achieved perfect performance in training and \u226570% accuracy in familiarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75, C83-C84 provide factual descriptions of participants, procedures, and performance criteria. These are straightforward methodological details that are adequately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C82",
+      "C85",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Design features included two stripy types to ensure scan path dependence on image, random stopping to encourage greedy information seeking, parameter-free eye movement prediction after fitting choices, and analysis of relative revealing locations given translational invariance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C85, C93-C95 describe design rationales and analysis choices that are logically sound. C93 is particularly important for establishing that eye movement predictions were not overfit. The design choices are well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Prior work established that humans direct sensors to extract task-relevant information efficiently, eye movements depend on information sought, but no studies have shown whether information acquired by each fixation is optimized. Many tasks require multiple fixations to integrate information across locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C12 accurately summarize prior literature with appropriate citations. C7 correctly identifies the gap in previous research that motivates the current study. The literature review is accurate and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C64",
+      "C71"
+    ],
+    "result": "Previous studies showed humans perform active learning with conscious deliberation, and the current approach is amenable to multiple perceptual domains and high-level cognitive tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C64 accurately summarizes prior work. However, C71 is speculative about generalizability without empirical demonstration. While the framework may be generalizable, this remains to be tested and thus uncertain.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,155 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C45"
+    ],
+    "result": "The authors developed a method to measure RNA polymerase fidelity using standard RNA-seq protocols. The method involves filtering full-length alignments, trimming read ends, counting mismatches at specific positions, and calculating error rates relative to genomic features rather than absolute genomic positions to avoid sampling bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the methodological pipeline is described (C14-C22, C31-C36, C45), no validation data, benchmarking against known error rates, or comparison to existing methods is provided in the manuscript text. The claim that this method can measure changes in RNA polymerase fidelity (C6) lacks supporting experimental results showing the method's accuracy, sensitivity, or specificity. Critical validation experiments are needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "RNA polymerase is error-prone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This claim (C7) is stated as a finding but no quantitative error rate data, statistical analysis, or comparison to background sequencing error rates is provided in the manuscript text. Without seeing the actual measurements and controls distinguishing true transcription errors from sequencing/technical artifacts, this result cannot be evaluated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8"
+    ],
+    "result": "RNA polymerase errors can result in splicing defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The claim (C8) that transcription errors cause splicing defects is stated as a finding, and methods describe measuring error rates at splice junctions (C18-C22), but no data demonstrating elevated error rates at splice sites, functional consequences, or mechanistic evidence is provided in the manuscript text. The causal relationship between errors and splicing defects requires experimental demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Differential expression of RNA polymerase subunits (RPB9 and DST1) causes changes in RNA polymerase fidelity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The experimental design for manipulating RPB9 and DST1 expression levels is described (C23-C30), but no data showing the resulting error rates, dose-response relationships, or statistical significance is provided in the manuscript text. The causal claim (C9) requires quantitative evidence that varying subunit expression actually changes measured error rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "Coding sequences may have evolved to minimize the effect of RNA polymerase errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This evolutionary claim (C10) is explicitly speculative ('may have') and no comparative genomic analysis, codon usage bias analysis, or evidence of selection pressure is provided in the manuscript text. This represents an inference that would require substantial additional computational and evolutionary analysis to support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "Errors caused by RNA polymerase may be a major source of stochastic variability at the level of single cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This claim (C11) is explicitly speculative ('suggest', 'may be') and no single-cell data, measurements of cell-to-cell variability, or quantitative modeling is provided. The manuscript describes bulk RNA-seq experiments, making this extrapolation to single-cell stochasticity unsupported by the presented methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Duplicate read removal is appropriate for low coverage paired-end reads with variable insert size, but not for high coverage datasets or single-ended reads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C37-C40) represent sound methodological reasoning about when PCR duplicates can be distinguished from independent biological molecules based on sequencing coverage and read configuration. The logic is internally consistent and reflects established best practices in RNA-seq analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The study analyzed pre-existing RNA-seq datasets from multiple sources including human cells (PRJNA253670), yeast mutants (PRJNA167772, PRJNA148851), and RPB9 correlation data (PRJNA30709).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C41-C44) clearly document the sources of pre-existing data used in the analysis. The accession numbers and sources are explicitly stated, providing transparency about data provenance, though no results from these analyses are presented in the manuscript text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "RNA polymerase has an error rate more than 4 orders of magnitude higher than DNA polymerase, and transcription errors are amplified more than 1000-fold by translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C1, C2) are presented as established knowledge without citations in this manuscript. While these may reflect accepted values in the field, the lack of specific citations makes it impossible to verify the accuracy of these quantitative claims or assess whether they represent consensus values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Current methods to measure RNA polymerase fidelity are low-throughput, technically challenging, and organism specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These characterizations of existing methods (C3-C5) are stated without citations or specific examples. While this may motivate the development of new methods, the claims about limitations of existing approaches cannot be evaluated without references to specific methods and their documented limitations.",
+    "result_type": "MINOR"
+  }
+]

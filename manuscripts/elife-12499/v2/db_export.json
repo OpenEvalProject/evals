@@ -1,0 +1,2202 @@
+{
+  "submission": {
+    "id": "f88a9dd0-8135-420f-9f70-86e7a7233271",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:58:10.036890Z",
+    "updated_at": "2025-11-29T22:58:10.036890Z"
+  },
+  "content": [
+    {
+      "id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "submission_id": "f88a9dd0-8135-420f-9f70-86e7a7233271",
+      "content_type": "manuscript",
+      "content_text": "# Sleep-active neuron specification and sleep induction require FLP-11 neuropeptides to systemically induce sleep\n\n## Authors\n\n- Michal Turek<sup>1</sup>\n- Judith Besseling<sup>1</sup>\n- Jan-Philipp Spies<sup>1</sup>\n- Sabine K\u00f6nig<sup>1</sup>\n- Henrik Bringmann<sup>1</sup> ([ORCID: 0000-0002-7689-8617](https://orcid.org/0000-0002-7689-8617)) \u2020\n\n### Affiliations\n\n1. Max Planck Institute for Biophysical Chemistry G\u00f6ttingen Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nSleep is an essential behavioral state. It is induced by conserved sleep-active neurons that express GABA. However, little is known about how sleep neuron function is determined and how sleep neurons change physiology and behavior systemically. Here, we investigated sleep in Caenorhabditis elegans, which is induced by the single sleep-active neuron RIS. We found that the transcription factor LIM-6, which specifies GABAergic function, in parallel determines sleep neuron function through the expression of APTF-1, which specifies the expression of FLP-11 neuropeptides. Surprisingly FLP-11, and not GABA, is the major component that determines the sleep-promoting function of RIS. FLP-11 is constantly expressed in RIS. At sleep onset RIS depolarizes and releases FLP-11 to induce a systemic sleep state.\n\n## Introduction\n\nSleep is a systemic physiological state that is defined by behavioral criteria such as an increased arousal threshold, reversibility, and homeostatic regulation (Campbell and Tobler, 1984). Sleep behavior has been found in all animals that have a nervous system and that have been studied thoroughly (Cirelli and Tononi, 2008). Sleep homeostasis suggests that sleep is vital for animal life, and deprivation of this behavior typically has detrimental consequences (Rechtschaffen and Bergmann, 1995). Because of its importance, sleep is highly controlled by the nervous system, and failures of the sleep regulatory system cause disorders that are widespread in modern societies (Panossian and Avidan, 2009).\n\nIn mammals, wake and sleep are controlled by two antagonistic systems. The ascending system is wake-promoting (Moruzzi and Magoun, 1949; Starzl et al., 1951), and the descending system is sleep-promoting (von Economo, 1930; Nauta, 1946; McGinty and Sterman, 1968; McGinty et al., 2004; Saper et al., 2005). Central to the control of sleep are sleep-active sleep-promoting neurons such as those located in the preoptic area (Ventral Lateral Preoptic Nucleus, VLPO and Median Preoptic Nucleus, MnPO), the parafacial zone of the medulla, and the thalamic reticular nucleus (McGinty et al., 2004; Anaclet et al., 2012; 2014; Alam et al., 2014; Ni et al., 2016). These neurons typically fire preferentially at the onset of sleep, they actively induce sleep, and they express the neurotransmitter GABA. The VLPO also expresses the neuropeptide Galanin (Sherin et al., 1998; Szymusiak et al., 1998; Gaus et al., 2002). Interestingly, small brain areas can induce the global state of sleep that affects all areas of the brain and also other organs. It has been proposed that sleep neurons induce sleep through projections to arousal centers (Saper et al., 2005; Sherin et al., 1996). To ensure that sleep and wake are manifested as discrete states, the ascending and descending systems mutually inhibit each other in a flip-flop switch (Gallopin et al., 2000; Saper et al., 2001).\n\nCaenorhabditis elegans has become an invaluable model system for molecular dissection of biological processes (Brenner, 1974). It is amenable to genetics, has a small and invariant nervous system of just 302 neurons, and it is transparent (Brenner, 1974; White et al., 1986; Chalfie et al., 1994). In C. elegans, quiescence behavior can be found in satiated adults, after stress, during dauer diapause, and during larval development (Cassada and Russell, 1975; You et al., 2008; Hill et al., 2014). For some of these types of quiescence, it is yet unclear how they relate to sleep and they are, at least in part, regulated by different mechanisms (Trojanowski et al., 2015).\n\nHere, we focus on a well-characterized developmentally\u00a0controlled sleep behavior that can be found in C. elegans larvae prior to each of the four molts (Cassada and Russell, 1975). Developmentally controlled sleep fulfills the criteria that define sleep in other organisms (Raizen et al., 2008; Trojanowski and Raizen, 2016). These criteria are reversibility, an increased arousal threshold, and homeostatic regulation (Raizen et al., 2008; Jeon et al., 1999; Schwarz et al., 2011; Driver et al., 2013; Iwanir et al., 2013; Nagy et al., 2014). Further analysis has shown that sleep behavior in C. elegans and sleep in other organisms are controlled by homologous genes such as period/lin-42, Notch signaling, EGF signaling and several other molecules including neurotransmitter systems (Nagy et al., 2014; Monsalve et al., 2011; Van Buskirk and Sternberg, 2007; Singh et al., 2011; Singh et al., 2014; Choi et al., 2013). These molecular similarities suggest that sleep behavior in C. elegans and sleep in other organisms share a common evolutionary origin.\n\nSleep behavior in C. elegans has been shown to profoundly change the activity of neurons and muscles (Schwarz et al., 2011; Iwanir et al., 2013; Cho and Sternberg, 2014; Schwarz et al., 2012). It requires the activity of the single interneuron RIS (neuron class of one ring interneuron;\u00a0White et al., 1986). This neuron is active at the onset of sleep, it actively induces sleep, and it expresses GABA (Turek et al., 2013). Thus, RIS is similar to sleep-active neurons in mammals.\n\nIn order to be sleep-inducing, RIS requires APTF-1, a highly conserved transcription factor of the AP2 family. Without APTF-1, RIS is still sleep-active but can no longer induce sleep (Turek et al., 2013). In humans, mutation in the AP2 homolog TFAP2beta causes Char syndrome, which is linked to insomnia or sleepwalking (Mani et al., 2005). Together, this supports the view that sleep-neurons and AP2 transcription factors are conserved regulators of sleep. However, the mechanism of how APTF-1 renders RIS sleep promoting is unclear.\n\nHere, we identify a gene regulatory system that determines the sleep-inducing function of RIS. In this network, a transcription factor that controls GABAergic function in a subset of neurons, LIM-6, in parallel controls the expression of the APTF-1 transcription factor. APTF-1, in turn, specifies the expression of sleep-inducing FLP-11 peptides. FLP-11 is always present in RIS, and thus, this neuron can induce sleep at any time it gets activated. At sleep onset, calcium transient activity of RIS increases and leads to the release of FLP-11 peptides, which induce quiescence. Thus, we show that sleep can be induced systemically by the single RIS neuron through FLP-11 release.\n\n## Results\n\n### LIM-6 controls APTF-1 in RIS\ufeff\n\nSleep-active neurons express GABA in both mammals and C. elegans. The LIM homeobox transcription factor LIM-6 is expressed in a subset of GABAergic neurons including RIS and has been shown to be required for some aspects of GABAergic neuron specification, including the expression of the GABA-synthesizing enzyme glutamate decarboxylase UNC-25 (Hobert et al., 1999; Jin et al., 1999). Thus, we tested whether LIM-6 is involved in sleep control. First, we investigated the spontaneous behavior of two lim-6 mutants, which contain large deletions and represent strong loss-of-function mutations. We cultured worms in microfluidic compartments, filmed their activity over the sleep-wake cycle, and quantified their locomotion behavior by tracking nose movement. Similar to the wild type, lim-6 mutants stopped feeding before the molt, allowing the identification of lethargus, the developmental time the larvae should be sleeping. The mutants had strongly reduced or even complete absence of immobility during the non-pumping phase (Figure 1A). We then quantified RIS activation in lim-6 mutant worms by imaging the calcium indicator GCaMP3 expressed in RIS (Tian et al., 2009; Butler, 2012). We found that RIS activity increased at sleep onset in wild-type animals and also normally increased in lim-6 mutants during the time the animal should enter sleep (Figure 1B). Because the sleep phenotype of the lim-6 mutant worms was similar to the sleep phenotype of aptf-1 mutants (Turek et al., 2013), we tested whether lim-6 controls aptf-1 expression. We crossed a line expressing mKate2, a red-fluorescent protein (Shcherbo et al., 2009), under the control of the aptf-1 promoter into lim-6 mutant worms and quantified the expression of mKate2 in RIS. aptf-1 expression was completely abolished in most individuals and strongly reduced in the remaining ones in all developmental stages (Figure 1C, Figure 1\u2014figure supplement 1A). We also looked at GABAergic function in aptf-1 mutant worms and found that aptf-1 did not control the expression of unc-25 or the vesicular GABA transporter gene unc-47 (Figure 1D, Figure 1\u2014figure supplement 1B). Thus, LIM-6 does not appear to affect sleep primarily through GABAergic function determination. Rather, LIM-6 controls sleep-promoting function primarily through a parallel pathway that depends on APTF-1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/12499/elife-12499-fig1-v2.jpg)\n\n**Figure 1.:** (A) Probability distribution of nose speeds during wake and sleep for wild type and lim-6 mutants. lim-6(nr2073) shows substantially reduced and lim-6(tm4836) shows a complete lack of immobility during the time the animals should be sleeping. (B) Averaged RIS calcium activity pattern across time in wild type and lim-6(tm4836). RIS is active at the onset of sleep in wild type and in lim-6(tm4836). There was no statistically significant difference between wild-type and lim-6 worms (p > 0.05, Welch test). (C) Expression of paptf-1::mKate2 in wild type and lim-6(nr2073) L1 larvae. Expression of mKate2 is absent in RIS in lim-6(nr2073) showing that LIM-6 controls expression of APTF-1 in RIS. (D) Expression of punc-25::GFP in wild type and aptf-1(gk794). Reporter GFP expression is normal in RIS in aptf-1 mutant worms indicating that GABAergic function is not controlled by APTF-1. Statistical tests used were Wilcoxon Signed Paired Ranks test for comparison within the same genotype and Student\u2019s t-test for comparisons between genotypes. Error bars are SEM. ** denotes statistical significance with p<0.01, *** denotes statistical significance with p<0.001. Scale bars are 10 \u00b5m.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12499/elife-12499-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Expression of paptf-1::mKate2 in wild type and in lim-6(nr2073) L4 larvae.\u00a0Expression of mKate2 is absent in RIS in lim-6(nr2073) at the L4 stage showing that LIM-6 generally controls expression of APTF-1 in RIS rather than the onset of expression. Scale bar is 10 \u00b5m. (B) punc-47::GFP is expressed in aptf-1(gk794) mutant worms. Shown are L1 larvae. Scale bar is 10 \u00b5m.\n\n### APTF-1 controls gene expression in RIS\n\nHow is sleep-promoting function generated by APTF-1? AP2 transcription factors are highly conserved regulators of gene expression (Zhao et al., 2011; Eckert et al., 2005) suggesting that aptf-1 acts through gene expression in RIS. Thus, we determined the transcriptional profile of aptf-1 mutants. We performed transcriptional profiles of aptf-1 mutants using microarrays using two conditions. First, because aptf-1 is most strongly expressed during late embryogenesis, we analyzed pretzel-stage embryos. Second, because aptf-1 is required for sleep behavior, we analyzed sleeping L4 larvae. The microarray experiment revealed that flp-11, a neuropeptide gene, was strongly downregulated in aptf-1 mutant worms in both embryos and larvae (Figure 2A, Supplementary file 1, Table 1A and 1B). We thus further analyzed the role of flp-11 in sleep control. We also analyzed some other genes that were regulated by aptf-1, but none of them appeared to be important for sleep regulation (Figure 2\u2014figure supplements 1 and 2). To test whether flp-11 is expressed in RIS and to verify its regulation by aptf-1, we generated an mKate2 promoter fusion as a reporter line. We then checked the expression in wild-type and aptf-1 mutant backgrounds using fluorescence microscopy. flp-11 was expressed strongly in RIS and faintly in a few additional neurons. Expression was abolished or greatly reduced in RIS in aptf-1 mutant worms (Figure 2B, Figure 2\u2014figure supplement 3). We followed the expression of flp-11:mKate2 over the sleep-wake rhythm and found that mKate2 was constantly expressed during larval development both during sleep and wake (Figure 2C). Transcription factors are often structurally conserved, and the homolog from a highly divergent species can replace the mutation of the endogenous factor (Halder et al., 1995). There are five homologs of APTF-1 in mammals, designated TFAP2-alpha to TFAP2-epsilon (Eckert et al., 2005). We tested for structural conservation of AP2 by expressing the mouse homolog of aptf-1, tfap2beta, in RIS using the aptf-1 promoter. For our experiment, we chose TFAP2beta, because it has been linked to insomnia in humans (Mani et al., 2005). Nose speed measurements during sleep showed that tfap2beta expression partially restored immobility (Figure 2D,E). Expression of mouse tfap2beta also partially restored the expression of flp-11 in aptf-1 mutant worms (Figure 2F, Figure 2\u2014figure supplement 4). The structural conservation of AP2 transcription factors suggests that also the DNA binding site is conserved. In fact, it has been shown that the binding site of AP2 is conserved over 600 million years of bilaterian evolution, and the different mammalian AP2 paralogs have nearly identical binding sites (Nitta et al., 2015). Thus, we searched for mammalian AP2 transcription factors binding sites in the promoter region of flp-11 (Eckert et al., 2005; Grant et al., 2011). Indeed, we found a putative AP2-binding site in the flp-11 promoter region, consistent with the regulation of flp-11 by aptf-1 (Figure 2G). These results show that aptf-1 is required for flp-11 expression in RIS.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/12499/elife-12499-fig2-v2.jpg)\n\n**Figure 2.:** (A) Transcriptional analysis of aptf-1(gk794) mutants revealed genes that are regulated by APTF-1. Wild-type and aptf-1(gk794) pretzel-stage embryos and sleeping L4 larvae were used for a transcriptome analysis. In both life stages, expression of the FMRFamide-like neuropeptide FLP-11 was strongly reduced in aptf-1(gk794). This suggests transcriptional control of FLP-11 by APTF-1. Data can be found in Supplementary file 1, Tables 1A and 1B. (B) Expression of pflp-11::mKate2 in wild type and aptf-1(gk794). Expression of mKate2 was absent in RIS in aptf-1(gk794) showing that APTF-1 controls expression of FLP-11. Expression of flp-11 in RIS was reminiscent to the expression of the flp-11 homolog afp-6 in RIS in Ascaris nematodes (Yew et al., 2007). Expression for additional genes can be found in Figure 2\u2014figure supplements 2 and 3. (C) flp-11 expression profile in RIS over the sleep-wake cycle. Expression does not change with the sleep-wake cycle. (D) Probability distribution of nose speeds during wake and sleep for wild type, aptf-1(gk794) and aptf-1(gk794); paptf-1::tfap2\u03b2 rescue. (E) Comparison of immobility during sleep for wild type, aptf-1(gk794), and aptf-1(gk794); paptf-1::tfap2\u03b2. The mouse TFAP2\u03b2 partially rescued the aptf-1(gk794) sleep phenotype. (F) Comparison of pflp-11::GFP fluorescence intensity in RIS for wild type, aptf-1(gk794), and aptf-1(gk794); paptf-1::tfap2\u03b2. The mouse TFAP2\u03b2 partially rescued the expression of flp-11 in RIS (18% of wild-type level). (G) Analysis of putative AP2-binding sites in the flp-11 promoter region. The flp-11 promoter region was scanned for the primary mouse AP2\u03b1-binding site. Overlap was found (p<0.001, q=0.06 (Grant et al., 2011)) for one binding site. Statistical test used was Wilcoxon Signed Paired Ranks test. ** denotes statistical significance with p<0.01, *** denotes statistical significance with p<0.001. Scale bar is 10 \u00b5m.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12499/elife-12499-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Bioinformatics analysis suggests that C10C6.7 is a four transmembrane helix protein (Krogh et al., 2001).\u00a0(B) Expression pattern of GFP-tagged fosmids for C10C6.7. Expression is visible in nine cells: interneuron RIS; pharyngeal neurons M1, M2, Motor-interneuron (M-IN), an unidentified pair of pharyngeal neurons (**) and an unidentified pair of sensory neurons (*). Expression of C10C6.7 protein in RIS is controlled by aptf-1. (C) Probability distribution of nose speeds during wake and sleep for C10C6.7(goe3) and C10C6.7(goe5) shows that C10C6.7 does not play a significant role in sleep control. Statistical test used was Wilcoxon Signed Paired Ranks test. Scale bars are 10 \u00b5m.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12499/elife-12499-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Expression pattern of sto-3 promoter fusions.\u00a0STO-3 is expressed in RIB neuron and additionally in three unidentified non-neuronal cells in the tale (not shown). (B) Probability distribution of nose speeds during wake and sleep for sto-3(tm1488) shows that sto-3 does not play a significant role in sleep control. (C) Expression pattern of GFP-tagged fosmids for H19N07.3. The H19N07.3 protein is expressed in all somatic cell nuclei, but its levels are not regulated by aptf-1. Statistical test used was Wilcoxon Signed Paired Ranks test. Scale bars are 10 \u00b5m.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/12499/elife-12499-fig2-figsupp3-v2.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Expression pattern of ynIs40(pflp-11::GFP) in wild type and aptf-1(gk794) mutant. The transgene expresses in several neurons including RIS. aptf-1(gk794) abolishes the expression specifically in RIS. (B) Expression pattern of goeIs288(pflp-11::mKate2) in wild type and the aptf-1(gk794) mutant. Strong expression is visible only in RIS. By increasing the contrast to the point where RIS is over-saturated several additional neurons becomes visible that may be identical to those seen in ynIs40\u00a0(Kim and Li, 2004).\u00a0aptf-1(gk794) strongly reduces the expression specifically in RIS. Scale bars are 10 \u00b5m.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/12499/elife-12499-fig2-figsupp4-v2.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Expression of pflp-11::GFP in wild type, aptf-1(gk794), and aptf-1(gk794); tfap2beta rescue.\u00a0In aptf-1(gk794), expression of flp-11 is strongly reduced but could partially be restored by the mouse TFAP2beta. Expression of flp-11::GFP in the rescue strain varied between 5\u201350% of wild-type levels. Here, we show a picture of 50% rescue. Scale bar is 10 \u00b5m.\n\n### RIS induces sleep through FLP-11\n\nWe next tested whether flp-11 is required for sleep behavior. We analyzed an flp-11 deletion that is predicted to affect all four peptides encoded by the gene and filmed and quantified sleep behavior as before. flp-11 mutant larvae showed a normal pre-molting cessation of pumping. However, locomotion quiescence was strongly reduced in flp-11 mutant larvae. Although nose immobility was 48% in wild type, it was strongly reduced to less than 14% in flp-11 mutants (Figure 3A). To verify that the sleep phenotype observed in flp-11 mutants was caused by flp-11 deletion, we tested whether a wild-type copy of flp-11 would restore locomotion quiescence during sleep. We found that the wild-type transgene could rescue the flp-11 mutant phenotype (Figure 3A). If flp-11 is a major target of aptf-1, a wild-type copy of flp-11 should also rescue, at least partially, the sleep phenotype of aptf-1 mutants. Because the flp-11 promoter is regulated by aptf-1, we used the aptf-1 promoter to drive expression of flp-11 in aptf-1 mutants. Whereas aptf-1 mutants without the transgene did not show any detectable immobility, the flp-11 transgene partially restored immobility (Figure 3A). It is likely that aptf-1 acts through additional targets, which may explain why the rescue observed after flp-11 expression in the aptf-1 mutant was partial and small. We next investigated the activation of RIS at sleep onset in flp-11 mutants using GCaMP3. RIS strongly activated at the onset of the non-pumping period in flp-11 mutant worms (Figure 3B). Thus, flp-11 is not required for activation of RIS at sleep onset. To test whether sleep induction by RIS is impaired in flp-11 mutant worms, we optogenetically activated RIS with Channelrhodopsin-2 during wake and followed the behavioral response of the worms by nose tracking (Nagel et al., 2005). Although wild-type animals showed a reduction in movement and became immobile after blue light illumination, flp-11 mutant worms did not decrease their movement but rather increased it (Figure 3C). If FLP-11 peptides are sleep-promoting, then ectopic overexpression during wake may induce anachronistic quiescence (Singh et al., 2011; Nelson et al., 2013; 2014). We overexpressed FLP-11 in adult worms using a heat-shock-inducible promoter that drives broad expression in the nervous system and other tissues (Jones et al., 1986). After a 5-min heat shock, we followed the fraction of immobilized worms over time. Adult worms that were expressing FLP-11 driven by the heat shock promoter became immobile 1\u20132 hr after the heat shock. Control worms that were heat shocked but did not express the transgene or expressed other flp genes did not show any immobilization (Figure 4A, Figure 4\u2014figure supplement 1). Taken together these data imply that RIS induces sleep through FLP-11. These peptides are expressed in RIS during both sleep and wake, and optogenetic activation of RIS can induce quiescence during wake. This suggests a model in which RIS can induce sleep at any time. According to this model, RIS depolarizes at sleep onset and it releases FLP-11, which then induces sleep.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/12499/elife-12499-fig3-v2.jpg)\n\n**Figure 3.:** (A) Probability distribution of nose speeds during wake and sleep for wild type, flp-11(tm2706), flp-11(tm2706); pflp-11::flp-11 rescue and aptf-1(gk794); paptf-1::flp-11 rescue. Immobility during the time the animal should be sleeping was substantially reduced in flp-11(tm2706). flp-11(tm2706) could be rescued by expression of the wild-type flp-11 gene. Furthermore, expression of flp-11 in aptf-1(gk794) partially rescued sleep behavior. (B) Averaged RIS calcium activity pattern across time in wild type and flp-11(tm2706). RIS was strongly activated at the onset of sleep in flp-11(tm2706) (Student\u2019s t-test). (C) Channelrhodopsin-2 activation of aptf-1-expressing neurons caused immediate immobility in wild type. In contrast, flp-11(tm2706) accelerated upon blue light stimulation showing that RIS-dependent immobility is impaired. Statistical tests used were Wilcoxon Signed Paired Ranks test for comparisons within genotypes and Student\u2019s t-test for comparisons between genotypes. Error bars are SEM. ** denotes statistical significance with p<0.01, *** denotes statistical significance with p<0.001.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/12499/elife-12499-fig4-v2.jpg)\n\n**Figure 4.:** (A) Behavioral analysis over time after the\u00a0heat-shock-induced overexpression of flp-11 in wild-type and the npr-22(ok1598); frpr-3(ok3302); npr-4(tm1782) triple mutant. To assess the effect of the heat shock on quiescence, wild-type worms without flp-11 overexpression were analyzed at the same time and do not show any behavioral changes. Overexpression of flp-11 caused anachronistic quiescence that was lasting approximately 1\u2009hr in the wild type. Quiescence was significantly reduced by approximately 50% in the triple mutant. (B) Probability distribution of nose speeds during wake and sleep for wild type and npr-22(ok1598); frpr-3(ok3302); npr-4(tm1782) triple mutant. Immobility during sleep was reduced by about 30% in the npr-22(ok1598); frpr-3(ok3302); npr-4(tm1782) triple mutant. (C) Expression patterns of frpr-3, npr-4 and npr-22 promoter fusions. FRPR-3 is expressed in about 30 neurons, mostly in the head. Expression of NPR-4 was seen in about five neurons. NPR-22 was expressed in several neurons and muscle tissue including pharynx and head muscle. (D) Expression patterns of GFP-tagged fosmids for frpr-3, npr-4, and npr-22. FRPR-3 and NPR-4 were mostly expressed around the nerve ring. NPR-22 localized broadly to the plasma membrane in several neurons, pharynx muscle, head muscle, and the anal sphincter muscle. Statistical tests used were Wilcoxon Signed Paired Ranks test for comparisons within genotypes and Student\u2019s t-test for comparisons between genotypes. Error bars are SEM. ** denotes statistical significance with p<0.01, *** denotes statistical significance with p<0.001. Scale bars are 10 \u00b5m.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12499/elife-12499-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Behavioral analysis of wild-type adult worms over time after 5 min of heat shock at 37\u00b0C.\u00a0(B-E) Behavioral analysis of wild-type adult worms over time after heat shock-induced overexpression of flp-11, flp-1, flp-10, and flp-20. Only heat-shock-induced overexpression of flp-11 induces quiescence.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12499/elife-12499-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Heat shock-induced overexpression of flp-11 in single and double mutants of frpr-3(ok3302), npr-4(tm1782), and npr-22(ok1598).\u00a0The strength of the anachronistic quiescence correlates with the combination of receptors ranging from highest for single mutants to lowest for the double mutants. (B) Probability distribution of nose speeds during wake and sleep for wild type and npr-22(ok1598), frpr-3(ok3302), npr-4(tm1782) single mutants. Immobility during sleep is not significantly different between wild type and single mutants. Statistical tests used were Wilcoxon Signed Paired Ranks test for comparisons within genotypes and Student\u2019s t-test for comparisons between genotypes. Error bars are SEM. *denotes statistical significance with p<0.05, **denotes statistical significance with p<0.01, *** denotes statistical significance with p<0.001.\n\n### G-protein-coupled receptors in sleep\n\nMany neuropeptides act through G-protein-coupled receptors (Peymen et al., 2014; Frooninckx et al., 2012). To search for effectors through which FLP-11 induces sleep, we investigated three neuropeptide receptors that are activated by FLP-11 peptides in in vitro assays. These receptors are FRPR-3, NPR-4, and NPR-22 (Frooninckx et al., 2012; Mertens et al., 2006; Mertens et al., 2004; Cohen et al., 2009). We first tested whether deletion of these receptors can suppress FLP-11-induced anachronistic quiescence. We crossed receptor deletions into our FLP-11 overexpressing line and quantified heat-shock-induced quiescence. We found that the maximum quiescence was reduced in each of these mutants, albeit only slightly (Figure 4\u2014figure supplement 2A). Thus, we tested whether these receptors act redundantly by testing all double mutant permutations and a triple mutant containing all three receptor deletions at the same time. The double mutants had further decreased quiescence, and the triple mutant had the strongest reduction in quiescence (Figure 4A, Figure 4\u2014figure supplement 2A). Thus, the quiescence induced by FLP-11 overexpression partly depends on multiple effectors. We next investigated sleep behavior in the receptor mutants. Whereas the single receptor mutants did not show a significant reduction in immobility, the receptor triple mutant showed a small increase in nose speed during sleep and a small reduction of immobility (Figure 4B, Figure 4\u2014figure supplement 2B). We investigated transgenic animals expressing promoter fusions containing the putative FLP-11 receptor and mKate2. To investigate the subcellular localization, we made transgenic animals expressing GFP-tagged proteins for the three receptors (Sarov et al., 2012). The promoter fusions showed that FRPR-3 expressed in approximately 30 neurons, mostly in the head. NPR-4 expressed in five neurons (Cohen et al., 2009). NPR-22 expressed in several neurons, muscle tissue in the pharynx and in the head (Figure 4C). Interestingly, the receptors were expressed in neurons that are not postsynaptic to RIS (White et al., 1986). The only exception that we found was the AVK neuron, which is postsynaptic to RIS and expressed FRPR-3. Translational fusions showed that FRPR-3 and NPR-4 were weakly expressed and localized mostly to the nerve ring, whereas NPR-22 was localized broadly to the plasma membrane of neurons, and muscles of the\u00a0pharynx, head, and muscle (Figure 4D). The phenotypes for the GPCRs that we observed were small and the binding affinities of FLP-11 peptides to these GPCRs in vitro were low which makes it premature to conclude that these receptors act by binding of FLP-11 (Frooninckx et al., 2012; Mertens et al., 2004; 2006; Cohen et al., 2009). It could be that FLP-11 acts through one main receptor, which remains unidentified. Alternatively, FLP-11 could act through several redundant receptors, which may include FRPR-3, NPR-4, and NPR-22.\n\n## Discussion\n\n### The role of GABA in sleep induction by RIS\n\nGABA has been proposed to play a major role in sleep function. Its conserved expression in sleep-active neurons suggests that it has an important function in these neurons. Enhancers of GABAergic neurotransmission have been used to treat sleeping problems and GABA has been suggested to play a role in sleep induction in several systems including C. elegans (Singh et al., 2014; Dabbish and Raizen, 2011). In contrast to the common view that GABA is the major sleep inducer in sleep-active neurons, we did not find evidence that GABA is the major sleep-inducing transmitter in RIS. This is consistent with our previous observation that optogenetic activation of RIS still causes quiescence in unc-25 mutant worms and that unc-25 mutant worms still show sleeping behavior (Turek et al., 2013). In addition, here we show that GABAergic function induction can be separated from sleep neuron function downstream of lim-6. This suggests that GABA plays a rather minor role in sleep-induction in RIS and that we did not detect it. More specific and more sensitive assays may resolve the question of the role of GABA in RIS in the future.\n\n### FLP-11 is the major sleep-promoting transmitter of RIS\n\nOur results show that FLP-11 is a crucial sleep-inducing component in RIS and an important target of aptf-1. In mammals, sleep neurons of the VLPO express the inhibitory neuropeptide Galanin, and projections extend to the tuberomammillary nucleus, which expresses Galanin receptors (Sherin et al., 1998; Gaus et al., 2002). The locus coeruleus, a wake-promoting brain region, is also innervated by VLPO projections and can be inhibited by Galanin administration (Seutin et al., 1989; Pieribone et al., 1995). Also, Galanin has been shown to have sedating effects on both zebrafish and human subjects (Woods et al., 2014; Murck et al., 2004). However, sleep phenotypes for Galanin knockouts have not been reported, despite being available for several years (Wynick et al., 1998; Kerr et al., 2000). These experiments suggest that Galanin has a modulatory role on sleep, but may not be central to sleep induction. Galanin does not appear to be homologous to FLP-11, as it belongs to the family of Galanin peptides (Lang et al., 2007), whereas flp-11 encodes peptides of the RFamide family (Li et al., 1999). Also, unlike FLP-11, Galanin is expressed widely in the brain and has diverse functions (Maria Vrontakis, 2002). In Drosophila, sleep requires a neuropeptide called sNPF, which may be functionally similar to FLP-11 as both are inhibitory and are released from sleep-promoting neurons (Shang et al., 2013; Vecsey et al., 2014; Chen et al., 2013). Thus, inhibitory neuropeptides appear to play important roles in sleep-promoting neurons across species.\n\n### A model for sleep neuron specification and sleep induction through RIS\n\nTaken together, we present a model for how sleep-promoting function is generated and for how sleep is induced (Figure 5). In this model, the transcription factor LIM-6 separately controls GABAergic and sleep-promoting functions. Sleep-promoting function is mediated by the expression of the APTF-1 transcription factor, which is crucially required for sleep induction by RIS. APTF-1, in turn, is required for the expression of sleep-inducing FLP-11 peptides. FLP-11 is always present in RIS allowing the induction of sleep at any time the neuron activates. At sleep onset, an unknown signal triggers depolarization and calcium influx in RIS, which then triggers release of FLP-11 peptides to systemically induce sleep behavior.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/12499/elife-12499-fig5-v2.jpg)\n\n**Figure 5.:** According to this model, the transcription factor LIM-6 controls GABAergic and peptidergic function in RIS in parallel. To render this neuron sleep-promoting, LIM-6 is required for the expression of the APTF-1 transcription factor. APTF-1, in turn, is required for the expression of sleep-inducing FLP-11 peptides. FLP-11 is present in RIS at all times. Sleep onset is triggered by an unknown signal, which leads to a depolarization and to calcium influx. This triggers FLP-11 release, which in turn systemically induces sleep behavior.\n\n## Materials and methods\n\n### Worm maintenance and strains\n\nC.\u00a0elegans worms were grown on Nematode Growth Medium (NGM) plates seeded with E. coli OP50 at 25\u00b0C as described (Brenner, 1974). The strains and alleles that were used in this study can be found in Supplementary file 2. The deletion alleles were backcrossed two to ten times against N2 to generate HBR lines (the exact number of backcrosses for each strain is indicated in brackets). Insertions were backcrossed two times against N2 to remove the unc-119(-) background. Backcrossed strains were the basis for all experiments. During backcrossing, the genotypes were followed by PCR. Primers to detect the deletions using a three primer PCR can be found in Supplementary file 3.\n\n### Molecular biology and transgenic strain generation\n\nAll constructs were cloned using the Multisite Gateway system (Invitrogen, Waltham, MA, USA) into pCG150 (Merritt and Seydoux, 2010). All constructs obtained from LR reactions were sequenced for verification. Plasmids and Fosmid that were used are listed in Supplementary file 4. The tfap2beta gene was codon-optimized for C.elegans as described(Redemann et al., 2011).\n\n### Transformation\n\nWe generated transgenic strains by microparticle bombardment or by microinjection using unc-119(ed3) rescue as a selection marker (Wilm et al., 1999; Praitis et al., 2001). For fosmid isolation, we used the FosmidMAX DNA Purification kit (epicentre) or Qiagen plasmid midi kit.\n\n### C10C6.7 mutant generation\n\nThe deletion alleles C10C6.7(goe3) and C10C6.7(goe5) were created with a CRISPR/Cas9 system as it was described before (Friedland et al., 2013). Target sequence for the sgRNA was GTTATGGTGAGAAGGAAAGCtgg. The C10C6.7 gene locus was sequenced and the deletions were mapped to the second exon. They are 25 bp and 4 bp long, respectively, and cause a frame shift, thus most likely are molecular null alleles.\n\n### Imaging in agarose microchambers\n\nAll long-term imaging experiments were carried out using agarose microchamber imaging as described (Bringmann, 2011; Turek et al., 2015).\n\nFor behavioral analysis, worms were filmed in a burst mode every 10\u201315 min for 20 s with a frame rate of 2 pictures/second. Nose tracking was performed manually. Mean velocities of nose speed were calculated for sleep and wake, where sleep was defined as the non-pumping phase and wake was defined as a 2-hr period directly before sleep.\n\nCalcium imaging was performed similar as described before using GCaMP3.35 and co-expression of mKate2 as an expression control (Schwarz et al., 2011; 2012; Turek et al., 2013; 2015; Schwarz and Bringmann, 2013). For calcium imaging, we used an Andor\u00a0(UK) iXon (512 x 512 pixels) EMCCD camera and LED illumination (CoolLed, UK) using standard GFP and Texas Red filter sets (Chroma, Bellow Falls, VT). Exposure times were in the range of 5-20\u00a0ms and allowed imaging of moving worms without blurring. The EMCCD camera triggered the LED through a TTL 'fire' signal to illuminate only during exposure. LED intensity was in the range of 15\u201330%. EM gain was between 50 and 250. All calcium-imaging experiments were done in agarose microchambers. Typically, 4\u201315 individuals were cultured in individual microchambers that were in close vicinity. Animals were filmed by taking a z-stack every 6 or 10 min or in a continuous mode, which means using a frame rate of 1 picture / 4 s. If more than four animals were filmed in parallel, individual compartments were repeatedly visited by using an automatic stage (Prior Proscan2/3, Rockland, MA) set to low acceleration speeds. Before each fluorescent measurement, we took a brief DIC movie to assess the developmental stage and behavioral state. Larvae that showed pharyngeal pumping were scored as being in the wake-like state. Movies were analyzed using homemade Matlab routines.\n\n### Spinning disc imaging\n\nFor fluorescence imaging of reporter lines (Figure 1C,D, Figure 2B, Figure 4C,D, Figure 1\u2014figure supplements 1A,B, 2B, 3A,B, 4A,B, 5), we used spinning disc imaging with an Andor Revolution spinning disc system using a 488\u00a0nm laser and a 565 nm laser, a Yokogawa\u00a0(Japan) X1 spinning disc head, a 100x oil objective and an iXon EMCCD camera. Z stacks were taken and a maximum intensity projection calculated using iQ software.\n\n### Optogenetics\n\nChannelrhodopsin experiments were performed inside agarose microchambers as described (Turek et al., 2013). We grew hermaphrodite mother worms on medium that was supplemented with 0.2\u00a0mM all trans Retinal (Sigma-Aldrich, St. Louis, MO). We then placed eggs from these mothers together with food into microchambers without any further retinal supplementation. We stimulated Channelrhodopsin with an LED of 490\u00a0nm with about 0.36 mW/mm2 as measured with a light voltmeter. Images were captured with an Andor Neo sCMOS camera (2560 x 2160 pixels).\n\nWorms were filmed every 30 min for 60 s with a frame rate of two pictures / second. Channelrhodopsin stimulation with constant blue light was applied for 20 s starting after 20 s. Nose tracking was performed manually. We calculated mean velocities for wake using a period of 2\u2009hr directly before sleep.\n\n### Neuron identification\n\nWe crossed goeIs290 and goeIs285 in the following strains to identify neurons:\n\nMU1085\u00a0(Wightman et al., 2005,\u00a0EG1285\u00a0(McIntire et al., 1997),\u00a0BZ555\u00a0(Nass et al., 2002),\u00a0HBR1213, OH1422\u00a0(Tsalik et al., 2003),\u00a0HBR887, HBR777, QW122\u00a0(Donnelly et al., 2013).\n\n### Transcriptional profiling\n\nFor both wild-type and mutant conditions, four biological samples were collected. For transcriptional profiling of pretzel-stage embryos, each sample contained approximately 3000 animals that were picked manually into one ml of Trizol (Invitrogen). For transcriptional profiling of sleeping L4 larvae, each sample contained approximately 200 animals that were picked manually into one ml of Trizol (Invitrogen). Transcriptional profiling and microarray data analysis was done the same way as it was described before (Turek and Bringmann, 2014) except that fold change threshold was 1.5 and the GO term analysis was omitted. Microarray data was deposited at the GEO database and can be accessed using the following links:\n\nhttp://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE73282\n\nhttp://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE73283\n\n### GSE73282, Transcriptional profiling of C. elegans aptf-1(gk794) mutant in L4 sleep stage\n\nGSM1890106 aptf-1_1\n\nGSM1890107 aptf-1_2\n\nGSM1890108 aptf-1_3\n\nGSM1890109 aptf-1_4\n\nGSM1890110 N2_1\n\nGSM1890111 N2_2\n\nGSM1890112 N2_3\n\nGSM1890113 N2_4\n\n### GSE73283, Transcriptional profiling of C. elegans aptf-1(gk794) mutant in pretzel-stage embryos\n\nGSM1890140 aptf-1_1 in pretzel-stage embryos\n\nGSM1890141 aptf-1_2 in pretzel-stage embryos\n\nGSM1890142 aptf-1_3 in pretzel-stage embryos\n\nGSM1890143 aptf-1_4 in pretzel-stage embryos\n\nGSM1890144 N2_1 in pretzel-stage embryos\n\nGSM1890145 N2_2 in pretzel-stage embryos\n\nGSM1890146 N2_3 in pretzel-stage embryos\n\nGSM1890147 N2_4 in pretzel-stage embryos\n\n### Heat-shock-based overexpression\n\nFor heat-shock-induced overexpression of flp neuropeptides, we cultured adult worms on NGM plates seeded with E. coli OP50 and sealed with parafilm. Heat shock was applied using a water bath at 37\u00b0C where the plates were placed for 5 min, the agar side facing the water. Worms were scored for moving / pumping behavior directly after heat shock and consecutively in time intervals of 30 min for 4\u2009hr.\n\n### Statistics\n\nStatistical tests used were Wilcoxon Signed Paired Ranks test, Student\u2019s t-test or Welch test using Origin software. Error bars are SEM. For statistical analysis of overexpression experiments, a Fisher\u2019s exact test was done in Matlab.\n",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "89ca59a0-54ca-468a-86ef-b3bb194ae21c",
+      "submission_id": "f88a9dd0-8135-420f-9f70-86e7a7233271",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Leslie C Griffith, Brandeis University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.12499.023](https://doi.org/10.7554/eLife.12499.023)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Sleep-active neuron specification and sleep induction require FLP-11 neuropeptides to systemically induce sleep\" for consideration by eLife. Your article has been reviewed by three peer reviewers including Leslie Griffith, a Reviewing Editor and overseen by a Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThis is a very interesting paper that makes a good case for the ability of a neuromodulator to effect global state changes on the brain. For the most part, the data are tight and convincing. The study also provides novel insights into how sleep may be regulated in C. elegans. Particularly of note is the depth in which they have examined the molecular basis of neuronal differentiation to the functional state and the regulation of neuropeptide expression. These findings could potentially be extrapolated to understand the molecular underpinnings of sleep in other organisms.\n\nEssential revisions:\n\n1) The most problematic aspect of this study is the claim that FRPR-3/NPR-22/NPR-4 are cognate receptors for FLP-11. These claims are based on in vitro binding assays indicating effective concentrations for FLP-11 activation that are likely unphysiologically high. For example, for FRPR-3 the EC50 is around 1\u03bcM, and for NPR-22, the EC50 was too high to calculate, so they had to resort to stating the activity threshold (0.75\u03bcM-2.5\u03bcM). Additionally, for NPR-4, the EC50 was greater than 10\u03bcM. Given that most neuropeptides probably operate within the sub-nanomolar range, it is unlikely that these receptors are cognate for FLP-11.\n\nOne alternative model is that FLP-11 does not strongly activate these receptors in vivo to an appreciable level, but instead, activates other receptor(s) which may then (through x number of relays) trigger the release of additional ligands that bind to FRPR-3/NPR-22/NPR-4 for sleep. This is reflected by the mild sleep phenotype in the triple receptor mutant (Figure 4B) when compared to the flp-11 mutant (Figure 3A). For the authors to claim that FLP-11 binds to these receptors, they would need to demonstrate receptor activation at physiological levels independently. Alternatively, the authors may wish to reconsider their conclusion and state that they have found neuropeptide receptors that partially suppress the over-expression of FLP-11, and loss of these receptors also lead to sleep defects while speculating on potential mechanisms.\n\n2) There are also problems with the OE studies. It is known that heat shock of C. elegans can initiate quiescent states, which is problematic when testing for heat shock induced protein synthesis that may lead to sleep. An additional caveat is that the neuropeptide FLP-11 would be expressed globally throughout the animal. This unphysiological presence of a single neuropeptide could overwhelm the homeostasis of the nervous system and thus could cause non-specific quiescence. To exclude this possibility, the authors should try and test other peptides under the heat-shock promoter to demonstrate that the phenotype is specific to FLP-11 overexpression and is not caused by overexpression of any peptide. The authors should also describe in detail how the heat shock experiments were performed in the \"Experimental Procedures\" sections.\n\n3) The language describing rescue of aptf-1 with flp-11 is overblown. It is not a complete rescue and saying that immobility was \"restored\" (subsection \u201cRIS induces sleep through FLP-11\u201d) is incorrect. As is the statement in the Figure 3 legend \"rescue\" should be \"partial rescue\". In fact, the rescued animals only show immobility that is at the level of the flp-11 mutant. This strongly suggests that flp-11 is not the only relevant downstream gene of aptf-1. This needs to be explicitly acknowledged.\n",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "74fe5c8f-b0fb-465f-b037-27831449e038",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C1",
+      "claim": "Sleep is an essential behavioral state.",
+      "claim_type": "EXPLICIT",
+      "source": "Sleep is an essential behavioral state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement in the abstract that reflects established scientific consensus about sleep.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "5fda45db-776d-47b3-bdc0-7d7191b39cc2",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C2",
+      "claim": "Sleep is induced by conserved sleep-active neurons that express GABA.",
+      "claim_type": "EXPLICIT",
+      "source": "It is induced by conserved sleep-active neurons that express GABA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior research in the introduction section.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "9e6dedaf-9bef-44ec-8d47-cbaf266b5647",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C3",
+      "claim": "The transcription factor LIM-6 specifies GABAergic function.",
+      "claim_type": "EXPLICIT",
+      "source": "the transcription factor LIM-6, which specifies GABAergic function",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations in the introduction and results sections.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "003c40bd-ba29-49a9-8877-0d34fe29aace",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C4",
+      "claim": "LIM-6 determines sleep neuron function through the expression of APTF-1.",
+      "claim_type": "EXPLICIT",
+      "source": "the transcription factor LIM-6, which specifies GABAergic function, in parallel determines sleep neuron function through the expression of APTF-1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing that LIM-6 controls APTF-1 expression in RIS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "1718345b-8f31-4f1f-bfd4-568674901e95",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C5",
+      "claim": "APTF-1 specifies the expression of FLP-11 neuropeptides.",
+      "claim_type": "EXPLICIT",
+      "source": "APTF-1, which specifies the expression of FLP-11 neuropeptides",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by transcriptional profiling and reporter gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "85b95588-4229-48de-8bf3-50e012100985",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C6",
+      "claim": "FLP-11, and not GABA, is the major component that determines the sleep-promoting function of RIS.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly FLP-11, and not GABA, is the major component that determines the sleep-promoting function of RIS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral analysis of flp-11 mutants and optogenetic experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "24d5c3e8-f4e0-4ae4-b067-c3e774a1579b",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C7",
+      "claim": "FLP-11 is constantly expressed in RIS.",
+      "claim_type": "EXPLICIT",
+      "source": "FLP-11 is constantly expressed in RIS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by fluorescence imaging data showing constant expression during sleep-wake cycles.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "b6b6cc47-68f1-4f67-8e54-9f38213479e3",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C8",
+      "claim": "At sleep onset RIS depolarizes and releases FLP-11 to induce a systemic sleep state.",
+      "claim_type": "EXPLICIT",
+      "source": "At sleep onset RIS depolarizes and releases FLP-11 to induce a systemic sleep state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium imaging showing RIS activation at sleep onset and behavioral data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "066c18aa-558a-426b-bf71-0b19fcf2e359",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C9",
+      "claim": "Sleep is defined by behavioral criteria such as an increased arousal threshold, reversibility, and homeostatic regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Sleep is a systemic physiological state that is defined by behavioral criteria such as an increased arousal threshold, reversibility, and homeostatic regulation (Campbell and Tobler, 1984).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Campbell and Tobler, 1984.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "3ff01a33-7593-4592-a9d9-666439f99287",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C10",
+      "claim": "Sleep behavior has been found in all animals that have a nervous system and that have been studied thoroughly.",
+      "claim_type": "EXPLICIT",
+      "source": "Sleep behavior has been found in all animals that have a nervous system and that have been studied thoroughly (Cirelli and Tononi, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Cirelli and Tononi, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "c6cb777c-57a5-48cf-825d-e6a663de2b95",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C11",
+      "claim": "Sleep homeostasis suggests that sleep is vital for animal life.",
+      "claim_type": "EXPLICIT",
+      "source": "Sleep homeostasis suggests that sleep is vital for animal life",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the concept of homeostatic regulation.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "4f6e5b0a-b336-4da8-b37c-88a10e388db9",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C12",
+      "claim": "Deprivation of sleep typically has detrimental consequences.",
+      "claim_type": "EXPLICIT",
+      "source": "deprivation of this behavior typically has detrimental consequences (Rechtschaffen and Bergmann, 1995)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Rechtschaffen and Bergmann, 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "06197523-2f79-4ebd-979c-073dd53c3063",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C13",
+      "claim": "In mammals, wake and sleep are controlled by two antagonistic systems.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, wake and sleep are controlled by two antagonistic systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations in the introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "bf374d2e-4c15-4fc7-9bbd-e30a83d1e764",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C14",
+      "claim": "The ascending system is wake-promoting.",
+      "claim_type": "EXPLICIT",
+      "source": "The ascending system is wake-promoting (Moruzzi and Magoun, 1949; Starzl et al., 1951)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Moruzzi and Magoun, 1949 and Starzl et al., 1951.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "d07f4705-1028-46f1-a0be-3f3a8543e254",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C15",
+      "claim": "The descending system is sleep-promoting.",
+      "claim_type": "EXPLICIT",
+      "source": "the descending system is sleep-promoting (von Economo, 1930; Nauta, 1946; McGinty and Sterman, 1968; McGinty et al., 2004; Saper et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "ecbaba95-8e28-4aa1-8b59-bd11a6de46c0",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C16",
+      "claim": "Sleep-active neurons are located in the preoptic area (VLPO and MnPO), the parafacial zone of the medulla, and the thalamic reticular nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "Central to the control of sleep are sleep-active sleep-promoting neurons such as those located in the preoptic area (Ventral Lateral Preoptic Nucleus, VLPO and Median Preoptic Nucleus, MnPO), the parafacial zone of the medulla, and the thalamic reticular nucleus (McGinty et al., 2004; Anaclet et al., 2012; 2014; Alam et al., 2014; Ni et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "eb9c8dc9-fedd-42ac-b312-2c9aaefa5203",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C17",
+      "claim": "Sleep-active neurons typically fire preferentially at the onset of sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "These neurons typically fire preferentially at the onset of sleep",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "1f72c4fd-7e9d-4fb3-981e-2413bb98a822",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C18",
+      "claim": "Sleep-active neurons actively induce sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "they actively induce sleep",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "dc09ea0e-1381-4f79-9013-72d846d13490",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C19",
+      "claim": "Sleep-active neurons express the neurotransmitter GABA.",
+      "claim_type": "EXPLICIT",
+      "source": "they express the neurotransmitter GABA",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "10ec311e-f92f-49f2-aa20-26275c1de349",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C20",
+      "claim": "The VLPO also expresses the neuropeptide Galanin.",
+      "claim_type": "EXPLICIT",
+      "source": "The VLPO also expresses the neuropeptide Galanin (Sherin et al., 1998; Szymusiak et al., 1998; Gaus et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sherin et al., 1998; Szymusiak et al., 1998; Gaus et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "9b509ca8-b782-40b5-9d9a-977ba31072c5",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C21",
+      "claim": "Small brain areas can induce the global state of sleep that affects all areas of the brain and also other organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, small brain areas can induce the global state of sleep that affects all areas of the brain and also other organs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about sleep regulation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "e195550a-99c1-49cb-be4c-6549e047bc0f",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C22",
+      "claim": "Sleep neurons induce sleep through projections to arousal centers.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed that sleep neurons induce sleep through projections to arousal centers (Saper et al., 2005; Sherin et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Saper et al., 2005 and Sherin et al., 1996.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "02af4a0f-ccdc-4ce7-bbb2-f09652af4c91",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C23",
+      "claim": "The ascending and descending systems mutually inhibit each other in a flip-flop switch.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure that sleep and wake are manifested as discrete states, the ascending and descending systems mutually inhibit each other in a flip-flop switch (Gallopin et al., 2000; Saper et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gallopin et al., 2000 and Saper et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "5cf36083-b5cd-4f69-bbea-bc14536b6337",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C24",
+      "claim": "C. elegans has an invariant nervous system of just 302 neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "has a small and invariant nervous system of just 302 neurons",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C. elegans anatomy supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "2a04598f-b8a0-4137-9dd7-0eb9d005803c",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C25",
+      "claim": "C. elegans is transparent.",
+      "claim_type": "EXPLICIT",
+      "source": "it is transparent (Brenner, 1974; White et al., 1986; Chalfie et al., 1994)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about C. elegans supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "625ed47e-ec5e-46d5-82de-587008ed7ea2",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C26",
+      "claim": "Quiescence behavior in C. elegans can be found in satiated adults, after stress, during dauer diapause, and during larval development.",
+      "claim_type": "EXPLICIT",
+      "source": "In C. elegans, quiescence behavior can be found in satiated adults, after stress, during dauer diapause, and during larval development (Cassada and Russell, 1975; You et al., 2008; Hill et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cassada and Russell, 1975; You et al., 2008; Hill et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "074bf3a5-1e55-4c9d-a181-77d8faddf9b7",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C27",
+      "claim": "Developmentally controlled sleep in C. elegans can be found in larvae prior to each of the four molts.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we focus on a well-characterized developmentally controlled sleep behavior that can be found in C. elegans larvae prior to each of the four molts (Cassada and Russell, 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Cassada and Russell, 1975.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "de086651-78db-4d3b-b842-e5259a3e8b34",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C28",
+      "claim": "Developmentally controlled sleep fulfills the criteria that define sleep in other organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Developmentally controlled sleep fulfills the criteria that define sleep in other organisms (Raizen et al., 2008; Trojanowski and Raizen, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Raizen et al., 2008 and Trojanowski and Raizen, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "f8f0793c-9974-4805-9bb6-7ab6a861d92d",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C29",
+      "claim": "The criteria for sleep are reversibility, an increased arousal threshold, and homeostatic regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These criteria are reversibility, an increased arousal threshold, and homeostatic regulation (Raizen et al., 2008; Jeon et al., 1999; Schwarz et al., 2011; Driver et al., 2013; Iwanir et al., 2013; Nagy et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "23ea349d-ac79-4967-8a29-9d053436b8e9",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C30",
+      "claim": "Sleep behavior in C. elegans and sleep in other organisms are controlled by homologous genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Further analysis has shown that sleep behavior in C. elegans and sleep in other organisms are controlled by homologous genes such as period/lin-42, Notch signaling, EGF signaling and several other molecules including neurotransmitter systems (Nagy et al., 2014; Monsalve et al., 2011; Van Buskirk and Sternberg, 2007; Singh et al., 2011; Singh et al., 2014; Choi et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "9ad4c80e-7be3-4b00-857d-0f3d7f57bcd2",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C31",
+      "claim": "Sleep behavior in C. elegans and sleep in other organisms share a common evolutionary origin.",
+      "claim_type": "EXPLICIT",
+      "source": "These molecular similarities suggest that sleep behavior in C. elegans and sleep in other organisms share a common evolutionary origin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on molecular similarities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "f003b8b9-8e32-4bd2-9696-1c791f06e068",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C32",
+      "claim": "Sleep behavior in C. elegans profoundly changes the activity of neurons and muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "Sleep behavior in C. elegans has been shown to profoundly change the activity of neurons and muscles (Schwarz et al., 2011; Iwanir et al., 2013; Cho and Sternberg, 2014; Schwarz et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Schwarz et al., 2011; Iwanir et al., 2013; Cho and Sternberg, 2014; Schwarz et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "f40cc5f4-4a00-4f62-b15b-873e28b04774",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C33",
+      "claim": "Sleep behavior in C. elegans requires the activity of the single interneuron RIS.",
+      "claim_type": "EXPLICIT",
+      "source": "It requires the activity of the single interneuron RIS (neuron class of one ring interneuron; White et al., 1986).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to White et al., 1986.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "4df5d5da-51f1-4fb1-b988-9f5cd91cdacc",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C34",
+      "claim": "RIS is active at the onset of sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "This neuron is active at the onset of sleep",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior research and data in this manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "03d24bd7-2acf-4485-991a-895e59a4755b",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C35",
+      "claim": "RIS actively induces sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "it actively induces sleep",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior research and data in this manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "17dc9973-3036-4e8d-bc56-24a679248e67",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C36",
+      "claim": "RIS expresses GABA.",
+      "claim_type": "EXPLICIT",
+      "source": "it expresses GABA (Turek et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Turek et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "933fcf86-c30f-4cf7-b768-96cebaede81e",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C37",
+      "claim": "RIS is similar to sleep-active neurons in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, RIS is similar to sleep-active neurons in mammals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on shared characteristics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "18c0c13a-aae5-468f-8ddd-9c6625091e0c",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C38",
+      "claim": "RIS requires APTF-1 to be sleep-inducing.",
+      "claim_type": "EXPLICIT",
+      "source": "In order to be sleep-inducing, RIS requires APTF-1, a highly conserved transcription factor of the AP2 family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by prior research cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "bb41e8e9-1117-4fe9-865c-1a203bc3eba3",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C39",
+      "claim": "APTF-1 is a highly conserved transcription factor of the AP2 family.",
+      "claim_type": "EXPLICIT",
+      "source": "APTF-1, a highly conserved transcription factor of the AP2 family",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about APTF-1.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "5604b733-62b3-4c64-9c7d-a339cbc47a2a",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C40",
+      "claim": "Without APTF-1, RIS is still sleep-active but can no longer induce sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Without APTF-1, RIS is still sleep-active but can no longer induce sleep (Turek et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Turek et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "6b57bf97-3fa4-4324-bdc8-99090ecfdd97",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C41",
+      "claim": "Mutation in the AP2 homolog TFAP2beta causes Char syndrome in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, mutation in the AP2 homolog TFAP2beta causes Char syndrome, which is linked to insomnia or sleepwalking (Mani et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Mani et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "807ea8f2-0989-43d8-a7c7-e86f7808a0d9",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C42",
+      "claim": "Char syndrome is linked to insomnia or sleepwalking.",
+      "claim_type": "EXPLICIT",
+      "source": "Char syndrome, which is linked to insomnia or sleepwalking (Mani et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Mani et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "56c24e42-bc9c-43c4-aa1e-a6e2bd33d739",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C43",
+      "claim": "Sleep-neurons and AP2 transcription factors are conserved regulators of sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, this supports the view that sleep-neurons and AP2 transcription factors are conserved regulators of sleep.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data presented and cited research.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "4784c402-c052-4018-9487-4992bf082208",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C44",
+      "claim": "lim-6 mutants had strongly reduced or even complete absence of immobility during the non-pumping phase.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutants had strongly reduced or even complete absence of immobility during the non-pumping phase (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "746bde4e-a69d-4e23-b79b-6657baf544b8",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C45",
+      "claim": "RIS activity increased at sleep onset in wild-type animals.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that RIS activity increased at sleep onset in wild-type animals",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "484686bb-3c90-4461-b2ce-ea2a6728696a",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C46",
+      "claim": "RIS activity normally increased in lim-6 mutants during the time the animal should enter sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "also normally increased in lim-6 mutants during the time the animal should enter sleep (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "7f29a7f8-4a1d-49f7-9b35-ece4ae81aa57",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C47",
+      "claim": "aptf-1 expression was completely abolished in most individuals and strongly reduced in the remaining ones in all developmental stages in lim-6 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "aptf-1 expression was completely abolished in most individuals and strongly reduced in the remaining ones in all developmental stages (Figure 1C, Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence imaging data shown in Figure 1C and Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "80c3e8d8-88bf-4e22-b711-000b19c7fd63",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C48",
+      "claim": "aptf-1 did not control the expression of unc-25 or the vesicular GABA transporter gene unc-47.",
+      "claim_type": "EXPLICIT",
+      "source": "We also looked at GABAergic function in aptf-1 mutant worms and found that aptf-1 did not control the expression of unc-25 or the vesicular GABA transporter gene unc-47 (Figure 1D, Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reporter gene expression data shown in Figure 1D and Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "df8669cd-85d8-45e6-ba13-e95f7b5b6fe9",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C49",
+      "claim": "LIM-6 does not appear to affect sleep primarily through GABAergic function determination.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, LIM-6 does not appear to affect sleep primarily through GABAergic function determination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data showing that APTF-1 does not control GABAergic markers.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "40f4bf32-c968-4968-bb2e-ac2977e20840",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C50",
+      "claim": "LIM-6 controls sleep-promoting function primarily through a parallel pathway that depends on APTF-1.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, LIM-6 controls sleep-promoting function primarily through a parallel pathway that depends on APTF-1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data showing separate control of GABAergic and sleep-promoting functions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "e16f822f-6d31-47e3-9c8b-c60fac76648f",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C51",
+      "claim": "flp-11 was strongly downregulated in aptf-1 mutant worms in both embryos and larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "The microarray experiment revealed that flp-11, a neuropeptide gene, was strongly downregulated in aptf-1 mutant worms in both embryos and larvae (Figure 2A, Supplementary file 1, Table 1A and 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by transcriptional profiling data shown in Figure 2A and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "c4ef3aee-33d9-431c-98bd-ddb4cceb9edf",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C52",
+      "claim": "flp-11 was expressed strongly in RIS and faintly in a few additional neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "flp-11 was expressed strongly in RIS and faintly in a few additional neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by reporter gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "c3ae710d-c135-4cc0-84da-76a8c2cb332b",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C53",
+      "claim": "flp-11 expression was abolished or greatly reduced in RIS in aptf-1 mutant worms.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression was abolished or greatly reduced in RIS in aptf-1 mutant worms (Figure 2B, Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence imaging data shown in Figure 2B and Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "f9fe6544-0dc6-4e49-aed4-9c596870a97a",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C54",
+      "claim": "mKate2 was constantly expressed during larval development both during sleep and wake.",
+      "claim_type": "EXPLICIT",
+      "source": "We followed the expression of flp-11:mKate2 over the sleep-wake rhythm and found that mKate2 was constantly expressed during larval development both during sleep and wake (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence imaging data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "8cbe0a68-f814-40d3-8288-588c28498ebc",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C55",
+      "claim": "Expression of mouse tfap2beta partially restored immobility in aptf-1 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Nose speed measurements during sleep showed that tfap2beta expression partially restored immobility (Figure 2D,E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 2D and 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "acefcd66-db98-43c5-93a0-74301623ff1b",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C56",
+      "claim": "Expression of mouse tfap2beta partially restored the expression of flp-11 in aptf-1 mutant worms.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of mouse tfap2beta also partially restored the expression of flp-11 in aptf-1 mutant worms (Figure 2F, Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence imaging data shown in Figure 2F and Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "38f11805-7435-42fe-bf34-50ebe2371624",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C57",
+      "claim": "The binding site of AP2 is conserved over 600 million years of bilaterian evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, it has been shown that the binding site of AP2 is conserved over 600 million years of bilaterian evolution, and the different mammalian AP2 paralogs have nearly identical binding sites (Nitta et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Nitta et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "474f500f-a239-4c68-9c74-c9607c9ec550",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C58",
+      "claim": "A putative AP2-binding site was found in the flp-11 promoter region.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we searched for mammalian AP2 transcription factors binding sites in the promoter region of flp-11 (Eckert et al., 2005; Grant et al., 2011). Indeed, we found a putative AP2-binding site in the flp-11 promoter region, consistent with the regulation of flp-11 by aptf-1 (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by bioinformatics analysis shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "fbfaab6e-3d09-481f-bee8-5d3a1b428fea",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C59",
+      "claim": "aptf-1 is required for flp-11 expression in RIS.",
+      "claim_type": "EXPLICIT",
+      "source": "These results show that aptf-1 is required for flp-11 expression in RIS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "1ee7174e-eb47-432f-95be-a7e8681d5bc6",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C60",
+      "claim": "flp-11 mutant larvae showed a normal pre-molting cessation of pumping.",
+      "claim_type": "EXPLICIT",
+      "source": "flp-11 mutant larvae showed a normal pre-molting cessation of pumping.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "a4438a8e-52ba-4209-937b-a183884b52ce",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C61",
+      "claim": "Locomotion quiescence was strongly reduced in flp-11 mutant larvae.",
+      "claim_type": "EXPLICIT",
+      "source": "However, locomotion quiescence was strongly reduced in flp-11 mutant larvae.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "79195ac1-ad4e-4223-9953-6432a9579e82",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C62",
+      "claim": "Nose immobility was 48% in wild type and less than 14% in flp-11 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Although nose immobility was 48% in wild type, it was strongly reduced to less than 14% in flp-11 mutants (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "17580bc0-19df-457f-9fc8-7aed291b783a",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C63",
+      "claim": "A wild-type copy of flp-11 could rescue the flp-11 mutant phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the wild-type transgene could rescue the flp-11 mutant phenotype (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "2e98b62d-1716-4d9b-801e-c2a34cfb8e17",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C64",
+      "claim": "Expression of flp-11 in aptf-1 mutants partially restored immobility.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas aptf-1 mutants without the transgene did not show any detectable immobility, the flp-11 transgene partially restored immobility (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "44d56151-41e4-4608-87b1-8e62976ddf87",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C65",
+      "claim": "RIS strongly activated at the onset of the non-pumping period in flp-11 mutant worms.",
+      "claim_type": "EXPLICIT",
+      "source": "RIS strongly activated at the onset of the non-pumping period in flp-11 mutant worms (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calcium imaging data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "27f458d3-5933-4fd3-aaa3-ba1f761139bb",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C66",
+      "claim": "flp-11 is not required for activation of RIS at sleep onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, flp-11 is not required for activation of RIS at sleep onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the calcium imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "e9188a67-6ddb-43f6-bf17-a67343567a59",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C67",
+      "claim": "Wild-type animals showed a reduction in movement and became immobile after blue light illumination during optogenetic activation of RIS.",
+      "claim_type": "EXPLICIT",
+      "source": "Although wild-type animals showed a reduction in movement and became immobile after blue light illumination",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by optogenetic experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "fe82c7d7-7c31-4212-b188-c146f914dd0c",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C68",
+      "claim": "flp-11 mutant worms did not decrease their movement but rather increased it during optogenetic activation of RIS.",
+      "claim_type": "EXPLICIT",
+      "source": "flp-11 mutant worms did not decrease their movement but rather increased it (Figure 3C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by optogenetic experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "98dfa307-8000-43bd-91eb-2de23a6af7a9",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C69",
+      "claim": "Adult worms expressing FLP-11 driven by the heat shock promoter became immobile 1\u20132 hr after the heat shock.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult worms that were expressing FLP-11 driven by the heat shock promoter became immobile 1\u20132 hr after the heat shock.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data from heat shock experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "3d8c8eb0-1314-4c8b-a161-911a705e9572",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C70",
+      "claim": "Control worms that were heat shocked but did not express the transgene or expressed other flp genes did not show any immobilization.",
+      "claim_type": "EXPLICIT",
+      "source": "Control worms that were heat shocked but did not express the transgene or expressed other flp genes did not show any immobilization (Figure 4A, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 4A and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "c2063207-710d-42bd-8624-5035838a3404",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C71",
+      "claim": "RIS induces sleep through FLP-11.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together these data imply that RIS induces sleep through FLP-11.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on multiple lines of experimental evidence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "ca78d141-4407-4a7c-bbb4-d029d9ef97f7",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C72",
+      "claim": "FLP-11 peptides are expressed in RIS during both sleep and wake.",
+      "claim_type": "EXPLICIT",
+      "source": "These peptides are expressed in RIS during both sleep and wake",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by fluorescence imaging data showing constant expression.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "083d3972-cc50-4280-b03a-d6301cd8c001",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C73",
+      "claim": "Optogenetic activation of RIS can induce quiescence during wake.",
+      "claim_type": "EXPLICIT",
+      "source": "optogenetic activation of RIS can induce quiescence during wake",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by optogenetic experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "b73c49bf-f038-4055-804e-eb79af67f790",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C74",
+      "claim": "RIS can induce sleep at any time.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests a model in which RIS can induce sleep at any time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the constant expression of FLP-11 and optogenetic data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "4203e92f-b3cc-491a-9fe9-cc9330bc0ad3",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C75",
+      "claim": "RIS depolarizes at sleep onset.",
+      "claim_type": "EXPLICIT",
+      "source": "According to this model, RIS depolarizes at sleep onset",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by calcium imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "21dc8b20-1d28-4c4c-bd7a-3d1e776fd7c7",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C76",
+      "claim": "RIS releases FLP-11 at sleep onset, which then induces sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "This triggers FLP-11 release, which in turn systemically induces sleep behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data and the proposed model.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "bb57813f-51c0-4c7b-aac2-2a7b3bab63ba",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C77",
+      "claim": "The maximum quiescence induced by FLP-11 overexpression was reduced in each of the receptor mutants (FRPR-3, NPR-4, and NPR-22).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the maximum quiescence was reduced in each of these mutants, albeit only slightly (Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "6efe1706-f050-44da-94a7-5867a1aab90a",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C78",
+      "claim": "The triple mutant containing all three receptor deletions had the strongest reduction in quiescence.",
+      "claim_type": "EXPLICIT",
+      "source": "the triple mutant had the strongest reduction in quiescence (Figure 4A, Figure 4\u2014figure supplement 2A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 4A and Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "3325320f-b559-4f5b-9205-5de657883888",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C79",
+      "claim": "The quiescence induced by FLP-11 overexpression partly depends on multiple effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the quiescence induced by FLP-11 overexpression partly depends on multiple effectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the receptor mutant data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "3ef8a1ba-495e-46aa-b5f8-08552a729988",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C80",
+      "claim": "The single receptor mutants did not show a significant reduction in immobility.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the single receptor mutants did not show a significant reduction in immobility",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by behavioral data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "5f8bda10-b4b0-482f-a33f-a6557320c518",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C81",
+      "claim": "The receptor triple mutant showed a small increase in nose speed during sleep and a small reduction of immobility.",
+      "claim_type": "EXPLICIT",
+      "source": "the receptor triple mutant showed a small increase in nose speed during sleep and a small reduction of immobility (Figure 4B, Figure 4\u2014figure supplement 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by behavioral data shown in Figure 4B and Figure 4\u2014figure supplement 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "d04e7811-8344-4f21-8dc6-bee34b9a17d5",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C82",
+      "claim": "FRPR-3 expressed in approximately 30 neurons, mostly in the head.",
+      "claim_type": "EXPLICIT",
+      "source": "The promoter fusions showed that FRPR-3 expressed in approximately 30 neurons, mostly in the head.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by reporter gene expression data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "70072e4f-528a-481b-8be7-a1b3b8c40f3a",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C83",
+      "claim": "NPR-4 expressed in five neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "NPR-4 expressed in five neurons (Cohen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by reporter gene expression data and a citation to Cohen et al., 2009.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "45446a9e-7224-44d9-bdd0-2ad1118cc787",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C84",
+      "claim": "NPR-22 expressed in several neurons, muscle tissue in the pharynx and in the head.",
+      "claim_type": "EXPLICIT",
+      "source": "NPR-22 expressed in several neurons, muscle tissue in the pharynx and in the head (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reporter gene expression data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "532c28fd-2a95-45d4-820a-9be420248d51",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C85",
+      "claim": "The receptors were expressed in neurons that are not postsynaptic to RIS, with the exception of the AVK neuron.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the receptors were expressed in neurons that are not postsynaptic to RIS (White et al., 1986). The only exception that we found was the AVK neuron, which is postsynaptic to RIS and expressed FRPR-3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by reporter gene expression data and anatomical knowledge from White et al., 1986.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "20c4ec94-00a6-4ab0-8c15-4e67cb211328",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C86",
+      "claim": "FRPR-3 and NPR-4 were weakly expressed and localized mostly to the nerve ring.",
+      "claim_type": "EXPLICIT",
+      "source": "Translational fusions showed that FRPR-3 and NPR-4 were weakly expressed and localized mostly to the nerve ring",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by fluorescence imaging of translational fusions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "9fdc7f90-c3d8-41dd-9a90-82897ec93d8d",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C87",
+      "claim": "NPR-22 was localized broadly to the plasma membrane of neurons, and muscles of the pharynx, head, and muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas NPR-22 was localized broadly to the plasma membrane of neurons, and muscles of the pharynx, head, and muscle (Figure 4D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence imaging data shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "d29e1e98-cd5e-42c9-a0bc-1b2ab9ce1259",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C88",
+      "claim": "The phenotypes for the GPCRs observed were small and the binding affinities of FLP-11 peptides to these GPCRs in vitro were low.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenotypes for the GPCRs that we observed were small and the binding affinities of FLP-11 peptides to these GPCRs in vitro were low which makes it premature to conclude that these receptors act by binding of FLP-11 (Frooninckx et al., 2012; Mertens et al., 2004; 2006; Cohen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experimental data and citations to in vitro binding studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "056d03af-6c71-4a3c-952a-2f3a3c3a7291",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C89",
+      "claim": "FLP-11 could act through one main receptor, which remains unidentified.",
+      "claim_type": "EXPLICIT",
+      "source": "It could be that FLP-11 acts through one main receptor, which remains unidentified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the experimental results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "c285fa2c-cb9f-4e5e-a615-95d62adf2541",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C90",
+      "claim": "FLP-11 could act through several redundant receptors, which may include FRPR-3, NPR-4, and NPR-22.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, FLP-11 could act through several redundant receptors, which may include FRPR-3, NPR-4, and NPR-22.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the experimental results.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "994a810b-7d3e-4df3-b628-35da238048c8",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C91",
+      "claim": "GABA has been proposed to play a major role in sleep function.",
+      "claim_type": "EXPLICIT",
+      "source": "GABA has been proposed to play a major role in sleep function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "5d51102d-2114-4189-a32d-a88633b9b328",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C92",
+      "claim": "Enhancers of GABAergic neurotransmission have been used to treat sleeping problems.",
+      "claim_type": "EXPLICIT",
+      "source": "Enhancers of GABAergic neurotransmission have been used to treat sleeping problems",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "5a50d226-d7a5-4009-af23-4cc693aab4fb",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C93",
+      "claim": "GABA has been suggested to play a role in sleep induction in several systems including C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "GABA has been suggested to play a role in sleep induction in several systems including C. elegans (Singh et al., 2014; Dabbish and Raizen, 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Singh et al., 2014 and Dabbish and Raizen, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "d4ea5cea-229b-4151-a1f1-6375de9dd0c7",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C94",
+      "claim": "The authors did not find evidence that GABA is the major sleep-inducing transmitter in RIS.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the common view that GABA is the major sleep inducer in sleep-active neurons, we did not find evidence that GABA is the major sleep-inducing transmitter in RIS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "f9a7d0d3-6973-413b-b343-b9b10449a4fe",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C95",
+      "claim": "Optogenetic activation of RIS still causes quiescence in unc-25 mutant worms.",
+      "claim_type": "EXPLICIT",
+      "source": "This is consistent with our previous observation that optogenetic activation of RIS still causes quiescence in unc-25 mutant worms",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a reference to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "9a9156c0-a0f9-4c24-81a9-3799cdd4dbe3",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C96",
+      "claim": "unc-25 mutant worms still show sleeping behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "unc-25 mutant worms still show sleeping behavior (Turek et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Turek et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "ced91581-ce87-45c4-820b-1a9671d0ee00",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C97",
+      "claim": "GABAergic function induction can be separated from sleep neuron function downstream of lim-6.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, here we show that GABAergic function induction can be separated from sleep neuron function downstream of lim-6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "a102d4bd-0bca-4d8b-9e45-ce38076f2150",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C98",
+      "claim": "GABA plays a rather minor role in sleep-induction in RIS.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that GABA plays a rather minor role in sleep-induction in RIS and that we did not detect it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "6d5ee359-9ac8-453e-81b0-242b4980f5de",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C99",
+      "claim": "FLP-11 is a crucial sleep-inducing component in RIS.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results show that FLP-11 is a crucial sleep-inducing component in RIS",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "953c0e00-b0c4-41e7-bdcf-557e48fcc1fc",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C100",
+      "claim": "FLP-11 is an important target of aptf-1.",
+      "claim_type": "EXPLICIT",
+      "source": "FLP-11 is a crucial sleep-inducing component in RIS and an important target of aptf-1",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "aef6ebbb-9dee-45ef-88ce-6f5b942c963f",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C101",
+      "claim": "Sleep neurons of the VLPO express the inhibitory neuropeptide Galanin.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, sleep neurons of the VLPO express the inhibitory neuropeptide Galanin, and projections extend to the tuberomammillary nucleus, which expresses Galanin receptors (Sherin et al., 1998; Gaus et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sherin et al., 1998 and Gaus et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "6fa9a900-ddef-4f3f-9646-e334595bf761",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C102",
+      "claim": "VLPO projections extend to the tuberomammillary nucleus, which expresses Galanin receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "projections extend to the tuberomammillary nucleus, which expresses Galanin receptors (Sherin et al., 1998; Gaus et al., 2002)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sherin et al., 1998 and Gaus et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "e09ce49f-dd98-457e-95c1-b5b8b775b18e",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C103",
+      "claim": "The locus coeruleus is innervated by VLPO projections and can be inhibited by Galanin administration.",
+      "claim_type": "EXPLICIT",
+      "source": "The locus coeruleus, a wake-promoting brain region, is also innervated by VLPO projections and can be inhibited by Galanin administration (Seutin et al., 1989; Pieribone et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Seutin et al., 1989 and Pieribone et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "d5176243-51e8-44fa-a383-e5284a35519c",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C104",
+      "claim": "Galanin has been shown to have sedating effects on both zebrafish and human subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, Galanin has been shown to have sedating effects on both zebrafish and human subjects (Woods et al., 2014; Murck et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Woods et al., 2014 and Murck et al., 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "9677cb83-e5a5-4d75-a1b8-b65cf01cb500",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C105",
+      "claim": "Sleep phenotypes for Galanin knockouts have not been reported, despite being available for several years.",
+      "claim_type": "EXPLICIT",
+      "source": "However, sleep phenotypes for Galanin knockouts have not been reported, despite being available for several years (Wynick et al., 1998; Kerr et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wynick et al., 1998 and Kerr et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "96b74bcf-710d-4fd8-8f99-674b4e6545fe",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C106",
+      "claim": "Galanin has a modulatory role on sleep, but may not be central to sleep induction.",
+      "claim_type": "EXPLICIT",
+      "source": "These experiments suggest that Galanin has a modulatory role on sleep, but may not be central to sleep induction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "9be644f3-9a49-4371-b95b-805a53c44385",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C107",
+      "claim": "Galanin does not appear to be homologous to FLP-11.",
+      "claim_type": "EXPLICIT",
+      "source": "Galanin does not appear to be homologous to FLP-11, as it belongs to the family of Galanin peptides (Lang et al., 2007), whereas flp-11 encodes peptides of the RFamide family (Li et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on citations to Lang et al., 2007 and Li et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "404f290d-15c4-4044-9c51-0367406833d5",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C108",
+      "claim": "Galanin is expressed widely in the brain and has diverse functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, unlike FLP-11, Galanin is expressed widely in the brain and has diverse functions (Maria Vrontakis, 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Maria Vrontakis, 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "5eb4a292-1644-4876-8277-9870cf8fbe56",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C109",
+      "claim": "In Drosophila, sleep requires a neuropeptide called sNPF.",
+      "claim_type": "EXPLICIT",
+      "source": "In Drosophila, sleep requires a neuropeptide called sNPF, which may be functionally similar to FLP-11 as both are inhibitory and are released from sleep-promoting neurons (Shang et al., 2013; Vecsey et al., 2014; Chen et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Shang et al., 2013; Vecsey et al., 2014; Chen et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "4e5c7041-dcf3-4576-8ecb-dae3ad98bf42",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C110",
+      "claim": "sNPF may be functionally similar to FLP-11 as both are inhibitory and are released from sleep-promoting neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "which may be functionally similar to FLP-11 as both are inhibitory and are released from sleep-promoting neurons (Shang et al., 2013; Vecsey et al., 2014; Chen et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on citations to Shang et al., 2013; Vecsey et al., 2014; Chen et al., 2013.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "b931e5af-de9f-48a7-8e71-d5a494914cdc",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C111",
+      "claim": "Inhibitory neuropeptides appear to play important roles in sleep-promoting neurons across species.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, inhibitory neuropeptides appear to play important roles in sleep-promoting neurons across species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data and cited literature.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "e0fafe75-045b-4971-ab4a-2a36885df455",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C112",
+      "claim": "The transcription factor LIM-6 separately controls GABAergic and sleep-promoting functions.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, the transcription factor LIM-6 separately controls GABAergic and sleep-promoting functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "37578607-055b-4b1f-8328-0ae3901619bd",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C113",
+      "claim": "Sleep-promoting function is mediated by the expression of the APTF-1 transcription factor.",
+      "claim_type": "EXPLICIT",
+      "source": "Sleep-promoting function is mediated by the expression of the APTF-1 transcription factor",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "8c397074-4a06-4688-9e75-792aba24c623",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C114",
+      "claim": "APTF-1 is crucially required for sleep induction by RIS.",
+      "claim_type": "EXPLICIT",
+      "source": "which is crucially required for sleep induction by RIS",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "f3dc0da0-3bdc-4c6d-9d64-6ece7f7799df",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C115",
+      "claim": "APTF-1 is required for the expression of sleep-inducing FLP-11 peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "APTF-1, in turn, is required for the expression of sleep-inducing FLP-11 peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "580fb9b6-b5d8-4636-8c06-f4fd5493087e",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C116",
+      "claim": "FLP-11 is always present in RIS allowing the induction of sleep at any time the neuron activates.",
+      "claim_type": "EXPLICIT",
+      "source": "FLP-11 is always present in RIS allowing the induction of sleep at any time the neuron activates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the experimental data showing constant expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "4bb484fb-4ded-4a04-9c81-595691d82f16",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C117",
+      "claim": "An unknown signal triggers depolarization and calcium influx in RIS at sleep onset.",
+      "claim_type": "EXPLICIT",
+      "source": "At sleep onset, an unknown signal triggers depolarization and calcium influx in RIS",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the calcium imaging data; the signal itself is unknown.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "453bc93c-f43c-444c-9a7c-62f491781d06",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "claim_id": "C118",
+      "claim": "Depolarization and calcium influx in RIS triggers release of FLP-11 peptides to systemically induce sleep behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "which then triggers release of FLP-11 peptides to systemically induce sleep behavior",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental data and the proposed model.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "03d19ca2-8c3a-4f3c-8dd1-34b4709890fb",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "LIM-6 controls APTF-1 expression in RIS and determines sleep neuron function through a pathway parallel to GABAergic specification. lim-6 mutants show severely reduced sleep behavior but normal RIS activation at sleep onset, and aptf-1 expression is abolished in lim-6 mutants. APTF-1 does not control GABAergic markers (unc-25, unc-47), indicating LIM-6 controls sleep-promoting function primarily through APTF-1 rather than through GABAergic function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C44-C50 collectively demonstrate that LIM-6 controls APTF-1 expression and sleep function through a parallel pathway to GABAergic specification. The behavioral data (C44), calcium imaging (C45-C46), reporter expression (C47), and GABAergic marker analysis (C48) provide converging evidence. The separation of GABAergic and sleep-promoting functions is well-supported by the data showing APTF-1 does not control GABA markers.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "e436d2d3-a6e0-42ed-9a83-67811aaba385",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "APTF-1 directly regulates FLP-11 expression in RIS. Transcriptional profiling revealed flp-11 is strongly downregulated in aptf-1 mutants in both embryos and larvae. Reporter gene analysis confirmed flp-11 expression is abolished in RIS in aptf-1 mutants, and FLP-11 is constantly expressed during sleep-wake cycles. Mouse TFAP2\u03b2 partially rescues both sleep behavior and flp-11 expression in aptf-1 mutants, and a putative AP2-binding site was identified in the flp-11 promoter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C51-C59 provide strong evidence that APTF-1 regulates FLP-11 expression. The microarray data (C51), reporter gene analysis (C52-C54), cross-species rescue (C55-C56), and bioinformatics identification of an AP2-binding site (C58) provide multiple independent lines of evidence. The constant expression pattern (C54) is important for the mechanistic model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "229425bc-49fe-415b-9600-4fd11196656e",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "FLP-11, rather than GABA, is the major sleep-promoting transmitter in RIS. flp-11 mutants show severely reduced locomotion quiescence during sleep (48% to <14% immobility) while maintaining normal cessation of pumping. RIS activation at sleep onset is normal in flp-11 mutants, but optogenetic activation of RIS fails to induce immobility in these mutants. Wild-type flp-11 rescues the mutant phenotype, and flp-11 expression partially rescues aptf-1 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C60-C68, C71, C99-C100 provide strong converging evidence that FLP-11 is the major sleep-inducing component. The behavioral analysis (C60-C62), genetic rescue (C63-C64), calcium imaging (C65-C66), and optogenetic experiments (C67-C68) all support this conclusion. The dissociation between RIS activation and sleep induction in flp-11 mutants is particularly compelling.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "431a7ac2-6cff-4421-90a3-f894745080ce",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "FLP-11 overexpression induces anachronistic quiescence, and the model proposes that RIS releases FLP-11 upon depolarization to systemically induce sleep. Heat-shock-driven FLP-11 expression causes immobility 1-2 hours after induction, while control worms or those expressing other flp genes show no immobilization. FLP-11 is constantly expressed in RIS during both sleep and wake, and optogenetic RIS activation can induce quiescence during wake.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C70, C72-C74, C76 support the sufficiency of FLP-11 for sleep induction and the proposed mechanism. The heat-shock overexpression experiments (C69-C70) demonstrate FLP-11 is sufficient to induce quiescence. The constant expression (C72) combined with optogenetic data (C73) supports the model that RIS can induce sleep at any time upon activation (C74). The inference about FLP-11 release (C76) is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "f2849153-7302-4ba3-b7d8-e77cc8151eca",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "FLP-11 acts through multiple G-protein-coupled receptors (FRPR-3, NPR-4, NPR-22) with partial redundancy. Single receptor mutants show slight reductions in FLP-11-induced quiescence, while the triple mutant shows the strongest reduction. The triple mutant also shows a small reduction in natural sleep immobility. These receptors are expressed in neurons and muscles, mostly not postsynaptic to RIS, with weak in vitro binding affinities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C77-C90 provide evidence for receptor involvement but with significant caveats. The phenotypes are small (C77, C81, C88), binding affinities are low (C88), and the authors acknowledge it is premature to conclude these receptors act by binding FLP-11 (C88). The expression patterns (C82-C87) and genetic data (C77-C81) suggest involvement, but the main receptor(s) may remain unidentified (C89-C90). Additional biochemical and genetic evidence would strengthen this result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "7991c9cf-4cdb-484c-9c00-dc446558d54f",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The proposed model for sleep induction: FLP-11 is constantly present in RIS, and at sleep onset, an unknown signal triggers RIS depolarization and calcium influx, leading to FLP-11 release that systemically induces sleep. RIS activity increases at sleep onset in wild-type animals, as shown by calcium imaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C45, C75, C116-C118 describe the mechanistic model supported by the data. The constant expression of FLP-11 (C7) and RIS activation at sleep onset (C45, C75) are directly demonstrated. The inference that depolarization triggers FLP-11 release (C118) is reasonable given the data, though direct measurement of release is not shown. The unknown upstream signal (C117) is appropriately acknowledged as speculation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "08a72c8a-36d2-4393-90f2-eed327b2c0db",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "GABA plays a minor role in sleep induction by RIS. APTF-1 does not control expression of GABAergic markers (unc-25, unc-47), optogenetic RIS activation causes quiescence in unc-25 mutants, and unc-25 mutants still show sleeping behavior. GABAergic function can be separated from sleep neuron function downstream of lim-6.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48, C94-C98 provide evidence that GABA is not the major sleep-inducing transmitter in RIS. The separation of GABAergic markers from APTF-1 control (C48), previous optogenetic data in unc-25 mutants (C95), and the genetic separation downstream of lim-6 (C97) support this conclusion. However, the authors appropriately note they may not have detected a minor role (C98).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "9ff60952-1253-4920-8dfc-b82436af4d48",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Comparison with mammalian and Drosophila sleep systems suggests inhibitory neuropeptides play important roles in sleep-promoting neurons across species. In mammals, VLPO neurons express Galanin, which has sedating effects but may have a modulatory rather than central role (no sleep phenotype in knockouts). In Drosophila, sNPF is required for sleep and may be functionally similar to FLP-11. Galanin is not homologous to FLP-11.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C101-C111 provide a comparative analysis based on cited literature. The statements about mammalian Galanin (C101-C106, C108) and Drosophila sNPF (C109-C110) are supported by appropriate citations. The inference about cross-species conservation of inhibitory neuropeptides (C111) is reasonable given the data presented and cited. The lack of homology between Galanin and FLP-11 (C107) is appropriately noted.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "b17620e4-fe2e-4105-bc61-e953a6b76aba",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Summary model: LIM-6 separately controls GABAergic and sleep-promoting functions, with sleep-promoting function mediated by APTF-1 expression, which is crucially required for sleep induction by RIS and controls expression of sleep-inducing FLP-11 peptides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C112-C115 summarize the main findings of the paper. These conclusions are well-supported by the experimental data presented in the manuscript, including genetic, behavioral, imaging, and molecular evidence. This represents the core mechanistic model of the paper.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "2785d7f6-7be1-4c44-ac58-87fb80a8b8af",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background on sleep biology: Sleep is an essential, conserved behavioral state defined by increased arousal threshold, reversibility, and homeostatic regulation. In mammals, wake and sleep are controlled by antagonistic ascending (wake-promoting) and descending (sleep-promoting) systems that mutually inhibit each other. Sleep-active neurons express GABA and neuropeptides like Galanin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C23 provide established background knowledge supported by appropriate citations. These claims set the context for the study and are not novel findings of this manuscript. They are well-established facts in the sleep field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    },
+    {
+      "id": "1ebcf255-c0e7-4300-8177-eea4e3ebc735",
+      "content_id": "3c7353e6-cc97-4c96-908d-284ce14b944f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background on C. elegans sleep: C. elegans has 302 neurons and is transparent, making it amenable to sleep studies. Developmentally controlled sleep in C. elegans fulfills sleep criteria and is controlled by homologous genes to other organisms. The RIS interneuron is sleep-active, induces sleep, expresses GABA, and requires APTF-1 for sleep-inducing function. AP2 transcription factors are conserved regulators of sleep.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C43 provide background on C. elegans as a model system and prior work on RIS and APTF-1. These are supported by appropriate citations and established knowledge. Claims C38-C40 about APTF-1 requirement are from prior work (Turek et al., 2013). The connection to human Char syndrome (C41-C42) is appropriately cited.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:58:10.036890Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9e6dedaf-9bef-44ec-8d47-cbaf266b5647",
+      "result_id": "03d19ca2-8c3a-4f3c-8dd1-34b4709890fb"
+    },
+    {
+      "claim_id": "003c40bd-ba29-49a9-8877-0d34fe29aace",
+      "result_id": "03d19ca2-8c3a-4f3c-8dd1-34b4709890fb"
+    },
+    {
+      "claim_id": "4784c402-c052-4018-9487-4992bf082208",
+      "result_id": "03d19ca2-8c3a-4f3c-8dd1-34b4709890fb"
+    },
+    {
+      "claim_id": "746bde4e-a69d-4e23-b79b-6657baf544b8",
+      "result_id": "03d19ca2-8c3a-4f3c-8dd1-34b4709890fb"
+    },
+    {
+      "claim_id": "484686bb-3c90-4461-b2ce-ea2a6728696a",
+      "result_id": "03d19ca2-8c3a-4f3c-8dd1-34b4709890fb"
+    },
+    {
+      "claim_id": "7f29a7f8-4a1d-49f7-9b35-ece4ae81aa57",
+      "result_id": "03d19ca2-8c3a-4f3c-8dd1-34b4709890fb"
+    },
+    {
+      "claim_id": "df8669cd-85d8-45e6-ba13-e95f7b5b6fe9",
+      "result_id": "03d19ca2-8c3a-4f3c-8dd1-34b4709890fb"
+    },
+    {
+      "claim_id": "40f4bf32-c968-4968-bb2e-ac2977e20840",
+      "result_id": "03d19ca2-8c3a-4f3c-8dd1-34b4709890fb"
+    },
+    {
+      "claim_id": "1718345b-8f31-4f1f-bfd4-568674901e95",
+      "result_id": "e436d2d3-a6e0-42ed-9a83-67811aaba385"
+    },
+    {
+      "claim_id": "e16f822f-6d31-47e3-9c8b-c60fac76648f",
+      "result_id": "e436d2d3-a6e0-42ed-9a83-67811aaba385"
+    },
+    {
+      "claim_id": "c4ef3aee-33d9-431c-98bd-ddb4cceb9edf",
+      "result_id": "e436d2d3-a6e0-42ed-9a83-67811aaba385"
+    },
+    {
+      "claim_id": "c3ae710d-c135-4cc0-84da-76a8c2cb332b",
+      "result_id": "e436d2d3-a6e0-42ed-9a83-67811aaba385"
+    },
+    {
+      "claim_id": "f9fe6544-0dc6-4e49-aed4-9c596870a97a",
+      "result_id": "e436d2d3-a6e0-42ed-9a83-67811aaba385"
+    },
+    {
+      "claim_id": "8cbe0a68-f814-40d3-8288-588c28498ebc",
+      "result_id": "e436d2d3-a6e0-42ed-9a83-67811aaba385"
+    },
+    {
+      "claim_id": "acefcd66-db98-43c5-93a0-74301623ff1b",
+      "result_id": "e436d2d3-a6e0-42ed-9a83-67811aaba385"
+    },
+    {
+      "claim_id": "38f11805-7435-42fe-bf34-50ebe2371624",
+      "result_id": "e436d2d3-a6e0-42ed-9a83-67811aaba385"
+    },
+    {
+      "claim_id": "474f500f-a239-4c68-9c74-c9607c9ec550",
+      "result_id": "e436d2d3-a6e0-42ed-9a83-67811aaba385"
+    },
+    {
+      "claim_id": "fbfaab6e-3d09-481f-bee8-5d3a1b428fea",
+      "result_id": "e436d2d3-a6e0-42ed-9a83-67811aaba385"
+    },
+    {
+      "claim_id": "85b95588-4229-48de-8bf3-50e012100985",
+      "result_id": "229425bc-49fe-415b-9600-4fd11196656e"
+    },
+    {
+      "claim_id": "1ee7174e-eb47-432f-95be-a7e8681d5bc6",
+      "result_id": "229425bc-49fe-415b-9600-4fd11196656e"
+    },
+    {
+      "claim_id": "a4438a8e-52ba-4209-937b-a183884b52ce",
+      "result_id": "229425bc-49fe-415b-9600-4fd11196656e"
+    },
+    {
+      "claim_id": "79195ac1-ad4e-4223-9953-6432a9579e82",
+      "result_id": "229425bc-49fe-415b-9600-4fd11196656e"
+    },
+    {
+      "claim_id": "17580bc0-19df-457f-9fc8-7aed291b783a",
+      "result_id": "229425bc-49fe-415b-9600-4fd11196656e"
+    },
+    {
+      "claim_id": "2e98b62d-1716-4d9b-801e-c2a34cfb8e17",
+      "result_id": "229425bc-49fe-415b-9600-4fd11196656e"
+    },
+    {
+      "claim_id": "44d56151-41e4-4608-87b1-8e62976ddf87",
+      "result_id": "229425bc-49fe-415b-9600-4fd11196656e"
+    },
+    {
+      "claim_id": "27f458d3-5933-4fd3-aaa3-ba1f761139bb",
+      "result_id": "229425bc-49fe-415b-9600-4fd11196656e"
+    },
+    {
+      "claim_id": "e9188a67-6ddb-43f6-bf17-a67343567a59",
+      "result_id": "229425bc-49fe-415b-9600-4fd11196656e"
+    },
+    {
+      "claim_id": "fe82c7d7-7c31-4212-b188-c146f914dd0c",
+      "result_id": "229425bc-49fe-415b-9600-4fd11196656e"
+    },
+    {
+      "claim_id": "c2063207-710d-42bd-8624-5035838a3404",
+      "result_id": "229425bc-49fe-415b-9600-4fd11196656e"
+    },
+    {
+      "claim_id": "6d5ee359-9ac8-453e-81b0-242b4980f5de",
+      "result_id": "229425bc-49fe-415b-9600-4fd11196656e"
+    },
+    {
+      "claim_id": "953c0e00-b0c4-41e7-bdcf-557e48fcc1fc",
+      "result_id": "229425bc-49fe-415b-9600-4fd11196656e"
+    },
+    {
+      "claim_id": "98dfa307-8000-43bd-91eb-2de23a6af7a9",
+      "result_id": "431a7ac2-6cff-4421-90a3-f894745080ce"
+    },
+    {
+      "claim_id": "3d8c8eb0-1314-4c8b-a161-911a705e9572",
+      "result_id": "431a7ac2-6cff-4421-90a3-f894745080ce"
+    },
+    {
+      "claim_id": "ca78d141-4407-4a7c-bbb4-d029d9ef97f7",
+      "result_id": "431a7ac2-6cff-4421-90a3-f894745080ce"
+    },
+    {
+      "claim_id": "083d3972-cc50-4280-b03a-d6301cd8c001",
+      "result_id": "431a7ac2-6cff-4421-90a3-f894745080ce"
+    },
+    {
+      "claim_id": "b73c49bf-f038-4055-804e-eb79af67f790",
+      "result_id": "431a7ac2-6cff-4421-90a3-f894745080ce"
+    },
+    {
+      "claim_id": "21dc8b20-1d28-4c4c-bd7a-3d1e776fd7c7",
+      "result_id": "431a7ac2-6cff-4421-90a3-f894745080ce"
+    },
+    {
+      "claim_id": "bb57813f-51c0-4c7b-aac2-2a7b3bab63ba",
+      "result_id": "f2849153-7302-4ba3-b7d8-e77cc8151eca"
+    },
+    {
+      "claim_id": "6efe1706-f050-44da-94a7-5867a1aab90a",
+      "result_id": "f2849153-7302-4ba3-b7d8-e77cc8151eca"
+    },
+    {
+      "claim_id": "3325320f-b559-4f5b-9205-5de657883888",
+      "result_id": "f2849153-7302-4ba3-b7d8-e77cc8151eca"
+    },
+    {
+      "claim_id": "3ef8a1ba-495e-46aa-b5f8-08552a729988",
+      "result_id": "f2849153-7302-4ba3-b7d8-e77cc8151eca"
+    },
+    {
+      "claim_id": "5f8bda10-b4b0-482f-a33f-a6557320c518",
+      "result_id": "f2849153-7302-4ba3-b7d8-e77cc8151eca"
+    },
+    {
+      "claim_id": "d04e7811-8344-4f21-8dc6-bee34b9a17d5",
+      "result_id": "f2849153-7302-4ba3-b7d8-e77cc8151eca"
+    },
+    {
+      "claim_id": "70072e4f-528a-481b-8be7-a1b3b8c40f3a",
+      "result_id": "f2849153-7302-4ba3-b7d8-e77cc8151eca"
+    },
+    {
+      "claim_id": "45446a9e-7224-44d9-bdd0-2ad1118cc787",
+      "result_id": "f2849153-7302-4ba3-b7d8-e77cc8151eca"
+    },
+    {
+      "claim_id": "532c28fd-2a95-45d4-820a-9be420248d51",
+      "result_id": "f2849153-7302-4ba3-b7d8-e77cc8151eca"
+    },
+    {
+      "claim_id": "20c4ec94-00a6-4ab0-8c15-4e67cb211328",
+      "result_id": "f2849153-7302-4ba3-b7d8-e77cc8151eca"
+    },
+    {
+      "claim_id": "9fdc7f90-c3d8-41dd-9a90-82897ec93d8d",
+      "result_id": "f2849153-7302-4ba3-b7d8-e77cc8151eca"
+    },
+    {
+      "claim_id": "d29e1e98-cd5e-42c9-a0bc-1b2ab9ce1259",
+      "result_id": "f2849153-7302-4ba3-b7d8-e77cc8151eca"
+    },
+    {
+      "claim_id": "056d03af-6c71-4a3c-952a-2f3a3c3a7291",
+      "result_id": "f2849153-7302-4ba3-b7d8-e77cc8151eca"
+    },
+    {
+      "claim_id": "c285fa2c-cb9f-4e5e-a615-95d62adf2541",
+      "result_id": "f2849153-7302-4ba3-b7d8-e77cc8151eca"
+    },
+    {
+      "claim_id": "24d5c3e8-f4e0-4ae4-b067-c3e774a1579b",
+      "result_id": "7991c9cf-4cdb-484c-9c00-dc446558d54f"
+    },
+    {
+      "claim_id": "b6b6cc47-68f1-4f67-8e54-9f38213479e3",
+      "result_id": "7991c9cf-4cdb-484c-9c00-dc446558d54f"
+    },
+    {
+      "claim_id": "746bde4e-a69d-4e23-b79b-6657baf544b8",
+      "result_id": "7991c9cf-4cdb-484c-9c00-dc446558d54f"
+    },
+    {
+      "claim_id": "4203e92f-b3cc-491a-9fe9-cc9330bc0ad3",
+      "result_id": "7991c9cf-4cdb-484c-9c00-dc446558d54f"
+    },
+    {
+      "claim_id": "580fb9b6-b5d8-4636-8c06-f4fd5493087e",
+      "result_id": "7991c9cf-4cdb-484c-9c00-dc446558d54f"
+    },
+    {
+      "claim_id": "4bb484fb-4ded-4a04-9c81-595691d82f16",
+      "result_id": "7991c9cf-4cdb-484c-9c00-dc446558d54f"
+    },
+    {
+      "claim_id": "453bc93c-f43c-444c-9a7c-62f491781d06",
+      "result_id": "7991c9cf-4cdb-484c-9c00-dc446558d54f"
+    },
+    {
+      "claim_id": "80c3e8d8-88bf-4e22-b711-000b19c7fd63",
+      "result_id": "08a72c8a-36d2-4393-90f2-eed327b2c0db"
+    },
+    {
+      "claim_id": "d4ea5cea-229b-4151-a1f1-6375de9dd0c7",
+      "result_id": "08a72c8a-36d2-4393-90f2-eed327b2c0db"
+    },
+    {
+      "claim_id": "f9a7d0d3-6973-413b-b343-b9b10449a4fe",
+      "result_id": "08a72c8a-36d2-4393-90f2-eed327b2c0db"
+    },
+    {
+      "claim_id": "9a9156c0-a0f9-4c24-81a9-3799cdd4dbe3",
+      "result_id": "08a72c8a-36d2-4393-90f2-eed327b2c0db"
+    },
+    {
+      "claim_id": "ced91581-ce87-45c4-820b-1a9671d0ee00",
+      "result_id": "08a72c8a-36d2-4393-90f2-eed327b2c0db"
+    },
+    {
+      "claim_id": "a102d4bd-0bca-4d8b-9e45-ce38076f2150",
+      "result_id": "08a72c8a-36d2-4393-90f2-eed327b2c0db"
+    },
+    {
+      "claim_id": "aef6ebbb-9dee-45ef-88ce-6f5b942c963f",
+      "result_id": "9ff60952-1253-4920-8dfc-b82436af4d48"
+    },
+    {
+      "claim_id": "6fa9a900-ddef-4f3f-9646-e334595bf761",
+      "result_id": "9ff60952-1253-4920-8dfc-b82436af4d48"
+    },
+    {
+      "claim_id": "e09ce49f-dd98-457e-95c1-b5b8b775b18e",
+      "result_id": "9ff60952-1253-4920-8dfc-b82436af4d48"
+    },
+    {
+      "claim_id": "d5176243-51e8-44fa-a383-e5284a35519c",
+      "result_id": "9ff60952-1253-4920-8dfc-b82436af4d48"
+    },
+    {
+      "claim_id": "9677cb83-e5a5-4d75-a1b8-b65cf01cb500",
+      "result_id": "9ff60952-1253-4920-8dfc-b82436af4d48"
+    },
+    {
+      "claim_id": "96b74bcf-710d-4fd8-8f99-674b4e6545fe",
+      "result_id": "9ff60952-1253-4920-8dfc-b82436af4d48"
+    },
+    {
+      "claim_id": "9be644f3-9a49-4371-b95b-805a53c44385",
+      "result_id": "9ff60952-1253-4920-8dfc-b82436af4d48"
+    },
+    {
+      "claim_id": "404f290d-15c4-4044-9c51-0367406833d5",
+      "result_id": "9ff60952-1253-4920-8dfc-b82436af4d48"
+    },
+    {
+      "claim_id": "5eb4a292-1644-4876-8277-9870cf8fbe56",
+      "result_id": "9ff60952-1253-4920-8dfc-b82436af4d48"
+    },
+    {
+      "claim_id": "4e5c7041-dcf3-4576-8ecb-dae3ad98bf42",
+      "result_id": "9ff60952-1253-4920-8dfc-b82436af4d48"
+    },
+    {
+      "claim_id": "b931e5af-de9f-48a7-8e71-d5a494914cdc",
+      "result_id": "9ff60952-1253-4920-8dfc-b82436af4d48"
+    },
+    {
+      "claim_id": "e0fafe75-045b-4971-ab4a-2a36885df455",
+      "result_id": "b17620e4-fe2e-4105-bc61-e953a6b76aba"
+    },
+    {
+      "claim_id": "37578607-055b-4b1f-8328-0ae3901619bd",
+      "result_id": "b17620e4-fe2e-4105-bc61-e953a6b76aba"
+    },
+    {
+      "claim_id": "8c397074-4a06-4688-9e75-792aba24c623",
+      "result_id": "b17620e4-fe2e-4105-bc61-e953a6b76aba"
+    },
+    {
+      "claim_id": "f3dc0da0-3bdc-4c6d-9d64-6ece7f7799df",
+      "result_id": "b17620e4-fe2e-4105-bc61-e953a6b76aba"
+    },
+    {
+      "claim_id": "74fe5c8f-b0fb-465f-b037-27831449e038",
+      "result_id": "2785d7f6-7be1-4c44-ac58-87fb80a8b8af"
+    },
+    {
+      "claim_id": "5fda45db-776d-47b3-bdc0-7d7191b39cc2",
+      "result_id": "2785d7f6-7be1-4c44-ac58-87fb80a8b8af"
+    },
+    {
+      "claim_id": "066c18aa-558a-426b-bf71-0b19fcf2e359",
+      "result_id": "2785d7f6-7be1-4c44-ac58-87fb80a8b8af"
+    },
+    {
+      "claim_id": "3ff01a33-7593-4592-a9d9-666439f99287",
+      "result_id": "2785d7f6-7be1-4c44-ac58-87fb80a8b8af"
+    },
+    {
+      "claim_id": "c6cb777c-57a5-48cf-825d-e6a663de2b95",
+      "result_id": "2785d7f6-7be1-4c44-ac58-87fb80a8b8af"
+    },
+    {
+      "claim_id": "4f6e5b0a-b336-4da8-b37c-88a10e388db9",
+      "result_id": "2785d7f6-7be1-4c44-ac58-87fb80a8b8af"
+    },
+    {
+      "claim_id": "06197523-2f79-4ebd-979c-073dd53c3063",
+      "result_id": "2785d7f6-7be1-4c44-ac58-87fb80a8b8af"
+    },
+    {
+      "claim_id": "bf374d2e-4c15-4fc7-9bbd-e30a83d1e764",
+      "result_id": "2785d7f6-7be1-4c44-ac58-87fb80a8b8af"
+    },
+    {
+      "claim_id": "d07f4705-1028-46f1-a0be-3f3a8543e254",
+      "result_id": "2785d7f6-7be1-4c44-ac58-87fb80a8b8af"
+    },
+    {
+      "claim_id": "ecbaba95-8e28-4aa1-8b59-bd11a6de46c0",
+      "result_id": "2785d7f6-7be1-4c44-ac58-87fb80a8b8af"
+    },
+    {
+      "claim_id": "eb9c8dc9-fedd-42ac-b312-2c9aaefa5203",
+      "result_id": "2785d7f6-7be1-4c44-ac58-87fb80a8b8af"
+    },
+    {
+      "claim_id": "1f72c4fd-7e9d-4fb3-981e-2413bb98a822",
+      "result_id": "2785d7f6-7be1-4c44-ac58-87fb80a8b8af"
+    },
+    {
+      "claim_id": "dc09ea0e-1381-4f79-9013-72d846d13490",
+      "result_id": "2785d7f6-7be1-4c44-ac58-87fb80a8b8af"
+    },
+    {
+      "claim_id": "10ec311e-f92f-49f2-aa20-26275c1de349",
+      "result_id": "2785d7f6-7be1-4c44-ac58-87fb80a8b8af"
+    },
+    {
+      "claim_id": "9b509ca8-b782-40b5-9d9a-977ba31072c5",
+      "result_id": "2785d7f6-7be1-4c44-ac58-87fb80a8b8af"
+    },
+    {
+      "claim_id": "e195550a-99c1-49cb-be4c-6549e047bc0f",
+      "result_id": "2785d7f6-7be1-4c44-ac58-87fb80a8b8af"
+    },
+    {
+      "claim_id": "02af4a0f-ccdc-4ce7-bbb2-f09652af4c91",
+      "result_id": "2785d7f6-7be1-4c44-ac58-87fb80a8b8af"
+    },
+    {
+      "claim_id": "5cf36083-b5cd-4f69-bbea-bc14536b6337",
+      "result_id": "1ebcf255-c0e7-4300-8177-eea4e3ebc735"
+    },
+    {
+      "claim_id": "2a04598f-b8a0-4137-9dd7-0eb9d005803c",
+      "result_id": "1ebcf255-c0e7-4300-8177-eea4e3ebc735"
+    },
+    {
+      "claim_id": "625ed47e-ec5e-46d5-82de-587008ed7ea2",
+      "result_id": "1ebcf255-c0e7-4300-8177-eea4e3ebc735"
+    },
+    {
+      "claim_id": "074bf3a5-1e55-4c9d-a181-77d8faddf9b7",
+      "result_id": "1ebcf255-c0e7-4300-8177-eea4e3ebc735"
+    },
+    {
+      "claim_id": "de086651-78db-4d3b-b842-e5259a3e8b34",
+      "result_id": "1ebcf255-c0e7-4300-8177-eea4e3ebc735"
+    },
+    {
+      "claim_id": "f8f0793c-9974-4805-9bb6-7ab6a861d92d",
+      "result_id": "1ebcf255-c0e7-4300-8177-eea4e3ebc735"
+    },
+    {
+      "claim_id": "23ea349d-ac79-4967-8a29-9d053436b8e9",
+      "result_id": "1ebcf255-c0e7-4300-8177-eea4e3ebc735"
+    },
+    {
+      "claim_id": "9ad4c80e-7be3-4b00-857d-0f3d7f57bcd2",
+      "result_id": "1ebcf255-c0e7-4300-8177-eea4e3ebc735"
+    },
+    {
+      "claim_id": "f003b8b9-8e32-4bd2-9696-1c791f06e068",
+      "result_id": "1ebcf255-c0e7-4300-8177-eea4e3ebc735"
+    },
+    {
+      "claim_id": "f40cc5f4-4a00-4f62-b15b-873e28b04774",
+      "result_id": "1ebcf255-c0e7-4300-8177-eea4e3ebc735"
+    },
+    {
+      "claim_id": "4df5d5da-51f1-4fb1-b988-9f5cd91cdacc",
+      "result_id": "1ebcf255-c0e7-4300-8177-eea4e3ebc735"
+    },
+    {
+      "claim_id": "03d24bd7-2acf-4485-991a-895e59a4755b",
+      "result_id": "1ebcf255-c0e7-4300-8177-eea4e3ebc735"
+    },
+    {
+      "claim_id": "17dc9973-3036-4e8d-bc56-24a679248e67",
+      "result_id": "1ebcf255-c0e7-4300-8177-eea4e3ebc735"
+    },
+    {
+      "claim_id": "933fcf86-c30f-4cf7-b768-96cebaede81e",
+      "result_id": "1ebcf255-c0e7-4300-8177-eea4e3ebc735"
+    },
+    {
+      "claim_id": "18c0c13a-aae5-468f-8ddd-9c6625091e0c",
+      "result_id": "1ebcf255-c0e7-4300-8177-eea4e3ebc735"
+    },
+    {
+      "claim_id": "bb41e8e9-1117-4fe9-865c-1a203bc3eba3",
+      "result_id": "1ebcf255-c0e7-4300-8177-eea4e3ebc735"
+    },
+    {
+      "claim_id": "5604b733-62b3-4c64-9c7d-a339cbc47a2a",
+      "result_id": "1ebcf255-c0e7-4300-8177-eea4e3ebc735"
+    },
+    {
+      "claim_id": "6b57bf97-3fa4-4324-bdc8-99090ecfdd97",
+      "result_id": "1ebcf255-c0e7-4300-8177-eea4e3ebc735"
+    },
+    {
+      "claim_id": "807ea8f2-0989-43d8-a7c7-e86f7808a0d9",
+      "result_id": "1ebcf255-c0e7-4300-8177-eea4e3ebc735"
+    },
+    {
+      "claim_id": "56c24e42-bc9c-43c4-aa1e-a6e2bd33d739",
+      "result_id": "1ebcf255-c0e7-4300-8177-eea4e3ebc735"
+    }
+  ],
+  "comparisons": []
+}

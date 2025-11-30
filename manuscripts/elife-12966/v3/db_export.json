@@ -1,0 +1,1564 @@
+{
+  "submission": {
+    "id": "d7e8f7db-7974-4a6e-aaa2-af39b0935986",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:52:10.829502Z",
+    "updated_at": "2025-11-29T22:52:10.829502Z"
+  },
+  "content": [
+    {
+      "id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "submission_id": "d7e8f7db-7974-4a6e-aaa2-af39b0935986",
+      "content_type": "manuscript",
+      "content_text": "# Resolving rates of mutation in the brain using single-neuron genomics\n\n## Authors\n\n- Gilad D Evrony<sup>1</sup>\n- Eunjung Lee<sup>6</sup>\n- Peter J Park<sup>6</sup> \u2020\n- Christopher A Walsh<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Division of Genetics and Genomics, Manton Center for Orphan Disease Boston Children's Hospital Boston United States\n2. Howard Hughes Medical Institute, Boston Children's Hospital Boston United States\n3. Department of Neurology Harvard Medical School Boston United States\n4. Department of Pediatrics Harvard Medical School Boston United States\n5. Broad Institute of MIT and Harvard Cambridge United States\n6. Department of Biomedical Informatics Harvard Medical School Boston United States\n7. Division of Genetics Brigham and Women's Hospital Boston United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nWhether somatic mutations contribute functional diversity to brain cells is a long-standing question. Single-neuron genomics enables direct measurement of somatic mutation rates in human brain and promises to answer this question. A recent study (Upton et al., 2015) reported high rates of somatic LINE-1 element (L1) retrotransposition in the hippocampus and cerebral cortex that would have major implications for normal brain function, and suggested that these events preferentially impact genes important for neuronal function. We identify aspects of the single-cell sequencing approach, bioinformatic analysis, and validation methods that led to thousands of artifacts being interpreted as somatic mutation events. Our reanalysis supports a mutation frequency of approximately 0.2 events per cell, which is about fifty-fold lower than reported, confirming that L1 elements mobilize in some human neurons but indicating that L1 mosaicism is not ubiquitous. Through consideration of the challenges identified, we provide a foundation and framework for designing single-cell genomics studies.\n\n## Introduction\n\nThe mechanisms that generate the immense morphological and functional diversity of neurons in the human brain have long been a subject of speculation and controversy. The immune system, with its systematic genomic rearrangements such as V(D)J recombination, and the ordered generation of random somatic mutation coupled with a selection process, have suggested appealing analogies for generating the cellular diversity of the nervous system, and have led to searches for analogous genomic diversity in the brain (Muotri and Gage, 2006). LINE-1 (L1) elements are endogenous retrotransposons that transcribe an RNA copy that is reverse-transcribed into a DNA copy that can then insert into a novel site in the genome, creating mutations capable of disrupting or modifying the expression of genes in which they insert or neighboring genes (Goodier and Kazazian, 2008). Evolutionarily, transposon mobilization is an essential cause of the generation of species diversity (Cordaux and Batzer, 2009), so interest in possible L1 activity during brain development was spurred by the discovery that these elements can mobilize in neuronal progenitor cells (Coufal et al., 2009; Muotri et al., 2005).\n\nThe importance of any mutation process, such as retrotransposon mobilization, in generating neuronal diversity is constrained by the rate at which mutation takes place, since if a given type of mutation occurs infrequently, it is unlikely to be a useful generator of diversity. Single-cell sequencing is a powerful technology that has revealed and quantified previously unknown mechanisms of somatic mutation in the human brain, providing a first proof of principle for the systematic measurement of somatic mutation rates in any normal human tissue (Evrony et al., 2012; McConnell et al., 2013; Cai et al., 2014; Evrony et al., 2015; Lodato et al., 2015). Single-cell sequencing can therefore determine the extent to which somatic mutations diversify the genomes of cells in the brain, which is foundational to understanding their potential functional impact in normal brains and possible roles in neuropsychiatric diseases of unknown etiology (Poduri et al., 2013). L1 mobilization has been observed at low rates using indirect genetic techniques such as a transgenic L1 reporter in rodent brain in vivo (Muotri et al., 2005; 2010) and human progenitor cells in vitro (Coufal et al., 2009), while studies profiling human brain bulk DNA suggested much higher rates (Baillie et al., 2011; Bundo et al., 2014; Coufal et al., 2009). Single-cell sequencing has been proposed as the definitive method to resolve these disparate estimates (Erwin et al., 2014; Goodier, 2014).\n\nA recent single-cell sequencing study (Upton et al., 2015) reported high rates of somatic L1 retrotransposition in the hippocampus (13.7 per neuron on average) and cerebral cortex (16.3 per neuron), and suggested that L1 retrotransposition was \"ubiquitous\". Such a high rate of retrotransposition could present it as a possibly essential event in neurogenesis and would have major implications for brain function. Here we describe experimental artifacts that elevated the study's apparent rate of somatic retrotransposition by >50-fold. Reanalysis of their data while filtering these artifacts generates a consensus that retrotransposition does occur in developing brain but at a much lower rate consistent with prior single-cell studies (Evrony et al., 2012; Evrony et al., 2015), thereby constraining the range of possible functional roles for retrotransposition in the brain. Our discussion of the challenges in single-cell sequencing may provide a useful framework for the design and analysis of single-cell genomics studies.\n\n## Results\n\n### Single-cell L1 PCR validation\n\nUpton et al. isolated single neuronal cells from postmortem human brains and amplified their genomes using the MALBAC method (Zong et al., 2012). They then profiled human-specific L1 elements (L1Hs) using their RC-seq method (Shukla et al., 2013; Upton et al., 2015) that captures and amplifies both the 5' and 3' ends of L1Hs elements via oligonucleotide hybridization and PCR, hence providing sequence data that identify L1Hs insertion sites in the genome.\n\nAlthough whole genome amplification methods have remarkable abilities to amplify picogram quantities of DNA from a single cell into microgram quantities, chimeric DNA molecules falsely linking unrelated DNA fragments are well known to arise during single-cell genome amplification (Macaulay and Voet, 2014). Chimera artifacts also arise during ligation and PCR steps of sequencing library preparation (Kircher et al., 2012; Quail et al., 2008), processes integral to the RC-seq method. Chimeric sequences can create a DNA fragment connecting a LINE element to an unrelated portion of the genome, creating the appearance of biological LINE mobilization (Figure 1\u2014figure supplement 1A\u2013B). Sequence analysis of Upton et al.'s putative PCR-validated candidates (Table S2 of Upton et al.) demonstrates that more than half of them (7 of 13) are chimera artifacts that could not have been generated by the process of L1 mobilization (Supplementary file 1). Some chimeras originated immediately downstream of germline L1Hs/L1Pa elements that are incapable of retrotransposition, because the L1 elements are truncated, are from an old, inactive L1 subfamily, or contain numerous inactivating mutations (Figure 1B; Supplementary file 1). In other cases, L1 5' and 3' junction chimeras originating from distinct L1 elements were misinterpreted as two ends of the same L1 (Figures 1B\u2013C; Supplementary file 1). Some candidates lack poly-A tails (Figure 1C; Supplementary file 1), a key feature of retrotransposon insertions. Although the remaining 6/13 PCR-validated insertions lack clear evidence of being chimeras, the possibility cannot be excluded based on the limited PCR validation performed, and they are likely also chimeras because each is supported by only 1 or 2 sequencing reads (see below). The presence of chimeric artifacts among a set of insertions passing limited PCR validation supports the importance of additional careful analysis of candidate L1 sequences to help define more accurate rates of retrotransposition.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/12966/elife-12966-fig1-v3.jpg)\n\n**Figure 1.:** (A) Full-length (FL) PCR using primers flanking the insertion site is necessary for definitive validation of somatic insertions in single cells in the setting of chimeras. One breakpoint per chimera DNA molecule refers to the breakpoint of the candidate insertion being analyzed since a DNA molecule can in principle have multiple different chimera events each involving different loci (which would be unlikely to create a structure that would validate by FL-PCR). For most RC-seq candidates, Upton et al. did not attempt 3\u2019 or 5\u2019 PCR for the computationally identified junction and only performed this for the opposite junction. (B) Top schematic illustrates one of several methods for identifying L1 chimeras in next-generation sequencing data such as RC-seq. Bottom schematic illustrates how two independent chimeras aligning to the same locus appear to have a TSD. (C) An example somatic insertion candidate that passed Upton et al. single-junction PCR validation but derived from two independent chimera artifacts. Yellow region is non-L1 sequence from chromosome 3 that allows tracing of the chimera to its source. L1Pa4 is an inactive L1 subfamily (Hancks and Kazazian, 2012). See Supplementary file 1 ('RC-seq |\u00a0Somatic L1 PCR' sheet) for analyses of all somatic candidates passing Upton et al. PCR validation. See also Figure 1\u2014figure supplement 1.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12966/elife-12966-fig1-figsupp1-v3.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) MDA and MALBAC amplification of single-cell genomes and downstream L1 profiling steps. MALBAC generates shorter amplicons than MDA as well as peaks and troughs in genome coverage (see Figure 4). (B) Schematic of sequencing reads in WGS, L1-IP, and RC-seq L1 profiling methods. WGS and L1-IP filter most chimeras using a score model based on read count and other parameters, while RC-seq does not employ a read count filter, leading to over-calling of false-positive chimeras. (C) PCR validation approach in each L1 profiling method. Schematic on right illustrates short amplicon length of MALBAC, which precludes definitive validation of L1 insertions longer than the MALBAC amplicon length.\n\nUpton et al. performed 3' junction PCR validation for 10 RC-seq candidates for which they had detected the 5\u2019end, and while 3\u2019 junction validation is technically straightforward, it failed for all 10. Whereas the authors attribute their validation failure to poly-A tails obstructing PCR amplification, poly-A tails do not obstruct PCR: the single-cell RC-seq method used by Upton et al. itself entails three PCR steps in which L1 3' junctions are amplified, and 3' junction PCR is the standard validation approach used in L1 studies (Ewing and Kazazian, 2010; Grandi et al., 2012; Huang et al., 2010; Iskow et al., 2010). The failure of all 10/10 3' junction validation attempts suggests a high prevalence of false-positives among RC-seq candidates detected with only 5' junction reads, which represent 27% of all candidate insertions.\n\n### Definitive validation of somatic insertions\n\n\u201cFull-length\u201d validation is the most accurate method to screen out false-positive candidate somatic insertions. A bona fide L1 insertion creates two genome breakpoints at the insertion site, one on each end of the insertion (5' and 3'), while a chimera has only one breakpoint at the called insertion site (Figure 1A). Full-length cloning validation, in which the entire L1 insertion is amplified in a single DNA molecule spanning both breakpoints (using primers based in the genomic sequence flanking the L1), is therefore the only way to confirm that both breakpoints are present in the same DNA molecule as a bona fide insertion, as opposed to two different chimeric molecules (Figure 1A; Figure 1\u2014figure supplement 1). However, Upton et al. did not perform full-length cloning validation on any insertion. Two independent chimeras can even occur by chance in two different DNA molecules/copies whose non-L1 sequences overlap the same genomic locus, giving the false appearance of a target site duplication (TSD) (Figures 1B\u2013C; Supplementary file 1). In single-cell sequencing, especially when read count is not used to filter candidates (see below), full-length cloning of at least some candidate insertions is important to exclude chimera artifacts.\n\nInstead of full-length cloning validation (Evrony et al., 2015; Stewart et al., 2011), Upton et al. carried out multiple 5' junction PCR reactions per candidate using primers spaced every 500 bp along the ~6000 bp L1. Multiple PCR reactions, each with an L1 primer matching hundreds to thousands of genomic loci, introduces additional mechanisms for generating false-positives. Some candidates required nested PCR with 62 PCR cycles, an extremely high level of amplification, suggesting that the targets are chimeras present at very low level in the single-cell amplified DNA.\n\nThe MALBAC method employed by Upton et al. for single-cell genome amplification probably precludes definitive full-length cloning validation of some insertions, suggesting it is not an ideal method for studying retrotransposition. MALBAC produces short amplicons (0.5\u20131.5kb) compared to multiple displacement amplification (MDA) (10\u201350\u00a0kb amplicons) (Dean et al., 2002; Zhang et al., 2015; Zong et al., 2012), so insertions longer than ~1.5 kb (~15\u201330% of somatic L1 insertions in human cancer studies [Helman et al., 2014; Lee et al., 2012; Tubio et al., 2014]) would not be efficiently validated in MALBAC single cells (Figure 1\u2014figure supplements 1A and C).\n\nThe many chimeras among \u2018validated\u2019 somatic insertions come about because Upton et al. relied solely on computational analysis of contig sequences (assembled from short sequencing reads) to filter chimeras and labeled most remaining candidates as putative somatic insertions. However, sequence analysis of short contigs that do not span the full length of insertions can identify chimeras but cannot rule them out. For example, 5' junction chimeras originating from inside an L1 element or 3' junction chimeras originating from within the poly-A tail cannot be distinguished from true insertion breakpoints by sequence analysis alone and require further experiments (i.e., full-length cloning) (Figure 1A). Furthermore, even some chimeras that can be identified computationally were not filtered: one recurrent type of chimera artifact accounts for 16% of their candidates detected only at a 5' junction (Supplementary file 1; see example candidate chr11:112602973). Further analyses, as well as long-read sequencing (e.g., PacBio), may reveal additional ways to remove chimeras computationally by sequence analysis alone; but with short-read sequencing, even ideal sequence-based filtering algorithms cannot filter chimeras originating from within L1.\n\n### L1 and chimera read count distributions\n\nA core principle of next-generation sequencing analysis is the use of read counts to distinguish true mutations from artifacts that inevitably arise during DNA sequencing (Robasky et al., 2014; Sims et al., 2014). Multiple reads supporting a mutation serves the same role as replication does in any scientific experiment, increasing the confidence that the finding is not an artifact. This is especially important in single-cell sequencing where chimeric DNA artifacts are more prevalent than in standard sequencing (Macaulay and Voet, 2014). Essentially all major mutation-detection algorithms use the signal strength (read count and often other parameters) of known true mutations and false-positive events to predict the likelihood that individual candidate mutations are real and to determine a signal cutoff (Chen et al., 2009; Cibulskis et al., 2013; DePristo et al., 2011; Mills et al., 2011; 1000 Genomes Project Consortium, 2012). However, Upton et al. did not employ a read count filter or signal model and therefore considered candidate insertions supported by only a single read as equivalent to the smaller number of candidates with higher read support. As a result, 97% (4634/4759) of their single-cell insertion calls were supported by a single Illumina sequencing read and 99.6% by 1 or 2 reads; 94% of their >320,000 candidates from 'bulk' DNA were also supported by only 1 read (Figure 2A).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/12966/elife-12966-fig2-v3.jpg)\n\n**Figure 2.:** (A) RC-seq read count distributions of bulk and single-cell germline known non-reference (KNR) insertion and somatic candidate calls (see 'Materials and methods'). Inset schematics and labels 'a' to 'd' illustrate key findings. Label 'a' (inset schematic) points to the subset of KNR insertions appearing at low read counts in single-cells, distinct from the distribution of KNR insertions in bulk samples, due to dropout/non-uniformity at length scales < 30 kb inherent to MALBAC amplification (Appendix 2). These factors are also responsible for the broader distribution of higher read count KNR insertions (label 'b') in single-cell versus bulk samples. Areas labeled 'c' in the top and bottom graphs highlight the population of single-cell KNR insertions at high read counts that is absent from single-cell somatic candidates. KNR insertions present in a single copy per cell (chrX insertions in male samples) show the same pattern (Figure 2\u2014figure supplement 1A). Instead, single-cell somatic candidates appear at very low read counts (label 'd', inset schematic). The likely bona fide insertion detected in two single cells on chromosome 6 is labeled and appears at high read count relative to other somatic candidates. Purple dashed line indicates threshold of > 2 reads used for calculation of somatic retrotransposition rates. See also Figure 2\u2014figure supplement 1. (B) L1 junction detection rates in bulk and single-cell RC-seq (see 'Materials and methods'). Fewer KNR insertions are detected at both (5' and 3') junctions in single-cell versus bulk samples due to MALBAC amplification dropout/non-uniformity. A significantly lower fraction of single-cell somatic candidates are detected at both junctions relative to single-cell KNR insertions, confirming the vast majority of somatic candidates are false-positives.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12966/elife-12966-fig2-figsupp1-v3.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Read count distributions of chrX (hemizygous) KNR insertions, showing that most germline insertions present in a single copy per cell are still detected by multiple reads in single-cell RC-seq. KNR insertions are defined as in Figure 2A. Note that most KNR insertions in any individual are in the heterozygous state (i.e. single copy per cell) such that the read count distribution of all genome-wide KNR insertions (Figure 2A) still provides a good approximation of somatic insertions (see 'Materials and methods'). (B) Read count distribution of germline gold-standard KNR insertions in bulk and single-cell samples from Evrony et al. (2015) detected by the high-coverage whole-genome sequencing (WGS) L1 profiling method, illustrating that true insertions appear at high read counts. See Figure S4B in Evrony et al. (2015) 2B and S11 for histograms of insertion confidence scores. WGS gold-standard KNR insertions are defined as insertions identified in both bulk samples of the individual and detected in prior independent L1 profiling studies from other laboratories (see 'Materials and methods' for details). (C) Read count distribution of germline gold-standard KNR insertions in bulk and single-cell samples from Evrony et al. (2012) detected by the targeted L1-insertion profiling (L1-IP) method, illustrating that true insertions appear at high read counts. Raw (top) and normalized (bottom) read counts are shown. See Figure S4B in Evrony et al. (2012) for further read count and score histograms. The minimum number of raw reads for calling insertions in the pipeline is 10, as described in Evrony et al. (2012). L1-IP gold-standard KNR insertions are defined as insertions identified with a confidence score \u22650.5 in at least half of the bulk samples of the individual and detected in prior independent L1 profiling studies from other laboratories (see 'Materials and methods' for details).\n\nUpton et al.'s rationale for not using read counts in their analysis is their suggestion that in their single-cell RC-seq method, chimeras appear at higher read counts than true insertions such that nearly all true insertions would be detected by only 1 read. This proposal can be tested using the read count distribution of a 'gold standard' mutation set. In single-cell samples, somatic insertions should appear at the same signal level distribution as germline known non-reference L1 insertions (KNR), which are population-polymorphic L1 insertions absent from the reference human genome but identified in prior L1 studies. Germline KNR insertions share the same sequence characteristics as somatic insertions (Helman et al., 2014; Lee et al., 2012; Tubio et al., 2014) and bear no distinguishing feature that would lead to different read counts. Therefore, KNR insertions can be used to directly test Upton et al.'s model that true insertions preferentially appear at lower read counts than chimeras.\n\nUsing RC-seq single-cell germline KNR insertion data provided by the authors upon request, we found that KNR insertions were detected by much higher read counts than candidate somatic insertions. In single-cell RC-seq samples, 53%, 24% and 20% of the 4049 calls of high-confidence gold-standard KNR insertions were detected with \u22653, \u226520 and \u226540 reads per sample, respectively; only 32% were detected with only 1 read (Figure 2A; Figure 2\u2014figure supplement 1A). In contrast, 97% (4634/4759) of single-cell somatic insertion candidates were detected with only 1 read and only 0.4% (20/4759) with \u22653 reads (Figure 2A). The strikingly higher read depths of gold-standard germline KNR L1 insertions relative to somatic insertion candidates in the same experiment is consistent with the vast majority of claimed somatic insertions not corresponding to bona fide insertions.\n\nAnalysis of RC-seq L1 junction detection rates provides additional evidence that nearly all somatic candidates are false-positives (Figure 2B). 11% of single-cell KNR insertion calls were detected at both L1 (5' and 3') junctions, whereas >250-fold less\u2014 only 0.04% (2/4682)\u2014 of single-cell somatic insertion candidates were detected at both junctions. Sequence analysis shows 8 of the 12 hippocampal single-cell somatic candidates detected at both junctions (including candidates in which each junction was detected in a different sample) are chimera artifacts (Supplementary file 1). The remainder cannot be excluded as chimeras without full-length PCR validation. Furthermore, RC-seq bulk somatic candidates have a non-canonical distribution of large TSD sizes, inconsistent with nearly all prior L1 research (Appendix 1). Analysis of 10 randomly selected candidates with large (>50\u00a0bp) TSDs found all were chimera artifacts (Supplementary file 1).\n\n### Corrected RC-seq somatic insertion rates\n\nA more plausible RC-seq somatic insertion rate can be calculated using a read count threshold calibrated to germline high-confidence KNR insertions as a gold standard. A read count threshold of > 2 optimizes sensitivity and specificity, maintaining detection of 53% of true positive KNR insertion calls across all single cells (Figure 2A) and a per-cell KNR detection sensitivity of 24% (Figure 3A), while excluding ~99.6% of false-positive calls (see 'Materials and methods'). Only 20 somatic insertion candidates supported by >2 reads were detected across all 170 cells, and 12 of these were chimeras upon further sequence analysis (Supplementary file 1). The remaining 8 candidates yield a sensitivity-corrected somatic insertion rate estimate of 0.19 per cell, with no significant difference in rates between cell types (hippocampal neurons and glia, cortical neurons, and AGS hippocampal neurons) (p\u00a0=\u00a00.98, ANOVA) (Figure 3B). 95% of single cells did not have any somatic insertion candidates (excluding chimeras) supported by >2 sequencing reads. These RC-seq somatic insertion rates are quite consistent with rates previously estimated by L1 insertion profiling (L1-IP) in single cortical and caudate neurons (0.07 \u00b1 0.15 (SD); p\u00a0=\u00a00.54, ANOVA) (Evrony et al., 2012), and using single-neuron whole-genome sequencing (0.18 \u00b1 0.47 (SD); p\u00a0=\u00a00.37, ANOVA) (Evrony et al., 2015), suggesting a notable consensus by three methods confirming that somatic L1 insertions are present in human brain, but fewer than one per average genome.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/12966/elife-12966-fig3-v3.jpg)\n\n**Figure 3.:** (A) Average sensitivity of single-cell RC-seq for gold-standard KNR insertions at different read count thresholds. Sensitivity of single-cell L1-IP (Evrony et al., 2012) and single-cell WGS (Evrony et al., 2015) are shown for comparison. Note, the average number of uniquely mapped reads in the targeted enrichment methods of L1-IP and RC-seq are 3.2 and 16.7 million reads, respectively, so L1-IP achieves higher sensitivity than RC-seq with fewer reads even with a more liberal read count threshold for RC-seq. Gold-standard KNR insertions are defined for each single-cell method as in Figures 2A and Figure 2\u2014figure supplement 1B\u2013C. Error bars \u00b1 SD. As illustrated in the schematic on the left, \u03a3m is the number of single cells in the study (i.e. mA+mB+...), and \u03a3n is the number of gold-standard KNR insertions used to calculate sensitivity across the profiled individuals (i.e. nA+nB+...; as seen in the schematic, \u03a3n increases as more individuals are profiled). See also Figure 3\u2014figure supplement 1. (B) Average RC-seq somatic insertion rates per cell. These are pre-PCR validation rates, since Upton et al. did not attempt PCR validation for these somatic candidates. The percentage of cells without any candidates (above the threshold of >2 reads and after excluding chimeras) is shown. See Supplementary file 1 (\"RC-seq |\u00a0Somatic L1 >2 reads\" sheet) for analysis of all somatic candidate sequences. Error bars \u00b1 SD.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12966/elife-12966-fig3-figsupp1-v3.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Single-cell sensitivity of L1-profiling methods for gold-standard germline KNR insertions at additional read count and score thresholds not shown in Figure 3A, and separately for single-cell samples from each individual. RC-seq Aicardi-Goutieres (AGS) single cells have lower sensitivity (higher dropout) than single cells from other individuals, indicating lower quality tissue/single cells from this individual. Gold-standard KNR insertions are defined for each single-cell method as in Figures 2A and Figure 2\u2014figure supplement 1B\u2013C. Error bars \u00b1 SD.\n\nNotably, 2 of the 8 somatic insertion candidates detected following read count filtering correspond to a single, likely bona fide L1Hs insertion in neuron #11 (12 reads) and glial cell #2 (6 reads) from the hippocampus of individual 45 (Supplementary file 1). This intergenic insertion shows RC-seq reads capturing both 5' and 3' junctions bearing all the hallmarks of a true retrotransposition event: a TSD, poly-A tail, and a 3' transduction that traces its source to a population-polymorphic (KNR) L1 on chromosome 2 that was identified in a prior L1 profiling study (Iskow et al., 2010). This same somatic insertion was also detected in glial cells #7 and #8 of the individual, each with 2 reads. Upton et al. highlighted this insertion for its detection in multiple cells but did not note its high-signal level\u2014this candidate had the 5th and 9th highest read counts of all 4759 somatic candidate calls (Figure 2A). This clonal retrotransposon event also showed >1 read in all 4 cells in which it was detected and was detected at both 5' and 3' junctions. The basic signal characteristics of this one clear somatic insertion event make it dramatically different from those of the thousands of other somatic insertions proposed by Upton et al. (Figures 2A\u2013B).\n\n### Single-cell MALBAC performance\n\nMALBAC-amplified single cells profiled by RC-seq had reduced performance relative to bulk RC-seq in terms of gold-standard KNR insertion read counts and junction detection rates (Figures 2A\u2013B), and had significantly lower sensitivity for KNR insertions (higher dropout) than L1 profiling of MDA-amplified single cells (Figure 3A; Figure 3\u2014figure supplement 1). We therefore further studied the quality of Upton et al.'s single cells and the performance of the MALBAC method (Zong et al., 2012) that the authors used for single-cell genome amplification.\n\nAnalysis of Upton et al.'s pre-RC-seq whole-genome sequencing of MALBAC-amplified single cells shows that at genomic scales < 50 kb (high-resolution view), which includes the size range of retrotransposons and single-nucleotide variants (SNV), there are systematic ~1 kb peaks of high genome amplification separated by troughs of low amplification or complete dropout (Figure 4A). These peaks and troughs often occur in the same locations as in MALBAC single cells from an unrelated study by Zong et al. (2012) (Figure 4A), suggesting that this non-uniformity in genome amplification is inherent to MALBAC. In contrast, MDA single cells show significantly better uniformity of genome amplification at these size scales (Figure 4A). The non-uniformity of MALBAC at genomic scales encompassing the size range of retrotransposon elements likely explains the subset of true KNR insertions appearing at low read counts (Figure 2A) and the low sensitivity (high allelic dropout) of single-cell RC-seq (Figure 3A). It also explains MALBAC's lower overall breadth of genome-wide coverage at nucleotide resolution (i.e. higher locus dropout) relative to MDA (Figure 4\u2014figure supplement 2A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/12966/elife-12966-fig4-v3.jpg)\n\n**Figure 4.:** (A) High-resolution coverage plots of MDA single neurons (Evrony et al., 2015) and MALBAC single cells from Zong et al. (2012) and Upton et al. (2015). MALBAC samples show significant non-uniformity with systematic high peaks (stars) and troughs of genome amplification. MALBAC single neurons from Upton et al. were pooled from hippocampus (n\u00a0=\u00a092 cells) and cortex (n\u00a0=\u00a035 cells) of normal individuals to produce high-coverage samples for the plots. Pooling eliminates stochastic noise of individual cells but preserves systematic non-uniformity inherent to MALBAC. Area shown is chr2:155,815,550\u2013155,848,725 encompassing the region of one of the single-cell RC-seq somatic L1 candidates detected with both 5' and 3' junctions (chr2:155,823,436). Red lines mark off-scale peaks. (B) Low-resolution (~500 kb bin) genome-wide coverage plots of representative single cells from the above studies. MALBAC single cells from Zong et al. have significantly better uniformity at these scales than MDA single neurons as measured by median absolute pairwise deviation (MAPD) and median absolute deviation from the median (MDAD) scores (lower scores indicate higher uniformity) (Cai et al., 2014; Evrony et al., 2015). In contrast, individual MALBAC single cells from Upton et al. have significantly lower quality than both MALBAC single cells from Zong et al. and MDA single neurons. Pooling of all 92 normal hippocampus single neurons from Upton et al. achieves high uniformity (low MAPD/MDAD scores), indicating the low quality of individual single cells from Upton et al. is due to stochastic noise, likely from factors preceding MALBAC amplification. Note, high-coverage MALBAC and MDA samples from Zong et al. and Evrony et al. were subsampled to a lower read depth similar to read depth of Upton et al. samples, confirming prior analyses showing uniformity quality metrics are not affected by sequencing depth in low resolution analyses (Evrony et al., 2015). (C) Power spectral density (y-axis), which reflects the degree of read depth variability (uniformity) as a function of genomic spatial frequency (x-axis). Higher spatial frequencies (right side of x-axis) reflect smaller genomic scales (i.e. higher resolution, as in Figure 4A), and lower spatial frequencies (left side of x-axis) reflect larger genomic scales (i.e. lower resolution, as in Figure 4B). Plots show differences in MDA and MALBAC genome amplification uniformity across genomic scales: MDA single cells have greater read depth variability at larger genomic scales than MALBAC single cells [label I], while MALBAC has greater read depth variability at smaller genomic scales < 30 kb [label II] (i.e. scale of SNVs, small indels, retrotransposons; frequencies > ~3.5\u00b710\u20135 bp), consistent with high-resolution coverage plots (Figure 4A). MALBAC single cells from Upton et al. were pooled to obtain high-coverage samples for the analysis. Plots for individual 1465 and SW480 samples were calculated in Evrony et al. (2015) and are presented again for comparison to Upton et al. samples. Additional unrelated bulk sample NA12877 is plotted for comparison. See Appendix 2 for additional details, Figure 4\u2014figure supplement 1 for average MAPD/MDAD scores of single cells and additional coverage plots, and Figure 4\u2014figure supplement 2 for basic genome coverage statistics.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12966/elife-12966-fig4-figsupp1-v3.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) MAPD and MDAD statistics of copy number (coverage) variability calculated in ~500 kb bins spanning the genome. Lower MAPD and MDAD scores reflect higher quality and uniformity of single-cell amplification. References used for normalization of genome coverage are listed. MALBAC single cells from Upton et al. have higher variability in quality/amplification uniformity among single cells and lower average quality/amplification uniformity than both MALBAC single cells from Zong et al. (2012) and MDA single neurons from Evrony et al. (2015). However, pooling of MALBAC single cells from Upton et al. achieves high quality and uniformity (low MAPD and MDAD scores) better than single-cell samples from other studies, indicating the low quality of individual single cells from Upton et al. is due to stochastic noise in each single cell likely from factors preceding MALBAC amplification such as poor tissue quality. The higher sequencing depth of MDA single neurons from Evrony et al. and MALBAC single cells from Zong et al. relative to MALBAC single cells from Upton et al. has minimal effect on MAPD/MDAD statistics since Poisson error of read counts in low-resolution 500 kb bins is well below the noise levels due to single-cell amplification even at low sequencing depths. This is confirmed by MAPD/MDAD statistics after subsampling high-coverage samples to lower read depths and by prior analyses in Evrony et al. (2015). (B) Representative genome-wide copy number (coverage) plots in ~500 kb equal-read bins for unamplified bulk DNA and MDA single-neuron samples from Evrony et al. (2015) (top row), MALBAC single cells from Zong et al. (middle row), and MALBAC single cells from Upton et al. (bottom row). Bin copy numbers are relative to the specified reference sample. These genome-wide copy number plots were used to calculate MAPD and MDAD statistics shown in panel A. MAPD and MDAD dispersion statistics are shown for each sample. Orange lines denote \u00b1 1 copy. Purple points are off scale. Note the high quality of MALBAC single cells from Zong et al. at this resolution that achieve uniformity similar to the MDA 100-neuron sample. In contrast, the highest quality MALBAC hippocampus single neuron from Upton et al. (neuron 45\u201315) has uniformity similar to an average MDA single neuron and an average quality MALBAC neuron from Upton et al. (neuron 42\u20131) has significantly less uniformity. Although pooling of all Upton et al. normal hippocampus single neurons has uniformity similar to the highest quality MALBAC single cell from Zong et al., this reflects only systematic MALBAC noise since stochastic single-cell noise is mostly removed by pooling. On the other hand, individual MALBAC single cells from Zong et al. achieve high quality with both stochastic single-cell noise and MALBAC noise. This reflects the fact that the low quality of MALBAC single cells from Upton et al. is due to high stochastic noise present in each individual single cell that was likely present prior to MALBAC amplification. The bottom right corner of each plot shows the total sequencing depth of the sample. Plots after subsampling to lower sequencing depth shows that total sequencing depth has only a small effect on low-resolution coverage plots and statistics. Therefore, differences in sequencing depth between samples do not alter the conclusions regarding the quality of single cells from each study.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12966/elife-12966-fig4-figsupp2-v3.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Fraction of genome covered at nucleotide resolution at \u22651x and \u226510x read depth at different subsampled read depths. Data for 1465 and SW480 samples from Evrony et al. (2015) and Zong et al. (2012), respectively, is included for comparison and were previously shown in Evrony et al. (2015). Reads were randomly subsampled to obtain different total subsampled read depths (i.e. different subsampled total sequenced bases normalized to genome size), allowing comparison between samples regardless of their original total read depths. Upton et al. MALBAC hippocampus single neurons from normal individuals were pooled into one sample to achieve coverage necessary for the analysis. Plots show the average coverage across samples of each sample type (shading \u00b1 SD). Plots for each sample set are shown up to the maximum read depth that was possible to subsample equivalently across all samples in a sample set. Note the slightly improved coverage at \u226510x read depth of pooled MALBAC single neurons from Upton et al. relative to MALBAC single cells from Zong et al. However, this is a comparison between a pooled sample, which cancels stochastic noise present in individual single cells, versus single cells analyzed individually that were not pooled and still contain stochastic noise present in each cell. This suggests that the MALBAC implementation in Upton et al. was commensurate or slightly better than that in Zong et al., but individual cells in Upton et al. are still of significantly lower quality than individual cells in Zong et al. (Figure 4B and Figure 4\u2014figure supplement 1) and if sequenced to high coverage would very likely have significantly greater dropout at nucleotide resolution. (B) Lorenz curves as in Evrony et al. (2015) showing the cumulative fraction of reads as a function of cumulative fraction of the genome, averaged across samples of each sample type. These curves reflect the uniformity of genome coverage. A sample with perfectly even genome coverage would appear on the diagonal y = x line. The left panel is plotted using all sequencing reads of each sample. The right panel is plotted after subsampling to the same total read depth across all samples (i.e. the total read depth of MALBAC single cell SRX202787, which has the lowest total read depth of the graphed samples), showing the same trends as the left panel. Note the better performance of pooled MALBAC single neurons from Upton et al. compared to individual MALBAC single cells from Zong et al. This is a result of pooling Upton et al. single neurons to obtain a high coverage sample for analysis, which cancels stochastic noise present in individual neurons as described in panel A. Plots for individual 1465 and SW480 samples were calculated in Evrony et al. (2015) and are presented again for comparison to the Upton et al. sample.\n\nAt larger genomic scales of ~500 kb bins (low-resolution view), MALBAC single cells from Upton et al. show significantly lower quality and higher variability among individual cells than both MALBAC-amplified single cells from Zong et al. and MDA-amplified single neurons (Figure 4B; Figure 4\u2014figure supplement 1A\u2013B). Pooling of all 92 normal hippocampus single neurons from Upton et al. shows performance commensurate with MALBAC single cells from Zong et al. (Figure 4B; Figure 4\u2014figure supplement 1A\u2013B), indicating that the low quality of Upton et al.'s single cells may be due to stochastic factors preceding MALBAC, such as poor tissue quality, rather than MALBAC itself. Of note, at these genomic scales, MALBAC single cells from Zong et al. have high reproducibility and better uniformity of genome coverage than MDA (Figure 4B; Figure 4\u2014figure supplement 1A\u2013B) (Evrony et al., 2015), enabling MALBAC's better performance in detection of large copy number variants (Hou et al., 2013). Power spectral density measuring amplification uniformity across all genomic scales confirmed better uniformity of MALBAC at large genomic scales (> 30 kb) and better uniformity of MDA at small genomic scales (< 30 kb) (Figure 4C) (Evrony et al., 2015; Zhang et al., 2015). The above and additional analyses are discussed further in Appendix 2. Altogether, these results: a) suggest MALBAC and low quality single cells as contributors to single-cell RC-seq sensitivity loss; b) emphasize the importance of single-cell quality control at genomic scales relevant to the studied mutation type; and c) confirm that MALBAC and MDA each have advantages at different genomic scales and for different mutation types but that MALBAC is not especially well-suited for retrotransposon studies.\n\n## Discussion\n\nHere, we have shown that L1 mosaicism is not \"ubiquitous\u201d in the hippocampus and that somatic insertion rates in the recent paper by Upton et al. were elevated >\u00a050-fold due to the informatic analysis and a\u00a0lack of definitive validation.\n\n### Read counts of true insertions versus chimeras\n\nTo justify not using a read count filter, Upton et al. state that \u201cin single-cell RC-seq libraries, putative chimeras are disproportionately likely to amplify efficiently and accrue high read depth\u201d\u00a0(Upton et al., 2015).\u00a0In other words, they are suggesting that their method preferentially amplifies noise (chimeric sequences) instead of signal (true insertions). We could find no precedent or chemical explanation for why PCR or next-generation sequencing would preferentially amplify chimeras, since\u00a0there are no sequence features distinguishing chimeras from true insertions in small DNA fragments that would cause preferential overamplification of the former in single-cell RC-seq. In fact, prior single-neuron sequencing studies and chimera rates of Illumina libraries and MALBAC show directly that chimeras are not preferentially amplified relative to true genomic sequence fragments and true insertions (Appendix 3; Figure 2\u2014figure supplement 1B\u2013C; Figure 3\u2014figure supplement 1).\n\nIndeed, the use of read counts for mutation analysis is integral to one of the prime purposes of single-cell sequencing, a technology whose development was motivated by two goals: (a) tracking which somatic mutations are present together in the same cells to enable lineage tracing; and (b) achieving higher signal to noise ratios for somatic mutations, i.e. true mutation to false-positive read count ratios. In single-cell sequencing, somatic mutations appear on average at the same signal level as germline heterozygous mutations (i.e. 50% of reads at the locus), while the fraction of false variant reads at a locus (e.g. sequencing errors, library PCR mutations, chimeras) is the same on average regardless of the number of cells sequenced. Accordingly, decreasing the number of cells pooled for sequencing increases the signal to noise ratio of somatic mutations (see Figure 5 for a simplified mathematical framework for single-cell sequencing). Therefore, calling mutations supported by only a single sequencing read is counter to a key feature and objective of single-cell sequencing. Furthermore, although Upton et al. present qPCR experiments as additional evidence for their findings, it is important that the originators of that qPCR method consider single-cell analysis as definitive (Erwin et al., 2014), and qPCR results are affected by target L1 specificity (Appendix 4).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/12966/elife-12966-fig5-v3.jpg)\n\n**Figure 5.:** (A) In bulk sequencing, a somatic mutation present in k out of n cells pooled together for sequencing (i.e. mosaicism of k/n), with read coverage D at the mutation locus, will be detected on average in k/n\u00b7D/2 reads with a variance depending on sampling error; i.e. the number of reads detecting the mutation correlates linearly with the percent mosaicism. In contrast, germline heterozygous and homozygous variants are present in D/2 and D reads, respectively. Due to sequencing artifacts and sequencing errors, a mutation must be detected above a threshold number of reads, T, which also depends on the sequencing depth, D, since errors occur at rates, e, that are a constant fraction on average of the total number of reads (T=z\u00b7e\u00b7D; z is a constant chosen based on desired detection sensitivity and specificity). The fraction of error reads, e, is a constant on average that is independent of total sequencing depth, D, because library artifacts and sequencing errors occur at rates that are independent of total sequencing depth. The threshold, T, can be reduced with methods reducing sequencing error, but errors are still present in any current sequencing technology. Combining equations simplifies to k/n \u2265 2\u00b7z\u00b7e. This means that the mosaicism of a somatic mutation must be at least twice the sequencing error rate (or more, depending on the confidence factor) for detection to be possible in bulk DNA sequencing, regardless of sequencing depth. Below a certain level of mosaicism that depends on the sequencing error rate, detection is unlikely. Note: for simplicity, the height of the histograms (# of mutations) is scaled to the same height, and the equations do not include variance terms. (B) In single-cell sequencing, somatic mutations are present at the same signal level on average as germline heterozygous variants (i.e. D/2, since k/n = 1), enabling detection of low mosaicism mutations that would otherwise be below detection thresholds of bulk sequencing due to sequencing error. Due to whole genome amplification, single-cell sequencing also leads to greater variance in mutation and error signal level distributions (non-uniform amplification and dropout) and entails additional artifacts not present in bulk sequencing, which increases the noise level, e', but still a lower level on average than true heterozygous mutations. However, the signal distribution of artifacts may still overlap that of true mutations, necessitating careful bioinformatics and modeling of error and true mutation signals along with rigorous validation. Note, for simplicity, the equations here do not include variance terms and bioinformatic modeling usually includes additional parameters other than read count illustrated here. Single-cell sequencing does not achieve increased sensitivity for somatic mutations without cost, because to detect a given mutation with k/n mosaicism, more than n/k single cells may need to be sequenced. The benefit of single-cell sequencing is not to reduce sequencing costs, but rather its ability to overcome limitations due to sequencing error rates on the minimum mosaicism detectable and maintaining information as to which somatic mutations are found within the same cell, which enables lineage tracing.\n\nFinally, we emphasize that the bioinformatic and validation approach led to the inflated somatic insertion rate, but not the RC-seq L1 hybridization capture method itself. Our analysis suggests that RC-seq capture, if used with an appropriate single-cell amplification method, careful signal modeling based on true insertions, and rigorous PCR validation, would likely enable cost-effective, high-throughput retrotransposon profiling comparing favorably with other methods such as L1-IP.\n\n### Somatic retrotransposition rates in the brain\n\nThe corrected RC-seq retrotransposition rate is significant as it aligns to a wholly different regime of potential functional roles for retrotransposition in the brain (rare normal variation and rare disease) rather than a \"ubiquitous\" role. This corrected rate is consistent with rates measured in vitro in neuronal progenitors (Coufal et al., 2009) and is consistent with the absence of significant somatic L1 insertions in brain tumors (Helman et al., 2014; Iskow et al., 2010; Lee et al., 2012). These rates do not rule out that there may be rare individuals in whom a somatic L1 insertion affects a gene in enough cells to cause a sub-clinical or overt phenotype, or that elevated L1 rates may occur in particular individuals or disease states. Future single-neuron genomic studies will resolve the rates and mosaicism frequencies of all classes of somatic mutation across the diversity of cell types, regions, and developmental timepoints in the brain.\n\nSingle-cell genomic analysis has enabled the first systematic measurement of somatic mutation rates in the body but entails additional challenges spanning molecular biology to bioinformatics. Our findings suggest the following elements may aid future single-cell genomics studies: a) choosing a single-cell amplification method suitable for the studied mutation type; b) objective metrics evaluating genome amplification coverage, uniformity, dropout, and chimera rates at spatial scales and genomic elements relevant to the mutation type; c) use of gold-standard germline mutations and chimera rates to build a signal model for calling mutations; and d) stringent validation experiments. Retrotransposons offer unique advantages as a starting point for developing single-cell genomics methods due to their characteristic sequence signatures allowing definitive validation even when present in only one cell. The lessons learned from the study of somatic retrotransposition are therefore broadly applicable for the nascent field of single-cell genomics.\n\n## Materials and methods\n\n### Data sources\n\nSequencing data of single-cell whole-genome sequencing (WGS) experiments from Upton et al. were obtained from the European Nucleotide Archive with accession PRJEB5239. Single-cell RC-seq somatic candidate data (including sequences) and bulk RC-seq KNR insertion data were obtained from Upton et al. supplemental tables (2015). Single-cell RC-seq KNR (germline polymorphic) insertion data (read counts and junction detection rates) and bulk RC-seq somatic L1 candidate data were provided by Geoffrey Faulkner upon request.\n\nSequencing data of single cells from Evrony et al. (2015) and Zong et al. (2012) used in MDA and MALBAC performance analyses were obtained from those studies as described in Evrony et al. (2015).\n\nHigh-coverage bulk DNA sequencing of individual N12877 shown in power spectral analysis (Figure 4C) was obtained from the NCBI Sequence Read Archive with accession ERX069504.\n\n### RC-seq candidate sequence analysis\n\nRC-seq insertion candidate sequences were analyzed with the aid of standard tools, including the UCSC genome browser (Kent et al., 2002), Blat (Kent, 2002), NCBI BLAST (http://blast.ncbi.nlm.nih.gov/Blast.cgi), RepeatMasker (Smit et al., 2010), RepBase (Jurka et al., 2005), ClustalW2 (Larkin et al., 2007), and L1Xplorer (Penzkofer et al., 2005).\n\n### Whole-genome sequencing read alignment\n\nMALBAC and Illumina sequencing adaptors were trimmed from sequencing reads of Upton et al. MALBAC single-cell WGS samples using the 'phacro' tookit (http://sourceforge.net/projects/phacro) (Hou et al., 2013) with default settings and the MALBAC adaptor: GTGAGTGATGGTTGAGGTCTTGTGGAG. The phacro toolkit was created by the team that developed MALBAC specifically for trimming MALBAC adaptors from MALBAC samples, including the 8bp degenerate 'N' sequence following the adaptor.\n\nAfter adaptor trimming, Upton et al. WGS data was aligned to the hs37d5 human genome reference (1000 Genomes Project human genome reference based on the GRCh37 primary assembly) with bwa (Li and Durbin, 2009) as in Evrony et al. (2015). PCR duplicates were removed as in Evrony et al. (2015).\n\n### Whole-genome sequencing coverage and performance analyses\n\nHigh resolution genome coverage plots (Figure 4A), low resolution (~500 kb bin) genome coverage plots (Figure 4B and Figure 4\u2014figure supplement 1), power spectral density analysis (Figure 4C), subsampling genome coverage analysis (Figure 4\u2014figure supplement 2A), and Lorenz curves (Figure 4\u2014figure supplement 2A) were calculated and plotted as in Evrony et al. (2015) (results summarized in Appendix 2). Plots for samples from individual 1465 and SW480 MALBAC samples in power spectral density analysis (Figure 4C), subsampling analyses (Figure 4\u2014figure supplement 2A), and Lorenz curves (Figure 4\u2014figure supplement 2B) were already calculated in Evrony et al. (2015) and are presented again in this paper to allow comparison to Upton et al. single-cell samples. Median absolute pairwise deviation (MAPD) and median absolute deviation from the median (MDAD) scores of single-cell quality were calculated in ~500\u00a0kb equal-read bins as in Evrony et al. (2015).\n\nHigh-resolution genome coverage plots (Figure 4A), power spectral density analysis (Figure 4C), subsampling genome coverage analysis (Figure 4\u2014figure supplement 2A), and Lorenz curves (Figure 4\u2014figure supplement 2B) were calculated after pooling all single neurons from normal individual hippocampi (n\u00a0=\u00a092 cells) to create a high-coverage dataset (48x), since the WGS sequencing depth of individual cells in Upton et al. are not sufficient for high-resolution analyses. A high-coverage (5x) pooled sample of all single neurons from normal individual cerebral cortex (n\u00a0=\u00a035 cells) was also created for the high-resolution genome coverage plot (Figure 4A) and power spectral density analysis (Figure 4C). Low-resolution genome coverage plots and analyses (Figures 4B and Figure 4\u2014figure supplement 1) were performed for individual hippocampus single neurons and also separately for the pooled hippocampus single-neuron sample. Low-resolution genome coverage plots of Upton et al. single cells used the pooled cerebral cortex single-neuron sample as a copy number reference. Note that pooling to achieve higher coverage datasets would only improve genome coverage statistics since as samples are pooled, stochastic noise present in individual cells cancels out, leaving systematic noise due to MALBAC and providing a view of MALBAC amplification performance.\n\nLow-resolution genome coverage plots and analyses of MDA single neurons (Evrony et al., 2015), SW480 MALBAC single cells (Zong et al., 2012), and the pooled hippocampus MALBAC single neuron sample (Upton et al., 2015) were also calculated after subsampling these high coverage samples to lower read depths (Figures 4B and Figure 4\u2014figure supplement 1), confirming as in Evrony et al. (2015) that low-resolution genome coverage plots and statistics are minimally affected by increasing read depth > 0.1x. Therefore the results and conclusions of low-resolution genome coverage analyses are not due to lower sequencing depth for Upton et al. single cells relative to MALBAC and MDA samples from other studies, as the conclusions are the same after subsampling MALBAC and MDA samples from other studies to lower read depth than Upton et al. single cells.\n\nChromosome X bins in low-resolution genome coverage plots of single cells from individual CTRL-36 (female) and the pooled hippocampus single-neuron sample (which includes CTRL-36 female neurons) (Figure 4\u2014figure supplement 1A) were corrected in each sample to the median of all bins in chromosome X of the sample, since the pooled cortex single neurons used as a copy number reference derived from male samples so chromosome X bins would have inflated copy number without correction. Chromosome Y bins of each CTRL-36 (female) hippocampus single neuron were set to a log2 relative copy number of 0 so that they do not affect genome coverage statistics, since CTRL-36 female neurons do not have a Y chromosome and complete dropout of Y-chromosome bins would skew (i.e. make worse) genome coverage statistics. Chromosome Y bins of the pooled hippocampus single-neuron sample were also normalized to the median of chromosome Y bins in the sample, since this pooled sample includes CTRL-36 female neurons that do not have a Y chromosome.\n\nDiscordant and clipped read statistics for Upton et al. single-cell WGS samples (Appendix 3) were calculated as in Evrony et al. (2015). Discordant and clipped read statistics for MALBAC single-cell samples from Zong et al. (2012) and MDA single-cell samples from Evrony et al. (2015) were already calculated in Evrony et al. (2015).\n\n### Read count histograms\n\nRead count histograms of somatic insertion candidates and germline known non-reference (KNR) insertions (Figure 2A and Figure 2\u2014figure supplement 1), which are insertions detected in prior L1 profiling studies that are absent from the human genome reference, were constructed as described below for each L1 profiling method. Upton et al. acknowledge the importance of KNR gold-standard insertions by using them to estimate the sensitivity of their method, but they did not present the distribution of KNR insertion read counts in single cells, which is essential data for calling somatic insertion candidates and evaluating candidate veracity.\n\nRead count histograms plot the per sample read counts of candidates and insertions, not their total read count across all samples, which controls for the number of samples profiled per individual and for candidates/insertions present in multiple samples (necessary for comparing germline KNR insertions that are present in many samples to somatic candidates).\n\nRC-seq KNR read count histograms (Figure 2A and Figure 2\u2014figure supplement 1A): Single-cell RC-seq KNR read counts were obtained from data provided by Geoffrey Faulkner upon request. Bulk RC-seq KNR read counts were obtained from the 'Polymorphic L1' sheet of Table S2 in Upton et al. (2015). The gold-standard set of germline KNR insertions plotted for single cells in Figure 2A and Figure 2\u2014figure supplement 1A consists of insertions identified in prior non RC-seq L1 profiling studies (i.e. insertions with a prior study annotated in the 'Database?' column of Upton et al. tables) that were detected with \u2265 40 reads in both bulk samples of the individual (considering detection only in bulk samples corresponding to the individual from whom the single cell derived). Insertions that were detected only in a prior RC-seq study (\"Published RC-seq?' column) but not in a prior non RC-seq study (empty 'Database?' column) were not included in Figure 2A and Figure 2\u2014figure supplement 1A since it is preferable to define a gold standard set of true mutations detected by independent methods. Nevertheless, read count histograms that also include KNR insertions that were identified only in prior RC-seq studies produced nearly identical histograms (data not shown). Therefore, whether or not KNR insertions found only in prior RC-seq studies are included has negligible effect. Bulk KNR insertion read count histograms in Figure 2A and Figure 2\u2014figure supplement 1A show KNR insertions detected at any read count (i.e. \u2265 1 read), since there is no independent gold-standard reference as to which KNR insertions are present in bulk samples of the profiled individuals, and using a \u2265 40 read cutoff would mask the underlying read count distribution by showing only insertions appearing at high read counts. In any case, the key comparison for evaluating RC-seq somatic candidate veracity is between single-cell KNR insertions and single-cell somatic candidates, not between single-cell KNR insertions and bulk KNR insertions. The latter comparison is useful for assessing the quality of single cells versus bulk samples and the effect of MALBAC amplification.\n\nNote that germline KNR insertion dropouts in single cells (read counts of 0 for germline KNR insertions in single cells of an individual known to have the KNR insertion based on bulk samples) are not included in the read count histograms since single-cell dropout rates affect both KNR insertions and somatic insertions. While for KNR insertions the true state (presence/absence) in each cell is known, the true state is unknown for somatic insertions. Therefore, in order to compare germline KNR insertion and somatic candidate read count distributions, KNR dropout calls must be excluded.\n\nAlso, note that the read count distribution of gold-standard KNR insertions in single-cell RC-seq is bimodal (Figure 2A), with a population of high read count calls and a population of low read count calls. Although KNR insertions appear at lower read depth in single cell RC-seq relative to bulk RC-seq samples and show a bimodal distribution with ~1/3 of calls detected by only one read (Figure 2A), this does not affect the conclusion that the vast majority of single-cell RC-seq somatic insertion candidates are false-positives: only 20 of the 4759 somatic candidates were detected with > 2 reads across all 170 single cells and half of true somatic insertions are expected to be detected at this level based on KNR insertion read counts. However, it does predict that ~1/3 of true somatic insertions would be detected with 1 read. This bimodal distribution of KNR read counts in single-cell RC-seq is due to, both: a) high variability (non-uniformity) in single-cell MALBAC genome amplification at the length scale of L1 insertions (data not shown; and see Evrony et al. (2015): Note S1, 'Coverage variability analyses' section, Figure S6, and Figure S7, as well as Zhang et al. (2015) for details of non-uniformity at small length scales < 30\u00a0kb inherent to MALBAC); and b) allelic dropout stemming from low-quality of Upton et al. single neurons. The MAPD (median absolute pairwise deviation) metric reflects uniformity of genome coverage at large genomic scales (~500\u00a0kb bins), with lower MAPD scores indicating better uniformity. Upton et al. single neurons have mean MAPD scores of 0.53 \u00b1 0.16 (SD), compared to MAPD 0.18 \u00b1 0.06 for MALBAC-amplified single cells from Zong et al. (2012) and MAPD 0.33 \u00b1 0.06 for MDA-amplified single neurons from Evrony et al. (2015).\n\nFurthermore, the lower overall read counts of KNR insertions in single cells relative to bulk samples is also partly due to ~3fold lower total reads per sample on average for single-cell samples versus bulk samples. This highlights a further issue when read count filters are not used, in that there is no normalization for different total reads per sample.\n\nSomatic insertions are present in a single copy in the genome (i.e. heterozygous or hemizygous) in cells harboring the mutation. Most germline KNR insertions (~75%) are present in a single copy per cell as well, since most are in the heterozygous state in individuals of the population. This supports the use of KNR insertions as a reference for the expected read count distribution (and signal distribution of other parameters) of somatic insertions. The evidence that most KNR insertions that are present in an individual are heterozygous is based on measured allele frequencies and genotypes of KNR insertions in prior population studies of L1 polymorphism: a) In the 1000 Genomes project studying mobile element polymorphism (Stewart et al., 2011), genotyping of a large number of L1 KNR insertions (see Table S4 in that study) found an average heterozygosity of 0.85 in individuals harboring the insertions (i.e. number of individuals heterozygous/(number heterozygous + number homozygous) for each KNR insertion, averaged across all KNR insertions). The average allele frequency of these insertions was 0.26; b) In Iskow et al. (2010), the average allele frequencies of KNR insertions found by dideoxy sequencing was 0.22 (table S1 in that study) and < 0.2 for insertions found by 454 sequencing (Figure 2F in that study), corresponding to a heterozygosity rate for KNR insertions of at least 0.88 in individuals harboring each insertion (i.e., allele frequency p\u00a0=\u00a00.22; heterozygosity in individuals with the insertion = 2pq/(p2+2pq)) assuming insertions are in Hardy-Weinberg equilibrium. Prior studies have shown L1 insertion genotypes are almost always consistent with Hardy-Weinberg equilibrium (Badge et al., 2003; Myers et al., 2002; Seleme et al., 2006); c) Ewing and Kazazian (2011) also analyzed the 1000 genomes data and found a KNR insertion allele frequency < 0.2 (Figure 1B in that study), corresponding to an average heterozygosity >0.89 for KNR insertions present in an individual; d) Huang et al. (2010) estimate an allele frequency of chromosome X KNR insertions of 0.58 and an allele frequency of 0.38 for a set of KNR insertions identified by whole-genome profiling, corresponding to an average heterozygosity of 0.59 and 0.77, respectively in individuals harboring the insertions; d) 75% (105/140) of the KNR insertions detected in individual 1465 in Evrony et al. (2015) (gold-standard KNR insertions detected in both bulk samples of the individual) are heterozygous or hemizygous (Evrony et al., 2015); e) in dbRIP (Wang et al., 2006), the average heterozygosity of polymorphic insertions among individuals with the insertion is 0.46 (with an average allele frequency of 0.59). This shows that most KNR insertions in an individual are heterozygous and present in a single copy per cell. We also plotted the RC-seq read count histograms of a pure set of single-copy KNR insertions\u2013 those found on chromosome X in male samples\u2013 and found a similar distribution of read counts as the full KNR set, with most insertions still detected by multiple reads in single cells: 65%, 12%, and 11% were detected with \u22653, \u226520 and \u226540 reads per sample (Figure 2\u2014figure supplement 1A).\n\nRC-seq somatic candidate read count histogram (Figure 2A): Single-cell RC-seq somatic candidate read counts were obtained from the 'Somatic L1' sheet of Table S2 in Upton et al. (2015). Bulk RC-seq somatic candidate read counts were provided by Geoffrey Faulkner upon request.\n\nWGS KNR read count histogram (Figure 2\u2014figure supplement 1B): The gold-standard KNR insertion set for the WGS read count histogram is defined as insertions detected in both bulk samples (cortex and heart) of the individual with the following parameters (see Evrony et al. (2015) for details of parameters): a) \u2265 2 RAM reads on each side of the breakpoint; b) \u2265 4 clipped reads supporting the insertion call; c) estimated target-site duplication or deletion \u2264 50 bp in size in the absence of a poly-A tail, or \u2264 250 bp in size if a poly-A tail was detected; d) at least half of clipped reads at the insertion site aligned to \u00b1 2 bp of the insertion breakpoint; e) the insertion was detected in prior independent L1 profiling studies from other groups (see Evrony et al. (2015) for list of prior L1 profiling studies used).\n\nL1-IP KNR read count histograms (Figure 2\u2014figure supplement 1C): The gold-standard KNR insertion set for the L1-IP read count histograms was defined as insertions detected with a confidence score \u2265 0.5 in at least half of the bulk samples of the individual and detected in prior independent L1 profiling studies of other groups (see Evrony et al. (2012) for list of prior L1 profiling studies used).\n\n### RC-seq L1 junction detection rates\n\nThe percentage of RC-seq insertions and candidates detected at only the 5', only the 3', or both 5' and 3' L1 junctions (Figure 2B) were obtained as follows:\n\nGermline KNR junction detection data for bulk and single-cell RC-seq samples were provided by Geoffrey Faulkner; these data annotated for each individual sample and each KNR insertion which L1 junctions were detected (5', 3', or both). Junction detection rates of both bulk and single-cell germline KNR insertions shown in Figure 2B are for the same high-confidence KNR insertion set defined for the single-cell KNR read count histogram in Figure 2A (see 'Read count histograms' in the prior section of the 'Materials and methods'). The numerator and denominator units of bulk and single-cell RC-seq KNR junction detection rates are KNR insertion calls, not KNR insertions; i.e. for a hypothetical KNR insertion detected in samples A, B, and C, each of these 3 calls is counted separately because the detection of a KNR insertion in each sample is independent of other samples.\n\nSingle-cell RC-seq somatic candidate junction detection data were obtained from the 'Somatic L1' sheet of Table S2 in Upton et al. (2015). 5'-only detected candidates are those with a negative alignment in the 'Sense L1' column but no antisense read or a negative alignment in the 'Antisense L1' column but no sense read. 3'-only detected candidates are those with a positive alignment in the 'Sense L1' column but no antisense read or a positive alignment in the 'Antisense L1' column but no sense read. Candidates detected at both 5' and 3' junctions are those with both sense and antisense reads. Note that the 'single-cell somatic candidate' junction data available in Table S2 of Upton et al. annotates junction detection per candidate (regardless of the number of cells in which the candidate was detected), in contrast to the 'single-cell KNR insertion' junction data that annotates junction detection for each individual sample in which the insertion was detected. Since 'single-cell somatic candidate' junction detection data is only available annotated per candidate rather than per cell, somatic candidates detected in multiple cells may skew the true junction detection rates and preclude comparison to 'single-cell KNR insertion' rates. Therefore, to allow comparison between 'single-cell somatic candidate' and 'single-cell KNR insertion' junction detection rates, the 'single-cell somatic candidate' junction detection rates in Figure 2B are for candidates detected in only one cell and excludes those detected in multiple cells. Nevertheless, even when including candidates found in more than one cell (i.e. considering both junctions as detected even when each was detected in a different single cell), only 0.4% (21/4728) of single-cell somatic candidates were detected at both junctions\u2013 still >25-fold less than the rate for single-cell KNR insertions (11%) and similar to the single-cell somatic candidate rate of 0.04% (2/4682) calculated when excluding candidates found in multiple cells.\n\n### RC-seq somatic retrotransposon insertion rate calculation\n\nBriefly, somatic insertion rates were calculated by first counting the number of somatic candidates detected with > 2 reads. Sequences of candidates were then manually examined and definite chimeras were excluded (Supplementary file 1). In each cell, the remaining number of candidates was adjusted for that cell's sensitivity for gold-standard KNR insertions. Insertion rates per cell type (Figure 3B) are an average of the rates across all single cells of that type. Below is a full explanation of the insertion rate calculations:\n\nRC-seq somatic retrotransposon insertion rates were calculated using RC-seq read counts of the gold-standard germline KNR insertion set to guide read count filtering. A read count threshold was chosen that would optimize the number of true (germline KNR and somatic) insertions above the threshold (sensitivity) while minimizing the number of false-positive calls (specificity). Sensitivity for true insertions at any given read count threshold was estimated per single cell using the single-cell RC-seq KNR insertion read count data provided by Geoffrey Faulkner. Sensitivity was calculated as the fraction of high-confidence germline KNR insertions present in the individual (i.e. insertions detected with \u2265 40 reads in both bulk samples of the individual, and identified in prior non RC-seq L1 profiling studies with a prior study annotated in the 'Database?' column of Upton et al. tables), that were detected in the single cell above the read count threshold. Specificity at any given read count was estimated using the read count distribution of all single-cell somatic candidate calls ('Somatic L1' sheet of Table S2 in Upton et al. (2015)) since nearly all are false-positives. As discussed in the main text and in the following paragraph, the latter assumption is valid because of the discrepancy between the read count distributions of KNR insertions versus somatic candidates.\n\nAs discussed above in the 'Read count histograms' section, the single-cell RC-seq KNR insertion read count distribution is bimodal due to non-uniformity of MALBAC amplification, with high and low read-count sub-populations (Figure 2A). Finite mixture modeling can estimate the proportion of the read count distribution that belongs to each sub-population. Finite mixture modeling estimates the high and low read count sub-populations comprise 1/3 and 2/3 of the single-cell KNR insertion distribution, respectively. In contrast, the read count distribution of single-cell somatic candidates is unimodal, concentrated at low signal with nearly all (99.6%) candidates having \u2264 2 reads (Figure 2A). Intuitively, the absence of a high-signal component in the somatic candidate read count distribution indicates nearly all somatic candidates are false-positives. Therefore, the somatic candidate read count distribution can be treated essentially as a false-positive distribution for the purposes of deciding on an optimal read count threshold. More formally, any single-cell somatic candidate distribution is a mixture of two subpopulations: false-positive candidates (e.g. chimeras) and true somatic insertions. A finite mixture model can estimate the proportion of somatic candidates that derives from a true somatic insertion subpopulation, using a model of the high read-count component of the true-positive KNR insertion distribution as a guide. This analysis estimates a negligible fraction (< 0.5%) of single-cell somatic candidates are true somatic insertions. Consequently, we can consider the read count distributions of KNR insertions and somatic candidates as reflecting true and false-positives, respectively. This then allows calculation of estimated sensitivity loss and specificity gain at increasing read count thresholds.\n\nIncreasing the read count threshold from >0 to >1 read reduces the per-cell sensitivity for true (KNR) insertion calls from an average of 45% to 31% (a 32% reduction) while reducing the estimated number of false-positive calls by ~97%. Further increasing the threshold to > 2 reads reduces the sensitivity for true insertion calls to 24% (a further 23% reduction) and reduces false-positive calls by an estimated additional ~84% relative to the > 1 read threshold\u2013 still a large improvement in specificity with a relatively modest reduction in sensitivity. Increasing the read count threshold further to > 3 reads leads to diminishing returns in terms of improved specificity\u2013 18% reduction in sensitivity with 35% reduction in false-positive calls relative to the > 2 read threshold\u2013 reflecting the fact that nearly all somatic candidate (mostly false-positive) calls are at read counts of 1 and 2. Therefore a read count threshold of > 2 reads was chosen, which maintains detection of 53% of KNR insertion calls across all single cells and a per-cell KNR detection sensitivity of 24%, while excluding an estimated 99.6% of false-positive calls.\n\nOnce the > 2 reads count threshold was chosen, for each single cell the number of somatic insertion candidates detected with > 2 reads was counted. Candidate sequences were then manually examined and candidates that were definite chimeras were excluded (see 'RC-seq |\u00a0Somatic L1 > 2 reads' sheet in Supplementary file 1 for sequence analyses of all candidates). For each cell, the remaining number of somatic candidates in the cell was then corrected for the sensitivity for gold-standard KNR insertions achieved in that same cell, i.e. dividing the number of somatic candidates by the fraction of KNR insertions detected in the cell above the chosen threshold, using the gold-standard KNR insertion reference of the individual from whom the single-cell derived, as described above. This final number was the estimated pre-PCR validation somatic insertion rate for the cell, since Upton et al. did not attempt PCR validation for these somatic candidates. Insertion rates per cell type (Figure 3B) are an average of the rates across all single cells of that type.\n\nFurther justification for the > 2 reads threshold is shown by estimates of the pre-PCR validation somatic insertion rate at read thresholds of >1, > 3, and > 4 reads. At a read threshold of >1 read, the estimated pre-PCR validation rate across all cells is 2.4 \u00b1 3.3 (SD) per cell prior to manual examination of candidates for chimeras. Adjusting for the chimera rate of 12/20 seen at the > 2 read threshold (since the chimera rate at a >1 read threshold could only be greater), gives a rate of 1.1 \u00b1 1.4 insertions per cell. At read thresholds of > 3 and > 4 reads, the estimated pre-PCR validation rates across all cells are 0.38 \u00b1 1.35 and 0.44 \u00b1 1.69 (SD), respectively, per cell prior to manual examination of candidates for chimeras. Adjusting for chimera rates of 8/13 and 7/12, respectively, seen in manual examination of the candidates (Supplementary file 1) yields pre-PCR validation rate estimates of 0.15 \u00b1 0.52 and 0.18 \u00b1 0.70, respectively, for the > 3 and > 4 read thresholds. These are similar to the estimate of 0.19 \u00b1 0.97 at a > 2 read threshold. In summary, the pre-PCR validation rates across all single cells at >1, > 2, > 3, and > 4 read thresholds (after excluding chimeras) are 1.1, 0.19, 0.15, and 0.18, respectively. This shows stability of the rate estimate at thresholds of > 2 reads or more, a result of the fact that the vast majority of chimeras appear with 1 or 2 reads, while most true insertions appear at higher read counts. The stability of the rate estimate above thresholds of > 2 reads supports the use of the > 2 read threshold, which optimizes sensitivity and specificity. In contrast, the somatic rate calculated at the > 1 read threshold is higher than the rates calculated at > 2, > 3, and > 4 reads and a significant overestimate of the true rate for two reasons: a) the > 1 read threshold begins to overlap the false-positive chimera distribution, so most candidates at the > 1 read threshold are chimeras. This is confirmed by the read count histogram analyses of KNR insertions and somatic candidates discussed above\u2013 namely that there is no discernible population of high read count candidates in the read count distribution of somatic candidates as there is in the KNR insertion read count distribution (Figure 2A), so the population of somatic candidates at read counts of 1 and 2 are nearly all false-positives; b) this is a pre-PCR validation rate. The somatic insertion rate estimate obtained at a > 1 read threshold is therefore an overestimate that would be confirmed as such after proper PCR validation, while the rate obtained at a > 2 read threshold is a more accurate pre-PCR validation rate estimate.\n\nThe somatic L1 retrotransposition rate for single neurons from Evrony et al. (2015) was calculated for comparison to the RC-seq rate. 16 single neurons were sequenced in Evrony et al. (2015), but the rate was estimated from the 14 single neurons that were selected randomly for sequencing. The 2 remaining cells in which L1 #1 was detected (neurons 2 and 77) (Evrony et al., 2015) were excluded from the rate estimate, because they were a priori chosen for whole-genome sequencing as positive controls known to harbor somatic L1 insertions previously detected by the L1-IP method in Evrony et al. (2012). Therefore, the calculated rate reflects the 2 of the 14 single neurons (neurons 6 and 18) that harbor the same L1 #2 clonal insertion (Evrony et al., 2015). The L1 somatic insertion rate estimate of each neuron was corrected for the neuron's sensitivity for KNR insertions.\n\n### L1-IP 3' PCR validation\n\n3' junction PCR validation of 48 L1-IP candidates with low read counts (Supplementary file 1, sheet 'L1-IP |\u00a0low-read-count') was performed as described in Evrony et al. (2012). The L1-IP computational pipeline was rerun on raw data from Evrony et al. (2012) after removing any read count filter. 24 candidates were randomly selected from all candidates detected by only 1 read, and another 24 candidates were randomly selected from all candidates.\n",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "a05aab6d-9279-448e-b2ea-c776226c56b4",
+      "submission_id": "d7e8f7db-7974-4a6e-aaa2-af39b0935986",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sean R Eddy, Howard Hughes Medical Institute, Harvard University , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.12966.015](https://doi.org/10.7554/eLife.12966.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Single-Neuron Genomics: Resolving Rates of Mutation in the Brain\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by Sean Eddy (Reviewing Editor) and a Senior Editor.\n\nThe following individuals involved in review of your submission have agreed to reveal their identity: Jay Shendure, Guillaume Bourque, and Ira Hall (peer reviewers).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe importance of somatic L1 transposition in neurons is debated. The arguments depend on the estimated rate of transposition events. Technically challenging single neuron genomics experiments have given discrepant estimates of <1 new L1 insertion per neuron (Evrony et al. 2012; 2015) versus 13-16 insertions per neuron (Upton et al., 2015). Here, Evrony et al. present a thorough critique of the data analysis and conclusions of the Upton paper, arguing that the Upton analysis overestimated the rate by >50x, and that the actual rate is about 0.2 insertions per neuron, thus resolving the discrepancy with previous results.\n\nThe reviewers and Reviewing Editor unanimously agree that your manuscript makes a convincing case. The burden of proof is high to publish such a direct and strongly-worded refutation of another group's results, but we agree that your manuscript meets that bar, and that this important and careful critique is strongly deserving of publication in eLife after minor revision.\n\nRequired revisions:\n\nWe would like you to address the following two points in a revision:\n\n1) The paper's main point should be made more succinctly. The most convincing section of the analysis is the clear difference between the read count data supporting \"known germline insertions\" (KNR) and novel insertion candidates. In general, the rest of the manuscript, and particularly the appendices, feels somewhat bloated. Specifically: a) the section toward the end of the manuscript on MALBEC vs. MDA could be significantly shortened and b) the \"framework for single-cell genomics\" in the final section of the manuscript seems like an attempt to spin a larger story out of a single case of an apparently flawed data analysis. This single case does not necessarily reflect a larger problem in the field that justifies a broad call for standardization, and the call for \"shared standards\" feels premature, given the rapid changes in the field. The paper would be stronger if this section were deleted or condensed to at most a few sentences.\n\n2) You should soften the tone of the paper so that it's less likely to be perceived as combative. Your points are overwhelmingly and substantively supported. They will stand strongly on their own without rhetoric.\n",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "08ffea4b-2d5c-4cc1-80e1-07cdcf552e04",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C1",
+      "claim": "Single-neuron genomics enables direct measurement of somatic mutation rates in human brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-neuron genomics enables direct measurement of somatic mutation rates in human brain and promises to answer this question.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a capability of the technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "d7cc99b1-c0e6-4ee0-aff7-6ad53f7e889d",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C5",
+      "claim": "The reanalysis supports a mutation frequency of approximately 0.2 events per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Our reanalysis supports a mutation frequency of approximately 0.2 events per cell, which is about fifty-fold lower than reported, confirming that L1 elements mobilize in some human neurons but indicating that L1 mosaicism is not ubiquitous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' reanalysis of the Upton et al. data, as detailed in the Results section.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "898b4efc-8fea-40b1-87de-f71304e0611c",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C6",
+      "claim": "The corrected mutation frequency is about fifty-fold lower than reported by Upton et al.",
+      "claim_type": "EXPLICIT",
+      "source": "Our reanalysis supports a mutation frequency of approximately 0.2 events per cell, which is about fifty-fold lower than reported, confirming that L1 elements mobilize in some human neurons but indicating that L1 mosaicism is not ubiquitous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of the reanalysis results to the original Upton et al. findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "18340a94-a7db-4a04-815d-61dbb7e56e96",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C7",
+      "claim": "L1 elements mobilize in some human neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Our reanalysis supports a mutation frequency of approximately 0.2 events per cell, which is about fifty-fold lower than reported, confirming that L1 elements mobilize in some human neurons but indicating that L1 mosaicism is not ubiquitous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is confirmed by the reanalysis showing a low but non-zero rate of L1 mobilization.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "bc2167f5-205f-4580-9700-ddbb83054151",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C8",
+      "claim": "L1 mosaicism is not ubiquitous.",
+      "claim_type": "EXPLICIT",
+      "source": "Our reanalysis supports a mutation frequency of approximately 0.2 events per cell, which is about fifty-fold lower than reported, confirming that L1 elements mobilize in some human neurons but indicating that L1 mosaicism is not ubiquitous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the low rate of L1 mobilization found in the reanalysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "8e8f78d0-f7b0-4b0b-af98-ef175fe9e56a",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C9",
+      "claim": "LINE-1 (L1) elements are endogenous retrotransposons that transcribe an RNA copy that is reverse-transcribed into a DNA copy that can then insert into a novel site in the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "LINE-1 (L1) elements are endogenous retrotransposons that transcribe an RNA copy that is reverse-transcribed into a DNA copy that can then insert into a novel site in the genome, creating mutations capable of disrupting or modifying the expression of genes in which they insert or neighboring genes (Goodier and Kazazian, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about L1 elements, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "d0825f5f-1b33-4147-8129-6bf4fd5def0b",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C10",
+      "claim": "L1 insertions can create mutations capable of disrupting or modifying the expression of genes in which they insert or neighboring genes.",
+      "claim_type": "EXPLICIT",
+      "source": "LINE-1 (L1) elements are endogenous retrotransposons that transcribe an RNA copy that is reverse-transcribed into a DNA copy that can then insert into a novel site in the genome, creating mutations capable of disrupting or modifying the expression of genes in which they insert or neighboring genes (Goodier and Kazazian, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about L1 elements, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "b384af90-50d5-4f4a-9f82-651e6d061904",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C11",
+      "claim": "Transposon mobilization is an essential cause of the generation of species diversity.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolutionarily, transposon mobilization is an essential cause of the generation of species diversity (Cordaux and Batzer, 2009), so interest in possible L1 activity during brain development was spurred by the discovery that these elements can mobilize in neuronal progenitor cells (Coufal et al., 2009; Muotri et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Cordaux and Batzer, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "621fb755-9345-4814-ae78-94aabc98754e",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C12",
+      "claim": "L1 elements can mobilize in neuronal progenitor cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolutionarily, transposon mobilization is an essential cause of the generation of species diversity (Cordaux and Batzer, 2009), so interest in possible L1 activity during brain development was spurred by the discovery that these elements can mobilize in neuronal progenitor cells (Coufal et al., 2009; Muotri et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Coufal et al., 2009 and Muotri et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "9c96b5f6-405e-4d3b-8789-aba05378c3ff",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C13",
+      "claim": "Single-cell sequencing has revealed and quantified previously unknown mechanisms of somatic mutation in the human brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell sequencing is a powerful technology that has revealed and quantified previously unknown mechanisms of somatic mutation in the human brain, providing a first proof of principle for the systematic measurement of somatic mutation rates in any normal human tissue (Evrony et al., 2012; McConnell et al., 2013; Cai et al., 2014; Evrony et al., 2015; Lodato et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior single-cell sequencing studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "d7e733a5-76ec-4e02-be8c-1ccebdf168b4",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C14",
+      "claim": "Single-cell sequencing provides a first proof of principle for the systematic measurement of somatic mutation rates in any normal human tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell sequencing is a powerful technology that has revealed and quantified previously unknown mechanisms of somatic mutation in the human brain, providing a first proof of principle for the systematic measurement of somatic mutation rates in any normal human tissue (Evrony et al., 2012; McConnell et al., 2013; Cai et al., 2014; Evrony et al., 2015; Lodato et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior single-cell sequencing studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "30c0836b-409e-4a88-8d0d-5391f9f87298",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C15",
+      "claim": "L1 mobilization has been observed at low rates using a transgenic L1 reporter in rodent brain in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "L1 mobilization has been observed at low rates using indirect genetic techniques such as a transgenic L1 reporter in rodent brain in vivo (Muotri et al., 2005; 2010) and human progenitor cells in vitro (Coufal et al., 2009), while studies profiling human brain bulk DNA suggested much higher rates (Baillie et al., 2011; Bundo et al., 2014; Coufal et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Muotri et al., 2005 and 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "95ef5624-54b4-40aa-ba9a-72729673eea8",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C16",
+      "claim": "L1 mobilization has been observed at low rates in human progenitor cells in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "L1 mobilization has been observed at low rates using indirect genetic techniques such as a transgenic L1 reporter in rodent brain in vivo (Muotri et al., 2005; 2010) and human progenitor cells in vitro (Coufal et al., 2009), while studies profiling human brain bulk DNA suggested much higher rates (Baillie et al., 2011; Bundo et al., 2014; Coufal et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Coufal et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "2284336b-7fed-4375-b2b3-2326bff48567",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C17",
+      "claim": "Studies profiling human brain bulk DNA suggested much higher rates of L1 mobilization.",
+      "claim_type": "EXPLICIT",
+      "source": "L1 mobilization has been observed at low rates using indirect genetic techniques such as a transgenic L1 reporter in rodent brain in vivo (Muotri et al., 2005; 2010) and human progenitor cells in vitro (Coufal et al., 2009), while studies profiling human brain bulk DNA suggested much higher rates (Baillie et al., 2011; Bundo et al., 2014; Coufal et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Baillie et al., 2011; Bundo et al., 2014; Coufal et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "e2dd526c-b3a3-46c9-b0dd-09b16fa19494",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C18",
+      "claim": "Single-cell sequencing has been proposed as the definitive method to resolve disparate estimates of L1 mobilization rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-cell sequencing has been proposed as the definitive method to resolve these disparate estimates (Erwin et al., 2014; Goodier, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Erwin et al., 2014 and Goodier, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "92363523-bfa6-4c42-8d29-b8da6fba24e2",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C19",
+      "claim": "More than half (7 of 13) of Upton et al.'s putative PCR-validated candidates are chimera artifacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence analysis of Upton et al.'s putative PCR-validated candidates (Table S2 of Upton et al.) demonstrates that more than half of them (7 of 13) are chimera artifacts that could not have been generated by the process of L1 mobilization (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' sequence analysis of the candidates, documented in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "37eded1b-bcab-4917-a2c6-15c7771af6ab",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C20",
+      "claim": "Some chimeras originated immediately downstream of germline L1Hs/L1Pa elements that are incapable of retrotransposition because the L1 elements are truncated, are from an old, inactive L1 subfamily, or contain numerous inactivating mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Some chimeras originated immediately downstream of germline L1Hs/L1Pa elements that are incapable of retrotransposition, because the L1 elements are truncated, are from an old, inactive L1 subfamily, or contain numerous inactivating mutations (Figure 1B; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence analysis shown in Figure 1B and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "3f3fb677-a3da-4312-b781-6e5840fcc19d",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C21",
+      "claim": "In some cases, L1 5' and 3' junction chimeras originating from distinct L1 elements were misinterpreted as two ends of the same L1.",
+      "claim_type": "EXPLICIT",
+      "source": "In other cases, L1 5' and 3' junction chimeras originating from distinct L1 elements were misinterpreted as two ends of the same L1 (Figures 1B\u2013C; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence analysis shown in Figures 1B-C and Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "a92ed33f-b6dd-42db-9a6f-05785b54edbd",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C22",
+      "claim": "Some candidates lack poly-A tails, a key feature of retrotransposon insertions.",
+      "claim_type": "EXPLICIT",
+      "source": "Some candidates lack poly-A tails (Figure 1C; Supplementary file 1), a key feature of retrotransposon insertions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on sequence analysis shown in Figure 1C and Supplementary file 1.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "f92654ff-d651-4e3a-8535-b3a27899dcaf",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C23",
+      "claim": "Upton et al. performed 3' junction PCR validation for 10 RC-seq candidates for which they had detected the 5'end, and 3' junction validation failed for all 10.",
+      "claim_type": "EXPLICIT",
+      "source": "Upton et al. performed 3' junction PCR validation for 10 RC-seq candidates for which they had detected the 5'end, and while 3' junction validation is technically straightforward, it failed for all 10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the validation results from Upton et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "3568e087-be6c-4940-a014-6d874a939dc0",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C24",
+      "claim": "Poly-A tails do not obstruct PCR.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the authors attribute their validation failure to poly-A tails obstructing PCR amplification, poly-A tails do not obstruct PCR: the single-cell RC-seq method used by Upton et al. itself entails three PCR steps in which L1 3' junctions are amplified, and 3' junction PCR is the standard validation approach used in L1 studies (Ewing and Kazazian, 2010; Grandi et al., 2012; Huang et al., 2010; Iskow et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to standard L1 studies and by the fact that the RC-seq method itself uses PCR on 3' junctions.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "1bdffc36-d805-40a8-8e33-19a7e9d8038b",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C25",
+      "claim": "3' junction PCR is the standard validation approach used in L1 studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the authors attribute their validation failure to poly-A tails obstructing PCR amplification, poly-A tails do not obstruct PCR: the single-cell RC-seq method used by Upton et al. itself entails three PCR steps in which L1 3' junctions are amplified, and 3' junction PCR is the standard validation approach used in L1 studies (Ewing and Kazazian, 2010; Grandi et al., 2012; Huang et al., 2010; Iskow et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple L1 studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "a03c0d4c-3fb8-4744-b912-80fe0f878b14",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C26",
+      "claim": "The failure of all 10/10 3' junction validation attempts suggests a high prevalence of false-positives among RC-seq candidates detected with only 5' junction reads.",
+      "claim_type": "EXPLICIT",
+      "source": "The failure of all 10/10 3' junction validation attempts suggests a high prevalence of false-positives among RC-seq candidates detected with only 5' junction reads, which represent 27% of all candidate insertions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the validation failure rate.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "a179e5f3-5148-4231-826e-25017e973d08",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C27",
+      "claim": "Candidates detected with only 5' junction reads represent 27% of all candidate insertions in Upton et al.",
+      "claim_type": "EXPLICIT",
+      "source": "The failure of all 10/10 3' junction validation attempts suggests a high prevalence of false-positives among RC-seq candidates detected with only 5' junction reads, which represent 27% of all candidate insertions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the composition of candidates in Upton et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "644fd81d-1c2b-4bb3-905b-87d1a1c73e33",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C28",
+      "claim": "A bona fide L1 insertion creates two genome breakpoints at the insertion site, one on each end of the insertion (5' and 3').",
+      "claim_type": "EXPLICIT",
+      "source": "A bona fide L1 insertion creates two genome breakpoints at the insertion site, one on each end of the insertion (5' and 3'), while a chimera has only one breakpoint at the called insertion site (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about L1 insertions, illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "8d2b3e6b-2cc1-4ff5-968d-a4fdbab75059",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C29",
+      "claim": "A chimera has only one breakpoint at the called insertion site.",
+      "claim_type": "EXPLICIT",
+      "source": "A bona fide L1 insertion creates two genome breakpoints at the insertion site, one on each end of the insertion (5' and 3'), while a chimera has only one breakpoint at the called insertion site (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about chimeras, illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "dfb50df1-04c8-4403-96ad-4491a8781131",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C30",
+      "claim": "Full-length cloning validation is the only way to confirm that both breakpoints are present in the same DNA molecule as a bona fide insertion.",
+      "claim_type": "EXPLICIT",
+      "source": "Full-length cloning validation, in which the entire L1 insertion is amplified in a single DNA molecule spanning both breakpoints (using primers based in the genomic sequence flanking the L1), is therefore the only way to confirm that both breakpoints are present in the same DNA molecule as a bona fide insertion, as opposed to two different chimeric molecules (Figure 1A; Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a logical inference about validation methods, illustrated in Figure 1A and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "a21c6db4-7ed1-480c-a376-cc6a105b741e",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C31",
+      "claim": "Upton et al. did not perform full-length cloning validation on any insertion.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Upton et al. did not perform full-length cloning validation on any insertion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the methods used by Upton et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "bb084882-c64b-46b3-bb2c-e3aac64e2866",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C32",
+      "claim": "Two independent chimeras can occur by chance in two different DNA molecules/copies whose non-L1 sequences overlap the same genomic locus, giving the false appearance of a target site duplication (TSD).",
+      "claim_type": "EXPLICIT",
+      "source": "Two independent chimeras can even occur by chance in two different DNA molecules/copies whose non-L1 sequences overlap the same genomic locus, giving the false appearance of a target site duplication (TSD) (Figures 1B\u2013C; Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by examples in Figures 1B-C and Supplementary file 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "141ca71e-b265-4716-98c9-8d0e68625e00",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C33",
+      "claim": "MALBAC produces short amplicons (0.5\u20131.5kb) compared to multiple displacement amplification (MDA) (10\u201350 kb amplicons).",
+      "claim_type": "EXPLICIT",
+      "source": "MALBAC produces short amplicons (0.5\u20131.5kb) compared to multiple displacement amplification (MDA) (10\u201350 kb amplicons) (Dean et al., 2002; Zhang et al., 2015; Zong et al., 2012), so insertions longer than ~1.5 kb (~15\u201330% of somatic L1 insertions in human cancer studies [Helman et al., 2014; Lee et al., 2012; Tubio et al., 2014]) would not be efficiently validated in MALBAC single cells (Figure 1\u2014figure supplements 1A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to studies characterizing MALBAC and MDA.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "f45ae195-763d-4fac-83e0-15251eed9996",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C34",
+      "claim": "Insertions longer than ~1.5 kb (~15\u201330% of somatic L1 insertions in human cancer studies) would not be efficiently validated in MALBAC single cells.",
+      "claim_type": "EXPLICIT",
+      "source": "MALBAC produces short amplicons (0.5\u20131.5kb) compared to multiple displacement amplification (MDA) (10\u201350 kb amplicons) (Dean et al., 2002; Zhang et al., 2015; Zong et al., 2012), so insertions longer than ~1.5 kb (~15\u201330% of somatic L1 insertions in human cancer studies [Helman et al., 2014; Lee et al., 2012; Tubio et al., 2014]) would not be efficiently validated in MALBAC single cells (Figure 1\u2014figure supplements 1A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on MALBAC amplicon size and the size distribution of L1 insertions from cancer studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "2d80bb0a-6393-4d8b-8a8e-3cb049be012a",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C35",
+      "claim": "One recurrent type of chimera artifact accounts for 16% of Upton et al.'s candidates detected only at a 5' junction.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, even some chimeras that can be identified computationally were not filtered: one recurrent type of chimera artifact accounts for 16% of their candidates detected only at a 5' junction (Supplementary file 1; see example candidate chr11:112602973).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the authors' analysis documented in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "7682ef35-b8f5-4d3f-be11-dbb6163ef601",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C36",
+      "claim": "97% (4634/4759) of Upton et al.'s single-cell insertion calls were supported by a single Illumina sequencing read.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, 97% (4634/4759) of their single-cell insertion calls were supported by a single Illumina sequencing read and 99.6% by 1 or 2 reads; 94% of their >320,000 candidates from 'bulk' DNA were also supported by only 1 read (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of the read count data from Upton et al., shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "983803bf-263c-44a6-acbb-7e620f0d2c6a",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C37",
+      "claim": "99.6% of Upton et al.'s single-cell insertion calls were supported by 1 or 2 reads.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, 97% (4634/4759) of their single-cell insertion calls were supported by a single Illumina sequencing read and 99.6% by 1 or 2 reads; 94% of their >320,000 candidates from 'bulk' DNA were also supported by only 1 read (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of the read count data from Upton et al., shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "8f3bc1ad-5c00-48bc-81ff-17a60b5f0d0c",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C38",
+      "claim": "94% of Upton et al.'s >320,000 candidates from 'bulk' DNA were supported by only 1 read.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, 97% (4634/4759) of their single-cell insertion calls were supported by a single Illumina sequencing read and 99.6% by 1 or 2 reads; 94% of their >320,000 candidates from 'bulk' DNA were also supported by only 1 read (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of the read count data from Upton et al., shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "3e69728a-5871-4299-a367-a885d4886baf",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C39",
+      "claim": "In single-cell RC-seq samples, 53% of the 4049 calls of high-confidence gold-standard KNR insertions were detected with \u22653 reads per sample.",
+      "claim_type": "EXPLICIT",
+      "source": "In single-cell RC-seq samples, 53%, 24% and 20% of the 4049 calls of high-confidence gold-standard KNR insertions were detected with \u22653, \u226520 and \u226540 reads per sample, respectively; only 32% were detected with only 1 read (Figure 2A; Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of KNR insertion read counts from Upton et al. data, shown in Figure 2A and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "31f55302-16bd-416a-81e3-6af6efab587f",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C40",
+      "claim": "In single-cell RC-seq samples, 24% of the 4049 calls of high-confidence gold-standard KNR insertions were detected with \u226520 reads per sample.",
+      "claim_type": "EXPLICIT",
+      "source": "In single-cell RC-seq samples, 53%, 24% and 20% of the 4049 calls of high-confidence gold-standard KNR insertions were detected with \u22653, \u226520 and \u226540 reads per sample, respectively; only 32% were detected with only 1 read (Figure 2A; Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of KNR insertion read counts from Upton et al. data, shown in Figure 2A and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "312c2992-0709-49f0-8cc3-fb210b6720b5",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C41",
+      "claim": "In single-cell RC-seq samples, 20% of the 4049 calls of high-confidence gold-standard KNR insertions were detected with \u226540 reads per sample.",
+      "claim_type": "EXPLICIT",
+      "source": "In single-cell RC-seq samples, 53%, 24% and 20% of the 4049 calls of high-confidence gold-standard KNR insertions were detected with \u22653, \u226520 and \u226540 reads per sample, respectively; only 32% were detected with only 1 read (Figure 2A; Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of KNR insertion read counts from Upton et al. data, shown in Figure 2A and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "8c816a51-124e-4cf1-baf3-7dc7dfec123e",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C42",
+      "claim": "In single-cell RC-seq samples, only 32% of high-confidence gold-standard KNR insertions were detected with only 1 read.",
+      "claim_type": "EXPLICIT",
+      "source": "In single-cell RC-seq samples, 53%, 24% and 20% of the 4049 calls of high-confidence gold-standard KNR insertions were detected with \u22653, \u226520 and \u226540 reads per sample, respectively; only 32% were detected with only 1 read (Figure 2A; Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of KNR insertion read counts from Upton et al. data, shown in Figure 2A and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "4abcabab-a69b-4750-ae8f-36a6ee2f493a",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C43",
+      "claim": "Only 0.4% (20/4759) of single-cell somatic insertion candidates were detected with \u22653 reads.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, 97% (4634/4759) of single-cell somatic insertion candidates were detected with only 1 read and only 0.4% (20/4759) with \u22653 reads (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of somatic candidate read counts from Upton et al., shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "072aa912-85b1-4a68-9170-0a0503b78b06",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C44",
+      "claim": "The strikingly higher read depths of gold-standard germline KNR L1 insertions relative to somatic insertion candidates in the same experiment is consistent with the vast majority of claimed somatic insertions not corresponding to bona fide insertions.",
+      "claim_type": "EXPLICIT",
+      "source": "The strikingly higher read depths of gold-standard germline KNR L1 insertions relative to somatic insertion candidates in the same experiment is consistent with the vast majority of claimed somatic insertions not corresponding to bona fide insertions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison of read count distributions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "a54e58c4-71ab-45fa-ab8f-7407f08bcf0d",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C45",
+      "claim": "11% of single-cell KNR insertion calls were detected at both L1 (5' and 3') junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "11% of single-cell KNR insertion calls were detected at both L1 (5' and 3') junctions, whereas >250-fold less\u2014 only 0.04% (2/4682)\u2014 of single-cell somatic insertion candidates were detected at both junctions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of junction detection data from Upton et al., shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "046b117f-6302-4f27-afe8-9a2eac92db9e",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C46",
+      "claim": "Only 0.04% (2/4682) of single-cell somatic insertion candidates were detected at both junctions.",
+      "claim_type": "EXPLICIT",
+      "source": "11% of single-cell KNR insertion calls were detected at both L1 (5' and 3') junctions, whereas >250-fold less\u2014 only 0.04% (2/4682)\u2014 of single-cell somatic insertion candidates were detected at both junctions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of junction detection data from Upton et al., shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "731f6caa-d055-4543-a4e6-89fa553ce906",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C47",
+      "claim": "8 of the 12 hippocampal single-cell somatic candidates detected at both junctions are chimera artifacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence analysis shows 8 of the 12 hippocampal single-cell somatic candidates detected at both junctions (including candidates in which each junction was detected in a different sample) are chimera artifacts (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis documented in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "63aa6670-4866-471a-b178-07285fc59b49",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C48",
+      "claim": "RC-seq bulk somatic candidates have a non-canonical distribution of large TSD sizes, inconsistent with nearly all prior L1 research.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, RC-seq bulk somatic candidates have a non-canonical distribution of large TSD sizes, inconsistent with nearly all prior L1 research (Appendix 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of TSD sizes in Appendix 1.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "f769222f-1026-4170-bb57-752e701363b1",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C49",
+      "claim": "Analysis of 10 randomly selected candidates with large (>50 bp) TSDs found all were chimera artifacts.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of 10 randomly selected candidates with large (>50 bp) TSDs found all were chimera artifacts (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis documented in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "83da3c20-84da-4029-a592-94746f0a541c",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C50",
+      "claim": "A read count threshold of > 2 optimizes sensitivity and specificity, maintaining detection of 53% of true positive KNR insertion calls across all single cells and a per-cell KNR detection sensitivity of 24%, while excluding ~99.6% of false-positive calls.",
+      "claim_type": "EXPLICIT",
+      "source": "A read count threshold of > 2 optimizes sensitivity and specificity, maintaining detection of 53% of true positive KNR insertion calls across all single cells (Figure 2A) and a per-cell KNR detection sensitivity of 24% (Figure 3A), while excluding ~99.6% of false-positive calls (see 'Materials and methods').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of read count distributions and sensitivity calculations, shown in Figures 2A and 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "cfac0045-ecf5-466d-94b5-19e06a1db7d5",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C51",
+      "claim": "Only 20 somatic insertion candidates supported by >2 reads were detected across all 170 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 20 somatic insertion candidates supported by >2 reads were detected across all 170 cells, and 12 of these were chimeras upon further sequence analysis (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the Upton et al. data with the >2 read threshold applied.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "2ebe59c6-c4cb-429b-9c5c-808c2bc74872",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C52",
+      "claim": "12 of the 20 somatic insertion candidates supported by >2 reads were chimeras upon further sequence analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Only 20 somatic insertion candidates supported by >2 reads were detected across all 170 cells, and 12 of these were chimeras upon further sequence analysis (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis documented in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "d350f602-590e-4454-b650-c3044606e396",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C53",
+      "claim": "The remaining 8 candidates yield a sensitivity-corrected somatic insertion rate estimate of 0.19 per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining 8 candidates yield a sensitivity-corrected somatic insertion rate estimate of 0.19 per cell, with no significant difference in rates between cell types (hippocampal neurons and glia, cortical neurons, and AGS hippocampal neurons) (p = 0.98, ANOVA) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on calculation using the 8 remaining candidates after filtering, shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "deb45bdf-f4e8-4b68-9c49-79977c497aa6",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C54",
+      "claim": "There is no significant difference in somatic insertion rates between cell types (hippocampal neurons and glia, cortical neurons, and AGS hippocampal neurons) (p = 0.98, ANOVA).",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining 8 candidates yield a sensitivity-corrected somatic insertion rate estimate of 0.19 per cell, with no significant difference in rates between cell types (hippocampal neurons and glia, cortical neurons, and AGS hippocampal neurons) (p = 0.98, ANOVA) (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on statistical analysis (ANOVA) of the rate data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "875e0dbe-80b5-4aba-91b3-515eb1a21df8",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C55",
+      "claim": "95% of single cells did not have any somatic insertion candidates (excluding chimeras) supported by >2 sequencing reads.",
+      "claim_type": "EXPLICIT",
+      "source": "95% of single cells did not have any somatic insertion candidates (excluding chimeras) supported by >2 sequencing reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the filtered candidate data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "19c96a72-ce00-4ef1-92df-04b427f4916d",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C56",
+      "claim": "RC-seq somatic insertion rates are consistent with rates previously estimated by L1 insertion profiling (L1-IP) in single cortical and caudate neurons (0.07 \u00b1 0.15 (SD); p = 0.54, ANOVA).",
+      "claim_type": "EXPLICIT",
+      "source": "These RC-seq somatic insertion rates are quite consistent with rates previously estimated by L1 insertion profiling (L1-IP) in single cortical and caudate neurons (0.07 \u00b1 0.15 (SD); p = 0.54, ANOVA) (Evrony et al., 2012), and using single-neuron whole-genome sequencing (0.18 \u00b1 0.47 (SD); p = 0.37, ANOVA) (Evrony et al., 2015), suggesting a notable consensus by three methods confirming that somatic L1 insertions are present in human brain, but fewer than one per average genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison to prior studies and statistical analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "2ff66312-ee87-4121-9fd0-29da50716cc2",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C57",
+      "claim": "RC-seq somatic insertion rates are consistent with rates estimated using single-neuron whole-genome sequencing (0.18 \u00b1 0.47 (SD); p = 0.37, ANOVA).",
+      "claim_type": "EXPLICIT",
+      "source": "These RC-seq somatic insertion rates are quite consistent with rates previously estimated by L1 insertion profiling (L1-IP) in single cortical and caudate neurons (0.07 \u00b1 0.15 (SD); p = 0.54, ANOVA) (Evrony et al., 2012), and using single-neuron whole-genome sequencing (0.18 \u00b1 0.47 (SD); p = 0.37, ANOVA) (Evrony et al., 2015), suggesting a notable consensus by three methods confirming that somatic L1 insertions are present in human brain, but fewer than one per average genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison to prior studies and statistical analysis.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "7ab35601-e4e1-442b-b79b-98ac4d78f680",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C58",
+      "claim": "Three methods confirm that somatic L1 insertions are present in human brain, but fewer than one per average genome.",
+      "claim_type": "EXPLICIT",
+      "source": "These RC-seq somatic insertion rates are quite consistent with rates previously estimated by L1 insertion profiling (L1-IP) in single cortical and caudate neurons (0.07 \u00b1 0.15 (SD); p = 0.54, ANOVA) (Evrony et al., 2012), and using single-neuron whole-genome sequencing (0.18 \u00b1 0.47 (SD); p = 0.37, ANOVA) (Evrony et al., 2015), suggesting a notable consensus by three methods confirming that somatic L1 insertions are present in human brain, but fewer than one per average genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the consistency of results across three different methods.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "b215b25e-e64b-442e-a2fc-5abab2a7999b",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C59",
+      "claim": "2 of the 8 somatic insertion candidates detected following read count filtering correspond to a single, likely bona fide L1Hs insertion in neuron #11 (12 reads) and glial cell #2 (6 reads) from the hippocampus of individual 45.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, 2 of the 8 somatic insertion candidates detected following read count filtering correspond to a single, likely bona fide L1Hs insertion in neuron #11 (12 reads) and glial cell #2 (6 reads) from the hippocampus of individual 45 (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis documented in Supplementary file 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "f0e6b418-44d3-48f7-8660-f8462eec2d6f",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C60",
+      "claim": "This intergenic insertion shows RC-seq reads capturing both 5' and 3' junctions bearing all the hallmarks of a true retrotransposition event: a TSD, poly-A tail, and a 3' transduction that traces its source to a population-polymorphic (KNR) L1 on chromosome 2 that was identified in a prior L1 profiling study.",
+      "claim_type": "EXPLICIT",
+      "source": "This intergenic insertion shows RC-seq reads capturing both 5' and 3' junctions bearing all the hallmarks of a true retrotransposition event: a TSD, poly-A tail, and a 3' transduction that traces its source to a population-polymorphic (KNR) L1 on chromosome 2 that was identified in a prior L1 profiling study (Iskow et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence analysis of the insertion and citation to a prior study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "49ee073f-4575-4c53-abff-0e3ecd7ea891",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C61",
+      "claim": "This same somatic insertion was also detected in glial cells #7 and #8 of the individual, each with 2 reads.",
+      "claim_type": "EXPLICIT",
+      "source": "This same somatic insertion was also detected in glial cells #7 and #8 of the individual, each with 2 reads.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on analysis of the Upton et al. data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "67d389e0-60d3-4b50-a5d3-3af0f8d8f3ce",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C62",
+      "claim": "MALBAC-amplified single cells profiled by RC-seq had reduced performance relative to bulk RC-seq in terms of gold-standard KNR insertion read counts and junction detection rates.",
+      "claim_type": "EXPLICIT",
+      "source": "MALBAC-amplified single cells profiled by RC-seq had reduced performance relative to bulk RC-seq in terms of gold-standard KNR insertion read counts and junction detection rates (Figures 2A\u2013B), and had significantly lower sensitivity for KNR insertions (higher dropout) than L1 profiling of MDA-amplified single cells (Figure 3A; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparative analysis shown in Figures 2A-B, 3A, and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "5531ca26-b383-4084-b79d-86d730f005ae",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C63",
+      "claim": "MALBAC-amplified single cells had significantly lower sensitivity for KNR insertions (higher dropout) than L1 profiling of MDA-amplified single cells.",
+      "claim_type": "EXPLICIT",
+      "source": "MALBAC-amplified single cells profiled by RC-seq had reduced performance relative to bulk RC-seq in terms of gold-standard KNR insertion read counts and junction detection rates (Figures 2A\u2013B), and had significantly lower sensitivity for KNR insertions (higher dropout) than L1 profiling of MDA-amplified single cells (Figure 3A; Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparative analysis shown in Figure 3A and Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "8d69b87f-dcc2-48c7-a0de-9ca3f88784aa",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C64",
+      "claim": "At genomic scales < 50 kb, MALBAC-amplified single cells show systematic ~1 kb peaks of high genome amplification separated by troughs of low amplification or complete dropout.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of Upton et al.'s pre-RC-seq whole-genome sequencing of MALBAC-amplified single cells shows that at genomic scales < 50 kb (high-resolution view), which includes the size range of retrotransposons and single-nucleotide variants (SNV), there are systematic ~1 kb peaks of high genome amplification separated by troughs of low amplification or complete dropout (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of whole-genome sequencing data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "72bc33d9-c144-4605-a4ec-292e625c4421",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C65",
+      "claim": "These peaks and troughs often occur in the same locations as in MALBAC single cells from an unrelated study by Zong et al. (2012), suggesting that this non-uniformity in genome amplification is inherent to MALBAC.",
+      "claim_type": "EXPLICIT",
+      "source": "These peaks and troughs often occur in the same locations as in MALBAC single cells from an unrelated study by Zong et al. (2012) (Figure 4A), suggesting that this non-uniformity in genome amplification is inherent to MALBAC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on comparison of MALBAC samples from different studies, shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "d7b2aeb1-5dc9-4f68-98c0-6a41a459714b",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C66",
+      "claim": "MDA single cells show significantly better uniformity of genome amplification at genomic scales < 50 kb than MALBAC single cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, MDA single cells show significantly better uniformity of genome amplification at these size scales (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparative analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "dcababa3-afe2-486a-8d7b-61da0010bbf6",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C67",
+      "claim": "The non-uniformity of MALBAC at genomic scales encompassing the size range of retrotransposon elements likely explains the subset of true KNR insertions appearing at low read counts and the low sensitivity (high allelic dropout) of single-cell RC-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "The non-uniformity of MALBAC at genomic scales encompassing the size range of retrotransposon elements likely explains the subset of true KNR insertions appearing at low read counts (Figure 2A) and the low sensitivity (high allelic dropout) of single-cell RC-seq (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the observed non-uniformity and its effects on detection.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "46818652-6d30-46ca-bb80-201562ff0166",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C68",
+      "claim": "MALBAC's non-uniformity explains MALBAC's lower overall breadth of genome-wide coverage at nucleotide resolution (i.e. higher locus dropout) relative to MDA.",
+      "claim_type": "EXPLICIT",
+      "source": "It also explains MALBAC's lower overall breadth of genome-wide coverage at nucleotide resolution (i.e. higher locus dropout) relative to MDA (Figure 4\u2014figure supplement 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the non-uniformity analysis, with data shown in Figure 4\u2014figure supplement 2A.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "544b81b1-e152-4366-8039-408e5a5c425b",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C69",
+      "claim": "Individual MALBAC single cells from Upton et al. have significantly lower quality than both MALBAC single cells from Zong et al. and MDA single neurons at genomic scales of ~500 kb bins.",
+      "claim_type": "EXPLICIT",
+      "source": "At larger genomic scales of ~500 kb bins (low-resolution view), MALBAC single cells from Upton et al. show significantly lower quality and higher variability among individual cells than both MALBAC-amplified single cells from Zong et al. and MDA-amplified single neurons (Figure 4B; Figure 4\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparative analysis shown in Figure 4B and Figure 4\u2014figure supplement 1A-B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "a04715bb-d574-4579-b37b-ca484e3ad0fb",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C70",
+      "claim": "Pooling of all 92 normal hippocampus single neurons from Upton et al. shows performance commensurate with MALBAC single cells from Zong et al., indicating that the low quality of Upton et al.'s single cells may be due to stochastic factors preceding MALBAC, such as poor tissue quality, rather than MALBAC itself.",
+      "claim_type": "EXPLICIT",
+      "source": "Pooling of all 92 normal hippocampus single neurons from Upton et al. shows performance commensurate with MALBAC single cells from Zong et al. (Figure 4B; Figure 4\u2014figure supplement 1A\u2013B), indicating that the low quality of Upton et al.'s single cells may be due to stochastic factors preceding MALBAC, such as poor tissue quality, rather than MALBAC itself.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the pooled sample analysis shown in Figure 4B and Figure 4\u2014figure supplement 1A-B.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "4a8bc310-0ea2-412c-a21e-46e9543cc51e",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C71",
+      "claim": "At genomic scales of ~500 kb bins, MALBAC single cells from Zong et al. have high reproducibility and better uniformity of genome coverage than MDA.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, at these genomic scales, MALBAC single cells from Zong et al. have high reproducibility and better uniformity of genome coverage than MDA (Figure 4B; Figure 4\u2014figure supplement 1A\u2013B) (Evrony et al., 2015), enabling MALBAC's better performance in detection of large copy number variants (Hou et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparative analysis shown in Figure 4B and Figure 4\u2014figure supplement 1A-B, and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "7c3cfc6b-4406-42b9-a384-1b55b3d7992d",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C72",
+      "claim": "MALBAC enables better performance in detection of large copy number variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, at these genomic scales, MALBAC single cells from Zong et al. have high reproducibility and better uniformity of genome coverage than MDA (Figure 4B; Figure 4\u2014figure supplement 1A\u2013B) (Evrony et al., 2015), enabling MALBAC's better performance in detection of large copy number variants (Hou et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hou et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "0da3eeba-54c7-43fa-8df6-bdbbc0122a33",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C73",
+      "claim": "Power spectral density measuring amplification uniformity across all genomic scales confirmed better uniformity of MALBAC at large genomic scales (> 30 kb) and better uniformity of MDA at small genomic scales (< 30 kb).",
+      "claim_type": "EXPLICIT",
+      "source": "Power spectral density measuring amplification uniformity across all genomic scales confirmed better uniformity of MALBAC at large genomic scales (> 30 kb) and better uniformity of MDA at small genomic scales (< 30 kb) (Figure 4C) (Evrony et al., 2015; Zhang et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on power spectral density analysis shown in Figure 4C, supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "f5ba936c-387b-4b9e-8436-bae8278bcd8a",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C74",
+      "claim": "MALBAC and MDA each have advantages at different genomic scales and for different mutation types.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results: a) suggest MALBAC and low quality single cells as contributors to single-cell RC-seq sensitivity loss; b) emphasize the importance of single-cell quality control at genomic scales relevant to the studied mutation type; and c) confirm that MALBAC and MDA each have advantages at different genomic scales and for different mutation types but that MALBAC is not especially well-suited for retrotransposon studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the comparative analyses presented.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "01c1ea3b-620a-448b-885e-9524e046e850",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C75",
+      "claim": "MALBAC is not especially well-suited for retrotransposon studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, these results: a) suggest MALBAC and low quality single cells as contributors to single-cell RC-seq sensitivity loss; b) emphasize the importance of single-cell quality control at genomic scales relevant to the studied mutation type; and c) confirm that MALBAC and MDA each have advantages at different genomic scales and for different mutation types but that MALBAC is not especially well-suited for retrotransposon studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the analyses showing MALBAC's limitations at the genomic scales relevant to retrotransposons.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "6bca8b6c-61a6-4696-bc2a-fa1122ffbc92",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C76",
+      "claim": "L1 mosaicism is not \"ubiquitous\" in the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have shown that L1 mosaicism is not \"ubiquitous\" in the hippocampus and that somatic insertion rates in the recent paper by Upton et al. were elevated > 50-fold due to the informatic analysis and a lack of definitive validation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the reanalysis showing much lower rates than Upton et al. reported.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "39412e3b-dd5d-438d-9d1d-c04b25abffc2",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C77",
+      "claim": "Somatic insertion rates in Upton et al. were elevated > 50-fold due to the informatic analysis and a lack of definitive validation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have shown that L1 mosaicism is not \"ubiquitous\" in the hippocampus and that somatic insertion rates in the recent paper by Upton et al. were elevated > 50-fold due to the informatic analysis and a lack of definitive validation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the reanalysis identifying artifacts and methodological issues.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "e6dd23e7-1224-4eca-8064-74d9d05c329d",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C78",
+      "claim": "The corrected rate of retrotransposition is consistent with prior single-cell studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Reanalysis of their data while filtering these artifacts generates a consensus that retrotransposition does occur in developing brain but at a much lower rate consistent with prior single-cell studies (Evrony et al., 2012; Evrony et al., 2015), thereby constraining the range of possible functional roles for retrotransposition in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of the corrected rate to prior studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "a0817fae-9479-4bca-a1be-00df86cd42f6",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C79",
+      "claim": "The corrected RC-seq retrotransposition rate is consistent with rates measured in vitro in neuronal progenitors.",
+      "claim_type": "EXPLICIT",
+      "source": "The corrected RC-seq retrotransposition rate is significant as it aligns to a wholly different regime of potential functional roles for retrotransposition in the brain (rare normal variation and rare disease) rather than a \"ubiquitous\" role. This corrected rate is consistent with rates measured in vitro in neuronal progenitors (Coufal et al., 2009) and is consistent with the absence of significant somatic L1 insertions in brain tumors (Helman et al., 2014; Iskow et al., 2010; Lee et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison to prior in vitro studies, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "729ddac2-c6f5-4327-b3ce-060399607e5b",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C80",
+      "claim": "The corrected rate is consistent with the absence of significant somatic L1 insertions in brain tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "The corrected RC-seq retrotransposition rate is significant as it aligns to a wholly different regime of potential functional roles for retrotransposition in the brain (rare normal variation and rare disease) rather than a \"ubiquitous\" role. This corrected rate is consistent with rates measured in vitro in neuronal progenitors (Coufal et al., 2009) and is consistent with the absence of significant somatic L1 insertions in brain tumors (Helman et al., 2014; Iskow et al., 2010; Lee et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison to brain tumor studies, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "e7fb37be-1850-4f8e-9ae9-929d945acb72",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C81",
+      "claim": "Chimeric DNA molecules falsely linking unrelated DNA fragments are well known to arise during single-cell genome amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "Although whole genome amplification methods have remarkable abilities to amplify picogram quantities of DNA from a single cell into microgram quantities, chimeric DNA molecules falsely linking unrelated DNA fragments are well known to arise during single-cell genome amplification (Macaulay and Voet, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about single-cell amplification, supported by citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "72df380b-f0cc-43b4-bb94-abb8d029dd4f",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C82",
+      "claim": "Chimera artifacts arise during ligation and PCR steps of sequencing library preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "Chimera artifacts also arise during ligation and PCR steps of sequencing library preparation (Kircher et al., 2012; Quail et al., 2008), processes integral to the RC-seq method.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about sequencing library preparation, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "367ad9dc-0ae1-42f1-9db0-329084fac945",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "claim_id": "C83",
+      "claim": "Chimeric sequences can create a DNA fragment connecting a LINE element to an unrelated portion of the genome, creating the appearance of biological LINE mobilization.",
+      "claim_type": "EXPLICIT",
+      "source": "Chimeric sequences can create a DNA fragment connecting a LINE element to an unrelated portion of the genome, creating the appearance of biological LINE mobilization (Figure 1\u2014figure supplement 1A\u2013B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference about how chimeras can create false-positive L1 calls, illustrated in Figure 1\u2014figure supplement 1A-B.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d4395783-af37-44f1-a5ac-fb200de4d24e",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "More than half (7 of 13) of Upton et al.'s PCR-validated candidates are chimera artifacts that could not have been generated by L1 mobilization. These chimeras originated from inactive L1 elements, misinterpreted junctions from distinct L1 elements, or lacked poly-A tails. Upton et al. did not perform full-length cloning validation on any insertion, which is necessary to distinguish true insertions from chimeras in single-cell sequencing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C27, C31-C32, C35, C47, C49, and C81-C83 provide converging evidence that chimera artifacts are prevalent in Upton et al.'s validated candidates. The sequence analysis documented in Supplementary file 1 (C19-C22, C47, C49) demonstrates specific features inconsistent with true L1 mobilization. The validation failure rate (C23-C26) and absence of full-length cloning (C31) further support the high false-positive rate. The established knowledge about chimera formation (C81-C83) provides mechanistic context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "1c28475a-f3fe-4578-a90a-d2036d71daa1",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Full-length cloning validation is the only definitive method to confirm bona fide L1 insertions in single cells, as it verifies both breakpoints are present in the same DNA molecule. MALBAC amplification produces short amplicons (0.5-1.5kb), precluding efficient validation of insertions longer than ~1.5 kb, which represent 15-30% of somatic L1 insertions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 establish the logical necessity of full-length cloning based on the structural differences between true insertions (two breakpoints) and chimeras (one breakpoint). Claims C33-C34 document MALBAC's technical limitations with appropriate citations. The inference that MALBAC is unsuitable for validating longer insertions is well-supported by the amplicon size data and comparison to insertion size distributions from cancer studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "6a9e3fbe-cede-4427-a042-52d15bbdd983",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "97% of Upton et al.'s single-cell insertion calls were supported by only a single sequencing read, while 53% of gold-standard germline KNR insertions were detected with \u22653 reads. Only 0.4% of somatic candidates were detected with \u22653 reads, and only 0.04% were detected at both 5' and 3' junctions compared to 11% for KNR insertions. This dramatic difference in read count and junction detection distributions indicates the vast majority of somatic candidates are false-positives.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C46 present a comprehensive comparison of read count and junction detection distributions between gold-standard KNR insertions and somatic candidates. The data shown in Figures 2A-B clearly demonstrate the bimodal distribution of true insertions versus the unimodal low-signal distribution of somatic candidates. The statistical analysis is sound, using germline KNR insertions as an appropriate internal control since they share sequence characteristics with somatic insertions. The >250-fold difference in junction detection rates (C45-C46) provides independent confirmation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "35e2389f-f313-402d-b5e4-26b907ba5e0c",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Applying a read count threshold of >2 reads optimizes sensitivity and specificity, maintaining 53% detection of true KNR insertions while excluding ~99.6% of false-positives. This filtering yields only 20 somatic candidates across 170 cells, of which 12 were chimeras upon sequence analysis. The remaining 8 candidates yield a sensitivity-corrected somatic insertion rate of 0.19 per cell, with no significant difference between cell types (p=0.98, ANOVA), and 95% of cells had no somatic insertions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C55 describe a methodologically sound approach to correcting the insertion rate. The read count threshold (C50) is justified by optimization of sensitivity/specificity using gold-standard KNR insertions. The sequential filtering (C51-C52) with manual sequence verification is appropriate. The rate calculation (C53) includes sensitivity correction, which is necessary given the dropout observed. The statistical test (C54) is appropriate for comparing rates across groups. The finding that 95% of cells lack insertions (C55) is consistent with the low overall rate.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "a9fe22ab-1099-40f0-905b-49b146097f29",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The reanalysis supports a somatic L1 insertion frequency of approximately 0.2 events per cell, which is about fifty-fold lower than reported by Upton et al. This corrected rate is consistent with prior estimates from L1-IP (0.07\u00b10.15, p=0.54) and whole-genome sequencing (0.18\u00b10.47, p=0.37), confirming that L1 elements mobilize in some human neurons but L1 mosaicism is not ubiquitous.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C8 and C56-C58 present the corrected rate estimate and its comparison to prior studies. The ~50-fold reduction (C6) is well-documented through the filtering analysis. The consistency across three independent methods (C56-C58) with non-significant p-values from ANOVA tests provides strong support for the corrected rate. The conclusion that L1 mobilization occurs but is not ubiquitous (C7-C8, C76) is appropriately constrained by the data. Claims C76-C78 effectively summarize the main findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "f945a166-91e6-4782-bb4b-755b8640bc0f",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "A likely bona fide L1Hs insertion was identified in neuron #11 (12 reads) and glial cell #2 (6 reads) from individual 45. This insertion shows all hallmarks of true retrotransposition: both 5' and 3' junctions, a TSD, poly-A tail, and a 3' transduction tracing to a known KNR L1 on chromosome 2. The same insertion was detected in two additional glial cells with 2 reads each.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 describe a specific candidate with multiple lines of evidence supporting its authenticity. The high read counts (12 and 6 reads) place it well above the threshold and among the highest-signal candidates. The presence of all expected sequence features (C60) documented in Supplementary file 1, including traceability to a known source element, provides strong validation. Detection in multiple cells (C61) indicates this is a clonal event occurring during development, which is biologically plausible.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "30e214da-b3ae-4771-8101-cab26d9cbc79",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "MALBAC-amplified single cells show systematic ~1 kb peaks and troughs of genome amplification at scales <50 kb, which is inherent to MALBAC as the same pattern occurs in unrelated studies. This non-uniformity at the genomic scale of retrotransposons explains the low read counts of some true KNR insertions, the high allelic dropout, and lower overall genome coverage breadth compared to MDA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C68 present a comprehensive analysis of MALBAC performance at relevant genomic scales. The high-resolution coverage analysis (C64) shown in Figure 4A directly demonstrates the peaks and troughs. The comparison to Zong et al. data (C65) provides independent validation that this is inherent to MALBAC rather than specific to Upton et al.'s implementation. The contrast with MDA (C66) is clearly shown. The inferences about effects on detection (C67-C68) are logical consequences of the observed non-uniformity and are supported by the data in Figure 4\u2014figure supplement 2A.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "405fecd0-47c1-4784-bb17-1d2e17a36a62",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "At larger genomic scales (~500 kb bins), individual MALBAC single cells from Upton et al. have significantly lower quality than both MALBAC cells from Zong et al. and MDA neurons. However, pooling all 92 neurons achieves quality comparable to Zong et al., indicating the low quality is due to stochastic factors preceding MALBAC (e.g., tissue quality) rather than MALBAC itself. Power spectral density analysis confirms MALBAC has better uniformity at large scales (>30 kb) but worse uniformity at small scales (<30 kb) compared to MDA, making MALBAC unsuitable for retrotransposon studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C75 provide a multi-scale analysis of amplification quality. The low-resolution analysis (C69) with MAPD/MDAD metrics shown in Figure 4B and supplements provides quantitative evidence. The pooling analysis (C70) effectively distinguishes systematic MALBAC effects from sample-specific quality issues. The comparison of MALBAC and MDA at large scales (C71-C72) is supported by data and citations. The power spectral density analysis (C73) provides comprehensive scale-dependent characterization. The conclusions about method suitability (C74-C75) are well-supported by the scale-dependent performance data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "f4978a7b-45b4-4444-99aa-36ac014dc69a",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "RC-seq bulk somatic candidates have a non-canonical distribution of large TSD sizes, inconsistent with nearly all prior L1 research.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 identifies an anomaly in the TSD size distribution that is inconsistent with established knowledge about L1 insertions. The analysis is documented in Appendix 1, and the finding is corroborated by C49 showing that randomly selected candidates with large TSDs were all chimeras. This provides independent evidence for the high false-positive rate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "97a1f120-4a3f-440e-a14c-a64ab10a654c",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The corrected RC-seq retrotransposition rate is consistent with rates measured in vitro in neuronal progenitors and with the absence of significant somatic L1 insertions in brain tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 place the corrected rate in broader biological context through comparison to other systems. The consistency with in vitro progenitor rates (C79) and brain tumor data (C80) is supported by appropriate citations. These comparisons strengthen confidence in the corrected rate by showing it aligns with independent observations from different experimental systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    },
+    {
+      "id": "d61ab049-8c25-471e-a218-4d2ee97fbb69",
+      "content_id": "676c5b0c-a4ec-4669-8f28-b1e2a28dc718",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Single-cell genomics enables direct measurement of somatic mutation rates in human brain and has revealed previously unknown mutation mechanisms. L1 elements are retrotransposons that can mobilize in neuronal progenitor cells and create mutations. Prior studies using different methods reported disparate L1 mobilization rates, with bulk DNA studies suggesting higher rates than transgenic reporter studies. Single-cell sequencing was proposed as the definitive method to resolve these estimates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C13-C14 describe the capabilities of single-cell sequencing, supported by multiple citations to prior work. Claims C9-C12 provide established background on L1 biology with appropriate citations. Claims C15-C18 accurately summarize the state of the field prior to the current study, documenting the discrepancy between methods and the proposed role of single-cell sequencing. All claims are well-supported by citations to relevant literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:52:10.829502Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "92363523-bfa6-4c42-8d29-b8da6fba24e2",
+      "result_id": "d4395783-af37-44f1-a5ac-fb200de4d24e"
+    },
+    {
+      "claim_id": "37eded1b-bcab-4917-a2c6-15c7771af6ab",
+      "result_id": "d4395783-af37-44f1-a5ac-fb200de4d24e"
+    },
+    {
+      "claim_id": "3f3fb677-a3da-4312-b781-6e5840fcc19d",
+      "result_id": "d4395783-af37-44f1-a5ac-fb200de4d24e"
+    },
+    {
+      "claim_id": "a92ed33f-b6dd-42db-9a6f-05785b54edbd",
+      "result_id": "d4395783-af37-44f1-a5ac-fb200de4d24e"
+    },
+    {
+      "claim_id": "f92654ff-d651-4e3a-8535-b3a27899dcaf",
+      "result_id": "d4395783-af37-44f1-a5ac-fb200de4d24e"
+    },
+    {
+      "claim_id": "3568e087-be6c-4940-a014-6d874a939dc0",
+      "result_id": "d4395783-af37-44f1-a5ac-fb200de4d24e"
+    },
+    {
+      "claim_id": "1bdffc36-d805-40a8-8e33-19a7e9d8038b",
+      "result_id": "d4395783-af37-44f1-a5ac-fb200de4d24e"
+    },
+    {
+      "claim_id": "a03c0d4c-3fb8-4744-b912-80fe0f878b14",
+      "result_id": "d4395783-af37-44f1-a5ac-fb200de4d24e"
+    },
+    {
+      "claim_id": "a179e5f3-5148-4231-826e-25017e973d08",
+      "result_id": "d4395783-af37-44f1-a5ac-fb200de4d24e"
+    },
+    {
+      "claim_id": "a21c6db4-7ed1-480c-a376-cc6a105b741e",
+      "result_id": "d4395783-af37-44f1-a5ac-fb200de4d24e"
+    },
+    {
+      "claim_id": "bb084882-c64b-46b3-bb2c-e3aac64e2866",
+      "result_id": "d4395783-af37-44f1-a5ac-fb200de4d24e"
+    },
+    {
+      "claim_id": "2d80bb0a-6393-4d8b-8a8e-3cb049be012a",
+      "result_id": "d4395783-af37-44f1-a5ac-fb200de4d24e"
+    },
+    {
+      "claim_id": "731f6caa-d055-4543-a4e6-89fa553ce906",
+      "result_id": "d4395783-af37-44f1-a5ac-fb200de4d24e"
+    },
+    {
+      "claim_id": "f769222f-1026-4170-bb57-752e701363b1",
+      "result_id": "d4395783-af37-44f1-a5ac-fb200de4d24e"
+    },
+    {
+      "claim_id": "e7fb37be-1850-4f8e-9ae9-929d945acb72",
+      "result_id": "d4395783-af37-44f1-a5ac-fb200de4d24e"
+    },
+    {
+      "claim_id": "72df380b-f0cc-43b4-bb94-abb8d029dd4f",
+      "result_id": "d4395783-af37-44f1-a5ac-fb200de4d24e"
+    },
+    {
+      "claim_id": "367ad9dc-0ae1-42f1-9db0-329084fac945",
+      "result_id": "d4395783-af37-44f1-a5ac-fb200de4d24e"
+    },
+    {
+      "claim_id": "644fd81d-1c2b-4bb3-905b-87d1a1c73e33",
+      "result_id": "1c28475a-f3fe-4578-a90a-d2036d71daa1"
+    },
+    {
+      "claim_id": "8d2b3e6b-2cc1-4ff5-968d-a4fdbab75059",
+      "result_id": "1c28475a-f3fe-4578-a90a-d2036d71daa1"
+    },
+    {
+      "claim_id": "dfb50df1-04c8-4403-96ad-4491a8781131",
+      "result_id": "1c28475a-f3fe-4578-a90a-d2036d71daa1"
+    },
+    {
+      "claim_id": "141ca71e-b265-4716-98c9-8d0e68625e00",
+      "result_id": "1c28475a-f3fe-4578-a90a-d2036d71daa1"
+    },
+    {
+      "claim_id": "f45ae195-763d-4fac-83e0-15251eed9996",
+      "result_id": "1c28475a-f3fe-4578-a90a-d2036d71daa1"
+    },
+    {
+      "claim_id": "7682ef35-b8f5-4d3f-be11-dbb6163ef601",
+      "result_id": "6a9e3fbe-cede-4427-a042-52d15bbdd983"
+    },
+    {
+      "claim_id": "983803bf-263c-44a6-acbb-7e620f0d2c6a",
+      "result_id": "6a9e3fbe-cede-4427-a042-52d15bbdd983"
+    },
+    {
+      "claim_id": "8f3bc1ad-5c00-48bc-81ff-17a60b5f0d0c",
+      "result_id": "6a9e3fbe-cede-4427-a042-52d15bbdd983"
+    },
+    {
+      "claim_id": "3e69728a-5871-4299-a367-a885d4886baf",
+      "result_id": "6a9e3fbe-cede-4427-a042-52d15bbdd983"
+    },
+    {
+      "claim_id": "31f55302-16bd-416a-81e3-6af6efab587f",
+      "result_id": "6a9e3fbe-cede-4427-a042-52d15bbdd983"
+    },
+    {
+      "claim_id": "312c2992-0709-49f0-8cc3-fb210b6720b5",
+      "result_id": "6a9e3fbe-cede-4427-a042-52d15bbdd983"
+    },
+    {
+      "claim_id": "8c816a51-124e-4cf1-baf3-7dc7dfec123e",
+      "result_id": "6a9e3fbe-cede-4427-a042-52d15bbdd983"
+    },
+    {
+      "claim_id": "4abcabab-a69b-4750-ae8f-36a6ee2f493a",
+      "result_id": "6a9e3fbe-cede-4427-a042-52d15bbdd983"
+    },
+    {
+      "claim_id": "072aa912-85b1-4a68-9170-0a0503b78b06",
+      "result_id": "6a9e3fbe-cede-4427-a042-52d15bbdd983"
+    },
+    {
+      "claim_id": "a54e58c4-71ab-45fa-ab8f-7407f08bcf0d",
+      "result_id": "6a9e3fbe-cede-4427-a042-52d15bbdd983"
+    },
+    {
+      "claim_id": "046b117f-6302-4f27-afe8-9a2eac92db9e",
+      "result_id": "6a9e3fbe-cede-4427-a042-52d15bbdd983"
+    },
+    {
+      "claim_id": "83da3c20-84da-4029-a592-94746f0a541c",
+      "result_id": "35e2389f-f313-402d-b5e4-26b907ba5e0c"
+    },
+    {
+      "claim_id": "cfac0045-ecf5-466d-94b5-19e06a1db7d5",
+      "result_id": "35e2389f-f313-402d-b5e4-26b907ba5e0c"
+    },
+    {
+      "claim_id": "2ebe59c6-c4cb-429b-9c5c-808c2bc74872",
+      "result_id": "35e2389f-f313-402d-b5e4-26b907ba5e0c"
+    },
+    {
+      "claim_id": "d350f602-590e-4454-b650-c3044606e396",
+      "result_id": "35e2389f-f313-402d-b5e4-26b907ba5e0c"
+    },
+    {
+      "claim_id": "deb45bdf-f4e8-4b68-9c49-79977c497aa6",
+      "result_id": "35e2389f-f313-402d-b5e4-26b907ba5e0c"
+    },
+    {
+      "claim_id": "875e0dbe-80b5-4aba-91b3-515eb1a21df8",
+      "result_id": "35e2389f-f313-402d-b5e4-26b907ba5e0c"
+    },
+    {
+      "claim_id": "d7cc99b1-c0e6-4ee0-aff7-6ad53f7e889d",
+      "result_id": "a9fe22ab-1099-40f0-905b-49b146097f29"
+    },
+    {
+      "claim_id": "898b4efc-8fea-40b1-87de-f71304e0611c",
+      "result_id": "a9fe22ab-1099-40f0-905b-49b146097f29"
+    },
+    {
+      "claim_id": "18340a94-a7db-4a04-815d-61dbb7e56e96",
+      "result_id": "a9fe22ab-1099-40f0-905b-49b146097f29"
+    },
+    {
+      "claim_id": "bc2167f5-205f-4580-9700-ddbb83054151",
+      "result_id": "a9fe22ab-1099-40f0-905b-49b146097f29"
+    },
+    {
+      "claim_id": "19c96a72-ce00-4ef1-92df-04b427f4916d",
+      "result_id": "a9fe22ab-1099-40f0-905b-49b146097f29"
+    },
+    {
+      "claim_id": "2ff66312-ee87-4121-9fd0-29da50716cc2",
+      "result_id": "a9fe22ab-1099-40f0-905b-49b146097f29"
+    },
+    {
+      "claim_id": "7ab35601-e4e1-442b-b79b-98ac4d78f680",
+      "result_id": "a9fe22ab-1099-40f0-905b-49b146097f29"
+    },
+    {
+      "claim_id": "6bca8b6c-61a6-4696-bc2a-fa1122ffbc92",
+      "result_id": "a9fe22ab-1099-40f0-905b-49b146097f29"
+    },
+    {
+      "claim_id": "39412e3b-dd5d-438d-9d1d-c04b25abffc2",
+      "result_id": "a9fe22ab-1099-40f0-905b-49b146097f29"
+    },
+    {
+      "claim_id": "e6dd23e7-1224-4eca-8064-74d9d05c329d",
+      "result_id": "a9fe22ab-1099-40f0-905b-49b146097f29"
+    },
+    {
+      "claim_id": "b215b25e-e64b-442e-a2fc-5abab2a7999b",
+      "result_id": "f945a166-91e6-4782-bb4b-755b8640bc0f"
+    },
+    {
+      "claim_id": "f0e6b418-44d3-48f7-8660-f8462eec2d6f",
+      "result_id": "f945a166-91e6-4782-bb4b-755b8640bc0f"
+    },
+    {
+      "claim_id": "49ee073f-4575-4c53-abff-0e3ecd7ea891",
+      "result_id": "f945a166-91e6-4782-bb4b-755b8640bc0f"
+    },
+    {
+      "claim_id": "67d389e0-60d3-4b50-a5d3-3af0f8d8f3ce",
+      "result_id": "30e214da-b3ae-4771-8101-cab26d9cbc79"
+    },
+    {
+      "claim_id": "5531ca26-b383-4084-b79d-86d730f005ae",
+      "result_id": "30e214da-b3ae-4771-8101-cab26d9cbc79"
+    },
+    {
+      "claim_id": "8d69b87f-dcc2-48c7-a0de-9ca3f88784aa",
+      "result_id": "30e214da-b3ae-4771-8101-cab26d9cbc79"
+    },
+    {
+      "claim_id": "72bc33d9-c144-4605-a4ec-292e625c4421",
+      "result_id": "30e214da-b3ae-4771-8101-cab26d9cbc79"
+    },
+    {
+      "claim_id": "d7b2aeb1-5dc9-4f68-98c0-6a41a459714b",
+      "result_id": "30e214da-b3ae-4771-8101-cab26d9cbc79"
+    },
+    {
+      "claim_id": "dcababa3-afe2-486a-8d7b-61da0010bbf6",
+      "result_id": "30e214da-b3ae-4771-8101-cab26d9cbc79"
+    },
+    {
+      "claim_id": "46818652-6d30-46ca-bb80-201562ff0166",
+      "result_id": "30e214da-b3ae-4771-8101-cab26d9cbc79"
+    },
+    {
+      "claim_id": "544b81b1-e152-4366-8039-408e5a5c425b",
+      "result_id": "405fecd0-47c1-4784-bb17-1d2e17a36a62"
+    },
+    {
+      "claim_id": "a04715bb-d574-4579-b37b-ca484e3ad0fb",
+      "result_id": "405fecd0-47c1-4784-bb17-1d2e17a36a62"
+    },
+    {
+      "claim_id": "4a8bc310-0ea2-412c-a21e-46e9543cc51e",
+      "result_id": "405fecd0-47c1-4784-bb17-1d2e17a36a62"
+    },
+    {
+      "claim_id": "7c3cfc6b-4406-42b9-a384-1b55b3d7992d",
+      "result_id": "405fecd0-47c1-4784-bb17-1d2e17a36a62"
+    },
+    {
+      "claim_id": "0da3eeba-54c7-43fa-8df6-bdbbc0122a33",
+      "result_id": "405fecd0-47c1-4784-bb17-1d2e17a36a62"
+    },
+    {
+      "claim_id": "f5ba936c-387b-4b9e-8436-bae8278bcd8a",
+      "result_id": "405fecd0-47c1-4784-bb17-1d2e17a36a62"
+    },
+    {
+      "claim_id": "01c1ea3b-620a-448b-885e-9524e046e850",
+      "result_id": "405fecd0-47c1-4784-bb17-1d2e17a36a62"
+    },
+    {
+      "claim_id": "63aa6670-4866-471a-b178-07285fc59b49",
+      "result_id": "f4978a7b-45b4-4444-99aa-36ac014dc69a"
+    },
+    {
+      "claim_id": "a0817fae-9479-4bca-a1be-00df86cd42f6",
+      "result_id": "97a1f120-4a3f-440e-a14c-a64ab10a654c"
+    },
+    {
+      "claim_id": "729ddac2-c6f5-4327-b3ce-060399607e5b",
+      "result_id": "97a1f120-4a3f-440e-a14c-a64ab10a654c"
+    },
+    {
+      "claim_id": "08ffea4b-2d5c-4cc1-80e1-07cdcf552e04",
+      "result_id": "d61ab049-8c25-471e-a218-4d2ee97fbb69"
+    },
+    {
+      "claim_id": "8e8f78d0-f7b0-4b0b-af98-ef175fe9e56a",
+      "result_id": "d61ab049-8c25-471e-a218-4d2ee97fbb69"
+    },
+    {
+      "claim_id": "d0825f5f-1b33-4147-8129-6bf4fd5def0b",
+      "result_id": "d61ab049-8c25-471e-a218-4d2ee97fbb69"
+    },
+    {
+      "claim_id": "b384af90-50d5-4f4a-9f82-651e6d061904",
+      "result_id": "d61ab049-8c25-471e-a218-4d2ee97fbb69"
+    },
+    {
+      "claim_id": "621fb755-9345-4814-ae78-94aabc98754e",
+      "result_id": "d61ab049-8c25-471e-a218-4d2ee97fbb69"
+    },
+    {
+      "claim_id": "9c96b5f6-405e-4d3b-8789-aba05378c3ff",
+      "result_id": "d61ab049-8c25-471e-a218-4d2ee97fbb69"
+    },
+    {
+      "claim_id": "d7e733a5-76ec-4e02-be8c-1ccebdf168b4",
+      "result_id": "d61ab049-8c25-471e-a218-4d2ee97fbb69"
+    },
+    {
+      "claim_id": "30c0836b-409e-4a88-8d0d-5391f9f87298",
+      "result_id": "d61ab049-8c25-471e-a218-4d2ee97fbb69"
+    },
+    {
+      "claim_id": "95ef5624-54b4-40aa-ba9a-72729673eea8",
+      "result_id": "d61ab049-8c25-471e-a218-4d2ee97fbb69"
+    },
+    {
+      "claim_id": "2284336b-7fed-4375-b2b3-2326bff48567",
+      "result_id": "d61ab049-8c25-471e-a218-4d2ee97fbb69"
+    },
+    {
+      "claim_id": "e2dd526c-b3a3-46c9-b0dd-09b16fa19494",
+      "result_id": "d61ab049-8c25-471e-a218-4d2ee97fbb69"
+    }
+  ],
+  "comparisons": []
+}

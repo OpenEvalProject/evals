@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "MD simulations demonstrate that the D2 domain remains extended in the absence of TMH interactions, refuting the prior hypothesis that loss of D2-TMH contacts alone triggers D2 collapse. The D2 domain fluctuates minimally (2.9 \u00c5 RMS) over >0.3 \u00b5s simulations without TMHs, and this conclusion is consistent with prior experimental observations in thermally trapped prepores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 present converging computational and experimental evidence that contradicts the prior hypothesis (C23). The MD simulation data (C24, C25) directly demonstrates D2 stability without TMHs, and this is corroborated by cited experimental observations (C27, C28) showing extended D2 conformations when TMHs are unfolded or absent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Structural analysis reveals that extended TMHs can contact the bilayer surface, exposing hydrophobic residues to water and generating a bilayer-directed hydrophobic force. This mechanism is supported by analogous forces observed in bacteriorhodopsin folding and translocon-mediated membrane integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 present a logical mechanistic inference from structural analysis (Figure 2\u2014figure supplement 1), supported by established precedents in membrane protein biology (C32, C33). The hydrophobic force mechanism is well-grounded in biophysical principles and prior experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Steered MD simulations applying downward force on TMHs demonstrate that tensile force is transmitted through the protein to generate compressive stress on D2, catalyzing its collapse by ~40 \u00c5. The collapsed conformation remains stable after force removal for >40 ns, with D2 pivoting at Lys381 to lie perpendicular on D4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 describe a coherent set of steered MD simulation results (Figures 2B, 2\u2014figure supplement 2, 2\u2014figure supplement 3) showing force transmission, D2 collapse, and stability of the collapsed state. The structural details and energetic observations are internally consistent and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The collapsed D2/D4 interface covers 842 \u00c5\u00b2, similar to oligomeric protein interfaces, with buried hydrophobic residues (Phe75, Tyr389, Tyr415) contributing to stability. These residues are highly conserved in the CDC family, suggesting this collapsed structure may be a common feature of CDC toxins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 present quantitative structural analysis with appropriate comparisons to known protein interfaces (C43) and conservation data (C45). However, C46 is speculative about generalization to other CDC toxins. The structural characterization is well-supported, but the broader implication remains hypothetical.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "Steered MD simulations at different force magnitudes (including 250 pN) consistently produce similar D2 collapse, though with longer timescales at lower forces. The collapsed structure is consistent with cryo-EM electron-density profiles of the pneumolysin pore.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 demonstrate robustness of the simulation results across force ranges (Figure 2\u2014figure supplement 4) and validate the computational model against experimental structural data (Figure 2\u2014figure supplement 5). This provides important validation of the simulation approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "ABF simulations reveal the free energy landscape with a broad prepore minimum (-10 to 8 \u00c5), a pore minimum (~40 \u00c5), and a barrier of ~23 kcal/mol. A sharp energy rise of ~17 kcal/mol over ~6 \u00c5 at ~25 \u00c5 represents the primary barrier requiring force-catalyzed reduction, as thermal fluctuations alone would require days to overcome this barrier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C57 present a comprehensive ABF simulation analysis (Figure 2D) with quantitative energy landscape characterization. The calculation that thermal fluctuations would require days (C55, C56) is appropriately compared to observed transition timescales, establishing the necessity of force catalysis. The identification of the primary barrier (C57) logically follows from the energy profile.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The PFOG57C-S190C mutant assembles into prepore complexes but is trapped by a disulfide bridge preventing TMH restructuring. This mutant enables isolated investigation of D2 collapse under compressive forces, and steered MD simulations confirm that compressive forces on this mutant recapitulate the same D2 collapse observed with tensile forces on TMHs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 describe a well-characterized mutant system (C58-C60 with citations) that provides an elegant experimental design (C61) validated by simulations (C62, Figure 3\u2014figure supplement 2). This establishes the foundation for the AFM compression experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "AFM compression experiments on individual PFOG57C-S190C prepore complexes reproducibly induce the characteristic ~40 \u00c5 height reduction without reducing agent, while preserving overall complex morphology. The collapsed structure is stable after force removal, and the applied force (110 pN/monomer) is >10-fold smaller than required for covalent bond breakage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 present the core AFM experimental results (Figures 3C, 3\u2014figure supplement 3) demonstrating force-catalyzed D2 collapse. The stability observation (C65, C66) is consistent with MD predictions, and the force magnitude analysis (C67) appropriately rules out non-specific bond breakage as a mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The force-catalyzed conversion shows force and time dependence consistent with a thermally driven transition. Both 1s and 5s datasets are well-described by a single barrier model, yielding x\u03b2 = 5.1 \u00b1 0.8 \u00c5 and \u0394Go = 16.3 \u00b1 0.6 kcal/mol from simultaneous fitting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 present rigorous statistical analysis of AFM data (Figure 3D, Figure 3\u2014figure supplement 4). The single barrier model fitting is appropriate for the experimental design, and the quantitative parameters are derived from proper simultaneous fitting of multiple datasets with >600 individual measurements (C89).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The experimentally determined energy barrier (16.3 \u00b1 0.6 kcal/mol) is smaller than typical protein unfolding barriers, consistent with D2 remaining folded during the transition. Excellent agreement between experimental values (x\u03b2 = 5.1 \u00b1 0.8 \u00c5, \u0394Go = 16.3 \u00b1 0.6 kcal/mol) and ABF calculations (6 \u00c5, 17 kcal/mol) provides quantitative validation of the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 demonstrate strong quantitative agreement between independent experimental (AFM) and computational (ABF) approaches. The comparison to protein unfolding (C71) appropriately contextualizes the barrier height, and the close agreement (C73) between methods provides robust validation of the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Detergent (DDM) binding to hydrophobic TMH residues reduces the hydrophobic force and inhibits prepore-to-pore conversion in a concentration-dependent manner, with maximal inhibition at ~20 \u00b5M DDM. This concentration is similar to that observed for detergent binding to exposed hydrophobic regions in other proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 present a logical experimental test of the hydrophobic force mechanism (Figure 4A, 4B). The concentration-dependent inhibition (C77, C78) supports the proposed mechanism, and comparison to literature values (C79) validates the detergent concentration range as physiologically relevant for hydrophobic interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Intra-protein stresses generated by TMH-bilayer hydrophobic interactions drive structural coordination between D2 and D3 domains and catalyze D2 collapse. Compressive forces can recapitulate this transition in trapped prepore complexes, and the free energy landscape from single molecule measurements agrees well with MD simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7, C19-C20 represent the central findings integrating experimental and computational results. The agreement between AFM force spectroscopy and MD simulations (C4, C73, C74), combined with the detergent inhibition experiments (C77-C79), provides strong converging evidence for the intra-protein stress mechanism driving D2 collapse.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Methodological details establish that complete PFOG57C-S190C rings contain 36 subunits, applied forces range from 50-106 pN/monomer (>10-fold below covalent bond breaking forces of 1400-2000 pN), and >600 individual measurements were performed. Analysis using attempt frequency of 10^7/s yields \u0394Go = 16.3 \u00b1 0.6 kcal/mol, corresponding to a force-free lifetime of ~1.7 days for the ABF barrier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 provide essential methodological details and calculations supporting the main results. The stoichiometry determination (C86), force calibrations (C87, C88), sample size (C89), and kinetic calculations (C90, C91) are appropriately documented and support the quantitative conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C80",
+      "C81"
+    ],
+    "result": "Single molecule compressive force spectroscopy is proposed as an effective tool for investigating conformational transitions in membrane proteins, and intra-protein forces may be critical for driving coordinated conformational changes in many other protein systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C80, C81 are speculative statements about future applications and broader implications. While the successful application to PFO (C81) is demonstrated, the generalization to other systems (C80) and assertion of future importance (C8) are forward-looking claims that cannot be evaluated from the current work alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background context establishes that PFO undergoes a ~40 \u00c5 height reduction during prepore-to-pore transition due to D2 domain collapse and TMH restructuring. The mechanism coordinating these distant domain changes was previously unresolved, representing a gap in understanding long-distance structural communication in proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C12-C18, C21-C23 provide established background knowledge with appropriate citations. These claims accurately represent prior understanding of PFO structure and function, identify the knowledge gap (C17, C18), and describe a prior hypothesis (C23) that is subsequently tested and refined in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Single molecule force spectroscopy with tensile forces has enabled detailed probing of protein structural transitions involving separation of elements, but cannot probe transitions involving decreased distances between structural elements, motivating the need for compressive force approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 accurately describe the state of single molecule force spectroscopy with appropriate citations (C9, C10) and correctly identify the limitation of tensile approaches (C11) that motivates the current work. This provides appropriate context for the methodological innovation.",
+    "result_type": "MINOR"
+  }
+]

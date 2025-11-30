@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C50"
+    ],
+    "result": "Microtubules in Xenopus egg extracts with Taxol organize into asters and aster-like structures that are dynamic and can coalesce. NUMA localizes to the interior of these structures, confirming their aster-like nature with minus ends at the core.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 and C50 provide consistent experimental observations from multiple figures showing aster formation, NUMA localization to aster cores, and dynamic aster interactions. The data directly support these morphological characterizations with appropriate controls (NUMA antibody) and visual evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C89",
+      "C2",
+      "C7",
+      "C52",
+      "C102"
+    ],
+    "result": "Microtubule networks in Xenopus egg extracts undergo bulk contraction driven by dynein-mediated clustering of microtubule minus ends, representing a generic mechanism for cytoskeletal contraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C2, C7, C52, and C102 collectively establish the main finding. The bulk contraction is directly observed (C89), and the dynein-minus end clustering mechanism is supported by multiple lines of evidence including dynein inhibition experiments (C73, C78), NUMA localization data (C28, C32), and consistency with prior literature on aster formation (C51, C70).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C58",
+      "C90"
+    ],
+    "result": "The timescale of microtubule network contraction depends on initial channel width but not height, with a scaling inconsistent with viscoelastic or poroelastic models but consistent with the active fluid theory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C39-C42, C58, and C90 are well-supported by systematic experimental variation of channel dimensions (Figure 3). The data clearly show \u03c4 increases with channel width (C39, C3) but not height (C42), ruling out simple viscoelastic (constant \u03c4) or poroelastic (\u03c4 \u221d W\u2080\u00b2) models (C41, C90). The agreement with active fluid theory predictions (C58) provides strong validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C40",
+      "C44",
+      "C82",
+      "C83"
+    ],
+    "result": "Microtubule networks contract to a constant final density (\u03b5\u221e \u2248 0.77) independent of initial channel geometry and dynein inhibitor concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C40, C44, C82, and C83 are consistently supported by experimental data across different channel widths (Figure 3F) and p150-CC1 concentrations (Figure 6C). The constant \u03b5\u221e despite varying conditions is a key prediction of the active fluid model and is well-documented experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C69"
+    ],
+    "result": "Density inhomogeneities develop during contraction with increased density at network edges, and these profiles are quantitatively explained by the active fluid theory with parameter values consistent with those from timescale scaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C62-C66, and C69 are supported by fluorescence intensity measurements (Figure 5A), PIV data (Figure 5C-D), and numerical simulations (Figure 5B). The two independent methods for parameter determination yield consistent values (C65), strengthening confidence in the model. The superlinear velocity profile (C69) provides additional mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "At late times, simulated density inhomogeneities dissipate in contrast to experiments, possibly due to long-term network aging not captured by the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C68 acknowledge a limitation of the model. The discrepancy is clearly documented (Figure 5\u2014figure supplement 1), and the speculation about network aging (C68) is reasonable. This honest assessment of model limitations is appropriate and does not undermine the overall validity of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C73",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C84",
+      "C87",
+      "C88"
+    ],
+    "result": "Dynein inhibition with p150-CC1 causes dose-dependent slowdown of contraction (EC50 \u2248 0.22 \u03bcM) without affecting final density, with dynein contributing ~96% of the active stress, consistent with model predictions and spindle pole focusing requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C73, C78-C81, C84, C87-C88 are well-supported by systematic dose-response experiments (Figure 6). The EC50 value (C79) is rigorously determined and matches prior spindle length data (C80), providing cross-validation. The estimate that dynein contributes 96% of active stress (C88) is based on sound reasoning from the \u03c4 \u221d 1/s relationship. The observation that \u03b5\u221e remains constant (C82-C83) while \u03c4 varies strongly supports the model's prediction that motor number affects stress magnitude but not preferred density.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Kinesin-5 inhibition has little effect on contraction, and simultaneous inhibition with dynein does not rescue dynein inhibition effects, suggesting Kinesin-5 does not generate counteracting extensile stress in this context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C75, and C76 are supported by experimental data (Figure 6\u2014figure supplement 1). The inference that Kinesin-5 is not generating extensile stress (C76) is logical given the lack of rescue effect. However, C77 (speculation about Kinesin-5 role in spindles) is appropriately labeled as speculation and represents an extrapolation beyond the current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Even at highest p150-CC1 concentrations, networks still contract, possibly due to incomplete dynein inhibition or contribution from another motor protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85 and C86 are supported by experimental observations (Figure 6A). The residual contraction at high inhibitor is documented, and the speculation about causes (C86) is reasonable. However, the authors' own analysis (C87-C88) suggests this residual activity is only ~4% of total, making incomplete inhibition or minor motor contribution plausible explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C97",
+      "C98"
+    ],
+    "result": "A simple active fluid model with nonlinear active stress correctly predicts multiple features of network contraction, with parameters measurable by two independent methods that yield consistent values, demonstrating quantitative description of complex biological systems with minimal parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94, C97-C98 summarize the theoretical contribution. The model successfully predicts: (1) \u03c4 scaling with W\u2080 (C58), (2) density inhomogeneities (C63, C66), (3) constant \u03b5\u221e (C5), and (4) dynein inhibition effects (C84). The consistency of parameter values from two independent measurements (C93, C65) is particularly compelling. The claim of quantitative description (C94) is well-justified by the extensive agreement between theory and experiment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C49"
+    ],
+    "result": "Network tears have little impact on contraction dynamics far from the tearing site, and drag could arise from weak interactions between the network and device wall.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C36 is observational but lacks quantitative analysis of how far from tears the dynamics are unaffected. The Poisson ratio \u2248 0 inference is stated but not rigorously demonstrated. Claim C49 is explicitly speculative about the source of drag. While the height-independence of \u03c4 (C42) supports wall interactions over bulk viscous effects, alternative explanations are not fully excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Steric collisions counteract contractile stress at high densities, limiting microtubule packing near aster cores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is a theoretical consideration that is reasonable based on geometric constraints and is illustrated in Figure 4B. This mechanism is essential for the nonlinear active stress formulation (Equation 5) that successfully predicts the constant final density. While not directly tested experimentally, it is a physically sound assumption consistent with all observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C112"
+    ],
+    "result": "Results are consistent with dynein-mediated minus end clustering in Xenopus extracts, suggesting spindle motor stresses are net contractile rather than extensile, with implications for pole focusing, spindle fusion, and microtubule density regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C110 and C112 extend findings to spindle biology. While C104 is well-supported by current data and prior literature, claims C107-C110 and C112 are explicitly speculative extrapolations to spindle function. The inference that spindle stresses are contractile (C107) is reasonable but indirect. These claims represent plausible hypotheses requiring future validation in spindle contexts rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C34",
+      "C51",
+      "C70",
+      "C71",
+      "C74",
+      "C95",
+      "C96",
+      "C99",
+      "C100",
+      "C101",
+      "C103"
+    ],
+    "result": "Background claims establishing prior knowledge about cytoskeletal organization, motor proteins, active matter theories, and Xenopus extract systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C26, C34, C51, C70-C71, C74, C95-C96, C99-C101, and C103 are literature review and background statements supported by appropriate citations. These establish context but are not novel findings of this work. The citations appear appropriate and the general knowledge claims are accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C119",
+      "C121"
+    ],
+    "result": "Methods for extract preparation, microfluidic device fabrication, protein purification, imaging, and image analysis are described.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C117, C119, and C121 describe experimental methods with sufficient detail for reproducibility. Standard protocols are referenced appropriately (e.g., Hannak and Heald, 2006 for extract preparation). The methods appear sound and are consistent with the data presented.",
+    "result_type": "MINOR"
+  }
+]

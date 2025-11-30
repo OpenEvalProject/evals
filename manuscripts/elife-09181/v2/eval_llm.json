@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C87"
+    ],
+    "result": "Glucose starvation triggers rapid and reversible formation of Kog1-bodies. Kog1 and Tco89 relocalize from the vacuolar membrane to a single body near the vacuole edge within ~10 minutes in glucose starvation (\u03c4 = 11.0 \u00b1 2.8 min in 57 \u00b1 5% of cells), while Tor1 remains on the vacuolar membrane or moves to the cytoplasm. Kog1-bodies dissociate and Kog1 returns to the vacuolar membrane upon glucose repletion (\u03c4 = 45-48 min).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C28 and C87 provide comprehensive microscopy data with quantified kinetics showing Kog1-body formation and dissociation. The time constants are measured with error estimates, multiple conditions are tested (glucose, nitrogen, combined starvation), and reversibility is demonstrated with cycloheximide controls (C27, C88). The data are internally consistent and well-replicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Kog1-bodies are distinct from stress granules and P-bodies. Co-localization studies show that stress granules co-localize with Kog1-bodies in only 2.6% of cells after 24 hrs, and P-bodies co-localize in only 3.4% of cells after 60 min glucose starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 provide quantitative co-localization data with appropriate sample sizes (n = 94-404 cells) demonstrating that Kog1-bodies are spatially distinct from known RNA granules. The low co-localization percentages (2.6-3.4%) support the conclusion that these are distinct structures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C63"
+    ],
+    "result": "Snf1/AMPK promotes Kog1-body formation through phosphorylation of Kog1 at Ser 491 and 494. Deletion of Snf1 increases the time constant for Kog1-body formation 20-fold (\u03c4 = 219 \u00b1 21 min vs. 11 \u00b1 3 min in WT). Mass spectrometry identified Ser 491/494 as glucose starvation-specific phosphorylation sites, and the Kog1S491A/S494A mutant shows similarly slow body formation (\u03c4 = 309 \u00b1 48 min).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 and C63 provide converging evidence from genetic (snf1\u0394), mass spectrometry, and site-directed mutagenesis (S491A/S494A) approaches. The similar kinetic defects in snf1\u0394 and S491A/S494A mutants support the mechanistic link. However, C63 notes the phosphorylation is likely indirect based on sequence analysis, which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Phosphomimetic mutations at Ser 491/494 (S491D/S494D and S491E/S494E) are lethal, suggesting that constitutive Kog1 phosphorylation or body formation inhibits cell growth/division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 report that phosphomimetic mutants could not be recovered despite multiple attempts (0/20 DD, 0/12 EE vs. 7/10 AA mutants; p<0.001 by Fisher's exact test as shown in Figure 3\u2014figure supplement 3). The statistical analysis supports lethality, though the inference about mechanism (C41) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C85"
+    ],
+    "result": "Kog1-body formation depends on two prion-like motifs (PriLMs) in Kog1. The first PriLM contains the Snf1 phosphorylation sites (Ser 491/494). Disruption of PriLM1 reduces body formation >2-fold, while disruption of both PriLMs completely blocks body formation (1.0 \u00b1 2.1% cells with bodies vs. 57 \u00b1 5% in WT).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 and C85 provide sequence analysis identifying glutamine-rich PriLMs and functional data showing their requirement for body formation. The double mutant (PrDm1+2) shows complete loss of body formation, providing strong evidence for their necessity. The PriLMs were identified using both manual inspection and computational methods (hidden Markov model).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Kog1-body formation does not regulate acute TORC1 inhibition during glucose starvation. Sch9 dephosphorylation occurs rapidly (\u22642.5 min) in WT and all Kog1-body formation mutants (S491A/S494A, PrDm1, PrDm2, PrDm1+2), much faster than body formation (\u03c4 = 11 \u00b1 3 min). The snf1\u0394 strain shows delayed Sch9 dephosphorylation, but this is independent of Kog1-body formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 provide temporal and genetic evidence that Kog1-body formation is not required for acute TORC1 inhibition. The timing argument is compelling (Sch9 dephosphorylation precedes body formation), and the mutant analysis shows that defects in body formation do not prevent Sch9 dephosphorylation. The snf1\u0394 phenotype suggests an additional Snf1 function beyond Kog1 phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C75",
+      "C80"
+    ],
+    "result": "Kog1-body formation increases the threshold for TORC1 reactivation after prolonged starvation. After 60 min glucose starvation, 2% glucose fully reactivates TORC1 in all strains, but 0.1% glucose triggers only ~50% Sch9 phosphorylation in WT compared to ~100% in the PrDm1+2 mutant that cannot form Kog1-bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57, C75, and C80 demonstrate that Kog1-bodies create a threshold effect for TORC1 reactivation. The dose-response experiments with different glucose concentrations (0.02%, 0.1%, 2%) show that mutants unable to form bodies have increased TORC1 sensitivity to low glucose. The authors note this effect is larger than expected based on the fraction of cells with bodies (60%), suggesting additional complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C71",
+      "C76",
+      "C81",
+      "C83",
+      "C84",
+      "C86"
+    ],
+    "result": "Glucose starvation causes TORC1 disassembly and Kog1-body formation creates hysteresis in the TORC1 pathway. Rapid TORC1 inactivation (\u03c4<2.5 min) is followed by Kog1-Tor1 dissociation and Kog1-body formation (\u03c4 = 11 \u00b1 3 min), which increases the activation threshold and helps cells commit to quiescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60, C71, C76, C81, C83-C84, and C86 synthesize the major findings into a coherent model. The temporal sequence (inactivation \u2192 dissociation \u2192 body formation \u2192 increased threshold) is supported by the kinetic and functional data. The hysteresis concept is well-supported by the threshold experiments (C56-C57), though the physiological significance (C60) involves some inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C72"
+    ],
+    "result": "PriLMs in Kog1 and TSC genes show evolutionary anti-correlation. Species with PriLMs in Kog1 (17/17 yeast species including S. cerevisiae and C. glabrata, plus C. elegans) lack TSC1/TSC2 genes, while species without PriLMs (5/6 yeast species including S. pombe, plus flies, mice, humans) have TSC genes. This suggests divergent mechanisms for TORC1 regulation in evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 and C72 provide comparative genomics data showing a striking anti-correlation between PriLMs and TSC genes across 23 yeast species and multiple higher eukaryotes. The pattern is statistically compelling (17/17 vs. 5/6), though the functional equivalence of these mechanisms (C72) is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C73",
+      "C77",
+      "C82"
+    ],
+    "result": "The authors speculate that Kog1-body formation may be important for long-term survival in fluctuating natural environments, that drugs targeting Kog1-bodies could selectively inhibit fungi/worms, and that other protein bodies may function similarly to create pathway hysteresis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61, C73, C77, and C82 are explicitly speculative (using 'likely', 'may', 'suggest') and represent hypotheses for future work rather than demonstrated results. While plausible based on the presented data, these claims lack direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The Kog1-YFP and Tor1-3xGFP fusion proteins used in this study are fully functional, as evidenced by normal growth rates compared to wild-type strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 validate the key reagents used throughout the study. The functionality is supported by growth rate comparisons and citations to prior work (Binda et al., 2009; Sturgill et al., 2008), ensuring that the observed localization patterns reflect native protein behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "Cycloheximide alone does not restore Kog1 localization to the vacuolar membrane after glucose starvation, indicating that glucose-specific signals (not just TORC1 activation) are required for Kog1-body dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 provides an important control showing that TORC1 activation by cycloheximide is insufficient to dissociate Kog1-bodies without glucose, supporting the specificity of the glucose-dependent mechanism. The data are shown in Figure 1\u2014figure supplement 5.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C62",
+      "C70",
+      "C74",
+      "C89"
+    ],
+    "result": "Background claims about TORC1 composition, function, and regulation in eukaryotes, including the roles of TSC1/TSC2, AMPK, and Gtr/Rag GTPases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16, C62, C70, C74, and C89 provide established background information supported by appropriate citations to prior literature. These claims set the context for the current study but do not represent new findings.",
+    "result_type": "MINOR"
+  }
+]

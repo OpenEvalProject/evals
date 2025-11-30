@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Axis elongation is a conserved morphogenetic process across species. In Drosophila, the germband lengthens via cell intercalation driven by polarized actomyosin contractility, forming multicellular vertices that resolve through assembly of new DV interfaces. Similar cell intercalation processes drive developmental morphogenesis in vertebrates including chick, Xenopus, zebrafish, and mouse.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the biological context and prior knowledge foundation for the study. They are well-supported by citations to established literature (C11-C32) and describe accepted mechanisms in the field. The claims about Drosophila germband elongation (C1-C3, C12-C13, C28-C29, C33) are supported by both prior literature and visual evidence provided in supplementary figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "New DV interfaces elongate in pulses with a period of 126\u00b15 s, with elongation pulses increasing edge length by 772\u00b146 nm and shortening pulses decreasing it by 114\u00b119 nm. These pulses are anti-correlated with periodic contractions of anterior/posterior cells (period 130\u00b13 s) and positively correlated with dorsal/ventral cell area changes, suggesting that pulsed contractions of cells around vertices promote vertex resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 provide quantitative measurements with appropriate sample sizes (n=110 edges) and statistical significance (p=9.0\u00d710\u207b\u00b2\u00b2). The correlation analyses (C42-C45) use appropriate time-shift methods to establish temporal relationships between edge elongation and cell area changes. The inference (C46) is appropriately cautious ('may promote') and supported by the correlation data presented in Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C63"
+    ],
+    "result": "Global inhibition of actomyosin contractility using Y-27632 (Rho-kinase inhibitor) disrupts both the rate and directionality of vertex resolution. Y-27632 treatment caused rapid myosin loss, dramatic reduction in apical area oscillation amplitude (p=1.7\u00d710\u207b\u2074\u2074), misoriented vertex resolution (9/25 vertices resolved within 30\u00b0 of DV axis vs 0/28 in controls, p=0.02), and reduced new edge elongation rate (0.001\u00b10.080 vs 0.28\u00b10.06 \u03bcm/min, p=0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design includes appropriate controls (water injection) and the effects are quantified with statistical analysis. Claims C50-C53 provide specific quantitative measurements with p-values. However, C55 raises a potential confound that Rho-kinase can affect Par polarity complex localization, which the authors address with the Cytochalasin D experiments. The conclusion (C63) is appropriately supported by converging evidence from both drug treatments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Cytochalasin D treatment (blocking actin polymerization) disrupted actomyosin contractility without affecting Par-6 localization. This led to reduced apical area oscillations (p=0.04), 83% reduction in new DV edge assembly rate (0.07\u00b10.10 vs 0.40\u00b10.05 \u03bcm/min, p=0.01), misoriented vertex resolution (4/15 along DV axis vs 0/50 in controls, p=4.0\u00d710\u207b\u00b9\u2075), and persistent non-resolving vertices (32/47 persisted \u226510 min).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Cytochalasin D experiments provide complementary evidence to the Y-27632 results while controlling for potential polarity defects (C59). The quantitative measurements (C60-C62) include appropriate controls (DMSO injection) and statistical analysis. The dramatic effect on vertex persistence (C62) provides strong evidence for the necessity of actin polymerization in vertex resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Laser ablation experiments demonstrate that new DV edges sustain 32% greater tension than control DV edges (retraction velocity 0.81\u00b10.08 vs 0.61\u00b10.03 \u03bcm/s, p=0.05). New DV interfaces display smaller junction angles (136.6\u00b13.3\u00b0 vs 150.3\u00b13.4\u00b0, p=0.02), and retraction velocity anti-correlates with junction angle (r=-0.6, p=2.9\u00d710\u207b\u2075) but not with interface length. New DV edges are myosin-depleted (p=4.3\u00d710\u207b\u2075), suggesting tension is generated elsewhere and transmitted to the new edge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The laser ablation methodology is well-established (C64, citing prior work). The quantitative measurements (C65, C67, C68) include appropriate statistical analysis and sample sizes. The inference about uniform viscoelastic properties (C66) is appropriately qualified with the assumption stated. The lack of correlation with interface length (C69) strengthens the interpretation that tension differences relate to the assembly process rather than geometric factors. The myosin depletion observation (C71) with supporting data provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C102",
+      "C103"
+    ],
+    "result": "Targeted laser ablation to disrupt contractility in specific cells reveals differential roles: anterior/posterior cells are necessary for both vertex resolution (4/7 vertices failed to resolve vs 0/10 controls) and new edge elongation (rate reduced from 0.47\u00b10.08 to 0.18\u00b10.05 \u03bcm/min, p=0.03), while dorsal/ventral cells are mainly necessary to sustain elongation after initial resolution (rate reduced from 0.52\u00b10.11 to -0.03\u00b10.08 \u03bcm/min over 120s, p=0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The targeted ablation experiments (C74-C81) provide cell-specific functional analysis with appropriate sham-irradiated controls. The quantitative measurements include statistical analysis and clear temporal resolution. The observation that DV cell ablation doesn't prevent initial resolution (C78-C79) but affects sustained elongation (C80-C81) is particularly informative. The conclusions (C77, C82, C102-C103) are appropriately supported by the experimental data, though they are inferences about cellular roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "A novel method to apply ectopic tension via UV laser wounding demonstrates that local AP tension is sufficient to accelerate vertex resolution. UV irradiation of anterior/posterior cells induced myosin accumulation and apical constriction, generating ectopic AP tension that increased new DV junction elongation rate 2.1-fold (1.73\u00b10.30 vs 0.79\u00b10.14 \u03bcm/min in sham controls, p=6.2\u00d710\u207b\u00b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The development of a method to apply ectopic tension (C83-C84) is well-documented with visual evidence. The experimental design includes appropriate sham-irradiation controls (C85). The quantitative measurement (C87) shows a dramatic and statistically significant effect. The conclusion (C88) that local AP tension is sufficient is appropriately supported, though the method involves cellular wounding which could have additional effects beyond pure mechanical tension.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Ectopic DV tension can reorient vertex resolution perpendicular to the normal AP direction. While all control vertices (n=12) resolved within 30\u00b0 of the AP axis at 0.69\u00b10.13 \u03bcm/min, applying ectopic DV tension caused all vertices (13/13) to resolve within 30\u00b0 of the DV axis without affecting elongation rate (0.74\u00b10.18 \u03bcm/min, p=0.8), demonstrating that local tension can both promote and orient new interface assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reorientation experiment (C92) provides compelling evidence with 13/13 vertices showing the predicted behavior compared to 0/12 controls. The observation that elongation rate is maintained (C91) while orientation changes is particularly informative. The conclusions (C93-C94) about the role of mechanical forces are well-supported by the combined evidence from acceleration and reorientation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C98",
+      "C101"
+    ],
+    "result": "The authors propose that local, periodic contractile forces polarize vertex resolution to drive Drosophila axis elongation, with pulsatile anisotropic contraction of cells around vertices causing increased tension on new contacts. This mechanism may represent a general role for pulsed contractile activity in orienting and promoting cell intercalation across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is the main conclusion integrating multiple experimental findings. C10 and C98 are appropriately cautious ('propose', 'suggest', 'may be caused') given they represent mechanistic interpretations. The generalization to other systems (C101) is supported by citations to similar findings in mouse limb bud (C99-C100) and other contexts (C95-C97), though this remains somewhat speculative as it extends beyond the direct experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C100",
+      "C104"
+    ],
+    "result": "Prior work and computational modeling support the proposed mechanism. Myosin turnover is important for vertex resolution directionality, computational modeling predicts periodic contraction could promote oriented assembly, and similar tension-dependent vertex resolution occurs in mouse limb bud elongation and Drosophila dorsal thorax, with pulsed contractions disrupted in \u03b2-catenin mutants showing lost directionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims cite prior experimental and computational work (C34, C35, C95-C97, C99-C100, C104) that provides context and support for the current findings. All are appropriately attributed to cited sources. This represents proper integration of the current work with existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors propose mechanisms by which mechanical forces may regulate vertex resolution through actin dynamics. Pulsed contraction could cause membrane reorganization facilitating actin scaffold assembly and junction formation. Actin accumulation is the first known step of vertex resolution, and blocking actin polymerization prevents resolution. Mechanical forces can control actin dynamics in vitro by affecting formin conformation and reducing filament severing susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C106 and C112 are explicitly speculative ('could', 'may') mechanisms supported by citations but not directly tested. C107 cites prior work, C108 is supported by the Cytochalasin D data, and C109 is an appropriately cautious inference. C110-C111 cite in vitro work that may not directly apply in vivo. While these represent reasonable hypotheses consistent with the data, they lack direct experimental validation in this system and should be considered speculative mechanistic proposals rather than demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The manuscript describes the anatomical and kinematic features of D. melanogaster larvae, including body dimensions, segmentation, and peristaltic locomotion mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C9, C10, and C11 are well-supported by citations to established literature (Trueman 1975, Heckscher et al. 2012) and represent standard anatomical knowledge about the organism. These descriptive claims provide the biological foundation for the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C13",
+      "C14",
+      "C15",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Prior experimental work demonstrates that eliminating proprioception leads to slower crawling with longer wave periods and increased segmental contraction, while larvae can still crawl without proprioception or brain input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C13-C15, C33-C35 accurately cite multiple experimental studies (Hughes and Thomas 2007, Inada et al. 2011, Song et al. 2007, Suster and Bate 2002, Fushiki et al. 2013, Berni et al. 2012, Pulver et al. 2015). These claims establish the experimental context for the modeling work and are consistently supported across multiple independent studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C12",
+      "C16",
+      "C53",
+      "C54"
+    ],
+    "result": "The model couples Wilson-Cowan neural dynamics to body mechanics and frictional environment, with specific assumptions including negligible inertial effects and head-tail coupling via enforced displacement equality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C12, C16, C53, C54 describe the model structure and key assumptions. The negligible inertia assumption (C16) is justified with quantitative estimates (C17) showing inertial forces (~10^-6 gm/s\u00b2) are much smaller than friction forces (~5\u00d710^-2 gm/s\u00b2). The modeling choices are clearly stated and justified, though some (like head-tail coupling) are acknowledged as simplifications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C28"
+    ],
+    "result": "The model quantitatively reproduces crawling speeds and metrics for both first and third instar larvae, predicting speeds of ~0.5 mm/s for third instar and ~30-90 \u03bcm/s for first instar larvae, with ~30% peak segmental contraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C22, C24-C26, C28 show reasonable quantitative agreement between model predictions and experimental observations. The model predictions are within a factor of 2 of experimental values (e.g., 0.5 mm/s predicted vs 1 mm/s observed for third instar), which is acceptable given the model's simplifications. The agreement across multiple metrics (speed, wave frequency, contraction) strengthens the validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The model reproduces optogenetic perturbation experiments showing that inhibiting motor neurons stops crawling at the inhibited segment, and crawling can resume when inhibition is removed, with memory maintained in body contraction and proprioceptive channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C29-C32, C57-C61 show the model qualitatively reproduces optogenetic inhibition experiments (Inada et al. 2011). However, there is a discrepancy regarding the memory mechanism: the model proposes memory is in body contraction/proprioception (C58), while experiments suggest it's in the VNC (C60). The authors acknowledge this difference but don't fully resolve it. The 10-second memory timescale (C61) also remains unexplained by the model's millisecond-scale neural dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The model reproduces the effects of silencing proprioception, showing increased peak contraction (~65%), reduced crawling rate (~0.01 waves per \u03c4E), and only single segments off-ground, matching experimental observations qualitatively and quantitatively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38, C48-C50 demonstrate the model successfully captures proprioception-silencing experiments by setting wEp=0 and wIp=0. The predicted changes (65% contraction vs 30% normal, ~4\u00d7 slower rate) match experimental observations from Hughes and Thomas 2007 and Inada et al. 2011. Figure 4 provides visual confirmation of these results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C79"
+    ],
+    "result": "The model demonstrates that sustained crawling is possible with purely proprioceptive coupling (no CPG), challenging the central role of CPG in crawling locomotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C79 show that setting wEn=0 (no neural coupling) still produces sustained crawling in the model. This is a significant theoretical finding supported by the model simulations. However, the authors acknowledge this may not be biologically realistic in adults, and no direct experimental validation of this specific prediction is provided. The finding is consistent with the earlier Paoletti and Mahadevan 2014 model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C45"
+    ],
+    "result": "Proprioception increases robustness by widening the range of neural coupling parameters that support sustained crawling, leading to the prediction that individuals with silenced proprioception should show greater variability in crawling metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41 and C45 are supported by the systematic parameter variation shown in Figure 5. The model demonstrates that proprioception allows crawling over a wider range of wEn values and reduces sensitivity to parameter variations. The prediction of increased variability (C45) is a logical inference from the model but remains untested experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The model predicts that neural coupling strength can control crawling speed, with increased coupling leading to higher speeds, supported by analogous findings in stick insects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C47 show that increasing wEn leads to higher speeds in the model (Figure 5B). This prediction is supported by analogy to stick insect experiments (B\u00fcschges 2012, C47) where faster motion involves increased neural coupling. However, this remains a prediction for Drosophila larvae without direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The model predicts that decreasing friction below a threshold (~0.4 Fmax/kL) leads to slippage, reduced wave frequency, increased propagation delays, initially increased then saturating speed, larger step sizes, and increased peak contraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C72-C76 describe systematic predictions from varying the friction parameter Fmax/kL, shown in Figure 6. The model identifies a clear threshold where slippage begins and predicts multiple coordinated changes in crawling metrics. These are testable predictions but lack experimental validation. The predictions are internally consistent and arise naturally from the model mechanics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C77",
+      "C78"
+    ],
+    "result": "The integrated model explains crawling phenomenology with and without proprioception and elucidates proprioception's stabilizing role in producing robust crawling under biological perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C77, C78 represent the main conclusions of the paper. These are well-supported by the combination of quantitative validation (C21-C28), reproduction of optogenetic perturbations (C29-C32, C36-C38), and parameter sensitivity analysis (C41, Figure 5). The model successfully integrates neural, mechanical, and environmental components to explain multiple experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C55",
+      "C56"
+    ],
+    "result": "The model reproduces the visceral piston phase where head and tail move concurrently, followed by posterior-to-anterior peristaltic waves with neural activity leading muscular contraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C52, C55, C56 describe the model's reproduction of the visceral piston phase observed experimentally (Heckscher et al. 2012, Simon et al. 2010). Figure 2 shows the model captures this behavior through the enforced head-tail coupling. The phase relationships between neural, muscular, and contraction activity are clearly demonstrated in the simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Recent experimental findings on PMSIs and GVLIs show additional inhibitory mechanisms affecting crawling speed and contraction termination that are not yet incorporated into the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C70 accurately cite recent experimental findings (Kohsaka et al. 2014, Itakura et al. 2015, Rohrbough and Broadie 2002, Schmid et al. 1999, Heckscher et al. 2012) but explicitly acknowledge these observations are not yet incorporated into the current model. These claims establish context for future model development rather than validating current model predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "The model identifies two coordinated channels for segment-to-segment propagation: posterior-to-anterior neural coupling and proprioceptive coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 describes a key mechanistic insight from the model, shown in Figures 1C-D and analyzed in Figure 5F. The model demonstrates how these two channels work together, with their relative contributions depending on the neural coupling strength wEn. This is a central organizing principle of the model architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C17"
+    ],
+    "result": "The mass of a third instar larva is approximately 10^-3 g, with acceleration ~10^-3 m/s\u00b2, leading to inertial forces of ~10^-6 gm/s\u00b2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C17 provides quantitative justification for the negligible inertia assumption (C16). The calculation is straightforward and the comparison to friction forces (~5\u00d710^-2 gm/s\u00b2 from Wallace 1969) shows inertial forces are ~4 orders of magnitude smaller, strongly supporting the quasi-static approximation.",
+    "result_type": "MINOR"
+  }
+]

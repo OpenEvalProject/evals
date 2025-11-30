@@ -1,0 +1,2359 @@
+{
+  "submission": {
+    "id": "5d736329-bb0c-4834-9cf1-ac5902e0ae78",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T22:40:11.404649Z",
+    "updated_at": "2025-11-29T22:40:11.404649Z"
+  },
+  "content": [
+    {
+      "id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "submission_id": "5d736329-bb0c-4834-9cf1-ac5902e0ae78",
+      "content_type": "manuscript",
+      "content_text": "# Correlated magnetic resonance imaging and ultramicroscopy (MR-UM) is a tool kit to assess the dynamics of glioma angiogenesis\n\n## Authors\n\n- Michael O Breckwoldt<sup>1</sup> \u2020\n- Julia Bode<sup>3</sup>\n- Felix T Kurz<sup>1</sup>\n- Angelika Hoffmann<sup>1</sup>\n- Katharina Ochs<sup>2</sup>\n- Martina Ott<sup>2</sup>\n- Katrin Deumelandt<sup>2</sup>\n- Thomas Kr\u00fcwel<sup>6</sup>\n- Daniel Schwarz<sup>1</sup>\n- Manuel Fischer<sup>1</sup>\n- Xavier Helluy<sup>1</sup>\n- David Milford<sup>1</sup>\n- Klara Kirschbaum<sup>1</sup>\n- Gergely Solecki<sup>5</sup>\n- Sara Chiblak<sup>8</sup>\n- Amir Abdollahi<sup>8</sup>\n- Frank Winkler<sup>5</sup>\n- Wolfgang Wick<sup>5</sup>\n- Michael Platten<sup>2</sup>\n- Sabine Heiland<sup>1</sup>\n- Martin Bendszus<sup>1</sup>\n- Bj\u00f6rn Tews<sup>3</sup> \u2020\n\n### Affiliations\n\n1. Neuroradiology Department University Hospital Heidelberg Heidelberg Germany\n2. Clinical Cooperation Unit Neuroimmunology and Brain Tumor Immunology German Cancer Research Center Heidelberg Germany\n3. Schaller Research Group University of Heidelberg and German Cancer Research Center Heidelberg Germany\n4. Molecular Mechanisms of Tumor Invasion German Cancer Research Center Heidelberg Germany\n5. Neurology Clinic and National Center for Tumor Diseases University Hospital Heidelberg Heidelberg Germany\n6. Department of Diagnostic and Interventional Radiology University Medical Center G\u00f6ttingen G\u00f6ttingen Germany\n7. NeuroImaging Centre, Research Department of Neuroscience Ruhr-University Bochum Bochum Germany\n8. German Cancer Consortium and Heidelberg Institute of Radiation Oncology National Center for Radiation Research in Oncology Heidelberg Germany\n9. Heidelberg University School of Medicine Heidelberg University Heidelberg Germany\n10. Translational Radiation Oncology German Cancer Research Center Heidelberg Germany\n11. Clinical Cooperation Unit Neurooncology, German Cancer Consortium German Cancer Research Center Heidelberg Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nNeoangiogenesis is a pivotal therapeutic target in glioblastoma. Tumor monitoring requires imaging methods to assess treatment effects and disease progression. Until now mapping of the tumor vasculature has been difficult. We have developed a combined magnetic resonance and optical toolkit to study neoangiogenesis in glioma models. We use in vivo magnetic resonance imaging (MRI) and correlative ultramicroscopy (UM) of ex vivo cleared whole brains to track neovascularization. T2* imaging allows the identification of single vessels in glioma development and the quantification of neovessels over time. Pharmacological VEGF inhibition leads to partial vascular normalization with decreased vessel caliber, density, and permeability. To further resolve the tumor microvasculature, we performed correlated UM of fluorescently labeled microvessels in cleared brains. UM resolved typical features of neoangiogenesis and tumor cell invasion with a spatial resolution of ~5 \u00b5m. MR-UM can be used as a platform for three-dimensional mapping and high-resolution quantification of tumor angiogenesis.\n\n## Introduction\n\nGliomas are highly malignant brain tumors with poor prognosis (Wen and Kesari, 2008). Glioblastoma multiforme (GBM) is characterized by high cellular proliferation rates and a rapid induction of angiogenesis (Wen and Kesari, 2008). Angiogenesis is a hallmark of malignant tumors, and most tumors show an exponential ingrowth of neovessels upon a certain tumor size to accommodate their metabolic needs (Carmeliet and Jain, 2011; Hanahan and Weinberg, 2011). This phenomenon is called 'angiogenic switch' and is characterized by the upregulation of pro-angiogenic molecules like vascular endothelial growth factor (VEGF) or angiopoietin 2 (Ang-2) that induce fast tumor angiogenesis. The angiogenic switch is a central feature of malignant tumors and leads to a transition toward a more invasive and aggressive tumor growth (Bruno et al., 2014). Hence, many efforts have been made to develop antiangiogenic therapies to 'starve' tumors off their resources (Huang et al., 2003). So far, this approach of using anti-VEGF agents like bevacizumab has shown clinical benefit in certain tumor types (Mittal et al., 2014) but, despite significant improvement of progression-free survival, does not prolong overall survival of primary GBM in an unselected patient cohort (Chinot et al., 2014). Similarly, VEGF receptor 2 (VEGF-R2) inhibition, despite strong preclinical data (Batchelor et al., 2007; Winkler et al., 2004), has not been successful in neuro-oncology yet (Batchelor et al., 2013). New methods are currently developed to better identify those patients who might benefit from antiangiogenic therapies: Next to molecular approaches (Sandmann et al., 2015), magnetic resonance (MR) imaging could be used for patient stratification. In fact, accumulating data suggest that vascular normalization that occurs early after the initiation of therapy, might be such a marker which could aid clinical decision making (Emblem et al., 2013; Lu-Emerson et al., 2015). However, improved imaging techniques that faithfully and non-invasively characterize vessel architecture and antiangiogenic treatment effects are needed to facilitate the understanding of biological actions of these therapies, and the development of clinical trials.\n\nWe employed a MR imaging approach to monitor tumor vessels at single vessel resolution. The technique is based on T2*-weighted (T2*-w) high-resolution Blood Oxygenation Level Dependent (BOLD) venography (Park et al., 2008) with standard gadolinium (Gd) contrast agents at ultrahigh-field strength (9.4 Tesla, isotropic 80 \u00b5m resolution). This visualizes substantially more vascular detail compared to conventional T2*-w imaging. We performed pre- and post-contrast MR scans to define angiogenesis during glioma development in two different glioma models. Also, we assess treatment effects of anti-VEGF or radiation therapy on the vascular compartment. We further mapped the tumor vascularization by correlated, dual-color ultramicroscopy (UM) of cleared, unsectioned brains (Ert\u00fcrk et al., 2012; Schwarz et al., 2015). Fluorescent labeling of the microvasculature using lectins resulted in complementary 3D MR and UM data sets (dubbed 'MR-UM') of the entire tumor 'macro-'\u00a0and 'microvasculature', which can be compared side-by-side. Thus, MR-UM bridges the gap between MR and optical imaging and may serve as a platform to better understand underlying mechanisms of antiangiogenic treatment and to identify novel druggable targets for preclinical therapy development.\n\n## Methods\n\n### Cell culture and glioma models\n\nThe mouse glioma cell line GL261 was purchased from National Cancer Institute (NCI Tumor Repository, Frederick, MD) and cultured in Dulbecco\u2019s modified Eagle\u2019s medium (DMEM) containing 10% FBS, 100 U/ml penicillin, and 100 \u00b5g/ml streptomycin (all from Sigma-Aldrich Chemie GmbH, Taufkirchen, Germany). The\u00a01x105 GL261 cells diluted in 2-\u00b5l sterile phosphate buffered saline (PBS, Sigma-Aldrich Chemie GmbH, Taufkirchen, Germany) were stereotactically implanted into the right brain hemisphere of 6-\u00a0to\u00a08-week-old female C57Bl/6J mice (n=45 mice, Charles River Laboratories, Sulzfeld, Germany) using a Hamilton syringe, driven by a fine step motor (coordinates: 2 mm lateral and 2 mm ventral of bregma; injection depth: 3 mm below the dural surface). Animals were deeply anesthetized with ketamine/xylazine and unresponsive to stimuli during the intracranial injection; GL261 cells were routinely tested for viral or mycoplasma contamination, and mouse cell identity was confirmed by the multiplex cell contamination test (Multiplexion GmbH, Heidelberg, Germany, Schmitt and Pawlita, 2009). The human S24 cell line was derived as a primary glioblastoma culture from a resected glioblastoma (after informed consent) and GBM typical genetic changes were confirmed by comparative genomic hybridization (Lemke et al., 2012; Osswald et al., 2015). For the S24 glioma model, 5x104 S24:td-tomato cells (stably transduced by lentivirus) were transplanted orthotopically in 8-\u00a0to\u00a010-week-old male NMRI nude mice (Charles River, Sulzfeld, Germany, n=3 mice). The cells were cultivated under serum-free conditions in DMEM-F12 as sphere cultures (Thermo Fisher Scientific Inc., Waltham, MA) supplemented with 2% B-27 (Thermo Fisher Scientific Inc.), 5 \u00b5g/ml human insulin (Sigma-Aldrich Corporation, St. Louis, MO), 12.8 ng/ml heparin (Sigma-Aldrich Corporation), 0.4 ng/ml EGF (R&D Systems Inc., Minneapolis, MN) and 0.4 ng/ml FGF (Thermo Fisher Scientific Inc.). Cell lines were regularly checked for mycoplasma infections and authenticity (species control). Mycoplasma testing was done using the LookOut Mycoplasma PCR Detection Kit (Sigma-Aldrich, Germany) according to the manufacturer\u2019s instructions. All animal experiments were approved by the regional animal welfare committee (permit number: G187/10, G188/12 and G145/10, Regierungspr\u00e4sidium Karlsruhe).\n\n### MR imaging\n\nMR imaging was performed on a 9.4 Tesla horizontal bore small animal NMR scanner (BioSpec 94/20 USR, Bruker BioSpin GmbH, Ettlingen, Germany) with a four-channel phased-array surface receiver coil. MR imaging included a standard RARE T2-w and T1-w post-Gd-contrast sequence to monitor tumor volume (T2-w parameters: 2D sequence, 78 \u00b5m in plane resolution, TE: 33 ms, TR: 2500 ms, flip angle: 90\u00b0, acquisition matrix: 200 x 150, number of averages: 2, slice thickness: 700 \u00b5m duration: 2\u2009min 53 s; T1-w parameters: 2D sequence, 100 \u00b5m in plane resolution, TE: 6 ms, 1000 TR: ms, flip angle: 90\u00b0, acquisition matrix: 256 x 256, number of averages: 2, slice thickness: 500 \u00b5m, duration: 5\u2009min). To assess the tumor vasculature, we used a T2*-weighted gradient echo sequence (Park et al., 2008) and acquired pre- and post-contrast scans (3D sequence, 80 \u00b5m isotropic resolution, TE: 18 ms; TR: 50 ms; flip angle: 12\u00b0; number of averages: 1, acquisition matrix: 400 x 188 x 100, duration: 15\u2009min 40 s). Pre-contrast images were used to differentiate susceptibility artifacts caused,\u00a0for\u00a0example, by tumor microbleedings from vessel signals that were only detectable after contrast administration. Dynamic contrast-enhanced\u00a0(DCE) imaging (TE: 1.8 ms; TR: 16 ms; flip angle: 10\u00b0; slice thickness: 700 \u00b5m, acquisition matrix: 66 x 128, 3 slices acquired, number of averages: 1, 300 repetitions; 700 \u00b5m in plane resolution; duration: 10\u2009min, time resolution 2 s) was used to assess vascular permeability (Ktrans). 0.2 mmol/kg Gadodiamide (Omniscan, Nycomed, Ismaningen, Germany) was administered by tail vein injection for DCE and post-contrast scans. In five animals, 50 \u00b5l Gadodiamide was administered by intraperitoneal injection (ip), which had been determined before to match an iv dose of 0.2 mmol/kg. To assess the validity of the T2*-w sequence with an iron-based contrast agent, we performed blood pool imaging pre- and post-iv injections of crossed linked iron oxide nanoparticles (USPIO, CLIO-FITC, 15 mg/kg, particle size: 31 nm, kind gift by R. Weissleder, MGH, Boston). MR imaging was started 7 to\u00a014 days post GL261 tumor cell implantation and repeated weekly up to 5 weeks after tumor cell implantation. For MR imaging, animals were anesthetized with 3% isoflurane. Anesthesia was maintained with 1\u20132% isoflurane. Animals were kept on a heating pad to keep the body temperature constant. Animal respiration was monitored externally during imaging with a breathing surface pad controlled by an in-house developed LabView program (National Instruments Corporation).\n\n### Vascular permeability imaging\n\nDCE imaging was post-processed with OLEA software (OLEA Medical, La Ciotat, France). Pseudocolor images represent vascular permeability maps (Ktrans) that were calculated using the Tofts and Kermode model (Tofts and Kermode, 1991). Quantification of DCE time\u00a0series was performed in FIJI by ROI analysis of the main tumor slide and encompassing the entire tumor area. A mirror ROI was set in the contralateral hemisphere. Intensity values were measured and processed in Microsoft Excel (Microsoft). Signal ratios (SR) were calculated over time (SR=signaltumor / signalcontralateral site) and displayed as blood\u2013brain\u00a0barrier disruption (BBB-D, arbitrary units, a.u.).\n\n### Antiangiogenic therapy\n\nGL261 glioma-bearing mice were treated with the murine-chimeric anti-VEGF antibody which is based on the humanized anti-VEGF antibody B20-4.1 (Srivastava et al., 2014) or murine IgG control antibody (Roche, pRED Innovation Center Penzberg) at a dose of 10 mg/kg every 3 days by ip injection (four mice per group). Treatment was initiated 2 weeks after tumor cell implantation when a solid tumor was present on MRI. Animals were treated for 1 week (days 0, 3, 6) and MRI was performed on day 7 (3 weeks post inoculation) to quantify vascularization parameters. After the MR investigation, animals were injected with lectin-FITC or lectin-texas red and sacrificed for UM correlation.\n\n### Radiotherapy\n\nPhoton irradiation was delivered by XRAD320 X-ray device (Precision X-Ray, CT, USA). Animals were anesthetized by ketamine/xylazine during the procedure. Whole-brain irradiation was performed with a lateral photon beam at a dose of 2 grays per day. Irradiations were performed for four consecutive days starting 2 weeks after GL261 tumor implantation. The body was protected by lead shield to avoid radiation exposure to organs other than the brain. MR measurements were performed before (week 2) and after the completion of irradiation (week 3). Mice without irradiation served as controls (n=3 mice per group).\n\n### Computed tomography\n\nTo quantify the apparent volume loss of brain tissue induced by the clearing procedure, we performed computed tomography (CT) scans before and after clearing. Two 360\u00b0 scans were obtained on a small animal CT (Quantum FX, Perkin Elmer, Waltham, MA) using the following parameter: 90 kV, 200 \u00b5A, 24 mm field of view, 40 \u00b5m isotropic resolution. Image reconstruction was performed using a standard filtered backprojection algorithm implemented in the vendor\u2019s software. The maximum brain dimensions were determined in transversal slices and compared before and after clearing. We found that the brain volumes shrinks by ~40% but that the ratio of maximum length/width stays constant before and after clearing (length and width pre clearing: 1.33 \u00b1 0.54 cm x 1.05 \u00b1 0.38 cm; post clearing: 0.79 \u00b1 0.24 cm x 0.62 \u00b1 0.17 cm; ratio: 1.25 \u00b1 0.01 and 1.28 \u00b1 0.03, p>0.05 for ratio comparison).\n\n### Image processing and analysis of MR data\n\nThe vascularized area was quantified in Osirix software (V.4.12, Pixmeo, Geneva) by manually selecting region of interests (ROIs) around tubular vessel-like structures on post-contrast T2*-w images. Care was taken to exclude areas that were hypointense on pre-contrast images and most likely represent microbleedings or calcifications. For histogram analysis, the tumor region and an outside region in the frontal white matter were manually segmented. Intensity values for histogram analysis were read out in Matlab (Release 2015a, The MathWorks, Inc., Natick, MA). Images were normalized using the following formula: (mean voxel intensitytumor \u2013 intensityoutside)/standard deviation (SD).\n\n### Labeling of the microvasculature and assessment of BBB-D\n\nFor correlative optical microscopy of the microvasculature, animals were injected with fluorescent lectins that bind to N-acetyl-\u03b2-D-glucosamine oligomers of endothelial cells (W\u00e4lchli et al., 2015). Injection of isolectin-FITC (12 mg/kg, Sigma) or lectin-texas red from Lycopersicon esculentum (12 mg/kg; Vector laboratories) was performed via the tail vein in 100 \u00b5l PBS after MRI. Animals were sacrificed 5\u2009min after lectin injection by a ketamine/xylazine overdose and transcardially perfused with 5 ml PBS followed by 10 ml 4% paraformaldehyde (Histofix, Carl Roth GmbH, Karlsruhe). For the assessment of BBB-D, animals (n=2) were iv injected with 150 \u00b5l of 2% Evans blue (EB, Sigma) diluted in PBS. Animals were sacrificed 10\u2009min after EB injection and cleared using the FluoClearBABB protocol (see below). Caution must be taken when using EB in UM as prolonged animal perfusion and clearing can result in a drop of fluorescent signal due to a possible washout of the hydrophilic compound.\n\n### Fixation and clearing of mouse brains\n\nBrains were fixed after perfusion with 4\u00a0% buffered formalin for at least 24\u2009hr at 4\u00b0C in the dark. For UM-analysis, whole brains were optically cleared using organic solvents. Clearing was performed according to the 3DISCO protocol (Ert\u00fcrk et al., 2011; 2012). Brains were transferred into glass vials for tetrahydrofuran (THF; Sigma Aldrich) dehydration.\u00a0Two milliliter of 50\u00a0% THF were gently added using a pipette. Vials were placed into black 50-ml Falcon tubes and then mounted onto an overhead turning wheel (program C3, 15 rpm, Neolab, intelli-mixer). Clearing was performed at room temperature. After 12\u2009hr, the 50\u00a0% THF solution was exchanged by a 70\u00a0% THF solution. Vials were again put into black Falcon tubes and mounted onto the turning wheel for another 12\u2009hr. The procedure was repeated with 80% and 100% THF solutions, respectively. Samples were incubated for 12\u2009hr in 100\u00a0% THF for three times. The dehydrated brains were placed in benzyl ether for 48\u2009hr in order to clear the samples (98\u00a0% dibenzyl ether, DBE, Sigma-Aldrich, Steinheim, Germany). To avoid degradation of the fluorescent signal, samples were kept in the dark and imaged immediately after the clearing procedure. S24 tumor-bearing brains were cleared with the recently published protocol FluoClearBABB (Schwarz et al., 2015). This protocol is based on benzyl alcohol/benzyl benzoate clearing in combination with a basic pH, which is maintained throughout the clearing procedure. The protocol is especially suited for effective clearing of aged mouse brains. Mice were perfused with lectin-FITC as described. After dissection, brains were kept in PBS at 4\u00b0C. For the dehydration of brains, analytical grade alcohol (t-butanol, Sigma) was diluted with double-distilled water. Brains were dehydrated using t-butanols ranging from 30 to 100\u00a0%. The clearing solution BABB was prepared by mixing benzyl alcohol (Merck, analytical grade) and benzyl benzoate (Sigma, 'purissimum p.A.' grade) in a 1: 2 volume ratio. The pH levels of dehydration and clearing solutions were adjusted using an InLab Science electrode suited for organic solvents (Mettler-Toledo). pH levels were adjusted with triethylamine (Sigma-Aldrich).\n\n### Acquisition of ultramicroscopy data sets\n\nThe cleared brains were scanned with a light sheet microscope (LaVision BioTec GmbH, Bielefeld, Germany). We used 0.63x, 1.0x, and 2.0x with a 2x objective lens and a white light laser (SuperK EXTREME 80 mHz VIS; NKT Photonics, Cologne, Germany) with a wavelength spectrum ranging from 400 to 2400 nm (pixel size for 0.63x: 5.16 \u00b5m; for 1.0x: 3.25 \u00b5m and for 2.0x: 1.62 \u00b5m). For the detection of blood vessels, the following filters were used: lectin-FITC, excitation 470 / 40 nm; emission 525 / 50 nm; lectin-texas red excitation 545 / 25; emission 585 / 40.\n\nZ-stacks with 5 \u00b5m step size and a total range of up to 1500 to 2000 \u00b5m for the transversal measurement of the whole brain were acquired. Measurements with exposure times of 300 ms per slice resulted in a total acquisition time of ~10\u2009min per brain sample and magnification. Images were exported as tagged image file (tif) and further post-processed in the ImageJ package FIJI, version 1.49 (http://fiji.sc/Fiji). For the generation of UM movies, the \u2018Running Z projector\u2019 plugin (FIJI) was used.\n\n### Quantification of ultramicroscopy data\n\nRepresentative single slices from light sheet microscopy data sets were scaled in FIJI to a resolution of 0.5 x 0.5 \u03bcm2. ROIs were manually chosen inside the tumor region and in a region not affected by tumor or vessel alterations ('outside'). Vessels were identified with the FIJI plugin 'tubeness' that finds linear structures in an image (Sato et al., 1998). The resulting images were binarized individually to ensure maximal congruence with the respective vessels on the original image slice. For each binarized ROI, vessel objects were identified and skeletonized\u00a0using Matlabs built-in functions 'bwmorph' and 'regionprops'. After subtracting vessel branch points of the skeletonized image, the length of each vessel segment was determined. To obtain the vessel diameter and to avoid very small vessel cross-sections with minimal length, only those segments were considered whose lengths were longer than the difference of mean and standard error of the segment length distribution. For each pixel iS of each segment S, the minimum distance to a non-vessel pixel was determined as the pixel-specific segment radius ris. Subsequently, we determined average segment radius $r_{S}\u00af=\\frac{\\sum_{i_{S}\\inS}r_{i_{S}}}{\\sum_{(i_{S}\\inS)}}$and overall mean segment radius $r~=\\sum_{S}r_{_{S}}\u00af_{}/\\sum_{S}.$ The tortuosity of the longest 10% of the segments was obtained by dividing segment length by the Euclidean distance between its endpoints. The quantification of the vasculature in the 3D stack was performed in Amira (FEI, Hilsboro). The tumor and an 'outside region' were segmented in UM data sets (100\u2013200 images per stack). Segmentation of the vasculature was performed semi-automatically based on pixel intensity. Thresholded images were median filtered, skeletonized and vessel length and radius were quantified.\n\n### Immunohistochemistry\n\nTo correlate MRI findings to histology 10 \u00b5m coronal cryostat sections were cut. Hematoxylin & eosin staining was performed for anatomical assessment. Lectin-FITC or lectin-texas red was injected iv in healthy animals (n=2) and dye labeling of endothelial cells was assessed on cryosections. Immunohistochemistry for endothelium (CD31 antibody, BD Bioscience) was performed using standard immunohistochemistry protocols and analyzed on a confocal laser-scanning microscope (Olympus FV1000). CD31 staining in lectin-FITC injected mice was performed in three GL261 tumor-bearing animals.\n\n### Statistical analysis\n\nData is shown as mean \u00b1 SEM. Statistical analyses were performed in PRISM (GraphPad). Two-tailed student\u2019s t-tests were used to compare two groups. One-way ANOVA with Bonferroni\u2019s post hoc testing was used for multiple comparisons. p-Values < 0.05 were considered significant. *denotes p<0.05; **p<0.01; ***p<0.001.\n\n## Results\n\n### Tumor vascularization can be monitored by contrast-enhanced T2*-weighted MRI\n\nGlioma-bearing mice were monitored weekly with high-field MRI (9.4\u2009T) starting 1 week after tumor cell implantation. Tumors could be clearly visualized by Gd-enhanced T1-weighted imaging (Figure 1a). Tumors grew rapidly and untreated mice got symptomatic and were sacrificed 4\u20135 weeks post implantation when they had developed large intracranial tumors (Figure 1a). To monitor vascularization both in the healthy brain and under pathological conditions, we employed a gradient echo, T2*-w sequence with high spatial resolution (80 \u00b5m isotropic resolution). This sequence allows the visualization of venules due to the BOLD effect of deoxygenized blood and the resulting susceptibility signals before contrast administration (Figure 1b). After administration of a clinically applied Gd-contrast agent, arterioles and venules show strong tubular vascular susceptibility signals that allow the assessment of the vascularization status (Figure 1b). Also, an iron-based experimental contrast agent (ultrasmall iron oxide nanoparticle, USPIO) resulted in a good delineation of the vasculature (Figure 1\u2014figure supplement 1). In the healthy brain, for\u00a0example, basal ganglia and cortical penetrating vessels can be visualized (Figure 1b and Figure 1\u2014figure supplement 1). Under pathological conditions arterioles and venules within the tumor bed could be identified starting 2\u00a0weeks post-tumor implantation (Figure 1c, and Figure 1\u2014figure supplement 2). First detectable vessels run both centrally and in the periphery of the developing glioma and could only be visualized after the administration of contrast material as tubular hypointense structures (Figure 1c).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/11712/elife-11712-fig1-v1.jpg)\n\n**Figure 1.:** Time course of tumor development on T1-w post Gd-contrast images (a). T2*-w images (80 \u00b5m resolution). Hypointense tubular structures, most likely venules (arrowheads), are visible due to the BOLD effect on pre-contrast images (upper row). Post-contrast administration arterioles and venules can be visualized (middle row). A minimum intensity projection (mIP) is shown in the bottom row (b). T2*-w images two and 3 weeks post-tumor implantation (c,d). Quantification of tumor sizes on T1-w post-contrast images (e). Quantification of the vascularized area on T2* images (f). Histogram analysis of the tumor region on post-contrast images 2 (green distribution) and 3 weeks (red) after tumor implantation. A significant signal drop (red distribution) within the tumor relative to the healthy white matter (WM) occurs within 1 week (p<0.001, g). This signal drop is only visible post-contrast administration (red distribution, p<0.001, h). Single plane T2*-w images pre- and post-contrast 2 weeks post-tumor implantation. The tubular vessel is only visible after contrast injection (i). Note the tortuous appearance and the multiple branches of the vessel. Scale bars are 1 mm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11712/elife-11712-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** T2*-w images pre- and post iron oxide nanoparticle (USPIO) administration. Post-contrast images were acquired directly after iv injection of USPIO. mIP: minimum intensity projection. Scale bar 1 mm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11712/elife-11712-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** T2*-w images pre- and post USPIO administration in a GL261 tumor. Post-contrast images were acquired directly after USPIO injection. Dashed boxes indicate magnified areas (right side). mIP: minimum intensity projection. Scale bar is 1 mm.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/11712/elife-11712-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** T2*-w images following Gd-administration. Post-contrast images 15\u2009min after Gd-administration show strong tubular susceptibility changes within the tumor. The contrast agent is subsequently cleared from the circulation. 125\u2009min post-contrast administration the vascular signals have returned to pre levels. Scale bar = 1 mm.\n\n### Tumor vessel formation occurs within a short timespan\n\nWithin a week from the detection of first neovessels massive additional hypointense vessel-like structures occurred in the entire tumor bed as visualized on T2*-w images (Figure 1d and Videos 1,2). At this 'late' stage, single vessels were hard to differentiate within the tumor core because vascular density became too high for single vessel differentiation. Next to vascular susceptibility signals, also some dot-like susceptibility signals were found before contrast administration, most likely representing tumor microbleedings (Figure 1d). Kinetic studies showed that the Gd contrast agent is cleared from the circulation within ~2\u2009hr after iv injection and vascular signals return to baseline within this time period (Figure 1\u2014figure supplement 3). Quantification of the tumor size and vascularized area showed an exponential increase of tumor vessels over the time of investigation 1\u20133 weeks post-implantation (vascularized area week 1: 0.2 mm2, week 2: 0.9 mm2, week 3: 3.5 mm2, p<0.01; Figure 1e,f). Histogram analysis of MR images showed a strong signal drop in the tumor area 3 weeks post-tumor cell implantation which was present only after contrast administration (Figure 1\u2009g,h). Interestingly, MRI was sensitive enough to detect single tumor vessels starting 2 weeks post implantation (Figure 1i). The resolution of MRI is, however, intrinsically limited to the \u00b5m range which is insufficient to resolve tumor vessels below ~50 \u00b5m in size. To validate and correlate our MR results to the cellular level, we performed UM in combination with tissue clearing.\n\n![Video 1.](https://cdn.elifesciences.org/articles/11712/elife-11712-media1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/11712/elife-11712-media2.mp4.jpg)\n\n### Tumor vessel architecture can be visualized by light sheet microscopy\n\nWe adapted recently published light sheet microscopy protocols of cleared whole-brain specimen (Ert\u00fcrk et al., 2012; Schwarz et al., 2015). Similar to MRI, UM results in 3D datasets but possess a ~10-fold higher resolution (Keller and Dodt, 2012). For UM, the microvasculature was assessed by lectin-FITC or lectin-texas red. These intravital dyes bind to endothelial glycoproteins in healthy tissue and tumor endothelium (Figure 2b and Figure 2\u2014figure supplement 1, W\u00e4lchli et al., 2015). After MR imaging, animals were injected intravenously with lectin and sacrificed after 5\u2009min of dye circulation. Subsequently, brains were explanted, cleared and vascularization was assessed by UM. The pathological neovascularization of the xenografted glioma was clearly visible: Single vessels in the tumor bed could be well delineated on correlated MRI and UM datasets (MR-UM) 2 weeks post-tumor implantation (Figure 2c and Videos 3, 4). Vessel density massively increased and large pathological vessels occurred 3 weeks post-tumor implantation (Figure 2d). In some larger tumors parts of the tumor core became necrotic and no vessels were present in these areas (Figure 2d). The MR-UM approach can also be employed for additional targets: for\u00a0example,conventional Gd-enhanced MRI can easily be correlated to optical Evans blue extravasation studies to assess BBB-D and vascular permeability within the tumor (R2: 0.87, p<0.001; Figure 2\u2014figure supplement 2a\u2013c).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/11712/elife-11712-fig2-v1.jpg)\n\n**Figure 2.:** Illustration of the mouse brain before and after clearing using the 3DISCO protocol. The brain shrinks by ~40% in size during the clearing protocol (a). Cleared UM images of lectin-FITC stained microvessels. Images show the healthy cortex (left) and hippocampus (middle). The glioma-stroma border (dotted line) is depicted on the right image (b). T2*-w images and correlative UM images 2 weeks, (c) and 3 weeks (d) after GL261 tumor implantation. Arrowheads indicate areas of necrosis. T2*-w image and correlative UM images 10 weeks after S24:td-tomato implantation. Inner necrotic tumor areas around the injection track lack fluorescent signal (e). The microvasculature is stained with lectin-FITC. MIP: maximum intensity projection, mIP: minimum intensity projection. Scale bar in (a) is 5 mm and 1 mm for MR images. For UM scale bars are 250 \u00b5m in (b) and 1 mm in (c-e).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11712/elife-11712-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Representative cryosections (10 \u00b5m thickness) of microvessels stained with iv lectin-FITC or lectin-texas red. Dashed boxes indicate magnified area (right side). Scale bars are 100 \u00b5m on overview images and 25 \u00b5m on magnified images.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/11712/elife-11712-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** Two levels of MRI (upper row) and UM images (lower row) after Gd or evans blue injection. The permeability and disrupted BBB can be compared side-by-side (a). Correlation analysis of BBB-D on MR and UM (b). Evans blue extravasation on cryosection, as assessed by confocal microscopy. The image shows a tile scan of the right hemisphere 2 weeks after GL261 tumor implantation (c). Dashed line indicates the tumor-stroma border. Scale bars = 1 mm in (a) and 500 \u00b5m in (c).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/11712/elife-11712-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** T2-w (upper row), T1-w post Gd-contrast (middle row) and T2*-w post-contrast images of S24 tumors 4, 7, and 10 weeks post-tumor implantation. Dashed outline depicts hyperintense areas. Note the heterogeneous tumor mass/edema (T2 signal) and BBB-D (contrast enhancement on T1-w). Arrowheads indicate vascular susceptibility signals. Scale bar = 1 mm.\n\n![Video 3.](https://cdn.elifesciences.org/articles/11712/elife-11712-media3.mp4.jpg)\n\n**Video 3.:** Magnified image shows the tumor-stroma border and adjacent cortex (green box) from a mouse 2 weeks after GL261 tumor implantation.\n\n![Video 4.](https://cdn.elifesciences.org/articles/11712/elife-11712-media4.mp4.jpg)\n\n**Video 4.:** Areas of necrosis are visible on MR and UM and are devoid of vessels. Box indicates the region of UM. UM data is shown as maximum intensity projection of six single images.\n\n### S24 tumors exhibit markedly different growth and angiogenesis patterns\n\nThe comparison of growth and angiogenesis patterns of primary, human S24 tumors with syngeneic mouse GL261 tumors by MR-UM revealed striking differences: S24 tumors grew markedly slower and highly invasive compared to GL261 tumors. Individual S24 tumor cell clusters were found outside of the tumor bulk even in the contralateral hemisphere. BBB-D, an early feature of GL261 tumors, developed in S24 tumors only at 10 weeks post-tumor implantation (Figure 2\u2014figure supplement 3). At this time\u00a0point, S24 tumors started to show clear signs of increased vascularity at the tumor stroma border on T2* post-contrast images and correlated UM (Figure 2e, Figure 2\u2014figure supplement 3 and Video 5). UM also confirmed tumor cell infiltration into the contralateral hemisphere, which induced focal areas of aberrant vessel patterns with increased vessel density and diameter. The stable expression of red-fluorescent protein (td-tomato) by the S24 line allowed dual-color UM to assess the relation of cellular growth patterns and microvessel anatomy (Figure 2e).\n\n![Video 5.](https://cdn.elifesciences.org/articles/11712/elife-11712-media5.mp4.jpg)\n\n**Video 5.:** UM data is shown as maximum intensity projection of 10 single images.\n\n### Tumor vessels show an increased diameter and density\n\nFor the quantification of UM data, vessels were segmented on single image planes and quantified using Matlab (Figure 3a). We found a progressive increase in vessel caliber 3 weeks post-tumor implantation compared to healthy regions (mean vessel diameter in outside regions: 3.2 \u00b5m; tumor region week 2: 11.5 \u00b5m, week 3: 14.7 \u00b5m; p<0.001, Figure 3b). Also, the tortuosity of tumor vessels was higher (tortuosity in outside regions: 1.11; tumor: 1.16; p=0.05; Figure 3c). Vessel density showed a trend toward higher densities within the tumor (0.16 vs. 0.11, n.s. Figure 3d). The assessment of vessel parameters in entire 3D data sets (100\u2013200 images/animal) was performed with Amira software and showed likewise a significant increase of vessel radii and vessel pathlength within the tumor area compared to outside regions (Figure 3e\u2013h). Large, CD31 positive microvessels with increased tortuosity were also confirmed within the tumor by immunohistochemistry (Figure 3\u2014figure supplement 1a,b). In the tumor, however, some CD31-positive vessels were negative for lectin-FITC, indicating non-perfused vessels, whereas outside of the tumor all microvessels were double positive for CD31 and lectin-FITC (Figure 3\u2014figure supplement 1c).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/11712/elife-11712-fig3-v1.jpg)\n\n**Figure 3.:** Representative single plane image of a cleared brain in the tumor and an 'outside' region. Illustration of the vessel segmentation using the 'tubeness' plugin. Vessel segments (magenta) and vessel outline (green) are used to determine the vascular diameter (a). Quantification of the vessel diameter, tortuosity and vessel density (b\u2013d). Illustration of vessel segmentation in 3D (e,f). Vessel radii (g) and pathlength (h) are shown. Scale bars = 100 \u00b5m in (a) and 500 \u00b5m in (e).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11712/elife-11712-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Hematoxylin and eosin staining shows the tumor in the right hemisphere. Magnified image depicts the tumor-stroma border (a). Immunohistochemistry for CD31 shows vascular staining patterns in the tumor and an outside region (b). Representative immunohistochemistry image, stained for CD31 (red) from a mouse injected with lectin-FITC (green), (c). Magnified images show the co-localization of CD31 and lectin outside of the tumor and two tumor vessels (one double positive vessel, middle row; one vessel only positive for CD31, lower row). n=3 mice. Dashed boxes indicate magnified area and dashed line shows the tumor-stroma border. Scale bars = 100 \u00b5m in a,b; 200 \u00b5m in c and 20 \u00b5m in magnified images.\n\n### Using correlated T2*-w and UM to quantify antiangiogenic treatment responses\n\nTo investigate the power of MR-UM for treatment monitoring, we inhibited the vascular endothelial growth factor with a murine antibody and monitored treatment effects on the vascular compartment. We found that neovessel-formation was partially blocked by VEGF inhibition (Figure 4a,b and Video 6). Also, the vascularized area and BBB-D decreased as assessed by T2*-w and DCE imaging (Figure 4c\u2013f). UM quantification confirmed a partial block of pathological vessel features (vessel diameter and density) by VEGF inhibition (mean vessel diameter under VEGF treatment: 8.3 \u00b5m; isotype control: 13.2 \u00b5m; p<0.001; Figure 4g,h). The beneficial effect on the vascular compartment was specific for VEGF targeted therapy, as cytotoxic treatment with photon irradiation did not lead to signs of vascular normalization (Figure 4\u2014figure supplement 1). Despite the efficient blockage of neoangiogenesis, anti-VEGF therapy did not lead to reduced tumor growth (tumor size 1 week after VEGF inhibition: 0.22 mm2 vs 0.22 mm2 in the isotype control group; p>0.05; four mice per group), reflecting current clinical data (Chinot et al., 2014; Taal et al., 2014).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/11712/elife-11712-fig4-v1.jpg)\n\n**Figure 4.:** Experimental outline (a). Single plane, T2*-w images before (week 2) and after VEGF or isotype control treatment (week 3). Treatment was initiated 2 weeks after tumor implantation when a solid tumor component had formed as confirmed on MRI. Correlative UM is shown of the same animal (b). Permeability (Ktrans) maps, calculated from DCE MRI are depicted in (c). Quantification of the vascularized area on T2*-w images (d). Quantification of the blood-brain barrier disruption (BBB-D) on DCE images (e). Correlation of BBB-D and the vascularized area (f). Quantification of vessel diameter and vessel density on UM images (g,h). MIP: maximum intensity projection. Scale bars are 1 mm on MR images and 500 \u00b5m on UM images.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/11712/elife-11712-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** T1-w post contrast images show tumor growth in irradiated mice (upper row). T2*-w images post-contrast (middle and lower row) 2 (before treatment) and 3 weeks post-tumor implantation (after treatment). Irradiation with two gray was performed on 4 consecutive days starting 2 weeks post-tumor implantation. Tumor sizes and vascularization status were assessed 3 weeks post-tumor implantation. mIP: minimum intensity projection. Scale bar = 1\u00a0mm.\n\n![Video 6.](https://cdn.elifesciences.org/articles/11712/elife-11712-media6.mp4.jpg)\n\n**Video 6.:** Animal was treated with a mouse VEGF inhibitor every 3 days (10 mg / kg) starting 2 weeks after tumor implantation.\n\n## Discussion\n\nIn this study, we combined in vivo 9.4 Tesla MRI with ex vivo UM and tissue clearing to dynamically resolve tumor arterioles and venules as well as the capillary bed of mouse gliomas at high resolution. Contrast-enhanced T2*-w imaging allowed the visualization of neovessels in the 50\u2013100 \u00b5m range. In the GL261 model, angiogenesis started 2 weeks post-tumor implantation and massively increased until week 3. One limitation of MRI concerns its resolution, which was limited to ~80 \u00b5m in our study. To overcome this limitation, we employed correlated 3D UM of cleared specimen. For UM, we applied iv perfusion with fluorescent lectins that bind specifically to endothelial glycoproteins (W\u00e4lchli et al., 2015) and subsequent optical clearing of whole adult mouse brains using the well-established 3DISCO and the recently published FluoClearBABB protocol (Ert\u00fcrk et al., 2012; Schwarz et al., 2015). We obtained high-quality images with both clearing methods that were used to reconstruct the entire tumor anatomy and blood vessel architecture including bulk mass and invasive zone. Tissue clearing and UM has not been employed for the study of neurooncological disease. Previous UM studies investigated microvessels under physiological conditions (J\u00e4hrling et al., 2009) and in the context of solid visceral tumors (Dobosz et al., 2014). We have extended this work to the field of neurooncology and combined it with advanced MRI techniques. This bridges the gap between MRI and whole brain optical microscopy, which represent separated domains so far. Optical clearing methods have recently undergone a rapid development and evoked large interest in the neuroscience community as they promise to allow 'connectomic' and circuit reconstruction studies (Chung et al., 2013; Dodt et al., 2007; Ert\u00fcrk et al., 2011; Keller and Dodt, 2012; Schwarz et al., 2015; Susaki et al., 2014). Clearing techniques are, however, also amenable to the study of pathological states: First reports have highlighted how 3D information obtained by tissue clearing can give new insights into pathophysiology of neuroinflammatory and neurodegenerative disease (J\u00e4hrling et al., 2015; Spence et al., 2014).\n\nThe combination with MR, the most widely used clinical imaging technique, offers added value by correlating spatiotemporal information obtained by MR with high-resolution optical imaging. In the preclinical arena MR and UM with tissue clearing appear as natural partners as both produce 3D datasets, which can be compared side-by-side. The advantages of both techniques can be combined: Namely, MR is a versatile tool for longitudinal in vivo\u00a0studies. UM of cleared specimen can resolve cellular and subcellular processes and utilize the vast toolbox of genetic and chemical fluorescent labels with their high molecular specificity, thus complementing the information gained by MRI. Also, a combination of the two techniques allows cross-correlation of in vivo\u00a0signals with molecularly defined optical methods. To show the additive power of both methods, we used a neovascularization paradigm since neovessels are hallmarks of many diseases including cancer (Carmeliet and Jain, 2011; Goveia et al., 2014). Using cross-correlated MR-UM we achieved single vessel resolution and found pathological vessel permeability, tortuosity, and calibers, all of which could be partially reversed by VEGF treatment.\n\nOur data indicate that similar to the human situation, mono-modality antiangiogenic treatment is not sufficient to halt glioma growth. Thus, novel antiangiogenic treatment regimes, possibly in combination with chemotherapy in recurrent disease (as done with promising results in the Dutch Belob Trial (Taal et al., 2014), and the ongoing EORTC 26,101 and 26,091 trials), or in combination with additional treatment modalities (i.e.immunotherapy, chemotherapy) are warranted (Chinot et al., 2014; Kamoun et al., 2009). Anti-angiogenic treatment development and clinical trials require imaging biomarkers to assess vascularization status and treatment effects. The developed T2*-w sequence is suitable to map tumor arterioles and venules in a preclinical setting. Future studies at high-field clinical MR systems should address a possible translation of our MRI approach to the clinical arena.\n\nOne limitation of our study relates to the differentiation of the various hierarchical parts of the vascular system. Tumors harbor a manifold of different vascular compartments (veins and arteries of different calibers and sizes with highly variable, but mostly pathological perfusion). Neither MR nor optical methods are able to capture the entire complexity of these compartments. Also, we found that in the bulk tumor some CD31 positive vessels were negative for lectin-FITC, indicating that some tumor vessels were hypo- or non-perfused. This implies that the visualization and quantification of the microvasculature by lectin-injection might slightly underestimate the vascular tumor compartment. The fact that hypo- or non-perfused vessels with abnormal flow exist in tumors is well established (Carmeliet and Jain, 2011). Another drawback might be that clearing methods may lead to an alteration in brain size, that\u00a0is, due to dehydration. For 3DISCO, we quantified the apparent reduction of brain volume using CT imaging before and after clearing. This revealed a volume reduction of ~40%, which however occurred in a uniform fashion and did not change macroscopic tissue proportions. Anatomical structures and substructures of the brain remained fully intact. Vessel diameters obtained by UM could therefore be corrected by a multiplication factor of ~1.6. However, microscopic shrinkage may slightly differ from the macroscopic factor obtained by CT.\n\nAlso, when using endogenous fluorescent proteins such as GFP or RFP in combination with exogenous fluorescent markers such as FITC, preservation of fluorescent signals during the clearing process might vary and should be carefully controlled for.\n\nIn summary, the present study shows the additive power of correlative MR and UM for assessing the vascular system and the dynamic changes that occur in tumors over time. The applied principles should be easily transferable to additional targets like the immune cell compartment that are amenable to MR and optical labeling strategies (Kircher et al., 2003; Weissleder et al., 2014). Furthermore, MR-UM should be useful for translational approaches to aid preclinical therapy development. In our study, mono-antiangiogenic treatment with a murine VEGF inhibitor was insufficient to halt tumor growth which mirrors current human studies (Chinot et al., 2014). Dual angiogenesis inhibitors are currently being developed and therapeutic effects could be assessed in detail using our toolkit. Thus, we believe that MR-UM can provide a versatile platform for translational research approaches to cross-correlate MR and optical signals.\n",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "2b64837c-1410-4ce7-904c-223f86d6f872",
+      "submission_id": "5d736329-bb0c-4834-9cf1-ac5902e0ae78",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Ben Barres, Stanford School of Medicine , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.11712.022](https://doi.org/10.7554/eLife.11712.022)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"Correlated MR imaging and ultramicroscopy (MR-UM) is a tool kit to assess the dynamics of glioma angiogenesis\" for consideration by eLife. Your article has been reviewed by three peer reviewers, and the evaluation has been overseen by a Reviewing Editor and Senior Editor.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nThe following individuals involved in review of your submission have agreed to reveal their identity: Pascal Sati and Hans-Ulrich Dodt (peer reviewers). A further reviewer remains anonymous.\n\nSummary:\n\nBreckwoldt et al. investigate angiogenesis in a mouse glioma model. They clearly show that the combination of MRI and ultramicroscopy can provide both longtime observation and high resolution of the tumor as well as the effect of VEGF treatment and photon irradiation.\n\nEssential revisions:\n\n1) Methodology: a major concern is the use of dye injection to assess tumor vascularization. The use of contrast agents is of course justifiable for MR, but to correlate in vivo data with ex vivo structural quantifications, authors should rule out the possible involvement of perfusion in the diffusion of the injected dyes. For a thorough anatomical correlation in the same samples, authors should use well-characterized protocols of whole-mount immunohistochemistry (IHC) using specific vascular markers (e.g. CD31, such as used by iDISCO), which would ascertain that the whole vasculature is visualized. The use of IHC would also allow better staining of smaller capillary beds in which perfusion might have been affected by the presence of the tumor. One option would be to validate, in a subset of samples, the structural data with anti-CD31 IHC. Finally, vascular permeability should be assessed/validated using tracers and conventional methods (e.g., conjugated dextrans, Evans blue) such that, as for tumor angiogenesis and vascular morphology, authors could correlate in vivo and ex vivo data.\n\n2) Interpretations: In the manuscript, one can read terms such as \"high-resolution quantification\", \"single vessel resolution\", \"ultramicroscopy\", or \"visualization of venules\". However, according to MR data, such resolution is not reached. Larger vessels can indeed be observed at the brain surface under MR, but the resolution is pretty poor (e.g., magnifications in Figure 1b-d, Figure 1i, and Figure 2c,d). Moreover, from panels in Figure 1d, one can ask whether the strong signals are due to presence of vessels or to tracer leakage. In addition, it is dangerous to talk about \"neovessels\" and \"massive angiogenesis\" from MR data in Figure 1. Knowing that this MR intrinsically lacks resolution, the reader is hardly convinced that these signals are actually blood vessels. The fact MR relies on perfusion, it seems difficult to decipher between newly formed vessels or increased perfusion in the tumor area. It is only from Figure 2, in correlative experiments with cleared brains, that the reader starts to observe increased vascularization in tumor. Moreover, strong terms such as \"increased caliber and tortuousness\" are used to describe Figure 1i but none of these features appear in the panels. Finally, it is puzzling why authors chose to analyze \"single image planes\" from light sheet microscopy in order to quantify vascular morphology. The power of this imaging technique should be leveraged to perform 3D analysis and obtain more detailed measures within tissue volumes (effects would probably reach significance if analyzed in 3D).\n\n3) Translational aspect: Anti-angiogenic therapy to target tumor growth is a classic approach and there is a need to develop better tools to investigate tumor vascularization. However, since apparently the anti-VEGF treatment did not reduce tumor size (as claimed in the text, but unfortunately not illustrated), the rationale for this translational approach is unclear. The authors also mention: \"Despite the efficient blockade of neoangiogenesis, anti-VEGF therapy did not lead to reduced tumor growth (\u2026), reflecting current clinical data\". This is very vague and one can wonder where these data come from (Method? Number of animals? Graphs? Ref?). Maybe authors can offer an interpretation of why it is failed using their vessel imaging data?\n\n4) An additional technical detail we would mention is that the problem of fluorescence preservation is only severe for endogenous fluorescent proteins like GFP, not really for exogenous fluorescent markers that are much more stable.\n",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5035b04b-9824-4359-bcf3-73feaf1a4b10",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C1",
+      "claim": "Neoangiogenesis is a pivotal therapeutic target in glioblastoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Neoangiogenesis is a pivotal therapeutic target in glioblastoma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge in the field of glioblastoma research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "cdc70a55-f997-4269-bdae-66df7a8a00a0",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C2",
+      "claim": "T2* imaging allows the identification of single vessels in glioma development.",
+      "claim_type": "EXPLICIT",
+      "source": "T2* imaging allows the identification of single vessels in glioma development and the quantification of neovessels over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript showing T2* imaging results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "54e00e7f-106a-4496-bdc4-a96de108f187",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C3",
+      "claim": "T2* imaging allows the quantification of neovessels over time.",
+      "claim_type": "EXPLICIT",
+      "source": "T2* imaging allows the identification of single vessels in glioma development and the quantification of neovessels over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing quantification of vascularized areas over time.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "233bec36-ed65-4f93-b0d7-d71532440035",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C4",
+      "claim": "Pharmacological VEGF inhibition leads to partial vascular normalization with decreased vessel caliber.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological VEGF inhibition leads to partial vascular normalization with decreased vessel caliber, density, and permeability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from VEGF inhibition experiments presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "174e7b6c-4291-4005-8e73-c0d9d8debb85",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C5",
+      "claim": "Pharmacological VEGF inhibition leads to partial vascular normalization with decreased vessel density.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological VEGF inhibition leads to partial vascular normalization with decreased vessel caliber, density, and permeability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from VEGF inhibition experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "b027fe3e-0bef-4c55-899b-e00b2816b1e8",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C6",
+      "claim": "Pharmacological VEGF inhibition leads to partial vascular normalization with decreased vessel permeability.",
+      "claim_type": "EXPLICIT",
+      "source": "Pharmacological VEGF inhibition leads to partial vascular normalization with decreased vessel caliber, density, and permeability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from VEGF inhibition experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "d388bcf8-a097-49bf-9051-5f5b8378490f",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C7",
+      "claim": "UM resolved typical features of neoangiogenesis with a spatial resolution of ~5 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "UM resolved typical features of neoangiogenesis and tumor cell invasion with a spatial resolution of ~5 \u00b5m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the technical specifications and data from ultramicroscopy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "cc0a1a41-6ff2-4708-95fb-8153a370a879",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C8",
+      "claim": "UM resolved typical features of tumor cell invasion with a spatial resolution of ~5 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "UM resolved typical features of neoangiogenesis and tumor cell invasion with a spatial resolution of ~5 \u00b5m.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the technical specifications and data from ultramicroscopy experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "6043f927-e22a-48e6-817e-f42fef47ac73",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C9",
+      "claim": "MR-UM can be used as a platform for three-dimensional mapping of tumor angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "MR-UM can be used as a platform for three-dimensional mapping and high-resolution quantification of tumor angiogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the combined MRI and UM data presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "2eecd5ee-8736-450f-9eaf-f23ce4aad3a4",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C10",
+      "claim": "MR-UM can be used as a platform for high-resolution quantification of tumor angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "MR-UM can be used as a platform for three-dimensional mapping and high-resolution quantification of tumor angiogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the quantitative analyses of vascular parameters presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "572993ba-8b69-417c-936f-0589f0c0c9c6",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C11",
+      "claim": "Gliomas are highly malignant brain tumors with poor prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Gliomas are highly malignant brain tumors with poor prognosis (Wen and Kesari, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "239125b7-ab0e-457b-b386-8815462b90d7",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C12",
+      "claim": "Glioblastoma multiforme (GBM) is characterized by high cellular proliferation rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Glioblastoma multiforme (GBM) is characterized by high cellular proliferation rates and a rapid induction of angiogenesis (Wen and Kesari, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "1da13e56-8830-4daa-9399-af6cfd383992",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C13",
+      "claim": "Glioblastoma multiforme (GBM) is characterized by a rapid induction of angiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Glioblastoma multiforme (GBM) is characterized by high cellular proliferation rates and a rapid induction of angiogenesis (Wen and Kesari, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "a0eb826e-9fd5-4301-a9da-28bba759acb5",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C14",
+      "claim": "Angiogenesis is a hallmark of malignant tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Angiogenesis is a hallmark of malignant tumors, and most tumors show an exponential ingrowth of neovessels upon a certain tumor size to accommodate their metabolic needs (Carmeliet and Jain, 2011; Hanahan and Weinberg, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "5d02a666-350e-42fe-aef9-e01bdd2fd054",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C15",
+      "claim": "Most tumors show an exponential ingrowth of neovessels upon a certain tumor size to accommodate their metabolic needs.",
+      "claim_type": "EXPLICIT",
+      "source": "Angiogenesis is a hallmark of malignant tumors, and most tumors show an exponential ingrowth of neovessels upon a certain tumor size to accommodate their metabolic needs (Carmeliet and Jain, 2011; Hanahan and Weinberg, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "00b1979e-a7bc-4502-8e4f-86031ada1b01",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C16",
+      "claim": "The angiogenic switch is characterized by the upregulation of pro-angiogenic molecules like vascular endothelial growth factor (VEGF).",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon is called 'angiogenic switch' and is characterized by the upregulation of pro-angiogenic molecules like vascular endothelial growth factor (VEGF) or angiopoietin 2 (Ang-2) that induce fast tumor angiogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about the angiogenic switch.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "fcdc1905-fe4c-4a04-8d4d-749f352e5e3b",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C17",
+      "claim": "The angiogenic switch is characterized by the upregulation of pro-angiogenic molecules like angiopoietin 2 (Ang-2).",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon is called 'angiogenic switch' and is characterized by the upregulation of pro-angiogenic molecules like vascular endothelial growth factor (VEGF) or angiopoietin 2 (Ang-2) that induce fast tumor angiogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about the angiogenic switch.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "a598c2ee-530e-4d8a-83bd-28d337c76e76",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C18",
+      "claim": "The angiogenic switch leads to a transition toward a more invasive and aggressive tumor growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The angiogenic switch is a central feature of malignant tumors and leads to a transition toward a more invasive and aggressive tumor growth (Bruno et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "597ae212-1b12-4073-8314-f2c0a7adefda",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C19",
+      "claim": "Anti-VEGF agents like bevacizumab have shown clinical benefit in certain tumor types.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, this approach of using anti-VEGF agents like bevacizumab has shown clinical benefit in certain tumor types (Mittal et al., 2014) but, despite significant improvement of progression-free survival, does not prolong overall survival of primary GBM in an unselected patient cohort (Chinot et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to clinical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "a910fbaa-c85e-4b06-b46e-27c879d0df1e",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C20",
+      "claim": "Anti-VEGF agents like bevacizumab do not prolong overall survival of primary GBM in an unselected patient cohort despite significant improvement of progression-free survival.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, this approach of using anti-VEGF agents like bevacizumab has shown clinical benefit in certain tumor types (Mittal et al., 2014) but, despite significant improvement of progression-free survival, does not prolong overall survival of primary GBM in an unselected patient cohort (Chinot et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to clinical trial literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "31d54b8a-16bc-4759-927e-381fcc5d69a1",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C21",
+      "claim": "VEGF receptor 2 (VEGF-R2) inhibition has not been successful in neuro-oncology yet despite strong preclinical data.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, VEGF receptor 2 (VEGF-R2) inhibition, despite strong preclinical data (Batchelor et al., 2007; Winkler et al., 2004), has not been successful in neuro-oncology yet (Batchelor et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to preclinical and clinical literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "34bf94c1-aaba-45ea-8c01-99458e0ff9af",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C22",
+      "claim": "Vascular normalization that occurs early after the initiation of therapy might be a marker which could aid clinical decision making.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, accumulating data suggest that vascular normalization that occurs early after the initiation of therapy, might be such a marker which could aid clinical decision making (Emblem et al., 2013; Lu-Emerson et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to clinical imaging literature.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "8aff94ec-5bee-4db7-bbe6-8c9e1eb525c6",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C23",
+      "claim": "The T2*-weighted imaging technique is based on high-resolution Blood Oxygenation Level Dependent (BOLD) venography with standard gadolinium contrast agents at ultrahigh-field strength (9.4 Tesla, isotropic 80 \u00b5m resolution).",
+      "claim_type": "EXPLICIT",
+      "source": "The technique is based on T2*-weighted (T2*-w) high-resolution Blood Oxygenation Level Dependent (BOLD) venography (Park et al., 2008) with standard gadolinium (Gd) contrast agents at ultrahigh-field strength (9.4 Tesla, isotropic 80 \u00b5m resolution).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the technical specifications of the MRI method used in the study, supported by citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "3b91d9b2-e288-4544-a93a-7cee7b9e2363",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C24",
+      "claim": "The T2*-weighted imaging technique visualizes substantially more vascular detail compared to conventional T2*-w imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "This visualizes substantially more vascular detail compared to conventional T2*-w imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the comparison of imaging techniques in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "c306233e-28bd-495b-bb01-dcf3978de526",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C25",
+      "claim": "Fluorescent labeling of the microvasculature using lectins resulted in complementary 3D MR and UM data sets.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescent labeling of the microvasculature using lectins resulted in complementary 3D MR and UM data sets (dubbed 'MR-UM') of the entire tumor 'macro-' and 'microvasculature', which can be compared side-by-side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data showing combined MR and UM imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "58c36346-7c48-4f4d-b797-ee4116cfd34a",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C26",
+      "claim": "MR-UM bridges the gap between MR and optical imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, MR-UM bridges the gap between MR and optical imaging and may serve as a platform to better understand underlying mechanisms of antiangiogenic treatment and to identify novel druggable targets for preclinical therapy development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the integration of two imaging modalities demonstrated in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "de2881b7-4dfe-453c-8f71-fd0fb431053b",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C27",
+      "claim": "MR-UM may serve as a platform to better understand underlying mechanisms of antiangiogenic treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, MR-UM bridges the gap between MR and optical imaging and may serve as a platform to better understand underlying mechanisms of antiangiogenic treatment and to identify novel druggable targets for preclinical therapy development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the potential applications of the MR-UM technique.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "ee0d9a8b-b88b-4a90-b696-be6209b0b91e",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C28",
+      "claim": "MR-UM may serve as a platform to identify novel druggable targets for preclinical therapy development.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, MR-UM bridges the gap between MR and optical imaging and may serve as a platform to better understand underlying mechanisms of antiangiogenic treatment and to identify novel druggable targets for preclinical therapy development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about the potential applications of the MR-UM technique.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "95464706-1f22-4c5b-b873-4fd0a306bd75",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C29",
+      "claim": "1x10^5 GL261 cells were stereotactically implanted into the right brain hemisphere of 6- to 8-week-old female C57Bl/6J mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The 1x105 GL261 cells diluted in 2-\u00b5l sterile phosphate buffered saline (PBS, Sigma-Aldrich Chemie GmbH, Taufkirchen, Germany) were stereotactically implanted into the right brain hemisphere of 6- to 8-week-old female C57Bl/6J mice (n=45 mice, Charles River Laboratories, Sulzfeld, Germany) using a Hamilton syringe, driven by a fine step motor (coordinates: 2 mm lateral and 2 mm ventral of bregma; injection depth: 3 mm below the dural surface).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "a996fbb8-47ff-4334-89c8-b595c515ee90",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C30",
+      "claim": "5x10^4 S24:td-tomato cells were transplanted orthotopically in 8- to 10-week-old male NMRI nude mice.",
+      "claim_type": "EXPLICIT",
+      "source": "For the S24 glioma model, 5x104 S24:td-tomato cells (stably transduced by lentivirus) were transplanted orthotopically in 8- to 10-week-old male NMRI nude mice (Charles River, Sulzfeld, Germany, n=3 mice).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental methods used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "c08e86a4-cc13-4007-b8a2-11e4f964cb0f",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C31",
+      "claim": "MR imaging was performed on a 9.4 Tesla horizontal bore small animal NMR scanner.",
+      "claim_type": "EXPLICIT",
+      "source": "MR imaging was performed on a 9.4 Tesla horizontal bore small animal NMR scanner (BioSpec 94/20 USR, Bruker BioSpin GmbH, Ettlingen, Germany) with a four-channel phased-array surface receiver coil.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the technical specifications of the MRI equipment used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "ddd5fb24-53de-4337-8d6f-0000d8708bd7",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C32",
+      "claim": "MR imaging was started 7 to 14 days post GL261 tumor cell implantation and repeated weekly up to 5 weeks after tumor cell implantation.",
+      "claim_type": "EXPLICIT",
+      "source": "MR imaging was started 7 to 14 days post GL261 tumor cell implantation and repeated weekly up to 5 weeks after tumor cell implantation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental timeline used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "89b13be8-6827-4537-bd6d-3253354ffe5b",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C33",
+      "claim": "GL261 glioma-bearing mice were treated with the murine-chimeric anti-VEGF antibody at a dose of 10 mg/kg every 3 days by ip injection.",
+      "claim_type": "EXPLICIT",
+      "source": "GL261 glioma-bearing mice were treated with the murine-chimeric anti-VEGF antibody which is based on the humanized anti-VEGF antibody B20-4.1 (Srivastava et al., 2014) or murine IgG control antibody (Roche, pRED Innovation Center Penzberg) at a dose of 10 mg/kg every 3 days by ip injection (four mice per group).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental treatment protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "9b584ce8-fc62-44b6-a7ab-0a4d86316a00",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C34",
+      "claim": "Treatment with anti-VEGF antibody was initiated 2 weeks after tumor cell implantation when a solid tumor was present on MRI.",
+      "claim_type": "EXPLICIT",
+      "source": "Treatment was initiated 2 weeks after tumor cell implantation when a solid tumor was present on MRI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental treatment protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "dadca56a-6ceb-4f25-96e4-1c8202bca335",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C35",
+      "claim": "Whole-brain irradiation was performed with a lateral photon beam at a dose of 2 grays per day for four consecutive days starting 2 weeks after GL261 tumor implantation.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole-brain irradiation was performed with a lateral photon beam at a dose of 2 grays per day. Irradiations were performed for four consecutive days starting 2 weeks after GL261 tumor implantation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the experimental irradiation protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "807c301f-8297-463d-b145-31c2dbbe315d",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C36",
+      "claim": "The brain volume shrinks by ~40% during the clearing procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the brain volumes shrinks by ~40% but that the ratio of maximum length/width stays constant before and after clearing (length and width pre clearing: 1.33 \u00b1 0.54 cm x 1.05 \u00b1 0.38 cm; post clearing: 0.79 \u00b1 0.24 cm x 0.62 \u00b1 0.17 cm; ratio: 1.25 \u00b1 0.01 and 1.28 \u00b1 0.03, p>0.05 for ratio comparison).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by CT measurements before and after clearing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "7e9c84ad-e1f6-45b2-82cf-39fae54f4a50",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C37",
+      "claim": "The ratio of maximum length/width stays constant before and after clearing.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the brain volumes shrinks by ~40% but that the ratio of maximum length/width stays constant before and after clearing (length and width pre clearing: 1.33 \u00b1 0.54 cm x 1.05 \u00b1 0.38 cm; post clearing: 0.79 \u00b1 0.24 cm x 0.62 \u00b1 0.17 cm; ratio: 1.25 \u00b1 0.01 and 1.28 \u00b1 0.03, p>0.05 for ratio comparison).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by CT measurements and statistical analysis showing no significant difference in the ratio.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "49b65f59-6e84-408d-841a-394a3c34699c",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C38",
+      "claim": "Fluorescent lectins bind to N-acetyl-\u03b2-D-glucosamine oligomers of endothelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "For correlative optical microscopy of the microvasculature, animals were injected with fluorescent lectins that bind to N-acetyl-\u03b2-D-glucosamine oligomers of endothelial cells (W\u00e4lchli et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "9c31ea14-cad3-4e28-bbd8-d7bff729eae4",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C39",
+      "claim": "Tumors could be clearly visualized by Gd-enhanced T1-weighted imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumors could be clearly visualized by Gd-enhanced T1-weighted imaging (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the imaging data shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "f0d68a53-dc8b-42ff-947f-4be3b8968e80",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C40",
+      "claim": "Tumors grew rapidly and untreated mice got symptomatic and were sacrificed 4\u20135 weeks post implantation when they had developed large intracranial tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumors grew rapidly and untreated mice got symptomatic and were sacrificed 4\u20135 weeks post implantation when they had developed large intracranial tumors (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the longitudinal imaging data shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "c0add1b1-2145-472e-be64-2003cc122906",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C41",
+      "claim": "After administration of a clinically applied Gd-contrast agent, arterioles and venules show strong tubular vascular susceptibility signals.",
+      "claim_type": "EXPLICIT",
+      "source": "After administration of a clinically applied Gd-contrast agent, arterioles and venules show strong tubular vascular susceptibility signals that allow the assessment of the vascularization status (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the imaging data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "549edee8-b219-4e7a-bde0-02e20d0f94ee",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C42",
+      "claim": "In the healthy brain, basal ganglia and cortical penetrating vessels can be visualized.",
+      "claim_type": "EXPLICIT",
+      "source": "In the healthy brain, for example, basal ganglia and cortical penetrating vessels can be visualized (Figure 1b and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the imaging data shown in Figure 1b and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "055d016d-8539-45ab-bfee-72d5e159c800",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C43",
+      "claim": "Under pathological conditions arterioles and venules within the tumor bed could be identified starting 2 weeks post-tumor implantation.",
+      "claim_type": "EXPLICIT",
+      "source": "Under pathological conditions arterioles and venules within the tumor bed could be identified starting 2 weeks post-tumor implantation (Figure 1c, and Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the imaging data shown in Figure 1c and Figure 1\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "a21bf486-4478-475e-826f-7719bdd5ee5e",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C44",
+      "claim": "First detectable vessels run both centrally and in the periphery of the developing glioma.",
+      "claim_type": "EXPLICIT",
+      "source": "First detectable vessels run both centrally and in the periphery of the developing glioma and could only be visualized after the administration of contrast material as tubular hypointense structures (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the imaging data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "6ab84888-fbfc-45bc-979d-f635ec0fa661",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C45",
+      "claim": "First detectable vessels could only be visualized after the administration of contrast material as tubular hypointense structures.",
+      "claim_type": "EXPLICIT",
+      "source": "First detectable vessels run both centrally and in the periphery of the developing glioma and could only be visualized after the administration of contrast material as tubular hypointense structures (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the imaging data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "af8f9276-70a6-4029-9454-d6a669444e6f",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C46",
+      "claim": "Within a week from the detection of first neovessels massive additional hypointense vessel-like structures occurred in the entire tumor bed.",
+      "claim_type": "EXPLICIT",
+      "source": "Within a week from the detection of first neovessels massive additional hypointense vessel-like structures occurred in the entire tumor bed as visualized on T2*-w images (Figure 1d and Videos 1,2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the imaging data shown in Figure 1d and Videos 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "3632fbe9-e740-4121-8952-3e0f0eb0affb",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C47",
+      "claim": "At the late stage, single vessels were hard to differentiate within the tumor core because vascular density became too high for single vessel differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "At this 'late' stage, single vessels were hard to differentiate within the tumor core because vascular density became too high for single vessel differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on observations from the imaging data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "1a010a2a-b028-4bbe-9801-eb26e9364475",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C48",
+      "claim": "Some dot-like susceptibility signals were found before contrast administration, most likely representing tumor microbleedings.",
+      "claim_type": "EXPLICIT",
+      "source": "Next to vascular susceptibility signals, also some dot-like susceptibility signals were found before contrast administration, most likely representing tumor microbleedings (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on imaging observations with speculative interpretation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "3780074d-7685-4fd6-ac5d-bbd2b7d4caa9",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C49",
+      "claim": "The Gd contrast agent is cleared from the circulation within ~2 hr after iv injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetic studies showed that the Gd contrast agent is cleared from the circulation within ~2 hr after iv injection and vascular signals return to baseline within this time period (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by kinetic imaging data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "ca4ead21-87ba-4125-b087-ee67cae296f2",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C50",
+      "claim": "Vascular signals return to baseline within ~2 hr after Gd contrast agent injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinetic studies showed that the Gd contrast agent is cleared from the circulation within ~2 hr after iv injection and vascular signals return to baseline within this time period (Figure 1\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by kinetic imaging data shown in Figure 1\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "dd3f7453-f949-4e9c-86e2-ecafdd36d082",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C51",
+      "claim": "Quantification of the tumor size showed an exponential increase over the time of investigation 1\u20133 weeks post-implantation.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the tumor size and vascularized area showed an exponential increase of tumor vessels over the time of investigation 1\u20133 weeks post-implantation (vascularized area week 1: 0.2 mm2, week 2: 0.9 mm2, week 3: 3.5 mm2, p<0.01; Figure 1e,f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 1e,f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "43fc7db1-3768-4ec3-b5fa-82d152a9d7bd",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C52",
+      "claim": "Quantification of the vascularized area showed an exponential increase over the time of investigation 1\u20133 weeks post-implantation (vascularized area week 1: 0.2 mm2, week 2: 0.9 mm2, week 3: 3.5 mm2, p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of the tumor size and vascularized area showed an exponential increase of tumor vessels over the time of investigation 1\u20133 weeks post-implantation (vascularized area week 1: 0.2 mm2, week 2: 0.9 mm2, week 3: 3.5 mm2, p<0.01; Figure 1e,f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 1e,f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "e4d3a94d-1f2c-42ba-a757-9f41a338f394",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C53",
+      "claim": "Histogram analysis of MR images showed a strong signal drop in the tumor area 3 weeks post-tumor cell implantation which was present only after contrast administration.",
+      "claim_type": "EXPLICIT",
+      "source": "Histogram analysis of MR images showed a strong signal drop in the tumor area 3 weeks post-tumor cell implantation which was present only after contrast administration (Figure 1 g,h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by histogram analysis data shown in Figure 1g,h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "294783fb-f000-40d5-a064-8fd084ad52b1",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C54",
+      "claim": "MRI was sensitive enough to detect single tumor vessels starting 2 weeks post implantation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, MRI was sensitive enough to detect single tumor vessels starting 2 weeks post implantation (Figure 1i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 1i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "abfdb944-ab76-45d9-85c0-e1e456688d71",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C55",
+      "claim": "The resolution of MRI is intrinsically limited to the \u00b5m range which is insufficient to resolve tumor vessels below ~50 \u00b5m in size.",
+      "claim_type": "EXPLICIT",
+      "source": "The resolution of MRI is, however, intrinsically limited to the \u00b5m range which is insufficient to resolve tumor vessels below ~50 \u00b5m in size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the technical limitations of MRI.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "f66bafba-4ce0-499d-b226-93adb11606ef",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C56",
+      "claim": "UM results in 3D datasets with a ~10-fold higher resolution than MRI.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to MRI, UM results in 3D datasets but possess a ~10-fold higher resolution (Keller and Dodt, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to established literature about UM resolution.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "93bc9e10-722a-4ef8-bda6-ba992ea23ed3",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C57",
+      "claim": "Lectin-FITC and lectin-texas red bind to endothelial glycoproteins in healthy tissue and tumor endothelium.",
+      "claim_type": "EXPLICIT",
+      "source": "For UM, the microvasculature was assessed by lectin-FITC or lectin-texas red. These intravital dyes bind to endothelial glycoproteins in healthy tissue and tumor endothelium (Figure 2b and Figure 2\u2014figure supplement 1, W\u00e4lchli et al., 2015).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by a citation and imaging data shown in Figure 2b and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "3130f5fc-6227-4b56-9aff-664ea99ab2bd",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C58",
+      "claim": "Single vessels in the tumor bed could be well delineated on correlated MRI and UM datasets 2 weeks post-tumor implantation.",
+      "claim_type": "EXPLICIT",
+      "source": "The pathological neovascularization of the xenografted glioma was clearly visible: Single vessels in the tumor bed could be well delineated on correlated MRI and UM datasets (MR-UM) 2 weeks post-tumor implantation (Figure 2c and Videos 3, 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 2c and Videos 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "aba641df-9157-4b9a-8a4f-aceeaf762156",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C59",
+      "claim": "Vessel density massively increased 3 weeks post-tumor implantation.",
+      "claim_type": "EXPLICIT",
+      "source": "Vessel density massively increased and large pathological vessels occurred 3 weeks post-tumor implantation (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "1fa72c47-4a0a-47b3-8c5e-348251bf0079",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C60",
+      "claim": "Large pathological vessels occurred 3 weeks post-tumor implantation.",
+      "claim_type": "EXPLICIT",
+      "source": "Vessel density massively increased and large pathological vessels occurred 3 weeks post-tumor implantation (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "c72650c3-e14b-409d-b40d-d9840a6559a2",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C61",
+      "claim": "In some larger tumors parts of the tumor core became necrotic and no vessels were present in these areas.",
+      "claim_type": "EXPLICIT",
+      "source": "In some larger tumors parts of the tumor core became necrotic and no vessels were present in these areas (Figure 2d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 2d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "06c6638f-1c91-4ac5-ad8b-5c2278490295",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C62",
+      "claim": "Conventional Gd-enhanced MRI can be correlated to optical Evans blue extravasation studies to assess BBB-D and vascular permeability within the tumor (R2: 0.87, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The MR-UM approach can also be employed for additional targets: for example,conventional Gd-enhanced MRI can easily be correlated to optical Evans blue extravasation studies to assess BBB-D and vascular permeability within the tumor (R2: 0.87, p<0.001; Figure 2\u2014figure supplement 2a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "51fcc2f3-1514-4fed-a075-17008edd0e1a",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C63",
+      "claim": "S24 tumors grew markedly slower compared to GL261 tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "The comparison of growth and angiogenesis patterns of primary, human S24 tumors with syngeneic mouse GL261 tumors by MR-UM revealed striking differences: S24 tumors grew markedly slower and highly invasive compared to GL261 tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparative observations from the imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "f7188826-b6b1-4160-b4df-a2bf5483001b",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C64",
+      "claim": "S24 tumors were highly invasive compared to GL261 tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "The comparison of growth and angiogenesis patterns of primary, human S24 tumors with syngeneic mouse GL261 tumors by MR-UM revealed striking differences: S24 tumors grew markedly slower and highly invasive compared to GL261 tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparative observations from the imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "875986b7-3430-474d-aa30-361bea36bd0d",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C65",
+      "claim": "Individual S24 tumor cell clusters were found outside of the tumor bulk even in the contralateral hemisphere.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual S24 tumor cell clusters were found outside of the tumor bulk even in the contralateral hemisphere.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on observations from the imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "4395e654-d581-41f8-95ad-4fd2dcda35b4",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C66",
+      "claim": "BBB-D developed in S24 tumors only at 10 weeks post-tumor implantation.",
+      "claim_type": "EXPLICIT",
+      "source": "BBB-D, an early feature of GL261 tumors, developed in S24 tumors only at 10 weeks post-tumor implantation (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 2\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "c3f6a887-6f19-4dce-ae45-0e922cf4e5e6",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C67",
+      "claim": "BBB-D is an early feature of GL261 tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "BBB-D, an early feature of GL261 tumors, developed in S24 tumors only at 10 weeks post-tumor implantation (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on comparative observations from the imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "82119003-7879-4536-b9f4-a22cf7e041ee",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C68",
+      "claim": "S24 tumors started to show clear signs of increased vascularity at the tumor stroma border at 10 weeks post-tumor implantation.",
+      "claim_type": "EXPLICIT",
+      "source": "At this time point, S24 tumors started to show clear signs of increased vascularity at the tumor stroma border on T2* post-contrast images and correlated UM (Figure 2e, Figure 2\u2014figure supplement 3 and Video 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 2e, Figure 2\u2014figure supplement 3 and Video 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "f544850d-6266-4b2b-ae16-426e1cb6afc5",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C69",
+      "claim": "UM confirmed tumor cell infiltration into the contralateral hemisphere, which induced focal areas of aberrant vessel patterns with increased vessel density and diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "UM also confirmed tumor cell infiltration into the contralateral hemisphere, which induced focal areas of aberrant vessel patterns with increased vessel density and diameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by UM imaging observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "cf0f1b4a-bfb0-4284-a7c3-c4f64d29ce05",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C70",
+      "claim": "There was a progressive increase in vessel caliber 3 weeks post-tumor implantation compared to healthy regions (mean vessel diameter in outside regions: 3.2 \u00b5m; tumor region week 2: 11.5 \u00b5m, week 3: 14.7 \u00b5m; p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "We found a progressive increase in vessel caliber 3 weeks post-tumor implantation compared to healthy regions (mean vessel diameter in outside regions: 3.2 \u00b5m; tumor region week 2: 11.5 \u00b5m, week 3: 14.7 \u00b5m; p<0.001, Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "fdf79308-a163-44bf-bade-5330cb5210fc",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C71",
+      "claim": "The tortuosity of tumor vessels was higher than outside regions (tortuosity in outside regions: 1.11; tumor: 1.16; p=0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the tortuosity of tumor vessels was higher (tortuosity in outside regions: 1.11; tumor: 1.16; p=0.05; Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "8068dc07-b67f-4f79-9945-44831fe91756",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C72",
+      "claim": "Vessel density showed a trend toward higher densities within the tumor (0.16 vs. 0.11, n.s.).",
+      "claim_type": "EXPLICIT",
+      "source": "Vessel density showed a trend toward higher densities within the tumor (0.16 vs. 0.11, n.s. Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative data shown in Figure 3d, though not statistically significant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "67a17f78-ca23-4254-a54f-c42854a4206b",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C73",
+      "claim": "The assessment of vessel parameters in entire 3D data sets showed a significant increase of vessel radii within the tumor area compared to outside regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The assessment of vessel parameters in entire 3D data sets (100\u2013200 images/animal) was performed with Amira software and showed likewise a significant increase of vessel radii and vessel pathlength within the tumor area compared to outside regions (Figure 3e\u2013h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by 3D quantitative data shown in Figure 3e-h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "2bf335c2-16dd-4b77-a992-92680aa196cc",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C74",
+      "claim": "The assessment of vessel parameters in entire 3D data sets showed a significant increase of vessel pathlength within the tumor area compared to outside regions.",
+      "claim_type": "EXPLICIT",
+      "source": "The assessment of vessel parameters in entire 3D data sets (100\u2013200 images/animal) was performed with Amira software and showed likewise a significant increase of vessel radii and vessel pathlength within the tumor area compared to outside regions (Figure 3e\u2013h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by 3D quantitative data shown in Figure 3e-h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "da540fe5-27b1-4fe9-b271-92984815954b",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C75",
+      "claim": "Large, CD31 positive microvessels with increased tortuosity were confirmed within the tumor by immunohistochemistry.",
+      "claim_type": "EXPLICIT",
+      "source": "Large, CD31 positive microvessels with increased tortuosity were also confirmed within the tumor by immunohistochemistry (Figure 3\u2014figure supplement 1a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data shown in Figure 3\u2014figure supplement 1a,b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "71bf75a3-8cec-4ef9-9043-3183c8dfb1cd",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C76",
+      "claim": "In the tumor, some CD31-positive vessels were negative for lectin-FITC, indicating non-perfused vessels.",
+      "claim_type": "EXPLICIT",
+      "source": "In the tumor, however, some CD31-positive vessels were negative for lectin-FITC, indicating non-perfused vessels, whereas outside of the tumor all microvessels were double positive for CD31 and lectin-FITC (Figure 3\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data shown in Figure 3\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "d1cbb26d-399c-440e-be72-02877b7f3d0d",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C77",
+      "claim": "Outside of the tumor all microvessels were double positive for CD31 and lectin-FITC.",
+      "claim_type": "EXPLICIT",
+      "source": "In the tumor, however, some CD31-positive vessels were negative for lectin-FITC, indicating non-perfused vessels, whereas outside of the tumor all microvessels were double positive for CD31 and lectin-FITC (Figure 3\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunohistochemistry data shown in Figure 3\u2014figure supplement 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "15b723cb-0a93-4b45-bd15-02f59e8be9db",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C78",
+      "claim": "VEGF inhibition resulted in partial block of neovessel-formation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that neovessel-formation was partially blocked by VEGF inhibition (Figure 4a,b and Video 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 4a,b and Video 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "cddbe0c9-4276-408a-a94b-0e7bc131d918",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C79",
+      "claim": "The vascularized area decreased with VEGF inhibition as assessed by T2*-w imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the vascularized area and BBB-D decreased as assessed by T2*-w and DCE imaging (Figure 4c\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 4c-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "d3879276-3a7e-42f1-a3e6-3d8bc64d3e2d",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C80",
+      "claim": "BBB-D decreased with VEGF inhibition as assessed by DCE imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the vascularized area and BBB-D decreased as assessed by T2*-w and DCE imaging (Figure 4c\u2013f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by imaging data shown in Figure 4c-f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "2d50973e-1f65-4031-9dd0-f39bf5262427",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C81",
+      "claim": "UM quantification confirmed a partial block of pathological vessel features (vessel diameter and density) by VEGF inhibition (mean vessel diameter under VEGF treatment: 8.3 \u00b5m; isotype control: 13.2 \u00b5m; p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "UM quantification confirmed a partial block of pathological vessel features (vessel diameter and density) by VEGF inhibition (mean vessel diameter under VEGF treatment: 8.3 \u00b5m; isotype control: 13.2 \u00b5m; p<0.001; Figure 4g,h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by quantitative UM data shown in Figure 4g,h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "a0fcb070-6357-4bd6-ad9f-1a42c3b3b5f1",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C82",
+      "claim": "The beneficial effect on the vascular compartment was specific for VEGF targeted therapy, as cytotoxic treatment with photon irradiation did not lead to signs of vascular normalization.",
+      "claim_type": "EXPLICIT",
+      "source": "The beneficial effect on the vascular compartment was specific for VEGF targeted therapy, as cytotoxic treatment with photon irradiation did not lead to signs of vascular normalization (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparative data shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "71e04b3a-09fb-4622-ae23-f8efa19f36a9",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C83",
+      "claim": "Despite the efficient blockage of neoangiogenesis, anti-VEGF therapy did not lead to reduced tumor growth (tumor size 1 week after VEGF inhibition: 0.22 mm2 vs 0.22 mm2 in the isotype control group; p>0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the efficient blockage of neoangiogenesis, anti-VEGF therapy did not lead to reduced tumor growth (tumor size 1 week after VEGF inhibition: 0.22 mm2 vs 0.22 mm2 in the isotype control group; p>0.05; four mice per group), reflecting current clinical data (Chinot et al., 2014; Taal et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by tumor size measurements and comparison with clinical data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "8736ee82-52c1-4b17-bc84-66b495d8a331",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C84",
+      "claim": "The finding that anti-VEGF therapy did not reduce tumor growth reflects current clinical data.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite the efficient blockage of neoangiogenesis, anti-VEGF therapy did not lead to reduced tumor growth (tumor size 1 week after VEGF inhibition: 0.22 mm2 vs 0.22 mm2 in the isotype control group; p>0.05; four mice per group), reflecting current clinical data (Chinot et al., 2014; Taal et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to clinical trial data.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "749d5e67-18d7-4f77-9260-2e76c06d390a",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C85",
+      "claim": "Contrast-enhanced T2*-w imaging allowed the visualization of neovessels in the 50\u2013100 \u00b5m range.",
+      "claim_type": "EXPLICIT",
+      "source": "Contrast-enhanced T2*-w imaging allowed the visualization of neovessels in the 50\u2013100 \u00b5m range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the technical capabilities demonstrated in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "7e1718f1-e76d-4060-a903-38a8d53f1c76",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C86",
+      "claim": "In the GL261 model, angiogenesis started 2 weeks post-tumor implantation and massively increased until week 3.",
+      "claim_type": "EXPLICIT",
+      "source": "In the GL261 model, angiogenesis started 2 weeks post-tumor implantation and massively increased until week 3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by longitudinal imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "f5f89dff-e216-4f6a-a1f6-74ee2392f289",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C87",
+      "claim": "One limitation of MRI concerns its resolution, which was limited to ~80 \u00b5m in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "One limitation of MRI concerns its resolution, which was limited to ~80 \u00b5m in our study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes a technical limitation of the MRI method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "2dd34e0a-1449-45c8-8fe8-e949d5e59d31",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C88",
+      "claim": "Tissue clearing and UM has not been employed for the study of neurooncological disease prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Tissue clearing and UM has not been employed for the study of neurooncological disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on a review of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "d201c66e-b37a-4e5a-af8e-52ba613cd663",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C89",
+      "claim": "Previous UM studies investigated microvessels under physiological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous UM studies investigated microvessels under physiological conditions (J\u00e4hrling et al., 2009) and in the context of solid visceral tumors (Dobosz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "e053bb47-9161-45e4-96ed-abf8ca5a6c01",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C90",
+      "claim": "Previous UM studies investigated microvessels in the context of solid visceral tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous UM studies investigated microvessels under physiological conditions (J\u00e4hrling et al., 2009) and in the context of solid visceral tumors (Dobosz et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "99cdf4d0-8eb9-49b0-9934-a0eae9fd9518",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C91",
+      "claim": "This study extended previous UM work to the field of neurooncology and combined it with advanced MRI techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "We have extended this work to the field of neurooncology and combined it with advanced MRI techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim describes the novel contribution of the current study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "b86cea37-c49f-4e50-9e54-7712e71f534d",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C92",
+      "claim": "The combination of MR and UM bridges the gap between MRI and whole brain optical microscopy, which represent separated domains.",
+      "claim_type": "EXPLICIT",
+      "source": "This bridges the gap between MRI and whole brain optical microscopy, which represent separated domains so far.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the integration of two previously separate imaging modalities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "29656ed0-963e-471c-b3f8-34099f8598d1",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C93",
+      "claim": "Optical clearing methods have recently undergone a rapid development and evoked large interest in the neuroscience community.",
+      "claim_type": "EXPLICIT",
+      "source": "Optical clearing methods have recently undergone a rapid development and evoked large interest in the neuroscience community as they promise to allow 'connectomic' and circuit reconstruction studies (Chung et al., 2013; Dodt et al., 2007; Ert\u00fcrk et al., 2011; Keller and Dodt, 2012; Schwarz et al., 2015; Susaki et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to recent literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "8a83c320-8087-4bc1-8dda-847ab1c3e830",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C94",
+      "claim": "Clearing techniques are amenable to the study of pathological states.",
+      "claim_type": "EXPLICIT",
+      "source": "Clearing techniques are, however, also amenable to the study of pathological states: First reports have highlighted how 3D information obtained by tissue clearing can give new insights into pathophysiology of neuroinflammatory and neurodegenerative disease (J\u00e4hrling et al., 2015; Spence et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to recent literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "5676a730-afb6-4ea5-a82d-124d874d1adb",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C95",
+      "claim": "The combination with MR offers added value by correlating spatiotemporal information obtained by MR with high-resolution optical imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "The combination with MR, the most widely used clinical imaging technique, offers added value by correlating spatiotemporal information obtained by MR with high-resolution optical imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the demonstrated integration of the two imaging modalities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "2e0d66ee-6659-4f6a-8f16-95e7aaaaba3e",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C96",
+      "claim": "MR and UM with tissue clearing appear as natural partners as both produce 3D datasets, which can be compared side-by-side.",
+      "claim_type": "EXPLICIT",
+      "source": "In the preclinical arena MR and UM with tissue clearing appear as natural partners as both produce 3D datasets, which can be compared side-by-side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the technical compatibility of the two imaging modalities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "1579adc0-2b96-4750-8274-c8a2ef3f5056",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C97",
+      "claim": "MR is a versatile tool for longitudinal in vivo studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantages of both techniques can be combined: Namely, MR is a versatile tool for longitudinal in vivo studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about MRI capabilities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "5bf39978-324c-4b24-899c-ac727cea5424",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C98",
+      "claim": "UM of cleared specimen can resolve cellular and subcellular processes.",
+      "claim_type": "EXPLICIT",
+      "source": "UM of cleared specimen can resolve cellular and subcellular processes and utilize the vast toolbox of genetic and chemical fluorescent labels with their high molecular specificity, thus complementing the information gained by MRI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the technical capabilities of UM demonstrated in the study.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "4edc91d4-5bcd-4146-aa04-93729e0cef8f",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C99",
+      "claim": "UM can utilize the vast toolbox of genetic and chemical fluorescent labels with their high molecular specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "UM of cleared specimen can resolve cellular and subcellular processes and utilize the vast toolbox of genetic and chemical fluorescent labels with their high molecular specificity, thus complementing the information gained by MRI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about UM capabilities.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "e47f3b41-d1b0-445e-8d3f-039dce923389",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C100",
+      "claim": "A combination of MR and UM allows cross-correlation of in vivo signals with molecularly defined optical methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, a combination of the two techniques allows cross-correlation of in vivo signals with molecularly defined optical methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the demonstrated integration of the two imaging modalities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "18b74b13-6edc-4e61-8293-27c85b37033c",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C101",
+      "claim": "Using cross-correlated MR-UM, single vessel resolution was achieved.",
+      "claim_type": "EXPLICIT",
+      "source": "Using cross-correlated MR-UM we achieved single vessel resolution and found pathological vessel permeability, tortuosity, and calibers, all of which could be partially reversed by VEGF treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the imaging data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "494547c6-9205-4673-9d6c-47c4323b3789",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C102",
+      "claim": "Using cross-correlated MR-UM, pathological vessel permeability was found.",
+      "claim_type": "EXPLICIT",
+      "source": "Using cross-correlated MR-UM we achieved single vessel resolution and found pathological vessel permeability, tortuosity, and calibers, all of which could be partially reversed by VEGF treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the imaging data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "8022c70e-6591-4a27-8797-a5e110eddd83",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C103",
+      "claim": "Using cross-correlated MR-UM, pathological vessel tortuosity was found.",
+      "claim_type": "EXPLICIT",
+      "source": "Using cross-correlated MR-UM we achieved single vessel resolution and found pathological vessel permeability, tortuosity, and calibers, all of which could be partially reversed by VEGF treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the imaging data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "5abf7503-7409-435a-8ebe-71997af3c889",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C104",
+      "claim": "Using cross-correlated MR-UM, pathological vessel calibers were found.",
+      "claim_type": "EXPLICIT",
+      "source": "Using cross-correlated MR-UM we achieved single vessel resolution and found pathological vessel permeability, tortuosity, and calibers, all of which could be partially reversed by VEGF treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the imaging data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "c2bd552d-0276-4896-a98e-ba7a41f287ca",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C105",
+      "claim": "Pathological vessel permeability, tortuosity, and calibers could be partially reversed by VEGF treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Using cross-correlated MR-UM we achieved single vessel resolution and found pathological vessel permeability, tortuosity, and calibers, all of which could be partially reversed by VEGF treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the treatment data presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "1d30a7d5-38a2-48de-81d4-a6b0ab4e5f34",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C106",
+      "claim": "Similar to the human situation, mono-modality antiangiogenic treatment is not sufficient to halt glioma growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data indicate that similar to the human situation, mono-modality antiangiogenic treatment is not sufficient to halt glioma growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the experimental data and comparison with clinical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "12e6d598-9128-4109-8645-f452df3aa04b",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C107",
+      "claim": "Novel antiangiogenic treatment regimes, possibly in combination with chemotherapy or other treatment modalities, are warranted.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, novel antiangiogenic treatment regimes, possibly in combination with chemotherapy in recurrent disease (as done with promising results in the Dutch Belob Trial (Taal et al., 2014), and the ongoing EORTC 26,101 and 26,091 trials), or in combination with additional treatment modalities (i.e.immunotherapy, chemotherapy) are warranted (Chinot et al., 2014; Kamoun et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the study results and citations to clinical trials.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "ef291a81-e8c7-4d30-926e-1d05c80ebb68",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C108",
+      "claim": "Anti-angiogenic treatment development and clinical trials require imaging biomarkers to assess vascularization status and treatment effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Anti-angiogenic treatment development and clinical trials require imaging biomarkers to assess vascularization status and treatment effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the need for better imaging methods in clinical trials.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "91f76310-c367-473b-bc22-9efbcd833c0e",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C109",
+      "claim": "The developed T2*-w sequence is suitable to map tumor arterioles and venules in a preclinical setting.",
+      "claim_type": "EXPLICIT",
+      "source": "The developed T2*-w sequence is suitable to map tumor arterioles and venules in a preclinical setting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the demonstrated capabilities of the T2*-w sequence in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "36c6c733-f92a-43af-a2af-c6465854e3df",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C110",
+      "claim": "Future studies at high-field clinical MR systems should address a possible translation of the MRI approach to the clinical arena.",
+      "claim_type": "EXPLICIT",
+      "source": "Future studies at high-field clinical MR systems should address a possible translation of our MRI approach to the clinical arena.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about future research directions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "1cea55ac-5475-4684-a846-1d836c91444b",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C111",
+      "claim": "One limitation of the study relates to the differentiation of the various hierarchical parts of the vascular system.",
+      "claim_type": "EXPLICIT",
+      "source": "One limitation of our study relates to the differentiation of the various hierarchical parts of the vascular system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim acknowledges a limitation of the study methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "792d9473-a34d-4f10-a81f-0305d25092ab",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C112",
+      "claim": "Tumors harbor a manifold of different vascular compartments with highly variable, but mostly pathological perfusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Tumors harbor a manifold of different vascular compartments (veins and arteries of different calibers and sizes with highly variable, but mostly pathological perfusion).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about tumor vasculature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "6eb8f38b-83f6-451d-8909-dc1f749d3fed",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C113",
+      "claim": "Neither MR nor optical methods are able to capture the entire complexity of tumor vascular compartments.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither MR nor optical methods are able to capture the entire complexity of these compartments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim acknowledges a limitation of both imaging modalities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "4e06a456-7e21-4cb0-adb0-fdaf0438ab32",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C114",
+      "claim": "The visualization and quantification of the microvasculature by lectin-injection might slightly underestimate the vascular tumor compartment.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that the visualization and quantification of the microvasculature by lectin-injection might slightly underestimate the vascular tumor compartment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the observation of non-perfused vessels and logical inference.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "2d0e3fbd-0dd3-44a2-9e4e-48f726907ae6",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C115",
+      "claim": "The fact that hypo- or non-perfused vessels with abnormal flow exist in tumors is well established.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that hypo- or non-perfused vessels with abnormal flow exist in tumors is well established (Carmeliet and Jain, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to established literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "6930eda6-d49a-44b0-8ac6-cb88aabb6dcd",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C116",
+      "claim": "Clearing methods may lead to an alteration in brain size due to dehydration.",
+      "claim_type": "EXPLICIT",
+      "source": "Another drawback might be that clearing methods may lead to an alteration in brain size, that is, due to dehydration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim acknowledges a potential limitation of the clearing method.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "ffc3aee5-fe50-4324-a7dd-3091417c3bf1",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C117",
+      "claim": "The volume reduction of ~40% occurred in a uniform fashion and did not change macroscopic tissue proportions.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed a volume reduction of ~40%, which however occurred in a uniform fashion and did not change macroscopic tissue proportions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by CT measurements before and after clearing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "e6365558-e954-48b0-b100-bf9a59e416f3",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C118",
+      "claim": "Anatomical structures and substructures of the brain remained fully intact after clearing.",
+      "claim_type": "EXPLICIT",
+      "source": "Anatomical structures and substructures of the brain remained fully intact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on observations from the cleared brain specimens.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "448f0140-5496-43fe-bfad-571949afaae7",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C119",
+      "claim": "Vessel diameters obtained by UM could be corrected by a multiplication factor of ~1.6.",
+      "claim_type": "EXPLICIT",
+      "source": "Vessel diameters obtained by UM could therefore be corrected by a multiplication factor of ~1.6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the measured volume reduction during clearing.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "36c97741-1945-4de7-8463-fe5d7391465c",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C120",
+      "claim": "Microscopic shrinkage may slightly differ from the macroscopic factor obtained by CT.",
+      "claim_type": "EXPLICIT",
+      "source": "However, microscopic shrinkage may slightly differ from the macroscopic factor obtained by CT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim acknowledges a potential limitation of the correction factor.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "af4ac9c7-75be-444a-91c7-cfb5308fa097",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C121",
+      "claim": "When using endogenous fluorescent proteins in combination with exogenous fluorescent markers, preservation of fluorescent signals during the clearing process might vary and should be carefully controlled for.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, when using endogenous fluorescent proteins such as GFP or RFP in combination with exogenous fluorescent markers such as FITC, preservation of fluorescent signals during the clearing process might vary and should be carefully controlled for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on technical considerations about fluorescent signal preservation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "02ca9731-63c9-4f65-91a9-f5800f555a05",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C122",
+      "claim": "The applied principles should be easily transferable to additional targets like the immune cell compartment that are amenable to MR and optical labeling strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "The applied principles should be easily transferable to additional targets like the immune cell compartment that are amenable to MR and optical labeling strategies (Kircher et al., 2003; Weissleder et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential applications, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "33447379-466e-4fd4-9f91-93e30bb3353e",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C123",
+      "claim": "MR-UM should be useful for translational approaches to aid preclinical therapy development.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, MR-UM should be useful for translational approaches to aid preclinical therapy development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential applications of the technique.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "c75c93ac-c202-43e6-b075-4a79e8abf4a9",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C124",
+      "claim": "Mono-antiangiogenic treatment with a murine VEGF inhibitor was insufficient to halt tumor growth which mirrors current human studies.",
+      "claim_type": "EXPLICIT",
+      "source": "In our study, mono-antiangiogenic treatment with a murine VEGF inhibitor was insufficient to halt tumor growth which mirrors current human studies (Chinot et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the experimental data and citation to clinical studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "9c80fe7b-a884-4642-8f10-b6533541dab7",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C125",
+      "claim": "Dual angiogenesis inhibitors are currently being developed.",
+      "claim_type": "EXPLICIT",
+      "source": "Dual angiogenesis inhibitors are currently being developed and therapeutic effects could be assessed in detail using our toolkit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on knowledge of current drug development efforts.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "f8f4aaf5-bc38-4812-87e6-85292e099f1d",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C126",
+      "claim": "Therapeutic effects of dual angiogenesis inhibitors could be assessed in detail using the MR-UM toolkit.",
+      "claim_type": "EXPLICIT",
+      "source": "Dual angiogenesis inhibitors are currently being developed and therapeutic effects could be assessed in detail using our toolkit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative claim about potential applications of the technique.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "2917ff77-d41c-4e13-83dd-b653d60fe477",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "claim_id": "C127",
+      "claim": "MR-UM can provide a versatile platform for translational research approaches to cross-correlate MR and optical signals.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we believe that MR-UM can provide a versatile platform for translational research approaches to cross-correlate MR and optical signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a concluding statement based on the demonstrated capabilities of the technique.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "65edbc7e-9b6f-4917-9a26-c7e8e4160399",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "T2*-weighted MRI at 9.4 Tesla with gadolinium contrast enables visualization and quantification of tumor neovascularization in glioma models. The technique achieves 80 \u00b5m isotropic resolution and can detect single vessels starting at 2 weeks post-implantation in GL261 tumors, with exponential increase in vascularized area from week 1 (0.2 mm\u00b2) to week 3 (3.5 mm\u00b2, p<0.01). The method visualizes vessels in the 50-100 \u00b5m range and shows contrast agent clearance within ~2 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C23, C39-C54, C85-C86 provide converging evidence from longitudinal MRI studies showing technical capabilities, temporal dynamics, and quantitative measurements of tumor vascularization. The statistical significance (p<0.01) and detailed imaging parameters support the conclusions. The acknowledged resolution limitation (C87) is appropriately recognized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "046f5548-22d8-4bca-8a39-fa485ae0cf89",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Ultramicroscopy (UM) of cleared brain tissue with lectin labeling achieves ~5 \u00b5m spatial resolution, enabling detailed characterization of tumor microvasculature. Quantitative analysis reveals progressive increases in vessel diameter (outside: 3.2 \u00b5m; tumor week 2: 11.5 \u00b5m; week 3: 14.7 \u00b5m; p<0.001), increased tortuosity (1.11 vs 1.16, p=0.05), and trends toward higher vessel density. The clearing procedure causes ~40% uniform volume reduction without altering tissue proportions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C56-C61, C70-C77 provide detailed quantitative data with statistical significance supporting the technical capabilities and biological findings. The characterization of tissue shrinkage (C36-C37, C116-C120) and correction factors demonstrate methodological rigor. The identification of non-perfused vessels (C76) adds biological insight.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "e2a8cb20-79e5-461e-b863-9a34a6e94b0f",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The combined MR-UM platform bridges in vivo MRI and ex vivo optical microscopy, enabling cross-correlation of spatiotemporal vascular information across resolution scales. The integrated approach achieves single vessel resolution and characterizes pathological vessel features including permeability, tortuosity, and caliber.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C26, C92, C95-C96, C100-C104, C127 are supported by the demonstrated integration of complementary imaging modalities with distinct advantages. The technical feasibility is established through multiple examples (Figures 2-4), and the biological validation through correlation studies (C62: R\u00b2=0.87, p<0.001) strengthens the platform's utility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "807c678f-3549-4392-9223-ecb18ee201e7",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "VEGF inhibition induces partial vascular normalization with decreased vessel caliber (8.3 \u00b5m vs 13.2 \u00b5m control, p<0.001), reduced vascularized area, and decreased BBB disruption. However, despite efficient blockage of neoangiogenesis, anti-VEGF therapy did not reduce tumor growth (0.22 mm\u00b2 vs 0.22 mm\u00b2 control, p>0.05), and this effect was specific to VEGF inhibition as radiation therapy did not produce vascular normalization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C78-C83, C105 provide consistent evidence across MRI and UM modalities demonstrating vascular normalization effects. The quantitative measurements with statistical significance (p<0.001 for vessel diameter) support the vascular changes. The lack of tumor growth inhibition (C83) is appropriately documented with adequate sample size (n=4 per group) and statistical testing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "babe4dcd-81ea-4be5-ad6f-af8a53ea87fd",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "S24 human glioma tumors exhibit markedly different growth patterns compared to GL261 mouse tumors, growing slower and more invasively with tumor cell clusters in the contralateral hemisphere. BBB disruption develops late (10 weeks) in S24 tumors versus early in GL261 tumors, with increased vascularity appearing at the tumor-stroma border at 10 weeks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C69 describe comparative observations between two tumor models documented through longitudinal MRI and UM imaging (Figures 2e, 2\u2014figure supplement 3). The distinct temporal and spatial patterns are clearly demonstrated, though quantitative comparisons and sample sizes for S24 tumors (n=3) are limited compared to GL261 studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "2dcd8f7f-1a0a-492e-8b64-fc6448c13a68",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Conventional Gd-enhanced MRI correlates strongly with optical Evans blue extravasation for assessing BBB disruption and vascular permeability (R\u00b2=0.87, p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 is supported by correlation analysis shown in Figure 2\u2014figure supplement 2, demonstrating strong agreement between MRI and optical methods. The high R\u00b2 value and statistical significance validate the MRI approach for permeability assessment.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "37e4464a-ba4e-47c8-92f7-bcc3651bec69",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Mono-modality antiangiogenic treatment is insufficient to halt glioma growth in the preclinical model, mirroring current clinical trial results in human GBM patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C106, C84, C124 are supported by the experimental data (C83) showing no tumor growth reduction despite vascular effects, and appropriately contextualized with clinical trial citations (Chinot et al., 2014; Taal et al., 2014). The parallel between preclinical and clinical findings strengthens translational relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "e36b192b-25d9-432c-837d-c397c7114151",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "MR-UM may serve as a platform for understanding antiangiogenic treatment mechanisms, identifying druggable targets, and assessing novel therapies including dual angiogenesis inhibitors. Future translation to clinical high-field MRI systems is proposed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C27-C28, C107, C110, C122-C123, C125-C126 are speculative about future applications. While the technical platform is validated, these represent potential rather than demonstrated capabilities. The claims appropriately use conditional language ('may serve', 'should be', 'could be assessed'), but lack experimental validation for the proposed applications.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "1b50dfd0-5a45-4872-ad66-75cb0fef7ce4",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study has limitations in differentiating hierarchical vascular compartments, and lectin-based visualization may underestimate the vascular compartment due to non-perfused vessels. Fluorescent signal preservation during clearing may vary between endogenous and exogenous markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C111-C115, C121 appropriately acknowledge methodological limitations. The observation of CD31+/lectin- vessels (C76) provides direct evidence for C114. These limitations are well-characterized and do not undermine the main findings but appropriately contextualize the results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "3c9ce477-531b-4265-864a-c0bfc5721463",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background context on glioblastoma biology, angiogenesis, and clinical challenges with anti-VEGF therapies, along with the development of optical clearing methods and need for imaging biomarkers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C11-C22, C93-C94, C97, C108 provide established background knowledge appropriately supported by citations to peer-reviewed literature. These contextual claims frame the study rationale and are not primary findings but necessary background.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    },
+    {
+      "id": "8211b02a-a4a5-4da4-bb96-1e9db0d21cb3",
+      "content_id": "1bbac554-4d1f-4328-ac69-a39228700011",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Experimental methods including tumor cell implantation protocols (GL261: 1\u00d710\u2075 cells in C57Bl/6J mice, n=45; S24: 5\u00d710\u2074 cells in nude mice, n=3), MRI acquisition parameters (9.4T scanner, weekly imaging), and treatment protocols (anti-VEGF: 10 mg/kg every 3 days; radiation: 2 Gy/day for 4 days).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C35 describe methodological details that are standard experimental procedures. The protocols are clearly specified with appropriate detail for reproducibility, though no independent validation of these specific parameters is provided within the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T22:40:11.404649Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "cdc70a55-f997-4269-bdae-66df7a8a00a0",
+      "result_id": "65edbc7e-9b6f-4917-9a26-c7e8e4160399"
+    },
+    {
+      "claim_id": "54e00e7f-106a-4496-bdc4-a96de108f187",
+      "result_id": "65edbc7e-9b6f-4917-9a26-c7e8e4160399"
+    },
+    {
+      "claim_id": "8aff94ec-5bee-4db7-bbe6-8c9e1eb525c6",
+      "result_id": "65edbc7e-9b6f-4917-9a26-c7e8e4160399"
+    },
+    {
+      "claim_id": "3b91d9b2-e288-4544-a93a-7cee7b9e2363",
+      "result_id": "65edbc7e-9b6f-4917-9a26-c7e8e4160399"
+    },
+    {
+      "claim_id": "9c31ea14-cad3-4e28-bbd8-d7bff729eae4",
+      "result_id": "65edbc7e-9b6f-4917-9a26-c7e8e4160399"
+    },
+    {
+      "claim_id": "f0d68a53-dc8b-42ff-947f-4be3b8968e80",
+      "result_id": "65edbc7e-9b6f-4917-9a26-c7e8e4160399"
+    },
+    {
+      "claim_id": "c0add1b1-2145-472e-be64-2003cc122906",
+      "result_id": "65edbc7e-9b6f-4917-9a26-c7e8e4160399"
+    },
+    {
+      "claim_id": "549edee8-b219-4e7a-bde0-02e20d0f94ee",
+      "result_id": "65edbc7e-9b6f-4917-9a26-c7e8e4160399"
+    },
+    {
+      "claim_id": "055d016d-8539-45ab-bfee-72d5e159c800",
+      "result_id": "65edbc7e-9b6f-4917-9a26-c7e8e4160399"
+    },
+    {
+      "claim_id": "a21bf486-4478-475e-826f-7719bdd5ee5e",
+      "result_id": "65edbc7e-9b6f-4917-9a26-c7e8e4160399"
+    },
+    {
+      "claim_id": "6ab84888-fbfc-45bc-979d-f635ec0fa661",
+      "result_id": "65edbc7e-9b6f-4917-9a26-c7e8e4160399"
+    },
+    {
+      "claim_id": "af8f9276-70a6-4029-9454-d6a669444e6f",
+      "result_id": "65edbc7e-9b6f-4917-9a26-c7e8e4160399"
+    },
+    {
+      "claim_id": "3632fbe9-e740-4121-8952-3e0f0eb0affb",
+      "result_id": "65edbc7e-9b6f-4917-9a26-c7e8e4160399"
+    },
+    {
+      "claim_id": "3780074d-7685-4fd6-ac5d-bbd2b7d4caa9",
+      "result_id": "65edbc7e-9b6f-4917-9a26-c7e8e4160399"
+    },
+    {
+      "claim_id": "ca4ead21-87ba-4125-b087-ee67cae296f2",
+      "result_id": "65edbc7e-9b6f-4917-9a26-c7e8e4160399"
+    },
+    {
+      "claim_id": "dd3f7453-f949-4e9c-86e2-ecafdd36d082",
+      "result_id": "65edbc7e-9b6f-4917-9a26-c7e8e4160399"
+    },
+    {
+      "claim_id": "43fc7db1-3768-4ec3-b5fa-82d152a9d7bd",
+      "result_id": "65edbc7e-9b6f-4917-9a26-c7e8e4160399"
+    },
+    {
+      "claim_id": "e4d3a94d-1f2c-42ba-a757-9f41a338f394",
+      "result_id": "65edbc7e-9b6f-4917-9a26-c7e8e4160399"
+    },
+    {
+      "claim_id": "294783fb-f000-40d5-a064-8fd084ad52b1",
+      "result_id": "65edbc7e-9b6f-4917-9a26-c7e8e4160399"
+    },
+    {
+      "claim_id": "749d5e67-18d7-4f77-9260-2e76c06d390a",
+      "result_id": "65edbc7e-9b6f-4917-9a26-c7e8e4160399"
+    },
+    {
+      "claim_id": "7e1718f1-e76d-4060-a903-38a8d53f1c76",
+      "result_id": "65edbc7e-9b6f-4917-9a26-c7e8e4160399"
+    },
+    {
+      "claim_id": "f5f89dff-e216-4f6a-a1f6-74ee2392f289",
+      "result_id": "65edbc7e-9b6f-4917-9a26-c7e8e4160399"
+    },
+    {
+      "claim_id": "91f76310-c367-473b-bc22-9efbcd833c0e",
+      "result_id": "65edbc7e-9b6f-4917-9a26-c7e8e4160399"
+    },
+    {
+      "claim_id": "d388bcf8-a097-49bf-9051-5f5b8378490f",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "cc0a1a41-6ff2-4708-95fb-8153a370a879",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "c306233e-28bd-495b-bb01-dcf3978de526",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "807c301f-8297-463d-b145-31c2dbbe315d",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "7e9c84ad-e1f6-45b2-82cf-39fae54f4a50",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "49b65f59-6e84-408d-841a-394a3c34699c",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "abfdb944-ab76-45d9-85c0-e1e456688d71",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "f66bafba-4ce0-499d-b226-93adb11606ef",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "93bc9e10-722a-4ef8-bda6-ba992ea23ed3",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "3130f5fc-6227-4b56-9aff-664ea99ab2bd",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "aba641df-9157-4b9a-8a4f-aceeaf762156",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "1fa72c47-4a0a-47b3-8c5e-348251bf0079",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "c72650c3-e14b-409d-b40d-d9840a6559a2",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "cf0f1b4a-bfb0-4284-a7c3-c4f64d29ce05",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "fdf79308-a163-44bf-bade-5330cb5210fc",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "8068dc07-b67f-4f79-9945-44831fe91756",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "67a17f78-ca23-4254-a54f-c42854a4206b",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "2bf335c2-16dd-4b77-a992-92680aa196cc",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "da540fe5-27b1-4fe9-b271-92984815954b",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "71bf75a3-8cec-4ef9-9043-3183c8dfb1cd",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "d1cbb26d-399c-440e-be72-02877b7f3d0d",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "2dd34e0a-1449-45c8-8fe8-e949d5e59d31",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "d201c66e-b37a-4e5a-af8e-52ba613cd663",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "e053bb47-9161-45e4-96ed-abf8ca5a6c01",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "99cdf4d0-8eb9-49b0-9934-a0eae9fd9518",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "5bf39978-324c-4b24-899c-ac727cea5424",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "4edc91d4-5bcd-4146-aa04-93729e0cef8f",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "6930eda6-d49a-44b0-8ac6-cb88aabb6dcd",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "ffc3aee5-fe50-4324-a7dd-3091417c3bf1",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "e6365558-e954-48b0-b100-bf9a59e416f3",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "448f0140-5496-43fe-bfad-571949afaae7",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "36c97741-1945-4de7-8463-fe5d7391465c",
+      "result_id": "046f5548-22d8-4bca-8a39-fa485ae0cf89"
+    },
+    {
+      "claim_id": "6043f927-e22a-48e6-817e-f42fef47ac73",
+      "result_id": "e2a8cb20-79e5-461e-b863-9a34a6e94b0f"
+    },
+    {
+      "claim_id": "2eecd5ee-8736-450f-9eaf-f23ce4aad3a4",
+      "result_id": "e2a8cb20-79e5-461e-b863-9a34a6e94b0f"
+    },
+    {
+      "claim_id": "58c36346-7c48-4f4d-b797-ee4116cfd34a",
+      "result_id": "e2a8cb20-79e5-461e-b863-9a34a6e94b0f"
+    },
+    {
+      "claim_id": "b86cea37-c49f-4e50-9e54-7712e71f534d",
+      "result_id": "e2a8cb20-79e5-461e-b863-9a34a6e94b0f"
+    },
+    {
+      "claim_id": "5676a730-afb6-4ea5-a82d-124d874d1adb",
+      "result_id": "e2a8cb20-79e5-461e-b863-9a34a6e94b0f"
+    },
+    {
+      "claim_id": "2e0d66ee-6659-4f6a-8f16-95e7aaaaba3e",
+      "result_id": "e2a8cb20-79e5-461e-b863-9a34a6e94b0f"
+    },
+    {
+      "claim_id": "e47f3b41-d1b0-445e-8d3f-039dce923389",
+      "result_id": "e2a8cb20-79e5-461e-b863-9a34a6e94b0f"
+    },
+    {
+      "claim_id": "18b74b13-6edc-4e61-8293-27c85b37033c",
+      "result_id": "e2a8cb20-79e5-461e-b863-9a34a6e94b0f"
+    },
+    {
+      "claim_id": "494547c6-9205-4673-9d6c-47c4323b3789",
+      "result_id": "e2a8cb20-79e5-461e-b863-9a34a6e94b0f"
+    },
+    {
+      "claim_id": "8022c70e-6591-4a27-8797-a5e110eddd83",
+      "result_id": "e2a8cb20-79e5-461e-b863-9a34a6e94b0f"
+    },
+    {
+      "claim_id": "5abf7503-7409-435a-8ebe-71997af3c889",
+      "result_id": "e2a8cb20-79e5-461e-b863-9a34a6e94b0f"
+    },
+    {
+      "claim_id": "2917ff77-d41c-4e13-83dd-b653d60fe477",
+      "result_id": "e2a8cb20-79e5-461e-b863-9a34a6e94b0f"
+    },
+    {
+      "claim_id": "233bec36-ed65-4f93-b0d7-d71532440035",
+      "result_id": "807c678f-3549-4392-9223-ecb18ee201e7"
+    },
+    {
+      "claim_id": "174e7b6c-4291-4005-8e73-c0d9d8debb85",
+      "result_id": "807c678f-3549-4392-9223-ecb18ee201e7"
+    },
+    {
+      "claim_id": "b027fe3e-0bef-4c55-899b-e00b2816b1e8",
+      "result_id": "807c678f-3549-4392-9223-ecb18ee201e7"
+    },
+    {
+      "claim_id": "15b723cb-0a93-4b45-bd15-02f59e8be9db",
+      "result_id": "807c678f-3549-4392-9223-ecb18ee201e7"
+    },
+    {
+      "claim_id": "cddbe0c9-4276-408a-a94b-0e7bc131d918",
+      "result_id": "807c678f-3549-4392-9223-ecb18ee201e7"
+    },
+    {
+      "claim_id": "d3879276-3a7e-42f1-a3e6-3d8bc64d3e2d",
+      "result_id": "807c678f-3549-4392-9223-ecb18ee201e7"
+    },
+    {
+      "claim_id": "2d50973e-1f65-4031-9dd0-f39bf5262427",
+      "result_id": "807c678f-3549-4392-9223-ecb18ee201e7"
+    },
+    {
+      "claim_id": "a0fcb070-6357-4bd6-ad9f-1a42c3b3b5f1",
+      "result_id": "807c678f-3549-4392-9223-ecb18ee201e7"
+    },
+    {
+      "claim_id": "71e04b3a-09fb-4622-ae23-f8efa19f36a9",
+      "result_id": "807c678f-3549-4392-9223-ecb18ee201e7"
+    },
+    {
+      "claim_id": "c2bd552d-0276-4896-a98e-ba7a41f287ca",
+      "result_id": "807c678f-3549-4392-9223-ecb18ee201e7"
+    },
+    {
+      "claim_id": "51fcc2f3-1514-4fed-a075-17008edd0e1a",
+      "result_id": "babe4dcd-81ea-4be5-ad6f-af8a53ea87fd"
+    },
+    {
+      "claim_id": "f7188826-b6b1-4160-b4df-a2bf5483001b",
+      "result_id": "babe4dcd-81ea-4be5-ad6f-af8a53ea87fd"
+    },
+    {
+      "claim_id": "875986b7-3430-474d-aa30-361bea36bd0d",
+      "result_id": "babe4dcd-81ea-4be5-ad6f-af8a53ea87fd"
+    },
+    {
+      "claim_id": "4395e654-d581-41f8-95ad-4fd2dcda35b4",
+      "result_id": "babe4dcd-81ea-4be5-ad6f-af8a53ea87fd"
+    },
+    {
+      "claim_id": "c3f6a887-6f19-4dce-ae45-0e922cf4e5e6",
+      "result_id": "babe4dcd-81ea-4be5-ad6f-af8a53ea87fd"
+    },
+    {
+      "claim_id": "82119003-7879-4536-b9f4-a22cf7e041ee",
+      "result_id": "babe4dcd-81ea-4be5-ad6f-af8a53ea87fd"
+    },
+    {
+      "claim_id": "f544850d-6266-4b2b-ae16-426e1cb6afc5",
+      "result_id": "babe4dcd-81ea-4be5-ad6f-af8a53ea87fd"
+    },
+    {
+      "claim_id": "06c6638f-1c91-4ac5-ad8b-5c2278490295",
+      "result_id": "2dcd8f7f-1a0a-492e-8b64-fc6448c13a68"
+    },
+    {
+      "claim_id": "1d30a7d5-38a2-48de-81d4-a6b0ab4e5f34",
+      "result_id": "37e4464a-ba4e-47c8-92f7-bcc3651bec69"
+    },
+    {
+      "claim_id": "8736ee82-52c1-4b17-bc84-66b495d8a331",
+      "result_id": "37e4464a-ba4e-47c8-92f7-bcc3651bec69"
+    },
+    {
+      "claim_id": "c75c93ac-c202-43e6-b075-4a79e8abf4a9",
+      "result_id": "37e4464a-ba4e-47c8-92f7-bcc3651bec69"
+    },
+    {
+      "claim_id": "de2881b7-4dfe-453c-8f71-fd0fb431053b",
+      "result_id": "e36b192b-25d9-432c-837d-c397c7114151"
+    },
+    {
+      "claim_id": "ee0d9a8b-b88b-4a90-b696-be6209b0b91e",
+      "result_id": "e36b192b-25d9-432c-837d-c397c7114151"
+    },
+    {
+      "claim_id": "12e6d598-9128-4109-8645-f452df3aa04b",
+      "result_id": "e36b192b-25d9-432c-837d-c397c7114151"
+    },
+    {
+      "claim_id": "36c6c733-f92a-43af-a2af-c6465854e3df",
+      "result_id": "e36b192b-25d9-432c-837d-c397c7114151"
+    },
+    {
+      "claim_id": "02ca9731-63c9-4f65-91a9-f5800f555a05",
+      "result_id": "e36b192b-25d9-432c-837d-c397c7114151"
+    },
+    {
+      "claim_id": "33447379-466e-4fd4-9f91-93e30bb3353e",
+      "result_id": "e36b192b-25d9-432c-837d-c397c7114151"
+    },
+    {
+      "claim_id": "9c80fe7b-a884-4642-8f10-b6533541dab7",
+      "result_id": "e36b192b-25d9-432c-837d-c397c7114151"
+    },
+    {
+      "claim_id": "f8f4aaf5-bc38-4812-87e6-85292e099f1d",
+      "result_id": "e36b192b-25d9-432c-837d-c397c7114151"
+    },
+    {
+      "claim_id": "1cea55ac-5475-4684-a846-1d836c91444b",
+      "result_id": "1b50dfd0-5a45-4872-ad66-75cb0fef7ce4"
+    },
+    {
+      "claim_id": "792d9473-a34d-4f10-a81f-0305d25092ab",
+      "result_id": "1b50dfd0-5a45-4872-ad66-75cb0fef7ce4"
+    },
+    {
+      "claim_id": "6eb8f38b-83f6-451d-8909-dc1f749d3fed",
+      "result_id": "1b50dfd0-5a45-4872-ad66-75cb0fef7ce4"
+    },
+    {
+      "claim_id": "4e06a456-7e21-4cb0-adb0-fdaf0438ab32",
+      "result_id": "1b50dfd0-5a45-4872-ad66-75cb0fef7ce4"
+    },
+    {
+      "claim_id": "2d0e3fbd-0dd3-44a2-9e4e-48f726907ae6",
+      "result_id": "1b50dfd0-5a45-4872-ad66-75cb0fef7ce4"
+    },
+    {
+      "claim_id": "af4ac9c7-75be-444a-91c7-cfb5308fa097",
+      "result_id": "1b50dfd0-5a45-4872-ad66-75cb0fef7ce4"
+    },
+    {
+      "claim_id": "5035b04b-9824-4359-bcf3-73feaf1a4b10",
+      "result_id": "3c9ce477-531b-4265-864a-c0bfc5721463"
+    },
+    {
+      "claim_id": "572993ba-8b69-417c-936f-0589f0c0c9c6",
+      "result_id": "3c9ce477-531b-4265-864a-c0bfc5721463"
+    },
+    {
+      "claim_id": "239125b7-ab0e-457b-b386-8815462b90d7",
+      "result_id": "3c9ce477-531b-4265-864a-c0bfc5721463"
+    },
+    {
+      "claim_id": "1da13e56-8830-4daa-9399-af6cfd383992",
+      "result_id": "3c9ce477-531b-4265-864a-c0bfc5721463"
+    },
+    {
+      "claim_id": "a0eb826e-9fd5-4301-a9da-28bba759acb5",
+      "result_id": "3c9ce477-531b-4265-864a-c0bfc5721463"
+    },
+    {
+      "claim_id": "5d02a666-350e-42fe-aef9-e01bdd2fd054",
+      "result_id": "3c9ce477-531b-4265-864a-c0bfc5721463"
+    },
+    {
+      "claim_id": "00b1979e-a7bc-4502-8e4f-86031ada1b01",
+      "result_id": "3c9ce477-531b-4265-864a-c0bfc5721463"
+    },
+    {
+      "claim_id": "fcdc1905-fe4c-4a04-8d4d-749f352e5e3b",
+      "result_id": "3c9ce477-531b-4265-864a-c0bfc5721463"
+    },
+    {
+      "claim_id": "a598c2ee-530e-4d8a-83bd-28d337c76e76",
+      "result_id": "3c9ce477-531b-4265-864a-c0bfc5721463"
+    },
+    {
+      "claim_id": "597ae212-1b12-4073-8314-f2c0a7adefda",
+      "result_id": "3c9ce477-531b-4265-864a-c0bfc5721463"
+    },
+    {
+      "claim_id": "a910fbaa-c85e-4b06-b46e-27c879d0df1e",
+      "result_id": "3c9ce477-531b-4265-864a-c0bfc5721463"
+    },
+    {
+      "claim_id": "31d54b8a-16bc-4759-927e-381fcc5d69a1",
+      "result_id": "3c9ce477-531b-4265-864a-c0bfc5721463"
+    },
+    {
+      "claim_id": "34bf94c1-aaba-45ea-8c01-99458e0ff9af",
+      "result_id": "3c9ce477-531b-4265-864a-c0bfc5721463"
+    },
+    {
+      "claim_id": "29656ed0-963e-471c-b3f8-34099f8598d1",
+      "result_id": "3c9ce477-531b-4265-864a-c0bfc5721463"
+    },
+    {
+      "claim_id": "8a83c320-8087-4bc1-8dda-847ab1c3e830",
+      "result_id": "3c9ce477-531b-4265-864a-c0bfc5721463"
+    },
+    {
+      "claim_id": "1579adc0-2b96-4750-8274-c8a2ef3f5056",
+      "result_id": "3c9ce477-531b-4265-864a-c0bfc5721463"
+    },
+    {
+      "claim_id": "ef291a81-e8c7-4d30-926e-1d05c80ebb68",
+      "result_id": "3c9ce477-531b-4265-864a-c0bfc5721463"
+    },
+    {
+      "claim_id": "95464706-1f22-4c5b-b873-4fd0a306bd75",
+      "result_id": "8211b02a-a4a5-4da4-bb96-1e9db0d21cb3"
+    },
+    {
+      "claim_id": "a996fbb8-47ff-4334-89c8-b595c515ee90",
+      "result_id": "8211b02a-a4a5-4da4-bb96-1e9db0d21cb3"
+    },
+    {
+      "claim_id": "c08e86a4-cc13-4007-b8a2-11e4f964cb0f",
+      "result_id": "8211b02a-a4a5-4da4-bb96-1e9db0d21cb3"
+    },
+    {
+      "claim_id": "ddd5fb24-53de-4337-8d6f-0000d8708bd7",
+      "result_id": "8211b02a-a4a5-4da4-bb96-1e9db0d21cb3"
+    },
+    {
+      "claim_id": "89b13be8-6827-4537-bd6d-3253354ffe5b",
+      "result_id": "8211b02a-a4a5-4da4-bb96-1e9db0d21cb3"
+    },
+    {
+      "claim_id": "9b584ce8-fc62-44b6-a7ab-0a4d86316a00",
+      "result_id": "8211b02a-a4a5-4da4-bb96-1e9db0d21cb3"
+    },
+    {
+      "claim_id": "dadca56a-6ceb-4f25-96e4-1c8202bca335",
+      "result_id": "8211b02a-a4a5-4da4-bb96-1e9db0d21cb3"
+    }
+  ],
+  "comparisons": []
+}

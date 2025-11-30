@@ -1,0 +1,243 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors measured in vivo binding affinities of Nodal ligands (Sqt and Cyc) to their receptor Acvr2b and to the inhibitor Lefty2 using SW-FCCS. Sqt binds Acvr2b with Kd = 65 \u00b1 7 nM and Lefty2 with Kd = 29 \u00b1 1.2 nM, while Cyc binds Acvr2b with Kd = 124 \u00b1 12 nM and Lefty2 with Kd = 50 \u00b1 3 nM, indicating approximately twofold higher affinity of Sqt for both binding partners compared to Cyc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, and C41-C46 are supported by experimental FCCS data shown in Figures 2 and 3. The measurements provide quantitative Kd values with error estimates, and the methodology (SW-FCCS) is appropriate for in vivo binding affinity measurements. The twofold difference in binding affinities is consistently observed for both receptor and inhibitor interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C39",
+      "C40",
+      "C62"
+    ],
+    "result": "The authors measured diffusion coefficients of Nodal ligands (Sqt, Cyc, SqtCyc2, Cyc\u03942) and Lefty inhibitors (Lefty1, Lefty2) in live zebrafish embryos using FCS. All fusion proteins showed very similar diffusion coefficients (~60 \u03bcm\u00b2/s), suggesting that free diffusivity alone cannot differentiate the range and activity of Nodal proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C39, C40, and C62 are supported by FCS measurements shown in Figure 1F. The data demonstrate that all Nodal and Lefty fusion proteins have similar diffusion coefficients (~60 \u03bcm\u00b2/s), which is consistent with their similar molecular weights. The inference that free diffusivity alone cannot explain differential signaling ranges (C40) is logically sound given the similar measured values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C82"
+    ],
+    "result": "The authors measured spatial gradients of fluorescently-tagged Nodal proteins in zebrafish embryos. Sqt-EGFP reaches the edges of the blastula with 50-60% loss in intensity (gradient length 29.5 \u00b1 5 \u03bcm), while Cyc-EGFP falls steeply from the source (gradient length 19.7 \u00b1 2 \u03bcm). Cyc\u03942-EGFP shows a shallower gradient than Cyc, and SqtCyc2-EGFP shows a steeper gradient than Sqt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 and C82 are supported by experimental gradient measurements shown in Figure 4B with quantitative data. The gradient profiles correlate with known signaling ranges of these proteins, and the measurements are consistent with previous literature (M\u00fcller et al.). Error estimates are provided for the gradient length measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C6",
+      "C7"
+    ],
+    "result": "The authors determined degradation rates of Nodal proteins by measuring protein stability in cell culture supernatants over time. Cyc-FLAG degrades fastest (0.166 \u00d7 10\u207b\u2074 /s), followed by Cyc\u03942-FLAG (0.093 \u00d7 10\u207b\u2074 /s) and SqtCyc2-FLAG (0.090 \u00d7 10\u207b\u2074 /s), while Sqt-FLAG is most stable (0.003 \u00d7 10\u207b\u2074 /s). The decay rates correlate with gradient profiles and signaling ranges, indicating that ligand clearance via degradation shapes the Nodal gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C57, C6, and C7 are based on degradation measurements from HEK293T cell culture (Figure 4C-D), not in vivo zebrafish embryos. While the trend correlates with gradient profiles, the authors acknowledge these are cell culture measurements and use different values (from literature) in their simulations. The extrapolation from cell culture to in vivo degradation rates introduces uncertainty. The correlation is suggestive but not definitively proven in the physiological context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C80",
+      "C81",
+      "C87",
+      "C8",
+      "C96"
+    ],
+    "result": "The authors performed computational simulations incorporating diffusion, binding, and degradation to model Nodal gradient formation. Simulations accounting for tortuosity (1.84-fold reduction in diffusion), receptor binding, and differential degradation rates produced gradients of ~30 \u03bcm for Sqt and ~19 \u03bcm for Cyc, consistent with experimental measurements. The results demonstrate that diffusivity, extracellular interactions, and selective ligand destruction collectively shape the Nodal morphogen gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61, C80-C81, C87, C8, and C96 are supported by computational simulations shown in Figure 5 and Table 1. The simulations integrate multiple experimentally measured parameters (diffusion coefficients, binding affinities) with literature-derived degradation rates. The simulated gradient lengths match experimental measurements reasonably well (30 \u03bcm vs 29.5 \u00b1 5 \u03bcm for Sqt; 19.1 \u03bcm vs 19.7 \u00b1 2 \u03bcm for Cyc). While some parameters are estimated or derived from literature rather than directly measured, the overall agreement between simulation and experiment supports the integrative model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors validated that EGFP-tagged Nodal fusion proteins (Sqt-EGFP, Cyc-EGFP, SqtCyc2-EGFP, Cyc\u03942-EGFP) show similar activity to their untagged counterparts by comparing nodal target gene induction. Cyc\u03942 mutant shows increased stability and signaling range compared to wild-type Cyc, while SqtCyc2 chimera shows reduced stability and signaling range compared to Sqt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C104, and C105 are supported by experimental data in Figure 1 and Figure 1\u2014figure supplement 1, showing target gene induction (ntl, gsc) by tagged and untagged proteins. The validation is important for ensuring that fluorescent tags do not alter protein function. The characterization of Cyc\u03942 and SqtCyc2 mutants is supported by both current data and cited previous work (Tian et al., 2008).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C70"
+    ],
+    "result": "The authors found that the mobility of Nodal and Lefty proteins measured by FCS (~60 \u03bcm\u00b2/s) is too great to account for sharp gradients observed in embryos. FCS-measured diffusion coefficients are 3-85 times higher than FRAP-measured effective diffusion coefficients. The discrepancy arises because FCS measures local diffusion in small volumes over short timescales, while FRAP measures net diffusion over larger areas and longer times, suggesting additional mechanisms refine the gradient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 and C70 are supported by comparing FCS measurements from this study with FRAP measurements from M\u00fcller et al. (2013). The explanation for the discrepancy between techniques (C65-C67) is based on established knowledge about FCS and FRAP methodologies. The inference that additional mechanisms must shape the gradient (C70) is logical given the large discrepancy between free and effective diffusion coefficients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The authors found that Sqt binds to Acvr2b and Lefty with higher affinity than Cyc, contrary to previous hypotheses that lower receptor binding affinity might explain Sqt's longer range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71 and C72 are directly supported by the FCCS binding affinity measurements (Figures 2-3). This finding challenges previous models and is a key result of the study. The measurements are quantitative with appropriate error estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Simulations predict that Cyc reaches 80% and 95% of steady-state levels at 0.7 hr and 1.25 hr respectively, consistent with mesoderm induction timing. Sqt reaches 80% and 95% levels at ~4 hr and 7 hr respectively, which is longer than expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C86 are based on simulation predictions. While the Cyc timing is consistent with developmental timing, the Sqt predictions are acknowledged by the authors as longer than expected. The simulations do not account for cell divisions or other factors that could influence gradient formation, introducing uncertainty about the biological relevance of these specific timing predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C73",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors speculate that differential Nodal-Lefty binding affinity could fine-tune activity range by removing freely diffusing Nodals from the signaling pool, and that Lefty-binding might alter Sqt activity. However, Lefty may not influence gradient formation itself since Nodal/Lefty complexes likely diffuse similarly to free Nodals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47, C73, C90, and C91 are speculative interpretations (marked as SPECULATION in evidence_type). While the binding affinity measurements are solid, the functional consequences are not directly tested. The speculation about Lefty's role is reasonable but requires experimental validation to be considered supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "The authors note from their mathematical model (Equation 2) that clearance rate k and receptor concentration R are inversely related, such that higher clearance rate predicts lower receptor concentration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88 and C89 are mathematical inferences from the model equation presented in the manuscript. This is a straightforward mathematical relationship that follows from the equation structure. However, this is a theoretical observation rather than an experimental finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C68",
+      "C69",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors provide extensive background on Nodal signaling, morphogen gradient formation mechanisms, and previous work on Nodal diffusion and stability, citing relevant literature throughout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C37, C68-C69, C74-C79, and C92-C94 represent background knowledge and literature review. These are appropriately cited and represent established knowledge in the field or findings from previous studies. These claims provide context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "The authors conclude that differential stability of Nodal ligands, in addition to hindered diffusion via binding to receptors and inhibitors, plays key roles in shaping the Nodal gradient and activity range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 represents the main conclusion of the study, integrating findings from diffusion measurements, binding affinity measurements, degradation studies, and computational simulations. While the degradation measurements were performed in cell culture rather than in vivo, the overall conclusion is supported by the convergence of multiple lines of evidence.",
+    "result_type": "MAJOR"
+  }
+]

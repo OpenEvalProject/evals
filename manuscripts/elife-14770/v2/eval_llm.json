@@ -1,0 +1,242 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "The diffusion coefficient (DC) for free GFP in Arabidopsis roots was measured as 6.33 \u00b1 0.37 \u03bcm\u00b2/s using RICS analysis. This measurement was validated across two different confocal microscopes (Zeiss 780 and 710), demonstrating reproducibility of the technique.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 provide a well-characterized baseline measurement with adequate sample size (n=34) and technical validation across instruments. The standard error is reported and the measurement serves as a critical control for subsequent SHR mobility experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C46"
+    ],
+    "result": "SHR exhibits cell-type-specific diffusion rates, moving at 2.45 \u00b1 0.26 \u03bcm\u00b2/s in vascular/endodermal populations and significantly slower (1.29 \u00b1 0.14 \u03bcm\u00b2/s, p=0.0303) in endodermis-only populations. In SCRi backgrounds where SCR is reduced, SHR diffusion in endodermis increases to 2.40 \u00b1 0.29 \u03bcm\u00b2/s (p=0.9337 vs. vasc/endo), demonstrating that SCR restricts SHR movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 and C46 form a coherent experimental series with appropriate statistical testing (Wilcoxon with Steel-Dwass), adequate sample sizes (n=14-40), and proper controls. The genetic manipulation (SCRi) provides strong evidence for SCR's role in restricting SHR mobility, consistent with prior literature (C7).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C42"
+    ],
+    "result": "SHR movement is unidirectional from vasculature to endodermis under normal conditions. The Movement Index (MI) for SHR from vasculature to endodermis (0.58 \u00b1 0.03) is similar to free GFP (0.71 \u00b1 0.07), but movement from endodermis back to vasculature (MI=0.36 \u00b1 0.07) is significantly restricted (p=0.0368). SHR moves bidirectionally between endodermis and cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 and C42 demonstrate directional movement using pCF analysis with appropriate positive (35S:GFP) and negative (TMO5:3xGFP) controls. Statistical comparisons are properly conducted with adequate sample sizes (n=15-20). The binary analysis approach for detecting movement 'arches' is clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C43"
+    ],
+    "result": "In SCRi backgrounds, SHR trafficking becomes bidirectional between vasculature and endodermis (MI=0.66 \u00b1 0.07 vasc\u2192endo; MI=0.78 \u00b1 0.09 endo\u2192vasc), with both directions showing unrestricted movement similar to free GFP. This demonstrates that SCR specifically prevents SHR movement from endodermis back to vasculature while not affecting endodermis-cortex movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 and C43 provide strong genetic evidence for SCR's role in directional restriction. The SCRi manipulation is well-controlled, statistical comparisons are appropriate (p=0.9553 and p=0.9999 vs. GFP), and the specificity of the effect (vasc-endo but not endo-cortex) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "SCR does not move between endodermis and cortex, as demonstrated by Movement Index values (0.31 \u00b1 0.08 and 0.31 \u00b1 0.07) significantly lower than free GFP (p=0.0236 and p=0.0054).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 provides important negative control data showing SCR is immobile, contrasting with SHR's mobility. Statistical testing is appropriate with adequate sample size (n=14), supporting the conclusion that only SHR moves between these cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "SHR exists primarily as a monomer in vasculature (2.6% \u00b1 0.3% homodimer) but forms significantly more homodimers in endodermal nuclei (7.5% \u00b1 0.9%, p<0.0001). In SCRi backgrounds, SHR homodimer formation in endodermis is reduced to 1.9% \u00b1 0.4% (p=0.2546 vs. vasculature), indicating SCR influences SHR oligomeric state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 demonstrate cell-type-specific oligomerization using N&B analysis with proper calibration (S-factor, monomer brightness). The genetic manipulation (SCRi) provides strong evidence for SCR's role in promoting SHR homodimerization. Statistical testing is appropriate and sample sizes adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "SCR exists predominantly as monomers with 4.7% \u00b1 0.5% homodimers (mCherry-tagged) and 5.4% \u00b1 0.7% homodimers (GFP-tagged), showing consistency across fluorescent tags.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25 provide important validation that fluorescent tag choice does not substantially affect oligomeric state measurements. The similar homodimer percentages across tags strengthen confidence in the N&B methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Both SHR monomer and homodimer bind SCR monomer, forming 1:1 and 2:1 SHR:SCR complexes. The 1:1 complex comprises 84.8% \u00b1 1.6% of SHR-SCR complexes while 2:1 comprises 15.2% \u00b1 1.6%. SCR homodimers were not detected in the complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 provide novel stoichiometric information using cross-N&B analysis on dual-labeled lines. The quantification of complex ratios is well-supported by the methodology, though the claim that SCR homodimers are absent from complexes (C28) is based on negative evidence and could benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Sobol sensitivity analysis of the mathematical model identified SHR movement rates (a1 and a2) as highly influential parameters, indicating that SHR movement is a key component affecting dynamics in the endodermis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 appropriately use global sensitivity analysis (Sobol indices) to identify influential parameters. The methodology is sound with adequate Monte Carlo iterations (n=1000) and technical replicates (n=10). This justifies the focus on experimentally measuring diffusion coefficients.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Mathematical modeling predicts SHR reaches steady state in minutes, SCR increases significantly in the first 3 hours (consistent with inducible system data), the 2:1 complex forms after 9 hours (following SHR homodimer formation), and the entire system reaches steady state between 18-24 hours, suggesting cell division timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 present model predictions that are partially validated by experimental data (C32 cites Sozzani et al. 2010). However, C36's inference about cell division timing is speculative and not directly tested. The temporal predictions are internally consistent with the model structure but would benefit from experimental validation of the predicted dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "In the SCRi model simulation, the 1:1 SHR-SCR complex is reduced by half, SHR homodimers do not form (consistent with N&B data), and consequently the 2:1 complex does not exist. This suggests the extra layer phenotype could result from reduced SHR-SCR complex levels, though other unknown factors may contribute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 show good agreement between model predictions and experimental N&B data (C38). However, C40 is appropriately cautious ('could form') and C41 acknowledges limitations. The model provides a plausible mechanism but does not definitively establish causation for the extra layer phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C49"
+    ],
+    "result": "The combination of RICS and pCF data demonstrates that SCR affects SHR diffusive behavior and spatially restricts SHR movement. The decreased DC of SHR relative to free GFP, combined with unidirectional movement, suggests active regulation rather than passive diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 and C49 synthesize multiple experimental approaches (RICS, pCF) to support the conclusion of active regulation. The inference is strengthened by agreement with prior literature (C49 cites three studies). However, the mechanism of 'active regulation' remains undefined and requires future investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C60"
+    ],
+    "result": "The three-fold reduction in SHR DC compared to GFP cannot be attributed to molecular weight differences. Based on the inverse cube root relationship between DC and molecular weight, SHR would need to be ~729 kDa (27-fold heavier than GFP) to account for the observed DC change, but SHR is only ~60 kDa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 and C60 use established biophysical relationships (Young et al. 1980) to rule out molecular weight as the primary factor. The calculation is straightforward and properly cited. This strengthens the argument for active regulation, though the analysis assumes the Stokes-Einstein relationship holds in the cellular environment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "RICS and pCF provide advantages over FRAP and single-point FCS by introducing spatial components that distinguish binding interactions from slow diffusion, and by being robust against cell movement artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 accurately describe methodological advantages of scanning FCS techniques. These are well-established properties of the methods based on their design principles, though the manuscript does not directly compare results with FRAP or single-point FCS experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Background claims about the SHR-SCR system establish that SHR is transcribed in vasculature, moves to adjacent layers, activates SCR expression, and that SCR interacts with SHR to prevent further movement. These are supported by multiple prior studies and provide context for the current work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C57 appropriately cite prior literature to establish the biological context. These are well-supported background claims that justify the experimental approach. C57 specifically validates that the SHR:SHR-GFP fusion used in experiments complements the mutant phenotype, ensuring biological relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "General biological principles establish that transcription factor oligomerization is functionally important, intercellular movement and protein complex formation regulate developmental processes including cell fate specification, and multicellular development requires coordinated spatio-temporal signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 present well-established biological principles with appropriate citations. These provide the broader scientific context motivating the study but are not novel findings of this work.",
+    "result_type": "MINOR"
+  }
+]

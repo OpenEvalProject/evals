@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C6",
+      "C7",
+      "C8",
+      "C28",
+      "C102",
+      "C103"
+    ],
+    "result": "Global oscillations emerge as a consequence of optimal efficient coding in spiking networks with synaptic delays and noise. The most efficient representation occurs when spike times are entrained to a global gamma rhythm, few neurons fire on each cycle, and excitation and inhibition are tightly balanced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C6-C8, and C28 describe the main theoretical finding, supported by computational simulations shown in Figures 3-4. Claims C102-C103 state the functional explanation this provides for cortical network dynamics. The modeling results demonstrate that these dynamics emerge from efficient coding principles with realistic biological constraints (delays, noise), and Figures 4-8 show quantitative agreement with experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Coding performance varies non-monotonically with noise amplitude, following a U-shaped curve. Optimal coding is achieved at an intermediate noise level where excitation-inhibition balance is tightest, voltage correlations are reduced, and single-cell spiking CV is near unity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 describe results shown in Figure 4a-c. The U-shaped relationship between noise and coding error is clearly demonstrated, with quantitative measurements of voltage correlations, CV, and E-I balance all converging at the same optimal noise level. The data directly support the claim that optimal coding requires intermediate noise.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C65",
+      "C66",
+      "C67",
+      "C63",
+      "C64"
+    ],
+    "result": "Network dynamics vary systematically with noise level. Low noise produces high synchrony and poor coding; high noise produces uncorrelated firing similar to Poisson; intermediate noise produces optimal coding with sparse firing aligned to gamma oscillations and tight E-I balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 describe the three noise regimes illustrated in Figure 4d-f. The characterization of each regime is supported by raster plots, reconstruction traces, ISI distributions, and power spectra. The progression from over-synchronized to optimal to uncorrelated is clearly demonstrated across multiple metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C52",
+      "C53"
+    ],
+    "result": "Synaptic delays profoundly change network behavior and pose fundamental limits on performance. Without delays, only one cell fires per cycle optimally; with delays, multiple neurons fire together before inhibition arrives, requiring noise to desynchronize the network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C43-C46, C52-C53 describe the effect of delays shown in Figure 3c. The comparison between ideal (no delay), delayed, and delayed+noise conditions clearly demonstrates how delays cause synchronization and how noise can partially compensate. The claim that delays fundamentally limit performance is supported by Figure 3d showing increased error relative to the ideal case.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "In response to step inputs, the network exhibits transient peaks in firing rate followed by sustained 30-50 Hz oscillations. Oscillation strength increases with stimulus amplitude, while individual neurons maintain irregular firing with near-exponential ISI distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 describe dynamics shown in Figure 6. The spectrogram (Figure 6a) clearly shows 30-50 Hz oscillations during sustained activity. Figure 6c demonstrates amplitude-dependent oscillation strength, and Figure 6d shows near-exponential ISI distributions across all amplitudes. All claims are directly supported by the presented data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The model reproduces experimental observations from Yu & Ferster (2010) showing that increased feed-forward input amplitude leads to increased gamma-band correlations between neural membrane potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 compare model results (Figure 7b-d) to experimental data (Figure 7a). The qualitative similarity is clear: both show increased membrane potential correlations and gamma-band coherence with stimulus presentation. The mechanistic explanation (C77) that more neurons fire per cycle is consistent with the model architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The model reproduces experimental observations from Atallah et al. (2009) showing tight cycle-by-cycle balance between excitatory and inhibitory currents during gamma oscillations, with inhibition lagging excitation by a few milliseconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 compare model results (Figure 8b-e) to experimental data (Figure 8a). The model shows high correlation between E and I current amplitudes (Figure 8c), appropriate lag times (Figure 8d), and amplitude-dependent frequency modulation (Figure 8e). The quantitative agreement supports the claim that efficient coding requires this precise balance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Qualitatively similar U-shaped relationships between noise and coding performance are observed regardless of how noise is manipulated (membrane potential noise, synaptic failures, or random Poisson firing).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 describe results shown in Figure 5. Both synaptic failure probability (Figure 5a-b) and fraction of Poisson neurons (Figure 5c-d) show U-shaped error curves with optimal performance at intermediate noise levels where E-I balance is tightest. This demonstrates robustness of the main finding across different noise sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Optimal network parameters depend on input amplitude. For weak inputs, reducing noise (e.g., via attention) increases synchrony and improves detection performance, potentially explaining attention-dependent increases in gamma power correlated with behavioral performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C90 describe predictions shown in Figure 9. While Figure 9a-c show that optimal noise varies with input amplitude and that detection performance can correlate with gamma power, these are model predictions rather than experimental validations. Claims C88-C90 are explicitly speculative (evidence_type includes SPECULATION). The connection to attention is plausible but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Network performance and oscillatory dynamics are robust to changes in population size. Varying the number of excitatory or inhibitory neurons (by a factor of two) has minimal effect on optimal coding performance or oscillation frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 describe robustness analyses shown in Figure 10. The data show that firing rates scale inversely with population size while population firing rate remains constant (Figure 10a), and that coding performance and oscillation spectra are largely unchanged across different network sizes (Figure 10b-c, e-f). This supports the claim of robustness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Increasing synaptic delay decreases coding performance and produces larger, lower-frequency oscillations, as more neurons fire together before inhibition arrives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 describe results shown in Figure 11b-c. The monotonic increase in error with delay (Figure 11b) and the shift to lower frequencies with longer delays (Figure 11c-d) directly support these claims. The mechanistic explanation is consistent with the model architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Randomizing recurrent connection strengths greatly reduces coding performance despite unchanged network dynamics and oscillation spectra. Only networks with precise intracellular E-I balance achieve high coding performance; coherence between E and I currents is a more reliable signature of efficient coding than population synchrony.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 describe control experiments shown in Figure 12. The comparison between precisely balanced and randomly balanced networks (Figure 12e-f) clearly demonstrates that oscillations alone are insufficient for efficient coding. The preservation of oscillations with randomized connections while performance degrades strongly supports the claim that precise balance, not just synchrony, is critical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "For encoding constant inputs, optimal accuracy requires regular population firing with no synchronous spikes. However, completely asynchronous Poisson firing performs worse than regular firing even with some synchrony, revealing a trade-off between coordination and over-synchronization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 describe the conceptual framework illustrated in Figure 1. Figure 1c quantitatively shows that error increases with synchronous spikes per cycle, while the horizontal line shows that Poisson firing performs worse. Figure 1d illustrates the trade-off. These are theoretical/illustrative results that motivate the main study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "In the idealized efficient coding network with instantaneous synapses, each spike increases reconstruction by a fixed amount, feedback maintains consistent error representation across neurons, membrane potentials are highly correlated, and the network generates regular population firing with irregular single-cell responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 describe the idealized model shown in Figure 2. The spike-triggered reconstruction changes (Figure 2b), synchronized membrane potential fluctuations (Figure 2c), narrow population ISI distribution (Figure 2d), and exponential single-cell ISI distribution (Figure 2e) all support these characterizations of the idealized network.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Comparison of network models shows that Poisson networks have large errors due to rate fluctuations that decrease with higher firing rates, while ideal efficient coding networks automatically correct noise and have small errors limited only by code discreteness. Networks with delays have intermediate performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 describe comparisons shown in Figure 3d. The three curves (Poisson, ideal, and with delays) clearly show the described relationships. The explanation that ideal networks correct for noise while Poisson networks do not is consistent with the model architecture described in Materials and Methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Noise, often considered detrimental to neural coding, can actually improve coding performance by desynchronizing neurons that receive similar inputs. This represents a novel mechanism for stochastic resonance distinct from the traditional view of noise amplifying sub-threshold signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C136 present an interpretation of the main results (Figure 4) in the context of stochastic resonance. The U-shaped performance curve (C132, Figure 4c) demonstrates that intermediate noise improves performance. The connection to stochastic resonance is supported by citations (C133-C134), and the novel mechanism (C136) is a reasonable inference from the model showing noise desynchronizes recurrently connected neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C122",
+      "C127"
+    ],
+    "result": "Contrary to information-theoretic predictions that efficient coding requires asynchronous firing, biological constraints (synaptic delays) cause oscillations to emerge as a consequence of efficient coding. Networks with delays have stronger oscillations than idealized networks because multiple neurons fire before inhibition arrives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122 and C127 present a key conceptual contribution comparing information theory predictions to the model results. The contrast between idealized (weak oscillations) and delayed (strong oscillations) networks is shown in Figures 2-3. The claim that this contradicts pure information theory is a reasonable inference, though the information-theoretic prediction (C121) is stated without direct citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The key distinction from previous balanced network models is the top-down derivation from efficient coding principles. Network connectivity and dynamics are derived to minimize a loss function, making balanced E-I a requirement rather than an assumption, and showing oscillations are required for optimal coding rather than just mechanistically possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 articulate the conceptual advance over prior work. The derivation from a loss function is described in Materials and Methods (equations 1-12). The claim that balance emerges rather than being imposed is supported by the model construction. Claim C114's assertion that oscillations are 'required' for optimal coding is supported by Figure 4 showing performance degradation away from the oscillatory regime.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C137",
+      "C138"
+    ],
+    "result": "The model has biological limitations: neurons use voltage-driven rather than conductance-based synapses, and the required membrane time constant (100 ms) is slower than experimentally observed values (~10-20 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C138 acknowledge model limitations stated in the Discussion. These are straightforward comparisons between model assumptions and biological reality. The authors appropriately identify these as areas requiring future work. The acknowledgment of limitations is important for evaluating the model's biological realism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11"
+    ],
+    "result": "Cortical networks exhibit global oscillations in the gamma-band range (30-80 Hz) where spike times are entrained to an oscillatory rhythm, but individual neurons fire irregularly and sparsely on only a fraction of cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C10-C11 describe established empirical observations about cortical dynamics, supported by citations (Buzs\u00e1ki and Wang, 2012; Yu and Ferster, 2010). These are background claims establishing the phenomenon the paper aims to explain. The characterization is consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Previous balanced network models (Brunel and colleagues) assumed sparse/weak connections scaling with network size and considered large populations. The current model uses non-sparse finite connections and is most relevant for smaller networks (hundreds rather than thousands of neurons) where Poisson noise cannot be averaged out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 compare the current model to prior work. The characterization of previous models (C104-C105, C108) is supported by citations. The distinction regarding connection structure (C106) and network size (C109) are stated as features of the current model. The reasoning about why the model is relevant for smaller networks (C110) is a logical inference from the model's noise-handling properties.",
+    "result_type": "MINOR"
+  }
+]

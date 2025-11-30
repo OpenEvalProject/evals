@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Mice adapted to the scheduled feeding protocol within 6 days, with no significant differences in food consumption or body weight between aligned and misaligned groups at the time of testing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C20, C75-C77 provide consistent evidence from food consumption and body weight measurements showing that mice adapted to the feeding schedule and maintained similar caloric intake and body mass across groups. The statistical tests (p=0.9 for food consumption by day 6, p=0.5 for body weight) support these conclusions, and the data controls for potential confounds related to caloric restriction or malnutrition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C78",
+      "C79"
+    ],
+    "result": "Misaligned feeding increased daytime activity and reduced the strength of daily activity rhythms in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 and C78-C79 are supported by activity monitoring data showing increased daytime activity (p<0.001) and reduced rhythm strength measured by chi-square periodogram (p=0.003). The measurements are appropriate for assessing circadian activity patterns, and the statistical significance is clearly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Misaligned feeding altered the temporal pattern of sleep, with decreased daytime sleep and increased nighttime sleep, resulting in loss of day-night differences, but no change in total 24-hour sleep duration. Sleep fragmentation increased during the day but was compensated by more consolidated sleep at night.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C32 and C80-C86 are well-supported by video monitoring data showing significant redistribution of sleep across the day-night cycle (p<0.001 for day and night differences) while maintaining total sleep duration (p=0.2). The sleep fragmentation analysis provides additional mechanistic detail. The use of validated immobility-defined sleep detection correlated with EEG/EMG strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C60"
+    ],
+    "result": "Daytime feeding shifts the phase of peripheral oscillators (liver) but does not alter the phase of the SCN master clock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C33, and C60 are supported by PER2::LUC bioluminescence measurements showing significant phase shift in liver (p<0.001) but no significant change in SCN phase (p=0.07). This demonstrates differential sensitivity of central versus peripheral clocks to feeding time, consistent with established literature (C15, C62).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C35",
+      "C36",
+      "C61"
+    ],
+    "result": "Daytime feeding significantly shifts the hippocampal circadian oscillator by approximately 14 hours and alters its intrinsic properties including period and damping rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C34-C36, and C61 are supported by PER2::LUC bioluminescence data showing a 14.1-hour phase shift in hippocampus (p<0.001) with small but significant changes in period (p=0.05) and damping rate (p=0.02). The measurements are appropriate for assessing circadian clock properties, though the marginal p-value for period (p=0.05) suggests this effect is at the threshold of significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "The feeding manipulation created internal desynchronization of the circadian system, with molecular clocks in different brain regions running at different phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is a logical inference supported by the demonstrated phase differences between SCN (unchanged, C3, C33) and hippocampus (14-hour shift, C34). This represents a clear case of internal circadian misalignment within the nervous system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C66",
+      "C68",
+      "C73",
+      "C74"
+    ],
+    "result": "Misaligned feeding significantly reduced total CREB (tCREB) expression throughout the hippocampus at multiple time points across the daily cycle, while \u03b2-actin loading controls remained stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38, C66, C68, C73-C74 are supported by Western blot and immunohistochemistry data showing reduced tCREB (p<0.01 overall, with post-hoc p<0.05 at ZT 2, 8, 20). The validation of \u03b2-actin as a stable loading control (p=0.9 for time and treatment effects) strengthens confidence in the tCREB findings. The uniform reduction throughout hippocampal subregions adds anatomical specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Phosphorylated CREB (pCREB) levels showed a trend toward reduction in misaligned animals but did not reach statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 accurately reports the data showing reduced pCREB levels without statistical significance. This negative result is appropriately reported and distinguishes between the significant tCREB effect and the non-significant pCREB trend.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C39",
+      "C40",
+      "C64"
+    ],
+    "result": "Misaligned feeding impaired hippocampal long-term potentiation (LTP) in the Schaffer collateral-CA1 pathway, indicating deficits in synaptic plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C39-C40, and C64 are supported by electrophysiological recordings showing reduced LTP in misaligned mice (p<0.05). The comparison to ad libitum controls (C40) demonstrates that the effect is specific to misalignment rather than time-restricted feeding per se. However, the sample size (n=6 per group) is relatively small for electrophysiology, and only daytime recordings are reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "Paired-pulse facilitation ratios were not significantly different between aligned and misaligned mice, suggesting no change in presynaptic release probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by PPF data (p=0.5) indicating that presynaptic function is not altered by misaligned feeding. This helps localize the LTP deficit to postsynaptic mechanisms rather than presynaptic neurotransmitter release.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C42",
+      "C43",
+      "C45",
+      "C48",
+      "C87",
+      "C88",
+      "C89",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Misaligned feeding caused dramatic deficits in hippocampal-dependent contextual fear conditioning memory when tested during the day, with both groups showing equally poor performance at night. Acquisition of fear conditioning was not impaired.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C42-C43, C45, C48, C87-C89, C94-C97 are supported by fear conditioning data showing significant memory deficits in misaligned mice during daytime testing (p<0.0001) but not nighttime testing. The two-way ANOVA revealed significant time-of-day effects and interactions (p<0.001). Normal acquisition (C42, C87-C89) indicates the deficit is in memory consolidation/retrieval rather than learning. However, the interpretation that misaligned mice lack an altered peak phase (C45) requires testing at additional time points.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Misaligned feeding impaired novel object recognition (NOR) during nighttime tests, with aligned mice showing time-of-day dependent performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47, C98-C100 are supported by NOR data showing significant effects of feeding condition (p=0.003) and time-of-day interactions (p=0.02). Misaligned mice showed reduced NOR at night (p<0.001), while aligned mice performed better at night than day. However, one animal was excluded from analysis, and the discrimination index threshold of 0.5 for successful NOR is stated but not justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "Amygdala-dependent cued fear conditioning was not altered by misaligned feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C49 states that cued fear conditioning was unaffected, but no data or statistical analysis is provided in the manuscript to support this claim. This appears to be mentioned only in the Discussion without corresponding results, making it impossible to evaluate the evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Some learned behaviors are more vulnerable to the impact of misaligned feeding than others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is a reasonable inference from the differential effects on hippocampal-dependent tasks (contextual fear conditioning and NOR, both impaired) versus amygdala-dependent cued fear conditioning (reportedly unaffected, C49). However, the lack of data for cued fear conditioning weakens this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "By adjusting the time of food access without altering total sleep or causing weight loss, cognitive performance in mice can be altered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by the combined evidence showing cognitive deficits (C43, C46) despite maintained total sleep (C27) and body weight (C20). This demonstrates that meal timing per se, rather than sleep deprivation or caloric restriction, drives the cognitive effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Misaligned feeding disrupts the circadian timing of sleep rather than total sleep amount, with altered temporal patterns of sleep fragmentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by the sleep data showing redistribution of sleep across the day-night cycle (C23-C26) and altered fragmentation patterns (C28-C32) without changes in total sleep duration (C27). However, C58 is an inference about mechanism that, while reasonable, is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Memory impairment is predicted to occur throughout the daily cycle in misaligned mice based on reduced tCREB at all sampled time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C70 are inferences that extend beyond the data. While tCREB was reduced at all sampled time points (C68), cognitive testing was only performed at two time points (day and night). The prediction that memory is impaired throughout the cycle is reasonable but not directly tested and represents speculation rather than demonstrated fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C71"
+    ],
+    "result": "The timing of meals has far-reaching effects on hippocampal physiology and learned behavior, altering physiological and biochemical events underlying learning and memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C71 are broad summary conclusions supported by the convergent evidence of altered hippocampal clock phase (C34), reduced tCREB (C37), impaired LTP (C39), and deficits in multiple memory tasks (C43, C46). These claims appropriately synthesize the major findings of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C44",
+      "C54",
+      "C55",
+      "C56",
+      "C62",
+      "C67"
+    ],
+    "result": "Background claims establishing the importance of circadian rhythms for health and cognition, the effects of environmental perturbations, and the role of meal timing in metabolic health.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C18, C44, C54-C56, C62, and C67 are background statements supported by citations to prior literature or represent established knowledge in the field. These provide appropriate context for the current study and are generally well-supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "This is the first demonstration that the time of eating can impact the physiological underpinning of learned behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C65 asserts novelty but this is difficult to evaluate without comprehensive knowledge of all prior literature. While the specific combination of meal timing, hippocampal clock phase, LTP, and memory may be novel, related work on food-entrainable oscillators and cognition exists (C62). The claim of being 'first' is inherently difficult to verify and may be overstated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Misaligned feeding did not affect acquisition of fear conditioning during nighttime training, though there was a time-of-day effect on freezing response to the second shock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 are supported by training data showing no differences in baseline or shock responses between groups (p=0.5-1.0), with a time-of-day effect on US-2 response (p<0.05). This confirms that the memory deficit is not due to impaired learning during training.",
+    "result_type": "MINOR"
+  }
+]

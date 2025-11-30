@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The A. thaliana reference genome (TAIR 10) is 125 Mb long and contains approximately 32,000 mostly degenerate TE copies belonging to 326 distinct families, with transposition activity previously documented experimentally for only nine TE families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide well-established background information about the A. thaliana genome and TE composition, citing appropriate published references (Arabidopsis Genome Initiative, 2000; Ahmed et al., 2011; Ito and Kakutani, 2014; Tsay et al., 1993). These are standard reference values for the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Using split-read analysis of 211 accessions, the authors detected CNVs for 263 TE families and identified non-reference TE insertions with TSDs for 131 families, totaling 2,835 insertions. Most insertions (86%) are private or rare, with COPIA families (1,408 insertions) and MuDR families (729 insertions) being the most mobile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C11 describe the core findings from the split-read analysis, supported by data in Figures 1A-H and source data files. The numbers are specific and consistent across claims, and the methodology is described in detail in the Materials and Methods section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The split-reads approach has a false negative rate of 45%, false positive rate of 10%, and FDR of 15.3%, with 87% of detected insertions validated by TE-capture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 report validation metrics based on comparison with the assembled Ler-1 genome and TE-capture experiments (Figure 1\u2014figure supplement 1C and 2F). The validation approach is appropriate and the metrics are clearly stated, though the high false negative rate indicates limited sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "At least 165 TE families show recent transposition activity at the species level, and any two accessions have accumulated approximately 200-300 newly transposed TE copies since divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 synthesize results from both split-read and TE-capture analyses. C15 combines 131 families from split-reads with 30 additional families from TE-capture (including HELITRONs). C16 is based on TE-capture data (Figure 1\u2014figure supplement 2H), though the estimation method could be more clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Copy number correlates positively with TE insertions detected by TE-capture, and robust correlations with geo-climatic variables were found for 15 TE families. The strongest correlation is between temperature annual range and ATCOPIA78 copy number, which is transcriptionally induced by heat shock, providing a compelling case for a causal link between climate and TE mobilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C17-C20 are supported by correlation analyses (Figure 2\u2014figure supplements 1-2, Figure 2A-B). However, C22's claim of a 'compelling case of a causal link' is overstated. While the correlation is strong and ATCOPIA78 is heat-inducible (C21, citing Ito et al., 2011; Cavrak et al., 2014), correlation does not establish causation. Additional experimental validation would be needed to demonstrate that temperature variation directly drives differential transposition in nature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "GWAS identified 230 loci associated with CNVs for 80 TE families (33 families excluded due to excessive SNP associations). The 334 loci identified in joined analysis (391 accessions) explain 2-67% of variance, with cis variants explaining more variance (5.2%) than trans variants (2.2%). Among these, 130 loci encompass TE insertion sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C30 describe GWAS results supported by Figure 2C-D and Supplementary file 1. The 34% overlap between worldwide and Swedish accession results (C25) provides validation. The variance explained and the distinction between cis and trans effects are clearly quantified and appropriate for GWAS analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Trans loci explain more variance for non-autonomous than autonomous class II TE families. Among 22 trans loci associated with multiple TE families, MET2a (a poorly characterized DNA methyltransferase homolog) is associated with seven TE families. A non-synonymous SNP (G519E) in a conserved domain is presumably causal, and met2a mutants show loss of DNA methylation over mobile TE families, particularly at CHG sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C42 describe genetic architecture and identify MET2a as a key regulator. The association is supported by GWAS (Figure 2E), sequence analysis (Figure 2F), and methylome data from published met2a mutants (Figure 2G, citing Stroud et al., 2013). The G519E substitution in a conserved domain (C37-C38) provides mechanistic insight. The observation about CHG sites (C41-C42) is intriguing and well-supported by data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Non-reference TE insertions with TSDs are distributed almost evenly along chromosomes, but shared (ancestral) insertions show pericentromeric enrichment. Insertion density correlates positively with recombination rate and negatively with gene density. Except for COPIA families, insertions are under-represented in genes. These observations indicate TEs insert equally throughout the genome and are preferentially purged from chromosome arms due to deleterious effects on genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 describe genomic distribution patterns supported by Figure 3A-C and supplementary figures. The inference in C48 that purging rather than insertion bias or ectopic recombination explains TE distribution is well-supported by multiple converging lines of evidence: even initial distribution (C43), pericentromeric enrichment of older insertions (C44), correlations with recombination and gene density (C45-C46), and depletion in genes (C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Private COPIA insertions are enriched at coding sequences, MuDR insertions at transcriptional start sites, and LINEs within poly(A) tracks, consistent with known insertion mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 describe local insertion preferences supported by metagene analysis (Figure 3\u2014figure supplement 2A) and sequence motif analysis. These findings agree with previous observations (Fu et al., 2013; Miyao et al., 2003) and known mechanisms (Beck et al., 2011 for LINEs).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "For a large fraction of genes, expression is significantly altered when TEs insert within or near them (p<1.9\u00d710\u207b\u2075). Effects are most pronounced for COPIA insertions and less so for MuDR insertions. TE insertions induce both increases and decreases in expression with equal frequency. COPIA insertions have more dramatic effects under stress conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 describe transcriptional effects supported by RNA-seq analysis (Figure 3D-E) and RT-qPCR (Figure 3\u2014figure supplement 4). The statistical significance is reported (C52), and the bidirectional effects (C55) contradict the prevailing view of dampening effects. The stress-dependent effects (C56) are supported by RT-qPCR data and mechanistic understanding of ATCOPIA78 heat inducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Mobile TE families have higher DNA methylation (CG, CHG, CHH) than non-mobile families, particularly in accessions with evidence of recent transposition. Mobile TE families also suffer less sporadic methylation loss in mutation accumulation lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 describe methylation patterns supported by analysis of published methylome data (Figure 4A-B, Figure 4\u2014figure supplement 1A). The findings are consistent with DNA methylation playing a role in TE control and suggest that mobile TEs are maintained in a methylated state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Among 1,543 TE insertion sites analyzed, approximately 10% are methylated in most accessions, 40% lack methylation, and 50% are methylated exclusively in accessions with the insertion. DNA methylation typically extends up to 300 bp from insertions (short-distance), but for 243 sites extends up to 3.5 kb (long-distance). Long-distance methylation aligns with 24-nt siRNAs and affects genes highly expressed in pollen and seeds. TE-associated methylation accounts for at least 7% of gene C-DMRs identified in nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 describe DNA methylation spreading from TE insertions, supported by methylome analysis (Figure 4C-G, Figure 4\u2014figure supplement 1B-D). The distinction between short- and long-distance methylation is well-characterized. The association with 24-nt siRNAs (C65) and expression patterns (C66) provide mechanistic insights. The contribution to natural C-DMRs (C67) is quantified and cites appropriate references (Schmitz et al., 2013).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Nineteen 10 kb windows show high TE insertion load, including three spanning NLR genes and one spanning FLC. The FLC locus has the highest number of insertions (seven total) affecting four haplotypes, with five in the first intron. TE-containing accessions have systematically reduced FLC expression and earlier flowering than TE-free counterparts, demonstrating that TEs are recurrent generators of major effect FLC alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C77 describe TE enrichment at adaptive loci, particularly FLC. The enrichment analysis is supported by Figure 5A. The FLC analysis (C71-C77) is particularly strong, with haplotype reconstruction (Figure 5B, Figure 5\u2014figure supplement 1A), expression data (Figure 5C), and phenotype data (Figure 5D, Figure 5\u2014figure supplement 1B-C) all supporting the causal role of TE insertions. The comparison of accessions with the same haplotype differing only in TE presence provides compelling evidence for causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The A. thaliana mobilome comprises at least half of the 326 annotated TE families, contradicting the prevailing view that most are molecular fossils. This is reconciled by noting that A. thaliana is predominantly self-fertilizing, which should accelerate purging of deleterious TE insertions compared to the outcrossing A. lyrata.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 synthesize the study's main findings and place them in context. C78 summarizes the key result. C79-C80 accurately describe the prevailing view and cite appropriate references (Hu et al., 2011; Maumus and Quesneville, 2014). C81-C83 provide a reasonable explanation based on mating system differences, though C83 is somewhat speculative as it has not been directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The composition and activity of the mobilome vary greatly between accessions. This variation is caused in part by cis polymorphisms within TEs themselves (consistent with master copy models) and by natural variation at MET2a. Temperature annual range contributes to variation in ATCOPIA78 mobilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 summarize key findings about mobilome variation. C84 is supported by the data throughout the manuscript. C85 cites appropriate theoretical support (Becker et al., 2011). C86 and C87 summarize the genetic and environmental factors identified, which are well-supported by the GWAS and climate correlation analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "ATCOPIA78 may enable adaptation to global warming by facilitating creation of early flowering FLC alleles. Recent and rare TE insertion alleles with large effects may account for part of the missing heritability in GWASs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C88 is explicitly speculative ('tempting to speculate') and lacks direct experimental support. While the connection between ATCOPIA78, temperature, and FLC is established, the adaptive significance for global warming is hypothetical. C89 is a reasonable inference based on the study's findings and cites relevant literature on missing heritability (Vinkhuyzen et al., 2013; Brachi et al., 2011), but would require additional evidence from actual GWAS studies to confirm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Background information on TE classification, mechanisms, impacts, and control across species, and rationale for studying A. thaliana.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C106 provide standard background information and rationale, all appropriately cited from published literature. These establish the context for the study and justify the choice of A. thaliana as a model system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The study analyzed 211 A. thaliana accessions and identified thousands of recent transposition events involving half of the 326 annotated TE families. TEs frequently affect genes in multiple ways and are rapidly purged from gene-rich regions. Loci controlling adaptive responses are the most frequent transposition targets, and transposition is a recurrent generator of large-effect alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 are from the abstract and accurately summarize the study's main findings, which are supported by the detailed results presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  }
+]

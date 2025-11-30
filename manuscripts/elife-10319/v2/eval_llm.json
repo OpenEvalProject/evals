@@ -1,0 +1,260 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Cohesin-dockerin (Coh:Doc) pairs are believed to interact through dual binding modes consisting of two distinct conformations that differ by ~180\u00b0 rotation, originating from duplicated F-hand sequence motifs in type-I dockerins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C13 establish the prior knowledge foundation about dual binding modes in Coh:Doc complexes. These claims are well-supported by multiple literature citations and structural data (Figure 1), providing the established paradigm that the current work seeks to experimentally validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Direct experimental observation of dual binding modes for wild-type Doc has been challenging because ensemble methods cannot resolve modes with equal thermodynamic affinity, crystallography is hindered by conformational heterogeneity, and mutagenesis approaches cannot determine mode dominance in wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 and C116-C118 clearly articulate the experimental gap in the field that motivates this study. These claims are well-supported by citations to prior work and logical reasoning about methodological limitations, establishing the need for the single-molecule approach presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Quadruple mutants Q1 and Q3 were designed to preferentially select for binding modes A or B, respectively, by incorporating Asp-Glu substitutions and Lys-Arg to Ala mutations in specific F-hand helices, based on non-canonical Doc domains that exhibit single binding modes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C42 describe the rational design of binding mode mutants. The design is well-justified based on prior structural work (C36-C37) and electrostatic considerations (C38). The QQ double mutant serves as an appropriate negative control (C42).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Q1 and Q3 mutants maintained high-affinity binding (Kd in nM range) to Coh by relying on their preserved binding mode, while the QQ double knockout showed no binding, demonstrating that quadruple mutations effectively eliminate targeted binding modes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 are supported by fluorescence binding data (Figure 4A). The nM-range Kd values for Q1 and Q3 are consistent with literature (C59), and the QQ negative control validates the mutation strategy. This demonstrates that each mutant retains one functional binding mode.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Coh:Doc complex rupture occurred in two distinct event types (single and double ruptures), with an 8-nm contour length increment separating double peaks that was assigned to Doc unfolding and confirmed across different fusion protein constructs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 describe the key experimental observation of two rupture patterns. The 8-nm increment is consistently observed across different fusion proteins (C55), ruling out artifacts from specific domains. The assignment to Doc unfolding (C54) is supported by subsequent experiments with GS inserts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Wild-type Doc showed ~57% double and ~43% single rupture events, while Q1 mutant showed strong bias toward single events (~77%), and Q3 showed similar ratios to wild-type (~41% single, ~59% double), leading to preliminary assignment of single peaks to binding mode B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 present event probability data (Figure 4B) showing that Q1 mutant (designed to knock out mode A) exhibits strong bias toward single events, supporting the assignment of single events to binding mode B. The data are statistically robust with large sample sizes (947-4959 traces).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Q1 and wild-type showed second peaks ~15-20% higher in force than first peaks for double events, while Q3 showed weaker second peaks (~10% lower), suggesting systematic underestimation of double peaks for Q3 due to the weaker second barrier allowing simultaneous passage of both barriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 analyze force differences between double event peaks (Figure 4C). The observation that Q3 shows weaker second peaks is well-reasoned, and the inference about systematic underestimation (C70) is logical given the energy landscape considerations (C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "A (Gly-Ser)8 linker inserted between helices 1 and 2 did not change the contour length increment, indicating that the 8-nm unfolding event is located N-terminal to the insert site, implicating calcium binding loop 1 and helix 1 as the source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 describe a clever experiment using GS inserts to localize the unfolding event. The data (Figure 5) clearly show no change in contour length increment, and the inference about N-terminal location (C76-C77) is logically sound given the pulling geometry.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Single events showed most probable rupture force of ~104 pN while double events showed ~140 pN at 800 nm/s pulling speed. The downward shift in iLOV unfolding forces for curves terminating in single events confirms that binding modes represent distinct conformations set at binding time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 and C82-C86 present the key evidence for distinct binding mode conformations. The iLOV fingerprint biasing experiment (Figure 6C) is elegant and the logic is sound: if single and double events arose from the same bound state, no shift in iLOV forces would occur. Experimental controls (C85-C86) are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The first barrier of double peaks represents unfolding of N-terminal calcium binding loop and helix 1 up to Lys-18/Arg-19 (expected 7.6 nm, observed 8 nm), involving breakage of S11-T12 interactions with Coh and disruption of the intramolecular clasp, while remaining residues withstand force until the second peak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C96 propose a detailed unbinding mechanism for binding mode A. The mechanism is well-supported by: (1) contour length calculations matching observations (C88), (2) structural information about binding residues (C89), (3) prior NMR data on the clasp motif (C92-C93), and (4) prior truncation studies (C95).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Single rupture peaks occur when wild-type complex is bound in binding mode B, with force propagated directly to bound residues Lys-18, Leu-22, and Arg-23, resulting in complete dissociation without Ca-binding loop 1 or helix 1 unfolding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 propose the unbinding mechanism for binding mode B. This is a logical inference based on the structural differences between modes and the absence of the 8-nm unfolding increment in single events. The mechanism is consistent with all experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "After correcting for fingerprint domain biasing (overlap probabilities 0.85 for iLOV, 0.40 for xylanase), the final binding mode ratios (mode A/mode B) were 0.95 and 0.87 for xylanase-Doc and iLOV respectively, indicating comparable probability of each binding mode.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 present a sophisticated correction for systematic bias in counting single vs. double events. The correction methodology is sound, accounting for the fact that weaker single ruptures are more likely to be missed if they don't reach fingerprint unfolding forces. The corrected ratios near 1.0 support equal mode populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C119",
+      "C120"
+    ],
+    "result": "Single-molecule force spectroscopy discriminated two binding modes based on distinct mechanical properties, demonstrating that wild-type Doc populates both binding modes with similar probabilities under native conditions, with binding mode A being more mechanically stable when pulled from the N-terminus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C25-C28 state the main conclusions of the study. These are well-supported by the comprehensive experimental evidence including: mutant validation (C25-C26), GS-insert experiments (C27), fingerprint biasing analysis (C28), and corrected binding mode ratios (C100-C101). The conclusion about equal populations (C3) is justified after bias correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C111",
+      "C112",
+      "C113",
+      "C115",
+      "C121"
+    ],
+    "result": "The dual binding mode is hypothesized to increase conformational space for enzymes, facilitate substrate recognition, confer evolutionary robustness, enable interspecies binding promiscuity in microbial communities, and could offer new approaches for designing molecular assembly systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C14-C17 and C111-C113, C115, C121 present speculative hypotheses about the functional and evolutionary significance of dual binding modes. While these are reasonable hypotheses cited from or consistent with prior literature, they are not directly tested in this study. The current work establishes that dual modes exist but does not validate their proposed functions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Dual binding mode Doc domains are broadly predicted among cellulosome-producing bacteria, but relatively few have been experimentally confirmed, and the direct effect of dual binding modes on cellulosome catalytic activity is currently unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 accurately describe the state of knowledge in the field based on literature citations. These claims establish the broader context and identify important open questions that remain to be addressed beyond the scope of the current study.",
+    "result_type": "MINOR"
+  }
+]

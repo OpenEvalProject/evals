@@ -1,0 +1,257 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C36",
+      "C37",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors developed a single-molecule photobleaching method to measure ClC-ec1 dimerization equilibrium in lipid bilayers by capturing the monomer-dimer state during liposome extrusion from large MLVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24-C26, C36-C37, and C40-C45 collectively describe the methodological development and validation. The approach measures equilibrium at the point of extrusion (C24, C36), demonstrates high fidelity of reconstitution (C37), and shows appropriate statistical behavior across 5 orders of magnitude (C45). The experimental mole fraction measurements (C41) and simulation results (C42-C44) provide quantitative validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C49",
+      "C50",
+      "C27",
+      "C28"
+    ],
+    "result": "W-Cy5 mutant shows reversible monomer-to-dimer transition as a function of protein density, with equilibrium reached on laboratory timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 show density-dependent transition from monomer to dimer distributions. C49-C50 demonstrate reversibility by showing agreement between reconstitution and dilution methods, with stable equilibrium maintained for 27 days. Claims C27-C28 confirm equilibrium exchange occurs on laboratory timescales and follows an equilibrium isotherm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "WT and W both demonstrate monomer-to-dimer transitions, but W shows weaker dimer stability than WT, while WW remains predominantly monomeric.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 show distinct photobleaching distributions for the three constructs across protein densities. C56 demonstrates WT is in dynamic equilibrium with higher kinetic stability than W. The data clearly show WW resembles ideal monomer (C57), while W and WT show density-dependent transitions (C58-C59) with W shifted to higher densities (C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Quantitative free energy measurements show WT ClC-ec1 has \u0394G\u00b0WT = \u221211.4 \u00b1 0.1 kcal/mol, with tryptophan substitutions destabilizing the dimer by 2.4 \u00b1 0.3 kcal/mol (W) and 4.1 \u00b1 0.2 kcal/mol (WW).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C67 report equilibrium constants and free energies from fitting to dimerization isotherms. However, the WT fit requires constraining the baseline (Y0 = 0.07) because the all-monomer state cannot be observed experimentally (C64), introducing uncertainty. The W and WW measurements appear more reliable as they show complete transitions within the observable range. The error propagation for \u0394\u0394G values is not fully justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "ClC-ec1 is a high-affinity dimer (K\u03c7 ~10^8 lipids/subunit) second only to GpA, but achieves stability through a large interface with low efficiency (-5 cal/mol/\u00c5\u00b2) rather than specialized packing motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 establish ClC-ec1's high affinity relative to GpA. Claims C72-C75 provide quantitative efficiency comparisons showing GpA is 4-6 fold more efficient per unit area. C76 concludes different physical mechanisms based on these efficiency differences. The comparison is well-supported by cited literature values and calculated efficiencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "ClC-ec1 follows an inert surface model with weak interaction efficiency but achieves high stability through its large 2400 \u00c5\u00b2 interface, suggesting membrane-dependent forces may play a larger role than in smaller dimerization models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 establish the inert surface model and large interface size. C83-C84 provide thermodynamic reasoning for why membrane-dependent forces (hydrophobic mismatch, lipid entropy) should be important given the large number of lipids solvating the interface. The logic is sound and supported by appropriate citations, though experimental validation of these specific forces is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Tryptophan substitutions cause ~2 kcal/mol destabilization, but this likely overestimates VDW contributions since tryptophans also stabilize the monomeric state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 acknowledge the measured destabilization (C85) but correctly note the interpretation is complicated by tryptophan-lipid interactions (C86). C87 provides two alternative interpretations: either VDW contacts are maintained or VDW interactions are not the major driving force. This cautious interpretation is appropriate given the experimental limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The C85A/H234C construct enables quantitative Cy5 labeling (72% yield) without affecting protein stability or oligomeric state, as validated by cysteine accessibility assays and size exclusion chromatography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 describe the construct design. C101-C104 provide quantitative labeling data showing specific labeling at H234C with minimal non-specific labeling. C105-C108 demonstrate that labeling does not affect oligomeric state in detergent. The characterization is thorough with appropriate controls (C85A constructs lacking H234C).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C118",
+      "C119"
+    ],
+    "result": "Freeze/thaw produces ~10 \u03bcm MLVs that model an infinite bilayer for subunit exchange, with ~40% of extruded liposomes (r < 27.5 nm) inaccessible to dimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 describe MLV formation and its purpose. C118-C119 quantify liposome size exclusion based on F0 co-localization data. The interpretation that smaller liposomes exclude the ~10 nm dimer is reasonable given the size constraints, though direct visualization of exclusion is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C93",
+      "C94"
+    ],
+    "result": "The single-molecule approach enables measurements at sub-biological densities (1 subunit per 50 E. coli membranes), revealing that ClC-ec1 exists predominantly as dimers at any reasonable expression level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 establish the capability to measure at extremely low densities. C93-C94 use the measured isotherm to predict biological behavior, showing 90% dimer at \u03c7 = 2\u00d710\u207b\u2077 and that 10-100 copies per cell would maintain dimer state. The biological extrapolation is well-justified by the measured equilibrium constant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "ClC-ec1 is a 50-kDa homodimeric Cl\u207b/H\u207a antiporter where individual subunits adopt stable, functional folds, constraining the system to a two-state monomer-dimer equilibrium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C15-C18 describe the protein characteristics that make it suitable for this study. These are well-established properties supported by prior structural and functional work (citations to Maduke et al., 1999; Dutzler et al., 2002; Robertson et al., 2010). The two-state assumption is validated by the experimental results showing monomer-to-dimer transitions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Prior work showed tryptophan substitutions at the dimerization interface destabilize the dimer while preserving function and fold, and that ClC-F shows equilibrium exchange in detergent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 summarize prior work from Robertson et al., 2010 and Last and Miller, 2015. These are appropriately cited and provide context for why ClC-ec1 is a suitable system for equilibrium measurements. The claims accurately represent the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The photobleaching method provides quality control for reconstitution and should be applicable to other membrane protein systems, potentially enabling discoveries about fundamental forces in lipid bilayers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 describe methodological advantages and potential applications. C97 is speculative about future impact. The quality control aspect (C95) is demonstrated by the data. The generalizability claim (C96) is reasonable given the method's reliance on basic principles, though actual application to other systems is not demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C114"
+    ],
+    "result": "AF488-labeled POPE/POPG liposomes were used for co-localization studies, with Cy5 imaging performed without oxygen scavengers to avoid blinking and background contamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 describe lipid labeling choices and validation. C112 and C114 explain the rationale for avoiding oxygen scavengers. The methodological choices are well-justified with appropriate citations (Hughes et al., 2014; Ha and Tinnefeld, 2012) and the removal of free fluorophore is confirmed (C111).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Prior dimerization studies using single-pass TM helices have limitations due to small interface sizes, motivating the use of multi-TM helix proteins like ClC-ec1 with larger interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C14 provide background on membrane protein assembly and prior approaches. These are well-supported by appropriate citations (Popot and Engelman, 1990; Fleming et al., 1997; MacKenzie and Fleming, 2008; North et al., 2006; etc.). The motivation for studying multi-TM helix proteins is clearly established.",
+    "result_type": "MINOR"
+  }
+]

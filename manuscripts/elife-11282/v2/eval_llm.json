@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C60",
+      "C62",
+      "C63"
+    ],
+    "result": "The study performed whole-genome deep sequencing of HIV-1 populations in 9 untreated patients diagnosed in Sweden between 1990 and 2003, with 6-12 longitudinal samples per patient spanning 5-8 years of infection. The cohort consisted primarily of MSM infected with subtype B virus, and all patients progressed to moderate-to-severe immunosuppression. Viral RNA was extracted from 400 \u03bcl patient plasma and amplified using six overlapping primer sets, followed by Illumina MiSeq sequencing that generated approximately 100 million quality-filtered reads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C11-C19, C60, C62-C63 collectively describe the study design, patient cohort characteristics, and sequencing methodology. The claims are internally consistent and provide detailed information about sample collection, patient demographics, and technical procedures. The data has been deposited in public repositories (C62), supporting reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The sequencing methodology achieved a median template cDNA recovery efficiency of 30%, with PCR and sequencing errors never exceeding 0.3% of reads after quality filtering. Template quantification by PCR-limiting dilution showed a median of 120 HIV-1 genomes per library (quartiles: 50-500), and template availability rather than coverage determined sequencing depth. SNP frequencies could be estimated down to 1% accuracy in samples with several hundred effective templates, and SNPs remained linked through cDNA synthesis, PCR, and sequencing. Control experiments using mixtures of two cultured virus populations showed less than 10% RT-PCR recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23, C64-C68 describe quality control experiments and technical validation of the sequencing approach. The claims are supported by control experiments using plasmid clones and virus mixtures (Figure 1C, Figure 7, Figure 9). The error rates, template quantification, and frequency estimation accuracy are well-documented with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C69"
+    ],
+    "result": "A web application was developed to explore the dataset interactively and visualize patterns of HIV-1 evolution in the study patients. The application allows browsing data by patient or genomic region and provides composite interactive plots to explore viral population changes over time. The web application is available at hiv.tuebingen.mpg.de.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25, C69 describe a data resource created as part of the study. The existence of the web application is stated explicitly and its URL is provided. While the functionality cannot be verified from the manuscript alone, the description is consistent with modern data sharing practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "In most patients, virus populations were initially homogeneous and diversified over the years, consistent with infection by a single or small number of similar founder viruses. Two patients (p3 and p10) showed diversity in the first sample consistent with transmission of several variants from the same donor. The first sample was estimated to be between 1 and 7 months into infection, so the initial consensus sequence likely differs slightly from the true founder virus, but these differences are small compared to divergence over 5+ years of follow-up.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C73-C75 describe the initial state of viral populations and acknowledge limitations in founder sequence reconstruction. The claims are supported by data in Figure 3\u2014figure supplement 1 and are consistent with prior knowledge about HIV-1 transmission (C26 cites Keele et al., 2008; Salazar-Gonzalez et al., 2009). The acknowledgment of uncertainty in founder sequence reconstruction (C74-C75) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C70"
+    ],
+    "result": "The rate of divergence varies by about a factor of 10 along the genome, with variable loops in gp120 and nef evolving faster while enzymes (protease, RT) and the RRE evolve more slowly. The overall pattern of mutation accumulation agrees with a recent map of HIV genome-wide variation and correlates well with entropy in a large HIV-1 group M alignment (Spearman's \u03c1 = 0.7 after smoothing). The rate of divergence is consistent across patients with typically about 1.5-fold differences (standard deviation of log2(fold change) 0.6 \u00b1 0.2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29, C70 describe genome-wide patterns of divergence supported by data in Figure 3. The correlation with cross-sectional diversity (C29) provides external validation. The quantitative measures (factor of 10 variation, Spearman's \u03c1 = 0.7, 1.5-fold differences across patients) are specific and appear to be derived from the data shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C30",
+      "C31",
+      "C32",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Patterns of minor diversity are reproducible between patients and mirror global HIV-1 diversity. Correlation between intrapatient diversity and cross-sectional diversity increases reproducibly throughout infection, reaching about 0.4-0.5 after about 8 years. For the least conserved positions, the fraction of sites showing intrapatient variation at \u22651% increased steadily to about 20% after 8 years, while less than 1% of the most conserved sites show variation above 1%. This demonstrates that HIV-1 populations accumulate diversity wherever mutations do not severely compromise virus replication, and the level of within-host diversity is predicted by time since infection and cross-sectional diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C30-C32, C76-C78 describe reproducible patterns of diversity accumulation supported by data in Figure 4. The quantitative measures (correlation 0.4-0.5, 20% of least conserved sites variable, <1% of most conserved sites variable) are specific and consistent with the figures. The inference that variation is not limited by mutational input but by fitness costs (C76-C77) is well-supported by the observation that conserved sites remain monomorphic even with deep sequencing (C78).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Synonymous divergence varied little between genomic regions, indicating random accumulation of synonymous mutations rather than positive selection. Diversity at nonsynonymous sites saturates after about 2-4 years, while there is a strong anti-correlation between synonymous diversity and nonsynonymous divergence. Synonymous mutations are strongly underrepresented at higher frequencies compared to nonsynonymous mutations (Fisher's exact test at frequency 0.5, p-value <10^-10), with an about five-fold excess of nonsynonymous over synonymous SNPs at high frequencies. This indicates that the majority of common nonsynonymous mutations spread due to positive selection, while frequent nonsynonymous substitutions limit synonymous diversity by driving linked synonymous mutations to fixation or extinction through hitchhiking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37, C79-C81 describe the contrasting behavior of synonymous and nonsynonymous mutations, supported by data in Figure 5. The statistical test (Fisher's exact test, p<10^-10) provides strong evidence for the difference in frequency spectra (C36). The interpretation of hitchhiking (C79-C80) is supported by both the anti-correlation data (Figure 5C) and citation to Maynard Smith and Haigh, 1974. The five-fold excess (C37) is clearly visible in Figure 5D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C82",
+      "C83"
+    ],
+    "result": "A significant enrichment by a factor 1.9 was found in nonsynonymous substitutions in putatively targeted epitope regions (p-value <3 \u00d7 10^-6), corresponding to 5.5 excess nonsynonymous substitutions. The total number of nonsynonymous substitutions per patient is on average 43 (median, quartiles 36-64). The actual number of CTL-driven substitutions could be higher than 5.5 due to false positives and false negatives in epitope prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C82-C83 quantify CTL escape mutations using HLA-based epitope prediction. The statistical significance (p<3\u00d710^-6) supports the enrichment finding (C38). The acknowledgment of limitations in epitope prediction (C83) is appropriate and supported by citation to Allen et al., 2005. However, the relatively small enrichment (5.5 out of 43 total substitutions) suggests CTL escape accounts for only a modest fraction of nonsynonymous evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C54",
+      "C57",
+      "C86",
+      "C87"
+    ],
+    "result": "Reversions towards the ancestral HIV-1 sequence are observed throughout infection and account for almost one third (30 \u00b1 2.5%) of all sequence changes. The fraction of sites where the founder nucleotide is replaced is about ten-fold higher if the founder nucleotide differs from the group M consensus than if it is identical to consensus. Reversion towards group M consensus occurs at a roughly constant rate throughout the observation time (5-8 years). Reversions are between 4 and 5 times more frequent than expected in the absence of a reversion bias. The rate of reversion is highest at the most conserved sites, with almost 50% of all non-consensus positions at highly conserved sites reverting to consensus after about 5 years (an almost 1000-fold excess). Even at the least conserved sites, divergence towards consensus exceeded divergence away from consensus by a factor of 3. These results suggest that the global HIV-1 group M consensus sequence represents an 'optimal' HIV-1 sequence acting as an attractor for evolutionary dynamics within hosts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C39-C45, C54, C57, C86-C87 describe extensive reversion patterns supported by data in Figure 6. The quantitative measures (30% of changes are reversions, 10-fold higher replacement rate, 4-5 times more frequent than expected, 1000-fold excess at conserved sites) are specific and consistent with the figures. The finding that reversion occurs throughout chronic infection (C40, C57) is novel and well-supported. The interpretation that consensus represents an optimal sequence (C54) is a reasonable inference from the data. Agreement with Allen et al., 2005 (C86) provides external validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C71",
+      "C72"
+    ],
+    "result": "Frequent recombination limits linkage disequilibrium to about 100 bp in most of the genome, allowing the viral population to evolve independently in different regions. For most fragments, linkage disequilibrium shows a consistent decrease over the first 100-200 bps, with fragment 5 being an exception. The linkage control (50/50 mix of two distinct virus isolates) shows no decay of LD with distance, suggesting negligible RT-PCR recombination. The observed decay of LD in patient samples is consistent with a recombination rate of 10^-5/bp/day. However, recombination is not frequent enough to decouple mutations closer than 100 base pairs, and signatures of hitchhiking are observed at short distances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C46-C48, C50, C71-C72 describe recombination and linkage patterns supported by data in Figure 7. The control experiment (C47) demonstrates that the observed LD decay is not due to RT-PCR recombination. The consistency with published recombination rate estimates (C48, C50) provides external validation. The exception of fragment 5 (C46) is noted but not fully explained. The inference about hitchhiking (C72) is supported by citation to Maynard Smith and Haigh, 1974 and is consistent with the synonymous diversity data (Figure 5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C88"
+    ],
+    "result": "The bias towards reversion results in a two- to three-fold reduction of the long-term evolutionary rate of HIV. Inter-individual evolutionary rates of HIV-1 are two to six times lower than intra-individual rates, and most of this mismatch can be explained by steady reversion during infection. Given the five-fold excess of reverting minor variation, reversion would balance divergence once the typical distance from consensus equals 17%, corresponding to a nucleotide diversity of about 30%, which is remarkably close to the actual divergence between HIV-1 groups M, N and O.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53, C88 connect the reversion findings to the known discrepancy between intra- and inter-individual evolutionary rates. The calculation in C88 is mathematically sound and provides a testable prediction that matches observed divergence between HIV-1 groups. The claim that reversion explains most of the rate mismatch (C53) is a strong inference supported by the extensive reversion data (30% of changes) but could benefit from more direct quantitative modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C55",
+      "C56",
+      "C95",
+      "C99",
+      "C100"
+    ],
+    "result": "Intrapatient diversity recapitulates diversity seen across HIV-1 group M, and the strong tendency to revert towards consensus suggests that in chronic infection, selection determines diversity. The reproducible exploration of sequence space can coexist with frequent adaptation only in frequently recombining large populations. Linkage and stochastic effects become stronger with increasing frequency of selection, consistent with lower synonymous diversity and more LD in env. The concordance between intrahost variation and patterns of conservation across HIV-1 group M hints at universal fitness costs of mutations. The limiting factor for adaptation is not generating useful mutations, but combining multiple mutations necessary to survive and pruning deleterious mutations, a process facilitated by frequent recombination in HIV-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C55-C56, C95, C99-C100 synthesize the major findings into a coherent model of HIV-1 evolution. The claims are supported by the diversity (Figure 4), selection (Figure 5), and recombination (Figure 7) data. The citation to Neher et al., 2013 (C55) provides theoretical support. The inference about universal fitness costs (C95) is well-supported by the reproducible diversity patterns. The conclusion about the limiting factor for adaptation (C99-C100) is a reasonable synthesis of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C96"
+    ],
+    "result": "Cross-sectional conservation has been used as a proxy for fitness costs in models of HIV-1 fitness landscapes. Since reproducible intrapatient diversity likely reflects fitness costs of mutations in vivo, the results provide a direct justification for this approach. However, nine patients are insufficient to extend the analysis to fitness interactions between mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59, C96 discuss the implications for fitness landscape modeling. The justification for using cross-sectional conservation as a proxy for fitness costs (C59) is well-supported by the reproducible diversity patterns (Figure 4). The acknowledgment of limitations (C96) is appropriate and honest about what the study cannot address.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The balance between escape and reversion results in association between specific escape mutations and HLA types of hosts. In a diverse population of hosts, the most common state at a specific site is likely the preferred state, while rare alleles tend to be escape mutations that reduce viral replicative capacity. The strong and lasting preference for specific nucleotides needs to be accounted for in phylogenetic analysis. The observations are consistent with results showing that amino acid preferences are mostly conserved between related influenza strains. Divergence between HIV-1 subtypes is small enough that epistatic interactions have not yet changed the majority of preferred states, though with increasing evolutionary distance, the molecular context and preferred amino acid at a particular position is more likely to differ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85, C90-C94 discuss the broader implications of the reversion findings. The claims are supported by citations to relevant literature (Kawashima et al., 2009; Palmer et al., 2013; Carlson et al., 2014; Bloom, 2014; Ashenberg et al., 2013; Doud et al., 2015; Pollock et al., 2012; Risso et al., 2015). The inference about phylogenetic analysis (C90) is reasonable but would benefit from demonstration. The comparison with influenza (C91) provides useful context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89"
+    ],
+    "result": "The apparent deceleration of evolution due to reversion could explain the contradictory findings of attempts to date the age of HIV-1 and SIV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C89 is speculation about implications for phylogenetic dating. While the reversion data supports the possibility of rate deceleration over long timescales, the claim lacks direct evidence or quantitative modeling to demonstrate that this explains dating discrepancies. The citation to Worobey et al., 2010 provides context but not validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C61",
+      "C97",
+      "C98"
+    ],
+    "result": "The number of available template molecules was small in some samples, which was a main limitation of the study. While the Primer ID method allows quantification of templates and almost complete elimination of experimental substitution and recombination errors, there is no standardized Primer ID protocol for genome-wide sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C97-C98 acknowledge limitations of the study. The limitation regarding template numbers (C61) is supported by data in Figure 9 and is honestly reported. The discussion of Primer ID (C97-C98) appropriately acknowledges an alternative approach while explaining why it was not used. The claim about lack of a genome-wide Primer ID protocol (C98) is based on the authors' knowledge and may be outdated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The systematic exploration of sequence space, reproducible patterns of minor variation, and frequent reversion are expected to be characteristic of other RNA viruses, though properties of linkage between mutations will differ since mechanisms of recombination are diverse. Many features of the evolutionary dynamics are independent of the specific system even though selective forces, recombination, and time scales will vary among different microbial populations. Intrapatient evolution of HIV-1 is a unique opportunity to study evolutionary dynamics directly in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C104 speculate about the generalizability of the findings to other RNA viruses and microbial populations. While the speculation is reasonable and supported by citations to theoretical work (Fisher, 2013; Neher, 2013), it lacks direct empirical evidence from other systems. The claim about HIV-1 as a unique opportunity (C104) is more of an assertion than a testable result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "HIV-1 has originated from multiple zoonotic transmissions from apes in the early part of the 20th century, with one lineage (group M) giving rise to the worldwide pandemic. Group M has diversified into different subtypes at a rate of about 1 in 1000 substitutions per year. Tens of thousands of HIV-1 group M variants are available in the Los Alamos National Laboratories HIV database. During the first few months of infection, the viral population typically acquires several mutations that mediate escape from cytotoxic T-cells, and such escape variants often compromise virus replication and revert upon transmission to an HLA mismatched host.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide background information about HIV-1 evolution and CTL escape, all supported by citations to prior work. These claims establish the context for the study but do not represent new findings from this manuscript.",
+    "result_type": "MINOR"
+  }
+]

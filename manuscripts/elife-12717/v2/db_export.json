@@ -1,0 +1,1771 @@
+{
+  "submission": {
+    "id": "30f24ab0-d993-444b-9ea9-3f157c4e0f44",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:43:55.543730Z",
+    "updated_at": "2025-11-29T23:43:55.543730Z"
+  },
+  "content": [
+    {
+      "id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "submission_id": "30f24ab0-d993-444b-9ea9-3f157c4e0f44",
+      "content_type": "manuscript",
+      "content_text": "# Zeb1 controls neuron differentiation and germinal zone exit by a mesenchymal-epithelial-like transition\n\n## Authors\n\n- Shalini Singh<sup>1</sup>\n- Danielle Howell<sup>1</sup>\n- Niraj Trivedi<sup>1</sup>\n- Ketty Kessler<sup>2</sup>\n- Taren Ong<sup>1</sup>\n- Pedro Rosmaninho<sup>3</sup>\n- Alexandre ASF Raposo<sup>3</sup> ([ORCID: 0000-0002-2794-0508](https://orcid.org/0000-0002-2794-0508))\n- Giles Robinson<sup>4</sup>\n- Martine F Roussel<sup>5</sup>\n- Diogo S Castro<sup>3</sup> \u2020\n- David J Solecki<sup>1</sup> ([ORCID: 0000-0001-8481-0403](https://orcid.org/0000-0001-8481-0403)) \u2020\n\n### Affiliations\n\n1. Department of Developmental Neurobiology St. Jude Children's Research Hospital Memphis United States\n2. Universite Denis Diderot (Paris 7) Paris France\n3. Department of Molecular Neurobiology Instituto Gulbenkian de Ci\u00eancia Oeiras Oeiras Portugal\n4. Department of Oncology St. Jude Children's Research Hospital Memphis United States\n5. Department of Tumor Cell Biology St. Jude Children's Research Hospital Memphis United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn the developing mammalian brain, differentiating neurons mature morphologically via neuronal polarity programs. Despite discovery of polarity pathways acting concurrently with differentiation, it's unclear how neurons traverse complex polarity transitions or how neuronal progenitors delay polarization during development. We report that zinc finger and homeobox transcription factor-1 (Zeb1), a master regulator of epithelial polarity, controls neuronal differentiation by transcriptionally repressing polarity genes in neuronal progenitors. Necessity-sufficiency testing and functional target screening in cerebellar granule neuron progenitors (GNPs) reveal that Zeb1 inhibits polarization and retains progenitors in their germinal zone (GZ). Zeb1 expression is elevated in the Sonic Hedgehog (SHH) medulloblastoma subgroup originating from GNPs with persistent SHH activation. Restored polarity signaling promotes differentiation and rescues GZ exit, suggesting a model for future differentiative therapies. These results reveal unexpected parallels between neuronal differentiation and mesenchymal-to-epithelial transition and suggest that active polarity inhibition contributes to altered GZ exit in pediatric brain cancers.\n\n## Introduction\n\nConstruction of the central nervous system\u2019s circuitry requires that newborn neurons exit their germinal zone (GZ), elaborate axons and dendrites, migrate to a final position and synaptically engage other neurons. Emerging evidence suggests that classic cell polarity signaling molecules, including the Numb endocytic adaptor, the Partitioning defective (Pard) polarity complex and LKB1/SAD kinases, create the cellular asymmetry required for neuronal development and circuit assembly\u00a0(Shi et al., 2003; Solecki et al., 2004; Kishi et al., 2005; Cappello et al., 2006; Rasin et al., 2007; Shelly et al., 2007; Barnes et al., 2007; Bultje et al., 2009; Hengst et al., 2009; Zhou et al., 2011; Chen et al., 2013; Famulski et al., 2010). Indeed, defective neuronal polarization is proposed to underlie the pathology of some neurodevelopmental or neurodegenerative diseases, and restored polarity has been suggested as a potential therapeutic approach for syndromes involving perturbed polarity-linked mechanisms (May-Simera and Liu, 2013).\n\nGiven the importance of polarity for neuronal maturation events, great efforts have been made to define mechanisms that cell-extrinsically or -intrinsically control polarity during neuronal differentiation. Most current models suggest the activation of signaling cascades\u00a0(Barnes and Polleux, 2009; Lewis et al., 2013; Funahashi et al., 2014), transcriptional networks\u00a0(de la Torre-Ubieta and Bonni, 2011), or chromatin states\u00a0(Hirabayashi and Gotoh, 2010; Yamada et al., 2014) promotes or maintains cell polarity in differentiated neurons. However, it remains unclear how developing neurons undergo discrete transitions during which polarity is delayed or promoted (Cooper, 2014; Singh and Solecki, 2015). As an example, maturing cortical neurons undergo enhanced polarization via a multipolar to bipolar transition, while cerebellar\u00a0granule neuron progenitors (GNPs) remain unpolarized for an extended period while their progenitor pool expands during cerebellar development.\n\nWe discovered that the transcription factor Zeb1, a critical regulator of epithelial polarity\u00a0(Vandewalle et al., 2009), is highly expressed in unpolarized GNPs and that its expression diminishes as these cells become polarized cerebellar granule neurons (CGNs). Developing CGNs provide an excellent model of the mechanisms regulating neurogenesis, neuronal differentiation, polarization linked to morphological maturation, and GZ exit\u00a0(Hatten and Roussel, 2011; Hatten and Roussel, 2011). They also provide a model of migration mechanisms, since they undergo two migration phases: morphologically unpolarized GNPs and newly postmitotic CGNs migrate tangentially near the cerebellar surface in the external granule layer (EGL) while polarized CGNs migrate radially away from their GZ and cross the molecular layer (ML) to reside within the internal granule layer (IGL) (Hatten, 2002; Ch\u00e9dotal, 2010; Legu\u00e9 et al., 2015). In cerebellar medulloblastoma (MB), excessive or constitutive mitogenic signaling in GNPs disrupts the intricate balance of GZ exit and radial migration via unknown motility mechanisms\u00a0(Goodrich et al., 1997; Kim et al., 2003; Yang et al., 2008; Ayrault et al., 2010).\n\nZeb1 functions in many organ systems, including muscle, lymphocytes, and nervous system\u00a0(Takagi et al., 1998; Liu et al., 2008). Proliferating progenitors express Zeb1 in GZs in the developing mouse brain\u00a0(Darling et al., 2003). While loss of Zeb1 function in the developing neocortex reduces proliferation in the VZ and SVZ\u00a0(Liu et al., 2008), it remains unknown how Zeb1 regulates neural progenitor populations. Studies examining Zeb1 regulation of epithelial cell polarity provide insights. Zeb1 activates stemness pathways in immature, unpolarized epithelial cells and their transformed counterparts\u00a0(Spaderna et al., 2008). It also controls transitions in epithelial differentiation and polarity plasticity: high Zeb1 expression inhibits epithelial differentiation and drives cells toward epithelial-to-mesenchymal transition (EMT), while low expression allows mesenchymal-to-epithelial transition (MET). During EMT, Zeb1 acts as a transcriptional repressor that silences adherens junction (AJ) and apical-basal polarity genes\u00a0(Aigner et al., 2007). Thus, Zeb1 simultaneously blocks differentiation, apical-basal polarity, and junction formation of epithelial cells, locking them into the mesenchymal state.\n\nIn the developing nervous system, EMT-like events have been observed in the transition of polarized radial glia to their delaminating progeny\u00a0(Rousso et al., 2012; Itoh et al., 2013). Given that neuronal progeny undergo multiple polarity transitions after delamination from a radial glial cell, it is open to question how polarity is re-acquired after delamination as nascent neurons mature\u00a0(Cooper, 2014; Singh and Solecki, 2015; Barnes et al., 2008). Do nascent neurons that undergo an EMT-like process also then transition through an MET-like process, like epithelial cells?\n\nWe have known for more than a decade that persistent Sonic hedgehog (SHH) signaling blocks GNP GZ exit, but the mechanism has remained a mystery. Here we hypothesized that MET-like events control the onset of neuronal differentiation and GZ exit, which involve cell polarity and cell-cell adhesion transitions. By using gain- and loss-of-function approaches, we found that Zeb1 is necessary and sufficient to maintain GNPs in an undifferentiated, unpolarized, transiently amplifying state within the EGL and to control the onset of their GZ exit. Zeb1 represses transcription of polarity and cell adhesion genes, such as Pard6a, Pard3a and close homolog of L1 (Chl1). By using a functional screen, we found that restored expression of these genes rescues GNP differentiation, neurite extension, and GZ exit. Finally, we examined the link between morphogens and Zeb1 in controlling this process. We found that SHH, a potent GNP mitogen, maintains Zeb1 expression. Moreover, Zeb1 expression persists in MB tumor cells, the transformed GNP counterpart in which SHH signaling is persistently activated. Zeb1 loss-of-function or restored Zeb1 target expression rescued the GZ exit phenotype in Patched1 (Ptch1)-deficient GNPs, the progenitors of SHH-subgroup MB. Our findings show that CGN differentiation bears a remarkable similarity to mesenchymal-to-epithelial transition. The balance of EMT-like vs. MET-like processes and of proliferative vs. maturation processes may be a key developmental mechanism that, when disrupted, contributes to the pathological alteration of GZ exit in neurodevelopmental disorders and pediatric cancers.\n\n## Results\n\n### Zeb1 is expressed in GNPs and is extinguished during CGN differentiation\n\nTo test the hypothesis that MET-like events control the onset of GNP differentiation and GZ exit, we first surveyed expression of the canonical EMT regulators Snail1, Snail2, Twist, and Zeb1 in GNPs. Quantitative RT-PCR revealed that Zeb1 is the primary EMT factor expressed in GNPs during the early postnatal (P) peak of neurogenesis, and that expression diminishes as GNPs exit the cell cycle to differentiate into CGNs: at P7 Zeb1 mRNA was 28-fold higher than the next most abundant transcription factor, Snail1 (Figure 1a). Zeb1 protein expression confirmed our RNA analysis where it is expressed primarily in the EGL at P7 and greatly reduced at P15 (Figure 1b). At P7, Zeb1 is co-expressed with the proliferation marker Ki67 and two markers of GNP identity Siah2, and Meis1/2, and is greatly reduced in cyclin-dependent kinase inhibitory protein p27Kip1/Cdkn1b (referred as p27 thereafter)-positive postmitotic CGNs in the inner EGL. We noted a subpopulation of Zeb1 positive cells in deeper layers of the cerebellum at P7. These cells represent a mixture of white matter interneuron or oligodendrocyte precursors as these cells also express Pax2\u00a0(Maricich and Herrup, 1999) or Olig2\u00a0(Chung et al., 2013) (Figure 1\u2014figure supplement 1). In GNPs, Zeb1 mRNA expression was inversely correlated with the expression of the apical-basal polarity genes Pard6a and Prkcz (Figure 1c). Not only did Pard6a mRNA increase as CGN differentiation proceeded, but the promoter of this gene was active in individual GNPs at the border of the GZ, prior to their entry into the inner EGL (Figure 1d). Taken together, these results indicate that GNPs are mesenchymal-like, as they express a high level of Zeb1 and low levels of polarity genes.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/12717/elife-12717-fig1-v2.jpg)\n\n**Figure 1.:** (a) qRT-PCR shows that Zeb1 mRNA is more abundant than other EMT factors (Twist, Snail1, Snail2) in GNPs. Zeb1 mRNA diminishes in GNPs at P10 and P15 (Zeb mRNA was significantly different at all times, t-test p<0.01). (b) Immunohistochemistry in P7 and P15 cerebellum shows Zeb1 (red) GNP expression at P7 coincident with that of Ki67, Meis1/2 and Siah2 (green) but complementary to the p27Kip marker (green). Zeb1 protein diminishes at P15. (c) qRT-PCR shows increasing Pard6a and Prkcz mRNA as GNPs at P10 and P15. (d) Immunohistochemistry in the P7 cerebellum of Pard6a-EGFP BAC transgenic mice shows little Pard6a promoter activity (green) in the outer EGL but elevated activity in the inner EGL with TAG1-positive CGNs (red).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12717/elife-12717-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Immunohistochemistry in P7 cerebellum shows Zeb1 (green) expression at P7 partially overlaps with (a) Pax2 and (b) Olig2 in cerebellar white matter. This indicates that Zeb1 positive cells located in deeper cerebellar layers are interneuronal- or oligodendrocyte/glial-progenitors, not IGL resident CGNs.\n\n### Zeb1 gain- or loss-of-function regulates CGN differentiation, neurite extension, and GZ exit\n\nGiven the Zeb1 expression profile, we reasoned that this transcription factor might regulate GNP differentiation. We used a gain-of-function approach to examine Zeb1\u2019s role in this process, as this method maintained Zeb1 expression in GNPs and because diminished Zeb1 expression coincides with differentiation to CGNs. Purified P7 GNPs were nucleofected with an expression vector that encodes mouse Zeb1. After 1 day in vitro, control GNPs displayed features of differentiated CGNs: they extended neurites, expressed p27 and no longer expressed Ki67 and Atoh1, a marker of proliferating GNPs (Figure 2a,b) (Ayrault et al., 2010; Flora et al., 2009). In contrast, Zeb1-expressing cells had short, multipolar extensions (x\u00af length=140 \u00b1 13\u2009\u03bcm vs 60 \u00b1 3\u2009\u03bcm), expressed reduced p27 and sustained levels of Ki67 and Atoh1, indicating arrested maturation and proliferating, GNP-like state. While Zeb1-expressing GNPs were motile on time-lapse microscopy in dissociated cultures, they did not display the typical two-stroke nucleokinesis cycle used by differentiated CGNs and had an apolar, isotropic f-actin distribution reminiscent of GNP morphology in vivo (Videos 1 and 2). At the moment, it\u2019s unclear whether this mesenchymal-like morphology and random migration direction is due to a disturbed intrinsic polarity program or perturbed glial binding.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/12717/elife-12717-fig2-v2.jpg)\n\n**Figure 2.:** (a) Micrographs of purified CGNs nucleofected with Centrin2-Venus alone (green) or Myc-Zeb1 (magenta). After 24\u00a0hr in culture, control cells extend long neurites ($x\u00af$ = 139.8 \u00b1 13.3 \u03bcm. n\u00a0= 1045 cells), while Zeb1-expressing cells have short neurites ($x\u00af$\u00a0=\u00a059.6 \u00b1 3.0 \u03bcm, n\u00a0= 1164 cells, \u03c72\u00a0 test, p<0.01). (b) Micrographs of purified CGNs nucleofected with Centrin2-Venus (green) cytoplasmic marker and Myc-Zeb1. After 24\u00a0hr, levels of p27 labeling decreased, while that of Ki67 and Atoh1 increased (t-test all conditions p<0.05). C,D. P7 EGL was co-electroporated with indicated vector and H2B-mCherry. After 24 (C) or 48 (D) hr of ex vivo culture, the migration distance of labeled CGN from the pial layer (dashed line) was analyzed in 3 experiments. Histograms show migration distributions. Zeb1-silenced cells incorporated EdU at lower rates than control cells. (c) Most control shRNA-expressing cells (black) remain within the EGL (dashed lines, $x\u00af$\u00a0=\u00a034.2 \u00b1 10.5 \u00b5m) at 24\u00a0hr, while Zeb1-silenced cells pre-maturely enter the ML and IGL ($x\u00af$\u00a0=\u00a067.5 \u00b1 18.1 \u00b5m). (d) Control cells (black) entered the ML and IGL by 48h ($x\u00af$\u00a0=\u00a075.2 \u00b1 3.5 \u00b5m), while Zeb1-expressing cells remain within the EGL ($x\u00af$\u00a0=\u00a040.2 \u00b1 6.0 \u00b5m). T-tests and \u03c72\u00a0test showed significant differences in both conditions (p<0.01, n\u00a0= 4500 to 9700 cells). (e) Immunohistochemistry in E18.5 cerebellum of wild type and Zeb1 mutant embryos shows the expected absence of Zeb1 expression in mutant embryos. Moreover, increased expression of Tag1 and NeuN differentiation markers is observed in the absence of Zeb1.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12717/elife-12717-fig2-figsupp1-v2.jpg)\n\n**Figure 2\u2014figure supplement 1.:** P7 EGL was co-electroporated with the indicated expression constructs and H2B-mCherry. After 24 (a\u2013d) or 48 (e\u2013f) hours of ex vivo culture, CGN migration distance was analyzed in 3 imaging experiments. Red overlay indicates the average migration distribution of control cells (error bar, SD). (a, b) Most control (n = 7,358 cells) migrated 34.2 \u00b1 10.1 \u00b5m [$x\u00af$ \u00b1 sd] at 24 hr, while Zeb1-silenced (n = 4,693 cells) migrated an Av. distance of 67.5 \u00b1 18.1 \u00b5m. \u03c72 analysis showed distribution of data to be significantly different (p<0.01). (c) Binning distribution of the second mir30 based shRNA 846 used to confirm the precocious migration associated with Zeb1 silencing displayed in Figure 2C (n = 4879 cells). (d) Representative image of the mir30 based shRNA 846 illustrating Zeb1 silencing with a mirRNA based shRNA also spurs GZ exit. (e,f) While control (n = 9,744 cells) cells entered the ML and IGL after 48 hr (av distance = 75.2 \u00b1 3.5 \u00b5m), However, Zeb1 (n =\u00a05,359 cells) over-expressing cells remained in the EGL (Av. distance migrated = 40.2 \u00b1 6.0 \u00b5m), which was shown to be significantly different by both \u03c72\u00a0analysis and t-test (p<0.03). (g) Summary of average distance migrated for the Zeb1-silencing and over-expression.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12717/elife-12717-fig2-figsupp2-v2.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Immunoblots of lysates of NS5 cells transduced with shLuc or shZeb1. Zeb1 levels are lower than control NS5 cell or cells expression a luciferase control shRNA. shZeb1 was used in Figure 2. (b) Immunoblots of lysates of HEK293 cells expressing Myc-Zeb1 with or without the corresponding shmiRNA constructs. After 48 hr Myc-Zeb1 protein levels are substantially less than those in controls, actin was loading control. The Zeb1 shmiRNA was used in Figure 7.\n\n![Video 1.](https://cdn.elifesciences.org/articles/12717/elife-12717-media1.mp4.jpg)\n\n**Video 1.:** The focused cell undergoes typical two-stroke nucleokinesis with f-actin accumulation in the leading process. Time stamp= hours: minutes: seconds. Scale bar\u00a0= 10 \u03bcm.\n\n![Video 2.](https://cdn.elifesciences.org/articles/12717/elife-12717-media2.mp4.jpg)\n\n**Video 2.:** The featured cells undergo random amoeboid movements with isotropic f-actin decorating the cell periphery. Note the centrosome does not adopt a polarized configuration as in Video 1. Time stamp= hours: minutes: seconds. Scale bar\u00a0=10 \u03bcm.\n\nWe next assessed the effect of Zeb1 function on GNP differentiation, GZ exit and migration to the IGL with the ex vivo cerebellar slice assay developed in our laboratory that specifically label GNPs (Figure 2c and d, see Figure 2\u2014figure supplement 1 for detailed analysis). We used two independent shRNA vectors to silence Zeb1 in P7 EGL (see Figure 2\u2014figure supplements 1 and 2 for second shRNA migration data and validation). After 24\u2009hr ex vivo, control EGL cells resided in the GZ and incorporated EdU, not having differentiated into CGNs or begun migrating to the IGL. In contrast, Zeb1 silencing increased migration toward the IGL ($x\u00af$ distance=34 \u00b1 10\u00a0\u03bcm vs 68 \u00b1 18\u2009\u03bcm) and reduced EdU incorporation (22.6 \u00b1 1.0% vs 7.6 \u00b1 1.8% EdU positive), showing that Zeb1 loss-of-function promotes differentiation and migration toward the IGL. We next confirmed that Zeb1 activity inhibited GZ exit, using a gain-of-function approach. P7 EGL was electroporated with an expression vector for Zeb1. After 2 days ex vivo, control CGNs entered the molecular layer and IGL, while Zeb1-expressing CGNs remained within the EGL ($x\u00af$ distance=75 \u00b1 3\u2009\u03bcm vs 40 \u00b1 6\u2009\u03bcm, Figure 2d) and continued to incorporate EdU (3.3 \u00b1 0.4% vs 10.9 \u00b1 0.1% EdU positive). To further examine the role of Zeb1 in GNP differentiation in vivo we scored Tag1 and NeuN expression in the EGL of E18.5 Zeb1 null embryos (a time-point prior perinatal lethality observed in Zeb1 null embryos). Consistent with our ex vivo\u00a0gene silencing results, loss of Zeb1 function in vivo leads to an increase in Tag1 and NeuN differentiation marker gene expression, indicating an increase of neuronal differentiation in the absence of Zeb1 (Figure 2e). These observations indicate that Zeb1 inhibits differentiation of GNPs to CGNs and is necessary and sufficient to restrict GNPs to their GZ niche. They also suggest that Zeb1 inhibits GNP polarization, as neurite extension, two-stroke nucleokinesis and GZ exit depend on polarity signaling complexes in CGNs.\n\n### Zeb1 transcriptionally represses genes associated with neuronal maturation, cell polarity and cell adhesion\n\nHaving learned that Zeb1 inhibits GNP differentiation and potentially the downstream events associated with CGN polarization, we next sought to identify Zeb1 targets to determine how sustained Zeb1 expression maintains GNPs. We reasoned that as Zeb1 gain-of-function strongly inhibits GNP differentiation, it would provide a basis to identify potential Zeb1 targets. We prepared RNA from P0, P7 and P15 GNPs and used Affymetrix DNA arrays to compare their transcriptomes of these cells with those of pure, FACS-sorted GNP populations nucleofected with control, Zeb1- or HES1 expression vectors (Figure 3a, ArrayExpress accession number: E-MTAB-3557). We included the transcription factor HES1 because it is a known repressor of GNP differentiation downstream of the Notch2 receptor\u00a0(Solecki et al., 2001). GNPs were selected for our developmental expression analyses as it is well established this transiently amplifying progenitor population expresses early CGN differentiation markers; such as TAG1, L1, NRCAM, NeuroD1 or TIS21 prior to their final cell cycle (Miyata et al., 1999; Iacopetti et al., 1999; Xenaki et al., 2011). Zeb1 gain-of-function suppressed a group of genes increasingly expressed between P0 and P15 (Figure 3b, Figure 3\u2014figure supplement 1), consistent with previous observations that Zeb1 acts as a transcriptional repressor. Gene ontology analysis revealed this group of genes to be associated with tissue morphogenesis, epithelial polarization, cell adhesion and control of cell motility. Key members of the apical or basolateral polarity pathways (Pard6a Pard3a, Dlg2 and Lin7a) and Cdh1 AJ adhesion molecule were among the Zeb1-repressed genes. In parallel, we analyzed the EMT/MET signature upon Zeb1 gain-of-function in GNPs, using a pathway-focused PCR array. Various genes previously shown to be induced during EMT were enriched in these GNPs, while a class of MET-related genes were repressed (see Tables in Supplementary file 1B). For further validation we selected a group of genes that included polarity complex genes (Pard6a, Pard3a, Dlg2 and Lin7a), cell adhesion genes (Cdh1 and Chl1), transcription factors associated with cell differentiation (Bhlhe40 and Nfib), and three randomly selected genes (Sorl1, Flt1, and Cdk5r1), most of which were not significantly repressed by HES1. Not only were many of these genes increasingly\u00a0expressed in the normal developmental time course (Figure 3\u2014figure supplement 2) and validated as suppressed in Zeb1-expressing GNPs (Figure 3c), the protein expression of many of them was mutually exclusive with Zeb1 or Ki67 in vivo (Figure 3d). A previous study in our laboratory demonstrated a similar expression profile for Pard3a (Famulski et al., 2010). These results suggest that many of the putative targets identified are bona fide CGN differentiation markers expressed at low levels in early postnatal GNPs. Increased polarity gene expression in differentiated CGNs, their mutually exclusive expression with GNP markers, and their suppression by Zeb1, further suggest a parallel between GNP differentiation and MET.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/12717/elife-12717-fig3-v2.jpg)\n\n**Figure 3.:** (a) Schematic of procedure used to produce pure populations of CGNs for array studies. (b) Heat map of the transcriptomes of GNPs and CGNs purified from P0, P7, and P15 compared to pure populations of control (e.g. H2B-mCherry vector alone), Zeb1-expressing (e.g. H2B-mCherry and Zeb1 vector) and HES1-expressing (e.g. H2B-mCherry and HES1 vector) GNPs cultured for 24\u00a0hr in vitro. Yellow rectangle highlights genes whose expression increases with development and are repressed by Zeb1. (c) qRT-PCR shows that ectopic Zeb1 expression inhibits transcription of most of the panel of CGN differentiation markers examined. (d) Immunohistochemistry in P7 cerebellum shows Zeb1 (red) and Ki67 (green) expression complementary with expression of the Lin7a, Sorl1, Cdk5r1, Chl1, Dlg2 and Pard6a (red) CGN markers.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12717/elife-12717-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Principal component analysis (PCA) of Zeb1, Hes1-overexpression GNPs, controls and cerebellum granule neuron (CGN) cells purified at P0, P7 and P15. Total of 40.9% of variation among these samples can be explained by the first three component (PCA1 = 20.2%, PCA2 = 10.6%, PCA3 = 10.1%). Hes1 samples are well separated from the rest along the first component and Zeb1 are separated from the controls along PCA3. Comparing with the Hes/Zeb controls, if the distance between the centroids of P7 CGNs and the control samples is 1, the distance for P0 CGNs, P15 CGNs, Zeb1 samples and Hes1 samples are 1.3, 1.2, 1.2 and 2.4 indicating that the P7 CGNs are most similar to the control samples.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12717/elife-12717-fig3-figsupp2-v2.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Principal component analysis (PCA) of GNP/CGN cells purified at P0, P7 and P15, compared to purified cerebellar glial cells. Variation among these samples can be explained by the first three components (PCA1 = 35.3%, PCA2 = 15.4%, PCA3 = 9.84%). The purified glial cells are well separated indicating low levels of this most common contaminating cell population. The purified cells from each developmental stage are well clustered statically verifying the consistency of the purification procedure at the level of the whole transcriptome. P0 and P7 are most similar. The separation of P15 cells from the earlier developmental stages is on a principle component axis that unique from the purified glial cell population, indicating the differences are related to developmental changes in the cell population than contamination with a non-GNP/CGN cell population.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/12717/elife-12717-fig3-figsupp3-v2.jpg)\n\n**Figure 3\u2014figure supplement 3.:** RNA from purified GNPs (blue bars) or whole cerebellum (red bars) was extracted at p0, p7, and p15. qRT-PCR shows validate Zeb1 target mRNA expression increases as GNPs mature. Cdk5r1 expression declines as GNPs mature.\n\nWe next sought to investigate whether Zeb1 directly regulates genes differentially expressed in our array. As a prelude, we first assessed global Zeb1 binding sites in a ChIP-seq data set from NS5 mouse neural stem cells, which, like GNPs, express high levels of Zeb1 (Figure 4\u2014figure supplement 1, ArrayExpress accession number: E-MTAB-3560). Many of the proximal promoters of key apical-basal polarity genes (Pard6a, Pard6b, Pard3a, Pard6g) and other Zeb1-regulated genes identified in our screen (Chl1, Limk2) showed clear Zeb1 binding peaks, suggesting that they are direct targets (Figure 4\u2014figure supplement 2). Computational analyses comparing the genome-wide Zeb1 binding profile to the Zeb1-regulated genes identified by expression profiling showed Zeb1 binding events are highly associated with downregulated genes (Figure 4a\u2013c), further pointing to Zeb1 as a transcriptional repressor in neural stem/progenitor cells. We next validated Zeb1 binding to key genes in purified P7 GNPs by ChIP PCR (Figure 4d). No binding was detected at non-functional regions of the genome in the androgen receptor and GAPDH genes. Weak but consistent binding was detected in the proximal upstream regions of Limk2 and Lin7a. Strong Zeb1 binding was observed at positive control regions in the Zeb1 gene and Cdh1 gene, at the proximal upstream sequences of Pard6 and Pard3a genes and at an intronic site in the Chl1 gene. Overall, these results indicate that Zeb1 directly regulates genes expected to play a role in cell adhesion and apical-basal polarity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/12717/elife-12717-fig4-v2.jpg)\n\n**Figure 4.:** (a) Zeb1 binding events are significantly associated with down-regulated genes (right) but not with up-regulated genes (left) between the NS5 CHIP-Seq and CGN expression array data. Red bars: total number of binding events associated with each group of genes; boxplots: distribution of binding events associations with 1000 random sets of genes. Test data are represented as a boxplot showing the test median and 1st and 3rd quartiles; whiskers are \u00b1 1.5 the interquartile range. (b) Biological processes representing clusters of gene ontology terms enriched among genes directly targeted by Zeb1. Parentheses show number of genes associated with each term. (c) Heat-map displaying the cumulative fraction of deregulated genes that are directly regulated by Zeb1 (up-top left panel; down-bottom left panel). Transcripts are divided in equal bins of decreasing expression fold change and plotted against Zeb1 binding events with increasing p-value. Control: 100 sets of random binding events (right panels, the mean value shown). (d) CHIP PCR Validation of Zeb1 binding in P7 GNPs. The schematic on the left displays gene structure. Exons are pink rectangles, Zeb1 binding unoccupied motifs are colored light green and validated Zeb1 binding sites are colored dark green. The graph on the right shows fold enrichment at the listed genes.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12717/elife-12717-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Location of Zeb1 binding events respective to the closest annotated TSS. (b) Locations of Zeb1 binding events respective to various genomic features. (c) Density plot of Zeb1 ChIP-seq reads mapping to the 4 Kb genomic regions surrounding peak summits. Signal intensity represents the ChIP-seq normalized tag count (left). Total bound sites were divided in 10 bins and the top motif found enriched at vicinity of summits is shown for each bin, with respective fold enrichment over genomic background (middle). The frequency of E-box motif is shown, centered on peak summits (right).\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12717/elife-12717-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Visual representation of Zeb1 ChIP-seq enrichment in the vicinity of various putative Zeb1 targets. UTRs are represented as red rectangles, translated exons as black rectangles and the direction of transcription of a locus is represented by an arrow. The graph below each gene indicate the relative Zeb1 ChIP-Seq reads per million at each genomic position near the displayed genes. (a) Shows Zeb1 binding enrichment at core PAR complex genes. Each core member of the PAR complex contains a region of enriched Zeb1 binding near Exon 1. (b) Shows Zeb1, Chl1 and Limk2 genes. A scale bar indicates that size of each locus.\n\n### Par6a, Pard3a and Chl1 are Zeb1 targets required for CGN differentiation\n\nGiven the expression profile of Zeb1 targets and the mutually exclusive expression of these genes and Zeb1, we postulated that some of these targets may facilitate CGN differentiation, neurite extension and GZ exit downstream of Zeb1. We individually expressed validated targets in the context of our in vitro (neurite extension, Ki67 or p27 expression status) and ex vivo (GZ exit and EdU incorporation status) Zeb1 gain-of-function assays (Figure 2a, b and d) to determine whether restoring individual target expression would rescue the Zeb1 phenotypes and thus functionally prioritize these targets. For this small functional screen we selected key polarity molecules (Pard6a, Pard3a, Lin7a, Dlg2), adhesion receptors (Cdh1, Chl1, constitutively active JAM-C), genes associated with cell differentiation (Sorl1, Bhlhe40, Nfib) and randomly selected genes (Flt1 VEGF receptor, Cdk5r1). Our laboratory has previously shown that Pard6a and Pard3a are required for CGN migration and GZ exit\u00a0(Solecki et al., 2004; Famulski et al., 2010). Chl1 regulates neurite initiation, neuronal migration and neuronal dendrite orientation in the developing neocortex\u00a0(Demyanenko et al., 2004; Demyanenko et al., 2010). Lin7 and Dlg homologs are components of the apical or basolateral polarity complexes in epithelial cells where Dlg recruits Lin7 to distinct membrane domains\u00a0(Bachmann et al., 2004). Nfib regulates CGN differentiation\u00a0(Wang et al., 2007), and Cdk5r1 regulates Cdk5 activity during neuronal migration\u00a0(Gupta et al., 2003). JAM-C is not a Zeb1 target but was included because reduction of Pard3a activity reduces JAM-C adhesion and this constitutively active receptor complements CGN adhesion in the absence of Pard3a function\u00a0(Famulski et al., 2010). Prior to the screen, we carefully titrated the quantity of expression vector needed to roughly double each target\u2019s expression in control CGNs to complement Zeb1-mediated target repression (data not shown). We observed diversity in the way individual targets modified the Zeb1 gain-of-function phenotypes in our in vitro and ex vivo assays (Supplemental Figure 5 and 6; Figure 6\u2014figure supplement 1, Supplementary file 2). Restored expression of Pard6a, Pard3a, and Chl1 rescued all measured phenotypes to normal levels in CGNs. Individual introduction of each of these downstream Zeb1 targets allowed GNPs to acquire mature CGN status, characterize long neurites, expression of the p27 cell cycle inhibitor, absence of Ki67 labeling or EdU incorporation and GZ exit with subsequent migration to the IGL, even with Zeb1 gain-of-function. Constitutively active Jam-C and the basolateral polarity protein Lin7a did not influence maturation parameters in vitro (Figure 5); however, both stimulated cell cycle exit, GZ exit and migration ex vivo (Figure 6), suggesting that they act non-cell\u2013autonomously in the complex ex vivo environment. Dlg2 stimulated cell cycle exit and p27 expression in all conditions tested but was unable to rescue neurite extension or migration ex vivo. Four genes, Sorl1, Bhlhe40, Nfib, and Cdk5r1, reestablished p27 expression. p27 is known for its cell cycle inhibitory and cytoskeletal regulatory properties; however, p27 expression alone in Sorl1-, Bhlhe40-, Nfib- or Cdk5r1-expressing cells was insufficient to rescue the other features of mature CGNs, such as neurite extension, loss of Ki67 labeling/EdU incorporation, or GZ exit and migration to the IGL. Restored expression of Nfib and Flt1 enhanced neurite extension but failed to rescue the full spectrum of mature CGN features, much like the genes that stimulated p27 expression. Additionally, longer term ex vivo incubations revealed that Cdh1, Cdk5r1 and Sorl1 were not sufficient to rescue IGL-directed migration of Zeb1 over-expressing cells (Figure 6\u2014figure supplement 2). Interestingly, Bhlhe40 expression, a negative regulator of EMT could rescue with a 72\u2009hr ex vivo incubation. Time-lapse imaging revealed of cultured neurons revealed that Pard6a-, Pard3a-, and Chl1-rescue also restored two-stroke nucleokinesis and JAM-C adhesion levels, two cell biological outputs of the PAR complex function in maturing CGNs (Solecki et al., 2004; Famulski et al., 2010) (see Videos 3\u201312).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/12717/elife-12717-fig5-v2.jpg)\n\n**Figure 5.:** The rectangular images show representative morphological information and myc-Zeb1 expression; box plot below each quantifies neurite lengths in each experimental condition. On average control cells extended neurites 115.4 \u00b1 17.7 \u00b5m [$x\u00af$ \u00b1 sd] compared to 55.2 \u00b1 2.6 \u00b5m. Asterisks indicate conditions significantly different to the Zeb1 data as determined by t-test (p<0.01). Images on right show representative Ki67 or p27 labeling, quantified below. Asterisks indicate statistically significant rescue of the Zeb1 phenotype by target expression determined by t-test (p<0.01).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/12717/elife-12717-fig6-v2.jpg)\n\n**Figure 6.:** (a) Rectangles show representative P7 EGL slice images assessing GZ exit and IGL-directed migration. Labeled cell (black) migrate from the lateral surface (dashed line) to the IGL (to the right). Below each image is a cumulative distribution plot of all cells relative to a 450 \u03bcm scale. Arrowhead indicates the 99th percentile of the total population. Control cells migrated 74.0 \u00b1 8.3 \u03bcm ($x\u00af\u00a0$ \u00b1 sd) while Zeb1 migrated 42.4 \u00b1 7.6 \u03bcm. Images at right show representative EdU labeling with% labeling index. A statistically significant rescue of a Zeb1 phenotype in the slice migration assay is indicated by the presence of p>0.01 (t-test mean migration distance vs. control). Zeb1 and additional target expression conditions had a p-value < 0.01 vs. control indicating GZ was not rescued. Asterix indicates a statistical difference of EdU incorporation between Zeb1 and target expression condition by t-test [both p<0.01]). Reduced EdU labeling indicates a rescue of elevated proliferation in the Zeb1 gain-of-function condition. b Average migration distance shown in accompanying graph, a Student\u2019s t-test shows rescue conditions (Pard6a, Pard3a, Chl1, Jam/Nec, and Lin7a) with a p value>0.01 indicating no statistical difference from the control. Zeb1 alone and Zeb1 plus Dlg2, Sorl1, Bhlhe40, Cdh1, Nfib, Flt1 or Cdk5r1 migration differences were statistically lower than the control (t-test p<0.01), indicating GZ was not rescued with these targets.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12717/elife-12717-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** P7 EGL was co-electroporated with the indicated expression constructs and H2B-mCherry. After 48\u2009hr of ex vivo culture, CGN migration distance was analyzed in 3 imaging experiments. Red overlay indicates the average migration distribution of control cells (error bar, SD). While control (13,064 cells, 74.0 \u00b1 8.3 \u00b5m [n, $x\u00af$ \u00b1 sd]) cells entered the ML and IGL after 48 hr and Zeb1 over-expressing cells (13,424 cells, 42.4 \u00b1 7.6 \u00b5m) remained in the EGL, Addition of Pard6a (3,886 cells, 79.8 \u00b1 5.2 \u00b5m), Pard3a (8,622 cells, 73.9 \u00b1 4.5 \u00b5m), Jam/Nectin (11,333 cells, 71.7 \u00b1 5.5 \u00b5m)), Chl1 (3.006 calls, 79.4 \u00b1 6.9 \u00b5m) to Zeb1-expressing CGNs restored migration, suggesting that the Zeb1 migration phenotype are dependent on key polarity or cell adhesion molecule repression. Note: the criteria for rescue was set if the condition resulted in cell distribution that was 80% similar to the Control distribution (\u03c72-test p>0.8) and the average migration distance was less than 3% similar than the Zeb1 condition. Control vs Zeb1, [\u03c72 test] p(\u03c72) = 1.9 x 10\u20137, [t-test] p(t) = 6.44 x 10\u20135. Control vs Pard6a p(\u03c72) = 0.96, p(t) = 3.68 x 10\u20136. Control vs Pard3a p(\u03c72) = 0.99, p(t) = 5.67 x 10\u20135. Control vs Jam/Nec p(\u03c72) = 0.98, p(t) = 3.67 x 10\u20134. Control vs Chl1 p(\u03c72) = 0.98, p(t) = 3.68 x 10\u20136. Control vs Lin7a p(\u03c72) = 0.84, p(t) = 0.02. Control vs Dlg1 p(\u03c72) = 0.25, p(t) = 0.06. Control vs Sorl1 p(\u03c72) = 0.04, p(t) = 0.01. Control vs Bhlhe40 p(\u03c72) = 0.13, p(t) = 0.06. Control vs Cdh1 p(\u03c72) = 5.57 x 10\u201313, p(t) = 0.44. Control vs Flt1 p(\u03c72) = 1.70 x 10\u20134, p(t) = 0.27. Control vs Cdk5r1 p(\u03c72) = 0.31, p(t) = 0.01.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/12717/elife-12717-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** P7 EGL was co-electroporated with the indicated expression constructs and H2B-mCherry. After 72\u2009hr of ex vivo culture, CGN migration distance was analyzed for a minimum of 4000 nucleofected cells in each experimental condition. Red overlay indicates the average migration distribution of control cells (error bar, SD). While control cells entered the ML and IGL after 72 hr, Zeb1 over-expressing cells remained in the EGL even with longer-term incubation. Bhlhe40 expression, but not Cdh1, Cdk5r1 and Sorl1, significantly restores IGL-directed migration of the context of Zeb1 gain-of-function (determined by Student t-test).\n\n![Video 3.](https://cdn.elifesciences.org/articles/12717/elife-12717-media3.mp4.jpg)\n\n**Video 3.:** The migrating cells in the field undergo typical two-stroke nucleokinesis with centrosome entering the leading process prior to somal translocation. Note: even stationary cells extend long neurites. Time stamp= hours: minutes: seconds. Scale bar= 10 \u03bcm.\n\n![Video 4.](https://cdn.elifesciences.org/articles/12717/elife-12717-media4.mp4.jpg)\n\n**Video 4.:** The migrating cells in the field undergo random amoeboid movements where the centrosome adopts an unpolarized position in the cell body. Note: even stationary cells extend do not extend long neurites. Time stamp\u00a0= hours: minutes: seconds. Scale bar\u00a0= 10 \u03bcm.\n\n![Video 5.](https://cdn.elifesciences.org/articles/12717/elife-12717-media5.mp4.jpg)\n\n**Video 5.:** The migrating cells in the field undergo typical two-stroke nucleokinesis with centrosome entering the leading process prior to somal translocation. Note: even stationary cell extend long neurites. Time stamp= hours: minutes: seconds. Scale bar\u00a0= 10 \u03bcm.\n\n![Video 6.](https://cdn.elifesciences.org/articles/12717/elife-12717-media6.mp4.jpg)\n\n**Video 6.:** The migrating cells in the field undergo typical two-stroke nucleokinesis with centrosome entering the leading process prior to somal translocation. Note: even stationary cell extend long neurites. Time stamp\u00a0= hours: minutes: seconds. Scale bar\u00a0= 10 \u03bcm.\n\n![Video 7.](https://cdn.elifesciences.org/articles/12717/elife-12717-media7.mp4.jpg)\n\n**Video 7.:** The migrating cells in the field undergo typical two-stroke nucleokinesis with centrosome entering the leading process prior to somal translocation. Note: even stationary cell extend long neurites. Time stamp= hours: minutes: seconds. Scale bar\u00a0= 10 \u03bcm.\n\n![Video 8.](https://cdn.elifesciences.org/articles/12717/elife-12717-media8.mp4.jpg)\n\n**Video 8.:** Note: exuberant cell contacts are observed among most cells. Time stamp= hours: minutes: seconds. Scale bar\u00a0= 10 \u03bcm.\n\n![Video 9.](https://cdn.elifesciences.org/articles/12717/elife-12717-media9.mp4.jpg)\n\n**Video 9.:** Sparse cell contacts are observed among most cells. Time stamp\u00a0= hours: minutes: seconds. Scale bar\u00a0= 10 \u03bcm.\n\n![Video 10.](https://cdn.elifesciences.org/articles/12717/elife-12717-media10.mp4.jpg)\n\n**Video 10.:** Note: note cell contacts are observed among most cells. Time stamp\u00a0= hours: minutes: seconds. Scale bar\u00a0= 10 \u03bcm.\n\n![Video 11.](https://cdn.elifesciences.org/articles/12717/elife-12717-media11.mp4.jpg)\n\n**Video 11.:** Note: restored cell contacts are observed among most cells. Time stamp= hours: minutes: seconds. Scale bar\u00a0= 10 \u03bcm.\n\n![Video 12.](https://cdn.elifesciences.org/articles/12717/elife-12717-media12.mp4.jpg)\n\n**Video 12.:** Note: restored cell contacts are observed among most cells. Time stamp= hours: minutes: seconds. Scale bar\u00a0= 10 \u03bcm.\n\nGiven that Pard6a and Chl1 were among the targets whose restoration most potently rescued Zeb1 gain-of-function phenotypes, we sought mechanistic insight into this rescue by further characterizing expression of key factors in proliferating GNPs, D type Cyclins and Atoh1. Restored Pard6a and Chl1 expression did not affect the levels at which Zeb1 suppressed its target genes, indicating that Pard6a and Chl1 did not counteract Zeb1 at the transcriptional level or non-specifically reduce Zeb1 target repression in our assay system (Figure 7a). Moreover in the case of Chl1 protein, restored Pard6a and Pard3 did not rescue Chl1 expression as assayed by immunocytochemistry in dissociated CGNs (Figure 7\u2014figure supplement 1). Restored Pard6a or Chl1 expression reduced Zeb1-mediated activation of CyclinD1 and CylinD2 mRNA and Atoh1 protein levels, all of which are required to maintain GNPs in the undifferentiated state (Figure 7b and c) (Ayrault et al., 2010; Flora et al., 2009; Huard et al., 1999). The broad rescue of Zeb1 gain-of-function phenotypes by the Pard6a and Pard3a polarity proteins and the Chl1 adhesion molecule demonstrates that these Zeb1-supressed targets are prerequisites for mature CGN characteristics. These findings also reinforce the parallel between CGN differentiation and polarity regulation in cells of epithelial origin. Not only do Zeb1 and polarity proteins show mutually exclusive expression in GNPs and CGNs, but the functional screen also shows that their functional antagonism regulates the balance between the GNP and CGN states.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/12717/elife-12717-fig7-v2.jpg)\n\n**Figure 7.:** Cultured CGNs were nucleofected with a marker plasmid encoding H2B mCherry (or Centrin2-Venus in Panel c) alone or in combination with plasmids encoding Myc-Zeb1 plus single plasmids encoding Pard6a or Chl1 in our array expression screen. After 24 hr in culture, nucleofected cells were FACS sorted to isolate mRNA (a, b, c) or stained with antibodies to highlight morphology/Atoh1 expression (c). a. qRT-PCR analyses shows that: 1) Pard6a and Pard3a expression continues to be suppressed in Chl1 rescued GNPs and 2) Pard3 and Chl1 expression continues to be suppressed by Zeb1 Pard6a rescued GNPs. NS\u00a0=\u00a0not shown. (b) qRT-PCR analyses shows that Zeb1 gain-of-function induced CyclinD1 and CyclinD2 mRNA expression and that both restored expression of Chl1 and Pard6a reduces D-type cyclin expression. (c) qRT-PCR analyses shows that Zeb1 gain-of-function mildly induced Atoh1 mRNA expression. While Chl1 and Pard6a rescue have little affect on Atoh1 mRNA expression, restored expression of both these genes strongly reduce Atoh1 protein expression detected by immunocytochemistry.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12717/elife-12717-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** Dissociated CGNs were prepared and nucleofected with the indicated expression constructs. 18\u2009hr post-nucleofection, cultures were fixed and stained with antibodies recognizing EGFP and Chl1. Control neurons express robust levels of Chl1 protein in their somas and proximal leading process. In contrast, Zeb1 expressing as well as Pard6a or Pard3 rescued cells expressed lower amounts of Chl1 immunoreactivity.\n\n### Zeb1 is regulated by SHH, highly expressed in SHH-subgroup medulloblastoma and functionally required to retain Ptch1-deficient GNPs in the GZ\n\nHaving found that Zeb1 controls GNP differentiation and GZ exit by regulating neuronal polarity and adhesion, we next sought to identify factors that can regulate Zeb1 in GNPs. We reasoned that SHH, the required mitogen for GNP proliferation, may regulate Zeb1 expression given that it not only stimulates progenitor proliferation but also blocks CGN differentiation\u00a0(Wechsler-Reya and Scott, 1999). GNP cultures treated with SAG, a potent small-molecule SHH agonist, displayed not only elevated Zeb1 but also decreased Pard6a and Chl1 proteins (Figure 8a,b). These results suggest that Zeb1 and some of its targets act downstream of the SHH signaling cascade.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/12717/elife-12717-fig8-v2.jpg)\n\n**Figure 8.:** (a) GNPs were cultured in the presence or absence of SAG, a small-molecule agonist of SHH, fixed and stained for DAPI (blue), Zeb1 (red) or the Zeb1 targets Pard6a, Chl1 and Dlg2. Zeb1 expression was maintained, but Zeb1 target expression diminished. (b) Western blotting with anti-Zeb1 confirmed that Zeb1 expression was maintained in the presence of SAG. Fibrillarin was loading control (t-test, p<0.01). (c) Immunohistochemistry shows maintained expression of Zeb1 (red) in a Ptch1+/-, Cdkn2c-/- SHH-type mouse MB; Zeb1 expression is complementary to Tuji1 staining (green). (d) qRT-PCR of mRNA from Ptch1+/-, Cdkn2c-/- mouse MBs shows much higher Zeb1 mRNA expression in MB cells than in P7 GNPs. Most of the targets in our screen are expressed at a lower level in SHH MB than in P7 GNPs. (e) Zeb1 mRNA expression in 4 MB subgroups. Data set includes 74 MBs (WNT n\u00a0=\u00a08; SHH n\u00a0=\u00a011; G3 n\u00a0=\u00a017; G4 n\u00a0=\u00a038) profiled on the Affymetrix U133plus2 array. (f) The migration distance of CGNs (black dots) from the pial layer (dashed line) was analyzed\u00a0(n = 8,800 to 11,300 cells). Control cells expressing catalytically inactive Cre enter the ML and IGL (71.2 \u00b1 7.8\u00a0\u00b5m [$x\u00af\u00a0$ \u00b1 sd]), while Ptch1-deficient GNPs expressing wild-type Cre remain within the EGL (41.4 \u00b1 5.8\u00a0\u00b5m). Zeb1 silencing and restored expression of Pard6a, Chl1 and Lin7a rescued the defective GZ exit (Asterisks indicate conditions where rescue observed (\u03c72 test vs Cre mutant, p>0.8; t-test vs Cre WT, p<0.01). Below each image is a cumulative distribution plot showing the area relative to a 450 \u03bcm scale. Arrowhead indicates 99th population percentile. (g) Average migration distance shown in accompanying graph, a Student\u2019s t-test shows rescue conditions with a p value\u00a0<0.01 vs Cre wild type.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/12717/elife-12717-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** P7 EGL of Ptch1 flox/flox animals was co-electroporated with the indicated expression constructs and H2B-mCherry. After 48\u2009hr of ex vivo culture, CGN migration distance was analyzed in 3 imaging experiments. Red overlay indicates the average migration distribution of control cells (error bar, SD). While Cre Mutant (n = 9,471 cells) cells entered the ML and IGL after 48\u2009hr and Cre wild type (n = 9,872) over-expressing cells remained in the EGL, Zeb1 silencing (n\u00a0= 11,383) or addition of Pard6a (n = 8,839), Lin7a (n = 10,543), or Chl1 (n = 11,348) to Zeb1-expressing CGNs restored migration, suggesting that the GZ exit phenotype Ptch1 deficient GNPs is dependent on Zeb1 repression of its targets. Average migration distance shown in accompanying graph. Note: the criteria for rescue was set if the condition resulted in cell distribution that was 80% similar to the Cre Mut distribution (\u03c72-\u00a0test p>0.8) and the average migration distance was less than 3% similar than the Cre WT condition (t-test p<0.03). Cre Mut vs Cre WT, [\u03c72 test] p(\u03c72) = 2.86 x 10\u20133, [t-test] p(t) = 3.03 x 10\u20133. Controls vs Zeb1 shRNA p(\u03c72) = 0.48, p(t) = 0.03. Controls vs Pard6a p(\u03c72) = 1.00, p(t) = 0.01. Controls vs Chl1 p(\u03c72) = 0.86, p(t) = 4.78 x 10\u20133. Controls vs Lin7a p(\u03c72) = 1.00, p(t) = 1.99 x 10\u20133.\n\nThe SHH pathway is activated in both mouse and human MBs derived from GNPs\u00a0(Pomeroy et al., 2002; Lee et al., 2003; Robinson et al., 2012; Northcott et al., 2012). As SHH activation led to elevated Zeb1 in normal GNPs, we next examined the expression levels of Zeb1 and its targets in a mouse SHH MB model from Ptch1 +/-, Cdkn2c -/- mice in which SHH signaling is constitutively activated (Uziel et al., 2005). Unlike normal P15 cerebellum (Figure 1b), MBs from adult Ptch1+/-, Cdkn2c-/- mice displayed high levels of Zeb1 expression (Figure 8c). MBs contain subpopulations of cells that can proceed with neuronal differentiation. Zeb1 expression was complementary with that of class III beta-tubulin/Tuj1, an early neuronal differentiation marker, indicating that Zeb1 expression is extinguished in both normal and tumor-derived cells proceeding toward the differentiated phenotype. We also quantified the RNA expression of Zeb1 and its targets by qRT-PCR in normal GNPs and in mouse SHH MBs. Mouse MBs contained higher levels of Zeb1 RNA than GNPs purified at P7, the time of peak Zeb1 expression (Figure 8d). Moreover, most Zeb1 targets identified in our Affymetrix Gene Chip array were expressed at lower levels in mouse MBs than in P7 GNPs, with the sole exception of Pard3a (Figure 8d). To broaden our analysis outside of mouse MB, we quantified ZEB1 RNA in human MB samples\u00a0(Robinson et al., 2012). ZEB1 RNA was about four times higher in the human SHH MB subgroup compared to WNT, Group3 and Group4 MBs (Figure 8e). These results indicate that in mouse and human MB, Zeb1 expression is elevated when the SHH pathway is activated, supporting the link we observed between SHH and Zeb1 in normal GNPs. Elevated Zeb1 expression paralleled reduced expression of the targets identified in our Zeb1 gain-of-function expression profiling, validating our findings in primary GNPs.\n\nPre-neoplastic GNPs show a greatly delayed GZ exit, the first overt phenotype observed in mouse MB models with chronic SHH activation (Ptch1+/-; Ptch1+/-, Cdkn2c-/-; and Ptch1Floxed mice)\u00a0(Goodrich, 1997; Yang et al., 2008; Uziel et al., 2005). While there is a firm link between proliferation and delayed differentiation in pre-neoplastic GNPs, it is unknown how deregulated SHH signaling delays GZ exit. Given that Zeb1 controls GNP differentiation and GZ exit and that its expression is linked with elevated SHH signaling, we postulated that Zeb1 function, and its transcriptional repression of polarity genes, may be related to the GZ exit phenotypes of GNPs with an activated SHH pathway. We developed an ex vivo model to examine the GZ exit status of GNPs exposed to chronic SHH stimulation: we electroporated vectors encoding codon-optimized Cre recombinase or its inactive mutant into P7 cerebellar EGL from mice homozygous for Ptch1 harboring loxP sites flanking exons 8\u20139 (Ptch1 flox/flox mice)\u00a0(Ellis et al., 2003). As the Ptch1 receptor is a negative regulator of SHH signaling, conditional Ptch1 deletion leads to potent constitutive activation of the pathway and, over a longer time, GNP malignant transformation. GNPs expressing Cre recombinase remained largely within the EGL, but migration was unaltered by a catalytically inactive mutant ($x\u00af$ distance\u00a0=\u00a041.4 \u00b1 5.8 \u00b5m vs. 71.1 \u00b1 7.8 \u00b5m; Figure 8f, Figure 8\u2014figure supplement 1). To examine Zeb1 and Zeb1-target function in the GZ exit phenotype of Ptch1-deficient GNPs, we co-electroporated P7 EGL from Ptch1 flox/flox mice with Cre recombinase and an shRNA silencing Zeb1 or vectors encoding Pard6a, Chl1 and Lin7a, which were expressed at low levels in the mouse Zeb1-expressing MB cells. Zeb1 silencing or increased Pard6a, Chl1 and Lin7a expression restored GZ exit and migration to the IGL to near wild-type levels. Taken together, these results show that Zeb1 is functionally required downstream of SHH signaling to control GZ exit. Moreover, the MET-like transition that occurs in CGN differentiation is evident not only during normal development but also in an ex vivo model of pathological GZ exit implicated in cerebellar tumorigenesis.\n\n## Discussion\n\nHere we identified a key developmental mechanism of the mammalian brain wherein the onset of neuronal polarization and differentiation is restrained by Zeb1-mediated inhibition of polarity in neuronal progenitors. Conversely, diminished repression of polarity genes or adhesion receptors accompanying Zeb1 downregulation promotes morphological maturation, GZ exit, and IGL-directed migration of CGNs in the developing cerebellum. We found that Zeb1 is downregulated as GNPs begin to exit the EGL niche and that Zeb1 loss-of-function spurs precocious GZ exit and withdrawal of GNPs from the cell cycle. Failure to downregulate Zeb1 delays the onset of key polarity gene or adhesion receptor expression, morphological maturation, GZ exit, and migration to the IGL. Restoration of Pard6a, Pard3a and Chl1 expression alone is sufficient to rescue the CGN fate in the context of Zeb1 gain-of-function. These findings show that polarization is not only triggered by differentiation programs in newborn neurons but is also obstructed in transiently amplifying progenitor cells, much as polarity is regulated in epithelial-mesenchymal and mesenchymal-epithelial transitions (see Figure 9).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/12717/elife-12717-fig9-v2.jpg)\n\n**Figure 9.:** (a) Mesenchymal-epithelial transition. Left: Mesenchymal cells are nonpolar, highly motile, with prominent cell-matrix contacts. Right: epithelial cells possess apical-basal polarity. Apical membrane (pink) is separated from basolateral and basal membranes by tight junctions (parallel blue rectangles) and adherens (blue springs) junctions. MET-EMT balance is controlled by antagonism between transcriptional regulators and polarity genes (center panel). (b) Left: GNP. As in MET, GNPs lose Zeb1 expression as they differentiate, relieving polarity gene repression. Center panel: Change in gene expression with GNP differentiation to CGNs. Right: CGNs morphologically mature, exit their GZ and make contacts with other CGNs or glia (blue springs depict adhesion to grey glial fiber). (c) Transition from tangential migration within the EGL by GNPs and nascent CGNs to radial migration (red arrows) by polarized T-shaped CGNs is MET-like, given falling Zeb1 expression (red to grey nuclei). Blue springs depict neuron-glial adhesions. Elevated SHH signaling drives Zeb1 expression to delay GZ exit at early stage of MB tumorigenesis.\n\n### MET and neuronal differentiation\n\nThroughout the developing brain, newborn neurons are similarly challenged to depart their GZ niche and integrate into a functional circuit (Hatten, 2002; Itoh et al., 2013), and at each stage of their differentiation these cells must undergo reorganization of their polarity (de la Torre-Ubieta and Bonni, 2011; Barnes et al., 2008). While radial glial cells, migrating neurons and neurons elaborating axons or dendrites display a polarized morphology, transiently amplifying progenitors and newly delaminated neurons are temporarily less polarized. Conceptual parallels have been made between epithelial and neuronal polarity (Colman, 1999). Recently, Foxp- or Scratch-mediated inhibition of classical cadherins was shown to spur neuronal AJ loss, transition away from radial glial polarity, and delamination from the VZs of the spinal cord and cortex\u00a0(Rousso et al., 2012; Itoh et al., 2013). The parallel between Foxp- and Scratch-mediated delamination of neurons and EMTs in epithelial cells is incomplete, as both delamination events may occur in postmitotic neuronal progeny. Also, we still have no clear idea how immature neurons or their progenitors transition out of their low polarity states during terminal differentiation. Our work demonstrates that transiently amplifying cerebellar progenitors display mesenchymal characteristics, expressing high levels of Zeb1 and low levels of polarity proteins and adhesion molecules needed for maturation to CGNs.\n\nHow similar are CGN differentiation and MET? As illustrated in our model (Figure 9), METs are associated with acquisition of a mature, polarized morphology. Zeb1 locks GNPs into an immature morphology, just as it blocks apical-basal polarization in epithelia. Second, a common MET pattern is extensive migration followed by a final integrative positioning event\u00a0(Thiery and Sleeman, 2006). At the population level, GNPs migrate to cover the cerebellar anlage, migrate within the EGL, and finally undergo differentiative migration to the IGL. Our results show that Zeb1 is necessary and sufficient to confine GNPs to their GZ niche, where migration is restricted to the cerebellar surface. Finally, METs involve a changing balance of cell-matrix and cell-cell contacts, in which mesenchymal cells engage in extracellular matrix adhesions and differentiated epithelial cells engage in cell-cell adhesions\u00a0(Nelson, 2009). Similarly, early electron microscopy studies showed that GNPs remain largely contiguous with the matrix-rich pial basal lamina until they differentiate\u00a0(Hausmann and Sievers, 1985) and develop extensive cell-cell contacts (Rakic, 1971; Del Cerro and Snider, 1972). Interestingly, we found that promotion of cell-cell contact with constitutively active JAM-C and restored Chl-1 expression rescues Zeb1 gain-of-function phenotypes. One key difference between GNP differentiation and epithelial polarity is the mir200 class of micro RNAs that inhibits Zeb1 expression in epithelial cells are not expressed in CGNs\u00a0(Uziel et al., 2009). Overall, CGN differentiation, which is accompanied by downregulation of Zeb1, enhanced Zeb1 target expression, morphological maturation and GZ exit, bears remarkable similarity to the METs of epithelial cells as they incorporate into epithelial tissues. At the moment, it is unclear if additional EMT regulatory transcription factors behave similarly in GNP differentiation. While Zeb1 was clearly the highest expressed EMT regulatory factor relative to 18S RNA, necessity and sufficiency testing was not performed on low abundance genes like Snai1 or Snai2.\n\nWe anticipate that MET associated with Zeb1 downregulation is also relevant to other brain regions. Both GNPs and cortical intermediate progenitors have delaminated from a parental radial glia, amplify transiently in a displaced GZ (EGL vs SVZ), express some similar markers (Tbr2, Id proteins, Tis21, Zeb1), and assume a simple morphologic form before differentiation. Our ChIP-seq studies show that Zeb1 occupies the promoters of polarity genes in mouse neural stem cells with telencephalic features, raising the possibility that Zeb1 may regulate the polarity of telencephalon cells. We observed that Zeb1 inhibits GNP expression of the GTPases Rnd1 and Rnd3 (data not shown), which promote VZ delamination, inhibit intermediate progenitor proliferation and enhance multipolar to bipolar transition in the neocortex, much as Zeb1 targets function in GNPs\u00a0(Heng et al., 2008; Pacary et al., 2011).\n\n### Zeb1 and neuronal polarity\n\nNeuronal polarity regulation by Zeb1 differs from the mechanisms described in forebrain and cerebellar neurons. Neuronal polarization in the hippocampus and cortex depends on the balance of cues and signaling from extracellular, intracellular and cytoskeletal sources that shape forming axons or dendrites\u00a0(Lewis et al., 2013). Transcriptional control mechanisms involving FOXO, SnoN1/2, NeuroD1 and NeuroD2 have been found to promote discrete stages of morphological CGN maturation, illustrating the partial dependence of axon-dendrite morphogenesis on competence that develops during differentiation\u00a0(de la Torre-Ubieta and Bonni, 2011). Our findings show a new level of regulation of the onset of neuronal polarity in which active gene expression programs in neuronal progenitors cells can delay their competence to polarize. Thus, transiently amplifying progenitors are unpolarized not only because they do not yet express intrinsic maturation components but also because they express factors, like Zeb1, that restrain their polarization.\n\n### Zeb1 and aberrant germinal zone exit\n\nCGNs offer not only a model of neural development but also an excellent system to study the dysregulation of signaling pathways in disease. The best example is the link between SHH signaling, GNP proliferation, and MB tumorigenesis. Humans with activating mutations in the SHH pathway are genetically predisposed to MBs that bear many similarities to GNPs\u00a0(Raffel et al., 1997; Lam et al., 1999; Taylor et al., 2002). Available mouse models can recapitulate SHH-associated MB\u00a0(Goodrich, 1997; Yang et al., 2008; Uziel et al., 2005). During cerebellar development, GNPs stream from the rhombic lip to cover the cerebellar anlage, expand clonally in the EGL in response to Purkinje cell-derived SHH, then exit mitosis and their GZ niche and migrate inward to the IGL\u00a0(Hatten et al., 1997). When the SHH signaling pathway is deregulated in vivo, cohorts of GNPs fail to exit their GZ niche and continue to proliferate on the cerebellar surface well past the normal interval\u00a0(Goodrich, 1997). Although migration from the mitotic niche is proposed to be linked to GNP cell cycle exit\u00a0(Choi et al., 2005), the specific downstream GZ exit or migration mechanisms are unknown. Our finding that SHH maintains Zeb1 expression and that Zeb1 target expression is reduced in MB reveals an antagonism between the main GNP mitogen and the polarity required for GZ exit. This antagonism suggests that SHH inhibits the MET-like event we showed to control GNP GZ exit and that pre-neoplastic GNPs or MB cells are inherently polarity-deficient. The possibility that Zeb1 controls an active program to block polarization is particularly relevant to MB. These tumor cells express high levels of the FOXO and NeuroD transcription factors that promote CGN polarization, but they are insufficient to induce polarization of transformed GNPs. Thus, Zeb1 is a candidate factor that may act downstream of SHH in MB to counteract the polarization program. Finally, our results suggest future studies to determine whether restoring the polarity balance in MB will yield therapeutic benefit as a complement to existing first line- or targeted therapies.\n\nIn Ptch1-deficient, Zeb1-overexpressing GNPs, restored expression of selected Zeb1 targets rescues CGN differentiation, GZ exit and migration to the IGL. How do the targets, such as the PAR complex and Chl1, promote these events? In the context of Zeb1 gain-of-function, Pard6a and Chl1 expression reduced Zeb1 activation of CyclinD1, CyclinD2, and Atoh1, each of which is essential to maintain GNP proliferation (Ayrault et al., 2010; Flora et al., 2009; Huard et al., 1999). Thus, Pard6a and Chl1 appear to cell-intrinsically promote CGN differentiation. Consistent with this hypothesis, Pard6a and Chl1 gain-of-function in normal GNPs spurs precocious germinal zone exit (data not shown). In preliminary time-lapse imaging studies, Pard6a, Pard3a and Chl1 also rescued two-stroke motility and JAM-C adhesion levels (see Videos 3\u201312). While it is intriguing that PAR complex and Chl1 behave similarly in our functional genomics screen, further studies are necessary to clarify their potential functional interactions. Finally, an additional area of further investigation is the cooperation between transcriptional and post-transcriptional mechanisms for polarity regulation. While Pard3a is clearly transcriptionally repressed by Zeb1, it\u2019s mRNA does not display the same elevation displayed by other targets after Zeb1 expression diminishes. Interestingly, Pard3a protein expression levels is controlled by the Siah2 E3 ubiquitin ligase, thus regulation of Pard3a expression may be due to a complex interplay between transcriptional and post-translation mechanisms. In conclusion, further examination of Zeb1 function in neural progenitors and its relation to other GZ exit pathways and the MET-like conceptual model may be useful not only in understanding how normal GNPs transition to the CGN state, but also in understanding the pathogenesis of pediatric cancers linked to defective GZ exit.\n\n## Materials and methods\n\n### Animals\n\nAll mouse lines were maintained in standard conditions in accordance with guidelines established and approved by Institutional Animal Care and Use Committee at St. Jude Children\u2019s Research Hospital (protocol number=483). B6N.129-Ptch1tm1Hahn/J strain mice were obtained from Jackson labs.\n\n### Plasmid vectors\n\nAll cDNAs encoding protein of interest were commercially synthesized and subcloned into pCIG2 by Genscript (Piscataway, NJ, USA). Expression plasmid for Pard3a, Pard6a, Jam-C-Nectin3 and Fluorescent fusion proteins such as pCIG2 H2B-mCherry, pCIG2 RFP-UTRCH, pCIG2 Centin2-Venus and pCIG2 JAM-C-pHluorin were subcloned as previously described (Solecki et al., 2009).\n\n### Preparation and nucleofection of CGNs\n\nCGNs were prepared as described\u00a0(Hatten, 1985). Briefly, cerebella were dissected from the brains of P7 mice and pial layer removed; the tissue was treated with trypsin/DNase and triturated into a single-cell suspension using fine-bore Pasteur pipettes. The suspension was layered onto a discontinuous Percoll gradient and separated by centrifugation. The small-cell fraction was then isolated. The resulting cultures routinely contain 95% CGNs and 5% glia. For imaging experiments, expression vectors encoding fluorescently labeled cytoskeletal proteins and pCIG2 expressing protein of interests were introduced into granule neurons via Amaxa nucleofection, using the Amaxa mouse neuron nucleofector kit per the manufacturer's instructions and program A030. The concentration pCIG2 expression vectors used was determined such that increase in protein expression was at least two fold. After cells recovered for 10\u2009min from the nucleofection, they were plated in either plated in 16 well slides for IHC or in movie dishes (Mattek) coated with low concentrations of poly-L-ornithine to facilitate the attachment of neurons to glial processes (according to methods established by (Edmondson and Hatten, 1987)\n\n### Gene expression: RNA isolation, RT-PCR flow cytometry and Affymetrix arrays\n\n#### RNA extraction and SYBR green real-time RT-PCR\n\nTotal RNA for RT-PCR and microarray was isolated from either CGNs or whole cerebellum at different developmental time points such as postnatal day such as p0, p4, p7, p10, p15 by using the Ambion RNA Aqueous kit (Austin, TX). According to manufacturer's instructions each sample was isolated in 40\u00a0\u00b5l of elution buffer and subjected to Dnase treatment (Ambion) to get rid of any genomic contamination. Quantity and quality of the isolated RNA was checked using the Agilent 2100 Bioanalyzer with RNA 6000 Nano Chips (Agilent Technologies, Santa Clara, CA). Primer sets for each gene were designed by using Primer Express Software (Applied Biosystems, Foster City, CA) and synthesized (IDT, Coralville, IA). Sequences of the primers are listed in See Table is Supplementary file 3A. Two-step real-time RT-PCR was performed on the ABI PRISM 7900 Sequence Detection System by using random hexamers and the TaqMan Reverse Transcription Reagents, and the SYBR Green PCR Master Mix for the PCR step (Applied Biosystems) as described\u00a0(Singh et al., 2010). Data were normalized by the 18S ribosomal RNA expression levels in each sample.\n\n#### Fluorescence-activated cell sorting, Affymetrix Array and analysis\n\nTo obtain a pure population of GNPs expressing the protein of interest, GNPs isolated from cerebellum of postnatal day p7 mice were nucleofected with pCIG2 H2B-mCherry (to label cells red [Control]) or mCherry with either Zeb1/Hes1, cultured for 24\u00a0hr, triturated into single cell suspension and labeled for DAPI. The viable mCherry positive cells sorting was carried out in St. Jude shared resource flow cytometry facility at St. Jude using BD Aria III SORP sorter. A bandpass 610/20 filter was used to detect mCherry signals at an excitation of 561 nm laser. The cells were directly collected in the lysis buffer and RNA was extracted as described in the previous section.\n\nRNA for temporal developmental profiling was isolated directly after GNP isolation at time point p0, p7 and p15 as well as FACS GNPs and further analyzed by the microarray core facility at St Jude. RNA quality was determined by analysis on the Agilent 2100 Bio-analyzer, and all samples had a RIN > 8. 100 ng of total RNA was processed using the Affymetrix 3\u2032 IVT Express Kit. Biotin-labeled cRNAs were hybridized to the Affymetrix GeneChip HT MG-430 PM array and washed, stained and scanned on the GeneTitan system (Affymetrix). Data were summarized using Affymetrix Expression Console software (v1.1) to apply the robust multi-array average (RMA) algorithm (ArrayExpress accession number: E-MTAB-3557). The arrays are RMA-normalized and batch corrected using R/ComBat. Unsupervised hierarchical clustering analysis and principal component analysis was done using Spotfire and GeneMaths. Differential expressed genes were analyzed using linear models algorithm (R/Limma). Differentially expressed genes between Zeb1/Hes1-overexpression cells and GNPs at different time point were selected using FDR corrected p-value (q value) of 0.05 and fold change of 1.5 as the cutoff. GO analysis was done using DAVID Bioinformatics Resource with the common up-regulated genes in Zeb1 and Hes1 over-expressed cells.\n\n#### RT2 Profiler PCR arrays\n\nThe Mouse EMT RT2 Profiler PCR Array that profiles the expression of 84 key genes was purchased from SABiosciences. Total RNA (1\u00a0\u00b5g) isolated from the flow sorted GNP isolated at p7 was used for screening by real-time PCR as per the manufacturer's instructions. Target genes whose expression was differentially regulated (at least 2-fold difference) by Zeb1 over expression were selected and are shown in tables in Supplementary file 1A,B.\n\n### Chromatin immunoprecipitation: ChIP assay\n\nChromatin immunoprecipitation (ChIP) was performed by using EZ ChIP reagents (Millipore) in the presence of phosphatase and protease inhibitors according to the manufacturer's instructions. Briefly, chromatin from CGNs (\u2265 1 \u00d7 106) was cross-linked for 10\u2009min at RT with 1% formaldehyde, sonically disrupted, diluted and precleared before immunoprecipitation with either 5 \u00b5g of Zeb1 antibody or rabbit IgG as control at 4\u00b0C overnight. Protein G-agarose beads (60\u2009\u03bcL/sample) were added and incubated for a further 1\u2009hr at 4\u00b0C. After washing with salt gradient stringent buffers, LiCl and TE buffers, immunoprecipitated protein-DNA complexes were eluted in 200\u2009\u03bcL of elution buffer (50 mmol/L NaHCO3, 1% SDS). Formaldehyde crosslinking was then reversed by adding 8\u2009\u03bcL of 5\u2009mol/L NaCl and incubating at 65\u00baC overnight. RNA and protein were removed by sequential treatment with RNase for 30\u2009min at 37\u00b0C and proteinase K at 45\u00baC for 2\u2009hr, respectively. Purified DNA fragments were then analysed with qRT-PCR using specific primer for the promoter region see Table is Supplementary file 3B and SYBR Green PCR Master Mix (Applied Biosystems). The results were normalised against the input control. Normalised data of three independent experiments were averaged and are presented using fold change/enrichment of each promoter region expressed as a ratio of PCR signal of samples to that of input. For example, fold increase of promoter binding is defined as the ratio of Zeb1 binding DNA compared to DNA precipitated with the IgG control antibody (set as a fixed value of 1.0).\n\n### ChIP-seq and bioinformatics analyses\n\nNS5 cells\u00a0(Pollard et al., 2006) were fixed sequentially with di(N-succimidyl) glutarate and 1% formaldehyde in phosphate buffered saline (PBS) and then lysed, sonicated and immunoprecipitated with anti-Zeb1 antibody (HPA027524, Sigma), as previously described\u00a0(Castro et al., 2011). DNA libraries were prepared from 10 ng of immunoprecipitated DNA according to the standard Illumina ChIP-seq protocol and sequenced with Illumina GAIIx. Sequenced reads were processed after mapping with SAMTools for format conversion and removal of PCR duplicates\u00a0(Li et al., 2009) and mapped to the mouse genome (NCBI37/mm9) with Bowtie 0.12.7\u00a0(Langmead et al., 2009), resulting in 25 million uniquely mapped reads (ArrayExpress accession number: E-MTAB-3560). Peak calling was performed with MACS 1.4.1\u00a0Zhang et al., 2008) (default parameters). Profiles of genomic regions were generated using D-peaks source code\u00a0(Broh\u00e9e et al., 2012). A de novo search for motifs enriched at peak summits was done with Cisfinder\u00a0(Sharov and Ko, 2009) using default parameters and a background control set of 100 bp genomic regions located 3Kp upstream input regions. Calculation of P-values for the association between binding events and deregulated genes was performed by sampling the number of genes represented in the microarray 1000 times and assuming a normal distribution. Annotation of binding events and association with genomic features was performed with PeakAnalyzer\u00a0(Salmon-Divon et al., 2010) and the R/Bioconductor package ChIPpeakanno\u00a0(Zhu et al., 2010).\n\n#### Cerebellar immunohistochemistry\n\nPostnatal brains collected at p7 and p15 were fixed by immersion in 4% paraformaldehyde at 4\u00b0C for overnight followed by cryoprotection in PBS containing 30% sucrose. Histological sagittal sections were cut at 60\u2009\u03bcm on a cryostat and pre-blocked for 1\u2009hr in PBS with 0.1% Triton X-100 and 10% normal donkey serum. Sections were incubated overnight at 4\u00b0C with the primary antibodies followed by appropriate Alexa labeled secondary antibody (Invitrogen) at 1:1000 for an hour before mounting. Antigen retrieval was carried out for Meis1 staining.\n\n#### Immunocytochemistry of primary CGN cultures\n\nCGNs cultured in vitro\u00a0for various times were washed with PBS, permeabilized with Triton X-100 (0.1%) and blocked with normal donkey serum (10%). Primary and secondary antibody staining was carried out in PBS plus 1% normal donkey serum. The list of primary antibodies used in this study can be found in table in Supplementary file 3C. Alexa labeled secondary antibodies (Invitrogen) were used to detect primary antibody stains. The slides were sealed with a coverslip using ProLong Gold mounting media (Invitrogen).\n\n### Image and data analysis: neurite length measurement and differentiation assay\n\nCGN cultures were imaged with a Marianas Spinning Disk Confocal Microscope (Intelligent Imaging Innovations) comprising a Zeiss Axio Observer microscope equipped with 40\u00d7/1.0 NA (oil immersion) and 63\u00d7/1.4 NA (oil immersion) PlanApochromat objectives. An Ultraview CSUX1 confocal head with 440 to 514 nm or 488/561/642 nm excitation filters and ImageEM-intensified CCD camera (Hamamatsu) were used for high-resolution imaging.\n\nNeurite length measurements were performed using the ruler function of SlideBook software (Intelligent Imaging Innovations) by measuring the longest neurite from one end to the longest neurite on the opposite end. At least three independent biological replicates were done for each target gene. While measuring neurite length in the rescue experiments, only CGNs that showed at least two fold increase in Zeb1 expression were included for neurite measurement. Data was statistically analyzed using Microsoft Excel and graphed using Kaleidagraph v4.03.\n\n#### Ki67 and p27 data analysis\n\nResult of Ki67 immunostaining is represented as percentage of positively stained ki67 nuclei (cut off 20\u201325% staining intensity) among the total number of neurons present in the image field. For Zeb1 overexpression and the epistasis studies only nuclei that showed both Zeb1 expression and ki67 were counted as a positive over total number of GNPs overexpressing Zeb1. Scoring involved counting at least 25 fields (X40 oil objective) to a minimum of 150\u2013200 neurons in each of three independent experiments\n\nFor assessment of differentiation p27 negative cells were counted and expressed as a percentage of the total number of GNPs in the field. For analyzing p27 in the Zeb1 overexpression and epistasis experiments a scoring cut-off of 25% staining intensity for p27 and concomitant expression for Zeb1 expression was considered and counted over total number of Zeb1 overexpressing GNPs in the field.\n\n### Ex vivo\u00a0cerebellar electroporation, organotypic slice culture and imaging\n\nP7 cerebella were dissected, soaked in endotoxin-free plasmid DNA suspended in Hanks balanced salt solution (1\u20135\u2009\u03bcg/\u03bcL of each DNA was generally used, pCIG2-mCherryH2B was electroporated as a nuclear marker for migrating CGNs), transferred to a CUY520-P5 platinum block petri dish electrode (Protech International) and electroporated with a CUY21EDIT (Protech International) square wave electroporator (80 V, 5 pulses, 50 ms pulse, 500 ms interval). Electroporated cerebella were embedded in 4% low melting point agarose and 250\u2009\u03bcm sagittal cerebellar slices were prepared using a VT1200 Vibratome (Leica Microsystems). Slices were transferred to Millicell tissue culture inserts (Millipore) and cultured in basal Eagle medium supplemented with 2\u2009mM L-glutamine, 0.5% glucose, 50\u2009U/ml penicillin-streptomycin, 1x B27 and 1x N2 supplements (Invitrogen) at the air-media interface for the times indicated in the Figures. In experiments that assayed proliferation, 25\u2009\u03bcM EdU was added to culture medium and EdU incorporation was assayed by using the Click-iT assay as per manufacturer instructions (Invitrogen).\n\nPrevious characterization of this method show that greater than 97% of cell manipulated by this method are Pax6 positive CGNs in outer EGL\u00a0(Famulski et al., 2010). For analysis of fixed specimens, slices were fixed 4% paraformaldehyde after 24 or 48\u2009hr of culture and mounted on slides by using ProLong Gold (Invitrogen). Migration distance was measured in fixed slices by measuring the distance between the cerebellar surface and center of individual cell nuclei marked by mCherry-H2B. Central coordinates were exported from SlideBook (Intelligent Imaging Innovations) into IGOR Pro (WaveMetrics Inc.), where the distance of cells from the nearest cerebellar surface was measured and logged. Statistical analysis used Microsoft Excel and was graphed by using Kaleidagraph v4.03. For live-imaging analysis of the migration of H2B-mCherry labeled CGNs, slice cultures were transferred at 28\u2009hr to the humidified chamber of the spinning disk confocal microscope described above. Z-stacks (60\u201380\u2009\u03bcm width, ~20 sections per stack) were collected at multiple x, y stage positions every 15\u2009min for 24\u201348\u2009hr.\n\n#### Tumor samples\n\nqRT-PCR analyses and IHC for Medulloblastoma studies were done on GNP-like tumor cells purified from 6 different mouse tumors that developed around 20\u201335 week in Ptch1+/-\u2013Ink4c-/- mice and compared with GNPs were isolated from the cerebellum of p7 mice.\n\n#### Western blotting\n\nP7 GNPs were cultured with or without SAG for 48\u00a0hr, and thereafter processed to obtain nuclear and cytoplasmic fractions using the Thermo NE-PER Nuclear and Cytoplasmic Extraction Reagent. Nuclear lysates were denatured using LifeTech NuPAGE sample reducing agent and LifeTech loading bufferheated to 75\u00b0C for 5 min. Samples were subjected to SDS-PAGE 4\u201312% Bis-Tris gel by LifeTech. The proteins were then electroblotted on to polyvinylidene fluoride membranes using an iBlot Gel Transfer Device (Invitrogen). Membrane was blocked for 1\u2009hr at RT with Odyssey Blocking buffer diluted 1:2 and then incubated in rabbit anti Zeb1 (1:2000) (prestige) antibody and anti-Fibrillarin-loading control (1:2000) overnight at 4\u00b0C. Odyssey secondary antibodies (1:10000) was used for detecting proteins by using the Odyssey Infrared Scanner.\n\n#### Statistical analysis\n\nAll data were expressed as the mean \u00b1 SD or SE as appropriate. The Student's t-test was used for comparing two groups, and the one-way analysis of variance and Holm-Sidak posthoc test was used for multiple comparisons, with the level of statistical significance set at p<0.01 unless otherwise specified. In migration rescue assays, if rescuing conditions resulted in a \u03c72-test p-value >0.8 when compared to controls, and t-test p-value < 0.01 when compared to Zeb1 overexpression alone, then they were considered a rescue.\n",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "6c2edfe3-785a-48e9-82e9-05ededad5923",
+      "submission_id": "30f24ab0-d993-444b-9ea9-3f157c4e0f44",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jonathan A Cooper, Fred Hutchinson Cancer Research Center , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.12717.043](https://doi.org/10.7554/eLife.12717.043)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Zeb1 controls neuron differentiation and germinal zone exit by a mesenchymal-epithelial-like transition\" for consideration by eLife. Your article has been favorably evaluated by K VijayRaghavan (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nThe paper identifies Zeb1 as a key regulator of the transition between granule cell progenitors to post-mitotic, migrating granule neurons by repressing a program of gene expression that includes cell adhesion molecules required for initiation of cell polarization and motility in the developing cerebellum.\n\nThe experiments are designed properly and the resulting data are generally convincing and well quantified. Conceptually, the idea that the transition from progenitor to post-mitotic/migratory neuron is co-opting the molecular machinery controlling mesenchymal to epithelial (and opposing the epithelial to mesenchymal transition) is appealing and rather novel. The implications of the present study for developmental neurobiology and for the molecular mechanisms underlying neuroblastoma induction could be far reaching.\n\nEssential revisions:\n\n1) The Zeb1-repressed genes identified are involved in cell cycle exit, migration or leading process outgrowth. It is therefore remarkable that the ectopic expression of several individual Zeb1-target genes is able to substantially rescue both cell cycle exit and migration of Zeb1-over-expressing granule neuron progenitors. (Why should an increase in Par6 make up for a deficiency in Dlg2 or surface proteins Cdh2 or Chl1?) This raises the concern that the dissociated cell and organotypic assays are not providing an accurate picture of events. The authors should perform longer term experiments (ex vivo or in vivo electroporation?) with more prolonged survivals and test which manipulations/effectors of Zeb1 are truly required for complete migration/differentiation of CGN for example. One would predict that some of the effectors are not sufficient to fully over-come the effects of Zeb1 over-expression.\n\n2) The movies show cells that are moving in all directions. Are the cells following glia processes? Are the movies done in the ex vivo system or dissociated cultures? I am concerned whether the ex vivo migration assay is really measuring directed migration or some other process.\n\n3) Given the authors' previous work on Siah, it is possible that the ectopic expression of one Zeb1 target might rescue expression of another Zeb1 target post-transcriptionally. As far as possible, the protein levels of Zeb1 targets should be measured in the rescue experiments (e.g., by immunofluorescence). This would show whether, for example, ectopic Par6 is rescuing Chl1 protein levels.\n\n4) While Zeb1 appears to be the most abundantly expressed EMT gene at early postnatal stages, it isn't possible to compare different the expression of different genes using RT-PCR owing to different efficiencies of primers etc. Snail1 resembles Zeb1 in decreasing during the second postnatal week. Given the complex interactions between EMT genes, it is possible that Snail1 would similarly score as 'necessary and sufficient' in the kinds of assays done here. This should at least be discussed.\n\n5) FACS-sorted GNPs/CGNs prepared from P0, P7, and P15 cerebellum were used as sources of RNA to identify genes that change during differentiation. However, the purity of the FACS-sorted cells was not reported. The composition of the sorted fractions should be assessed by use of markers for GNPs and CGNs. The reviewers also recommend that CGN and GNP-specific genes be identified by FACS of GFP+/- cells from pard6-EGFP GENSAT BAC transgenic mice. It would be informative to see whether expression levels of the Zeb1 target genes isolated in this study indeed increase during GNP differentiation into CGNs. Also, in other figures, it is often unclear whether RNA was isolated from purified GNPs or whole cerebellum, which would greatly affect interpretation of the data.\n\n6) Does Zeb1 knockdown just displace transfected cells or does it also promote neuronal differentiation? The expression levels of markers for GNPs (such as Math1) and for CGNs (such as NeuroD and NeuN) should be shown.\n",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "454d173d-f0b6-4394-96fa-f0ca5b0f82e5",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C1",
+      "claim": "Zeb1 mRNA is 28-fold higher than Snail1 in P7 GNPs",
+      "claim_type": "EXPLICIT",
+      "source": "at P7 Zeb1 mRNA was 28-fold higher than the next most abundant transcription factor, Snail1 (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data shown in Figure 1a comparing EMT factor expression levels",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "b585b9bc-7e49-4521-8c68-8eee8c7c8a88",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C2",
+      "claim": "Zeb1 protein is expressed primarily in the EGL at P7 and greatly reduced at P15",
+      "claim_type": "EXPLICIT",
+      "source": "Zeb1 protein expression confirmed our RNA analysis where it is expressed primarily in the EGL at P7 and greatly reduced at P15 (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry data shown in Figure 1b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "4906e24f-5706-42ef-9493-c3a9a5580312",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C3",
+      "claim": "Zeb1 is co-expressed with the proliferation marker Ki67 at P7",
+      "claim_type": "EXPLICIT",
+      "source": "At P7, Zeb1 is co-expressed with the proliferation marker Ki67 and two markers of GNP identity Siah2, and Meis1/2, and is greatly reduced in cyclin-dependent kinase inhibitory protein p27Kip1/Cdkn1b (referred as p27 thereafter)-positive postmitotic CGNs in the inner EGL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunohistochemistry data showing co-localization",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "bd341150-038f-49e5-b96e-2566192afb89",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C4",
+      "claim": "Zeb1 is co-expressed with GNP identity markers Siah2 and Meis1/2 at P7",
+      "claim_type": "EXPLICIT",
+      "source": "At P7, Zeb1 is co-expressed with the proliferation marker Ki67 and two markers of GNP identity Siah2, and Meis1/2, and is greatly reduced in cyclin-dependent kinase inhibitory protein p27Kip1/Cdkn1b (referred as p27 thereafter)-positive postmitotic CGNs in the inner EGL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunohistochemistry data showing co-localization",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "faaca90d-1ed1-4a4d-a927-1690d9d5eb11",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C5",
+      "claim": "Zeb1 expression is greatly reduced in p27-positive postmitotic CGNs in the inner EGL",
+      "claim_type": "EXPLICIT",
+      "source": "At P7, Zeb1 is co-expressed with the proliferation marker Ki67 and two markers of GNP identity Siah2, and Meis1/2, and is greatly reduced in cyclin-dependent kinase inhibitory protein p27Kip1/Cdkn1b (referred as p27 thereafter)-positive postmitotic CGNs in the inner EGL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunohistochemistry data showing complementary expression patterns",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "2e035758-bfe1-4833-aff6-f1b28603d081",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C6",
+      "claim": "Zeb1 mRNA expression is inversely correlated with the expression of the apical-basal polarity genes Pard6a and Prkcz",
+      "claim_type": "EXPLICIT",
+      "source": "In GNPs, Zeb1 mRNA expression was inversely correlated with the expression of the apical-basal polarity genes Pard6a and Prkcz (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data shown in Figure 1c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "1d9161cf-cf0b-4867-bafc-ecf31f8afad1",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C7",
+      "claim": "Pard6a mRNA increases as CGN differentiation proceeds",
+      "claim_type": "EXPLICIT",
+      "source": "Not only did Pard6a mRNA increase as CGN differentiation proceeded, but the promoter of this gene was active in individual GNPs at the border of the GZ, prior to their entry into the inner EGL (Figure 1d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qRT-PCR and promoter reporter data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "7ad39fc9-cffe-4369-a17a-9b3fcc92f178",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C8",
+      "claim": "The Pard6a promoter is active in individual GNPs at the border of the GZ, prior to their entry into the inner EGL",
+      "claim_type": "EXPLICIT",
+      "source": "Not only did Pard6a mRNA increase as CGN differentiation proceeded, but the promoter of this gene was active in individual GNPs at the border of the GZ, prior to their entry into the inner EGL (Figure 1d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry in Pard6a-EGFP BAC transgenic mice shown in Figure 1d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "c9fc31e0-6e55-45cf-884d-ffb36ae1d76f",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C9",
+      "claim": "Zeb1-expressing GNPs have shorter neurites than control cells (60 \u00b1 3 \u03bcm vs 140 \u00b1 13 \u03bcm)",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Zeb1-expressing cells had short, multipolar extensions (x\u00af length=140 \u00b1 13 \u03bcm vs 60 \u00b1 3 \u03bcm), expressed reduced p27 and sustained levels of Ki67 and Atoh1, indicating arrested maturation and proliferating, GNP-like state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by neurite length measurements in nucleofected GNPs shown in Figure 2a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "4f780043-a0ba-4b07-80e2-a207e98f907d",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C10",
+      "claim": "Zeb1-expressing cells express reduced p27 compared to control cells",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Zeb1-expressing cells had short, multipolar extensions (x\u00af length=140 \u00b1 13 \u03bcm vs 60 \u00b1 3 \u03bcm), expressed reduced p27 and sustained levels of Ki67 and Atoh1, indicating arrested maturation and proliferating, GNP-like state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunocytochemistry data shown in Figure 2b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "25d2c7d6-9523-4068-88e9-c1284e54389a",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C11",
+      "claim": "Zeb1-expressing cells sustain levels of Ki67 and Atoh1",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Zeb1-expressing cells had short, multipolar extensions (x\u00af length=140 \u00b1 13 \u03bcm vs 60 \u00b1 3 \u03bcm), expressed reduced p27 and sustained levels of Ki67 and Atoh1, indicating arrested maturation and proliferating, GNP-like state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunocytochemistry data shown in Figure 2b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "9a56e043-f3eb-4060-aefd-561364c120be",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C12",
+      "claim": "Zeb1-expressing GNPs display an apolar, isotropic f-actin distribution reminiscent of GNP morphology in vivo",
+      "claim_type": "EXPLICIT",
+      "source": "While Zeb1-expressing GNPs were motile on time-lapse microscopy in dissociated cultures, they did not display the typical two-stroke nucleokinesis cycle used by differentiated CGNs and had an apolar, isotropic f-actin distribution reminiscent of GNP morphology in vivo (Videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time-lapse microscopy data shown in Videos 1 and 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "253b49a2-dcb9-4a32-9f18-0e9deaa3ac50",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C13",
+      "claim": "Zeb1-expressing GNPs do not display the typical two-stroke nucleokinesis cycle used by differentiated CGNs",
+      "claim_type": "EXPLICIT",
+      "source": "While Zeb1-expressing GNPs were motile on time-lapse microscopy in dissociated cultures, they did not display the typical two-stroke nucleokinesis cycle used by differentiated CGNs and had an apolar, isotropic f-actin distribution reminiscent of GNP morphology in vivo (Videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time-lapse microscopy data shown in Videos 1 and 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "54dc0a8e-2c8a-4fa1-bb96-68db38b8c858",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C15",
+      "claim": "Zeb1-silenced cells incorporate EdU at lower rates than control cells",
+      "claim_type": "EXPLICIT",
+      "source": "Zeb1-silenced cells incorporated EdU at lower rates than control cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by EdU incorporation assay data shown in Figure 2c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "cf857d33-b49a-4d1c-b6b2-0236970439f9",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C17",
+      "claim": "Loss of Zeb1 function in vivo leads to an increase in Tag1 and NeuN differentiation marker gene expression at E18.5",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our ex vivo gene silencing results, loss of Zeb1 function in vivo leads to an increase in Tag1 and NeuN differentiation marker gene expression, indicating an increase of neuronal differentiation in the absence of Zeb1 (Figure 2e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry in E18.5 Zeb1 null embryos shown in Figure 2e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "faf44f6e-da83-4075-9217-9327a7a4324d",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C18",
+      "claim": "Zeb1 gain-of-function suppresses a group of genes increasingly expressed between P0 and P15",
+      "claim_type": "EXPLICIT",
+      "source": "Zeb1 gain-of-function suppressed a group of genes increasingly expressed between P0 and P15 (Figure 3b, Figure 3\u2014figure supplement 1), consistent with previous observations that Zeb1 acts as a transcriptional repressor.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Affymetrix DNA array data shown in Figure 3b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "74f9c302-3ad9-4dc6-833c-feb2b4607de5",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C19",
+      "claim": "Zeb1 acts as a transcriptional repressor",
+      "claim_type": "EXPLICIT",
+      "source": "Zeb1 gain-of-function suppressed a group of genes increasingly expressed between P0 and P15 (Figure 3b, Figure 3\u2014figure supplement 1), consistent with previous observations that Zeb1 acts as a transcriptional repressor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from gene expression profiling data and supported by prior knowledge",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "59a9a28b-5e9a-4c83-9499-e1e491d41f93",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C20",
+      "claim": "Zeb1-repressed genes are associated with tissue morphogenesis, epithelial polarization, cell adhesion and control of cell motility",
+      "claim_type": "EXPLICIT",
+      "source": "Gene ontology analysis revealed this group of genes to be associated with tissue morphogenesis, epithelial polarization, cell adhesion and control of cell motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gene ontology analysis of microarray data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "06d7efdd-42df-42d2-96ab-52231ac37a09",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C21",
+      "claim": "Key members of the apical or basolateral polarity pathways (Pard6a, Pard3a, Dlg2 and Lin7a) are among the Zeb1-repressed genes",
+      "claim_type": "EXPLICIT",
+      "source": "Key members of the apical or basolateral polarity pathways (Pard6a Pard3a, Dlg2 and Lin7a) and Cdh1 AJ adhesion molecule were among the Zeb1-repressed genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by microarray data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "0ac83b38-32d1-4051-8ab5-9ee9a5180c89",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C22",
+      "claim": "Cdh1 AJ adhesion molecule is among the Zeb1-repressed genes",
+      "claim_type": "EXPLICIT",
+      "source": "Key members of the apical or basolateral polarity pathways (Pard6a Pard3a, Dlg2 and Lin7a) and Cdh1 AJ adhesion molecule were among the Zeb1-repressed genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by microarray data analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "69f51819-5bbc-4336-a955-9deff3c25dae",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C23",
+      "claim": "Various genes previously shown to be induced during EMT were enriched in Zeb1-expressing GNPs",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, we analyzed the EMT/MET signature upon Zeb1 gain-of-function in GNPs, using a pathway-focused PCR array. Various genes previously shown to be induced during EMT were enriched in these GNPs, while a class of MET-related genes were repressed (see Tables in Supplementary file 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RT2 Profiler PCR array data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "c47655f1-9a79-4d39-b8bf-45647ffe3ccb",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C24",
+      "claim": "A class of MET-related genes were repressed in Zeb1-expressing GNPs",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, we analyzed the EMT/MET signature upon Zeb1 gain-of-function in GNPs, using a pathway-focused PCR array. Various genes previously shown to be induced during EMT were enriched in these GNPs, while a class of MET-related genes were repressed (see Tables in Supplementary file 1B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by RT2 Profiler PCR array data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "c0d1c744-5edd-4907-bbf2-f71418c9ca3b",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C25",
+      "claim": "The protein expression of many Zeb1 targets is mutually exclusive with Zeb1 or Ki67 in vivo",
+      "claim_type": "EXPLICIT",
+      "source": "Not only were many of these genes increasingly expressed in the normal developmental time course (Figure 3\u2014figure supplement 2) and validated as suppressed in Zeb1-expressing GNPs (Figure 3c), the protein expression of many of them was mutually exclusive with Zeb1 or Ki67 in vivo (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry data shown in Figure 3d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "d85cfb91-060b-4a9e-9ba7-062f69e6cdbe",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C26",
+      "claim": "Many of the proximal promoters of key apical-basal polarity genes (Pard6a, Pard6b, Pard3a, Pard6g) show clear Zeb1 binding peaks",
+      "claim_type": "EXPLICIT",
+      "source": "Many of the proximal promoters of key apical-basal polarity genes (Pard6a, Pard6b, Pard3a, Pard6g) and other Zeb1-regulated genes identified in our screen (Chl1, Limk2) showed clear Zeb1 binding peaks, suggesting that they are direct targets (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ChIP-seq data in NS5 mouse neural stem cells shown in Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "e06d4125-9f1f-4c4d-8cf2-2fe4916e20f4",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C27",
+      "claim": "Zeb1 binding events are highly associated with downregulated genes",
+      "claim_type": "EXPLICIT",
+      "source": "Computational analyses comparing the genome-wide Zeb1 binding profile to the Zeb1-regulated genes identified by expression profiling showed Zeb1 binding events are highly associated with downregulated genes (Figure 4a\u2013c), further pointing to Zeb1 as a transcriptional repressor in neural stem/progenitor cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by computational analysis of ChIP-seq and expression profiling data shown in Figure 4a-c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "77029ce8-dbe9-48b8-9022-5e1b9f0c42f6",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C28",
+      "claim": "Strong Zeb1 binding was observed at the proximal upstream sequences of Pard6 and Pard3a genes in purified P7 GNPs",
+      "claim_type": "EXPLICIT",
+      "source": "Strong Zeb1 binding was observed at positive control regions in the Zeb1 gene and Cdh1 gene, at the proximal upstream sequences of Pard6 and Pard3a genes and at an intronic site in the Chl1 gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP PCR validation in purified P7 GNPs shown in Figure 4d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "9f856290-4d95-4b65-bccf-dd4536e088a3",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C29",
+      "claim": "Strong Zeb1 binding was observed at an intronic site in the Chl1 gene in purified P7 GNPs",
+      "claim_type": "EXPLICIT",
+      "source": "Strong Zeb1 binding was observed at positive control regions in the Zeb1 gene and Cdh1 gene, at the proximal upstream sequences of Pard6 and Pard3a genes and at an intronic site in the Chl1 gene.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP PCR validation in purified P7 GNPs shown in Figure 4d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "465fb201-d3e0-453d-b4a6-f5d48b9dc832",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C30",
+      "claim": "Restored expression of Pard6a, Pard3a, and Chl1 rescued all measured phenotypes to normal levels in CGNs in the context of Zeb1 gain-of-function",
+      "claim_type": "EXPLICIT",
+      "source": "Restored expression of Pard6a, Pard3a, and Chl1 rescued all measured phenotypes to normal levels in CGNs. Individual introduction of each of these downstream Zeb1 targets allowed GNPs to acquire mature CGN status, characterize long neurites, expression of the p27 cell cycle inhibitor, absence of Ki67 labeling or EdU incorporation and GZ exit with subsequent migration to the IGL, even with Zeb1 gain-of-function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by functional rescue experiments shown in Figures 5 and 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "9e776272-b9ff-4c2b-84de-ef81bf9a23fe",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C31",
+      "claim": "Constitutively active Jam-C and Lin7a stimulated cell cycle exit, GZ exit and migration ex vivo but did not influence maturation parameters in vitro",
+      "claim_type": "EXPLICIT",
+      "source": "Constitutively active Jam-C and the basolateral polarity protein Lin7a did not influence maturation parameters in vitro (Figure 5); however, both stimulated cell cycle exit, GZ exit and migration ex vivo (Figure 6), suggesting that they act non-cell\u2013autonomously in the complex ex vivo environment.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by in vitro and ex vivo functional assay data shown in Figures 5 and 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "ec05b690-2bc4-46b0-bafc-95d438c5bcaf",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C32",
+      "claim": "Dlg2 stimulated cell cycle exit and p27 expression in all conditions tested but was unable to rescue neurite extension or migration ex vivo",
+      "claim_type": "EXPLICIT",
+      "source": "Dlg2 stimulated cell cycle exit and p27 expression in all conditions tested but was unable to rescue neurite extension or migration ex vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by functional assay data shown in Figures 5 and 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "010f2274-1203-460f-845a-854f98de7c8a",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C33",
+      "claim": "Sorl1, Bhlhe40, Nfib, and Cdk5r1 reestablished p27 expression but were insufficient to rescue other features of mature CGNs",
+      "claim_type": "EXPLICIT",
+      "source": "Four genes, Sorl1, Bhlhe40, Nfib, and Cdk5r1, reestablished p27 expression. p27 is known for its cell cycle inhibitory and cytoskeletal regulatory properties; however, p27 expression alone in Sorl1-, Bhlhe40-, Nfib- or Cdk5r1-expressing cells was insufficient to rescue the other features of mature CGNs, such as neurite extension, loss of Ki67 labeling/EdU incorporation, or GZ exit and migration to the IGL.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by functional assay data shown in Figures 5 and 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "6e04fef3-58de-49c9-a48b-262fbf058fef",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C34",
+      "claim": "Restored expression of Nfib and Flt1 enhanced neurite extension but failed to rescue the full spectrum of mature CGN features",
+      "claim_type": "EXPLICIT",
+      "source": "Restored expression of Nfib and Flt1 enhanced neurite extension but failed to rescue the full spectrum of mature CGN features, much like the genes that stimulated p27 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by functional assay data shown in Figures 5 and 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "bb2a43e7-ad8c-49d5-99c6-7543f5d7ee5b",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C35",
+      "claim": "Cdh1, Cdk5r1 and Sorl1 were not sufficient to rescue IGL-directed migration of Zeb1 over-expressing cells in longer term ex vivo incubations",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, longer term ex vivo incubations revealed that Cdh1, Cdk5r1 and Sorl1 were not sufficient to rescue IGL-directed migration of Zeb1 over-expressing cells (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by 72 hour ex vivo incubation data shown in Figure 6\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "370b29eb-852a-453f-88fd-735241bc1188",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C36",
+      "claim": "Bhlhe40 expression could rescue IGL-directed migration with a 72 hr ex vivo incubation",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Bhlhe40 expression, a negative regulator of EMT could rescue with a 72 hr ex vivo incubation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by 72 hour ex vivo incubation data shown in Figure 6\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "8d469781-f576-41b2-8dd8-1a013e235451",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C37",
+      "claim": "Pard6a-, Pard3a-, and Chl1-rescue restored two-stroke nucleokinesis and JAM-C adhesion levels",
+      "claim_type": "EXPLICIT",
+      "source": "Time-lapse imaging revealed of cultured neurons revealed that Pard6a-, Pard3a-, and Chl1-rescue also restored two-stroke nucleokinesis and JAM-C adhesion levels, two cell biological outputs of the PAR complex function in maturing CGNs (Solecki et al., 2004; Famulski et al., 2010) (see Videos 3\u201312).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by time-lapse imaging data shown in Videos 3-12",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "7d929886-9321-4abc-acd3-f3f123240d95",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C38",
+      "claim": "Restored Pard6a and Chl1 expression did not affect the levels at which Zeb1 suppressed its target genes",
+      "claim_type": "EXPLICIT",
+      "source": "Restored Pard6a and Chl1 expression did not affect the levels at which Zeb1 suppressed its target genes, indicating that Pard6a and Chl1 did not counteract Zeb1 at the transcriptional level or non-specifically reduce Zeb1 target repression in our assay system (Figure 7a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data shown in Figure 7a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "3a3beae5-7a5d-47fc-940f-545ddd3ec497",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C39",
+      "claim": "Restored Pard6a or Chl1 expression reduced Zeb1-mediated activation of CyclinD1 and CylinD2 mRNA",
+      "claim_type": "EXPLICIT",
+      "source": "Restored Pard6a or Chl1 expression reduced Zeb1-mediated activation of CyclinD1 and CylinD2 mRNA and Atoh1 protein levels, all of which are required to maintain GNPs in the undifferentiated state (Figure 7b and c) (Ayrault et al., 2010; Flora et al., 2009; Huard et al., 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data shown in Figure 7b",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "73d1b35a-25cb-4e17-9df5-291d5c8078c7",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C40",
+      "claim": "Restored Pard6a or Chl1 expression reduced Atoh1 protein levels",
+      "claim_type": "EXPLICIT",
+      "source": "Restored Pard6a or Chl1 expression reduced Zeb1-mediated activation of CyclinD1 and CylinD2 mRNA and Atoh1 protein levels, all of which are required to maintain GNPs in the undifferentiated state (Figure 7b and c) (Ayrault et al., 2010; Flora et al., 2009; Huard et al., 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunocytochemistry data shown in Figure 7c",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "b40e5b57-edcb-4029-995f-c21a2ec6859d",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C41",
+      "claim": "GNP cultures treated with SAG displayed elevated Zeb1 protein",
+      "claim_type": "EXPLICIT",
+      "source": "GNP cultures treated with SAG, a potent small-molecule SHH agonist, displayed not only elevated Zeb1 but also decreased Pard6a and Chl1 proteins (Figure 8a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunocytochemistry and Western blot data shown in Figure 8a,b",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "af39a27e-998d-4e49-9513-f66c2e084786",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C42",
+      "claim": "GNP cultures treated with SAG displayed decreased Pard6a and Chl1 proteins",
+      "claim_type": "EXPLICIT",
+      "source": "GNP cultures treated with SAG, a potent small-molecule SHH agonist, displayed not only elevated Zeb1 but also decreased Pard6a and Chl1 proteins (Figure 8a,b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunocytochemistry data shown in Figure 8a",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "154ba8ea-ac85-4eb7-b196-d01e48a9ba01",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C43",
+      "claim": "MBs from adult Ptch1+/-, Cdkn2c-/- mice displayed high levels of Zeb1 expression",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike normal P15 cerebellum (Figure 1b), MBs from adult Ptch1+/-, Cdkn2c-/- mice displayed high levels of Zeb1 expression (Figure 8c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by immunohistochemistry data shown in Figure 8c",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "ada6d966-1f3a-47ef-9149-fa4ac77485d6",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C44",
+      "claim": "Zeb1 expression is complementary with class III beta-tubulin/Tuj1 in MBs",
+      "claim_type": "EXPLICIT",
+      "source": "Zeb1 expression was complementary with that of class III beta-tubulin/Tuj1, an early neuronal differentiation marker, indicating that Zeb1 expression is extinguished in both normal and tumor-derived cells proceeding toward the differentiated phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunohistochemistry data showing complementary expression patterns",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "2e0254f2-84d9-4d3b-b15f-6222d6583210",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C45",
+      "claim": "Mouse MBs contained higher levels of Zeb1 RNA than GNPs purified at P7",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse MBs contained higher levels of Zeb1 RNA than GNPs purified at P7, the time of peak Zeb1 expression (Figure 8d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data shown in Figure 8d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "49cfb574-93f5-4aa4-88dd-e9ba7415899c",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C46",
+      "claim": "Most Zeb1 targets identified in the Affymetrix Gene Chip array were expressed at lower levels in mouse MBs than in P7 GNPs, with the sole exception of Pard3a",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, most Zeb1 targets identified in our Affymetrix Gene Chip array were expressed at lower levels in mouse MBs than in P7 GNPs, with the sole exception of Pard3a (Figure 8d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data shown in Figure 8d",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "dc869dfc-8999-4be2-b23a-ed6a810eb3ee",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C47",
+      "claim": "ZEB1 RNA was about four times higher in the human SHH MB subgroup compared to WNT, Group3 and Group4 MBs",
+      "claim_type": "EXPLICIT",
+      "source": "ZEB1 RNA was about four times higher in the human SHH MB subgroup compared to WNT, Group3 and Group4 MBs (Figure 8e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by analysis of human MB samples shown in Figure 8e",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "5eb89ac7-4453-4f6e-8d06-5372525e6011",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C49",
+      "claim": "Zeb1 silencing or increased Pard6a, Chl1 and Lin7a expression restored GZ exit and migration to the IGL to near wild-type levels in Ptch1-deficient GNPs",
+      "claim_type": "EXPLICIT",
+      "source": "Zeb1 silencing or increased Pard6a, Chl1 and Lin7a expression restored GZ exit and migration to the IGL to near wild-type levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ex vivo cerebellar slice migration assay data shown in Figure 8f",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "20514050-74da-4d80-8bee-843028a533ab",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C50",
+      "claim": "Zeb1 is the primary EMT factor expressed in GNPs during the early postnatal peak of neurogenesis",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative RT-PCR revealed that Zeb1 is the primary EMT factor expressed in GNPs during the early postnatal (P) peak of neurogenesis, and that expression diminishes as GNPs exit the cell cycle to differentiate into CGNs: at P7 Zeb1 mRNA was 28-fold higher than the next most abundant transcription factor, Snail1 (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data comparing EMT factor expression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "cb3ec92d-0956-45b5-8f13-c7dbb74df360",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C51",
+      "claim": "Zeb1 expression diminishes as GNPs exit the cell cycle to differentiate into CGNs",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative RT-PCR revealed that Zeb1 is the primary EMT factor expressed in GNPs during the early postnatal (P) peak of neurogenesis, and that expression diminishes as GNPs exit the cell cycle to differentiate into CGNs: at P7 Zeb1 mRNA was 28-fold higher than the next most abundant transcription factor, Snail1 (Figure 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qRT-PCR data at multiple developmental timepoints",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "e0815e71-057b-4a5f-b683-e7357e508430",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C52",
+      "claim": "GNPs are mesenchymal-like, as they express a high level of Zeb1 and low levels of polarity genes",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results indicate that GNPs are mesenchymal-like, as they express a high level of Zeb1 and low levels of polarity genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from expression profiling data showing inverse correlation between Zeb1 and polarity genes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "e67972ca-381e-4edb-b01b-cc25a5cd7466",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C53",
+      "claim": "Zeb1 gain-of-function arrests maturation and maintains a proliferating, GNP-like state",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Zeb1-expressing cells had short, multipolar extensions (x\u00af length=140 \u00b1 13 \u03bcm vs 60 \u00b1 3 \u03bcm), expressed reduced p27 and sustained levels of Ki67 and Atoh1, indicating arrested maturation and proliferating, GNP-like state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple cellular assays including neurite length, Ki67, p27, and Atoh1 expression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "750eb3f3-c2ee-4f36-8955-2cfd252387f5",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C55",
+      "claim": "Zeb1 is necessary and sufficient to restrict GNPs to their GZ niche",
+      "claim_type": "EXPLICIT",
+      "source": "These observations indicate that Zeb1 inhibits differentiation of GNPs to CGNs and is necessary and sufficient to restrict GNPs to their GZ niche.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from combined gain-of-function and loss-of-function experimental results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "e626659d-7c79-47d8-b5d3-254154537d86",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C56",
+      "claim": "Zeb1 inhibits GNP polarization",
+      "claim_type": "EXPLICIT",
+      "source": "They also suggest that Zeb1 inhibits GNP polarization, as neurite extension, two-stroke nucleokinesis and GZ exit depend on polarity signaling complexes in CGNs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from functional data showing Zeb1 effects on polarization-dependent processes",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "bd496eac-00f3-42dc-9f93-692a25b42d00",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C57",
+      "claim": "Zeb1 directly regulates genes expected to play a role in cell adhesion and apical-basal polarity",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these results indicate that Zeb1 directly regulates genes expected to play a role in cell adhesion and apical-basal polarity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-seq and ChIP-PCR validation data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "2e9aee2d-4f3c-422f-b32a-0eb492f4e1ac",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C58",
+      "claim": "Pard6a, Pard3a and Chl1 are prerequisites for mature CGN characteristics",
+      "claim_type": "EXPLICIT",
+      "source": "The broad rescue of Zeb1 gain-of-function phenotypes by the Pard6a and Pard3a polarity proteins and the Chl1 adhesion molecule demonstrates that these Zeb1-supressed targets are prerequisites for mature CGN characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by functional rescue experiments showing restoration of multiple CGN features",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "fb09dfe2-2864-4039-b1e3-cd9feaff8fb0",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C59",
+      "claim": "SHH maintains Zeb1 expression in GNPs",
+      "claim_type": "EXPLICIT",
+      "source": "We found that SHH, a potent GNP mitogen, maintains Zeb1 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by SAG treatment experiments showing elevated Zeb1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "f630c80d-8a5f-424b-8464-0273f0ac7570",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C60",
+      "claim": "Zeb1 expression persists in MB tumor cells with persistent SHH activation",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Zeb1 expression persists in MB tumor cells, the transformed GNP counterpart in which SHH signaling is persistently activated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by immunohistochemistry and qRT-PCR data in mouse and human MB samples",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "f6d7ea85-47f9-469f-b93d-9edc97ba3e6f",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C61",
+      "claim": "Zeb1 is functionally required downstream of SHH signaling to control GZ exit",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results show that Zeb1 is functionally required downstream of SHH signaling to control GZ exit.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by rescue experiments in Ptch1-deficient GNPs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "b70e451d-a3bb-404a-aa95-f629f07aa94c",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C62",
+      "claim": "CGN differentiation bears a remarkable similarity to mesenchymal-to-epithelial transition",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings show that CGN differentiation bears a remarkable similarity to mesenchymal-to-epithelial transition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from multiple lines of evidence including Zeb1 expression patterns, target gene regulation, and functional similarities",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "800d2dce-526e-458a-8c4d-a601ec6839b9",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C63",
+      "claim": "Active polarity inhibition contributes to altered GZ exit in pediatric brain cancers",
+      "claim_type": "EXPLICIT",
+      "source": "These results reveal unexpected parallels between neuronal differentiation and mesenchymal-to-epithelial transition and suggest that active polarity inhibition contributes to altered GZ exit in pediatric brain cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from findings in MB models showing Zeb1-mediated polarity inhibition and rescue by polarity gene expression",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "b9ed00e7-e8ba-4afe-9e80-1a00e39bd70f",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C64",
+      "claim": "Zeb1 controls neuronal differentiation by transcriptionally repressing polarity genes in neuronal progenitors",
+      "claim_type": "EXPLICIT",
+      "source": "We report that zinc finger and homeobox transcription factor-1 (Zeb1), a master regulator of epithelial polarity, controls neuronal differentiation by transcriptionally repressing polarity genes in neuronal progenitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ChIP-seq, expression profiling, and functional validation experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "199bc559-a1ef-40e4-9d86-0ba44c4f379b",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C65",
+      "claim": "Zeb1 inhibits polarization and retains progenitors in their germinal zone",
+      "claim_type": "EXPLICIT",
+      "source": "Necessity-sufficiency testing and functional target screening in cerebellar granule neuron progenitors (GNPs) reveal that Zeb1 inhibits polarization and retains progenitors in their germinal zone (GZ).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by gain-of-function and loss-of-function experiments in GNPs",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "a2606363-888b-4752-86e0-ef541b09f4ef",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C66",
+      "claim": "Zeb1 expression is elevated in the Sonic Hedgehog (SHH) medulloblastoma subgroup originating from GNPs with persistent SHH activation",
+      "claim_type": "EXPLICIT",
+      "source": "Zeb1 expression is elevated in the Sonic Hedgehog (SHH) medulloblastoma subgroup originating from GNPs with persistent SHH activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by qRT-PCR data in mouse and human MB samples",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "01574e44-bead-4c1e-9737-b61178dc1465",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C67",
+      "claim": "Restored polarity signaling promotes differentiation and rescues GZ exit in Ptch1-deficient GNPs",
+      "claim_type": "EXPLICIT",
+      "source": "Restored polarity signaling promotes differentiation and rescues GZ exit, suggesting a model for future differentiative therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by rescue experiments showing restored GZ exit with polarity gene expression",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "7a29f01f-92ab-4b79-a9af-b18d23abeeba",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C68",
+      "claim": "Defective neuronal polarization is proposed to underlie the pathology of some neurodevelopmental or neurodegenerative diseases",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, defective neuronal polarization is proposed to underlie the pathology of some neurodevelopmental or neurodegenerative diseases, and restored polarity has been suggested as a potential therapeutic approach for syndromes involving perturbed polarity-linked mechanisms (May-Simera and Liu, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "8cb185f1-0469-4479-9cbb-442bcc93f9e4",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C69",
+      "claim": "Classic cell polarity signaling molecules create the cellular asymmetry required for neuronal development and circuit assembly",
+      "claim_type": "EXPLICIT",
+      "source": "Emerging evidence suggests that classic cell polarity signaling molecules, including the Numb endocytic adaptor, the Partitioning defective (Pard) polarity complex and LKB1/SAD kinases, create the cellular asymmetry required for neuronal development and circuit assembly (Shi et al., 2003; Solecki et al., 2004; Kishi et al., 2005; Cappello et al., 2006; Rasin et al., 2007; Shelly et al., 2007; Barnes et al., 2007; Bultje et al., 2009; Hengst et al., 2009; Zhou et al., 2011; Chen et al., 2013; Famulski et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from multiple prior studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "c2ac78da-8450-4efd-ba40-93892449a581",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C70",
+      "claim": "Zeb1 functions in many organ systems, including muscle, lymphocytes, and nervous system",
+      "claim_type": "EXPLICIT",
+      "source": "Zeb1 functions in many organ systems, including muscle, lymphocytes, and nervous system (Takagi et al., 1998; Liu et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "638262d7-dc9b-4270-aaa0-a7e81bafc47d",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C71",
+      "claim": "Proliferating progenitors express Zeb1 in GZs in the developing mouse brain",
+      "claim_type": "EXPLICIT",
+      "source": "Proliferating progenitors express Zeb1 in GZs in the developing mouse brain (Darling et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "e0246dee-9110-43b8-9672-7dfd51098434",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C72",
+      "claim": "Loss of Zeb1 function in the developing neocortex reduces proliferation in the VZ and SVZ",
+      "claim_type": "EXPLICIT",
+      "source": "While loss of Zeb1 function in the developing neocortex reduces proliferation in the VZ and SVZ (Liu et al., 2008), it remains unknown how Zeb1 regulates neural progenitor populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "209ffa5b-6e94-40be-861b-6482fe611101",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C73",
+      "claim": "Zeb1 activates stemness pathways in immature, unpolarized epithelial cells and their transformed counterparts",
+      "claim_type": "EXPLICIT",
+      "source": "Zeb1 activates stemness pathways in immature, unpolarized epithelial cells and their transformed counterparts (Spaderna et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "f317a9c6-7bb6-4c10-ab48-000d8c08edc8",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C74",
+      "claim": "High Zeb1 expression inhibits epithelial differentiation and drives cells toward epithelial-to-mesenchymal transition (EMT), while low expression allows mesenchymal-to-epithelial transition (MET)",
+      "claim_type": "EXPLICIT",
+      "source": "It also controls transitions in epithelial differentiation and polarity plasticity: high Zeb1 expression inhibits epithelial differentiation and drives cells toward epithelial-to-mesenchymal transition (EMT), while low expression allows mesenchymal-to-epithelial transition (MET).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of Zeb1 function in epithelial cells",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "2d7801ea-23e8-49aa-918c-7641e949d76b",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C75",
+      "claim": "During EMT, Zeb1 acts as a transcriptional repressor that silences adherens junction (AJ) and apical-basal polarity genes",
+      "claim_type": "EXPLICIT",
+      "source": "During EMT, Zeb1 acts as a transcriptional repressor that silences adherens junction (AJ) and apical-basal polarity genes (Aigner et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "b5fbd85d-0090-4f45-927a-6c9bdb5e7113",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C76",
+      "claim": "Zeb1 simultaneously blocks differentiation, apical-basal polarity, and junction formation of epithelial cells, locking them into the mesenchymal state",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Zeb1 simultaneously blocks differentiation, apical-basal polarity, and junction formation of epithelial cells, locking them into the mesenchymal state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of Zeb1 function in epithelial cells",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "1ba879e1-5379-48fd-a420-f82b124e492f",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C77",
+      "claim": "EMT-like events have been observed in the transition of polarized radial glia to their delaminating progeny",
+      "claim_type": "EXPLICIT",
+      "source": "In the developing nervous system, EMT-like events have been observed in the transition of polarized radial glia to their delaminating progeny (Rousso et al., 2012; Itoh et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "aba7678c-0fc8-4f6f-88f1-9fc0898584b9",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C78",
+      "claim": "Persistent Sonic hedgehog (SHH) signaling blocks GNP GZ exit",
+      "claim_type": "EXPLICIT",
+      "source": "We have known for more than a decade that persistent Sonic hedgehog (SHH) signaling blocks GNP GZ exit, but the mechanism has remained a mystery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "884d0145-6014-466b-a984-4fda2e28a4dc",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C79",
+      "claim": "Developing CGNs provide an excellent model of the mechanisms regulating neurogenesis, neuronal differentiation, polarization linked to morphological maturation, and GZ exit",
+      "claim_type": "EXPLICIT",
+      "source": "Developing CGNs provide an excellent model of the mechanisms regulating neurogenesis, neuronal differentiation, polarization linked to morphological maturation, and GZ exit (Hatten and Roussel, 2011; Hatten and Roussel, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "f1c1cc96-0a53-427b-aab5-09ba8d8cb6c4",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C80",
+      "claim": "Morphologically unpolarized GNPs and newly postmitotic CGNs migrate tangentially near the cerebellar surface in the external granule layer (EGL)",
+      "claim_type": "EXPLICIT",
+      "source": "They also provide a model of migration mechanisms, since they undergo two migration phases: morphologically unpolarized GNPs and newly postmitotic CGNs migrate tangentially near the cerebellar surface in the external granule layer (EGL) while polarized CGNs migrate radially away from their GZ and cross the molecular layer (ML) to reside within the internal granule layer (IGL) (Hatten, 2002; Ch\u00e9dotal, 2010; Legu\u00e9 et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "dcb7a138-5f5e-4eca-b52e-8249c6b6f045",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C81",
+      "claim": "Polarized CGNs migrate radially away from their GZ and cross the molecular layer (ML) to reside within the internal granule layer (IGL)",
+      "claim_type": "EXPLICIT",
+      "source": "They also provide a model of migration mechanisms, since they undergo two migration phases: morphologically unpolarized GNPs and newly postmitotic CGNs migrate tangentially near the cerebellar surface in the external granule layer (EGL) while polarized CGNs migrate radially away from their GZ and cross the molecular layer (ML) to reside within the internal granule layer (IGL) (Hatten, 2002; Ch\u00e9dotal, 2010; Legu\u00e9 et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "809d3fb9-2b1d-4ba8-a23b-6733d59c5455",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C82",
+      "claim": "Excessive or constitutive mitogenic signaling in GNPs disrupts the intricate balance of GZ exit and radial migration in cerebellar medulloblastoma (MB)",
+      "claim_type": "EXPLICIT",
+      "source": "In cerebellar medulloblastoma (MB), excessive or constitutive mitogenic signaling in GNPs disrupts the intricate balance of GZ exit and radial migration via unknown motility mechanisms (Goodrich et al., 1997; Kim et al., 2003; Yang et al., 2008; Ayrault et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from prior literature",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "9ca6d0b5-9ac0-47fa-9d05-56025c08178c",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "claim_id": "C83",
+      "claim": "The balance of EMT-like vs. MET-like processes and of proliferative vs. maturation processes may be a key developmental mechanism that, when disrupted, contributes to the pathological alteration of GZ exit in neurodevelopmental disorders and pediatric cancers",
+      "claim_type": "EXPLICIT",
+      "source": "The balance of EMT-like vs. MET-like processes and of proliferative vs. maturation processes may be a key developmental mechanism that, when disrupted, contributes to the pathological alteration of GZ exit in neurodevelopmental disorders and pediatric cancers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the study findings and proposed as a general mechanism",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "78d7614b-e008-4c7d-9120-f34c48f280cc",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Zeb1 is the primary EMT factor expressed in GNPs during early postnatal neurogenesis, with mRNA levels 28-fold higher than Snail1 at P7, and expression diminishes as GNPs differentiate into CGNs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C50, and C51 are well-supported by qRT-PCR data (Figure 1a) and immunohistochemistry (Figure 1b) showing Zeb1 expression patterns across developmental timepoints. The quantitative measurements and spatial localization data provide converging evidence for this temporal expression pattern.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "719e7e00-d80b-447f-894f-5f979e774fb0",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Zeb1 is co-expressed with proliferation markers (Ki67) and GNP identity markers (Siah2, Meis1/2) at P7, but is greatly reduced in p27-positive postmitotic CGNs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 are supported by immunohistochemistry data showing co-localization and complementary expression patterns. The data demonstrate that Zeb1 expression is restricted to proliferating progenitors and excluded from differentiated neurons.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "e22c978b-bd07-4a1a-b72b-f2e9ace65f6a",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Zeb1 expression is inversely correlated with polarity genes (Pard6a, Prkcz), and GNPs are mesenchymal-like with high Zeb1 and low polarity gene expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 and C52 are supported by qRT-PCR data (Figure 1c) and promoter reporter analysis (Figure 1d) showing inverse correlation between Zeb1 and polarity genes. The characterization of GNPs as mesenchymal-like is a reasonable inference from the expression data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "ab249051-0532-416f-912f-4f7a11e38ef3",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Zeb1 gain-of-function arrests GNP maturation, resulting in shorter neurites (60\u00b13 \u03bcm vs 140\u00b113 \u03bcm), reduced p27, and sustained Ki67 and Atoh1 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C11 and C53 are supported by quantitative neurite measurements and immunocytochemistry data (Figure 2a,b). The measurements show statistically significant differences (p<0.01) and multiple independent markers confirm the arrested maturation phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "4be919b2-d09c-4230-9583-41f5cc7fde42",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Zeb1-expressing GNPs display apolar, isotropic f-actin distribution and do not undergo typical two-stroke nucleokinesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13 are supported by time-lapse microscopy data (Videos 1-2) showing altered cell morphology and migration patterns. The visual evidence clearly demonstrates differences in cytoskeletal organization and motility behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "c26eeb77-ad62-4e3e-8f9d-87afc1b74074",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Zeb1 loss-of-function promotes GNP differentiation and GZ exit, as demonstrated by reduced EdU incorporation and increased differentiation markers in Zeb1-silenced or null cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15, C17, and C55 are supported by EdU incorporation assays (Figure 2c), immunohistochemistry in Zeb1 null embryos (Figure 2e), and ex vivo migration assays. The complementary gain- and loss-of-function data establish necessity and sufficiency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "35b39814-7943-4caa-9893-bad37f06cab7",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Zeb1 gain-of-function suppresses genes associated with tissue morphogenesis, epithelial polarization, and cell adhesion, including key polarity pathway members (Pard6a, Pard3a, Dlg2, Lin7a) and Cdh1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C22 are supported by Affymetrix microarray data (Figure 3b) and gene ontology analysis. The identification of specific polarity genes as Zeb1 targets is validated by multiple independent methods including qRT-PCR.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "2d6cd4f1-942b-44b1-b4d7-80dfcfb402a3",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Zeb1-expressing GNPs show enrichment of EMT-associated genes and repression of MET-related genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24 are supported by RT2 Profiler PCR array data (Supplementary file 1B). The pathway-focused analysis provides specific evidence for EMT/MET signature changes, though the manuscript does not provide detailed statistical analysis of these data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "d205829c-7c4c-4686-9c51-86350a311ccf",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Protein expression of many Zeb1 targets is mutually exclusive with Zeb1 or Ki67 in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C25 is supported by immunohistochemistry data (Figure 3d) showing complementary expression patterns for multiple targets. The spatial segregation of Zeb1 and its targets provides strong evidence for functional antagonism in vivo.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "b79a948f-6531-408c-84fb-9b4a607c1734",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Zeb1 directly binds to promoters of polarity genes (Pard6a, Pard6b, Pard3a, Pard6g) and other targets (Chl1, Limk2), as demonstrated by ChIP-seq and ChIP-PCR validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C29 and C57 are supported by ChIP-seq data in NS5 cells (Figure 4, supplement 2) and ChIP-PCR validation in P7 GNPs (Figure 4d). The computational analysis shows significant association between Zeb1 binding and downregulated genes, establishing direct transcriptional regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "dd0a4ff9-70de-456f-8a5b-0766913cbed8",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Restored expression of Pard6a, Pard3a, and Chl1 rescues all measured Zeb1 gain-of-function phenotypes, demonstrating these are prerequisites for mature CGN characteristics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30 and C58 are supported by comprehensive functional rescue experiments (Figures 5-6) showing restoration of neurite extension, p27 expression, loss of Ki67, reduced EdU incorporation, and GZ exit. The rescue of multiple independent phenotypes provides strong evidence for functional importance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "e5ac547b-4d30-4251-9439-bf479895721d",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Constitutively active Jam-C and Lin7a stimulated cell cycle exit and GZ exit ex vivo but did not influence maturation parameters in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C31 is supported by differential effects in vitro (Figure 5) versus ex vivo (Figure 6) assays. The context-dependent effects suggest non-cell-autonomous mechanisms, though the underlying mechanisms are not fully elucidated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "6adc2df8-03db-441f-86bb-62515c2675a7",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Dlg2 stimulated cell cycle exit and p27 expression but was unable to rescue neurite extension or migration ex vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 is supported by functional assay data (Figures 5-6) showing partial rescue. The selective rescue of some but not all phenotypes indicates Dlg2 is insufficient for complete CGN maturation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "0d476f72-2d12-42b7-a717-a4d5b341704e",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Several genes (Sorl1, Bhlhe40, Nfib, Cdk5r1, Flt1) showed partial rescue of specific phenotypes but were insufficient to rescue the full spectrum of mature CGN features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 are supported by functional screening data (Figures 5-6) showing selective rescue of individual phenotypes. The incomplete rescue demonstrates that multiple downstream pathways must be coordinately regulated for full CGN maturation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "5112ad10-e225-4ecf-bdb3-5db065e54ff2",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "In longer-term ex vivo incubations, Cdh1, Cdk5r1, and Sorl1 failed to rescue IGL-directed migration, while Bhlhe40 could rescue migration at 72 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C36 are supported by extended time-course experiments (Figure 6, supplement 2). The time-dependent rescue by Bhlhe40 suggests it may act through slower transcriptional mechanisms compared to the immediate effects of polarity proteins.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "f9f9563a-5ac1-4d64-8765-ec2b4dc63d55",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Pard6a, Pard3a, and Chl1 rescue restored two-stroke nucleokinesis and JAM-C adhesion levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 is supported by time-lapse imaging data (Videos 3-12) showing restoration of normal migration behavior and cell-cell adhesion. These cell biological outputs confirm functional rescue at the mechanistic level.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "287bfe4a-eb63-450c-b517-79094a59554f",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Restored Pard6a and Chl1 expression did not affect Zeb1-mediated suppression of target genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C38 is supported by qRT-PCR data (Figure 7a) showing continued target gene suppression despite rescue. This demonstrates that rescue occurs through post-transcriptional mechanisms rather than feedback inhibition of Zeb1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "2456cdc9-802e-4fa3-969a-eb3f5c4d2110",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Restored Pard6a or Chl1 expression reduced Zeb1-mediated activation of CyclinD1, CyclinD2 mRNA and Atoh1 protein levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 are supported by qRT-PCR (Figure 7b) and immunocytochemistry (Figure 7c) data. The reduction of proliferation-associated genes provides a mechanistic link between polarity restoration and cell cycle exit.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "81364924-8b35-47f6-bfce-c0942a467e5e",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "SHH signaling maintains Zeb1 expression, as demonstrated by elevated Zeb1 and decreased Pard6a/Chl1 proteins in SAG-treated GNP cultures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 and C59 are supported by immunocytochemistry and Western blot data (Figure 8a,b) showing SAG effects on protein expression. The data establish a regulatory link between SHH signaling and Zeb1 expression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "67b5e688-64cf-4f6a-9455-6f3613202ee0",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R20",
+      "result_category": "llm",
+      "result": "Zeb1 expression persists in MB tumor cells with elevated SHH signaling, with higher Zeb1 RNA than P7 GNPs and reduced expression of most Zeb1 targets (except Pard3a).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C46 and C60 are supported by immunohistochemistry (Figure 8c) and qRT-PCR (Figure 8d) in mouse MB models. The complementary expression with Tuj1 and elevated Zeb1 with reduced targets recapitulates the developmental pattern in a pathological context.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "118cd33e-e839-408d-a8f1-2ce23ade4f36",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R21",
+      "result_category": "llm",
+      "result": "ZEB1 RNA is approximately four times higher in human SHH MB subgroup compared to WNT, Group3, and Group4 MBs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47 and C66 are supported by analysis of human MB samples (Figure 8e, n=74 tumors). The subgroup-specific elevation of ZEB1 in SHH MBs provides translational relevance to the mouse findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "7beed7c8-c2f0-47a3-9ed8-7437c06eb2b5",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R22",
+      "result_category": "llm",
+      "result": "Zeb1 silencing or restored expression of Pard6a, Chl1, and Lin7a rescues GZ exit defects in Ptch1-deficient GNPs, demonstrating Zeb1 is functionally required downstream of SHH signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C61, and C67 are supported by ex vivo rescue experiments in Ptch1-deficient GNPs (Figure 8f, supplement 1). The restoration of near wild-type migration patterns establishes Zeb1 as a critical mediator of SHH effects on GZ exit.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "160ed069-5fd9-4253-b7a9-b651109f0a83",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R23",
+      "result_category": "llm",
+      "result": "Zeb1 inhibits GNP polarization, as neurite extension, two-stroke nucleokinesis, and GZ exit depend on polarity signaling complexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 is an inference supported by multiple lines of evidence including Zeb1 effects on polarization-dependent processes (C9-C13), direct regulation of polarity genes (C26-C29), and rescue by polarity proteins (C30). The inference is well-justified by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "94ae13ac-6b13-4bc1-ac4a-9877754361dc",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R24",
+      "result_category": "llm",
+      "result": "CGN differentiation bears remarkable similarity to mesenchymal-to-epithelial transition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 is a synthesis conclusion supported by multiple results: Zeb1 expression patterns (C1-C2), inverse correlation with polarity genes (C6), EMT/MET gene signatures (C23-C24), and functional parallels. The comparison is well-supported though represents a conceptual framework rather than direct demonstration of MET.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "cdfba4e3-365e-4450-befd-b7553752ee35",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R25",
+      "result_category": "llm",
+      "result": "Active polarity inhibition contributes to altered GZ exit in pediatric brain cancers, and the balance of EMT-like vs. MET-like processes may be a key developmental mechanism that when disrupted contributes to pathological GZ exit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63 and C83 are partially supported by MB data (C43-C47, C49) but represent speculative extensions beyond the demonstrated results. While the rescue experiments in Ptch1-deficient GNPs are compelling, the broader claims about pediatric brain cancers and neurodevelopmental disorders require additional validation in other tumor types and disease models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "f991d212-f4d0-40d3-a9a4-6fc9437af004",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R26",
+      "result_category": "llm",
+      "result": "Zeb1 controls neuronal differentiation by transcriptionally repressing polarity genes in neuronal progenitors and inhibits polarization to retain progenitors in their germinal zone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 summarize the main findings and are well-supported by the integrated evidence from expression profiling (C18-C22), ChIP studies (C26-C29), functional assays (C9-C11, C15), and rescue experiments (C30). This represents the core mechanistic conclusion of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    },
+    {
+      "id": "a9b039dd-e8a1-4fa6-87a6-eddf78b2e9ef",
+      "content_id": "4385c626-fae1-4d3a-b3cf-a07f8f4a2f3d",
+      "result_id": "R27",
+      "result_category": "llm",
+      "result": "Background claims establishing prior knowledge about neuronal polarity, Zeb1 function, EMT/MET, CGN development, and medulloblastoma.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C82 represent background knowledge cited from prior literature. These are appropriately referenced and provide necessary context for the study. No evaluation of the current work's data is required for these claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:43:55.543730Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "454d173d-f0b6-4394-96fa-f0ca5b0f82e5",
+      "result_id": "78d7614b-e008-4c7d-9120-f34c48f280cc"
+    },
+    {
+      "claim_id": "b585b9bc-7e49-4521-8c68-8eee8c7c8a88",
+      "result_id": "78d7614b-e008-4c7d-9120-f34c48f280cc"
+    },
+    {
+      "claim_id": "20514050-74da-4d80-8bee-843028a533ab",
+      "result_id": "78d7614b-e008-4c7d-9120-f34c48f280cc"
+    },
+    {
+      "claim_id": "cb3ec92d-0956-45b5-8f13-c7dbb74df360",
+      "result_id": "78d7614b-e008-4c7d-9120-f34c48f280cc"
+    },
+    {
+      "claim_id": "4906e24f-5706-42ef-9493-c3a9a5580312",
+      "result_id": "719e7e00-d80b-447f-894f-5f979e774fb0"
+    },
+    {
+      "claim_id": "bd341150-038f-49e5-b96e-2566192afb89",
+      "result_id": "719e7e00-d80b-447f-894f-5f979e774fb0"
+    },
+    {
+      "claim_id": "faaca90d-1ed1-4a4d-a927-1690d9d5eb11",
+      "result_id": "719e7e00-d80b-447f-894f-5f979e774fb0"
+    },
+    {
+      "claim_id": "2e035758-bfe1-4833-aff6-f1b28603d081",
+      "result_id": "e22c978b-bd07-4a1a-b72b-f2e9ace65f6a"
+    },
+    {
+      "claim_id": "1d9161cf-cf0b-4867-bafc-ecf31f8afad1",
+      "result_id": "e22c978b-bd07-4a1a-b72b-f2e9ace65f6a"
+    },
+    {
+      "claim_id": "7ad39fc9-cffe-4369-a17a-9b3fcc92f178",
+      "result_id": "e22c978b-bd07-4a1a-b72b-f2e9ace65f6a"
+    },
+    {
+      "claim_id": "e0815e71-057b-4a5f-b683-e7357e508430",
+      "result_id": "e22c978b-bd07-4a1a-b72b-f2e9ace65f6a"
+    },
+    {
+      "claim_id": "c9fc31e0-6e55-45cf-884d-ffb36ae1d76f",
+      "result_id": "ab249051-0532-416f-912f-4f7a11e38ef3"
+    },
+    {
+      "claim_id": "4f780043-a0ba-4b07-80e2-a207e98f907d",
+      "result_id": "ab249051-0532-416f-912f-4f7a11e38ef3"
+    },
+    {
+      "claim_id": "25d2c7d6-9523-4068-88e9-c1284e54389a",
+      "result_id": "ab249051-0532-416f-912f-4f7a11e38ef3"
+    },
+    {
+      "claim_id": "e67972ca-381e-4edb-b01b-cc25a5cd7466",
+      "result_id": "ab249051-0532-416f-912f-4f7a11e38ef3"
+    },
+    {
+      "claim_id": "9a56e043-f3eb-4060-aefd-561364c120be",
+      "result_id": "4be919b2-d09c-4230-9583-41f5cc7fde42"
+    },
+    {
+      "claim_id": "253b49a2-dcb9-4a32-9f18-0e9deaa3ac50",
+      "result_id": "4be919b2-d09c-4230-9583-41f5cc7fde42"
+    },
+    {
+      "claim_id": "54dc0a8e-2c8a-4fa1-bb96-68db38b8c858",
+      "result_id": "c26eeb77-ad62-4e3e-8f9d-87afc1b74074"
+    },
+    {
+      "claim_id": "cf857d33-b49a-4d1c-b6b2-0236970439f9",
+      "result_id": "c26eeb77-ad62-4e3e-8f9d-87afc1b74074"
+    },
+    {
+      "claim_id": "750eb3f3-c2ee-4f36-8955-2cfd252387f5",
+      "result_id": "c26eeb77-ad62-4e3e-8f9d-87afc1b74074"
+    },
+    {
+      "claim_id": "faf44f6e-da83-4075-9217-9327a7a4324d",
+      "result_id": "35b39814-7943-4caa-9893-bad37f06cab7"
+    },
+    {
+      "claim_id": "74f9c302-3ad9-4dc6-833c-feb2b4607de5",
+      "result_id": "35b39814-7943-4caa-9893-bad37f06cab7"
+    },
+    {
+      "claim_id": "59a9a28b-5e9a-4c83-9499-e1e491d41f93",
+      "result_id": "35b39814-7943-4caa-9893-bad37f06cab7"
+    },
+    {
+      "claim_id": "06d7efdd-42df-42d2-96ab-52231ac37a09",
+      "result_id": "35b39814-7943-4caa-9893-bad37f06cab7"
+    },
+    {
+      "claim_id": "0ac83b38-32d1-4051-8ab5-9ee9a5180c89",
+      "result_id": "35b39814-7943-4caa-9893-bad37f06cab7"
+    },
+    {
+      "claim_id": "69f51819-5bbc-4336-a955-9deff3c25dae",
+      "result_id": "2d6cd4f1-942b-44b1-b4d7-80dfcfb402a3"
+    },
+    {
+      "claim_id": "c47655f1-9a79-4d39-b8bf-45647ffe3ccb",
+      "result_id": "2d6cd4f1-942b-44b1-b4d7-80dfcfb402a3"
+    },
+    {
+      "claim_id": "c0d1c744-5edd-4907-bbf2-f71418c9ca3b",
+      "result_id": "d205829c-7c4c-4686-9c51-86350a311ccf"
+    },
+    {
+      "claim_id": "d85cfb91-060b-4a9e-9ba7-062f69e6cdbe",
+      "result_id": "b79a948f-6531-408c-84fb-9b4a607c1734"
+    },
+    {
+      "claim_id": "e06d4125-9f1f-4c4d-8cf2-2fe4916e20f4",
+      "result_id": "b79a948f-6531-408c-84fb-9b4a607c1734"
+    },
+    {
+      "claim_id": "77029ce8-dbe9-48b8-9022-5e1b9f0c42f6",
+      "result_id": "b79a948f-6531-408c-84fb-9b4a607c1734"
+    },
+    {
+      "claim_id": "9f856290-4d95-4b65-bccf-dd4536e088a3",
+      "result_id": "b79a948f-6531-408c-84fb-9b4a607c1734"
+    },
+    {
+      "claim_id": "bd496eac-00f3-42dc-9f93-692a25b42d00",
+      "result_id": "b79a948f-6531-408c-84fb-9b4a607c1734"
+    },
+    {
+      "claim_id": "465fb201-d3e0-453d-b4a6-f5d48b9dc832",
+      "result_id": "dd0a4ff9-70de-456f-8a5b-0766913cbed8"
+    },
+    {
+      "claim_id": "2e9aee2d-4f3c-422f-b32a-0eb492f4e1ac",
+      "result_id": "dd0a4ff9-70de-456f-8a5b-0766913cbed8"
+    },
+    {
+      "claim_id": "9e776272-b9ff-4c2b-84de-ef81bf9a23fe",
+      "result_id": "e5ac547b-4d30-4251-9439-bf479895721d"
+    },
+    {
+      "claim_id": "ec05b690-2bc4-46b0-bafc-95d438c5bcaf",
+      "result_id": "6adc2df8-03db-441f-86bb-62515c2675a7"
+    },
+    {
+      "claim_id": "010f2274-1203-460f-845a-854f98de7c8a",
+      "result_id": "0d476f72-2d12-42b7-a717-a4d5b341704e"
+    },
+    {
+      "claim_id": "6e04fef3-58de-49c9-a48b-262fbf058fef",
+      "result_id": "0d476f72-2d12-42b7-a717-a4d5b341704e"
+    },
+    {
+      "claim_id": "bb2a43e7-ad8c-49d5-99c6-7543f5d7ee5b",
+      "result_id": "5112ad10-e225-4ecf-bdb3-5db065e54ff2"
+    },
+    {
+      "claim_id": "370b29eb-852a-453f-88fd-735241bc1188",
+      "result_id": "5112ad10-e225-4ecf-bdb3-5db065e54ff2"
+    },
+    {
+      "claim_id": "8d469781-f576-41b2-8dd8-1a013e235451",
+      "result_id": "f9f9563a-5ac1-4d64-8765-ec2b4dc63d55"
+    },
+    {
+      "claim_id": "7d929886-9321-4abc-acd3-f3f123240d95",
+      "result_id": "287bfe4a-eb63-450c-b517-79094a59554f"
+    },
+    {
+      "claim_id": "3a3beae5-7a5d-47fc-940f-545ddd3ec497",
+      "result_id": "2456cdc9-802e-4fa3-969a-eb3f5c4d2110"
+    },
+    {
+      "claim_id": "73d1b35a-25cb-4e17-9df5-291d5c8078c7",
+      "result_id": "2456cdc9-802e-4fa3-969a-eb3f5c4d2110"
+    },
+    {
+      "claim_id": "b40e5b57-edcb-4029-995f-c21a2ec6859d",
+      "result_id": "81364924-8b35-47f6-bfce-c0942a467e5e"
+    },
+    {
+      "claim_id": "af39a27e-998d-4e49-9513-f66c2e084786",
+      "result_id": "81364924-8b35-47f6-bfce-c0942a467e5e"
+    },
+    {
+      "claim_id": "fb09dfe2-2864-4039-b1e3-cd9feaff8fb0",
+      "result_id": "81364924-8b35-47f6-bfce-c0942a467e5e"
+    },
+    {
+      "claim_id": "154ba8ea-ac85-4eb7-b196-d01e48a9ba01",
+      "result_id": "67b5e688-64cf-4f6a-9455-6f3613202ee0"
+    },
+    {
+      "claim_id": "ada6d966-1f3a-47ef-9149-fa4ac77485d6",
+      "result_id": "67b5e688-64cf-4f6a-9455-6f3613202ee0"
+    },
+    {
+      "claim_id": "2e0254f2-84d9-4d3b-b15f-6222d6583210",
+      "result_id": "67b5e688-64cf-4f6a-9455-6f3613202ee0"
+    },
+    {
+      "claim_id": "49cfb574-93f5-4aa4-88dd-e9ba7415899c",
+      "result_id": "67b5e688-64cf-4f6a-9455-6f3613202ee0"
+    },
+    {
+      "claim_id": "f630c80d-8a5f-424b-8464-0273f0ac7570",
+      "result_id": "67b5e688-64cf-4f6a-9455-6f3613202ee0"
+    },
+    {
+      "claim_id": "dc869dfc-8999-4be2-b23a-ed6a810eb3ee",
+      "result_id": "118cd33e-e839-408d-a8f1-2ce23ade4f36"
+    },
+    {
+      "claim_id": "a2606363-888b-4752-86e0-ef541b09f4ef",
+      "result_id": "118cd33e-e839-408d-a8f1-2ce23ade4f36"
+    },
+    {
+      "claim_id": "5eb89ac7-4453-4f6e-8d06-5372525e6011",
+      "result_id": "7beed7c8-c2f0-47a3-9ed8-7437c06eb2b5"
+    },
+    {
+      "claim_id": "f6d7ea85-47f9-469f-b93d-9edc97ba3e6f",
+      "result_id": "7beed7c8-c2f0-47a3-9ed8-7437c06eb2b5"
+    },
+    {
+      "claim_id": "01574e44-bead-4c1e-9737-b61178dc1465",
+      "result_id": "7beed7c8-c2f0-47a3-9ed8-7437c06eb2b5"
+    },
+    {
+      "claim_id": "e626659d-7c79-47d8-b5d3-254154537d86",
+      "result_id": "160ed069-5fd9-4253-b7a9-b651109f0a83"
+    },
+    {
+      "claim_id": "b70e451d-a3bb-404a-aa95-f629f07aa94c",
+      "result_id": "94ae13ac-6b13-4bc1-ac4a-9877754361dc"
+    },
+    {
+      "claim_id": "800d2dce-526e-458a-8c4d-a601ec6839b9",
+      "result_id": "cdfba4e3-365e-4450-befd-b7553752ee35"
+    },
+    {
+      "claim_id": "9ca6d0b5-9ac0-47fa-9d05-56025c08178c",
+      "result_id": "cdfba4e3-365e-4450-befd-b7553752ee35"
+    },
+    {
+      "claim_id": "b9ed00e7-e8ba-4afe-9e80-1a00e39bd70f",
+      "result_id": "f991d212-f4d0-40d3-a9a4-6fc9437af004"
+    },
+    {
+      "claim_id": "199bc559-a1ef-40e4-9d86-0ba44c4f379b",
+      "result_id": "f991d212-f4d0-40d3-a9a4-6fc9437af004"
+    },
+    {
+      "claim_id": "7a29f01f-92ab-4b79-a9af-b18d23abeeba",
+      "result_id": "a9b039dd-e8a1-4fa6-87a6-eddf78b2e9ef"
+    },
+    {
+      "claim_id": "8cb185f1-0469-4479-9cbb-442bcc93f9e4",
+      "result_id": "a9b039dd-e8a1-4fa6-87a6-eddf78b2e9ef"
+    },
+    {
+      "claim_id": "c2ac78da-8450-4efd-ba40-93892449a581",
+      "result_id": "a9b039dd-e8a1-4fa6-87a6-eddf78b2e9ef"
+    },
+    {
+      "claim_id": "638262d7-dc9b-4270-aaa0-a7e81bafc47d",
+      "result_id": "a9b039dd-e8a1-4fa6-87a6-eddf78b2e9ef"
+    },
+    {
+      "claim_id": "e0246dee-9110-43b8-9672-7dfd51098434",
+      "result_id": "a9b039dd-e8a1-4fa6-87a6-eddf78b2e9ef"
+    },
+    {
+      "claim_id": "209ffa5b-6e94-40be-861b-6482fe611101",
+      "result_id": "a9b039dd-e8a1-4fa6-87a6-eddf78b2e9ef"
+    },
+    {
+      "claim_id": "f317a9c6-7bb6-4c10-ab48-000d8c08edc8",
+      "result_id": "a9b039dd-e8a1-4fa6-87a6-eddf78b2e9ef"
+    },
+    {
+      "claim_id": "2d7801ea-23e8-49aa-918c-7641e949d76b",
+      "result_id": "a9b039dd-e8a1-4fa6-87a6-eddf78b2e9ef"
+    },
+    {
+      "claim_id": "b5fbd85d-0090-4f45-927a-6c9bdb5e7113",
+      "result_id": "a9b039dd-e8a1-4fa6-87a6-eddf78b2e9ef"
+    },
+    {
+      "claim_id": "1ba879e1-5379-48fd-a420-f82b124e492f",
+      "result_id": "a9b039dd-e8a1-4fa6-87a6-eddf78b2e9ef"
+    },
+    {
+      "claim_id": "aba7678c-0fc8-4f6f-88f1-9fc0898584b9",
+      "result_id": "a9b039dd-e8a1-4fa6-87a6-eddf78b2e9ef"
+    },
+    {
+      "claim_id": "884d0145-6014-466b-a984-4fda2e28a4dc",
+      "result_id": "a9b039dd-e8a1-4fa6-87a6-eddf78b2e9ef"
+    },
+    {
+      "claim_id": "f1c1cc96-0a53-427b-aab5-09ba8d8cb6c4",
+      "result_id": "a9b039dd-e8a1-4fa6-87a6-eddf78b2e9ef"
+    },
+    {
+      "claim_id": "dcb7a138-5f5e-4eca-b52e-8249c6b6f045",
+      "result_id": "a9b039dd-e8a1-4fa6-87a6-eddf78b2e9ef"
+    },
+    {
+      "claim_id": "809d3fb9-2b1d-4ba8-a23b-6733d59c5455",
+      "result_id": "a9b039dd-e8a1-4fa6-87a6-eddf78b2e9ef"
+    }
+  ],
+  "comparisons": []
+}

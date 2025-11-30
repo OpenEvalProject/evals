@@ -1,0 +1,340 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The authors assembled a 45 Mb draft genome of Creolimax with 82 scaffolds (N50 = 1.5 Mb) and annotated 8,695 genes, 92% supported by transcriptional evidence, with functional information for 78% of predicted proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genome assembly metrics (C21-C22) are reasonable for a draft genome, and the high percentage of transcriptionally supported genes (C25) provides validation. The functional annotation rate of 78% (C26) is typical for non-model organisms. The comparison to Capsaspora and choanoflagellates (C23) provides useful evolutionary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Differential expression analysis identified 956 genes distinguishing amoeboid and multinucleate stages, with the multinucleate stage enriched for growth-related functions and the amoeboid stage enriched for signaling, cytoskeleton, and adhesion activities. Contrary to expectations, transcription factor expression is higher in the amoeboid stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential expression analysis uses multiple methods (DESeq, EdgeR, Cuffdiff2, NOIseq) with appropriate thresholds and requires agreement from at least 3/4 methods (C28), which is rigorous. The functional enrichment analyses (C29-C31) are statistically sound (p<0.01, Fisher's exact test). The TF expression finding (C32-C35) is statistically significant (p<0.05, Wilcoxon signed rank test) and challenges assumptions about multicellularity, making it a strong result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Creolimax exhibits extensive alternative splicing dominated by intron retention (3,927 events affecting 2,172 genes) rather than exon skipping (211 genes affected), similar to Capsaspora but distinct from animals where exon skipping predominates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The alternative splicing analysis uses established pipelines (C37) and identifies clear patterns (C38-C39). The comparison with Capsaspora (C40-C41) is appropriate, and the conclusion about ES-dominated splicing being animal-specific (C42) is supported by multiple citations. However, the claim would be stronger with more species comparisons and functional validation of the biological significance of these splicing patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Differential intron retention between stages (865 introns, \u0394PIR >15) is enriched in the amoeboid stage and associated with down-regulation of mitosis-related genes, with retained introns showing significantly lower mRNA levels, suggesting intron retention as a conserved regulatory mechanism from unicellular holozoans to vertebrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential intron retention analysis (C43-C44) uses appropriate thresholds and is validated by RT-PCR for all 10 tested cases (C45), demonstrating experimental rigor. The GO enrichment for mitosis-related activities (C46) and correlation with lower mRNA levels (C47, p<0.0001) provide mechanistic insight. The evolutionary conservation claim (C48) is supported by comparison with vertebrate data, though more intermediate species would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Differential exon skipping affects 63 exons across stages, with RT-PCR validation of all 12 tested cases. Most differentially skipped exons disrupt reading frames and do not overlap functional domains, suggesting a role in gene down-regulation rather than proteome diversification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The exon skipping analysis (C49) is validated experimentally for all tested cases (C50), demonstrating reliability. The functional interpretation (C51) is reasonable given that most events disrupt reading frames, though the small number of events (63 exons) limits the generalizability of conclusions about functional impact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "692 putative lincRNA loci were identified in Creolimax with characteristics similar to animal lincRNAs (shorter length, fewer exons, longer exons, lower GC content, lower expression). However, unlike animals, Creolimax lincRNAs are less cell-type specific than coding genes (7% vs 10% differentially expressed), show enrichment near transcription factors, and lack detectable homologs in related species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lincRNA identification pipeline (C52) uses multiple filtering steps to exclude coding potential, though the criteria could be more stringent. The structural characteristics (C53-C57) are well-documented and appropriately compared to animals (C58). The enrichment near TFs (C59, p=0.0007) is statistically significant. The key finding that lincRNAs are less cell-type specific than coding genes (C63-C64, p=0.0059) is surprising and well-supported, though the biological significance remains unclear. The lack of homologs (C60) is expected given rapid lincRNA evolution (C61).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Head-to-head orientation of lincRNAs is significantly over-represented (70% vs 50% expected, p<3.6e-14), but 80% of differentially regulated lincRNAs show uncoupled transcription from neighbors. Multi-exon lincRNAs (19.1%) exhibit intron retention, with 8 events showing differential regulation, suggesting both transcriptional and post-transcriptional regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical analysis of lincRNA orientation (C65) is robust with highly significant p-values. The finding that most differentially regulated lincRNAs are uncoupled from neighbors (C66) suggests independent regulation despite bidirectional promoters. The alternative splicing analysis of lincRNAs (C67-C69) is novel but based on small numbers (8 differential events), limiting confidence in the generalizability of this regulatory mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Cross-species transcriptomic comparison of 2,177 orthologs across Creolimax, Capsaspora, and Salpingoeca shows species-specific clustering, but PCA reveals functional similarities: PC2 groups proliferative stages (Creolimax multinucleate with Capsaspora aggregative/filopodial) based on DNA replication genes, while PC3 groups motile stages (Creolimax amoeboid with Capsaspora filopodial/aggregative) based on integrin adhesome and actin-based motility genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative analysis uses appropriate normalization (quantile normalization of log2(cRPKM+1)) and multiple approaches (hierarchical clustering, neighbor-joining, PCA) that yield consistent results (C72). The functional interpretation of PC2 and PC3 (C75-C76) is supported by GO enrichment analysis and makes biological sense. However, the analysis is limited by the small number of species (3) and the use of only one-to-one orthologs, which may miss important lineage-specific genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Comparison of Creolimax with human cell types using 2,272 orthologs reveals that the multinucleate stage correlates most strongly with highly proliferative human cells (embryonic stem cells, iPSCs, transformed cell lines). PCA shows PC2 distinguishes proliferative cell types in both species, with top loading genes enriched for genome replication and proliferation functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cross-kingdom comparison (C77-C79) is methodologically sound and reveals an interesting pattern linking proliferation across vast evolutionary distances. The GO enrichment of PC2 loading genes (C79) supports the functional interpretation. However, the claim of detecting \"evolutionarily conserved machinery for cell proliferation\" (C80) should be tempered\u2014this could simply reflect that proliferating cells universally upregulate cell cycle genes, which doesn't necessarily imply deep homology of regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Creolimax possesses a nearly complete integrin adhesome repertoire that is co-regulated in the amoeboid stage (except Src tyrosine kinase), contrasting with the complex two-submodule pattern in Capsaspora and the lack of co-regulation in Salpingoeca. However, Creolimax lacks laminin genes and has only non-secreted fibronectin domains, suggesting integrins are not involved in adhesion to an endogenous animal-like ECM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The integrin adhesome analysis (C84-C86) is thorough and the co-regulation patterns (C86-C88) are well-documented through correlation analysis. The absence of Src from the co-regulated module (C86) is consistent with the lack of focal adhesion kinase in ichthyosporeans. The key finding that Creolimax lacks ECM components (C89-C90) despite having integrins is surprising and well-supported, leading to the reasonable conclusion (C91) that integrins may have different functions in this organism. However, alternative ECM components or binding partners should be considered.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Comparative analysis of gene module co-regulation reveals that filopodial machinery components show strong co-regulation across all unicellular holozoans, while neuronal pre- and post-synaptic genes lack co-regulation in any unicellular species (except vesicle formation genes), suggesting that some molecular complexes for cell morphology formed co-regulated modules ancestrally, while animal-specific complexes were assembled later.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparative co-regulation analysis (C92-C93) provides important evolutionary insights. The finding that filopodial machinery is co-regulated across species (C92) suggests ancestral functional integration, while the lack of synaptic gene co-regulation (C93) suggests these genes had different ancestral functions. The conclusion (C94) is reasonable but somewhat speculative\u2014the lack of co-regulation doesn't definitively prove lack of functional interaction, and the evolutionary interpretation assumes co-regulation reflects functional constraint.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Secretome analysis combining in vivo proteomics (91 proteins) and in silico prediction (453 proteins) reveals enrichment in peptidase and proteolytic activities, with only 48 proteins common to both datasets. The secretome includes non-canonically secreted proteins (e.g., integrin extracellular domains) and 38 amino acid/oligopeptide transporter genes, suggesting adaptation to osmotrophic feeding on proteins rather than ECM modification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dual approach to secretome characterization (C97-C98) is rigorous, and the low overlap (C99) highlights the limitations of prediction algorithms. The functional enrichment in proteolytic activities (C101) is well-documented. The finding of non-canonically secreted proteins like integrins (C100) is interesting but requires further validation to rule out cell lysis artifacts. The conclusion about osmotrophic adaptation (C102-C103) is reasonable given the enrichment in proteases and transporters, though direct functional evidence would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Trypsins are the most abundant secretome family (15/31 genes detected), showing independent expansions in osmotrophic lineages. Phylogenetic analysis reveals most Creolimax trypsins arose through rapid lineage-specific duplications with distinct expression and protein abundance patterns, suggesting rapid functional diversification and recurrent use as effector genes in osmotrophic eukaryotes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The trypsin expansion analysis (C104-C105) is well-supported by comparative genomics across diverse eukaryotes. The phylogenetic analysis (C106) demonstrates lineage-specific duplication, and the variable expression patterns (C107) suggest functional diversification. The conclusion about recurrent evolution (C108) is supported by the comparative data, though functional characterization of individual paralogs would strengthen claims about diversification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Phylogenetic analysis identified 163 genes of bacterial origin through LGT, accounting for 1.8% of the proteome. Of these, 35 are Creolimax-specific, 50 are shared with Sphaeroforma arctica, and 71 with other ichthyosporeans. Most LGT genes (87.7%) show transcriptional support, and 24 are found in the secretome (6 in vivo, 18 in silico), indicating ichthyosporeans enriched their osmotrophy-related gene complement through prokaryotic LGT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The LGT detection methodology (C109) using manual inspection of phylogenetic trees is appropriate, though the criteria for \"confidently branched within bacterial clades\" could be more explicitly defined. The transcriptional support (C111, 87.7%) and phylostratigraphic distribution (C110) strengthen confidence that these are genuine LGT events rather than contamination. The enrichment in the secretome (C113) supports the functional interpretation (C114), though the percentage of LGT genes (1.8%, C112) being \"slightly higher than other eukaryotic genomes\" requires more specific comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Three CotH family proteins of prokaryotic origin were found in the in vivo secretome. Phylogenetic reconstruction reveals independent LGT events in ichthyosporeans and mucorales fungi, with both lineages expanding CotH members post-acquisition. Ichthyosporean CotH evolution involved gene duplication, domain shuffling (LTD domain acquisition), and variable expression, with active transcription and secretion suggesting a role in host invasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phylogenetic analysis (C117) clearly demonstrates independent LGT events in ichthyosporeans and fungi, which is a strong evolutionary finding. The evidence for post-LGT expansion (C118) and domain shuffling (C119) is well-documented. The detection of CotH proteins in the secretome and their active transcription (C120) is consistent with a role in host invasion, though this functional interpretation is speculative without direct experimental evidence. The parallel with Rhizopus oryzae (C116) provides supporting context but doesn't prove function in Creolimax.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C121",
+      "C124"
+    ],
+    "result": "Creolimax employs complex cell-type-specific genome regulation including alternative splicing and lincRNAs, but contrary to expectations, the unicellular amoeboid stage rather than the multinucleate stage is characterized by multicellularity-related activities (TFs, signaling, adhesion).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This synthesis result integrates multiple lines of evidence from differential expression (C27-C36), alternative splicing (C37-C51), and lincRNA analysis (C52-C70). The claim about complex regulation (C2-C4, C121) is well-supported by the data. The surprising finding that the amoeboid stage shows multicellularity-related activities (C124) is a key insight that challenges assumptions about the relationship between multinucleation and multicellularity-related gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The multinucleate stage of Creolimax shows transcriptional similarity to highly proliferative human cell types and can be regarded as a specialized proliferative cell type functioning analogously to stem cells, suggesting that separation of self-renewal and differentiation functions can occur temporally in a unicellular context, predating the spatial separation in multicellular organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The transcriptional similarity to proliferative human cells (C125) is supported by the PCA analysis (C77-C80). However, the interpretation that the multinucleate stage functions \"analogously to stem cells\" (C126) is speculative and based primarily on transcriptional similarity rather than functional evidence. The broader evolutionary claim (C127) about temporal separation of functions predating spatial separation is an interesting hypothesis but goes beyond what the data directly demonstrate. This interpretation would benefit from functional validation and more explicit discussion of alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C6",
+      "C122",
+      "C128"
+    ],
+    "result": "Creolimax has undergone secondary adaptation to a specialized osmotrophic feeding mode through gene duplication (e.g., trypsins) and lateral gene transfer from bacteria (163 genes, 1.8% of proteome), shaping its secretome with enrichment in proteolytic activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This synthesis integrates the secretome analysis (C97-C103), trypsin expansion (C104-C108), and LGT findings (C109-C120). The evidence for adaptation to osmotrophy through both gene duplication and LGT (C122, C128) is well-supported by multiple lines of evidence. The convergent evolution with fungi (C6) is demonstrated by the independent acquisition of similar genes (e.g., CotH) and lifestyle features, though the term \"fungal-like\" could be more precisely defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C5",
+      "C129",
+      "C130"
+    ],
+    "result": "The different cell types of ichthyosporeans, filastereans, and choanoflagellates are products of lineage-specific innovations, though many components of the animal genetic toolkit are assembled in co-regulated gene modules preserved since the common ancestor of holozoans, with the diversity of cellular behaviors and morphologies evolving from lineage-specific specializations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim about lineage-specific innovations (C5, C130) is supported by the species-specific clustering in transcriptomic comparisons (C72) and the distinct patterns of gene module co-regulation across species (C86-C88, C92-C94). The finding of ancestral co-regulated modules (C129) is supported by the filopodial machinery analysis (C92). However, the conclusion would be strengthened by sampling more species within each lineage to distinguish lineage-specific from species-specific patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C7",
+      "C123",
+      "C131",
+      "C132"
+    ],
+    "result": "The diversity of cell types and complex genome regulation in protistan relatives of animals demonstrates that the last unicellular ancestor of animals was capable of elaborate cell-type specification. The capacity to build differentiated cell types and transient multicellular entities was not rare in pre-metazoan evolution, with animal multicellularity representing a derived specialization involving integration of ancestral molecular modules into a single multicellular entity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This overarching evolutionary conclusion (C7, C123, C131, C132) synthesizes the entire study but makes strong claims that go beyond what the data directly demonstrate. The evidence shows that Creolimax has complex regulation and that some gene modules are ancestrally co-regulated, but inferring the capabilities of the \"last unicellular ancestor of animals\" requires careful consideration of what is ancestral versus derived. The claim that differentiated cell types were \"not rare\" (C131) is based on only three lineages and doesn't account for the possibility that these are independently derived features. The model of animal multicellularity as \"integration of ancestral molecular modules\" (C132) is plausible but speculative without more direct evidence of homology versus convergence.",
+    "result_type": "MAJOR"
+  }
+]

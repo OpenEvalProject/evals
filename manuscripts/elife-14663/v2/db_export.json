@@ -1,0 +1,1624 @@
+{
+  "submission": {
+    "id": "ee74d674-1e92-4967-989d-0b7ebf2051f8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:13:58.557660Z",
+    "updated_at": "2025-11-30T00:13:58.557660Z"
+  },
+  "content": [
+    {
+      "id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "submission_id": "ee74d674-1e92-4967-989d-0b7ebf2051f8",
+      "content_type": "manuscript",
+      "content_text": "# Reconstitution of selective HIV-1 RNA packaging in vitro by membrane-bound Gag assemblies\n\n## Authors\n\n- Lars-Anders Carlson<sup>1</sup> \u2020\n- Yun Bai<sup>1</sup>\n- Sarah C Keane<sup>3</sup>\n- Jennifer A Doudna<sup>1</sup>\n- James H Hurley<sup>1</sup> ([ORCID: 0000-0001-5054-5445](https://orcid.org/0000-0001-5054-5445)) \u2020\n\n### Affiliations\n\n1. Department of Molecular and Cell Biology University of California, Berkeley Berkeley United States\n2. California Institute for Quantitative Biosciences University of California, Berkeley Berkeley United States\n3. Howard Hughes Medical Institute Baltimore United States\n4. Department of Chemistry and Biochemistry University of Maryland Baltimore County Baltimore United States\n5. Howard Hughes Medical Institute, University of California, Berkeley Baltimore United States\n6. Molecular Biophysics and Integrated Bioimaging Division Lawrence Berkeley National Laboratory Berkeley United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nHIV-1 Gag selects and packages a dimeric, unspliced viral RNA in the context of a large excess of cytosolic human RNAs. As Gag assembles on the plasma membrane, the HIV-1 genome is enriched relative to cellular RNAs by an unknown mechanism. We used a minimal system consisting of purified RNAs, recombinant HIV-1 Gag and giant unilamellar vesicles to recapitulate the selective packaging of the 5\u2019 untranslated region of the HIV-1 genome in the presence of excess competitor RNA. Mutations in the CA-CTD domain of Gag which subtly affect the self-assembly of Gag abrogated RNA selectivity. We further found that tRNA suppresses Gag membrane binding less when Gag has bound viral RNA. The ability of HIV-1 Gag to selectively package its RNA genome and its self-assembly on membranes are thus interdependent on one another.\n\n## Introduction\n\nPackaging the correct genetic material is a key event in the assembly of an infectious virus. In the case of HIV-1, both the recognition of the genomic RNA, its targeting to the plasma membrane, and assembly of a membrane-enveloped virus around it is carried out by the viral protein Gag (Rein et al., 2011; Sundquist and Kr\u00e4usslich, 2012; Freed, 2015). The nucleocapsid (NC) domain of Gag has two zinc knuckle motifs which together with adjacent residues interact with the viral RNA (Berkowitz et al., 1993; Lu et al., 2011b). Mutations in NC that interfere with RNA binding lead to formation of\u00a0non-infectious viruses (Aldovini and Young, 1990; Gorelick et al., 1990). Transcription of the integrated HIV-1 provirus results in both spliced and unspliced transcripts, coding for different viral proteins (Coffin et al., 1997). Gag selectively packages unspliced, full-length genomic RNA through interactions with its 5\u2019 untranslated region (5\u2019UTR), which is different in spliced and unspliced constructs (Lu et al., 2011b; Kuzembayeva et al., 2014). In addition to sequences that mediate the packaging of the genomic RNA, the 5\u2019UTR also has sequence elements related to transcription processivity (TAR), binding of tRNALys-3 as a\u00a0primer for reverse transcription (PBS), and genome dimerization (DIS) (Johnson and Telesnitsky, 2010; Lu et al., 2011b; Kuzembayeva et al., 2014).\n\nSingle-virion fluorescence assays indicate that >90% of released HIV-1 particles have packaged genomic RNA (Chen et al., 2009), and packaging of a dimeric genome appears to be strongly preferred (Sakuragi et al., 2003; Chen et al., 2009;\u00a0Nikolaitchik et al., 2013). The packaging of a single dimeric genome is independent of RNA mass, since genomes with altered lengths are always packaged as single dimers (Nikolaitchik et al., 2013). Genomic RNAs with sequence differences are efficiently packaged as heterodimers as long as they have identical DIS sequences (Chen et al., 2009). The \u03c8/SL3 stem loop region in the 5\u2019UTR was initially identified as a sequence required for efficient packaging of genomic RNA into HIV-1 virions (Lever et al., 1989). Later work characterized a more extended core encapsidation signal (CES) which also includes the U5:AUG and PBS stems, the dimerization signal (DIS) and the splice donor (SD) region (Heng et al., 2012). Unpaired and weakly paired guanosines in several regions of the CES, including but not limited to \u03c8/SL3 were identified as important for packaging (Abd El-Wahab et al., 2014; Keane et al., 2015; Kenyon et al., 2015). Structures of NC complexed with \u03c8/SL3 (De Guzman et al., 1998) and other smaller fragments from the 5\u2019UTR (Lu et al., 2011b) have provided atomic details of how the two zinc knuckles and adjacent motifs of NC interact with RNA. A crystal structure of the DIS:DIS dimerization complex (Ennifar et al., 2001) along with an NMR structure of the entire CES (Keane et al., 2015) put these structures in the context of a larger RNA. Thus, we now have a detailed understanding of RNA structural determinants for packaging at the level of individual 5\u2019UTR dimers.\n\nA single released HIV-1 virus contains one dimeric genomic RNA (Chen et al., 2009) and 2400 \u00b1 700 Gag molecules (Carlson et al., 2008), indicating that the selective genome packaging may depend on more than just the binary NC-CES interaction. Indeed, cross-linking-immunoprecipitation sequencing (CLIP-seq) revealed a strikingly different RNA preference of cytosolic and membrane-bound Gag (Kutluay et al., 2014). Cytosolic Gag binds tRNA through its otherwise membrane-binding matrix (MA) domain, and associates mainly with cellular RNAs through its NC domain. The minor fraction of cytosolic Gag which binds viral RNA has a strong preference for the 5\u2019UTR but also binds to the Rev-responsive element (RRE), whose main function is thought to be in nuclear export (Kuzembayeva et al., 2014). On the other hand, Gag in the membrane fraction has lost its tRNA association and is strongly enriched for viral RNA, interacting with equal probability with all parts of the genomic RNA. Existing structural and biochemical data are not sufficient to explain how a pool of cytosolic Gag, binding mainly cellular RNA, assembles into virus particles which package dimeric viral genomes with 90% probability.\n\nHere, we have reconstituted the selective genome packaging of HIV-1 in a minimal system using giant unilamellar vesicles (GUVs), recombinant myristoylated HIV-1 Gag and purified RNAs. Gag assembling on GUV membranes selectively packages the HIV-1 5\u2019UTR at subnanomolar concentrations in the presence of excess competitor RNA. We find that the RNA selectivity of Gag is abolished by mutations that subtly affect its ability to cluster on a membrane. Using SHAPE analysis, we find that membrane recruitment of the 5\u2019UTR by Gag does not lead to drastic changes in its secondary structure, and we further demonstrate that the association of soluble Gag with tRNA confers additional RNA packaging selectivity.\n\n## Results\n\n### In vitro reconstitution of selective RNA packaging by membrane-bound HIV-1 Gag\n\nWe previously reported an in vitro reconstitution of HIV-1 assembly using recombinant myristoylated Gag protein and PI(4,5)P2-containing giant unilamellar vesicles (GUVs) (Carlson and Hurley, 2012). We showed that GUV-bound Gag clusters mimic the behavior of cellular HIV-1 budding sites in their lipid requirements for assembly, nucleic acid- and ESCRT (endosomal sorting complex required for transport) protein binding. We reasoned that this system could also be used to study the RNA selection of an assembling HIV-1 virus. The 5\u2019 untranslated region (5\u2019UTR) and the Rev-responsive element (RRE) of the HIV-1 genome (nucleotides 1\u2013345 and 7259\u20137612, of the genomic RNA of HIV-1 strain NL4-3 and ARV-2/SF2, respectively), along with a nominally unstructured 378 nt single-stranded control RNA (RNA378), were produced by in vitro transcription. The 1\u2013345 construct was previously shown to dimerize even in the absence of Gag (Heng et al., 2012). RNAs were labeled with the fluorophore Alexa488 on random guanosines, at measured average labeling efficiencies of ~1.1\u20131.2 fluorophores per RNA molecule. 100 nM Gag-ATTO594 was premixed with 0.5 nM fluorescent RNA, and added to GUVs which were imaged by confocal microscopy starting 10 min after addition of protein and RNA. Due to the reported Mg2+-dependence of the 5\u2019UTR dimerization (Wilkinson et al., 2008), 2\u2009mM MgCl2 was included in the final buffer. The addition of Mg2+ to the imaging buffer made the GUV morphology more variable, but this increased morphological heterogeneity did not hamper the experiments nor the image quantification.\n\nIn order to quantitate the RNA occupancy of assemblies, ten confocal z-stacks were recorded at random positions on each sample, with each data set containing an average of 50\u2013100 GUVs. Strong RNA fluorescence was consistently observed at Gag clusters on GUV membranes, regardless of which RNA was used (Figure 1a\u2013c,g). This RNA recruitment was dependent on the NC domain of Gag since neither a \u0394NC Gag nor Gag treated with the Zn-finger disrupting drug AT-2 (Rossio et al., 1998) was able to recruit fluorescent RNA to GUV membranes (Figure 1\u2014figure supplement 1). To study the RNA selectivity of assembling Gag in the reconstituted system, we included a ten\u00a0fold excess (5 nM) of non-fluorescent RNA378 when premixing RNA and Gag. After assembly on GUVs, the fluorescent 5\u2019UTR was still visible at most Gag clusters in the presence of ten\u00a0fold excess competitor RNA, whereas RRE was present at fewer Gag clusters and at lower fluorescence intensities, and fluorescent RNA378 was virtually absent (Figure 1d\u2013f,g). Image analysis based on automatic segmentation of Gag clusters and measurement of their average RNA fluorescence confirmed the visual impressions (Figure 1g).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/14663/elife-14663-fig1-v2.jpg)\n\n**Figure 1.:** (a) Confocal fluorescence micrograph of GUVs containing 5% PI(4,5)P2. 100 nM HIV-1 Gag-ATTO594 and 0.5 nM HIV-1 5\u2019UTR-Alexa488 were premixed and added to the exterior of the GUVs which were imaged 10 min later. Upper panel, membrane in red and Gag in white/cyan. Lower panel, RNA. (b\u2013c) As (a) but with fluorescent HIV-1 RRE and a 378 nt control ssRNA (RNA378), respectively. (d\u2013f) As (a\u2013c) but with 5 nM non-fluorescent RNA378 added together with the fluorescent RNAs. (a\u2013f) White arrows mark Gag clusters on GUVs, and their position on the corresponding RNA images. Scale bar for all images, 10 \u00b5m. (g) Quantitation of fluorescent RNA binding to Gag clusters. Gag clusters on membranes were identified in 10 z-stacks each containing ~10 GUVs, using an unsupervised script which calculated the average RNA fluorescence within the clusters. Gag clusters with an average RNA fluorescence >2.0 times that of the surrounding membrane were counted as positive for colocalization. All measurements were conducted on the same batch of GUVs and error bars indicate standard deviation between three repeats on separate GUV preparations. n.s./*, not significant, and significant, respectively, at p<0.05 level by Student's t-test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14663/elife-14663-fig1-figsupp1-v2.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Confocal micrograph of GUV, 10 min after adding 100 nM \u0394NC Gag-ATTO594 and 0.5 nM 5\u2019UTR -Alexa488. Upper panel, membrane in red and Gag in white/cyan. Lower panel, RNA. (b) As (a), but with full-length Gag treated for 15 min at 37\u00b0C with 100 \u00b5M of the Zn-finger disrupting compound AT-2. (c) As (b), but Gag treated with DMSO only as negative control for (b). (a\u2013c) White arrows mark Gag clusters on GUVs, and their position on the corresponding RNA images. Scale bar for all images, 10 \u00b5m.\n\nTo further characterize the sensitivity of the in vitro system, we created a set of altered 5\u2019UTR constructs (Figure 2a). 5\u2019UTR 3way1 has several packaging-critical guanines around the three-way junction 1\u00a0in the CES mutated to adenines (G116A, G318A, G320A, G328A, G329A, G331A, G333A). This set of mutations was previously found to reduce packaging in a cellular packaging assay (Keane et al., 2015). 5\u2019UTR mono has the GCGCGC sequence in DIS replaced by GAGA, creating a monomeric 5\u2019UTR. 5\u2019UTR 3way1-mono combines the 3way1 and mono mutations. Lastly, 5\u2019UTR env-1 represents the first 345 nt of a spliced viral RNA, with the nucleotides after splice donor site G290 replaced by the nucleotides after splice acceptor site A5 (Stoltzfus, 2009). In a competition assay similar to the one reported in Figure 1d, 100 nM Gag-ATTO594 was premixed with 0.5 nM 5\u2019UTR-Alexa488 and 5 nM of either non-fluorescent 5\u2019UTR construct, and added to GUVs (Figure 2b\u2013f). In the presence of 5 nM 5\u2019UTR very little fluorescent 5\u2019UTR could be seen at Gag clusters on GUVs (Figure 2b,g). However, in the presence of either of the altered constructs, more fluorescent 5\u2019UTR was visible at Gag clusters (Figure 2c\u2013f,g). Thus, the in vitro packaging assay is able to detect the lower affinity of assembling Gag for monomeric, 3way1-mutated, and spliced 5\u2019UTRs.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/14663/elife-14663-fig2-v2.jpg)\n\n**Figure 2.:** (a) Schematic of the HIV-1 5\u2019UTR indicating introduced mutations. Blue indicates the position of the GCGCGC to GAGA mutation in the dimerization motif creating the monomerized construct '5\u2019UTR mono'. Red indicates the position of the splice donor site G290. Replacement of nucleotides after G290 with the sequence from a spliced RNA created the construct \u20185\u2019UTR env-1\u2019. Cyan indicates the position of packaging-critical unpaired and weakly paired guanines mutated to adenines in the construct '5\u2019UTR 3way1'. PBS, primer binding site. DIS, dimerization signal. SD, splice donor site. \u03c8, psi stem loop. The schematic shows one monomer of the dimerizing 5\u2019UTR. (b\u2013f) Confocal micrographs of GUVs, 10 min after adding 100 nM Gag-ATTO594, 0.5 nM 5\u2019UTR -Alexa488, and 5 nM non-fluorescent competitor RNA as indicated. Upper panels, membrane in red and Gag in white/cyan. Lower panel, RNA. White arrows mark Gag clusters on GUVs, and their position on the corresponding RNA images. Scale bar for all images, 10 \u00b5m. (g) Quantitation of fluorescent RNA binding to Gag clusters, performed as for Figure 1g but using a lower threshold of 1.25 for counting Gag clusters as positive for fluorescent RNA. n.s./*, not significant, and significant, respectively, at p<0.05 level by Student's t-test.\n\nIn summary, a minimal system consisting of purified RNAs, Gag, and PI(4,5)P2-containing GUVs recapitulates the selective RNA packaging of an assembling HIV-1 particle at RNA concentrations far below reported solution affinities of NC for 5\u2019UTR. The 5\u2019UTR is strongly selected for in a competition assay, whereas the RRE is only partially selected for after addition of competitor. 5\u2019UTRs that are either monomerized, have packaging-critical guanines mutated to adenines, or represent a spliced viral RNA are less favored in the competition assay. Given the low concentrations at which this selectivity is observed, below the reported 17 nM affinity constant for 5\u2019UTR-NC association (Heng et al., 2012), we turned our attention to potential avidity effects due to Gag multimerization.\n\n### RNA selectivity depends upon intact CA domain lattice contacts\n\nWe next sought to determine whether there was a connection between RNA selectivity by Gag, and its assembly into the membrane-bound hexagonal 'immature' lattice found in viral budding sites and released immature virions (Ganser-Pornillos et al., 2012; Sundquist and Kr\u00e4usslich, 2012; Freed, 2015) (Figure 3a). To this end, we produced Gag proteins mutated at symmetry contacts in its lattice-forming CA domain. The W316D,M317D mutation (\"Gag two-fold\") alters a motif at the two\u00a0fold symmetry contact in the CA C-terminal domain (CA-CTD), which is described in the\u00a0literature to be important for virus assembly (Gamble et al., 1997; von Schwedler et al., 2003) (Figure 3a\u2013b). When this protein was added to GUVs at 100 nM, it bound in a strikingly different way from wild-type Gag, often resulting in a diffuse Gag fluorescence covering the entire GUV membrane (Figure 3f,g). For comparison, wild type Gag essentially only bound to GUVs in clusters even in the absence of RNA (Figure 3e,g). Based on the structure of the immature CA lattice in intact HIV-1 virions (Schur et al., 2015), we further produced a triple mutant (\"Gag three-fold\": P170E, A174E, E177R) designed to alter a three-helix interaction at the three\u00a0fold interface in CA-NTD (Figure 3a,c). This protein bound GUVs similarly to wild-type Gag, albeit with a moderate increase in the diffuse binding first observed for Gag two-fold (Figure 3g). A Gag protein mutated at the six\u00a0fold interface in CA-CTD (Figure 3a,d) with the single-residue replacement K290A (\"Gag six-fold\") reported to affect virus assembly (von Schwedler et al., 2003; Robinson et al., 2014), also showed an increase in diffuse Gag binding over wild-type Gag (Figure 3g). Combining the two-,\u00a0three-, and six-fold mutations in one protein (\"Gag 2-,3-,6-fold\") resulted in an assembly phenotype similar to that of Gag two-fold (Figure 3g). Taken together, mutations in the CA-CTD of either the W316,M317 motif at the two-fold symmetry contact, or of K290 at the six-fold symmetry contact, both described as leading to virus release defects (von Schwedler et al., 2003), affect the ability of Gag to cluster on membranes.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/14663/elife-14663-fig3-v2.jpg)\n\n**Figure 3.:** (a) Schematic of a hexagonal lattice showing the Gag CA domain at the two-, three- and six\u00a0fold symmetry contacts, as arranged in the immature Gag lattice in HIV-1 assembly sites and immature virions (Schur et al., 2015) (PDB entry 4USN used in panel a\u2013d). (b) Model of the CA domain at the two\u00a0fold, with mutated residues in \u201cGag two-fold\u201d marked in red. (c\u2013d) As (b), for Gag mutated at the three- and six-fold symmetry contacts, respectively. (e) Confocal micrograph of GUVs, 10 min after adding 100 nM Gag-ATTO594. Membrane in red and Gag in white/cyan. (f) As (e), using Gag-ATTO594 two-fold. GUVs with diffuse Gag binding are denoted with white asterisks. (e\u2013f) White arrows mark Gag clusters on GUVs. Scale bar, 10 \u00b5m. (g) Type of Gag binding to GUVs. For each protein, GUVs were counted in 10 confocal z-stacks, and classified according to having no Gag fluorescence, only clustered Gag fluorescence (black), or a diffuse Gag fluorescence covering the entire membrane (with or without additional brighter clusters, gray). All measurements were conducted on the same preparation of GUVs, with error bars indicating the standard deviation between three repeats conducted on separate GUV preparations. *significant at p<0.05 level by Student's t-test.\n\nHaving characterized the membrane binding of the mutant Gag proteins, we proceeded to study their RNA binding and selectivity. We first compared the membrane binding of Gag proteins in the presence of RNA to Gag proteins alone as characterized above. We observed that the presence of RNA increased the clustering of all Gag proteins, and increased the fraction of GUVs which had bound Gag (Figure 4a\u2013j, Figure 4\u2014figure supplement 1). First, the capacity of the Gag proteins to recruit fluorescent RNA in the absence of competitor was studied. Each Gag construct was premixed with 0.5 nM fluorescent 5\u2019UTR and added to GUVs. Recruitment of fluorescent 5\u2019UTR to the GUV membrane was observed for all Gag constructs (Figure 4a\u2013e), with a quantitation showing a slight decrease in recruitment for the Gag two-fold and Gag two-, three- , six-fold mutants (Figure 4k). However, when a ten\u00a0fold excess of non-fluorescent competitor RNA (5 nM RNA378) was added, the Gag proteins behaved differently from each other. Wild type Gag retained as much 5\u2019UTR fluorescence in the presence of competitor RNA as in its absence (Figure 4f,k) and the Gag three-fold mutant showed only a minor decrease (Figure 4h,k). On the other hand, GUV-bound clusters of the Gag two-fold, Gag six-fold and Gag two-,\u00a0three-,\u00a0six-fold mutants lost most of their 5\u2019UTR fluorescence in the presence of competitor RNA (Figure 4g,i\u2013k). Thus, RNA selectivity in this assay closely correlates with clustered binding of Gag to GUVs in the absence of RNA (compare Figures 3g and 4k). In summary, mutations which cause subtle changes in the ability of Gag to multimerize on a membrane drastically decrease the RNA selectivity of assembled Gag clusters, without greatly affecting their ability to bind RNA non-specifically.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/14663/elife-14663-fig4-v2.jpg)\n\n**Figure 4.:** (a) Confocal micrograph of GUV, 10 min after adding 100 nM Gag-ATTO594 and 0.5 nM 5\u2019UTR -Alexa488. Upper panel, membrane in red and Gag in white/cyan. Lower panel, RNA. (b\u2013e) As (a) using Gag two-fold, Gag three-fold, Gag six-fold and Gag two-,\u00a0three-, six-fold, respectively. (f\u2013j) As (a\u2013j) with the addition of 5 nM non-fluorescent RNA378. (a\u2013j) White arrows mark Gag clusters on GUVs, and their position on the corresponding RNA images. Scale bar for all images, 10 \u00b5m. (k) Quantitation of RNA binding to Gag clusters, performed as for Figure 1g. n.s./*, not significant, and significant, respectively, at p<0.05 level by Student\u2019s t-test.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14663/elife-14663-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Statistics of Gag membrane binding was performed as for Figure 3g, using the data presented in Figure 4f\u2013j (ten z-stacks per condition, in three independent repeats).\n\n### SHAPE-based mapping of interactions between the HIV-1 5\u2019UTR and Gag in solution and on membranes\n\nTo further understand how membrane association of Gag affects its interactions with the HIV 5\u2019UTR, we performed selective 2\u2019-hydroxyl acylation analyzed by primer extension (SHAPE) analysis (Merino et al., 2005) on the 5\u2019UTR and determined its SHAPE profiles in the presence and absence of Gag constructs either in solution or in association with GUVs. First, we examined the SHAPE profile of the 5\u2019UTR RNA in solution by itself. The RNA-only SHAPE profile is highly consistent with the recently reported solution structure of the HIV-1 RNA packaging signal (Keane et al., 2015), with the tandem three-way junctions exhibiting modest SHAPE reactivities, reflecting the loosely base-paired nature of this region. On the other hand, well based-paired stem regions in the DIS, PBS, U5:AUG, and \u03c8/SL3 sequences exhibit low or no SHAPE reactivities (Figure 5a). The dimer-promoting DIS loop (G257-C262) had no SHAPE reactivity. This is not per se an unequivocal indication of the 5\u2019 UTR being dimeric since DIS has been reported to partially base-pair with U5 in the monomeric conformation of the 5\u2019UTR (Lu et al., 2011a). However, the SHAPE reactivity of the SD region G289-G292 (highlighted with a gray shaded box in Figure 5a) is consistent with the reported 3D structure of the dimeric conformation (Keane et al., 2015), not with the completely unprotected loop proposed for the monomeric 5\u2019UTR (Lu et al., 2011a). A longer 356 nt 5\u2019UTR able to assume both monomer- and a dimer-favoring conformations (Heng et al., 2012) had a similar SHAPE reactivity to the 345 nt 5\u2019UTR (Figure 5\u2014figure supplement 1b), indicating that it is present mainly as a dimer under the conditions of the study. We next compared the SHAPE profiles of isolated RNA, and RNA in complexes mimicking steps in the genome packaging. Isolated NC domain was selected to represent the initial interaction of a single Gag molecule with the 5\u2019UTR, \u0394MA(1\u2013119)-Gag for a potential soluble Gag-RNA complex involving CA-mediated Gag-Gag interactions, and Gag clusters on GUVs as a model of viral budding sites on the plasma membrane. In all measurements, protein was kept in excess (solution protein:RNA ratio 8:1, GUV protein:RNA ratio 20:1). For a\u00a0SHAPE analysis on GUV-bound RNA, reactions were set up as for confocal imaging, and GUVs were found to be intact during the treatment (Figure 5\u2014figure supplement 2). The amount of free RNA in the GUV supernatant was typically 10\u201320% of the total RNA, dependent on the presence of both GUVs and Gag. The SHAPE profiles for 5\u2019UTR were very similar in the presence of NC, \u0394MA-Gag, and when bound to Gag clusters on GUVs (Figure 5b, Figure 5\u2014figure supplement 1). Upon Gag binding, major SHAPE changes were observed in the following clusters: U117-U122, G234-A242, A271-G273, and A302-G309 (Figure 5b). Among them, the two clusters exhibiting decreased SHAPE reactivity (G234-C242 and A271-G273) surround the two guanine-rich bulges on the DIS stem. This Gag-mediated decrease of RNA flexibility is consistent with, but does not necessarily reflect, direct Gag-RNA contacts (Kenyon et al., 2015). These clusters show a more pronounced decrease in SHAPE reactivity than the \u03c8 loop G317-G320. The other two clusters showing major SHAPE reactivity changes, U117-U122 and A302-G309, are located around the tandem three-way junctions. Both regions exhibit higher SHAPE reactivities upon Gag binding, indicating that protein interactions lead to rearrangement of the local structure that results in higher RNA flexibility. However, GUV recruitment of the complex did not trigger additional SHAPE changes (Figure 5c, Figure 5\u2014figure supplement 1), indicating that the overall structure of the 5\u2019UTR is not further altered between the states of initial Gag binding in solution and recruitment to assembled Gag on a membrane. Noteworthy, the SHAPE reactivity of the SD region G289-G292 is similar under all conditions studied (Figure 5a,c, Figure 5\u2014figure supplement 1), indicating that the 5\u2019UTR is maintained in the dimeric conformation over the assembly process. Taken together, we see no evidence for large changes in secondary structures in the 5\u2019UTR when interacting with either Gag in solution or assembled Gag on a membrane, and it appears dimeric under the conditions studied.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/14663/elife-14663-fig5-v2.jpg)\n\n**Figure 5.:** (a) Secondary structure of the HIV 5\u2019UTR RNA with SHAPE reactivities labeled. The secondary structure is based on the reported NMR structure (Keane et al., 2015) (PDB 2N1Q). Nucleotides exhibiting high, medium, low, or no SHAPE reactivities are labeled in red, orange, cyan, and black, respectively. SHAPE handles are labeled by gray shadows. The 3D structure colored based on the SHAPE profile using the same color scheme is shown as an\u00a0insert. U5, U5 region of long terminal repeat. PBS, primer binding site. DIS, dimerization signal. SD, splice donor site. \u03c8, psi stem loop. AUG, start codon of gag gene. The nucleotides of SD that would be in a loop in the alternative conformation (289\u2013292) are underlined with a gray box. The schematic shows one monomer of the dimerizing 5\u2019UTR. (b) SHAPE profiles of the 5\u2019UTR either alone (in gray) or in complex with the following Gag variants: the NC domain of Gag (in cyan), \u0394MA-Gag (in blue), and Gag assembled on GUVs (in red). The regions not showing significant SHAPE changes are masked. (c) SHAPE changes between the 5\u2019UTR alone and the 5\u2019UTR bound by the Gag on GUV. Nucleotides exhibiting reduced or increased SHAPE value upon complex formation are labeled in cyan and dark red, respectively. Corresponding nucleotide are also labeled on the NMR 3D structure model using the same color scheme.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/14663/elife-14663-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) Changes in SHAPE reactivity are plotted as in Figure 4c, for addition of \u0394MA-Gag and NC, respectively, and between a longer 356 nt 5\u2019UTR and the 345 nt 5\u2019UTR used throughout the study. (b)\u00a0Secondary structure of the 356-nt HIV 5\u2019UTR RNA with SHAPE reactivities labeled as in Figure 4a.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/14663/elife-14663-fig5-figsupp2-v2.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Gag and GUVs were prepared as for SHAPE analysis. In the final step DMSO without SHAPE reagent was added and GUVs were imaged by confocal microscopy. A representative field of view is shown.\n\n### The effects of tRNA and viral RNAs on Gag membrane association\n\nThe membrane-binding matrix (MA) domain of cytosolic Gag has been shown to bind primarily tRNA in cells (Kutluay et al., 2014). Several reports have shown that RNA binding to the basic patch on the MA domain of HIV-1 Gag can compete with its ability to bind acidic phospholipids such as PI(4,5)P2 (Alfadhli et al., 2009, 2011; Chukkapalli et al., 2010, 2013; Dick et al., 2013; Dick and Vogt, 2014). We wanted to investigate whether Gag-tRNA interactions also play a role in selective RNA packaging. Premixing 100 nM Gag-ATTO594 with 1 \u00b5M yeast tRNA before addition to GUVs led to a virtually complete block in Gag assembly on GUVs (Figure 6a\u2013b). Since the amount of Gag on individual GUVs is more variable than the relative RNA fluorescence at Gag clusters, a membrane flotation assay was devised to quantitate the amount of Gag assembled on membranes. 100 nM Gag-ATTO488 was mixed with 0\u201320 \u00b5M tRNA, and incubated for 10 min with 1.0 \u00b5m large unilamellar vesicles (LUVs) containing 5\u2009mol% PI(4,5)P2. Vesicles were subjected to flotation on a density step gradient and Gag fluorescence in the top fraction was measured. For the tRNA titration, a 50% inhibition of Gag membrane association was evident at 200 nM tRNA (Figure 6c). At 20 \u00b5M tRNA, the amount of Gag found in the vesicle fraction dropped to ~10% of the value seen in the absence of RNA (Figure 6c). Next, long viral or unspecific RNAs at 5 nM concentration were added to Gag with or without tRNA. In addition to the above studied 5\u2019UTR, RRE, and RNA378, an RNA corresponding to the first 1947 nucleotides of the HIV-1 strain NL4-3 genomic RNA was studied (HIV1947), along with a single-stranded control RNA of similar length (RNA2266). In the absence of tRNA, all these RNAs slightly increased the amount of Gag associated with vesicles (Figure 6d). In the presence of 20 \u00b5M tRNA however, the 5\u2019UTR and the longer HIV1947 RNA (which contains the 5\u2019UTR sequence) enhanced membrane association by Gag more than the other RNAs (Figure 6e). RNA378 had no effect on Gag membrane association in the presence of 20 \u00b5M tRNA, whereas the effect of RRE or the longer RNA2266 was slight (Figure 6e). In summary, tRNA at micromolar concentrations potently inhibits membrane association of Gag. Under such conditions, Gag that encounters viral RNA has a higher probability of overcoming that inhibition and associating with membrane.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/14663/elife-14663-fig6-v2.jpg)\n\n**Figure 6.:** (a) Confocal micrograph of GUVs, 10 min after adding 100 nM Gag-ATTO594. (b) Confocal micrograph of GUVs, 10 min after adding 100 nM Gag-ATTO594, premixed with 1 \u00b5M tRNA. (a\u2013b) Membrane in red and Gag in white/cyan. White arrows mark Gag clusters on GUVs. Scale bar, 10 \u00b5m. (c) Amount of Gag fluorescence in the vesicle fraction after a vesicle flotation assay with 100 nM Gag-ATTO488, tRNA at 0\u201320 \u00b5m, and 0.4 mg/mg 1.0 \u00b5m LUVs. (d) Amount of Gag fluorescence in the vesicle fraction after a vesicle flotation assay with 100 nM Gag-ATTO488 and RNAs at 5 nM. (e) Amount of Gag fluorescence in the vesicle fraction after a vesicle flotation assay with 100 nM Gag-ATTO488, 20 \u00b5m tRNA, and other RNAs at 5 nM. (c\u2013e) All measurements shown in the same panel were conducted on the same LUV preparation, with error bars indicating the standard deviation between three repeats conducted on separate LUV preparations. n.s./*, not significant, and significant, respectively, at p<0.05 level by Student's t-test.\n\n## Discussion\n\nHere, we used biochemical reconstitution methods to show that a minimal system consisting of the HIV-1 Gag protein, the HIV-1 5\u2019UTR, and PI(4,5)P2-containing GUVs is capable of selective RNA packaging in the presence of an excess of non-specific RNA. We find a strong correlation between the ability of Gag to multimerize on a membrane and its selective packaging of viral RNA. Mutations in the lattice-forming CA domain that lessen Gag clustering on membranes (W316D,M317D and K290A, Figure 3b,d,f,g) drastically lowered its RNA selectivity (Figure 4g,i,k), without affecting the total capacity of Gag to recruit RNA to a membrane (Figure 4b,d,k). Mutations of these residues in the C-terminal part of CA (CA-CTD) have previously been described to lead to virus release defects related to aberrant virus assembly (Gamble et al., 1997; von Schwedler et al., 2003). In line with our findings, it has been reported that the amount of viral RNA coprecipitated with cytoplasmic Gag is reduced five\u00a0fold when its CA-CTD is deleted, whereas the amount of cellular RNA coprecipitated remains the same (Kutluay and Bieniasz, 2010). On the other hand, in experiments which did not address selectivity, a \u0394CA-CTD Gag was still able to tether genomic RNA to the plasma membrane in cells (Jouvenet et al., 2009; Sardo et al., 2015), which is consistent with our finding that the mutant Gag proteins can still recruit 5\u2019UTR although being less selective in the presence of competitors. Mutations at the three-fold symmetry contact in CA-NTD did not alter Gag clustering on membranes (Figure 3g), concurring with observations that a \u0394CA-NTD Gag still supports particle release (Borsetti et al., 1998; Accola et al., 2000).\n\nLive-cell fluorescence microscopy has delivered important constraints on the stoichiometry and the\u00a0location of the RNA selection event. Genomic RNA is present at the onset of HIV-1 assembly at the plasma membrane, at which point the number of Gag molecules was reported to be below the detection limit of ~12 molecules (Jouvenet et al., 2009). Cytosolic Gag does not form large oligomers (Robinson et al., 2014; Hendrix et al., 2015) and mainly associates with cellular RNAs (Kutluay et al., 2014). A small fraction of cytosolic Gag is found to be slowly diffusing and consist of oligomers of up to ~5 molecules (Hendrix et al., 2015). In a recent study, TIRF microscopy was used to study the monomer-dimer state of genomic HIV-1 RNAs (Chen et al., 2016). It was reported that the large majority of plasma membrane-proximal genomic HIV-1 RNAs are monomeric in the absence of HIV-1 Gag. In cells expressing Gag, monomeric genomic RNAs are seen to coalesce to dimers on the membrane, but were not\u00a0observed to arrive to the membrane as dimers. That study and our results underscore the importance of membrane-localized Gag assembly events in HIV-1 genome selection and packaging.\n\nThe SHAPE analysis focused on the secondary structure of the 5\u2019UTR RNA in situations representing different stages of packaging (Figure 5a,b). When comparing SHAPE reactivities of isolated 5\u2019UTR, 5\u2019UTR interacting with NC domain in solution, \u0394MA-Gag in solution, or recruited to GUV membranes by clusters of full-length Gag, the changes in SHAPE reactivities were consistent with a conservation of secondary structure between all these states. Based on these results, there is no gross unfolding of the dimeric 5\u2019UTR in the early steps of genomic RNA selection and packaging for HIV-1. This contrasts with reports that the packaging signal of the related retrovirus Murine Leukemia Virus (MLV) is partially unfolded in released immature virions (Grohman et al., 2014). The SHAPE reactivity pattern indicated that the 5\u2019UTR was, as expected, dimeric in solution. This was observed both with the shorter 345 nt 5\u2019UTR, which has been reported to be locked in a dimer-favoring conformation, and the longer 356 nt 5\u2019UTR which is also capable of assuming a second conformation (Lu et al., 2011a; Heng et al., 2012) (Figure 5\u2014figure supplement 1). In the light of a recent report that most genomic HIV-1 RNAs in cells are monomeric until interacting with Gag on a membrane (Chen et al., 2016), the isolated 5\u2019UTR would thus be representative of the genome after engagement with Gag. It is possible that the RNA chaperone activity of Gag may be necessary to expose the 5\u2019UTR and its DIS in the context of a full-length genome. The strongest decrease in SHAPE reactivity upon Gag interaction was found in the guanosine-rich bulges on the DIS stem (Figure 5c), consistent with a recent study using full-length Gag in solution (Abd El-Wahab et al., 2014). The increased SHAPE reactivity in central regions of the tandem three-way junction suggests that Gag engagement, while not leading to a drastic rearrangement of the 5\u2019UTR secondary structure, may lead to alterations its 3D structure. Overall, our results show that RNA conformational changes upon binding to membrane-associated Gag are minor in magnitude and thus suggest that conformation rearrangements are likely to be a minor contributor to selective packaging.\n\nCytosolic RNA has been reported to regulate Gag membrane association, effectively increasing its selectivity for the plasma membrane lipid PI(4,5)P2 (Alfadhli et al., 2009, 2011; Chukkapalli et al., 2010,\u00a02013; Dick et al., 2013; Dick and Vogt, 2014). The RNA species that binds the Gag MA domain in cells was identified by deep sequencing as primarily consisting of tRNA (Kutluay et al., 2014). Our reconstituted system allowed us to disentangle the effect that different RNAs have on Gag membrane association (Figure 6). We show that Gag-tRNA interactions may also serve to increase Gag fidelity for viral RNA. In the absence of tRNA, any long RNA caused a slight increase in Gag membrane association. But in the presence of 20 \u00b5M tRNA, 5\u2019UTR and a longer 1947 nt fragment of the HIV-1 genome increased Gag membrane association more than other RNAs. We hypothesize that a viral RNA with several high-affinity binding sites for Gag can recruit several Gag molecules to the membrane if only one of them dissociates from its membrane-occluding tRNA.\n\nIn summary, our study leads to a model for HIV-1 genome selection where the NC domain of Gag is necessary but not sufficient for the selective packaging of the HIV-1 genomic RNA (Figure 7). Lattice contacts conferring Gag ability to multimerize on a membrane are crucial for the selective packaging of viral RNA. The 5\u2019UTR is recruited to membranes by multimerized Gag without any gross changes to its secondary structure. Moreover, the association of Gag with tRNA serves to inhibit genome-less virus assembly.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/14663/elife-14663-fig7-v2.jpg)\n\n**Figure 7.:** Cytosolic Gag (light gray triangles) is inhibited from membrane association by its association with tRNA (yellow). Gag (triangles and hexagons, colored dark gray where forming specific contacts with the packaging signal) binding viral genomic RNA (red; thick portions correspond to the 5\u2019UTR, thin portions to the remainder, not shown to scale) has a higher probability to overcome this inhibition and associate with the plasma membrane. The selectivity of membrane-bound Gag for the viral genome necessitates CA-CA immature lattice contacts.\n\n## Materials and methods\n\n### Protein expression and purification\n\nFull-length, N-terminally myristoylated HIV-1 Gag was purified as previously described (Carlson and Hurley, 2012). Gag was labelled with ATTO488-maleimide or ATTO594-maleimide (Sigma-Aldrich, St. Louis, MO) on an engineered cysteine (A120C) in the MA-CA linker region. The resulting fluorophore-labeled protein eluted as a monodisperse peak from the final size exclusion column. \u0394NC Gag was cloned from the expression plasmid for full-length Gag by deleting the sequence corresponding to the two Zn fingers of NC (residues 393\u2013448 of full-length Gag, with the initiator Met being residue 1), and expressed and purified analogously to full-length Gag. The nucleocapsid (NC) domain of Gag (residues 378\u2013432 of full-length Gag) was expressed in E. coli as a C-terminal, TEV-protease cleavable, maltose-binding protein(MBP)-(His)6 fusion protein and purified analogously to full-length Gag, using NiNTA- and Heparin affinity columns followed by TEV protease digestion and size exclusion chromatography on a Superdex 75 16/60 column (GE Healthcare, Uppsala, Sweden). \u0394MA Gag (residues 120\u2013500) was based on the same synthetic gene as used for full-length Gag, expressed in E. coli as a TEV-cleavable (His)6-MBP- \u0394MA Gag-MBP construct, and purified as full-length Gag.\n\n### RNA generation and fluorophore labeling\n\nYeast tRNA was purchased from Invitrogen. All other RNAs were generated by in vitro transcription using T7 polymerase, and purified either by sequential LiCl and ethanol precipitation, or polyacrylamide gel electrophoresis. The 5\u2019UTR and RRE RNAs consisted of nucleotides 1\u2013345 and 7259\u20137612 of the NL4-3 (GenBank: AF324493.2) and ARV-2/SF2 (GenBank: K02007.1) unspliced RNAs, respectively (Heng et al., 2012; Bai et al., 2014). RNA378 and RNA2266 were transcribed from the first 378 nucleotides of a synthetic gene encoding human VPS25 (Im and Hurley, 2008), and the first 2266 nucleotides of the gene encoding H. sapiens AIP1/ALIX (GenBank: NM_013374.5), respectively. The integrity of the RNAs was monitored by denaturing formaldehyde-agarose gel electrophoresis. Fluorophore labeling of RNA was carried out using ULYSIS Alexa Fluor 488 (Molecular Probes, Waltham, MA) at 90\u00b0C for 10 min in the presence of 3\u2009mM MgCl2 followed by rapid cooling to 4\u00b0C to refold the labeled RNAs. Labeled RNAs were buffer-exchanged using Bio-Spin 6 spin columns (BIO-RAD, Hercules, CA), and the final degree of labeling was measured using UV-VIS spectrometry.\n\n### Vesicle preparations\n\nLipids were acquired from Avanti polar lipids (Alabaster, AL), except the fluorophore ATTO647-DOPE which was acquired from ATTO-TEC GmbH (Siegen, Germany). GUVs with a molar composition of 69.9% palmitoyl-oleoyl-phosphatidylcholine (POPC), 25% cholesterol, 5% brain-extracted phosphatidylinositol-4,5-bisphosphate (PI(4,5)P2) and 0.1% ATTO647-dioleoyl-phosphatidylethanolamine were electroformed as described previously (Carlson and Hurley, 2012). For LUVs, lipids with a molar composition of 70% POPC, 25% cholesterol, and 5% PI(4,5)P2 were dried over night in a desiccator and resuspended in LUV buffer (20\u2009mM Tris, 150\u2009mM NaCl, pH 7.4). They were subjected to ten freeze-thaw cycles on liquid nitrogen, followed by eleven times extrusion through a Nuclepore Track-Etched Membrane with 1.0 \u00b5m pore size (Whatman, Little Chalfont, United Kingdom).\n\n### Reconstitution on GUVs and confocal microscopy\n\nGUVs electroformed in 600\u2009mM sucrose were stored at room temperature and imaged within 24\u2009hr. Protein and RNAs were preincubated for 5 min at room temperature in GUV dilution buffer (20\u2009mM Tris, 300\u2009mM NaCl, 4\u2009mM MgCl2, pH\u00a0=\u00a07.4) and then diluted 1:1 with GUVs in a Lab-Tek II chambered coverglass (Fisher Scientific, Waltham, MA). Ten minutes after mixing, the reaction was imaged using an LSM 5 LIVE confocal microscope (Carl Zeiss, Jena, Germany). The membrane fluorophore was imaged using the 635 nm laser and a 650 nm long-pass emission filter, Gag using the 532 nm laser and a 550\u2013615 nm emission filter and RNA using the 488 nm laser and a 500\u2013525 nm emission filter. Membrane, protein, and RNA were imaged using separate tracks, and cross-excitation was found to be minimal with the chosen imaging parameters. On each reaction, ten z-stacks (each consisting of ten slices with 1.0 \u00b5m spacing) were acquired at positions selected solely on the basis of containing GUVs, without observing the fluorescence channels prior to acquisition. All experiments shown in the same figure were done within 24\u00a0hr using the same GUV batch for comparability. Each such experiment series was repeated on three separate occasions with different GUV preparations.\n\n### AT-2 treatment of Gag\n\nTo Gag-ATTO594, AT-2 (aldrithiol-2, Sigma-Aldrich) dissolved in DMSO was added to a final concentration of 100 \u00b5M, followed by a 15\u2009min incubation at 37\u00b0C prior to imaging.\n\n### Image analysis\n\nStatistics on RNA recruitment to Gag clusters was performed as described previously (Carlson and Hurley, 2012). Briefly, a custom-written script for MATLAB (Mathworks, Natick, MA) used the confocal z-stacks to create a binary mask excluding non-membrane voxels, then identified continuous areas with high Gag fluorescence within the membrane mask. Such an area (Gag cluster) was considered positive for RNA recruitment if its average RNA fluorescence was >2.0 times higher than the average in the GUV membrane outside Gag puncta, except for Figure 2 where a lower threshold of 1.25 was used. To quantitate the Gag binding type (Figure 2g\u2013h), all GUVs with a diameter >5 \u00b5m were counted. The GUVs were inspected for Gag binding in the 532 nm fluorescence channel, and those GUVs with Gag clusters but areas completely devoid of detectable Gag fluorescence were counted as 'clustered only' The remaining GUVs either had no detectable Gag binding, or had an even fluorescence covering the entire membrane, sometimes with additional brighter areas. These GUVs were counted as 'diffuse binding'.\n\n### SHAPE analysis of the interactions between the HIV-1 5\u2019UTR and the Gag proteins\n\nFor SHAPE analysis, SHAPE handles were added to both ends of the 345-nt and 356-nt 5\u2019UTR construct as previously reported (Bai et al., 2014). Purified RNA samples were annealed at 0.1 mg/ml in a buffer containing 50\u2009mM HEPES-KOH pH 7.5, 200\u2009mM KOAc, and 3\u2009mM MgCl2 by heating at 75\u00b0C for 2\u2009min and snap cooling on ice. Before SHAPE reactions, 9\u2009\u03bcl of annealed 5\u2019UTR RNA at 0.1 mg/ml was mixed with 1\u2009\u03bcl of variants of Gag protein to achieve a final RNA:protein stoichiometry of ~1:8 (0.8 \u00b5M:7.2 \u00b5M). Matching protein buffer containing 20\u2009mM Tris, 150\u2009mM NaCl, 0.1\u2009mM TCEP, pH\u00a0=\u00a07.4 was used as a control. The resulting mixtures were incubated for 15\u2009min at room temperature. SHAPE probing was performed as previously reported\u00a0(Berry et al., 2011) with 1-methyl-7-mitroisatoic anhydride (1M7) as the 2\u2019 hydroxyl-selective electrophile. For SHAPE analysis of GUV-bound RNA, reactions were set up in Lab-Tek II chambered coverglasses as for confocal imaging to ensure identical mixing kinetics and GUV settling as during imaging. Gag and 5\u2019UTR were premixed with GUV dilution buffer to 150 \u00b5l total volume and after 5 min at room temperature were added to 150 \u00b5l GUVs in imaging chambers for final concentrations of 100 nM Gag and 5 nM 5\u2019UTR. 10 min after mixing, 200 \u00b5l supernatant was gently aspirated. 15 \u00b5l 1M7 in DMSO was briefly premixed with 35 \u00b5l GUV dilution buffer to avoid exposing GUVs to undiluted DMSO, added to the remaining 100 \u00b5l GUV solution in the chamber, and mixed by gentle stirring. Eight chambers were used for each reaction. The control reaction was performed by adding DMSO only. For the test of GUV integrity after this treatment (Figure 5\u2014figure supplement 2), the control reaction was repeated with fluorescent Gag-ATTO594 and imaged by confocal microscopy as described above 5 min after DMSO addition. To measure the amount of free RNA in the GUV reactions, the supernatant which was removed prior to SHAPE reagent addition was centrifuged for 5 min in a tabletop centrifuge at 21,000\u00a0\u00d7g to pellet any remaining vesicle-bound RNA. The RNA concentration in the supernatant of this sample was measured using a Qubit fluorimeter (ThermoFisher Scientific, Waltham, MA). Raw traces from fragment analysis was analyzed using ShapeFinder (Vasa et al., 2008).\n\n### Vesicle flotation assay\n\nGag and RNA were mixed in a total volume of 60 \u00b5l LUV buffer containing 1.67\u2009mM MgCl2 and incubated for 5 min at room temperature. 40 \u00b5l 1.0 mg/ml freshly prepared LUVs were added and the samples were incubated for 10 min at 37\u00b0C. The reactions were mixed with OptiPrep solution (Sigma-Aldrich) and LUV buffer to 700 \u00b5l and 30% (w/v) iodixanol. This solution was placed at the bottom of ultracentrifuge tubes and overlayed with 900 \u00b5l 18% (w/v) iodixanol in LUV buffer and 700 \u00b5l LUV buffer. The gradients were subjected to ultracentrifugation in an Sw55.Ti rotor for 3\u00a0hr at 45,000\u2009rpm at 4\u00b0C. At the end of the run the vesicles fractions were collected from the interface between the 0% and 18% iodixanol fraction, and the amount of Gag associated with the vesicles was measured in a GloMax-Multi microplate reader (Promega, Fitchburg, WI) using 490 nm excitation light and a 510\u2013570 nm emission filter. All experiments shown in the same panel were conducted with the same preparation of LUVs and each experiment series was repeated on three separate occasions with different LUV preparations\n",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "f7528db6-d462-45b2-8677-f5b9f74593de",
+      "submission_id": "ee74d674-1e92-4967-989d-0b7ebf2051f8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wesley I Sundquist, University of Utah , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.14663.014](https://doi.org/10.7554/eLife.14663.014)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Reconstitution of selective HIV-1 RNA packaging in vitro by membrane-bound Gag assemblies\" for consideration by eLife. Your article has been favorably evaluated by Wenhui Li as the Senior editor and three reviewers, one of whom, Wes Sundquist, is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nGeneral assessment:\n\nThe authors describe a reconstituted HIV RNA \"packaging\" system featuring specific interactions between the viral RNA and membrane-associated Gag polyprotein. Attractive features of the system include: 1) dependence upon the 5'UTR core packaging site, 2) a requirement for immature Gag assembly, and 3) tRNA inhibition of Gag-membrane interactions that is specifically overcome by RNAs that contain the HIV-1 5'UTR. In addition to describing the system, the authors point out that their study is the first to show that the structure of the dimeric RNA does not change significantly during the different steps of packaging, as evidenced by a relative lack of SHAPE reactivity changes. This report marks the next progression in the excellent studies from the Hurley lab in which they have reconstituted different stages of HIV-1 assembly in vitro.\n\nIn principle, these studies represent a significant advance, but several additional controls are necessary to ensure that the system is accurately mimicking viral RNA packaging as it occurs in the context of a cellular infection. Specifically, recent studies from other laboratories support a model in which HIV RNA packaging occurs through a stepwise pathway in which the viral RNA begins in a translatable conformation (Gag AUG codon exposed), converts into a dimerizing conformation (Gag AUG codon sequestered, DIS element exposed), interacts specifically with a small number of Gag molecules that bind guanosine clusters in the 5'UTR, and then interacts with a much larger number of Gag molecules along its entire length as the immature virion lattice assemblies at the membrane. Unspliced, dimeric RNA is selectively packaged against a background of cellular RNAs, spliced RNAs, and monomeric RNAs. Thus far, the in vitro system has been shown to recapitulate some, but not all of these features.\n\nSubstantive concerns to be addressed:\n\n1) The authors argue that their work \"will stand as the definitive in vitro study of HIV genome packaging\". This is certainly a worthy goal, but to achieve it the authors need to do more to demonstrate that their system really does recapitulate all of the key aspects of specificity seen in the cellular context.\n\nSpecifically, the authors need to show:\n\nA) Selective packaging of dimeric vs. mutant HIV RNAs (e.g., using DIS mutants that are shown experimentally not to dimerize and using other mutant(s) that have been shown to reduce packaging).\n\nB) Selective packaging of unspliced RNAs (e.g., using mimics of spliced viral RNAs).\n\nC) That NC mutants (or AT-2 treatment) reduce binding specificity.\n\nD) That the membrane actually plays an important role in helping to generate RNA selectivity (this is shown indirectly by loss of specificity in the Gag assembly mutants, but it is not clear that the membrane is required for Gag assembly).\n\nE) That Gag proteins actually bind along the length of the viral RNA when the RNA-Gag-membrane complex forms.\n\nThis is not just a list of \"extra\" experiments to do \u2013 we consider them essential for validating the in vitro packaging system.\n\n2) The authors should show tests of statistical significance throughout. Some of the changes shown appear to be rather modest, and it is important to know that they are statistically significant (or discover that they are not).\n\n3) Molecular interpretations of the fluorescence data are very difficult. Of what the \"Gag clusters\" really consist remains unknown, and the fluorescence visualization in some cases is marginal. The lipid dye sometimes shows what GUV experts would interpret to be \"junk\" and does not track uniformly around the periphery of the GUV (e.g. Figure 1A, 1C). While the bar graph showing that Gag mutants (esp. the two-fold WM mutant) are defective in clustering seems quite convincing (Figure 2G), the actual GUV pictures used as examples (Figure 2E for wt, 2F for mutant) are not convincing at all. It is really hard to see much in these pictures and their quality should be improved.\n\nOther points for the authors' consideration:\n\n1) In Figure 1G, why does addition of 10-fold excess of competitor RNA378 reduce Gag colocalization to 0% (I might have thought it would reduce it to 10%)?\n\n2) In Figure 1A, it would be helpful to highlight the splice donor site, since the lack of SHAPE reactivity at that site is used as evidence that the RNA is in the packageable conformation. The authors might even consider showing the alternative conformation with a SD hairpin to emphasize that their SHAPE data fit with one conformation and not the other.\n\n3) In the subsection \u201cSHAPE-based mapping of interactions between the HIV-1 5\u2019UTR and Gag in solution and on membranes\u201d: It was not clear why different protein:RNA ratios were used in the solution vs. GUV reactions.\n\n4) A related question is how the authors know that most of the RNA is bound by Gag proteins under these conditions.\n\n5) In the subsection \u201cRNA selectivity depends upon intact CA domain lattice contacts\u201d, last paragraph: It appears that the authors meant to refer to Figure 2G (not 2F).\n\n6) Figure 6: One of the two RNAs seems to be missing its 3' tail (and the figure itself isn't labeled with a figure number).\n\n7) The authors should probably discuss the point that the RNA structure from the Summers' laboratory that they use to interpret their SHAPE data is actually of the monomeric core packaging element. They argue, based upon the SHAPE data, that their RNA is dimeric even before it interacts with Gag, and this may well be true (though it should be shown more directly), but even if they're right it seems possible that the structures of the monomeric and dimeric core packaging RNA elements may differ in significant ways (beyond simply forming or not forming a DIS kissing loop).\n",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "34de1205-2113-4251-af79-5e03b788be86",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C1",
+      "claim": "HIV-1 Gag selects and packages a dimeric, unspliced viral RNA in the context of a large excess of cytosolic human RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "HIV-1 Gag selects and packages a dimeric, unspliced viral RNA in the context of a large excess of cytosolic human RNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in HIV-1 biology, drawing from established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "e80be182-c763-4382-bad9-04a382cf68ce",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C2",
+      "claim": "A minimal system consisting of purified RNAs, recombinant HIV-1 Gag and giant unilamellar vesicles can recapitulate the selective packaging of the 5' untranslated region of the HIV-1 genome in the presence of excess competitor RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We used a minimal system consisting of purified RNAs, recombinant HIV-1 Gag and giant unilamellar vesicles to recapitulate the selective packaging of the 5' untranslated region of the HIV-1 genome in the presence of excess competitor RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the primary experimental finding of the study, supported by data presented in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "718982f5-db4c-40ef-ba8d-106c210327ab",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C3",
+      "claim": "Mutations in the CA-CTD domain of Gag which subtly affect the self-assembly of Gag abrogated RNA selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in the CA-CTD domain of Gag which subtly affect the self-assembly of Gag abrogated RNA selectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "07b2f75f-812f-450d-8b56-ef3aa6a90d05",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C4",
+      "claim": "tRNA suppresses Gag membrane binding less when Gag has bound viral RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We further found that tRNA suppresses Gag membrane binding less when Gag has bound viral RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "3b64d43a-bc84-45a6-a901-09243080029f",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C5",
+      "claim": "The ability of HIV-1 Gag to selectively package its RNA genome and its self-assembly on membranes are interdependent on one another.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability of HIV-1 Gag to selectively package its RNA genome and its self-assembly on membranes are thus interdependent on one another.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data showing that mutations affecting assembly also affect RNA selectivity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "a99620e4-67eb-4c92-a3e9-f4fd96799030",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C6",
+      "claim": "The nucleocapsid (NC) domain of Gag has two zinc knuckle motifs which together with adjacent residues interact with the viral RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The nucleocapsid (NC) domain of Gag has two zinc knuckle motifs which together with adjacent residues interact with the viral RNA (Berkowitz et al., 1993; Lu et al., 2011b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "fb2adce6-099b-4063-9e43-d8c51ec06434",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C7",
+      "claim": "Mutations in NC that interfere with RNA binding lead to formation of non-infectious viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in NC that interfere with RNA binding lead to formation of non-infectious viruses (Aldovini and Young, 1990; Gorelick et al., 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "6849f044-97fc-4ee3-a2b6-08b8bc76b6af",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C8",
+      "claim": "Gag selectively packages unspliced, full-length genomic RNA through interactions with its 5' untranslated region (5'UTR).",
+      "claim_type": "EXPLICIT",
+      "source": "Gag selectively packages unspliced, full-length genomic RNA through interactions with its 5' untranslated region (5'UTR), which is different in spliced and unspliced constructs (Lu et al., 2011b; Kuzembayeva et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "bb71410b-5968-4cb1-b4e3-3fe3574cfc50",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C9",
+      "claim": ">90% of released HIV-1 particles have packaged genomic RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-virion fluorescence assays indicate that >90% of released HIV-1 particles have packaged genomic RNA (Chen et al., 2009)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "716e5ac4-8a35-46e1-93bf-4fc917f2c2ac",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C10",
+      "claim": "Packaging of a dimeric genome appears to be strongly preferred.",
+      "claim_type": "EXPLICIT",
+      "source": "packaging of a dimeric genome appears to be strongly preferred (Sakuragi et al., 2003; Chen et al., 2009; Nikolaitchik et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "49ecaa6e-1e91-4689-9f5d-a0f7f1372280",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C11",
+      "claim": "The packaging of a single dimeric genome is independent of RNA mass, since genomes with altered lengths are always packaged as single dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "The packaging of a single dimeric genome is independent of RNA mass, since genomes with altered lengths are always packaged as single dimers (Nikolaitchik et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "991cf858-15cb-40a3-9b27-8906a4b80ffc",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C12",
+      "claim": "Genomic RNAs with sequence differences are efficiently packaged as heterodimers as long as they have identical DIS sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomic RNAs with sequence differences are efficiently packaged as heterodimers as long as they have identical DIS sequences (Chen et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "2fca620e-e8e8-4df4-abfd-65944cb4dc04",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C13",
+      "claim": "The \u03c8/SL3 stem loop region in the 5'UTR was initially identified as a sequence required for efficient packaging of genomic RNA into HIV-1 virions.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03c8/SL3 stem loop region in the 5'UTR was initially identified as a sequence required for efficient packaging of genomic RNA into HIV-1 virions (Lever et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "e48111dd-3a23-4a40-a8ef-cc758bc85e4d",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C14",
+      "claim": "A single released HIV-1 virus contains one dimeric genomic RNA and 2400 \u00b1 700 Gag molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "A single released HIV-1 virus contains one dimeric genomic RNA (Chen et al., 2009) and 2400 \u00b1 700 Gag molecules (Carlson et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "45063b1b-f4fc-4832-8036-8fb3cb44fbf1",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C15",
+      "claim": "Cross-linking-immunoprecipitation sequencing (CLIP-seq) revealed a strikingly different RNA preference of cytosolic and membrane-bound Gag.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, cross-linking-immunoprecipitation sequencing (CLIP-seq) revealed a strikingly different RNA preference of cytosolic and membrane-bound Gag (Kutluay et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "6ff7c67a-29e1-4ace-80a8-20e5f5cc6a64",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C16",
+      "claim": "Cytosolic Gag binds tRNA through its otherwise membrane-binding matrix (MA) domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytosolic Gag binds tRNA through its otherwise membrane-binding matrix (MA) domain",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Kutluay et al., 2014 in the same paragraph.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "f3babb39-32f8-478a-b4a9-47f2695fd3bd",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C17",
+      "claim": "Cytosolic Gag associates mainly with cellular RNAs through its NC domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytosolic Gag binds tRNA through its otherwise membrane-binding matrix (MA) domain, and associates mainly with cellular RNAs through its NC domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Kutluay et al., 2014 in the same paragraph.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "54c8cb50-dad5-40dc-9e8f-9390a388e9e3",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C18",
+      "claim": "The minor fraction of cytosolic Gag which binds viral RNA has a strong preference for the 5'UTR but also binds to the Rev-responsive element (RRE).",
+      "claim_type": "EXPLICIT",
+      "source": "The minor fraction of cytosolic Gag which binds viral RNA has a strong preference for the 5'UTR but also binds to the Rev-responsive element (RRE), whose main function is thought to be in nuclear export (Kuzembayeva et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "ef222fae-fa66-44ab-b134-cbc4c6308157",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C19",
+      "claim": "Gag in the membrane fraction has lost its tRNA association and is strongly enriched for viral RNA, interacting with equal probability with all parts of the genomic RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, Gag in the membrane fraction has lost its tRNA association and is strongly enriched for viral RNA, interacting with equal probability with all parts of the genomic RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the citation to Kutluay et al., 2014 in the same paragraph.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "6150ffa3-9140-44f7-9b09-38454928ddf4",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C20",
+      "claim": "GUV-bound Gag clusters mimic the behavior of cellular HIV-1 budding sites in their lipid requirements for assembly, nucleic acid- and ESCRT protein binding.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that GUV-bound Gag clusters mimic the behavior of cellular HIV-1 budding sites in their lipid requirements for assembly, nucleic acid- and ESCRT (endosomal sorting complex required for transport) protein binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a reference to the authors' previous work (Carlson and Hurley, 2012).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "20d60618-f4c1-451c-b95f-26218f144418",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C21",
+      "claim": "The 1\u2013345 construct was previously shown to dimerize even in the absence of Gag.",
+      "claim_type": "EXPLICIT",
+      "source": "The 1\u2013345 construct was previously shown to dimerize even in the absence of Gag (Heng et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "b7c1fee7-6ae2-47ef-8c93-9248d87217b0",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C22",
+      "claim": "Strong RNA fluorescence was consistently observed at Gag clusters on GUV membranes, regardless of which RNA was used.",
+      "claim_type": "EXPLICIT",
+      "source": "Strong RNA fluorescence was consistently observed at Gag clusters on GUV membranes, regardless of which RNA was used (Figure 1a\u2013c,g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "492ae242-bd0a-4323-93a7-f8a791229a26",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C23",
+      "claim": "RNA recruitment to Gag clusters was dependent on the NC domain of Gag.",
+      "claim_type": "EXPLICIT",
+      "source": "This RNA recruitment was dependent on the NC domain of Gag since neither a \u0394NC Gag nor Gag treated with the Zn-finger disrupting drug AT-2 (Rossio et al., 1998) was able to recruit fluorescent RNA to GUV membranes (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "6cb47512-9250-4e3f-a2e8-e9846ef47334",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C24",
+      "claim": "When a ten fold excess of non-fluorescent RNA378 was included, the fluorescent 5'UTR was still visible at most Gag clusters, whereas RRE was present at fewer Gag clusters and at lower fluorescence intensities, and fluorescent RNA378 was virtually absent.",
+      "claim_type": "EXPLICIT",
+      "source": "After assembly on GUVs, the fluorescent 5'UTR was still visible at most Gag clusters in the presence of ten fold excess competitor RNA, whereas RRE was present at fewer Gag clusters and at lower fluorescence intensities, and fluorescent RNA378 was virtually absent (Figure 1d\u2013f,g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "9899f63d-d0c0-45a2-b956-2b0736b48703",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C25",
+      "claim": "5'UTR 3way1 has several packaging-critical guanines around the three-way junction 1 in the CES mutated to adenines (G116A, G318A, G320A, G328A, G329A, G331A, G333A).",
+      "claim_type": "EXPLICIT",
+      "source": "5'UTR 3way1 has several packaging-critical guanines around the three-way junction 1 in the CES mutated to adenines (G116A, G318A, G320A, G328A, G329A, G331A, G333A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mutations introduced in the 5'UTR 3way1 construct.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "7544ec49-c167-483a-984d-a24f165df99a",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C26",
+      "claim": "The set of mutations in 5'UTR 3way1 was previously found to reduce packaging in a cellular packaging assay.",
+      "claim_type": "EXPLICIT",
+      "source": "This set of mutations was previously found to reduce packaging in a cellular packaging assay (Keane et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "416f860d-febe-4f0a-8bb6-7c9f941cbc92",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C27",
+      "claim": "5'UTR mono has the GCGCGC sequence in DIS replaced by GAGA, creating a monomeric 5'UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "5'UTR mono has the GCGCGC sequence in DIS replaced by GAGA, creating a monomeric 5'UTR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the mutations introduced in the 5'UTR mono construct.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "c4950c7e-1c6c-46fa-87b7-3514bab9a921",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C28",
+      "claim": "In the presence of 5 nM 5'UTR very little fluorescent 5'UTR could be seen at Gag clusters on GUVs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of 5 nM 5'UTR very little fluorescent 5'UTR could be seen at Gag clusters on GUVs (Figure 2b,g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "da8798a2-059f-4da2-9a5e-4a53de86a10d",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C29",
+      "claim": "In the presence of either of the altered constructs, more fluorescent 5'UTR was visible at Gag clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the presence of either of the altered constructs, more fluorescent 5'UTR was visible at Gag clusters (Figure 2c\u2013f,g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "92a0a4f4-90ee-409f-ba7f-355c46d36487",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C30",
+      "claim": "The in vitro packaging assay is able to detect the lower affinity of assembling Gag for monomeric, 3way1-mutated, and spliced 5'UTRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the in vitro packaging assay is able to detect the lower affinity of assembling Gag for monomeric, 3way1-mutated, and spliced 5'UTRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "d67e7270-0c1c-4618-b362-1abdf2bcb667",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C31",
+      "claim": "A minimal system consisting of purified RNAs, Gag, and PI(4,5)P2-containing GUVs recapitulates the selective RNA packaging of an assembling HIV-1 particle at RNA concentrations far below reported solution affinities of NC for 5'UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, a minimal system consisting of purified RNAs, Gag, and PI(4,5)P2-containing GUVs recapitulates the selective RNA packaging of an assembling HIV-1 particle at RNA concentrations far below reported solution affinities of NC for 5'UTR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings, supported by data in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "766aa3dc-a266-4ba8-8376-379dca895aca",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C32",
+      "claim": "The 5'UTR is strongly selected for in a competition assay, whereas the RRE is only partially selected for after addition of competitor.",
+      "claim_type": "EXPLICIT",
+      "source": "The 5'UTR is strongly selected for in a competition assay, whereas the RRE is only partially selected for after addition of competitor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "04ba8a22-a23b-4ca6-a8c3-038f9fcbda27",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C33",
+      "claim": "5'UTRs that are either monomerized, have packaging-critical guanines mutated to adenines, or represent a spliced viral RNA are less favored in the competition assay.",
+      "claim_type": "EXPLICIT",
+      "source": "5'UTRs that are either monomerized, have packaging-critical guanines mutated to adenines, or represent a spliced viral RNA are less favored in the competition assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "91f4c48c-a25b-45b1-a4fa-8a507827d09d",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C34",
+      "claim": "The reported affinity constant for 5'UTR-NC association is 17 nM.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the low concentrations at which this selectivity is observed, below the reported 17 nM affinity constant for 5'UTR-NC association (Heng et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "64baaa57-cf52-4d68-a1f6-b6af0654c658",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C35",
+      "claim": "The W316D,M317D mutation alters a motif at the two fold symmetry contact in the CA C-terminal domain (CA-CTD), which is described in the literature to be important for virus assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "The W316D,M317D mutation (\"Gag two-fold\") alters a motif at the two fold symmetry contact in the CA C-terminal domain (CA-CTD), which is described in the literature to be important for virus assembly (Gamble et al., 1997; von Schwedler et al., 2003) (Figure 3a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "5ba79eb1-27aa-4163-a3a9-eb1e75db1a38",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C36",
+      "claim": "When Gag two-fold protein was added to GUVs at 100 nM, it bound in a strikingly different way from wild-type Gag, often resulting in a diffuse Gag fluorescence covering the entire GUV membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "When this protein was added to GUVs at 100 nM, it bound in a strikingly different way from wild-type Gag, often resulting in a diffuse Gag fluorescence covering the entire GUV membrane (Figure 3f,g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "53fdf976-83b0-4738-9c2e-4f955a467fc6",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C37",
+      "claim": "Wild type Gag essentially only bound to GUVs in clusters even in the absence of RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "For comparison, wild type Gag essentially only bound to GUVs in clusters even in the absence of RNA (Figure 3e,g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "bd8d7a74-835b-43a4-8a06-f479b4ceec1d",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C38",
+      "claim": "Gag three-fold protein bound GUVs similarly to wild-type Gag, albeit with a moderate increase in the diffuse binding first observed for Gag two-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "This protein bound GUVs similarly to wild-type Gag, albeit with a moderate increase in the diffuse binding first observed for Gag two-fold (Figure 3g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "f1980fdd-a51f-484b-9d9c-0b44f7489abe",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C39",
+      "claim": "A Gag protein mutated at the six fold interface in CA-CTD with the single-residue replacement K290A showed an increase in diffuse Gag binding over wild-type Gag.",
+      "claim_type": "EXPLICIT",
+      "source": "A Gag protein mutated at the six fold interface in CA-CTD (Figure 3a,d) with the single-residue replacement K290A (\"Gag six-fold\") reported to affect virus assembly (von Schwedler et al., 2003; Robinson et al., 2014), also showed an increase in diffuse Gag binding over wild-type Gag (Figure 3g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "3ae295e5-c1a2-4136-8c79-cd7c31c3c088",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C40",
+      "claim": "Combining the two-, three-, and six-fold mutations in one protein resulted in an assembly phenotype similar to that of Gag two-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Combining the two-, three-, and six-fold mutations in one protein (\"Gag 2-,3-,6-fold\") resulted in an assembly phenotype similar to that of Gag two-fold (Figure 3g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "87e7e96c-1bb4-41ed-a8e3-95fb52426f8c",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C41",
+      "claim": "Mutations in the CA-CTD of either the W316,M317 motif at the two-fold symmetry contact, or of K290 at the six-fold symmetry contact, both described as leading to virus release defects, affect the ability of Gag to cluster on membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, mutations in the CA-CTD of either the W316,M317 motif at the two-fold symmetry contact, or of K290 at the six-fold symmetry contact, both described as leading to virus release defects (von Schwedler et al., 2003), affect the ability of Gag to cluster on membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "0f0f2c58-72f9-4e98-99ee-8831388cdb52",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C42",
+      "claim": "The presence of RNA increased the clustering of all Gag proteins, and increased the fraction of GUVs which had bound Gag.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the presence of RNA increased the clustering of all Gag proteins, and increased the fraction of GUVs which had bound Gag (Figure 4a\u2013j, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4 and Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "0a9b1f06-6caf-46ac-8d4c-1cdd16b19510",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C43",
+      "claim": "Recruitment of fluorescent 5'UTR to the GUV membrane was observed for all Gag constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "Recruitment of fluorescent 5'UTR to the GUV membrane was observed for all Gag constructs (Figure 4a\u2013e)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "140a4bcc-0f15-4fae-8e4a-84798ff77a08",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C44",
+      "claim": "Wild type Gag retained as much 5'UTR fluorescence in the presence of competitor RNA as in its absence.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild type Gag retained as much 5'UTR fluorescence in the presence of competitor RNA as in its absence (Figure 4f,k)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "e0dfaee3-2b33-4427-8334-66df0e60dc21",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C45",
+      "claim": "The Gag three-fold mutant showed only a minor decrease in 5'UTR fluorescence in the presence of competitor RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "and the Gag three-fold mutant showed only a minor decrease (Figure 4h,k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "a3f9c367-63c8-4110-a8a2-5413ba627050",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C46",
+      "claim": "GUV-bound clusters of the Gag two-fold, Gag six-fold and Gag two-, three-, six-fold mutants lost most of their 5'UTR fluorescence in the presence of competitor RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, GUV-bound clusters of the Gag two-fold, Gag six-fold and Gag two-, three-, six-fold mutants lost most of their 5'UTR fluorescence in the presence of competitor RNA (Figure 4g,i\u2013k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "04d09123-e472-4a39-a1b8-2c0c9445febe",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C47",
+      "claim": "RNA selectivity in this assay closely correlates with clustered binding of Gag to GUVs in the absence of RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, RNA selectivity in this assay closely correlates with clustered binding of Gag to GUVs in the absence of RNA (compare Figures 3g and 4k).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from comparing data in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "cbbd7e6d-b96a-45e7-b4ee-84d243502166",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C48",
+      "claim": "Mutations which cause subtle changes in the ability of Gag to multimerize on a membrane drastically decrease the RNA selectivity of assembled Gag clusters, without greatly affecting their ability to bind RNA non-specifically.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, mutations which cause subtle changes in the ability of Gag to multimerize on a membrane drastically decrease the RNA selectivity of assembled Gag clusters, without greatly affecting their ability to bind RNA non-specifically.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings, supported by data in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "5b0e3381-c5d7-4470-9b28-2f4a38909420",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C49",
+      "claim": "The RNA-only SHAPE profile is highly consistent with the recently reported solution structure of the HIV-1 RNA packaging signal.",
+      "claim_type": "EXPLICIT",
+      "source": "The RNA-only SHAPE profile is highly consistent with the recently reported solution structure of the HIV-1 RNA packaging signal (Keane et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study and comparison with SHAPE data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "c22ed5b3-908d-4ab8-ba09-2a39910e3acf",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C50",
+      "claim": "The dimer-promoting DIS loop (G257-C262) had no SHAPE reactivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The dimer-promoting DIS loop (G257-C262) had no SHAPE reactivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SHAPE data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "1585a04e-8410-4292-8e23-0e90b3548c24",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C51",
+      "claim": "The SHAPE reactivity of the SD region G289-G292 is consistent with the reported 3D structure of the dimeric conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the SHAPE reactivity of the SD region G289-G292 (highlighted with a gray shaded box in Figure 5a) is consistent with the reported 3D structure of the dimeric conformation (Keane et al., 2015), not with the completely unprotected loop proposed for the monomeric 5'UTR (Lu et al., 2011a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SHAPE data shown in Figure 5 and citations to previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "f0889dfe-a4c9-4b17-8ac8-5c12cf39517a",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C52",
+      "claim": "A longer 356 nt 5'UTR able to assume both monomer- and a dimer-favoring conformations had a similar SHAPE reactivity to the 345 nt 5'UTR, indicating that it is present mainly as a dimer under the conditions of the study.",
+      "claim_type": "EXPLICIT",
+      "source": "A longer 356 nt 5'UTR able to assume both monomer- and a dimer-favoring conformations (Heng et al., 2012) had a similar SHAPE reactivity to the 345 nt 5'UTR (Figure 5\u2014figure supplement 1b), indicating that it is present mainly as a dimer under the conditions of the study.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SHAPE data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "bd7fe990-2d2f-421a-89fa-608a135c077e",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C53",
+      "claim": "The SHAPE profiles for 5'UTR were very similar in the presence of NC, \u0394MA-Gag, and when bound to Gag clusters on GUVs.",
+      "claim_type": "EXPLICIT",
+      "source": "The SHAPE profiles for 5'UTR were very similar in the presence of NC, \u0394MA-Gag, and when bound to Gag clusters on GUVs (Figure 5b, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SHAPE data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "6aea06e2-2ccf-4894-9d2a-9e39adbc4c85",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C54",
+      "claim": "Upon Gag binding, major SHAPE changes were observed in the following clusters: U117-U122, G234-A242, A271-G273, and A302-G309.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon Gag binding, major SHAPE changes were observed in the following clusters: U117-U122, G234-A242, A271-G273, and A302-G309 (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SHAPE data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "b71bbd32-a155-40f6-88ae-1ee8d9115c55",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C55",
+      "claim": "GUV recruitment of the complex did not trigger additional SHAPE changes, indicating that the overall structure of the 5'UTR is not further altered between the states of initial Gag binding in solution and recruitment to assembled Gag on a membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "However, GUV recruitment of the complex did not trigger additional SHAPE changes (Figure 5c, Figure 5\u2014figure supplement 1), indicating that the overall structure of the 5'UTR is not further altered between the states of initial Gag binding in solution and recruitment to assembled Gag on a membrane.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SHAPE data shown in Figure 5 and is an inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "34169716-e2ce-4350-b9b0-f02be1219260",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C56",
+      "claim": "The SHAPE reactivity of the SD region G289-G292 is similar under all conditions studied, indicating that the 5'UTR is maintained in the dimeric conformation over the assembly process.",
+      "claim_type": "EXPLICIT",
+      "source": "Noteworthy, the SHAPE reactivity of the SD region G289-G292 is similar under all conditions studied (Figure 5a,c, Figure 5\u2014figure supplement 1), indicating that the 5'UTR is maintained in the dimeric conformation over the assembly process.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SHAPE data shown in Figure 5 and is an inference from the data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "260fd859-3209-4f4d-9497-c372d5d67b82",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C57",
+      "claim": "There is no evidence for large changes in secondary structures in the 5'UTR when interacting with either Gag in solution or assembled Gag on a membrane, and it appears dimeric under the conditions studied.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, we see no evidence for large changes in secondary structures in the 5'UTR when interacting with either Gag in solution or assembled Gag on a membrane, and it appears dimeric under the conditions studied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the SHAPE analysis findings, supported by data in Figure 5.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "085ade0c-506c-4299-bb77-ff7caf5b7a1a",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C58",
+      "claim": "The membrane-binding matrix (MA) domain of cytosolic Gag has been shown to bind primarily tRNA in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The membrane-binding matrix (MA) domain of cytosolic Gag has been shown to bind primarily tRNA in cells (Kutluay et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "a1019bc8-30c6-4476-906e-3f4e0c4fbaed",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C59",
+      "claim": "Several reports have shown that RNA binding to the basic patch on the MA domain of HIV-1 Gag can compete with its ability to bind acidic phospholipids such as PI(4,5)P2.",
+      "claim_type": "EXPLICIT",
+      "source": "Several reports have shown that RNA binding to the basic patch on the MA domain of HIV-1 Gag can compete with its ability to bind acidic phospholipids such as PI(4,5)P2 (Alfadhli et al., 2009, 2011; Chukkapalli et al., 2010, 2013; Dick et al., 2013; Dick and Vogt, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "69678cb1-7f7d-4254-b918-29110c5a4daa",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C60",
+      "claim": "Premixing 100 nM Gag-ATTO594 with 1 \u00b5M yeast tRNA before addition to GUVs led to a virtually complete block in Gag assembly on GUVs.",
+      "claim_type": "EXPLICIT",
+      "source": "Premixing 100 nM Gag-ATTO594 with 1 \u00b5M yeast tRNA before addition to GUVs led to a virtually complete block in Gag assembly on GUVs (Figure 6a\u2013b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "83ff8f86-1617-41aa-8127-334102a555c2",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C61",
+      "claim": "For the tRNA titration, a 50% inhibition of Gag membrane association was evident at 200 nM tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "For the tRNA titration, a 50% inhibition of Gag membrane association was evident at 200 nM tRNA (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "8fba654a-b82c-4993-a682-a665a9fcd59c",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C62",
+      "claim": "At 20 \u00b5M tRNA, the amount of Gag found in the vesicle fraction dropped to ~10% of the value seen in the absence of RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "At 20 \u00b5M tRNA, the amount of Gag found in the vesicle fraction dropped to ~10% of the value seen in the absence of RNA (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "dd30e953-fdd8-4942-8cc7-c5933094b6ff",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C63",
+      "claim": "In the absence of tRNA, all long viral or unspecific RNAs slightly increased the amount of Gag associated with vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of tRNA, all these RNAs slightly increased the amount of Gag associated with vesicles (Figure 6d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "fe87abee-9ee6-437c-a610-20cdc12cc080",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C64",
+      "claim": "In the presence of 20 \u00b5M tRNA, the 5'UTR and the longer HIV1947 RNA (which contains the 5'UTR sequence) enhanced membrane association by Gag more than the other RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the presence of 20 \u00b5M tRNA however, the 5'UTR and the longer HIV1947 RNA (which contains the 5'UTR sequence) enhanced membrane association by Gag more than the other RNAs (Figure 6e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "6a2ae9e3-2499-414c-9274-ce0c48403c60",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C65",
+      "claim": "RNA378 had no effect on Gag membrane association in the presence of 20 \u00b5M tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA378 had no effect on Gag membrane association in the presence of 20 \u00b5M tRNA, whereas the effect of RRE or the longer RNA2266 was slight (Figure 6e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "2ce805e7-ef5b-46e5-855b-c14344e237aa",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C66",
+      "claim": "tRNA at micromolar concentrations potently inhibits membrane association of Gag.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, tRNA at micromolar concentrations potently inhibits membrane association of Gag.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings, supported by data in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "dd4aca8a-7952-4a2e-8abf-bb6902cca5a5",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C67",
+      "claim": "Under conditions where tRNA inhibits Gag membrane association, Gag that encounters viral RNA has a higher probability of overcoming that inhibition and associating with membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Under such conditions, Gag that encounters viral RNA has a higher probability of overcoming that inhibition and associating with membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "c2f0480f-ae56-4408-abe7-03e6a3647245",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C68",
+      "claim": "The NC domain of Gag is necessary but not sufficient for the selective packaging of the HIV-1 genomic RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our study leads to a model for HIV-1 genome selection where the NC domain of Gag is necessary but not sufficient for the selective packaging of the HIV-1 genomic RNA (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "e04ac24e-7ef5-4e7c-8b05-0937815d8e9e",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C69",
+      "claim": "Lattice contacts conferring Gag ability to multimerize on a membrane are crucial for the selective packaging of viral RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Lattice contacts conferring Gag ability to multimerize on a membrane are crucial for the selective packaging of viral RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "16cb297e-68f6-4a07-bc57-dc3814fb6224",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C70",
+      "claim": "The 5'UTR is recruited to membranes by multimerized Gag without any gross changes to its secondary structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The 5'UTR is recruited to membranes by multimerized Gag without any gross changes to its secondary structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the SHAPE analysis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "d6ca735a-f760-4e45-aa39-0216f34a5c7a",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C71",
+      "claim": "The association of Gag with tRNA serves to inhibit genome-less virus assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the association of Gag with tRNA serves to inhibit genome-less virus assembly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental findings of the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "63b22a0b-9583-4670-a14a-3c8be103f855",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C72",
+      "claim": "Genomic RNA is present at the onset of HIV-1 assembly at the plasma membrane, at which point the number of Gag molecules was reported to be below the detection limit of ~12 molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Genomic RNA is present at the onset of HIV-1 assembly at the plasma membrane, at which point the number of Gag molecules was reported to be below the detection limit of ~12 molecules (Jouvenet et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "5f3a5a17-a9d9-4c54-bd84-c40d90eeb257",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C73",
+      "claim": "Cytosolic Gag does not form large oligomers and mainly associates with cellular RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytosolic Gag does not form large oligomers (Robinson et al., 2014; Hendrix et al., 2015) and mainly associates with cellular RNAs (Kutluay et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "3bd473a7-bab8-49ac-8acd-39a5eb06d1e6",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C74",
+      "claim": "A small fraction of cytosolic Gag is found to be slowly diffusing and consist of oligomers of up to ~5 molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "A small fraction of cytosolic Gag is found to be slowly diffusing and consist of oligomers of up to ~5 molecules (Hendrix et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "ad8dd52c-5c56-4cea-abcf-a8440b72daa6",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C75",
+      "claim": "The large majority of plasma membrane-proximal genomic HIV-1 RNAs are monomeric in the absence of HIV-1 Gag.",
+      "claim_type": "EXPLICIT",
+      "source": "It was reported that the large majority of plasma membrane-proximal genomic HIV-1 RNAs are monomeric in the absence of HIV-1 Gag.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Chen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "ea9bb66f-76f8-4a7d-baa8-fb1cc931f12f",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C76",
+      "claim": "In cells expressing Gag, monomeric genomic RNAs are seen to coalesce to dimers on the membrane, but were not observed to arrive to the membrane as dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells expressing Gag, monomeric genomic RNAs are seen to coalesce to dimers on the membrane, but were not observed to arrive to the membrane as dimers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Chen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "d3da8572-e93a-478d-94a1-a9a055453e5c",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C77",
+      "claim": "The packaging signal of the related retrovirus Murine Leukemia Virus (MLV) is partially unfolded in released immature virions.",
+      "claim_type": "EXPLICIT",
+      "source": "This contrasts with reports that the packaging signal of the related retrovirus Murine Leukemia Virus (MLV) is partially unfolded in released immature virions (Grohman et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "332b31a4-1b5c-4c6b-af5e-20d713245c7a",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C78",
+      "claim": "The strongest decrease in SHAPE reactivity upon Gag interaction was found in the guanosine-rich bulges on the DIS stem, consistent with a recent study using full-length Gag in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "The strongest decrease in SHAPE reactivity upon Gag interaction was found in the guanosine-rich bulges on the DIS stem (Figure 5c), consistent with a recent study using full-length Gag in solution (Abd El-Wahab et al., 2014).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SHAPE data shown in Figure 5 and a citation to a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "b7cc873c-6094-42b5-8dd9-77a9d45d4dda",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C79",
+      "claim": "The increased SHAPE reactivity in central regions of the tandem three-way junction suggests that Gag engagement, while not leading to a drastic rearrangement of the 5'UTR secondary structure, may lead to alterations its 3D structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The increased SHAPE reactivity in central regions of the tandem three-way junction suggests that Gag engagement, while not leading to a drastic rearrangement of the 5'UTR secondary structure, may lead to alterations its 3D structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the SHAPE data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "617a25c3-449a-413f-b905-43427457d17b",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C80",
+      "claim": "RNA conformational changes upon binding to membrane-associated Gag are minor in magnitude and thus suggest that conformation rearrangements are likely to be a minor contributor to selective packaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results show that RNA conformational changes upon binding to membrane-associated Gag are minor in magnitude and thus suggest that conformation rearrangements are likely to be a minor contributor to selective packaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the SHAPE analysis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "e7872962-0aa3-4c23-a006-d4038bcaa08e",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C81",
+      "claim": "Gag-tRNA interactions may serve to increase Gag fidelity for viral RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Our reconstituted system allowed us to disentangle the effect that different RNAs have on Gag membrane association (Figure 6). We show that Gag-tRNA interactions may also serve to increase Gag fidelity for viral RNA.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "a286f986-023d-4738-ab81-684abda1b784",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C82",
+      "claim": "A viral RNA with several high-affinity binding sites for Gag can recruit several Gag molecules to the membrane if only one of them dissociates from its membrane-occluding tRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that a viral RNA with several high-affinity binding sites for Gag can recruit several Gag molecules to the membrane if only one of them dissociates from its membrane-occluding tRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors based on their findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "9f5bd4e6-6438-47e2-9a54-2e823eba03a8",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C83",
+      "claim": "The amount of viral RNA coprecipitated with cytoplasmic Gag is reduced five fold when its CA-CTD is deleted, whereas the amount of cellular RNA coprecipitated remains the same.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our findings, it has been reported that the amount of viral RNA coprecipitated with cytoplasmic Gag is reduced five fold when its CA-CTD is deleted, whereas the amount of cellular RNA coprecipitated remains the same (Kutluay and Bieniasz, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "490a1b32-b652-4610-9af3-32427bb95261",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C84",
+      "claim": "A \u0394CA-CTD Gag was still able to tether genomic RNA to the plasma membrane in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, in experiments which did not address selectivity, a \u0394CA-CTD Gag was still able to tether genomic RNA to the plasma membrane in cells (Jouvenet et al., 2009; Sardo et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "aa3588e0-e4f5-4160-96c3-878727be08cb",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C85",
+      "claim": "A \u0394CA-NTD Gag still supports particle release.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations at the three-fold symmetry contact in CA-NTD did not alter Gag clustering on membranes (Figure 3g), concurring with observations that a \u0394CA-NTD Gag still supports particle release (Borsetti et al., 1998; Accola et al., 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "9f7954d6-b097-4efd-9710-540d88a71166",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "claim_id": "C86",
+      "claim": "It is possible that the RNA chaperone activity of Gag may be necessary to expose the 5'UTR and its DIS in the context of a full-length genome.",
+      "claim_type": "EXPLICIT",
+      "source": "It is possible that the RNA chaperone activity of Gag may be necessary to expose the 5'UTR and its DIS in the context of a full-length genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0f5107fe-e052-4faf-bbf6-0f95ab9052e9",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A minimal in vitro system consisting of purified RNAs, recombinant HIV-1 Gag, and giant unilamellar vesicles (GUVs) recapitulates selective packaging of the HIV-1 5'UTR in the presence of excess competitor RNA. The 5'UTR is strongly selected for in competition assays, whereas RRE is only partially selected and control RNA (RNA378) is virtually absent. Mutated 5'UTRs (monomeric, 3way1, or spliced) show reduced selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C22-C24, C31-C33 collectively demonstrate selective RNA packaging in the reconstituted system with strong experimental support from Figures 1 and 2. The data show clear differential recruitment of different RNAs to Gag clusters, with quantitative analysis confirming visual observations. The system successfully distinguishes between wild-type and mutant 5'UTRs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "d74fc9b2-8e20-4720-ae9d-13b0318b9c53",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mutations in the CA-CTD domain of Gag that affect membrane clustering (W316D/M317D at the two-fold and K290A at the six-fold symmetry contacts) drastically reduce RNA selectivity without greatly affecting non-specific RNA binding. RNA selectivity correlates with clustered Gag binding to membranes in the absence of RNA, while mutations causing diffuse membrane binding lose selectivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C35-C48 are well-supported by data in Figures 3 and 4, showing clear correlation between Gag clustering phenotype and RNA selectivity. The two-fold and six-fold mutants show both diffuse membrane binding and loss of selectivity, while the three-fold mutant retains both clustering and selectivity. The experimental design appropriately separates effects on RNA binding capacity from selectivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "dcb8bc3a-b138-4cb4-85b5-6d687c81c23b",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "SHAPE analysis reveals that the 5'UTR maintains its dimeric secondary structure throughout the packaging process, from free RNA in solution through Gag binding to membrane recruitment. Major SHAPE changes upon Gag binding occur in specific regions (U117-U122, G234-A242, A271-G273, A302-G309), but no additional changes occur upon GUV recruitment, indicating the 5'UTR structure is not drastically altered during membrane-associated assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C57, C70, C78-C80 are supported by comprehensive SHAPE data in Figure 5. The analysis appropriately compares RNA alone, with NC, with \u0394MA-Gag, and on GUVs, showing consistent SHAPE profiles across conditions. The SD region reactivity consistently indicates dimeric conformation. However, the inference that conformational changes are 'minor contributors' to selectivity (C80) is somewhat speculative given that SHAPE primarily reports secondary structure.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "98e085a2-c746-441a-83ef-cee8e7133efc",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "tRNA at micromolar concentrations potently inhibits Gag membrane association (50% inhibition at 200 nM, ~90% inhibition at 20 \u03bcM). Under conditions of tRNA inhibition, the 5'UTR and HIV1947 RNA (containing 5'UTR) enhance Gag membrane association more than other RNAs, suggesting Gag-tRNA interactions increase fidelity for viral RNA and inhibit genome-less virus assembly.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C58-C67, C71, C81 are supported by data in Figure 6, including both confocal microscopy and vesicle flotation assays. The dose-response for tRNA inhibition is well-characterized, and the differential effect of various RNAs in the presence of tRNA is clearly demonstrated. The conclusion that this mechanism increases fidelity (C81) is a reasonable inference from the data, though the mechanistic hypothesis (C82) remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "2fb12ce6-3429-461a-97aa-3975f53711d7",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The ability of HIV-1 Gag to selectively package its RNA genome and its self-assembly on membranes are interdependent. The NC domain is necessary but not sufficient for selective packaging, and lattice contacts conferring Gag multimerization ability are crucial for selective viral RNA packaging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C68-C69 represent the main conclusions of the study, synthesizing results from the mutational analysis (Figures 3-4) showing that assembly-defective mutants lose selectivity. The interdependence is well-supported by the correlation between clustering and selectivity. However, this is an integrative conclusion rather than a directly measured result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Background information from prior literature establishing the context for HIV-1 genome packaging, including the role of NC domain, 5'UTR recognition, packaging efficiency in virions, CLIP-seq findings on cytosolic vs. membrane-bound Gag, and previous characterization of the GUV system and various mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6-C21, C26, C34, C72-C77, C83-C85 are appropriately cited background claims from prior literature. These establish the scientific context and are supported by appropriate citations. The authors appear to accurately represent prior work, though independent verification of each cited claim is beyond the scope of this review.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "fd38c9cc-d9cb-41c5-8559-04a3dabd1583",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The in vitro packaging assay can detect differences in affinity for various 5'UTR constructs. Mutant 5'UTRs (3way1 with packaging-critical guanines mutated, mono with disrupted dimerization, and env-1 representing spliced RNA) compete less effectively than wild-type 5'UTR for binding to assembling Gag.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25, C27-C30 describe the mutant RNA constructs and their behavior in competition assays, supported by data in Figure 2. The mutations are clearly defined and the differential competition is demonstrated. This validates the assay's ability to detect biologically relevant differences in RNA affinity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    },
+    {
+      "id": "33603249-fa93-476e-95b1-a1ac567bbb26",
+      "content_id": "5bab5553-aece-4272-961c-7ecab566ad6d",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Speculative hypotheses proposed by the authors: (1) viral RNA with multiple high-affinity Gag binding sites can recruit multiple Gag molecules to the membrane if only one dissociates from tRNA, and (2) RNA chaperone activity of Gag may be necessary to expose the 5'UTR and DIS in the context of full-length genome.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C82 and C86 are explicitly speculative hypotheses proposed by the authors without direct experimental support in this study. While these are reasonable hypotheses based on the findings, they represent future directions rather than established results. The authors appropriately present these as speculation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:13:58.557660Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e80be182-c763-4382-bad9-04a382cf68ce",
+      "result_id": "0f5107fe-e052-4faf-bbf6-0f95ab9052e9"
+    },
+    {
+      "claim_id": "b7c1fee7-6ae2-47ef-8c93-9248d87217b0",
+      "result_id": "0f5107fe-e052-4faf-bbf6-0f95ab9052e9"
+    },
+    {
+      "claim_id": "492ae242-bd0a-4323-93a7-f8a791229a26",
+      "result_id": "0f5107fe-e052-4faf-bbf6-0f95ab9052e9"
+    },
+    {
+      "claim_id": "6cb47512-9250-4e3f-a2e8-e9846ef47334",
+      "result_id": "0f5107fe-e052-4faf-bbf6-0f95ab9052e9"
+    },
+    {
+      "claim_id": "d67e7270-0c1c-4618-b362-1abdf2bcb667",
+      "result_id": "0f5107fe-e052-4faf-bbf6-0f95ab9052e9"
+    },
+    {
+      "claim_id": "766aa3dc-a266-4ba8-8376-379dca895aca",
+      "result_id": "0f5107fe-e052-4faf-bbf6-0f95ab9052e9"
+    },
+    {
+      "claim_id": "04ba8a22-a23b-4ca6-a8c3-038f9fcbda27",
+      "result_id": "0f5107fe-e052-4faf-bbf6-0f95ab9052e9"
+    },
+    {
+      "claim_id": "718982f5-db4c-40ef-ba8d-106c210327ab",
+      "result_id": "d74fc9b2-8e20-4720-ae9d-13b0318b9c53"
+    },
+    {
+      "claim_id": "64baaa57-cf52-4d68-a1f6-b6af0654c658",
+      "result_id": "d74fc9b2-8e20-4720-ae9d-13b0318b9c53"
+    },
+    {
+      "claim_id": "5ba79eb1-27aa-4163-a3a9-eb1e75db1a38",
+      "result_id": "d74fc9b2-8e20-4720-ae9d-13b0318b9c53"
+    },
+    {
+      "claim_id": "53fdf976-83b0-4738-9c2e-4f955a467fc6",
+      "result_id": "d74fc9b2-8e20-4720-ae9d-13b0318b9c53"
+    },
+    {
+      "claim_id": "bd8d7a74-835b-43a4-8a06-f479b4ceec1d",
+      "result_id": "d74fc9b2-8e20-4720-ae9d-13b0318b9c53"
+    },
+    {
+      "claim_id": "f1980fdd-a51f-484b-9d9c-0b44f7489abe",
+      "result_id": "d74fc9b2-8e20-4720-ae9d-13b0318b9c53"
+    },
+    {
+      "claim_id": "3ae295e5-c1a2-4136-8c79-cd7c31c3c088",
+      "result_id": "d74fc9b2-8e20-4720-ae9d-13b0318b9c53"
+    },
+    {
+      "claim_id": "87e7e96c-1bb4-41ed-a8e3-95fb52426f8c",
+      "result_id": "d74fc9b2-8e20-4720-ae9d-13b0318b9c53"
+    },
+    {
+      "claim_id": "0f0f2c58-72f9-4e98-99ee-8831388cdb52",
+      "result_id": "d74fc9b2-8e20-4720-ae9d-13b0318b9c53"
+    },
+    {
+      "claim_id": "0a9b1f06-6caf-46ac-8d4c-1cdd16b19510",
+      "result_id": "d74fc9b2-8e20-4720-ae9d-13b0318b9c53"
+    },
+    {
+      "claim_id": "140a4bcc-0f15-4fae-8e4a-84798ff77a08",
+      "result_id": "d74fc9b2-8e20-4720-ae9d-13b0318b9c53"
+    },
+    {
+      "claim_id": "e0dfaee3-2b33-4427-8334-66df0e60dc21",
+      "result_id": "d74fc9b2-8e20-4720-ae9d-13b0318b9c53"
+    },
+    {
+      "claim_id": "a3f9c367-63c8-4110-a8a2-5413ba627050",
+      "result_id": "d74fc9b2-8e20-4720-ae9d-13b0318b9c53"
+    },
+    {
+      "claim_id": "04d09123-e472-4a39-a1b8-2c0c9445febe",
+      "result_id": "d74fc9b2-8e20-4720-ae9d-13b0318b9c53"
+    },
+    {
+      "claim_id": "cbbd7e6d-b96a-45e7-b4ee-84d243502166",
+      "result_id": "d74fc9b2-8e20-4720-ae9d-13b0318b9c53"
+    },
+    {
+      "claim_id": "5b0e3381-c5d7-4470-9b28-2f4a38909420",
+      "result_id": "dcb8bc3a-b138-4cb4-85b5-6d687c81c23b"
+    },
+    {
+      "claim_id": "c22ed5b3-908d-4ab8-ba09-2a39910e3acf",
+      "result_id": "dcb8bc3a-b138-4cb4-85b5-6d687c81c23b"
+    },
+    {
+      "claim_id": "1585a04e-8410-4292-8e23-0e90b3548c24",
+      "result_id": "dcb8bc3a-b138-4cb4-85b5-6d687c81c23b"
+    },
+    {
+      "claim_id": "f0889dfe-a4c9-4b17-8ac8-5c12cf39517a",
+      "result_id": "dcb8bc3a-b138-4cb4-85b5-6d687c81c23b"
+    },
+    {
+      "claim_id": "bd7fe990-2d2f-421a-89fa-608a135c077e",
+      "result_id": "dcb8bc3a-b138-4cb4-85b5-6d687c81c23b"
+    },
+    {
+      "claim_id": "6aea06e2-2ccf-4894-9d2a-9e39adbc4c85",
+      "result_id": "dcb8bc3a-b138-4cb4-85b5-6d687c81c23b"
+    },
+    {
+      "claim_id": "b71bbd32-a155-40f6-88ae-1ee8d9115c55",
+      "result_id": "dcb8bc3a-b138-4cb4-85b5-6d687c81c23b"
+    },
+    {
+      "claim_id": "34169716-e2ce-4350-b9b0-f02be1219260",
+      "result_id": "dcb8bc3a-b138-4cb4-85b5-6d687c81c23b"
+    },
+    {
+      "claim_id": "260fd859-3209-4f4d-9497-c372d5d67b82",
+      "result_id": "dcb8bc3a-b138-4cb4-85b5-6d687c81c23b"
+    },
+    {
+      "claim_id": "16cb297e-68f6-4a07-bc57-dc3814fb6224",
+      "result_id": "dcb8bc3a-b138-4cb4-85b5-6d687c81c23b"
+    },
+    {
+      "claim_id": "332b31a4-1b5c-4c6b-af5e-20d713245c7a",
+      "result_id": "dcb8bc3a-b138-4cb4-85b5-6d687c81c23b"
+    },
+    {
+      "claim_id": "b7cc873c-6094-42b5-8dd9-77a9d45d4dda",
+      "result_id": "dcb8bc3a-b138-4cb4-85b5-6d687c81c23b"
+    },
+    {
+      "claim_id": "617a25c3-449a-413f-b905-43427457d17b",
+      "result_id": "dcb8bc3a-b138-4cb4-85b5-6d687c81c23b"
+    },
+    {
+      "claim_id": "07b2f75f-812f-450d-8b56-ef3aa6a90d05",
+      "result_id": "98e085a2-c746-441a-83ef-cee8e7133efc"
+    },
+    {
+      "claim_id": "085ade0c-506c-4299-bb77-ff7caf5b7a1a",
+      "result_id": "98e085a2-c746-441a-83ef-cee8e7133efc"
+    },
+    {
+      "claim_id": "a1019bc8-30c6-4476-906e-3f4e0c4fbaed",
+      "result_id": "98e085a2-c746-441a-83ef-cee8e7133efc"
+    },
+    {
+      "claim_id": "69678cb1-7f7d-4254-b918-29110c5a4daa",
+      "result_id": "98e085a2-c746-441a-83ef-cee8e7133efc"
+    },
+    {
+      "claim_id": "83ff8f86-1617-41aa-8127-334102a555c2",
+      "result_id": "98e085a2-c746-441a-83ef-cee8e7133efc"
+    },
+    {
+      "claim_id": "8fba654a-b82c-4993-a682-a665a9fcd59c",
+      "result_id": "98e085a2-c746-441a-83ef-cee8e7133efc"
+    },
+    {
+      "claim_id": "dd30e953-fdd8-4942-8cc7-c5933094b6ff",
+      "result_id": "98e085a2-c746-441a-83ef-cee8e7133efc"
+    },
+    {
+      "claim_id": "fe87abee-9ee6-437c-a610-20cdc12cc080",
+      "result_id": "98e085a2-c746-441a-83ef-cee8e7133efc"
+    },
+    {
+      "claim_id": "6a2ae9e3-2499-414c-9274-ce0c48403c60",
+      "result_id": "98e085a2-c746-441a-83ef-cee8e7133efc"
+    },
+    {
+      "claim_id": "2ce805e7-ef5b-46e5-855b-c14344e237aa",
+      "result_id": "98e085a2-c746-441a-83ef-cee8e7133efc"
+    },
+    {
+      "claim_id": "dd4aca8a-7952-4a2e-8abf-bb6902cca5a5",
+      "result_id": "98e085a2-c746-441a-83ef-cee8e7133efc"
+    },
+    {
+      "claim_id": "d6ca735a-f760-4e45-aa39-0216f34a5c7a",
+      "result_id": "98e085a2-c746-441a-83ef-cee8e7133efc"
+    },
+    {
+      "claim_id": "e7872962-0aa3-4c23-a006-d4038bcaa08e",
+      "result_id": "98e085a2-c746-441a-83ef-cee8e7133efc"
+    },
+    {
+      "claim_id": "3b64d43a-bc84-45a6-a901-09243080029f",
+      "result_id": "2fb12ce6-3429-461a-97aa-3975f53711d7"
+    },
+    {
+      "claim_id": "c2f0480f-ae56-4408-abe7-03e6a3647245",
+      "result_id": "2fb12ce6-3429-461a-97aa-3975f53711d7"
+    },
+    {
+      "claim_id": "e04ac24e-7ef5-4e7c-8b05-0937815d8e9e",
+      "result_id": "2fb12ce6-3429-461a-97aa-3975f53711d7"
+    },
+    {
+      "claim_id": "34de1205-2113-4251-af79-5e03b788be86",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "a99620e4-67eb-4c92-a3e9-f4fd96799030",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "fb2adce6-099b-4063-9e43-d8c51ec06434",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "6849f044-97fc-4ee3-a2b6-08b8bc76b6af",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "bb71410b-5968-4cb1-b4e3-3fe3574cfc50",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "716e5ac4-8a35-46e1-93bf-4fc917f2c2ac",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "49ecaa6e-1e91-4689-9f5d-a0f7f1372280",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "991cf858-15cb-40a3-9b27-8906a4b80ffc",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "2fca620e-e8e8-4df4-abfd-65944cb4dc04",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "e48111dd-3a23-4a40-a8ef-cc758bc85e4d",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "45063b1b-f4fc-4832-8036-8fb3cb44fbf1",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "6ff7c67a-29e1-4ace-80a8-20e5f5cc6a64",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "f3babb39-32f8-478a-b4a9-47f2695fd3bd",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "54c8cb50-dad5-40dc-9e8f-9390a388e9e3",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "ef222fae-fa66-44ab-b134-cbc4c6308157",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "6150ffa3-9140-44f7-9b09-38454928ddf4",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "20d60618-f4c1-451c-b95f-26218f144418",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "7544ec49-c167-483a-984d-a24f165df99a",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "91f4c48c-a25b-45b1-a4fa-8a507827d09d",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "63b22a0b-9583-4670-a14a-3c8be103f855",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "5f3a5a17-a9d9-4c54-bd84-c40d90eeb257",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "3bd473a7-bab8-49ac-8acd-39a5eb06d1e6",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "ad8dd52c-5c56-4cea-abcf-a8440b72daa6",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "ea9bb66f-76f8-4a7d-baa8-fb1cc931f12f",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "d3da8572-e93a-478d-94a1-a9a055453e5c",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "9f5bd4e6-6438-47e2-9a54-2e823eba03a8",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "490a1b32-b652-4610-9af3-32427bb95261",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "aa3588e0-e4f5-4160-96c3-878727be08cb",
+      "result_id": "c7cf58f2-42f6-4f00-b839-d4fcfbbb0e7e"
+    },
+    {
+      "claim_id": "9899f63d-d0c0-45a2-b956-2b0736b48703",
+      "result_id": "fd38c9cc-d9cb-41c5-8559-04a3dabd1583"
+    },
+    {
+      "claim_id": "416f860d-febe-4f0a-8bb6-7c9f941cbc92",
+      "result_id": "fd38c9cc-d9cb-41c5-8559-04a3dabd1583"
+    },
+    {
+      "claim_id": "c4950c7e-1c6c-46fa-87b7-3514bab9a921",
+      "result_id": "fd38c9cc-d9cb-41c5-8559-04a3dabd1583"
+    },
+    {
+      "claim_id": "da8798a2-059f-4da2-9a5e-4a53de86a10d",
+      "result_id": "fd38c9cc-d9cb-41c5-8559-04a3dabd1583"
+    },
+    {
+      "claim_id": "92a0a4f4-90ee-409f-ba7f-355c46d36487",
+      "result_id": "fd38c9cc-d9cb-41c5-8559-04a3dabd1583"
+    },
+    {
+      "claim_id": "a286f986-023d-4738-ab81-684abda1b784",
+      "result_id": "33603249-fa93-476e-95b1-a1ac567bbb26"
+    },
+    {
+      "claim_id": "9f7954d6-b097-4efd-9710-540d88a71166",
+      "result_id": "33603249-fa93-476e-95b1-a1ac567bbb26"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C47",
+      "C48"
+    ],
+    "result": "This study reports the first successful widefield GCaMP6f imaging in behaving macaque V1, representing a significant advancement over prior limited attempts and recent work in anesthetized ferrets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C8 establish novelty by documenting this as the first successful GCaMP imaging in behaving macaques beyond an early unsuccessful attempt (Heider et al., 2010). Claims C47-C48 contextualize this achievement relative to prior work in other species. The experimental data and figures demonstrate successful implementation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Viral vector optimization using rAAV1:CaMKII\u03b1-GCaMP6f achieved stable, excitatory neuron-specific expression over 6-10 mm\u00b2 areas, with ~80% CaMKII\u03b1+ cells, 91% of which expressed GCaMP, and no evidence of toxicity over 190 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 and C70-C75 provide comprehensive characterization of viral expression including vector selection, spatial extent, cell-type specificity, temporal stability, and lack of toxicity. The in situ hybridization data (Figure 3, C75) quantitatively confirms promoter fidelity with no off-target expression. Longitudinal tracking (Figure 4A, C72-C74) demonstrates stability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C49",
+      "C54"
+    ],
+    "result": "Widefield GCaMP6f imaging provides robust, high SNR readout of visual population responses that remains stable for up to 6 months, enabling chronic longitudinal measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C18-C20 establish signal quality with entrainment to 4 Hz stimuli and high d' values maintained over ~200 days (Figure 4A). Claims C49 and C54 emphasize the longitudinal capability. The data demonstrate consistent signal amplitude and sensitivity across multiple months, supporting chronic imaging feasibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "GCaMP signals reveal orientation maps with semi-periodic organization including pinwheels, showing correlations consistent with known V1 structure and stability across several months, with high correlation to VSD-derived maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 describe orientation map structure matching known V1 organization (Figure 2D-E). Claims C23-C24 demonstrate consistency with VSD imaging and temporal stability (Figure 4B-E shows correlations of 0.71-0.80). The spatial patterns and correlation structure provide strong evidence for valid orientation mapping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "GCaMP signals show orientation-selective and non-selective components, weak responses at low contrast (<12%), monotonic increase at higher contrasts, and spatial tuning with no response beyond 2 mm cortical distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 characterize basic tuning properties shown in Figure 2F-H. The orientation tuning (C27) reflects heterogeneous pooling, contrast tuning (C28) shows threshold behavior, and position tuning (C29-C30) demonstrates spatial specificity. These measurements are directly supported by the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C37",
+      "C45",
+      "C46",
+      "C50",
+      "C57",
+      "C59",
+      "C80"
+    ],
+    "result": "A computational model based on single-unit V1 parameters predicts that widefield GCaMP signals reflect linearly summed local spiking activity, with model predictions closely matching measured tuning properties for contrast, orientation, and position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C46 state the core finding that model predictions match data, suggesting linear relationship to spiking. Claims C37, C45, C57, and C59 provide supporting evidence through comparisons with VSD. The model (Figure 7-8, C80) uses established parameters and only two free parameters, with good quantitative agreement supporting the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The model assumes VSD signals reflect membrane potential pooled over ~200 \u03bcm due to lateral neural processes, and that spike threshold nonlinearity causes spiking responses to be more narrowly tuned and less contrast-sensitive than membrane potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 cite prior work (Chen et al., 2012) establishing VSD pooling properties. Claims C33-C36 describe established neurophysiology (Priebe and Ferster, 2008) regarding spike threshold effects. These are well-supported assumptions from the literature, though C33 is an untested assumption that pooling is comparable for GCaMP and VSD.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "GCaMP signals have ~5\u00d7 larger amplitude than VSD but comparable sensitivity (d'), with slower rise time, longer latency, and slower decay compared to VSD, and much higher temporal resolution than intrinsic imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 and C51-C53 characterize temporal dynamics and signal properties shown in Figure 9. The amplitude difference (C43, C51), comparable d' (C44), and temporal differences (C40-C42, C52-C53) are directly measured. However, direct comparison is complicated by different stimulus protocols (4 Hz vs 5 Hz), which the authors acknowledge but don't fully address.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "GCaMP imaging is less susceptible to bleaching than VSD, and chronic widefield GCaMP imaging is likely to become a widely used technique.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C55 states reduced bleaching based on experimental observations but provides no quantitative data or systematic comparison. Claim C56 is speculative about future adoption. While the overall advantages demonstrated support this prediction, the bleaching claim lacks rigorous evidence and the future prediction is inherently uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The differences between GCaMP and VSD tuning properties indicate GCaMP signals are tightly linked to spiking rather than synaptic inputs, potentially due to backpropagating action potentials, dendritic NMDA mechanisms, and differences in membrane surface area versus cytosolic volume contributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C58 provides logical inference about expected VSD-like tuning if synaptic inputs dominated. Claims C62-C64 offer speculative mechanisms (backpropagation, NMDA) supported by citations but not tested here. Claim C65 notes a fundamental difference between indicators. While the logic is sound, these mechanistic explanations remain hypothetical without direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C66",
+      "C67"
+    ],
+    "result": "Preliminary two-photon imaging in macaque V1 shows healthy neurons with characteristic responses, and unpublished data suggest comparably tuned dendritic and somatic GCaMP signals, indicating cellular-resolution imaging can complement widefield measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C61 and C66-C67 rely on unpublished observations and preliminary data. While C60 cites rodent work (Chen et al., 2013), the macaque data are not shown or peer-reviewed. The claim that cellular imaging can complement widefield imaging (C67) is reasonable but not demonstrated with presented data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C68",
+      "C69"
+    ],
+    "result": "Future work combining widefield and two-photon GCaMP imaging with computational models should resolve questions about multi-scale neural responses and provide unprecedented access to distributed population coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C25-C26 acknowledge uncertainty about signal sources (spikes vs. synaptic potentials) and propose averaging of nonlinearities as a possibility. Claims C68-C69 are speculative predictions about future research directions. These represent reasonable hypotheses and research plans but are not results of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background context establishes that primate V1 activates multiple mm\u00b2 areas containing millions of neurons, current techniques face resolution-coverage tradeoffs, and macaque V1 has well-characterized retinotopic and orientation maps making it ideal for testing new techniques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 and C9-C12 provide established background knowledge supported by appropriate citations. These contextual claims accurately represent the state of the field and justify the experimental approach. They are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Methodological details include eye tracking, 30 cd/m\u00b2 mean luminance, heartbeat-locked acquisition, and imaging at 20 Hz for GCaMP and 100 Hz for VSD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 describe experimental methods that are standard and clearly documented. These technical details are necessary for reproducibility and are appropriately reported.",
+    "result_type": "MINOR"
+  }
+]

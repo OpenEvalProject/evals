@@ -1,0 +1,381 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The study recruited 10 healthy, right-handed volunteers (age 21-27 years, 6 females) who completed two experimental sessions approximately 1 week apart, viewing a total of 7680 stimuli across both sessions. Ethical approval was obtained from the University of Oxford.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C76-C79 provide complete methodological details about participant recruitment, experimental design, and ethical approval. These are standard methodological claims that are clearly stated and internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Behavioral performance showed that observers correctly detected approximately 70% of targets, made approximately 50% false alarms to near targets (\u00b111.25\u00b0), with reaction times distributed around 550 ms and no significant effect of target proximity on reaction time (p = 0.393).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 describe behavioral results with specific statistics and are supported by Figure 1B and Figure 1\u2014figure supplement 1. The statistical test for reaction time effects is properly reported with appropriate p-values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Stimulus orientation was decoded from MEG/EEG signals from 52-500 ms (p = 0.0019), while template orientation information was present from -72 to 324 ms (p = 0.0045). Template coding began significantly earlier than stimulus coding (template: -72\u00b113 ms, stimulus: 52\u00b16 ms, t9 = -8.61, p = 3\u00d710\u207b\u2076).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10 report the primary decoding results with appropriate statistical tests, cluster correction, and jack-knife analysis for onset latency comparison. The findings are supported by Figures 2B and 3A-C with proper statistical reporting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Angular distance (decision-relevant information) emerged around 200 ms (164-596 ms, p = 0.0024), significantly later than stimulus orientation onset (t9 = 3.25, p = 0.002). This effect persisted when training only on non-response trials (172-596 ms, p = 0.0014), ruling out motor-related confounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 describe the emergence of decision-relevant coding with proper statistical tests and a critical control analysis (C13) that addresses potential motor confounds. The temporal progression from stimulus to decision coding is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "All three task variables (stimulus, template, and angular distance) were encoded in signals from visuo-parietal sensors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 is supported by the topographic analyses shown in Figure 3B, D, and F, which demonstrate overlapping sensor distributions for the three task variables.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Stimulus orientation decoding showed time-specific dynamics: significant decoding occurred along the diagonal (64-544 ms training, 52-436 ms test, p = 0.0024), but off-diagonal generalization was significantly reduced (52-304 ms training, 88-436 ms test, p = 0.0031), indicating that discriminative patterns changed rapidly over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 describe cross-temporal decoding results with appropriate statistical tests. The finding of dynamic coding is supported by Figure 4A and uses proper conjunction testing to demonstrate time-specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "Template information showed an early cluster in cross-temporal decoding (-140 to 340 ms training, -140 to 316 ms test, p = 0.0191) with no significant attenuation on the off-diagonal, indicating temporal stability of template coding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 describe template cross-temporal decoding results supported by Figure 4B. The contrast with stimulus coding dynamics (C16-C17) is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "Angular distance decoding showed strongest decoding along the diagonal (4-592 ms training, 64-592 ms test, p = 0.0009) with significantly reduced off-diagonal generalization (316-424 ms training, 472-592 ms test, p = 0.008), suggesting both dynamic and static elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 describe angular distance cross-temporal results with proper statistics. The interpretation of mixed dynamic/static coding is reasonable given the pattern of results shown in Figure 4C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Template and stimulus patterns showed transient cross-generalization: training on template orientations around stimulus onset (-150 to +300 ms) showed a trend toward generalizing to stimulus decoding (52-124 ms, p = 0.063), and using only pre-stimulus template patterns (-150 to 0 ms) could extract stimulus information post-onset (50-150 ms, t9 = 2.45, p = 0.037). However, this cross-generalization was only transient, with template and stimulus discriminative patterns corresponding only in the earliest encoding period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C22-C25 describe cross-generalization between template and stimulus patterns. While C23 shows a significant effect (p = 0.037), C22 only shows a trend (p = 0.063). The interpretation of transient cross-generalization is reasonable but relies partly on a non-significant trend. The conclusion would be stronger with fully significant results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Representational similarity analysis showed that stimulus orientation similarity remained stationary (28-596 ms, p = 0.005) despite dynamic discriminative patterns, with only one short-lived dynamic cluster (82-146 ms training, 130-226 ms generalization, p = 0.0075).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 describe RSA results supported by Figure 6A. The finding that representational content is stable while patterns are dynamic is a key conceptual contribution, properly demonstrated with appropriate statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "Angular distance representational similarity was stable throughout the trial (172-588 ms, p = 0.0026) with no time points showing significantly higher within-time than between-time correlations (all p > 0.20).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 is supported by Figure 6B and demonstrates temporal stability of angular distance representation using appropriate RSA methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "Template and stimulus representational structures correlated significantly around visual processing time (template: -48 to 196 ms, stimulus: 88-208 ms, p = 0.038), with within-time comparison showing significant correlation from 104-176 ms (p = 0.036).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 describe cross-generalization of representational structure between template and stimulus, supported by Figure 7A-B. This demonstrates shared representational content despite different neural patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Neural representations showed circular geometry: during stimulus encoding (50-250 ms), conditions fell onto a well-ordered circle in MDS projection, which was absent before stimulus onset (-50 to +50 ms). The stimulus similarity matrix significantly fit neural data (44-432 ms, p = 0.002), and template orientations showed the same simplex structure (48-300 ms, p = 0.0012).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 describe the circular geometry of neural representations with proper statistical tests and MDS visualization (Figure 7C-H). The finding that both stimulus and template share this geometry is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C35",
+      "C58"
+    ],
+    "result": "Neural signals encoded the task-irrelevant signed difference between stimulus and template: conditions with equal magnitude but different sign diverged along the task-irrelevant axis around decision formation time (348-588 ms, p = 0.004).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C58 describe an unexpected finding about encoding of task-irrelevant information, supported by Figure 8A-B and supplementary analyses. The statistical test is appropriate and the control analyses (Figure 8\u2014figure supplement 1-2) rule out alternative explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Neural responses traversed a cascade of discriminative patterns, transforming stimulus code and template code into decision-relevant code. Template and stimulus patterns cross-generalized only briefly during initial processing, but their representational content corresponded over a sustained period. Neural signals also encoded task-irrelevant signed differences after stimulus and response-relevant information emerged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 provide a high-level summary of the main findings, which are supported by the detailed results in claims C8-C35. These summary claims accurately reflect the empirical findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C53",
+      "C60",
+      "C61",
+      "C75",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The encoding of signed differences is consistent with probabilistic population codes for perceptual decision-making. A three-layer neural model (stimulus, template, and decision layers) with von Mises tuning demonstrates how population codes naturally encode both magnitude and sign of angular distance, similar to biophysical models of category learning in lateral intraparietal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C60-C61, C75, and C118-C127 describe the neural model and its interpretation. The model is clearly specified with appropriate parameters (citing Beck et al., 2008 for \u03ba=5) and demonstrates how population codes can account for the signed difference finding. The connection to prior biophysical models (C75) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The transient activation of template patterns may reflect reactivation of a latent code stored in synaptic weights rather than sustained activity. Template decoding began before stimulus onset, suggesting top-down reactivation (possibly via rhythmic sampling), with additional bottom-up activation during stimulus presentation. This weight-based encoding allows immediate matched-filter responses to new information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C56 and C62-C65 propose interpretations of the template findings based on prior work on working memory mechanisms. While these interpretations are plausible and well-grounded in cited literature (Mongillo et al., 2008; Stokes, 2015), they remain speculative as the current data do not directly test synaptic weight mechanisms versus other possibilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C57",
+      "C46"
+    ],
+    "result": "Matched filters provide a natural solution for comparing dynamically evolving stimulus patterns to template patterns: the stimulus pattern is filtered by a population matched to the template, producing output that quantifies their overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57 and C46 propose the matched-filter mechanism as an explanation for how dynamic stimulus coding can be compared to templates. While this is a reasonable theoretical proposal supported by the data patterns (especially the RSA results), it remains a speculative interpretation rather than a directly tested mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The transient template reactivation could reflect task demands where most stimuli were non-targets, potentially discouraging tonic activation. Single-cell studies show distractors can disrupt tonic activity in IT and PFC, while tasks without distractors may favor tonic activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C68 propose an alternative interpretation based on task structure and cite relevant prior work. However, this remains speculative as the current study did not manipulate target frequency or compare conditions with/without distractors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C48"
+    ],
+    "result": "Prior work established that biased competition proposes tonic pre-activation of template-matching neurons, with evidence from single-cell and fMRI studies showing overlapping populations for template and stimulus processing. However, recent findings show dynamic coding with time-specific patterns, challenging classic models that propose static neural pattern activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C45, C47-C48 accurately summarize prior literature with appropriate citations. These claims correctly identify the tension between classic models and recent dynamic coding findings, providing proper context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Pattern analysis is well-established for intracranial recordings and fMRI, and recent modeling shows MEG/EEG contains rich spatiotemporal information for multivariate decoding. Subtle differences in dipole position/angle create separable scalp patterns, likely depending on orientation column distribution. While decodability doesn't necessarily imply functional use, complex spatiotemporal dynamics could support flexible behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 provide methodological context and caveats, appropriately citing recent work (Cichy et al., 2015) and acknowledging limitations (Tong and Pratte, 2012). These are reasonable methodological considerations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Detailed experimental setup and data acquisition parameters are provided, including stimulus properties (4\u00b0 Gabor patches, 2 cycles/\u00b0, 100 ms presentation, 650 ms ISI), task structure (8 blocks, 480 stimuli per block, 16 orientations), MEG/EEG acquisition (VectorView system, 1000 Hz sampling, 0.03-300 Hz filtering), and preprocessing steps (Maxfilter, downsampling to 500 Hz, ICA artifact removal, epoching, baseline correction).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C97 provide comprehensive methodological details that are internally consistent and follow standard practices. The preprocessing pipeline is appropriate and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Analysis methods included population tuning curve models for orientation decoding (using half-cosine basis set raised to 15th power), leave-one-block-out cross-validation, cluster-based permutation testing (10,000 permutations), jack-knife latency comparisons, univariate GLM sensitivity analysis, cross-temporal decoding, RSA using Mahalanobis distances, and angular distance analysis with PCA dimensionality reduction (30 components) and symmetric orthogonalization of regression coefficients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C117 describe the analysis pipeline in detail with appropriate citations (Brouwer & Heeger, 2009; Maris & Oostenveld, 2007; Mante et al., 2013). The methods are standard and appropriate for the research questions. The distinction between cosine (task-relevant magnitude) and sine (task-irrelevant sign) regressors is clearly explained.",
+    "result_type": "MINOR"
+  }
+]

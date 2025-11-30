@@ -1,0 +1,400 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C6",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C64",
+      "C65"
+    ],
+    "result": "Initial decisions about motion direction, confidence, and reaction time are explained by a bounded evidence accumulation model. The model with 4 parameters captures accuracy, reaction time, and confidence patterns across motion strengths, with subjects showing near-optimal confidence criteria and confidence correlating with both accuracy and speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C6, C40-C47, C58-C60, C62, C64-C65 collectively demonstrate that a bounded evidence accumulation model successfully explains initial choice, confidence, and RT data (Figure 2, Table 1). The model fits are superior to alternatives (C65) and capture key trends including confidence on error trials (C64). Statistical significance is reported for key relationships (C43-C44, P<0.0001).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Initial choice and confidence are based on the same evidence stream, with information used from stimulus onset until ~400 ms before movement onset. Psychophysical kernel analysis shows similar time courses for choice and confidence kernels, and the information cutoff estimates are consistent with non-decision time parameters from model fits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 are supported by psychophysical kernel analysis (Figure 4a, Figure 4\u2014figure supplement 1) showing that choice and confidence kernels have similar time courses and that subjects use information until ~400 ms before movement onset. The consistency between kernel-based estimates and model-based non-decision times (Table 1) provides converging evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C38",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Subjects occasionally changed their initial decisions and/or confidence ratings during movement execution. Changes of confidence (1.5-6.3% of trials) were more frequent than changes of decision (0.5-2.6% of trials). Changes of decision corrected errors more often than they spoiled correct choices, and changes were beneficial, earning subjects 0.72-1.12 additional points per change-of-mind trial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C38, C74-C82 are directly supported by empirical observations in hand trajectory data (Figure 1c, Table 2, Figure 5). Statistical significance is reported for key comparisons (C78: P<0.001 for 3/4 subjects; C79: p<1e-4 for all subjects). The patterns are consistent across subjects and motion strengths.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C30",
+      "C73",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C94",
+      "C95"
+    ],
+    "result": "Changes of mind about both decision and confidence are explained by continuation of the bounded evidence accumulation process after the initial decision. Motion information in the post-decision period supports the pattern of changes: information favoring the initial choice leads to confidence increases, while opposing information leads to confidence decreases or decision reversals. A model extension with 4 additional parameters captures these patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C30, C73, C85-C89, C94-C95 are supported by psychophysical kernel analysis of post-decision motion information (Figure 4b) and model fits to change-of-mind data (Figure 5). The model uses only 4 additional parameters beyond the initial decision model (C95, Table 1) and captures the main features of both confidence and decision changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C9",
+      "C10",
+      "C31",
+      "C102",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C128",
+      "C130",
+      "C133",
+      "C134",
+      "C136",
+      "C138",
+      "C140",
+      "C142"
+    ],
+    "result": "Apparent dissociations between confidence and accuracy can arise from post-decision processing delays rather than separate metacognitive mechanisms. When confidence is assessed after the initial choice (as in most experiments), it incorporates additional evidence not available for the initial decision, leading to systematic differences in odds ratios between initial and final confidence. This demonstrates that confidence and choice remain coupled through a common 1st-order process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C9-C10, C31, C102, C106-C109, C128, C130, C133-C134, C136, C138, C140, C142 are supported by the odds ratio analysis (Figure 7) showing systematic discrepancies between initial and final confidence (P<1e-4, sign test; C106), with 13/19 individual points showing statistically reliable differences (P<0.05, bootstrap; C108). The psychophysical kernel analysis (Figure 4) and model fits (Figures 2, 5) demonstrate that both initial and final confidence are based on the same bounded accumulation mechanism operating on a common evidence stream.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The model of post-decision processing assumes evidence accumulation continues for a fixed time (tpip) after the initial decision, with potentially different criteria (\u03b4\u03b8 parameters) for changes of mind. All subjects showed hysteresis in confidence changes (\u03b4\u03b81>0), resistance to decision changes (\u03b4\u03b82>0), and relaxed criteria for high-confidence decision changes (\u03b4\u03b83<0), consistent with energetic costs of movement revision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93, C96-C101 describe model assumptions and parameter interpretations that are supported by the model fits (Table 1, Figure 6). The parameter patterns are consistent across all subjects and have plausible interpretations in terms of motor costs. However, these are model-dependent inferences rather than direct empirical observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Four subjects performed a motion direction discrimination task where they simultaneously indicated direction and confidence by reaching to one of four targets. Stimulus duration was self-controlled, subjects were trained for fast but accurate decisions, and the stimulus was extinguished at movement onset. Two additional subjects were excluded for poor performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37, C153-C156 describe the experimental design and are directly supported by the Methods section and Figure 1. These are straightforward methodological statements with appropriate documentation of subject exclusion criteria.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The bounded accumulation model involves a race between two accumulators for opposite directions, with anti-correlated but not perfectly correlated noise. The first accumulator to reach a bound determines choice and decision time. Confidence is based on the balance of evidence between winning and losing accumulators plus decision time, with subjects applying a consistent log-odds threshold to categorize high vs. low confidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51, C53-C57 describe the model architecture and are supported by citations to previous work (C48, C54-C55) and by the model fits to the current data (Figure 2, Figure 3). The model assumptions are standard in the sequential sampling literature and are justified by the quality of the fits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "There are noteworthy discrepancies between model and data, particularly in the proportion of high confidence choices at 0% coherence for 3 of 4 subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is an honest acknowledgment of model limitations visible in Figure 2c. This is a minor limitation that does not undermine the main conclusions, as the model still captures the key trends.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C113",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The study establishes that confidence assessment evolves over time and can undergo revision with additional evidence, extending previous observations about decision changes to the metacognitive operation of confidence. Deliberation in the post-initiation epoch is as rich as pre-initiation deliberation, and termination of deliberation for response initiation does not terminate all deliberation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113, C124-C126 are high-level conclusions supported by the comprehensive data on changes of confidence (Table 2, Figures 4-5) and the model fits showing that post-decision processing follows the same bounded accumulation mechanism. These are well-supported inferences from the empirical results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Decisions are accompanied by confidence, and sequential sampling models with optional stopping explain speed-accuracy tradeoffs and extend to confidence. The decision variable combined with decision time maps to the probability of being correct, and confidence is based on the same evidence stream that supports the decision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C18 are foundational statements about decision-making and sequential sampling that are well-established in the literature (supported by multiple citations: C13-C16, C18) and are consistent with the current experimental results. These provide the theoretical context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Previous literature has suggested that confidence and choice may be dissociable, with confidence potentially supported by mechanisms separate from the decision process or based on different evaluation of the same evidence. This includes the distinction between 1st-order and 2nd-order confidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C19-C25 accurately describe views in the prior literature that the authors are challenging, supported by appropriate citations (C20-C24). These claims set up the motivation for the current study and are not claims about the current work's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Changes of mind can occur even without apparent new information, and the sequential sampling framework offers a natural account through processing delays that leave additional evidence available after the initial decision. Previous work has shown this for decision reversals in humans and monkeys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 describe established phenomena and theoretical accounts from the literature (C29 supported by multiple citations). These provide context for extending the framework to confidence changes and are not novel claims of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Changes of both decision and confidence were less common (0.4-1.6% of trials), possibly due to energetic costs of crossing the workspace. Double changes tended to move from high to low confidence more than from low to high.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are supported by the data in Table 2 and have statistical significance reported (C84: p<0.0001 for 3 subjects, p<0.05 for S3). The explanation in terms of energetic costs is speculative but plausible and supported by citations (C83).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Given the reward structure, subjects should optimally choose high confidence when they believe the probability of being correct exceeds two-thirds (log-odds of 0.69).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is a straightforward calculation based on the reward structure described in the methods. This provides a normative benchmark for evaluating subject behavior and is correctly derived.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Confidence is important because real-world decisions often lack immediate feedback. The study of perceptual decision-making with controlled evidence streams offers advantages for understanding confidence. Sequential sampling models expose discrepancies between supplied and used information due to processing delays, and previous work showed the motor system can use late-arriving information to revise choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C123 provide general context about the importance of confidence, advantages of the experimental approach, and relevant prior work (C117, C122-C123 supported by citations). These are accurate contextual statements that frame the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C129",
+      "C131",
+      "C132",
+      "C135"
+    ],
+    "result": "Initial choice and confidence use identical information streams (as in previous work), but final confidence judgments on many trials are based on additional information not affecting the initial choice. A few hundred milliseconds of additional evidence led to confidence changes on 1.5-6.3% of trials. When confidence is assessed after the initial choice (as in most experiments), choice and confidence are explained by partially overlapping information sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129, C131-C132, C135 are supported by the psychophysical kernel analysis (Figure 4), model fits (Figures 2, 5), and empirical data on change frequencies (Table 2). These are key empirical findings that bridge the initial decision and change-of-mind results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C137",
+      "C139",
+      "C141"
+    ],
+    "result": "In many settings, decision makers might acquire new information after an initial choice from the environment or memory, potentially leading to divergence of choice and confidence. The central question is whether additional information affects confidence in a fundamentally different manner than the process coupling these attributes. The authors speculate that real-world distinctions involving memory will require better understanding of memory-decision interactions but not fundamentally different mechanisms for confidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C137, C139, C141 are speculative statements about generalization beyond the current experimental paradigm. While plausible, these claims about other settings and future research directions are not directly tested in the current work and represent hypotheses for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Confidence may be regarded as metacognitive by definition, but the operations leading to confidence seem neither mysterious nor dissociable from the decision process. Many features of the underlying mechanism remain unknown, including how the mapping between belief and evidence is established, how criteria are applied, and how downstream neural structures implement these computations. The authors speculate about threshold-crossing mechanisms and potential dissociations between choice and confidence dimensions in cognition and memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C152 are a mix of conclusions from the current work (C143-C144, supported by the results) and acknowledgments of limitations and unknowns (C145-C147). The speculative statements (C148-C149, C152) are appropriately framed as ideas for future work and are supported by relevant citations where applicable (C148).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C39",
+      "C66"
+    ],
+    "result": "The central hypothesis is that a common mechanism explains changes of mind as well as speed, accuracy, and confidence in initial decisions. The model fits allow characterization of the decision variable state and its mapping to confidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C66 state the central hypothesis and describe what the model fits provide. These are supported by the comprehensive modeling results (Figures 2, 5, Table 1) showing that a unified framework explains both initial decisions and changes of mind.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The observation that confidence and direction remain coupled via a common mechanism supports a parsimonious account somewhat at odds with recent metacognition literature. Evidence for metacognitive processes is typically adduced from dissociations in signal-to-noise properties (meta-d\u2032), though this statistic is not well-behaved in the sequential sampling framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 are conclusions about the relationship between the current findings and the metacognition literature. C103 is supported by the overall pattern of results. C104 accurately describes the metacognition literature (supported by citations). C105 is a technical point about the applicability of meta-d\u2032 to sequential sampling models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C157",
+      "C158"
+    ],
+    "result": "The evaluation of additional evidence may explain why confidence ratings are more strongly correlated with accuracy under less time pressure and why some individuals are better at discriminating correct from incorrect decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C157-C158 are speculative extensions of the current findings to explain other phenomena in the literature (supported by citations). While plausible, these are hypotheses that would require additional experiments to test directly.",
+    "result_type": "MINOR"
+  }
+]

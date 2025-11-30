@@ -1,0 +1,218 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "ArcLight fluorescence changes are caused by voltage sensor conformational changes, as demonstrated by mutations at residue R217 that shift both voltage sensor gating and fluorescence response in parallel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C4 provide strong experimental evidence that fluorescence tracks voltage sensor movement. The R217 mutations (R217R, R217Q, R217E) shift both gating charge Q-V curves and fluorescence F-V curves correspondingly (Figure 1C), ruling out alternative mechanisms like direct membrane potential effects or ion concentration changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C34"
+    ],
+    "result": "Single ArcLight' molecules display millisecond-scale fluorescence fluctuations that originate in the GFP fluorophore itself rather than voltage sensor dynamics, and this phenomenon is also present in wild-type eGFP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 and C34 provide converging evidence through single-molecule TIRFM experiments. The fluctuations show autocorrelation over tens of milliseconds (C8), are absent in background noise (C9), persist in isolated GFP domains without voltage sensors (C6), and occur in wild-type eGFP (C7). Summed single-molecule traces recapitulate macroscopic behavior (C34), confirming molecules are functional.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "ArcLight fluorescence kinetics are substantially slower than voltage sensor gating kinetics, with the fastest 'on' component approximately twice as slow and 'off' kinetics more than ten times slower, and there is a distinct voltage-dependent delay before fluorescence onset that aligns with gating current kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 are well-supported by simultaneous gating current and fluorescence measurements shown in Figure 4. The kinetic differences are quantified (C11, C12), the delay is documented (C13, C14), and the alignment between delay and gating kinetics is demonstrated (C15, Figure 4E). These observations are internally consistent and supported by multiple voltage protocols.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The I126F mutation accelerates ArcLight gating currents 6-12 fold, but fluorescence kinetics become voltage-independent and approach a limiting speed, supporting a four-state kinetic model where voltage-dependent gating is followed by two voltage-independent transitions accounting for the lag and fluorescence change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 document the experimental observations with the I126F mutation (Figure 5), while C35-C38 present the mechanistic interpretation. The key observation that fluorescence kinetics become voltage-independent with I126F (C18) and approach the same limiting value as wild-type at extreme potentials (C19) provides strong support for the four-state model over a simpler three-state model. The model is logically consistent with all observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C52",
+      "C53"
+    ],
+    "result": "ArcLightning (I126F Q217R mutant) shows substantially faster fluorescence kinetics than ArcLight in mammalian cells, can resolve individual voltage steps during repetitive stimulation, and retains improved kinetics at physiological temperature (35\u00b0C) up to 67 Hz.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 and C52-C53 demonstrate ArcLightning's improved performance in mammalian cells through direct comparison with ArcLight (Figure 6). The ability to return to baseline between pulses (C21, C22) and the quantified kinetic improvements (C52, C53) are clearly shown. The temperature dependence and frequency response are experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "ArcLight fluorescence changes are slower than gating currents primarily due to intrinsic delays in the fluorophore or linker rather than accurately reporting late VSD movements like relaxation, as evidenced by responses at extreme hyperpolarized potentials and the existence of voltage-independent rate-limiting steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 present a mechanistic interpretation supported by multiple lines of evidence. The observation that fluorescence responds at extreme hyperpolarized potentials where relaxation is unlikely (C40) and that speeding up VSD movement reveals voltage-independent limiting kinetics (C41) provide strong support for the intrinsic delay hypothesis over the relaxation hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "ArcLight fluorescence may be influenced by the VSD relaxed state, as evidenced by fluorescence following the leftward Q-V shift characteristic of relaxation and deceleration of off kinetics with increasing depolarization duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C43 are supported by experimental data in Figure 7\u2014figure supplement 2. The leftward Q-V shift (C42) and pulse-duration-dependent kinetic slowing (C43) are consistent with relaxation phenomena observed in other voltage-gated channels. However, this appears to be a secondary effect superimposed on the intrinsic fluorophore delays identified in C39-C41.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Coating glass coverslips with a polymer cushion dramatically improves voltage clamp speed for oocytes in TIRFM experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by experimental demonstration in Figure 2\u2014figure supplement 1. This methodological advance solved a critical technical problem (poor voltage clamp due to oocyte sealing to glass) and enabled the single-molecule experiments. The improvement is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "ArcLight gating current kinetics are roughly equal to those of Ci-VSP R217Q, suggesting that attachment of the fluorescent protein produces minimal change in load on voltage sensor movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C50 compare ArcLight to the parent Ci-VSP construct using cited literature values. The similarity in kinetics (11 ms vs 8 ms) and V1/2 (-7 mV vs -16 mV) supports the inference that the GFP attachment does not substantially alter VSD mechanics. This is an important validation of the construct design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "The fluctuation noise in GFP derivatives adversely impacts GEVI performance by raising noise levels in macroscopic recordings and reducing signal photons when molecules are in dark states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C60 present logical inferences from the single-molecule fluctuation observations. While the fluctuations themselves are not visible in ensemble measurements, the reasoning that they contribute to noise through summation (C59) and reduce signal-to-noise by decreasing useful photons (C60) is sound and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "ArcLightning has roughly linear voltage-sensitivity across the physiological voltage range that could allow visualization of both subthreshold and action potential activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is supported by the F-V curve data shown in Figure 5A and the performance in mammalian cells (Figure 6). The roughly linear response across physiological voltages is demonstrated, though the claim about visualizing both subthreshold and action potential activity is somewhat speculative as it depends on experimental conditions not fully tested here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "ArcLightning and other monochromatic GEVIs have advantages over FRET-based indicators by freeing spectral channels for other measurements and requiring simpler optical setups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54 and C55 present valid advantages of monochromatic indicators based on their optical properties. These are straightforward logical conclusions about the practical benefits of single-fluorophore systems versus dual-fluorophore FRET systems, though they are general statements rather than experimentally demonstrated advantages in this specific work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "The I126F mutation may be applicable to other GEVIs such as ASAP1 and Butterfly indicators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C45 is explicitly speculative, suggesting potential applicability to other GEVIs without experimental validation. While the reasoning is sound given that these indicators use similar voltage-sensing domains, this remains untested and represents future work rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C46",
+      "C47",
+      "C48",
+      "C51",
+      "C56",
+      "C57",
+      "C58",
+      "C61",
+      "C62"
+    ],
+    "result": "Background and contextual claims about GEVIs, voltage-sensing domains, ArcLight properties, and prior literature on GFP photophysics and voltage indicators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C2, C24-C31, C33, C46-C48, C51, C56-C58, C61-C62) provide essential context and are supported by appropriate citations to prior literature. They establish the scientific background, describe the ArcLight construct, and situate the work within the broader field. These are primarily knowledge claims and literature citations that are accurately represented.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The authors developed a transgenic zebrafish line expressing the Ca2+ indicator GCaMP7a in endothelial cells and used light sheet microscopy to visualize Ca2+ dynamics during angiogenesis. Budding tip cells from the dorsal aorta exhibited sustained, non-periodic Ca2+ oscillations at 24-27 somite stages, with individual oscillations reaching peak in 5.6-18.7 seconds (average 9.0s), while other endothelial cells within the dorsal aorta showed no repetitive Ca2+ transients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The technical approach is well-validated with appropriate controls (C7, C84, C90) and the imaging methodology is sound (C86). The quantitative characterization of Ca2+ oscillations in tip cells (C8, C9) is supported by time-lapse imaging data with sufficient temporal resolution. The specificity to budding tip cells (C10) is clearly demonstrated by comparative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Ca2+ oscillations in endothelial cells budding from the dorsal aorta depend on Vegfa/Vegfr2 signaling. This was demonstrated through multiple complementary approaches: pharmacological inhibition with ki8751 completely abolished Ca2+ oscillations and stopped tip cell migration, vegfr2 morpholino knockdown markedly reduced oscillations, and expression of the Vegfa trap sFlt1 completely inhibited oscillations in cells near somite boundaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conclusion is strongly supported by convergent evidence from three independent experimental approaches (C11, C14, C15), each with appropriate controls. The rescue experiment (C26) further validates specificity. The pharmacological and genetic manipulations show consistent phenotypes, strengthening the causal link between Vegfr2 signaling and Ca2+ oscillations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Ca2+ oscillations occur in both arterial and venous sprouting, with distinct receptor dependencies: Vegfr2 for arterial sprouting from the dorsal aorta and Vegfr3 for venous sprouting from the posterior cardinal vein. vegfr3 morphants lost Ca2+ oscillations in venous sprouts but showed normal oscillations during arterial sprouting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The receptor-specific dependencies are clearly demonstrated through loss-of-function experiments (C19, C21). The phenotypic validation of vegfr3 morphants (C18) confirms the specificity of the manipulation. This establishes that Ca2+ oscillations are a general feature of sprouting angiogenesis but with context-dependent receptor requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Prior to sprouting from the dorsal aorta (17-19 somite stages), Ca2+ oscillations occurred widely throughout the dorsal aorta in a Vegfr2-dependent manner, without spatial restriction to specific regions. This suggests that single tip cells are not pre-specified before sprouting, as indicated by Ca2+ oscillation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatial analysis showing uniform distribution of Ca2+ oscillations across different DA regions (C24) is quantitatively supported. The Vegfr2-dependence is confirmed by rescue experiments (C26). However, the inference about tip cell specification (C25) is limited to what Ca2+ oscillations can reveal and does not exclude other pre-specification mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Tip cell selection is a dynamic process that continues after the onset of sprouting. At 19-22 somite stages, Ca2+ oscillations were detected in either single cells (52.4%) or two neighboring cells (45.2%) at somite boundaries. Time-lapse imaging revealed that when two cells initially showed oscillations, only one maintained them over time while the other lost oscillations and retracted its sprout, with all cells showing sustained oscillations eventually becoming tip cells (18/18).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal dynamics of tip cell selection are well-documented through quantitative analysis (C27, C29) and direct observation (C30, C32). The 100% correlation between sustained Ca2+ oscillations and tip cell fate (C32, n=18) provides strong evidence. The observation of sprout retraction in cells losing Ca2+ response (C31) adds mechanistic insight, though the sample size for this specific observation could be larger.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "PlexinD1 signaling is essential for determining the spatial position of tip cell budding near somite boundaries. plxnD1 morphants displayed ectopic endothelial cell sprouts that exhibited Ca2+ oscillations, confirming PlexinD1's role in allocating budding position rather than in the Ca2+ oscillation mechanism itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation of ectopic Ca2+-oscillating sprouts in plxnD1 morphants (C34) is consistent with prior literature (C35) and demonstrates that PlexinD1 controls spatial patterning independently of the Ca2+ oscillation mechanism. This is a confirmatory finding that validates the Ca2+ imaging approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "During stalk cell budding from the dorsal aorta, both tip cells and budding stalk cells exhibited Vegfr-dependent Ca2+ oscillations, though stalk cells showed lower oscillation frequency and amplitude than tip cells. Endothelial cells remaining in the dorsal aorta showed no oscillations, indicating that budding stalk cells have significant but weaker Vegfr2 activity compared to tip cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative comparison between tip and stalk cell Ca2+ dynamics (C37) is well-supported by data. The Vegfr-dependence is confirmed pharmacologically (C38). The spatial specificity (C39) strengthens the conclusion. The inference about differential Vegfr2 activity levels (C40) is reasonable based on the Ca2+ oscillation patterns, though direct measurement of Vegfr2 activity would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C93",
+      "C94"
+    ],
+    "result": "Vegfr2 activation is crucial for both tip and stalk cells to exit the dorsal aorta. Endothelial cells expressing dominant-negative Vegfr2 (Vegfr2-\u0394C) rarely became tip or stalk cells and predominantly remained in the dorsal aorta, while control cells showed normal distribution. The dominant-negative construct was validated to block Vegfaa-induced Erk phosphorylation in zebrafish endothelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional validation of the dominant-negative construct (C93) is rigorous, showing blocked Erk phosphorylation. The cell fate analysis (C41) with appropriate controls (NLS-mC alone) provides strong evidence for Vegfr2's role in cell exit from the DA. The conclusion (C42) is well-supported by the mosaic expression experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "After stalk cells completely exit the dorsal aorta, their Ca2+ oscillations become comparable to those in tip cells in both frequency and amplitude, and these oscillations remain Vegfr2-dependent. Analysis of synchrony revealed that 78.9% of stalk cell oscillations and 91.6% of tip cell oscillations occurred independently, indicating that oscillations are not mediated by intercellular Ca2+ waves but reflect independent cellular responses to angiogenic cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative comparison of Ca2+ dynamics (C43) and synchrony analysis (C45, C46) are well-executed. The conclusion that oscillations are not intercellular waves (C47) is strongly supported by the asynchrony data. The inference that stalk cells can respond to angiogenic cues (C48) is reasonable, though it's important to note this represents potential rather than demonstrated function in vivo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Dll4/Notch signaling regulates tip cell selection by suppressing Ca2+ responses in endothelial cells adjacent to budding tip cells. In dll4 morphants, before sprouting, Ca2+ oscillations were significantly increased throughout the dorsal aorta. During sprouting (19-22 ss), only 20.8% of somite boundaries had single Ca2+-oscillating cells in dll4 morphants versus 44.5% in controls, with 79.2% showing two or more oscillating cells. At later stages (24-27 ss), 74.1% of dll4 morphants maintained multiple oscillating cells, and time-lapse imaging showed both cells sustained oscillations and budded from the dorsal aorta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The temporal analysis of Dll4's role is comprehensive, with quantitative data at multiple stages (C49, C51, C54). The phenotype is consistent across stages and confirmed by time-lapse imaging (C55). The spatial specificity of Dll4's suppressive effect (C57, C58) is well-demonstrated. The conclusion about Dll4's role in tip cell selection (C56) is strongly supported by convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The increased Ca2+ oscillations in dll4 morphants reflect increased Vegfr2 and/or Vegfr3 activation, as ki8751 treatment completely abolished all oscillations. Analysis of vegfr3/dll4 double morphants showed a slightly milder phenotype (65.8% with multiple oscillating cells) compared to dll4 morphants alone (74.1%), indicating that Vegfr3 is partially involved but ectopic oscillations still occur in its absence, suggesting Dll4/Notch signaling restricts tip cell number mainly by suppressing Vegfr2 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pharmacological evidence (C59) clearly demonstrates VEGFR-dependence of the dll4 morphant phenotype. The genetic epistasis experiment with vegfr3/dll4 double morphants (C61) provides insight into relative contributions, though the interpretation (C64) is somewhat speculative. The conclusion would be strengthened by direct measurement of Vegfr2 activity levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Dll4/Notch signaling inhibits the Vegfr2 signaling cascade rather than vegfr2 expression. Whole-mount in situ hybridization showed no increase in vegfr2 or its paralog kdr mRNA expression in trunk vessels of dll4 morphants despite increased Vegfr2 activity as evidenced by Ca2+ oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in situ hybridization data (C65) directly addresses the mechanism of Dll4/Notch regulation. The conclusion (C66) is reasonable given the disconnect between mRNA levels and functional activity. However, this is a negative result that would benefit from additional validation such as protein level measurements or direct assessment of Vegfr2 phosphorylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Dll4/Notch signaling regulates stalk cell selection similarly to tip cell selection. During stalk cell budding, Ca2+ oscillations were mainly detected in single stalk cells (73.9% of ISVs) in control embryos, but in dll4 morphants, 57.1% of ISVs had two or more Ca2+-oscillating cells following tip cells. Time-lapse imaging confirmed that both oscillating cells in dll4 morphants eventually exited the dorsal aorta to form intersomitic vessels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative analysis (C67, C68) clearly demonstrates Dll4's role in stalk cell selection. The time-lapse confirmation (C69) that both cells exit the DA in dll4 morphants is important for establishing the functional consequence. This extends the understanding of Dll4/Notch signaling beyond tip cell selection to include stalk cell selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C101"
+    ],
+    "result": "After stalk cells exit the dorsal aorta, Dll4/Notch signaling does not suppress Ca2+ responses in the initial sprouting to form intersomitic vessels. In dll4 morphants, no significant increases in oscillatory activity were detected in tip and stalk cells that had exited the dorsal aorta, indicating that Dll4's inhibitory activity toward Ca2+ responses in stalk cells diminishes after they leave the dorsal aorta.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative analysis (C71) showing no difference between control and dll4 morphants after stalk cell exit is clear. This temporal specificity of Dll4 function (C72, C101) is an important finding that defines the spatial and temporal boundaries of Dll4/Notch-mediated lateral inhibition. The negative result is well-controlled and informative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C73",
+      "C102"
+    ],
+    "result": "Visualizing Ca2+ oscillations serves as an indicator for monitoring endothelial cell responses to angiogenic cues during sprouting angiogenesis. Ca2+ oscillations occurred specifically in endothelial cells exhibiting angiogenic behaviors such as sprouting and migration, providing a real-time readout of cellular responses to extracellular stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation between Ca2+ oscillations and angiogenic behavior is consistently demonstrated throughout the study. The VEGFR-dependence of oscillations (multiple claims) validates that they reflect responses to angiogenic signals. This represents a significant methodological advance for studying angiogenesis in vivo, though the relationship between Ca2+ oscillations and specific cellular behaviors could be more mechanistically defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C88",
+      "C89",
+      "C95",
+      "C96"
+    ],
+    "result": "The study contextualizes findings within existing knowledge of VEGF-induced Ca2+ signaling. In vitro studies show VEGF-A induces Ca2+ rise in cultured endothelial cells through PLC\u03b3-IP3-IP3R pathway, store-operated Ca2+ entry, and lysosomal Ca2+ release, though in vitro responses are not oscillatory. The frequency and amplitude of Ca2+ oscillations can reflect agonist levels, and in cultured cells, Ca2+ oscillations can be polarized to the cell front during migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims appropriately cite prior literature (C74, C75, C76, C88, C89, C96) and acknowledge the complexity of Ca2+ signaling mechanisms (C95). The authors appropriately note differences between in vitro and in vivo observations and identify areas requiring further investigation. This contextualizes their findings within the broader field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The study addresses gaps in understanding stalk cell specification and behavior. While Dll4/Notch signaling's role in tip cell selection was established, how stalk cells are specified and migrate was unknown. The authors propose that Vegfr2 activation in stalk cells is necessary for their selection and exit from parental vessels. They also note that tip/stalk cell plasticity may depend on developmental stage and angiogenesis type, as they did not observe cell interchange during early sprouting unlike reports in elongating sprouts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The study successfully addresses the identified knowledge gap (C98, C100) about stalk cell specification. The proposal about Vegfr2's role in stalk cells (C77) is supported by the experimental data. The discussion of tip/stalk plasticity (C78, C79, C99) appropriately contextualizes their observations within existing literature and acknowledges stage-specific differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "The authors propose a comprehensive model where Dll4/Notch-mediated lateral inhibition leads to suppression of angiogenic responses mainly in endothelial cells within the dorsal aorta adjacent to budding tip or stalk cells, thereby restricting excess budding from the dorsal aorta. This model integrates observations across different stages of sprouting angiogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative model (C80) is well-supported by the collective experimental evidence showing: (1) Dll4 suppresses Ca2+ oscillations throughout the DA before sprouting (C49-C50), (2) Dll4 restricts the number of budding cells during tip and stalk cell selection (C51-C58, C67-C70), and (3) Dll4 does not suppress oscillations after cells exit the DA (C71-C72). The model provides a coherent framework for understanding Dll4/Notch function in angiogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C103"
+    ],
+    "result": "The authors discuss future applications of their Ca2+ imaging approach. They note that blood flow is a well-studied input inducing Ca2+ increases in endothelial cells, and their unpublished data has captured flow-dependent Ca2+ oscillations in various vessel types. They propose that in vivo Ca2+ imaging will become a powerful tool for investigating dynamic endothelial cell behavior in vascular development and homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the potential applications are reasonable given the demonstrated utility of the method, the claims about future utility (C82, C83) are speculative. The reference to unpublished data on flow-dependent oscillations (C82) cannot be evaluated. These represent promising directions but are not demonstrated results from the current study.",
+    "result_type": "MINOR"
+  }
+]

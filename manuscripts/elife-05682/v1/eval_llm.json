@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Acid treatment (pH 6.0) induces necrotic neuronal death characterized by plasma membrane rupture, organelle swelling, and cell lysis, without activating apoptotic pathways. Electron microscopy showed 47 of 57 pH 6.0-treated neurons displayed necrotic morphology versus 3 of 41 control neurons. Caspase 3/7 activities did not increase and caspase 3 cleavage was undetectable, while the pan-caspase inhibitor z-VAD-fmk failed to prevent death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches (electron microscopy morphology C19-C21, caspase activity assays C30-C32, and pharmacological inhibition C25) consistently demonstrate necrotic rather than apoptotic death. The quantitative data are robust with adequate sample sizes, and the conclusion (C33) logically follows from the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Both PcTX1 (ASIC1a inhibitor) and Nec-1 (RIP1 inhibitor) rescue neurons from acid-induced death. Nec-1 showed dose-dependent protection with IC50 of 12.6 \u03bcM, and RIP1 knockdown by shRNA also prevented acid-induced neuronal death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The protective effects are demonstrated through multiple independent methods (pharmacological inhibition C22-C23, C26-C27 and genetic knockdown C28-C29) using different assays (CTB and PI staining). The dose-response relationship for Nec-1 strengthens the claim. Statistical significance is reported (p<0.001) with adequate replicates (n=4-12).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Acid treatment induces RIP1 phosphorylation in an ASIC1a-dependent manner that requires the presence of ASIC1a protein but not intracellular acidification. RIP1 phosphorylation was detected by two independent methods (32P incorporation and phospho-S/T antibody), was blocked by PcTX1 and Nec-1, and was absent in Asic1a\u2212/\u2212 neurons despite similar intracellular acidification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The use of two independent phosphorylation detection methods (C36) strengthens the findings. The genetic (C39) and pharmacological (C37-C38) controls are appropriate. The cell-free assay (C40) and intracellular pH measurements (C41) effectively rule out intracellular acidification as the mechanism, supporting the conclusion that ASIC1a protein presence is required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C5"
+    ],
+    "result": "Acid stimulation recruits RIP1 to ASIC1a within 30 minutes, and this association is suppressed by PcTX1. This physical interaction between ASIC1a and RIP1 is proposed to cause RIP1 phosphorylation and subsequent neuronal death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Co-immunoprecipitation experiments (C43-C44) demonstrate the physical association between ASIC1a and RIP1 following acid treatment. The temporal relationship (30 min) and PcTX1 sensitivity are well-documented. However, the causal link to RIP1 phosphorylation and death (C5) is inferential rather than directly demonstrated through mechanistic dissection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C92"
+    ],
+    "result": "ASIC1a channels mediate acidotoxicity even under steady-state desensitized conditions. Pretreatment with pH 6.8 reduced acid-evoked currents by ~90% but failed to prevent acid-induced neuronal death. Neuronal death increased with duration of pH 6.0 exposure in wild-type but not Asic1a\u2212/\u2212 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electrophysiological data (C48) clearly demonstrate channel desensitization, while cell death assays (C49-C51) show continued ASIC1a-dependent toxicity. The time-course experiment (C50) is particularly compelling, showing progressive death despite channel desensitization. This strongly challenges the traditional Ca2+ influx hypothesis and is a key finding of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Acid-induced neuronal death occurs independently of Ca2+ influx and ionic conduction through ASIC1a. Ca2+-free conditions induced similar death levels as Ca2+-containing solutions, and replacement of all permeant ions with NMDG eliminated currents but not death. Amiloride co-treatment blocked currents without providing protection, though pretreatment was protective.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary ionic manipulation experiments (C54, C57) consistently show death occurs without ion flux. The PcTX1/Nec-1s protection in Ca2+-free conditions (C55) confirms ASIC1a-RIP1 pathway involvement. The amiloride experiments (C58-C59) are particularly informative, distinguishing channel blockade from other modulatory effects. The data strongly support ion-independent mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C89"
+    ],
+    "result": "The ion-conducting function of ASIC1a is not essential for acid-induced necroptotic death. Expression of the non-conducting HIF-ASIC1a mutant restored acid-induced death in Asic1a\u2212/\u2212 neurons, while the conducting RC-ASIC1a mutant (with scrambled C-terminus) did not. Similar results were obtained in CHO cells, which showed no Ca2+ response to acid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutant rescue experiments (C62) provide strong evidence for ion-independent mechanisms. The HIF mutant is well-characterized as non-conducting (C60, with citation), and the RC mutant serves as an appropriate control showing that conductance alone is insufficient (C61). The CHO cell experiments (C63-C64) extend findings to a non-neuronal system. This is a central finding supporting the paper's main conclusion (C89).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The C-terminus of ASIC1a is critical for acid-induced death. ASIC1b (differing only at N-terminus) mediated death in CHO cells, while ASIC2a and ASIC3 (with different C-termini) did not. Since ASIC1b is Ca2+-impermeable, this further supports Ca2+-independent mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ASIC isoform comparison (C66-C67) provides strong structure-function evidence for C-terminal involvement. The ASIC1b result (C66, C68) is particularly compelling as it simultaneously demonstrates C-terminal importance and Ca2+-independence. The negative results with ASIC2a/3 serve as appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "A synthetic peptide (CP-1) representing the proximal C-terminus of ASIC1a (residues 468-483) mimics acid-induced necroptosis. CP-1 induced neuronal death and RIP1 phosphorylation at physiological pH 7.4, effects partially rescued by Nec-1. CP-1 also caused death in CHO cells lacking endogenous ASIC1a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CP-1 peptide experiments (C69-C71) provide functional evidence for the C-terminal region's role. The specificity is demonstrated by negative results with other peptides (CP-2, CP-3, CP-4). The CHO cell result (C72) shows the effect doesn't require full-length ASIC1a. However, the mechanism by which a TAT-tagged peptide mimics the conformational change of the full channel remains unclear and somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C6",
+      "C7"
+    ],
+    "result": "In a mouse MCAO model of ischemic stroke, ASIC1a-RIP1 association and RIP1 phosphorylation occur in affected brain areas. This association was detected as early as 30 minutes post-MCAO and persisted for at least 2 hours. RIP1 phosphorylation was increased in wild-type but not Asic1a\u2212/\u2212 ischemic brains, and Asic1a deletion prevented brain damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo experiments (C73-C78) effectively translate the in vitro findings to a disease-relevant model. The time course (C74-C75) is well-characterized, and the genetic controls (C78) are appropriate. The comparison between ischemic and control hemispheres within the same brain (C73) is a strong experimental design. The data support the physiological relevance of the ASIC1a-RIP1 pathway in ischemic injury.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C24",
+      "C25",
+      "C45",
+      "C46",
+      "C47",
+      "C79",
+      "C80"
+    ],
+    "result": "ASIC1a-dependent necroptosis differs mechanistically from conventional death receptor-dependent necroptosis. It does not require ROS generation, Ca2+ influx, cPLA2 activity, de novo protein synthesis, or TNF-\u03b1 signaling. Nec-1 did not affect acid-evoked currents, indicating RIP1 acts downstream of ASIC1a activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The systematic exclusion of alternative mechanisms (C24-C25, C35, C45-C47) through pharmacological and genetic approaches is thorough. The negative results with ROS scavengers (C24, C35), protein synthesis inhibitor (C45), and TNF-\u03b1 antibody (C46) are well-controlled. The demonstration that Nec-1 doesn't affect currents (C34) supports the proposed pathway order. This characterization distinguishes the novel pathway from known mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Application of pH 6.0 solution to cultured cortical neurons elicits a rise in intracellular Ca2+ that is ASIC1a-dependent. The Ca2+ response was blocked by inhibitors of glutamate receptors and voltage-gated channels, with the remaining response blocked by PcTX1. The response was absent in Asic1a\u2212/\u2212 neurons but restored by ASIC1a expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Ca2+ imaging experiments (C52-C53) are well-controlled with appropriate pharmacological dissection and genetic validation. However, the authors later show this Ca2+ response requires fast perfusion and is not critical for cell death, which somewhat diminishes the importance of this finding. It serves mainly to confirm ASIC1a activation rather than to support the death mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "The total protein level of RIP1 increased in the first 30 minutes of acidosis treatment and then declined to approximately 80% of basal level at 60 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Western blot data (C42) clearly show the biphasic change in RIP1 protein levels. However, the functional significance of this observation is unclear, and the mechanism is not explored. While interesting, this finding is not central to the main conclusions and may represent a secondary effect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C93"
+    ],
+    "result": "The proposed mechanism involves acid-induced conformational changes in ASIC1a that expose the proximal C-terminal region, triggering RIP1 phosphorylation. PcTX1 is proposed to inhibit both C-terminal domain exposure and channel gating, while steady-state desensitization only blocks gating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This mechanistic model (C91, C93) is largely speculative and based on indirect evidence. While the data support that conformational changes occur and that the C-terminus is important, direct evidence for C-terminal exposure or the proposed two-step conformational change is lacking. Structural or biophysical studies would be needed to validate this model. The claims are reasonable interpretations but remain hypothetical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background claims establishing that acidotoxicity is common in neurological disorders, ASIC1a is the key proton receptor, and traditional views held that Ca2+ influx through ASIC1a causes acidotoxicity. However, ASIC1a channels rapidly desensitize and have relatively low Ca2+ permeability. RIP1 is the crucial mediator of necroptosis, with phosphorylation being the key step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are primarily literature-based background claims (C1-C2, C8-C18) supported by appropriate citations. They establish the context and rationale for the study. The citations appear appropriate and the statements accurately represent established knowledge in the field. These claims set up the paradox that motivates the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Discussion of prior work showing that Asic1a deletion and Nec-1 treatment protect against ischemic injury, and that both ASIC1a and RIP1 are therapeutic targets in traumatic brain injury. The authors distinguish their findings from prior work on mitochondrial ASIC1a (mtASIC1a), which is involved in ROS-induced death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C81-C83, C85-C88) accurately cite and interpret prior literature. The distinction from mtASIC1a work (C85-C88) is important for clarifying the scope of the current findings. The citations appear appropriate and the interpretations are reasonable. This contextualizes the current work within the broader field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Discussion of precedents for ion channel functions independent of ion conduction, including EAG K+ channels modulating cell proliferation, Na+ channel \u03b2 subunits contributing to cell adhesion, GluN2B-NMDA receptors binding signaling proteins, and TRPM7 containing a kinase domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These literature-based claims (C95-C99) provide important context showing that non-conducting functions of ion channels are not unprecedented. The citations appear appropriate and support the authors' argument that their findings fit within a broader paradigm. This strengthens the plausibility of their conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Discussion of evolutionary implications of the CP-1 sequence being non-conserved among ASIC isoforms, and speculation about potential conduction-independent roles of ASIC1a in synaptic function. The authors note that while Asic1a\u2212/\u2212 mice show synaptic and learning deficits, the contribution of ASIC1a to synaptic currents is minimal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The evolutionary speculation (C100) is reasonable but not directly tested. The discussion of synaptic function (C101-C104) is largely speculative (C104 explicitly so) and based on apparent discrepancies in the literature. While these are interesting hypotheses for future work, they are not supported by data in the current manuscript. The speculation is reasonable but remains unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C84",
+      "C90"
+    ],
+    "result": "The authors conclude that the inability to activate RIP1 explains the resistance of Asic1a\u2212/\u2212 mice to ischemic brain damage, and that RIP1 activation rather than ionic conduction is necessary for acid-induced necroptotic cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary conclusions (C84, C90) are well-supported by the collective experimental evidence presented in the paper. The genetic data showing lack of RIP1 phosphorylation in Asic1a\u2212/\u2212 mice (C39, C78) combined with the mutant rescue experiments (C62) and ionic manipulation studies (C54-C57) provide strong support. These represent the main conclusions of the work.",
+    "result_type": "MAJOR"
+  }
+]

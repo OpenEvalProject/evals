@@ -1,0 +1,334 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Cryo-EM has evolved into an effective structure determination tool that overcomes major bottlenecks of X-ray crystallography, including crystal preparation and capturing molecules in unphysiological states, making it suitable for resolving large macromolecular complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by citations to established literature (Cheng 2015, Unger 2002, Neutze et al. 2015) and represent accepted knowledge in the field about the advantages of cryo-EM over traditional crystallography methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "MDFF has been successful for low-resolution (7-25 \u00c5) cryo-EM maps, but recent hardware advances have enabled routine high-resolution (<5 \u00c5) maps that pose challenges to traditional structure determination methods, requiring precise modeling of near-atomic features including sidechain conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 establish the historical context and current challenges, supported by multiple citations documenting MDFF applications, hardware advances, and the recognized challenges of high-resolution map interpretation (Trabuco et al. 2008, Li et al. 2013, DiMaio et al. 2015, Barad et al. 2015).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The authors present cascade MDFF (cMDFF) and resolution exchange MDFF (ReMDFF) methods that sequentially re-refine structures against progressively higher-resolution maps, achieving a radius of convergence of ~25 \u00c5 and providing validation criteria based on RMSF, with tools available on Amazon Web Services.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 describe the core methodological contributions of the manuscript, supported by experimental data from \u03b2-galactosidase and TRPV1 refinements demonstrating the stated radius of convergence and validation capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C18"
+    ],
+    "result": "In proof-of-principle tests with carbon monoxide dehydrogenase, direct MDFF converged to 7 \u00c5 RMSD from target, while cMDFF and ReMDFF achieved 1.7 \u00c5 and 1.0 \u00c5 RMSD respectively, extending the radius of convergence to at least 7 \u00c5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16, C18 present experimental data from the proof-of-principle computation with clear quantitative results shown in Figure 1, demonstrating superior performance of the new methods over direct MDFF.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "For \u03b2-galactosidase refinement, cMDFF and ReMDFF achieved RMSDs of 0.7 \u00c5 and 0.9 \u00c5 from the target (vs. 3.7 \u00c5 for direct MDFF), with superior EMRinger scores (3.16 and 3.45 vs. 1.91), iFSC values (5.22 \u00c5 and 4.66 \u00c5 vs. 2.74 \u00c5), and GCC improvements (0.67 vs. 0.56).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 present comprehensive quantitative validation metrics from Table 1 and supplementary figures, demonstrating clear superiority of cMDFF and ReMDFF over direct MDFF across multiple quality measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "For TRPV1 refinement starting from a model 25 \u00c5 deviated from target, cMDFF and ReMDFF achieved RMSDs of 2.4 \u00c5 and 2.5 \u00c5 (vs. 7.9 \u00c5 for direct MDFF), demonstrating a radius of convergence as high as 25 \u00c5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 present experimental data from TRPV1 refinement demonstrating the methods can handle extremely poor starting models, with the 25 \u00c5 radius of convergence representing a major advance over existing methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "ReMDFF exhibited faster convergence than cMDFF, reaching steady state in 0.1 ns vs. 0.8 ns for \u03b2-galactosidase and 0.02 ns vs. 0.27 ns for TRPV1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 present experimental timing data comparing the efficiency of the two methods, with clear quantitative results supporting ReMDFF's superior convergence speed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "RMSF values during MDFF simulations correlate closely with overall and local resolution of EM maps, with lower resolution maps producing higher RMSF, and RMSF during MDFF correlating linearly with RMSF during unbiased MD simulations, reflecting the inherent flexibility of the macromolecule.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C35 present a novel validation approach supported by experimental data in Figure 4 showing linear correlations between RMSF and resolution across multiple test systems (\u03b2-galactosidase, TRPV1, \u03b3-secretase, proteasome), with the physical basis established through correlation with unbiased MD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The B-factor corresponding to minimum RMSF coincides with that determined by Guinier analysis for optimal map contrast across multiple systems (\u03b2-galactosidase, TRPV1, \u03b3-secretase), establishing RMSF analysis as an alternative method for B-factor determination that prevents over-sharpening while maintaining correlation with inherent dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C72-C78 present experimental data from Figure 5 and supplements showing agreement between RMSF-based and Guinier analysis-based B-factor determination across three systems, with EMRinger scores confirming optimal sharpening at minimum RMSF.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "cMDFF and ReMDFF improve clash scores and rotamer geometries while incurring small costs in Ramachandran statistics, with refined model quality depending on search model secondary structure quality. Search models deviating 7-25 \u00c5 from target with ~3% Ramachandran outliers and 11-38% poor rotamers can be accurately refined, with moderate- to high-confidence homology models recommended as optimal starting points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 present detailed structural quality analysis from Table 2 and supplementary data, demonstrating the relationship between initial model quality and refined structure quality, with practical recommendations supported by experimental results and citations to prior successful applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Fitting C\u03b2 atoms to density is crucial for accurate sidechain placement, MDFF backbone placement does not guarantee correct sidechain geometries even with CHARMM36 force fields, and the cMDFF-fitted \u03b2-galactosidase model with per-residue fluctuations <1 \u00c5 represents an excellent representation of the thermodynamic ensemble.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 present findings from additional simulations (Appendix 1 - Section 7) with experimental data in supplementary figures, confirming limitations of force fields and establishing the ensemble-representative nature of fitted structures through low RMSF values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "RMSF, together with GCC, LCC, EMRinger, and iFSC, provides a comprehensive set of validation criteria for model and map quality, with RMSF's added value particularly evident at the local level where it resolves quality even with as few as 100 atoms, unlike EMRinger which does not correlate with local resolution for small residue groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 present a comparative analysis of validation metrics supported by experimental data in Figure 4 supplements, demonstrating RMSF's advantages over existing metrics for local quality assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39",
+      "C92"
+    ],
+    "result": "ReMDFF on Amazon Web Services converges to the target structure for carbon monoxide dehydrogenase in approximately 0.1 ns simulation time, requiring little wall clock time and incurring small monetary cost to users.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C92 present experimental data from cloud computing implementation in Table 3, demonstrating feasibility and cost-effectiveness of the approach on AWS infrastructure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "cMDFF and ReMDFF offer accurate fitting of atomic-level structures within sub-5 \u00c5 EM maps previously inaccessible to direct MDFF, with a radius of convergence at least twice that of Rosetta refinements, and ReMDFF's quick convergence makes it amenable to cloud computing applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 present summary conclusions supported by the comprehensive experimental data throughout the manuscript, with comparison to Rosetta supported by citation to DiMaio et al. 2015 and cloud computing feasibility demonstrated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "At high resolutions, the MDFF potential features multiple proximal local minima corresponding to recurring structural patterns, with energy barriers typically twice as high as in low-resolution maps, exposing MDFF to entrapment in local minima and causing direct MDFF to yield structurally poor models with high-resolution maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 present the theoretical basis for the methodological development, supported by experimental data in Figure 1 showing energy barriers and Figure 2 supplement 1 showing poor direct MDFF results, with citation to DiMaio et al. 2015 confirming the recognized problem.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "cMDFF fits structures to maps of gradually increasing resolution with the smoothest map featuring a clear global minimum, allowing greater conformational exploration than direct MDFF. ReMDFF runs multiple replicas in parallel with advantages in efficiency and automation, and both methods outperform direct MDFF in quality and speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 describe the methodological design of cMDFF and ReMDFF, with the theoretical basis illustrated in Figure 1 and superior performance demonstrated by comprehensive experimental data throughout the Results section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "Equilibrium MD simulations of a single structure at room temperature typically exhibit RMSD values of about 3 \u00c5 relative to the initial or average structure, as confirmed for \u03b2-galactosidase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 presents established knowledge about MD simulations supported by data shown in Figure 2 supplement 6, providing important context for interpreting the RMSD values achieved by the refinement methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66",
+      "C71",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Conformational flexibility causes heterogeneity in cryo-EM data producing lower local resolutions, B-factor sharpening is crucial for map interpretation, MD provides higher B-factors for poorly resolved regions that better represent conformational diversity, and most high-resolution cryo-EM maps have resolutions between 3-5 \u00c5 where traditional B-factor methods have limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C71, C81-C84 present established knowledge about cryo-EM and B-factors supported by multiple citations (Leschziner and Nogales 2007, Kuzmanic et al. 2014, Fern\u00e1ndez et al. 2008, Rosenthal and Henderson 2003), providing context for the B-factor determination methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "In the 3-5 \u00c5 resolution range, B-factors could be estimated from MDFF and used to improve model building and refinement, with MDFF-derived values serving as initial estimates for resolutions better than 3 \u00c5. A resolution-dependent weighting scheme combining different B-factor values could improve accuracy of atomic models from high-resolution cryo-EM maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C88 propose future applications and developments based on the findings but lack experimental validation of these specific applications. While the underlying RMSF-B-factor relationship is demonstrated, the proposed uses require additional work to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "ReMDFF provides an efficient automated method converging faster than direct or cMDFF, and cloud computing offers solutions to hardware access bottlenecks while allowing bundling of different software packages for standardized workflows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 combine experimental efficiency data (Figure 2 supplement 3) with general statements about cloud computing benefits, with the practical implementation demonstrated through the AWS deployment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Sub-5 \u00c5 EM maps can resolve proteins in multiple conformations, and MDFF provides a natural method to model flexible regions by fitting de novo models from one conformational state into density of other states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 presents established knowledge supported by citation to Matthies et al. 2016. Claim C44 proposes an application of MDFF based on demonstrated capabilities, though this specific application is not experimentally validated in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Flexible fitting methods have facilitated structure determination from low-resolution EM maps for over a decade, with MDFF being a front-runner that has enabled discovery of complicated structures in modern structural biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 present established knowledge about the history and impact of flexible fitting methods and MDFF, supported by extensive citations documenting applications and developments in the field.",
+    "result_type": "MINOR"
+  }
+]

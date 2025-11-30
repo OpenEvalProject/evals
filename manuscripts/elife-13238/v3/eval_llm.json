@@ -1,0 +1,204 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C44",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Hyperpolarization of Kenyon cells (KCs) in mushroom bodies impairs visual learning and memory, but blocking chemical synaptic transmission does not, suggesting non-chemical synaptic transmission (likely gap junctions) is involved. Hyperpolarization of \u03b1/\u03b2, \u03b1'/\u03b2', and \u03b3 neurons all abolished visual learning and memory (C34-C38, C44), while blocking chemical synapses with shibirets1 or TNT left memory intact (C39-C43). However, MB ablation by hydroxyurea did not impair visual learning (C45), leading to the inference that non-chemical synaptic transmission influences visual memory in real time (C46, C47).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental evidence consistently shows that hyperpolarization impairs visual learning while chemical synapse blockade does not (C34-C43), supporting the conclusion that non-chemical transmission is involved. The MB ablation result (C45) appears contradictory but is addressed by the authors' developmental compensation hypothesis. The convergence of multiple independent manipulations (optogenetic hyperpolarization with different drivers, Kir2.1 expression) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Gap junctions composed of INX5 and INX6 in \u03b1/\u03b2 and \u03b1'/\u03b2' Kenyon cells are required for visual learning and memory. RNAi knockdown of inx4, inx5, or inx6 in KCs impaired visual learning (C48-C51), with adult-specific knockdown showing that INX5 and INX6 are post-developmentally required while INX4 may have developmental roles (C52-C56). Knockdown in \u03b1'/\u03b2' neurons impaired memory while knockdown in \u03b3 neurons had no effect (C57-C58), leading to the conclusion that INX5/6 gap junctions in \u03b1/\u03b2 and \u03b1'/\u03b2' neurons are involved in visual learning (C59).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNAi experiments are well-controlled with GAL80 rescue controls (C50) and use of independent RNAi strains. The temporal specificity experiments (C52-C54) distinguish developmental from functional roles. The subtype-specific effects (C57-C58) provide anatomical resolution. RNAi efficiency was verified (Figure 2\u2014figure supplement 1). The convergence of evidence from multiple genetic manipulations strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Dye coupling experiments demonstrate the presence of gap junctions between Kenyon cells. Among 143 successfully stained brains, dye coupling was observed in 14 brains (C60), with 10 showing coupling between the same KC subtype and 4 showing coupling between different subtypes (C61-C62). This led to the inference that gap junctions exist in both calyx and lobes linking KCs of same or different subtypes (C63). Blind experiments showed dye coupling in 5/38 wild-type brains but 0/52 inx5/6 knockdown brains (C64), with statistical analysis indicating low probability (p=0.00065) of this occurring by chance (C65).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dye coupling experiments provide direct anatomical evidence for gap junctions. The blind experimental design (C64) eliminates experimenter bias. The statistical analysis (C65) demonstrates the specificity of the dye coupling to INX5/6-dependent gap junctions. The low frequency of dye coupling (~10%) is acknowledged and discussed by the authors as likely an underestimate due to technical limitations. Multiple examples with detailed imaging strengthen the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "\u03b2'2mp mushroom body output neurons (MBONs) receive electrical synaptic input from Kenyon cells through gap junctions. Electrophysiological recordings showed that hyperpolarization of KCs induced hyperpolarization in \u03b2'2mp neurons (C66), which persisted after TTX application (C67) but was blocked by 2-octanol and recovered after washout (C68-C69), indicating electrical rather than chemical synaptic transmission (C70). Dye coupling between \u03b2'2mp and \u03b1'/\u03b2' neurons was observed in 3/35 recorded brains (C71).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The electrophysiological evidence is compelling: TTX-insensitivity rules out chemical synapses (C67), while 2-octanol sensitivity and reversibility (C68-C69) specifically implicate gap junctions. The dye coupling provides independent anatomical confirmation (C71). The use of maximal laser power is justified given potentially low coupling coefficients. The convergence of functional (electrophysiology) and anatomical (dye coupling) evidence strongly supports electrical coupling between KCs and \u03b2'2mp neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Gap junctions in \u03b2'2mp MBONs are required for visual learning and memory. Knockdown of inx6 in \u03b2'2mp neurons using two independent RNAi strains abolished visual learning and memory (C72), as did knockdown of inx5 with one RNAi strain (C73). These results, combined with the dye coupling and electrophysiology data, provide strong evidence that a gap junction network containing KCs and \u03b2'2mp neurons is crucially involved in visual learning and memory (C74).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The behavioral experiments with \u03b2'2mp-specific manipulations (C72-C73) complete the circuit-level analysis by demonstrating functional necessity. The use of independent RNAi strains for inx6 controls for off-target effects. The convergence of anatomical (dye coupling), physiological (electrophysiology), and behavioral (learning assays) evidence across multiple claims provides strong support for the gap junction network model (C74).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Approximately 10% of Kenyon cells possess active gap junction connections, which is likely an underestimate. The authors infer from dye coupling data that ~10% of KCs have active gap junctions (C79), but argue this is likely an underestimate due to technical limitations including gap junction gating and difficulty filling neurons with dye (C80). They cite unpublished EM data showing KC neurites are often only 50 nm in diameter (C81) and note that dye coupling probability was ~1/12 that of electrical coupling (C82).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the 10% estimate is based on experimental data (C79), the claim that this is an underestimate (C80) is speculative and based on technical considerations rather than direct evidence. The unpublished EM data (C81) cannot be fully evaluated. The comparison of dye vs. electrical coupling rates (C82) is reasonable but the exact relationship between these measures is uncertain. More direct quantification methods would be needed to definitively establish gap junction density.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C78",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors propose functional roles for gap junctions in mushroom bodies based on analogy and speculation. They suggest gap junctions may contribute to noise reduction in KCs of the same subtype (C75) and serve as communication channels between different KC subtypes (C76). They speculate that gap junction regulation may underlie memory encoding (C78), that gap junction distribution may be rare and variable across flies (C83), that only a minority of KCs are synchronized at any time (C84), and that fine-tuned modulation is critical for MB function (C85).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims are explicitly speculative (C75, C76, C78, C83, C84, C85) and represent hypotheses rather than demonstrated findings. While they are reasonable interpretations based on the data and prior literature, they lack direct experimental support in this study. The authors appropriately present these as possibilities rather than conclusions, but they remain to be tested experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors address an apparent discrepancy between their findings and prior work showing that MB ablation does not impair visual learning. They cite previous reports that visual learning remained intact in mbm1 mutants and MB-ablated flies (C86-C87) and propose developmental compensation as an explanation (C88). They describe the mechanism of hydroxyurea (C89), cite work on neuronal development (C90), and speculate that MB-targeting neurons might form new circuits with remaining \u03b3 neurons in ablated flies (C91).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The developmental compensation hypothesis (C88, C91) is speculative and not directly tested. While the authors provide a plausible mechanistic explanation based on developmental biology principles (C89-C90), this remains an untested hypothesis. The discrepancy between acute manipulation (hyperpolarization) and developmental ablation is real and important, but the proposed resolution requires additional experimental validation. This represents an important caveat to the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors discuss the relationship between chemical and electrical synaptic circuits in visual learning. They cite work showing that blocking \u03b3 lobe output with shits affects visual learning in walking flies (C92), but note their own experiments showed no effect when chemical synaptic output was blocked in the flight simulator (C93). They infer that gap junctions in \u03b1/\u03b2 and \u03b1'/\u03b2' lobes, but not \u03b3 lobes, are required for operant visual learning (C94), suggesting chemical and electrical circuits may be complementary (C95), and propose that gap junctions cooperate with chemical synapses (C96).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential effects across KC subtypes (C94) are well-supported by the experimental data (C48-C58). The observation that chemical synapse blockade doesn't affect learning in the flight simulator (C93) is directly demonstrated. However, the claims about complementarity (C95) and cooperation (C96) are more speculative interpretations. The paradigm differences between studies (walking vs. flying flies) complicate direct comparisons. The core observation of subtype-specific gap junction requirements is solid, but broader mechanistic claims are more tentative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C77"
+    ],
+    "result": "The introduction provides established background knowledge about gap junctions, innexins, and mushroom bodies. This includes general properties of gap junctions (C1-C2, C7-C9), their functions in mammals (C10-C12), innexin expression patterns in Drosophila (C13-C18), known functions of gap junctions in Drosophila circuits (C19-C22), mushroom body anatomy and functions (C23-C29), prior work on MBs and visual learning (C30-C31), MB circuit composition (C32-C33), and gap junction regulation (C77).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are appropriately cited to prior literature and represent established knowledge in the field. They provide necessary context for the current work. The citations appear appropriate and the claims are consistent with the cited literature. This background material is well-supported but represents prior work rather than novel findings of this study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2015 @@
+{
+  "submission": {
+    "id": "af597978-1f34-416c-ada8-363ecd315129",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:16:40.720535Z",
+    "updated_at": "2025-11-29T21:16:40.720535Z"
+  },
+  "content": [
+    {
+      "id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "submission_id": "af597978-1f34-416c-ada8-363ecd315129",
+      "content_type": "manuscript",
+      "content_text": "# Identification of Pol IV and RDR2-dependent precursors of 24 nt siRNAs guiding de novo DNA methylation in Arabidopsis\n\n## Authors\n\n- Todd Blevins<sup>1</sup>\n- Ram Podicheti<sup>4</sup>\n- Vibhor Mishra<sup>2</sup>\n- Michelle Marasco<sup>2</sup>\n- Jing Wang<sup>2</sup>\n- Doug Rusch<sup>4</sup>\n- Haixu Tang<sup>5</sup>\n- Craig S Pikaard<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Howard Hughes Medical Institute, Indiana University Bloomington United States\n2. Department of Biology Indiana University Bloomington United States\n3. Department of Molecular and Cellular Biochemistry Indiana University Bloomington United States\n4. Center for Genomics and Bioinformatics Indiana University Bloomington United States\n5. School of Informatics and Computing Indiana University Bloomington United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn Arabidopsis thaliana, abundant 24 nucleotide small interfering RNAs (24 nt siRNA) guide the cytosine methylation and silencing of transposons and a subset of genes. 24 nt siRNA biogenesis requires nuclear RNA polymerase IV (Pol IV), RNA-dependent RNA polymerase 2 (RDR2) and DICER-like 3 (DCL3). However, siRNA precursors are mostly undefined. We identified Pol IV and RDR2-dependent RNAs (P4R2 RNAs) that accumulate in dcl3 mutants and are diced into 24 nt RNAs by DCL3 in vitro. P4R2 RNAs are mostly 26-45 nt and initiate with a purine adjacent to a pyrimidine, characteristics shared by Pol IV transcripts generated in vitro. RDR2 terminal transferase activity, also demonstrated in vitro, may account for occasional non-templated nucleotides at P4R2 RNA 3\u2019 termini. The 24 nt siRNAs primarily correspond to the 5\u2019 or 3\u2019 ends of P4R2 RNAs, suggesting a model whereby siRNAs are generated from either end of P4R2 duplexes by single dicing events.\n\n## Introduction\n\nIn plants, transposable elements, transgenes, repetitive sequences and endogenous genes can be transcriptionally silenced by RNA-directed DNA methylation (Matzke and Mosher, 2014; Pikaard et al., 2013; Wierzbicki, 2012; Zhang and Zhu, 2011). In this process, 24 nucleotide small interfering RNAs (24 nt siRNAs) bound to an Argonaute family protein, primarily Argonaute 4 (AGO4; [Zilberman et al., 2003]), guide the cytosine methylation and histone modification of corresponding DNA sequences, leading to chromatin states that are refractive to transcription by RNA polymerases I, II, or III (Figure 1). Approximately 4000\u20138000 loci in Arabidopsis thaliana give rise to clusters of 24 nt siRNAs,\u00a0collectively accounting for more than 90% of the total small RNA pool (Law et al., 2013; Mosher et al., 2008; Zhang et al., 2007).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/09591/elife-09591-fig1-v2.jpg)\n\n**Figure 1.:** A simplified cartoon of the RNA-directed DNA methylation pathway. Polymerase\u00a0(Pol) IV and\u00a0RNA-dependent RNA polymerase\u00a0(RDR2) physically associate and are required for the synthesis of double-stranded RNAs (dsRNA) that\u00a0are diced by DICER-like 3\u00a0(DCL3) into 24 nt siRNA duplexes. Upon loading into Argonaute 4\u00a0(AGO4), the siRNA-AGO4 complex finds its target sites by binding to Pol V transcripts and by interacting with the C-terminal domain (CTD) of the Pol V largest subunit. The cytosine methyltransferase DRM2 is ultimately recruited to Pol V-transcribed loci, resulting in de novo cytosine methylation in all sequence contexts (CG, CHG and CHH; where H represents a nucleotide other than G).\n\nThree RNA polymerases are critical for production of non-coding RNAs guiding RNA-directed DNA methylation. These enzymes are nuclear RNA polymerase IV (Pol IV; Herr et al., 2005; Onodera et al., 2005), nuclear RNA polymerase V (Pol V;\u00a0Kanno et al., 2005; Pontier et al., 2005) and RNA-dependent RNA polymerase 2 (RDR2) (Xie et al., 2004). Pol IV and Pol\u00a0V are 12-subunit enzymes (Ream et al., 2009) that evolved as specialized forms of DNA-dependent RNA Pol II (Haag et al., 2014; Haag and Pikaard, 2011; He et al., 2009; Huang et al., 2009; Lahmy et al., 2009; Ream et al., 2009). RDR2 is one of six single-subunit RNA-dependent RNA polymerases in Arabidopsis (Wassenegger and Krczal, 2006; Xie et al., 2004). Pol IV and RDR2 are each essential for the biogenesis of 24 nt siRNAs and they physically associate in Arabidopsis and maize (Haag et al., 2012, 2014; Law et al., 2011), suggesting that their activities are coupled for the production of double-stranded siRNA precursors from initial DNA templates. Pol V is not required for siRNA biogenesis at most loci (Mosher et al., 2008) but generates non-coding RNAs to which siRNA-AGO4 complexes bind (Wierzbicki et al., 2008; 2009). The C-terminal domain of the Pol V largest subunit also interacts with AGO4 (El-Shami et al., 2007). Together, these RNA and protein interactions bring AGO4 to the vicinity of the DNA transcribed by Pol V, allowing recruitment of DNA methylation and chromatin-modifying activities that bring about transcriptional gene silencing (Figure 1).\n\nGenetic evidence suggests that coordinated Pol IV and RDR2 transcription yields double-stranded RNAs (dsRNAs) that are then cleaved by DICER-like 3 (DCL3) to produce 24 nt siRNA duplexes, one strand of which is incorporated into AGO4 (Xie et al., 2004; Zilberman et al., 2003) or a closely related Argonaute protein (Mallory and Vaucheret, 2010; Zheng et al., 2007). Because Pol IV localization is unaffected in rdr2 null mutants, but RDR2 is mis-localized in Pol IV null mutants (Pontes et al., 2006), Pol IV has been thought to act first in the pathway, generating single-stranded RNAs that then serve as templates for second strand synthesis by RDR2 (Pikaard, 2006). Current models have also presumed that dsRNAs made by Pol IV and RDR2 are long, perfectly paired duplexes that can be diced into multiple siRNAs, as depicted in Figure 1.\n\nPol IV and RDR2 will synthesize short transcripts from oligonucleotide templates in vitro (Haag et al., 2012), but the sizes of transcripts they are capable of generating is unclear, in vitro or in vivo. Recently, Pol IV and RDR2-dependent transcripts that accumulate in vivo in dcl2 dcl3 dcl4 (dcl2/3/4) mutants were identified (Li et al., 2015). In that study, RNAs were fragmented prior to sequencing and short\u00a0sequence reads that overlapped\u00a0were then assembled, computationally, into longer contiguous sequences. These analyses led to the conclusion that Pol IV and RDR2 generate transcripts that can be many hundreds of nucleotides in length, and thus large enough to encode multiple siRNAs, as in current models. Here, we present RNA blot hybridization, deep sequencing, in vitro transcription and in vitro DCL3 dicing results that yield a different interpretation, showing that Pol IV and RDR2 primarily generate dsRNAs shorter than 45 nucleotides. Based on sequence alignments and sequence motifs shared by Pol IV/RDR2-dependent RNAs (P4R2 RNAs) and siRNAs, we propose that siRNAs are typically generated by a single internal DCL3 cleavage event whose position is measured from either end of a short P4R2 RNA.\n\n## Results\n\n### siRNA precursors accumulate in mutants defective for DCL3\n\nPreviously published RNA blot analyses have shown that in dcl3 null mutants, loss of 24 and 23 nt siRNAs is accompanied by accumulation of RNAs longer than 25 nt but typically shorter than 50 nt (Blevins et al., 2009; Daxinger et al., 2009; Henderson et al., 2006; Pontes et al., 2006). A prime example is the intergenic region that separates tandemly arranged 5S ribosomal RNA (5S rRNA) genes, where RNAs of \u223c26\u201345 nt accumulate in dcl3 null mutants (Figure 2A, lanes 3,5,7,8). These longer RNAs accumulate to their highest levels in dcl2/3/4 triple mutants, in which multiple siRNA processing pathways are impaired (Figure 2A, lane 8; see also [Henderson et al., 2006]). The longer RNAs that accumulate in dcl2/3/4 triple mutants fail to accumulate in the absence of Pol IV (nrpd1 subunit mutant) or RDR2 (lanes 9,10). This indicates that Pol IV and RDR2 are each required for the biogenesis of the longer RNAs, paralleling their requirement for 24 and 23 nt siRNA biogenesis (lanes 13,14). The longer RNAs (>25 nt) are also reduced in abundance if Pol V or AGO4 are mutated in the dcl2/3/4 triple mutant background (lanes 11,12), analogous to the degree to which siRNA levels are reduced, but not eliminated, in ago4 or pol V single mutants (lanes 15,16). These observations are consistent with Pol V and AGO4 being important, but not essential, for biogenesis of the majority of 23/24 nt siRNAs (Mosher et al., 2008; Pontier et al., 2005), most likely due to their roles in establishing or maintaining DNA and histone methylation marks that recruit Pol IV to its sites of action (Blevins et al., 2014; Law et al., 2013; Zhang et al., 2013).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/09591/elife-09591-fig2-v2.jpg)\n\n**Figure 2.:** (A)\u00a0The small RNA blot was successively hybridized to probes representing either strand of the siR1003 duplex, a small interfering RNA\u00a0(siRNA) that is derived from intergenic regions separating 5S ribosomal RNA\u00a0(rRNA) gene repeats (top two images), as well as to a trans-acting siRNA (ta-siR255) and a microRNA (miR160) probe. An image of the stained gel under fluorescent illumination (in the region that includes 5S rRNA and transfer RNAs\u00a0[tRNAs]) is shown at the bottom as a loading control. (B) RNA blot of small RNAs isolated from wild-type (ecotype Col-0) or dcl2 dcl3 dcl4\u00a0triple mutant (dcl2/3/4) plants, with or without prior treatment with ribonuclease V1 or ribonuclease A. The blot was hybridized to a probe designed to detect siR1003 \u2018sense\u2019, which arises from 5S rRNA gene intergenic spacers. (C) Dicing of precursor RNAs by DICER-like 3\u00a0(DCL3) in vitro. RNA isolated from wild-type (ecotype Col-0) or from dcl2/3/4 triple mutant plants was incubated with anti-FLAG resin that had been incubated with protein extraction buffer, a cell-free extract of wild-type (Col-0) plants, or a cell-free extract of transgenic plants expressing FLAG-tagged DCL3. RNAs were then purified, subjected to blotting and hybridized to the siR1003 \u2018sense\u2019 probe.\n\nPol IV and RDR2-dependent >25 nt RNAs (hereafter named P4R2 RNAs) hybridize to 5S gene intergenic region probes corresponding to either DNA strand, as do homologous siRNAs (Figure 2A; top two panels). Moreover, the P4R2 RNAs are more sensitive to ribonuclease V1, which preferentially degrades dsRNAs, than to ribonuclease A, which preferentially digests single-stranded RNAs (Figure 2B). Interestingly, 23 and 24 nt siRNA signals are reduced upon ribonuclease V1 digestion, yet are unaffected by ribonuclease A, suggesting that much of the siRNA pool exists in double-stranded form.\n\nWe next tested whether P4R2 RNAs that accumulate in dcl2/3/4 triple mutants are substrates for DCL3. In this experiment, RNA isolated from dcl2/3/4 triple mutant plants was incubated with FLAG-tagged DCL3 that had been affinity\u00a0purified from transgenic plants using anti-FLAG resin. In parallel control reactions, dcl2/3/4 RNA was incubated with anti-FLAG resin that had been incubated with a cell-free lysate of non-transgenic plants (ecotype Col-0), or with anti-FLAG resin in reaction buffer with no added proteins (Figure 2C). Incubation of RNA from dcl2/3/4 plants with affinity-purified FLAG-DCL3 resulted in the digestion of the >25 nt P4R2 RNAs into 24 nt RNA products (Figure 2C). By contrast, no digestion of the longer RNAs was observed in either control reaction. Collectively, the observations that P4R2 RNAs hybridize to probes representing both DNA strands, are sensitive to dsRNA-specific ribonuclease, and are processed into 24 nt RNAs by exogenous DCL3 supports the conclusion that P4R2 RNAs are the immediate precursors of 24 nt siRNAs in vivo.\n\n### Sequencing of P4R2 RNAs\n\nTo identify RNAs that accumulate when dicing is abrogated, we gel-purified \u223c15\u201390 nt RNAs from wild-type (Col-0), dcl2/3/4, pol IV (nrpd1 subunit null) or rdr2 mutants and conducted RNA sequencing (RNA-seq) analyses using Illumina deep sequencing technology, performing two biological replicates for each sample (see Tables 1 and 2 for sequencing and mapping statistics). In wild-type plants (ecotype Col-0), 24 and 23 nt siRNAs represent the most abundant small RNA class, as expected, outnumbering unique 21 nt small RNA species, which include miRNAs as well as siRNAs, by approximately 10-fold (Figure 3). In dcl2/3/4 triple mutants, the small RNA profile is substantially altered. Because DCL1-dependent 21 nt RNAs are unaffected, they become the most abundant small RNA class in dcl2/3/4 mutants. The dramatic loss of 23 and 24 nt siRNAs in dcl2/3/4 triple mutants coincides with the occurrence of longer RNAs, mostly smaller than 45 nucleotides and displaying a peak at \u223c30 nt (see also Figure 3). These genome-wide RNA-seq results correlate closely with the RNA blot hybridization results observed in Figure 2 at 5S rRNA gene loci. Indeed, a browser display of RNA-seq results focused on the region that corresponds to the 5S probes used for Figure 2 (siR1003) shows that\u00a0RNAs that accumulate in dcl2/3/4 mutants range in size from 26\u201342 nt, with a mean size of 30 nt (Figure 4). These >25 nt RNAs represent both DNA strands and overlap extensively with 24 and 23 nt siRNAs. We conclude that the >25 nt RNAs that accumulate in dcl2/3/4 triple mutants represent one or both strands of P4R2 duplex RNAs.\n\n**Table 1.**\n RNA sequencing statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Sample</th>\n      <th>Yield (Mb)</th>\n      <th>%PF</th>\n      <th>Cluster (PF)</th>\n      <th>Q30</th>\n      <th>Mean qual. (PF)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Col-0 (Rep 1)</td>\n      <td>2223</td>\n      <td>88.24</td>\n      <td>22,229,855</td>\n      <td>87.65</td>\n      <td>34.24</td>\n    </tr>\n    <tr>\n      <td>dcl2/3/4 (Rep 1)</td>\n      <td>2611</td>\n      <td>88.03</td>\n      <td>26,111,516</td>\n      <td>87.11</td>\n      <td>34.03</td>\n    </tr>\n    <tr>\n      <td>nrpd1-3 (Rep 1)</td>\n      <td>3220</td>\n      <td>89.06</td>\n      <td>32,204,710</td>\n      <td>89.20</td>\n      <td>34.75</td>\n    </tr>\n    <tr>\n      <td>rdr2-1 (Rep 1)</td>\n      <td>3500</td>\n      <td>88.60</td>\n      <td>34,995,990</td>\n      <td>87.89</td>\n      <td>34.33</td>\n    </tr>\n    <tr>\n      <td>Col-0 (Rep 2)</td>\n      <td>3345</td>\n      <td>88.36</td>\n      <td>33,446,115</td>\n      <td>87.87</td>\n      <td>34.32</td>\n    </tr>\n    <tr>\n      <td>dcl2/3/4 (Rep 2)</td>\n      <td>3029</td>\n      <td>88.27</td>\n      <td>30,291,115</td>\n      <td>88.49</td>\n      <td>34.50</td>\n    </tr>\n    <tr>\n      <td>nrpd1-3 (Rep 2)</td>\n      <td>3014</td>\n      <td>88.49</td>\n      <td>30,141,955</td>\n      <td>88.63</td>\n      <td>34.54</td>\n    </tr>\n    <tr>\n      <td>rdr2-1 (Rep 2)</td>\n      <td>3301</td>\n      <td>88.05</td>\n      <td>33,005,785</td>\n      <td>87.20</td>\n      <td>34.08</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n Mapping statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Sample</th>\n      <th>Total</th>\n      <th>Perfect match</th>\n      <th>%</th>\n      <th>Single mismatch</th>\n      <th>%</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Col-0 (Rep 1)</td>\n      <td>9,742,599</td>\n      <td>8,602,123</td>\n      <td>88.29</td>\n      <td>1,140,476</td>\n      <td>11.71</td>\n    </tr>\n    <tr>\n      <td>dcl2/3/4 (Rep 1)</td>\n      <td>8,440,663</td>\n      <td>7,179,444</td>\n      <td>85.06</td>\n      <td>1,261,219</td>\n      <td>14.94</td>\n    </tr>\n    <tr>\n      <td>nrpd1-3 (Rep 1)</td>\n      <td>8,966,872</td>\n      <td>7,799,160</td>\n      <td>86.98</td>\n      <td>1,167,712</td>\n      <td>13.02</td>\n    </tr>\n    <tr>\n      <td>rdr2-1 (Rep 1)</td>\n      <td>9,261,683</td>\n      <td>8,081,911</td>\n      <td>87.26</td>\n      <td>1,179,772</td>\n      <td>12.74</td>\n    </tr>\n    <tr>\n      <td>Col-0 (Rep 2)</td>\n      <td>13,955,193</td>\n      <td>12,179,431</td>\n      <td>87.28</td>\n      <td>1,775,762</td>\n      <td>12.72</td>\n    </tr>\n    <tr>\n      <td>dcl2/3/4 (Rep 2)</td>\n      <td>10,119,912</td>\n      <td>8,570,313</td>\n      <td>84.69</td>\n      <td>1,549,599</td>\n      <td>15.31</td>\n    </tr>\n    <tr>\n      <td>nrpd1-3 (Rep 2)</td>\n      <td>10,285,064</td>\n      <td>9,096,528</td>\n      <td>88.44</td>\n      <td>1,188,536</td>\n      <td>11.56</td>\n    </tr>\n    <tr>\n      <td>rdr2-1 (Rep 2)</td>\n      <td>9,970,701</td>\n      <td>8,793,492</td>\n      <td>88.19</td>\n      <td>1,177,209</td>\n      <td>11.81</td>\n    </tr>\n  </tbody>\n</table>\n\n![Figure 3.](https://cdn.elifesciences.org/articles/09591/elife-09591-fig3-v2.jpg)\n\n**Figure 3.:** The number of unique sequences starting at a given 5\u2019 terminal nucleotide (and represented by at least five reads after normalization and filtering) is plotted for RNAs in each size class. Color\u00a0coding in each bar depicts the relative proportions of RNA sequencing\u00a0(RNA-seq) reads that correspond to genes, intergenic regions, or transposable elements. Figure 3\u2014figure supplement 1 provides related data, showing the total numbers of unique 15\u201394 nt RNA\u00a0sequences (one or more copies) detected in wild-type or dcl2/3/4 mutants.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09591/elife-09591-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** RNAs representing a specific sequence and a particular strand polarity were counted only once, regardless of the actual abundance of RNA sequencing\u00a0(RNA-seq) reads for that sequence in the dataset. RNA-seq counts for wild-type are shown in blue. RNA-seq counts for dcl2 dcl3 dcl4 mutants are shown in orange. Overlapping read counts are shown in deep red.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/09591/elife-09591-fig4-v2.jpg)\n\n**Figure 4.:** An isolated 5S rRNA gene repeat (\u223c500 bp, gray horizontal bar with red transcript region) is shown within its 5 kb chromosomal context, flanked by two transposable elements, shown in yellow, and a pseudogene, shown in blue. Below the diagram, P4R2 RNAs are depicted as horizontal bars shown in shades of blue whereas 24 and 23 nt siRNAs are shown in shades of gray to black, with color intensity reflecting abundance (read counts are provided for several examples). Each bar represents a specific RNA sequence, with arrows depicting the RNA strand\u00a0orientation relative to the reference genome sequence (TAIR10). Dotted vertical lines provide alignments and show that the ends of highly abundant (>100 reads) siRNA species tend to coincide with the ends of P4R2 RNAs for which there is more than a single read.\n\nAlthough P4R2 RNAs accumulate to their highest levels in dcl2/3/4 triple mutants, as visualized in the RNA blots of Figure 2, they are also detected by RNA-seq in wild-type plants. Figure 5 shows browser views of three representative loci selected by virtue of having five or more identical reads for at least one P4R2 RNA mapping to the locus in the wild type (Col-0). Browser views of three additional loci are shown in\u00a0Figure 5\u2014figure supplement 1. In each case, P4R2 RNAs whose positions correspond closely to those of abundant 23 and 24 nt siRNAs (only 24 nt siRNAs are shown) are readily detected in dcl2/3/4 mutants and in Col-0, but are absent in pol IV or rdr2 null mutants, confirming a requirement for both Pol IV and RDR2 for P4R2 RNA biogenesis. Genome-wide, at least 5500 genomic intervals to which 24 nt siRNAs map have overlapping 26-94 nt P4R2 RNAs that are detectable in Col-0, and typically increase in abundance in dcl2/3/4 mutants, but are absent, or substantially reduced, in pol IV or rdr2 null mutants in one or both biological replicates (Supplementary file 1). Importantly, the number of mapped RNA-seq reads was similar for the Col-0, dcl2/3/4, pol IV and rdr2 RNA-seq datasets (see Table 2).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/09591/elife-09591-fig5-v2.jpg)\n\n**Figure 5.:** (A\u2013C)\u00a0Browser views of three 24 nt small interfering RNA (siRNA) loci at which abundant P4R2 RNAs that accumulate in dcl2 dcl3 dcl4 (dcl2/3/4) mutants are also observed in wild-type plants (Col-0) but not in nrpd1 (Pol IV) or rdr2 mutants. These examples are representative of a subset of loci selected by virtue of having five or more reads for at least one of the P4R2 species at the locus in wild-type (Col-0) plants. These loci tend to correspond to loci giving rise to abundant siRNAs. Vertical dotted lines provide alignments between abundant siRNAs and the P4R2 RNAs. P4R2 RNAs that are 40 nt or longer are shown in shades of pink. RNAs of 25-39 nt are shown in shades of blue. Browser views for three additional representative loci are shown in Figure 5\u2014figure supplement 1. Supplementary file 1 provides a table with coordinates for thousands of 100 bp genomic intervals in which 24 nt siRNA loci and putative P4R2 RNAs are detected in wild-type and dcl2/3/4, but are depleted in nrpd1 and rdr2 mutants.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09591/elife-09591-fig5-figsupp1-v2.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A\u2013C) Browser views of three additional 24 nt small interfering RNA\u00a0(siRNA) loci at which Pol IV/RDR2-dependent RNAs\u00a0(P4R2 RNAs) that accumulate in dcl2 dcl3 dcl4\u00a0(dcl2/3/4)\u00a0mutants are also observed in wild-type (Col-0) plants (with five or more reads for at least one P4R2 species)\u00a0but are not observed in nrpd1 polymerase\u00a0IV\u00a0(Pol IV) or rdr2 mutants.\n\nConsistent with the genome browser views of Figures 4 and 5, P4R2 RNAs that accumulate in dcl2/3/4 triple mutants show a high degree of correspondence to 24 and 23 nt siRNA sequences, genome-wide. To simplify the discussion we focus solely on 24 nt siRNAs. Ninety-six percent of P4R2 RNAs identified in dcl2/3/4 mutants fully encompass or overlap 24 nt siRNA sequences (Figure 6A). Among the P4R2 loci we identified are 20 of the 22 loci that Li et al. (Li et al., 2015) confirmed by reverse transcription-polymerase chain reaction to be capable of generating Pol IV and RDR2-dependent RNAs (Supplementary file 2).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/09591/elife-09591-fig6-v2.jpg)\n\n**Figure 6.:** (A) Correspondence between P4R2 RNA and siRNA loci. P4R2 RNAs were mapped to the Arabidopsis reference genome (TAIR10) and the frequency at which 24 nt siRNAs overlap these P4R2 genomic positions was calculated. To be considered for this analysis, specific siRNAs had to be represented by at least five reads in wild-type Col-0. Supplementary file 2 shows that P4R2 RNA loci include loci confirmed by Li et al., 2015 to\u00a0generate\u00a0Pol IV-dependent transcripts.\u00a0(B) P4R2 RNA and 24 nt siRNA spatial relationships. The top panel shows the frequency distribution of P4R2 RNA 5\u2019 end positions relative to siRNA 5\u2019 ends. At position zero on the x-axis, P4R2 RNAs and siRNAs share the same 5\u2019 terminus. Negative values indicate how far (in nucleotides) the 5\u2019 end of the P4R2 RNA is located upstream of an siRNA start position. Likewise, positive values indicate how far the 5\u2019 end of a P4R2 RNA is located downstream of an siRNA start position. The lower panel shows the frequency with which P4R2 RNAs and siRNAs align at 3\u2019 ends. At position zero on the x-axis, P4R2 RNAs and siRNAs share the same 3\u2019 terminus. Negative values occur when P4R2 RNAs end upstream of siRNA 3\u2019 ends, and positive values occur when P4R2 RNAs end downstream of siRNA 3\u2019 ends (computed using FEATnotator, v1.2.2, Podicheti and Mockaitis, 2015).\n\nWe next examined how P4R2 RNAs and their matching siRNAs align with one another. These analyses revealed that siRNAs typically correspond to either the extreme 5\u2019 end or 3\u2019 end of a P4R2 RNA (Figure 6B), with each of these scenarios represented by \u223c100,000 examples (see the peaks at offset position zero). This suggests that 24 nt siRNAs are most frequently generated by single internal dicing events, with the cut site measured from either end of a P4R2 precursor duplex. The slight skewing (non-symmetry beneath the peak) of the alignment profiles in Figure 6B indicates that siRNAs whose ends do not precisely coincide with the ends of P4R2 RNAs tend to be internal to P4R2 RNAs.\n\n### Consensus sequences of P4R2 RNAs and siRNAs\n\nTo further explore the observation that siRNAs are preferentially derived from the 5\u2019 or 3\u2019 ends of P4R2 RNAs, we searched for sequence motifs that might be common to the ends of P4R2 RNAs and siRNAs. Most 24 nt siRNAs begin with an adenosine (A) at the 5\u2019 end (Figure 7A), which has been thought to reflect the RNA binding specificity of AGO4 (Mi et al., 2008). By contrast, P4R2 RNAs show a strong preference for having a purine at their 5\u2019 ends, with A or G present at similar frequency (Figure 7A). Aside from this difference, the 5\u2019 ends of P4R2 RNAs and 24 nt siRNAs display intriguing similarities. In both cases, the purine at the 5\u2019 terminus is preferentially preceded by a T in the corresponding genomic sequence, and is preferentially followed by an A or U at the second position (Figure 7B, compare top two sequence logos).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/09591/elife-09591-fig7-v2.jpg)\n\n**Figure 7.:** (A) Frequencies at which the four nucleotides are present at the 5\u2019 terminus of 20\u201325 nt small RNAs in wild-type (Col-0) plants or at the 5\u2019 termini of P4R2 RNAs in dcl2 dcl3 dcl4 triple mutants (dcl2/3/4). Data for the subset of P4R2 RNAs in the peak size range of 26\u201332 nt is shown. (B) Sequence logos for chromosomal DNA sequences corresponding to all 24 nt siRNAs (in wild-type, Col-0), all P4R2 RNAs, P4R2 RNAs that begin with adenosine (5\u2019-A) or P4R2 RNAs that begin with guanosine (5\u2019-G). The P4R2 logos were generated using dcl2/3/4 triple mutant data. The logos include three nucleotides upstream and three nucleotides downstream of the chromosomal DNA sequences that match the RNAs. Each unique RNA sequence is represented only once in the input data. For reads mapping to multiple loci, upstream and downstream DNA sequences were obtained from one mapped site selected at random. Graphics were generated using WebLogo v2.8.2 (Crooks et al., 2004). Figure 7\u2014figure supplement 1 provides sequence logos for P4R2 RNAs of varying length, showing that consensus sequences are consistent among these RNAs.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09591/elife-09591-fig7-figsupp1-v2.jpg)\n\n**Figure 7\u2014figure supplement 1.:** P4R2 RNAs of discrete lengths (e.g., 26, 27, or 28 nt, etc.) were analyzed for potential consensus sequences, with results displayed as in Figure 7.\n\nAt their 3\u2019 ends, 24 nt siRNAs preferentially end with a uracil (U), with the order of nucleotide preference at this 3\u2019 terminal position being U >\u00a0C >\u00a0A. P4R2 RNAs also tend to end with U, but the order of nucleotide preference at their 3\u2019 termini is slightly different: U >\u00a0A >\u00a0C. Interestingly, a larger (but weak) consensus, ACU can be discerned at the 3\u2019 end of P4R2 RNAs (Figure 7B; compare top two sequence logos). These 5\u2019 and 3\u2019 consensus sequences, determined for P4R2 RNAs considered en masse, regardless of length, hold true for P4R2 RNAs of each length considered separately (see Figure 7\u2014figure supplement 1).\n\nWe next examined whether consensus sequences differ for P4R2 RNAs that begin with A versus those that begin with G at their 5\u2019 ends (Figure 7B; bottom two sequence logos). Interestingly, P4R2 RNAs that begin with A account for the weak 3\u2019 ACU consensus that is detected in analyses of total P4R2 RNAs. By contrast, P4R2 RNAs that begin with G lack the ACU signature, but instead show a preference for U >\u00a0C >\u00a0A at the 3\u2019 terminal position. Interestingly, U >\u00a0C >\u00a0A is the same nucleotide preference order observed at the 3\u2019 termini of 24 nt siRNAs. Collectively, these observations suggest that P4R2 RNAs that begin with A might tend to give rise to 24 nt siRNAs from their 5\u2019 ends, whereas P4R2 RNAs that begin with G might tend to give rise to 24 nt siRNAs from their 3\u2019 ends. It is noteworthy that P4R2 RNAs that begin with G show a strong tendency to end with U, such that the complementary strand (which can be considered the bottom strand) is expected to begin with A. Thus, it may be that DCL3 cutting of precursor duplexes preferentially takes place at a fixed distance from a 5\u2019 terminal adenosine present on either strand of the duplex. This hypothesis is consistent with in vitro data of Nagano et al. demonstrating that DCL3 preferentially cleaves dsRNAs with A or U at the 5\u2019 end (Nagano et al., 2014).\n\n### Pol IV transcripts synthesized in vitro resemble P4R2 RNAs\n\nPol IV, like Pol II, will initiate transcription from single-stranded oligonucleotide DNA templates in vitro (Haag et al., 2012). To assess the sizes of RNA transcripts that Pol IV is capable of making in vitro, as well as the possibility that Pol IV may initiate or terminate transcription with favored nucleotides, we used a 7249 nt single-stranded bacteriophage M13 genome as a DNA template and compared transcripts made by affinity-purified Pol IV or II (Figure 8). For this experiment, Pol IV and II were affinity\u00a0purified by virtue of FLAG epitope tags fused to the C-termini of their NRPD1 or NRPB2 subunits, respectively (Haag et al., 2012; Pontes et al., 2006; Ream et al., 2009). Previous immunoblot and mass spectrometry studies have shown that affinity-purified Pols II and IV are free of contaminating RNA polymerases (Haag et al., 2012; Ream et al., 2009). In the case of FLAG-tagged Pol IV, the NRPD1-FLAG transgene was expressed in an nrpd1 rdr2 null mutant background (Haag et al., 2012), precluding any potentially confounding results due to transcription by associated RDR2.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/09591/elife-09591-fig8-v2.jpg)\n\n**Figure 8.:** (A and B) Size and frequency of RNAs transcribed by polymerase\u00a0(Pol) IV or II in vitro. Pol IV and Pol\u00a0II\u00a0were affinity purified by virtue of FLAG epitope tags fused to the C-termini of the NRPD1 or NRPB2 subunits, respectively. In the case of Pol IV, the transgenic NRPD1-FLAG line is null for the endogenous NRPD1 and RDR2 genes, such that Pol IV is free of associated RDR2. Transcripts generated using closed-circular single-stranded M13 virus as the DNA template were subjected to RNA-seq. The frequency and sizes of mapped reads are plotted. (C and D) Sequence logos for the 5\u2019 and 3\u2019 ends of Pol IV and II in vitro transcripts. RNA-seq, RNA sequencing.\n\nRNA-seq analyses revealed that Pol IV and II each initiate transcription in a mostly unbiased manner with respect to position on the circular M13 genome, with Pol IV and II each initiating at more than 2000 positions. The size profiles of RNAs synthesized by Pol IV or II differ, with Pol IV transcripts having mean and median lengths of 44 and 37 nt, respectively, and Pol II transcripts having mean and median lengths of 85 and 68 nt (Figure 8A,B). The 5\u2019 ends of Pol IV and II transcripts are similar, each initiating with a purine just downstream of a pyrimidine, as is typical of DNA-dependent RNA polymerases (Figures 8C,D), but with Pol IV transcripts also displaying a tendency to have A or G at the +2 RNA position (Figures 8C). Interestingly, Pol IV transcripts in vitro tend to end with a C or U (T in the DNA), reminiscent of the tendency to have a U or C (but also A) at the 3\u2019 ends of P4R2 RNAs in vivo. But unlike P4R2 RNAs in vivo, Pol IV in vitro transcripts have a very strong preference for an A at the template position immediately downstream of the RNA 3\u2019 end (Figure 8C).\n\n### Unexpected 3\u2019 terminal nucleotides are sometimes found in P4R2 RNAs\n\nA genome browser view of P4R2 precursor RNAs aligned with 24 nt siRNAs at an AtSN1 retrotransposon located on chromosome 3, a target of RNA-directed DNA methylation we have examined in numerous previous studies (Blevins et al., 2014; Haag et al., 2009; Onodera et al., 2005; Ream et al., 2009; Tan et al., 2012; Wierzbicki et al., 2008, 2009), is shown in Figure 9A. In this case, RNA species that differ by one nucleotide are displayed separately, whereas in previous browser views (Figures 4 and 5), single-nucleotide mismatches were tolerated. Mismatched nucleotides are color\u00a0coded red (U; T in the context of DNA), green (A), tan (G) or blue (C) in Figure 9A. As is readily apparent, the 3\u2019 terminal nucleotide of P4R2 RNAs and 24 nt siRNAs sometimes does not match the expected sequence. Approximately 5% of all P4R2 RNAs have such 3\u2019 mismatched nucleotides. A graphical depiction of mismatch frequency at each nucleotide position for RNAs of discrete lengths, from 15 nt (top) to 76 nt (bottom), is shown in Figure 9B. To generate this plot, background mismatch/error levels (% of total reads containing a mismatch) observed at each position for each RNA size class in RNAs of wild-type plants were subtracted from the values obtained for RNAs of the same length in dcl2/3/4 triple mutants. The difference was then plotted, with the intensity of the color reflecting mismatch frequency. Only read sequences with single mismatches or perfect matches to the Arabidopsis genome were considered for this analysis. An enrichment of mismatched nucleotides at the 3\u2019 terminal position of 24 nt RNAs and at the 3\u2019 ends of RNAs longer than 26 nt is readily apparent, with the strongest signals observed among RNAs of 26\u201337 nt, closely matching the peak size distribution of P4R2 RNAs.\n\n![Figure 9.](https://cdn.elifesciences.org/articles/09591/elife-09591-fig9-v2.jpg)\n\n**Figure 9.:** (A) Genome browser view of P4R2 RNAs (shades of blue) and 24 nt small interfering RNA\u00a0(siRNAs) (shades of gray) at a representative locus, an AtSN1 retrotransposon on chromosome 3. Each horizontal bar represents a specific RNA sequence\u00a0(RNA-seq), with arrows depicting their direction relative to the Arabidopsis reference genome sequence (TAIR10). The intensity of shading reflects the abundance of each RNA species in the RNA-seq dataset. Brightly colored nucleotides, color\u00a0coded for A, G, C, or U (see inset), represent nucleotides that do not match the corresponding DNA sequence of the locus. The dotted line highlights the coincident 5\u2019 ends of the most abundant P4R2 RNAs at the locus (colored deep purple) and the most abundant siRNAs (colored black). (B) Heat map depicting the frequency of mismatched nucleotides at each position of RNAs ranging in size from 15 to 76 nt in dcl2 dcl3 dcl4 triple mutant plants. To correct for the frequency of errors inherent to sequencing, mismatch values for each position of 15\u201376 nt RNAs in wild-type plants were subtracted prior to plotting the data. Only read sequences with single mismatches or perfect matches to the reference genome were utilized for this analysis. (C) Over-expression and purification of recombinant RDR2. The image on the left shows a 7.5% sodium dodecyl sulfate-polyacrylamide gel electrophoresis(SDS-PAGE) gel, stained with Coomassie blue, showing molecular weight markers (M), proteins of un-infected High Five cells (lane 1), proteins of High Five cells 72\u00a0hr after infection with baculovirus expressing recombinant RNA-dependent RNA polymerase 2\u00a0(RDR2) (lane 2), and purified recombinant V5-tagged RDR2 after affinity purification and elution with V5 peptide. The image at right shows anti-RDR2 and anti-V5 immunoblots of the same three protein samples. For RDR2 detection, rabbit anti-RDR2 primary antibody was used in conjunction with donkey anti-rabbit HRP-conjugated secondary antibody. Detection of V5-tagged RDR2 involved anti-V5 HRP conjugate antibody. (D) RDR2 terminal transferase activity. Recombinant RDR2 or an active-site mutant form of RDR2 (RDR2-ASM) was incubated with alpha-labeled 32P-CTP and 51 nt RNA substrates bearing 3\u2019 hydroxyl or 3\u2019 dideoxy termini. Reaction products were subjected to denaturing polyacrylamide gel electrophoresis (PAGE) and autoradiography. For gel lane 4, reaction products were treated with RNase One, which degrades single-stranded RNAs, prior to PAGE. RNA size markers were run in lane M. The 51 nt RNA template, 5\u2019 end-labeled using T4 polynucleotide kinase, was run as a size marker in the lane at far right.\n\n### RDR2 has terminal transferase activity\n\nWe overproduced full-length recombinant RDR2 (recRDR2) by expressing the protein in insect cells using a baculovirus vector system (Figure 9C). As shown in Figure 9D, RDR2 has terminal transferase activity. In the experiment shown, a 51 nt RNA was incubated with recRDR2 and radioactive, alpha-labeled 32P-CTP, but no other nucleoside\u00a0triphosphates. RDR2 catalyzes the addition of one or two non-templated radioactive cytosines to the 3\u2019 end of the RNA (Figure 9D, lane 2). This 3\u2019 end-labeling fails to occur using an active site mutant version of RDR2 (RDR2-ASM), in which the magnesium-binding aspartates of the catalytic center have been changed to alanines (lane 3). Labeling also fails to occur if the 3\u2019 terminal nucleotide of the RNA substrate lacks a 3\u2019 hydroxyl group on the ribose, but instead has a 2\u2019, 3\u2019-dideoxy ribose (lane 5). The end-label added by RDR2 is sensitive to RNase 1, indicating that labeling occurs in the context of single-stranded RNA (lane 4). Analogous terminal transferase activity has not been detected in Pol IV fractions. Collectively, these results suggest that the 3\u2019 mismatches observed at low frequency among P4R2 RNAs might be telltale signs of RDR2 terminal transferase activity, potentially acting on completed Pol IV transcripts, RDR2 transcripts, or both.\n\n## Discussion\n\nA recent study reported the identification of Pol IV and RDR2-dependent RNAs whose characteristics included a 5\u2019-monophosphate group, a correspondence to known 24 nt siRNA-producing loci and accumulation in dcl2/3/4 triple mutants (Li et al., 2015). These transcripts were deduced to be hundreds of nucleotides in length, on average, based on the computational joining of overlapping\u00a0RNA-seq reads (Li et al., 2015). In general, the P4R2 RNAs we identified have similar properties to the RNAs defined by Li et al., with 20 of the 22 loci scrutinized most carefully by Li et al. matching P4R2 RNAs from our study. Thus, our results extend the results of Li et al., but indicate that the vast majority of Pol IV and RDR2-dependent RNAs are smaller than 45 nt (see Figure 3). Dozens of P4R2 RNAs can overlap at a given locus, as shown in Figures 4 and 5, but we conclude that individual P4R2 RNAs represent individual Pol IV-RDR2 transcription units.\n\nOur data indicate that the short double-stranded P4R2 RNAs that accumulate in dcl3 mutants are the immediate precursors of siRNAs, based on the ability of DCL3 to cut these precursors into 24 nt RNAs in vitro. These results are consistent with those of Nagano et al., who showed that DCL3 preferentially cleaves short synthetic dsRNAs of 30\u201350 nt, but not longer RNAs (Nagano et al., 2014). Our analyses indicate that 24 nt siRNAs are preferentially generated from the 5\u2019 or 3\u2019 ends of P4R2 RNAs, suggesting that P4R2 duplex RNAs can be diced from either end, also in agreement with Nagano et al.\u2019s studies. Generation of siRNAs from the ends of P4R2 RNAs, rather than from internal sequences, leads to the prediction that each P4R2 RNA sequence has limited capacity to specify multiple alternative siRNAs. Thus, the multitude of unique 24 nt siRNA sequences present in wild-type cells can be expected to be derived from a similarly large number of P4R2 precursors, depending on whether one or both strands of diced duplexes are utilized as siRNAs. Consistent with this prediction, our sequenced datasets included 1,055,471 unique 23 or 24 nt siRNA sequences (in wild-type plants) and 933,453 unique P4R2 RNAs of 26\u201394 nt (in dcl2/3/4 triple mutants).\n\nAn expectation is that if Pol IV generates single-stranded RNAs that serve as templates for RDR2, these transcripts would accumulate in an rdr2 mutant and be detectable on RNA blots using sense or antisense probes that detect abundant siRNAs (such as the 5S gene intergenic spacer siRNAs). Alternatively, if RDR2 were to act upstream of Pol IV, which is contrary to current models, but a formal possibility, one might similarly expect to detect RDR2 transcripts in a pol IV mutant. However, our RNA blot results (Figure 2) defy these predictions, as do the RNA-seq data for pol IV and rdr2 mutants. Instead, precursors are depleted if either RDR2 or Pol IV is absent. This suggests that Pol IV and RDR2 are each required for the synthesis of both strands of P4R2 RNA duplexes, as was also noted by Li et al. (Li et al., 2015), which fits with the physical association of Pol IV and RDR2 and the hypothesis that the two enzymes function as a complex (Haag et al., 2012; Law et al., 2011). We have shown previously that RDR2 activity detected in vitro using affinity-purified Pol IV\u2013RDR2 complexes from wild-type plants is not apparent using RDR2 affinity\u00a0purified from a pol IV mutant (Haag et al., 2012). Although Pol IV isolated from an rdr2 null mutant is active in vitro (Figure 8; see also [Haag et al., 2012]), it is possible that Pol IV may require RDR2 association for activity in vivo.\n\nAn important ramification of Pol IV and RDR2 co-dependence is that it is unclear if\u00a0the P4R2 RNAs we cloned and sequenced in our study represent Pol IV transcripts, RDR2 transcripts, or both. Although we detect P4R2 RNAs corresponding to both strands at many (but not all) loci, as can be seen in the browser displays of Figures 4, 5 and 9A, these could be transcripts of only Pol IV or, conversely, only RDR2. Sequences enriched at the ends of P4R2 RNAs preclude easy assignment of which polymerase generated them. For instance, P4R2 RNAs tend to begin with a purine and end with a pyrimidine such that the complementary strands should also be enriched for purines at the 5\u2019 end and pyrimidines at the 3\u2019 end. The terminal transferase activity inherent to RDR2 provides a plausible explanation for mismatched, untemplated nucleotides at the 3\u2019 ends of some (\u223c5%) P4R2 RNAs, but this activity could modify completed RNA transcripts made by Pol IV, RDR2, or both. Despite these uncertainties, P4R2 RNAs preferentially begin with a purine that, in the context of the genome sequence, tends to occur immediately downstream of a pyrimidine (in the equivalent DNA strand). This pyrimidine\u2013purine rule is a characteristic of DNA-dependent RNA polymerases, in general, and has a structural basis that involves base-stacking interactions between the initiating (+1) RNA nucleotide (a purine) and \u22121 DNA template nucleotide (also a purine), in addition to the base-pairing that occurs between the +1\u00a0RNA and +1 DNA template\u00a0bases (Basu et al., 2014). The pyrimidine\u2013purine rule has been shown to apply to protein-coding genes throughout the Arabidopsis genome (Cumbie et al., 2015), to Arabidopsis pre-rRNAs transcribed by multisubunit RNA Pol I (these initiate with an A downstream of a T; Doelling et al., 1993) and to 5S genes transcribed by RNA polymerase III (initiating with a G downstream of a T). Our in vitro transcription studies using affinity-purified Pol IV or Pol II also recapitulate the pyrimidine\u2013purine rule. Moreover, Pol IV generates relatively short RNAs in vitro, with size distributions and 3\u2019 ends resembling those of P4R2 RNAs. Collectively, these observations suggest that P4R2 RNA biogenesis is initiated by Pol IV, as depicted in Figure 10, with limited processivity of Pol IV accounting for the relatively short size of P4R2 RNAs. In our model, designed to account for the consensus sequences of P4R2 RNAs and 24 nt siRNAs (refer to Figure 7), Pol IV generates first strands that initiate with a purine. Those RNAs that initiate with A best account for siRNA 5\u2019 end sequences, whereas RNAs that initiate with G best account for siRNA 3\u2019 end sequences, suggesting that resulting duplexes, following second strand synthesis by RDR2, are diced from opposite ends. Because first strand RNAs that begin with G tend to end with U, their complementary strands would tend to begin with A. Thus dicing measured from a 5\u2019 adenosine might be a preference underlying the alternative dicing of P4R2 duplexes from either end.\n\n![Figure 10.](https://cdn.elifesciences.org/articles/09591/elife-09591-fig10-v2.jpg)\n\n**Figure 10.:** Pol IV/RDR2-dependent RNAs (P4R2 RNAs) tend to begin with a purine (A or G) at position 1, adjacent to what would be a T at position \u22121 in the corresponding DNA strand and an A (or U) at position 2. A similar signature is detected at the 5\u2019 end of 24 nt siRNAs (see Figure 7), except that only A (not G) is enriched at the 5\u2019 terminus of these siRNAs. Thus, DICER-like 3\u00a0(DCL3) cleavage measured from the 5\u2019 adenosine of those P4R2 RNAs that begin with A could account for the similar 5\u2019 end sequences of P4R2 RNAs and 24 nt siRNAs. P4R2 RNAs that begin with A tend to end with ACU, which is not reflected in siRNAs. However, P4R2 RNAs that begin with G tend to end with a 3\u2019 U, with U >\u00a0C >\u00a0A being the order of preference, which matches the 3\u2019 end consensus for 24 nt siRNAs. Because P4R2 RNAs that begin with G most often end with U, their complementary strands (purple bottom strands in the figure) would tend to have A at their 5\u2019 ends. DCL3 dicing, measured from this 5\u2019 A, would liberate a top strand (red in the figure) whose 3\u2019 end could account for the 3\u2019 consensus (U >\u00a0C >\u00a0A) of 24 nt siRNAs.\n\n## Materials and methods\n\n### Plant materials\n\nThe A. thaliana mutants rdr2-1, nrpd1-3 (pol IV) and nrpe1-11 (pol V) were described in Xie et al., 2004; Onodera et al., 2005; and Pontes et al., 2006 respectively. A line homozygous for ago4-7\u00a0was selected from seed obtained from the Arabidopsis Biological Resource Center (stock ID: SALK_095100). The single mutants dcl2-5, dcl3-1, and dcl4-2; double mutants dcl2-5 dcl3-1 (dcl2/3), dcl2-5 dcl4-2 (dcl2/4) and dcl3-1 dcl4-2 (dcl3/4); and the triple mutant dcl2-5 dcl3-1 dcl4-2 (dcl2/3/4) were described in\u00a0(Blevins et al., 2006). Genetic crosses between dcl2/3/4 and above-mentioned single mutants were performed to generate the quadruple mutants: rdr2-1 dcl2-5 dcl3-1 dcl4-2, nrpd1-3 dcl2-5 dcl3-1 dcl4-2, nrpe1-11 dcl2-5 dcl3-1 dcl4-2 and ago4-7 dcl2-5 dcl3-1 dcl4-2. A transgenic plant line in which the dcl3-1 mutant was complemented by a full-length DCL3 genomic clone engineered to possess a FLAG epitope tag at the C terminus (pEarleyGate 302-gDCL3-FLAG) was previously described (Pontes et al. 2006).\n\n### RNA blot hybridization\n\nTotal RNA (\u223c100 \u03bcg) was extracted from leaves of 2-week-old plants using TRIzol (ThermoFisher Scientific, Grand Island, NY) and then size-fractionated on RNeasy Mini Columns (Qiagen, Valencia, CA) as in Blevins et al. (2006). The low-molecular-weight RNA fraction was then separated on a 16% polyacrylamide gel and transferred to a nylon membrane by electroblotting. Different 32P-end-labeled DNA oligonucleotides were used for successive hybridizations: the probe for \u2018siR1003 sense\u2019 was 5\u2019-ATG CCT ATG TTG GCC TCA CGG TCT-3\u2019, for \u2018siR1003 antisense\u2019 was 5\u2019- AGA CCG TGA GGC CAA CAT AGG CAT-3\u2019, for \u2018ta-siR255\u2019 was 5\u2019-TAC GCT ATG TTG GAC TTA GAA-3\u2019 and for \u2018miR160\u2019 was 5\u2019-TGG CAT ACA GGG AGC CAG GCA-3\u2019. Size standards were synthetic RNA oligonucleotides of 15, 21, 24, 30, and 50 nt lengths. Three- to five-day exposures of the blot were scanned on a Typhoon 9210 phosphorimager system (GE Healthcare, Pittsburgh, PA).\n\n### RNA sequencing\n\nCustom libraries for \u223c15\u201390 nt RNAs were constructed and sequenced by Fasteris SA (http://www.fasteris.com/). In brief, 5 \u00b5g total RNA was subjected to 15% denaturing polyacrylamide gel electrophoresis. The desired RNA size-range was excised and eluted, and 3\u2019 and 5\u2019 adapters were added according to the ligation-based Illumina small RNA-seq protocol. Sequencing by synthesis (1\u00a0\u00d7\u00a0100) was performed on an Illumina HiSeq 2500 (Illumina, San Diego, CA) instrument following manufacturer\u2019s recommendations (TruSeq SBS Kit v3;\u00a0Illumina, San Diego, CA). Basecalling was performed using the HiSeq Control Software (v2.0.10.0), RTA (v1.17.21.3) and CASAVA (v1.8.2). Insert lengths ranged from 15-94 nt following adapter sequence removal. RNA-seq statistics are provided in Table 1.\n\nTwo independent replicates (Rep 1 and Rep 2) for RNA samples of four different genotypes were barcoded and sequenced on a single HiSeq 2500 instrument. Yield (Mb) is the total number of sequenced bases.\u00a0%PF (% passed filter) indicates the percentage of clusters (sequenced polynucleotides) that fulfill default Illumina quality criteria; Cluster (PF) indicates the number of such clusters. Q30 is the percentage of bases detected with a quality score greater or equal to 30. Mean quality is the average of quality scores for all called bases.\n\n### Bioinformatic analyses\n\nIllumina sequence reads were mapped to the A. thaliana Col-0 reference genome (TAIR10) using Bowtie v0.12.8 (Langmead et al., 2009). End-to-end best hits were reported allowing a maximum of one mismatch per read and up to 50 genomic mappings (for reads with multiple best hits). Reads corresponding to 45S rRNA gene arrays, chloroplast transcripts or mitochondrial transcripts were excluded at this stage. For each RNA size class and genomic position, the number of reads mapped with coinciding 5' ends, oriented in the same direction was estimated. Read counts were then normalized by dividing by the total count of mapped reads for the sample and multiplying by the maximum total read count across all samples. For subsequent genomic analyses tRNAs, small nuclear RNAs\u00a0(snRNAs) and small nucleolar RNAs\u00a0(snoRNAs) were excluded from datasets based on their TAIR10 annotation coordinates. Diagrams of P4R2 RNA and siRNA spatial relationships were produced using FEATnotator v1.2.2 (Podicheti and Mockaitis, 2015). Sequence logos were generated with WebLogo v2.8.2 (Crooks et al., 2004).\n\nRNA-seq reads of \u223c15\u201394 nt (after adapter trimming) were mapped to the Arabidopsis thaliana genome (version TAIR10) using Bowtie v0.12.8. The total number of reads used for analyses in the paper, which includes reads with 100% match to the genome or reads with a maximum of one mismatch, are provided.\n\n### Accession numbers\n\nRNA-seq data for the eight libraries generated in this study (Blevins et al., 2015) are available from the National Center for Biotechnology Information Sequence Read Archive (http://trace.ncbi.nlm.nih.gov/Traces/sra/?study=SRP059814)\n\n### Protein immunoprecipitation\n\nProtein extraction and affinity immunoprecipitation were performed as in (Haag et al., 2012). Frozen leaves (4.0 g) were ground in liquid nitrogen, homogenized in extraction buffer (300 mM NaCl, 20 mM Tris-HCl pH 7.5, 5 mM MgCl2, 5 mM dithiothreitol [DTT], 1 mM phenylmethylsulfonyl fluoride [PMSF] and 1:200 plant protease inhibitor cocktail [Sigma]), filtered through two layers of Miracloth (Calbiochem, San Diego, CA), and centrifuged to pellet cellular debris. Supernatants were incubated with 25 \u03bcL anti-FLAG-M2 resin (Sigma, St. Louis, MO) for 3 hr at 4\u00b0C on a rotating mixer. Resin was recovered and washed three times with extraction buffer supplemented with 0.5% NP-40.\n\n### DCL3 activity assay\n\nTotal RNA (\u223c360 \u03bcg) was extracted from wild-type (Col-0) or dcl2/3/4 triple mutant inflorescence tissue and size-fractionated (see 'RNA blot hybridization') to obtain substrates for DCL3 activity assays. Low-molecular-weight RNA was divided into 12-\u03bcg aliquots, which were then mixed with: protein extraction buffer (buffer control), FLAG-resin previously incubated with Col-0 protein extract (wild-type/resin control), or FLAG-resin previously incubated with cell-free extract from transgenic plants expressing the DCL3\u2013FLAG protein (the DCL3 assay). These mixtures were then incubated at 30\u00b0C for 3 hr in dsRNA cleavage buffer (50 mM NaCl, 500 \u03bcM adenosine triphosphatase, 100 \u03bcM guanosine triphosphatase, 12.5 mM creatine phosphate, 0.2 U/\u03bcl creatine kinase, 600 \u03bcM MgCl2, 0.4 U/\u03bcl RNaseOUT). RNA products were isolated from the reactions by phenol\u2013chloroform extraction, and then precipitated by addition of 2 \u03bcl GlycoBlue (Life Technologies) and two volumes ethanol, followed by centrifugation. The precipitated RNA was washed twice in 75% ethanol, resuspended in loading buffer and analyzed by RNA blot hybridization.\n\n### Pol II and IV immunoprecipitation\n\nPols II and IV were immunoprecipitated from transgenic lines expressing NRPB2-FLAG or NRPD1-FLAG, respectively, as described previously (Haag et al., 2012). Briefly, 1\u00a0g of NRPB2-FLAG transgenic line leaf tissue or 4\u00a0g of NRPD1-FLAG transgenic line leaf tissue (for Pol IV) was ground to a powder in liquid nitrogen using a mortar and pestle and then resuspended in 3.5 ml extraction buffer (20 mM Tris-HCl, pH 7.6, 300 mM sodium sulfate, 5 mM magnesium sulfate, 5 mM DTT, 1 mM PMSF, 1% plant protease inhibitor cocktail [Sigma]) per gram of tissue. The resulting lysate was subjected to centrifugation at 16,000 \u00d7\u00a0g for 15 min at 4\u00b0C and the supernatant was subjected to centrifugation again using the same conditions. 50 \u03bcl of anti-FLAG agarose resin was then added to the supernatant and incubated 3 hr at 4\u00b0C on a rotating mixer. The resin was collected by centrifugation at 200 \u00d7\u00a0g for 2 min and the supernatant was discarded. Resin was washed twice with wash buffer (20 mM Tris-HCl, pH 7.6, 300 mM sodium sulfate, 5 mM magnesium sulfate, 5 mM DTT, 1 mM PMSF, 0.5% IGEPAL) and once with CB100 (25 mM HEPES-KOH pH 7.9, 20% glycerol, 100 mM KCL, 1 mM DTT, 1 mM PMSF). Between each wash, the resin was collected by centrifugation at 200 \u00d7\u00a0g for 2 min and the supernatant was discarded. For Pol II, the washed NRPB2-FLAG resin was resuspended in a final volume of 1ml CB100 buffer. For Pol IV, the washed NRPD1-FLAG resin was brought to a final volume of 50 \u03bcl CB100.\n\n### In vitro transcription assays\n\n50 \u03bcl of washed NRPB2-FLAG or NRPD1-FLAG resin was mixed with 50 \u03bcl of 2\u00a0\u00d7 transcription reaction mix (18 nM M13mp18 template [Bayou Biolabs, Metairie, LA],\u00a02 mM each rNTP, 120 mM ammonium sulfate, 40 mM HEPES-KOH pH 7.9, 24 mM magnesium sulfate, 20 uM zinc sulfate, 20 mM DTT, 20% glycerol, 1.6 U/ul RNase inhibitor) and incubated at room temperature for 1 hr on a rotating mixer. Reactions were subjected to centrifugation through Performa spin columns (EdgeBiosystems, Gaitherburg, MD), the filtrate was adjusted to 0.3M sodium acetate, and nucleic acids were precipitated with isopropanol. The pellets were resuspended in 8 \u03bcl water and DNase-treated using Turbo DNA-free kit reagent (ThermoFisher Scientific, Grand Island, NY). The samples were then treated with Terminator exonuclease (Epicentre Biotechnologies, Madison, WI) to remove potentially degraded RNAs with 5\u2019 monophosphates, cleaned with RNA Clean and Concentrator kit (Zymo Research, Irvine, CA), and then treated with RNA 5\u2019 Polyphosphatase (Epicentre Biotechnologies) to convert 5\u2019 triphosphate groups to monophosphates. All enzyme treatments were performed according to the manufacturer\u2019s protocols. Adapter ligation and library construction was performed using a TruSeq small RNA kit (Illumina). Paired-end sequencing was conducted using an Illumina MiSeq instrument. Paired reads were mapped to the M13 sequence using default settings of BWA (Li and Durbin, 2009) for Illumina. Insert sizes were calculated using the CollectInsertSizeMetrics Picard tool. BWA and Picard tools were accessed via The Galaxy Project public server (UseGalaxy.org).\n\n### Over-expression and purification of RDR2\n\nRecRDR2 was overexpressed in insect cells using the BaculoDirect\u00a0baculovirus protein expression system (Thermo Fisher Scientific, Grand Island, NY). RDR2 cDNA, amplified by PCR using primers 5\u2019-CACCATGGTGTCAGAGACGACGACGAAC-3\u2019 and 5\u2019-TCAAATGGATACAAGTCCACTTGTTTT-3\u2019, was cloned into pENTR and recombined into the baculovirus vector using LR clonase. The resulting baculovirus vector was transfected into Sf9 insect cells and recombinant virus was harvested according to the instructions of the manufacturer. RecRDR2 was purified from High Five cells infected with the recombinant virus and lysed in a buffer containing 50 mM HEPES-KOH (pH 7.5), 400 mM KCl, 5 mM DTT, 1 mM PMSF, 5 mM benzamidine-HCl and 10% glycerol. The lysate was subjected to centrifugation at 39,000 \u00d7g for 30 min at 4\u00b0C. Anti-V5 agarose beads were used to selectively bind rec_RDR2 in the cleared lysate. The beads were collected by centrifugation at 170 \u00d7\u00a0g for 5 min, washed 3 times with the same buffer, and eluted using V5 peptide in a buffer containing 50 mM HEPES-KOH (pH 7.5), 100 mM NaCl, 0.01% of NP-40 and 10% glycerol. The protein was concentrated and washed by buffer exchange using a Centricon column.\n\n### RDR2 terminal transferase assay\n\nRDR2 terminal transferase assays were performed according to (Curaba and Chen, 2008) with some modifications. RDR2 or RDR2-ASM (\u223c250 ng) was added to activity buffer containing 20 mM HEPES-KOH (pH 7.5), 0.2 mCi/ml \u03b1-32P-CTP, 5 mM MgCl2, 5 mM DTT, 0.8 U/\u00b5l RNaseOUT and 1 \u00b5M of RNA template in a 50 \u00b5l reaction and incubated at room temperature (\u223c24\u00b0C) for 60 min. Reactions were terminated by adding 10 mM ethylenediaminetetraacetic acid and then a clean-up step was performed using EdgeBio Performa (EdgeBiosystems, Gaithersburg, MD) spin columns. RNA products were ethanol precipitated and separated on a denaturing 15% polyacrylamide gel. The gel was transferred on Whatman 3MM filter paper and dried under vacuum at 80\u00b0C prior to phosphorimaging. The RNase treatment assay was conducted using a 20 \u00b5l RDR2 reaction with 0.05 U/\u00b5l of RNase ONE in 1\u00a0\u00d7 reaction buffer. The reaction was incubated at 37\u00b0C for 30 min and terminated by 0.2% SDS .\n",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "3ff3e098-cbb2-487c-99db-5296991d4f5a",
+      "submission_id": "af597978-1f34-416c-ada8-363ecd315129",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Daniel Zilberman, University of California, Berkeley , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.09591.038](https://doi.org/10.7554/eLife.09591.038)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \"Identification of Pol IV and RDR2-dependent precursors of 24 nt siRNAs guiding de novo DNA methylation in Arabidopsis\" for peer review at eLife. Your submission has been evaluated by Jim Kadonaga (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. The reviewers feel the discovery that RNA Pol IV creates short transcripts is of major interest, as it substantially alters the existing model of RNA-directed DNA methylation. However, the reviewers expressed substantial concerns regarding the strength of the proof that the short RNA molecules described in the manuscript represent primary Pol IV transcripts.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nEssential revisions:\n\n1) The evidence that short RNA molecules depend on Pol IV and RDR2 is provided for only one locus. This is insufficient evidence to claim that all such RNAs are made by Pol IV instead of Pol II or Pol V. Please provide additional evidence for Pol IV dependence, such as additional Northern blots or sequencing RNAs from POL IV dcl234 mutants. Depending on the strength of the additional evidence, the \"P4R2\" nomenclature may have to be reconsidered.\n\n2) The data presented do not exclude the possibility that short RNAs are processed from longer primary Pol IV transcripts. Given the central conclusion of the paper, please strengthen the evidence that primary Pol IV transcripts are indeed short. This might be done through analysis of nascent transcripts, expanding the analysis that links short RNAs to Pol II consensus start sites that is briefly presented in the discussion, or through other approaches. Depending on the strength of the additional evidence, the authors may need to discuss the possibility that longer Pol IV transcripts are processed into the detected short molecules.\n\n3) The data regarding Pol V dependence may be confusing by suggesting that all short RNAs depend on Pol V, whereas this is probably not the case. This could be resolved by probing the Northern for loci that do not depend on Pol V for 24-nt sRNA production (in conjunction with addressing point 1) or by a clear explanation in the text.\n\n4) For the DCL3 in vitro assay, please include a time zero control to ensure that there were indeed larger RNAs present in the extracts from the dcl234 mutant plants that are processed by the Flag tagged DCL3 protein.\n\n5) Please include information describing RDR2 expression and purification and remove the \"data not shown\" parts of the Results and Discussion.\n\n6) The treatment of sRNA phasing is confusing. A new analysis is referenced in the Introduction, and lack of phasing could easily result from random Pol IV initiation or DCL3 cleavage. Please present the phasing analysis in the Results and consider discussing its significance in the Discussion section.\n\n7) Please provide significance information (P values) of the motifs or the parameters used to identify the motifs presented in the manuscript.\n\n8) Please define the \"R\" lane in Figure 6C.\n",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "9623ba44-8508-47f9-ab50-bff0129fab8e",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C1",
+      "claim": "In Arabidopsis thaliana, abundant 24 nucleotide small interfering RNAs (24 nt siRNA) guide the cytosine methylation and silencing of transposons and a subset of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In Arabidopsis thaliana, abundant 24 nucleotide small interfering RNAs (24 nt siRNA) guide the cytosine methylation and silencing of transposons and a subset of genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the function of 24 nt siRNAs in Arabidopsis, drawing on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "0764f93e-544f-4dcd-97c9-79f328c23003",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C2",
+      "claim": "24 nt siRNA biogenesis requires nuclear RNA polymerase IV (Pol IV), RNA-dependent RNA polymerase 2 (RDR2) and DICER-like 3 (DCL3).",
+      "claim_type": "EXPLICIT",
+      "source": "24 nt siRNA biogenesis requires nuclear RNA polymerase IV (Pol IV), RNA-dependent RNA polymerase 2 (RDR2) and DICER-like 3 (DCL3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge in the field and is presented as a known fact.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "117bc47c-59c5-4617-859f-473769883161",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C3",
+      "claim": "P4R2 RNAs are mostly 26-45 nt in length.",
+      "claim_type": "EXPLICIT",
+      "source": "P4R2 RNAs are mostly 26-45 nt",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA sequencing data showing size distributions of P4R2 RNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "dc55d022-d661-4dc9-b563-f8f9a78580bd",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C4",
+      "claim": "P4R2 RNAs initiate with a purine adjacent to a pyrimidine.",
+      "claim_type": "EXPLICIT",
+      "source": "P4R2 RNAs are mostly 26-45 nt and initiate with a purine adjacent to a pyrimidine",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence analysis data showing nucleotide preferences at the 5' ends of P4R2 RNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "7c7f68f3-f549-4ad5-99f9-4cb178536056",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C5",
+      "claim": "Pol IV transcripts generated in vitro share characteristics with P4R2 RNAs, including initiation with a purine adjacent to a pyrimidine.",
+      "claim_type": "EXPLICIT",
+      "source": "P4R2 RNAs are mostly 26-45 nt and initiate with a purine adjacent to a pyrimidine, characteristics shared by Pol IV transcripts generated in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro transcription experiments with purified Pol IV.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "b4be9a7b-0417-4ae2-a679-74a1fcc95b5a",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C6",
+      "claim": "RDR2 has terminal transferase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "RDR2 terminal transferase activity, also demonstrated in vitro",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by in vitro biochemical assays with recombinant RDR2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "b221ee9e-bcbe-4508-b1b9-fff15a964613",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C7",
+      "claim": "RDR2 terminal transferase activity may account for occasional non-templated nucleotides at P4R2 RNA 3' termini.",
+      "claim_type": "EXPLICIT",
+      "source": "RDR2 terminal transferase activity, also demonstrated in vitro, may account for occasional non-templated nucleotides at P4R2 RNA 3' termini.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation connecting the observed terminal transferase activity to the observed 3' mismatches in P4R2 RNAs.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "6121a0c3-7a4a-414d-b14b-6e323dd07b63",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C8",
+      "claim": "The 24 nt siRNAs primarily correspond to the 5' or 3' ends of P4R2 RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "The 24 nt siRNAs primarily correspond to the 5' or 3' ends of P4R2 RNAs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by alignment analysis of siRNA and P4R2 RNA sequences.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "3f2a4f22-8b1a-406d-8d97-e328cf8ef5a5",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C9",
+      "claim": "siRNAs are generated from either end of P4R2 duplexes by single dicing events.",
+      "claim_type": "EXPLICIT",
+      "source": "The 24 nt siRNAs primarily correspond to the 5' or 3' ends of P4R2 RNAs, suggesting a model whereby siRNAs are generated from either end of P4R2 duplexes by single dicing events.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on the alignment data showing siRNAs at the ends of P4R2 RNAs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "c143bf8a-e622-44c1-93eb-285fbed02bd5",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C10",
+      "claim": "Approximately 4000\u20138000 loci in Arabidopsis thaliana give rise to clusters of 24 nt siRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 4000\u20138000 loci in Arabidopsis thaliana give rise to clusters of 24 nt siRNAs, collectively accounting for more than 90% of the total small RNA pool (Law et al., 2013; Mosher et al., 2008; Zhang et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "8523fd10-4fec-4af3-8728-2e6fcc4e9e39",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C11",
+      "claim": "24 nt siRNAs collectively account for more than 90% of the total small RNA pool in Arabidopsis.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 4000\u20138000 loci in Arabidopsis thaliana give rise to clusters of 24 nt siRNAs, collectively accounting for more than 90% of the total small RNA pool (Law et al., 2013; Mosher et al., 2008; Zhang et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "af449a8a-7a54-461b-9777-2b9f26415b86",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C12",
+      "claim": "Pol IV and RDR2 physically associate in Arabidopsis and maize.",
+      "claim_type": "EXPLICIT",
+      "source": "Pol IV and RDR2 are each essential for the biogenesis of 24 nt siRNAs and they physically associate in Arabidopsis and maize (Haag et al., 2012, 2014; Law et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "f6d23ec3-3d5d-4a12-8afe-fb3bd0eaba58",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C13",
+      "claim": "Pol IV and RDR2 are each essential for the biogenesis of 24 nt siRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Pol IV and RDR2 are each essential for the biogenesis of 24 nt siRNAs and they physically associate in Arabidopsis and maize (Haag et al., 2012, 2014; Law et al., 2011)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies and is consistent with the genetic data presented in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "14279ac5-6a52-442a-a687-77ce2894cd20",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C14",
+      "claim": "Pol V is not required for siRNA biogenesis at most loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Pol V is not required for siRNA biogenesis at most loci (Mosher et al., 2008)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "1e244c74-b907-4e3c-a0b6-cca3c280e05c",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C15",
+      "claim": "Pol V generates non-coding RNAs to which siRNA-AGO4 complexes bind.",
+      "claim_type": "EXPLICIT",
+      "source": "Pol V is not required for siRNA biogenesis at most loci (Mosher et al., 2008) but generates non-coding RNAs to which siRNA-AGO4 complexes bind (Wierzbicki et al., 2008; 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "3a76b0fa-565e-411b-a640-ef6e5947979d",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C16",
+      "claim": "The C-terminal domain of the Pol V largest subunit interacts with AGO4.",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminal domain of the Pol V largest subunit also interacts with AGO4 (El-Shami et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "3ee1e216-27e3-4ae6-8f26-253fee60fb33",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C17",
+      "claim": "Pol IV localization is unaffected in rdr2 null mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Because Pol IV localization is unaffected in rdr2 null mutants, but RDR2 is mis-localized in Pol IV null mutants (Pontes et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "df01a9f6-f114-4a21-8a25-00ed62ab56bc",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C18",
+      "claim": "RDR2 is mis-localized in Pol IV null mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Because Pol IV localization is unaffected in rdr2 null mutants, but RDR2 is mis-localized in Pol IV null mutants (Pontes et al., 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "885c24db-eafc-48be-a1e2-529cb40ae76f",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C19",
+      "claim": "Pol IV has been thought to act first in the pathway, generating single-stranded RNAs that serve as templates for second strand synthesis by RDR2.",
+      "claim_type": "EXPLICIT",
+      "source": "Because Pol IV localization is unaffected in rdr2 null mutants, but RDR2 is mis-localized in Pol IV null mutants (Pontes et al., 2006), Pol IV has been thought to act first in the pathway, generating single-stranded RNAs that then serve as templates for second strand synthesis by RDR2 (Pikaard, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model based on previous observations and citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "dd7aa2f5-c70a-4937-bcca-dd950d1dd7ac",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C20",
+      "claim": "Pol IV and RDR2 will synthesize short transcripts from oligonucleotide templates in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Pol IV and RDR2 will synthesize short transcripts from oligonucleotide templates in vitro (Haag et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "8ca04f61-66f2-4423-af80-09cd761884c6",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C21",
+      "claim": "In dcl3 null mutants, loss of 24 and 23 nt siRNAs is accompanied by accumulation of RNAs longer than 25 nt but typically shorter than 50 nt.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously published RNA blot analyses have shown that in dcl3 null mutants, loss of 24 and 23 nt siRNAs is accompanied by accumulation of RNAs longer than 25 nt but typically shorter than 50 nt (Blevins et al., 2009; Daxinger et al., 2009; Henderson et al., 2006; Pontes et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies and is confirmed by data in Figure 2A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "a18fa3f4-167b-4242-ae3c-027e81385356",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C22",
+      "claim": "RNAs of approximately 26\u201345 nt accumulate in dcl3 null mutants at the intergenic region that separates tandemly arranged 5S ribosomal RNA genes.",
+      "claim_type": "EXPLICIT",
+      "source": "A prime example is the intergenic region that separates tandemly arranged 5S ribosomal RNA (5S rRNA) genes, where RNAs of \u223c26\u201345 nt accumulate in dcl3 null mutants (Figure 2A, lanes 3,5,7,8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA blot data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "7f2ed043-1cb2-4ab9-9ae3-d5f044746ebc",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C23",
+      "claim": "Longer RNAs accumulate to their highest levels in dcl2/3/4 triple mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "These longer RNAs accumulate to their highest levels in dcl2/3/4 triple mutants, in which multiple siRNA processing pathways are impaired (Figure 2A, lane 8; see also [Henderson et al., 2006]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA blot data in Figure 2A and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "cf3c070e-1f53-4113-ae51-fbadcf773666",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C24",
+      "claim": "The longer RNAs that accumulate in dcl2/3/4 triple mutants fail to accumulate in the absence of Pol IV or RDR2.",
+      "claim_type": "EXPLICIT",
+      "source": "The longer RNAs that accumulate in dcl2/3/4 triple mutants fail to accumulate in the absence of Pol IV (nrpd1 subunit mutant) or RDR2 (lanes 9,10).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA blot data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "8b5c3826-a567-45c5-8288-e1ff289531e9",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C25",
+      "claim": "Pol IV and RDR2 are each required for the biogenesis of the longer RNAs that accumulate in dcl2/3/4 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that Pol IV and RDR2 are each required for the biogenesis of the longer RNAs, paralleling their requirement for 24 and 23 nt siRNA biogenesis (lanes 13,14).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the RNA blot data in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "4c25d91d-6235-4cea-b6df-3db06b4b429a",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C26",
+      "claim": "The longer RNAs (>25 nt) are reduced in abundance if Pol V or AGO4 are mutated in the dcl2/3/4 triple mutant background.",
+      "claim_type": "EXPLICIT",
+      "source": "The longer RNAs (>25 nt) are also reduced in abundance if Pol V or AGO4 are mutated in the dcl2/3/4 triple mutant background (lanes 11,12)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA blot data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "b909f946-f7b6-4559-869a-a5084adbe06c",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C27",
+      "claim": "Pol V and AGO4 are important, but not essential, for biogenesis of the majority of 23/24 nt siRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are consistent with Pol V and AGO4 being important, but not essential, for biogenesis of the majority of 23/24 nt siRNAs (Mosher et al., 2008; Pontier et al., 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "5fbdf9a8-8ea7-4ddd-899d-b2fc9ba3cd46",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C28",
+      "claim": "Pol V and AGO4 play roles in establishing or maintaining DNA and histone methylation marks that recruit Pol IV to its sites of action.",
+      "claim_type": "EXPLICIT",
+      "source": "These observations are consistent with Pol V and AGO4 being important, but not essential, for biogenesis of the majority of 23/24 nt siRNAs (Mosher et al., 2008; Pontier et al., 2005), most likely due to their roles in establishing or maintaining DNA and histone methylation marks that recruit Pol IV to its sites of action (Blevins et al., 2014; Law et al., 2013; Zhang et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "141a65f9-03d5-4a43-b583-f0b2825b2212",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C29",
+      "claim": "P4R2 RNAs hybridize to 5S gene intergenic region probes corresponding to either DNA strand.",
+      "claim_type": "EXPLICIT",
+      "source": "Pol IV and RDR2-dependent >25 nt RNAs (hereafter named P4R2 RNAs) hybridize to 5S gene intergenic region probes corresponding to either DNA strand, as do homologous siRNAs (Figure 2A; top two panels).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA blot data in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "2a7aa12e-3a1c-4c86-a47c-d22b058378bb",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C30",
+      "claim": "P4R2 RNAs are more sensitive to ribonuclease V1 than to ribonuclease A.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the P4R2 RNAs are more sensitive to ribonuclease V1, which preferentially degrades dsRNAs, than to ribonuclease A, which preferentially digests single-stranded RNAs (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nuclease sensitivity assay data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "30d6903e-c528-4cb8-9251-6eafb4c9ce0e",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C31",
+      "claim": "23 and 24 nt siRNAs are reduced upon ribonuclease V1 digestion, yet are unaffected by ribonuclease A.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, 23 and 24 nt siRNA signals are reduced upon ribonuclease V1 digestion, yet are unaffected by ribonuclease A, suggesting that much of the siRNA pool exists in double-stranded form.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nuclease sensitivity assay data in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "ad41a57c-e452-4d0a-9318-aec7bb1f6ae2",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C32",
+      "claim": "Much of the siRNA pool exists in double-stranded form.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, 23 and 24 nt siRNA signals are reduced upon ribonuclease V1 digestion, yet are unaffected by ribonuclease A, suggesting that much of the siRNA pool exists in double-stranded form.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the nuclease sensitivity data in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "a0042497-0455-4ace-9e4d-91f5c78bb172",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C33",
+      "claim": "Incubation of RNA from dcl2/3/4 plants with affinity-purified FLAG-DCL3 results in the digestion of the >25 nt P4R2 RNAs into 24 nt RNA products.",
+      "claim_type": "EXPLICIT",
+      "source": "Incubation of RNA from dcl2/3/4 plants with affinity-purified FLAG-DCL3 resulted in the digestion of the >25 nt P4R2 RNAs into 24 nt RNA products (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro dicing assay data in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "543dd8e7-9624-4af0-8b33-d4c6d688701b",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C34",
+      "claim": "P4R2 RNAs are the immediate precursors of 24 nt siRNAs in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, the observations that P4R2 RNAs hybridize to probes representing both DNA strands, are sensitive to dsRNA-specific ribonuclease, and are processed into 24 nt RNAs by exogenous DCL3 supports the conclusion that P4R2 RNAs are the immediate precursors of 24 nt siRNAs in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on multiple lines of experimental evidence presented in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "4262c9ad-c234-4759-a576-27fd61f5cdee",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C35",
+      "claim": "In wild-type plants, 24 and 23 nt siRNAs represent the most abundant small RNA class.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type plants (ecotype Col-0), 24 and 23 nt siRNAs represent the most abundant small RNA class, as expected, outnumbering unique 21 nt small RNA species, which include miRNAs as well as siRNAs, by approximately 10-fold (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "f79ee9b0-8912-49fd-bf1f-eb0d71a24f5c",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C36",
+      "claim": "24 and 23 nt siRNAs outnumber unique 21 nt small RNA species by approximately 10-fold in wild-type plants.",
+      "claim_type": "EXPLICIT",
+      "source": "In wild-type plants (ecotype Col-0), 24 and 23 nt siRNAs represent the most abundant small RNA class, as expected, outnumbering unique 21 nt small RNA species, which include miRNAs as well as siRNAs, by approximately 10-fold (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "608a0654-1a2e-4993-b535-8a01c8400a6b",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C37",
+      "claim": "In dcl2/3/4 triple mutants, DCL1-dependent 21 nt RNAs become the most abundant small RNA class.",
+      "claim_type": "EXPLICIT",
+      "source": "In dcl2/3/4 triple mutants, the small RNA profile is substantially altered. Because DCL1-dependent 21 nt RNAs are unaffected, they become the most abundant small RNA class in dcl2/3/4 mutants.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "1349310e-8d69-464e-8084-f4cf8e3c6e4b",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C38",
+      "claim": "The dramatic loss of 23 and 24 nt siRNAs in dcl2/3/4 triple mutants coincides with the occurrence of longer RNAs, mostly smaller than 45 nucleotides and displaying a peak at approximately 30 nt.",
+      "claim_type": "EXPLICIT",
+      "source": "The dramatic loss of 23 and 24 nt siRNAs in dcl2/3/4 triple mutants coincides with the occurrence of longer RNAs, mostly smaller than 45 nucleotides and displaying a peak at \u223c30 nt (see also Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "472d11ea-340b-4d71-8c1b-56ebf7925c13",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C39",
+      "claim": "RNAs that accumulate in dcl2/3/4 mutants at the 5S rRNA gene loci range in size from 26\u201342 nt, with a mean size of 30 nt.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a browser display of RNA-seq results focused on the region that corresponds to the 5S probes used for Figure 2 (siR1003) shows that RNAs that accumulate in dcl2/3/4 mutants range in size from 26\u201342 nt, with a mean size of 30 nt (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "1fe70c5a-350c-479f-a58f-dfb72d8b6f24",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C40",
+      "claim": "The >25 nt RNAs that accumulate in dcl2/3/4 mutants represent both DNA strands and overlap extensively with 24 and 23 nt siRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "These >25 nt RNAs represent both DNA strands and overlap extensively with 24 and 23 nt siRNAs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA-seq data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "10fad1fc-1860-4313-968c-97743dd2ed21",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C41",
+      "claim": "The >25 nt RNAs that accumulate in dcl2/3/4 triple mutants represent one or both strands of P4R2 duplex RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the >25 nt RNAs that accumulate in dcl2/3/4 triple mutants represent one or both strands of P4R2 duplex RNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the RNA-seq data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "8eaa1730-2b09-41a8-a6f5-807a7ee009e3",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C42",
+      "claim": "At least 5500 genomic intervals to which 24 nt siRNAs map have overlapping 26-94 nt P4R2 RNAs that are detectable in Col-0.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide, at least 5500 genomic intervals to which 24 nt siRNAs map have overlapping 26-94 nt P4R2 RNAs that are detectable in Col-0, and typically increase in abundance in dcl2/3/4 mutants, but are absent, or substantially reduced, in pol IV or rdr2 null mutants in one or both biological replicates (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genome-wide RNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "9ad693df-92c2-4ee7-9e4c-73cb8b26923f",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C43",
+      "claim": "P4R2 RNAs typically increase in abundance in dcl2/3/4 mutants compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide, at least 5500 genomic intervals to which 24 nt siRNAs map have overlapping 26-94 nt P4R2 RNAs that are detectable in Col-0, and typically increase in abundance in dcl2/3/4 mutants, but are absent, or substantially reduced, in pol IV or rdr2 null mutants in one or both biological replicates (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genome-wide RNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "0ed4e011-ea68-442b-9670-5a850f006fb9",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C44",
+      "claim": "P4R2 RNAs are absent or substantially reduced in pol IV or rdr2 null mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide, at least 5500 genomic intervals to which 24 nt siRNAs map have overlapping 26-94 nt P4R2 RNAs that are detectable in Col-0, and typically increase in abundance in dcl2/3/4 mutants, but are absent, or substantially reduced, in pol IV or rdr2 null mutants in one or both biological replicates (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by genome-wide RNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "9186ad33-1a17-4c77-a4ae-241237391d85",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C45",
+      "claim": "Ninety-six percent of P4R2 RNAs identified in dcl2/3/4 mutants fully encompass or overlap 24 nt siRNA sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Ninety-six percent of P4R2 RNAs identified in dcl2/3/4 mutants fully encompass or overlap 24 nt siRNA sequences (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by alignment analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "581adaa7-f499-40ba-93e2-68e353154690",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C46",
+      "claim": "P4R2 RNA loci include 20 of the 22 loci that Li et al. confirmed by reverse transcription-polymerase chain reaction to be capable of generating Pol IV and RDR2-dependent RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the P4R2 loci we identified are 20 of the 22 loci that Li et al. (Li et al., 2015) confirmed by reverse transcription-polymerase chain reaction to be capable of generating Pol IV and RDR2-dependent RNAs (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with data from Li et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "e1a5b113-7fa1-46df-915d-aff8557ddc5a",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C47",
+      "claim": "siRNAs typically correspond to either the extreme 5' end or 3' end of a P4R2 RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "We next examined how P4R2 RNAs and their matching siRNAs align with one another. These analyses revealed that siRNAs typically correspond to either the extreme 5' end or 3' end of a P4R2 RNA (Figure 6B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by alignment analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "e2169fb4-4f39-4b78-9cd7-f78342af6b88",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C48",
+      "claim": "24 nt siRNAs are most frequently generated by single internal dicing events, with the cut site measured from either end of a P4R2 precursor duplex.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that 24 nt siRNAs are most frequently generated by single internal dicing events, with the cut site measured from either end of a P4R2 precursor duplex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the alignment data in Figure 6B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "0572c80c-0701-4027-8b35-eebe1bb24761",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C49",
+      "claim": "Most 24 nt siRNAs begin with an adenosine (A) at the 5' end.",
+      "claim_type": "EXPLICIT",
+      "source": "Most 24 nt siRNAs begin with an adenosine (A) at the 5' end (Figure 7A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nucleotide frequency analysis shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "ad6666d6-56fe-477a-b2f9-fd32011e4443",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C50",
+      "claim": "The 5' adenosine preference of 24 nt siRNAs has been thought to reflect the RNA binding specificity of AGO4.",
+      "claim_type": "EXPLICIT",
+      "source": "Most 24 nt siRNAs begin with an adenosine (A) at the 5' end (Figure 7A), which has been thought to reflect the RNA binding specificity of AGO4 (Mi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation based on a citation to a previous study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "f68289b7-8cfa-4a30-ac61-10325b399e69",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C51",
+      "claim": "P4R2 RNAs show a strong preference for having a purine at their 5' ends, with A or G present at similar frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, P4R2 RNAs show a strong preference for having a purine at their 5' ends, with A or G present at similar frequency (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by nucleotide frequency analysis shown in Figure 7A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "afddee40-692b-4def-98b7-661e5b8c0aa2",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C52",
+      "claim": "The purine at the 5' terminus of P4R2 RNAs and 24 nt siRNAs is preferentially preceded by a T in the corresponding genomic sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, the purine at the 5' terminus is preferentially preceded by a T in the corresponding genomic sequence, and is preferentially followed by an A or U at the second position (Figure 7B, compare top two sequence logos).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence logo analysis shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "047de681-f933-4c58-accb-bdb264925311",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C53",
+      "claim": "The purine at the 5' terminus of P4R2 RNAs and 24 nt siRNAs is preferentially followed by an A or U at the second position.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases, the purine at the 5' terminus is preferentially preceded by a T in the corresponding genomic sequence, and is preferentially followed by an A or U at the second position (Figure 7B, compare top two sequence logos).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence logo analysis shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "b68f7c65-4dd6-4e90-b2fd-33deba11d6bb",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C54",
+      "claim": "24 nt siRNAs preferentially end with a uracil (U) at their 3' ends.",
+      "claim_type": "EXPLICIT",
+      "source": "At their 3' ends, 24 nt siRNAs preferentially end with a uracil (U), with the order of nucleotide preference at this 3' terminal position being U > C > A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence analysis of siRNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "08006cc3-4429-4e47-afdb-f0ada3680c9b",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C55",
+      "claim": "P4R2 RNAs tend to end with U, with the order of nucleotide preference at their 3' termini being U > A > C.",
+      "claim_type": "EXPLICIT",
+      "source": "P4R2 RNAs also tend to end with U, but the order of nucleotide preference at their 3' termini is slightly different: U > A > C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence analysis of P4R2 RNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "2755538e-ccde-48ba-9140-d900611c989a",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C56",
+      "claim": "A weak ACU consensus can be discerned at the 3' end of P4R2 RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a larger (but weak) consensus, ACU can be discerned at the 3' end of P4R2 RNAs (Figure 7B; compare top two sequence logos).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence logo analysis shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "61570f9b-249f-47be-91bc-232367b53070",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C57",
+      "claim": "P4R2 RNAs that begin with A account for the weak 3' ACU consensus detected in analyses of total P4R2 RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, P4R2 RNAs that begin with A account for the weak 3' ACU consensus that is detected in analyses of total P4R2 RNAs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence logo analysis shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "02451379-0d1a-43c1-8f9f-e44792f788cd",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C58",
+      "claim": "P4R2 RNAs that begin with G lack the ACU signature, but instead show a preference for U > C > A at the 3' terminal position.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, P4R2 RNAs that begin with G lack the ACU signature, but instead show a preference for U > C > A at the 3' terminal position.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence logo analysis shown in Figure 7B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "c5f0987c-35c5-4baf-97a1-30a7fcb79992",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C59",
+      "claim": "P4R2 RNAs that begin with A might tend to give rise to 24 nt siRNAs from their 5' ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these observations suggest that P4R2 RNAs that begin with A might tend to give rise to 24 nt siRNAs from their 5' ends, whereas P4R2 RNAs that begin with G might tend to give rise to 24 nt siRNAs from their 3' ends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the sequence analysis data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "a363ce75-6e3c-4b62-bf13-09b94ecc8b44",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C60",
+      "claim": "P4R2 RNAs that begin with G might tend to give rise to 24 nt siRNAs from their 3' ends.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these observations suggest that P4R2 RNAs that begin with A might tend to give rise to 24 nt siRNAs from their 5' ends, whereas P4R2 RNAs that begin with G might tend to give rise to 24 nt siRNAs from their 3' ends.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the sequence analysis data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "0015792f-8915-46f4-a237-77af7aac09e8",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C61",
+      "claim": "P4R2 RNAs that begin with G show a strong tendency to end with U.",
+      "claim_type": "EXPLICIT",
+      "source": "It is noteworthy that P4R2 RNAs that begin with G show a strong tendency to end with U, such that the complementary strand (which can be considered the bottom strand) is expected to begin with A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence analysis of P4R2 RNAs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "e6c05f7d-dd7d-4738-934e-06b9a9dfd7eb",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C62",
+      "claim": "DCL3 cutting of precursor duplexes may preferentially take place at a fixed distance from a 5' terminal adenosine present on either strand of the duplex.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it may be that DCL3 cutting of precursor duplexes preferentially takes place at a fixed distance from a 5' terminal adenosine present on either strand of the duplex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative hypothesis based on the sequence analysis data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "54a403aa-27b2-4d07-9591-48ca68b36967",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C63",
+      "claim": "DCL3 preferentially cleaves dsRNAs with A or U at the 5' end.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis is consistent with in vitro data of Nagano et al. demonstrating that DCL3 preferentially cleaves dsRNAs with A or U at the 5' end (Nagano et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "865def31-d388-40c0-9b76-9a0706101fc2",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C64",
+      "claim": "Pol IV transcripts synthesized in vitro have mean and median lengths of 44 and 37 nt, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The size profiles of RNAs synthesized by Pol IV or II differ, with Pol IV transcripts having mean and median lengths of 44 and 37 nt, respectively",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro transcription data shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "5ae96654-cf34-4bfe-9c02-273720bc2c09",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C65",
+      "claim": "Pol II transcripts synthesized in vitro have mean and median lengths of 85 and 68 nt.",
+      "claim_type": "EXPLICIT",
+      "source": "The size profiles of RNAs synthesized by Pol IV or II differ, with Pol IV transcripts having mean and median lengths of 44 and 37 nt, respectively, and Pol II transcripts having mean and median lengths of 85 and 68 nt (Figure 8A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro transcription data shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "b4355974-0c7d-4e5d-a55d-e64249ef4f11",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C66",
+      "claim": "Pol IV and II each initiate transcription in a mostly unbiased manner with respect to position on the circular M13 genome.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-seq analyses revealed that Pol IV and II each initiate transcription in a mostly unbiased manner with respect to position on the circular M13 genome, with Pol IV and II each initiating at more than 2000 positions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro transcription and RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "b7031857-49db-40ae-8b0c-9c47db39ecea",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C67",
+      "claim": "Pol IV and II each initiate at more than 2000 positions on the M13 genome in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA-seq analyses revealed that Pol IV and II each initiate transcription in a mostly unbiased manner with respect to position on the circular M13 genome, with Pol IV and II each initiating at more than 2000 positions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro transcription and RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "9ee29e85-7397-4c49-b81e-99b869bc731f",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C68",
+      "claim": "The 5' ends of Pol IV and II transcripts are similar, each initiating with a purine just downstream of a pyrimidine.",
+      "claim_type": "EXPLICIT",
+      "source": "The 5' ends of Pol IV and II transcripts are similar, each initiating with a purine just downstream of a pyrimidine, as is typical of DNA-dependent RNA polymerases (Figures 8C,D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence logo analysis of in vitro transcripts shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "d491855f-a93d-407e-805c-1a32a6c419bf",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C69",
+      "claim": "Pol IV transcripts in vitro display a tendency to have A or G at the +2 RNA position.",
+      "claim_type": "EXPLICIT",
+      "source": "The 5' ends of Pol IV and II transcripts are similar, each initiating with a purine just downstream of a pyrimidine, as is typical of DNA-dependent RNA polymerases (Figures 8C,D), but with Pol IV transcripts also displaying a tendency to have A or G at the +2 RNA position (Figures 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence logo analysis of in vitro transcripts shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "b2d53080-6267-4712-9e8a-3fae845d2088",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C70",
+      "claim": "Pol IV transcripts in vitro tend to end with a C or U.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, Pol IV transcripts in vitro tend to end with a C or U (T in the DNA), reminiscent of the tendency to have a U or C (but also A) at the 3' ends of P4R2 RNAs in vivo.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence logo analysis of in vitro transcripts shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "fb9b6be2-dec2-4db2-9ca0-2e1017f7a824",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C71",
+      "claim": "Pol IV in vitro transcripts have a very strong preference for an A at the template position immediately downstream of the RNA 3' end.",
+      "claim_type": "EXPLICIT",
+      "source": "But unlike P4R2 RNAs in vivo, Pol IV in vitro transcripts have a very strong preference for an A at the template position immediately downstream of the RNA 3' end (Figure 8C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence logo analysis of in vitro transcripts shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "7ef2d10b-d2dc-4810-a7e2-c89f02f0dbc8",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C72",
+      "claim": "Approximately 5% of all P4R2 RNAs have 3' mismatched nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 5% of all P4R2 RNAs have such 3' mismatched nucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by analysis of RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "56a8865d-d022-4734-8792-6b374900daac",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C73",
+      "claim": "An enrichment of mismatched nucleotides at the 3' terminal position of 24 nt RNAs and at the 3' ends of RNAs longer than 26 nt is observed in dcl2/3/4 mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "An enrichment of mismatched nucleotides at the 3' terminal position of 24 nt RNAs and at the 3' ends of RNAs longer than 26 nt is readily apparent, with the strongest signals observed among RNAs of 26\u201337 nt, closely matching the peak size distribution of P4R2 RNAs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mismatch frequency analysis shown in Figure 9B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "8f691caf-cfb8-4025-9b19-fdb19151ddc2",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C74",
+      "claim": "RDR2 catalyzes the addition of one or two non-templated radioactive cytosines to the 3' end of RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "RDR2 catalyzes the addition of one or two non-templated radioactive cytosines to the 3' end of the RNA (Figure 9D, lane 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro terminal transferase assay data shown in Figure 9D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "66b7dea8-af41-49f0-baa7-025069d20929",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C75",
+      "claim": "3' end-labeling by RDR2 fails to occur using an active site mutant version of RDR2.",
+      "claim_type": "EXPLICIT",
+      "source": "This 3' end-labeling fails to occur using an active site mutant version of RDR2 (RDR2-ASM), in which the magnesium-binding aspartates of the catalytic center have been changed to alanines (lane 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro terminal transferase assay data shown in Figure 9D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "64aa6eeb-5e60-408e-9144-d921a78653f6",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C76",
+      "claim": "RDR2 labeling fails to occur if the 3' terminal nucleotide of the RNA substrate lacks a 3' hydroxyl group.",
+      "claim_type": "EXPLICIT",
+      "source": "Labeling also fails to occur if the 3' terminal nucleotide of the RNA substrate lacks a 3' hydroxyl group on the ribose, but instead has a 2', 3'-dideoxy ribose (lane 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro terminal transferase assay data shown in Figure 9D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "ec18c71c-1c0f-41f2-97d0-915a005e85a3",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C77",
+      "claim": "The end-label added by RDR2 is sensitive to RNase 1, indicating that labeling occurs in the context of single-stranded RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The end-label added by RDR2 is sensitive to RNase 1, indicating that labeling occurs in the context of single-stranded RNA (lane 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro terminal transferase assay data shown in Figure 9D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "f08245ea-569c-4f67-bddc-2139aa5c0c5a",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C78",
+      "claim": "Terminal transferase activity has not been detected in Pol IV fractions.",
+      "claim_type": "EXPLICIT",
+      "source": "Analogous terminal transferase activity has not been detected in Pol IV fractions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the absence of observed activity in Pol IV preparations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "67204547-5c99-41c8-b505-13117d0e63a6",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C79",
+      "claim": "The 3' mismatches observed at low frequency among P4R2 RNAs might be telltale signs of RDR2 terminal transferase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results suggest that the 3' mismatches observed at low frequency among P4R2 RNAs might be telltale signs of RDR2 terminal transferase activity, potentially acting on completed Pol IV transcripts, RDR2 transcripts, or both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation connecting the observed terminal transferase activity to the 3' mismatches in P4R2 RNAs.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "c0cb30cc-b66c-4259-a0df-5855da5f43df",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C80",
+      "claim": "The P4R2 RNAs identified in this study have similar properties to the RNAs defined by Li et al., 2015.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the P4R2 RNAs we identified have similar properties to the RNAs defined by Li et al., with 20 of the 22 loci scrutinized most carefully by Li et al. matching P4R2 RNAs from our study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with results from a previous study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "ef2c2cc3-9bb3-4d2b-9cde-2c027102f8c3",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C81",
+      "claim": "The vast majority of Pol IV and RDR2-dependent RNAs are smaller than 45 nt.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our results extend the results of Li et al., but indicate that the vast majority of Pol IV and RDR2-dependent RNAs are smaller than 45 nt (see Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on RNA-seq data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "61b5186f-b23c-4adb-9a91-b211651a6579",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C82",
+      "claim": "Individual P4R2 RNAs represent individual Pol IV-RDR2 transcription units.",
+      "claim_type": "EXPLICIT",
+      "source": "Dozens of P4R2 RNAs can overlap at a given locus, as shown in Figures 4 and 5, but we conclude that individual P4R2 RNAs represent individual Pol IV-RDR2 transcription units.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the RNA-seq data and analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "014a4847-f119-446f-9ec5-ed0510fc9a33",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C83",
+      "claim": "DCL3 preferentially cleaves short synthetic dsRNAs of 30\u201350 nt, but not longer RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with those of Nagano et al., who showed that DCL3 preferentially cleaves short synthetic dsRNAs of 30\u201350 nt, but not longer RNAs (Nagano et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "67307562-70ae-4c15-9a12-b546c336c3e1",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C84",
+      "claim": "24 nt siRNAs are preferentially generated from the 5' or 3' ends of P4R2 RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analyses indicate that 24 nt siRNAs are preferentially generated from the 5' or 3' ends of P4R2 RNAs, suggesting that P4R2 duplex RNAs can be diced from either end, also in agreement with Nagano et al.'s studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by alignment analysis and is consistent with previous studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "8e79e5d2-3cff-4306-8dc8-dec2b63a97af",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C85",
+      "claim": "Each P4R2 RNA sequence has limited capacity to specify multiple alternative siRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Generation of siRNAs from the ends of P4R2 RNAs, rather than from internal sequences, leads to the prediction that each P4R2 RNA sequence has limited capacity to specify multiple alternative siRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observation that siRNAs are generated from the ends of P4R2 RNAs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "2e488daf-8589-4ee0-98d1-e90471b1f385",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C86",
+      "claim": "The multitude of unique 24 nt siRNA sequences present in wild-type cells can be expected to be derived from a similarly large number of P4R2 precursors.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the multitude of unique 24 nt siRNA sequences present in wild-type cells can be expected to be derived from a similarly large number of P4R2 precursors, depending on whether one or both strands of diced duplexes are utilized as siRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the limited capacity of each P4R2 RNA to generate siRNAs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "06691542-1701-45ca-9ada-d89f1bdcd53d",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C87",
+      "claim": "The sequenced datasets included 1,055,471 unique 23 or 24 nt siRNA sequences in wild-type plants.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this prediction, our sequenced datasets included 1,055,471 unique 23 or 24 nt siRNA sequences (in wild-type plants) and 933,453 unique P4R2 RNAs of 26\u201394 nt (in dcl2/3/4 triple mutants).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a count from the RNA-seq datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "ab6a1520-3512-4621-bc17-99ae9a37d589",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C88",
+      "claim": "The sequenced datasets included 933,453 unique P4R2 RNAs of 26\u201394 nt in dcl2/3/4 triple mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this prediction, our sequenced datasets included 1,055,471 unique 23 or 24 nt siRNA sequences (in wild-type plants) and 933,453 unique P4R2 RNAs of 26\u201394 nt (in dcl2/3/4 triple mutants).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a count from the RNA-seq datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "2296fa78-c09a-41e3-bcaf-52c21a7dfbfb",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C89",
+      "claim": "Precursors are depleted if either RDR2 or Pol IV is absent.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our RNA blot results (Figure 2) defy these predictions, as do the RNA-seq data for pol IV and rdr2 mutants. Instead, precursors are depleted if either RDR2 or Pol IV is absent.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by RNA blot and RNA-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "cc858174-0a24-474e-a130-85e72b50018d",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C90",
+      "claim": "Pol IV and RDR2 are each required for the synthesis of both strands of P4R2 RNA duplexes.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that Pol IV and RDR2 are each required for the synthesis of both strands of P4R2 RNA duplexes, as was also noted by Li et al. (Li et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the data and is consistent with Li et al., 2015.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "84bdf3d4-1d93-4b17-b306-b957f2601ed9",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C91",
+      "claim": "RDR2 activity detected in vitro using affinity-purified Pol IV\u2013RDR2 complexes from wild-type plants is not apparent using RDR2 affinity purified from a pol IV mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown previously that RDR2 activity detected in vitro using affinity-purified Pol IV\u2013RDR2 complexes from wild-type plants is not apparent using RDR2 affinity purified from a pol IV mutant (Haag et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "afe6e4ff-3ef5-4806-bef9-754b5fcd6ac3",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C92",
+      "claim": "Pol IV isolated from an rdr2 null mutant is active in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Pol IV isolated from an rdr2 null mutant is active in vitro (Figure 8; see also [Haag et al., 2012])",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro transcription data in Figure 8 and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "59f09332-ac74-4bd5-85a9-fb6b196fafb7",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C93",
+      "claim": "Pol IV may require RDR2 association for activity in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Pol IV isolated from an rdr2 null mutant is active in vitro (Figure 8; see also [Haag et al., 2012]), it is possible that Pol IV may require RDR2 association for activity in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the potential requirement for RDR2 in vivo.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "5e508802-f017-494d-a39a-4ac345b1b911",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C94",
+      "claim": "The pyrimidine\u2013purine rule has a structural basis involving base-stacking interactions between the initiating (+1) RNA nucleotide and \u22121 DNA template nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "This pyrimidine\u2013purine rule is a characteristic of DNA-dependent RNA polymerases, in general, and has a structural basis that involves base-stacking interactions between the initiating (+1) RNA nucleotide (a purine) and \u22121 DNA template nucleotide (also a purine), in addition to the base-pairing that occurs between the +1 RNA and +1 DNA template bases (Basu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "4e5e7cb3-d395-42a4-be06-ac1dc54ee3b3",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C95",
+      "claim": "The pyrimidine\u2013purine rule applies to protein-coding genes throughout the Arabidopsis genome.",
+      "claim_type": "EXPLICIT",
+      "source": "The pyrimidine\u2013purine rule has been shown to apply to protein-coding genes throughout the Arabidopsis genome (Cumbie et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "f2ce43d2-c28f-4970-8c68-9fae76cdbbbd",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C96",
+      "claim": "Arabidopsis pre-rRNAs transcribed by multisubunit RNA Pol I initiate with an A downstream of a T.",
+      "claim_type": "EXPLICIT",
+      "source": "The pyrimidine\u2013purine rule has been shown to apply to protein-coding genes throughout the Arabidopsis genome (Cumbie et al., 2015), to Arabidopsis pre-rRNAs transcribed by multisubunit RNA Pol I (these initiate with an A downstream of a T; Doelling et al., 1993)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "46ee6102-6ad2-4ec9-b382-dcf320cbabf6",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C97",
+      "claim": "5S genes transcribed by RNA polymerase III initiate with a G downstream of a T.",
+      "claim_type": "EXPLICIT",
+      "source": "The pyrimidine\u2013purine rule has been shown to apply to protein-coding genes throughout the Arabidopsis genome (Cumbie et al., 2015), to Arabidopsis pre-rRNAs transcribed by multisubunit RNA Pol I (these initiate with an A downstream of a T; Doelling et al., 1993) and to 5S genes transcribed by RNA polymerase III (initiating with a G downstream of a T).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a known fact about Pol III transcription.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "28462477-2547-4de5-94b2-f3ccf1e168b3",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C98",
+      "claim": "Pol IV generates relatively short RNAs in vitro, with size distributions and 3' ends resembling those of P4R2 RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Pol IV generates relatively short RNAs in vitro, with size distributions and 3' ends resembling those of P4R2 RNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro transcription data in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "88e5b8b2-dc10-4258-aaf2-cb9e22e3eabf",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C99",
+      "claim": "P4R2 RNA biogenesis is initiated by Pol IV.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these observations suggest that P4R2 RNA biogenesis is initiated by Pol IV, as depicted in Figure 10",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on multiple lines of evidence and is depicted in a model in Figure 10.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "9483505c-d9b9-44ca-a868-953fb7f0f019",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C100",
+      "claim": "Limited processivity of Pol IV accounts for the relatively short size of P4R2 RNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these observations suggest that P4R2 RNA biogenesis is initiated by Pol IV, as depicted in Figure 10, with limited processivity of Pol IV accounting for the relatively short size of P4R2 RNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation based on the observed short size of Pol IV transcripts in vitro.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "e6be95ad-3bca-403d-bbda-f21a8969991e",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "claim_id": "C101",
+      "claim": "Dicing measured from a 5' adenosine might be a preference underlying the alternative dicing of P4R2 duplexes from either end.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus dicing measured from a 5' adenosine might be a preference underlying the alternative dicing of P4R2 duplexes from either end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative model proposed to explain the sequence consensus data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f658e3d9-251b-41a9-807b-fe9a5420e02b",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "In dcl3 mutants, longer RNAs (26-45 nt) accumulate that are dependent on Pol IV and RDR2. These RNAs accumulate to highest levels in dcl2/3/4 triple mutants and fail to accumulate in the absence of Pol IV or RDR2, indicating both enzymes are required for their biogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C25 are well-supported by RNA blot data in Figure 2A showing accumulation of >25 nt RNAs in dcl3 and dcl2/3/4 mutants but not in pol IV or rdr2 mutants. The genetic evidence clearly demonstrates the requirement for both Pol IV and RDR2.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "e8f9ce1b-08f8-4c81-91fd-d49165c54c85",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "P4R2 RNAs are double-stranded, as evidenced by their hybridization to probes for both DNA strands and preferential sensitivity to dsRNA-specific ribonuclease V1 over ssRNA-specific ribonuclease A. Similarly, 24 nt siRNAs exist predominantly in double-stranded form.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C32 are supported by RNA blot hybridization data (Figure 2A) and nuclease sensitivity assays (Figure 2B). The differential sensitivity to RNase V1 versus RNase A provides strong biochemical evidence for the double-stranded nature of both P4R2 RNAs and siRNAs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "6de9bc20-3a46-4d10-be07-90e397721f14",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "P4R2 RNAs are the immediate precursors of 24 nt siRNAs in vivo, as demonstrated by in vitro dicing of P4R2 RNAs by affinity-purified DCL3 into 24 nt products.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 are strongly supported by the in vitro dicing assay (Figure 2C) showing that DCL3 processes P4R2 RNAs into 24 nt products. This direct biochemical evidence, combined with the double-stranded nature and genetic requirements, establishes P4R2 RNAs as siRNA precursors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "7e3c77b8-0300-40af-a91e-57af4fae0288",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "P4R2 RNAs are predominantly 26-45 nt in length with a peak at ~30 nt, represent both DNA strands, overlap extensively with siRNAs, and are present at >5500 genomic loci. These RNAs increase in abundance in dcl2/3/4 mutants and are depleted in pol IV or rdr2 mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C38-C44, and C81 are well-supported by comprehensive RNA-seq data (Figures 3, 4, 5) showing size distributions, strand representation, and genome-wide occurrence of P4R2 RNAs. The data consistently demonstrate the size range and genetic dependencies across multiple loci and biological replicates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "cf79664e-f190-4f92-af51-2c28d05bdc96",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "96% of P4R2 RNAs overlap with 24 nt siRNA sequences, and siRNAs typically correspond to the extreme 5' or 3' ends of P4R2 RNAs, suggesting that 24 nt siRNAs are generated by single internal dicing events measured from either end of P4R2 precursor duplexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45, C47, C8, and C48 are supported by alignment analysis (Figure 6) showing high overlap between P4R2 RNAs and siRNAs, with clear peaks at position zero for both 5' and 3' end alignments. This provides strong evidence for the single-dicing model from either end.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "2e0b6f24-9644-4114-b6dd-5176825dc9b7",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "24 nt siRNAs preferentially begin with adenosine (A) at the 5' end, while P4R2 RNAs show preference for purines (A or G) at 5' ends. Both are preceded by T in genomic sequence and followed by A or U at position 2. At 3' ends, both prefer U, with P4R2 RNAs showing a weak ACU consensus that differs between 5'-A and 5'-G P4R2 RNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C58 are supported by nucleotide frequency analysis and sequence logo data (Figure 7). The sequence preferences are clearly demonstrated and the differential 3' end signatures between 5'-A and 5'-G P4R2 RNAs are well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "369dbba9-6604-48f9-8dd4-b584ba9ef21c",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "P4R2 RNAs beginning with A may give rise to siRNAs from their 5' ends, while those beginning with G may give rise to siRNAs from their 3' ends. DCL3 cutting may preferentially occur at a fixed distance from a 5' terminal adenosine on either strand of the duplex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C62 and C101 are speculative interpretations based on sequence analysis data. While the sequence patterns are well-documented, the directional preference for siRNA generation from different P4R2 RNA types lacks direct experimental validation. The model is plausible but requires additional experimental support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "89c6ea7d-1716-441f-b434-6f045aca6c8f",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "In vitro, Pol IV generates transcripts with mean/median lengths of 44/37 nt, shorter than Pol II transcripts (85/68 nt). Both polymerases initiate at >2000 positions on M13 DNA with a purine downstream of a pyrimidine. Pol IV transcripts show A or G at +2 position and tend to end with C or U, with strong preference for A at the template position downstream of the 3' end.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C71 are supported by in vitro transcription and RNA-seq data (Figure 8). The size distributions, initiation preferences, and sequence characteristics are clearly demonstrated. However, the relevance of in vitro conditions to in vivo P4R2 RNA synthesis requires careful interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "9094bd5f-4844-401a-95b9-2f4064e6e984",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Approximately 5% of P4R2 RNAs have 3' mismatched nucleotides, enriched at the 3' terminal position. RDR2 has terminal transferase activity, adding one or two non-templated cytosines to RNA 3' ends in an active site-dependent manner requiring 3'-OH groups. This activity may account for the 3' mismatches in P4R2 RNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C79, C6-C7 are supported by mismatch frequency analysis (Figure 9B) and in vitro terminal transferase assays (Figure 9D). The biochemical characterization of RDR2 terminal transferase activity is rigorous, though the connection to in vivo 3' mismatches remains somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "acf64a3b-1a89-446d-a18c-1a26bfcdd1e8",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Both Pol IV and RDR2 are required for synthesis of both strands of P4R2 RNA duplexes, as precursors are depleted when either enzyme is absent. RDR2 activity in vitro requires Pol IV association, though Pol IV isolated from rdr2 mutants is active in vitro. Pol IV may require RDR2 association for activity in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C93 are supported by RNA blot and RNA-seq data showing depletion of P4R2 RNAs in both pol IV and rdr2 mutants, and by previous biochemical studies (cited). The speculation about in vivo requirements (C93) is reasonable given the data but lacks direct experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "c6386812-0738-4679-8f61-0c8279781df7",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "P4R2 RNAs initiate with a purine adjacent to a pyrimidine, a characteristic shared by Pol IV transcripts in vitro and consistent with the pyrimidine-purine rule for DNA-dependent RNA polymerases. This suggests P4R2 RNA biogenesis is initiated by Pol IV, with limited processivity accounting for the short size of P4R2 RNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C94-C100 are supported by sequence analysis of P4R2 RNAs and in vitro Pol IV transcripts (Figures 7, 8), along with established knowledge about RNA polymerase initiation. The conclusion that Pol IV initiates P4R2 RNA synthesis is well-reasoned, though the processivity explanation (C100) is somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "3f39b311-7e84-422b-a261-426214d0b48b",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In wild-type plants, 24 and 23 nt siRNAs are the most abundant small RNA class, outnumbering 21 nt RNAs by ~10-fold. In dcl2/3/4 triple mutants, DCL1-dependent 21 nt RNAs become the most abundant class.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C37 are supported by RNA-seq data (Figure 3) showing clear shifts in small RNA populations between wild-type and dcl2/3/4 mutants. The quantitative comparison is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "b1d1479a-5e9e-4c4e-9f37-f847ad3a3b0d",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "P4R2 RNAs are reduced in abundance when Pol V or AGO4 are mutated in the dcl2/3/4 background. Pol V and AGO4 are important but not essential for siRNA biogenesis, likely due to their roles in establishing/maintaining chromatin marks that recruit Pol IV.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 are supported by RNA blot data (Figure 2A) and are consistent with cited previous studies. The mechanistic interpretation about chromatin marks is well-supported by the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "429e73fe-b140-40af-aff4-5489ad49ab2c",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The P4R2 RNAs identified include 20 of 22 loci confirmed by Li et al. (2015) to generate Pol IV/RDR2-dependent RNAs. Individual P4R2 RNAs represent individual Pol IV-RDR2 transcription units, though dozens can overlap at a given locus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46, C80, C82 are supported by comparison with Li et al. (2015) data and by genome browser views (Figures 4, 5). The interpretation that individual P4R2 RNAs represent discrete transcription units is reasonable given the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "3ad96218-e80a-4c7c-9aee-d4efad6f766b",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "DCL3 preferentially cleaves short dsRNAs of 30-50 nt. 24 nt siRNAs are generated from the 5' or 3' ends of P4R2 RNAs, limiting each P4R2 RNA's capacity to specify multiple siRNAs. Consistent with this, the datasets contain ~1 million unique siRNA sequences and ~933,000 unique P4R2 RNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C88 are supported by alignment data (Figure 6), cited literature (Nagano et al., 2014), and RNA-seq counts. The logical inference about limited siRNA diversity per precursor is well-reasoned and supported by the quantitative data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "80433ef8-58e9-4334-b273-9d2b2a508775",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "DCL3 preferentially cleaves dsRNAs with A or U at the 5' end, consistent with in vitro data from Nagano et al. (2014).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C63 is supported by citation to Nagano et al. (2014) and is consistent with the sequence analysis presented in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "63ac677c-5b74-4a72-8e57-8fa5c3b9b085",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background information on the RNA-directed DNA methylation pathway in Arabidopsis, including the roles of 24 nt siRNAs, Pol IV, RDR2, DCL3, Pol V, and AGO4, based on established knowledge and previous studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C10-C20 represent established knowledge in the field, supported by multiple citations to previous studies. These provide necessary context for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    },
+    {
+      "id": "ad03a780-f4c1-4154-898f-1d45e224323c",
+      "content_id": "f1709b78-32cb-48f0-aa3e-41c46dcdb00a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "The 5' adenosine preference of 24 nt siRNAs has been thought to reflect the RNA binding specificity of AGO4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C50 is supported by citation to Mi et al. (2008) and represents an established interpretation in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:16:40.720535Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8ca04f61-66f2-4423-af80-09cd761884c6",
+      "result_id": "f658e3d9-251b-41a9-807b-fe9a5420e02b"
+    },
+    {
+      "claim_id": "a18fa3f4-167b-4242-ae3c-027e81385356",
+      "result_id": "f658e3d9-251b-41a9-807b-fe9a5420e02b"
+    },
+    {
+      "claim_id": "7f2ed043-1cb2-4ab9-9ae3-d5f044746ebc",
+      "result_id": "f658e3d9-251b-41a9-807b-fe9a5420e02b"
+    },
+    {
+      "claim_id": "cf3c070e-1f53-4113-ae51-fbadcf773666",
+      "result_id": "f658e3d9-251b-41a9-807b-fe9a5420e02b"
+    },
+    {
+      "claim_id": "8b5c3826-a567-45c5-8288-e1ff289531e9",
+      "result_id": "f658e3d9-251b-41a9-807b-fe9a5420e02b"
+    },
+    {
+      "claim_id": "141a65f9-03d5-4a43-b583-f0b2825b2212",
+      "result_id": "e8f9ce1b-08f8-4c81-91fd-d49165c54c85"
+    },
+    {
+      "claim_id": "2a7aa12e-3a1c-4c86-a47c-d22b058378bb",
+      "result_id": "e8f9ce1b-08f8-4c81-91fd-d49165c54c85"
+    },
+    {
+      "claim_id": "30d6903e-c528-4cb8-9251-6eafb4c9ce0e",
+      "result_id": "e8f9ce1b-08f8-4c81-91fd-d49165c54c85"
+    },
+    {
+      "claim_id": "ad41a57c-e452-4d0a-9318-aec7bb1f6ae2",
+      "result_id": "e8f9ce1b-08f8-4c81-91fd-d49165c54c85"
+    },
+    {
+      "claim_id": "a0042497-0455-4ace-9e4d-91f5c78bb172",
+      "result_id": "6de9bc20-3a46-4d10-be07-90e397721f14"
+    },
+    {
+      "claim_id": "543dd8e7-9624-4af0-8b33-d4c6d688701b",
+      "result_id": "6de9bc20-3a46-4d10-be07-90e397721f14"
+    },
+    {
+      "claim_id": "117bc47c-59c5-4617-859f-473769883161",
+      "result_id": "7e3c77b8-0300-40af-a91e-57af4fae0288"
+    },
+    {
+      "claim_id": "1349310e-8d69-464e-8084-f4cf8e3c6e4b",
+      "result_id": "7e3c77b8-0300-40af-a91e-57af4fae0288"
+    },
+    {
+      "claim_id": "472d11ea-340b-4d71-8c1b-56ebf7925c13",
+      "result_id": "7e3c77b8-0300-40af-a91e-57af4fae0288"
+    },
+    {
+      "claim_id": "1fe70c5a-350c-479f-a58f-dfb72d8b6f24",
+      "result_id": "7e3c77b8-0300-40af-a91e-57af4fae0288"
+    },
+    {
+      "claim_id": "10fad1fc-1860-4313-968c-97743dd2ed21",
+      "result_id": "7e3c77b8-0300-40af-a91e-57af4fae0288"
+    },
+    {
+      "claim_id": "8eaa1730-2b09-41a8-a6f5-807a7ee009e3",
+      "result_id": "7e3c77b8-0300-40af-a91e-57af4fae0288"
+    },
+    {
+      "claim_id": "9ad693df-92c2-4ee7-9e4c-73cb8b26923f",
+      "result_id": "7e3c77b8-0300-40af-a91e-57af4fae0288"
+    },
+    {
+      "claim_id": "0ed4e011-ea68-442b-9670-5a850f006fb9",
+      "result_id": "7e3c77b8-0300-40af-a91e-57af4fae0288"
+    },
+    {
+      "claim_id": "ef2c2cc3-9bb3-4d2b-9cde-2c027102f8c3",
+      "result_id": "7e3c77b8-0300-40af-a91e-57af4fae0288"
+    },
+    {
+      "claim_id": "9186ad33-1a17-4c77-a4ae-241237391d85",
+      "result_id": "cf79664e-f190-4f92-af51-2c28d05bdc96"
+    },
+    {
+      "claim_id": "e1a5b113-7fa1-46df-915d-aff8557ddc5a",
+      "result_id": "cf79664e-f190-4f92-af51-2c28d05bdc96"
+    },
+    {
+      "claim_id": "6121a0c3-7a4a-414d-b14b-6e323dd07b63",
+      "result_id": "cf79664e-f190-4f92-af51-2c28d05bdc96"
+    },
+    {
+      "claim_id": "e2169fb4-4f39-4b78-9cd7-f78342af6b88",
+      "result_id": "cf79664e-f190-4f92-af51-2c28d05bdc96"
+    },
+    {
+      "claim_id": "0572c80c-0701-4027-8b35-eebe1bb24761",
+      "result_id": "2e0b6f24-9644-4114-b6dd-5176825dc9b7"
+    },
+    {
+      "claim_id": "f68289b7-8cfa-4a30-ac61-10325b399e69",
+      "result_id": "2e0b6f24-9644-4114-b6dd-5176825dc9b7"
+    },
+    {
+      "claim_id": "afddee40-692b-4def-98b7-661e5b8c0aa2",
+      "result_id": "2e0b6f24-9644-4114-b6dd-5176825dc9b7"
+    },
+    {
+      "claim_id": "047de681-f933-4c58-accb-bdb264925311",
+      "result_id": "2e0b6f24-9644-4114-b6dd-5176825dc9b7"
+    },
+    {
+      "claim_id": "b68f7c65-4dd6-4e90-b2fd-33deba11d6bb",
+      "result_id": "2e0b6f24-9644-4114-b6dd-5176825dc9b7"
+    },
+    {
+      "claim_id": "08006cc3-4429-4e47-afdb-f0ada3680c9b",
+      "result_id": "2e0b6f24-9644-4114-b6dd-5176825dc9b7"
+    },
+    {
+      "claim_id": "2755538e-ccde-48ba-9140-d900611c989a",
+      "result_id": "2e0b6f24-9644-4114-b6dd-5176825dc9b7"
+    },
+    {
+      "claim_id": "61570f9b-249f-47be-91bc-232367b53070",
+      "result_id": "2e0b6f24-9644-4114-b6dd-5176825dc9b7"
+    },
+    {
+      "claim_id": "02451379-0d1a-43c1-8f9f-e44792f788cd",
+      "result_id": "2e0b6f24-9644-4114-b6dd-5176825dc9b7"
+    },
+    {
+      "claim_id": "c5f0987c-35c5-4baf-97a1-30a7fcb79992",
+      "result_id": "369dbba9-6604-48f9-8dd4-b584ba9ef21c"
+    },
+    {
+      "claim_id": "a363ce75-6e3c-4b62-bf13-09b94ecc8b44",
+      "result_id": "369dbba9-6604-48f9-8dd4-b584ba9ef21c"
+    },
+    {
+      "claim_id": "0015792f-8915-46f4-a237-77af7aac09e8",
+      "result_id": "369dbba9-6604-48f9-8dd4-b584ba9ef21c"
+    },
+    {
+      "claim_id": "e6c05f7d-dd7d-4738-934e-06b9a9dfd7eb",
+      "result_id": "369dbba9-6604-48f9-8dd4-b584ba9ef21c"
+    },
+    {
+      "claim_id": "e6be95ad-3bca-403d-bbda-f21a8969991e",
+      "result_id": "369dbba9-6604-48f9-8dd4-b584ba9ef21c"
+    },
+    {
+      "claim_id": "865def31-d388-40c0-9b76-9a0706101fc2",
+      "result_id": "89c6ea7d-1716-441f-b434-6f045aca6c8f"
+    },
+    {
+      "claim_id": "5ae96654-cf34-4bfe-9c02-273720bc2c09",
+      "result_id": "89c6ea7d-1716-441f-b434-6f045aca6c8f"
+    },
+    {
+      "claim_id": "b4355974-0c7d-4e5d-a55d-e64249ef4f11",
+      "result_id": "89c6ea7d-1716-441f-b434-6f045aca6c8f"
+    },
+    {
+      "claim_id": "b7031857-49db-40ae-8b0c-9c47db39ecea",
+      "result_id": "89c6ea7d-1716-441f-b434-6f045aca6c8f"
+    },
+    {
+      "claim_id": "9ee29e85-7397-4c49-b81e-99b869bc731f",
+      "result_id": "89c6ea7d-1716-441f-b434-6f045aca6c8f"
+    },
+    {
+      "claim_id": "d491855f-a93d-407e-805c-1a32a6c419bf",
+      "result_id": "89c6ea7d-1716-441f-b434-6f045aca6c8f"
+    },
+    {
+      "claim_id": "b2d53080-6267-4712-9e8a-3fae845d2088",
+      "result_id": "89c6ea7d-1716-441f-b434-6f045aca6c8f"
+    },
+    {
+      "claim_id": "fb9b6be2-dec2-4db2-9ca0-2e1017f7a824",
+      "result_id": "89c6ea7d-1716-441f-b434-6f045aca6c8f"
+    },
+    {
+      "claim_id": "7ef2d10b-d2dc-4810-a7e2-c89f02f0dbc8",
+      "result_id": "9094bd5f-4844-401a-95b9-2f4064e6e984"
+    },
+    {
+      "claim_id": "56a8865d-d022-4734-8792-6b374900daac",
+      "result_id": "9094bd5f-4844-401a-95b9-2f4064e6e984"
+    },
+    {
+      "claim_id": "8f691caf-cfb8-4025-9b19-fdb19151ddc2",
+      "result_id": "9094bd5f-4844-401a-95b9-2f4064e6e984"
+    },
+    {
+      "claim_id": "66b7dea8-af41-49f0-baa7-025069d20929",
+      "result_id": "9094bd5f-4844-401a-95b9-2f4064e6e984"
+    },
+    {
+      "claim_id": "64aa6eeb-5e60-408e-9144-d921a78653f6",
+      "result_id": "9094bd5f-4844-401a-95b9-2f4064e6e984"
+    },
+    {
+      "claim_id": "ec18c71c-1c0f-41f2-97d0-915a005e85a3",
+      "result_id": "9094bd5f-4844-401a-95b9-2f4064e6e984"
+    },
+    {
+      "claim_id": "f08245ea-569c-4f67-bddc-2139aa5c0c5a",
+      "result_id": "9094bd5f-4844-401a-95b9-2f4064e6e984"
+    },
+    {
+      "claim_id": "b4be9a7b-0417-4ae2-a679-74a1fcc95b5a",
+      "result_id": "9094bd5f-4844-401a-95b9-2f4064e6e984"
+    },
+    {
+      "claim_id": "b221ee9e-bcbe-4508-b1b9-fff15a964613",
+      "result_id": "9094bd5f-4844-401a-95b9-2f4064e6e984"
+    },
+    {
+      "claim_id": "67204547-5c99-41c8-b505-13117d0e63a6",
+      "result_id": "9094bd5f-4844-401a-95b9-2f4064e6e984"
+    },
+    {
+      "claim_id": "2296fa78-c09a-41e3-bcaf-52c21a7dfbfb",
+      "result_id": "acf64a3b-1a89-446d-a18c-1a26bfcdd1e8"
+    },
+    {
+      "claim_id": "cc858174-0a24-474e-a130-85e72b50018d",
+      "result_id": "acf64a3b-1a89-446d-a18c-1a26bfcdd1e8"
+    },
+    {
+      "claim_id": "84bdf3d4-1d93-4b17-b306-b957f2601ed9",
+      "result_id": "acf64a3b-1a89-446d-a18c-1a26bfcdd1e8"
+    },
+    {
+      "claim_id": "afe6e4ff-3ef5-4806-bef9-754b5fcd6ac3",
+      "result_id": "acf64a3b-1a89-446d-a18c-1a26bfcdd1e8"
+    },
+    {
+      "claim_id": "59f09332-ac74-4bd5-85a9-fb6b196fafb7",
+      "result_id": "acf64a3b-1a89-446d-a18c-1a26bfcdd1e8"
+    },
+    {
+      "claim_id": "dc55d022-d661-4dc9-b563-f8f9a78580bd",
+      "result_id": "c6386812-0738-4679-8f61-0c8279781df7"
+    },
+    {
+      "claim_id": "7c7f68f3-f549-4ad5-99f9-4cb178536056",
+      "result_id": "c6386812-0738-4679-8f61-0c8279781df7"
+    },
+    {
+      "claim_id": "5e508802-f017-494d-a39a-4ac345b1b911",
+      "result_id": "c6386812-0738-4679-8f61-0c8279781df7"
+    },
+    {
+      "claim_id": "4e5e7cb3-d395-42a4-be06-ac1dc54ee3b3",
+      "result_id": "c6386812-0738-4679-8f61-0c8279781df7"
+    },
+    {
+      "claim_id": "f2ce43d2-c28f-4970-8c68-9fae76cdbbbd",
+      "result_id": "c6386812-0738-4679-8f61-0c8279781df7"
+    },
+    {
+      "claim_id": "46ee6102-6ad2-4ec9-b382-dcf320cbabf6",
+      "result_id": "c6386812-0738-4679-8f61-0c8279781df7"
+    },
+    {
+      "claim_id": "28462477-2547-4de5-94b2-f3ccf1e168b3",
+      "result_id": "c6386812-0738-4679-8f61-0c8279781df7"
+    },
+    {
+      "claim_id": "88e5b8b2-dc10-4258-aaf2-cb9e22e3eabf",
+      "result_id": "c6386812-0738-4679-8f61-0c8279781df7"
+    },
+    {
+      "claim_id": "9483505c-d9b9-44ca-a868-953fb7f0f019",
+      "result_id": "c6386812-0738-4679-8f61-0c8279781df7"
+    },
+    {
+      "claim_id": "4262c9ad-c234-4759-a576-27fd61f5cdee",
+      "result_id": "3f39b311-7e84-422b-a261-426214d0b48b"
+    },
+    {
+      "claim_id": "f79ee9b0-8912-49fd-bf1f-eb0d71a24f5c",
+      "result_id": "3f39b311-7e84-422b-a261-426214d0b48b"
+    },
+    {
+      "claim_id": "608a0654-1a2e-4993-b535-8a01c8400a6b",
+      "result_id": "3f39b311-7e84-422b-a261-426214d0b48b"
+    },
+    {
+      "claim_id": "4c25d91d-6235-4cea-b6df-3db06b4b429a",
+      "result_id": "b1d1479a-5e9e-4c4e-9f37-f847ad3a3b0d"
+    },
+    {
+      "claim_id": "b909f946-f7b6-4559-869a-a5084adbe06c",
+      "result_id": "b1d1479a-5e9e-4c4e-9f37-f847ad3a3b0d"
+    },
+    {
+      "claim_id": "5fbdf9a8-8ea7-4ddd-899d-b2fc9ba3cd46",
+      "result_id": "b1d1479a-5e9e-4c4e-9f37-f847ad3a3b0d"
+    },
+    {
+      "claim_id": "581adaa7-f499-40ba-93e2-68e353154690",
+      "result_id": "429e73fe-b140-40af-aff4-5489ad49ab2c"
+    },
+    {
+      "claim_id": "c0cb30cc-b66c-4259-a0df-5855da5f43df",
+      "result_id": "429e73fe-b140-40af-aff4-5489ad49ab2c"
+    },
+    {
+      "claim_id": "61b5186f-b23c-4adb-9a91-b211651a6579",
+      "result_id": "429e73fe-b140-40af-aff4-5489ad49ab2c"
+    },
+    {
+      "claim_id": "014a4847-f119-446f-9ec5-ed0510fc9a33",
+      "result_id": "3ad96218-e80a-4c7c-9aee-d4efad6f766b"
+    },
+    {
+      "claim_id": "67307562-70ae-4c15-9a12-b546c336c3e1",
+      "result_id": "3ad96218-e80a-4c7c-9aee-d4efad6f766b"
+    },
+    {
+      "claim_id": "8e79e5d2-3cff-4306-8dc8-dec2b63a97af",
+      "result_id": "3ad96218-e80a-4c7c-9aee-d4efad6f766b"
+    },
+    {
+      "claim_id": "2e488daf-8589-4ee0-98d1-e90471b1f385",
+      "result_id": "3ad96218-e80a-4c7c-9aee-d4efad6f766b"
+    },
+    {
+      "claim_id": "06691542-1701-45ca-9ada-d89f1bdcd53d",
+      "result_id": "3ad96218-e80a-4c7c-9aee-d4efad6f766b"
+    },
+    {
+      "claim_id": "ab6a1520-3512-4621-bc17-99ae9a37d589",
+      "result_id": "3ad96218-e80a-4c7c-9aee-d4efad6f766b"
+    },
+    {
+      "claim_id": "54a403aa-27b2-4d07-9591-48ca68b36967",
+      "result_id": "80433ef8-58e9-4334-b273-9d2b2a508775"
+    },
+    {
+      "claim_id": "9623ba44-8508-47f9-ab50-bff0129fab8e",
+      "result_id": "63ac677c-5b74-4a72-8e57-8fa5c3b9b085"
+    },
+    {
+      "claim_id": "0764f93e-544f-4dcd-97c9-79f328c23003",
+      "result_id": "63ac677c-5b74-4a72-8e57-8fa5c3b9b085"
+    },
+    {
+      "claim_id": "c143bf8a-e622-44c1-93eb-285fbed02bd5",
+      "result_id": "63ac677c-5b74-4a72-8e57-8fa5c3b9b085"
+    },
+    {
+      "claim_id": "8523fd10-4fec-4af3-8728-2e6fcc4e9e39",
+      "result_id": "63ac677c-5b74-4a72-8e57-8fa5c3b9b085"
+    },
+    {
+      "claim_id": "af449a8a-7a54-461b-9777-2b9f26415b86",
+      "result_id": "63ac677c-5b74-4a72-8e57-8fa5c3b9b085"
+    },
+    {
+      "claim_id": "f6d23ec3-3d5d-4a12-8afe-fb3bd0eaba58",
+      "result_id": "63ac677c-5b74-4a72-8e57-8fa5c3b9b085"
+    },
+    {
+      "claim_id": "14279ac5-6a52-442a-a687-77ce2894cd20",
+      "result_id": "63ac677c-5b74-4a72-8e57-8fa5c3b9b085"
+    },
+    {
+      "claim_id": "1e244c74-b907-4e3c-a0b6-cca3c280e05c",
+      "result_id": "63ac677c-5b74-4a72-8e57-8fa5c3b9b085"
+    },
+    {
+      "claim_id": "3a76b0fa-565e-411b-a640-ef6e5947979d",
+      "result_id": "63ac677c-5b74-4a72-8e57-8fa5c3b9b085"
+    },
+    {
+      "claim_id": "3ee1e216-27e3-4ae6-8f26-253fee60fb33",
+      "result_id": "63ac677c-5b74-4a72-8e57-8fa5c3b9b085"
+    },
+    {
+      "claim_id": "df01a9f6-f114-4a21-8a25-00ed62ab56bc",
+      "result_id": "63ac677c-5b74-4a72-8e57-8fa5c3b9b085"
+    },
+    {
+      "claim_id": "885c24db-eafc-48be-a1e2-529cb40ae76f",
+      "result_id": "63ac677c-5b74-4a72-8e57-8fa5c3b9b085"
+    },
+    {
+      "claim_id": "dd7aa2f5-c70a-4937-bcca-dd950d1dd7ac",
+      "result_id": "63ac677c-5b74-4a72-8e57-8fa5c3b9b085"
+    },
+    {
+      "claim_id": "ad6666d6-56fe-477a-b2f9-fd32011e4443",
+      "result_id": "ad03a780-f4c1-4154-898f-1d45e224323c"
+    }
+  ],
+  "comparisons": []
+}

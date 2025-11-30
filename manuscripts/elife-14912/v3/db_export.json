@@ -1,0 +1,2104 @@
+{
+  "submission": {
+    "id": "b06bb6a4-96a1-462e-88fb-d49af769f5f8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T23:51:53.508718Z",
+    "updated_at": "2025-11-29T23:51:53.508718Z"
+  },
+  "content": [
+    {
+      "id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "submission_id": "b06bb6a4-96a1-462e-88fb-d49af769f5f8",
+      "content_type": "manuscript",
+      "content_text": "# Cell-specific synaptic plasticity induced by network oscillations\n\n## Authors\n\n- Shota Zarnadze<sup>1</sup>\n- Peter B\u00e4uerle<sup>1</sup>\n- Julio Santos-Torres<sup>1</sup>\n- Claudia B\u00f6hm<sup>2</sup>\n- Dietmar Schmitz<sup>2</sup>\n- J\u00f6rg RP Geiger<sup>1</sup>\n- Tamar Dugladze<sup>1</sup>\n- Tengis Gloveli<sup>1</sup> ([ORCID: 0000-0002-2209-375X](https://orcid.org/0000-0002-2209-375X)) \u2020\n\n### Affiliations\n\n1. Institute of Neurophysiology Charit\u00e9 -Universit\u00e4tsmedizin Berlin Berlin Germany\n2. Neuroscience Research Center Charit\u00e9 -Universit\u00e4tsmedizin Berlin Berlin Germany\n3. The NeuroCure Cluster of Excellence Berlin Germany\n4. Bernstein Center for Computational Neuroscience Berlin Germany\n\n\u2020 Corresponding author\n\n## Abstract\n\nGamma rhythms are known to contribute to the process of memory encoding. However, little is known about the underlying mechanisms at the molecular, cellular and network levels. Using local field potential recording in awake behaving mice and concomitant field potential and whole-cell recordings in slice preparations we found that gamma rhythms lead to activity-dependent modification of hippocampal networks, including alterations in sharp wave-ripple complexes. Network plasticity, expressed as long-lasting increases in sharp wave-associated synaptic currents, exhibits enhanced excitatory synaptic strength in pyramidal cells that is induced postsynaptically and depends on metabotropic glutamate receptor-5 activation. In sharp contrast, alteration of inhibitory synaptic strength is independent of postsynaptic activation and less pronounced. Further, we found a cell type-specific, directionally biased synaptic plasticity of two major types of GABAergic cells, parvalbumin- and cholecystokinin-expressing interneurons. Thus, we propose that gamma frequency oscillations represent a network state that introduces long-lasting synaptic plasticity in a cell-specific manner.\n\n## Introduction\n\nNeural oscillations are thought to play an important role in learning and memory processing (Axmacher et al., 2006; D\u00fczel et al., 2010; Nyhus and Curran, 2010). Learning is based on activity-dependent modification of synaptic strength in order to incorporate transient experiences into persistent memory traces (Citri and Malenka, 2008). Gamma-band oscillations\u00a0and sharp wave-ripple activity\u00a0(SWR), involved in memory encoding (Jutras and Buffalo, 2010) and consolidation (Buzs\u00e1ki, 1989; Girardeau et al., 2009; Jadhav et al., 2012), respectively, appear to be interlinked in the course of memory processing. However, to date, it had been unclear whether gamma rhythms itself represent a network state that can directly promote the formation of long-lasting synaptic plasticity within the cortical network.\n\nThe hippocampus is an important structure for memory acquisition, consolidation and spatial orientation (Buzs\u00e1ki and Moser, 2013; Eichenbaum and Cohen, 2014). Within the hippocampus, the CA3 area constitutes an autoassociative neural network, in which three pathways converge: mossy fibers and associational-commissural (A/C) and perforant path (PP) projections. Each of these pathways display plasticity (Berzhanskaya et al., 1998; Malenka and Bear, 2004; Nicoll and Schmitz, 2005), which has seen the CA3 area harnessed as a well-suited and popular model for studying activity-dependent modification of synaptic transmission. However, hippocampal neural plasticity phenomena have traditionally been studied using tetanus-, pairing- or chemically induced plasticity-protocols, while the applicability of network oscillations, such as used in our study, as investigative tool had been unproven to date.\n\nGABAergic interneurons (INs) have been shown to play a major role in controlling oscillatory activity, as well as synaptic transmission and plasticity in cortical networks (Ben-Ari, 2006; Klausberger and Somogyi, 2008). Major inhibitory cell types, parvalbumin- (PV) and cholecystokinin (CCK)-expressing INs provide distinct forms of inhibition and have complementary roles in cortical circuits. In fact, PV-expressing INs are assumed to act as \u201cfast signaling devices\u201d (Jonas et al., 2004) and provide precisely-timed phase-modulated inhibition to control the timing of discharge in individual neurons as well as the synchronization and emergence of oscillations at the level of the network (Cobb et al., 1995; Gloveli et al., 2005a; Bartos et al., 2007; Sohal et al., 2009). In contrast, CCK-expressing INs show a slower but variable discharge pattern and asynchronous GABA release (Hefft and Jonas, 2005; Daw et al., 2009). High expression of various receptors for neuromodulators (Freund, 2003; Armstrong and Soltesz, 2012) post- and presynaptically, suggests that these INs may regulate excitability in the network by mediating inhibition in a behavioral state-dependent manner.\n\nWe investigated the interaction and interdependence of two classical hippocampal network patterns, gamma frequency oscillations and SWRs, important in memory encoding and consolidation, respectively. We found that in vivo theta-nested gamma oscillations have an enhancing effect on subsequent SWRs in awake behaving mice. Analysis of the underlying molecular, cellular and synaptic mechanisms in vitro slice preparations showed changes in SWR-associated excitatory synaptic strength between pyramidal cells (PC) that are mediated postsynaptically and depend on metabotropic glutamate receptor-5 (mGluR5) activation. In stark contrast to excitation, alteration of inhibitory synaptic strength was independent of postsynaptic activation and less pronounced, reflecting an IN-specific, directionally biased synaptic plasticity, as demonstrated in our study for two major GABAergic inhibitory cell types, PV- and CCK-expressing INs. Our results suggest that gamma frequency oscillations represent a network state that promotes the formation of long-lasting synaptic plasticity in the hippocampal area CA3, leading to modification of synaptic strengths in a cell-specific manner.\n\n## Results\n\n### Theta-nested gamma frequency oscillations reinforce subsequent SWRs in awake behaving mice\n\nWe investigated two major context-dependent activity patterns, SWRs and gamma frequency oscillations, in awake behaving mice. Using local field potential (LFP) recordings from dorsal hippocampus we found spontaneous SWRs in resting states of quietly sitting mice, while running behavior was accompanied by theta-nested gamma oscillations (Figure 1A). As both rhythms have been proposed as closely linked to memory processing (Axmacher et al., 2006; Girardeau et al., 2009; Jutras and Buffalo, 2010; Jadhav et al., 2012), we studied the general interdependence of these two network patterns in a behavioral paradigm.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/14912/elife-14912-fig1-v3.jpg)\n\n**Figure 1.:** (A) Representative LFP recording in an awake mouse illustrates the occurrence of different network states in a behavioral-dependent manner. The initial spontaneous SWRs during a quiet state (left, SWR) are replaced by a running-associated theta-nested gamma rhythm (middle), followed by another rapid reversal to SWRs (right, p-SWR). Note the higher amplitude of the p-SWRs. Prolonged running period is marked by the black bar above. (B) (i, ii, iii) Left, three example excerpts from the trace in (A) at higher temporal resolution. (i) Left, the initial quiet state example band-pass filtered at 2\u2013300 Hz and 100\u2013300 Hz to illustrate the SWRs and the corresponding ripple component, respectively. Two SWRs are accentuated in red. Right, a single SWR together with its wavelet transform (color-coded power spectral density with superimposed corresponding ripple trace in white). (ii) Left, the theta-nested gamma example with a small excerpt shown above. Right, the corresponding spectral analysis demonstrates the predominant theta (7.3 Hz) and gamma (46.3 Hz) peak. (iii), the p-SWR with the same type of illustration as for the SWR shown in (i). (C) Left, a direct comparison of the mean values of SWR areas before and after the intervening gamma episode (n = 11, 4 mice) highlight a significant increase in SWR areas (p=0.0006, Wilcoxon signed rank test). The respective grand means are indicated by the horizontal bold bars. Right, the corresponding percentage increase of mean SWR areas.\n\nAs the two rhythms are each correlated with separate behavioral states (resting or running), control of behavioral expression is a means of targeting the corresponding network pattern (Figure 1A and B). Thus, we used prolonged running episodes, at an average of 3 min, (mean 3:06 \u00b1 0:32\u2009min, n = 11, 4 mice; range from 2:28 to 4:30\u2009min depending on the\u00a0actual\u00a0running performance), to investigate the interaction between the two network patterns. The impact of running-associated theta-nested gamma frequency oscillations on subsequent SWRs was evaluated by comparing the areas of SWRs in the two-minute time windows directly preceding and following a theta-nested gamma episode. The post-gamma SWR (p-SWR) areas exhibited significantly enlargement at an average of 25.7% (n = 11, p=0.0006, Figure 1C) and no significant change in frequency (SWR: 0.18 \u00b1 0.10\u2009Hz; p-SWR: 0.16 \u00b1 0.10\u2009Hz, n = 11, p=0.23). This result indicates an enhanced network activity and suggests a surprisingly direct effect of the running associated theta-nested gamma oscillations. But the fact that the internal state might not be fixed for an extended time period hampered conclusive interpretation of this result. In particular, the altered p-SWR could also reflect a change of the animals internal state including the contribution of a different set of cell assembles (Buzs\u00e1ki, 2015), which is difficult to control in vivo. Consequently, in order to carry out the experiments under well-controlled conditions with the option to investigate the underlying mechanism in detail, we switched to a well-established in vitro model.\n\n### Gamma frequency oscillations promote long-lasting network changes in acute slice preparations\n\nWe subsequently investigated the synaptic, cellular and molecular mechanisms of gamma oscillation-induced effects on SWR activity in in vitro\u00a0acute hippocampal slices, a model that permits the reproduction of both oscillatory network patterns (Gloveli et al., 2005a, 2005b; Maier et al., 2009; Dugladze et al., 2012).\n\nPrompted by our in vivo results, we investigated the interaction and interdependence of gamma frequency oscillations and SWRs by monitoring LFPs in the stratum pyramidale of the hippocampal area CA3. In good agreement with our in vivo results, SWRs and gamma frequency oscillation patterns represented two \u2018competing\u2019, mutually exclusive network states in vitro: spontaneously occurring SWRs (mean frequency: 1.33 \u00b1 0.10\u2009Hz, n = 30) disappeared shortly (31.0 \u00b1 2.8\u2009s) after bath application of kainic acid (KA, 400 nM) and reappeared within a few minutes (14.6 \u00b1 0.7\u2009min) after KA washout (Figure 2A). However, also in line with our in vivo data, the two network patterns were not fully independent \u2013 plastic changes initiated in the network by means of persistent gamma activity altered the subsequent SWR pattern (Figure 2A and B). The p-SWRs exhibited a significantly increased area (by 69.7 \u00b1 15.1%, n = 30, p<0.0001, Figure 2C) and a small decrease in incidence (to 0.90 \u00b1 0.10\u2009Hz, n = 30, p<0.0001). In addition, we found a slight but significant increase in average ripple number (by 8.5 \u00b1 2.5%, n = 12, p=0.0065) and an elevated oscillatory ripple frequency (by 4.1 \u00b1 1.8%, n = 12, p=0.041). These changes were accompanied by a significant increase of post-gamma sharp wave amplitude (by 44.6 \u00b1 19.3%, n = 12, p=0.042) and a non-significantly altered sharp wave duration (increased by 2.5 \u00b1 2.9%, n = 12, p=0.41). In good agreement with these data, gamma oscillations induced by bath application of carbachol (20 \u00b5M), an alternative drug to trigger persistent gamma oscillations based on a different mechanisms (Fisahn et al., 1998; 2002; Hajos et al., 2004), also resulted in a significant increase in SWR area (by 21.0 \u00b1 4.2%, n = 16, p=0.0002, see also Zylla et al., 2013), indicating that gamma activity itself, and not the pharmacological agent, is responsible for the network alterations. Moreover, we found a highly significant positive correlation of the network gamma oscillations (power\u00d7duration) with the SWR-area increase (R = 0.58, n = 30, p=0.0007) and no correlation with the SWR incidence (R = \u22120.28, n = 30, p=0.14). In line with this, in a few cases where KA application failed to introduce gamma frequency oscillations, no changes in SWR-area were observed (reduction by 6.0 \u00b1 19.4%, n = 8, p=0.35). Notably, in comparison to KA, carbachol-triggered gamma oscillations exhibited less spectral power (p=0.007) and accordingly induced smaller SWR area changes (p=0.02), suggesting an activity-dependent mechanism of oscillation-induced neuronal network plasticity. Furthermore, we also found a reinforcing effect of gamma rhythms on subsequent gamma episodes (Figure 3). Together, these results emphasize the general potential of gamma oscillations to modify network activities.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/14912/elife-14912-fig2-v3.jpg)\n\n**Figure 2.:** (A) SWRs recorded in the stratum pyramidale of the CA3 region occurred spontaneously (left), disappeared shortly after bath application of KA (middle) and reappeared with a significantly higher amplitude after KA washout (right). (B) Example of the wavelet transform (color-coded power spectral density) for three consecutive highlighted SWRs (white trace) before (SWR) and after (p-SWR) intermediate gamma oscillations. (C) p-SWR areas (red-filled squares) increased significantly compared to the SWR areas (gray-filled squares). MPEP (50 \u00b5M) administration largely prevented p-SWR area increase (black, open triangles). The time courses of drug applications are depicted schematically. The horizontal lines mark the p-SWR data points used for statistical analyses. The significance stars compare the pre-gamma data with the marked post-gamma data. The number of asterisks indicates the significance level (Student's t-test). Insert, examples of SWR (gray) and p-SWR (red and black) without (left) and with MPEP (right) administration during gamma rhythms. (D) Effects of AP5 (50 \u00b5M, green open squares) and MPEP+AP5 (black filled triangles) on SWR area increase. Insert, examples of corresponding SWR (gray) and p-SWR (green and black). (E) Gamma oscillation-induced SWR area increase (LTP) is reduced significantly by administration of AP5 (green open bar), MPEP (black open bar) and MPEP+AP5 (black filled bar).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/14912/elife-14912-fig3-v3.jpg)\n\n**Figure 3.:** (A) Brief \u2018weak\u2019 field gamma episodes were induced by bath application of 50 nM KA. After this test period, \u2018conventional\u2019 gamma frequency oscillations were induced by 400 nM KA application, followed by KA washout achieving a complete cessation of oscillatory gamma activity. In a third step, the network behavior was again tested with low KA concentration as applied in the first step. Left, a \u2018weak\u2019 gamma episode (top, gray: 1st \u2018weak\u2019 gamma) becomes significantly stronger (bottom, black: 2nd \u2018weak\u2019 gamma) after \u2018conventional\u2019 (\u2018KA 400 nM\u2019) gamma oscillations. Right, corresponding spectral analysis of 1st and 2nd \u2018weak\u2019 gamma. (B) Summary bar charts of peak power and frequency obtained before (1st \u2018weak\u2019 gamma) and after \u2018conventional\u2019 gamma (2nd \u2018weak\u2019 gamma). Spectral power of gamma rhythms increased from 0.72\u00a0x\u00a010-4 \u00b1 0.39\u00a0x\u00a010-4 mV2/Hz to 1.34\u00a0x\u00a010-4 \u00b1 0.50\u00a0x\u00a010-4 mV2/Hz (n = 10, p=0.003) while frequency remained unchanged, illustrating that the intervening gamma episode has a reinforcing effect.\n\nTo reveal the molecular mechanism underlying the network plasticity we examined the effects of activation of metabotropic glutamate (mGluR)5- and/or N-methyl-D-aspartate receptors (NMDAR) that have been proposed to play an important role in hippocampal synaptic plasticity and memory (Zalutsky and Nicoll, 1990; Nakazawa et al., 2002; Naie and Manahan-Vaughan, 2004). Administration of mGluR5 antagonist, 2-methyl-6-(phenylethynyl)pyridine (MPEP) largely reduced the SWR area increase (by 83.4 \u00b1 6.2%, n = 16, p<0.0001, Figure 2C and E). A similar, albeit less pronounced effect was observed for the NMDAR antagonist, DL-2-Amino-5-phosphonopentanoic acid (AP5) (reduction by 51.7 \u00b1 8.9%, n = 13, p<0.0001, Figure 2D and E). Finally, this form of plasticity was abolished by joint application of the mGluR5 and NMDAR antagonists (reduction by 91.8 \u00b1 12.2%, n = 14, p<0.0001, Figure 2D and E). Taken together, these results suggest that in the hippocampal area CA3, gamma frequency oscillations influence the subsequent network activity through mGluR5- and NMDAR-dependent mechanisms.\n\n### Gamma frequency oscillations support long-lasting synaptic plasticity in the CA3 network\n\nWe next studied activity-dependent alteration in synaptic transmission, defined here by synaptic strength, in CA3 PC by examining long-lasting changes in p-SWR-associated excitatory and inhibitory synaptic currents (p-EPSCs and p-IPSCs, Figure 4). Our data demonstrate that parallel to the field p-SWR (Figure 2), cells held in current-clamp mode during gamma oscillations (see Materials and Methods) exhibit long-lasting increase in the area of p-EPSCs (by 104.2 \u00b1 21.2%, n = 14, p=0.0003, Figure 4B). The change in the EPSC strength correlates positively with the magnitude of SWR-area increase (R = 0.56, n = 14, p=0.040). Conversely, p-EPSCs recorded in PCs held in voltage-clamp mode at \u221270 mV during gamma oscillations decreased rather than increased (by 40.6 \u00b1 7.7%, n = 13, p=0.0002, Figure 4B), suggesting that the increase of EPSC area depend on PC postsynaptic depolarization. The p-EPSC in voltage-clamp mode might also be affected by altered inhibition (see below).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/14912/elife-14912-fig4-v3.jpg)\n\n**Figure 4.:** (A) Light micrograph of an example CA3 PC. Insert: The regular firing pattern of this PC in response to a depolarizing current injection. (B) The area of SWR-associated EPSC increases significantly after gamma frequency oscillations (gray and red filled squares for EPSCs and p-EPSC, respectively). Administration of MPEP (50 \u00b5M) prevents the increase of p-EPSC (gray and black filled triangles illustrate EPSC and p-EPSC, respectively). Holding PCs in voltage clamp configuration at \u221270 mV during gamma frequency oscillations leads to a significant decrease in EPSC area (gray and red open squares for EPSC and p-EPSC, respectively). The significance stars compare the pre-gamma data with the marked post-gamma data. Insert: Representative examples of EPSC (gray) and p-EPSC recorded without (left,\u00a0red) and with MPEP (middle,\u00a0black), as well as using voltage clamping of cells during gamma rhythms (right, red,\u00a0gamma-VC). (C) SWR-associated IPSCs exhibit a moderate increase in area in PCs held in both current- (filled gray and blue triangles) and voltage-clamp mode (open gray and black triangles for IPSC and p-IPSC, respectively) during gamma rhythms. Inserts: Representative examples of corresponding IPSC (gray) and p-IPSC (gamma-CC, blue and gamma-VC, black). (D) Contra-directional change in p-EPSC to p-IPSC ratio for PCs held in current- (gamma-CC) vs. voltage-clamp mode (gamma-VC) during gamma rhythms (normalized to pre-gamma values).\n\nTo clarify the underlying molecular mechanism, we compared the properties of these currents in the presence and absence of mGluR5 antagonist MPEP. Similar to the effects on the LFP, bath application of MPEP strongly reduced the increase in p-EPSC area of CA3 PCs (reduction by 90.3 \u00b1 7.1%, n = 6, p=0.0001, Figure 4B). These data provide direct evidence for an mGluR5-dependent increase of the excitatory synaptic strength onto PCs as an effect of an intermediate gamma episode. Close temporal correlation existed between these changes and the network alterations described above.\n\nWe further investigated whether oscillatory gamma activity-dependent modification of the hippocampal network also includes alteration in inhibitory synaptic strength. In contrast to the strongly potentiated p-EPSC, p-IPSCs showed a less pronounced but still significant increase (32.8 \u00b1 12.9%, n = 8, p=0.039, Figure 4C). Altogether, p-EPSC and p-IPSC alterations resulted in a significant increase in the PC EPSC-to-IPSC ratio (by 44.4 \u00b1 14.6%, p=0.019, Figure 4D). In stark contrast to the EPSC potentiation, changes in IPSCs were independent of postsynaptic activation. PCs held in voltage-clamp mode during gamma oscillations exhibited a similar IPSC increase of 30.3 \u00b1 7.3% (n = 6, p=0.0089, Figure 4C), indicating activity-dependent changes in presynaptic inhibitory INs.\n\n### Gamma rhythms promote cell type-specific synaptic plasticity in CA3 interneurons\n\nTo further elucidate the cellular mechanisms underlying the differential alterations in PC excitatory and inhibitory synaptic strength we examined the gamma frequency-dependent changes in two major inhibitory cell types: fast spiking PV-expressing INs targeting perisomatic or proximal dendritic domains of PCs and regular spiking CCK-containing perisomatic targeting cells. Fast-spiking PV-positive cells (Figure 5A) showed strong potentiation of EPSCs (increased by 89.8 \u00b1 20.2%, n = 12, p=0.0010), whereas IPCSs decreased slightly but significantly (n = 5, p=0.038, Figure 5B). Combined, the latter translated into a significant rise in the EPSC-to-IPSC ratio (from 3.78 \u00b1 0.83 to 7.71 \u00b1 1.39, n = 5, p=0.012, Figure 5B). Similarly to the effect on PCs, application of mGluR5 antagonist MPEP strongly reduced the increase in p-EPSC area of PV-expressing INs (reduction by 84.6 \u00b1 4.2%, n = 5, p=0.0001, Figure 5B). Markedly different, even inverse alterations were observed in the regular firing CCK-containing perisomatic targeting INs (Figure 6A): IPSCs were increased (by 61.01 \u00b1 16.0%, n = 5, p=0.019), whereas EPSCs showed no change (reduction by 0.1 \u00b1 10.6%, n = 8, p=0.99). As such, the EPSC-to-IPSC ratio was significantly reduced in these INs (from 2.14 \u00b1 0.39 to 1.21 \u00b1 0.26, n = 5, p=0.024, Figure 6B). These data, quantified by alterations in the EPSC-to-IPSC ratio, demonstrate that gamma frequency oscillations induce cell type-specific synaptic plasticity in the CA3 inhibitory network, with enhanced net excitation of PV-expressing INs, but reduced activation of CCK-expressing INs.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/14912/elife-14912-fig5-v3.jpg)\n\n**Figure 5.:** (A) Top: A confocal image of a typical PV-expressing IN filled with biocytin. Insert: Fast firing pattern in response to depolarizing current injection. Bottom: Immuno-reactivity of the biocytin filled cell for PV. (B) Normalized EPSC (gray squares), IPSC (gray triangles), p-EPSC (red squares) and p-IPSC (blue triangles) recorded from PV-positive INs held in current-clamp mode during gamma rhythms. Administration of MPEP (50 \u00b5M) prevents the increase of p-EPSC (gray and black open triangles illustrate EPSC and p-EPSC, respectively). The significance stars compare the pre-gamma data with the marked post-gamma data. Inserts: left, representative examples of EPSC and IPSC (gray) with corresponding p-EPSC (red) and p-IPSC (blue); right, the EPSC-to-IPSC ratio before (pre) and after (post) gamma rhythms demonstrates that the excitability significantly increases in PV-positive INs.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/14912/elife-14912-fig6-v3.jpg)\n\n**Figure 6.:** (A) Top: A confocal image of a typical CCK-expressing IN filled with biocytin. Insert: Regular firing patterns in response to depolarizing current injection. Bottom: Immuno-reactivity of the biocytin filled cell for CCK. (B) Normalized EPSC (gray squares), IPSC (gray triangles), p-EPSC (red squares) and p-IPSC (blue triangles) recorded from CCK-expressing INs held in current-clamp mode during gamma frequency oscillations. The significance stars compare the pre-gamma data with the marked post-gamma data. Inserts: Left, representative examples of EPSC and IPSC (gray) with corresponding p-EPSC (red) and p-IPSC (blue); right, the EPSC-to-IPSC ratio before (pre) and after (post) gamma rhythms demonstrates that the excitability significantly decreases in CCK-positive INs.\n\n## Discussion\n\nWe have demonstrated that gamma frequency oscillations induce activity-dependent and cell type-specific synaptic plasticity in hippocampal area CA3. Moreover, our results illustrate the impact of oscillatory gamma activity on SWRs, a network state associated with the process of memory consolidation (Girardeau et al., 2009; Jadhav et al., 2012). The plastic changes require mGluR5 mediated activation, indicating that this receptor might be critically involved in memory processing.\n\nWe found that SWRs in vivo displayed a significantly enlarged area after a running episode, indicating a reinforcing effect of the running associated theta-nested gamma oscillations. Our data are well in line with a recent publication (Bittner et al., 2015) demonstrating that the induction of new place-fields initiated during active running results in altered neuronal activity during subsequent SWRs. While the oscillatory theta component does not seem to be essential for the induction of plastic changes in the hippocampus in vivo (Brandon et al., 2014), gamma rhythms are thought to constitute time windows of synchronized neural activity that promote spike-time-dependent synaptic plasticity (Axmacher et al., 2006) and enhance signal transmission (Sohal et al., 2009). In line with this, our in vitro results clearly demonstrate that a gamma frequency episode significantly affects subsequent network activities including gamma oscillations and SWRs. The gamma activity-induced effect (SWR area increase) was independent of the pharmacologic agent (KA vs. carbachol) used for their induction, but did correlate with the presence and power of gamma frequency oscillations. Indeed, activity dependent increase of SWR amplitude was shown by high-frequency electrical stimulation (Behrens et al., 2005). Thus, our results provide comprehensive data that the gamma oscillations and not the pharmacologic agents themselves (Zylla et al., 2013) are responsible for the observed network plasticity.\n\nDifferent forms of plasticity have been described for the three excitatory input systems converging on CA3 PCs: mossy fibers and associational-commissural (A/C) and perforant path (PP) projections (Urban and Barrionuevo, 1996; McMahon and Barrionuevo, 2002; Nakazawa et al., 2002; Kobayashi and Poo, 2004; Nicoll and Schmitz, 2005; Rebola et al., 2011). However, crucially, the latter publications and similar studies on hippocampal neuronal plasticity have certain methodological limitations. First, they were usually elicited by high-frequency electrical stimulation of neurons providing afferent input, whereas the predominant firing rate of CA3 PCs and their afferent neurons in vivo is far less frequent (Hahn et al., 2007; Jung and McNaughton, 1993). Second, electrical stimulation was usually limited to one of these inputs, whereas, in the intact hippocampal network, individual inputs do not act in isolation, but converge onto postsynaptic cells. Thus, during physiological activity patterns, such as gamma frequency oscillations, different inputs to CA3 PCs may act synergistically, with their joint activity resulting in a specific alteration of synaptic strength. Consequently, the here investigated oscillatory pattern might constitute a more physiological paradigm that can elucidate network-dependent mechanisms of synaptic plasticity. With our approach, we reveal a unique role of gamma frequency oscillations in activity-dependent modification of hippocampal network. Our results highlight this oscillatory network rhythm as a fundamental mechanism to induce synaptic plasticity and a potential primary driving force for memory processing. Nevertheless, the specific role of an individual input for gamma-dependent plasticity in hippocampal network remains to be clarified.\n\nOur data lend further support to the hypothesis that, overall, the two major memory relevant oscillatory patterns, gamma frequency oscillations and SWRs that are generated during different behavioral states in freely moving animals (Chrobak et al., 2000), can be considered two \u2018competing\u2019, mutually exclusive network states: spontaneous occurring SWRs disappeared shortly after onset of gamma rhythms and reappeared after their termination, both in vivo and in vitro. However, these two network patterns are not fully independent: plastic changes initiated in the network during persistent gamma activity were reflected in a subsequent altered SWR activity (Figure 1 and Figure 2). Consistent with the here observed tight link of gamma oscillations and SWR activity, sleep-dependent memory consolidation is associated with increased gamma activity (Ognjanovski et al., 2014) and cells active during exploratory behavior exhibit enhanced SWR-associated EPSCs in subsequent slice preparations (Mizunuma et al., 2014).\n\nOur data suggests that mGluR5 is a key component of the process underlying the observed plastic changes in the hippocampal CA3 network. In line with our findings, impairment of both LTP and spatial learning as well as place field encoding of novel environments induced by mGluR5 antagonists have been reported (Naie and Manahan-Vaughan, 2004; Zhang and Manahan-Vaughan, 2014). Group I mGluRs, comprising of mGluR5 and mGluR1, are preferentially expressed postsynaptically in CA3 PC dendrites (Shigemoto et al., 1997). Even though NMDAR might be involved, our results show that mGluR5 is more central in gamma network oscillation-induced synaptic plasticity. The effect can only partially be explained by NMDAR-modulation, with mGluR5 obviously exerting a more complex impact on the neuronal network dynamics, affecting both PC and IN activity. Interestingly, dysregulation of mGluR5 has been reported in several profound neurological disorders, such as schizophrenia (Conn et al., 2009; Nickols and Conn, 2014), autistic spectrum disorders (Williams, 2012) and fragile X syndrome (Michalon et al., 2012), altogether pointing towards a pivotal regulatory function for this receptor. Our results highlight mGluR5 now in the general context of memory processing and neuronal plasticity.\n\nIn contrast to the postsynaptically mediated potentiation of PCs excitatory currents, inhibitory currents only underwent minimal changes that were independent of postsynaptic activation. These differences could be explained by a cell-specific, directionally biased synaptic plasticity at PC-IN and IN-IN synapses as demonstrated for two major types of GABAergic inhibitory cells, PV- and CCK-expressing INs. Gamma network oscillations alter synaptic strength within PV-expressing INs in favor of excitation (Alle et al., 2001), while CCK-expressing INs are subject to stronger inhibition, as demonstrated by the EPSC-to-IPSC ratio analysis. Importantly, inhibition provided by these two types of GABAergic cells is not uniform. Fast-spiking PV-expressing\u00a0INs mediate a rapid, phasic-form of inhibition, which contributes to the precise timing of neuronal synchronization and emergence of network oscillations (Gloveli et al., 2005a; Sohal et al., 2009; Schlingloff et al., 2014). In contrast, regular firing CCK-expressing\u00a0INs mediate slower inhibition (Hefft and Jonas, 2005; Daw et al., 2009) and modulate excitability in cortical networks in a behavioral state-dependent manner. Thus, the two IN types mediate distinct forms of inhibition and could contribute differentially to cortical network activity. Our data now suggest that divergent forms of synaptic plasticity observed in these two IN types could result in a reduced tonic but increased phasic inhibition onto PC. These changes in turn might lead to enhanced network excitability and promote synaptic plasticity within the cortical circuits.\n\nIn summary, we conclude that gamma frequency oscillations represent a network state responsible for activity-dependent and cell type-specific synaptic plasticity, interlinking two memory-relevant network patterns, namely, gamma rhythms and SWRs.\n\n## Materials and methods\n\n### Animals\n\nExperiments were performed on P27-P33 (in vivo) and P18-P23 (in vitro) C57/Bl6 mice. All animal procedures were approved by the Regional Berlin Animal Ethics Committee (Permits: G0151/12 and T 0124/05) and were in full compliance with national regulations.\n\n### Local field potentials in vivo\n\nWe recorded LFP from head-fixed mice, a well-established approach that allowed us to conduct prolonged running episodes. Mice were first implanted with a head-holder and a recording chamber (1.5% isoflurane anesthesia) and then habituated to a spherical treadmill for around 12 days. Afterwards, a small craniotomy (approx. 2.3\u2009mm rostro-caudal and 2.5\u2009mm lateral from bregma; 1.5% isoflurane anesthesia) was performed inside the recording chamber and the exposed area covered with a layer of silicone elastomer (Kwik-Sil, World Precision Instruments). The mouse was allowed to recover for at least 2\u2009hr before the recording session started (one recording session per mouse).\n\nLFP from the left hippocampus were recorded with glass pipettes, while we were using the control of behavioral expression without a task-specific reward to target certain network patterns. To investigate the impact of a theta-nested gamma episode on SWRs we first waited for a prolonged resting period with a quietly sitting mouse on the spherical treadmill allowing us to record spontaneous SWR activity. Then, once the mouse had begun to move independently, a pressurized air stream was applied to the bottom of the Styrofoam ball, resulting in a smooth ball rotation that encouraged a running behavior accompanied by theta-nested gamma oscillations. If the mouse stopped running and began to balance the air-supported ball instead, we accelerated the ball slightly until running behavior was restored, maintaining an activity phase around 3 min in total depending on the actual running performance. Turning off the air pressure usually terminated the running behavior and initiated another resting period, once again accompanied by spontaneous occurring SWRs. In order to reduce the stress level while maintaining the attentional component, some dummy runs were performed prior to the final recording session.\n\n### Matlab analysis of in vivo data\n\nAll in vivo LFP data were analyzed in Matlab (MathWorks Inc., Natick, Massachusetts) by means of custom-made routines. We compared the SWR areas of two time periods (120\u00a0s each) ending 10\u00a0s before and starting 30\u00a0s after the prolonged running episode. LFP recordings were divided into a sharp wave (filtered 2\u201350\u00a0Hz) and a ripple (filtered 100-300\u00a0Hz) trace. We used the ripple trace to automatically preselect SWRs based on a voltage and a spectral threshold criterion. In detail, we first used a voltage threshold (mean plus six standard deviations of event-free recording) for a primary selection of individual ripples and grouped adjacent single ripples to a ripple event. We then took 70\u00a0ms cutouts of the event-free recording preceding those ripple events and calculated each maximum absolute wavelet coefficients of the complex Morlet wavelet transform (27 wavelet scales, 20 kHz sampling rate). We used the mean plus one standard deviation of this distribution as a spectral threshold criterion and discarded all ripple events, in which the maximum absolute wavelet coefficient did not exceed the threshold value. The preceding and subsequent local minima in the sharp wave trace were used to automatically identify SWR start and end points. However, the bandpass (2\u201350\u00a0Hz) filtered in vivo sharp\u00a0wave\u00a0trace still exhibited a remarkable variation, leading to incorrect boundaries in some cases. Consequently, the sharp wave, ripple and original recording traces were scrutinized by eye (Forro et al., 2015). We rejected erroneously detected SWRs and manually adjusted the automatically identified start and end points if required. Finally, the SWR area was defined in the sharp wave trace as the area beneath the curve enclosed by those start and end points. However, comparing the uncorrected automatically identified SWRs we also obtained a statistically significant difference. Spectral power densitiy of gamma frequency oscillations were determined with an Welch algorithms (pwelch) and the complex Morlet wavelet transform (cmor2-1) was used to display SWR (bandpass filter 100\u2013300\u2009Hz, 134 wavelet scales, 20 kHz sampling rate).\n\n### Slice preparation\n\nThe animals were anesthetized with inhaled isoflurane, decapitated and the brains removed. Tissue blocks containing the hippocampal formation were mounted on a Vibratome (Leica VT1200) in a chamber filled with ice-cold artificial cerebrospinal fluid (ACSF). Transverse hippocampal slices were cut at 400 \u00b5m thickness and incubated for at least 1\u2009hr in a holding \u2018interface\u2019 chamber (continuously oxygenized with carbogen and perfused with ACSF at \u223c2\u2009mL/min) and then transferred to the recording \u2018submerged\u2019 chamber (perfused at a rate of 6\u2009mL/min), both at 33 \u00b1 1\u00b0C. The solution used during cutting, incubation and recording contained (in mM): NaCl, 129; KCl, 3; NaH2PO4, 1.25; CaCl2, 1.6; MgSO4, 1.8; NaHCO3, 21; glucose, 10; saturated with 95% O2 and 5% CO2, pH 7.4; 290\u2013310 mOsm.\n\n### Local field potentials in vitro\n\nLFP were obtained from the stratum pyramidale of the hippocampal CA3 area. KA (400 nM, unless indicated otherwise) or carbachol (20 \u00b5M) were applied in the bath to induce network gamma frequency oscillations. The SWR oscillations occurred spontaneously, disappeared shortly after bath application of KA or carbachol and reappeared within a few minutes after their washout. mGluR5 and/or NMDAR activation was blocked by MPEP (50 \u00b5M, Tocris Bioscience) and/or AP5 (50 \u00b5M, Tocris Bioscience). MPEP and/or AP5 were launched simultaneously to KA, but continued throughout the entire oscillatory gamma network episode.\n\nField oscillations were low pass filtered at 5 kHz, digitized at 10 kHz (Digidata 1440A, Axon Instruments) and analyzed with the pClamp software package (notch filter 50\u2009Hz; Axon Instruments). Oscillatory peak power and frequency was determined by averaging several consecutive fast Fourier transforms (FFT). SWRs were identified and the area under curve calculated (pClamp software, Axon Instruments). A Student\u2019s t-test was used for statistical comparisons unless stated otherwise; differences were considered significant if p<0.05. Average values are expressed as mean \u00b1 SEM. Spearman\u2019s rho was used to assess statistical dependence. Pre- and post-gamma data values were normalized to the mean of all prior gamma data. The EPSC-to-IPSC ratio was used to assess the net changes in cellular excitability. We further analyzed the spectral components of the LFPs with custom routines written in Matlab. Signals were zero-phase digital filtered from 2\u2013300\u2009Hz using a Butterworth filter, 50\u2009Hz components including their harmonics were removed using a second-order infinite impulse response notch filter. A complex Morlet wavelet transform (cmor2-1) was used to display SWRs (bandpass filter 100\u2013300\u2009Hz, 134 wavelet scales, 20 kHz sampling rate).\n\n### Whole-cell recording in vitro\n\nThe patch-clamp recordings were obtained from PCs and INs of hippocampal CA3 area visualized by infrared differential interference contrast video microscopy. The intrinsic and firing properties of cells were measured in whole-cell current-clamp mode as described previously (Gloveli et al., 2005a). In order to follow the Hebbian plasticity rules, during gamma frequency oscillations, cells were recorded in current-clamp mode enabling them to generate action potentials. In an additional set of experiments, the PCs were held in voltage-clamp mode at \u221270 mV during gamma activity to prevent their depolarization. Whole-cell recording pipettes (3\u20135 M\u03a9) were filled with a solution containing (in mM): K-gluconate, 135; KCl, 5; ATP-Mg, 2; GTP-Na, 0.3; HEPES, 10; plus biocytin, 0.5% (pH 7.4 and 290 mOsm). A Multiclamp 700B amplifier and pClamp software (Axon Instruments) were used for current- and voltage-clamp recordings. The holding potential in voltage-clamp mode was either \u221270 mV or 0 mV to record the EPSCs and IPSCs, respectively. The areas under curve were calculated for EPSCs and IPSCs and the EPSC-to-IPSC ratios were determined. The seal resistance before establishing whole-cell mode was \u22652 G\u03a9. The series resistance (range 12\u201318 M\u03a9) was not compensated, but was repeatedly monitored during the experiment by measuring the amplitude of the capacitive current in response to a \u221210 mV pulse. Experiments, in which the series resistance increased by >20% were discarded. Signals were low-pass filtered at 5 kHz, digitized at 10 kHz (Digidata 1440A) and analyzed using pClamp software.\n\nThe firing properties of IN [fast (>100\u2009Hz), non-accommodating vs. regular] were studied using intrasomatic current injection (0.5 nA). Electrophysiological identification was confirmed by post hoc immunostaining and biocytin staining.\n\n### Immunolabeling\n\nFor immunolabeling of interneurons, slices were immersed overnight in a fixative solution containing 4% paraformaldehyde (PFA) in 0.1\u2009M phosphate buffer (PB), washed three times in 0.1\u2009M PB and subsequently in 0.025 phosphate-buffered saline (PBS; pH 7.3). Slices were then incubated in PBS containing 1% Triton X-100, 10% goat serum and Mouse on Mouse (M.O.M) blocking reagent (2 drops per 2.5\u2009ml solution) for 1\u2009hr at room temperature (RT). To visualize PV- and CCK-containing cells, we used antibodies against PV (mouse, Swant, Marly, CH) and CCK (mouseCURE, Los Angeles, CA) diluted 1:5000 in PBS containing 5% goat serum and 1% Triton X-100. Slices were incubated with primary antibodies for 48\u2009hr at RT. After rinsing three times in PBS, sections were incubated in the PBS solution containing 0.5% Triton X-100, 5% goat serum, goat anti-mouse conjugated with (for PV) Alexa fluor 546 (Invitrogen Corporation, Carlsbad, CA) or (for CCK) Alexa fluor 568 (Invitrogen Corporation, Carlsbad, CA) diluted 1:500 or (for biocytin-filled neurons) Alexa fluor 647 (in some experiments 350) conjugated avidin diluted 1:500 (Invitrogen Corporation, Carlsbad, CA). Slices were mounted on glass slides in the glycerol-based, aqueous mountant Vectashield (Vector Laboratories) under coverslips at 48\u2009hr after incubation with the secondary antibodies. Labeled cells were visualized using 20x and/or 60x objectives on a confocal microscope system (Leica). To examine the full extent of somato-dendritic compartments and axonal arborization, the intensity of Z-stack projections was optimized and the images were overlaid.\n\n### Biocytin staining\n\nSlices were processed as described previously in principle (Dugladze et al., 2012). For biocytin staining, slices with biocytin-filled cells were removed from the chamber and immersed overnight in a fixative solution containing 4% paraformaldehyde (PFA) in 0.1\u2009M phosphate buffer (PB). Slices were washed three times in 0.1\u2009M PB. The avidin\u2013biocytin complex reaction (Vectastain ABC kit, Camon laboratory service) took place overnight at 4\u00b0C in the presence of 0.3% Triton X-100 (Sigma-Aldrich). Afterwards the sections were rinsed several times before development with 0.02% diaminobenzidine in 0.1\u2009M PB. The reaction product was intensified with 0.5% OsO4 and sections were mounted and coverslipped. Stained cells were reconstructed with the aid of a Neurolucida 3D system (MicroBrightField, Inc).\n\n### Additional Information\n\nMatlab source code files for the calculation of FFT, Welch\u2019s spectrogram and the wavelet transformation are available on our homepage (https://glovelilab.wordpress.com).\n",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "45a40a47-b681-46b2-ad54-8fc5c733c9da",
+      "submission_id": "b06bb6a4-96a1-462e-88fb-d49af769f5f8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marlene Bartos, Albert-Ludwigs-Universit\u00e4t Freiburg , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.14912.009](https://doi.org/10.7554/eLife.14912.009)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"Cell-Specific synaptic Plasticity Induced by Network Oscillations\" for consideration by eLife. Your article has been favorably evaluated by Eve Marder (Senior editor) and three reviewers, one of whom, Marlene Bartos, is a member of our Board of Reviewing Editors.\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nYour study provides experimental evidence for the potentiation of excitatory synaptic inputs onto PV-interneurons in the hippocampal area CA3 during pharmacologically induced gamma oscillations in acute slice preparations. It further shows that network oscillations increase the strength of excitatory synaptic inputs which in turn lead to changes in sharp wave ripple complexes (SWRs). The group I metabotropic glutamate receptor 5 (mGluR5) and NMDA receptors are involved in this form of synaptic plasticity. Interestingly, excitatory inputs onto PV-expressing interneurons are enhanced but not the ones onto CCK cells suggesting an interneuron type-specific effect.\n\nEssential revisions:\n\nTwo reviewers and the reviewing editor discussed your study on cell-specific synaptic plasticity induced by network oscillations. All reviewers viewed the study as 'important' because gamma oscillations are observed during the learning process. However, some main criticisms have been formulated which are listed below.\n\n1) It remained still unclear how gamma oscillations affect the amplitude of SWRs. This criticism should be addressed by additional data analysis. One of the reviewers proposed the analysis of the correlation between the amplitude of gamma oscillations and the increase from pre-SWR to post-SWR. Moreover, the relationship between gamma and theta oscillations to frequency of SWR, the number of ripples per sharp wave and the duration of sharp waves should be analyzed.\n\n2) The reviewers wished in some cases a higher number of experiments. In some cases only 4 experiments have been performed. Thus, increase the n to > 4.\n\n3) The reviewers wished to know whether the magnitude of EPSC increases correlated with the magnitude of SWR increases.\n\n4) The authors have presented data regarding the sensitivity of LFP and PC's to mGluR antagonists. A similar set of experiments are required for PV-interneurons. Addressing these points in a time window of maximal 2 months would be important to improve the study.\n",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b5081a21-85d5-4637-a038-5c2592f06b4f",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C1",
+      "claim": "Gamma rhythms contribute to the process of memory encoding.",
+      "claim_type": "EXPLICIT",
+      "source": "Gamma rhythms are known to contribute to the process of memory encoding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge without specific data in this manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "a7999621-3416-4462-b117-27064608722b",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C2",
+      "claim": "Gamma rhythms lead to activity-dependent modification of hippocampal networks in awake behaving mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Using local field potential recording in awake behaving mice and concomitant field potential and whole-cell recordings in slice preparations we found that gamma rhythms lead to activity-dependent modification of hippocampal networks, including alterations in sharp wave-ripple complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from in vivo LFP recordings and in vitro slice preparations described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "9a70cb01-9730-4d72-b438-7152880b2f99",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C3",
+      "claim": "Gamma rhythms cause alterations in sharp wave-ripple complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using local field potential recording in awake behaving mice and concomitant field potential and whole-cell recordings in slice preparations we found that gamma rhythms lead to activity-dependent modification of hippocampal networks, including alterations in sharp wave-ripple complexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations in both in vivo and in vitro preparations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "842faea1-2bcd-4b46-8e12-658201af4e65",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C4",
+      "claim": "Network plasticity is expressed as long-lasting increases in sharp wave-associated synaptic currents.",
+      "claim_type": "EXPLICIT",
+      "source": "Network plasticity, expressed as long-lasting increases in sharp wave-associated synaptic currents, exhibits enhanced excitatory synaptic strength in pyramidal cells that is induced postsynaptically and depends on metabotropic glutamate receptor-5 activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by whole-cell recording data showing increased synaptic currents.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "fd66055e-40f8-484e-a5b7-55c4f2d5db6d",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C5",
+      "claim": "Enhanced excitatory synaptic strength in pyramidal cells is induced postsynaptically.",
+      "claim_type": "EXPLICIT",
+      "source": "Network plasticity, expressed as long-lasting increases in sharp wave-associated synaptic currents, exhibits enhanced excitatory synaptic strength in pyramidal cells that is induced postsynaptically and depends on metabotropic glutamate receptor-5 activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments comparing current-clamp vs voltage-clamp conditions during gamma oscillations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "a187bfcd-1b1d-4f6f-8275-30e910e5f961",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C6",
+      "claim": "Enhanced excitatory synaptic strength in pyramidal cells depends on metabotropic glutamate receptor-5 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Network plasticity, expressed as long-lasting increases in sharp wave-associated synaptic currents, exhibits enhanced excitatory synaptic strength in pyramidal cells that is induced postsynaptically and depends on metabotropic glutamate receptor-5 activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by pharmacological experiments using MPEP, an mGluR5 antagonist.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "153e276e-0556-4d6a-84aa-6794651bea7f",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C7",
+      "claim": "Alteration of inhibitory synaptic strength is independent of postsynaptic activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In sharp contrast, alteration of inhibitory synaptic strength is independent of postsynaptic activation and less pronounced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experiments showing similar IPSC changes in both current-clamp and voltage-clamp modes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "3243ac48-9bb6-44ac-998f-1946b7befba7",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C8",
+      "claim": "Alteration of inhibitory synaptic strength is less pronounced than excitatory changes.",
+      "claim_type": "EXPLICIT",
+      "source": "In sharp contrast, alteration of inhibitory synaptic strength is independent of postsynaptic activation and less pronounced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative comparison of EPSC and IPSC area changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "a7666ce6-57d6-4ac7-a6fc-f7692daa76b6",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C9",
+      "claim": "There is cell type-specific, directionally biased synaptic plasticity of parvalbumin-expressing interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we found a cell type-specific, directionally biased synaptic plasticity of two major types of GABAergic cells, parvalbumin- and cholecystokinin-expressing interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by whole-cell recordings from identified PV-positive interneurons showing specific patterns of EPSC and IPSC changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "83ed0aba-cfcf-4cf1-9473-a72bd2e6f3f8",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C10",
+      "claim": "There is cell type-specific, directionally biased synaptic plasticity of cholecystokinin-expressing interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we found a cell type-specific, directionally biased synaptic plasticity of two major types of GABAergic cells, parvalbumin- and cholecystokinin-expressing interneurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by whole-cell recordings from identified CCK-positive interneurons showing specific patterns of EPSC and IPSC changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "3bb46eb1-afee-46bb-b885-da52062a98ad",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C11",
+      "claim": "Gamma frequency oscillations represent a network state that introduces long-lasting synaptic plasticity in a cell-specific manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we propose that gamma frequency oscillations represent a network state that introduces long-lasting synaptic plasticity in a cell-specific manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a synthesis of the experimental findings showing differential plasticity across cell types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "074db721-276d-4468-88cd-0582c3472cb3",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C12",
+      "claim": "Neural oscillations play an important role in learning and memory processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural oscillations are thought to play an important role in learning and memory processing (Axmacher et al., 2006; D\u00fczel et al., 2010; Nyhus and Curran, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "be5d109c-499b-4b16-81eb-b690b8d73da8",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C13",
+      "claim": "Learning is based on activity-dependent modification of synaptic strength to incorporate transient experiences into persistent memory traces.",
+      "claim_type": "EXPLICIT",
+      "source": "Learning is based on activity-dependent modification of synaptic strength in order to incorporate transient experiences into persistent memory traces (Citri and Malenka, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "a55d7d7a-b61b-4fc2-8ef5-13846ccbf478",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C14",
+      "claim": "Gamma-band oscillations are involved in memory encoding.",
+      "claim_type": "EXPLICIT",
+      "source": "Gamma-band oscillations and sharp wave-ripple activity (SWR), involved in memory encoding (Jutras and Buffalo, 2010) and consolidation (Buzs\u00e1ki, 1989; Girardeau et al., 2009; Jadhav et al., 2012), respectively, appear to be interlinked in the course of memory processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "5532cf13-817e-4a37-92b5-237428f75add",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C15",
+      "claim": "Sharp wave-ripple activity is involved in memory consolidation.",
+      "claim_type": "EXPLICIT",
+      "source": "Gamma-band oscillations and sharp wave-ripple activity (SWR), involved in memory encoding (Jutras and Buffalo, 2010) and consolidation (Buzs\u00e1ki, 1989; Girardeau et al., 2009; Jadhav et al., 2012), respectively, appear to be interlinked in the course of memory processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "cd564d1d-8cd6-47bc-8602-a17c353e2c0d",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C16",
+      "claim": "Gamma-band oscillations and sharp wave-ripple activity are interlinked in the course of memory processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Gamma-band oscillations and sharp wave-ripple activity (SWR), involved in memory encoding (Jutras and Buffalo, 2010) and consolidation (Buzs\u00e1ki, 1989; Girardeau et al., 2009; Jadhav et al., 2012), respectively, appear to be interlinked in the course of memory processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and is a premise for the current study.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "8b931b70-71e8-43ca-92d2-895a7fdd2e33",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C17",
+      "claim": "The hippocampus is an important structure for memory acquisition, consolidation and spatial orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "The hippocampus is an important structure for memory acquisition, consolidation and spatial orientation (Buzs\u00e1ki and Moser, 2013; Eichenbaum and Cohen, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "3a9386b6-2eb2-4913-b4cd-8c40d433b18b",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C18",
+      "claim": "The CA3 area constitutes an autoassociative neural network.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the hippocampus, the CA3 area constitutes an autoassociative neural network, in which three pathways converge: mossy fibers and associational-commissural (A/C) and perforant path (PP) projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about hippocampal anatomy and function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "585360bd-c265-42fe-8f11-882d9d40e40d",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C19",
+      "claim": "Three pathways converge in the CA3 area: mossy fibers, associational-commissural projections, and perforant path projections.",
+      "claim_type": "EXPLICIT",
+      "source": "Within the hippocampus, the CA3 area constitutes an autoassociative neural network, in which three pathways converge: mossy fibers and associational-commissural (A/C) and perforant path (PP) projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established anatomical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "54d58829-cd70-41a4-9451-f9181a5f8759",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C20",
+      "claim": "Each of the three pathways in CA3 displays plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Each of these pathways display plasticity (Berzhanskaya et al., 1998; Malenka and Bear, 2004; Nicoll and Schmitz, 2005), which has seen the CA3 area harnessed as a well-suited and popular model for studying activity-dependent modification of synaptic transmission.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "39bee06a-c183-49f0-a880-a845c9556232",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C21",
+      "claim": "GABAergic interneurons play a major role in controlling oscillatory activity in cortical networks.",
+      "claim_type": "EXPLICIT",
+      "source": "GABAergic interneurons (INs) have been shown to play a major role in controlling oscillatory activity, as well as synaptic transmission and plasticity in cortical networks (Ben-Ari, 2006; Klausberger and Somogyi, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "aa4d833f-eb7d-4f21-9770-af425ecbe8f3",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C22",
+      "claim": "GABAergic interneurons play a major role in controlling synaptic transmission and plasticity in cortical networks.",
+      "claim_type": "EXPLICIT",
+      "source": "GABAergic interneurons (INs) have been shown to play a major role in controlling oscillatory activity, as well as synaptic transmission and plasticity in cortical networks (Ben-Ari, 2006; Klausberger and Somogyi, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "9af27a4f-cb02-47a0-b69e-3133b00fc7be",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C23",
+      "claim": "Parvalbumin-expressing and cholecystokinin-expressing interneurons provide distinct forms of inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Major inhibitory cell types, parvalbumin- (PV) and cholecystokinin (CCK)-expressing INs provide distinct forms of inhibition and have complementary roles in cortical circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about interneuron subtypes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "b7f1c89a-f51f-4979-9662-644afa9120cc",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C24",
+      "claim": "Parvalbumin-expressing and cholecystokinin-expressing interneurons have complementary roles in cortical circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Major inhibitory cell types, parvalbumin- (PV) and cholecystokinin (CCK)-expressing INs provide distinct forms of inhibition and have complementary roles in cortical circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about interneuron subtypes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "c85115c2-3f80-4251-b10c-d677120247ac",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C25",
+      "claim": "PV-expressing interneurons act as fast signaling devices.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, PV-expressing INs are assumed to act as \"fast signaling devices\" (Jonas et al., 2004) and provide precisely-timed phase-modulated inhibition to control the timing of discharge in individual neurons as well as the synchronization and emergence of oscillations at the level of the network (Cobb et al., 1995; Gloveli et al., 2005a; Bartos et al., 2007; Sohal et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "2e3793e5-1168-4b73-b03d-dcf62c5f2429",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C26",
+      "claim": "PV-expressing interneurons provide precisely-timed phase-modulated inhibition to control the timing of discharge in individual neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, PV-expressing INs are assumed to act as \"fast signaling devices\" (Jonas et al., 2004) and provide precisely-timed phase-modulated inhibition to control the timing of discharge in individual neurons as well as the synchronization and emergence of oscillations at the level of the network (Cobb et al., 1995; Gloveli et al., 2005a; Bartos et al., 2007; Sohal et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "8adac041-a011-4c36-a1df-c6108142a39c",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C27",
+      "claim": "PV-expressing interneurons control the synchronization and emergence of oscillations at the network level.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, PV-expressing INs are assumed to act as \"fast signaling devices\" (Jonas et al., 2004) and provide precisely-timed phase-modulated inhibition to control the timing of discharge in individual neurons as well as the synchronization and emergence of oscillations at the level of the network (Cobb et al., 1995; Gloveli et al., 2005a; Bartos et al., 2007; Sohal et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "aea206cf-8e7f-48ca-b891-0c7bde8a4978",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C28",
+      "claim": "CCK-expressing interneurons show a slower but variable discharge pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, CCK-expressing INs show a slower but variable discharge pattern and asynchronous GABA release (Hefft and Jonas, 2005; Daw et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "453c2018-67e6-45c0-84cf-629830948e17",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C29",
+      "claim": "CCK-expressing interneurons show asynchronous GABA release.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, CCK-expressing INs show a slower but variable discharge pattern and asynchronous GABA release (Hefft and Jonas, 2005; Daw et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "1445921c-9106-4996-9317-7f61e133928b",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C30",
+      "claim": "CCK-expressing interneurons express various receptors for neuromodulators both post- and presynaptically.",
+      "claim_type": "EXPLICIT",
+      "source": "High expression of various receptors for neuromodulators (Freund, 2003; Armstrong and Soltesz, 2012) post- and presynaptically, suggests that these INs may regulate excitability in the network by mediating inhibition in a behavioral state-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "f3e80b1a-72b0-439b-9b80-dd70e351fe1b",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C31",
+      "claim": "CCK-expressing interneurons may regulate excitability in the network by mediating inhibition in a behavioral state-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "High expression of various receptors for neuromodulators (Freund, 2003; Armstrong and Soltesz, 2012) post- and presynaptically, suggests that these INs may regulate excitability in the network by mediating inhibition in a behavioral state-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the expression of neuromodulator receptors.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "85957136-d462-42e7-bff3-5be9bc6e7f23",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C32",
+      "claim": "In vivo theta-nested gamma oscillations have an enhancing effect on subsequent SWRs in awake behaving mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that in vivo theta-nested gamma oscillations have an enhancing effect on subsequent SWRs in awake behaving mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vivo LFP recording data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "5743cf6c-f422-4d9f-b4f3-31eade6129e6",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C33",
+      "claim": "Changes in SWR-associated excitatory synaptic strength between pyramidal cells are mediated postsynaptically.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the underlying molecular, cellular and synaptic mechanisms in vitro slice preparations showed changes in SWR-associated excitatory synaptic strength between pyramidal cells (PC) that are mediated postsynaptically and depend on metabotropic glutamate receptor-5 (mGluR5) activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by voltage-clamp vs current-clamp experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "1ce7e586-06e2-4841-aa97-e620f33f3a26",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C34",
+      "claim": "Changes in SWR-associated excitatory synaptic strength between pyramidal cells depend on metabotropic glutamate receptor-5 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the underlying molecular, cellular and synaptic mechanisms in vitro slice preparations showed changes in SWR-associated excitatory synaptic strength between pyramidal cells (PC) that are mediated postsynaptically and depend on metabotropic glutamate receptor-5 (mGluR5) activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by pharmacological experiments with MPEP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "5ef8dbb7-b9c7-47a0-b0ae-149247fb186c",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C35",
+      "claim": "Spontaneous SWRs occur in resting states of quietly sitting mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Using local field potential (LFP) recordings from dorsal hippocampus we found spontaneous SWRs in resting states of quietly sitting mice, while running behavior was accompanied by theta-nested gamma oscillations (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vivo LFP recordings and Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "350bb66a-bb0d-408e-bc6a-7e88d21104b7",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C36",
+      "claim": "Running behavior is accompanied by theta-nested gamma oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Using local field potential (LFP) recordings from dorsal hippocampus we found spontaneous SWRs in resting states of quietly sitting mice, while running behavior was accompanied by theta-nested gamma oscillations (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vivo LFP recordings and Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "ffba8887-5270-4e93-8dde-dd726052eacd",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C37",
+      "claim": "Post-gamma SWR areas exhibited significant enlargement at an average of 25.7%.",
+      "claim_type": "EXPLICIT",
+      "source": "The post-gamma SWR (p-SWR) areas exhibited significantly enlargement at an average of 25.7% (n = 11, p=0.0006, Figure 1C) and no significant change in frequency (SWR: 0.18 \u00b1 0.10 Hz; p-SWR: 0.16 \u00b1 0.10 Hz, n = 11, p=0.23).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis of in vivo LFP data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "0695e5c9-30d8-4da0-a30a-05c1ba5f7048",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C38",
+      "claim": "Post-gamma SWR frequency showed no significant change compared to pre-gamma SWR.",
+      "claim_type": "EXPLICIT",
+      "source": "The post-gamma SWR (p-SWR) areas exhibited significantly enlargement at an average of 25.7% (n = 11, p=0.0006, Figure 1C) and no significant change in frequency (SWR: 0.18 \u00b1 0.10 Hz; p-SWR: 0.16 \u00b1 0.10 Hz, n = 11, p=0.23).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis of in vivo LFP data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "67f3df55-7852-4532-80f1-3c0f871873f7",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C39",
+      "claim": "Spontaneously occurring SWRs disappeared shortly after bath application of kainic acid in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In good agreement with our in vivo results, SWRs and gamma frequency oscillation patterns represented two 'competing', mutually exclusive network states in vitro: spontaneously occurring SWRs (mean frequency: 1.33 \u00b1 0.10 Hz, n = 30) disappeared shortly (31.0 \u00b1 2.8 s) after bath application of kainic acid (KA, 400 nM) and reappeared within a few minutes (14.6 \u00b1 0.7 min) after KA washout (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro LFP recordings shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "0778e2fe-d8b0-4e4b-8a7d-b43031c3e0ee",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C40",
+      "claim": "SWRs reappeared within a few minutes after KA washout in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "In good agreement with our in vivo results, SWRs and gamma frequency oscillation patterns represented two 'competing', mutually exclusive network states in vitro: spontaneously occurring SWRs (mean frequency: 1.33 \u00b1 0.10 Hz, n = 30) disappeared shortly (31.0 \u00b1 2.8 s) after bath application of kainic acid (KA, 400 nM) and reappeared within a few minutes (14.6 \u00b1 0.7 min) after KA washout (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro LFP recordings shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "3c03097e-4c2d-4e08-8fc1-700ba7f48792",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C41",
+      "claim": "Post-gamma SWRs exhibited a significantly increased area by 69.7% in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "The p-SWRs exhibited a significantly increased area (by 69.7 \u00b1 15.1%, n = 30, p<0.0001, Figure 2C) and a small decrease in incidence (to 0.90 \u00b1 0.10 Hz, n = 30, p<0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis of in vitro LFP data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "59be191c-adc6-4439-991b-2131c25044c4",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C42",
+      "claim": "Post-gamma SWRs showed a small decrease in incidence in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "The p-SWRs exhibited a significantly increased area (by 69.7 \u00b1 15.1%, n = 30, p<0.0001, Figure 2C) and a small decrease in incidence (to 0.90 \u00b1 0.10 Hz, n = 30, p<0.0001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis of in vitro LFP data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "9f4aa1b8-a29e-499f-928b-fb9bab13ebd0",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C43",
+      "claim": "There was a slight but significant increase in average ripple number by 8.5% after gamma oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found a slight but significant increase in average ripple number (by 8.5 \u00b1 2.5%, n = 12, p=0.0065) and an elevated oscillatory ripple frequency (by 4.1 \u00b1 1.8%, n = 12, p=0.041).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis of in vitro LFP data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "e21aabff-0490-4c80-bf71-136fd94cb479",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C44",
+      "claim": "There was an elevated oscillatory ripple frequency by 4.1% after gamma oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we found a slight but significant increase in average ripple number (by 8.5 \u00b1 2.5%, n = 12, p=0.0065) and an elevated oscillatory ripple frequency (by 4.1 \u00b1 1.8%, n = 12, p=0.041).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis of in vitro LFP data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "a422b0a5-f9f9-442f-9211-989615cf0087",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C45",
+      "claim": "Post-gamma sharp wave amplitude increased by 44.6%.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes were accompanied by a significant increase of post-gamma sharp wave amplitude (by 44.6 \u00b1 19.3%, n = 12, p=0.042) and a non-significantly altered sharp wave duration (increased by 2.5 \u00b1 2.9%, n = 12, p=0.41).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis of in vitro LFP data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "6644555c-11b5-4918-b50e-9ad1bfe93409",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C46",
+      "claim": "Sharp wave duration showed no significant change after gamma oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes were accompanied by a significant increase of post-gamma sharp wave amplitude (by 44.6 \u00b1 19.3%, n = 12, p=0.042) and a non-significantly altered sharp wave duration (increased by 2.5 \u00b1 2.9%, n = 12, p=0.41).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis of in vitro LFP data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "5526d262-1fd1-4226-9e86-9853f8752b91",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C47",
+      "claim": "Gamma oscillations induced by carbachol resulted in a significant increase in SWR area by 21.0%.",
+      "claim_type": "EXPLICIT",
+      "source": "In good agreement with these data, gamma oscillations induced by bath application of carbachol (20 \u00b5M), an alternative drug to trigger persistent gamma oscillations based on a different mechanisms (Fisahn et al., 1998; 2002; Hajos et al., 2004), also resulted in a significant increase in SWR area (by 21.0 \u00b1 4.2%, n = 16, p=0.0002, see also Zylla et al., 2013), indicating that gamma activity itself, and not the pharmacological agent, is responsible for the network alterations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by in vitro experiments using carbachol instead of kainic acid.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "2fb6eb81-a2fc-40dc-a4b3-9e6b6f42d454",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C48",
+      "claim": "Gamma activity itself, and not the pharmacological agent, is responsible for the network alterations.",
+      "claim_type": "EXPLICIT",
+      "source": "In good agreement with these data, gamma oscillations induced by bath application of carbachol (20 \u00b5M), an alternative drug to trigger persistent gamma oscillations based on a different mechanisms (Fisahn et al., 1998; 2002; Hajos et al., 2004), also resulted in a significant increase in SWR area (by 21.0 \u00b1 4.2%, n = 16, p=0.0002, see also Zylla et al., 2013), indicating that gamma activity itself, and not the pharmacological agent, is responsible for the network alterations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of effects induced by different pharmacological agents (KA vs carbachol).",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "e46240c5-0477-460e-bd56-66cd23983593",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C49",
+      "claim": "There is a highly significant positive correlation of network gamma oscillations with SWR-area increase.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found a highly significant positive correlation of the network gamma oscillations (power\u00d7duration) with the SWR-area increase (R = 0.58, n = 30, p=0.0007) and no correlation with the SWR incidence (R = \u22120.28, n = 30, p=0.14).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical correlation analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "82e5f9e7-a982-4b92-9e94-d9f93a08321e",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C50",
+      "claim": "There is no correlation between network gamma oscillations and SWR incidence.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we found a highly significant positive correlation of the network gamma oscillations (power\u00d7duration) with the SWR-area increase (R = 0.58, n = 30, p=0.0007) and no correlation with the SWR incidence (R = \u22120.28, n = 30, p=0.14).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical correlation analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "c270c87c-331f-462e-9d89-5ef03d44fc61",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C51",
+      "claim": "When KA application failed to introduce gamma frequency oscillations, no changes in SWR-area were observed.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, in a few cases where KA application failed to introduce gamma frequency oscillations, no changes in SWR-area were observed (reduction by 6.0 \u00b1 19.4%, n = 8, p=0.35).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by control experiments where gamma oscillations did not occur.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "90063f89-b3af-4fcd-b1c4-b431c92d09db",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C52",
+      "claim": "Carbachol-triggered gamma oscillations exhibited less spectral power than KA-triggered gamma oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in comparison to KA, carbachol-triggered gamma oscillations exhibited less spectral power (p=0.007) and accordingly induced smaller SWR area changes (p=0.02), suggesting an activity-dependent mechanism of oscillation-induced neuronal network plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of spectral power between KA and carbachol conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "03d36405-8d17-40e2-9091-fa2c23763558",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C53",
+      "claim": "Carbachol-triggered gamma oscillations induced smaller SWR area changes than KA-triggered gamma oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in comparison to KA, carbachol-triggered gamma oscillations exhibited less spectral power (p=0.007) and accordingly induced smaller SWR area changes (p=0.02), suggesting an activity-dependent mechanism of oscillation-induced neuronal network plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison of SWR area changes between KA and carbachol conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "bc037d40-4e98-459d-bf75-fa59535a3175",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C54",
+      "claim": "The data suggest an activity-dependent mechanism of oscillation-induced neuronal network plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in comparison to KA, carbachol-triggered gamma oscillations exhibited less spectral power (p=0.007) and accordingly induced smaller SWR area changes (p=0.02), suggesting an activity-dependent mechanism of oscillation-induced neuronal network plasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the correlation between gamma power and SWR changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "0738bbfb-fdbd-48f9-9359-c3a74926efe0",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C55",
+      "claim": "Gamma rhythms have a reinforcing effect on subsequent gamma episodes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we also found a reinforcing effect of gamma rhythms on subsequent gamma episodes (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "66813b96-ef25-4fab-929e-48787b2a7164",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C56",
+      "claim": "Spectral power of gamma rhythms increased from 0.72 x 10-4 \u00b1 0.39 x 10-4 mV2/Hz to 1.34 x 10-4 \u00b1 0.50 x 10-4 mV2/Hz after an intervening gamma episode.",
+      "claim_type": "EXPLICIT",
+      "source": "Spectral power of gamma rhythms increased from 0.72 x 10-4 \u00b1 0.39 x 10-4 mV2/Hz to 1.34 x 10-4 \u00b1 0.50 x 10-4 mV2/Hz (n = 10, p=0.003) while frequency remained unchanged, illustrating that the intervening gamma episode has a reinforcing effect.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by quantitative analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "54b0f17e-0deb-4a3d-a922-1979a4e38d0f",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C57",
+      "claim": "Gamma frequency remained unchanged after an intervening gamma episode.",
+      "claim_type": "EXPLICIT",
+      "source": "Spectral power of gamma rhythms increased from 0.72 x 10-4 \u00b1 0.39 x 10-4 mV2/Hz to 1.34 x 10-4 \u00b1 0.50 x 10-4 mV2/Hz (n = 10, p=0.003) while frequency remained unchanged, illustrating that the intervening gamma episode has a reinforcing effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative analysis of gamma frequency.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "88a176a8-fb3c-4778-87f2-689d203c4568",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C58",
+      "claim": "Administration of mGluR5 antagonist MPEP largely reduced the SWR area increase by 83.4%.",
+      "claim_type": "EXPLICIT",
+      "source": "Administration of mGluR5 antagonist, 2-methyl-6-(phenylethynyl)pyridine (MPEP) largely reduced the SWR area increase (by 83.4 \u00b1 6.2%, n = 16, p<0.0001, Figure 2C and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pharmacological experiments shown in Figure 2C and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "54742737-8245-4560-a7c6-e2d5095b1ce0",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C59",
+      "claim": "NMDAR antagonist AP5 reduced the SWR area increase by 51.7%.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar, albeit less pronounced effect was observed for the NMDAR antagonist, DL-2-Amino-5-phosphonopentanoic acid (AP5) (reduction by 51.7 \u00b1 8.9%, n = 13, p<0.0001, Figure 2D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pharmacological experiments shown in Figure 2D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "7e86115b-9463-4e6a-b03a-999f1d04adf8",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C60",
+      "claim": "Joint application of mGluR5 and NMDAR antagonists abolished the SWR area increase by 91.8%.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, this form of plasticity was abolished by joint application of the mGluR5 and NMDAR antagonists (reduction by 91.8 \u00b1 12.2%, n = 14, p<0.0001, Figure 2D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pharmacological experiments shown in Figure 2D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "94a1c526-17c8-4254-85f5-25a76b4792e7",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C61",
+      "claim": "Cells held in current-clamp mode during gamma oscillations exhibit long-lasting increase in the area of p-EPSCs by 104.2%.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data demonstrate that parallel to the field p-SWR (Figure 2), cells held in current-clamp mode during gamma oscillations (see Materials and Methods) exhibit long-lasting increase in the area of p-EPSCs (by 104.2 \u00b1 21.2%, n = 14, p=0.0003, Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by whole-cell recording data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "eeb4d185-36e0-40d9-8c3e-20b13f27e313",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C62",
+      "claim": "The change in EPSC strength correlates positively with the magnitude of SWR-area increase.",
+      "claim_type": "EXPLICIT",
+      "source": "The change in the EPSC strength correlates positively with the magnitude of SWR-area increase (R = 0.56, n = 14, p=0.040).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical correlation analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "2ccbc0d3-a40b-466e-ab64-f4971ab0b85d",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C63",
+      "claim": "p-EPSCs recorded in PCs held in voltage-clamp mode at \u221270 mV during gamma oscillations decreased by 40.6%.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, p-EPSCs recorded in PCs held in voltage-clamp mode at \u221270 mV during gamma oscillations decreased rather than increased (by 40.6 \u00b1 7.7%, n = 13, p=0.0002, Figure 4B), suggesting that the increase of EPSC area depend on PC postsynaptic depolarization.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by whole-cell recording data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "969fc9a9-49fa-4ddf-a34a-b6d89c5fdd28",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C64",
+      "claim": "The increase of EPSC area depends on PC postsynaptic depolarization.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, p-EPSCs recorded in PCs held in voltage-clamp mode at \u221270 mV during gamma oscillations decreased rather than increased (by 40.6 \u00b1 7.7%, n = 13, p=0.0002, Figure 4B), suggesting that the increase of EPSC area depend on PC postsynaptic depolarization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of current-clamp vs voltage-clamp conditions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "57f6979e-bb24-4a3e-ad38-33d6deacae8a",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C65",
+      "claim": "Bath application of MPEP strongly reduced the increase in p-EPSC area of CA3 PCs by 90.3%.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the effects on the LFP, bath application of MPEP strongly reduced the increase in p-EPSC area of CA3 PCs (reduction by 90.3 \u00b1 7.1%, n = 6, p=0.0001, Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pharmacological experiments shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "07b5d84e-f778-40f0-981d-611e07a96884",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C66",
+      "claim": "p-IPSCs showed a less pronounced but still significant increase of 32.8% in PCs held in current-clamp mode.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the strongly potentiated p-EPSC, p-IPSCs showed a less pronounced but still significant increase (32.8 \u00b1 12.9%, n = 8, p=0.039, Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by whole-cell recording data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "f07ccfe9-e5f7-405c-b141-4978e573a303",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C67",
+      "claim": "p-EPSC and p-IPSC alterations resulted in a significant increase in the PC EPSC-to-IPSC ratio by 44.4%.",
+      "claim_type": "EXPLICIT",
+      "source": "Altogether, p-EPSC and p-IPSC alterations resulted in a significant increase in the PC EPSC-to-IPSC ratio (by 44.4 \u00b1 14.6%, p=0.019, Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis of the EPSC-to-IPSC ratio shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "486d755f-ea02-49f1-a963-c019c76ee442",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C68",
+      "claim": "PCs held in voltage-clamp mode during gamma oscillations exhibited a similar IPSC increase of 30.3%.",
+      "claim_type": "EXPLICIT",
+      "source": "PCs held in voltage-clamp mode during gamma oscillations exhibited a similar IPSC increase of 30.3 \u00b1 7.3% (n = 6, p=0.0089, Figure 4C), indicating activity-dependent changes in presynaptic inhibitory INs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by whole-cell recording data shown in Figure 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "dda85a61-58f0-4ce9-800a-b169bc79dec5",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C69",
+      "claim": "IPSC changes indicate activity-dependent changes in presynaptic inhibitory interneurons.",
+      "claim_type": "EXPLICIT",
+      "source": "PCs held in voltage-clamp mode during gamma oscillations exhibited a similar IPSC increase of 30.3 \u00b1 7.3% (n = 6, p=0.0089, Figure 4C), indicating activity-dependent changes in presynaptic inhibitory INs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the independence of IPSC changes on postsynaptic voltage-clamp.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "a0cd45b5-f8aa-4150-9f95-e2c6214901e7",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C70",
+      "claim": "Fast-spiking PV-positive cells showed strong potentiation of EPSCs increased by 89.8%.",
+      "claim_type": "EXPLICIT",
+      "source": "Fast-spiking PV-positive cells (Figure 5A) showed strong potentiation of EPSCs (increased by 89.8 \u00b1 20.2%, n = 12, p=0.0010), whereas IPCSs decreased slightly but significantly (n = 5, p=0.038, Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by whole-cell recording data from identified PV-positive interneurons shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "0ba20b8d-5a70-4865-82d1-87c54d87804d",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C71",
+      "claim": "Fast-spiking PV-positive cells showed IPSCs that decreased slightly but significantly.",
+      "claim_type": "EXPLICIT",
+      "source": "Fast-spiking PV-positive cells (Figure 5A) showed strong potentiation of EPSCs (increased by 89.8 \u00b1 20.2%, n = 12, p=0.0010), whereas IPCSs decreased slightly but significantly (n = 5, p=0.038, Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by whole-cell recording data from identified PV-positive interneurons shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "200fe646-12e7-44e9-90b6-5bb4b3291538",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C72",
+      "claim": "The EPSC-to-IPSC ratio in PV-positive cells increased significantly from 3.78 to 7.71.",
+      "claim_type": "EXPLICIT",
+      "source": "Combined, the latter translated into a significant rise in the EPSC-to-IPSC ratio (from 3.78 \u00b1 0.83 to 7.71 \u00b1 1.39, n = 5, p=0.012, Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "3134733a-10fb-48e9-bda8-f343cc08501c",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C73",
+      "claim": "Application of mGluR5 antagonist MPEP strongly reduced the increase in p-EPSC area of PV-expressing INs by 84.6%.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly to the effect on PCs, application of mGluR5 antagonist MPEP strongly reduced the increase in p-EPSC area of PV-expressing INs (reduction by 84.6 \u00b1 4.2%, n = 5, p=0.0001, Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pharmacological experiments shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "6e4b64d5-721c-4956-a292-b03816094d57",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C74",
+      "claim": "CCK-containing perisomatic targeting INs showed IPSCs that were increased by 61.01%.",
+      "claim_type": "EXPLICIT",
+      "source": "Markedly different, even inverse alterations were observed in the regular firing CCK-containing perisomatic targeting INs (Figure 6A): IPSCs were increased (by 61.01 \u00b1 16.0%, n = 5, p=0.019), whereas EPSCs showed no change (reduction by 0.1 \u00b1 10.6%, n = 8, p=0.99).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by whole-cell recording data from identified CCK-positive interneurons shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "29716c2b-7a89-4683-8b15-2fce26995976",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C75",
+      "claim": "CCK-containing perisomatic targeting INs showed EPSCs with no change.",
+      "claim_type": "EXPLICIT",
+      "source": "Markedly different, even inverse alterations were observed in the regular firing CCK-containing perisomatic targeting INs (Figure 6A): IPSCs were increased (by 61.01 \u00b1 16.0%, n = 5, p=0.019), whereas EPSCs showed no change (reduction by 0.1 \u00b1 10.6%, n = 8, p=0.99).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by whole-cell recording data from identified CCK-positive interneurons shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "1a71d58a-33bd-41cc-8847-6a3863bc95f0",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C76",
+      "claim": "The EPSC-to-IPSC ratio in CCK-expressing INs was significantly reduced from 2.14 to 1.21.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, the EPSC-to-IPSC ratio was significantly reduced in these INs (from 2.14 \u00b1 0.39 to 1.21 \u00b1 0.26, n = 5, p=0.024, Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "43bcf5a1-afa7-430b-8e49-c63a525e8a5d",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C77",
+      "claim": "Gamma frequency oscillations induce cell type-specific synaptic plasticity in the CA3 inhibitory network, with enhanced net excitation of PV-expressing INs.",
+      "claim_type": "EXPLICIT",
+      "source": "These data, quantified by alterations in the EPSC-to-IPSC ratio, demonstrate that gamma frequency oscillations induce cell type-specific synaptic plasticity in the CA3 inhibitory network, with enhanced net excitation of PV-expressing INs, but reduced activation of CCK-expressing INs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a synthesis of the experimental findings on PV and CCK interneurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "bee62e63-8aae-4542-bd52-9a901f51b8b6",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C78",
+      "claim": "Gamma frequency oscillations induce cell type-specific synaptic plasticity in the CA3 inhibitory network, with reduced activation of CCK-expressing INs.",
+      "claim_type": "EXPLICIT",
+      "source": "These data, quantified by alterations in the EPSC-to-IPSC ratio, demonstrate that gamma frequency oscillations induce cell type-specific synaptic plasticity in the CA3 inhibitory network, with enhanced net excitation of PV-expressing INs, but reduced activation of CCK-expressing INs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a synthesis of the experimental findings on PV and CCK interneurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "645b3911-0d2e-46b7-ad21-d356eedbaaf6",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C79",
+      "claim": "The data illustrate the impact of oscillatory gamma activity on SWRs, a network state associated with memory consolidation.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our results illustrate the impact of oscillatory gamma activity on SWRs, a network state associated with the process of memory consolidation (Girardeau et al., 2009; Jadhav et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data and citations to previous literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "ea13a88d-c70f-4715-91a9-81142eb765d2",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C80",
+      "claim": "The plastic changes require mGluR5 mediated activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The plastic changes require mGluR5 mediated activation, indicating that this receptor might be critically involved in memory processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by pharmacological experiments with MPEP.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "7dc0d96d-4582-4849-b6ef-e0d8f2d9ee74",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C81",
+      "claim": "mGluR5 might be critically involved in memory processing.",
+      "claim_type": "EXPLICIT",
+      "source": "The plastic changes require mGluR5 mediated activation, indicating that this receptor might be critically involved in memory processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the role of mGluR5 in the observed plasticity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "ebf7ffcd-502f-4f1f-93bc-660cae685543",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C82",
+      "claim": "The induction of new place-fields initiated during active running results in altered neuronal activity during subsequent SWRs.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data are well in line with a recent publication (Bittner et al., 2015) demonstrating that the induction of new place-fields initiated during active running results in altered neuronal activity during subsequent SWRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "bc601418-823e-4e40-bf29-1eb49c06ba77",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C83",
+      "claim": "The oscillatory theta component does not seem to be essential for the induction of plastic changes in the hippocampus in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "While the oscillatory theta component does not seem to be essential for the induction of plastic changes in the hippocampus in vivo (Brandon et al., 2014), gamma rhythms are thought to constitute time windows of synchronized neural activity that promote spike-time-dependent synaptic plasticity (Axmacher et al., 2006) and enhance signal transmission (Sohal et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "11471626-053b-43b1-95ef-0817b11dc349",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C84",
+      "claim": "Gamma rhythms constitute time windows of synchronized neural activity that promote spike-time-dependent synaptic plasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "While the oscillatory theta component does not seem to be essential for the induction of plastic changes in the hippocampus in vivo (Brandon et al., 2014), gamma rhythms are thought to constitute time windows of synchronized neural activity that promote spike-time-dependent synaptic plasticity (Axmacher et al., 2006) and enhance signal transmission (Sohal et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "63eee88b-4d74-41e8-a8b5-5c2e430e683d",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C85",
+      "claim": "Gamma rhythms enhance signal transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "While the oscillatory theta component does not seem to be essential for the induction of plastic changes in the hippocampus in vivo (Brandon et al., 2014), gamma rhythms are thought to constitute time windows of synchronized neural activity that promote spike-time-dependent synaptic plasticity (Axmacher et al., 2006) and enhance signal transmission (Sohal et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "012284b9-cae5-4c9c-a328-3ba5a622cb6a",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C86",
+      "claim": "Activity dependent increase of SWR amplitude was shown by high-frequency electrical stimulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, activity dependent increase of SWR amplitude was shown by high-frequency electrical stimulation (Behrens et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "73b159d8-85ee-495b-83ef-332edb9de3c8",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C87",
+      "claim": "The predominant firing rate of CA3 PCs and their afferent neurons in vivo is far less frequent than high-frequency electrical stimulation used in traditional plasticity studies.",
+      "claim_type": "EXPLICIT",
+      "source": "First, they were usually elicited by high-frequency electrical stimulation of neurons providing afferent input, whereas the predominant firing rate of CA3 PCs and their afferent neurons in vivo is far less frequent (Hahn et al., 2007; Jung and McNaughton, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "1852ea1b-67aa-4d39-bc27-161dd398f436",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C88",
+      "claim": "During physiological activity patterns, different inputs to CA3 PCs may act synergistically, with their joint activity resulting in a specific alteration of synaptic strength.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, during physiological activity patterns, such as gamma frequency oscillations, different inputs to CA3 PCs may act synergistically, with their joint activity resulting in a specific alteration of synaptic strength.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the limitations of traditional electrical stimulation approaches.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "331eff8c-8e29-4add-a071-3b85b2577274",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C89",
+      "claim": "The oscillatory network rhythm represents a fundamental mechanism to induce synaptic plasticity and a potential primary driving force for memory processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results highlight this oscillatory network rhythm as a fundamental mechanism to induce synaptic plasticity and a potential primary driving force for memory processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a synthesis and interpretation of the experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "99f24ac0-8185-4688-8d03-359845d84124",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C90",
+      "claim": "Gamma frequency oscillations and SWRs can be considered two 'competing', mutually exclusive network states.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data lend further support to the hypothesis that, overall, the two major memory relevant oscillatory patterns, gamma frequency oscillations and SWRs that are generated during different behavioral states in freely moving animals (Chrobak et al., 2000), can be considered two 'competing', mutually exclusive network states: spontaneous occurring SWRs disappeared shortly after onset of gamma rhythms and reappeared after their termination, both in vivo and in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations in both in vivo and in vitro preparations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "599aced5-65de-468c-bba1-101d07e5cd26",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C91",
+      "claim": "Sleep-dependent memory consolidation is associated with increased gamma activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the here observed tight link of gamma oscillations and SWR activity, sleep-dependent memory consolidation is associated with increased gamma activity (Ognjanovski et al., 2014) and cells active during exploratory behavior exhibit enhanced SWR-associated EPSCs in subsequent slice preparations (Mizunuma et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "46b04e67-6d65-4f8e-b10e-e352e0b31346",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C92",
+      "claim": "Cells active during exploratory behavior exhibit enhanced SWR-associated EPSCs in subsequent slice preparations.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the here observed tight link of gamma oscillations and SWR activity, sleep-dependent memory consolidation is associated with increased gamma activity (Ognjanovski et al., 2014) and cells active during exploratory behavior exhibit enhanced SWR-associated EPSCs in subsequent slice preparations (Mizunuma et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "08b79445-6613-4653-b2bb-636bd43057de",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C93",
+      "claim": "Impairment of both LTP and spatial learning induced by mGluR5 antagonists have been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our findings, impairment of both LTP and spatial learning as well as place field encoding of novel environments induced by mGluR5 antagonists have been reported (Naie and Manahan-Vaughan, 2004; Zhang and Manahan-Vaughan, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "a7691ced-ed71-4f82-828f-9a890735e96e",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C94",
+      "claim": "Impairment of place field encoding of novel environments induced by mGluR5 antagonists have been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our findings, impairment of both LTP and spatial learning as well as place field encoding of novel environments induced by mGluR5 antagonists have been reported (Naie and Manahan-Vaughan, 2004; Zhang and Manahan-Vaughan, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "8c1059a9-e5f7-4c6e-9d65-3d157e6ad8d0",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C95",
+      "claim": "Group I mGluRs, comprising of mGluR5 and mGluR1, are preferentially expressed postsynaptically in CA3 PC dendrites.",
+      "claim_type": "EXPLICIT",
+      "source": "Group I mGluRs, comprising of mGluR5 and mGluR1, are preferentially expressed postsynaptically in CA3 PC dendrites (Shigemoto et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "a10710f5-bb6c-45e5-ba7d-01cbc4ecfcf5",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C96",
+      "claim": "mGluR5 exerts a more complex impact on neuronal network dynamics than NMDAR, affecting both PC and IN activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though NMDAR might be involved, our results show that mGluR5 is more central in gamma network oscillation-induced synaptic plasticity. The effect can only partially be explained by NMDAR-modulation, with mGluR5 obviously exerting a more complex impact on the neuronal network dynamics, affecting both PC and IN activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of MPEP and AP5 effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "a3c58325-27e0-402e-a7e2-f91951e44952",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C97",
+      "claim": "Dysregulation of mGluR5 has been reported in schizophrenia.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, dysregulation of mGluR5 has been reported in several profound neurological disorders, such as schizophrenia (Conn et al., 2009; Nickols and Conn, 2014), autistic spectrum disorders (Williams, 2012) and fragile X syndrome (Michalon et al., 2012), altogether pointing towards a pivotal regulatory function for this receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "ff5dc8b8-71f7-49f3-82c5-1da05262ac48",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C98",
+      "claim": "Dysregulation of mGluR5 has been reported in autistic spectrum disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, dysregulation of mGluR5 has been reported in several profound neurological disorders, such as schizophrenia (Conn et al., 2009; Nickols and Conn, 2014), autistic spectrum disorders (Williams, 2012) and fragile X syndrome (Michalon et al., 2012), altogether pointing towards a pivotal regulatory function for this receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "9960a05e-b531-4593-8c60-136e2f996d2a",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C99",
+      "claim": "Dysregulation of mGluR5 has been reported in fragile X syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, dysregulation of mGluR5 has been reported in several profound neurological disorders, such as schizophrenia (Conn et al., 2009; Nickols and Conn, 2014), autistic spectrum disorders (Williams, 2012) and fragile X syndrome (Michalon et al., 2012), altogether pointing towards a pivotal regulatory function for this receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "84aeacad-c1f7-4fe9-8e40-9991cd1474c5",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C100",
+      "claim": "Dysregulation of mGluR5 in multiple neurological disorders points towards a pivotal regulatory function for this receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, dysregulation of mGluR5 has been reported in several profound neurological disorders, such as schizophrenia (Conn et al., 2009; Nickols and Conn, 2014), autistic spectrum disorders (Williams, 2012) and fragile X syndrome (Michalon et al., 2012), altogether pointing towards a pivotal regulatory function for this receptor.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the association of mGluR5 with multiple disorders.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "eb950267-fb1e-47cd-a4f8-aa3a16cfb4db",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C101",
+      "claim": "Fast-spiking PV-expressing INs mediate a rapid, phasic-form of inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Fast-spiking PV-expressing INs mediate a rapid, phasic-form of inhibition, which contributes to the precise timing of neuronal synchronization and emergence of network oscillations (Gloveli et al., 2005a; Sohal et al., 2009; Schlingloff et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "fe45607a-0c47-429c-b390-df151c4b3ddc",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C102",
+      "claim": "Regular firing CCK-expressing INs mediate slower inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, regular firing CCK-expressing INs mediate slower inhibition (Hefft and Jonas, 2005; Daw et al., 2009) and modulate excitability in cortical networks in a behavioral state-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "f1e48899-913e-4489-9f83-c4f52ec3fcd0",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C103",
+      "claim": "Regular firing CCK-expressing INs modulate excitability in cortical networks in a behavioral state-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, regular firing CCK-expressing INs mediate slower inhibition (Hefft and Jonas, 2005; Daw et al., 2009) and modulate excitability in cortical networks in a behavioral state-dependent manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about CCK interneurons.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "768c14c3-f6cc-42a7-83a5-386271a0cdaa",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C104",
+      "claim": "Divergent forms of synaptic plasticity in PV and CCK interneuron types could result in a reduced tonic but increased phasic inhibition onto PC.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data now suggest that divergent forms of synaptic plasticity observed in these two IN types could result in a reduced tonic but increased phasic inhibition onto PC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential plasticity observed in PV and CCK interneurons.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "d9619bbf-b9b6-4798-a376-da87cdf08733",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C105",
+      "claim": "Changes in inhibition might lead to enhanced network excitability and promote synaptic plasticity within cortical circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "These changes in turn might lead to enhanced network excitability and promote synaptic plasticity within the cortical circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the observed changes in inhibition.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "66fd3d7b-a3b9-469c-aece-48b877620ce4",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "claim_id": "C106",
+      "claim": "Gamma frequency oscillations represent a network state responsible for activity-dependent and cell type-specific synaptic plasticity, interlinking gamma rhythms and SWRs.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, we conclude that gamma frequency oscillations represent a network state responsible for activity-dependent and cell type-specific synaptic plasticity, interlinking two memory-relevant network patterns, namely, gamma rhythms and SWRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion synthesizing all experimental findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cf4bff22-6ca2-45a4-9dc4-f8f42c8ec343",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "In vivo theta-nested gamma oscillations enhance subsequent sharp wave-ripple (SWR) activity in awake behaving mice. Running behavior is accompanied by theta-nested gamma oscillations, while resting states exhibit spontaneous SWRs. Post-gamma SWR areas increased significantly by 25.7% (n=11, p=0.0006) with no significant change in frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32, C35-C38 are well-supported by in vivo LFP recordings from awake behaving mice (Figure 1). The behavioral paradigm appropriately controls for state-dependent network patterns, and statistical analysis demonstrates significant SWR area increase with adequate sample size and p-values. The lack of frequency change provides important specificity to the effect.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "6f2a8d45-c096-4976-85c8-2227bbfafd66",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In vitro, gamma oscillations and SWRs represent mutually exclusive network states, with gamma activity inducing long-lasting enhancement of subsequent SWRs. KA-induced gamma oscillations caused SWRs to disappear and reappear after washout with significantly increased area (69.7%, n=30, p<0.0001), increased ripple number (8.5%, p=0.0065), elevated ripple frequency (4.1%, p=0.041), and increased sharp wave amplitude (44.6%, p=0.042).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C46 and C90 are strongly supported by in vitro slice recordings (Figure 2). The mutual exclusivity of the two network states is clearly demonstrated, and multiple quantitative measures of SWR enhancement are provided with appropriate statistics and adequate sample sizes. The consistency between in vivo and in vitro findings strengthens the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "e9cdd025-c90c-402a-a34d-278b2e9e3989",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Gamma activity itself, rather than the pharmacological agent, is responsible for SWR enhancement. Carbachol-induced gamma oscillations also increased SWR area (21.0%, n=16, p=0.0002), though with less spectral power and smaller effects than KA. When KA failed to induce gamma oscillations, no SWR changes occurred (n=8, p=0.35).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C48 and C51-C54 provide critical pharmacological controls demonstrating that the effect is specific to gamma oscillations rather than drug effects. The use of two different gamma-inducing agents (KA and carbachol) with different mechanisms, the correlation between gamma power and SWR changes, and the negative control when gamma failed to occur all support an activity-dependent mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "438a49fb-a16b-400c-8120-f17efee1c911",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Network gamma oscillations (power\u00d7duration) show a highly significant positive correlation with SWR-area increase (R=0.58, n=30, p=0.0007) but no correlation with SWR incidence (R=-0.28, n=30, p=0.14).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C50 are supported by appropriate correlation analysis with adequate sample size. The positive correlation with SWR area but not incidence provides mechanistic insight, suggesting gamma affects the strength rather than frequency of SWR events. The correlation coefficient and p-values are appropriately reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "4872a77f-e29e-4872-a667-dade588df94c",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Gamma rhythms have a reinforcing effect on subsequent gamma episodes. Spectral power of gamma rhythms increased significantly from 0.72\u00d710\u207b\u2074 to 1.34\u00d710\u207b\u2074 mV\u00b2/Hz (n=10, p=0.003) after an intervening gamma episode, while frequency remained unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 are supported by experimental data in Figure 3 showing that gamma oscillations potentiate subsequent gamma activity. The experimental design using weak gamma episodes before and after conventional gamma is appropriate, and the statistical analysis is sound. This demonstrates a form of network metaplasticity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "f6527194-c88a-4dfd-95d3-50088516bed6",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The gamma-induced SWR enhancement depends on mGluR5 and NMDAR activation. MPEP (mGluR5 antagonist) reduced SWR area increase by 83.4% (n=16, p<0.0001), AP5 (NMDAR antagonist) reduced it by 51.7% (n=13, p<0.0001), and combined application abolished the effect (91.8% reduction, n=14, p<0.0001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60, C6, C34, and C80 are well-supported by pharmacological experiments (Figure 2C-E). The use of selective antagonists with appropriate controls, the dose-dependent and additive effects, and the statistical rigor all support the conclusion that mGluR5 and NMDAR are critical for this plasticity. The greater effect of MPEP suggests mGluR5 is more central to the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "af46b61b-d37b-4b03-b81e-a871692519f4",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Gamma oscillations induce postsynaptically-mediated enhancement of excitatory synaptic strength in pyramidal cells. Cells in current-clamp during gamma showed increased p-EPSC area (104.2%, n=14, p=0.0003) that correlated with SWR-area increase (R=0.56, p=0.040), while voltage-clamped cells showed decreased p-EPSCs (40.6%, n=13, p=0.0002).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C64, C5, and C33 are strongly supported by whole-cell recordings (Figure 4B). The critical comparison between current-clamp and voltage-clamp conditions during gamma provides compelling evidence for postsynaptic dependence. The correlation with field SWR changes links cellular and network levels. The experimental design appropriately tests the Hebbian requirement for postsynaptic depolarization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "2f0edd67-93fb-4cae-87e7-20d4e4fdd9ba",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "mGluR5 antagonist MPEP strongly reduced the increase in p-EPSC area of CA3 pyramidal cells by 90.3% (n=6, p=0.0001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 is supported by pharmacological experiments (Figure 4B) showing that MPEP blocks the EPSC potentiation at the cellular level, consistent with the field recording results. The effect size is large and statistically significant, confirming mGluR5's critical role in the cellular mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "9afc1bca-2119-4590-ad65-2bd1fc2e1357",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Inhibitory synaptic plasticity in pyramidal cells is independent of postsynaptic activation and less pronounced than excitatory changes. p-IPSCs increased modestly (32.8%, n=8, p=0.039) in current-clamp and similarly in voltage-clamp (30.3%, n=6, p=0.0089), resulting in increased EPSC-to-IPSC ratio (44.4%, p=0.019).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C69, C7, and C8 are well-supported by whole-cell recordings (Figure 4C-D). The key finding that IPSC changes are independent of postsynaptic voltage-clamp, unlike EPSCs, indicates a presynaptic mechanism. The smaller magnitude compared to EPSC changes and the resulting shift in E/I balance are appropriately quantified and statistically supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "8bb2e423-5d4b-4889-afa6-a7aff5170e86",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "PV-expressing interneurons show cell type-specific synaptic plasticity with enhanced net excitation after gamma oscillations. EPSCs increased strongly (89.8%, n=12, p=0.0010) while IPSCs decreased slightly (n=5, p=0.038), resulting in increased EPSC-to-IPSC ratio (from 3.78 to 7.71, n=5, p=0.012). MPEP reduced EPSC potentiation by 84.6% (n=5, p=0.0001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C73, C9, and C77 are strongly supported by whole-cell recordings from identified PV+ interneurons (Figure 5). The immunohistochemical identification of cell type, the bidirectional changes in excitation and inhibition, and the mGluR5 dependence are all well-documented. The shift in E/I ratio toward excitation has important functional implications for network dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "bf62dd75-bf18-4162-99bb-e4ac211efb1c",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "CCK-expressing interneurons show opposite plasticity to PV cells, with reduced net excitation. IPSCs increased (61.01%, n=5, p=0.019) while EPSCs showed no change (0.1% reduction, n=8, p=0.99), resulting in decreased EPSC-to-IPSC ratio (from 2.14 to 1.21, n=5, p=0.024).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C76, C10, and C78 are well-supported by recordings from identified CCK+ interneurons (Figure 6). The cell type-specific and directionally opposite plasticity compared to PV cells is clearly demonstrated. The lack of EPSC change combined with increased IPSCs provides a distinct mechanistic profile. This cell-type specificity is a major finding of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "b5c837c1-9eb2-436a-8b24-cdce525398aa",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Gamma frequency oscillations represent a network state that introduces long-lasting, cell type-specific synaptic plasticity, interlinking gamma rhythms and SWRs in memory-relevant network patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C106, C2-C4 represent the main conclusion synthesizing all experimental findings. The evidence from in vivo and in vitro preparations, across network, cellular, and molecular levels, with cell type-specific effects in pyramidal cells and two interneuron subtypes, strongly supports this conclusion. The mechanistic link between encoding-related gamma and consolidation-related SWRs is a novel and important contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "b75362a2-e203-42ff-a028-667abf255903",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "mGluR5 exerts a more complex impact on neuronal network dynamics than NMDAR, affecting both pyramidal cell and interneuron activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C96 is supported by the comparison of MPEP and AP5 effects across multiple experiments. MPEP consistently showed larger effects than AP5 (83.4% vs 51.7% reduction in SWR area increase), and mGluR5 blockade affected both pyramidal cells and PV interneurons. The inference that mGluR5 has a more complex role is reasonable given the data, though the exact mechanisms remain to be fully elucidated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "d4671fda-96e8-488b-8296-61204ba73727",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Divergent forms of synaptic plasticity in PV and CCK interneuron types could result in reduced tonic but increased phasic inhibition onto pyramidal cells, potentially leading to enhanced network excitability and promoting synaptic plasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C104-C105 represent reasonable inferences from the differential plasticity observed in PV and CCK interneurons, but direct evidence for the proposed shift from tonic to phasic inhibition is not provided. The speculation about enhanced network excitability is plausible but would require additional experiments measuring pyramidal cell excitability or network activity patterns to confirm.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "9b0a64f6-a0c2-477c-a850-4f9ed74f7fe3",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "mGluR5 might be critically involved in memory processing, and gamma oscillations represent a fundamental mechanism and potential primary driving force for memory processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C81 and C89 extend beyond the direct experimental evidence. While the data show mGluR5 is critical for gamma-induced plasticity and gamma affects SWRs (a consolidation-related pattern), direct evidence linking these findings to memory behavior is not provided in this study. These are reasonable speculations based on the literature context, but would require behavioral memory experiments to confirm.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "ef0894e9-268c-45c1-91a9-86a136fdc5e6",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Background claims establishing the roles of gamma oscillations, SWRs, hippocampal anatomy, and interneuron subtypes in memory processing and network function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C12-C31 represent established knowledge from prior literature, appropriately cited. These provide the necessary context for the current study but are not novel findings. The citations appear appropriate and the background knowledge is accurately represented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "838a33a5-eeb5-4b25-ab12-54a3e7c4efcb",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Discussion claims contextualizing the findings within prior literature on memory consolidation, place fields, theta oscillations, mGluR5 function, and interneuron properties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79, C82-C87, C91-C95, C97-C103 appropriately cite and discuss relevant prior literature. The authors correctly attribute findings to cited work and make reasonable connections between their results and the broader literature. These claims provide important context but represent discussion rather than novel experimental findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    },
+    {
+      "id": "1b367959-55cc-4504-8260-e3153ff64353",
+      "content_id": "01cac508-316f-4c58-a21d-17cc75111027",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "During physiological activity patterns like gamma oscillations, different inputs to CA3 pyramidal cells may act synergistically, with their joint activity resulting in specific alterations of synaptic strength.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C88 is a reasonable speculation based on the limitations of traditional electrical stimulation approaches, but the current study does not directly test the synergistic action of different inputs. The experiments induce global gamma oscillations but do not dissect the contributions of specific input pathways (mossy fiber, A/C, PP). This would require pathway-specific manipulations or recordings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T23:51:53.508718Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "85957136-d462-42e7-bff3-5be9bc6e7f23",
+      "result_id": "cf4bff22-6ca2-45a4-9dc4-f8f42c8ec343"
+    },
+    {
+      "claim_id": "5ef8dbb7-b9c7-47a0-b0ae-149247fb186c",
+      "result_id": "cf4bff22-6ca2-45a4-9dc4-f8f42c8ec343"
+    },
+    {
+      "claim_id": "350bb66a-bb0d-408e-bc6a-7e88d21104b7",
+      "result_id": "cf4bff22-6ca2-45a4-9dc4-f8f42c8ec343"
+    },
+    {
+      "claim_id": "ffba8887-5270-4e93-8dde-dd726052eacd",
+      "result_id": "cf4bff22-6ca2-45a4-9dc4-f8f42c8ec343"
+    },
+    {
+      "claim_id": "0695e5c9-30d8-4da0-a30a-05c1ba5f7048",
+      "result_id": "cf4bff22-6ca2-45a4-9dc4-f8f42c8ec343"
+    },
+    {
+      "claim_id": "67f3df55-7852-4532-80f1-3c0f871873f7",
+      "result_id": "6f2a8d45-c096-4976-85c8-2227bbfafd66"
+    },
+    {
+      "claim_id": "0778e2fe-d8b0-4e4b-8a7d-b43031c3e0ee",
+      "result_id": "6f2a8d45-c096-4976-85c8-2227bbfafd66"
+    },
+    {
+      "claim_id": "3c03097e-4c2d-4e08-8fc1-700ba7f48792",
+      "result_id": "6f2a8d45-c096-4976-85c8-2227bbfafd66"
+    },
+    {
+      "claim_id": "59be191c-adc6-4439-991b-2131c25044c4",
+      "result_id": "6f2a8d45-c096-4976-85c8-2227bbfafd66"
+    },
+    {
+      "claim_id": "9f4aa1b8-a29e-499f-928b-fb9bab13ebd0",
+      "result_id": "6f2a8d45-c096-4976-85c8-2227bbfafd66"
+    },
+    {
+      "claim_id": "e21aabff-0490-4c80-bf71-136fd94cb479",
+      "result_id": "6f2a8d45-c096-4976-85c8-2227bbfafd66"
+    },
+    {
+      "claim_id": "a422b0a5-f9f9-442f-9211-989615cf0087",
+      "result_id": "6f2a8d45-c096-4976-85c8-2227bbfafd66"
+    },
+    {
+      "claim_id": "6644555c-11b5-4918-b50e-9ad1bfe93409",
+      "result_id": "6f2a8d45-c096-4976-85c8-2227bbfafd66"
+    },
+    {
+      "claim_id": "99f24ac0-8185-4688-8d03-359845d84124",
+      "result_id": "6f2a8d45-c096-4976-85c8-2227bbfafd66"
+    },
+    {
+      "claim_id": "5526d262-1fd1-4226-9e86-9853f8752b91",
+      "result_id": "e9cdd025-c90c-402a-a34d-278b2e9e3989"
+    },
+    {
+      "claim_id": "2fb6eb81-a2fc-40dc-a4b3-9e6b6f42d454",
+      "result_id": "e9cdd025-c90c-402a-a34d-278b2e9e3989"
+    },
+    {
+      "claim_id": "c270c87c-331f-462e-9d89-5ef03d44fc61",
+      "result_id": "e9cdd025-c90c-402a-a34d-278b2e9e3989"
+    },
+    {
+      "claim_id": "90063f89-b3af-4fcd-b1c4-b431c92d09db",
+      "result_id": "e9cdd025-c90c-402a-a34d-278b2e9e3989"
+    },
+    {
+      "claim_id": "03d36405-8d17-40e2-9091-fa2c23763558",
+      "result_id": "e9cdd025-c90c-402a-a34d-278b2e9e3989"
+    },
+    {
+      "claim_id": "bc037d40-4e98-459d-bf75-fa59535a3175",
+      "result_id": "e9cdd025-c90c-402a-a34d-278b2e9e3989"
+    },
+    {
+      "claim_id": "e46240c5-0477-460e-bd56-66cd23983593",
+      "result_id": "438a49fb-a16b-400c-8120-f17efee1c911"
+    },
+    {
+      "claim_id": "82e5f9e7-a982-4b92-9e94-d9f93a08321e",
+      "result_id": "438a49fb-a16b-400c-8120-f17efee1c911"
+    },
+    {
+      "claim_id": "0738bbfb-fdbd-48f9-9359-c3a74926efe0",
+      "result_id": "4872a77f-e29e-4872-a667-dade588df94c"
+    },
+    {
+      "claim_id": "66813b96-ef25-4fab-929e-48787b2a7164",
+      "result_id": "4872a77f-e29e-4872-a667-dade588df94c"
+    },
+    {
+      "claim_id": "54b0f17e-0deb-4a3d-a922-1979a4e38d0f",
+      "result_id": "4872a77f-e29e-4872-a667-dade588df94c"
+    },
+    {
+      "claim_id": "88a176a8-fb3c-4778-87f2-689d203c4568",
+      "result_id": "f6527194-c88a-4dfd-95d3-50088516bed6"
+    },
+    {
+      "claim_id": "54742737-8245-4560-a7c6-e2d5095b1ce0",
+      "result_id": "f6527194-c88a-4dfd-95d3-50088516bed6"
+    },
+    {
+      "claim_id": "7e86115b-9463-4e6a-b03a-999f1d04adf8",
+      "result_id": "f6527194-c88a-4dfd-95d3-50088516bed6"
+    },
+    {
+      "claim_id": "a187bfcd-1b1d-4f6f-8275-30e910e5f961",
+      "result_id": "f6527194-c88a-4dfd-95d3-50088516bed6"
+    },
+    {
+      "claim_id": "1ce7e586-06e2-4841-aa97-e620f33f3a26",
+      "result_id": "f6527194-c88a-4dfd-95d3-50088516bed6"
+    },
+    {
+      "claim_id": "ea13a88d-c70f-4715-91a9-81142eb765d2",
+      "result_id": "f6527194-c88a-4dfd-95d3-50088516bed6"
+    },
+    {
+      "claim_id": "94a1c526-17c8-4254-85f5-25a76b4792e7",
+      "result_id": "af46b61b-d37b-4b03-b81e-a871692519f4"
+    },
+    {
+      "claim_id": "eeb4d185-36e0-40d9-8c3e-20b13f27e313",
+      "result_id": "af46b61b-d37b-4b03-b81e-a871692519f4"
+    },
+    {
+      "claim_id": "2ccbc0d3-a40b-466e-ab64-f4971ab0b85d",
+      "result_id": "af46b61b-d37b-4b03-b81e-a871692519f4"
+    },
+    {
+      "claim_id": "969fc9a9-49fa-4ddf-a34a-b6d89c5fdd28",
+      "result_id": "af46b61b-d37b-4b03-b81e-a871692519f4"
+    },
+    {
+      "claim_id": "fd66055e-40f8-484e-a5b7-55c4f2d5db6d",
+      "result_id": "af46b61b-d37b-4b03-b81e-a871692519f4"
+    },
+    {
+      "claim_id": "5743cf6c-f422-4d9f-b4f3-31eade6129e6",
+      "result_id": "af46b61b-d37b-4b03-b81e-a871692519f4"
+    },
+    {
+      "claim_id": "57f6979e-bb24-4a3e-ad38-33d6deacae8a",
+      "result_id": "2f0edd67-93fb-4cae-87e7-20d4e4fdd9ba"
+    },
+    {
+      "claim_id": "07b5d84e-f778-40f0-981d-611e07a96884",
+      "result_id": "9afc1bca-2119-4590-ad65-2bd1fc2e1357"
+    },
+    {
+      "claim_id": "f07ccfe9-e5f7-405c-b141-4978e573a303",
+      "result_id": "9afc1bca-2119-4590-ad65-2bd1fc2e1357"
+    },
+    {
+      "claim_id": "486d755f-ea02-49f1-a963-c019c76ee442",
+      "result_id": "9afc1bca-2119-4590-ad65-2bd1fc2e1357"
+    },
+    {
+      "claim_id": "dda85a61-58f0-4ce9-800a-b169bc79dec5",
+      "result_id": "9afc1bca-2119-4590-ad65-2bd1fc2e1357"
+    },
+    {
+      "claim_id": "153e276e-0556-4d6a-84aa-6794651bea7f",
+      "result_id": "9afc1bca-2119-4590-ad65-2bd1fc2e1357"
+    },
+    {
+      "claim_id": "3243ac48-9bb6-44ac-998f-1946b7befba7",
+      "result_id": "9afc1bca-2119-4590-ad65-2bd1fc2e1357"
+    },
+    {
+      "claim_id": "a0cd45b5-f8aa-4150-9f95-e2c6214901e7",
+      "result_id": "8bb2e423-5d4b-4889-afa6-a7aff5170e86"
+    },
+    {
+      "claim_id": "0ba20b8d-5a70-4865-82d1-87c54d87804d",
+      "result_id": "8bb2e423-5d4b-4889-afa6-a7aff5170e86"
+    },
+    {
+      "claim_id": "200fe646-12e7-44e9-90b6-5bb4b3291538",
+      "result_id": "8bb2e423-5d4b-4889-afa6-a7aff5170e86"
+    },
+    {
+      "claim_id": "3134733a-10fb-48e9-bda8-f343cc08501c",
+      "result_id": "8bb2e423-5d4b-4889-afa6-a7aff5170e86"
+    },
+    {
+      "claim_id": "a7666ce6-57d6-4ac7-a6fc-f7692daa76b6",
+      "result_id": "8bb2e423-5d4b-4889-afa6-a7aff5170e86"
+    },
+    {
+      "claim_id": "43bcf5a1-afa7-430b-8e49-c63a525e8a5d",
+      "result_id": "8bb2e423-5d4b-4889-afa6-a7aff5170e86"
+    },
+    {
+      "claim_id": "6e4b64d5-721c-4956-a292-b03816094d57",
+      "result_id": "bf62dd75-bf18-4162-99bb-e4ac211efb1c"
+    },
+    {
+      "claim_id": "29716c2b-7a89-4683-8b15-2fce26995976",
+      "result_id": "bf62dd75-bf18-4162-99bb-e4ac211efb1c"
+    },
+    {
+      "claim_id": "1a71d58a-33bd-41cc-8847-6a3863bc95f0",
+      "result_id": "bf62dd75-bf18-4162-99bb-e4ac211efb1c"
+    },
+    {
+      "claim_id": "83ed0aba-cfcf-4cf1-9473-a72bd2e6f3f8",
+      "result_id": "bf62dd75-bf18-4162-99bb-e4ac211efb1c"
+    },
+    {
+      "claim_id": "bee62e63-8aae-4542-bd52-9a901f51b8b6",
+      "result_id": "bf62dd75-bf18-4162-99bb-e4ac211efb1c"
+    },
+    {
+      "claim_id": "3bb46eb1-afee-46bb-b885-da52062a98ad",
+      "result_id": "b5c837c1-9eb2-436a-8b24-cdce525398aa"
+    },
+    {
+      "claim_id": "66fd3d7b-a3b9-469c-aece-48b877620ce4",
+      "result_id": "b5c837c1-9eb2-436a-8b24-cdce525398aa"
+    },
+    {
+      "claim_id": "a7999621-3416-4462-b117-27064608722b",
+      "result_id": "b5c837c1-9eb2-436a-8b24-cdce525398aa"
+    },
+    {
+      "claim_id": "9a70cb01-9730-4d72-b438-7152880b2f99",
+      "result_id": "b5c837c1-9eb2-436a-8b24-cdce525398aa"
+    },
+    {
+      "claim_id": "842faea1-2bcd-4b46-8e12-658201af4e65",
+      "result_id": "b5c837c1-9eb2-436a-8b24-cdce525398aa"
+    },
+    {
+      "claim_id": "a10710f5-bb6c-45e5-ba7d-01cbc4ecfcf5",
+      "result_id": "b75362a2-e203-42ff-a028-667abf255903"
+    },
+    {
+      "claim_id": "768c14c3-f6cc-42a7-83a5-386271a0cdaa",
+      "result_id": "d4671fda-96e8-488b-8296-61204ba73727"
+    },
+    {
+      "claim_id": "d9619bbf-b9b6-4798-a376-da87cdf08733",
+      "result_id": "d4671fda-96e8-488b-8296-61204ba73727"
+    },
+    {
+      "claim_id": "7dc0d96d-4582-4849-b6ef-e0d8f2d9ee74",
+      "result_id": "9b0a64f6-a0c2-477c-a850-4f9ed74f7fe3"
+    },
+    {
+      "claim_id": "331eff8c-8e29-4add-a071-3b85b2577274",
+      "result_id": "9b0a64f6-a0c2-477c-a850-4f9ed74f7fe3"
+    },
+    {
+      "claim_id": "b5081a21-85d5-4637-a038-5c2592f06b4f",
+      "result_id": "ef0894e9-268c-45c1-91a9-86a136fdc5e6"
+    },
+    {
+      "claim_id": "074db721-276d-4468-88cd-0582c3472cb3",
+      "result_id": "ef0894e9-268c-45c1-91a9-86a136fdc5e6"
+    },
+    {
+      "claim_id": "be5d109c-499b-4b16-81eb-b690b8d73da8",
+      "result_id": "ef0894e9-268c-45c1-91a9-86a136fdc5e6"
+    },
+    {
+      "claim_id": "a55d7d7a-b61b-4fc2-8ef5-13846ccbf478",
+      "result_id": "ef0894e9-268c-45c1-91a9-86a136fdc5e6"
+    },
+    {
+      "claim_id": "5532cf13-817e-4a37-92b5-237428f75add",
+      "result_id": "ef0894e9-268c-45c1-91a9-86a136fdc5e6"
+    },
+    {
+      "claim_id": "cd564d1d-8cd6-47bc-8602-a17c353e2c0d",
+      "result_id": "ef0894e9-268c-45c1-91a9-86a136fdc5e6"
+    },
+    {
+      "claim_id": "8b931b70-71e8-43ca-92d2-895a7fdd2e33",
+      "result_id": "ef0894e9-268c-45c1-91a9-86a136fdc5e6"
+    },
+    {
+      "claim_id": "3a9386b6-2eb2-4913-b4cd-8c40d433b18b",
+      "result_id": "ef0894e9-268c-45c1-91a9-86a136fdc5e6"
+    },
+    {
+      "claim_id": "585360bd-c265-42fe-8f11-882d9d40e40d",
+      "result_id": "ef0894e9-268c-45c1-91a9-86a136fdc5e6"
+    },
+    {
+      "claim_id": "54d58829-cd70-41a4-9451-f9181a5f8759",
+      "result_id": "ef0894e9-268c-45c1-91a9-86a136fdc5e6"
+    },
+    {
+      "claim_id": "39bee06a-c183-49f0-a880-a845c9556232",
+      "result_id": "ef0894e9-268c-45c1-91a9-86a136fdc5e6"
+    },
+    {
+      "claim_id": "aa4d833f-eb7d-4f21-9770-af425ecbe8f3",
+      "result_id": "ef0894e9-268c-45c1-91a9-86a136fdc5e6"
+    },
+    {
+      "claim_id": "9af27a4f-cb02-47a0-b69e-3133b00fc7be",
+      "result_id": "ef0894e9-268c-45c1-91a9-86a136fdc5e6"
+    },
+    {
+      "claim_id": "b7f1c89a-f51f-4979-9662-644afa9120cc",
+      "result_id": "ef0894e9-268c-45c1-91a9-86a136fdc5e6"
+    },
+    {
+      "claim_id": "c85115c2-3f80-4251-b10c-d677120247ac",
+      "result_id": "ef0894e9-268c-45c1-91a9-86a136fdc5e6"
+    },
+    {
+      "claim_id": "2e3793e5-1168-4b73-b03d-dcf62c5f2429",
+      "result_id": "ef0894e9-268c-45c1-91a9-86a136fdc5e6"
+    },
+    {
+      "claim_id": "8adac041-a011-4c36-a1df-c6108142a39c",
+      "result_id": "ef0894e9-268c-45c1-91a9-86a136fdc5e6"
+    },
+    {
+      "claim_id": "aea206cf-8e7f-48ca-b891-0c7bde8a4978",
+      "result_id": "ef0894e9-268c-45c1-91a9-86a136fdc5e6"
+    },
+    {
+      "claim_id": "453c2018-67e6-45c0-84cf-629830948e17",
+      "result_id": "ef0894e9-268c-45c1-91a9-86a136fdc5e6"
+    },
+    {
+      "claim_id": "1445921c-9106-4996-9317-7f61e133928b",
+      "result_id": "ef0894e9-268c-45c1-91a9-86a136fdc5e6"
+    },
+    {
+      "claim_id": "f3e80b1a-72b0-439b-9b80-dd70e351fe1b",
+      "result_id": "ef0894e9-268c-45c1-91a9-86a136fdc5e6"
+    },
+    {
+      "claim_id": "645b3911-0d2e-46b7-ad21-d356eedbaaf6",
+      "result_id": "838a33a5-eeb5-4b25-ab12-54a3e7c4efcb"
+    },
+    {
+      "claim_id": "ebf7ffcd-502f-4f1f-93bc-660cae685543",
+      "result_id": "838a33a5-eeb5-4b25-ab12-54a3e7c4efcb"
+    },
+    {
+      "claim_id": "bc601418-823e-4e40-bf29-1eb49c06ba77",
+      "result_id": "838a33a5-eeb5-4b25-ab12-54a3e7c4efcb"
+    },
+    {
+      "claim_id": "11471626-053b-43b1-95ef-0817b11dc349",
+      "result_id": "838a33a5-eeb5-4b25-ab12-54a3e7c4efcb"
+    },
+    {
+      "claim_id": "63eee88b-4d74-41e8-a8b5-5c2e430e683d",
+      "result_id": "838a33a5-eeb5-4b25-ab12-54a3e7c4efcb"
+    },
+    {
+      "claim_id": "012284b9-cae5-4c9c-a328-3ba5a622cb6a",
+      "result_id": "838a33a5-eeb5-4b25-ab12-54a3e7c4efcb"
+    },
+    {
+      "claim_id": "73b159d8-85ee-495b-83ef-332edb9de3c8",
+      "result_id": "838a33a5-eeb5-4b25-ab12-54a3e7c4efcb"
+    },
+    {
+      "claim_id": "599aced5-65de-468c-bba1-101d07e5cd26",
+      "result_id": "838a33a5-eeb5-4b25-ab12-54a3e7c4efcb"
+    },
+    {
+      "claim_id": "46b04e67-6d65-4f8e-b10e-e352e0b31346",
+      "result_id": "838a33a5-eeb5-4b25-ab12-54a3e7c4efcb"
+    },
+    {
+      "claim_id": "08b79445-6613-4653-b2bb-636bd43057de",
+      "result_id": "838a33a5-eeb5-4b25-ab12-54a3e7c4efcb"
+    },
+    {
+      "claim_id": "a7691ced-ed71-4f82-828f-9a890735e96e",
+      "result_id": "838a33a5-eeb5-4b25-ab12-54a3e7c4efcb"
+    },
+    {
+      "claim_id": "8c1059a9-e5f7-4c6e-9d65-3d157e6ad8d0",
+      "result_id": "838a33a5-eeb5-4b25-ab12-54a3e7c4efcb"
+    },
+    {
+      "claim_id": "a3c58325-27e0-402e-a7e2-f91951e44952",
+      "result_id": "838a33a5-eeb5-4b25-ab12-54a3e7c4efcb"
+    },
+    {
+      "claim_id": "ff5dc8b8-71f7-49f3-82c5-1da05262ac48",
+      "result_id": "838a33a5-eeb5-4b25-ab12-54a3e7c4efcb"
+    },
+    {
+      "claim_id": "9960a05e-b531-4593-8c60-136e2f996d2a",
+      "result_id": "838a33a5-eeb5-4b25-ab12-54a3e7c4efcb"
+    },
+    {
+      "claim_id": "84aeacad-c1f7-4fe9-8e40-9991cd1474c5",
+      "result_id": "838a33a5-eeb5-4b25-ab12-54a3e7c4efcb"
+    },
+    {
+      "claim_id": "eb950267-fb1e-47cd-a4f8-aa3a16cfb4db",
+      "result_id": "838a33a5-eeb5-4b25-ab12-54a3e7c4efcb"
+    },
+    {
+      "claim_id": "fe45607a-0c47-429c-b390-df151c4b3ddc",
+      "result_id": "838a33a5-eeb5-4b25-ab12-54a3e7c4efcb"
+    },
+    {
+      "claim_id": "f1e48899-913e-4489-9f83-c4f52ec3fcd0",
+      "result_id": "838a33a5-eeb5-4b25-ab12-54a3e7c4efcb"
+    },
+    {
+      "claim_id": "1852ea1b-67aa-4d39-bc27-161dd398f436",
+      "result_id": "1b367959-55cc-4504-8260-e3153ff64353"
+    }
+  ],
+  "comparisons": []
+}

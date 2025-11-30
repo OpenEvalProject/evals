@@ -1,0 +1,313 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "ATLAS-seq comprehensively maps L1HS-Ta insertions across 12 cell lines, identifying 7823 high-confidence insertions (1633 distinct loci, 358 full-length), with 98% recovery of known fixed elements and 94% PCR validation rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ATLAS-seq methodology is well-described (C73-C76) with robust validation through comparison to known fixed insertions (C21, 98% recovery) and PCR validation (C22, 94% true positive rate from 66/70 tested). The quantitative results (C19-C20, C77-C79) are directly supported by experimental data with appropriate technical replicates and quality controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C60",
+      "C61",
+      "C62",
+      "C83"
+    ],
+    "result": "L1HS-Ta elements exhibit extensive insertional polymorphism among cell lines, with each cell line containing on average 393 reference, 179 known polymorphic, and 80 novel insertions, and fibroblast lines differing at ~298 positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The polymorphism data (C60-C62) are directly supported by ATLAS-seq results across the 12 cell lines. The comparison between fibroblast lines (C23) shows remarkable agreement with previous estimates (Ewing and Kazazian, 2010), providing external validation. The conclusion about high polymorphism (C83) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C30",
+      "C33",
+      "C42",
+      "C43",
+      "C48"
+    ],
+    "result": "Only a very restricted subset of L1HS-Ta loci (5-15 copies) contributes to the bulk of L1 expression in most cell lines, with the majority of L1HS-Ta copies remaining transcriptionally inactive even in high L1-expressing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq data clearly demonstrate that only 5 L1HS-Ta copies show high expression in MCF7 cells (C29), with 5-15 copies contributing to half the total L1HS-Ta RNA across cell lines (C33). This is supported by genome-wide analysis (Figure 3e, 4b) and is consistent across multiple cell types, strongly supporting the model that most L1 copies remain silenced (C42-C43, C48).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C35",
+      "C45",
+      "C5",
+      "C91"
+    ],
+    "result": "L1HS-Ta expression is differentially regulated among cell types, with the identity and expression levels of active loci varying considerably between cell lines, supporting a model of locus- and cell-type-specific transcriptional activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential expression across cell types is demonstrated by RNA-seq data (C34, Figure 4a) showing that L1 copies at the same genomic location are differentially expressed in different cell types (C35). The high reproducibility between biological replicates (C32, r=0.830) strengthens confidence in the cell-type specificity. The conclusion (C5, C91) is well-supported by the comprehensive data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C31"
+    ],
+    "result": "Downstream RNA-seq tags serve as a valid proxy for L1 sense transcription, as demonstrated by the presence of upstream H3K4me3 marks and reduction of downstream signal upon ORF1 shRNA knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological validation is strong: the weak L1 polyadenylation signal allows read-through transcription (C53, Holmes et al. 1994), H3K4me3 ChIP-seq shows active promoter marks upstream of expressed L1s (C31, Figure 3b,f), and shRNA knockdown of ORF1 reduces downstream RNA-seq signal (C55, Figure 3c-d). These converging lines of evidence support the validity of using downstream tags as a proxy for L1 transcription (C56).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C103",
+      "C104",
+      "C105",
+      "C99"
+    ],
+    "result": "At least 11 of the 20 most highly-expressed L1HS-Ta copies are retrotransposition-competent, as demonstrated by cellular assays, 3' transduction analysis, and published data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The retrotransposition competence is supported by multiple complementary approaches: cellular retrotransposition assays (C99, Figure 5b), 3' transduction detection in ATLAS-seq data (Figure 5c), and comparison with published data (C103-C104). The claim that at least 11/20 are competent (C41) is conservative given that 5 fulfill multiple criteria and 6 additional ones show evidence of progeny copies, though 9 remain untested (C105).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C84",
+      "C50",
+      "C51"
+    ],
+    "result": "The genomic locus of L1HS-Ta integration has a major influence on subsequent transcriptional reactivation, with L1 transcriptional activation representing a key regulatory process limiting mutagenic potential independently of intrinsic biochemical activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The locus-specific regulation is supported by differential expression of L1 copies at different genomic locations (C44) and is consistent with previous observations (C84, Lavie et al. 2004). The finding that many retrotransposition-competent L1 copies are not expressed demonstrates that transcriptional activation is a key regulatory layer (C50). The conclusion about L1-mediated mutagenesis (C51) logically follows from the combined expression and competence data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C69",
+      "C70",
+      "C72"
+    ],
+    "result": "ORF1p expression and L1HS-Ta RNA levels vary across cell lines, with highest levels in MCF7 and 2102Ep cells, intermediate levels in most transformed cells, and extremely low levels in primary fibroblasts and HCT 116.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ORF1p immunoblot data (C24-C25, C70, Figure 1a, Figure 1\u2014figure supplement 1) and RNA-seq quantification (C26-C28, Figure 1b) provide consistent evidence for variable L1 expression across cell types. The findings are consistent with published data on tumor ORF1p expression (C69, Rodi\u0107 et al. 2014) and hESC L1 expression (C28). The conclusion that L1HS-Ta can escape normal controls in some cells (C72) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Genes containing expressed L1 copies are more highly expressed than those with non-expressed L1s, but expressed L1s are not significantly enriched in genic regions, antisense orientation, or amplified genomic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The gene expression analysis (C39, Figure 4d) shows a statistically significant difference (p<0.001, Kolmogorov-Smirnov test) between genes with expressed vs. non-expressed L1s. However, the lack of significant enrichment in genic location (C100), antisense orientation (C101), or amplified regions (C102) is appropriately reported with statistical tests. The data suggest that high gene expression may create a permissive environment for L1 reactivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C36"
+    ],
+    "result": "L1HS-Ta expression patterns are highly reproducible between biological replicates (r=0.830, p<0.0001) and downstream RNA-seq tags correlate strongly with internal L1 reads containing diagnostic nucleotides (Spearman r=0.8169, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reproducibility between independent experiments (C32, Figure 4a) and the correlation between downstream tags and internal L1 reads (C36) are both supported by appropriate statistical analyses with significant p-values. These results validate the robustness of the RNA-seq approach and the use of downstream tags as a proxy for L1 expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30",
+      "C58"
+    ],
+    "result": "Sense and antisense L1 promoter activities are not necessarily coupled in chromosomal context, with only 4 L1HS-Ta loci in MCF7 showing antisense promoter activity distinct from highly expressed sense transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq data (C30, Figure 3e) show that only 4 L1HS-Ta loci exhibit antisense promoter activity, and these are distinct from the copies with high sense transcription. This observation (C58) is consistent with previous plasmid-based reporter assays (Macia et al. 2011), suggesting differential regulation or stability of sense vs. antisense transcripts in genomic context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Only 1 of 10 elements belonging to characterized 'hot' L1 lineages (AC002980, LRE3, RP) was ranked among the top 20 most highly expressed L1 copies, suggesting high expression is not an intrinsic feature of known lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lineage analysis (C97) combined with expression data shows that most highly expressed L1s do not belong to previously characterized 'hot' lineages. This finding (C98) challenges the assumption that lineage membership alone predicts expression levels and supports the importance of genomic context in determining L1 transcriptional activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "2102Ep cells accumulate comparable global L1HS-Ta transcript levels to MCF7 but have a higher number of permissive loci, each contributing a smaller proportion, though still representing <10% of all L1HS-Ta copies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between MCF7 and 2102Ep cells is supported by RNA-seq data (C106-C107, Figure 4b) showing different patterns of L1 activation despite similar total expression levels. The conclusion that active instances represent <10% of all copies (C108) is consistent with the overall finding of restricted L1 expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "General cellular regulation of most L1 instances remains intact in cancer cell lines, indicating that global shut-off of L1-regulatory pathways is not a prerequisite for L1 activation in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation that only a small subset of L1 copies are expressed even in high L1-expressing cancer cells (C46) supports the inference that global L1 regulatory mechanisms remain functional (C47). This challenges models proposing widespread derepression of L1s in cancer and has implications for understanding L1 activation mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C85"
+    ],
+    "result": "Several regulated L1 loci are polymorphic among individuals, and their presence/absence at permissive loci may represent risk factors for specific cancer types and more specific biomarkers than global L1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the polymorphism of expressed L1 loci is demonstrated by ATLAS-seq data (C52), the claim about cancer risk factors and biomarkers (C85) is speculative and not directly tested in this study. The authors appropriately present this as a hypothesis ('may represent'), but no data on cancer outcomes or biomarker performance are provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The study analyzed 12 widely-used cell lines including 10 ENCODE cell lines, with appropriate quality controls for mycoplasma contamination and cell line authentication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design (C66-C68) is well-described with appropriate cell line selection including ENCODE tier-1 and tier-2 lines. Quality control measures including mycoplasma testing (C95) and STR authentication (C96) are documented. Cell line provenance is properly cited (C67-C68, C93-C94).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The study provides near-complete L1HS-Ta maps for widely-used cell lines that will enable correct interpretation of RNA-seq and ChIP-seq signals from non-reference L1 copies in public datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The resource value of the L1 maps (C86) is clear given the comprehensive coverage and validation. The utility for interpreting public datasets (C88-C89) is a logical inference based on the prevalence of non-reference insertions. However, the claim of 'broad utility' (C87) is somewhat speculative as future applications are not demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Background on L1 retrotransposons: L1s comprise ~1/6 of the human genome, with only L1HS-Ta acting as an active mutagen; most copies are inactive but L1HS-Ta continues to retrotranspose in germline, soma, and cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C17, C63-C65) represent well-established background knowledge supported by extensive citations to the literature. They provide appropriate context for the study but are not novel findings. The claims are accurately stated and properly attributed to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C90",
+      "C92"
+    ],
+    "result": "The study extends the 'hot L1' concept to include transcriptional regulation at individual loci and cell types, with future work needed to identify factors controlling L1 reactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The conceptual extension (C90) is a reasonable interpretation of the findings that integrates transcriptional regulation with previous work on retrotransposition competence (Brouha et al. 2003; Beck et al. 2010). The statement about future work (C92) appropriately identifies knowledge gaps but is speculative about what will be determined.",
+    "result_type": "MINOR"
+  }
+]

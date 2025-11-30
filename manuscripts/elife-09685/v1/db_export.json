@@ -1,0 +1,1642 @@
+{
+  "submission": {
+    "id": "2783f0c4-99f0-4f18-8190-de3de02cdf10",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:33:27.006533Z",
+    "updated_at": "2025-11-29T21:33:27.006533Z"
+  },
+  "content": [
+    {
+      "id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "submission_id": "2783f0c4-99f0-4f18-8190-de3de02cdf10",
+      "content_type": "manuscript",
+      "content_text": "# Retroactive modulation of spike timing-dependent plasticity by dopamine\n\n## Authors\n\n- Zuzanna Brzosko<sup>1</sup>\n- Wolfram Schultz<sup>1</sup>\n- Ole Paulsen<sup>1</sup> ([ORCID: 0000-0002-2258-5455](https://orcid.org/0000-0002-2258-5455)) \u2020\n\n### Affiliations\n\n1. Department of Physiology, Development and Neuroscience, Physiological Laboratory University of Cambridge Cambridge United Kingdom\n\n\u2020 Corresponding author\n\n## Abstract\n\nMost reinforcement learning models assume that the reward signal arrives after the activity that led to the reward, placing constraints on the possible underlying cellular mechanisms. Here we show that dopamine, a positive reinforcement signal, can retroactively convert hippocampal timing-dependent synaptic depression into potentiation. This effect requires functional NMDA receptors and is mediated in part through the activation of the cAMP/PKA cascade. Collectively, our results support the idea that reward-related signaling can act on a pre-established synaptic eligibility trace, thereby associating specific experiences with behaviorally distant, rewarding outcomes. This finding identifies a biologically plausible mechanism for solving the \u2018distal reward problem\u2019.\n\n## Introduction\n\nSpike timing-dependent plasticity (STDP) is a physiologically relevant form of Hebbian learning (Caporale and Dan, 2008). In its classic form, STDP depends on the order and precise timing of presynaptic and postsynaptic spikes: pre-before-post spike pairings induce timing-dependent long-term potentiation (t-LTP), whereas post-before-pre pairings induce timing-dependent long-term depression (t-LTD) (Markram et al., 1997; Bi and Poo, 1998). However, the quantitative rules of STDP are profoundly influenced by neuromodulators (Seol et al., 2007; Pawlak et al., 2010), including dopamine (DA) (Zhang et al., 2009; Edelmann and Lessmann, 2011; Yang and Dani, 2014). Although it is well established that reward-motivated behavior depends on the activity of DA neurons (Schultz et al., 1997; Suri and Schultz, 1999; Pan et al., 2005), the mechanisms that associate specific experiences with rewarding outcomes, which typically occur after a delay, are not well understood. This is referred to as the distal reward problem (Hull, 1943). To address this problem, here, we examined whether DA modulates STDP not only when applied during, but also\u2014more importantly\u2014when applied after the pairing event.\n\n## Results and discussion\n\nWe first sought to corroborate the shape of the STDP induction curve by varying the time interval between the presynaptic and postsynaptic activity (\u0394t; Figure 1A,B,G). To this end, we monitored excitatory postsynaptic potentials (EPSPs) that were evoked by extracellular stimulation of the Schaffer-collateral-CA1 pathway during whole-cell recordings of CA1 pyramidal cells in mouse horizontal slices (postnatal days 12\u201318; \u2018Materials and methods\u2019). Plasticity was induced in current clamp mode using an induction protocol that involved 100 pairings of a single EPSP followed by a single postsynaptic spike (t-LTP; Figure 1A) or a single postsynaptic spike followed by a single EPSP (t-LTD; Figure 1B) at 0.2 Hz. Consistent with previous studies (Bi and Poo, 1998; Zhang et al., 2009; Edelmann and Lessmann, 2011), the pre-before-post pairing protocol with \u0394t = +10 ms induced t-LTP (182 \u00b1 14%; t(4) = 5.6, p = 0.0049 vs 100%, n = 5; Figure 1A) and the post-before-pre pairing protocol with \u0394t = \u221220 ms induced t-LTD (61 \u00b1 9%; t(4) = 4.4, p = 0.0121 vs 100%, n = 5; Figure 1B). Surprisingly, however, we found that the post-before-pre pairing protocol with \u0394t = \u221210 ms instead of inducing t-LTD, elicited robust t-LTP (202 \u00b1 21%; t(6) = 5.0, p = 0.0025 vs 100%, n = 7; Figure 1C,D,G). This conflicts with previous reports from hippocampal cultures (Bi and Poo, 1998; Zhang et al., 2009) and acute slices (Edelmann and Lessmann, 2011; Yang and Dani, 2014), where post-before-pre pairing protocols never elicited synaptic potentiation in baseline conditions. Given that DA has been found to widen the time window for the induction of t-LTP (Zhang et al., 2009; Yang and Dani, 2014), we wanted to assess whether endogenous DA could be responsible for the potentiation observed with the post-before-pre pairing under our experimental conditions. Therefore, we repeated this set of experiments using the post-before-pre pairing protocol with \u0394t = \u221210 ms in the presence of DA receptor (DAR) antagonists. Indeed, combined application of the D1/D5 receptor antagonist SCH23390 (10 \u03bcM) and D2-like receptor antagonist sulpiride (50 \u03bcM) from the start of the recordings prevented t-LTP and enabled t-LTD instead (72 \u00b1 8%; t(5) = 3.6, p = 0.0160 vs 100%, n = 6; Figure 1C,D,G), rendering the STDP induction curve similar to that observed in hippocampal cultures (Bi and Poo, 1998; Zhang et al., 2009). These results suggest a modulatory action of endogenous DA, presumably released during the pairing protocol (Frey et al., 1990; Yang and Dani, 2014), which resulted in the changed polarity of plasticity at narrow negative spike-timing intervals.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/09685/elife-09685-fig1-v1.jpg)\n\n**Figure 1.:** Example plots of normalized EPSP slopes demonstrating that (A) pre-before-post pairing protocol with \u0394t = +10 ms induced t-LTP, whereas (B) post-before-pre pairing protocol with \u0394t = \u221220 ms induced t-LTD. Insets, pairing protocols. Traces show an excitatory postsynaptic potential (EPSP) before (1) and 40 min after (2) pairing. (C) Endogenous DA widens the spike time window for induction of t-LTP. In the absence of DA receptor antagonists, the post-before-pre pairing protocol with \u0394t = \u221210 ms induced t-LTP (red), whereas application of SCH23390 and sulpiride at the start of the recordings prevented this t-LTP and enabled t-LTD instead (black). Traces are presented as in A. (D) Summary of results. (E) Exogenous DA widens the spike time window for induction of t-LTP. In the presence of 20 \u03bcM DA, the post-before-pre pairing protocol with \u0394t = \u221220 ms induced t-LTP (red), whereas in control condition the same pairing protocol induced t-LTD (black). Traces are presented as in A. (F) Summary of results. (G) Summary of the spike timing-dependent plasticity (STDP) induction with various spike-timing intervals (\u0394t in ms) in control condition (green; data point at \u221220 ms represents data combined from B and E), in the presence of DA receptor antagonists (SCH23390 and sulpiride; black), or DA (red). Each data point is the group average EPSP slope percentage change from baseline. Error bars represent s.e.m. Significant difference (*p < 0.05, **p < 0.01, ***p < 0.001) compared with the baseline (one-sample two-tailed Student's t-test) or between the indicated two groups (paired two-tailed Student's t-test). The numbers of cells are shown in parentheses.\n\nNext, we wanted to examine whether the application of exogenous DA during pairing at negative spike-timing intervals facilitates synaptic potentiation. Indeed, the post-before-pre pairing protocol with \u0394t = \u221220 ms, which elicited robust t-LTD in control condition (74 \u00b1 9%, t(8) = 3.0, p = 0.0165 vs 100%, n = 9; Figure 1E\u2013G), induced significant t-LTP when exogenous DA (20 \u03bcM) was bath-applied for 10\u201312 min from 2 min before and during the post-before-pre pairings in interleaved experiments (144 \u00b1 12%; t(5) = 3.7, p = 0.0148 vs 100%, n = 6; Figure 1E\u2013G). Therefore, in accordance with previous findings (Zhang et al., 2009; Yang and Dani, 2014), the presence of DA during the coordinated spiking activity widens the spike time interval for induction of t-LTP.\n\nA crucial aspect of reinforcement learning models is the ability of the reinforcing signal (DA) to strengthen active synapses, even when it arrives after the activity (Sutton and Barto, 1981; Izhikevich, 2007). To test this hypothesis experimentally, we applied DA after the t-LTD induction protocol. Exogenous DA (100 \u03bcM) added to the perfusion system for 10\u201312 min starting within 1 min after the post-before-pre pairing protocol with \u0394t = \u221220 ms converted t-LTD into t-LTP (169 \u00b1 16%, t(5) = 4.3, p = 0.0078 vs 100%, n = 6; Figure 2A,B). This implies that DA can have a retroactive effect allowing negative spike pairings to induce t-LTP. The specificity of this DAergic conversion of STDP was assessed using DAR antagonists. Indeed, combined application of DAR antagonists, SCH23390 (10 \u03bcM) and sulpiride (50 \u03bcM), prevented DA-induced conversion of t-LTD into t-LTP, resulting in significant t-LTD instead (63 \u00b1 12%, t(5) = 3.0, p = 0.0289 vs 100%, n = 6, \u0394t = \u221220 ms). Thus, the conversion of t-LTD into t-LTP was due to specific DAR activation. Importantly, when the test pathway was not stimulated following the pairing protocol until after DA washout (stimulation resumed 15 min after pairing), robust t-LTD was induced (61 \u00b1 5%, t(5) = 8.1, p = 0.0005 vs 100%, n = 6; Figure 2A,B). The effect of DA was, therefore, activity dependent, demonstrating that the reinforcing signal is capable of acting specifically on the active inputs. To exclude the possibility that DA by itself could potentiate the test pathway, control experiments with ongoing synaptic stimulation over 60 min at 0.2 Hz, but without pairing with postsynaptic action potentials, were performed. Consistent with earlier reports (Otmakhova and Lisman, 1999), DA had no significant effect on the basal Schaffer-collateral transmission (110 \u00b1 7%, t(7) = 1.4, p = 0.2169 vs 100%, n = 8; Figure 2A,B).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/09685/elife-09685-fig2-v1.jpg)\n\n**Figure 2.:** (A) DA applied immediately after the pairing protocol with \u0394t = \u221220 ms converted t-LTD into t-LTP (+Pairing +Stim; red). If the pathway was not stimulated following the pairing protocol until after DA washout, t-LTD was induced (+Pairing \u2212Stim; black). In the absence of the pairing protocol, DA had no effect on baseline EPSPs (\u2212Pairing +Stim; blue). Traces show an EPSP before (1) and 40 min after (2) pairing. (B) Summary of results. Error bars represent s.e.m. Significant difference (**p < 0.01, ***p < 0.001) compared with the baseline (one-sample two-tailed Student's t-test). The number of cells is shown in parentheses.\n\nSubsequently, we wanted to determine whether the observed DA-induced conversion of t-LTD into t-LTP depends on the timing of DA application following the post-before-pre protocol (Figure 3A\u2013D). We found that delayed application of DA (10 or 30 min after t-LTD pairing protocol) failed to convert t-LTD into t-LTP. Application of DA 10 min after the post-before-pre pairing caused a reversal of t-LTD back to baseline (94 \u00b1 9%, t(11) = 0.7, p = 0.5230 vs 100%, n = 12; Figure 3B,D), whereas application of DA 30 min after the post-before-pre pairing failed to influence t-LTD altogether (59 \u00b1 12%, t(5) = 3.4, p = 0.0200 vs 100%, n = 6; Figure 3C,D). Whilst it has previously been reported that DA applied after the induction of low frequency stimulation-induced LTD can reduce the magnitude of synaptic depression (Mockett et al., 2007), our data demonstrate, for the first time to our knowledge, that DA can change the polarity of STDP when acting within a short time window following the induction protocol.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/09685/elife-09685-fig3-v1.jpg)\n\n**Figure 3.:** (A) DA applied immediately after the pairing protocol with \u0394t = \u221220 ms converted t-LTD into t-LTP, whereas delayed application of DA failed to convert t-LTD into t-LTP and either (B) resulted in a reversal of t-LTD back to baseline (10 min after pairing) or (C) failed to affect t-LTD altogether (30 min after pairing). Traces show an EPSP before (1) and 40 min (A, B) or 60 min (C) after pairing (2). (D) Summary of results. Error bars represent s.e.m. Significant difference (*p < 0.05, **p < 0.01) compared with the baseline (one-sample two-tailed Student's t-test). The number of cells is shown in parentheses.\n\nFinally, we aimed to explore the possible mechanisms underlying the DA-induced conversion of t-LTD into t-LTP. Both hippocampal t-LTP and t-LTD (Edelmann and Lessmann, 2011; Yang and Dani, 2014), as well as the modulation of STDP by DA (Zhang et al., 2009), require functional NMDA receptors. We, therefore, asked whether the DA-induced conversion of t-LTD into t-LTP is also NMDA receptor dependent. Application of the NMDA receptor antagonist d-2-amino-5-phosphonopentanoic acid (d-AP5, 50 \u03bcM) after the post-before-pre pairing protocol did not by itself affect the development of t-LTD (57 \u00b1 12%, t(5) = 3.6, p = 0.0156 vs 100%, n = 6, \u0394t = \u221220 ms; Figure 4A,D). Nevertheless, DA in the presence of d-AP5 reversed t-LTD back to baseline albeit failing to convert t-LTD into t-LTP (105 \u00b1 12%, t(5) = 0.4, p = 0.6898 vs 100%, n = 6, \u0394t = \u221220 ms; Figure 4A,D). This suggests an important dissociation between two mechanisms involved in the DA-induced conversion of t-LTD into t-LTD, namely a reversal of synaptic depression (de-depression) and synaptic potentiation, one of which is NMDA receptor dependent.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/09685/elife-09685-fig4-v1.jpg)\n\n**Figure 4.:** (A) DA applied immediately after the pairing protocol (\u0394t = \u221220 ms) converted t-LTD into t-LTP (red; data combined from Figures 2A, 3A). This effect requires NMDA receptors as application of d-AP5 1 min before the DA application partially blocked the conversion of t-LTD into t-LTP (blue), whereas application of d-AP5 alone failed to influence the development of t-LTD (black). Traces show an EPSP before (1) and 40 min after pairing (2). (B) The DA-induced conversion of t-LTD into t-LTP involves the activation of cAMP/PKA signaling cascade, which closely mimics the effect of DA. Forskolin, an AC activator, applied immediately after the pairing protocol (\u0394t = \u221220 ms) converted t-LTD into t-LTP (red). This effect requires NMDA receptors as application of d-AP5 1 min before forskolin application partially blocked the forskolin-induced conversion of t-LTD into t-LTP (blue), whereas application of d-AP5 alone failed to influence the development of t-LTD (black; data same as in A). (C) Downstream of cAMP, PKA is involved in the conversion of t-LTD into t-LTP as application of the PKA inhibitor, H-89, completely prevented the conversion of t-LTD into t-LTP. Traces are presented as in A. (D) Summary of results. Error bars represent s.e.m. Significant difference (*p < 0.05, **p < 0.01, ***p < 0.001) compared with the baseline (one-sample two-tailed Student's t-test) or between the indicated two groups (paired two-tailed Student's t-test). The number of cells is shown in parentheses.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/09685/elife-09685-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Plot of normalized EPSP slopes demonstrating that (A) application of 10 \u03bcM SCH23390 and 50 \u03bcM sulpiride prevented DA-induced conversion of t-LTD into t-LTP, which resulted in significant t-LTD, whereas (B) neither SCH23390 nor (C) sulpiride alone was able to completely block the DA effect. Traces show an EPSP before (1) and 40 min after (2) pairing. (D) Summary of results. Error bars represent s.e.m. Significant difference (*p < 0.05, **p < 0.01, ***p < 0.001) compared with the baseline (one-sample two-tailed Student's t-test) or between the indicated two groups (paired two-tailed Student's t-test). The number of cells is shown in parentheses.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/09685/elife-09685-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Plot of normalized EPSP slopes showing that in the absence of a pairing protocol, application of 50 \u03bcM forskolin does not result in significant synaptic modification (n = 7). Traces show an EPSP at 10 min (1) and 58 min (2) of a recording. Error bars represent s.e.m.\n\nTo investigate the intracellular signaling mechanisms involved, we initially set out to establish the DAR subtype associated with the DA-induced conversion of t-LTD into t-LTP. Even though combined application of D1-like and D2-like receptor antagonist completely blocked the DA effect (Figure 4\u2014figure supplement 1A,D), application of either D1-like or D2-like receptor antagonist alone only partially prevented the conversion of t-LTD into t-LTP (SCH 23390: 131 \u00b1 16%; t(6) = 1.4, p = 0.0113 vs DA (t-LTP); t(6) = 3.6, p = 0.2277 vs control (t-LTD); t(6) = 1.9, p = 0.0994 vs 100%; n = 7. Sulpiride: 94 \u00b1 13%; t(6) = 3.2, p = 0.0228 vs DA (t-LTP); t(6) = 1.5, p = 0.1932 vs control (t-LTD); t(6) = 0.5, p = 0.6435 vs 100%; n = 7; Figure 4\u2014figure supplement 1B\u2013D). This suggests that both receptor subtypes might mediate the retroactive effect of DA on STDP. Given the astounding complexity of D2-like receptor pharmacology (Neve et al., 2004), we first wanted to evaluate the possible involvement of D1-like receptor-activated cAMP/PKA signaling cascade in the DA-induced conversion of t-LTD into t-LTP. D1/D5 receptor stimulation leads to the activation of adenylyl cyclase (AC) and subsequent increase in cyclic adenosine monophosphate (cAMP) and protein kinase A (PKA) activation (Greengard et al., 1999; Neve et al., 2004). We found that the general AC activator, forskolin (50 \u03bcM), applied for 10\u201312 min immediately after the pairing protocol with \u0394t = \u221220 ms resulted in robust conversion of t-LTD into t-LTP (167 \u00b1 17%, t(6) = 3.9, p = 0.0078 vs 100%, n = 7; Figure 4B,D). Notably, forskolin (50 \u03bcM) applied in the absence of the pairing protocol had no significant effect on baseline EPSPs (83 \u00b1 12%, t(6) = 1.4, p = 0.2046 vs 100%, n = 7; Figure 4\u2014figure supplement 2). The forskolin-induced conversion of t-LTD into t-LTP was also NMDA receptor dependent since bath application of d-AP5 (50 \u03bcM) 1 min before forskolin treatment prevented synaptic potentiation from developing, although synaptic depression was reversed (102 \u00b1 11%, t(5) = 0.2, p = 0.8616 vs 100%, n = 6; Figure 4B,D). This result suggests that the cAMP cascade works either upstream of or in parallel to NMDA receptor activation for the development of potentiation to occur. Downstream of cAMP, PKA is involved because the PKA inhibitor, H-89 (20 \u00b5M), blocked the DA-induced conversion of t-LTD into t-LTP, revealing significant t-LTD (76 \u00b1 5%, t(6) = 5.0, p = 0.0025 vs 100%, n = 7; Figure 4C,D). Taken together, these results imply that the DA-induced conversion of t-LTD into t-LTP involves activation of the cAMP/PKA signaling cascade, which closely mimics the effects of DA (Figure 4A vs Figure 4B). Although, D2-like receptors are typically associated with the inhibition of AC (Neve et al., 2004), interestingly, there is also evidence that D2-like receptor stimulation can potentiate AC activity (Glass and Felder, 1997; Watts and Neve, 1997). Therefore, while the possibility that D2-like receptors contribute to the conversion of t-LTD into t-LTP via a different signaling cascade cannot be excluded, it is tempting to suggest that the DA-induced conversion of t-LTD into t-LTP is mediated primarily via the cAMP/PKA pathway. Hence, based on our results, we propose that the stimulation of postsynaptic (Figure 5ai) or presynaptic (Figure 5aii) DARs activates the cAMP/PKA pathway, which\u2014via two cellular mechanisms (de-depression and potentiation)\u2014leads to the retroactive conversion of t-LTD into t-LTP.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/09685/elife-09685-fig5-v1.jpg)\n\n**Figure 5.:** (A) Schematic diagram depicting core components of the proposed cellular mechanisms underlying the DA-induced conversion of t-LTD into t-LTP (de-depression and potentiation). (Ai) Model based on postsynaptic NMDAR-dependent potentiation (Bi and Poo, 1998; Caporale and Dan, 2008; Zhang et al., 2009; Edelmann and Lessmann, 2011; Yang and Dani, 2014) and metabotropic glutamate receptor-dependent (mGluRs) depression (Otani and Connor, 1998; Kemp and Bashir, 1999; Huber et al., 2000). De-depression (red, left): Activation of G protein-coupled D1/D5 receptors stimulates AC, increasing cAMP and activating PKA (Greengard et al., 1999; Neve et al., 2004), which, via phosphorylation of I-1 (Ingebritsen and Cohen, 1983), reverses the PP1-induced dephosphorylation of synaptic AMPARs (Lee et al., 2000; Mockett et al., 2007). Potentiation (red, right): PKA activation enhances NMDAR function (Westphal et al., 1999; Chen and Roche, 2007). (Aii) Model based on presynaptic depression (Bolshakov and Siegelbaum, 1994; Siegel et al., 1994; Oliet et al., 1997; Charton et al., 1999; Watabe et al., 2002; Jourdain et al., 2007). De-depression (red, left): Activation of presynaptic DA receptors stimulates AC, increasing cAMP and activating PKA (Greengard et al., 1999; Neve et al., 2004), which reverses the calcineurin-dependent presynaptic depression. Potentiation (red, right): as in Ai. Arrow indicates activation/phosphorylation, blunt-ended line indicates inhibition/dephosphorylation. Abbreviations: AMPAR, AMPA-type glutamate receptor; NMDAR, NMDA-type glutamate receptor; mGluR1/5, group I metabotropic glutamate receptor; DAR, dopamine receptor; AC, adenylate cyclase; cAMP, cyclic adenosine monophosphate; PKA, protein kinase A; I-1, inhibitor 1; PP1, protein phosphatase 1; PLC, phospholipase C; IP3, inositol 1,4,5-trisphosphate; ER, endoplasmic reticulum; DAG, diacylglycerol; eCB, endocannabinoid; CB1R, cannabinoid receptor type 1; CN, calcineurin; CaMKII, calcium-calmodulin-dependent protein kinase II. (B) Schematic diagram of synaptic and behavioral timescales in reward learning. During Exploration, the activity-dependent modification of synaptic strength due to spike timing-dependent plasticity (STDP) depends on the coordinated spiking between presynaptic and postsynaptic neurons on a millisecond time scale. Post-before-pre pairing leads to synaptic depression that develops gradually on a scale of minutes. When Reward, signaled via dopamine, follows Exploration with a Delay of seconds to minutes, synaptic depression is converted into potentiation.\n\nThe functional implications of our finding depend on the presynaptic source of DA in the hippocampus, which remains controversial because of the apparent discrepancy between DAergic terminals and receptors (Scatton et al., 1980; Gasbarri et al., 1997; Lisman and Grace, 2005). On one hand, it has been argued that noradrenergic terminals from the locus coeruleus, which mediates arousal and the optimization of behavioral performance (Aston-Jones and Cohen, 2005; Chamberlain and Robbins, 2013), may provide a major source of DA release (Smith and Greene, 2012). On the other hand, hippocampal pyramidal cell assemblies are directly affected by concurrent activity in midbrain DAergic neurons (McNamara et al., 2014), which have been linked to reward-seeking behavior (Schultz et al., 1997) and appetitive stimuli (Mirenowicz and Schultz, 1996; Fiorillo et al., 2013). This latter finding (McNamara et al., 2014) not only supports the hypothesis that hippocampal DA is relevant for reward processing, but is also consistent with our result that the activation of DAergic receptors during coordinated spiking activity changes the functional outcome of STDP (Figure 1C\u2013G).\n\nPrevious studies examining reinforcement learning at the level of synaptic plasticity have showed that neuromodulators can affect timing-dependent plasticity in locust (Cassenaer and Laurent, 2012) and spine structural plasticity in striatal medium spiny neurons in mice (Yagishita et al., 2014) when acting within a delay time window of 1 s. While this narrow temporal detection window may be important in the striatum, it cannot account for the experimental evidence from behavioral studies of response acquisition with an extended reinforcement delay in rats and pigeons (Lattal and Gleeson, 1990; Sutphin et al., 1998), rhesus monkeys (Galuska and Woods, 2005), and humans (Okouchi, 2009). Meanwhile, our finding demonstrates that DA can modulate STDP in the CA1 with a reinforcement delay of at least 1 min (Figure 5B). Such extended reinforcement delay is likely to be particularly important in hippocampus-dependent learning during spatial exploration.\n\nIn conclusion, our work demonstrates a retroactive effect of DA on STDP\u2014converting t-LTD into t-LTP. This effect is mediated at least in part through the activation of the cAMP/PKA cascade and requires the activation of synaptic NMDA receptors. This in turn suggests that the conversion can only occur at synapses that are re-activated following the initial pairing event. Interestingly, it has been reported that hippocampal reactivation events (sharp wave ripples) increase in frequency following reward (Singer and Frank, 2009; Atherton et al., 2015). Thus, in behaving animals, the conditions for the conversion of depression into potentiation might occur during reward-related sharp wave ripple activity. Together, these findings support the concept of a slowly decaying synaptic eligibility trace that is committed to memory by the occurrence of reward and provide a possible mechanism for associating specific experiences with behaviorally distant, rewarding outcomes in animals (Sutton and Barto, 1981; Suri and Schultz, 1999; Pan et al., 2005; Izhikevich, 2007; Harnett et al., 2009), including humans (Dunsmoor et al., 2015).\n\n## Materials and methods\n\n### Animals\n\nWild-type mice (C57BL/6; postnatal days 12\u201318; from Harlan, Bicester, UK or Central Animal Facility, Physiological Laboratory, Cambridge University) of both sexes were housed on a 12-hr light/dark cycle at 19\u201323 \u00b0C, with water and food ad libitum. Experimental procedures and animal use were in accordance with the animal care guidelines of the UK Animals (Scientific Procedures) Act 1986 under personal and project licenses held by the authors. Caution was taken to minimize stress and the number of animals used in the experiments.\n\n### Slice preparation\n\nMice were anesthetized with isoflurane and decapitated. The brain was rapidly removed, glued to the stage of a vibrating microtome (Leica VT 1200S, Leica Biosystems, Wetzlar, Germany) and immersed in ice-cold artificial cerebrospinal fluid (ACSF) containing the following (mM): 126 NaCl, 3 KCl, 26.4 NaH2CO3, 1.25 NaH2PO4, 2 MgSO4, 2 CaCl2, and 10 glucose. The ACSF solution, with pH adjusted to 7.2 and osmolarity to 270\u2013290 mOsm l\u22121, was continuously bubbled with carbogen gas (95% O2/5% CO2). The brain was sectioned into 350-\u03bcm-thick horizontal slices. The slices were incubated in ACSF at room temperature in a submerged-style storage chamber for at least 1 hr. For recordings (1\u20137 hr after slicing), individual slices were transferred to an immersion-type recording chamber, perfused with ACSF (2 ml min\u22121) at 24\u201326 \u00b0C.\n\n### Electrophysiology\n\n#### Whole-cell recordings\n\nWhole-cell patch-clamp recordings were performed on CA1 pyramidal neurons (located adjacent to the stratum oriens). For stimulation of Schaffer collaterals, a monopolar stimulation electrode was placed in the stratum radiatum of the CA1 subfield. The hippocampal subfields were visually identified using infrared differential interference contrast (DIC) microscopy. Patch pipettes (resistance: 4\u20138 M\u03a9) were made from borosilicate glass capillaries (0.68 mm inner diameter, 1.2 mm outer diameter), pulled using a P-97 Flaming/Brown micropipette puller (Sutter Instruments Co., Novato, California, USA). The internal solution of patch pipettes was (mM) 110 potassium gluconate, 4 NaCl, 40 HEPES, 2 ATP-Mg, 0.3 GTP (pH adjusted with 1 M KOH to 7.2, and osmolarity with ddH2O to 270 mOsm l\u22121). The liquid junction potential was not corrected for. Cells were accepted for experiment only if the resting membrane potential at the start of the recording was between \u221255 and \u221270 mV. Membrane potential was held at \u221270 mV throughout further recording by direct current application via the recording electrode. At the beginning of each recording all cells were tested for regular spiking responses to positive current steps\u2014characteristic of pyramidal neurons.\n\n#### Stimulation protocol\n\nEPSPs of amplitude between 3 and 8 mV were evoked at 0.2 Hz by adjusting the magnitude of direct current pulses (stimulus duration 50 \u03bcs, intensity 100 \u03bcA\u20131 mA). After a stable EPSP baseline period of at least 10 min, STDP was induced by repeated pairings of single presynaptic EPSP evoked by stimulation of Schaffer collaterals and single postsynaptic action potential elicited with the minimum somatic current pulse (1\u20131.8 nA, 3 ms) via the recording electrode. Pairings were repeated 100 times at 0.2 Hz. Spike-timing intervals (\u2206t in ms) were measured between the onset of the EPSP and the onset of the action potential. The EPSPs were monitored for at least 40 min after the end of the pairing protocol. Presynaptic stimulation frequency remained constant throughout the experiment.\n\n### Data acquisition and data analysis\n\nVoltage signals were low-pass filtered at 2 kHz using an Axon Multiclamp 700B amplifier (Molecular Devices, Sunnyvale, California, USA). Data were acquired at 5 kHz via an ITC18 interface board (Instrutech, Port Washington, New York, USA), transmitting to a Dell computer running the Igor Pro software (WaveMetrics, Lake Oswego, Oregon, USA). All experiments were carried out in the current clamp (\u2018bridge\u2019) mode. Series resistance was monitored (10\u201315 M\u03a9) and compensated for by adjusting the bridge balance. Data were discarded if series resistance changed by more than 30%. Data were analyzed using Igor Pro. EPSP slopes were measured on the rising phase of the EPSP as a linear fit between the time points corresponding to 25\u201330% and 70\u201375% of the peak amplitude. For statistical analysis, the mean EPSP slope per minute of the recording was calculated from 12 consecutive sweeps and normalized to the baseline. Normalized ESPS slopes from the last 5 min of the baseline (immediately before pairing) and from the last 5 min of the recording (35\u201340 min or 55\u201360 min after pairing) were averaged. The magnitude of plasticity, as an indicator of synaptic change, was defined as the average EPSP slope after pairing expressed as a percentage of the average EPSP slope during baseline.\n\n### Drugs\n\nThe following drugs were used: dopamine hydrochloride 20 \u03bcM, forskolin 50 \u03bcM, d-AP5 50 \u03bcM, SCH23390 hydrochloride 10 \u03bcM, sulpiride 50 \u03bcM, H-89 20 \u00b5M. All drugs (purchased from Sigma\u2013Aldrich, Dorset, United Kingdom; Tocris Bioscience, Bristol, United Kindgom; or Abcam, Cambridge, United Kingdom) were bath-applied through the perfusion system by dilution of concentrated stock solutions (prepared in water or DMSO) in ACSF.\n\n### Statistical analysis\n\nStatistical comparisons were made using one-sample two-tailed or paired two-tailed Student's t-test, with a significance level of \u03b1 = 0.05. Data are presented as mean \u00b1 s.e.m. Significance levels are indicated by *p < 0.05, **p < 0.01, ***p < 0.001.\n",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "25c5d726-51f6-4475-b14f-4b0c92903a5a",
+      "submission_id": "2783f0c4-99f0-4f18-8190-de3de02cdf10",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marlene Bartos, Albert-Ludwigs-Universit\u00e4t Freiburg , Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.09685.016](https://doi.org/10.7554/eLife.09685.016)\n\neLife posts the editorial decision letter and author response on a selection of the published articles (subject to the approval of the authors). An edited version of the letter sent to the authors after peer review is shown, indicating the substantive concerns or comments; minor concerns are not usually shown. Reviewers have the opportunity to discuss the decision before the letter is sent (see review process). Similarly, the author response typically shows only responses to the major concerns raised by the reviewers.\n\nThank you for submitting your work entitled \u201cRetroactive effect of dopamine on spike timing-dependent plasticity\u201d for further consideration at eLife. Your article has been favorably evaluated by Eve Marder (Senior editor) and three reviewers, one of whom is a member of our Board of Reviewing Editors. One of the reviewers, Guoqiang Bi, has agreed to reveal his identity.\n\nAll three reviewers viewed the study as valuable for the readership of eLife. The main observation that spike-time dependent LTD can be converted into LTP upon DA release 10 min after the initial LTP-pairing protocol, was viewed as interesting. However, major criticism was formulated in relation to the missing explanation on how the timing of bath-applied DA may relate to reward-based conditioning. The reviewers asked for diagrams describing the timing issues, in particular the possible linkages between the cAMP pathway and its relation to Ca2+ signaling caused by action potentials and NMDAR activation. A stronger discussion of the data with existing literature is necessary. Moreover, one reviewer asked for additional experiments in which SCH23390 and sulpiride are separately applied. The reviewers were also curious for your thoughts about how the possible cAMP/PKA-mediated mechanism could be linked to Ca2+ signals, NMDA receptor activation and finally the switch from LTD to LTP. The specific comments of the reviewers are attached below.\n\nReviewer #1:\n\nThe study by the Paulsen's group shows nicely that spike-time dependent LTD can be converted into LTP upon DA release 10 min after the initial LTP-pairing protocol. They propose and show good experimental evidence for their hypothesis that this is caused by activation of the cAMP/PKA pathway plus activation of NMDARs. The data fit very well with a recent study from McNamara et al. (Nature Neuroscience, 2014) showing that DA improves reactivation of cell assemblies in CA1 and memory persistence. I have mild concerns regarding the precise timing of bath-applied drugs in the bath. How fast does the drug get to the DA receptors located at the recorded cell? This is important in defining the time window during which the DA effect can take place and induce the observed conversion of synaptic plasticity. The difference in the finding presented here to the one by the McNamara group should be emphasized.\n\nReviewer #2:\n\nThis study by Brzosko et al. addressed how dopamine (DA) retroactively regulates spike timing-dependent plasticity (STDP) in order to account for the distal reward problem, where rewards promote learning of experiences preceding rewards. The main result is that DA applied after the delivery of the post-before-pre pairing protocol converted LTD into LTP.\n\n1) DA was bath applied for 10-12 min starting within 1 min after the delivery of the post-before-pre pairing protocol, which took \u223c8 min. It is not clear how this relates to behaviorally relevant timing during reward-based conditioning, as described in Schultz, Dayan and Montague (1997), Suri and Schultz (1999), and Pan, Schmidt, Wickens and Hyland (2005). Furthermore, how does the millisecond order timing dependence in STDP relate to the second order timing dependence during reward-based learning (for example, see Drew and Abbott, PNAS, 2006, \u201cExtending the effects of spike-timing-dependent plasticity to behavioral timescales\u201d)? A schematic diagram on this timing issue (from millisecond to second to min in the current study) should be provided to account for the behavioral relevance.\n\n2) In terms of the cellular mechanism, it is not clear how DA-induced activation of cAMP/PKA pathway relates to Ca signals caused by spikes and NMDA receptor activation. A schematic diagram describing the possible linkage should be provided with the timing diagram mentioned above. The authors may want to compare their data with a recent paper that addressed this issue on DA/spike timing dependent plasticity of dendritic spines (Yagishita et al., Science, 2015, A critical time window for dopamine actions on the structural plasticity of dendritic spines).\n\n3) In the bar graphs, it is not clear what the significance mark on each bar means. I do understand the significance marks between bars.\n\n4) It should be stated if any of the treatments (plasticity induction, DA/forskolin application, etc.) affected the amount of current necessary to hold the membrane potential at -70 mV, preferably with actual data.\n\n5) According to the description in the Results section, LTP induced with -10 ms post-before-pre timing was \u201csurprising\u201d. This effect is ascribed to the release of endogenous DA by the stimulating electrode. It should be discussed in further detail how this observation compares to previous studies in brain slices and cultures.\n\nReviewer #3:\n\nIn this manuscript, the authors investigated the temporal specificity of dopaminergic modulation of STDP. They found that dopamine application within 10 minutes after STDP pairing could retroactively convert t-LTD into t-LTP. This conversion is apparently mediated by cAMP/PKA signaling, and requires synaptic activation as well as functional NMDA receptors. Together, the results provide an elegant cellular mechanism for the delayed effect of dopamine in reinforcement learning.\n\nOverall I think the experiments were well designed and carried out. The results are important and intriguing, and should be of interests for both cellular and systems neuroscientists. I do have several questions:\n\n1) Throughout the study, the authors used combined SCH23390+sulpiride to block both D1/D5-like receptors and D2-like receptors. Can the authors test differential roles of the two receptor types in STDP conversion by using the two antagonists separately, as has been done in previous studies?\n\n2) Regarding the cellular signaling mechanisms, the authors argue that since AP-5 blocks the effect of DA and forskolin in t-LTD/LTP conversion, the cAMP/PKA signaling works either upstream of, or in parallel to NMDA receptor activation. Can the authors further allude to a potential mechanism(s) how such signaling interaction could happen?\n",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7896e6cf-f695-4846-9d44-4e930b04d67e",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C1",
+      "claim": "Spike timing-dependent plasticity (STDP) is a physiologically relevant form of Hebbian learning.",
+      "claim_type": "EXPLICIT",
+      "source": "Spike timing-dependent plasticity (STDP) is a physiologically relevant form of Hebbian learning (Caporale and Dan, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Caporale and Dan, 2008",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "85547802-46f8-4286-b585-77fed755ca24",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C2",
+      "claim": "In classic STDP, pre-before-post spike pairings induce timing-dependent long-term potentiation (t-LTP).",
+      "claim_type": "EXPLICIT",
+      "source": "In its classic form, STDP depends on the order and precise timing of presynaptic and postsynaptic spikes: pre-before-post spike pairings induce timing-dependent long-term potentiation (t-LTP), whereas post-before-pre pairings induce timing-dependent long-term depression (t-LTD) (Markram et al., 1997; Bi and Poo, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Markram et al., 1997 and Bi and Poo, 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "af63a3c5-708d-4bbf-b3ba-8ce210e404e0",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C3",
+      "claim": "In classic STDP, post-before-pre spike pairings induce timing-dependent long-term depression (t-LTD).",
+      "claim_type": "EXPLICIT",
+      "source": "In its classic form, STDP depends on the order and precise timing of presynaptic and postsynaptic spikes: pre-before-post spike pairings induce timing-dependent long-term potentiation (t-LTP), whereas post-before-pre pairings induce timing-dependent long-term depression (t-LTD) (Markram et al., 1997; Bi and Poo, 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Markram et al., 1997 and Bi and Poo, 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "865a1b40-4e87-48cc-9989-cdbd253e06cd",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C4",
+      "claim": "The quantitative rules of STDP are profoundly influenced by neuromodulators.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the quantitative rules of STDP are profoundly influenced by neuromodulators (Seol et al., 2007; Pawlak et al., 2010), including dopamine (DA) (Zhang et al., 2009; Edelmann and Lessmann, 2011; Yang and Dani, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Seol et al., 2007 and Pawlak et al., 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "490e5de3-8832-43dc-8948-6d2097d98c0a",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C5",
+      "claim": "Dopamine influences the quantitative rules of STDP.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the quantitative rules of STDP are profoundly influenced by neuromodulators (Seol et al., 2007; Pawlak et al., 2010), including dopamine (DA) (Zhang et al., 2009; Edelmann and Lessmann, 2011; Yang and Dani, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Zhang et al., 2009; Edelmann and Lessmann, 2011; Yang and Dani, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "8d792db8-178c-4a58-aa99-3a93e05617e7",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C6",
+      "claim": "Reward-motivated behavior depends on the activity of dopamine neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it is well established that reward-motivated behavior depends on the activity of DA neurons (Schultz et al., 1997; Suri and Schultz, 1999; Pan et al., 2005), the mechanisms that associate specific experiences with rewarding outcomes, which typically occur after a delay, are not well understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schultz et al., 1997; Suri and Schultz, 1999; Pan et al., 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "d16c058b-e34e-4057-aeec-b305f0ec779d",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C7",
+      "claim": "The mechanisms that associate specific experiences with rewarding outcomes that occur after a delay are not well understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it is well established that reward-motivated behavior depends on the activity of DA neurons (Schultz et al., 1997; Suri and Schultz, 1999; Pan et al., 2005), the mechanisms that associate specific experiences with rewarding outcomes, which typically occur after a delay, are not well understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the state of scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "31e5b80a-c82c-4ec7-b739-aded486ab73d",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C8",
+      "claim": "The problem of associating experiences with delayed rewards is referred to as the distal reward problem.",
+      "claim_type": "EXPLICIT",
+      "source": "This is referred to as the distal reward problem (Hull, 1943).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hull, 1943",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "9dc8c495-51ae-4797-ad48-1c651396bcaa",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C9",
+      "claim": "Pre-before-post pairing protocol with \u0394t = +10 ms induced t-LTP (182 \u00b1 14%).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies (Bi and Poo, 1998; Zhang et al., 2009; Edelmann and Lessmann, 2011), the pre-before-post pairing protocol with \u0394t = +10 ms induced t-LTP (182 \u00b1 14%; t(4) = 5.6, p = 0.0049 vs 100%, n = 5; Figure 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical analysis and Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "65064220-3ff2-4f54-a5e4-c698c6759145",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C10",
+      "claim": "Post-before-pre pairing protocol with \u0394t = \u221220 ms induced t-LTD (61 \u00b1 9%).",
+      "claim_type": "EXPLICIT",
+      "source": "the post-before-pre pairing protocol with \u0394t = \u221220 ms induced t-LTD (61 \u00b1 9%; t(4) = 4.4, p = 0.0121 vs 100%, n = 5; Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical analysis and Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "5a996c90-8684-4cfa-9ca5-b2c4f5a0ef7e",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C11",
+      "claim": "Post-before-pre pairing protocol with \u0394t = \u221210 ms elicited robust t-LTP (202 \u00b1 21%).",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, however, we found that the post-before-pre pairing protocol with \u0394t = \u221210 ms instead of inducing t-LTD, elicited robust t-LTP (202 \u00b1 21%; t(6) = 5.0, p = 0.0025 vs 100%, n = 7; Figure 1C,D,G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical analysis and Figures 1C, D, G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "adc1f154-cc84-4d72-9f5f-33fe3767a861",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C12",
+      "claim": "The finding that post-before-pre pairing with \u0394t = \u221210 ms induces t-LTP conflicts with previous reports from hippocampal cultures and acute slices.",
+      "claim_type": "EXPLICIT",
+      "source": "This conflicts with previous reports from hippocampal cultures (Bi and Poo, 1998; Zhang et al., 2009) and acute slices (Edelmann and Lessmann, 2011; Yang and Dani, 2014), where post-before-pre pairing protocols never elicited synaptic potentiation in baseline conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with cited literature",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "f613a94b-2bb5-4bb7-9a63-fb78e1975205",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C13",
+      "claim": "Dopamine has been found to widen the time window for the induction of t-LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that DA has been found to widen the time window for the induction of t-LTP (Zhang et al., 2009; Yang and Dani, 2014), we wanted to assess whether endogenous DA could be responsible for the potentiation observed with the post-before-pre pairing under our experimental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Zhang et al., 2009 and Yang and Dani, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "09e10ffd-89c5-4206-8546-8ac3ee2f0873",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C14",
+      "claim": "Combined application of D1/D5 receptor antagonist SCH23390 (10 \u03bcM) and D2-like receptor antagonist sulpiride (50 \u03bcM) prevented t-LTP and enabled t-LTD instead (72 \u00b1 8%) at \u0394t = \u221210 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, combined application of the D1/D5 receptor antagonist SCH23390 (10 \u03bcM) and D2-like receptor antagonist sulpiride (50 \u03bcM) from the start of the recordings prevented t-LTP and enabled t-LTD instead (72 \u00b1 8%; t(5) = 3.6, p = 0.0160 vs 100%, n = 6; Figure 1C,D,G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical analysis and Figures 1C, D, G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "c126b210-6b25-4b59-b971-7b5e5f48a924",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C15",
+      "claim": "Endogenous dopamine, presumably released during the pairing protocol, results in changed polarity of plasticity at narrow negative spike-timing intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest a modulatory action of endogenous DA, presumably released during the pairing protocol (Frey et al., 1990; Yang and Dani, 2014), which resulted in the changed polarity of plasticity at narrow negative spike-timing intervals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental results with supporting citations",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "315c41ee-8168-4899-a1a7-2617a70bf5bf",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C16",
+      "claim": "Post-before-pre pairing protocol with \u0394t = \u221220 ms elicited robust t-LTD (74 \u00b1 9%) in control condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the post-before-pre pairing protocol with \u0394t = \u221220 ms, which elicited robust t-LTD in control condition (74 \u00b1 9%, t(8) = 3.0, p = 0.0165 vs 100%, n = 9; Figure 1E\u2013G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical analysis and Figures 1E-G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "53004cbd-1c49-4397-8819-a84492ac980f",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C17",
+      "claim": "Exogenous dopamine (20 \u03bcM) applied during post-before-pre pairings with \u0394t = \u221220 ms induced significant t-LTP (144 \u00b1 12%).",
+      "claim_type": "EXPLICIT",
+      "source": "induced significant t-LTP when exogenous DA (20 \u03bcM) was bath-applied for 10\u201312 min from 2 min before and during the post-before-pre pairings in interleaved experiments (144 \u00b1 12%; t(5) = 3.7, p = 0.0148 vs 100%, n = 6; Figure 1E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical analysis and Figures 1E-G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "36b0e93f-9e33-423a-8b53-5fa3671ab60a",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C18",
+      "claim": "The presence of dopamine during coordinated spiking activity widens the spike time interval for induction of t-LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, in accordance with previous findings (Zhang et al., 2009; Yang and Dani, 2014), the presence of DA during the coordinated spiking activity widens the spike time interval for induction of t-LTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from experimental data with supporting citations",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "9ef981e1-1e64-41d5-8b60-f9753cfdf4c1",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C19",
+      "claim": "Exogenous dopamine (100 \u03bcM) applied within 1 min after post-before-pre pairing protocol with \u0394t = \u221220 ms converted t-LTD into t-LTP (169 \u00b1 16%).",
+      "claim_type": "EXPLICIT",
+      "source": "Exogenous DA (100 \u03bcM) added to the perfusion system for 10\u201312 min starting within 1 min after the post-before-pre pairing protocol with \u0394t = \u221220 ms converted t-LTD into t-LTP (169 \u00b1 16%, t(5) = 4.3, p = 0.0078 vs 100%, n = 6; Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical analysis and Figures 2A, B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "b36a071a-7613-4483-b337-2843bab511a3",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C20",
+      "claim": "Dopamine can have a retroactive effect allowing negative spike pairings to induce t-LTP.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that DA can have a retroactive effect allowing negative spike pairings to induce t-LTP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "52882cff-4136-4fb6-aa04-7ec613b9c16f",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C22",
+      "claim": "The conversion of t-LTD into t-LTP is due to specific dopamine receptor activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the conversion of t-LTD into t-LTP was due to specific DAR activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from antagonist experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "2cd96704-8e46-4d75-9a84-65ba9d29b0ab",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C23",
+      "claim": "When the test pathway was not stimulated following the pairing protocol until after dopamine washout, robust t-LTD was induced (61 \u00b1 5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, when the test pathway was not stimulated following the pairing protocol until after DA washout (stimulation resumed 15 min after pairing), robust t-LTD was induced (61 \u00b1 5%, t(5) = 8.1, p = 0.0005 vs 100%, n = 6; Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical analysis and Figures 2A, B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "65cef07e-4c8c-4cf1-9ec1-12799f1fd948",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C24",
+      "claim": "The effect of dopamine is activity dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of DA was, therefore, activity dependent, demonstrating that the reinforcing signal is capable of acting specifically on the active inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental results showing requirement for stimulation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "23f46877-c5cc-4a49-9948-a938e947a43f",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C25",
+      "claim": "Dopamine had no significant effect on basal Schaffer-collateral transmission (110 \u00b1 7%) without pairing with postsynaptic action potentials.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with earlier reports (Otmakhova and Lisman, 1999), DA had no significant effect on the basal Schaffer-collateral transmission (110 \u00b1 7%, t(7) = 1.4, p = 0.2169 vs 100%, n = 8; Figure 2A,B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical analysis, citation, and Figures 2A, B",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "cb0b57f5-1241-41c5-b855-80fb65f99ee4",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C26",
+      "claim": "Application of dopamine 10 min after post-before-pre pairing caused a reversal of t-LTD back to baseline (94 \u00b1 9%).",
+      "claim_type": "EXPLICIT",
+      "source": "Application of DA 10 min after the post-before-pre pairing caused a reversal of t-LTD back to baseline (94 \u00b1 9%, t(11) = 0.7, p = 0.5230 vs 100%, n = 12; Figure 3B,D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical analysis and Figures 3B, D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "ee3b9604-945c-4500-8733-b12a7cd5df70",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C27",
+      "claim": "Application of dopamine 30 min after post-before-pre pairing failed to influence t-LTD (59 \u00b1 12%).",
+      "claim_type": "EXPLICIT",
+      "source": "whereas application of DA 30 min after the post-before-pre pairing failed to influence t-LTD altogether (59 \u00b1 12%, t(5) = 3.4, p = 0.0200 vs 100%, n = 6; Figure 3C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical analysis and Figures 3C, D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "7ac4c0f2-ee46-42ec-b9a5-bc8c266cc362",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C28",
+      "claim": "Dopamine applied after the induction of low frequency stimulation-induced LTD can reduce the magnitude of synaptic depression.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst it has previously been reported that DA applied after the induction of low frequency stimulation-induced LTD can reduce the magnitude of synaptic depression (Mockett et al., 2007), our data demonstrate, for the first time to our knowledge, that DA can change the polarity of STDP when acting within a short time window following the induction protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Mockett et al., 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "a348e512-5281-430e-bc88-e6b00a4ffbb8",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C29",
+      "claim": "Dopamine can change the polarity of STDP when acting within a short time window following the induction protocol.",
+      "claim_type": "EXPLICIT",
+      "source": "Whilst it has previously been reported that DA applied after the induction of low frequency stimulation-induced LTD can reduce the magnitude of synaptic depression (Mockett et al., 2007), our data demonstrate, for the first time to our knowledge, that DA can change the polarity of STDP when acting within a short time window following the induction protocol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "4513825a-923b-4d4a-a4d0-186349c8a5d0",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C30",
+      "claim": "Both hippocampal t-LTP and t-LTD require functional NMDA receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Both hippocampal t-LTP and t-LTD (Edelmann and Lessmann, 2011; Yang and Dani, 2014), as well as the modulation of STDP by DA (Zhang et al., 2009), require functional NMDA receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Edelmann and Lessmann, 2011 and Yang and Dani, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "03791aac-8cba-40ed-9103-0a4c00679691",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C31",
+      "claim": "The modulation of STDP by dopamine requires functional NMDA receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "Both hippocampal t-LTP and t-LTD (Edelmann and Lessmann, 2011; Yang and Dani, 2014), as well as the modulation of STDP by DA (Zhang et al., 2009), require functional NMDA receptors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Zhang et al., 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "2d9f8ba4-b5fb-47eb-9c61-a73bc143e5bf",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C32",
+      "claim": "Application of d-AP5 (50 \u03bcM) after post-before-pre pairing protocol did not affect the development of t-LTD (57 \u00b1 12%).",
+      "claim_type": "EXPLICIT",
+      "source": "Application of the NMDA receptor antagonist d-2-amino-5-phosphonopentanoic acid (d-AP5, 50 \u03bcM) after the post-before-pre pairing protocol did not by itself affect the development of t-LTD (57 \u00b1 12%, t(5) = 3.6, p = 0.0156 vs 100%, n = 6, \u0394t = \u221220 ms; Figure 4A,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical analysis and Figures 4A, D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "a621e44d-b720-4de7-b637-1d881d6b3c51",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C33",
+      "claim": "Dopamine in the presence of d-AP5 reversed t-LTD back to baseline but failed to convert t-LTD into t-LTP (105 \u00b1 12%).",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, DA in the presence of d-AP5 reversed t-LTD back to baseline albeit failing to convert t-LTD into t-LTP (105 \u00b1 12%, t(5) = 0.4, p = 0.6898 vs 100%, n = 6, \u0394t = \u221220 ms; Figure 4A,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical analysis and Figures 4A, D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "7239cb41-e6d2-4efb-afa1-4cb60d6bd4e9",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C34",
+      "claim": "There is a dissociation between two mechanisms involved in DA-induced conversion of t-LTD into t-LTP: reversal of synaptic depression (de-depression) and synaptic potentiation, one of which is NMDA receptor dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests an important dissociation between two mechanisms involved in the DA-induced conversion of t-LTD into t-LTD, namely a reversal of synaptic depression (de-depression) and synaptic potentiation, one of which is NMDA receptor dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from d-AP5 experiments showing partial blockade",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "8f9f504e-04a5-444f-b972-871f1e65274b",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C35",
+      "claim": "Forskolin (50 \u03bcM) applied immediately after pairing protocol with \u0394t = \u221220 ms resulted in robust conversion of t-LTD into t-LTP (167 \u00b1 17%).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the general AC activator, forskolin (50 \u03bcM), applied for 10\u201312 min immediately after the pairing protocol with \u0394t = \u221220 ms resulted in robust conversion of t-LTD into t-LTP (167 \u00b1 17%, t(6) = 3.9, p = 0.0078 vs 100%, n = 7; Figure 4B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical analysis and Figures 4B, D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "7aba33ea-064a-4366-a95e-9e766919cf87",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C36",
+      "claim": "Forskolin (50 \u03bcM) applied in the absence of pairing protocol had no significant effect on baseline EPSPs (83 \u00b1 12%).",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, forskolin (50 \u03bcM) applied in the absence of the pairing protocol had no significant effect on baseline EPSPs (83 \u00b1 12%, t(6) = 1.4, p = 0.2046 vs 100%, n = 7; Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical analysis and Figure 4\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "9a72e937-d3ae-4f88-a7fb-971009010d52",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C37",
+      "claim": "Bath application of d-AP5 (50 \u03bcM) before forskolin treatment prevented synaptic potentiation from developing, although synaptic depression was reversed (102 \u00b1 11%).",
+      "claim_type": "EXPLICIT",
+      "source": "The forskolin-induced conversion of t-LTD into t-LTP was also NMDA receptor dependent since bath application of d-AP5 (50 \u03bcM) 1 min before forskolin treatment prevented synaptic potentiation from developing, although synaptic depression was reversed (102 \u00b1 11%, t(5) = 0.2, p = 0.8616 vs 100%, n = 6; Figure 4B,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical analysis and Figures 4B, D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "45bd2969-719e-4d88-9269-020d7ff093f2",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C38",
+      "claim": "The cAMP cascade works either upstream of or in parallel to NMDA receptor activation for the development of potentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "This result suggests that the cAMP cascade works either upstream of or in parallel to NMDA receptor activation for the development of potentiation to occur.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from forskolin and d-AP5 experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "e5ac8796-1ec8-44c9-8932-7e2684e6d1b0",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C39",
+      "claim": "The PKA inhibitor H-89 (20 \u00b5M) blocked the DA-induced conversion of t-LTD into t-LTP, resulting in significant t-LTD (76 \u00b1 5%).",
+      "claim_type": "EXPLICIT",
+      "source": "Downstream of cAMP, PKA is involved because the PKA inhibitor, H-89 (20 \u00b5M), blocked the DA-induced conversion of t-LTD into t-LTP, revealing significant t-LTD (76 \u00b1 5%, t(6) = 5.0, p = 0.0025 vs 100%, n = 7; Figure 4C,D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical analysis and Figures 4C, D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "04a02e99-7059-4b38-a24f-add3f632ccbd",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C40",
+      "claim": "The DA-induced conversion of t-LTD into t-LTP involves activation of the cAMP/PKA signaling cascade.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results imply that the DA-induced conversion of t-LTD into t-LTP involves activation of the cAMP/PKA signaling cascade, which closely mimics the effects of DA (Figure 4A vs Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from forskolin and H-89 experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "a1099cb7-7205-48fa-9ad4-ec84987e7e36",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C41",
+      "claim": "D2-like receptor stimulation can potentiate adenylyl cyclase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Although, D2-like receptors are typically associated with the inhibition of AC (Neve et al., 2004), interestingly, there is also evidence that D2-like receptor stimulation can potentiate AC activity (Glass and Felder, 1997; Watts and Neve, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Glass and Felder, 1997 and Watts and Neve, 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "5cc8e4eb-58ee-4a72-a40b-0b505dc5a67d",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C42",
+      "claim": "D2-like receptors are typically associated with the inhibition of adenylyl cyclase.",
+      "claim_type": "EXPLICIT",
+      "source": "Although, D2-like receptors are typically associated with the inhibition of AC (Neve et al., 2004), interestingly, there is also evidence that D2-like receptor stimulation can potentiate AC activity (Glass and Felder, 1997; Watts and Neve, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Neve et al., 2004",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "83e21555-8214-4e30-a1c1-1d2851b55faa",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C43",
+      "claim": "The DA-induced conversion of t-LTD into t-LTP is mediated primarily via the cAMP/PKA pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, while the possibility that D2-like receptors contribute to the conversion of t-LTD into t-LTP via a different signaling cascade cannot be excluded, it is tempting to suggest that the DA-induced conversion of t-LTD into t-LTP is mediated primarily via the cAMP/PKA pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on experimental results",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "e4b62c3b-c015-4b06-ae17-658581cdd10c",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C44",
+      "claim": "The presynaptic source of dopamine in the hippocampus remains controversial because of the apparent discrepancy between dopaminergic terminals and receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "The functional implications of our finding depend on the presynaptic source of DA in the hippocampus, which remains controversial because of the apparent discrepancy between DAergic terminals and receptors (Scatton et al., 1980; Gasbarri et al., 1997; Lisman and Grace, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Scatton et al., 1980; Gasbarri et al., 1997; Lisman and Grace, 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "6899b4b2-5530-4466-b000-c7c47d26607c",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C45",
+      "claim": "Noradrenergic terminals from the locus coeruleus may provide a major source of dopamine release in the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "On one hand, it has been argued that noradrenergic terminals from the locus coeruleus, which mediates arousal and the optimization of behavioral performance (Aston-Jones and Cohen, 2005; Chamberlain and Robbins, 2013), may provide a major source of DA release (Smith and Greene, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Aston-Jones and Cohen, 2005; Chamberlain and Robbins, 2013; Smith and Greene, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "e7874df8-7608-408c-835e-58d406038ff6",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C46",
+      "claim": "Hippocampal pyramidal cell assemblies are directly affected by concurrent activity in midbrain dopaminergic neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, hippocampal pyramidal cell assemblies are directly affected by concurrent activity in midbrain DAergic neurons (McNamara et al., 2014), which have been linked to reward-seeking behavior (Schultz et al., 1997) and appetitive stimuli (Mirenowicz and Schultz, 1996; Fiorillo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to McNamara et al., 2014; Schultz et al., 1997; Mirenowicz and Schultz, 1996; Fiorillo et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "27422014-e3d2-4a71-a849-6d10e3287bf4",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C47",
+      "claim": "Midbrain dopaminergic neurons have been linked to reward-seeking behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, hippocampal pyramidal cell assemblies are directly affected by concurrent activity in midbrain DAergic neurons (McNamara et al., 2014), which have been linked to reward-seeking behavior (Schultz et al., 1997) and appetitive stimuli (Mirenowicz and Schultz, 1996; Fiorillo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Schultz et al., 1997",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "beb60238-0ffb-4c65-afd6-87e445b25e9b",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C48",
+      "claim": "Midbrain dopaminergic neurons have been linked to appetitive stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, hippocampal pyramidal cell assemblies are directly affected by concurrent activity in midbrain DAergic neurons (McNamara et al., 2014), which have been linked to reward-seeking behavior (Schultz et al., 1997) and appetitive stimuli (Mirenowicz and Schultz, 1996; Fiorillo et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Mirenowicz and Schultz, 1996 and Fiorillo et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "cf65bcbc-0d41-4baf-8de8-2ac4f0beb371",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C49",
+      "claim": "Hippocampal dopamine is relevant for reward processing.",
+      "claim_type": "EXPLICIT",
+      "source": "This latter finding (McNamara et al., 2014) not only supports the hypothesis that hippocampal DA is relevant for reward processing, but is also consistent with our result that the activation of DAergic receptors during coordinated spiking activity changes the functional outcome of STDP (Figure 1C\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inference from cited literature and experimental results",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "a2048a50-1bc8-4b13-be9f-a2a56256bf86",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C50",
+      "claim": "Neuromodulators can affect timing-dependent plasticity in locust when acting within a delay time window of 1 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies examining reinforcement learning at the level of synaptic plasticity have showed that neuromodulators can affect timing-dependent plasticity in locust (Cassenaer and Laurent, 2012) and spine structural plasticity in striatal medium spiny neurons in mice (Yagishita et al., 2014) when acting within a delay time window of 1 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cassenaer and Laurent, 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "987ca33c-e91e-4bc1-a478-b6b55baee1cf",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C51",
+      "claim": "Neuromodulators can affect spine structural plasticity in striatal medium spiny neurons in mice when acting within a delay time window of 1 s.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies examining reinforcement learning at the level of synaptic plasticity have showed that neuromodulators can affect timing-dependent plasticity in locust (Cassenaer and Laurent, 2012) and spine structural plasticity in striatal medium spiny neurons in mice (Yagishita et al., 2014) when acting within a delay time window of 1 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Yagishita et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "3c36af32-c3c3-47fc-9fba-827ec704eb31",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C52",
+      "claim": "Experimental evidence from behavioral studies shows response acquisition with extended reinforcement delay in rats and pigeons.",
+      "claim_type": "EXPLICIT",
+      "source": "While this narrow temporal detection window may be important in the striatum, it cannot account for the experimental evidence from behavioral studies of response acquisition with an extended reinforcement delay in rats and pigeons (Lattal and Gleeson, 1990; Sutphin et al., 1998), rhesus monkeys (Galuska and Woods, 2005), and humans (Okouchi, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lattal and Gleeson, 1990 and Sutphin et al., 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "db2f9938-d15c-4d0b-abc3-8ae5b8dccc08",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C53",
+      "claim": "Experimental evidence from behavioral studies shows response acquisition with extended reinforcement delay in rhesus monkeys.",
+      "claim_type": "EXPLICIT",
+      "source": "While this narrow temporal detection window may be important in the striatum, it cannot account for the experimental evidence from behavioral studies of response acquisition with an extended reinforcement delay in rats and pigeons (Lattal and Gleeson, 1990; Sutphin et al., 1998), rhesus monkeys (Galuska and Woods, 2005), and humans (Okouchi, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Galuska and Woods, 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "5c357d78-f40c-462f-b913-7034c660bbcc",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C54",
+      "claim": "Experimental evidence from behavioral studies shows response acquisition with extended reinforcement delay in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "While this narrow temporal detection window may be important in the striatum, it cannot account for the experimental evidence from behavioral studies of response acquisition with an extended reinforcement delay in rats and pigeons (Lattal and Gleeson, 1990; Sutphin et al., 1998), rhesus monkeys (Galuska and Woods, 2005), and humans (Okouchi, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Okouchi, 2009",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "d1eb2e91-022e-40a9-9c88-13efbd36ce72",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C55",
+      "claim": "Dopamine can modulate STDP in the CA1 with a reinforcement delay of at least 1 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, our finding demonstrates that DA can modulate STDP in the CA1 with a reinforcement delay of at least 1 min (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data from this study and Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "2749764d-edc8-4ab9-bc93-f06e7df5e9f8",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C56",
+      "claim": "Extended reinforcement delay is likely to be particularly important in hippocampus-dependent learning during spatial exploration.",
+      "claim_type": "EXPLICIT",
+      "source": "Such extended reinforcement delay is likely to be particularly important in hippocampus-dependent learning during spatial exploration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on experimental findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "8158dad0-59ae-4471-a998-2e2f8abef0ba",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C57",
+      "claim": "Dopamine retroactively converts hippocampal timing-dependent synaptic depression into potentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that dopamine, a positive reinforcement signal, can retroactively convert hippocampal timing-dependent synaptic depression into potentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "52062112-18c3-4fc3-ba90-3a60a158d7a2",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C58",
+      "claim": "The retroactive effect of dopamine on STDP requires functional NMDA receptors.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect requires functional NMDA receptors and is mediated in part through the activation of the cAMP/PKA cascade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "59fdf52a-229a-4531-afc6-d1a841b54332",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C59",
+      "claim": "The retroactive effect of dopamine on STDP is mediated in part through the activation of the cAMP/PKA cascade.",
+      "claim_type": "EXPLICIT",
+      "source": "This effect requires functional NMDA receptors and is mediated in part through the activation of the cAMP/PKA cascade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from this study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "db2b105d-2f59-4540-bf31-e74525935a52",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C60",
+      "claim": "Reward-related signaling can act on a pre-established synaptic eligibility trace, thereby associating specific experiences with behaviorally distant, rewarding outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our results support the idea that reward-related signaling can act on a pre-established synaptic eligibility trace, thereby associating specific experiences with behaviorally distant, rewarding outcomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "548eb9f1-62df-49af-abb4-0a34d7574995",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C61",
+      "claim": "The finding identifies a biologically plausible mechanism for solving the 'distal reward problem'.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding identifies a biologically plausible mechanism for solving the 'distal reward problem'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "92c0b1e8-defb-47ee-a8fc-7d4f9e095b8c",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C62",
+      "claim": "The conversion of depression into potentiation can only occur at synapses that are re-activated following the initial pairing event.",
+      "claim_type": "EXPLICIT",
+      "source": "This in turn suggests that the conversion can only occur at synapses that are re-activated following the initial pairing event.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from NMDA receptor requirement and activity-dependence experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "bb4b7df7-1cf8-4357-a9f6-4264f3e111e1",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C63",
+      "claim": "Hippocampal reactivation events (sharp wave ripples) increase in frequency following reward.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, it has been reported that hippocampal reactivation events (sharp wave ripples) increase in frequency following reward (Singer and Frank, 2009; Atherton et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Singer and Frank, 2009 and Atherton et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "6927b149-0454-4a38-a3ae-46890171bc30",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C64",
+      "claim": "In behaving animals, the conditions for the conversion of depression into potentiation might occur during reward-related sharp wave ripple activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, in behaving animals, the conditions for the conversion of depression into potentiation might occur during reward-related sharp wave ripple activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on cited literature and experimental findings",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "40075582-1679-4620-b46f-be78bf817bc0",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C65",
+      "claim": "These findings support the concept of a slowly decaying synaptic eligibility trace that is committed to memory by the occurrence of reward.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings support the concept of a slowly decaying synaptic eligibility trace that is committed to memory by the occurrence of reward and provide a possible mechanism for associating specific experiences with behaviorally distant, rewarding outcomes in animals (Sutton and Barto, 1981; Suri and Schultz, 1999; Pan et al., 2005; Izhikevich, 2007; Harnett et al., 2009), including humans (Dunsmoor et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental results with supporting citations",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "d52b0783-3a7e-4376-baa5-795be0b0ec5e",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C66",
+      "claim": "The findings provide a possible mechanism for associating specific experiences with behaviorally distant, rewarding outcomes in animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings support the concept of a slowly decaying synaptic eligibility trace that is committed to memory by the occurrence of reward and provide a possible mechanism for associating specific experiences with behaviorally distant, rewarding outcomes in animals (Sutton and Barto, 1981; Suri and Schultz, 1999; Pan et al., 2005; Izhikevich, 2007; Harnett et al., 2009), including humans (Dunsmoor et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental results with supporting citations",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "a5524957-eaae-4e8d-b0b1-7c67f6ba0d5f",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C67",
+      "claim": "The findings provide a possible mechanism for associating specific experiences with behaviorally distant, rewarding outcomes in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings support the concept of a slowly decaying synaptic eligibility trace that is committed to memory by the occurrence of reward and provide a possible mechanism for associating specific experiences with behaviorally distant, rewarding outcomes in animals (Sutton and Barto, 1981; Suri and Schultz, 1999; Pan et al., 2005; Izhikevich, 2007; Harnett et al., 2009), including humans (Dunsmoor et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from experimental results with supporting citation to Dunsmoor et al., 2015",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "253325fb-de85-4320-9d4c-4cf31405b4c1",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C68",
+      "claim": "Wild-type mice (C57BL/6; postnatal days 12\u201318) were used in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Wild-type mice (C57BL/6; postnatal days 12\u201318; from Harlan, Bicester, UK or Central Animal Facility, Physiological Laboratory, Cambridge University) of both sexes were housed on a 12-hr light/dark cycle at 19\u201323 \u00b0C, with water and food ad libitum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "f385d394-57a1-4cd9-99a6-6e68af30874e",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C69",
+      "claim": "Excitatory postsynaptic potentials (EPSPs) were evoked by extracellular stimulation of the Schaffer-collateral-CA1 pathway during whole-cell recordings of CA1 pyramidal cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, we monitored excitatory postsynaptic potentials (EPSPs) that were evoked by extracellular stimulation of the Schaffer-collateral-CA1 pathway during whole-cell recordings of CA1 pyramidal cells in mouse horizontal slices (postnatal days 12\u201318; 'Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "1968eff8-299f-447b-9166-2f29f205b390",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C70",
+      "claim": "Plasticity was induced using an induction protocol that involved 100 pairings at 0.2 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Plasticity was induced in current clamp mode using an induction protocol that involved 100 pairings of a single EPSP followed by a single postsynaptic spike (t-LTP; Figure 1A) or a single postsynaptic spike followed by a single EPSP (t-LTD; Figure 1B) at 0.2 Hz.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Description of experimental methods",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "8102b115-65fe-4759-8f0e-59465e1edb2a",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C71",
+      "claim": "D1/D5 receptor stimulation leads to the activation of adenylyl cyclase and subsequent increase in cAMP and PKA activation.",
+      "claim_type": "EXPLICIT",
+      "source": "D1/D5 receptor stimulation leads to the activation of adenylyl cyclase (AC) and subsequent increase in cyclic adenosine monophosphate (cAMP) and protein kinase A (PKA) activation (Greengard et al., 1999; Neve et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Greengard et al., 1999 and Neve et al., 2004",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "1520a68d-85d4-4a7c-a0bd-f0b3a0158ccf",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C72",
+      "claim": "Combined application of D1-like and D2-like receptor antagonist completely blocked the dopamine effect on STDP conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though combined application of D1-like and D2-like receptor antagonist completely blocked the DA effect (Figure 4\u2014figure supplement 1A,D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data and Figure 4\u2014figure supplement 1A,D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "df36c3b8-b581-4a80-bc4e-775c1aef00b3",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C73",
+      "claim": "Application of D1-like receptor antagonist alone only partially prevented the conversion of t-LTD into t-LTP (131 \u00b1 16%).",
+      "claim_type": "EXPLICIT",
+      "source": "application of either D1-like or D2-like receptor antagonist alone only partially prevented the conversion of t-LTD into t-LTP (SCH 23390: 131 \u00b1 16%; t(6) = 1.4, p = 0.0113 vs DA (t-LTP); t(6) = 3.6, p = 0.2277 vs control (t-LTD); t(6) = 1.9, p = 0.0994 vs 100%; n = 7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data with statistical analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "ec0b8ee4-c92c-43d5-b702-b9d29c718696",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C74",
+      "claim": "Application of D2-like receptor antagonist alone only partially prevented the conversion of t-LTD into t-LTP (94 \u00b1 13%).",
+      "claim_type": "EXPLICIT",
+      "source": "Sulpiride: 94 \u00b1 13%; t(6) = 3.2, p = 0.0228 vs DA (t-LTP); t(6) = 1.5, p = 0.1932 vs control (t-LTD); t(6) = 0.5, p = 0.6435 vs 100%; n = 7; Figure 4\u2014figure supplement 1B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data with statistical analysis and Figure 4\u2014figure supplement 1B\u2013D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "47cedf26-d2b3-416d-9761-105ae622c0c7",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C75",
+      "claim": "Both D1-like and D2-like receptor subtypes might mediate the retroactive effect of dopamine on STDP.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that both receptor subtypes might mediate the retroactive effect of DA on STDP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from antagonist experiments showing partial blockade with individual antagonists",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "c87ca8a6-8650-4fe7-9c5c-9178b8a6ac1e",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C76",
+      "claim": "Most reinforcement learning models assume that the reward signal arrives after the activity that led to the reward.",
+      "claim_type": "EXPLICIT",
+      "source": "Most reinforcement learning models assume that the reward signal arrives after the activity that led to the reward, placing constraints on the possible underlying cellular mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about reinforcement learning models",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "61e83c9d-a184-4feb-8ecb-e6bd79f28a7b",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C77",
+      "claim": "The timing of reward signal arrival places constraints on the possible underlying cellular mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Most reinforcement learning models assume that the reward signal arrives after the activity that led to the reward, placing constraints on the possible underlying cellular mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about theoretical constraints",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "0be2b529-de17-463c-9a4c-04c966b29672",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C78",
+      "claim": "A crucial aspect of reinforcement learning models is the ability of the reinforcing signal (dopamine) to strengthen active synapses, even when it arrives after the activity.",
+      "claim_type": "EXPLICIT",
+      "source": "A crucial aspect of reinforcement learning models is the ability of the reinforcing signal (DA) to strengthen active synapses, even when it arrives after the activity (Sutton and Barto, 1981; Izhikevich, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Sutton and Barto, 1981 and Izhikevich, 2007",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "ae2684d4-7018-437f-98d2-6636865fdf0e",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "claim_id": "C79",
+      "claim": "The reinforcing signal is capable of acting specifically on active inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of DA was, therefore, activity dependent, demonstrating that the reinforcing signal is capable of acting specifically on the active inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from activity-dependence experiments",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e459364b-b1a1-4ad6-8be4-d68b0e9d9c16",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Classic STDP was confirmed in mouse hippocampal CA1 pyramidal neurons: pre-before-post pairing (\u0394t = +10 ms) induced t-LTP (182 \u00b1 14%), while post-before-pre pairing (\u0394t = \u221220 ms) induced t-LTD (61 \u00b1 9%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C10 present statistically significant experimental data (p < 0.05) with appropriate controls and sample sizes (n = 5 each), consistent with established STDP literature. The results replicate prior findings and provide a baseline for subsequent experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "48e08bab-6e18-479a-a052-6a6e8a058467",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Post-before-pre pairing at \u0394t = \u221210 ms unexpectedly induced t-LTP (202 \u00b1 21%) rather than t-LTD, conflicting with prior reports. Application of dopamine receptor antagonists (SCH23390 and sulpiride) prevented this t-LTP and restored t-LTD (72 \u00b1 8%), suggesting endogenous dopamine release during pairing changes the polarity of plasticity at narrow negative spike-timing intervals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C14, and C15 are well-supported by statistically significant data with appropriate pharmacological controls. The antagonist experiment (C14) provides strong evidence for dopaminergic involvement. However, C12's comparison to prior literature raises questions about experimental conditions that differ from previous studies, which is acknowledged but not fully resolved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "61976b3b-93c2-4670-9c5e-46c0f3f79f4f",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Exogenous dopamine (20 \u03bcM) applied during post-before-pre pairing at \u0394t = \u221220 ms converted t-LTD into t-LTP (144 \u00b1 12%), demonstrating that dopamine widens the spike time window for t-LTP induction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C18 are supported by statistically significant experimental data (p < 0.05) using interleaved experiments. The results are consistent with prior findings (Zhang et al., 2009; Yang and Dani, 2014) and provide clear evidence for dopamine's modulatory effect during coordinated spiking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "65d68c31-a462-4370-a9dd-7cc4ee6219a1",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Dopamine (100 \u03bcM) applied within 1 min after post-before-pre pairing (\u0394t = \u221220 ms) retroactively converted t-LTD into t-LTP (169 \u00b1 16%). This effect was activity-dependent (requiring continued stimulation), specific to dopamine receptor activation, and did not occur with dopamine alone without pairing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C25 and C79 collectively demonstrate a novel retroactive effect with strong experimental controls: antagonist blockade (C22), activity-dependence (C23-C24), and appropriate negative controls (C25). Statistical significance is robust (p < 0.01), and the activity-dependence experiment is particularly compelling for demonstrating input specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "11f47681-d755-4472-acc8-3b8c1431faf1",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The retroactive effect of dopamine on STDP is time-dependent: dopamine applied 10 min after pairing reversed t-LTD to baseline (94 \u00b1 9%), while application at 30 min failed to affect t-LTD (59 \u00b1 12%), demonstrating that dopamine can change STDP polarity only within a short time window.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C27 and C29 are supported by statistically significant data showing a clear temporal gradient. The 10-min delay experiment shows partial reversal while 30-min shows no effect, establishing a temporal window for the retroactive effect. Sample sizes are adequate (n = 6-12).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "8b4ef345-8a6b-4bfe-9f01-9e910ffcc7e2",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "NMDA receptor blockade with d-AP5 (50 \u03bcM) after pairing did not prevent t-LTD development but partially blocked dopamine's effect: dopamine with d-AP5 reversed t-LTD to baseline (105 \u00b1 12%) but failed to induce t-LTP, suggesting dissociation between de-depression and potentiation mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 are supported by appropriate pharmacological experiments with statistical significance. The partial blockade by d-AP5 provides strong evidence for mechanistic dissociation (C34). However, the interpretation that one mechanism is NMDA-dependent while another is not requires additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "8272ab09-07af-4f5d-90a0-cc5e738f85c6",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Forskolin (50 \u03bcM), an adenylyl cyclase activator, applied after pairing converted t-LTD into t-LTP (167 \u00b1 17%) without affecting baseline EPSPs. This effect was also NMDA receptor-dependent, as d-AP5 prevented potentiation but allowed de-depression (102 \u00b1 11%), suggesting cAMP cascade works upstream of or parallel to NMDA receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C38 are well-supported by statistically significant data with appropriate controls (C36). The forskolin experiments closely mimic dopamine effects, supporting cAMP/PKA involvement. The d-AP5 experiment (C37) strengthens the mechanistic interpretation, though the upstream/parallel relationship (C38) remains inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "fa4550c1-395e-4faf-84d4-0858040b8030",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "PKA inhibitor H-89 (20 \u03bcM) completely blocked dopamine-induced conversion of t-LTD into t-LTP, resulting in significant t-LTD (76 \u00b1 5%), demonstrating that the cAMP/PKA signaling cascade is necessary for dopamine's retroactive effect on STDP.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 are supported by statistically significant data (p < 0.01) showing complete blockade by PKA inhibition. This complements the forskolin experiments and provides strong evidence for cAMP/PKA pathway involvement. The conclusion (C40) is well-justified by the combined forskolin and H-89 results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "a9f2e1de-7709-4c6e-9cee-38b5e8326e78",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Individual application of D1-like (SCH23390) or D2-like (sulpiride) receptor antagonists only partially prevented dopamine's effect (131 \u00b1 16% and 94 \u00b1 13%, respectively), while combined application completely blocked it, suggesting both receptor subtypes mediate the retroactive effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C75 are supported by systematic pharmacological experiments with appropriate statistics. The partial blockade by individual antagonists and complete blockade by combined antagonists provides strong evidence for involvement of both receptor subtypes. However, the mechanistic interpretation (C75) remains tentative given D2 receptor complexity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "1759d694-7d96-4c1e-888a-6a04804985f9",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Dopamine can retroactively convert hippocampal t-LTD into t-LTP with a reinforcement delay of at least 1 min, requiring functional NMDA receptors and mediated through cAMP/PKA cascade activation. This provides a biologically plausible mechanism for solving the distal reward problem by allowing reward signals to act on pre-established synaptic eligibility traces.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55 and C57-C61 represent the main conclusions supported by the collective experimental evidence. The 1-min delay window (C55) is directly demonstrated, NMDA receptor requirement (C58) and cAMP/PKA involvement (C59) are well-established experimentally. The broader interpretations (C60-C61) are reasonable inferences from the data, though they extend beyond direct experimental validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "b48d87b2-afff-4582-99bf-8f733221e14f",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The conversion of t-LTD into t-LTP requires synaptic reactivation following the initial pairing event, as demonstrated by the NMDA receptor dependence and activity requirement. In behaving animals, this might occur during reward-related sharp wave ripple activity, which increases in frequency following reward.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C62 is a reasonable inference from the NMDA receptor and activity-dependence data. However, C64 is speculative, extrapolating from in vitro slice experiments to in vivo behavior. While C63 cites relevant literature on sharp wave ripples, the connection to the current findings remains hypothetical and requires in vivo validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "eab62d63-6125-4557-a906-d100d5d59fa5",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The findings support the concept of a slowly decaying synaptic eligibility trace committed to memory by reward occurrence, providing a possible mechanism for associating experiences with behaviorally distant rewarding outcomes in animals and humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 represent reasonable interpretations of the experimental findings within the framework of reinforcement learning theory. The eligibility trace concept is well-supported by the temporal window experiments and mechanistic data. However, the extension to behaving animals and humans (C66-C67) is inferential and requires behavioral validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "040c14b9-2dfe-4f64-9e9f-6d2cec4bdd8b",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background claims establishing that STDP is a physiologically relevant form of Hebbian learning with classic pre-before-post and post-before-pre rules, that neuromodulators including dopamine influence STDP, and that mechanisms linking experiences to delayed rewards (the distal reward problem) are not well understood.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C8 are background knowledge claims supported by appropriate citations to established literature. These provide context for the experimental work but do not constitute novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "434f6ed2-9382-4710-a013-6b48a71ee18b",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Prior literature has established that dopamine widens the time window for t-LTP induction, can reduce LTD magnitude when applied after induction, and that both STDP and its modulation by dopamine require functional NMDA receptors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13, C28, C30-C31 accurately represent prior literature with appropriate citations. These establish the foundation for the current study's novel findings regarding polarity conversion and extended temporal windows.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "08d426fa-7b87-4d56-9a64-5a9cae797e8b",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "D1/D5 receptor stimulation activates adenylyl cyclase leading to cAMP/PKA activation, while D2-like receptors typically inhibit adenylyl cyclase but can also potentiate it. The authors suggest dopamine's retroactive effect is mediated primarily via the cAMP/PKA pathway.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C41-C42 and C71 accurately cite established receptor pharmacology. However, C43 is speculative, acknowledging that D2 receptor contribution via alternative pathways cannot be excluded. The partial blockade by individual antagonists (C73-C74) suggests both receptors contribute, but the relative importance and specific mechanisms remain unclear.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "3135c665-5ef4-4f88-b8d3-4069be63b513",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The presynaptic source of hippocampal dopamine remains controversial, with evidence for both noradrenergic terminals from locus coeruleus and direct input from midbrain dopaminergic neurons linked to reward processing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C49 accurately represent the controversy in the literature with appropriate citations. The authors reasonably argue that their findings are consistent with reward-related dopamine signaling (C49), though the actual source remains unresolved and does not affect the validity of their mechanistic findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "dcd63e48-4b6f-4aaa-9fa6-7e979b643300",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Prior studies showed neuromodulators affect plasticity within 1-second windows in locust and striatum, which cannot account for behavioral evidence of extended reinforcement delays across species. Extended reinforcement delay is likely important for hippocampus-dependent spatial learning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C54 accurately cite relevant literature comparing temporal windows across systems and species. The contrast between short windows in striatum and behavioral evidence for longer delays is well-established. However, C56 is speculative about the functional importance for hippocampal learning.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "20b367af-da4a-4d4e-b9d4-5789368c8d6d",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Methodological details: experiments used wild-type C57BL/6 mice (postnatal days 12-18), whole-cell recordings from CA1 pyramidal neurons with Schaffer collateral stimulation, and STDP induction protocols involving 100 pairings at 0.2 Hz.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 describe standard experimental methods that are clearly documented and appropriate for the study. The methods are consistent with established STDP protocols in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    },
+    {
+      "id": "f1ca034c-e2ad-411d-849c-442de8085243",
+      "content_id": "3c1f5a1d-b23a-4b7c-ad10-289292b2ae5a",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Reinforcement learning models assume reward signals arrive after the activity that led to reward, placing constraints on cellular mechanisms. A crucial aspect is the ability of the reinforcing signal to strengthen active synapses even when arriving after activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 accurately represent theoretical constraints from reinforcement learning models with appropriate citations. These provide the conceptual framework motivating the experimental investigation of retroactive dopamine effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:33:27.006533Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9dc8c495-51ae-4797-ad48-1c651396bcaa",
+      "result_id": "e459364b-b1a1-4ad6-8be4-d68b0e9d9c16"
+    },
+    {
+      "claim_id": "65064220-3ff2-4f54-a5e4-c698c6759145",
+      "result_id": "e459364b-b1a1-4ad6-8be4-d68b0e9d9c16"
+    },
+    {
+      "claim_id": "5a996c90-8684-4cfa-9ca5-b2c4f5a0ef7e",
+      "result_id": "48e08bab-6e18-479a-a052-6a6e8a058467"
+    },
+    {
+      "claim_id": "adc1f154-cc84-4d72-9f5f-33fe3767a861",
+      "result_id": "48e08bab-6e18-479a-a052-6a6e8a058467"
+    },
+    {
+      "claim_id": "09e10ffd-89c5-4206-8546-8ac3ee2f0873",
+      "result_id": "48e08bab-6e18-479a-a052-6a6e8a058467"
+    },
+    {
+      "claim_id": "c126b210-6b25-4b59-b971-7b5e5f48a924",
+      "result_id": "48e08bab-6e18-479a-a052-6a6e8a058467"
+    },
+    {
+      "claim_id": "315c41ee-8168-4899-a1a7-2617a70bf5bf",
+      "result_id": "61976b3b-93c2-4670-9c5e-46c0f3f79f4f"
+    },
+    {
+      "claim_id": "53004cbd-1c49-4397-8819-a84492ac980f",
+      "result_id": "61976b3b-93c2-4670-9c5e-46c0f3f79f4f"
+    },
+    {
+      "claim_id": "36b0e93f-9e33-423a-8b53-5fa3671ab60a",
+      "result_id": "61976b3b-93c2-4670-9c5e-46c0f3f79f4f"
+    },
+    {
+      "claim_id": "9ef981e1-1e64-41d5-8b60-f9753cfdf4c1",
+      "result_id": "65d68c31-a462-4370-a9dd-7cc4ee6219a1"
+    },
+    {
+      "claim_id": "b36a071a-7613-4483-b337-2843bab511a3",
+      "result_id": "65d68c31-a462-4370-a9dd-7cc4ee6219a1"
+    },
+    {
+      "claim_id": "52882cff-4136-4fb6-aa04-7ec613b9c16f",
+      "result_id": "65d68c31-a462-4370-a9dd-7cc4ee6219a1"
+    },
+    {
+      "claim_id": "2cd96704-8e46-4d75-9a84-65ba9d29b0ab",
+      "result_id": "65d68c31-a462-4370-a9dd-7cc4ee6219a1"
+    },
+    {
+      "claim_id": "65cef07e-4c8c-4cf1-9ec1-12799f1fd948",
+      "result_id": "65d68c31-a462-4370-a9dd-7cc4ee6219a1"
+    },
+    {
+      "claim_id": "23f46877-c5cc-4a49-9948-a938e947a43f",
+      "result_id": "65d68c31-a462-4370-a9dd-7cc4ee6219a1"
+    },
+    {
+      "claim_id": "ae2684d4-7018-437f-98d2-6636865fdf0e",
+      "result_id": "65d68c31-a462-4370-a9dd-7cc4ee6219a1"
+    },
+    {
+      "claim_id": "cb0b57f5-1241-41c5-b855-80fb65f99ee4",
+      "result_id": "11f47681-d755-4472-acc8-3b8c1431faf1"
+    },
+    {
+      "claim_id": "ee3b9604-945c-4500-8733-b12a7cd5df70",
+      "result_id": "11f47681-d755-4472-acc8-3b8c1431faf1"
+    },
+    {
+      "claim_id": "a348e512-5281-430e-bc88-e6b00a4ffbb8",
+      "result_id": "11f47681-d755-4472-acc8-3b8c1431faf1"
+    },
+    {
+      "claim_id": "2d9f8ba4-b5fb-47eb-9c61-a73bc143e5bf",
+      "result_id": "8b4ef345-8a6b-4bfe-9f01-9e910ffcc7e2"
+    },
+    {
+      "claim_id": "a621e44d-b720-4de7-b637-1d881d6b3c51",
+      "result_id": "8b4ef345-8a6b-4bfe-9f01-9e910ffcc7e2"
+    },
+    {
+      "claim_id": "7239cb41-e6d2-4efb-afa1-4cb60d6bd4e9",
+      "result_id": "8b4ef345-8a6b-4bfe-9f01-9e910ffcc7e2"
+    },
+    {
+      "claim_id": "8f9f504e-04a5-444f-b972-871f1e65274b",
+      "result_id": "8272ab09-07af-4f5d-90a0-cc5e738f85c6"
+    },
+    {
+      "claim_id": "7aba33ea-064a-4366-a95e-9e766919cf87",
+      "result_id": "8272ab09-07af-4f5d-90a0-cc5e738f85c6"
+    },
+    {
+      "claim_id": "9a72e937-d3ae-4f88-a7fb-971009010d52",
+      "result_id": "8272ab09-07af-4f5d-90a0-cc5e738f85c6"
+    },
+    {
+      "claim_id": "45bd2969-719e-4d88-9269-020d7ff093f2",
+      "result_id": "8272ab09-07af-4f5d-90a0-cc5e738f85c6"
+    },
+    {
+      "claim_id": "e5ac8796-1ec8-44c9-8932-7e2684e6d1b0",
+      "result_id": "fa4550c1-395e-4faf-84d4-0858040b8030"
+    },
+    {
+      "claim_id": "04a02e99-7059-4b38-a24f-add3f632ccbd",
+      "result_id": "fa4550c1-395e-4faf-84d4-0858040b8030"
+    },
+    {
+      "claim_id": "1520a68d-85d4-4a7c-a0bd-f0b3a0158ccf",
+      "result_id": "a9f2e1de-7709-4c6e-9cee-38b5e8326e78"
+    },
+    {
+      "claim_id": "df36c3b8-b581-4a80-bc4e-775c1aef00b3",
+      "result_id": "a9f2e1de-7709-4c6e-9cee-38b5e8326e78"
+    },
+    {
+      "claim_id": "ec0b8ee4-c92c-43d5-b702-b9d29c718696",
+      "result_id": "a9f2e1de-7709-4c6e-9cee-38b5e8326e78"
+    },
+    {
+      "claim_id": "47cedf26-d2b3-416d-9761-105ae622c0c7",
+      "result_id": "a9f2e1de-7709-4c6e-9cee-38b5e8326e78"
+    },
+    {
+      "claim_id": "d1eb2e91-022e-40a9-9c88-13efbd36ce72",
+      "result_id": "1759d694-7d96-4c1e-888a-6a04804985f9"
+    },
+    {
+      "claim_id": "8158dad0-59ae-4471-a998-2e2f8abef0ba",
+      "result_id": "1759d694-7d96-4c1e-888a-6a04804985f9"
+    },
+    {
+      "claim_id": "52062112-18c3-4fc3-ba90-3a60a158d7a2",
+      "result_id": "1759d694-7d96-4c1e-888a-6a04804985f9"
+    },
+    {
+      "claim_id": "59fdf52a-229a-4531-afc6-d1a841b54332",
+      "result_id": "1759d694-7d96-4c1e-888a-6a04804985f9"
+    },
+    {
+      "claim_id": "db2b105d-2f59-4540-bf31-e74525935a52",
+      "result_id": "1759d694-7d96-4c1e-888a-6a04804985f9"
+    },
+    {
+      "claim_id": "548eb9f1-62df-49af-abb4-0a34d7574995",
+      "result_id": "1759d694-7d96-4c1e-888a-6a04804985f9"
+    },
+    {
+      "claim_id": "92c0b1e8-defb-47ee-a8fc-7d4f9e095b8c",
+      "result_id": "b48d87b2-afff-4582-99bf-8f733221e14f"
+    },
+    {
+      "claim_id": "bb4b7df7-1cf8-4357-a9f6-4264f3e111e1",
+      "result_id": "b48d87b2-afff-4582-99bf-8f733221e14f"
+    },
+    {
+      "claim_id": "6927b149-0454-4a38-a3ae-46890171bc30",
+      "result_id": "b48d87b2-afff-4582-99bf-8f733221e14f"
+    },
+    {
+      "claim_id": "40075582-1679-4620-b46f-be78bf817bc0",
+      "result_id": "eab62d63-6125-4557-a906-d100d5d59fa5"
+    },
+    {
+      "claim_id": "d52b0783-3a7e-4376-baa5-795be0b0ec5e",
+      "result_id": "eab62d63-6125-4557-a906-d100d5d59fa5"
+    },
+    {
+      "claim_id": "a5524957-eaae-4e8d-b0b1-7c67f6ba0d5f",
+      "result_id": "eab62d63-6125-4557-a906-d100d5d59fa5"
+    },
+    {
+      "claim_id": "7896e6cf-f695-4846-9d44-4e930b04d67e",
+      "result_id": "040c14b9-2dfe-4f64-9e9f-6d2cec4bdd8b"
+    },
+    {
+      "claim_id": "85547802-46f8-4286-b585-77fed755ca24",
+      "result_id": "040c14b9-2dfe-4f64-9e9f-6d2cec4bdd8b"
+    },
+    {
+      "claim_id": "af63a3c5-708d-4bbf-b3ba-8ce210e404e0",
+      "result_id": "040c14b9-2dfe-4f64-9e9f-6d2cec4bdd8b"
+    },
+    {
+      "claim_id": "865a1b40-4e87-48cc-9989-cdbd253e06cd",
+      "result_id": "040c14b9-2dfe-4f64-9e9f-6d2cec4bdd8b"
+    },
+    {
+      "claim_id": "490e5de3-8832-43dc-8948-6d2097d98c0a",
+      "result_id": "040c14b9-2dfe-4f64-9e9f-6d2cec4bdd8b"
+    },
+    {
+      "claim_id": "8d792db8-178c-4a58-aa99-3a93e05617e7",
+      "result_id": "040c14b9-2dfe-4f64-9e9f-6d2cec4bdd8b"
+    },
+    {
+      "claim_id": "d16c058b-e34e-4057-aeec-b305f0ec779d",
+      "result_id": "040c14b9-2dfe-4f64-9e9f-6d2cec4bdd8b"
+    },
+    {
+      "claim_id": "31e5b80a-c82c-4ec7-b739-aded486ab73d",
+      "result_id": "040c14b9-2dfe-4f64-9e9f-6d2cec4bdd8b"
+    },
+    {
+      "claim_id": "f613a94b-2bb5-4bb7-9a63-fb78e1975205",
+      "result_id": "434f6ed2-9382-4710-a013-6b48a71ee18b"
+    },
+    {
+      "claim_id": "7ac4c0f2-ee46-42ec-b9a5-bc8c266cc362",
+      "result_id": "434f6ed2-9382-4710-a013-6b48a71ee18b"
+    },
+    {
+      "claim_id": "4513825a-923b-4d4a-a4d0-186349c8a5d0",
+      "result_id": "434f6ed2-9382-4710-a013-6b48a71ee18b"
+    },
+    {
+      "claim_id": "03791aac-8cba-40ed-9103-0a4c00679691",
+      "result_id": "434f6ed2-9382-4710-a013-6b48a71ee18b"
+    },
+    {
+      "claim_id": "a1099cb7-7205-48fa-9ad4-ec84987e7e36",
+      "result_id": "08d426fa-7b87-4d56-9a64-5a9cae797e8b"
+    },
+    {
+      "claim_id": "5cc8e4eb-58ee-4a72-a40b-0b505dc5a67d",
+      "result_id": "08d426fa-7b87-4d56-9a64-5a9cae797e8b"
+    },
+    {
+      "claim_id": "83e21555-8214-4e30-a1c1-1d2851b55faa",
+      "result_id": "08d426fa-7b87-4d56-9a64-5a9cae797e8b"
+    },
+    {
+      "claim_id": "8102b115-65fe-4759-8f0e-59465e1edb2a",
+      "result_id": "08d426fa-7b87-4d56-9a64-5a9cae797e8b"
+    },
+    {
+      "claim_id": "e4b62c3b-c015-4b06-ae17-658581cdd10c",
+      "result_id": "3135c665-5ef4-4f88-b8d3-4069be63b513"
+    },
+    {
+      "claim_id": "6899b4b2-5530-4466-b000-c7c47d26607c",
+      "result_id": "3135c665-5ef4-4f88-b8d3-4069be63b513"
+    },
+    {
+      "claim_id": "e7874df8-7608-408c-835e-58d406038ff6",
+      "result_id": "3135c665-5ef4-4f88-b8d3-4069be63b513"
+    },
+    {
+      "claim_id": "27422014-e3d2-4a71-a849-6d10e3287bf4",
+      "result_id": "3135c665-5ef4-4f88-b8d3-4069be63b513"
+    },
+    {
+      "claim_id": "beb60238-0ffb-4c65-afd6-87e445b25e9b",
+      "result_id": "3135c665-5ef4-4f88-b8d3-4069be63b513"
+    },
+    {
+      "claim_id": "cf65bcbc-0d41-4baf-8de8-2ac4f0beb371",
+      "result_id": "3135c665-5ef4-4f88-b8d3-4069be63b513"
+    },
+    {
+      "claim_id": "a2048a50-1bc8-4b13-be9f-a2a56256bf86",
+      "result_id": "dcd63e48-4b6f-4aaa-9fa6-7e979b643300"
+    },
+    {
+      "claim_id": "987ca33c-e91e-4bc1-a478-b6b55baee1cf",
+      "result_id": "dcd63e48-4b6f-4aaa-9fa6-7e979b643300"
+    },
+    {
+      "claim_id": "3c36af32-c3c3-47fc-9fba-827ec704eb31",
+      "result_id": "dcd63e48-4b6f-4aaa-9fa6-7e979b643300"
+    },
+    {
+      "claim_id": "db2f9938-d15c-4d0b-abc3-8ae5b8dccc08",
+      "result_id": "dcd63e48-4b6f-4aaa-9fa6-7e979b643300"
+    },
+    {
+      "claim_id": "5c357d78-f40c-462f-b913-7034c660bbcc",
+      "result_id": "dcd63e48-4b6f-4aaa-9fa6-7e979b643300"
+    },
+    {
+      "claim_id": "2749764d-edc8-4ab9-bc93-f06e7df5e9f8",
+      "result_id": "dcd63e48-4b6f-4aaa-9fa6-7e979b643300"
+    },
+    {
+      "claim_id": "253325fb-de85-4320-9d4c-4cf31405b4c1",
+      "result_id": "20b367af-da4a-4d4e-b9d4-5789368c8d6d"
+    },
+    {
+      "claim_id": "f385d394-57a1-4cd9-99a6-6e68af30874e",
+      "result_id": "20b367af-da4a-4d4e-b9d4-5789368c8d6d"
+    },
+    {
+      "claim_id": "1968eff8-299f-447b-9166-2f29f205b390",
+      "result_id": "20b367af-da4a-4d4e-b9d4-5789368c8d6d"
+    },
+    {
+      "claim_id": "c87ca8a6-8650-4fe7-9c5c-9178b8a6ac1e",
+      "result_id": "f1ca034c-e2ad-411d-849c-442de8085243"
+    },
+    {
+      "claim_id": "61e83c9d-a184-4feb-8ecb-e6bd79f28a7b",
+      "result_id": "f1ca034c-e2ad-411d-849c-442de8085243"
+    },
+    {
+      "claim_id": "0be2b529-de17-463c-9a4c-04c966b29672",
+      "result_id": "f1ca034c-e2ad-411d-849c-442de8085243"
+    }
+  ],
+  "comparisons": []
+}

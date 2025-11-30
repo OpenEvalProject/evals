@@ -1,0 +1,1931 @@
+{
+  "submission": {
+    "id": "a1a1cf8a-4c3d-483d-9ee5-1581d72b0d78",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-29T21:58:36.430366Z",
+    "updated_at": "2025-11-29T21:58:36.430366Z"
+  },
+  "content": [
+    {
+      "id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "submission_id": "a1a1cf8a-4c3d-483d-9ee5-1581d72b0d78",
+      "content_type": "manuscript",
+      "content_text": "# Mathematical modeling of the West Africa Ebola epidemic\n\n## Authors\n\n- Jean-Paul Chretien<sup>1</sup> \u2020\n- Steven Riley<sup>2</sup>\n- Dylan B George<sup>3</sup>\n\n### Affiliations\n\n1. Department of Defense Division of Integrated Biosurveillance, Armed Forces Health Surveillance Center Silver Spring United States\n2. MRC Centre for Outbreak Analysis and Modelling, Department of Infectious Disease Epidemiology School of Public Health, Imperial College London London United Kingdom\n3. Department of Health and Human Services Biomedical Advanced Research and Development Authority Washington United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nAs of November 2015, the Ebola virus disease (EVD) epidemic that began in West Africa in late 2013 is waning. The human toll includes more than 28,000 EVD cases and 11,000 deaths in Guinea, Liberia, and Sierra Leone, the most heavily-affected countries. We reviewed 66 mathematical modeling studies of the EVD epidemic published in the peer-reviewed literature to assess the key uncertainties models addressed, data used for modeling, public sharing of data and results, and model performance. Based on the review, we suggest steps to improve the use of modeling in future public health emergencies.\n\n## Introduction\n\nOn March 23, 2014, the Ministry of Health Guinea notified the World Health Organization (WHO) of a rapidly evolving outbreak of Ebola virus disease (EVD), now believed to have begun in December 2013. The epidemic spread through West Africa and reached Europe and the United States. As of November 4, 2015, WHO reported more than 28,000 cumulative cases and 11,000 deaths in Guinea, Liberia, and Sierra Leone, where transmission had been most intense (World Health Organization, 2016).\n\nAs the emergency progressed, researchers developed mathematical models of the epidemiological dynamics. Modelers have assessed ongoing epidemics previously, but the prominence of recent EVD work, enabled by existing research programs for infectious disease modeling (National Institutes of Health, 2016a; National Institutes of Health, 2016b) and online availability of EVD data via WHO (World Health Organization, 2016), Ministries of Health of affected countries, or modelers who transcribed and organized public WHO or Ministry of Health data (Rivers C) may be unprecedented. The efforts for this outbreak have been numerous and diverse, with major media incorporating modeling results in many pieces throughout the outbreak. U.S. Government decision making has benefited from modeling results at key moments during the response (Robinson R).\n\nWe draw on this vigorous response of the epidemiological modeling community to the EVD epidemic to review (Moher et al., 2009) the application of modeling to public health emergencies, and identify lessons to guide the modeling response to future emergencies.\n\n## Results\n\n### Overview of modeling applications\n\nWe identified 66 publications meeting inclusion criteria (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/09186/elife-09186-fig1-v2.jpg)\n\nModels addressed 6 key uncertainties about the EVD epidemic: transmissibility, typically represented by the reproduction number (R, the average number of people each infected person infects; assessed in 41 publications); effectiveness of various interventions that had been or might be implemented (in 29 publications); epidemic forecast (in 29 publications); regional or international spreading patterns or risk (in 15 publications); phylogenetics of EVD viruses (in 9 publications); and feasibility of conducting vaccine trials in West Africa (in 2 publications) (Table 1, Supplementary file 1).\n\n**Table 1.**\n Overview of modeling publications on the 2013-present EVD epidemic.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Ref.</th>\n      <th rowspan=\"2\">Date of latest EVD data</th>\n      <th rowspan=\"2\">Date published</th>\n      <th rowspan=\"2\">EVD data was pre-existing and public</th>\n      <th colspan=\"6\">Uncertainties addressed</th>\n    </tr>\n    <tr>\n      <th>R</th>\n      <th>Interventions</th>\n      <th>Forecast</th>\n      <th>Spread</th>\n      <th>Phylogenetics</th>\n      <th>Clinical trials</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Baize et al., 2014</td>\n      <td>3/20/14</td>\n      <td>4/16/14</td>\n      <td>No</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Dudas and Rambaut, 2014</td>\n      <td>3/20/14</td>\n      <td>5/2/14</td>\n      <td>Yes</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Alizon et al., 2014</td>\n      <td>6/18/14</td>\n      <td>12/13/14</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gire et al., 2014</td>\n      <td>6/18/14</td>\n      <td>8/28/14</td>\n      <td>No</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Stadler et al., 2014</td>\n      <td>6/18/14</td>\n      <td>10/6/14</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Volz and Pond, 2014</td>\n      <td>6/18/14</td>\n      <td>10/24/14</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Pandey et al., 2014</td>\n      <td>8/7/14</td>\n      <td>10/30/14</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gomes et al., 2014</td>\n      <td>8/9/14</td>\n      <td>9/2/14</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td></td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Valdez et al., 2015</td>\n      <td>8/15/14</td>\n      <td>7/20/15</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td>*</td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Merler et al., 2015</td>\n      <td>8/16/14</td>\n      <td>1/7/15</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td>*</td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Rainisch et al., 2015</td>\n      <td>8/16/14</td>\n      <td>2/18/15</td>\n      <td>Yes</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Althaus, 2014</td>\n      <td>8/20/14</td>\n      <td>9/2/14</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Fisman et al., 2014</td>\n      <td>8/22/14</td>\n      <td>9/8/14</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Nishiura and Chowell, 2014</td>\n      <td>8/26/14</td>\n      <td>9/11/14</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Poletto et al., 2014</td>\n      <td>8/27/14</td>\n      <td>10/23/14</td>\n      <td>Yes</td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Meltzer et al., 2014</td>\n      <td>8/28/14</td>\n      <td>9/26/14</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Agusto et al., 2015</td>\n      <td>8/29/14</td>\n      <td>4/23/15</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Althaus, 2015</td>\n      <td>8/31/14</td>\n      <td>4/19/15</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Scarpino et al., 2014</td>\n      <td>8/31/14</td>\n      <td>12/15/14</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Weitz and Dushoff, 2015</td>\n      <td>8/31/14</td>\n      <td>3/4/15</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Drake et al., 2015</td>\n      <td>9/2/14</td>\n      <td>10/30/14</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Towers et al., 2014</td>\n      <td>9/8/14</td>\n      <td>9/18/14</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bellan et al., 2014</td>\n      <td>9/14/14</td>\n      <td>10/14/14</td>\n      <td>Yes</td>\n      <td></td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chowell et al., 2015</td>\n      <td>9/14/14</td>\n      <td>1/19/15</td>\n      <td>Yes</td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cooper et al., 2015</td>\n      <td>9/14/14</td>\n      <td>4/14/15</td>\n      <td>Yes</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>*</td>\n    </tr>\n    <tr>\n      <td>Read et al., 2015</td>\n      <td>9/14/14</td>\n      <td>11/12/14</td>\n      <td>Yes</td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>WHO Ebola Response Team, 2014</td>\n      <td>9/14/14</td>\n      <td>9/23/14</td>\n      <td>No</td>\n      <td>*</td>\n      <td></td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Faye et al., 2015</td>\n      <td>9/16/14</td>\n      <td>1/23/15</td>\n      <td>No</td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bogoch et al., 2015</td>\n      <td>9/21/14</td>\n      <td>10/21/14</td>\n      <td>Yes</td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Yamin et al., 2014</td>\n      <td>9/22/14</td>\n      <td>10/28/14</td>\n      <td>No</td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Lewnard et al., 2014</td>\n      <td>9/23/14</td>\n      <td>10/24/14</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Webb et al., 2015</td>\n      <td>9/23/14</td>\n      <td>1/30/15</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Shaman et al., 2014</td>\n      <td>9/28/14</td>\n      <td>10/27/14</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chowell et al., 2014</td>\n      <td>10/1/14</td>\n      <td>11/20/14</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Fasina et al., 2014</td>\n      <td>10/1/14</td>\n      <td>10/9/14</td>\n      <td>Yes</td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Khan et al., 2015</td>\n      <td>10/1/14</td>\n      <td>2/24/15</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Rivers et al., 2014</td>\n      <td>10/5/14</td>\n      <td>10/16/14</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Xia et al., 2015</td>\n      <td>10/7/14</td>\n      <td>9/8/15</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Majumder et al., 2014</td>\n      <td>10/11/14</td>\n      <td>4/28/15</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Kiskowski, 2014</td>\n      <td>10/15/14</td>\n      <td>11/13/14</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Fisman and Tuite, 2014</td>\n      <td>10/18/14</td>\n      <td>11/21/14</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Althaus et al., 2015</td>\n      <td>10/20/14</td>\n      <td>1/15/15</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Simon-Loriere et al., 2015</td>\n      <td>10/25/14</td>\n      <td>6/24/15</td>\n      <td>No</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Rainisch et al., 2015</td>\n      <td>10/31/14</td>\n      <td>6/16/15</td>\n      <td>Yes</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Fast et al., 2015</td>\n      <td>11/1/14</td>\n      <td>5/15/15</td>\n      <td>Yes</td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Kucharski et al., 2015</td>\n      <td>11/1/14</td>\n      <td>2/18/15</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Tong et al., 2015</td>\n      <td>11/11/14</td>\n      <td>5/13/15</td>\n      <td>No</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Hoenen et al., 2015</td>\n      <td>11/21/14</td>\n      <td>3/26/15</td>\n      <td>No</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cope et al., 2014</td>\n      <td>12/3/14</td>\n      <td>12/10/14</td>\n      <td>Yes</td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>White et al., 2014</td>\n      <td>12/3/14</td>\n      <td>1/30/15</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>WHO Ebola Response Team, 2015</td>\n      <td>12/14/14</td>\n      <td>12/24/14</td>\n      <td>No</td>\n      <td>*</td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chowell et al., 2014</td>\n      <td>12/17/14</td>\n      <td>1/21/15</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Siettos et al., 2014</td>\n      <td>12/21/14</td>\n      <td>3/9/15</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Park et al., 2015</td>\n      <td>12/26/14</td>\n      <td>6/18/15</td>\n      <td>No</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Nadhem and Nejib, 2015</td>\n      <td>12/30/14</td>\n      <td>6/14/15</td>\n      <td>Yes</td>\n      <td></td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Camacho et al., 2015</td>\n      <td>1/18/15</td>\n      <td>2/10/15</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Carroll et al., 2015</td>\n      <td>1/31/15</td>\n      <td>6/17/15</td>\n      <td>No</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bellan et al., 2015</td>\n      <td>2/9/15</td>\n      <td>4/15/15</td>\n      <td>Yes</td>\n      <td></td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td>*</td>\n    </tr>\n    <tr>\n      <td>Barbarossa et al., 2015</td>\n      <td>2/13/15</td>\n      <td>7/21/15</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Kugelman et al., 2015</td>\n      <td>2/14/15</td>\n      <td>6/12/15</td>\n      <td>No</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cleaton et al., 2015</td>\n      <td>2/28/15</td>\n      <td>9/3/15</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Wang and Zhong, 2015</td>\n      <td>3/18/15</td>\n      <td>3/24/15</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Toth et al., 2015</td>\n      <td>3/31/15</td>\n      <td>7/14/15</td>\n      <td>Yes</td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Dong et al., 2015</td>\n      <td>4/3/15</td>\n      <td>9/5/15</td>\n      <td>Yes</td>\n      <td></td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Browne et al., 2015</td>\n      <td>4/12/15</td>\n      <td>5/14/15</td>\n      <td>Yes</td>\n      <td>*</td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Zinszer et al., 2015</td>\n      <td>5/13/15</td>\n      <td>9/1/15</td>\n      <td>Yes</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>*</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nThe number of publications with models to estimate R increased rapidly early in the epidemic, along with those including intervention, forecasting, and regional and international spread models; the growth rate of publications with phylogenetic modeling applications and clinical trial models increased later in the epidemic (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/09186/elife-09186-fig2-v2.jpg)\n\n**Figure 2.:** The figure includes 125 modeling applications across the 66 publications.\n\nOf the 125 models reported across the studies, 74% included mechanistic assumptions about disease transmission (e.g., compartmental, agent-based, or phylogenetic models), while 26% were purely phenomenological (Supplementary file 2).\n\n### Data sources\n\nFor 54 (82%) of the 66 publications, the only EVD data used was pre-existing and publicly-available (Table 1). Typically, these were aggregate case data posted online by the WHO or affected countries, or Ebola virus genetic data released previously during the epidemic. Twelve studies used original EVD epidemiological data (Baize et al., 2014; WHO Ebola Response Team, 2014;\u00a02015; Faye et al., 2015; Yamin et al., 2014) or genomic data (Baize et al., 2014; Gire et al., 2014; Simon-Loriere et al., 2015; Tong et al., 2015; Hoenen et al., 2015; Park et al., 2015; Carroll et al., 2015; Kugelman et al., 2015).\n\nExamples of additional data used for some modeling applications include official reports of social mobilization efforts (Fast et al., 2015), media reports of case clusters (Cleaton et al., 2015), media reports of events that may curtail or aggravate transmission (Majumder et al., 2014), and international air travel data (Gomes et al., 2014; Poletto et al., 2014; Read et al., 2015; Bogoch et al., 2015; Rainisch et al., 2015; Cope et al., 2014). Several studies incorporated spatial data on EVD cases into models of regional EVD spread (Gire et al., 2014; Merler et al., 2015; Rainisch et al., 2015; Tong et al., 2015; Carroll et al., 2015; Zinszer et al., 2015).\n\n### Data and results sharing\n\nOf the 12 studies that collected original EVD data, 9 released those data before or at the time of publication (8 with Ebola virus genetic data deposited in GenBank (Baize et al., 2014; Gire et al., 2014; Simon-Loriere et al., 2015; Tong et al., 2015; Hoenen et al., 2015; Park et al., 2015; Carroll et al., 2015; Kugelman et al., 2015) and 1 with detailed epidemiological data in the online publication (Yamin et al., 2014). Many publications used results from the WHO Ebola Response Team investigations (WHO Ebola Response Team, 2014; 2015) (for example, estimates of the generation time, case fatality rate, or other epidemiological parameters as model inputs), but the detailed epidemiological data from these studies, to date, are not publicly available.\n\nAccumulation of shared EVD data over successive studies was evident especially in the phylogenetic analyses. For example, all phylogenetic studies published after release of the initial Ebola virus sequences by (Baize et al., 2014) (Guinea) and (Gire et al., 2014) (Sierra Leone) incorporated those sequence data.\n\nAcross all studies, the publication lag (defined as date of most recent EVD data used to date of online publication) was almost 3 months (median [interquartile range] = 85 [30\u2013157] days). The lag varied across modeling applications, and was considerably shorter in studies that included models to estimate R (median = 58 days for publications with R estimation versus 118 days for others) or to forecast (median = 50 versus 125 days) (Figure 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/09186/elife-09186-fig3-v2.jpg)\n\n**Figure 3.:** The vertical red and turquoise lines indicate the median lag for publications including and not including, respectively, the type of modeling application.\n\nLags were longest for studies with phylogenetic and clinical trials applications (median = 125 and 108 days, respectively), although there were fewer publications with these models.\n\n### Modeling results: R and forecasts\n\nForty-one publications characterized epidemic dynamics using epidemiological (N=36), genomic (N=4), or news report data (N=1). Twenty-four of these provided estimates of the basic reproduction number (R0) for Guinea, Liberia, Sierra Leone, or West Africa, using epidemiological or genomic data (Figure 4, Supplementary file 3).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/09186/elife-09186-fig4-v2.jpg)\n\n**Figure 4.:** Aggregate, case counts released by the WHO or Ministries of Health; Line-level, individual-level data from epidemiological investigations; Genomic, Ebola virus sequence data. The Figure excludes an outlier estimate of 8.33 for Sierra Leone (Fisman et al., 2014).\n\nThere were 16 country-specific estimates of R0 for Guinea, Liberia, or Sierra Leone that used EVD epidemiological data (aggregate or line-level) and provided 95% confidence or credible intervals (CIs). Median CI width was about 85% smaller for models that used cumulative EVD counts (N=11 models in 5 publications) than for models that used disaggregated EVD case data, such as weekly counts (N=5 models in 3 publications) (Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/09186/elife-09186-fig5-v2.jpg)\n\n**Figure 5.:** Disaggregated data typically were weekly counts. Top row: Vertical lines indicate 95% CIs. Bottom row: Horizontal bars indicate median CI width.\n\nAlthough CIs were also narrower for models when deterministic rather than stochastic methods were used to estimate parameter uncertainty, all of the deterministic results came from a single study (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/09186/elife-09186-fig6-v2.jpg)\n\n**Figure 6.:** Top row: Vertical lines indicate 95% CIs. Bottom row: Horizontal bars indicate median CI width.\n\nFifteen publications provided numerical forecasts of cumulative EVD incidence for West African countries. Of 22 models that assumed no additional response measures beyond those implemented at the time (i.e., 'status quo' assumptions), 18 overestimated the future number of cases (Figure 7, Supplementary file 4).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/09186/elife-09186-fig7-v2.jpg)\n\n**Figure 7.:** Accuracy is shown as the ratio of predicted incidence to incidence subsequently reported by the WHO. 'Dampening' refers to various approaches to restrict the growth of forecasted incidence over time. Top row: Accuracy by date of forecast. Bottom row: Accuracy by forecast lead time ('Horizon'). The Figure excludes one forecast with horizon > 1 year (Fisman and Tuite, 2014).\n\nIn multivariate analysis, forecast error was lower for forecasts made later in the outbreak (14% reduction in mean absolute percentage error [MAPE] per week, P<0.001), higher for forecasts with longer time horizons (29% increase in MAPE per week, P<0.01), and lower for forecasts that used decay terms, spatially heterogeneous contact patterns, or other methods that served to constrain projected incidence growth (90% reduction in MAPE, P<0.01). Country and number of parameters in the model were not statistically significant predictors of forecast accuracy.\n\n## Discussion\n\nWe identified 66 modeling publications during approximately 18 months of the EVD response that assessed trends in the intensity of transmission, effectiveness of control measures, future case counts, regional and international spreading risk, Ebola virus phylogenetic relationships and recent evolutionary dynamics, and feasibility of clinical trials in West Africa. We found a heavy dependence on public data for EVD modeling, and identified factors that might have influenced model performance. To our knowledge, this review is one of the most comprehensive assessments of mathematical modeling applied to a single real-world public health emergency.\n\nAn important caveat of our review is that it only captures published results. We are aware of additional EVD epidemiological investigations and modeling not yet published. Some modelers providing direct support to operational response efforts have not published results, possibly because of operational demands.\n\nAlso, we could not account comprehensively for the sources of variation across studies. For example, studies that estimated R0 using the same data sources at about the same time reported varied results. Such variation may, in part, reflect the problem of identifiability, with different R0 estimates possible for models that perform equally well depending on other parameter values (Weitz and Dushoff, 2015). Ideally, an investigation into this heterogeneity would include implementation of models in a common testing environment.\n\nOur review suggests several possible steps for improving the application of epidemiological modeling during public health emergencies. First, agreement on community best practices could improve the quality of modeling support to decision-makers. For example, our analysis is consistent with simulation studies showing underestimation of uncertainty in estimating R0 with cumulative (as opposed to disaggregated) incidence data, and supports the recommendation to use disaggregated data and stochastic models (King et al., 2015). Additionally, incidence forecasts provided reasonable prospective estimates several weeks forward in time during the initial phase; however, given available data and methodologies these forecasts became progressively more inaccurate as they projected dynamics beyond several weeks. Validation of incidence forecasts against other relevant data, such as hospital admissions and contacts identified, also could provide evidence that the assumptions are sound.\n\nThe 2014 onwards ebola outbreak in West Africa clearly highlights the need for a better understanding of how increasing awareness of severe infections within a community decreases their transmissibility even in the absence of specific interventions. Advancing methodological approaches to capture this effect, such as dampening approaches, might help account for behavioral changes, interventions, contact heterogeneity, or other factors that can be expected in a public health emergency which likely will improve forecasting accuracy. Establishing best practices within the community will allow decision-makers the ability to more quickly accept methodologies and results that have been generated via these best practices. Hence, decisions based on these results can happen more quickly.\n\nSecond, modeling coordination could facilitate direct comparison of modeling results, identifying issues on which diverse approaches agree and areas of greater uncertainty. Epidemiological modelers might learn from comparison initiatives in modeling of influenza (Centers for Disease Control and Prevention, 2013), dengue (US Department of Commerce), and HIV (HIV modeling consortium); and in other fields such as climate forecasting Intergovernmental Panel on Climate Change, 2010). For epidemiological application, an ensemble approach should preserve methodological diversity to exploit the full range of state-of-the-art modeling methods, but include enough standardization to enable cross-model comparison. Establishing an initial architecture for a coordinated, ensemble effort now could assist the response to EVD, and future public health emergencies.\n\nPerhaps most importantly, outbreak modeling efforts would be much more fruitful if data and analytical results could be made available more quickly to all interested parties (Yozwiak et al., 2015). The publication timelines for academic journals typically will not be consistent with decision-making needs during public health emergencies like the EVD epidemic, where the epidemiological situation was highly dynamic and the usefulness of data and forecasts time-constrained. Establishing mechanisms for modelers without special access to the official epidemiological teams to share interim results would expand the evidence base for response decision-making. Ideally, data should be made available online in machine-readable form to facilitate use in analyses. Modelers and other analysts expended enormous effort during the EVD epidemic transcribing data posted online in pdf documents.\n\nNew norms for data-sharing during public health emergencies (World Health Organization, 2015) would remove the most obvious hurdle for model comparison. The current situation where groups either negotiate bilaterally with individual countries or work exclusively with global health and development agencies is understandable, but highly ineffective. The EVD outbreak highlights again \u2013 after the 2003 Severe Acute Respiratory Syndrome epidemic and 2009 influenza A (H1N1) pandemic \u2013 that an independent, well-resourced global data observatory could greatly facilitate the public health response in many ways, not least of which would be the enablement of rapid, high quality, and easily comparable disease-dynamic studies.\n\n## Materials and methods\n\nFor this review, we adapted the PRISMA methodology (Moher et al., 2009) to identify quantitative modeling studies of the 2013-present West Africa EVD epidemic. We searched PubMed on September 24, 2015, for publications in English since December 1, 2013, using the term \u2018Ebola\u2019 in any field. We reviewed all returned abstracts and selected ones for confirmatory, full-text review that mentioned use of quantitative models to characterize or predict epidemic dynamics or evaluate interventions. We included studies that met this criterion in full-text review.\n\nWe excluded studies of clinical prediction models, viral or physiological function models, ecological niche models, animal reservoir models, and publications that did not use data from the 2013-present West Africa EVD epidemic.\n\nFor included publications, we recorded the geographic settings, date of most recent EVD data used and date of publication, type of EVD data used, questions the models addressed, modeling approaches, and key results, including estimates of the basic reproduction number (R0) and forecasts of future EVD incidence provided in the main text of the publications. To assess forecast accuracy, we compared predictions of models made under \u2018status quo\u2019 assumptions (i.e., without explicit inclusion of additional interventions or behavioral changes) to EVD incidence data subsequently released by the WHO (World Health Organization, 2016),\u00a0using the WHO figures dated soonest after the forecast target date.\n",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "3fdee0cb-7389-4218-a862-bbc52dc81b85",
+      "submission_id": "a1a1cf8a-4c3d-483d-9ee5-1581d72b0d78",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mark Jit, London School of Hygiene & Tropical Medicine, and Public Health England , United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.09186.015](https://doi.org/10.7554/eLife.09186.015)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your work entitled \"Improving epidemiological modeling coordination for Ebola and other public health emergencies\" for peer review at eLife. Your submission has been favorably evaluated by Prabhat Jha (Senior editor), and three reviewers, one of whom (Mark Jit) is a member of our Board of Reviewing Editors. Another of the reviewers, Marco Ajelli, has also agreed to reveal their identity.\n\nThe reviewers have discussed the reviews with one another and the Reviewing editor has drafted this decision to help you prepare a revised submission.\n\nThe reviewers all agreed that this is a timely, comprehensive and useful review of modelling studies that have described and/or forecasted the Ebola epidemic in West Africa. We all enjoyed reading the paper, and agreed that it made some important points about good modelling practice in general. In particular, we agree that data sharing and complete access to best available epidemiological data (especially patient databases) for all modelling groups is of paramount importance in the case of future outbreaks of infectious diseases.\n\nWe believe that the way the information and discussion was presented could be improved, and by doing so would enhance the influence that the paper may have. In particular:\n\n1) More detail could be provided on how Ebola modelling was actually used to support decision making both internationally and for individual national governments. Many of the recommendations in the Discussion are predicated on the premise that the modelling results were actually useful to inform policy (or if they weren't, could be made useful by improving the modelling process). Some historical discussion on what happened in practice would help here. Currently only a single US-centric reference is provided.\n\n2) The paper needs a proper Materials and methods section providing details about the search terms/strategy, inclusion/exclusion criteria and information extracted from the papers. Given that this is a review, compliance with PRISMA guidelines would normally be expected. If a non-standard approach to searching was used, this needs to be justified and the method explained.\n\n3) Each section of the paper seems to contain a mixture of (i) data directly extracted from the reviewed papers, (ii) direct inferences from these data, (iii) more general discussion points around the inferences and (iv) broader discussion (e.g. recommendations for standardisation and funding for future outbreak response). While each section is helpful, the way the paper is written makes it difficult to distinguish the provenance of the different points made. For instance, there are statements like \"Modelers welcomed the release of these data, but expended considerable effort curating them for analysis\", \"accurate epidemic forecasting for Ebola proved to be quite challenging, especially for long time horizons, because the behavior of people infected and at risk was unpredictable\", \"incomplete information from the field can make it difficult to determine if failure to end the epidemic reflects sub-optimal implementation of effective measures, or over-optimistic assumptions about their effectiveness\" where it is unclear whether these are statements drawn from the reviewed papers, or based on the authors' own experiences.\n\nUsing a traditional separation into Results and Discussion may also help this as most scientists are used to the idea of drawing immediate inferences from data, and then suggesting broader implications of these inferences. The Discussion section may be lengthy and structured if necessary. The broader discussion around funding etc. which is not really an extrapolation from the data (however welcome the points may be) should probably be given a section of its own.\n\n4) Table 2 shows a very large variation in the baseline scenario forecast, spanning orders of magnitude. The authors seem to suggest that this stems from different assumptions used about epidemic growth forecasting e.g. random mixing, incidence decay or spatial/sociodemographic structuring. It would be useful if you could explicitly structure the presentation of results to show whether these different assumptions had an effect on the outbreak size. This should at minimum be done in the visual presentation but if some sort of meta-analysis/meta-regression could help that would be even better.\n\n5) Additional information about the spatial structure (if any) of the models reviewed would be useful. Spatial structure in these models ranges from homogeneous (non-spatial models) to detailed agent-based models such as the one developed by Merler et al. Lancet ID.\n\n6) Some models employed single streams of data (e.g., all case counts by country) while other models employed multiple data streams (e.g., all cases and cases among health-care workers such as the multi-type branching process model by Drake et al.). This would be useful to highlight.\n\n7) The paper makes the point that there are differences between the results of various modelling groups because of different methodologies used. However, in some cases modelling methodology has been improperly used, and this would be useful to highlight. In particular the following areas could be given attention:\n\na) Parameter estimation. In Box 1, you have underlined that the different models analyzed in this review have a remarkably different number of \"unknown\" parameters to be estimated. This represents a very important topic that could be given more space in this manuscript). For example:\n\nA clear distinction should be made between estimated and imputed parameters. For instance the number of estimated parameters in Pandey et al. (2014) is 4, while the other parameters are somehow imputed from the literature. That said, still the 4 unknown parameters estimated in Pandey et al. (2014) are not univocally identifiable by using as input the dataset considered in that work.\n\nIn Rivers et al. (2014) about 10 (surely not all unequivocally identifiable) parameters have been estimated on the basis of case counts only.\n\nb) Uncertainty. A good modelling practice (which is not always followed in the reviewed papers) is the assessment of the uncertainty due to i) the stochasticity of the infection transmission process, and ii) the uncertainty in parameter estimates. In particular, as regards the uncertainty in parameter estimates, methods providing estimates of the parameters distribution (e.g., MCMC) should be preferred with respect to methods providing point estimate of the parameter values only (e.g., MSE, ML). This would avoid (or at least limit) the spread in the community of biased findings never confirmed on the field or by subsequent studies (e.g., the estimate that the main driver of the Ebola epidemic was the transmission during traditional burials found by Pandey et al. (2014) which was based on a point estimate made through a MSE fitting procedure).\n\nc) Model validation. Another major point is that most (though not all) the reviewed modelling studies lack in model validation against other epidemiologically relevant quantities (e.g., ETU admissions, number of individuals included in contact tracing). Validation against other quantities is a key indicator to understand whether the model is able to explain the reason of an observed pattern of infection spread or it is just able to reproduce case counts \"by chance\". In fact, although it is welcome to show that the model is in agreement with the next few incidence points after stopping model calibration, modelers should not limit model validation to that.\n\n8) It would also be good to clarify that the reviewed modelling studies can be divided in two categories: the ones aimed at explaining the observed pattern, for instance by accounting for actual data on intervention measures, and those that do not provide any explanation for the observed pattern (e.g., the model in Fisman, Khoo and Tuite (2014)). In fact, the point here is not to fit some data points, but to understand the mechanisms behind the observed infection spread as their knowledge is key for predictions and preparedness.\n\n9) The importance for modelling groups of having access to online epidemiological data in an easy to export format (e.g., CSV file) could be highlighted. In fact, the Ministries of Health of the three most affected countries provided PDF files only, some of which were images, thus implying remarkable efforts by modelers to readily use such datasets. Moreover, the case of Guinea was even worse as, at the beginning of the epidemic, there was not an official website of the Guinean Ministry of Health with their reports uploaded.\n",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fc03d3e2-985b-4865-855f-d34176eea57b",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C1",
+      "claim": "As of November 2015, the Ebola virus disease (EVD) epidemic that began in West Africa in late 2013 is waning.",
+      "claim_type": "EXPLICIT",
+      "source": "As of November 2015, the Ebola virus disease (EVD) epidemic that began in West Africa in late 2013 is waning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a temporal statement about the status of the epidemic as of a specific date, presented as a factual observation in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "a1dcd2a2-bf71-459b-8b01-f949ce33c56e",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C2",
+      "claim": "The human toll of the EVD epidemic includes more than 28,000 EVD cases and 11,000 deaths in Guinea, Liberia, and Sierra Leone.",
+      "claim_type": "EXPLICIT",
+      "source": "The human toll includes more than 28,000 EVD cases and 11,000 deaths in Guinea, Liberia, and Sierra Leone, the most heavily-affected countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific numerical data about cases and deaths in named countries is provided.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "c01bac7c-5000-42ca-a69a-2c5503bf448e",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C3",
+      "claim": "Guinea, Liberia, and Sierra Leone were the most heavily-affected countries in the EVD epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "The human toll includes more than 28,000 EVD cases and 11,000 deaths in Guinea, Liberia, and Sierra Leone, the most heavily-affected countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text based on the case and death data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "d4e464ec-d69b-40f5-9720-8fbfb8f7a9dd",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C4",
+      "claim": "66 mathematical modeling studies of the EVD epidemic were published in the peer-reviewed literature.",
+      "claim_type": "EXPLICIT",
+      "source": "We reviewed 66 mathematical modeling studies of the EVD epidemic published in the peer-reviewed literature to assess the key uncertainties models addressed, data used for modeling, public sharing of data and results, and model performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the result of the systematic review conducted by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "d878ab05-c308-4252-b53e-7c37321f0142",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C5",
+      "claim": "On March 23, 2014, the Ministry of Health Guinea notified the World Health Organization (WHO) of a rapidly evolving outbreak of Ebola virus disease (EVD).",
+      "claim_type": "EXPLICIT",
+      "source": "On March 23, 2014, the Ministry of Health Guinea notified the World Health Organization (WHO) of a rapidly evolving outbreak of Ebola virus disease (EVD), now believed to have begun in December 2013.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific historical event with a date and actors identified.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "31e52316-9f14-4c62-bd1d-20ebda59a01b",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C6",
+      "claim": "The EVD epidemic is now believed to have begun in December 2013.",
+      "claim_type": "EXPLICIT",
+      "source": "On March 23, 2014, the Ministry of Health Guinea notified the World Health Organization (WHO) of a rapidly evolving outbreak of Ebola virus disease (EVD), now believed to have begun in December 2013.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a belief based on epidemiological investigation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "d00fbd62-0f30-45de-90f9-7d329a26b3e2",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C7",
+      "claim": "The EVD epidemic spread through West Africa and reached Europe and the United States.",
+      "claim_type": "EXPLICIT",
+      "source": "The epidemic spread through West Africa and reached Europe and the United States.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the geographic spread of the epidemic.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "93f3397c-42f5-4ca8-8668-394ac32c8d23",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C8",
+      "claim": "As of November 4, 2015, WHO reported more than 28,000 cumulative cases and 11,000 deaths in Guinea, Liberia, and Sierra Leone.",
+      "claim_type": "EXPLICIT",
+      "source": "As of November 4, 2015, WHO reported more than 28,000 cumulative cases and 11,000 deaths in Guinea, Liberia, and Sierra Leone, where transmission had been most intense (World Health Organization, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific data from WHO is cited with a reference.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "9947bdef-6ab3-4a87-85e7-39bbdb99bd44",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C9",
+      "claim": "Transmission of EVD had been most intense in Guinea, Liberia, and Sierra Leone.",
+      "claim_type": "EXPLICIT",
+      "source": "As of November 4, 2015, WHO reported more than 28,000 cumulative cases and 11,000 deaths in Guinea, Liberia, and Sierra Leone, where transmission had been most intense (World Health Organization, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the text based on WHO data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "5e5068b2-2d10-4944-97e1-4bd85db6ec82",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C10",
+      "claim": "Modelers have assessed ongoing epidemics previously.",
+      "claim_type": "EXPLICIT",
+      "source": "Modelers have assessed ongoing epidemics previously, but the prominence of recent EVD work, enabled by existing research programs for infectious disease modeling (National Institutes of Health, 2016a; National Institutes of Health, 2016b) and online availability of EVD data via WHO (World Health Organization, 2016), Ministries of Health of affected countries, or modelers who transcribed and organized public WHO or Ministry of Health data (Rivers C) may be unprecedented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as general knowledge about the field of epidemiological modeling.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "742945ab-fd93-401c-a781-264d57a648ea",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C11",
+      "claim": "The prominence of recent EVD modeling work may be unprecedented.",
+      "claim_type": "EXPLICIT",
+      "source": "Modelers have assessed ongoing epidemics previously, but the prominence of recent EVD work, enabled by existing research programs for infectious disease modeling (National Institutes of Health, 2016a; National Institutes of Health, 2016b) and online availability of EVD data via WHO (World Health Organization, 2016), Ministries of Health of affected countries, or modelers who transcribed and organized public WHO or Ministry of Health data (Rivers C) may be unprecedented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative assessment by the authors based on their review.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "afd002e7-b896-4cc1-a299-1aa6372627c3",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C12",
+      "claim": "Existing research programs for infectious disease modeling enabled the prominence of recent EVD work.",
+      "claim_type": "EXPLICIT",
+      "source": "Modelers have assessed ongoing epidemics previously, but the prominence of recent EVD work, enabled by existing research programs for infectious disease modeling (National Institutes of Health, 2016a; National Institutes of Health, 2016b) and online availability of EVD data via WHO (World Health Organization, 2016), Ministries of Health of affected countries, or modelers who transcribed and organized public WHO or Ministry of Health data (Rivers C) may be unprecedented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to NIH programs.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "b4c7d23b-ee01-4cab-944e-608c691260b6",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C13",
+      "claim": "Online availability of EVD data via WHO, Ministries of Health of affected countries, or modelers who transcribed and organized public data enabled the prominence of recent EVD work.",
+      "claim_type": "EXPLICIT",
+      "source": "Modelers have assessed ongoing epidemics previously, but the prominence of recent EVD work, enabled by existing research programs for infectious disease modeling (National Institutes of Health, 2016a; National Institutes of Health, 2016b) and online availability of EVD data via WHO (World Health Organization, 2016), Ministries of Health of affected countries, or modelers who transcribed and organized public WHO or Ministry of Health data (Rivers C) may be unprecedented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to data sources.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "b5d67a6a-62a7-4a59-bfdf-a54bfc05a8dc",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C14",
+      "claim": "Major media incorporated modeling results in many pieces throughout the EVD outbreak.",
+      "claim_type": "EXPLICIT",
+      "source": "The efforts for this outbreak have been numerous and diverse, with major media incorporating modeling results in many pieces throughout the outbreak.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about media coverage.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "2762dcd4-7e69-40b2-8605-282fad0ed343",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C15",
+      "claim": "U.S. Government decision making has benefited from modeling results at key moments during the EVD response.",
+      "claim_type": "EXPLICIT",
+      "source": "U.S. Government decision making has benefited from modeling results at key moments during the response (Robinson R).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to Robinson R.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "ffb8a1a0-225e-4234-88aa-93cb58548943",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C16",
+      "claim": "Models addressed transmissibility, typically represented by the reproduction number (R), in 41 publications.",
+      "claim_type": "EXPLICIT",
+      "source": "Models addressed 6 key uncertainties about the EVD epidemic: transmissibility, typically represented by the reproduction number (R, the average number of people each infected person infects; assessed in 41 publications); effectiveness of various interventions that had been or might be implemented (in 29 publications); epidemic forecast (in 29 publications); regional or international spreading patterns or risk (in 15 publications); phylogenetics of EVD viruses (in 9 publications); and feasibility of conducting vaccine trials in West Africa (in 2 publications) (Table 1, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the systematic review with specific counts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "ffb2e885-73b3-461b-9a91-b4c122a03263",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C17",
+      "claim": "Models addressed effectiveness of various interventions in 29 publications.",
+      "claim_type": "EXPLICIT",
+      "source": "Models addressed 6 key uncertainties about the EVD epidemic: transmissibility, typically represented by the reproduction number (R, the average number of people each infected person infects; assessed in 41 publications); effectiveness of various interventions that had been or might be implemented (in 29 publications); epidemic forecast (in 29 publications); regional or international spreading patterns or risk (in 15 publications); phylogenetics of EVD viruses (in 9 publications); and feasibility of conducting vaccine trials in West Africa (in 2 publications) (Table 1, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the systematic review with specific counts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "5336e4be-1570-43fb-966d-d60f1975b593",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C18",
+      "claim": "Models addressed epidemic forecast in 29 publications.",
+      "claim_type": "EXPLICIT",
+      "source": "Models addressed 6 key uncertainties about the EVD epidemic: transmissibility, typically represented by the reproduction number (R, the average number of people each infected person infects; assessed in 41 publications); effectiveness of various interventions that had been or might be implemented (in 29 publications); epidemic forecast (in 29 publications); regional or international spreading patterns or risk (in 15 publications); phylogenetics of EVD viruses (in 9 publications); and feasibility of conducting vaccine trials in West Africa (in 2 publications) (Table 1, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the systematic review with specific counts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "c5d82604-dde9-419e-ae05-79280675f634",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C19",
+      "claim": "Models addressed regional or international spreading patterns or risk in 15 publications.",
+      "claim_type": "EXPLICIT",
+      "source": "Models addressed 6 key uncertainties about the EVD epidemic: transmissibility, typically represented by the reproduction number (R, the average number of people each infected person infects; assessed in 41 publications); effectiveness of various interventions that had been or might be implemented (in 29 publications); epidemic forecast (in 29 publications); regional or international spreading patterns or risk (in 15 publications); phylogenetics of EVD viruses (in 9 publications); and feasibility of conducting vaccine trials in West Africa (in 2 publications) (Table 1, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the systematic review with specific counts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "5f7345c5-853f-4d84-9a36-c0ffe360d81a",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C20",
+      "claim": "Models addressed phylogenetics of EVD viruses in 9 publications.",
+      "claim_type": "EXPLICIT",
+      "source": "Models addressed 6 key uncertainties about the EVD epidemic: transmissibility, typically represented by the reproduction number (R, the average number of people each infected person infects; assessed in 41 publications); effectiveness of various interventions that had been or might be implemented (in 29 publications); epidemic forecast (in 29 publications); regional or international spreading patterns or risk (in 15 publications); phylogenetics of EVD viruses (in 9 publications); and feasibility of conducting vaccine trials in West Africa (in 2 publications) (Table 1, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the systematic review with specific counts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "6d831f23-d30b-4418-8005-1cb8d10d57cb",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C21",
+      "claim": "Models addressed feasibility of conducting vaccine trials in West Africa in 2 publications.",
+      "claim_type": "EXPLICIT",
+      "source": "Models addressed 6 key uncertainties about the EVD epidemic: transmissibility, typically represented by the reproduction number (R, the average number of people each infected person infects; assessed in 41 publications); effectiveness of various interventions that had been or might be implemented (in 29 publications); epidemic forecast (in 29 publications); regional or international spreading patterns or risk (in 15 publications); phylogenetics of EVD viruses (in 9 publications); and feasibility of conducting vaccine trials in West Africa (in 2 publications) (Table 1, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the systematic review with specific counts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "f1179937-71d5-4f75-aafd-83ccf5f656b3",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C22",
+      "claim": "The reproduction number (R) is the average number of people each infected person infects.",
+      "claim_type": "EXPLICIT",
+      "source": "Models addressed 6 key uncertainties about the EVD epidemic: transmissibility, typically represented by the reproduction number (R, the average number of people each infected person infects; assessed in 41 publications); effectiveness of various interventions that had been or might be implemented (in 29 publications); epidemic forecast (in 29 publications); regional or international spreading patterns or risk (in 15 publications); phylogenetics of EVD viruses (in 9 publications); and feasibility of conducting vaccine trials in West Africa (in 2 publications) (Table 1, Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of a standard epidemiological parameter.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "92fb2d55-531d-429a-9156-978d02e51e54",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C23",
+      "claim": "Of the 125 models reported across the studies, 74% included mechanistic assumptions about disease transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 125 models reported across the studies, 74% included mechanistic assumptions about disease transmission (e.g., compartmental, agent-based, or phylogenetic models), while 26% were purely phenomenological (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the review analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "5104ba29-4a0f-48e3-a09f-706e9db9ea2f",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C24",
+      "claim": "26% of the 125 models reported across the studies were purely phenomenological.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 125 models reported across the studies, 74% included mechanistic assumptions about disease transmission (e.g., compartmental, agent-based, or phylogenetic models), while 26% were purely phenomenological (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the review analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "9c83d4de-5f38-4f5a-9a3a-fd9c92bc3a21",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C25",
+      "claim": "Mechanistic models include compartmental, agent-based, or phylogenetic models.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 125 models reported across the studies, 74% included mechanistic assumptions about disease transmission (e.g., compartmental, agent-based, or phylogenetic models), while 26% were purely phenomenological (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Examples of mechanistic models are provided.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "0cc88b74-bfb6-4373-9177-b133eb32d2c9",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C26",
+      "claim": "For 54 (82%) of the 66 publications, the only EVD data used was pre-existing and publicly-available.",
+      "claim_type": "EXPLICIT",
+      "source": "For 54 (82%) of the 66 publications, the only EVD data used was pre-existing and publicly-available (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the review analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "7b03f7cd-b2d0-443f-a732-36a20224028e",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C27",
+      "claim": "Pre-existing and publicly-available EVD data typically were aggregate case data posted online by the WHO or affected countries, or Ebola virus genetic data released previously during the epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "Typically, these were aggregate case data posted online by the WHO or affected countries, or Ebola virus genetic data released previously during the epidemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the nature of the publicly available data used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "816e6451-9f24-4922-ab43-8aeb49d68dd2",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C28",
+      "claim": "Twelve studies used original EVD epidemiological data.",
+      "claim_type": "EXPLICIT",
+      "source": "Twelve studies used original EVD epidemiological data (Baize et al., 2014; WHO Ebola Response Team, 2014; 2015; Faye et al., 2015; Yamin et al., 2014) or genomic data (Baize et al., 2014; Gire et al., 2014; Simon-Loriere et al., 2015; Tong et al., 2015; Hoenen et al., 2015; Park et al., 2015; Carroll et al., 2015; Kugelman et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the review with citations to specific studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "6a086e8d-2598-400b-8d66-5336b423846e",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C29",
+      "claim": "Some modeling applications used official reports of social mobilization efforts as additional data.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples of additional data used for some modeling applications include official reports of social mobilization efforts (Fast et al., 2015), media reports of case clusters (Cleaton et al., 2015), media reports of events that may curtail or aggravate transmission (Majumder et al., 2014), and international air travel data (Gomes et al., 2014; Poletto et al., 2014; Read et al., 2015; Bogoch et al., 2015; Rainisch et al., 2015; Cope et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to a specific study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "62b24a0e-03c2-4e43-8871-f093ee8c9b3a",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C30",
+      "claim": "Some modeling applications used media reports of case clusters as additional data.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples of additional data used for some modeling applications include official reports of social mobilization efforts (Fast et al., 2015), media reports of case clusters (Cleaton et al., 2015), media reports of events that may curtail or aggravate transmission (Majumder et al., 2014), and international air travel data (Gomes et al., 2014; Poletto et al., 2014; Read et al., 2015; Bogoch et al., 2015; Rainisch et al., 2015; Cope et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to a specific study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "2a5534e7-d698-4099-a832-cdc07d46be05",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C31",
+      "claim": "Some modeling applications used media reports of events that may curtail or aggravate transmission as additional data.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples of additional data used for some modeling applications include official reports of social mobilization efforts (Fast et al., 2015), media reports of case clusters (Cleaton et al., 2015), media reports of events that may curtail or aggravate transmission (Majumder et al., 2014), and international air travel data (Gomes et al., 2014; Poletto et al., 2014; Read et al., 2015; Bogoch et al., 2015; Rainisch et al., 2015; Cope et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to a specific study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "aea8214d-7ee8-4712-95ed-f444ad4b5f1b",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C32",
+      "claim": "Some modeling applications used international air travel data as additional data.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples of additional data used for some modeling applications include official reports of social mobilization efforts (Fast et al., 2015), media reports of case clusters (Cleaton et al., 2015), media reports of events that may curtail or aggravate transmission (Majumder et al., 2014), and international air travel data (Gomes et al., 2014; Poletto et al., 2014; Read et al., 2015; Bogoch et al., 2015; Rainisch et al., 2015; Cope et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to specific studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "7a86661f-3f16-41e5-beab-6c6108e5ff19",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C33",
+      "claim": "Several studies incorporated spatial data on EVD cases into models of regional EVD spread.",
+      "claim_type": "EXPLICIT",
+      "source": "Several studies incorporated spatial data on EVD cases into models of regional EVD spread (Gire et al., 2014; Merler et al., 2015; Rainisch et al., 2015; Tong et al., 2015; Carroll et al., 2015; Zinszer et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to specific studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "391b2c7a-dd4c-422c-94af-5825dafbdd56",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C34",
+      "claim": "Of the 12 studies that collected original EVD data, 9 released those data before or at the time of publication.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 12 studies that collected original EVD data, 9 released those data before or at the time of publication (8 with Ebola virus genetic data deposited in GenBank (Baize et al., 2014; Gire et al., 2014; Simon-Loriere et al., 2015; Tong et al., 2015; Hoenen et al., 2015; Park et al., 2015; Carroll et al., 2015; Kugelman et al., 2015) and 1 with detailed epidemiological data in the online publication (Yamin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the review with citations to specific studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "afd9c643-db50-47af-b966-16e8e7ef349e",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C35",
+      "claim": "8 studies released Ebola virus genetic data deposited in GenBank before or at the time of publication.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 12 studies that collected original EVD data, 9 released those data before or at the time of publication (8 with Ebola virus genetic data deposited in GenBank (Baize et al., 2014; Gire et al., 2014; Simon-Loriere et al., 2015; Tong et al., 2015; Hoenen et al., 2015; Park et al., 2015; Carroll et al., 2015; Kugelman et al., 2015) and 1 with detailed epidemiological data in the online publication (Yamin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the review with citations to specific studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "5b29a4cc-07b4-4454-9178-8c5f5fe9fa3b",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C36",
+      "claim": "1 study released detailed epidemiological data in the online publication before or at the time of publication.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 12 studies that collected original EVD data, 9 released those data before or at the time of publication (8 with Ebola virus genetic data deposited in GenBank (Baize et al., 2014; Gire et al., 2014; Simon-Loriere et al., 2015; Tong et al., 2015; Hoenen et al., 2015; Park et al., 2015; Carroll et al., 2015; Kugelman et al., 2015) and 1 with detailed epidemiological data in the online publication (Yamin et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the review with a citation to a specific study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "fa62c93d-d061-4df3-9007-86d72ca5242c",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C37",
+      "claim": "Many publications used results from the WHO Ebola Response Team investigations as model inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Many publications used results from the WHO Ebola Response Team investigations (WHO Ebola Response Team, 2014; 2015) (for example, estimates of the generation time, case fatality rate, or other epidemiological parameters as model inputs), but the detailed epidemiological data from these studies, to date, are not publicly available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with citations to WHO Ebola Response Team studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "c77a6696-cd6c-4a61-8001-eb5efb6e5fcc",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C38",
+      "claim": "The detailed epidemiological data from the WHO Ebola Response Team studies are not publicly available to date.",
+      "claim_type": "EXPLICIT",
+      "source": "Many publications used results from the WHO Ebola Response Team investigations (WHO Ebola Response Team, 2014; 2015) (for example, estimates of the generation time, case fatality rate, or other epidemiological parameters as model inputs), but the detailed epidemiological data from these studies, to date, are not publicly available.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a factual observation about data availability.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "f762f35f-a857-42ac-a50c-8dd4f4ef2171",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C39",
+      "claim": "Accumulation of shared EVD data over successive studies was evident especially in the phylogenetic analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Accumulation of shared EVD data over successive studies was evident especially in the phylogenetic analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the review analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "4adc2286-9138-46b6-af83-f36066fbf304",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C40",
+      "claim": "All phylogenetic studies published after release of the initial Ebola virus sequences by Baize et al., 2014 (Guinea) and Gire et al., 2014 (Sierra Leone) incorporated those sequence data.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, all phylogenetic studies published after release of the initial Ebola virus sequences by (Baize et al., 2014) (Guinea) and (Gire et al., 2014) (Sierra Leone) incorporated those sequence data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation with citations to the initial sequence studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "da5cdc7d-5099-4238-808a-bdd95e859250",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C41",
+      "claim": "Across all studies, the publication lag was almost 3 months (median [interquartile range] = 85 [30\u2013157] days).",
+      "claim_type": "EXPLICIT",
+      "source": "Across all studies, the publication lag (defined as date of most recent EVD data used to date of online publication) was almost 3 months (median [interquartile range] = 85 [30\u2013157] days).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the review analysis with specific statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "a38628fc-873c-4555-a706-aa81d9bde75e",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C42",
+      "claim": "Publication lag is defined as date of most recent EVD data used to date of online publication.",
+      "claim_type": "EXPLICIT",
+      "source": "Across all studies, the publication lag (defined as date of most recent EVD data used to date of online publication) was almost 3 months (median [interquartile range] = 85 [30\u2013157] days).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition provided by the authors.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "85028b6b-eaf2-4fa4-87b0-0ab67afda093",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C43",
+      "claim": "The publication lag was considerably shorter in studies that included models to estimate R (median = 58 days) versus others (median = 118 days).",
+      "claim_type": "EXPLICIT",
+      "source": "The lag varied across modeling applications, and was considerably shorter in studies that included models to estimate R (median = 58 days for publications with R estimation versus 118 days for others) or to forecast (median = 50 versus 125 days) (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the review analysis with specific statistics and reference to Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "62f4493b-ca0d-4f73-acf2-26416520d0e9",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C44",
+      "claim": "The publication lag was considerably shorter in studies that included models to forecast (median = 50 days) versus others (median = 125 days).",
+      "claim_type": "EXPLICIT",
+      "source": "The lag varied across modeling applications, and was considerably shorter in studies that included models to estimate R (median = 58 days for publications with R estimation versus 118 days for others) or to forecast (median = 50 versus 125 days) (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the review analysis with specific statistics and reference to Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "993f5d6e-e687-410d-8b1b-02b4dfff267e",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C45",
+      "claim": "Publication lags were longest for studies with phylogenetic applications (median = 125 days).",
+      "claim_type": "EXPLICIT",
+      "source": "Lags were longest for studies with phylogenetic and clinical trials applications (median = 125 and 108 days, respectively), although there were fewer publications with these models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the review analysis with specific statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "43a24efd-2774-4b1b-9eef-08d9384738bb",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C46",
+      "claim": "Publication lags were longest for studies with clinical trials applications (median = 108 days).",
+      "claim_type": "EXPLICIT",
+      "source": "Lags were longest for studies with phylogenetic and clinical trials applications (median = 125 and 108 days, respectively), although there were fewer publications with these models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the review analysis with specific statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "17cb06b9-28e5-4910-b08d-41adbeaab05f",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C47",
+      "claim": "There were fewer publications with phylogenetic and clinical trials models.",
+      "claim_type": "EXPLICIT",
+      "source": "Lags were longest for studies with phylogenetic and clinical trials applications (median = 125 and 108 days, respectively), although there were fewer publications with these models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "05ae94b3-e2f7-4a22-9e8d-def7b593bf7b",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C48",
+      "claim": "Forty-one publications characterized epidemic dynamics using epidemiological (N=36), genomic (N=4), or news report data (N=1).",
+      "claim_type": "EXPLICIT",
+      "source": "Forty-one publications characterized epidemic dynamics using epidemiological (N=36), genomic (N=4), or news report data (N=1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the review analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "988df4d2-154a-4303-b76c-08fd26a18a2a",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C49",
+      "claim": "Twenty-four publications provided estimates of the basic reproduction number (R0) for Guinea, Liberia, Sierra Leone, or West Africa, using epidemiological or genomic data.",
+      "claim_type": "EXPLICIT",
+      "source": "Twenty-four of these provided estimates of the basic reproduction number (R0) for Guinea, Liberia, Sierra Leone, or West Africa, using epidemiological or genomic data (Figure 4, Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the review analysis with reference to Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "d17f9050-ca23-4c45-9d5b-d5df4dae416d",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C50",
+      "claim": "There were 16 country-specific estimates of R0 for Guinea, Liberia, or Sierra Leone that used EVD epidemiological data and provided 95% confidence or credible intervals.",
+      "claim_type": "EXPLICIT",
+      "source": "There were 16 country-specific estimates of R0 for Guinea, Liberia, or Sierra Leone that used EVD epidemiological data (aggregate or line-level) and provided 95% confidence or credible intervals (CIs).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the review analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "d5875143-e955-4ca5-86f0-02be16a2d93b",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C51",
+      "claim": "Median CI width was about 85% smaller for models that used cumulative EVD counts (N=11 models in 5 publications) than for models that used disaggregated EVD case data (N=5 models in 3 publications).",
+      "claim_type": "EXPLICIT",
+      "source": "Median CI width was about 85% smaller for models that used cumulative EVD counts (N=11 models in 5 publications) than for models that used disaggregated EVD case data, such as weekly counts (N=5 models in 3 publications) (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the review analysis with reference to Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "741165ff-fab4-4bc1-b184-a5ed8fbdc72b",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C52",
+      "claim": "Disaggregated EVD case data typically were weekly counts.",
+      "claim_type": "EXPLICIT",
+      "source": "Median CI width was about 85% smaller for models that used cumulative EVD counts (N=11 models in 5 publications) than for models that used disaggregated EVD case data, such as weekly counts (N=5 models in 3 publications) (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an example of disaggregated data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "f7b33d76-a12c-4174-b0c7-96b4468e0d8e",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C53",
+      "claim": "CIs were narrower for models when deterministic rather than stochastic methods were used to estimate parameter uncertainty.",
+      "claim_type": "EXPLICIT",
+      "source": "Although CIs were also narrower for models when deterministic rather than stochastic methods were used to estimate parameter uncertainty, all of the deterministic results came from a single study (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation with reference to Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "d460192c-4a7d-42e6-ade0-12776eb74dd4",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C54",
+      "claim": "All of the deterministic results for R0 estimation came from a single study.",
+      "claim_type": "EXPLICIT",
+      "source": "Although CIs were also narrower for models when deterministic rather than stochastic methods were used to estimate parameter uncertainty, all of the deterministic results came from a single study (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated as an observation with reference to Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "151d86fc-b1cc-4362-8761-41354794edf3",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C55",
+      "claim": "Fifteen publications provided numerical forecasts of cumulative EVD incidence for West African countries.",
+      "claim_type": "EXPLICIT",
+      "source": "Fifteen publications provided numerical forecasts of cumulative EVD incidence for West African countries.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the review analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "93869ec1-4958-44b3-8fbb-0107e3df4c50",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C56",
+      "claim": "Of 22 models that assumed no additional response measures beyond those implemented at the time, 18 overestimated the future number of cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Of 22 models that assumed no additional response measures beyond those implemented at the time (i.e., 'status quo' assumptions), 18 overestimated the future number of cases (Figure 7, Supplementary file 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from the review analysis with reference to Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "f68abd2d-078e-4f8e-9f0e-a3efecc6f7a2",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C57",
+      "claim": "Forecast error was lower for forecasts made later in the outbreak (14% reduction in mean absolute percentage error [MAPE] per week, P<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "In multivariate analysis, forecast error was lower for forecasts made later in the outbreak (14% reduction in mean absolute percentage error [MAPE] per week, P<0.001), higher for forecasts with longer time horizons (29% increase in MAPE per week, P<0.01), and lower for forecasts that used decay terms, spatially heterogeneous contact patterns, or other methods that served to constrain projected incidence growth (90% reduction in MAPE, P<0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from multivariate statistical analysis with specific statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "e5fb4779-640c-4629-9827-69c9f7a8ef61",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C58",
+      "claim": "Forecast error was higher for forecasts with longer time horizons (29% increase in MAPE per week, P<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "In multivariate analysis, forecast error was lower for forecasts made later in the outbreak (14% reduction in mean absolute percentage error [MAPE] per week, P<0.001), higher for forecasts with longer time horizons (29% increase in MAPE per week, P<0.01), and lower for forecasts that used decay terms, spatially heterogeneous contact patterns, or other methods that served to constrain projected incidence growth (90% reduction in MAPE, P<0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from multivariate statistical analysis with specific statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "d0372f8c-58af-4c82-ac43-945bea343a66",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C59",
+      "claim": "Forecast error was lower for forecasts that used decay terms, spatially heterogeneous contact patterns, or other methods that served to constrain projected incidence growth (90% reduction in MAPE, P<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "In multivariate analysis, forecast error was lower for forecasts made later in the outbreak (14% reduction in mean absolute percentage error [MAPE] per week, P<0.001), higher for forecasts with longer time horizons (29% increase in MAPE per week, P<0.01), and lower for forecasts that used decay terms, spatially heterogeneous contact patterns, or other methods that served to constrain projected incidence growth (90% reduction in MAPE, P<0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from multivariate statistical analysis with specific statistics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "2a7e1297-df29-446b-96aa-902977383b07",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C60",
+      "claim": "Country and number of parameters in the model were not statistically significant predictors of forecast accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Country and number of parameters in the model were not statistically significant predictors of forecast accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from multivariate statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "6fb16e68-5e4c-4c0f-b8b1-b9650d8a7a6d",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C61",
+      "claim": "The review only captures published results.",
+      "claim_type": "EXPLICIT",
+      "source": "An important caveat of our review is that it only captures published results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of the review.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "a6bbdbaa-017f-429f-84cd-e76550a8f974",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C62",
+      "claim": "There are additional EVD epidemiological investigations and modeling not yet published.",
+      "claim_type": "EXPLICIT",
+      "source": "We are aware of additional EVD epidemiological investigations and modeling not yet published.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as knowledge of unpublished work.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "1914021e-bd45-4126-85c8-ac9c513dfc08",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C63",
+      "claim": "Some modelers providing direct support to operational response efforts have not published results, possibly because of operational demands.",
+      "claim_type": "EXPLICIT",
+      "source": "Some modelers providing direct support to operational response efforts have not published results, possibly because of operational demands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation with speculation about the reason.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "da3d0283-5745-4bc1-8c66-cd0aa687eb6c",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C64",
+      "claim": "Studies that estimated R0 using the same data sources at about the same time reported varied results.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, studies that estimated R0 using the same data sources at about the same time reported varied results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation from the review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "d1c34945-c478-4336-b0a3-79b9a48a0668",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C65",
+      "claim": "Variation in R0 estimates may, in part, reflect the problem of identifiability, with different R0 estimates possible for models that perform equally well depending on other parameter values.",
+      "claim_type": "EXPLICIT",
+      "source": "Such variation may, in part, reflect the problem of identifiability, with different R0 estimates possible for models that perform equally well depending on other parameter values (Weitz and Dushoff, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a possible explanation with a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "9d57d108-f658-4f92-ae4c-85a6c094d862",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C66",
+      "claim": "Simulation studies show underestimation of uncertainty in estimating R0 with cumulative (as opposed to disaggregated) incidence data.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, our analysis is consistent with simulation studies showing underestimation of uncertainty in estimating R0 with cumulative (as opposed to disaggregated) incidence data, and supports the recommendation to use disaggregated data and stochastic models (King et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to simulation studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "55de89c9-d4fc-42d1-b9fa-30dc258dd173",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C67",
+      "claim": "The analysis supports the recommendation to use disaggregated data and stochastic models for estimating R0.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, our analysis is consistent with simulation studies showing underestimation of uncertainty in estimating R0 with cumulative (as opposed to disaggregated) incidence data, and supports the recommendation to use disaggregated data and stochastic models (King et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the analysis with a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "9dd05f1c-7cdf-4776-bca7-53b89be9232c",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C68",
+      "claim": "Incidence forecasts provided reasonable prospective estimates several weeks forward in time during the initial phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, incidence forecasts provided reasonable prospective estimates several weeks forward in time during the initial phase; however, given available data and methodologies these forecasts became progressively more inaccurate as they projected dynamics beyond several weeks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the review analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "20b4a600-3de3-41c0-8a43-6d747a240a48",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C69",
+      "claim": "Given available data and methodologies, incidence forecasts became progressively more inaccurate as they projected dynamics beyond several weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, incidence forecasts provided reasonable prospective estimates several weeks forward in time during the initial phase; however, given available data and methodologies these forecasts became progressively more inaccurate as they projected dynamics beyond several weeks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from the review analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "1fb17afb-c00e-4b57-bdee-0acde788c4aa",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C70",
+      "claim": "Validation of incidence forecasts against other relevant data, such as hospital admissions and contacts identified, could provide evidence that the assumptions are sound.",
+      "claim_type": "EXPLICIT",
+      "source": "Validation of incidence forecasts against other relevant data, such as hospital admissions and contacts identified, also could provide evidence that the assumptions are sound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recommendation for future work.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "49cfa62e-3191-42b1-9dbe-25f874bf9310",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C71",
+      "claim": "The 2014 onwards ebola outbreak in West Africa clearly highlights the need for a better understanding of how increasing awareness of severe infections within a community decreases their transmissibility even in the absence of specific interventions.",
+      "claim_type": "EXPLICIT",
+      "source": "The 2014 onwards ebola outbreak in West Africa clearly highlights the need for a better understanding of how increasing awareness of severe infections within a community decreases their transmissibility even in the absence of specific interventions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from the outbreak experience.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "7a82eaff-be4d-47ec-9c6e-59865b4c8b4f",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C72",
+      "claim": "Advancing methodological approaches to capture behavioral changes, interventions, contact heterogeneity, or other factors might help improve forecasting accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "Advancing methodological approaches to capture this effect, such as dampening approaches, might help account for behavioral changes, interventions, contact heterogeneity, or other factors that can be expected in a public health emergency which likely will improve forecasting accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recommendation with speculation about potential benefits.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "c7a4af7d-0af0-448a-9cc7-e34069037ae2",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C73",
+      "claim": "Establishing best practices within the modeling community will allow decision-makers the ability to more quickly accept methodologies and results that have been generated via these best practices.",
+      "claim_type": "EXPLICIT",
+      "source": "Establishing best practices within the community will allow decision-makers the ability to more quickly accept methodologies and results that have been generated via these best practices.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recommendation with speculation about potential benefits.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "d8c59409-7532-4d0c-a42d-54ee1e9d4d78",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C74",
+      "claim": "Decisions based on modeling results can happen more quickly when best practices are established.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, decisions based on these results can happen more quickly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical consequence of establishing best practices.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "68a8c4c3-c385-4804-bae5-c87c32c68544",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C75",
+      "claim": "Modeling coordination could facilitate direct comparison of modeling results.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, modeling coordination could facilitate direct comparison of modeling results, identifying issues on which diverse approaches agree and areas of greater uncertainty.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recommendation with speculation about potential benefits.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "d844595a-ef6c-4d00-84a7-ddb9a224b4ba",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C76",
+      "claim": "Epidemiological modelers might learn from comparison initiatives in modeling of influenza, dengue, and HIV.",
+      "claim_type": "EXPLICIT",
+      "source": "Epidemiological modelers might learn from comparison initiatives in modeling of influenza (Centers for Disease Control and Prevention, 2013), dengue (US Department of Commerce), and HIV (HIV modeling consortium); and in other fields such as climate forecasting Intergovernmental Panel on Climate Change, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recommendation with citations to comparison initiatives.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "4f7bc65c-18f3-4382-ab41-81a4b3099ebc",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C77",
+      "claim": "An ensemble approach should preserve methodological diversity to exploit the full range of state-of-the-art modeling methods.",
+      "claim_type": "EXPLICIT",
+      "source": "For epidemiological application, an ensemble approach should preserve methodological diversity to exploit the full range of state-of-the-art modeling methods, but include enough standardization to enable cross-model comparison.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recommendation for ensemble modeling.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "e73db926-5d07-4cb5-9f9d-c0e205afd2a1",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C78",
+      "claim": "An ensemble approach should include enough standardization to enable cross-model comparison.",
+      "claim_type": "EXPLICIT",
+      "source": "For epidemiological application, an ensemble approach should preserve methodological diversity to exploit the full range of state-of-the-art modeling methods, but include enough standardization to enable cross-model comparison.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recommendation for ensemble modeling.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "e9205e18-7567-4f81-a317-d19f845f62d4",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C79",
+      "claim": "Establishing an initial architecture for a coordinated, ensemble effort now could assist the response to EVD and future public health emergencies.",
+      "claim_type": "EXPLICIT",
+      "source": "Establishing an initial architecture for a coordinated, ensemble effort now could assist the response to EVD, and future public health emergencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recommendation with speculation about potential benefits.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "0bfcfb2b-9589-44bd-9446-e38ca50153de",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C80",
+      "claim": "Outbreak modeling efforts would be much more fruitful if data and analytical results could be made available more quickly to all interested parties.",
+      "claim_type": "EXPLICIT",
+      "source": "Perhaps most importantly, outbreak modeling efforts would be much more fruitful if data and analytical results could be made available more quickly to all interested parties (Yozwiak et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recommendation with a citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "3d7daed5-3ca4-45ec-a16b-bf492ccb0a5d",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C81",
+      "claim": "The publication timelines for academic journals typically will not be consistent with decision-making needs during public health emergencies like the EVD epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "The publication timelines for academic journals typically will not be consistent with decision-making needs during public health emergencies like the EVD epidemic, where the epidemiological situation was highly dynamic and the usefulness of data and forecasts time-constrained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about the mismatch between publication timelines and emergency response needs.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "3ee14007-aa71-4f53-a4a6-0a5aaac402c8",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C82",
+      "claim": "During the EVD epidemic, the epidemiological situation was highly dynamic and the usefulness of data and forecasts time-constrained.",
+      "claim_type": "EXPLICIT",
+      "source": "The publication timelines for academic journals typically will not be consistent with decision-making needs during public health emergencies like the EVD epidemic, where the epidemiological situation was highly dynamic and the usefulness of data and forecasts time-constrained.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characterization of the EVD epidemic.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "27b38af0-8ab3-444a-85d1-66d619a11aaa",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C83",
+      "claim": "Establishing mechanisms for modelers without special access to the official epidemiological teams to share interim results would expand the evidence base for response decision-making.",
+      "claim_type": "EXPLICIT",
+      "source": "Establishing mechanisms for modelers without special access to the official epidemiological teams to share interim results would expand the evidence base for response decision-making.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recommendation with speculation about potential benefits.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "a40eb25e-109f-4e68-a1bf-781363e8ecac",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C84",
+      "claim": "Data should ideally be made available online in machine-readable form to facilitate use in analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "Ideally, data should be made available online in machine-readable form to facilitate use in analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recommendation for data sharing.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "f73e8bc6-969a-4e3f-897c-fffaf6eb7f20",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C85",
+      "claim": "Modelers and other analysts expended enormous effort during the EVD epidemic transcribing data posted online in pdf documents.",
+      "claim_type": "EXPLICIT",
+      "source": "Modelers and other analysts expended enormous effort during the EVD epidemic transcribing data posted online in pdf documents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about the challenges faced during the epidemic.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "97ee1dcc-2b18-4a33-aefe-9854e732cf74",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C86",
+      "claim": "New norms for data-sharing during public health emergencies would remove the most obvious hurdle for model comparison.",
+      "claim_type": "EXPLICIT",
+      "source": "New norms for data-sharing during public health emergencies (World Health Organization, 2015) would remove the most obvious hurdle for model comparison.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recommendation with a citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "6764a8ef-1a2d-4bc6-9c4b-39e748e986e9",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C87",
+      "claim": "The current situation where groups either negotiate bilaterally with individual countries or work exclusively with global health and development agencies is understandable, but highly ineffective.",
+      "claim_type": "EXPLICIT",
+      "source": "The current situation where groups either negotiate bilaterally with individual countries or work exclusively with global health and development agencies is understandable, but highly ineffective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an assessment of the current data sharing situation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "2d0f0562-dc19-402f-b7c5-916e3ce445d9",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C88",
+      "claim": "The EVD outbreak highlights that an independent, well-resourced global data observatory could greatly facilitate the public health response in many ways.",
+      "claim_type": "EXPLICIT",
+      "source": "The EVD outbreak highlights again \u2013 after the 2003 Severe Acute Respiratory Syndrome epidemic and 2009 influenza A (H1N1) pandemic \u2013 that an independent, well-resourced global data observatory could greatly facilitate the public health response in many ways, not least of which would be the enablement of rapid, high quality, and easily comparable disease-dynamic studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recommendation based on lessons from multiple outbreaks.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "dd401420-14c4-44f7-b645-637ded1e61e4",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C89",
+      "claim": "An independent, well-resourced global data observatory would enable rapid, high quality, and easily comparable disease-dynamic studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The EVD outbreak highlights again \u2013 after the 2003 Severe Acute Respiratory Syndrome epidemic and 2009 influenza A (H1N1) pandemic \u2013 that an independent, well-resourced global data observatory could greatly facilitate the public health response in many ways, not least of which would be the enablement of rapid, high quality, and easily comparable disease-dynamic studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a potential benefit of a global data observatory.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "571cf38f-3628-49f2-b9d1-1805dc452573",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C90",
+      "claim": "The 2003 Severe Acute Respiratory Syndrome epidemic and 2009 influenza A (H1N1) pandemic also highlighted the need for an independent, well-resourced global data observatory.",
+      "claim_type": "IMPLICIT",
+      "source": "The EVD outbreak highlights again \u2013 after the 2003 Severe Acute Respiratory Syndrome epidemic and 2009 influenza A (H1N1) pandemic \u2013 that an independent, well-resourced global data observatory could greatly facilitate the public health response in many ways, not least of which would be the enablement of rapid, high quality, and easily comparable disease-dynamic studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is implied by the phrase 'highlights again \u2013 after' these previous epidemics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "fdd99dbc-ef84-4ff0-8a5b-1b5dbeb3d87f",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C91",
+      "claim": "The PRISMA methodology was adapted for this review to identify quantitative modeling studies of the 2013-present West Africa EVD epidemic.",
+      "claim_type": "EXPLICIT",
+      "source": "For this review, we adapted the PRISMA methodology (Moher et al., 2009) to identify quantitative modeling studies of the 2013-present West Africa EVD epidemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "6f5de26d-3da4-4944-8f47-d078473426a5",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C92",
+      "claim": "PubMed was searched on September 24, 2015, for publications in English since December 1, 2013, using the term 'Ebola' in any field.",
+      "claim_type": "EXPLICIT",
+      "source": "We searched PubMed on September 24, 2015, for publications in English since December 1, 2013, using the term 'Ebola' in any field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific search strategy used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "a25be85c-0d7d-454e-912e-ef473e9afa57",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C93",
+      "claim": "Studies of clinical prediction models, viral or physiological function models, ecological niche models, animal reservoir models, and publications that did not use data from the 2013-present West Africa EVD epidemic were excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "We excluded studies of clinical prediction models, viral or physiological function models, ecological niche models, animal reservoir models, and publications that did not use data from the 2013-present West Africa EVD epidemic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the exclusion criteria for the review.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "ee91f02a-318b-4ee6-b13d-7b4888380ef5",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C94",
+      "claim": "Forecast accuracy was assessed by comparing predictions of models made under 'status quo' assumptions to EVD incidence data subsequently released by the WHO.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess forecast accuracy, we compared predictions of models made under 'status quo' assumptions (i.e., without explicit inclusion of additional interventions or behavioral changes) to EVD incidence data subsequently released by the WHO (World Health Organization, 2016), using the WHO figures dated soonest after the forecast target date.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology for assessing forecast accuracy.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "5346316f-e90d-42ba-89c0-ef4262fc7d58",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "claim_id": "C100",
+      "claim": "The figure includes 125 modeling applications across the 66 publications.",
+      "claim_type": "EXPLICIT",
+      "source": "The figure includes 125 modeling applications across the 66 publications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the caption for Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "51a4c92c-6dc4-4805-aad6-0476ae744d43",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The 2013-2015 West Africa Ebola epidemic began in December 2013, was officially reported in March 2014, spread through West Africa to Europe and the United States, and resulted in more than 28,000 cases and 11,000 deaths primarily in Guinea, Liberia, and Sierra Leone, with the epidemic waning by November 2015.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 provide consistent epidemiological data about the EVD epidemic with specific dates, case counts, and geographic spread. The data is cited from WHO reports (C8) and represents well-established facts about the epidemic timeline and impact. These are background claims that establish the context for the modeling review.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "9a6a012a-c352-4a35-8c3b-1292aed7c5cd",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "A systematic review using adapted PRISMA methodology identified 66 mathematical modeling studies of the 2013-present West Africa EVD epidemic published in peer-reviewed literature through a PubMed search conducted on September 24, 2015.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C91-C93 describe the systematic review methodology with specific search parameters, dates, and inclusion/exclusion criteria. The methodology is clearly documented and the resulting count of 66 publications is the primary output of the systematic search process.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "d8cb8ad8-1682-4174-a1cf-061bb95c459f",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The 66 modeling publications addressed six key uncertainties: transmissibility/reproduction number R (41 publications), intervention effectiveness (29 publications), epidemic forecasting (29 publications), regional/international spread (15 publications), phylogenetics (9 publications), and vaccine trial feasibility (2 publications), with 125 total modeling applications across all studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C21 and C100 provide a comprehensive categorization of modeling applications with specific counts that sum appropriately. The data is presented in Table 1 and Figure 2, and the categories represent distinct modeling objectives. The definition of R (C22) is standard epidemiological terminology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "912fc65c-3b9a-413a-a6c9-aa37dfe8105e",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Of the 125 models reported, 74% included mechanistic assumptions about disease transmission (compartmental, agent-based, or phylogenetic models) while 26% were purely phenomenological.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 provide a clear categorization of modeling approaches with percentages that sum to 100%. The classification into mechanistic versus phenomenological is a standard distinction in epidemiological modeling, and examples of mechanistic model types are provided (C25).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "bc134655-8095-4b0e-b6aa-f692a0fc11c7",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "For 82% (54/66) of publications, only pre-existing publicly-available data was used (typically WHO/Ministry aggregate case data or viral genetic data), while 12 studies used original epidemiological or genomic data. Additional data sources included social mobilization reports, media reports, air travel data, and spatial case data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C33 provide a comprehensive accounting of data sources with specific counts (54/66, 12 studies) and citations to studies using original data. The percentages are mathematically consistent and the categorization of data types is clear and well-documented in Table 1.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "0da0b848-3657-4cdf-b59a-9cfaa149b20f",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Of 12 studies collecting original EVD data, 9 released data at publication (8 genetic data to GenBank, 1 epidemiological data online). WHO Ebola Response Team data was widely used as model inputs but detailed data remains unavailable. Phylogenetic studies showed clear data accumulation, with all studies after initial sequences incorporating those data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C40 document data sharing practices with specific counts (9/12, 8 genetic, 1 epidemiological) and citations. The observation about WHO data unavailability (C38) and phylogenetic data accumulation (C39-C40) are factual statements about data access that can be verified from the cited publications.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "8307062e-7add-467e-8e27-781b3db12a64",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Publication lag (most recent data to online publication) was median 85 days (IQR 30-157) overall, but varied by application: shorter for R estimation (58 vs 118 days) and forecasting (50 vs 125 days), longer for phylogenetics (125 days) and clinical trials (108 days).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C47 provide detailed quantitative analysis of publication lags with specific medians and comparisons across modeling types. The data is presented in Figure 3 and the statistical measures (median, IQR) are appropriate. The caveat about fewer phylogenetic/trial publications (C47) appropriately qualifies the comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "f95822ac-4da8-4a4e-9f5a-03207499579c",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Forty-one publications characterized epidemic dynamics using epidemiological (36), genomic (4), or news report (1) data. Twenty-four provided R0 estimates for Guinea, Liberia, Sierra Leone, or West Africa, with 16 country-specific estimates providing 95% confidence/credible intervals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C50 provide a clear accounting of publications estimating epidemic dynamics and R0 with specific counts that are internally consistent (41 total, 24 with R0, 16 with CIs). The data is presented in Figure 4 and Supplementary file 3.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "c94acb14-24e1-432e-acbf-a8b9c36bf2d4",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Median confidence interval width for R0 estimates was ~85% smaller for models using cumulative EVD counts (11 models, 5 publications) versus disaggregated data like weekly counts (5 models, 3 publications). CIs were also narrower for deterministic versus stochastic methods, though all deterministic results came from one study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C54 provide quantitative comparison of uncertainty estimates with specific effect sizes (85% reduction), sample sizes, and appropriate caveats. The data is shown in Figures 5-6. The caveat that all deterministic results came from one study (C54) is critical for interpretation and appropriately noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "c35ad45a-ea78-4e11-8980-e81314f597af",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Fifteen publications provided numerical forecasts; 18 of 22 'status quo' models overestimated cases. Multivariate analysis showed forecast error decreased 14% per week for later forecasts (P<0.001), increased 29% per week for longer horizons (P<0.01), and decreased 90% with dampening methods (P<0.01). Country and parameter count were not significant predictors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C60 present comprehensive forecast accuracy analysis with specific counts, effect sizes, and p-values from multivariate regression. The statistical analysis is appropriate for the data type, and results are presented in Figure 7. The finding that most models overestimated (C56) is clearly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "650a4519-004c-4ef7-bf74-7da373a44647",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The review only captures published results and does not include unpublished EVD investigations and modeling, including work by modelers providing direct operational support who may not have published due to operational demands.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 clearly state limitations of the review scope. This is a standard and appropriate limitation for systematic reviews of published literature. The speculation about operational demands (C63) is reasonable and appropriately qualified as 'possibly.'",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "cf81a09e-4aa3-4175-849e-47c286c240bf",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Studies estimating R0 using the same data sources at similar times reported varied results, which may partly reflect identifiability problems where different R0 estimates are possible for equally well-performing models depending on other parameter values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C65 identify an important limitation in R0 estimation with appropriate citation to Weitz and Dushoff 2015. The observation of variation (C64) is evident in Figure 4, and the explanation via identifiability (C65) is appropriately qualified as partial ('may, in part') and cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "5bc840aa-a39f-4c52-8a8b-a2778567582b",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The analysis is consistent with simulation studies showing underestimation of uncertainty when estimating R0 with cumulative versus disaggregated incidence data, supporting recommendations to use disaggregated data and stochastic models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 connect the empirical findings (C51) to prior simulation work with appropriate citation (King et al. 2015). The consistency between this review's findings and simulation studies strengthens the recommendation, though the review itself does not independently validate the simulation results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "9e35f82b-cf25-4d7f-89d9-826b4e5b206d",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Incidence forecasts provided reasonable prospective estimates several weeks forward during the initial phase but became progressively more inaccurate beyond several weeks given available data and methodologies. Validation against other data (hospital admissions, contacts) could provide evidence that assumptions are sound.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 summarize forecast performance findings supported by the multivariate analysis (C57-C59) and Figure 7. The recommendation for additional validation (C70) is appropriately framed as speculative future work ('could provide') rather than a demonstrated result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "fa2ccd5e-bd2a-470c-b077-a3b4f46a9658",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The outbreak highlights the need for better understanding of how increasing community awareness decreases transmissibility without specific interventions. Advancing methodological approaches like dampening to capture behavioral changes, interventions, and contact heterogeneity might improve forecasting accuracy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 draw reasonable conclusions from the finding that dampening methods reduced forecast error by 90% (C59). The need for better understanding (C71) is supported by the systematic overestimation by status quo models (C56). The recommendation (C72) is appropriately qualified as speculative ('might help').",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "e8541ebe-d654-4129-82ce-ebeeddeb114c",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Establishing best practices would allow decision-makers to more quickly accept methodologies and make faster decisions. Modeling coordination could facilitate direct comparison of results. Epidemiological modelers might learn from comparison initiatives in influenza, dengue, HIV, and climate forecasting. An ensemble approach should preserve methodological diversity while enabling cross-model comparison.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C73-C79 present recommendations for future work that are logical extensions of the review findings but are largely speculative. While the recommendations are reasonable and cite relevant comparison initiatives (C76), they represent proposed future directions rather than demonstrated results. The causal claims about speed (C73-C74) lack empirical support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "60d7fd34-945e-479b-8151-4decad496eaf",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Outbreak modeling would be more fruitful with faster data and results sharing. Academic publication timelines don't match emergency decision-making needs where situations are dynamic and forecasts time-constrained. Mechanisms for interim results sharing would expand the evidence base. Data should be machine-readable; modelers expended enormous effort transcribing PDFs. New data-sharing norms would remove hurdles for model comparison. The current bilateral negotiation system is ineffective. A global data observatory could facilitate response and enable rapid, high-quality, comparable studies, as highlighted by SARS 2003, H1N1 2009, and this EVD outbreak.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C90 present data sharing recommendations supported by documented challenges (PDF transcription effort C85, publication lags C41-C47, unavailable WHO data C38). The characterization of current systems as ineffective (C87) is a value judgment but supported by the documented inefficiencies. The recommendations are appropriately qualified as speculative future benefits ('could,' 'would') and cite relevant precedents (C90).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "22481040-55e0-4e73-b285-3ea2d6a51161",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "While modelers have assessed ongoing epidemics previously, the prominence of EVD modeling work may be unprecedented, enabled by existing NIH research programs and online data availability. Major media incorporated modeling results throughout the outbreak, and U.S. Government decision-making benefited from modeling at key moments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C10-C15 provide context about the prominence of EVD modeling. While the enabling factors (C12-C13) are cited and the media/government use (C14-C15) is documented, the claim of unprecedented prominence (C11) is speculative ('may be') and lacks quantitative comparison to previous outbreaks. The Robinson citation (C15) supports government use but doesn't quantify the benefit.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    },
+    {
+      "id": "98ae6a62-aba0-4bdf-aa84-de72df29d4c4",
+      "content_id": "239c8633-97bc-4be2-a11e-784ebd807fc2",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "Forecast accuracy was assessed by comparing 'status quo' model predictions to EVD incidence data subsequently released by WHO, using WHO figures dated soonest after the forecast target date.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C94 describes the methodology for forecast validation, which is clearly documented and appropriate. The approach of comparing predictions to subsequently observed data is the standard method for assessing forecast accuracy, and the use of WHO data as ground truth is reasonable.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-29T21:58:36.430366Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fc03d3e2-985b-4865-855f-d34176eea57b",
+      "result_id": "51a4c92c-6dc4-4805-aad6-0476ae744d43"
+    },
+    {
+      "claim_id": "a1dcd2a2-bf71-459b-8b01-f949ce33c56e",
+      "result_id": "51a4c92c-6dc4-4805-aad6-0476ae744d43"
+    },
+    {
+      "claim_id": "c01bac7c-5000-42ca-a69a-2c5503bf448e",
+      "result_id": "51a4c92c-6dc4-4805-aad6-0476ae744d43"
+    },
+    {
+      "claim_id": "d878ab05-c308-4252-b53e-7c37321f0142",
+      "result_id": "51a4c92c-6dc4-4805-aad6-0476ae744d43"
+    },
+    {
+      "claim_id": "31e52316-9f14-4c62-bd1d-20ebda59a01b",
+      "result_id": "51a4c92c-6dc4-4805-aad6-0476ae744d43"
+    },
+    {
+      "claim_id": "d00fbd62-0f30-45de-90f9-7d329a26b3e2",
+      "result_id": "51a4c92c-6dc4-4805-aad6-0476ae744d43"
+    },
+    {
+      "claim_id": "93f3397c-42f5-4ca8-8668-394ac32c8d23",
+      "result_id": "51a4c92c-6dc4-4805-aad6-0476ae744d43"
+    },
+    {
+      "claim_id": "9947bdef-6ab3-4a87-85e7-39bbdb99bd44",
+      "result_id": "51a4c92c-6dc4-4805-aad6-0476ae744d43"
+    },
+    {
+      "claim_id": "d4e464ec-d69b-40f5-9720-8fbfb8f7a9dd",
+      "result_id": "9a6a012a-c352-4a35-8c3b-1292aed7c5cd"
+    },
+    {
+      "claim_id": "fdd99dbc-ef84-4ff0-8a5b-1b5dbeb3d87f",
+      "result_id": "9a6a012a-c352-4a35-8c3b-1292aed7c5cd"
+    },
+    {
+      "claim_id": "6f5de26d-3da4-4944-8f47-d078473426a5",
+      "result_id": "9a6a012a-c352-4a35-8c3b-1292aed7c5cd"
+    },
+    {
+      "claim_id": "a25be85c-0d7d-454e-912e-ef473e9afa57",
+      "result_id": "9a6a012a-c352-4a35-8c3b-1292aed7c5cd"
+    },
+    {
+      "claim_id": "ffb8a1a0-225e-4234-88aa-93cb58548943",
+      "result_id": "d8cb8ad8-1682-4174-a1cf-061bb95c459f"
+    },
+    {
+      "claim_id": "ffb2e885-73b3-461b-9a91-b4c122a03263",
+      "result_id": "d8cb8ad8-1682-4174-a1cf-061bb95c459f"
+    },
+    {
+      "claim_id": "5336e4be-1570-43fb-966d-d60f1975b593",
+      "result_id": "d8cb8ad8-1682-4174-a1cf-061bb95c459f"
+    },
+    {
+      "claim_id": "c5d82604-dde9-419e-ae05-79280675f634",
+      "result_id": "d8cb8ad8-1682-4174-a1cf-061bb95c459f"
+    },
+    {
+      "claim_id": "5f7345c5-853f-4d84-9a36-c0ffe360d81a",
+      "result_id": "d8cb8ad8-1682-4174-a1cf-061bb95c459f"
+    },
+    {
+      "claim_id": "6d831f23-d30b-4418-8005-1cb8d10d57cb",
+      "result_id": "d8cb8ad8-1682-4174-a1cf-061bb95c459f"
+    },
+    {
+      "claim_id": "f1179937-71d5-4f75-aafd-83ccf5f656b3",
+      "result_id": "d8cb8ad8-1682-4174-a1cf-061bb95c459f"
+    },
+    {
+      "claim_id": "5346316f-e90d-42ba-89c0-ef4262fc7d58",
+      "result_id": "d8cb8ad8-1682-4174-a1cf-061bb95c459f"
+    },
+    {
+      "claim_id": "92fb2d55-531d-429a-9156-978d02e51e54",
+      "result_id": "912fc65c-3b9a-413a-a6c9-aa37dfe8105e"
+    },
+    {
+      "claim_id": "5104ba29-4a0f-48e3-a09f-706e9db9ea2f",
+      "result_id": "912fc65c-3b9a-413a-a6c9-aa37dfe8105e"
+    },
+    {
+      "claim_id": "9c83d4de-5f38-4f5a-9a3a-fd9c92bc3a21",
+      "result_id": "912fc65c-3b9a-413a-a6c9-aa37dfe8105e"
+    },
+    {
+      "claim_id": "0cc88b74-bfb6-4373-9177-b133eb32d2c9",
+      "result_id": "bc134655-8095-4b0e-b6aa-f692a0fc11c7"
+    },
+    {
+      "claim_id": "7b03f7cd-b2d0-443f-a732-36a20224028e",
+      "result_id": "bc134655-8095-4b0e-b6aa-f692a0fc11c7"
+    },
+    {
+      "claim_id": "816e6451-9f24-4922-ab43-8aeb49d68dd2",
+      "result_id": "bc134655-8095-4b0e-b6aa-f692a0fc11c7"
+    },
+    {
+      "claim_id": "6a086e8d-2598-400b-8d66-5336b423846e",
+      "result_id": "bc134655-8095-4b0e-b6aa-f692a0fc11c7"
+    },
+    {
+      "claim_id": "62b24a0e-03c2-4e43-8871-f093ee8c9b3a",
+      "result_id": "bc134655-8095-4b0e-b6aa-f692a0fc11c7"
+    },
+    {
+      "claim_id": "2a5534e7-d698-4099-a832-cdc07d46be05",
+      "result_id": "bc134655-8095-4b0e-b6aa-f692a0fc11c7"
+    },
+    {
+      "claim_id": "aea8214d-7ee8-4712-95ed-f444ad4b5f1b",
+      "result_id": "bc134655-8095-4b0e-b6aa-f692a0fc11c7"
+    },
+    {
+      "claim_id": "7a86661f-3f16-41e5-beab-6c6108e5ff19",
+      "result_id": "bc134655-8095-4b0e-b6aa-f692a0fc11c7"
+    },
+    {
+      "claim_id": "391b2c7a-dd4c-422c-94af-5825dafbdd56",
+      "result_id": "0da0b848-3657-4cdf-b59a-9cfaa149b20f"
+    },
+    {
+      "claim_id": "afd9c643-db50-47af-b966-16e8e7ef349e",
+      "result_id": "0da0b848-3657-4cdf-b59a-9cfaa149b20f"
+    },
+    {
+      "claim_id": "5b29a4cc-07b4-4454-9178-8c5f5fe9fa3b",
+      "result_id": "0da0b848-3657-4cdf-b59a-9cfaa149b20f"
+    },
+    {
+      "claim_id": "fa62c93d-d061-4df3-9007-86d72ca5242c",
+      "result_id": "0da0b848-3657-4cdf-b59a-9cfaa149b20f"
+    },
+    {
+      "claim_id": "c77a6696-cd6c-4a61-8001-eb5efb6e5fcc",
+      "result_id": "0da0b848-3657-4cdf-b59a-9cfaa149b20f"
+    },
+    {
+      "claim_id": "f762f35f-a857-42ac-a50c-8dd4f4ef2171",
+      "result_id": "0da0b848-3657-4cdf-b59a-9cfaa149b20f"
+    },
+    {
+      "claim_id": "4adc2286-9138-46b6-af83-f36066fbf304",
+      "result_id": "0da0b848-3657-4cdf-b59a-9cfaa149b20f"
+    },
+    {
+      "claim_id": "da5cdc7d-5099-4238-808a-bdd95e859250",
+      "result_id": "8307062e-7add-467e-8e27-781b3db12a64"
+    },
+    {
+      "claim_id": "a38628fc-873c-4555-a706-aa81d9bde75e",
+      "result_id": "8307062e-7add-467e-8e27-781b3db12a64"
+    },
+    {
+      "claim_id": "85028b6b-eaf2-4fa4-87b0-0ab67afda093",
+      "result_id": "8307062e-7add-467e-8e27-781b3db12a64"
+    },
+    {
+      "claim_id": "62f4493b-ca0d-4f73-acf2-26416520d0e9",
+      "result_id": "8307062e-7add-467e-8e27-781b3db12a64"
+    },
+    {
+      "claim_id": "993f5d6e-e687-410d-8b1b-02b4dfff267e",
+      "result_id": "8307062e-7add-467e-8e27-781b3db12a64"
+    },
+    {
+      "claim_id": "43a24efd-2774-4b1b-9eef-08d9384738bb",
+      "result_id": "8307062e-7add-467e-8e27-781b3db12a64"
+    },
+    {
+      "claim_id": "17cb06b9-28e5-4910-b08d-41adbeaab05f",
+      "result_id": "8307062e-7add-467e-8e27-781b3db12a64"
+    },
+    {
+      "claim_id": "05ae94b3-e2f7-4a22-9e8d-def7b593bf7b",
+      "result_id": "f95822ac-4da8-4a4e-9f5a-03207499579c"
+    },
+    {
+      "claim_id": "988df4d2-154a-4303-b76c-08fd26a18a2a",
+      "result_id": "f95822ac-4da8-4a4e-9f5a-03207499579c"
+    },
+    {
+      "claim_id": "d17f9050-ca23-4c45-9d5b-d5df4dae416d",
+      "result_id": "f95822ac-4da8-4a4e-9f5a-03207499579c"
+    },
+    {
+      "claim_id": "d5875143-e955-4ca5-86f0-02be16a2d93b",
+      "result_id": "c94acb14-24e1-432e-acbf-a8b9c36bf2d4"
+    },
+    {
+      "claim_id": "741165ff-fab4-4bc1-b184-a5ed8fbdc72b",
+      "result_id": "c94acb14-24e1-432e-acbf-a8b9c36bf2d4"
+    },
+    {
+      "claim_id": "f7b33d76-a12c-4174-b0c7-96b4468e0d8e",
+      "result_id": "c94acb14-24e1-432e-acbf-a8b9c36bf2d4"
+    },
+    {
+      "claim_id": "d460192c-4a7d-42e6-ade0-12776eb74dd4",
+      "result_id": "c94acb14-24e1-432e-acbf-a8b9c36bf2d4"
+    },
+    {
+      "claim_id": "151d86fc-b1cc-4362-8761-41354794edf3",
+      "result_id": "c35ad45a-ea78-4e11-8980-e81314f597af"
+    },
+    {
+      "claim_id": "93869ec1-4958-44b3-8fbb-0107e3df4c50",
+      "result_id": "c35ad45a-ea78-4e11-8980-e81314f597af"
+    },
+    {
+      "claim_id": "f68abd2d-078e-4f8e-9f0e-a3efecc6f7a2",
+      "result_id": "c35ad45a-ea78-4e11-8980-e81314f597af"
+    },
+    {
+      "claim_id": "e5fb4779-640c-4629-9827-69c9f7a8ef61",
+      "result_id": "c35ad45a-ea78-4e11-8980-e81314f597af"
+    },
+    {
+      "claim_id": "d0372f8c-58af-4c82-ac43-945bea343a66",
+      "result_id": "c35ad45a-ea78-4e11-8980-e81314f597af"
+    },
+    {
+      "claim_id": "2a7e1297-df29-446b-96aa-902977383b07",
+      "result_id": "c35ad45a-ea78-4e11-8980-e81314f597af"
+    },
+    {
+      "claim_id": "6fb16e68-5e4c-4c0f-b8b1-b9650d8a7a6d",
+      "result_id": "650a4519-004c-4ef7-bf74-7da373a44647"
+    },
+    {
+      "claim_id": "a6bbdbaa-017f-429f-84cd-e76550a8f974",
+      "result_id": "650a4519-004c-4ef7-bf74-7da373a44647"
+    },
+    {
+      "claim_id": "1914021e-bd45-4126-85c8-ac9c513dfc08",
+      "result_id": "650a4519-004c-4ef7-bf74-7da373a44647"
+    },
+    {
+      "claim_id": "da3d0283-5745-4bc1-8c66-cd0aa687eb6c",
+      "result_id": "cf81a09e-4aa3-4175-849e-47c286c240bf"
+    },
+    {
+      "claim_id": "d1c34945-c478-4336-b0a3-79b9a48a0668",
+      "result_id": "cf81a09e-4aa3-4175-849e-47c286c240bf"
+    },
+    {
+      "claim_id": "9d57d108-f658-4f92-ae4c-85a6c094d862",
+      "result_id": "5bc840aa-a39f-4c52-8a8b-a2778567582b"
+    },
+    {
+      "claim_id": "55de89c9-d4fc-42d1-b9fa-30dc258dd173",
+      "result_id": "5bc840aa-a39f-4c52-8a8b-a2778567582b"
+    },
+    {
+      "claim_id": "9dd05f1c-7cdf-4776-bca7-53b89be9232c",
+      "result_id": "9e35f82b-cf25-4d7f-89d9-826b4e5b206d"
+    },
+    {
+      "claim_id": "20b4a600-3de3-41c0-8a43-6d747a240a48",
+      "result_id": "9e35f82b-cf25-4d7f-89d9-826b4e5b206d"
+    },
+    {
+      "claim_id": "1fb17afb-c00e-4b57-bdee-0acde788c4aa",
+      "result_id": "9e35f82b-cf25-4d7f-89d9-826b4e5b206d"
+    },
+    {
+      "claim_id": "49cfa62e-3191-42b1-9dbe-25f874bf9310",
+      "result_id": "fa2ccd5e-bd2a-470c-b077-a3b4f46a9658"
+    },
+    {
+      "claim_id": "7a82eaff-be4d-47ec-9c6e-59865b4c8b4f",
+      "result_id": "fa2ccd5e-bd2a-470c-b077-a3b4f46a9658"
+    },
+    {
+      "claim_id": "c7a4af7d-0af0-448a-9cc7-e34069037ae2",
+      "result_id": "e8541ebe-d654-4129-82ce-ebeeddeb114c"
+    },
+    {
+      "claim_id": "d8c59409-7532-4d0c-a42d-54ee1e9d4d78",
+      "result_id": "e8541ebe-d654-4129-82ce-ebeeddeb114c"
+    },
+    {
+      "claim_id": "68a8c4c3-c385-4804-bae5-c87c32c68544",
+      "result_id": "e8541ebe-d654-4129-82ce-ebeeddeb114c"
+    },
+    {
+      "claim_id": "d844595a-ef6c-4d00-84a7-ddb9a224b4ba",
+      "result_id": "e8541ebe-d654-4129-82ce-ebeeddeb114c"
+    },
+    {
+      "claim_id": "4f7bc65c-18f3-4382-ab41-81a4b3099ebc",
+      "result_id": "e8541ebe-d654-4129-82ce-ebeeddeb114c"
+    },
+    {
+      "claim_id": "e73db926-5d07-4cb5-9f9d-c0e205afd2a1",
+      "result_id": "e8541ebe-d654-4129-82ce-ebeeddeb114c"
+    },
+    {
+      "claim_id": "e9205e18-7567-4f81-a317-d19f845f62d4",
+      "result_id": "e8541ebe-d654-4129-82ce-ebeeddeb114c"
+    },
+    {
+      "claim_id": "0bfcfb2b-9589-44bd-9446-e38ca50153de",
+      "result_id": "60d7fd34-945e-479b-8151-4decad496eaf"
+    },
+    {
+      "claim_id": "3d7daed5-3ca4-45ec-a16b-bf492ccb0a5d",
+      "result_id": "60d7fd34-945e-479b-8151-4decad496eaf"
+    },
+    {
+      "claim_id": "3ee14007-aa71-4f53-a4a6-0a5aaac402c8",
+      "result_id": "60d7fd34-945e-479b-8151-4decad496eaf"
+    },
+    {
+      "claim_id": "27b38af0-8ab3-444a-85d1-66d619a11aaa",
+      "result_id": "60d7fd34-945e-479b-8151-4decad496eaf"
+    },
+    {
+      "claim_id": "a40eb25e-109f-4e68-a1bf-781363e8ecac",
+      "result_id": "60d7fd34-945e-479b-8151-4decad496eaf"
+    },
+    {
+      "claim_id": "f73e8bc6-969a-4e3f-897c-fffaf6eb7f20",
+      "result_id": "60d7fd34-945e-479b-8151-4decad496eaf"
+    },
+    {
+      "claim_id": "97ee1dcc-2b18-4a33-aefe-9854e732cf74",
+      "result_id": "60d7fd34-945e-479b-8151-4decad496eaf"
+    },
+    {
+      "claim_id": "6764a8ef-1a2d-4bc6-9c4b-39e748e986e9",
+      "result_id": "60d7fd34-945e-479b-8151-4decad496eaf"
+    },
+    {
+      "claim_id": "2d0f0562-dc19-402f-b7c5-916e3ce445d9",
+      "result_id": "60d7fd34-945e-479b-8151-4decad496eaf"
+    },
+    {
+      "claim_id": "dd401420-14c4-44f7-b645-637ded1e61e4",
+      "result_id": "60d7fd34-945e-479b-8151-4decad496eaf"
+    },
+    {
+      "claim_id": "571cf38f-3628-49f2-b9d1-1805dc452573",
+      "result_id": "60d7fd34-945e-479b-8151-4decad496eaf"
+    },
+    {
+      "claim_id": "5e5068b2-2d10-4944-97e1-4bd85db6ec82",
+      "result_id": "22481040-55e0-4e73-b285-3ea2d6a51161"
+    },
+    {
+      "claim_id": "742945ab-fd93-401c-a781-264d57a648ea",
+      "result_id": "22481040-55e0-4e73-b285-3ea2d6a51161"
+    },
+    {
+      "claim_id": "afd002e7-b896-4cc1-a299-1aa6372627c3",
+      "result_id": "22481040-55e0-4e73-b285-3ea2d6a51161"
+    },
+    {
+      "claim_id": "b4c7d23b-ee01-4cab-944e-608c691260b6",
+      "result_id": "22481040-55e0-4e73-b285-3ea2d6a51161"
+    },
+    {
+      "claim_id": "b5d67a6a-62a7-4a59-bfdf-a54bfc05a8dc",
+      "result_id": "22481040-55e0-4e73-b285-3ea2d6a51161"
+    },
+    {
+      "claim_id": "2762dcd4-7e69-40b2-8605-282fad0ed343",
+      "result_id": "22481040-55e0-4e73-b285-3ea2d6a51161"
+    },
+    {
+      "claim_id": "ee91f02a-318b-4ee6-b13d-7b4888380ef5",
+      "result_id": "98ae6a62-aba0-4bdf-aa84-de72df29d4c4"
+    }
+  ],
+  "comparisons": []
+}

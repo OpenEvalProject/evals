@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Cell cycle control networks in yeasts and animals exhibit highly similar physiological function and network structure, with conserved G1 regulatory mechanisms involving positive feedback loops mediated by cyclin-Cdk complexes and transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 establish the functional and structural conservation of cell cycle networks between animals and yeast through well-cited literature (Cross et al., 2011; Bertoli et al., 2013; Skotheim et al., 2008) and established knowledge. The mechanistic details of G1 regulation via Cyclin D-Cdk4/6-pRb-E2F in animals and Cln3-Cdk1-Whi5-SBF in yeast are well-documented and supported by multiple independent studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Despite functional similarity, many cell cycle regulators in yeast and animals lack sequence identity or structural similarity, yet network topology is more conserved than individual protein components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12 are well-supported by multiple citations (Liu and Kipreos, 2000; Cross et al., 2011; Hasan et al., 2013; Taylor et al., 1997) demonstrating that functionally analogous proteins (Cdk1 vs Cdk2/4/6, SBF-Whi5 vs E2F-pRb, Sic1 vs p27) lack sequence homology despite performing similar roles. This paradox of conserved function with divergent sequence is a key observation motivating the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The prevailing 'simple LECA' model posits that the last eukaryotic common ancestor had minimal cell cycle regulation based on Cyclin B-Cdk1 oscillation, with E2F-pRb present in plants and animals but not in the fungal ancestor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C25-C28 accurately describe the prevailing model in the field, supported by appropriate citations (Coudreuse and Nurse, 2010; Nasmyth, 1995; Murray and Kirschner, 1989; Stern and Nurse, 1996). Claim C13's inference about E2F-pRb in LECA is based on phylogenetic reasoning. This establishes the prior hypothesis that the authors challenge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C104"
+    ],
+    "result": "Comprehensive genomic survey across eukaryotic diversity reveals that LECA had complex cell cycle regulation with multiple cyclin families (A, B, D, E), E2F transcription factors, pRb pocket proteins, APC regulators, and Cdk1-3 family members, contradicting the 'simple LECA' model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16, C29-C35, and C104 present a major finding supported by extensive phylogenetic analysis across 100+ eukaryotic genomes (Figure 2 and supplements). The detection of E2F, pRb, cyclins A/B/D/E, Cdc20/Cdh1, and Cdk1-3 across diverse eukaryotic lineages using profile-HMMs and phylogenetic reconstruction provides strong evidence for complex LECA cell cycle regulation. The methodology is rigorous with multiple phylogenetic support metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C29",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C42",
+      "C43"
+    ],
+    "result": "SBF-Whi5 regulators emerged abruptly at the base of fungi and are absent outside fungi, with basal fungi and zygomycetes exhibiting hybrid networks containing both ancestral E2F-pRb and fungal SBF-Whi5 components before E2F-pRb loss in Dikarya.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C29, C36-C39, C42-C43 are strongly supported by genomic survey data presented in Figure 3 and supplements. The phylogenetic distribution clearly shows SBF+APSES and Whi5 are fungal-specific, with basal fungi (e.g., Chytrids like S. punctatus) retaining both systems. The abrupt emergence and subsequent loss patterns are well-documented across fungal lineages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Profile-HMM analysis demonstrates that E2F_TDP and KilA-N domains are completely orthogonal with no cross-reactivity, indicating SBF and E2F have no more sequence identity than non-homologous proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are supported by computational analysis shown in Figure 4. The use of Pfam HMMs (E2F_TDP.hmm and KilA-N.hmm) on control genomes (H. sapiens, S. cerevisiae) and hybrid genomes (S. punctatus, basal fungi) demonstrates complete specificity with no diagonal hits. The exception of T. vaginalis is noted and explained. This provides strong evidence against E2F-SBF homology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Structural analysis reveals that while E2F/DP and SBF/MBF are both winged-helix-turn-helix proteins, they exhibit fundamental differences in DNA recognition mechanisms: E2F uses a conserved RRXYD recognition helix motif, while SBF uses wing glutamines (Q82, Q89) for minor groove binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 are well-supported by structural data (Figure 5) and citations to crystal structures (Zheng et al., 1999; Liu et al., 2015). The sequence alignments show family-specific conservation of distinct DNA-binding residues. The structural incongruences (recognition helix vs wing binding, major vs minor groove) provide strong evidence that SBF is not derived from E2F despite both being wHTH proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "SBF's DNA-binding domain is homologous to the viral KilA-N domain found across prokaryotic and eukaryotic DNA viruses, with sparse eukaryotic distribution (primarily fungi, plus T. vaginalis, A. pisum, R. prolixus) consistent with horizontal gene transfer from viruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21, C57-C67 are supported by prior work (Iyer et al., 2002; Koonin et al., 2006), Pfam database analysis, and BLAST results. The distribution data (85% prokaryotes, 10% eukaryotes, 5% viruses) and the exceptional cases with viral BLAST hits support horizontal gene transfer. Citation to Moreira and Brochier-Armanet (2008) supports the plausibility of Mimivirus-mediated HGT.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Phylogenetic analysis reveals three major KilA-N lineages (eukaryotic viruses, prokaryotic viruses, fungal SBF+APSES), with the fungal SBF+APSES family being monophyletic and strongly supported, suggesting a single horizontal gene transfer event established this family in a fungal ancestor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 are supported by phylogenetic analysis in Figure 6 with multiple support metrics (RAxML RBS, PhyML SH-aLRT and aBayes). The monophyly of fungal SBF+APSES with strong support indicates a single HGT event. The acknowledgment of uncertainty regarding viral source (eukaryotic vs prokaryotic virus) is appropriate given current data limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Experimental replacement of SBF binding sites with E2F consensus sites (GCGCGAAA) in the budding yeast CLN2 promoter produces cell cycle-regulated GFP oscillations dependent on SBF (Swi4) but not MBF (Mbp1), demonstrating that modern yeast SBF can functionally bind and regulate E2F-like sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74, C77-C79 are supported by experimental data in Figure 7. The in vivo reporter assay shows significant oscillations with E2F sites that are SBF-dependent and disappear when binding sites are removed. The experimental design includes appropriate controls (\u0394SCB, swi4\u0394, mbp1\u0394) and quantification of oscillation amplitudes with statistical testing (p<0.01). This directly tests the hijacking hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Protein binding microarray (PBM) analysis reveals that E2F1 and SBF (Swi4) share overlapping DNA binding specificity with common motifs, but also have distinct preferences: E2F prefers G at position 4 (NNSGCGSN) while SBF prefers C at position 3 (NNCRCGNN), and most E2F target promoters contain potential SBF binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 are supported by analysis of published PBM data (Afek et al., 2014; Badis et al., 2008) shown in Figure 8 and supplements. The E-score analysis with appropriate thresholds (>0.37, FDR 0.001) identifies common, E2F-only, and SBF-only motifs. The promoter scanning analysis (Figure 8\u2014figure supplement 2) demonstrates that most E2F targets could bind SBF, supporting the hijacking hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C23",
+      "C76",
+      "C86",
+      "C99"
+    ],
+    "result": "The authors hypothesize that virally-derived SBF initially hijacked cell cycle control by activating transcription via E2F cis-regulatory elements, analogous to extant viral oncogenes, with ancestral SBF potentially competing with E2F-Rb complexes for DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C23, C76, C86, C99 present a hypothesis supported by multiple lines of indirect evidence (viral origin, DNA binding overlap, functional complementation) but remain speculative. While the experimental data (C77-C85) demonstrate that modern SBF can bind E2F sites, this does not definitively prove the ancestral mechanism. The hypothesis is plausible and well-reasoned but requires additional validation, such as testing ancestral reconstructed proteins or examining basal fungi with hybrid networks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The replacement of E2F-pRb with SBF-Whi5 proceeded through a functionally redundant hybrid intermediate preserved in basal fungi, following established evolutionary patterns where essential transcription factor functions transition through intermediate states with both systems present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41, C87-C92 are supported by genomic data showing hybrid networks in basal fungi (C38-C39) and citations to analogous evolutionary transitions (Tanay et al., 2005; Baker et al., 2012). The functional redundancy inference is reasonable given the similar roles of SBF-Whi5 and E2F-pRb. The preservation of hybrid networks in extant basal fungi provides direct evidence for this evolutionary intermediate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors hypothesize that preservation of hybrid E2F-pRb and SBF-Whi5 networks in chytrids may reflect specialized regulation of animal-like features (centrioles, flagella) versus fungal-specific features (cell wall, hyphal growth), with subsequent loss of animal features enabling E2F-pRb loss in derived fungi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C95 present a speculative hypothesis. While C93 accurately describes chytrid biology (established knowledge), the proposed functional specialization of E2F-pRb for animal features and SBF-Whi5 for fungal features (C94-C95) lacks direct experimental evidence. This is an interesting hypothesis that could explain hybrid network preservation but requires functional studies in basal fungi to test whether these pathways have distinct target gene sets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C100"
+    ],
+    "result": "The cooption of a viral protein (SBF) generated a hybrid network that facilitated dramatic evolution of the fungal cell cycle network, analogous to how DNA tumor viruses (Adenovirus, SV40) hijack cell proliferation by disrupting E2F-pRb regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98, C100 synthesize the major findings into an evolutionary model. The viral origin of SBF (C68-C72), its ability to bind E2F sites (C77-C85), and the hybrid network evidence (C38-C39, C92) collectively support this conclusion. The analogy to viral oncogenes (C97-C98, supported by DeCaprio, 2009) is appropriate. While the specific mechanism remains hypothetical, the overall conclusion is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Whi5 origin is unclear with no homologs outside fungi, but its simple unstructured architecture suggests it may have been co-opted as a phosphopeptide to entrain SBF activity to Cdk-regulated cell cycle progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C101 is supported by genomic survey data. Claim C102 is supported by citations (Huang et al., 2009; Travesa et al., 2013; Wang et al., 2009). However, C103's hypothesis about Whi5 co-option is speculative without direct evidence. The inference is reasonable given Whi5's structure and function, but the evolutionary origin and mechanism of co-option remain unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C105"
+    ],
+    "result": "CdkB was found in Stramenopiles, potentially arriving via horizontal transfer during ancient secondary endosymbiosis with algae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is supported by phylogenetic data (Figure 2\u2014figure supplement 6) and citation to Cavalier-Smith (1999). The presence of plant-specific CdkB in Stramenopiles is consistent with known secondary endosymbiosis events. This is a minor but interesting observation about Cdk evolution.",
+    "result_type": "MINOR"
+  }
+]

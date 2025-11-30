@@ -1,0 +1,1958 @@
+{
+  "submission": {
+    "id": "b10fad64-5293-443d-94ed-b32c62bc84b0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-30T00:23:15.310217Z",
+    "updated_at": "2025-11-30T00:23:15.310217Z"
+  },
+  "content": [
+    {
+      "id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "submission_id": "b10fad64-5293-443d-94ed-b32c62bc84b0",
+      "content_type": "manuscript",
+      "content_text": "# The proposed channel-enzyme transient receptor potential melastatin 2 does not possess ADP ribose hydrolase activity\n\n## Authors\n\n- Iordan Iordanov<sup>1</sup> ([ORCID: 0000-0001-8251-5857](https://orcid.org/0000-0001-8251-5857))\n- Csaba Mih\u00e1lyi<sup>1</sup> ([ORCID: 0000-0001-7536-3066](https://orcid.org/0000-0001-7536-3066))\n- Bal\u00e1zs T\u00f3th<sup>1</sup>\n- L\u00e1szl\u00f3 Csan\u00e1dy<sup>1</sup> ([ORCID: 0000-0002-6547-5889](https://orcid.org/0000-0002-6547-5889)) \u2020\n\n### Affiliations\n\n1. Department of Medical Biochemistry Semmelweis University Budapest Hungary\n2. MTA-SE Ion Channel Research Group Semmelweis University Budapest Hungary\n\n\u2020 Corresponding author\n\n## Abstract\n\nTransient Receptor Potential Melastatin 2 (TRPM2) is a Ca2+-permeable cation channel essential for immunocyte activation, insulin secretion, and postischemic cell death. TRPM2 is activated by ADP ribose (ADPR) binding to its C-terminal cytosolic NUDT9-homology (NUDT9H) domain, homologous to the soluble mitochondrial ADPR pyrophosphatase (ADPRase) NUDT9. Reported ADPR hydrolysis classified TRPM2 as a channel-enzyme, but insolubility of isolated NUDT9H hampered further investigations. Here we developed a soluble NUDT9H model using chimeric proteins built from complementary polypeptide fragments of NUDT9H and NUDT9. When expressed in E.coli, chimeras containing up to ~90% NUDT9H sequence remained soluble and were affinity-purified. In ADPRase assays the conserved Nudix-box sequence of NUDT9 proved essential for activity (kcat~4-9s-1), that of NUDT9H did not support catalysis. Replacing NUDT9H in full-length TRPM2 with soluble chimeras retained ADPR-dependent channel gating (K1/2~1-5 \u03bcM), confirming functionality of chimeric domains. Thus, TRPM2 is not a 'chanzyme'. Chimeras provide convenient soluble NUDT9H models for structural/biochemical studies.\n\n## Introduction\n\nTransient receptor potential melastatin 2 (TRPM2) belongs to the TRP protein family and is predominantly expressed in brain neurons, spleen, bone marrow, leukocytes, phagocytes, pancreatic \u03b2 cells, and cardiomyocytes (Nagamine et al., 1998; Perraud et al., 2001; Togashi et al., 2006). It forms Ca2+-permeable nonselective cation channels which are activated under oxidative stress, and contribute to the Ca2+ signals that trigger cell migration and chemokine production in immune cells (Yamamoto et al., 2008) and insulin secretion in the pancreas (Uchida et al., 2011). Under pathological conditions, such as post-ischemic reperfusion injury (Hara et al., 2002; Kaneko et al., 2006) and potentially in Alzheimer's disease (Fonfria et al., 2005), TRPM2 activity leads to Ca2+ dysregulation and cell death. On the other hand, reduced activity of TRPM2 might be linked to amyotrophic lateral sclerosis and Parkinson\u2019s disease dementia (Hermosura et al., 2008), as well as bipolar disorder (McQuillin et al., 2006).\n\nTRPM2 forms homotetramers with a transmembrane architecture similar to that of voltage-gated cation channels (Figure 1A). In addition, it contains a large cytosolic N-terminal domain of unknown function specific to the TRPM subfamily, and a C-terminal coiled-coil region (CCR, Figure 1A) followed by a small cytosolic domain (NUDT9H). The NUDT9H domain exhibits a high degree of sequence similarity (~35% identity, ~45% similarity) to the soluble, Mg2+-dependent mitochondrial pyrophosphatase NUDT9 (Shen et al., 2003), which catalyzes the hydrolysis of adenosine 5'-diphosphoribose (ADPR) into AMP and ribose 5-phosphate (R5P) (Figure 1B and C). TRPM2 is activated by co-application of cytosolic ADPR and Ca2+ (Perraud et al., 2001; Sano et al., 2001; Csan\u00e1dy and T\u00f6rocsik, 2009), and the ADPR ligand was indeed shown to bind to the NUDT9H domain of the channel (Grubisha et al., 2006). Based on its crystal structure, the mitochondrial enzyme is composed of two subdomains, termed Cap and Core (Figure 1C, blue and brown). The Cap subdomain facilitates binding of the substrate ADPR, whereas the Core subdomain binds the substrate and catalyses its cleavage to AMP and R5P (Shen et al., 2003; Perraud et al., 2003). The Core subdomain harbors the Nudix (nucleoside diphosphate linked moiety X) box - a conserved motif (Bessman et al., 1996) responsible for recognition and hydrolysis of ADPR, present in a variety of phosphohydrolases (Gabelli et al., 2001; Kang et al., 2003; Gabelli et al., 2007; Huang et al., 2008; Messing et al., 2009; Boto et al., 2011) including both NUDT9 and NUDT9H (Perraud et al., 2001).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/17600/elife-17600-fig1-v2.jpg)\n\n**Figure 1.:** (A) Topology map of a TRPM2 monomer, showing the N-terminal TRPM homology region (dark blue), the six transmembrane helices which form the pore domain (red and blue), and a C-terminal short coiled-coil region (CCR, yellow) followed by the NUDT9H domain (gray) which is homologous to the soluble mitochondrial ADPRase NUDT9. (B) Hydrolysis of ADPR to AMP and R5P: reaction catalyzed by mitochondrial NUDT9 and reportedly also by the TRPM2 NUDT9H domain. (C) Crystal structure of mitochondrial NUDT9 (PDB ID: 1QVJ) illustrating Cap (blue) and Core (brown) subdomains of the protein, with the hydrolysis product R5P (yellow) and two Mg2+ ions (magenta) bound.\n\nThe strong similarity between NUDT9 and NUDT9H raised the intriguing possibility that NUDT9H itself might act as an enzyme with ADPR hydrolase (ADPRase) activity. Indeed, previous work reported weak enzymatic activity for isolated NUDT9H (Perraud et al., 2001, 2003), compatible with the slow timescale of channel gating (Csan\u00e1dy and T\u00f6rocsik, 2009), classifying TRPM2 among channel-enzymes ('chanzymes'). This small group of proteins, in which a single polypeptide chain forms both a transmembrane ion pore and a catalytically active domain, includes two other members of the TRPM subfamily (TRPM6 and TRPM7), and the Cystic Fibrosis Transmembrane Conductance Regulator (CFTR) chloride ion channel. In CFTR catalytic (ATPase) activity is strictly coupled to channel gating, which therefore follows a nonequilibrium cyclic mechanism (Csan\u00e1dy et al., 2010). In TRPM7 catalytic (phosphotransferase) activity is not linked to pore gating (Matsushita et al., 2005), but instead serves to regulate expression of TRPM7-dependent genes (Krapivinsky et al., 2014). In the case of TRPM2 the physiological role of the proposed ADPRase activity has not yet been clarified, but we have previously shown that any hydrolytic activity of NUDT9H is not coupled to gating of the TRPM2 channel itself (T\u00f3th et al., 2014). Furthermore, our observation of intrinsic instability of several pyridine dinucleotides at basic pH (T\u00f3th et al., 2015) raised the possibility of a similar instability for ADPR, which might lead to false positive results when assessing the hydrolytic activity of a putative slow ADPRase enzyme. It thus remained a question whether the NUDT9H domain truly exhibits any enzymatic activity, not coupled to TRPM2 gating. One way to address this would be to further analyze the TRPM2 ADPR-binding domain in isolation. However, in our hands NUDT9H proved to be extremely insoluble (T\u00f3th et al., 2014), despite its high degree of sequence similarity to highly soluble NUDT9. For this reason we first constructed a series of chimeric proteins built from complementary polypeptide fragments of the two homologous proteins, and correlated solubility with NUDT9H sequence content. This approach allowed us to pinpoint the NUDT9H segments responsible for its insolubility, and to purify and investigate soluble chimeric proteins which contain up to ~90% of the native NUDT9H sequence. We then investigated enzymatic activities of such soluble chimeras in isolation, as well as their capacities to substitute for native NUDT9H in conferring ADPR-dependent gating to the full-length TRPM2 channel.\n\n## Results\n\n### C-terminal residues of NUDT9H are responsible for its insolubility\n\nIn a previous attempt to purify and biochemically characterize the TRPM2 NUDT9H domain in isolation we found it to be essentially insoluble, unlike its mitochondrial homologue NUDT9 (T\u00f3th et al., 2014). Because of this unexpected difference we further investigated the two proteins in an attempt to obtain a soluble analogue of NUDT9H. Prompted by the strong similarity between them (Figure 2), we generated chimeric constructs by swapping homologous segments between NUDT9 and NUDT9H. The crystal structure of mitochondrial NUDT9 ([Shen et al., 2003]; PDB ID: 1Q33) identified two subdomains - a 'Cap' and a 'Core' (Figure 1C, blue and brown). Assuming structural similarity between NUDT9 and NUDT9H, these two structurally distinct regions of NUDT9 provided the basis for generating the first chimeric constructs (Chi1/1A and Chi2/2A), obtained by exchanging the Cap and Core segments of the two native proteins (Figure 3A). The NUDT9-Cap/NUDT9H-Core chimeras Chi1 and Chi1A were insoluble, whereas the NUDT9H-Cap/NUDT9-Core chimeras Chi2 and Chi2A were soluble, and Chi2 could be purified by Ni-affinity chromatography (Figure 3\u2014figure supplement 1). The low solubility of NUDT9H is thus caused at least in part by its Core subdomain.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/17600/elife-17600-fig2-v2.jpg)\n\n**Figure 2.:** Aligned (Corpet, 1988) sequences of NUDT9H and NUDT9, highlighting identical (red) and similar (blue) residues. The approximate border between Cap and Core subdomains of the proteins is indicated by two black arrows. Black line identifies the Nudix box, asterisks denote residues critical for the catalytic activity of NUDT9. Green arrows and labels indicate transition points for sequence swapping in each chimera (see also Figure 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/17600/elife-17600-fig3-v2.jpg)\n\n**Figure 3.:** (A) Aligned block diagrams of recombinant constructs with segment lengths realistically scaled to reflect their actual sizes (numbers of residues). The Cap and Core segments of NUDT9 (blue) and NUDT9H (orange) are separated by a vertical black line. Gaps emerging from the alignment of the two sequences (Figure 2) are presented as thick lines with the respective color. The 15 amino-acid stretch from the upstream cytosolic linker sequence of TRPM2 (gray), present in some chimeras, contains a native BlpI-site which allows subcloning the domain into full-length TRPM2. Some constructs contain a C-terminal hexahistidine tag (green) or Twin-Strep tag (magenta). Nudix boxes within Core segments are indicated as black lines (see also Table 1). (B) NUDT9 fragments replaced in the chimeras by NUDT9H sequence, mapped onto surface representation of NUDT9 crystal structure (PDB ID: 1Q33). Coloring highlights progressive replacement of NUDT9 sequence with NUDT9H sequence in chimeric constructs. The Cap subdomain (light brown) is replaced in Chi2 and Chi2A. A fragment from the Core (orange), containing the Nudix box (red), is also replaced in Chi3S. Additional Core fragment (dark brown) further extends the NUDT9H sequence in Chi4S, leaving only 36 C-terminal amino acids from NUDT9 (blue).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17600/elife-17600-fig3-figsupp1-v2.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Coomassie-stained SDS PAGE gels of the five purified recombinant proteins (mitochondrial NUDT9, three soluble chimeric constructs, and the NUDT9H domain of TRPM2), as indicated above each gel slice. Molecular weights for marker ladder bands (Precision, Bio-Rad) are labeled in kDa.\n\nThe soluble Chi2 contains only ~41% of NUDT9H sequence (Table 1) and, notably, the catalytically important Nudix box in Chi2 originates from mitochondrial NUDT9. To obtain soluble constructs which more closely resemble NUDT9H, the point of transition from NUDT9H- to NUDT9-sequence was advanced further downstream. For the next construct, Chi3 (Figure 3A), this switch point was propagated about halfway through the Core segment, immediately after a well aligned, conserved stretch of amino acids (Figure 2) which forms a reentrant loop structure, pivotal for anchoring the Cap to the Core segment in NUDT9. A small fraction of this Chi3 chimera, which contains ~77% of NUDT9H sequence (Table 1), including its Nudix box, remained soluble and could be purified. We then advanced the transition point further downstream, about halfway through the remainder of the NUDT9 sequence in Chi3. This new construct (Chi4) is formed by ~91% of NUDT9H sequence (Figure 2, Figure 3A and B), but a small amount of it still remained in the soluble fraction which allowed us to purify it. The low yields of soluble Chi3 and Chi4 could be robustly increased using a slower induction protocol (0.1\u2009mM IPTG, 25\u00b0C, overnight); and replacement of the hexahistidine tag with a Twin-Strep tag (Chi3S and Chi4S) greatly improved protein purity, as confirmed by SDS-PAGE (Figure 3\u2014figure supplement 1) and mass spectrometry analysis of the purified Chi4S sample. Indeed, using this slow induction protocol even some soluble NUDT9H protein could be obtained and purified (Figure 3\u2014figure supplement 1, right); however, this preparation precipitated overnight at 4\u00b0C. Thus, Chi4S remained the best NUDT9H model that we were able to obtain in stable, soluble form (Table 1).\n\n**Table 1.**\n Properties of the recombinant proteins.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Construct</th>\n      <th>M.W. (kDa)</th>\n      <th>Theor. pI*</th>\n      <th>% NUDT9H\u2020</th>\n      <th>ecOpt\u2021</th>\n      <th>Nudix\u00a7</th>\n      <th>Soluble</th>\n      <th>Enzyme</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>NUDT9</td>\n      <td>34.0</td>\n      <td>6.88</td>\n      <td>0</td>\n      <td>Yes</td>\n      <td>NUDT9</td>\n      <td>Yes</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>NUDT9H</td>\n      <td>31.5</td>\n      <td>8.34</td>\n      <td>100</td>\n      <td>Yes</td>\n      <td>NUDT9H</td>\n      <td>No\u00b6</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Chi1</td>\n      <td>31.7</td>\n      <td>9.30</td>\n      <td>59</td>\n      <td>Yes</td>\n      <td>NUDT9H</td>\n      <td>No</td>\n      <td>N/A\u2020\u2020</td>\n    </tr>\n    <tr>\n      <td>Chi1A</td>\n      <td>32.3</td>\n      <td>9.16</td>\n      <td>59</td>\n      <td>No</td>\n      <td>NUDT9H</td>\n      <td>No</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chi2</td>\n      <td>35.7</td>\n      <td>6.27</td>\n      <td>41</td>\n      <td>No</td>\n      <td>NUDT9</td>\n      <td>Yes</td>\n      <td>Yes</td>\n    </tr>\n    <tr>\n      <td>Chi2A</td>\n      <td>34.6</td>\n      <td>5.91</td>\n      <td>41</td>\n      <td>No</td>\n      <td>NUDT9</td>\n      <td>Yes</td>\n      <td>N/A</td>\n    </tr>\n    <tr>\n      <td>Chi3S</td>\n      <td>35.4</td>\n      <td>6.40</td>\n      <td>77</td>\n      <td>Yes</td>\n      <td>NUDT9H</td>\n      <td>Yes (25\u00b0C)**</td>\n      <td>No</td>\n    </tr>\n    <tr>\n      <td>Chi4S</td>\n      <td>35.8</td>\n      <td>7.16</td>\n      <td>91</td>\n      <td>Yes</td>\n      <td>NUDT9H</td>\n      <td>Yes (25\u00b0C)**</td>\n      <td>No</td>\n    </tr>\n  </tbody>\n</table>\n\n_* - Theoretical pI of the construct (Protein Calculator v3.4).\u2020 - Percentage of NUDT9H sequence (TRPM2 residues 1236-1503) contained in the construct. (The segment in brackets does not include the 15 amino-acid upstream stretch from TRPM2).\u2021 - Gene sequence optimized for expression in E.coli. \u2018No\u2019 denotes that the original, human nucleotide sequence (Nagamine et al., 1998) was used.\u00a7 - Denotes the origin (NUDT9 or NUDT9H) of the Nudix box sequence in the construct.\u00b6 - Small fraction of the protein is soluble when expressed at 25\u00b0C.** - Small fraction of the protein is soluble when expressed at 37\u00b0C, reasonably soluble when expressed at 25\u00b0C.\u2020\u2020 - Not Available_\n\n### The Nudix box of NUDT9H does not support ADPR hydrolase activity\n\nThe solubility and relative stability of mitochondrial NUDT9 and three of our chimeric constructs (Chi2, 3S, 4S) allowed purification of milligram amounts of these recombinant proteins to reasonable homogeneity (Figure 3\u2014figure supplement 1) and assessment of their enzymatic activities. Furthermore, despite its long-term instability, we also subjected freshly purified NUDT9H (Figure 3\u2014figure supplement 1, right) to enzyme activity assays. Following a 2-hr incubation of 1\u2009\u03bcM of each protein with 10\u2009mM ADPR substrate and 16\u2009mM Mg2+ (Perraud et al., 2003), TLC analysis of the reaction mixtures confirmed that NUDT9 and Chi2 (which contain the NUDT9-type Nudix box) are both active ADPRases, with turnover rates sufficient to cause complete \u2013 or near-complete \u2013 conversion of ADPR into AMP and R5P within this time frame (Figure 4A and B; R5P is invisible on the TLC). In contrast, Chi3S, 4S and NUDT9H (which contain the NUDT9H-type Nudix box, Figure 3A) all failed to hydrolyze the nucleotide under the same conditions (Figure 4C\u2013E): this same overall pattern was observed for all six reaction conditions tested, which included three different pH values (6.5, 7.1 and 8.5) in the absence or presence of 100\u2009mM NaCl (Figure 4A\u2013E, reaction buffers 1\u20136).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/17600/elife-17600-fig4-v2.jpg)\n\n**Figure 4.:** (A\u2013E) 10 mM ADPR (lane C1) and 10 mM AMP (lane C2) controls in water. Lanes 1\u20136 show reaction mixtures of 1 \u03bcM purified NUDT9 (A), Chi2 (B), Chi3S (C), Chi4S (D), or NUDT9H (E), incubated with 10 mM ADPR and 16 mM MgCl2 in 50 mM RB1-6, respectively, for 2\u2009hr at room temperature. (F) Top slice: TLC-detection limit for AMP: 0.1\u20130.9 mM water-dissolved AMP in 0.1-mM incrementing steps. Middle slice: ADPR self-degradation. The slice shows only the AMP position of (from left to right): 10 mM ADPR control (in water), 1 mM AMP control (in water), 10 mM AMP control (in water), and 1, 2, 5, 10, 15 and 20 mM ADPR incubated for 24 hr at room temperature in RB3 (pH 8.5) (last six lanes). Bottom slice: ADPR self-degradation in the absence and presence of Chi4S, showing only the AMP position. From left to right: 10 mM ADPR control (in water); 10 mM AMP control (in water); 10 mM ADPR in RB3 (pH 8.5); 10 mM ADPR in RB6 (pH 8.5/NaCl); 0.1 \u03bcM Chi4S + 10 mM ADPR in RB3; 0.1 \u03bcM Chi4S + 10 mM ADPR in RB6; 1 \u03bcM Chi4S + 10 mM ADPR in RB3; 1 \u03bcM Chi4S + 10 mM ADPR in RB6. Except for the controls in lanes 1\u20132, all samples also contained 16 mM MgCl2, and were incubated for 24 hr at room temperature. In all Panels 1-\u03bcl aliquots were loaded for each sample. The three slices of Panel F can be seen as full-scale TLC plates in Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17600/elife-17600-fig4-figsupp1-v2.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A)\u00a0Image of entire TLC plate from which the top slice in Figure 4F was excised: TLC-detection limit for AMP. Lanes 1\u20139 show 0.1\u20130.9 mM water-dissolved AMP, respectively, in 0.1-mM incrementing steps. (B) Image of entire TLC plate from which the middle slice in Figure 4F was excised: ADPR self-degradation. Lane 1: 10 mM ADPR control (in water); lane 2: 1 mM AMP control (in water); lane 3: 10 mM AMP control (in water); lanes 4\u20139: 1, 2, 5, 10, 15 and 20 mM ADPR, respectively, incubated for 24\u00a0hr at room temperature in RB3 (pH 8.5). (C) Image of entire TLC plate from which the bottom slice in Figure 4F was excised. ADPR self-degradation in the absence and presence of Chi4S. Lane 1: 10 mM ADPR control (in water); lane 2: 10 mM AMP control (in water); lane 3: 10 mM ADPR in RB3 (pH 8.5); lane 4: 10 mM ADPR in RB6 (pH 8.5/NaCl); lane 5: 0.1 \u00b5M Chi4S + 10 mM ADPR in RB3; lane 6: 0.1 \u00b5M Chi4S + 10 mM ADPR in RB6; lane 7: 1 \u00b5M Chi4S + 10 mM ADPR in RB3; lane 8: 1 \u00b5M Chi4S + 10 mM ADPR in RB6. Except for the controls in lanes 1\u20132, all samples also contained 16 mM MgCl2, and were incubated for 24\u00a0hr at room temperature. In all Panels 1-\u03bcl aliquots were loaded for each sample.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17600/elife-17600-fig4-figsupp2-v2.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The six TLC slices show only the AMP position of 10 mM ADPR control in water (lane 1), 1 mM AMP control in water (lane 2), 10 mM AMP control in water (lane 3), and 1, 2, 5, 10, 15 and 20 mM ADPR, respectively, in RB3 (pH 8.5) (lanes 4\u20139). The ADPR samples were incubated at room temperature for different time durations, as indicated to the right of each slice. In all slices 1-\u03bcl aliquots were loaded for each sample. The 24h-slice is the same experiment shown in Figure 4F, middle slice (and in Figure 4\u2014figure supplement 1B).\n\nThe reported enzymatic activity of NUDT9H is about 100-fold lower than that of NUDT9 (Perraud et al., 2001, 2003). Closer inspection of the TLC plates of the inactive proteins indeed revealed very weak AMP spots appearing in the reaction mixtures at basic pH (Figure 4C\u2013E, lanes 3 and 6). The low sensitivity of the TLC technique requires the presence of at least 0.2\u20130.3\u2009mM AMP for visual detection (Figure 4F, top slice). Thus, assuming 2\u2013300\u2009\u03bcM AMP produced by 1\u2009\u03bcM protein within our 2-hr incubation would suggest apparent kcat values of 0.03\u20130.04\u2009s\u22121 for Chi3S, 4S and NUDT9H at pH 8.5 and 25\u00b0C, in good agreement with the previous reports on NUDT9H (kcat ~0.06\u2009s\u22121 at pH 9 and 37\u00b0C). However, our prior observation of spontaneous degradation of several dinucleotides at basic pH (T\u00f3th et al., 2015) prompted us to consider inherent instability of ADPR at basic pH as a possible reason for the observed slow AMP accumulation. Indeed, we found that ADPR undergoes slow degradation to AMP and R5P at pH 8.5 (Figure 4F, middle slice; also see Figure 4\u2014figure supplement 2), highlighting that care must be taken to distinguish spontaneous hydrolysis from true enzymatic activity. At 25\u00b0C and pH 8.5 ~20% of ADPR degraded spontaneously in 24\u2009hr (Figure 4F, middle slice, compare the two lanes marked by asterisks), indicating a decay time constant of ~100\u2009h, and thus ~2% degradation in 2\u2009hr: this rate of spontaneous degradation indeed fully accounts for the weak AMP spots observed for Chi3S, 4S, and NUDT9H at basic pH. More importantly, addition of either 0.1 or 1\u2009\u03bcM Chi4S to ADPR-containing reaction mixtures at basic pH, either with (RB6) or without (RB3) 100\u2009mM NaCl, did not affect the rate of spontaneous AMP accumulation (Figure 4F, bottom slice). This clearly demonstrates that Chi4S does not possess any hydrolytic activity towards ADPR, most likely due to critical substitutions in its Nudix box (Figure 2; cf., [Perraud et al., 2003]), and that the observed slow accumulation of AMP is merely caused by ADPR instability at basic pH.\n\n### Enzymatic activity of NUDT9 and Chi2 is pH dependent\n\nWe noted slower enzymatic activity for Chi2 at pH 6.5 and 7.1 compared to 8.5 (Figure 4B), whereas ADPR hydrolysis by NUDT9 appeared complete at all pH values (Figure 4A). To test whether such pH dependence might also apply for NUDT9, but could not be observed at the chosen timescale of 2\u2009hr, we analyzed for both enzymes the time course of AMP accumulation in ADPR-saturated reaction mixtures at the three different pH values (in RB1, RB2 and RB3). Both NUDT9 and Chi2 showed a clear preference for basic pH, causing AMP accumulation to be fastest at pH 8.5 and slowest at pH 6.5 (Figure 5A and B). The calculated kcat values (in s\u22121) quantify this pH dependence of catalytic rates for both proteins (Figure 5C), and reveal higher sensitivity for Chi2 (~5.8-fold decrease from pH 8.5 to 6.5) compared to NUDT9 (~1.4-fold decrease from pH 8.5 to 6.5). Spontaneous degradation of ADPR at basic pH (Figure 4F, middle slice) is not a major contributor to this pH dependence, because the total duration of these kinetic experiments (~20\u2009min) was too short for that effect to become significant: correction for the ~30\u2009\u03bcM AMP which forms spontaneously in 20 min at pH 8.5 would amount to a downward adjustment of those kcat values (Figure 5C, black bars) by only ~0.05\u2009s\u22121. Furthermore, whereas we cannot exclude the possibility that the two proteins were applied at slightly different concentrations, and that this may have caused the observed differences in their absolute reaction rates, investigating pH dependence of activity of a given enzyme (i.e. the same protein stock) is not subject to such limitations. Of note, the kcat of 9\u2009s\u22121 for NUDT9 at pH 8.5 is very similar to previously reported values (~8\u2009s\u22121, [Perraud et al., 2001, 2003]).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/17600/elife-17600-fig5-v2.jpg)\n\n**Figure 5.:** (A) Representative TLC images showing the time courses (in minutes) of hydrolysis of ADPR (10 mM) by 0.5 \u03bcM Chi2 (top) or NUDT9 (bottom) at 3 different pH values (RB1, RB2 and RB3). The slices show only the position of the AMP spots. Control 1 (C1): 5 mM AMP in water. Control 2 (C2): 10 mM AMP in water. (B) AMP accumulation during ADPR hydrolysis by Chi2 (circles) and NUDT9 (triangles) at 3 different pH values. Densities of AMP spots (such as those shown in Panel A) were normalized to the density of the control AMP spot (5 mM) on the same TLC sheet. For each time point mean \u00b1 SEM from 3 experiments is shown. Straight lines are linear regression fits to the averaged data points. (C) Estimates of kcat (s\u22121) for both proteins at each pH, calculated from the fitted slopes in B (mean \u00b1 SEM; mean values are also printed above each bar).\n\n### High-resolution colorimetric assay confirms enzymatic activity profiles of NUDT9, NUDT9H, and chimeras\n\nThe TLC assay allows unambiguous identification of the reaction product AMP based on its chromatographic mobility, but its resolution is limited. As an independent approach, we therefore verified enzymatic activities at both 37\u00b0C (Figure 6A) and room temperature (RT, Figure 6B) for NUDT9, Chi4S, and NUDT9H using the more sensitive colorimetric detection of inorganic phosphate (Pi), liberated from both ADPRase products (AMP and R5P) by co-applied alkaline phosphatase (AP) (Rafty et al., 2002). As a validation of this coupled assay, no significant amounts of contaminating Pi were found in either the applied stock of AP (5\u20136 U), or in 1-mM solutions of ADPR, AMP, or R5P (Figure 6A\u2013B, first four group of bars). Moreover, in the 30-min time frame of our incubation AP released stoichiometric amounts (~1\u2009mM) of Pi from either AMP or R5P (but not from ADPR), confirming that under our experimental conditions the AP reaction is not rate limiting for the coupled assay (Figure 6A\u2013B, groups 5\u20137), releasing 2\u2009mM of Pi per mM ADPR hydrolyzed. When NUDT9 (5 or 50 nM) was co-applied with 1\u2009mM ADPR and AP, the released Pi roughly scaled with the applied amount of protein, signalling specific ADPR hydrolysis by NUDT9 (Figure 6A\u2013B, groups 8\u20139). Comparison of released [Pi] for assays performed at pH values between 6.5 and 9.0 confirmed modest but significant enhancement of NUDT9 activity at basic pH (Figure 6A\u2013B, compare four colored bars within groups 8\u20139). Molecular turnover rates (kcat), calculated from the 5-nM NUDT9 data, were in the range of ~4\u201311\u2009s\u22121 (Figure 6D), in good agreement with the estimates from the TLC assay (Figure 5C). In contrast, co-applying 5 or 50 nM of either Chi4S or NUDT9H with 1\u2009mM ADPR and AP did not result in any significant Pi release (Figure 6A\u2013B, groups 10\u201313; expanded in Figure 6C): the small concentrations of Pi released in these assays (corresponding to the hydrolysis of ~1% of the applied 1\u2009mM ADPR) clearly reflect spontaneous ADPR hydrolysis (cf., Figure 6\u2014figure supplement 1), because they remained insensitive to a ten\u00a0fold variation in Chi4S or NUDT9H concentration (Figure 6C, compare groups 4\u20135 and 6\u20137), and were not larger than the [Pi] released in the absence of any ADPRase (Figure 6C, group 3).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/17600/elife-17600-fig6-v2.jpg)\n\n**Figure 6.:** (A\u2013B) Pi (in mM) liberated in sample mixtures containing, as indicated, AP (5\u20136 U alkaline phosphatase), ADPR (1 mM), AMP (1 mM), R5P (1 mM), and either 5 or 50 nM protein (NUDT9, Chi4S, or NUDT9H), and incubated for 30 min at pH 6.5, 7.1, 8.5, or 9.0 (color coded) at either 37\u00b0C (A) or room temperature (RT) (B). Asterisks in A denote samples replotted with an expanded ordinate in Panel C. Bars represent mean \u00b1 SEM from 3 independent experiments. (C) Expanded display of samples denoted with asterisks in Panel A. (D) Estimated kcat values (in s\u22121) for NUDT9 under each experimental condition (pH and temperature), calculated (see Materials\u00a0and\u00a0methods) from [Pi] liberated in the samples containing 5 nM NUDT9 (group 8) in Panels A and B.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17600/elife-17600-fig6-figsupp1-v2.jpg)\n\n**Figure 6\u2014figure supplement 1.:** Pi assay (see Materials\u00a0and\u00a0methods) for 2 mM ADPR in the absence of an ADPRase, incubated at various pH and temperatures (as labeled) for the indicated time (in minutes). 'No AP' \u2013 Alkaline phosphatase was not added, and incubation time was 120 min. The two ordinates represent the concentration of liberated Pi (in mM) (left), and the corresponding mol% of degraded ADPR (right). Bars represent mean \u00b1 SEM from 3 independent experiments.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/17600/elife-17600-fig6-figsupp2-v2.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Size exclusion chromatography elution profiles, detected as absorbance at 280 nm, of affinity-purified NUDT9 (black), Chi4S (blue), and NUDT9H (red; note 10-fold expanded ordinate on the right). Peaks corresponding to monomers and dimers are labeled\n\nImportantly, lack of catalytic activity for Chi4S and NUDT9H was not due to microaggregation of these domains in a quasi-stable solution: size exclusion chromatograms for both proteins showed a main monomeric peak and a smaller peak corresponding to a dimer, just as for highly soluble NUDT9 (Figure 6\u2014figure supplement 2, compare red and blue to black profile), while higher-stoichiometry aggregates constituted only a minor fraction in each case. For the above functional assays only the pooled fractions corresponding to the monomeric peaks were used.\n\n### Both enzymatically active and inactive chimeras are functional in the context of full-length TRPM2\n\nEnzymatic activity of purified Chi2 confirmed that it is a functional protein, similar to mitochondrial NUDT9 (Figure 4A\u2013B). To verify functionality also for enzymatically inactive Chi3(S) and Chi4(S), we tested whether any of these constructs could substitute for the native NUDT9H domain in the context of full-length TRPM2, to confer ADPR-induced gating upon the channel. For this purpose we used the non-inactivating (T\u00f3th and Csan\u00e1dy, 2012) T5L-TRPM2 pore mutant (hereafter 'TRPM2'), and subcloned Chi2, Chi3 and Chi4 into TRPM2, replacing its native NUDT9H domain. The three full-length chimeric channels (TRPM2-Chi2, TRPM2-Chi3 and TRPM2-Chi4) were then expressed in Xenopus laevis oocytes, and tested for ADPR-dependent channel activation in inside-out patches. For all three constructs cytosolic superfusion with ADPR and Ca2+ triggered macroscopic currents (Figure 7B\u2013D) resembling those of unmodified T5L-TRPM2 (Figure 7A), indicating successful ligand binding to the chimeric domains: in 1\u2009\u03bcM ADPR, the previously established half-saturating concentration for TRPM2 (T\u00f3th and Csan\u00e1dy, 2012), similar fractional currents were activated for TRPM2, TRPM2-Chi3, and TRPM2-Chi4 (Figure 7A,C\u2013E), indicating similar apparent affinities for ADPR. Fractional activation of TRPM2-Chi2 by 1\u2009\u03bcM ADPR was reduced (Figure 7B,E), reflecting a modest, ~3.5-fold increase in the K1/2 for ADPR-induced current activation in TRPM2-Chi2 (Figure 7H). The time constants of current decay upon ADPR removal were two\u2013three-fold shorter for the chimeric constructs compared to TRPM2 (Figure 7F), whereas the relaxation time constants upon Ca2+ removal were nearly identical (Figure 7G). Overall, apart from moderate kinetic differences, all chimeric channel constructs were gated by ADPR similarly to TRPM2, indicating that their chimeric ligand-binding domains are functional in the context of the full-length channel.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/17600/elife-17600-fig7-v2.jpg)\n\n**Figure 7.:** (A\u2013D) Macroscopic currents in inside-out patches excised from Xenopus laevis oocytes expressing (A) T5L-TRPM2, (B) T5L-TRPM2-Chi2, (C) T5L-TRPM2-Chi3, and (D) T5L-TRPM2-Chi4, elicited by superfusion with increasing concentrations of ADPR in the presence of saturating Ca2+ (black bars). Membrane potential was \u221220 mV; current relaxation time courses following removal of either Ca2+ or ADPR were fitted by single exponentials (colored lines) with time constants indicated. (E) Fractional current activation of the constructs in A\u2013D by 1 \u03bcM ADPR; mean steady currents in 1 \u03bcM ADPR were divided by those in 32 \u03bcM ADPR in the same patch (mean \u00b1 SEM, n\u22658). (F\u2013G) Time constants of current relaxation upon sudden removal of ADPR (F) or Ca2+ (G) for the constructs in A\u2013D, obtained from single-exponential fits (mean \u00b1 SEM, n\u22655). (H) Dose response curve of fractional current activation for T5L-TRPM2 (gray) and T5L-TRPM2-Chi2 (light blue); mean steady currents in various test [ADPR] were divided by those in 32 \u03bcM ADPR in the same patch. Symbols represent mean \u00b1 SEM (n\u22655), solid lines are fits to the Hill equation with midpoints printed in the panel.\n\n### ADPR analog binds with similar affinities to purified Chi4S protein and full-length TRPM2 channels\n\nAlthough the electrophysiological experiments confirm functionality for chimeric ligand binding domains in the context of a full-length TRPM2 channel expressed in frog oocytes, we sought to verify functionality also for Chi4S purified from E. coli, our best model of isolated NUDT9H. We found that the fluorescent ADPR analog 1, N6-ethenoadenosine-5\u2019-O-diphosphoribose (\u03b5-ADPR) binds to the intact NUDT9H domain of full-length TRPM2, because it suppressed ADPR-evoked TRPM2 currents in a dose-dependent manner: this effect was more pronounced at low, submaximal [ADPR] (Figure 8A), suggesting a competitive inhibitory mechanism. Indeed, the dose response curve for ADPR-activation (Figure 8B, blue symbols and fit line) was right-shifted in the presence of 100\u2009\u03bcM \u03b5-ADPR (Figure 8B, violet symbols), the fit (Figure 8B, violet fit line) suggesting a KI of 112 \u00b1 24\u2009\u03bcM for \u03b5-ADPR binding to native NUDT9H.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/17600/elife-17600-fig8-v2.jpg)\n\n**Figure 8.:** (A) Macroscopic inward T5L-TRPM2 current in inside-out patch excised from Xenopus laevis oocyte, elicited at -20 mV by repeated exposures to saturating Ca2+ (black bars) and 1 or 100 \u03bcM ADPR (blue bars), in the absence or presence of 100 \u03bcM \u03b5-ADPR (red bars). (B) Dose-dependence of TRPM2 activation by ADPR in the absence (blue symbols and fit line) and presence (violet symbols and fit line) of 100 \u03bcM \u03b5-ADPR (mean \u00b1 SEM, n\u22657). Printed parameters KADPR, n, and K\u03b5-ADPR reflect the apparent affinity and Hill slope for ADPR binding, and KI for \u03b5-ADPR binding, respectively, obtained from the fits (see Materials\u00a0and\u00a0methods). (C) Fluorescence intensity (arbitrary units, Ex: 310 nm, Em: 420 nm) of \u03b5-ADPR at various total concentrations in the absence of protein (black symbols), or in the presence of 100 \u03bcM of either BSA (gray symbols) or Chi4S (red symbols). Symbols plot mean \u00b1 SD from four, two, and two independent titrations, respectively, for buffer (black), BSA (gray), and Chi4S (red). Black line is a smooth fit of the black symbols by a three-parameter empirical mathematical function, and was used as a calibration curve to determine free [\u03b5-ADPR] in the presence of Chi4S, assuming negligible fluorescence of the bound analog (red projection lines). (D) Plot of upper estimate of free [\u03b5-ADPR] as a function of total [\u03b5-ADPR] in the presence of 100 \u03bcM Chi4S (red symbols), fitted (red line) to a simple binding equation (see Materials\u00a0and\u00a0methods) to obtain an upper estimate of Kd (see panel). Black line illustrates free [\u03b5-ADPR] expected in the absence of binding.\n\n![Figure 8\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/17600/elife-17600-fig8-figsupp1-v2.jpg)\n\n**Figure 8\u2014figure supplement 1.:** Size exclusion chromatography elution profiles, detected as absorbance at 280 nm. Chi4S was expressed and purified as described in Materials\u00a0and\u00a0methods, using Steptactin affinity chromatography followed by size exclusion chromatography (solid blue profile). The pooled monomeric fraction was left overnight at 4\u00b0C, and then concentrated five-fold, to ~100 \u03bcM, using a 10 kDa molecular weight cutoff Vivaspin column (Sartorius). This concentrated protein was then subjected to a second round of size exclusion chromatography (dashed blue profile).\n\nTo test whether binding of \u03b5-ADPR to a soluble protein might be revealed by a change in its fluorescence properties, we first calibrated the dose dependence of \u03b5-ADPR fluorescence in free solution (Figure 8C, black symbols and fit line; see Materials\u00a0and\u00a0methods). Applying 100\u2009\u03bcM Chi4S caused a clear reduction in \u03b5-ADPR fluorescence (Figure 8C, red symbols), which reflected fluorescence quenching due to specific binding, because it was not observed upon addition of 100\u2009\u03bcM bovine serum albumin (BSA, gray symbols). Importantly, Chi4S showed no signs of aggregation even at the high protein concentration used in the assay (Figure 8\u2014figure supplement 1) excluding non-specific effects of aggregated protein on fluorescence. Assuming negligible fluorescence for bound \u03b5-ADPR, a safe upper estimate of free [\u03b5-ADPR] could be obtained from the calibration curve (Figure 8C, red projection lines). A plot of free [\u03b5-ADPR] as a function of total [\u03b5-ADPR] (Figure 8D, red symbols) was reasonably fitted (Figure 8D, red line) by a simple binding equation, (see Materials\u00a0and\u00a0methods) yielding a Kd (upper) estimate of 111 \u00b1 42\u2009\u03bcM for \u03b5-ADPR binding to Chi4S: in good agreement with the KI of the same analog for native NUDT9H (Figure 8B).\n\n## Discussion\n\nThe unique group of channel-enzymes (chanzymes), transmembrane proteins that combine ion-channel function with a catalytic activity within a single polypeptide chain, includes the CFTR chloride ion channel, a member of the ATP Binding Cassette (ABC) protein family, and three members of the TRPM channel family, TRPM2, 6, and 7. In the case of CFTR ATP hydrolysis by two cytosolic nucleotide binding domains (NBDs) (Li et al., 1996) appears to be an evolutionary vestige inherited from some ancestral ABC exporter (Gadsby et al., 2006): whereas in transporters the energy of ATP hydrolysis is harnessed to drive a cycle of conformational changes that result in thermodynamically uphill substrate transport, in CFTR ATP-binding induced dimerization of the two NBDs is strictly coupled to opening, and dimer disruption following ATP hydrolysis to closure, of its transmembrane anion-selective pore (Csan\u00e1dy et al., 2010; Vergani et al., 2005). Such a nonequilibrium cyclic gating mechanism is unique among ion channels which mediate downhill electrodiffusion of ions, and confers specific properties on CFTR, including stimulation of channel open probability by catalytic-site mutations (Vergani et al., 2003), or by drug-induced stabilization of energy barriers (Csan\u00e1dy and T\u00f6r\u00f6csik, 2014). The other well studied chanzyme is the TRPM7 cation channel, which contains a kinase domain fused to its cytosolic C-terminus (Runnels et al., 2001; Nadler et al., 2001; Yamaguchi et al., 2001). In this protein the catalytic activity of the enzymatic domain does not appear to be linked to gating of the channel pore, because phosphotransferase and channel activities can be modulated independently of each other (Matsushita et al., 2005; Schmitz et al., 2003) and the kinase domain is functional when expressed on its own (Clark et al., 2008). Nevertheless, recent work uncovered unexpected important specific functions of TRPM7 enzymatic activity: the kinase domain is proteolytically cleaved and translocates to the cell nucleus where it regulates gene expression by phosphorylating histones in the promoters of TRPM7-dependent genes. Moreover, Zn2+ dependent binding of the kinase domain to histone remodeling complexes provides a functional link to the TRPM7 channel pore, a major Zn2+ influx pathway (Krapivinsky et al., 2014).\n\nIn the case of TRPM2 sequence similarity of its C-terminal NUDT9H domain to Nudix-family phosphohydrolases (Bessman et al., 1996) played an essential role in the discovery of the channel's activating ligand, ADP ribose (Perraud et al., 2001; Hara et al., 2002; Sano et al., 2001). Early demonstration of ADPR hydrolase activity for the isolated ligand binding domain NUDT9H classified TRPM2 as a chanzyme (Perraud et al., 2001, 2003), and raised intriguing questions about the possible role of this activity: all the more as the reported slow turnover rate (~0.1\u2009s-1) falls into the range of channel gating rates (T\u00f3th and Csan\u00e1dy, 2012). Of note, while this slower rate of catalysis of NUDT9H, compared to NUDT9, was explained by lack of a conserved glutamate in its Nudix box motif important for Mg2+ coordination, the actual catalytic base is highly variable in Nudix enzymes, and has not yet been identified for either of these two proteins (Shen et al., 2003). However, when introduced into NUDT9H, catalytic site mutations that abolish, or greatly diminish, ADPRase activity of NUDT9 failed to affect the rates of pore gating, and TRPM2 channels were also readily gated by a non-hydrolyzable ADPR analog (T\u00f3th et al., 2014). These findings ruled out a direct link between the ADPRase cycle and gating of the TRPM2 channel pore itself, but did not eliminate the possibility of some, as yet unidentified, role for this catalytic function. The present work therefore addressed the putative enzymatic activity itself.\n\nTo circumvent the problem of low solubility of NUDT9H we sought to establish a chimeric model which resembles the native protein sequence as closely as possible. The region responsible for the low solubility of NUDT9H could be confined to its ~60 C-terminal residues: replacing the entire span (Chi3S), or even just the downstream half (Chi4S) of this C-terminal segment with homologous NUDT9 sequence (Figure 3) was sufficient to confer solubility upon NUDT9H. The C-terminus of NUDT9 is surface exposed ([Shen et al., 2003]; PDB ID: 1Q33; 1QVJ), free to interact with other protein molecule(s), and presumably the same is true for the C-termini of the chimeras and NUDT9H. Therefore, among other reasons, the cumulative charge of the C-terminus may play an important role in determining their aggregation propensity during expression in the bacterial cytoplasm (at around neutral pH). The theoretical total charges of the ~60\u201370 C-terminal residues of our constructs (ignoring affinity tags) are \u22128.1 (NUDT9, Chi2 and Chi3), +0.9 (NUDT9H), \u22122.9 (Chi4) at pH 7.0. It is thus possible that the relative charge-neutrality of the C-terminus of NUDT9H contributes to its insolubility.\n\nSuch low solubility, when expressed in isolation, for a cytoplasmic protein domain like NUDT9H \u2013 in striking contrast to its very soluble mitochondrial homologue \u2013 is somewhat unexpected. A likely explanation is that NUDT9H natively exists in the context of tetrameric TRPM2, and must share an interface with other channel regions which transduces ligand binding into pore opening. Whether NUDT9H interacts with the large N-terminal domain of the channel, with the cytosolic loops connecting the transmembrane helices, and/or with other NUDT9H domains remains to be elucidated, but it is tempting to speculate that the C-terminal ~20% of NUDT9H sequence might be directly involved in such interactions. Consistent with such an interpretation, incremental replacement of NUDT9H segments with corresponding NUDT9 sequences (TRPM2(-NUDT9H) \u2192 TRPM2-Chi4 \u2192 TRPM2-Chi3 \u2192 TRPM2-Chi2) causes a parallel graded decrease in the stability of the open-channel state, as reflected by a speeding of channel closure upon ADPR removal (Figure 7F; gray \u2192 red \u2192 dark blue \u2192 light blue bars).\n\nNUDT9, the soluble chimeric constructs generated by sequence swapping, and even some NUDT9H could be purified and tested for enzymatic activity. These experiments revealed a distinct pattern directly correlated with the origin of the Nudix box in each protein: constructs possessing the Nudix box of NUDT9 (NUDT9 and Chi2) were active ADPR hydrolases, whereas those containing the Nudix box of NUDT9H (Chi3S, Chi4S and NUDT9H) were inactive (Figures 4 and 6). Notably, our soluble chimeric model most similar to the native NUDT9H sequence, Chi4S, is ~90% identical to NUDT9H (including the Nudix box region) and clearly capable of ligand binding (Figures 7D,8C\u2013D), but did not exhibit any sign of enzymatic activity under the various reaction conditions tested.\n\nPrevious studies reported a weak enzymatic activity for the isolated NUDT9H domain of TRPM2 (Perraud et al., 2001, 2003). While we did also detect slow accumulation of AMP when Chi3S, Chi4S, or NUDT9H was incubated with ADPR under alkaline conditions, we fully attribute those results to inherent instability of ADPR at basic pH. Indeed, we observed gradual accumulation of AMP even in protein-free samples of ADPR incubated in alkaline buffers (Figures 4F,6C, Figure 4\u2014figure supplement 2, and Figure 6\u2014figure supplement 1) and, assuming an exponential decay time course, estimated a time constant of ~100\u2009hr for spontaneous ADPR hydrolysis at 25\u00b0C and pH 8.5. Spontaneous degradation of ADPR at basic pH (~0.3% and ~2% within 20 min and 2\u2009hr, respectively, at 25\u00b0C and pH 8.5; ~1% within 30 min at 37\u00b0C and pH 9 [Figure 6\u2014figure supplement 1]) did not significantly distort the results of the 20- to 30-min enzyme kinetics measurements for the active constructs (Figures 5C and 6D), but fully accounted for the weak AMP signals for our inactive constructs observed after 2-hr incubations using TLC (Figure 4C\u2013E, lanes 3 and 6), or already after 30-min incubations using the more sensitive Pi detection assay (Figure 6A\u2013C): this phenomenon fully explains the reported weak activity of NUDT9H at 37\u00b0C and pH 9 (Perraud et al., 2001, 2003). Of note, spontaneous degradation affects enzymatic ADPR hydrolysis assays only at basic, but not at neutral or slightly acidic pH at which ADPR is inherently stable (Figure 4C\u2013E, lanes 1, 2, 4, 5; Figure 4\u2014figure supplement 2, and Figure 6\u2014figure supplement 1).\n\nThe catalytic properties of our two enzymatically active recombinant proteins (NUDT9 and Chi2) were largely similar. NUDT9 appeared slightly faster than Chi2, which may be attributed either to slight structural mismatch between \u2018foreign\u2019 Cap and Core segments in Chi2, or to errors in estimating their concentrations. Both enzymes exhibited a modest but clear pH-dependence, with a preference towards basic pH (Figure 5C, and Figure 6D). Perhaps NUDT9, which natively resides in mitochondria, might have adapted to this environment, and Chi2, which contains ~60% of the NUDT9 sequence (the entire Core subdomain), presumably shares most of its preferences. In contrast, the cytosolic NUDT9H domain of plasma-membrane resident TRPM2 faces the neutral pH of the cytosol. For this reason, care was taken to test the NUDT9H-like proteins (Chi3S, Chi4S and NUDT9H) in buffers at different pH values (Figures 4 and 6).\n\nWhen introduced into full-length TRPM2 in place of the native NUDT9H domain, chimeric constructs Chi2, Chi3 and Chi4 supported ADPR-induced channel activity which resembled that of intact TRPM2 channels, except for a somewhat reduced apparent affinity of TRPM2-Chi2 (Figure 7). One possible reason for this small defect is that the other constructs contain catalytically inactive Nudix domains, whereas ADPR hydrolysis by Chi2 might reduce fractional saturation of this domain at low (~1\u2009\u03bcM) ADPR concentrations. Alternatively, the significantly larger portion of non-native (i.e. NUDT9-like) sequence in Chi2 (the entire Core subdomain) might compromise formation of the proper interface responsible for transducing ligand binding into channel opening. Nevertheless, all full-length chimeric TRPM2 constructs formed functional channels, demonstrating that NUDT9/NUDT9H chimeric domains are properly folded and competent to bind ADPR and gate the channel. Importantly, TRPM2-Chi4 is almost identical in sequence to the background T5L-TRPM2, its channel behaviour is almost indistinguishable from that of T5L-TRPM2, and we have clearly shown that its isolated ligand-binding domain (Chi4S) \u2013 although capable of binding an ADPR analog with a similar affinity as the intact NUDT9H domain of a full-length TRPM2 channel (Figure 8) \u2013 is not catalytically active. Based on these results, we conclude that the NUDT9H domain of TRPM2 is not an ADPR hydrolase, and that TRPM2 is a simple ligand-gated channel, not a 'chanzyme', despite the fact that its ligand binding domain is clearly a member of the family of Nudix enzymes. One potential advantage of its broken enzymatic activity might be increased ligand occupancy at low ADPR concentrations. The Chi4S construct developed here is a convenient soluble model of NUDT9H which might be useful for future structural and biochemical studies.\n\n## Materials and methods\n\n### Molecular biology\n\nExcept for Chimera 2 (Chi2), all recombinant proteins for bacterial expression were synthesized and incorporated into the pJ411 plasmid which bears kanamycin resistance (DNA2.0, Menlo Park, CA, USA). Chi2 was obtained by PCR-amplification of Chi2A cDNA using forward primer (5\u2019-TTTAACTTTTAGGAGATAAACATATGCCGGATGCTGAG, NdeI site underlined) and reverse primer (5\u2019-AACGTCTGCTCGAGCAACGCATGGCAGTCAGCTTCAGA, XhoI site underlined), and subcloned into the pET21c vector. NUDT9, NUDT9H, Chi1 and Chi2 had C-terminal hexahistidine tags, while Chi3S and Chi4S had C-terminal Twin-Strep tags. The N-termini of Chi1A, Chi2, Chi2A, Chi3, and Chi4 included an upstream stretch of 15 TRPM2 residues which contained a native BlpI-site (Figure 3A, gray). The pJ411 plasmids harboring the individual constructs were transfected into inducible E.coli, strain BL21 (DE3).\n\nThe noninactivating TRPM5-like pore mutant of TRPM2 (T5L-TRPM2) was contained in the pGEMHE vector (T\u00f3th and Csan\u00e1dy, 2012). The NUDT9H domain of TRPM2 was replaced by Chi2A, Chi3 or Chi4 using the native BlpI-site upstream of the domain and an XbaI-site downstream of the Stop-codon in each chimeric construct. Single-base mutations to generate Stop-codons immediately upstream of the hexahistidine tags of Chi3 and Chi4 were then introduced (QuickChange II, Agilent Technologies, Santa Clara, CA, USA), yielding TRPM2-Chi3 and TRPM2-Chi4; TRPM2-Chi2 lacked a His-tag because it was derived from Chi2A.\n\nAll constructs were sequence-verified. The TRPM2/pGEMHE plasmids were linearized with NheI (New England Biolabs, Ipswich, MA, USA) and transcribed in vitro using T7 polymerase; cRNA was stored at \u221280\u00b0C.\n\n### Protein expression and purification\n\nThe soluble proteins (NUDT9 and Chi2) were expressed and purified as previously described for mitochondrial NUDT9 (T\u00f3th et al., 2014). In brief, bacterial cultures were grown at 37\u00b0C in Luria-Bertani medium supplemented with the appropriate antibiotic and induced with 1\u2009mM isopropyl-\u03b2-D-1-thiogalactopyranoside (IPTG) upon reaching OD600 of ~0.7. After 3\u2009hr of incubation, cells were harvested and lysed with sonication in 20\u2009mM Tris (pH 8.5 with HCl) / 200\u2009mM NaCl. The cleared supernatant was incubated with Ni-Sepharose 6 Fast Flow resin (GE Healthcare Hungary, Hungary) for 3\u2009hr under gentle rotation. The resin was then washed with lysis buffer supplemented with 20\u2009mM imidazole, and the protein eluted with a buffer containing 20\u2009mM Tris (pH 8.5 with HCl), 100\u2009mM NaCl, and 400\u2009mM imidazole.\n\nChi3S, Chi4S and NUDT9H were little soluble to insoluble when expressed at 37\u00b0C, the majority of the proteins ending up in inclusion bodies, but gave tractable (~1\u20135%) soluble fractions when induced with 0.1\u2009mM IPTG at 25\u00b0C overnight. NUDT9H was then purified as NUDT9. Chi3S and Chi4S were purified using Strep-Tactin chromatography following the manufacturer\u2019s instructions (IBA GmbH, G\u00f6ttingen, Germany).\n\nFollowing affinity chromatography, all proteins were subjected to a gel filtration purification step in 20\u2009mM Tris (pH 8.5), 100\u2009mM NaCl (Superdex 200 10/300 GL, GE Healthcare Hungary). Affinity tags were not removed. Protein concentrations were determined spectrophotometrically using theoretical molar extinction coefficients (\u03b5o ~ 55,000\u2009M\u22121cm\u22121 at \u03bb\u00a0=\u00a0280 nm). Protein purity was visually checked with SDS PAGE. Protein identity was confirmed by the band position, the main peak position on the gel filtration profile, and, in the case of Chi4S, also by mass spectrometry (Proteome Factory AG, Berlin, Germany). NUDT9 and Chi2 were flash-frozen in liquid nitrogen and kept at \u221220\u00b0C until used. Chi3S, Chi4S and NUDT9H were kept at 4\u00b0C, and immediately used for experiments.\n\n### Enzymatic activity assay using thin-layer chromatography (TLC)\n\nADPRase activities of mitochondrial NUDT9, NUDT9H, and the purified chimeric constructs (Chi2, Chi3S, Chi4S) were quantitated by densitometric detection of the AMP product on TLC sheets. The 20-\u03bcl reaction mixtures contained 0.1, 0.5 or 1\u2009\u03bcM purified protein, 10\u2009mM Na-ADPR (Sigma-Aldrich, St. Louis, MO, USA), 16\u2009mM MgCl2, and 50\u2009mM reaction buffer (RB). The reaction buffers used were: 50\u2009mM MES, pH 6.5 with NaOH (RB1); 50\u2009mM HEPES, pH 7.1 with NaOH (RB2); 50\u2009mM Tris, pH 8.5 with HCl (RB3); RB1 + 100\u2009mM NaCl (RB4); RB2 + 100\u2009mM NaCl (RB5), and RB3 + 100\u2009mM NaCl (RB6). For the enzyme kinetics experiments on NUDT9 and Chi2, aliquots from the reaction mixtures were collected at the indicated time points; 3 independent experiments were performed for both proteins and each condition, and data are presented as mean \u00b1 SEM. For other experiments, the total incubation time was as indicated in the figures legends. All incubations were at room temperature (~25\u00b0C). For TLC, 1-\u03bcl aliquots of reaction mixtures were placed on Polygram SIL G/UV254 plates (Macherey-Nagel, D\u00fcren, Germany), dried and developed in 0.2\u00a0M NH4HCO3 in ethanol:water 7:3 (vol/vol). Nucleotides were visualized under UV light. Densitometry of nucleotide intensities was done using ImageJ software.\n\n### Enzymatic activity assay using colorimetric detection of inorganic phosphate (Pi)\n\nThe ADPRase activities of the same proteins were additionally tested with a more sensitive assay based on colorimetric detection of Pi (Pi assay) liberated from both ADPRase products AMP and R5P by co-applied alkaline phosphatase (AP) (Rafty et al., 2002). AP liberates Pi from AMP and R5P, but not from intact ADPR: thus, Pi is produced from hydrolyzed ADPR at a molar ratio of 1:2. In brief, 150-\u03bcl reaction volumes containing 5 or 50 nM purified protein, 5\u20136 U bovine AP, 1\u2009mM Na-ADPR, 16\u2009mM MgCl2, and 50\u2009mM reaction buffer at various pH values (MES 6.5, HEPES 7.1, Tris 8.5, and Tris 9.0) were incubated for 30\u2009min at either 37\u00b0C or room temperature. The reaction was stopped and Pi visualized by adding 850\u2009\u03bcl coloring solution (6:1 vol/vol ratio mixture of 0.42% ammonium molybdate tetrahydrate in 1N H2SO4 and 10% L-ascorbic acid) followed by incubation for 20\u2009min at 45\u00b0C. Optical density was then measured at 820 nm (NanoPhotometer P300, Implen GmbH, Munich, Germany). Coloring solution was freshly made, and standard curve (0.050\u20132\u2009mM KH2PO4) obtained, daily. Reactions with 1\u2009mM AMP or R5P (instead of ADPR) served as positive controls. All reagents were from Sigma-Aldrich. Assays were performed in triplicates and data are displayed as mean \u00b1 SEM.\n\nMolecular turnover rates (kcat) for NUDT9 were calculated from the [Pi] released in samples containing 5 nM NUDT9, in which [ADPR] remained >0.9\u2009mM (i.e., saturating [Perraud et al., 2003]) throughout the 30-min incubation period, using the equation kcat\u00a0=\u00a00.5[Pi]released/5 nM/1800\u2009s.\n\n### Ligand binding assay based on quenching of \u03b5-ADPR fluorescence\n\nThe ligand binding ability of purified Chi4S protein was assessed using fluorescence quenching of the ADPR analogue 1, N6-ethenoadenosine-5\u2019-O-diphosphoribose (\u03b5-ADPR - BIOLOG Life Science Institute, Bremen, Germany). A 350-\u03bcl volume of 100\u2009\u03bcM Chi4S protein in 20\u2009mM Tris (pH 8.5)/100\u2009mM NaCl buffer, supplemented with 16\u2009mM MgCl2, was titrated by increasing concentrations of \u03b5-ADPR. Fluorescence emission scans (350\u2013700 nm) were recorded at a fixed excitation wavelength of 310 nm (Hitachi F-7000, Hitachi High Technologies, Maidenhead, UK). Fluorescence emission for \u03b5-ADPR peaks at ~410 nm. Protein-free buffer or 100\u2009\u03bcM bovine serum albumin (BSA; instead of Chi4S) were used as controls. Data are shown as mean \u00b1 S.D. of two independent experiments.\n\nDose dependence of fluorescence (Em\u00a0=\u00a0420 nm) of free \u03b5-ADPR (in buffer) was fitted by an empirical non-linear function to produce a smooth calibration curve, used to obtain upper estimates of free [\u03b5-ADPR] in the presence of 100\u2009\u03bcM Chi4S protein and various total [\u03b5-ADPR], assuming negligible fluorescence for the bound, relative to the free, form of the analog. The plot of free vs. total [\u03b5-ADPR] was fitted by the simple binding equation\n\n$$\n[\\epsilon-ADPR]_{free}=0.5([\\epsilon-ADPR]_{total}\u2212[P]_{total}\u2212K_{d}+\\sqrt{([\\epsilon-ADPR]_{total}\u2212[P]_{total}\u2212K_{d})^{2}+4K_{d}[\\epsilon-ADPR]_{total}}),\n$$\n\nwhere [P]total is the total concentration of Chi4S protein (100\u2009\u03bcM), and Kd is a free parameter. Given that the values of free [\u03b5-ADPR] are upper estimates, this approach provides an upper estimate of the Kd.\n\nBecause for the binding assay the Chi4S preparation had to be concentrated by ~five-fold to reach ~100\u2009\u03bcM (3.6 mg/ml), the effect of such a concentration step on Chi4S solubility was verified by subjecting five-fold concentrated Chi4S protein to a second round of size exclusion chromatography. The elution profile of this second run (Figure 8\u2014figure supplement 1, dashed blue profile) resembled that of the first run, showing a main monomeric peak with a smaller peak corresponding to a dimer. Importantly, larger aggregates did not reappear. This confirms that the signal observed in the fluorescent binding assay is not due to non-specific effects of aggregated protein.\n\n### Isolation and injection of Xenopus oocytes\n\nOocytes isolated from anaesthetized Xenopus laevis were digested with collagenase, injected with 10\u201370 ng cRNA, and stored at 18\u00b0C. Recordings were done 2\u20133 days after injection.\n\n### Excised inside-out patch-clamp recordings\n\nThe tip of the patch pipette was filled to ~1 cm height with 140\u2009mM Na-gluconate, 2\u2009mM Mg-gluconate2, 10\u2009mM HEPES (pH 7.4 with NaOH); free [Ca2+] ~4\u2009\u03bcM. The pipette electrode was placed into a 140-mM NaCl-based solution carefully layered on top. Bath solution contained 140\u2009mM Na-gluconate, 2\u2009mM Mg-gluconate2, 10\u2009mM HEPES (pH 7.1 with NaOH), and either 1\u2009mM EGTA (to obtain 'zero' (~8 nM) Ca2+) or 1\u2009mM Ca-gluconate2 (to obtain 125\u2009\u03bcM free Ca2+) (Csan\u00e1dy and T\u00f6rocsik, 2009). Na-ADPR was used at final concentrations of 0.32, 1, 3.2, 10, 32, 100, or 1000\u2009\u03bcM, and the Na+ salt of \u03b5-ADPR at 100\u2009\u03bcM. Macroscopic TRPM2 currents were recorded at 25\u00b0C at a membrane potential of \u221220 mV. Currents were amplified, filtered at 2 kHz (Axopatch 200B), digitized at 10 kHz (Digidata 1322A), and stored to disk (Pclamp9, Molecular Devices, Sunnyvale, CA, USA).\n\nDose dependence of ADPR-induced current activation, expressed as the ratio of mean macroscopic currents observed in the presence of various test [ADPR] (I) and 32 (or 100) \u03bcM ADPR (Imax) in the same patch, was fitted to the Hill equation (I/Imax\u00a0=\u00a0[ADPR]n/(Kn+[ADPR]n). Dose dependence of ADPR-activation in the presence of 100\u2009\u03bcM \u03b5-ADPR was expressed as the ratio of the currents observed in the presence of various test [ADPR] + 100\u2009\u03bcM \u03b5-ADPR (I) and 100\u2009\u03bcM ADPR alone (Imax) in the same patch, and was fitted to the Hill equation substituting K'\u00a0=\u00a0K(1+[\u03b5-ADPR]/KI) instead of K (K and n fixed to their control values). Macroscopic current decay time courses following removal of ADPR or Ca2+ were fitted by single exponentials using the method of least squares.\n\n### Statistics\n\nData are displayed as mean \u00b1 SEM from n independent experiments, as specified in each figure legend. All data were included in the analysis. Enzyme activities were assayed in at least three independent experiments. Gating parameters for full length TRPM2 and chimeric channels were estimated from current recordings obtained from at least five patches in each case. These numbers of technical replications allowed us to limit SEM to \u226420% of the mean for each measured parameter.\n",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "833b850d-7c82-4e8b-8a25-eb62ec250b6b",
+      "submission_id": "b10fad64-5293-443d-94ed-b32c62bc84b0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- David E Clapham, Howard Hughes Medical Institute, Boston Children's Hospital , United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.17600.018](https://doi.org/10.7554/eLife.17600.018)\n\nIn the interests of transparency, eLife includes the editorial decision letter and accompanying author responses. A lightly edited version of the letter sent to the authors after peer review is shown, indicating the most substantive concerns; minor comments are not usually included.\n\nThank you for submitting your article \"The proposed channel-enzyme Transient Receptor Potential Melastatin 2 does not possess ADP ribose hydrolase activity\" for consideration by eLife. Your article has been favorably evaluated by Richard Aldrich (Senior Editor) and three reviewers, one of whom, David E Clapham (Reviewer #1), is a member of our Board of Reviewing Editors, and another one is Merritt Maduke (Reviewer #3).\n\nThe reviewers have discussed the reviews with one another and the Reviewing Editor has drafted this decision to help you prepare a revised submission.\n\nSummary:\n\nTransient Receptor Potential Melastatin 2 (TRPM2) is a Ca-permeable cation channel activated by ADP ribose(ADPR) binding to its C-terminal cytosolic NUDT9-homology (NUDT9H) domain. This domain is homologous to the soluble mitochondrial ADPR pyrophosphatase (ADPRase) NUDT9, but as shown here, does not hydrolyze ADPR. Reported ADPR hydrolysis classified TRPM2 as a channel-enzyme, but insolubility of isolated NUDT9H hampered further study. The authors develop a soluble NUDT9H, by replacing incrementally extended N-terminal portions of NUDT9 with homologous NUDT9H sequence. When expressed in E. coli, chimeras containing up to ~90% NUDT9H sequence remained soluble and were affinity-purified. In ADPRase assays, the conserved Nudix-box sequence of NUDT9 proved essential for activity (kcat~4-9s-1) \u2013 NUDT9H itself did not support catalysis. Replacing NUDT9H in full-length TRPM2 with soluble chimeras retained ADPR-dependent channel gating, confirming functionality of chimeric domains. Based on these results, the authors conclude that the NUDT9H domain of TRPM2 is not an ADPR hydrolase, and that TRPM2 is a simple ligand-gated channel, not a \"chanzyme\". The authors speculate that the potential advantage of its broken enzymatic activity might be increased ligand occupancy at low ADPR concentrations.\n\nThis is excellent work, well documented and controlled. This is an outstanding example of careful science well-executed.\n\nEssential revisions:\n\nOverall, the experimental results are beautifully presented. However, the conclusion that the purified domains have no activity remains undemonstrated because it has not been shown that these domains are truly soluble and monodispersed. With expression at 37\u00b0C, the domains are completely insoluble; with expression at 25\u00b0C, only a tiny fraction of the protein is obtained in the soluble fraction. So, one wonders whether the domains are only quasi-stable and prone to micro-aggregation in solution. The authors perform size exclusion chromatography as a purification step, but none of the chromatograms are shown. Do the domains run as monomers or oligomers? Are there significant aggregate peaks in the chromatograms?\n\nAre the domains monodispersed when re-run on size exclusion chromatography, or are they only quasi-stable? Do the proteins remain monodispersed after concentration for the binding assays? These questions need to be addressed in order for the conclusion that there is no catalytic conclusion to be certain. While the binding assay in principle could confirm that the domains are well behaved, the weak signal observed in the fluorescent binding assay could be due to non-specific effects of aggregated protein on fluorescence rather than to specific binding. Since BSA is a highly soluble protein, it is not a great control in this case. In summary, the chromatograms should be shown and these points discussed.\n",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "abbd0726-e728-43f5-8701-4a584e1858fe",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C1",
+      "claim": "TRPM2 is a Ca2+-permeable cation channel essential for immunocyte activation, insulin secretion, and postischemic cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Transient Receptor Potential Melastatin 2 (TRPM2) is a Ca2+-permeable cation channel essential for immunocyte activation, insulin secretion, and postischemic cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to prior literature establishing these functions of TRPM2.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "2abfff6f-ecbb-4941-9268-a6e58e4e0736",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C2",
+      "claim": "TRPM2 is activated by ADP ribose (ADPR) binding to its C-terminal cytosolic NUDT9-homology (NUDT9H) domain.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPM2 is activated by ADP ribose (ADPR) binding to its C-terminal cytosolic NUDT9-homology (NUDT9H) domain, homologous to the soluble mitochondrial ADPR pyrophosphatase (ADPRase) NUDT9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work and is established knowledge about TRPM2 activation mechanism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "d09025a8-6be8-4625-a87f-b7dff63dc1ac",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C3",
+      "claim": "The NUDT9H domain is homologous to the soluble mitochondrial ADPR pyrophosphatase (ADPRase) NUDT9.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPM2 is activated by ADP ribose (ADPR) binding to its C-terminal cytosolic NUDT9-homology (NUDT9H) domain, homologous to the soluble mitochondrial ADPR pyrophosphatase (ADPRase) NUDT9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence similarity data and citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "b0d6e1e4-9776-40ea-babd-907b73da2554",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C4",
+      "claim": "Isolated NUDT9H is insoluble, which hampered further investigations.",
+      "claim_type": "EXPLICIT",
+      "source": "Reported ADPR hydrolysis classified TRPM2 as a channel-enzyme, but insolubility of isolated NUDT9H hampered further investigations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a problem that motivated the current study and is supported by experimental observations in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "87b2b5d1-3d46-454c-90a7-342c060b0606",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C5",
+      "claim": "Chimeric proteins containing up to ~90% NUDT9H sequence remained soluble when expressed in E.coli.",
+      "claim_type": "EXPLICIT",
+      "source": "When expressed in E.coli, chimeras containing up to ~90% NUDT9H sequence remained soluble and were affinity-purified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing successful purification of chimeric constructs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "fb635e63-8b8a-4454-ab26-5910f20e49e7",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C6",
+      "claim": "The conserved Nudix-box sequence of NUDT9 is essential for ADPRase activity with kcat~4-9s-1.",
+      "claim_type": "EXPLICIT",
+      "source": "In ADPRase assays the conserved Nudix-box sequence of NUDT9 proved essential for activity (kcat~4-9s-1), that of NUDT9H did not support catalysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by enzymatic activity assays presented in the manuscript showing activity for NUDT9 but not NUDT9H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "7e921d51-e508-4fed-a003-c4454b00614e",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C7",
+      "claim": "The Nudix-box sequence of NUDT9H does not support catalysis.",
+      "claim_type": "EXPLICIT",
+      "source": "In ADPRase assays the conserved Nudix-box sequence of NUDT9 proved essential for activity (kcat~4-9s-1), that of NUDT9H did not support catalysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by enzymatic activity assays showing no activity for constructs containing the NUDT9H Nudix box.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "528e6d07-e49b-47b8-b7af-1105c12539c7",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C8",
+      "claim": "Replacing NUDT9H in full-length TRPM2 with soluble chimeras retained ADPR-dependent channel gating with K1/2~1-5 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Replacing NUDT9H in full-length TRPM2 with soluble chimeras retained ADPR-dependent channel gating (K1/2~1-5 \u03bcM), confirming functionality of chimeric domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by electrophysiological recordings showing ADPR-dependent activation of chimeric channels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "8a550129-5f66-4d86-bf64-0250e10b3110",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C9",
+      "claim": "TRPM2 is not a 'chanzyme'.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, TRPM2 is not a 'chanzyme'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the lack of enzymatic activity demonstrated for NUDT9H-containing constructs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "b1308b10-6927-412e-820c-cc21dc22b4bf",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C10",
+      "claim": "Chimeras provide convenient soluble NUDT9H models for structural/biochemical studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Chimeras provide convenient soluble NUDT9H models for structural/biochemical studies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the successful purification and characterization of chimeric constructs that closely resemble NUDT9H.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "e7c2c99b-0f10-4cfb-907d-08be5e3dc104",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C11",
+      "claim": "TRPM2 is predominantly expressed in brain neurons, spleen, bone marrow, leukocytes, phagocytes, pancreatic \u03b2 cells, and cardiomyocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Transient receptor potential melastatin 2 (TRPM2) belongs to the TRP protein family and is predominantly expressed in brain neurons, spleen, bone marrow, leukocytes, phagocytes, pancreatic \u03b2 cells, and cardiomyocytes (Nagamine et al., 1998; Perraud et al., 2001; Togashi et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature documenting TRPM2 expression patterns.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "5d14e827-7579-4e63-915f-06c5f5b5b0e7",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C12",
+      "claim": "TRPM2 forms Ca2+-permeable nonselective cation channels which are activated under oxidative stress.",
+      "claim_type": "EXPLICIT",
+      "source": "It forms Ca2+-permeable nonselective cation channels which are activated under oxidative stress, and contribute to the Ca2+ signals that trigger cell migration and chemokine production in immune cells (Yamamoto et al., 2008) and insulin secretion in the pancreas (Uchida et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature establishing TRPM2 channel properties and activation conditions.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "a3f5903e-ad62-437b-8365-69bf18a5d96d",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C13",
+      "claim": "TRPM2 contributes to Ca2+ signals that trigger cell migration and chemokine production in immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It forms Ca2+-permeable nonselective cation channels which are activated under oxidative stress, and contribute to the Ca2+ signals that trigger cell migration and chemokine production in immune cells (Yamamoto et al., 2008) and insulin secretion in the pancreas (Uchida et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Yamamoto et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "558b9ce4-56f0-4d82-a858-2b39508ac59e",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C14",
+      "claim": "TRPM2 contributes to insulin secretion in the pancreas.",
+      "claim_type": "EXPLICIT",
+      "source": "It forms Ca2+-permeable nonselective cation channels which are activated under oxidative stress, and contribute to the Ca2+ signals that trigger cell migration and chemokine production in immune cells (Yamamoto et al., 2008) and insulin secretion in the pancreas (Uchida et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Uchida et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "d1c63fc9-ed24-47e1-a2fe-4d7e3651076b",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C15",
+      "claim": "Under pathological conditions such as post-ischemic reperfusion injury, TRPM2 activity leads to Ca2+ dysregulation and cell death.",
+      "claim_type": "EXPLICIT",
+      "source": "Under pathological conditions, such as post-ischemic reperfusion injury (Hara et al., 2002; Kaneko et al., 2006) and potentially in Alzheimer's disease (Fonfria et al., 2005), TRPM2 activity leads to Ca2+ dysregulation and cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hara et al., 2002 and Kaneko et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "3c707867-8215-496a-85a2-50dba6894d5a",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C16",
+      "claim": "TRPM2 activity potentially leads to Ca2+ dysregulation and cell death in Alzheimer's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Under pathological conditions, such as post-ischemic reperfusion injury (Hara et al., 2002; Kaneko et al., 2006) and potentially in Alzheimer's disease (Fonfria et al., 2005), TRPM2 activity leads to Ca2+ dysregulation and cell death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fonfria et al., 2005, with the qualifier 'potentially' indicating some uncertainty.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "1cac985c-49da-405d-943e-f9169a9819b7",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C17",
+      "claim": "Reduced activity of TRPM2 might be linked to amyotrophic lateral sclerosis and Parkinson's disease dementia.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, reduced activity of TRPM2 might be linked to amyotrophic lateral sclerosis and Parkinson's disease dementia (Hermosura et al., 2008), as well as bipolar disorder (McQuillin et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hermosura et al., 2008, with the qualifier 'might be' indicating speculation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "e710af8b-66ad-43c4-9f73-9bcdd23fada3",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C18",
+      "claim": "Reduced activity of TRPM2 might be linked to bipolar disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, reduced activity of TRPM2 might be linked to amyotrophic lateral sclerosis and Parkinson's disease dementia (Hermosura et al., 2008), as well as bipolar disorder (McQuillin et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to McQuillin et al., 2006, with the qualifier 'might be' indicating speculation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "bd03b615-00a3-4721-9905-8bd78e537810",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C19",
+      "claim": "TRPM2 forms homotetramers with a transmembrane architecture similar to that of voltage-gated cation channels.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPM2 forms homotetramers with a transmembrane architecture similar to that of voltage-gated cation channels (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reference to Figure 1A and is established knowledge about TRPM2 structure.",
+      "evidence_type": "[\"KNOWLEDGE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "368d66cb-b083-42c4-8e16-4079ac5dfcc5",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C20",
+      "claim": "TRPM2 contains a large cytosolic N-terminal domain of unknown function specific to the TRPM subfamily.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it contains a large cytosolic N-terminal domain of unknown function specific to the TRPM subfamily, and a C-terminal coiled-coil region (CCR, Figure 1A) followed by a small cytosolic domain (NUDT9H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reference to Figure 1A and is established structural knowledge about TRPM2.",
+      "evidence_type": "[\"KNOWLEDGE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "81038149-9b14-403b-860e-3fe0fc368693",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C21",
+      "claim": "TRPM2 contains a C-terminal coiled-coil region (CCR) followed by a small cytosolic domain (NUDT9H).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, it contains a large cytosolic N-terminal domain of unknown function specific to the TRPM subfamily, and a C-terminal coiled-coil region (CCR, Figure 1A) followed by a small cytosolic domain (NUDT9H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reference to Figure 1A and is established structural knowledge about TRPM2.",
+      "evidence_type": "[\"KNOWLEDGE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "20c2883c-efd4-4476-9b44-e7f9f4254336",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C22",
+      "claim": "The NUDT9H domain exhibits ~35% identity and ~45% similarity to NUDT9.",
+      "claim_type": "EXPLICIT",
+      "source": "The NUDT9H domain exhibits a high degree of sequence similarity (~35% identity, ~45% similarity) to the soluble, Mg2+-dependent mitochondrial pyrophosphatase NUDT9 (Shen et al., 2003), which catalyzes the hydrolysis of adenosine 5'-diphosphoribose (ADPR) into AMP and ribose 5-phosphate (R5P) (Figure 1B and C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Shen et al., 2003 and sequence comparison data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "c8649963-120d-4213-a4f8-650c346f545b",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C23",
+      "claim": "NUDT9 is a soluble, Mg2+-dependent mitochondrial pyrophosphatase.",
+      "claim_type": "EXPLICIT",
+      "source": "The NUDT9H domain exhibits a high degree of sequence similarity (~35% identity, ~45% similarity) to the soluble, Mg2+-dependent mitochondrial pyrophosphatase NUDT9 (Shen et al., 2003), which catalyzes the hydrolysis of adenosine 5'-diphosphoribose (ADPR) into AMP and ribose 5-phosphate (R5P) (Figure 1B and C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Shen et al., 2003 and is established knowledge about NUDT9.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "1daeb78f-df6c-4528-b1ee-90bfeb438060",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C24",
+      "claim": "NUDT9 catalyzes the hydrolysis of ADPR into AMP and ribose 5-phosphate (R5P).",
+      "claim_type": "EXPLICIT",
+      "source": "The NUDT9H domain exhibits a high degree of sequence similarity (~35% identity, ~45% similarity) to the soluble, Mg2+-dependent mitochondrial pyrophosphatase NUDT9 (Shen et al., 2003), which catalyzes the hydrolysis of adenosine 5'-diphosphoribose (ADPR) into AMP and ribose 5-phosphate (R5P) (Figure 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Shen et al., 2003 and reference to Figure 1B and C showing the reaction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "11c8db9b-4c66-4357-8163-d98614bee39e",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C25",
+      "claim": "TRPM2 is activated by co-application of cytosolic ADPR and Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPM2 is activated by co-application of cytosolic ADPR and Ca2+ (Perraud et al., 2001; Sano et al., 2001; Csan\u00e1dy and T\u00f6rocsik, 2009), and the ADPR ligand was indeed shown to bind to the NUDT9H domain of the channel (Grubisha et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Perraud et al., 2001; Sano et al., 2001; Csan\u00e1dy and T\u00f6rocsik, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "1b00dfd8-c029-49a4-97a3-cf1a11041652",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C26",
+      "claim": "The ADPR ligand binds to the NUDT9H domain of TRPM2.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPM2 is activated by co-application of cytosolic ADPR and Ca2+ (Perraud et al., 2001; Sano et al., 2001; Csan\u00e1dy and T\u00f6rocsik, 2009), and the ADPR ligand was indeed shown to bind to the NUDT9H domain of the channel (Grubisha et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Grubisha et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "bd756e10-45ae-4d20-a610-f59b0b347545",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C27",
+      "claim": "The mitochondrial enzyme NUDT9 is composed of two subdomains, termed Cap and Core.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on its crystal structure, the mitochondrial enzyme is composed of two subdomains, termed Cap and Core (Figure 1C, blue and brown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by reference to the crystal structure shown in Figure 1C.",
+      "evidence_type": "[\"CITATION\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "3e4b58c0-555c-4b4a-aee1-e2c2e7d6c03c",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C28",
+      "claim": "The Cap subdomain of NUDT9 facilitates binding of the substrate ADPR.",
+      "claim_type": "EXPLICIT",
+      "source": "The Cap subdomain facilitates binding of the substrate ADPR, whereas the Core subdomain binds the substrate and catalyses its cleavage to AMP and R5P (Shen et al., 2003; Perraud et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Shen et al., 2003 and Perraud et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "e457d82e-d0d1-4b29-a379-90f5eabadf6b",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C29",
+      "claim": "The Core subdomain of NUDT9 binds the substrate and catalyses its cleavage to AMP and R5P.",
+      "claim_type": "EXPLICIT",
+      "source": "The Cap subdomain facilitates binding of the substrate ADPR, whereas the Core subdomain binds the substrate and catalyses its cleavage to AMP and R5P (Shen et al., 2003; Perraud et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Shen et al., 2003 and Perraud et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "e2354e3d-59af-405c-8073-847143e55b6f",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C30",
+      "claim": "The Core subdomain harbors the Nudix box, a conserved motif responsible for recognition and hydrolysis of ADPR.",
+      "claim_type": "EXPLICIT",
+      "source": "The Core subdomain harbors the Nudix (nucleoside diphosphate linked moiety X) box - a conserved motif (Bessman et al., 1996) responsible for recognition and hydrolysis of ADPR, present in a variety of phosphohydrolases (Gabelli et al., 2001; Kang et al., 2003; Gabelli et al., 2007; Huang et al., 2008; Messing et al., 2009; Boto et al., 2011) including both NUDT9 and NUDT9H (Perraud et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior literature on Nudix box function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "7169b9a5-ad18-46c7-bfdd-97ae25d18332",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C31",
+      "claim": "The Nudix box is present in both NUDT9 and NUDT9H.",
+      "claim_type": "EXPLICIT",
+      "source": "The Core subdomain harbors the Nudix (nucleoside diphosphate linked moiety X) box - a conserved motif (Bessman et al., 1996) responsible for recognition and hydrolysis of ADPR, present in a variety of phosphohydrolases (Gabelli et al., 2001; Kang et al., 2003; Gabelli et al., 2007; Huang et al., 2008; Messing et al., 2009; Boto et al., 2011) including both NUDT9 and NUDT9H (Perraud et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Perraud et al., 2001 and sequence comparison.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "26b5562b-d75e-4cca-9487-9f7093ceb01b",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C32",
+      "claim": "Previous work reported weak enzymatic activity for isolated NUDT9H.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, previous work reported weak enzymatic activity for isolated NUDT9H (Perraud et al., 2001, 2003), compatible with the slow timescale of channel gating (Csan\u00e1dy and T\u00f6rocsik, 2009), classifying TRPM2 among channel-enzymes ('chanzymes').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Perraud et al., 2001, 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "0270007a-807d-47ad-b440-e5dae5767192",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C33",
+      "claim": "The reported weak enzymatic activity of NUDT9H is compatible with the slow timescale of channel gating.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, previous work reported weak enzymatic activity for isolated NUDT9H (Perraud et al., 2001, 2003), compatible with the slow timescale of channel gating (Csan\u00e1dy and T\u00f6rocsik, 2009), classifying TRPM2 among channel-enzymes ('chanzymes').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Csan\u00e1dy and T\u00f6rocsik, 2009 and comparison of timescales.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "50e08ae9-99e3-47ca-8236-2661cca3996b",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C34",
+      "claim": "Channel-enzymes ('chanzymes') include TRPM6, TRPM7, and CFTR.",
+      "claim_type": "EXPLICIT",
+      "source": "This small group of proteins, in which a single polypeptide chain forms both a transmembrane ion pore and a catalytically active domain, includes two other members of the TRPM subfamily (TRPM6 and TRPM7), and the Cystic Fibrosis Transmembrane Conductance Regulator (CFTR) chloride ion channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about channel-enzymes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "558e3b4d-a8f9-4a96-9845-b4fe9bb3332d",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C35",
+      "claim": "In CFTR, catalytic (ATPase) activity is strictly coupled to channel gating.",
+      "claim_type": "EXPLICIT",
+      "source": "In CFTR catalytic (ATPase) activity is strictly coupled to channel gating, which therefore follows a nonequilibrium cyclic mechanism (Csan\u00e1dy et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Csan\u00e1dy et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "e545554a-f76c-413f-930e-81993c6db292",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C36",
+      "claim": "In TRPM7, catalytic (phosphotransferase) activity is not linked to pore gating.",
+      "claim_type": "EXPLICIT",
+      "source": "In TRPM7 catalytic (phosphotransferase) activity is not linked to pore gating (Matsushita et al., 2005), but instead serves to regulate expression of TRPM7-dependent genes (Krapivinsky et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Matsushita et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "2038b399-2154-4727-821e-a564cccb88f3",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C37",
+      "claim": "The catalytic activity of TRPM7 serves to regulate expression of TRPM7-dependent genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In TRPM7 catalytic (phosphotransferase) activity is not linked to pore gating (Matsushita et al., 2005), but instead serves to regulate expression of TRPM7-dependent genes (Krapivinsky et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Krapivinsky et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "e3306ca0-f0e1-4786-8e72-82b633362b42",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C38",
+      "claim": "Any hydrolytic activity of NUDT9H is not coupled to gating of the TRPM2 channel itself.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of TRPM2 the physiological role of the proposed ADPRase activity has not yet been clarified, but we have previously shown that any hydrolytic activity of NUDT9H is not coupled to gating of the TRPM2 channel itself (T\u00f3th et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to T\u00f3th et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "70634545-0fe5-46d5-a076-4a169ca111db",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C39",
+      "claim": "Several pyridine dinucleotides exhibit intrinsic instability at basic pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our observation of intrinsic instability of several pyridine dinucleotides at basic pH (T\u00f3th et al., 2015) raised the possibility of a similar instability for ADPR, which might lead to false positive results when assessing the hydrolytic activity of a putative slow ADPRase enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to T\u00f3th et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "1cd8edf1-d4cb-48ef-86a0-596f226ee018",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C40",
+      "claim": "ADPR might exhibit similar instability at basic pH, which could lead to false positive results in ADPRase assays.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our observation of intrinsic instability of several pyridine dinucleotides at basic pH (T\u00f3th et al., 2015) raised the possibility of a similar instability for ADPR, which might lead to false positive results when assessing the hydrolytic activity of a putative slow ADPRase enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on observations of related compounds, supported by citation to T\u00f3th et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "1c89ced2-a39b-438c-b324-9e945604066f",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C41",
+      "claim": "NUDT9H proved to be extremely insoluble despite its high degree of sequence similarity to highly soluble NUDT9.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in our hands NUDT9H proved to be extremely insoluble (T\u00f3th et al., 2014), despite its high degree of sequence similarity to highly soluble NUDT9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observations and citation to T\u00f3th et al., 2014.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "dd11ade4-578e-4205-8992-1e74b8291a56",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C42",
+      "claim": "C-terminal residues of NUDT9H are responsible for its insolubility.",
+      "claim_type": "EXPLICIT",
+      "source": "C-terminal residues of NUDT9H are responsible for its insolubility",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing that replacing C-terminal segments with NUDT9 sequence confers solubility.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "c50c867e-0535-46a5-b2b9-7d97ce4d1a1c",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C43",
+      "claim": "The NUDT9-Cap/NUDT9H-Core chimeras Chi1 and Chi1A were insoluble.",
+      "claim_type": "EXPLICIT",
+      "source": "The NUDT9-Cap/NUDT9H-Core chimeras Chi1 and Chi1A were insoluble, whereas the NUDT9H-Cap/NUDT9-Core chimeras Chi2 and Chi2A were soluble, and Chi2 could be purified by Ni-affinity chromatography (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data on protein purification shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "f6300e46-32e1-4c54-a2c7-6cf2d5c0a295",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C44",
+      "claim": "The NUDT9H-Cap/NUDT9-Core chimeras Chi2 and Chi2A were soluble.",
+      "claim_type": "EXPLICIT",
+      "source": "The NUDT9-Cap/NUDT9H-Core chimeras Chi1 and Chi1A were insoluble, whereas the NUDT9H-Cap/NUDT9-Core chimeras Chi2 and Chi2A were soluble, and Chi2 could be purified by Ni-affinity chromatography (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data on protein purification shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "c5238b65-6c33-4126-bd0e-5a56102f48aa",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C45",
+      "claim": "Chi2 could be purified by Ni-affinity chromatography.",
+      "claim_type": "EXPLICIT",
+      "source": "The NUDT9-Cap/NUDT9H-Core chimeras Chi1 and Chi1A were insoluble, whereas the NUDT9H-Cap/NUDT9-Core chimeras Chi2 and Chi2A were soluble, and Chi2 could be purified by Ni-affinity chromatography (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "4032ad9a-5d79-46bb-8f07-599a0acd834b",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C46",
+      "claim": "The low solubility of NUDT9H is caused at least in part by its Core subdomain.",
+      "claim_type": "EXPLICIT",
+      "source": "The low solubility of NUDT9H is thus caused at least in part by its Core subdomain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that chimeras with NUDT9H Core are insoluble while those with NUDT9 Core are soluble.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "32afa382-2e89-4171-898b-761deacee1d3",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C47",
+      "claim": "Chi3 contains ~77% of NUDT9H sequence, including its Nudix box.",
+      "claim_type": "EXPLICIT",
+      "source": "A small fraction of this Chi3 chimera, which contains ~77% of NUDT9H sequence (Table 1), including its Nudix box, remained soluble and could be purified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequence analysis data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "121b08ae-e75b-4966-96b9-0cf730556fe4",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C48",
+      "claim": "Chi4 is formed by ~91% of NUDT9H sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "This new construct (Chi4) is formed by ~91% of NUDT9H sequence (Figure 2, Figure 3A and B), but a small amount of it still remained in the soluble fraction which allowed us to purify it.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence analysis data shown in Figure 2, Figure 3A and B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "335c8f31-38ea-4fe5-aa0f-3c2d3a91f3f1",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C49",
+      "claim": "The low yields of soluble Chi3 and Chi4 could be robustly increased using a slower induction protocol (0.1 mM IPTG, 25\u00b0C, overnight).",
+      "claim_type": "EXPLICIT",
+      "source": "The low yields of soluble Chi3 and Chi4 could be robustly increased using a slower induction protocol (0.1 mM IPTG, 25\u00b0C, overnight); and replacement of the hexahistidine tag with a Twin-Strep tag (Chi3S and Chi4S) greatly improved protein purity, as confirmed by SDS-PAGE (Figure 3\u2014figure supplement 1) and mass spectrometry analysis of the purified Chi4S sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data on protein expression and purification.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "f6fa20d0-bdd3-4864-bfb0-bff7619f62e8",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C50",
+      "claim": "Replacement of the hexahistidine tag with a Twin-Strep tag (Chi3S and Chi4S) greatly improved protein purity.",
+      "claim_type": "EXPLICIT",
+      "source": "The low yields of soluble Chi3 and Chi4 could be robustly increased using a slower induction protocol (0.1 mM IPTG, 25\u00b0C, overnight); and replacement of the hexahistidine tag with a Twin-Strep tag (Chi3S and Chi4S) greatly improved protein purity, as confirmed by SDS-PAGE (Figure 3\u2014figure supplement 1) and mass spectrometry analysis of the purified Chi4S sample.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SDS-PAGE data in Figure 3\u2014figure supplement 1 and mass spectrometry analysis.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "c8c6d694-57a7-4fae-952d-3d2a85459420",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C51",
+      "claim": "Some soluble NUDT9H protein could be obtained and purified using the slow induction protocol, but this preparation precipitated overnight at 4\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, using this slow induction protocol even some soluble NUDT9H protein could be obtained and purified (Figure 3\u2014figure supplement 1, right); however, this preparation precipitated overnight at 4\u00b0C.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental observations on NUDT9H purification shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "71a80f12-959a-4ffd-9801-d5ae004c6b4d",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C52",
+      "claim": "Chi4S is the best NUDT9H model that could be obtained in stable, soluble form.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Chi4S remained the best NUDT9H model that we were able to obtain in stable, soluble form (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on comparison of all chimeric constructs tested.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "104eab0f-cdf9-48b6-be58-e7c2419ae957",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C53",
+      "claim": "NUDT9 and Chi2 are active ADPR hydrolases with turnover rates sufficient to cause complete or near-complete conversion of ADPR into AMP and R5P within 2 hours.",
+      "claim_type": "EXPLICIT",
+      "source": "Following a 2-hr incubation of 1 \u03bcM of each protein with 10 mM ADPR substrate and 16 mM Mg2+ (Perraud et al., 2003), TLC analysis of the reaction mixtures confirmed that NUDT9 and Chi2 (which contain the NUDT9-type Nudix box) are both active ADPRases, with turnover rates sufficient to cause complete \u2013 or near-complete \u2013 conversion of ADPR into AMP and R5P within this time frame (Figure 4A and B; R5P is invisible on the TLC).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TLC data shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "da608706-34b0-41c5-bdce-58f315353a76",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C54",
+      "claim": "Chi3S, 4S and NUDT9H (which contain the NUDT9H-type Nudix box) all failed to hydrolyze ADPR under the same conditions as NUDT9 and Chi2.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Chi3S, 4S and NUDT9H (which contain the NUDT9H-type Nudix box, Figure 3A) all failed to hydrolyze the nucleotide under the same conditions (Figure 4C\u2013E): this same overall pattern was observed for all six reaction conditions tested, which included three different pH values (6.5, 7.1 and 8.5) in the absence or presence of 100 mM NaCl (Figure 4A\u2013E, reaction buffers 1\u20136).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TLC data shown in Figure 4C\u2013E.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "f91b5416-659d-4266-a128-333d18267019",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C55",
+      "claim": "ADPR undergoes slow degradation to AMP and R5P at pH 8.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that ADPR undergoes slow degradation to AMP and R5P at pH 8.5 (Figure 4F, middle slice; also see Figure 4\u2014figure supplement 2), highlighting that care must be taken to distinguish spontaneous hydrolysis from true enzymatic activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TLC data shown in Figure 4F and Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "5dc21d20-a6b9-45d9-a2ef-5c4a9474fda7",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C56",
+      "claim": "At 25\u00b0C and pH 8.5, ~20% of ADPR degraded spontaneously in 24 hr, indicating a decay time constant of ~100 h.",
+      "claim_type": "EXPLICIT",
+      "source": "At 25\u00b0C and pH 8.5 ~20% of ADPR degraded spontaneously in 24 hr (Figure 4F, middle slice, compare the two lanes marked by asterisks), indicating a decay time constant of ~100 h, and thus ~2% degradation in 2 hr: this rate of spontaneous degradation indeed fully accounts for the weak AMP spots observed for Chi3S, 4S, and NUDT9H at basic pH.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TLC data shown in Figure 4F and calculation from the observed degradation rate.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "2615b997-4032-421e-8a20-b83abe042305",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C57",
+      "claim": "Addition of either 0.1 or 1 \u03bcM Chi4S to ADPR-containing reaction mixtures at basic pH did not affect the rate of spontaneous AMP accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, addition of either 0.1 or 1 \u03bcM Chi4S to ADPR-containing reaction mixtures at basic pH, either with (RB6) or without (RB3) 100 mM NaCl, did not affect the rate of spontaneous AMP accumulation (Figure 4F, bottom slice).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TLC data shown in Figure 4F, bottom slice.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "00b2aa93-d5fa-4f44-ac44-82b4089b36f7",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C58",
+      "claim": "Chi4S does not possess any hydrolytic activity towards ADPR.",
+      "claim_type": "EXPLICIT",
+      "source": "This clearly demonstrates that Chi4S does not possess any hydrolytic activity towards ADPR, most likely due to critical substitutions in its Nudix box (Figure 2; cf., [Perraud et al., 2003]), and that the observed slow accumulation of AMP is merely caused by ADPR instability at basic pH.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the data showing no increase in AMP accumulation with Chi4S addition, and by comparison of Nudix box sequences in Figure 2.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "b794dc5a-a103-4296-aed2-a4ba36ca7dc0",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C59",
+      "claim": "The observed slow accumulation of AMP in the presence of Chi4S is merely caused by ADPR instability at basic pH.",
+      "claim_type": "EXPLICIT",
+      "source": "This clearly demonstrates that Chi4S does not possess any hydrolytic activity towards ADPR, most likely due to critical substitutions in its Nudix box (Figure 2; cf., [Perraud et al., 2003]), and that the observed slow accumulation of AMP is merely caused by ADPR instability at basic pH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the data showing that Chi4S does not increase the rate of AMP accumulation beyond spontaneous degradation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "f2285da8-b5cc-4881-825a-00d1b1474ecd",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C60",
+      "claim": "Chi2 showed slower enzymatic activity at pH 6.5 and 7.1 compared to 8.5.",
+      "claim_type": "EXPLICIT",
+      "source": "We noted slower enzymatic activity for Chi2 at pH 6.5 and 7.1 compared to 8.5 (Figure 4B), whereas ADPR hydrolysis by NUDT9 appeared complete at all pH values (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by TLC data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "6983f002-3f70-4213-ab83-a327adf50f33",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C61",
+      "claim": "Both NUDT9 and Chi2 showed a clear preference for basic pH, causing AMP accumulation to be fastest at pH 8.5 and slowest at pH 6.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Both NUDT9 and Chi2 showed a clear preference for basic pH, causing AMP accumulation to be fastest at pH 8.5 and slowest at pH 6.5 (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by time course data shown in Figure 5A and B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "7d9275f5-a1d3-4528-b98a-8de103b3a800",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C62",
+      "claim": "Chi2 shows higher pH sensitivity (~5.8-fold decrease from pH 8.5 to 6.5) compared to NUDT9 (~1.4-fold decrease from pH 8.5 to 6.5).",
+      "claim_type": "EXPLICIT",
+      "source": "The calculated kcat values (in s\u22121) quantify this pH dependence of catalytic rates for both proteins (Figure 5C), and reveal higher sensitivity for Chi2 (~5.8-fold decrease from pH 8.5 to 6.5) compared to NUDT9 (~1.4-fold decrease from pH 8.5 to 6.5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calculated kcat values shown in Figure 5C.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "50971d6f-71d9-43f2-81f7-e768a52c3b06",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C63",
+      "claim": "The kcat of 9 s\u22121 for NUDT9 at pH 8.5 is very similar to previously reported values (~8 s\u22121).",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the kcat of 9 s\u22121 for NUDT9 at pH 8.5 is very similar to previously reported values (~8 s\u22121, [Perraud et al., 2001, 2003]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with values from Perraud et al., 2001, 2003.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "56f40e42-d23a-42e6-b980-753ca6da5044",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C64",
+      "claim": "Co-applying 5 or 50 nM NUDT9 with 1 mM ADPR and alkaline phosphatase resulted in Pi release that roughly scaled with the applied amount of protein.",
+      "claim_type": "EXPLICIT",
+      "source": "When NUDT9 (5 or 50 nM) was co-applied with 1 mM ADPR and AP, the released Pi roughly scaled with the applied amount of protein, signalling specific ADPR hydrolysis by NUDT9 (Figure 6A\u2013B, groups 8\u20139).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Pi assay data shown in Figure 6A\u2013B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "209273af-2b33-4a5e-93c1-77e6cef85beb",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C65",
+      "claim": "NUDT9 activity is enhanced at basic pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of released [Pi] for assays performed at pH values between 6.5 and 9.0 confirmed modest but significant enhancement of NUDT9 activity at basic pH (Figure 6A\u2013B, compare four colored bars within groups 8\u20139).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Pi assay data shown in Figure 6A\u2013B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "6ef35798-96b5-4c27-ab36-3e2f3273f2dd",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C66",
+      "claim": "Molecular turnover rates (kcat) for NUDT9 calculated from the 5-nM NUDT9 data were in the range of ~4\u201311 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular turnover rates (kcat), calculated from the 5-nM NUDT9 data, were in the range of ~4\u201311 s\u22121 (Figure 6D), in good agreement with the estimates from the TLC assay (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by calculated kcat values shown in Figure 6D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "acb1274a-f145-4422-962a-9f8e2e5a0d02",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C67",
+      "claim": "Co-applying 5 or 50 nM of either Chi4S or NUDT9H with 1 mM ADPR and alkaline phosphatase did not result in any significant Pi release.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, co-applying 5 or 50 nM of either Chi4S or NUDT9H with 1 mM ADPR and AP did not result in any significant Pi release (Figure 6A\u2013B, groups 10\u201313; expanded in Figure 6C): the small concentrations of Pi released in these assays (corresponding to the hydrolysis of ~1% of the applied 1 mM ADPR) clearly reflect spontaneous ADPR hydrolysis (cf., Figure 6\u2014figure supplement 1), because they remained insensitive to a ten fold variation in Chi4S or NUDT9H concentration (Figure 6C, compare groups 4\u20135 and 6\u20137), and were not larger than the [Pi] released in the absence of any ADPRase (Figure 6C, group 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by Pi assay data shown in Figure 6A\u2013C and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "8f0ba000-b02c-4017-8065-fd52556c2a86",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C68",
+      "claim": "Lack of catalytic activity for Chi4S and NUDT9H was not due to microaggregation of these domains in solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, lack of catalytic activity for Chi4S and NUDT9H was not due to microaggregation of these domains in a quasi-stable solution: size exclusion chromatograms for both proteins showed a main monomeric peak and a smaller peak corresponding to a dimer, just as for highly soluble NUDT9 (Figure 6\u2014figure supplement 2, compare red and blue to black profile), while higher-stoichiometry aggregates constituted only a minor fraction in each case.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by size exclusion chromatography data shown in Figure 6\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "9090d270-7229-4c27-a3ae-d9e440df50b7",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C69",
+      "claim": "All three chimeric channels (TRPM2-Chi2, TRPM2-Chi3 and TRPM2-Chi4) were activated by cytosolic superfusion with ADPR and Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "For all three constructs cytosolic superfusion with ADPR and Ca2+ triggered macroscopic currents (Figure 7B\u2013D) resembling those of unmodified T5L-TRPM2 (Figure 7A), indicating successful ligand binding to the chimeric domains: in 1 \u03bcM ADPR, the previously established half-saturating concentration for TRPM2 (T\u00f3th and Csan\u00e1dy, 2012), similar fractional currents were activated for TRPM2, TRPM2-Chi3, and TRPM2-Chi4 (Figure 7A,C\u2013E), indicating similar apparent affinities for ADPR.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiological recordings shown in Figure 7B\u2013D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "71d4f84a-2cbd-4df5-84c7-4c6d4f2d00d1",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C70",
+      "claim": "Fractional activation of TRPM2-Chi2 by 1 \u03bcM ADPR was reduced, reflecting a modest, ~3.5-fold increase in the K1/2 for ADPR-induced current activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Fractional activation of TRPM2-Chi2 by 1 \u03bcM ADPR was reduced (Figure 7B,E), reflecting a modest, ~3.5-fold increase in the K1/2 for ADPR-induced current activation in TRPM2-Chi2 (Figure 7H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dose-response data shown in Figure 7H.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "55a2a743-b077-4cea-87e1-3571ff1ff9e8",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C71",
+      "claim": "The time constants of current decay upon ADPR removal were two\u2013three-fold shorter for the chimeric constructs compared to TRPM2.",
+      "claim_type": "EXPLICIT",
+      "source": "The time constants of current decay upon ADPR removal were two\u2013three-fold shorter for the chimeric constructs compared to TRPM2 (Figure 7F), whereas the relaxation time constants upon Ca2+ removal were nearly identical (Figure 7G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by kinetic analysis shown in Figure 7F.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "703c6597-8ea0-4a8d-b146-6633c5730cda",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C72",
+      "claim": "The relaxation time constants upon Ca2+ removal were nearly identical for TRPM2 and chimeric constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "The time constants of current decay upon ADPR removal were two\u2013three-fold shorter for the chimeric constructs compared to TRPM2 (Figure 7F), whereas the relaxation time constants upon Ca2+ removal were nearly identical (Figure 7G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by kinetic analysis shown in Figure 7G.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "95e9d8a0-6726-41bb-8545-9593c727c7aa",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C73",
+      "claim": "All chimeric channel constructs were gated by ADPR similarly to TRPM2, indicating that their chimeric ligand-binding domains are functional in the context of the full-length channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, apart from moderate kinetic differences, all chimeric channel constructs were gated by ADPR similarly to TRPM2, indicating that their chimeric ligand-binding domains are functional in the context of the full-length channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the electrophysiological data showing ADPR-dependent activation of all chimeric channels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "3e28a469-5ba3-478b-a010-7b296ba2656b",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C74",
+      "claim": "The fluorescent ADPR analog \u03b5-ADPR binds to the intact NUDT9H domain of full-length TRPM2.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the fluorescent ADPR analog 1, N6-ethenoadenosine-5'-O-diphosphoribose (\u03b5-ADPR) binds to the intact NUDT9H domain of full-length TRPM2, because it suppressed ADPR-evoked TRPM2 currents in a dose-dependent manner: this effect was more pronounced at low, submaximal [ADPR] (Figure 8A), suggesting a competitive inhibitory mechanism.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by electrophysiological data showing dose-dependent suppression of ADPR-evoked currents by \u03b5-ADPR in Figure 8A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "1a454a32-df21-4c9b-8112-4befeb7b7298",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C75",
+      "claim": "\u03b5-ADPR suppresses ADPR-evoked TRPM2 currents through a competitive inhibitory mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the fluorescent ADPR analog 1, N6-ethenoadenosine-5'-O-diphosphoribose (\u03b5-ADPR) binds to the intact NUDT9H domain of full-length TRPM2, because it suppressed ADPR-evoked TRPM2 currents in a dose-dependent manner: this effect was more pronounced at low, submaximal [ADPR] (Figure 8A), suggesting a competitive inhibitory mechanism.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the observation that \u03b5-ADPR effect is more pronounced at low ADPR concentrations, shown in Figure 8A.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "a182d7e0-995e-4df2-bd80-243dbbb7e3d3",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C76",
+      "claim": "The KI of \u03b5-ADPR binding to native NUDT9H is 112 \u00b1 24 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the dose response curve for ADPR-activation (Figure 8B, blue symbols and fit line) was right-shifted in the presence of 100 \u03bcM \u03b5-ADPR (Figure 8B, violet symbols), the fit (Figure 8B, violet fit line) suggesting a KI of 112 \u00b1 24 \u03bcM for \u03b5-ADPR binding to native NUDT9H.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by dose-response curve fitting shown in Figure 8B.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "1b1d7e36-1f6d-4968-91a8-00dddb5825f3",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C77",
+      "claim": "Applying 100 \u03bcM Chi4S caused a clear reduction in \u03b5-ADPR fluorescence, which reflected fluorescence quenching due to specific binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Applying 100 \u03bcM Chi4S caused a clear reduction in \u03b5-ADPR fluorescence (Figure 8C, red symbols), which reflected fluorescence quenching due to specific binding, because it was not observed upon addition of 100 \u03bcM bovine serum albumin (BSA, gray symbols).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence data shown in Figure 8C comparing Chi4S to BSA control.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "980aa4be-6247-4135-bd28-c55f70c1956a",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C78",
+      "claim": "The Kd (upper estimate) of \u03b5-ADPR binding to Chi4S is 111 \u00b1 42 \u03bcM.",
+      "claim_type": "EXPLICIT",
+      "source": "A plot of free [\u03b5-ADPR] as a function of total [\u03b5-ADPR] (Figure 8D, red symbols) was reasonably fitted (Figure 8D, red line) by a simple binding equation, (see Materials and methods) yielding a Kd (upper) estimate of 111 \u00b1 42 \u03bcM for \u03b5-ADPR binding to Chi4S: in good agreement with the KI of the same analog for native NUDT9H (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by binding curve fitting shown in Figure 8D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "2b496a83-1cde-42fa-847f-f2a27583a4ed",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C79",
+      "claim": "The Kd of \u03b5-ADPR binding to Chi4S is in good agreement with the KI of the same analog for native NUDT9H.",
+      "claim_type": "EXPLICIT",
+      "source": "A plot of free [\u03b5-ADPR] as a function of total [\u03b5-ADPR] (Figure 8D, red symbols) was reasonably fitted (Figure 8D, red line) by a simple binding equation, (see Materials and methods) yielding a Kd (upper) estimate of 111 \u00b1 42 \u03bcM for \u03b5-ADPR binding to Chi4S: in good agreement with the KI of the same analog for native NUDT9H (Figure 8B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of values from Figure 8B and 8D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "a0e4d046-546d-42be-b81c-44cd56826c1c",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C80",
+      "claim": "Chi4S showed no signs of aggregation even at 100 \u03bcM concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, Chi4S showed no signs of aggregation even at the high protein concentration used in the assay (Figure 8\u2014figure supplement 1) excluding non-specific effects of aggregated protein on fluorescence.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by size exclusion chromatography data shown in Figure 8\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "716c25a6-76f1-4bb3-8b73-016a33cf3849",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C81",
+      "claim": "In CFTR, ATP-binding induced dimerization of the two NBDs is strictly coupled to opening, and dimer disruption following ATP hydrolysis to closure, of its transmembrane anion-selective pore.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of CFTR ATP hydrolysis by two cytosolic nucleotide binding domains (NBDs) (Li et al., 1996) appears to be an evolutionary vestige inherited from some ancestral ABC exporter (Gadsby et al., 2006): whereas in transporters the energy of ATP hydrolysis is harnessed to drive a cycle of conformational changes that result in thermodynamically uphill substrate transport, in CFTR ATP-binding induced dimerization of the two NBDs is strictly coupled to opening, and dimer disruption following ATP hydrolysis to closure, of its transmembrane anion-selective pore (Csan\u00e1dy et al., 2010; Vergani et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Csan\u00e1dy et al., 2010 and Vergani et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "910c1b89-82ea-495b-b5fc-0688c693c4d5",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C82",
+      "claim": "The nonequilibrium cyclic gating mechanism of CFTR is unique among ion channels which mediate downhill electrodiffusion of ions.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a nonequilibrium cyclic gating mechanism is unique among ion channels which mediate downhill electrodiffusion of ions, and confers specific properties on CFTR, including stimulation of channel open probability by catalytic-site mutations (Vergani et al., 2003), or by drug-induced stabilization of energy barriers (Csan\u00e1dy and T\u00f6r\u00f6csik, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Vergani et al., 2003 and Csan\u00e1dy and T\u00f6r\u00f6csik, 2014.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "c2083b03-caf5-41c3-aa98-ab3fa9358169",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C83",
+      "claim": "The TRPM7 kinase domain is proteolytically cleaved and translocates to the cell nucleus where it regulates gene expression by phosphorylating histones in the promoters of TRPM7-dependent genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, recent work uncovered unexpected important specific functions of TRPM7 enzymatic activity: the kinase domain is proteolytically cleaved and translocates to the cell nucleus where it regulates gene expression by phosphorylating histones in the promoters of TRPM7-dependent genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the context indicating recent work, likely referring to Krapivinsky et al., 2014 cited earlier.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "5a6b9717-cc90-4362-b539-ea6f560dc441",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C84",
+      "claim": "Zn2+ dependent binding of the TRPM7 kinase domain to histone remodeling complexes provides a functional link to the TRPM7 channel pore, a major Zn2+ influx pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, Zn2+ dependent binding of the kinase domain to histone remodeling complexes provides a functional link to the TRPM7 channel pore, a major Zn2+ influx pathway (Krapivinsky et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Krapivinsky et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "6221012b-5033-4704-83be-64ca4041bde0",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C85",
+      "claim": "Sequence similarity of TRPM2's C-terminal NUDT9H domain to Nudix-family phosphohydrolases played an essential role in the discovery of the channel's activating ligand, ADP ribose.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of TRPM2 sequence similarity of its C-terminal NUDT9H domain to Nudix-family phosphohydrolases (Bessman et al., 1996) played an essential role in the discovery of the channel's activating ligand, ADP ribose (Perraud et al., 2001; Hara et al., 2002; Sano et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bessman et al., 1996; Perraud et al., 2001; Hara et al., 2002; Sano et al., 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "ef3532f4-fa2a-4dc1-bd5d-b783acc53121",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C86",
+      "claim": "The reported slow turnover rate of NUDT9H (~0.1 s-1) falls into the range of channel gating rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Early demonstration of ADPR hydrolase activity for the isolated ligand binding domain NUDT9H classified TRPM2 as a chanzyme (Perraud et al., 2001, 2003), and raised intriguing questions about the possible role of this activity: all the more as the reported slow turnover rate (~0.1 s-1) falls into the range of channel gating rates (T\u00f3th and Csan\u00e1dy, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Perraud et al., 2001, 2003 and T\u00f3th and Csan\u00e1dy, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "afa382cf-402a-4424-8e98-d41f63129347",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C87",
+      "claim": "Catalytic site mutations that abolish or greatly diminish ADPRase activity of NUDT9 failed to affect the rates of pore gating in TRPM2.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when introduced into NUDT9H, catalytic site mutations that abolish, or greatly diminish, ADPRase activity of NUDT9 failed to affect the rates of pore gating, and TRPM2 channels were also readily gated by a non-hydrolyzable ADPR analog (T\u00f3th et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to T\u00f3th et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "e0d79aee-408a-453d-88b2-467c4ef2c83e",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C88",
+      "claim": "TRPM2 channels were readily gated by a non-hydrolyzable ADPR analog.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when introduced into NUDT9H, catalytic site mutations that abolish, or greatly diminish, ADPRase activity of NUDT9 failed to affect the rates of pore gating, and TRPM2 channels were also readily gated by a non-hydrolyzable ADPR analog (T\u00f3th et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to T\u00f3th et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "05918ad0-d7f3-444c-9cc3-848f7c48311d",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C89",
+      "claim": "These findings ruled out a direct link between the ADPRase cycle and gating of the TRPM2 channel pore itself.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings ruled out a direct link between the ADPRase cycle and gating of the TRPM2 channel pore itself, but did not eliminate the possibility of some, as yet unidentified, role for this catalytic function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the findings that catalytic mutations and non-hydrolyzable analogs don't affect gating.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "2020006c-37c8-453f-aa7c-e4c3688046ad",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C90",
+      "claim": "The C-terminus of NUDT9 is surface exposed and free to interact with other protein molecule(s).",
+      "claim_type": "EXPLICIT",
+      "source": "The C-terminus of NUDT9 is surface exposed ([Shen et al., 2003]; PDB ID: 1Q33; 1QVJ), free to interact with other protein molecule(s), and presumably the same is true for the C-termini of the chimeras and NUDT9H.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Shen et al., 2003 and reference to PDB structures.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "1a8a105f-0ab2-4263-b49f-01148a0aa956",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C91",
+      "claim": "The cumulative charge of the C-terminus may play an important role in determining aggregation propensity during expression in the bacterial cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, among other reasons, the cumulative charge of the C-terminus may play an important role in determining their aggregation propensity during expression in the bacterial cytoplasm (at around neutral pH).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observation that charge differences correlate with solubility differences.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "133b64ec-e1ed-443b-8c1b-1030085342fe",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C92",
+      "claim": "The theoretical total charges of the ~60\u201370 C-terminal residues are \u22128.1 for NUDT9, Chi2 and Chi3, +0.9 for NUDT9H, and \u22122.9 for Chi4 at pH 7.0.",
+      "claim_type": "EXPLICIT",
+      "source": "The theoretical total charges of the ~60\u201370 C-terminal residues of our constructs (ignoring affinity tags) are \u22128.1 (NUDT9, Chi2 and Chi3), +0.9 (NUDT9H), \u22122.9 (Chi4) at pH 7.0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the amino acid sequences of the constructs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "1accb648-fcbf-4423-8121-5768bf2c71b0",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C93",
+      "claim": "The relative charge-neutrality of the C-terminus of NUDT9H may contribute to its insolubility.",
+      "claim_type": "EXPLICIT",
+      "source": "It is thus possible that the relative charge-neutrality of the C-terminus of NUDT9H contributes to its insolubility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the correlation between charge and solubility.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "f26a50f9-8819-4271-8d99-7d1bb6fcc909",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C94",
+      "claim": "NUDT9H natively exists in the context of tetrameric TRPM2 and must share an interface with other channel regions which transduces ligand binding into pore opening.",
+      "claim_type": "EXPLICIT",
+      "source": "A likely explanation is that NUDT9H natively exists in the context of tetrameric TRPM2, and must share an interface with other channel regions which transduces ligand binding into pore opening.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the native context of NUDT9H to explain its insolubility when isolated.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "2c2a7512-d9f7-4292-8b4e-d5afee960251",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C95",
+      "claim": "The C-terminal ~20% of NUDT9H sequence might be directly involved in interactions with other TRPM2 regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Whether NUDT9H interacts with the large N-terminal domain of the channel, with the cytosolic loops connecting the transmembrane helices, and/or with other NUDT9H domains remains to be elucidated, but it is tempting to speculate that the C-terminal ~20% of NUDT9H sequence might be directly involved in such interactions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the observation that this region affects solubility and channel kinetics.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "49012cf8-74a5-4e57-af4c-282246b88c40",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C96",
+      "claim": "Incremental replacement of NUDT9H segments with corresponding NUDT9 sequences causes a parallel graded decrease in the stability of the open-channel state.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with such an interpretation, incremental replacement of NUDT9H segments with corresponding NUDT9 sequences (TRPM2(-NUDT9H) \u2192 TRPM2-Chi4 \u2192 TRPM2-Chi3 \u2192 TRPM2-Chi2) causes a parallel graded decrease in the stability of the open-channel state, as reflected by a speeding of channel closure upon ADPR removal (Figure 7F; gray \u2192 red \u2192 dark blue \u2192 light blue bars).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by kinetic data shown in Figure 7F.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "85583995-35bf-4a8a-8320-bf9b6cc6e311",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C97",
+      "claim": "Constructs possessing the Nudix box of NUDT9 (NUDT9 and Chi2) were active ADPR hydrolases, whereas those containing the Nudix box of NUDT9H (Chi3S, Chi4S and NUDT9H) were inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "NUDT9, the soluble chimeric constructs generated by sequence swapping, and even some NUDT9H could be purified and tested for enzymatic activity. These experiments revealed a distinct pattern directly correlated with the origin of the Nudix box in each protein: constructs possessing the Nudix box of NUDT9 (NUDT9 and Chi2) were active ADPR hydrolases, whereas those containing the Nudix box of NUDT9H (Chi3S, Chi4S and NUDT9H) were inactive (Figures 4 and 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by enzymatic activity data shown in Figures 4 and 6.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "979cb884-cd80-47d0-a05f-a2d1a7a52bad",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C98",
+      "claim": "Chi4S is ~90% identical to NUDT9H (including the Nudix box region) and clearly capable of ligand binding, but did not exhibit any sign of enzymatic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, our soluble chimeric model most similar to the native NUDT9H sequence, Chi4S, is ~90% identical to NUDT9H (including the Nudix box region) and clearly capable of ligand binding (Figures 7D,8C\u2013D), but did not exhibit any sign of enzymatic activity under the various reaction conditions tested.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by enzymatic activity assays and ligand binding data shown in Figures 7D and 8C\u2013D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "276a9a85-95cf-4fa4-9576-946f4bc2bc11",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C99",
+      "claim": "Spontaneous degradation of ADPR at basic pH (~0.3% and ~2% within 20 min and 2 hr, respectively, at 25\u00b0C and pH 8.5) did not significantly distort the results of enzyme kinetics measurements for the active constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "Spontaneous degradation of ADPR at basic pH (~0.3% and ~2% within 20 min and 2 hr, respectively, at 25\u00b0C and pH 8.5; ~1% within 30 min at 37\u00b0C and pH 9 [Figure 6\u2014figure supplement 1]) did not significantly distort the results of the 20- to 30-min enzyme kinetics measurements for the active constructs (Figures 5C and 6D), but fully accounted for the weak AMP signals for our inactive constructs observed after 2-hr incubations using TLC (Figure 4C\u2013E, lanes 3 and 6), or already after 30-min incubations using the more sensitive Pi detection assay (Figure 6A\u2013C): this phenomenon fully explains the reported weak activity of NUDT9H at 37\u00b0C and pH 9 (Perraud et al., 2001, 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data on spontaneous ADPR degradation shown in Figure 6\u2014figure supplement 1 and comparison with enzyme activity data.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "98e31eda-70fb-45f1-b549-b51e9c3de49a",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C100",
+      "claim": "Spontaneous ADPR degradation fully explains the reported weak activity of NUDT9H at 37\u00b0C and pH 9.",
+      "claim_type": "EXPLICIT",
+      "source": "Spontaneous degradation of ADPR at basic pH (~0.3% and ~2% within 20 min and 2 hr, respectively, at 25\u00b0C and pH 8.5; ~1% within 30 min at 37\u00b0C and pH 9 [Figure 6\u2014figure supplement 1]) did not significantly distort the results of the 20- to 30-min enzyme kinetics measurements for the active constructs (Figures 5C and 6D), but fully accounted for the weak AMP signals for our inactive constructs observed after 2-hr incubations using TLC (Figure 4C\u2013E, lanes 3 and 6), or already after 30-min incubations using the more sensitive Pi detection assay (Figure 6A\u2013C): this phenomenon fully explains the reported weak activity of NUDT9H at 37\u00b0C and pH 9 (Perraud et al., 2001, 2003).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion based on comparison of spontaneous degradation rates with previously reported NUDT9H activity.",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "4deea42e-3c54-4454-ba59-8b6dff1d8160",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C101",
+      "claim": "Spontaneous degradation affects enzymatic ADPR hydrolysis assays only at basic, but not at neutral or slightly acidic pH at which ADPR is inherently stable.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, spontaneous degradation affects enzymatic ADPR hydrolysis assays only at basic, but not at neutral or slightly acidic pH at which ADPR is inherently stable (Figure 4C\u2013E, lanes 1, 2, 4, 5; Figure 4\u2014figure supplement 2, and Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by data showing no spontaneous degradation at neutral/acidic pH in Figure 4C\u2013E, Figure 4\u2014figure supplement 2, and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "244f3a2b-82fa-4299-bf63-02251900866b",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "claim_id": "C102",
+      "claim": "Both NUDT9 and Chi2 exhibited a modest but clear pH-dependence, with a preference towards basic pH.",
+      "claim_type": "EXPLICIT",
+      "source": "The catalytic properties of our two enzymatically active recombinant proteins (NUDT9 and Chi2) were largely similar. NUDT9 appeared slightly faster than Chi2, which may be attributed either to slight structural mismatch between 'foreign' Cap and Core segments in Chi2, or to errors in estimating their concentrations. Both enzymes exhibited a modest but clear pH-dependence, with a preference towards basic pH (Figure 5C, and Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by pH-dependence data shown in Figure 5C and Figure 6D.",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "b356e9ff-9390-42f0-99e4-6655f1d940d3",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The C-terminal residues of NUDT9H are responsible for its insolubility. Chimeric constructs progressively replacing C-terminal NUDT9H sequence with NUDT9 sequence showed graded increases in solubility, with Chi4S (~91% NUDT9H) being the best stable, soluble model obtained.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C52 provide systematic experimental evidence showing that replacing C-terminal NUDT9H segments with NUDT9 sequence confers solubility. The data include purification results (C43-C45), sequence composition analysis (C47-C48), and optimization of expression conditions (C49-C51), all supporting the conclusion that C-terminal residues determine solubility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "0d4bfff5-d4e6-4fd3-95f0-9ba0ebe69335",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Constructs containing the NUDT9-type Nudix box (NUDT9 and Chi2) exhibit robust ADPR hydrolase activity with kcat ~4-9 s\u207b\u00b9, while constructs containing the NUDT9H-type Nudix box (Chi3S, Chi4S, and NUDT9H) show no enzymatic activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C54, C6-C7, and C97 are supported by TLC assay data (Figure 4) showing complete ADPR hydrolysis by NUDT9 and Chi2 within 2 hours, while Chi3S, Chi4S, and NUDT9H failed to hydrolyze ADPR under identical conditions. The pattern directly correlates with Nudix box origin.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "4cdcd93a-f8fd-4463-8373-67500c3e8cd5",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "ADPR undergoes spontaneous degradation at basic pH (~20% in 24 hr at pH 8.5, 25\u00b0C), which fully accounts for the weak AMP signals previously attributed to NUDT9H enzymatic activity. Addition of Chi4S does not increase AMP accumulation beyond spontaneous degradation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C59 and C99-C101 are strongly supported by TLC data (Figure 4F, Figure 4\u2014figure supplement 2) showing time-dependent spontaneous ADPR degradation at basic pH. Critically, C57 shows that adding Chi4S does not affect the rate of AMP accumulation, demonstrating lack of enzymatic activity and explaining prior reports of weak NUDT9H activity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "94bd79a4-a16b-4875-8c26-a4bbcea30807",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Both NUDT9 and Chi2 exhibit pH-dependent enzymatic activity with preference for basic pH. Chi2 shows higher pH sensitivity (~5.8-fold decrease from pH 8.5 to 6.5) compared to NUDT9 (~1.4-fold decrease). The kcat of 9 s\u207b\u00b9 for NUDT9 at pH 8.5 agrees with previously reported values.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 and C102 are supported by time-course TLC data (Figure 5A-B) and calculated kcat values (Figure 5C) showing clear pH dependence for both enzymes. The quantitative measurements are consistent with prior literature (C63), and the differential pH sensitivity between Chi2 and NUDT9 is well-documented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "79563294-98ab-488f-8bb5-ea1e878ffbc0",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Colorimetric Pi assay confirms NUDT9 enzymatic activity (kcat ~4-11 s\u207b\u00b9) with pH dependence, while Chi4S and NUDT9H show no significant Pi release above spontaneous ADPR hydrolysis. Lack of activity is not due to protein aggregation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68 are supported by Pi assay data (Figure 6A-C) showing dose-dependent Pi release for NUDT9 but not for Chi4S or NUDT9H. Size exclusion chromatography (Figure 6\u2014figure supplement 2) confirms that Chi4S and NUDT9H remain predominantly monomeric/dimeric, ruling out aggregation as cause of inactivity. The kcat values agree with TLC assay results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "4deb93d9-aa82-4010-8cb1-4ea39e80ac81",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "All three chimeric channels (TRPM2-Chi2, TRPM2-Chi3, TRPM2-Chi4) are activated by ADPR and Ca\u00b2\u207a with K\u2081/\u2082 ~1-5 \u03bcM, confirming functionality of chimeric domains in the context of full-length TRPM2. TRPM2-Chi2 shows modest ~3.5-fold increase in K\u2081/\u2082, and chimeric constructs show 2-3-fold faster current decay upon ADPR removal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C73 and C8 are supported by electrophysiological recordings (Figure 7) showing ADPR-dependent activation of all chimeric channels with similar fractional currents at 1 \u03bcM ADPR (except Chi2). Dose-response curves (Figure 7H) and kinetic analysis (Figure 7F-G) provide quantitative support for the modest functional differences observed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "d0bedff5-be94-42fe-afe6-27690ec53702",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The fluorescent ADPR analog \u03b5-ADPR binds to both native NUDT9H in full-length TRPM2 (KI = 112 \u00b1 24 \u03bcM) and purified Chi4S (Kd = 111 \u00b1 42 \u03bcM) with similar affinities, demonstrating that Chi4S retains ligand-binding capability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C80 are supported by electrophysiological data (Figure 8A-B) showing competitive inhibition of TRPM2 by \u03b5-ADPR, and fluorescence quenching data (Figure 8C-D) showing specific binding to Chi4S. The similar KI and Kd values (C79) validate Chi4S as a functional model of NUDT9H. Size exclusion chromatography (Figure 8\u2014figure supplement 1) confirms Chi4S remains soluble at high concentration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "9b093edf-9b8a-4746-bed9-2ee39489c1da",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "TRPM2 is not a 'chanzyme'. Chi4S, which is ~90% identical to NUDT9H and capable of ligand binding, exhibits no enzymatic activity under various reaction conditions tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C98 represent the main conclusion of the manuscript, supported by the convergence of multiple lines of evidence: (1) lack of enzymatic activity for NUDT9H-type constructs in both TLC and Pi assays, (2) demonstration that apparent weak activity is due to spontaneous ADPR degradation, (3) functional ligand binding by Chi4S, and (4) functional channel gating by chimeric TRPM2 constructs. The evidence is comprehensive and internally consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "1766fa47-9d35-4d68-92d8-945f94526537",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Chimeric constructs, particularly Chi4S, provide convenient soluble NUDT9H models for structural and biochemical studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10 and C52 are supported by the successful purification, characterization, and functional validation of chimeric constructs. Chi4S contains ~91% NUDT9H sequence, remains stable and soluble, binds ligands with appropriate affinity, and functions in full-length TRPM2 channels, making it a validated model for future studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "579f3ff5-755b-4473-885b-ed6fc8d001c1",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The cumulative charge of the C-terminus may contribute to aggregation propensity during bacterial expression. NUDT9H has a relatively neutral C-terminal charge (+0.9) compared to soluble constructs (\u22128.1 to \u22122.9).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C91-C93 present speculation about the mechanism of NUDT9H insolubility based on calculated theoretical charges. While the charge calculations (C92) are data-based, the causal link to solubility (C91, C93) is speculative and not directly tested. Alternative explanations (e.g., hydrophobic interactions, structural features) are not ruled out.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "7428f4b3-8a6c-441d-ba44-1e579b610e03",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "NUDT9H likely exists in the context of tetrameric TRPM2 and shares interfaces with other channel regions. The C-terminal ~20% of NUDT9H sequence might be involved in these interactions, as suggested by graded effects on channel kinetics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C94-C95 are speculative interpretations to explain NUDT9H insolubility when isolated. While C96 provides supporting kinetic data (Figure 7F) showing graded effects of sequence replacement on channel closure rates, this correlation does not definitively establish the proposed structural interactions. The claims represent reasonable hypotheses requiring further structural studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "55d3b13f-5070-4628-bf0c-07b7d7f7c26f",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background information on TRPM2 structure, function, expression, and the NUDT9/NUDT9H homology relationship.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3 and C11-C31 present established background knowledge about TRPM2 and NUDT9, supported by appropriate citations to prior literature. These claims provide context for the current study but do not represent new findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    },
+    {
+      "id": "991125e0-0892-40cc-b885-583655664df0",
+      "content_id": "4c509adb-1486-43c4-a39a-9b61e28cd2d5",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background on channel-enzymes (chanzymes), prior reports of NUDT9H activity, and previous findings that NUDT9H activity is not coupled to TRPM2 gating.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C41 and C81-C90 present background from prior literature, including the authors' own previous work. These claims are appropriately cited and provide motivation for the current study, which aims to definitively test whether NUDT9H possesses enzymatic activity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-30T00:23:15.310217Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dd11ade4-578e-4205-8992-1e74b8291a56",
+      "result_id": "b356e9ff-9390-42f0-99e4-6655f1d940d3"
+    },
+    {
+      "claim_id": "c50c867e-0535-46a5-b2b9-7d97ce4d1a1c",
+      "result_id": "b356e9ff-9390-42f0-99e4-6655f1d940d3"
+    },
+    {
+      "claim_id": "f6300e46-32e1-4c54-a2c7-6cf2d5c0a295",
+      "result_id": "b356e9ff-9390-42f0-99e4-6655f1d940d3"
+    },
+    {
+      "claim_id": "c5238b65-6c33-4126-bd0e-5a56102f48aa",
+      "result_id": "b356e9ff-9390-42f0-99e4-6655f1d940d3"
+    },
+    {
+      "claim_id": "4032ad9a-5d79-46bb-8f07-599a0acd834b",
+      "result_id": "b356e9ff-9390-42f0-99e4-6655f1d940d3"
+    },
+    {
+      "claim_id": "32afa382-2e89-4171-898b-761deacee1d3",
+      "result_id": "b356e9ff-9390-42f0-99e4-6655f1d940d3"
+    },
+    {
+      "claim_id": "121b08ae-e75b-4966-96b9-0cf730556fe4",
+      "result_id": "b356e9ff-9390-42f0-99e4-6655f1d940d3"
+    },
+    {
+      "claim_id": "335c8f31-38ea-4fe5-aa0f-3c2d3a91f3f1",
+      "result_id": "b356e9ff-9390-42f0-99e4-6655f1d940d3"
+    },
+    {
+      "claim_id": "f6fa20d0-bdd3-4864-bfb0-bff7619f62e8",
+      "result_id": "b356e9ff-9390-42f0-99e4-6655f1d940d3"
+    },
+    {
+      "claim_id": "c8c6d694-57a7-4fae-952d-3d2a85459420",
+      "result_id": "b356e9ff-9390-42f0-99e4-6655f1d940d3"
+    },
+    {
+      "claim_id": "71a80f12-959a-4ffd-9801-d5ae004c6b4d",
+      "result_id": "b356e9ff-9390-42f0-99e4-6655f1d940d3"
+    },
+    {
+      "claim_id": "104eab0f-cdf9-48b6-be58-e7c2419ae957",
+      "result_id": "0d4bfff5-d4e6-4fd3-95f0-9ba0ebe69335"
+    },
+    {
+      "claim_id": "da608706-34b0-41c5-bdce-58f315353a76",
+      "result_id": "0d4bfff5-d4e6-4fd3-95f0-9ba0ebe69335"
+    },
+    {
+      "claim_id": "fb635e63-8b8a-4454-ab26-5910f20e49e7",
+      "result_id": "0d4bfff5-d4e6-4fd3-95f0-9ba0ebe69335"
+    },
+    {
+      "claim_id": "7e921d51-e508-4fed-a003-c4454b00614e",
+      "result_id": "0d4bfff5-d4e6-4fd3-95f0-9ba0ebe69335"
+    },
+    {
+      "claim_id": "85583995-35bf-4a8a-8320-bf9b6cc6e311",
+      "result_id": "0d4bfff5-d4e6-4fd3-95f0-9ba0ebe69335"
+    },
+    {
+      "claim_id": "f91b5416-659d-4266-a128-333d18267019",
+      "result_id": "4cdcd93a-f8fd-4463-8373-67500c3e8cd5"
+    },
+    {
+      "claim_id": "5dc21d20-a6b9-45d9-a2ef-5c4a9474fda7",
+      "result_id": "4cdcd93a-f8fd-4463-8373-67500c3e8cd5"
+    },
+    {
+      "claim_id": "2615b997-4032-421e-8a20-b83abe042305",
+      "result_id": "4cdcd93a-f8fd-4463-8373-67500c3e8cd5"
+    },
+    {
+      "claim_id": "00b2aa93-d5fa-4f44-ac44-82b4089b36f7",
+      "result_id": "4cdcd93a-f8fd-4463-8373-67500c3e8cd5"
+    },
+    {
+      "claim_id": "b794dc5a-a103-4296-aed2-a4ba36ca7dc0",
+      "result_id": "4cdcd93a-f8fd-4463-8373-67500c3e8cd5"
+    },
+    {
+      "claim_id": "276a9a85-95cf-4fa4-9576-946f4bc2bc11",
+      "result_id": "4cdcd93a-f8fd-4463-8373-67500c3e8cd5"
+    },
+    {
+      "claim_id": "98e31eda-70fb-45f1-b549-b51e9c3de49a",
+      "result_id": "4cdcd93a-f8fd-4463-8373-67500c3e8cd5"
+    },
+    {
+      "claim_id": "4deea42e-3c54-4454-ba59-8b6dff1d8160",
+      "result_id": "4cdcd93a-f8fd-4463-8373-67500c3e8cd5"
+    },
+    {
+      "claim_id": "6983f002-3f70-4213-ab83-a327adf50f33",
+      "result_id": "94bd79a4-a16b-4875-8c26-a4bbcea30807"
+    },
+    {
+      "claim_id": "7d9275f5-a1d3-4528-b98a-8de103b3a800",
+      "result_id": "94bd79a4-a16b-4875-8c26-a4bbcea30807"
+    },
+    {
+      "claim_id": "50971d6f-71d9-43f2-81f7-e768a52c3b06",
+      "result_id": "94bd79a4-a16b-4875-8c26-a4bbcea30807"
+    },
+    {
+      "claim_id": "244f3a2b-82fa-4299-bf63-02251900866b",
+      "result_id": "94bd79a4-a16b-4875-8c26-a4bbcea30807"
+    },
+    {
+      "claim_id": "56f40e42-d23a-42e6-b980-753ca6da5044",
+      "result_id": "79563294-98ab-488f-8bb5-ea1e878ffbc0"
+    },
+    {
+      "claim_id": "209273af-2b33-4a5e-93c1-77e6cef85beb",
+      "result_id": "79563294-98ab-488f-8bb5-ea1e878ffbc0"
+    },
+    {
+      "claim_id": "6ef35798-96b5-4c27-ab36-3e2f3273f2dd",
+      "result_id": "79563294-98ab-488f-8bb5-ea1e878ffbc0"
+    },
+    {
+      "claim_id": "acb1274a-f145-4422-962a-9f8e2e5a0d02",
+      "result_id": "79563294-98ab-488f-8bb5-ea1e878ffbc0"
+    },
+    {
+      "claim_id": "8f0ba000-b02c-4017-8065-fd52556c2a86",
+      "result_id": "79563294-98ab-488f-8bb5-ea1e878ffbc0"
+    },
+    {
+      "claim_id": "9090d270-7229-4c27-a3ae-d9e440df50b7",
+      "result_id": "4deb93d9-aa82-4010-8cb1-4ea39e80ac81"
+    },
+    {
+      "claim_id": "71d4f84a-2cbd-4df5-84c7-4c6d4f2d00d1",
+      "result_id": "4deb93d9-aa82-4010-8cb1-4ea39e80ac81"
+    },
+    {
+      "claim_id": "55a2a743-b077-4cea-87e1-3571ff1ff9e8",
+      "result_id": "4deb93d9-aa82-4010-8cb1-4ea39e80ac81"
+    },
+    {
+      "claim_id": "703c6597-8ea0-4a8d-b146-6633c5730cda",
+      "result_id": "4deb93d9-aa82-4010-8cb1-4ea39e80ac81"
+    },
+    {
+      "claim_id": "95e9d8a0-6726-41bb-8545-9593c727c7aa",
+      "result_id": "4deb93d9-aa82-4010-8cb1-4ea39e80ac81"
+    },
+    {
+      "claim_id": "528e6d07-e49b-47b8-b7af-1105c12539c7",
+      "result_id": "4deb93d9-aa82-4010-8cb1-4ea39e80ac81"
+    },
+    {
+      "claim_id": "3e28a469-5ba3-478b-a010-7b296ba2656b",
+      "result_id": "d0bedff5-be94-42fe-afe6-27690ec53702"
+    },
+    {
+      "claim_id": "1a454a32-df21-4c9b-8112-4befeb7b7298",
+      "result_id": "d0bedff5-be94-42fe-afe6-27690ec53702"
+    },
+    {
+      "claim_id": "a182d7e0-995e-4df2-bd80-243dbbb7e3d3",
+      "result_id": "d0bedff5-be94-42fe-afe6-27690ec53702"
+    },
+    {
+      "claim_id": "1b1d7e36-1f6d-4968-91a8-00dddb5825f3",
+      "result_id": "d0bedff5-be94-42fe-afe6-27690ec53702"
+    },
+    {
+      "claim_id": "980aa4be-6247-4135-bd28-c55f70c1956a",
+      "result_id": "d0bedff5-be94-42fe-afe6-27690ec53702"
+    },
+    {
+      "claim_id": "2b496a83-1cde-42fa-847f-f2a27583a4ed",
+      "result_id": "d0bedff5-be94-42fe-afe6-27690ec53702"
+    },
+    {
+      "claim_id": "a0e4d046-546d-42be-b81c-44cd56826c1c",
+      "result_id": "d0bedff5-be94-42fe-afe6-27690ec53702"
+    },
+    {
+      "claim_id": "8a550129-5f66-4d86-bf64-0250e10b3110",
+      "result_id": "9b093edf-9b8a-4746-bed9-2ee39489c1da"
+    },
+    {
+      "claim_id": "979cb884-cd80-47d0-a05f-a2d1a7a52bad",
+      "result_id": "9b093edf-9b8a-4746-bed9-2ee39489c1da"
+    },
+    {
+      "claim_id": "b1308b10-6927-412e-820c-cc21dc22b4bf",
+      "result_id": "1766fa47-9d35-4d68-92d8-945f94526537"
+    },
+    {
+      "claim_id": "71a80f12-959a-4ffd-9801-d5ae004c6b4d",
+      "result_id": "1766fa47-9d35-4d68-92d8-945f94526537"
+    },
+    {
+      "claim_id": "1a8a105f-0ab2-4263-b49f-01148a0aa956",
+      "result_id": "579f3ff5-755b-4473-885b-ed6fc8d001c1"
+    },
+    {
+      "claim_id": "133b64ec-e1ed-443b-8c1b-1030085342fe",
+      "result_id": "579f3ff5-755b-4473-885b-ed6fc8d001c1"
+    },
+    {
+      "claim_id": "1accb648-fcbf-4423-8121-5768bf2c71b0",
+      "result_id": "579f3ff5-755b-4473-885b-ed6fc8d001c1"
+    },
+    {
+      "claim_id": "f26a50f9-8819-4271-8d99-7d1bb6fcc909",
+      "result_id": "7428f4b3-8a6c-441d-ba44-1e579b610e03"
+    },
+    {
+      "claim_id": "2c2a7512-d9f7-4292-8b4e-d5afee960251",
+      "result_id": "7428f4b3-8a6c-441d-ba44-1e579b610e03"
+    },
+    {
+      "claim_id": "49012cf8-74a5-4e57-af4c-282246b88c40",
+      "result_id": "7428f4b3-8a6c-441d-ba44-1e579b610e03"
+    },
+    {
+      "claim_id": "abbd0726-e728-43f5-8701-4a584e1858fe",
+      "result_id": "55d3b13f-5070-4628-bf0c-07b7d7f7c26f"
+    },
+    {
+      "claim_id": "2abfff6f-ecbb-4941-9268-a6e58e4e0736",
+      "result_id": "55d3b13f-5070-4628-bf0c-07b7d7f7c26f"
+    },
+    {
+      "claim_id": "d09025a8-6be8-4625-a87f-b7dff63dc1ac",
+      "result_id": "55d3b13f-5070-4628-bf0c-07b7d7f7c26f"
+    },
+    {
+      "claim_id": "e7c2c99b-0f10-4cfb-907d-08be5e3dc104",
+      "result_id": "55d3b13f-5070-4628-bf0c-07b7d7f7c26f"
+    },
+    {
+      "claim_id": "5d14e827-7579-4e63-915f-06c5f5b5b0e7",
+      "result_id": "55d3b13f-5070-4628-bf0c-07b7d7f7c26f"
+    },
+    {
+      "claim_id": "a3f5903e-ad62-437b-8365-69bf18a5d96d",
+      "result_id": "55d3b13f-5070-4628-bf0c-07b7d7f7c26f"
+    },
+    {
+      "claim_id": "558b9ce4-56f0-4d82-a858-2b39508ac59e",
+      "result_id": "55d3b13f-5070-4628-bf0c-07b7d7f7c26f"
+    },
+    {
+      "claim_id": "d1c63fc9-ed24-47e1-a2fe-4d7e3651076b",
+      "result_id": "55d3b13f-5070-4628-bf0c-07b7d7f7c26f"
+    },
+    {
+      "claim_id": "3c707867-8215-496a-85a2-50dba6894d5a",
+      "result_id": "55d3b13f-5070-4628-bf0c-07b7d7f7c26f"
+    },
+    {
+      "claim_id": "1cac985c-49da-405d-943e-f9169a9819b7",
+      "result_id": "55d3b13f-5070-4628-bf0c-07b7d7f7c26f"
+    },
+    {
+      "claim_id": "e710af8b-66ad-43c4-9f73-9bcdd23fada3",
+      "result_id": "55d3b13f-5070-4628-bf0c-07b7d7f7c26f"
+    },
+    {
+      "claim_id": "bd03b615-00a3-4721-9905-8bd78e537810",
+      "result_id": "55d3b13f-5070-4628-bf0c-07b7d7f7c26f"
+    },
+    {
+      "claim_id": "368d66cb-b083-42c4-8e16-4079ac5dfcc5",
+      "result_id": "55d3b13f-5070-4628-bf0c-07b7d7f7c26f"
+    },
+    {
+      "claim_id": "81038149-9b14-403b-860e-3fe0fc368693",
+      "result_id": "55d3b13f-5070-4628-bf0c-07b7d7f7c26f"
+    },
+    {
+      "claim_id": "20c2883c-efd4-4476-9b44-e7f9f4254336",
+      "result_id": "55d3b13f-5070-4628-bf0c-07b7d7f7c26f"
+    },
+    {
+      "claim_id": "c8649963-120d-4213-a4f8-650c346f545b",
+      "result_id": "55d3b13f-5070-4628-bf0c-07b7d7f7c26f"
+    },
+    {
+      "claim_id": "1daeb78f-df6c-4528-b1ee-90bfeb438060",
+      "result_id": "55d3b13f-5070-4628-bf0c-07b7d7f7c26f"
+    },
+    {
+      "claim_id": "11c8db9b-4c66-4357-8163-d98614bee39e",
+      "result_id": "55d3b13f-5070-4628-bf0c-07b7d7f7c26f"
+    },
+    {
+      "claim_id": "1b00dfd8-c029-49a4-97a3-cf1a11041652",
+      "result_id": "55d3b13f-5070-4628-bf0c-07b7d7f7c26f"
+    },
+    {
+      "claim_id": "bd756e10-45ae-4d20-a610-f59b0b347545",
+      "result_id": "55d3b13f-5070-4628-bf0c-07b7d7f7c26f"
+    },
+    {
+      "claim_id": "3e4b58c0-555c-4b4a-aee1-e2c2e7d6c03c",
+      "result_id": "55d3b13f-5070-4628-bf0c-07b7d7f7c26f"
+    },
+    {
+      "claim_id": "e457d82e-d0d1-4b29-a379-90f5eabadf6b",
+      "result_id": "55d3b13f-5070-4628-bf0c-07b7d7f7c26f"
+    },
+    {
+      "claim_id": "e2354e3d-59af-405c-8073-847143e55b6f",
+      "result_id": "55d3b13f-5070-4628-bf0c-07b7d7f7c26f"
+    },
+    {
+      "claim_id": "7169b9a5-ad18-46c7-bfdd-97ae25d18332",
+      "result_id": "55d3b13f-5070-4628-bf0c-07b7d7f7c26f"
+    },
+    {
+      "claim_id": "26b5562b-d75e-4cca-9487-9f7093ceb01b",
+      "result_id": "991125e0-0892-40cc-b885-583655664df0"
+    },
+    {
+      "claim_id": "0270007a-807d-47ad-b440-e5dae5767192",
+      "result_id": "991125e0-0892-40cc-b885-583655664df0"
+    },
+    {
+      "claim_id": "50e08ae9-99e3-47ca-8236-2661cca3996b",
+      "result_id": "991125e0-0892-40cc-b885-583655664df0"
+    },
+    {
+      "claim_id": "558e3b4d-a8f9-4a96-9845-b4fe9bb3332d",
+      "result_id": "991125e0-0892-40cc-b885-583655664df0"
+    },
+    {
+      "claim_id": "e545554a-f76c-413f-930e-81993c6db292",
+      "result_id": "991125e0-0892-40cc-b885-583655664df0"
+    },
+    {
+      "claim_id": "2038b399-2154-4727-821e-a564cccb88f3",
+      "result_id": "991125e0-0892-40cc-b885-583655664df0"
+    },
+    {
+      "claim_id": "e3306ca0-f0e1-4786-8e72-82b633362b42",
+      "result_id": "991125e0-0892-40cc-b885-583655664df0"
+    },
+    {
+      "claim_id": "70634545-0fe5-46d5-a076-4a169ca111db",
+      "result_id": "991125e0-0892-40cc-b885-583655664df0"
+    },
+    {
+      "claim_id": "1cd8edf1-d4cb-48ef-86a0-596f226ee018",
+      "result_id": "991125e0-0892-40cc-b885-583655664df0"
+    },
+    {
+      "claim_id": "1c89ced2-a39b-438c-b324-9e945604066f",
+      "result_id": "991125e0-0892-40cc-b885-583655664df0"
+    },
+    {
+      "claim_id": "716c25a6-76f1-4bb3-8b73-016a33cf3849",
+      "result_id": "991125e0-0892-40cc-b885-583655664df0"
+    },
+    {
+      "claim_id": "910c1b89-82ea-495b-b5fc-0688c693c4d5",
+      "result_id": "991125e0-0892-40cc-b885-583655664df0"
+    },
+    {
+      "claim_id": "c2083b03-caf5-41c3-aa98-ab3fa9358169",
+      "result_id": "991125e0-0892-40cc-b885-583655664df0"
+    },
+    {
+      "claim_id": "5a6b9717-cc90-4362-b539-ea6f560dc441",
+      "result_id": "991125e0-0892-40cc-b885-583655664df0"
+    },
+    {
+      "claim_id": "6221012b-5033-4704-83be-64ca4041bde0",
+      "result_id": "991125e0-0892-40cc-b885-583655664df0"
+    },
+    {
+      "claim_id": "ef3532f4-fa2a-4dc1-bd5d-b783acc53121",
+      "result_id": "991125e0-0892-40cc-b885-583655664df0"
+    },
+    {
+      "claim_id": "afa382cf-402a-4424-8e98-d41f63129347",
+      "result_id": "991125e0-0892-40cc-b885-583655664df0"
+    },
+    {
+      "claim_id": "e0d79aee-408a-453d-88b2-467c4ef2c83e",
+      "result_id": "991125e0-0892-40cc-b885-583655664df0"
+    },
+    {
+      "claim_id": "05918ad0-d7f3-444c-9cc3-848f7c48311d",
+      "result_id": "991125e0-0892-40cc-b885-583655664df0"
+    },
+    {
+      "claim_id": "2020006c-37c8-453f-aa7c-e4c3688046ad",
+      "result_id": "991125e0-0892-40cc-b885-583655664df0"
+    }
+  ],
+  "comparisons": []
+}

@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Longitudinal time-lapse imaging of thousands of CA1 neurons over weeks in mice visiting two distinct environments revealed ongoing environment-independent evolution of episodic representations despite stable place fields and constant remapping. These dynamics created temporal timestamps through unique ensemble compositions and activity patterns, where temporally close episodes shared timestamps regardless of spatial context, while temporally remote episodes had distinct timestamps even in the same spatial context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C10 describe the core experimental findings. The methodology (C3-C4) is clearly described, and the main results (C5-C10) are internally consistent and supported by the experimental design. The observation of environment-independent dynamics alongside stable place fields (C5-C7) and the temporal timestamp properties (C8-C10) form a coherent set of findings, though the manuscript would benefit from showing the actual data supporting these claims in figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "The authors suggest that days-scale hippocampal ensemble dynamics could support formation of a mental timeline for mnemonic association or dissociation of events based on temporal distance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C11 is explicitly speculative (uses 'could support' and 'suggest') and represents an interpretation of the functional significance rather than a direct experimental finding. While the interpretation is reasonable given the observed dynamics, it remains a hypothesis that would require additional behavioral experiments testing temporal memory to be directly supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Five male C57BL/6 mice aged 8-12 weeks underwent two surgical procedures: viral injection of GCaMP6s or GCaMP6f into CA1 at specific stereotactic coordinates, followed at least one week later by implantation of a glass guide tube above CA1 with appropriate sealing and fixation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C26 provide detailed surgical methodology that is clearly described with specific parameters, coordinates, materials, and timing. The procedures follow established protocols for chronic imaging preparations. The small sample size (n=5) is noted but acceptable for this type of longitudinal imaging study given the technical challenges and large number of neurons recorded per animal.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Time-lapse imaging was performed using an integrated miniature fluorescence microscope following established protocols, with initial two-photon imaging used to assess GCaMP6 expression and tissue health before selecting mice and permanently affixing the microendoscope and base plate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C35 describe the imaging preparation methodology with appropriate detail and reference to established protocols (C28). The quality control steps (C32-C33) for selecting only mice with good expression and healthy tissue are appropriate. The equipment specifications are clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Mice were trained to run on two distinct elevated linear tracks (straight 96cm track A and L-shaped track B) with different sensory cues, rewards, and odors. Imaging was performed at 20Hz over 8 recording days spanning 15 days, with two sessions per day separated by 4-5 hours, following 8-11 days of pre-training. Tissue health was verified post-experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C52 provide comprehensive behavioral and imaging protocol details. The two-environment design with distinct sensory cues (C37-C42) is well-controlled for studying remapping. The training criteria (C46), session structure (C47), and imaging schedule (C48-C50) are clearly specified. Post-experiment tissue verification (C52) is an important quality control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Imaging data was processed using commercial software and custom MATLAB routines with spatial downsampling, illumination correction via Gaussian filtering, rigid body registration using blood vessels as fiducial markers, and cell identification using PCA/ICA with morphological filtering and duplicate removal based on spatial proximity and trace correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C65 describe standard and appropriate image processing steps for calcium imaging data. The methods reference established algorithms (C62) and include reasonable quality control steps (C63-C65). The use of blood vessels for registration (C57) is a validated approach. However, spatial downsampling (C54) may reduce spatial resolution for cell identification, though this is a common trade-off for computational efficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C75"
+    ],
+    "result": "Ca2+ events were detected by baseline correction, low-pass filtering at 2Hz, thresholding at 4-5 MAD depending on indicator, validation based on decay kinetics, peak timing definition, and conservative crosstalk mitigation allowing only one event per 200ms among neighboring cells within 18\u03bcm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C75 describe rigorous event detection methodology with appropriate thresholds differentiated by indicator type (C69), kinetic validation (C70-C71), and conservative crosstalk correction (C73). The different MAD thresholds for GCaMP6s vs GCaMP6f (C69, C71) appropriately account for their different kinetics. The crosstalk mitigation (C73) is conservative and appropriate given the spatial resolution limits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Cross-session cell registration was performed by aligning centroid projections via spatial cross-correlation to a reference session, then matching cells using either spatial correlation (>0.7) or centroid distance (<5\u03bcm) criteria. Within-session nearest neighbors had correlations <0.6 and distances >6\u03bcm, while between-session pairs showed higher correlations and closer distances. The registration was robust to threshold choice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C85 describe a well-validated cell registration approach using dual methods (correlation and distance). The within-session statistics (C80-C81) provide important validation that the thresholds (C83) appropriately distinguish same vs. different cells. The robustness analysis (C85) strengthens confidence in the registration. However, the manuscript would benefit from reporting false positive/negative rates for the registration method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Place fields were computed from behavioral tracking data by binning tracks into 4cm bins (excluding reward zones), calculating smoothed occupancy and event maps, computing rate maps separately for each direction, and determining spatial information significance via 1000 shuffles with p\u22640.05 threshold for place fields with >5 events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C97 describe standard place field analysis methods with appropriate spatial binning (C89), directional separation (C93), and statistical validation via shuffling (C96-C97). The exclusion of reward zones (C90) is justified. The minimum event threshold (C95) and significance testing are appropriate. The methods follow established practices in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Population vector correlation was calculated to quantify similarity between environment representations by computing correlations between population vectors (mean event rates per neuron) at matching spatial locations across environments, using the spatial transformation that maximized global correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 describe a standard method for quantifying remapping between environments. The approach of using the transformation that maximizes correlation (C101) is reasonable for comparing representations on tracks with different geometries. The method is appropriately referenced to prior work (C98).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Statistical testing for place field displacements used shuffled null distributions generated by permuting cell identities across days (10,000 shuffles), and ANOVA with repeated measures using Greenhouse-Geisser correction was applied for specific analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 describe appropriate statistical methods. The shuffling procedure (C102-C103) generates valid null distributions for place field stability analysis. The use of ANOVA with Greenhouse-Geisser correction (C104) appropriately addresses potential violations of sphericity in repeated measures designs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Three time decoders were constructed to estimate recording day order from ensemble activity patterns: an ordinal decoder maximizing correlations between neighboring days across all 20,160 permutations, a within-environment decoder comparing trials to same-environment sessions, and an across-environments decoder comparing episodes between different environments. Decoding used Pearson correlation between activity vectors with normalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C113 describe novel and appropriate analytical approaches for testing temporal information encoding. The ordinal decoder (C111-C113) exhaustively searches permutation space, providing rigorous statistical testing. The within- and across-environment decoders (C114-C117) test complementary hypotheses about temporal coding. The normalization procedure (C110) is appropriate for removing baseline correlation differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The within-environment decoder inferred trial timing by comparing to same-environment sessions with appropriate exclusion of test trials and corresponding trials to avoid bias. The across-environments decoder inferred timing by comparing episodes between different environments at both trial and session levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 describe the within- and across-environment decoders with appropriate controls. The exclusion strategy (C115) properly prevents overfitting. Testing at multiple temporal scales (C117) provides complementary information about the temporal coding. These decoders directly test the key hypothesis about environment-independent temporal coding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Two divergence measures quantified representational differences between environments: activity divergence (ratio of between-environment to within-environment event rate differences, adapted from prior work) and peak displacement (average distance between peak activity locations using the optimal spatial transformation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C122 describe appropriate metrics for quantifying remapping. The activity divergence metric (C119-C120) is adapted from established methods for calcium imaging. The peak displacement metric (C121-C122) provides complementary spatial information. Both metrics are clearly defined and appropriate for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Cell-level dynamics were analyzed through multiple approaches: maximal monotonic sequence length compared to shuffles, monotonicity score ranging from -1 to +1, coefficient of variation compared to Poisson model, and population monotonicity analysis aligning cells to peak activity day with controls separating event rate from recruitment dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C132 describe comprehensive analyses of single-cell temporal dynamics. The multiple complementary approaches (monotonic sequences C124-C125, monotonicity score C126-C128, CV analysis C129, population analysis C130-C132) provide robust characterization. The comparison to appropriate null models (shuffles, Poisson) and the control for recruitment dynamics (C132) strengthen the analyses. These methods appropriately test whether individual cells show systematic temporal evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Temporal relationships between events are essential to episodic memory, but the underlying mechanisms are poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 represent standard background knowledge in the field of episodic memory research. The importance of temporal relationships to episodic memory is well-established, and while progress has been made, the neural mechanisms remain incompletely understood, justifying the study.",
+    "result_type": "MINOR"
+  }
+]
